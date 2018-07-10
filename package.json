@@ -22,12 +22,11 @@
   },
   "homepage": "https://github.com/joostdecock/freesewing#readme",
   "dependencies": {
-    "bezier-js": "^2.2.13",
-    "@types/bezier-js": "0.0.7",
-    "@types/node": "^10.5.2"
+    "bezier-js": "^2.2.13"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "@types/bezier-js": "0.0.7",
+    "@types/node": "^10.5.2"
   }
 }
