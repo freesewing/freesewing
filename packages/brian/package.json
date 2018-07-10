@@ -1,0 +1,28 @@
+{
+  "name": "@freesewing/brian",
+  "version": "0.0.1",
+  "description": "A basic body block for menswear",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "run": "nodemon node dist/index.js",
+    "run-watch": "nodemon node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostdecock/brian.git"
+  },
+  "author": "Joost De Cock <joost@decock.org> (https://twitter.com/j__st)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joostdecock/brian/issues"
+  },
+  "homepage": "https://github.com/joostdecock/brian#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^2.9.2",
+    "@types/node": "^10.5.2"
+  }
+}
