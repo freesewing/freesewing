@@ -1,18 +1,24 @@
-declare const config: {
-    "parts": string[];
-    "measurements": string[];
-    "options": ({
-        "id": string;
-        "min": number;
-        "max": number;
-        "std": number;
-        "type"?: undefined;
-    } | {
-        "id": string;
-        "type": string;
-        "min": number;
-        "max": number;
-        "std": number;
-    })[];
+declare const manSize34: {
+    bicepsCircumference: number;
+    centerBackNeckToWaist: number;
+    chestCircumference: number;
+    hipsCircumference: number;
+    naturalWaistToHip: number;
+    neckCircumference: number;
+    shoulderSlope: number;
+    shoulderToShoulder: number;
+    shoulderToWrist: number;
+    wristCircumference: number;
 };
-export default config;
+declare const manSize36: {
+    bicepsCircumference: number;
+    centerBackNeckToWaist: number;
+    chestCircumference: number;
+    hipsCircumference: number;
+    naturalWaistToHip: number;
+    neckCircumference: number;
+    shoulderSlope: number;
+    shoulderToShoulder: number;
+    shoulderToWrist: number;
+    wristCircumference: number;
+};

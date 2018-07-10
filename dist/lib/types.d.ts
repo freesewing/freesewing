@@ -1,12 +1,14 @@
+export declare type PatternOptionType = "measure" | "percentage" | "angle" | "choice" | "constant";
 export interface PatternOption {
-    type?: "measure" | "percentage" | "angle" | "choice";
+    id: string;
+    val: number;
+    type?: string;
     onlyIf?: {
         option: string;
         oneOf: number[];
     };
     min?: number;
     max?: number;
-    std: number;
     options?: {
         [index: number]: string;
     };
@@ -22,3 +24,17 @@ export declare type Pattern = {
     measurements: string[];
     config: PatternConfig;
 };
+export declare type DraftMode = "sample" | "compare" | "draft";
+export declare type CompareGroup = "men" | "women";
+export declare type Units = "metric" | "imperial";
+export interface DraftConfig {
+    mode: DraftMode;
+    units?: Units;
+    options: PatternOption[];
+    measurements?: {
+        [index: string]: number;
+    };
+    sa?: number;
+    scope?: string[];
+    theme?: string;
+}
