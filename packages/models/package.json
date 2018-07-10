@@ -1,0 +1,19 @@
+{
+  "name": "@freesewing/models",
+  "version": "0.0.1",
+  "description": "Body measurements data for a range of default sizes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostdecock/models.git"
+  },
+  "author": "Joost De Cock <joost@decock.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joostdecock/models/issues"
+  },
+  "homepage": "https://github.com/joostdecock/models#readme"
+}
