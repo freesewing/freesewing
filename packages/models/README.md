@@ -30,14 +30,14 @@ The example above gives you:
   wristCircumference:    185
 }
 ```
+## Units
 
-Available imports are:
+All measurements are in mm.
+
+## Available models
 
  - manSize34
  - manSize36
  - manSize40
  - manSize42
  - manSize44
- - men
-
- Note that `men` will return an object containing all the sizes.
