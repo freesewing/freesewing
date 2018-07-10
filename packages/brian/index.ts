@@ -1,13 +1,22 @@
 import Freesewing from 'freesewing'
-import config from './config/config'
+import * as patternConfig from './config/config'
+import { manSize40 as measurements} from '@freesewing/models'
+import backBlock from './lib/back'
 
-console.log(config);
+var brian = new Freesewing.pattern(patternConfig);
 
-var brian = new Freesewing.pattern(config);
+brian.draft = function(config) {
+  backBlock.draft(config);
+}
 
-//brian.test('hello world');
+const config = {
+  mode: 'draft',
+  units: 'metric',
+  measurements,
+  sa: 10,
+  theme: 'default'
+}
 
-//brian.draft = function(options: {}): void {
+brian.draft(config);
 
 
-console.log(brian);

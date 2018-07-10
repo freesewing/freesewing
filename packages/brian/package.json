@@ -20,7 +20,9 @@
     "url": "https://github.com/joostdecock/brian/issues"
   },
   "homepage": "https://github.com/joostdecock/brian#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@freesewing/models": "0.1.1"
+  },
   "devDependencies": {
     "typescript": "^2.9.2",
     "@types/node": "^10.5.2"
