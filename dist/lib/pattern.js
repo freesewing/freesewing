@@ -23,6 +23,12 @@ var Pattern = /** @class */ (function () {
     Pattern.prototype.draft = function (config) {
         throw Error('You have to implement the draft() method in your Pattern instance.');
     };
+    Pattern.prototype.getOption = function (id) {
+        return this.options[id].val;
+    };
+    Pattern.prototype.o = function (id) {
+        return this.getOption(id);
+    };
     return Pattern;
 }());
 exports.default = Pattern;

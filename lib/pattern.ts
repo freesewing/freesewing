@@ -26,4 +26,12 @@ export default class Pattern {
   draft(config: object): void {
     throw Error('You have to implement the draft() method in your Pattern instance.');
   }
+
+  getOption(id: string | number): any {
+    return this.options[id].val;
+  }
+
+  o(id: string | number): any {
+    return this.getOption(id);
+  }
 }

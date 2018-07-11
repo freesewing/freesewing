@@ -19,11 +19,6 @@ export interface PatternConfig {
     options: PatternOption[];
     [propName: string]: any;
 }
-export declare type Pattern = {
-    parts: string[];
-    measurements: string[];
-    config: PatternConfig;
-};
 export declare type DraftMode = "sample" | "compare" | "draft";
 export declare type CompareGroup = "men" | "women";
 export declare type Units = "metric" | "imperial";

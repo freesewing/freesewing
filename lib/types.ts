@@ -22,12 +22,6 @@ export interface PatternConfig {
   [propName: string]: any;
 }
 
-export type Pattern = {
-  parts: string[];
-  measurements: string[];
-  config: PatternConfig;
-}
-
 export type DraftMode = "sample" | "compare" | "draft";
 export type CompareGroup = "men" | "women";
 export type Units = "metric" | "imperial";
@@ -43,5 +37,3 @@ export interface DraftConfig {
   scope?: string[];
   theme?: string;
 }
-
-

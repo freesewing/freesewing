@@ -11,4 +11,6 @@ export default class Pattern {
     };
     constructor(config: PatternConfig);
     draft(config: object): void;
+    getOption(id: string | number): any;
+    o(id: string | number): any;
 }
