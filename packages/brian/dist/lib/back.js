@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var back = {
-    draft: function (config) {
+var backBlock = {
+    draft: function (config, pattern) {
+        var p = pattern.parts.backBlock;
         console.log('drafting back block');
     }
 };
-exports.default = back;
+exports.default = backBlock;

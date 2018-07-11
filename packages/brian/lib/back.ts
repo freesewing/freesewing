@@ -1,10 +1,16 @@
-import { PatternConfig } from 'freesewing/lib/types'
+import { DraftConfig } from './types'
+import Pattern from 'freesewing/lib/pattern'
 
-var back = {
-  draft: function(config: PatternConfig) {
+var backBlock = {
+  draft: function(config: DraftConfig, pattern: Pattern) {
+
+  let p = pattern.parts.backBlock;
 
   console.log('drafting back block');
+
+
+
   }
 }
 
-export default back;
+export default backBlock;
