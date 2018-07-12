@@ -1,5 +1,5 @@
 import { PatternOption } from './types'
-export default class Option {
+export class Option {
   id: string;
   config: PatternOption;
   val: number;

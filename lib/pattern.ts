@@ -1,8 +1,8 @@
 import { PatternConfig, PatternOption } from './types'
-import Part from './part'
-import Option from './option'
+import { Part } from './part'
+import { Option } from './option'
 
-export default class Pattern {
+export class Pattern {
   config: PatternConfig;
   parts: {[propName: string]: Part};
   options: {[propName: string]: number};

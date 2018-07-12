@@ -1,20 +1,24 @@
-import Point from './point'
+import { Point } from './point'
 
-export default class Part {
-  id: string | number;
+export class Part {
+  id: string;
+  render: boolean;
   points: {
     [index: string]: Point;
   }
   [propName: string]: any;
 
-  constructor(id: string | number) {
+  constructor(id: string) {
     this.id = id;
+    this.render = (id.substr(0,1) === '_') ? false : true;
     this.points = {};
 
     return this;
   }
 
-  newPoint(id: string | number, x: number, y: number) {
-    this.points[id] = new Point(x, y);
-  }
+
+//  purge = {
+//    points = function(prefix: string): void {}
+//    paths = function(prefix: string): void {}
+//  }
 }

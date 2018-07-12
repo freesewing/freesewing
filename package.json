@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r ts-node/register tests/*.test.js",
     "build": "tsc",
     "build-watch": "tsc -w",
     "run": "nodemon node dist/index.js",
@@ -25,8 +25,13 @@
     "bezier-js": "^2.2.13"
   },
   "devDependencies": {
-    "typescript": "^2.9.2",
     "@types/bezier-js": "0.0.7",
-    "@types/node": "^10.5.2"
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.4",
+    "@types/node": "^10.5.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
   }
 }
