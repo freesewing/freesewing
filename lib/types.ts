@@ -37,3 +37,29 @@ export interface DraftConfig {
   scope?: string[];
   theme?: string;
 }
+
+declare namespace Pattern {
+  export type OptionType = "measure" | "percentage" | "angle" | "choice" | "constant";
+
+  export interface Option {
+    id: string;
+    val: number;
+    type?: string;
+    onlyIf?: {
+      option: string;
+      oneOf: number[];
+    }
+    min?: number;
+    max?: number;
+    options?: {
+      [index: number]: string;
+    }
+  }
+
+  export interface Config {
+    parts: string[];
+    measurements: string[];
+    options: Option[];
+    [propName: string]: any;
+  }
+}

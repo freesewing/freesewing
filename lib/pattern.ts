@@ -5,7 +5,7 @@ import Option from './option'
 export default class Pattern {
   config: PatternConfig;
   parts: {[propName: string]: Part};
-  options: {[propName: string]: Option};
+  options: {[propName: string]: number};
 
   constructor(config: PatternConfig) {
     this.config = config;
@@ -17,7 +17,8 @@ export default class Pattern {
 
     this.options = {};
     for (let conf of config.options) {
-      this.options[conf.id] = new Option(conf);
+      if(conf.type === 'percentage') this.options[conf.id] = conf.val/100;
+      else this.options[conf.id] = conf.val;
     }
 
     return this;
@@ -25,13 +26,5 @@ export default class Pattern {
 
   draft(config: object): void {
     throw Error('You have to implement the draft() method in your Pattern instance.');
-  }
-
-  getOption(id: string | number): any {
-    return this.options[id].val;
-  }
-
-  o(id: string | number): any {
-    return this.getOption(id);
   }
 }
