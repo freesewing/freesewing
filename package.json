@@ -1,6 +1,6 @@
 {
   "name": "freesewing",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
