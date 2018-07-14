@@ -1,10 +1,13 @@
 import { PatternConfig, PatternOption } from './types'
 import { Part } from './part'
+import { Renderer } from './renderer'
 import { Option } from './option'
 
 export class Pattern {
   config: PatternConfig;
-  parts: {[propName: string]: Part};
+  parts: {
+    [index: string]: Part;
+  }
   options: {[propName: string]: number};
 
   constructor(config: PatternConfig) {
@@ -26,5 +29,10 @@ export class Pattern {
 
   draft(config: object): void {
     throw Error('You have to implement the draft() method in your Pattern instance.');
+  }
+
+  render(pattern: Pattern): string {
+    let r = new Renderer();
+    return r.render(pattern);
   }
 }

@@ -1,11 +1,11 @@
 import { round, rad2deg, deg2rad } from './utils';
-
 const PRECISION = 2;
-// A poor man's rad2deg()
+
 
 export class Point {
   x: number;
   y: number;
+
 
   constructor(x: number, y: number) {
     this.x = round(x);
