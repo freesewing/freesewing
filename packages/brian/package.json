@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/brian",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A basic body block for menswear",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
