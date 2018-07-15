@@ -1,22 +1,20 @@
-export abstract class Theme {
-  header: string = '';
-  footer: string = '';
-  defs: string = '';
-  style: string = '';
+import { Pattern } from '../pattern'
+import { Svg } from '../svg'
 
-  constructor() {
-		this.header = this.loadHeader();
-		this.footer = this.loadFooter();
-		this.style = this.loadStyle();
-		this.defs = this.loadDefs();
+export abstract class Theme {
+
+  /** Pre-render method is called just prior to rendering */
+  preRender(pattern: Pattern, svg: Svg) {
+    svg.header += this.loadHeader(pattern);
+    svg.footer += this.loadFooter(pattern);
+    svg.style += this.loadStyle(pattern);
+    svg.defs += this.loadDefs(pattern);
   }
 
   /** Returns a string containing the SVG header */
-  loadHeader() {
+  loadHeader(pattern: Pattern) {
 
     return `
-      <!--
-
             __                           _
            / _|_ _ ___ ___ ________ __ _(_)_ _  __ _
           |  _| '_/ -_) -_|_-< -_) V  V / | ' \/ _' |
@@ -26,17 +24,16 @@ export abstract class Theme {
            Sewing patterns for non-average people (*)
 
                 (*) Average people don't exist
-        -->
 `;
   }
 
   /** Returns a string containing the SVG footer */
-  loadFooter() {
+  loadFooter(pattern: Pattern) {
     return '';
   }
 
   /** Returns a string containing the SVG style/CSS */
-  loadStyle() {
+  loadStyle(pattern: Pattern) {
     return `
       path,circle,rect{fill:none;stroke:none}
       path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}
@@ -49,6 +46,7 @@ export abstract class Theme {
       path.help{stroke-width:.2;stroke-dasharray:15,1.5,1,1.5}
       path.hint{stroke-width:.2;stroke-dasharray:0.4,0.8}
       path.note{stroke:#0275d8;stroke-width:.6;marker-start:url(#noteArrow)}
+
       text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;
       text-anchor:start;font-weight:200}
       text.center{text-anchor:middle}
@@ -77,6 +75,7 @@ export abstract class Theme {
       text.note-8,text.note-9,text.note-10{text-anchor:end}
       text.dimension-label{font-size:7px}
       text.grainline{fill:#999}
+
       path.arrow{stroke:#0275d8}
       path.grainline{stroke:#999;stroke-width:.6;marker-start:url(#grainlineStart);marker-end:url(#grainlineEnd)}
       path.dimension{stroke:#0275d8;stroke-width:.6;marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}
@@ -84,6 +83,7 @@ export abstract class Theme {
       path.dimension-leader{stroke:#0275d8;stroke-width:.3}
       path.single-arrow{marker-start:url(#dimensionStart)}
       path.double-arrow{marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}
+
       .text-xs{font-size:3px}
       .text-sm{font-size:4px}
       .text-lg{font-size:7px}
@@ -117,7 +117,7 @@ export abstract class Theme {
   }
 
   /** Returns a string containing the SVG defs */
-  loadDefs() {
+  loadDefs(pattern: Pattern) {
     return `
       <marker orient="auto" refY="0.0" refX="0.0" id="noteArrow" style="overflow:visible;" > <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 9,-3 C 8,-2 8,2  9, 3 z" /> </marker>
       <marker orient="auto" refY="0.0" refX="0.0" id="dimensionStart" style="overflow:visible;" > <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" /> </marker>

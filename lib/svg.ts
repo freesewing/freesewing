@@ -11,7 +11,6 @@ export class Svg {
   footer: string = '';
   defs: string = '';
   attributes: Attributes = new Attributes();
-  readonly TAB = '  ';
   tabs: number = 0;
   freeId: number = 1;
   openGroups: string[] = [];
@@ -23,13 +22,19 @@ export class Svg {
     this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
     this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
+    this.attributes.add("freesewing:foo", "bar");
 
     return this;
   }
 
   /** Renders a draft object as SVG */
-  render(pattern: Pattern, final: boolean = false): string {
-    let svg = this.openGroup('draftContainer');
+  render(pattern: Pattern): string {
+    let svg = this.prefix;
+    svg += this.renderComments(this.header);
+    svg += this.renderSvgTag(pattern);
+    svg += this.renderStyle();
+    svg += this.renderDefs();
+    svg += this.openGroup('draftContainer');
     for (let partId in pattern.parts) {
       let part = pattern.parts[partId];
       if (part.render) {
@@ -39,8 +44,48 @@ export class Svg {
       }
     }
     svg += this.closeGroup();
+    svg += this.nl()+'</svg>';
+    svg += this.renderComments(this.footer);
 
     return svg;
+  }
+
+  /** Returns SVG code for the opening SVG tag */
+  renderSvgTag(pattern: Pattern) {
+    let svg = '<svg';
+    this.indent();
+    svg += this.nl()+this.attributes.render();
+    this.outdent();
+    svg += this.nl()+'>'+this.nl();
+
+    return svg;
+  }
+
+  /** Returns SVG code for the style block */
+  renderStyle() {
+    let svg = '<style type="text/css">';
+    this.indent();
+    svg += this.nl()+this.style;
+    this.outdent();
+    svg += this.nl()+']]> >'+this.nl();
+
+    return svg;
+  }
+
+  /** Returns SVG code for the defs block */
+  renderDefs() {
+    let svg = '<defs id="defs">';
+    this.indent();
+    svg += this.nl()+this.defs;
+    this.outdent();
+    svg += this.nl()+'</defs>'+this.nl();
+
+    return svg;
+  }
+
+  /** Returns SVG code for a comment block */
+  renderComments(comments: string) {
+    return this.nl()+this.nl()+'<!--'+this.nl()+comments+this.nl()+'-->';
   }
 
   /** Returns SVG code for a Part object */
@@ -68,7 +113,7 @@ export class Svg {
 
 
   /** Returns SVG code to open a group */
-  protected openGroup(id: string, attributes?: Attributes): string {
+  openGroup(id: string, attributes?: Attributes): string {
     let svg = this.nl()+this.nl();
     svg += `<!-- Start of group #${id} -->`;
     svg += this.nl();
@@ -80,29 +125,39 @@ export class Svg {
   }
 
   /** Returns SVG code to close a group */
-  protected closeGroup(): string {
+  closeGroup(): string {
     this.outdent();
 
     return `${this.nl()}</g>${this.nl()}<!-- end of group #${this.openGroups.pop()} -->`;
   }
 
   /** Returns a linebreak + identation */
-  protected nl(): string {
-    return "\n"+this.TAB;
+  nl(): string {
+    return "\n"+this.tab();
+  }
+
+  /** Returns indentation */
+  tab(): string {
+    let space = '';
+    for (let i = 0; i < this.tabs; i++) {
+      space += '  ';
+    }
+
+    return space;
   }
 
   /** Increases indentation by 1 */
-  protected indent(): void {
+  indent(): void {
     this.tabs += 1;
   }
 
   /** Decreases indentation by 1 */
-  protected outdent(): void {
+  outdent(): void {
     this.tabs -= 1;
   }
 
    /** Returns an unused ID */
-   protected getUid() {
+   getUid() {
      this.freeId += 1;
 
      return this.freeId;

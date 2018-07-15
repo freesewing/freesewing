@@ -1,16 +1,20 @@
+import { Pattern } from '../pattern'
+import { Svg } from '../svg'
 import { Sample } from './sample';
 
 export class Paperless extends Sample {
-  constructor() {
-    super();
-    this.style += `
+
+  /** Pre-render method is called just prior to rendering */
+  preRender(pattern: Pattern, svg: Svg) {
+    super.preRender(pattern, svg);
+    svg.style += `
       rect.grid{fill:none;stroke:#555;stroke-width:0.3;fill:url(#grid);}
       path.gridline{stroke:#555;stroke-width:0.2;}
       path.gridline-lg{stroke:#777;stroke-width:0.2;stroke-dasharray:1.5,1.5;}
       path.gridline-sm{stroke:#999;stroke-width:0.1;}
       path.gridline-xs{stroke:#999;stroke-width:0.1;stroke-dasharray:0.5,0.5;}
       `;
-    this.defs += `
+    svg.defs += `
       <pattern id="metric-grid" height="100" width="100" patternUnits="userSpaceOnUse" >
         <path class="gridline-lg" d="M 0 0 L 0 100 L 100 100" />
         <path class="gridline" d="M 50 0 L 50 100 M 0 50 L 100 50" />

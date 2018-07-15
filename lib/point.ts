@@ -4,7 +4,6 @@ import { round, rad2deg, deg2rad } from './utils';
 export class Point {
   x: number;
   y: number;
-  readonly PRECISION = 2;
 
   constructor(x: number, y: number) {
     this.x = round(x);
@@ -18,7 +17,7 @@ export class Point {
     let dx = this.x - that.x;
     let dy = this.y - that.y;
 
-    return round(Math.sqrt(Math.pow(dx, this.PRECISION) + Math.pow(dy, this.PRECISION)));
+    return round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)));
   }
 
   /** Returns slope of a line made by this point and that point */

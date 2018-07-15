@@ -1,4 +1,5 @@
 import { PatternConfig, PatternOption } from './types'
+import { Point } from './point'
 import { Part } from './part'
 import { Svg } from './svg'
 import { Option } from './option'
@@ -8,11 +9,13 @@ import { Theme } from './themes/theme'
 export class Pattern {
   config: PatternConfig;
   svg: Svg = new Svg();
+  themes: {[index:string]: Theme} = themes;
   parts: {
     [index: string]: Part;
   }
   options: {[propName: string]: number};
-  themes: {[index:string]: Theme} = themes;
+  values: {[propName: string]: any} = {};
+  settings: {[propName: string]: any} = {mode: 'draft', units: 'metric'};
 
   constructor(config: PatternConfig) {
     this.config = config;
@@ -31,12 +34,15 @@ export class Pattern {
     return this;
   }
 
-  draft(config: object): void {
+  draft(): void {
     throw Error('You have to implement the draft() method in your Pattern instance.');
   }
 
   render(): string {
     let svg = new Svg();
+    let theme = this.themes[this.settings.mode];
+    theme.preRender(this, svg);
+
     return svg.render(this);
   }
 }
