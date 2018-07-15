@@ -3,11 +3,10 @@
   "version": "0.2.4",
   "description": "A basic body block for menswear",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "build-watch": "tsc -w",
+    "build": "babel-node -- ./index.js",
+    "build-watch": "nodemon --exec npm run build",
     "run": "nodemon node dist/index.js",
     "run-watch": "nodemon node dist/index.js"
   },
@@ -26,8 +25,7 @@
   },
   "devDependencies": {
     "@freesewing/models": "0.1.1",
-    "@types/bezier-js": "0.0.7",
-    "@types/node": "^10.5.2",
-    "typescript": "^2.9.2"
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0"
   }
 }

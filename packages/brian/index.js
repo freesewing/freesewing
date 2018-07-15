@@ -1,13 +1,12 @@
 import F from 'freesewing'
 import * as patternConfig from './config/config'
-import { DraftConfig } from './lib/types'
 import { Pattern } from 'freesewing/dist/lib/pattern'
 import backBlock from './lib/back'
 import { manSize38 } from '@freesewing/models'
 
 var brian = new F.pattern(patternConfig);
 
-brian.draft = function(final: boolean = true): Pattern {
+brian.draft = function(final = true) {
   backBlock.draft(brian, final);
 
   return brian;

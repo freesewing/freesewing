@@ -1,9 +1,8 @@
 import F from 'freesewing'
-import { DraftConfig } from './types'
 import { Pattern } from 'freesewing/dist/lib/pattern'
 
 var backBlock = {
-  draft: function(pattern: Pattern, final: boolean = true) {
+  draft: function(pattern, final = true) {
 
   // Save some typing
   let measurements = pattern.settings.measurements || {};
