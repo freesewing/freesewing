@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/joostdecock/brian#readme",
   "dependencies": {
-    "freesewing": "^0.1.1"
+    "freesewing": "^0.3.0"
   },
   "devDependencies": {
     "typescript": "^2.9.2",
