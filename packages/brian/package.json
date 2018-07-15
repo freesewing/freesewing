@@ -2,13 +2,12 @@
   "name": "@freesewing/brian",
   "version": "0.2.4",
   "description": "A basic body block for menswear",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel-node -- ./index.js",
-    "build-watch": "nodemon --exec npm run build",
-    "run": "nodemon node dist/index.js",
-    "run-watch": "nodemon node dist/index.js"
+    "build": "babel src -d dist",
+    "watch": "babel-watch src/main.js",
+    "run": "nodemon node dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
   "devDependencies": {
     "@freesewing/models": "0.1.1",
     "babel-cli": "6.26.0",
-    "babel-preset-env": "1.7.0"
+    "babel-preset-env": "1.7.0",
+    "babel-watch": "2.0.7"
   }
 }

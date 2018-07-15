@@ -1,28 +1,45 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _freesewing = require('freesewing');
+
+var _freesewing2 = _interopRequireDefault(_freesewing);
+
+var _config = require('../config/config');
+
+var patternConfig = _interopRequireWildcard(_config);
+
+var _pattern = require('freesewing/dist/lib/pattern');
+
+var _back = require('./lib/back');
+
+var _back2 = _interopRequireDefault(_back);
+
+var _models = require('@freesewing/models');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var brian = new _freesewing2.default.pattern(patternConfig);
+
+brian.draft = function () {
+  var final = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+
+  _back2.default.draft(brian, final);
+
+  return brian;
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var freesewing_1 = __importDefault(require("freesewing"));
-var patternConfig = __importStar(require("./config/config"));
-var back_1 = __importDefault(require("./lib/back"));
-var models_1 = require("@freesewing/models");
-var brian = new freesewing_1.default.pattern(patternConfig);
-brian.draft = function (final) {
-    if (final === void 0) { final = true; }
-    back_1.default.draft(brian, final);
-    return brian;
-};
+
 exports.default = brian;
+
 // This is not for inclusion in production
-console.log(models_1.manSize38);
-brian.settings.measurements = models_1.manSize38;
+
+console.log(_models.manSize38);
+brian.settings.measurements = _models.manSize38;
+
 brian.draft();
 console.log(brian.parts.backBlock.points);

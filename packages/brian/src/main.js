@@ -1,5 +1,5 @@
 import F from 'freesewing'
-import * as patternConfig from './config/config'
+import * as patternConfig from '../config/config'
 import { Pattern } from 'freesewing/dist/lib/pattern'
 import backBlock from './lib/back'
 import { manSize38 } from '@freesewing/models'
