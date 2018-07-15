@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/brian",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A basic body block for menswear",
   "main": "dist/node/index.js",
   "unpkg": "dist/browser/bundle.js",
