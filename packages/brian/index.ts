@@ -8,6 +8,8 @@ var brian = new F.pattern(patternConfig);
 
 brian.draft = function(final: boolean = true): void {
   backBlock.draft(brian, final);
+
+  return brian;
 }
 
 export default brian;

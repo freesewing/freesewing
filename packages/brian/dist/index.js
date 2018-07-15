@@ -17,5 +17,6 @@ var brian = new freesewing_1.default.pattern(patternConfig);
 brian.draft = function (final) {
     if (final === void 0) { final = true; }
     back_1.default.draft(brian, final);
+    return brian;
 };
 exports.default = brian;
