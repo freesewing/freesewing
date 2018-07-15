@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/browser'),
     filename: 'bundle.js',
     libraryTarget: 'var',
-    library: 'brian'
+    library: 'freesewing_patterns_brian'
   },
   module: {
     rules:[
