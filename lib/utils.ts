@@ -41,7 +41,7 @@ export function beamsCross(a1: Point, a2: Point, b1: Point, b2: Point): Point | 
 
     // Find intersection
     let x = (iB - iA) / (slopeA - slopeB);
-    let y = slopeA * x *iA;
+    let y = slopeA * x + iA;
 
     return new Point(x, y);
   }

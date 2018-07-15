@@ -31,28 +31,13 @@ it('should return a line intersection', () => {
   expect(utils.beamsCross(a,b,c,d)).to.be.false;
 
   // Debug
-  let e = new Point(0,0);
-  let f = new Point(25,25);
-  let g = new Point(0,60);
-  let h = new Point(25,35);
-  // Should be 30,30, but is 30,0
-  console.log(utils.beamsCross(e,f,g,h));
-        //$p->newPoint(2,25,25);
-        //$p->newPoint(3,0,60);
-        //$p->newPoint(4,25,35);
-        //$this->assertFalse($p->linesCross(1,2,3,4));
-        //$this->assertFalse($p->beamsCross(1,3,2,4));
-        //
-        //$expect = new \Freesewing\Point();
-        //$expect->setX(30);
-        //$expect->setY(30);
-        //$this->assertEquals($p->beamsCross(1,2,3,4), $expect);
-        //
-        //$p->newPoint(4,10,-10);
-        //$expect->setX(7.5);
-        //$expect->setY(7.5);
-        //$this->assertEquals($p->linesCross(1,2,3,4), $expect);
-  //
+  let e = new Point(213,222);
+  let f = new Point(220,214);
+  let g = new Point(213,44);
+  let h = new Point(248,222);
+  result = utils.beamsCross(e,f,g,h);
+  expect(result.x).to.equal(241.58);
+  expect(result.y).to.equal(189.34);
 });
 
 it('should return a line segment intersection', () => {
