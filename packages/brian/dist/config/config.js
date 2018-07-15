@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.parts = [
     "backBlock",
     "frontBlock",
-    "sleeveBlock"
+    "_sleeveBlock"
 ];
 /** Requires measurements */
 exports.measurements = [
@@ -27,9 +27,11 @@ exports.options = [
     { "id": "frontArmholeExtra", "val": 5, "type": "constant" },
     { "id": "shoulderSlopeReduction", "val": 0, "type": "constant" },
     { "id": "sleevecapEase", "val": 5, "type": "constant" },
+    { "id": "collarFactor", "val": 4.8, "type": "constant" },
     // Measures
     { "id": "bicepsEase", "val": 50, "min": 30, "max": 80 },
     { "id": "chestEase", "val": 30, "min": -40, "max": 160 },
+    { "id": "shoulderEase", "val": 0, "min": -20, "max": 60 },
     { "id": "cuffEase", "val": 45, "min": 0, "max": 100 },
     { "id": "lengthBonus", "val": 0, "min": -40, "max": 120 },
     { "id": "sleeveLengthBonus", "val": 0, "min": -40, "max": 80 },

@@ -1,5 +1,5 @@
-import { DraftConfig } from './types';
+import { Pattern } from 'freesewing/lib/pattern';
 declare var backBlock: {
-    draft: (config: DraftConfig, pattern: any) => void;
+    draft: (pattern: Pattern, final?: boolean) => void;
 };
 export default backBlock;
