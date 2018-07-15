@@ -2,12 +2,15 @@
   "name": "@freesewing/brian",
   "version": "0.3.0",
   "description": "A basic body block for menswear",
-  "main": "dist/main.js",
+  "main": "dist/node/index.js",
+  "unpkg": "dist/browser/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist",
-    "watch": "babel-watch src/main.js",
-    "run": "nodemon node dist/main.js"
+    "nodebuild": "babel src -d dist/node",
+    "browserbuild": "npx webpack-cli --config webpack.config.js",
+    "watch": "babel-watch src/index.js",
+    "run": "nodemon node dist/node/index.js",
+    "dev": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -23,9 +26,16 @@
     "freesewing": "^0.3.0"
   },
   "devDependencies": {
+    "@babel/core": "7.0.0-beta.53",
+    "@babel/preset-env": "7.0.0-beta.53",
     "@freesewing/models": "0.1.1",
     "babel-cli": "6.26.0",
+    "babel-loader": "8.0.0-beta.4",
     "babel-preset-env": "1.7.0",
-    "babel-watch": "2.0.7"
+    "babel-watch": "2.0.7",
+    "html-webpack-plugin": "3.2.0",
+    "webpack": "4.16.0",
+    "webpack-cli": "3.0.8",
+    "webpack-dev-server": "3.1.4"
   }
 }

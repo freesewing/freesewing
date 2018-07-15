@@ -1,4 +1,4 @@
-import F from 'freesewing'
+import freesewing from 'freesewing'
 import { Pattern } from 'freesewing/dist/lib/pattern'
 
 var backBlock = {
@@ -10,6 +10,7 @@ var backBlock = {
   let values = pattern.values;
   let points = pattern.parts.backBlock.points;
   let paths = pattern.parts.backBlock.paths;
+  let F = freesewing;
 
   // Center back (cb) vertical axis
   points.cbNeck     = new F.point(0, options.backNeckCutout);
