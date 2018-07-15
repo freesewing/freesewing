@@ -3,14 +3,27 @@ import { Path } from './path'
 import { Pattern } from './pattern'
 import { Attributes } from './attributes'
 
-export class Renderer {
-  svg = '';
+export class Svg {
+  prefix: string;
+  body: string = '';
+  style: string = '';
+  header: string = '';
+  footer: string = '';
+  defs: string = '';
+  attributes: Attributes = new Attributes();
   readonly TAB = '  ';
   tabs: number = 0;
   freeId: number = 1;
   openGroups: string[] = [];
 
   constructor() {
+    this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
+    this.attributes.add
+    this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
+    this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
+    this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
+    this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
+
     return this;
   }
 
@@ -49,7 +62,8 @@ export class Renderer {
 
   /** Returns SVG code for a Path object */
   renderPath(path: Path): string {
-    return `${this.nl()}<path ${path.attributes.add('d', path.asPathstring()).render()} />`;
+    path.attributes.add('d', path.asPathstring());
+    return `${this.nl()}<path ${path.attributes.render()} />`;
   }
 
 

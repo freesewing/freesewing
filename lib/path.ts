@@ -3,10 +3,7 @@ import { Attributes } from './attributes'
 
 
 export class Path {
-  constructor() {
-    return this;
-  }
-
+  render: boolean = true;
   ops: {
       type: "move" | "line" | "curve" | "close";
       to?: Point;
@@ -69,10 +66,4 @@ export class Path {
     return d;
   }
 
-  /** Returns SVG code for this path */
-  render(): string {
-    this.attributes.add('d', this.asPathstring());
-    return `<path ${this.render()} />`;
-
-  }
 }

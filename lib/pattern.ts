@@ -1,14 +1,18 @@
 import { PatternConfig, PatternOption } from './types'
 import { Part } from './part'
-import { Renderer } from './renderer'
+import { Svg } from './svg'
 import { Option } from './option'
+import themes from './themes'
+import { Theme } from './themes/theme'
 
 export class Pattern {
   config: PatternConfig;
+  svg: Svg = new Svg();
   parts: {
     [index: string]: Part;
   }
   options: {[propName: string]: number};
+  themes: {[index:string]: Theme} = themes;
 
   constructor(config: PatternConfig) {
     this.config = config;
@@ -31,8 +35,8 @@ export class Pattern {
     throw Error('You have to implement the draft() method in your Pattern instance.');
   }
 
-  render(pattern: Pattern): string {
-    let r = new Renderer();
-    return r.render(pattern);
+  render(): string {
+    let svg = new Svg();
+    return svg.render(this);
   }
 }
