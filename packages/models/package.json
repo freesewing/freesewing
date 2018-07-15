@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Body measurements data for a range of default sizes",
   "main": "dist/node/index.js",
-  "unpkg": "dist/browser/index.js",
+  "unpkg": "dist/browser/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodebuild": "babel src -d dist/node",
