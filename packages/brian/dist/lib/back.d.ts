@@ -1,4 +1,4 @@
-import { Pattern } from 'freesewing/lib/pattern';
+import { Pattern } from 'freesewing/dist/lib/pattern';
 declare var backBlock: {
     draft: (pattern: Pattern, final?: boolean) => void;
 };

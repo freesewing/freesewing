@@ -1,2 +1,3 @@
-declare var brian: import("freesewing/dist/lib/pattern").Pattern;
+import { Pattern } from 'freesewing/dist/lib/pattern';
+declare var brian: Pattern;
 export default brian;

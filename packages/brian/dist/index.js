@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var freesewing_1 = __importDefault(require("freesewing"));
 var patternConfig = __importStar(require("./config/config"));
 var back_1 = __importDefault(require("./lib/back"));
+var models_1 = require("@freesewing/models");
 var brian = new freesewing_1.default.pattern(patternConfig);
 brian.draft = function (final) {
     if (final === void 0) { final = true; }
@@ -20,3 +21,8 @@ brian.draft = function (final) {
     return brian;
 };
 exports.default = brian;
+// This is not for inclusion in production
+console.log(models_1.manSize38);
+brian.settings.measurements = models_1.manSize38;
+brian.draft();
+console.log(brian.parts.backBlock.points);
