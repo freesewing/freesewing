@@ -13,9 +13,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var freesewing_1 = __importDefault(require("freesewing"));
 var patternConfig = __importStar(require("./config/config"));
 var back_1 = __importDefault(require("./lib/back"));
-var brian = new freesewing_1.default.pattern(patternConfig);
-brian.draft = function (final) {
+exports.brian = new freesewing_1.default.pattern(patternConfig);
+exports.brian.draft = function (final) {
     if (final === void 0) { final = true; }
-    back_1.default.draft(brian, final);
+    back_1.default.draft(exports.brian, final);
 };
-exports.default = brian;

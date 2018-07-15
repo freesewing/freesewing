@@ -4,10 +4,9 @@ import { DraftConfig } from './lib/types'
 import { Pattern } from 'freesewing/lib/pattern'
 import backBlock from './lib/back'
 
-var brian = new F.pattern(patternConfig);
+export var brian = new F.pattern(patternConfig);
 
 brian.draft = function(final: boolean = true): void {
   backBlock.draft(brian, final);
 }
 
-export default brian;
