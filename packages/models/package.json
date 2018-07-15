@@ -2,17 +2,13 @@
   "name": "@freesewing/models",
   "version": "0.1.1",
   "description": "Body measurements data for a range of default sizes",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "files": [
-    "index.js",
-    "index.ts",
-    "index.d.ts"
-  ],
+  "main": "dist/node/index.js",
+  "unpkg": "dist/browser/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "watch": "tsc -w"
+    "nodebuild": "babel src -d dist/node",
+    "browserbuild": "npx webpack-cli --config webpack.config.js",
+    "dev": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -23,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/joostdecock/models/issues"
   },
-  "homepage": "https://github.com/joostdecock/models#readme"
+  "homepage": "https://github.com/joostdecock/models#readme",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.53",
+    "@babel/preset-env": "7.0.0-beta.53",
+    "babel-cli": "6.26.0",
+    "babel-loader": "8.0.0-beta.4",
+    "babel-preset-env": "1.7.0",
+    "webpack": "4.16.0",
+    "webpack-cli": "3.0.8"
+  }
 }
