@@ -1,6 +1,7 @@
 import { Pattern } from '../pattern'
 import { Svg } from '../svg'
 import { Path } from '../path'
+import { Part } from '../part'
 import { Snippet } from '../snippet'
 import { Theme } from './theme';
 
@@ -88,7 +89,7 @@ export class Designer extends Theme {
   decoratePoint(pointId: string, part: Part, svg: Svg): void {
     let point = part.points[pointId];
     point.attributes.add('id', svg.getUid());
-    point.attributes.add('data-point', id);
+    point.attributes.add('data-point', pointId);
   }
 
   /** Decorares paths with extra info */
@@ -107,22 +108,23 @@ export class Designer extends Theme {
   decoratePath(pathId: string, part: Part, svg: Svg): void {
     let path = part.paths[pathId];
     if (!path.render) return false;
+    let id: string;
     for (let op of path.ops) {
       switch(op.type) {
         case 'move':
-          let id = svg.getUid();
+          id = svg.getUid();
           part.snippets[id] = new Snippet(op.to, 'path-start-point', `Startpoint of path ${pathId}`);
           part.snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
           part.snippets[id].attributes.add('id', svg.getUid());
           break;
         case 'line':
-          let id = svg.getUid();
+          id = svg.getUid();
           part.snippets[id] = new Snippet(op.to, 'path-point', `Line endpoint of path ${pathId}`);
           part.snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
           part.snippets[id].attributes.add('id', svg.getUid());
           break;
         case 'curve':
-          let id = svg.getUid();
+          id = svg.getUid();
           part.snippets[id] = new Snippet(op.to, 'path-point', `Curve endpoint of path ${pathId}`);
           part.snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
           part.snippets[id].attributes.add('id', svg.getUid());

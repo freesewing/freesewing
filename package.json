@@ -7,9 +7,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register tests/*.test.js",
     "build": "tsc",
-    "build-watch": "tsc -w",
-    "run": "nodemon node dist/index.js",
-    "run-watch": "nodemon node dist/index.js"
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
