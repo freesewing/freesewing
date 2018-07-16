@@ -10,6 +10,7 @@ var backBlock = {
   let values = pattern.values;
   let points = pattern.parts.backBlock.points;
   let paths = pattern.parts.backBlock.paths;
+  let snippets = pattern.parts.backBlock.snippets;
   let F = freesewing;
 
   // Center back (cb) vertical axis
@@ -35,21 +36,13 @@ var backBlock = {
   points._tmp3 = F.utils.beamsCross(points._tmp1, points._tmp2, points.armhole, points.armholePitch);
   points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5);
 
-
-
-
-
-
-
-
-
-
-
   paths.seam = new F.path()
-    .move(points.cbNeck)
+    .move(points.cbShoulder)
     .line(points.cbHips)
-    .line(points.cbHips)
+    .line(points.hips)
+    .line(points.armhole)
     .curve(points.neck, points.shoulder, points.armholePitch)
+    .close()
   ;
 
   points.gridAnchor = points.cbHips;

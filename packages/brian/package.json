@@ -10,9 +10,9 @@
     "browserbuild": "npx webpack-cli --config webpack.config.js",
     "watch": "babel-watch src/index.js",
     "run": "nodemon node dist/node/index.js",
-    "dev1": "webpack-dev-server --open",
-    "dev2": "npx webpack-cli --config webpack.config.js --watch",
-    "dev": "webpack-dev-server --open && npx webpack-cli --config webpack.config.js --watch"
+    "watch": "npx webpack-cli --config webpack.config.js --watch",
+    "dev": "webpack-dev-server --open",
+    "rdev": "webpack-dev-server --disable-host-check --public joost.freesewing.org:8080"
   },
   "repository": {
     "type": "git",
