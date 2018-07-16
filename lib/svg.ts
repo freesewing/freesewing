@@ -190,6 +190,6 @@ export class Svg {
    getUid() {
      this.freeId += 1;
 
-     return this.freeId;
+     return ''+this.freeId;
    }
 }
