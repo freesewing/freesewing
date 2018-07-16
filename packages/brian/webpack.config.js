@@ -30,7 +30,7 @@ module.exports = {
     //  on the global var data
     'data': 'data'
   },
-  plugins: [
-    new HtmlWebpackPlugin()
-  ]
+  devServer: {
+    contentBase: path.resolve(__dirname)
+  }
 };

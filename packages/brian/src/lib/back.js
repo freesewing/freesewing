@@ -27,7 +27,7 @@ var backBlock = {
   // Shoulder line
   points.neck     = new F.point(measurements.neckCircumference / options.collarFactor, 0);
   points.shoulder = new F.point(measurements.shoulderToShoulder / 2 + options.shoulderEase / 2, points.cbShoulder.y);
-
+  points.shoulderCp2 = points.shoulder.shiftTowards(points.neck, 10).rotate(points.shoulder, 90);
   // Armhhole
   points.armholePitch = new F.point(measurements.shoulderToShoulder * options.acrossBackFactor / 2, points.armhole.y / 2 - points.shoulder.y / 2);
   points._tmp1 = new F.point(points.armholePitch.x, points.armhole.y);
@@ -35,11 +35,20 @@ var backBlock = {
   points._tmp3 = F.utils.beamsCross(points._tmp1, points._tmp2, points.armhole, points.armholePitch);
   points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5);
 
-  paths.test = new F.path()
+
+
+
+
+
+
+
+
+
+
+  paths.seam = new F.path()
     .move(points.cbNeck)
-    .line(points.armhole)
     .line(points.cbHips)
-    .line(points.hips)
+    .line(points.cbHips)
     .curve(points.neck, points.shoulder, points.armholePitch)
   ;
 
