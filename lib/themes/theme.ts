@@ -8,6 +8,7 @@ export abstract class Theme {
     svg.header += this.loadHeader(pattern);
     svg.footer += this.loadFooter(pattern);
     svg.style += this.loadStyle(pattern);
+    svg.script += this.loadScript(pattern);
     svg.defs += this.loadDefs(pattern);
   }
 
@@ -114,6 +115,11 @@ export abstract class Theme {
       .fill-mark{fill:#f0ad4e}
       .fill-hint{fill:#86739c}
       .fill-gray{fill:#999}`;
+  }
+
+  /** Returns a string containing the SVG ECMA script */
+  loadScript(pattern: Pattern) {
+    return '';
   }
 
   /** Returns a string containing the SVG defs */

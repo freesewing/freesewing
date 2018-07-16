@@ -1,9 +1,10 @@
 import { round, rad2deg, deg2rad } from './utils';
-
+import { Attributes } from './attributes'
 
 export class Point {
   x: number;
   y: number;
+  attributes: Attributes = new Attributes();
 
   constructor(x: number, y: number) {
     this.x = round(x);

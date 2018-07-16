@@ -1,5 +1,6 @@
 import { Point } from './point'
 import { Path } from './path'
+import { Snippet } from './snippet'
 import { Attributes } from './attributes'
 
 export class Part {
@@ -9,6 +10,7 @@ export class Part {
     [index: string]: Point | boolean;
   }
   paths: { [index: string]: Path; } = {};
+  snippets: { [index: string]: Snippet; } = {};
   attributes = new Attributes();
   [propName: string]: any;
 
@@ -19,7 +21,6 @@ export class Part {
 
     return this;
   }
-
 
 //  purge = {
 //    points = function(prefix: string): void {}

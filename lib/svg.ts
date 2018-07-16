@@ -1,5 +1,6 @@
 import { Part } from './part'
 import { Path } from './path'
+import { Snippet } from './snippet'
 import { Pattern } from './pattern'
 import { Attributes } from './attributes'
 
@@ -7,6 +8,7 @@ export class Svg {
   prefix: string;
   body: string = '';
   style: string = '';
+  script: string = '';
   header: string = '';
   footer: string = '';
   defs: string = '';
@@ -33,6 +35,7 @@ export class Svg {
     svg += this.renderComments(this.header);
     svg += this.renderSvgTag(pattern);
     svg += this.renderStyle();
+    svg += this.renderScript();
     svg += this.renderDefs();
     svg += this.openGroup('draftContainer');
     for (let partId in pattern.parts) {
@@ -72,6 +75,17 @@ export class Svg {
     return svg;
   }
 
+  /** Returns SVG code for the script block */
+  renderScript() {
+    let svg = '<script type="text/javascript"> <![CDATA[';
+    this.indent();
+    svg += this.nl()+this.script;
+    this.outdent();
+    svg += this.nl()+']]> >'+this.nl()+'</script>'+this.nl();
+
+    return svg;
+  }
+
   /** Returns SVG code for the defs block */
   renderDefs() {
     let svg = '<defs id="defs">';
@@ -91,16 +105,19 @@ export class Svg {
   /** Returns SVG code for a Part object */
   renderPart(part: Part): string {
 		let svg = '';
-    for (let pathId in part.paths) {
-      let path = part.paths[pathId];
+    for (let key in part.paths) {
+      let path = part.paths[key];
       if(path.render) svg += this.renderPath(path);
+    }
+    for (let key in part.snippets) {
+      let snippet = part.snippets[key];
+      svg += this.renderSnippet(snippet);
     }
     // includes
     // text on path
     // notes
     // dimensions
     // texts
-    // snippets
 
     return svg;
   }
@@ -109,6 +126,19 @@ export class Svg {
   renderPath(path: Path): string {
     path.attributes.add('d', path.asPathstring());
     return `${this.nl()}<path ${path.attributes.render()} />`;
+  }
+
+  /** Returns SVG code for a snippet */
+  renderSnippet(snippet: Snippet): string {
+    let svg = this.nl();
+    svg += `<use x="${snippet.anchor.x}" y="${snippet.anchor.y}" `
+    svg += `xlink:href="#${snippet.def}" ${snippet.attributes.render()}>`;
+    if(snippet.description) {
+      svg += `<title>${snippet.description}</title>`;
+    }
+    svg += '</use>';
+
+    return svg;
   }
 
 
