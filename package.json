@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/joostdecock/freesewing#readme",
   "dependencies": {
-    "bezier-js": "^2.2.13"
+    "bezier-js": "^2.2.13",
+    "hooks": "^0.3.2"
   },
   "devDependencies": {
     "@types/bezier-js": "0.0.7",

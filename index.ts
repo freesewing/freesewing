@@ -1,19 +1,28 @@
-import { Pattern } from './lib/pattern'
-import { Point } from './lib/point'
-import { Path } from './lib/path'
-import { Snippet } from './lib/snippet'
-import themes from './lib/themes'
-import * as utils from './lib/utils'
-import bezier from 'bezier-js'
+import { Freesewing } from './lib/freesewing'
 
-var Freesewing = {
-  version: '1.0.1',
-  pattern: Pattern,
-  point: Point,
-  path: Path,
-  snippet: Snippet,
-  utils,
-  bezier
-}
+var freesewing = new Freesewing();
 
-export default Freesewing;
+
+
+
+
+
+
+
+
+
+    //svg.pre('loadStyle', function (next) {
+    //  console.log('loadStyle hook');
+    //  console.log(this.style);
+    //  this.style= 'p {line-height: 1.21;}';
+    //  console.log('logging in hook', this);
+    //  next();
+    //});
+
+//var p = new app.pattern({parts:['tst']});
+//p.draft = function(){
+//  console.log('drafting in lib index');
+//}
+//p.draft();
+//p.render();
+export default freesewing;

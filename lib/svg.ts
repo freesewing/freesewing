@@ -3,6 +3,8 @@ import { Path } from './path'
 import { Snippet } from './snippet'
 import { Pattern } from './pattern'
 import { Attributes } from './attributes'
+import hooklib from 'hooks'
+import { Hooks } from './hooks'
 
 export class Svg {
   prefix: string;
@@ -16,8 +18,11 @@ export class Svg {
   tabs: number = 0;
   freeId: number = 1;
   openGroups: string[] = [];
+  hook: any;
+  hooks: string[];
+  pattern: Pattern;
 
-  constructor() {
+  constructor(pattern) {
     this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
     this.attributes.add
     this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
@@ -25,12 +30,25 @@ export class Svg {
     this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
     this.attributes.add("freesewing:foo", "bar");
+    this.pattern = pattern;
+    this.hooks = ['loadStyle'];
+    for(let k in hooklib) this[k] = hooklib[k];
+    this.hook('loadStyle', this.loadStyle);
 
     return this;
   }
 
+  /** Loads CSS styles */
+  loadStyle(): string {
+    return this.style;
+  }
+
+  loadStyle() {
+    return this.style;
+  }
   /** Renders a draft object as SVG */
   render(pattern: Pattern): string {
+    this.loadStyle();
     let svg = this.prefix;
     svg += this.renderComments(this.header);
     svg += this.renderSvgTag(pattern);
@@ -66,12 +84,12 @@ export class Svg {
 
   /** Returns SVG code for the style block */
   renderStyle() {
-    let svg = '<style type="text/css">';
+    this.loadStyle(); // TODO: Hooks docs
+    let svg = '<style type="text/css"> <![CDATA[ ';
     this.indent();
     svg += this.nl()+this.style;
     this.outdent();
     svg += this.nl()+']]> >'+this.nl()+'</style>'+this.nl();
-
     return svg;
   }
 

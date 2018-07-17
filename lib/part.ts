@@ -5,7 +5,7 @@ import { Attributes } from './attributes'
 
 function PointProxy(id: string) {
   this.id = id;
-  this.get =  function(points, key: string, proxy: ProxyHandler<Map<any, any>>): Point {
+  this.get = function(points: any, key: string, proxy: ProxyHandler<Map<any, any>>): Point {
     return points.get(key);
   };
   this.set =  function(points: Map<string, Point>, key: string, point: Point, proxy: ProxyHandler<Map<any, any>>) {
