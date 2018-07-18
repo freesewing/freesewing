@@ -52,9 +52,8 @@ export class Pattern {
     return this.svg.render(this);
   }
 
-  /** Add hook */
   on(hook, method): void {
-    if(typeof this.hooks._hooks[method] === 'undefined') {
+    if(typeof this.hooks._hooks[hook] === 'undefined') {
       this.hooks._hooks[hook] = [];
     }
     this.hooks._hooks[hook].push(method);

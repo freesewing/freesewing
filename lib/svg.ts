@@ -84,7 +84,7 @@ export class Svg {
     this.indent();
     svg += this.nl()+this.style;
     this.outdent();
-    svg += this.nl()+']]> >'+this.nl()+'</style>'+this.nl();
+    svg += this.nl()+']]>'+this.nl()+'</style>'+this.nl();
     return svg;
   }
 
@@ -94,7 +94,7 @@ export class Svg {
     this.indent();
     svg += this.nl()+this.script;
     this.outdent();
-    svg += this.nl()+']]> >'+this.nl()+'</script>'+this.nl();
+    svg += this.nl()+']]>'+this.nl()+'</script>'+this.nl();
 
     return svg;
   }
