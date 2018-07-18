@@ -1,0 +1,35 @@
+{
+  "name": "@freesewing/theme-default",
+  "version": "0.0.1",
+  "description": "The default theme for freesewing",
+  "main": "dist/node/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "nodebuild": "babel src -d dist/node",
+    "browserbuild": "npx webpack-cli --config webpack.config.js",
+    "build": "npm run clean && npm run nodebuild && npm run browserbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostdecock/theme-default.git"
+  },
+  "author": "Joost De Cock <joost@decock.org> (https://twitter.com/j__st)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joostdecock/theme-default/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.53",
+    "@babel/preset-env": "7.0.0-beta.53",
+    "rimraf": "^2.6.2",
+    "babel-cli": "6.26.0",
+    "babel-loader": "8.0.0-beta.4",
+    "babel-preset-env": "1.7.0",
+    "babel-watch": "2.0.7",
+    "raw-loader": "^0.5.1",
+    "webpack": "4.16.0",
+    "webpack-cli": "3.0.8"
+  },
+  "homepage": "https://github.com/joostdecock/theme-default#readme"
+}
