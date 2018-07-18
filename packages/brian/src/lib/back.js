@@ -28,19 +28,31 @@ var backBlock = {
   // Shoulder line
   points.neck     = new F.point(measurements.neckCircumference / options.collarFactor, 0);
   points.shoulder = new F.point(measurements.shoulderToShoulder / 2 + options.shoulderEase / 2, points.cbShoulder.y);
-  points.shoulderCp2 = points.shoulder.shiftTowards(points.neck, 10).rotate(points.shoulder, 90);
+
   // Armhhole
   points.armholePitch = new F.point(measurements.shoulderToShoulder * options.acrossBackFactor / 2, points.armhole.y / 2 - points.shoulder.y / 2);
   points._tmp1 = new F.point(points.armholePitch.x, points.armhole.y);
   points._tmp2 = points._tmp1.shift(45, 10);
   points._tmp3 = F.utils.beamsCross(points._tmp1, points._tmp2, points.armhole, points.armholePitch);
   points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5);
+  points.armholeCp1 = points.armhole.shift(180, points._tmp1.dx(points.armhole)/4);
+  points.armholeCp2 = points.armholeHollow.shift(-45, points.armholeHollow.dy(points.armhole)/2);
+  points.armholeHollowCp1 = points.armholeHollow.shift(135, points.armholePitch.dx(points.armholeHollow));
+  points.armholeHollowCp2 = points.armholePitch.shift(-90, points.armholePitch.dy(points.armholeHollow)/2);
+  points.armholePitchCp1 = points.armholePitch.shift(90, points.shoulder.dy(points.armholePitch)/2);
+  points.armholePitchCp2 = points.shoulder.shiftTowards(points.neck, 10);
+    // Dafuq rotate?
+  console.log(points.shoulder.shiftTowards(points.neck, 10));
+  console.log(points.shoulder.shiftTowards(points.neck, 10).rotate(points.shoulder, 90));
 
   paths.seam = new F.path()
     .move(points.cbShoulder)
     .line(points.cbHips)
     .line(points.hips)
     .line(points.armhole)
+    .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
+    .curve(points.armholeHollowCp1, points.armholeHollowCp2, points.armholePitch)
+    //.curve(points.armholePitchCp1, points.armholePitchCp2, points.shoulder)
     .curve(points.neck, points.shoulder, points.armholePitch)
     .close()
   ;

@@ -8,9 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodebuild": "babel src -d dist/node",
     "browserbuild": "npx webpack-cli --config webpack.config.js",
-    "watch": "babel-watch src/index.js",
-    "run": "nodemon node dist/node/index.js",
     "watch": "npx webpack-cli --config webpack.config.js --watch",
+    "run": "nodemon node dist/node/index.js",
     "dev": "webpack-dev-server --open",
     "rdev": "webpack-dev-server --disable-host-check --public joost.freesewing.org:8080"
   },
@@ -25,7 +24,8 @@
   },
   "homepage": "https://github.com/joostdecock/brian#readme",
   "dependencies": {
-    "freesewing": "^0.3.0"
+    "@freesewing/theme-default": "0.0.2",
+    "freesewing": "^0.3.1"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.53",
@@ -35,7 +35,7 @@
     "babel-loader": "8.0.0-beta.4",
     "babel-preset-env": "1.7.0",
     "babel-watch": "2.0.7",
-    "webpack": "4.16.0",
+    "webpack": "^4.16.1",
     "webpack-cli": "3.0.8",
     "webpack-dev-server": "3.1.4"
   }
