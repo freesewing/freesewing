@@ -1,6 +1,7 @@
 import script from './lib/script';
 import style from './lib/style';
 import snippets from './lib/snippets';
+import meta from '../package.json';
 
 module.exports = {
   preRenderSvg: function(next) {
@@ -11,14 +12,8 @@ module.exports = {
 
     // Add SVG attributes
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
-    this.attributes.add("freesewing:plugin", "theme-designer");
+    this.attributes.add("freesewing:theme-designer", meta.version);
     this.attributes.add("viewBox", "-10 -10 300 500");
-
-    // Decorate pattern
-    decaratePoints(this);
-    decaratePaths(this);
-
-    next();
 
     /** Decorares points with extra info */
     var decoratePoints = function (svg) {
@@ -36,14 +31,14 @@ module.exports = {
     }
 
     /** Decorares path points with extra info */
-    var decoratePathPoint = function (id, snippets, point, type, pathId) {
-      part.snippets[id] = new Snippet(op.to, `path-${op.type}-point`, `Path ${pathId}: ${op.type}`);
-      part.snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
-      part.snippets[id].attributes.add('id', id);
+    var decoratePathPoint = function (id, Snippet, snippets, point, type, pathId) {
+      snippets[id] = new Snippet(point, `path-${type}-point`, `Path ${pathId}: ${type}`);
+      snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
+      snippets[id].attributes.add('id', id);
     }
 
     /** Draws curve control handles */
-    var decorateCurveHandles = function (id, paths, from, to) {
+    var decorateCurveHandles = function (id, Path, paths, from, to) {
       let path = new Path().move(from).line(to);
       path.attributes.add('class', 'curve-control');
       path.attributes.add('id', id);
@@ -61,13 +56,13 @@ module.exports = {
             let id;
             for (let op of path.ops) {
               if(op.type !== 'close') {
-                decoratePathPoint(svg.getUid(), part.snippets, op.to, op.type, pathId);
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.to, op.type, pathId);
               }
-              if(op.type !== 'curve') {
-                decoratePathPoint(svg.getUid(), part.snippets, op.cp1, op.type, pathId);
-                decoratePathPoint(svg.getUid(), part.snippets, op.cp2, op.type, pathId);
-                decorateCurveHandles(svg.getUid(), part.paths, current, op.cp1);
-                decorateCurveHandles(svg.getUid(), part.paths, op.to, op.cp2);
+              if(op.type === 'curve') {
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp1, 'handle', pathId);
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp2, 'handle', pathId);
+                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, current, op.cp1);
+                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, op.to, op.cp2);
               }
               let current = op.to;
             }
@@ -75,5 +70,12 @@ module.exports = {
         }
       }
     }
+
+    // Decorate pattern
+    decoratePoints(this);
+    decoratePaths(this);
+
+    next();
+
   }
 }
