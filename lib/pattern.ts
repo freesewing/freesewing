@@ -7,7 +7,7 @@ import { Option } from './option'
 
 export class Pattern {
   config: PatternConfig;
-  svg: Svg = new Svg();
+  svg: Svg;
   parts: {
     [index: string]: Part;
   }
@@ -15,7 +15,7 @@ export class Pattern {
   values: {[propName: string]: any} = {};
   settings: {[propName: string]: any} = {mode: 'draft', units: 'metric'};
   hooks: Hooks;
-  on: function;
+  on: () => void;
 
   constructor(config: PatternConfig) {
     if(!config) {
@@ -26,6 +26,7 @@ export class Pattern {
     }
     this.config = config;
     this.parts = {};
+    this.svg = new Svg();
     this.hooks = new Hooks();
     this.on = this.hooks.on;
     for (let id of config.parts) {
@@ -47,15 +48,19 @@ export class Pattern {
   }
 
   render(): string {
-    let svg = new Svg(this);
-    this.hooks.attach('preSvgRender', svg);
-    this.hooks.attach('postSvgRender', svg);
-    //svg.pre('preRenderSvg', function(next) {
-    //  console.log('manual attach');
-    //  this.style += "path {stroke: #000; fill: none;}";
-    //  next();
-    //});
+    this.hooks.attach('preRenderSvg', this.svg);
+    this.hooks.attach('postRenderSvg', this.svg);
 
-    return svg.render(this);
+    return this.svg.render(this);
+  }
+
+  loadPlugin(plugin: () => void): void {
+    console.log('Pattern::loadPlugin', plugin);
+    for(let hook of this.hooks.all) {
+      if(typeof plugin[hook] === 'function') {
+    console.log('Pattern::loadPlugin - hook', plugin[hook]);
+        this.on(hook, plugin[hook]);
+      }
+    }
   }
 }

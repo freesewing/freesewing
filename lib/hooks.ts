@@ -1,8 +1,10 @@
 export class Hooks {
-  _hooks: object;
+  hooks: object;
+  all: string[];
 
   constructor(app) {
     this._hooks = {};
+    this.all = ['preRenderSvg', 'postRenderSvg'];
   }
 
   on(hook, method): void {
@@ -10,7 +12,7 @@ export class Hooks {
       this.hooks._hooks[hook] = [];
     }
     this.hooks._hooks[hook].push(method);
-    console.log('in on method', hook, method);
+    console.log('Hooks::on ', hook, method);
   }
 
   list(hook): function[] {
@@ -29,11 +31,11 @@ export class Hooks {
     }
 
   attach (hook: string, obj: object): void {
+      console.log('Hooks::attach', hook, obj, this._hooks);
       if(typeof this._hooks[hook] === 'undefined') return;
       for(let func of this._hooks[hook]) {
-        console.log('in attach', hook, func);
+        console.log('Hooks::attach', hook, func);
         obj.pre(hook, func);
       }
     }
-
 }

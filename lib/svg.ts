@@ -23,7 +23,7 @@ export class Svg {
   hooks: string[];
   pattern: Pattern;
 
-  constructor(pattern) {
+  constructor() {
     this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
     this.attributes.add
     this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
@@ -31,23 +31,22 @@ export class Svg {
     this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
     this.attributes.add("freesewing:foo", "bar");
-    this.pattern = pattern;
-    this.hooks = ['preSvgRender', 'postSvgRender'];
+    this.hooks = ['preRenderSvg', 'postRenderSvg'];
     for(let k in hooklib) this[k] = hooklib[k];
     for(let k in this.hooks) this.hook(k, this[k]);
 
     return this;
   }
 
-  /** Method to attach preSvgRender hooks on */
-  preSvgRender(): void {}
+  /** Method to attach preRenderSvg hooks on */
+  preRenderSvg(): void {}
 
-  /** Method to attach postSvgRender hooks on */
-  postSvgRender(): void {}
+  /** Method to attach postRenderSvg hooks on */
+  postRenderSvg(): void {}
 
   /** Renders a draft object as SVG */
   render(pattern: Pattern): string {
-    this.preSvgRender();
+    this.preRenderSvg();
     this.svg = this.prefix;
     this.svg += this.renderComments(this.header);
     this.svg += this.renderSvgTag(pattern);
@@ -66,7 +65,7 @@ export class Svg {
     this.svg += this.closeGroup();
     this.svg += this.nl()+'</svg>';
     this.svg += this.renderComments(this.footer);
-    this.postSvgRender();
+    this.postRenderSvg();
     return this.svg;
   }
 
