@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/theme-default",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The default theme for freesewing",
   "main": "dist/node/index.js",
   "unpkg": "dist/browser/bundle.js",
