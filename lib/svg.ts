@@ -17,6 +17,7 @@ export class Svg {
   attributes: Attributes = new Attributes();
   tabs: number = 0;
   freeId: number = 1;
+  svg: string = '';
   openGroups: string[] = [];
   hook: any;
   hooks: string[];
@@ -31,44 +32,42 @@ export class Svg {
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
     this.attributes.add("freesewing:foo", "bar");
     this.pattern = pattern;
-    this.hooks = ['loadStyle'];
+    this.hooks = ['preSvgRender', 'postSvgRender'];
     for(let k in hooklib) this[k] = hooklib[k];
-    this.hook('loadStyle', this.loadStyle);
+    for(let k in this.hooks) this.hook(k, this[k]);
 
     return this;
   }
 
-  /** Loads CSS styles */
-  loadStyle(): string {
-    return this.style;
-  }
+  /** Method to attach preSvgRender hooks on */
+  preSvgRender(): void {}
 
-  loadStyle() {
-    return this.style;
-  }
+  /** Method to attach postSvgRender hooks on */
+  postSvgRender(): void {}
+
   /** Renders a draft object as SVG */
   render(pattern: Pattern): string {
-    this.loadStyle();
-    let svg = this.prefix;
-    svg += this.renderComments(this.header);
-    svg += this.renderSvgTag(pattern);
-    svg += this.renderStyle();
-    svg += this.renderScript();
-    svg += this.renderDefs();
-    svg += this.openGroup('draftContainer');
+    this.preSvgRender();
+    this.svg = this.prefix;
+    this.svg += this.renderComments(this.header);
+    this.svg += this.renderSvgTag(pattern);
+    this.svg += this.renderStyle();
+    this.svg += this.renderScript();
+    this.svg += this.renderDefs();
+    this.svg += this.openGroup('draftContainer');
     for (let partId in pattern.parts) {
       let part = pattern.parts[partId];
       if (part.render) {
-        svg += this.openGroup(part.id, part.attributes);
-        svg += this.renderPart(part);
-        svg += this.closeGroup();
+        this.svg += this.openGroup(part.id, part.attributes);
+        this.svg += this.renderPart(part);
+        this.svg += this.closeGroup();
       }
     }
-    svg += this.closeGroup();
-    svg += this.nl()+'</svg>';
-    svg += this.renderComments(this.footer);
-
-    return svg;
+    this.svg += this.closeGroup();
+    this.svg += this.nl()+'</svg>';
+    this.svg += this.renderComments(this.footer);
+    this.postSvgRender();
+    return this.svg;
   }
 
   /** Returns SVG code for the opening SVG tag */
@@ -84,7 +83,6 @@ export class Svg {
 
   /** Returns SVG code for the style block */
   renderStyle() {
-    this.loadStyle(); // TODO: Hooks docs
     let svg = '<style type="text/css"> <![CDATA[ ';
     this.indent();
     svg += this.nl()+this.style;

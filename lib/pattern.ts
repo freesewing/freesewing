@@ -48,7 +48,8 @@ export class Pattern {
 
   render(): string {
     let svg = new Svg(this);
-    this.hooks.attach('loadStyle', svg);
+    this.hooks.attach('preSvgRender', svg);
+    this.hooks.attach('postSvgRender', svg);
     //svg.pre('preRenderSvg', function(next) {
     //  console.log('manual attach');
     //  this.style += "path {stroke: #000; fill: none;}";
