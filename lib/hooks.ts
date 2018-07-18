@@ -7,13 +7,16 @@ export class Hooks {
     this.all = ['preRenderSvg', 'postRenderSvg'];
   }
 
-  on(hook, method): void {
-    if(typeof this.hooks._hooks[method] === 'undefined') {
-      this.hooks._hooks[hook] = [];
-    }
-    this.hooks._hooks[hook].push(method);
-    console.log('Hooks::on ', hook, method);
-  }
+  ///** Add hook */
+  //on(hook, method): void {
+  //  // This gets called from the pattern context
+  //  // so 'this' is not actually this class
+  //  let self = this.hooks;
+  //  if(typeof self._hooks[method] === 'undefined') {
+  //    self._hooks[hook] = [];
+  //  }
+  //  self._hooks[hook].push(method);
+  //}
 
   list(hook): function[] {
     if(typeof this._hooks[hook] === 'undefined') {
@@ -31,10 +34,8 @@ export class Hooks {
     }
 
   attach (hook: string, obj: object): void {
-      console.log('Hooks::attach', hook, obj, this._hooks);
       if(typeof this._hooks[hook] === 'undefined') return;
       for(let func of this._hooks[hook]) {
-        console.log('Hooks::attach', hook, func);
         obj.pre(hook, func);
       }
     }

@@ -23,14 +23,12 @@ export class Svg {
   hooks: string[];
   pattern: Pattern;
 
-  constructor() {
+  constructor(pattern: Pattern) {
+    this.pattern = pattern; // Needed to expose pattern to hooks
     this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
-    this.attributes.add
     this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
     this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
     this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
-    this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
-    this.attributes.add("freesewing:foo", "bar");
     this.hooks = ['preRenderSvg', 'postRenderSvg'];
     for(let k in hooklib) this[k] = hooklib[k];
     for(let k in this.hooks) this.hook(k, this[k]);

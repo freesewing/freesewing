@@ -15,7 +15,6 @@ export class Pattern {
   values: {[propName: string]: any} = {};
   settings: {[propName: string]: any} = {mode: 'draft', units: 'metric'};
   hooks: Hooks;
-  on: () => void;
 
   constructor(config: PatternConfig) {
     if(!config) {
@@ -26,9 +25,8 @@ export class Pattern {
     }
     this.config = config;
     this.parts = {};
-    this.svg = new Svg();
+    this.svg = new Svg(this);
     this.hooks = new Hooks();
-    this.on = this.hooks.on;
     for (let id of config.parts) {
       this.parts[id] = new Part(id);
     }
@@ -54,11 +52,17 @@ export class Pattern {
     return this.svg.render(this);
   }
 
+  /** Add hook */
+  on(hook, method): void {
+    if(typeof this.hooks._hooks[method] === 'undefined') {
+      this.hooks._hooks[hook] = [];
+    }
+    this.hooks._hooks[hook].push(method);
+  }
+
   loadPlugin(plugin: () => void): void {
-    console.log('Pattern::loadPlugin', plugin);
     for(let hook of this.hooks.all) {
       if(typeof plugin[hook] === 'function') {
-    console.log('Pattern::loadPlugin - hook', plugin[hook]);
         this.on(hook, plugin[hook]);
       }
     }
