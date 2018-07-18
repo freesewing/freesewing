@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/browser'),
     filename: 'bundle.js',
     libraryTarget: 'var',
-    library: 'freesewing_theme_default'
+    library: 'freesewing_theme_designer'
   },
   module: {
     rules:[
