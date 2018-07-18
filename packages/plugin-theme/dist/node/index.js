@@ -20,12 +20,18 @@ var _logo = require('./lib/logo');
 
 var _logo2 = _interopRequireDefault(_logo);
 
+var _package = require('../package.json');
+
+var _package2 = _interopRequireDefault(_package);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
   preRenderSvg: function preRenderSvg(next) {
-    this.header = _header2.default;
-    this.style = _style2.default;
-    this.defs = _markers2.default + _snippets2.default + _logo2.default;
+    this.header += _header2.default;
+    this.style += _style2.default;
+    this.defs += _markers2.default + _snippets2.default + _logo2.default;
+    this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
+    this.attributes.add("freesewing:theme-default", _package2.default.version);
   }
 };
