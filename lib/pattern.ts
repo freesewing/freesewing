@@ -4,6 +4,8 @@ import { Part } from './part'
 import { Svg } from './svg'
 import { Hooks } from './hooks'
 import { Option } from './option'
+import { Snippet } from './snippet'
+import { Path } from './path'
 
 export class Pattern {
   config: PatternConfig;
@@ -15,6 +17,8 @@ export class Pattern {
   values: {[propName: string]: any} = {};
   settings: {[propName: string]: any} = {mode: 'draft', units: 'metric'};
   hooks: Hooks;
+  snippet: Snippet
+  path: Path
 
   constructor(config: PatternConfig) {
     if(!config) {
@@ -24,6 +28,8 @@ export class Pattern {
       throw "Could not create pattern: You should define at least one part in your pattern config";
     }
     this.config = config;
+    this.path = Path;
+    this.snippet = Snippet;
     this.parts = {};
     this.svg = new Svg(this);
     this.hooks = new Hooks();
