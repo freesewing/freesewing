@@ -23,25 +23,35 @@ module.exports = {
           for (let pointId in part.points) {
             let point = part.points[pointId];
             point.attributes.add('id', svg.getUid());
-            point.attributes.add('data-point', pointId);
-            point.attributes.add('data-part', partId);
+            let type = pointId.substr(0, 1) === '_' ? 'point-hidden' : 'point';
+            let id = svg.getUid();
+            part.snippets[id] = new svg.pattern.snippet(point, type, `Point ${pointId} in part ${partId}`);
+            part.snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
+            part.snippets[id].attributes.add('id', id);
+            part.snippets[id].attributes.add('data-point', pointId);
+            part.snippets[id].attributes.add('data-part', partId);
           }
         }
       }
     };
 
     /** Decorares path points with extra info */
-    var decoratePathPoint = function (id, Snippet, snippets, point, type, pathId) {
+    var decoratePathPoint = function (id, Snippet, snippets, point, type, pathId, partId) {
       snippets[id] = new Snippet(point, `path-${type}-point`, `Path ${pathId}: ${type}`);
       snippets[id].attributes.add('onmouseover', 'pointHover(evt)');
       snippets[id].attributes.add('id', id);
+      snippets[id].attributes.add('data-point', point.attributes.id);
+      snippets[id].attributes.add('data-path', pathId);
+      snippets[id].attributes.add('data-part', partId);
     };
 
     /** Draws curve control handles */
-    var decorateCurveHandles = function (id, Path, paths, from, to) {
+    var decorateCurveHandles = function (id, Path, paths, from, to, pathId, partId) {
       let path = new Path().move(from).line(to);
       path.attributes.add('class', 'curve-control');
       path.attributes.add('id', id);
+      path.attributes.add('data-path', pathId);
+      path.attributes.add('data-part', partId);
       paths[id] = path;
     };
 
@@ -56,13 +66,13 @@ module.exports = {
             let id;
             for (let op of path.ops) {
               if (op.type !== 'close') {
-                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.to, op.type, pathId);
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.to, op.type, pathId, partId);
               }
               if (op.type === 'curve') {
-                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp1, 'handle', pathId);
-                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp2, 'handle', pathId);
-                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, current, op.cp1);
-                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, op.to, op.cp2);
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp1, 'handle', pathId, partId);
+                decoratePathPoint(svg.getUid(), svg.pattern.snippet, part.snippets, op.cp2, 'handle', pathId, partId);
+                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, current, op.cp1, pathId, partId);
+                decorateCurveHandles(svg.getUid(), svg.pattern.path, part.paths, op.to, op.cp2, pathId, partId);
               }
               let current = op.to;
             }
@@ -74,7 +84,7 @@ module.exports = {
     // Decorate pattern
     decoratePoints(this);
     decoratePaths(this);
-
+    console.log("Designer theme plugin: Here's the pattern object:", this.pattern);
     next();
   }
 };
