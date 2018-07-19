@@ -60,3 +60,27 @@ export function linesCross(a1: Point, a2: Point, b1: Point, b2: Point): Point | 
   return false;
 }
 
+/** Find where an (endless) line crosses a certain Y-value */
+export function beamCrossesY(from: Point, to: Point, y: number) {
+  if(from.y === to.y) return false; // Horizontal line
+  let left = new Point(-10,y);
+  let right = new Point(10,y);
+
+  return beamsCross(from, to, left, right);
+}
+
+/** Returns an object with shorthand access for pattern design */
+export function shorthand(part, context): {} {
+  let final = (context.settings.mode === 'draft') ? true : false;
+  let paperless = (context.settings.paperless === true) ? true : false;
+  return {
+    measurements: context.settings.measurements || {},
+    options: context.options || {},
+    values: context.values || {},
+    points: part.points || {},
+    paths: part.paths || {},
+    snippets: part.snippets || {},
+    final,
+    paperless
+  }
+}

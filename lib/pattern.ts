@@ -19,6 +19,7 @@ export class Pattern {
   hooks: Hooks;
   snippet: Snippet
   path: Path
+  context: any
 
   constructor(config: PatternConfig) {
     if(!config) {
@@ -43,6 +44,13 @@ export class Pattern {
         if(conf.type === 'percentage') this.options[conf.id] = conf.val/100;
         else this.options[conf.id] = conf.val;
       }
+    }
+    this.context = {
+      parts: this.parts,
+      options: this.options,
+      values: this.values,
+      config: this.config,
+      settings: this.settings
     }
     return this;
   }
