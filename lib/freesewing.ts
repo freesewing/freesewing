@@ -2,7 +2,6 @@ import { Pattern } from './pattern'
 import { Point } from './point'
 import { Path } from './path'
 import { Snippet } from './snippet'
-import themes from './themes'
 import * as utils from './utils'
 
 export class Freesewing {

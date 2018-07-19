@@ -19,6 +19,20 @@ export class Part {
 
     return this;
   }
+
+  //macro(type: string, options: {}): void {
+  //  switch(type) {
+  //    case 'cof':
+  //      this.points.cofFrom = options.from.shiftTowards(options.to, 10);
+  //      this.points.cofTo = options.to.shiftTowards(options.from, 10);
+  //      this.points.cofVia1 = options.from.rotate(-90, this.points.cofFrom);
+  //      this.points.cofVia2 = options.to.rotate(-90, this.points.cofTo);
+  //      this.paths.cof = new Path().move(cofFrom).line(cofVia1).line(cofVia2).line(cofTo);
+  //    break;
+  //  }
+  //}
+
+
 //  purge = {
 //    points = function(prefix: string): void {}
 //    paths = function(prefix: string): void {}
