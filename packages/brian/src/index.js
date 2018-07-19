@@ -4,9 +4,9 @@ import back from './back'
 
 var brian = new F.pattern(patternConfig);
 
-brian.draft = function(final = true)
+brian.draft = function()
 {
-  back.draft(brian.parts.back, brian.context, final);
+  back.draft(brian.parts.back, brian.context);
 
   return brian;
 }

@@ -23,6 +23,7 @@
       shoulderToWrist:       700,
       wristCircumference:    190
     };
+    pattern.settings.paperless = true;
 pattern.on('preRenderSvg', function(next) {
   this.attributes.add("viewBox", "-10 -10 600 800");
   next();
@@ -35,7 +36,6 @@ pattern.on('preRenderSvg', function(next) {
 //  this.svg = this.svg.replace('green', 'yellow');
 //  next();
 //});
-console.log(pattern);
 //console.log(freesewing_theme_default);
 pattern.loadPlugin(freesewing_theme_designer);
 pattern.loadPlugin(freesewing_theme_default);

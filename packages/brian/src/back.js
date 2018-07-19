@@ -3,10 +3,10 @@ import base from './base';
 
 var back =
 {
-  draft: function(part, context, final = true)
+  draft: function(part, context)
   {
-    let { measurements, options, points, paths, snippets } = F.utils.shorthand(part, context);
-
+    let { measurements, options, points, paths, snippets, macro, final, paperless } = F.utils.shorthand(part, context);
+console.log('shorthand', F.utils.shorthand(part, context));
     base.draft(part, context);
 
     paths.seam = new F.path()
@@ -21,6 +21,30 @@ var back =
       .curve(points.neckCp1, points.cbNeck, points.cbNeck)
       .close()
     ;
+
+    // Final?
+
+    var decorate = function(part, context)
+    {
+      //macro('cof', {
+      //  from: points.cbNeck
+      // ,to: points.cbHips
+      //});
+    }
+
+    if(final) {
+      decorate(part, context);
+    }
+
+    // Paperless?
+
+    var gauge = function(part, context) {
+    }
+
+    if(paperless) {
+      gauge(part, context);
+    }
+
   }
 }
 
