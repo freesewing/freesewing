@@ -148,4 +148,21 @@ it('should shift a point beyond another', () => {
   expect(ss.shiftOutwards(se, 200).y).to.equal(-141.42);
 });
 
-
+it('should rotate a point around another', () => {
+  let sun = new Point(0,0);
+  let moon = new Point(10,0);
+  let a = moon.rotate(90, sun);
+  expect(a.x).to.equal(0);
+  expect(a.y).to.equal(-10);
+  let b = moon.rotate(-90, sun);
+  expect(b.x).to.equal(0);
+  expect(b.y).to.equal(10);
+  let c = moon.rotate(180, sun);
+  expect(c.x).to.equal(-10);
+  expect(c.y).to.equal(0);
+  let sun2 = new Point(222,44);
+  let moon2 = new Point(212,41);
+  let d = moon2.rotate(90, sun2);
+  expect(d.x).to.equal(219);
+  expect(d.y).to.equal(54);
+});

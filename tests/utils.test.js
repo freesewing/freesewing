@@ -56,7 +56,5 @@ it('should return a line segment intersection', () => {
   let g = new Point(0,49);
   let h = new Point(-20,40);
   let i = new Point(20,40);
-  console.log(utils.beamsCross(g,f,h,i));
-
 });
 

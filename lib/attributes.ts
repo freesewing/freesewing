@@ -1,18 +1,28 @@
 export class Attributes {
-  list: {name: string, value: string}[] = [];
+  list: any = {};
 
   /** Adds an attribute */
   add(name: string, value: string): Attributes {
-    this.list.push({name, value});
+    if(typeof this.list[name] === 'undefined') {
+      this.list[name] = [];
+    }
+
+    this.list[name].push(value);
 
     return this;
+  }
+
+  /** Retrieves an attribute */
+  get(name: string): string {
+    return this.list[name].join(' ');
   }
 
   /** Returns SVG code for attributes */
   render(): string {
     let svg = '';
-    for (let a of this.list) {
-      svg += ` ${a.name}="${a.value}"`;
+    for (let key in this.list) {
+      let attrs = this.list
+      svg += ` ${key}="${this.list[key].join(' ')}"`;
     }
 
     return svg;
