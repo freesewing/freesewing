@@ -12,21 +12,21 @@
   <script>
     var pattern = freesewing_patterns_brian;
     pattern.settings.measurements = {
-      bicepsCircumference:   305,
-      centerBackNeckToWaist: 495,
-      chestCircumference:    965,
-      hipsCircumference:     838,
-      naturalWaistToHip:     110,
-      neckCircumference:     391,
-      shoulderSlope:          49,
-      shoulderToShoulder:    444,
-      shoulderToWrist:       680,
-      wristCircumference:    185
+      bicepsCircumference:   335,
+      centerBackNeckToWaist: 480,
+      chestCircumference:   1080,
+      hipsCircumference:     950,
+      naturalWaistToHip:     120,
+      neckCircumference:     420,
+      shoulderSlope:          55,
+      shoulderToShoulder:    470,
+      shoulderToWrist:       700,
+      wristCircumference:    190
     };
-//pattern.on('preRenderSvg', function(next) {
-//  this.style += 'path { fill: red;}';
-//  next();
-//});
+pattern.on('preRenderSvg', function(next) {
+  this.attributes.add("viewBox", "-10 -10 600 800");
+  next();
+});
 //pattern.on('preRenderSvg', function(next) {
 //  this.style += 'path { stroke: green; stroke-width: 30;}';
 //  next();
@@ -46,7 +46,9 @@ pattern.loadPlugin(freesewing_theme_default);
       var id = point.id;
       var cx = point.getAttribute('x');
       var cy = point.getAttribute('y');
-      console.log('Point '+id+' ( '+cx+' , '+cy+' )');
+      var name = point.getAttribute('data-point');
+      var part = point.getAttribute('data-part');
+      console.log(name+' ('+cx+', '+cy+') @ '+part);
       var scale = 2;
       cx = cx-scale*cx;
       cy = cy-scale*cy;

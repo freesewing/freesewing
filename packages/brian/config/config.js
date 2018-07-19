@@ -1,9 +1,9 @@
 /** Pattern parts */
 module.exports = {
   parts: [
-    "backBlock",
-    "frontBlock",
-    "_sleeveBlock"
+    "back",
+    "front",
+    "_sleeve"
   ],
   measurements: [
     "bicepsCircumference",
@@ -37,7 +37,7 @@ module.exports = {
 
     // Percentages
     { "id": "acrossBackFactor",       "val": 96,  "type": "percentage",  "min": 93,  "max": 99 },
-    { "id": "armholeDepthFactor",     "val": 50,  "type": "percentage",  "min": 50,  "max": 65 },
+    { "id": "armholeDepthFactor",     "val": 50,  "type": "percentage",  "min": 35,  "max": 65 },
     { "id": "sleevecapHeightFactor",  "val": 55,  "type": "percentage",  "min": 35,  "max": 75 }
   ]
 };

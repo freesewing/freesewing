@@ -1,12 +1,12 @@
-import freesewing from 'freesewing'
+import F from 'freesewing'
 import * as patternConfig from '../config/config'
-import { Pattern } from 'freesewing/dist/lib/pattern'
-import backBlock from './lib/back'
+import back from './back'
 
-var brian = new freesewing.pattern(patternConfig);
+var brian = new F.pattern(patternConfig);
 
-brian.draft = function(final = true) {
-  backBlock.draft(brian, final);
+brian.draft = function(final = true)
+{
+  back.draft(brian.parts.back, brian.context, final);
 
   return brian;
 }
