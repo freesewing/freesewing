@@ -13,7 +13,6 @@ module.exports = {
     // Add SVG attributes
     this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
     this.attributes.add("freesewing:theme-designer", meta.version);
-    this.attributes.add("viewBox", "-10 -10 300 500");
 
     /** Decorares points with extra info */
     var decoratePoints = function (svg) {
