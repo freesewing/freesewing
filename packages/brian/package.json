@@ -1,42 +1,43 @@
 {
-  "name": "@freesewing/brian",
-  "version": "0.5.0",
-  "description": "A basic body block for menswear",
+  "name": "@freesewing-patterns/brian",
+  "version": "0.1.0",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "description": "Freesewing pattern for a basic body block for menswear",
+  "keywords": [
+    "freesewing",
+    "macro",
+    "sewing",
+    "patterns",
+    "cut on fold"
+  ],
+  "homepage": "https://github.com/freesewing-patterns/brian#readme",
+  "repository": "github:freesewing-patterns/brian",
+  "bugs": {
+    "url": "https://github.com/freesewing-patterns/brian/issues"
+  },
   "main": "dist/node/index.js",
   "unpkg": "dist/browser/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
     "nodebuild": "babel src -d dist/node",
     "browserbuild": "npx webpack-cli --config webpack.config.js",
     "watch": "npx webpack-cli --config webpack.config.js --watch",
-    "run": "nodemon node dist/node/index.js",
-    "dev": "webpack-dev-server --open",
-    "rdev": "webpack-dev-server --disable-host-check --public joost.freesewing.org:8080"
+    "build": "npm run clean && npm run nodebuild && npm run browserbuild",
+    "dev": "webpack-dev-server --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joostdecock/brian.git"
-  },
-  "author": "Joost De Cock <joost@decock.org> (https://twitter.com/j__st)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joostdecock/brian/issues"
-  },
-  "homepage": "https://github.com/joostdecock/brian#readme",
   "dependencies": {
-    "@freesewing/theme-default": "0.0.2",
     "freesewing": "^0.3.1"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.53",
     "@babel/preset-env": "7.0.0-beta.53",
-    "@freesewing/models": "0.1.1",
+    "babel-preset-env": "1.7.0",
+    "rimraf": "^2.6.2",
     "babel-cli": "6.26.0",
     "babel-loader": "8.0.0-beta.4",
-    "babel-preset-env": "1.7.0",
-    "babel-watch": "2.0.7",
-    "webpack": "^4.16.1",
-    "webpack-cli": "3.0.8",
-    "webpack-dev-server": "3.1.4"
+    "webpack": "4.16.0",
+    "webpack-cli": "3.0.8"
   }
 }

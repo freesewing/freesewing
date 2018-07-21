@@ -8,25 +8,22 @@ var _freesewing = require('freesewing');
 
 var _freesewing2 = _interopRequireDefault(_freesewing);
 
-var _pattern = require('freesewing/dist/lib/pattern');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var backBlock = {
-  draft: function draft(pattern) {
-    var final = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-
-    // Save some typing
-    var measurements = pattern.settings.measurements || {};
-    var options = pattern.options;
-    var values = pattern.values;
-    var points = pattern.parts.backBlock.points;
-    var paths = pattern.parts.backBlock.paths;
+var base = {
+  draft: function draft(part, context) {
+    var _F$utils$shorthand = _freesewing2.default.utils.shorthand(part, context),
+        measurements = _F$utils$shorthand.measurements,
+        options = _F$utils$shorthand.options,
+        points = _F$utils$shorthand.points,
+        paths = _F$utils$shorthand.paths,
+        snippets = _F$utils$shorthand.snippets;
 
     // Center back (cb) vertical axis
+
+
     points.cbNeck = new _freesewing2.default.point(0, options.backNeckCutout);
-    points.cbShoulder = new _freesewing2.default.point(0, points.cbNeck.y + (measurements.shoulderSlope - options.shoulderSlopeReduction) / 2);
+    points.cbShoulder = new _freesewing2.default.point(0, (measurements.shoulderSlope - options.shoulderSlopeReduction) / 2);
     points.cbArmhole = new _freesewing2.default.point(0, points.cbShoulder.y + (measurements.bicepsCircumference + options.bicepsEase) * options.armholeDepthFactor);
     points.cbWaist = new _freesewing2.default.point(0, measurements.centerBackNeckToWaist + options.backNeckCutout);
     points.cbHips = new _freesewing2.default.point(0, points.cbWaist.y + measurements.naturalWaistToHip);
@@ -41,16 +38,23 @@ var backBlock = {
     points.shoulder = new _freesewing2.default.point(measurements.shoulderToShoulder / 2 + options.shoulderEase / 2, points.cbShoulder.y);
 
     // Armhhole
-    points.armholePitch = new _freesewing2.default.point(measurements.shoulderToShoulder * options.acrossBackFactor / 2, points.armhole.y / 2 - points.shoulder.y / 2);
+    points.armholePitch = new _freesewing2.default.point(measurements.shoulderToShoulder * options.acrossBackFactor / 2, points.shoulder.y + points.shoulder.dy(points.armhole) / 2);
     points._tmp1 = new _freesewing2.default.point(points.armholePitch.x, points.armhole.y);
     points._tmp2 = points._tmp1.shift(45, 10);
     points._tmp3 = _freesewing2.default.utils.beamsCross(points._tmp1, points._tmp2, points.armhole, points.armholePitch);
     points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5);
+    points.armholeCp1 = points.armhole.shift(180, points._tmp1.dx(points.armhole) / 4);
+    points.armholeCp2 = points.armholeHollow.shift(-45, points.armholeHollow.dy(points.armhole) / 2);
+    points.armholeHollowCp1 = points.armholeHollow.shift(135, points.armholePitch.dx(points.armholeHollow));
+    points.armholeHollowCp2 = points.armholePitch.shift(-90, points.armholePitch.dy(points.armholeHollow) / 2);
+    points.armholePitchCp1 = points.armholePitch.shift(90, points.shoulder.dy(points.armholePitch) / 2);
+    points.armholePitchCp2 = points.shoulder.shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5).rotate(90, points.shoulder);
 
-    paths.test = new _freesewing2.default.path().move(points.cbNeck).line(points.armhole).line(points.cbHips).line(points.hips).curve(points.neck, points.shoulder, points.armholePitch);
-
-    points.gridAnchor = points.cbHips;
+    // Neck opening
+    points._tmp4 = points.neck.shiftTowards(points.shoulder, 10).rotate(-90, points.neck);
+    points.neckCp1 = _freesewing2.default.utils.beamCrossesY(points.neck, points._tmp4, points.cbNeck.y);
+    points.neckCp2 = points.cbNeck.shift(0, points.cbNeck.dx(points.neck) / 2);
   }
 };
 
-exports.default = backBlock;
+exports.default = base;

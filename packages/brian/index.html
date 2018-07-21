@@ -24,31 +24,58 @@
       wristCircumference:    190
     };
     pattern.settings.paperless = true;
-pattern.on('preRenderSvg', function(next) {
-  this.attributes.add("viewBox", "-10 -10 600 800");
-  next();
-});
-pattern.macro('cof', function(next, so) {
-  let points = this.points;
-  points.cofStart = so.from.shiftTowards(so.to, 30);
-  points.cofEnd = so.to.shiftTowards(so.from, 30);
-  points.cofVia1 = so.from.shiftTowards(so.to, 50).rotate(90,points.cofStart);
-  points.cofVia2 = so.to.shiftTowards(so.from, 50).rotate(-90,points.cofEnd);
-  this.paths.cof = new this.path()
-    .move(points.cofStart)
-    .line(points.cofVia1)
-    .line(points.cofVia2)
-    .line(points.cofEnd)
-    .attr('class', 'cut-on-fold');
-  next();
-});
+//pattern.on('preRenderSvg', function(next) {
+//  this.attributes.add("viewBox", "-10 -10 600 800");
+//  next();
+//});
+var macroPlugin = {
+  hooks: {
+    preRenderSvg: function(next) {
+      console.log('in mixed plugin hooks part');
+      this.attributes.add("viewBox", "-12 -12 600 800");
+      next();
+    }
+  }
+, macros: {
+    cof: function(next, so) {
+      console.log('in mixed plugin macros part');
+      let points = this.points;
+      points.cofStart = so.from.shiftTowards(so.to, 30);
+      points.cofEnd = so.to.shiftTowards(so.from, 30);
+      points.cofVia1 = so.from.shiftTowards(so.to, 50).rotate(90,points.cofStart);
+      points.cofVia2 = so.to.shiftTowards(so.from, 50).rotate(-90,points.cofEnd);
+      this.paths.cof = new this.path()
+        .move(points.cofStart)
+        .line(points.cofVia1)
+        .line(points.cofVia2)
+        .line(points.cofEnd)
+        .attr('class', 'cut-on-fold');
+      next();
+    }
+  }
+}
+//pattern.macro('cof', function(next, so) {
+//  let points = this.points;
+//  points.cofStart = so.from.shiftTowards(so.to, 30);
+//  points.cofEnd = so.to.shiftTowards(so.from, 30);
+//  points.cofVia1 = so.from.shiftTowards(so.to, 50).rotate(90,points.cofStart);
+//  points.cofVia2 = so.to.shiftTowards(so.from, 50).rotate(-90,points.cofEnd);
+//  this.paths.cof = new this.path()
+//    .move(points.cofStart)
+//    .line(points.cofVia1)
+//    .line(points.cofVia2)
+//    .line(points.cofEnd)
+//    .attr('class', 'cut-on-fold');
+//  next();
+//});
 //pattern.on('postRenderSvg', function(next) {
 //  this.svg = this.svg.replace('green', 'yellow');
 //  next();
 //});
 //console.log(freesewing_theme_default);
-pattern.loadPlugin(freesewing_theme_designer);
-pattern.loadPlugin(freesewing_theme_default);
+pattern.withPlugin(freesewing_theme_designer);
+pattern.withPlugin(freesewing_theme_default);
+pattern.withPlugin(macroPlugin);
     pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
     function pointHover(evt) {
