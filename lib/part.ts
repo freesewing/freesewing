@@ -14,6 +14,7 @@ export class Part {
   // Expose constructors for macros
   point: Point = Point;
   path: Path = Path;
+  attr: Attribute = Attributes;
   [propName: string]: any;
 
   constructor(id: string) {
@@ -26,7 +27,6 @@ export class Part {
   }
 
   macroRunner(args) {
-    console.log('arguments in macroRunner', arguments);
     let self = this;
     let data = args;
     let method = function (key, data) {

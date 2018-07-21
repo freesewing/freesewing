@@ -136,9 +136,27 @@ export class Svg {
   }
 
   /** Returns SVG code for a Path object */
-  renderPath(path: Path): string {
+  renderPath(path: Path): string
+  {
+    if(!path.attributes.get('id')) path.attributes.add('id', this.getUid());
     path.attributes.add('d', path.asPathstring());
-    return `${this.nl()}<path ${path.attributes.render()} />`;
+
+    return `${this.nl()}<path ${path.attributes.render()} />${this.renderPathText(path)}`;
+  }
+
+  renderPathText(path: Path): string
+  {
+    let text = path.attributes.get('data-text');
+    if(!text) return false;
+
+    let attributes = path.attributes.renderIfPrefixIs('data-text-');
+    let svg = this.nl()+'<text>';
+    this.indent();
+    svg += `<textPath xlink:href="#${path.attributes.get('id')}" startOffset="50%"><tspan ${attributes}>${text}</tspan></textPath>`;
+    this.outdent();
+    svg += this.nl()+'</text>';
+
+    return svg;
   }
 
   /** Returns SVG code for a snippet */

@@ -95,7 +95,6 @@ export class Pattern {
   loadPluginHooks(plugin: () => void): void {
     for(let hook of this.hooks.all) {
       if(typeof plugin.hooks[hook] === 'function') {
-     console.log('checking for hook '+hook+' in:', plugin);
         this.on(hook, plugin.hooks[hook]);
       }
     }
@@ -103,7 +102,6 @@ export class Pattern {
 
   loadPluginMacros(plugin: () => void): void {
     for(let macro in plugin.macros) {
-     console.log('checking for macro '+macro+' in:', plugin);
       if(typeof plugin.macros[macro] === 'function') {
         this.macro(macro, plugin.macros[macro]);
       }
