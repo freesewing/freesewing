@@ -85,10 +85,27 @@ export class Pattern {
     }
   }
 
-  loadPlugin(plugin: () => void): void {
+  withPlugin(plugin: () => void): void {
+    if(plugin.hooks) this.loadPluginHooks(plugin);
+    if(plugin.macros) this.loadPluginMacros(plugin);
+
+    return this; // Make it chainable
+  }
+
+  loadPluginHooks(plugin: () => void): void {
     for(let hook of this.hooks.all) {
-      if(typeof plugin[hook] === 'function') {
-        this.on(hook, plugin[hook]);
+      if(typeof plugin.hooks[hook] === 'function') {
+     console.log('checking for hook '+hook+' in:', plugin);
+        this.on(hook, plugin.hooks[hook]);
+      }
+    }
+  }
+
+  loadPluginMacros(plugin: () => void): void {
+    for(let macro in plugin.macros) {
+     console.log('checking for macro '+macro+' in:', plugin);
+      if(typeof plugin.macros[macro] === 'function') {
+        this.macro(macro, plugin.macros[macro]);
       }
     }
   }
