@@ -6,10 +6,10 @@
   "description": "Freesewing pattern for a basic body block for menswear",
   "keywords": [
     "freesewing",
-    "macro",
+    "pattern",
     "sewing",
-    "patterns",
-    "cut on fold"
+    "menswear",
+    "block"
   ],
   "homepage": "https://github.com/freesewing-patterns/brian#readme",
   "repository": "github:freesewing-patterns/brian",
@@ -28,6 +28,7 @@
     "dev": "webpack-dev-server --open"
   },
   "dependencies": {
+    "@freesewing-plugins/macro-cutonfold": "0.2.1",
     "freesewing": "^0.3.1"
   },
   "devDependencies": {
@@ -39,5 +40,11 @@
     "babel-loader": "8.0.0-beta.4",
     "webpack": "4.16.0",
     "webpack-cli": "3.0.8"
-  }
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
 }

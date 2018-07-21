@@ -6,7 +6,6 @@ var back =
   draft: function(part, context)
   {
     let { measurements, options, points, paths, snippets, macro, final, paperless } = F.utils.shorthand(part, context);
-console.log('shorthand', F.utils.shorthand(part, context));
     base.draft(part, context);
 
     paths.seam = new F.path()
@@ -26,9 +25,10 @@ console.log('shorthand', F.utils.shorthand(part, context));
 
     var decorate = function(part, context)
     {
-      macro('cof', {
+      macro('cutonfold', {
         from: points.cbNeck
       , to: points.cbHips
+      , grainline: true
       });
     }
 
