@@ -1,4 +1,4 @@
-var VERSION = require('../package.json').version;
+const VERSION = require('../package.json').version;
 
 module.exports = {
   hooks: {
@@ -10,7 +10,7 @@ module.exports = {
     }
   }
 , macros: {
-    cof: function(next, so) {
+    cutonfold: function(next, so) {
       let points = this.points;
       points.cofStart = so.from.shiftTowards(so.to, 30);
       points.cofEnd = so.to.shiftTowards(so.from, 30);
