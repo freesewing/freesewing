@@ -12,9 +12,10 @@ module.exports = {
     library: 'freesewing_macro_cutonfold'
   },
   plugins: [
-     new webpack.DefinePlugin({
-     VERSION: JSON.stringify(require("./package.json").version)
-    })
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require("./package.json").version)
+    }),
+    new webpack.IgnorePlugin(/^\.\.\/package.json$/)
   ],
   module: {
     rules:[

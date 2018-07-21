@@ -14,14 +14,14 @@
   "homepage": "https://github.com/freesewing-plugins/macro-cutonfold#readme",
   "repository": "github:freesewing-plugins/macro-cutonfold",
   "bugs": {
-    "url": "https://github.com/joostdecock/macro-cof/issues"
+    "url": "https://github.com/freesewing-plugins/macro-cutonfold/issues"
   },
   "main": "dist/node/index.js",
   "unpkg": "dist/browser/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "nodebuild": "babel src -d dist/node",
+    "nodebuild": "babel src -d dist/node --no-babelrc",
     "browserbuild": "npx webpack-cli --config webpack.config.js",
     "build": "npm run clean && npm run nodebuild && npm run browserbuild"
   },
