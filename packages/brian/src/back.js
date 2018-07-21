@@ -26,10 +26,10 @@ console.log('shorthand', F.utils.shorthand(part, context));
 
     var decorate = function(part, context)
     {
-      //macro('cof', {
-      //  from: points.cbNeck
-      // ,to: points.cbHips
-      //});
+      macro('cof', {
+        from: points.cbNeck
+      , to: points.cbHips
+      });
     }
 
     if(final) {
