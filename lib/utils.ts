@@ -80,6 +80,7 @@ export function shorthand(part, context): {} {
     points: part.points || {},
     paths: part.paths || {},
     snippets: part.snippets || {},
+    macro: part.macroRunner(),
     final,
     paperless
   }

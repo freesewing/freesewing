@@ -2,6 +2,7 @@ import { Point } from './point'
 import { Path } from './path'
 import { Snippet } from './snippet'
 import { Attributes } from './attributes'
+import hooklib from 'hooks'
 
 export class Part {
   id: string;
@@ -10,31 +11,31 @@ export class Part {
   paths: { [index: string]: Path; } = {};
   snippets: { [index: string]: Snippet; } = {};
   attributes = new Attributes();
+  // Expose constructors for macros
+  point: Point = Point;
+  path: Path = Path;
   [propName: string]: any;
 
   constructor(id: string) {
     this.id = id;
     this.render = (id.substr(0,1) === '_') ? false : true;
     this.points.origin = new Point(0,0);
+    for(let k in hooklib) this[k] = hooklib[k];
 
     return this;
   }
 
-  //macro(type: string, options: {}): void {
-  //  switch(type) {
-  //    case 'cof':
-  //      this.points.cofFrom = options.from.shiftTowards(options.to, 10);
-  //      this.points.cofTo = options.to.shiftTowards(options.from, 10);
-  //      this.points.cofVia1 = options.from.rotate(-90, this.points.cofFrom);
-  //      this.points.cofVia2 = options.to.rotate(-90, this.points.cofTo);
-  //      this.paths.cof = new Path().move(cofFrom).line(cofVia1).line(cofVia2).line(cofTo);
-  //    break;
-  //  }
-  //}
+  macroRunner(args) {
+    console.log('arguments in macroRunner', arguments);
+    let self = this;
+    let data = args;
+    let method = function (key, data) {
+      let macro = `_macro_${key}`;
+      if(typeof self[macro] === 'function') {
+        self[macro](data);
+      }
+    }
 
-
-//  purge = {
-//    points = function(prefix: string): void {}
-//    paths = function(prefix: string): void {}
-//  }
+    return method;
+  }
 }

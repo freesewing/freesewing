@@ -17,9 +17,10 @@ export class Pattern {
   values: {[propName: string]: any} = {};
   settings: {[propName: string]: any} = {mode: 'draft', units: 'metric'};
   hooks: Hooks;
-  snippet: Snippet
-  path: Path
+  snippet: Snippet;
+  path: Path;
   context: any
+  hook: any;
 
   constructor(config: PatternConfig) {
     if(!config) {
@@ -29,6 +30,7 @@ export class Pattern {
       throw "Could not create pattern: You should define at least one part in your pattern config";
     }
     this.config = config;
+    this.point = Point;
     this.path = Path;
     this.snippet = Snippet;
     this.parts = {};
@@ -71,6 +73,16 @@ export class Pattern {
       this.hooks._hooks[hook] = [];
     }
     this.hooks._hooks[hook].push(method);
+  }
+
+  macro(key, method): void {
+    let name = `_macro_${key}`;
+    this.on(name, method);
+    for(let partId in this.parts) {
+      let part = this.parts[partId];
+      part[name] = () => null;
+      this.hooks.attach(name, part);
+    }
   }
 
   loadPlugin(plugin: () => void): void {

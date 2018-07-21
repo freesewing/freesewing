@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register tests/*.test.js",
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w --sourceMap"
   },
   "repository": {
     "type": "git",

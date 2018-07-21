@@ -40,6 +40,13 @@ export class Path {
     return this;
   }
 
+  /** Adds an attribute. This is here to make this call chainable in assignment */
+  attr(name, value): Path {
+    this.attributes.add(name, value);
+
+    return this;
+  }
+
   /** Returns SVG pathstring for this path */
   asPathstring() {
     let d = '';
