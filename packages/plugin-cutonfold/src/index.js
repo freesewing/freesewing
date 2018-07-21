@@ -2,9 +2,9 @@ module.exports = {
   hooks: {
     preRenderSvg: function(next) {
       // Without this, our custom attribute won't be valid
-      this.attributes.add("xmlns:freesewing", "http://freesewing.org/namespaces/freesewing");
+      this.attributes.add("xmlns:freesewing-plugins", "http://freesewing.org/namespaces/freesewing-plugins");
       // VERSION is injected by webpack from package.json
-      this.attributes.add("freesewing:plugin-macro-cof", VERSION);
+      this.attributes.add("freesewing-plugins:macro-cutonfold", VERSION);
       next();
     }
   }

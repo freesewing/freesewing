@@ -18,7 +18,7 @@ npm install @freesewing-plugins/macro-cutonfold --save
 
 ## Loading the plugin
 
-Plugins are loaded by the `withpPlugin` method of an instantiated freesewing pattern:
+Plugins are loaded by the `withPlugin` method of an instantiated freesewing pattern:
 
 ```js
 import F from 'freesewing';
