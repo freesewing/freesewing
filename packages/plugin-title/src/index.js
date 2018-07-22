@@ -13,13 +13,11 @@ module.exports = {
   }
 , macros: {
     title: function(next, so) {
-      let points = this.points;
-      so.at.attr('data-text', so.nr)
-        .attr('data-text-class', 'title-nr');
-      points.titleName =  so.at.shift(-90, 20)
+      so.at.attr('data-text', so.nr).attr('data-text-class', 'title-nr');
+      this.points.titleName =  so.at.shift(-90, 20)
         .attr('data-text', title)
         .attr('data-text-class', 'title-name');
-      points.titlePattern =  so.at.shift(-90, 40)
+      this.points.titlePattern =  so.at.shift(-90, 40)
         .attr('data-text', pattern)
         .attr('data-text-class', 'title-pattern');
       next();
