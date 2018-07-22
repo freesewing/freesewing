@@ -1,6 +1,6 @@
 {
   "name": "@freesewing-plugins/macro-title",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
   "description": "A freesewing macro to add a title to your pattern parts",
