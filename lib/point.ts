@@ -13,6 +13,13 @@ export class Point {
     return this;
   }
 
+  /** Adds an attribute. This is here to make this call chainable in assignment */
+  attr(name, value): Point {
+    this.attributes.add(name, value);
+
+    return this;
+  }
+
   /** Returns the distance between this point and that point */
   dist(that: Point): number {
     let dx = this.x - that.x;

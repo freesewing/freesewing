@@ -122,15 +122,24 @@ export class Svg {
       let path = part.paths[key];
       if(path.render) svg += this.renderPath(path);
     }
+    for (let key in part.points) {
+      if(part.points[key].attributes.get('data-text')) {
+        svg += this.renderPoint(part.points[key]);
+      }
+    }
     for (let key in part.snippets) {
       let snippet = part.snippets[key];
       svg += this.renderSnippet(snippet);
     }
-    // includes
-    // text on path
-    // notes
-    // dimensions
-    // texts
+
+    return svg;
+  }
+
+  /** Returns SVG code for a Point object */
+  renderPoint(point: Point): string
+  {
+    let svg = ''
+    if(point.attributes.get('data-text')) svg += this.renderText(point);
 
     return svg;
   }
@@ -148,7 +157,6 @@ export class Svg {
   {
     let text = path.attributes.get('data-text');
     if(!text) return false;
-
     let attributes = path.attributes.renderIfPrefixIs('data-text-');
     let svg = this.nl()+'<text>';
     this.indent();
@@ -159,8 +167,26 @@ export class Svg {
     return svg;
   }
 
+  renderText(point: Point): string
+  {
+    let text = point.attributes.get('data-text');
+    if(!text) return false;
+
+    point.attributes.add('data-text-x', point.x);
+    point.attributes.add('data-text-y', point.y);
+    let attributes = point.attributes.renderIfPrefixIs('data-text-');
+    let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs('data-text-')}>`;
+    this.indent();
+    svg += `<tspan>${text}</tspan>`;
+    this.outdent();
+    svg += this.nl()+'</text>';
+
+    return svg;
+  }
+
   /** Returns SVG code for a snippet */
-  renderSnippet(snippet: Snippet): string {
+  renderSnippet(snippet: Snippet): string
+  {
     let svg = this.nl();
     svg += `<use x="${snippet.anchor.x}" y="${snippet.anchor.y}" `
     svg += `xlink:href="#${snippet.def}" ${snippet.attributes.render()}>`;
@@ -171,7 +197,6 @@ export class Svg {
 
     return svg;
   }
-
 
   /** Returns SVG code to open a group */
   openGroup(id: string, attributes?: Attributes): string {

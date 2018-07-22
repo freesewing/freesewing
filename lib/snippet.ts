@@ -7,7 +7,7 @@ export class Snippet {
   attributes: Attributes = new Attributes();
   description: string | false;
 
-  constructor(anchor: Point, def: string, description: string | false = false) {
+  constructor(def: string, anchor: Point, description: string | false = false) {
     this.anchor = anchor;
     this.def = def;
     this.description = description;
