@@ -26,7 +26,7 @@ export class Part {
     return this;
   }
 
-  macroRunner(args) {
+  macroRunner(args?) {
     let self = this;
     let data = args;
     let method = function (key, data) {

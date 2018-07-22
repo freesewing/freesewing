@@ -14,7 +14,7 @@ export class Point {
   }
 
   /** Adds an attribute. This is here to make this call chainable in assignment */
-  attr(name, value): Point {
+  attr(name: string, value: string): Point {
     this.attributes.add(name, value);
 
     return this;

@@ -1,3 +1,11 @@
+export type context = {
+  settings: {[propName: string]: any};
+  options: {[propName: string]: any};
+  values: {[propName: string]: any};
+}
+
+/////////////////////////////////////////////////////////////
+/*
 export type PatternOptionType = "measure" | "percentage" | "angle" | "choice" | "constant";
 
 export interface PatternOption {
@@ -63,3 +71,4 @@ declare namespace Pattern {
     [propName: string]: any;
   }
 }
+*/

@@ -1,4 +1,6 @@
+import { Part } from './part'
 import { Point } from './point'
+import {context} from './types'
 
 /** Rounds a value to PRECISION */
 export function round(value: number): number {
@@ -70,7 +72,7 @@ export function beamCrossesY(from: Point, to: Point, y: number) {
 }
 
 /** Returns an object with shorthand access for pattern design */
-export function shorthand(part, context): {} {
+export function shorthand(part: Part, context: context): {} {
   let final = (context.settings.mode === 'draft') ? true : false;
   let paperless = (context.settings.paperless === true) ? true : false;
   return {

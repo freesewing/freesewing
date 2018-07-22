@@ -64,6 +64,7 @@ export class Pattern {
   render(): string {
     this.hooks.attach('preRenderSvg', this.svg);
     this.hooks.attach('postRenderSvg', this.svg);
+    //this.hooks.attach('insertText', this.svg);
 
     return this.svg.render(this);
   }

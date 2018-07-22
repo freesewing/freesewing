@@ -1,7 +1,7 @@
 export class Attributes {
   list: any = {};
 
-  constructor(init) {
+  constructor(init?) {
     for (let key in init) {
       let val = init[key];
       this.add(key, val);
