@@ -1,0 +1,43 @@
+{
+  "name": "@freesewing-plugins/macro-title",
+  "version": "0.1.0",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "description": "A freesewing macro to add a title to your pattern parts",
+  "keywords": [
+    "freesewing",
+    "macro",
+    "sewing",
+    "patterns",
+    "title"
+  ],
+  "homepage": "https://github.com/freesewing-plugins/macro-title#readme",
+  "repository": "github:freesewing-plugins/macro-title",
+  "bugs": {
+    "url": "https://github.com/freesewing-plugins/macro-title/issues"
+  },
+  "main": "dist/index.js",
+  "unpkg": "dist/_bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "nodebuild": "babel src -d dist --no-babelrc",
+    "browserbuild": "npx webpack-cli --config webpack.config.js",
+    "build": "npm run clean && npm run nodebuild && npm run browserbuild"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.53",
+    "@babel/preset-env": "7.0.0-beta.53",
+    "rimraf": "^2.6.2",
+    "babel-cli": "6.26.0",
+    "babel-loader": "8.0.0-beta.4",
+    "webpack": "4.16.0",
+    "webpack-cli": "3.0.8"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
+}
