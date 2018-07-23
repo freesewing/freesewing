@@ -2,12 +2,13 @@
   "name": "freesewing",
   "version": "0.3.3",
   "description": "A library for creating made-to-measure sewing patterns",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/*.test.js",
-    "build": "tsc",
-    "watch": "tsc -w --sourceMap"
+    "clean": "rimraf dist",
+    "browserbuild": "rollup -c rollup.browser.js",
+    "nodebuild": "rollup -c rollup.node.js",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild"
   },
   "repository": {
     "type": "git",
@@ -24,13 +25,14 @@
     "hooks": "^0.3.2"
   },
   "devDependencies": {
-    "@types/bezier-js": "0.0.7",
-    "@types/chai": "^4.1.4",
-    "@types/mocha": "^5.2.4",
-    "@types/node": "^10.5.2",
+    "babel-core": "^6.26.3",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "ts-node": "^7.0.0",
-    "typescript": "^2.9.2"
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-terser": "^1.0.1"
   }
 }

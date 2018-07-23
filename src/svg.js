@@ -1,49 +1,39 @@
-import { Part } from './part'
-import { Path } from './path'
-import { Snippet } from './snippet'
-import { Pattern } from './pattern'
-import { Attributes } from './attributes'
-import hooklib from 'hooks'
-import { Hooks } from './hooks'
+import attributes from './attributes'
+import * as hooklib from 'hooks'
+import hooks from './hooks'
 
-export class Svg {
-  prefix: string;
-  body: string = '';
-  style: string = '';
-  script: string = '';
-  header: string = '';
-  footer: string = '';
-  defs: string = '';
-  attributes: Attributes = new Attributes();
-  tabs: number = 0;
-  freeId: number = 1;
-  svg: string = '';
-  openGroups: string[] = [];
-  hook: any;
-  hooks: string[];
-  pattern: Pattern;
+function svg (pattern)
+{
+  this.body = '';
+  this.style = '';
+  this.script = '';
+  this.header = '';
+  this.footer = '';
+  this.defs = '';
+  this.pattern = pattern; // Needed to expose pattern to hooks
+  this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
+  this.attributes = new attributes();
+  this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
+  this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
+  this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  this.hooks = hooks.all;
+  for(let k in hooklib) this[k] = hooklib[k];
+  for(let k in this.hooks) this.hook(k, this[k]);
 
-  constructor(pattern: Pattern) {
-    this.pattern = pattern; // Needed to expose pattern to hooks
-    this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
-    this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
-    this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
-    this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
-    this.hooks = ['preRenderSvg', 'postRenderSvg'];
-    for(let k in hooklib) this[k] = hooklib[k];
-    for(let k in this.hooks) this.hook(k, this[k]);
-
-    return this;
-  }
+  return this;
 
   /** Method to attach preRenderSvg hooks on */
-  preRenderSvg(): void {}
+  this.prototype.preRenderSvg = function() {};
 
   /** Method to attach postRenderSvg hooks on */
-  postRenderSvg(): void {}
+  this.prototype.postRenderSvg = function() {};
+
+  /** Method to attach insertText hooks on */
+  this.prototype.insertText = function() {};
 
   /** Renders a draft object as SVG */
-  render(pattern: Pattern): string {
+  this.prototype.render = function (pattern)
+  {
     this.preRenderSvg();
     this.svg = this.prefix;
     this.svg += this.renderComments(this.header);
@@ -68,7 +58,8 @@ export class Svg {
   }
 
   /** Returns SVG code for the opening SVG tag */
-  renderSvgTag(pattern: Pattern) {
+  this.prototype.renderSvgTag = funtion (pattern)
+  {
     let svg = '<svg';
     this.indent();
     svg += this.nl()+this.attributes.render();
@@ -79,7 +70,8 @@ export class Svg {
   }
 
   /** Returns SVG code for the style block */
-  renderStyle() {
+  this.prototype.renderStyle = function ()
+  {
     let svg = '<style type="text/css"> <![CDATA[ ';
     this.indent();
     svg += this.nl()+this.style;
@@ -89,7 +81,8 @@ export class Svg {
   }
 
   /** Returns SVG code for the script block */
-  renderScript() {
+  this.prototype.renderScript = function ()
+  {
     let svg = '<script type="text/javascript"> <![CDATA[';
     this.indent();
     svg += this.nl()+this.script;
@@ -100,7 +93,8 @@ export class Svg {
   }
 
   /** Returns SVG code for the defs block */
-  renderDefs() {
+  this.prototype.renderDefs = function ()
+  {
     let svg = '<defs id="defs">';
     this.indent();
     svg += this.nl()+this.defs;
@@ -111,12 +105,14 @@ export class Svg {
   }
 
   /** Returns SVG code for a comment block */
-  renderComments(comments: string) {
+  this.prototype.renderComments = function (comments)
+  {
     return this.nl()+this.nl()+'<!--'+this.nl()+comments+this.nl()+'-->';
   }
 
   /** Returns SVG code for a Part object */
-  renderPart(part: Part): string {
+  this.prototype.renderPart = function (part)
+  {
 		let svg = '';
     for (let key in part.paths) {
       let path = part.paths[key];
@@ -136,7 +132,7 @@ export class Svg {
   }
 
   /** Returns SVG code for a Point object */
-  renderPoint(point: Point): string
+  this.prototype.renderPoint = function (point)
   {
     let svg = ''
     if(point.attributes.get('data-text')) svg += this.renderText(point);
@@ -145,7 +141,7 @@ export class Svg {
   }
 
   /** Returns SVG code for a Path object */
-  renderPath(path: Path): string
+  this.prototype.renderPath = function (path)
   {
     if(!path.attributes.get('id')) path.attributes.add('id', this.getUid());
     path.attributes.add('d', path.asPathstring());
@@ -153,7 +149,7 @@ export class Svg {
     return `${this.nl()}<path ${path.attributes.render()} />${this.renderPathText(path)}`;
   }
 
-  renderPathText(path: Path): string
+  this.prototype.renderPathText = function (path)
   {
     let text = path.attributes.get('data-text');
     if(!text) return false;
@@ -167,7 +163,7 @@ export class Svg {
     return svg;
   }
 
-  renderText(point: Point): string
+  this.prototype.renderText = function (point)
   {
     let text = point.attributes.get('data-text');
     if(!text) return false;
@@ -185,7 +181,7 @@ export class Svg {
   }
 
   /** Returns SVG code for a snippet */
-  renderSnippet(snippet: Snippet): string
+  this.prototype.renderSnippet = function (snippet)
   {
     let svg = this.nl();
     svg += `<use x="${snippet.anchor.x}" y="${snippet.anchor.y}" `
@@ -199,7 +195,8 @@ export class Svg {
   }
 
   /** Returns SVG code to open a group */
-  openGroup(id: string, attributes?: Attributes): string {
+  this.prototype.openGroup = function (id)
+  {
     let svg = this.nl()+this.nl();
     svg += `<!-- Start of group #${id} -->`;
     svg += this.nl();
@@ -211,19 +208,22 @@ export class Svg {
   }
 
   /** Returns SVG code to close a group */
-  closeGroup(): string {
+  this.prototype.closeGroup = function ()
+  {
     this.outdent();
 
     return `${this.nl()}</g>${this.nl()}<!-- end of group #${this.openGroups.pop()} -->`;
   }
 
   /** Returns a linebreak + identation */
-  nl(): string {
+  this.prototype.nl = function ()
+  {
     return "\n"+this.tab();
   }
 
   /** Returns indentation */
-  tab(): string {
+  this.prototype.tab = function ()
+  {
     let space = '';
     for (let i = 0; i < this.tabs; i++) {
       space += '  ';
@@ -233,19 +233,24 @@ export class Svg {
   }
 
   /** Increases indentation by 1 */
-  indent(): void {
+  this.prototype.indent = function ()
+  {
     this.tabs += 1;
   }
 
   /** Decreases indentation by 1 */
-  outdent(): void {
+  this.prototype.outdent = function ()
+  {
     this.tabs -= 1;
   }
 
-   /** Returns an unused ID */
-   getUid() {
+  /** Returns an unused ID */
+  this.prototype.getUid = function ()
+  {
      this.freeId += 1;
 
      return ''+this.freeId;
-   }
+  }
 }
+
+export default svg;

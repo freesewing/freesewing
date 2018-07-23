@@ -1,34 +1,35 @@
-export class Attributes {
-  list: any = {};
-
-  constructor(init?) {
+function attributes (init = false)
+{
+  if(init) {
     for (let key in init) {
       let val = init[key];
       this.add(key, val);
     }
-
-    return this;
   }
 
+  return this;
+
   /** Adds an attribute */
-  add(name: string, value: string): Attributes {
+  this.prototype.add = function (name, value)
+  {
     if(typeof this.list[name] === 'undefined') {
       this.list[name] = [];
     }
-
     this.list[name].push(value);
 
     return this;
   }
 
   /** Retrieves an attribute */
-  get(name: string): string {
+  this.prototype.get = function (name)
+  {
     if(typeof this.list[name] === 'undefined') return false;
     else return this.list[name].join(' ');
   }
 
   /** Returns SVG code for attributes */
-  render(): string {
+  this.prototype.render = function ()
+  {
     let svg = '';
     for (let key in this.list) {
       svg += ` ${key}="${this.list[key].join(' ')}"`;
@@ -39,7 +40,8 @@ export class Attributes {
 
   /** Returns SVG code for attributes with a fiven prefix
    * typically used for data-text*/
-  renderIfPrefixIs(prefix:string = ''): string {
+  this.prototype.renderIfPrefixIs = function (prefix = '')
+  {
     let svg = '';
     let prefixLen = prefix.length;
     for (let key in this.list) {
@@ -51,3 +53,5 @@ export class Attributes {
     return svg;
   }
 }
+
+export default attributes;

@@ -1,90 +1,113 @@
-import { round, rad2deg, deg2rad } from './utils';
-import { Attributes } from './attributes'
+import attributes from './attributes'
 
-export class Point {
-  x: number;
-  y: number;
-  attributes: Attributes = new Attributes();
+function point (x, y)
+{
+  this.x = this.round(x);
+  this.y = this.round(y);
+  this.attributes = new attributes();
 
-  constructor(x: number, y: number) {
-    this.x = round(x);
-    this.y = round(y);
+  return this;
 
-    return this;
+  /** Rounds a value to PRECISION */
+  this.prototype.round = function (value)
+  {
+    return Math.round(value * 1e2) / 1e2;
+  }
+
+  /** Radians to degrees */
+  this.prototype.rad2deg = function (radians)
+  {
+    return radians * 57.29577951308232;
+  }
+
+  /** Degrees to radians */
+  this.prototype.deg2rad (degrees)
+  {
+    return degrees / 57.29577951308232;
   }
 
   /** Adds an attribute. This is here to make this call chainable in assignment */
-  attr(name: string, value: string): Point {
+  this.prototype.attr = function (name, value)
+  {
     this.attributes.add(name, value);
 
     return this;
   }
 
   /** Returns the distance between this point and that point */
-  dist(that: Point): number {
+  this.prototype.dist = function (that)
+  {
     let dx = this.x - that.x;
     let dy = this.y - that.y;
 
-    return round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)));
+    return this.round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)));
   }
 
   /** Returns slope of a line made by this point and that point */
-  slope(that: Point): number {
+  this.prototype.slope = function (that)
+  {
     return (that.y - this.y) / (that.x - this.x);
   }
 
   /** Returns the x-delta between this point and that point */
-  dx(that: Point): number {
+  this.prototype.dx = function (that)
+  {
     return that.x - this.x;
   }
 
   /** Returns the y-delta between this point and that point */
-  dy(that: Point): number {
+  this.prototype.dy = function (that)
+  {
     return that.y - this.y;
   }
 
   /** Returns the angle between this point and that point */
-  angle(that: Point): number {
+  this.prototype.angle = function (that)
+  {
     let rad = Math.atan2(-1 * this.dy(that), this.dx(that));
     while (rad < 0) rad += 2 * Math.PI;
 
-    return rad2deg(rad);
+    return this.rad2deg(rad);
   }
 
   /** Rotate this point deg around that point */
-  rotate(deg: number, that: Point): Point {
+  this.prototype.rotate = function (deg, that)
+  {
     let radius = this.dist(that);
     let angle = this.angle(that);
-    let x = that.x + radius * Math.cos(deg2rad(angle + deg)) * -1;
-    let y = that.y + radius * Math.sin(deg2rad(angle + deg));
+    let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1;
+    let y = that.y + radius * Math.sin(this.deg2rad(angle + deg));
 
     return new Point(x, y);
   }
 
   /** returns an identical copy of this point */
-  copy(): Point {
+  this.prototype.copy = function ()
+  {
     return new Point(this.x, this.y);
   }
 
   /** checks whether this point is equal to that point */
-  equals(that: Point): boolean {
+  this.prototype.equals = function (that)
+  {
     return (this.x === that.x && this.y === that.y) ? true : false;
   }
 
   /** Mirrors this point around X value of that point */
-  flipX(that: Point): Point
+  this.prototype.flipX = function (that)
   {
     return new Point(that.x + this.dx(that), that.y);
   }
 
   /** Mirrors this point around Y value of that point */
-  flipY(that: Point): Point
+  this.prototype.flipY = function (that)
   {
     return new Point(that.x, that.y + this.dy(that));
   }
 
   /** Shifts this point distance in the deg direction */
-  shift(deg: number, distance: number): Point {
+  this.prototype.shift = function (deg, distance)
+  {
     let p = this.copy();
     p.x += distance;
 
@@ -92,17 +115,22 @@ export class Point {
   }
 
   /** Shifts this point distance in the direction of that point */
-  shiftTowards(that: Point, distance: number): Point {
+  this.prototype.shiftTowards = function (that, distance)
+  {
     return this.shift(this.angle(that), distance);
   }
 
   /** Shifts this point fraction of the distance towards that point */
-  shiftFractionTowards(that: Point, fraction: number): Point {
+  this.prototype.shiftFractionTowards = function (that, fraction)
+  {
     return this.shiftTowards(that, this.dist(that) * fraction);
   }
 
   /** Shifts this point distance beyond that point */
-  shiftOutwards(that: Point, distance: number): Point {
+  this.prototype.shiftOutwards = function (that, distance)
+  {
     return this.shiftTowards(that, this.dist(that) + distance);
   }
 }
+
+export default point;

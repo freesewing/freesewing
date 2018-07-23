@@ -1,65 +1,64 @@
-import { Point } from './point'
-import { Attributes } from './attributes'
+import attributes from './attributes'
 
-
-export class Path {
-  render: boolean = true;
-  ops: {
-      type: "move" | "line" | "curve" | "close";
-      to?: Point;
-      cp1?: Point;
-      cp2?: Point;
-    }[] = [];
-  attributes: Attributes = new Attributes();
+function path ()
+{
+  this.render = true;
+  this.attributes = new attributes();
 
   /** Adds a move operation to Point to */
-  move(to: Point): Path {
+  this.prototype.move = function (to)
+  {
     this.ops.push({type: "move", to});
 
     return this;
   }
 
   /** Adds a line operation to Point to */
-  line(to: Point): Path {
+  this.prototype.line = function (to)
+  {
     this.ops.push({type: "line", to});
 
     return this;
   }
 
   /** Adds a line operation to Point to */
-  curve(cp1: Point, cp2: Point, to: Point): Path {
+  this.prototype.curve = function (cp1, cp2, to)
+  {
     this.ops.push({type: "curve", cp1, cp2, to});
 
     return this;
   }
 
   /** Adds a close operation */
-  close(): Path {
+  this.prototype.close = function ()
+  {
     this.ops.push({type: "close"});
 
     return this;
   }
 
   /** Adds an attribute. This is here to make this call chainable in assignment */
-  attr(name, value): Path {
+  this.prototype.attr = function (name, value)
+  {
     this.attributes.add(name, value);
 
     return this;
   }
 
   /** Returns SVG pathstring for this path */
-  asPathstring() {
+  this.prototype.asPathstring = function ()
+  {
     let d = '';
     for(let op of this.ops) {
       switch (op.type) {
         case 'move':
-          d += `M ${op.to!.x},${op.to!.y}`;
+          d += `M ${op.to.x},${op.to.y}`;
           break;
         case 'line':
-          d += ` L ${op.to!.x},${op.to!.y}`;
+          d += ` L ${op.to.x},${op.to.y}`;
           break;
         case 'curve':
-          d += ` C ${op.cp1!.x},${op.cp1!.y} ${op.cp2!.x},${op.cp2!.y} ${op.to!.x},${op.to!.y}`;
+          d += ` C ${op.cp1.x},${op.cp1.y} ${op.cp2.x},${op.cp2.y} ${op.to.x},${op.to.y}`;
           break;
         case 'close':
           d += ' z';
@@ -72,5 +71,6 @@ export class Path {
 
     return d;
   }
-
 }
+
+export default path;
