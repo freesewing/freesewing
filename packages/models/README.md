@@ -38,6 +38,7 @@ All measurements are in mm.
 
  - manSize34
  - manSize36
+ - manSize38
  - manSize40
  - manSize42
  - manSize44
