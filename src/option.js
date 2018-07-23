@@ -1,5 +1,4 @@
-function option (config)
-{
+function option(config) {
   this.id = config.id;
   this.config = config;
   this.val = config.val;

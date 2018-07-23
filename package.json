@@ -4,8 +4,11 @@
   "description": "A library for creating made-to-measure sewing patterns",
   "main": "src/index.js",
   "scripts": {
+    "precommit": "npm run pretty && lint-staged",
     "test": "mocha -r ts-node/register tests/*.test.js",
     "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
     "browserbuild": "rollup -c rollup.browser.js",
     "nodebuild": "rollup -c rollup.node.js",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild"
@@ -19,6 +22,17 @@
   "bugs": {
     "url": "https://github.com/joostdecock/freesewing/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "homepage": "https://github.com/joostdecock/freesewing#readme",
   "dependencies": {
     "bezier-js": "^2.2.13",
@@ -26,7 +40,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
     "chai": "^4.1.2",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7",
     "rimraf": "^2.6.2",

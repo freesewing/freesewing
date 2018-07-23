@@ -1,7 +1,6 @@
-import attributes from './attributes'
+import attributes from "./attributes";
 
-function snippet (def, anchor, description = '')
-{
+function snippet(def, anchor, description = "") {
   this.def = def;
   this.anchor = anchor;
   this.description = description;
