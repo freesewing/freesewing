@@ -6,8 +6,7 @@
 </h4>
 
 # freesewing
-A port of [freesewing core](https://github.com/freesewing/core)
-to node.js, using [TypeScript](https://www.typescriptlang.org/). 
+A port of [freesewing core](https://github.com/freesewing/core) to node.js.
 
 > This is alpha code.
 
