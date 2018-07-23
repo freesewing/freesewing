@@ -1,9 +1,10 @@
 import { macroName } from "./utils";
 import point from "./point";
+import attributes from "./attributes";
 import * as hooklib from "hooks";
 
 function part(id) {
-  this.attributes = new Attributes();
+  this.attributes = new attributes();
   this.points = {};
   this.paths = {};
   this.snippets = {};
@@ -12,20 +13,20 @@ function part(id) {
   this.points.origin = new point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
 
-  this.prototype.macroRunner = function(args) {
-    let self = this;
-    let data = args;
-    let method = function(key, data) {
-      let macro = macroName(key);
-      if (typeof self[macro] === "function") {
-        self[macro](data);
-      }
-    };
-
-    return method;
-  };
-
   return this;
 }
+
+part.prototype.macroRunner = function(args) {
+  let self = this;
+  let data = args;
+  let method = function(key, data) {
+    let macro = macroName(key);
+    if (typeof self[macro] === "function") {
+      self[macro](data);
+    }
+  };
+
+  return method;
+};
 
 export default part;

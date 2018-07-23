@@ -1,5 +1,8 @@
 import { macroName } from "./utils";
 import part from "./part";
+import point from "./point";
+import path from "./path";
+import snippet from "./snippet";
 import svg from "./svg";
 import hooks from "./hooks";
 
@@ -52,64 +55,61 @@ export default function pattern(config = false) {
     values: this.values,
     config: this.config
   };
+}
 
-  /**
-   * @throws Will throw an error when called
-   */
-  this.prototype.draft = function() {
-    throw Error(
-      "You have to implement the draft() method in your Pattern instance."
-    );
-  };
+/**
+ * @throws Will throw an error when called
+ */
+pattern.prototype.draft = function() {
+  throw Error(
+    "You have to implement the draft() method in your Pattern instance."
+  );
+};
 
-  this.prototype.render = function() {
-    this.hooks.attach("preRenderSvg", this.svg);
-    this.hooks.attach("postRenderSvg", this.svg);
-    //this.hooks.attach('insertText', this.svg);
+pattern.prototype.render = function() {
+  this.hooks.attach("preRenderSvg", this.svg);
+  this.hooks.attach("postRenderSvg", this.svg);
+  //this.hooks.attach('insertText', this.svg);
 
-    return this.svg.render(this);
-  };
+  return this.svg.render(this);
+};
 
-  this.prototype.on = function(hook, method) {
-    if (typeof this.hooks._hooks[hook] === "undefined") {
-      this.hooks._hooks[hook] = [];
-    }
-    this.hooks._hooks[hook].push(method);
-  };
-
-  this.prototype.macro = function(key, method) {
-    let name = macroName(key);
-    this.on(name, method);
-    for (let partId in this.parts) {
-      let part = this.parts[partId];
-      part[name] = () => null;
-      this.hooks.attach(name, part);
-    }
-  };
-
-  this.prototype.withPlugin(plugin);
-  {
-    if (plugin.hooks) this.loadPluginHooks(plugin);
-    if (plugin.macros) this.loadPluginMacros(plugin);
-
-    return this;
+pattern.prototype.on = function(hook, method) {
+  if (typeof this.hooks._hooks[hook] === "undefined") {
+    this.hooks._hooks[hook] = [];
   }
+  this.hooks._hooks[hook].push(method);
+};
 
-  this.prototype.loadPluginHooks = function(plugin) {
-    for (let hook of this.hooks.all) {
-      if (typeof plugin.hooks[hook] === "function") {
-        this.on(hook, plugin.hooks[hook]);
-      }
-    }
-  };
+pattern.prototype.macro = function(key, method) {
+  let name = macroName(key);
+  this.on(name, method);
+  for (let partId in this.parts) {
+    let part = this.parts[partId];
+    part[name] = () => null;
+    this.hooks.attach(name, part);
+  }
+};
 
-  this.prototype.loadPluginMacros = function(plugin) {
-    for (let macro in plugin.macros) {
-      if (typeof plugin.macros[macro] === "function") {
-        this.macro(macro, plugin.macros[macro]);
-      }
-    }
-  };
+pattern.prototype.withPlugin = function(plugin) {
+  if (plugin.hooks) this.loadPluginHooks(plugin);
+  if (plugin.macros) this.loadPluginMacros(plugin);
 
   return this;
-}
+};
+
+pattern.prototype.loadPluginHooks = function(plugin) {
+  for (let hook of this.hooks.all) {
+    if (typeof plugin.hooks[hook] === "function") {
+      this.on(hook, plugin.hooks[hook]);
+    }
+  }
+};
+
+pattern.prototype.loadPluginMacros = function(plugin) {
+  for (let macro in plugin.macros) {
+    if (typeof plugin.macros[macro] === "function") {
+      this.macro(macro, plugin.macros[macro]);
+    }
+  }
+};
