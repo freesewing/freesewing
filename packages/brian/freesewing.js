@@ -1,0 +1,1 @@
+../freesewing/dist/freesewing.min.js

@@ -1,5 +1,5 @@
 /** Pattern parts */
-module.exports = {
+export var config = {
   parts: [
     "back",
     "front",

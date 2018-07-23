@@ -1,4 +1,4 @@
-import F from 'freesewing'
+import * as F from 'freesewing'
 
 var base =
 {

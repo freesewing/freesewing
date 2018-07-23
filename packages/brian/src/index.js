@@ -1,9 +1,11 @@
-import F from 'freesewing'
-import cutonfold from '@freesewing-plugins/macro-cutonfold'
-import * as patternConfig from '../config/config'
+import * as freesewing from 'freesewing'
+import * as cutonfold from '@freesewing-plugins/macro-cutonfold'
+import { config } from '../config/config'
 import back from './back'
 
-var brian = new F.pattern(patternConfig)
+import { version } from "../package.json"
+console.log('config', config);
+var brian = new freesewing.pattern(config)
   .withPlugin(cutonfold);
 
 brian.draft = function()
@@ -13,4 +15,6 @@ brian.draft = function()
   return brian;
 }
 
-module.exports = brian;
+brian.version = version;
+
+export default brian;
