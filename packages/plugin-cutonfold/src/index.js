@@ -1,11 +1,11 @@
-const VERSION = require('../package.json').version;
+//const VERSION = require('../package.json').version;
 
-module.exports = {
+export default {
   hooks: {
     preRenderSvg: function(next) {
       // Without this, our custom attribute won't be valid
       this.attributes.add("xmlns:freesewing-plugins", "http://freesewing.org/namespaces/freesewing-plugins");
-      this.attributes.add("freesewing-plugins:macro-cutonfold", VERSION);
+      this.attributes.add("freesewing-plugins:macro-cutonfold", 'fixme');
       next();
     }
   }
