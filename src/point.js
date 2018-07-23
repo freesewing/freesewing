@@ -5,8 +5,6 @@ function point(x, y) {
   this.y = this.round(y);
   this.attributes = new attributes();
 
-  return this;
-
   /** Rounds a value to PRECISION */
   this.prototype.round = function(value) {
     return Math.round(value * 1e2) / 1e2;
@@ -113,6 +111,8 @@ function point(x, y) {
   this.prototype.shiftOutwards = function(that, distance) {
     return this.shiftTowards(that, this.dist(that) + distance);
   };
+
+  return this;
 }
 
 export default point;

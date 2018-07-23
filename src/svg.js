@@ -2,6 +2,8 @@ import attributes from "./attributes";
 import * as hooklib from "hooks";
 import hooks from "./hooks";
 
+import { version } from "../package.json";
+
 function svg(pattern) {
   this.body = "";
   this.style = "";
@@ -15,11 +17,14 @@ function svg(pattern) {
   this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
   this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
   this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  this.attributes.add(
+    "xmlns:freesewing",
+    "http://freesewing.org/namespaces/freesewing"
+  );
+  this.attributes.add("freesewing", version);
   this.hooks = hooks.all;
   for (let k in hooklib) this[k] = hooklib[k];
   for (let k in this.hooks) this.hook(k, this[k]);
-
-  return this;
 
   /** Method to attach preRenderSvg hooks on */
   this.prototype.preRenderSvg = function() {};
@@ -240,6 +245,8 @@ function svg(pattern) {
 
     return "" + this.freeId;
   };
+
+  return this;
 }
 
 export default svg;

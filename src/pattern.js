@@ -53,8 +53,6 @@ export default function pattern(config = false) {
     config: this.config
   };
 
-  return this;
-
   /**
    * @throws Will throw an error when called
    */
@@ -112,4 +110,6 @@ export default function pattern(config = false) {
       }
     }
   };
+
+  return this;
 }

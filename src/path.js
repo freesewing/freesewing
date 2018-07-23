@@ -66,6 +66,8 @@ function path() {
 
     return d;
   };
+
+  return this;
 }
 
 export default path;

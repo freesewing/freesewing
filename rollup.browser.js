@@ -10,7 +10,8 @@ export default {
     file: "dist/freesewing.min.js",
     format: "iife",
     name: "freesewing",
-    banner: `/**\n * Freesewing\n * (c) ${new Date().getFullYear()} Joost De Cock\n * @license MIT\n */`
+    banner: `/**\n * Freesewing\n * (c) ${new Date().getFullYear()} Joost De Cock\n * @license MIT\n */`,
+    sourcemap: true
   },
   plugins: [
     resolve({
@@ -20,7 +21,6 @@ export default {
     commonjs(),
     babel({
       exclude: "node_modules/**"
-    }),
-    terser()
+    })
   ]
 };

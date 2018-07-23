@@ -6,8 +6,6 @@ function attributes(init = false) {
     }
   }
 
-  return this;
-
   /** Adds an attribute */
   this.prototype.add = function(name, value) {
     if (typeof this.list[name] === "undefined") {
@@ -47,6 +45,8 @@ function attributes(init = false) {
 
     return svg;
   };
+
+  return this;
 }
 
 export default attributes;
