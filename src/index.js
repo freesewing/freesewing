@@ -4,8 +4,10 @@ import path from "./path";
 import snippet from "./snippet";
 import * as utils from "./utils";
 
+import { version } from "../package.json";
+
 export default {
-  version: require("../package.json").version,
+  version: version,
   pattern,
   point,
   path,
