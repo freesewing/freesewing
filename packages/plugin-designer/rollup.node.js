@@ -9,7 +9,7 @@ export default {
   output: {
     file: "dist/module.js",
     format: "cjs",
-    banner: `/**\n * ${meta.name} | ${
+    banner: `/**\n * ${meta.name} | v${meta.version}\n * ${
       meta.description
     }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
       meta.license

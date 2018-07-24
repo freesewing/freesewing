@@ -1,9 +1,9 @@
 import script from "./lib/script";
 import style from "./lib/style";
 import snippets from "./lib/snippets";
-import meta from "../package.json";
+import { version } from "../package.json";
 
-module.exports = {
+export default {
   preRenderSvg: function(next) {
     // Add style, script and snippets
     this.style += style;
@@ -15,7 +15,7 @@ module.exports = {
       "xmlns:freesewing",
       "http://freesewing.org/namespaces/freesewing"
     );
-    this.attributes.add("freesewing:theme-designer", meta.version);
+    this.attributes.add("freesewing:theme-designer", version);
 
     /** Decorares points with extra info */
     var decoratePoints = function(svg) {

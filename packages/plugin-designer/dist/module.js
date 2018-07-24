@@ -1,5 +1,6 @@
 /**
- * @freesewing/theme-designer | The designer theme for freesewing
+ * @freesewing/theme-designer | v0.3.0
+ * The designer theme for freesewing
  * (c) 2018 Joost De Cock <joost@decock.org> (https://github.com/joostdecock)
  * @license MIT
  */
@@ -66,82 +67,9 @@ var snippets = `
 </g>
 `;
 
-var name = "@freesewing/theme-designer";
-var version = "0.2.2";
-var description = "The designer theme for freesewing";
-var author =
-  "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)";
-var license = "MIT";
-var homepage = "https://github.com/joostdecock/theme-designer#readme";
-var repository = "github:joostdecock/theme-designer";
-var bugs = {
-  url: "https://github.com/joostdecock/theme-designer/issues"
-};
-var keywords = [
-  "freesewing",
-  "theme",
-  "svg",
-  "style",
-  "design",
-  "sewing patterns"
-];
-var main = "dist/module.js";
-var unpkg = "dist/theme.min.js";
-var scripts = {
-  precommit: "npm run pretty && lint-staged",
-  test: 'echo "Error: no test specified" && exit 1',
-  clean: "rimraf dist",
-  pretty: 'npx prettier --write "src/*.js"',
-  lint: 'eslint --fix "src/*.js"',
-  browserbuild: "rollup -c rollup.browser.js",
-  nodebuild: "rollup -c rollup.node.js",
-  build: "npm run clean && npm run browserbuild && npm run nodebuild"
-};
-var husky = {
-  hooks: {
-    "pre-commit": "lint-staged"
-  }
-};
-var devDependencies = {
-  "babel-core": "^6.26.3",
-  "babel-eslint": "^8.2.6",
-  eslint: "^5.2.0",
-  "eslint-config-prettier": "^2.9.0",
-  "eslint-plugin-prettier": "^2.6.2",
-  husky: "^0.14.3",
-  "lint-staged": "^7.2.0",
-  prettier: "^1.13.7",
-  rimraf: "^2.6.2",
-  "rollup-plugin-babel": "^3.0.7",
-  "rollup-plugin-commonjs": "^9.1.3",
-  "rollup-plugin-filesize": "^4.0.1",
-  "rollup-plugin-json": "^3.0.0",
-  "rollup-plugin-node-resolve": "^3.3.0",
-  "rollup-plugin-terser": "^1.0.1"
-};
-var files = ["dist/*", "README.md", "package-lock.json", "package.json"];
-var meta = {
-  name: name,
-  version: version,
-  description: description,
-  author: author,
-  license: license,
-  homepage: homepage,
-  repository: repository,
-  bugs: bugs,
-  keywords: keywords,
-  main: main,
-  unpkg: unpkg,
-  scripts: scripts,
-  husky: husky,
-  "lint-staged": {
-    "*.{js,json}": ["prettier --write", "git add"]
-  },
-  devDependencies: devDependencies,
-  files: files
-};
+var version = "0.3.0";
 
-module.exports = {
+var index = {
   preRenderSvg: function(next) {
     // Add style, script and snippets
     this.style += style;
@@ -153,7 +81,7 @@ module.exports = {
       "xmlns:freesewing",
       "http://freesewing.org/namespaces/freesewing"
     );
-    this.attributes.add("freesewing:theme-designer", meta.version);
+    this.attributes.add("freesewing:theme-designer", version);
 
     /** Decorares points with extra info */
     var decoratePoints = function(svg) {
@@ -299,3 +227,5 @@ module.exports = {
     next();
   }
 };
+
+module.exports = index;

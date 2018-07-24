@@ -10,7 +10,7 @@ export default {
   output: {
     file: "dist/theme.min.js",
     format: "iife",
-    name: "freesewing_theme_designer"
+    name: "freesewing.plugins.designer"
   },
   plugins: [
     resolve({
@@ -23,7 +23,7 @@ export default {
     }),
     terser({
       output: {
-        preamble: `/**\n * ${meta.name} | ${
+        preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
           meta.description
         }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
           meta.license
