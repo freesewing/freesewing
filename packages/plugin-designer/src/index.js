@@ -145,7 +145,6 @@ export default {
                   partId
                 );
               }
-              let current = op.to;
             }
           }
         }
