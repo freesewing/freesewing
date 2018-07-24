@@ -1,4 +1,4 @@
-module.exports = `
+export default `
 <g id="point">
   <circle cy="0" cx="0" r="2" class="stroke-hint stroke-sm" />
   <circle cy="0" cx="0" r="0.8" class="fill-hint" />

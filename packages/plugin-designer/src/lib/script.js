@@ -1,4 +1,4 @@
-module.exports = `
+export default `
 function pointHover(evt) {
   var point = evt.target;
   var id = point.id;

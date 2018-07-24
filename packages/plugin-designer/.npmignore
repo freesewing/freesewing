@@ -1,4 +1,4 @@
 src
 .editorconfig
-.babelrc
-webpack.config.js
+rollup.browser.js
+rollup.node.js
