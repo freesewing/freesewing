@@ -9,6 +9,7 @@ brian.on("preRenderSvg", function(next) {
   this.attributes.add("freesewing:brian", version);
   next();
 });
+
 brian.draft = function() {
   back.draft(brian.parts.back, brian.context);
 
