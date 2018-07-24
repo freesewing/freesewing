@@ -1,13 +1,13 @@
-import meta from "../package.json";
 import markers from "./lib/markers";
 import style from "./lib/style";
+import { version } from "../package.json";
 
 export default {
   hooks: {
     preRenderSvg: function(next) {
-      this.attributes.add("freesewing:plugin-cutonfold", meta.version);
       this.defs += markers;
       this.style += style;
+      this.attributes.add("freesewing:plugin-cutonfold", version);
       next();
     }
   },

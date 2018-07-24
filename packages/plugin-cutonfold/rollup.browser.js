@@ -10,7 +10,7 @@ export default {
   output: {
     file: "dist/cutonfold.min.js",
     format: "iife",
-    name: "freesewing_plugin_cutonfold"
+    name: "freesewing.plugins.cutonfold"
   },
   plugins: [
     resolve({
