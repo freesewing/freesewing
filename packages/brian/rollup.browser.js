@@ -21,18 +21,19 @@ export default {
       browser: true
     }),
     json(),
+    commonjs(),
     babel({
       exclude: "node_modules/**"
-    }),
-    terser({
-      output: {
-        preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
-          meta.description
-        }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
-          meta.license
-        }\n */`
-      }
     })
+    //    terser({
+    //      output: {
+    //        preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
+    //          meta.description
+    //        }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
+    //          meta.license
+    //        }\n */`
+    //      }
+    //    })
   ],
   external: [
     "freesewing",

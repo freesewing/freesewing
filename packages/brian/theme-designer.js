@@ -1,1 +1,0 @@
-../theme-designer/dist/browser/bundle.js

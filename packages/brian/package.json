@@ -40,7 +40,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing-plugins/macro-cutonfold": "0.2.1",
+    "@freesewing-plugins/macro-cutonfold": "0.3.2",
     "freesewing": "^0.3.3"
   },
   "devDependencies": {
