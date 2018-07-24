@@ -3,14 +3,14 @@ import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
+import meta from "./package.json";
 
 export default {
   input: "src/index.js",
   output: {
-    file: "dist/theme.min.js",
+    file: "dist/browser.js",
     format: "iife",
-    name: "freesewing_theme_default",
-    banner: `/**\n * Freesewing\n * (c) ${new Date().getFullYear()} Joost De Cock\n * @license MIT\n */`
+    name: "freesewing.plugins.theme"
   },
   plugins: [
     resolve({
@@ -21,6 +21,14 @@ export default {
     babel({
       exclude: "node_modules/**"
     }),
-    terser()
+    terser({
+      output: {
+        preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
+          meta.description
+        }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
+          meta.license
+        }\n */`
+      }
+    })
   ]
 };

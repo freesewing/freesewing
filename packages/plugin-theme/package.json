@@ -1,22 +1,24 @@
 {
-  "name": "@freesewing/theme-default",
+  "name": "@freesewing/plugin-theme",
   "version": "0.1.0",
-  "description": "The default theme for freesewing",
+  "description": "A freesewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
-  "homepage": "https://github.com/joostdecock/theme-default#readme",
-  "repository": "github:joostdecock/theme-default",
+  "homepage": "https://github.com/freesewing/plugin-theme#readme",
+  "repository": "github:freesewing/plugin-theme",
   "bugs": {
-    "url": "https://github.com/joostdecock/theme-default/issues"
+    "url": "https://github.com/freesewing/plugin-theme/issues"
   },
   "keywords": [
     "freesewing",
+    "plugin",
     "theme",
     "svg",
+    "sewing patterns",
     "style"
   ],
-  "main": "dist/module.js",
-  "unpkg": "dist/theme.min.js",
+  "main": "dist/node.js",
+  "unpkg": "dist/browser.js",
   "scripts": {
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
