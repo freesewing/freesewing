@@ -66,12 +66,12 @@ point.prototype.rotate = function(deg, that) {
   let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1;
   let y = that.y + radius * Math.sin(this.deg2rad(angle + deg));
 
-  return new Point(x, y);
+  return new point(x, y);
 };
 
 /** returns an identical copy of this point */
 point.prototype.copy = function() {
-  return new Point(this.x, this.y);
+  return new point(this.x, this.y);
 };
 
 /** checks whether this point is equal to that point */
@@ -81,12 +81,12 @@ point.prototype.equals = function(that) {
 
 /** Mirrors this point around X value of that point */
 point.prototype.flipX = function(that) {
-  return new Point(that.x + this.dx(that), that.y);
+  return new point(that.x + this.dx(that), that.y);
 };
 
 /** Mirrors this point around Y value of that point */
 point.prototype.flipY = function(that) {
-  return new Point(that.x, that.y + this.dy(that));
+  return new point(that.x, that.y + this.dy(that));
 };
 
 /** Shifts this point distance in the deg direction */

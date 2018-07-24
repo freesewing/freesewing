@@ -3,6 +3,7 @@ import attributes from "./attributes";
 function path() {
   this.render = true;
   this.attributes = new attributes();
+  this.ops = [];
 }
 
 /** Adds a move operation to Point to */

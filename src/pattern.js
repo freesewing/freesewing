@@ -35,6 +35,7 @@ export default function pattern(config = false) {
   this.hooks = new hooks();
 
   // Data containers
+  this.settings = {};
   this.values = {};
   this.parts = {};
   for (let id of config.parts) {
@@ -53,7 +54,8 @@ export default function pattern(config = false) {
     parts: this.parts,
     options: this.options,
     values: this.values,
-    config: this.config
+    config: this.config,
+    settings: this.settings
   };
 }
 

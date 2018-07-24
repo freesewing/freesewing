@@ -5,6 +5,8 @@ import hooks from "./hooks";
 import { version } from "../package.json";
 
 function svg(pattern) {
+  this.openGroups = [];
+  this.freeId = 0;
   this.body = "";
   this.style = "";
   this.script = "";
