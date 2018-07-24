@@ -1,9 +1,9 @@
-import { version } from "../package.json";
+import meta from "../package.json";
 
 export default {
   hooks: {
     preRenderSvg: function(next) {
-      this.attributes.add("freesewing:plugin-cutonfold", version);
+      this.attributes.add("freesewing:plugin-cutonfold", meta.version);
       next();
     }
   },
