@@ -1,9 +1,14 @@
 {
-  "name": "@freesewing-patterns/brian",
   "version": "0.1.0",
+  "name": "@freesewing-patterns/brian",
+  "description": "Freesewing pattern for a basic body block for menswear",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
-  "description": "Freesewing pattern for a basic body block for menswear",
+  "homepage": "https://github.com/freesewing-patterns/brian#readme",
+  "repository": "github:freesewing-patterns/brian",
+  "bugs": {
+    "url": "https://github.com/freesewing-patterns/brian/issues"
+  },
   "keywords": [
     "freesewing",
     "pattern",
@@ -11,19 +16,28 @@
     "menswear",
     "block"
   ],
-  "homepage": "https://github.com/freesewing-patterns/brian#readme",
-  "repository": "github:freesewing-patterns/brian",
-  "bugs": {
-    "url": "https://github.com/freesewing-patterns/brian/issues"
-  },
   "main": "dist/node/index.js",
   "unpkg": "dist/browser/bundle.js",
   "scripts": {
+    "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
     "browserbuild": "rollup -c rollup.browser.js",
     "nodebuild": "rollup -c rollup.node.js",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "@freesewing-plugins/macro-cutonfold": "0.2.1",
