@@ -83,17 +83,7 @@ pattern.prototype.on = function(hook, method) {
   this.hooks._hooks[hook].push(method);
 };
 
-pattern.prototype.macro = function(key, method) {
-  let name = macroName(key);
-  this.on(name, method);
-  for (let partId in this.parts) {
-    let part = this.parts[partId];
-    part[name] = () => null;
-    this.hooks.attach(name, part);
-  }
-};
-
-pattern.prototype.withPlugin = function(plugin) {
+pattern.prototype.with = function(plugin) {
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
@@ -110,8 +100,21 @@ pattern.prototype.loadPluginHooks = function(plugin) {
 
 pattern.prototype.loadPluginMacros = function(plugin) {
   for (let macro in plugin.macros) {
+    console.log("loading ", macro);
     if (typeof plugin.macros[macro] === "function") {
+      console.log(macro, "is a function");
       this.macro(macro, plugin.macros[macro]);
     }
+  }
+};
+
+pattern.prototype.macro = function(key, method) {
+  let name = macroName(key);
+  this.on(name, method);
+  for (let partId in this.parts) {
+    console.log(`Attaching macro ${name} to part ${partId}`);
+    let part = this.parts[partId];
+    part[name] = () => null;
+    this.hooks.attach(name, part);
   }
 };
