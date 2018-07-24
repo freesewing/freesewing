@@ -16,8 +16,8 @@
     "patterns",
     "cut on fold"
   ],
-  "main": "dist/node/index.js",
-  "unpkg": "dist/browser/bundle.js",
+  "main": "dist/module.js",
+  "unpkg": "dist/cutonfold.min.js",
   "scripts": {
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
