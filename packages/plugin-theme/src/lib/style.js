@@ -1,4 +1,4 @@
-module.exports = `
+export default `
 path,circle,rect{fill:none;stroke:none}
 path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}
 path.fabric{stroke-width:.6;stroke:#653f95}
