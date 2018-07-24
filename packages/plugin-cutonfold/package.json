@@ -1,13 +1,13 @@
 {
-  "name": "@freesewing-plugins/macro-cutonfold",
+  "name": "@freesewing/plugin-cutonfold",
   "version": "0.3.2",
-  "description": "A freesewing macro to add cut-on-fold indicators on your patterns",
+  "description": "A freesewing plugin to add cut-on-fold indicators on your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing-plugins/macro-cutonfold#readme",
-  "repository": "github:freesewing-plugins/macro-cutonfold",
+  "homepage": "https://github.com/freesewing/plugin-cutonfold#readme",
+  "repository": "github:freesewing/plugin-cutonfold",
   "bugs": {
-    "url": "https://github.com/freesewing-plugins/macro-cutonfold/issues"
+    "url": "https://github.com/freesewing/plugin-cutonfold/issues"
   },
   "keywords": [
     "freesewing",
@@ -16,8 +16,8 @@
     "patterns",
     "cut on fold"
   ],
-  "main": "dist/module.js",
-  "unpkg": "dist/cutonfold.min.js",
+  "main": "dist/node.js",
+  "unpkg": "dist/browser.js",
   "scripts": {
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",

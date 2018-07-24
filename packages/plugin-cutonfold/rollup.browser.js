@@ -8,7 +8,7 @@ import meta from "./package.json";
 export default {
   input: "src/index.js",
   output: {
-    file: "dist/cutonfold.min.js",
+    file: "dist/browser.js",
     format: "iife",
     name: "freesewing.plugins.cutonfold"
   },
