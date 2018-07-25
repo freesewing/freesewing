@@ -6,7 +6,7 @@ export default {
   hooks: {
     preRenderSvg: function(next) {
       this.style += style;
-      this.defs += snippets + logo;
+      this.defs += snippets;
       this.attributes.add("freesewing:plugin-theme", version);
       next();
     }
