@@ -1,3 +1,4 @@
+# Don't include build
 dist
 # Logs
 logs

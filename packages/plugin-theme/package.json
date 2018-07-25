@@ -14,8 +14,9 @@
     "plugin",
     "theme",
     "svg",
-    "sewing patterns",
-    "style"
+    "style",
+    "sewing",
+    "patterns"
   ],
   "main": "dist/node.js",
   "unpkg": "dist/browser.js",
