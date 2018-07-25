@@ -1,6 +1,6 @@
 {
   "name": "freesewing",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A library for creating made-to-measure sewing patterns",
   "main": "dist/module.js",
   "unpkg": "dist/freesewing.min.js",
