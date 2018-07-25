@@ -5,6 +5,7 @@
   "main": "dist/module.js",
   "unpkg": "dist/freesewing.min.js",
   "scripts": {
+    "prepublish": "npm run build",
     "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
     "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
     "major": "npm version major -m \":bookmark: v%s\" && npm run build",
