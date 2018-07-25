@@ -19,6 +19,9 @@
   "main": "dist/node.js",
   "unpkg": "dist/browser.js",
   "scripts": {
+    "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
+    "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
+    "major": "npm version major -m \":bookmark: v%s\" && npm run build",
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
@@ -50,7 +53,6 @@
     "prettier": "^1.13.7",
     "rimraf": "^2.6.2",
     "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-json": "^3.0.0",
     "rollup-plugin-node-resolve": "^3.3.0",

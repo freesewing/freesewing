@@ -1,12 +1,10 @@
 import markers from "./lib/markers";
-import style from "./lib/style";
 import { version } from "../package.json";
 
 export default {
   hooks: {
     preRenderSvg: function(next) {
       this.defs += markers;
-      this.style += style;
       this.attributes.add("freesewing:plugin-cutonfold", version);
       next();
     }
@@ -28,10 +26,11 @@ export default {
         .line(points.cutonfoldVia1)
         .line(points.cutonfoldVia2)
         .line(points.cutonfoldTo)
-        .attr("class", "cutonfold")
+        .attr("class", "note")
+        .attr("marker-start", "url(#cutonfoldFrom)")
+        .attr("marker-end", "url(#cutonfoldTo)")
         .attr("data-text", text)
-        .attr("data-text-class", "cutonfold")
-        .attr("data-text-dy", -2);
+        .attr("data-text-class", "center fill-note");
       next();
     }
   }
