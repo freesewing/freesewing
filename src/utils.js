@@ -64,13 +64,13 @@ export function beamCrossesY(from, to, y) {
 }
 
 /** Returns an object with shorthand access for pattern design */
-export function shorthand(part, context) {
-  let final = context.settings.mode === "draft" ? true : false;
-  let paperless = context.settings.paperless === true ? true : false;
+export function shorthand(part) {
+  let final = part.context.settings.mode === "draft" ? true : false;
+  let paperless = part.context.settings.paperless === true ? true : false;
   return {
-    measurements: context.settings.measurements || {},
-    options: context.options || {},
-    values: context.values || {},
+    measurements: part.context.settings.measurements || {},
+    options: part.context.options || {},
+    values: part.context.values || {},
     points: part.points || {},
     paths: part.paths || {},
     snippets: part.snippets || {},

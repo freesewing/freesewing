@@ -7,10 +7,9 @@ import json from "rollup-plugin-json";
 export default {
   input: "src/index.js",
   output: {
-    file: "dist/freesewing.min.js",
+    file: "dist/browser.js",
     format: "iife",
     name: "freesewing",
-    banner: `/**\n * Freesewing\n * (c) ${new Date().getFullYear()} Joost De Cock\n * @license MIT\n */`,
     sourcemap: true
   },
   plugins: [

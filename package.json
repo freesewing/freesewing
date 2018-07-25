@@ -5,6 +5,9 @@
   "main": "dist/module.js",
   "unpkg": "dist/freesewing.min.js",
   "scripts": {
+    "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
+    "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
+    "major": "npm version major -m \":bookmark: v%s\" && npm run build",
     "precommit": "npm run pretty && lint-staged",
     "test": "mocha -r ts-node/register tests/*.test.js",
     "clean": "rimraf dist",

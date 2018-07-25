@@ -38,9 +38,14 @@ export default function pattern(config = false) {
   this.settings = {};
   this.values = {};
   this.parts = {};
+
+  // Context object to pass around
+  this.context = new Object();
+
   for (let id of config.parts) {
     this.parts[id] = new part(id);
   }
+  this.context.parts = this.parts;
   this.options = {};
   if (typeof config.options !== "undefined" && config.options.length > 0) {
     for (let conf of config.options) {
@@ -48,15 +53,16 @@ export default function pattern(config = false) {
       else this.options[conf.id] = conf.val;
     }
   }
-
-  // Context object to pass around
   this.context = {
     parts: this.parts,
-    options: this.options,
-    values: this.values,
     config: this.config,
-    settings: this.settings
+    settings: this.settings,
+    options: this.options,
+    values: this.values
   };
+  for (let id of config.parts) {
+    this.parts[id].context = this.context;
+  }
 }
 
 /**
