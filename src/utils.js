@@ -75,6 +75,9 @@ export function shorthand(part) {
     paths: part.paths || {},
     snippets: part.snippets || {},
     macro: part.macroRunner(),
+    point: part.point,
+    path: part.path,
+    snippet: part.snippet,
     final,
     paperless
   };

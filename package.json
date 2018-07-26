@@ -2,7 +2,7 @@
   "name": "freesewing",
   "version": "0.4.2",
   "description": "A library for creating made-to-measure sewing patterns",
-  "author": "Joost De Cock <joost@decock.org>",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "license": "MIT",
   "repository": {
@@ -25,9 +25,9 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing",
-    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
-    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
