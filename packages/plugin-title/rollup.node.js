@@ -19,15 +19,15 @@ export default {
     babel({
       exclude: "node_modules/**"
     }),
-    filesize()
-    //terser({
-    //  output: {
-    //    preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
-    //      meta.description
-    //    }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
-    //      meta.license
-    //    }\n */`
-    //  }
-    //})
+    filesize(),
+    terser({
+      output: {
+        preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
+          meta.description
+        }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
+          meta.license
+        }\n */`
+      }
+    })
   ]
 };
