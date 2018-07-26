@@ -1,15 +1,15 @@
 import freesewing from "freesewing";
 import cutonfold from "@freesewing/plugin-cutonfold";
-import * as plugintitle from "@freesewing/plugin-title";
-//import logo from "@freesewing/plugin-logo";
+import title from "@freesewing/plugin-title";
+import logo from "@freesewing/plugin-logo";
 import config from "../config/config";
 import back from "./back";
 import { version } from "../package.json";
-console.log("title is ", plugintitle);
+console.log("logo is", logo);
 var pattern = new freesewing.pattern({ version: version, ...config })
   .with(cutonfold)
-  .with(plugintitle);
-//  .with(logo)
+  .with(title)
+  .with(logo);
 //pattern.on("preRenderSvg", function(next) {
 //  this.attributes.add(`freesewing:${name}`, version);
 //  next();
@@ -21,4 +21,4 @@ pattern.draft = function() {
   return pattern;
 };
 
-export default pattern;
+module.exports = pattern;

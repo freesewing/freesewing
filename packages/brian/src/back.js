@@ -44,10 +44,10 @@ var back = {
         points.armholePitch.x / 2,
         points.armholePitch.y
       );
-      macro("title", {
-        at: points.title,
-        nr: 2
-      });
+      macro("title", { at: points.title, nr: 2 });
+
+      points.logo = points.title.shift(-90, 100);
+      snippets.logo = new F.snippet("logo", points.logo);
     };
 
     if (final) {
