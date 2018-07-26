@@ -1,13 +1,11 @@
 import script from "./lib/script";
-import style from "./lib/style";
 import snippets from "./lib/snippets";
 import { version } from "../package.json";
 
 export default {
   hooks: {
     preRenderSvg: function(next) {
-      // Add style, script and snippets
-      this.style += style;
+      // Add script and snippets
       this.script += script;
       this.defs += snippets;
 
@@ -80,7 +78,7 @@ export default {
         partId
       ) {
         let path = new Path().move(from).line(to);
-        path.attributes.add("class", "curve-control");
+        path.attributes.add("class", "curve-control stroke-various stroke-sm");
         path.attributes.add("id", id);
         path.attributes.add("data-path", pathId);
         path.attributes.add("data-part", partId);
@@ -157,10 +155,7 @@ export default {
       // Decorate pattern
       decoratePoints(this);
       decoratePaths(this);
-      console.log(
-        "Designer theme plugin: Here's the pattern object:",
-        this.pattern
-      );
+      console.log("Designer plugin: Here's the pattern object:", this.pattern);
       next();
     }
   }
