@@ -48,6 +48,19 @@ var back = {
 
       points.logo = points.title.shift(-90, 100);
       snippets.logo = new F.snippet("logo", points.logo);
+
+      console.log("path offset");
+      points.t1 = new F.point(100, 400);
+      points.t2 = new F.point(200, 400);
+      points.t3 = new F.point(200, 500);
+      points.t4 = new F.point(100, 500);
+      paths.test = new F.path()
+        .move(points.t1)
+        .line(points.t2)
+        .line(points.t3)
+        .line(points.t4)
+        .close();
+      paths.test.offset(10);
     };
 
     if (final) {

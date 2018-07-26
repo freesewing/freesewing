@@ -8,12 +8,12 @@
     <div id="svg"></div>
     <script type="text/javascript" src="freesewing.js"></script>
     <script type="text/javascript" src="dist/module.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-theme"></script>
-    <script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-designer"></script>
+    <script type="text/javascript" src="tmp/theme.js"></script>
+    <script type="text/javascript" src="tmp/designer.js"></script>
   <script>
     var pattern = brian
     .with(freesewing.plugins.theme)
-    //.with(freesewing.plugins.designer);
+    .with(freesewing.plugins.designer);
 
     pattern.settings.measurements = {
       bicepsCircumference:   335,
