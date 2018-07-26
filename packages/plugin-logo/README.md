@@ -44,6 +44,13 @@ You can use them as such:
 snippets.logo = new F.snippet('logo-sm', points.logo);
 ```
 
+## Example
+
+Below is an example of the logo and the different sizes.
+As you can see, the logo's anchor point is the chin.
+
+![Example of the logo plugin](https://github.com/freesewing/plugin-logo/raw/master/img/example.png)
+
 ## Where to get help
 
 Questions? Stuck? The [freesewing chat room on Gitter](https://gitter.im/freesewing/freesewing)

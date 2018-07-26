@@ -18,6 +18,9 @@
   "main": "dist/node.js",
   "unpkg": "dist/browser.js",
   "scripts": {
+    "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
+    "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
+    "major": "npm version major -m \":bookmark: v%s\" && npm run build",
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
