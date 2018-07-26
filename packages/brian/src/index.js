@@ -17,4 +17,4 @@ pattern.draft = function() {
   return pattern;
 };
 
-module.exports = pattern;
+export default pattern;

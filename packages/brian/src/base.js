@@ -1,58 +1,66 @@
-import * as F from "freesewing";
+import freesewing from "freesewing";
 
 var base = {
   draft: function(part) {
-    let { measurements, options, points, paths, snippets } = F.utils.shorthand(
-      part
-    );
+    let {
+      measurements,
+      options,
+      points,
+      paths,
+      snippets,
+      path,
+      point,
+      snippet,
+      utils
+    } = freesewing.utils.shorthand(part);
 
     // Center back (cb) vertical axis
-    points.cbNeck = new F.point(0, options.backNeckCutout);
-    points.cbShoulder = new F.point(
+    points.cbNeck = new point(0, options.backNeckCutout);
+    points.cbShoulder = new point(
       0,
       (measurements.shoulderSlope - options.shoulderSlopeReduction) / 2
     );
-    points.cbArmhole = new F.point(
+    points.cbArmhole = new point(
       0,
       points.cbShoulder.y +
         (measurements.bicepsCircumference + options.bicepsEase) *
           options.armholeDepthFactor
     );
-    points.cbWaist = new F.point(
+    points.cbWaist = new point(
       0,
       measurements.centerBackNeckToWaist + options.backNeckCutout
     );
-    points.cbHips = new F.point(
+    points.cbHips = new point(
       0,
       points.cbWaist.y + measurements.naturalWaistToHip
     );
 
     // Side back (cb) vertical axis
-    points.armhole = new F.point(
+    points.armhole = new point(
       measurements.chestCircumference / 4 + options.chestEase / 4,
       points.cbArmhole.y
     );
-    points.waist = new F.point(points.armhole.x, points.cbWaist.y);
-    points.hips = new F.point(points.armhole.x, points.cbHips.y);
+    points.waist = new point(points.armhole.x, points.cbWaist.y);
+    points.hips = new point(points.armhole.x, points.cbHips.y);
 
     // Shoulder line
-    points.neck = new F.point(
+    points.neck = new point(
       measurements.neckCircumference / options.collarFactor,
       0
     );
-    points.shoulder = new F.point(
+    points.shoulder = new point(
       measurements.shoulderToShoulder / 2 + options.shoulderEase / 2,
       points.cbShoulder.y
     );
 
     // Armhhole
-    points.armholePitch = new F.point(
+    points.armholePitch = new point(
       (measurements.shoulderToShoulder * options.acrossBackFactor) / 2,
       points.shoulder.y + points.shoulder.dy(points.armhole) / 2
     );
-    points._tmp1 = new F.point(points.armholePitch.x, points.armhole.y);
+    points._tmp1 = new point(points.armholePitch.x, points.armhole.y);
     points._tmp2 = points._tmp1.shift(45, 10);
-    points._tmp3 = F.utils.beamsCross(
+    points._tmp3 = freesewing.utils.beamsCross(
       points._tmp1,
       points._tmp2,
       points.armhole,
@@ -87,7 +95,7 @@ var base = {
     points._tmp4 = points.neck
       .shiftTowards(points.shoulder, 10)
       .rotate(-90, points.neck);
-    points.neckCp1 = F.utils.beamCrossesY(
+    points.neckCp1 = freesewing.utils.beamCrossesY(
       points.neck,
       points._tmp4,
       points.cbNeck.y

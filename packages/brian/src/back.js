@@ -1,4 +1,4 @@
-import * as F from "freesewing";
+import freesewing from "freesewing";
 import base from "./base";
 
 var back = {
@@ -9,13 +9,16 @@ var back = {
       points,
       paths,
       snippets,
-      macro,
+      path,
+      point,
+      snippet,
       final,
-      paperless
-    } = F.utils.shorthand(part);
+      paperless,
+      macro
+    } = freesewing.utils.shorthand(part);
     base.draft(part);
 
-    paths.seam = new F.path()
+    paths.seam = new path()
       .move(points.cbNeck)
       .line(points.cbHips)
       .line(points.hips)
@@ -40,21 +43,21 @@ var back = {
         grainline: true
       });
 
-      points.title = new F.point(
+      points.title = new point(
         points.armholePitch.x / 2,
         points.armholePitch.y
       );
       macro("title", { at: points.title, nr: 2 });
 
       points.logo = points.title.shift(-90, 100);
-      snippets.logo = new F.snippet("logo", points.logo);
+      snippets.logo = new snippet("logo", points.logo);
 
       console.log("path offset");
-      points.t1 = new F.point(100, 400);
-      points.t2 = new F.point(200, 400);
-      points.t3 = new F.point(200, 500);
-      points.t4 = new F.point(100, 500);
-      paths.test = new F.path()
+      points.t1 = new point(100, 400);
+      points.t2 = new point(200, 400);
+      points.t3 = new point(200, 500);
+      points.t4 = new point(100, 500);
+      paths.test = new path()
         .move(points.t1)
         .line(points.t2)
         .line(points.t3)

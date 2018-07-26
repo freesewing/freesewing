@@ -4,15 +4,10 @@ import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
 import path from "path";
-import meta from "./package.json";
+import { name, version, description, author, license } from "./package.json";
 
 export default {
   input: "src/index.js",
-  output: {
-    file: "dist/browser.js",
-    format: "iife",
-    name: "freesewing.patterns.brian"
-  },
   plugins: [
     resolve({
       browser: true
@@ -24,11 +19,7 @@ export default {
     })
     //terser({
     //  output: {
-    //    preamble: `/**\n * ${meta.name} | v${meta.version}\n * ${
-    //      meta.description
-    //    }\n * (c) ${new Date().getFullYear()} ${meta.author}\n * @license ${
-    //      meta.license
-    //    }\n */`
+    //    preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
     //  }
     //})
   ],
