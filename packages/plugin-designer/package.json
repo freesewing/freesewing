@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/theme-designer",
+  "name": "@freesewing/plugin-designer",
   "version": "0.4.0",
-  "description": "The designer theme for freesewing",
+  "description": "The plugin for freesewing to facilitate pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
   "homepage": "https://github.com/joostdecock/theme-designer#readme",
