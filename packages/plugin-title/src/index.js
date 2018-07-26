@@ -1,26 +1,30 @@
-import style from './lib/style';
-const VERSION = require('../package.json').version;
+import style from "./lib/style";
+import { version } from "../package.json";
 
-module.exports = {
+export default {
   hooks: {
     preRenderSvg: function(next) {
-      // Without this, our custom attribute won't be valid
-      this.attributes.add("xmlns:freesewing-plugins", "http://freesewing.org/namespaces/freesewing-plugins");
-      this.attributes.add("freesewing-plugins:macro-title", VERSION);
+      this.attributes.add("freesewing:plugin-title", version);
       this.style += style;
       next();
     }
-  }
-, macros: {
+  },
+  macros: {
     title: function(next, so) {
-      so.at.attr('data-text', so.nr).attr('data-text-class', 'title-nr');
-      this.points.titleName =  so.at.shift(-90, 20)
-        .attr('data-text', title)
-        .attr('data-text-class', 'title-name');
-      this.points.titlePattern =  so.at.shift(-90, 40)
-        .attr('data-text', pattern)
-        .attr('data-text-class', 'title-pattern');
+      console.log("in plugin, so", so, this);
+      so.at.attr("data-text", so.nr).attr("data-text-class", "title-nr note");
+      this.points.titleName = so.at
+        .shift(-90, 13)
+        .attr("data-text", so.title || this.id)
+        .attr("data-text-class", "title-name");
+      this.points.titlePattern = so.at
+        .shift(-90, 20)
+        .attr(
+          "data-text",
+          this.context.config.name + " v" + this.context.config.version
+        )
+        .attr("data-text-class", "title-pattern fill-note");
       next();
     }
   }
-}
+};
