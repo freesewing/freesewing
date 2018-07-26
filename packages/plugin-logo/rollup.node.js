@@ -9,7 +9,8 @@ export default {
   input: "src/index.js",
   output: {
     file: "dist/node.js",
-    format: "cjs"
+    format: "es",
+    exports: "default"
   },
   plugins: [
     resolve({
