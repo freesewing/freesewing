@@ -26,7 +26,7 @@ On node.js:
 ```js
 import pattern from '@freesewing/pattern-brian'
 import theme from '@freesewing/plugin-theme'
-import theme from '@freesewing/plugin-designer'
+import designer from '@freesewing/plugin-designer'
 
 pattern.with(theme).with(designer);
 ```
