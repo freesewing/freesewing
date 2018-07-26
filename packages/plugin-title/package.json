@@ -18,7 +18,6 @@
   ],
   "main": "dist/node.js",
   "unpkg": "dist/browser.js",
-  "browser": "dist/browser.js",
   "module": "src/index.js",
   "scripts": {
     "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
