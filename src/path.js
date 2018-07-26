@@ -1,4 +1,5 @@
 import attributes from "./attributes";
+import { pathOffset } from "./utils";
 
 function path() {
   this.render = true;
@@ -67,6 +68,14 @@ path.prototype.asPathstring = function() {
   }
 
   return d;
+};
+
+/** Returns this path as a Bezier object */
+path.prototype.asBezier = function() {};
+
+/** Returns offset of this path as a new path */
+path.prototype.offset = function(distance) {
+  return pathOffset(this, distance);
 };
 
 export default path;

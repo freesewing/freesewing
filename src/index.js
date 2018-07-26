@@ -12,5 +12,7 @@ export default {
   point,
   path,
   snippet,
-  utils
+  utils,
+  patterns: {},
+  plugins: {}
 };

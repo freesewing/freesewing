@@ -106,9 +106,7 @@ pattern.prototype.loadPluginHooks = function(plugin) {
 
 pattern.prototype.loadPluginMacros = function(plugin) {
   for (let macro in plugin.macros) {
-    console.log("loading ", macro);
     if (typeof plugin.macros[macro] === "function") {
-      console.log(macro, "is a function");
       this.macro(macro, plugin.macros[macro]);
     }
   }
@@ -118,7 +116,6 @@ pattern.prototype.macro = function(key, method) {
   let name = macroName(key);
   this.on(name, method);
   for (let partId in this.parts) {
-    console.log(`Attaching macro ${name} to part ${partId}`);
     let part = this.parts[partId];
     part[name] = () => null;
     this.hooks.attach(name, part);

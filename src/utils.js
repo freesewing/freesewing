@@ -79,3 +79,33 @@ export function shorthand(part) {
     paperless
   };
 }
+/** Offsets a line by distance */
+export function offsetLine(from, to, distance) {
+  if (from.x === to.x && from.y === to.y) {
+    throw "Cannot offset line that starts and ends in the same point";
+  }
+
+  let angle = from.angle(to) + 90;
+  console.log("offsetting line from", from, "to", to, "angle is", angle);
+  return {
+    from: from.shift(angle, distance),
+    to: to.shift(angle, distance)
+  };
+}
+
+/** Offsets a path by distance */
+export function pathOffset(path, distance) {
+  let offset = [];
+  let current;
+  for (let i in path.ops) {
+    let op = path.ops[i];
+    if (op.type === "line") {
+      offset.push(offsetLine(current, op.to, distance));
+    } else if (op.type === "curve") {
+      //offset.push(utils.offsetLine(current, op.to);
+    }
+    current = op.to;
+  }
+  //let orig = new Bezier(
+  console.log(offset);
+}
