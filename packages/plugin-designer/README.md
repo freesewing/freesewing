@@ -52,7 +52,7 @@ Below is a screenshot of a part of the pattern and the browser console.
 
 You can see the extra markers on the pattern, and the info in the console.
 
-![Example of the designer plugin](https://github.com/freesewing/plugin-theme/raw/master/img/example.png)
+![Example of the designer plugin](https://github.com/freesewing/plugin-designer/raw/master/img/example.png)
 
 ## Install
 
