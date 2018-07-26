@@ -5,52 +5,44 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 
-# plugin-template
+# plugin-logo
 
-All the boilerplate you need to jump-start your freesewing plugin.
+A freesewing plugin to add our logo to your pattern.
 
-You can checkout or fork this repository to start building your own freesewing plugin.
+## Install
 
-## Getting stared
-
-First, clone this repository and `cd` into it:
+Install this plugin from NPM:
 
 ```sh
-git clone git@github.com:freesewing/plugin-template.git
-cd plugin-template
+npm install --save @freesewing/plugin-logo
 ```
 
-Then install all dependencies:
+## Usage
+
+To load this plugin, add it to your instantiated pattern:
+
+```js
+import pattern from '@freesewing/pattern-brian'
+import theme from '@freesewing/plugin-theme'
+import logo from '@freesewing/plugin-logo'
+
+pattern.with(theme).with(logo);
+```
+
+You now have the following snippets available:
+
+ - logo-xs
+ - logo-sm
+ - logo
+ - logo-lg
+ - logo-xl
+ - logo-xxl
+ 
+You can use them as such:
 
 ```sh
-npm install
+snippets.logo = new F.snippet('logo-sm', points.logo);
 ```
-
-## Writing your plugin
-
-You can now start adding your code to `src/index.js`. To build your code, run:
-
-```sh
-npm run build
-```
-
-Check the documentation or 
-[the list of freesewing plugins](https://github.com/freesewing/plugins#freesewing-plugins)
-for more info.
-
-## Publishing your plugin
-
-When you are getting somewhere, and you're thinking about publishing your own plugin,
-you'll want to update the following fields in your package.json file:
-
- - name
- - version
- - description
- - author
- - homepage
- - repository
- - bugs
- - keywords
 
 ## Where to get help
 
