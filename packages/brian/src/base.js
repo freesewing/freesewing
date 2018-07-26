@@ -1,10 +1,9 @@
 import * as F from "freesewing";
 
 var base = {
-  draft: function(part, context) {
+  draft: function(part) {
     let { measurements, options, points, paths, snippets } = F.utils.shorthand(
-      part,
-      context
+      part
     );
 
     // Center back (cb) vertical axis

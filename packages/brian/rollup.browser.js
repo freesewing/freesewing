@@ -9,7 +9,7 @@ import meta from "./package.json";
 export default {
   input: "src/index.js",
   output: {
-    file: "dist/brian.min.js",
+    file: "dist/browser.js",
     format: "iife",
     name: "freesewing.patterns.brian",
     globals: {

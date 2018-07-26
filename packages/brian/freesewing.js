@@ -1,1 +1,1 @@
-../freesewing/dist/freesewing.min.js
+../freesewing/dist/browser.js

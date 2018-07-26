@@ -2,7 +2,7 @@ import * as F from "freesewing";
 import base from "./base";
 
 var back = {
-  draft: function(part, context) {
+  draft: function(part) {
     let {
       measurements,
       options,
@@ -12,8 +12,8 @@ var back = {
       macro,
       final,
       paperless
-    } = F.utils.shorthand(part, context);
-    base.draft(part, context);
+    } = F.utils.shorthand(part);
+    base.draft(part);
 
     paths.seam = new F.path()
       .move(points.cbNeck)
@@ -33,24 +33,33 @@ var back = {
 
     // Final?
 
-    var decorate = function(part, context) {
+    var decorate = function(part) {
       macro("cutonfold", {
         from: points.cbNeck,
         to: points.cbHips,
         grainline: true
       });
+
+      points.title = new F.point(
+        points.armholePitch.x / 2,
+        points.armholePitch.y
+      );
+      macro("title", {
+        at: points.title,
+        nr: 2
+      });
     };
 
     if (final) {
-      decorate(part, context);
+      decorate(part);
     }
 
     // Paperless?
 
-    var gauge = function(part, context) {};
+    var gauge = function(part) {};
 
     if (paperless) {
-      gauge(part, context);
+      gauge(part);
     }
   }
 };

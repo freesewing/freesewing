@@ -24,6 +24,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
+    "watch": "rollup -w -c rollup.browser.js",
     "browserbuild": "rollup -c rollup.browser.js",
     "nodebuild": "rollup -c rollup.node.js",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild"
@@ -40,12 +41,15 @@
     ]
   },
   "dependencies": {
-    "@freesewing-plugins/macro-cutonfold": "0.3.2",
+    "@freesewing/plugin-cutonfold": "^0.5.0",
+    "@freesewing/plugin-logo": "^0.1.2",
+    "@freesewing/plugin-title": "^0.3.2",
     "freesewing": "^0.3.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^5.2.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
