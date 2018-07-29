@@ -1,4 +1,6 @@
 import point from "./point";
+import path from "./path";
+import Bezier from "bezier-js";
 
 /** Returns internal hook name for a macro */
 export function macroName(name) {
@@ -82,33 +84,76 @@ export function shorthand(part) {
     paperless
   };
 }
-/** Offsets a line by distance */
-export function offsetLine(from, to, distance) {
-  if (from.x === to.x && from.y === to.y) {
-    throw "Cannot offset line that starts and ends in the same point";
-  }
-
-  let angle = from.angle(to) + 90;
-  console.log("offsetting line from", from, "to", to, "angle is", angle);
-  return {
-    from: from.shift(angle, distance),
-    to: to.shift(angle, distance)
-  };
-}
 
 /** Offsets a path by distance */
 export function pathOffset(path, distance) {
   let offset = [];
   let current;
+  let start = false;
+  let closed = false;
   for (let i in path.ops) {
     let op = path.ops[i];
     if (op.type === "line") {
       offset.push(offsetLine(current, op.to, distance));
     } else if (op.type === "curve") {
-      //offset.push(utils.offsetLine(current, op.to);
+      let b = new Bezier(
+        { x: current.x, y: current.y },
+        { x: op.cp1.x, y: op.cp1.y },
+        { x: op.cp2.x, y: op.cp2.y },
+        { x: op.to.x, y: op.to.y }
+      );
+      for (let bezier of b.offset(distance)) {
+        offset.push(asPath(bezier));
+      }
+    } else if (op.type === "close") {
+      //    offset.push(offsetLine(current, start, distance));
+      closed = true;
     }
-    current = op.to;
+    if (op.to) current = op.to;
+    if (!start) start = current;
   }
-  //let orig = new Bezier(
-  console.log(offset);
+
+  return joinPaths(offset, closed);
+}
+
+/** Offsets a line by distance */
+export function offsetLine(from, to, distance) {
+  if (from.x === to.x && from.y === to.y) {
+    throw "Cannot offset line that starts and ends in the same point";
+  }
+  let angle = from.angle(to) - 90;
+
+  return new path()
+    .move(from.shift(angle, distance))
+    .line(to.shift(angle, distance));
+}
+
+/** Converts a bezier-js instance to a path */
+export function asPath(bezier) {
+  return new path()
+    .move(new point(bezier.points[0].x, bezier.points[0].y))
+    .curve(
+      new point(bezier.points[1].x, bezier.points[1].y),
+      new point(bezier.points[2].x, bezier.points[2].y),
+      new point(bezier.points[3].x, bezier.points[3].y)
+    );
+}
+
+/** Joins path segments together into one path */
+export function joinPaths(paths, closed = false) {
+  let joint = new path().move(paths[0].ops[0].to);
+  for (let p of paths) {
+    for (let op of p.ops) {
+      if (op.type === "curve") {
+        joint.curve(op.cp1, op.cp2, op.to);
+      } else if (op.type !== "close") {
+        joint.line(op.to);
+      } else {
+        throw "Close op not handled";
+      }
+    }
+  }
+  if (closed) joint.close();
+
+  return joint;
 }
