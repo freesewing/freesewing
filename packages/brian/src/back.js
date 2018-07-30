@@ -32,7 +32,8 @@ var back = {
       .curve(points.armholePitchCp1, points.armholePitchCp2, points.shoulder)
       .line(points.neck)
       .curve(points.neckCp1, points.cbNeck, points.cbNeck)
-      .close();
+      .close()
+      .attr("class", "fabric");
 
     // Final?
 
@@ -52,18 +53,7 @@ var back = {
       points.logo = points.title.shift(-90, 100);
       snippets.logo = new snippet("logo", points.logo);
 
-      console.log("path offset");
-      points.t1 = new point(100, 400);
-      points.t2 = new point(200, 400);
-      points.t3 = new point(200, 500);
-      points.t4 = new point(100, 500);
-      paths.test = new path()
-        .move(points.t1)
-        .line(points.t2)
-        .line(points.t3)
-        .line(points.t4)
-        .close();
-      paths.test.offset(10);
+      //paths.sa = paths.seam.offset(10).attr('class', 'fabric sa');
     };
 
     if (final) {

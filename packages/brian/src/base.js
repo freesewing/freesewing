@@ -15,7 +15,10 @@ var base = {
     } = freesewing.utils.shorthand(part);
 
     // Center back (cb) vertical axis
-    points.cbNeck = new point(0, options.backNeckCutout);
+    points.cbNeck = new point(
+      0,
+      options.backNeckCutout * measurements.neckCircumference
+    );
     points.cbShoulder = new point(
       0,
       (measurements.shoulderSlope - options.shoulderSlopeReduction) / 2
@@ -23,7 +26,8 @@ var base = {
     points.cbArmhole = new point(
       0,
       points.cbShoulder.y +
-        (measurements.bicepsCircumference + options.bicepsEase) *
+        measurements.bicepsCircumference *
+          (1 + options.bicepsEase) *
           options.armholeDepthFactor
     );
     points.cbWaist = new point(
@@ -37,7 +41,7 @@ var base = {
 
     // Side back (cb) vertical axis
     points.armhole = new point(
-      measurements.chestCircumference / 4 + options.chestEase / 4,
+      (measurements.chestCircumference * (1 + options.chestEase)) / 4,
       points.cbArmhole.y
     );
     points.waist = new point(points.armhole.x, points.cbWaist.y);
@@ -45,7 +49,8 @@ var base = {
 
     // Shoulder line
     points.neck = new point(
-      measurements.neckCircumference / options.collarFactor,
+      (measurements.neckCircumference * (1 + options.collarEase)) /
+        options.collarFactor,
       0
     );
     points.shoulder = new point(
