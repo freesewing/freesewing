@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-dimension",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A freesewing plugin to add dimensions to your (paperless) pattern",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
