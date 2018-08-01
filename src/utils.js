@@ -70,6 +70,7 @@ export function shorthand(part) {
   let final = part.context.settings.mode === "draft" ? true : false;
   let paperless = part.context.settings.paperless === true ? true : false;
   return {
+    sa: part.context.settings.sa || 0,
     measurements: part.context.settings.measurements || {},
     options: part.context.options || {},
     values: part.context.values || {},
@@ -156,4 +157,15 @@ export function joinPaths(paths, closed = false) {
   if (closed) joint.close();
 
   return joint;
+}
+
+/** Convert value in mm to cm or imperial units */
+export function units(value, to = "metric") {
+  if (to === "imperial") return round(value / 25.4) + '"';
+  else return round(value / 10) + "cm";
+}
+
+/** Rounds a value to 2 decimals */
+export function round(value) {
+  return Math.round(value * 1e2) / 1e2;
 }

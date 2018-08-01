@@ -1,5 +1,6 @@
 import attributes from "./attributes";
-import { pathOffset } from "./utils";
+import Bezier from "bezier-js";
+import { pathOffset, pathLength } from "./utils";
 
 function path() {
   this.render = true;
@@ -70,12 +71,47 @@ path.prototype.asPathstring = function() {
   return d;
 };
 
-/** Returns this path as a Bezier object */
-path.prototype.asBezier = function() {};
-
 /** Returns offset of this path as a new path */
 path.prototype.offset = function(distance) {
   return pathOffset(this, distance);
 };
 
+/** Returns the length of this path */
+path.prototype.length = function() {
+  let current, start;
+  let length = 0;
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "move") {
+      start = op.to;
+    } else if (op.type === "line") {
+      length += op.from.dist(op.to);
+    } else if (op.type === "curve") {
+      length += new Bezier(
+        { x: current.x, y: current.y },
+        { x: op.cp1.x, y: op.cp1.y },
+        { x: op.cp2.x, y: op.cp2.y },
+        { x: op.to.x, y: op.to.y }
+      ).length();
+    } else if (op.type === "close") {
+      length += current.dist(start);
+    }
+    if (op.to) current = op.to;
+  }
+
+  return length;
+};
+
+/** Returns the startpoint of the path */
+path.prototype.start = function() {
+  return this.ops[0].to;
+};
+
+/** Returns the endpoint of the path */
+path.prototype.end = function() {
+  let op = this.ops[this.ops.length - 1];
+
+  if (op.type === "close") return this.start();
+  else return op.to;
+};
 export default path;

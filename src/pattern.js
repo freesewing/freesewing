@@ -12,7 +12,8 @@ export default function pattern(config = false) {
     this.config = {
       parts: ["part"],
       measurements: {},
-      options: {}
+      options: {},
+      units: "metric"
     };
   } else {
     this.config = config;
@@ -49,7 +50,7 @@ export default function pattern(config = false) {
   this.options = {};
   if (typeof config.options !== "undefined" && config.options.length > 0) {
     for (let conf of config.options) {
-      if (conf.type === "percentage") this.options[conf.id] = conf.val / 100;
+      if (conf.type === "%") this.options[conf.id] = conf.val / 100;
       else this.options[conf.id] = conf.val;
     }
   }

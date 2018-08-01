@@ -1,15 +1,11 @@
 import attributes from "./attributes";
+import { round } from "./utils";
 
 function point(x, y) {
-  this.x = this.round(x);
-  this.y = this.round(y);
+  this.x = round(x);
+  this.y = round(y);
   this.attributes = new attributes();
 }
-
-/** Rounds a value to PRECISION */
-point.prototype.round = function(value) {
-  return Math.round(value * 1e2) / 1e2;
-};
 
 /** Radians to degrees */
 point.prototype.rad2deg = function(radians) {
@@ -33,7 +29,7 @@ point.prototype.dist = function(that) {
   let dx = this.x - that.x;
   let dy = this.y - that.y;
 
-  return this.round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)));
+  return round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)));
 };
 
 /** Returns slope of a line made by this point and that point */
