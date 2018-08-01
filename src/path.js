@@ -1,9 +1,12 @@
 import attributes from "./attributes";
+import point from "./point";
 import Bezier from "bezier-js";
 import { pathOffset, pathLength } from "./utils";
 
 function path() {
   this.render = true;
+  this.topLeft = false;
+  this.bottomRight = false;
   this.attributes = new attributes();
   this.ops = [];
 }
@@ -113,5 +116,40 @@ path.prototype.end = function() {
 
   if (op.type === "close") return this.start();
   else return op.to;
+};
+
+/** Finds the bounding box of a path */
+path.prototype.boundary = function() {
+  if (this.topLeft) return this; // Cached
+
+  let current;
+  let topLeft = new point(Infinity, Infinity);
+  let bottomRight = new point(-Infinity, -Infinity);
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "move" || op.type === "line") {
+      if (op.to.x < topLeft.x) topLeft.x = op.to.x;
+      if (op.to.y < topLeft.y) topLeft.y = op.to.y;
+      if (op.to.x > bottomRight.x) bottomRight.x = op.to.x;
+      if (op.to.y > bottomRight.y) bottomRight.y = op.to.y;
+    } else if (op.type === "curve") {
+      let bb = new Bezier(
+        { x: current.x, y: current.y },
+        { x: op.cp1.x, y: op.cp1.y },
+        { x: op.cp2.x, y: op.cp2.y },
+        { x: op.to.x, y: op.to.y }
+      ).bbox();
+      if (bb.x.min < topLeft.x) topLeft.x = bb.x.min;
+      if (bb.y.min < topLeft.y) topLeft.y = bb.y.min;
+      if (bb.x.max > bottomRight.x) bottomRight.x = bb.x.max;
+      if (bb.y.max > bottomRight.y) bottomRight.y = bb.y.max;
+    }
+    if (op.to) current = op.to;
+  }
+
+  this.topLeft = topLeft;
+  this.bottomRight = bottomRight;
+
+  return this;
 };
 export default path;

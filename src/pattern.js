@@ -1,3 +1,4 @@
+import attributes from "./attributes";
 import { macroName } from "./utils";
 import part from "./part";
 import point from "./point";
@@ -5,6 +6,7 @@ import path from "./path";
 import snippet from "./snippet";
 import svg from "./svg";
 import hooks from "./hooks";
+import pack from "bin-pack";
 
 export default function pattern(config = false) {
   // Allow no-config patterns
@@ -26,6 +28,8 @@ export default function pattern(config = false) {
     throw "Could not create pattern: You should define at least one part in your pattern config";
   }
 
+  this.width = false;
+  this.height = false;
   // Constructors
   this.point = point;
   this.path = path;
@@ -77,6 +81,7 @@ pattern.prototype.draft = function() {
 
 pattern.prototype.render = function() {
   this.hooks.attach("preRenderSvg", this.svg);
+
   this.hooks.attach("postRenderSvg", this.svg);
   //this.hooks.attach('insertText', this.svg);
 
@@ -121,4 +126,30 @@ pattern.prototype.macro = function(key, method) {
     part[name] = () => null;
     this.hooks.attach(name, part);
   }
+};
+
+/** Packs parts in a 2D space and sets pattern size */
+pattern.prototype.pack = function() {
+  let bins = [];
+  for (let key in this.parts) {
+    let part = this.parts[key];
+    if (part.render) {
+      part.stack();
+      bins.push({
+        id: part.id,
+        width: part.bottomRight.x - part.topLeft.x,
+        height: part.bottomRight.y - part.topLeft.y
+      });
+    }
+  }
+  let size = pack(bins, { inPlace: true });
+  for (let bin of bins) {
+    let part = this.parts[bin.id];
+    if (bin.x !== 0 || bin.y !== 0)
+      part.attr("transform", `translate (${bin.x}, ${bin.y})`);
+  }
+  this.width = size.width;
+  this.height = size.height;
+
+  return this;
 };

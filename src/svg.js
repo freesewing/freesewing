@@ -41,6 +41,11 @@ svg.prototype.insertText = function() {};
 /** Renders a draft object as SVG */
 svg.prototype.render = function(pattern) {
   this.preRenderSvg();
+  // this needs to run after the preSvgRender hook as it might add stuff
+  pattern.pack();
+  this.attributes.add("width", pattern.width + "mm");
+  this.attributes.add("height", pattern.height + "mm");
+  this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
   this.svg = this.prefix;
   this.svg += this.renderComments(this.header);
   this.svg += this.renderSvgTag(pattern);
@@ -204,11 +209,13 @@ svg.prototype.renderSnippet = function(snippet) {
 };
 
 /** Returns SVG code to open a group */
-svg.prototype.openGroup = function(id) {
+svg.prototype.openGroup = function(id, attributes = false) {
   let svg = this.nl() + this.nl();
   svg += `<!-- Start of group #${id} -->`;
   svg += this.nl();
-  svg += `<g id="${id}">`;
+  svg += `<g id="${id}"`;
+  if (attributes) svg += ` ${attributes.render()}`;
+  svg += ">";
   this.indent();
   this.openGroups.push(id);
 
