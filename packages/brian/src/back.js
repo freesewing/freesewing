@@ -4,6 +4,7 @@ import base from "./base";
 var back = {
   draft: function(part) {
     let {
+      sa,
       measurements,
       options,
       points,
@@ -36,8 +37,7 @@ var back = {
       .attr("class", "fabric");
 
     // Final?
-
-    var decorate = function(part) {
+    if (final) {
       macro("cutonfold", {
         from: points.cbNeck,
         to: points.cbHips,
@@ -53,19 +53,69 @@ var back = {
       points.logo = points.title.shift(-90, 100);
       snippets.logo = new snippet("logo", points.logo);
 
-      //paths.sa = paths.seam.offset(10).attr('class', 'fabric sa');
-    };
-
-    if (final) {
-      decorate(part);
+      if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
     }
 
     // Paperless?
 
-    var gauge = function(part) {};
-
     if (paperless) {
-      gauge(part);
+      macro("hd", {
+        from: points.cbHips,
+        to: points.hips,
+        y: points.hips.y + sa + 15
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.armhole,
+        x: points.hips.x + sa + 15
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.armholePitch,
+        x: points.hips.x + sa + 30
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.shoulder,
+        x: points.hips.x + sa + 45
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.neck,
+        x: points.hips.x + sa + 60
+      });
+      macro("vd", {
+        from: points.cbHips,
+        to: points.cbNeck,
+        x: points.cbHips.x - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.neck,
+        y: points.neck.y - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.shoulder,
+        y: points.neck.y - sa - 30
+      });
+      macro("ld", { from: points.neck, to: points.shoulder, d: sa + 15 });
+      macro("pd", {
+        path: new path()
+          .move(points.armhole)
+          .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
+          .curve(
+            points.armholeHollowCp1,
+            points.armholeHollowCp2,
+            points.armholePitch
+          )
+          .curve(
+            points.armholePitchCp1,
+            points.armholePitchCp2,
+            points.shoulder
+          ),
+        d: sa + 15
+      });
     }
   }
 };
