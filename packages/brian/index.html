@@ -11,7 +11,6 @@
     <script type="text/javascript" src="tmp/theme.js"></script>
     <script type="text/javascript" src="tmp/designer.js"></script>
   <script>
-console.log(this);
     var pattern = freesewing.patterns.brian
     .with(freesewing.plugins.theme)
     .with(freesewing.plugins.designer);
@@ -32,10 +31,6 @@ pattern.settings.mode = 'draft';
 pattern.settings.paperless = true;
 pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
-pattern.on('preRenderSvg', function(next) {
-  this.attributes.add('viewBox', '-40 -60 400 700');
-  next();
-});
     pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
 
