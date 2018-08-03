@@ -15,6 +15,8 @@ function part(id) {
   this.freeId = 0;
   this.topLeft = false;
   this.bottomRight = false;
+  this.width = false;
+  this.height = false;
   this.render = id.substr(0, 1) === "_" ? false : true;
   this.points.origin = new point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
@@ -77,6 +79,8 @@ part.prototype.boundary = function() {
   // Add 10mm margin
   this.topLeft = new point(topLeft.x - 10, topLeft.y - 10);
   this.bottomRight = new point(bottomRight.x + 10, bottomRight.y + 10);
+  this.width = this.bottomRight.x - this.topLeft.x;
+  this.height = this.bottomRight.y - this.topLeft.y;
 
   return this;
 };
@@ -100,4 +104,39 @@ part.prototype.attr = function(name, value) {
   return this;
 };
 
+/** Returns a (deep) clone of this part object */
+part.prototype.clone = function() {};
+
+/** Returns a deep copy of this */
+part.prototype.clone = function(id = false) {
+  let clone = new part(id);
+  clone.freeId = 0;
+  clone.width = this.width;
+  clone.height = this.height;
+  clone.attributes = this.attributes.clone();
+  clone.render = this.render;
+
+  if (!id) clone.id = this.id;
+  if (this.topLeft) clone.topLeft = this.topLeft.clone();
+  else clone.topLeft = false;
+  if (this.bottomRight) clone.bottomRight = this.bottomRight.clone();
+  else clone.bottomRight = false;
+
+  clone.points = {};
+  clone.paths = {};
+  clone.snippets = {};
+  for (let i in this.points) clone.points[i] = this.points[i].clone();
+  for (let i in this.paths) clone.paths[i] = this.paths[i].clone();
+  for (let i in this.snippets) clone.snippets[i] = this.snippets[i].clone();
+  for (let k in hooklib) clone[k] = hooklib[k];
+
+  clone.point = point;
+  clone.path = path;
+  clone.snippet = snippet;
+  clone.round = round;
+
+  clone.context = this.context;
+
+  return clone;
+};
 export default part;

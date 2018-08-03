@@ -41,8 +41,6 @@ svg.prototype.insertText = function() {};
 /** Renders a draft object as SVG */
 svg.prototype.render = function(pattern) {
   this.preRenderSvg();
-  // this needs to run after the preSvgRender hook as it might add stuff
-  pattern.pack();
   this.attributes.add("width", pattern.width + "mm");
   this.attributes.add("height", pattern.height + "mm");
   this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);

@@ -85,7 +85,7 @@ pattern.prototype.render = function() {
   this.hooks.attach("postRenderSvg", this.svg);
   //this.hooks.attach('insertText', this.svg);
 
-  return this.svg.render(this);
+  return this.pack().svg.render(this);
 };
 
 pattern.prototype.on = function(hook, method) {

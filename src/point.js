@@ -108,4 +108,12 @@ point.prototype.shiftOutwards = function(that, distance) {
   return this.shiftTowards(that, this.dist(that) + distance);
 };
 
+/** Returns a deep copy of this */
+point.prototype.clone = function() {
+  let clone = new point(this.x, this.y);
+  clone.attributes = this.attributes.clone();
+
+  return clone;
+};
+
 export default point;

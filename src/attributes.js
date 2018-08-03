@@ -48,4 +48,12 @@ attributes.prototype.renderIfPrefixIs = function(prefix = "") {
   return svg;
 };
 
+/** Returns a deep copy of this */
+attributes.prototype.clone = function() {
+  let clone = new attributes();
+  clone.list = JSON.parse(JSON.stringify(this.list));
+
+  return clone;
+};
+
 export default attributes;

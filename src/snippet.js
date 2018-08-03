@@ -9,4 +9,12 @@ function snippet(def, anchor, description = "") {
   return this;
 }
 
+/** Returns a deep copy of this */
+snippet.prototype.clone = function() {
+  let clone = new snippet(this.def, this.anchor.clone(), this.description);
+  clone.attributes = this.attributes.clone();
+
+  return clone;
+};
+
 export default snippet;

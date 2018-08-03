@@ -152,4 +152,30 @@ path.prototype.boundary = function() {
 
   return this;
 };
+
+/** Returns a deep copy of this */
+path.prototype.clone = function() {
+  let clone = new path();
+  clone.render = this.render = true;
+  if (this.topLeft) clone.topLeft = this.topLeft.clone();
+  else clone.topLeft = false;
+  if (this.bottomRight) clone.bottomRight = this.bottomRight.clone();
+  else clone.bottomRight = false;
+  clone.attributes = this.attributes.clone();
+  clone.ops = [];
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    clone.ops[i] = { type: op.type };
+    if (op.type === "move" || op.type === "line") {
+      clone.ops[i].to = op.to.clone();
+    } else if (op.type === "curve") {
+      clone.ops[i].to = op.to.clone();
+      clone.ops[i].cp1 = op.cp1.clone();
+      clone.ops[i].cp2 = op.cp2.clone();
+    }
+  }
+
+  return clone;
+};
+
 export default path;
