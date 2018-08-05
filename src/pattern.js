@@ -7,6 +7,7 @@ import snippet from "./snippet";
 import svg from "./svg";
 import hooks from "./hooks";
 import pack from "bin-pack";
+import store from "./store";
 
 export default function pattern(config = false) {
   // width and height properties
@@ -20,7 +21,7 @@ export default function pattern(config = false) {
   // Data containers
   this.settings = {};
   this.options = {};
-  this.store = {};
+  this.store = new store();
   this.parts = {};
 
   // Merge config with defaults
@@ -49,7 +50,7 @@ export default function pattern(config = false) {
     config: this.config,
     settings: this.settings,
     options: this.options,
-    values: this.values
+    store: this.store
   };
   this.part.prototype.context = this.context;
   this.part.prototype.macros = {};

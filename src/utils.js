@@ -73,7 +73,7 @@ export function shorthand(part) {
     sa: part.context.settings.sa || 0,
     measurements: part.context.settings.measurements || {},
     options: part.context.options || {},
-    values: part.context.values || {},
+    store: part.context.store,
     points: part.points || {},
     paths: part.paths || {},
     snippets: part.snippets || {},
