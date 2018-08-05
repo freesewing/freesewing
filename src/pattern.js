@@ -9,31 +9,9 @@ import hooks from "./hooks";
 import pack from "bin-pack";
 
 export default function pattern(config = false) {
-  // Allow no-config patterns
-  if (!config) {
-    this.config = {
-      parts: ["part"],
-      measurements: {},
-      options: {},
-      units: "metric"
-    };
-  } else {
-    this.config = config;
-  }
-  if (
-    typeof config.parts === "undefined" ||
-    !config.parts ||
-    config.parts.length < 1
-  ) {
-    throw "Could not create pattern: You should define at least one part in your pattern config";
-  }
-
+  // width and height properties
   this.width = false;
   this.height = false;
-  // Constructors
-  this.point = point;
-  this.path = path;
-  this.snippet = snippet;
 
   // Svg and hooks instance
   this.svg = new svg(this);
@@ -41,23 +19,31 @@ export default function pattern(config = false) {
 
   // Data containers
   this.settings = {};
-  this.values = {};
+  this.options = {};
+  this.store = {};
   this.parts = {};
 
-  // Context object to pass around
-  this.context = new Object();
-
-  for (let id of config.parts) {
-    this.parts[id] = new part(id);
-  }
-  this.context.parts = this.parts;
-  this.options = {};
-  if (typeof config.options !== "undefined" && config.options.length > 0) {
+  // Merge config with defaults
+  let defaults = {
+    measurements: {},
+    options: {},
+    units: "metric"
+  };
+  this.config = { ...defaults, ...config };
+  if (config.options.length > 0) {
     for (let conf of config.options) {
       if (conf.type === "%") this.options[conf.id] = conf.val / 100;
       else this.options[conf.id] = conf.val;
     }
   }
+
+  // Constructors
+  this.part = part;
+  this.point = point;
+  this.path = path;
+  this.snippet = snippet;
+
+  // Context object to inject in part prototype
   this.context = {
     parts: this.parts,
     config: this.config,
@@ -65,9 +51,8 @@ export default function pattern(config = false) {
     options: this.options,
     values: this.values
   };
-  for (let id of config.parts) {
-    this.parts[id].context = this.context;
-  }
+  this.part.prototype.context = this.context;
+  this.part.prototype.macros = {};
 }
 
 /**
@@ -119,13 +104,7 @@ pattern.prototype.loadPluginMacros = function(plugin) {
 };
 
 pattern.prototype.macro = function(key, method) {
-  let name = macroName(key);
-  this.on(name, method);
-  for (let partId in this.parts) {
-    let part = this.parts[partId];
-    part[name] = () => null;
-    this.hooks.attach(name, part);
-  }
+  this.part.prototype[macroName(key)] = method;
 };
 
 /** Packs parts in a 2D space and sets pattern size */

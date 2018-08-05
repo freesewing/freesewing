@@ -11,13 +11,14 @@ function part(id) {
   this.points = {};
   this.paths = {};
   this.snippets = {};
-  this.id = id;
+  //this.id = id;
   this.freeId = 0;
   this.topLeft = false;
   this.bottomRight = false;
   this.width = false;
   this.height = false;
-  this.render = id.substr(0, 1) === "_" ? false : true;
+  //this.render = id.substr(0, 1) === "_" ? false : true;
+  this.render = true;
   this.points.origin = new point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
 
