@@ -27,7 +27,7 @@ export default {
     { id: "sleeveLengthBonus", val:  0, min: -40, max:  80 },
 
     // Percentages
-    { id: "frontArmholeDeeper",    val:   1, type: "%" },
+    { id: "frontArmholeDeeper",    val: 0.5, type: "%" },
     { id: "chestEase",             val:   8, type: "%", min: -4, max:  20 },
     { id: "collarEase",            val: 3.5, type: "%", min:  0, max:  10 },
     { id: "bicepsEase",            val:  15, type: "%", min:  0, max: 100 },

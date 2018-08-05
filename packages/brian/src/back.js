@@ -41,7 +41,7 @@ var back = {
         points.armholePitch.x / 2,
         points.armholePitch.y
       );
-      macro("title", { at: points.title, nr: 2 });
+      macro("title", { at: points.title, nr: 2, title: "back" });
 
       points.logo = points.title.shift(-90, 100);
       snippets.logo = new snippet("logo", points.logo);
@@ -95,6 +95,7 @@ var back = {
       });
       macro("ld", { from: points.neck, to: points.shoulder, d: sa + 15 });
       macro("pd", {
+        id: "armholeLengthDimension",
         path: new path()
           .move(points.armhole)
           .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
@@ -111,6 +112,7 @@ var back = {
         d: sa + 15
       });
       macro("pd", {
+        id: "armholePitchDimension",
         path: new path()
           .move(points.armholePitch)
           .curve(

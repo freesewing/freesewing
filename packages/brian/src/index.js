@@ -18,6 +18,7 @@ var pattern = new freesewing.pattern({ version: version, ...config })
 
 pattern.draft = function() {
   pattern.parts.back = back.draft(pattern);
+  pattern.parts.front = front.draft(pattern);
   // Clone back
   //pattern.parts.front = pattern.parts.back.clone(pattern.parts.front.id);
   // Draft front
