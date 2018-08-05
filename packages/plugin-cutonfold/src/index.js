@@ -10,7 +10,7 @@ export default {
     }
   },
   macros: {
-    cutonfold: function(next, so) {
+    cutonfold: function(so) {
       let points = this.points;
       points.cutonfoldFrom = so.to.shiftTowards(so.from, 30);
       points.cutonfoldTo = so.from.shiftTowards(so.to, 30);
@@ -31,7 +31,6 @@ export default {
         .attr("marker-end", "url(#cutonfoldTo)")
         .attr("data-text", text)
         .attr("data-text-class", "center fill-note");
-      next();
     }
   }
 };
