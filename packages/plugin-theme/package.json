@@ -21,17 +21,18 @@
   "main": "dist/node.js",
   "unpkg": "dist/browser.js",
   "scripts": {
-    "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
-    "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
-    "major": "npm version major -m \":bookmark: v%s\" && npm run build",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "precommit": "npm run pretty && lint-staged",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'Error: no test specified' && exit 1",
     "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
-    "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.browser.js",
-    "nodebuild": "rollup -c rollup.node.js",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild"
+    "pretty": "npx prettier --write 'src/*.js'",
+    "lint": "eslint --fix 'src/*.js'",
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.theme",
+    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
+    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
     "hooks": {
