@@ -1,18 +1,12 @@
 import freesewing from "freesewing";
 
 var base = {
-  draft: function(part) {
-    let {
-      measurements,
-      options,
-      points,
-      paths,
-      snippets,
-      path,
-      point,
-      snippet,
-      utils
-    } = freesewing.utils.shorthand(part);
+  draft: function(pattern) {
+    let part = new pattern.part();
+    part.render = false;
+
+    // prettier-ignore
+    let {measurements, options, points, paths, snippets, path, point, snippet, utils, final, paperless, sa, macro} = freesewing.utils.shorthand(part);
 
     // Center back (cb) vertical axis
     points.cbNeck = new point(
@@ -106,6 +100,73 @@ var base = {
       points.cbNeck.y
     );
     points.neckCp2 = points.cbNeck.shift(0, points.cbNeck.dx(points.neck) / 2);
+
+    // Anchor point for sampling
+    points.gridAnchor = points.cbHips;
+
+    // Final?
+    if (final) {
+      macro("cutonfold", {
+        from: points.cbNeck,
+        to: points.cbHips,
+        grainline: true
+      });
+
+      points.title = new point(
+        points.armholePitch.x / 2,
+        points.armholePitch.y
+      );
+      points.logo = points.title.shift(-90, 100);
+      snippets.logo = new snippet("logo", points.logo);
+    }
+
+    // Paperless?
+
+    if (paperless) {
+      macro("hd", {
+        from: points.cbHips,
+        to: points.hips,
+        y: points.hips.y + sa + 15
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.armhole,
+        x: points.hips.x + sa + 15
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.armholePitch,
+        x: points.hips.x + sa + 30
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.shoulder,
+        x: points.hips.x + sa + 45
+      });
+      macro("vd", {
+        from: points.hips,
+        to: points.neck,
+        x: points.hips.x + sa + 60
+      });
+      macro("vd", {
+        from: points.cbHips,
+        to: points.cbNeck,
+        x: points.cbHips.x - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.neck,
+        y: points.neck.y - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.shoulder,
+        y: points.neck.y - sa - 30
+      });
+      macro("ld", { from: points.neck, to: points.shoulder, d: sa + 15 });
+    }
+
+    return part;
   }
 };
 

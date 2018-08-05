@@ -7,6 +7,7 @@ import pluginTitle from "@freesewing/plugin-title";
 import config from "../config/config";
 import { version } from "../package.json";
 
+import base from "./base";
 import back from "./back";
 import front from "./front";
 
@@ -17,6 +18,7 @@ var pattern = new freesewing.pattern({ version: version, ...config })
   .with(pluginTitle);
 
 pattern.draft = function() {
+  pattern.parts.base = base.draft(pattern);
   pattern.parts.back = back.draft(pattern);
   pattern.parts.front = front.draft(pattern);
   // Clone back

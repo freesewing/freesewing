@@ -13,7 +13,6 @@ var front = {
     points.armholePitch.x -= deeper;
     points.armholePitchCp1.x -= deeper;
 
-    paths.seam = null;
     paths.seam = new path()
       .move(points.cbNeck)
       .line(points.cbHips)
@@ -42,7 +41,6 @@ var front = {
 
     if (paperless) {
       macro("pd", {
-        id: "armholeLengthDimension",
         path: new path()
           .move(points.armhole)
           .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
@@ -59,7 +57,6 @@ var front = {
         d: sa + 15
       });
       macro("pd", {
-        id: "armholePitchDimension",
         path: new path()
           .move(points.armholePitch)
           .curve(

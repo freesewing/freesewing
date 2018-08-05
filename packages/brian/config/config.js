@@ -32,7 +32,7 @@ export default {
     { id: "collarEase",            val: 3.5, type: "%", min:  0, max:  10 },
     { id: "bicepsEase",            val:  15, type: "%", min:  0, max: 100 },
     { id: "backNeckCutout",        val:   5, type: "%", min:  2, max:   8 },
-    { id: "acrossBackFactor",      val:  96, type: "%", min: 93, max:  99 },
+    { id: "acrossBackFactor",      val:  97, type: "%", min: 93, max: 100 },
     { id: "armholeDepthFactor",    val:  50, type: "%", min: 35, max:  65 },
     { id: "sleevecapHeightFactor", val:  55, type: "%", min: 35, max:  75 }
   ]
