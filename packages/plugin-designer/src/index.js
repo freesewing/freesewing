@@ -25,7 +25,7 @@ export default {
               let type =
                 pointId.substr(0, 1) === "_" ? "point-hidden" : "point";
               let id = svg.getUid();
-              part.snippets[id] = new svg.pattern.snippet(
+              part.snippets[id] = new svg.pattern.Snippet(
                 type,
                 point,
                 `Point ${pointId} in part ${partId}`
@@ -99,7 +99,7 @@ export default {
                 if (op.type !== "close") {
                   decoratePathPoint(
                     svg.getUid(),
-                    svg.pattern.snippet,
+                    svg.pattern.Snippet,
                     part.snippets,
                     op.to,
                     op.type,
@@ -110,7 +110,7 @@ export default {
                 if (op.type === "curve") {
                   decoratePathPoint(
                     svg.getUid(),
-                    svg.pattern.snippet,
+                    svg.pattern.Snippet,
                     part.snippets,
                     op.cp1,
                     "handle",
@@ -119,7 +119,7 @@ export default {
                   );
                   decoratePathPoint(
                     svg.getUid(),
-                    svg.pattern.snippet,
+                    svg.pattern.Snippet,
                     part.snippets,
                     op.cp2,
                     "handle",
@@ -128,7 +128,7 @@ export default {
                   );
                   decorateCurveHandles(
                     svg.getUid(),
-                    svg.pattern.path,
+                    svg.pattern.Path,
                     part.paths,
                     current,
                     op.cp1,
@@ -137,7 +137,7 @@ export default {
                   );
                   decorateCurveHandles(
                     svg.getUid(),
-                    svg.pattern.path,
+                    svg.pattern.Path,
                     part.paths,
                     op.to,
                     op.cp2,
