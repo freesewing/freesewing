@@ -1,46 +1,45 @@
-import attributes from "./attributes";
-import point from "./point";
+import Attributes from "./attributes";
+import Point from "./point";
 import Bezier from "bezier-js";
-import { pathOffset, pathLength } from "./utils";
 
-function path() {
+function Path() {
   this.render = true;
   this.topLeft = false;
   this.bottomRight = false;
-  this.attributes = new attributes();
+  this.attributes = new Attributes();
   this.ops = [];
 }
 
 /** Adds a move operation to Point to */
-path.prototype.move = function(to) {
+Path.prototype.move = function(to) {
   this.ops.push({ type: "move", to });
 
   return this;
 };
 
 /** Adds a line operation to Point to */
-path.prototype.line = function(to) {
+Path.prototype.line = function(to) {
   this.ops.push({ type: "line", to });
 
   return this;
 };
 
 /** Adds a line operation to Point to */
-path.prototype.curve = function(cp1, cp2, to) {
+Path.prototype.curve = function(cp1, cp2, to) {
   this.ops.push({ type: "curve", cp1, cp2, to });
 
   return this;
 };
 
 /** Adds a close operation */
-path.prototype.close = function() {
+Path.prototype.close = function() {
   this.ops.push({ type: "close" });
 
   return this;
 };
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-path.prototype.attr = function(name, value, overwrite = false) {
+Path.prototype.attr = function(name, value, overwrite = false) {
   if (overwrite) this.attributes.set(name, value);
   else this.attributes.add(name, value);
 
@@ -48,7 +47,7 @@ path.prototype.attr = function(name, value, overwrite = false) {
 };
 
 /** Returns SVG pathstring for this path */
-path.prototype.asPathstring = function() {
+Path.prototype.asPathstring = function() {
   let d = "";
   for (let op of this.ops) {
     switch (op.type) {
@@ -76,12 +75,12 @@ path.prototype.asPathstring = function() {
 };
 
 /** Returns offset of this path as a new path */
-path.prototype.offset = function(distance) {
+Path.prototype.offset = function(distance) {
   return pathOffset(this, distance);
 };
 
 /** Returns the length of this path */
-path.prototype.length = function() {
+Path.prototype.length = function() {
   let current, start;
   let length = 0;
   for (let i in this.ops) {
@@ -107,12 +106,12 @@ path.prototype.length = function() {
 };
 
 /** Returns the startpoint of the path */
-path.prototype.start = function() {
+Path.prototype.start = function() {
   return this.ops[0].to;
 };
 
 /** Returns the endpoint of the path */
-path.prototype.end = function() {
+Path.prototype.end = function() {
   let op = this.ops[this.ops.length - 1];
 
   if (op.type === "close") return this.start();
@@ -120,12 +119,12 @@ path.prototype.end = function() {
 };
 
 /** Finds the bounding box of a path */
-path.prototype.boundary = function() {
+Path.prototype.boundary = function() {
   if (this.topLeft) return this; // Cached
 
   let current;
-  let topLeft = new point(Infinity, Infinity);
-  let bottomRight = new point(-Infinity, -Infinity);
+  let topLeft = new Point(Infinity, Infinity);
+  let bottomRight = new Point(-Infinity, -Infinity);
   for (let i in this.ops) {
     let op = this.ops[i];
     if (op.type === "move" || op.type === "line") {
@@ -155,8 +154,8 @@ path.prototype.boundary = function() {
 };
 
 /** Returns a deep copy of this */
-path.prototype.clone = function() {
-  let clone = new path();
+Path.prototype.clone = function() {
+  let clone = new Path();
   clone.render = this.render = true;
   if (this.topLeft) clone.topLeft = this.topLeft.clone();
   else clone.topLeft = false;
@@ -179,4 +178,77 @@ path.prototype.clone = function() {
   return clone;
 };
 
-export default path;
+/** Offsets a path by distance */
+function pathOffset(path, distance) {
+  let offset = [];
+  let current;
+  let start = false;
+  let closed = false;
+  for (let i in path.ops) {
+    let op = path.ops[i];
+    if (op.type === "line") {
+      offset.push(offsetLine(current, op.to, distance));
+    } else if (op.type === "curve") {
+      let b = new Bezier(
+        { x: current.x, y: current.y },
+        { x: op.cp1.x, y: op.cp1.y },
+        { x: op.cp2.x, y: op.cp2.y },
+        { x: op.to.x, y: op.to.y }
+      );
+      for (let bezier of b.offset(distance)) {
+        offset.push(asPath(bezier));
+      }
+    } else if (op.type === "close") {
+      //    offset.push(offsetLine(current, start, distance));
+      closed = true;
+    }
+    if (op.to) current = op.to;
+    if (!start) start = current;
+  }
+
+  return joinPaths(offset, closed);
+}
+
+/** Offsets a line by distance */
+function offsetLine(from, to, distance) {
+  if (from.x === to.x && from.y === to.y) {
+    throw "Cannot offset line that starts and ends in the same point";
+  }
+  let angle = from.angle(to) - 90;
+
+  return new Path()
+    .move(from.shift(angle, distance))
+    .line(to.shift(angle, distance));
+}
+
+/** Converts a bezier-js instance to a path */
+function asPath(bezier) {
+  return new Path()
+    .move(new Point(bezier.points[0].x, bezier.points[0].y))
+    .curve(
+      new Point(bezier.points[1].x, bezier.points[1].y),
+      new Point(bezier.points[2].x, bezier.points[2].y),
+      new Point(bezier.points[3].x, bezier.points[3].y)
+    );
+}
+
+/** Joins path segments together into one path */
+function joinPaths(paths, closed = false) {
+  let joint = new Path().move(paths[0].ops[0].to);
+  for (let p of paths) {
+    for (let op of p.ops) {
+      if (op.type === "curve") {
+        joint.curve(op.cp1, op.cp2, op.to);
+      } else if (op.type !== "close") {
+        joint.line(op.to);
+      } else {
+        throw "Close op not handled";
+      }
+    }
+  }
+  if (closed) joint.close();
+
+  return joint;
+}
+
+export default Path;

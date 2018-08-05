@@ -1,27 +1,27 @@
-import attributes from "./attributes";
+import Attributes from "./attributes";
 import { macroName } from "./utils";
-import part from "./part";
-import point from "./point";
-import path from "./path";
-import snippet from "./snippet";
-import svg from "./svg";
-import hooks from "./hooks";
+import Part from "./part";
+import Point from "./point";
+import Path from "./path";
+import Snippet from "./snippet";
+import Svg from "./svg";
+import Hooks from "./hooks";
 import pack from "bin-pack";
-import store from "./store";
+import Store from "./store";
 
-export default function pattern(config = false) {
+export default function Pattern(config = false) {
   // width and height properties
   this.width = false;
   this.height = false;
 
-  // Svg and hooks instance
-  this.svg = new svg(this);
-  this.hooks = new hooks();
+  // Hooks and Svg instance
+  this.hooks = new Hooks();
+  this.svg = new Svg(this);
 
   // Data containers
   this.settings = {};
   this.options = {};
-  this.store = new store();
+  this.store = new Store();
   this.parts = {};
 
   // Merge config with defaults
@@ -39,10 +39,10 @@ export default function pattern(config = false) {
   }
 
   // Constructors
-  this.part = part;
-  this.point = point;
-  this.path = path;
-  this.snippet = snippet;
+  this.Part = Part;
+  this.Point = Point;
+  this.Path = Path;
+  this.Snippet = Snippet;
 
   // Context object to inject in part prototype
   this.context = {
@@ -52,20 +52,20 @@ export default function pattern(config = false) {
     options: this.options,
     store: this.store
   };
-  this.part.prototype.context = this.context;
-  this.part.prototype.macros = {};
+  this.Part.prototype.context = this.context;
+  this.Part.prototype.macros = {};
 }
 
 /**
  * @throws Will throw an error when called
  */
-pattern.prototype.draft = function() {
+Pattern.prototype.draft = function() {
   throw Error(
     "You have to implement the draft() method in your Pattern instance."
   );
 };
 
-pattern.prototype.render = function() {
+Pattern.prototype.render = function() {
   this.hooks.attach("preRenderSvg", this.svg);
 
   this.hooks.attach("postRenderSvg", this.svg);
@@ -74,21 +74,21 @@ pattern.prototype.render = function() {
   return this.pack().svg.render(this);
 };
 
-pattern.prototype.on = function(hook, method) {
+Pattern.prototype.on = function(hook, method) {
   if (typeof this.hooks._hooks[hook] === "undefined") {
     this.hooks._hooks[hook] = [];
   }
   this.hooks._hooks[hook].push(method);
 };
 
-pattern.prototype.with = function(plugin) {
+Pattern.prototype.with = function(plugin) {
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
   return this;
 };
 
-pattern.prototype.loadPluginHooks = function(plugin) {
+Pattern.prototype.loadPluginHooks = function(plugin) {
   for (let hook of this.hooks.all) {
     if (typeof plugin.hooks[hook] === "function") {
       this.on(hook, plugin.hooks[hook]);
@@ -96,7 +96,7 @@ pattern.prototype.loadPluginHooks = function(plugin) {
   }
 };
 
-pattern.prototype.loadPluginMacros = function(plugin) {
+Pattern.prototype.loadPluginMacros = function(plugin) {
   for (let macro in plugin.macros) {
     if (typeof plugin.macros[macro] === "function") {
       this.macro(macro, plugin.macros[macro]);
@@ -104,12 +104,12 @@ pattern.prototype.loadPluginMacros = function(plugin) {
   }
 };
 
-pattern.prototype.macro = function(key, method) {
-  this.part.prototype[macroName(key)] = method;
+Pattern.prototype.macro = function(key, method) {
+  this.Part.prototype[macroName(key)] = method;
 };
 
 /** Packs parts in a 2D space and sets pattern size */
-pattern.prototype.pack = function() {
+Pattern.prototype.pack = function() {
   let bins = [];
   for (let key in this.parts) {
     let part = this.parts[key];

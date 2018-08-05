@@ -1,4 +1,4 @@
-function attributes(init = false) {
+function Attributes(init = false) {
   this.list = {};
   if (init) {
     for (let key in init) {
@@ -9,7 +9,7 @@ function attributes(init = false) {
 }
 
 /** Adds an attribute */
-attributes.prototype.add = function(name, value) {
+Attributes.prototype.add = function(name, value) {
   if (typeof this.list[name] === "undefined") {
     this.list[name] = [];
   }
@@ -19,20 +19,20 @@ attributes.prototype.add = function(name, value) {
 };
 
 /** Sets an attribute, overwriting existing value */
-attributes.prototype.set = function(name, value) {
+Attributes.prototype.set = function(name, value) {
   this.list[name] = [value];
 
   return this;
 };
 
 /** Retrieves an attribute */
-attributes.prototype.get = function(name) {
+Attributes.prototype.get = function(name) {
   if (typeof this.list[name] === "undefined") return false;
   else return this.list[name].join(" ");
 };
 
 /** Returns SVG code for attributes */
-attributes.prototype.render = function() {
+Attributes.prototype.render = function() {
   let svg = "";
   for (let key in this.list) {
     svg += ` ${key}="${this.list[key].join(" ")}"`;
@@ -43,7 +43,7 @@ attributes.prototype.render = function() {
 
 /** Returns SVG code for attributes with a fiven prefix
  * typically used for data-text*/
-attributes.prototype.renderIfPrefixIs = function(prefix = "") {
+Attributes.prototype.renderIfPrefixIs = function(prefix = "") {
   let svg = "";
   let prefixLen = prefix.length;
   for (let key in this.list) {
@@ -56,11 +56,11 @@ attributes.prototype.renderIfPrefixIs = function(prefix = "") {
 };
 
 /** Returns a deep copy of this */
-attributes.prototype.clone = function() {
-  let clone = new attributes();
+Attributes.prototype.clone = function() {
+  let clone = new Attributes();
   clone.list = JSON.parse(JSON.stringify(this.list));
 
   return clone;
 };
 
-export default attributes;
+export default Attributes;

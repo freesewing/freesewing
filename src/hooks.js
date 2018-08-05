@@ -1,9 +1,9 @@
-export default function hooks() {
+function Hooks() {
   this._hooks = {};
   this.all = ["preRenderSvg", "postRenderSvg", "insertText"];
 }
 
-hooks.prototype.list = function(hook) {
+Hooks.prototype.list = function(hook) {
   if (typeof this._hooks[hook] === "undefined") {
     return false;
   }
@@ -11,9 +11,11 @@ hooks.prototype.list = function(hook) {
   return this._hooks[hook];
 };
 
-hooks.prototype.attach = function(hook, obj) {
+Hooks.prototype.attach = function(hook, obj) {
   if (typeof this._hooks[hook] === "undefined") return;
   for (let func of this._hooks[hook]) {
     obj.pre(hook, func);
   }
 };
+
+export default Hooks;

@@ -1,13 +1,14 @@
 import { macroName } from "./utils";
-import point from "./point";
-import path from "./path";
-import snippet from "./snippet";
-import attributes from "./attributes";
+import Point from "./point";
+import Path from "./path";
+import Snippet from "./snippet";
+import Attributes from "./attributes";
 import * as hooklib from "hooks";
-import { round, units } from "./utils";
+import { units } from "./utils";
+import { round } from "./round";
 
-function part() {
-  this.attributes = new attributes();
+function Part() {
+  this.attributes = new Attributes();
   this.points = {};
   this.paths = {};
   this.snippets = {};
@@ -17,13 +18,13 @@ function part() {
   this.width = false;
   this.height = false;
   this.render = true;
-  this.points.origin = new point(0, 0);
+  this.points.origin = new Point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
 
   // Constructors so macros can create objects
-  this.point = point;
-  this.path = path;
-  this.snippet = snippet;
+  this.Point = Point;
+  this.Path = Path;
+  this.Snippet = Snippet;
 
   // Expose round method to plugins
   this.round = round;
@@ -31,7 +32,7 @@ function part() {
   return this;
 }
 
-part.prototype.macroRunner = function(args) {
+Part.prototype.macroRunner = function(args) {
   let self = this;
   let data = args;
   let method = function(key, data) {
@@ -47,23 +48,23 @@ part.prototype.macroRunner = function(args) {
 };
 
 /** Returns an unused ID */
-part.prototype.getUid = function() {
+Part.prototype.getUid = function() {
   this.freeId += 1;
 
   return "" + this.freeId;
 };
 
 /** Returns a value formatted for units provided in settings */
-part.prototype.units = function(value) {
+Part.prototype.units = function(value) {
   return units(value, this.context.settings.units);
 };
 
 /** Calculates the part's bounding box and sets it */
-part.prototype.boundary = function() {
+Part.prototype.boundary = function() {
   if (this.topLeft) return this; // Cached
 
-  let topLeft = new point(Infinity, Infinity);
-  let bottomRight = new point(-Infinity, -Infinity);
+  let topLeft = new Point(Infinity, Infinity);
+  let bottomRight = new Point(-Infinity, -Infinity);
   for (let key in this.paths) {
     let path = this.paths[key].boundary();
     if (path.render) {
@@ -76,8 +77,8 @@ part.prototype.boundary = function() {
     }
   }
   // Add 10mm margin
-  this.topLeft = new point(topLeft.x - 10, topLeft.y - 10);
-  this.bottomRight = new point(bottomRight.x + 10, bottomRight.y + 10);
+  this.topLeft = new Point(topLeft.x - 10, topLeft.y - 10);
+  this.bottomRight = new Point(bottomRight.x + 10, bottomRight.y + 10);
   this.width = this.bottomRight.x - this.topLeft.x;
   this.height = this.bottomRight.y - this.topLeft.y;
 
@@ -85,7 +86,7 @@ part.prototype.boundary = function() {
 };
 
 /** Stacks part so that its top left corner is in (0,0) */
-part.prototype.stack = function() {
+Part.prototype.stack = function() {
   if (this.topLeft.x === 0 && this.topLeft.y === 0) return this;
 
   this.boundary().attr(
@@ -97,7 +98,7 @@ part.prototype.stack = function() {
 };
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-part.prototype.attr = function(name, value, overwrite = false) {
+Part.prototype.attr = function(name, value, overwrite = false) {
   if (overwrite) this.attributes.set(name, value);
   else this.attributes.add(name, value);
 
@@ -105,7 +106,7 @@ part.prototype.attr = function(name, value, overwrite = false) {
 };
 
 /** Copies point/path/snippet data from part orig into this */
-part.prototype.copy = function(orig) {
+Part.prototype.copy = function(orig) {
   for (let type of ["points", "paths", "snippets"]) {
     for (let i in orig[type]) {
       if (typeof this[type][i] === "undefined") {
@@ -117,4 +118,4 @@ part.prototype.copy = function(orig) {
   return this;
 };
 
-export default part;
+export default Part;

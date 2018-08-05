@@ -1,20 +1,20 @@
-import attributes from "./attributes";
+import Attributes from "./attributes";
 
-function snippet(def, anchor, description = "") {
+function Snippet(def, anchor, description = "") {
   this.def = def;
   this.anchor = anchor;
   this.description = description;
-  this.attributes = new attributes();
+  this.attributes = new Attributes();
 
   return this;
 }
 
 /** Returns a deep copy of this */
-snippet.prototype.clone = function() {
-  let clone = new snippet(this.def, this.anchor.clone(), this.description);
+Snippet.prototype.clone = function() {
+  let clone = new Snippet(this.def, this.anchor.clone(), this.description);
   clone.attributes = this.attributes.clone();
 
   return clone;
 };
 
-export default snippet;
+export default Snippet;

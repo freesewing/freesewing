@@ -1,4 +1,4 @@
-function option(config) {
+function Option(config) {
   this.id = config.id;
   this.config = config;
   this.val = config.val;
@@ -6,4 +6,4 @@ function option(config) {
   return this;
 }
 
-export default option;
+export default Option;

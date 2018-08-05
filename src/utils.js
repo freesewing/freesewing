@@ -1,6 +1,7 @@
-import point from "./point";
-import path from "./path";
+import Point from "./point";
+import Path from "./path";
 import Bezier from "bezier-js";
+import { round } from "./round";
 
 /** Returns internal hook name for a macro */
 export function macroName(name) {
@@ -14,10 +15,10 @@ export function beamsCross(a1, a2, b1, b2) {
   if (slopeA === slopeB) return false; // Parallel lines
 
   if (a1.x === a2.x)
-    return new point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x));
+    return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x));
   // Vertical line A
   else if (b1.x === b2.x)
-    return new point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x));
+    return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x));
   // Vertical line B
   else {
     // Swap points if line A or B goes from right to left
@@ -39,7 +40,7 @@ export function beamsCross(a1, a2, b1, b2) {
     let x = (iB - iA) / (slopeA - slopeB);
     let y = slopeA * x + iA;
 
-    return new point(x, y);
+    return new Point(x, y);
   }
 }
 
@@ -59,8 +60,8 @@ export function linesCross(a1, a2, b1, b2) {
 /** Find where an (endless) line crosses a certain Y-value */
 export function beamCrossesY(from, to, y) {
   if (from.y === to.y) return false; // Horizontal line
-  let left = new point(-10, y);
-  let right = new point(10, y);
+  let left = new Point(-10, y);
+  let right = new Point(10, y);
 
   return beamsCross(from, to, left, right);
 }
@@ -78,94 +79,16 @@ export function shorthand(part) {
     paths: part.paths || {},
     snippets: part.snippets || {},
     macro: part.macroRunner(),
-    point: part.point,
-    path: part.path,
-    snippet: part.snippet,
+    Point: part.Point,
+    Path: part.Path,
+    Snippet: part.Snippet,
     final,
     paperless
   };
-}
-
-/** Offsets a path by distance */
-export function pathOffset(path, distance) {
-  let offset = [];
-  let current;
-  let start = false;
-  let closed = false;
-  for (let i in path.ops) {
-    let op = path.ops[i];
-    if (op.type === "line") {
-      offset.push(offsetLine(current, op.to, distance));
-    } else if (op.type === "curve") {
-      let b = new Bezier(
-        { x: current.x, y: current.y },
-        { x: op.cp1.x, y: op.cp1.y },
-        { x: op.cp2.x, y: op.cp2.y },
-        { x: op.to.x, y: op.to.y }
-      );
-      for (let bezier of b.offset(distance)) {
-        offset.push(asPath(bezier));
-      }
-    } else if (op.type === "close") {
-      //    offset.push(offsetLine(current, start, distance));
-      closed = true;
-    }
-    if (op.to) current = op.to;
-    if (!start) start = current;
-  }
-
-  return joinPaths(offset, closed);
-}
-
-/** Offsets a line by distance */
-export function offsetLine(from, to, distance) {
-  if (from.x === to.x && from.y === to.y) {
-    throw "Cannot offset line that starts and ends in the same point";
-  }
-  let angle = from.angle(to) - 90;
-
-  return new path()
-    .move(from.shift(angle, distance))
-    .line(to.shift(angle, distance));
-}
-
-/** Converts a bezier-js instance to a path */
-export function asPath(bezier) {
-  return new path()
-    .move(new point(bezier.points[0].x, bezier.points[0].y))
-    .curve(
-      new point(bezier.points[1].x, bezier.points[1].y),
-      new point(bezier.points[2].x, bezier.points[2].y),
-      new point(bezier.points[3].x, bezier.points[3].y)
-    );
-}
-
-/** Joins path segments together into one path */
-export function joinPaths(paths, closed = false) {
-  let joint = new path().move(paths[0].ops[0].to);
-  for (let p of paths) {
-    for (let op of p.ops) {
-      if (op.type === "curve") {
-        joint.curve(op.cp1, op.cp2, op.to);
-      } else if (op.type !== "close") {
-        joint.line(op.to);
-      } else {
-        throw "Close op not handled";
-      }
-    }
-  }
-  if (closed) joint.close();
-
-  return joint;
 }
 
 /** Convert value in mm to cm or imperial units */
 export function units(value, to = "metric") {
   if (to === "imperial") return round(value / 25.4) + '"';
   else return round(value / 10) + "cm";
-}
-
-/** Rounds a value to 2 decimals */
-export function round(value) {
-  return Math.round(value * 1e2) / 1e2;
 }

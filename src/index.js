@@ -1,17 +1,17 @@
-import pattern from "./pattern";
-import point from "./point";
-import path from "./path";
-import snippet from "./snippet";
+import Pattern from "./pattern";
+import Point from "./point";
+import Path from "./path";
+import Snippet from "./snippet";
 import * as utils from "./utils";
 
 import { version } from "../package.json";
 
 export default {
   version: version,
-  pattern,
-  point,
-  path,
-  snippet,
+  Pattern,
+  Point,
+  Path,
+  Snippet,
   utils,
   patterns: {},
   plugins: {}
