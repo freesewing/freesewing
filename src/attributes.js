@@ -18,6 +18,13 @@ attributes.prototype.add = function(name, value) {
   return this;
 };
 
+/** Sets an attribute, overwriting existing value */
+attributes.prototype.set = function(name, value) {
+  this.list[name] = [value];
+
+  return this;
+};
+
 /** Retrieves an attribute */
 attributes.prototype.get = function(name) {
   if (typeof this.list[name] === "undefined") return false;

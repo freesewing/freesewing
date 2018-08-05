@@ -115,7 +115,7 @@ pattern.prototype.pack = function() {
     if (part.render) {
       part.stack();
       bins.push({
-        id: part.id,
+        id: key,
         width: part.bottomRight.x - part.topLeft.x,
         height: part.bottomRight.y - part.topLeft.y
       });

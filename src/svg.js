@@ -54,7 +54,7 @@ svg.prototype.render = function(pattern) {
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
     if (part.render) {
-      this.svg += this.openGroup(part.id, part.attributes);
+      this.svg += this.openGroup(this.getUid(), part.attributes);
       this.svg += this.renderPart(part);
       this.svg += this.closeGroup();
     }

@@ -40,8 +40,9 @@ path.prototype.close = function() {
 };
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-path.prototype.attr = function(name, value) {
-  this.attributes.add(name, value);
+path.prototype.attr = function(name, value, overwrite = false) {
+  if (overwrite) this.attributes.set(name, value);
+  else this.attributes.add(name, value);
 
   return this;
 };

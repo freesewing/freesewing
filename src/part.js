@@ -6,18 +6,16 @@ import attributes from "./attributes";
 import * as hooklib from "hooks";
 import { round, units } from "./utils";
 
-function part(id) {
+function part() {
   this.attributes = new attributes();
   this.points = {};
   this.paths = {};
   this.snippets = {};
-  //this.id = id;
   this.freeId = 0;
   this.topLeft = false;
   this.bottomRight = false;
   this.width = false;
   this.height = false;
-  //this.render = id.substr(0, 1) === "_" ? false : true;
   this.render = true;
   this.points.origin = new point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
@@ -99,45 +97,24 @@ part.prototype.stack = function() {
 };
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-part.prototype.attr = function(name, value) {
-  this.attributes.add(name, value);
+part.prototype.attr = function(name, value, overwrite = false) {
+  if (overwrite) this.attributes.set(name, value);
+  else this.attributes.add(name, value);
 
   return this;
 };
 
-/** Returns a (deep) clone of this part object */
-part.prototype.clone = function() {};
+/** Copies point/path/snippet data from part orig into this */
+part.prototype.copy = function(orig) {
+  for (let type of ["points", "paths", "snippets"]) {
+    for (let i in orig[type]) {
+      if (typeof this[type][i] === "undefined") {
+        this[type][i] = orig[type][i].clone();
+      }
+    }
+  }
 
-/** Returns a deep copy of this */
-part.prototype.clone = function(id = false) {
-  let clone = new part(id);
-  clone.freeId = 0;
-  clone.width = this.width;
-  clone.height = this.height;
-  clone.attributes = this.attributes.clone();
-  clone.render = this.render;
-
-  if (!id) clone.id = this.id;
-  if (this.topLeft) clone.topLeft = this.topLeft.clone();
-  else clone.topLeft = false;
-  if (this.bottomRight) clone.bottomRight = this.bottomRight.clone();
-  else clone.bottomRight = false;
-
-  clone.points = {};
-  clone.paths = {};
-  clone.snippets = {};
-  for (let i in this.points) clone.points[i] = this.points[i].clone();
-  for (let i in this.paths) clone.paths[i] = this.paths[i].clone();
-  for (let i in this.snippets) clone.snippets[i] = this.snippets[i].clone();
-  for (let k in hooklib) clone[k] = hooklib[k];
-
-  clone.point = point;
-  clone.path = path;
-  clone.snippet = snippet;
-  clone.round = round;
-
-  clone.context = this.context;
-
-  return clone;
+  return this;
 };
+
 export default part;
