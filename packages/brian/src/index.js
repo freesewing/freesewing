@@ -11,7 +11,7 @@ import base from "./base";
 import back from "./back";
 import front from "./front";
 
-var pattern = new freesewing.pattern({ version: version, ...config })
+var pattern = new freesewing.Pattern({ version: version, ...config })
   .with(pluginCutonfold)
   .with(pluginDimension)
   .with(pluginLogo)

@@ -2,12 +2,12 @@ import freesewing from "freesewing";
 
 var back = {
   draft: function(pattern) {
-    let part = new pattern.part().copy(pattern.parts.base);
+    let part = new pattern.Part().copy(pattern.parts.base);
 
     // prettier-ignore
-    let {sa, point, points, path, paths, snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
+    let {sa, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
 
-    paths.seam = new path()
+    paths.seam = new Path()
       .move(points.cbNeck)
       .line(points.cbHips)
       .line(points.hips)
@@ -27,7 +27,7 @@ var back = {
     // Final?
     if (final) {
       macro("title", { at: points.title, nr: 2, title: "back" });
-      snippets.armholePitchNotch = new snippet("notch", points.armholePitch);
+      snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
       if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
     }
 
@@ -35,7 +35,7 @@ var back = {
     if (paperless) {
       macro("pd", {
         id: "armholeLengthDimension",
-        path: new path()
+        path: new Path()
           .move(points.armhole)
           .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
           .curve(
@@ -52,7 +52,7 @@ var back = {
       });
       macro("pd", {
         id: "armholePitchDimension",
-        path: new path()
+        path: new Path()
           .move(points.armholePitch)
           .curve(
             points.armholePitchCp1,

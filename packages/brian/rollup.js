@@ -23,12 +23,20 @@ export default {
     //  }
     //})
   ],
-  external: ["freesewing", "@freesewing/plugin-title"],
-  globals: {
-    freesewing: "freesewing",
-    "@freesewing/plugin-cutonfold": "freesewing.plugins.cutonfold",
-    "@freesewing/plugin-dimension": "freesewing.plugins.dimension",
-    "@freesewing/plugin-logo": "freesewing.plugins.logo",
-    "@freesewing/plugin-title": "freesewing.plugins.title"
+  external: [
+    "freesewing",
+    "@freesewing/plugin-cutonfold",
+    "@freesewing/plugin-dimension",
+    "@freesewing/plugin-logo",
+    "@freesewing/plugin-title"
+  ],
+  output: {
+    globals: {
+      freesewing: "freesewing",
+      "@freesewing/plugin-cutonfold": "freesewing.plugins.cutonfold",
+      "@freesewing/plugin-dimension": "freesewing.plugins.dimension",
+      "@freesewing/plugin-logo": "freesewing.plugins.logo",
+      "@freesewing/plugin-title": "freesewing.plugins.title"
+    }
   }
 };
