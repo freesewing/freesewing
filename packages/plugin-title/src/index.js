@@ -11,7 +11,6 @@ export default {
   },
   macros: {
     title: function(next, so) {
-      console.log("in plugin, so", so, this);
       so.at.attr("data-text", so.nr).attr("data-text-class", "title-nr note");
       this.points.titleName = so.at
         .shift(-90, 13)
