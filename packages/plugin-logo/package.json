@@ -26,9 +26,10 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.browser.js",
-    "nodebuild": "rollup -c rollup.node.js",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild"
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.logo",
+    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
+    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
     "hooks": {
