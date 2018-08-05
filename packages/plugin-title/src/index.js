@@ -10,7 +10,7 @@ export default {
     }
   },
   macros: {
-    title: function(next, so) {
+    title: function(so) {
       so.at.attr("data-text", so.nr).attr("data-text-class", "title-nr note");
       this.points.titleName = so.at
         .shift(-90, 13)
@@ -23,7 +23,6 @@ export default {
           this.context.config.name + " v" + this.context.config.version
         )
         .attr("data-text-class", "title-pattern fill-note");
-      next();
     }
   }
 };
