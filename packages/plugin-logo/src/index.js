@@ -1,4 +1,4 @@
-import logo from './logo';
+import logo from "./logo";
 import { name, version } from "../package.json";
 
 export default {
