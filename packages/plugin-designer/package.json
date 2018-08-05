@@ -17,9 +17,9 @@
     "design",
     "sewing patterns"
   ],
-  "main": "dist/node.js",
+  "main": "dist/index.js",
   "unpkg": "dist/browser.js",
-  "browser": "dist/browser.js",
+  "browser": "dist/index.mjs",
   "scripts": {
     "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
     "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
@@ -29,9 +29,10 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.browser.js",
-    "nodebuild": "rollup -c rollup.node.js",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild"
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.designer",
+    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
+    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
     "hooks": {
