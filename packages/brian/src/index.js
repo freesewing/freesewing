@@ -1,26 +1,27 @@
 import freesewing from "freesewing";
-import cutonfold from "@freesewing/plugin-cutonfold";
-import title from "@freesewing/plugin-title";
-import logo from "@freesewing/plugin-logo";
-import dimension from "@freesewing/plugin-dimension";
+import pluginCutonfold from "@freesewing/plugin-cutonfold";
+import pluginDimension from "@freesewing/plugin-dimension";
+import pluginLogo from "@freesewing/plugin-logo";
+import pluginTitle from "@freesewing/plugin-title";
+
 import config from "../config/config";
-import back from "./back";
-import front from "./front";
 import { version } from "../package.json";
 
+import back from "./back";
+import front from "./front";
+
 var pattern = new freesewing.pattern({ version: version, ...config })
-  .with(cutonfold)
-  .with(title)
-  .with(logo)
-  .with(dimension);
+  .with(pluginCutonfold)
+  .with(pluginDimension)
+  .with(pluginLogo)
+  .with(pluginTitle);
 
 pattern.draft = function() {
-  // Draft back
-  back.draft(pattern.parts.back);
+  pattern.parts.back = back.draft(pattern);
   // Clone back
-  pattern.parts.front = pattern.parts.back.clone(pattern.parts.front.id);
+  //pattern.parts.front = pattern.parts.back.clone(pattern.parts.front.id);
   // Draft front
-  front.draft(pattern.parts.front);
+  //front.draft(pattern.parts.front);
 
   return pattern;
 };

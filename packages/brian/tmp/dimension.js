@@ -1,0 +1,1 @@
+../../plugins/plugin-dimension/dist/browser.js

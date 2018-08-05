@@ -1,0 +1,1 @@
+../../plugins/plugin-cutonfold/dist/browser.js

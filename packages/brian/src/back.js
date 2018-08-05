@@ -2,7 +2,8 @@ import freesewing from "freesewing";
 import base from "./base";
 
 var back = {
-  draft: function(part) {
+  draft: function(pattern) {
+    let part = new pattern.part();
     // prettier-ignore
     let {sa, point, points, path, paths, snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
 

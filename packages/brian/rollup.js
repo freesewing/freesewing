@@ -23,8 +23,12 @@ export default {
     //  }
     //})
   ],
-  external: [
-    "freesewing",
-    path.resolve("./node_modules/freesewing/dist/index.mjs")
-  ]
+  external: ["freesewing", "@freesewing/plugin-title"],
+  globals: {
+    freesewing: "freesewing",
+    "@freesewing/plugin-cutonfold": "freesewing.plugins.cutonfold",
+    "@freesewing/plugin-dimension": "freesewing.plugins.dimension",
+    "@freesewing/plugin-logo": "freesewing.plugins.logo",
+    "@freesewing/plugin-title": "freesewing.plugins.title"
+  }
 };
