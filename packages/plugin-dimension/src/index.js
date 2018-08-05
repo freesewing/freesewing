@@ -93,28 +93,25 @@ export default {
   },
   macros: {
     // horizontal
-    hd: function(next, so) {
+    hd: function(so) {
       let from = hleader(so, "from", this);
       let to = hleader(so, "to", this);
       this.paths[this.getUid()] = drawDimension(from, to, so, this);
-      next();
     },
     // vertical
-    vd: function(next, so) {
+    vd: function(so) {
       let from = vleader(so, "from", this);
       let to = vleader(so, "to", this);
       this.paths[this.getUid()] = drawDimension(from, to, so, this);
-      next();
     },
     // linear
-    ld: function(next, so) {
+    ld: function(so) {
       let from = lleader(so, "from", this);
       let to = lleader(so, "to", this);
       this.paths[this.getUid()] = drawDimension(from, to, so, this);
-      next();
     },
     // path
-    pd: function(next, so) {
+    pd: function(so) {
       let dimension = so.path
         .offset(so.d)
         .attr("class", "note")
@@ -125,7 +122,6 @@ export default {
       drawLeader(this, so.path.start(), dimension.start());
       drawLeader(this, so.path.end(), dimension.end());
       this.paths[this.getUid()] = dimension;
-      next();
     }
   }
 };
