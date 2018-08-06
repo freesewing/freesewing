@@ -92,60 +92,61 @@ export default {
           if (part.render) {
             for (let pathId in part.paths) {
               let path = part.paths[pathId];
-              if (!path.render) return false;
-              let id;
-              let current;
-              for (let op of path.ops) {
-                if (op.type !== "close") {
-                  decoratePathPoint(
-                    svg.getUid(),
-                    svg.pattern.Snippet,
-                    part.snippets,
-                    op.to,
-                    op.type,
-                    pathId,
-                    partId
-                  );
+              if (path.render) {
+                let id;
+                let current;
+                for (let op of path.ops) {
+                  if (op.type !== "close") {
+                    decoratePathPoint(
+                      svg.getUid(),
+                      svg.pattern.Snippet,
+                      part.snippets,
+                      op.to,
+                      op.type,
+                      pathId,
+                      partId
+                    );
+                  }
+                  if (op.type === "curve") {
+                    decoratePathPoint(
+                      svg.getUid(),
+                      svg.pattern.Snippet,
+                      part.snippets,
+                      op.cp1,
+                      "handle",
+                      pathId,
+                      partId
+                    );
+                    decoratePathPoint(
+                      svg.getUid(),
+                      svg.pattern.Snippet,
+                      part.snippets,
+                      op.cp2,
+                      "handle",
+                      pathId,
+                      partId
+                    );
+                    decorateCurveHandles(
+                      svg.getUid(),
+                      svg.pattern.Path,
+                      part.paths,
+                      current,
+                      op.cp1,
+                      pathId,
+                      partId
+                    );
+                    decorateCurveHandles(
+                      svg.getUid(),
+                      svg.pattern.Path,
+                      part.paths,
+                      op.to,
+                      op.cp2,
+                      pathId,
+                      partId
+                    );
+                  }
+                  current = op.to;
                 }
-                if (op.type === "curve") {
-                  decoratePathPoint(
-                    svg.getUid(),
-                    svg.pattern.Snippet,
-                    part.snippets,
-                    op.cp1,
-                    "handle",
-                    pathId,
-                    partId
-                  );
-                  decoratePathPoint(
-                    svg.getUid(),
-                    svg.pattern.Snippet,
-                    part.snippets,
-                    op.cp2,
-                    "handle",
-                    pathId,
-                    partId
-                  );
-                  decorateCurveHandles(
-                    svg.getUid(),
-                    svg.pattern.Path,
-                    part.paths,
-                    current,
-                    op.cp1,
-                    pathId,
-                    partId
-                  );
-                  decorateCurveHandles(
-                    svg.getUid(),
-                    svg.pattern.Path,
-                    part.paths,
-                    op.to,
-                    op.cp2,
-                    pathId,
-                    partId
-                  );
-                }
-                current = op.to;
               }
             }
           }
