@@ -6,16 +6,31 @@ var front = {
     let part = new pattern.Part().copy(pattern.parts.back);
 
     // prettier-ignore
-    let {sa, point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = freesewing.utils.shorthand(part);
+    let {sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = freesewing.utils.shorthand(part);
 
+    // Cut arm a bit deeper at the front
     let deeper = measurements.chestCircumference * options.frontArmholeDeeper;
     points.armholeHollowCp2.x -= deeper;
     points.armholePitch.x -= deeper;
     points.armholePitchCp1.x -= deeper;
 
+    // Rename cb (center back) to cf (center front)
+    for (let key of ["Neck", "Shoulder", "Armhole", "Waist", "Hips"]) {
+      console.log("key is", key);
+      points[`cf${key}`] = new Point(
+        points[`cb${key}`].x,
+        points[`cb${key}`].y
+      );
+      delete points[`cb${key}`];
+    }
+
+    // Adapt neck opening
+    points.cfNeck = points.cfNeck.shift(-90, points.neck.x);
+    points.neckCp2 = points.cfNeck.shift(0, points.neck.x * 0.7);
+
     paths.seam = new Path()
-      .move(points.cbNeck)
-      .line(points.cbHips)
+      .move(points.cfNeck)
+      .line(points.cfHips)
       .line(points.hips)
       .line(points.armhole)
       .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
@@ -26,7 +41,7 @@ var front = {
       )
       .curve(points.armholePitchCp1, points.armholePitchCp2, points.shoulder)
       .line(points.neck)
-      .curve(points.neckCp1, points.cbNeck, points.cbNeck)
+      .curve(points.neckCp1, points.neckCp2, points.cfNeck)
       .close()
       .attr("class", "fabric");
 

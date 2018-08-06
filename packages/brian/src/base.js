@@ -99,7 +99,6 @@ var base = {
       points._tmp4,
       points.cbNeck.y
     );
-    points.neckCp2 = points.cbNeck.shift(0, points.cbNeck.dx(points.neck) / 2);
 
     // Anchor point for sampling
     points.gridAnchor = points.cbHips;
