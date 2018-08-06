@@ -155,7 +155,7 @@ Svg.prototype.renderPath = function(path) {
 
 Svg.prototype.renderPathText = function(path) {
   let text = path.attributes.get("data-text");
-  if (!text) return false;
+  if (!text) return "";
   let attributes = path.attributes.renderIfPrefixIs("data-text-");
   // Sadly aligning text along a patch can't be done in CSS only
   let offset = "";
