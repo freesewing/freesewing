@@ -105,64 +105,12 @@ var base = {
 
     // Final?
     if (final) {
-      macro("cutonfold", {
-        from: points.cbNeck,
-        to: points.cbHips,
-        grainline: true
-      });
-
       points.title = new Point(
         points.armholePitch.x / 2,
         points.armholePitch.y
       );
       points.logo = points.title.shift(-90, 100);
       snippets.logo = new Snippet("logo", points.logo);
-    }
-
-    // Paperless?
-
-    if (paperless) {
-      macro("hd", {
-        from: points.cbHips,
-        to: points.hips,
-        y: points.hips.y + sa + 15
-      });
-      macro("vd", {
-        from: points.hips,
-        to: points.armhole,
-        x: points.hips.x + sa + 15
-      });
-      macro("vd", {
-        from: points.hips,
-        to: points.armholePitch,
-        x: points.hips.x + sa + 30
-      });
-      macro("vd", {
-        from: points.hips,
-        to: points.shoulder,
-        x: points.hips.x + sa + 45
-      });
-      macro("vd", {
-        from: points.hips,
-        to: points.neck,
-        x: points.hips.x + sa + 60
-      });
-      macro("vd", {
-        from: points.cbHips,
-        to: points.cbNeck,
-        x: points.cbHips.x - sa - 15
-      });
-      macro("hd", {
-        from: points.cbNeck,
-        to: points.neck,
-        y: points.neck.y - sa - 15
-      });
-      macro("hd", {
-        from: points.cbNeck,
-        to: points.shoulder,
-        y: points.neck.y - sa - 30
-      });
-      macro("ld", { from: points.neck, to: points.shoulder, d: sa + 15 });
     }
 
     return part;

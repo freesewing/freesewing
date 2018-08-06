@@ -10,6 +10,7 @@ import { version } from "../package.json";
 import base from "./base";
 import back from "./back";
 import front from "./front";
+import sleeve from "./sleeve";
 
 var pattern = new freesewing.Pattern({ version: version, ...config })
   .with(pluginCutonfold)
@@ -21,10 +22,7 @@ pattern.draft = function() {
   pattern.parts.base = base.draft(pattern);
   pattern.parts.back = back.draft(pattern);
   pattern.parts.front = front.draft(pattern);
-  // Clone back
-  //pattern.parts.front = pattern.parts.back.clone(pattern.parts.front.id);
-  // Draft front
-  //front.draft(pattern.parts.front);
+  pattern.parts.sleeve = sleeve.draft(pattern);
 
   return pattern;
 };

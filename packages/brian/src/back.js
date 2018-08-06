@@ -1,31 +1,31 @@
 import freesewing from "freesewing";
+import * as shared from "./shared";
 
 var back = {
   draft: function(pattern) {
     let part = new pattern.Part().copy(pattern.parts.base);
 
     // prettier-ignore
-    let {sa, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
 
-    paths.seam = new Path()
-      .move(points.cbNeck)
-      .line(points.cbHips)
-      .line(points.hips)
-      .line(points.armhole)
-      .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
-      .curve(
-        points.armholeHollowCp1,
-        points.armholeHollowCp2,
-        points.armholePitch
-      )
-      .curve(points.armholePitchCp1, points.armholePitchCp2, points.shoulder)
-      .line(points.neck)
-      .curve(points.neckCp1, points.cbNeck, points.cbNeck)
-      .close()
-      .attr("class", "fabric");
+    // Seamline
+    paths.seam = shared.seamLine("back", points, Path);
+
+    // Store lengths to fit sleeve
+    store.set("backArmholeLength", shared.armholeLength(points, Path));
+    store.set(
+      "backShoulderToArmholePitch",
+      shared.shoulderToArmholePitch(points, Path)
+    );
 
     // Final?
     if (final) {
+      macro("cutonfold", {
+        from: points.cbNeck,
+        to: points.cbHips,
+        grainline: true
+      });
+
       macro("title", { at: points.title, nr: 2, title: "back" });
       snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
       if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
@@ -33,33 +33,26 @@ var back = {
 
     // Paperless?
     if (paperless) {
-      macro("pd", {
-        id: "armholeLengthDimension",
-        path: new Path()
-          .move(points.armhole)
-          .curve(points.armholeCp1, points.armholeCp2, points.armholeHollow)
-          .curve(
-            points.armholeHollowCp1,
-            points.armholeHollowCp2,
-            points.armholePitch
-          )
-          .curve(
-            points.armholePitchCp1,
-            points.armholePitchCp2,
-            points.shoulder
-          ),
-        d: sa + 15
+      shared.dimensions(macro, points, Path, sa);
+      macro("hd", {
+        from: points.cbHips,
+        to: points.hips,
+        y: points.hips.y + sa + 15
       });
-      macro("pd", {
-        id: "armholePitchDimension",
-        path: new Path()
-          .move(points.armholePitch)
-          .curve(
-            points.armholePitchCp1,
-            points.armholePitchCp2,
-            points.shoulder
-          ),
-        d: -15
+      macro("vd", {
+        from: points.cbHips,
+        to: points.cbNeck,
+        x: points.cbHips.x - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.neck,
+        y: points.neck.y - sa - 15
+      });
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.shoulder,
+        y: points.neck.y - sa - 30
       });
     }
 
