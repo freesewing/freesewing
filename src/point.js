@@ -99,6 +99,12 @@ Point.prototype.shiftTowards = function(that, distance) {
   return this.shift(this.angle(that), distance);
 };
 
+/** Checks whether this has the same coordinates as that */
+Point.prototype.sitsOn = function(that) {
+  if (this.x === that.x && this.y === that.y) return true;
+  else return false;
+};
+
 /** Shifts this point fraction of the distance towards that point */
 Point.prototype.shiftFractionTowards = function(that, fraction) {
   return this.shiftTowards(that, this.dist(that) * fraction);

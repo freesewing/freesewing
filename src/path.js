@@ -190,19 +190,29 @@ function pathOffset(path, distance) {
     if (op.type === "line") {
       offset.push(offsetLine(current, op.to, distance));
     } else if (op.type === "curve") {
+      // We need to avoid a control point sitting on top of start or end
+      // because that will break the offset in bezier-js
+      let cp1, cp2;
+      if (current.sitsOn(op.cp1)) {
+        cp1 = new Path()
+          .move(current)
+          .curve(op.cp1, op.cp2, op.to)
+          .shiftAlong(1);
+      } else cp1 = op.cp1;
+      if (op.cp2.sitsOn(op.to)) {
+        cp2 = new Path()
+          .move(op.to)
+          .curve(op.cp2, op.cp1, current)
+          .shiftAlong(1);
+      } else cp2 = op.cp2;
       let b = new Bezier(
         { x: current.x, y: current.y },
-        { x: op.cp1.x, y: op.cp1.y },
-        { x: op.cp2.x, y: op.cp2.y },
+        { x: cp1.x, y: cp1.y },
+        { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       );
-      for (let bezier of b.offset(distance)) {
-        offset.push(asPath(bezier));
-      }
-    } else if (op.type === "close") {
-      //    offset.push(offsetLine(current, start, distance));
-      closed = true;
-    }
+      for (let bezier of b.offset(distance)) offset.push(asPath(bezier));
+    } else if (op.type === "close") closed = true;
     if (op.to) current = op.to;
     if (!start) start = current;
   }
@@ -250,6 +260,55 @@ function joinPaths(paths, closed = false) {
   if (closed) joint.close();
 
   return joint;
+}
+
+/** Returns a point that lies at distance along this */
+Path.prototype.shiftAlong = function(distance) {
+  let len = 0;
+  let current;
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "line") {
+      let thisLen = op.to.dist(current);
+      if (len + thisLen > distance)
+        return current.shiftTowards(op.to, distance - len);
+      else len += thisLen;
+    } else if (op.type === "curve") {
+      let bezier = new Bezier(
+        { x: current.x, y: current.y },
+        { x: op.cp1.x, y: op.cp1.y },
+        { x: op.cp2.x, y: op.cp2.y },
+        { x: op.to.x, y: op.to.y }
+      );
+      let thisLen = bezier.length();
+      if (len + thisLen > distance)
+        return shiftAlongBezier(distance - len, bezier);
+      else len += thisLen;
+    }
+    current = op.to;
+  }
+  console.log("distance is", distance, "len is", len);
+  throw "Ran out of curve to shift along";
+};
+
+/** Returns a point that lies at distance along bezier */
+function shiftAlongBezier(distance, bezier) {
+  let steps = 100;
+  let maxLength = bezier.length();
+  if (distance > maxLength) throw "Cannot shift further than the bezier length";
+  let previous, next, t, thisLen;
+  let len = 0;
+  for (let i = 0; i <= steps; i++) {
+    t = i / steps;
+    next = bezier.get(t);
+    next = new Point(next.x, next.y);
+    if (i > 0) {
+      thisLen = next.dist(previous);
+      if (len + thisLen > distance) return next;
+      else len += thisLen;
+    }
+    previous = next;
+  }
 }
 
 export default Path;
