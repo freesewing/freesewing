@@ -1,6 +1,7 @@
 import Attributes from "./attributes";
 import Point from "./point";
 import Bezier from "bezier-js";
+import { round } from "./round";
 
 function Path() {
   this.render = true;
@@ -102,7 +103,7 @@ Path.prototype.length = function() {
     if (op.to) current = op.to;
   }
 
-  return length;
+  return round(length);
 };
 
 /** Returns the startpoint of the path */
