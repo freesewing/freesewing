@@ -21,7 +21,6 @@ function Part() {
   this.points.origin = new Point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
   // Keep track of attached hooks
-  this.attached = { debug: false };
 
   // Constructors so macros can create objects
   this.Point = Point;
@@ -30,6 +29,9 @@ function Part() {
 
   // Expose round method to plugins
   this.round = round;
+
+  let self = this;
+  this.hooks.attach("debug", self);
 
   return this;
 }
@@ -50,14 +52,7 @@ Part.prototype.macroRunner = function(args) {
 };
 
 /** Debug method, exposes debug hook */
-Part.prototype.debug = function(data) {
-  if (this.attached.debug === false) {
-    let self = this;
-    this.hooks.attach("debug", self);
-    this.attached.debug = true;
-    this.debug(data);
-  }
-};
+Part.prototype.debug = function(data) {};
 
 /** Returns an unused ID */
 Part.prototype.getUid = function() {
