@@ -1,7 +1,9 @@
 import style from "./lib/style";
-import { version } from "../package.json";
+import { version, name } from "../package.json";
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       this.attributes.add("freesewing:plugin-title", version);
@@ -11,10 +13,14 @@ export default {
   },
   macros: {
     title: function(so) {
-      so.at.attr("data-text", so.nr).attr("data-text-class", "title-nr note");
+      let overwrite = true;
+      if (so.append) overwrite = false;
+      so.at
+        .attr("data-text", so.nr, overwrite)
+        .attr("data-text-class", "title-nr note fill-note");
       this.points.titleName = so.at
         .shift(-90, 13)
-        .attr("data-text", so.title || this.id)
+        .attr("data-text", so.title)
         .attr("data-text-class", "title-name");
       this.points.titlePattern = so.at
         .shift(-90, 20)
