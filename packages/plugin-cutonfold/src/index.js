@@ -1,7 +1,9 @@
 import markers from "./lib/markers";
-import { version } from "../package.json";
+import { version, name } from "../package.json";
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       this.defs += markers;
@@ -21,7 +23,7 @@ export default {
         .shiftTowards(so.to, 50)
         .rotate(90, points.cutonfoldTo);
       let text = so.grainline ? "cutOnFoldAndGrainline" : "cutOnFold";
-      this.paths.cutonfold = new this.path()
+      this.paths.cutonfold = new this.Path()
         .move(points.cutonfoldFrom)
         .line(points.cutonfoldVia1)
         .line(points.cutonfoldVia2)
