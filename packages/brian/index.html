@@ -15,10 +15,20 @@
     <script type="text/javascript" src="tmp/theme.js"></script>
     <script type="text/javascript" src="tmp/designer.js"></script>
   <script>
+	var debug = {
+    name: 'debug',
+	  hooks: {
+	    debug: function debugPlugin(next, data) {
+        if(typeof data === 'string') console.log('%cDebug', 'color: #dd69dd',  data);
+        else  console.log(data);
+	      next();
+	    }
+	  }
+  };
     var pattern = freesewing.patterns.brian
-    .with(freesewing.plugins.theme)
-    .with(freesewing.plugins.designer);
-
+      .with(debug)
+      .with(freesewing.plugins.theme)
+      .with(freesewing.plugins.designer)
     pattern.settings.measurements = {
       bicepsCircumference:   335,
       centerBackNeckToWaist: 480,
@@ -31,28 +41,14 @@
       shoulderToWrist:       700,
       wristCircumference:    190
     };
-    //pattern.options.sleevecapQ1Offset   =  0.05;
-    //pattern.options.sleevecapQ2Offset   =  0.055;
-    //pattern.options.sleevecapQ3Offset   =  0.045;
-    //pattern.options.sleevecapQ4Offset   =  0.02;
-    //pattern.options.sleevecapQ1Spread1  =  0.06;
-    //pattern.options.sleevecapQ1Spread2  =  0.15;
-    //pattern.options.sleevecapQ2Spread1  =  0.15;
-    //pattern.options.sleevecapQ2Spread2  =  0.05;
-    //pattern.options.sleevecapQ3Spread1  =  0.05;
-    //pattern.options.sleevecapQ3Spread2  =  0.08;
-    //pattern.options.sleevecapQ4Spread1  =  0.07;
-    //pattern.options.sleevecapQ4Spread2  =  0.07;
-    //pattern.options.sleevecapTopSpread1 =  0.05;
-    //pattern.options.sleevecapTopSpread2 =  0.05;
+
 pattern.settings.mode = 'draft';
 pattern.settings.paperless = true;
-//pattern.settings.sa = 10;
+pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
     pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
 
-    console.log('Freesewing object',freesewing);
     function pointHover(evt) {
     var point = evt.target;
     var id = point.id;
