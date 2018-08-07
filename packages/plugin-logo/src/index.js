@@ -2,6 +2,8 @@ import logo from "./logo";
 import { name, version } from "../package.json";
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       this.attributes.add(`freesewing:${name}`, version);
