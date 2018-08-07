@@ -23,19 +23,46 @@ function Svg(pattern) {
     "http://freesewing.org/namespaces/freesewing"
   );
   this.attributes.add("freesewing", version);
-  this.hooks = pattern.hooks.all;
+  this.hooks = pattern.hooks;
   for (let k in hooklib) this[k] = hooklib[k];
-  for (let k in this.hooks) this.hook(k, this[k]);
+  for (let k in pattern.hooks.all) this.hook(k, this[k]);
+  // Keep track of attached hooks
+  this.attached = {
+    preRenderSvg: false,
+    postRenderSvg: false,
+    insertText: false
+  };
 }
 
 /** Method to attach preRenderSvg hooks on */
-Svg.prototype.preRenderSvg = function() {};
+Svg.prototype.preRenderSvg = function() {
+  if (this.attached.preRenderSvg === false) {
+    let self = this;
+    this.hooks.attach("preRenderSvg", self);
+    this.attached.preRenderSvg = true;
+    this.preRenderSvg();
+  }
+};
 
 /** Method to attach postRenderSvg hooks on */
-Svg.prototype.postRenderSvg = function() {};
+Svg.prototype.postRenderSvg = function() {
+  if (this.attached.postRenderSvg === false) {
+    let self = this;
+    this.hooks.attach("postRenderSvg", self);
+    this.attached.postRenderSvg = true;
+    this.postRenderSvg();
+  }
+};
 
 /** Method to attach insertText hooks on */
-Svg.prototype.insertText = function() {};
+Svg.prototype.insertText = function(data) {
+  if (this.attached.inserText === false) {
+    let self = this;
+    this.hooks.attach("insertText", self);
+    this.attached.insertText = true;
+    this.insertText(data);
+  }
+};
 
 /** Renders a draft object as SVG */
 Svg.prototype.render = function(pattern) {

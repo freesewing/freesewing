@@ -54,6 +54,7 @@ export default function Pattern(config = false) {
   };
   this.Part.prototype.context = this.context;
   this.Part.prototype.macros = {};
+  this.Part.prototype.hooks = this.hooks;
 }
 
 /**
@@ -66,9 +67,9 @@ Pattern.prototype.draft = function() {
 };
 
 Pattern.prototype.render = function() {
-  this.hooks.attach("preRenderSvg", this.svg);
+  //this.hooks.attach("preRenderSvg", this.svg);
 
-  this.hooks.attach("postRenderSvg", this.svg);
+  //this.hooks.attach("postRenderSvg", this.svg);
   //this.hooks.attach('insertText', this.svg);
 
   return this.pack().svg.render(this);

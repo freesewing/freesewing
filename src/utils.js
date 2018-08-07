@@ -83,7 +83,8 @@ export function shorthand(part) {
     Path: part.Path,
     Snippet: part.Snippet,
     final,
-    paperless
+    paperless,
+    debug: part.debug
   };
 }
 
