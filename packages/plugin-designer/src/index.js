@@ -1,8 +1,10 @@
 import script from "./lib/script";
 import snippets from "./lib/snippets";
-import { version } from "../package.json";
+import { version, name } from "../package.json";
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       // Add script and snippets
@@ -156,7 +158,8 @@ export default {
       // Decorate pattern
       decoratePoints(this);
       decoratePaths(this);
-      console.log("Designer plugin: Here's the pattern object:", this.pattern);
+      this.debug("plugin-designer | Pattern object");
+      this.debug(this.pattern);
       next();
     }
   }
