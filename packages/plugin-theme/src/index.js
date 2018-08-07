@@ -2,9 +2,11 @@ import style from "./lib/style";
 import notch from "./lib/notch";
 import gridMetric from "./lib/grid-metric";
 import gridImperial from "./lib/grid-imperial";
-import { version } from "../package.json";
+import { version, name } from "../package.json";
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       this.style += style;
