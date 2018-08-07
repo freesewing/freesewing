@@ -16,7 +16,7 @@ export default function Pattern(config = false) {
 
   // Hooks and Svg instance
   this.hooks = new Hooks();
-  this.svg = new Svg(this);
+  Svg.prototype.hooks = this.hooks;
 
   // Data containers
   this.settings = {};
@@ -66,11 +66,11 @@ Pattern.prototype.draft = function() {
   );
 };
 
-Pattern.prototype.render = function() {
-  //this.hooks.attach("preRenderSvg", this.svg);
+/** Debug method, exposes debug hook */
+Part.prototype.debug = function(data) {};
 
-  //this.hooks.attach("postRenderSvg", this.svg);
-  //this.hooks.attach('insertText', this.svg);
+Pattern.prototype.render = function() {
+  this.svg = new Svg(this);
 
   return this.pack().svg.render(this);
 };
@@ -83,6 +83,7 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
+  console.log(plugin);
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
