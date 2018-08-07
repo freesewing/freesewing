@@ -8,6 +8,7 @@ import Svg from "./svg";
 import Hooks from "./hooks";
 import pack from "bin-pack";
 import Store from "./store";
+import Debug from "./debug";
 
 export default function Pattern(config = false) {
   // width and height properties
@@ -67,7 +68,9 @@ Pattern.prototype.draft = function() {
 };
 
 /** Debug method, exposes debug hook */
-Part.prototype.debug = function(data) {};
+Pattern.prototype.debug = function(data) {
+  this.dbg.debug(data);
+};
 
 Pattern.prototype.render = function() {
   this.svg = new Svg(this);
@@ -83,7 +86,9 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
-  console.log(plugin);
+  this.dbg = new Debug(this.hooks);
+
+  this.debug(`Plugin: ${plugin.name} v${plugin.version}`);
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
