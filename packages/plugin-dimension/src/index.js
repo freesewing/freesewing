@@ -1,8 +1,8 @@
 import markers from "./lib/markers";
-import { version } from "../package.json";
+import { version, name } from "../package.json";
 
 function drawDimension(from, to, so, self) {
-  return new self.path()
+  return new self.Path()
     .move(from)
     .line(to)
     .attr("class", "note")
@@ -12,38 +12,38 @@ function drawDimension(from, to, so, self) {
     .attr("data-text-class", "fill-note center");
 }
 
-function drawLeader(self, from, to) {
-  self.paths[self.getUid()] = new self.path()
+function drawLeader(self, from, to, id) {
+  self.paths[id] = new self.Path()
     .move(from)
     .line(to)
     .attr("class", "note dotted");
 }
 
-function hleader(so, type, self) {
+function hleader(so, type, self, id) {
   let point;
   if (typeof so.y === "undefined" || so[type].y === so.y) {
     point = so[type];
   } else {
-    point = new self.point(so[type].x, so.y);
-    drawLeader(self, so[type], point);
+    point = new self.Point(so[type].x, so.y);
+    drawLeader(self, so[type], point, id);
   }
 
   return point;
 }
 
-function vleader(so, type, self) {
+function vleader(so, type, self, id) {
   let point;
   if (typeof so.x === "undefined" || so[type].x === so.x) {
     point = so[type];
   } else {
-    point = new self.point(so.x, so[type].y);
-    drawLeader(self, so[type], point);
+    point = new self.Point(so.x, so[type].y);
+    drawLeader(self, so[type], point, id);
   }
 
   return point;
 }
 
-function lleader(so, type, self) {
+function lleader(so, type, self, id) {
   let point, rot, other;
   if (type === "from") {
     rot = 1;
@@ -55,35 +55,17 @@ function lleader(so, type, self) {
   if (typeof so.d === "undefined") {
     point = so[type];
   } else {
-    point = new self.point(so.x, so[type].y);
+    point = new self.Point(so.x, so[type].y);
     point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type]);
-    drawLeader(self, so[type], point);
-  }
-
-  return point;
-}
-
-function pleader(so, type, self) {
-  let point, rot, other;
-  if (type === "from") {
-    rot = 1;
-    other = "to";
-  } else {
-    rot = -1;
-    other = "from";
-  }
-  if (typeof so.d === "undefined") {
-    point = so[type];
-  } else {
-    point = new self.point(so.x, so[type].y);
-    point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type]);
-    drawLeader(self, so[type], point);
+    drawLeader(self, so[type], point, id);
   }
 
   return point;
 }
 
 export default {
+  name: name,
+  version: version,
   hooks: {
     preRenderSvg: function(next) {
       this.defs += markers;
@@ -94,21 +76,24 @@ export default {
   macros: {
     // horizontal
     hd: function(so) {
-      let from = hleader(so, "from", this);
-      let to = hleader(so, "to", this);
-      this.paths[this.getUid()] = drawDimension(from, to, so, this);
+      let id = so.id ? so.id : this.getUid();
+      let from = hleader(so, "from", this, id + "_ls");
+      let to = hleader(so, "to", this, id + "_le");
+      this.paths[id] = drawDimension(from, to, so, this);
     },
     // vertical
     vd: function(so) {
-      let from = vleader(so, "from", this);
-      let to = vleader(so, "to", this);
-      this.paths[this.getUid()] = drawDimension(from, to, so, this);
+      let id = so.id ? so.id : this.getUid();
+      let from = vleader(so, "from", this, id + "_ls");
+      let to = vleader(so, "to", this, id + "_le");
+      this.paths[id] = drawDimension(from, to, so, this);
     },
     // linear
     ld: function(so) {
-      let from = lleader(so, "from", this);
-      let to = lleader(so, "to", this);
-      this.paths[this.getUid()] = drawDimension(from, to, so, this);
+      let id = so.id ? so.id : this.getUid();
+      let from = lleader(so, "from", this, id + "_ls");
+      let to = lleader(so, "to", this, id + "_le");
+      this.paths[id] = drawDimension(from, to, so, this);
     },
     // path
     pd: function(so) {
@@ -119,9 +104,10 @@ export default {
         .attr("marker-end", "url(#dimensionTo)")
         .attr("data-text", so.text || this.units(so.path.length()))
         .attr("data-text-class", "fill-note center");
-      drawLeader(this, so.path.start(), dimension.start());
-      drawLeader(this, so.path.end(), dimension.end());
-      this.paths[this.getUid()] = dimension;
+      let id = so.id ? so.id : this.getUid();
+      drawLeader(this, so.path.start(), dimension.start(), id + "_ls");
+      drawLeader(this, so.path.end(), dimension.end(), id + "_le");
+      this.paths[id] = dimension;
     }
   }
 };
