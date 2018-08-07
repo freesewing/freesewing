@@ -179,6 +179,11 @@ Path.prototype.clone = function() {
   return clone;
 };
 
+/** Joins this with that path, closes them if wanted */
+Path.prototype.join = function(that, closed) {
+  return joinPaths([this, that], closed);
+};
+
 /** Offsets a path by distance */
 function pathOffset(path, distance) {
   let offset = [];
@@ -188,7 +193,8 @@ function pathOffset(path, distance) {
   for (let i in path.ops) {
     let op = path.ops[i];
     if (op.type === "line") {
-      offset.push(offsetLine(current, op.to, distance));
+      let segment = offsetLine(current, op.to, distance);
+      if (segment) offset.push(segment);
     } else if (op.type === "curve") {
       // We need to avoid a control point sitting on top of start or end
       // because that will break the offset in bezier-js
@@ -222,9 +228,8 @@ function pathOffset(path, distance) {
 
 /** Offsets a line by distance */
 function offsetLine(from, to, distance) {
-  if (from.x === to.x && from.y === to.y) {
-    throw "Cannot offset line that starts and ends in the same point";
-  }
+  // Cannot offset line that starts and ends in the same point
+  if (from.x === to.x && from.y === to.y) return false;
   let angle = from.angle(to) - 90;
 
   return new Path()
