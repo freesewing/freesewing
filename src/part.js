@@ -1,10 +1,9 @@
-import { macroName } from "./utils";
+import { macroName, units } from "./utils";
 import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
 import * as hooklib from "hooks";
-import { units } from "./utils";
 import { round } from "./round";
 
 function Part() {
@@ -36,7 +35,7 @@ function Part() {
   return this;
 }
 
-Part.prototype.macroRunner = function(args) {
+Part.prototype.macroClosure = function(args) {
   let self = this;
   let data = args;
   let method = function(key, data) {
@@ -46,6 +45,15 @@ Part.prototype.macroRunner = function(args) {
     } else {
       console.log(`Warning: ${macro} is not registered`);
     }
+  };
+
+  return method;
+};
+
+Part.prototype.debugClosure = function() {
+  let self = this;
+  let method = function(d, e, b, u, g) {
+    self.debug(d, e, b, u, g);
   };
 
   return method;
@@ -62,8 +70,13 @@ Part.prototype.getUid = function() {
 };
 
 /** Returns a value formatted for units provided in settings */
-Part.prototype.units = function(value) {
-  return units(value, this.context.settings.units);
+Part.prototype.unitsClosure = function(value) {
+  let self = this;
+  let method = function(value) {
+    return units(value, self.context.settings.units);
+  };
+
+  return method;
 };
 
 /** Calculates the part's bounding box and sets it */
@@ -123,6 +136,33 @@ Part.prototype.copy = function(orig) {
   }
 
   return this;
+};
+
+Part.prototype.units = function(input) {
+  return units(input, this.context.settings.units);
+};
+
+/** Returns an object with shorthand access for pattern design */
+Part.prototype.shorthand = function() {
+  let final = this.context.settings.mode === "draft" ? true : false;
+  let paperless = this.context.settings.paperless === true ? true : false;
+  return {
+    sa: this.context.settings.sa || 0,
+    measurements: this.context.settings.measurements || {},
+    options: this.context.options || {},
+    store: this.context.store,
+    points: this.points || {},
+    paths: this.paths || {},
+    snippets: this.snippets || {},
+    macro: this.macroClosure(),
+    units: this.unitsClosure(),
+    Point: this.Point,
+    Path: this.Path,
+    Snippet: this.Snippet,
+    final,
+    paperless,
+    debug: this.debugClosure()
+  };
 };
 
 export default Part;
