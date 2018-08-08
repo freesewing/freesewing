@@ -296,6 +296,11 @@ Path.prototype.shiftAlong = function(distance) {
   throw "Ran out of curve to shift along";
 };
 
+/** Returns a point that lies at fraction along this */
+Path.prototype.shiftFractionAlong = function(fraction) {
+  return this.shiftAlong(this.length() * fraction);
+};
+
 /** Returns a point that lies at distance along bezier */
 function shiftAlongBezier(distance, bezier) {
   let steps = 100;
