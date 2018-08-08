@@ -27,7 +27,7 @@ var back = {
       });
 
       macro("title", { at: points.title, nr: 2, title: "back" });
-      snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
+      snippets.armholePitchNotch = new Snippet("bnotch", points.armholePitch);
       if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
     }
 

@@ -177,6 +177,8 @@ var sleeve = {
     );
     points.wristLeft = points.wristRight.rotate(180, points.centerWrist);
 
+    // Paths
+    paths.sleevecap.render = false;
     paths.seam = new Path()
       .move(points.leftBiceps)
       .move(points.wristLeft)
@@ -191,13 +193,27 @@ var sleeve = {
 
     // Final?
     if (final) {
-      points.title = points.centerBiceps.shiftFractionTowards(
+      points.logo = points.centerBiceps.shiftFractionTowards(
         points.centerWrist,
         0.3
       );
-      macro("title", { at: points.title, nr: 3, title: "sleeve" });
-      //snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
-      //if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      snippets.logo = new Snippet("logo", points.logo);
+      macro("title", { at: points.centerBiceps, nr: 3, title: "sleeve" });
+
+      points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5);
+      points.frontNotch = paths.sleevecap.shiftAlong(
+        paths.sleevecap.length() / 2 -
+          store.get("frontShoulderToArmholePitch") -
+          store.get("sleevecapEase") / 2
+      );
+      points.backNotch = paths.sleevecap.shiftAlong(
+        paths.sleevecap.length() / 2 +
+          store.get("backShoulderToArmholePitch") +
+          store.get("sleevecapEase") / 2
+      );
+      snippets.frontNotch = new Snippet("notch", points.frontNotch);
+      snippets.backNotch = new Snippet("bnotch", points.backNotch);
+      if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
     }
 
     // Paperless?
