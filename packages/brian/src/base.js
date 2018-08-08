@@ -6,7 +6,7 @@ var base = {
     part.render = false;
 
     // prettier-ignore
-    let {measurements, options, points, paths, snippets, Path, Point, Snippet, utils, final, paperless, sa, macro} = freesewing.utils.shorthand(part);
+    let {measurements, options, points, paths, snippets, Path, Point, Snippet, utils, final, paperless, sa, macro} = part.shorthand();
 
     // Center back (cb) vertical axis
     points.cbNeck = new Point(

@@ -18,9 +18,8 @@
 	var debug = {
     name: 'debug',
 	  hooks: {
-	    debug: function debugPlugin(next, data) {
-        if(typeof data === 'string') console.log('%cDebug', 'color: #dd69dd',  data);
-        else  console.log(data);
+	    debug: function (next, d='',e='',b='',u='',g='') {
+        console.log('%cDebug', 'color: #dd69dd; font-weight: bold',  d,e,b,u,g);
 	      next();
 	    }
 	  }

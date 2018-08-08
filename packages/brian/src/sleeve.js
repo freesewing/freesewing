@@ -1,26 +1,23 @@
 import freesewing from "freesewing";
 
+/** Calculates the differece between actual and optimal sleevecap length
+ * Positive values mean sleevecap is longer than armhole
+ */
 function sleevecapDelta(store) {
-  // Positive values mean sleevecap is longer than armhole
-  return (
-    store.get("sleevecapLength") -
-    (store.get("frontArmholeLength") + store.get("backArmholeLength"))
-  );
+  return store.get("sleevecapLength") - store.get("sleevecapTarget");
 }
 
 function sleevecapAdjust(store) {
   let delta = sleevecapDelta(store);
   let factor = store.get("sleeveFactor");
-  if (delta > 50) factor = factor * 0.95;
-  else if (delta > 0) factor = factor * 0.995;
-  else if (delta < 50) factor = factor * 1.05;
-  else factor = factor * 1.005;
+  if (delta > 0) factor = factor * 0.98;
+  else factor = factor * 1.02;
   store.set("sleeveFactor", factor);
 }
 
-function draftSleevecap(part) {
+function draftSleevecap(part, run) {
   // prettier-ignore
-  let {debug, store, measurements, options, Point, points, Path, paths} = freesewing.utils.shorthand(part);
+  let {debug, units, store, measurements, options, Point, points, Path, paths} = part.shorthand();
   // Sleeve center axis
   points.centerCap = new Point(0, 0);
   points.centerWrist = new Point(
@@ -40,11 +37,6 @@ function draftSleevecap(part) {
     ((measurements.bicepsCircumference * (1 + options.bicepsEase)) / 2) *
       store.get("sleeveFactor")
   );
-  // Make sure we draft a sleeve that fits the biceps
-  if (points.leftBiceps.x * -1 < measurements.bicepsCircumference / 1.95) {
-    points.leftBiceps.x = measurements.bicepsCircumference / 1.95;
-    part.debug("Warning: Forced sleeve to fit biceps");
-  }
   points.rightBiceps = points.leftBiceps.flipX(points.centerBiceps);
 
   // Pitch points
@@ -150,27 +142,39 @@ function draftSleevecap(part) {
     .line(points.rightBiceps)
     .join(sleevecap, true);
 
+  // Uncomment this line to see all sleevecap iterations
+  //paths[run] = paths.seam;
+
   // Store sleevecap length
   store.set("sleevecapLength", sleevecap.length());
+  if (run === 1) {
+    let armholeLength =
+      store.get("frontArmholeLength") + store.get("backArmholeLength");
+    let sleevecapEase = armholeLength * options.sleevecapEase;
+    store.set("sleevecapEase", sleevecapEase);
+    store.set("sleevecapTarget", armholeLength + sleevecapEase);
+    debug("Sleevecap ease is", units(sleevecapEase));
+  }
 }
 
 var sleeve = {
   draft: function(pattern) {
     let part = new pattern.Part();
-
     // prettier-ignore
-    let {debug, store, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = freesewing.utils.shorthand(part);
+    let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
 
     store.set("sleeveFactor", 1);
     let run = 1;
     do {
-      draftSleevecap(part);
-      part.debug(
-        `Sleevecap draft ${run}, sleevecap delta is ${sleevecapDelta(store)}`
+      draftSleevecap(part, run);
+      debug(
+        `Sleevecap draft ${run}, sleevecap delta is ${units(
+          sleevecapDelta(store)
+        )}`
       );
       sleevecapAdjust(store);
       run++;
-    } while (Math.abs(sleevecapDelta(store)) > 2 && run < 10);
+    } while (Math.abs(sleevecapDelta(store)) > 2 && run < 100);
 
     // Anchor point for sampling
     points.gridAnchor = points.origin;

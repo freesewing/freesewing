@@ -17,7 +17,6 @@ export default {
   options: [
     // Constants
     { id: "shoulderSlopeReduction", val:   0, type: "constant" },
-    { id: "sleevecapEase",          val:   5, type: "constant" },
     { id: "collarFactor",           val: 4.8, type: "constant" },
 
     // Measures
@@ -52,5 +51,6 @@ export default {
     { id: "sleevecapQ3Spread2",    val:   8, type: "%", min:  0, max:   7 },
     { id: "sleevecapQ4Spread1",    val:   7, type: "%", min:  0, max:   7 },
     { id: "sleevecapQ4Spread2",    val:   7, type: "%", min:  0, max:   7 },
+    { id: "sleevecapEase",         val:   1, type: "%", min:  0, max:  10 },
   ]
 };

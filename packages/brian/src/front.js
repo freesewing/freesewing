@@ -7,7 +7,7 @@ var front = {
     let part = new pattern.Part().copy(pattern.parts.back);
 
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = freesewing.utils.shorthand(part);
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = part.shorthand();
 
     // Cut arm a bit deeper at the front
     let deeper = measurements.chestCircumference * options.frontArmholeDeeper;
