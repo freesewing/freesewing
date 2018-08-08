@@ -316,4 +316,82 @@ function shiftAlongBezier(distance, bezier) {
   }
 }
 
+/** Returns a point at the top edge of a bounding box of this */
+Path.prototype.bbox = function() {
+  let bbs = [];
+  let current;
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "line") {
+      bbs.push(lineBoundingBox({ from: current, to: op.to }));
+    } else if (op.type === "curve") {
+      bbs.push(
+        curveBoundingBox(
+          new Bezier(
+            { x: current.x, y: current.y },
+            { x: op.cp1.x, y: op.cp1.y },
+            { x: op.cp2.x, y: op.cp2.y },
+            { x: op.to.x, y: op.to.y }
+          )
+        )
+      );
+    }
+    if (op.to) current = op.to;
+  }
+
+  return bbbbox(bbs);
+};
+
+function lineBoundingBox(line) {
+  let from = line.from;
+  let to = line.to;
+  if (from.x === to.x) {
+    if (from.y < to.y) return { topLeft: from, bottomRight: to };
+    else return { topLeft: to, bottomRight: from };
+  } else if (from.y === to.y) {
+    if (from.x < to.x) return { topLeft: from, bottomRight: to };
+    else return { topLeft: to, bottomRight: from };
+  } else if (from.x < to.x) {
+    if (from.y < to.y) return { topLeft: from, bottomRight: to };
+    else
+      return {
+        topLeft: new Point(from.x, to.y),
+        bottomRight: new Point(to.x, from.y)
+      };
+  } else if (from.x > to.x) {
+    if (from.y < to.y) return { topLeft: to, bottomRight: from };
+    else
+      return {
+        topLeft: new Point(to.x, from.y),
+        bottomRight: new Point(from.x, to.y)
+      };
+  } else {
+    throw "Unhandled scenario in Part.lineBoundingBox()";
+  }
+}
+
+function curveBoundingBox(curve) {
+  let bb = curve.bbox();
+
+  return {
+    topLeft: new Point(bb.x.min, bb.y.min),
+    bottomRight: new Point(bb.x.max, bb.y.max)
+  };
+}
+
+function bbbbox(boxes) {
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (let box of boxes) {
+    if (box.topLeft.x < minX) minX = box.topLeft.x;
+    if (box.topLeft.y < minY) minY = box.topLeft.y;
+    if (box.bottomRight.x > maxX) maxX = box.bottomRight.x;
+    if (box.bottomRight.y > maxY) maxY = box.bottomRight.y;
+  }
+
+  return { topLeft: new Point(minX, minY), bottomRight: new Point(maxX, maxY) };
+}
+
 export default Path;
