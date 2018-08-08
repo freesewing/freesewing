@@ -19,16 +19,13 @@ function draftSleevecap(part, run) {
   // prettier-ignore
   let {debug, units, store, measurements, options, Point, points, Path, paths} = part.shorthand();
   // Sleeve center axis
-  points.centerCap = new Point(0, 0);
-  points.centerWrist = new Point(
-    0,
-    measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
-  );
-  points.centerBiceps = new Point(
-    0,
-    points.centerWrist.y -
-      (measurements.bicepsCircumference * (1 + options.sleevecapHeightFactor)) /
-        store.get("sleeveFactor")
+  points.centerBiceps = new Point(0, 0);
+  points.centerCap = points.centerBiceps.shift(
+    90,
+    measurements.bicepsCircumference *
+      (1 + options.bicepsEase) *
+      options.armholeDepthFactor *
+      store.get("sleeveFactor")
   );
 
   // Left and right biceps points
@@ -40,13 +37,15 @@ function draftSleevecap(part, run) {
   points.rightBiceps = points.leftBiceps.flipX(points.centerBiceps);
 
   // Pitch points
+  let width = points.rightBiceps.x;
+  let height = points.centerCap.y;
   points.backPitch = new Point(
-    points.leftBiceps.x * options.sleevecapBackFactorX,
-    points.leftBiceps.y * options.sleevecapBackFactorY
+    -1 * width * options.sleevecapBackFactorX,
+    height * options.sleevecapBackFactorY
   );
   points.frontPitch = new Point(
-    points.rightBiceps.x * options.sleevecapFrontFactorX,
-    points.rightBiceps.y * options.sleevecapFrontFactorY
+    width * options.sleevecapFrontFactorX,
+    height * options.sleevecapFrontFactorY
   );
 
   // 4 sleevecap quadrants
@@ -120,6 +119,10 @@ function draftSleevecap(part, run) {
   );
 
   // Wrist
+  points.centerWrist = new Point(
+    0,
+    measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
+  );
   points.wristRight = points.centerWrist.shift(
     0,
     (measurements.wristCircumference * (1 + options.cuffEase)) / 2
@@ -127,6 +130,7 @@ function draftSleevecap(part, run) {
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist);
 
   // Seamline
+  paths.waddup = new Path().move(points.centerBiceps).line(points.centerCap);
   let sleevecap = new Path()
     .move(points.rightBiceps)
     .curve(points.rightBiceps, points.capQ1Cp1, points.capQ1)
@@ -174,7 +178,7 @@ var sleeve = {
       );
       sleevecapAdjust(store);
       run++;
-    } while (Math.abs(sleevecapDelta(store)) > 2 && run < 100);
+    } while (Math.abs(sleevecapDelta(store)) > 2 && run < 2);
 
     // Anchor point for sampling
     points.gridAnchor = points.origin;
