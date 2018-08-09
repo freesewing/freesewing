@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   manSize34: {
     bicepsCircumference: 335,
     centerBackNeckToWaist: 489,
