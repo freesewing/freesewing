@@ -74,6 +74,8 @@ Pattern.prototype.draft = function() {
 Pattern.prototype.sample = function() {
   if (this.settings.sample.type === "option") {
     return this.sampleOption(this.settings.sample.option);
+  } else if (this.settings.sample.type === "measurement") {
+    return this.sampleMeasurement(this.settings.sample.measurement);
   }
   this.draft();
 };
@@ -83,6 +85,7 @@ Pattern.prototype.sample = function() {
  */
 Pattern.prototype.sampleOption = function(option) {
   this.settings.mode = "sample";
+  this.settings.paperless = "false";
   let factor, step, val;
   let parts = {};
   if (typeof this.config.options[option].type === "undefined") factor = 100;
@@ -106,6 +109,48 @@ Pattern.prototype.sampleOption = function(option) {
     val += step;
     this.options[option] = val;
     this.debug(`Sampling option ${option} with value ${val}`);
+    this.draft();
+    for (let i in this.parts) {
+      for (let j in this.parts[i].paths) {
+        parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
+          .clone()
+          .attr("class", "sample-" + l, true);
+      }
+    }
+  }
+  this.parts = parts;
+
+  return this;
+};
+
+/**
+ * Handles measurement sampling
+ */
+Pattern.prototype.sampleMeasurement = function(measurement) {
+  this.settings.mode = "sample";
+  this.settings.paperless = "false";
+  let factor, step, val;
+  let parts = {};
+  val = this.settings.measurements[measurement];
+  step = val / 50;
+  val = val * 0.9;
+  // First run
+  this.settings.measurements[measurement] = val;
+  this.draft();
+  for (let i in this.parts) {
+    parts[i] = new Part();
+    parts[i].render = this.parts[i].render;
+    for (let j in this.parts[i].paths) {
+      parts[i].paths[j + "_1"] = this.parts[i].paths[j]
+        .clone()
+        .attr("class", "sample-1", true);
+    }
+  }
+  // Consecutive runs
+  for (let l = 2; l < 11; l++) {
+    val += step;
+    this.settings.measurements[measurement] = val;
+    this.debug(`Sampling measurement ${measurement} with value ${val}`);
     this.draft();
     for (let i in this.parts) {
       for (let j in this.parts[i].paths) {
