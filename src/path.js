@@ -415,11 +415,8 @@ Path.prototype.reverse = function() {
     }
     if (op.to) current = op.to;
   }
-  console.log("sections", sections);
   let rev = new Path().move(current);
-  for (let section of sections.reverse()) {
-    rev.ops.push(section.ops[1]);
-  }
+  for (let section of sections.reverse()) rev.ops.push(section.ops[1]);
   if (closed) rev.close();
 
   return rev;
