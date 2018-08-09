@@ -180,7 +180,7 @@ Path.prototype.clone = function() {
 };
 
 /** Joins this with that path, closes them if wanted */
-Path.prototype.join = function(that, closed) {
+Path.prototype.join = function(that, closed = false) {
   return joinPaths([this, that], closed);
 };
 
@@ -292,7 +292,6 @@ Path.prototype.shiftAlong = function(distance) {
     }
     current = op.to;
   }
-  console.log("distance is", distance, "len is", len);
   throw "Ran out of curve to shift along";
 };
 
@@ -398,5 +397,32 @@ function bbbbox(boxes) {
 
   return { topLeft: new Point(minX, minY), bottomRight: new Point(maxX, maxY) };
 }
+
+/** Returns a reversed version of this */
+Path.prototype.reverse = function() {
+  let sections = [];
+  let current;
+  let closed = false;
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "line") {
+      if (!op.to.sitsOn(current))
+        sections.push(new Path().move(op.to).line(current));
+    } else if (op.type === "curve") {
+      sections.push(new Path().move(op.to).curve(op.cp2, op.cp1, current));
+    } else if (op.type === "close") {
+      closed = true;
+    }
+    if (op.to) current = op.to;
+  }
+  console.log("sections", sections);
+  let rev = new Path().move(current);
+  for (let section of sections.reverse()) {
+    rev.ops.push(section.ops[1]);
+  }
+  if (closed) rev.close();
+
+  return rev;
+};
 
 export default Path;
