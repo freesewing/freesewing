@@ -1,4 +1,7 @@
-import style from "./lib/style";
+import baseCss from "./lib/base.css.js";
+import draftCss from "./lib/draft.css.js";
+import sampleCss from "./lib/sample.css.js";
+import paperlessCss from "./lib/paperless.css.js";
 import notch from "./lib/notch";
 import gridMetric from "./lib/grid-metric";
 import gridImperial from "./lib/grid-imperial";
@@ -9,11 +12,13 @@ export default {
   version: version,
   hooks: {
     preRenderSvg: function(next) {
-      this.style += style;
+      this.style += baseCss;
       this.defs += notch;
       this.attributes.add("freesewing:plugin-theme", version);
+      if (this.pattern.settings.mode === "sample") this.style += sampleCss;
+      else this.style += draftCss;
       if (this.pattern.settings.paperless) {
-        this.style += "path.gridbox{fill: url(#grid)}";
+        this.style += paperlessCss;
         if (this.pattern.settings.units === "imperial")
           this.defs += gridImperial;
         else this.defs += gridMetric;
