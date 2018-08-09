@@ -5,47 +5,84 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 
-# freesewing / plugins / macro-cutonfold
+# plugin-cutonfold
 
-This is a macro for [freesewing](https://github.com/freesewing/freesewing) 
-to add cut-on-fold indicators on your patterns.
+A freesewing plugin to add cut-on-fold indicators to your patterns.
 
 ## Install
 
+For node.js, run:
+
 ```sh
-npm install @freesewing-plugins/macro-cutonfold --save
+npm install @freesewing/plugin-debug
 ```
 
-## Loading the plugin
+in the browser, simply include this script:
 
-Plugins are loaded by the `withPlugin` method of an instantiated freesewing pattern:
-
-```js
-import F from 'freesewing';
-import cutonfold from '@freesewing-plugins/macro-cutonfold';
-
-var pattern = new F.pattern()
-  .withPlugin(cutonfold);
+```html
+<script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-cutonfold"></script>
 ```
 
-## Using the plugin
+## Loading this plugin
 
-This plugin provides the `cutonfold` macro which you can call with the `macro` method on an instantiated pattern part:
+To load this plugin, add it to your instantiated pattern.
+
+On node.js:
 
 ```js
-part.macro('cutonfold', {
+import pattern from '@freesewing/pattern-brian'
+import cutonfold from '@freesewing/plugin-cutonfold'
+
+pattern.with(cutonfold);
+```
+
+In the browser, this plugin will register as `freesewing.plugins.cutonfold`.
+Since it's a build-time plugin, it will be loaded by the pattern.
+
+```html
+<script type="text/javascript" src="https://unpkg.com/freesewing"></script>
+<script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-cutonfold"></script>
+<script type="text/javascript" src="https://unpkg.com/@freesewing/pattern-brian"></script>
+
+<script>
+var pattern = freesewing.patterns.brian;
+</script>
+```
+
+## Usage
+
+This plugin provides the `cutonfold` macro.
+
+> The macro method is available from the `shorthand()` method on an instantiated pattern part.
+
+```js
+macro('cutonfold', {
   from: points.cbNeck
-, to: points.cbHips
+  , to: points.cbHips
 });
-```
+  ```
 
 ### Parameters
 
-  - `to`: A point object at the start of the cut-on-fold indicator
-  - `from`: A point object at the end of the cut-on-fold indicator
-  
+ - `to`: A point object at the start of the cut-on-fold indicator
+ - `from`: A point object at the end of the cut-on-fold indicator
+        
 As all freesewing macros, bundle these parameters into a single object.
 
 ## Example
 
-FIXME: include example
+![Example of the output provided by this plugin](https://github.com/freesewing/plugin-debug/raw/master/img/example.png)
+
+
+## Build
+
+To build this plugin, run:
+
+```sh
+npm run build
+```
+
+## License: MIT
+
+See [the license file](https://github.com/freesewing/plugin-theme/blob/master/LICENSE)
+for details.
