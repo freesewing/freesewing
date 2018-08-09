@@ -17,32 +17,45 @@ In addition, it will log the entire pattern object to the console so you can ins
 
 If you want to design patterns, you may want to use this plugin while doing so.
 
-## Usage
+## Install
+
+On node.js:
+
+```sh
+npm install @freesewing/plugin-designer
+```
+
+in the browser, simply include this script:
+
+```html
+<script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-designer"></script>
+```
+
+## Loading this plugin
 
 To load this plugin, add it to your instantiated pattern.
 
 On node.js:
 
 ```js
-import pattern from '@freesewing/pattern-brian'
-import theme from '@freesewing/plugin-theme'
-import designer from '@freesewing/plugin-designer'
+import pattern from "@freesewing/pattern-brian"
+import designer from "@freesewing/plugin-designer"
 
-pattern.with(theme).with(designer);
+pattern.with(designer);
 ```
 
-In the browser, this plugin will register as `freesewing.plugins.designer`:
+In the browser, this plugin will register as `freesewing.plugins.designer`.
+
+Since it's a run-time plugin, you need to load it into your pattern:
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/freesewing"></script>
-<script type="text/javascript" src="https://unpkg.com/@freesewing/pattern-brian"></script>
-<script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-theme"></script>
 <script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-designer"></script>
+<script type="text/javascript" src="https://unpkg.com/@freesewing/pattern-brian"></script>
 
 <script>
 var pattern = freesewing.patterns.brian
-  .with(freesewing.plugins.theme)
-  .with(freesewing.plugins.designer);
+  .with(freesewing.plugins.cutonfold);
 </script>
 ```
 
@@ -54,13 +67,12 @@ You can see the extra markers on the pattern, and the info in the console.
 
 ![Example of the designer plugin](https://github.com/freesewing/plugin-designer/raw/master/img/example.png)
 
-## Install
+### Parameters
 
-To install, run:
-
-```sh
-npm install @freesewing/plugin-designer
-```
+ - `to`: A point object at the start of the cut-on-fold indicator
+ - `from`: A point object at the end of the cut-on-fold indicator
+        
+As all freesewing macros, bundle these parameters into a single object.
 
 ## Build
 
