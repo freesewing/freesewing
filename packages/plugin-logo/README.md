@@ -41,7 +41,7 @@ You now have the following snippets available:
 You can use them as such:
 
 ```sh
-snippets.logo = new F.snippet('logo-sm', points.logo);
+snippets.logo = new Snippet('logo-sm', points.logo);
 ```
 
 ## Example
