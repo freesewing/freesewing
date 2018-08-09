@@ -28,7 +28,8 @@
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
+    "watch": "rollup -c rollup.js -o dist/index.js -f cjs --watch"
   },
   "husky": {
     "hooks": {

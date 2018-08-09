@@ -20,7 +20,9 @@ export default function Pattern(config = false) {
   Svg.prototype.hooks = this.hooks;
 
   // Data containers
-  this.settings = {};
+  this.settings = {
+    mode: "draft"
+  };
   this.options = {};
   this.store = new Store();
   this.parts = {};
@@ -34,10 +36,9 @@ export default function Pattern(config = false) {
   this.config = { ...defaults, ...config };
   for (let i in config.options) {
     let option = config.options[i];
-    if (option.type === "%") this.options[i] = option.val / 100;
+    if (typeof option.type === "undefined") this.options[i] = option.val / 100;
     else this.options[i] = option.val;
   }
-  console.log(this.options);
 
   // Constructors
   this.Part = Part;
@@ -65,6 +66,56 @@ Pattern.prototype.draft = function() {
   throw Error(
     "You have to implement the draft() method in your Pattern instance."
   );
+};
+
+/**
+ * Handles pattern sampling
+ */
+Pattern.prototype.sample = function() {
+  this.settings.mode = "sample";
+  if (this.settings.sample.type === "option") {
+    return this.sampleOption(this.settings.sample.option);
+  }
+  this.debug("sampling", this.settings);
+  this.debug(this.settings);
+  this.draft();
+};
+
+/**
+ * Handles option sampling
+ */
+Pattern.prototype.sampleOption = function(option) {
+  let factor = 1;
+  if (typeof this.config.options[option].type === "undefined") factor = 100;
+  let min = this.config.options[option].min / factor;
+  let max = this.config.options[option].max / factor;
+  let step = (max - min) / 10;
+  let val = min;
+  let count = 1;
+  // First run
+  this.draft();
+  let parts = {};
+  this.options[option] = val;
+  for (let i in this.parts) {
+    parts[i] = new Part();
+    parts[i].render = this.parts[i].render;
+    for (let j in this.parts[i].paths) {
+      parts[i].paths[j + "_1"] = this.parts[i].paths[j].clone();
+    }
+  }
+  for (let l = 2; l < 12; l++) {
+    val += step;
+    this.options[option] = val;
+    this.debug(`Sampling option ${option} with value ${val}`);
+    this.draft();
+    for (let i in this.parts) {
+      for (let j in this.parts[i].paths) {
+        parts[i].paths[j + "_" + l] = this.parts[i].paths[j].clone();
+      }
+    }
+  }
+  console.log(parts);
+  this.parts = parts;
 };
 
 /** Debug method, exposes debug hook */
