@@ -1,3 +1,10 @@
+/**
+ * @freesewing/models | v0.2.1
+ * Body measurements data for a range of default sizes
+ * (c) 2018 Joost De Cock <joost@decock.org> (https://github.com/joostdecock)
+ * @license MIT
+ */
+"use strict";
 module.exports = {
   manSize34: {
     bicepsCircumference: 335,

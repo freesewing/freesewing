@@ -2,31 +2,68 @@
   "name": "@freesewing/models",
   "version": "0.2.1",
   "description": "Body measurements data for a range of default sizes",
-  "main": "dist/node/index.js",
-  "unpkg": "dist/browser/bundle.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "nodebuild": "babel src -d dist/node",
-    "browserbuild": "npx webpack-cli --config webpack.config.js",
-    "dev": "webpack-dev-server --open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joostdecock/models.git"
-  },
-  "author": "Joost De Cock <joost@decock.org>",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
+  "homepage": "https://github.com/freesewing/models#readme",
+  "repository": "github:freesewing/models",
   "bugs": {
-    "url": "https://github.com/joostdecock/models/issues"
+    "url": "https://github.com/freesewing/models/issues"
   },
-  "homepage": "https://github.com/joostdecock/models#readme",
+  "keywords": [
+    "freesewing",
+    "plugin",
+    "sewing",
+    "patterns",
+    "models"
+  ],
+  "main": "dist/index.js",
+  "unpkg": "dist/browser.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "patch": "npm version patch -m ':bookmark: v%s; && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s; && npm run build",
+    "major": "npm version major -m ':bookmark: v%s; && npm run build",
+    "precommit": "npm run pretty && lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.models",
+    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
+    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.53",
-    "@babel/preset-env": "7.0.0-beta.53",
-    "babel-cli": "6.26.0",
-    "babel-loader": "8.0.0-beta.4",
-    "babel-preset-env": "1.7.0",
-    "webpack": "4.16.0",
-    "webpack-cli": "3.0.8"
-  }
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-terser": "^1.0.1"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
 }
