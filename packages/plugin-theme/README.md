@@ -41,7 +41,7 @@ This plugin adds the following CSS classes to your SVG file:
 
 ![Example of the style provided by this theme](https://github.com/freesewing/plugin-theme/raw/master/img/example.png)
 
-In addition, it adds the `notch` snippet to your SVG file's defs section.
+In addition, it adds the `notch` and `bnotch` snippets to your SVG file's defs section.
 
 ## Install
 
