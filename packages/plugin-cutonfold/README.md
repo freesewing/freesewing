@@ -14,7 +14,7 @@ A freesewing plugin to add cut-on-fold indicators to your patterns.
 For node.js, run:
 
 ```sh
-npm install @freesewing/plugin-debug
+npm install @freesewing/plugin-cutonfold
 ```
 
 in the browser, simply include this script:
@@ -71,7 +71,7 @@ As all freesewing macros, bundle these parameters into a single object.
 
 ## Example
 
-![Example of the output provided by this plugin](https://github.com/freesewing/plugin-debug/raw/master/img/example.png)
+![Example of the output provided by this plugin](https://github.com/freesewing/plugin-cutonfold/raw/master/img/example.png)
 
 
 ## Build
