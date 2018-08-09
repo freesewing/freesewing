@@ -31,15 +31,15 @@ function draftSleevecap(part, run) {
   // Left and right biceps points, limit impact of sleeveFactor to 25%
   let halfWidth =
     (measurements.bicepsCircumference * (1 + options.bicepsEase)) / 2;
-  points.leftBiceps = points.centerBiceps.shift(
+  points.bicepsLeft = points.centerBiceps.shift(
     180,
     halfWidth * options.sleeveWidthGuarantee +
       halfWidth * (1 - options.sleeveWidthGuarantee) * store.get("sleeveFactor")
   );
-  points.rightBiceps = points.leftBiceps.flipX(points.centerBiceps);
+  points.bicepsRight = points.bicepsLeft.flipX(points.centerBiceps);
 
   // Pitch points
-  let width = points.rightBiceps.x;
+  let width = points.bicepsRight.x;
   let height = points.centerCap.y;
   points.backPitch = new Point(
     -1 * width * options.sleevecapBackFactorX,
@@ -53,7 +53,7 @@ function draftSleevecap(part, run) {
   // 4 sleevecap quadrants
   // Base points
   points.capQ1Base = points.frontPitch.shiftFractionTowards(
-    points.rightBiceps,
+    points.bicepsRight,
     0.5
   );
   points.capQ2Base = points.frontPitch.shiftFractionTowards(
@@ -65,13 +65,13 @@ function draftSleevecap(part, run) {
     0.5
   );
   points.capQ4Base = points.backPitch.shiftFractionTowards(
-    points.leftBiceps,
+    points.bicepsLeft,
     0.5
   );
   // Offset points
   let baseOffset = measurements.bicepsCircumference * (1 + options.bicepsEase);
   points.capQ1 = points.capQ1Base.shift(
-    points.rightBiceps.angle(points.frontPitch) + 90,
+    points.bicepsRight.angle(points.frontPitch) + 90,
     baseOffset * options.sleevecapQ1Offset
   );
   points.capQ2 = points.capQ2Base.shift(
@@ -83,16 +83,16 @@ function draftSleevecap(part, run) {
     baseOffset * options.sleevecapQ3Offset
   );
   points.capQ4 = points.capQ4Base.shift(
-    points.leftBiceps.angle(points.backPitch) - 90,
+    points.bicepsLeft.angle(points.backPitch) - 90,
     baseOffset * options.sleevecapQ4Offset
   );
   // Control points
   points.capQ1Cp1 = points.capQ1.shift(
-    points.frontPitch.angle(points.rightBiceps),
+    points.frontPitch.angle(points.bicepsRight),
     baseOffset * options.sleevecapQ1Spread1
   );
   points.capQ1Cp2 = points.capQ1.shift(
-    points.frontPitch.angle(points.rightBiceps),
+    points.frontPitch.angle(points.bicepsRight),
     baseOffset * options.sleevecapQ1Spread2 * -1
   );
   points.capQ2Cp1 = points.capQ2.shift(
@@ -112,22 +112,22 @@ function draftSleevecap(part, run) {
     baseOffset * options.sleevecapQ3Spread2 * -1
   );
   points.capQ4Cp1 = points.capQ4.shift(
-    points.leftBiceps.angle(points.backPitch),
+    points.bicepsLeft.angle(points.backPitch),
     baseOffset * options.sleevecapQ4Spread1
   );
   points.capQ4Cp2 = points.capQ4.shift(
-    points.leftBiceps.angle(points.backPitch),
+    points.bicepsLeft.angle(points.backPitch),
     baseOffset * options.sleevecapQ4Spread2 * -1
   );
 
   // Sleevecap seamline
   paths.sleevecap = new Path()
-    .move(points.rightBiceps)
-    .curve(points.rightBiceps, points.capQ1Cp1, points.capQ1)
+    .move(points.bicepsRight)
+    .curve(points.bicepsRight, points.capQ1Cp1, points.capQ1)
     .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
-    .curve(points.capQ4Cp2, points.leftBiceps, points.leftBiceps);
+    .curve(points.capQ4Cp2, points.bicepsLeft, points.bicepsLeft);
 
   // Store sleevecap length
   store.set("sleevecapLength", paths.sleevecap.length());
@@ -166,7 +166,7 @@ var sleeve = {
     // Wrist
     let top = paths.sleevecap.bbox().topLeft.y;
     debug("Sleevecap height is ", units(Math.abs(top)));
-    debug("Sleeve width is ", units(points.rightBiceps.x * 2));
+    debug("Sleeve width is ", units(points.bicepsRight.x * 2));
     points.centerWrist = new Point(
       0,
       top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
@@ -180,12 +180,13 @@ var sleeve = {
     // Paths
     paths.sleevecap.render = false;
     paths.seam = new Path()
-      .move(points.leftBiceps)
+      .move(points.bicepsLeft)
       .move(points.wristLeft)
       .move(points.wristRight)
-      .line(points.rightBiceps)
+      .line(points.bicepsRight)
       .join(paths.sleevecap)
-      .close();
+      .close()
+      .attr("class", "fabric");
 
     // Anchor point for sampling
     points.gridAnchor = points.origin;
@@ -218,7 +219,25 @@ var sleeve = {
 
     // Paperless?
     if (paperless) {
-      //shared.dimensions(macro, points, Path, sa);
+      macro("vd", {
+        from: points.wristLeft,
+        to: points.bicepsLeft,
+        x: points.bicepsLeft.x - sa - 15
+      });
+      macro("vd", {
+        from: points.wristLeft,
+        to: points.sleeveTip,
+        x: points.bicepsLeft.x - sa - 30
+      });
+      macro("hd", {
+        from: points.bicepsLeft,
+        to: points.bicepsRight,
+        y: points.sleeveTip.y - sa - 30
+      });
+      macro("pd", {
+        path: paths.sleevecap.reverse(),
+        d: -1 * sa - 15
+      });
     }
     return part;
   }
