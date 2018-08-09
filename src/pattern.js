@@ -32,12 +32,12 @@ export default function Pattern(config = false) {
     units: "metric"
   };
   this.config = { ...defaults, ...config };
-  if (config.options.length > 0) {
-    for (let conf of config.options) {
-      if (conf.type === "%") this.options[conf.id] = conf.val / 100;
-      else this.options[conf.id] = conf.val;
-    }
+  for (let i in config.options) {
+    let option = config.options[i];
+    if (option.type === "%") this.options[i] = option.val / 100;
+    else this.options[i] = option.val;
   }
+  console.log(this.options);
 
   // Constructors
   this.Part = Part;
