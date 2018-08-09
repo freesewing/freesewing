@@ -85,37 +85,41 @@ Pattern.prototype.sample = function() {
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(option) {
-  let factor = 1;
-  if (typeof this.config.options[option].type === "undefined") factor = 100;
-  let min = this.config.options[option].min / factor;
-  let max = this.config.options[option].max / factor;
-  let step = (max - min) / 10;
-  let val = min;
-  let count = 1;
-  // First run
-  this.draft();
+  let factor, step, val;
   let parts = {};
+  if (typeof this.config.options[option].type === "undefined") factor = 100;
+  else factor = 1;
+  val = this.config.options[option].min / factor;
+  step = (this.config.options[option].max / factor - val) / 9;
+  // First run
   this.options[option] = val;
+  this.draft();
   for (let i in this.parts) {
     parts[i] = new Part();
     parts[i].render = this.parts[i].render;
     for (let j in this.parts[i].paths) {
-      parts[i].paths[j + "_1"] = this.parts[i].paths[j].clone();
+      parts[i].paths[j + "_1"] = this.parts[i].paths[j]
+        .clone()
+        .attr("class", "sample-1", true);
     }
   }
-  for (let l = 2; l < 12; l++) {
+  // Consecutive runs
+  for (let l = 2; l < 11; l++) {
     val += step;
     this.options[option] = val;
     this.debug(`Sampling option ${option} with value ${val}`);
     this.draft();
     for (let i in this.parts) {
       for (let j in this.parts[i].paths) {
-        parts[i].paths[j + "_" + l] = this.parts[i].paths[j].clone();
+        parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
+          .clone()
+          .attr("class", "sample-" + l, true);
       }
     }
   }
-  console.log(parts);
   this.parts = parts;
+
+  return this;
 };
 
 /** Debug method, exposes debug hook */
