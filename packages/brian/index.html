@@ -45,10 +45,11 @@
 pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
 pattern.settings.sample = {
-  type: 'option',
-  option: 'chestEase'
+  type: 'measurement',
+  measurement: 'shoulderToShoulder'
 }
-    pattern.draft();
+    //pattern.sampleOption('sleeveWidthGuarantee');
+    pattern.sampleMeasurement('bicepsCircumference');
     document.getElementById("svg").innerHTML = pattern.render();
 
     function pointHover(evt) {
