@@ -72,12 +72,9 @@ Pattern.prototype.draft = function() {
  * Handles pattern sampling
  */
 Pattern.prototype.sample = function() {
-  this.settings.mode = "sample";
   if (this.settings.sample.type === "option") {
     return this.sampleOption(this.settings.sample.option);
   }
-  this.debug("sampling", this.settings);
-  this.debug(this.settings);
   this.draft();
 };
 
@@ -85,6 +82,7 @@ Pattern.prototype.sample = function() {
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(option) {
+  this.settings.mode = "sample";
   let factor, step, val;
   let parts = {};
   if (typeof this.config.options[option].type === "undefined") factor = 100;
