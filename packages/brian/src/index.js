@@ -1,5 +1,6 @@
 import freesewing from "freesewing";
 import pluginCutonfold from "@freesewing/plugin-cutonfold";
+import pluginGrainline from "@freesewing/plugin-grainline";
 import pluginDimension from "@freesewing/plugin-dimension";
 import pluginLogo from "@freesewing/plugin-logo";
 import pluginTitle from "@freesewing/plugin-title";
@@ -14,6 +15,7 @@ import sleeve from "./sleeve";
 
 var pattern = new freesewing.Pattern({ version: version, ...config })
   .with(pluginCutonfold)
+  .with(pluginGrainline)
   .with(pluginDimension)
   .with(pluginLogo)
   .with(pluginTitle);

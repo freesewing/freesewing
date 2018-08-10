@@ -8,6 +8,7 @@
     <div id="svg"></div>
     <script type="text/javascript" src="freesewing.js"></script>
     <script type="text/javascript" src="tmp/cutonfold.js"></script>
+    <script type="text/javascript" src="tmp/grainline.js"></script>
     <script type="text/javascript" src="tmp/dimension.js"></script>
     <script type="text/javascript" src="tmp/logo.js"></script>
     <script type="text/javascript" src="tmp/title.js"></script>
@@ -29,7 +30,7 @@
     var pattern = freesewing.patterns.brian
       .with(debug)
       .with(freesewing.plugins.theme)
-      .with(freesewing.plugins.designer)
+      //.with(freesewing.plugins.designer)
 /*
   pattern.on('preSample', function(next) {
     console.log('preSample hook');

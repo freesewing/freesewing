@@ -200,6 +200,7 @@ var sleeve = {
       );
       snippets.logo = new Snippet("logo", points.logo);
       macro("title", { at: points.centerBiceps, nr: 3, title: "sleeve" });
+      macro("grainline", { from: points.centerWrist, to: points.centerBiceps });
 
       points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5);
       points.frontNotch = paths.sleevecap.shiftAlong(
