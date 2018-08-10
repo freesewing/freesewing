@@ -67,7 +67,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRenderSvg: function(next) {
+    preRender: function(next) {
       this.defs += markers;
       this.attributes.add("freesewing:plugin-cutonfold", version);
       next();
