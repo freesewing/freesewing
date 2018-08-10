@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRenderSvg: function(next) {
+    preRender: function(next) {
       this.attributes.add("freesewing:plugin-title", version);
       this.style += style;
       next();
