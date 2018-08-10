@@ -6,7 +6,7 @@ var back = {
     let part = new pattern.Part().copy(pattern.parts.base);
 
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
+    let {store, sa, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
 
     // Seamline
     paths.seam = shared.seamLine("back", points, Path);
