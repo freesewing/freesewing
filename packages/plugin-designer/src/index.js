@@ -6,7 +6,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRenderSvg: function(next) {
+    preRender: function(next) {
       // Add script and snippets
       this.script += script;
       this.defs += snippets;
