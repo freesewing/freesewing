@@ -77,27 +77,27 @@ var base = {
       points.armholePitch
     );
     points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5);
-    points.armholeCp1 = points.armhole.shift(
+    points.armholeCp2 = points.armhole.shift(
       180,
       points._tmp1.dx(points.armhole) / 4
     );
-    points.armholeCp2 = points.armholeHollow.shift(
+    points.armholeHollowCp1 = points.armholeHollow.shift(
       -45,
       points.armholeHollow.dy(points.armhole) / 2
     );
-    points.armholeHollowCp1 = points.armholeHollow.shift(
+    points.armholeHollowCp2 = points.armholeHollow.shift(
       135,
       points.armholePitch.dx(points.armholeHollow)
     );
-    points.armholeHollowCp2 = points.armholePitch.shift(
+    points.armholePitchCp1 = points.armholePitch.shift(
       -90,
       points.armholePitch.dy(points.armholeHollow) / 2
     );
-    points.armholePitchCp1 = points.armholePitch.shift(
+    points.armholePitchCp2 = points.armholePitch.shift(
       90,
       points.shoulder.dy(points.armholePitch) / 2
     );
-    points.armholePitchCp2 = points.shoulder
+    points.shoulderCp1 = points.shoulder
       .shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5)
       .rotate(90, points.shoulder);
 
@@ -105,7 +105,7 @@ var base = {
     points._tmp4 = points.neck
       .shiftTowards(points.shoulder, 10)
       .rotate(-90, points.neck);
-    points.neckCp1 = freesewing.utils.beamCrossesY(
+    points.neckCp2 = freesewing.utils.beamCrossesY(
       points.neck,
       points._tmp4,
       points.cbNeck.y

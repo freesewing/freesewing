@@ -11,9 +11,9 @@ var front = {
 
     // Cut arm a bit deeper at the front
     let deeper = measurements.chestCircumference * options.frontArmholeDeeper;
-    points.armholeHollowCp2.x -= deeper;
-    points.armholePitch.x -= deeper;
     points.armholePitchCp1.x -= deeper;
+    points.armholePitch.x -= deeper;
+    points.armholePitchCp2.x -= deeper;
 
     // Rename cb (center back) to cf (center front)
     for (let key of ["Neck", "Shoulder", "Armhole", "Waist", "Hips"]) {
