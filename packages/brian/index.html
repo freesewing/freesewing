@@ -14,6 +14,8 @@
     <script type="text/javascript" src="dist/browser.js"></script>
     <script type="text/javascript" src="tmp/theme.js"></script>
     <script type="text/javascript" src="tmp/designer.js"></script>
+    <script type="text/javascript" src="tmp/models.js"></script>
+    <script type="text/javascript" src="tmp/antmantest.js"></script>
   <script>
 	var debug = {
     name: 'debug',
@@ -24,32 +26,26 @@
 	    }
 	  }
   };
+console.log('models', freesewing.models);
     var pattern = freesewing.patterns.brian
       .with(debug)
       .with(freesewing.plugins.theme)
   //    .with(freesewing.plugins.designer)
-    pattern.settings.measurements = {
-      bicepsCircumference:   335,
-      centerBackNeckToWaist: 480,
-      chestCircumference:   1080,
-      hipsCircumference:     950,
-      naturalWaistToHip:     120,
-      neckCircumference:     420,
-      shoulderSlope:          55,
-      shoulderToShoulder:    470,
-      shoulderToWrist:       700,
-      wristCircumference:    190
-    };
 
-//pattern.settings.paperless = true;
-pattern.settings.sa = 10;
+pattern.settings.paperless = true;
+
+ pattern.settings.measurements = freesewing.models.manSize36;
+
+  pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
 pattern.settings.sample = {
   type: 'measurement',
   measurement: 'shoulderToShoulder'
 }
-    //pattern.sampleOption('sleeveWidthGuarantee');
-    pattern.sampleMeasurement('bicepsCircumference');
+    //pattern.sampleOption('chestEase');
+    //pattern.sampleMeasurement('bicepsCircumference');
+    pattern.sampleModels(freesewing.antmantest);
+//pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
 
     function pointHover(evt) {

@@ -1,7 +1,6 @@
 /** Pattern parts */
 export default {
   name: "brian",
-  parts: ["back", "front", "_sleeve"],
   measurements: [
     "bicepsCircumference",
     "centerBackNeckToWaist",
@@ -16,11 +15,10 @@ export default {
   ],
   options: {
     // Constants
-    shoulderSlopeReduction: { val:   0, type: "constant" },
+    // TODO shoulderSlopeReduction: { val:   0, type: "constant" },
     collarFactor:           { val: 4.8, type: "constant" },
 
     // Measures
-    cuffEase:          { val: 45, min:   0, max: 100, type: "measure" },
     lengthBonus:       { val:  0, min: -40, max: 120, type: "measure" },
     shoulderEase:      { val:  0, min: -20, max:  60, type: "measure" },
     sleeveLengthBonus: { val:  0, min: -40, max:  80, type: "measure" },

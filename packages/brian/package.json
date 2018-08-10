@@ -4,10 +4,10 @@
   "description": "Freesewing pattern for a basic body block for menswear",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/pattern-brian#readme",
-  "repository": "github:freesewing/pattern-brian",
+  "homepage": "https://github.com/freesewing/brian#readme",
+  "repository": "github:freesewing/brian",
   "bugs": {
-    "url": "https://github.com/freesewing/pattern-brian/issues"
+    "url": "https://github.com/freesewing/brian/issues"
   },
   "keywords": [
     "freesewing",
