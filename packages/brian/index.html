@@ -26,15 +26,73 @@
 	    }
 	  }
   };
-console.log('models', freesewing.models);
     var pattern = freesewing.patterns.brian
       .with(debug)
       .with(freesewing.plugins.theme)
   //    .with(freesewing.plugins.designer)
+/*
+  pattern.on('preSample', function(next) {
+    console.log('preSample hook');
+    next();
+  });
+
+  pattern.on('postSample', function(next) {
+    console.log('postSample hook');
+    next();
+  });
+
+  pattern.on('preDraft', function(next) {
+    console.log('preDraft hook', JSON.parse(JSON.stringify(this)));
+    next();
+  });
+
+  pattern.on('postDraft', function(next) {
+    console.log('postDraft hook', JSON.parse(JSON.stringify(this)));
+    next();
+  });
+
+  pattern.on('preRender', function(next) {
+    console.log('preRender hook', this);
+    next();
+  });
+
+  pattern.on('postRender', function(next) {
+    console.log('postRender hook', this);
+    next();
+  });
+
+  pattern.on('preDraft', function(next) {
+    console.log('%cpreDraft hook', 'color: red', this);
+    next();
+  });
+
+  pattern.on('postDraft', function(next) {
+    console.log('%cpostDraft hook', 'color: red', this);
+    next();
+  });
+
+  pattern.on('insertText', function(next) {
+    console.log('%cinsertText hook', 'color: red', this.text);
+    this.text = this.text.toUpperCase();
+    next();
+  });
+*/
+  pattern.on('preDraft', function(next) {
+    console.log('%cpreDraft hook', 'color: red', this);
+    for(let m in this.config.measurements) {
+      let measurement = this.config.measurements[m];
+      if(!this.context.settings.measurements[measurement]) {
+        this.debug('Missing measurement:', measurement);
+        this.debug('All measurements:', this.settings.measurements);
+        throw `Missing measurement: ${measurement}`;
+      }
+    }
+    next();
+  });
 
 pattern.settings.paperless = true;
 
- pattern.settings.measurements = freesewing.models.manSize36;
+ pattern.settings.measurements = freesewing.models.men.manSize36;
 
   pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
@@ -42,9 +100,10 @@ pattern.settings.sample = {
   type: 'measurement',
   measurement: 'shoulderToShoulder'
 }
-    //pattern.sampleOption('chestEase');
+pattern.debug('debug test from index', 'foo');
+    pattern.sampleOption('shoulderSlopeReduction');
     //pattern.sampleMeasurement('bicepsCircumference');
-    pattern.sampleModels(freesewing.antmantest);
+    //pattern.sampleModels(freesewing.antmantest);
 //pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
 

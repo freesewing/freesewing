@@ -23,6 +23,7 @@ pattern.draft = function() {
   pattern.parts.back = back.draft(pattern);
   pattern.parts.front = front.draft(pattern);
   pattern.parts.sleeve = sleeve.draft(pattern);
+
   return pattern;
 };
 

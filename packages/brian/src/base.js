@@ -15,7 +15,9 @@ var base = {
     );
     points.cbShoulder = new Point(
       0,
-      (measurements.shoulderSlope - options.shoulderSlopeReduction) / 2
+      (measurements.shoulderSlope -
+        measurements.shoulderToShoulder * options.shoulderSlopeReduction) /
+        2
     );
     points.cbArmhole = new Point(
       0,
