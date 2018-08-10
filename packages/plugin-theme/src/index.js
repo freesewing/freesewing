@@ -11,7 +11,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRenderSvg: function(next) {
+    preRender: function(next) {
       this.style += baseCss;
       this.defs += notch;
       this.attributes.add("freesewing:plugin-theme", version);
