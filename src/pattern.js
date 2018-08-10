@@ -76,37 +76,36 @@ Pattern.prototype.sample = function() {
     return this.sampleOption(this.settings.sample.option);
   } else if (this.settings.sample.type === "measurement") {
     return this.sampleMeasurement(this.settings.sample.measurement);
+  } else if (this.settings.sample.type === "models") {
+    return this.sampleModels(this.settings.sample.models);
   }
   this.draft();
+};
+
+Pattern.prototype.sampleParts = function() {
+  let parts = {};
+  this.settings.mode = "sample";
+  this.settings.paperless = false;
+  this.draft();
+  for (let i in this.parts) {
+    parts[i] = new Part();
+    parts[i].render = this.parts[i].render;
+  }
+  console.log("sample parts", parts);
+  return parts;
 };
 
 /**
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(option) {
-  this.settings.mode = "sample";
-  this.settings.paperless = "false";
   let factor, step, val;
-  let parts = {};
+  let parts = this.sampleParts();
   if (typeof this.config.options[option].type === "undefined") factor = 100;
   else factor = 1;
   val = this.config.options[option].min / factor;
   step = (this.config.options[option].max / factor - val) / 9;
-  // First run
-  this.options[option] = val;
-  this.draft();
-  for (let i in this.parts) {
-    parts[i] = new Part();
-    parts[i].render = this.parts[i].render;
-    for (let j in this.parts[i].paths) {
-      parts[i].paths[j + "_1"] = this.parts[i].paths[j]
-        .clone()
-        .attr("class", "sample-1", true);
-    }
-  }
-  // Consecutive runs
-  for (let l = 2; l < 11; l++) {
-    val += step;
+  for (let l = 1; l < 11; l++) {
     this.options[option] = val;
     this.debug(`Sampling option ${option} with value ${val}`);
     this.draft();
@@ -117,6 +116,7 @@ Pattern.prototype.sampleOption = function(option) {
           .attr("class", "sample-" + l, true);
       }
     }
+    val += step;
   }
   this.parts = parts;
 
@@ -127,28 +127,11 @@ Pattern.prototype.sampleOption = function(option) {
  * Handles measurement sampling
  */
 Pattern.prototype.sampleMeasurement = function(measurement) {
-  this.settings.mode = "sample";
-  this.settings.paperless = "false";
-  let factor, step, val;
-  let parts = {};
-  val = this.settings.measurements[measurement];
-  step = val / 50;
+  let parts = this.sampleParts();
+  let val = this.settings.measurements[measurement];
+  let step = val / 50;
   val = val * 0.9;
-  // First run
-  this.settings.measurements[measurement] = val;
-  this.draft();
-  for (let i in this.parts) {
-    parts[i] = new Part();
-    parts[i].render = this.parts[i].render;
-    for (let j in this.parts[i].paths) {
-      parts[i].paths[j + "_1"] = this.parts[i].paths[j]
-        .clone()
-        .attr("class", "sample-1", true);
-    }
-  }
-  // Consecutive runs
-  for (let l = 2; l < 11; l++) {
-    val += step;
+  for (let l = 1; l < 11; l++) {
     this.settings.measurements[measurement] = val;
     this.debug(`Sampling measurement ${measurement} with value ${val}`);
     this.draft();
@@ -157,6 +140,31 @@ Pattern.prototype.sampleMeasurement = function(measurement) {
         parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
           .clone()
           .attr("class", "sample-" + l, true);
+      }
+    }
+    val += step;
+  }
+  this.parts = parts;
+
+  return this;
+};
+
+/**
+ * Handles models sampling
+ */
+Pattern.prototype.sampleModels = function(models) {
+  let parts = this.sampleParts();
+  let count = 0;
+  for (let l in models) {
+    count++;
+    this.settings.measurements = models[l];
+    this.debug(`Sampling model ${l}`);
+    this.draft();
+    for (let i in this.parts) {
+      for (let j in this.parts[i].paths) {
+        parts[i].paths[j + "_" + count] = this.parts[i].paths[j]
+          .clone()
+          .attr("class", "sample-" + count, true);
       }
     }
   }

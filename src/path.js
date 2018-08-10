@@ -157,7 +157,7 @@ Path.prototype.boundary = function() {
 /** Returns a deep copy of this */
 Path.prototype.clone = function() {
   let clone = new Path();
-  clone.render = this.render = true;
+  clone.render = this.render;
   if (this.topLeft) clone.topLeft = this.topLeft.clone();
   else clone.topLeft = false;
   if (this.bottomRight) clone.bottomRight = this.bottomRight.clone();
