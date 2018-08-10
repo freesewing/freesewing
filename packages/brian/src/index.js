@@ -19,12 +19,27 @@ var pattern = new freesewing.Pattern({ version: version, ...config })
   .with(pluginTitle);
 
 pattern.draft = function() {
-  pattern.parts.base = base.draft(pattern);
-  pattern.parts.back = back.draft(pattern);
-  pattern.parts.front = front.draft(pattern);
-  pattern.parts.sleeve = sleeve.draft(pattern);
+  pattern.parts.base = this.draftBase();
+  pattern.parts.back = this.draftBack();
+  pattern.parts.front = this.draftFront();
+  pattern.parts.sleeve = this.draftSleeve();
 
   return pattern;
 };
 
+pattern.draftBase = function() {
+  return base.draft(this);
+};
+
+pattern.draftBack = function() {
+  return back.draft(this);
+};
+
+pattern.draftFront = function() {
+  return front.draft(this);
+};
+
+pattern.draftSleeve = function() {
+  return sleeve.draft(this);
+};
 export default pattern;
