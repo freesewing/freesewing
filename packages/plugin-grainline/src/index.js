@@ -1,4 +1,4 @@
-import markers from "./lib/markers";
+import markers from "./markers";
 import { version, name } from "../package.json";
 
 export default {
