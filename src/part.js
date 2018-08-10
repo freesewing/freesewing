@@ -1,4 +1,4 @@
-import { macroName, units } from "./utils";
+import * as utils from "./utils";
 import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
@@ -17,6 +17,7 @@ function Part() {
   this.width = false;
   this.height = false;
   this.render = true;
+  this.utils = utils;
   this.points.origin = new Point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
   // Keep track of attached hooks
@@ -39,7 +40,7 @@ Part.prototype.macroClosure = function(args) {
   let self = this;
   let data = args;
   let method = function(key, data) {
-    let macro = macroName(key);
+    let macro = utils.macroName(key);
     if (typeof self[macro] === "function") {
       self[macro](data);
     } else {
@@ -73,7 +74,7 @@ Part.prototype.getUid = function() {
 Part.prototype.unitsClosure = function(value) {
   let self = this;
   let method = function(value) {
-    return units(value, self.context.settings.units);
+    return utils.units(value, self.context.settings.units);
   };
 
   return method;
@@ -156,6 +157,7 @@ Part.prototype.shorthand = function() {
     snippets: this.snippets || {},
     macro: this.macroClosure(),
     units: this.unitsClosure(),
+    utils: this.utils,
     Point: this.Point,
     Path: this.Path,
     Snippet: this.Snippet,
