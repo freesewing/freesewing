@@ -8,7 +8,7 @@ import Svg from "./svg";
 import Hooks from "./hooks";
 import pack from "bin-pack";
 import Store from "./store";
-import Debug from "./debug";
+import * as hooklib from "hooks";
 
 export default function Pattern(config = false) {
   // width and height properties
@@ -16,6 +16,7 @@ export default function Pattern(config = false) {
   this.height = false;
 
   // Hooks and Svg instance
+  for (let k in hooklib) this[k] = hooklib[k];
   this.hooks = new Hooks();
   Svg.prototype.hooks = this.hooks;
 
@@ -174,9 +175,7 @@ Pattern.prototype.sampleModels = function(models) {
 };
 
 /** Debug method, exposes debug hook */
-Pattern.prototype.debug = function(data) {
-  this.dbg.debug(data);
-};
+Pattern.prototype.debug = function(data) {};
 
 Pattern.prototype.render = function() {
   this.svg = new Svg(this);
@@ -189,11 +188,22 @@ Pattern.prototype.on = function(hook, method) {
     this.hooks._hooks[hook] = [];
   }
   this.hooks._hooks[hook].push(method);
+
+  // Pattern object hooks need to be attached on load
+  let localHooks = [
+    "preDraft",
+    "postDraft",
+    "preSample",
+    "postSample",
+    "debug"
+  ];
+  if (localHooks.includes(hook)) {
+    let self = this;
+    this.hooks.attach(hook, self);
+  }
 };
 
 Pattern.prototype.with = function(plugin) {
-  this.dbg = new Debug(this.hooks);
-
   this.debug(`Plugin: ${plugin.name} v${plugin.version}`);
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);

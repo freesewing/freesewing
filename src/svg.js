@@ -27,17 +27,17 @@ function Svg(pattern) {
 
   //this.hooks was injected into the prototype by pattern
   let self = this;
-  this.hooks.attach("preRenderSvg", self);
-  this.hooks.attach("postRenderSvg", self);
+  this.hooks.attach("preRender", self);
+  this.hooks.attach("postRender", self);
   this.hooks.attach("insertText", self);
   this.hooks.attach("debug", self);
 }
 
-/** Method to attach preRenderSvg hooks on */
-Svg.prototype.preRenderSvg = function() {};
+/** Method to attach preRender hooks on */
+Svg.prototype.preRender = function() {};
 
-/** Method to attach postRenderSvg hooks on */
-Svg.prototype.postRenderSvg = function() {};
+/** Method to attach postRender hooks on */
+Svg.prototype.postRender = function() {};
 
 /** Method to attach insertText hooks on */
 Svg.prototype.insertText = function() {};
@@ -47,7 +47,7 @@ Svg.prototype.debug = function() {};
 
 /** Renders a draft object as SVG */
 Svg.prototype.render = function(pattern) {
-  this.preRenderSvg();
+  this.preRender();
   this.attributes.add("width", pattern.width + "mm");
   this.attributes.add("height", pattern.height + "mm");
   this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
@@ -69,7 +69,7 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.closeGroup();
   this.svg += this.nl() + "</svg>";
   this.svg += this.renderComments(this.footer);
-  this.postRenderSvg();
+  this.postRender();
   return this.svg;
 };
 
