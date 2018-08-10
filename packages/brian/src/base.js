@@ -6,7 +6,12 @@ var base = {
     part.render = false;
 
     // prettier-ignore
-    let {measurements, options, points, paths, snippets, Path, Point, Snippet, utils, final, paperless, sa, macro} = part.shorthand();
+    let {measurements, options, store, points, paths, snippets, Path, Point, Snippet, utils, final, paperless, sa, macro} = part.shorthand();
+
+    store.set(
+      "shoulderEase",
+      (measurements.shoulderToShoulder * options.shoulderEase) / 2
+    );
 
     // Center back (cb) vertical axis
     points.cbNeck = new Point(
@@ -50,13 +55,14 @@ var base = {
       0
     );
     points.shoulder = new Point(
-      measurements.shoulderToShoulder / 2 + options.shoulderEase / 2,
+      measurements.shoulderToShoulder / 2 + store.get("shoulderEase"),
       points.cbShoulder.y
     );
 
     // Armhhole
     points.armholePitch = new Point(
-      (measurements.shoulderToShoulder * options.acrossBackFactor) / 2,
+      (measurements.shoulderToShoulder * options.acrossBackFactor) / 2 +
+        store.get("shoulderEase") / 2,
       points.shoulder.y + points.shoulder.dy(points.armhole) / 2
     );
     points._tmp1 = new Point(points.armholePitch.x, points.armhole.y);
