@@ -162,8 +162,9 @@ Svg.prototype.renderPath = function(path) {
 };
 
 Svg.prototype.renderPathText = function(path) {
-  let text = path.attributes.get("data-text");
-  if (!text) return "";
+  this.text = path.attributes.get("data-text");
+  if (!this.text) return "";
+  else this.insertText();
   let attributes = path.attributes.renderIfPrefixIs("data-text-");
   // Sadly aligning text along a patch can't be done in CSS only
   let offset = "";
@@ -175,7 +176,7 @@ Svg.prototype.renderPathText = function(path) {
   this.indent();
   svg += `<textPath xlink:href="#${path.attributes.get(
     "id"
-  )}" ${offset}><tspan ${attributes}>${text}</tspan></textPath>`;
+  )}" ${offset}><tspan ${attributes}>${this.text}</tspan></textPath>`;
   this.outdent();
   svg += this.nl() + "</text>";
 
@@ -183,8 +184,9 @@ Svg.prototype.renderPathText = function(path) {
 };
 
 Svg.prototype.renderText = function(point) {
-  let text = point.attributes.get("data-text");
-  if (!text) return false;
+  this.text = point.attributes.get("data-text");
+  if (!this.text) return false;
+  else this.insertText();
 
   point.attributes.add("data-text-x", point.x);
   point.attributes.add("data-text-y", point.y);
@@ -193,7 +195,7 @@ Svg.prototype.renderText = function(point) {
     "data-text-"
   )}>`;
   this.indent();
-  svg += `<tspan>${text}</tspan>`;
+  svg += `<tspan>${this.text}</tspan>`;
   this.outdent();
   svg += this.nl() + "</text>";
 
