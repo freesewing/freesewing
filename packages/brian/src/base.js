@@ -37,7 +37,10 @@ var base = {
     );
     points.cbHips = new Point(
       0,
-      points.cbWaist.y + measurements.naturalWaistToHip
+      points.cbWaist.y +
+        measurements.naturalWaistToHip +
+        (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
+          options.lengthBonus
     );
 
     // Side back (cb) vertical axis

@@ -17,10 +17,6 @@ export default {
     // Constants
     collarFactor:           { val: 4.8, type: "constant" },
 
-    // Measures
-    lengthBonus:       { val:  0, min: -40, max: 120, type: "measure" },
-    sleeveLengthBonus: { val:  0, min: -40, max:  80, type: "measure" },
-
     // Percentages
     acrossBackFactor:       { val:  97, min: 93, max: 100 },
     armholeDepthFactor:     { val:  60, min: 50, max:  70 },
@@ -30,6 +26,7 @@ export default {
     collarEase:             { val: 3.5, min:  0, max:  10 },
     cuffEase:               { val:  20, min:  0, max: 200 },
     frontArmholeDeeper:     { val: 0.5, min:  0, max: 1.5 },
+    lengthBonus:            { val:  0, min:  -4, max:  60 },
     shoulderEase:           { val:   0, min: -2, max:   6 },
     shoulderSlopeReduction: { val:   0, min:  0, max:   8 },
     sleevecapEase:          { val:   1, min:  0, max:  10 },
@@ -50,5 +47,6 @@ export default {
     sleevecapQ4Spread1:     { val:   7, min:  4, max:  20 },
     sleevecapQ4Spread2:     { val:   7, min:  4, max:  20 },
     sleeveWidthGuarantee:   { val:  90, min: 25, max: 100 },
+    sleeveLengthBonus:      { val:   0, min:-40, max:  10 },
   }
 };
