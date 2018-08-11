@@ -1,1 +1,0 @@
-../../plugins/plugin-logo/dist/browser.js

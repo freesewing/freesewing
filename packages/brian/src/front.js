@@ -3,9 +3,7 @@ import base from "./base";
 import * as shared from "./shared";
 
 var front = {
-  draft: function(pattern) {
-    let part = new pattern.Part().copy(pattern.parts.back);
-
+  draft: function(part) {
     // prettier-ignore
     let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = part.shorthand();
 

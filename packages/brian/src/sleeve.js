@@ -145,8 +145,7 @@ function draftSleevecap(part, run) {
 }
 
 var sleeve = {
-  draft: function(pattern) {
-    let part = new pattern.Part();
+  draft: function(part) {
     // prettier-ignore
     let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
 

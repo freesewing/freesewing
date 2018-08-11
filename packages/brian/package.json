@@ -46,11 +46,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-cutonfold": "0.7.2",
-    "@freesewing/plugin-grainline": "0.0.1",
-    "@freesewing/plugin-logo": "^0.2.1",
-    "@freesewing/plugin-title": "0.5.1",
-    "freesewing": "^0.6.0"
+    "freesewing": "^0.6.0",
+    "@freesewing/plugin-bundle": "0.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",

@@ -1,9 +1,5 @@
 import freesewing from "freesewing";
-import pluginCutonfold from "@freesewing/plugin-cutonfold";
-import pluginGrainline from "@freesewing/plugin-grainline";
-import pluginDimension from "@freesewing/plugin-dimension";
-import pluginLogo from "@freesewing/plugin-logo";
-import pluginTitle from "@freesewing/plugin-title";
+import pluginBundle from "@freesewing/plugin-bundle";
 
 import config from "../config/config";
 import { version } from "../package.json";
@@ -13,39 +9,22 @@ import back from "./back";
 import front from "./front";
 import sleeve from "./sleeve";
 
-var pattern = new freesewing.Pattern({ version: version, ...config })
-  .with(pluginCutonfold)
-  .with(pluginGrainline)
-  .with(pluginDimension)
-  .with(pluginLogo)
-  .with(pluginTitle);
+var pattern = new freesewing.Pattern({ version: version, ...config }).with(
+  pluginBundle
+);
 
 pattern.draft = function() {
-  pattern.parts.base = this.draftBase();
-  pattern.parts.back = this.draftBack();
-  pattern.parts.front = this.draftFront();
-  pattern.parts.sleeve = this.draftSleeve();
+  this.parts.base = this.draftBase(new pattern.Part());
+  this.parts.back = this.draftBack(new pattern.Part().copy(this.parts.base));
+  this.parts.front = this.draftFront(new pattern.Part().copy(this.parts.back));
+  this.parts.sleeve = this.draftSleeve(new pattern.Part());
 
   return pattern;
 };
 
-pattern.draftBase = function(pattern = false) {
-  if (pattern === false) pattern = this;
-  return base.draft(pattern);
-};
+pattern.draftBase = part => base.draft(part);
+pattern.draftBack = part => back.draft(part);
+pattern.draftFront = part => front.draft(part);
+pattern.draftSleeve = part => sleeve.draft(part);
 
-pattern.draftBack = function(pattern = false) {
-  if (pattern === false) pattern = this;
-  return back.draft(pattern);
-};
-
-pattern.draftFront = function(pattern = false) {
-  if (pattern === false) pattern = this;
-  return front.draft(pattern);
-};
-
-pattern.draftSleeve = function(pattern = false) {
-  if (pattern === false) pattern = this;
-  return sleeve.draft(pattern);
-};
 export default pattern;

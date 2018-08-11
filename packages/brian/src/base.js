@@ -1,8 +1,7 @@
 import freesewing from "freesewing";
 
 var base = {
-  draft: function(pattern) {
-    let part = new pattern.Part();
+  draft: function(part) {
     part.render = false;
 
     // prettier-ignore

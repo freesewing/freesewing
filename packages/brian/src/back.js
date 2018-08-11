@@ -2,9 +2,7 @@ import freesewing from "freesewing";
 import * as shared from "./shared";
 
 var back = {
-  draft: function(pattern) {
-    let part = new pattern.Part().copy(pattern.parts.base);
-
+  draft: function(part) {
     // prettier-ignore
     let {store, sa, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
 
