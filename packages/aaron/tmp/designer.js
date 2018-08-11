@@ -1,0 +1,1 @@
+../../plugins/plugin-designer/dist/browser.js

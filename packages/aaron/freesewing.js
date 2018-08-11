@@ -1,0 +1,1 @@
+../freesewing/dist/browser.js
