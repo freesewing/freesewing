@@ -215,6 +215,10 @@ Pattern.prototype.loadPluginHooks = function(plugin) {
   for (let hook of this.hooks.all) {
     if (typeof plugin.hooks[hook] === "function") {
       this.on(hook, plugin.hooks[hook]);
+    } else if (typeof plugin.hooks[hook] === "array") {
+      for (let method of plugin.hooks[hook]) {
+        this.on(hook, method);
+      }
     }
   }
 };
