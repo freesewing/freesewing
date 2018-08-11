@@ -29,19 +29,23 @@ pattern.draft = function() {
   return pattern;
 };
 
-pattern.draftBase = function() {
-  return base.draft(this);
+pattern.draftBase = function(pattern = false) {
+  if (pattern === false) pattern = this;
+  return base.draft(pattern);
 };
 
-pattern.draftBack = function() {
-  return back.draft(this);
+pattern.draftBack = function(pattern = false) {
+  if (pattern === false) pattern = this;
+  return back.draft(pattern);
 };
 
-pattern.draftFront = function() {
-  return front.draft(this);
+pattern.draftFront = function(pattern = false) {
+  if (pattern === false) pattern = this;
+  return front.draft(pattern);
 };
 
-pattern.draftSleeve = function() {
-  return sleeve.draft(this);
+pattern.draftSleeve = function(pattern = false) {
+  if (pattern === false) pattern = this;
+  return sleeve.draft(pattern);
 };
 export default pattern;
