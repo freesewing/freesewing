@@ -422,4 +422,33 @@ Path.prototype.reverse = function() {
   return rev;
 };
 
+///** Returns all points where this intersects with that */
+//Path.prototype.intersectsWith(that) {
+//  let sections = [];
+//  let current;
+//  let closed = false;
+//  for (let i in this.ops) {
+//    let op = this.ops[i];
+//    if (op.type === "line") {
+//      if (!op.to.sitsOn(current))
+//        sections.push(new Path().move(op.to).line(current));
+//    } else if (op.type === "curve") {
+//      sections.push(new Path().move(op.to).curve(op.cp2, op.cp1, current));
+//    } else if (op.type === "close") {
+//      closed = true;
+//    }
+//    if (op.to) current = op.to;
+//  }
+//  if (closed) rev.close();
+//
+//}
+//
+///** Returns an array of paths that make up this path
+// * It's basically the opposite of Path.join()
+// */
+//Path.prototype.divide() {
+//
+//
+//}
+
 export default Path;

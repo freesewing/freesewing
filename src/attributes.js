@@ -1,11 +1,5 @@
-function Attributes(init = false) {
+function Attributes() {
   this.list = {};
-  if (init) {
-    for (let key in init) {
-      let val = init[key];
-      this.add(key, val);
-    }
-  }
 }
 
 /** Adds an attribute */

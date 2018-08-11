@@ -71,11 +71,6 @@ Point.prototype.copy = function() {
   return new Point(this.x, this.y);
 };
 
-/** checks whether this point is equal to that point */
-Point.prototype.equals = function(that) {
-  return this.x === that.x && this.y === that.y ? true : false;
-};
-
 /** Mirrors this point around X value of that point */
 Point.prototype.flipX = function(that) {
   return new Point(that.x + this.dx(that), that.y);
