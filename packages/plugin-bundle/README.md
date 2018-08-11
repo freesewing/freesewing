@@ -15,7 +15,12 @@ A freesewing plugin that provides the following plugins in one bundle:
  3)  [plugin-grainline](https://github.com/freesewing/plugin-grainline) : Add grainline indicators to your patterns 
  4)  [plugin-logo](https://github.com/freesewing/plugin-logo) : Add our logo to your patterns
  5)  [plugin-title](https://github.com/freesewing/plugin-title) : Add pretty titles to your pattern parts 
-      
+
+Note that these are all **build-time plugins**. In other words, plugins used by developers/pattern designers,
+rather than run-time plugins that are used when generating patterns.
+
+Without exception, all freesewing patterns use all these 5 plugins, so it made sense to bundle them.
+
 ## Usage
 
 To load this plugin, add it to your instantiated pattern.

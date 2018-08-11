@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.bundle",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_plugins_bundle --footer 'freesewing.plugins.bundle = freesewing_plugins_bundle;'",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
@@ -45,8 +45,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.56",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^5.2.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
@@ -55,9 +57,10 @@
     "prettier": "^1.13.7",
     "rimraf": "^2.6.2",
     "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "9.1.5",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-node-resolve": "3.3.0",
     "rollup-plugin-terser": "^1.0.1"
   },
   "files": [
@@ -65,5 +68,12 @@
     "README.md",
     "package-lock.json",
     "package.json"
-  ]
+  ],
+  "dependencies": {
+    "@freesewing/plugin-cutonfold": "0.9.0",
+    "@freesewing/plugin-dimension": "0.4.0",
+    "@freesewing/plugin-grainline": "0.0.2",
+    "@freesewing/plugin-logo": "0.3.2",
+    "@freesewing/plugin-title": "0.6.2"
+  }
 }

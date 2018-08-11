@@ -1,6 +1,7 @@
 import { terser } from "rollup-plugin-terser";
 import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
+import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
 import { version, name, description, author, license } from "./package.json";
 
@@ -11,16 +12,13 @@ export default {
       browser: true
     }),
     json(),
+    commonjs(),
     babel({
       exclude: "node_modules/**"
     }),
     terser({
       output: {
-        preamble: `/**\n * ${name} | v${version}\n * ${
-          description
-        }\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${
-          license
-        }\n */`
+        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
       }
     })
   ]
