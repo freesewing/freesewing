@@ -140,7 +140,7 @@ Part.prototype.copy = function(orig) {
 };
 
 Part.prototype.units = function(input) {
-  return units(input, this.context.settings.units);
+  return utils.units(input, this.context.settings.units);
 };
 
 /** Returns an object with shorthand access for pattern design */
