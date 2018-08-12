@@ -1,24 +1,24 @@
 var expect = require("chai").expect;
 var Point = require("../dist/index.js").Point;
 
-it("should return point object", () => {
+it("Should return point object", () => {
   let result = new Point(2, 4);
   expect(result).to.be.a("object");
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(4);
 });
 
-it("should limit point precision", () => {
+it("Should limit point precision", () => {
   let result = new Point(2.12345, 4.98765);
   expect(result.x).to.equal(2.12);
   expect(result.y).to.equal(4.99);
 });
 
-it("should return distance", () => {
+it("Should return distance", () => {
   expect(new Point(2, 4).dist(new Point(-123, -32423))).to.equal(32427.24);
 });
 
-it("should return slope", () => {
+it("Should return slope", () => {
   let from = new Point(0, 0);
   expect(from.slope(new Point(0, -10))).to.equal(-Infinity);
   expect(from.slope(new Point(10, 0))).to.equal(0);
@@ -28,7 +28,7 @@ it("should return slope", () => {
   expect(from.slope(new Point(-10, 5))).to.equal(-0.5);
 });
 
-it("should return angle", () => {
+it("Should return angle", () => {
   let from = new Point(0, 0);
   expect(from.angle(new Point(10, 0))).to.equal(0);
   expect(from.angle(new Point(-20, 0))).to.equal(180);
@@ -38,31 +38,31 @@ it("should return angle", () => {
   expect(from.angle(new Point(10, 10))).to.equal(315);
 });
 
-it("should copy a point", () => {
+it("Should copy a point", () => {
   let result = new Point(2, 4).copy();
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(4);
 });
 
-it("should check points for equality", () => {
+it("Should check points for equality", () => {
   let a = new Point(-123, 456);
   let b = new Point(-123, 456);
   expect(a).to.deep.equal(b);
 });
 
-it("should flip point around X value", () => {
+it("Should flip point around X value", () => {
   let result = new Point(2, 4).flipX(new Point(-20, 4));
   expect(result.x).to.equal(-42);
   expect(result.y).to.equal(4);
 });
 
-it("should flip point around Y value", () => {
+it("Should flip point around Y value", () => {
   let result = new Point(2, 4).flipY(new Point(2, -14));
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(-32);
 });
 
-it("should shift a point", () => {
+it("Should shift a point", () => {
   let origin = new Point(0, 0);
   let n = origin.shift(90, 10);
   let e = origin.shift(0, 10);
@@ -81,7 +81,7 @@ it("should shift a point", () => {
   expect(rand.y).to.equal(382.43);
 });
 
-it("should shift a point towards another", () => {
+it("Should shift a point towards another", () => {
   let origin = new Point(0, 0);
   let n = new Point(0, -10);
   let e = new Point(10, 0);
@@ -103,7 +103,7 @@ it("should shift a point towards another", () => {
   expect(ss.shiftTowards(se, 200).y).to.equal(-18.42);
 });
 
-it("should shift a point a fraction towards another", () => {
+it("Should shift a point a fraction towards another", () => {
   let origin = new Point(0, 0);
   let n = new Point(0, -10);
   let e = new Point(10, 0);
@@ -125,7 +125,7 @@ it("should shift a point a fraction towards another", () => {
   expect(ss.shiftFractionTowards(se, 200).y).to.equal(-994.91);
 });
 
-it("should shift a point beyond another", () => {
+it("Should shift a point beyond another", () => {
   let origin = new Point(0, 0);
   let n = new Point(0, -10);
   let e = new Point(10, 0);
@@ -147,7 +147,7 @@ it("should shift a point beyond another", () => {
   expect(ss.shiftOutwards(se, 200).y).to.equal(-141.42);
 });
 
-it("should rotate a point around another", () => {
+it("Should rotate a point around another", () => {
   let sun = new Point(0, 0);
   let moon = new Point(10, 0);
   let a = moon.rotate(90, sun);
@@ -166,7 +166,7 @@ it("should rotate a point around another", () => {
   expect(d.y).to.equal(54);
 });
 
-it("should set an attribute", () => {
+it("Should set an attribute", () => {
   let p = new Point(0, 0).attr("class", "test");
   expect(p.attributes.get("class")).to.equal("test");
   p.attr("class", "more");
@@ -175,7 +175,7 @@ it("should set an attribute", () => {
   expect(p.attributes.get("class")).to.equal("less");
 });
 
-it("should detect points in the same location", () => {
+it("Should detect points in the same location", () => {
   let p1 = new Point(123, 456);
   let p2 = new Point(123, 456);
   expect(p1.sitsOn(p2)).to.equal(true);
@@ -183,7 +183,7 @@ it("should detect points in the same location", () => {
   expect(p1.sitsOn(p2)).to.equal(false);
 });
 
-it("should clone a point", () => {
+it("Should clone a point", () => {
   let p1 = new Point(123, 456).attr("class", "something");
   p1.attr("class", "else");
   let p2 = p1.clone();

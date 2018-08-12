@@ -5,12 +5,12 @@ function newAttr() {
   return new Point(0, 0).attributes;
 }
 
-it("should return false when getting an unset attribute", () => {
+it("Should return false when getting an unset attribute", () => {
   let a = newAttr();
   expect(a.get("test")).to.equal(false);
 });
 
-it("should render attributes correctly", () => {
+it("Should render attributes correctly", () => {
   let a = newAttr()
     .set("class", "test")
     .add("class", "render")
@@ -18,7 +18,7 @@ it("should render attributes correctly", () => {
   expect(a.render()).to.equal(' class="test render" transform="scale(1)"');
 });
 
-it("should render attributes with given prefix only", () => {
+it("Should render attributes with given prefix only", () => {
   let a = newAttr()
     .set("class", "test")
     .add("class", "render")
