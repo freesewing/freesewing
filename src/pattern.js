@@ -40,7 +40,6 @@ export default function Pattern(config = false) {
     if (typeof option === "object") {
       if (typeof option.type === "undefined")
         this.options[i] = option.val / 100;
-      else this.options[i] = option.val;
     } else if (typeof option === "number") {
       this.options[i] = option;
     }
@@ -85,7 +84,6 @@ Pattern.prototype.sample = function() {
   } else if (this.settings.sample.type === "models") {
     return this.sampleModels(this.settings.sample.models);
   }
-  this.draft();
 };
 
 Pattern.prototype.sampleParts = function() {
@@ -97,7 +95,6 @@ Pattern.prototype.sampleParts = function() {
     parts[i] = new Part();
     parts[i].render = this.parts[i].render;
   }
-  console.log("sample parts", parts);
   return parts;
 };
 
@@ -105,10 +102,15 @@ Pattern.prototype.sampleParts = function() {
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(option) {
-  let factor, step, val;
+  let step, val;
   let parts = this.sampleParts();
-  if (typeof this.config.options[option].type === "undefined") factor = 100;
-  else factor = 1;
+  if (
+    typeof this.config.options[option].min === "undefined" ||
+    typeof this.config.options[option].max === "undefined"
+  ) {
+    throw "Cannot sample an option without min and max values";
+  }
+  let factor = 100;
   val = this.config.options[option].min / factor;
   step = (this.config.options[option].max / factor - val) / 9;
   for (let l = 1; l < 11; l++) {
@@ -135,6 +137,7 @@ Pattern.prototype.sampleOption = function(option) {
 Pattern.prototype.sampleMeasurement = function(measurement) {
   let parts = this.sampleParts();
   let val = this.settings.measurements[measurement];
+  if (val === undefined) throw "Cannot sample a measurement that is undefined";
   let step = val / 50;
   val = val * 0.9;
   for (let l = 1; l < 11; l++) {
