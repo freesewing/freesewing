@@ -1,5 +1,5 @@
-var expect = require("chai").expect;
-var Point = require("../dist/index.js").Point;
+let expect = require("chai").expect;
+let Point = require("../dist/index.js").Point;
 
 it("Should return point object", () => {
   let result = new Point(2, 4);

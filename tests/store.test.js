@@ -1,8 +1,8 @@
-var expect = require("chai").expect;
-var freesewing = require("../dist/index.js");
+let expect = require("chai").expect;
+let freesewing = require("../dist/index.js");
 
-var pattern = new freesewing.Pattern();
-var store = pattern.store;
+let pattern = new freesewing.Pattern();
+let store = pattern.store;
 
 it("Store should be a Map", () => {
   expect(store.data.toString()).to.equal("[object Map]");

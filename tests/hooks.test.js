@@ -1,8 +1,8 @@
-var expect = require("chai").expect;
-var freesewing = require("../dist/index.js");
+let expect = require("chai").expect;
+let freesewing = require("../dist/index.js");
 
-var pattern = new freesewing.Pattern();
-var h = pattern.hooks;
+let pattern = new freesewing.Pattern();
+let h = pattern.hooks;
 
 it("Should contain all hooks", () => {
   let test = [
@@ -38,11 +38,11 @@ it("Should not attach a non-existing hook", () => {
   expect(h.attach("no-such-hook", obj)).to.equal(undefined);
 });
 
-var count = 0;
-var pre = function() {
+let count = 0;
+let pre = function() {
   count += 5;
 };
-var post = function() {
+let post = function() {
   count = count * -1;
 };
 

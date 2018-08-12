@@ -1,5 +1,5 @@
-var expect = require("chai").expect;
-var Point = require("../dist/index.js").Point;
+let expect = require("chai").expect;
+let Point = require("../dist/index.js").Point;
 
 function newAttr() {
   return new Point(0, 0).attributes;

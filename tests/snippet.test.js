@@ -1,8 +1,8 @@
-var expect = require("chai").expect;
-var freesewing = require("../dist/index.js");
+let expect = require("chai").expect;
+let freesewing = require("../dist/index.js");
 
 it("Should create a snippet", () => {
-  var snip1 = new freesewing.Snippet(
+  let snip1 = new freesewing.Snippet(
     "test",
     new freesewing.Point(12, 34),
     "this is an example"
@@ -14,12 +14,12 @@ it("Should create a snippet", () => {
 });
 
 it("Should default to empty description", () => {
-  var snip2 = new freesewing.Snippet("test", new freesewing.Point(12, 34));
+  let snip2 = new freesewing.Snippet("test", new freesewing.Point(12, 34));
   expect(snip2.description).to.equal("");
 });
 
 it("Should clone a snippet", () => {
-  var snip3 = new freesewing.Snippet(
+  let snip3 = new freesewing.Snippet(
     "boo",
     new freesewing.Point(56, 78),
     "clone me"

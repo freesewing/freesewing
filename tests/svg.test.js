@@ -1,12 +1,12 @@
-var version = require("../package.json").version;
-var render = require("./fixtures/render.js");
-var expect = require("chai").expect;
-var chai = require("chai");
+let version = require("../package.json").version;
+let render = require("./fixtures/render.js");
+let expect = require("chai").expect;
+let chai = require("chai");
 chai.use(require("chai-string"));
-var freesewing = require("../dist/index.js");
+let freesewing = require("../dist/index.js");
 
 it("Svg constructor should initialize object", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   expect(svg.openGroups).to.eql([]);
@@ -35,12 +35,12 @@ it("Svg constructor should initialize object", () => {
 });
 
 it("Should render Svg boilerplate", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
 });
 
 it("Should render Svg part boilerplate", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -50,7 +50,7 @@ it("Should render Svg part boilerplate", () => {
 });
 
 it("Should render Svg path", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -65,7 +65,7 @@ it("Should render Svg path", () => {
   expect(pattern.render()).to.equalIgnoreSpaces(render.path);
 });
 it("Should not render Svg path when render property is false", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -83,7 +83,7 @@ it("Should not render Svg path when render property is false", () => {
 //console.log(pattern.render());
 
 it("Should render Svg text", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -96,7 +96,7 @@ it("Should render Svg text", () => {
 });
 
 it("Should not render empty text", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -108,7 +108,7 @@ it("Should not render empty text", () => {
 });
 
 it("Should render Svg text on path", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -125,7 +125,7 @@ it("Should render Svg text on path", () => {
 });
 
 it("Should render Svg text on path, center aligned", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -142,7 +142,7 @@ it("Should render Svg text on path, center aligned", () => {
 });
 
 it("Should render Svg text on path, right aligned", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
@@ -159,7 +159,7 @@ it("Should render Svg text on path, right aligned", () => {
 });
 
 it("Should render an Svg snippet", () => {
-  var pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern();
   pattern.render();
   let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
