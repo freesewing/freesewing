@@ -97,6 +97,11 @@ Part.prototype.boundary = function() {
         bottomRight.y = path.bottomRight.y;
     }
   }
+  // Fix infinity of part has no paths
+  if (topLeft.x === Infinity) topLeft.x = 0;
+  if (topLeft.y === Infinity) topLeft.y = 0;
+  if (bottomRight.x === -Infinity) bottomRight.x = 0;
+  if (bottomRight.y === -Infinity) bottomRight.y = 0;
   // Add 10mm margin
   this.topLeft = new Point(topLeft.x - 10, topLeft.y - 10);
   this.bottomRight = new Point(bottomRight.x + 10, bottomRight.y + 10);

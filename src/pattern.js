@@ -245,6 +245,8 @@ Pattern.prototype.pack = function() {
   let bins = [];
   for (let key in this.parts) {
     let part = this.parts[key];
+    // Avoid multiple render calls to cause stacking of transforms
+    part.attributes.set("transform", "");
     if (part.render) {
       part.stack();
       bins.push({

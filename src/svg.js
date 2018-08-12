@@ -145,10 +145,7 @@ Svg.prototype.renderPart = function(part) {
 
 /** Returns SVG code for a Point object */
 Svg.prototype.renderPoint = function(point) {
-  let svg = "";
-  if (point.attributes.get("data-text")) svg += this.renderText(point);
-
-  return svg;
+  return this.renderText(point);
 };
 
 /** Returns SVG code for a Path object */
@@ -185,7 +182,7 @@ Svg.prototype.renderPathText = function(path) {
 
 Svg.prototype.renderText = function(point) {
   this.text = point.attributes.get("data-text");
-  if (!this.text) return false;
+  if (!this.text) return "";
   else this.insertText();
 
   point.attributes.add("data-text-x", point.x);
