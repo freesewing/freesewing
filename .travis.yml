@@ -3,5 +3,7 @@ node_js:
   - "node"
 install:
   - npm install
-  - npm install -g codecov
   - npm run nodebuild
+script:
+  - npm run test
+  - npm run coverage
