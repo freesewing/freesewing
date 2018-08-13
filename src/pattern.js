@@ -1,4 +1,3 @@
-import Attributes from "./attributes";
 import { macroName } from "./utils";
 import Part from "./part";
 import Point from "./point";
