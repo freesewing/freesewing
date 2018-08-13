@@ -27,10 +27,11 @@ This is our core library.
 ## Features
 
 - Parametric design of sewing patterns
-- Auto-layout of pattern parts
 - Modular design with support for [plugins](https://github.com/freesewing/plugins)
+- Auto-layout of pattern parts
+- Auto-offset of paths for seam allowance
+- Support for paperless patterns (with [our theme plugin](https://github.com/freesewing/plugin-theme))
 - Sampling of options, a single measurement, or across models
-- Comparison of draft to range of models
 - Renders to SVG
 - Run in the browser as well as on the server with Node.js
 
