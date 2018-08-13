@@ -9,6 +9,7 @@
   <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/v/freesewing" alt="Version"></a>
   <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/license/freesewing" alt="License"></a>
   <a href="https://codecov.io/gh/freesewing/freesewing"><img src="https://badgen.net/codecov/c/github/freesewing/freesewing/master" alt="Code coverage"></a>
+  <a href="https://deepscan.io/dashboard#view=project&pid=2993&bid=23256"><img src="https://deepscan.io/api/projects/2993/branches/23256/badge/grade.svg" alt="DeepScan grade"></a>
   <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
   <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
 </p>
