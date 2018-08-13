@@ -1,5 +1,4 @@
 import Point from "./point";
-import Path from "./path";
 import { round } from "./round";
 
 /** Returns internal hook name for a macro */
