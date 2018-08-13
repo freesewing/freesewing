@@ -187,7 +187,6 @@ Svg.prototype.renderText = function(point) {
 
   point.attributes.add("data-text-x", point.x);
   point.attributes.add("data-text-y", point.y);
-  let attributes = point.attributes.renderIfPrefixIs("data-text-");
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs(
     "data-text-"
   )}>`;
