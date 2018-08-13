@@ -26,7 +26,7 @@ This is our core library.
  
 ## Features
 
-- Supports parametric design
+- Parametric design of sewing patterns
 - Auto-layout of pattern parts
 - Modular design with support for [plugins](https://github.com/freesewing/plugins)
 - Sampling of options, a single measurement, or across models
