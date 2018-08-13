@@ -19,7 +19,7 @@ This is our core library.
 
 ## Links
 
- - 💻 Website: [reesewing.org](https://freesewing.org)
+ - 💻 Website: [freesewing.org](https://freesewing.org)
  - 💬 Chat: [Gitter](https://gitter.im/freesewing/freesewing)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
