@@ -22,7 +22,7 @@
     "precommit": "npm run pretty && lint-staged",
     "test": "nyc mocha tests/*.test.js",
     "report": "nyc report --reporter=html  mocha --compilers js:babel-core/register tests/*.test.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage/coverage.lcov && ./node_modules/.bin/codecov",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "clean": "rimraf dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
