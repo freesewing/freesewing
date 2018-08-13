@@ -21,16 +21,8 @@ export function beamsCross(a1, a2, b1, b2) {
   // Vertical line B
   else {
     // Swap points if line A or B goes from right to left
-    if (a1.x > a2.x) {
-      let tmp = a1.copy();
-      a1 = a2.copy();
-      a2 = tmp;
-    }
-    if (b1.x > b2.x) {
-      let tmp = b1.copy();
-      b1 = b2.copy();
-      b2 = tmp;
-    }
+    if (a1.x > a2.x) a1 = a2.copy();
+    if (b1.x > b2.x) b1 = b2.copy();
     // Find y intercept
     let iA = a1.y - slopeA * a1.x;
     let iB = b1.y - slopeB * b1.x;
