@@ -42,7 +42,6 @@ it("Should render Svg boilerplate", () => {
 it("Should render Svg part boilerplate", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   expect(pattern.render()).to.equalIgnoreSpaces(render.part);
   pattern.parts.test.render = false;
@@ -52,7 +51,6 @@ it("Should render Svg part boilerplate", () => {
 it("Should render Svg path", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
@@ -67,7 +65,6 @@ it("Should render Svg path", () => {
 it("Should not render Svg path when render property is false", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
@@ -84,7 +81,6 @@ it("Should not render Svg path when render property is false", () => {
 it("Should render Svg text", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
@@ -97,7 +93,6 @@ it("Should render Svg text", () => {
 it("Should not render empty text", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
@@ -109,7 +104,6 @@ it("Should not render empty text", () => {
 it("Should render Svg text on path", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
@@ -126,7 +120,6 @@ it("Should render Svg text on path", () => {
 it("Should render Svg text on path, center aligned", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
@@ -143,7 +136,6 @@ it("Should render Svg text on path, center aligned", () => {
 it("Should render Svg text on path, right aligned", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
@@ -160,7 +152,6 @@ it("Should render Svg text on path, right aligned", () => {
 it("Should render an Svg snippet", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  let svg = pattern.svg;
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.snippets.test = new p.Snippet(
