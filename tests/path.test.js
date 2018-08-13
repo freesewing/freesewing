@@ -320,11 +320,8 @@ it("Should reverse a path", () => {
     .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
     .close();
   let rev = test.reverse();
-  console.log("rev", rev);
   let tb = test.bbox();
   let rb = rev.bbox();
-  console.log("tb", tb);
-  console.log("rb", rb);
   expect(tb.topLeft.x).to.equal(rb.topLeft.x);
   expect(tb.topLeft.y).to.equal(rb.topLeft.y);
   expect(tb.bottomRight.x).to.equal(rb.bottomRight.x);

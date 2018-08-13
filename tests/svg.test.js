@@ -80,7 +80,6 @@ it("Should not render Svg path when render property is false", () => {
   p.paths.test.render = false;
   expect(pattern.render()).to.equalIgnoreSpaces(render.part);
 });
-//console.log(pattern.render());
 
 it("Should render Svg text", () => {
   let pattern = new freesewing.Pattern();
