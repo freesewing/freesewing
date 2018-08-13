@@ -3,4 +3,4 @@ node_js:
   - "node"
 install:
   - npm install
-  - npm nodebuild
+  - npm run nodebuild
