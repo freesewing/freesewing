@@ -38,11 +38,10 @@ function Part() {
 
 Part.prototype.macroClosure = function(args) {
   let self = this;
-  let data = args;
-  let method = function(key, data) {
+  let method = function(key, args) {
     let macro = utils.macroName(key);
     if (typeof self[macro] === "function") {
-      self[macro](data);
+      self[macro](args);
     } else {
       self.debug(`Warning: ${macro} is not registered`);
     }
