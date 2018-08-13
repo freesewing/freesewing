@@ -31,6 +31,12 @@
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
     "watch": "rollup -c rollup.js -o dist/index.js -f cjs --watch"
   },
+  "nyc": {
+    "exclude": [
+      "dist",
+      "tests"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

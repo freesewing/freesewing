@@ -66,9 +66,6 @@ Path.prototype.asPathstring = function() {
       case "close":
         d += " z";
         break;
-      default:
-        throw `${op.type} is not a valid path command`;
-        break;
     }
   }
 
@@ -89,7 +86,7 @@ Path.prototype.length = function() {
     if (op.type === "move") {
       start = op.to;
     } else if (op.type === "line") {
-      length += op.from.dist(op.to);
+      length += current.dist(op.to);
     } else if (op.type === "curve") {
       length += new Bezier(
         { x: current.x, y: current.y },
@@ -228,8 +225,9 @@ function pathOffset(path, distance) {
 
 /** Offsets a line by distance */
 function offsetLine(from, to, distance) {
-  // Cannot offset line that starts and ends in the same point
-  if (from.x === to.x && from.y === to.y) return false;
+  if (from.x === to.x && from.y === to.y) {
+    throw "Cannot offset a line that starts and ends in the same point";
+  }
   let angle = from.angle(to) - 90;
 
   return new Path()
@@ -258,7 +256,7 @@ function joinPaths(paths, closed = false) {
       } else if (op.type !== "close") {
         joint.line(op.to);
       } else {
-        throw "Close op not handled";
+        throw "Cannot join a closed paths with another";
       }
     }
   }
@@ -292,7 +290,7 @@ Path.prototype.shiftAlong = function(distance) {
     }
     current = op.to;
   }
-  throw "Ran out of curve to shift along";
+  throw "Ran out of path to shift along";
 };
 
 /** Returns a point that lies at fraction along this */
@@ -303,8 +301,6 @@ Path.prototype.shiftFractionAlong = function(fraction) {
 /** Returns a point that lies at distance along bezier */
 function shiftAlongBezier(distance, bezier) {
   let steps = 100;
-  let maxLength = bezier.length();
-  if (distance > maxLength) throw "Cannot shift further than the bezier length";
   let previous, next, t, thisLen;
   let len = 0;
   for (let i = 0; i <= steps; i++) {
@@ -363,14 +359,16 @@ function lineBoundingBox(line) {
         bottomRight: new Point(to.x, from.y)
       };
   } else if (from.x > to.x) {
-    if (from.y < to.y) return { topLeft: to, bottomRight: from };
-    else
+    if (from.y < to.y)
       return {
         topLeft: new Point(to.x, from.y),
         bottomRight: new Point(from.x, to.y)
       };
-  } else {
-    throw "Unhandled scenario in Part.lineBoundingBox()";
+    else
+      return {
+        topLeft: new Point(to.x, to.y),
+        bottomRight: new Point(from.x, from.y)
+      };
   }
 }
 
@@ -421,34 +419,5 @@ Path.prototype.reverse = function() {
 
   return rev;
 };
-
-///** Returns all points where this intersects with that */
-//Path.prototype.intersectsWith(that) {
-//  let sections = [];
-//  let current;
-//  let closed = false;
-//  for (let i in this.ops) {
-//    let op = this.ops[i];
-//    if (op.type === "line") {
-//      if (!op.to.sitsOn(current))
-//        sections.push(new Path().move(op.to).line(current));
-//    } else if (op.type === "curve") {
-//      sections.push(new Path().move(op.to).curve(op.cp2, op.cp1, current));
-//    } else if (op.type === "close") {
-//      closed = true;
-//    }
-//    if (op.to) current = op.to;
-//  }
-//  if (closed) rev.close();
-//
-//}
-//
-///** Returns an array of paths that make up this path
-// * It's basically the opposite of Path.join()
-// */
-//Path.prototype.divide() {
-//
-//
-//}
 
 export default Path;
