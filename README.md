@@ -5,9 +5,11 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 <p align="center">
-  <a href="https://travis-ci.org/freesewing/freesewing"><img src="https://travis-ci.org/freesewing/freesewing.svg?branch=master" alt="Travis build"></a>
+  <a href="https://travis-ci.org/freesewing/freesewing"><img src="https://badgen.net/travis/freesewing/freesewing/master" alt="Travis build"></a>
   <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/v/freesewing" alt="Version"></a>
   <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/license/freesewing" alt="License"></a>
+  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
+  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
 </p>
 # freesewing
 
