@@ -11,62 +11,31 @@
   <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
   <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
 </p>
+
 # freesewing
 
 [Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing pattern.  
 This is our core library.
-A freesewing plugin to display debug information in your browser console.
 
-## Usage
+## Links
 
-To load this plugin, add it to your instantiated pattern.
+ - 💻 Website: [reesewing.org](https://freesewing.org)
+ - 💬 Chat: [Gitter](https://gitter.im/freesewing/freesewing)
+ - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+ - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ 
+## Features
 
-On node.js:
+- Supports parametric design
+- Auto-layout of pattern parts
+- Modular design with support for [plugins](https://github.com/freesewing/plugins)
+- Sampling of options, a single measurement, or across models
+- Comparison of draft to range of models
+- Renders to SVG
+- Run in the browser as well as on the server with Node.js
 
-```js
-import pattern from '@freesewing/pattern-brian'
-import debug from '@freesewing/plugin-debug'
+## Getting started
 
-pattern.with(debug);
-```
+This repository is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
 
-In the browser, this plugin will register as `freesewing.plugins.debug`:
-
-```html
-<script type="text/javascript" src="https://unpkg.com/freesewing"></script>
-<script type="text/javascript" src="https://unpkg.com/@freesewing/plugin-debug"></script>
-<script type="text/javascript" src="https://unpkg.com/@freesewing/pattern-brian"></script>
-
-<script>
-var pattern = freesewing.patterns.brian
-  .with(freesewing.plugins.debug);
-</script>
-```
-
-## Example
-
-This plugin will gather debug info and log it to your browser console:
-
-![Example of the output provided by this plugin](https://github.com/freesewing/plugin-debug/raw/master/img/example.png)
-
-
-## Install
-
-To install, run:
-
-```sh
-npm install @freesewing/plugin-debug
-```
-
-## Build
-
-To build this plugin, run:
-
-```sh
-npm run build
-```
-
-## License: MIT
-
-See [the license file](https://github.com/freesewing/plugin-theme/blob/master/LICENSE)
-for details.
+It is an ongoing project, and not ready for prime-time yet. Watch this space.
