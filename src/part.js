@@ -44,7 +44,7 @@ Part.prototype.macroClosure = function(args) {
     if (typeof self[macro] === "function") {
       self[macro](data);
     } else {
-      console.log(`Warning: ${macro} is not registered`);
+      self.debug(`Warning: ${macro} is not registered`);
     }
   };
 
