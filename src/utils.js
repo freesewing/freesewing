@@ -1,6 +1,5 @@
 import Point from "./point";
 import Path from "./path";
-import Bezier from "bezier-js";
 import { round } from "./round";
 
 /** Returns internal hook name for a macro */
@@ -48,14 +47,12 @@ export function beamsCross(a1, a2, b1, b2) {
 export function linesCross(a1, a2, b1, b2) {
   let p = beamsCross(a1, a2, b1, b2);
   if (!p) return false;
-  if (p) {
-    let lenA = a1.dist(a2);
-    let lenB = b1.dist(b2);
-    let lenC = a1.dist(p) + p.dist(a2);
-    let lenD = b1.dist(p) + p.dist(b2);
-    if (round(lenA) == round(lenC) && round(lenB) == round(lenD)) return p;
-    else return false;
-  }
+  let lenA = a1.dist(a2);
+  let lenB = b1.dist(b2);
+  let lenC = a1.dist(p) + p.dist(a2);
+  let lenD = b1.dist(p) + p.dist(b2);
+  if (round(lenA) == round(lenC) && round(lenB) == round(lenD)) return p;
+  else return false;
 }
 
 /** Find where an (endless) line crosses a certain Y-value */
