@@ -65,12 +65,26 @@ it("Should find the intersection of two line segments", () => {
   expect(X.y).to.equal(43.56);
 });
 
+it("Should find the intersection of an endles line and a give X-value", () => {
+  let a = new freesewing.Point(10, 10);
+  let b = new freesewing.Point(90, 74);
+  let X = freesewing.utils.beamCrossesX(a, b, 69);
+  expect(X.x).to.equal(69);
+  expect(X.y).to.equal(57.2);
+});
+
 it("Should find the intersection of an endles line and a give Y-value", () => {
   let a = new freesewing.Point(10, 10);
   let b = new freesewing.Point(90, 74);
   let X = freesewing.utils.beamCrossesY(a, b, 69);
   expect(X.x).to.equal(83.75);
   expect(X.y).to.equal(69);
+});
+
+it("Should detect vertical lines never pass a give X-value", () => {
+  let a = new freesewing.Point(10, 10);
+  let b = new freesewing.Point(10, 90);
+  expect(freesewing.utils.beamCrossesX(a, b, 69)).to.equal(false);
 });
 
 it("Should detect horizontal lines never pass a give Y-value", () => {

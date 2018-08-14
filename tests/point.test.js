@@ -51,13 +51,13 @@ it("Should check points for equality", () => {
 });
 
 it("Should flip point around X value", () => {
-  let result = new Point(2, 4).flipX(new Point(-20, 4));
+  let result = new Point(2, 4).flipX(new Point(-20, 19));
   expect(result.x).to.equal(-42);
   expect(result.y).to.equal(4);
 });
 
 it("Should flip point around Y value", () => {
-  let result = new Point(2, 4).flipY(new Point(2, -14));
+  let result = new Point(2, 4).flipY(new Point(12, -14));
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(-32);
 });
