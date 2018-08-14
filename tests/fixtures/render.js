@@ -140,7 +140,7 @@ var render = {
     <!--
 
     --><svg
-     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="0.7.1" width="20mm" height="20mm" viewBox="0 0 20 20"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
      >
      <style type="text/css"> <![CDATA[
 
