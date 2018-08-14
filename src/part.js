@@ -161,7 +161,7 @@ Part.prototype.shorthand = function() {
     snippets: this.snippets || {},
     macro: this.macroClosure(),
     units: this.unitsClosure(),
-    utils: this.utils,
+    utils: utils,
     Point: this.Point,
     Path: this.Path,
     Snippet: this.Snippet,
