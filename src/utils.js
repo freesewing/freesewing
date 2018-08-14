@@ -46,6 +46,15 @@ export function linesCross(a1, a2, b1, b2) {
   else return false;
 }
 
+/** Find where an (endless) line crosses a certain X-value */
+export function beamCrossesX(from, to, x) {
+  if (from.x === to.x) return false; // Vertical line
+  let top = new Point(x, -10);
+  let bottom = new Point(x, 10);
+
+  return beamsCross(from, to, top, bottom);
+}
+
 /** Find where an (endless) line crosses a certain Y-value */
 export function beamCrossesY(from, to, y) {
   if (from.y === to.y) return false; // Horizontal line
