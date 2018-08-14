@@ -184,14 +184,23 @@ Svg.prototype.renderText = function(point) {
   this.text = point.attributes.get("data-text");
   if (!this.text) return "";
   else this.insertText();
-
   point.attributes.add("data-text-x", point.x);
   point.attributes.add("data-text-y", point.y);
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs(
     "data-text-"
   )}>`;
   this.indent();
-  svg += `<tspan>${this.text}</tspan>`;
+  // Multi-line text?
+  if (this.text.indexOf("\n")) {
+    let lineHeight = point.attributes.get("data-text-lineheight") || 12;
+    let lines = this.text.split("\n");
+    svg += `<tspan>${lines.shift()}</tspan>`;
+    for (let line of lines) {
+      svg += `<tspan x="${point.x}" dy="${lineHeight}">${line}</tspan>`;
+    }
+  } else {
+    svg += `<tspan>${this.text}</tspan>`;
+  }
   this.outdent();
   svg += this.nl() + "</text>";
 
