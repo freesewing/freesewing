@@ -225,9 +225,7 @@ function pathOffset(path, distance) {
 
 /** Offsets a line by distance */
 function offsetLine(from, to, distance) {
-  if (from.x === to.x && from.y === to.y) {
-    throw "Cannot offset a line that starts and ends in the same point";
-  }
+  if (from.x === to.x && from.y === to.y) return false;
   let angle = from.angle(to) - 90;
 
   return new Path()
