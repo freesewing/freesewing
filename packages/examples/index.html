@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Examples</title>
-    <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script>
+    <script type="text/javascript" src="freesewing.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
     <script type="text/javascript" src="dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script>
@@ -19,7 +19,7 @@
       var pattern = freesewing.patterns.examples
         .with(freesewing.plugins.debug)
         .with(freesewing.plugins.theme)
-        .with(freesewing.plugins.designer)
+        //.with(freesewing.plugins.designer)
         .with(freesewing.plugins.validate)
       ;
       pattern.settings.measurements = freesewing.models.men.manSize36;
