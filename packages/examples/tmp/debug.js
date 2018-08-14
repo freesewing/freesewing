@@ -1,0 +1,1 @@
+../../plugins/plugin-debug/dist/browser.js

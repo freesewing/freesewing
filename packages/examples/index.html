@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Examples</title>
+    <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
+    <script type="text/javascript" src="dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-designer/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-debug/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-validate/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
+  </head>
+  <body>
+    <div id="svg"></div>
+    <script>
+      var pattern = freesewing.patterns.examples
+        .with(freesewing.plugins.debug)
+        .with(freesewing.plugins.theme)
+        .with(freesewing.plugins.designer)
+        .with(freesewing.plugins.validate)
+      ;
+      pattern.settings.measurements = freesewing.models.men.manSize36;
+
+      // Uncomment this line to enable paperless
+      //pattern.settings.paperless = true;
+
+      // Some default settings
+      pattern.settings.sa = 10;
+      pattern.settings.units = 'metric';
+
+      //pattern.sampleOption('chestEase');
+      //pattern.sampleMeasurement('chestCircumference');
+      //pattern.sampleModels(freesewing.models.men);
+      //pattern.sampleModels(freesewing.models.antman);
+      pattern.draft();
+      document.getElementById("svg").innerHTML = pattern.render();
+
+      function pointHover(evt) {
+        var point = evt.target;
+        var id = point.id;
+        var cx = point.getAttribute('x');
+        var cy = point.getAttribute('y');
+        var name = point.getAttribute('data-point');
+        var part = point.getAttribute('data-part');
+        console.log(name+' ('+cx+', '+cy+') @ '+part);
+        var scale = 2;
+        cx = cx-scale*cx;
+        cy = cy-scale*cy;
+        point.setAttribute("transform", 'matrix('+scale+', 0, 0, '+scale+', '+cx+', '+cy+')');
+        pointUnhover(id);
+      }
+      function pointUnhover(id) {
+        setTimeout(function(){
+          document.getElementById(id).removeAttribute("transform", '');
+        }, 500);
+      }
+    </script>
+  </body>
+</html>
