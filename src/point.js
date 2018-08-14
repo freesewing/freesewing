@@ -73,12 +73,12 @@ Point.prototype.copy = function() {
 
 /** Mirrors this point around X value of that point */
 Point.prototype.flipX = function(that) {
-  return new Point(that.x + this.dx(that), that.y);
+  return new Point(that.x + this.dx(that), this.y);
 };
 
 /** Mirrors this point around Y value of that point */
 Point.prototype.flipY = function(that) {
-  return new Point(that.x, that.y + this.dy(that));
+  return new Point(this.x, that.y + this.dy(that));
 };
 
 /** Shifts this point distance in the deg direction */
