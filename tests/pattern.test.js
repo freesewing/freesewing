@@ -132,21 +132,21 @@ it("Should register a hook from a plugin", () => {
 
 it("Should check whether a part is in scope", () => {
   let pattern = new freesewing.Pattern();
-  pattern.settings.scope = "test";
+  pattern.settings.only = "test";
   expect(pattern.inScope("test")).to.equal(true);
   expect(pattern.inScope("mist")).to.equal(false);
 });
 
 it("Should check whether an array of parts is in scope", () => {
   let pattern = new freesewing.Pattern();
-  pattern.settings.scope = "test";
+  pattern.settings.only = "test";
   expect(pattern.inScope(["foo", "bar", "test"])).to.equal(true);
   expect(pattern.inScope(["foo", "bar", "mist"])).to.equal(false);
 });
 
 it("Should check whether a parts is in a scope array", () => {
   let pattern = new freesewing.Pattern();
-  pattern.settings.scope = ["test", "foo", "bar"];
+  pattern.settings.only = ["test", "foo", "bar"];
   expect(pattern.inScope("foo")).to.equal(true);
   expect(pattern.inScope(["bar"])).to.equal(true);
   expect(pattern.inScope(["mest", "foo"])).to.equal(true);

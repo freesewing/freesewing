@@ -50,7 +50,8 @@ Svg.prototype.render = function(pattern) {
   this.preRender();
   this.attributes.add("width", pattern.width + "mm");
   this.attributes.add("height", pattern.height + "mm");
-  this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
+  if (!pattern.settings.embed)
+    this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
   this.svg = this.prefix;
   this.svg += this.renderComments(this.header);
   this.svg += this.renderSvgTag(pattern);
@@ -60,7 +61,7 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.openGroup("draftContainer");
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
-    if (part.render) {
+    if (part.render && pattern.inScope(partId)) {
       this.svg += this.openGroup(this.getUid(), part.attributes);
       this.svg += this.renderPart(part);
       this.svg += this.closeGroup();

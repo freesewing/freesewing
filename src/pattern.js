@@ -249,7 +249,7 @@ Pattern.prototype.pack = function() {
     let part = this.parts[key];
     // Avoid multiple render calls to cause stacking of transforms
     part.attributes.set("transform", "");
-    if (part.render) {
+    if (part.render && this.inScope(key)) {
       part.stack();
       bins.push({
         id: key,
@@ -268,4 +268,25 @@ Pattern.prototype.pack = function() {
   this.height = size.height;
 
   return this;
+};
+
+/** Determines whether a part is in scope
+ * Scope depends on the 'only' setting people can pass
+ * with the name of a part, or an array of parts
+ * The absence of only means all parts
+ *
+ * If partName is an array of names, any name being in
+ * scope will cause this to return true
+ */
+Pattern.prototype.inScope = function(partName) {
+  if (typeof partName !== "string") {
+    for (let part of partName) {
+      if (this.inScope(part)) return true;
+    }
+    return false;
+  }
+  if (typeof this.settings.only === "undefined") return true;
+  else if (this.settings.only === partName) return true;
+  else if (this.settings.only.indexOf(partName) !== -1) return true;
+  else return false;
 };
