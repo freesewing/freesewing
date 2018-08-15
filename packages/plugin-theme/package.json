@@ -18,8 +18,9 @@
     "sewing",
     "patterns"
   ],
-  "main": "dist/node.js",
+  "main": "dist/index.js",
   "unpkg": "dist/browser.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
     "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
