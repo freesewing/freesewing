@@ -23,13 +23,14 @@
     "test": "nyc mocha tests/*.test.js",
     "report": "nyc report --reporter=html  mocha --compilers js:babel-core/register tests/*.test.js",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf tests/dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
+    "browserbuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/browser.js -f iife -n freesewing",
+    "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es",
+    "testbuild": "BABEL_ENV=test rollup -c rollup.js -o tests/dist/index.js -f cjs",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild && npm run testbuild",
     "watch": "rollup -c rollup.js -o dist/index.js -f cjs --watch"
   },
   "nyc": {
@@ -86,5 +87,39 @@
     "dist/*",
     "README.md",
     "package.json"
-  ]
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "env": {
+      "develop": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread"
+        ]
+      },
+      "production": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread",
+          "istanbul"
+        ]
+      }
+    }
+  }
 }

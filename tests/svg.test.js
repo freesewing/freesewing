@@ -3,7 +3,7 @@ let render = require("./fixtures/render.js");
 let expect = require("chai").expect;
 let chai = require("chai");
 chai.use(require("chai-string"));
-let freesewing = require("../dist/index.js");
+let freesewing = require("./dist/index.js");
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();
@@ -37,6 +37,12 @@ it("Svg constructor should initialize object", () => {
 it("Should render Svg boilerplate", () => {
   let pattern = new freesewing.Pattern();
   expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
+});
+
+it("Should render Svg boilerplate for embedding", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.embed = true;
+  expect(pattern.render()).to.equalIgnoreSpaces(render.embed);
 });
 
 it("Should render Svg part boilerplate", () => {

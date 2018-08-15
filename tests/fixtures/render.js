@@ -30,6 +30,35 @@ var render = {
 <!--
 
 -->`,
+  embed: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <!--
+
+    --><svg
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="0mm" height="0mm"
+     >
+     <style type="text/css"> <![CDATA[
+
+     ]]>
+     </style>
+     <script type="text/javascript"> <![CDATA[
+
+     ]]>
+       </script>
+       <defs id="defs">
+
+       </defs>
+
+
+       <!-- Start of group #draftContainer -->
+       <g id="draftContainer">
+       </g>
+       <!-- end of group #draftContainer -->
+       </svg>
+
+       <!--
+
+       -->`,
   part: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <!--

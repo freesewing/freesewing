@@ -1,5 +1,6 @@
 # Compiled code
 dist
+tests/dist
 
 # Logs
 logs
