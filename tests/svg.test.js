@@ -102,20 +102,29 @@ it("Should render Svg multi-line text", () => {
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
-    .attr("data-text", "This is a test\nwith text on]Wmultiple lines")
+    .attr("data-text", "This is a test\nwith text on\nmultiple lines")
     .attr("data-text-class", "text-lg")
     .attr("data-text-lineheight", 8);
   expect(pattern.render()).to.equalIgnoreSpaces(render.multiText);
 });
 
-it("Should not render empty text", () => {
+it("Should render Svg multi-line text with default lineheight", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
   pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
-    .attr("data-text", "")
+    .attr("data-text", "This is a test\nwith text on\nmultiple lines")
     .attr("data-text-class", "text-lg");
+  expect(pattern.render()).to.equalIgnoreSpaces(render.multiTextDflt);
+});
+
+it("Should not render text when there is none", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.render();
+  pattern.parts.test = new pattern.Part();
+  let p = pattern.parts.test;
+  p.points.test = new p.Point(20, 20);
   expect(pattern.render()).to.equalIgnoreSpaces(render.part);
 });
 

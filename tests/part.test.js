@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+let freesewing = require("./dist/index.js");
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();
@@ -94,7 +94,7 @@ it("Should set part attributes", () => {
   expect(part.attributes.get("foo")).to.equal("schmoo");
 });
 
-it("Should copy an part", () => {
+it("Should copy a part", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   part.points.origin.x = 16;
@@ -113,4 +113,54 @@ it("Should return shorthand", () => {
   let short = part.shorthand();
   expect(short.final).to.equal(true);
   expect(short.paperless).to.equal(true);
+});
+
+it("Should calculate the part boundary", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  let short = part.shorthand();
+  part.points.from = new short.Point(123, 456);
+  part.points.to = new short.Point(19, 76);
+  part.paths.test = new short.Path()
+    .move(part.points.from)
+    .line(part.points.to);
+  let boundary = part.boundary();
+  expect(boundary.topLeft.x).to.equal(9);
+  expect(boundary.topLeft.y).to.equal(66);
+  expect(boundary.bottomRight.x).to.equal(133);
+  expect(boundary.bottomRight.y).to.equal(466);
+  boundary = part.boundary();
+  expect(boundary.width).to.equal(124);
+  expect(boundary.height).to.equal(400);
+});
+
+it("Should stack a part", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  let short = part.shorthand();
+  part.points.from = new short.Point(123, 456);
+  part.points.to = new short.Point(19, 76);
+  part.paths.test = new short.Path()
+    .move(part.points.from)
+    .line(part.points.to);
+  part.stack();
+  expect(part.attributes.get("transform")).to.equal("translate(-9, -66)");
+});
+
+it("Should only stack a part if needed", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  let short = part.shorthand();
+  part.points.from = new short.Point(10, 10);
+  part.points.to = new short.Point(19, 76);
+  part.paths.test = new short.Path()
+    .move(part.points.from)
+    .line(part.points.to);
+  part.stack();
+  expect(part.attributes.get("transform")).to.equal(false);
+  part.stack();
+  expect(part.attributes.get("transform")).to.equal(false);
 });

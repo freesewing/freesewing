@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+let freesewing = require("./dist/index.js");
 
 it("Should offset a line", () => {
   let pattern = new freesewing.Pattern();

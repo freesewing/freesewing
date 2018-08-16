@@ -189,7 +189,43 @@ var render = {
 
        <!-- Start of group #1 -->
        <g id="1"  transform=" translate(10, 10)">
-       <text  class="text-lg" lineheight="8" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="8">with text on]Wmultiple lines</tspan>
+       <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="8">with text on</tspan><tspan x="20" dy="8">multiple lines</tspan>
+       </text>
+       </g>
+       <!-- end of group #1 -->
+       </g>
+       <!-- end of group #draftContainer -->
+       </svg>
+
+       <!--
+
+       -->`,
+  multiTextDflt: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <!--
+
+    --><svg
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+     >
+     <style type="text/css"> <![CDATA[
+
+     ]]>
+     </style>
+     <script type="text/javascript"> <![CDATA[
+
+     ]]>
+       </script>
+       <defs id="defs">
+
+       </defs>
+
+
+       <!-- Start of group #draftContainer -->
+       <g id="draftContainer">
+
+       <!-- Start of group #1 -->
+       <g id="1"  transform=" translate(10, 10)">
+       <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="12">with text on</tspan><tspan x="20" dy="12">multiple lines</tspan>
        </text>
        </g>
        <!-- end of group #1 -->

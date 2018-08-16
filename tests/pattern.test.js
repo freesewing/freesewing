@@ -25,6 +25,15 @@ it("Should throw exception upon draft", () => {
   expect(() => pattern.draft()).to.throw();
 });
 
+it("Should load percentage options", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test: { val: 30 }
+    }
+  });
+  expect(pattern.options.test).to.equal(0.3);
+});
+
 it("Should sample an option", () => {
   let pattern = new freesewing.Pattern({
     options: {
