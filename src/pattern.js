@@ -37,8 +37,7 @@ export default function Pattern(config = false) {
   for (let i in config.options) {
     let option = config.options[i];
     if (typeof option === "object") {
-      if (typeof option.type === "undefined")
-        this.options[i] = option.val / 100;
+      this.options[i] = option.val / 100;
     } else if (typeof option === "number") {
       this.options[i] = option;
     }
