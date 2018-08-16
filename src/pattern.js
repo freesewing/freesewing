@@ -287,6 +287,10 @@ Pattern.prototype.needs = function(partName) {
   }
   if (typeof this.settings.only === "undefined") return true;
   else if (this.settings.only === partName) return true;
-  else if (this.settings.only.indexOf(partName) !== -1) return true;
+  else if (
+    typeof this.settings.only === "object" &&
+    this.settings.only.indexOf(partName) !== -1
+  )
+    return true;
   else return false;
 };
