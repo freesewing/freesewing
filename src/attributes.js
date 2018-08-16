@@ -19,6 +19,13 @@ Attributes.prototype.set = function(name, value) {
   return this;
 };
 
+/** Removes an attribute */
+Attributes.prototype.remove = function(name) {
+  delete this.list[name];
+
+  return this;
+};
+
 /** Retrieves an attribute */
 Attributes.prototype.get = function(name) {
   if (typeof this.list[name] === "undefined") return false;
