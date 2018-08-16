@@ -133,7 +133,7 @@ Svg.prototype.renderPart = function(part) {
   }
   for (let key in part.points) {
     if (part.points[key].attributes.get("data-text")) {
-      svg += this.renderPoint(part.points[key]);
+      svg += this.renderText(part.points[key]);
     }
   }
   for (let key in part.snippets) {
@@ -142,11 +142,6 @@ Svg.prototype.renderPart = function(part) {
   }
 
   return svg;
-};
-
-/** Returns SVG code for a Point object */
-Svg.prototype.renderPoint = function(point) {
-  return this.renderText(point);
 };
 
 /** Returns SVG code for a Path object */
@@ -183,17 +178,17 @@ Svg.prototype.renderPathText = function(path) {
 
 Svg.prototype.renderText = function(point) {
   this.text = point.attributes.get("data-text");
-  if (!this.text) return "";
-  else this.insertText();
-  point.attributes.add("data-text-x", point.x);
-  point.attributes.add("data-text-y", point.y);
+  this.insertText();
+  point.attributes.set("data-text-x", point.x);
+  point.attributes.set("data-text-y", point.y);
+  let lineHeight = point.attributes.get("data-text-lineheight") || 12;
+  point.attributes.remove("data-text-lineheight");
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs(
     "data-text-"
   )}>`;
   this.indent();
   // Multi-line text?
-  if (this.text.indexOf("\n")) {
-    let lineHeight = point.attributes.get("data-text-lineheight") || 12;
+  if (this.text.indexOf("\n") !== -1) {
     let lines = this.text.split("\n");
     svg += `<tspan>${lines.shift()}</tspan>`;
     for (let line of lines) {
