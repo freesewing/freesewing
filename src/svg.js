@@ -47,6 +47,7 @@ Svg.prototype.debug = function() {};
 
 /** Renders a draft object as SVG */
 Svg.prototype.render = function(pattern) {
+  this.idPrefix = pattern.settings.idPrefix;
   this.preRender();
   if (!pattern.settings.embed) {
     this.attributes.add("width", pattern.width + "mm");
@@ -59,11 +60,14 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.renderStyle();
   this.svg += this.renderScript();
   this.svg += this.renderDefs();
-  this.svg += this.openGroup("draftContainer");
+  this.svg += this.openGroup(this.idPrefix + "container");
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
     if (part.render && pattern.needs(partId)) {
-      this.svg += this.openGroup(this.getUid(), part.attributes);
+      this.svg += this.openGroup(
+        `${this.idPrefix}part-${partId}`,
+        part.attributes
+      );
       this.svg += this.renderPart(part);
       this.svg += this.closeGroup();
     }
@@ -109,7 +113,7 @@ Svg.prototype.renderScript = function() {
 
 /** Returns SVG code for the defs block */
 Svg.prototype.renderDefs = function() {
-  let svg = '<defs id="defs">';
+  let svg = "<defs>";
   this.indent();
   svg += this.nl() + this.defs;
   this.outdent();
@@ -147,8 +151,9 @@ Svg.prototype.renderPart = function(part) {
 
 /** Returns SVG code for a Path object */
 Svg.prototype.renderPath = function(path) {
-  if (!path.attributes.get("id")) path.attributes.add("id", this.getUid());
-  path.attributes.add("d", path.asPathstring());
+  if (!path.attributes.get("id"))
+    path.attributes.add("id", this.idPrefix + this.getUid());
+  path.attributes.set("d", path.asPathstring());
 
   return `${this.nl()}<path ${path.attributes.render()} />${this.renderPathText(
     path

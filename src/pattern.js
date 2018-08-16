@@ -21,7 +21,8 @@ export default function Pattern(config = false) {
 
   // Data containers
   this.settings = {
-    mode: "draft"
+    mode: "draft",
+    idPrefix: "fs-"
   };
   this.options = {};
   this.store = new Store();

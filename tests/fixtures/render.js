@@ -16,15 +16,15 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -45,15 +45,15 @@ var render = {
 
      ]]>
        </script>
-       <defs id="defs">
+       <defs>
 
        </defs>
 
 
-       <!-- Start of group #draftContainer -->
-       <g id="draftContainer">
+       <!-- Start of group #fs-container -->
+       <g id="fs-container">
        </g>
-       <!-- end of group #draftContainer -->
+       <!-- end of group #fs-container -->
        </svg>
 
        <!--
@@ -74,20 +74,20 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -108,21 +108,21 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform=" translate(10, 10)">
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform=" translate(10, 10)">
 <path  id="something" class="freesewing" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -143,22 +143,22 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
 <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan>
 </text>
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -179,22 +179,22 @@ var render = {
 
      ]]>
        </script>
-       <defs id="defs">
+       <defs>
 
        </defs>
 
 
-       <!-- Start of group #draftContainer -->
-       <g id="draftContainer">
+       <!-- Start of group #fs-container -->
+       <g id="fs-container">
 
-       <!-- Start of group #1 -->
-       <g id="1"  transform=" translate(10, 10)">
+       <!-- Start of group #fs-part-test -->
+       <g id="fs-part-test"  transform=" translate(10, 10)">
        <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="8">with text on</tspan><tspan x="20" dy="8">multiple lines</tspan>
        </text>
        </g>
-       <!-- end of group #1 -->
+       <!-- end of group #fs-part-test -->
        </g>
-       <!-- end of group #draftContainer -->
+       <!-- end of group #fs-container -->
        </svg>
 
        <!--
@@ -215,22 +215,22 @@ var render = {
 
      ]]>
        </script>
-       <defs id="defs">
+       <defs>
 
        </defs>
 
 
-       <!-- Start of group #draftContainer -->
-       <g id="draftContainer">
+       <!-- Start of group #fs-container -->
+       <g id="fs-container">
 
-       <!-- Start of group #1 -->
-       <g id="1"  transform=" translate(10, 10)">
+       <!-- Start of group #fs-part-test -->
+       <g id="fs-part-test"  transform=" translate(10, 10)">
        <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="12">with text on</tspan><tspan x="20" dy="12">multiple lines</tspan>
        </text>
        </g>
-       <!-- end of group #1 -->
+       <!-- end of group #fs-part-test -->
        </g>
-       <!-- end of group #draftContainer -->
+       <!-- end of group #fs-container -->
        </svg>
 
        <!--
@@ -251,23 +251,23 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
-<path  data-text="This is another test" data-text-class="text-sm" class="freesewing" id="2" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
-<text><textPath xlink:href="#2" ><tspan  class="text-sm">This is another test</tspan></textPath>
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
+<path  data-text="This is another test" data-text-class="text-sm" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
+<text><textPath xlink:href="#fs-1" ><tspan  class="text-sm">This is another test</tspan></textPath>
 </text>
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -288,23 +288,23 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
-<path  data-text="This is another test" data-text-class="center" class="freesewing" id="2" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
-<text><textPath xlink:href="#2"  startOffset="50%" ><tspan  class="center">This is another test</tspan></textPath>
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
+<path  data-text="This is another test" data-text-class="center" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
+<text><textPath xlink:href="#fs-1"  startOffset="50%" ><tspan  class="center">This is another test</tspan></textPath>
 </text>
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -325,23 +325,23 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
-<path  data-text="This is another test" data-text-class="right" class="freesewing" id="2" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
-<text><textPath xlink:href="#2"  startOffset="100%" ><tspan  class="right">This is another test</tspan></textPath>
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
+<path  data-text="This is another test" data-text-class="right" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
+<text><textPath xlink:href="#fs-1"  startOffset="100%" ><tspan  class="right">This is another test</tspan></textPath>
 </text>
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
@@ -362,21 +362,21 @@ var render = {
 
 ]]>
 </script>
-<defs id="defs">
+<defs>
 
 </defs>
 
 
-<!-- Start of group #draftContainer -->
-<g id="draftContainer">
+<!-- Start of group #fs-container -->
+<g id="fs-container">
 
-<!-- Start of group #1 -->
-<g id="1"  transform="translate(10, 10)">
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(10, 10)">
 <use x="20" y="20" xlink:href="#test" ><title>This is a snippet</title></use>
 </g>
-<!-- end of group #1 -->
+<!-- end of group #fs-part-test -->
 </g>
-<!-- end of group #draftContainer -->
+<!-- end of group #fs-container -->
 </svg>
 
 <!--
