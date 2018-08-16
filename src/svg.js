@@ -61,7 +61,7 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.openGroup("draftContainer");
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
-    if (part.render && pattern.inScope(partId)) {
+    if (part.render && pattern.needs(partId)) {
       this.svg += this.openGroup(this.getUid(), part.attributes);
       this.svg += this.renderPart(part);
       this.svg += this.closeGroup();

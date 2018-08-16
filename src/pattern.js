@@ -248,7 +248,7 @@ Pattern.prototype.pack = function() {
     let part = this.parts[key];
     // Avoid multiple render calls to cause stacking of transforms
     part.attributes.set("transform", "");
-    if (part.render && this.inScope(key)) {
+    if (part.render && this.needs(key)) {
       part.stack();
       bins.push({
         id: key,
@@ -269,18 +269,18 @@ Pattern.prototype.pack = function() {
   return this;
 };
 
-/** Determines whether a part is in scope
- * Scope depends on the 'only' setting people can pass
- * with the name of a part, or an array of parts
- * The absence of only means all parts
+/** Determines whether a part is needed
+ * This depends on the 'only' setting. People can pass
+ * the name of a part, or an array of parts
+ * The absence of only means all parts are needed.
  *
- * If partName is an array of names, any name being in
- * scope will cause this to return true
+ * If partName is an array of names, any name needed
+ * will cause this to return true
  */
-Pattern.prototype.inScope = function(partName) {
+Pattern.prototype.needs = function(partName) {
   if (typeof partName !== "string") {
     for (let part of partName) {
-      if (this.inScope(part)) return true;
+      if (this.needs(part)) return true;
     }
     return false;
   }

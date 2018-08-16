@@ -139,26 +139,26 @@ it("Should register a hook from a plugin", () => {
   expect(count).to.equal(1);
 });
 
-it("Should check whether a part is in scope", () => {
+it("Should check whether a part is needed", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.only = "test";
-  expect(pattern.inScope("test")).to.equal(true);
-  expect(pattern.inScope("mist")).to.equal(false);
+  expect(pattern.needs("test")).to.equal(true);
+  expect(pattern.needs("mist")).to.equal(false);
 });
 
-it("Should check whether an array of parts is in scope", () => {
+it("Should check whether an array of parts is needed", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.only = "test";
-  expect(pattern.inScope(["foo", "bar", "test"])).to.equal(true);
-  expect(pattern.inScope(["foo", "bar", "mist"])).to.equal(false);
+  expect(pattern.needs(["foo", "bar", "test"])).to.equal(true);
+  expect(pattern.needs(["foo", "bar", "mist"])).to.equal(false);
 });
 
-it("Should check whether a parts is in a scope array", () => {
+it("Should check whether a parts is needed with array", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.only = ["test", "foo", "bar"];
-  expect(pattern.inScope("foo")).to.equal(true);
-  expect(pattern.inScope(["bar"])).to.equal(true);
-  expect(pattern.inScope(["mest", "foo"])).to.equal(true);
-  expect(pattern.inScope(["mist", "hugs"])).to.equal(false);
-  expect(pattern.inScope("jugs")).to.equal(false);
+  expect(pattern.needs("foo")).to.equal(true);
+  expect(pattern.needs(["bar"])).to.equal(true);
+  expect(pattern.needs(["mest", "foo"])).to.equal(true);
+  expect(pattern.needs(["mist", "hugs"])).to.equal(false);
+  expect(pattern.needs("jugs")).to.equal(false);
 });
