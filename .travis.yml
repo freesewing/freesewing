@@ -3,7 +3,7 @@ node_js:
   - "node"
 install:
   - npm install
-  - npm run nodebuild
+  - npm run build
 script:
   - npm run test
   - npm run coverage
