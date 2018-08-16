@@ -112,12 +112,14 @@ Part.prototype.boundary = function() {
 
 /** Stacks part so that its top left corner is in (0,0) */
 Part.prototype.stack = function() {
-  if (this.topLeft.x === 0 && this.topLeft.y === 0) return this;
-
-  this.boundary().attr(
-    "transform",
-    `translate(${this.topLeft.x * -1}, ${this.topLeft.y * -1})`
-  );
+  if (this.topLeft !== false) return this;
+  else this.boundary();
+  if (this.topLeft.x == 0 && this.topLeft.y == 0) return this;
+  else
+    this.attr(
+      "transform",
+      `translate(${this.topLeft.x * -1}, ${this.topLeft.y * -1})`
+    );
 
   return this;
 };
