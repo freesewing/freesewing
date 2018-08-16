@@ -48,10 +48,11 @@ Svg.prototype.debug = function() {};
 /** Renders a draft object as SVG */
 Svg.prototype.render = function(pattern) {
   this.preRender();
-  this.attributes.add("width", pattern.width + "mm");
-  this.attributes.add("height", pattern.height + "mm");
-  if (!pattern.settings.embed)
-    this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
+  if (!pattern.settings.embed) {
+    this.attributes.add("width", pattern.width + "mm");
+    this.attributes.add("height", pattern.height + "mm");
+  }
+  this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
   this.svg = this.prefix;
   this.svg += this.renderComments(this.header);
   this.svg += this.renderSvgTag(pattern);
