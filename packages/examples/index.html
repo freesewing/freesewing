@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Examples</title>
-    <script type="text/javascript" src="freesewing.js"></script>
+    <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
     <script type="text/javascript" src="dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script>
@@ -30,6 +30,13 @@
       // Some default settings
       pattern.settings.sa = 10;
       pattern.settings.units = 'metric';
+pattern.settings.only = 'macroGrainline';
+console.log('need1', pattern.needs('pointShift'));
+console.log('need2', pattern.needs('pointShiftTowards'));
+pattern.on('preRender', function(next) {
+  this.style += 'svg { background: yellow;}';
+  next();
+});
 
       //pattern.sampleOption('chestEase');
       //pattern.sampleMeasurement('chestCircumference');

@@ -8,7 +8,7 @@ var pointClone = {
 
     box(part);
 
-    points.A= new Point(50, 25)
+    points.A= new Point(25, 25)
       .attr('data-text', 'Point A')
       .attr('data-text-class', 'text-xl')
       .attr('data-text-fill-opacity', '0.5');

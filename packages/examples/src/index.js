@@ -37,6 +37,9 @@ import utilsBeamsCross from "./utils.beamscross";
 import utilsBeamCrossesX from "./utils.beamcrossesx";
 import utilsBeamCrossesY from "./utils.beamcrossesy";
 
+import settingsSa from "./settings.sa";
+import macroGrainline from "./macro.grainline";
+
 var pattern = new freesewing.Pattern({ version: version, ...config }).with(
   pluginBundle
 );
@@ -75,6 +78,8 @@ pattern.draft = function() {
   this.parts.utilsBeamCrossesX = this.draftUtilsBeamCrossesX(new pattern.Part());
   this.parts.utilsbeamCrossesY = this.draftUtilsBeamCrossesY(new pattern.Part());
 
+  this.parts.settingsSa = this.draftSettingsSa(new pattern.Part());
+  this.parts.macroGrainline = this.draftMacroGrainline(new pattern.Part());
   return pattern;
 };
 
@@ -110,6 +115,9 @@ pattern.draftUtilsLinesCross = part => utilsLinesCross.draft(part);
 pattern.draftUtilsBeamsCross = part => utilsBeamsCross.draft(part);
 pattern.draftUtilsBeamCrossesX = part => utilsBeamCrossesX.draft(part);
 pattern.draftUtilsBeamCrossesY = part => utilsBeamCrossesY.draft(part);
+
+pattern.draftSettingsSa = part => settingsSa.draft(part);
+pattern.draftMacroGrainline = part => macroGrainline.draft(part);
 
 // Add custom snippet
 pattern.on('preRender', function(next) {

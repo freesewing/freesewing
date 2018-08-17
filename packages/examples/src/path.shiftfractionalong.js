@@ -18,7 +18,7 @@ var pathShiftFractionAlong = {
       .curve(points.BCp2, points.CCp1, points.C);
 
 
-    points.X1 = paths.example.shiftFractionAlong(0.25)
+    points.X1 = paths.example.shiftFractionAlong(0.2)
       .attr('data-text', 'Shifted 20% along this path')
       .attr('data-text-class', 'center');
     points.X2 = paths.example.shiftFractionAlong(0.9)
