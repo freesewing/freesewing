@@ -1,5 +1,4 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pathEnd = {
   draft: function(part) {

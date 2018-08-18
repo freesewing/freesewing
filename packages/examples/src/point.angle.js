@@ -1,12 +1,9 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pointAngle = {
   draft: function(part) {
     // prettier-ignore
     let {Point, points, Path, paths, Snippet, snippets} = part.shorthand();
-
-    box(part, 80, 80);
 
     points.sun = new Point(40, 40);
     points.moon1 = new Point(70, 40).attr('data-text', '0').attr('data-text-class', 'text-xl');

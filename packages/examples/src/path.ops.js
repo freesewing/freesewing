@@ -1,12 +1,9 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pathOps = {
   draft: function(part) {
     // prettier-ignore
     let {Point, points, Path, paths, Snippet, snippets, macro} = part.shorthand();
-
-    box(part);
 
     points.A = new Point(10, 10)
       .attr('data-text', 'Move to point A')

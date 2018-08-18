@@ -1,5 +1,4 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pathShiftAlong = {
   draft: function(part) {
@@ -19,11 +18,13 @@ var pathShiftAlong = {
 
 
     points.X1 = paths.example.shiftAlong(20)
-      .attr('data-text', 'Shifted 2cm along this path')
-      .attr('data-text-class', 'center');
+      .attr('data-text', "Shifted 2cm\nalong this path")
+      .attr('data-text-class', 'center')
+      .attr('data-text-lineheight', 6);
     points.X2 = paths.example.shiftAlong(90)
-      .attr('data-text', 'Shifted 9cm along this path')
-      .attr('data-text-class', 'center');
+      .attr('data-text', "Shifted 9cm\nalong this path")
+      .attr('data-text-class', 'center')
+      .attr('data-text-lineheight', 6);
 
     snippets.Xl = new Snippet('x', points.X1);
     snippets.X2 = new Snippet('x', points.X2);

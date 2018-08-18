@@ -1,12 +1,9 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pointFlipX = {
   draft: function(part) {
     // prettier-ignore
     let {Point, points, Path, paths, Snippet, snippets, macro} = part.shorthand();
-
-    box(part);
 
     points.top = new Point(50, 10);
     points.out1 = new Point(70, 30);

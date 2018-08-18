@@ -1,12 +1,9 @@
 import freesewing from "freesewing";
-import { box } from "./shared";
 
 var pointRotate = {
   draft: function(part) {
     // prettier-ignore
     let {Point, points, Path, paths, Snippet, snippets} = part.shorthand();
-
-    box(part, 80, 80);
 
     points.sun = new Point(40, 40);
     snippets.sun = new Snippet("notch", points.sun);
