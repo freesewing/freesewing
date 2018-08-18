@@ -13,4 +13,4 @@ An overview of sewing patterns based on freesewing.
 
 Blocks or slopers are basic patterns shapes that you can extend into fully detailed patterns.
 
- - [pattern-brian](https://github.com/freesewing/pattern-brian) : A basic body block for menswear, and the basis for many of our menswear patterns. 
+ - [brian](https://github.com/freesewing/brian) : A basic body block for menswear, and the basis for many of our menswear patterns. 
