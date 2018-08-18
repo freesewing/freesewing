@@ -76,7 +76,7 @@ pattern.draft = function() {
   this.parts.utilsLinesCross = this.draftUtilsLinesCross(new pattern.Part());
   this.parts.utilsBeamsCross = this.draftUtilsBeamsCross(new pattern.Part());
   this.parts.utilsBeamCrossesX = this.draftUtilsBeamCrossesX(new pattern.Part());
-  this.parts.utilsbeamCrossesY = this.draftUtilsBeamCrossesY(new pattern.Part());
+  this.parts.utilsBeamCrossesY = this.draftUtilsBeamCrossesY(new pattern.Part());
 
   this.parts.settingsSa = this.draftSettingsSa(new pattern.Part());
   this.parts.macroGrainline = this.draftMacroGrainline(new pattern.Part());
