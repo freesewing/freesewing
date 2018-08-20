@@ -7,7 +7,12 @@ var back = {
     let {store, sa, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
 
     // Seamline
-    paths.seam = shared.seamLine("back", points, Path);
+    paths.saBase = shared.saBase("back", points, Path);
+    paths.seam = new Path()
+      .move(points.cbNeck)
+      .line(points.cbHips)
+      .join(paths.saBase)
+      .attr("class", "fabric");
 
     // Store lengths to fit sleeve
     store.set("backArmholeLength", shared.armholeLength(points, Path));
@@ -26,7 +31,14 @@ var back = {
 
       macro("title", { at: points.title, nr: 2, title: "back" });
       snippets.armholePitchNotch = new Snippet("bnotch", points.armholePitch);
-      if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      if (sa) {
+        paths.sa = paths.saBase
+          .offset(sa)
+          .attr("class", "fabric sa")
+          .line(points.cbNeck)
+          .move(points.cbHips);
+        paths.sa.line(paths.sa.start());
+      }
     }
 
     // Paperless?

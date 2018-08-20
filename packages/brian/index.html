@@ -17,15 +17,26 @@
     <script type="text/javascript" src="tmp/antmantest.js"></script>
   <script>
     var pattern = freesewing.patterns.brian
-      .with(freesewing.plugins.debug)
+//      .with(freesewing.plugins.debug)
       .with(freesewing.plugins.theme)
-      .with(freesewing.plugins.designer)
+//      .with(freesewing.plugins.designer)
       .with(freesewing.plugins.validate)
     ;
-
-  pattern.settings.paperless = true;
-  pattern.settings.measurements = freesewing.models.men.manSize36;
-
+    console.log(freesewing.plugins.bundle);
+  //pattern.settings.paperless = true;
+  //pattern.settings.measurements = freesewing.models.men.manSize36;
+    pattern.settings.measurements = {
+    bicepsCircumference: 335
+  , centerBackNeckToWaist: 480
+  , chestCircumference: 1080
+  , naturalWaistToHip: 120
+  , neckCircumference: 420
+  , shoulderSlope: 55
+  , shoulderToShoulder: 470
+  , hipsCircumference: 950
+  , shoulderToWrist: 700
+  , wristCircumference: 190
+  }
   pattern.settings.sa = 10;
 pattern.settings.units = 'metric';
 pattern.settings.sample = {
@@ -33,9 +44,13 @@ pattern.settings.sample = {
   measurement: 'shoulderToShoulder'
 }
 pattern.debug('debug test from index', 'foo');
-    //pattern.sampleOption('sleeveLengthBonus');
-    //pattern.sampleMeasurement('bicepsCircumference');
-    //pattern.sampleModels(freesewing.antmantest);
+pattern.settings.idPrefix = 'fme-';
+//pattern.settings.only = ['base','sleevecap'];
+console.log(pattern);
+
+    //pattern.sampleOption('chestEase');
+    //pattern.sampleMeasurement('shoulderSlope');
+    //pattern.sampleModels(freesewing.models.men);
     pattern.draft();
     document.getElementById("svg").innerHTML = pattern.render();
 

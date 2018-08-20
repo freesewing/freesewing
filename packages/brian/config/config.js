@@ -1,4 +1,3 @@
-/** Pattern parts */
 export default {
   name: "brian",
   measurements: [
@@ -15,7 +14,7 @@ export default {
   ],
   options: {
     // Constants
-    collarFactor:           { val: 4.8, type: "constant" },
+    collarFactor: 4.8,
 
     // Percentages
     acrossBackFactor:       { val:  97, min: 93, max: 100 },
@@ -30,14 +29,14 @@ export default {
     shoulderEase:           { val:   0, min: -2, max:   6 },
     shoulderSlopeReduction: { val:   0, min:  0, max:   8 },
     sleevecapEase:          { val:   1, min:  0, max:  10 },
-    sleevecapBackFactorX:   { val:  50, min: 35, max:  65 },
+    sleevecapBackFactorX:   { val:  60, min: 35, max:  65 },
     sleevecapBackFactorY:   { val:  33, min: 35, max:  65 },
-    sleevecapFrontFactorX:  { val:  50, min: 35, max:  65 },
+    sleevecapFrontFactorX:  { val:  55, min: 35, max:  65 },
     sleevecapFrontFactorY:  { val:  33, min: 35, max:  65 },
-    sleevecapQ1Offset:      { val:   5, min:  0, max:   7 },
+    sleevecapQ1Offset:      { val:   3, min:  0, max:   7 },
     sleevecapQ2Offset:      { val: 5.5, min:  0, max:   7 },
     sleevecapQ3Offset:      { val: 4.5, min:  0, max:   7 },
-    sleevecapQ4Offset:      { val:   2, min:  0, max:   7 },
+    sleevecapQ4Offset:      { val:   1, min:  0, max:   7 },
     sleevecapQ1Spread1:     { val:   6, min:  4, max:  20 },
     sleevecapQ1Spread2:     { val:  15, min:  4, max:  20 },
     sleevecapQ2Spread1:     { val:  15, min:  4, max:  20 },

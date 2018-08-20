@@ -1,12 +1,7 @@
-export function seamLine(side, points, Path) {
+export function saBase(side, points, Path) {
   let path = new Path();
-  if (side === "back") {
-    path.move(points.cbNeck);
-    path.line(points.cbHips);
-  } else {
-    path.move(points.cfNeck);
-    path.line(points.cfHips);
-  }
+  if (side === "back") path.move(points.cbHips);
+  else path.move(points.cfHips);
   path
     .line(points.hips)
     .line(points.armhole)
@@ -19,7 +14,6 @@ export function seamLine(side, points, Path) {
   } else {
     path.curve(points.neckCp2, points.cfNeck, points.cfNeck);
   }
-  path.close().attr("class", "fabric");
 
   return path;
 }
@@ -41,7 +35,6 @@ export function shoulderToArmholePitch(points, Path) {
 }
 
 export function dimensions(macro, points, Path, sa) {
-  console.log("points for dimensions", points);
   macro("pd", {
     path: new Path()
       .move(points.armhole)

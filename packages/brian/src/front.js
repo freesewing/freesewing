@@ -26,7 +26,13 @@ var front = {
     points.cfNeck = points.cfNeck.shift(-90, points.neck.x);
     points.neckCp2 = points.cfNeck.shift(0, points.neck.x * 0.7);
 
-    paths.seam = shared.seamLine("front", points, Path);
+    // Seamline
+    paths.saBase = shared.saBase("front", points, Path);
+    paths.seam = new Path()
+      .move(points.cfNeck)
+      .line(points.cfHips)
+      .join(paths.saBase)
+      .attr("class", "fabric");
 
     // Store lengths to fit sleeve
     store.set("frontArmholeLength", shared.armholeLength(points, Path));
@@ -44,7 +50,14 @@ var front = {
       });
       macro("title", { at: points.title, nr: 1, title: "front" });
       snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
-      if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      if (sa) {
+        paths.sa = paths.saBase
+          .offset(sa)
+          .attr("class", "fabric sa")
+          .line(points.cfNeck)
+          .move(points.cfHips);
+        paths.sa.line(paths.sa.start());
+      }
     }
 
     // Paperless?
