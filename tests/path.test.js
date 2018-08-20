@@ -329,3 +329,69 @@ it("Should reverse a path", () => {
   expect(rev.ops[1].type).to.equal("curve");
   expect(rev.ops[2].type).to.equal("line");
 });
+
+it("Should find the edges of a path", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(45, 60);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(-60, 90);
+  a.points.E = new a.Point(90, 190);
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.E, a.points.D, a.points.A)
+    .close();
+  expect(round(a.paths.test.edge("topLeft").x)).to.equal(7.7);
+  expect(round(a.paths.test.edge("topLeft").y)).to.equal(0.97);
+  expect(round(a.paths.test.edge("bottomLeft").x)).to.equal(7.7);
+  expect(round(a.paths.test.edge("bottomLeft").y)).to.equal(118.46);
+  expect(round(a.paths.test.edge("bottomRight").x)).to.equal(90);
+  expect(round(a.paths.test.edge("bottomRight").y)).to.equal(118.46);
+  expect(round(a.paths.test.edge("topRight").x)).to.equal(90);
+  expect(round(a.paths.test.edge("topRight").y)).to.equal(0.97);
+  expect(round(a.paths.test.edge("left").x)).to.equal(7.7);
+  expect(round(a.paths.test.edge("left").y)).to.equal(91.7);
+  expect(round(a.paths.test.edge("bottom").x)).to.equal(40.75);
+  expect(round(a.paths.test.edge("bottom").y)).to.equal(118.46);
+  expect(round(a.paths.test.edge("right").x)).to.equal(90);
+  expect(round(a.paths.test.edge("right").y)).to.equal(30);
+  expect(round(a.paths.test.edge("top").x)).to.equal(55.97);
+  expect(round(a.paths.test.edge("top").y)).to.equal(0.97);
+});
+
+it("Should find the edges of a path for corner cases", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(-45, -60);
+  a.points.B = new a.Point(45, 60);
+  a.points.C = new a.Point(-90, -160);
+  a.paths.test = new a.Path().move(a.points.A).line(a.points.B);
+  expect(round(a.paths.test.edge("top").x)).to.equal(-45);
+  expect(round(a.paths.test.edge("top").y)).to.equal(-60);
+  expect(round(a.paths.test.edge("left").x)).to.equal(-45);
+  expect(round(a.paths.test.edge("left").y)).to.equal(-60);
+  expect(round(a.paths.test.edge("bottom").x)).to.equal(45);
+  expect(round(a.paths.test.edge("bottom").y)).to.equal(60);
+  expect(round(a.paths.test.edge("right").x)).to.equal(45);
+  expect(round(a.paths.test.edge("right").y)).to.equal(60);
+  a.paths.test = new a.Path().move(a.points.B).line(a.points.A);
+  expect(round(a.paths.test.edge("top").x)).to.equal(-45);
+  expect(round(a.paths.test.edge("top").y)).to.equal(-60);
+  expect(round(a.paths.test.edge("left").x)).to.equal(-45);
+  expect(round(a.paths.test.edge("left").y)).to.equal(-60);
+  expect(round(a.paths.test.edge("bottom").x)).to.equal(45);
+  expect(round(a.paths.test.edge("bottom").y)).to.equal(60);
+  expect(round(a.paths.test.edge("right").x)).to.equal(45);
+  expect(round(a.paths.test.edge("right").y)).to.equal(60);
+});
+
+function round(value) {
+  return Math.round(value * 1e2) / 1e2;
+}

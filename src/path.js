@@ -123,13 +123,26 @@ Path.prototype.boundary = function() {
   let current;
   let topLeft = new Point(Infinity, Infinity);
   let bottomRight = new Point(-Infinity, -Infinity);
+  let edges = [];
   for (let i in this.ops) {
     let op = this.ops[i];
     if (op.type === "move" || op.type === "line") {
-      if (op.to.x < topLeft.x) topLeft.x = op.to.x;
-      if (op.to.y < topLeft.y) topLeft.y = op.to.y;
-      if (op.to.x > bottomRight.x) bottomRight.x = op.to.x;
-      if (op.to.y > bottomRight.y) bottomRight.y = op.to.y;
+      if (op.to.x < topLeft.x) {
+        topLeft.x = op.to.x;
+        edges["leftOp"] = i;
+      }
+      if (op.to.y < topLeft.y) {
+        topLeft.y = op.to.y;
+        edges["topOp"] = i;
+      }
+      if (op.to.x > bottomRight.x) {
+        bottomRight.x = op.to.x;
+        edges["rightOp"] = i;
+      }
+      if (op.to.y > bottomRight.y) {
+        bottomRight.y = op.to.y;
+        edges["bottomOp"] = i;
+      }
     } else if (op.type === "curve") {
       let bb = new Bezier(
         { x: current.x, y: current.y },
@@ -137,16 +150,35 @@ Path.prototype.boundary = function() {
         { x: op.cp2.x, y: op.cp2.y },
         { x: op.to.x, y: op.to.y }
       ).bbox();
-      if (bb.x.min < topLeft.x) topLeft.x = bb.x.min;
-      if (bb.y.min < topLeft.y) topLeft.y = bb.y.min;
-      if (bb.x.max > bottomRight.x) bottomRight.x = bb.x.max;
-      if (bb.y.max > bottomRight.y) bottomRight.y = bb.y.max;
+      if (bb.x.min < topLeft.x) {
+        topLeft.x = bb.x.min;
+        edges["leftOp"] = i;
+      }
+      if (bb.y.min < topLeft.y) {
+        topLeft.y = bb.y.min;
+        edges["topOp"] = i;
+      }
+      if (bb.x.max > bottomRight.x) {
+        bottomRight.x = bb.x.max;
+        edges["rightOp"] = i;
+      }
+      if (bb.y.max > bottomRight.y) {
+        bottomRight.y = bb.y.max;
+        edges["bottomOp"] = i;
+      }
     }
     if (op.to) current = op.to;
   }
 
   this.topLeft = topLeft;
   this.bottomRight = bottomRight;
+
+  for (let side of ["top", "left", "bottom", "right"]) {
+    let s = side + "Op";
+    this[s] = this.ops[edges[s]];
+    this[s].from =
+      this[s].type === "move" ? this[s].to : this.ops[edges[s] - 1].to;
+  }
 
   return this;
 };
@@ -417,5 +449,75 @@ Path.prototype.reverse = function() {
 
   return rev;
 };
+
+/** Returns a reversed version of this */
+Path.prototype.edge = function(side) {
+  this.boundary();
+  if (side === "topLeft") return this.topLeft;
+  else if (side === "bottomRight") return this.bottomRight;
+  else if (side === "topRight")
+    return new Point(this.bottomRight.x, this.topLeft.y);
+  else if (side === "bottomLeft")
+    return new Point(this.topLeft.x, this.bottomRight.y);
+  else {
+    let s = side + "Op";
+    if (this[s].type === "move") return this[s].to;
+    else if (this[s].type === "line") {
+      if (side === "top") {
+        if (this.topOp.to.y < this.topOp.from.y) return this.topOp.to;
+        else return this.topOp.to;
+      } else if (side === "left") {
+        if (this.leftOp.to.x < this.leftOp.from.x) return this.leftOp.to;
+        else return this.leftOp.to;
+      } else if (side === "bottom") {
+        if (this.bottomOp.to.y > this.bottomOp.from.y) return this.bottomOp.to;
+        else return this.bottomOp.to;
+      } else if (side === "right") {
+        if (this.rightOp.to.x > this.rightOp.from.x) return this.rightOp.to;
+        else return this.rightOp.to;
+      }
+    } else if (this[s].type === "curve") {
+      let line;
+      if (side === "top")
+        line = {
+          p1: { x: this.topLeft.x, y: this.topLeft.y },
+          p2: { x: this.bottomRight.x, y: this.topLeft.y }
+        };
+      else if (side === "left")
+        line = {
+          p1: { x: this.topLeft.x, y: this.topLeft.y },
+          p2: { x: this.topLeft.x, y: this.bottomRight.y }
+        };
+      else if (side === "bottom")
+        line = {
+          p1: { x: this.topLeft.x, y: this.bottomRight.y },
+          p2: { x: this.bottomRight.x, y: this.bottomRight.y }
+        };
+      else if (side === "right")
+        line = {
+          p1: { x: this.bottomRight.x, y: this.topLeft.y },
+          p2: { x: this.bottomRight.x, y: this.bottomRight.y }
+        };
+      let bz = edgeCurveAsBezier(this[s]);
+      let isect = bz.intersects(line);
+      let edge = bz.get(isect[0]);
+      return new Point(edge.x, edge.y);
+    }
+  }
+};
+
+function edgeCurveAsBezier(op) {
+  return new Bezier(
+    { x: op.from.x, y: op.from.y },
+    { x: op.cp1.x, y: op.cp1.y },
+    { x: op.cp2.x, y: op.cp2.y },
+    { x: op.to.x, y: op.to.y }
+  );
+}
+///* Returns the edge of a single path operation */
+//function opEdge(op, side) {
+//  if(op.type === 'move' || op.type
+//
+//}
 
 export default Path;
