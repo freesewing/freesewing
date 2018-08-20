@@ -84,7 +84,3 @@ To build this plugin, run:
 npm run build
 ```
 
-## License: MIT
-
-See [the license file](https://github.com/freesewing/plugin-theme/blob/master/LICENSE)
-for details.
