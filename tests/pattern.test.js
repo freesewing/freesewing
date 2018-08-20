@@ -157,8 +157,14 @@ it("Should check whether a parts is needed with array", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.only = ["test", "foo", "bar"];
   expect(pattern.needs("foo")).to.equal(true);
-  //expect(pattern.needs(["bar"])).to.equal(true);
-  //expect(pattern.needs(["mest", "foo"])).to.equal(true);
   expect(pattern.needs(["mist", "hugs"])).to.equal(false);
-  //expect(pattern.needs("fo")).to.equal(false);
+});
+
+it("Should check whether a parts is strictly needed", () => {
+  let pattern = new freesewing.Pattern();
+  expect(pattern.needs("foo")).to.equal(true);
+  expect(pattern.needs("foo", true)).to.equal(false);
+  pattern.settings.only = ["test", "foo", "bar"];
+  expect(pattern.needs("foo")).to.equal(true);
+  expect(pattern.needs("foo", true)).to.equal(true);
 });

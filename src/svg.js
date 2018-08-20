@@ -214,9 +214,6 @@ Svg.prototype.renderSnippet = function(snippet) {
   let svg = this.nl();
   svg += `<use x="${snippet.anchor.x}" y="${snippet.anchor.y}" `;
   svg += `xlink:href="#${snippet.def}" ${snippet.attributes.render()}>`;
-  if (snippet.description) {
-    svg += `<title>${snippet.description}</title>`;
-  }
   svg += "</use>";
 
   return svg;

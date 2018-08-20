@@ -372,7 +372,7 @@ var render = {
 
 <!-- Start of group #fs-part-test -->
 <g id="fs-part-test"  transform="translate(10, 10)">
-<use x="20" y="20" xlink:href="#test" ><title>This is a snippet</title></use>
+<use x="20" y="20" xlink:href="#test" ></use>
 </g>
 <!-- end of group #fs-part-test -->
 </g>

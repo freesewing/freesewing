@@ -278,19 +278,21 @@ Pattern.prototype.pack = function() {
  * If partName is an array of names, any name needed
  * will cause this to return true
  */
-Pattern.prototype.needs = function(partName) {
+Pattern.prototype.needs = function(partName, strict = false) {
   if (typeof partName !== "string") {
     for (let part of partName) {
-      if (this.needs(part)) return true;
+      if (this.needs(part, strict)) return true;
     }
     return false;
   }
-  if (typeof this.settings.only === "undefined") return true;
-  else if (this.settings.only === partName) return true;
+  if (typeof this.settings.only === "undefined") {
+    if (strict) return false;
+    else return true;
+  } else if (this.settings.only === partName) return true;
   else if (
     typeof this.settings.only === "object" &&
     this.settings.only.indexOf(partName) !== -1
-  )
+  ) {
     return true;
-  else return false;
+  } else return false;
 };
