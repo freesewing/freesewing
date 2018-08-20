@@ -31,6 +31,7 @@ import pathJoin from "./path.join";
 import pathReverse from "./path.reverse";
 import pathShiftAlong from "./path.shiftalong";
 import pathShiftFractionAlong from "./path.shiftfractionalong";
+import pathEdge from "./path.edge";
 
 import utilsLinesCross from "./utils.linescross";
 import utilsBeamsCross from "./utils.beamscross";
@@ -72,6 +73,7 @@ pattern.draft = function() {
   this.parts.pathReverse = this.draftPathReverse(new pattern.Part());
   this.parts.pathShiftAlong = this.draftPathShiftAlong(new pattern.Part());
   this.parts.pathShiftFractionAlong = this.draftPathShiftFractionAlong(new pattern.Part());
+  this.parts.pathEdge = this.draftPathEdge(new pattern.Part());
 
   this.parts.utilsLinesCross = this.draftUtilsLinesCross(new pattern.Part());
   this.parts.utilsBeamsCross = this.draftUtilsBeamsCross(new pattern.Part());
@@ -110,6 +112,7 @@ pattern.draftPathJoin = part => pathJoin.draft(part);
 pattern.draftPathReverse = part => pathReverse.draft(part);
 pattern.draftPathShiftAlong = part => pathShiftAlong.draft(part);
 pattern.draftPathShiftFractionAlong = part => pathShiftFractionAlong.draft(part);
+pattern.draftPathEdge = part => pathEdge.draft(part);
 
 pattern.draftUtilsLinesCross = part => utilsLinesCross.draft(part);
 pattern.draftUtilsBeamsCross = part => utilsBeamsCross.draft(part);
