@@ -74,6 +74,7 @@
     "@freesewing/plugin-dimension": "0.4.0",
     "@freesewing/plugin-grainline": "0.0.2",
     "@freesewing/plugin-logo": "0.3.2",
-    "@freesewing/plugin-title": "0.6.2"
+    "@freesewing/plugin-title": "0.6.2",
+    "@freesewing/plugin-scalebox": "0.1.0"
   }
 }
