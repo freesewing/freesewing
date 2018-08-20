@@ -465,16 +465,16 @@ Path.prototype.edge = function(side) {
     else if (this[s].type === "line") {
       if (side === "top") {
         if (this.topOp.to.y < this.topOp.from.y) return this.topOp.to;
-        else return this.topOp.to;
+        else return this.topOp.from;
       } else if (side === "left") {
         if (this.leftOp.to.x < this.leftOp.from.x) return this.leftOp.to;
-        else return this.leftOp.to;
+        else return this.leftOp.from;
       } else if (side === "bottom") {
         if (this.bottomOp.to.y > this.bottomOp.from.y) return this.bottomOp.to;
-        else return this.bottomOp.to;
+        else return this.bottomOp.from;
       } else if (side === "right") {
         if (this.rightOp.to.x > this.rightOp.from.x) return this.rightOp.to;
-        else return this.rightOp.to;
+        else return this.rightOp.from;
       }
     } else if (this[s].type === "curve") {
       let line;
