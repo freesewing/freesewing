@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Five essential freesewing build-time plugins in one neat bundle",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
