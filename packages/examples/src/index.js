@@ -32,11 +32,17 @@ import pathReverse from "./path.reverse";
 import pathShiftAlong from "./path.shiftalong";
 import pathShiftFractionAlong from "./path.shiftfractionalong";
 import pathEdge from "./path.edge";
+import pathCrossesX from "./path.crossesx";
+import pathCrossesY from "./path.crossesy";
+import pathIntersects from "./path.intersects";
+import pathDivide from "./path.divide";
 
 import utilsLinesCross from "./utils.linescross";
 import utilsBeamsCross from "./utils.beamscross";
 import utilsBeamCrossesX from "./utils.beamcrossesx";
 import utilsBeamCrossesY from "./utils.beamcrossesy";
+import utilsCurveCrossesLine from "./utils.curvecrossesline";
+import utilsCurveCrossesCurve from "./utils.curvecrossescurve";
 
 import settingsSa from "./settings.sa";
 import macroGrainline from "./macro.grainline";
@@ -74,11 +80,17 @@ pattern.draft = function() {
   this.parts.pathShiftAlong = this.draftPathShiftAlong(new pattern.Part());
   this.parts.pathShiftFractionAlong = this.draftPathShiftFractionAlong(new pattern.Part());
   this.parts.pathEdge = this.draftPathEdge(new pattern.Part());
+  this.parts.pathCrossesX = this.draftPathCrossesX(new pattern.Part());
+  this.parts.pathCrossesY = this.draftPathCrossesY(new pattern.Part());
+  this.parts.pathIntersects = this.draftPathIntersects(new pattern.Part());
+  this.parts.pathDivide = this.draftPathDivide(new pattern.Part());
 
   this.parts.utilsLinesCross = this.draftUtilsLinesCross(new pattern.Part());
   this.parts.utilsBeamsCross = this.draftUtilsBeamsCross(new pattern.Part());
   this.parts.utilsBeamCrossesX = this.draftUtilsBeamCrossesX(new pattern.Part());
   this.parts.utilsBeamCrossesY = this.draftUtilsBeamCrossesY(new pattern.Part());
+  this.parts.utilsCurveCrossesLine = this.draftUtilsCurveCrossesLine(new pattern.Part());
+  this.parts.utilsCurveCrossesCurve = this.draftUtilsCurveCrossesCurve(new pattern.Part());
 
   this.parts.settingsSa = this.draftSettingsSa(new pattern.Part());
   this.parts.macroGrainline = this.draftMacroGrainline(new pattern.Part());
@@ -113,11 +125,17 @@ pattern.draftPathReverse = part => pathReverse.draft(part);
 pattern.draftPathShiftAlong = part => pathShiftAlong.draft(part);
 pattern.draftPathShiftFractionAlong = part => pathShiftFractionAlong.draft(part);
 pattern.draftPathEdge = part => pathEdge.draft(part);
+pattern.draftPathCrossesX = part => pathCrossesX.draft(part);
+pattern.draftPathCrossesY = part => pathCrossesY.draft(part);
+pattern.draftPathIntersects = part => pathIntersects.draft(part);
+pattern.draftPathDivide = part => pathDivide.draft(part);
 
 pattern.draftUtilsLinesCross = part => utilsLinesCross.draft(part);
 pattern.draftUtilsBeamsCross = part => utilsBeamsCross.draft(part);
 pattern.draftUtilsBeamCrossesX = part => utilsBeamCrossesX.draft(part);
 pattern.draftUtilsBeamCrossesY = part => utilsBeamCrossesY.draft(part);
+pattern.draftUtilsCurveCrossesLine = part => utilsCurveCrossesLine.draft(part);
+pattern.draftUtilsCurveCrossesCurve = part => utilsCurveCrossesCurve.draft(part);
 
 pattern.draftSettingsSa = part => settingsSa.draft(part);
 pattern.draftMacroGrainline = part => macroGrainline.draft(part);
