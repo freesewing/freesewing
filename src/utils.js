@@ -1,4 +1,5 @@
 import Point from "./point";
+import Bezier from "bezier-js";
 import { round } from "./round";
 
 /** Returns internal hook name for a macro */
@@ -68,4 +69,73 @@ export function beamCrossesY(from, to, y) {
 export function units(value, to = "metric") {
   if (to === "imperial") return round(value / 25.4) + '"';
   else return round(value / 10) + "cm";
+}
+
+/** Find where a curve crosses a line */
+export function curveCrossesLine(from, cp1, cp2, to, start, end) {
+  let intersections = [];
+  let bz = new Bezier(
+    { x: from.x, y: from.y },
+    { x: cp1.x, y: cp1.y },
+    { x: cp2.x, y: cp2.y },
+    { x: to.x, y: to.y }
+  );
+  let line = {
+    p1: { x: start.x, y: start.y },
+    p2: { x: end.x, y: end.y }
+  };
+  for (let t of bz.intersects(line)) {
+    let isect = bz.get(t);
+    intersections.push(new Point(isect.x, isect.y));
+  }
+
+  if (intersections.length === 0) return false;
+  else if (intersections.length === 1) return intersections[0];
+  else return intersections;
+}
+
+/** Find where a curve crosses another curve */
+export function curveCrossesCurve(
+  fromA,
+  cp1A,
+  cp2A,
+  toA,
+  fromB,
+  cp1B,
+  cp2B,
+  toB
+) {
+  let precision = 0.005; // See https://github.com/Pomax/bezierjs/issues/99
+  let intersections = [];
+  let curveA = new Bezier(
+    { x: fromA.x, y: fromA.y },
+    { x: cp1A.x, y: cp1A.y },
+    { x: cp2A.x, y: cp2A.y },
+    { x: toA.x, y: toA.y }
+  );
+  let curveB = new Bezier(
+    { x: fromB.x, y: fromB.y },
+    { x: cp1B.x, y: cp1B.y },
+    { x: cp2B.x, y: cp2B.y },
+    { x: toB.x, y: toB.y }
+  );
+
+  for (let tvalues of curveA.intersects(curveB, precision)) {
+    let intersection = curveA.get(tvalues.substr(0, tvalues.indexOf("/")));
+    intersections.push(new Point(intersection.x, intersection.y));
+  }
+
+  if (intersections.length === 0) return false;
+  else if (intersections.length === 1) return intersections.shift();
+  else {
+    let unique = [];
+    for (let i of intersections) {
+      let dupe = false;
+      for (let u of unique) {
+        if (i.sitsRoughlyOn(u)) dupe = true;
+      }
+      if (!dupe) unique.push(i);
+    }
+    return unique;
+  }
 }

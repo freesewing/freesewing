@@ -93,6 +93,86 @@ it("Should detect horizontal lines never pass a give Y-value", () => {
   expect(freesewing.utils.beamCrossesY(a, b, 69)).to.equal(false);
 });
 
+it("Should find no intersections between a curve and a line", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let E = new freesewing.Point(-20, -20);
+  let D = new freesewing.Point(30, -85);
+
+  let hit = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  expect(hit).to.equal(false);
+});
+
+it("Should find 1 intersection between a curve and a line", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let E = new freesewing.Point(20, 20);
+  let D = new freesewing.Point(30, -85);
+
+  let hit = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  expect(hit.x).to.equal(20.85);
+  expect(hit.y).to.equal(11.11);
+});
+
+it("Should find 3 intersections between a curve and a line", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let E = new freesewing.Point(20, -5);
+  let D = new freesewing.Point(100, 85);
+
+  let hits = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  expect(hits.length).to.equal(3);
+});
+
+it("Should find 9 intersections between two curves", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let C = new freesewing.Point(20, -5);
+  let Ccp = new freesewing.Point(60, 300);
+  let D = new freesewing.Point(100, 85);
+  let Dcp = new freesewing.Point(70, -220);
+
+  let hits = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  expect(hits.length).to.equal(9);
+});
+
+it("Should find 1 intersection between two curves", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let C = new freesewing.Point(20, -5);
+  let Ccp = new freesewing.Point(-60, 300);
+  let D = new freesewing.Point(-200, 85);
+  let Dcp = new freesewing.Point(-270, -220);
+
+  let hit = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  expect(hit.x).to.equal(15.58);
+  expect(hit.y).to.equal(10.56);
+});
+
+it("Should find no intersection between two curves", () => {
+  let A = new freesewing.Point(10, 10);
+  let Acp = new freesewing.Point(310, 40);
+  let B = new freesewing.Point(110, 70);
+  let Bcp = new freesewing.Point(-210, 40);
+  let C = new freesewing.Point(20, -5);
+  let Ccp = new freesewing.Point(-60, -300);
+  let D = new freesewing.Point(-200, 85);
+  let Dcp = new freesewing.Point(-270, -220);
+
+  let hit = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  expect(hit).to.equal(false);
+});
+
 it("Should correctly format units", () => {
   expect(freesewing.utils.units(123.456)).to.equal("12.35cm");
   expect(freesewing.utils.units(123.456, "imperial")).to.equal('4.86"');

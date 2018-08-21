@@ -100,6 +100,16 @@ Point.prototype.sitsOn = function(that) {
   else return false;
 };
 
+/** Checks whether this has roughly the same coordinates as that */
+Point.prototype.sitsRoughlyOn = function(that) {
+  if (
+    Math.round(this.x) === Math.round(that.x) &&
+    Math.round(this.y) === Math.round(that.y)
+  )
+    return true;
+  else return false;
+};
+
 /** Shifts this point fraction of the distance towards that point */
 Point.prototype.shiftFractionTowards = function(that, fraction) {
   return this.shiftTowards(that, this.dist(that) * fraction);
