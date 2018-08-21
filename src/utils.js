@@ -43,7 +43,11 @@ export function linesCross(a1, a2, b1, b2) {
   let lenB = b1.dist(b2);
   let lenC = a1.dist(p) + p.dist(a2);
   let lenD = b1.dist(p) + p.dist(b2);
-  if (round(lenA) == round(lenC) && round(lenB) == round(lenD)) return p;
+  if (
+    Math.round(lenA) == Math.round(lenC) &&
+    Math.round(lenB) == Math.round(lenD)
+  )
+    return p;
   else return false;
 }
 
