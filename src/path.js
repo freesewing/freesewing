@@ -2,6 +2,7 @@ import Attributes from "./attributes";
 import Point from "./point";
 import Bezier from "bezier-js";
 import { round } from "./round";
+import { linesCross, curveCrossesLine, curveCrossesCurve } from "./utils";
 
 function Path() {
   this.render = true;
@@ -450,7 +451,7 @@ Path.prototype.reverse = function() {
   return rev;
 };
 
-/** Returns a reversed version of this */
+/** Returns the point at an edge of this path */
 Path.prototype.edge = function(side) {
   this.boundary();
   if (side === "topLeft") return this.topLeft;
@@ -514,10 +515,144 @@ function edgeCurveAsBezier(op) {
     { x: op.to.x, y: op.to.y }
   );
 }
-///* Returns the edge of a single path operation */
-//function opEdge(op, side) {
-//  if(op.type === 'move' || op.type
-//
-//}
+
+/** Divides a path into atomic paths */
+Path.prototype.divide = function() {
+  let paths = [];
+  let current, start;
+  for (let i in this.ops) {
+    let op = this.ops[i];
+    if (op.type === "move") {
+      current = op.to;
+      start = op.to;
+    } else if (op.type === "line") {
+      paths.push(new Path().move(current).line(op.to));
+    } else if (op.type === "curve") {
+      paths.push(new Path().move(current).curve(op.cp1, op.cp2, op.to));
+    } else if (op.type === "close") {
+      paths.push(new Path().move(current).line(start));
+    }
+    if (op.to) current = op.to;
+  }
+
+  return paths;
+};
+
+/** Finds intersections between this path and an X value */
+Path.prototype.crossesX = function(x) {
+  return this.crossesAxis(x, "x");
+};
+
+/** Finds intersections between this path and an Y value */
+Path.prototype.crossesY = function(y) {
+  return this.crossesAxis(y, "y");
+};
+
+/** Finds intersections between this path and a X or Y value */
+Path.prototype.crossesAxis = function(val = false, mode) {
+  if (val === false) throw "Path.crosses[X-Y] requires an value as parameter";
+  let intersections = [];
+  let lineStart =
+    mode === "x" ? new Point(val, -100000) : new Point(-10000, val);
+  let lineEnd = mode === "x" ? new Point(val, 100000) : new Point(100000, val);
+  for (let path of this.divide()) {
+    if (path.ops[1].type === "line") {
+      addIntersectionsToArray(
+        linesCross(path.ops[0].to, path.ops[1].to, lineStart, lineEnd),
+        intersections
+      );
+    } else if (path.ops[1].type === "curve") {
+      addIntersectionsToArray(
+        curveCrossesLine(
+          path.ops[0].to,
+          path.ops[1].cp1,
+          path.ops[1].cp2,
+          path.ops[1].to,
+          lineStart,
+          lineEnd
+        ),
+        intersections
+      );
+    }
+  }
+
+  return intersections;
+};
+
+/** Finds intersections between this path and another path */
+Path.prototype.intersects = function(path) {
+  if (this === path)
+    throw "Calculating intersections between two identical paths is bad idea";
+  let intersections = [];
+  for (let pathA of this.divide()) {
+    for (let pathB of path.divide()) {
+      if (pathA.ops[1].type === "line") {
+        if (pathB.ops[1].type === "line") {
+          addIntersectionsToArray(
+            linesCross(
+              pathA.ops[0].to,
+              pathA.ops[1].to,
+              pathB.ops[0].to,
+              pathB.ops[1].to
+            ),
+            intersections
+          );
+        } else if (pathB.ops[1].type === "curve") {
+          addIntersectionsToArray(
+            curveCrossesLine(
+              pathB.ops[0].to,
+              pathB.ops[1].cp1,
+              pathB.ops[1].cp2,
+              pathB.ops[1].to,
+              pathA.ops[0].to,
+              pathA.ops[1].to
+            ),
+            intersections
+          );
+        }
+      } else if (pathA.ops[1].type === "curve") {
+        if (pathB.ops[1].type === "line") {
+          addIntersectionsToArray(
+            curveCrossesLine(
+              pathA.ops[0].to,
+              pathA.ops[1].cp1,
+              pathA.ops[1].cp2,
+              pathA.ops[1].to,
+              pathB.ops[0].to,
+              pathB.ops[1].to
+            ),
+            intersections
+          );
+        } else if (pathB.ops[1].type === "curve") {
+          addIntersectionsToArray(
+            curveCrossesCurve(
+              pathA.ops[0].to,
+              pathA.ops[1].cp1,
+              pathA.ops[1].cp2,
+              pathA.ops[1].to,
+              pathB.ops[0].to,
+              pathB.ops[1].cp1,
+              pathB.ops[1].cp2,
+              pathB.ops[1].to
+            ),
+            intersections
+          );
+        }
+      }
+    }
+  }
+
+  return intersections;
+};
+
+function addIntersectionsToArray(candidates, intersections) {
+  if (!candidates) return;
+  if (typeof candidates === "object") {
+    if (typeof candidates.x === "number") intersections.push(candidates);
+    else {
+      for (let candidate of candidates) intersections.push(candidate);
+    }
+  }
+}
 
 export default Path;

@@ -392,6 +392,176 @@ it("Should find the edges of a path for corner cases", () => {
   expect(round(a.paths.test.edge("right").y)).to.equal(60);
 });
 
+it("Should find where a path crosses an X value", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(95, 50);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(50, 130);
+  a.points.DCp1 = new a.Point(150, 30);
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.DCp1, a.points.DCp1, a.points.D)
+    .close();
+  let intersections = a.paths.test.crossesX(60);
+  expect(intersections.length).to.equal(4);
+  expect(intersections[0].x).to.equal(60);
+  expect(intersections[0].y).to.equal(41.76);
+  expect(intersections[1].x).to.equal(60);
+  expect(intersections[1].y).to.equal(1.45);
+  expect(intersections[2].x).to.equal(60);
+  expect(intersections[2].y).to.equal(120);
+  expect(intersections[3].x).to.equal(60);
+  expect(intersections[3].y).to.equal(112.22);
+});
+
+it("Should find where a path crosses an Y value", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(95, 50);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(50, 130);
+  a.points.DCp1 = new a.Point(150, 30);
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.DCp1, a.points.DCp1, a.points.D)
+    .close();
+  let intersections = a.paths.test.crossesY(60);
+  expect(intersections.length).to.equal(2);
+  expect(intersections[0].x).to.equal(117.83);
+  expect(intersections[0].y).to.equal(60);
+  expect(intersections[1].x).to.equal(89.38);
+  expect(intersections[1].y).to.equal(60);
+});
+
+it("Should throw an error when not passing a value to path.crossesX", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.paths.test = new a.Path();
+  expect(() => a.paths.test.crossesX()).to.throw();
+  expect(() => a.paths.test.crossesY()).to.throw();
+});
+
+it("Should find the intersections between two paths", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(45, 60);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(50, 130);
+  a.points.DCp1 = new a.Point(150, 30);
+
+  a.points._A = new a.Point(55, 40);
+  a.points._B = new a.Point(0, 55);
+  a.points._BCp2 = new a.Point(40, -20);
+  a.points._C = new a.Point(90, 40);
+  a.points._CCp1 = new a.Point(50, -30);
+  a.points._D = new a.Point(40, 120);
+  a.points._DCp1 = new a.Point(180, 40);
+
+  a.paths.example1 = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.DCp1, a.points.DCp1, a.points.D);
+  a.paths.example2 = new a.Path()
+    .move(a.points._A)
+    .line(a.points._B)
+    .curve(a.points._BCp2, a.points._CCp1, a.points._C)
+    .curve(a.points._DCp1, a.points._DCp1, a.points._D);
+  let intersections = a.paths.example1.intersects(a.paths.example2);
+  expect(intersections.length).to.equal(6);
+  expect(intersections[0].x).to.equal(29.71);
+  expect(intersections[0].y).to.equal(46.9);
+  expect(intersections[1].x).to.equal(12.48);
+  expect(intersections[1].y).to.equal(32.12);
+  expect(intersections[2].x).to.equal(14.84);
+  expect(intersections[2].y).to.equal(27.98);
+  expect(intersections[3].x).to.equal(66.33);
+  expect(intersections[3].y).to.equal(4.1);
+  expect(intersections[4].x).to.equal(130.65);
+  expect(intersections[4].y).to.equal(40.52);
+  expect(intersections[5].x).to.equal(86.52);
+  expect(intersections[5].y).to.equal(93.31);
+});
+
+it("Should throw an error when running path.intersect on an identical path", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.paths.test = new a.Path();
+  expect(() => a.paths.test.intersects(a.paths.test)).to.throw();
+});
+
+it("Should divide a path", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(45, 60);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(-60, 90);
+  a.points.E = new a.Point(90, 190);
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.E, a.points.D, a.points.A)
+    .close();
+  let divided = a.paths.test.divide();
+  expect(divided.length).to.equal(4);
+  expect(divided[0].ops[0].type).to.equal("move");
+  expect(divided[0].ops[0].to.x).to.equal(45);
+  expect(divided[0].ops[0].to.y).to.equal(60);
+  expect(divided[0].ops[1].type).to.equal("line");
+  expect(divided[0].ops[1].to.x).to.equal(10);
+  expect(divided[0].ops[1].to.y).to.equal(30);
+  expect(divided[1].ops[0].type).to.equal("move");
+  expect(divided[1].ops[0].to.x).to.equal(10);
+  expect(divided[1].ops[0].to.y).to.equal(30);
+  expect(divided[1].ops[1].type).to.equal("curve");
+  expect(divided[1].ops[1].cp1.x).to.equal(40);
+  expect(divided[1].ops[1].cp1.y).to.equal(20);
+  expect(divided[1].ops[1].cp2.x).to.equal(50);
+  expect(divided[1].ops[1].cp2.y).to.equal(-30);
+  expect(divided[1].ops[1].to.x).to.equal(90);
+  expect(divided[1].ops[1].to.y).to.equal(30);
+  expect(divided[2].ops[0].type).to.equal("move");
+  expect(divided[2].ops[0].to.x).to.equal(90);
+  expect(divided[2].ops[0].to.y).to.equal(30);
+  expect(divided[2].ops[1].type).to.equal("curve");
+  expect(divided[2].ops[1].cp1.x).to.equal(90);
+  expect(divided[2].ops[1].cp1.y).to.equal(190);
+  expect(divided[2].ops[1].cp2.x).to.equal(-60);
+  expect(divided[2].ops[1].cp2.y).to.equal(90);
+  expect(divided[2].ops[1].to.x).to.equal(45);
+  expect(divided[2].ops[1].to.y).to.equal(60);
+  expect(divided[3].ops[0].type).to.equal("move");
+  expect(divided[3].ops[0].to.x).to.equal(45);
+  expect(divided[3].ops[0].to.y).to.equal(60);
+  expect(divided[3].ops[1].type).to.equal("line");
+  expect(divided[3].ops[1].to.x).to.equal(45);
+  expect(divided[3].ops[1].to.y).to.equal(60);
+});
+
 function round(value) {
   return Math.round(value * 1e2) / 1e2;
 }

@@ -60,9 +60,19 @@ it("Should find the intersection of two line segments", () => {
   let b = new freesewing.Point(90, 74);
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(11, 70);
-  let X = freesewing.utils.beamsCross(a, b, c, d);
+  let X = freesewing.utils.linesCross(a, b, c, d);
   expect(X.x).to.equal(51.95);
   expect(X.y).to.equal(43.56);
+});
+
+it("Should find the intersection of two line segments - round() edge case", () => {
+  let a = new freesewing.Point(45, 60);
+  let b = new freesewing.Point(10, 30);
+  let c = new freesewing.Point(55, 40);
+  let d = new freesewing.Point(0, 55);
+  let X = freesewing.utils.linesCross(a, b, c, d);
+  expect(X.x).to.equal(29.71);
+  expect(X.y).to.equal(46.9);
 });
 
 it("Should find the intersection of an endles line and a give X-value", () => {
