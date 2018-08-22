@@ -2,7 +2,13 @@ import Attributes from "./attributes";
 import Point from "./point";
 import Bezier from "bezier-js";
 import { round } from "./round";
-import { linesCross, curveCrossesLine, curveCrossesCurve } from "./utils";
+import {
+  linesCross,
+  curveCrossesLine,
+  curveCrossesCurve,
+  pointOnLine,
+  pointOnCurve
+} from "./utils";
 
 function Path() {
   this.render = true;
@@ -654,5 +660,66 @@ function addIntersectionsToArray(candidates, intersections) {
     }
   }
 }
+
+/** Splits path on point, and retuns both halves */
+Path.prototype.split = function(point) {
+  let divided = this.divide();
+  let firstHalf = false;
+  let secondHalf = false;
+  for (let pi in divided) {
+    let path = divided[pi];
+    if (path.ops[1].type === "line") {
+      if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+        firstHalf = divided.slice(0, pi);
+        firstHalf.push(new Path().move(path.ops[0].to).line(point));
+        pi++;
+        secondHalf = divided.slice(pi);
+        secondHalf.unshift(new Path().move(point).line(path.ops[1].to));
+      }
+    } else if (path.ops[1].type === "curve") {
+      let t = pointOnCurve(
+        path.ops[0].to,
+        path.ops[1].cp1,
+        path.ops[1].cp2,
+        path.ops[1].to,
+        point
+      );
+      if (t !== false) {
+        let curve = new Bezier(
+          { x: path.ops[0].to.x, y: path.ops[0].to.y },
+          { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
+          { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
+          { x: path.ops[1].to.x, y: path.ops[1].to.y }
+        );
+        let split = curve.split(t);
+        firstHalf = divided.slice(0, pi);
+        firstHalf.push(
+          new Path()
+            .move(new Point(split.left.points[0].x, split.left.points[0].y))
+            .curve(
+              new Point(split.left.points[1].x, split.left.points[1].y),
+              new Point(split.left.points[2].x, split.left.points[2].y),
+              new Point(split.left.points[3].x, split.left.points[3].y)
+            )
+        );
+        pi++;
+        secondHalf = divided.slice(pi);
+        secondHalf.unshift(
+          new Path()
+            .move(new Point(split.right.points[0].x, split.right.points[0].y))
+            .curve(
+              new Point(split.right.points[1].x, split.right.points[1].y),
+              new Point(split.right.points[2].x, split.right.points[2].y),
+              new Point(split.right.points[3].x, split.right.points[3].y)
+            )
+        );
+      }
+    }
+  }
+  if (firstHalf) firstHalf = joinPaths(firstHalf);
+  if (secondHalf) secondHalf = joinPaths(secondHalf);
+
+  return [firstHalf, secondHalf];
+};
 
 export default Path;

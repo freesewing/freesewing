@@ -562,6 +562,62 @@ it("Should divide a path", () => {
   expect(divided[3].ops[1].to.y).to.equal(60);
 });
 
+it("Should split a path on a curve", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(45, 60);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(50, 130);
+  a.points.DCp1 = new a.Point(150, 30);
+
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.DCp1, a.points.DCp1, a.points.D);
+
+  a.points.split = a.paths.test.shiftAlong(120);
+  let halves = a.paths.test.split(a.points.split);
+  let curve = halves[0].ops.pop();
+  expect(curve.type).to.equal("curve");
+  expect(curve.cp1.x).to.equal(35.2);
+  expect(curve.cp1.y).to.equal(21.6);
+  expect(curve.cp2.x).to.equal(46.29);
+  expect(curve.cp2.y).to.equal(-15.02);
+  expect(curve.to.x).to.equal(72.9);
+  expect(curve.to.y).to.equal(9.03);
+});
+
+it("Should split a path on a line", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(45, 60);
+  a.points.B = new a.Point(10, 30);
+  a.points.BCp2 = new a.Point(40, 20);
+  a.points.C = new a.Point(90, 30);
+  a.points.CCp1 = new a.Point(50, -30);
+  a.points.D = new a.Point(50, 130);
+  a.points.DCp1 = new a.Point(150, 30);
+
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .line(a.points.B)
+    .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+    .curve(a.points.DCp1, a.points.DCp1, a.points.D);
+
+  a.points.split = a.paths.test.shiftAlong(20);
+  let halves = a.paths.test.split(a.points.split);
+  let line = halves[0].ops.pop();
+  expect(line.type).to.equal("line");
+  expect(line.to.x).to.equal(29.81);
+  expect(line.to.y).to.equal(46.98);
+});
+
 function round(value) {
   return Math.round(value * 1e2) / 1e2;
 }

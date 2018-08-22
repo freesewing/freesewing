@@ -1,4 +1,5 @@
 import Point from "./point";
+import Path from "./path";
 import Bezier from "bezier-js";
 import { round } from "./round";
 
@@ -48,6 +49,43 @@ export function linesCross(a1, a2, b1, b2) {
     Math.round(lenB) == Math.round(lenD)
   )
     return p;
+  else return false;
+}
+
+/** Finds out whether a point lies on an endless line */
+export function pointOnBeam(from, to, check) {
+  if (from.sitsOn(check)) return true;
+  if (to.sitsOn(check)) return true;
+  let angleA = from.angle(to);
+  let angleB = from.angle(check);
+  if (angleA === angleB || Math.abs(angleA - angleB) === 180) return true;
+  else return false;
+}
+
+/** Finds out whether a point lies on a line segment */
+export function pointOnLine(from, to, check) {
+  if (!pointOnBeam(from, to, check)) return false;
+  let lenA = from.dist(to);
+  let lenB = from.dist(check) + check.dist(to);
+  if (Math.round(lenA) == Math.round(lenB)) return true;
+  else return false;
+}
+
+/** Finds out whether a point lies on a curve */
+export function pointOnCurve(start, cp1, cp2, end, check) {
+  if (start.sitsOn(check)) return true;
+  if (end.sitsOn(check)) return true;
+  let curve = new Bezier(
+    { x: start.x, y: start.y },
+    { x: cp1.x, y: cp1.y },
+    { x: cp2.x, y: cp2.y },
+    { x: end.x, y: end.y }
+  );
+  let intersections = curve.intersects({
+    p1: { x: check.x - 1, y: check.y },
+    p2: { x: check.x + 1, y: check.y }
+  });
+  if (intersections.length > 0) return intersections.shift();
   else return false;
 }
 

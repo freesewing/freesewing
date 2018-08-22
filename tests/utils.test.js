@@ -187,3 +187,32 @@ it("Should correctly format units", () => {
   expect(freesewing.utils.units(123.456)).to.equal("12.35cm");
   expect(freesewing.utils.units(123.456, "imperial")).to.equal('4.86"');
 });
+
+it("Should find a start or end point on beam", () => {
+  let A = new freesewing.Point(12, 34);
+  let B = new freesewing.Point(56, 78);
+  let checkA = new freesewing.Point(12, 34);
+  let checkB = new freesewing.Point(56, 78);
+  expect(freesewing.utils.pointOnBeam(A, B, checkA)).to.equal(true);
+  expect(freesewing.utils.pointOnBeam(A, B, checkB)).to.equal(true);
+});
+
+it("Should find whether a point lies on a line segment", () => {
+  let A = new freesewing.Point(12, 34);
+  let B = new freesewing.Point(56, 78);
+  let check1 = A.shiftTowards(B, 10);
+  let check2 = A.shiftTowards(B, 210);
+  expect(freesewing.utils.pointOnLine(A, B, check1)).to.equal(true);
+  expect(freesewing.utils.pointOnLine(A, B, check2)).to.equal(false);
+});
+
+it("Should find a start or end point on curve", () => {
+  let A = new freesewing.Point(12, 34);
+  let Acp = new freesewing.Point(123, 4);
+  let B = new freesewing.Point(56, 78);
+  let Bcp = new freesewing.Point(5, 678);
+  let checkA = new freesewing.Point(12, 34);
+  let checkB = new freesewing.Point(56, 78);
+  expect(freesewing.utils.pointOnCurve(A, Acp, Bcp, B, checkA)).to.equal(true);
+  expect(freesewing.utils.pointOnCurve(A, Acp, Bcp, B, checkB)).to.equal(true);
+});
