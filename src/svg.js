@@ -140,6 +140,9 @@ Svg.prototype.renderPart = function(part) {
     if (part.points[key].attributes.get("data-text")) {
       svg += this.renderText(part.points[key]);
     }
+    if (part.points[key].attributes.get("data-circle")) {
+      svg += this.renderCircle(part.points[key]);
+    }
   }
   for (let key in part.snippets) {
     let snippet = part.snippets[key];
@@ -207,6 +210,15 @@ Svg.prototype.renderText = function(point) {
   svg += this.nl() + "</text>";
 
   return svg;
+};
+
+Svg.prototype.renderCircle = function(point) {
+  return `<circle
+    cx="${point.x}"
+    cy="${point.y}"
+    r="${point.attributes.get("data-circle")}"
+    ${point.attributes.renderIfPrefixIs("data-circle-")}
+  ></circle>`;
 };
 
 /** Returns SVG code for a snippet */

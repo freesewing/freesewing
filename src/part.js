@@ -96,7 +96,17 @@ Part.prototype.boundary = function() {
         bottomRight.y = path.bottomRight.y;
     }
   }
-  // Fix infinity of part has no paths
+  for (let key in this.points) {
+    let point = this.points[key];
+    let radius = parseFloat(point.attributes.get("data-circle"));
+    if (radius) {
+      if (point.x - radius < topLeft.x) topLeft.x = point.x - radius;
+      if (point.y - radius < topLeft.y) topLeft.y = point.y - radius;
+      if (point.x + radius > bottomRight.x) bottomRight.x = point.x + radius;
+      if (point.y + radius > bottomRight.y) bottomRight.y = point.y + radius;
+    }
+  }
+  // Fix infinity if part has no paths
   if (topLeft.x === Infinity) topLeft.x = 0;
   if (topLeft.y === Infinity) topLeft.y = 0;
   if (bottomRight.x === -Infinity) bottomRight.x = 0;

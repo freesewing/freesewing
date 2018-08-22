@@ -176,6 +176,15 @@ it("Should render Svg text on path, right aligned", () => {
   expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPathRight);
 });
 
+it("Should render an Svg circle", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.render();
+  pattern.parts.test = new pattern.Part();
+  let p = pattern.parts.test;
+  p.points.test = new p.Point(20, 20).attr("data-circle", "50");
+  expect(pattern.render()).to.equalIgnoreSpaces(render.circle);
+});
+
 it("Should render an Svg snippet", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
