@@ -76,21 +76,21 @@ export default {
   macros: {
     // horizontal
     hd: function(so) {
-      let id = so.id ? so.id : this.getUid();
+      let id = so.id ? so.id : this.getId();
       let from = hleader(so, "from", this, id + "_ls");
       let to = hleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
     },
     // vertical
     vd: function(so) {
-      let id = so.id ? so.id : this.getUid();
+      let id = so.id ? so.id : this.getId();
       let from = vleader(so, "from", this, id + "_ls");
       let to = vleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
     },
     // linear
     ld: function(so) {
-      let id = so.id ? so.id : this.getUid();
+      let id = so.id ? so.id : this.getId();
       let from = lleader(so, "from", this, id + "_ls");
       let to = lleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
@@ -104,7 +104,7 @@ export default {
         .attr("marker-end", "url(#dimensionTo)")
         .attr("data-text", so.text || this.units(so.path.length()))
         .attr("data-text-class", "fill-note center");
-      let id = so.id ? so.id : this.getUid();
+      let id = so.id ? so.id : this.getId();
       drawLeader(this, so.path.start(), dimension.start(), id + "_ls");
       drawLeader(this, so.path.end(), dimension.end(), id + "_le");
       this.paths[id] = dimension;
