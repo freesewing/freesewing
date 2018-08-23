@@ -21,12 +21,12 @@ export default {
           if (part.render) {
             for (let pointId in part.points) {
               let point = part.points[pointId];
-              point.attributes.add("id", svg.getUid());
+              point.attributes.add("id", svg.getId());
               point.attributes.add("data-point", pointId);
               point.attributes.add("data-part", partId);
               let type =
                 pointId.substr(0, 1) === "_" ? "point-hidden" : "point";
-              let id = svg.getUid();
+              let id = svg.getId();
               part.snippets[id] = new svg.pattern.Snippet(
                 type,
                 point,
@@ -100,7 +100,7 @@ export default {
                 for (let op of path.ops) {
                   if (op.type !== "close") {
                     decoratePathPoint(
-                      svg.getUid(),
+                      svg.getId(),
                       svg.pattern.Snippet,
                       part.snippets,
                       op.to,
@@ -111,7 +111,7 @@ export default {
                   }
                   if (op.type === "curve") {
                     decoratePathPoint(
-                      svg.getUid(),
+                      svg.getId(),
                       svg.pattern.Snippet,
                       part.snippets,
                       op.cp1,
@@ -120,7 +120,7 @@ export default {
                       partId
                     );
                     decoratePathPoint(
-                      svg.getUid(),
+                      svg.getId(),
                       svg.pattern.Snippet,
                       part.snippets,
                       op.cp2,
@@ -129,7 +129,7 @@ export default {
                       partId
                     );
                     decorateCurveHandles(
-                      svg.getUid(),
+                      svg.getId(),
                       svg.pattern.Path,
                       part.paths,
                       current,
@@ -138,7 +138,7 @@ export default {
                       partId
                     );
                     decorateCurveHandles(
-                      svg.getUid(),
+                      svg.getId(),
                       svg.pattern.Path,
                       part.paths,
                       op.to,
