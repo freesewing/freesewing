@@ -71,7 +71,7 @@
   ],
   "dependencies": {
     "@freesewing/plugin-cutonfold": "0.9.0",
-    "@freesewing/plugin-dimension": "0.4.0",
+    "@freesewing/plugin-dimension": "0.5.0",
     "@freesewing/plugin-grainline": "0.0.2",
     "@freesewing/plugin-logo": "0.3.2",
     "@freesewing/plugin-title": "0.6.2",
