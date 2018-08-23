@@ -1,5 +1,4 @@
 import Point from "./point";
-import Path from "./path";
 import Bezier from "bezier-js";
 import { round } from "./round";
 
@@ -56,10 +55,6 @@ export function linesIntersect(a1, a2, b1, b2) {
 export function pointOnBeam(from, to, check, precision = 1e6) {
   if (from.sitsOn(check)) return true;
   if (to.sitsOn(check)) return true;
-  let dxCheck = check.dx(from);
-  let dyCheck = check.dy(from);
-  let dxLine = to.dx(from);
-  let dyLine = to.dy(from);
   let cross = check.dx(from) * to.dy(from) - check.dy(from) * to.dx(from);
 
   if (Math.abs(Math.round(cross * precision) / precision) === 0) return true;
