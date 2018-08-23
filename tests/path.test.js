@@ -392,7 +392,7 @@ it("Should find the edges of a path for corner cases", () => {
   expect(round(a.paths.test.edge("right").y)).to.equal(60);
 });
 
-it("Should find where a path crosses an X value", () => {
+it("Should find where a path intersects with an X value", () => {
   let pattern = new freesewing.Pattern();
   pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
@@ -409,7 +409,7 @@ it("Should find where a path crosses an X value", () => {
     .curve(a.points.BCp2, a.points.CCp1, a.points.C)
     .curve(a.points.DCp1, a.points.DCp1, a.points.D)
     .close();
-  let intersections = a.paths.test.crossesX(60);
+  let intersections = a.paths.test.intersectsX(60);
   expect(intersections.length).to.equal(4);
   expect(intersections[0].x).to.equal(60);
   expect(intersections[0].y).to.equal(41.76);
@@ -421,7 +421,7 @@ it("Should find where a path crosses an X value", () => {
   expect(intersections[3].y).to.equal(112.22);
 });
 
-it("Should find where a path crosses an Y value", () => {
+it("Should find where a path intersects with an Y value", () => {
   let pattern = new freesewing.Pattern();
   pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
@@ -438,7 +438,7 @@ it("Should find where a path crosses an Y value", () => {
     .curve(a.points.BCp2, a.points.CCp1, a.points.C)
     .curve(a.points.DCp1, a.points.DCp1, a.points.D)
     .close();
-  let intersections = a.paths.test.crossesY(60);
+  let intersections = a.paths.test.intersectsY(60);
   expect(intersections.length).to.equal(2);
   expect(intersections[0].x).to.equal(117.83);
   expect(intersections[0].y).to.equal(60);
@@ -446,13 +446,13 @@ it("Should find where a path crosses an Y value", () => {
   expect(intersections[1].y).to.equal(60);
 });
 
-it("Should throw an error when not passing a value to path.crossesX", () => {
+it("Should throw an error when not passing a value to path.intersectsX", () => {
   let pattern = new freesewing.Pattern();
   pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.test = new a.Path();
-  expect(() => a.paths.test.crossesX()).to.throw();
-  expect(() => a.paths.test.crossesY()).to.throw();
+  expect(() => a.paths.test.intersectsX()).to.throw();
+  expect(() => a.paths.test.intersectsY()).to.throw();
 });
 
 it("Should find the intersections between two paths", () => {

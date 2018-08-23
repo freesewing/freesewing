@@ -63,7 +63,7 @@ Part.prototype.debugClosure = function() {
 Part.prototype.debug = function(data) {};
 
 /** Returns an unused ID */
-Part.prototype.getUid = function() {
+Part.prototype.getId = function() {
   this.freeId += 1;
 
   return "" + this.freeId;

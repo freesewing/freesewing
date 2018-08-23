@@ -65,8 +65,8 @@ it("Should run debug", () => {
 it("Should return a free ID", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
-  let free = part.getUid();
-  expect(part.getUid()).to.equal("" + (parseInt(free) + 1));
+  let free = part.getId();
+  expect(part.getId()).to.equal("" + (parseInt(free) + 1));
 });
 
 it("Should return a function from unitsClosure", () => {

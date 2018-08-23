@@ -11,7 +11,7 @@ it("Should find the intersection of two endless line segments", () => {
   let b = new freesewing.Point(20, 24);
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(19, 70);
-  let X = freesewing.utils.beamsCross(a, b, c, d);
+  let X = freesewing.utils.beamsIntersect(a, b, c, d);
   expect(X.x).to.equal(60.49);
   expect(X.y).to.equal(40.2);
 });
@@ -21,8 +21,8 @@ it("Should detect parallel lines", () => {
   let b = new freesewing.Point(20, 20);
   let c = new freesewing.Point(90, 40);
   let d = new freesewing.Point(19, 40);
-  expect(freesewing.utils.beamsCross(a, b, c, d)).to.equal(false);
-  expect(freesewing.utils.linesCross(a, b, c, d)).to.equal(false);
+  expect(freesewing.utils.beamsIntersect(a, b, c, d)).to.equal(false);
+  expect(freesewing.utils.linesIntersect(a, b, c, d)).to.equal(false);
 });
 
 it("Should detect vertical lines", () => {
@@ -30,10 +30,10 @@ it("Should detect vertical lines", () => {
   let b = new freesewing.Point(10, 90);
   let c = new freesewing.Point(90, 40);
   let d = new freesewing.Point(19, 40);
-  let X = freesewing.utils.beamsCross(a, b, c, d);
+  let X = freesewing.utils.beamsIntersect(a, b, c, d);
   expect(X.x).to.equal(10);
   expect(X.y).to.equal(40);
-  X = freesewing.utils.beamsCross(c, d, a, b);
+  X = freesewing.utils.beamsIntersect(c, d, a, b);
   expect(X.x).to.equal(10);
 });
 
@@ -42,7 +42,7 @@ it("Should swap direction prior to finding beam intersection", () => {
   let b = new freesewing.Point(00, 90);
   let c = new freesewing.Point(90, 40);
   let d = new freesewing.Point(19, 40);
-  let X = freesewing.utils.beamsCross(a, b, c, d);
+  let X = freesewing.utils.beamsIntersect(a, b, c, d);
   expect(X.x).to.equal(7.14);
   expect(X.y).to.equal(40);
 });
@@ -52,7 +52,7 @@ it("Should return false when two lines don't intersect", () => {
   let b = new freesewing.Point(20, 24);
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(19, 70);
-  expect(freesewing.utils.linesCross(a, b, c, d)).to.equal(false);
+  expect(freesewing.utils.linesIntersect(a, b, c, d)).to.equal(false);
 });
 
 it("Should find the intersection of two line segments", () => {
@@ -60,7 +60,7 @@ it("Should find the intersection of two line segments", () => {
   let b = new freesewing.Point(90, 74);
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(11, 70);
-  let X = freesewing.utils.linesCross(a, b, c, d);
+  let X = freesewing.utils.linesIntersect(a, b, c, d);
   expect(X.x).to.equal(51.95);
   expect(X.y).to.equal(43.56);
 });
@@ -70,7 +70,7 @@ it("Should find the intersection of two line segments - round() edge case", () =
   let b = new freesewing.Point(10, 30);
   let c = new freesewing.Point(55, 40);
   let d = new freesewing.Point(0, 55);
-  let X = freesewing.utils.linesCross(a, b, c, d);
+  let X = freesewing.utils.linesIntersect(a, b, c, d);
   expect(X.x).to.equal(29.71);
   expect(X.y).to.equal(46.9);
 });
@@ -78,7 +78,7 @@ it("Should find the intersection of two line segments - round() edge case", () =
 it("Should find the intersection of an endles line and a give X-value", () => {
   let a = new freesewing.Point(10, 10);
   let b = new freesewing.Point(90, 74);
-  let X = freesewing.utils.beamCrossesX(a, b, 69);
+  let X = freesewing.utils.beamIntersectsX(a, b, 69);
   expect(X.x).to.equal(69);
   expect(X.y).to.equal(57.2);
 });
@@ -86,7 +86,7 @@ it("Should find the intersection of an endles line and a give X-value", () => {
 it("Should find the intersection of an endles line and a give Y-value", () => {
   let a = new freesewing.Point(10, 10);
   let b = new freesewing.Point(90, 74);
-  let X = freesewing.utils.beamCrossesY(a, b, 69);
+  let X = freesewing.utils.beamIntersectsY(a, b, 69);
   expect(X.x).to.equal(83.75);
   expect(X.y).to.equal(69);
 });
@@ -94,13 +94,13 @@ it("Should find the intersection of an endles line and a give Y-value", () => {
 it("Should detect vertical lines never pass a give X-value", () => {
   let a = new freesewing.Point(10, 10);
   let b = new freesewing.Point(10, 90);
-  expect(freesewing.utils.beamCrossesX(a, b, 69)).to.equal(false);
+  expect(freesewing.utils.beamIntersectsX(a, b, 69)).to.equal(false);
 });
 
 it("Should detect horizontal lines never pass a give Y-value", () => {
   let a = new freesewing.Point(10, 10);
   let b = new freesewing.Point(90, 10);
-  expect(freesewing.utils.beamCrossesY(a, b, 69)).to.equal(false);
+  expect(freesewing.utils.beamIntersectsY(a, b, 69)).to.equal(false);
 });
 
 it("Should find no intersections between a curve and a line", () => {
@@ -111,7 +111,7 @@ it("Should find no intersections between a curve and a line", () => {
   let E = new freesewing.Point(-20, -20);
   let D = new freesewing.Point(30, -85);
 
-  let hit = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  let hit = freesewing.utils.lineIntersectsCurve(E, D, A, Acp, Bcp, B);
   expect(hit).to.equal(false);
 });
 
@@ -123,7 +123,7 @@ it("Should find 1 intersection between a curve and a line", () => {
   let E = new freesewing.Point(20, 20);
   let D = new freesewing.Point(30, -85);
 
-  let hit = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  let hit = freesewing.utils.lineIntersectsCurve(E, D, A, Acp, Bcp, B);
   expect(hit.x).to.equal(20.85);
   expect(hit.y).to.equal(11.11);
 });
@@ -136,7 +136,7 @@ it("Should find 3 intersections between a curve and a line", () => {
   let E = new freesewing.Point(20, -5);
   let D = new freesewing.Point(100, 85);
 
-  let hits = freesewing.utils.curveCrossesLine(A, Acp, Bcp, B, E, D);
+  let hits = freesewing.utils.lineIntersectsCurve(E, D, A, Acp, Bcp, B);
   expect(hits.length).to.equal(3);
 });
 
@@ -150,7 +150,7 @@ it("Should find 9 intersections between two curves", () => {
   let D = new freesewing.Point(100, 85);
   let Dcp = new freesewing.Point(70, -220);
 
-  let hits = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  let hits = freesewing.utils.curvesIntersect(A, Acp, Bcp, B, C, Ccp, Dcp, D);
   expect(hits.length).to.equal(9);
 });
 
@@ -164,7 +164,7 @@ it("Should find 1 intersection between two curves", () => {
   let D = new freesewing.Point(-200, 85);
   let Dcp = new freesewing.Point(-270, -220);
 
-  let hit = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  let hit = freesewing.utils.curvesIntersect(A, Acp, Bcp, B, C, Ccp, Dcp, D);
   expect(hit.x).to.equal(15.58);
   expect(hit.y).to.equal(10.56);
 });
@@ -179,7 +179,7 @@ it("Should find no intersection between two curves", () => {
   let D = new freesewing.Point(-200, 85);
   let Dcp = new freesewing.Point(-270, -220);
 
-  let hit = freesewing.utils.curveCrossesCurve(A, Acp, Bcp, B, C, Ccp, Dcp, D);
+  let hit = freesewing.utils.curvesIntersect(A, Acp, Bcp, B, C, Ccp, Dcp, D);
   expect(hit).to.equal(false);
 });
 
@@ -215,4 +215,240 @@ it("Should find a start or end point on curve", () => {
   let checkB = new freesewing.Point(56, 78);
   expect(freesewing.utils.pointOnCurve(A, Acp, Bcp, B, checkA)).to.equal(true);
   expect(freesewing.utils.pointOnCurve(A, Acp, Bcp, B, checkB)).to.equal(true);
+});
+
+it("Should find the intersections of a beam and circle", () => {
+  let A = new freesewing.Point(45, 45).attr("data-circle", 35);
+  let B = new freesewing.Point(5, 50);
+  let C = new freesewing.Point(25, 30);
+  let intersections = freesewing.utils.beamIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C,
+    "y"
+  );
+  expect(intersections.length).to.equal(2);
+  expect(intersections[0].x).to.equal(45);
+  expect(intersections[0].y).to.equal(10);
+  expect(intersections[1].x).to.equal(10);
+  expect(intersections[1].y).to.equal(45);
+});
+
+it("Should not find the intersections of this beam and circle", () => {
+  let A = new freesewing.Point(75, 75).attr("data-circle", 35);
+  let B = new freesewing.Point(5, 5);
+  let C = new freesewing.Point(10, 5);
+  let intersections = freesewing.utils.beamIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should find one intersections between this beam and circle", () => {
+  let A = new freesewing.Point(5, 5).attr("data-circle", 5);
+  let B = new freesewing.Point(0, 0);
+  let C = new freesewing.Point(-10, 0);
+  let intersections = freesewing.utils.beamIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections.length).to.equal(1);
+  expect(intersections[0].x).to.equal(5);
+  expect(intersections[0].y).to.equal(0);
+});
+
+it("Should find one intersections between this tangent and circle", () => {
+  let A = new freesewing.Point(5, 5).attr("data-circle", 5);
+  let B = new freesewing.Point(0, 0);
+  let C = new freesewing.Point(10, 0);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections.length).to.equal(1);
+  expect(intersections[0].x).to.equal(5);
+  expect(intersections[0].y).to.equal(0);
+});
+
+it("Should find one intersection between this line and circle", () => {
+  let A = new freesewing.Point(5, 5).attr("data-circle", 5);
+  let B = new freesewing.Point(5, 5);
+  let C = new freesewing.Point(26, 25);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections.length).to.equal(1);
+  expect(intersections[0].x).to.equal(8.62);
+  expect(intersections[0].y).to.equal(8.45);
+});
+
+it("Should not find an intersections between this line and circle", () => {
+  let A = new freesewing.Point(5, 5).attr("data-circle", 5);
+  let B = new freesewing.Point(0, 0);
+  let C = new freesewing.Point(-10, 0);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should find two intersections between this line and circle", () => {
+  let A = new freesewing.Point(6, 7).attr("data-circle", 5);
+  let B = new freesewing.Point(0, 10);
+  let C = new freesewing.Point(10, 0);
+  let intersections1 = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C,
+    "foo"
+  );
+  let intersections2 = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C,
+    "x"
+  );
+  let intersections3 = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C,
+    "y"
+  );
+  expect(intersections1.length).to.equal(2);
+  expect(intersections2.length).to.equal(2);
+  expect(intersections3.length).to.equal(2);
+  expect(intersections1[0].sitsOn(intersections2[1])).to.equal(true);
+  expect(intersections1[1].sitsOn(intersections2[0])).to.equal(true);
+  expect(intersections1[0].sitsOn(intersections3[0])).to.equal(true);
+  expect(intersections1[1].sitsOn(intersections3[1])).to.equal(true);
+  expect(intersections1[0].x).to.equal(7.7);
+  expect(intersections1[0].y).to.equal(2.3);
+  expect(intersections1[1].x).to.equal(1.3);
+  expect(intersections1[1].y).to.equal(8.7);
+});
+
+it("Should find the intersections of a line and circle", () => {
+  let A = new freesewing.Point(45, 45).attr("data-circle", 35);
+  let B = new freesewing.Point(5, 50);
+  let C = new freesewing.Point(25, 30);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections.length).to.equal(1);
+  expect(intersections[0].x).to.equal(10);
+  expect(intersections[0].y).to.equal(45);
+});
+
+it("Should not find intersections of this line and circle", () => {
+  let A = new freesewing.Point(75, 75).attr("data-circle", 35);
+  let B = new freesewing.Point(5, 5);
+  let C = new freesewing.Point(10, 5);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should not find intersections of this line and circle", () => {
+  let A = new freesewing.Point(45, 45).attr("data-circle", 35);
+  let B = new freesewing.Point(40, 40);
+  let C = new freesewing.Point(52, 50);
+  let intersections = freesewing.utils.lineIntersectsCircle(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    C
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should find intersections between circles", () => {
+  A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  B = new freesewing.Point(30, 30).attr("data-circle", 35);
+
+  let intersections1 = freesewing.utils.circlesIntersect(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    B.attributes.get("data-circle")
+  );
+  let intersections2 = freesewing.utils.circlesIntersect(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    B.attributes.get("data-circle"),
+    "y"
+  );
+  expect(intersections1.length).to.equal(2);
+  expect(intersections2.length).to.equal(2);
+  expect(intersections1[0].x).to.equal(-2.81);
+  expect(intersections1[0].y).to.equal(17.8);
+  expect(intersections1[1].x).to.equal(17.8);
+  expect(intersections1[1].y).to.equal(-2.81);
+  expect(intersections2[0].x).to.equal(17.8);
+  expect(intersections2[0].y).to.equal(-2.81);
+  expect(intersections2[1].x).to.equal(-2.81);
+  expect(intersections2[1].y).to.equal(17.8);
+});
+
+it("Should not find intersections between non-overlapping circles", () => {
+  A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  B = new freesewing.Point(90, 90).attr("data-circle", 35);
+
+  let intersections = freesewing.utils.circlesIntersect(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    B.attributes.get("data-circle")
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should not find intersections between contained circles", () => {
+  A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  B = new freesewing.Point(10, 10).attr("data-circle", 35);
+
+  let intersections = freesewing.utils.circlesIntersect(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    B.attributes.get("data-circle")
+  );
+  expect(intersections).to.equal(false);
+});
+
+it("Should not find intersections between identical circles", () => {
+  A = new freesewing.Point(10, 10).attr("data-circle", 35);
+  B = new freesewing.Point(10, 10).attr("data-circle", 35);
+
+  let intersections = freesewing.utils.circlesIntersect(
+    A,
+    A.attributes.get("data-circle"),
+    B,
+    B.attributes.get("data-circle")
+  );
+  expect(intersections).to.equal(false);
 });

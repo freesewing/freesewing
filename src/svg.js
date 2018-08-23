@@ -155,7 +155,7 @@ Svg.prototype.renderPart = function(part) {
 /** Returns SVG code for a Path object */
 Svg.prototype.renderPath = function(path) {
   if (!path.attributes.get("id"))
-    path.attributes.add("id", this.idPrefix + this.getUid());
+    path.attributes.add("id", this.idPrefix + this.getId());
   path.attributes.set("d", path.asPathstring());
 
   return `${this.nl()}<path ${path.attributes.render()} />${this.renderPathText(
@@ -278,7 +278,7 @@ Svg.prototype.outdent = function() {
 };
 
 /** Returns an unused ID */
-Svg.prototype.getUid = function() {
+Svg.prototype.getId = function() {
   this.freeId += 1;
 
   return "" + this.freeId;

@@ -9,7 +9,7 @@ export function macroName(name) {
 }
 
 /** Find intersection of two (endless) lines */
-export function beamsCross(a1, a2, b1, b2) {
+export function beamsIntersect(a1, a2, b1, b2) {
   let slopeA = a1.slope(a2);
   let slopeB = b1.slope(b2);
   if (slopeA === slopeB) return false; // Parallel lines
@@ -37,8 +37,8 @@ export function beamsCross(a1, a2, b1, b2) {
 }
 
 /** Find intersection of two line segments */
-export function linesCross(a1, a2, b1, b2) {
-  let p = beamsCross(a1, a2, b1, b2);
+export function linesIntersect(a1, a2, b1, b2) {
+  let p = beamsIntersect(a1, a2, b1, b2);
   if (!p) return false;
   let lenA = a1.dist(a2);
   let lenB = b1.dist(b2);
@@ -53,18 +53,22 @@ export function linesCross(a1, a2, b1, b2) {
 }
 
 /** Finds out whether a point lies on an endless line */
-export function pointOnBeam(from, to, check) {
+export function pointOnBeam(from, to, check, precision = 1e6) {
   if (from.sitsOn(check)) return true;
   if (to.sitsOn(check)) return true;
-  let angleA = from.angle(to);
-  let angleB = from.angle(check);
-  if (angleA === angleB || Math.abs(angleA - angleB) === 180) return true;
+  let dxCheck = check.dx(from);
+  let dyCheck = check.dy(from);
+  let dxLine = to.dx(from);
+  let dyLine = to.dy(from);
+  let cross = check.dx(from) * to.dy(from) - check.dy(from) * to.dx(from);
+
+  if (Math.abs(Math.round(cross * precision) / precision) === 0) return true;
   else return false;
 }
 
 /** Finds out whether a point lies on a line segment */
-export function pointOnLine(from, to, check) {
-  if (!pointOnBeam(from, to, check)) return false;
+export function pointOnLine(from, to, check, precision = 1e6) {
+  if (!pointOnBeam(from, to, check, precision)) return false;
   let lenA = from.dist(to);
   let lenB = from.dist(check) + check.dist(to);
   if (Math.round(lenA) == Math.round(lenB)) return true;
@@ -89,22 +93,22 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
   else return false;
 }
 
-/** Find where an (endless) line crosses a certain X-value */
-export function beamCrossesX(from, to, x) {
+/** Find where an (endless) line intersects with a certain X-value */
+export function beamIntersectsX(from, to, x) {
   if (from.x === to.x) return false; // Vertical line
   let top = new Point(x, -10);
   let bottom = new Point(x, 10);
 
-  return beamsCross(from, to, top, bottom);
+  return beamsIntersect(from, to, top, bottom);
 }
 
-/** Find where an (endless) line crosses a certain Y-value */
-export function beamCrossesY(from, to, y) {
+/** Find where an (endless) line intersects with a certain Y-value */
+export function beamIntersectsY(from, to, y) {
   if (from.y === to.y) return false; // Horizontal line
   let left = new Point(-10, y);
   let right = new Point(10, y);
 
-  return beamsCross(from, to, left, right);
+  return beamsIntersect(from, to, left, right);
 }
 
 /** Convert value in mm to cm or imperial units */
@@ -113,8 +117,8 @@ export function units(value, to = "metric") {
   else return round(value / 10) + "cm";
 }
 
-/** Find where a curve crosses a line */
-export function curveCrossesLine(from, cp1, cp2, to, start, end) {
+/** Find where a curve intersects with line */
+export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   let intersections = [];
   let bz = new Bezier(
     { x: from.x, y: from.y },
@@ -136,8 +140,8 @@ export function curveCrossesLine(from, cp1, cp2, to, start, end) {
   else return intersections;
 }
 
-/** Find where a curve crosses another curve */
-export function curveCrossesCurve(
+/** Find where a curve intersects with another curve */
+export function curvesIntersect(
   fromA,
   cp1A,
   cp2A,
@@ -179,5 +183,84 @@ export function curveCrossesCurve(
       if (!dupe) unique.push(i);
     }
     return unique;
+  }
+}
+
+/** Find the intersections between two circles */
+export function circlesIntersect(c1, r1, c2, r2, sort = "x") {
+  let dx = c1.dx(c2);
+  let dy = c1.dy(c2);
+  let dist = c1.dist(c2);
+  // Check for edge cases
+  if (dist > parseFloat(r1) + parseFloat(r2)) return false; // Circles do not intersect
+  if (dist < parseFloat(r2) - parseFloat(r1)) return false; // One circle is contained in the other
+  if (dist === 0 && r1 === r2) return false; // Two circles are identical
+  let chorddistance =
+    (Math.pow(r1, 2) - Math.pow(r2, 2) + Math.pow(dist, 2)) / (2 * dist);
+  let halfchordlength = Math.sqrt(Math.pow(r1, 2) - Math.pow(chorddistance, 2));
+  let chordmidpointx = c1.x + (chorddistance * dx) / dist;
+  let chordmidpointy = c1.y + (chorddistance * dy) / dist;
+  let i1 = new Point(
+    chordmidpointx + (halfchordlength * dy) / dist,
+    chordmidpointy - (halfchordlength * dx) / dist
+  );
+  let i2 = new Point(
+    chordmidpointx - (halfchordlength * dy) / dist,
+    chordmidpointy + (halfchordlength * dx) / dist
+  );
+
+  if ((sort === "x" && i1.x <= i2.x) || (sort === "y" && i1.y <= i2.y))
+    return [i1, i2];
+  else return [i2, i1];
+}
+
+/** Find the intersections between a beam and a circle */
+export function beamIntersectsCircle(c, r, p1, p2, sort = "x") {
+  let dx = p2.x - p1.x;
+  let dy = p2.y - p1.y;
+  let A = Math.pow(dx, 2) + Math.pow(dy, 2);
+  let B = 2 * (dx * (p1.x - c.x) + dy * (p1.y - c.y));
+  let C = Math.pow(p1.x - c.x, 2) + Math.pow(p1.y - c.y, 2) - Math.pow(r, 2);
+
+  let det = Math.pow(B, 2) - 4 * A * C;
+
+  if (A <= 0.0000001 || det < 0) return false;
+  // No real solutions
+  else if (det === 0) {
+    // One solution
+    let t = (-1 * B) / (2 * A);
+    let i1 = new Point(p1.x + t * dx, p1.y + t * dy);
+    return [i1];
+  } else {
+    // Two solutions
+    let t = (-1 * B + Math.sqrt(det)) / (2 * A);
+    let i1 = new Point(p1.x + t * dx, p1.y + t * dy);
+    t = (-1 * B - Math.sqrt(det)) / (2 * A);
+    let i2 = new Point(p1.x + t * dx, p1.y + t * dy);
+    if ((sort === "x" && i1.x <= i2.x) || (sort === "y" && i1.y <= i2.y))
+      return [i1, i2];
+    else return [i2, i1];
+  }
+}
+/** Find the intersections between a line and a circle */
+export function lineIntersectsCircle(c, r, p1, p2, sort = "x") {
+  let intersections = beamIntersectsCircle(c, r, p1, p2, sort);
+  if (intersections === false) return false;
+  else {
+    if (intersections.length === 1) {
+      if (pointOnLine(p1, p2, intersections[0])) return intersections;
+      else return false;
+    } else {
+      let i1 = intersections[0];
+      let i2 = intersections[1];
+      if (!pointOnLine(p1, p2, i1, 5) && !pointOnLine(p1, p2, i2, 5))
+        return false;
+      else if (pointOnLine(p1, p2, i1, 5) && pointOnLine(p1, p2, i2, 5)) {
+        if ((sort === "x" && i1.x <= i2.x) || (sort === "y" && i1.y <= i2.y))
+          return [i1, i2];
+        else return [i2, i1];
+      } else if (pointOnLine(p1, p2, i1, 5)) return [i1];
+      else if (pointOnLine(p1, p2, i2, 5)) return [i2];
+    }
   }
 }
