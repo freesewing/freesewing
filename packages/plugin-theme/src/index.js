@@ -33,7 +33,7 @@ export default {
             this.defs += `<pattern id="grid_${key}" xlink:href="#grid" x="${
               anchor.x
             }" y="${anchor.y}"></pattern>`;
-            part.paths[part.getUid()] = new this.pattern.Path()
+            part.paths[part.getId()] = new this.pattern.Path()
               .move(part.topLeft)
               .line(new this.pattern.Point(part.topLeft.x, part.bottomRight.y))
               .line(part.bottomRight)
