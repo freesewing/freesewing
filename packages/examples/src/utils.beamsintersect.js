@@ -1,6 +1,6 @@
 import freesewing from "freesewing";
 
-var utilsBeamsCross = {
+var utilsBeamsIntersect = {
   draft: function(part) {
     // prettier-ignore
     let {debug, Point, points, Path, paths, Snippet, snippets, utils} = part.shorthand();
@@ -17,7 +17,7 @@ var utilsBeamsCross = {
       .move(points.C)
       .line(points.D);
 
-    snippets.X = new Snippet('x', utils.beamsCross(
+    snippets.X = new Snippet('x', utils.beamsIntersect(
           points.A,
           points.B,
           points.C,
@@ -28,4 +28,4 @@ var utilsBeamsCross = {
   }
 };
 
-export default utilsBeamsCross;
+export default utilsBeamsIntersect;

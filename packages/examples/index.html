@@ -25,12 +25,12 @@
       pattern.settings.measurements = freesewing.models.men.manSize36;
 
       // Uncomment this line to enable paperless
-      pattern.settings.paperless = true;
-
+      //pattern.settings.paperless = true;
       // Some default settings
       pattern.settings.sa = 10;
       pattern.settings.units = 'metric';
-pattern.settings.only = 'pathEdge';
+//      console.log(pattern);
+pattern.settings.only = ['utilsLineIntersectsCircle', 'utilsPointOnLine'];
 //pattern.on('preRender', function(next) {
 //  this.style += 'g { border: 1px solid red; background: red;}';
 //  next();
