@@ -108,6 +108,36 @@ it("Should sample models", () => {
   expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
 });
 
+it("Should sample models with focus", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.draft = function() {
+    pattern.parts.a = new pattern.Part();
+    pattern.parts.b = new pattern.Part();
+    let a = pattern.parts.a;
+    a.points.from = new a.Point(0, 0);
+    a.points.to = new a.Point(10, a.context.config.measurements.headToToe);
+    a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
+    pattern.parts.b.copy(a);
+  };
+  pattern.settings.sample = {
+    type: "models",
+    focus: "a",
+    models: {
+      a: { headToToe: 1980 },
+      b: { headToToe: 1700 }
+    }
+  };
+  pattern.sample();
+  expect(pattern.parts.a.paths.test_1.render).to.equal(true);
+  expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
+  expect(pattern.parts.a.paths.test_1.attributes.get("class")).to.equal(
+    "sample sample-1 sample-focus"
+  );
+  expect(pattern.parts.b.paths.test_2.attributes.get("class")).to.equal(
+    "sample sample-2"
+  );
+});
+
 it("Should register a hook via on", () => {
   let pattern = new freesewing.Pattern();
   let count = 0;

@@ -81,7 +81,10 @@ Pattern.prototype.sample = function() {
   } else if (this.settings.sample.type === "measurement") {
     return this.sampleMeasurement(this.settings.sample.measurement);
   } else if (this.settings.sample.type === "models") {
-    return this.sampleModels(this.settings.sample.models);
+    return this.sampleModels(
+      this.settings.sample.models,
+      this.settings.sample.focus || false
+    );
   }
 };
 
@@ -160,7 +163,7 @@ Pattern.prototype.sampleMeasurement = function(measurement) {
 /**
  * Handles models sampling
  */
-Pattern.prototype.sampleModels = function(models) {
+Pattern.prototype.sampleModels = function(models, focus = false) {
   let parts = this.sampleParts();
   let count = 0;
   for (let l in models) {
@@ -172,7 +175,9 @@ Pattern.prototype.sampleModels = function(models) {
       for (let j in this.parts[i].paths) {
         parts[i].paths[j + "_" + count] = this.parts[i].paths[j]
           .clone()
-          .attr("class", "sample-" + count, true);
+          .attr("class", "sample sample-" + count, true);
+        if (l === focus)
+          parts[i].paths[j + "_" + count].attr("class", "sample-focus");
       }
     }
   }
