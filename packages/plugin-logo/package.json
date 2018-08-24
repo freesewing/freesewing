@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-logo",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A freesewing plugin to add skully to your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
