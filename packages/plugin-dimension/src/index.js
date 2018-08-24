@@ -69,7 +69,7 @@ export default {
   hooks: {
     preRender: function(next) {
       this.defs += markers;
-      this.attributes.add("freesewing:plugin-cutonfold", version);
+      this.attributes.add("freesewing:plugin-dimension", version);
       next();
     }
   },
