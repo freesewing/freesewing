@@ -69,7 +69,7 @@ var base = {
     );
     points._tmp1 = new Point(points.armholePitch.x, points.armhole.y);
     points._tmp2 = points._tmp1.shift(45, 10);
-    points._tmp3 = utils.beamsCross(
+    points._tmp3 = utils.beamsIntersect(
       points._tmp1,
       points._tmp2,
       points.armhole,
@@ -104,7 +104,7 @@ var base = {
     points._tmp4 = points.neck
       .shiftTowards(points.shoulder, 10)
       .rotate(-90, points.neck);
-    points.neckCp2 = utils.beamCrossesY(
+    points.neckCp2 = utils.beamIntersectsY(
       points.neck,
       points._tmp4,
       points.cbNeck.y
