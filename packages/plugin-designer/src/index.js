@@ -12,7 +12,7 @@ export default {
       this.defs += snippets;
 
       // Add SVG attributes
-      this.attributes.add("freesewing:theme-designer", version);
+      this.attributes.add("freesewing:plugin-designer", version);
 
       /** Decorares points with extra info */
       var decoratePoints = function(svg) {
