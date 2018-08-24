@@ -7,7 +7,7 @@ export default {
   hooks: {
     preRender: function(next) {
       this.defs += markers;
-      this.attributes.add(`freesewing:${name}`, version);
+      this.attributes.add('freesewing:plugin-grainline', version);
       next();
     }
   },
