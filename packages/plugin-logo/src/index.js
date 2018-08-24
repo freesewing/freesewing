@@ -6,7 +6,7 @@ export default {
   version: version,
   hooks: {
     preRender: function(next) {
-      this.attributes.add(`freesewing:${name}`, version);
+      this.attributes.add('freesewing:plugin-logo', version);
       this.defs += logo;
       this.style += "path.logo{stroke:none;fill:#000;}";
       next();
