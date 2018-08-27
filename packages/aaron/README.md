@@ -12,3 +12,9 @@ for a tank top / A-shirt.
 
 See [freesewing.org/patterns/aaron](https://freesewing.org/patterns/aaron)
 for more info and examples.
+
+## Install
+
+```
+npm i --save @freesewing/aaron
+```
