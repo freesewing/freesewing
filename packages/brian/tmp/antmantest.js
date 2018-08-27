@@ -1,1 +1,0 @@
-../../antmantest/dist/browser.js
