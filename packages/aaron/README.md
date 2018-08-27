@@ -5,11 +5,10 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 
-# freesewing / patterns / brian
+# freesewing / patterns / aaron
 
-Brian is a [freesewing](https://github.com/freesewing/freesewing) pattern
-for a basic body block for menswear. It's the basis for many of our menswear patterns.
+Aaron is a [freesewing](https://github.com/freesewing/freesewing) pattern
+for a tank top / A-shirt.
 
-## Example
-
-FIXME: Include example
+See [freesewing.org/patterns/aaron](https://freesewing.org/patterns/aaron)
+for more info and examples.
