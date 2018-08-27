@@ -7,7 +7,7 @@
 
 # Freesewing patterns
 
-An overview of sewing patterns based on freesewing.
+An overview of sewing patterns available for [the JavaScript version of freesewing](https://github.com/freesewing/freesewing).
 
 ## Blocks
 
