@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "watch": "npx webpack --watch",
+    "watch": "rollup -w -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns_aaron --footer 'freesewing.patterns.aaron = freesewing_patterns_aaron;'",
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns_aaron --footer 'freesewing.patterns.aaron = freesewing_patterns_aaron;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
@@ -46,9 +46,9 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "0.6.6",
-    "@freesewing/plugin-bundle": "0.0.1",
-    "freesewing": "^0.6.2"
+    "@freesewing/brian": "0.7.3",
+    "@freesewing/plugin-bundle": "0.1.6",
+    "freesewing": "0.10.2"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",

@@ -20,18 +20,18 @@ export default {
     collarEase: 0,
     frontArmholeDeeper: 0,
     armholeDepthFactor: 0.6,
+    shoulderSlopeReduction: 0,
 
     // Percentages
-    armholeDrop:            { val:  10, min:  0, max:  50 },
-    backlineBend:           { val:   0, min:  0, max:   8 },
+    armholeDrop:            { val:  10, min:  1, max:  75 },
+    backlineBend:           { val:  50, min: 50, max: 100 },
     chestEase:              { val:   8, min:  0, max:  20 },
     hipsEase:               { val:   8, min:  0, max:  20 },
     lengthBonus:            { val:  10, min:-20, max:  60 },
-    necklineBend:           { val:  60, min: 40, max: 100 },
-    necklineDrop:           { val:  15, min: 10, max:  35 },
-    shoulderSlopeReduction: { val:   0, min:  0, max:   8 },
+    necklineBend:           { val: 100, min: 40, max: 100 },
+    necklineDrop:           { val:  20, min: 10, max:  35 },
     stretchFactor:          { val:   5, min:  0, max:  15 },
-    shoulderStrapWidth:     { val:  20, min: 10, max:  40 },
-    shoulderStrapPlacement: { val:  50, min: 20, max:  80 },
+    shoulderStrapWidth:     { val:  15, min: 10, max:  40 },
+    shoulderStrapPlacement: { val:  40, min: 20, max:  80 },
   }
 };

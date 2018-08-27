@@ -1,4 +1,4 @@
-//import * as shared from "./shared";
+import { dimensions } from './shared';
 
 var front = {
   draft: function(part) {
@@ -14,7 +14,7 @@ var front = {
         points[`cb${key}`].x,
         points[`cb${key}`].y
       );
-      delete points[`cb${key}`];
+      //delete points[`cb${key}`];
     }
 
     // Neckline
@@ -26,7 +26,7 @@ var front = {
     points.strapCenter = points.neck.shiftFractionTowards(points.shoulder, options.shoulderStrapPlacement);
     points.strapLeft = points.strapCenter.shiftTowards(points.neck, points.neck.dist(points.shoulder) * options.shoulderStrapWidth);
     points.strapRight = points.strapLeft.rotate(180, points.strapCenter);
-    points.necklineCorner = utils.beamsCross(
+    points.necklineCorner = utils.beamsIntersect(
       points.strapLeft,
       points.strapRight.rotate(-90, points.strapLeft),
         points.cfNeck.shift(0, points.armholePitch.x/4),
@@ -40,22 +40,25 @@ var front = {
     points.waist.x = points.hips.x; // Because stretch
     points.waistCp2 = points.waist.shift(90,points.armhole.dy(points.waist)/2);
 
+    // Armhole drop
+    let side = new Path()
+      .move(points.hips)
+      .line(points.waist)
+      .curve(points.waistCp2, points.armhole, points.armhole);
+    let split = side.intersectsY(points.armhole.y * (1 + options.armholeDrop)).pop();
+    paths.side = side.split(split)[0];
+    paths.side.render = false;
+    points.aaronArmhole = split;
+
     // Armhole
-    points.armholeCorner = utils.beamsCross(
-      points.armhole,
-      points.armholeCp2,
+    points.armholeCorner = utils.beamsIntersect(
+      points.aaronArmhole,
+      points.aaronArmhole.shift(180,10),
       points.strapRight,
       points.strapLeft.rotate(90, points.strapRight)
     );
-    points.armholeCp2 = points.armhole.shiftFractionTowards(points.armholeCorner, 0.8);
+    points.armholeCp2 = points.aaronArmhole.shiftFractionTowards(points.armholeCorner, 0.8);
     points.strapRightCp1 = points.strapRight.shiftFractionTowards(points.armholeCorner, 0.6);
-
-    // Armhole drop
-
-
-    console.log('cfneck', points.cfNeck);
-      console.log(measurements.naturalWaistToHip);
-      console.log(measurements.centerBackNeckToWaist);
 
     // Seamline
     paths.seam = new Path()
@@ -63,13 +66,29 @@ var front = {
       .line(points.cfHips)
       .line(points.hips)
       .line(points.waist)
-      .curve(points.waistCp2, points.armhole, points.armhole)
+      .join(paths.side)
       .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
       .line(points.strapLeft)
       .curve(points.strapLeftCp2, points.cfNeckCp1, points.cfNeck)
       .close()
       .attr("class", "fabric");
-    /*
+
+    // Store length of armhole and neck opening
+    store.set(
+      'frontArmholeLength',
+      new Path()
+        .move(points.aaronArmhole)
+        .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
+        .length()
+    );
+    store.set(
+      'frontNeckOpeningLength',
+      new Path()
+        .move(points.strapLeft)
+        .curve(points.cfNeckCp1, points.cfNeckCp1, points.cfNeck)
+        .length()
+    );
+
     // Final?
     if (final) {
       macro("cutonfold", {
@@ -77,36 +96,46 @@ var front = {
         to: points.cfHips,
         grainline: true
       });
+      points.title = new Point(points.waist.x/2, points.waist.y);
       macro("title", { at: points.title, nr: 1, title: "front" });
-      snippets.armholePitchNotch = new Snippet("notch", points.armholePitch);
-      if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      points.logo = points.title.shift(-90, 75);
+      snippets.logo = new Snippet("logo", points.logo);
+
+      if (sa) {
+        paths.saShoulder = new Path()
+          .move(points.strapRight)
+          .line(points.strapLeft)
+          .offset(sa)
+          .line(points.strapLeft)
+          .attr("class", "fabric sa");
+        paths.saShoulder
+          .move(points.strapRight)
+          .line(paths.saShoulder.start());
+        paths.saSide = paths.side
+          .offset(sa)
+          .line(points.aaronArmhole)
+          .attr("class", "fabric sa");
+        paths.saHem = new Path()
+          .move(points.cfHips)
+          .line(points.hips)
+          .offset(sa * 2.5).attr("class", "fabric sa")
+          .line(paths.saSide.start());
+        paths.saHem
+          .move(points.cfHips)
+          .line(paths.saHem.start());
+      }
     }
 
     // Paperless?
     if (paperless) {
-      shared.dimensions(macro, points, Path, sa);
-      macro("hd", {
-        from: points.cfHips,
-        to: points.hips,
-        y: points.hips.y + sa + 15
-      });
+      dimensions(macro, points, sa);
       macro("vd", {
         from: points.cfHips,
         to: points.cfNeck,
         x: points.cfHips.x - sa - 15
       });
-      macro("hd", {
-        from: points.cfNeck,
-        to: points.neck,
-        y: points.neck.y - sa - 15
-      });
-      macro("hd", {
-        from: points.cfNeck,
-        to: points.shoulder,
-        y: points.neck.y - sa - 30
-      });
     }
-*/
+
     return part;
   }
 };

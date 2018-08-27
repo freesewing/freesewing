@@ -13,8 +13,13 @@ var pattern = new freesewing.Pattern({ version: version, ...config })
 
 pattern.draft = function() {
   this.parts.base = this.draftBase(new pattern.Part());
-  this.parts.front = this.draftFront(new pattern.Part().copy(this.parts.base));
-  //this.parts.back = this.draftBack(this);
+  if (!this.needs("base", true)) this.parts.base.render = false;
+  if (this.needs(["back", "front"])) {
+    this.parts.front = this.draftFront(new pattern.Part().copy(this.parts.base));
+  }
+  if (this.needs(["back"])) {
+    this.parts.back = this.draftBack(new pattern.Part().copy(this.parts.front));
+  }
 
   return pattern;
 };
