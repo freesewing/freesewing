@@ -39,6 +39,12 @@ it("Should render Svg boilerplate", () => {
   expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
 });
 
+it("Should render language attribute", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.locale = "nl";
+  expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplateNl);
+});
+
 it("Should render Svg boilerplate for embedding", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.embed = true;

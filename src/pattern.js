@@ -22,7 +22,9 @@ export default function Pattern(config = false) {
   // Data containers
   this.settings = {
     mode: "draft",
-    idPrefix: "fs-"
+    idPrefix: "fs-",
+    locale: "en",
+    units: "metric"
   };
   this.options = {};
   this.store = new Store();
@@ -31,8 +33,7 @@ export default function Pattern(config = false) {
   // Merge config with defaults
   let defaults = {
     measurements: {},
-    options: {},
-    units: "metric"
+    options: {}
   };
   this.config = { ...defaults, ...config };
   for (let i in config.options) {

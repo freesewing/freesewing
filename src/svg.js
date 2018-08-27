@@ -18,6 +18,7 @@ function Svg(pattern) {
   this.attributes.add("xmlns", "http://www.w3.org/2000/svg");
   this.attributes.add("xmlns:svg", "http://www.w3.org/2000/svg");
   this.attributes.add("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  this.attributes.add("xml:lang", pattern.settings.locale);
   this.attributes.add(
     "xmlns:freesewing",
     "http://freesewing.org/namespaces/freesewing"

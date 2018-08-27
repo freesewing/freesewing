@@ -13,7 +13,7 @@ it("Pattern constructor should initialize object", () => {
   expect(pattern.height).to.equal(false);
   expect(pattern.settings.mode).to.equal("draft");
   expect(pattern.parts).to.eql({});
-  expect(pattern.config.units).to.equal("metric");
+  expect(pattern.settings.units).to.equal("metric");
   expect(pattern.config.foo).to.equal("bar");
   expect(pattern.options.constant).to.equal(2);
   expect(pattern.options.percentage).to.equal(0.3);
