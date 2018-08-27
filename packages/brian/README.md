@@ -19,3 +19,9 @@ for a basic body block for menswear. It's the basis for many of our menswear pat
 See [freesewing.org/patterns/brian](https://freesewing.org/patterns/brian)
 for more info and examples.
 
+## Install
+
+```
+npm i --save @freesewing/brian
+```
+
