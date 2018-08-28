@@ -32,6 +32,12 @@ Attributes.prototype.get = function(name) {
   else return this.list[name].join(" ");
 };
 
+/** Retrieves an attribute as array*/
+Attributes.prototype.getAsArray = function(name) {
+  if (typeof this.list[name] === "undefined") return false;
+  else return this.list[name];
+};
+
 /** Returns SVG code for attributes */
 Attributes.prototype.render = function() {
   let svg = "";

@@ -187,8 +187,17 @@ Svg.prototype.renderPathText = function(path) {
 };
 
 Svg.prototype.renderText = function(point) {
-  this.text = point.attributes.get("data-text");
-  this.insertText();
+  let text = point.attributes.getAsArray("data-text");
+  if (text !== false) {
+    let joint = "";
+    for (let string of text) {
+      this.text = string;
+      this.insertText();
+      joint += this.text + " ";
+    }
+    this.text = joint;
+    this.insertText();
+  }
   point.attributes.set("data-text-x", point.x);
   point.attributes.set("data-text-y", point.y);
   let lineHeight = point.attributes.get("data-text-lineheight") || 12;
