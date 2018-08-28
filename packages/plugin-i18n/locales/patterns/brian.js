@@ -1,12 +1,12 @@
 export default {
   en: {
-    front: 'Front',
-    back: 'Back',
-    sleeve: 'Sleeve'
+    front: "Front",
+    back: "Back",
+    sleeve: "Sleeve"
   },
   nl: {
-    front: 'Voorzijde',
-    back: 'Rug',
-    sleeve: 'Mouw'
+    front: "Voorzijde",
+    back: "Rug",
+    sleeve: "Mouw"
   }
 }
