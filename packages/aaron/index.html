@@ -14,6 +14,7 @@
     <script type="text/javascript" src="node_modules/@freesewing/plugin-designer/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-debug/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-validate/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-i18n/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
@@ -22,6 +23,7 @@
         .with(freesewing.plugins.debug)
         .with(freesewing.plugins.theme)
         .with(freesewing.plugins.designer)
+        .with(freesewing.plugins.i18n)
 
       pattern.settings.paperless = true;
       pattern.settings.measurements = freesewing.models.men.manSize36;
@@ -31,6 +33,7 @@
         type: 'measurement',
         measurement: 'shoulderToShoulder'
       }
+pattern.settings.locale = 'nl';
 
       //pattern.sampleOption('backlineBend');
       //pattern.sampleMeasurement('bicepsCircumference');
