@@ -1,6 +1,6 @@
 import freesewing from "freesewing";
 
-var macroGrainline = {
+var pluginGrainline = {
   draft: function(part) {
     // prettier-ignore
     let {Point, points, macro} = part.shorthand();
@@ -12,8 +12,9 @@ var macroGrainline = {
       from: points.grainlineFrom,
       to: points.grainlineTo
     });
+
     return part;
   }
 };
 
-export default macroGrainline;
+export default pluginGrainline;

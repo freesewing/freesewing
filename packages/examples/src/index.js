@@ -51,8 +51,14 @@ import utilsCirclesIntersect from "./utils.circlesintersect";
 import utilsBeamIntersectsCircle from "./utils.beamintersectscircle";
 import utilsLineIntersectsCircle from "./utils.lineintersectscircle";
 
+import pluginGrainline from "./plugin.grainline";
+import pluginCutonfold from "./plugin.cutonfold";
+import pluginDimension from "./plugin.dimension";
+import pluginLogo from "./plugin.logo";
+import pluginTitle from "./plugin.title";
+import pluginScalebox from "./plugin.scalebox";
+
 import settingsSa from "./settings.sa";
-import macroGrainline from "./macro.grainline";
 
 var pattern = new freesewing.Pattern({ version: version, ...config }).with(
   pluginBundle
@@ -106,8 +112,14 @@ pattern.draft = function() {
   if (this.needs('utilsBeamIntersectsCircle')) this.parts.utilsBeamIntersectsCircle = this.draftUtilsBeamIntersectsCircle(new pattern.Part());
   if (this.needs('utilsLineIntersectsCircle')) this.parts.utilsLineIntersectsCircle = this.draftUtilsLineIntersectsCircle(new pattern.Part());
 
+  if (this.needs('pluginGrainline')) this.parts.pluginGrainline = this.draftPluginGrainline(new pattern.Part());
+  if (this.needs('pluginCutonfold')) this.parts.pluginCutonfold = this.draftPluginCutonfold(new pattern.Part());
+  if (this.needs('pluginDimension')) this.parts.pluginDimension = this.draftPluginDimension(new pattern.Part());
+  if (this.needs('pluginLogo')) this.parts.pluginLogo = this.draftPluginLogo(new pattern.Part());
+  if (this.needs('pluginTitle')) this.parts.pluginTitle = this.draftPluginTitle(new pattern.Part());
+  if (this.needs('pluginScalebox')) this.parts.pluginScalebox = this.draftPluginScalebox(new pattern.Part());
+
   if (this.needs('settingsSa')) this.parts.settingsSa = this.draftSettingsSa(new pattern.Part());
-  if (this.needs('macroGrainline')) this.parts.macroGrainline = this.draftMacroGrainline(new pattern.Part());
   return pattern;
 };
 
@@ -158,8 +170,14 @@ pattern.draftUtilsCirclesIntersect = part => utilsCirclesIntersect.draft(part);
 pattern.draftUtilsBeamIntersectsCircle = part => utilsBeamIntersectsCircle.draft(part);
 pattern.draftUtilsLineIntersectsCircle = part => utilsLineIntersectsCircle.draft(part);
 
+pattern.draftPluginGrainline = part => pluginGrainline.draft(part);
+pattern.draftPluginCutonfold = part => pluginCutonfold.draft(part);
+pattern.draftPluginDimension = part => pluginDimension.draft(part);
+pattern.draftPluginLogo = part => pluginLogo.draft(part);
+pattern.draftPluginTitle = part => pluginTitle.draft(part);
+pattern.draftPluginScalebox = part => pluginScalebox.draft(part);
+
 pattern.draftSettingsSa = part => settingsSa.draft(part);
-pattern.draftMacroGrainline = part => macroGrainline.draft(part);
 
 // Add custom snippet
 pattern.on('preRender', function(next) {
