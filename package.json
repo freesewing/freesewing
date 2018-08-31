@@ -26,12 +26,12 @@
     "clean": "rimraf dist && rimraf tests/dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/browser.js -f iife -n freesewing",
-    "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs -e bezier-js,bin-pack,hooks",
-    "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -e bezier-js,bin-pack,hooks",
+    "browserbuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing",
+    "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs -m true -e bezier-js,bin-pack,hooks",
+    "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -m true -e bezier-js,bin-pack,hooks",
     "testbuild": "BABEL_ENV=test rollup -c rollup.js -o tests/dist/index.js -f cjs -e bezier-js,bin-pack,hooks",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild && npm run testbuild",
-    "watch": "rollup -c rollup.js -o dist/index.js -f cjs --watch"
+    "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
   },
   "nyc": {
     "exclude": [
