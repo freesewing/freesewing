@@ -452,3 +452,8 @@ it("Should not find intersections between identical circles", () => {
   );
   expect(intersections).to.equal(false);
 });
+
+it("Should return scale for a given amount of stretch", () => {
+  expect(freesewing.utils.stretchToScale(0)).to.equal(1);
+  expect(freesewing.utils.stretchToScale(0.15)).to.equal(0.9);
+});

@@ -1,6 +1,5 @@
 import Point from "./point";
 import Bezier from "bezier-js";
-import { round } from "./round";
 
 /** Returns internal hook name for a macro */
 export function macroName(name) {
@@ -258,4 +257,23 @@ export function lineIntersectsCircle(c, r, p1, p2, sort = "x") {
       else if (pointOnLine(p1, p2, i2, 5)) return [i2];
     }
   }
+}
+
+/**
+ * Calculates scale factor based on stretch factor
+ *
+ * The way people measure stretch intuitively is
+ * different from the way we handle stretch in code.
+ * When people say '25% stretch' they mean that
+ * 10cm fabric should get stretched to 12.5cm fabric.
+ * In our code, that means we need to scale things by 80%.
+ *
+ * This method does that calculation.
+ */
+export function stretchToScale(stretch) {
+  return 1 / (1 + parseFloat(stretch));
+}
+
+export function round(value) {
+  return Math.round(value * 1e2) / 1e2;
 }

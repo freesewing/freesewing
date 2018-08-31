@@ -4,7 +4,6 @@ import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
 import * as hooklib from "hooks";
-import { round } from "./round";
 
 function Part() {
   this.attributes = new Attributes();
@@ -18,7 +17,6 @@ function Part() {
   this.height = false;
   this.render = true;
   this.utils = utils;
-  this.points.origin = new Point(0, 0);
   for (let k in hooklib) this[k] = hooklib[k];
   // Keep track of attached hooks
 
@@ -26,9 +24,6 @@ function Part() {
   this.Point = Point;
   this.Path = Path;
   this.Snippet = Snippet;
-
-  // Expose round method to plugins
-  this.round = round;
 
   let self = this;
   this.hooks.attach("debug", self);

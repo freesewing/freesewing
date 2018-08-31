@@ -1,13 +1,13 @@
 import Attributes from "./attributes";
 import Point from "./point";
 import Bezier from "bezier-js";
-import { round } from "./round";
 import {
   linesIntersect,
   lineIntersectsCurve,
   curvesIntersect,
   pointOnLine,
-  pointOnCurve
+  pointOnCurve,
+  round
 } from "./utils";
 
 function Path() {

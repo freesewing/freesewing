@@ -4,6 +4,7 @@ let expect = require("chai").expect;
 let chai = require("chai");
 chai.use(require("chai-string"));
 let freesewing = require("./dist/index.js");
+var round = freesewing.utils.round;
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();

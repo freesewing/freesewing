@@ -1,5 +1,6 @@
 let expect = require("chai").expect;
 let freesewing = require("./dist/index.js");
+let round = freesewing.utils.round;
 
 it("Should offset a line", () => {
   let pattern = new freesewing.Pattern();
@@ -617,7 +618,3 @@ it("Should split a path on a line", () => {
   expect(line.to.x).to.equal(29.81);
   expect(line.to.y).to.equal(46.98);
 });
-
-function round(value) {
-  return Math.round(value * 1e2) / 1e2;
-}

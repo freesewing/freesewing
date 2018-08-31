@@ -12,8 +12,6 @@ it("Svg constructor should initialize object", () => {
   expect(part.width).to.equal(false);
   expect(part.height).to.equal(false);
   expect(part.render).to.equal(true);
-  expect(part.points.origin.x).to.equal(0);
-  expect(part.points.origin.y).to.equal(0);
 });
 
 it("Should return a function from macroClosure", () => {
@@ -97,12 +95,11 @@ it("Should set part attributes", () => {
 it("Should copy a part", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
-  part.points.origin.x = 16;
   part.points.foo = new part.Point(12, 23);
   let test = new pattern.Part();
   test.copy(part);
-  expect(test.points.origin.x).to.equal(0);
   expect(test.points.foo.x).to.equal(12);
+  expect(test.points.foo.y).to.equal(23);
 });
 
 it("Should return shorthand", () => {
