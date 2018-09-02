@@ -15,14 +15,14 @@ export default {
     title: function(so) {
       let overwrite = true;
       if (so.append) overwrite = false;
-      so.at
+      this.points._titleNr = so.at
         .attr("data-text", so.nr, overwrite)
         .attr("data-text-class", "title-nr note fill-note");
-      this.points.titleName = so.at
+      this.points._titleName = so.at
         .shift(-90, 13)
         .attr("data-text", so.title)
         .attr("data-text-class", "title-name");
-      this.points.titlePattern = so.at
+      this.points._titlePattern = so.at
         .shift(-90, 20)
         .attr(
           "data-text",
