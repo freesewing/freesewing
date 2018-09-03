@@ -6,7 +6,7 @@ it("Pattern constructor should initialize object", () => {
     foo: "bar",
     options: {
       constant: 2,
-      percentage: { val: 30, min: 0, max: 100 }
+      percentage: { pct: 30, min: 0, max: 100 }
     }
   });
   expect(pattern.width).to.equal(false);
@@ -28,16 +28,54 @@ it("Should throw exception upon draft", () => {
 it("Should load percentage options", () => {
   let pattern = new freesewing.Pattern({
     options: {
-      test: { val: 30 }
+      test: { pct: 30 }
     }
   });
   expect(pattern.options.test).to.equal(0.3);
 });
 
+it("Should load millimeter options", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test: { mm: 30 }
+    }
+  });
+  expect(pattern.options.test).to.equal(30);
+});
+
+it("Should load degree options", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test: { deg: 15 }
+    }
+  });
+  expect(pattern.options.test).to.equal(15);
+});
+
+it("Should load an array option", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test: { dflt: "foo" }
+    }
+  });
+  expect(pattern.options.test).to.equal("foo");
+});
+
+it("Should throw an error for an unknown option", () => {
+  expect(
+    () =>
+      new freesewing.Pattern({
+        options: {
+          test: { foo: "bar" }
+        }
+      })
+  ).to.throw();
+});
+
 it("Should sample an option", () => {
   let pattern = new freesewing.Pattern({
     options: {
-      len: { val: 30, min: 0, max: 100 },
+      len: { pct: 30, min: 0, max: 100 },
       bonus: 10
     }
   });

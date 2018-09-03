@@ -39,12 +39,13 @@ export default function Pattern(config = false) {
   for (let i in config.options) {
     let option = config.options[i];
     if (typeof option === "object") {
-      if (typeof option.val !== "undefined") this.options[i] = option.val / 100;
+      if (typeof option.pct !== "undefined") this.options[i] = option.pct / 100;
       else if (typeof option.mm !== "undefined") this.options[i] = option.mm;
-      else if (typeof option.angle !== "undefined")
-        this.options[i] = option.angle;
+      else if (typeof option.deg !== "undefined") this.options[i] = option.deg;
+      else if (typeof option.dflt !== "undefined")
+        this.options[i] = option.dflt;
       else throw "Unknown option type";
-    } else if (typeof option === "number") {
+    } else {
       this.options[i] = option;
     }
   }
