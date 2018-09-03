@@ -7,6 +7,7 @@ import {
   curvesIntersect,
   pointOnLine,
   pointOnCurve,
+  curveEdge,
   round
 } from "./utils";
 
@@ -484,31 +485,8 @@ Path.prototype.edge = function(side) {
         else return this.rightOp.from;
       }
     } else if (this[s].type === "curve") {
-      let line;
-      if (side === "top")
-        line = {
-          p1: { x: this.topLeft.x, y: this.topLeft.y },
-          p2: { x: this.bottomRight.x, y: this.topLeft.y }
-        };
-      else if (side === "left")
-        line = {
-          p1: { x: this.topLeft.x, y: this.topLeft.y },
-          p2: { x: this.topLeft.x, y: this.bottomRight.y }
-        };
-      else if (side === "bottom")
-        line = {
-          p1: { x: this.topLeft.x, y: this.bottomRight.y },
-          p2: { x: this.bottomRight.x, y: this.bottomRight.y }
-        };
-      else if (side === "right")
-        line = {
-          p1: { x: this.bottomRight.x, y: this.topLeft.y },
-          p2: { x: this.bottomRight.x, y: this.bottomRight.y }
-        };
-      let bz = edgeCurveAsBezier(this[s]);
-      let isect = bz.intersects(line);
-      let edge = bz.get(isect[0]);
-      return new Point(edge.x, edge.y);
+      let curve = edgeCurveAsBezier(this[s]);
+      return curveEdge(curve, side);
     }
   }
 };

@@ -357,12 +357,12 @@ it("Should find the edges of a path", () => {
   expect(round(a.paths.test.edge("topRight").x)).to.equal(90);
   expect(round(a.paths.test.edge("topRight").y)).to.equal(0.97);
   expect(round(a.paths.test.edge("left").x)).to.equal(7.7);
-  expect(round(a.paths.test.edge("left").y)).to.equal(91.7);
-  expect(round(a.paths.test.edge("bottom").x)).to.equal(40.75);
+  expect(round(a.paths.test.edge("left").y)).to.equal(91.8);
+  expect(round(a.paths.test.edge("bottom").x)).to.equal(40.63);
   expect(round(a.paths.test.edge("bottom").y)).to.equal(118.46);
-  expect(round(a.paths.test.edge("right").x)).to.equal(90);
-  expect(round(a.paths.test.edge("right").y)).to.equal(30);
-  expect(round(a.paths.test.edge("top").x)).to.equal(55.97);
+  expect(round(a.paths.test.edge("right").x)).to.equal(89.76);
+  expect(round(a.paths.test.edge("right").y)).to.equal(29.64);
+  expect(round(a.paths.test.edge("top").x)).to.equal(55.98);
   expect(round(a.paths.test.edge("top").y)).to.equal(0.97);
 });
 
@@ -391,6 +391,21 @@ it("Should find the edges of a path for corner cases", () => {
   expect(round(a.paths.test.edge("bottom").y)).to.equal(60);
   expect(round(a.paths.test.edge("right").x)).to.equal(45);
   expect(round(a.paths.test.edge("right").y)).to.equal(60);
+});
+
+it("Should find the edge of a path for this edge-case", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(-109.7, 77, 12);
+  a.points.B = new a.Point(-27.33, 99.19);
+  a.points.C = new a.Point(-39.45, 137.4);
+  a.points.D = new a.Point(-61.52, 219.77);
+  a.paths.test = new a.Path()
+    .move(a.points.A)
+    .curve(a.points.B, a.points.C, a.points.D);
+  expect(round(a.paths.test.edge("right").x)).to.equal(-45.22);
+  expect(round(a.paths.test.edge("right").y)).to.equal(139.4);
 });
 
 it("Should find where a path intersects with an X value", () => {

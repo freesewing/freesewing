@@ -259,6 +259,28 @@ export function lineIntersectsCircle(c, r, p1, p2, sort = "x") {
   }
 }
 
+export function curveEdge(curve, edge, steps = 500) {
+  let x = Infinity;
+  let y = Infinity;
+  let p;
+  if (edge === "bottom") y = -Infinity;
+  if (edge === "right") x = -Infinity;
+  for (let i = 0; i < steps; i++) {
+    p = curve.get(i / steps);
+    if (
+      (edge === "top" && p.y < y) ||
+      (edge === "bottom" && p.y > y) ||
+      (edge === "right" && p.x > x) ||
+      (edge === "left" && p.x < x)
+    ) {
+      x = p.x;
+      y = p.y;
+    }
+  }
+
+  return new Point(x, y);
+}
+
 /**
  * Calculates scale factor based on stretch factor
  *
