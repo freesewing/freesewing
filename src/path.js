@@ -287,15 +287,17 @@ function asPath(bezier) {
 /** Joins path segments together into one path */
 function joinPaths(paths, closed = false) {
   let joint = new Path().move(paths[0].ops[0].to);
+  let current;
   for (let p of paths) {
     for (let op of p.ops) {
       if (op.type === "curve") {
         joint.curve(op.cp1, op.cp2, op.to);
       } else if (op.type !== "close") {
-        joint.line(op.to);
+        if (current && !op.to.sitsOn(current)) joint.line(op.to);
       } else {
         throw "Cannot join a closed paths with another";
       }
+      if (op.to) current = op.to;
     }
   }
   if (closed) joint.close();
@@ -507,10 +509,10 @@ Path.prototype.divide = function() {
   for (let i in this.ops) {
     let op = this.ops[i];
     if (op.type === "move") {
-      current = op.to;
       start = op.to;
     } else if (op.type === "line") {
-      paths.push(new Path().move(current).line(op.to));
+      if (!op.to.sitsOn(current))
+        paths.push(new Path().move(current).line(op.to));
     } else if (op.type === "curve") {
       paths.push(new Path().move(current).curve(op.cp1, op.cp2, op.to));
     } else if (op.type === "close") {
@@ -703,7 +705,6 @@ Path.prototype.split = function(point) {
 
 /** Removes self-intersections (overlap) from the path */
 Path.prototype.trim = function() {
-  // Walk the path to find all intersections
   let chunks = this.divide();
   for (let i in chunks) {
     let chunk = chunks[i];
@@ -716,62 +717,44 @@ Path.prototype.trim = function() {
         let trimmedStart = chunks.slice(0, i);
         let trimmedEnd = chunks.slice(parseInt(j) + 1);
         let glue = new Path();
-        let ops = chunks[i].ops;
-        if (ops[1].type === "line") {
-          glue.line(intersection);
-        } else if (ops[1].type === "curve") {
-          // handle curve
-          let curve = new Bezier(
-            { x: ops[0].to.x, y: ops[0].to.y },
-            { x: ops[1].cp1.x, y: ops[1].cp1.y },
-            { x: ops[1].cp2.x, y: ops[1].cp2.y },
-            { x: ops[1].to.x, y: ops[1].to.y }
-          );
-          let t = pointOnCurve(
-            ops[0].to,
-            ops[1].cp1,
-            ops[1].cp2,
-            ops[1].to,
-            intersection
-          );
-          let split = curve.split(t);
-          glue.curve(
-            new Point(split.left.points[1].x, split.left.points[1].y),
-            new Point(split.left.points[2].x, split.left.points[2].y),
-            new Point(split.left.points[3].x, split.left.points[3].y)
-          );
-        }
-        ops = chunks[j].ops;
-        if (ops[1].type === "line") {
-          glue.line(intersection);
-        } else if (ops[1].type === "curve") {
-          // handle curve
-          let curve = new Bezier(
-            { x: ops[0].to.x, y: ops[0].to.y },
-            { x: ops[1].cp1.x, y: ops[1].cp1.y },
-            { x: ops[1].cp2.x, y: ops[1].cp2.y },
-            { x: ops[1].to.x, y: ops[1].to.y }
-          );
-          let t = pointOnCurve(
-            ops[0].to,
-            ops[1].cp1,
-            ops[1].cp2,
-            ops[1].to,
-            intersection
-          );
-          let split = curve.split(t);
-          glue.curve(
-            new Point(split.right.points[1].x, split.right.points[1].y),
-            new Point(split.right.points[2].x, split.right.points[2].y),
-            new Point(split.right.points[3].x, split.right.points[3].y)
-          );
+        let first = true;
+        for (let k of [i, j]) {
+          let ops = chunks[k].ops;
+          if (ops[1].type === "line") {
+            glue.line(intersection);
+          } else if (ops[1].type === "curve") {
+            // handle curve
+            let curve = new Bezier(
+              { x: ops[0].to.x, y: ops[0].to.y },
+              { x: ops[1].cp1.x, y: ops[1].cp1.y },
+              { x: ops[1].cp2.x, y: ops[1].cp2.y },
+              { x: ops[1].to.x, y: ops[1].to.y }
+            );
+            let t = pointOnCurve(
+              ops[0].to,
+              ops[1].cp1,
+              ops[1].cp2,
+              ops[1].to,
+              intersection
+            );
+            let split = curve.split(t);
+            let side;
+            if (first) side = split.left;
+            else side = split.right;
+            glue.curve(
+              new Point(side.points[1].x, side.points[1].y),
+              new Point(side.points[2].x, side.points[2].y),
+              new Point(side.points[3].x, side.points[3].y)
+            );
+          }
+          first = false;
         }
         let joint;
         if (trimmedStart.length > 0) joint = joinPaths(trimmedStart).join(glue);
         else joint = glue;
         if (trimmedEnd.length > 0) joint = joint.join(joinPaths(trimmedEnd));
 
-        return joint;
+        return joint.trim();
       }
     }
   }

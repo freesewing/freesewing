@@ -38,8 +38,8 @@ it("Should offset a curve where cp1 = start", () => {
     .curve(new a.Point(0, 0), new a.Point(123, 34), new a.Point(23, 4));
   a.paths.offset = a.paths.curve.offset(10);
   pattern.render();
-  expect(a.paths.offset.bottomRight.x).to.equal(72.50457052909852);
-  expect(a.paths.offset.bottomRight.y).to.equal(26.44);
+  expect(a.paths.offset.bottomRight.x).to.equal(72.6776854668095);
+  expect(a.paths.offset.bottomRight.y).to.equal(26.49);
 });
 
 it("Should offset a curve where cp2 = end", () => {
@@ -53,8 +53,8 @@ it("Should offset a curve where cp2 = end", () => {
     .close();
   a.paths.offset = a.paths.curve.offset(10);
   pattern.render();
-  expect(a.paths.offset.bottomRight.x).to.equal(119.23);
-  expect(a.paths.offset.bottomRight.y).to.equal(43.26);
+  expect(a.paths.offset.bottomRight.x).to.equal(119.25);
+  expect(a.paths.offset.bottomRight.y).to.equal(43.27);
 });
 
 it("Should throw error when offsetting line that is no line", () => {
