@@ -24,15 +24,14 @@ export default {
         else this.defs += gridMetric;
         for (let key in this.pattern.parts) {
           let part = this.pattern.parts[key];
-          if (part.render && this.pattern.needs(key, true)) {
+          if (part.render && this.pattern.needs(key)) {
             let anchor = new this.pattern.Point(0, 0);
             if (typeof part.points.gridAnchor !== "undefined")
               anchor = part.points.gridAnchor;
             else if (typeof part.points.anchor !== "undefined")
               anchor = part.points.anchor;
-            this.defs += `<pattern id="grid_${key}" xlink:href="#grid" x="${
-              anchor.x
-            }" y="${anchor.y}"></pattern>`;
+            this.defs += `<pattern id="grid_${key}"
+              xlink:href="#grid" x="${anchor.x}" y="${anchor.y}"></pattern>`;
             part.paths[part.getId()] = new this.pattern.Path()
               .move(part.topLeft)
               .line(new this.pattern.Point(part.topLeft.x, part.bottomRight.y))
