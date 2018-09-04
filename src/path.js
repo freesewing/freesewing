@@ -240,13 +240,13 @@ function pathOffset(path, distance) {
         cp1 = new Path()
           .move(current)
           .curve(op.cp1, op.cp2, op.to)
-          .shiftAlong(1);
+          .shiftAlong(2);
       } else cp1 = op.cp1;
       if (op.cp2.sitsOn(op.to)) {
         cp2 = new Path()
           .move(op.to)
           .curve(op.cp2, op.cp1, current)
-          .shiftAlong(1);
+          .shiftAlong(2);
       } else cp2 = op.cp2;
       let b = new Bezier(
         { x: current.x, y: current.y },
