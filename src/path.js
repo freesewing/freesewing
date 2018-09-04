@@ -701,4 +701,82 @@ Path.prototype.split = function(point) {
   return [firstHalf, secondHalf];
 };
 
+/** Removes self-intersections (overlap) from the path */
+Path.prototype.trim = function() {
+  // Walk the path to find all intersections
+  let chunks = this.divide();
+  for (let i in chunks) {
+    let chunk = chunks[i];
+    let firstCandidate = parseInt(i) + 2;
+    let lastCandidate = parseInt(chunks.length) - 1;
+    for (let j = firstCandidate; j < lastCandidate; j++) {
+      let intersections = chunks[i].intersects(chunks[j]);
+      if (intersections.length > 0) {
+        let intersection = intersections.pop();
+        let trimmedStart = chunks.slice(0, i);
+        let trimmedEnd = chunks.slice(parseInt(j) + 1);
+        let glue = new Path();
+        let ops = chunks[i].ops;
+        if (ops[1].type === "line") {
+          glue.line(intersection);
+        } else if (ops[1].type === "curve") {
+          // handle curve
+          let curve = new Bezier(
+            { x: ops[0].to.x, y: ops[0].to.y },
+            { x: ops[1].cp1.x, y: ops[1].cp1.y },
+            { x: ops[1].cp2.x, y: ops[1].cp2.y },
+            { x: ops[1].to.x, y: ops[1].to.y }
+          );
+          let t = pointOnCurve(
+            ops[0].to,
+            ops[1].cp1,
+            ops[1].cp2,
+            ops[1].to,
+            intersection
+          );
+          let split = curve.split(t);
+          glue.curve(
+            new Point(split.left.points[1].x, split.left.points[1].y),
+            new Point(split.left.points[2].x, split.left.points[2].y),
+            new Point(split.left.points[3].x, split.left.points[3].y)
+          );
+        }
+        ops = chunks[j].ops;
+        if (ops[1].type === "line") {
+          glue.line(intersection);
+        } else if (ops[1].type === "curve") {
+          // handle curve
+          let curve = new Bezier(
+            { x: ops[0].to.x, y: ops[0].to.y },
+            { x: ops[1].cp1.x, y: ops[1].cp1.y },
+            { x: ops[1].cp2.x, y: ops[1].cp2.y },
+            { x: ops[1].to.x, y: ops[1].to.y }
+          );
+          let t = pointOnCurve(
+            ops[0].to,
+            ops[1].cp1,
+            ops[1].cp2,
+            ops[1].to,
+            intersection
+          );
+          let split = curve.split(t);
+          glue.curve(
+            new Point(split.right.points[1].x, split.right.points[1].y),
+            new Point(split.right.points[2].x, split.right.points[2].y),
+            new Point(split.right.points[3].x, split.right.points[3].y)
+          );
+        }
+        let joint;
+        if (trimmedStart.length > 0) joint = joinPaths(trimmedStart).join(glue);
+        else joint = glue;
+        if (trimmedEnd.length > 0) joint = joint.join(joinPaths(trimmedEnd));
+
+        return joint;
+      }
+    }
+  }
+
+  return this;
+};
+
 export default Path;
