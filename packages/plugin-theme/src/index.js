@@ -24,7 +24,7 @@ export default {
         else this.defs += gridMetric;
         for (let key in this.pattern.parts) {
           let part = this.pattern.parts[key];
-          if (part.render) {
+          if (part.render && this.pattern.needs(key, true)) {
             let anchor = new this.pattern.Point(0, 0);
             if (typeof part.points.gridAnchor !== "undefined")
               anchor = part.points.gridAnchor;
