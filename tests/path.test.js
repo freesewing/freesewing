@@ -158,7 +158,7 @@ it("Should join paths", () => {
     .move(new a.Point(123, 456))
     .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4));
   a.paths.joint = a.paths.curve.join(a.paths.line);
-  expect(a.paths.joint.ops.length).to.equal(5);
+  expect(a.paths.joint.ops.length).to.equal(4);
 });
 
 it("Should throw error when joining a closed paths", () => {
