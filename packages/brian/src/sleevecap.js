@@ -166,8 +166,7 @@ var sleevecap = {
     paths.sleevecap.attr("class", "fabric");
 
     // Anchor point for sampling
-    points.gridAnchor = points.origin;
-    points.test = new Point(10, 10);
+    points.gridAnchor = new Point(0, 0);
 
     return part;
   }
