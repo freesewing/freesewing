@@ -24,10 +24,8 @@ export default {
         .attr("data-text-class", "title-name");
       this.points._titlePattern = so.at
         .shift(-90, 20)
-        .attr(
-          "data-text",
-          this.context.config.name + " v" + this.context.config.version
-        )
+        .attr("data-text", this.context.config.name)
+        .attr("data-text", "v" + this.context.config.version)
         .attr("data-text-class", "title-pattern fill-note");
     }
   }
