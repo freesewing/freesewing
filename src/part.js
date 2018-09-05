@@ -93,8 +93,9 @@ Part.prototype.boundary = function() {
   }
   for (let key in this.points) {
     let point = this.points[key];
-    let radius = parseFloat(point.attributes.get("data-circle"));
+    let radius = point.attributes.get("data-circle");
     if (radius) {
+      radius = parseFloat(radius);
       if (point.x - radius < topLeft.x) topLeft.x = point.x - radius;
       if (point.y - radius < topLeft.y) topLeft.y = point.y - radius;
       if (point.x + radius > bottomRight.x) bottomRight.x = point.x + radius;
