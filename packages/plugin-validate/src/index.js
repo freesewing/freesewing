@@ -27,11 +27,11 @@ function validatePoint(point, partId, pointId, debug) {
   return true;
 }
 
-function validatePointText(point, partId, pointId, debug) {
-  let text = point.attributes.getAsArray('data-text');
+function validateText(type, item, partId, itemId, debug) {
+  let text = item.attributes.getAsArray('data-text');
   if(text === false) return true;
   else {
-    if(point.attributes.get('data-validate-skip-text') !== false) {
+    if(item.attributes.get('data-validate-skip-text') !== false) {
       debug(
         {
           debug: 'custom',
@@ -39,7 +39,7 @@ function validatePointText(point, partId, pointId, debug) {
           style: 'color: #da0; font-weight: bold;'
         },
         'This text might be a translation problem:',
-        point,
+        item,
         'However, the error was suppresed, so moving on.'
       );
       return true;
@@ -47,11 +47,11 @@ function validatePointText(point, partId, pointId, debug) {
     for (let t of text) {
       if(typeof t !== 'string' && typeof t !== 'number') {
         debug(dbg, 'This text is not a string or number:', t);
-        throw(`Point pattern.parts.${partId}.points.${pointId} has text that is not a string nor a number. Set the 'data-validate-skip-text' attribute to true to suppress this error.`);
+        throw(`${type} pattern.parts.${partId}.${type}s.${itemId} has text that is not a string nor a number. Set the 'data-validate-skip-text' attribute to true to suppress this error.`);
 
       } else if(typeof t === 'string' && t.indexOf(' ') !== -1) {
-        debug(dbg, 'This text might be a translation problem:', point);
-        throw(`Point pattern.parts.${partId}.points.${pointId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this error.`);
+        debug(dbg, 'This text might be a translation problem:', item);
+        throw(`${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this error.`);
       }
     }
   }
@@ -131,10 +131,11 @@ export default {
         let { debug } = part.shorthand();
         for(let pointId in part.points) {
           validatePoint(part.points[pointId], partId, pointId, debug);
-          validatePointText(part.points[pointId], partId, pointId, debug);
+          validateText('point', part.points[pointId], partId, pointId, debug);
         }
         for(let pathId in part.paths) {
           validatePath(part.paths[pathId], partId, pathId, debug);
+          validateText('path', part.paths[pathId], partId, pathId, debug);
         }
         for(let snippetId in part.snippets) {
           if(!isSnippet(part.snippets[snippetId], partId, snippetId, debug)) {
