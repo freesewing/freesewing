@@ -707,7 +707,6 @@ Path.prototype.split = function(point) {
 Path.prototype.trim = function() {
   let chunks = this.divide();
   for (let i in chunks) {
-    let chunk = chunks[i];
     let firstCandidate = parseInt(i) + 2;
     let lastCandidate = parseInt(chunks.length) - 1;
     for (let j = firstCandidate; j < lastCandidate; j++) {
