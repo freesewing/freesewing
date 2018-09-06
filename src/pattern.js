@@ -111,14 +111,16 @@ Pattern.prototype.sampleParts = function() {
  */
 Pattern.prototype.sampleOption = function(optionName) {
   let step, val;
+  let factor = 1;
   let anchors = {};
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
   if (typeof option.min === "undefined" || typeof option.max === "undefined") {
     throw "Cannot sample an option without min and max values";
   }
-  val = option.min;
-  step = (option.max - val) / 9;
+  if (typeof option.pct !== "undefined") factor = 100;
+  val = option.min / factor;
+  step = (option.max / factor - val) / 9;
   for (let l = 1; l < 11; l++) {
     this.options[optionName] = val;
     this.debug(
