@@ -1,4 +1,4 @@
-import { macroName } from "./utils";
+import { macroName, debugStyle, round } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
@@ -109,21 +109,21 @@ Pattern.prototype.sampleParts = function() {
 /**
  * Handles option sampling
  */
-Pattern.prototype.sampleOption = function(option) {
+Pattern.prototype.sampleOption = function(optionName) {
   let step, val;
   let parts = this.sampleParts();
-  if (
-    typeof this.config.options[option].min === "undefined" ||
-    typeof this.config.options[option].max === "undefined"
-  ) {
+  let option = this.config.options[optionName];
+  if (typeof option.min === "undefined" || typeof option.max === "undefined") {
     throw "Cannot sample an option without min and max values";
   }
-  let factor = 100;
-  val = this.config.options[option].min / factor;
-  step = (this.config.options[option].max / factor - val) / 9;
+  val = option.min;
+  step = (option.max - val) / 9;
   for (let l = 1; l < 11; l++) {
-    this.options[option] = val;
-    this.debug(`Sampling option ${option} with value ${val}`);
+    this.options[optionName] = val;
+    this.debug(
+      debugStyle("info", "🔬 Sample run"),
+      `Sampling option ${optionName} with value ${round(val)}`
+    );
     this.draft();
     for (let i in this.parts) {
       for (let j in this.parts[i].paths) {
@@ -142,15 +142,18 @@ Pattern.prototype.sampleOption = function(option) {
 /**
  * Handles measurement sampling
  */
-Pattern.prototype.sampleMeasurement = function(measurement) {
+Pattern.prototype.sampleMeasurement = function(measurementName) {
   let parts = this.sampleParts();
-  let val = this.settings.measurements[measurement];
+  let val = this.settings.measurements[measurementName];
   if (val === undefined) throw "Cannot sample a measurement that is undefined";
   let step = val / 50;
   val = val * 0.9;
   for (let l = 1; l < 11; l++) {
-    this.settings.measurements[measurement] = val;
-    this.debug(`Sampling measurement ${measurement} with value ${val}`);
+    this.settings.measurements[measurementName] = val;
+    this.debug(
+      debugStyle("info", "🔬 Sample run"),
+      `Sampling measurement ${measurementName} with value ${round(val)}`
+    );
     this.draft();
     for (let i in this.parts) {
       for (let j in this.parts[i].paths) {
@@ -175,7 +178,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   for (let l in models) {
     count++;
     this.settings.measurements = models[l];
-    this.debug(`Sampling model ${l}`);
+    this.debug(debugStyle("info", "🔬 Sample run"), `Sampling model ${l}`);
     this.draft();
     for (let i in this.parts) {
       for (let j in this.parts[i].paths) {
@@ -222,7 +225,10 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
-  this.debug(`Plugin: ${plugin.name} v${plugin.version}`);
+  this.debug(
+    debugStyle("success", "🔌 Plugin loaded"),
+    `${plugin.name} v${plugin.version}`
+  );
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 

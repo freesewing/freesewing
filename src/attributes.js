@@ -48,6 +48,16 @@ Attributes.prototype.render = function() {
   return svg;
 };
 
+/** Returns CSS code for attributes */
+Attributes.prototype.renderAsCss = function() {
+  let css = "";
+  for (let key in this.list) {
+    css += ` ${key}:${this.list[key].join(" ")};`;
+  }
+
+  return css;
+};
+
 /** Returns SVG code for attributes with a fiven prefix
  * typically used for data-text*/
 Attributes.prototype.renderIfPrefixIs = function(prefix = "") {
