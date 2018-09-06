@@ -1,0 +1,1 @@
+../plugins/plugin-validate/dist/browser.js

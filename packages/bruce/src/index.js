@@ -19,6 +19,8 @@ pattern.draft = function() {
   if(this.needs(['inset','front'])) this.parts.inset = this.draftInset(new pattern.Part());
 
   if(this.needs(['front'])) this.parts.front = this.draftFront(new pattern.Part());
+  // Reset store to prevent sampling re-using the same values
+  pattern.store.set('init', false);
 
   return pattern;
 };

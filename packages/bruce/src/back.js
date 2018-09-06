@@ -9,21 +9,18 @@ var back = {
     init(part);
 
     // Center back
-    points.defaultCenter = new Point(0,0);
-    points.elasticCenter = new Point(0, options.rise * -1 * store.get('yScale'));
-    points.center = new Point(0, points.elasticCenter.y + options.elasticWidth);
+    points.zero = new Point(0,0);
+    points.elasticCenter = points.zero.shift(90, store.get('rise'));
+    points.center = points.elasticCenter.shift(-90, options.elasticWidth);
 
-    // Sides top
+    // Side top
     points.sideRight = new Point(store.get('hipsBack') / 2, points.center.y);
-    points.sideLeft = points.sideRight.flipX(points.center);
 
     // Gusset
-    points.gussetTop = new Point(0, store.get('riseLength'));
-    points.gussetBottom = new Point(0, points.gussetTop.y + store.get('gusset'));
-    points.gussetRight = new Point(store.get('gusset') / 2, points.gussetBottom.y);
-    points.gussetLeft = points.gussetRight.flipX(points.center);
+    points.gussetTop = points.elasticCenter.shift(-90, store.get('riseLength'));
+    points.gussetBottom = points.gussetTop.shift(-90, store.get('gusset'));
+    points.gussetRight = points.gussetBottom.shift(0, store.get('gusset') / 2);
     points.gussetCpRight = new Point(points.gussetRight.x, points.gussetTop.y);
-    points.gussetCpLeft = new Point(points.gussetLeft.x, points.gussetTop.y);
 
     // Find leg edge
     let isect = utils.circlesIntersect(points.gussetRight, store.get('legBack'), points.sideRight, store.get('fullLength'));
@@ -41,9 +38,8 @@ var back = {
     // Handle back rise
     points.center = points.center.shift(90, store.get('backRise'));
     points.sideRight = points.sideRight.shift(90, store.get('sideRise'));
-    points.sideLeft = points.sideLeft.shift(90, store.get('sideRise'));
     points.centerCpRight = new Point(points.sideRight.x/2, points.center.y);
-    points.centerCpLeft = points.centerCpRight.flipX(points.center);
+    points.centerCpLeft = points.centerCpRight.flipX();
 
     paths.seam = new Path()
       .move(points.gussetTop)

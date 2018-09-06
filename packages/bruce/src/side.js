@@ -39,6 +39,13 @@ var back = {
       .close()
       .attr('class', 'fabric');
 
+    points.anchor = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    snippets.test = new Snippet('notch', points.anchor);
+    paths.test = new Path()
+      .move(points.topLeft)
+      .line(points.anchor)
+      .attr('class', 'dashed');
+
     // Final?
     if (final) {
       points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);

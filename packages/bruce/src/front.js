@@ -56,7 +56,7 @@ var front = {
       delta = tuskDelta(part);
       count++;
       if(count>150) throw("We got stuck trying to calculate an optimal tusk length. Please report this.");
-      debug(`Tusk tweak ${count}, delta is ${delta}`);
+      //debug(`Tusk tweak ${count}, delta is ${delta}`);
     }
     debug(`After ${count} iterations, tusk curve length is ${utils.round(delta)}mm off.`);
 

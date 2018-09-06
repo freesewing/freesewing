@@ -39,9 +39,9 @@ export default {
 
     // Percentages
     legBonus:   { pct:  0,   min:   0, max: 70},
-    rise:       { pct: 35,   min: -30, max: 50},
+    rise:       { pct:  5,   min:  -5, max: 15},
     stretch:    { pct: 14,   min:   4, max: 24},
     legStretch: { pct: 40,   min:  25, max: 45},
-    backRise:   { pct:  2.5, min:   0, max:  5},
+    backRise:   { pct:  5, min:   0, max: 10},
   }
 };
