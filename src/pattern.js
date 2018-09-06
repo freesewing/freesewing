@@ -111,6 +111,7 @@ Pattern.prototype.sampleParts = function() {
  */
 Pattern.prototype.sampleOption = function(optionName) {
   let step, val;
+  let anchors = {};
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
   if (typeof option.min === "undefined" || typeof option.max === "undefined") {
@@ -126,10 +127,25 @@ Pattern.prototype.sampleOption = function(optionName) {
     );
     this.draft();
     for (let i in this.parts) {
+      let anchor = false;
+      let dx = 0;
+      let dy = 0;
+      if (this.parts[i].points.anchor) {
+        if (typeof anchors[i] === "undefined")
+          anchors[i] = this.parts[i].points.anchor;
+        else {
+          if (!anchors[i].sitsOn(this.parts[i].points.anchor)) {
+            dx = this.parts[i].points.anchor.dx(anchors[i]);
+            dy = this.parts[i].points.anchor.dy(anchors[i]);
+          }
+        }
+      }
       for (let j in this.parts[i].paths) {
         parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
           .clone()
           .attr("class", "sample-" + l, true);
+        if (this.parts[i].points.anchor)
+          parts[i].paths[j + "_" + l].translate(dx, dy);
       }
     }
     val += step;

@@ -761,4 +761,19 @@ Path.prototype.trim = function() {
   return this;
 };
 
+/** Applies a path translate transform */
+Path.prototype.translate = function(x, y) {
+  for (let op of this.ops) {
+    if (op.type !== "close") {
+      op.to = op.to.translate(x, y);
+    }
+    if (op.type === "curve") {
+      op.cp1 = op.cp1.translate(x, y);
+      op.cp2 = op.cp2.translate(x, y);
+    }
+  }
+
+  return this;
+};
+
 export default Path;
