@@ -17,6 +17,7 @@ import pointShift from "./point.shift";
 import pointShiftTowards from "./point.shifttowards";
 import pointShiftFractionTowards from "./point.shiftfractiontowards";
 import pointShiftOutwards from "./point.shiftoutwards";
+import pointTranslate from "./point.translate";
 import pointSitsOn from "./point.sitson";
 import pointClone from "./point.clone";
 
@@ -38,6 +39,7 @@ import pathIntersectsY from "./path.intersectsy";
 import pathIntersects from "./path.intersects";
 import pathDivide from "./path.divide";
 import pathSplit from "./path.split";
+import pathTranslate from "./path.translate";
 
 import utilsLinesIntersect from "./utils.linesintersect";
 import utilsBeamsIntersect from "./utils.beamsintersect";
@@ -79,6 +81,7 @@ pattern.draft = function() {
   if (this.needs('pointShiftTowards')) this.parts.pointShiftTowards = this.draftPointShiftTowards(new pattern.Part());
   if (this.needs('pointShiftFractionTowards')) this.parts.pointShiftFractionTowards = this.draftPointShiftFractionTowards(new pattern.Part());
   if (this.needs('pointShiftOutwards')) this.parts.pointShiftOutwards = this.draftPointShiftOutwards(new pattern.Part());
+  if (this.needs('pointTranslate')) this.parts.pointTranslate = this.draftPointTranslate(new pattern.Part());
   if (this.needs('pointSitsOn')) this.parts.pointSitsOn = this.draftPointSitsOn(new pattern.Part());
   if (this.needs('pointClone')) this.parts.pointClone = this.draftPointClone(new pattern.Part());
 
@@ -100,6 +103,7 @@ pattern.draft = function() {
   if (this.needs('pathIntersects')) this.parts.pathIntersects = this.draftPathIntersects(new pattern.Part());
   if (this.needs('pathDivide')) this.parts.pathDivide = this.draftPathDivide(new pattern.Part());
   if (this.needs('pathSplit')) this.parts.pathSplit = this.draftPathSplit(new pattern.Part());
+  if (this.needs('pathTranslate')) this.parts.pathTranslate = this.draftPathTranslate(new pattern.Part());
 
   if (this.needs('utilsLinesIntersect')) this.parts.utilsLinesIntersect = this.draftUtilsLinesIntersect(new pattern.Part());
   if (this.needs('utilsBeamsIntersect')) this.parts.utilsBeamsIntersect = this.draftUtilsBeamsIntersect(new pattern.Part());
@@ -138,6 +142,7 @@ pattern.draftPointShift = part => pointShift.draft(part);
 pattern.draftPointShiftTowards = part => pointShiftTowards.draft(part);
 pattern.draftPointShiftFractionTowards = part => pointShiftFractionTowards.draft(part);
 pattern.draftPointShiftOutwards = part => pointShiftOutwards.draft(part);
+pattern.draftPointTranslate = part => pointTranslate.draft(part);
 pattern.draftPointSitsOn = part => pointSitsOn.draft(part);
 pattern.draftPointClone = part => pointClone.draft(part);
 
@@ -159,6 +164,7 @@ pattern.draftPathIntersectsY = part => pathIntersectsY.draft(part);
 pattern.draftPathIntersects = part => pathIntersects.draft(part);
 pattern.draftPathDivide = part => pathDivide.draft(part);
 pattern.draftPathSplit = part => pathSplit.draft(part);
+pattern.draftPathTranslate = part => pathTranslate.draft(part);
 
 pattern.draftUtilsLinesIntersect = part => utilsLinesIntersect.draft(part);
 pattern.draftUtilsBeamsIntersect = part => utilsBeamsIntersect.draft(part);
