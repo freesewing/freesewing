@@ -763,7 +763,8 @@ Path.prototype.trim = function() {
 
 /** Applies a path translate transform */
 Path.prototype.translate = function(x, y) {
-  for (let op of this.ops) {
+  let clone = this.clone();
+  for (let op of clone.ops) {
     if (op.type !== "close") {
       op.to = op.to.translate(x, y);
     }
@@ -773,7 +774,7 @@ Path.prototype.translate = function(x, y) {
     }
   }
 
-  return this;
+  return clone;
 };
 
 export default Path;

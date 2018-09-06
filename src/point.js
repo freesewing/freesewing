@@ -132,10 +132,11 @@ Point.prototype.clone = function() {
 
 /** Applies a translate transform */
 Point.prototype.translate = function(x, y) {
-  this.x += x;
-  this.y += y;
+  let p = this.copy();
+  p.x += x;
+  p.y += y;
 
-  return this;
+  return p;
 };
 
 export default Point;
