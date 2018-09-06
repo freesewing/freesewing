@@ -7,7 +7,7 @@ export function debugStyle(type, text) {
   const color = {
     info: "#FFF",
     warning: "#FFF",
-    warning: "#FFF",
+    error: "#FFF",
     success: "#FFF"
   };
   const background = {
