@@ -633,3 +633,72 @@ it("Should split a path on a line", () => {
   expect(line.to.x).to.equal(29.81);
   expect(line.to.y).to.equal(46.98);
 });
+
+it("Should trim a path when lines overlap", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(0, 0);
+  a.points.B = new a.Point(100, 100);
+  a.points.C = new a.Point(0, 100);
+  a.points.D = new a.Point(100, 0);
+
+  let test = new a.Path()
+    .move(new a.Point(0, 20))
+    .line(a.points.A)
+    .line(a.points.B)
+    .line(a.points.C)
+    .line(a.points.D)
+    .line(a.points.A)
+    .trim();
+
+  expect(test.ops.length).to.equal(5);
+  expect(test.ops[2].to.x).to.equal(50);
+  expect(test.ops[2].to.y).to.equal(50);
+});
+
+it("Should trim a path when a line overlaps with a curve", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(0, 0);
+  a.points.B = new a.Point(100, 100);
+  a.points.C = new a.Point(0, 100);
+  a.points.D = new a.Point(100, 0);
+
+  let test = new a.Path()
+    .move(new a.Point(0, 20))
+    .line(a.points.A)
+    .curve(a.points.D, a.points.B, a.points.B)
+    .line(a.points.C)
+    .line(a.points.D)
+    .line(a.points.A)
+    .trim();
+
+  expect(test.ops.length).to.equal(6);
+  expect(test.ops[2].to.x).to.equal(72.19);
+  expect(test.ops[2].to.y).to.equal(27.8);
+});
+
+it("Should trim a path when a curves overlap", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(0, 0);
+  a.points.B = new a.Point(100, 100);
+  a.points.C = new a.Point(0, 100);
+  a.points.D = new a.Point(100, 0);
+
+  let test = new a.Path()
+    .move(new a.Point(0, 20))
+    .line(a.points.A)
+    .curve(a.points.D, a.points.B, a.points.B)
+    .line(a.points.C)
+    .curve(a.points.C, a.points.A, a.points.D)
+    .line(a.points.A)
+    .trim();
+
+  expect(test.ops.length).to.equal(5);
+  expect(test.ops[2].to.x).to.equal(50);
+  expect(test.ops[2].to.y).to.equal(11.01);
+});

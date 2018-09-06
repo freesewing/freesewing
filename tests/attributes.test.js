@@ -28,3 +28,13 @@ it("Should render attributes with given prefix only", () => {
     .set("transform", "scale(1)");
   expect(a.renderIfPrefixIs("data-")).to.equal(' text="foo bar" mode="test"');
 });
+
+it("Should return attributes as array", () => {
+  let a = newAttr()
+    .set("class", "test")
+    .add("class", "render");
+  expect(JSON.stringify(a.getAsArray("class"))).to.equal(
+    JSON.stringify(["test", "render"])
+  );
+  expect(a.getAsArray("nope")).to.equal(false);
+});
