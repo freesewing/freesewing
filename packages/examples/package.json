@@ -45,8 +45,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "0.1.8",
-    "freesewing": "^0.13"
+    "@freesewing/plugin-bundle": "0.1.9",
+    "freesewing": "^0.13.3"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",
@@ -54,7 +54,7 @@
     "@babel/preset-env": "7.0.0-beta.56",
     "@freesewing/antman": "0.2.0",
     "@freesewing/models": "0.4.0",
-    "@freesewing/plugin-debug": "0.0.1",
+    "@freesewing/plugin-debug": "0.1.0",
     "@freesewing/plugin-designer": "0.7.1",
     "@freesewing/plugin-theme": "0.10.0",
     "@freesewing/plugin-validate": "0.0.1",
