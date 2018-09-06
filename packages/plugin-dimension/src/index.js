@@ -2,14 +2,18 @@ import markers from "./lib/markers";
 import { version, name } from "../package.json";
 
 function drawDimension(from, to, so, self) {
-  return new self.Path()
+  let dimension = new self.Path()
     .move(from)
     .line(to)
     .attr("class", "note")
-    .attr("marker-start", "url(#dimensionFrom)")
-    .attr("marker-end", "url(#dimensionTo)")
     .attr("data-text", so.text || self.units(from.dist(to)))
     .attr("data-text-class", "fill-note center");
+  if (!so.noStartMarker)
+    dimension.attributes.set("marker-start", "url(#dimensionFrom)");
+  if (!so.noEndMarker)
+    dimension.attributes.set("marker-end", "url(#dimensionTo)");
+
+  return dimension;
 }
 
 function drawLeader(self, from, to, id) {
@@ -76,21 +80,21 @@ export default {
   macros: {
     // horizontal
     hd: function(so) {
-      let id = so.id ? so.id : this.getId();
+      let id = this.getId();
       let from = hleader(so, "from", this, id + "_ls");
       let to = hleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
     },
     // vertical
     vd: function(so) {
-      let id = so.id ? so.id : this.getId();
+      let id = this.getId();
       let from = vleader(so, "from", this, id + "_ls");
       let to = vleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
     },
     // linear
     ld: function(so) {
-      let id = so.id ? so.id : this.getId();
+      let id = this.getId();
       let from = lleader(so, "from", this, id + "_ls");
       let to = lleader(so, "to", this, id + "_le");
       this.paths[id] = drawDimension(from, to, so, this);
@@ -104,7 +108,7 @@ export default {
         .attr("marker-end", "url(#dimensionTo)")
         .attr("data-text", so.text || this.units(so.path.length()))
         .attr("data-text-class", "fill-note center");
-      let id = so.id ? so.id : this.getId();
+      let id = this.getId();
       drawLeader(this, so.path.start(), dimension.start(), id + "_ls");
       drawLeader(this, so.path.end(), dimension.end(), id + "_le");
       this.paths[id] = dimension;
