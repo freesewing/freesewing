@@ -10,7 +10,9 @@ export default {
       shoulderSlope: 43,
       shoulderToShoulder: 419,
       shoulderToWrist: 670,
-      wristCircumference: 175
+      wristCircumference: 175,
+      upperLegCircumference: 565,
+      hipsToUpperLeg: 183
     },
     manSize36: {
       bicepsCircumference: 290,
@@ -22,7 +24,9 @@ export default {
       shoulderSlope: 46,
       shoulderToShoulder: 431,
       shoulderToWrist: 675,
-      wristCircumference: 180
+      wristCircumference: 180,
+      upperLegCircumference: 582,
+      hipsToUpperLeg: 193
     },
     manSize38: {
       bicepsCircumference: 305,
@@ -34,7 +38,9 @@ export default {
       shoulderSlope: 49,
       shoulderToShoulder: 444,
       shoulderToWrist: 680,
-      wristCircumference: 185
+      wristCircumference: 185,
+      upperLegCircumference: 598,
+      hipsToUpperLeg: 202
     },
     manSize40: {
       bicepsCircumference: 320,
@@ -46,7 +52,9 @@ export default {
       shoulderSlope: 52,
       shoulderToShoulder: 457,
       shoulderToWrist: 685,
-      wristCircumference: 190
+      wristCircumference: 190,
+      upperLegCircumference: 614,
+      hipsToUpperLeg: 211
     },
     manSize42: {
       bicepsCircumference: 335,
@@ -58,7 +66,9 @@ export default {
       shoulderSlope: 55,
       shoulderToShoulder: 470,
       shoulderToWrist: 690,
-      wristCircumference: 195
+      wristCircumference: 195,
+      upperLegCircumference: 630,
+      hipsToUpperLeg: 220
     },
     manSize44: {
       bicepsCircumference: 350,
@@ -70,7 +80,9 @@ export default {
       shoulderSlope: 58,
       shoulderToShoulder: 483,
       shoulderToWrist: 700,
-      wristCircumference: 200
+      wristCircumference: 200,
+      upperLegCircumference: 646,
+      hipsToUpperLeg: 229
     }
   }
 };
