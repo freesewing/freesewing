@@ -98,7 +98,6 @@ it("Should sample an option", () => {
   pattern.sample();
   expect(pattern.parts.a.paths.test_1.render).to.equal(true);
   expect(pattern.parts.b.paths.test_10.ops[1].to.y).to.equal(10);
-  expect(() => pattern.sampleOption("bonus")).to.throw();
 });
 
 it("Should sample a measurement", () => {

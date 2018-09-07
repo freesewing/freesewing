@@ -147,7 +147,9 @@ Pattern.prototype.sampleOption = function(optionName) {
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
   if (typeof option.min === "undefined" || typeof option.max === "undefined") {
-    throw "Cannot sample an option without min and max values";
+    let min = option * 0.9;
+    let max = option * 1.1;
+    option = { min, max };
   }
   if (typeof option.pct !== "undefined") factor = 100;
   val = option.min / factor;
