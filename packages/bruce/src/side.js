@@ -9,9 +9,8 @@ var back = {
     init(part);
 
     // Top left
-    points.defaultTopLeft = new Point(0, 0);
-    points.elasticTopLeft = new Point(0, options.rise * -1 * store.get('yScale'));
-    points.topLeft = new Point(0, points.elasticTopLeft.y + options.elasticWidth);
+    points.zero = new Point(0, 0);
+    points.topLeft = points.zero.shift(90, store.get('rise'));
 
     // Top right
     points.topRight = new Point(store.get('hipsSide'), points.topLeft.y);
@@ -30,6 +29,7 @@ var back = {
     points.topLeft = points.topLeft.shift(90, store.get('sideRise'));
     points.topRight = points.topRight.shift(90, store.get('frontRise'));
 
+    // Path
     paths.seam = new Path()
       .move(points.topLeft)
       .line(points.topRight)
@@ -39,12 +39,9 @@ var back = {
       .close()
       .attr('class', 'fabric');
 
-    points.anchor = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
-    snippets.test = new Snippet('notch', points.anchor);
-    paths.test = new Path()
-      .move(points.topLeft)
-      .line(points.anchor)
-      .attr('class', 'dashed');
+
+    // Anchor point for sampling
+    points.anchor = points.topLeft;
 
     // Final?
     if (final) {

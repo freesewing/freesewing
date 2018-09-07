@@ -41,7 +41,7 @@ var front = {
 
     points.bottomMid = new Point(0, store.get('riseLength'));
     points.rightTuskRight = new Point(
-      store.get('gusset') * ( 1 - store.get('gussetInsetRatio') ),
+      store.get('gusset') * store.get('xScale') * ( 1 - store.get('gussetInsetRatio') ),
       points.bottomMid.y
     );
     points.rightTuskLeft = points.bottomMid.clone();
@@ -56,7 +56,6 @@ var front = {
       delta = tuskDelta(part);
       count++;
       if(count>150) throw("We got stuck trying to calculate an optimal tusk length. Please report this.");
-      //debug(`Tusk tweak ${count}, delta is ${delta}`);
     }
     debug(`After ${count} iterations, tusk curve length is ${utils.round(delta)}mm off.`);
 
@@ -84,52 +83,52 @@ var front = {
         points.dartJoin = points.rightTuskLeft;
     }
 
-        // Flip points to left side
-        points.leftTuskRight = points.rightTuskLeft.flipX();
-        points.leftTuskLeft = points.rightTuskRight.flipX();
-        points.curveLeftCpBottom = points.curveRightCpBottom.flipX();
-        points.curveLeftCpTop = points.curveRightCpTop.flipX();
+    // Flip points to left side
+    points.leftTuskRight = points.rightTuskLeft.flipX();
+    points.leftTuskLeft = points.rightTuskRight.flipX();
+    points.curveLeftCpBottom = points.curveRightCpBottom.flipX();
+    points.curveLeftCpTop = points.curveRightCpTop.flipX();
 
-        // Handle back rise
-        points.topMid = new Point(0, points.topLeft.y);
-        points.topLeft = points.topLeft.shift(90, store.get('frontRise'));
-        points.topRight = points.topRight.shift(90, store.get('frontRise'));
-        points.topMidCpRight = new Point(points.topRight.x / 2, points.topMid.y);
-        points.topMidCpLeft = points.topMidCpRight.flipX();
+    // Handle back rise
+    points.topMid = new Point(0, points.topLeft.y);
+    points.topLeft = points.topLeft.shift(90, store.get('frontRise'));
+    points.topRight = points.topRight.shift(90, store.get('frontRise'));
+    points.topMidCpRight = new Point(points.topRight.x / 2, points.topMid.y);
+    points.topMidCpLeft = points.topMidCpRight.flipX();
 
-        if(options.bulge > 0) {
-          paths.trimBase = new Path()
-            .move(points.rightTuskLeft)
-            .curve(points.rightTuskLeft, points.dartCpRight, points.dartJoin)
-            .curve(points.dartCpLeft, points.leftTuskRight, points.leftTuskRight)
-          paths.seamStart = new Path()
-            .move(points.midLeft)
-            .line(points.topLeft)
-            .curve(points.topLeft, points.topMidCpLeft, points.topMid)
-            .curve(points.topMidCpRight, points.topRight, points.topRight)
-            .line(points.midRight)
-            .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
-            .line(points.rightTuskLeft);
-          paths.seamEnd = new Path()
-            .move(points.leftTuskRight)
-            .line(points.leftTuskLeft)
-            .curve(points.curveLeftCpBottom, points.curveLeftCpTop, points.midLeft);
-          paths.seamStart.render = false;
-          paths.trimBase.render = false;
-          paths.seamEnd.render = false;
-          paths.seam = paths.seamStart.join(paths.trimBase).join(paths.seamEnd);
-        } else {
-          paths.seam = new Path()
-            .move(points.midLeft)
-            .line(points.topLeft)
-            .curve(points.topLeft, points.topMidCpLeft, points.topMid)
-            .curve(points.topMidCpRight, points.topRight, points.topRight)
-            .line(points.midRight)
-            .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
-            .line(points.leftTuskLeft)
-            .curve(points.curveLeftCpBottom, points.curveLeftCpTop, points.midLeft);
-        }
-        paths.seam.close().attr('class', 'fabric');
+    if(options.bulge > 0) {
+      paths.trimBase = new Path()
+        .move(points.rightTuskLeft)
+        .curve(points.rightTuskLeft, points.dartCpRight, points.dartJoin)
+        .curve(points.dartCpLeft, points.leftTuskRight, points.leftTuskRight)
+      paths.seamStart = new Path()
+        .move(points.midLeft)
+        .line(points.topLeft)
+        .curve(points.topLeft, points.topMidCpLeft, points.topMid)
+        .curve(points.topMidCpRight, points.topRight, points.topRight)
+        .line(points.midRight)
+        .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
+        .line(points.rightTuskLeft);
+      paths.seamEnd = new Path()
+        .move(points.leftTuskRight)
+        .line(points.leftTuskLeft)
+        .curve(points.curveLeftCpBottom, points.curveLeftCpTop, points.midLeft);
+      paths.seamStart.render = false;
+      paths.trimBase.render = false;
+      paths.seamEnd.render = false;
+      paths.seam = paths.seamStart.join(paths.trimBase).join(paths.seamEnd);
+    } else {
+      paths.seam = new Path()
+        .move(points.midLeft)
+        .line(points.topLeft)
+        .curve(points.topLeft, points.topMidCpLeft, points.topMid)
+        .curve(points.topMidCpRight, points.topRight, points.topRight)
+        .line(points.midRight)
+        .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
+        .line(points.leftTuskLeft)
+        .curve(points.curveLeftCpBottom, points.curveLeftCpTop, points.midLeft);
+    }
+    paths.seam.close().attr('class', 'fabric');
 
     // Final?
     if (final) {

@@ -29,9 +29,9 @@
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
     "watch": "npx webpack --watch",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns_bruce --footer 'freesewing.patterns.bruce = freesewing_patterns_bruce;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_bruce --footer 'freesewing.patterns.bruce = freesewing_patterns_bruce;'",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m true",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
@@ -46,19 +46,19 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "0.1.9",
-    "freesewing": "^0.13"
+    "@freesewing/plugin-bundle": "^0.2",
+    "freesewing": "^0.16"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",
     "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.56",
     "@babel/preset-env": "7.0.0-beta.56",
-    "@freesewing/antman": "0.2.0",
-    "@freesewing/models": "0.4.0",
-    "@freesewing/plugin-debug": "0.0.1",
-    "@freesewing/plugin-designer": "0.7.1",
+    "@freesewing/antman": "^0.3",
+    "@freesewing/models": "^0.5",
+    "@freesewing/plugin-debug": "^0.1",
+    "@freesewing/plugin-designer": "^0.7",
     "@freesewing/plugin-theme": "^0.13.1",
-    "@freesewing/plugin-validate": "0.0.1",
+    "@freesewing/plugin-validate": "^0.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.0-beta.4",

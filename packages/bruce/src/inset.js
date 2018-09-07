@@ -10,7 +10,7 @@ var back = {
 
     // height is 73.5%
     points.topLeft = new Point(0,0);
-    points.bottomLeft = new Point(0, store.get('heightInset'));
+    points.bottomLeft = points.topLeft.shift(-90, store.get('heightInset'));
     points.bottomRight = new Point(store.get('legInset'), points.bottomLeft.y);
     points.tip = new Point(points.bottomRight.x * 1.111, points.bottomRight.y - store.get('gusset'));
     points.tip = points.bottomRight.shiftTowards(
@@ -27,6 +27,7 @@ var back = {
       .length()
     );
 
+    // Path
     paths.seam = new Path()
       .move(points.topLeft)
       .line(points.bottomLeft)

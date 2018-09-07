@@ -10,16 +10,15 @@ var back = {
 
     // Center back
     points.zero = new Point(0,0);
-    points.elasticCenter = points.zero.shift(90, store.get('rise'));
-    points.center = points.elasticCenter.shift(-90, options.elasticWidth);
+    points.center = points.zero.shift(90, store.get('rise'));
 
     // Side top
     points.sideRight = new Point(store.get('hipsBack') / 2, points.center.y);
 
     // Gusset
-    points.gussetTop = points.elasticCenter.shift(-90, store.get('riseLength'));
-    points.gussetBottom = points.gussetTop.shift(-90, store.get('gusset'));
-    points.gussetRight = points.gussetBottom.shift(0, store.get('gusset') / 2);
+    points.gussetTop = points.center.shift(-90, store.get('riseLength'));
+    points.gussetBottom = points.gussetTop.shift(-90, store.get('gusset') + store.get('legBonus'));
+    points.gussetRight = points.gussetBottom.shift(0, store.get('gusset') * store.get('xScale') / 2);
     points.gussetCpRight = new Point(points.gussetRight.x, points.gussetTop.y);
 
     // Find leg edge
