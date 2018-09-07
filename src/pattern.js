@@ -106,6 +106,37 @@ Pattern.prototype.sampleParts = function() {
   return parts;
 };
 
+Pattern.prototype.sampleRun = function(parts, anchors, l, extraClass = false) {
+  this.draft();
+  for (let i in this.parts) {
+    let anchor = false;
+    let dx = 0;
+    let dy = 0;
+    if (this.parts[i].points.anchor) {
+      if (typeof anchors[i] === "undefined")
+        anchors[i] = this.parts[i].points.anchor;
+      else {
+        if (!anchors[i].sitsOn(this.parts[i].points.anchor)) {
+          dx = this.parts[i].points.anchor.dx(anchors[i]);
+          dy = this.parts[i].points.anchor.dy(anchors[i]);
+        }
+      }
+    }
+    for (let j in this.parts[i].paths) {
+      parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
+        .clone()
+        .attr("class", "sample sample-" + l, true);
+      if (this.parts[i].points.anchor)
+        parts[i].paths[j + "_" + l] = parts[i].paths[j + "_" + l].translate(
+          dx,
+          dy
+        );
+      if (extraClass !== false)
+        parts[i].paths[j + "_" + l].attributes.add("class", extraClass);
+    }
+  }
+};
+
 /**
  * Handles option sampling
  */
@@ -127,32 +158,7 @@ Pattern.prototype.sampleOption = function(optionName) {
       debugStyle("info", "🔬 Sample run"),
       `Sampling option ${optionName} with value ${round(val)}`
     );
-    this.draft();
-    for (let i in this.parts) {
-      let anchor = false;
-      let dx = 0;
-      let dy = 0;
-      if (this.parts[i].points.anchor) {
-        if (typeof anchors[i] === "undefined")
-          anchors[i] = this.parts[i].points.anchor;
-        else {
-          if (!anchors[i].sitsOn(this.parts[i].points.anchor)) {
-            dx = this.parts[i].points.anchor.dx(anchors[i]);
-            dy = this.parts[i].points.anchor.dy(anchors[i]);
-          }
-        }
-      }
-      for (let j in this.parts[i].paths) {
-        parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
-          .clone()
-          .attr("class", "sample-" + l, true);
-        if (this.parts[i].points.anchor)
-          parts[i].paths[j + "_" + l] = parts[i].paths[j + "_" + l].translate(
-            dx,
-            dy
-          );
-      }
-    }
+    this.sampleRun(parts, anchors, l);
     val += step;
   }
   this.parts = parts;
@@ -164,6 +170,7 @@ Pattern.prototype.sampleOption = function(optionName) {
  * Handles measurement sampling
  */
 Pattern.prototype.sampleMeasurement = function(measurementName) {
+  let anchors = {};
   let parts = this.sampleParts();
   let val = this.settings.measurements[measurementName];
   if (val === undefined) throw "Cannot sample a measurement that is undefined";
@@ -175,14 +182,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
       debugStyle("info", "🔬 Sample run"),
       `Sampling measurement ${measurementName} with value ${round(val)}`
     );
-    this.draft();
-    for (let i in this.parts) {
-      for (let j in this.parts[i].paths) {
-        parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
-          .clone()
-          .attr("class", "sample-" + l, true);
-      }
-    }
+    this.sampleRun(parts, anchors, l);
     val += step;
   }
   this.parts = parts;
@@ -194,22 +194,15 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
  * Handles models sampling
  */
 Pattern.prototype.sampleModels = function(models, focus = false) {
+  let anchors = {};
   let parts = this.sampleParts();
   let count = 0;
   for (let l in models) {
     count++;
     this.settings.measurements = models[l];
     this.debug(debugStyle("info", "🔬 Sample run"), `Sampling model ${l}`);
-    this.draft();
-    for (let i in this.parts) {
-      for (let j in this.parts[i].paths) {
-        parts[i].paths[j + "_" + count] = this.parts[i].paths[j]
-          .clone()
-          .attr("class", "sample sample-" + count, true);
-        if (l === focus)
-          parts[i].paths[j + "_" + count].attr("class", "sample-focus");
-      }
-    }
+    let className = l === focus ? "sample-focus" : "";
+    this.sampleRun(parts, anchors, count, className);
   }
   this.parts = parts;
 

@@ -702,3 +702,24 @@ it("Should trim a path when a curves overlap", () => {
   expect(test.ops[2].to.x).to.equal(50);
   expect(test.ops[2].to.y).to.equal(11.01);
 });
+
+it("Should translate a path", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.points.A = new a.Point(0, 0);
+  a.points.B = new a.Point(100, 100);
+  a.points.C = new a.Point(0, 100);
+  a.points.D = new a.Point(100, 0);
+
+  let base = new a.Path()
+    .move(a.points.A)
+    .curve(a.points.B, a.points.C, a.points.D);
+  let test = base.translate(10, 20);
+
+  expect(test.ops.length).to.equal(2);
+  expect(test.ops[0].to.x).to.equal(10);
+  expect(test.ops[0].to.y).to.equal(20);
+  expect(test.ops[1].to.x).to.equal(110);
+  expect(test.ops[1].to.y).to.equal(20);
+});

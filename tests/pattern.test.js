@@ -171,9 +171,9 @@ it("Should sample models with focus", () => {
   expect(pattern.parts.a.paths.test_1.attributes.get("class")).to.equal(
     "sample sample-1 sample-focus"
   );
-  expect(pattern.parts.b.paths.test_2.attributes.get("class")).to.equal(
-    "sample sample-2"
-  );
+  expect(
+    pattern.parts.b.paths.test_2.attributes.get("class")
+  ).to.equalIgnoreSpaces("sample sample-2");
 });
 
 it("Should register a hook via on", () => {

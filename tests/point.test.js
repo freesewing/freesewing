@@ -50,10 +50,22 @@ it("Should check points for equality", () => {
   expect(a).to.deep.equal(b);
 });
 
+it("Should flip point around X value zero", () => {
+  let result = new Point(2, 4).flipX();
+  expect(result.x).to.equal(-2);
+  expect(result.y).to.equal(4);
+});
+
 it("Should flip point around X value", () => {
   let result = new Point(2, 4).flipX(new Point(-20, 19));
   expect(result.x).to.equal(-42);
   expect(result.y).to.equal(4);
+});
+
+it("Should flip point around Y value zero", () => {
+  let result = new Point(2, 4).flipY();
+  expect(result.x).to.equal(2);
+  expect(result.y).to.equal(-4);
 });
 
 it("Should flip point around Y value", () => {
@@ -189,4 +201,11 @@ it("Should clone a point", () => {
   let p2 = p1.clone();
   expect(p2.sitsOn(p1)).to.equal(true);
   expect(p2.attributes.get("class")).to.equal("something else");
+});
+
+it("Should translate a point", () => {
+  let p1 = new Point(10, 20);
+  let p2 = p1.translate(15, 50);
+  expect(p2.x).to.equal(25);
+  expect(p2.y).to.equal(70);
 });
