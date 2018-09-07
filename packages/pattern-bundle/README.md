@@ -17,4 +17,5 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
 
 ## Menswear
 
- - [aaron](https://github.com/freesewing/aaron) : A tank top or A-shirt.
+ - [aaron](https://github.com/freesewing/aaron) : A tank top or A-shirt
+ - [bruce](https://github.com/freesewing/bruce) : Boxer briefs
