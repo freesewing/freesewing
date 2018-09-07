@@ -147,7 +147,10 @@ Pattern.prototype.sampleOption = function(optionName) {
           .clone()
           .attr("class", "sample-" + l, true);
         if (this.parts[i].points.anchor)
-          parts[i].paths[j + "_" + l].translate(dx, dy);
+          parts[i].paths[j + "_" + l] = parts[i].paths[j + "_" + l].translate(
+            dx,
+            dy
+          );
       }
     }
     val += step;
