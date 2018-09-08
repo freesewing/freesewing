@@ -29,9 +29,9 @@
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
     "watch": "npx webpack --watch",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns_brian --footer 'freesewing.patterns.brian = freesewing_patterns_brian;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_brian --footer 'freesewing.patterns.brian = freesewing_patterns_brian;'",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m  true",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
