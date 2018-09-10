@@ -236,13 +236,13 @@ function pathOffset(path, distance) {
       // We need to avoid a control point sitting on top of start or end
       // because that will break the offset in bezier-js
       let cp1, cp2;
-      if (current.sitsOn(op.cp1)) {
+      if (current.sitsRoughlyOn(op.cp1)) {
         cp1 = new Path()
           .move(current)
           .curve(op.cp1, op.cp2, op.to)
           .shiftAlong(2);
       } else cp1 = op.cp1;
-      if (op.cp2.sitsOn(op.to)) {
+      if (op.cp2.sitsRoughlyOn(op.to)) {
         cp2 = new Path()
           .move(op.to)
           .curve(op.cp2, op.cp1, current)
@@ -512,7 +512,7 @@ Path.prototype.divide = function() {
     if (op.type === "move") {
       start = op.to;
     } else if (op.type === "line") {
-      if (!op.to.sitsOn(current))
+      if (!op.to.sitsRoughlyOn(current))
         paths.push(new Path().move(current).line(op.to));
     } else if (op.type === "curve") {
       paths.push(new Path().move(current).curve(op.cp1, op.cp2, op.to));
