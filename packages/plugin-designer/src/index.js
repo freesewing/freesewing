@@ -80,7 +80,7 @@ export default {
         partId
       ) {
         let path = new Path().move(from).line(to);
-        path.attributes.add("class", "curve-control stroke-various stroke-sm");
+        path.attributes.add("class", "curve-control various stroke-sm");
         path.attributes.add("id", id);
         path.attributes.add("data-path", pathId);
         path.attributes.add("data-part", partId);
