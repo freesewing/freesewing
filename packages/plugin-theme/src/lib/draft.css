@@ -6,6 +6,8 @@ path{stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-li
 .canvas{stroke-width:.6;stroke:#ff9000}
 .various{stroke-width:.6;stroke:#4caf50}
 .note{stroke-width:.4;stroke:#dd60dd}
+.mark{stroke-width:.4;stroke:blue}
+.contrast{stroke-width:.8;stroke:red}
 
 .fill-fabric{fill:#212121}
 .fill-lining{fill:#ff5b77}
@@ -13,6 +15,8 @@ path{stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-li
 .fill-canvas{fill:#ff9000}
 .fill-various{fill:#4caf50}
 .fill-note{fill:#dd69dd}
+.fill-mark{fill:blue}
+.fill-contrast{fill:red}
 
 text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:200;dominant-baseline:ideographic;}
 .text-xs{font-size:3px}
