@@ -5,9 +5,9 @@ function drawDimension(from, to, so, self) {
   let dimension = new self.Path()
     .move(from)
     .line(to)
-    .attr("class", "note")
+    .attr("class", "mark")
     .attr("data-text", so.text || self.units(from.dist(to)))
-    .attr("data-text-class", "fill-note center");
+    .attr("data-text-class", "fill-mark center");
   if (!so.noStartMarker)
     dimension.attributes.set("marker-start", "url(#dimensionFrom)");
   if (!so.noEndMarker)
@@ -20,7 +20,7 @@ function drawLeader(self, from, to, id) {
   self.paths[id] = new self.Path()
     .move(from)
     .line(to)
-    .attr("class", "note dotted");
+    .attr("class", "mark dotted");
 }
 
 function hleader(so, type, self, id) {
@@ -103,11 +103,11 @@ export default {
     pd: function(so) {
       let dimension = so.path
         .offset(so.d)
-        .attr("class", "note")
+        .attr("class", "mark")
         .attr("marker-start", "url(#dimensionFrom)")
         .attr("marker-end", "url(#dimensionTo)")
         .attr("data-text", so.text || this.units(so.path.length()))
-        .attr("data-text-class", "fill-note center");
+        .attr("data-text-class", "fill-mark center");
       let id = this.getId();
       drawLeader(this, so.path.start(), dimension.start(), id + "_ls");
       drawLeader(this, so.path.end(), dimension.end(), id + "_le");
