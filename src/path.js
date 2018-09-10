@@ -293,7 +293,8 @@ function joinPaths(paths, closed = false) {
       if (op.type === "curve") {
         joint.curve(op.cp1, op.cp2, op.to);
       } else if (op.type !== "close") {
-        if (current && !op.to.sitsOn(current)) joint.line(op.to);
+        // We're using sitsRoughlyOn here to avoid miniscule line segments
+        if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to);
       } else {
         throw "Cannot join a closed paths with another";
       }

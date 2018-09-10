@@ -675,9 +675,9 @@ it("Should trim a path when a line overlaps with a curve", () => {
     .line(a.points.A)
     .trim();
 
-  expect(test.ops.length).to.equal(6);
-  expect(test.ops[2].to.x).to.equal(72.19);
-  expect(test.ops[2].to.y).to.equal(27.8);
+  expect(test.ops.length).to.equal(5);
+  expect(test.ops[2].to.x).to.equal(72.2);
+  expect(test.ops[2].to.y).to.equal(27.81);
 });
 
 it("Should trim a path when a curves overlap", () => {
