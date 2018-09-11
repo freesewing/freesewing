@@ -11,7 +11,7 @@ export default {
   },
   macros: {
     scalebox: function(so) {
-      // Boxes
+      // Box points
       this.points.__scaleboxMetricTopLeft = new this.Point(
         so.at.x - 50,
         so.at.y - 25
@@ -44,6 +44,43 @@ export default {
         so.at.x + 50.8,
         so.at.y + 25.4
       );
+      // Text anchor points
+      this.points.__scaleboxLead = new this.Point(so.at.x - 45, so.at.y - 15);
+      this.points.__scaleboxTitle = this.points.__scaleboxLead.shift(-90, 10);
+      this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 8);
+      this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 8);
+      this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20);
+      this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24);
+      // Rotation
+      if (so.rotate) {
+        let points = [
+          "__scaleboxMetricTopLeft",
+          "__scaleboxMetricTopRight",
+          "__scaleboxMetricBottomLeft",
+          "__scaleboxMetricBottomRight",
+          "__scaleboxImperialTopLeft",
+          "__scaleboxImperialTopRight",
+          "__scaleboxImperialBottomLeft",
+          "__scaleboxImperialBottomRight",
+          "__scaleboxLead",
+          "__scaleboxTitle",
+          "__scaleboxText",
+          "__scaleboxLink",
+          "__scaleboxMetric",
+          "__scaleboxImperial"
+        ];
+        for (let pid of points)
+          this.points[pid] = this.points[pid].rotate(so.rotate, so.at);
+        for (let pid of points.slice(8)) {
+          this.points[pid].attributes.set(
+            "data-text-transform",
+            `rotate(${so.rotate * -1}, ${this.points[pid].x}, ${
+              this.points[pid].y
+            })`
+          );
+        }
+      }
+      // Paths
       this.paths.__scaleboxImperial = new this.Path()
         .move(this.points.__scaleboxImperialTopLeft)
         .line(this.points.__scaleboxImperialBottomLeft)
@@ -59,20 +96,19 @@ export default {
         .close()
         .attr("style", "fill: #FFF; stroke: none;");
       // Lead
-      this.points.__scaleboxLead = new this.Point(so.at.x - 45, so.at.y - 15)
+      this.points.__scaleboxLead = this.points.__scaleboxLead
         .attr("data-text", so.lead || "freesewing")
         .attr("data-text-class", "text-sm");
       // Title
-      this.points.__scaleboxTitle = this.points.__scaleboxLead
-        .shift(-90, 10)
-        .attr(
-          "data-text",
-          so.title ||
-            this.context.config.name + " v" + this.context.config.version
-        )
-        .attr("data-text-class", "text-lg");
+      if (so.title)
+        this.points.__scaleboxTitle.attributes.set("data-text", so.title);
+      else {
+        this.points.__scaleboxTitle = this.points.__scaleboxTitle
+          .attr("data-text", this.context.config.name)
+          .attr("data-text", "v" + this.context.config.version);
+      }
+      this.points.__scaleboxTitle.attributes.add("data-text-class", "text-lg");
       // Text
-      this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 8);
       if (typeof so.text === "string") {
         this.points.__scaleboxText.attr("data-text", so.text);
       } else {
@@ -80,8 +116,7 @@ export default {
           .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
           .attr("data-text", "\n")
           .attr("data-text", "withTheFinancialSupportOfOurPatrons");
-        this.points.__scaleboxLink = this.points.__scaleboxText
-          .shift(-90, 8)
+        this.points.__scaleboxLink = this.points.__scaleboxLink
           .attr("data-text", "freesewing.org/patrons/join")
           .attr("data-text-class", "text-xs fill-note");
       }
@@ -89,13 +124,17 @@ export default {
         .attr("data-text-class", "text-xs")
         .attr("data-text-lineheight", 4);
       // Instructions
-      this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20)
+      this.points.__scaleboxMetric = this.points.__scaleboxMetric
         .attr("data-text", "theWhiteInsideOfThisBoxShouldMeasure")
-        .attr("data-text", "10cm x 5cm")
+        .attr("data-text", "10cm")
+        .attr("data-text", "x")
+        .attr("data-text", "5cm")
         .attr("data-text-class", "text-xs center");
-      this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24)
+      this.points.__scaleboxImperial = this.points.__scaleboxImperial
         .attr("data-text", "theBlackOutsideOfThisBoxShouldMeasure")
-        .attr("data-text", '4" x 2"')
+        .attr("data-text", '4"')
+        .attr("data-text", "x")
+        .attr("data-text", '2"')
         .attr("data-text-class", "text-xs center ");
     }
   }
