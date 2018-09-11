@@ -147,6 +147,10 @@ Pattern.prototype.sampleOption = function(optionName) {
   let anchors = {};
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
+  if (typeof option.list === "object") {
+    console.log("sampling list");
+    return this.sampleListOption(optionName);
+  }
   if (typeof option.min === "undefined" || typeof option.max === "undefined") {
     let min = option * 0.9;
     let max = option * 1.1;
@@ -163,6 +167,25 @@ Pattern.prototype.sampleOption = function(optionName) {
     );
     this.sampleRun(parts, anchors, l);
     val += step;
+  }
+  this.parts = parts;
+
+  return this;
+};
+
+Pattern.prototype.sampleListOption = function(optionName) {
+  let parts = this.sampleParts();
+  let option = this.config.options[optionName];
+  let anchors = {};
+  let count = 1;
+  for (let val of option.list) {
+    this.options[optionName] = val;
+    this.debug(
+      debugStyle("info", "🔬 Sample run"),
+      `Sampling option ${optionName} with value ${round(val)}`
+    );
+    this.sampleRun(parts, anchors, count);
+    count++;
   }
   this.parts = parts;
 
