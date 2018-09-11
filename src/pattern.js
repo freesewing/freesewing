@@ -24,7 +24,8 @@ export default function Pattern(config = false) {
     mode: "draft",
     idPrefix: "fs-",
     locale: "en",
-    units: "metric"
+    units: "metric",
+    margin: 2
   };
   this.options = {};
   this.store = new Store();

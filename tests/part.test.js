@@ -123,13 +123,13 @@ it("Should calculate the part boundary", () => {
     .move(part.points.from)
     .line(part.points.to);
   let boundary = part.boundary();
-  expect(boundary.topLeft.x).to.equal(9);
-  expect(boundary.topLeft.y).to.equal(66);
-  expect(boundary.bottomRight.x).to.equal(133);
-  expect(boundary.bottomRight.y).to.equal(466);
+  expect(boundary.topLeft.x).to.equal(17);
+  expect(boundary.topLeft.y).to.equal(74);
+  expect(boundary.bottomRight.x).to.equal(125);
+  expect(boundary.bottomRight.y).to.equal(458);
   boundary = part.boundary();
-  expect(boundary.width).to.equal(124);
-  expect(boundary.height).to.equal(400);
+  expect(boundary.width).to.equal(108);
+  expect(boundary.height).to.equal(384);
 });
 
 it("Should stack a part", () => {
@@ -143,7 +143,7 @@ it("Should stack a part", () => {
     .move(part.points.from)
     .line(part.points.to);
   part.stack();
-  expect(part.attributes.get("transform")).to.equal("translate(-9, -66)");
+  expect(part.attributes.get("transform")).to.equal("translate(-17, -74)");
 });
 
 it("Should only stack a part if needed", () => {
@@ -151,7 +151,7 @@ it("Should only stack a part if needed", () => {
   pattern.settings.mode = "draft";
   let part = new pattern.Part();
   let short = part.shorthand();
-  part.points.from = new short.Point(10, 10);
+  part.points.from = new short.Point(2, 2);
   part.points.to = new short.Point(19, 76);
   part.paths.test = new short.Path()
     .move(part.points.from)

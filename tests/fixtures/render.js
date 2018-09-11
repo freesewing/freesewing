@@ -93,7 +93,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
 
@@ -112,7 +112,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 </g>
 <!-- end of group #fs-part-test -->
 </g>
@@ -127,7 +127,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="60mm" height="72.45mm" viewBox="0 0 60 72.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
 
@@ -146,7 +146,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform=" translate(10, 10)">
+<g id="fs-part-test"  transform=" translate(2, 2)">
 <path  id="something" class="freesewing" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 </g>
 <!-- end of group #fs-part-test -->
@@ -162,7 +162,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
 
@@ -181,7 +181,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan>
 </text>
 </g>
@@ -198,7 +198,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="120mm" height="120mm" viewBox="0 0 120 120"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="104mm" height="104mm" viewBox="0 0 104 104"
 >
 <style type="text/css"> <![CDATA[
 
@@ -217,7 +217,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(40, 40)"><circle
+<g id="fs-part-test"  transform="translate(32, 32)"><circle
     cx="20"
     cy="20"
     r="50"
@@ -237,7 +237,7 @@ var render = {
     <!--
 
     --><svg
-     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
 
@@ -256,7 +256,7 @@ var render = {
        <g id="fs-container">
 
        <!-- Start of group #fs-part-test -->
-       <g id="fs-part-test"  transform=" translate(10, 10)">
+       <g id="fs-part-test"  transform=" translate(2, 2)">
        <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="8">with text on</tspan><tspan x="20" dy="8">multiple lines</tspan>
        </text>
        </g>
@@ -273,7 +273,7 @@ var render = {
     <!--
 
     --><svg
-     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
 
@@ -292,7 +292,7 @@ var render = {
        <g id="fs-container">
 
        <!-- Start of group #fs-part-test -->
-       <g id="fs-part-test"  transform=" translate(10, 10)">
+       <g id="fs-part-test"  transform=" translate(2, 2)">
        <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="12">with text on</tspan><tspan x="20" dy="12">multiple lines</tspan>
        </text>
        </g>
@@ -309,7 +309,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="60mm" height="72.45mm" viewBox="0 0 60 72.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
 
@@ -328,7 +328,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform=" translate(2, 2)">
 <path  data-text="This is another test" data-text-class="text-sm" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 <text><textPath xlink:href="#fs-1" ><tspan  class="text-sm">This is another test</tspan></textPath>
 </text>
@@ -346,7 +346,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="60mm" height="72.45mm" viewBox="0 0 60 72.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
 
@@ -365,7 +365,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <path  data-text="This is another test" data-text-class="center" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 <text><textPath xlink:href="#fs-1"  startOffset="50%" ><tspan  class="center">This is another test</tspan></textPath>
 </text>
@@ -383,7 +383,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="60mm" height="72.45mm" viewBox="0 0 60 72.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
 
@@ -402,7 +402,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <path  data-text="This is another test" data-text-class="right" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 <text><textPath xlink:href="#fs-1"  startOffset="100%" ><tspan  class="right">This is another test</tspan></textPath>
 </text>
@@ -420,7 +420,7 @@ var render = {
 <!--
 
 --><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="20mm" height="20mm" viewBox="0 0 20 20"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
 
@@ -439,7 +439,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform="translate(10, 10)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <use x="20" y="20" xlink:href="#test" ></use>
 </g>
 <!-- end of group #fs-part-test -->

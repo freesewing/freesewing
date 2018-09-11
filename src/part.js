@@ -110,9 +110,11 @@ Part.prototype.boundary = function() {
   if (topLeft.y === Infinity) topLeft.y = 0;
   if (bottomRight.x === -Infinity) bottomRight.x = 0;
   if (bottomRight.y === -Infinity) bottomRight.y = 0;
-  // Add 10mm margin
-  this.topLeft = new Point(topLeft.x - 10, topLeft.y - 10);
-  this.bottomRight = new Point(bottomRight.x + 10, bottomRight.y + 10);
+  // Add margin
+  let margin = this.context.settings.margin;
+  if (this.context.settings.paperless && margin < 10) margin = 10;
+  this.topLeft = new Point(topLeft.x - margin, topLeft.y - margin);
+  this.bottomRight = new Point(bottomRight.x + margin, bottomRight.y + margin);
   this.width = this.bottomRight.x - this.topLeft.x;
   this.height = this.bottomRight.y - this.topLeft.y;
 

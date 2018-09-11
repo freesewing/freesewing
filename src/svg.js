@@ -147,7 +147,7 @@ Svg.prototype.renderPart = function(part) {
   }
   for (let key in part.snippets) {
     let snippet = part.snippets[key];
-    svg += this.renderSnippet(snippet);
+    svg += this.renderSnippet(snippet, part);
   }
 
   return svg;
@@ -232,9 +232,21 @@ Svg.prototype.renderCircle = function(point) {
 };
 
 /** Returns SVG code for a snippet */
-Svg.prototype.renderSnippet = function(snippet) {
+Svg.prototype.renderSnippet = function(snippet, part) {
+  let x = snippet.anchor.x;
+  let y = snippet.anchor.y;
+  let scale = snippet.attributes.get("data-scale");
+  if (scale) {
+    snippet.attributes.add("transform", `translate(${x}, ${y})`);
+    snippet.attributes.add("transform", `scale(${scale})`);
+    snippet.attributes.add("transform", `translate(${x * -1}, ${y * -1})`);
+  }
+  let rotate = snippet.attributes.get("data-rotate");
+  if (rotate) {
+    snippet.attributes.add("transform", `rotate(${rotate}, ${x}, ${y})`);
+  }
   let svg = this.nl();
-  svg += `<use x="${snippet.anchor.x}" y="${snippet.anchor.y}" `;
+  svg += `<use x="${x}" y="${y}" `;
   svg += `xlink:href="#${snippet.def}" ${snippet.attributes.render()}>`;
   svg += "</use>";
 
