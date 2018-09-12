@@ -21,7 +21,7 @@ export default function Pattern(config = false) {
 
   // Data containers
   this.settings = {
-    mode: "draft",
+    complete: true,
     idPrefix: "fs-",
     locale: "en",
     units: "metric",
@@ -97,7 +97,7 @@ Pattern.prototype.sample = function() {
 
 Pattern.prototype.sampleParts = function() {
   let parts = {};
-  this.settings.mode = "sample";
+  this.settings.quick = true;
   this.settings.paperless = false;
   this.draft();
   for (let i in this.parts) {

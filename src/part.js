@@ -162,10 +162,11 @@ Part.prototype.units = function(input) {
 
 /** Returns an object with shorthand access for pattern design */
 Part.prototype.shorthand = function() {
-  let final = this.context.settings.mode === "draft" ? true : false;
+  let complete = this.context.settings.complete ? true : false;
   let paperless = this.context.settings.paperless === true ? true : false;
+  let sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0;
   return {
-    sa: this.context.settings.sa || 0,
+    sa,
     measurements: this.context.settings.measurements || {},
     options: this.context.options || {},
     store: this.context.store,
@@ -178,7 +179,7 @@ Part.prototype.shorthand = function() {
     Point: this.Point,
     Path: this.Path,
     Snippet: this.Snippet,
-    final,
+    complete,
     paperless,
     debug: this.debugClosure()
   };

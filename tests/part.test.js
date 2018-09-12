@@ -108,7 +108,7 @@ it("Should return shorthand", () => {
   pattern.settings.paperless = true;
   let part = new pattern.Part();
   let short = part.shorthand();
-  expect(short.final).to.equal(true);
+  expect(short.complete).to.equal(true);
   expect(short.paperless).to.equal(true);
 });
 

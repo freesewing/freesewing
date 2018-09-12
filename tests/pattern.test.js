@@ -11,7 +11,7 @@ it("Pattern constructor should initialize object", () => {
   });
   expect(pattern.width).to.equal(false);
   expect(pattern.height).to.equal(false);
-  expect(pattern.settings.mode).to.equal("draft");
+  expect(pattern.settings.complete).to.equal(true);
   expect(pattern.parts).to.eql({});
   expect(pattern.settings.units).to.equal("metric");
   expect(pattern.config.foo).to.equal("bar");
