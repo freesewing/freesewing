@@ -25,7 +25,7 @@ function tweakTusk(delta, part) {
 var front = {
   draft: function(part) {
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro, utils, debug} = part.shorthand();
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, utils, debug} = part.shorthand();
 
     // Initialize
     init(part);
@@ -130,8 +130,8 @@ var front = {
     }
     paths.seam.close().attr('class', 'fabric');
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       if(sa) {
         if(options.bulge > 0) {
           let saStart = paths.seamStart.offset(sa * -1);

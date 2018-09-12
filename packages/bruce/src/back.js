@@ -3,7 +3,7 @@ import { init } from "./shared";
 var back = {
   draft: function(part) {
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro, utils} = part.shorthand();
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, utils} = part.shorthand();
 
     // Initialize
     init(part);
@@ -50,8 +50,8 @@ var back = {
       .close()
       .attr('class', 'fabric');
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       if(sa) {
         let sa1 = new Path()
           .move(points.legRight)
