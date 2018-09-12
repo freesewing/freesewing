@@ -2,7 +2,7 @@ var panel6 = {
   draft: function(part) {
 
     // prettier-ignore
-    let {macro, sa, points, paths, Point, final, paperless } = part.shorthand();
+    let {macro, sa, points, paths, Point, complete, paperless } = part.shorthand();
 
     delete paths.outline;
     delete paths.panel1;
@@ -11,8 +11,8 @@ var panel6 = {
     delete paths.panel4;
     delete paths.panel5;
 
-    // Final?
-    if(final) {
+    // Complete pattern?
+    if(complete) {
       points.grainlineTop = new Point(
         points.waistGap5Right.shiftFractionTowards(points.waistCB, 0.5).x,
         points.underbustGap5Right.y

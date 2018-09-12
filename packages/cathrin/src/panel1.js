@@ -4,7 +4,7 @@ var panel1 = {
   draft: function(part) {
 
     // prettier-ignore
-    let {macro, sa, points, paths, Point, Path, options, final, paperless } = part.shorthand();
+    let {macro, sa, points, paths, Point, Path, options, complete, paperless } = part.shorthand();
 
     delete paths.outline;
     delete paths.panel2;
@@ -15,8 +15,8 @@ var panel1 = {
 
     if (options.panels === 13) return panel1ab.draft(part);
 
-    // Final?
-    if(final) {
+    // Complete pattern?
+    if(complete) {
       macro('cutonfold', {
         to: points.bottomCF,
         from: points.topCF,

@@ -2,7 +2,7 @@ var base = {
   draft: function(part) {
 
     // prettier-ignore
-    let {measurements, options, store, points, snippets, paths, Point, Snippet, Path, utils, final, debug } = part.shorthand();
+    let {measurements, options, store, points, snippets, paths, Point, Snippet, Path, utils, complete, debug } = part.shorthand();
 
     // Where to divide our corset into panels
     if (options.panels === 11) store.set('gaps', [0.15,0.275,0.4,0.6,0.75]);

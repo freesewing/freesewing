@@ -14,8 +14,6 @@ import panel4 from "./panel4";
 import panel5 from "./panel5";
 import panel6 from "./panel6";
 
-//import corset from "./corset";
-
 var pattern = new freesewing.Pattern({ version: version, ...config })
   .with(pluginBundle);
 

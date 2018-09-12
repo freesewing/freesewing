@@ -2,7 +2,7 @@ var panels = {
   draft: function(part) {
 
     // prettier-ignore
-    let {measurements, options, store, points, snippets, paths, Point, Snippet, Path, utils, final, debug } = part.shorthand();
+    let {measurements, options, store, points, snippets, paths, Point, Snippet, Path, utils, complete, debug } = part.shorthand();
     let count = 1;
     let bottom = new Path()
       .move(points.bottomCF)

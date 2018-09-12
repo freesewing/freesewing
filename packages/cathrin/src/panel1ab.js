@@ -2,7 +2,7 @@ var panel1ab = {
   draft: function(part) {
 
     // prettier-ignore
-    let {macro, utils, sa, points, paths, Point, Path, options, final, paperless } = part.shorthand();
+    let {macro, utils, sa, points, paths, Point, Path, options, complete, paperless } = part.shorthand();
 
     let top = new Path()
       .move(points.underbustGap1Left)
@@ -31,8 +31,8 @@ var panel1ab = {
     paths.panel1b = paths.panel1b.translate(translation,0);
     delete paths.panel1;
 
-    // Final?
-    if(final) {
+    // Complete pattern?
+    if(complete) {
       if (sa) {
         paths.saA = paths.panel1a.offset(sa).attr('class', 'fabric sa');
         paths.saB = paths.panel1b.offset(sa).attr('class', 'fabric sa');
