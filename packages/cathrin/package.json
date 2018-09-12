@@ -47,8 +47,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "0.3.0",
-    "freesewing": "0.16.3"
+    "freesewing": "^0.17",
+    "@freesewing/plugin-bundle": "^0.3"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",
@@ -58,13 +58,13 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "@freesewing/antman": "0.2.0",
-    "@freesewing/models": "0.4.0",
-    "@freesewing/plugin-debug": "0.1.0",
-    "@freesewing/plugin-designer": "0.7.2",
-    "@freesewing/plugin-theme": "0.13.2",
-    "@freesewing/plugin-validate": "0.2.0",
-    "@freesewing/plugin-i18n": "0.0.1",
+    "@freesewing/antman": "^0.3",
+    "@freesewing/models": "^0.6",
+    "@freesewing/plugin-debug": "^0.1",
+    "@freesewing/plugin-designer": "^0.7.2",
+    "@freesewing/plugin-i18n": "^0.0.2",
+    "@freesewing/plugin-theme": "^0.13.2",
+    "@freesewing/plugin-validate": "^0.2",
     "eslint": "5.3.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
