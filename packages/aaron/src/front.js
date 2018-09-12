@@ -3,7 +3,7 @@ import { dimensions } from './shared';
 var front = {
   draft: function(part) {
     // prettier-ignore
-    let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = part.shorthand();
+    let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro} = part.shorthand();
 
     // Handle stretch
     for(let i in points) points[i].x = points[i].x * (1 - options.stretchFactor);
@@ -89,8 +89,8 @@ var front = {
         .length()
     );
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       macro("cutonfold", {
         from: points.cfNeck,
         to: points.cfHips,

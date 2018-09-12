@@ -3,7 +3,7 @@ import { dimensions } from './shared';
 var back = {
   draft: function(part) {
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, final, paperless, macro, utils, units} = part.shorthand();
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, complete, paperless, macro, utils, units} = part.shorthand();
 
     points.strapLeftCp2 = utils.beamsIntersect(
       points.strapLeft,
@@ -28,8 +28,8 @@ var back = {
       .close()
       .attr("class", "fabric");
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       let neckOpeningLength = new Path()
         .move(points.strapLeft)
         .curve(points.strapLeftCp2, points.cbNeck, points.cbNeck)
