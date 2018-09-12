@@ -3,7 +3,7 @@ import freesewing from "freesewing";
 var sleeve = {
   draft: function(part) {
     // prettier-ignore
-    let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
+    let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro} = part.shorthand();
 
     // Wrist
     let top = paths.sleevecap.bbox().topLeft.y;
@@ -18,6 +18,7 @@ var sleeve = {
       (measurements.wristCircumference * (1 + options.cuffEase)) / 2
     );
     points.wristLeft = points.wristRight.rotate(180, points.centerWrist);
+    points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5);
 
     // Paths
     paths.sleevecap.render = false;
@@ -33,8 +34,8 @@ var sleeve = {
     // Anchor point for sampling
     points.gridAnchor = new Point(0, 0);
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       points.logo = points.centerBiceps.shiftFractionTowards(
         points.centerWrist,
         0.3
@@ -48,7 +49,6 @@ var sleeve = {
       );
       macro("scalebox", { at: points.scalebox });
 
-      points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5);
       points.frontNotch = paths.sleevecap.shiftAlong(
         paths.sleevecap.length() / 2 -
           store.get("frontShoulderToArmholePitch") -
@@ -80,6 +80,11 @@ var sleeve = {
         from: points.bicepsLeft,
         to: points.bicepsRight,
         y: points.sleeveTip.y - sa - 30
+      });
+      macro("hd", {
+        from: points.wristLeft,
+        to: points.wristRight,
+        y: points.wristLeft.y + sa + 30
       });
       macro("pd", {
         path: paths.sleevecap.reverse(),

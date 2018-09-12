@@ -4,7 +4,7 @@ import * as shared from "./shared";
 var back = {
   draft: function(part) {
     // prettier-ignore
-    let {store, sa, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
+    let {store, sa, points, Path, paths, Snippet, snippets, complete, paperless, macro} = part.shorthand();
 
     // Seamline
     paths.saBase = shared.saBase("back", points, Path);
@@ -21,8 +21,8 @@ var back = {
       shared.shoulderToArmholePitch(points, Path)
     );
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       macro("cutonfold", {
         from: points.cbNeck,
         to: points.cbHips,

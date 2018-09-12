@@ -147,7 +147,7 @@ function draftSleevecap(part, run) {
 var sleevecap = {
   draft: function(part) {
     // prettier-ignore
-    let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, final, paperless, macro} = part.shorthand();
+    let {debug, store, units, sa, measurements, options, Point, points, Path, paths } = part.shorthand();
 
     store.set("sleeveFactor", 1);
     let run = 1;
@@ -160,7 +160,11 @@ var sleevecap = {
       );
       sleevecapAdjust(store);
       run++;
-    } while (Math.abs(sleevecapDelta(store)) > 2 && run < 100);
+    } while (
+      options.brianFitSleeve === true &&
+      run < 100 &&
+      Math.abs(sleevecapDelta(store)) > 2
+    );
 
     // Paths
     paths.sleevecap.attr("class", "fabric");

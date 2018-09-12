@@ -5,7 +5,7 @@ import * as shared from "./shared";
 var front = {
   draft: function(part) {
     // prettier-ignore
-    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, final, paperless, macro} = part.shorthand();
+    let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro} = part.shorthand();
 
     // Cut arm a bit deeper at the front
     let deeper = measurements.chestCircumference * options.frontArmholeDeeper;
@@ -41,8 +41,8 @@ var front = {
       shared.shoulderToArmholePitch(points, Path)
     );
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       macro("cutonfold", {
         from: points.cfNeck,
         to: points.cfHips,

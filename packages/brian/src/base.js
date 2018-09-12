@@ -5,7 +5,7 @@ var base = {
     part.render = false;
 
     // prettier-ignore
-    let {measurements, options, store, points, snippets, Point, Snippet, utils, final } = part.shorthand();
+    let {measurements, options, store, points, snippets, Point, Snippet, utils, complete } = part.shorthand();
 
     store.set(
       "shoulderEase",
@@ -113,8 +113,8 @@ var base = {
     // Anchor point for sampling
     points.gridAnchor = points.cbHips;
 
-    // Final?
-    if (final) {
+    // Complete pattern?
+    if (complete) {
       points.title = new Point(
         points.armholePitch.x / 2,
         points.armholePitch.y
