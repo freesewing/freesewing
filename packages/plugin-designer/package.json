@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-designer",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "The plugin for freesewing to facilitate pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
