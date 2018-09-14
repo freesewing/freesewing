@@ -21,24 +21,24 @@ export default {
           if (part.render) {
             for (let pointId in part.points) {
               let point = part.points[pointId];
-              point.attributes.add("id", svg.getId());
-              point.attributes.add("data-point", pointId);
-              point.attributes.add("data-part", partId);
+              point.attributes.set("id", svg.getId());
+              point.attributes.set("data-point", pointId);
+              point.attributes.set("data-part", partId);
               let type =
                 pointId.substr(0, 1) === "_" ? "point-hidden" : "point";
-              let id = svg.getId();
+              let id = "snippet-" + pointId;
               part.snippets[id] = new svg.pattern.Snippet(
                 type,
                 point,
                 `Point ${pointId} in part ${partId}`
               );
-              part.snippets[id].attributes.add(
+              part.snippets[id].attributes.set(
                 "onmouseover",
                 "pointHover(evt)"
               );
-              part.snippets[id].attributes.add("id", id);
-              part.snippets[id].attributes.add("data-point", pointId);
-              part.snippets[id].attributes.add("data-part", partId);
+              part.snippets[id].attributes.set("id", id);
+              part.snippets[id].attributes.set("data-point", pointId);
+              part.snippets[id].attributes.set("data-part", partId);
             }
           }
         }
@@ -59,12 +59,7 @@ export default {
           point,
           `Path ${pathId}: ${type}`
         );
-        snippets[id].attributes.add("onmouseover", "pointHover(evt)");
-        snippets[id].attributes.add("id", id);
-        snippets[id].attributes.add(
-          "data-point",
-          point.attributes.get("data-point")
-        );
+        snippets[id].attributes.set("id", id);
         snippets[id].attributes.add("data-path", pathId);
         snippets[id].attributes.add("data-part", partId);
       };
@@ -80,7 +75,7 @@ export default {
         partId
       ) {
         let path = new Path().move(from).line(to);
-        path.attributes.add("class", "curve-control various stroke-sm");
+        path.attributes.add("class", "curve-control various dotted");
         path.attributes.add("id", id);
         path.attributes.add("data-path", pathId);
         path.attributes.add("data-part", partId);
@@ -135,7 +130,8 @@ export default {
                       current,
                       op.cp1,
                       pathId,
-                      partId
+                      partId,
+                      part
                     );
                     decorateCurveHandles(
                       svg.getId(),
@@ -144,7 +140,8 @@ export default {
                       op.to,
                       op.cp2,
                       pathId,
-                      partId
+                      partId,
+                      part
                     );
                   }
                   current = op.to;
