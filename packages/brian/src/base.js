@@ -32,7 +32,7 @@ var base = {
     );
     points.cbWaist = new Point(
       0,
-      measurements.centerBackNeckToWaist + options.backNeckCutout
+      points.cbNeck.y + measurements.centerBackNeckToWaist
     );
     points.cbHips = new Point(
       0,
