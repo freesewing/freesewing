@@ -37,10 +37,10 @@ export function init(part) {
     /* Length helper */
     store.set('length', measurements.hipsToUpperLeg * store.get('yScale'));
     store.set('riseLength', measurements.hipsToUpperLeg + store.get('rise'));
-    store.set('fullLength', store.get('riseLength') + store.get('legBonus'));
+    store.set('fullLength', store.get('riseLength') + store.get('legBonus') * store.get('yScale'));
 
     /* Height ratio front/inset */
-    store.set('heightInset', store.get('riseLength') * options.heightRatioInset);
+    store.set('heightInset', store.get('riseLength') * options.heightRatioInset + store.get('legBonus') * store.get('yScale'));
     store.set('heightFront', store.get('riseLength') * (1 - options.heightRatioInset));
 
     /* Absolute amount to raise the back */

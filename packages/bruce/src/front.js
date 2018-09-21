@@ -147,7 +147,6 @@ var front = {
         nr: 2,
         title: 'front'
       });
-
       macro('grainline', {
         from: points.dartJoin,
         to: points.topMid
