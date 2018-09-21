@@ -8,7 +8,6 @@ export default {
     "neckCircumference",
     "shoulderSlope",
     "shoulderToShoulder",
-    "hipsCircumference",
     "shoulderToWrist",
     "wristCircumference"
   ],
