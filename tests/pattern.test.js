@@ -168,11 +168,11 @@ it("Should sample models with focus", () => {
   expect(pattern.parts.a.paths.test_1.render).to.equal(true);
   expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
   expect(pattern.parts.a.paths.test_1.attributes.get("class")).to.equal(
-    "sample sample-1 sample-focus"
+    "sample-focus"
   );
   expect(
-    pattern.parts.b.paths.test_2.attributes.get("class")
-  ).to.equalIgnoreSpaces("sample sample-2");
+    pattern.parts.b.paths.test_2.attributes.get("style")
+  ).to.equalIgnoreSpaces("stroke: hsl(165, 100%, 35%);");
 });
 
 it("Should register a hook via on", () => {

@@ -232,7 +232,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   let anchors = {};
   let parts = this.sampleParts();
   let run = 0;
-  let runs = models.length;
+  let runs = Object.keys(models).length;
   for (let l in models) {
     run++;
     this.settings.measurements = models[l];
