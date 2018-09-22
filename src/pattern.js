@@ -1,4 +1,4 @@
-import { macroName, debugStyle, round } from "./utils";
+import { macroName, debugStyle, round, sampleStyle } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
@@ -43,6 +43,8 @@ export default function Pattern(config = false) {
       if (typeof option.pct !== "undefined") this.options[i] = option.pct / 100;
       else if (typeof option.mm !== "undefined") this.options[i] = option.mm;
       else if (typeof option.deg !== "undefined") this.options[i] = option.deg;
+      else if (typeof option.count !== "undefined")
+        this.options[i] = option.count;
       else if (typeof option.dflt !== "undefined")
         this.options[i] = option.dflt;
       else throw "Unknown option type";
@@ -97,7 +99,7 @@ Pattern.prototype.sample = function() {
 
 Pattern.prototype.sampleParts = function() {
   let parts = {};
-  this.settings.quick = true;
+  this.settings.complete = false;
   this.settings.paperless = false;
   this.draft();
   for (let i in this.parts) {
@@ -107,7 +109,13 @@ Pattern.prototype.sampleParts = function() {
   return parts;
 };
 
-Pattern.prototype.sampleRun = function(parts, anchors, l, extraClass = false) {
+Pattern.prototype.sampleRun = function(
+  parts,
+  anchors,
+  run,
+  runs,
+  extraClass = false
+) {
   this.draft();
   for (let i in this.parts) {
     let anchor = false;
@@ -124,16 +132,16 @@ Pattern.prototype.sampleRun = function(parts, anchors, l, extraClass = false) {
       }
     }
     for (let j in this.parts[i].paths) {
-      parts[i].paths[j + "_" + l] = this.parts[i].paths[j]
+      parts[i].paths[j + "_" + run] = this.parts[i].paths[j]
         .clone()
-        .attr("class", "sample sample-" + l, true);
+        .attr("style", sampleStyle(run, runs));
       if (this.parts[i].points.anchor)
-        parts[i].paths[j + "_" + l] = parts[i].paths[j + "_" + l].translate(
+        parts[i].paths[j + "_" + run] = parts[i].paths[j + "_" + run].translate(
           dx,
           dy
         );
       if (extraClass !== false)
-        parts[i].paths[j + "_" + l].attributes.add("class", extraClass);
+        parts[i].paths[j + "_" + run].attributes.add("class", extraClass);
     }
   }
 };
@@ -159,13 +167,13 @@ Pattern.prototype.sampleOption = function(optionName) {
   if (typeof option.pct !== "undefined") factor = 100;
   val = option.min / factor;
   step = (option.max / factor - val) / 9;
-  for (let l = 1; l < 11; l++) {
+  for (let run = 1; run < 11; run++) {
     this.options[optionName] = val;
     this.debug(
       debugStyle("info", "🔬 Sample run"),
       `Sampling option ${optionName} with value ${round(val)}`
     );
-    this.sampleRun(parts, anchors, l);
+    this.sampleRun(parts, anchors, run, 10);
     val += step;
   }
   this.parts = parts;
@@ -177,15 +185,16 @@ Pattern.prototype.sampleListOption = function(optionName) {
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
   let anchors = {};
-  let count = 1;
+  let run = 1;
+  let runs = options.list.length;
   for (let val of option.list) {
     this.options[optionName] = val;
     this.debug(
       debugStyle("info", "🔬 Sample run"),
       `Sampling option ${optionName} with value ${round(val)}`
     );
-    this.sampleRun(parts, anchors, count);
-    count++;
+    this.sampleRun(parts, anchors, run, runs);
+    run++;
   }
   this.parts = parts;
 
@@ -202,13 +211,13 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
   if (val === undefined) throw "Cannot sample a measurement that is undefined";
   let step = val / 50;
   val = val * 0.9;
-  for (let l = 1; l < 11; l++) {
+  for (let run = 1; run < 11; run++) {
     this.settings.measurements[measurementName] = val;
     this.debug(
       debugStyle("info", "🔬 Sample run"),
       `Sampling measurement ${measurementName} with value ${round(val)}`
     );
-    this.sampleRun(parts, anchors, l);
+    this.sampleRun(parts, anchors, run, 10);
     val += step;
   }
   this.parts = parts;
@@ -222,13 +231,14 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
 Pattern.prototype.sampleModels = function(models, focus = false) {
   let anchors = {};
   let parts = this.sampleParts();
-  let count = 0;
+  let run = 0;
+  let runs = models.length;
   for (let l in models) {
-    count++;
+    run++;
     this.settings.measurements = models[l];
     this.debug(debugStyle("info", "🔬 Sample run"), `Sampling model ${l}`);
     let className = l === focus ? "sample-focus" : "";
-    this.sampleRun(parts, anchors, count, className);
+    this.sampleRun(parts, anchors, run, runs, className);
   }
   this.parts = parts;
 

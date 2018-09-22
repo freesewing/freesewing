@@ -328,3 +328,9 @@ export function stretchToScale(stretch) {
 export function round(value) {
   return Math.round(value * 1e2) / 1e2;
 }
+
+export function sampleStyle(run, runs) {
+  let hue = (run - 1) * (330 / runs);
+
+  return `stroke: hsl(${hue}, 100%, 35%);`;
+}
