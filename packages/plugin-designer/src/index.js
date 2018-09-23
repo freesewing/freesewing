@@ -156,7 +156,7 @@ export default {
       decoratePoints(this);
       decoratePaths(this);
       this.debug(
-        { style: "info", text: "🚛 Pattern object" },
+        { style: "info", label: "🚛 Pattern object" },
         "(dumped by designer plugin)",
         this.pattern
       );
