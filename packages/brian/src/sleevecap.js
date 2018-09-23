@@ -131,13 +131,13 @@ function draftSleevecap(part, run) {
 
   // Store sleevecap length
   store.set("sleevecapLength", paths.sleevecap.length());
-  if (run === 1) {
+  if (run === 0) {
     let armholeLength =
       store.get("frontArmholeLength") + store.get("backArmholeLength");
     let sleevecapEase = armholeLength * options.sleevecapEase;
     store.set("sleevecapEase", sleevecapEase);
     store.set("sleevecapTarget", armholeLength + sleevecapEase);
-    debug("Sleevecap ease is", units(sleevecapEase));
+    debug({ style: "info", label: "🗸 Sleevecap ease" }, units(sleevecapEase));
 
     // Uncomment this line to see all sleevecap iterations
     //paths[run] = paths.sleevecap;
@@ -150,21 +150,30 @@ var sleevecap = {
     let {debug, store, units, sa, measurements, options, Point, points, Path, paths } = part.shorthand();
 
     store.set("sleeveFactor", 1);
-    let run = 1;
+    let run = 0;
+    let delta = 0;
     do {
       draftSleevecap(part, run);
-      debug(
-        `Sleevecap draft ${run}, sleevecap delta is ${units(
-          sleevecapDelta(store)
-        )}`
-      );
+      delta = sleevecapDelta(store);
       sleevecapAdjust(store);
       run++;
     } while (
       options.brianFitSleeve === true &&
-      run < 100 &&
+      run < 30 &&
       Math.abs(sleevecapDelta(store)) > 2
     );
+    if (options.brianFitSleeve) {
+      debug(
+        { style: "success", label: "🏁 Sleevecap fitted" },
+        `Target was ${units(store.get("sleevecapTarget"))}, delta of ${units(
+          delta
+        )} reached in ${run} attempts.`
+      );
+    } else
+      debug(
+        { style: "warning", label: "🚫 Not fitting sleevecap" },
+        "(in Brian)"
+      );
 
     // Paths
     paths.sleevecap.attr("class", "fabric");

@@ -14,6 +14,7 @@ export default {
   options: {
     // Constants
     brianFitSleeve: true,
+    brianFitCollar: true,
     collarFactor: 4.8,
 
     // Percentages

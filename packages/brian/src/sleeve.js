@@ -7,8 +7,11 @@ var sleeve = {
 
     // Wrist
     let top = paths.sleevecap.bbox().topLeft.y;
-    debug("Sleevecap height is ", units(Math.abs(top)));
-    debug("Sleeve width is ", units(points.bicepsRight.x * 2));
+    debug({ style: "info", label: "🗸 Sleevecap height" }, units(Math.abs(top)));
+    debug(
+      { style: "info", label: "🗸 Sleevecap width" },
+      units(points.bicepsRight.x * 2)
+    );
     points.centerWrist = new Point(
       0,
       top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)

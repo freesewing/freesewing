@@ -14,17 +14,15 @@ var front = {
     points.armholePitchCp2.x -= deeper;
 
     // Rename cb (center back) to cf (center front)
-    for (let key of ["Neck", "Shoulder", "Armhole", "Waist", "Hips"]) {
+    for (let key of ["Shoulder", "Armhole", "Waist", "Hips"]) {
       points[`cf${key}`] = new Point(
         points[`cb${key}`].x,
         points[`cb${key}`].y
       );
       delete points[`cb${key}`];
     }
-
-    // Adapt neck opening
-    points.cfNeck = points.cfNeck.shift(-90, points.neck.x);
-    points.neckCp2 = points.cfNeck.shift(0, points.neck.x * 0.7);
+    // Front neckline points
+    points.neckCp2 = new Point(points.neckCp2Front.x, points.neckCp2Front.y);
 
     // Seamline
     paths.saBase = shared.saBase("front", points, Path);

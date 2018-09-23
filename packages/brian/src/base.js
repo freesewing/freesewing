@@ -1,11 +1,10 @@
 import freesewing from "freesewing";
+import * as shared from "./shared";
 
 var base = {
   draft: function(part) {
-    part.render = false;
-
     // prettier-ignore
-    let {measurements, options, store, points, snippets, Point, Snippet, utils, complete } = part.shorthand();
+    let {units, debug, measurements, options, store, points, snippets, Point, Snippet, Path, paths, utils, complete } = part.shorthand();
 
     store.set(
       "shoulderEase",
@@ -100,7 +99,7 @@ var base = {
       .shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5)
       .rotate(90, points.shoulder);
 
-    // Neck opening
+    // Neck opening (back)
     points._tmp4 = points.neck
       .shiftTowards(points.shoulder, 10)
       .rotate(-90, points.neck);
@@ -110,8 +109,55 @@ var base = {
       points.cbNeck.y
     );
 
+    // Fit collar
+    points.cfNeck = points.neck.rotate(-90, new Point(0, 0));
+    let target = measurements.neckCircumference * (1 + options.collarEase);
+    let delta = 0;
+    let run = 0;
+    do {
+      run++;
+      points.cfNeck = points.cfNeck.shift(90, delta / 3);
+      points.frontNeckCpEdge = utils.beamsIntersect(
+        points.neck,
+        points.neckCp2,
+        points.cfNeck,
+        new Point(20, points.cfNeck.y)
+      );
+      points.cfNeckCp1 = points.cfNeck.shiftFractionTowards(
+        points.frontNeckCpEdge,
+        0.55
+      );
+      points.neckCp2Front = points.neck.shiftFractionTowards(
+        points.frontNeckCpEdge,
+        0.65
+      );
+      paths.neckOpening = new Path()
+        .move(points.cfNeck)
+        .curve(points.cfNeckCp1, points.neckCp2Front, points.neck)
+        .curve(points.neckCp2, points.cbNeck, points.cbNeck)
+        .attr("class", "dashed stroke-xl various");
+      delta = paths.neckOpening.length() * 2 - target;
+    } while (Math.abs(delta) > 1 && options.brianFitCollar && run < 10);
+    delete paths.neckOpening;
+    if (options.brianFitCollar) {
+      debug(
+        { style: "success", label: "🏁 Collar fitted" },
+        // prettier-ignore
+        `Target was ${units(target)}, delta of ${units(delta)} reached in ${run} attempts.`
+      );
+    } else
+      debug({ style: "warning", label: "🚫 Not fitting collar" }, "(in Brian)");
+
     // Anchor point for sampling
     points.gridAnchor = points.cbHips;
+
+    // Seamline
+    paths.saBase = shared.saBase("back", points, Path);
+    paths.seam = new Path()
+      .move(points.cbNeck)
+      .line(points.cbHips)
+      .join(paths.saBase)
+      .attr("class", "fabric");
 
     // Complete pattern?
     if (complete) {

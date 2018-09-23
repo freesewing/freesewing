@@ -12,7 +12,7 @@ export function saBase(side, points, Path) {
   if (side === "back") {
     path.curve(points.neckCp2, points.cbNeck, points.cbNeck);
   } else {
-    path.curve(points.neckCp2, points.cfNeck, points.cfNeck);
+    path.curve(points.neckCp2, points.cfNeckCp1, points.cfNeck);
   }
 
   return path;
