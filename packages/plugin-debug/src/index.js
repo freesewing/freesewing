@@ -1,12 +1,6 @@
 import { version, name } from "../package.json";
 
 const color = {
-  info: "#FFF",
-  warning: "#FFF",
-  error: "#FFF",
-  success: "#FFF"
-};
-const background = {
   info: "#29ABE0",
   warning: "#F47C3C",
   error: "#d9534f",
@@ -16,7 +10,6 @@ const background = {
 /* Returns an object to style debug output */
 function debugStyle(type, text) {
   let style = `color: ${color[type]};`;
-  style += `background: ${background[type]};`;
   style += "font-weight: 600;";
   style += "padding: 0 5px;";
   style += "border-radius: 3px;";
