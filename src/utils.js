@@ -1,5 +1,4 @@
 import Point from "./point";
-import Attributes from "./attributes";
 import Bezier from "bezier-js";
 
 /** Returns internal hook name for a macro */
