@@ -155,8 +155,11 @@ export default {
       // Decorate pattern
       decoratePoints(this);
       decoratePaths(this);
-      this.debug("plugin-designer | Pattern object");
-      this.debug(this.pattern);
+      this.debug(
+        { style: "info", text: "🚛 Pattern object" },
+        "(dumped by designer plugin)",
+        this.pattern
+      );
       next();
     }
   }
