@@ -33,7 +33,7 @@ export default {
       );
       } else if(typeof d === 'object' && typeof d.style !== 'undefined') {
         console.log(
-          "%c"+d.text,
+          "%c"+d.label,
           debugStyle(d.style),
           e,
           b,
@@ -42,7 +42,7 @@ export default {
       );
       } else {
         console.log(
-          "%cDebug",
+          "%c💡 Debug",
           "color: #dd69dd; font-weight: bold",
           d,
           e,
