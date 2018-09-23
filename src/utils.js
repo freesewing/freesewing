@@ -2,34 +2,6 @@ import Point from "./point";
 import Attributes from "./attributes";
 import Bezier from "bezier-js";
 
-/* Returns an object to style debug output */
-export function debugStyle(type, text) {
-  const color = {
-    info: "#FFF",
-    warning: "#FFF",
-    error: "#FFF",
-    success: "#FFF"
-  };
-  const background = {
-    info: "#29ABE0",
-    warning: "#F47C3C",
-    error: "#d9534f",
-    success: "#4caf50"
-  };
-  let style = new Attributes();
-  style.set("color", color[type]);
-  style.set("background", background[type]);
-  style.set("font-weight", "bold;");
-  style.set("padding", "5px");
-  style.set("border-radius", "10px");
-
-  return {
-    debug: "custom",
-    text,
-    style: style.renderAsCss()
-  };
-}
-
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`;

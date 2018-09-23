@@ -1,4 +1,4 @@
-import { macroName, debugStyle, round, sampleStyle } from "./utils";
+import { macroName, round, sampleStyle } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
@@ -156,7 +156,6 @@ Pattern.prototype.sampleOption = function(optionName) {
   let parts = this.sampleParts();
   let option = this.config.options[optionName];
   if (typeof option.list === "object") {
-    console.log("sampling list");
     return this.sampleListOption(optionName);
   }
   if (typeof option.min === "undefined" || typeof option.max === "undefined") {
@@ -170,7 +169,7 @@ Pattern.prototype.sampleOption = function(optionName) {
   for (let run = 1; run < 11; run++) {
     this.options[optionName] = val;
     this.debug(
-      debugStyle("info", "🔬 Sample run"),
+      { style: "info", label: "🔬 Sample run" },
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -190,7 +189,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
   for (let val of option.list) {
     this.options[optionName] = val;
     this.debug(
-      debugStyle("info", "🔬 Sample run"),
+      { style: "info", label: "🔬 Sample run" },
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, runs);
@@ -214,7 +213,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
   for (let run = 1; run < 11; run++) {
     this.settings.measurements[measurementName] = val;
     this.debug(
-      debugStyle("info", "🔬 Sample run"),
+      { style: "info", label: "🔬 Sample run" },
       `Sampling measurement ${measurementName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -236,7 +235,10 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   for (let l in models) {
     run++;
     this.settings.measurements = models[l];
-    this.debug(debugStyle("info", "🔬 Sample run"), `Sampling model ${l}`);
+    this.debug(
+      { style: "info", label: "🔬 Sample run" },
+      `Sampling model ${l}`
+    );
     let className = l === focus ? "sample-focus" : "";
     this.sampleRun(parts, anchors, run, runs, className);
   }
@@ -276,7 +278,7 @@ Pattern.prototype.on = function(hook, method) {
 
 Pattern.prototype.with = function(plugin) {
   this.debug(
-    debugStyle("success", "🔌 Plugin loaded"),
+    { style: "success", label: "🔌 Plugin loaded" },
     `${plugin.name} v${plugin.version}`
   );
   if (plugin.hooks) this.loadPluginHooks(plugin);

@@ -39,7 +39,7 @@ Part.prototype.macroClosure = function(args) {
       self[macro](args);
     } else {
       self.debug(
-        utils.debugStyle("warning", "🔎 Macro not found"),
+        { style: "warning", label: "🔍 Macro not found" },
         `Macro ${macro.substr(7)} is not registered`
       );
     }
