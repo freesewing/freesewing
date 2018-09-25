@@ -277,7 +277,7 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
-  this.debug("success", "Plugin loaded", `${plugin.name} v${plugin.version}`);
+  this.debug("success", "🔌 Plugin loaded", `${plugin.name} v${plugin.version}`);
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
