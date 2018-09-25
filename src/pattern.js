@@ -170,7 +170,7 @@ Pattern.prototype.sampleOption = function(optionName) {
     this.options[optionName] = val;
     this.debug(
       "info",
-      "Sample run",
+      "🏃🏿‍♀️ Sample run",
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -191,7 +191,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
     this.options[optionName] = val;
     this.debug(
       "info",
-      "Sample run",
+      "🏃🏿‍♀️ Sample run",
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, runs);
@@ -216,7 +216,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
     this.settings.measurements[measurementName] = val;
     this.debug(
       "info",
-      "Sample run",
+      "🏃🏿‍♀️ Sample run",
       `Sampling measurement ${measurementName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -238,7 +238,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   for (let l in models) {
     run++;
     this.settings.measurements = models[l];
-    this.debug("info", "Sample run", `Sampling model ${l}`);
+    this.debug("info", "🏃🏿‍♀️ Sample run", `Sampling model ${l}`);
     let className = l === focus ? "sample-focus" : "";
     this.sampleRun(parts, anchors, run, runs, className);
   }
