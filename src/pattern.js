@@ -169,7 +169,8 @@ Pattern.prototype.sampleOption = function(optionName) {
   for (let run = 1; run < 11; run++) {
     this.options[optionName] = val;
     this.debug(
-      { style: "info", label: "🔬 Sample run" },
+      "info",
+      "Sample run",
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -189,7 +190,8 @@ Pattern.prototype.sampleListOption = function(optionName) {
   for (let val of option.list) {
     this.options[optionName] = val;
     this.debug(
-      { style: "info", label: "🔬 Sample run" },
+      "info",
+      "Sample run",
       `Sampling option ${optionName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, runs);
@@ -213,7 +215,8 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
   for (let run = 1; run < 11; run++) {
     this.settings.measurements[measurementName] = val;
     this.debug(
-      { style: "info", label: "🔬 Sample run" },
+      "info",
+      "Sample run",
       `Sampling measurement ${measurementName} with value ${round(val)}`
     );
     this.sampleRun(parts, anchors, run, 10);
@@ -235,10 +238,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   for (let l in models) {
     run++;
     this.settings.measurements = models[l];
-    this.debug(
-      { style: "info", label: "🔬 Sample run" },
-      `Sampling model ${l}`
-    );
+    this.debug("info", "Sample run", `Sampling model ${l}`);
     let className = l === focus ? "sample-focus" : "";
     this.sampleRun(parts, anchors, run, runs, className);
   }
@@ -277,10 +277,7 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
-  this.debug(
-    { style: "success", label: "🔌 Plugin loaded" },
-    `${plugin.name} v${plugin.version}`
-  );
+  this.debug("success", "Plugin loaded", `${plugin.name} v${plugin.version}`);
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
