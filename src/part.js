@@ -40,7 +40,7 @@ Part.prototype.macroClosure = function(args) {
     } else {
       self.debug(
         "warning",
-        "Macro not found",
+        "🚨 Macro not found",
         `Macro ${macro.substr(7)} is not registered`
       );
     }
