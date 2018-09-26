@@ -13,11 +13,11 @@ export default {
     json(),
     babel({
       exclude: "node_modules/**"
-    }),
-    terser({
-      output: {
-        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-      }
     })
+    //terser({
+    //  output: {
+    //    preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+    //  }
+    //})
   ]
 };
