@@ -3,12 +3,20 @@ import baseCss from "../src/lib/base.css.js";
 import notch from "../src/lib/notch";
 import gridMetric from "../src/lib/grid-metric";
 import gridImperial from "../src/lib/grid-imperial";
-import { version, name } from "../package.json";
+import { version } from "../package.json";
 import plugin from "../dist/index";
 
 let chai = require("chai");
 chai.use(require("chai-string"));
 let expect = chai.expect;
+
+it("Should set the plugin name:version attribute", () => {
+  let pattern = new freesewing.Pattern().with(plugin);
+  pattern.render();
+  expect(pattern.svg.attributes.get("freesewing:plugin-theme")).to.equal(
+    version
+  );
+});
 
 it("Should load base CSS", () => {
   let pattern = new freesewing.Pattern().with(plugin);
