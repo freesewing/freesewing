@@ -42,16 +42,12 @@ let count = 0;
 let pre = function() {
   count += 5;
 };
-let post = function() {
-  count = count * -1;
-};
 
 it("Should attach the preDraft & postDraft hooks", () => {
   count = 0;
   let obj = {
     draft: function() {},
-    pre: pre,
-    post: post
+    pre: pre
   };
   h._hooks = {
     preDraft: [
@@ -70,15 +66,14 @@ it("Should attach the preDraft & postDraft hooks", () => {
   expect(count).to.equal(5);
   expect(h.attach("postDraft", obj)).to.equal(undefined);
   obj.draft();
-  expect(count).to.equal(-5);
+  expect(count).to.equal(10);
 });
 
 it("Should attach the preSample & postSample hooks", () => {
   count = 0;
   let obj = {
     sampleOption: function() {},
-    pre: pre,
-    post: post
+    pre: pre
   };
   h._hooks = {
     preSample: [
@@ -94,18 +89,17 @@ it("Should attach the preSample & postSample hooks", () => {
   };
   expect(h.attach("preSample", obj)).to.equal(undefined);
   obj.sampleOption();
-  expect(count).to.equal(15);
+  expect(count).to.equal(5);
   expect(h.attach("postSample", obj)).to.equal(undefined);
   obj.sampleOption();
-  expect(count).to.equal(-15);
+  expect(count).to.equal(10);
 });
 
 it("Should attach the debug hook", () => {
   count = 0;
   let obj = {
     debug: function() {},
-    pre: pre,
-    post: post
+    pre: pre
   };
   h._hooks = {
     debug: [
