@@ -1,5 +1,5 @@
 import Attributes from "./attributes";
-import * as hooklib from "hooks";
+import * as hooklib from "hooks-fixed";
 
 import { version } from "../package.json";
 

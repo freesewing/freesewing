@@ -3,7 +3,7 @@ import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
-import * as hooklib from "hooks";
+import * as hooklib from "hooks-fixed";
 
 function Part() {
   this.attributes = new Attributes();
