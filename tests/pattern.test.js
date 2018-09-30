@@ -170,15 +170,15 @@ it("Should sample models with focus", () => {
   expect(pattern.parts.a.paths.test_1.attributes.get("class")).to.equal(
     "sample-focus"
   );
-  expect(
-    pattern.parts.b.paths.test_2.attributes.get("style")
-  ).to.equalIgnoreSpaces("stroke: hsl(165, 100%, 35%);");
+  expect(pattern.parts.b.paths.test_2.attributes.get("style")).to.equal(
+    "stroke: hsl(165, 100%, 35%);"
+  );
 });
 
 it("Should register a hook via on", () => {
   let pattern = new freesewing.Pattern();
   let count = 0;
-  pattern.draft = () => {};
+  pattern._draft = () => {};
   pattern.on("preDraft", function(next) {
     count++;
     next();
@@ -190,7 +190,7 @@ it("Should register a hook via on", () => {
 it("Should register a hook from a plugin", () => {
   let pattern = new freesewing.Pattern();
   let count = 0;
-  pattern.draft = () => {};
+  pattern._draft = () => {};
   let plugin = {
     name: "test",
     version: "0.1-test",
