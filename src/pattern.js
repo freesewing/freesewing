@@ -7,7 +7,7 @@ import Svg from "./svg";
 import Hooks from "./hooks";
 import pack from "bin-pack";
 import Store from "./store";
-import * as hooklib from "hooks";
+import * as hooklib from "hooks-fixed";
 
 export default function Pattern(config = false) {
   // width and height properties
@@ -72,12 +72,29 @@ export default function Pattern(config = false) {
   this.Part.prototype.hooks = this.hooks;
 }
 
+/** Method to attach preDraft hooks on */
+Pattern.prototype.preDraft = function() {};
+
+/** Method to attach postDraft hooks on */
+Pattern.prototype.postDraft = function() {};
+
+/**
+ * Calls _draft in the method, and pre- and postDraft
+ */
+Pattern.prototype.draft = function() {
+  this.preDraft();
+  this._draft();
+  this.postDraft();
+
+  return this;
+};
+
 /**
  * @throws Will throw an error when called
  */
-Pattern.prototype.draft = function() {
+Pattern.prototype._draft = function() {
   throw Error(
-    "You have to implement the draft() method in your Pattern instance."
+    "You have to implement the _draft() method in your Pattern instance."
   );
 };
 
@@ -277,7 +294,11 @@ Pattern.prototype.on = function(hook, method) {
 };
 
 Pattern.prototype.with = function(plugin) {
-  this.debug("success", "🔌 Plugin loaded", `${plugin.name} v${plugin.version}`);
+  this.debug(
+    "success",
+    "🔌 Plugin loaded",
+    `${plugin.name} v${plugin.version}`
+  );
   if (plugin.hooks) this.loadPluginHooks(plugin);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
