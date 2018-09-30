@@ -78,6 +78,12 @@ Pattern.prototype.preDraft = function() {};
 /** Method to attach postDraft hooks on */
 Pattern.prototype.postDraft = function() {};
 
+/** Method to attach preSample hooks on */
+Pattern.prototype.preSample = function() {};
+
+/** Method to attach postSample hooks on */
+Pattern.prototype.postSample = function() {};
+
 /**
  * Calls _draft in the method, and pre- and postDraft
  */
@@ -167,6 +173,7 @@ Pattern.prototype.sampleRun = function(
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(optionName) {
+  this.preSample();
   let step, val;
   let factor = 1;
   let anchors = {};
@@ -194,6 +201,7 @@ Pattern.prototype.sampleOption = function(optionName) {
     val += step;
   }
   this.parts = parts;
+  this.postSample();
 
   return this;
 };
@@ -223,6 +231,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
  * Handles measurement sampling
  */
 Pattern.prototype.sampleMeasurement = function(measurementName) {
+  this.preSample();
   let anchors = {};
   let parts = this.sampleParts();
   let val = this.settings.measurements[measurementName];
@@ -240,6 +249,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
     val += step;
   }
   this.parts = parts;
+  this.postSample();
 
   return this;
 };
@@ -248,6 +258,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
  * Handles models sampling
  */
 Pattern.prototype.sampleModels = function(models, focus = false) {
+  this.preSample();
   let anchors = {};
   let parts = this.sampleParts();
   let run = 0;
@@ -260,6 +271,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
     this.sampleRun(parts, anchors, run, runs, className);
   }
   this.parts = parts;
+  this.postSample();
 
   return this;
 };
