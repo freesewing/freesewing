@@ -1,0 +1,54 @@
+{
+  "name": "@freesewing/backend",
+  "version": "0.0.1",
+  "description": "The freesewing.org backend",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
+    "dev": "backpack",
+    "build": "backpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freesewing/backend.git"
+  },
+  "author": "Joost De Cock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/backend/issues"
+  },
+  "homepage": "https://github.com/freesewing/backend#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "chalk": "2.4.1",
+    "cors": "2.8.4",
+    "dateformat": "3.0.3",
+    "express": "4.16.4",
+    "mongoose": "5.3.3",
+    "mongoose-bcrypt": "1.6.0",
+    "mongoose-encryption": "2.0.1",
+    "passport": "0.4.0"
+  },
+  "devDependencies": {
+    "backpack-core": "0.7.0"
+  }
+}
