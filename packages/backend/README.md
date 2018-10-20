@@ -9,7 +9,7 @@
   <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
 </p>
 
-# backend
+# Freesewing backend
 
 [Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing pattern.  
 This is our backend API.
