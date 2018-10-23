@@ -146,6 +146,8 @@ UserSchema.methods.account = function() {
   let account = this.toObject();
   delete account.password;
   delete account.ehash;
+  delete account._ac;
+  delete account._ct;
 
   return account;
 }
