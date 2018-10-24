@@ -10,8 +10,8 @@ userController.login = (req, res) => {
   if (!req.body) return res.sendStatus(400);
   User.findOne({
     $or: [
-      { username: req.body.username },
-      { ehash: ehash(req.body.username) }
+      { username: req.body.username.toLowerCase().trim() },
+      { ehash: ehash(req.body.username.toLowerCase().trim()) }
     ]
   }, (err, user) => {
     if (err) return res.sendStatus(400);
