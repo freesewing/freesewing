@@ -7,7 +7,7 @@ import routes from "./routes";
 
 const app = express();
 
-  // Load middleware
+// Load middleware
 for (let type of Object.keys(middleware)) middleware[type](app);
 
 // Load routes

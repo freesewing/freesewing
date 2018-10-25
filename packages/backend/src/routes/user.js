@@ -60,7 +60,7 @@ export default (app) => {
   /* CRUD endpoints */
   app.get('/account', userController.readAccount); // Read account (own data)
   app.get('/user', userController.readOwnProfile); // Read profile (own data)
-  app.get('/user/:handle', userController.readProfile); // Read profile (own data)
+  app.get('/user/:handle', userController.readProfile); // Read profile (other user's data)
   // Create is a non-authenticated route part of sign-up flow
   app.put('/user', userController.update); // Update
   app.delete('/user', userController.delete); // Delete

@@ -2,6 +2,8 @@ import { User } from "../models";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
 import { log } from "../utils";
+import jwt from "jsonwebtoken";
+import config from "../config";
 
 const userController = {};
 
@@ -20,7 +22,12 @@ userController.login = (req, res) => {
       if (err) return res.sendStatus(400);
       else if (valid) {
         log.info('login', { user, req });
-        user.updateLoginTime(() => res.send(user.account()));
+        let account = user.account();
+        let token = jwt.sign({
+          _id: account._id,
+          handle: account.handle
+        }, config.jwt.secretOrKey);
+        user.updateLoginTime(() => res.send({account,token}));
       } else {
         log.warning('wrongPassword', { user, req });
         return res.sendStatus(401);
