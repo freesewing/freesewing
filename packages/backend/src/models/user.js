@@ -147,6 +147,7 @@ UserSchema.methods.account = function() {
   delete account.password;
   delete account.ehash;
   delete account.pepper;
+  delete account.initial;
   delete account._ac;
   delete account._ct;
 
