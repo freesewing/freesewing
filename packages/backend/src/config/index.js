@@ -8,7 +8,7 @@ export default {
   jwt: {
     secretOrKey: process.env.MONGO_ENC_KEY,
     issuer: process.env.JWT_ISSUER,
-    audience: process.env.JWT_SITE,
+    audience: process.env.JWT_ISSUER,
     expiresIn: "36 days",
 
   },

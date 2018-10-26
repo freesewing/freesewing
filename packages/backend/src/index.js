@@ -1,17 +1,22 @@
 import express from "express";
 import mongoose from "mongoose";
 import chalk from "chalk";
+import passport from "passport";
 import config from "./config";
-import middleware from "./middleware";
+import expressMiddleware from "./middleware/express";
+import passportMiddleware from "./middleware/passport";
 import routes from "./routes";
 
 const app = express();
 
-// Load middleware
-for (let type of Object.keys(middleware)) middleware[type](app);
+// Load Express middleware
+for (let type of Object.keys(expressMiddleware)) expressMiddleware[type](app);
+
+// Load Passport middleware
+for (let type of Object.keys(passportMiddleware)) passportMiddleware[type](passport);
 
 // Load routes
-for (let type of Object.keys(routes)) routes[type](app);
+for (let type of Object.keys(routes)) routes[type](app, passport);
 
 // Connecting to the database
 mongoose.Promise = global.Promise;
@@ -45,7 +50,7 @@ const port = process.env.PORT || 3000;
 
 app.listen(port, err => {
   if (err) {
-    console.error(err);
+    console.error('Error occured', err);
   }
 
   if (__DEV__) {

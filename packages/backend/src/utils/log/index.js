@@ -7,6 +7,7 @@ const now = () => dateFormat(new Date(), "yyyy-mm-dd hh:MM:ss");
 const logWorthy = (msg, data) => {
   let d = {at: now()};
   switch(msg) {
+    case 'ping':
     case 'login':
     case 'wrongPassword':
       d.user = data.user.handle;
