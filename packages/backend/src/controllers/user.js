@@ -1,7 +1,7 @@
-import { User } from "../models";
+import { User, Confirmation } from "../models";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
-import { log } from "../utils";
+import { log, email } from "../utils";
 import jwt from "jsonwebtoken";
 import config from "../config";
 
@@ -58,7 +58,34 @@ UserController.prototype.readAccount = function (req, res) {
  // userController.delete = (req, res) => { }
 
  // // Signup flow
- // userController.signup = (req, res) => { }
+UserController.prototype.signup = (req, res) => {
+  if (!req.body) return res.sendStatus(400);
+  User.findOne({
+    ehash: ehash(req.body.email.toLowerCase().trim())
+  }, (err, user) => {
+    if (err) return res.sendStatus(500);
+    if(user !== null) return res.status(400).send('userExists');
+    else {
+      bcrypt.hash(req.body.password, config.hashing.saltRounds, (err, hash) => {
+        if (err) return res.sendStatus(500);
+        let confirmation = new Confirmation({
+          type: "signup",
+          data: {
+            language: req.body.language,
+            email: req.body.email,
+            password: hash
+          }
+        });
+        confirmation.save(function (err) {
+          if (err) return res.sendStatus(500);
+          log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id });
+          email.signup(req.body.email, req.body.language, confirmation._id);
+          return; res.sendStatus(200);
+        });
+      });
+    }
+  });
+}
  // userController.confirmSignupEmail = (req, res) => { }
  // userController.removeConfirmation = (req, res) => { }
  // userController.resendActivationEmail = (req, res) => { }

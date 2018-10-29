@@ -2,7 +2,7 @@ import dateFormat from "dateformat";
 
 // FIXME: This needs work
 
-const now = () => dateFormat(new Date(), "yyyy-mm-dd hh:MM:ss");
+const now = () => dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss");
 
 const logWorthy = (msg, data) => {
   let d = {at: now()};
@@ -13,6 +13,10 @@ const logWorthy = (msg, data) => {
       d.user = data.user.handle;
       d.from = data.req.ip;
       d.with = data.req.headers['user-agent'];
+      break;
+    case 'signupRequest':
+      d.email = data.email;
+      d.confirmation = data.confirmation;
       break;
   }
 

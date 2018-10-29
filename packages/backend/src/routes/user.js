@@ -14,7 +14,7 @@ export default (app, passport) => {
   /*  Sign-up flow */
 
   // Sign up user
-  //app.post('/signup', userController.signup);
+  app.post('/signup', User.signup);
 
   // Resend user activation email
   //app.post('/resend/activation/email', userController.resendActivationEmail);
