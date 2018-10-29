@@ -14,7 +14,8 @@
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
     "dev": "backpack",
-    "build": "backpack build"
+    "build": "backpack build",
+    "start": "backpack build && pm2 start build/main.js"
   },
   "repository": {
     "type": "git",
