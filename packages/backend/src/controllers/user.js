@@ -17,17 +17,13 @@ UserController.prototype.login = function (req, res) {
   }, (err, user) => {
     if (err) return res.sendStatus(400);
     if(user === null) return res.sendStatus(401);
+    console.log('user is', user.password);
     user.verifyPassword(req.body.password, (err, valid) => {
       if (err) return res.sendStatus(400);
       else if (valid) {
         log.info('login', { user, req });
         let account = user.account();
-        let token = jwt.sign({
-          _id: account._id,
-          handle: account.handle,
-          aud: config.jwt.audience,
-          iss: config.jwt.issuer,
-        }, config.jwt.secretOrKey);
+        let token = getToken(account);
         user.updateLoginTime(() => res.send({account,token}));
       } else {
         log.warning('wrongPassword', { user, req });
@@ -40,12 +36,53 @@ UserController.prototype.login = function (req, res) {
 
 // CRUD basics
 
-//  create (req, res) { }
-UserController.prototype.readAccount = function (req, res) {
+UserController.prototype.create = (req, res) => {
+  if (!req.body) return res.sendStatus(400);
+  Confirmation.findById(req.body.id, (err, confirmation) => {
+    if (err) return res.sendStatus(400);
+    if(confirmation === null) return res.sendStatus(401);
+    let handle = uniqueHandle();
+    let username = "user "+handle;
+    console.log('confirmation is', confirmation);
+    let user = new User({
+      email: confirmation.data.email,
+      initial: confirmation.data.email,
+      ehash: ehash(confirmation.data.email.toLowerCase().trim()),
+      handle,
+      username,
+      password: confirmation.data.password,
+      consent: { profile: true },
+      settings: { language: confirmation.data.language },
+      time: {
+        created: new Date(),
+        login: new Date(),
+      }
+    });
+    user.save(function (err) {
+      if (err) {
+        log.error('accountCreationFailed', user);
+        console.log(err);
+        return res.sendStatus(500);
+      }
+      let account = user.account();
+      log.info('accountCreated', { handle: user.handle });
+      let token = getToken(account);
+      Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
+        return res.send({account,token});
+      });
+    });
+  });
+}
+
+UserController.prototype.readAccount = (req, res) => {
   if (!req.user._id) return res.sendStatus(400);
   User.findById(req.user._id, (err, user) => {
-    log.info('ping', { user, req });
-    res.send({account: user.account()});
+    if(user !== null) {
+      log.info('ping', { user, req });
+      res.send({account: user.account()});
+    } else {
+      return res.sendStatus(400);
+    }
   });
 }
 //  readAccount (req, res) {
@@ -66,22 +103,19 @@ UserController.prototype.signup = (req, res) => {
     if (err) return res.sendStatus(500);
     if(user !== null) return res.status(400).send('userExists');
     else {
-      bcrypt.hash(req.body.password, config.hashing.saltRounds, (err, hash) => {
+      let confirmation = new Confirmation({
+        type: "signup",
+        data: {
+          language: req.body.language,
+          email: req.body.email,
+          password: req.body.password
+        }
+      });
+      confirmation.save(function (err) {
         if (err) return res.sendStatus(500);
-        let confirmation = new Confirmation({
-          type: "signup",
-          data: {
-            language: req.body.language,
-            email: req.body.email,
-            password: hash
-          }
-        });
-        confirmation.save(function (err) {
-          if (err) return res.sendStatus(500);
-          log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id });
-          email.signup(req.body.email, req.body.language, confirmation._id);
-          return; res.sendStatus(200);
-        });
+        log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id });
+        email.signup(req.body.email, req.body.language, confirmation._id);
+        return res.sendStatus(200);
       });
     }
   });
@@ -99,6 +133,14 @@ UserController.prototype.signup = (req, res) => {
  // userController.patronList = (req, res) => { }
  // userController.exportData = (req, res) => { }
 
+const getToken = (account) => {
+  return jwt.sign({
+    _id: account._id,
+    handle: account.handle,
+    aud: config.jwt.audience,
+    iss: config.jwt.issuer,
+  }, config.jwt.secretOrKey);
+}
 
 const clean = (email) => email.toLowerCase().trim();
 
@@ -112,6 +154,28 @@ const passwordMatches = async (password, hash) => {
   let match = await bcrypt.compare(password, hash);
 
   return match;
+}
+
+const newHandle = () => {
+	let handle = "";
+  let possible = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < 5; i++)
+    handle += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return handle;
+}
+
+const uniqueHandle = () => {
+  let handle, exists;
+  do {
+    exists = false;
+    handle = newHandle();
+    User.findOne({ handle: handle }, (err, user) => {
+      if(user !== null) exists = true;
+    });
+  } while (exists !== false);
+
+  return handle;
 }
 
 export default UserController;

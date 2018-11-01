@@ -38,6 +38,7 @@ const UserSchema = new Schema({
     type: String,
     enum: ["user", "moderator", "admin"],
     required: true,
+    default: "user"
   },
   patron: {
     type: Number,
@@ -100,20 +101,6 @@ const UserSchema = new Schema({
     github: String
   }
 },{ timestamps: true });
-
-UserSchema.pre('save', function(next) {
-	if (!this.isNew) next();
-
-	mailer({
-		type: 'welcome',
-		email: this.email
-	})
-	.then(() => { next(); })
-	.catch(err => {
-		logger.error(err);
-		next();
-	});
-});
 
 UserSchema.pre('remove', function(next) {
 	mailer({

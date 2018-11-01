@@ -16,11 +16,8 @@ export default (app, passport) => {
   // Sign up user
   app.post('/signup', User.signup);
 
-  // Resend user activation email
-  //app.post('/resend/activation/email', userController.resendActivationEmail);
-
   // Create account from confirmation / Consent for data processing given
-  //app.post('/user', userController.create);
+  app.post('/user', User.create);
 
   // Remove confirmation / No consent for data processing given
   //app.delete('/remove/confirmation/:token', userController.removeConfirmation);
