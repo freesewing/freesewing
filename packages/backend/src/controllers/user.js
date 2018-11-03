@@ -4,6 +4,10 @@ import bcrypt from "bcryptjs";
 import { log, email } from "../utils";
 import jwt from "jsonwebtoken";
 import config from "../config";
+import formidable from "formidable";
+import sharp from "sharp";
+import path from "path";
+import fs from "fs";
 
 function UserController() { }
 
@@ -32,7 +36,6 @@ UserController.prototype.login = function (req, res) {
     });
   });
 }
-
 
 // CRUD basics
 
@@ -91,8 +94,92 @@ UserController.prototype.readAccount = (req, res) => {
 //  }
  // userController.readOwnProfile = (req, res) => { }
  // userController.readProfile = (req, res) => { }
- // userController.update = (req, res) => { }
- // userController.delete = (req, res) => { }
+UserController.prototype.update = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  User.findById(req.user._id, async (err, user) => {
+    if(err || user === null) return res.sendStatus(400);
+    let data = req.body;
+    if(typeof data.settings !== 'undefined') {
+      user.settings = {
+        ...user.settings,
+        ...data.settings
+      }
+    }
+    if(typeof data.username === 'string') user.username = data.username;
+    if(typeof data.bio === 'string') user.bio = data.bio;
+    if(typeof data.social === 'object') {
+      if(typeof data.social.github === 'string') user.social.github = data.social.github;
+      if(typeof data.social.twitter === 'string') user.social.twitter = data.social.twitter;
+      if(typeof data.social.instagram === 'string') user.social.instagram = data.social.instagram;
+    }
+    // Image upload is a bit different
+    if(req.headers['content-type'].indexOf("multipart/form-data;") !== -1) {
+      let type, form;
+      form = new formidable.IncomingForm();
+      form.parse(req, (err, fields, files) => {
+        console.log('form parsed');
+        saveAvatar(files.picture, user.handle);
+        user.picture = user.handle+"."+imageType(files.picture.type);
+        return saveAndReturnAccount(res, user);
+        })
+    } else return saveAndReturnAccount(res, user);
+  })
+}
+
+function saveAndReturnAccount(res,user) {
+  user.save(function (err) {
+    if (err) {
+      log.error('accountUpdateFailed', user);
+      console.log(err);
+      return res.sendStatus(500);
+    }
+    return res.send({account: user.account()});
+  })
+}
+
+function saveAvatar(picture, handle) {
+    console.log('saving avatar');
+    let type = imageType(picture.type);
+    let file = avatarPath("l", handle, type);
+    fs.mkdir(userStoragePath(handle), {recursive: true}, (err) => {
+      if(err) log.error("mkdirFailed", err);
+      for(let size of Object.keys(config.avatar.sizes)) {
+        sharp(picture.path)
+          .resize(config.avatar.sizes[size], config.avatar.sizes[size])
+          .toFile(avatarPath(size, handle, type), (err, info) => {
+            if(err) log.error("avatarNotSaved", err);
+            //else log.info("avatarSaved", info);
+          });
+      }
+    });
+}
+
+function userStoragePath(handle) {
+  return path.join(
+      config.storage,
+      handle.substring(0,1),
+      handle);
+}
+
+function avatarPath(size, handle, ext, type="user") {
+ let dir = userStoragePath(handle);
+ if(size === "l") return path.join(dir, handle+"."+ext);
+ else return path.join(dir, size+"-"+handle+"."+ext);
+}
+
+function imageType(contentType) {
+  if (contentType === "image/png") return "png";
+  if (contentType === "image/jpeg") return "jpg";
+  if (contentType === "image/gif") return "gif";
+  if (contentType === "image/bmp") return "bmp";
+  if (contentType === "image/webp") return "webp";
+}
+
+
+
+
+
+// userController.delete = (req, res) => { }
 
  // // Signup flow
 UserController.prototype.signup = (req, res) => {

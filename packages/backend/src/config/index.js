@@ -1,5 +1,13 @@
 export default {
   website: process.env.FS_SITE,
+  avatar: {
+    sizes: {
+      l: 1000,
+      m: 500,
+      s: 250,
+      xs: 100
+    }
+  },
   db: {
     uri: process.env.FS_MONGO_URI || 'mongodb://localhost/freesewing',
   },
@@ -22,5 +30,6 @@ export default {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
 
-  }
+  },
+  storage: process.env.FS_STORAGE,
 }

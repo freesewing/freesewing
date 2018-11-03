@@ -126,11 +126,12 @@ UserSchema.plugin(encrypt, {
     'social.instagram',
     'social.github'
   ],
-  decryptPostSave: false
+  decryptPostSave: true
 });
 
 UserSchema.methods.account = function() {
   let account = this.toObject();
+  console.log(account);
   delete account.password;
   delete account.ehash;
   delete account.pepper;

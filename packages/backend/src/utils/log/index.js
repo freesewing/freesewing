@@ -18,6 +18,9 @@ const logWorthy = (msg, data) => {
       d.email = data.email;
       d.confirmation = data.confirmation;
       break;
+    default:
+      d.data = data;
+      break;
   }
 
   return d;

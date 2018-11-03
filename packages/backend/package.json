@@ -44,13 +44,15 @@
     "cors": "2.8.4",
     "dateformat": "3.0.3",
     "express": "4.16.4",
+    "formidable": "1.2.1",
     "jsonwebtoken": "8.3.0",
     "mongoose": "5.3.3",
     "mongoose-bcrypt": "1.6.0",
     "mongoose-encryption": "2.0.1",
     "nodemailer": "4.6.8",
     "passport": "0.4.0",
-    "passport-jwt": "4.0.0"
+    "passport-jwt": "4.0.0",
+    "sharp": "0.21.0"
   },
   "devDependencies": {
     "backpack-core": "0.7.0"
