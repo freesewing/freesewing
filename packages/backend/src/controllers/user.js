@@ -21,7 +21,6 @@ UserController.prototype.login = function (req, res) {
   }, (err, user) => {
     if (err) return res.sendStatus(400);
     if(user === null) return res.sendStatus(401);
-    console.log('user is', user.password);
     user.verifyPassword(req.body.password, (err, valid) => {
       if (err) return res.sendStatus(400);
       else if (valid) {
@@ -45,8 +44,7 @@ UserController.prototype.create = (req, res) => {
     if (err) return res.sendStatus(400);
     if(confirmation === null) return res.sendStatus(401);
     let handle = uniqueHandle();
-    let username = "user "+handle;
-    console.log('confirmation is', confirmation);
+    let username = "user-"+handle;
     let user = new User({
       email: confirmation.data.email,
       initial: confirmation.data.email,
@@ -95,6 +93,7 @@ UserController.prototype.readAccount = (req, res) => {
  // userController.readOwnProfile = (req, res) => { }
  // userController.readProfile = (req, res) => { }
 UserController.prototype.update = (req, res) => {
+  var async = 0;
   if (!req.user._id) return res.sendStatus(400);
   User.findById(req.user._id, async (err, user) => {
     if(err || user === null) return res.sendStatus(400);
@@ -112,28 +111,62 @@ UserController.prototype.update = (req, res) => {
       if(typeof data.social.twitter === 'string') user.social.twitter = data.social.twitter;
       if(typeof data.social.instagram === 'string') user.social.instagram = data.social.instagram;
     }
+
+    // Below are async ops, need to watch out when to save
+
+    if(typeof data.newPassword === 'string' && typeof data.currentPassword === 'string') {
+      user.verifyPassword(data.currentPassword, (err, valid) => {
+        if (err) return res.sendStatus(400);
+        else {
+          if (!valid) return res.sendStatus(403);
+          user.password = data.newPassword;
+          return saveAndReturnAccount(res, user);
+        }
+      });
+    }
+
     // Image upload is a bit different
-    if(req.headers['content-type'].indexOf("multipart/form-data;") !== -1) {
+    else if(req.headers['content-type'].indexOf("multipart/form-data;") !== -1) {
       let type, form;
       form = new formidable.IncomingForm();
       form.parse(req, (err, fields, files) => {
-        console.log('form parsed');
         saveAvatar(files.picture, user.handle);
         user.picture = user.handle+"."+imageType(files.picture.type);
         return saveAndReturnAccount(res, user);
         })
-    } else return saveAndReturnAccount(res, user);
-  })
+    }
+
+    // Email change requires confirmation
+    else if(typeof data.email === 'string' && data.email !== user.email) {
+      let confirmation = new Confirmation({
+        type: "emailchange",
+        data: {
+          language: user.settings.language,
+          email: {
+            new: req.body.email,
+            current: user.email
+          }
+        }
+      });
+      confirmation.save(function (err) {
+        if (err) return res.sendStatus(500);
+        log.info('emailchangeRequest', { newEmail: req.body.email, confirmation: confirmation._id });
+        email.emailchange(req.body.email, user.email, user.settings.language, confirmation._id);
+        return saveAndReturnAccount(res, user);
+      });
+    }
+
+    else return saveAndReturnAccount(res, user);
+  });
 }
 
 function saveAndReturnAccount(res,user) {
-  user.save(function (err) {
+  user.save(function (err, updatedUser) {
     if (err) {
-      log.error('accountUpdateFailed', user);
-      console.log(err);
+      log.error('accountUpdateFailed', updatedUser);
       return res.sendStatus(500);
     }
-    return res.send({account: user.account()});
+    return res.send({account: updatedUser.account()});
   })
 }
 
@@ -173,6 +206,18 @@ function imageType(contentType) {
   if (contentType === "image/gif") return "gif";
   if (contentType === "image/bmp") return "bmp";
   if (contentType === "image/webp") return "webp";
+}
+
+UserController.prototype.isUsernameAvailable = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  let username = req.body.username.toLowerCase().trim();
+  if (username === "") return res.sendStatus(400);
+  User.findOne({ username: username }, (err, user) => {
+    if (err) return res.sendStatus(400);
+    if(user === null) return res.sendStatus(200);
+    if(user._id+"" === req.user._id) return res.sendStatus(200);
+    else return res.sendStatus(400);
+  });
 }
 
 

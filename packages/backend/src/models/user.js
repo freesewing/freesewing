@@ -61,7 +61,8 @@ const UserSchema = new Schema({
   },
   password: {
     type: String,
-    required: true
+    required: true,
+    bcrypt: true
   },
   settings: {
     language: {
@@ -131,8 +132,7 @@ UserSchema.plugin(encrypt, {
 
 UserSchema.methods.account = function() {
   let account = this.toObject();
-  console.log(account);
-  delete account.password;
+  //delete account.password;
   delete account.ehash;
   delete account.pepper;
   delete account.initial;

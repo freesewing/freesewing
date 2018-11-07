@@ -73,6 +73,9 @@ export default (app, passport) => {
 
   // Export data
   //app.get('/export', userController.exportData);
+
+  // Check whether username is available
+  app.post('/available/username', passport.authenticate('jwt', {session: false }), User.isUsernameAvailable); // Update
 }
 
 

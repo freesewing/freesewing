@@ -73,4 +73,37 @@ email.signup = (recipient, language, id) => {
   });
 }
 
+email.emailchange = (newAddress, currentAddress, language, id) => {
+  console.log('in email change');
+  let html = loadTemplate("emailchange", "html", language);
+  let text = loadTemplate("emailchange", "text", language);
+  let from = [
+    '__emailchangeActionLink__',
+    '__headerOpeningLine__',
+    '__hiddenIntro__',
+    '__footerWhy__',
+  ];
+  let to = [
+    `${config.website}/${language}/confirm/${id}`,
+    i18n[language].emailchangeHeaderOpeningLine,
+    i18n[language].emailchangeHiddenIntro,
+    i18n[language].emailchangeWhy,
+  ];
+  html = replace(html, from, to);
+  text = replace(text, from, to);
+
+	let options = {
+    from: `"${i18n[language].joostFromFreesewing}" <info@freesewing.org>`,
+    to: newAddress,
+    cc: currentAddress,
+    subject: i18n[language].emailchangeSubject,
+    text,
+    html
+  };
+	transporter.sendMail(options, (error, info) => {
+    if (error) return console.log(error);
+		console.log('Message sent', info);
+  });
+}
+
 export default email;
