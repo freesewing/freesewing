@@ -1,5 +1,7 @@
 export default {
   website: process.env.FS_SITE,
+  static: process.env.FS_STATIC,
+  storage: process.env.FS_STORAGE,
   avatar: {
     sizes: {
       l: 1000,
@@ -30,6 +32,5 @@ export default {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
 
-  },
-  storage: process.env.FS_STORAGE,
+  }
 }

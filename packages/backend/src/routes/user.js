@@ -74,8 +74,8 @@ export default (app, passport) => {
   app.put('/user', passport.authenticate('jwt', {session: false }), User.update); // Update
   //app.delete('/user', userController.delete); // Delete
 
-  // Export data
-  //app.get('/export', userController.exportData);
+// Export data
+app.get('/export', passport.authenticate('jwt', { session: false }), User.export);
 
   // Check whether username is available
   app.post('/available/username', passport.authenticate('jwt', {session: false }), User.isUsernameAvailable); // Update

@@ -11,6 +11,7 @@ const logWorthy = (msg, data) => {
     case 'login':
     case 'wrongPassword':
     case 'passwordSet':
+    case 'dataExport':
       d.user = data.user.handle;
       d.from = data.req.ip;
       d.with = data.req.headers['user-agent'];

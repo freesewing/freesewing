@@ -8,6 +8,7 @@ import formidable from "formidable";
 import sharp from "sharp";
 import path from "path";
 import fs from "fs";
+import Zip from "jszip";
 
 function UserController() { }
 
@@ -183,7 +184,6 @@ function saveAndReturnAccount(res,user) {
 }
 
 function saveAvatar(picture, handle) {
-    console.log('saving avatar');
     let type = imageType(picture.type);
     let file = avatarPath("l", handle, type);
     fs.mkdir(userStoragePath(handle), {recursive: true}, (err) => {
@@ -204,6 +204,13 @@ function userStoragePath(handle) {
       config.storage,
       handle.substring(0,1),
       handle);
+}
+
+function temporaryStoragePath(dir) {
+  return path.join(
+      config.storage,
+      "tmp",
+      dir);
 }
 
 function avatarPath(size, handle, ext, type="user") {
@@ -323,7 +330,28 @@ UserController.prototype.setPassword = (req, res) => {
 
  // // Other
  // userController.patronList = (req, res) => { }
- // userController.exportData = (req, res) => { }
+
+UserController.prototype.export = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  User.findById(req.user._id, (err, user) => {
+    if(user === null) return res.sendStatus(400);
+    let dir = createTempDir();
+    if(!dir) return res.sendStatus(500);
+    let zip = new Zip();
+    zip.file("account.json", JSON.stringify(user.export(), null, 2));
+    zip.generateAsync({
+      type: "uint8array",
+      comment: "freesewing.org",
+      streamFiles: true
+		}).then(function(data) {
+      let file = path.join(dir, "export.zip");
+      fs.writeFile(file, data, (err) => {
+        log.info('dataExport', { user, req });
+        return res.send({export: uri(file)});
+      });
+    });
+  });
+}
 
 const getToken = (account) => {
   return jwt.sign({
@@ -348,10 +376,10 @@ const passwordMatches = async (password, hash) => {
   return match;
 }
 
-const newHandle = () => {
+const newHandle = (length = 5) => {
 	let handle = "";
   let possible = "abcdefghijklmnopqrstuvwxyz";
-  for (let i = 0; i < 5; i++)
+  for (let i = 0; i < length; i++)
     handle += possible.charAt(Math.floor(Math.random() * possible.length));
 
   return handle;
@@ -369,5 +397,19 @@ const uniqueHandle = () => {
 
   return handle;
 }
+
+const createTempDir = () => {
+  let path = temporaryStoragePath(newHandle(10));
+  fs.mkdir(path, {recursive: true}, (err) => {
+    if(err) {
+      log.error("mkdirFailed", err);
+      path = false;
+    }
+  });
+
+  return path;
+}
+
+const uri = path => config.static+path.substring(config.storage.length);
 
 export default UserController;

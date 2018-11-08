@@ -132,7 +132,7 @@ UserSchema.plugin(encrypt, {
 
 UserSchema.methods.account = function() {
   let account = this.toObject();
-  //delete account.password;
+  delete account.password;
   delete account.ehash;
   delete account.pepper;
   delete account.initial;
@@ -140,6 +140,17 @@ UserSchema.methods.account = function() {
   delete account._ct;
 
   return account;
+}
+
+UserSchema.methods.export = function() {
+  let exported = this.toObject();
+  delete exported.password;
+  delete exported.ehash;
+  delete exported.pepper;
+  delete exported._ac;
+  delete exported._ct;
+
+  return exported;
 }
 
 UserSchema.methods.updateLoginTime = function(callback) {

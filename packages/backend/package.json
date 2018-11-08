@@ -46,6 +46,7 @@
     "express": "4.16.4",
     "formidable": "1.2.1",
     "jsonwebtoken": "8.3.0",
+    "jszip": "3.1.5",
     "mongoose": "5.3.3",
     "mongoose-bcrypt": "1.6.0",
     "mongoose-encryption": "2.0.1",
