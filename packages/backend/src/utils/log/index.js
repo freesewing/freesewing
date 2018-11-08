@@ -10,6 +10,7 @@ const logWorthy = (msg, data) => {
     case 'ping':
     case 'login':
     case 'wrongPassword':
+    case 'passwordSet':
       d.user = data.user.handle;
       d.from = data.req.ip;
       d.with = data.req.headers['user-agent'];

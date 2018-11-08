@@ -16,7 +16,7 @@ UserController.prototype.login = function (req, res) {
   User.findOne({
     $or: [
       { username: req.body.username.toLowerCase().trim() },
-      { ehash: ehash(req.body.username.toLowerCase().trim()) }
+      { ehash: ehash(req.body.username) }
     ]
   }, (err, user) => {
     if (err) return res.sendStatus(400);
@@ -48,7 +48,7 @@ UserController.prototype.create = (req, res) => {
     let user = new User({
       email: confirmation.data.email,
       initial: confirmation.data.email,
-      ehash: ehash(confirmation.data.email.toLowerCase().trim()),
+      ehash: ehash(confirmation.data.email),
       handle,
       username,
       password: confirmation.data.password,
@@ -138,22 +138,34 @@ UserController.prototype.update = (req, res) => {
 
     // Email change requires confirmation
     else if(typeof data.email === 'string' && data.email !== user.email) {
-      let confirmation = new Confirmation({
-        type: "emailchange",
-        data: {
-          language: user.settings.language,
-          email: {
-            new: req.body.email,
-            current: user.email
+      if(typeof data.confirmation === 'string') {
+        Confirmation.findById(req.body.confirmation, (err, confirmation) => {
+          if (err) return res.sendStatus(400);
+          if(confirmation === null) return res.sendStatus(401);
+          if(confirmation.data.email.new === req.body.email) {
+            user.ehash = ehash(req.body.email);
+            user.email = req.body.email;
+            return saveAndReturnAccount(res, user);
+          } else return res.sendStatus(400);
+        });
+      } else {
+        let confirmation = new Confirmation({
+          type: "emailchange",
+          data: {
+            language: user.settings.language,
+            email: {
+              new: req.body.email,
+              current: user.email
+            }
           }
-        }
-      });
-      confirmation.save(function (err) {
-        if (err) return res.sendStatus(500);
-        log.info('emailchangeRequest', { newEmail: req.body.email, confirmation: confirmation._id });
-        email.emailchange(req.body.email, user.email, user.settings.language, confirmation._id);
-        return saveAndReturnAccount(res, user);
-      });
+        });
+        confirmation.save(function (err) {
+          if (err) return res.sendStatus(500);
+          log.info('emailchangeRequest', { newEmail: req.body.email, confirmation: confirmation._id });
+          email.emailchange(req.body.email, user.email, user.settings.language, confirmation._id);
+          return saveAndReturnAccount(res, user);
+        });
+      }
     }
 
     else return saveAndReturnAccount(res, user);
@@ -230,7 +242,7 @@ UserController.prototype.isUsernameAvailable = (req, res) => {
 UserController.prototype.signup = (req, res) => {
   if (!req.body) return res.sendStatus(400);
   User.findOne({
-    ehash: ehash(req.body.email.toLowerCase().trim())
+    ehash: ehash(req.body.email)
   }, (err, user) => {
     if (err) return res.sendStatus(500);
     if(user !== null) return res.status(400).send('userExists');
@@ -258,8 +270,56 @@ UserController.prototype.signup = (req, res) => {
 
  // // Reset/recover/change email
  // userController.recoverPassword = (req, res) => { }
- // userController.resetPassword = (req, res) => { }
- // userController.confirmChangedEmail = (req, res) => { }
+UserController.prototype.resetPassword = (req, res) => {
+  if (!req.body) return res.sendStatus(400);
+  User.findOne({
+    $or: [
+      { username: req.body.username.toLowerCase().trim() },
+      { ehash: ehash(req.body.username) }
+    ]
+  }, (err, user) => {
+    if (err) return res.sendStatus(400);
+    if(user === null) return res.sendStatus(401);
+    let confirmation = new Confirmation({
+      type: "passwordreset",
+      data: {
+        handle: user.handle,
+      }
+    });
+    confirmation.save(function (err) {
+      if (err) return res.sendStatus(500);
+      log.info('passwordresetRequest', { user: user.handle, confirmation: confirmation._id });
+      email.passwordreset(user.email, user.settings.language, confirmation._id);
+      return res.sendStatus(200);
+    });
+  });
+}
+
+UserController.prototype.setPassword = (req, res) => {
+  if (!req.body) return res.sendStatus(400);
+  Confirmation.findById(req.body.confirmation, (err, confirmation) => {
+    if (err) return res.sendStatus(400);
+    if(confirmation === null) return res.sendStatus(401);
+      User.findOne({ handle: req.body.handle }, (err, user) => {
+        if (err) return res.sendStatus(400);
+        if(user === null) return res.sendStatus(401);
+        if(confirmation.type === 'passwordreset' && confirmation.data.handle === user.handle) {
+          user.password = req.body.password;
+          user.save(function (err) {
+            log.info('passwordSet', { user, req });
+            let account = user.account();
+            let token = getToken(account);
+            user.updateLoginTime(() => res.send({account,token}));
+          })
+        } else return res.sendStatus(401);
+    })
+  })
+
+  return;
+}
+
+
+// userController.confirmChangedEmail = (req, res) => { }
 
  // // Other
  // userController.patronList = (req, res) => { }

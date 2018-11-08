@@ -21,5 +21,13 @@ export default {
   emailchangeSubject: "Please confirm your new E-mail address",
   emailchangeTitle: "Please confirm your new E-mail address",
   emailchangeWhy: "You received this E-mail because you changed the E-mail address linked to account on freesewing.org",
+
+  passwordresetActionText: "Re-gain access to your account",
+  passwordresetCopy1: "You forgot your password for your account at <b>freesewing.org</b>.<br><br>Click click the link below to reset your password:",
+  passwordresetHeaderOpeningLine: "Don't worry, these things happen to all of us",
+  passwordresetHiddenIntro: "Re-gain access to your account",
+  passwordresetSubject: "Re-gain access to your account on freesewing.org",
+  passwordresetTitle: "Reset your password, and re-gain access to your account",
+  passwordresetWhy: "You received this E-mail because you requested to reset your password on freesewing.org",
 };
 

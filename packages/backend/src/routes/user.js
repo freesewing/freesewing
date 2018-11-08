@@ -32,7 +32,10 @@ export default (app, passport) => {
   //app.post('/recover/password', userController.recoverPassword);
 
   // Reset user password
-  //app.post('/reset/password', userController.resetPassword);
+  app.post('/reset/password', User.resetPassword);
+
+  // Set user password after reset
+  app.post('/set/password', User.setPassword);
 
 
   /* Email confirmation endpoints */

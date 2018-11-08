@@ -10,7 +10,7 @@ const ConfirmationSchema = new Schema({
   },
   type: {
     type: String,
-    enum: ["signup", "emailchange"],
+    enum: ["signup", "emailchange", "passwordreset"],
     required: true,
   },
   data: {}

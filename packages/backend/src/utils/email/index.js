@@ -106,4 +106,35 @@ email.emailchange = (newAddress, currentAddress, language, id) => {
   });
 }
 
+email.passwordreset = (recipient, language, id) => {
+  let html = loadTemplate("passwordreset", "html", language);
+  let text = loadTemplate("passwordreset", "text", language);
+  let from = [
+    '__passwordresetActionLink__',
+    '__headerOpeningLine__',
+    '__hiddenIntro__',
+    '__footerWhy__',
+  ];
+  let to = [
+    `${config.website}/${language}/confirm/${id}`,
+    i18n[language].passwordresetHeaderOpeningLine,
+    i18n[language].passwordresetHiddenIntro,
+    i18n[language].passwordresetWhy,
+  ];
+  html = replace(html, from, to);
+  text = replace(text, from, to);
+
+	let options = {
+    from: `"${i18n[language].joostFromFreesewing}" <info@freesewing.org>`,
+    to: recipient,
+    subject: i18n[language].passwordresetSubject,
+    text,
+    html
+  };
+	transporter.sendMail(options, (error, info) => {
+    if (error) return console.log(error);
+		console.log('Message sent', info);
+  });
+}
+
 export default email;
