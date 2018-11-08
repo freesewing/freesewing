@@ -337,17 +337,20 @@ UserController.prototype.export = (req, res) => {
     if(user === null) return res.sendStatus(400);
     let dir = createTempDir();
     if(!dir) return res.sendStatus(500);
-    let zip = new Zip();
-    zip.file("account.json", JSON.stringify(user.export(), null, 2));
-    zip.generateAsync({
-      type: "uint8array",
-      comment: "freesewing.org",
-      streamFiles: true
-		}).then(function(data) {
-      let file = path.join(dir, "export.zip");
-      fs.writeFile(file, data, (err) => {
-        log.info('dataExport', { user, req });
-        return res.send({export: uri(file)});
+    let avatar = fs.readFile(path.join(user.storagePath(), user.picture), (err, data) => {
+      let zip = new Zip();
+      zip.file("account.json", JSON.stringify(user.export(), null, 2));
+      zip.file(user.picture, data);
+      zip.generateAsync({
+        type: "uint8array",
+        comment: "freesewing.org",
+        streamFiles: true
+		  }).then(function(data) {
+        let file = path.join(dir, "export.zip");
+        fs.writeFile(file, data, (err) => {
+          log.info('dataExport', { user, req });
+          return res.send({export: uri(file)});
+        });
       });
     });
   });

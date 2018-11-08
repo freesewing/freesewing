@@ -3,6 +3,7 @@ import bcrypt from 'mongoose-bcrypt';
 import { email, log } from "../utils";
 import encrypt from 'mongoose-encryption';
 import config from "../config";
+import path from "path";
 
 const UserSchema = new Schema({
   email: {
@@ -158,6 +159,26 @@ UserSchema.methods.updateLoginTime = function(callback) {
   this.save(function(err, user) {
     return callback();
   });
+}
+
+UserSchema.methods.storagePath = function() {
+  return path.join(
+    config.storage,
+    this.handle.substring(0,1),
+    this.handle
+  );
+}
+
+UserSchema.methods.avatarUri = function(size = "l") {
+  let prefix = (size === "l") ? "" : size+"-";
+  return config.static
+    +"/"
+    +this.handle.substring(0,1)
+    +"/"
+    +this.handle
+    +"/"
+    +prefix
+    +this.picture;
 }
 
 export default mongoose.model('User', UserSchema);
