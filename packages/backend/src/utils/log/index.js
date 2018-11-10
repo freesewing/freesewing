@@ -20,6 +20,12 @@ const logWorthy = (msg, data) => {
       d.email = data.email;
       d.confirmation = data.confirmation;
       break;
+    case 'accountRemovalFailed':
+      d.err = data.err;
+      d.user = data.user.handle;
+      d.from = data.req.ip;
+      d.with = data.req.headers['user-agent'];
+      break;
     default:
       d.data = data;
       break;

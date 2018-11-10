@@ -105,10 +105,7 @@ const UserSchema = new Schema({
 },{ timestamps: true });
 
 UserSchema.pre('remove', function(next) {
-	mailer({
-		type: 'goodbye',
-		email: this.email
-	})
+	email.goodbye(this.email, this.settings.language)
 	.then(() => { next(); })
 	.catch(err => {
 		logger.error(err);
@@ -139,6 +136,12 @@ UserSchema.methods.account = function() {
   delete account.initial;
   delete account._ac;
   delete account._ct;
+  account.pictureUris = {
+    l: this.avatarUri(),
+    m: this.avatarUri("m"),
+    s: this.avatarUri("s"),
+    xs: this.avatarUri("xs"),
+  }
 
   return account;
 }

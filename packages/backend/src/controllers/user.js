@@ -9,6 +9,7 @@ import sharp from "sharp";
 import path from "path";
 import fs from "fs";
 import Zip from "jszip";
+import rimraf from "rimraf";
 
 function UserController() { }
 
@@ -25,6 +26,7 @@ UserController.prototype.login = function (req, res) {
     user.verifyPassword(req.body.password, (err, valid) => {
       if (err) return res.sendStatus(400);
       else if (valid) {
+        if(user.status !== "active") res.sendStatus(403);
         log.info('login', { user, req });
         let account = user.account();
         let token = getToken(account);
@@ -111,6 +113,12 @@ UserController.prototype.update = (req, res) => {
       if(typeof data.social.github === 'string') user.social.github = data.social.github;
       if(typeof data.social.twitter === 'string') user.social.twitter = data.social.twitter;
       if(typeof data.social.instagram === 'string') user.social.instagram = data.social.instagram;
+    }
+    if(typeof data.consent === 'object') {
+      user.consent = {
+        ...user.consent,
+        ...data.consent
+      }
     }
 
     // Below are async ops, need to watch out when to save
@@ -285,7 +293,10 @@ UserController.prototype.resetPassword = (req, res) => {
       { ehash: ehash(req.body.username) }
     ]
   }, (err, user) => {
-    if (err) return res.sendStatus(400);
+    if (err) {
+      console.log(err);
+      return res.sendStatus(400);
+    }
     if(user === null) return res.sendStatus(401);
     let confirmation = new Confirmation({
       type: "passwordreset",
@@ -351,6 +362,43 @@ UserController.prototype.export = (req, res) => {
           log.info('dataExport', { user, req });
           return res.send({export: uri(file)});
         });
+      });
+    });
+  });
+}
+
+/** restrict processing of data, aka freeze account */
+UserController.prototype.restrict = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  User.findById(req.user._id, (err, user) => {
+    if(user === null) return res.sendStatus(400);
+      user.status = "frozen";
+      user.save(function (err) {
+        if (err) {
+          log.error('accountFreezeFailed', user);
+          return res.sendStatus(500);
+        }
+        return res.sendStatus(200);
+    });
+  });
+}
+
+/** Remove account */
+UserController.prototype.remove = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  User.findById(req.user._id, (err, user) => {
+    if(user === null) return res.sendStatus(400);
+    rimraf(user.storagePath(), (err) => {
+      if(err) {
+        console.log('rimraf', err);
+        log.error('accountRemovalFailed', {err, user, req});
+        return res.sendStatus(500);
+      }
+      user.remove((err, usr) => {
+        if(err !== null) {
+          log.error('accountRemovalFailed', {err, user, req});
+          return res.sendStatus(500);
+        } else return res.sendStatus(200);
       });
     });
   });

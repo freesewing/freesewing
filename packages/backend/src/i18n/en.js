@@ -29,5 +29,12 @@ export default {
   passwordresetSubject: "Re-gain access to your account on freesewing.org",
   passwordresetTitle: "Reset your password, and re-gain access to your account",
   passwordresetWhy: "You received this E-mail because you requested to reset your password on freesewing.org",
+
+  goodbyeCopy1: "If you'd like to share why you're leaving, you can reply to this message.<br>From our side, we won't bother you again.",
+  goodbyeHeaderOpeningLine: "Just know that you can always come back",
+  goodbyeHiddenIntro: "Thank you for giving freesewing a chance",
+  goodbyeSubject: "Farewell 👋",
+  goodbyeTitle: "Thank you for giving freesewing a chance",
+  goodbyeWhy: "You received this E-mail as a final adieu after removing your account on freesewing.org",
 };
 

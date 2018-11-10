@@ -74,7 +74,6 @@ email.signup = (recipient, language, id) => {
 }
 
 email.emailchange = (newAddress, currentAddress, language, id) => {
-  console.log('in email change');
   let html = loadTemplate("emailchange", "html", language);
   let text = loadTemplate("emailchange", "text", language);
   let from = [
@@ -134,6 +133,36 @@ email.passwordreset = (recipient, language, id) => {
 	transporter.sendMail(options, (error, info) => {
     if (error) return console.log(error);
 		console.log('Message sent', info);
+  });
+}
+
+email.goodbye = async (recipient, language) => {
+  let html = loadTemplate("goodbye", "html", language);
+  let text = loadTemplate("goodbye", "text", language);
+  let from = [
+    '__headerOpeningLine__',
+    '__hiddenIntro__',
+    '__footerWhy__',
+  ];
+  let to = [
+    i18n[language].goodbyeHeaderOpeningLine,
+    i18n[language].goodbyeHiddenIntro,
+    i18n[language].goodbyeWhy,
+  ];
+  html = replace(html, from, to);
+  text = replace(text, from, to);
+
+	let options = {
+    from: `"${i18n[language].joostFromFreesewing}" <info@freesewing.org>`,
+    to: recipient,
+    subject: i18n[language].goodbyeSubject,
+    text,
+    html
+  };
+	await transporter.sendMail(options, (error, info) => {
+    if (error) return console.log(error);
+		console.log('Message sent', info);
+    return true;
   });
 }
 
