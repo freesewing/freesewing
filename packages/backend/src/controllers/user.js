@@ -348,10 +348,10 @@ UserController.prototype.export = (req, res) => {
     if(user === null) return res.sendStatus(400);
     let dir = createTempDir();
     if(!dir) return res.sendStatus(500);
-    let avatar = fs.readFile(path.join(user.storagePath(), user.picture), (err, data) => {
-      let zip = new Zip();
-      zip.file("account.json", JSON.stringify(user.export(), null, 2));
-      zip.file(user.picture, data);
+    let zip = new Zip();
+    zip.file("account.json", JSON.stringify(user.export(), null, 2));
+    loadAvatar(user).then( avatar => {
+      if(avatar) zip.file(user.picture, data);
       zip.generateAsync({
         type: "uint8array",
         comment: "freesewing.org",
@@ -365,6 +365,12 @@ UserController.prototype.export = (req, res) => {
       });
     });
   });
+}
+
+// HERE
+const loadAvatar = async user => {
+  if(user.picture) await fs.readFile(path.join(user.storagePath(), user.picture), (err, data) => data);
+  else return false;
 }
 
 /** restrict processing of data, aka freeze account */
