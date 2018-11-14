@@ -146,6 +146,34 @@ UserSchema.methods.account = function() {
   return account;
 }
 
+UserSchema.methods.profile = function() {
+  let account = this.toObject();
+  delete account.password;
+  delete account.ehash;
+  delete account.pepper;
+  delete account.email;
+  delete account.consent;
+  delete account.initial;
+  delete account.role;
+  delete account.status;
+  delete account.handle;
+  delete account.time.login;
+  delete account.picture;
+  delete account.__v;
+  delete account._id;
+  delete account._ac;
+  delete account._ct;
+  delete account._ct;
+  account.pictureUris = {
+    l: this.avatarUri(),
+    m: this.avatarUri("m"),
+    s: this.avatarUri("s"),
+    xs: this.avatarUri("xs"),
+  }
+
+  return account;
+}
+
 UserSchema.methods.export = function() {
   let exported = this.toObject();
   delete exported.password;

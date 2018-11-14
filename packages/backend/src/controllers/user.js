@@ -94,7 +94,14 @@ UserController.prototype.readAccount = (req, res) => {
 //    return res.sendStatus(200);//(req.user);
 //  }
  // userController.readOwnProfile = (req, res) => { }
- // userController.readProfile = (req, res) => { }
+UserController.prototype.readProfile = (req, res) => {
+  User.findOne({ username: req.params.username }, (err, user) => {
+    if (err) return res.sendStatus(404);
+    if(user === null) return res.sendStatus(404);
+    else res.send({ profile: user.profile() });
+  });
+}
+
 UserController.prototype.update = (req, res) => {
   var async = 0;
   if (!req.user._id) return res.sendStatus(400);

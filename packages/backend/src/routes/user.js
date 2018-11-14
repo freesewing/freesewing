@@ -69,7 +69,7 @@ export default (app, passport) => {
   //});
 
   //app.get('/user', userController.readOwnProfile); // Read profile (own data)
-  //app.get('/user/:handle', userController.readProfile); // Read profile (other user's data)
+  app.get('/users/:username', User.readProfile); // Read profile (other user's data)
   // Create is a non-authenticated route part of sign-up flow
   app.put('/user', passport.authenticate('jwt', {session: false }), User.update); // Update
   //app.delete('/user', userController.delete); // Delete
