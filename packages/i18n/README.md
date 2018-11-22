@@ -5,40 +5,36 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 <p align="center">
-  <a href="https://travis-ci.org/freesewing/freesewing"><img src="https://badgen.net/travis/freesewing/freesewing/master" alt="Travis build"></a>
-  <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/v/freesewing" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/license/freesewing" alt="License"></a>
-  <a href="https://codecov.io/gh/freesewing/freesewing"><img src="https://badgen.net/codecov/c/github/freesewing/freesewing/master" alt="Code coverage"></a>
-  <a href="https://deepscan.io/dashboard#view=project&pid=2993&bid=23256"><img src="https://deepscan.io/api/projects/2993/branches/23256/badge/grade.svg" alt="DeepScan grade"></a>
+  <a href="https://travis-ci.org/freesewing/i18n"><img src="https://badgen.net/travis/freesewing/i18n/master" alt="Travis build"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/i18n"><img src="https://badgen.net/npm/v/@freesewing/i18n" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/license/@freesewing/i18n" alt="License"></a>
+  <a href="https://codecov.io/gh/freesewing/freesewing"><img src="https://badgen.net/codecov/c/github/freesewing/i18n/master" alt="Code coverage"></a>
   <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
   <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
 </p>
 
-# freesewing
+# i18n
 
-[Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing pattern.  
-This is our core library.
+These are the translation files for the [Freesewing](https://freesewing.org/) project. 
 
-## Links
+We currently provide translation in 5 languages:
 
- - 💻 Website: [freesewing.org](https://freesewing.org)
- - 💬 Chat: [Gitter](https://gitter.im/freesewing/freesewing)
- - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
- - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
- 
-## Features
+ - English
+ - German
+ - Spanish
+ - French
+ - Dutch
 
-- Parametric design of sewing patterns
-- Modular design with support for [plugins](https://github.com/freesewing/plugins)
-- Auto-layout of pattern parts
-- Auto-offset of paths for seam allowance
-- Support for paperless patterns (with [our theme plugin](https://github.com/freesewing/plugin-theme))
-- Sampling of options, a single measurement, or across models
-- Renders to SVG
-- Run in the browser as well as on the server with Node.js
+## Install
 
-## Getting started
+On node.js:
 
-This repository is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
+```sh
+npm install --save @freesewing/i18n
+```
 
-It is an ongoing project, and not ready for prime-time yet. Watch this space.
+in the browser, simply include this script:
+
+```html
+<script type="text/javascript" src="https://unpkg.com/@freesewing/i18n"></script>
+```

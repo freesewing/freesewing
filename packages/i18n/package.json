@@ -21,6 +21,7 @@
     "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "precommit": "npm run pretty && lint-staged",
     "test": "mocha tests/*.test.js",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "clean": "rimraf dist && rimraf tests/dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
@@ -29,6 +30,12 @@
     "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -m true",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
     "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
+  },
+  "nyc": {
+    "exclude": [
+      "dist",
+      "tests"
+    ]
   },
   "husky": {
     "hooks": {
@@ -60,6 +67,7 @@
     "lint-staged": "^7.3.0",
     "mocha": "^5.2.0",
     "prettier": "^1.14.3",
+    "nyc": "12.0.2",
     "rimraf": "^2.6.2",
     "rollup": "0.63.4",
     "rollup-plugin-babel": "^3.0.7",
