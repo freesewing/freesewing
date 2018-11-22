@@ -1,0 +1,8 @@
+confirmationNotFound: Wenn Sie diese Seite über den Link in einer Bestätigungs-E-Mail erreicht haben, empfehlen wir Ihnen, dieses Problem zu melden.
+emailExists: Wir haben bereits einen Benutzer mit dieser E-Mail-Adresse. Vielleicht möchten Sie sich stattdessen einloggen?
+networkError: Back-End oder Netzwerk scheint nicht verfügbar zu sein
+notAValidImageFormat: Kein gültiges Bildformat
+requestFailedWithStatusCode400: Anfrage fehlgeschlagen
+requestFailedWithStatusCode401: Authentifizierung fehlgeschlagen
+requestFailedWithStatusCode403: Verboten
+requestFailedWithStatusCode500: Es gab ein unerwartetes Problem. Bitte melden Sie dies.

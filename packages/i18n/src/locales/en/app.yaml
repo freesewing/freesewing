@@ -1,0 +1,117 @@
+aboutFreesewing: About Freesewing
+account: Account
+accountCreated: Account created
+andThatIsAwesome: And that is awesome
+back: Back
+becauseThatWouldBeReallyHelpful: Because that would be really helpful.
+becomeAPatron: Become a patron
+blog: Blog
+browseAllShowcases: Browse all showcases
+butThatCouldChange: But that could change
+chatOnGitter: Chat on Gitter
+checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
+close: Close
+colourYes: "Colour picture: Content is available in English"
+community: Community
+completeSignupText: "Before we start off on the wrong foot, let's make sure your account is set up correctly. Simply complete the steps below:"
+completeSignupTitle: Complete your signup
+contactUs: Contact us
+contentLocaleFallback: That's why we're showing you the English version instead.
+contents: Contents
+couldYouTranslateThis: Could you translate this?
+darkMode: Dark mode
+docs: Documentation
+documentationForDevelopers: Documentation for developers
+documentationForTranslators: Documentation for translators
+documentationOverview: Documentation overview
+download: Download
+drafts: Drafts
+dragAndDropImageHere: Drag and drop and image here, or select one manually with the button below
+emailAddress: E-mail address
+emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
+enterEmailPickPassword: Enter your E-mail address, and pick a password
+fieldSaved: "{field} saved"
+forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
+freesewing: Freesewing
+github: GitHub
+goAheadWeWillWait: Go ahead, we'll wait.
+goodJob: Good job
+goodToSeeYouAgain: Good to see you again {user}
+helpUsTranslate: Help us translate
+home: Home
+howCanWeHelpYou: How can we help you?
+howToTakeMeasurements: How to take measurements
+imperialUnits: Imperial units (inch)
+instagram: Instagram
+invalidTldMessage: '.{tld} is not a valid TLD'
+justAMoment: Just a moment
+logIn: Log in
+logOut: Log out
+markdownHelp: MarkDown help
+measurements: Measurements
+menu: Menu
+metricUnits: Metric units (cm)
+models: Models
+monochromeNo: "Monochrome picture: Content is not availabel in English"
+newDraft: New draft
+newModel: New model
+noChanges: No changes
+no: No
+noPasswordPolicy: We don't enforce a password policy
+notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
+ohNo: Oh no!
+other: Other
+otherThing: "Other {thing}"
+patron-2: Powder monkey
+patron-4: First mate
+patron-8: Captain
+patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact Joost.
+patron: Patron
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins every month, then you too should become a Patron of freesewing.
+patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
+patternInstructions: Pattern instructions
+patternOptions: Pattern options
+patterns: Patterns
+pendingConfirmation: Pending confirmation
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
+preview: Preview
+privacyNotice: Privacy notice
+proceedWithCaution: Proceed with caution
+profile: Profile
+relatedLinks: Related links
+remove: Remove
+reportThisOnGitHub: Report this on GitHub
+resendActivationEmailMessage: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message.'
+resendActivationEmail: Re-send activation E-mail
+resetPassword: Reset password
+save: Save
+selectImage: Select image
+sendAnEmail: Send an E-mail
+settings: Settings
+sewingHelp: Sewing help
+sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
+showcase: Showcase
+signUpForAFreeAccount: Sign up for a free account
+signUp: Sign up
+startTranslatingNowOrRead: '{startTranslatingNow}, or read the {documentationForTranslators} first.'
+startTranslatingNow: Start translating now
+tellMeMore: Tell me more
+thisContentIsNotAvailableInLanguage: This content is not available in English
+thisFieldSupportsMarkdown: This field supports Markdown
+thisPageRequiresAuthentication: This page requires authentication
+troubleLoggingIn: Trouble logging in?
+twitter: Twitter
+txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons
+userHasBeenWithUsSince: '{user} has been with us since {since}'
+weAreValidatingYourConfirmationCode: We are validating your confirmation code
+weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
+welcomeAboard: Welcome aboard
+weNeverShareYourEmail: We'll never share your email with anyone else
+whatIsThis: What is this?
+withBreasts: With breasts
+withoutBreasts: Without breasts
+yay: Yay!
+youAreAPatron: You are a patron
+youAreNotAPatron: Your are not a patron
+youAreNotLoggedIn: You are not logged in
+yourRights: Your rights

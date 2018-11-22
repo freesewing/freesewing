@@ -1,0 +1,112 @@
+{
+  "name": "@freesewing/i18n",
+  "version": "0.0.1",
+  "description": "Translations for the freesewing project",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freesewing/i18n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freesewing/i18n/issues"
+  },
+  "main": "dist/index.js",
+  "unpkg": "dist/browser.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "precommit": "npm run pretty && lint-staged",
+    "test": "mocha tests/*.test.js",
+    "clean": "rimraf dist && rimraf tests/dist",
+    "pretty": "npx prettier --write 'src/*.js'",
+    "lint": "eslint --fix 'src/*.js'",
+    "browserbuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing.i18n",
+    "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs -m true",
+    "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -m true",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
+    "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-plugin-istanbul": "4.1.6",
+    "babel-plugin-syntax-object-rest-spread": "6.13.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "chai": "^4.1.2",
+    "chai-string": "1.4.0",
+    "codecov": "3.0.4",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.3.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2",
+    "rollup": "0.63.4",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^1.0.1",
+    "rollup-plugin-yaml": "1.1.0"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "env": {
+      "develop": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread"
+        ]
+      },
+      "production": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "external-helpers",
+          "syntax-object-rest-spread",
+          "transform-object-rest-spread",
+          "istanbul"
+        ]
+      }
+    }
+  }
+}

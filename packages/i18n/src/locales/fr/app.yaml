@@ -1,0 +1,117 @@
+aboutFreesewing: À propos de Freesewing
+account: Compte
+accountCreated: Compte créé
+andThatIsAwesome: Et c'est génial
+back: Retour
+becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
+becomeAPatron: Devenir mécène
+blog: Blog
+browseAllShowcases: Parcourir la galerie entière
+butThatCouldChange: Mais cela pourrait changer
+chatOnGitter: Chatter sur Gitter
+checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
+close: Fermer
+colourYes: "Image couleur: le contenu est disponible en français"
+community: Communauté
+completeSignupText: "Avant de commencer du mauvais pied, assurons-nous que votre compte est configuré correctement. Complétez simplement les étapes ci-dessous:"
+completeSignupTitle: Complétez votre inscription
+contactUs: Nous contacter
+contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
+contents: Contenus
+couldYouTranslateThis: Pourriez-vous traduire cela?
+darkMode: Mode sombre
+docs: Documentation
+documentationForDevelopers: Documentation pour les développeurs
+documentationForTranslators: Documentation pour les traducteurs
+documentationOverview: Vue d'ensemble de la documentation
+download: Télécharger
+drafts: Ébauches
+dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
+withBreasts: Avec des seins
+withoutBreasts: Sans seins
+emailAddress: Adresse mail
+emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
+enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
+fieldSaved: "{field} enregistré"
+forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
+freesewing: Freesewing
+github: GitHub
+goAheadWeWillWait: Allez-y, nous attendrons.
+goodJob: Bon travail
+goodToSeeYouAgain: Content de te revoir {user}
+helpUsTranslate: Aidez-nous à traduire
+home: Page d'accueil
+howCanWeHelpYou: Comment pouvons-nous vous aider ?
+howToTakeMeasurements: Comment prendre les mesures
+imperialUnits: Unités impériales (pouces)
+instagram: Instagram
+invalidTldMessage: '.{tld} n''est pas un TLD valide'
+justAMoment: Juste un instant
+logIn: Connexion
+logOut: Déconnexion
+markdownHelp: Aide de MarkDown
+measurements: Mensurations
+menu: Menu
+metricUnits: Unités métriques (cm)
+models: Modèles
+monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
+newDraft: Nouvelle ébauche
+newModel: Nouveau modèle
+noChanges: Pas de changement
+no: Non
+noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
+notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
+ohNo: Oh non !
+other: Autre
+otherThing: "Autres {thing}"
+patron-2: Powder monkey
+patron-4: Second
+patron-8: Capitaine
+patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
+patron: Mécène
+patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez épargner quelques pièces chaque mois, vous devriez également devenir un mécène de Freesewing.
+patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
+patternInstructions: Documentation du patron
+patternOptions: Options des patrons
+patterns: Patrons
+pendingConfirmation: En attente de confirmation
+pleaseEnterAValidEmailAddress: Merci d'entrer une adresse e-mail valide
+preview: Aperçu
+privacyNotice: Avis de confidentialité
+proceedWithCaution: Procéder avec prudence
+profile: Profil
+relatedLinks: Liens connexes
+remove: Supprimer
+reportThisOnGitHub: Le signaler sur Github
+resendActivationEmailMessage: Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation
+resendActivationEmail: Renvoyer le mail d'activation
+resetPassword: Réintialiser le mot de passe
+save: Sauvegarder
+selectImage: Sélectionner une image
+sendAnEmail: Envoyer un mail
+settings: Paramètres
+sewingHelp: Aide de couture
+sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
+showcase: Galerie
+signUp: Créer un compte
+signUpForAFreeAccount: Créer un compte gratuit
+startTranslatingNow: Commencez à traduire maintenant
+startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
+tellMeMore: En savoir plus
+thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en français.
+thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
+thisPageRequiresAuthentication: Cette page nécessite une authentification
+troubleLoggingIn: Un problème de connexion ?
+twitter: Twitter
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de mécènes
+userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
+weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
+weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
+welcomeAboard: Bienvenue à bord
+weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.
+whatIsThis: Qu'est-ce que c'est
+yay: Yay!
+youAreAPatron: Vous êtes un mécène
+youAreNotAPatron: Vous n'êtes pas mécène
+youAreNotLoggedIn: Vous n'êtes pas connecté
+yourRights: Vos droits
