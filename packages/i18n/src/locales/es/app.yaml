@@ -31,8 +31,6 @@ emailAddress: Dirección de correo electrónico
 emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 fieldSaved: "{field} guardado"
-withBreasts: Con pechos
-withoutBreasts: Sin pechos
 forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
 freesewing: Freesewing
 github: GitHub
@@ -110,6 +108,8 @@ weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirm
 welcomeAboard: Bienvenido a bordo
 weNeverShareYourEmail: Nunca compartiremos esto con nadie
 whatIsThis: Que es esto
+withBreasts: Con pechos
+withoutBreasts: Sin pechos
 yay: ¡Hurra!
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas

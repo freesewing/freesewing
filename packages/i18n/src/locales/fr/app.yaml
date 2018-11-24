@@ -27,8 +27,6 @@ documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 drafts: Ébauches
 dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
-withBreasts: Avec des seins
-withoutBreasts: Sans seins
 emailAddress: Adresse mail
 emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
@@ -110,6 +108,8 @@ weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code d
 welcomeAboard: Bienvenue à bord
 weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.
 whatIsThis: Qu'est-ce que c'est
+withBreasts: Avec des seins
+withoutBreasts: Sans seins
 yay: Yay!
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène

@@ -1,3 +1,4 @@
+  "
 chatWithUs: "Habla con nosotros"
 emailchangeActionText: "Confirme su nueva dirección de correo electrónico"
 emailchangeCopy1: "Solicitó cambiar la dirección de correo electrónico vinculada a su cuenta en <b> freesewing.org </b>.<br><br>Antes de hacerlo, debe confirmar su nueva dirección de correo electrónico. Por favor haga clic en el enlace de abajo para hacer eso:"
@@ -10,7 +11,6 @@ footerCredits: "Hecho por Joost De Cock y colaboradores con el apoyo económico 
 footerSlogan: "Freesewing es una plataforma open source para patrones de costura a medida"
 goodbyeCopy1: "Si desea compartir por qué se va, puede responder a este mensaje. <br> Por nuestra parte, no volveremos a molestarlo."
 goodbyeHeaderOpeningLine: "Solo se sabe que siempre se puede volver.
-  "
 goodbyeHiddenIntro: "Gracias por darle una oportunidad a freesewing"
 goodbyeSubject: "Despedida 👋"
 goodbyeTitle: "Gracias por darle una oportunidad a freesewing"

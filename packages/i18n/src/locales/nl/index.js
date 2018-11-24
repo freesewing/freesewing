@@ -22,6 +22,4 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
-export { account, app, email, errors, gdpr, i18n };
-
-export default strings;
+export { account, app, email, errors, gdpr, i18n, strings };

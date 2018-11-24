@@ -25,8 +25,6 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
-withBreasts: Met borsten
-withoutBreasts: Zonder borsten
 drafts: Patroontekeningen
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
@@ -110,6 +108,8 @@ weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valid
 welcomeAboard: Welkom aan boord
 weNeverShareYourEmail: We geven jouw email adres nooit door aan derden
 whatIsThis: What betekent dit?
+withBreasts: Met borsten
+withoutBreasts: Zonder borsten
 yay: Joehoew!
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas

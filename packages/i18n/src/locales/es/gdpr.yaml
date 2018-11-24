@@ -17,8 +17,8 @@ noIDoNot: 'No, no lo hago'
 openDataInfo: Estos datos se utilizan para estudiar y comprender la forma humana en todas sus formas, para que podamos obtener mejores patrones de costura y que se ajusten mejor a las prendas. Aunque esta información es anónima, tiene derecho a objetar esto.
 openDataQuestion: Compartir mediciones anonimizadas como datos abiertos.
 profileQuestion: ¿Das tu consentimiento para procesar los datos de tu perfil?
-profileShareAnswer: '<b> No </b>, nunca.'
-profileTimingAnswer: '<b> 12 meses </b> después de su último inicio de sesión, o hasta que <b> elimine </b> su cuenta o <b> revoque </b> este consentimiento.'
+profileShareAnswer: '<b>No</b>, nunca.'
+profileTimingAnswer: '<b>12 meses</b> después de su último inicio de sesión, o hasta que <b> elimine </b> su cuenta o <b> revoque </b> este consentimiento.'
 profileWarning: La revocación de este consentimiento activará la eliminación de todos sus datos. Tiene exactamente el mismo efecto que la eliminación de su cuenta.
 profileWhatAnswerOptional: 'Opcional: una <b> foto de perfil </b>, <b>bio</b>, y <b> cuentas de redes sociales </b>'
 profileWhatAnswer: 'Su <b> dirección de correo electrónico </b>, <b> nombre de usuario </b> y <b> contraseña </b>.'
