@@ -19,6 +19,7 @@ contactUs: Neem contact op
 contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 contents: Inhoud
 couldYouTranslateThis: Kan jij dit vertalen?
+created: Aangemaakt
 darkMode: Donkere modus
 docs: Documentatie
 documentationForDevelopers: Documentatie voor ontwikkelaars
@@ -53,6 +54,7 @@ menu: Menu
 metricUnits: Metrische eenheden (cm)
 models: Modellen
 monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
+name: Naam
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
 noChanges: Geen wijzigingen

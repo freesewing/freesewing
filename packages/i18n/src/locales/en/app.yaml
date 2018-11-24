@@ -19,6 +19,7 @@ contactUs: Contact us
 contentLocaleFallback: That's why we're showing you the English version instead.
 contents: Contents
 couldYouTranslateThis: Could you translate this?
+created: Created
 darkMode: Dark mode
 docs: Documentation
 documentationForDevelopers: Documentation for developers
@@ -53,6 +54,7 @@ menu: Menu
 metricUnits: Metric units (cm)
 models: Models
 monochromeNo: "Monochrome picture: Content is not availabel in English"
+name: Name
 newDraft: New draft
 newModel: New model
 noChanges: No changes

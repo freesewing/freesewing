@@ -19,6 +19,7 @@ contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
 contents: Contenus
 couldYouTranslateThis: Pourriez-vous traduire cela?
+created: Créé
 darkMode: Mode sombre
 docs: Documentation
 documentationForDevelopers: Documentation pour les développeurs
@@ -53,6 +54,7 @@ menu: Menu
 metricUnits: Unités métriques (cm)
 models: Modèles
 monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
+name: Nom
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
 noChanges: Pas de changement

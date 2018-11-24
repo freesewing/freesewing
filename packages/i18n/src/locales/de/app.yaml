@@ -19,6 +19,7 @@ contactUs: Kontaktiere uns
 contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
 contents: Inhalte
 couldYouTranslateThis: Könnten Sie das übersetzen?
+created: Erstellt
 darkMode: Dunkler Modus
 docs: Dokumente
 documentationForDevelopers: Dokumentation für Entwickler
@@ -53,6 +54,7 @@ menu: Menü
 metricUnits: Metrische Einheiten (cm)
 models: Modelle (Personen)
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
+name: Name
 newDraft: Neuer Entwurf
 newModel: Neues Modell
 noChanges: Keine Änderungen
