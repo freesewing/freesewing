@@ -3,7 +3,8 @@ import fs from "fs";
 import path from "path";
 import { log } from "../../utils";
 import config from "../../config";
-import i18n from "../../i18n";
+import { email as i18n } from "@freesewing/i18n";
+import fo from "@freesewing/i18n";
 import templates from "../../templates";
 
 const email = {};

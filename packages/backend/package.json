@@ -39,6 +39,7 @@
     ]
   },
   "dependencies": {
+    "@freesewing/i18n": "0.1.0",
     "body-parser": "1.18.3",
     "chalk": "2.4.1",
     "cors": "2.8.4",

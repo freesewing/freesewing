@@ -1,4 +1,4 @@
-import { User, Confirmation } from "../models";
+import { User, Confirmation, Model } from "../models";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
 import { log, email } from "../utils";
@@ -30,7 +30,12 @@ UserController.prototype.login = function (req, res) {
         log.info('login', { user, req });
         let account = user.account();
         let token = getToken(account);
-        user.updateLoginTime(() => res.send({account,token}));
+        let models = {};
+        Model.find({user: user.handle}, (err, modelList) => {
+          if(err) return res.sendStatus(400);
+          for ( let model of modelList ) models[model.handle] = model;
+          user.updateLoginTime(() => res.send({account, models, token}));
+        });
       } else {
         log.warning('wrongPassword', { user, req });
         return res.sendStatus(401);
@@ -83,17 +88,18 @@ UserController.prototype.readAccount = (req, res) => {
   User.findById(req.user._id, (err, user) => {
     if(user !== null) {
       log.info('ping', { user, req });
-      res.send({account: user.account()});
+      const models ={};
+      Model.find({user: user.handle}, (err, modelList) => {
+        if(err) return res.sendStatus(400);
+        for ( let model of modelList ) models[model.handle] = model;
+        res.send({account: user.account(), models});
+      });
     } else {
       return res.sendStatus(400);
     }
   });
 }
-//  readAccount (req, res) {
-//    //console.log('test', req);
-//    return res.sendStatus(200);//(req.user);
-//  }
- // userController.readOwnProfile = (req, res) => { }
+
 UserController.prototype.readProfile = (req, res) => {
   User.findOne({ username: req.params.username }, (err, user) => {
     if (err) return res.sendStatus(404);
@@ -194,7 +200,7 @@ function saveAndReturnAccount(res,user) {
       log.error('accountUpdateFailed', updatedUser);
       return res.sendStatus(500);
     }
-    return res.send({account: updatedUser.account()});
+    return res.send({ account: updatedUser.account() });
   })
 }
 
@@ -374,7 +380,6 @@ UserController.prototype.export = (req, res) => {
   });
 }
 
-// HERE
 const loadAvatar = async user => {
   if(user.picture) await fs.readFile(path.join(user.storagePath(), user.picture), (err, data) => data);
   else return false;
@@ -475,5 +480,14 @@ const createTempDir = () => {
 }
 
 const uri = path => config.static+path.substring(config.storage.length);
+
+const loadModels = user => {
+  const models ={};
+  Model.find({user: user.handle}, (err, modelList) => {
+    if(err) console.log('models err', err, models);
+    for ( let model of modelList ) models[model.user] = model;
+    return models;
+  });
+}
 
 export default UserController;
