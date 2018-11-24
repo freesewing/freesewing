@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let i18n = require("../dist/index.js");
+let i18n = require("../dist/index.js").strings;
 
 let languages = [
   {
