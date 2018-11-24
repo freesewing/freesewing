@@ -78,12 +78,12 @@ to translate the emails we send out to users.
 
 This package provides the following named exports:
 
- - account : Translated messages related to user accounts (frontend)
- - app : Translated messages for the web app (frontend)
- - errors : Translated error messages (frontend)
- - gdpr : Translated privacy/GDPR messages
- - i18n : Translated names of languages (frontend)
- - strings : This combines all frontend exports in a flat object (frontend)
- - email : Strings for translating emails (backend)
+ - **account** : Translated messages related to user accounts (frontend)
+ - **app** : Translated messages for the web app (frontend)
+ - **errors** : Translated error messages (frontend)
+ - **gdpr** : Translated privacy/GDPR messages
+ - **i18n** : Translated names of languages (frontend)
+ - **strings** : This combines all frontend exports in a flat object (frontend)
+ - **email** : Strings for translating emails (backend)
 
 All exports contain an object with a property for each language code.
