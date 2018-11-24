@@ -13,7 +13,6 @@
     "url": "https://github.com/freesewing/i18n/issues"
   },
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
   "scripts": {
     "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
@@ -25,10 +24,9 @@
     "clean": "rimraf dist && rimraf tests/dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing.i18n",
     "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs -m true",
     "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -m true",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
   },
   "nyc": {

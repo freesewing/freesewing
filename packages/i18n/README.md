@@ -27,16 +27,8 @@ We currently provide translation in 5 languages:
 
 ## Install
 
-On node.js:
-
 ```sh
 npm install --save @freesewing/i18n
-```
-
-in the browser, simply include this script:
-
-```html
-<script type="text/javascript" src="https://unpkg.com/@freesewing/i18n"></script>
 ```
 
 ## Exports
