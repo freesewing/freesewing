@@ -31,6 +31,7 @@ dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmat
 emailAddress: Email adres
 emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
+fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
 forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
@@ -38,6 +39,7 @@ github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Goed gedaan
 goodToSeeYouAgain: Leuk je weer te zien {user}
+handle: Referntie
 helpUsTranslate: Help ons met vertalen
 home: Startpagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
@@ -95,6 +97,7 @@ sewingPatternsForNonAveragePeople: Naaipatronen voor niet-gemiddelde mensen
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
+sortByField: Sorteren op {field}
 startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
 tellMeMore: Vertel me meer

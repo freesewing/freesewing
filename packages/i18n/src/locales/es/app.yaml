@@ -31,6 +31,7 @@ dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manua
 emailAddress: Dirección de correo electrónico
 emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
+fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
 forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
 freesewing: Freesewing
@@ -38,6 +39,7 @@ github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
 goodToSeeYouAgain: Bueno verte de nuevo {user}
+handle: Referencia
 helpUsTranslate: Ayúdanos a traducir
 home: Página principal
 howCanWeHelpYou: ¿Cómo podemos ayudarte?
@@ -95,6 +97,7 @@ sewingPatternsForNonAveragePeople: Patrones de costura para personas no promedio
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
+sortByField: Ordenar por {field}
 startTranslatingNow: Empezar a traducir ahora
 startTranslatingNowOrRead: '{startTranslatingNow}, o lea primero la {documentationForTranslators}.'
 tellMeMore: Dime más

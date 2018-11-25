@@ -31,6 +31,7 @@ dragAndDropImageHere: Drag and drop and image here, or select one manually with 
 emailAddress: E-mail address
 emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
 enterEmailPickPassword: Enter your E-mail address, and pick a password
+fieldRemoved: "{field} removed"
 fieldSaved: "{field} saved"
 forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
 freesewing: Freesewing
@@ -38,6 +39,7 @@ github: GitHub
 goAheadWeWillWait: Go ahead, we'll wait.
 goodJob: Good job
 goodToSeeYouAgain: Good to see you again {user}
+handle: Handle
 helpUsTranslate: Help us translate
 home: Home
 howCanWeHelpYou: How can we help you?
@@ -95,6 +97,7 @@ sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
 showcase: Showcase
 signUpForAFreeAccount: Sign up for a free account
 signUp: Sign up
+sortByField: Sort by {field}
 startTranslatingNowOrRead: '{startTranslatingNow}, or read the {documentationForTranslators} first.'
 startTranslatingNow: Start translating now
 tellMeMore: Tell me more
