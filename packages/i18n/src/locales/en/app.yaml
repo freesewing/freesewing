@@ -2,10 +2,6 @@ aboutFreesewing: About Freesewing
 account: Account
 accountCreated: Account created
 andThatIsAwesome: And that is awesome
-app.chestInfo: Breasts require extra measurements. If your model has no breasts, irrelevant measurements will be hidden when configuring the model. This has no impact on how patterns are drafted.
-app.createModel: Create model
-app.nameInfo: A name helps to keep things apart. You can pick any name you want.
-app.unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
@@ -15,6 +11,7 @@ butThatCouldChange: But that could change
 chatOnGitter: Chat on Gitter
 checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
 chest: Chest
+chestInfo: Breasts require extra measurements. If your model has no breasts, irrelevant measurements will be hidden when configuring the model. This has no impact on how patterns are drafted.
 close: Close
 colourYes: "Colour picture: Content is available in English"
 community: Community
@@ -25,6 +22,7 @@ contentLocaleFallback: That's why we're showing you the English version instead.
 contents: Contents
 couldYouTranslateThis: Could you translate this?
 created: Created
+createModel: Create model
 darkMode: Dark mode
 docs: Documentation
 documentationForDevelopers: Documentation for developers
@@ -62,6 +60,7 @@ metricUnits: Metric units (cm)
 model: Model
 models: Models
 monochromeNo: "Monochrome picture: Content is not availabel in English"
+nameInfo: A name helps to keep things apart. You can pick any name you want.
 name: Name
 newDraft: New draft
 newModel: New model
@@ -113,6 +112,8 @@ thisPageRequiresAuthentication: This page requires authentication
 troubleLoggingIn: Trouble logging in?
 twitter: Twitter
 txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons
+unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
+updated: Updated
 userHasBeenWithUsSince: '{user} has been with us since {since}'
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code

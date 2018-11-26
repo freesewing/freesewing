@@ -2,10 +2,6 @@ aboutFreesewing: Over Freesewing
 account: Account
 accountCreated: Account aangemaakt
 andThatIsAwesome: En dat is geweldig
-app.chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, worden irrelevante metingen verborgen bij het configureren van het model. Dit heeft geen invloed op hoe patronen worden opgesteld.
-app.createModel: Model aanmaken
-app.nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
-app.unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -15,6 +11,7 @@ butThatCouldChange: Maar dat kan veranderen
 chatOnGitter: Chat via Gitter
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
+chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, worden irrelevante metingen verborgen bij het configureren van het model. Dit heeft geen invloed op hoe patronen worden opgesteld.
 close: Sluiten
 colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
@@ -25,6 +22,7 @@ contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 contents: Inhoud
 couldYouTranslateThis: Kan jij dit vertalen?
 created: Aangemaakt
+createModel: Model aanmaken
 darkMode: Donkere modus
 docs: Documentatie
 documentationForDevelopers: Documentatie voor ontwikkelaars
@@ -62,6 +60,7 @@ metricUnits: Metrische eenheden (cm)
 model: Model
 models: Modellen
 monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
+nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
@@ -113,6 +112,8 @@ thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
 txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze sponsors
+unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
+updated: Bijgewerkt
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
 weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valideren

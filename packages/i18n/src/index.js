@@ -6,7 +6,15 @@ import * as nl from "./locales/nl";
 
 const imports = { en, de, es, fr, nl };
 
-const topics = ["account", "app", "email", "errors", "gdpr", "i18n"];
+const topics = [
+  "account",
+  "app",
+  "email",
+  "errors",
+  "gdpr",
+  "i18n",
+  "measurements"
+];
 
 const languages = ["en", "de", "es", "fr", "nl"];
 
@@ -16,6 +24,7 @@ const email = {};
 const errors = {};
 const gdpr = {};
 const i18n = {};
+const measurements = {};
 const strings = {};
 
 for (let lang of languages) account[lang] = imports[lang].account;
@@ -24,6 +33,7 @@ for (let lang of languages) email[lang] = imports[lang].email;
 for (let lang of languages) errors[lang] = imports[lang].errors;
 for (let lang of languages) gdpr[lang] = imports[lang].gdpr;
 for (let lang of languages) i18n[lang] = imports[lang].i18n;
+for (let lang of languages) measurements[lang] = imports[lang].measurements;
 for (let lang of languages) strings[lang] = imports[lang].strings;
 
-export { account, app, email, errors, gdpr, i18n, strings };
+export { account, app, email, errors, gdpr, i18n, measurements, strings };

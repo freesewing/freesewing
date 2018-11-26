@@ -4,6 +4,7 @@ import email from "./email.yaml";
 import errors from "./errors.yaml";
 import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
+import measurements from "./measurements.yaml";
 
 const topics = {
   account,
@@ -11,7 +12,8 @@ const topics = {
   email,
   errors,
   gdpr,
-  i18n
+  i18n,
+  measurements
 };
 
 const strings = {};
@@ -22,4 +24,4 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
-export { account, app, email, errors, gdpr, i18n, strings };
+export { account, app, email, errors, gdpr, i18n, measurements, strings };

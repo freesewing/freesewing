@@ -2,10 +2,6 @@ aboutFreesewing: Acerca de Freesewing
 accountCreated: cuenta creada
 account: Cuenta
 andThatIsAwesome: Y eso es genial
-app.chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
-app.createModel: Crear el modelo
-app.nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
-app.unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 back: atras
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
@@ -14,6 +10,7 @@ browseAllShowcases: Navegar por todas las escaparates
 butThatCouldChange: Pero eso podría cambiar
 chatOnGitter: Chatea en Gitter
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
+chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chest: Pecho
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
@@ -25,6 +22,7 @@ contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en s
 contents: Contenidos
 couldYouTranslateThis: ¿Podrías traducir esto?
 created: Creado
+createModel: Crear el modelo
 darkMode: Modo oscuro
 docs: Documentación
 documentationForDevelopers: Documentación para desarrolladores
@@ -62,6 +60,7 @@ metricUnits: Unidades métricas (cm)
 model: Modelo
 models: Modelos
 monochromeNo: "Imagen monocroma: el contenido no está disponible en español."
+nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
 name: Nombre
 newDraft: Nuevo boceto
 newModel: Nuevo modelo
@@ -113,6 +112,8 @@ thisPageRequiresAuthentication: esta página requiere autenticación
 troubleLoggingIn: ¿Problemas para acceder?
 twitter: Twitter
 txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
+unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
+updated: Actualizado
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirmación

@@ -2,10 +2,6 @@ aboutFreesewing: Über Freesewing
 accountCreated: Account erstellt
 account: Konto
 andThatIsAwesome: Und das ist großartig
-app.chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
-app.createModel: Erstellen Sie das Modell
-app.nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
-app.unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
@@ -15,6 +11,7 @@ butThatCouldChange: Das könnte sich aber ändern
 chatOnGitter: Chatte bei Gitter
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
+chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
 close: Schließen
 colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
@@ -25,6 +22,7 @@ contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angeze
 contents: Inhalte
 couldYouTranslateThis: Könnten Sie das übersetzen?
 created: Erstellt
+createModel: Erstellen Sie das Modell
 darkMode: Dunkler Modus
 docs: Dokumente
 documentationForDevelopers: Dokumentation für Entwickler
@@ -62,6 +60,7 @@ metricUnits: Metrische Einheiten (cm)
 model: Modell
 models: Modelle (Personen)
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
+nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
 newDraft: Neuer Entwurf
 newModel: Neues Modell
@@ -113,6 +112,8 @@ thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
 txt-footer: 'Freesewing wurde von Joost De Cock & den Mitwirkenden<br> kreiert, mit der finanziellen Unterstützung unserer Gönner'
+unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
+updated: Aktualisierte
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 weAreValidatingYourConfirmationCode: Wir prüfen deinen Bestätigungs-Code.
 weCouldNotValidateYourConfirmationCode: Wir konnten Ihren Bestätigungscode nicht bestätigen
