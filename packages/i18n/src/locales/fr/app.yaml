@@ -2,6 +2,10 @@ aboutFreesewing: À propos de Freesewing
 account: Compte
 accountCreated: Compte créé
 andThatIsAwesome: Et c'est génial
+app.chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
+app.createModel: Créer le modèle
+app.nameInfo: Un nom aide à séparer les choses. Vous pouvez choisir n'importe quel nom.
+app.unitsInfo: Freesewing prend en charge le système métrique et les unités impériales. Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
@@ -55,6 +59,7 @@ markdownHelp: Aide de MarkDown
 measurements: Mensurations
 menu: Menu
 metricUnits: Unités métriques (cm)
+model: Modèle
 models: Modèles
 monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
 name: Nom

@@ -2,6 +2,10 @@ aboutFreesewing: Over Freesewing
 account: Account
 accountCreated: Account aangemaakt
 andThatIsAwesome: En dat is geweldig
+app.chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, worden irrelevante metingen verborgen bij het configureren van het model. Dit heeft geen invloed op hoe patronen worden opgesteld.
+app.createModel: Model aanmaken
+app.nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
+app.unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -55,6 +59,7 @@ markdownHelp: MarkDown hulp
 measurements: Maten
 menu: Menu
 metricUnits: Metrische eenheden (cm)
+model: Model
 models: Modellen
 monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
 name: Naam

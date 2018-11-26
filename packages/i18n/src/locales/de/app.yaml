@@ -2,6 +2,10 @@ aboutFreesewing: Über Freesewing
 accountCreated: Account erstellt
 account: Konto
 andThatIsAwesome: Und das ist großartig
+app.chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
+app.createModel: Erstellen Sie das Modell
+app.nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
+app.unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
@@ -55,6 +59,7 @@ markdownHelp: Markdown-Hilfe
 measurements: Maße
 menu: Menü
 metricUnits: Metrische Einheiten (cm)
+model: Modell
 models: Modelle (Personen)
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 name: Name
