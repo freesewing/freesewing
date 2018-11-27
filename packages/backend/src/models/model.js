@@ -69,4 +69,8 @@ const ModelSchema = new Schema({
 
 ModelSchema.index({ user: 1 , handle: 1});
 
+ModelSchema.methods.info = function() {
+  return this.toObject();
+}
+
 export default mongoose.model('Model', ModelSchema);

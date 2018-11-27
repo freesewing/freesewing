@@ -1,30 +1,31 @@
-import model from "../controllers/model";
+import Controller from "../controllers/model";
 
-export default (app) => {
+const Model = new Controller();
 
-/**********************************************
- *                                            *
- *             ANONYMOUS ROUTES               *
- *                                            *
- *********************************************/
-
-
-
-/**********************************************
- *                                            *
- *           AUTHENTICATED ROUTES             *
- *                                            *
- *********************************************/
-
+export default (app, passport) => {
   /* CRUD endpoints */
+  app.post(
+    '/model',
+    passport.authenticate('jwt', {session: false }),
+    Model.create
+  ); // Create
+  app.get('/model/:handle', Model.read); // Read
+  app.put(
+    '/model/:handle',
+    passport.authenticate('jwt', {session: false }),
+    Model.update
+  ); // Update
+  app.delete('/model/:handle', Model.delete); // Delete
 
-  app.post('/model', model.create); // Create
-  app.get('/model/:handle', model.read); // Read
-  app.put('/model/:handle', model.update); // Update
-  app.delete('/model/:handle', model.delete); // Delete
+  // Delete multiple
+  app.post(
+    '/remove/models',
+    passport.authenticate('jwt', {session: false }),
+    Model.deleteMultiple
+  );
 
   // Clone model
-  app.post('/clone/model/:handle', model.clone);
+  app.post('/clone/model/:handle', Model.clone);
 }
 
 
