@@ -58,6 +58,7 @@
     "sharp": "0.21.0"
   },
   "devDependencies": {
-    "backpack-core": "0.7.0"
+    "backpack-core": "0.7.0",
+    "nodemon": "1.18.6"
   }
 }
