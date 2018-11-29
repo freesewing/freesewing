@@ -6,6 +6,7 @@ back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
 blog: Blog
+browseAllBlogposts: Browse all blogposts
 browseAllShowcases: Browse all showcases
 butThatCouldChange: But that could change
 chatOnGitter: Chat on Gitter
@@ -68,6 +69,8 @@ noChanges: No changes
 no: No
 noPasswordPolicy: We don't enforce a password policy
 notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
+notesInfo: These are your notes. You can write anything you want here
+notes: Notes
 ohNo: Oh no!
 other: Other
 otherThing: "Other {thing}"

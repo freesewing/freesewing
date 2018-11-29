@@ -6,6 +6,7 @@ back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
 blog: Blog
+browseAllBlogposts: Parcourir tous les articles du blog
 browseAllShowcases: Parcourir la galerie entière
 butThatCouldChange: Mais cela pourrait changer
 chatOnGitter: Chatter sur Gitter
@@ -68,6 +69,8 @@ noChanges: Pas de changement
 no: Non
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
+notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
+notes: Remarques
 ohNo: Oh non !
 other: Autre
 otherThing: "Autres {thing}"

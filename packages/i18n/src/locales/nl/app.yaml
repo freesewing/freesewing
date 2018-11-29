@@ -6,6 +6,7 @@ back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
 blog: Blog
+browseAllBlogposts: Bekijk alle blogposts
 browseAllShowcases: Bekijk alle showcases
 butThatCouldChange: Maar dat kan veranderen
 chatOnGitter: Chat via Gitter
@@ -68,6 +69,8 @@ noChanges: Geen wijzigingen
 no: Neen
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
+notes: Aantekeningen
+notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
 ohNo: Oh nee!
 other: Andere
 otherThing: "Andere {thing}"
