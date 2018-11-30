@@ -118,9 +118,11 @@ txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales. Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
+users: Utilisateurs
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
 welcomeAboard: Bienvenue à bord
+welcome: Bienvenue
 weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.
 whatIsThis: Qu'est-ce que c'est
 withBreasts: Avec des seins

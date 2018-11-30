@@ -118,9 +118,11 @@ txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 updated: Actualizado
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
+users: Userios
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirmación
 welcomeAboard: Bienvenido a bordo
+welcome: Bienvenido
 weNeverShareYourEmail: Nunca compartiremos esto con nadie
 whatIsThis: Que es esto
 withBreasts: Con pechos

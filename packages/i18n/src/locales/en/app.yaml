@@ -118,9 +118,11 @@ txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the finan
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
 userHasBeenWithUsSince: '{user} has been with us since {since}'
+users: Users
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
 welcomeAboard: Welcome aboard
+welcome: Welcome
 weNeverShareYourEmail: We'll never share your email with anyone else
 whatIsThis: What is this?
 withBreasts: With breasts
