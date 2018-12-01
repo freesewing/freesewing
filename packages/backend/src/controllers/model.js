@@ -44,6 +44,10 @@ ModelController.prototype.update = (req, res) => {
       if(typeof data.notes === 'string') model.notes = data.notes;
       if(typeof data.units === 'string') model.units = data.units;
       if(typeof data.breasts === 'string' ) model.breasts = (data.breasts === "true") ? true : false;
+      if(typeof data.measurements !== 'undefined' ) model.measurements = {
+        ...model.measurements,
+        ...data.measurements
+      };
     // Below are async ops, need to watch out when to save
 /*
     if(typeof data.newPassword === 'string' && typeof data.currentPassword === 'string') {
