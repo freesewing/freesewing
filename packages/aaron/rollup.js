@@ -32,7 +32,7 @@ export default {
     globals: {
       freesewing: "freesewing",
       "@freesewing/plugin-bundle": "freesewing.plugins.bundle",
-      "@freesewing/brian": "freesewing.patterns.brian",
+      "@freesewing/brian": "freesewing.patterns.brian"
     }
   }
 };
