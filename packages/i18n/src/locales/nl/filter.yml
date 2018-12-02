@@ -1,0 +1,18 @@
+department:
+  title: Afdeling
+  menswear: Herenkleding
+  womenswear: Dameskleding
+
+type:
+  title: Soort
+  block: Blok
+  pattern: Patroon
+
+tags:
+  title: Tags
+  basics: Basics
+  bottom: Bodem
+  top: Top
+  underwear: Ondergoed
+
+resetFilter: Reset filter

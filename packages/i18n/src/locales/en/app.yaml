@@ -37,6 +37,7 @@ emailWorksToo: 'If you don''t know your username, you can also use your E-mail a
 enterEmailPickPassword: Enter your E-mail address, and pick a password
 fieldRemoved: "{field} removed"
 fieldSaved: "{field} saved"
+filterPatterns: Filter patterns
 forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
 freesewing: Freesewing
 github: GitHub

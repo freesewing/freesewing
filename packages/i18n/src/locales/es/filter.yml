@@ -1,0 +1,19 @@
+department:
+  title: Departamento
+  menswear: Ropa de caballero
+  womenswear: Ropa de mujer
+
+type:
+  title: Tipo
+  block: Bloque
+  pattern: Patrón
+
+tags:
+  title: Etiquetas
+  basics: Lo esencial
+  bottom: Fondo
+  top: Top
+  underwear: Ropa interior
+
+resetFilter: Reajustar el filtro
+

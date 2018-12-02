@@ -1,0 +1,19 @@
+department:
+  title: Département
+  menswear: Vêtements pour hommes
+  womenswear: Vêtements pour femmes
+
+type:
+  title: Type
+  block: Bloc
+  pattern: Patron
+
+tags:
+  title: Tags
+  basics: Les bases
+  bottom: Bas
+  top: Top
+  underwear: Sous-vêtements
+
+resetFilter: Réinitialiser le filtre
+

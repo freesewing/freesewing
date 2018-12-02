@@ -37,6 +37,7 @@ emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo elec
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
+filterPatterns: Filtrar los patrones
 forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
 freesewing: Freesewing
 github: GitHub

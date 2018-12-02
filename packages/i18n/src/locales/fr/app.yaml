@@ -37,6 +37,7 @@ emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adress
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 fieldRemoved: "{field} enlevé"
 fieldSaved: "{field} enregistré"
+filterPatterns: Filtrez les patrons
 forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
 freesewing: Freesewing
 github: GitHub

@@ -37,6 +37,7 @@ emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
+filterPatterns: Patronen filteren
 forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
 github: GitHub

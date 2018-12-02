@@ -11,6 +11,7 @@ const topics = [
   "app",
   "email",
   "errors",
+  "filter",
   "gdpr",
   "i18n",
   "measurements"
@@ -22,6 +23,7 @@ const account = {};
 const app = {};
 const email = {};
 const errors = {};
+const filter = {};
 const gdpr = {};
 const i18n = {};
 const measurements = {};
@@ -31,9 +33,20 @@ for (let lang of languages) account[lang] = imports[lang].account;
 for (let lang of languages) app[lang] = imports[lang].app;
 for (let lang of languages) email[lang] = imports[lang].email;
 for (let lang of languages) errors[lang] = imports[lang].errors;
+for (let lang of languages) filter[lang] = imports[lang].filter;
 for (let lang of languages) gdpr[lang] = imports[lang].gdpr;
 for (let lang of languages) i18n[lang] = imports[lang].i18n;
 for (let lang of languages) measurements[lang] = imports[lang].measurements;
 for (let lang of languages) strings[lang] = imports[lang].strings;
 
-export { account, app, email, errors, gdpr, i18n, measurements, strings };
+export {
+  account,
+  app,
+  email,
+  errors,
+  filter,
+  gdpr,
+  i18n,
+  measurements,
+  strings
+};

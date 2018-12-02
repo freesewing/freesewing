@@ -37,6 +37,7 @@ emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse 
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 fieldRemoved: "{field} entfernt"
 fieldSaved: "{field} gespeichert"
+filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
 freesewing: Freesewing
 github: GitHub
