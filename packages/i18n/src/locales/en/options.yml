@@ -1,0 +1,522 @@
+acrossBackFactor:
+  description: Controls your across back width as a factor of your shoulder to shoulder measurement.
+  title: Across back factor
+adjustmentRibbon:
+  description: Add a ribbon to make the tie adjustable.
+  options:
+    - Do not include ribbon
+    - Include ribbon
+  title: Adjustment Ribbon
+armholeDepthFactor:
+  description: Controls the depth of the armhole. Higher values make a deeper armhole.
+  title: Armhole depth factor
+armholeDrop:
+  description: Lower the armhole by this amount. Negative values will raise it.
+  title: Armhole drop
+backDartDepthFactor:
+  description: The Depth of the back dart as a percentage of the Waist to Hip measurement
+  title: Back Dart Depth Factor
+backDrop:
+  description: How much the back panels lower from your hips towards your center back. Negative values will raise the back.
+  title: Back drop
+backInset:
+  description: Amount the back armhole is cut deeper into the back panel.
+  title: Back inset
+backNeckCutout:
+  description: How deep the neck is cut out at the back
+  tile: Back neck cutout
+backOpening:
+  description: Opening at the center back closure.
+  title: Back opening
+backRise:
+  description:
+    _default: The amount by which to raise the back.
+    bruce: Percentage by which the waist will be raised at the back.
+    cathrin: How much the back panels rise from your arms to your center back.
+  title: Back rise
+backScyeDart:
+  description: The amount to take out in a dart at the back of the armhole.
+  title: Back scye dart
+backVent:
+  description:
+    _default: Vent at the back seam
+    jaeger: 'Do you want a central back vent, double back vents, or none at all?'
+  options:
+    jaeger:
+      - No back vent
+      - Single back vent
+      - Double back vent
+    penelope:
+      '0': 'No'
+      '1': 'Yes'
+  title: Back vent
+backVentLength:
+  description:
+    _default: Vertical size of the vent
+    jaeger: Controls the length of the back vent. Lower numbers result in a shorter vent.
+  title: Vertical size of the vent
+backlineBend:
+  description: Determines the shape/bend of the back of the armholes.
+  title: Back armhole shape
+barrelcuffNarrowButton:
+  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
+  options:
+    - No narrow button
+    - Include narrow button
+  title: Cuff narrow button
+bicepsEase:
+  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease.'
+  title: Biceps ease
+bowLength:
+  description: The length of the wings of the bow tie.
+  title: Bow length
+bowStyle:
+  description: The style of the bow.
+  options:
+    butterfly: Butterfly
+    diamond: Diamond
+    square: Square
+    widesquare: Wide Square
+  title: Bow style
+bulge:
+  description: Increase angle to create more room in the front pouch.
+  title: Bulge
+buttonPlacketStyle:
+  description: Style of the button placket.
+  options:
+    '1': Classic style
+    '2': French style (seamless)
+  title: Button placket style
+buttonPlacketType:
+  description: Type of the button placket.
+  options:
+    '1': Cut-on
+    '2': Separate
+  title: Button placket type
+buttonPlacketWidth:
+  description: Width of the button placket.
+  title: Button placket width
+buttonfreeLength:
+  description: How much of the bottom of the front closure to keep button-free.
+  title: Button free length
+buttonholePlacketFoldWidth:
+  description: Width of the buttonhole placket fold.
+  title: Buttonhole placket fold width
+buttonholePlacketStyle:
+  description: Style of the buttonhole placket.
+  options:
+    '1': Classic style
+    '2': French style (seamless)
+  title: Buttonhole placket style
+buttonholePlacketType:
+  description: Type of the buttonhole placket.
+  options:
+    '1': Cut-on
+    '2': Separate
+  title: Buttonhole placket type
+buttonholePlacketWidth:
+  description: Width of the butonhole placket.
+  title: Buttonhole placket width
+buttons:
+  description: The number of buttons on the front closure.
+  options:
+    simon:
+      '10': 10 buttons
+      '11': 11 buttons
+      '12': 12 buttons
+      '4': 4 buttons
+      '5': 5 buttons
+      '6': 6 buttons
+      '7': 7 buttons
+      '8': 8 buttons
+      '9': 9 buttons
+    wahid:
+      '10': 10 buttons
+      '11': 11 buttons
+      '12': 12 buttons
+      '4': 4 buttons
+      '5': 5 buttons
+      '6': 6 buttons
+      '7': 7 buttons
+      '8': 8 buttons
+      '9': 9 buttons
+  title: Number of buttons
+centerBackDart:
+  description: The amount to take out in a dart at the top of the center back.
+  title: Center back dart
+centerFrontHemDrop:
+  description: The hem at the front is lowered by this ratio of your neck to hips vertical measurements.
+  title: Center front hem drop
+chestEase:
+  description: The amount of ease at your chest.
+  title: Chest ease
+chestPocketAngle:
+  description: The angle of the chest pocket.
+  title: Chest pocket angle
+chestPocketPlacement:
+  description: Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
+  title: Chest pocket placement
+chestPocketWeltSize:
+  description: The height of the chest pocket welt.
+  title: Chest pocket welt height
+chestPocketWidth:
+  description: 'The width of the chest pocket, as a factor of your chest circumference.'
+  title: Chest pocket width
+chestShaping:
+  description: 'The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.'
+  title: Chest shaping
+circlePercent:
+  description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt'
+  title: Circle percent
+collarAngle:
+  description: The angle of the collar tips.
+  title: Collar angle
+collarBend:
+  description: The bend of the collar.
+  title: Collar bend
+collarEase:
+  description: The amount of ease around your neck.
+  title: Collar ease
+collarFlare:
+  description: The flare of the collar tips.
+  title: Collar flare
+collarGap:
+  description: The gap between the the two collar ends.
+  title: Collar gap
+collarHeight:
+  description: This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+  title: Collar height
+collarNotchAngle:
+  description: Angle of the collar notch.
+  title: Collar notch angle
+collarNotchDepth:
+  description: Depth of the collar notch.
+  title: Collar notch depth
+collarNotchReturn:
+  description: Controls the length of the upper notch side. 100% = same as notch depth.
+  title: Collar notch return
+collarRoll:
+  description: The amount by which the top collar is larger than the undercollar.
+  title: Collar roll
+collarStandBend:
+  description: The bend of the collar stand.
+  title: Collar stand bend
+collarStandCurve:
+  description: The curve of the collar stand.
+  title: Collar stand curve
+collarStandWidth:
+  description: Widht of the collar stand.
+  title: Collar stand width
+cuffButtonRows:
+  description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs.
+  options:
+    '1': Single cuff button row
+    '2': Double cuff button row
+  title: Cuff button rows
+cuffDrape:
+  description: The amount by which the sleeve is wider than the cuff where the are joined.
+  title: Cuff drape
+cuffEase:
+  description: The amount of ease at your wrist.
+  title: Cuff ease
+cuffLength:
+  description: The length of the cuffs.
+  title: Cuff length
+cuffStyle:
+  description: The style of the cuffs.
+  options:
+    '1': Rounded barrel cuff
+    '2': Angled barrel cuff
+    '3': Straight barrel cuff
+    '4': Rounded French cuff
+    '5': Angled French cuff
+    '6': Straight French cuff
+  title: Cuff style
+dartToSideSeamFactor:
+  description: Shifts the intake from the darts to the side seam and visa versa
+  title: Dart to Side Seam Factor
+elasticWidth:
+  description: Width of the elastic band you intend to use.
+  title: Elastic width
+endStyle:
+  description: The style of the end of the tie.
+  options:
+    pointed: Pointed end
+    rounded: Rounded end
+    straight: Straight end
+  title: End style
+extraTopButton:
+  description: Whether or not to include an extra top button on the front closure.
+  options:
+    - No extra top button
+    - Extra top button
+  title: Extra top button
+extraWaist:
+  description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt
+  title: Extra waist
+frontCutawayAngle:
+  description: How much do you want the front to open up below the lower button.
+  title: Front opening bottom cutaway angle
+frontCutawayStart:
+  description: How much do you want the front to open up below the lower button.
+  title: Front opening bottom cutaway start
+frontDartDepthFactor:
+  description: The Depth of the front dart as a percentage of the Waist to Hip measurement
+  title: Front Dart Depth Factor
+frontDartPlacement:
+  description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
+  title: Front dart placement
+frontDrop:
+  description: How much the front panels lower from your hips towards your center front.
+  title: Front drop
+frontInset:
+  description: Amount the front armhole is cut deeper into the front panel.
+  title: Front inset
+frontPocketDepth:
+  description: 'The depth of the front pockets, as a factor of the space between your waist and hem.'
+  title: Front pocket depth
+frontPocketHeight:
+  description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement.'
+  title: Front pocket height
+frontPocketPlacement:
+  description: Location of the front pockets as a proportion of your chest circumference. Higher numbers move it more to the side.
+  title: Front pocket placement
+frontPocketWidth:
+  description: 'The width of the front pocket, as a factor of your chest circumference.'
+  title: Front pocket width
+frontRise:
+  description: 'Rise of the front panels at center front, between your breasts. Negative values will lower them.'
+  title: Front rise
+frontScyeDart:
+  description: The amount to take out in a dart at the front of the armhole.
+  title: Front scye dart
+frontStyle:
+  description: Whether you want a rounded or classic necline.
+  options:
+    '1': Classic
+    '2': Rounded
+  title: Neckline style
+headEase:
+  description: The amount of ease to fit the cap on your head.
+  title: Head ease
+hemBonus:
+  description: Additional width at the hem
+  title: Hem bonus
+hemCurve:
+  description: The height of the curve on a curved hem.
+  title: Hem curve
+hemRadius:
+  description: Radius of the rounded hem. Not relevant if you chose a classic hem.
+  title: Hem radius
+hemStyle:
+  description:
+    _default: Whether you want a rounded or classic hem.
+    simon: The style of the shirt hem.
+  options:
+    simon:
+      '1': Straight hem
+      '2': Baseball hem
+      '3': Slashed hem
+    wahid:
+      '1': Classic
+      '2': Rounded
+  title: Hem style
+hemWidth:
+  description: The width of the hem
+  title: Hem width
+hipFlare:
+  description: The amount to widen the shirt below the waist.
+  title: Hip flare
+hipRise:
+  description: How much the side panels rise on your hips.
+  title: Hip rise
+hipsEase:
+  description: The amount of ease at your hips.
+  title: Hips ease
+hipsReductionRatioBack:
+  description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping.
+  title: 'Hips reduction: back ratio'
+knotWidth:
+  description: The width of the tie at the knot/middle.
+  title: Knot width
+lapelStart:
+  description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.'
+  title: Lapel break point
+legBonus:
+  description: Extra length to add to the legs.
+  title: Leg length bonus
+legReduction:
+  description: 'The amount to further reduce the stretch at the (upper) legs. For best results, you want to fit your legs a but more snugly — say no to gaping.'
+  title: Leg reduction
+legStretch:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping.'
+  title: Leg stretch
+length:
+  description: The length of the skirt
+  title: Skirt length
+lengthBonus:
+  description: The amount to lengthen the garment. A negative value will shorten it.
+  title: Length bonus
+neckInset:
+  description: Distance from the neck to the waistcoat neckline at the shoulder seam.
+  title: Neck inset
+neckReduction:
+  description: Neck shaping at center back as percent of chest circumference.
+  title: Center back neck dart
+necklineBend:
+  description: Determines the shape/bend of the neckline at the front.
+  title: Neckline shape
+necklineDrop:
+  description:
+    _default: The amount the neck is cutout at the front.
+    wahid: The amount the front neckline is lowered. Negative values raise the neckline.
+  title: Neckline drop
+nrOfDarts:
+  description: Number of darts on each part
+  options:
+    '1': 1
+    '2': 2
+  title: Number of darts
+panels:
+  description: The number of panels to draft. More panels are better to fit a curvier model.
+  options:
+    '11': 11 panels
+    '13': 13 panels
+  title: Number of panels
+pouch:
+  description: Would you like a pouch/pocket on your hoodie?
+  options:
+    - Do not include pouch
+    - Include pouch
+  title: Front pouch
+princessSeamSmoothFactor:
+  description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will sharpen the curve, resulting in a harder to sew seam, and a more fitted coat.'
+  title: Princess seam smooth factor
+ribbing:
+  description: 'Do you want to include ribbing at the arms and hem, or will you apply a classic hem?'
+  options:
+    - Classic hem (No ribbing)
+    - Ribbing hem
+  title: Ribbing
+ribbingHeight:
+  description: The height of the ribbing band at the hem and wrists.
+  title: Ribbing height
+ribbingStretchFactor:
+  description: Determines the negative ease for the ribbing.
+  title: Ribbing stretch factor
+ribbingWidth:
+  description: The width of the ribbing you want to use.
+  title: Ribbing width
+rise:
+  description: Amount to raise the waist. A negative value will lower it.
+  title: Rise
+rollLineCollarHeight:
+  description: The amount by which the roll line hugs the neck.
+  title: Roll line collar height
+seamlessFullCircle:
+  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option'
+  options:
+    - 'No'
+    - 'Yes'
+  title: Seamless full circle
+seatEase:
+  description: The amount of ease at the largest part of your bum.
+  title: Seat ease
+shoulderEase:
+  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.
+  title: Shoulder ease
+shoulderInset:
+  description: Distance from the shoulder point to the waistcoat armhole at the shoulder seam.
+  title: Shoulder inset
+shoulderSlopeReduction:
+  description: The amount by which the shoulder slope is reduced to allow for shoulder padding.
+  title: Shoulder slope reduction
+shoulderStrapPlacement:
+  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).
+  title: Shoulderstrap placement
+shoulderStrapWidth:
+  description: The width of the shoulder straps.
+  title: Shoulderstrap width
+sideFrontPlacement:
+  description: Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel.
+  title: Front side boundary placement
+sleeveBend:
+  description: How much do you want the sleeve to be bent at the elbow.
+  title: Sleeve bend
+sleeveLengthBonus:
+  description: The amount to lengthen the sleeve. A negative value will shorten it.
+  title: Sleeve length bonus
+sleevePlacketLength:
+  description: The length of the sleeve placket.
+  title: Sleeve placket length
+sleevePlacketWidth:
+  description: The width of the sleeve placket.
+  title: Sleeve placket width
+sleevecapEase:
+  description: The amount by which the sleevecap seam is longer than the armhole seam.
+  title: Sleevecap ease
+sleevecapHeightFactor:
+  description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap.
+  title: Sleevecap height factor
+splitYoke:
+  description: Whether to draft a split or regular yoke.
+  options:
+    - Regular yoke
+    - Split yoke
+  title: Split yoke
+stretch:
+  description: The amount of negative ease.
+  title: Stretch
+stretchFactor:
+  description: Determines the horizontal negative ease.
+  title: Stretch
+tipWidth:
+  description:
+    _default: The width of the wings of the bow tie at the tip.
+    trayvon: The width of the tie at the tip.
+  title: Tip width
+waistBand:
+  description: Waist Band
+  options:
+    'no': 'No'
+    'yes': 'Yes'
+  title: Waist band
+waistEase:
+  description: The amount of ease at your (natural) waist.
+  title: Waist ease
+waistReduction:
+  description: The amount by which you want the corset to pinch your waist.
+  title: Waist reduction
+waistReductionRatioBack:
+  description: Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping.
+  title: 'Waist reduction: back ratio'
+waistReductionRatioFront:
+  description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping.
+  title: 'Waist reduction: front ratio'
+waistSideSeamRise:
+  description: Rise of the waist at the side seam
+  title: Waist Side Seam Rise
+waistbandOverlap:
+  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband'
+  title: Waistband overlap
+waistbandPosition:
+  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips'
+  title: Waistband position
+waistbandShape:
+  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences'
+  options:
+    - Straight
+    - Curved
+  title: Waistband shape
+waistbandWidth:
+  description: The width of the waistband.
+  title: Waistband width
+yokeDart:
+  description: Whether to include a dart at the sides of the yoke to fit a rounder back.
+  title: Yoke dart
+zipperLocation:
+  description: Zipper placement
+  options:
+    back: Back seam
+    side: Side seam
+  title: Zipper placement

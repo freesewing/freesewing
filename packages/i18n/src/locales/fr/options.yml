@@ -1,0 +1,522 @@
+acrossBackFactor:
+  description: Contrôle la largeur de votre dos en tant que facteur de mesure d'une épaule à l'autre.
+  title: Facteur largeur du dos
+adjustmentRibbon:
+  description: Ajouter un ruban pour rendre la cravate réglable.
+  options:
+    - Ne pas inclure le ruban
+    - Inclure le ruban
+  title: Ajustement du ruban
+armholeDepthFactor:
+  description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
+  title: Facteur de profondeur de l'emmanchure
+armholeDrop:
+  description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.
+  title: Abaissement d'emmanchure
+backDartDepthFactor:
+  description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
+  title: Facteur de la profondeur de la pince dos
+backDrop:
+  description: Combien les pans arrière s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
+  title: Abaissement du dos
+backInset:
+  description: Valeur d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
+  title: Encart arrière
+backNeckCutout:
+  description: How deep the neck is cut out at the back TODO
+  tile: Back neck cutout TODO
+backOpening:
+  description: Ouverture au centre de la fermeture arrière.
+  title: Ouverture arrière
+backRise:
+  description:
+    _default: La valeur par laquelle augmenter le dos.
+    bruce: Pourcentage par lequel la taille sera augmentée à l'arrière.
+    cathrin: De combien les pans arrières réhaussent vos bras jusqu'au centre de votre dos.
+  title: hausse du dos
+backScyeDart:
+  description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
+  title: Pince arrière sans gêne
+backVent:
+  description:
+    _default: Évent dorsal
+    jaeger: 'Voulez-vous un évent dorsal central, ou pas du tout?'
+  options:
+    jaeger:
+      - Pas d'évent dorsal
+      - Un seul évent dorsal
+      - Un double évent dorsal
+    penelope:
+      '0': 'Non'
+      '1': 'Oui'
+  title: Évent dorsal
+backVentLength:
+  description:
+    _default: Longeur de l'évent
+    jaeger: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
+  title: Longeur de l'évent
+backlineBend:
+  description: Détermine la forme/courbure de l'arrière des emmanchures.
+  title: Forme de l'arrière des emmanchures
+barrelcuffNarrowButton:
+  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
+  options:
+    - Pas de bouton étroit
+    - Inclure un bouton étroit
+  title: Bouton de manche étroit
+bicepsEase:
+  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
+  title: Aisance au niveau des biceps
+bowLength:
+  description: La longueur des ailes du noeud papillon.
+  title: Longueur du noeud
+bowStyle:
+  description: Le style du noeud.
+  options:
+    butterfly: Papillon
+    diamond: Diamant
+    square: Carré
+    widesquare: Carré large
+  title: Style du noeud
+bulge:
+  description: Augmentez l'angle pour créer plus d'espace dans la poche avant.
+  title: Renflement
+buttonPlacketStyle:
+  description: Style de la patte de boutonnage
+  options:
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnage
+buttonPlacketType:
+  description: Type de la patte de boutonnage.
+  options:
+    '1': Cousue
+    '2': Séparée
+  title: Type de patte de boutonnage
+buttonPlacketWidth:
+  description: Largeur de la patte de boutonnage.
+  title: Largeur de patte de boutonnage
+buttonfreeLength:
+  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+  title: Longueur sans bouton
+buttonholePlacketFoldWidth:
+  description: Largeur du pli de la boutonnière.
+  title: Largeur de pli de boutonnière
+buttonholePlacketStyle:
+  description: Style de la patte de boutonnière.
+  options:
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnière
+buttonholePlacketType:
+  description: Type de la patte de boutonnière.
+  options:
+    '1': Cousue
+    '2': Séparée
+  title: Type de patte de boutonnière.
+buttonholePlacketWidth:
+  description: Largeur de la patte de boutonnière.
+  title: Largeur de patte de boutonnière
+buttons:
+  description: Le nombre de boutons sur la fermeture avant.
+  options:
+    simon:
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
+    wahid:
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
+  title: Nombre de boutons
+centerBackDart:
+  description: La valeur à retirer dans une pince en haut du milieu du dos.
+  title: Pince du milieu du dos
+centerFrontHemDrop:
+  description: L'ourlet à l'avant est abaissé par ce rapport de mesures verticales de votre cou jusqu'à vos hanches.
+  title: Ourlet avant central
+chestEase:
+  description: L'ampleur d'aisance au niveau de votre poitrine.
+  title: Aisance de poitrine
+chestPocketAngle:
+  description: L'angle de la poche de poitrine.
+  title: L'angle de poche de poitrine
+chestPocketPlacement:
+  description: 'Emplacement de la poche de poitrine en proportion du quart de votre tour de poitrine. Plus la valeur est élevée, plu la poche se déplace vers le bord.'
+  title: Emplacement de la poche de poitrine
+chestPocketWeltSize:
+  description: La hauteur de la poche de poitrine trépointe.
+  title: Hauteur de la poche de poitrine trépointe
+chestPocketWidth:
+  description: 'La largeur de la poche de poitrine, en tant que facteur de votre tour de poitrine.'
+  title: Largeur de la poche de poitrine
+chestShaping:
+  description: 'La valeur à utiliser pour couper verticalement et étaler le pan avant supérieur afin de façonner la poitrine, en tant que facteur de votre tour de poitrine.'
+  title: Façonnage de poitrine
+circlePercent:
+  description: 'Le pourcentage d''une jupe en cercle. 100% fait une jupe cercle complet, 50% fait une jupe demi-cercle'
+  title: Pourcentage de cercle
+collarAngle:
+  description: L'angle des pointes de col.
+  title: Angle du col
+collarBend:
+  description: La courbure du col.
+  title: Courbure du col
+collarEase:
+  description: L'ampleur d'aisance au niveau du cou.
+  title: Aisance du cou
+collarFlare:
+  description: L'évasement des pointes du col.
+  title: Évasement du col
+collarGap:
+  description: L'écart entre les deux extrémités du col.
+  title: Écart du col
+collarHeight:
+  description: Ceci est la hauteur du col à l'arrière du cou et ne peut jamais être inférieure à deux fois la hauteur de la ligne de pliure du col.
+  title: Hauteur du col
+collarNotchAngle:
+  description: Angle de l'encoche du col.
+  title: Angle d'encoche du col
+collarNotchDepth:
+  description: Profondeur de l'encoche du col.
+  title: Profondeur d'encoche du col
+collarNotchReturn:
+  description: Contrôle la longueur du bord de l'encoche supérieure. 100% = identique à la profondeur de l'encoche.
+  title: Envers d'encoche du col
+collarRoll:
+  description: La valeur rendant le tombant du col plus large que le pied de col.
+  title: Pliure du col
+collarStandBend:
+  description: La courbure du col.
+  title: Courbure du col
+collarStandCurve:
+  description: La courbe du col.
+  title: Courbe du col
+collarStandWidth:
+  description: Largeur du col.
+  title: Largeur du col
+cuffButtonRows:
+  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
+  options:
+    '1': rangée de boutons de manchette simple
+    '2': rangée de boutons de manchette double
+  title: Rangée de boutons de manchette
+cuffDrape:
+  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
+  title: Drapé d'emmanchure
+cuffEase:
+  description: L'ampleur d'aisance à votre poignet.
+  title: Aisance d'emmanchure
+cuffLength:
+  description: La longueur d'emmanchure.
+  title: Longueur d'emmanchure
+cuffStyle:
+  description: Style d'emmanchure.
+  options:
+    '1': Emmanchure classique arrondie
+    '2': Emmanchure classique angulaire
+    '3': Emmanchure classique droite
+    '4': Emmanchure française arrondie
+    '5': Emmanchure française angulaire
+    '6': Emmanchure française droite
+  title: Style d'emmanchure
+dartToSideSeamFactor:
+  description: Déplace l'ouverture des pinces vers la couture latérale et vice versa.
+  title: Facteur pince vers couture latérale
+elasticWidth:
+  description: Largeur de la bande élastique que vous souhaitez utiliser.
+  title: Largeur de la bande élastique
+endStyle:
+  description: Le style de l'extrémité de la cravate.
+  options:
+    pointed: Extrémité pointue
+    rounded: Extrémité arrondie
+    straight: Extrémité droite
+  title: Style de l'extrémité
+extraTopButton:
+  description: Pour inclure ou non un bouton supérieur supplémentaire sur la fermeture avant.
+  options:
+    - Pas de bouton supérieur supplémentaire
+    - Bouton supérieur supplémentaire
+  title: Bouton supérieur supplémentaire
+extraWaist:
+  description: Le pourcentage déterminant si le haut de la jupe est plus long que le bas de la ceinture. Donner une valeur supérieure à 0 pour plisser la jupe.
+  title: Plissement de jupe
+frontCutawayAngle:
+  description: Combien voulez-vous que l'avant s'ouvre en dessous du bouton inférieur.
+  title: Angle de coupe inférieur d'ouverture avant
+frontCutawayStart:
+  description: Combien voulez-vous que l'avant s'ouvre en dessous du bouton inférieur.
+  title: Début d'ouverture avant en coupe
+frontDartDepthFactor:
+  description: La profondeur de la pince frontale en pourcentage de la mesure de la taille à la hanche
+  title: Facteur de profondeur de la pince avant
+frontDartPlacement:
+  description: Emplacement de la pince avant en proportion de la circonférence de votre poitrine. Des nombres plus élevés déplacent la pince vers le bord.
+  title: Position de pince avant
+frontDrop:
+  description: Combien les pans avant s'abaissent de vos hanches vers votre milieu avant.
+  title: Chute avant
+frontInset:
+  description: La taille de l'emmanchure avant est coupée plus profondément dans le pan avant.
+  title: Encart frontal
+frontPocketDepth:
+  description: 'La profondeur des poches avant, en tant que facteur de l''espace entre la taille et l''ourlet.'
+  title: profondeur des poches avant
+frontPocketHeight:
+  description: 'La hauteur à partir de laquelle la poche avant commence, en tant que facteur de mesure du niveau de votre taille naturelle au niveau de la hanche.'
+  title: Hauteur de la poche avant
+frontPocketPlacement:
+  description: Emplacement des poches avant en proportion de la circonférence de votre poitrine. Des nombres plus élevés le déplacent plus vers le bord.
+  title: Emplacement de la poche avant
+frontPocketWidth:
+  description: 'La largeur de la poche avant, en tant que facteur de votre tour de poitrine.'
+  title: Largeur de la poche avant
+frontRise:
+  description: 'Augmentation des pans avant au centre devant, entre vos seins. Les valeurs négatives les abaisseront.'
+  title: Augmentation des pans avant
+frontScyeDart:
+  description: La quantité à retirer de la pince à l'avant de l'emmanchure.
+  title: Pince avant de l'emmanchure
+frontStyle:
+  description: Choisir une encolure ronde ou classique.
+  options:
+    '1': Classique
+    '2': Ronde
+  title: Type d'encolure
+headEase:
+  description: La marge d'aisance requise pour porter votre casquette sur la tête.
+  title: Aisance tête
+hemBonus:
+  description: Largeur supplémentaire à l'ourlet
+  title: Ourlet supplémentaire
+hemCurve:
+  description: La hauteur de l'arrondi sur un ourlet arrondi.
+  title: Courbe de l'ourlet
+hemRadius:
+  description: Rayon de l'ourlet arrondi. Pas pertinent si vous choisissez un ourlet classique.
+  title: Rayon de l'ourlet
+hemStyle:
+  description:
+    _default: Choix d'un ourlet arrondi ou classique.
+    simon: Le style de l'ourlet de la chemise.
+  options:
+    simon:
+      '1': Ourlet droit
+      '2': Ourlet baseball
+      '3': Ourlet taillé
+    wahid:
+      '1': Classique
+      '2': Arrondi
+  title: Type d'ourlet
+hemWidth:
+  description: La largeur de l'ourlet
+  title: Largeur d'ourlet
+hipFlare:
+  description: The amount to widen the shirt below the waist. TODO
+  title: Hip flare TODO
+hipRise:
+  description: How much the side panels rise on your hips. TODO
+  title: Hip rise TODO
+hipsEase:
+  description: La marge d'aisance aux hanches.
+  title: Aisance des hanches
+hipsReductionRatioBack:
+  description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping. TODO
+  title: 'Hips reduction: back ratio TODO'
+knotWidth:
+  description: La largeur de la cravate au noeud/au milieu.
+  title: Largeur du noeud
+lapelStart:
+  description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline. TODO'
+  title: Lapel break point TODO
+legBonus:
+  description: Longueur supplémentaire à ajouter aux jambes.
+  title: Longueur supplémentaire jambes
+legReduction:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO TODO'
+  title: Leg reduction TODO TODO TODO
+legStretch:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
+  title: Leg stretch TODO
+length:
+  description: The length of the skirt TODO TODO TODO TODO
+  title: Skirt length TODO TODO TODO TODO
+lengthBonus:
+  description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
+  title: Ajout de longueur
+neckInset:
+  description: Distance from the neck to the waistcoat neckline at the shoulder seam. TODO
+  title: Neck inset TODO
+neckReduction:
+  description: Neck shaping at center back as percent of chest circumference. TODO
+  title: Center back neck dart TODO
+necklineBend:
+  description: Détermine la forme/courbure du devant de l'encolure.
+  title: Forme de l'encolure
+necklineDrop:
+  description:
+    _default: The amount the neck is cutout at the front. TODO
+    wahid: The amount the front neckline is lowered. Negative values raise the neckline. TODO
+  title: Neckline drop TODO
+nrOfDarts:
+  description: Nombre de pinces sur chaque partie
+  options:
+    '1': 1
+    '2': 2
+  title: Nombre de pinces
+panels:
+  description: The number of panels to draft. More panels are better to fit a curvier model. TODO
+  options:
+    '11': 11 panels TODO TODO TODO TODO
+    '13': 13 panels TODO TODO TODO TODO
+  title: Number of panels TODO
+pouch:
+  description: Voudriez vous une poche sur votre sweat à capuche ?
+  options:
+    - Ne pas inclure de poche
+    - Inclure une poche
+  title: Poche avant
+princessSeamSmoothFactor:
+  description: 'Contrôle la netteté de la découpe princesse une fois passée sur la poitrine. Un facteur élevé va applatir la courbe, resultant end un manteau moins ajusté qui va être plus simple à coudre. Un facteur bas va souligner la courbe, resultant en une couture plus compliquée, et un manteau plus ajusté.'
+  title: Facteur de lissage de la découpe princesse
+ribbing:
+  description: 'Voulez vous appliquer des côtes sur les bras et les ourlets, ou voulez vous appliquer un ourlet classique ?'
+  options:
+    - Ourlet classique (pas de côtes) TODO TODO TODO TODO
+    - Côtes
+  title: Côtes
+ribbingHeight:
+  description: The height of the ribbing band at the hem and wrists. TODO
+  title: Ribbing height TODO
+ribbingStretchFactor:
+  description: Determines the negative ease for the ribbing. TODO
+  title: Ribbing stretch factor TODO
+ribbingWidth:
+  description: The width of the ribbing you want to use. TODO
+  title: Ribbing width TODO
+rise:
+  description: Amount to raise the waist. A negative value will lower it. TODO
+  title: Rise TODO
+rollLineCollarHeight:
+  description: The amount by which the roll line hugs the neck. TODO
+  title: Roll line collar height TODO
+seamlessFullCircle:
+  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option TODO TODO TODO TODO'
+  options:
+    - No TODO TODO TODO TODO
+    - Yes TODO TODO TODO TODO
+  title: Seamless full circle TODO TODO TODO TODO
+seatEase:
+  description: The amount of ease at your butt. TODO
+  title: Seat ease TODO
+shoulderEase:
+  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat. TODO
+  title: Shoulder ease TODO
+shoulderInset:
+  description: Distance from the shoulder point to the waistcoat armhole at the shoulder seam. TODO
+  title: Shoulder inset TODO
+shoulderSlopeReduction:
+  description: The amount by which the shoulder slope is reduced to allow for shoulder padding. TODO
+  title: Shoulder slope reduction TODO
+shoulderStrapPlacement:
+  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers). TODO
+  title: Shoulderstrap placement TODO
+shoulderStrapWidth:
+  description: The width of the shoulder straps. TODO
+  title: Shoulderstrap width TODO
+sideFrontPlacement:
+  description: Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel. TODO
+  title: Front side boundary placement TODO
+sleeveBend:
+  description: How much do you want the sleeve to be bent at the elbow. TODO
+  title: Sleeve bend TODO
+sleeveLengthBonus:
+  description: The amount to lengthen the sleeve. A negative value will shorten it. TODO
+  title: Sleeve length bonus TODO
+sleevePlacketLength:
+  description: The length of the sleeve placket. TODO
+  title: Sleeve placket length TODO
+sleevePlacketWidth:
+  description: The width of the sleeve placket. TODO
+  title: Sleeve placket width TODO
+sleevecapEase:
+  description: The amount by which the sleevecap seam is longer than the armhole seam. TODO
+  title: Sleevecap ease TODO
+sleevecapHeightFactor:
+  description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
+  title: Sleevecap height factor TODO
+splitYoke:
+  description: Whether to draft a split or regular yoke. TODO
+  options:
+    - Regular yoke TODO TODO TODO TODO
+    - Split yoke TODO TODO TODO TODO
+  title: Split yoke TODO
+stretch:
+  description: The amount of negative ease. TODO
+  title: Stretch TODO
+stretchFactor:
+  description: Determines the horizontal negative ease. TODO
+  title: Stretch TODO
+tipWidth:
+  description:
+    _default: The width of the wings of the bow tie at the tip. TODO
+    trayvon: The width of the tie at the tip. TODO
+  title: Tip width TODO
+waistBand:
+  description: Waist Band TODO TODO TODO TODO
+  options:
+    'no': No TODO TODO TODO TODO
+    'yes': Yes TODO TODO TODO TODO
+  title: Waist band TODO TODO TODO TODO
+waistEase:
+  description: The amount of ease at your (natural) waist. TODO
+  title: Waist ease TODO
+waistReduction:
+  description: The amount by which you want the corset to pinch your waist. TODO
+  title: Waist reduction TODO
+waistReductionRatioBack:
+  description: Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping. TODO
+  title: 'Waist reduction: back ratio TODO'
+waistReductionRatioFront:
+  description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping. TODO
+  title: 'Waist reduction: front ratio TODO'
+waistSideSeamRise:
+  description: Raise of the waist at the side seam TODO TODO TODO TODO
+  title: Waist Side Seam Raise TODO TODO TODO TODO
+waistbandOverlap:
+  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO TODO TODO TODO'
+  title: Waistband overlap TODO TODO TODO TODO
+waistbandPosition:
+  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips TODO TODO TODO TODO'
+  title: Waistband position TODO TODO TODO TODO
+waistbandShape:
+  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences TODO TODO TODO TODO'
+  options:
+    - Straight TODO TODO TODO TODO
+    - Curved TODO TODO TODO TODO
+  title: Waistband shape TODO TODO TODO TODO
+waistbandWidth:
+  description: The width of the waistband. TODO
+  title: Waistband width TODO
+yokeDart:
+  description: Whether to include a dart at the sides of the yoke to fit a rounder back. TODO
+  title: Yoke dart TODO
+zipperLocation:
+  description: Zipper placement TODO TODO TODO TODO
+  options:
+    back: Back seam TODO TODO TODO TODO
+    side: Side seam TODO TODO TODO TODO
+  title: Zipper placement TODO TODO TODO TODO

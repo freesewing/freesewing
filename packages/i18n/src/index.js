@@ -14,7 +14,9 @@ const topics = [
   "filter",
   "gdpr",
   "i18n",
-  "measurements"
+  "measurements",
+  "options",
+  "patterns"
 ];
 
 const languages = ["en", "de", "es", "fr", "nl"];
@@ -27,6 +29,8 @@ const filter = {};
 const gdpr = {};
 const i18n = {};
 const measurements = {};
+const options = {};
+const patterns = {};
 const strings = {};
 
 for (let lang of languages) account[lang] = imports[lang].account;
@@ -37,6 +41,8 @@ for (let lang of languages) filter[lang] = imports[lang].filter;
 for (let lang of languages) gdpr[lang] = imports[lang].gdpr;
 for (let lang of languages) i18n[lang] = imports[lang].i18n;
 for (let lang of languages) measurements[lang] = imports[lang].measurements;
+for (let lang of languages) options[lang] = imports[lang].options;
+for (let lang of languages) patterns[lang] = imports[lang].patterns;
 for (let lang of languages) strings[lang] = imports[lang].strings;
 
 export {
@@ -48,5 +54,7 @@ export {
   gdpr,
   i18n,
   measurements,
+  options,
+  patterns,
   strings
 };

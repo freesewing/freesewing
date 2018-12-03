@@ -30,6 +30,8 @@ documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
+draftPatternForModel: 'Trazar {pattern} para {model} '
+draftPattern: 'Trazar {pattern} '
 drafts: Bocetos
 dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
@@ -94,6 +96,7 @@ profile: Perfil
 relatedLinks: Enlaces relacionados
 remove: Eliminar
 reportThisOnGitHub: Notifícalo en GitHub
+requiredMeasurements: Medidas requeridas
 resendActivationEmailMessage: 'Puedes iniciar sesión de nuevo con la misma dirección de E-mail, y te enviaremos un nuevo mensaje de confirmación.'
 resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña

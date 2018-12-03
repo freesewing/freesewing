@@ -1,0 +1,57 @@
+aaron:
+  description: Aaron ist ein sportliches Shirt oder ein Tank Top.
+  title: Shirt Aaron
+benjamin:
+  description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.
+  title: Schleife Benjamin
+bent:
+  description: Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.
+  title: Grundschnitt Bent
+brian:
+  description: Brian ist eine Grundschnitt für Männer.
+  title: Grundschnitt Brian
+bruce:
+  description: Bruce sind bequeme und stylische Retroshorts.
+  title: Retroshorts Bruce
+carlita:
+  description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+  title: Mantel Carlita
+carlton:
+  description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
+  title: Mantel Carlton Coat
+cathrin:
+  description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
+  title: Korsett Cathrin
+florent:
+  description: Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.
+  title: Schiebermütze Florent
+huey:
+  description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
+  title: Hoodie Huey
+hugo:
+  description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
+  title: Hoodie Hugo
+jaeger:
+  description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
+  title: Sakko Jaeger
+simon:
+  description: Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.
+  title: Hemd Simon
+sven:
+  description: Sven ist ein geradliniges Sweatshirt.
+  title: Sweatshirt Sven
+tamiko:
+  description: Tamiko ist ein Zero Waste Top.
+  title: Tamiko Top DONE
+theo:
+  description: Theo ist Theodore - mit einem schmaleren Schnitt.
+  title: Hose Theo
+theodore:
+  description: Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.
+  title: Hose Theodore
+trayvon:
+  description: 'Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.'
+  title: Krawatte Trayvon
+wahid:
+  description: Wahid ist eine klassische taillierte Weste.
+  title: Weste Wahid

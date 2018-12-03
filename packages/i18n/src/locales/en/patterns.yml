@@ -1,0 +1,57 @@
+aaron:
+  description: Aaron is an athletic shirt or tank top.
+  title: Aaron A-Shirt
+benjamin:
+  description: Benjamin is a bow tie pattern with four different shape options.
+  title: Benjamin Bow Tie
+bent:
+  description: This two-part sleeve block is the basis of our coat and jacket patterns.
+  title: Bent Body Block
+brian:
+  description: Brian is a basic body block for men.
+  title: Brian Body Block
+bruce:
+  description: Bruce are comfortable yet stylish boxer briefs.
+  title: Bruce Boxer Briefs
+carlita:
+  description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.'
+  title: Carlita Coat
+carlton:
+  description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
+  title: Carlton Coat
+cathrin:
+  description: Cathrin is an underbust corset or waist trainer.
+  title: Cathrin Corset
+florent:
+  description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
+  title: Florent Flat Cap
+huey:
+  description: Huey is a zip-up hoodie with optional front pockets.
+  title: Huey Hoodie
+hugo:
+  description: Hugo is a hooded jumper with raglan sleeves.
+  title: Hugo Hoodie
+jaeger:
+  description: Jeager is a sport coat style jacket with two buttons and patch pockets.
+  title: Jaeger Jacket
+simon:
+  description: Simon is a highly adaptable shirt pattern for men.
+  title: Simon Shirt
+sven:
+  description: Sven is a straightforward sweater.
+  title: Sven Sweatshirt
+tamiko:
+  description: Tamiko is a zero-waste top.
+  title: Tamiko Top
+theo:
+  description: Theo is Theodore with a more slim cut.
+  title: Theo trousers
+theodore:
+  description: Theodore are classic trousers by the (Aldrich) book.
+  title: Theodore trousers
+trayvon:
+  description: Trayvon is a tie that cuts no corners for a professional result.
+  title: Trayvon Tie
+wahid:
+  description: Wahid is a classic fitted waistcoat.
+  title: Wahid Waistcoat

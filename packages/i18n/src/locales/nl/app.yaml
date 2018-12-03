@@ -30,6 +30,8 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
+draftPatternForModel: 'Teken {pattern} voor {model}'
+draftPattern: 'Teken {pattern}'
 drafts: Patroontekeningen
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
@@ -94,6 +96,7 @@ profile: Profiel
 relatedLinks: Gerelateerde links
 remove: Verwijderen
 reportThisOnGitHub: Melden via GitHub
+requiredMeasurements: Vereiste maten
 resendActivationEmailMessage: 'Je kan je weer inschrijven met hetzelfde email adres, en dan sturen we je een nieuwe activatie email.'
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord

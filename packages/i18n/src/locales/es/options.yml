@@ -1,0 +1,522 @@
+acrossBackFactor:
+  description: Controla el ancho de espalda como un factor de la medida de hombro a hombro.
+  title: Factor de ancho de espalda
+adjustmentRibbon:
+  description: Añadir una banda para hacer la corbata ajustable.
+  options:
+    - No incluír banda
+    - Incluír banda
+  title: Banda de ajuste
+armholeDepthFactor:
+  description: Controla la profundidad de la sisa. Valores más altos producen sisas más profundas.
+  title: Factor de profundidad de la sisa
+armholeDrop:
+  description: Baja la sisa esta cantidad. Valores negativos la elevan.
+  title: Caída de la sisa
+backDartDepthFactor:
+  description: Lo profundidad de la pinza trasera como porcentaje de la medida de cadera a cintura
+  title: Factor de profundidad de la pinza trasera
+backDrop:
+  description: En qué medida los paneles posteriores se extienden bajo la cadera. Valores negativos los elevan sobre ella.
+  title: Caída de la espalda
+backInset:
+  description: Cantidad que la parte de atrás de la sisa se introduce en el panel trasero.
+  title: Inserción en la espalda
+backNeckCutout:
+  description: How deep the neck is cut out at the back TODO
+  tile: Back neck cutout TODO
+backOpening:
+  description: Abertura en el centro del cierre de la espalda.
+  title: Abertura de la espalda
+backRise:
+  description:
+    _default: Cantidad en que se eleva la espalda.
+    bruce: Porcentaje en el que la cintura se elevará en la espalda.
+    cathrin: Cantidad en que los paneles traseros se elevan sobre el centro de la espalda
+  title: Elevación de la espalda
+backScyeDart:
+  description: La cantidad a reducir en una pinza en la parte posterior de la sisa.
+  title: Pinza posterior de la sisa
+backVent:
+  description:
+    _default: Abertura posterior
+    jaeger: '¿Desea una abertura posterior central, una doble, o ninguna?'
+  options:
+    jaeger:
+      - Sin abertura posterior
+      - Abertura posterior central
+      - Abertura posterior doble
+    penelope:
+      '0': 'No'
+      '1': 'Si'
+  title: Abertura
+backVentLength:
+  description:
+    _default: Longitud de la abertura
+    jaeger: Controla la longitud de la abertura posterior. Números bajos producen aberturas cortas.
+  title: Longitud de la abertura
+backlineBend:
+  description: Determina la forma/curva de la parte posterior de la sisa.
+  title: Forma posterior de la sisa
+barrelcuffNarrowButton:
+  description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
+  options:
+    - Sin botón de ajuste
+    - Incluír botón de ajuste
+  title: Botón de ajuste del puño
+bicepsEase:
+  description: 'La cantidad de holgura en la parte superior del brazo. Ten en cuenta que, aunque intentamos repetar esto, ajustar la manga a la sisa toma preferencia sobre respetar la cantidad exacta de holgura.'
+  title: Holgura del bíceps
+bowLength:
+  description: La longitud de las alas de la pajarita.
+  title: Longitud de la pajarita
+bowStyle:
+  description: El estilo del lazo
+  options:
+    butterfly: Mariposa
+    diamond: Diamante
+    square: Cuadrado
+    widesquare: Cuadrado ancho
+  title: Estilo de la pajarita
+bulge:
+  description: Incrementar el ángulo para crear más espacio en el bolsillo delantero.
+  title: Bulto
+buttonPlacketStyle:
+  description: Estilo de la visto de los botones
+  options:
+    '1': Estilo clásico
+    '2': Estilo francés (sin costuras)
+  title: Estilo de la vista de los botones
+buttonPlacketType:
+  description: Tipo de vista de los botones
+  options:
+    '1': Parte de la pieza delantera
+    '2': Separada
+  title: Tipo de vista de los botones
+buttonPlacketWidth:
+  description: Anchura de la vista de los botones
+  title: Anchura de la vista de los botones
+buttonfreeLength:
+  description: Qué longitud se deja entre el último botón y el bajo.
+  title: Longitud sin botones
+buttonholePlacketFoldWidth:
+  description: Anchura del pliegue de la vista de los ojales.
+  title: Anchura del pliegue de la vista de los ojales
+buttonholePlacketStyle:
+  description: Estilo de la vista de los ojales.
+  options:
+    '1': Estilo clásico
+    '2': Estilo francés (sin costuras)
+  title: Estilo de la vista de los ojales
+buttonholePlacketType:
+  description: Tipo de vista de los ojales.
+  options:
+    '1': Parte de la pieza delantera
+    '2': Separada
+  title: Tipo de vista de lo ojales
+buttonholePlacketWidth:
+  description: Anchura de la vista de los ojales.
+  title: Anchura de la vista de los ojales
+buttons:
+  description: Número de botones delanteros
+  options:
+    simon:
+      '10': 10 botones
+      '11': 11 botones
+      '12': 12 botones
+      '4': 4 botones
+      '5': 5 botones
+      '6': 6 botones
+      '7': 7 botones
+      '8': 8 botones
+      '9': 9 botones
+    wahid:
+      '10': 10 botones
+      '11': 11 botones
+      '12': 12 botones
+      '4': 4 botones
+      '5': 5 botones
+      '6': 6 botones
+      '7': 7 botones
+      '8': 8 botones
+      '9': 9 botones
+  title: Número de botones
+centerBackDart:
+  description: La cantidad a reducir con una pinza en la parte superior de la espalda.
+  title: Pinza central trasera
+centerFrontHemDrop:
+  description: El dobladillo por delante se baja esta proporción de la medida de cuello a cadera
+  title: Caída del dobladillo por delante
+chestEase:
+  description: La cantidad de holgura en el pecho
+  title: Holgura de pecho
+chestPocketAngle:
+  description: El ángulo del bolsillo del pecho
+  title: Ángulo del bolsillo del pecho
+chestPocketPlacement:
+  description: El bolsillo del pecho se coloca como una proporcion de un cuarto de tu circunferencia de pecho. Valores mayores lo mueven hacia el lado.
+  title: Situación del bolsillo del pecho
+chestPocketWeltSize:
+  description: La altura de la solapa del bolsillo.
+  title: Altura de la solapa del bolsillo
+chestPocketWidth:
+  description: 'La anchura de la solapa del bolsillo, como factor de tu circunferencia de pecho.'
+  title: Anchura de la solapa del bolsillo
+chestShaping:
+  description: 'la cantidad vertical a esparcir en el panel frontal para dar forma al pecho, como factor de tu circunferencia de pecho.'
+  title: Forma del pecho
+circlePercent:
+  description: 'El porcentaje de círculo de la capa. 100% hace una falda de capa completa, 50% hace una falda de media capa'
+  title: Porcentaje de círculo
+collarAngle:
+  description: El ángulo de los picos del cuello
+  title: Ángulo del pico del cuello
+collarBend:
+  description: La inclinación del cuello hacia atrás.
+  title: Inclinación del cuello
+collarEase:
+  description: La cantidad de holgura alrededor del cuello.
+  title: Holgura del cuello
+collarFlare:
+  description: Cuánto más ancho es el cuello en los picos con respecto al centro.
+  title: Forma de los picos del cuello
+collarGap:
+  description: La separación entre los dos extremos del cuello
+  title: Espaciado del cuello
+collarHeight:
+  description: 'La altura del cuello en la partre de atrás del cuello, que no puede ser menor de dos veces que la altura de la linea por donde el cuello se dobla.'
+  title: Altura del cuello
+collarNotchAngle:
+  description: El ángulo de las muescas de las solapas
+  title: Ángulo de la muesca de la solapa
+collarNotchDepth:
+  description: La profundidad de las muescas de las solapas
+  title: Profundidad de la muesca de la solapa
+collarNotchReturn:
+  description: Controla la longitud de la parte superior de las muescas de las solapas. 100% = igual que la profundidad de las muescas.
+  title: Retorno de la muesca de la solapa
+collarRoll:
+  description: La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás.
+  title: Vuelta del cuello
+collarStandBend:
+  description: La cantidad en la que el cuello superior es mayor que el inferior.
+  title: Doblado del cuello
+collarStandCurve:
+  description: La curvatura de la base del cuello.
+  title: Curvatura de la base del cuello
+collarStandWidth:
+  description: La anchura de la base del cuello.
+  title: Anchura de la base del cuello
+cuffButtonRows:
+  description: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
+  options:
+    '1': Hilera de botones sencilla
+    '2': Hilera de botones doble
+  title: Hileras de botones en los puños
+cuffDrape:
+  description: La cantidad en la que la manga es más ancha que el puño en el lugar donde se unen.
+  title: Plisado del puño
+cuffEase:
+  description: La cantidad de holgura en la muñeca.
+  title: Holgura de muñeca
+cuffLength:
+  description: La longitud de los puños.
+  title: Longitud del puño
+cuffStyle:
+  description: El estilo de los puños.
+  options:
+    '1': Puño de barril redondeado
+    '2': Puño de barril en ángulo
+    '3': Puño de barril recto
+    '4': Puño francés redondeado
+    '5': Puño francés en ángulo
+    '6': Puño francés recto
+  title: Estilo del puño
+dartToSideSeamFactor:
+  description: Desplaza las pinzas hacia la costura lateral o las aleja
+  title: Factor de pinza ha costura lateral
+elasticWidth:
+  description: La anchura del elástico que piensas usar.
+  title: Anchura del elástico
+endStyle:
+  description: El estilo de la punta de la corbata
+  options:
+    pointed: Punta en ángulo
+    rounded: Punta redondeada
+    straight: Punta recta
+  title: Estilo de la punta
+extraTopButton:
+  description: Incluír o no un botón extra en el cierre frontal.
+  options:
+    - Sin botón extra
+    - Con botón extra
+  title: Botón extra superior
+extraWaist:
+  description: El porcentaje por el que la parte superior de la falda es más larga que la parte inferior de la cinturilla. Usa un valor mayor que 0 para hacer tablas o fruncidos.
+  title: Extra de cintura
+frontCutawayAngle:
+  description: El ángulo de la apertura bajo el último botón.
+  title: Ángulo de la apertura inferior por delante
+frontCutawayStart:
+  description: La apertura del cierre delantero bajo el último botón.
+  title: Apertura inferior por delante
+frontDartDepthFactor:
+  description: La profundidad de la pinta delantera como porcentaje de la medida de cintura a cadera.
+  title: Pactor de profundidad de la pinza delantera
+frontDartPlacement:
+  description: La posición de la pinza frontal como fracción de tu circunferencia de pecho. Números más alto la mueven hacia el lado.
+  title: Posición de la pinza frontal
+frontDrop:
+  description: Cuánto los paneles frontales caen bajo la cadera en el centro por delate.
+  title: Caída frontal
+frontInset:
+  description: Cantidad de la sisa delantera que se introduce en el panel frontal
+  title: Inserción frontal
+frontPocketDepth:
+  description: 'La profundidad del bolsillo frontal, como factor del espacio entre tu cintura y el bajo.'
+  title: Profundidad del bolsillo frontal
+frontPocketHeight:
+  description: 'La altura a la que el bolsillo frontal empieza, como factor de tu medida de cintura a cadera.'
+  title: Altura del bolsillo frontal
+frontPocketPlacement:
+  description: Posición de los bolsillos frontales como proporción de tu circunferencia de pecho. Números mayores los mueven hacia los lados.
+  title: Posición del bolsillo frontal
+frontPocketWidth:
+  description: 'La anchura del bolsillo frontal, como factor de tu circunferencia de pecho.'
+  title: Anchura del bolsillo frontal
+frontRise:
+  description: Cuánto se eleva el panel frontal entre tus pechos. Valores negativos lo bajan.
+  title: Elevación frontal
+frontScyeDart:
+  description: La cantidad a reducir en una pinza en el frente de la sisa.
+  title: Pinza frontal de la sisa
+frontStyle:
+  description: Para elegir un escote clásico o redondeado.
+  options:
+    '1': Clásico
+    '2': Redondeado
+  title: Estilo del escote
+headEase:
+  description: La holgura en la cabeza.
+  title: Holgura de cabeza
+hemBonus:
+  description: Anchura adicional del dobladillo.
+  title: Bonus de dobladillo
+hemCurve:
+  description: La altura de la curva en un dobladillo redondeado.
+  title: Curva del dobladillo
+hemRadius:
+  description: Radio del dobladillo redondeado. No es relevante si eliges un dobladillo clásico.
+  title: Radio del dobladillo
+hemStyle:
+  description:
+    _default: Para elegir un dobladillo clásico o redondeado.
+    simon: El estilo del dobladillo.
+  options:
+    simon:
+      '1': Recto
+      '2': Baseball DONE
+      '3': Recortado
+    wahid:
+      '1': Clásico
+      '2': Redondeado
+  title: Estilo del dobladillo
+hemWidth:
+  description: La anchura del dobladillo.
+  title: Anchura del dobladillo
+hipFlare:
+  description: La cantidad a ensanchar la camisa bajo la cintura.
+  title: Extra holgura en la cadera
+hipRise:
+  description: Cuánto se elevan los paneles laterales sobre tu cadera.
+  title: Elevación de la cadera
+hipsEase:
+  description: La cantidad de holgura en la cadera.
+  title: Holgura de cadera
+hipsReductionRatioBack:
+  description: La proporción de cadera a ser reducida en la forma del panel trasero. También influye en la forma de los paneles laterales.
+  title: 'Reducción de cadera: proporción trasera'
+knotWidth:
+  description: La anchura del nudo.
+  title: Anchura del nudo
+lapelStart:
+  description: 'Posición de la abertura de la solapa (donde la abertura empieza). Valores más bajos la acercan a la cintura, y valores más altos la acercan al pecho.'
+  title: Punto de apertura de la solapa
+legBonus:
+  description: La longitud extra a añadir a las perneras.
+  title: Extra de longitud de pierna
+legReduction:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO'
+  title: Leg reduction TODO TODO
+legStretch:
+  description: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
+  title: Estiramiento de la pernera
+length:
+  description: El largo de la falda
+  title: Largo de la falda
+lengthBonus:
+  description: La cantidad a elongar. Valores negativos lo acortan.
+  title: Extra de longitud
+neckInset:
+  description: Distancia desde el cuello a la línea del cuello del chaleco en el punto de la costura del hombro.
+  title: Inserción del cuello en el hombro
+neckReduction:
+  description: Pinza en el centro del cuello por detrás como porcentaje de la circunferencia de pecho.
+  title: Pinza trasera central del cuello
+necklineBend:
+  description: Determina la forma/curva del cuello en el frente.
+  title: Forma del cuello
+necklineDrop:
+  description:
+    _default: La cantidad de cuello que se corta en el frente.
+    wahid: La cantidad del escote está bajada.
+  title: Caída del cuello
+nrOfDarts:
+  description: Número de pinzas en cada parte
+  options:
+    '1': 1
+    '2': 2
+  title: Número de pinzas
+panels:
+  description: La cantidad de paneles a trazar. Más paneles permiten un mejor ajuste para cuerpos con más curvas.
+  options:
+    '11': 11 paneles
+    '13': 13 paneles
+  title: Número de paneles
+pouch:
+  description: ¿Quieres un bolsillo delantero?
+  options:
+    - No incluír bolsillo
+    - Incluír bolsillo
+  title: Bolsillo delantero
+princessSeamSmoothFactor:
+  description: 'Controla cómo de abruptamente se pegan al cuerpo las costuras princesa tras pasar la parte más ancha del pecho. Un valor alto suaviza la curva, resultando un un abrigo menos ajustado y más fácil de coser. Un valor bajo hace la curva más abrupta, siendo más difícil de coser y más ajustado.'
+  title: Factor de suavizado de las costuras princesa
+ribbing:
+  description: '¿Quieres ribetear los puños y el bajo, o prefieres hacer un dobladillo clásico?'
+  options:
+    - Dobladillo clásico
+    - Dobladillo ribeteado
+  title: Ribeteado
+ribbingHeight:
+  description: La altura del ribete en puños y bajo.
+  title: Altura del ribete
+ribbingStretchFactor:
+  description: Determina la holgura negativa para el ribete elástico.
+  title: Estiramiento del ribete
+ribbingWidth:
+  description: La anchura del ribete que vas a usar.
+  title: Anchura del ribete
+rise:
+  description: La cantidad a elevar la cintura. Valores negativos la bajan.
+  title: Elevación de la cintura
+rollLineCollarHeight:
+  description: La cantidad en la que la línea de doblado del cuello se acerca al cuello.
+  title: Altura del doblado del cuello
+seamlessFullCircle:
+  description: 'Selecciona ''sí'' para un círculo sin costuras, cortado doblando la tela dos veces. Ya que no tiene aberturas, tendrás que hacer una cinturilla elástica. Ésto produce una falda de capa completa ignorando la opción ''porcentaje de círculo''.'
+  options:
+    - No DONE
+    - Sí
+  title: Círculo completo sin costuras
+seatEase:
+  description: La cantidad de holgura en el trasero.
+  title: Holgura de trasero.
+shoulderEase:
+  description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
+  title: Holgura de hombro
+shoulderInset:
+  description: La distancia entre el hombro y la sisa en el la costura del hombro.
+  title: Inserción de hombro
+shoulderSlopeReduction:
+  description: La cantidad en la que la caída del hombro se reduce para añadir hombreras.
+  title: Reducción de caída del hombro
+shoulderStrapPlacement:
+  description: Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos).
+  title: Posición de los tirantes
+shoulderStrapWidth:
+  description: La anchura de los tirantes.
+  title: Anchura de los tirantes
+sideFrontPlacement:
+  description: Posición de la frontera entre frente y lateral como proporción de la circunferencia de pecho. Números más altos producen un panel lateral más ancho.
+  title: Posición de la frontera entre frente y lateral
+sleeveBend:
+  description: Cuánto quieres que la manga se doble en el codo.
+  title: Ángulo de la manga
+sleeveLengthBonus:
+  description: La cantidad a alargar la manga. Un valor negativo la acorta.
+  title: Longitud extra de manga
+sleevePlacketLength:
+  description: La longitud de la vista de la manga.
+  title: Longitud de la vista de la manga
+sleevePlacketWidth:
+  description: La anchura de la vista de la manga.
+  title: Anchura de la vista de la manga
+sleevecapEase:
+  description: La cantidad en la que la parte superior de la manga es más larga que la sisa
+  title: Holgura de la parte superior de la manga
+sleevecapHeightFactor:
+  description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
+  title: Factor de altura de la manga
+splitYoke:
+  description: Si se traza el canesú normal o partido.
+  options:
+    - Canesú normal
+    - Canesú partido
+  title: Canesú partido
+stretch:
+  description: La cantidad de holgura negativa.
+  title: Extensión
+stretchFactor:
+  description: Determina la holgura negativa horizontal.
+  title: Extensión
+tipWidth:
+  description:
+    _default: La anchura de las alas de la corbata en la punta.
+    trayvon: La anchura de la corbata en la punta.
+  title: Anchura de la punta
+waistBand:
+  description: Cinturilla
+  options:
+    'no': No Done
+    'yes': Sí
+  title: Cinturilla
+waistEase:
+  description: La cantidad de holgura en la cintura.
+  title: Holgura de cintura
+waistReduction:
+  description: La cantidad en la que quieres que el corset reduzca la cintura.
+  title: Reducción de cintura
+waistReductionRatioBack:
+  description: Proporción de la reducción de cintura que se hace con el panel trasero. También influenciará la forma del panel lateral.
+  title: 'Reducción de cintura: proporción del panel trasero'
+waistReductionRatioFront:
+  description: Proporción de la reducción de cintura que se hace con el panel delantero. También influenciará la forma del panel lateral.
+  title: 'Reducción de cintura: proporcion del panel delantero'
+waistSideSeamRise:
+  description: Alza de la costura lateral de la cintura.
+  title: Alza de la costura lateral de la cintura
+waistbandOverlap:
+  description: 'La longitud que se suporponen los dos extremos de la cinturilla, para permitir un botón. 0 significa no superposición, por ejemplo para poner una cremallera hasta arriba de la cinturilla.'
+  title: Superposición de la cinturilla
+waistbandPosition:
+  description: 'Dónde queda la cinturilla. 0% la coloca en la cintura, 100% la coloca en la cadera.'
+  title: Posición de la cinturilla
+waistbandShape:
+  description: 'La forma de la cinturilla. Recta hace las cosas fáciles, pero una curvada se adapta mejor a tu cuerpo si tienes bastante diferencia entre las medidas de cintura y cadera.'
+  options:
+    - Recta
+    - Curva
+  title: Forma de la cinturilla
+waistbandWidth:
+  description: La anchura de la cinturilla.
+  title: Anchura de la cinturilla
+yokeDart:
+  description: Si se incluye una pinza en los lados del canesú para ajustar una espalda más redondeada.
+  title: Pinza del canesú
+zipperLocation:
+  description: Posición de la cremallera
+  options:
+    back: Costura trasera
+    side: Costura lateral
+  title: Posición de la cremallera

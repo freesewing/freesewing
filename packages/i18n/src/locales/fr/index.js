@@ -6,6 +6,8 @@ import filter from "./filter.yml";
 import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
 import measurements from "./measurements.yaml";
+import options from "./options.yml";
+import patterns from "./patterns.yml";
 
 const topics = {
   account,
@@ -15,7 +17,9 @@ const topics = {
   filter,
   gdpr,
   i18n,
-  measurements
+  measurements,
+  options,
+  patterns
 };
 
 const strings = {};
@@ -28,7 +32,43 @@ for (let topic of Object.keys(topics)) {
       for (let key of Object.keys(topics[topic][id])) {
         if (typeof topics[topic][id][key] === "string")
           strings[topic + "." + id + "." + key] = topics[topic][id][key];
-        else console.log("Depth exceeded!");
+        else {
+          for (let subkey of Object.keys(topics[topic][id][key])) {
+            if (typeof topics[topic][id][key][subkey] === "string")
+              strings[topic + "." + id + "." + key + "." + subkey] =
+                topics[topic][id][key][subkey];
+            else {
+              for (let subsubkey of Object.keys(
+                topics[topic][id][key][subkey]
+              )) {
+                if (
+                  typeof topics[topic][id][key][subkey][subsubkey] === "string"
+                )
+                  strings[
+                    topic +
+                      "." +
+                      id +
+                      "." +
+                      key +
+                      "." +
+                      subkey +
+                      "." +
+                      subsubkey
+                  ] = topics[topic][id][key][subkey][subsubkey];
+                else {
+                  console.log(
+                    "Depth exceeded!",
+                    topic,
+                    id,
+                    key,
+                    subkey,
+                    subsubkey
+                  );
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -43,5 +83,7 @@ export {
   gdpr,
   i18n,
   measurements,
+  options,
+  patterns,
   strings
 };
