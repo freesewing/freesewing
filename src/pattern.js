@@ -211,7 +211,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
   let option = this.config.options[optionName];
   let anchors = {};
   let run = 1;
-  let runs = options.list.length;
+  let runs = option.list.length;
   for (let val of option.list) {
     this.options[optionName] = val;
     this.debug(
