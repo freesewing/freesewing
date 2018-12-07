@@ -1,48 +1,59 @@
 import freesewing from "freesewing";
 import pluginBundle from "@freesewing/plugin-bundle";
-
 import config from "../config/config";
 import { version } from "../package.json";
-
 import base from "./base";
 import back from "./back";
 import front from "./front";
 import sleevecap from "./sleevecap";
 import sleeve from "./sleeve";
 
-var pattern = new freesewing.Pattern({ version: version, ...config }).with(
-  pluginBundle
-);
-
-pattern.draft = function() {
-  this.parts.base = this.draftBase(new pattern.Part());
-  if (!this.needs("base", true)) this.parts.base.render = false;
-  if (this.needs(["back", "front", "sleeve", "sleevecap"])) {
-    this.parts.back = this.draftBack(new pattern.Part().copy(this.parts.base));
-  }
-  if (this.needs(["front", "sleeve", "sleevecap"])) {
-    this.parts.front = this.draftFront(
-      new pattern.Part().copy(this.parts.back)
-    );
-  }
-  if (this.needs(["sleeve", "sleevecap"])) {
-    this.parts.sleevecap = this.draftSleevecap(new pattern.Part());
-    // Don't render sleevecap unless specifically requested
-    if (!this.needs("sleevecap", true)) this.parts.sleevecap.render = false;
-  }
-  if (this.needs("sleeve")) {
-    this.parts.sleeve = this.draftSleeve(
-      new pattern.Part().copy(this.parts.sleevecap)
-    );
+export default class Brian extends freesewing.Pattern {
+  constructor(settings = false) {
+    super({ version: version, ...config }).with(pluginBundle);
+    if (settings !== false) {
+      for (let key of Object.keys(settings)) {
+        this.settings[key] = settings[key];
+      }
+    }
   }
 
-  return pattern;
-};
+  _draft() {
+    this.parts.base = this.draftBase(new this.Part());
+    if (!this.needs("base", true)) this.parts.base.render = false;
+    if (this.needs(["back", "front", "sleeve", "sleevecap"])) {
+      this.parts.back = this.draftBack(new this.Part().copy(this.parts.base));
+    }
+    if (this.needs(["front", "sleeve", "sleevecap"])) {
+      this.parts.front = this.draftFront(new this.Part().copy(this.parts.back));
+    }
+    if (this.needs(["sleeve", "sleevecap"])) {
+      this.parts.sleevecap = this.draftSleevecap(new this.Part());
+      // Don't render sleevecap unless specifically requested
+      if (!this.needs("sleevecap", true)) this.parts.sleevecap.render = false;
+    }
+    if (this.needs("sleeve")) {
+      this.parts.sleeve = this.draftSleeve(
+        new this.Part().copy(this.parts.sleevecap)
+      );
+    }
 
-pattern.draftBase = part => base.draft(part);
-pattern.draftBack = part => back.draft(part);
-pattern.draftFront = part => front.draft(part);
-pattern.draftSleevecap = part => sleevecap.draft(part);
-pattern.draftSleeve = part => sleeve.draft(part);
+    return this;
+  }
 
-export default pattern;
+  draftBase(part) {
+    return base.draft(part);
+  }
+  draftBack(part) {
+    return back.draft(part);
+  }
+  draftFront(part) {
+    return front.draft(part);
+  }
+  draftSleevecap(part) {
+    return sleevecap.draft(part);
+  }
+  draftSleeve(part) {
+    return sleeve.draft(part);
+  }
+}
