@@ -1,0 +1,81 @@
+{
+  "version": "0.2.0",
+  "name": "@freesewing/patterns",
+  "description": "An umbrella package for all freesewing patterns",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "homepage": "https://github.com/freesewing/patterns#readme",
+  "repository": "github:freesewing/patterns",
+  "bugs": {
+    "url": "https://github.com/freesewing/patterns/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "patterns",
+    "sewing"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/browser.js",
+  "scripts": {
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
+    "watch": "rollup -w -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@freesewing/aaron": "^0.3",
+    "@freesewing/brian": "^0.13",
+    "@freesewing/bruce": "^0.3",
+    "@freesewing/cathrin": "^0.2",
+    "@freesewing/hugo": "^0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.56",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.56",
+    "@babel/preset-env": "7.0.0-beta.56",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint": "5.3.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "1.14.0",
+    "rimraf": "^2.6.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "9.1.3",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-terser": "^1.0.1"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
+}

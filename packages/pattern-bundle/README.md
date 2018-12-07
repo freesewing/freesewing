@@ -7,22 +7,25 @@
 
 # Freesewing patterns
 
-An overview of sewing patterns available for [the JavaScript version of freesewing](https://github.com/freesewing/freesewing).
+This bundles the sewing patterns available for (the JavaScript version of)
+[freesewing](https://github.com/freesewing/freesewing).
 
-## Blocks
+## Included patterns
+
+### Blocks
 
 Blocks or slopers are basic patterns shapes that you can extend into fully detailed patterns.
 
  - [brian](https://github.com/freesewing/brian) : A basic body block for menswear, and the basis for many of our menswear patterns. 
 
-## Menswear
+### Menswear
 
  - [aaron](https://github.com/freesewing/aaron) : A tank top or A-shirt
  - [bruce](https://github.com/freesewing/bruce) : Boxer briefs
  - [hugo](https://github.com/freesewing/hugo) : A hooded sweatshirt with raglan sleeves
  
 
-## Womenswear
+### Womenswear
 
  - [cathrin](https://github.com/freesewing/cathrin) : An underbust corset or waist trainer
 
@@ -37,3 +40,19 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
 > It is not a limitation, or even a suggestion, of what you can or should wear or make.
 >
 > Wear whatever you want, and be proud of the things you make.
+
+## Install
+
+```sh
+npm i --save @freesewing/patterns
+```
+
+## Usage
+
+This exposes 3 named exports:
+
+ - `patterns` : An object holding pattern constructors
+ - `patternList` : An array of pattern names
+ - `patternInfo` : Extra pattern information that is typically used for frontend integration (tags, difficulty level, that sort of thing).
+
+For more details, please refer to [the main freesewing library](https://github.com/freesewing/freesewing).
