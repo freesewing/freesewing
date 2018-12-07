@@ -4,7 +4,6 @@ var front = {
   draft: function(part) {
     // prettier-ignore
     let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro} = part.shorthand();
-
     // Handle stretch
     for(let i in points) points[i].x = points[i].x * (1 - options.stretchFactor);
 

@@ -1,5 +1,5 @@
 import freesewing from "freesewing";
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 import pluginBundle from "@freesewing/plugin-bundle";
 
 import config from "../config/config";
@@ -8,24 +8,29 @@ import { version } from "../package.json";
 import back from "./back";
 import front from "./front";
 
-var pattern = new freesewing.Pattern({ version: version, ...config })
-  .with(pluginBundle);
+export default class Aaron extends freesewing.Pattern {
 
-pattern.draft = function() {
-  this.parts.base = this.draftBase(new pattern.Part());
-  if (!this.needs("base", true)) this.parts.base.render = false;
-  if (this.needs(["back", "front"])) {
-    this.parts.front = this.draftFront(new pattern.Part().copy(this.parts.base));
-  }
-  if (this.needs(["back"])) {
-    this.parts.back = this.draftBack(new pattern.Part().copy(this.parts.front));
+  constructor(settings = false) {
+    super({ version: version, ...config }).with(pluginBundle);
+    if(settings !== false) {
+      for (let key of Object.keys(settings)) this.settings[key] = settings[key];
+    }
   }
 
-  return pattern;
-};
+  _draft() {
+    this.parts.base = this.draftBase(new this.Part());
+    if (!this.needs("base", true)) this.parts.base.render = false;
+    if (this.needs(["back", "front"])) {
+      this.parts.front = this.draftFront(new this.Part().copy(this.parts.base));
+    }
+    if (this.needs(["back"])) {
+      this.parts.back = this.draftBack(new this.Part().copy(this.parts.front));
+    }
 
-pattern.draftBase = part => freesewing.patterns.brian.draftBase(part);
-pattern.draftFront = part => front.draft(part);
-pattern.draftBack = part => back.draft(part);
+    return this;
+  };
 
-export default pattern;
+  draftBase(part)  { return new Brian(this.settings).draftBase(part); }
+  draftFront(part) { return front.draft(part); }
+  draftBack(part)  { return back.draft(part); }
+}
