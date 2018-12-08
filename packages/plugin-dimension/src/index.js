@@ -71,8 +71,10 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.defs += markers;
-      svg.attributes.set("freesewing:plugin-dimension", version);
+      if (svg.attributes.get("freesewing:plugin-dimension") === false) {
+        svg.attributes.set("freesewing:plugin-dimension", version);
+        svg.defs += markers;
+      }
     }
   },
   macros: {
