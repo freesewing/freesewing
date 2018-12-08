@@ -31,6 +31,7 @@
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_plugins_bundle --footer 'freesewing.plugins.bundle = freesewing_plugins_bundle;'",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
@@ -70,11 +71,11 @@
     "package.json"
   ],
   "dependencies": {
-    "@freesewing/plugin-cutonfold": "0.9.0",
-    "@freesewing/plugin-dimension": "0.6.1",
-    "@freesewing/plugin-grainline": "0.0.3",
-    "@freesewing/plugin-logo": "0.3.3",
-    "@freesewing/plugin-scalebox": "0.2.0",
-    "@freesewing/plugin-title": "0.7.0"
+    "@freesewing/plugin-cutonfold": "^0.10",
+    "@freesewing/plugin-dimension": "0.7.1",
+    "@freesewing/plugin-grainline": "^0.2",
+    "@freesewing/plugin-logo": "^0.5",
+    "@freesewing/plugin-scalebox": "^0.3",
+    "@freesewing/plugin-title": "^0.9"
   }
 }

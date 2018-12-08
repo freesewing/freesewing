@@ -1,3 +1,4 @@
+/* eslint no-unused-expressions: "warn" */
 import cutonfold from "@freesewing/plugin-cutonfold";
 import dimension from "@freesewing/plugin-dimension";
 import grainline from "@freesewing/plugin-grainline";
@@ -15,7 +16,7 @@ function bundleHooks() {
       if (typeof hooks[i] === "undefined") hooks[i] = [];
       let hook = plugin.hooks[i];
       if (typeof hook === "function") hooks[i].push(hook);
-      else if (typeof hook === "array") {
+      else if (typeof hook === "object") {
         for (let method of hook) hooks[i].push(method);
       }
     }
