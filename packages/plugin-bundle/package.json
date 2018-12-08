@@ -85,11 +85,11 @@
     "package.json"
   ],
   "dependencies": {
-    "@freesewing/plugin-cutonfold": "^0.10",
-    "@freesewing/plugin-dimension": "0.7.1",
-    "@freesewing/plugin-grainline": "^0.2",
-    "@freesewing/plugin-logo": "^0.5",
-    "@freesewing/plugin-scalebox": "^0.3",
-    "@freesewing/plugin-title": "^0.9"
+    "@freesewing/plugin-cutonfold": "0.10.2",
+    "@freesewing/plugin-dimension": "0.7.3",
+    "@freesewing/plugin-grainline": "0.2.2",
+    "@freesewing/plugin-logo": "0.5.2",
+    "@freesewing/plugin-scalebox": "0.3.1",
+    "@freesewing/plugin-title": "0.9.1"
   }
 }
