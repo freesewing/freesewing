@@ -6,7 +6,7 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.attributes.add("freesewing:plugin-logo", version);
+      svg.attributes.set("freesewing:plugin-logo", version);
       svg.defs += logo;
       svg.style += "path.logo{stroke:none;fill:#000;}";
     }
