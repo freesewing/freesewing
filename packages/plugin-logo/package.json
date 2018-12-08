@@ -19,9 +19,9 @@
   "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "patch": "npm version patch -m \":bookmark: v%s\" && npm run build",
-    "minor": "npm version minor -m \":bookmark: v%s\" && npm run build",
-    "major": "npm version major -m \":bookmark: v%s\" && npm run build",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "precommit": "npm run pretty && lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
@@ -30,6 +30,7 @@
     "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.logo",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
