@@ -47,7 +47,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "^0.5",
+    "@freesewing/plugin-bundle": "0.5.1",
     "freesewing": "^0.19"
   },
   "devDependencies": {
