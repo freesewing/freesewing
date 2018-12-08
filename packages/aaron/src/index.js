@@ -15,16 +15,17 @@ export default class Aaron extends freesewing.Pattern {
     if(settings !== false) {
       for (let key of Object.keys(settings)) this.settings[key] = settings[key];
     }
+    this.Part.prototype.context = this.context;
   }
 
   _draft() {
-    this.parts.base = this.draftBase(new this.Part());
+    this.parts.base = this.draftBase(this.createPart());
     if (!this.needs("base", true)) this.parts.base.render = false;
     if (this.needs(["back", "front"])) {
-      this.parts.front = this.draftFront(new this.Part().copy(this.parts.base));
+      this.parts.front = this.draftFront(this.createPart().copy(this.parts.base));
     }
     if (this.needs(["back"])) {
-      this.parts.back = this.draftBack(new this.Part().copy(this.parts.front));
+      this.parts.back = this.draftBack(this.createPart().copy(this.parts.front));
     }
 
     return this;
