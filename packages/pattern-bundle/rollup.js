@@ -16,18 +16,17 @@ export default {
     commonjs(),
     babel({
       exclude: "node_modules/**"
-    }),
-    terser({
-      output: {
-        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-      }
     })
+    //    terser({
+    //      output: {
+    //        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+    //      }
+    //    })
   ],
-  external: ["freesewing", "@freesewing/plugin-bundle"],
+  external: ["freesewing"],
   output: {
     globals: {
-      freesewing: "freesewing",
-      "@freesewing/plugin-bundle": "freesewing.plugins.bundle"
+      freesewing: "freesewing"
     }
   }
 };

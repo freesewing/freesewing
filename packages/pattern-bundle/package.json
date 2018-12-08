@@ -30,6 +30,7 @@
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
@@ -44,8 +45,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/aaron": "^0.3",
-    "@freesewing/brian": "^0.13",
+    "@freesewing/aaron": "^0.4",
+    "@freesewing/brian": "^0.14",
     "@freesewing/bruce": "^0.3",
     "@freesewing/cathrin": "^0.2",
     "@freesewing/hugo": "^0.1"
