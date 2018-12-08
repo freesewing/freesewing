@@ -31,6 +31,7 @@
     "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.cutonfold",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
