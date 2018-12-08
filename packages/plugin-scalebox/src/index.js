@@ -4,9 +4,8 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(next) {
-      this.attributes.add("freesewing:plugin-scalebox", version);
-      next();
+    preRender: function(svg) {
+      svg.attributes.add("freesewing:plugin-scalebox", version);
     }
   },
   macros: {
