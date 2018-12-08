@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-title",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "A freesewing plugin to add a title to your pattern parts",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
