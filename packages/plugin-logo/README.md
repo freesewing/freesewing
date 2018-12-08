@@ -4,6 +4,15 @@
 <h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
+<p align="center">
+  <a href="https://travis-ci.org/freesewing/plugin-logo"><img src="https://badgen.net/travis/freesewing/plugin-logo/master" alt="Travis build"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-logo"><img src="https://badgen.net/npm/v/@freesewing/plugin-logo" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-logo"><img src="https://badgen.net/npm/license/@freesewing/plugin-logo" alt="License"></a>
+  <a href="https://codecov.io/gh/freesewing/plugin-logo"><img src="https://badgen.net/codecov/c/github/freesewing/plugin-logo/master" alt="Code coverage"></a>
+  <a href="https://deepscan.io/dashboard#view=project&pid=3267&bid=27574"><img src="https://deepscan.io/api/projects/3267/branches/27574/badge/grade.svg" alt="DeepScan grade"></a>
+  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
+  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
+</p>
 
 # plugin-logo
 
@@ -29,27 +38,22 @@ import logo from '@freesewing/plugin-logo'
 pattern.with(theme).with(logo);
 ```
 
-You now have the following snippets available:
+You now have the `logo` snippet available:
 
- - logo-xs
- - logo-sm
- - logo
- - logo-lg
- - logo-xl
- - logo-xxl
- 
-You can use them as such:
-
-```sh
-snippets.logo = new Snippet('logo-sm', points.logo);
+```js
+snippets.logo = new Snippet('logo', points.logo);
 ```
 
-## Example
+**Good to know:**
 
-Below is an example of the logo and the different sizes.
-As you can see, the logo's anchor point is the chin.
+ - The logo's anchor point is it's chin
+ - Like any snippet, you can scale the logo by setting the `data-scale` attribbute on the snippet:
+ 
+```js
+snippets.logo = new Snippet('logo', points.logo)
+ .attr('data-scale', 2); // Make it twice as big
+```
 
-![Example of the logo plugin](https://github.com/freesewing/plugin-logo/raw/master/img/example.png)
 
 ## Where to get help
 
