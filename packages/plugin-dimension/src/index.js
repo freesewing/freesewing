@@ -59,7 +59,6 @@ function lleader(so, type, self, id) {
   if (typeof so.d === "undefined") {
     point = so[type];
   } else {
-    point = new self.Point(so.x, so[type].y);
     point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type]);
     drawLeader(self, so[type], point, id);
   }
