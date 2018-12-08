@@ -1,8 +1,8 @@
 import aaron from "@freesewing/aaron";
 import brian from "@freesewing/brian";
-import bruce from "@freesewing/bruce";
-import cathrin from "@freesewing/cathrin";
-import hugo from "@freesewing/hugo";
+//import bruce from "@freesewing/bruce";
+//import cathrin from "@freesewing/cathrin";
+//import hugo from "@freesewing/hugo";
 import info from "./info";
 
 export const patterns = {
