@@ -6,8 +6,10 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.defs += markers;
-      svg.attributes.set("freesewing:plugin-cutonfold", version);
+      if (svg.attributes.get("freesewing:plugin-cutonfold") === false) {
+        svg.attributes.set("freesewing:plugin-cutonfold", version);
+        svg.defs += markers;
+      }
     }
   },
   macros: {
