@@ -5,10 +5,9 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(next) {
-      this.defs += markers;
-      this.attributes.add('freesewing:plugin-grainline', version);
-      next();
+    preRender: function(svg) {
+      svg.defs += markers;
+      svg.attributes.add('freesewing:plugin-grainline', version);
     }
   },
   macros: {
