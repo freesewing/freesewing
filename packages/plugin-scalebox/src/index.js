@@ -5,7 +5,7 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.attributes.add("freesewing:plugin-scalebox", version);
+      svg.attributes.set("freesewing:plugin-scalebox", version);
     }
   },
   macros: {
