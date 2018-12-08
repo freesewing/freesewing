@@ -19,22 +19,24 @@ export default class Brian extends freesewing.Pattern {
   }
 
   _draft() {
-    this.parts.base = this.draftBase(new this.Part());
+    this.parts.base = this.draftBase(this.createPart());
     if (!this.needs("base", true)) this.parts.base.render = false;
     if (this.needs(["back", "front", "sleeve", "sleevecap"])) {
-      this.parts.back = this.draftBack(new this.Part().copy(this.parts.base));
+      this.parts.back = this.draftBack(this.createPart().copy(this.parts.base));
     }
     if (this.needs(["front", "sleeve", "sleevecap"])) {
-      this.parts.front = this.draftFront(new this.Part().copy(this.parts.back));
+      this.parts.front = this.draftFront(
+        this.createPart().copy(this.parts.back)
+      );
     }
     if (this.needs(["sleeve", "sleevecap"])) {
-      this.parts.sleevecap = this.draftSleevecap(new this.Part());
+      this.parts.sleevecap = this.draftSleevecap(this.createPart());
       // Don't render sleevecap unless specifically requested
       if (!this.needs("sleevecap", true)) this.parts.sleevecap.render = false;
     }
     if (this.needs("sleeve")) {
       this.parts.sleeve = this.draftSleeve(
-        new this.Part().copy(this.parts.sleevecap)
+        this.createPart().copy(this.parts.sleevecap)
       );
     }
 
