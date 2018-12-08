@@ -6,9 +6,11 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.attributes.set("freesewing:plugin-logo", version);
-      svg.defs += logo;
-      svg.style += "path.logo{stroke:none;fill:#000;}";
+      if (svg.attributes.get("freesewing:plugin-logo") === false) {
+        svg.attributes.set("freesewing:plugin-logo", version);
+        svg.defs += logo;
+        svg.style += "path.logo{stroke:none;fill:#000;}";
+      }
     }
   }
 };
