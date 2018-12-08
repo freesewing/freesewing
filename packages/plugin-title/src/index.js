@@ -6,8 +6,10 @@ export default {
   version: version,
   hooks: {
     preRender: function(svg) {
-      svg.attributes.add("freesewing:plugin-title", version);
-      svg.style += style;
+      if (svg.attributes.get("freesewing:plugin-title") === false) {
+        svg.attributes.set("freesewing:plugin-title", version);
+        svg.style += style;
+      }
     }
   },
   macros: {
