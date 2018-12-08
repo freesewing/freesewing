@@ -4,6 +4,15 @@
 <h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
+<p align="center">
+  <a href="https://travis-ci.org/freesewing/plugin-title"><img src="https://badgen.net/travis/freesewing/plugin-title/master" alt="Travis build"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-title"><img src="https://badgen.net/npm/v/@freesewing/plugin-title" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-title"><img src="https://badgen.net/npm/license/@freesewing/plugin-title" alt="License"></a>
+  <a href="https://codecov.io/gh/freesewing/plugin-title"><img src="https://badgen.net/codecov/c/github/freesewing/plugin-title/master" alt="Code coverage"></a>
+  <a href="https://deepscan.io/dashboard#view=project&pid=3299&bid=28273"><img src="https://deepscan.io/api/projects/3299/branches/28273/badge/grade.svg" alt="DeepScan grade"></a>
+  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
+  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
+</p>
 
 # plugin-title
 

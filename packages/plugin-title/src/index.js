@@ -17,10 +17,11 @@ export default {
       let prefix = "";
       if (so.prefix) prefix = so.prefix;
       this.points[`_${prefix}_titleNr`] = so.at
+        .clone()
         .attr("data-text", so.nr, overwrite)
         .attr("data-text-class", "title-nr note fill-note");
       let shift = 10;
-      if (so.title && so.title !== "") {
+      if (so.title) {
         this.points[`_${prefix}_titleName`] = so.at
           .shift(-90, 13)
           .attr("data-text", so.title)
