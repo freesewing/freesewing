@@ -13,14 +13,19 @@ chatOnGitter: Chat via Gitter
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
 chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, worden irrelevante metingen verborgen bij het configureren van het model. Dit heeft geen invloed op hoe patronen worden opgesteld.
+chooseAModel: Kies een model
+chooseAPattern: Kies een patroon
+chooseYourOptions: Kies je opties
 close: Sluiten
 colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
 completeSignupText: "Voordat we onze start missen, laten we ervoor zorgen dat je account correct is ingesteld. Volg daartoe de onderstaande stappen:"
 completeSignupTitle: Voltooi je inschrijving
+configureYourDraft: Configureer je patroontekening
 contactUs: Neem contact op
 contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 contents: Inhoud
+continue: Doorgaan
 couldYouTranslateThis: Kan jij dit vertalen?
 created: Aangemaakt
 createModel: Model aanmaken
@@ -30,6 +35,7 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
+draftOptions: Teken opties
 draftPatternForModel: 'Teken {pattern} voor {model}'
 draftPattern: 'Teken {pattern}'
 drafts: Patroontekeningen
@@ -75,6 +81,7 @@ notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in 
 notes: Aantekeningen
 notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
 ohNo: Oh nee!
+options: Opties
 other: Andere
 otherThing: "Andere {thing}"
 patron-2: Powder monkey
@@ -86,9 +93,11 @@ patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maa
 patronsKeepUsAfloat: Freesewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
+pattern: Patroon
 patterns: Patronen
 pendingConfirmation: In afwachting van bevestiging
 pleaseEnterAValidEmailAddress: 'Gelieve een geldig email adres in te voeren'
+pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
 preview: Voorbeeld
 privacyNotice: Privacy melding
 proceedWithCaution: Ga voorzichtig te werk
@@ -125,6 +134,8 @@ userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
 weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valideren
+weEncounteredAProblem: We zijn op een probleem gestoten
+weEncourageYouToReportThis: We nodigen je uit om dit te melden
 welcomeAboard: Welkom aan boord
 welcome: Welkom
 weNeverShareYourEmail: We geven jouw email adres nooit door aan derden

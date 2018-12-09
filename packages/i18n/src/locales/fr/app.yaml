@@ -13,14 +13,19 @@ chatOnGitter: Chatter sur Gitter
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
 chest: Poitrine
+chooseAModel: Choisir un modèle
+chooseAPattern: Choisir un patron
+chooseYourOptions: Choisir vos options
 close: Fermer
 colourYes: "Image couleur: le contenu est disponible en français"
 community: Communauté
 completeSignupText: "Avant de commencer du mauvais pied, assurons-nous que votre compte est configuré correctement. Complétez simplement les étapes ci-dessous:"
 completeSignupTitle: Complétez votre inscription
+configureYourDraft: Configurez votre ébauche
 contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
 contents: Contenus
+continue: Continuer
 couldYouTranslateThis: Pourriez-vous traduire cela?
 created: Créé
 createModel: Créer le modèle
@@ -30,6 +35,7 @@ documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
+draftOptions: Options de l'ébauche
 draftPattern: 'Ébauche de {pattern}'
 draftPatternForModel: 'Ebauche de {pattern} pour {model}'
 drafts: Ébauches
@@ -75,6 +81,7 @@ notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible e
 notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
 ohNo: Oh non !
+options: Options
 other: Autre
 otherThing: "Autres {thing}"
 patron-2: Powder monkey
@@ -85,10 +92,12 @@ patron: Mécène
 patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez épargner quelques pièces chaque mois, vous devriez également devenir un mécène de Freesewing.
 patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
-patternOptions: Options des patrons
+patternOptions: Options du patron
+pattern: Patron
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
 pleaseEnterAValidEmailAddress: Merci d'entrer une adresse e-mail valide
+pleaseIncludeTheInformationBelow: S'il vous plaît inclure les informations ci-dessous
 preview: Aperçu
 privacyNotice: Avis de confidentialité
 proceedWithCaution: Procéder avec prudence
@@ -125,6 +134,8 @@ userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
 users: Utilisateurs
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
+weEncounteredAProblem: Nous avons rencontré un problème
+weEncourageYouToReportThis: Nous vous encourageons à signaler ceci
 welcomeAboard: Bienvenue à bord
 welcome: Bienvenue
 weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.

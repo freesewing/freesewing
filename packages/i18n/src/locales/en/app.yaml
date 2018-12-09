@@ -13,14 +13,19 @@ chatOnGitter: Chat on Gitter
 checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
 chest: Chest
 chestInfo: Breasts require extra measurements. If your model has no breasts, irrelevant measurements will be hidden when configuring the model. This has no impact on how patterns are drafted.
+chooseAModel: Choose a model
+chooseAPattern: Choose a pattern
+chooseYourOptions: Choose your options
 close: Close
 colourYes: "Colour picture: Content is available in English"
 community: Community
 completeSignupText: "Before we start off on the wrong foot, let's make sure your account is set up correctly. Simply complete the steps below:"
 completeSignupTitle: Complete your signup
+configureYourDraft: Configure your draft
 contactUs: Contact us
 contentLocaleFallback: That's why we're showing you the English version instead.
 contents: Contents
+continue: Continue
 couldYouTranslateThis: Could you translate this?
 created: Created
 createModel: Create model
@@ -30,6 +35,7 @@ documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
 download: Download
+draftOptions: Draft options
 draftPattern: 'Draft {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
@@ -75,6 +81,7 @@ notAllOfThisContentIsAvailableInLanguage: Not all of this content is available i
 notesInfo: These are your notes. You can write anything you want here
 notes: Notes
 ohNo: Oh no!
+options: Options
 other: Other
 otherThing: "Other {thing}"
 patron-2: Powder monkey
@@ -86,9 +93,11 @@ patronPitch: If you think what we do is worthwhile, and if you can spare a few c
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
 patternOptions: Pattern options
+pattern: pattern
 patterns: Patterns
 pendingConfirmation: Pending confirmation
 pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
+pleaseIncludeTheInformationBelow: Please include the information below
 preview: Preview
 privacyNotice: Privacy notice
 proceedWithCaution: Proceed with caution
@@ -125,6 +134,8 @@ userHasBeenWithUsSince: '{user} has been with us since {since}'
 users: Users
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
+weEncounteredAProblem: We encountered a problem
+weEncourageYouToReportThis: We encourage you to report this
 welcomeAboard: Welcome aboard
 welcome: Welcome
 weNeverShareYourEmail: We'll never share your email with anyone else

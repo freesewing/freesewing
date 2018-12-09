@@ -13,14 +13,19 @@ chatOnGitter: Chatea en Gitter
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chest: Pecho
+chooseAModel: Elige un modelo
+chooseAPattern: Elige un patrón
+chooseYourOptions: Elige tus opciones
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
 community: Comunidad
 completeSignupText: "Antes de comenzar con el pie equivocado, asegurémonos de que su cuenta esté configurada correctamente. Simplemente complete los pasos a continuación:"
 completeSignupTitle: Complete su registro
+configureYourDraft: Configurar su boceto
 contactUs: Contactáctanos
 contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 contents: Contenidos
+continue: Continuar
 couldYouTranslateThis: ¿Podrías traducir esto?
 created: Creado
 createModel: Crear el modelo
@@ -30,6 +35,7 @@ documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
+draftOptions: Opciones del boceto
 draftPatternForModel: 'Trazar {pattern} para {model} '
 draftPattern: 'Trazar {pattern} '
 drafts: Bocetos
@@ -75,6 +81,7 @@ notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponibl
 notesInfo: Estas son tus notas. Puedes escribir lo que quieras aquí.
 notes: Notas
 ohNo: ¡Oh no!
+options: Opciones
 other: Otro
 otherThing: "Otras {thing}"
 patron-2: Chico de la pólvora
@@ -85,10 +92,12 @@ patron: Mecenas
 patronPitch: Si crees que lo que hacemos vale la pena, y si puedes ahorrar unas cuantas monedas cada mes, entonces también deberías convertirte en un mecenas de freesewing.
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
-patternOptions: Opciones de patrón
+patternOptions: Opciones del patrón
+pattern: Patrón
 patterns: Patrones
 pendingConfirmation: Confirmación pendiente
 pleaseEnterAValidEmailAddress: 'Por favor, entra una dirección de E-mail válida'
+pleaseIncludeTheInformationBelow: Por favor incluya la siguiente información
 preview: vista previa
 privacyNotice: Aviso de Privacidad
 proceedWithCaution: Proceder con cautela
@@ -125,6 +134,8 @@ userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 users: Userios
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirmación
+weEncounteredAProblem: Nos encontramos con un problema
+weEncourageYouToReportThis: Le animamos a informar de esto
 welcomeAboard: Bienvenido a bordo
 welcome: Bienvenido
 weNeverShareYourEmail: Nunca compartiremos esto con nadie

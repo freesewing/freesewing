@@ -13,14 +13,19 @@ chatOnGitter: Chatte bei Gitter
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
 chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
+chooseAModel: Wähle ein Modell
+chooseAPattern: Wähle ein Schnittmuster
+chooseYourOptions: Wähle deine Optionen
 close: Schließen
 colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
 completeSignupText: "Bevor wir mit dem falschen Fuß beginnen, sollten wir sicherstellen, dass Ihr Konto richtig eingerichtet ist. Führen Sie einfach die folgenden Schritte aus:"
 completeSignupTitle: Vervollständigen Sie Ihre Anmeldung
+configureYourDraft: Konfigurieren Sie Ihren Entwurf
 contactUs: Kontaktiere uns
 contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
 contents: Inhalte
+continue: Fortsetzen
 couldYouTranslateThis: Könnten Sie das übersetzen?
 created: Erstellt
 createModel: Erstellen Sie das Modell
@@ -30,6 +35,7 @@ documentationForDevelopers: Dokumentation für Entwickler
 documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
+draftOptions: Entwurfoptionen
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
 drafts: Entwürfe
@@ -75,6 +81,7 @@ notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch ve
 notes: Anmerkungen
 notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
 ohNo: Oh Nein!
+options: Optionen
 other: Andere
 otherThing: "Andere {thing}"
 patron-2: Pulveraffe
@@ -86,9 +93,11 @@ patronPitch: Wenn Sie der Meinung sind, dass das, was wir tun, sich lohnt, und w
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
 patternOptions: Musteroptionen
+pattern: Schnittmuster
 patterns: Schnittmuster
 pendingConfirmation: Ausstehende Bestätigung
 pleaseEnterAValidEmailAddress: Bitte eine gueltige Email Adresse angeben
+pleaseIncludeTheInformationBelow: Bitte geben Sie die Informationen unten an
 preview: Vorschau
 privacyNotice: Datenschutzerklärung
 proceedWithCaution: Gehen Sie vorsichtig vor
@@ -125,6 +134,8 @@ userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 users: Benutzer
 weAreValidatingYourConfirmationCode: Wir prüfen deinen Bestätigungs-Code.
 weCouldNotValidateYourConfirmationCode: Wir konnten Ihren Bestätigungscode nicht bestätigen
+weEncounteredAProblem: Wir sind auf ein Problem gestoßen
+weEncourageYouToReportThis: Wir empfehlen Ihnen, dies zu melden
 welcomeAboard: Willkommen an Bord
 welcome: Willkommen
 weNeverShareYourEmail: Wir werden Deine E-Mail Adresse niemals weitergeben.
