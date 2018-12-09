@@ -1,25 +1,22 @@
-import { macroName, round, sampleStyle } from "./utils";
+import { macroName, round, sampleStyle, methodHash } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Svg from "./svg";
-import Hooks from "./hooks";
 import pack from "bin-pack";
 import Store from "./store";
-import * as hooklib from "hooks-fixed";
+import hooks from "./hooks";
 
 export default function Pattern(config = false) {
   // width and height properties
   this.width = false;
   this.height = false;
 
-  // Hooks and Svg instance
-  for (let k in hooklib) this[k] = hooklib[k];
-  this.hooks = new Hooks();
-  Svg.prototype.hooks = this.hooks;
+  // Hooks
+  this.hooks = hooks;
 
-  // Data containers
+  // Containers
   this.settings = {
     complete: true,
     idPrefix: "fs-",
@@ -31,12 +28,14 @@ export default function Pattern(config = false) {
   this.store = new Store();
   this.parts = {};
 
-  // Merge config with defaults
+  // Merge config with defaults (FIXME: set defaults)
   let defaults = {
     measurements: {},
     options: {}
   };
   this.config = { ...defaults, ...config };
+
+  // Convert options
   for (let i in config.options) {
     let option = config.options[i];
     if (typeof option === "object") {
@@ -53,13 +52,7 @@ export default function Pattern(config = false) {
     }
   }
 
-  // Constructors
-  this.Part = Part;
-  this.Point = Point;
-  this.Path = Path;
-  this.Snippet = Snippet;
-
-  // Context object to inject in part prototype
+  // Context object to inject in part
   this.context = {
     parts: this.parts,
     config: this.config,
@@ -67,30 +60,48 @@ export default function Pattern(config = false) {
     options: this.options,
     store: this.store
   };
-  this.Part.prototype.context = this.context;
-  this.Part.prototype.macros = {};
+
+  // Constructors
+  this.Part = Part;
+  this.Point = Point;
+  this.Path = Path;
+  this.Snippet = Snippet;
+
+  let self = this;
+  this.Part.prototype.getContext = function() {
+    return self.context;
+  };
+
   this.Part.prototype.hooks = this.hooks;
+  this.is = "";
 }
 
-/** Method to attach preDraft hooks on */
-Pattern.prototype.preDraft = function() {};
+// FIXME: Still needed?
+Pattern.prototype.createPart = function() {
+  let part = new Part();
+  part.context = this.context;
 
-/** Method to attach postDraft hooks on */
-Pattern.prototype.postDraft = function() {};
+  return part;
+};
 
-/** Method to attach preSample hooks on */
-Pattern.prototype.preSample = function() {};
-
-/** Method to attach postSample hooks on */
-Pattern.prototype.postSample = function() {};
+Pattern.prototype.runHooks = function(hookName, data = false) {
+  if (data === false) data = this;
+  let hooks = this.hooks[hookName];
+  if (hooks.length > 0) {
+    for (let hook of hooks) {
+      hook.method(data, hook.data);
+    }
+  }
+};
 
 /**
  * Calls _draft in the method, and pre- and postDraft
  */
 Pattern.prototype.draft = function() {
-  this.preDraft();
+  this.is = "draft";
+  this.runHooks("preDraft");
   this._draft();
-  this.postDraft();
+  this.runHooks("postDraft");
 
   return this;
 };
@@ -173,7 +184,8 @@ Pattern.prototype.sampleRun = function(
  * Handles option sampling
  */
 Pattern.prototype.sampleOption = function(optionName) {
-  this.preSample();
+  this.is = "sample";
+  this.runHooks("preSample");
   let step, val;
   let factor = 1;
   let anchors = {};
@@ -201,7 +213,7 @@ Pattern.prototype.sampleOption = function(optionName) {
     val += step;
   }
   this.parts = parts;
-  this.postSample();
+  this.runHooks("postSample");
 
   return this;
 };
@@ -231,7 +243,8 @@ Pattern.prototype.sampleListOption = function(optionName) {
  * Handles measurement sampling
  */
 Pattern.prototype.sampleMeasurement = function(measurementName) {
-  this.preSample();
+  this.is = "sample";
+  this.runHooks("preSample");
   let anchors = {};
   let parts = this.sampleParts();
   let val = this.settings.measurements[measurementName];
@@ -249,7 +262,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
     val += step;
   }
   this.parts = parts;
-  this.postSample();
+  this.runHooks("postSample");
 
   return this;
 };
@@ -258,7 +271,8 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
  * Handles models sampling
  */
 Pattern.prototype.sampleModels = function(models, focus = false) {
-  this.preSample();
+  this.is = "sample";
+  this.runHooks("preSample");
   let anchors = {};
   let parts = this.sampleParts();
   let run = 0;
@@ -271,59 +285,46 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
     this.sampleRun(parts, anchors, run, runs, className);
   }
   this.parts = parts;
-  this.postSample();
+  this.runHooks("postSample");
 
   return this;
 };
 
 /** Debug method, exposes debug hook */
-Pattern.prototype.debug = function(data) {};
+Pattern.prototype.debug = function(...data) {
+  this.runHooks("debug", data);
+};
 
 Pattern.prototype.render = function() {
   this.svg = new Svg(this);
+  this.svg.hooks = this.hooks;
 
   return this.pack().svg.render(this);
 };
 
-Pattern.prototype.on = function(hook, method) {
-  if (typeof this.hooks._hooks[hook] === "undefined") {
-    this.hooks._hooks[hook] = [];
-  }
-  this.hooks._hooks[hook].push(method);
-
-  // Pattern object hooks need to be attached on load
-  let localHooks = [
-    "preDraft",
-    "postDraft",
-    "preSample",
-    "postSample",
-    "debug"
-  ];
-  if (localHooks.includes(hook)) {
-    let self = this;
-    this.hooks.attach(hook, self);
-  }
+Pattern.prototype.on = function(hook, method, data) {
+  this.hooks[hook].push({ method, data });
 };
 
-Pattern.prototype.with = function(plugin) {
+Pattern.prototype.with = function(plugin, data = false) {
   this.debug(
     "success",
     "🔌 Plugin loaded",
     `${plugin.name} v${plugin.version}`
   );
-  if (plugin.hooks) this.loadPluginHooks(plugin);
+  if (plugin.hooks) this.loadPluginHooks(plugin, data);
   if (plugin.macros) this.loadPluginMacros(plugin);
 
   return this;
 };
 
-Pattern.prototype.loadPluginHooks = function(plugin) {
-  for (let hook of this.hooks.all) {
+Pattern.prototype.loadPluginHooks = function(plugin, data) {
+  for (let hook of Object.keys(this.hooks)) {
     if (typeof plugin.hooks[hook] === "function") {
-      this.on(hook, plugin.hooks[hook]);
+      this.on(hook, plugin.hooks[hook], data);
     } else if (typeof plugin.hooks[hook] === "object") {
       for (let method of plugin.hooks[hook]) {
-        this.on(hook, method);
+        this.on(hook, method, data);
       }
     }
   }

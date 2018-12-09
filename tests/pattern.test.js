@@ -153,6 +153,7 @@ it("Should sample models with focus", () => {
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(10, a.context.config.measurements.headToToe);
+    a.points.anchor = new a.Point(20, 30);
     a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
     pattern.parts.b.copy(a);
   };
@@ -179,9 +180,8 @@ it("Should register a hook via on", () => {
   let pattern = new freesewing.Pattern();
   let count = 0;
   pattern._draft = () => {};
-  pattern.on("preDraft", function(next) {
+  pattern.on("preDraft", function(pattern) {
     count++;
-    next();
   });
   pattern.draft();
   expect(count).to.equal(1);
@@ -195,9 +195,8 @@ it("Should register a hook from a plugin", () => {
     name: "test",
     version: "0.1-test",
     hooks: {
-      preDraft: function(next) {
+      preDraft: function(pattern) {
         count++;
-        next();
       }
     }
   };
@@ -234,4 +233,10 @@ it("Should check whether a parts is strictly needed", () => {
   pattern.settings.only = ["test", "foo", "bar"];
   expect(pattern.needs("foo")).to.equal(true);
   expect(pattern.needs("foo", true)).to.equal(true);
+});
+
+it("Should check whether created parts get the pattern context", () => {
+  let pattern = new freesewing.Pattern();
+  let part = pattern.createPart();
+  expect(part.context).to.equal(pattern.context);
 });

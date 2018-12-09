@@ -3,7 +3,6 @@ import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
-import * as hooklib from "hooks-fixed";
 
 function Part() {
   this.attributes = new Attributes();
@@ -17,8 +16,6 @@ function Part() {
   this.height = false;
   this.render = true;
   this.utils = utils;
-  for (let k in hooklib) this[k] = hooklib[k];
-  // Keep track of attached hooks
 
   // Constructors so macros can create objects
   this.Point = Point;
@@ -26,7 +23,8 @@ function Part() {
   this.Snippet = Snippet;
 
   let self = this;
-  this.hooks.attach("debug", self);
+
+  this.context = this.getContext();
 
   return this;
 }

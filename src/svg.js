@@ -1,5 +1,4 @@
 import Attributes from "./attributes";
-import * as hooklib from "hooks-fixed";
 
 import { version } from "../package.json";
 
@@ -24,21 +23,17 @@ function Svg(pattern) {
     "http://freesewing.org/namespaces/freesewing"
   );
   this.attributes.add("freesewing", version);
-  for (let k in hooklib) this[k] = hooklib[k];
-
-  //this.hooks was injected into the prototype by pattern
-  let self = this;
-  this.hooks.attach("preRender", self);
-  this.hooks.attach("postRender", self);
-  this.hooks.attach("insertText", self);
-  this.hooks.attach("debug", self);
 }
 
-/** Method to attach preRender hooks on */
-Svg.prototype.preRender = function() {};
-
-/** Method to attach postRender hooks on */
-Svg.prototype.postRender = function() {};
+Svg.prototype.runHooks = function(hookName, data = false) {
+  if (data === false) data = this;
+  let hooks = this.hooks[hookName];
+  if (hooks.length > 0) {
+    for (let hook of hooks) {
+      hook.method(data, hook.data);
+    }
+  }
+};
 
 /** Method to attach insertText hooks on */
 Svg.prototype.insertText = function() {};
@@ -49,7 +44,8 @@ Svg.prototype.debug = function() {};
 /** Renders a draft object as SVG */
 Svg.prototype.render = function(pattern) {
   this.idPrefix = pattern.settings.idPrefix;
-  this.preRender();
+  this.runHooks("preRender");
+  //this.preRender();
   if (!pattern.settings.embed) {
     this.attributes.add("width", pattern.width + "mm");
     this.attributes.add("height", pattern.height + "mm");
@@ -76,7 +72,8 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.closeGroup();
   this.svg += this.nl() + "</svg>";
   this.svg += this.renderComments(this.footer);
-  this.postRender();
+  this.runHooks("postRender");
+  //this.postRender();
   return this.svg;
 };
 

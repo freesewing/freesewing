@@ -38,3 +38,10 @@ it("Should return attributes as array", () => {
   );
   expect(a.getAsArray("nope")).to.equal(false);
 });
+
+it("Should render attributes as CSS", () => {
+  let a = newAttr()
+    .set("line-height", 1.2)
+    .add("border", "1px solid red");
+  expect(a.renderAsCss()).to.equal(" line-height:1.2; border:1px solid red;");
+});
