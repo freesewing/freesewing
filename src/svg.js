@@ -35,8 +35,14 @@ Svg.prototype.runHooks = function(hookName, data = false) {
   }
 };
 
-/** Method to attach insertText hooks on */
-Svg.prototype.insertText = function() {};
+/** Runs insertText hooks */
+Svg.prototype.insertText = function(text) {
+  if (this.hooks.insertText.length > 0) {
+    for (let hook of this.hooks.insertText) text = hook.method(text, hook.data);
+  }
+
+  return text;
+};
 
 /** Debug method, exposes debug hook */
 Svg.prototype.debug = function() {};
@@ -162,9 +168,9 @@ Svg.prototype.renderPath = function(path) {
 };
 
 Svg.prototype.renderPathText = function(path) {
-  this.text = path.attributes.get("data-text");
-  if (!this.text) return "";
-  else this.insertText();
+  let text = path.attributes.get("data-text");
+  if (!text) return "";
+  else this.text = this.insertText(text);
   let attributes = path.attributes.renderIfPrefixIs("data-text-");
   // Sadly aligning text along a patch can't be done in CSS only
   let offset = "";
@@ -188,12 +194,10 @@ Svg.prototype.renderText = function(point) {
   if (text !== false) {
     let joint = "";
     for (let string of text) {
-      this.text = string;
-      this.insertText();
+      this.text = this.insertText(string);
       joint += this.text + " ";
     }
-    this.text = joint;
-    this.insertText();
+    this.text = this.insertText(joint);
   }
   point.attributes.set("data-text-x", point.x);
   point.attributes.set("data-text-y", point.y);

@@ -2,14 +2,6 @@ import Point from "./point";
 import Bezier from "bezier-js";
 import crypto from "crypto";
 
-/** Generates a hash, do not use this for security */
-export function methodHash(method) {
-  return crypto
-    .createHash("sha1")
-    .update(method.toSource())
-    .digest("base64");
-}
-
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`;

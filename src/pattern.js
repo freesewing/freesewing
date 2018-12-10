@@ -1,4 +1,4 @@
-import { macroName, round, sampleStyle, methodHash } from "./utils";
+import { macroName, round, sampleStyle } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
