@@ -1,3 +1,6 @@
+100PercentCommunity: 100% gemeenschap
+100PercentFree: 100% gratis
+100PercentOpenSource: 100% open source
 aboutFreesewing: Over Freesewing
 account: Account
 accountCreated: Account aangemaakt
@@ -48,6 +51,7 @@ fieldSaved: "{field} opgeslagen"
 filterPatterns: Patronen filteren
 forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
+freesewingOnGithub: Freesewing op GitHub
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Goed gedaan
@@ -104,7 +108,7 @@ proceedWithCaution: Ga voorzichtig te werk
 profile: Profiel
 relatedLinks: Gerelateerde links
 remove: Verwijderen
-reportThisOnGitHub: Melden via GitHub
+reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
 resendActivationEmailMessage: 'Je kan je weer inschrijven met hetzelfde email adres, en dan sturen we je een nieuwe activatie email.'
 resendActivationEmail: Stuur een nieuwe activatie email

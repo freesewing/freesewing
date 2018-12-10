@@ -5,6 +5,7 @@ import errors from "./errors.yaml";
 import filter from "./filter.yml";
 import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
+import intro from "./intro.yaml";
 import measurements from "./measurements.yaml";
 import options from "./options.yml";
 import patterns from "./patterns.yml";
@@ -17,6 +18,7 @@ const topics = {
   filter,
   gdpr,
   i18n,
+  intro,
   measurements,
   options,
   patterns
@@ -82,6 +84,7 @@ export {
   filter,
   gdpr,
   i18n,
+  intro,
   measurements,
   options,
   patterns,

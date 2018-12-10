@@ -1,3 +1,6 @@
+100PercentCommunity: 100% community
+100PercentFree: 100% free
+100PercentOpenSource: 100% open source
 aboutFreesewing: About Freesewing
 account: Account
 accountCreated: Account created
@@ -48,6 +51,7 @@ fieldSaved: "{field} saved"
 filterPatterns: Filter patterns
 forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
 freesewing: Freesewing
+freesewingOnGithub: Freesewing on GitHub
 github: GitHub
 goAheadWeWillWait: Go ahead, we'll wait.
 goodJob: Good job
@@ -104,7 +108,7 @@ proceedWithCaution: Proceed with caution
 profile: Profile
 relatedLinks: Related links
 remove: Remove
-reportThisOnGitHub: Report this on GitHub
+reportThisOnGithub: Report this on GitHub
 requiredMeasurements: Required measurements
 resendActivationEmailMessage: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message.'
 resendActivationEmail: Re-send activation E-mail
