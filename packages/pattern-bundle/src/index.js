@@ -25,11 +25,13 @@ let list = [];
 for (let p of patternList) {
   let pattern = new patterns[p]();
   for (let m of pattern.config.measurements) list.push(m);
+  info[p].version = pattern.config.version;
   info[p].measurements = pattern.config.measurements;
   info[p].options = [];
   for (let o of Object.keys(pattern.config.options)) {
     if (typeof pattern.config.options[o] === "object") info[p].options.push(o);
   }
+  info[p].config = pattern.config;
 }
 
 export const patternInfo = info;

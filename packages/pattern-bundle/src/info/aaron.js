@@ -1,4 +1,5 @@
 const info = {
+  name: "aaron",
   design: "Joost De Cock",
   code: "Joost De Cock",
   department: "menswear",
