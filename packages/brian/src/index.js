@@ -19,6 +19,8 @@ const Brian = function(settings = false) {
       this.settings[key] = settings[key];
     }
   }
+
+  return this;
 };
 
 // Setup inheritance

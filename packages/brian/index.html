@@ -21,13 +21,15 @@
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
 console.log('adding hooks to pattern');
-       var pattern = freesewing.patterns.brian
-         .with(freesewing.plugins.debug)
-         .with(freesewing.plugins.validate)
-         .with(freesewing.plugins.theme)
-         .with(freesewing.plugins.designer)
-         .with(freesewing.plugins.i18n)
-       ;
+       var pattern = new freesewing.patterns.brian();
+       console.log('pattern', pattern);
+       pattern.with(freesewing.plugins.debug)
+       //pattern.with(freesewing.plugins.validate)
+    //   pattern.with(freesewing.plugins.theme)
+       //pattern.with(freesewing.plugins.designer)
+       //pattern.with(freesewing.plugins.i18n)
+       console.log('pattern after', pattern);
+
        //pattern.on('postSample', function(next) {
        // console.log('postSample hook');
        // next();
@@ -68,7 +70,7 @@ console.log('adding hooks to pattern');
       //  models: freesewing.models.men
       //}
       //pattern.settings.nly= ['base'];
-      //pattern.options.brianFitSleeve = false;
+      pattern.options.lengthBonus = 0.15;
       //pattern.options.brianFitCollar = false;
       //pattern.sampleOption('shoulderSlopeReduction');
       //pattern.sampleMeasurement('shoulderSlope');
