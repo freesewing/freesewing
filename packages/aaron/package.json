@@ -47,7 +47,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "0.14.1"
+    "@freesewing/brian": "^0.16"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",

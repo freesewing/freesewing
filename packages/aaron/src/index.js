@@ -7,16 +7,9 @@ import back from "./back";
 import front from "./front";
 
 const Aaron = function(settings = false) {
-  // Make this a new freesewing.Pattern instance
   freesewing.Pattern.call(this, { version: version, ...config });
-  // Load plugins
   this.with(pluginBundle);
-  // Inject settings passed to the constructor
-  if (settings !== false) {
-    for (let key of Object.keys(settings)) {
-      this.settings[key] = settings[key];
-    }
-  }
+  if (settings !== false) this.mergeSettings(settings);
 
   return this;
 };
