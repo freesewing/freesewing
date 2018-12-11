@@ -8,6 +8,7 @@ import i18n from "./i18n.yaml";
 import intro from "./intro.yaml";
 import measurements from "./measurements.yaml";
 import options from "./options.yml";
+import optiongroups from "./optiongroups.yaml";
 import patterns from "./patterns.yml";
 
 const topics = {
@@ -21,6 +22,7 @@ const topics = {
   intro,
   measurements,
   options,
+  optiongroups,
   patterns
 };
 
@@ -87,6 +89,7 @@ export {
   intro,
   measurements,
   options,
+  optiongroups,
   patterns,
   strings
 };

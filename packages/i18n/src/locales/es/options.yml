@@ -24,7 +24,7 @@ backInset:
   title: Inserción en la espalda
 backNeckCutout:
   description: How deep the neck is cut out at the back TODO
-  tile: Back neck cutout TODO
+  title: Back neck cutout TODO
 backOpening:
   description: Abertura en el centro del cierre de la espalda.
   title: Abertura de la espalda
@@ -254,6 +254,9 @@ extraTopButton:
 extraWaist:
   description: El porcentaje por el que la parte superior de la falda es más larga que la parte inferior de la cinturilla. Usa un valor mayor que 0 para hacer tablas o fruncidos.
   title: Extra de cintura
+frontArmholeDeeper:
+  description: How much do you want the front armhole to be cut out deeper than the back.
+  title: Front armhole extra cutout
 frontCutawayAngle:
   description: El ángulo de la apertura bajo el último botón.
   title: Ángulo de la apertura inferior por delante
@@ -458,6 +461,9 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
   title: Factor de altura de la manga
+sleeveWidthGuarantee:
+  description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+  title: Sleeve width guarantee
 splitYoke:
   description: Si se traza el canesú normal o partido.
   options:

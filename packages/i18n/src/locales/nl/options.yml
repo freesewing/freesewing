@@ -24,7 +24,7 @@ backInset:
   title: Inzet achter
 backNeckCutout:
   description: How deep the neck is cut out at the back TODO
-  tile: Back neck cutout TODO
+  title: Hals uitsnijding achteraan
 backOpening:
   description: 'Opening aan de sluiting op de middenrug. '
   title: Rugopening
@@ -254,6 +254,9 @@ extraTopButton:
 extraWaist:
   description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO TODO
   title: Extra waist TODO TODO
+frontArmholeDeeper:
+  description: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
+  title: Extra uitsnijding armsgat vooraan
 frontCutawayAngle:
   description: In welke hoek wil je dat de voorpanden openen vanaf de onderste knoop.
   title: Hoek weggeknipte opening onder
@@ -458,6 +461,9 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
   title: Hoogte mouwkop factor
+sleeveWidthGuarantee:
+  description: Bepaalt hoeveel van de mouwbreedte we garanderen wanneer we de mouw aan het armsgat aanpassen.
+  title: Gegarandeerde mouw breedte
 splitYoke:
   description: Of je een tweedelige of gewone schouderpas wil.
   options:

@@ -24,7 +24,7 @@ backInset:
   title: Back inset TODO
 backNeckCutout:
   description: How deep the neck is cut out at the back TODO
-  tile: Back neck cutout TODO
+  title: Back neck cutout TODO
 backOpening:
   description: Opening at the center back closure. TODO
   title: Back opening TODO
@@ -254,6 +254,9 @@ extraTopButton:
 extraWaist:
   description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO TODO TODO
   title: Extra waist TODO TODO TODO
+frontArmholeDeeper:
+  description: How much do you want the front armhole to be cut out deeper than the back.
+  title: Front armhole extra cutout
 frontCutawayAngle:
   description: How much do you want the front to open up below the lower button. TODO
   title: Front opening bottom cutaway angle TODO
@@ -458,6 +461,9 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
   title: Sleevecap height factor TODO
+sleeveWidthGuarantee:
+  description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+  title: Sleeve width guarantee
 splitYoke:
   description: Whether to draft a split or regular yoke. TODO
   options:

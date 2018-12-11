@@ -24,7 +24,7 @@ backInset:
   title: Encart arrière
 backNeckCutout:
   description: How deep the neck is cut out at the back TODO
-  tile: Back neck cutout TODO
+  title: Back neck cutout TODO
 backOpening:
   description: Ouverture au centre de la fermeture arrière.
   title: Ouverture arrière
@@ -254,6 +254,9 @@ extraTopButton:
 extraWaist:
   description: Le pourcentage déterminant si le haut de la jupe est plus long que le bas de la ceinture. Donner une valeur supérieure à 0 pour plisser la jupe.
   title: Plissement de jupe
+frontArmholeDeeper:
+  description: How much do you want the front armhole to be cut out deeper than the back.
+  title: Front armhole extra cutout
 frontCutawayAngle:
   description: Combien voulez-vous que l'avant s'ouvre en dessous du bouton inférieur.
   title: Angle de coupe inférieur d'ouverture avant
@@ -458,6 +461,9 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
   title: Sleevecap height factor TODO
+sleeveWidthGuarantee:
+  description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+  title: Sleeve width guarantee
 splitYoke:
   description: Whether to draft a split or regular yoke. TODO
   options:
