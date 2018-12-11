@@ -13,12 +13,8 @@ const Brian = function(settings = false) {
   freesewing.Pattern.call(this, { version: version, ...config });
   // Load plugins
   this.with(pluginBundle);
-  // Inject settings passed to the constructor
-  if (settings !== false) {
-    for (let key of Object.keys(settings)) {
-      this.settings[key] = settings[key];
-    }
-  }
+  // Merge settings passed to the constructor
+  if (settings !== false) this.mergeSettings(settings);
 
   return this;
 };
