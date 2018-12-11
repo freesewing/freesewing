@@ -22,10 +22,6 @@ function Part() {
   this.Path = Path;
   this.Snippet = Snippet;
 
-  let self = this;
-
-  this.context = this.getContext();
-
   return this;
 }
 
@@ -167,7 +163,7 @@ Part.prototype.shorthand = function() {
   return {
     sa,
     measurements: this.context.settings.measurements || {},
-    options: this.context.options || {},
+    options: this.context.settings.options || {},
     store: this.context.store,
     points: this.points || {},
     paths: this.paths || {},

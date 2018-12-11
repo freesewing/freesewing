@@ -52,7 +52,6 @@
     ]
   },
   "dependencies": {
-    "@freesewing/patterns": "0.3.0",
     "bezier-js": "^2.2.15",
     "bin-pack": "1.0.2"
   },

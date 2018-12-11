@@ -9,79 +9,77 @@ import Store from "./store";
 import hooks from "./hooks";
 
 export default function Pattern(config = false) {
-  // width and height properties
-  this.width = false;
-  this.height = false;
+  this.config = config; // Pattern configuration
+  this.width = false; // Will be set after render
+  this.height = false; // Will be set after render
+  this.is = ""; // Will be set when drafting/sampling
 
-  // Hooks
-  this.hooks = hooks;
+  this.store = new Store(); // Store for sharing data across parts
+  this.parts = {}; // Parts container
+  this.hooks = hooks; // Hooks container
 
-  // Containers
+  this.Part = Part; // Part constructor
+  this.Point = Point; // Point constructor
+  this.Path = Path; // Path constructor
+  this.Snippet = Snippet; // Snippet constructor
+
+  // Default settings
   this.settings = {
     complete: true,
     idPrefix: "fs-",
     locale: "en",
     units: "metric",
-    margin: 2
-  };
-  this.options = {};
-  this.store = new Store();
-  this.parts = {};
-
-  // Merge config with defaults (FIXME: set defaults)
-  let defaults = {
-    measurements: {},
+    margin: 2,
     options: {}
   };
-  this.config = { ...defaults, ...config };
 
   // Convert options
   for (let i in config.options) {
     let option = config.options[i];
     if (typeof option === "object") {
-      if (typeof option.pct !== "undefined") this.options[i] = option.pct / 100;
-      else if (typeof option.mm !== "undefined") this.options[i] = option.mm;
-      else if (typeof option.deg !== "undefined") this.options[i] = option.deg;
+      if (typeof option.pct !== "undefined")
+        this.settings.options[i] = option.pct / 100;
+      else if (typeof option.mm !== "undefined")
+        this.settings.options[i] = option.mm;
+      else if (typeof option.deg !== "undefined")
+        this.settings.options[i] = option.deg;
       else if (typeof option.count !== "undefined")
-        this.options[i] = option.count;
+        this.settings.options[i] = option.count;
       else if (typeof option.dflt !== "undefined")
-        this.options[i] = option.dflt;
+        this.settings.options[i] = option.dflt;
       else throw "Unknown option type";
     } else {
-      this.options[i] = option;
+      this.settings.options[i] = option;
     }
   }
 
-  // Context object to inject in part
+  // Context object (will be added to parts by createPart() )
   this.context = {
     parts: this.parts,
     config: this.config,
     settings: this.settings,
-    options: this.options,
     store: this.store
   };
-
-  // Constructors
-  this.Part = Part;
-  this.Point = Point;
-  this.Path = Path;
-  this.Snippet = Snippet;
-
-  let self = this;
-  this.Part.prototype.getContext = function() {
-    return self.context;
-  };
-
-  this.Part.prototype.hooks = this.hooks;
-  this.is = "";
 }
 
-// FIXME: Still needed?
+// Creates a new part with the pattern context
 Pattern.prototype.createPart = function() {
   let part = new Part();
   part.context = this.context;
 
   return part;
+};
+
+// Merges settings object with this.settings
+Pattern.prototype.mergeSettings = function(settings) {
+  for (let key of Object.keys(settings)) {
+    if (typeof settings[key] === "object") {
+      this.settings[key] = {
+        ...this.settings[key],
+        ...settings[key]
+      };
+    } else this.settings[key] = settings[key];
+  }
 };
 
 Pattern.prototype.runHooks = function(hookName, data = false) {
@@ -203,7 +201,7 @@ Pattern.prototype.sampleOption = function(optionName) {
   val = option.min / factor;
   step = (option.max / factor - val) / 9;
   for (let run = 1; run < 11; run++) {
-    this.options[optionName] = val;
+    this.settings.options[optionName] = val;
     this.debug(
       "info",
       "🏃🏿‍♀️ Sample run",
@@ -225,7 +223,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
   let run = 1;
   let runs = option.list.length;
   for (let val of option.list) {
-    this.options[optionName] = val;
+    this.settings.options[optionName] = val;
     this.debug(
       "info",
       "🏃🏿‍♀️ Sample run",
