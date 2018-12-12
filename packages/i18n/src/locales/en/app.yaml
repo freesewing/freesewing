@@ -34,6 +34,8 @@ created: Created
 createModel: Create model
 darkMode: Dark mode
 docs: Documentation
+docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
+docsNotFoundTitle: This documentation is missing
 documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
@@ -113,6 +115,7 @@ requiredMeasurements: Required measurements
 resendActivationEmailMessage: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message.'
 resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
+reset: Reset
 save: Save
 selectImage: Select image
 sendAnEmail: Send an E-mail

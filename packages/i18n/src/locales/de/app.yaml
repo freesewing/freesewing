@@ -34,6 +34,8 @@ created: Erstellt
 createModel: Erstellen Sie das Modell
 darkMode: Dunkler Modus
 docs: Dokumente
+docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
+docsNotFoundTitle: Diese Dokumentation fehlt
 documentationForDevelopers: Dokumentation für Entwickler
 documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
@@ -113,6 +115,7 @@ requiredMeasurements: Erforderliche Maße
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resendActivationEmailMessage: Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.
 resetPassword: Passwort zurücksetzen
+reset: Rücksetzen
 save: Speichern
 selectImage: Bild auswählen
 sendAnEmail: Eine E-Mail senden

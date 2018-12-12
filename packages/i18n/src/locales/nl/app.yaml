@@ -34,6 +34,8 @@ created: Aangemaakt
 createModel: Model aanmaken
 darkMode: Donkere modus
 docs: Documentatie
+docsNotFoundMsg: We konden deze documentatie niet vinden, wat meestal betekent dat deze nog niet is geschreven.
+docsNotFoundTitle: Deze documentatie ontbreekt
 documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
@@ -113,6 +115,7 @@ requiredMeasurements: Vereiste maten
 resendActivationEmailMessage: 'Je kan je weer inschrijven met hetzelfde email adres, en dan sturen we je een nieuwe activatie email.'
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
+reset: Reset
 save: Opslaan
 selectImage: Selecteer afbeelding
 sendAnEmail: Stuur een email
