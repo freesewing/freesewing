@@ -461,6 +461,70 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap.
   title: Sleevecap height factor
+
+
+sleevecapBackFactorX:
+  description: Controls the placement of the sleevecap back pitchpoint on the X-axis (horizontal)
+  title: Sleevecap back X
+sleevecapBackFactorY:
+  description: Controls the placement of the sleevecap back pitchpoint on the Y-axis (vertical)
+  title: Sleevecap back Y
+sleevecapFrontFactorX:
+  description: Controls the placement of the sleevecap front pitchpoint on the X-axis (horizontal)
+  title: Sleevecap front X
+sleevecapFrontFactorY:
+  description: Controls the placement of the sleevecap front pitchpoint on the Y-axis (vertical)
+  title: Sleevecap front Y
+sleevecapQ1Offset:
+  description: Controls the curvature of the sleevecap in the first quadrant (front armhole)
+  title: Sleevecap Q1 offset
+sleevecapQ2Offset:
+  description: Controls the curvature of the sleevecap in the second quadrant (front shoulder)
+  title: Sleevecap Q2 offset
+sleevecapQ3Offset:
+  description: Controls the curvature of the sleevecap in the third quadrant (back shoulder)
+  title: Sleevecap Q3 offset
+sleevecapQ4Offset:
+  description: Controls the curvature of the sleevecap in the fourth quadrant (back armhole)
+  title: Sleevecap Q4 offset
+sleevecapQ1Spread1:
+  description: Controls the spread of the sleevecap first quadrant curvature towards the armhole
+  title: Sleevecap Q1 downward spread
+sleevecapQ1Spread2:
+  description: Controls the spread of the sleevecap first quadrant curvature towards the shoulder
+  title: Sleevecap Q1 upward spread
+sleevecapQ2Spread1:
+  description: Controls the spread of the sleevecap second quadrant curvature towards the armhole
+  title: Sleevecap Q2 downward spread
+sleevecapQ2Spread2:
+  description: Controls the spread of the sleevecap second quadrant curvature towards the shoulder
+  title: Sleevecap Q2 upward spread
+sleevecapQ3Spread1:
+  description: Controls the spread of the sleevecap third quadrant curvature towards the shoulder
+  title: Sleevecap Q3 upward spread
+sleevecapQ3Spread2:
+  description: Controls the spread of the sleevecap third quadrant curvature towards the armhole
+  title: Sleevecap Q3 downward spread
+sleevecapQ4Spread1:
+  description: Controls the spread of the sleevecap fourth quadrant curvature towards the shoulder
+  title: Sleevecap Q4 upward spread
+sleevecapQ4Spread2:
+  description: Controls the spread of the sleevecap fourth quadrant curvature towards the armhole
+  title: Sleevecap Q4 downward spread
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sleeveWidthGuarantee:
   description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
   title: Sleeve width guarantee

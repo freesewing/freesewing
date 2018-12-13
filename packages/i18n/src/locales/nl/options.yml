@@ -461,6 +461,54 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
   title: Hoogte mouwkop factor
+sleevecapBackFactorX:
+  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het achterste deel van de mouwkop
+  title: Mouwkop X achteraan
+sleevecapBackFactorY:
+  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het achterste deel van de mouwkop
+  title: Mouwkop Y achteraan
+sleevecapFrontFactorX:
+  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het voorste deel van de mouwkop
+  title: Mouwkop X vooraan
+sleevecapFrontFactorY:
+  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het voorste deel van de mouwkop
+  title: Mouwkop Y vooraan
+sleevecapQ1Offset:
+  description: Bepaalt de kromming van de mouwkop in het eerste quadrant (armsgat vooraan)
+  title: Mouwkop Q1 offset
+sleevecapQ2Offset:
+  description: Bepaalt de kromming van de mouwkop in het tweede quadrant (schouder vooraan)
+  title: Mouwkop Q2 offset
+sleevecapQ3Offset:
+  description: Bepaalt de kromming van de mouwkop in het derde quadrant (schouder achteraan)
+  title: Mouwkop Q3 offset
+sleevecapQ4Offset:
+  description: Bepaalt de kromming van de mouwkop in het vierde quadrant (armsgat vooraan)
+  title: Mouwkop Q4 offset
+sleevecapQ1Spread1:
+  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van het armsgat
+  title: Mouwkop Q1 neerwaardse spreiding
+sleevecapQ1Spread2:
+  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van de shouder
+  title: Mouwkop Q1 opwaardse spreiding
+sleevecapQ2Spread1:
+  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van het armsgat
+  title: Mouwkop Q2 neerwaardse spreiding
+sleevecapQ2Spread2:
+  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van de shouder
+  title: Mouwkop Q2 opwaardse spreiding
+sleevecapQ3Spread1:
+  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van de shouder
+  title: Mouwkop Q3 opwaardse spreiding
+sleevecapQ3Spread2:
+  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van het armsgat
+  title: Mouwkop Q3 neerwaardse spreiding
+sleevecapQ4Spread1:
+  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van de shouder
+  title: Mouwkop Q4 opwaardse spreiding
+sleevecapQ4Spread2:
+  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van het armsgat
+  title: Mouwkop Q4 neerwaardse spreiding
 sleeveWidthGuarantee:
   description: Bepaalt hoeveel van de mouwbreedte we garanderen wanneer we de mouw aan het armsgat aanpassen.
   title: Gegarandeerde mouw breedte

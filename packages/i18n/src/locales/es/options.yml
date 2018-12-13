@@ -461,6 +461,54 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
   title: Factor de altura de la manga
+sleevecapBackFactorX:
+  description: Controla la colocación del punto de inflexión posterior de la funda en el eje X (horizontal)
+  title: Funda atrás X
+sleevecapBackFactorY:
+  description: Controla la colocación del punto de inflexión posterior de la funda en el eje Y (vertical)
+  title: Funda atrás X
+sleevecapFrontFactorX:
+  description: Controla la colocación del punto de inflexión frontal de la funda en el eje X (horizontal)
+  title: Funda frontal X
+sleevecapFrontFactorY:
+  description: Controla la colocación del punto de inflexión frontal de la funda en el eje Y (vertical)
+  title: Funda frontal Y
+sleevecapQ1Offset:
+  description: Controla la curvatura de la funda en el primer cuadrante (sisa frontal)
+  title: Funda Q1 offset
+sleevecapQ2Offset:
+  description: Controla la curvatura de la funda en el segundo cuadrante (hombro delantero)
+  title: Funda Q2 offset
+sleevecapQ3Offset:
+  description: Controla la curvatura de la funda en el tercer cuadrante (hombro posterior)
+  title: Funda Q3 offset
+sleevecapQ4Offset:
+  description: Controla la curvatura de la funda en el cuarto cuadrante (sisa trasera)
+  title: Funda Q4 offset
+sleevecapQ1Spread1:
+  description: Controla la propagación de la curvatura del primer cuadrante de la manga hacia la sisa.
+  title: Funda Q1 propagación a la baja
+sleevecapQ1Spread2:
+  description: Controla la propagación de la curvatura del primer cuadrante de manga hacia el hombro
+  title: Funda Q1 propagación hacia arriba
+sleevecapQ2Spread1:
+  description: Controla la propagación de la curvatura del segundo cuadrante del manguito hacia la sisa.
+  title: Funda Q2 propagación a la baja
+sleevecapQ2Spread2:
+  description: Controla la propagación de la curvatura del segundo cuadrante de manga hacia el hombro
+  title: Funda Q2 extendido hacia arriba
+sleevecapQ3Spread1:
+  description: Controla la propagación de la curvatura del tercer cuadrante de manga hacia el hombro
+  title: Funda Q3 extendido hacia arriba
+sleevecapQ3Spread2:
+  description: Controla la propagación de la curvatura del tercer cuadrante de la manga hacia la sisa.
+  title: Funda Q3 propagación a la baja
+sleevecapQ4Spread1:
+  description: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia el hombro
+  title: Funda Q4 extendido hacia arriba
+sleevecapQ4Spread2:
+  description: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia la sisa.
+  title: Funda Q4 propagación a la baja
 sleeveWidthGuarantee:
   description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
   title: Sleeve width guarantee

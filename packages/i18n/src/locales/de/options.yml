@@ -461,6 +461,54 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
   title: Sleevecap height factor TODO
+sleevecapBackFactorX:
+  description: Steuert die Platzierung des Pitchpunktes der Sleevecap auf der X-Achse (horizontal)
+  title: Sleevecap zurück X
+sleevecapBackFactorY:
+  description: Steuert die Platzierung des Pitchpunktes der Sleevecap auf der Y-Achse (vertikal)
+  title: Sleevecap zurück Y
+sleevecapFrontFactorX:
+  description: Steuert die Platzierung des vorderen Steigungspunkts der Sleevecap auf der X-Achse (horizontal)
+  title: Ärmelkappe vorne X
+sleevecapFrontFactorY:
+  description: Steuert die Platzierung des vorderen Steigungspunkts der Sleevecap auf der Y-Achse (vertikal)
+  title: Ärmelkappe vorne Y
+sleevecapQ1Offset:
+  description: Steuert die Krümmung der Ärmelkappe im ersten Quadranten (vorderes Armloch)
+  title: Q1-Offset der Ärmelkappe
+sleevecapQ2Offset:
+  description: Steuert die Krümmung der Ärmelkappe im zweiten Quadranten (Vorderschulter)
+  title: Q2-Offset der Ärmelkappe
+sleevecapQ3Offset:
+  description: Steuert die Krümmung der Ärmelkappe im dritten Quadranten (hintere Schulter)
+  title: Q3-Offset der Ärmelkappe
+sleevecapQ4Offset:
+  description: Steuert die Krümmung der Ärmelkappe im vierten Quadranten (hinteres Armloch)
+  title: Q4-Offset der Ärmelkappe
+sleevecapQ1Spread1:
+  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Ärmelkappe Q1 nach unten streuen
+sleevecapQ1Spread2:
+  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung Schulter
+  title: Ärmelkappe Q1 nach oben streuen
+sleevecapQ2Spread1:
+  description: Steuert die Ausbreitung der zweiten Quadrantenkrümmung der Ärmelkappe zum Armloch hin
+  title: Ärmelkappe Q2 nach unten streuen
+sleevecapQ2Spread2:
+  description: Steuert die Ausbreitung der zweiten Quadrantenkrümmung der Ärmelkappe in Richtung Schulter
+  title: Ärmelkappe Q2 nach oben streuen
+sleevecapQ3Spread1:
+  description: Steuert die Ausbreitung der Krümmung des dritten Quadranten der Ärmelkappe in Richtung Schulter
+  title: Ärmelkappe Q3 nach oben streuen
+sleevecapQ3Spread2:
+  description: Steuert die Ausbreitung der dritten Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Ärmelkappe Q3 nach unten streuen
+sleevecapQ4Spread1:
+  description: Steuert die Ausbreitung der vierten Quadrantenkrümmung der Ärmelkappe in Richtung Schulter
+  title: Ärmelkappe Q4 nach oben streuen
+sleevecapQ4Spread2:
+  description: Steuert die Ausbreitung der vierten Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Ärmelkappe Q4 nach unten streuen
 sleeveWidthGuarantee:
   description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
   title: Sleeve width guarantee

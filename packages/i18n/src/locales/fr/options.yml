@@ -461,6 +461,54 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
   title: Sleevecap height factor TODO
+sleevecapBackFactorX:
+  description: Contrôle le placement du point de hauteur de l’arrière de capuchon de manche sur l’axe X (horizontal)
+  title: Capuchon de manche arrière X
+sleevecapBackFactorY:
+  description: Contrôle le placement du point de hauteur de l’arrière de capuchon de manche sur l’axe Y (vertical)
+  title: Capuchon de manche arrière Y
+sleevecapFrontFactorX:
+  description: Contrôle le placement du point de hauteur de l’avant de capuchon de manche sur l’axe X (horizontal)
+  title: Capuchon de manche avant X
+sleevecapFrontFactorY:
+  description: Contrôle le placement du point de hauteur de l’avant de capuchon de manche sur l’axe Y (vertical)
+  title: Capuchon de manche avant Y
+sleevecapQ1Offset:
+  description: Contrôle la courbure de capuchon de manche dans le premier quadrant (emmanchure devant)
+  title: Capuchon de manche Q1 offset
+sleevecapQ2Offset:
+  description: Contrôle la courbure de capuchon de manche dans le deuxième quadrant (épaule avant)
+  title: Capuchon de manche Q2 offset
+sleevecapQ3Offset:
+  description: Contrôle la courbure de capuchon de manche dans le troisième quadrant (épaule arrière)
+  title: Capuchon de manche Q3 offset
+sleevecapQ4Offset:
+  description: Contrôle la courbure de capuchon de manche dans le quatrième quadrant (emmanchure au dos)
+  title: Capuchon de manche Q4 offset
+sleevecapQ1Spread1:
+  description: Contrôle la propagation de la courbure du premier quadrant de capuchon de manche vers l'emmanchure
+  title: Capuchon de manche Q1 propagation à la baisse
+sleevecapQ1Spread2:
+  description: Contrôle la propagation de la courbure du premier quadrant de capuchon de manche vers l'épaule
+  title: Capuchon de manche Q1 propagation à la à la hausse
+sleevecapQ2Spread1:
+  description: Contrôle la propagation de la courbure du deuxième quadrant de capuchon de manche vers l'emmanchure
+  title: Capuchon de manche Q2 propagation à la baisse
+sleevecapQ2Spread2:
+  description: Contrôle la propagation de la courbure du deuxième quadrant de capuchon de manche vers l'épaule
+  title: Capuchon de manche Q2 propagation à la à la hausse
+sleevecapQ3Spread1:
+  description: Contrôle la propagation de la courbure du troisième quadrant de capuchon de manche vers l'épaule
+  title: Capuchon de manche Q3 propagation à la à la hausse
+sleevecapQ3Spread2:
+  description: Contrôle la propagation de la courbure du troisième quadrant de capuchon de manche vers l'emmanchure
+  title: Capuchon de manche Q3 propagation à la baisse
+sleevecapQ4Spread1:
+  description: Contrôle la propagation de la courbure du quatrième quadrant de capuchon de manche vers l'épaule
+  title: Capuchon de manche Q4 propagation à la à la hausse
+sleevecapQ4Spread2:
+  description: Contrôle la propagation de la courbure du quatrième quadrant de capuchon de manche vers l'emmanchure
+  title: Capuchon de manche Q4 propagation à la baisse
 sleeveWidthGuarantee:
   description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
   title: Sleeve width guarantee
