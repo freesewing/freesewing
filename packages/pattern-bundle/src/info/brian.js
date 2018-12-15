@@ -6,6 +6,7 @@ const info = {
   type: "block",
   difficulty: 3,
   tags: ["top"],
+  parts: ["front", "back", "sleeve"],
   optionGroups: [
     {
       fit: [
