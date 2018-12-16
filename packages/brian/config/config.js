@@ -11,6 +11,21 @@ export default {
     "shoulderToWrist",
     "wristCircumference"
   ],
+  dependencies: {
+    back: "base",
+    front: "back",
+    sleevecap: "front",
+    sleeve: "sleevecap"
+  },
+  inject: {
+    back: "base",
+    front: "back",
+    sleeve: "sleevecap"
+  },
+  hide: [
+    "base",
+    "sleevecap"
+  ],
   options: {
     // Constants
     brianFitSleeve: true,

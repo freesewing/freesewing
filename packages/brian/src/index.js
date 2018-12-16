@@ -8,44 +8,18 @@ import front from "./front";
 import sleevecap from "./sleevecap";
 import sleeve from "./sleeve";
 
+// Constructor boilerplate
 const Brian = function(settings = false) {
-  // Make this a new freesewing.Pattern instance
   freesewing.Pattern.call(this, { version: version, ...config });
-  // Load plugins
   this.with(pluginBundle);
-  // Merge settings passed to the constructor
   if (settings !== false) this.mergeSettings(settings);
 
   return this;
 };
 
-// Setup inheritance
+// Inheritance boilerplate
 Brian.prototype = Object.create(freesewing.Pattern.prototype);
 Brian.prototype.constructor = Brian;
-
-// Draft method
-Brian.prototype._draft = function() {
-  this.parts.base = this.draftBase(this.createPart());
-  if (!this.needs("base", true)) this.parts.base.render = false;
-  if (this.needs(["back", "front", "sleeve", "sleevecap"])) {
-    this.parts.back = this.draftBack(this.createPart().copy(this.parts.base));
-  }
-  if (this.needs(["front", "sleeve", "sleevecap"])) {
-    this.parts.front = this.draftFront(this.createPart().copy(this.parts.back));
-  }
-  if (this.needs(["sleeve", "sleevecap"])) {
-    this.parts.sleevecap = this.draftSleevecap(this.createPart());
-    // Don't render sleevecap unless specifically requested
-    if (!this.needs("sleevecap", true)) this.parts.sleevecap.render = false;
-  }
-  if (this.needs("sleeve")) {
-    this.parts.sleeve = this.draftSleeve(
-      this.createPart().copy(this.parts.sleevecap)
-    );
-  }
-
-  return this;
-};
 
 // Per-part draft methods
 Brian.prototype.draftBase = function(part) {
