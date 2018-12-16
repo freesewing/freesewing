@@ -445,7 +445,8 @@ Pattern.prototype.resolveDependencies = function(
  * configured dependencies.
  */
 Pattern.prototype.needs = function(partName) {
-  if (typeof this.settings.only === "undefined") return true;
+  if (typeof this.settings.only === "undefined" || this.settings.only === false)
+    return true;
   else if (typeof this.settings.only === "string") {
     if (this.settings.only === partName) return true;
     if (Array.isArray(this.config.resolvedDependencies[this.settings.only])) {
@@ -480,7 +481,10 @@ Pattern.prototype.isHidden = function(partName) {
  * This depends on the 'only' setting
  */
 Pattern.prototype.wants = function(partName) {
-  if (typeof this.settings.only === "undefined") {
+  if (
+    typeof this.settings.only === "undefined" ||
+    this.settings.only === false
+  ) {
     if (this.isHidden(partName)) return false;
   } else if (typeof this.settings.only === "string") {
     if (this.settings.only === partName) return true;
