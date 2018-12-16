@@ -139,7 +139,7 @@ Part.prototype.attr = function(name, value, overwrite = false) {
 };
 
 /** Copies point/path/snippet data from part orig into this */
-Part.prototype.copy = function(orig) {
+Part.prototype.inject = function(orig) {
   for (let type of ["points", "paths", "snippets"]) {
     for (let i in orig[type]) {
       if (typeof this[type][i] === "undefined") {

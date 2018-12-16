@@ -15,14 +15,8 @@ it("Pattern constructor should initialize object", () => {
   expect(pattern.parts).to.eql({});
   expect(pattern.settings.units).to.equal("metric");
   expect(pattern.config.foo).to.equal("bar");
-  expect(pattern.options.constant).to.equal(2);
-  expect(pattern.options.percentage).to.equal(0.3);
-});
-
-it("Should throw exception upon draft", () => {
-  let pattern = new freesewing.Pattern();
-  // Can't test a throw unless we wrap it in an anonymous function
-  expect(() => pattern.draft()).to.throw();
+  expect(pattern.settings.options.constant).to.equal(2);
+  expect(pattern.settings.options.percentage).to.equal(0.3);
 });
 
 it("Should load percentage options", () => {
@@ -31,7 +25,7 @@ it("Should load percentage options", () => {
       test: { pct: 30 }
     }
   });
-  expect(pattern.options.test).to.equal(0.3);
+  expect(pattern.settings.options.test).to.equal(0.3);
 });
 
 it("Should load millimeter options", () => {
@@ -40,7 +34,7 @@ it("Should load millimeter options", () => {
       test: { mm: 30 }
     }
   });
-  expect(pattern.options.test).to.equal(30);
+  expect(pattern.settings.options.test).to.equal(30);
 });
 
 it("Should load degree options", () => {
@@ -49,7 +43,7 @@ it("Should load degree options", () => {
       test: { deg: 15 }
     }
   });
-  expect(pattern.options.test).to.equal(15);
+  expect(pattern.settings.options.test).to.equal(15);
 });
 
 it("Should load an array option", () => {
@@ -58,7 +52,16 @@ it("Should load an array option", () => {
       test: { dflt: "foo" }
     }
   });
-  expect(pattern.options.test).to.equal("foo");
+  expect(pattern.settings.options.test).to.equal("foo");
+});
+
+it("Should load a count option", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test: { count: 3 }
+    }
+  });
+  expect(pattern.settings.options.test).to.equal(3);
 });
 
 it("Should throw an error for an unknown option", () => {
@@ -72,6 +75,70 @@ it("Should throw an error for an unknown option", () => {
   ).to.throw();
 });
 
+it("Should merge settings with default settings", () => {
+  let pattern = new freesewing.Pattern();
+  let settings = {
+    foo: "bar",
+    deep: {
+      free: "ze"
+    }
+  };
+  pattern.mergeSettings(settings);
+  expect(pattern.settings.foo).to.equal("bar");
+  expect(pattern.settings.locale).to.equal("en");
+  expect(pattern.settings.margin).to.equal(2);
+  expect(pattern.settings.idPrefix).to.equal("fs-");
+  expect(pattern.settings.deep.free).to.equal("ze");
+});
+
+it("Should draft according to settings", () => {
+  let config = {
+    name: "test",
+    dependencies: { back: "front" },
+    inject: { back: "front" },
+    hide: ["back"]
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    this.count++;
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    this.count++;
+    return part;
+  };
+
+  let pattern = new Test();
+  pattern.count = 0;
+  pattern.draft();
+  expect(pattern.count).to.equal(2);
+});
+
+it("Should throw an error if per-part draft method is missing", () => {
+  let config = {
+    name: "test",
+    dependencies: { back: "front" },
+    inject: { back: "front" },
+    hide: ["back"]
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  let pattern = new Test();
+  expect(() => pattern.draft()).to.throw();
+});
+
 it("Should sample an option", () => {
   let pattern = new freesewing.Pattern({
     options: {
@@ -80,16 +147,16 @@ it("Should sample an option", () => {
     }
   });
   pattern.draft = function() {
-    pattern.parts.a = new pattern.Part();
-    pattern.parts.b = new pattern.Part();
+    pattern.parts.a = pattern.createPart();
+    pattern.parts.b = pattern.createPart();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(
-      100 * a.context.options.len,
-      a.context.options.bonus
+      100 * a.context.settings.options.len,
+      a.context.settings.options.bonus
     );
     a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
-    pattern.parts.b.copy(a);
+    pattern.parts.b.inject(a);
   };
   pattern.settings.sample = {
     type: "option",
@@ -104,13 +171,13 @@ it("Should sample a measurement", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.measurements = { headToToe: 1980 };
   pattern.draft = function() {
-    pattern.parts.a = new pattern.Part();
-    pattern.parts.b = new pattern.Part();
+    pattern.parts.a = pattern.createPart();
+    pattern.parts.b = pattern.createPart();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
-    a.points.to = new a.Point(10, a.context.config.measurements.headToToe);
+    a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
     a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
-    pattern.parts.b.copy(a);
+    pattern.parts.b.inject(a);
   };
   pattern.settings.sample = {
     type: "measurement",
@@ -122,16 +189,17 @@ it("Should sample a measurement", () => {
   expect(() => pattern.sampleMeasurement("unknown")).to.throw();
 });
 
+/*
 it("Should sample models", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {
-    pattern.parts.a = new pattern.Part();
-    pattern.parts.b = new pattern.Part();
+    pattern.parts.a = pattern.createPart();
+    pattern.parts.b = pattern.createPart();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
-    a.points.to = new a.Point(10, a.context.config.measurements.headToToe);
+    a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
     a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
-    pattern.parts.b.copy(a);
+    pattern.parts.b.inject(a);
   };
   pattern.settings.sample = {
     type: "models",
@@ -144,19 +212,8 @@ it("Should sample models", () => {
   expect(pattern.parts.a.paths.test_1.render).to.equal(true);
   expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
 });
-
 it("Should sample models with focus", () => {
   let pattern = new freesewing.Pattern();
-  pattern.draft = function() {
-    pattern.parts.a = new pattern.Part();
-    pattern.parts.b = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.from = new a.Point(0, 0);
-    a.points.to = new a.Point(10, a.context.config.measurements.headToToe);
-    a.points.anchor = new a.Point(20, 30);
-    a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
-    pattern.parts.b.copy(a);
-  };
   pattern.settings.sample = {
     type: "models",
     focus: "a",
@@ -164,6 +221,17 @@ it("Should sample models with focus", () => {
       a: { headToToe: 1980 },
       b: { headToToe: 1700 }
     }
+  };
+  pattern.draft = function() {
+    pattern.parts.a = pattern.createPart();
+    pattern.parts.b = pattern.createPart();
+    let a = pattern.parts.a;
+    console.log('context', a.context.settings);
+    a.points.from = new a.Point(0, 0);
+    a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
+    a.points.anchor = new a.Point(20, 30);
+    a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
+    pattern.parts.b.inject(a);
   };
   pattern.sample();
   expect(pattern.parts.a.paths.test_1.render).to.equal(true);
@@ -175,7 +243,7 @@ it("Should sample models with focus", () => {
     "stroke: hsl(165, 100%, 35%);"
   );
 });
-
+*/
 it("Should register a hook via on", () => {
   let pattern = new freesewing.Pattern();
   let count = 0;
@@ -206,33 +274,65 @@ it("Should register a hook from a plugin", () => {
 });
 
 it("Should check whether a part is needed", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.settings.only = "test";
-  expect(pattern.needs("test")).to.equal(true);
-  expect(pattern.needs("tes")).to.equal(false);
+  let config = {
+    name: "test",
+    dependencies: { back: "front", side: "back" },
+    inject: { back: "front" },
+    hide: ["back"]
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
+
+  let pattern = new Test();
+  pattern.settings.only = "back";
+  expect(pattern.needs("back")).to.equal(true);
+  expect(pattern.needs("front")).to.equal(true);
+  expect(pattern.needs("side")).to.equal(false);
+  pattern.settings.only = ["back", "side"];
+  expect(pattern.needs("back")).to.equal(true);
+  expect(pattern.needs("front")).to.equal(true);
+  expect(pattern.needs("side")).to.equal(true);
 });
 
-it("Should check whether an array of parts is needed", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.settings.only = "test";
-  expect(pattern.needs(["foo", "bar", "test"])).to.equal(true);
-  expect(pattern.needs(["foo", "bar", "mist"])).to.equal(false);
-});
+it("Should check whether a part is wanted", () => {
+  let config = {
+    name: "test",
+    dependencies: { back: "front", side: "back" },
+    inject: { back: "front" },
+    hide: ["back"]
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
 
-it("Should check whether a parts is needed with array", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.settings.only = ["test", "foo", "bar"];
-  expect(pattern.needs("foo")).to.equal(true);
-  expect(pattern.needs(["mist", "hugs"])).to.equal(false);
-});
-
-it("Should check whether a parts is strictly needed", () => {
-  let pattern = new freesewing.Pattern();
-  expect(pattern.needs("foo")).to.equal(true);
-  expect(pattern.needs("foo", true)).to.equal(false);
-  pattern.settings.only = ["test", "foo", "bar"];
-  expect(pattern.needs("foo")).to.equal(true);
-  expect(pattern.needs("foo", true)).to.equal(true);
+  let pattern = new Test();
+  pattern.settings.only = "back";
+  expect(pattern.wants("back")).to.equal(true);
+  expect(pattern.wants("front")).to.equal(false);
+  expect(pattern.wants("side")).to.equal(false);
+  pattern.settings.only = ["back", "side"];
+  expect(pattern.wants("back")).to.equal(true);
+  expect(pattern.wants("front")).to.equal(false);
+  expect(pattern.wants("side")).to.equal(true);
 });
 
 it("Should check whether created parts get the pattern context", () => {

@@ -457,3 +457,8 @@ it("Should return scale for a given amount of stretch", () => {
   expect(freesewing.utils.stretchToScale(0)).to.equal(1);
   expect(freesewing.utils.stretchToScale(0.25)).to.equal(0.8);
 });
+
+it("Should capitalize a string", () => {
+  expect(utils.capitalize("test")).to.equal("Test");
+  expect(utils.capitalize("Freesewing")).to.equal("Freesewing");
+});

@@ -2,6 +2,10 @@ import Point from "./point";
 import Bezier from "bezier-js";
 import crypto from "crypto";
 
+export function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`;

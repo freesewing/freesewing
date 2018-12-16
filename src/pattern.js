@@ -1,4 +1,4 @@
-import { macroName, round, sampleStyle } from "./utils";
+import { macroName, round, sampleStyle, capitalize } from "./utils";
 import Part from "./part";
 import Point from "./point";
 import Path from "./path";
@@ -9,7 +9,7 @@ import Store from "./store";
 import hooks from "./hooks";
 
 export default function Pattern(config = false) {
-  this.config = config; // Pattern configuration
+  this.config = config || {}; // Pattern configuration
   this.width = false; // Will be set after render
   this.height = false; // Will be set after render
   this.is = ""; // Will be set when drafting/sampling
@@ -32,6 +32,15 @@ export default function Pattern(config = false) {
     margin: 2,
     options: {}
   };
+
+  if (typeof this.config.inject === "undefined") this.config.inject = [];
+  if (typeof this.config.dependencies === "undefined")
+    this.config.dependencies = {};
+  if (typeof this.config.hide === "undefined") this.config.hide = [];
+  this.config.resolvedDependencies = this.resolveDependencies(
+    this.config.dependencies
+  );
+  this.config.draftOrder = this.draftOrder(this.config.resolvedDependencies);
 
   // Convert options
   for (let i in config.options) {
@@ -66,7 +75,6 @@ export default function Pattern(config = false) {
 Pattern.prototype.createPart = function() {
   let part = new Part();
   part.context = this.context;
-
   return part;
 };
 
@@ -93,24 +101,29 @@ Pattern.prototype.runHooks = function(hookName, data = false) {
 };
 
 /**
- * Calls _draft in the method, and pre- and postDraft
+ *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function() {
   this.is = "draft";
   this.runHooks("preDraft");
-  this._draft();
+  for (let partName of this.config.draftOrder) {
+    let newPart = this.createPart();
+    if (typeof this.config.inject[partName] === "string") {
+      newPart.inject(this.parts[this.config.inject[partName]]);
+    }
+    if (this.needs(partName)) {
+      let method = "draft" + capitalize(partName);
+      if (typeof this[method] !== "function")
+        throw new Error(
+          'Method "' + method + '" on pattern object is not callable'
+        );
+      this.parts[partName] = this[method](newPart);
+      this.parts[partName].render = this.wants(partName);
+    }
+  }
   this.runHooks("postDraft");
 
   return this;
-};
-
-/**
- * @throws Will throw an error when called
- */
-Pattern.prototype._draft = function() {
-  throw Error(
-    "You have to implement the _draft() method in your Pattern instance."
-  );
 };
 
 /**
@@ -135,7 +148,7 @@ Pattern.prototype.sampleParts = function() {
   this.settings.paperless = false;
   this.draft();
   for (let i in this.parts) {
-    parts[i] = new Part();
+    parts[i] = this.createPart();
     parts[i].render = this.parts[i].render;
   }
   return parts;
@@ -368,29 +381,116 @@ Pattern.prototype.pack = function() {
   return this;
 };
 
+/** Determines the order to draft parts in, based on dependencies */
+Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
+  let sorted = [];
+  let visited = {};
+  Object.keys(graph).forEach(function visit(name, ancestors) {
+    if (!Array.isArray(ancestors)) ancestors = [];
+    ancestors.push(name);
+    visited[name] = true;
+    if (typeof graph[name] !== "undefined") {
+      graph[name].forEach(function(dep) {
+        if (ancestors.indexOf(dep) >= 0)
+          throw new Error(
+            'Circular dependency "' +
+              dep +
+              '" is required by "' +
+              name +
+              '": ' +
+              ancestors.join(" -> ")
+          );
+        if (visited[dep]) return;
+        visit(dep, ancestors.slice(0));
+      });
+    }
+    if (sorted.indexOf(name) < 0) sorted.push(name);
+  });
+
+  return sorted;
+};
+
+/** Recursively solves part dependencies for a part */
+Pattern.prototype.resolveDependency = function(
+  seen,
+  part,
+  graph = this.config.dependencies,
+  deps = []
+) {
+  if (typeof seen[part] === "undefined") seen[part] = true;
+  if (typeof graph[part] === "string") {
+    deps.push(graph[part]);
+    return this.resolveDependency(seen, graph[part], graph, deps);
+  }
+
+  return deps;
+};
+
+/** Resolves part dependencies into a flat array */
+Pattern.prototype.resolveDependencies = function(
+  graph = this.config.dependencies
+) {
+  let resolved = {};
+  let seen = {};
+  for (let part of Object.keys(graph))
+    resolved[part] = this.resolveDependency(seen, part, graph);
+  for (let part of Object.keys(seen))
+    if (typeof resolved[part] === "undefined") resolved[part] = [];
+
+  return resolved;
+};
+
 /** Determines whether a part is needed
- * This depends on the 'only' setting. People can pass
- * the name of a part, or an array of parts
- * The absence of only means all parts are needed.
- *
- * If partName is an array of names, any name needed
- * will cause this to return true
+ * This depends on the 'only' setting and the
+ * configured dependencies.
  */
-Pattern.prototype.needs = function(partName, strict = false) {
-  if (typeof partName !== "string") {
-    for (let part of partName) {
-      if (this.needs(part, strict)) return true;
+Pattern.prototype.needs = function(partName) {
+  if (typeof this.settings.only === "undefined") return true;
+  else if (typeof this.settings.only === "string") {
+    if (this.settings.only === partName) return true;
+    if (Array.isArray(this.config.resolvedDependencies[this.settings.only])) {
+      for (let dependency of this.config.resolvedDependencies[
+        this.settings.only
+      ]) {
+        if (dependency === partName) return true;
+      }
+    }
+  } else if (Array.isArray(this.settings.only)) {
+    for (let part of this.settings.only) {
+      if (part === partName) return true;
+      for (let dependency of this.config.resolvedDependencies[part]) {
+        if (dependency === partName) return true;
+      }
+    }
+  }
+
+  return false;
+};
+
+/* Checks whether a part is hidden in the config */
+Pattern.prototype.isHidden = function(partName) {
+  if (Array.isArray(this.config.hide)) {
+    if (this.config.hide.indexOf(partName) !== -1) return true;
+  }
+
+  return false;
+};
+
+/** Determines whether a part is wanted by the user
+ * This depends on the 'only' setting
+ */
+Pattern.prototype.wants = function(partName) {
+  if (typeof this.settings.only === "undefined") {
+    if (this.isHidden(partName)) return false;
+  } else if (typeof this.settings.only === "string") {
+    if (this.settings.only === partName) return true;
+    return false;
+  } else if (Array.isArray(this.settings.only)) {
+    for (let part of this.settings.only) {
+      if (part === partName) return true;
     }
     return false;
   }
-  if (typeof this.settings.only === "undefined") {
-    if (strict) return false;
-    else return true;
-  } else if (this.settings.only === partName) return true;
-  else if (
-    typeof this.settings.only === "object" &&
-    this.settings.only.indexOf(partName) !== -1
-  ) {
-    return true;
-  } else return false;
+
+  return true;
 };

@@ -79,7 +79,6 @@ Svg.prototype.render = function(pattern) {
   this.svg += this.nl() + "</svg>";
   this.svg += this.renderComments(this.footer);
   this.runHooks("postRender");
-  //this.postRender();
   return this.svg;
 };
 
