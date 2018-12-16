@@ -81,7 +81,11 @@ Pattern.prototype.createPart = function() {
 // Merges settings object with this.settings
 Pattern.prototype.mergeSettings = function(settings) {
   for (let key of Object.keys(settings)) {
-    if (typeof settings[key] === "object") {
+    if (Array.isArray(settings[key])) {
+      if (Array.isArray(this.settings[key])) {
+        for (let entry of settings[key]) this.settings[key].push(entry);
+      } else this.settings[key] = settings[key];
+    } else if (typeof settings[key] === "object") {
       this.settings[key] = {
         ...this.settings[key],
         ...settings[key]
