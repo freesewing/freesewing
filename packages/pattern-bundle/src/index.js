@@ -1,4 +1,4 @@
-import aaron from "@freesewing/aaron";
+//import aaron from "@freesewing/aaron";
 import brian from "@freesewing/brian";
 //import bruce from "@freesewing/bruce";
 //import cathrin from "@freesewing/cathrin";
@@ -6,12 +6,12 @@ import brian from "@freesewing/brian";
 import info from "./info";
 
 export const patterns = {
-  aaron,
+  // aaron,
   brian,
   //  bruce,
   //  cathrin,
   //  hugo,
-  Aaron: aaron,
+  //Aaron: aaron,
   Brian: brian
   // Bruce: bruce,
   // Cathrin: cathrin,
@@ -19,7 +19,7 @@ export const patterns = {
 };
 
 //export const patternList = ["aaron", "brian", "bruce", "cathrin", "hugo"];
-export const patternList = ["aaron", "brian"];
+export const patternList = ["brian"];
 
 let list = [];
 for (let p of patternList) {
