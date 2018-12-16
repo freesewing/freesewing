@@ -12,6 +12,8 @@ blog: Blog
 browseAllBlogposts: Bekijk alle blogposts
 browseAllShowcases: Bekijk alle showcases
 butThatCouldChange: Maar dat kan veranderen
+changeModel: Ander model
+changePattern: Ander patroon
 chatOnGitter: Chat via Gitter
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
@@ -30,9 +32,13 @@ contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 contents: Inhoud
 continue: Doorgaan
 couldYouTranslateThis: Kan jij dit vertalen?
+countModelsLackingForPattern: Je hebt {count} modellen die niet alle vereiste maten hebben om {pattern} te tekenen
 created: Aangemaakt
 createModel: Model aanmaken
+custom: Aangepast
+customSeamAllowance: Aangepaste naadtoeslag
 darkMode: Donkere modus
+default: Standaard
 docs: Documentatie
 docsNotFoundMsg: We konden deze documentatie niet vinden, wat meestal betekent dat deze nog niet is geschreven.
 docsNotFoundTitle: Deze documentatie ontbreekt
@@ -83,6 +89,7 @@ newModel: Nieuw model
 noChanges: Geen wijzigingen
 no: Neen
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
+noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
 notes: Aantekeningen
 notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
@@ -126,6 +133,8 @@ showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
 sortByField: Sorteren op {field}
+standardSeamAllowance: Standaard naadtoeslag
+startOver: Begin opnieuw
 startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
 tellMeMore: Vertel me meer
@@ -150,6 +159,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
+yes: Ja
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd

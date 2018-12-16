@@ -12,6 +12,8 @@ blog: Blog
 browseAllBlogposts: Parcourir tous les articles du blog
 browseAllShowcases: Parcourir la galerie entière
 butThatCouldChange: Mais cela pourrait changer
+changeModel: Changer le modèle
+changePattern: Changer le patron
 chatOnGitter: Chatter sur Gitter
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
@@ -30,9 +32,13 @@ contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version
 contents: Contenus
 continue: Continuer
 couldYouTranslateThis: Pourriez-vous traduire cela?
+countModelsLackingForPattern: Vous avez {count} modèles qui ne disposent pas des mesures requises pour dessiner {pattern}
 created: Créé
 createModel: Créer le modèle
+custom: Personnalisé
+customSeamAllowance: Marge de couture customisée
 darkMode: Mode sombre
+default: Standard
 docs: Documentation
 docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement qu'elle n'a pas encore été écrite.
 docsNotFoundTitle: Cette documentation est manquante
@@ -83,6 +89,7 @@ newModel: Nouveau modèle
 noChanges: Pas de changement
 no: Non
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
+noSeamAllowance: Marge de couture non-inclus
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
 notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
@@ -126,6 +133,8 @@ showcase: Galerie
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
 sortByField: Trier par {field}
+standardSeamAllowance: Marge de couture standard
+startOver: Recommencer
 startTranslatingNow: Commencez à traduire maintenant
 startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
 tellMeMore: En savoir plus
@@ -150,6 +159,7 @@ whatIsThis: Qu'est-ce que c'est
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yay!
+yes: Oui
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté

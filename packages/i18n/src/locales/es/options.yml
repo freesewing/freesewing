@@ -23,8 +23,8 @@ backInset:
   description: Cantidad que la parte de atrás de la sisa se introduce en el panel trasero.
   title: Inserción en la espalda
 backNeckCutout:
-  description: How deep the neck is cut out at the back TODO
-  title: Back neck cutout TODO
+  description: How deep the neck is cut out at the back
+  title: Back neck cutout
 backOpening:
   description: Abertura en el centro del cierre de la espalda.
   title: Abertura de la espalda
@@ -349,8 +349,8 @@ legBonus:
   description: La longitud extra a añadir a las perneras.
   title: Extra de longitud de pierna
 legReduction:
-  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO'
-  title: Leg reduction TODO TODO
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping.  '
+  title: Leg reduction
 legStretch:
   description: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
   title: Estiramiento de la pernera
@@ -574,3 +574,27 @@ zipperLocation:
     back: Costura trasera
     side: Costura lateral
   title: Posición de la cremallera
+
+
+paperless:
+  description: Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir.
+  title: Sin papel
+sa:
+  description: Controla la cantidad de margen de costura incluido en tu patrón
+  title: Margen de costura
+locale:
+  description: Determina el lenguaje utilizado en tu patrón
+  title: Idioma
+only:
+  description: Le permite controlar qué partes del patrón se incluirán en su patrón
+  title: Contenido
+units:
+  description: Controla las unidades utilizadas en tu patrón
+  title: Unidades
+margin:
+  description: Controla el margen alrededor de las partes del patrón
+  title: Margen
+complete:
+  description: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón.
+  title: Detalle
+

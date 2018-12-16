@@ -461,8 +461,6 @@ sleevecapEase:
 sleevecapHeightFactor:
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap.
   title: Sleevecap height factor
-
-
 sleevecapBackFactorX:
   description: Controls the placement of the sleevecap back pitchpoint on the X-axis (horizontal)
   title: Sleevecap back X
@@ -511,20 +509,6 @@ sleevecapQ4Spread1:
 sleevecapQ4Spread2:
   description: Controls the spread of the sleevecap fourth quadrant curvature towards the armhole
   title: Sleevecap Q4 downward spread
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 sleeveWidthGuarantee:
   description: Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
   title: Sleeve width guarantee
@@ -590,3 +574,26 @@ zipperLocation:
     back: Back seam
     side: Side seam
   title: Zipper placement
+
+
+paperless:
+  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print.
+  title: Paperless
+sa:
+  description: Controls the amount of seam allowance included in your pattern
+  title: Seam allowance
+locale:
+  description: Determines the language used on your pattern
+  title: Language
+only:
+  description: Allows you to control which pattern parts will be included in your pattern
+  title: Contents
+units:
+  description: Controls the units used on your pattern.
+  title: Units
+margin:
+  description: Controls the margin around pattern parts
+  title: Margin
+complete:
+  description: Controls how detailed the pattern is. Either a complete pattern with all details, or a basic outline of the pattern parts.
+  title: Detail

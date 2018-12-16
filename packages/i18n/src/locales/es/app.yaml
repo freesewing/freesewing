@@ -12,6 +12,8 @@ blog: Blog
 browseAllBlogposts: Navegar por todas les publicaciones del blog
 browseAllShowcases: Navegar por todas las escaparates
 butThatCouldChange: Pero eso podría cambiar
+changeModel: Cambiar modelo
+changePattern: Cambiar patrón
 chatOnGitter: Chatea en Gitter
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
@@ -30,9 +32,13 @@ contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en s
 contents: Contenidos
 continue: Continuar
 couldYouTranslateThis: ¿Podrías traducir esto?
+countModelsLackingForPattern: Tiene {count} modelos que carecen de las medidas necesarias para dibujar {pattern}
 created: Creado
 createModel: Crear el modelo
+custom: personalizado
+customSeamAllowance: Margen de costura personalizada
 darkMode: Modo oscuro
+default: Defecto
 docs: Documentación
 docsNotFoundMsg: No pudimos encontrar esta documentación, lo que generalmente significa que aún no se ha escrito.
 docsNotFoundTitle: Esta documentación falta
@@ -83,6 +89,7 @@ newModel: Nuevo modelo
 noChanges: No hay cambios
 no: No
 noPasswordPolicy: No aplicamos una política de contraseña
+noSeamAllowance: Sin margen de costura
 notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponible en español.
 notesInfo: Estas son tus notas. Puedes escribir lo que quieras aquí.
 notes: Notas
@@ -126,6 +133,8 @@ showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
 sortByField: Ordenar por {field}
+standardSeamAllowance: Margen de costura estándar
+startOver: Comenzar de nuevo
 startTranslatingNow: Empezar a traducir ahora
 startTranslatingNowOrRead: '{startTranslatingNow}, o lea primero la {documentationForTranslators}.'
 tellMeMore: Dime más
@@ -150,6 +159,7 @@ whatIsThis: Que es esto
 withBreasts: Con pechos
 withoutBreasts: Sin pechos
 yay: ¡Hurra!
+yes: Sí
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn:  No has iniciado sesión
