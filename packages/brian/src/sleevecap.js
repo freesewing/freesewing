@@ -144,45 +144,41 @@ function draftSleevecap(part, run) {
   }
 }
 
-var sleevecap = {
-  draft: function(part) {
-    // prettier-ignore
-    let {debug, store, units, sa, measurements, options, Point, points, Path, paths } = part.shorthand();
+export default part => {
+  // prettier-ignore
+  let {debug, store, units, sa, measurements, options, Point, points, Path, paths } = part.shorthand();
 
-    store.set("sleeveFactor", 1);
-    let run = 0;
-    let delta = 0;
-    do {
-      draftSleevecap(part, run);
-      delta = sleevecapDelta(store);
-      sleevecapAdjust(store);
-      run++;
-    } while (
-      options.brianFitSleeve === true &&
-      run < 30 &&
-      Math.abs(sleevecapDelta(store)) > 2
+  store.set("sleeveFactor", 1);
+  let run = 0;
+  let delta = 0;
+  do {
+    draftSleevecap(part, run);
+    delta = sleevecapDelta(store);
+    sleevecapAdjust(store);
+    run++;
+  } while (
+    options.brianFitSleeve === true &&
+    run < 30 &&
+    Math.abs(sleevecapDelta(store)) > 2
+  );
+  if (options.brianFitSleeve) {
+    debug(
+      { style: "success", label: "🏁 Sleevecap fitted" },
+      `Target was ${units(store.get("sleevecapTarget"))}, delta of ${units(
+        delta
+      )} reached in ${run} attempts.`
     );
-    if (options.brianFitSleeve) {
-      debug(
-        { style: "success", label: "🏁 Sleevecap fitted" },
-        `Target was ${units(store.get("sleevecapTarget"))}, delta of ${units(
-          delta
-        )} reached in ${run} attempts.`
-      );
-    } else
-      debug(
-        { style: "warning", label: "🚫 Not fitting sleevecap" },
-        "(in Brian)"
-      );
+  } else
+    debug(
+      { style: "warning", label: "🚫 Not fitting sleevecap" },
+      "(in Brian)"
+    );
 
-    // Paths
-    paths.sleevecap.attr("class", "fabric");
+  // Paths
+  paths.sleevecap.attr("class", "fabric");
 
-    // Anchor point for sampling
-    points.gridAnchor = new Point(0, 0);
+  // Anchor point for sampling
+  points.gridAnchor = new Point(0, 0);
 
-    return part;
-  }
+  return part;
 };
-
-export default sleevecap;
