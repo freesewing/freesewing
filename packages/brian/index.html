@@ -21,7 +21,75 @@
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
 //console.log('adding hooks to pattern');
-       var pattern = new freesewing.patterns.brian();
+let settings = {
+    "complete": true,
+    "idPrefix": "fs-",
+    "locale": "en",
+    "units": "imperial",
+    "margin": 2.38125,
+    "options": {
+      "brianFitSleeve": true,
+      "brianFitCollar": true,
+      "collarFactor": 4.8,
+      "acrossBackFactor": 0.97,
+      "armholeDepthFactor": 0.6,
+      "backNeckCutout": 0.05,
+      "bicepsEase": 0.15,
+      "chestEase": 0.08,
+      "collarEase": 0.035,
+      "cuffEase": 0.2,
+      "frontArmholeDeeper": 0.005,
+      "lengthBonus": 0,
+      "shoulderEase": 0,
+      "shoulderSlopeReduction": 0,
+      "sleevecapEase": 0.01,
+      "sleevecapBackFactorX": 0.6,
+      "sleevecapBackFactorY": 0.33,
+      "sleevecapFrontFactorX": 0.55,
+      "sleevecapFrontFactorY": 0.33,
+      "sleevecapQ1Offset": 0.03,
+      "sleevecapQ2Offset": 0.055,
+      "sleevecapQ3Offset": 0.045,
+      "sleevecapQ4Offset": 0.01,
+      "sleevecapQ1Spread1": 0.06,
+      "sleevecapQ1Spread2": 0.15,
+      "sleevecapQ2Spread1": 0.15,
+      "sleevecapQ2Spread2": 0.1,
+      "sleevecapQ3Spread1": 0.1,
+      "sleevecapQ3Spread2": 0.08,
+      "sleevecapQ4Spread1": 0.07,
+      "sleevecapQ4Spread2": 0.07,
+      "sleeveWidthGuarantee": 0.9,
+      "sleeveLengthBonus": 0
+    },
+    "embed": true,
+    "sa": 0,
+    "paperless": false,
+    "only": [ "front", "back" ],
+    "measurements": {
+      "bicepsCircumference": 335,
+      "centerBackNeckToWaist": 520,
+      "chestCircumference": 1080,
+      "hipsCircumference": 990,
+      "naturalWaist": 925,
+      "naturalWaistToHip": 145,
+      "neckCircumference": 420,
+      "shoulderSlope": 55,
+      "shoulderToElbow": 410,
+      "shoulderToShoulder": 465,
+      "shoulderToWrist": 680,
+      "wristCircumference": 190,
+      "seatCircumference": 1080,
+      "inseam": 910,
+      "seatDepth": 200,
+      "hipsToUpperLeg": 220,
+      "upperLegCircumference": 630,
+      "headCircumference": 590,
+      "naturalWaistToFloor": 1310,
+      "naturalWaistToSeat": 280
+    }
+  };
+       var pattern = new freesewing.patterns.brian(settings);
        //console.log('pattern', pattern);
        pattern.with(freesewing.plugins.debug)
        //pattern.with(freesewing.plugins.validate)
@@ -50,18 +118,18 @@
       //pattern.settings.paperless = true;
       //pattern.settings.complete = false;
   //    pattern.settings.measurements = freesewing.models.men.manSize38;
-  pattern.settings.measurements = {
-    bicepsCircumference: 305,
-      centerBackNeckToWaist: 495,
-      chestCircumference: 965,
-      hipsCircumference: 838,
-      naturalWaistToHip: 110,
-      neckCircumference: 391,
-      shoulderSlope: 49,
-      shoulderToShoulder: 444,
-      shoulderToWrist: 680,
-      wristCircumference: 185,
-  }
+//  pattern.settings.measurements = {
+//    bicepsCircumference: 305,
+//      centerBackNeckToWaist: 495,
+//      chestCircumference: 965,
+//      hipsCircumference: 838,
+//      naturalWaistToHip: 110,
+//      neckCircumference: 391,
+//      shoulderSlope: 49,
+//      shoulderToShoulder: 444,
+//      shoulderToWrist: 680,
+//      wristCircumference: 185,
+//  }
       //pattern.settings.sa = 10;
       //pattern.settings.units = 'metric';
       //pattern.settings.sample = {
@@ -69,7 +137,7 @@
       //  focus: 'manSize34',
       //  models: freesewing.models.men
       //}
-pattern.mergeSettings({only: ["sleeve"]});
+//pattern.mergeSettings({only: ["sleeve"]});
       //pattern.options.lengthBonus = 0.15;
       //pattern.options.brianFitCollar = false;
       //pattern.sampleOption('shoulderSlopeReduction');
