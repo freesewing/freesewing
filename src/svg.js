@@ -38,7 +38,8 @@ Svg.prototype.runHooks = function(hookName, data = false) {
 /** Runs insertText hooks */
 Svg.prototype.insertText = function(text) {
   if (this.hooks.insertText.length > 0) {
-    for (let hook of this.hooks.insertText) text = hook.method(text, hook.data);
+    for (let hook of this.hooks.insertText)
+      text = hook.method(this.pattern.settings.locale, text, hook.data);
   }
 
   return text;
