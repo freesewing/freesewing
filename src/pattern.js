@@ -18,7 +18,6 @@ export default function Pattern(config = false) {
   this.parts = {}; // Parts container
   this.hooks = hooks; // Hooks container
 
-  this.Part = Part; // Part constructor
   this.Point = Point; // Point constructor
   this.Path = Path; // Path constructor
   this.Snippet = Snippet; // Snippet constructor
@@ -62,21 +61,29 @@ export default function Pattern(config = false) {
     }
   }
 
-  // Context object (will be added to parts by createPart() )
-  this.context = {
+  // Macros
+  this.macros = {};
+
+  // Context object to add to Part closure
+  const context = {
     parts: this.parts,
     config: this.config,
     settings: this.settings,
-    store: this.store
+    store: this.store,
+    macros: this.macros
+  };
+
+  // Part closure
+  this.Part = () => {
+    let part = new Part();
+    part.context = context;
+    for (let macro in context.macros) {
+      part[macroName(macro)] = context.macros[macro];
+    }
+
+    return part;
   };
 }
-
-// Creates a new part with the pattern context
-Pattern.prototype.createPart = function() {
-  let part = new Part();
-  part.context = this.context;
-  return part;
-};
 
 // Merges settings object with this.settings
 Pattern.prototype.mergeSettings = function(settings) {
@@ -111,7 +118,7 @@ Pattern.prototype.draft = function() {
   this.is = "draft";
   this.runHooks("preDraft");
   for (let partName of this.config.draftOrder) {
-    this.parts[partName] = this.createPart();
+    this.parts[partName] = new this.Part();
     if (typeof this.config.inject[partName] === "string") {
       this.parts[partName].inject(this.parts[this.config.inject[partName]]);
     }
@@ -152,7 +159,7 @@ Pattern.prototype.sampleParts = function() {
   this.settings.paperless = false;
   this.draft();
   for (let i in this.parts) {
-    parts[i] = this.createPart();
+    parts[i] = new this.Part();
     parts[i].render = this.parts[i].render;
   }
   return parts;
@@ -354,7 +361,7 @@ Pattern.prototype.loadPluginMacros = function(plugin) {
 };
 
 Pattern.prototype.macro = function(key, method) {
-  this.Part.prototype[macroName(key)] = method;
+  this.macros[key] = method;
 };
 
 /** Packs parts in a 2D space and sets pattern size */
