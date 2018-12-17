@@ -16,7 +16,8 @@ const topics = [
   "i18n",
   "measurements",
   "options",
-  "patterns"
+  "patterns",
+  "plugin"
 ];
 
 const languages = ["en", "de", "es", "fr", "nl"];
@@ -31,6 +32,7 @@ const i18n = {};
 const measurements = {};
 const options = {};
 const patterns = {};
+const plugin = {};
 const strings = {};
 
 for (let lang of languages) account[lang] = imports[lang].account;
@@ -43,6 +45,7 @@ for (let lang of languages) i18n[lang] = imports[lang].i18n;
 for (let lang of languages) measurements[lang] = imports[lang].measurements;
 for (let lang of languages) options[lang] = imports[lang].options;
 for (let lang of languages) patterns[lang] = imports[lang].patterns;
+for (let lang of languages) plugin[lang] = imports[lang].plugin;
 for (let lang of languages) strings[lang] = imports[lang].strings;
 
 export {
@@ -56,5 +59,6 @@ export {
   measurements,
   options,
   patterns,
+  plugin,
   strings
 };
