@@ -55,7 +55,7 @@ it("Should render Svg boilerplate for embedding", () => {
 it("Should render Svg part boilerplate", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   expect(pattern.render()).to.equalIgnoreSpaces(render.part);
   pattern.parts.test.render = false;
   expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
@@ -64,7 +64,7 @@ it("Should render Svg part boilerplate", () => {
 it("Should render Svg path", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
     .move(new p.Point(0, 0))
@@ -78,7 +78,7 @@ it("Should render Svg path", () => {
 it("Should not render Svg path when render property is false", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
     .move(new p.Point(0, 0))
@@ -94,7 +94,7 @@ it("Should not render Svg path when render property is false", () => {
 it("Should render Svg text", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
     .attr("data-text", "This is a test")
@@ -106,7 +106,7 @@ it("Should render Svg text", () => {
 it("Should render Svg multi-line text", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
     .attr("data-text", "This is a test\nwith text on\nmultiple lines")
@@ -118,7 +118,7 @@ it("Should render Svg multi-line text", () => {
 it("Should render Svg multi-line text with default lineheight", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
     .attr("data-text", "This is a test\nwith text on\nmultiple lines")
@@ -129,7 +129,7 @@ it("Should render Svg multi-line text with default lineheight", () => {
 it("Should not render text when there is none", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20);
   expect(pattern.render()).to.equalIgnoreSpaces(render.part);
@@ -138,7 +138,7 @@ it("Should not render text when there is none", () => {
 it("Should render Svg text on path", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
     .move(new p.Point(0, 0))
@@ -154,7 +154,7 @@ it("Should render Svg text on path", () => {
 it("Should render Svg text on path, center aligned", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
     .move(new p.Point(0, 0))
@@ -170,7 +170,7 @@ it("Should render Svg text on path, center aligned", () => {
 it("Should render Svg text on path, right aligned", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.paths.test = new p.Path()
     .move(new p.Point(0, 0))
@@ -186,7 +186,7 @@ it("Should render Svg text on path, right aligned", () => {
 it("Should render an Svg circle", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20).attr("data-circle", "50");
   expect(pattern.render()).to.equalIgnoreSpaces(render.circle);
@@ -195,7 +195,7 @@ it("Should render an Svg circle", () => {
 it("Should render an Svg snippet", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.snippets.test = new p.Snippet(
     "test",
@@ -208,7 +208,7 @@ it("Should render an Svg snippet", () => {
 it("Should scale an Svg snippet", () => {
   let pattern = new freesewing.Pattern();
   pattern.render();
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.snippets.test = new p.Snippet(
     "test",
@@ -232,7 +232,7 @@ it("Should run insertText hook", () => {
   pattern.on("insertText", text => {
     return text.toUpperCase();
   });
-  pattern.parts.test = pattern.createPart();
+  pattern.parts.test = new pattern.Part();
   let p = pattern.parts.test;
   p.points.test = new p.Point(20, 20)
     .attr("data-text", "This is a test")

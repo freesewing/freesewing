@@ -3,7 +3,7 @@ let freesewing = require("./dist/index.js");
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   expect(part.paths).to.eql({});
   expect(part.snippets).to.eql({});
   expect(part.freeId).to.equal(0);
@@ -16,13 +16,13 @@ it("Svg constructor should initialize object", () => {
 
 it("Should return a function from macroClosure", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   expect(typeof part.macroClosure()).to.equal("function");
 });
 
 it("Should no run an unknown macro", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let macro = part.macroClosure();
   expect(macro("unknown")).to.equal(undefined);
 });
@@ -40,7 +40,7 @@ it("Should register and run a macro", () => {
     }
   };
   pattern.with(plugin);
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let macro = part.macroClosure();
   macro("test", { x: 123, y: 456 });
   expect(part.points.macro.x).to.equal(123);
@@ -49,7 +49,7 @@ it("Should register and run a macro", () => {
 
 it("Should run debug", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let debug = part.debugClosure();
   expect(typeof debug).to.equal("function");
   let d = 1;
@@ -62,20 +62,20 @@ it("Should run debug", () => {
 
 it("Should return a free ID", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let free = part.getId();
   expect(part.getId()).to.equal("" + (parseInt(free) + 1));
 });
 
 it("Should return a function from unitsClosure", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   expect(typeof part.unitsClosure()).to.equal("function");
 });
 
 it("Should convert units", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let units = part.unitsClosure();
   expect(units(123.456)).to.equal("12.35cm");
   expect(part.units(123.456)).to.equal("12.35cm");
@@ -83,7 +83,7 @@ it("Should convert units", () => {
 
 it("Should set part attributes", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   part.attr("foo", "bar");
   expect(part.attributes.get("foo")).to.equal("bar");
   part.attr("foo", "baz");
@@ -94,7 +94,7 @@ it("Should set part attributes", () => {
 
 it("Should inject a part", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   part.points.foo = new part.Point(12, 23);
   let test = new pattern.Part();
   test.inject(part);
@@ -106,7 +106,7 @@ it("Should return shorthand", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.mode = "draft";
   pattern.settings.paperless = true;
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   expect(short.complete).to.equal(true);
   expect(short.paperless).to.equal(true);
@@ -116,7 +116,7 @@ it("Should not allow a margin below 10 for paperless patterns", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.paperless = true;
   pattern.settings.margin = 2;
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.a = new pattern.Point(0,0);
   a.points.b = new pattern.Point(0,100);
@@ -130,7 +130,7 @@ it("Should not allow a margin below 10 for paperless patterns", () => {
 it("Should calculate the part boundary with default margin", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.mode = "draft";
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   part.points.from = new short.Point(123, 456);
   part.points.to = new short.Point(19, 76);
@@ -151,7 +151,7 @@ it("Should calculate the part boundary with custom margin", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.mode = "draft";
   pattern.settings.margin = 5;
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   part.points.from = new short.Point(123, 456);
   part.points.to = new short.Point(19, 76);
@@ -173,7 +173,7 @@ it("Should calculate the part boundary for paperless", () => {
   pattern.settings.mode = "draft";
   pattern.settings.margin = 5;
   pattern.settings.paperless = true;
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   part.points.from = new short.Point(123, 456);
   part.points.to = new short.Point(19, 76);
@@ -193,7 +193,7 @@ it("Should calculate the part boundary for paperless", () => {
 it("Should stack a part", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.mode = "draft";
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   part.points.from = new short.Point(123, 456);
   part.points.to = new short.Point(19, 76);
@@ -207,7 +207,7 @@ it("Should stack a part", () => {
 it("Should only stack a part if needed", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.mode = "draft";
-  let part = pattern.createPart();
+  let part = new pattern.Part();
   let short = part.shorthand();
   part.points.from = new short.Point(2, 2);
   part.points.to = new short.Point(19, 76);

@@ -4,7 +4,7 @@ let round = freesewing.utils.round;
 
 it("Should offset a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
@@ -16,7 +16,7 @@ it("Should offset a line", () => {
 
 it("Should offset a curve", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -30,7 +30,7 @@ it("Should offset a curve", () => {
 
 it("Should offset a curve where cp1 = start", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -44,7 +44,7 @@ it("Should offset a curve where cp1 = start", () => {
 
 it("Should offset a curve where cp2 = end", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -59,7 +59,7 @@ it("Should offset a curve where cp2 = end", () => {
 
 it("Should throw error when offsetting line that is no line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 40)).line(new a.Point(0, 40));
@@ -68,7 +68,7 @@ it("Should throw error when offsetting line that is no line", () => {
 
 it("Should return the length of a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
@@ -77,7 +77,7 @@ it("Should return the length of a line", () => {
 
 it("Should return the length of a curve", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -89,7 +89,7 @@ it("Should return the length of a curve", () => {
 
 it("Should return the path start point", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -102,7 +102,7 @@ it("Should return the path start point", () => {
 
 it("Should return the path end point", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -117,7 +117,7 @@ it("Should return the path end point", () => {
 
 it("Should calculate that path boundary", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -133,7 +133,7 @@ it("Should calculate that path boundary", () => {
 
 it("Should clone a path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.curve = new a.Path()
@@ -150,7 +150,7 @@ it("Should clone a path", () => {
 
 it("Should join paths", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
@@ -163,7 +163,7 @@ it("Should join paths", () => {
 
 it("Should throw error when joining a closed paths", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
@@ -176,7 +176,7 @@ it("Should throw error when joining a closed paths", () => {
 
 it("Should shift along a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
@@ -185,7 +185,7 @@ it("Should shift along a line", () => {
 
 it("Should shift along lines", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path()
@@ -198,7 +198,7 @@ it("Should shift along lines", () => {
 
 it("Should shift along curve + line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.test = new a.Path()
@@ -212,7 +212,7 @@ it("Should shift along curve + line", () => {
 
 it("Should throw error when shifting along path further than it's long", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.test = new a.Path()
     .move(new a.Point(0, 0))
@@ -223,7 +223,7 @@ it("Should throw error when shifting along path further than it's long", () => {
 
 it("Should shift a fraction along a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.line = new a.Path()
     .move(new a.Point(0, 0))
@@ -235,7 +235,7 @@ it("Should shift a fraction along a line", () => {
 
 it("Should find the bounding box of a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let Path = pattern.parts.a.Path;
   let Point = pattern.parts.a.Point;
 
@@ -298,7 +298,7 @@ it("Should find the bounding box of a line", () => {
 
 it("Should find the bounding box of a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.curve = new a.Path()
     .move(new a.Point(123, 456))
@@ -313,7 +313,7 @@ it("Should find the bounding box of a line", () => {
 
 it("Should reverse a path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   let test = new a.Path()
     .move(new a.Point(123, 456))
@@ -333,7 +333,7 @@ it("Should reverse a path", () => {
 
 it("Should find the edges of a path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(45, 60);
   a.points.B = new a.Point(10, 30);
@@ -368,7 +368,7 @@ it("Should find the edges of a path", () => {
 
 it("Should find the edges of a path for corner cases", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(-45, -60);
   a.points.B = new a.Point(45, 60);
@@ -395,7 +395,7 @@ it("Should find the edges of a path for corner cases", () => {
 
 it("Should find the edge of a path for this edge-case", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(-109.7, 77, 12);
   a.points.B = new a.Point(-27.33, 99.19);
@@ -410,7 +410,7 @@ it("Should find the edge of a path for this edge-case", () => {
 
 it("Should find where a path intersects with an X value", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(95, 50);
   a.points.B = new a.Point(10, 30);
@@ -439,7 +439,7 @@ it("Should find where a path intersects with an X value", () => {
 
 it("Should find where a path intersects with an Y value", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(95, 50);
   a.points.B = new a.Point(10, 30);
@@ -464,7 +464,7 @@ it("Should find where a path intersects with an Y value", () => {
 
 it("Should throw an error when not passing a value to path.intersectsX", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.test = new a.Path();
   expect(() => a.paths.test.intersectsX()).to.throw();
@@ -473,7 +473,7 @@ it("Should throw an error when not passing a value to path.intersectsX", () => {
 
 it("Should find the intersections between two paths", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(45, 60);
   a.points.B = new a.Point(10, 30);
@@ -519,7 +519,7 @@ it("Should find the intersections between two paths", () => {
 
 it("Should throw an error when running path.intersect on an identical path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.paths.test = new a.Path();
   expect(() => a.paths.test.intersects(a.paths.test)).to.throw();
@@ -527,7 +527,7 @@ it("Should throw an error when running path.intersect on an identical path", () 
 
 it("Should divide a path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(45, 60);
   a.points.B = new a.Point(10, 30);
@@ -580,7 +580,7 @@ it("Should divide a path", () => {
 
 it("Should split a path on a curve", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(45, 60);
   a.points.B = new a.Point(10, 30);
@@ -610,7 +610,7 @@ it("Should split a path on a curve", () => {
 
 it("Should split a path on a line", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(45, 60);
   a.points.B = new a.Point(10, 30);
@@ -636,7 +636,7 @@ it("Should split a path on a line", () => {
 
 it("Should trim a path when lines overlap", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(0, 0);
   a.points.B = new a.Point(100, 100);
@@ -659,7 +659,7 @@ it("Should trim a path when lines overlap", () => {
 
 it("Should trim a path when a line overlaps with a curve", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(0, 0);
   a.points.B = new a.Point(100, 100);
@@ -682,7 +682,7 @@ it("Should trim a path when a line overlaps with a curve", () => {
 
 it("Should trim a path when a curves overlap", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(0, 0);
   a.points.B = new a.Point(100, 100);
@@ -705,7 +705,7 @@ it("Should trim a path when a curves overlap", () => {
 
 it("Should translate a path", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
   a.points.A = new a.Point(0, 0);
   a.points.B = new a.Point(100, 100);
@@ -726,7 +726,7 @@ it("Should translate a path", () => {
 
 it("Should add a path attribute", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path()
@@ -739,7 +739,7 @@ it("Should add a path attribute", () => {
 
 it("Should overwrite a path attribute", () => {
   let pattern = new freesewing.Pattern();
-  pattern.parts.a = pattern.createPart();
+  pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
   a.paths.line = new a.Path()

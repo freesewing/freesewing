@@ -147,8 +147,8 @@ it("Should sample an option", () => {
     }
   });
   pattern.draft = function() {
-    pattern.parts.a = pattern.createPart();
-    pattern.parts.b = pattern.createPart();
+    pattern.parts.a = new pattern.Part();
+    pattern.parts.b = new pattern.Part();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(
@@ -171,8 +171,8 @@ it("Should sample a measurement", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.measurements = { headToToe: 1980 };
   pattern.draft = function() {
-    pattern.parts.a = pattern.createPart();
-    pattern.parts.b = pattern.createPart();
+    pattern.parts.a = new pattern.Part();
+    pattern.parts.b = new pattern.Part();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
@@ -193,8 +193,8 @@ it("Should sample a measurement", () => {
 it("Should sample models", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {
-    pattern.parts.a = pattern.createPart();
-    pattern.parts.b = pattern.createPart();
+    pattern.parts.a = new pattern.Part();
+    pattern.parts.b = new pattern.Part();
     let a = pattern.parts.a;
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
@@ -223,8 +223,8 @@ it("Should sample models with focus", () => {
     }
   };
   pattern.draft = function() {
-    pattern.parts.a = pattern.createPart();
-    pattern.parts.b = pattern.createPart();
+    pattern.parts.a = new pattern.Part();
+    pattern.parts.b = new pattern.Part();
     let a = pattern.parts.a;
     console.log('context', a.context.settings);
     a.points.from = new a.Point(0, 0);
@@ -337,6 +337,6 @@ it("Should check whether a part is wanted", () => {
 
 it("Should check whether created parts get the pattern context", () => {
   let pattern = new freesewing.Pattern();
-  let part = pattern.createPart();
-  expect(part.context).to.equal(pattern.context);
+  let part = new pattern.Part();
+  expect(part.context.settings).to.equal(pattern.settings);
 });
