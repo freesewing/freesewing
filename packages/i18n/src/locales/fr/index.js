@@ -11,6 +11,7 @@ import options from "./options.yml";
 import optiongroups from "./optiongroups.yaml";
 import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
+import plugin from "./plugin.yaml";
 
 const topics = {
   account,
@@ -25,7 +26,8 @@ const topics = {
   options,
   optiongroups,
   parts,
-  patterns
+  patterns,
+  plugin
 };
 
 const strings = {};
@@ -94,5 +96,6 @@ export {
   optiongroups,
   parts,
   patterns,
+  plugin,
   strings
 };
