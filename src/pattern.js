@@ -80,7 +80,6 @@ export default function Pattern(config = false) {
     for (let macro in context.macros) {
       part[macroName(macro)] = context.macros[macro];
     }
-
     return part;
   };
 }
@@ -115,7 +114,7 @@ Pattern.prototype.runHooks = function(hookName, data = false) {
  *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function() {
-  this.is = "draft";
+  if (this.is !== "sample") this.is = "draft";
   this.runHooks("preDraft");
   for (let partName of this.config.draftOrder) {
     this.parts[partName] = new this.Part();
@@ -344,7 +343,7 @@ Pattern.prototype.loadPluginHooks = function(plugin, data) {
   for (let hook of Object.keys(this.hooks)) {
     if (typeof plugin.hooks[hook] === "function") {
       this.on(hook, plugin.hooks[hook], data);
-    } else if (typeof plugin.hooks[hook] === "object") {
+    } else if (Array.isArray(plugin.hooks[hook])) {
       for (let method of plugin.hooks[hook]) {
         this.on(hook, method, data);
       }
@@ -402,15 +401,6 @@ Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
     visited[name] = true;
     if (typeof graph[name] !== "undefined") {
       graph[name].forEach(function(dep) {
-        if (ancestors.indexOf(dep) >= 0)
-          throw new Error(
-            'Circular dependency "' +
-              dep +
-              '" is required by "' +
-              name +
-              '": ' +
-              ancestors.join(" -> ")
-          );
         if (visited[dep]) return;
         visit(dep, ancestors.slice(0));
       });
@@ -441,6 +431,14 @@ Pattern.prototype.resolveDependency = function(
 Pattern.prototype.resolveDependencies = function(
   graph = this.config.dependencies
 ) {
+  // Include parts outside the dependency graph
+  if (Array.isArray(this.config.parts)) {
+    for (let part of this.config.parts) {
+      if (typeof this.config.dependencies[part] === "undefined")
+        this.config.dependencies[part] = [];
+    }
+  }
+
   let resolved = {};
   let seen = {};
   for (let part of Object.keys(graph))

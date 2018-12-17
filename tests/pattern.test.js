@@ -188,30 +188,47 @@ it("Should sample a measurement", () => {
   expect(pattern.parts.b.paths.test_10.ops[1].to.x).to.equal(10);
   expect(() => pattern.sampleMeasurement("unknown")).to.throw();
 });
-
-/*
+/* FIXME: This needs work
 it("Should sample models", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.draft = function() {
-    pattern.parts.a = new pattern.Part();
-    pattern.parts.b = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.from = new a.Point(0, 0);
-    a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
-    a.paths.test = new a.Path().move(a.points.from).line(a.points.to);
-    pattern.parts.b.inject(a);
+  let config = {
+    name: "test",
+    dependencies: { b: "a" },
+    inject: { b: "a" },
   };
-  pattern.settings.sample = {
-    type: "models",
-    models: {
-      a: { headToToe: 1980 },
-      b: { headToToe: 1700 }
+  const Test = function(settings) {
+    freesewing.Pattern.call(this, config);
+    this.mergeSettings(settings);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftA = function(part) {
+    console.log(part.context);
+    part.points.from = new part.Point(0, 0);
+    part.points.to = new part.Point(10, part.context.settings.measurements.headToToe);
+    part.points.anchor = new part.Point(20, 30);
+    part.paths.test = new part.Path().move(part.points.from).line(part.points.to);
+    return part;
+  };
+  Test.prototype.draftB = function(part) {
+    return part;
+  };
+
+  let pattern = new Test({
+    sample: {
+      type: "models",
+      models: {
+        a: { headToToe: 1980 },
+        b: { headToToe: 1700 }
+      }
     }
-  };
+  });
   pattern.sample();
-  expect(pattern.parts.a.paths.test_1.render).to.equal(true);
-  expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
+  //console.log(pattern);
+  //expect(pattern.parts.a.paths.test_1.render).to.equal(true);
+  //expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
 });
+/*
 it("Should sample models with focus", () => {
   let pattern = new freesewing.Pattern();
   pattern.settings.sample = {
@@ -226,7 +243,6 @@ it("Should sample models with focus", () => {
     pattern.parts.a = new pattern.Part();
     pattern.parts.b = new pattern.Part();
     let a = pattern.parts.a;
-    console.log('context', a.context.settings);
     a.points.from = new a.Point(0, 0);
     a.points.to = new a.Point(10, a.context.settings.measurements.headToToe);
     a.points.anchor = new a.Point(20, 30);
@@ -271,6 +287,29 @@ it("Should register a hook from a plugin", () => {
   pattern.with(plugin);
   pattern.draft();
   expect(count).to.equal(1);
+});
+
+it("Should register multiple methods on a single hook", () => {
+  let pattern = new freesewing.Pattern();
+  let count = 0;
+  pattern._draft = () => {};
+  let plugin = {
+    name: "test",
+    version: "0.1-test",
+    hooks: {
+      preDraft: [
+        function(pattern) {
+          count++;
+        },
+        function(pattern) {
+          count++;
+        }
+      ]
+    }
+  };
+  pattern.with(plugin);
+  pattern.draft();
+  expect(count).to.equal(2);
 });
 
 it("Should check whether a part is needed", () => {
@@ -339,4 +378,32 @@ it("Should check whether created parts get the pattern context", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   expect(part.context.settings).to.equal(pattern.settings);
+});
+
+it("Should correctly merge settings", () => {
+  let pattern = new freesewing.Pattern();
+  let settings = {
+    complete: false,
+    only: [1, 2, 3],
+    margin: 5
+  };
+  pattern.mergeSettings(settings);
+  expect(pattern.settings.complete).to.equal(false);
+  expect(pattern.settings.only[1]).to.equal(2);
+  expect(pattern.settings.margin).to.equal(5);
+  expect(pattern.settings.only.length).to.equal(3);
+});
+
+it("Should correctly merge settings for existing array", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.only = [1];
+  let settings = {
+    complete: false,
+    only: [2, 3, 4],
+    margin: 5
+  };
+  pattern.mergeSettings(settings);
+  expect(pattern.settings.complete).to.equal(false);
+  expect(pattern.settings.only.length).to.equal(4);
+  expect(pattern.settings.margin).to.equal(5);
 });
