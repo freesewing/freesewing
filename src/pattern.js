@@ -111,9 +111,9 @@ Pattern.prototype.draft = function() {
   this.is = "draft";
   this.runHooks("preDraft");
   for (let partName of this.config.draftOrder) {
-    let newPart = this.createPart();
+    this.parts[partName] = this.createPart();
     if (typeof this.config.inject[partName] === "string") {
-      newPart.inject(this.parts[this.config.inject[partName]]);
+      this.parts[partName].inject(this.parts[this.config.inject[partName]]);
     }
     if (this.needs(partName)) {
       let method = "draft" + capitalize(partName);
@@ -121,7 +121,7 @@ Pattern.prototype.draft = function() {
         throw new Error(
           'Method "' + method + '" on pattern object is not callable'
         );
-      this.parts[partName] = this[method](newPart);
+      this.parts[partName] = this[method](this.parts[partName]);
       this.parts[partName].render = this.wants(partName);
     }
   }
