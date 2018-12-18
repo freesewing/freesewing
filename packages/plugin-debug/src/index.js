@@ -9,8 +9,8 @@ const colors = {
 };
 
 var debug = {
-  name: name,
-  version: version
+  name,
+  version
 };
 
 debug.log = function(label="", style="", data="") {
