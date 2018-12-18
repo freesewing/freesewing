@@ -21,37 +21,18 @@ export default {
   name: name,
   version: version,
   hooks: {
-    debug: function(next, d = "", e = "", b = "", u = "", g = "") {
-      if(typeof d === 'object' && d.debug === 'custom') {
-        console.log(
-          "%c"+d.text,
-          d.style,
-          e,
-          b,
-          u,
-          g
-      );
-      } else if(typeof d === 'object' && typeof d.style !== 'undefined') {
-        console.log(
-          "%c"+d.label,
-          debugStyle(d.style),
-          e,
-          b,
-          u,
-          g
-      );
+    debug: function(data, more) {
+      if(
+        typeof data === "object" &&
+        typeof data.type === "string" &&
+        typeof data.label === "string" &&
+        typeof data.msg === "string" &&
+        Object.keys(data).length === 3) {
+        // Make it pretty
+        console.log("%c"+data.label, debugStyle(data.type), data.msg);
       } else {
-        console.log(
-          "%c💡 Debug",
-          "color: #dd69dd; font-weight: bold",
-          d,
-          e,
-          b,
-          u,
-          g
-        );
+        console.log(data);
       }
-      next();
     }
   }
 };
