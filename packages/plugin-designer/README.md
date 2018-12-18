@@ -68,29 +68,6 @@ var pattern = freesewing.patterns.brian
 </script>
 ```
 
-## Example
-
-Below is a screenshot of a part of the pattern and the browser console.
-
-You can see the extra markers on the pattern, and the info in the console.
-
-![Example of the designer plugin](https://github.com/freesewing/plugin-designer/raw/master/img/example.png)
-
-### Parameters
-
- - `to`: A point object at the start of the cut-on-fold indicator
- - `from`: A point object at the end of the cut-on-fold indicator
-        
-As all freesewing macros, bundle these parameters into a single object.
-
-## Build
-
-To build this plugin, run:
-
-```sh
-npm run build
-```
-
 ## License: MIT
 
 See [the license file](https://github.com/freesewing/plugin-designer/blob/master/LICENSE)
