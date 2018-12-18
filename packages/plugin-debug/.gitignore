@@ -1,4 +1,7 @@
+# Compiled code
 dist
+tests/dist
+
 # Logs
 logs
 *.log
@@ -17,6 +20,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+coverage.lcov
 
 # nyc test coverage
 .nyc_output

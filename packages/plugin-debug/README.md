@@ -4,10 +4,19 @@
 <h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
+<p align="center">
+  <a href="https://travis-ci.org/freesewing/plugin-debug"><img src="https://badgen.net/travis/freesewing/plugin-debug/master" alt="Travis build"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-debug"><img src="https://badgen.net/npm/v/@freesewing/plugin-debug" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/plugin-debug"><img src="https://badgen.net/npm/license/@freesewing/plugin-debug" alt="License"></a>
+  <a href="https://codecov.io/gh/freesewing/plugin-debug"><img src="https://badgen.net/codecov/c/github/freesewing/plugin-debug/master" alt="Code coverage"></a>
+  <a href="https://deepscan.io/dashboard#view=project&pid=3255&bid=27565"><img src="https://deepscan.io/api/projects/3255/branches/27565/badge/grade.svg" alt="DeepScan grade"></a>
+  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
+  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
+</p>
 
 # plugin-debug
 
-A freesewing plugin to display debug information in your browser console.
+A freesewing plugin to log debug information to the console.
 
 ## Usage
 
@@ -34,13 +43,6 @@ var pattern = freesewing.patterns.brian
   .with(freesewing.plugins.debug);
 </script>
 ```
-
-## Example
-
-This plugin will gather debug info and log it to your browser console:
-
-![Example of the output provided by this plugin](https://github.com/freesewing/plugin-debug/raw/master/img/example.png)
-
 
 ## Install
 
