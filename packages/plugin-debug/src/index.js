@@ -34,7 +34,7 @@ debug.hooks = {
       typeof data === "object" &&
       typeof data.type === "string" &&
       typeof data.label === "string" &&
-      typeof data.msg === "string" &&
+      typeof data.msg !== "undefined" &&
       Object.keys(data).length === 3) {
       // Make it pretty
       debug.log("%c"+data.label, debug.style(data.type), data.msg);
