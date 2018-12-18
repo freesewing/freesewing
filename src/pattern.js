@@ -7,6 +7,7 @@ import Svg from "./svg";
 import pack from "bin-pack";
 import Store from "./store";
 import hooks from "./hooks";
+import Attributes from "./attributes";
 
 export default function Pattern(config = false) {
   this.config = config || {}; // Pattern configuration
@@ -21,6 +22,7 @@ export default function Pattern(config = false) {
   this.Point = Point; // Point constructor
   this.Path = Path; // Path constructor
   this.Snippet = Snippet; // Snippet constructor
+  this.Attributes = Attributes; // Attributes constructor
 
   // Default settings
   this.settings = {
@@ -225,11 +227,11 @@ Pattern.prototype.sampleOption = function(optionName) {
   step = (option.max / factor - val) / 9;
   for (let run = 1; run < 11; run++) {
     this.settings.options[optionName] = val;
-    this.debug(
-      "info",
-      "🏃🏿‍♀️ Sample run",
-      `Sampling option ${optionName} with value ${round(val)}`
-    );
+    this.debug({
+      type: "info",
+      label: "🏃🏿‍♀️ Sample run",
+      msg: `Sampling option ${optionName} with value ${round(val)}`
+    });
     this.sampleRun(parts, anchors, run, 10);
     val += step;
   }
@@ -247,11 +249,11 @@ Pattern.prototype.sampleListOption = function(optionName) {
   let runs = option.list.length;
   for (let val of option.list) {
     this.settings.options[optionName] = val;
-    this.debug(
-      "info",
-      "🏃🏿‍♀️ Sample run",
-      `Sampling option ${optionName} with value ${round(val)}`
-    );
+    this.debug({
+      type: "info",
+      label: "🏃🏿‍♀️ Sample run",
+      msg: `Sampling option ${optionName} with value ${round(val)}`
+    });
     this.sampleRun(parts, anchors, run, runs);
     run++;
   }
@@ -274,11 +276,11 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
   val = val * 0.9;
   for (let run = 1; run < 11; run++) {
     this.settings.measurements[measurementName] = val;
-    this.debug(
-      "info",
-      "🏃🏿‍♀️ Sample run",
-      `Sampling measurement ${measurementName} with value ${round(val)}`
-    );
+    this.debug({
+      type: "info",
+      label: "🏃🏿‍♀️ Sample run",
+      msg: `Sampling option ${measurementName} with value ${round(val)}`
+    });
     this.sampleRun(parts, anchors, run, 10);
     val += step;
   }
@@ -301,7 +303,11 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
   for (let l in models) {
     run++;
     this.settings.measurements = models[l];
-    this.debug("info", "🏃🏿‍♀️ Sample run", `Sampling model ${l}`);
+    this.debug({
+      type: "info",
+      label: "🏃🏿‍♀️ Sample run",
+      msg: `Sampling model ${l}`
+    });
     let className = l === focus ? "sample-focus" : "";
     this.sampleRun(parts, anchors, run, runs, className);
   }
@@ -312,7 +318,7 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
 };
 
 /** Debug method, exposes debug hook */
-Pattern.prototype.debug = function(...data) {
+Pattern.prototype.debug = function(data) {
   this.runHooks("debug", data);
 };
 
@@ -328,11 +334,11 @@ Pattern.prototype.on = function(hook, method, data) {
 };
 
 Pattern.prototype.with = function(plugin, data = false) {
-  this.debug(
-    "success",
-    "🔌 Plugin loaded",
-    `${plugin.name} v${plugin.version}`
-  );
+  this.debug({
+    type: "success",
+    label: "🔌 Plugin loaded",
+    msg: `${plugin.name} v${plugin.version}`
+  });
   if (plugin.hooks) this.loadPluginHooks(plugin, data);
   if (plugin.macros) this.loadPluginMacros(plugin);
 

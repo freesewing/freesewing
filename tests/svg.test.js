@@ -229,7 +229,7 @@ it("Should run preRender hook", () => {
 
 it("Should run insertText hook", () => {
   let pattern = new freesewing.Pattern();
-  pattern.on("insertText", text => {
+  pattern.on("insertText", (locale, text) => {
     return text.toUpperCase();
   });
   pattern.parts.test = new pattern.Part();

@@ -3,6 +3,7 @@ import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
+import hooks from "./hooks";
 
 function Part() {
   this.attributes = new Attributes();
@@ -22,6 +23,8 @@ function Part() {
   this.Path = Path;
   this.Snippet = Snippet;
 
+  this.hooks = hooks; // Hooks container
+
   return this;
 }
 
@@ -32,11 +35,11 @@ Part.prototype.macroClosure = function(args) {
     if (typeof self[macro] === "function") {
       self[macro](args);
     } else {
-      self.debug(
-        "warning",
-        "🚨 Macro not found",
-        `Macro ${key} is not registered`
-      );
+      self.debug({
+        type: "warning",
+        label: "🚨 Macro not found",
+        msg: `Macro ${key} is not registered`
+      });
     }
   };
 
@@ -45,15 +48,27 @@ Part.prototype.macroClosure = function(args) {
 
 Part.prototype.debugClosure = function() {
   let self = this;
-  let method = function(d, e, b, u, g) {
-    self.debug(d, e, b, u, g);
+  let method = function(data) {
+    self.debug(data);
   };
 
   return method;
 };
 
-/** Debug method, exposes debug hook */
-Part.prototype.debug = function(data) {};
+Part.prototype.runHooks = function(hookName, data = false) {
+  if (data === false) data = this;
+  let hooks = this.hooks[hookName];
+  if (hooks.length > 0) {
+    for (let hook of hooks) {
+      hook.method(data, hook.data);
+    }
+  }
+};
+
+/** Debug method */
+Part.prototype.debug = function(data) {
+  this.runHooks("debug", data);
+};
 
 /** Returns an unused ID */
 Part.prototype.getId = function() {
