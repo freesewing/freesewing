@@ -12,10 +12,10 @@ export default {
   hooks: {
     preRender: function(svg) {
       if (svg.attributes.get("freesewing:plugin-theme") === false) {
+        console.log("theme prerender hook", svg);
         svg.defs += notch;
-        svg.pattern.is === "sample"
-          ? (svg.style += sampleCss)
-          : (svg.style += draftCss);
+        svg.style += draftCss;
+        if (svg.pattern.is === "sample") svg.style += sampleCss;
         if (svg.pattern.settings.paperless) {
           svg.style += paperlessCss;
           svg.pattern.settings.units === "imperial"
