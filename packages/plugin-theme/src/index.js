@@ -12,7 +12,6 @@ export default {
   hooks: {
     preRender: function(svg) {
       if (svg.attributes.get("freesewing:plugin-theme") === false) {
-        console.log("theme prerender hook", svg);
         svg.defs += notch;
         svg.style += draftCss;
         if (svg.pattern.is === "sample") svg.style += sampleCss;
