@@ -24,6 +24,7 @@ export default part => {
   points.cbArmhole = new Point(
     0,
     points.cbShoulder.y +
+      (measurements.shoulderToShoulder * options.shoulderSlopeReduction) / 2 +
       measurements.bicepsCircumference *
         (1 + options.bicepsEase) *
         options.armholeDepthFactor
