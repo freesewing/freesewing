@@ -10,6 +10,15 @@ export default {
     "shoulderToShoulder",
     "hipsCircumference"
   ],
+  dependencies: {
+    front: "base",
+    back: "front"
+  },
+  inject: {
+    front: "base",
+    back: "front"
+  },
+  hide: [ "base" ],
   options: {
     // Constants
     collarFactor: 4.8,
