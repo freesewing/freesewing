@@ -45,6 +45,7 @@
     ]
   },
   "dependencies": {
+    "@freesewing/aaron": "0.7.1",
     "@freesewing/brian": "^0.18.1"
   },
   "devDependencies": {

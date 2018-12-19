@@ -1,4 +1,4 @@
-const info = {
+export default {
   name: "brian",
   design: "Joost De Cock",
   code: "Joost De Cock",
@@ -52,5 +52,3 @@ const info = {
     }
   ]
 };
-
-export default info;
