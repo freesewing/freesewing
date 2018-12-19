@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Bruce</title>
     <!-- <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script> -->
-    <script type="text/javascript" src="../freesewing/dist/browser.js"></script>
+    <script type="text/javascript" src="../../freesewing/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
     <script type="text/javascript" src="dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script>
@@ -17,11 +17,12 @@
   <body>
     <div id="svg"></div>
     <script>
-      var pattern = freesewing.patterns.bruce
-        .with(freesewing.plugins.debug)
+      var pattern = new freesewing.patterns.bruce;
+      pattern
+        //.with(freesewing.plugins.debug)
         .with(freesewing.plugins.theme)
-        .with(freesewing.plugins.designer)
-        .with(freesewing.plugins.validate)
+        //.with(freesewing.plugins.designer)
+        //.with(freesewing.plugins.validate)
       ;
       pattern.settings.measurements = {
         hipsCircumference: 985,
@@ -35,13 +36,13 @@
       // Some default settings
       //pattern.settings.sa = 10;
       pattern.settings.units = 'metric';
-      pattern.options.bulge = 0;
+      pattern.settings.options.bulge = 0;
       pattern.settings.onl = ['side'];
-      pattern.sampleOption('legBonus');
+      //pattern.sampleOption('legBonus');
       //pattern.sampleMeasurement('hipsToUpperLeg');
       //pattern.sampleModels(freesewing.models.men, 'manSize40');
       //pattern.sampleModels(freesewing.antman, 'ant');
-      //pattern.draft();
+      pattern.draft();
       document.getElementById("svg").innerHTML = pattern.render();
 
       function pointHover(evt) {

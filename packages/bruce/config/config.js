@@ -5,6 +5,11 @@ export default {
     "upperLegCircumference",
     "hipsToUpperLeg"
   ],
+  dependencies: {
+    side: "back",
+    front: "inset",
+    inset: "back",
+  },
   options: {
     // Constants
 

@@ -1,4 +1,4 @@
-export function init(part) {
+export default function init(part) {
   let {store, options, measurements, utils} = part.shorthand();
 
   if(store.get('init') !== true) {
@@ -47,5 +47,4 @@ export function init(part) {
 
     store.set('init', true);
   }
-
 }
