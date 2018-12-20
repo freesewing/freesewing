@@ -35,7 +35,7 @@ export default {
     pocket: "front",
     pocketFacing: "pocket"
   },
-  hide: [ "base", "frontBase", "backBase", "sleeveBase" ],
+  hide: [ "base", "frontBase", "backBase", "sleeveBase", "sleevecap" ],
   options: {
     // Constants
     brianFitSleeve: false,
