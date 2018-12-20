@@ -18,7 +18,8 @@
     <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
-      var pattern = freesewing.patterns.hugo
+      var pattern = new freesewing.patterns.hugo;
+      pattern
         .with(freesewing.plugins.debug)
         .with(freesewing.plugins.theme)
         .with(freesewing.plugins.designer)

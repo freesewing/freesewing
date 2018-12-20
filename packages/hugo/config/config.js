@@ -13,6 +13,29 @@ export default {
     "wristCircumference",
     "headCircumference",
   ],
+  parts: [ "waistband", "cuff" ],
+  dependencies: {
+    frontBase: "base",
+    front: "frontBase",
+    backBase: "base",
+    back: "backBase",
+    sleeveBase: "sleevecap",
+    sleeve: "sleeveBase",
+    pocket: "front",
+    pocketFacing: "pocket",
+    hoodCenter: "hoodSide",
+  },
+  inject: {
+    frontBase: "base",
+    front: "frontBase",
+    backBase: "base",
+    back: "backBase",
+    sleeveBase: "sleevecap",
+    sleeve: "sleeveBase",
+    pocket: "front",
+    pocketFacing: "pocket"
+  },
+  hide: [ "base", "frontBase", "backBase", "sleeveBase" ],
   options: {
     // Constants
     brianFitSleeve: false,
