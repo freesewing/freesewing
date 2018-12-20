@@ -20,7 +20,7 @@ export default {
           svg.pattern.settings.units === "imperial"
             ? (svg.defs += gridImperial)
             : (svg.defs += gridMetric);
-          for (let key in this.pattern.parts) {
+          for (let key in svg.pattern.parts) {
             let part = svg.pattern.parts[key];
             if (part.render && svg.pattern.needs(key)) {
               let anchor = new svg.pattern.Point(0, 0);
