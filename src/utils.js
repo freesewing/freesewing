@@ -1,6 +1,5 @@
 import Point from "./point";
 import Bezier from "bezier-js";
-import crypto from "crypto";
 
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

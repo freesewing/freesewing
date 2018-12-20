@@ -9,8 +9,8 @@ import Store from "./store";
 import hooks from "./hooks";
 import Attributes from "./attributes";
 
-export default function Pattern(config = false) {
-  this.config = config || {}; // Pattern configuration
+export default function Pattern(config = { options: {} }) {
+  this.config = config; // Pattern configuration
   this.width = false; // Will be set after render
   this.height = false; // Will be set after render
   this.is = ""; // Will be set when drafting/sampling
