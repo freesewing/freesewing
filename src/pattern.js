@@ -428,6 +428,13 @@ Pattern.prototype.resolveDependency = function(
   if (typeof graph[part] === "string") {
     deps.push(graph[part]);
     return this.resolveDependency(seen, graph[part], graph, deps);
+  } else if (Array.isArray(graph[part])) {
+    if (graph[part].length === 0) return [];
+    else {
+      if (deps.length === 0) deps = graph[part];
+      for (let apart of graph[part])
+        deps.concat(this.resolveDependency(seen, apart, graph, deps));
+    }
   }
 
   return deps;
@@ -447,8 +454,9 @@ Pattern.prototype.resolveDependencies = function(
 
   let resolved = {};
   let seen = {};
-  for (let part of Object.keys(graph))
+  for (let part of Object.keys(graph)) {
     resolved[part] = this.resolveDependency(seen, part, graph);
+  }
   for (let part of Object.keys(seen))
     if (typeof resolved[part] === "undefined") resolved[part] = [];
 
