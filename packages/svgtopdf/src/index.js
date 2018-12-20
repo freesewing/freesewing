@@ -1,29 +1,18 @@
 import express from "express";
-import cors from "cors";
-import bodyParser from "body-parser";
 import path from "path";
 import formidable from "formidable";
 import shellExec from "shell-exec";
 
 const app = express();
 const port = process.env.PORT || 4000;
+const formats = ['pdf','ps'];
+const sizes = ['full', 'a4','a3','a2','a1','a0','letter','tabloid'];
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Show form for on-demand tiling
 app.get("/", async (req, res) => res.sendFile(path.resolve(__dirname+'/form.html')));
-
-// Handle POST for on-demand tiling
 app.post("/", async (req, res) => {
   let form = new formidable.IncomingForm();
   form.parse(req, (err, fields, files) => {
-    const formats = ['pdf','ps'];
-    const sizes = ['full', 'a4','a3','a2','a1','a0','letter','tabloid'];
-    if(
-      err ||
-      typeof files.svg === "undefined" ||
+    if(err || typeof files.svg === "undefined" ||
       formats.indexOf(fields.format) === -1 ||
       sizes.indexOf(fields.size) === -1
       ) return res.sendFile(path.resolve(__dirname+'/form.html'));
@@ -53,11 +42,4 @@ app.post("/", async (req, res) => {
   });
 });
 
-// TODO: Provide API endpoint
-app.post("/api", async (req, res) => {
-});
-
-app.listen(port, err => {
-  if (err) console.error('Error occured', err);
-  console.log(`> listening on port ${port}`);
-});
+app.listen(port, err => { console.log(`> listening on port ${port}`) });
