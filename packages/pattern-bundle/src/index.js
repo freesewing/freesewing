@@ -1,29 +1,25 @@
-import aaron from "@freesewing/aaron";
-import brian from "@freesewing/brian";
-//import bruce from "@freesewing/bruce";
-//import cathrin from "@freesewing/cathrin";
-//import hugo from "@freesewing/hugo";
+import Aaron from "@freesewing/aaron";
+import Brian from "@freesewing/brian";
+import Bruce from "@freesewing/bruce";
+import Cathrin from "@freesewing/cathrin";
+import Hugo from "@freesewing/hugo";
 import info from "./info";
 
+const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+const uncapitalize = string => string.charAt(0).toLowerCase() + string.slice(1);
+
 export const patterns = {
-  aaron,
-  brian,
-  //  bruce,
-  //  cathrin,
-  //  hugo,
-  Aaron: aaron,
-  Brian: brian
-  // Bruce: bruce,
-  // Cathrin: cathrin,
-  // Hugo: hugo
+  Aaron,
+  Brian,
+  Bruce,
+  Cathrin,
+  Hugo
 };
 
-//export const patternList = ["aaron", "brian", "bruce", "cathrin", "hugo"];
-export const patternList = ["aaron", "brian"];
-
+export const patternList = Object.keys(patterns).map(p => uncapitalize(p));
 let list = [];
 for (let p of patternList) {
-  let pattern = new patterns[p]();
+  let pattern = new patterns[(capitalize(p))]();
   for (let m of pattern.config.measurements) list.push(m);
   info[p].version = pattern.config.version;
   info[p].measurements = pattern.config.measurements;
