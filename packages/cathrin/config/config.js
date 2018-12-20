@@ -7,6 +7,25 @@ export default {
     "naturalWaistToUnderbust",
     "naturalWaistToHip"
   ],
+  dependencies: {
+    panel1: "panels",
+    panel2: "panels",
+    panel3: "panels",
+    panel4: "panels",
+    panel5: "panels",
+    panel6: "panels",
+    panels: "base"
+  },
+  inject: {
+    panel1: "panels",
+    panel2: "panels",
+    panel3: "panels",
+    panel4: "panels",
+    panel5: "panels",
+    panel6: "panels",
+    panels: "base"
+  },
+  hide: [ "panels", "base" ],
   options: {
     // Lists
     panels: {

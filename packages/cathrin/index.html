@@ -13,14 +13,16 @@
     <script type="text/javascript" src="node_modules/@freesewing/plugin-designer/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-debug/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-validate/dist/browser.js"></script>
-    <script type="text/javascript" src="node_modules/@freesewing/plugin-i18n/dist/browser.js"></script>
+    <!-- <script type="text/javascript" src="node_modules/@freesewing/plugin-i18n/dist/browser.js"></script> -->
+    <script type="text/javascript" src="../../plugins/plugin-i18n/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
-       var pattern = freesewing.patterns.cathrin
+       var pattern = new freesewing.patterns.cathrin;
+       pattern
          .with(freesewing.plugins.debug)
          .with(freesewing.plugins.theme)
-       //  .with(freesewing.plugins.designer)
+         .with(freesewing.plugins.designer)
          .with(freesewing.plugins.validate)
          .with(freesewing.plugins.i18n)
        ;
@@ -42,7 +44,7 @@
         models: freesewing.models.men
       }
 
-      pattern.options.panels = 13;
+      pattern.settings.options.panels = 13;
       //pattern.settings.only = ['panels'];
       //pattern.sampleOption('panels');
       //pattern.sampleMeasurement('shoulderSlope');

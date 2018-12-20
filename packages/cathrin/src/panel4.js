@@ -1,6 +1,4 @@
-var panel4 = {
-  draft: function(part) {
-
+export default function(part) {
     // prettier-ignore
     let {macro, sa, snippets, Snippet, points, paths, Point, complete, paperless } = part.shorthand();
 
@@ -76,7 +74,4 @@ var panel4 = {
     }
 
     return part;
-  }
 };
-
-export default panel4;
