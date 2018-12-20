@@ -24,6 +24,7 @@ export default {
     pocket: "front",
     pocketFacing: "pocket",
     hoodCenter: "hoodSide",
+    hoodSide: [ "front", "back" ]
   },
   inject: {
     frontBase: "base",
