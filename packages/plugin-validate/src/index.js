@@ -26,7 +26,7 @@ export default {
           });
           throw new Error(`Missing measurement: ${measurement}`);
         } else {
-          this.debug({
+          pattern.debug({
             type: "success",
             label: '👕 '+measurement+' is ok',
             msg: pattern.settings.measurements[measurement]
