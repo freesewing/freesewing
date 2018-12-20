@@ -1,0 +1,52 @@
+{
+  "name": "@freesewing/svg2pdf",
+  "version": "0.1.0",
+  "description": "A freesewing.org backend to turn SVG patterns into (tiled) PDFs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
+    "dev": "backpack",
+    "build": "backpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freesewing/svg2pdf.git"
+  },
+  "author": "Joost De Cock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/svg2pdf/issues"
+  },
+  "homepage": "https://github.com/freesewing/svg2pdf#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "cors": "2.8.4",
+    "express": "4.16.4",
+    "formidable": "1.2.1",
+    "rimraf": "2.6.2",
+    "shell-exec": "1.0.2"
+  },
+  "devDependencies": {
+    "backpack-core": "0.7.0",
+    "nodemon": "1.18.6"
+  }
+}
