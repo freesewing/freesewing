@@ -33,8 +33,24 @@ Path.prototype.line = function(to) {
   return this;
 };
 
-/** Adds a line operation to Point to */
+/** Adds a curve operation via cp1 & cp2 to Point to */
 Path.prototype.curve = function(cp1, cp2, to) {
+  this.ops.push({ type: "curve", cp1, cp2, to });
+
+  return this;
+};
+
+/** Adds a curve operation without cp1 via cp2 to Point to */
+Path.prototype._curve = function(cp2, to) {
+  let cp1 = this.ops.slice(-1).pop().to;
+  this.ops.push({ type: "curve", cp1, cp2, to });
+
+  return this;
+};
+
+/** Adds a curve operation via cp1 with no cp2 to Point to */
+Path.prototype.curve_ = function(cp1, to) {
+  let cp2 = to.copy();
   this.ops.push({ type: "curve", cp1, cp2, to });
 
   return this;
