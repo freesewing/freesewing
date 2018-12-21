@@ -47,8 +47,7 @@ export default part => {
   paths.armhole = new Path()
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .attr("class", "stroke-xxl");
+    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch);
   paths.armhole.render = false;
   if(options.yokeDart > 0) {
     points.tmp1 = points.armholePitch.shift(-90, points.armholePitch.dy(points.armhole) * options.yokeDart);
@@ -66,8 +65,11 @@ export default part => {
     points.yokeDartTipCp1 = points.armholePitch.shiftFractionTowards(points.yokeDartTip, 0.4);
     paths.armhole = paths.armhole.split(points.yokeDartEdge)[0];
     paths.armhole._curve(points.yokeDartTipCp1, points.yokeDartTip)
-    // FIXME: Must adapt sleeve to compensate for this dart.
-    // Perhaps by reducing sleevecap ease?
+    // Adapt armhole length to accomodate dart
+    store.set(
+      "backArmholeLength",
+      store.get("backArmholeLength") - points.yokeDartEdge.dist(points.armholePitch)
+    );
   }
 
   // Cut off at yoke
@@ -86,13 +88,11 @@ export default part => {
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
-        .attr("class", "stroke-xxl");
+        .line(points.cbYoke);
       paths.hemBase = new Path()
         .move(points.cbHem)
         .line(points.bballStart)
         .curve(points.bballCp1, points.bballCp2, points.bballEnd);
-
       break;
     case "slashed":
       macro("round", {
@@ -107,8 +107,7 @@ export default part => {
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
-        .attr("class", "stroke-xxl");
+        .line(points.cbYoke);
       paths.hemBase = new Path()
         .move(points.cbHem)
         .line(points.slashEnd)
@@ -121,11 +120,8 @@ export default part => {
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
-        .attr("class", "stroke-xxl");
-      paths.hemBase = new Path()
-        .move(points.cbHem)
-        .line(points.hem);
+        .line(points.cbYoke);
+      paths.hemBase = new Path().move(points.cbHem).line(points.hem);
   }
 
   // Paths

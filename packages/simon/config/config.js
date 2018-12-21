@@ -20,11 +20,13 @@ export default {
     frontBase: "base",
     backBase: "base",
     back: "backBase",
+    front: "frontBase",
   },
   inject: {
     frontBase: "base",
     backBase: "base",
     back: "backBase",
+    front: "frontBase",
   },
   hide: [
     "base",

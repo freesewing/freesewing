@@ -5,7 +5,7 @@ import config from "../config/config";
 import { version } from "../package.json";
 // Parts
 import draftBack from "./back";
-//import draftFront from "./front";
+import draftFront from "./front";
 //import draftSleevecap from "./sleevecap";
 //import draftSleeve from "./sleeve";
 //    backBlock: ".Back block"
@@ -52,6 +52,7 @@ Simon.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part);
 }
 Simon.prototype.draftBack = draftBack;
+Simon.prototype.draftFront = draftFront;
 
 
 
