@@ -137,7 +137,11 @@ function draftSleevecap(part, run) {
     let sleevecapEase = armholeLength * options.sleevecapEase;
     store.set("sleevecapEase", sleevecapEase);
     store.set("sleevecapTarget", armholeLength + sleevecapEase);
-    debug({ style: "info", label: "🗸 Sleevecap ease" }, units(sleevecapEase));
+    debug({
+      style: "info",
+      label: "🗸 Sleevecap ease",
+      msg: units(sleevecapEase)
+    });
 
     // Uncomment this line to see all sleevecap iterations
     //paths[run] = paths.sleevecap;
@@ -162,17 +166,19 @@ export default part => {
     Math.abs(sleevecapDelta(store)) > 2
   );
   if (options.brianFitSleeve) {
-    debug(
-      { style: "success", label: "🏁 Sleevecap fitted" },
-      `Target was ${units(store.get("sleevecapTarget"))}, delta of ${units(
+    debug({
+      style: "success",
+      label: "🏁 Sleevecap fitted",
+      msg: `Target was ${units(store.get("sleevecapTarget"))}, delta of ${units(
         delta
       )} reached in ${run} attempts.`
-    );
+    });
   } else
-    debug(
-      { style: "warning", label: "🚫 Not fitting sleevecap" },
-      "(in Brian)"
-    );
+    debug({
+      style: "warning",
+      label: "🚫 Not fittingsleevecap",
+      msg: "(in Brian)"
+    });
 
   // Paths
   paths.sleevecap.attr("class", "fabric");

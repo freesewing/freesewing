@@ -145,13 +145,19 @@ export default part => {
   } while (Math.abs(delta) > 1 && options.brianFitCollar && run < 10);
   delete paths.neckOpening;
   if (options.brianFitCollar) {
-    debug(
-      { style: "success", label: "🏁 Collar fitted" },
-      // prettier-ignore
-      `Target was ${units(target)}, delta of ${units(delta)} reached in ${run} attempts.`
-    );
+    debug({
+      style: "success",
+      label: "🏁 Collar fitted",
+      msg: `Target was ${units(target)}, delta of ${units(
+        delta
+      )} reached in ${run} attempts.`
+    });
   } else
-    debug({ style: "warning", label: "🚫 Not fitting collar" }, "(in Brian)");
+    debug({
+      style: "warning",
+      label: "🚫 Not fittingcollar",
+      msg: "(in Brian)"
+    });
 
   // Anchor point for sampling
   points.gridAnchor = points.cbHem;
