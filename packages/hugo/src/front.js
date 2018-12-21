@@ -20,8 +20,8 @@ export default function(part) {
   );
 
   // Hem is more descripting than hips in this case
-  points.cfHem = points.cfHips;
-  points.hem = points.hips;
+  //points.cfHem = points.cfHips;
+  //points.hem = points.hips;
 
   // Ribbing
   points.cfRibbing = points.cfHem.shift(90, store.get("ribbing"));
@@ -39,12 +39,17 @@ export default function(part) {
     points.ribbing,
     0.6
   );
-  points.pocketCf = points.cfWaist.shift(90, store.get("ribbing"));
+  points.pocketCf = points.cfHem.shift(90, measurements.centerBackNeckToWaist*0.33 + store.get("ribbing"));
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y);
   points.pocketTip = points.pocketHem
     .shift(90, points.pocketHem.x / 3)
     .rotate(-30, points.pocketHem);
-  points.pocketTopCp = points.pocketTop.shift(-90, points.pocketHem.x / 2);
+  points.pocketTopCp = utils.beamsIntersect(
+    points.pocketTop,
+    points.pocketHem,
+    points.pocketTip,
+    points.pocketHem.rotate(90, points.pocketTip)
+  );
 
   // Paths
   paths.saBase = new Path()

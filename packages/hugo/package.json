@@ -29,7 +29,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "watch": "npx webpack --watch",
+    "watch": "nodemon -w src --exec npm run browserbuild",
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_hugo --footer 'freesewing.patterns.hugo = freesewing_patterns_hugo;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m  true",
@@ -47,8 +47,8 @@
     ]
   },
   "dependencies": {
-    "freesewing": "^0.23.2",
-    "@freesewing/brian": "^0.19",
+    "freesewing": "^0.24",
+    "@freesewing/brian": "^0.20",
     "@freesewing/plugin-bundle": "^0.5.1"
   },
   "devDependencies": {
