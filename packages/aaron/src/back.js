@@ -4,9 +4,6 @@ export default function(part) {
   // prettier-ignore
   let {store, sa, Point, points, Path, paths, Snippet, snippets, options, complete, paperless, macro, utils, units} = part.shorthand();
 
-  // Hide Brian paths
-  for(let key of Object.keys(paths)) paths[key].render = false;
-
   points.strapLeftCp2 = utils.beamsIntersect(
     points.strapLeft,
     points.strapCenter.rotate(90, points.strapLeft),
@@ -20,8 +17,8 @@ export default function(part) {
   // Seamline
   paths.seam = new Path()
     .move(points.cbNeck)
-    .line(points.cbHips)
-    .line(points.hips)
+    .line(points.cbHem)
+    .line(points.hem)
     .line(points.waist)
     .join(paths.side)
     .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
@@ -64,7 +61,7 @@ export default function(part) {
 
     macro("cutonfold", {
       from: points.cfNeck,
-      to: points.cfHips,
+      to: points.cfHem,
       grainline: true
     });
 
@@ -77,9 +74,9 @@ export default function(part) {
   if (paperless) {
     dimensions(macro, points, sa);
     macro("vd", {
-      from: points.cbHips,
+      from: points.cbHem,
       to: points.cbNeck,
-      x: points.cbHips.x - sa - 15
+      x: points.cbHem.x - sa - 15
     });
   }
 

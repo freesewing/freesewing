@@ -11,7 +11,7 @@ export default function(part) {
   for(let i in points) points[i].x = points[i].x * (1 - options.stretchFactor);
 
   // Rename cb (center back) to cf (center front)
-  for (let key of ["Neck", "Shoulder", "Armhole", "Waist", "Hips"]) {
+  for (let key of ["Neck", "Shoulder", "Armhole", "Waist", "Hips", "Hem"]) {
     points[`cf${key}`] = new Point(
       points[`cb${key}`].x,
       points[`cb${key}`].y
@@ -42,9 +42,12 @@ export default function(part) {
   points.waist.x = points.hips.x; // Because stretch
   points.waistCp2 = points.waist.shift(90,points.armhole.dy(points.waist)/2);
 
+  // Hem
+  points.hem.x = points.hips.x;
+
   // Armhole drop
   let side = new Path()
-    .move(points.hips)
+    .move(points.hem)
     .line(points.waist)
     .curve(points.waistCp2, points.armhole, points.armhole);
   let split = side.intersectsY(points.armhole.y * (1 + options.armholeDrop)).pop();
@@ -65,8 +68,8 @@ export default function(part) {
   // Seamline
   paths.seam = new Path()
     .move(points.cfNeck)
-    .line(points.cfHips)
-    .line(points.hips)
+    .line(points.cfHem)
+    .line(points.hem)
     .line(points.waist)
     .join(paths.side)
     .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
@@ -95,7 +98,7 @@ export default function(part) {
   if (complete) {
     macro("cutonfold", {
       from: points.cfNeck,
-      to: points.cfHips,
+      to: points.cfHem,
       grainline: true
     });
     points.title = new Point(points.waist.x/2, points.waist.y);
@@ -118,12 +121,12 @@ export default function(part) {
         .line(points.aaronArmhole)
         .attr("class", "fabric sa");
       paths.saHem = new Path()
-        .move(points.cfHips)
-        .line(points.hips)
+        .move(points.cfHem)
+        .line(points.hem)
         .offset(sa * 2.5).attr("class", "fabric sa")
         .line(paths.saSide.start());
       paths.saHem
-        .move(points.cfHips)
+        .move(points.cfHem)
         .line(paths.saHem.start());
     }
   }
@@ -132,9 +135,9 @@ export default function(part) {
   if (paperless) {
     dimensions(macro, points, sa);
     macro("vd", {
-      from: points.cfHips,
+      from: points.cfHem,
       to: points.cfNeck,
-      x: points.cfHips.x - sa - 15
+      x: points.cfHem.x - sa - 15
     });
   }
 

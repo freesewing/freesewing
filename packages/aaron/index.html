@@ -48,7 +48,7 @@
           "collarEase": 0.035,
           "cuffEase": 0.2,
           "frontArmholeDeeper": 0.005,
-          "lengthBonus": 0,
+          "lengthBonus": 0.1,
           "shoulderEase": 0,
           "shoulderSlopeReduction": 0,
           "sleevecapEase": 0.01,
@@ -72,8 +72,8 @@
           "sleeveLengthBonus": 0
         },
         "embed": true,
-        "sa": 0,
-        "paperless": false,
+        "sa": 10,
+        "paperless": true,
         "measurements": {
           "bicepsCircumference": 335,
           "centerBackNeckToWaist": 520,
@@ -148,9 +148,8 @@ let settings1 = { ...settings};
       }
       var pattern1 = new freesewing.patterns.aaron(settings1);
       pattern1.with(freesewing.plugins.theme);
-      pattern1.with(freesewing.plugins.i18n, {strings: {en: {sleeve: "Sleeve"}}});
+      pattern1.with(freesewing.plugins.designer);
       pattern1.draft();
-      console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();
 
       function pointHover(evt) {
