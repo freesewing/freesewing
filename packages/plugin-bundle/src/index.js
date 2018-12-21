@@ -5,9 +5,10 @@ import grainline from "@freesewing/plugin-grainline";
 import logo from "@freesewing/plugin-logo";
 import title from "@freesewing/plugin-title";
 import scalebox from "@freesewing/plugin-scalebox";
+import round from "@freesewing/plugin-round";
 import { version, name } from "../package.json";
 
-let bundle = [cutonfold, dimension, grainline, logo, title, scalebox];
+let bundle = [cutonfold, dimension, grainline, logo, title, scalebox, round];
 
 function bundleHooks() {
   let hooks = {};

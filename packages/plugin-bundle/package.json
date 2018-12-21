@@ -64,7 +64,7 @@
     "eslint": "^5.2.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "freesewing": "^0.18.3",
+    "freesewing": "^0.24.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
     "mocha": "^5.2.0",
@@ -90,6 +90,7 @@
     "@freesewing/plugin-grainline": "0.2.2",
     "@freesewing/plugin-logo": "0.5.2",
     "@freesewing/plugin-scalebox": "0.3.1",
-    "@freesewing/plugin-title": "0.9.1"
+    "@freesewing/plugin-title": "0.9.1",
+    "@freesewing/plugin-round": "0.2.0"
   }
 }
