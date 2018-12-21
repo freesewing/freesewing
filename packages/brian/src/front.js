@@ -13,7 +13,7 @@ export default part => {
   points.armholePitchCp2.x -= deeper;
 
   // Rename cb (center back) to cf (center front)
-  for (let key of ["Shoulder", "Armhole", "Waist", "Hips"]) {
+  for (let key of ["Shoulder", "Armhole", "Waist", "Hips", "Hem"]) {
     points[`cf${key}`] = new Point(points[`cb${key}`].x, points[`cb${key}`].y);
     delete points[`cb${key}`];
   }
@@ -24,7 +24,7 @@ export default part => {
   paths.saBase = shared.saBase("front", points, Path);
   paths.seam = new Path()
     .move(points.cfNeck)
-    .line(points.cfHips)
+    .line(points.cfHem)
     .join(paths.saBase)
     .attr("class", "fabric");
 

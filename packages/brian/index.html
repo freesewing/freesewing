@@ -148,7 +148,9 @@ let settings1 = { ...settings};
       }
       var pattern1 = new freesewing.patterns.brian(settings1);
       pattern1.with(freesewing.plugins.theme);
-      pattern1.with(freesewing.plugins.i18n, {strings: {en: {sleeve: "Sleeve"}}});
+      pattern1.with(freesewing.plugins.designer);
+      pattern1.settings.options.lengthBonus =0.1;
+      //pattern1.settings.only="base";
       pattern1.draft();
       console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();

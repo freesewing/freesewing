@@ -1,9 +1,9 @@
 export function saBase(side, points, Path) {
   let path = new Path();
-  if (side === "back") path.move(points.cbHips);
-  else path.move(points.cfHips);
+  if (side === "back") path.move(points.cbHem);
+  else path.move(points.cfHem);
   path
-    .line(points.hips)
+    .line(points.hem)
     .line(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)

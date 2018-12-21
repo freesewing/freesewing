@@ -35,6 +35,10 @@ export default part => {
   );
   points.cbHips = new Point(
     0,
+    points.cbWaist.y + measurements.naturalWaistToHip
+  );
+  points.cbHem = new Point(
+    0,
     points.cbWaist.y +
       measurements.naturalWaistToHip +
       (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
@@ -48,6 +52,7 @@ export default part => {
   );
   points.waist = new Point(points.armhole.x, points.cbWaist.y);
   points.hips = new Point(points.armhole.x, points.cbHips.y);
+  points.hem = new Point(points.armhole.x, points.cbHem.y);
 
   // Shoulder line
   points.neck = new Point(
@@ -149,13 +154,13 @@ export default part => {
     debug({ style: "warning", label: "🚫 Not fitting collar" }, "(in Brian)");
 
   // Anchor point for sampling
-  points.gridAnchor = points.cbHips;
+  points.gridAnchor = points.cbHem;
 
   // Seamline
   paths.saBase = shared.saBase("back", points, Path);
   paths.seam = new Path()
     .move(points.cbNeck)
-    .line(points.cbHips)
+    .line(points.cbHem)
     .join(paths.saBase)
     .attr("class", "fabric");
 
