@@ -147,8 +147,8 @@ let settings1 = { ...settings};
         }}
       }
       var pattern1 = new freesewing.patterns.aaron(settings1);
-      pattern1.with(freesewing.plugins.theme);
-      pattern1.with(freesewing.plugins.designer);
+      pattern1.use(freesewing.plugins.theme);
+      pattern1.use(freesewing.plugins.designer);
       pattern1.draft();
       document.getElementById("svg1").innerHTML = pattern1.render();
 
