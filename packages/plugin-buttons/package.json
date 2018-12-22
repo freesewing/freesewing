@@ -1,0 +1,79 @@
+{
+  "name": "@freesewing/plugin-buttons",
+  "version": "0.0.1",
+  "description": "A freesewing plugin that provides button and buttonhole snippets",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "homepage": "https://github.com/freesewing/plugin-buttons#readme",
+  "repository": "github:freesewing/plugin-buttons",
+  "bugs": {
+    "url": "https://github.com/freesewing/plugin-buttons/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "plugin",
+    "sewing patterns",
+    "snippets"
+  ],
+  "main": "dist/index.js",
+  "unpkg": "dist/browser.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "precommit": "npm run pretty && lint-staged",
+    "test": "nyc mocha --require @babel/register tests/*.test.js",
+    "report": "nyc report --reporter=html  mocha --require @babel/register tests/*.test.js",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write \"src/*.js\"",
+    "lint": "eslint --fix \"src/*.js\"",
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife --name freesewing.plugins.buttons",
+    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
+    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.1.2",
+    "chai-string": "1.4.0",
+    "codecov": "^3.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "freesewing": "^0.26.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "12.0.2",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-terser": "^1.0.1"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
+}
