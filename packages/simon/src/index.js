@@ -8,6 +8,7 @@ import config from "../config/config";
 import draftBack from "./back";
 import draftFront from "./front";
 import draftFrontRight from "./frontright";
+import draftButtonPlacket from "./buttonplacket";
 //import draftSleevecap from "./sleevecap";
 //import draftSleeve from "./sleeve";
 //    sleeveBlock: ".Sleeve block"
@@ -54,9 +55,6 @@ Simon.prototype.draftBackBase = function(part) {
 Simon.prototype.draftBack = draftBack;
 Simon.prototype.draftFront = draftFront;
 Simon.prototype.draftFrontRight = draftFrontRight;
-
-//Brian.prototype.draftFront = draftFront;
-//Brian.prototype.draftSleevecap = draftSleevecap;
-//Brian.prototype.draftSleeve = draftSleeve;
+Simon.prototype.draftButtonPlacket = draftButtonPlacket;
 
 export default Simon;

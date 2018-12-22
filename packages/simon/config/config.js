@@ -22,14 +22,16 @@ export default {
     backBase: "base",
     back: "backBase",
     front: "frontBase",
-    frontRight: "front"
+    frontRight: "front",
+    buttonPlacket: "front"
   },
   inject: {
     frontBase: "base",
     backBase: "base",
     back: "backBase",
     front: "frontBase",
-    frontRight: "front"
+    frontRight: "front",
+    buttonPlacket: "front"
   },
   hide: ["base", "frontBase", "backBase"],
   options: {
@@ -119,7 +121,6 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     hemCurve: { pct: 75, min: 25, max: 100 },
     hipsEase: { pct: 8, min: -4, max: 20 },
-    hipsFlare: { pct: 3, min: 0, max: 5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
