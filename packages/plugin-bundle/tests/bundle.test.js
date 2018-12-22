@@ -11,8 +11,8 @@ let bundle = [
 ];
 
 it("Should set the plugins name:version attribute", () => {
-  let pattern = new freesewing.Pattern().with(plugin);
-  pattern.render();
+  let pattern = new freesewing.Pattern();
+  pattern.use(plugin).render();
   for (let plug of bundle) {
     expect(
       typeof pattern.svg.attributes.get("freesewing:plugin-" + plug)

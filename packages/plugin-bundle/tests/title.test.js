@@ -4,7 +4,8 @@ let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
 it("Should set the plugin name:version attribute", () => {
-  let pattern = new freesewing.Pattern().with(plugin);
+  let pattern = new freesewing.Pattern();
+  pattern.use(plugin);
   pattern.render();
   expect(pattern.svg.attributes.get("freesewing:plugin-title")).to.equal(
     version
@@ -14,7 +15,7 @@ it("Should set the plugin name:version attribute", () => {
 it("Should run the title macro", () => {
   let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(-12, -34);
   let { macro } = pattern.parts.test.shorthand();
@@ -49,8 +50,8 @@ it("Should run the title macro", () => {
 
 it("Should run the title macro with append flag", () => {
   let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
+  pattern.use(plugin);
   pattern.draft = function() {};
-  pattern.with(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr(
     "data-text",
@@ -78,7 +79,7 @@ it("Should run the title macro with append flag", () => {
 it("Should run the title macro with point prefix", () => {
   let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr(
     "data-text",

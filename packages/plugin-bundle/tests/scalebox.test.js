@@ -4,7 +4,7 @@ let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
 it("Should set the plugin name:version attribute", () => {
-  let pattern = new freesewing.Pattern().with(plugin);
+  let pattern = new freesewing.Pattern().use(plugin);
   pattern.render();
   expect(pattern.svg.attributes.get("freesewing:plugin-scalebox")).to.equal(
     version
@@ -14,7 +14,7 @@ it("Should set the plugin name:version attribute", () => {
 it("Should run the default scalebox macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(100, 200);
   let { macro } = pattern.parts.test.shorthand();
@@ -85,7 +85,7 @@ it("Should run the default scalebox macro", () => {
 it("Should run the scalebox macro with rotation", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(100, 200);
   let { macro } = pattern.parts.test.shorthand();
@@ -130,7 +130,7 @@ it("Should run the scalebox macro with default text", () => {
     version: 99
   });
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(100, 200);
   let { macro } = pattern.parts.test.shorthand();
@@ -161,7 +161,7 @@ it("Should run the scalebox macro with custom text", () => {
     version: 99
   });
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.anchor = new pattern.Point(100, 200);
   let { macro } = pattern.parts.test.shorthand();

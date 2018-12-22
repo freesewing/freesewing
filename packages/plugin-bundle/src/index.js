@@ -6,9 +6,19 @@ import logo from "@freesewing/plugin-logo";
 import title from "@freesewing/plugin-title";
 import scalebox from "@freesewing/plugin-scalebox";
 import round from "@freesewing/plugin-round";
+import sprinkle from "@freesewing/plugin-sprinkle";
 import { version, name } from "../package.json";
 
-let bundle = [cutonfold, dimension, grainline, logo, title, scalebox, round];
+let bundle = [
+  cutonfold,
+  dimension,
+  grainline,
+  logo,
+  title,
+  scalebox,
+  round,
+  sprinkle
+];
 
 function bundleHooks() {
   let hooks = {};
