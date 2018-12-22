@@ -83,7 +83,7 @@ it("Should merge settings with default settings", () => {
       free: "ze"
     }
   };
-  pattern.mergeSettings(settings);
+  pattern.apply(settings);
   expect(pattern.settings.foo).to.equal("bar");
   expect(pattern.settings.locale).to.equal("en");
   expect(pattern.settings.margin).to.equal(2);
@@ -197,7 +197,7 @@ it("Should sample models", () => {
   };
   const Test = function(settings) {
     freesewing.Pattern.call(this, config);
-    this.mergeSettings(settings);
+    this.apply(settings);
     return this;
   };
   Test.prototype = Object.create(freesewing.Pattern.prototype);
@@ -387,7 +387,7 @@ it("Should correctly merge settings", () => {
     only: [1, 2, 3],
     margin: 5
   };
-  pattern.mergeSettings(settings);
+  pattern.apply(settings);
   expect(pattern.settings.complete).to.equal(false);
   expect(pattern.settings.only[1]).to.equal(2);
   expect(pattern.settings.margin).to.equal(5);
@@ -402,7 +402,7 @@ it("Should correctly merge settings for existing array", () => {
     only: [2, 3, 4],
     margin: 5
   };
-  pattern.mergeSettings(settings);
+  pattern.apply(settings);
   expect(pattern.settings.complete).to.equal(false);
   expect(pattern.settings.only.length).to.equal(4);
   expect(pattern.settings.margin).to.equal(5);

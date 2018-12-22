@@ -87,7 +87,7 @@ export default function Pattern(config = { options: {} }) {
 }
 
 // Merges settings object with this.settings
-Pattern.prototype.mergeSettings = function(settings) {
+Pattern.prototype.apply = function(settings) {
   for (let key of Object.keys(settings)) {
     if (Array.isArray(settings[key])) {
       if (Array.isArray(this.settings[key])) {
@@ -100,6 +100,8 @@ Pattern.prototype.mergeSettings = function(settings) {
       };
     } else this.settings[key] = settings[key];
   }
+
+  return this;
 };
 
 Pattern.prototype.runHooks = function(hookName, data = false) {
