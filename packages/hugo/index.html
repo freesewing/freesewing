@@ -20,11 +20,11 @@
     <script>
       var pattern = new freesewing.patterns.hugo;
       pattern
-        .with(freesewing.plugins.debug)
-        .with(freesewing.plugins.theme)
-        .with(freesewing.plugins.designer)
-        .with(freesewing.plugins.validate)
-        .with(freesewing.plugins.i18n)
+        .use(freesewing.plugins.debug)
+        .use(freesewing.plugins.theme)
+        .use(freesewing.plugins.designer)
+        .use(freesewing.plugins.validate)
+        .use(freesewing.plugins.i18n)
       ;
       pattern.settings.locale = 'nl';
       pattern.settings.paperless = true;

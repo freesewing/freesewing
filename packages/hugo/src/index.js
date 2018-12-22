@@ -1,8 +1,7 @@
 import freesewing from "freesewing";
 import Brian from "@freesewing/brian";
-import pluginBundle from "@freesewing/plugin-bundle";
+import plugins from "@freesewing/plugin-bundle";
 import config from "../config/config";
-import { version } from "../package.json";
 // Parts
 import draftBack from "./back";
 import draftFront from "./front";
@@ -15,15 +14,16 @@ import draftWaistband from "./waistband";
 import draftCuff from "./cuff";
 
 // Constructor boilerplate
-const Hugo = function(settings = false) {
-  freesewing.Pattern.call(this, { version: version, ...config });
-  this.with(pluginBundle);
-  if (settings !== false) this.mergeSettings(settings);
+const Hugo = function(settings) {
+  freesewing.Pattern.call(this, config);
+  this
+    .use(plugins)
+    .apply(settings);
 
   return this;
 };
 
-// Inheritance boilerplate
+// Set up inheritance
 Hugo.prototype = Object.create(freesewing.Pattern.prototype);
 Hugo.prototype.constructor = Hugo;
 
