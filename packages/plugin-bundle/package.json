@@ -90,7 +90,7 @@
     "@freesewing/plugin-grainline": "0.2.2",
     "@freesewing/plugin-logo": "0.5.2",
     "@freesewing/plugin-scalebox": "0.3.1",
-    "@freesewing/plugin-title": "0.9.1",
+    "@freesewing/plugin-title": "0.10.0",
     "@freesewing/plugin-round": "0.2.0",
     "@freesewing/plugin-sprinkle": "0.1.0"
   }
