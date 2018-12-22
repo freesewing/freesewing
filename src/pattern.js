@@ -333,7 +333,7 @@ Pattern.prototype.on = function(hook, method, data) {
   this.hooks[hook].push({ method, data });
 };
 
-Pattern.prototype.with = function(plugin, data = false) {
+Pattern.prototype.use = function(plugin, data = false) {
   this.debug({
     type: "success",
     label: "🔌 Plugin loaded",

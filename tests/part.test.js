@@ -39,7 +39,7 @@ it("Should register and run a macro", () => {
       }
     }
   };
-  pattern.with(plugin);
+  pattern.use(plugin);
   let part = new pattern.Part();
   let macro = part.macroClosure();
   macro("test", { x: 123, y: 456 });

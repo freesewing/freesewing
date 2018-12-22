@@ -284,7 +284,7 @@ it("Should register a hook from a plugin", () => {
       }
     }
   };
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.draft();
   expect(count).to.equal(1);
 });
@@ -307,7 +307,7 @@ it("Should register multiple methods on a single hook", () => {
       ]
     }
   };
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.draft();
   expect(count).to.equal(2);
 });
