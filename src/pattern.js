@@ -88,6 +88,7 @@ export default function Pattern(config = { options: {} }) {
 
 // Merges settings object with this.settings
 Pattern.prototype.apply = function(settings) {
+  if (typeof settings !== "object") return this;
   for (let key of Object.keys(settings)) {
     if (Array.isArray(settings[key])) {
       if (Array.isArray(this.settings[key])) {
