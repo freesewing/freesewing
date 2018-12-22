@@ -1,7 +1,6 @@
 import freesewing from "freesewing";
-import pluginBundle from "@freesewing/plugin-bundle";
+import plugins from "@freesewing/plugin-bundle";
 import config from "../config/config";
-import { version } from "../package.json";
 // Parts
 import draftBase from "./base";
 import draftBack from "./back";
@@ -9,16 +8,15 @@ import draftFront from "./front";
 import draftSleevecap from "./sleevecap";
 import draftSleeve from "./sleeve";
 
-// Constructor boilerplate
-const Brian = function(settings = false) {
-  freesewing.Pattern.call(this, { version: version, ...config });
-  this.use(pluginBundle);
-  if (settings !== false) this.mergeSettings(settings);
+// Constructor
+const Brian = function(settings) {
+  freesewing.Pattern.call(this, config);
+  this.use(plugins).apply(settings);
 
   return this;
 };
 
-// Inheritance boilerplate
+// Set up inheritance
 Brian.prototype = Object.create(freesewing.Pattern.prototype);
 Brian.prototype.constructor = Brian;
 
