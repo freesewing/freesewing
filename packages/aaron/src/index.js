@@ -1,20 +1,21 @@
 import freesewing from "freesewing";
 import Brian from "../../brian/dist";
-import pluginBundle from "@freesewing/plugin-bundle";
+import plugins from "@freesewing/plugin-bundle";
 import config from "../config/config";
-import { version } from "../package.json";
+// Parts
 import draftBack from "./back";
 import draftFront from "./front";
 
-const Aaron = function(settings = false) {
-  freesewing.Pattern.call(this, { version: version, ...config });
-  this.use(pluginBundle);
-  if (settings !== false) this.mergeSettings(settings);
+const Aaron = function(settings) {
+  freesewing.Pattern.call(this, config);
+  this
+    .use(plugins)
+    .apply(settings);
 
   return this;
 };
 
-// Setup inheritance
+// Set up inheritance
 Aaron.prototype = Object.create(freesewing.Pattern.prototype);
 Aaron.prototype.constructor = Aaron;
 

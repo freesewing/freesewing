@@ -1,5 +1,8 @@
+import { version } from "../package.json";
+
 export default {
   name: "aaron",
+  version,
   measurements: [
     "bicepsCircumference",
     "centerBackNeckToWaist",
