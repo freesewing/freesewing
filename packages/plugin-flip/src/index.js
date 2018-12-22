@@ -11,7 +11,6 @@ export default {
   },
   macros: {
     flip: function() {
-      console.log('flip macro');
       let ops = ["from", "to", "cp1", "cp2"];
       for(let id of Object.keys(this.points)) this.points[id].x = this.points[id].x * -1;
       for(let id of Object.keys(this.paths)) {
