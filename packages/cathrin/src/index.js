@@ -1,7 +1,6 @@
 import freesewing from "freesewing";
-import pluginBundle from "@freesewing/plugin-bundle";
+import plugins from "@freesewing/plugin-bundle";
 import config from "../config/config";
-import { version } from "../package.json";
 //Parts
 import draftBase from "./base";
 import draftPanels from "./panels";
@@ -12,16 +11,17 @@ import draftPanel4 from "./panel4";
 import draftPanel5 from "./panel5";
 import draftPanel6 from "./panel6";
 
-// Constructor boilerplate
-const Cathrin = function(settings = false) {
-  freesewing.Pattern.call(this, { version: version, ...config });
-  this.with(pluginBundle);
-  if (settings !== false) this.mergeSettings(settings);
+// Constructor
+const Cathrin = function(settings) {
+  freesewing.Pattern.call(this, config);
+  this
+    .use(plugins)
+    .apply(settings);
 
   return this;
 };
 
-// Inheritance boilerplate
+// Set up inheritance
 Cathrin.prototype = Object.create(freesewing.Pattern.prototype);
 Cathrin.prototype.constructor = Cathrin;
 
