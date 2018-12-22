@@ -18,6 +18,7 @@
     <!-- <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script> -->
     <script type="text/javascript" src="../../freesewing/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-sprinkle/dist/browser.js"></script>
     <script type="text/javascript" src="dist/browser.js"></script>
     <!-- <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script> -->
     <script type="text/javascript" src="../../plugins/plugin-theme/dist/browser.js"></script>
@@ -26,6 +27,7 @@
     <!-- <script type="text/javascript" src="node_modules/@freesewing/plugin-validate/dist/browser.js"></script> -->
     <script type="text/javascript" src="../../plugins/plugin-validate/dist/browser.js"></script>
     <!-- <script type="text/javascript" src="node_modules/@freesewing/plugin-i18n/dist/browser.js"></script> -->
+    <script type="text/javascript" src="../../plugins/plugin-flip/dist/browser.js"></script>
     <script type="text/javascript" src="../../plugins/plugin-i18n/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
@@ -99,14 +101,17 @@
       };
 let settings1 = { ...settings };
       var pattern1 = new freesewing.patterns.simon(settings1);
-      pattern1.with(freesewing.plugins.theme);
-      pattern1.with(freesewing.plugins.designer);
-      pattern1.with(freesewing.plugins.debug);
+      pattern1.use(freesewing.plugins.theme);
+      pattern1.use(freesewing.plugins.designer);
+      pattern1.use(freesewing.plugins.flip);
+      pattern1.use(freesewing.plugins.debug);
       pattern1.settings.options.yokeDart = 0.15;
       pattern1.settings.options.lengthBonus = 0.1;
-      pattern1.settings.options.hemStyle = "basebal";
+      pattern1.settings.options.hemStyle = "slashed";
+      pattern1.settings.options.buttonPlacketType = "seperate";
       pattern1.settings.options.collarEase = 0.1;
       pattern1.settings.sa = 10;
+      pattern1.settings.only = "frontRight";
       pattern1.draft();
       console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();

@@ -1,7 +1,6 @@
 import { terser } from "rollup-plugin-terser";
 import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
 import path from "path";
 import { name, version, description, author, license } from "./package.json";
@@ -13,7 +12,6 @@ export default {
       browser: true
     }),
     json(),
-    commonjs(),
     babel({
       exclude: "node_modules/**"
     }),

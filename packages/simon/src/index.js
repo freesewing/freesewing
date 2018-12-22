@@ -1,18 +1,16 @@
 import freesewing from "freesewing";
 import Brian from "@freesewing/brian";
-import pluginBundle from "@freesewing/plugin-bundle";
+import plugins from "@freesewing/plugin-bundle";
+import flipPlugin from "@freesewing/plugin-flip";
+import buttonPlugin from "@freesewing/plugin-buttons";
 import config from "../config/config";
-import { version } from "../package.json";
 // Parts
 import draftBack from "./back";
 import draftFront from "./front";
+import draftFrontRight from "./frontright";
 //import draftSleevecap from "./sleevecap";
 //import draftSleeve from "./sleeve";
-//    backBlock: ".Back block"
-//    frontBlock: ".Front block"
 //    sleeveBlock: ".Sleeve block"
-//    block: ".Block"
-//    frontAndBackBlock: ".Front and back block"
 //    frontRight: "Front right"
 //    frontLeft: "Front left"
 //    buttonPlacket: "Button placket."
@@ -28,33 +26,34 @@ import draftFront from "./front";
 //    barrelCuff: "Barrel cuff"
 //    frenchCuff: "French cuff"
 
-// Constructor boilerplate
-const Simon = function(settings = false) {
-  freesewing.Pattern.call(this, { version: version, ...config });
-  this.with(pluginBundle);
-  if (settings !== false) this.mergeSettings(settings);
+// Constructor
+const Simon = function(settings) {
+  freesewing.Pattern.call(this, config);
+  this.use(plugins)
+    .use(flipPlugin)
+    .use(buttonPlugin)
+    .apply(settings);
 
   return this;
 };
 
-// Inheritance boilerplate
+// Set up inheritance
 Simon.prototype = Object.create(freesewing.Pattern.prototype);
 Simon.prototype.constructor = Simon;
 
 // Attach per-part draft methods to prototype
-Simon.prototype.draftBase = function (part) {
+Simon.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
-}
-Simon.prototype.draftFrontBase = function (part) {
+};
+Simon.prototype.draftFrontBase = function(part) {
   return new Brian(this.settings).draftFront(part);
-}
-Simon.prototype.draftBackBase = function (part) {
+};
+Simon.prototype.draftBackBase = function(part) {
   return new Brian(this.settings).draftBack(part);
-}
+};
 Simon.prototype.draftBack = draftBack;
 Simon.prototype.draftFront = draftFront;
-
-
+Simon.prototype.draftFrontRight = draftFrontRight;
 
 //Brian.prototype.draftFront = draftFront;
 //Brian.prototype.draftSleevecap = draftSleevecap;
