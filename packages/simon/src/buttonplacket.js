@@ -4,6 +4,16 @@ export default part => {
   // prettier-ignore
   let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
 
+  if (
+    options.buttonPlacketType !== "seperate" ||
+    options.buttonPlacketStyle !== "classic"
+  ) {
+    part.paths = {};
+    part.snippets = {};
+    part.points = {};
+    return part;
+  }
+
   for (let id of Object.keys(part.paths)) {
     if (id !== "seam") delete part.paths[id];
   }

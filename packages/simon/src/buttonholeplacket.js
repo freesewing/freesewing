@@ -4,6 +4,17 @@ export default part => {
   // prettier-ignore
   let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
 
+  if (
+    options.buttonholePlacketType !== "seperate" ||
+    options.buttonholePlacketStyle !== "classic"
+  ) {
+    part.paths = {};
+    part.snippets = {};
+    part.points = {};
+    return part;
+  }
+
+  console.log(options);
   for (let id of Object.keys(part.paths)) delete part.paths[id];
   let width = options.buttonholePlacketWidth;
   let fold = options.buttonholePlacketFoldWidth;

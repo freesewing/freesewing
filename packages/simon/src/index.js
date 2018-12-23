@@ -11,6 +11,7 @@ import draftFrontRight from "./frontright";
 import draftButtonPlacket from "./buttonplacket";
 import draftFrontLeft from "./frontleft";
 import draftButtonholePlacket from "./buttonholeplacket";
+import draftYoke from "./yoke";
 
 // Constructor
 const Simon = function(settings) {
@@ -43,6 +44,7 @@ Simon.prototype.draftFrontRight = draftFrontRight;
 Simon.prototype.draftButtonPlacket = draftButtonPlacket;
 Simon.prototype.draftFrontLeft = draftFrontLeft;
 Simon.prototype.draftButtonholePlacket = draftButtonholePlacket;
+Simon.prototype.draftYoke = draftYoke;
 
 export default Simon;
 
