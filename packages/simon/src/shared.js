@@ -37,5 +37,5 @@ export const addButtons = function(
     );
 };
 
-export const addButtonHoles = part =>
-  addButtons(part, "placketCfNeck", "buttonhole");
+export const addButtonHoles = (part, origin) =>
+  addButtons(part, origin, "buttonhole");

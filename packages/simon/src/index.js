@@ -10,6 +10,7 @@ import draftFront from "./front";
 import draftFrontRight from "./frontright";
 import draftButtonPlacket from "./buttonplacket";
 import draftFrontLeft from "./frontleft";
+import draftButtonholePlacket from "./buttonholeplacket";
 
 // Constructor
 const Simon = function(settings) {
@@ -41,6 +42,7 @@ Simon.prototype.draftFront = draftFront;
 Simon.prototype.draftFrontRight = draftFrontRight;
 Simon.prototype.draftButtonPlacket = draftButtonPlacket;
 Simon.prototype.draftFrontLeft = draftFrontLeft;
+Simon.prototype.draftButtonholePlacket = draftButtonholePlacket;
 
 export default Simon;
 

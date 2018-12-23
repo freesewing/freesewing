@@ -24,7 +24,8 @@ export default {
     front: "frontBase",
     frontRight: "front",
     frontLeft: "front",
-    buttonPlacket: "front"
+    buttonPlacket: "front",
+    buttonholePlacket: "front"
   },
   inject: {
     frontBase: "base",
@@ -33,7 +34,8 @@ export default {
     front: "frontBase",
     frontRight: "front",
     frontLeft: "front",
-    buttonPlacket: "front"
+    buttonPlacket: "front",
+    buttonholePlacket: "front"
   },
   hide: ["base", "frontBase", "front", "backBase"],
   options: {

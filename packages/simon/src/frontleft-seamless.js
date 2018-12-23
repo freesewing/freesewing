@@ -1,20 +1,23 @@
-import { addButtons } from "./shared";
+import { addButtonHoles } from "./shared";
 
 export default part => {
   // prettier-ignore
   let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
 
-  let width = options.buttonPlacketWidth;
-  points.placketTopFold1 = points.cfNeck.shift(0, width / 2);
-  points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5);
-  points.placketTopEdge = points.cfNeck.shift(0, width * 2.5);
-  points.placketBottomFold1 = points.cfHem.shift(0, width / 2);
-  points.placketBottomFold2 = points.cfHem.shift(0, width * 1.5);
-  points.placketBottomEdge = points.cfHem.shift(0, width * 2.5);
+  console.log("seamless buttonjholes");
+  let fold = options.buttonholePlacketFoldWidth;
+  let width = options.buttonholePlacketWidth;
+  points.placketCfNeck = points.cfNeck;
+  points.placketTopFold1 = points.cfNeck.shift(180, width / 2);
+  points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5);
+  points.placketTopEdge = points.cfNeck.shift(180, width * 2.5);
+  points.placketBottomFold1 = points.cfHem.shift(180, width / 2);
+  points.placketBottomFold2 = points.cfHem.shift(180, width * 1.5);
+  points.placketBottomEdge = points.cfHem.shift(180, width * 2.5);
+
   paths.seam
     .line(points.placketTopEdge)
     .line(points.placketBottomEdge)
-    .line(points.cfHem)
     .close();
 
   // Complete pattern?
@@ -35,27 +38,27 @@ export default part => {
     macro("sprinkle", {
       snippet: "notch",
       on: [
+        "cfNeck",
+        "cfHem",
         "placketTopFold1",
         "placketTopFold2",
         "placketBottomFold1",
-        "placketBottomFold2",
-        "cfNeck",
-        "cfHem"
+        "placketBottomFold2"
       ]
     });
 
     // Buttons
-    addButtons(part);
+    addButtonHoles(part, "cfNeck");
 
     // Title
-    macro("title", { at: points.title, nr: 1, title: "frontRight" });
+    macro("title", { at: points.title, nr: 2, title: "frontLeft" });
 
     if (sa) {
       paths.saFromArmhole
-        .line(new Point(points.placketTopEdge.x, points.placketTopEdge.y - sa))
+        .line(points.placketTopEdge.shift(90, sa))
         .line(points.placketTopEdge)
         .move(points.placketBottomEdge)
-        .line(points.placketBottomEdge.shift(-90, sa * 3))
+        .line(points.placketBottomEdge.shift(-90, 3 * sa))
         .line(paths.hemSa.start());
     }
   }
@@ -63,6 +66,5 @@ export default part => {
   // Paperless?
   if (paperless) {
   }
-
   return part;
 };

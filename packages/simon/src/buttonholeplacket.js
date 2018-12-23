@@ -4,8 +4,20 @@ export default part => {
   // prettier-ignore
   let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
 
-  let fold = options.buttonholePlacketFoldWidth;
+  for (let id of Object.keys(part.paths)) delete part.paths[id];
   let width = options.buttonholePlacketWidth;
+  let fold = options.buttonholePlacketFoldWidth;
+
+  points.topInnerEdge = utils.lineIntersectsCurve(
+    new Point(points.cfNeck.x + fold * 2, points.cfNeck.y + 20),
+    new Point(points.cfNeck.x + fold * 2, points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  );
+  points.bottomInnerEdge = new Point(points.topInnerEdge.x, points.cfHem.y);
+
   points.placketCfNeck = points.cfNeck.shift(180, fold * 2);
   points.placketTopInnerEdgeFold = points.placketCfNeck.shift(0, width / 2);
   points.placketTopInnerEdgeOver = points.placketCfNeck.shift(
@@ -50,10 +62,18 @@ export default part => {
     width
   );
 
-  paths.seam
-    .line(points.placketTopEdge)
+  paths.saBase = new Path()
+    .move(points.placketTopEdge)
+    .line(points.cfNeck)
+    .curve(points.cfNeckCp1, points.neckCp2Front, points.neck)
+    .split(points.topInnerEdge)[0]
+    .line(points.bottomInnerEdge);
+
+  paths.seam = paths.saBase
+    .clone()
     .line(points.placketBottomEdge)
-    .close();
+    .close()
+    .attr("class", "fabric");
 
   // Complete pattern?
   if (complete) {
@@ -70,10 +90,6 @@ export default part => {
       .move(points.placketTopInnerEdgeOver)
       .line(points.placketBottomInnerEdgeOver)
       .attr("class", "dotted");
-    paths.placketInnerEdgeUnder = new Path()
-      .move(points.placketTopInnerEdgeUnder)
-      .line(points.placketBottomInnerEdgeUnder)
-      .attr("class", "dotted");
     paths.placketOuterEdgeFold = new Path()
       .move(points.placketTopOuterEdgeFold)
       .line(points.placketBottomOuterEdgeFold)
@@ -86,44 +102,64 @@ export default part => {
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)
       .attr("class", "dotted");
-    macro("sprinkle", {
-      snippet: "notch",
-      on: [
-        "placketCfNeck",
-        "placketCfHem",
-        "placketTopInnerEdgeFold",
-        "placketTopInnerEdgeOver",
-        "placketTopInnerEdgeUnder",
-        "placketTopOuterEdgeFold",
-        "placketTopOuterEdgeOver",
-        "placketTopOuterEdgeUnder",
-        "placketBottomInnerEdgeFold",
-        "placketBottomInnerEdgeOver",
-        "placketBottomInnerEdgeUnder",
-        "placketBottomOuterEdgeFold",
-        "placketBottomOuterEdgeOver",
-        "placketBottomOuterEdgeUnder"
-      ]
-    });
+
+    // Notches
+    snippets["cfArmhole-notch"].anchor.x = points.cfArmhole.x - fold * 2;
+    snippets["cfWaist-notch"].anchor.x = points.cfArmhole.x - fold * 2;
+    snippets["cfHips-notch"].anchor.x = points.cfArmhole.x - fold * 2;
 
     // Buttons
     addButtonHoles(part, "placketCfNeck");
 
+    // Grainline
+    points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2);
+    points.grainlineTo = points.placketTopEdge.shift(0, width / 2);
+    macro("grainline", {
+      from: points.grainlineFrom,
+      to: points.grainlineTo
+    });
+
     // Title
-    macro("title", { at: points.title, nr: 2, title: "frontLeft" });
+    points.title = new Point(points.placketCfNeck.x, points.cfArmhole.y);
+    macro("title", {
+      at: points.title,
+      nr: "2b",
+      title: "buttonholePlacket",
+      scale: 0.75,
+      rotation: -90
+    });
+
+    // Logo
+    points.logo = points.title.shift(-90, 120);
+    snippets.logo = new Snippet("logo", points.logo)
+      .attr("data-scale", 0.5)
+      .attr("data-rotate", -90);
 
     if (sa) {
-      paths.saFromArmhole
-        .line(points.placketTopEdge.shift(90, sa))
-        .line(points.placketTopEdge)
-        .move(points.placketBottomEdge)
-        .line(points.placketBottomEdge.shift(-90, 3 * sa))
-        .line(paths.hemSa.start());
+      paths.sa = paths.saBase.offset(sa * -1);
+      paths.sa
+        .line(
+          new Point(
+            points.bottomInnerEdge.x + sa,
+            points.bottomInnerEdge.y + 3 * sa
+          )
+        )
+        .line(
+          new Point(
+            points.placketBottomEdge.x,
+            points.placketBottomEdge.y + 3 * sa
+          )
+        )
+        .line(points.placketBottomEdge)
+        .move(points.placketTopEdge)
+        .line(paths.sa.start())
+        .attr("class", "fabric sa");
     }
   }
 
   // Paperless?
   if (paperless) {
   }
+
   return part;
 };
