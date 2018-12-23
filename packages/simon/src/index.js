@@ -12,6 +12,7 @@ import draftButtonPlacket from "./buttonplacket";
 import draftFrontLeft from "./frontleft";
 import draftButtonholePlacket from "./buttonholeplacket";
 import draftYoke from "./yoke";
+import draftSleeve from "./sleeve";
 
 // Constructor
 const Simon = function(settings) {
@@ -38,6 +39,10 @@ Simon.prototype.draftFrontBase = function(part) {
 Simon.prototype.draftBackBase = function(part) {
   return new Brian(this.settings).draftBack(part);
 };
+Simon.prototype.draftSleeveBase = function(part) {
+  let brian = new Brian(this.settings);
+  return brian.draftSleeve(brian.draftSleevecap(part));
+};
 Simon.prototype.draftBack = draftBack;
 Simon.prototype.draftFront = draftFront;
 Simon.prototype.draftFrontRight = draftFrontRight;
@@ -45,6 +50,7 @@ Simon.prototype.draftButtonPlacket = draftButtonPlacket;
 Simon.prototype.draftFrontLeft = draftFrontLeft;
 Simon.prototype.draftButtonholePlacket = draftButtonholePlacket;
 Simon.prototype.draftYoke = draftYoke;
+Simon.prototype.draftSleeve = draftSleeve;
 
 export default Simon;
 

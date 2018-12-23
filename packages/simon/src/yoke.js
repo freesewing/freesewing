@@ -23,7 +23,7 @@ export default part => {
   paths.seam = paths.seam.close().attr("class", "fabric");
 
   // Complete pattern?
-  if (sa) {
+  if (complete) {
     delete snippets.armholePitchNotch;
     points.title = new Point(points.neck.x, points.cbYoke.y / 3);
     macro("title", { at: points.title, nr: 4, title: "yoke", scale: 0.8 });

@@ -26,7 +26,8 @@ export default {
     frontLeft: "front",
     buttonPlacket: "front",
     buttonholePlacket: "front",
-    yoke: "backBase"
+    yoke: "backBase",
+    sleeve: ["sleeveBase", "front", "back"]
   },
   inject: {
     frontBase: "base",
@@ -37,16 +38,17 @@ export default {
     frontLeft: "front",
     buttonPlacket: "front",
     buttonholePlacket: "front",
-    yoke: "backBase"
+    yoke: "backBase",
+    sleeve: "sleeveBase"
   },
-  hide: ["base", "frontBase", "front", "backBase"],
+  hide: ["base", "frontBase", "front", "backBase", "sleeveBase"],
   options: {
     // Constants
     collarFactor: 5,
     minimalDartShaping: 5,
     brianFitSleeve: true,
-
-    // Toggles
+    cuffOverlap: 0.05,
+    frenchCuffRoundFactor: 0.05,
 
     // Lists
     extraTopButton: {
