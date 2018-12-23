@@ -9,23 +9,7 @@ import draftBack from "./back";
 import draftFront from "./front";
 import draftFrontRight from "./frontright";
 import draftButtonPlacket from "./buttonplacket";
-//import draftSleevecap from "./sleevecap";
-//import draftSleeve from "./sleeve";
-//    sleeveBlock: ".Sleeve block"
-//    frontRight: "Front right"
-//    frontLeft: "Front left"
-//    buttonPlacket: "Button placket."
-//    buttonholePlacket: "Buttonhole placket."
-//    yoke: "Yoke"
-//    back: "Back"
-//    sleeve: "Sleeve"
-//    collarStand: "Collar stand"
-//    collar: "Collar"
-//    undercollar: "Undercollar"
-//    sleevePlacketUnderlap: "Sleeve placket underlap"
-//    sleevePlacketOverlap: "Sleeve placket overlap"
-//    barrelCuff: "Barrel cuff"
-//    frenchCuff: "French cuff"
+import draftFrontLeft from "./frontleft";
 
 // Constructor
 const Simon = function(settings) {
@@ -56,5 +40,24 @@ Simon.prototype.draftBack = draftBack;
 Simon.prototype.draftFront = draftFront;
 Simon.prototype.draftFrontRight = draftFrontRight;
 Simon.prototype.draftButtonPlacket = draftButtonPlacket;
+Simon.prototype.draftFrontLeft = draftFrontLeft;
 
 export default Simon;
+
+//import draftSleevecap from "./sleevecap";
+//import draftSleeve from "./sleeve";
+//    sleeveBlock: ".Sleeve block"
+//    frontRight: "Front right"
+//    frontLeft: "Front left"
+//    buttonPlacket: "Button placket."
+//    buttonholePlacket: "Buttonhole placket."
+//    yoke: "Yoke"
+//    back: "Back"
+//    sleeve: "Sleeve"
+//    collarStand: "Collar stand"
+//    collar: "Collar"
+//    undercollar: "Undercollar"
+//    sleevePlacketUnderlap: "Sleeve placket underlap"
+//    sleevePlacketOverlap: "Sleeve placket overlap"
+//    barrelCuff: "Barrel cuff"
+//    frenchCuff: "French cuff"

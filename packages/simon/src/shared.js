@@ -16,19 +16,26 @@ export const calculateReduction = function(part) {
   store.set("reduction", true);
 };
 
-export const addButtons = function(part) {
+export const addButtons = function(
+  part,
+  origin = "cfNeck",
+  snippet = "button"
+) {
   let { points, options, snippets, Snippet } = part.shorthand();
   let len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
   for (let i = 1; i <= options.buttons; i++) {
-    points["button" + i] = points.cfNeck.shift(
+    points["button" + i] = points[origin].shift(
       -90,
       (len / options.buttons) * i
     );
-    snippets["button" + i] = new Snippet("button", points["button" + i]);
+    snippets[snippet + i] = new Snippet(snippet, points["button" + i]);
   }
   if (options.extraTopButton === "yes")
-    snippets.topButton = new Snippet(
-      "button",
-      points.cfNeck.shift(-90, len / options.buttons / 2)
+    snippets["top" + snippet] = new Snippet(
+      snippet,
+      points[origin].shift(-90, len / options.buttons / 2)
     );
 };
+
+export const addButtonHoles = part =>
+  addButtons(part, "placketCfNeck", "buttonhole");

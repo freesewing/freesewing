@@ -23,6 +23,7 @@ export default {
     back: "backBase",
     front: "frontBase",
     frontRight: "front",
+    frontLeft: "front",
     buttonPlacket: "front"
   },
   inject: {
@@ -31,9 +32,10 @@ export default {
     back: "backBase",
     front: "frontBase",
     frontRight: "front",
+    frontLeft: "front",
     buttonPlacket: "front"
   },
-  hide: ["base", "frontBase", "backBase"],
+  hide: ["base", "frontBase", "front", "backBase"],
   options: {
     // Constants
     collarFactor: 5,
