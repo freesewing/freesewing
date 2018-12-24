@@ -113,7 +113,7 @@ let settings1 = { ...settings };
       pattern1.settings.options.buttonholePlacketType = "seperate";
       //pattern1.settings.options.splitYoke = "yes";
       pattern1.settings.sa = 10;
-      //pattern1.settings.only = "sleeve";
+      pattern1.settings.only = "collarStand";
       pattern1.draft();
       console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();
