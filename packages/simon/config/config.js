@@ -41,7 +41,7 @@ export default {
     yoke: "backBase",
     sleeve: "sleeveBase"
   },
-  parts: ["collarStand"],
+  parts: ["collarStand", "collar"],
   hide: ["base", "frontBase", "front", "backBase", "sleeveBase"],
   options: {
     // Constants
@@ -103,7 +103,8 @@ export default {
     // Angles
     collarAngle: { deg: 85, min: 60, max: 130 },
     collarStandBend: { deg: 3, min: 0, max: 5 },
-    collarStandCurve: { deg: 5, min: 0, max: 5 },
+    collarStandCurve: { deg: 2, min: 0, max: 5 },
+    collarFlare: { deg: 4, min: 0, max: 10 },
 
     // Millimeter
     buttonPlacketWidth: { mm: 20, min: 10, max: 30 },
@@ -121,7 +122,6 @@ export default {
     chestEase: { pct: 8, min: -4, max: 20 },
     collarBend: { pct: 5, min: 0, max: 10 },
     collarEase: { pct: 3.5, min: 0, max: 10 },
-    collarFlare: { pct: 3, min: 0, max: 6 },
     collarGap: { pct: 3, min: 0, max: 6 },
     collarRoll: { pct: 3, min: 0, max: 6 },
     cuffDrape: { pct: 10, min: 0, max: 20 },

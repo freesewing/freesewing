@@ -160,8 +160,8 @@ export default part => {
 
     // Grainline
     macro("grainline", {
-      from: points.bottomMid,
-      to: points.topMid
+      from: points.leftCf,
+      to: points.rightCf
     });
 
     // Title

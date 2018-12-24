@@ -14,6 +14,7 @@ import draftButtonholePlacket from "./buttonholeplacket";
 import draftYoke from "./yoke";
 import draftSleeve from "./sleeve";
 import draftCollarStand from "./collarstand";
+import draftCollar from "./collar";
 
 // Constructor
 const Simon = function(settings) {
@@ -53,5 +54,6 @@ Simon.prototype.draftButtonholePlacket = draftButtonholePlacket;
 Simon.prototype.draftYoke = draftYoke;
 Simon.prototype.draftSleeve = draftSleeve;
 Simon.prototype.draftCollarStand = draftCollarStand;
+Simon.prototype.draftCollar = draftCollar;
 
 export default Simon;
