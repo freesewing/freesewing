@@ -41,7 +41,12 @@ export default {
     yoke: "backBase",
     sleeve: "sleeveBase"
   },
-  parts: ["collarStand", "collar"],
+  parts: [
+    "collarStand",
+    "collar",
+    "sleevePlacketUnderlap",
+    "sleevePlacketOverlap"
+  ],
   hide: ["base", "frontBase", "front", "backBase", "sleeveBase"],
   options: {
     // Constants

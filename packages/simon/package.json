@@ -27,7 +27,7 @@
     "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
+    "pretty": "npx prettier --write \"src/*.js\" \"config/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
     "watch": "nodemon -w src --exec npm run browserbuild",
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_simon --footer 'freesewing.patterns.simon = freesewing_patterns_simon;'",
