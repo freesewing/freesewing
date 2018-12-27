@@ -1,6 +1,20 @@
 export default part => {
-  // prettier-ignore
-  let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
+  let {
+    store,
+    measurements,
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options
+  } = part.shorthand();
 
   const draft = function(tweak = 1) {
     let length =
@@ -202,6 +216,67 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.topMid,
+      to: points.rightTopCf,
+      y: points.topMid.y - 15 - sa
+    });
+    macro("hd", {
+      from: points.leftTopCf,
+      to: points.topMid,
+      y: points.topMid.y - 15 - sa
+    });
+    macro("hd", {
+      from: points.topMid,
+      to: points.rightBottomEdge,
+      y: points.topMid.y - 30 - sa
+    });
+    macro("hd", {
+      from: points.leftBottomEdge,
+      to: points.topMid,
+      y: points.topMid.y - 30 - sa
+    });
+    macro("pd", {
+      path: new Path()
+        .move(points.leftBottomCf)
+        .curve(
+          points.leftBottomCfCp2,
+          points.leftBottomHingeCp1,
+          points.leftBottomHinge
+        )
+        .curve(points.leftBottomHingeCp2, points.bottomMidCp1, points.bottomMid)
+        .curve(
+          points.bottomMidCp2,
+          points.rightBottomHingeCp1,
+          points.rightBottomHinge
+        )
+        .curve(
+          points.rightBottomHingeCp2,
+          points.rightBottomCfCp1,
+          points.rightBottomCf
+        ),
+      d: 15 + sa
+    });
+    macro("ld", {
+      from: points.leftBottomEdge,
+      to: points.leftBottomCf,
+      d: -30 - sa
+    });
+    macro("ld", {
+      from: points.rightBottomCf,
+      to: points.rightBottomEdge,
+      d: -30 - sa
+    });
+    macro("ld", {
+      from: points.rightBottomCf,
+      to: points.rightTopCf,
+      d: -15 - sa - options.buttonholePlacketWidth / 2
+    });
+    macro("vd", {
+      from: points.rightBottomCf,
+      to: points.topMid,
+      x: points.rightBottomEdge.x + 30 + sa
+    });
   }
 
   return part;
