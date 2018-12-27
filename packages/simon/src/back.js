@@ -1,8 +1,22 @@
 import { calculateReduction } from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
+  let {
+    store,
+    measurements,
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options
+  } = part.shorthand();
 
   // Populare store with data we need
   calculateReduction(part);

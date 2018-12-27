@@ -5,8 +5,22 @@ import {
 } from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
+  let {
+    store,
+    measurements,
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options
+  } = part.shorthand();
 
   draftBarrelCuff(part);
   let height = store.get("cuffHeight");
