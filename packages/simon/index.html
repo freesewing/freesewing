@@ -114,7 +114,7 @@ let settings1 = { ...settings };
       pattern1.settings.options.cuffStyle = "straightBarrelCuff";
       pattern1.settings.options.splitYoke = "yes";
       pattern1.settings.sa = 10;
-      pattern1.settings.only = "yoke";
+      pattern1.settings.only = ["sleeve", "cuff"];
       pattern1.draft();
       console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();

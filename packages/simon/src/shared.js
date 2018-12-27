@@ -45,7 +45,7 @@ export const draftBarrelCuff = part => {
   let height = measurements.shoulderToWrist * options.cuffLength;
   let width =
     measurements.wristCircumference *
-    (1 + options.cuffEase + options.cuffOverlap + options.cuffDrape);
+    (1 + options.cuffEase + options.cuffOverlap);
   store.set("cuffHeight", height);
   points.topLeft = new Point(0, 0);
   points.topRight = new Point(width, 0);
