@@ -149,6 +149,41 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("vd", {
+      from: points.bottomMid,
+      to: points.topMid,
+      x: points.rightTopEdge.x + 15 + sa
+    });
+    macro("vd", {
+      from: points.bottomMid,
+      to: points.rightTopEdge,
+      x: points.rightTopEdge.x + 30 + sa
+    });
+    macro("vd", {
+      from: points.rightBottomEdge,
+      to: points.topMid,
+      x: points.rightTopEdge.x + 45 + sa
+    });
+    macro("vd", {
+      from: points.rightBottomEdge,
+      to: points.rightTopEdge,
+      x: points.rightTopEdge.x + 60 + sa
+    });
+    macro("hd", {
+      from: points.leftTopHinge,
+      to: points.rightTopHinge,
+      y: points.leftTopEdge.y - 15 - sa
+    });
+    macro("hd", {
+      from: points.leftTopEdge,
+      to: points.rightTopEdge,
+      y: points.leftTopEdge.y - 30 - sa
+    });
+    macro("hd", {
+      from: points.leftBottomEdge,
+      to: points.rightBottomEdge,
+      y: points.leftBottomEdge.y + 15 + sa
+    });
   }
 
   return part;
