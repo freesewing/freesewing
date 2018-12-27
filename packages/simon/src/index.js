@@ -17,6 +17,7 @@ import draftCollarStand from "./collarstand";
 import draftCollar from "./collar";
 import draftSleevePlacketUnderlap from "./sleeveplacket-underlap";
 import draftSleevePlacketOverlap from "./sleeveplacket-overlap";
+import draftCuff from "./cuff";
 
 // Constructor
 const Simon = function(settings) {
@@ -59,5 +60,6 @@ Simon.prototype.draftCollarStand = draftCollarStand;
 Simon.prototype.draftCollar = draftCollar;
 Simon.prototype.draftSleevePlacketUnderlap = draftSleevePlacketUnderlap;
 Simon.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap;
+Simon.prototype.draftCuff = draftCuff;
 
 export default Simon;

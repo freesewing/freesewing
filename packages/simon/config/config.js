@@ -45,7 +45,8 @@ export default {
     "collarStand",
     "collar",
     "sleevePlacketUnderlap",
-    "sleevePlacketOverlap"
+    "sleevePlacketOverlap",
+    "cuff"
   ],
   hide: ["base", "frontBase", "front", "backBase", "sleeveBase"],
   options: {
@@ -53,7 +54,7 @@ export default {
     collarFactor: 5,
     minimalDartShaping: 5,
     brianFitSleeve: true,
-    cuffOverlap: 0.05,
+    cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
 
     // Lists
@@ -131,7 +132,7 @@ export default {
     collarRoll: { pct: 3, min: 0, max: 6 },
     cuffDrape: { pct: 10, min: 0, max: 20 },
     cuffEase: { pct: 20, min: 0, max: 200 },
-    cuffLength: { pct: 5, min: 3, max: 10 },
+    cuffLength: { pct: 10, min: 3, max: 15 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     hemCurve: { pct: 75, min: 25, max: 100 },
     hipsEase: { pct: 8, min: -4, max: 20 },
