@@ -1,8 +1,26 @@
-import { draftFrenchCuff, decorateFrenchCuff } from "./shared";
+import {
+  draftFrenchCuff,
+  decorateFrenchCuff,
+  paperlessFrenchCuff
+} from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {store, measurements, utils, sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options} = part.shorthand();
+  let {
+    store,
+    measurements,
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options
+  } = part.shorthand();
 
   draftFrenchCuff(part);
   let height = store.get("barrelCuffHeight");
@@ -28,8 +46,7 @@ export default part => {
   }
 
   // Paperless?
-  if (paperless) {
-  }
+  if (paperless) paperlessFrenchCuff(part);
 
   return part;
 };

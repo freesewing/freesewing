@@ -1,4 +1,8 @@
-import { draftBarrelCuff, decorateBarrelCuff } from "./shared";
+import {
+  draftBarrelCuff,
+  decorateBarrelCuff,
+  paperlessBarrelCuff
+} from "./shared";
 
 export default part => {
   // prettier-ignore
@@ -30,6 +34,13 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    paperlessBarrelCuff(part);
+    console.log("trre", points.topRightRoundStart);
+    macro("vd", {
+      from: points.rightAngleBottom,
+      to: points.rightAngleTop,
+      x: points.rightAngleBottom.x + 15 + sa
+    });
   }
 
   return part;

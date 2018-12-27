@@ -187,3 +187,50 @@ export const decorateFrenchCuff = part => {
 
   return part;
 };
+
+export const paperlessBarrelCuff = part => {
+  let { sa, macro, points } = part.shorthand();
+  macro("hd", {
+    from: points.buttonhole1,
+    to: points.button1,
+    y: points.bottomLeft.y + 15 + sa
+  });
+  macro("hd", {
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 30 + sa
+  });
+  macro("vd", {
+    from: points.bottomLeft,
+    to: points.topLeft.shift(0, 40),
+    x: points.bottomLeft.x - 15 - sa
+  });
+
+  return part;
+};
+
+export const paperlessFrenchCuff = part => {
+  let { sa, macro, points } = part.shorthand();
+  macro("hd", {
+    from: points.button4,
+    to: points.button2,
+    y: points.bottomLeft.y + 15 + sa
+  });
+  macro("hd", {
+    from: points.midLeft,
+    to: points.midRight,
+    y: points.bottomLeft.y + 30 + sa
+  });
+  macro("vd", {
+    from: points.button2,
+    to: points.button1,
+    x: points.topRight.x + 15 + sa
+  });
+  macro("vd", {
+    from: points.bottomRight.shift(180, 40),
+    to: points.topRight.shift(180, 40),
+    x: points.topRight.x + 30 + sa
+  });
+
+  return part;
+};
