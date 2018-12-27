@@ -62,6 +62,26 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("vd", {
+      from: points.fold2Right,
+      to: points.fold1Right,
+      x: points.topRight.x + 15
+    });
+    macro("vd", {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + 30
+    });
+    macro("hd", {
+      from: points.bottomLeft,
+      to: points.button,
+      y: points.bottomRight.y + 15
+    });
+    macro("hd", {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomRight.y + 30
+    });
   }
 
   return part;

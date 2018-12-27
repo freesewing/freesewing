@@ -189,7 +189,7 @@ export const decorateFrenchCuff = part => {
 };
 
 export const paperlessBarrelCuff = part => {
-  let { sa, macro, points } = part.shorthand();
+  let { sa, macro, points, options } = part.shorthand();
   macro("hd", {
     from: points.buttonhole1,
     to: points.button1,
@@ -205,6 +205,20 @@ export const paperlessBarrelCuff = part => {
     to: points.topLeft.shift(0, 40),
     x: points.bottomLeft.x - 15 - sa
   });
+  if (options.barrelcuffNarrowButton === "yes") {
+    macro("hd", {
+      from: points.narrowButton1,
+      to: points.button1,
+      y: points.topRight.y - 15 - sa
+    });
+  }
+  if (options.cuffButtonRows === 2) {
+    macro("vd", {
+      from: points.button2,
+      to: points.button1,
+      x: points.topRight.x + 15 + sa
+    });
+  }
 
   return part;
 };
