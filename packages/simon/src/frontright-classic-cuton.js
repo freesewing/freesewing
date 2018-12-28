@@ -89,6 +89,48 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.placketTopOut,
+      to: points.placketTopEdge,
+      y: points.placketTopEdge.y - 15 - sa
+    });
+    macro("hd", {
+      from: points.cfNeck,
+      to: points.placketTopEdge,
+      y: points.placketTopEdge.y - 30 - sa
+    });
+    macro("hd", {
+      from: points.placketTopIn,
+      to: points.placketTopEdge,
+      y: points.placketTopEdge.y - 45 - sa
+    });
+    macro("hd", {
+      from: points.neck,
+      to: points.placketTopEdge,
+      y: points.neck.y - 15 - sa
+    });
+    macro("hd", {
+      from: points.shoulder,
+      to: points.placketTopEdge,
+      y: points.neck.y - 30 - sa
+    });
+    let len =
+      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
+    points.button0 = points.placketTopEdge;
+    let j;
+    for (let i = 0; i < options.buttons; i++) {
+      j = i + 1;
+      macro("vd", {
+        from: points["button" + j],
+        to: points["button" + i],
+        x: points.placketTopEdge.x + 15 + sa
+      });
+    }
+    macro("vd", {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x + 30 + sa
+    });
   }
 
   return part;

@@ -103,21 +103,23 @@
 let settings1 = { ...settings };
       var pattern1 = new freesewing.patterns.simon(settings1);
       pattern1.use(freesewing.plugins.theme);
-      //pattern1.use(freesewing.plugins.designer);
+      pattern1.use(freesewing.plugins.designer);
       pattern1.use(freesewing.plugins.flip);
       pattern1.use(freesewing.plugins.banner);
       pattern1.use(freesewing.plugins.debug);
       pattern1.settings.options.yokeDart = 0;
       pattern1.settings.options.lengthBonus = 0.1;
-      pattern1.settings.options.hemStyle = "slashed";
-      pattern1.settings.options.buttonholePlacketType = "seperate";
+      pattern1.settings.options.hemStyle = "baseball";
+      pattern1.settings.options.buttonPlacketType = "cut-on";
+      pattern1.settings.options.buttonPlacketStyle = "classic";
+      pattern1.settings.options.buttonholePlacketType = "cut-on";
       pattern1.settings.options.buttonholePlacketStyle = "seamless";
       pattern1.settings.options.cuffButtonRows = 2;
       pattern1.settings.options.barrelCuffNarrowButton = "yes";
       pattern1.settings.options.cuffStyle = "straightBarrelCuff";
       pattern1.settings.options.splitYoke = "yes";
       pattern1.settings.sa = 10;
-      pattern1.settings.nly = ["sleeve"];
+      //pattern1.settings.only = ["frontRight", "frontLeft"];
       pattern1.draft();
       document.getElementById("svg1").innerHTML = pattern1.render();
 

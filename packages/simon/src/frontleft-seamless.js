@@ -83,7 +83,6 @@ export default part => {
       "placketBottomFold2",
       "placketBottomFold1",
       "cfHem",
-      "slashEnd",
       "hips"
     ]) {
       offset += 15;
