@@ -16,7 +16,7 @@
 
 # plugin-banner
 
-A freesewing plugin to banner corners.
+A freesewing plugin to repeat text on paths.
 
 ## Install
 
@@ -42,13 +42,12 @@ You now have the `banner` macro available:
 
 ```js
 macro("banner", {
-  from: pointA,
-  to: pointC,
-  via: pointB,
-  radius: 20,
-  render: true,
-  class: "fabric",
-  prefix: "example"
+  path: "hem",
+  text: [
+    "hem",
+    ": 2x",
+    "seamAllowance"
+  ]
 });
 ```
 
