@@ -45,11 +45,12 @@
     ]
   },
   "dependencies": {
-    "@freesewing/aaron": "0.7.1",
-    "@freesewing/brian": "^0.18.1",
-    "@freesewing/bruce": "0.4.0",
-    "@freesewing/cathrin": "0.3.0",
-    "@freesewing/hugo": "0.2.2"
+    "@freesewing/aaron": "0.10.1",
+    "@freesewing/brian": "^0.22.1",
+    "@freesewing/bruce": "0.5.1",
+    "@freesewing/cathrin": "0.4.1",
+    "@freesewing/hugo": "0.4.1",
+    "@freesewing/simon": "0.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",
