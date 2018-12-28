@@ -18,7 +18,6 @@ export default part => {
     options
   } = part.shorthand();
 
-  console.log("seamless buttonjholes");
   let fold = options.buttonholePlacketFoldWidth;
   let width = options.buttonholePlacketWidth;
   points.placketCfNeck = points.cfNeck;
@@ -79,6 +78,43 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    let offset = 0;
+    for (let pid of [
+      "placketBottomFold2",
+      "placketBottomFold1",
+      "cfHem",
+      "slashEnd",
+      "hips"
+    ]) {
+      offset += 15;
+      macro("hd", {
+        from: points.placketBottomEdge,
+        to: points[pid],
+        y: points.placketBottomEdge.y + offset + 3 * sa
+      });
+    }
+    macro("hd", {
+      from: points.placketTopEdge,
+      to: points.neck,
+      y: points.neck.y - 15 - sa
+    });
+    let len =
+      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
+    points.button0 = points.placketTopEdge;
+    let j;
+    for (let i = 0; i < options.buttons; i++) {
+      j = i + 1;
+      macro("vd", {
+        from: points["button" + j],
+        to: points["button" + i],
+        x: points.placketTopEdge.x - 15
+      });
+    }
+    macro("vd", {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x - 30
+    });
   }
   return part;
 };

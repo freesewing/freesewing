@@ -68,7 +68,7 @@ export const decorateBarrelCuff = part => {
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2);
   macro("title", {
-    nr: 10,
+    nr: 11,
     title: "cuff",
     at: points.title,
     scale: 0.8
@@ -139,7 +139,7 @@ export const decorateFrenchCuff = part => {
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2);
   macro("title", {
-    nr: 10,
+    nr: 11,
     title: "cuff",
     at: points.title,
     scale: 0.8

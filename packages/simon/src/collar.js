@@ -74,7 +74,6 @@ export default part => {
     delta = draft(tweak);
     tweak = tweak * (1 - delta / 1000);
     run++;
-    console.log("tweak is", tweak, "run", run, "delta", delta);
   } while (Math.abs(delta) > 1 && run < 20);
 
   paths.seam = new Path()

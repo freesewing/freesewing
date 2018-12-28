@@ -216,6 +216,10 @@ export default part => {
         .move(paths.sa.end())
         .line(points.cbYoke)
         .attr("class", "fabric sa");
+      macro("banner", {
+        path: "hemSa",
+        text: ["hem", ": 3x", "seamAllowance"]
+      });
     }
   }
 

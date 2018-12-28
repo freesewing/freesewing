@@ -164,12 +164,17 @@ export default part => {
     macro("grainline", { from: points.cuffMid, to: points.sleeveTip });
 
     if (sa) {
-      paths.sa = paths.frenchBase
-        .offset(sa * 2)
+      paths.sa = paths.frenchBase.offset(sa * 2);
+      paths.frenchSa = paths.sa.clone();
+      paths.sa = paths.sa
         .join(paths.saBase.offset(sa))
         .join(paths.cuffBase.offset(sa))
         .close()
         .attr("class", "fabric sa");
+      macro("banner", {
+        path: "frenchSa",
+        text: ["frenchSean", ": 2x", "seamAllowance"]
+      });
     }
   }
 

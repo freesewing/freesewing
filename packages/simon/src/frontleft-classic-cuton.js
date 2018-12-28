@@ -189,6 +189,11 @@ export default part => {
       to: points.neck,
       y: points.placketTopEdge.y - offset - sa - 15
     });
+    macro("hd", {
+      from: points.placketTopEdge,
+      to: points.shoulder,
+      y: points.placketTopEdge.y - offset - sa - 30
+    });
     let len =
       points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
     points.button0 = points.placketTopEdge;

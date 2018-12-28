@@ -38,6 +38,16 @@ export default part => {
     // Title
     macro("title", { at: points.title, nr: "2a", title: "frontLeft" });
 
+    delete snippets["cfWaist-notch"];
+    delete snippets["cfHips-notch"];
+    delete snippets["cfArmhole-notch"];
+    points.edgeArmhole = new Point(points.neckEdge.x, points.armhole.y);
+    points.edgeWaist = new Point(points.neckEdge.x, points.waist.y);
+    points.edgeHips = new Point(points.neckEdge.x, points.hips.y);
+    macro("sprinkle", {
+      snippet: "notch",
+      on: ["edgeArmhole", "edgeWaist", "edgeHips"]
+    });
     if (sa) {
       paths.saFromArmhole.end().x = points.neckEdge.x - sa;
       paths.hemSa.start().x = points.neckEdge.x - sa;
@@ -50,6 +60,32 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.neckEdge,
+      to: points.neck,
+      y: points.neck.y - sa - 15
+    });
+    macro("hd", {
+      from: points.neckEdge,
+      to: points.shoulder,
+      y: points.neck.y - sa - 30
+    });
+    macro("vd", {
+      from: points.neckEdge,
+      to: points.neck,
+      x: points.neckEdge.x - sa - 15
+    });
+    macro("vd", {
+      from: points.hemEdge,
+      to: points.neck,
+      x: points.neckEdge.x - sa - 30
+    });
+    for (let pid of ["Armhole", "Waist", "Hips"]) {
+      macro("hd", {
+        from: points["edge" + pid],
+        to: points[pid.toLowerCase()]
+      });
+    }
   }
   return part;
 };
