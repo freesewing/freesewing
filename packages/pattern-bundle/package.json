@@ -50,7 +50,7 @@
     "@freesewing/bruce": "0.5.1",
     "@freesewing/cathrin": "0.4.1",
     "@freesewing/hugo": "0.4.1",
-    "@freesewing/simon": "0.1.0"
+    "@freesewing/simon": "0.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",
