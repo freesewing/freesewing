@@ -100,11 +100,26 @@ export default part => {
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)
       .attr("class", "dotted");
+    points.placketEdgeWaist = new Point(
+      points.placketBottomEdge.x,
+      points.waist.y
+    );
+    points.placketEdgeArmhole = new Point(
+      points.placketBottomEdge.x,
+      points.armhole.y
+    );
+    points.placketEdgeHips = new Point(
+      points.placketBottomEdge.x,
+      points.hips.y
+    );
     macro("sprinkle", {
       snippet: "notch",
       on: [
         "placketCfNeck",
         "placketCfHem",
+        "placketEdgeArmhole",
+        "placketEdgeWaist",
+        "placketEdgeHips",
         "placketTopInnerEdgeFold",
         "placketTopInnerEdgeOver",
         "placketTopInnerEdgeUnder",
@@ -119,7 +134,9 @@ export default part => {
         "placketBottomOuterEdgeUnder"
       ]
     });
-
+    delete snippets["cfWaist-notch"];
+    delete snippets["cfHips-notch"];
+    delete snippets["cfArmhole-notch"];
     // Buttons
     addButtonHoles(part, "placketCfNeck");
 
@@ -138,6 +155,57 @@ export default part => {
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.placketEdgeArmhole,
+      to: points.armhole
+    });
+    macro("hd", {
+      from: points.placketEdgeWaist,
+      to: points.waist
+    });
+    macro("hd", {
+      from: points.placketEdgeHips,
+      to: points.hips
+    });
+    let offset = 0;
+    for (let pid of [
+      "placketTopOuterEdgeUnder",
+      "placketTopOuterEdgeFold",
+      "placketTopOuterEdgeOver",
+      "placketCfNeck",
+      "placketTopInnerEdgeOver",
+      "placketTopInnerEdgeFold",
+      "placketTopInnerEdgeUnder"
+    ]) {
+      offset += 15;
+      macro("hd", {
+        from: points.placketTopEdge,
+        to: points[pid],
+        y: points.placketTopEdge.y - offset - sa
+      });
+    }
+    macro("hd", {
+      from: points.placketTopEdge,
+      to: points.neck,
+      y: points.placketTopEdge.y - offset - sa - 15
+    });
+    let len =
+      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
+    points.button0 = points.placketTopEdge;
+    let j;
+    for (let i = 0; i < options.buttons; i++) {
+      j = i + 1;
+      macro("vd", {
+        from: points["button" + j],
+        to: points["button" + i],
+        x: points.placketTopEdge.x - 15
+      });
+    }
+    macro("vd", {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x - 30
+    });
   }
   return part;
 };

@@ -1,6 +1,7 @@
 import { calculateReduction } from "./shared";
 
 export default part => {
+  part.paths = {};
   let {
     store,
     measurements,
