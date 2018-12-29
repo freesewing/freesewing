@@ -69,7 +69,6 @@ export default part => {
   // Paperless?
   if (paperless) {
     paperlessBarrelCuff(part);
-    console.log("trre", points.topRightRoundStart);
     macro("vd", {
       from: points.topRightRoundStart,
       to: points.topRightRoundEnd,

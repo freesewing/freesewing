@@ -28,7 +28,6 @@ export default part => {
     return part;
   }
 
-  console.log(options);
   for (let id of Object.keys(part.paths)) delete part.paths[id];
   let width = options.buttonholePlacketWidth;
   let fold = options.buttonholePlacketFoldWidth;

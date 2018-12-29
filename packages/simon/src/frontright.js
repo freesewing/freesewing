@@ -14,18 +14,19 @@ export default part => {
     paths
   } = part.shorthand();
   macro("flip");
-  points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5);
-  macro("scalebox", { at: points.scalebox });
-
-  if (complete && paperless) {
-    frontDimensions(part, "right");
-    macro("ld", {
-      from: points.shoulder,
-      to: points.neck,
-      d: 15 + sa
-    });
-    paths.hemSa.attr("data-text-dy", 7, true);
-    paths.saFrench.attr("data-text-dy", 7, true);
+  if (complete) {
+    points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5);
+    macro("scalebox", { at: points.scalebox });
+    if (paperless) {
+      frontDimensions(part, "right");
+      macro("ld", {
+        from: points.shoulder,
+        to: points.neck,
+        d: 15 + sa
+      });
+      paths.hemSa.attr("data-text-dy", 7, true);
+      paths.saFrench.attr("data-text-dy", 7, true);
+    }
   }
 
   return options.buttonPlacketStyle === "seamless"
