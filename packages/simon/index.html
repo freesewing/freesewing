@@ -76,7 +76,7 @@
         },
         "embed": true,
         "sa": 0,
-        "paperless": true,
+        //"paperless": true,
         "measurements": {
           "bicepsCircumference": 335,
           "centerBackNeckToWaist": 520,
@@ -116,9 +116,9 @@ let settings1 = { ...settings };
       pattern1.settings.options.buttonholePlacketType = "cut-on";
       pattern1.settings.options.buttonholePlacketStyle = "seamless";
       pattern1.settings.options.cuffButtonRows = 2;
-      pattern1.settings.options.barrelCuffNarrowButton = "yes";
-      pattern1.settings.options.cuffStyle = "roundedFrenchCuff";
-      pattern1.settings.options.splitYoke = "yes";
+      pattern1.settings.options.barrelCuffNarrowButton = true;
+      pattern1.settings.options.cuffStyle = "roundedBarrelCuff";
+      pattern1.settings.options.extraTopButton = true;
       pattern1.settings.sa = 10;
       //pattern1.settings.only = ["front", "back"];
       pattern1.draft();

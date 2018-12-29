@@ -57,34 +57,21 @@ export default {
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
 
+    // Booleans
+    extraTopButton: { bool: true },
+    splitYoke: { bool: false },
+    barrelCuffNarrowButton: { bool: true },
+    seperateButtonPlacket: { bool: false },
+    seperateButtonholePlacket: { bool: false },
+
     // Lists
-    extraTopButton: {
-      list: ["yes", "no"],
-      dflt: "yes"
-    },
-    splitYoke: {
-      list: ["yes", "no"],
-      dflt: "no"
-    },
-    barrelcuffNarrowButton: {
-      list: ["yes", "no"],
-      dflt: "yes"
-    },
     hemStyle: {
       list: ["straight", "baseball", "slashed"],
       dflt: "straight"
     },
-    buttonPlacketType: {
-      list: ["cutOn", "seperate"],
-      dflt: "cutOn"
-    },
     buttonPlacketStyle: {
       list: ["classic", "seamless"],
       dflt: "classic"
-    },
-    buttonholePlacketType: {
-      list: ["cutOn", "seperate"],
-      dflt: "cutOn"
     },
     buttonholePlacketStyle: {
       list: ["classic", "seamless"],

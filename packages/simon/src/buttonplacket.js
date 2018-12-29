@@ -19,7 +19,7 @@ export default part => {
   } = part.shorthand();
 
   if (
-    options.buttonPlacketType !== "seperate" ||
+    !options.seperateButtonPlacket ||
     options.buttonPlacketStyle !== "classic"
   ) {
     part.paths = {};

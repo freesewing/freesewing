@@ -30,7 +30,7 @@ export default part => {
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve_(points.neckCp2, points.cbNeck);
-  if (options.splitYoke === "yes")
+  if (options.splitYoke)
     paths.saBase = paths.saBase.line(points.cbYoke).close();
   paths.seam = paths.saBase.clone();
   paths.saBase.render = false;
@@ -44,7 +44,7 @@ export default part => {
     points.logo = points.title.shift(-90, 50);
     snippets.logo = new Snippet("logo", points.logo);
     snippets.logo.attr("data-scale", 0.8);
-    if (options.splitYoke === "yes") {
+    if (options.splitYoke) {
       points.grainlineFrom = points.cbYoke.shift(0, 20);
       points.grainlineTo = points.cbNeck.shift(0, 20);
       macro("grainline", {
@@ -66,7 +66,7 @@ export default part => {
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr("class", "fabric sa");
-      if (options.splitYoke === "no") {
+      if (options.splitYoke) {
         paths.sa = paths.sa
           .line(points.cbNeck)
           .move(points.cbYoke)

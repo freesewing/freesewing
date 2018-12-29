@@ -31,7 +31,7 @@ export const addButtons = function(
     );
     snippets[snippet + i] = new Snippet(snippet, points["button" + i]);
   }
-  if (options.extraTopButton === "yes")
+  if (options.extraTopButton)
     snippets["top" + snippet] = new Snippet(
       snippet,
       points[origin].shift(-90, len / options.buttons / 2)
@@ -96,7 +96,7 @@ export const decorateBarrelCuff = part => {
       "buttonhole",
       points["buttonhole" + i]
     ).attr("data-rotate", 90);
-    if (options.barrelcuffNarrowButton === "yes") {
+    if (options.barrelCuffNarrowButton) {
       points["narrowButton" + i] = points["button" + i].shift(180, margin);
       snippets["narrowButton" + i] = new Snippet(
         "button",
@@ -206,7 +206,7 @@ export const paperlessBarrelCuff = part => {
     to: points.topLeft.shift(0, 40),
     x: points.bottomLeft.x - 15 - sa
   });
-  if (options.barrelcuffNarrowButton === "yes") {
+  if (options.barrelCuffNarrowButton) {
     macro("hd", {
       from: points.narrowButton1,
       to: points.button1,

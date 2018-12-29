@@ -30,7 +30,7 @@ export default part => {
 
   return options.buttonPlacketStyle === "seamless"
     ? frontRightSeamless(part)
-    : options.buttonPlacketType === "seperate"
+    : options.seperateButtonPlacket
     ? frontRightClassicSeperate(part)
     : frontRightClassicCuton(part);
 };
