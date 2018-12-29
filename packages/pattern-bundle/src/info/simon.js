@@ -3,7 +3,7 @@ export default {
   design: "Joost De Cock",
   code: "Joost De Cock",
   department: "menswear",
-  type: "block",
+  type: "pattern",
   difficulty: 4,
   tags: ["top", "shirt"],
   parts: [
