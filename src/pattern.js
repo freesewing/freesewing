@@ -59,7 +59,7 @@ export default function Pattern(config = { options: {} }) {
         this.settings.options[i] = option.bool;
       else if (typeof option.dflt !== "undefined")
         this.settings.options[i] = option.dflt;
-      else throw "Unknown option type";
+      else throw new Error("Unknown option type: " + JSON.stringify(option));
     } else {
       this.settings.options[i] = option;
     }
@@ -276,7 +276,10 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
   let anchors = {};
   let parts = this.sampleParts();
   let val = this.settings.measurements[measurementName];
-  if (val === undefined) throw "Cannot sample a measurement that is undefined";
+  if (val === undefined)
+    throw new Error(
+      "Cannot sample a measurement that is undefined: " + measurementName
+    );
   let step = val / 50;
   val = val * 0.9;
   for (let run = 1; run < 11; run++) {

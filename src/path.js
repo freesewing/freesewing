@@ -312,7 +312,7 @@ function joinPaths(paths, closed = false) {
         // We're using sitsRoughlyOn here to avoid miniscule line segments
         if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to);
       } else {
-        throw "Cannot join a closed paths with another";
+        throw new Error("Cannot join a closed paths with another");
       }
       if (op.to) current = op.to;
     }
@@ -347,7 +347,7 @@ Path.prototype.shiftAlong = function(distance) {
     }
     current = op.to;
   }
-  throw "Ran out of path to shift along";
+  throw new Error("Ran out of path to shift along");
 };
 
 /** Returns a point that lies at fraction along this */
@@ -554,7 +554,7 @@ Path.prototype.intersectsY = function(y) {
 /** Finds intersections between this path and a X or Y value */
 Path.prototype.intersectsAxis = function(val = false, mode) {
   if (val === false)
-    throw "Path.intersects[X-Y] requires an value as parameter";
+    throw new Error("Path.intersects[X-Y] requires an value as parameter");
   let intersections = [];
   let lineStart =
     mode === "x" ? new Point(val, -100000) : new Point(-10000, val);
@@ -586,7 +586,9 @@ Path.prototype.intersectsAxis = function(val = false, mode) {
 /** Finds intersections between this path and another path */
 Path.prototype.intersects = function(path) {
   if (this === path)
-    throw "Calculating intersections between two identical paths is bad idea";
+    throw new Error(
+      "Calculating intersections between two identical paths is bad idea"
+    );
   let intersections = [];
   for (let pathA of this.divide()) {
     for (let pathB of path.divide()) {
