@@ -55,6 +55,8 @@ export default function Pattern(config = { options: {} }) {
         this.settings.options[i] = option.deg;
       else if (typeof option.count !== "undefined")
         this.settings.options[i] = option.count;
+      else if (typeof option.bool !== "undefined")
+        this.settings.options[i] = option.bool;
       else if (typeof option.dflt !== "undefined")
         this.settings.options[i] = option.dflt;
       else throw "Unknown option type";
