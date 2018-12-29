@@ -76,7 +76,6 @@ export default part => {
         .move(points.bballEnd)
         .line(points.hips)
         .join(paths.saBaseFromHips);
-
       paths.hemBase = new Path()
         .move(points.cfHem)
         .line(points.bballStart)
@@ -108,7 +107,7 @@ export default part => {
   paths.saBase.render = false;
   paths.saBaseFromHips.render = false;
   paths.saBaseFromArmhole.render = false;
-  paths.hemBase.render = false;
+  aths.hemBase.render = false;
   paths.seam = paths.hemBase
     .join(paths.saBase)
     .join(paths.saBaseFromArmhole)

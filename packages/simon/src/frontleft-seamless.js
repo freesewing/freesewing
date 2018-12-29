@@ -17,7 +17,6 @@ export default part => {
     macro,
     options
   } = part.shorthand();
-
   let fold = options.buttonholePlacketFoldWidth;
   let width = options.buttonholePlacketWidth;
   points.placketCfNeck = points.cfNeck;

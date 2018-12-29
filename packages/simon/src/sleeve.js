@@ -2,6 +2,15 @@ import { calculateReduction } from "./shared";
 
 export default part => {
   part.paths = {}; // This removed paperless dimensions from brian block
+  for (let pid of [
+    "__scaleboxLead",
+    "__scaleboxMetric",
+    "__scaleboxImperial",
+    "__scaleboxText",
+    "__scaleboxTitle",
+    "__scaleboxLink"
+  ])
+    delete part.points[pid];
   let {
     store,
     measurements,

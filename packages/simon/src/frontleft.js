@@ -17,7 +17,7 @@ export default part => {
 
   return options.buttonholePlacketStyle === "seamless"
     ? frontLeftSeamless(part)
-    : seperateButtonholePlacket
+    : options.seperateButtonholePlacket
     ? frontLeftClassicSeperate(part)
     : frontLeftClassicCuton(part);
 };

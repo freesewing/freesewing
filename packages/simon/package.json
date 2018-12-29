@@ -33,6 +33,7 @@
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_simon --footer 'freesewing.patterns.simon = freesewing_patterns_simon;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m  true",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
