@@ -68,8 +68,6 @@ export default {
     sleevecapQ4Spread2: 0.05,
     sleeveWidthGuarantee: 1,
 
-    // Millimeter
-
     // Percentages
     acrossBackFactor:       { pct:  97, min: 93, max: 100 },
     backNeckCutout:         { pct:   5, min:  2, max:   8 },
