@@ -17,6 +17,7 @@
     <div id="svg2" class="two"></div>
     <!-- <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script> -->
     <script type="text/javascript" src="../../freesewing/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/brian/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-sprinkle/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-banner/dist/browser.js"></script>
@@ -34,49 +35,7 @@
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
       let settings = {
-        "complete": true,
-        "idPrefix": "fs-",
-        "locale": "en",
-        "units": "metric",
-        "margin": 2.38125,
-        "options": {
-          "brianFitSleeve": true,
-          "brianFitCollar": true,
-          "collarFactor": 4.8,
-          "acrossBackFactor": 0.97,
-          "armholeDepthFactor": 0.6,
-          "backNeckCutout": 0.05,
-          "bicepsEase": 0.15,
-          "chestEase": 0.08,
-          "collarEase": 0.035,
-          "cuffEase": 0.2,
-          "frontArmholeDeeper": 0.005,
-          "lengthBonus": 0,
-          "shoulderEase": 0,
-          "shoulderSlopeReduction": 0,
-          "sleevecapEase": 0.01,
-          "sleevecapBackFactorX": 0.6,
-          "sleevecapBackFactorY": 0.33,
-          "sleevecapFrontFactorX": 0.55,
-          "sleevecapFrontFactorY": 0.33,
-          "sleevecapQ1Offset": 0.03,
-          "sleevecapQ2Offset": 0.055,
-          "sleevecapQ3Offset": 0.045,
-          "sleevecapQ4Offset": 0.01,
-          "sleevecapQ1Spread1": 0.06,
-          "sleevecapQ1Spread2": 0.15,
-          "sleevecapQ2Spread1": 0.15,
-          "sleevecapQ2Spread2": 0.1,
-          "sleevecapQ3Spread1": 0.1,
-          "sleevecapQ3Spread2": 0.08,
-          "sleevecapQ4Spread1": 0.07,
-          "sleevecapQ4Spread2": 0.07,
-          "sleeveWidthGuarantee": 0.9,
-          "sleeveLengthBonus": 0
-        },
         "embed": true,
-        "sa": 0,
-        //"paperless": true,
         "measurements": {
           "bicepsCircumference": 335,
           "centerBackNeckToWaist": 520,
@@ -98,31 +57,23 @@
           "headCircumference": 590,
           "naturalWaistToFloor": 1310,
           "naturalWaistToSeat": 280
+        },
+        only: ["front", "frontLeft"],
+        options: {
+          extraTopButton: false,
+          lengthBonus: 0.2,
+          hemStyle: "slashed",
+
         }
       };
-let settings1 = { ...settings };
-      var pattern1 = new freesewing.patterns.simon(settings1);
-      pattern1.use(freesewing.plugins.theme);
-      pattern1.use(freesewing.plugins.designer);
-      pattern1.use(freesewing.plugins.flip);
-      pattern1.use(freesewing.plugins.banner);
-      pattern1.use(freesewing.plugins.debug);
-      pattern1.settings.options.yokeDart = 0;
-      pattern1.settings.options.lengthBonus = 0.2;
-      pattern1.settings.options.hipsEase = 0.1;
-      pattern1.settings.options.hemStyle = "baseball";
-      pattern1.settings.options.buttonPlacketType = "cut-on";
-      pattern1.settings.options.buttonPlacketStyle = "classic";
-      pattern1.settings.options.buttonholePlacketType = "cut-on";
-      pattern1.settings.options.buttonholePlacketStyle = "seamless";
-      pattern1.settings.options.cuffButtonRows = 2;
-      pattern1.settings.options.barrelCuffNarrowButton = true;
-      pattern1.settings.options.cuffStyle = "roundedBarrelCuff";
-      pattern1.settings.options.extraTopButton = true;
-      pattern1.settings.sa = 10;
-      //pattern1.settings.only = ["front", "back"];
-      pattern1.draft();
-      document.getElementById("svg1").innerHTML = pattern1.render();
+      var pattern = new freesewing.patterns.simon(settings);
+      pattern.use(freesewing.plugins.theme);
+      pattern.use(freesewing.plugins.designer);
+      pattern.use(freesewing.plugins.flip);
+      pattern.use(freesewing.plugins.banner);
+      pattern.use(freesewing.plugins.debug);
+      pattern.draft();
+      document.getElementById("svg1").innerHTML = pattern.render();
 
       function pointHover(evt) {
         var point = evt.target;

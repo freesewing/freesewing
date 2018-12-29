@@ -123,7 +123,7 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     hemCurve: { pct: 75, min: 25, max: 100 },
     hipsEase: { pct: 8, min: -4, max: 20 },
-    lengthBonus: { pct: 0, min: -4, max: 60 },
+    lengthBonus: { pct: 25, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
