@@ -41,9 +41,9 @@ export default {
         closure: [
           "extraTopButton",
           "buttons",
-          "buttonPlacketType",
+          "seperateButtonPlacket",
           "buttonPlacketStyle",
-          "buttonholePlacketType",
+          "seperateButtonholePlacket",
           "buttonholePlacketStyle",
           "buttonPlacketWidth",
           "buttonholePlacketWidth",
@@ -54,7 +54,7 @@ export default {
       {
         cuffs: [
           "cuffStyle",
-          "barrelcuffNarrowButton",
+          "barrelCuffNarrowButton",
           "cuffButtonRows",
           "sleevePlacketWidth",
           "sleevePlacketLength",
