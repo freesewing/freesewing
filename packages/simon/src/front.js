@@ -107,7 +107,7 @@ export default part => {
   paths.saBase.render = false;
   paths.saBaseFromHips.render = false;
   paths.saBaseFromArmhole.render = false;
-  aths.hemBase.render = false;
+  paths.hemBase.render = false;
   paths.seam = paths.hemBase
     .join(paths.saBase)
     .join(paths.saBaseFromArmhole)
