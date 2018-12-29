@@ -35,6 +35,10 @@ export default part => {
       .length()
   );
 
+  // Hip shaping
+  points.hips = points.hips.shift(180, store.get("hipsReduction") / 4);
+  points.hem = points.hem.shift(180, store.get("hipsReduction") / 4);
+
   // Waist shaping
   let reduce = store.get("waistReduction");
   if (reduce / 4 > options.minimalDartShaping) reduce = reduce / 8;

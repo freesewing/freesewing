@@ -7,6 +7,7 @@ export const calculateReduction = function(part) {
   let hips = measurements.hipsCircumference * (1 + options.hipsEase);
   let waistReduction = chest - waist;
   let hipsReduction = chest - hips;
+  console.log("hipsEase", options.hipsEase, hips, hipsReduction);
 
   // If your waist > chest, this pattern is not going to work for you as-is.
   if (waistReduction < 0) waistReduction = 0;

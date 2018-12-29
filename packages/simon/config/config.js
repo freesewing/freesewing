@@ -95,7 +95,7 @@ export default {
         "roundedBarrelCuff",
         "angledBarrelCuff",
         "straightBarrelCuff",
-        "roundedFrenchcuff",
+        "roundedFrenchCuff",
         "angledFrenchCuff",
         "straightFrenchCuff"
       ],
