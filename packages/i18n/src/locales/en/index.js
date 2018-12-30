@@ -11,7 +11,7 @@ import options from "./options/";
 import optiongroups from "./optiongroups.yaml";
 import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
-import plugin from "./plugin.yaml";
+import plugin from "./plugin/";
 import settings from "./settings.yml";
 
 const topics = {
