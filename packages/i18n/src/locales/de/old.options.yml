@@ -1,18 +1,6 @@
-acrossBackFactor:
-  description: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement.
-  title: Rückenweitenverhältnis
 adjustmentRibbon:
   description: Bündchen hinzufügen um es anzupassen.
-  options:
-    - Ohne Bündchen
-    - Mit Bündchen
   title: Bündchen anpassen
-armholeDepthFactor:
-  description: Beeinflusst die Tiefe des Ärmelansatze nach innen zur Brust.
-  title: Tiefenfaktor des Ärmelansatze
-armholeDrop:
-  description: Senkt den  Ärmelansatz und diesen Wert. Negative Werte erhöhen ihn.
-  title: Armlochabsenkung
 backDartDepthFactor:
   description: The Depth of the back dart as a percentage of the Waist to Hip measurement
   title: Back Dart Depth Factor
@@ -42,13 +30,9 @@ backVent:
     _default: Entlüftung an der hinteren Naht
     jaeger: 'Möchten Sie eine zentrale Rückenöffnung, doppelte Rückenöffnung oder gar keine?'
   options:
-    jaeger:
-      - Kein Rückenschlitz
-      - Einzelne Rückenöffnung
-      - Doppelte Belüftung
-    penelope:
-      '0': 'Nicht'
-      '1': 'Ja'
+    none: Kein Rückenschlitz
+    single: Einzelne Rückenöffnung
+    double: Doppelte Belüftung
   title: Rückenschlitz
 backVentLength:
   description:
@@ -58,11 +42,8 @@ backVentLength:
 backlineBend:
   description: Determines the shape/bend of the back of the armholes.
   title: Back armhole shape
-barrelcuffNarrowButton:
+barrelCuffNarrowButton:
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
-  options:
-    - No narrow button
-    - Include narrow button
   title: Cuff narrow button
 bicepsEase:
   description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. '
@@ -84,19 +65,13 @@ bulge:
 buttonPlacketStyle:
   description: Style of the button placket.
   options:
-    '1': Klassischer Stil
-    '2': Französischer Stil (nahtlos)
+    classic: Klassischer Stil
+    seamless: Französischer Stil (nahtlos)
   title: Button placket style
-buttonPlacketType:
-  description: Type of the button placket.
-  options:
-    '1': Cut-on
-    '2': Separate
-  title: Button placket type
 buttonPlacketWidth:
   description: Width of the button placket.
   title: Button placket width
-buttonfreeLength:
+buttonFreeLength:
   description: How much of the bottom of the front closure to keep button-free.
   title: Button free length
 buttonholePlacketFoldWidth:
@@ -105,41 +80,14 @@ buttonholePlacketFoldWidth:
 buttonholePlacketStyle:
   description: Style of the buttonhole placket.
   options:
-    '1': Klassischer Stil
-    '2': Französischer Stil (nahtlos)
+    classic: Klassischer Stil
+    seamless: Französischer Stil (nahtlos)
   title: Buttonhole placket style
-buttonholePlacketType:
-  description: Type of the buttonhole placket.
-  options:
-    '1': Cut-on
-    '2': Separate
-  title: Buttonhole placket type
 buttonholePlacketWidth:
   description: Width of the butonhole placket.
   title: Buttonhole placket width
 buttons:
   description: The number of buttons on the front closure.
-  options:
-    simon:
-      '10': 10 buttons
-      '11': 11 buttons
-      '12': 12 buttons
-      '4': 4 buttons
-      '5': 5 buttons
-      '6': 6 buttons
-      '7': 7 buttons
-      '8': 8 buttons
-      '9': 9 buttons
-    wahid:
-      '10': 10 buttons
-      '11': 11 buttons
-      '12': 12 buttons
-      '4': 4 buttons
-      '5': 5 buttons
-      '6': 6 buttons
-      '7': 7 buttons
-      '8': 8 buttons
-      '9': 9 buttons
   title: Number of buttons
 centerBackDart:
   description: The amount to take out in a dart at the top of the center back.
@@ -174,9 +122,6 @@ collarAngle:
 collarBend:
   description: The bend of the collar.
   title: Collar bend
-collarEase:
-  description: The amount of ease around your neck.
-  title: Collar ease
 collarFlare:
   description: The flare of the collar tips.
   title: Collar flare
@@ -225,12 +170,12 @@ cuffLength:
 cuffStyle:
   description: The style of the cuffs.
   options:
-    '1': Rounded barrel cuff
-    '2': Angled barrel cuff
-    '3': Straight barrel cuff
-    '4': Rounded French cuff
-    '5': Angled French cuff
-    '6': Straight French cuff
+    roundedBarrelCuff: Rounded barrel cuff
+    angledBarrelCuff: Angled barrel cuff
+    straightBarrelCuff: Straight barrel cuff
+    roundedFrenchCuff: Rounded French cuff
+    angledFrenchCuff: Angled French cuff
+    straightFrenchCuff: Straight French cuff
   title: Cuff style
 dartToSideSeamFactor:
   description: Shifts the intake from the darts to the side seam and visa versa
@@ -247,9 +192,6 @@ endStyle:
   title: End style
 extraTopButton:
   description: Whether or not to include an extra top button on the front closure.
-  options:
-    - No extra top button
-    - Extra top button
   title: Extra top button
 extraWaist:
   description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt
@@ -317,9 +259,9 @@ hemStyle:
     simon: Der Stil des Hemdsaumes.
   options:
     simon:
-      '1': Straight hem
-      '2': Baseball hem
-      '3': Slashed hem
+      straight: Straight hem
+      baseball: Baseball hem
+      slashed: Slashed hem
     wahid:
       '1': Classic
       '2': Rounded
@@ -425,6 +367,12 @@ seamlessFullCircle:
 seatEase:
   description: The amount of ease at your butt.
   title: Seat ease
+seperateButtonholePlacket:
+  description: Draft a seperate buttonhole placket.
+  title: Seperate buttonhole placket
+seperateButtonPlacket:
+  description: Draft a seperate button placket.
+  title: Seperate button placket
 shoulderEase:
   description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.
   title: Shoulder ease
@@ -521,9 +469,6 @@ splitYoke:
 stretch:
   description: The amount of negative ease.
   title: Stretch
-stretchFactor:
-  description: Determines the horizontal negative ease.
-  title: Stretch
 tipWidth:
   description:
     _default: The width of the wings of the bow tie at the tip.
@@ -575,26 +520,4 @@ zipperLocation:
     side: Side seam
   title: Zipper placement
 
-
-paperless:
-  description: Zeichnet ein Muster mit allen enthaltenen Abmessungen, sodass Sie es auf Stoff oder ein anderes Medium übertragen können, ohne dass Sie drucken müssen.
-  title: Papierlos
-sa:
-  description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
-  title: Nahtzugabe
-locale:
-  description: Legt die für Ihr Muster verwendete Sprache fest
-  title: Sprache
-only:
-  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Muster enthalten sind
-  title: Inhalt
-units:
-  description: Steuert die für Ihr Muster verwendeten Einheiten.
-  title: Einheiten
-margin:
-  description: Steuert den Rand um Musterteile
-  title: Marge
-complete:
-  description: Steuert, wie detailliert das Muster ist. Entweder ein vollständiges Muster mit allen Details oder eine grundlegende Kontur der Musterteile.
-  title: Detail
 

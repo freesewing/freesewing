@@ -1,33 +1,15 @@
-acrossBackFactor:
-  description: Geeft controle over de breedte van je rug als een factor van je schouder tot schouder maat.
-  title: Rugwijdte
 adjustmentRibbon:
   description: Voeg een lintje toe om de das aanpaspaar te maken.
   options:
     - Voeg geen lintje toe
     - Voeg lintje toe
   title: Aanpaslintje
-armholeDepthFactor:
-  description: 'Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.'
-  title: Diepte armsgat factor
-armholeDrop:
-  description: Verlaag het armsgat met deze hoeveelheid. Een negatieve waarde maakt het hoger.
-  title: Armsgat verlagen/verhogen
 backDartDepthFactor:
   description: The Depth of the back dart as a percentage of the Waist to Hip measurement
   title: Back Dart Depth Factor
-backDrop:
-  description: Hoeveel lager de rugpanden worden vanaf de heupen tot de middenrug. Een negatieve waarde maakt ze hoger.
-  title: Verlaging rug
 backInset:
   description: De hoeveelheid waarmee het armsgat dieper in de rug gezet wordt.
   title: Inzet achter
-backNeckCutout:
-  description: How deep the neck is cut out at the back
-  title: Hals uitsnijding achteraan
-backOpening:
-  description: 'Opening aan de sluiting op de middenrug. '
-  title: Rugopening
 backRise:
   description:
     _default: 'De hoeveelheid hoogte die aan de rug wordt toegevoegd. '
@@ -55,15 +37,6 @@ backVentLength:
     _default: Lengte rugsplit
     jaeger: 'Controleert de lengte van het rugsplit. Hoe lager het cijfer, hoe korter het split.'
   title: Lengte rugsplit
-backlineBend:
-  description: 'Bepaalt de vorm/curve van de achterkant van het armsgat. '
-  title: Vorm armsgat achter
-barrelcuffNarrowButton:
-  description: Of je al dan niet een knoop wil om de manchetten smaller te maken. Deze optie is enkel relevant bij klassieke manchetten (zonder manchetknopen).
-  options:
-    - Geen extra knoop
-    - Voeg extra knoop toe
-  title: Extra knoop manchet
 bicepsEase:
   description: 'De hoeveelheid overwijdte aan je bovenarm. Let op dat we proberen dit te respecteren, maar dat de mouw in het armsgat laten passen voorrang krijgt op de hoeveelheid overwijdte. '
   title: Overwijdte biceps
@@ -78,78 +51,12 @@ bowStyle:
     square: Vierkant
     widesquare: Wijd vierkant
   title: Stijl strik
-bulge:
-  description: Maak de hoek groter voor meer ruimte in het kruisstuk.
-  title: Kruisstuk
-buttonPlacketStyle:
-  description: De stijl van het knopenpat.
-  options:
-    '1': Klassieke stijl
-    '2': Franse stijl (naadloos)
-  title: Stijl knopenpat
-buttonPlacketType:
-  description: Het type knopenpat.
-  options:
-    '1': Aangeknipt
-    '2': Apart
-  title: Type knopenpat
-buttonPlacketWidth:
-  description: De breedte van het knopenpat.
-  title: Breedte knopenpat
-buttonfreeLength:
-  description: Hoe lang het stuk zonder knopen onderaan de sluiting moet zijn.
-  title: Lengte knooploos stuk
-buttonholePlacketFoldWidth:
-  description: De breedte van de vouw in het knoopsgatenpat.
-  title: Breedte vouw knoopsgatenpat
-buttonholePlacketStyle:
-  description: De stijl van het knoopsgatenpat.
-  options:
-    '1': Klassieke stijl
-    '2': Franse stijl (naadloos)
-  title: Stijl knoopsgatenpat
-buttonholePlacketType:
-  description: Het type knoopsgatenpat.
-  options:
-    '1': Aangeknipt
-    '2': Apart
-  title: Type knoopsgatenpat
-buttonholePlacketWidth:
-  description: De breedte van het knoopsgatenpat.
-  title: Breedte knoopsgatenpat
-buttons:
-  description: Het aantal knopen op de sluiting vooraan.
-  options:
-    simon:
-      '10': 10 knopen
-      '11': 11 knopen
-      '12': 12 knopen
-      '4': 4 knopen
-      '5': 5 knopen
-      '6': 6 knopen
-      '7': 7 knopen
-      '8': 8 knopen
-      '9': 9 knopen
-    wahid:
-      '10': 10 knopen
-      '11': 11 knopen
-      '12': 12 knopen
-      '4': 4 knopen
-      '5': 5 knopen
-      '6': 6 knopen
-      '7': 7 knopen
-      '8': 8 knopen
-      '9': 9 knopen
-  title: Aantal knopen
 centerBackDart:
   description: De hoeveelheid die met een neep uit de bovenkant van de middenrug genomen wordt.
   title: Middenrugneep
 centerFrontHemDrop:
   description: De zoom vooraan wordt verlaagd door deze ratio van de lengtemaat van je nek tot je heupen.
   title: Verlaging zoom middenvoor
-chestEase:
-  description: De hoeveelheid overwijdte aan je borst.
-  title: Overwijdte borst
 chestPocketAngle:
   description: De hoek van de borstzak.
   title: Hoek borstzak
@@ -168,21 +75,6 @@ chestShaping:
 circlePercent:
   description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt  '
   title: Circle percent
-collarAngle:
-  description: 'De hoek van de punten van de kraag. '
-  title: Hoekjes kraag
-collarBend:
-  description: De kromming van de kraag.
-  title: Kromming kraag
-collarEase:
-  description: De hoeveelheid overwijdte rond je nek.
-  title: Overwijdte kraag
-collarFlare:
-  description: Hoe ver de punten van de kraag spreiden.
-  title: Spreiding kraag
-collarGap:
-  description: De open ruimte tussen de uiteindes van de kraag.
-  title: Afstand kraag
 collarHeight:
   description: Dit is de hoogte van de kraag achteraan de nek en kan nooit minder zijn dan twee keer de hoogte van de kraag tot aan de breuklijn.
   title: Hoogte kraag
@@ -195,43 +87,6 @@ collarNotchDepth:
 collarNotchReturn:
   description: Bepaalt de lengte van het bovenste stuk van de inkeping in de kraag. 100% = even lang als het onderste stuk.
   title: Lengte inkeping kraag
-collarRoll:
-  description: Hoeveel groter de bovenkraag is dan de onderkraag.
-  title: Omval kraag
-collarStandBend:
-  description: 'De kromming van de staander in het midden, achteraan de nek.'
-  title: Kromming staander
-collarStandCurve:
-  description: De curve van de uiteindes van de staander.
-  title: Curve staander
-collarStandWidth:
-  description: De breedte van de staander.
-  title: Breedte staander
-cuffButtonRows:
-  description: Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten.
-  options:
-    '1': Enkele rij knopen
-    '2': Dubbele rij knopen
-  title: Rijen knopen op manchet
-cuffDrape:
-  description: Hoeveel wijder de mouw is dan de manchet op het punt waar ze wordt aangezet.
-  title: Verschil mouw/manchet
-cuffEase:
-  description: De hoeveelheid overwijdte aan je pols.
-  title: Overwijdte manchet
-cuffLength:
-  description: De lengte van de manchetten.
-  title: Lengte manchet
-cuffStyle:
-  description: De stijl van de manchetten.
-  options:
-    '1': Afgeronde klassieke manchet
-    '2': Afgesneden klassieke manchet
-    '3': Rechte klassieke manchet
-    '4': Afgeronde Franse manchet
-    '5': Afgesneden Franse manchet
-    '6': Rechte Franse manchet
-  title: Stijl manchet
 dartToSideSeamFactor:
   description: Shifts the intake from the darts to the side seam and visa versa
   title: Dart to Side Seam Factor
@@ -245,18 +100,9 @@ endStyle:
     rounded: Afgeronde punt
     straight: Rechte punt
   title: Stijl punt
-extraTopButton:
-  description: Of je al dan niet een extra knoop bovenaan de sluiting wil.
-  options:
-    - Geen extra bovenste knoop
-    - Extra bovenste knoop
-  title: Extra knoop bovenaan
 extraWaist:
   description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt
   title: Extra waist
-frontArmholeDeeper:
-  description: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
-  title: Extra uitsnijding armsgat vooraan
 frontCutawayAngle:
   description: In welke hoek wil je dat de voorpanden openen vanaf de onderste knoop.
   title: Hoek weggeknipte opening onder
@@ -269,9 +115,6 @@ frontDartDepthFactor:
 frontDartPlacement:
   description: De plaatsing van de neep vooraan als een evenredigheid met je borstomtrek. Een hoger cijfer verplaatst de zak meer naar de zijnaad.
   title: Plaatsing nepen vooraan
-frontDrop:
-  description: Hoeveel de voorpanden verlagen van je heupen tot middenvoor.
-  title: Verlaging voorpand
 frontInset:
   description: De hoeveelheid waarmee het armsgat dieper in het voorpand gezet wordt.
   title: Inzet voor
@@ -287,9 +130,6 @@ frontPocketPlacement:
 frontPocketWidth:
   description: 'De breedte van de voorzak, als een factor van je borstomtrek.'
   title: Breedte voorzak
-frontRise:
-  description: 'De hoogte van de panelen middenvoor, tussen je borsten. Een negatieve waarde maakte ze lager.'
-  title: Hoogte voorpand
 frontScyeDart:
   description: De hoeveelheid die verwijderd wordt met een neep aan de voorkant van het armsgat.
   title: Neep armsgat voor
@@ -305,9 +145,6 @@ headEase:
 hemBonus:
   description: Additional width at the hem
   title: Hem bonus
-hemCurve:
-  description: De hoogte van de curve op een afgeronde zoom.
-  title: Curve zoom
 hemRadius:
   description: De straal van de afgeronde zoom. Niet relevant als je een klassieke zoom koos.
   title: Straal zoom
@@ -317,9 +154,9 @@ hemStyle:
     simon: De vorm van de zoom van het hemd.
   options:
     simon:
-      '1': Rechte zoom
-      '2': Ronde zoom
-      '3': Zoom met zijsplit
+      straight: Rechte zoom
+      baseball: Ronde zoom
+      slashed: Zoom met zijsplit
     wahid:
       '1': Klassiek
       '2': Afgerond
@@ -330,12 +167,6 @@ hemWidth:
 hipFlare:
   description: Hoeveel wijder het hemd wordt onder de taille.
   title: Wijdte heup
-hipRise:
-  description: Hoe hoog de zijpanelen vallen op je heupen.
-  title: Hoogte heup
-hipsEase:
-  description: De hoeveelheid overwijdte aan je heupen.
-  title: Overwijdte heup
 hipsReductionRatioBack:
   description: Hoeveel de heupen ingenomen worden door de vorm van het achterpand. Heeft ook impact op de vorm van het zijpand.
   title: 'Reductie heupen: ratio achter'
@@ -345,30 +176,18 @@ knotWidth:
 lapelStart:
   description: 'De plaatsing van het breekpunt van de revers (waar de sluiting start). Lagere waarden brengen dit dichter naar de taille, hogere waarden naar de halslijn.'
   title: Breekpunt revers
-legBonus:
-  description: Extra lengte om aan de benen toe te voegen.
-  title: Bonus beenlengte
 legReduction:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping.    '
   title: Leg reduction
-legStretch:
-  description: Voor het beste resultaat wil je de pijp wat strakker om je been. Zeg nee tegen geflodder!
-  title: Stretch pijp
 length:
   description: The length of the skirt
   title: Skirt length
-lengthBonus:
-  description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
-  title: Bonus lengte
 neckInset:
   description: Afstand van de hals tot de halslijn van het gilet aan de schoudernaad.
   title: Inzet nek
 neckReduction:
   description: Hoeveel vorm de nek krijgt een de middenrug als een percentage van de borstomtrek.
   title: Middenrugneep aan nek
-necklineBend:
-  description: Bepaalt de vorm/kromming van de halslijn aan het middenvoor.
-  title: Vorm halslijn
 necklineDrop:
   description:
     _default: De hoeveelheid waarmee de halslijn vooraan weggesneden wordt.
@@ -404,15 +223,6 @@ ribbing:
 ribbingHeight:
   description: De hoogte van de boord aan de zoom en mouwen.
   title: Hoogte boord
-ribbingStretchFactor:
-  description: Bepaalt hoever de boord uitgerokken wordt.
-  title: Stretchfactor boord
-ribbingWidth:
-  description: De breedte van de boord die je wil gebruiken.
-  title: Breedte boord
-rise:
-  description: Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen.
-  title: Hoogte
 rollLineCollarHeight:
   description: Hoe dicht de breuklijn van de kraag tegen je nek aan ligt.
   title: Hoogte breuklijn kraag
@@ -425,105 +235,21 @@ seamlessFullCircle:
 seatEase:
   description: De hoeveelheid overwijdte aan je kont.
   title: Overwijdte zitvlak
-shoulderEase:
-  description: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
-  title: Overwijdte schouder
+seperateButtonholePlacket:
+  description: Wil je een apart knoopsgatenpat?
+  title: Apart knoopsgatenpat
+seperateButtonPlacket:
+  description: Wil je een apart knopenpat?
+  title: Apart knopenpat
 shoulderInset:
   description: Afstand van de punt van de schouder tot waar het armsgat van het gilet op de schouder valt.
   title: Inzet schouder
-shoulderSlopeReduction:
-  description: De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
-  title: Reductie helling schouder
-shoulderStrapPlacement:
-  description: Bepaalt of de schouderbandjes dichter bij de nek (lager cijfer) of dichter bij de schouder (hoger cijfer) geplaatst worden.
-  title: Plaatsing schouderbandjes
-shoulderStrapWidth:
-  description: De breedte van de schouderbandjes.
-  title: Breedte schouderbandjes
 sideFrontPlacement:
   description: Locatie van de naad tussen voor- en zijpand in verhouding met je borstomtrek. Een hoger cijfer zorgt voor een breder zijpand.
   title: Plaatsing naden zijpand
 sleeveBend:
   description: Hoeveel je wil dat de mouw buigt aan de elleboog.
   title: Kromming mouw
-sleeveLengthBonus:
-  description: De hoeveelheid waarmee de mouw verlengd wordt. Een negatieve waarde zal ze korter maken.
-  title: Bonus mouwlengte
-sleevePlacketLength:
-  description: De lengte van het mouwsplit.
-  title: Lengte mouwsplit
-sleevePlacketWidth:
-  description: De breedte van het mouwsplit.
-  title: Breedte mouwsplit
-sleevecapEase:
-  description: Hoeveel langer de naad van de mouwkop is dan de naad van het armsgat.
-  title: Extra ruimte mouwkop
-sleevecapHeightFactor:
-  description: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
-  title: Hoogte mouwkop factor
-sleevecapBackFactorX:
-  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het achterste deel van de mouwkop
-  title: Mouwkop X achteraan
-sleevecapBackFactorY:
-  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het achterste deel van de mouwkop
-  title: Mouwkop Y achteraan
-sleevecapFrontFactorX:
-  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het voorste deel van de mouwkop
-  title: Mouwkop X vooraan
-sleevecapFrontFactorY:
-  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het voorste deel van de mouwkop
-  title: Mouwkop Y vooraan
-sleevecapQ1Offset:
-  description: Bepaalt de kromming van de mouwkop in het eerste quadrant (armsgat vooraan)
-  title: Mouwkop Q1 offset
-sleevecapQ2Offset:
-  description: Bepaalt de kromming van de mouwkop in het tweede quadrant (schouder vooraan)
-  title: Mouwkop Q2 offset
-sleevecapQ3Offset:
-  description: Bepaalt de kromming van de mouwkop in het derde quadrant (schouder achteraan)
-  title: Mouwkop Q3 offset
-sleevecapQ4Offset:
-  description: Bepaalt de kromming van de mouwkop in het vierde quadrant (armsgat vooraan)
-  title: Mouwkop Q4 offset
-sleevecapQ1Spread1:
-  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van het armsgat
-  title: Mouwkop Q1 neerwaardse spreiding
-sleevecapQ1Spread2:
-  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van de shouder
-  title: Mouwkop Q1 opwaardse spreiding
-sleevecapQ2Spread1:
-  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van het armsgat
-  title: Mouwkop Q2 neerwaardse spreiding
-sleevecapQ2Spread2:
-  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van de shouder
-  title: Mouwkop Q2 opwaardse spreiding
-sleevecapQ3Spread1:
-  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van de shouder
-  title: Mouwkop Q3 opwaardse spreiding
-sleevecapQ3Spread2:
-  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van het armsgat
-  title: Mouwkop Q3 neerwaardse spreiding
-sleevecapQ4Spread1:
-  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van de shouder
-  title: Mouwkop Q4 opwaardse spreiding
-sleevecapQ4Spread2:
-  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van het armsgat
-  title: Mouwkop Q4 neerwaardse spreiding
-sleeveWidthGuarantee:
-  description: Bepaalt hoeveel van de mouwbreedte we garanderen wanneer we de mouw aan het armsgat aanpassen.
-  title: Gegarandeerde mouw breedte
-splitYoke:
-  description: Of je een tweedelige of gewone schouderpas wil.
-  options:
-    - Gewone schouderpas
-    - Tweedelige schouderpas
-  title: Tweedelige schouderpas
-stretch:
-  description: 'Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.'
-  title: Stretch DONE
-stretchFactor:
-  description: 'Bepaalt hoeveel kleiner de horizontale omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.'
-  title: Stretch DONE
 tipWidth:
   description:
     _default: De breedte van de puntjes van de vlinderdas.
@@ -535,12 +261,6 @@ waistBand:
     'no': No
     'yes': Yes
   title: Waist band
-waistEase:
-  description: De hoeveelheid extra ruimte aan je (natuurlijke) taille.
-  title: Overwijdte taille
-waistReduction:
-  description: Hoeveel smaller je wil dat het korset je taille maakt.
-  title: Reductie taille
 waistReductionRatioBack:
   description: Hoeveel de taille ingenomen wordt door de vorm van het achterpand. Heeft ook impact op de vorm van het zijpand.
   title: 'Reductie taille: ratio achter'
@@ -565,9 +285,6 @@ waistbandShape:
 waistbandWidth:
   description: De breedte van de tailleband.
   title: Breedte tailleband
-yokeDart:
-  description: Of je een neep aan de zijkanten van de schouderpas wil om beter te passen voor een ronde rug.
-  title: Neep schouderpas
 zipperLocation:
   description: Zipper placement
   options:

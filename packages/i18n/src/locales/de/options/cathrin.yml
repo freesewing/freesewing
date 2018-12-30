@@ -1,0 +1,34 @@
+panels:
+  title: Anzahl der Teile
+  description: Die Anzahl der zu erstellenden Teile. Mehr Teile passen besser zu kurvenreicheren Modellen.
+  options:
+    '11': 11 Teile
+    '13': 13 Teile
+
+waistReduction:
+  title: Taillenreduzierung
+  description: Der Betrag, um den das Korsett Ihre Taille klemmen soll.
+
+backOpening:
+  title: Hintere Öffnung
+  description: Öffnung in der hinteren Mitte
+
+backRise:
+  title: Hintere Anstieg
+  description: Wie stark sich die Rückteile von den Armen bis zum hinteren Rücken erstrecken.
+
+backDrop:
+  title: Rückenabsenkung
+  description: Wie weit sich die Rückteile von den Hüften in Richtung Rückenmitte absenken. Negative Werte heben den Rücken an.
+
+frontRise:
+  title: Frontanstieg
+  description: Aufstieg der Frontteile in der Mitte zwischen den Brüsten. Negative Werte verringern sie.
+
+frontDrop:
+  title: Frontabsenkung
+  description: Wie weit sich die Frontteile von Ihrer Hüfte in Richtung Ihrer Mittelfront absenken.
+
+hipRise:
+  title: Hüftanstieg
+  description: Wie stark die Seitenteile auf den Hüften stehen.

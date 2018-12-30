@@ -1,0 +1,172 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+hipsEase: aaron
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapHeightFactor: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+barrelCuffNarrowButton:
+  title: Cuff narrow button
+  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
+
+buttonPlacketStyle:
+  title: Button placket style
+  description: Style of the button placket.
+  options:
+    classic: Classic style
+    seamless: French style (seamless)
+
+buttonPlacketWidth:
+  title: Button placket width
+  description: Width of the button placket.
+
+buttonFreeLength:
+  title: Button free length
+  description: How much of the bottom of the front closure to keep button-free.
+
+buttonholePlacketFoldWidth:
+  title: Buttonhole placket fold width
+  description: Width of the buttonhole placket fold.
+
+buttonholePlacketStyle:
+  title: Buttonhole placket style
+  description: Style of the buttonhole placket.
+  options:
+    classic: Classic style
+    seamless: French style (seamless)
+
+buttonholePlacketWidth:
+  title: Buttonhole placket width
+  description: Width of the butonhole placket.
+
+buttons:
+  title: Number of buttons
+  description: The number of buttons on the front closure.
+
+collarAngle:
+  title: Collar angle
+  description: The angle of the collar tips.
+
+collarBend:
+  title: Collar bend
+  description: The bend of the collar.
+
+collarFlare:
+  title: Collar flare
+  description: The flare of the collar tips.
+
+collarGap:
+  title: Collar gap
+  description: The gap between the the two collar ends.
+
+collarRoll:
+  title: Collar roll
+  description: The amount by which the top collar is larger than the undercollar.
+
+collarStandBend:
+  title: Collar stand bend
+  description: The bend of the collar stand.
+
+collarStandCurve:
+  title: Collar stand curve
+  description: The curve of the collar stand.
+
+collarStandWidth:
+  title: Collar stand width
+  description: Widht of the collar stand.
+
+cuffButtonRows:
+  title: Cuff button rows
+  description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs.
+  options:
+    '1': Single cuff button row
+    '2': Double cuff button row
+
+cuffDrape:
+  title: Cuff drape
+  description: The amount by which the sleeve is wider than the cuff where the are joined.
+
+cuffLength:
+  title: Cuff length
+  description: The length of the cuffs.
+
+cuffStyle:
+  title: Cuff style
+  description: The style of the cuffs.
+  options:
+    roundedBarrelCuff: Rounded barrel cuff
+    angledBarrelCuff: Angled barrel cuff
+    straightBarrelCuff: Straight barrel cuff
+    roundedFrenchCuff: Rounded French cuff
+    angledFrenchCuff: Angled French cuff
+    straightFrenchCuff: Straight French cuff
+
+extraTopButton:
+  title: Extra top button
+  description: Whether or not to include an extra top button on the front closure.
+
+hemCurve:
+  title: Hem curve
+  description: The height of the curve on a curved hem.
+
+hemStyle:
+  title: Hem style
+  description: The style of the shirt hem.
+  options:
+    straight: Straight hem
+    baseball: Baseball hem
+    slashed: Slashed hem
+
+seperateButtonholePlacket:
+  title: Seperate buttonhole placket
+  description: Draft a seperate buttonhole placket.
+
+seperateButtonPlacket:
+  title: Seperate button placket
+  description: Draft a seperate button placket
+
+sleevePlacketLength:
+  title: Sleeve placket length
+  description: The length of the sleeve placket.
+
+sleevePlacketWidth:
+  title: Sleeve placket width
+  description: The width of the sleeve placket.
+
+splitYoke:
+  title: Split yoke
+  description: Whether to draft a split or regular yoke.
+
+waistEase:
+  title: Waist ease
+  description: The amount of ease at your (natural) waist.
+
+yokeDart:
+  title: Yoke dart
+  description: Whether to include a dart at the sides of the yoke to fit a rounder back.

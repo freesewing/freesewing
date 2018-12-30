@@ -1,0 +1,15 @@
+acrossBackFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+cuffEase: brian
+lengthBonus: brian
+sleeveLengthBonus: brian
+
+ribbingStretchFactor:
+  title: Ribbing stretch factor
+  description: Determines the negative ease for the ribbing.
+
+ribbingWidth:
+  title: Ribbing width
+  description: The width of the ribbing you want to use.

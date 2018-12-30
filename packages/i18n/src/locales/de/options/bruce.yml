@@ -1,0 +1,23 @@
+bulge:
+  title: Wölbung
+  description: Vergrößern Sie den Winkel, um mehr Platz in der vorderen Tasche zu schaffen.
+
+legBonus:
+  title: Beinlängen-Bonus
+  description: Zusätzliche Länge für die Beine.
+
+rise:
+  title: Anstieg
+  description: Betrag, um die Taille anzuheben. Ein negativer Wert verringert den Wert.
+
+stretch:
+  title: Dehn
+  description: Bestimmt die negative Leichtigkeit
+
+legStretch:
+  title: Bein Dehn
+  description: Die besten Ergebnisse erzielen Sie, wenn Sie die Beine eng aneinander anbringen.
+
+backRise:
+  title: Anstieg hinten
+  description: Prozentsatz, um den die Taille am Rücken angehoben wird.

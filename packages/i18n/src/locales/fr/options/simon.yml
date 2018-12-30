@@ -1,0 +1,172 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+hipsEase: aaron
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapHeightFactor: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+barrelCuffNarrowButton:
+  title: Bouton de manche étroit
+  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
+
+buttonPlacketStyle:
+  title: Style de patte de boutonnage
+  description: Style de la patte de boutonnage
+  options:
+    classic: Style classique
+    seamless: Style français (sans couture)
+
+buttonPlacketWidth:
+  title: Largeur de patte de boutonnage
+  description: Largeur de la patte de boutonnage.
+
+buttonFreeLength:
+  title: Longueur sans bouton
+  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+
+buttonholePlacketFoldWidth:
+  title: Largeur de pli de boutonnière
+  description: Largeur du pli de la boutonnière.
+
+buttonholePlacketStyle:
+  title: Style de patte de boutonnière
+  description: Style de la patte de boutonnière.
+  options:
+    classic: Style classique
+    seamless: Style français (sans couture)
+
+buttonholePlacketWidth:
+  title: Largeur de patte de boutonnière
+  description: Largeur de la patte de boutonnière.
+
+buttons:
+  title: Nombre de boutons
+  description: Le nombre de boutons sur la fermeture avant.
+
+collarAngle:
+  title: Angle du col
+  description: L'angle des pointes de col.
+
+collarBend:
+  title: Courbure du col
+  description: La courbure du col.
+
+collarFlare:
+  title: Évasement du col
+  description: L'évasement des pointes du col.
+
+collarGap:
+  title: Écart du col
+  description: L'écart entre les deux extrémités du col.
+
+collarRoll:
+  title: Pliure du col
+  description: La valeur rendant le tombant du col plus large que le pied de col.
+
+collarStandBend:
+  title: Courbure du col
+  description: La courbure du col.
+
+collarStandCurve:
+  title: Courbe du col
+  description: La courbe du col.
+
+collarStandWidth:
+  title: Largeur du col
+  description: Largeur du col.
+
+cuffButtonRows:
+  title: Rangée de boutons de manchette
+  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
+  options:
+    '1': rangée de boutons de manchette simple
+    '2': rangée de boutons de manchette double
+
+cuffDrape:
+  title: Drapé d'emmanchure
+  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
+
+cuffLength:
+  title: Longueur d'emmanchure
+  description: La longueur d'emmanchure.
+
+cuffStyle:
+  title: Style d'emmanchure
+  description: Style d'emmanchure.
+  options:
+    roundedBarrelCuff: Emmanchure classique arrondie
+    angledBarrelCuff: Emmanchure classique angulaire
+    straightBarrelCuff: Emmanchure classique droite
+    roundedFrenchCuff: Emmanchure française arrondie
+    angledFrenchCuff: Emmanchure française angulaire
+    straightFrenchCuff: Emmanchure française droite
+
+extraTopButton:
+  title: Bouton supérieur supplémentaire
+  description: Pour inclure un bouton supérieur supplémentaire sur la fermeture avant.
+
+hemCurve:
+  title: Courbe de l'ourlet
+  description: La hauteur de l'arrondi sur un ourlet arrondi.
+
+hemStyle:
+  title: Type d'ourlet
+  description: Le style de l'ourlet de la chemise.
+  options:
+    straight: Ourlet droit
+    baseball: Ourlet baseball
+    slashed: Ourlet taillé
+
+seperateButtonholePlacket:
+  title: Patte de boutonnière séparée
+  description: Dessinez une patte de boutonnière séparée.
+
+seperateButtonPlacket:
+  title: Patte de boutonnage séparée
+  description: Dessinez une patte de boutonnage séparée.
+
+sleevePlacketLength:
+  title: Longueur de la patte de manche
+  description: La longueur de la patte de manche
+
+sleevePlacketWidth:
+  title: Largeur de la patte de manche
+  description: La largeur de la patte de manche
+
+splitYoke:
+  title: Empiècement divisé
+  description: Dessiner un mpiècement divisé ou en une seule pièce?
+
+waistEase:
+  title: Aisance à la taille
+  description: La quantité d'aisance à votre taille (naturelle).
+
+yokeDart:
+  title: Pinces empiècement
+  description: S'il faut inclure des pinces empiècement pour un dos plus rond.

@@ -1,0 +1,15 @@
+acrossBackFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+cuffEase: brian
+lengthBonus: brian
+sleeveLengthBonus: brian
+
+ribbingStretchFactor:
+  title: Riffelung Dehnfaktor
+  description: Bestimmt die negative Leichtigkeit der Riffelung.
+
+ribbingWidth:
+  title: Riffelungbreite
+  description: Die Breite der Riffelung, die Sie verwenden möchten.

@@ -7,11 +7,12 @@ import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
 import intro from "./intro.yaml";
 import measurements from "./measurements.yaml";
-import options from "./options.yml";
+import options from "./options/";
 import optiongroups from "./optiongroups.yaml";
 import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
 import plugin from "./plugin.yaml";
+import settings from "./settings.yml";
 
 const topics = {
   account,
@@ -27,7 +28,8 @@ const topics = {
   optiongroups,
   parts,
   patterns,
-  plugin
+  plugin,
+  settings
 };
 
 const strings = {};
@@ -97,5 +99,6 @@ export {
   parts,
   patterns,
   plugin,
+  settings,
   strings
 };

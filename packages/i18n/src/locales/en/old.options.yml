@@ -58,11 +58,8 @@ backVentLength:
 backlineBend:
   description: Determines the shape/bend of the back of the armholes.
   title: Back armhole shape
-barrelcuffNarrowButton:
+barrelCuffNarrowButton:
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
-  options:
-    - No narrow button
-    - Include narrow button
   title: Cuff narrow button
 bicepsEase:
   description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease.'
@@ -84,19 +81,13 @@ bulge:
 buttonPlacketStyle:
   description: Style of the button placket.
   options:
-    '1': Classic style
-    '2': French style (seamless)
+    classic: Classic style
+    seamless: French style (seamless)
   title: Button placket style
-buttonPlacketType:
-  description: Type of the button placket.
-  options:
-    '1': Cut-on
-    '2': Separate
-  title: Button placket type
 buttonPlacketWidth:
   description: Width of the button placket.
   title: Button placket width
-buttonfreeLength:
+buttonFreeLength:
   description: How much of the bottom of the front closure to keep button-free.
   title: Button free length
 buttonholePlacketFoldWidth:
@@ -105,15 +96,9 @@ buttonholePlacketFoldWidth:
 buttonholePlacketStyle:
   description: Style of the buttonhole placket.
   options:
-    '1': Classic style
-    '2': French style (seamless)
+    classic: Classic style
+    seamless: French style (seamless)
   title: Buttonhole placket style
-buttonholePlacketType:
-  description: Type of the buttonhole placket.
-  options:
-    '1': Cut-on
-    '2': Separate
-  title: Buttonhole placket type
 buttonholePlacketWidth:
   description: Width of the butonhole placket.
   title: Buttonhole placket width
@@ -317,9 +302,9 @@ hemStyle:
     simon: The style of the shirt hem.
   options:
     simon:
-      '1': Straight hem
-      '2': Baseball hem
-      '3': Slashed hem
+      straight: Straight hem
+      baseball: Baseball hem
+      slashed: Slashed hem
     wahid:
       '1': Classic
       '2': Rounded
@@ -425,6 +410,12 @@ seamlessFullCircle:
 seatEase:
   description: The amount of ease at the largest part of your bum.
   title: Seat ease
+seperateButtonholePlacket:
+  description: Draft a seperate buttonhole placket.
+  title: Seperate buttonhole placket
+seperateButtonPlacket:
+  description: Draft a seperate button placket
+  title: Seperate button placket
 shoulderEase:
   description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.
   title: Shoulder ease
@@ -520,9 +511,6 @@ splitYoke:
   title: Split yoke
 stretch:
   description: The amount of negative ease.
-  title: Stretch
-stretchFactor:
-  description: Determines the horizontal negative ease.
   title: Stretch
 tipWidth:
   description:

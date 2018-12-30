@@ -1,18 +1,9 @@
-acrossBackFactor:
-  description: Contrôle la largeur de votre dos en tant que facteur de mesure d'une épaule à l'autre.
-  title: Facteur largeur du dos
 adjustmentRibbon:
   description: Ajouter un ruban pour rendre la cravate réglable.
   options:
     - Ne pas inclure le ruban
     - Inclure le ruban
   title: Ajustement du ruban
-armholeDepthFactor:
-  description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
-  title: Facteur de profondeur de l'emmanchure
-armholeDrop:
-  description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.
-  title: Abaissement d'emmanchure
 backDartDepthFactor:
   description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
   title: Facteur de la profondeur de la pince dos
@@ -22,9 +13,6 @@ backDrop:
 backInset:
   description: Valeur d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
   title: Encart arrière
-backNeckCutout:
-  description: How deep the neck is cut out at the back
-  title: Back neck cutout
 backOpening:
   description: Ouverture au centre de la fermeture arrière.
   title: Ouverture arrière
@@ -55,18 +43,6 @@ backVentLength:
     _default: Longeur de l'évent
     jaeger: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
   title: Longeur de l'évent
-backlineBend:
-  description: Détermine la forme/courbure de l'arrière des emmanchures.
-  title: Forme de l'arrière des emmanchures
-barrelcuffNarrowButton:
-  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
-  options:
-    - Pas de bouton étroit
-    - Inclure un bouton étroit
-  title: Bouton de manche étroit
-bicepsEase:
-  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
-  title: Aisance au niveau des biceps
 bowLength:
   description: La longueur des ailes du noeud papillon.
   title: Longueur du noeud
@@ -78,78 +54,12 @@ bowStyle:
     square: Carré
     widesquare: Carré large
   title: Style du noeud
-bulge:
-  description: Augmentez l'angle pour créer plus d'espace dans la poche avant.
-  title: Renflement
-buttonPlacketStyle:
-  description: Style de la patte de boutonnage
-  options:
-    '1': Style classique
-    '2': Style français (sans couture)
-  title: Style de patte de boutonnage
-buttonPlacketType:
-  description: Type de la patte de boutonnage.
-  options:
-    '1': Cousue
-    '2': Séparée
-  title: Type de patte de boutonnage
-buttonPlacketWidth:
-  description: Largeur de la patte de boutonnage.
-  title: Largeur de patte de boutonnage
-buttonfreeLength:
-  description: Longueur du bas de la fermeture avant pour rester sans bouton.
-  title: Longueur sans bouton
-buttonholePlacketFoldWidth:
-  description: Largeur du pli de la boutonnière.
-  title: Largeur de pli de boutonnière
-buttonholePlacketStyle:
-  description: Style de la patte de boutonnière.
-  options:
-    '1': Style classique
-    '2': Style français (sans couture)
-  title: Style de patte de boutonnière
-buttonholePlacketType:
-  description: Type de la patte de boutonnière.
-  options:
-    '1': Cousue
-    '2': Séparée
-  title: Type de patte de boutonnière.
-buttonholePlacketWidth:
-  description: Largeur de la patte de boutonnière.
-  title: Largeur de patte de boutonnière
-buttons:
-  description: Le nombre de boutons sur la fermeture avant.
-  options:
-    simon:
-      '10': 10 boutons
-      '11': 11 boutons
-      '12': 12 boutons
-      '4': 4 boutons
-      '5': 5 boutons
-      '6': 6 boutons
-      '7': 7 boutons
-      '8': 8 boutons
-      '9': 9 boutons
-    wahid:
-      '10': 10 boutons
-      '11': 11 boutons
-      '12': 12 boutons
-      '4': 4 boutons
-      '5': 5 boutons
-      '6': 6 boutons
-      '7': 7 boutons
-      '8': 8 boutons
-      '9': 9 boutons
-  title: Nombre de boutons
 centerBackDart:
   description: La valeur à retirer dans une pince en haut du milieu du dos.
   title: Pince du milieu du dos
 centerFrontHemDrop:
   description: L'ourlet à l'avant est abaissé par ce rapport de mesures verticales de votre cou jusqu'à vos hanches.
   title: Ourlet avant central
-chestEase:
-  description: L'ampleur d'aisance au niveau de votre poitrine.
-  title: Aisance de poitrine
 chestPocketAngle:
   description: L'angle de la poche de poitrine.
   title: L'angle de poche de poitrine
@@ -168,21 +78,6 @@ chestShaping:
 circlePercent:
   description: 'Le pourcentage d''une jupe en cercle. 100% fait une jupe cercle complet, 50% fait une jupe demi-cercle'
   title: Pourcentage de cercle
-collarAngle:
-  description: L'angle des pointes de col.
-  title: Angle du col
-collarBend:
-  description: La courbure du col.
-  title: Courbure du col
-collarEase:
-  description: L'ampleur d'aisance au niveau du cou.
-  title: Aisance du cou
-collarFlare:
-  description: L'évasement des pointes du col.
-  title: Évasement du col
-collarGap:
-  description: L'écart entre les deux extrémités du col.
-  title: Écart du col
 collarHeight:
   description: Ceci est la hauteur du col à l'arrière du cou et ne peut jamais être inférieure à deux fois la hauteur de la ligne de pliure du col.
   title: Hauteur du col
@@ -195,43 +90,6 @@ collarNotchDepth:
 collarNotchReturn:
   description: Contrôle la longueur du bord de l'encoche supérieure. 100% = identique à la profondeur de l'encoche.
   title: Envers d'encoche du col
-collarRoll:
-  description: La valeur rendant le tombant du col plus large que le pied de col.
-  title: Pliure du col
-collarStandBend:
-  description: La courbure du col.
-  title: Courbure du col
-collarStandCurve:
-  description: La courbe du col.
-  title: Courbe du col
-collarStandWidth:
-  description: Largeur du col.
-  title: Largeur du col
-cuffButtonRows:
-  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
-  options:
-    '1': rangée de boutons de manchette simple
-    '2': rangée de boutons de manchette double
-  title: Rangée de boutons de manchette
-cuffDrape:
-  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
-  title: Drapé d'emmanchure
-cuffEase:
-  description: L'ampleur d'aisance à votre poignet.
-  title: Aisance d'emmanchure
-cuffLength:
-  description: La longueur d'emmanchure.
-  title: Longueur d'emmanchure
-cuffStyle:
-  description: Style d'emmanchure.
-  options:
-    '1': Emmanchure classique arrondie
-    '2': Emmanchure classique angulaire
-    '3': Emmanchure classique droite
-    '4': Emmanchure française arrondie
-    '5': Emmanchure française angulaire
-    '6': Emmanchure française droite
-  title: Style d'emmanchure
 dartToSideSeamFactor:
   description: Déplace l'ouverture des pinces vers la couture latérale et vice versa.
   title: Facteur pince vers couture latérale
@@ -245,12 +103,6 @@ endStyle:
     rounded: Extrémité arrondie
     straight: Extrémité droite
   title: Style de l'extrémité
-extraTopButton:
-  description: Pour inclure ou non un bouton supérieur supplémentaire sur la fermeture avant.
-  options:
-    - Pas de bouton supérieur supplémentaire
-    - Bouton supérieur supplémentaire
-  title: Bouton supérieur supplémentaire
 extraWaist:
   description: Le pourcentage déterminant si le haut de la jupe est plus long que le bas de la ceinture. Donner une valeur supérieure à 0 pour plisser la jupe.
   title: Plissement de jupe
@@ -305,9 +157,6 @@ headEase:
 hemBonus:
   description: Largeur supplémentaire à l'ourlet
   title: Ourlet supplémentaire
-hemCurve:
-  description: La hauteur de l'arrondi sur un ourlet arrondi.
-  title: Courbe de l'ourlet
 hemRadius:
   description: Rayon de l'ourlet arrondi. Pas pertinent si vous choisissez un ourlet classique.
   title: Rayon de l'ourlet
@@ -317,9 +166,9 @@ hemStyle:
     simon: Le style de l'ourlet de la chemise.
   options:
     simon:
-      '1': Ourlet droit
-      '2': Ourlet baseball
-      '3': Ourlet taillé
+      straight: Ourlet droit
+      baseball: Ourlet baseball
+      slashed: Ourlet taillé
     wahid:
       '1': Classique
       '2': Arrondi
@@ -333,9 +182,6 @@ hipFlare:
 hipRise:
   description: How much the side panels rise on your hips.
   title: Hip rise
-hipsEase:
-  description: La marge d'aisance aux hanches.
-  title: Aisance des hanches
 hipsReductionRatioBack:
   description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping.
   title: 'Hips reduction: back ratio '
@@ -345,9 +191,6 @@ knotWidth:
 lapelStart:
   description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline. '
   title: Lapel break point
-legBonus:
-  description: Longueur supplémentaire à ajouter aux jambes.
-  title: Longueur supplémentaire jambes
 legReduction:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping.   '
   title: Leg reduction
@@ -357,18 +200,12 @@ legStretch:
 length:
   description: The length of the skirt
   title: Skirt length
-lengthBonus:
-  description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
-  title: Ajout de longueur
 neckInset:
   description: Distance from the neck to the waistcoat neckline at the shoulder seam.
   title: Neck inset
 neckReduction:
   description: Neck shaping at center back as percent of chest circumference.
   title: Center back neck dart
-necklineBend:
-  description: Détermine la forme/courbure du devant de l'encolure.
-  title: Forme de l'encolure
 necklineDrop:
   description:
     _default: The amount the neck is cutout at the front.
@@ -425,6 +262,12 @@ seamlessFullCircle:
 seatEase:
   description: The amount of ease at your butt.
   title: Seat ease
+seperateButtonholePlacket:
+  description: Voulez-vous la patte de boutonnière séparée?
+  title: Patte de boutonnière séparée
+seperateButtonPlacket:
+  description: Voulez-vous la patte de boutonnage séparée?
+  title: Patte de boutonnage séparée
 shoulderEase:
   description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.
   title: Shoulder ease
@@ -434,12 +277,6 @@ shoulderInset:
 shoulderSlopeReduction:
   description: The amount by which the shoulder slope is reduced to allow for shoulder padding.
   title: Shoulder slope reduction
-shoulderStrapPlacement:
-  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).
-  title: Shoulderstrap placement
-shoulderStrapWidth:
-  description: The width of the shoulder straps.
-  title: Shoulderstrap width
 sideFrontPlacement:
   description: Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel.
   title: Front side boundary placement

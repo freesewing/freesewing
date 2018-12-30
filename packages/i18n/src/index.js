@@ -5,6 +5,7 @@ import * as fr from "./locales/fr";
 import * as nl from "./locales/nl";
 
 const imports = { en, de, es, fr, nl };
+const languages = ["en", "de", "es", "fr", "nl"];
 
 const topics = [
   "account",
@@ -17,10 +18,9 @@ const topics = [
   "measurements",
   "options",
   "patterns",
-  "plugin"
+  "plugin",
+  "settings"
 ];
-
-const languages = ["en", "de", "es", "fr", "nl"];
 
 const account = {};
 const app = {};
@@ -33,6 +33,7 @@ const measurements = {};
 const options = {};
 const patterns = {};
 const plugin = {};
+const settings = {};
 const strings = {};
 
 for (let lang of languages) account[lang] = imports[lang].account;
@@ -46,6 +47,7 @@ for (let lang of languages) measurements[lang] = imports[lang].measurements;
 for (let lang of languages) options[lang] = imports[lang].options;
 for (let lang of languages) patterns[lang] = imports[lang].patterns;
 for (let lang of languages) plugin[lang] = imports[lang].plugin;
+for (let lang of languages) settings[lang] = imports[lang].settings;
 for (let lang of languages) strings[lang] = imports[lang].strings;
 
 export {
@@ -60,5 +62,6 @@ export {
   options,
   patterns,
   plugin,
+  settings,
   strings
 };

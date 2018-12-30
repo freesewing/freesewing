@@ -1,0 +1,27 @@
+paperless:
+  title: Papierlos
+  description: Zeichnet ein Muster mit allen enthaltenen Abmessungen, sodass Sie es auf Stoff oder ein anderes Medium übertragen können, ohne dass Sie drucken müssen.
+
+sa:
+  title: Nahtzugabe
+  description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
+
+locale:
+  title: Sprache
+  description: Legt die für Ihr Muster verwendete Sprache fest
+
+only:
+  title: Inhalt
+  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Muster enthalten sind
+
+units:
+  title: Einheiten
+  description: Steuert die für Ihr Muster verwendeten Einheiten.
+
+margin:
+  title: Marge
+  description: Steuert den Rand um Musterteile
+
+complete:
+  title: Detail
+  description: Steuert, wie detailliert das Muster ist. Entweder ein vollständiges Muster mit allen Details oder eine grundlegende Kontur der Musterteile.

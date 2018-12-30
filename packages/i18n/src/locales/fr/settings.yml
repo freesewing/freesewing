@@ -1,0 +1,28 @@
+paperless:
+  title: Sans papier
+  description: Dessine un patron avec toutes les dimensions incluses afin que vous puissiez le transférer sur du tissu ou un autre support sans avoir à imprimer.
+
+sa:
+  title: Marge de couture
+  description: Contrôle le montant de la marge de couture inclus dans votre patron
+
+locale:
+  title: Langue
+  description: Détermine la langue utilisée sur votre patron
+
+only:
+  title: Contenu
+  description: Vous permet de contrôler quelles parties seront incluses dans votre patron
+
+units:
+  title: Unités
+  description: Contrôle les unités utilisées sur votre patron
+
+margin:
+  title: Marge
+  description: Contrôle la marge autour des parties du patron
+
+complete:
+  title: Détail
+  description: Contrôle le niveau de détail du patron. Soit un motif patron avec tous les détails, soit un contour de base des parties du patron.
+
