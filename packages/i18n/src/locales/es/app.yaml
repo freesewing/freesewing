@@ -9,8 +9,10 @@ back: atras
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
 blog: Blog
-browseAllBlogposts: Navegar por todas les publicaciones del blog
-browseAllShowcases: Navegar por todas las escaparates
+browseBlogposts: Navegar por les publicaciones del blog
+browsePatterns: Navegar por les patrones
+perMonth: por mes
+browseShowcases: Navegar por las escaparates
 butThatCouldChange: Pero eso podría cambiar
 changeModel: Cambiar modelo
 changePattern: Cambiar patrón
@@ -39,6 +41,7 @@ custom: personalizado
 customSeamAllowance: Margen de costura personalizada
 darkMode: Modo oscuro
 default: Defecto
+demo: Demostración
 docs: Documentación
 docsNotFoundMsg: No pudimos encontrar esta documentación, lo que generalmente significa que aún no se ha escrito.
 docsNotFoundTitle: Esta documentación falta
@@ -54,6 +57,7 @@ dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manua
 emailAddress: Dirección de correo electrónico
 emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
+faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
 filterPatterns: Filtrar los patrones
@@ -164,3 +168,13 @@ youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn:  No has iniciado sesión
 yourRights: Tus derechos
+supportFreesewing: Apoyo de freesewing
+txt-tier0: ¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? <br> La liberación gratuita es gratuita para todos. No se hicieron preguntas.
+txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
+txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
+txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
+txt-tiers: "Freesewing está financiado por un modelo de suscripción voluntaria con cuatro niveles:"
+
+subscribe: Suscribir
+orPayPerYear: O pagar por año
+

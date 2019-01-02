@@ -9,8 +9,10 @@ back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
 blog: Blog
-browseAllBlogposts: Durchsuchen Sie alle Blogposts
-browseAllShowcases: Durchsuchen Sie alle Showcases
+browseBlogposts: Blogeinträge durchsuchen
+browsePatterns: Schnittmuster dursuchen
+perMonth: pro Monat
+browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
 changeModel: Modell ändern
 changePattern: Muster ändern
@@ -39,6 +41,7 @@ custom: Angepasst
 customSeamAllowance: Kundenspezifische Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
+demo: Demo
 docs: Dokumente
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
 docsNotFoundTitle: Diese Dokumentation fehlt
@@ -54,6 +57,7 @@ dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie
 emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
+faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
 fieldSaved: "{field} gespeichert"
 filterPatterns: Filtern der Schnittmuster
@@ -164,3 +168,13 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
+supportFreesewing: Unterstützung freesewing
+txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
+txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
+txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
+txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
+txt-tiers: "Freesewing wird durch ein freiwilliges Abonnementmodell mit vier Stufen finanziert:"
+
+subscribe: Abonnieren
+orPayPerYear: Oder pro Jahr bezahlen
+

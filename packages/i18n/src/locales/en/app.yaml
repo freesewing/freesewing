@@ -9,8 +9,9 @@ back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
 blog: Blog
-browseAllBlogposts: Browse all blogposts
-browseAllShowcases: Browse all showcases
+browseBlogposts: Browse blogposts
+browsePatterns: Browse patterns
+browseShowcases: Browse showcases
 butThatCouldChange: But that could change
 changeModel: Change model
 changePattern: Change pattern
@@ -39,6 +40,7 @@ custom: Custom
 customSeamAllowance: Custom seam allowance
 darkMode: Dark mode
 default: Default
+demo: Demo
 docs: Documentation
 docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
 docsNotFoundTitle: This documentation is missing
@@ -54,6 +56,7 @@ dragAndDropImageHere: Drag and drop and image here, or select one manually with 
 emailAddress: E-mail address
 emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
 enterEmailPickPassword: Enter your E-mail address, and pick a password
+faq: Frequently asked questions
 fieldRemoved: "{field} removed"
 fieldSaved: "{field} saved"
 filterPatterns: Filter patterns
@@ -95,6 +98,7 @@ notesInfo: These are your notes. You can write anything you want here
 notes: Notes
 ohNo: Oh no!
 options: Options
+orPayPerYear: Or pay per year
 other: Other
 otherThing: "Other {thing}"
 patron-2: Powder monkey
@@ -109,6 +113,7 @@ patternOptions: Pattern options
 pattern: pattern
 patterns: Patterns
 pendingConfirmation: Pending confirmation
+perMonth: Per month
 pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
 pleaseIncludeTheInformationBelow: Please include the information below
 preview: Preview
@@ -137,6 +142,8 @@ standardSeamAllowance: Standard seam allowance
 startOver: Start over
 startTranslatingNowOrRead: '{startTranslatingNow}, or read the {documentationForTranslators} first.'
 startTranslatingNow: Start translating now
+subscribe: Subscribe
+supportFreesewing: Support freesewing
 tellMeMore: Tell me more
 thisContentIsNotAvailableInLanguage: This content is not available in English
 thisFieldSupportsMarkdown: This field supports Markdown
@@ -144,6 +151,11 @@ thisPageRequiresAuthentication: This page requires authentication
 troubleLoggingIn: Trouble logging in?
 twitter: Twitter
 txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons
+txt-tier0: Don't want to support us? Can't afford to support us?<br>Freesewing is free for everyone. No questions asked.
+txt-tier2: Our most democractically priced tier. It may be less than the price of a latte, but your support means the world to us.
+txt-tier4: Subscribe to this tier and we'll send some of our much covetted freesewing swag to your home anywhere in the world.
+txt-tier8: "If you don't merely want to support us, but want to see freesewing thrive, this is the tier for you. Also: extra swag."
+txt-tiers: "Freesewing is funded by a voluntary subscription model with four tiers:"
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
 userHasBeenWithUsSince: '{user} has been with us since {since}'

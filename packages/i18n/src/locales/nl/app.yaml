@@ -9,8 +9,10 @@ back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
 blog: Blog
-browseAllBlogposts: Bekijk alle blogposts
-browseAllShowcases: Bekijk alle showcases
+browseBlogposts: Bekijk de blogposts
+browsePatterns: Bekijk de patronen
+perMonth: per maand
+browseShowcases: Bekijk de showcases
 butThatCouldChange: Maar dat kan veranderen
 changeModel: Ander model
 changePattern: Ander patroon
@@ -39,6 +41,7 @@ custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
 darkMode: Donkere modus
 default: Standaard
+demo: Demo
 docs: Documentatie
 docsNotFoundMsg: We konden deze documentatie niet vinden, wat meestal betekent dat deze nog niet is geschreven.
 docsNotFoundTitle: Deze documentatie ontbreekt
@@ -54,6 +57,7 @@ dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmat
 emailAddress: Email adres
 emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
+faq: Vaak gestelde vragen
 fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
 filterPatterns: Patronen filteren
@@ -164,3 +168,12 @@ youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
+supportFreesewing: Ondersteun freesewing
+txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
+txt-tier2: Onze meest democratisch geprijsde optie. Het is misschien minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
+txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
+txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
+subscribe: Abonneren
+orPayPerYear: Of betaal per jaar
+

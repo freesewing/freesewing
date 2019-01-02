@@ -9,8 +9,10 @@ back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
 blog: Blog
-browseAllBlogposts: Parcourir tous les articles du blog
-browseAllShowcases: Parcourir la galerie entière
+browseBlogposts: Parcourir les articles du blog
+browsePatterns: Parcourir les patrons
+browseShowcases: Parcourir la galerie
+perMonth: par mois
 butThatCouldChange: Mais cela pourrait changer
 changeModel: Changer le modèle
 changePattern: Changer le patron
@@ -39,6 +41,7 @@ custom: Personnalisé
 customSeamAllowance: Marge de couture customisée
 darkMode: Mode sombre
 default: Standard
+demo: Démo
 docs: Documentation
 docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement qu'elle n'a pas encore été écrite.
 docsNotFoundTitle: Cette documentation est manquante
@@ -54,6 +57,7 @@ dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une m
 emailAddress: Adresse mail
 emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
+faq: Questions fréquemment posées
 fieldRemoved: "{field} enlevé"
 fieldSaved: "{field} enregistré"
 filterPatterns: Filtrez les patrons
@@ -164,3 +168,13 @@ youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
+supportFreesewing: Soutenir freesewing
+txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
+txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
+txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
+txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
+txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
+
+subscribe: Souscrire
+orPayPerYear: Ou payer par an
+
