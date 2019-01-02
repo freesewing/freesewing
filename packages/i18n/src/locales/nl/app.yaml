@@ -11,7 +11,6 @@ becomeAPatron: Word mecenas
 blog: Blog
 browseBlogposts: Bekijk de blogposts
 browsePatterns: Bekijk de patronen
-perMonth: per maand
 browseShowcases: Bekijk de showcases
 butThatCouldChange: Maar dat kan veranderen
 changeModel: Ander model
@@ -99,6 +98,7 @@ notes: Aantekeningen
 notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
 ohNo: Oh nee!
 options: Opties
+orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: "Andere {thing}"
 patron-2: Powder monkey
@@ -113,6 +113,7 @@ patternOptions: Patroon opties
 pattern: Patroon
 patterns: Patronen
 pendingConfirmation: In afwachting van bevestiging
+perMonth: per maand
 pleaseEnterAValidEmailAddress: 'Gelieve een geldig email adres in te voeren'
 pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
 preview: Voorbeeld
@@ -141,6 +142,8 @@ standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
 startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
+subscribe: Abonneren
+supportFreesewing: Ondersteun freesewing
 tellMeMore: Vertel me meer
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands
 thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
@@ -148,6 +151,11 @@ thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
 txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze sponsors
+txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
+txt-tier2: Onze meest democratisch geprijsde optie. Het is misschien minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
+txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
+txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
 unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
@@ -168,12 +176,3 @@ youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
-supportFreesewing: Ondersteun freesewing
-txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
-txt-tier2: Onze meest democratisch geprijsde optie. Het is misschien minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
-txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
-txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
-subscribe: Abonneren
-orPayPerYear: Of betaal per jaar
-

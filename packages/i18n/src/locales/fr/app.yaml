@@ -12,7 +12,6 @@ blog: Blog
 browseBlogposts: Parcourir les articles du blog
 browsePatterns: Parcourir les patrons
 browseShowcases: Parcourir la galerie
-perMonth: par mois
 butThatCouldChange: Mais cela pourrait changer
 changeModel: Changer le modèle
 changePattern: Changer le patron
@@ -99,6 +98,7 @@ notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
 ohNo: Oh non !
 options: Options
+orPayPerYear: Ou payer par an
 other: Autre
 otherThing: "Autres {thing}"
 patron-2: Powder monkey
@@ -113,6 +113,7 @@ patternOptions: Options du patron
 pattern: Patron
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
+perMonth: par mois
 pleaseEnterAValidEmailAddress: Merci d'entrer une adresse e-mail valide
 pleaseIncludeTheInformationBelow: S'il vous plaît inclure les informations ci-dessous
 preview: Aperçu
@@ -141,6 +142,8 @@ standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
 startTranslatingNow: Commencez à traduire maintenant
 startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
+subscribe: Souscrire
+supportFreesewing: Soutenir freesewing
 tellMeMore: En savoir plus
 thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en français.
 thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
@@ -148,6 +151,11 @@ thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
 txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de nos mécènes
+txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
+txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
+txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
+txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
+txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales. Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
@@ -168,13 +176,3 @@ youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
-supportFreesewing: Soutenir freesewing
-txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
-txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
-txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
-txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
-txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
-
-subscribe: Souscrire
-orPayPerYear: Ou payer par an
-

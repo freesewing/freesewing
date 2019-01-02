@@ -11,7 +11,6 @@ becomeAPatron: Gönner werden
 blog: Blog
 browseBlogposts: Blogeinträge durchsuchen
 browsePatterns: Schnittmuster dursuchen
-perMonth: pro Monat
 browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
 changeModel: Modell ändern
@@ -99,6 +98,7 @@ notes: Anmerkungen
 notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
 ohNo: Oh Nein!
 options: Optionen
+orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: "Andere {thing}"
 patron-2: Pulveraffe
@@ -113,6 +113,7 @@ patternOptions: Musteroptionen
 pattern: Schnittmuster
 patterns: Schnittmuster
 pendingConfirmation: Ausstehende Bestätigung
+perMonth: pro Monat
 pleaseEnterAValidEmailAddress: Bitte eine gueltige Email Adresse angeben
 pleaseIncludeTheInformationBelow: Bitte geben Sie die Informationen unten an
 preview: Vorschau
@@ -141,6 +142,8 @@ standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
 startTranslatingNow: Beginne jetzt mit dem Übersetzen
 startTranslatingNowOrRead: '{startTranslatingNow}, oder lies zuerst die {documentationForTranslators}.'
+subscribe: Abonnieren
+supportFreesewing: Unterstützung freesewing
 tellMeMore: Erzähl mir mehr
 thisContentIsNotAvailableInLanguage: Dieser Inhalt ist auf Deutsch nicht verfügbar
 thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
@@ -148,6 +151,11 @@ thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
 txt-footer: 'Freesewing wurde von Joost De Cock & den Mitwirkenden kreiert,<br>mit der finanziellen Unterstützung unserer Gönner'
+txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
+txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
+txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
+txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
+txt-tiers: "Freesewing wird durch ein freiwilliges Abonnementmodell mit vier Stufen finanziert:"
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 updated: Aktualisierte
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
@@ -168,13 +176,3 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
-supportFreesewing: Unterstützung freesewing
-txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
-txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
-txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
-txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
-txt-tiers: "Freesewing wird durch ein freiwilliges Abonnementmodell mit vier Stufen finanziert:"
-
-subscribe: Abonnieren
-orPayPerYear: Oder pro Jahr bezahlen
-
