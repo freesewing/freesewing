@@ -1,0 +1,85 @@
+import { version } from "../package.json";
+
+export default {
+  name: "sven",
+  version,
+  measurements: [
+    "bicepsCircumference",
+    "centerBackNeckToWaist",
+    "chestCircumference",
+    "naturalWaist",
+    "naturalWaistToHip",
+    "neckCircumference",
+    "shoulderSlope",
+    "shoulderToShoulder",
+    "hipsCircumference",
+    "shoulderToWrist",
+    "wristCircumference"
+  ],
+  dependencies: {
+    frontBase: "base",
+    backBase: "base",
+    front: "frontBase",
+    back: "backBase",
+    sleeve: ["sleeveBase", "front", "back"]
+  },
+  inject: {
+    frontBase: "base",
+    backBase: "base",
+    front: "frontBase",
+    back: "backBase",
+    sleeve: "sleeveBase"
+  },
+  parts: ["cuff", "waistband"],
+  hide: ["base", "frontBase", "backBase", "sleeveBase"],
+  options: {
+    // Constants
+    collarFactor: 5,
+    brianFitSleeve: true,
+    brianFitCollar: true,
+
+    // Booleans
+    ribbing: { bool: true },
+
+    // Percentages
+    acrossBackFactor: { pct: 97, min: 93, max: 100 },
+    chestEase: { pct: 8, min: -4, max: 20 },
+    bicepsEase: { pct: 15, min: 0, max: 50 },
+    cuffEase: { pct: 20, min: 0, max: 30 },
+    collarEase: { pct: 10, min: 5, max: 30 },
+    lengthBonus: { pct: 15, min: 0, max: 60 },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    ribbingHeight: { pct: 8, min: 3, max: 15 },
+    ribbingStretch: { pct: 15, min: 0, max: 30 },
+
+    armholeDepthFactor: { pct: 55, min: 50, max: 70 },
+    backNeckCutout: { pct: 5, min: 2, max: 8 },
+
+    frontArmholeDeeper: { pct: 0, min: 0, max: 1.5 },
+
+    hipsEase: { pct: 8, min: -4, max: 20 },
+
+    shoulderEase: { pct: 0, min: -2, max: 6 },
+
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    sleevecapEase: { pct: 0, min: 0, max: 10 },
+    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
+    sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
+    sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
+    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
+    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
+    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
+    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
+    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
+    waistEase: { pct: 8, min: -4, max: 20 }
+  }
+};
