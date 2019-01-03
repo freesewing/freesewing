@@ -19,7 +19,7 @@ export default {
     "pocketFacing",
     "hoodSide",
     "hoodCenter",
-    "cuffs",
+    "cuff",
     "waistband"
   ],
   optionGroups: {

@@ -4,6 +4,7 @@ import bruce from "./bruce";
 import cathrin from "./cathrin";
 import hugo from "./hugo";
 import simon from "./simon";
+import sven from "./sven";
 
 export default {
   aaron,
@@ -11,5 +12,6 @@ export default {
   bruce,
   cathrin,
   hugo,
-  simon
+  simon,
+  sven
 };

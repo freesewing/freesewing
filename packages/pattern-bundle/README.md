@@ -24,6 +24,7 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
  - [bruce](https://github.com/freesewing/bruce) : Boxer briefs
  - [hugo](https://github.com/freesewing/hugo) : A hooded sweatshirt with raglan sleeves
  - [simon](https://github.com/freesewing/simon) : A versatile button-down shirt
+ - [sven](https://github.com/freesewing/sven) : A straightforward sweater
  
 
 ### Womenswear
