@@ -1,0 +1,43 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+collarEase: brian
+chestEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapHeightFactor: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+ribbing:
+  title: Bordures
+  description: Faut-il finir l'ourlet et les poignets avec un tissu pour bordures
+
+ribbingHeight:
+  title: Hauteur de bordures
+  description: La hauteur du tissu pour bordures sur les poignets et l'ourlet.
+
+ribbingStretch:
+  title: Élasticité de bordures
+  description: L'élasticité du tissu pour bordures sur les poignets et l'ourlet.

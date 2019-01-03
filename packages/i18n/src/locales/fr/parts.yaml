@@ -1,7 +1,7 @@
 back: Arrière
 backBase: Base arrière
 base: Base
-cuffs: Manchettes
+cuff: Manchette
 front: Avant
 frontBase: Base avant
 hoodCenter: Capuchon centre
@@ -12,3 +12,21 @@ sleeveBase: Base de manche
 sleevecap: Sleevecap FIXME
 sleeve: Manche
 waistband: Ceinture
+side: Côté
+inset: Encart
+panels: Pièces
+panel1: Pièce 1
+panel2: Pièce 2
+panel3: Pièce 3
+panel4: Pièce 4
+panel5: Pièce 5
+panel6: Pièce 6
+sleevePlacketOverlap: Patte de manche supérieur
+sleevePlacketUnderlap: Patte de manche en dessous
+collar: Col
+collarStand: Col support
+frontRight: Avant droit
+frontLeft: Avant gauche
+buttonPlacket: Patte de boutonnage
+buttonholePlacket: Patte de boutonnière
+yoke: Empiècement

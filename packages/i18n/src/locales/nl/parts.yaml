@@ -1,7 +1,7 @@
 backBase: Basis rug
 back: Rug
 base: Basis
-cuffs: Manchetten
+cuff: Manchette
 frontBase: Basis voorzijde
 front: Voorzijde
 hoodCenter: Capuchon midden
@@ -12,3 +12,22 @@ sleeveBase: Basis mouw
 sleevecap: Mouwkop
 sleeve: Mouw
 waistband: Tailleband
+side: Zijkant
+inset: Inzet
+panels: Delen
+panel1: Deel 1
+panel2: Deel 2
+panel3: Deel 3
+panel4: Deel 4
+panel5: Deel 5
+panel6: Deel 6
+sleevePlacketOverlap: Mouwsplit bovendeel
+sleevePlacketUnderlap: Mouwsplit onder
+collar: Kraag
+collarStand: Kraagstaander
+frontRight: Voorzijde rechts
+frontLeft: Voorzijde links
+buttonPlacket: Knopenpad
+buttonholePlacket: Knoopsgatenpat
+yoke: Schouderpas
+

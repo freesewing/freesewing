@@ -89,7 +89,7 @@ collarRoll:
   description: La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás.
 
 collarStandBend:
-  title: Doblado del cuello
+  title: Doblado de la base del cuello
   description: La cantidad en la que el cuello superior es mayor que el inferior.
 
 collarStandCurve:

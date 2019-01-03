@@ -4,6 +4,7 @@ import bruce from "./bruce.yml";
 import cathrin from "./cathrin.yml";
 import hugo from "./hugo.yml";
 import simon from "./simon.yml";
+import sven from "./sven.yml";
 
 let patterns = {
   brian,
@@ -11,7 +12,8 @@ let patterns = {
   bruce,
   cathrin,
   hugo,
-  simon
+  simon,
+  sven
 };
 
 let options = {};

@@ -1,7 +1,7 @@
 back: Back
 backBase: Back base
 base: Base
-cuffs: Cuffs
+cuff: Cuff
 frontBase: Front base
 front: Front
 hoodCenter: Hood center
@@ -12,3 +12,21 @@ sleeveBase: Sleeve base
 sleevecap: Sleevecap
 sleeve: Sleeve
 waistband: Waistband
+side: Side
+inset: Inset
+panels: Panels
+panel1: Panel 1
+panel2: Panel 2
+panel3: Panel 3
+panel4: Panel 4
+panel5: Panel 5
+panel6: Panel 6
+sleevePlacketOverlap: Sleeve placket overlap
+sleevePlacketUnderlap: Sleeve placket underlap
+collar: Collar
+collarStand: Collar stand
+frontRight: Front right
+frontLeft: Front left
+buttonPlacket: Button placket
+buttonholePlacket: Buttonhole placket
+yoke: Yoke

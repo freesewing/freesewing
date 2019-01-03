@@ -1,7 +1,7 @@
 backBase: Rückseite Basis
 back: Rückseite
 base: Basis
-cuffs: Manschetten
+cuff: Manschetten
 frontBase: Vorderseite Basis
 front: Vorderseite
 hoodCenter: Haubenmitte
@@ -12,3 +12,22 @@ sleeve: Ärmel
 sleeveBase: Ärmel Basis
 sleevecap: Ärmelkappe
 waistband: Bund
+side: Seite
+inset: Einsatz
+panels: Teile
+panel1: Teil 1
+panel2: Teil 2
+panel3: Teil 3
+panel4: Teil 4
+panel5: Teil 5
+panel6: Teil 6
+sleevePlacketOverlap: Ärmelknopflänge oben
+sleevePlacketUnderlap: Ärmelknopflänge unter
+collar: Kragen
+collarStand: Kragenstand
+frontRight: Vorne rechts
+frontLeft: Vorne links
+buttonPlacket: Knopfleiste
+buttonholePlacket: Knopflochleiste
+yoke: Joch
+
