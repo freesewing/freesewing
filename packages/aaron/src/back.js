@@ -47,7 +47,7 @@ export default function(part) {
       .attr('data-text', "length")
       .attr('data-text', ":")
       .attr('data-text', units(armholeLength * 0.95 + 2*sa))
-      .attr('data-text', "\n&nbsp;\n")
+      .attr('data-text', "\n&#160;\n")
       .attr('data-text', 'cutOneStripToFinishTheNeckOpening')
       .attr('data-text', ":\n")
       .attr('data-text', "width")
