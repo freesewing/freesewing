@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/aaron": "^0.10.2",
+    "@freesewing/aaron": "^0.10.3",
     "@freesewing/brian": "^0.22.2",
     "@freesewing/bruce": "^0.5.2",
     "@freesewing/cathrin": "^0.4.2",
