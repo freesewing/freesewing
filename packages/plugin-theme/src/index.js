@@ -1,10 +1,14 @@
-import draftCss from "./lib/draft.css.js";
-import sampleCss from "./lib/sample.css.js";
-import paperlessCss from "./lib/paperless.css.js";
-import notch from "./lib/notch";
-import gridMetric from "./lib/grid-metric";
-import gridImperial from "./lib/grid-imperial";
 import { version, name } from "../package.json";
+import notch from "./defs/notch";
+import gridMetric from "./defs/grid-metric";
+import gridImperial from "./defs/grid-imperial";
+// we don't use these vars, but they will trigger the
+// rollup sass plugin to compile a CSS bundle
+import draftCss from "./scss/draft.scss";
+import sampleCss from "./scss/sample.scss";
+import paperlessCss from "./scss/paperless.scss";
+// This is the CSS bundle
+import css from "./bundle.css.js";
 
 export default {
   name: name,
@@ -12,11 +16,10 @@ export default {
   hooks: {
     preRender: function(svg) {
       if (svg.attributes.get("freesewing:plugin-theme") === false) {
+        svg.attributes.set("class", "freesewing");
         svg.defs += notch;
-        svg.style += draftCss;
-        if (svg.pattern.is === "sample") svg.style += sampleCss;
+        svg.style += css;
         if (svg.pattern.settings.paperless) {
-          svg.style += paperlessCss;
           svg.pattern.settings.units === "imperial"
             ? (svg.defs += gridImperial)
             : (svg.defs += gridMetric);
