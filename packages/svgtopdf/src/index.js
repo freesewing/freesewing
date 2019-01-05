@@ -51,16 +51,19 @@ app.post("/api", async (req, res) => {
   if(
     typeof req.body.svg === "undefined" ||
     typeof req.body.format === "undefined" ||
-    typeof req.body.size === "undefined")
+    typeof req.body.size === "undefined" ||
+    formats.indexOf(req.body.format) === -1 ||
+    sizes.indexOf(req.body.size) === -1
+  )
     return res.sendStatus(400);
 
   // Save svg to disk
-  fs.writeFile("/tmp/draft.svg", req.svg, err => {
+  fs.writeFile("/tmp/draft.svg", req.body.svg, err => {
   	if(err) return res.sendStatus(500);
   	let cmd;
-  	if(req.size === "full") { // Do not tile
-  	  let target = `/tmp/pattern.${req.format}`;
-  	  cmd = `/usr/bin/inkscape --export-${req.format}=${target} /tmp/draft.svg`;
+  	if(req.body.size === "full") { // Do not tile
+  	  let target = "/tmp/pattern.pdf";
+  	  cmd = "/usr/bin/inkscape --export-pdf="+target+" /tmp/draft.svg";
   	  shellExec(cmd).then(() => {
   	    return res.sendFile(target);
   	  });
