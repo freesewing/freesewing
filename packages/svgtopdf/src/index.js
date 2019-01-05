@@ -1,9 +1,11 @@
 import express from "express";
+import cors from "cors";
 import path from "path";
 import formidable from "formidable";
 import shellExec from "shell-exec";
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 4000;
 const formats = ['pdf','ps'];
 const sizes = ['full', 'a4','a3','a2','a1','a0','letter','tabloid'];
