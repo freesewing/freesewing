@@ -33,6 +33,8 @@ contactUs: Kontaktiere uns
 contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
 contents: Inhalte
 continue: Fortsetzen
+copiedToClipboard: In die Zwischenablage kopiert
+copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
 countModelsLackingForPattern: Sie haben {count}-Modelle, denen die zum Messen von {pattern} erforderlichen Maße fehlen.
 created: Erstellt
@@ -57,7 +59,10 @@ dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie
 emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
+exportDraft: Entwurf exportieren
 export: Export
+exportGist: Kern exportieren
+exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
 fieldSaved: "{field} gespeichert"
@@ -65,6 +70,7 @@ filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
+gist: Kern
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
@@ -149,6 +155,7 @@ startTranslatingNowOrRead: '{startTranslatingNow}, oder lies zuerst die {documen
 subscribe: Abonnieren
 supportFreesewing: Unterstützung freesewing
 tellMeMore: Erzähl mir mehr
+thanksForYourSupport: Danke für deine Unterstützung
 thisContentIsNotAvailableInLanguage: Dieser Inhalt ist auf Deutsch nicht verfügbar
 thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
@@ -180,11 +187,3 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
-thanksForYourSupport: Danke für deine Unterstützung
-copy: Kopieren
-copiedToClipboard: In die Zwischenablage kopiert
-gist: Kern
-exportGist: Kern exportieren
-exportDraft: Entwurf exportieren
-exportTiledPDF: Exportieren von paginiertem PDF
-

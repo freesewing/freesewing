@@ -33,6 +33,8 @@ contactUs: Contactáctanos
 contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 contents: Contenidos
 continue: Continuar
+copiedToClipboard: Copiado al portapapeles
+copy: Dupdo
 couldYouTranslateThis: ¿Podrías traducir esto?
 countModelsLackingForPattern: Tiene {count} modelos que carecen de las medidas necesarias para dibujar {pattern}
 created: Creado
@@ -57,7 +59,10 @@ dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manua
 emailAddress: Dirección de correo electrónico
 emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
+exportDraft: Exportar boceto
 export: Exportar
+exportGist: Exportar esencia
+exportTiledPDF: Exportar PDF paginado
 faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
@@ -65,6 +70,7 @@ filterPatterns: Filtrar los patrones
 forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
+gist: Esencia
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -149,6 +155,7 @@ startTranslatingNowOrRead: '{startTranslatingNow}, o lea primero la {documentati
 subscribe: Suscribir
 supportFreesewing: Apoyo de freesewing
 tellMeMore: Dime más
+thanksForYourSupport: Gracias por su apoyo
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisFieldSupportsMarkdown: Este campo admite Markdown
 thisPageRequiresAuthentication: esta página requiere autenticación
@@ -179,12 +186,4 @@ yes: Sí
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn:  No has iniciado sesión
-thanksForYourSupport: Gracias por su apoyo
 yourRights: Tus derechos
-copy: Dupdo
-copiedToClipboard: Copiado al portapapeles
-gist: Esencia
-exportGist: Exportar esencia
-exportDraft: Exportar boceto
-exportTiledPDF: Exportar PDF paginado
-
