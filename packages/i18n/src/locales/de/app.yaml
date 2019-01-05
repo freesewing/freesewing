@@ -4,6 +4,7 @@
 aboutFreesewing: Über Freesewing
 accountCreated: Account erstellt
 account: Konto
+actions: Aktions
 andThatIsAwesome: Und das ist großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
@@ -48,14 +49,15 @@ documentationForDevelopers: Dokumentation für Entwickler
 documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
-draftOptions: Entwurfoptionen
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
 drafts: Entwürfe
+draftSettings: Entwurfeinstellungen
 dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie es manuell mit der Schaltfläche unten aus
 emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
+export: Export
 faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
 fieldSaved: "{field} gespeichert"
@@ -76,6 +78,7 @@ imperialUnits: Imperiale Einheiten (cm)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 justAMoment: Einen Moment bitte
+layout: Layout
 logIn: Anmelden
 logOut: Abmelden
 markdownHelp: Markdown-Hilfe
@@ -128,6 +131,7 @@ resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resendActivationEmailMessage: Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
+restoreDefaults: Wiederherstellen der Standardwerte
 save: Speichern
 selectImage: Bild auswählen
 sendAnEmail: Eine E-Mail senden
@@ -176,3 +180,11 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
+thanksForYourSupport: Danke für deine Unterstützung
+copy: Kopieren
+copiedToClipboard: In die Zwischenablage kopiert
+gist: Kern
+exportGist: Kern exportieren
+exportDraft: Entwurf exportieren
+exportTiledPDF: Exportieren von paginiertem PDF
+

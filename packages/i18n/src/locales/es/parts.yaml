@@ -1,33 +1,32 @@
 backBase: Base trasera
 back: Trasero
 base: Base
+buttonholePlacket: Tapeta de ojal
+buttonPlacket: Tapeta de botones
+collar: Cuello
+collarStand: Base del cuello
 cuff: Puño
 frontBase: Base delantera
 front: Frente
+frontLeft: Delantero izquierdo
+frontRight: Delantero derecha
 hoodCenter: Centro de la capucha
 hoodSide: Lado de la capucha
-pocket: Bolsillo
-pocketFacing: Mirando hacia el bolsillo
-sleeveBase: Base de la manga
-sleevecap: Manga corta
-sleeve: Manga
-waistband: Pretina
-side: Lado
 inset: Encarte
-panels: Paneles
 panel1: Panel 1
 panel2: Panel 2
 panel3: Panel 3
 panel4: Panel 4
 panel5: Panel 5
 panel6: Panel 6
+panels: Paneles
+pocket: Bolsillo
+pocketFacing: Mirando hacia el bolsillo
+side: Lado
+sleeveBase: Base de la manga
+sleevecap: Manga corta
+sleeve: Manga
 sleevePlacketOverlap: Vista de la manga superior
 sleevePlacketUnderlap: Vista de la manga fondo
-collar: Cuello
-collarStand: Base del cuello
-frontRight: Delantero derecha
-frontLeft: Delantero izquierdo
-buttonPlacket: Tapeta de botones
-buttonholePlacket: Tapeta de ojal
+waistband: Pretina
 yoke: Canesú
-

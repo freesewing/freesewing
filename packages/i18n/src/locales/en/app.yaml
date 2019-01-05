@@ -4,6 +4,7 @@
 aboutFreesewing: About Freesewing
 account: Account
 accountCreated: Account created
+actions: Actions
 andThatIsAwesome: And that is awesome
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
@@ -48,14 +49,15 @@ documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
 download: Download
-draftOptions: Draft options
 draftPattern: 'Draft {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
+draftSettings: Draft settings
 dragAndDropImageHere: Drag and drop and image here, or select one manually with the button below
 emailAddress: E-mail address
 emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
 enterEmailPickPassword: Enter your E-mail address, and pick a password
+export: Export
 faq: Frequently asked questions
 fieldRemoved: "{field} removed"
 fieldSaved: "{field} saved"
@@ -76,6 +78,7 @@ imperialUnits: Imperial units (inch)
 instagram: Instagram
 invalidTldMessage: '.{tld} is not a valid TLD'
 justAMoment: Just a moment
+layout: Layout
 logIn: Log in
 logOut: Log out
 markdownHelp: MarkDown help
@@ -128,6 +131,7 @@ resendActivationEmailMessage: 'You can sign up again with the same E-mail addres
 resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
 reset: Reset
+restoreDefaults: Restore defaults
 save: Save
 selectImage: Select image
 sendAnEmail: Send an E-mail
@@ -176,3 +180,10 @@ youAreAPatron: You are a patron
 youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in
 yourRights: Your rights
+thanksForYourSupport: Thanks for your support
+copy: Copy
+copiedToClipboard: Copied to clipboard
+gist: Gist
+exportGist: Export gist
+exportDraft: Export draft
+exportTiledPDF: Export tiled PDF

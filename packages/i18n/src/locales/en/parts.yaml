@@ -1,32 +1,32 @@
 back: Back
 backBase: Back base
 base: Base
+buttonholePlacket: Buttonhole placket
+buttonPlacket: Button placket
+collar: Collar
+collarStand: Collar stand
 cuff: Cuff
 frontBase: Front base
 front: Front
+frontLeft: Front left
+frontRight: Front right
 hoodCenter: Hood center
 hoodSide: Hood side
-pocketFacing: Pocket facing
-pocket: Pocket
-sleeveBase: Sleeve base
-sleevecap: Sleevecap
-sleeve: Sleeve
-waistband: Waistband
-side: Side
 inset: Inset
-panels: Panels
 panel1: Panel 1
 panel2: Panel 2
 panel3: Panel 3
 panel4: Panel 4
 panel5: Panel 5
 panel6: Panel 6
+panels: Panels
+pocketFacing: Pocket facing
+pocket: Pocket
+side: Side
+sleeveBase: Sleeve base
+sleevecap: Sleevecap
 sleevePlacketOverlap: Sleeve placket overlap
 sleevePlacketUnderlap: Sleeve placket underlap
-collar: Collar
-collarStand: Collar stand
-frontRight: Front right
-frontLeft: Front left
-buttonPlacket: Button placket
-buttonholePlacket: Buttonhole placket
+sleeve: Sleeve
+waistband: Waistband
 yoke: Yoke

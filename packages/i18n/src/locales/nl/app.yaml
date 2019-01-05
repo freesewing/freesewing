@@ -4,6 +4,7 @@
 aboutFreesewing: Over Freesewing
 account: Account
 accountCreated: Account aangemaakt
+actions: Acties
 andThatIsAwesome: En dat is geweldig
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
@@ -48,14 +49,15 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
-draftOptions: Teken opties
 draftPatternForModel: 'Teken {pattern} voor {model}'
 draftPattern: 'Teken {pattern}'
+draftSettings: Instellingen patroontekening
 drafts: Patroontekeningen
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
 emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
+export: Exporteren
 faq: Vaak gestelde vragen
 fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
@@ -76,6 +78,7 @@ imperialUnits: Imperiale (Engelse) eenheden (duim)
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
 justAMoment: Een ogenblikje
+layout: Layout
 logIn: Aanmelden
 logOut: Afmelden
 markdownHelp: MarkDown hulp
@@ -128,6 +131,7 @@ resendActivationEmailMessage: 'Je kan je weer inschrijven met hetzelfde email ad
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
+restoreDefaults: Standaardwaarden herstellen
 save: Opslaan
 selectImage: Selecteer afbeelding
 sendAnEmail: Stuur een email
@@ -152,7 +156,7 @@ troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
 txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze sponsors
 txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
-txt-tier2: Onze meest democratisch geprijsde optie. Het is misschien minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
+txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
 txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
@@ -176,3 +180,11 @@ youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
+thanksForYourSupport: Bedankt voor je steun
+copy: Kopiëren
+copiedToClipboard: Gekopieerd naar het klembord
+gist: Essentie
+exportGist: Essentie exporteren
+exportDraft: Patroontekening exporteren
+exportTiledPDF: Gepagineerde PDF exporteren
+

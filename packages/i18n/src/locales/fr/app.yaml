@@ -4,6 +4,7 @@
 aboutFreesewing: À propos de Freesewing
 account: Compte
 accountCreated: Compte créé
+actions: Actions
 andThatIsAwesome: Et c'est génial
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
@@ -48,14 +49,15 @@ documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
-draftOptions: Options de l'ébauche
 draftPattern: 'Ébauche de {pattern}'
 draftPatternForModel: 'Ebauche de {pattern} pour {model}'
 drafts: Ébauches
+draftSettings: Réglages de l'ébauche
 dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
 emailAddress: Adresse mail
 emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
+export: Exporter
 faq: Questions fréquemment posées
 fieldRemoved: "{field} enlevé"
 fieldSaved: "{field} enregistré"
@@ -76,6 +78,7 @@ imperialUnits: Unités impériales (pouces)
 instagram: Instagram
 invalidTldMessage: '.{tld} n''est pas un TLD valide'
 justAMoment: Juste un instant
+layout: Mis en page
 logIn: Connexion
 logOut: Déconnexion
 markdownHelp: Aide de MarkDown
@@ -128,6 +131,7 @@ resendActivationEmailMessage: Enregistrez-vous de nouveau avec la même adresse 
 resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
+restoreDefaults: Restaurer les valeurs par défaut
 save: Sauvegarder
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
@@ -175,4 +179,11 @@ yes: Oui
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
+thanksForYourSupport: Merci pour votre soutien
 yourRights: Vos droits
+copy: Copier
+copiedToClipboard: Copié dans le presse-papier
+gist: L'essentiel
+exportGist: Exporter l'essentiel
+exportDraft: Exporter l'ébauche
+exportTiledPDF: Exporter un PDF paginé

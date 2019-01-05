@@ -4,6 +4,7 @@
 aboutFreesewing: Acerca de Freesewing
 accountCreated: cuenta creada
 account: Cuenta
+actions: Acciones
 andThatIsAwesome: Y eso es genial
 back: atras
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
@@ -48,14 +49,15 @@ documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
-draftOptions: Opciones del boceto
 draftPatternForModel: 'Trazar {pattern} para {model} '
 draftPattern: 'Trazar {pattern} '
 drafts: Bocetos
+draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
 emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
+export: Exportar
 faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
@@ -76,6 +78,7 @@ imperialUnits: Unidades imperiales (pulgadas)
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
 justAMoment: Un momento
+layout: Diseño
 logIn: Iniciar sesión
 logOut: cerrar sesión
 markdownHelp: Markdown ayuda
@@ -128,6 +131,7 @@ resendActivationEmailMessage: 'Puedes iniciar sesión de nuevo con la misma dire
 resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
+restoreDefaults: Restaurar valores por defecto
 save: Guardar
 selectImage: Seleccionar imagen
 sendAnEmail: Enviar un correo electrónico
@@ -175,4 +179,12 @@ yes: Sí
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn:  No has iniciado sesión
+thanksForYourSupport: Gracias por su apoyo
 yourRights: Tus derechos
+copy: Dupdo
+copiedToClipboard: Copiado al portapapeles
+gist: Esencia
+exportGist: Exportar esencia
+exportDraft: Exportar boceto
+exportTiledPDF: Exportar PDF paginado
+
