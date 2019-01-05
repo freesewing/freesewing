@@ -79,29 +79,5 @@ app.post("/api", async (req, res) => {
 		}
 	});
 });
-    let cmd;
-    if(fields.size === "full") { // Do not tile
-      let target = `/tmp/pattern.${fields.format}`;
-      cmd = `/usr/bin/inkscape --export-${fields.format}=${target} ${upload}`;
-      shellExec(cmd).then(() => {
-        return res.sendFile(target);
-      });
-    } else { // Do tile
-      let untiled = "/tmp/untiled.ps";
-      let tiled = "/tmp/tiled.ps";
-      cmd = `/usr/bin/inkscape --export-ps=${untiled} ${upload}`;
-      shellExec(cmd).then(() => {
-        cmd = `/usr/local/bin/tile -a -m${fields.size} -s1 -t"On-demand tiler" ${untiled} > ${tiled}`;
-        shellExec(cmd).then(() => {
-          if(fields.format === "ps") return res.sendFile(tiled);
-          cmd = `/usr/bin/ps2pdf14 ${tiled} ${tiled}.pdf`;
-          shellExec(cmd).then(() => {
-            return res.sendFile(tiled+'.pdf');
-          });
-        });
-      });
-    }
-  });
-});
 
 app.listen(port, err => { console.log(`> listening on port ${port}`) });
