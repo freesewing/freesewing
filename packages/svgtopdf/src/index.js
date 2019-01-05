@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import bodyParser from "body-parser";
 import path from "path";
 import fs from "fs";
 import formidable from "formidable";
@@ -7,6 +8,7 @@ import shellExec from "shell-exec";
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
 const port = process.env.PORT || 4000;
 const formats = ['pdf','ps'];
 const sizes = ['full', 'a4','a3','a2','a1','a0','letter','tabloid'];
@@ -47,9 +49,9 @@ app.post("/", async (req, res) => {
 
 app.post("/api", async (req, res) => {
   if(
-    typeof req.svg === "undefined" ||
-    typeof req.format === "undefined" ||
-    typeof req.size === "undefined")
+    typeof req.body.svg === "undefined" ||
+    typeof req.body.format === "undefined" ||
+    typeof req.body.size === "undefined")
     return res.sendStatus(400);
 
   // Save svg to disk
