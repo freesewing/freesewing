@@ -62,10 +62,11 @@ app.post("/api", async (req, res) => {
   	if(err) return res.sendStatus(500);
   	let cmd;
   	if(req.body.size === "full") { // Do not tile
-  	  let target = "/tmp/pattern.pdf";
+  	  let dir = createTempDir();
+      let target = "/fs/storage/tmp/"+dir+"/pattern-full.pdf";
   	  cmd = "/usr/bin/inkscape --export-pdf="+target+" /tmp/draft.svg";
   	  shellExec(cmd).then(() => {
-  	    return res.sendFile(target);
+  	    return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-full.pdf"});
   	  });
   	} else { // Do tile
     	let untiled = "/tmp/untiled.ps";
@@ -84,5 +85,28 @@ app.post("/api", async (req, res) => {
 		}
 	});
 });
+
+
+const createTempDir = () => {
+  let dir = newDir();
+  let path = "/fs/storage/tmp/"+dir;
+  fs.mkdir(path, {recursive: true}, (err) => {
+    if(err) {
+      log.error("mkdirFailed", err);
+      path = false;
+    }
+  });
+
+  return dir;
+}
+
+const newDir = (length = 10) => {
+	let dir = "";
+  let possible = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < length; i++)
+    dir += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return dir;
+}
 
 app.listen(port, err => { console.log(`> listening on port ${port}`) });
