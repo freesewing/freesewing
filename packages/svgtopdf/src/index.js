@@ -56,29 +56,30 @@ app.post("/api", async (req, res) => {
     sizes.indexOf(req.body.size) === -1
   )
     return res.sendStatus(400);
-
+  let storage = "/fs/storage/tmp/";
+  let dir = createTempDir(storage);
+  let svg = storage+dir+"/draft.svg";
+  let cmd = "";
   // Save svg to disk
-  fs.writeFile("/tmp/draft.svg", req.body.svg, err => {
+  fs.writeFile(svg, req.body.svg, err => {
   	if(err) return res.sendStatus(500);
-  	let cmd;
+    let target = storage+dir+"/pattern-"+req.body.size+".pdf";
   	if(req.body.size === "full") { // Do not tile
-  	  let dir = createTempDir();
-      let target = "/fs/storage/tmp/"+dir+"/pattern-full.pdf";
-  	  cmd = "/usr/bin/inkscape --export-pdf="+target+" /tmp/draft.svg";
+  	  cmd = "/usr/bin/inkscape --export-pdf="+target+" "+svg;
   	  shellExec(cmd).then(() => {
   	    return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-full.pdf"});
   	  });
   	} else { // Do tile
-    	let untiled = "/tmp/untiled.ps";
-    	let tiled = "/tmp/tiled.ps";
-    	cmd = `/usr/bin/inkscape --export-ps=${untiled} /tmp/draft.svg`;
+    	let untiled = storage+dir+"/untiled.ps";
+    	let tiled = storage+dir+"/tiled.ps";
+    	cmd = `/usr/bin/inkscape --export-ps=${untiled} ${svg}`;
     	shellExec(cmd).then(() => {
-    	  cmd = `/usr/local/bin/tile -a -m${req.size} -s1 -t"On-demand tiler" ${untiled} > ${tiled}`;
+    	  cmd = `/usr/local/bin/tile -a -m${req.size} -s1 -t"freesewing.org" ${untiled} > ${tiled}`;
+      console.log('tile cmd', cmd);
     	  shellExec(cmd).then(() => {
-    	    if(req.format === "ps") return res.sendFile(tiled);
-    	    cmd = `/usr/bin/ps2pdf14 ${tiled} ${tiled}.pdf`;
+    	    cmd = `/usr/bin/ps2pdf14 ${tiled} ${target}`;
     	    shellExec(cmd).then(() => {
-    	      return res.sendFile(tiled+'.pdf');
+  	        return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-"+req.body.size+".pdf"});
     	    });
     	  });
   		});
@@ -87,14 +88,11 @@ app.post("/api", async (req, res) => {
 });
 
 
-const createTempDir = () => {
+const createTempDir = (folder) => {
   let dir = newDir();
-  let path = "/fs/storage/tmp/"+dir;
+  let path = folder+dir;
   fs.mkdir(path, {recursive: true}, (err) => {
-    if(err) {
-      log.error("mkdirFailed", err);
-      path = false;
-    }
+    if(err) console.log("mkdirFailed", err);
   });
 
   return dir;
