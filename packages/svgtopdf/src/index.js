@@ -62,7 +62,10 @@ app.post("/api", async (req, res) => {
   let cmd = "";
   // Save svg to disk
   fs.writeFile(svg, req.body.svg, err => {
-  	if(err) return res.sendStatus(500);
+  	if(err) {
+      console.log(err);
+      return res.sendStatus(500);
+      }
     let target = storage+dir+"/pattern-"+req.body.size+".pdf";
   	if(req.body.size === "full") { // Do not tile
   	  cmd = "/usr/bin/inkscape --export-pdf="+target+" "+svg;
@@ -74,7 +77,7 @@ app.post("/api", async (req, res) => {
     	let tiled = storage+dir+"/tiled.ps";
     	cmd = `/usr/bin/inkscape --export-ps=${untiled} ${svg}`;
     	shellExec(cmd).then(() => {
-    	  cmd = `/usr/local/bin/tile -a -m${req.size} -s1 -t"freesewing.org" ${untiled} > ${tiled}`;
+    	  cmd = `/usr/local/bin/tile -a -m${req.body.size} -s1 -t"freesewing.org" ${untiled} > ${tiled}`;
       console.log('tile cmd', cmd);
     	  shellExec(cmd).then(() => {
     	    cmd = `/usr/bin/ps2pdf14 ${tiled} ${target}`;
@@ -91,7 +94,7 @@ app.post("/api", async (req, res) => {
 const createTempDir = (folder) => {
   let dir = newDir();
   let path = folder+dir;
-  fs.mkdir(path, {recursive: true}, (err) => {
+  fs.mkdirSync(path, {recursive: true}, (err) => {
     if(err) console.log("mkdirFailed", err);
   });
 
