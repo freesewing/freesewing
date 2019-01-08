@@ -1,4 +1,4 @@
-import { User, Confirmation, Model } from "../models";
+import { User, Confirmation, Model, Draft } from "../models";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
 import { log, email } from "../utils";
@@ -34,7 +34,12 @@ UserController.prototype.login = function (req, res) {
         Model.find({user: user.handle}, (err, modelList) => {
           if(err) return res.sendStatus(400);
           for ( let model of modelList ) models[model.handle] = model;
-          user.updateLoginTime(() => res.send({account, models, token}));
+          let drafts = {};
+          Draft.find({user: user.handle}, (err, draftList) => {
+            if(err) return res.sendStatus(400);
+            for ( let draft of draftList ) drafts[draft.handle] = draft;
+            user.updateLoginTime(() => res.send({account, models, token}));
+          });
         });
       } else {
         log.warning('wrongPassword', { user, req });
@@ -92,7 +97,12 @@ UserController.prototype.readAccount = (req, res) => {
       Model.find({user: user.handle}, (err, modelList) => {
         if(err) return res.sendStatus(400);
         for ( let model of modelList ) models[model.handle] = model;
-        res.send({account: user.account(), models});
+        const drafts ={};
+        Draft.find({user: user.handle}, (err, draftList) => {
+          if(err) return res.sendStatus(400);
+          for ( let draft of draftList ) drafts[draft.handle] = draft;
+          res.send({account: user.account(), models, drafts});
+        });
       });
     } else {
       return res.sendStatus(400);

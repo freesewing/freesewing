@@ -1,6 +1,8 @@
-import draft from "../controllers/draft";
+import Controller from "../controllers/draft";
 
-export default (app) => {
+const Draft = new Controller();
+
+export default (app, passport) => {
 
 /**********************************************
  *                                            *
@@ -8,8 +10,8 @@ export default (app) => {
  *                                            *
  *********************************************/
 
-  // Load shared draft
-  app.get('/shared/draft/:handle', draft.readShared);
+  // Load shared draft/gist
+  app.get('/gist/:handle', Draft.readGist);
 
 
 /**********************************************
@@ -20,10 +22,17 @@ export default (app) => {
 
   /* CRUD endpoints */
 
-  app.post('/draft', draft.create); // Create
-  app.get('/draft/:handle', draft.read); // Read
-  app.put('/draft/:handle', draft.update); // Update
-  app.delete('/draft/:handle', draft.delete); // Delete
+  app.post('/draft', passport.authenticate('jwt', { session: false }), Draft.create); // Create
+  app.get('/draft/:handle', passport.authenticate('jwt', { session: false }), Draft.read); // Read
+  app.put('/draft/:handle', passport.authenticate('jwt', { session: false }), Draft.update); // Update
+  app.delete('/draft/:handle', passport.authenticate('jwt', { session: false }), Draft.delete); // Delete
+
+  // Delete multiple
+  app.post(
+    '/remove/drafts',
+    passport.authenticate('jwt', {session: false }),
+    Draft.deleteMultiple
+  );
 }
 
 

@@ -48,32 +48,6 @@ ModelController.prototype.update = (req, res) => {
         ...model.measurements,
         ...data.measurements
       };
-    // Below are async ops, need to watch out when to save
-/*
-    if(typeof data.newPassword === 'string' && typeof data.currentPassword === 'string') {
-      user.verifyPassword(data.currentPassword, (err, valid) => {
-        if (err) return res.sendStatus(400);
-        else {
-          if (!valid) return res.sendStatus(403);
-          user.password = data.newPassword;
-          return saveAndReturnAccount(res, user);
-        }
-      });
-    }
-
-    // Image upload is a bit different
-    else if(req.headers['content-type'].indexOf("multipart/form-data;") !== -1) {
-      let type, form;
-      form = new formidable.IncomingForm();
-      form.parse(req, (err, fields, files) => {
-        saveAvatar(files.picture, user.handle);
-        user.picture = user.handle+"."+imageType(files.picture.type);
-        return saveAndReturnModel(res, model);
-        })
-    }
-
-    else return saveAndReturnModel(res, model);
-    */
       return saveAndReturnModel(res, model);
     });
   });
