@@ -2,6 +2,8 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
+aboutGist1: Un résumé contient toutes les informations nécessaires pour dessiner un rédiger un ébauche.
+aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
 account: Compte
 accountCreated: Compte créé
 actions: Actions
@@ -14,6 +16,7 @@ browseBlogposts: Parcourir les articles du blog
 browsePatterns: Parcourir les patrons
 browseShowcases: Parcourir la galerie
 butThatCouldChange: Mais cela pourrait changer
+cancel: Annuler
 changeModel: Changer le modèle
 changePattern: Changer le patron
 chatOnGitter: Chatter sur Gitter
@@ -23,6 +26,7 @@ chest: Poitrine
 chooseAModel: Choisir un modèle
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
+clearGist: Effacer le résumé
 close: Fermer
 colourYes: "Image couleur: le contenu est disponible en français"
 community: Communauté
@@ -51,6 +55,7 @@ documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
+draft: Ébauche
 draftPattern: 'Ébauche de {pattern}'
 draftPatternForModel: 'Ebauche de {pattern} pour {model}'
 drafts: Ébauches
@@ -61,7 +66,7 @@ emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adress
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 exportDraft: Exporter l'ébauche
 export: Exporter
-exportGist: Exporter l'essentiel
+exportGist: Exporter le résumé
 exportTiledPDF: Exporter un PDF paginé
 faq: Questions fréquemment posées
 fieldRemoved: "{field} enlevé"
@@ -70,7 +75,7 @@ filterPatterns: Filtrez les patrons
 forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
-gist: L'essentiel
+gist: Résumé
 github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
@@ -90,12 +95,14 @@ logOut: Déconnexion
 markdownHelp: Aide de MarkDown
 measurements: Mensurations
 menu: Menu
+metadata: Métadonnées
 metricUnits: Unités métriques (cm)
 model: Modèle
 models: Modèles
 monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
 nameInfo: Un nom aide à séparer les choses. Vous pouvez choisir n'importe quel nom.
 name: Nom
+newDraftFromGist: Nouveau ébauche a partir d'un résumé
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
 noChanges: Pas de changement
@@ -138,12 +145,14 @@ resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
+saveDraftToYourAccount: "Enregistrer l'ébauche sur votre compte"
 save: Sauvegarder
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
 settings: Paramètres
 sewingHelp: Aide de couture
 sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
+share: Partager
 showcase: Galerie
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
@@ -169,6 +178,7 @@ txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez
 txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales. Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
+update: Mettre à jour
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
 users: Utilisateurs
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation

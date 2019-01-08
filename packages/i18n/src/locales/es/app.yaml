@@ -2,6 +2,8 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
+aboutGist1: Un esencia contiene toda la información requerida para redactar un patrón.
+aboutGist2: Puede copiar / pegar una esencia existente aquí para usarla como punto de partida para su propio boceto.
 accountCreated: cuenta creada
 account: Cuenta
 actions: Acciones
@@ -14,6 +16,7 @@ browseBlogposts: Navegar por les publicaciones del blog
 browsePatterns: Navegar por les patrones
 browseShowcases: Navegar por las escaparates
 butThatCouldChange: Pero eso podría cambiar
+cancel: Cancelar
 changeModel: Cambiar modelo
 changePattern: Cambiar patrón
 chatOnGitter: Chatea en Gitter
@@ -23,6 +26,7 @@ chest: Pecho
 chooseAModel: Elige un modelo
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
+clearGist: Borrar esencia
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
 community: Comunidad
@@ -51,6 +55,7 @@ documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
+draft: Boceto
 draftPatternForModel: 'Trazar {pattern} para {model} '
 draftPattern: 'Trazar {pattern} '
 drafts: Bocetos
@@ -90,12 +95,14 @@ logOut: cerrar sesión
 markdownHelp: Markdown ayuda
 measurements: Medidas
 menu: Menú
+metadata: Metadatos
 metricUnits: Unidades métricas (cm)
 model: Modelo
 models: Modelos
 monochromeNo: "Imagen monocroma: el contenido no está disponible en español."
 nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
 name: Nombre
+newDraftFromGist: Nuevo patrón de la esencia
 newDraft: Nuevo boceto
 newModel: Nuevo modelo
 noChanges: No hay cambios
@@ -138,12 +145,14 @@ resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
 restoreDefaults: Restaurar valores por defecto
+saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
 selectImage: Seleccionar imagen
 sendAnEmail: Enviar un correo electrónico
 settings: Ajustes
 sewingHelp: Ayuda de costura
 sewingPatternsForNonAveragePeople: Patrones de costura para personas no promedio
+share: Compartir
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
@@ -168,6 +177,7 @@ txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado b
 txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
 txt-tiers: "Freesewing está financiado por un modelo de suscripción voluntaria con cuatro niveles:"
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
+update: Actualizar
 updated: Actualizado
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 users: Userios

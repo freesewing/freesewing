@@ -2,6 +2,8 @@
 100PercentFree: 100% free
 100PercentOpenSource: 100% open source
 aboutFreesewing: About Freesewing
+aboutGist1: A gist contains all the information required to draft a pattern.
+aboutGist2: You can copy/paste an existing gist here to use it as a starting point for your own draft.
 account: Account
 accountCreated: Account created
 actions: Actions
@@ -14,6 +16,7 @@ browseBlogposts: Browse blogposts
 browsePatterns: Browse patterns
 browseShowcases: Browse showcases
 butThatCouldChange: But that could change
+cancel: Cancel
 changeModel: Change model
 changePattern: Change pattern
 chatOnGitter: Chat on Gitter
@@ -23,6 +26,7 @@ chestInfo: Breasts require extra measurements. If your model has no breasts, irr
 chooseAModel: Choose a model
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
+clearGist: Clear gist
 close: Close
 colourYes: "Colour picture: Content is available in English"
 community: Community
@@ -51,6 +55,7 @@ documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
 download: Download
+draft: Draft
 draftPattern: 'Draft {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
@@ -90,12 +95,14 @@ logOut: Log out
 markdownHelp: MarkDown help
 measurements: Measurements
 menu: Menu
+metadata: Metadata
 metricUnits: Metric units (cm)
 model: Model
 models: Models
 monochromeNo: "Monochrome picture: Content is not availabel in English"
 nameInfo: A name helps to keep things apart. You can pick any name you want.
 name: Name
+newDraftFromGist: New draft from gist
 newDraft: New draft
 newModel: New model
 noChanges: No changes
@@ -138,12 +145,14 @@ resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
 reset: Reset
 restoreDefaults: Restore defaults
+saveDraftToYourAccount: Save draft to your account
 save: Save
 selectImage: Select image
 sendAnEmail: Send an E-mail
 settings: Settings
 sewingHelp: Sewing help
 sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
+share: Share
 showcase: Showcase
 signUpForAFreeAccount: Sign up for a free account
 signUp: Sign up
@@ -169,6 +178,7 @@ txt-tier8: "If you don't merely want to support us, but want to see freesewing t
 txt-tiers: "Freesewing is funded by a voluntary subscription model with four tiers:"
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
+update: Update
 userHasBeenWithUsSince: '{user} has been with us since {since}'
 users: Users
 weAreValidatingYourConfirmationCode: We are validating your confirmation code

@@ -2,6 +2,8 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
 aboutFreesewing: Over Freesewing
+aboutGist1: Een resumé bevat alle informatie die nodig is om een patroon te tekenen.
+aboutGist2: Je kan een bestaande resumé kopiëren en plakken om als basis te dienen voor je eigen patroontekening.
 account: Account
 accountCreated: Account aangemaakt
 actions: Acties
@@ -14,6 +16,7 @@ browseBlogposts: Bekijk de blogposts
 browsePatterns: Bekijk de patronen
 browseShowcases: Bekijk de voorbeelden
 butThatCouldChange: Maar dat kan veranderen
+cancel: Annuleren
 changeModel: Ander model
 changePattern: Ander patroon
 chatOnGitter: Chat via Gitter
@@ -23,6 +26,7 @@ chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, wor
 chooseAModel: Kies een model
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
+clearGist: Resumé wissen
 close: Sluiten
 colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
@@ -51,6 +55,7 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
+draft: Patroontekening
 draftPatternForModel: 'Teken {pattern} voor {model}'
 draftPattern: 'Teken {pattern}'
 draftSettings: Instellingen patroontekening
@@ -61,7 +66,7 @@ emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 exportDraft: Patroontekening exporteren
 export: Exporteren
-exportGist: Essentie exporteren
+exportGist: Resumé exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
 faq: Vaak gestelde vragen
 fieldRemoved: "{field} verwijderd"
@@ -70,7 +75,7 @@ filterPatterns: Patronen filteren
 forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing op GitHub
-gist: Essentie
+gist: Resumé
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Goed gedaan
@@ -90,12 +95,14 @@ logOut: Afmelden
 markdownHelp: MarkDown hulp
 measurements: Maten
 menu: Menu
+metadata: Metadata
 metricUnits: Metrische eenheden (cm)
 model: Model
 models: Modellen
 monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
 nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
+newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
 noChanges: Geen wijzigingen
@@ -138,12 +145,14 @@ resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
 restoreDefaults: Standaardwaarden herstellen
+saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
 selectImage: Selecteer afbeelding
 sendAnEmail: Stuur een email
 settings: Instellingen
 sewingHelp: Naai hulp
 sewingPatternsForNonAveragePeople: Naaipatronen voor niet-gemiddelde mensen
+share: Delen
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
@@ -168,6 +177,7 @@ txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde free
 txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
 txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
 unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
+update: Bijwerken
 updated: Bijgewerkt
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
