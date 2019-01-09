@@ -1,5 +1,9 @@
 import { User, Model } from "../models";
 import { log } from "../utils";
+import fs from "fs";
+import path from "path";
+import config from "../config";
+import sharp from "sharp";
 
 function ModelController() { }
 
@@ -48,12 +52,40 @@ ModelController.prototype.update = (req, res) => {
         ...model.measurements,
         ...data.measurements
       };
+      if(typeof data.picture !== "undefined") {
+        let type = imageType(data.picture);
+        saveAvatar(data.picture, model.handle, type);
+        model.picture = model.handle+"."+type;
+      }
+
       return saveAndReturnModel(res, model);
     });
   });
 }
 
 ModelController.prototype.delete =  function (req, res) { }
+
+function imageType(uri) {
+  let type = uri.split(';').shift();
+  type = type.split('/').pop();
+
+  return type;
+}
+
+function saveAvatar(picture, handle, type) {
+  let b64 = picture.split(';base64,').pop();
+  fs.mkdir(userStoragePath(handle)+"/models", {recursive: true}, (err) => {
+      if(err) log.error("mkdirFailed", err);
+      let imgBuffer =  Buffer.from(b64, 'base64');
+      for(let size of Object.keys(config.avatar.sizes)) {
+        sharp(imgBuffer)
+          .resize(config.avatar.sizes[size], config.avatar.sizes[size])
+          .toFile(avatarPath(size, handle, type), (err, info) => {
+            if(err) log.error("avatarNotSaved", err);
+          });
+      }
+    });
+}
 
 function saveAndReturnModel(res,model) {
   model.save(function (err, updatedModel) {
@@ -63,6 +95,20 @@ function saveAndReturnModel(res,model) {
     }
     return res.send({ model: updatedModel.info() });
   })
+}
+
+function avatarPath(size, handle, ext, type="user") {
+ let dir = userStoragePath(handle);
+ if(type === "model") dir += "/models";
+ if(size === "l") return path.join(dir, handle+"."+ext);
+ else return path.join(dir, size+"-"+handle+"."+ext);
+}
+
+function userStoragePath(handle) {
+  return path.join(
+      config.storage,
+      handle.substring(0,1),
+      handle);
 }
 
 

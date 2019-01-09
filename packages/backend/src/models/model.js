@@ -1,4 +1,6 @@
 import mongoose, { Schema } from "mongoose";
+import config from "../config";
+import path from "path";
 
 const ModelSchema = new Schema({
   handle: {
@@ -70,7 +72,29 @@ const ModelSchema = new Schema({
 ModelSchema.index({ user: 1 , handle: 1});
 
 ModelSchema.methods.info = function() {
-  return this.toObject();
+  let model = this.toObject();
+  model.pictureUris = {
+    l: this.avatarUri(),
+    m: this.avatarUri("m"),
+    s: this.avatarUri("s"),
+    xs: this.avatarUri("xs"),
+  }
+
+  return model;
 }
+
+ModelSchema.methods.avatarUri = function(size = "l") {
+  let prefix = (size === "l") ? "" : size+"-";
+  return config.static
+    +"/"
+    +this.handle.substring(0,1)
+    +"/"
+    +this.handle
+    +"/"
+    +"models/"
+    +prefix
+    +this.picture;
+}
+
 
 export default mongoose.model('Model', ModelSchema);
