@@ -39,3 +39,5 @@ export const patternInfo = info;
 export const measurementList = list.filter(function(value, index, self) {
   return self.indexOf(value) === index;
 });
+
+export const measurementsForBreasts = ["underbust"];
