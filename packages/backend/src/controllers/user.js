@@ -143,6 +143,11 @@ UserController.prototype.update = (req, res) => {
         ...data.consent
       }
     }
+    if(typeof data.avatar !== "undefined") {
+      let type = imageTypeFromDataUri(data.avatar);
+      saveAvatar(data.avatar, user.handle, type);
+      user.avatar = user.handle+"."+type;
+    }
 
     // Below are async ops, need to watch out when to save
 
@@ -155,17 +160,6 @@ UserController.prototype.update = (req, res) => {
           return saveAndReturnAccount(res, user);
         }
       });
-    }
-
-    // Image upload is a bit different
-    else if(req.headers['content-type'].indexOf("multipart/form-data;") !== -1) {
-      let type, form;
-      form = new formidable.IncomingForm();
-      form.parse(req, (err, fields, files) => {
-        saveAvatar(files.picture, user.handle);
-        user.picture = user.handle+"."+imageType(files.picture.type);
-        return saveAndReturnAccount(res, user);
-        })
     }
 
     // Email change requires confirmation
@@ -204,6 +198,14 @@ UserController.prototype.update = (req, res) => {
   });
 }
 
+function imageTypeFromDataUri(uri) {
+  let type = uri.split(';').shift();
+  type = type.split('/').pop();
+
+  return type;
+}
+
+
 function saveAndReturnAccount(res,user) {
   user.save(function (err, updatedUser) {
     if (err) {
@@ -214,17 +216,16 @@ function saveAndReturnAccount(res,user) {
   })
 }
 
-function saveAvatar(picture, handle) {
-    let type = imageType(picture.type);
-    let file = avatarPath("l", handle, type);
-    fs.mkdir(userStoragePath(handle), {recursive: true}, (err) => {
+function saveAvatar(picture, handle, type) {
+  let b64 = picture.split(';base64,').pop();
+  fs.mkdir(userStoragePath(handle), {recursive: true}, (err) => {
       if(err) log.error("mkdirFailed", err);
+      let imgBuffer =  Buffer.from(b64, 'base64');
       for(let size of Object.keys(config.avatar.sizes)) {
-        sharp(picture.path)
+        sharp(imgBuffer)
           .resize(config.avatar.sizes[size], config.avatar.sizes[size])
           .toFile(avatarPath(size, handle, type), (err, info) => {
             if(err) log.error("avatarNotSaved", err);
-            //else log.info("avatarSaved", info);
           });
       }
     });
