@@ -32,5 +32,12 @@ export default {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
 
+  },
+  authentication: {
+    github: {
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      callback: "http://localhost:3000/callback/from/github"
+    }
   }
 }

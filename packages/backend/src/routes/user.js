@@ -84,6 +84,7 @@ app.get('/remove', passport.authenticate('jwt', { session: false }), User.remove
 
   // Check whether username is available
   app.post('/available/username', passport.authenticate('jwt', {session: false }), User.isUsernameAvailable); // Update
+
 }
 
 
