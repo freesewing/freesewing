@@ -86,11 +86,13 @@ home: Startpagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
 howToTakeMeasurements: Leer hoe je maten neemt
 imperialUnits: Imperiale (Engelse) eenheden (duim)
+info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
 justAMoment: Een ogenblikje
 layout: Layout
 logIn: Aanmelden
+loginWithProvider: 'Aanmelden met<br>{provider}'
 logOut: Afmelden
 markdownHelp: MarkDown hulp
 measurements: Maten
@@ -156,6 +158,7 @@ share: Delen
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
+signupWithProvider: 'Inschrijven met<br>{provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw

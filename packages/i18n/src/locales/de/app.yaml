@@ -86,11 +86,13 @@ home: Startseite
 howCanWeHelpYou: Wie können wir Dir helfen
 howToTakeMeasurements: Richtiges Maß nehmen
 imperialUnits: Imperiale Einheiten (cm)
+info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 justAMoment: Einen Moment bitte
 layout: Layout
 logIn: Anmelden
+loginWithProvider: 'Anmelden mit<br>{provider}'
 logOut: Abmelden
 markdownHelp: Markdown-Hilfe
 measurements: Maße
@@ -156,6 +158,7 @@ share: Teilen
 showcase: Showcase
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
+signupWithProvider: 'Registrieren mit<br>{provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen

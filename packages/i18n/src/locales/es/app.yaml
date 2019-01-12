@@ -86,11 +86,13 @@ home: Página principal
 howCanWeHelpYou: ¿Cómo podemos ayudarte?
 howToTakeMeasurements: Cómo tomar medidas
 imperialUnits: Unidades imperiales (pulgadas)
+info: Información
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
 justAMoment: Un momento
 layout: Diseño
 logIn: Iniciar sesión
+loginWithProvider: 'Inicia sesión con<br>{provider}'
 logOut: cerrar sesión
 markdownHelp: Markdown ayuda
 measurements: Medidas
@@ -156,6 +158,7 @@ share: Compartir
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
+signupWithProvider: 'Registrarse con<br>{provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo

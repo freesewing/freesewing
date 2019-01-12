@@ -86,11 +86,13 @@ home: Home
 howCanWeHelpYou: How can we help you?
 howToTakeMeasurements: How to take measurements
 imperialUnits: Imperial units (inch)
+info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is not a valid TLD'
 justAMoment: Just a moment
 layout: Layout
 logIn: Log in
+loginWithProvider: 'Log in with<br>{provider}'
 logOut: Log out
 markdownHelp: MarkDown help
 measurements: Measurements
@@ -156,6 +158,7 @@ share: Share
 showcase: Showcase
 signUpForAFreeAccount: Sign up for a free account
 signUp: Sign up
+signupWithProvider: 'Sign up with<br>{provider}'
 sortByField: Sort by {field}
 standardSeamAllowance: Standard seam allowance
 startOver: Start over
