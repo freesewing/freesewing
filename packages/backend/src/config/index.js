@@ -1,4 +1,5 @@
 export default {
+  api: process.env.FS_BACKEND,
   website: process.env.FS_SITE,
   static: process.env.FS_STATIC,
   storage: process.env.FS_STORAGE,
@@ -33,11 +34,18 @@ export default {
     pass: process.env.SMTP_PASS,
 
   },
-  authentication: {
+  oauth: {
     github: {
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callback: "http://localhost:3000/callback/from/github"
+      tokenUri: "https://github.com/login/oauth/access_token",
+      dataUri: "https://api.github.com/user"
+    },
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      tokenUri: "https://oauth2.googleapis.com/token",
+      dataUri: " https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
     }
   }
 }

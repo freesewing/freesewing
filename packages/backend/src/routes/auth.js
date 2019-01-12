@@ -10,24 +10,16 @@ export default (app, passport) => {
     Auth.initOauth
   );
 
+  // Signup callback from Oauth provider
+  app.get(
+    '/callback/from/:provider',
+    Auth.providerCallback
+  );
+
   // Login after Oauth
   app.post(
     '/oauth/login',
     Auth.loginOauth
-  );
-
-
-  // Signup via Github
-  app.get(
-    "/signup/with/github",
-    passport.authenticate('github', { failureRedirect: "/signup" }),
-    function(req, res) {}
-  );
-
-  // Signup callback from Github
-  app.get(
-    '/callback/from/github',
-    Auth.callbackFromGithub
   );
 
 }
