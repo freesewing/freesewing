@@ -13,7 +13,6 @@ export default {
     "shoulderSlope",
     "shoulderToShoulder",
     "hipsCircumference",
-    "shoulderToElbow",
     "shoulderToWrist",
     "wristCircumference"
   ],
@@ -121,7 +120,7 @@ export default {
     cuffEase: { pct: 20, min: 0, max: 30 },
     cuffLength: { pct: 10, min: 3, max: 15 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
-    hemCurve: { pct: 75, min: 25, max: 100 },
+    hemCurve: { pct: 50, min: 25, max: 100 },
     hipsEase: { pct: 8, min: -4, max: 20 },
     lengthBonus: { pct: 25, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },

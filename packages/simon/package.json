@@ -13,9 +13,8 @@
     "freesewing",
     "pattern",
     "sewing",
-    "womenswear",
-    "jumper",
-    "hoodie"
+    "shirt",
+    "menswear"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -48,12 +47,12 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "^0.22.2",
+    "@freesewing/brian": "^0.22.3",
     "@freesewing/plugin-banner": "0.2.0",
     "@freesewing/plugin-bundle": "^0.7.1",
     "@freesewing/plugin-buttons": "0.1.0",
     "@freesewing/plugin-flip": "0.1.1",
-    "freesewing": "^0.27.1"
+    "freesewing": "^0.28"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

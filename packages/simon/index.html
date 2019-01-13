@@ -58,13 +58,14 @@
           "naturalWaistToFloor": 1310,
           "naturalWaistToSeat": 280
         },
-        only: ["front", "frontLeft"],
+        //only: ["front", "frontLeft"],
         options: {
           extraTopButton: false,
           lengthBonus: 0.2,
           hemStyle: "slashed",
 
-        }
+        },
+        layout: false
       };
       var pattern = new freesewing.patterns.simon(settings);
       pattern.use(freesewing.plugins.theme);
@@ -74,7 +75,7 @@
       pattern.use(freesewing.plugins.debug);
       pattern.draft();
       document.getElementById("svg1").innerHTML = pattern.render();
-
+console.log(pattern);
       function pointHover(evt) {
         var point = evt.target;
         var id = point.id;
