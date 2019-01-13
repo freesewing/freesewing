@@ -4,12 +4,11 @@ import { version } from "../package.json";
 
 function Svg(pattern) {
   this.openGroups = [];
+  this.layout = {};
   this.freeId = 0;
   this.body = "";
   this.style = "";
   this.script = "";
-  this.header = "";
-  this.footer = "";
   this.defs = "";
   this.pattern = pattern; // Needed to expose pattern to hooks
   this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
@@ -52,39 +51,59 @@ Svg.prototype.debug = function() {};
 Svg.prototype.render = function(pattern) {
   this.idPrefix = pattern.settings.idPrefix;
   this.runHooks("preRender");
-  //this.preRender();
   if (!pattern.settings.embed) {
     this.attributes.add("width", pattern.width + "mm");
     this.attributes.add("height", pattern.height + "mm");
   }
   this.attributes.add("viewBox", `0 0 ${pattern.width} ${pattern.height}`);
-  this.svg = this.prefix;
-  this.svg += this.renderComments(this.header);
-  this.svg += this.renderSvgTag(pattern);
-  this.svg += this.renderStyle();
-  this.svg += this.renderScript();
-  this.svg += this.renderDefs();
-  this.svg += this.openGroup(this.idPrefix + "container");
+  this.head = this.renderHead();
+  this.tail = this.renderTail();
+  this.svg = "";
+  this.layout = {}; // Reset layout
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
     if (part.render && pattern.needs(partId)) {
+      let partSvg = this.renderPart(part);
+      this.layout[partId] = {
+        svg: partSvg,
+        transform: part.attributes.getAsArray("transform")
+      };
       this.svg += this.openGroup(
         `${this.idPrefix}part-${partId}`,
         part.attributes
       );
-      this.svg += this.renderPart(part);
+      this.svg += partSvg;
       this.svg += this.closeGroup();
     }
   }
-  this.svg += this.closeGroup();
-  this.svg += this.nl() + "</svg>";
-  this.svg += this.renderComments(this.footer);
+  this.svg =
+    this.prefix + this.renderSvgTag() + this.head + this.svg + this.tail;
   this.runHooks("postRender");
+
   return this.svg;
 };
 
+/** Renders SVG head section */
+Svg.prototype.renderHead = function() {
+  let svg = this.renderStyle();
+  svg += this.renderScript();
+  svg += this.renderDefs();
+  svg += this.openGroup(this.idPrefix + "container");
+
+  return svg;
+};
+
+/** Renders SVG closing section */
+Svg.prototype.renderTail = function() {
+  let svg = "";
+  svg += this.closeGroup();
+  svg += this.nl() + "</svg>";
+
+  return svg;
+};
+
 /** Returns SVG code for the opening SVG tag */
-Svg.prototype.renderSvgTag = function(pattern) {
+Svg.prototype.renderSvgTag = function() {
   let svg = "<svg";
   this.indent();
   svg += this.nl() + this.attributes.render();
@@ -124,13 +143,6 @@ Svg.prototype.renderDefs = function() {
   svg += this.nl() + "</defs>" + this.nl();
 
   return svg;
-};
-
-/** Returns SVG code for a comment block */
-Svg.prototype.renderComments = function(comments) {
-  return (
-    this.nl() + this.nl() + "<!--" + this.nl() + comments + this.nl() + "-->"
-  );
 };
 
 /** Returns SVG code for a Part object */

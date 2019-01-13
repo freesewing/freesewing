@@ -9,8 +9,8 @@ it("Pattern constructor should initialize object", () => {
       percentage: { pct: 30, min: 0, max: 100 }
     }
   });
-  expect(pattern.width).to.equal(false);
-  expect(pattern.height).to.equal(false);
+  expect(pattern.width).to.equal(0);
+  expect(pattern.height).to.equal(0);
   expect(pattern.settings.complete).to.equal(true);
   expect(pattern.parts).to.eql({});
   expect(pattern.settings.units).to.equal("metric");

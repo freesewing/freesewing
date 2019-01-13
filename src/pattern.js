@@ -11,8 +11,8 @@ import Attributes from "./attributes";
 
 export default function Pattern(config = { options: {} }) {
   this.config = config; // Pattern configuration
-  this.width = false; // Will be set after render
-  this.height = false; // Will be set after render
+  this.width = 0; // Will be set after render
+  this.height = 0; // Will be set after render
   this.is = ""; // Will be set when drafting/sampling
 
   this.store = new Store(); // Store for sharing data across parts
@@ -31,6 +31,7 @@ export default function Pattern(config = { options: {} }) {
     locale: "en",
     units: "metric",
     margin: 2,
+    layout: true,
     options: {}
   };
 
@@ -383,24 +384,28 @@ Pattern.prototype.pack = function() {
   for (let key in this.parts) {
     let part = this.parts[key];
     // Avoid multiple render calls to cause stacking of transforms
-    part.attributes.set("transform", "");
+    part.attributes.remove("transform");
     if (part.render && this.needs(key)) {
       part.stack();
-      bins.push({
-        id: key,
-        width: part.bottomRight.x - part.topLeft.x,
-        height: part.bottomRight.y - part.topLeft.y
-      });
+      let width = part.bottomRight.x - part.topLeft.x;
+      let height = part.bottomRight.y - part.topLeft.y;
+      if (this.settings.layout) bins.push({ id: key, width, height });
+      else {
+        if (this.width < width) this.width = width;
+        if (this.height < height) this.height = height;
+      }
     }
   }
-  let size = pack(bins, { inPlace: true });
-  for (let bin of bins) {
-    let part = this.parts[bin.id];
-    if (bin.x !== 0 || bin.y !== 0)
-      part.attr("transform", `translate (${bin.x}, ${bin.y})`);
+  if (this.settings.layout) {
+    let size = pack(bins, { inPlace: true });
+    for (let bin of bins) {
+      let part = this.parts[bin.id];
+      if (bin.x !== 0 || bin.y !== 0)
+        part.attr("transform", `translate (${bin.x}, ${bin.y})`);
+    }
+    this.width = size.width;
+    this.height = size.height;
   }
-  this.width = size.width;
-  this.height = size.height;
 
   return this;
 };

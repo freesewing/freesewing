@@ -15,9 +15,7 @@ it("Svg constructor should initialize object", () => {
   expect(svg.body).to.equal("");
   expect(svg.style).to.equal("");
   expect(svg.script).to.equal("");
-  expect(svg.header).to.equal("");
   expect(svg.defs).to.equal("");
-  expect(svg.footer).to.equal("");
   expect(svg.pattern).to.eql(pattern);
   expect(svg.prefix).to.equal(
     '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'

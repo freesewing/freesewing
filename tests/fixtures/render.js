@@ -1,11 +1,7 @@
 var version = require("../../package.json").version;
 
 var render = {
-  boilerplate: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+  boilerplate: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="0mm" height="0mm" viewBox="0 0 0 0"
 >
 <style type="text/css"> <![CDATA[
@@ -25,16 +21,8 @@ var render = {
 <g id="fs-container">
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  boilerplateNl: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  boilerplateNl: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="nl" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="0mm" height="0mm" viewBox="0 0 0 0"
 >
 <style type="text/css"> <![CDATA[
@@ -54,16 +42,8 @@ var render = {
 <g id="fs-container">
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  embed: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-    <!--
-
-    --><svg
+</svg>`,
+  embed: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" viewBox="0 0 0 0"
      >
      <style type="text/css"> <![CDATA[
@@ -83,16 +63,8 @@ var render = {
        <g id="fs-container">
        </g>
        <!-- end of group #fs-container -->
-       </svg>
-
-       <!--
-
-       -->`,
-  part: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+       </svg>`,
+  part: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
@@ -117,16 +89,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  path: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  path: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
@@ -152,16 +116,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  text: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  text: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
@@ -188,16 +144,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  circle: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  circle: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="104mm" height="104mm" viewBox="0 0 104 104"
 >
 <style type="text/css"> <![CDATA[
@@ -227,16 +175,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  multiText: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-    <!--
-
-    --><svg
+</svg>`,
+  multiText: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
@@ -263,16 +203,8 @@ var render = {
        <!-- end of group #fs-part-test -->
        </g>
        <!-- end of group #fs-container -->
-       </svg>
-
-       <!--
-
-       -->`,
-  multiTextDflt: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-    <!--
-
-    --><svg
+       </svg>`,
+  multiTextDflt: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
@@ -299,16 +231,8 @@ var render = {
        <!-- end of group #fs-part-test -->
        </g>
        <!-- end of group #fs-container -->
-       </svg>
-
-       <!--
-
-       -->`,
-  textOnPath: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+       </svg>`,
+  textOnPath: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
@@ -336,16 +260,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  textOnPathCenter: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  textOnPathCenter: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
@@ -373,16 +289,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  textOnPathRight: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  textOnPathRight: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
 >
 <style type="text/css"> <![CDATA[
@@ -410,16 +318,8 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`,
-  snippet: `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--
-
---><svg
+</svg>`,
+  snippet: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
@@ -445,11 +345,7 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
-</svg>
-
-<!--
-
--->`
+</svg>`
 };
 
 module.exports = render;
