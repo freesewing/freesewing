@@ -45,7 +45,7 @@ export default {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       tokenUri: "https://oauth2.googleapis.com/token",
-      dataUri: " https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
+      dataUri: "https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
     }
   }
 }
