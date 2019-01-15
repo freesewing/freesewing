@@ -35,38 +35,112 @@
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
       let settings = {
-        "embed": true,
-        "measurements": {
-          "bicepsCircumference": 335,
-          "centerBackNeckToWaist": 520,
-          "chestCircumference": 1080,
-          "hipsCircumference": 990,
-          "naturalWaist": 925,
-          "naturalWaistToHip": 145,
-          "neckCircumference": 420,
-          "shoulderSlope": 55,
-          "shoulderToElbow": 410,
-          "shoulderToShoulder": 465,
-          "shoulderToWrist": 680,
-          "wristCircumference": 190,
-          "seatCircumference": 1080,
-          "inseam": 910,
-          "seatDepth": 200,
-          "hipsToUpperLeg": 220,
-          "upperLegCircumference": 630,
-          "headCircumference": 590,
-          "naturalWaistToFloor": 1310,
-          "naturalWaistToSeat": 280
-        },
-        //only: ["front", "frontLeft"],
-        options: {
-          extraTopButton: false,
-          lengthBonus: 0.2,
-          hemStyle: "slashed",
-
-        },
-        layout: false
-      };
+    		"embed": true,
+    		"sa": 0,
+    		"complete": true,
+    		"paperless": false,
+    		"locale": "en",
+    		"units": "metric",
+    		"margin": 2,
+    		"measurements": {
+    		  "bicepsCircumference": 335,
+    		  "centerBackNeckToWaist": 520,
+    		  "chestCircumference": 1080,
+    		  "naturalWaist": 925,
+    		  "naturalWaistToHip": 145,
+    		  "neckCircumference": 420,
+    		  "shoulderSlope": 55,
+    		  "shoulderToShoulder": 465,
+    		  "hipsCircumference": 990,
+    		  "shoulderToWrist": 680,
+    		  "wristCircumference": 190
+    		},
+    		"options": {},
+    		"layout": {
+    		  "width": 1388.46,
+    		  "height": 925.02,
+    		  "parts": {
+    		    "back": {
+    		      "move": {
+    		        "x": 1094.9,
+    		        "y": -141.1
+    		      },
+              flipX: true
+    		    },
+    		    "frontRight": {
+    		      "move": {
+    		        "x": 676.7,
+    		        "y": 2
+    		      },
+              flipX: true
+    		    },
+    		    "frontLeft": {
+    		      "move": {
+    		        "x": 89.5,
+    		        "y": 2
+    		      }
+    		    },
+    		    "buttonPlacket": {
+    		      "move": {
+    		        "x": 1355.4,
+    		        "y": 715.2
+    		      }
+    		    },
+    		    "buttonholePlacket": {
+    		      "move": {
+    		        "x": 1359.4,
+    		        "y": 715.2
+    		      }
+    		    },
+    		    "yoke": {
+    		      "move": {
+    		        "x": 710.7,
+    		        "y": 623.1
+    		      }
+    		    },
+    		    "sleeve": {
+    		      "move": {
+    		        "x": 900.8,
+    		        "y": 170
+    		      },
+              flipX: true,
+              flipY: true,
+              rotate: 180
+    		    },
+    		    "collarStand": {
+    		      "move": {
+    		        "x": 663.6,
+    		        "y": 875.8
+    		      }
+    		    },
+    		    "collar": {
+    		      "move": {
+    		        "x": 217.4,
+    		        "y": 866
+    		      }
+    		    },
+    		    "sleevePlacketUnderlap": {
+    		      "move": {
+    		        "x": 1169.9,
+    		        "y": 870.7
+    		      },
+              rotate: 90
+    		    },
+    		    "sleevePlacketOverlap": {
+    		      "move": {
+    		        "x": 710.7,
+    		        "y": 793.7
+    		      }
+    		    },
+    		    "cuff": {
+    		      "move": {
+    		        "x": 1094.9,
+    		        "y": 715.2
+    		      }
+    		    }
+    		  }
+    		}
+			}
       var pattern = new freesewing.patterns.simon(settings);
       pattern.use(freesewing.plugins.theme);
       pattern.use(freesewing.plugins.designer);
