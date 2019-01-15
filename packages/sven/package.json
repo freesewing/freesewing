@@ -46,10 +46,10 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "^0.22.3",
+    "@freesewing/brian": "^0.22.4",
     "@freesewing/plugin-banner": "0.2.0",
     "@freesewing/plugin-bundle": "^0.7.1",
-    "freesewing": "^0.28"
+    "freesewing": "^0.29"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
