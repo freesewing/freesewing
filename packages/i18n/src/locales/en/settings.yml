@@ -25,3 +25,7 @@ margin:
 complete:
   title: Detail
   description: Controls how detailed the pattern is. Either a complete pattern with all details, or a basic outline of the pattern parts.
+
+layout:
+  title: Layout
+  description: Controls how the individual pattern parts are placed on your pattern.

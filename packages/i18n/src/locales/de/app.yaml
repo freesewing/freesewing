@@ -8,6 +8,8 @@ accountCreated: Account erstellt
 account: Konto
 actions: Aktions
 andThatIsAwesome: Und das ist großartig
+applyThisLayout: Wenden Sie dieses Layout an
+automatic: Automatisch
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
@@ -32,6 +34,7 @@ colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
 completeSignupText: "Bevor wir mit dem falschen Fuß beginnen, sollten wir sicherstellen, dass Ihr Konto richtig eingerichtet ist. Führen Sie einfach die folgenden Schritte aus:"
 completeSignupTitle: Vervollständigen Sie Ihre Anmeldung
+configureLayout: Layout konfigurieren
 configureYourDraft: Konfigurieren Sie Ihren Entwurf
 contactUs: Kontaktiere uns
 contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
@@ -94,6 +97,7 @@ layout: Layout
 logIn: Anmelden
 loginWithProvider: 'Anmelden mit<br>{provider}'
 logOut: Abmelden
+manual: Manuell
 markdownHelp: Markdown-Hilfe
 measurements: Maße
 menu: Menü
@@ -149,6 +153,7 @@ reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
+selectAPartToMoveMirrorOrRotate: Wählen Sie einen Bereich zum Verschieben, Spiegeln oder Drehen aus
 selectImage: Bild auswählen
 sendAnEmail: Eine E-Mail senden
 settings: Einstellungen

@@ -25,3 +25,8 @@ margin:
 complete:
   title: Detail
   description: Steuert, wie detailliert das Muster ist. Entweder ein vollständiges Muster mit allen Details oder eine grundlegende Kontur der Musterteile.
+
+layout:
+  title: Layout
+  description: Steuert, wie die einzelnen Musterteile auf Ihrem Muster platziert werden.
+

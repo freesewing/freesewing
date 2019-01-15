@@ -25,3 +25,9 @@ margin:
 complete:
   title: Detail
   description: Bepaalt hoe gedetailleerd het patroon is. Ofwel een patroon met alle details, ofwel een eenvoudiger patroon met slechts de contouren van de verschillende patroondelen.
+
+layout:
+  title: Layout
+  description: Bepaalt hoe de afzonderlijke patroondelen op uw patroon worden geplaatst.
+
+

@@ -8,6 +8,8 @@ account: Account
 accountCreated: Account aangemaakt
 actions: Acties
 andThatIsAwesome: En dat is geweldig
+applyThisLayout: Pas deze layout toe
+automatic: Automatisch
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -32,6 +34,7 @@ colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
 completeSignupText: "Voordat we onze start missen, laten we ervoor zorgen dat je account correct is ingesteld. Volg daartoe de onderstaande stappen:"
 completeSignupTitle: Voltooi je inschrijving
+configureLayout: Configureer layout
 configureYourDraft: Configureer je patroontekening
 contactUs: Neem contact op
 contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
@@ -94,6 +97,7 @@ layout: Layout
 logIn: Aanmelden
 loginWithProvider: 'Aanmelden met<br>{provider}'
 logOut: Afmelden
+manual: Manueel
 markdownHelp: MarkDown hulp
 measurements: Maten
 menu: Menu
@@ -149,6 +153,7 @@ reset: Reset
 restoreDefaults: Standaardwaarden herstellen
 saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
+selectAPartToMoveMirrorOrRotate: Selecteer een onderdeel om te verplaatsen, spiegelen of draaien
 selectImage: Selecteer afbeelding
 sendAnEmail: Stuur een email
 settings: Instellingen

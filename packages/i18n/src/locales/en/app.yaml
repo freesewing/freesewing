@@ -8,6 +8,8 @@ account: Account
 accountCreated: Account created
 actions: Actions
 andThatIsAwesome: And that is awesome
+applyThisLayout: Apply this layout
+automatic: Automatic
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
@@ -32,6 +34,7 @@ colourYes: "Colour picture: Content is available in English"
 community: Community
 completeSignupText: "Before we start off on the wrong foot, let's make sure your account is set up correctly. Simply complete the steps below:"
 completeSignupTitle: Complete your signup
+configureLayout: Configure layout
 configureYourDraft: Configure your draft
 contactUs: Contact us
 contentLocaleFallback: That's why we're showing you the English version instead.
@@ -94,6 +97,7 @@ layout: Layout
 logIn: Log in
 loginWithProvider: 'Log in with<br>{provider}'
 logOut: Log out
+manual: Manual
 markdownHelp: MarkDown help
 measurements: Measurements
 menu: Menu
@@ -149,6 +153,7 @@ reset: Reset
 restoreDefaults: Restore defaults
 saveDraftToYourAccount: Save draft to your account
 save: Save
+selectAPartToMoveMirrorOrRotate: Select a part to move, mirror, or rotate
 selectImage: Select image
 sendAnEmail: Send an E-mail
 settings: Settings

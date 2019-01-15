@@ -26,3 +26,8 @@ complete:
   title: Détail
   description: Contrôle le niveau de détail du patron. Soit un motif patron avec tous les détails, soit un contour de base des parties du patron.
 
+layout:
+  title: Disposition
+  description: Contrôle la manière dont les différentes parties sont placées sur votre patron.
+
+

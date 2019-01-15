@@ -8,6 +8,8 @@ account: Compte
 accountCreated: Compte créé
 actions: Actions
 andThatIsAwesome: Et c'est génial
+applyThisLayout: Appliquer cette mise en page
+automatic: Automatique
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
@@ -32,6 +34,7 @@ colourYes: "Image couleur: le contenu est disponible en français"
 community: Communauté
 completeSignupText: "Avant de commencer du mauvais pied, assurons-nous que votre compte est configuré correctement. Complétez simplement les étapes ci-dessous:"
 completeSignupTitle: Complétez votre inscription
+configureLayout: Configurer la mise en page
 configureYourDraft: Configurez votre ébauche
 contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
@@ -94,6 +97,7 @@ layout: Mis en page
 logIn: Connexion
 loginWithProvider: 'Connectez-vous avec<br>{provider}'
 logOut: Déconnexion
+manual: Manuel
 markdownHelp: Aide de MarkDown
 measurements: Mensurations
 menu: Menu
@@ -149,6 +153,7 @@ reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
 saveDraftToYourAccount: "Enregistrer l'ébauche sur votre compte"
 save: Sauvegarder
+selectAPartToMoveMirrorOrRotate: Sélectionnez une pièce à déplacer, inverser ou faire pivoter
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
 settings: Paramètres
