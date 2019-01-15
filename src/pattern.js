@@ -437,7 +437,11 @@ Pattern.prototype.pack = function() {
         transform += ` translate(${center.x}, ${center.y * -1 + 2 * dy})`;
         this.parts[partId].attributes.add("transform", transform);
       }
-      // FIXME: Implement support for rotate transforms
+      if (transforms.rotate) {
+        let transform = `rotate(${transforms.rotate}, ${center.x -
+          anchor.x}, ${center.y - anchor.y})`;
+        this.parts[partId].attributes.add("transform", transform);
+      }
     }
   }
 
