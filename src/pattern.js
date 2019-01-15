@@ -389,14 +389,14 @@ Pattern.prototype.pack = function() {
       part.stack();
       let width = part.bottomRight.x - part.topLeft.x;
       let height = part.bottomRight.y - part.topLeft.y;
-      if (this.settings.layout) bins.push({ id: key, width, height });
+      if (this.settings.layout === true) bins.push({ id: key, width, height });
       else {
         if (this.width < width) this.width = width;
         if (this.height < height) this.height = height;
       }
     }
   }
-  if (this.settings.layout) {
+  if (this.settings.layout === true) {
     let size = pack(bins, { inPlace: true });
     for (let bin of bins) {
       let part = this.parts[bin.id];
@@ -405,6 +405,23 @@ Pattern.prototype.pack = function() {
     }
     this.width = size.width;
     this.height = size.height;
+  } else if (typeof this.settings.layout === "object") {
+    this.width = this.settings.layout.width;
+    this.height = this.settings.layout.height;
+    for (let partId of Object.keys(this.settings.layout.parts)) {
+      let transforms = this.settings.layout.parts[partId];
+      if (typeof transforms.translate === "object") {
+        this.parts[partId].attributes.set(
+          "transform",
+          "translate(" +
+            transforms.translate.x +
+            ", " +
+            transforms.translate.y +
+            ")"
+        );
+      }
+      // FIXME: Implement support for rotate/flip transforms
+    }
   }
 
   return this;
