@@ -410,17 +410,34 @@ Pattern.prototype.pack = function() {
     this.height = this.settings.layout.height;
     for (let partId of Object.keys(this.settings.layout.parts)) {
       let transforms = this.settings.layout.parts[partId];
-      if (typeof transforms.translate === "object") {
+      // Moving
+      if (typeof transforms.move === "object") {
         this.parts[partId].attributes.set(
           "transform",
-          "translate(" +
-            transforms.translate.x +
-            ", " +
-            transforms.translate.y +
-            ")"
+          "translate(" + transforms.move.x + ", " + transforms.move.y + ")"
         );
       }
-      // FIXME: Implement support for rotate/flip transforms
+      // Mirrorring
+      let center = this.parts[partId].topLeft.shiftFractionTowards(
+        this.parts[partId].bottomRight,
+        0.5
+      );
+      let anchor = { x: 0, y: 0 };
+      if (transforms.flipX) {
+        let dx = anchor.x - center.x;
+        let transform = `translate(${center.x * -1}, ${center.y * -1})`;
+        transform += " scale(-1, 1)";
+        transform += ` translate(${center.x * -1 + 2 * dx}, ${center.y})`;
+        this.parts[partId].attributes.add("transform", transform);
+      }
+      if (transforms.flipY) {
+        let dy = anchor.y - center.y;
+        let transform = `translate(${center.x * -1}, ${center.y * -1})`;
+        transform += " scale(1, -1)";
+        transform += ` translate(${center.x}, ${center.y * -1 + 2 * dy})`;
+        this.parts[partId].attributes.add("transform", transform);
+      }
+      // FIXME: Implement support for rotate transforms
     }
   }
 
