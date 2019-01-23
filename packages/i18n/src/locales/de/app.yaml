@@ -9,6 +9,7 @@ account: Konto
 actions: Aktions
 andThatIsAwesome: Und das ist großartig
 applyThisLayout: Wenden Sie dieses Layout an
+areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
 automatic: Automatisch
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
@@ -88,6 +89,7 @@ helpUsTranslate: Helfen Sie uns beim Übersetzen
 home: Startseite
 howCanWeHelpYou: Wie können wir Dir helfen
 howToTakeMeasurements: Richtiges Maß nehmen
+i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
 info: Info
 instagram: Instagram
@@ -153,6 +155,7 @@ reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
+search: Suche
 selectAPartToMoveMirrorOrRotate: Wählen Sie einen Bereich zum Verschieben, Spiegeln oder Drehen aus
 selectImage: Bild auswählen
 sendAnEmail: Eine E-Mail senden

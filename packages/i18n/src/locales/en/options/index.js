@@ -17,9 +17,11 @@ let patterns = {
 };
 
 let options = {};
+let optionInheritance = {};
 
 for (let pattern of Object.keys(patterns)) {
   options[pattern] = {};
+  optionInheritance[pattern] = {};
   for (let option of Object.keys(patterns[pattern])) {
     let value = patterns[pattern][option];
     if (typeof value === "object") options[pattern][option] = value;
@@ -29,8 +31,9 @@ for (let pattern of Object.keys(patterns)) {
           `Option ${option} in pattern ${pattern} refers to pattern {value}, but it's not there`
         );
       options[pattern][option] = options[value][option];
+      optionInheritance[pattern][option] = value;
     }
   }
 }
 
-export default options;
+export { options, optionInheritance };

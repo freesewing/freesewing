@@ -1,5 +1,6 @@
 import account from "./account.yaml";
 import app from "./app.yaml";
+import editor from "./editor.yaml";
 import email from "./email.yaml";
 import errors from "./errors.yaml";
 import filter from "./filter.yml";
@@ -7,7 +8,7 @@ import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
 import intro from "./intro.yaml";
 import measurements from "./measurements.yaml";
-import options from "./options/";
+import { options, optionInheritance } from "./options/";
 import optiongroups from "./optiongroups.yaml";
 import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
@@ -17,6 +18,7 @@ import settings from "./settings.yml";
 const topics = {
   account,
   app,
+  editor,
   email,
   errors,
   filter,
@@ -87,6 +89,7 @@ for (let topic of Object.keys(topics)) {
 export {
   account,
   app,
+  editor,
   email,
   errors,
   filter,
@@ -100,5 +103,6 @@ export {
   patterns,
   plugin,
   settings,
-  strings
+  strings,
+  optionInheritance
 };

@@ -9,6 +9,7 @@ accountCreated: Account created
 actions: Actions
 andThatIsAwesome: And that is awesome
 applyThisLayout: Apply this layout
+areYouSureYouWantToContinue: Are you sure you want to continue?
 automatic: Automatic
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
@@ -88,6 +89,7 @@ helpUsTranslate: Help us translate
 home: Home
 howCanWeHelpYou: How can we help you?
 howToTakeMeasurements: How to take measurements
+i18n: Internationalization
 imperialUnits: Imperial units (inch)
 info: Info
 instagram: Instagram
@@ -153,6 +155,7 @@ reset: Reset
 restoreDefaults: Restore defaults
 saveDraftToYourAccount: Save draft to your account
 save: Save
+search: Search
 selectAPartToMoveMirrorOrRotate: Select a part to move, mirror, or rotate
 selectImage: Select image
 sendAnEmail: Send an E-mail
