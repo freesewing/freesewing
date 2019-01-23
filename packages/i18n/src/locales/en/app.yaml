@@ -56,6 +56,7 @@ docs: Documentation
 docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
 docsNotFoundTitle: This documentation is missing
 documentationForDevelopers: Documentation for developers
+documentationForEditors: Documentation for editors
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
 download: Download
