@@ -31,6 +31,7 @@
     "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns_examples --footer 'freesewing.patterns.examples = freesewing_patterns_examples;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
+    "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
@@ -45,8 +46,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "0.2.0",
-    "freesewing": "0.16.2"
+    "@freesewing/plugin-bundle": "0.7.1",
+    "freesewing": "0.29.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.56",

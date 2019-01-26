@@ -1,3 +1,7 @@
+import { version } from "../package.json";
+
 export default {
-  name: "examples"
+  name: "examples",
+  version,
+  parts: ["pathAttr"]
 };

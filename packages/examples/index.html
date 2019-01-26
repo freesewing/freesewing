@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Examples</title>
-    <!-- <script type="text/javascript" src="freesewing.js"></script> -->
     <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
     <script type="text/javascript" src="dist/browser.js"></script>
@@ -17,30 +16,14 @@
   <body>
     <div id="svg"></div>
     <script>
-      var pattern = freesewing.patterns.examples
-        .with(freesewing.plugins.debug)
-        .with(freesewing.plugins.theme)
-        //.with(freesewing.plugins.designer)
-        //.with(freesewing.plugins.validate)
+      var pattern = new freesewing.patterns.examples();
+        pattern.use(freesewing.plugins.debug)
+        .use(freesewing.plugins.theme)
+        .use(freesewing.plugins.designer)
+        .use(freesewing.plugins.validate)
       ;
-      pattern.settings.measurements = freesewing.models.men.manSize36;
 
-      // Uncomment this line to enable paperless
-      //pattern.settings.paperless = true;
-      // Some default settings
-      pattern.settings.sa = 10;
-      pattern.settings.units = 'metric';
-//      console.log(pattern);
-pattern.settings.only = ['pathTranslate'];
-//pattern.on('preRender', function(next) {
-//  this.style += 'g { border: 1px solid red; background: red;}';
-//  next();
-//});
-
-      //pattern.sampleOption('chestEase');
-      //pattern.sampleMeasurement('chestCircumference');
-      //pattern.sampleModels(freesewing.models.men);
-      //pattern.sampleModels(freesewing.models.antman);
+      pattern.settings.only = ['pathAttr'];
       pattern.draft();
       document.getElementById("svg").innerHTML = pattern.render();
 
