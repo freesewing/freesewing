@@ -8,7 +8,7 @@ var pluginGrainline = {
     points.grainlineFrom = new Point(10, 10);
     points.grainlineTo = new Point(100, 10);
 
-    macro('grainline', {
+    macro("grainline", {
       from: points.grainlineFrom,
       to: points.grainlineTo
     });

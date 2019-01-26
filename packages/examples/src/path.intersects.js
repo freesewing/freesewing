@@ -32,7 +32,8 @@ var pathIntersects = {
       .curve(points._BCp2, points._CCp1, points._C)
       .curve(points._DCp1, points._DCp1, points._D);
 
-    for (let p of paths.example1.intersects(paths.example2)) snippets[part.getId()] = new Snippet('x', p);
+    for (let p of paths.example1.intersects(paths.example2))
+      snippets[part.getId()] = new Snippet("x", p);
 
     return part;
   }

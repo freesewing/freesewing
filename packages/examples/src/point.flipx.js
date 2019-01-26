@@ -46,7 +46,7 @@ var pointFlipX = {
     paths.mirror = new Path()
       .move(points.top)
       .line(points.bottom)
-      .attr('class', 'note dashed');
+      .attr("class", "note dashed");
 
     return part;
   }

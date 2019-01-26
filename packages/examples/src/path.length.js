@@ -14,24 +14,20 @@ var pathLength = {
     paths.example = new Path()
       .move(points.A)
       .line(points.B)
-      .curve(points.BCp2, points.CCp1, points.C)
+      .curve(points.BCp2, points.CCp1, points.C);
 
-    macro('pd', {
+    macro("pd", {
       path: paths.example,
       d: -20
     });
 
-    macro('pd', {
-      path: new Path()
-        .move(points.B)
-        .line(points.A),
+    macro("pd", {
+      path: new Path().move(points.B).line(points.A),
       d: 10
     });
 
-    macro('pd', {
-      path: new Path()
-        .move(points.B)
-        .curve(points.BCp2, points.CCp1, points.C),
+    macro("pd", {
+      path: new Path().move(points.B).curve(points.BCp2, points.CCp1, points.C),
       d: -10
     });
 

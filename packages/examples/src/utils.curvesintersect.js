@@ -12,8 +12,8 @@ var utilsCurvesIntersect = {
 
     points.C = new Point(20, -5);
     points.Ccp = new Point(60, 300);
-    points.D = new Point (100, 85);
-    points.Dcp = new Point (70, -220);
+    points.D = new Point(100, 85);
+    points.Dcp = new Point(70, -220);
     paths.curveA = new Path()
       .move(points.A)
       .curve(points.Acp, points.Bcp, points.B);
@@ -22,14 +22,16 @@ var utilsCurvesIntersect = {
       .curve(points.Ccp, points.Dcp, points.D);
 
     for (let p of utils.curvesIntersect(
-          points.A,
-          points.Acp,
-          points.Bcp,
-          points.B,
-          points.C,
-          points.Ccp,
-          points.Dcp,
-          points.D)) snippets[part.getId()] = new Snippet('x', p);
+      points.A,
+      points.Acp,
+      points.Bcp,
+      points.B,
+      points.C,
+      points.Ccp,
+      points.Dcp,
+      points.D
+    ))
+      snippets[part.getId()] = new Snippet("x", p);
 
     return part;
   }

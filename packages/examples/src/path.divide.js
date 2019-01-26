@@ -21,8 +21,12 @@ var pathDivide = {
       .close();
 
     let i = 1;
-    for(let p of paths.example.divide()) {
-      paths[i] = p.attr('style', `stroke-width: 4; stroke-opacity: 0.5; stroke: hsl(${i*70}, 100%, 50%)`);
+    for (let p of paths.example.divide()) {
+      paths[i] = p.attr(
+        "style",
+        `stroke-width: 4; stroke-opacity: 0.5; stroke: hsl(${i *
+          70}, 100%, 50%)`
+      );
       i++;
     }
 

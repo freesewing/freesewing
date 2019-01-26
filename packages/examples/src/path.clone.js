@@ -16,8 +16,7 @@ var pathClone = {
       .line(points.B)
       .curve(points.BCp2, points.CCp1, points.C);
 
-    paths.clone = paths.example.clone()
-      .attr('class', 'note lashed stroke-xl');
+    paths.clone = paths.example.clone().attr("class", "note lashed stroke-xl");
 
     return part;
   }

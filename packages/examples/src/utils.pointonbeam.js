@@ -13,37 +13,37 @@ var utilsPointOnBeam = {
     points.b2 = new Point(170, 130);
 
     let scatter = [];
-    for(let i=1; i<36; i++) {
-      for(let j=1; j<27; j++) {
-        scatter.push(new Point(i*5, j*5));
+    for (let i = 1; i < 36; i++) {
+      for (let j = 1; j < 27; j++) {
+        scatter.push(new Point(i * 5, j * 5));
       }
     }
     let snippet;
     for (let point of scatter) {
-      if(utils.pointOnBeam(points.from1, points.to1, point)) snippet = 'notch';
-      else snippet = 'x';
+      if (utils.pointOnBeam(points.from1, points.to1, point)) snippet = "notch";
+      else snippet = "x";
       snippets[part.getId()] = new Snippet(snippet, point);
-      if(utils.pointOnBeam(points.from2, points.to2, point, 0.01)) snippet = 'notch';
-      else snippet = 'x';
+      if (utils.pointOnBeam(points.from2, points.to2, point, 0.01))
+        snippet = "notch";
+      else snippet = "x";
       snippets[part.getId()] = new Snippet(snippet, point);
     }
     paths.line1 = new Path()
       .move(points.from1)
       .line(points.to1)
-      .attr('class', 'fabric stroke-lg');
+      .attr("class", "fabric stroke-lg");
     paths.lne1 = new Path()
       .move(points.to1)
       .line(points.b1)
-      .attr('class', 'fabric dashed');
+      .attr("class", "fabric dashed");
     paths.line2 = new Path()
       .move(points.from2)
       .line(points.to2)
-      .attr('class', 'fabric stroke-lg');
+      .attr("class", "fabric stroke-lg");
     paths.lne2 = new Path()
       .move(points.to2)
       .line(points.b2)
-      .attr('class', 'fabric dashed');
-
+      .attr("class", "fabric dashed");
 
     return part;
   }

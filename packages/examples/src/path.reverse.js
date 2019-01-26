@@ -14,10 +14,11 @@ var pathReverse = {
     paths.example = new Path()
       .move(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
-      .attr('data-text', 'I am the original path');
+      .attr("data-text", "I am the original path");
 
-    paths.reverse = paths.example.reverse()
-      .attr('data-text', 'I am the reversed path');
+    paths.reverse = paths.example
+      .reverse()
+      .attr("data-text", "I am the reversed path");
 
     return part;
   }

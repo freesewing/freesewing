@@ -13,19 +13,20 @@ var pathIntersectsX = {
     points.D = new Point(50, 130);
     points.DCp1 = new Point(150, 30);
 
-    points.top = new Point(60,-10);
-    points.bot = new Point(60,140);
+    points.top = new Point(60, -10);
+    points.bot = new Point(60, 140);
     paths.line = new Path()
       .move(points.top)
       .line(points.bot)
-      .attr('class', 'lining dashed');
+      .attr("class", "lining dashed");
     paths.example = new Path()
       .move(points.A)
       .line(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
       .curve(points.DCp1, points.DCp1, points.D);
 
-    for (let p of paths.example.intersectsX(60)) snippets[part.getId()] = new Snippet('x', p);
+    for (let p of paths.example.intersectsX(60))
+      snippets[part.getId()] = new Snippet("x", p);
 
     return part;
   }

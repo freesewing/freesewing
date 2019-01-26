@@ -14,15 +14,16 @@ var pathJoin = {
     paths.path1 = new Path()
       .move(points.A)
       .line(points.B)
-      .attr('class', 'various');
+      .attr("class", "various");
 
     paths.path2 = new Path()
       .move(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
-      .attr('class', 'canvas');
+      .attr("class", "canvas");
 
-    paths.joint = paths.path1.join(paths.path2)
-      .attr('class', 'note lashed stroke-xl');
+    paths.joint = paths.path1
+      .join(paths.path2)
+      .attr("class", "note lashed stroke-xl");
 
     return part;
   }

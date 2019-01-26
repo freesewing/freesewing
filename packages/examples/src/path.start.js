@@ -14,9 +14,9 @@ var pathStart = {
     paths.example = new Path()
       .move(points.A)
       .line(points.B)
-      .curve(points.BCp2, points.CCp1, points.C)
+      .curve(points.BCp2, points.CCp1, points.C);
 
-    snippets.x = new Snippet('x', paths.example.start());
+    snippets.x = new Snippet("x", paths.example.start());
     return part;
   }
 };

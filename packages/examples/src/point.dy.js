@@ -8,7 +8,7 @@ var pointDy = {
     points.from = new Point(10, 10);
     points.to = new Point(90, 40);
 
-    macro('vd', {
+    macro("vd", {
       from: points.to,
       to: points.from,
       x: 50

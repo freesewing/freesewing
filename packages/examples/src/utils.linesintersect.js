@@ -10,19 +10,13 @@ var utilsLinesIntersect = {
     points.C = new Point(15, 30);
     points.D = new Point(60, 15);
 
-    paths.AB = new Path()
-      .move(points.A)
-      .line(points.B);
-    paths.CD = new Path()
-      .move(points.C)
-      .line(points.D);
+    paths.AB = new Path().move(points.A).line(points.B);
+    paths.CD = new Path().move(points.C).line(points.D);
 
-    snippets.X = new Snippet('x', utils.linesIntersect(
-          points.A,
-          points.B,
-          points.C,
-          points.D)
-        );
+    snippets.X = new Snippet(
+      "x",
+      utils.linesIntersect(points.A, points.B, points.C, points.D)
+    );
 
     return part;
   }

@@ -13,9 +13,9 @@ var pathAttrs = {
     paths.example = new Path()
       .move(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
-      .attr('class', 'stroke-xl canvas')
-      .attr('data-text', 'I am text placed on a path')
-      .attr('data-text-class', 'center fill-note');
+      .attr("class", "stroke-xl canvas")
+      .attr("data-text", "I am text placed on a path")
+      .attr("data-text-class", "center fill-note");
 
     return part;
   }

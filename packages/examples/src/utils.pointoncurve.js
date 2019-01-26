@@ -11,21 +11,30 @@ var utilsPointOnCurve = {
     points.end = new Point(90, 60);
 
     let scatter = [];
-    for(let i=1; i<19; i++) {
-      for(let j=1; j<14; j++) {
-        scatter.push(new Point(i*5, j*5));
+    for (let i = 1; i < 19; i++) {
+      for (let j = 1; j < 14; j++) {
+        scatter.push(new Point(i * 5, j * 5));
       }
     }
     let snippet;
     for (let point of scatter) {
-      if(utils.pointOnCurve(points.start, points.cp1, points.cp2, points.end, point)) snippet = 'notch';
-      else snippet = 'x';
+      if (
+        utils.pointOnCurve(
+          points.start,
+          points.cp1,
+          points.cp2,
+          points.end,
+          point
+        )
+      )
+        snippet = "notch";
+      else snippet = "x";
       snippets[part.getId()] = new Snippet(snippet, point);
     }
     paths.curve = new Path()
       .move(points.start)
       .curve(points.cp1, points.cp2, points.end)
-      .attr('class', 'fabric stroke-lg');
+      .attr("class", "fabric stroke-lg");
 
     return part;
   }

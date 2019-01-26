@@ -23,14 +23,18 @@ var pathSplit = {
       .move(points.D)
       .curve(points.DCp1, points.DCp1, points.C)
       .curve(points.CCp1, points.BCp2, points.B)
-      .line(points.A)
+      .line(points.A);
 
     points.split = paths.example.shiftAlong(20);
-    snippets.x = new Snippet('x', points.split);
+    snippets.x = new Snippet("x", points.split);
 
     let halves = paths.example2.split(points.split);
     for (let i in halves) {
-      paths[i] = halves[i].attr('style', `stroke-width: 3; stroke-opacity: 0.5; stroke: hsl(${i*70}, 100%, 50%)`);
+      paths[i] = halves[i].attr(
+        "style",
+        `stroke-width: 3; stroke-opacity: 0.5; stroke: hsl(${i *
+          70}, 100%, 50%)`
+      );
     }
 
     return part;

@@ -18,13 +18,14 @@ var pathIntersectsY = {
     paths.line = new Path()
       .move(points.top)
       .line(points.bot)
-      .attr('class', 'lining dashed');
+      .attr("class", "lining dashed");
     paths.example = new Path()
       .move(points.A)
       .line(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
       .curve(points.DCp1, points.DCp1, points.D);
-    for (let p of paths.example.intersectsY(58)) snippets[part.getId()] = new Snippet('x', p);
+    for (let p of paths.example.intersectsY(58))
+      snippets[part.getId()] = new Snippet("x", p);
 
     return part;
   }

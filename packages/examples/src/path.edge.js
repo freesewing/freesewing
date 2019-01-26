@@ -20,14 +20,14 @@ var pathEdge = {
       .curve(points.E, points.D, points.A)
       .close();
 
-    snippets.a = new Snippet('x', paths.example.edge('topLeft'));
-    snippets.b = new Snippet('x', paths.example.edge('topRight'));
-    snippets.c = new Snippet('x', paths.example.edge('bottomLeft'));
-    snippets.d = new Snippet('x', paths.example.edge('bottomRight'));
-    snippets.e = new Snippet('x', paths.example.edge('top'));
-    snippets.f = new Snippet('x', paths.example.edge('left'));
-    snippets.g = new Snippet('x', paths.example.edge('bottom'));
-    snippets.h = new Snippet('x', paths.example.edge('right'));
+    snippets.a = new Snippet("x", paths.example.edge("topLeft"));
+    snippets.b = new Snippet("x", paths.example.edge("topRight"));
+    snippets.c = new Snippet("x", paths.example.edge("bottomLeft"));
+    snippets.d = new Snippet("x", paths.example.edge("bottomRight"));
+    snippets.e = new Snippet("x", paths.example.edge("top"));
+    snippets.f = new Snippet("x", paths.example.edge("left"));
+    snippets.g = new Snippet("x", paths.example.edge("bottom"));
+    snippets.h = new Snippet("x", paths.example.edge("right"));
 
     return part;
   }

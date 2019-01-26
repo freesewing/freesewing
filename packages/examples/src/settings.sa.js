@@ -17,10 +17,9 @@ var pathOffset = {
       .curve(points.BCp2, points.CCp1, points.C)
       .line(points.A)
       .close()
-      .attr('class', 'fabric');
+      .attr("class", "fabric");
 
-    paths.offset = paths.example.offset(-10)
-      .attr('class', 'fabric sa');
+    paths.offset = paths.example.offset(-10).attr("class", "fabric sa");
 
     return part;
   }

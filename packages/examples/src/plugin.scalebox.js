@@ -3,9 +3,9 @@ var pluginScalebox = {
     // prettier-ignore
     let {Point, points, Path, paths, macro} = part.shorthand();
 
-    points.anchor = new Point(0,0);
+    points.anchor = new Point(0, 0);
 
-    macro('scalebox', {
+    macro("scalebox", {
       at: points.anchor
     });
 

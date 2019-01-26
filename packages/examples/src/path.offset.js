@@ -19,19 +19,19 @@ var pathOffset = {
       .line(points.A)
       .close();
 
-    paths.offset = paths.example.offset(-10)
-      .attr('class', 'interfacing');
+    paths.offset = paths.example.offset(-10).attr("class", "interfacing");
 
     paths.lineOffset = new Path()
       .move(points.A)
-      .line(points.B).offset(-5)
-      .attr('class', 'various');
+      .line(points.B)
+      .offset(-5)
+      .attr("class", "various");
 
     paths.curveOffset = new Path()
       .move(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
       .offset(-5)
-      .attr('class', 'canvas');
+      .attr("class", "canvas");
 
     return part;
   }

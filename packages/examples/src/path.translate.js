@@ -13,20 +13,22 @@ var pathTranslate = {
       .move(points.A)
       .line(points.B)
       .curve(points.BCp2, points.CCp1, points.C)
-      .attr('data-text', 'Path A')
-      .attr('data-text-class', 'center');
+      .attr("data-text", "Path A")
+      .attr("data-text-class", "center");
 
-    paths.B = paths.A.translate(60, 30)
-      .attr('data-text', 'with a translate(60,30) transform applied');
+    paths.B = paths.A.translate(60, 30).attr(
+      "data-text",
+      "with a translate(60,30) transform applied"
+    );
 
-    points.step1 = points.B.shift(0,60);
-    points.step2 = points.step1.shift(-90,30);
-    macro('ld', {
+    points.step1 = points.B.shift(0, 60);
+    points.step2 = points.step1.shift(-90, 30);
+    macro("ld", {
       from: points.B,
       to: points.step1,
       noStartMarker: true
     });
-    macro('ld', {
+    macro("ld", {
       from: points.step1,
       to: points.step2,
       noStartMarker: true
