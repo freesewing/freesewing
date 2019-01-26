@@ -16,8 +16,9 @@
 
 # freesewing
 
-[Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing pattern.  
-This is our core library.
+[Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing patterns.  
+
+Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
 
 ## Links
 
