@@ -1,5 +1,3 @@
-import { box } from "./shared";
-
 export default part => {
   let {
     Point,
