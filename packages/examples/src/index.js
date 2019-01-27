@@ -21,14 +21,14 @@ import pointTranslate from "./point.translate";
 import pointSitsOn from "./point.sitson";
 import pointClone from "./point.clone";
 
-import draftPathAttr from "./pathAttr";
+import draftPath_attr from "./path_attr";
+import draftPath_clone from "./path_clone";
 
 import pathOps from "./path.ops";
 import pathOffset from "./path.offset";
 import pathLength from "./path.length";
 import pathStart from "./path.start";
 import pathEnd from "./path.end";
-import pathClone from "./path.clone";
 import pathJoin from "./path.join";
 import pathReverse from "./path.reverse";
 import pathShiftAlong from "./path.shiftalong";
@@ -77,7 +77,8 @@ Examples.prototype = Object.create(freesewing.Pattern.prototype);
 Examples.prototype.constructor = Examples;
 
 // Attach per-part draft methods to prototype
-Examples.prototype.draftPathAttr = draftPathAttr;
+Examples.prototype.draftPath_attr = draftPath_attr;
+Examples.prototype.draftPath_clone = draftPath_clone;
 
 // Add custom snippet
 //pattern.on("preRender", function(next) {
