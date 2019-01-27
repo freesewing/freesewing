@@ -6,7 +6,7 @@ import Snippet from "./snippet";
 import Svg from "./svg";
 import pack from "bin-pack";
 import Store from "./store";
-import hooks from "./hooks";
+import Hooks from "./hooks";
 import Attributes from "./attributes";
 
 export default function Pattern(config = { options: {} }) {
@@ -17,8 +17,7 @@ export default function Pattern(config = { options: {} }) {
 
   this.store = new Store(); // Store for sharing data across parts
   this.parts = {}; // Parts container
-  this.hooks = hooks; // Hooks container
-
+  this.hooks = new Hooks(); // Hooks container
   this.Point = Point; // Point constructor
   this.Path = Path; // Path constructor
   this.Snippet = Snippet; // Snippet constructor

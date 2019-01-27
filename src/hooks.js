@@ -1,10 +1,12 @@
-export default {
-  preDraft: [],
-  postDraft: [],
-  preSample: [],
-  postSample: [],
-  preRender: [],
-  postRender: [],
-  insertText: [],
-  debug: []
-};
+export default function Hooks() {
+  return {
+    preDraft: [],
+    postDraft: [],
+    preSample: [],
+    postSample: [],
+    preRender: [],
+    postRender: [],
+    insertText: [],
+    debug: []
+  };
+}
