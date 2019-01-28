@@ -1,5 +1,5 @@
 export default part => {
-  let { Point, points, Path, path } = part.shorthand();
+  let { Point, points, Path, paths } = part.shorthand();
 
   points.B = new Point(10, 30);
   points.BCp2 = new Point(40, 20);
