@@ -20,7 +20,7 @@ it("Should return a function from macroClosure", () => {
   expect(typeof part.macroClosure()).to.equal("function");
 });
 
-it("Should no run an unknown macro", () => {
+it("Should not run an unknown macro", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   let macro = part.macroClosure();

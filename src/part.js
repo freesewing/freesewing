@@ -3,7 +3,7 @@ import Point from "./point";
 import Path from "./path";
 import Snippet from "./snippet";
 import Attributes from "./attributes";
-import hooks from "./hooks";
+import Hooks from "./hooks";
 
 function Part() {
   this.attributes = new Attributes();
@@ -23,7 +23,7 @@ function Part() {
   this.Path = Path;
   this.Snippet = Snippet;
 
-  this.hooks = hooks; // Hooks container
+  this.hooks = new Hooks(); // Hooks container
 
   return this;
 }
@@ -58,7 +58,7 @@ Part.prototype.debugClosure = function() {
 Part.prototype.runHooks = function(hookName, data = false) {
   if (data === false) data = this;
   let hooks = this.hooks[hookName];
-  if (hooks.length > 0) {
+  if (hooks && hooks.length > 0) {
     for (let hook of hooks) {
       hook.method(data, hook.data);
     }
