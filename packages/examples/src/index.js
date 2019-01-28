@@ -90,7 +90,7 @@ Examples.prototype.draftPath_divide = draftPath_divide;
 Examples.prototype.draftPath_edge = draftPath_edge;
 Examples.prototype.draftPath_end = draftPath_end;
 Examples.prototype.draftPath_intersects = draftPath_intersects;
-Examples.prototype.draftPath_intersectsx = draftPath_intersectsy;
+Examples.prototype.draftPath_intersectsx = draftPath_intersectsx;
 Examples.prototype.draftPath_intersectsy = draftPath_intersectsy;
 Examples.prototype.draftPath_join = draftPath_join;
 Examples.prototype.draftPath_length = draftPath_length;
@@ -143,16 +143,5 @@ Examples.prototype.draftUtils_pointoncurve = draftUtils_pointoncurve;
 Examples.prototype.draftUtils_circlesintersect = draftUtils_circlesintersect;
 Examples.prototype.draftUtils_beamintersectscircle = draftUtils_beamintersectscircle;
 Examples.prototype.draftUtils_lineintersectscircle = draftUtils_lineintersectscircle;
-
-// Add custom snippet
-//pattern.on("preRender", function(next) {
-//  this.defs += `
-//<g id="x">
-//  <path d="M -1.1 -1.1 L 1.1 1.1 M 1.1 -1.1 L -1.1 1.1" class="note"></path>
-//  <circle cy="0" cx="0" r="1.8" class="note"></circle>
-//</g>
-//`;
-//  next();
-//});
 
 export default Examples;

@@ -1,6 +1,6 @@
 export default part => {
   // prettier-ignore
-  let {Point, points, Path, paths, Snippet, snippets, macro} = part.shorthand();
+  let {Point, points, Path, paths, Snippet, snippets} = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
@@ -15,12 +15,12 @@ export default part => {
 
   points.X1 = paths.example
     .shiftFractionAlong(0.2)
-    .attr("data-text", "Shifted 20%\nalong this path")
+    .attr("data-text", "msg_20")
     .attr("data-text-class", "center")
     .attr("data-text-lineheight", 6);
   points.X2 = paths.example
     .shiftFractionAlong(0.9)
-    .attr("data-text", "Shifted 90%\nalong this path")
+    .attr("data-text", "msg_90")
     .attr("data-text-class", "center")
     .attr("data-text-lineheight", 6);
 

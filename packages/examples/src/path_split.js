@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
@@ -17,27 +9,21 @@ export default part => {
   points.D = new Point(50, 130);
   points.DCp1 = new Point(150, 30);
 
-  paths.example = new Path()
-    .move(points.A)
-    .line(points.B)
-    .curve(points.BCp2, points.CCp1, points.C)
-    .curve(points.DCp1, points.DCp1, points.D);
-
-  paths.example2 = new Path()
+  paths.demo = new Path()
     .move(points.D)
     .curve(points.DCp1, points.DCp1, points.C)
     .curve(points.CCp1, points.BCp2, points.B)
     .line(points.A);
 
-  points.split = paths.example.shiftAlong(20);
+  points.split = paths.demo.shiftFractionAlong(0.75);
   snippets.x = new Snippet("x", points.split);
 
-  let halves = paths.example2.split(points.split);
+  let style = "stroke-width: 3; stroke-opacity: 0.5;";
+  let halves = paths.demo.split(points.split);
   for (let i in halves) {
-    paths[i] = halves[i].attr(
-      "style",
-      `stroke-width: 3; stroke-opacity: 0.5; stroke: hsl(${i * 70}, 100%, 50%)`
-    );
+    paths[i] = halves[i]
+      .attr("style", style)
+      .attr("style", `stroke: hsl(${i * 70}, 100%, 50%)`);
   }
 
   return part;

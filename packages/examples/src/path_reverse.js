@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, path } = part.shorthand();
 
   points.B = new Point(10, 30);
   points.BCp2 = new Point(40, 20);
@@ -17,11 +9,9 @@ export default part => {
   paths.example = new Path()
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-    .attr("data-text", "I am the original path");
+    .attr("data-text", "msg");
 
-  paths.reverse = paths.example
-    .reverse()
-    .attr("data-text", "I am the reversed path");
+  paths.reverse = paths.example.reverse().attr("data-text", "gsm");
 
   return part;
 };

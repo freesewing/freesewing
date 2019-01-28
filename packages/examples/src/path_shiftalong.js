@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
@@ -22,12 +14,12 @@ export default part => {
 
   points.X1 = paths.example
     .shiftAlong(20)
-    .attr("data-text", "Shifted 2cm\nalong this path")
+    .attr("data-text", "msg_2cm")
     .attr("data-text-class", "center")
     .attr("data-text-lineheight", 6);
   points.X2 = paths.example
     .shiftAlong(90)
-    .attr("data-text", "Shifted 9cm\nalong this path")
+    .attr("data-text", "msg_9cm")
     .attr("data-text-class", "center")
     .attr("data-text-lineheight", 6);
 

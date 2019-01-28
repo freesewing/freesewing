@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
@@ -17,21 +9,21 @@ export default part => {
   points.D = new Point(-60, 90);
   points.E = new Point(90, 190);
 
-  paths.example = new Path()
+  paths.demo = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.E, points.D, points.A)
     .close();
 
-  snippets.a = new Snippet("x", paths.example.edge("topLeft"));
-  snippets.b = new Snippet("x", paths.example.edge("topRight"));
-  snippets.c = new Snippet("x", paths.example.edge("bottomLeft"));
-  snippets.d = new Snippet("x", paths.example.edge("bottomRight"));
-  snippets.e = new Snippet("x", paths.example.edge("top"));
-  snippets.f = new Snippet("x", paths.example.edge("left"));
-  snippets.g = new Snippet("x", paths.example.edge("bottom"));
-  snippets.h = new Snippet("x", paths.example.edge("right"));
+  snippets.a = new Snippet("x", paths.demo.edge("topLeft"));
+  snippets.b = new Snippet("x", paths.demo.edge("topRight"));
+  snippets.c = new Snippet("x", paths.demo.edge("bottomLeft"));
+  snippets.d = new Snippet("x", paths.demo.edge("bottomRight"));
+  snippets.e = new Snippet("x", paths.demo.edge("top"));
+  snippets.f = new Snippet("x", paths.demo.edge("left"));
+  snippets.g = new Snippet("x", paths.demo.edge("bottom"));
+  snippets.h = new Snippet("x", paths.demo.edge("right"));
 
   return part;
 };

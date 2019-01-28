@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
@@ -25,18 +17,18 @@ export default part => {
   points._D = new Point(40, 120);
   points._DCp1 = new Point(180, 40);
 
-  paths.example1 = new Path()
+  paths.demo1 = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.DCp1, points.DCp1, points.D);
-  paths.example2 = new Path()
+  paths.demo2 = new Path()
     .move(points._A)
     .line(points._B)
     .curve(points._BCp2, points._CCp1, points._C)
     .curve(points._DCp1, points._DCp1, points._D);
 
-  for (let p of paths.example1.intersects(paths.example2))
+  for (let p of paths.demo1.intersects(paths.demo2))
     snippets[part.getId()] = new Snippet("x", p);
 
   return part;

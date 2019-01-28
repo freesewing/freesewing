@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths } = part.shorthand();
 
   points.A = new Point(55, 40);
   points.B = new Point(10, 70);
@@ -24,13 +16,13 @@ export default part => {
     .curve(points.DCp1, points.DCp1, points.D)
     .close();
 
-  let i = 1;
+  let style = "stroke-width: 4; stroke-opacity: 0.5;";
+  let i = 0;
   for (let p of paths.example.divide()) {
-    paths[i] = p.attr(
-      "style",
-      `stroke-width: 4; stroke-opacity: 0.5; stroke: hsl(${i * 70}, 100%, 50%)`
-    );
     i++;
+    paths[i] = p
+      .attr("style", style)
+      .attr("style", `stroke: hsl(${i * 70}, 100%, 50%)`);
   }
 
   return part;
