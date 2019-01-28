@@ -8,7 +8,5 @@ export default part => {
     .attr("data-text-class", "text-xl center")
     .attr("data-text-lineheight", 10);
 
-  snippets.notch = new Snippet("x", points.anchor);
-
   return box(part);
 };

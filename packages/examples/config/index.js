@@ -6,10 +6,12 @@ export default {
   // This is not needed, but is here to sidestep an issue in freesewing
   // that needs to be fixed but hasn't yet
   dependencies: {
-    path_attr: "path_clone"
+    path_attr: "path_ops"
   },
   parts: [
     "point_attr",
+    "path__curve",
+    "path_curve_",
     "path_attr",
     "path_clone",
     "path_divide",

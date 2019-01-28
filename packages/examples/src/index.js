@@ -4,6 +4,7 @@ import plugins from "@freesewing/plugin-bundle";
 import config from "../config/";
 import { version } from "../package.json";
 
+import draftPath_ops from "./path_ops";
 import draftPath_attr from "./path_attr";
 import draftPath_clone from "./path_clone";
 import draftPath_divide from "./path_divide";
@@ -15,7 +16,6 @@ import draftPath_intersectsy from "./path_intersectsy";
 import draftPath_join from "./path_join";
 import draftPath_length from "./path_length";
 import draftPath_offset from "./path_offset";
-import draftPath_ops from "./path_ops";
 import draftPath_reverse from "./path_reverse";
 import draftPath_shiftalong from "./path_shiftalong";
 import draftPath_shiftfractionalong from "./path_shiftfractionalong";
@@ -76,7 +76,13 @@ Examples.prototype = Object.create(freesewing.Pattern.prototype);
 Examples.prototype.constructor = Examples;
 
 // Attach per-part draft methods to prototype
-Examples.prototype.draftPoint_attr = draftPoint_attr;
+
+Examples.prototype.draftPath_move = draftPath_ops;
+Examples.prototype.draftPath_line = draftPath_ops;
+Examples.prototype.draftPath_curve = draftPath_ops;
+Examples.prototype.draftPath__curve = draftPath_ops;
+Examples.prototype.draftPath_curve_ = draftPath_ops;
+Examples.prototype.draftPath_close = draftPath_ops;
 
 Examples.prototype.draftPath_attr = draftPath_attr;
 Examples.prototype.draftPath_clone = draftPath_clone;
@@ -105,6 +111,7 @@ Examples.prototype.draftPlugin_logo = draftPlugin_logo;
 Examples.prototype.draftPlugin_scalebox = draftPlugin_scalebox;
 Examples.prototype.draftPlugin_title = draftPlugin_title;
 
+Examples.prototype.draftPoint_attr = draftPoint_attr;
 Examples.prototype.draftPoint_angle = draftPoint_angle;
 Examples.prototype.draftPoint_attr = draftPoint_attr;
 Examples.prototype.draftPoint_clone = draftPoint_clone;

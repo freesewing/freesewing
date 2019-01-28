@@ -1,63 +1,53 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths } = part.shorthand();
 
   points.A = new Point(10, 10)
-    .attr("data-text", "Move to point A")
+    .attr("data-text", "msg_move")
     .attr("data-text-class", "center text-xs");
   points.B = new Point(70, 30);
   points.BCp2 = new Point(40, 10);
   points.C = new Point(90, -50);
   points.CCp1 = new Point(125, -30);
+  points.D = new Point(20, -50);
+  points.DCp = new Point(40, 0);
+  points.E = new Point(-20, -20);
+  points.ECp = new Point(-20, -50);
 
-  paths.example = new Path()
+  paths.line = new Path()
     .move(points.A)
     .line(points.B)
-    .curve(points.BCp2, points.CCp1, points.C)
-    .close();
+    .attr("data-text", "msg_line")
+    .attr("data-text-class", "center text-xs");
 
-  paths.handle1 = new Path()
+  paths.curve = new Path()
     .move(points.B)
-    .line(points.BCp2)
-    .attr("class", "note dashed");
-  paths.handle2 = new Path()
+    .curve(points.BCp2, points.CCp1, points.C)
+    .attr("data-text", "msg_curve")
+    .attr("data-text-class", "center text-xs");
+
+  paths._curve = new Path()
     .move(points.C)
-    .line(points.CCp1)
-    .attr("class", "note dashed");
-
-  snippets.A = new Snippet("notch", points.A);
-  snippets.B = new Snippet("notch", points.B);
-  snippets.C = new Snippet("notch", points.C);
-  snippets.Bcp2 = new Snippet("x", points.BCp2);
-  snippets.Ccp1 = new Snippet("x", points.CCp1);
-
-  paths.textLine = new Path()
-    .move(points.A)
-    .line(points.B)
-    .attr("data-text", "Line to point B")
+    ._curve(points.DCp, points.D)
+    .attr("data-text", "msg__curve")
     .attr("data-text-class", "center text-xs");
 
-  paths.textCurve = new Path()
-    .move(points.B)
-    .curve(points.BCp2, points.CCp1, points.C)
-    .attr(
-      "data-text",
-      "Curve to point C, using BCp2 and CCp1 as control points"
-    )
+  paths.curve_ = new Path()
+    .move(points.D)
+    .curve_(points.ECp, points.E)
+    .attr("data-text", "msg_curve_")
     .attr("data-text-class", "center text-xs");
 
-  paths.textClose = new Path()
-    .move(points.A)
-    .line(points.C)
-    .attr("data-text", "Close path")
+  paths.close = new Path()
+    .move(points.E)
+    .line(points.A)
+    .attr("data-text", "msg_close")
     .attr("data-text-class", "center text-xs");
+
+  paths.example = paths.line
+    .join(paths.curve)
+    .join(paths._curve)
+    .join(paths.curve_)
+    .close();
 
   return part;
 };
