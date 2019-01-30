@@ -1,7 +1,7 @@
 accountRemoved: Compte supprimé
 accountRestricted: Compte restreint
 avatar: Avatar
-avatarInfo: Votre avatar ou votre photo de profil s'afficheront à côté de vos commentaires et sur votre page de profil. Vous pouvez télécharger une photo ou vous en tenir à celle qui a été générée pour vous.
+avatarInfo: Votre avatar ou votre photo de profil s'afficheront sur votre page de profil.
 avatarTitle: Configurez votre photo de profil
 bio: Bio
 bioInfo: C’est ici que vous pouvez parler un peu de vous aux autres utilisateurs de freesewing. Ce champ prend en charge MarkDown, vous pouvez donc également inclure des liens. Si vous avez un blog, c’est là que vous vous connectez pour que les autres puissent le découvrir.
@@ -31,7 +31,7 @@ patron: Mécène
 removeYourAccountInfo: Cela supprimera votre compte, vos brouillons, vos modèles et toutes les données que nous avons stockées pour vous. <br> <br> Il n'y a aucun moyen de revenir en arrière, procédez donc avec prudence.
 removeYourAccount: Supprimer votre compte
 removeYourAccountWarning: Cela supprimera votre compte, vos Ébauches, vos modèles et toutes les données que nous avons stockées pour vous. Il n'y a pas de retour en arrière.
-resetPasswordInfo: Saisissez un nouveau mot de passe, puis cliquez sur le bouton <b> Enregistrer </b>.
+resetPasswordInfo: Saisissez un nouveau mot de passe.
 resetPassword: Réinitialiser le mot de passe
 resetPasswordTitle: Entrez votre nouveau mot de passe
 restrictProcessingOfYourDataInfo: La protection générale des données (GDPR) de l’UE garantit à votre soi-disant <em> droit de restreindre le traitement </em> - le droit de suspendre le traitement de vos données.
@@ -44,9 +44,9 @@ socialTitle: Laissez les gens vous suivre ailleurs
 twitterInfo: Si vous indiquez votre nom d'utilisateur Twitter, votre page de profil contiendra un lien vers votre compte Twitter afin que les visiteurs puissent découvrir vos tweets et vous suivre.
 twitterTitle: Entrez votre nom d'utilisateur Twitter
 twitter: Twitter
-unitsInfo: Freesewing prend en charge le système métrique et les mesures impériales. Sélectionnez simplement celui que vous souhaitez utiliser, puis cliquez sur le bouton <b> Enregistrer </ b> lorsque vous êtes prêt.
+unitsInfo: Freesewing prend en charge le système métrique et les mesures impériales.
 unitsTitle: Veuillez sélectionner le système d'unités que vous préférez
 units: Unités
-usernameInfo: Vous avez actuellement un nom d'utilisateur généré de manière aléatoire. Ce n'est pas très personnel, vous pouvez donc changer votre nom d'utilisateur pour quelque chose de plus vous. Comme votre nom, <em> queenoffarts </ em> ou autre chose. Il vous suffit de saisir le nom d'utilisateur souhaité et de cliquer sur le bouton <b> Enregistrer </ b> lorsque vous êtes satisfait de votre nouveau nom d'utilisateur.
+usernameInfo: Vous avez actuellement un nom d'utilisateur généré de manière aléatoire. Ce n'est pas très personnel, vous pouvez donc changer votre nom d'utilisateur pour quelque chose de plus vous. Comme votre nom, <em> queenoffarts </ em> ou autre chose. Il vous suffit de saisir le nom d'utilisateur souhaité.
 username: Nom d'utilisateur
 usernameTitle: Veuillez choisir votre nom d'utilisateur

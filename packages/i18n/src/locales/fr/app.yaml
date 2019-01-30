@@ -33,8 +33,6 @@ clearGist: Effacer le résumé
 close: Fermer
 colourYes: "Image couleur: le contenu est disponible en français"
 community: Communauté
-completeSignupText: "Avant de commencer du mauvais pied, assurons-nous que votre compte est configuré correctement. Complétez simplement les étapes ci-dessous:"
-completeSignupTitle: Complétez votre inscription
 configureLayout: Configurer la mise en page
 configureYourDraft: Configurez votre ébauche
 contactUs: Nous contacter
@@ -53,6 +51,7 @@ darkMode: Mode sombre
 default: Standard
 demo: Démo
 docs: Documentation
+docsFooterMsg: La documentation n'est jamais terminée. J'espère que nous avons pu répondre à toutes vos questions, mais si ce n'est pas le cas, de l'aide est disponible.
 docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement qu'elle n'a pas encore été écrite.
 docsNotFoundTitle: Cette documentation est manquante
 documentationForDevelopers: Documentation pour les développeurs
@@ -95,8 +94,10 @@ imperialUnits: Unités impériales (pouces)
 info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} n''est pas un TLD valide'
+joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes amicales qui sont heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
 justAMoment: Juste un instant
 layout: Mis en page
+letUsSetupYourAccount: Laissez-nous configurer votre compte
 logIn: Connexion
 loginWithProvider: 'Connectez-vous avec<br>{provider}'
 logOut: Déconnexion

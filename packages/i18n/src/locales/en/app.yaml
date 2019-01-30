@@ -33,8 +33,6 @@ clearGist: Clear gist
 close: Close
 colourYes: "Colour picture: Content is available in English"
 community: Community
-completeSignupText: "Before we start off on the wrong foot, let's make sure your account is set up correctly. Simply complete the steps below:"
-completeSignupTitle: Complete your signup
 configureLayout: Configure layout
 configureYourDraft: Configure your draft
 contactUs: Contact us
@@ -53,6 +51,7 @@ darkMode: Dark mode
 default: Default
 demo: Demo
 docs: Documentation
+docsFooterMsg: Documentation is never finished. Hopefully we were able to answer all your questions, but if that's not the case, help is available.
 docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
 docsNotFoundTitle: This documentation is missing
 documentationForDevelopers: Documentation for developers
@@ -95,8 +94,10 @@ imperialUnits: Imperial units (inch)
 info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is not a valid TLD'
+joinTheChatMsg: We have a chatroom on Gitter with friendly people who are happy to help out.  So don't be shy, and stop by for a chat.
 justAMoment: Just a moment
 layout: Layout
+letUsSetupYourAccount: Let us set up your account
 logIn: Log in
 loginWithProvider: 'Log in with<br>{provider}'
 logOut: Log out

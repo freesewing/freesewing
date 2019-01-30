@@ -1,7 +1,7 @@
 accountRemoved: Cuenta eliminada
 accountRestricted: Cuenta restringida
 avatar: Avatar
-avatarInfo: Tu avatar o foto de perfil se mostrarán junto a tus comentarios y en tu página de perfil. Puedes subir una imagen o seguir con la que se ha generado para ti.
+avatarInfo: Tu avatar o foto de perfil se mostrarán en tu página de perfil.
 avatarTitle: Establece tu foto de perfil
 bio: Bio
 bioInfo: Aquí es donde puede contarle a otros usuarios un poco sobre usted. Este campo admite MarkDown, por lo que también puede incluir enlaces. Si tienes un blog, aquí es donde te vinculas para que otros puedan descubrirlo.
@@ -31,7 +31,7 @@ patron: Patrocinador
 removeYourAccount: Elimina tu cuenta
 removeYourAccountInfo: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que tenemos almacenados para usted. No hay vuelta atrás, así que proceda con precaución.
 removeYourAccountWarning: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que hemos almacenado para usted. No hay vuelta atrás de esto.
-resetPasswordInfo: Ingrese una nueva contraseña y haga clic en el botón <b>Guardar</b>.
+resetPasswordInfo: Ingrese una nueva contraseña.
 resetPassword: Restablecer contraseña
 resetPasswordTitle: Ingrese su nueva contraseña
 restrictProcessingOfYourDataInfo: "La Protección de datos general (GDPR) de la UE garantiza su llamado <em> derecho a restringir el procesamiento </em>: el derecho a detener el procesamiento de sus datos."
@@ -44,9 +44,9 @@ socialTitle: Deja que la gente te siga a otra parte
 twitterInfo: Si proporciona su nombre de usuario de Twitter, su página de perfil contendrá un enlace a su cuenta de Twitter, para que los visitantes puedan descubrir sus tweets y seguirlo.
 twitterTitle: Rellene su nombre de usuario Twitter
 twitter: Twitter
-unitsInfo: Freesewing admite tanto el sistema métrico como las medidas imperiales. Simplemente seleccione cuál le gustaría usar y haga clic en el botón <b>Guardar</b> cuando esté listo.
+unitsInfo: Freesewing admite tanto el sistema métrico como las medidas imperiales.
 unitsTitle: Seleccione el sistema de unidad con el que esté más familiarizado
 units: Unidades
-usernameInfo: Actualmente tienes un nombre de usuario generado aleatoriamente. Eso no es muy personal, por lo que puedes cambiar tu nombre de usuario a algo más para ti. Me gusta tu nombre, o <em> reinadepedos </em> o lo que sea. Simplemente escriba el nombre de usuario que desea tener y haga clic en el botón <b> Guardar </b> cuando esté satisfecho con su nuevo nombre de usuario.
+usernameInfo: Actualmente tienes un nombre de usuario generado aleatoriamente. Eso no es muy personal, por lo que puedes cambiar tu nombre de usuario a algo más para ti. Me gusta tu nombre, o <em> reinadepedos </em> o lo que sea.
 username: Nombre de usuario
 usernameTitle: Por favor, elija su nombre de usuario

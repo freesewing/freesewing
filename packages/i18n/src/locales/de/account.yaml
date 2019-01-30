@@ -1,7 +1,7 @@
 accountRemoved: Konto entfernt
 accountRestricted: Konto eingeschränkt
 avatar: Avatar
-avatarInfo: Ihr Avatar oder Ihr Profilbild wird neben Ihren Kommentaren und auf Ihrer Profilseite angezeigt. Sie können ein Bild hochladen oder bei dem Bild bleiben, das für Sie erstellt wurde.
+avatarInfo: Ihr Avatar oder Ihr Profilbild wird auf Ihrer Profilseite angezeigt.
 avatarTitle: Stell dein Profilbild ein
 bio: Bio
 bioInfo: Hier können Sie anderen Freesewing-Benutzern etwas über sich erzählen. Dieses Feld unterstützt MarkDown, sodass Sie auch Links einfügen können. Wenn Sie einen Blog haben, können Sie ihn hierher verlinken, damit andere ihn entdecken können.
@@ -31,7 +31,7 @@ patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unters
 removeYourAccount: Entfernen Sie Ihr Konto
 removeYourAccountInfo: FIXME
 removeYourAccountWarning: Dadurch werden Ihr Konto, Ihre Entwürfe, Ihre Modelle und alle Daten, die wir für Sie gespeichert haben, entfernt. Es gibt keinen Weg zurück.
-resetPasswordInfo: Geben Sie ein neues Passwort ein und klicken Sie auf die Schaltfläche <b>Speichern</b>.
+resetPasswordInfo: Geben Sie ein neues Passwort ein.
 resetPassword: Passwort zurücksetzen
 resetPasswordTitle: Geben Sie Ihr neues Passwort ein
 restrictProcessingOfYourData: Beschränken Sie die Verarbeitung Ihrer Daten
@@ -45,8 +45,8 @@ twitterInfo: Wenn Sie Ihren Twitter-Benutzernamen angeben, enthält Ihre Profils
 twitterTitle: Geben Sie Ihren Twitter-Benutzernamen ein
 twitter: Twitter
 units: Einheiten
-unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Messungen. Wählen Sie einfach aus, welche Sie verwenden möchten, und klicken Sie auf die Schaltfläche <b>Speichern</ b>, wenn Sie fertig sind.
+unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Messungen.
 unitsTitle: Bitte wählen Sie das Einheitensystem aus, mit dem Sie am besten vertraut sind
-usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas mehr ändern. Wie dein Name oder Queenoffarts oder was auch immer. Geben Sie einfach den gewünschten Benutzernamen ein und klicken Sie auf die Schaltfläche <b>Speichern</b>, wenn Sie mit Ihrem neuen Benutzernamen zufrieden sind.
+usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas mehr ändern. Wie dein Name oder Queenoffarts oder was auch immer. Geben Sie einfach den gewünschten Benutzernamen ein.
 usernameTitle: Bitte wähle Deinen Benutzernamen
 username: Username

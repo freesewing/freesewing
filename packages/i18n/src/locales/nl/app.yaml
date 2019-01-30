@@ -33,8 +33,6 @@ clearGist: Resumé wissen
 close: Sluiten
 colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
-completeSignupText: "Voordat we onze start missen, laten we ervoor zorgen dat je account correct is ingesteld. Volg daartoe de onderstaande stappen:"
-completeSignupTitle: Voltooi je inschrijving
 configureLayout: Configureer layout
 configureYourDraft: Configureer je patroontekening
 contactUs: Neem contact op
@@ -53,6 +51,7 @@ darkMode: Donkere modus
 default: Standaard
 demo: Demo
 docs: Documentatie
+docsFooterMsg: Documentatie is nooit af. Hopelijk hebben we al je vragen kunnen beantwoorden, maar als dat niet het geval is, is er hulp beschikbaar.
 docsNotFoundMsg: We konden deze documentatie niet vinden, wat meestal betekent dat deze nog niet is geschreven.
 docsNotFoundTitle: Deze documentatie ontbreekt
 documentationForDevelopers: Documentatie voor ontwikkelaars
@@ -95,8 +94,10 @@ imperialUnits: Imperiale (Engelse) eenheden (duim)
 info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
+joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die graag helpen. Dus wees niet verlegen en kom langs voor een praatje.
 justAMoment: Een ogenblikje
 layout: Layout
+letUsSetupYourAccount: Laten we je account instellen
 logIn: Aanmelden
 loginWithProvider: 'Aanmelden met<br>{provider}'
 logOut: Afmelden

@@ -33,8 +33,6 @@ clearGist: Borrar esencia
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
 community: Comunidad
-completeSignupText: "Antes de comenzar con el pie equivocado, asegurémonos de que su cuenta esté configurada correctamente. Simplemente complete los pasos a continuación:"
-completeSignupTitle: Complete su registro
 configureLayout: Configurar diseño
 configureYourDraft: Configurar su boceto
 contactUs: Contactáctanos
@@ -53,6 +51,7 @@ darkMode: Modo oscuro
 default: Defecto
 demo: Demostración
 docs: Documentación
+docsFooterMsg: La documentación nunca se termina. Ojalá pudiéramos responder a todas sus preguntas, pero si ese no es el caso, hay ayuda disponible.
 docsNotFoundMsg: No pudimos encontrar esta documentación, lo que generalmente significa que aún no se ha escrito.
 docsNotFoundTitle: Esta documentación falta
 documentationForDevelopers: Documentación para desarrolladores
@@ -95,8 +94,10 @@ imperialUnits: Unidades imperiales (pulgadas)
 info: Información
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
+joinTheChatMsg: Tenemos una sala de chat en Gitter con personas amigables que están felices de ayudar. Así que no seas tímido, y pasa por un chat.
 justAMoment: Un momento
 layout: Diseño
+letUsSetupYourAccount: Permítanos configurar su cuenta
 logIn: Iniciar sesión
 loginWithProvider: 'Inicia sesión con<br>{provider}'
 logOut: cerrar sesión
