@@ -1,7 +1,7 @@
 import { box } from "./shared";
 
 export default part => {
-  let { Point, points, Snippet, snippets } = part.shorthand();
+  let { Point, points } = part.shorthand();
 
   points.anchor = new Point(50, 25)
     .attr("data-text", "msg")

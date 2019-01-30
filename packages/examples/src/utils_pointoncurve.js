@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     Point,
     points,
     Path,
@@ -31,9 +30,9 @@ export default part => {
         points.end,
         point
       )
-    )
+    ) {
       snippet = "notch";
-    else snippet = "x";
+    } else snippet = "x";
     snippets[part.getId()] = new Snippet(snippet, point);
   }
   paths.curve = new Path()

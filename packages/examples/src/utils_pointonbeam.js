@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     Point,
     points,
     Path,
@@ -28,9 +27,9 @@ export default part => {
     if (utils.pointOnBeam(points.from1, points.to1, point)) snippet = "notch";
     else snippet = "x";
     snippets[part.getId()] = new Snippet(snippet, point);
-    if (utils.pointOnBeam(points.from2, points.to2, point, 0.01))
+    if (utils.pointOnBeam(points.from2, points.to2, point, 0.01)) {
       snippet = "notch";
-    else snippet = "x";
+    } else snippet = "x";
     snippets[part.getId()] = new Snippet(snippet, point);
   }
   paths.line1 = new Path()

@@ -1,5 +1,5 @@
 export default part => {
-  let { Point, points, Path, paths, macro } = part.shorthand();
+  let { Point, points, macro } = part.shorthand();
 
   points.anchor = new Point(0, 0);
 

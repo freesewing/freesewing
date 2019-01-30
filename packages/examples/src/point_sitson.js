@@ -1,8 +1,7 @@
 import { box } from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {Point, points, Snippet, snippets, macro} = part.shorthand();
+  let { Point, points, Snippet, snippets } = part.shorthand();
 
   let s;
   for (let i = 0; i < 10; i++) {

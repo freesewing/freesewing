@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     Point,
     points,
     Path,
@@ -35,8 +34,9 @@ export default part => {
     points.Ccp,
     points.Dcp,
     points.D
-  ))
+  )) {
     snippets[part.getId()] = new Snippet("x", p);
+  }
 
   return part;
 };

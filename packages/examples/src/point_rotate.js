@@ -4,7 +4,6 @@ export default part => {
   points.sun = new Point(40, 40);
   snippets.sun = new Snippet("notch", points.sun);
   points.moon = new Point(70, 40);
-  let angle = 0;
   let step = 360 / 36;
   for (let i = 1; i < 37; i++) {
     let angle = step * i;

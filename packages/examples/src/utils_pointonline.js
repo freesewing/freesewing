@@ -1,6 +1,6 @@
 export default part => {
   // prettier-ignore
-  let {debug, Point, points, Path, paths, Snippet, snippets, utils} = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
 
   points.from1 = new Point(10, 10);
   points.to1 = new Point(90, 60);
@@ -20,9 +20,9 @@ export default part => {
     if (utils.pointOnLine(points.from1, points.to1, point)) snippet = "notch";
     else snippet = "x";
     snippets[part.getId()] = new Snippet(snippet, point);
-    if (utils.pointOnLine(points.from2, points.to2, point, 0.01))
+    if (utils.pointOnLine(points.from2, points.to2, point, 0.01)) {
       snippet = "notch";
-    else snippet = "x";
+    } else snippet = "x";
     snippets[part.getId()] = new Snippet(snippet, point);
   }
   paths.line1 = new Path()

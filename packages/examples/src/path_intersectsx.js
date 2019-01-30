@@ -23,8 +23,9 @@ export default part => {
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.DCp1, points.DCp1, points.D);
 
-  for (let p of paths.demo.intersectsX(60))
+  for (let p of paths.demo.intersectsX(60)) {
     snippets[part.getId()] = new Snippet("x", p);
+  }
 
   return part;
 };

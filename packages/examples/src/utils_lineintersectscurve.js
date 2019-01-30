@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     Point,
     points,
     Path,
@@ -21,15 +20,16 @@ export default part => {
     .curve(points.Acp, points.Bcp, points.B);
   paths.line = new Path().move(points.E).line(points.D);
 
-  for (let p of freesewing.utils.lineIntersectsCurve(
+  for (let p of utils.lineIntersectsCurve(
     points.D,
     points.E,
     points.A,
     points.Acp,
     points.Bcp,
     points.B
-  ))
+  )) {
     snippets[part.getId()] = new Snippet("x", p);
+  }
 
   return part;
 };

@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     Point,
     points,
     Path,

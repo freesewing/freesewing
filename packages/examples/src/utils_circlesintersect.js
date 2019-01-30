@@ -1,14 +1,5 @@
 export default part => {
-  let {
-    debug,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    utils
-  } = part.shorthand();
+  let { Point, points, Snippet, snippets, utils } = part.shorthand();
 
   points.A = new Point(10, 10)
     .attr("data-circle", 15)

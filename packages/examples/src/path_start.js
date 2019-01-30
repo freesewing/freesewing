@@ -1,13 +1,5 @@
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);
