@@ -200,6 +200,8 @@ UserSchema.methods.storagePath = function() {
 }
 
 UserSchema.methods.avatarUri = function(size = "l") {
+  if (this.picture === "") return config.static + "/avatar.svg";
+
   let prefix = (size === "l") ? "" : size+"-";
   return config.static
     +"/"
