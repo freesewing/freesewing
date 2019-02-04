@@ -96,7 +96,7 @@ UserController.prototype.readAccount = (req, res) => {
       const models ={};
       Model.find({user: user.handle}, (err, modelList) => {
         if(err) return res.sendStatus(400);
-        for ( let model of modelList ) models[model.handle] = model;
+        for ( let model of modelList ) models[model.handle] = model.info();
         const drafts ={};
         Draft.find({user: user.handle}, (err, draftList) => {
           if(err) return res.sendStatus(400);
