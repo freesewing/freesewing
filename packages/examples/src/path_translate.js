@@ -14,7 +14,7 @@ export default part => {
     .attr("data-text", "msg_path")
     .attr("data-text-class", "center");
 
-  paths.B = paths.A.translate(60, 30).attr("data-text", "msg_transform");
+  paths.B = paths.A.translate(60, 30).attr("data-text", "msg_transform", true);
 
   points.step1 = points.B.shift(0, 60);
   points.step2 = points.step1.shift(-90, 30);
