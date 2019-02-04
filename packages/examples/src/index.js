@@ -63,6 +63,9 @@ import draftUtils_lineintersectscircle from "./utils_lineintersectscircle";
 
 import draftSettings_sa from "./settings_sa";
 
+import draftSnippet_attr from "./snippet_attr";
+import draftSnippet_clone from "./snippet_clone";
+
 // Constructor
 const Examples = function(settings) {
   freesewing.Pattern.call(this, config);
@@ -130,6 +133,9 @@ Examples.prototype.draftPoint_rotate = draftPoint_rotate;
 Examples.prototype.draftPoint_translate = draftPoint_translate;
 
 Examples.prototype.draftSettings_sa = draftSettings_sa;
+
+Examples.prototype.draftSnippet_attr = draftSnippet_attr;
+Examples.prototype.draftSnippet_clone = draftSnippet_clone;
 
 Examples.prototype.draftUtils_linesintersect = draftUtils_linesintersect;
 Examples.prototype.draftUtils_beamsintersect = draftUtils_beamsintersect;

@@ -54,6 +54,8 @@ export default {
     "point_rotate",
     "point_translate",
     "settings_sa",
+    "snippet_attr",
+    "snippet_clone",
     "utils_linesintersect",
     "utils_beamsintersect",
     "utils_beamintersectsx",
