@@ -213,3 +213,6 @@ youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in
 yourRights: Your rights
 filterByPattern: Filter by pattern
+searchLanguageTitle: Can't find what you're looking for?
+searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
+

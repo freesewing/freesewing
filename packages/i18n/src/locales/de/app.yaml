@@ -213,4 +213,5 @@ youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
 filterByPattern: Nach Muster filtern
-
+searchLanguageTitle: Können Sie nicht finden, wonach Sie suchen?
+searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.

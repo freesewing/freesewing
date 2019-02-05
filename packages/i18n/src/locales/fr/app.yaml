@@ -213,3 +213,6 @@ youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
 filterByPattern: Filtrer par patron
+searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez?
+searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
+
