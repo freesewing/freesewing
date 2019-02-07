@@ -4,7 +4,7 @@ avatar: Avatar
 avatarInfo: Your avatar or profile picture will be shown on your profile page.
 avatarTitle: Set your profile picture
 bio: Bio
-bioInfo: This is where you can tell other freesewing users a little bit about yourself. This field supports MarkDown, so you can also include links. If you have a blog, this is where you link to it so others can discover it.
+bioInfo: This is where you can tell other freesewing users a little bit about yourself. This field supports MarkDown, so you can include links. If you have a blog, this is where you link to it so others can discover it.
 bioTitle: Write a short bio
 currentPassword: Current password
 email: E-mail address
