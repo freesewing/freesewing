@@ -19,20 +19,8 @@ import draftSleevePlacketUnderlap from "./sleeveplacket-underlap";
 import draftSleevePlacketOverlap from "./sleeveplacket-overlap";
 import draftCuff from "./cuff";
 
-// Constructor
-const Simon = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this.use(plugins)
-    .use(flipPlugin)
-    .use(buttonPlugin)
-    .apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Simon.prototype = Object.create(freesewing.Pattern.prototype);
-Simon.prototype.constructor = Simon;
+// Create pattern
+const Simon = freesewing.create(config, [plugins, flipPlugin, buttonPlugin]);
 
 // Attach per-part draft methods to prototype
 Simon.prototype.draftBase = function(part) {
