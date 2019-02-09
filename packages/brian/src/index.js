@@ -8,17 +8,8 @@ import draftFront from "./front";
 import draftSleevecap from "./sleevecap";
 import draftSleeve from "./sleeve";
 
-// Constructor
-const Brian = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this.use(plugins).apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Brian.prototype = Object.create(freesewing.Pattern.prototype);
-Brian.prototype.constructor = Brian;
+// Create pattern
+const Brian = freesewing.create(config, plugins);
 
 // Attach per-part draft methods to prototype
 Brian.prototype.draftBase = draftBase;

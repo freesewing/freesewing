@@ -148,12 +148,16 @@ let settings1 = { ...settings};
       }
       var pattern1 = new freesewing.patterns.brian(settings1);
       pattern1.use(freesewing.plugins.theme);
-      pattern1.use(freesewing.plugins.designer);
+      //pattern1.use(freesewing.plugins.designer);
       pattern1.settings.options.lengthBonus =0.1;
       //pattern1.settings.only="base";
-      pattern1.draft();
+      pattern1.settings.layout=false;
+      pattern1.sampleOption("chestEase");
       console.log(pattern1);
       document.getElementById("svg1").innerHTML = pattern1.render();
+
+      console.log('svg', pattern1.svg.layout);
+
 
       function pointHover(evt) {
         var point = evt.target;
