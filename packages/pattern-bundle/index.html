@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Aaron</title>
+  <style>
+    .two {
+      display: inline-block;
+      max-width: 95%;
+      margin: auto;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="svg"></div>
+    <div id="svg1" class="two"></div>
+    <div id="svg2" class="two"></div>
+    <script type="text/javascript" src="node_modules/freesewing/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/brian/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-bundle/dist/browser.js"></script>
+    <script type="text/javascript" src="dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-theme/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-designer/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-debug/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-validate/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/plugin-i18n/dist/browser.js"></script>
+    <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
+    <script>
+console.log(freesewing);
+      let settings = {
+        "complete": true,
+        "idPrefix": "fs-",
+        "locale": "en",
+        "options": { },
+        "embed": true,
+        "sa": 10,
+        "paperless": true,
+        "measurements": {
+          "bicepsCircumference": 335,
+          "centerBackNeckToWaist": 520,
+          "chestCircumference": 1080,
+          "hipsCircumference": 990,
+          "naturalWaist": 925,
+          "naturalWaistToHip": 145,
+          "neckCircumference": 420,
+          "shoulderSlope": 55,
+          "shoulderToElbow": 410,
+          "shoulderToShoulder": 465,
+          "shoulderToWrist": 680,
+          "wristCircumference": 190,
+          "seatCircumference": 1080,
+          "inseam": 910,
+          "seatDepth": 200,
+          "hipsToUpperLeg": 220,
+          "upperLegCircumference": 630,
+          "headCircumference": 590,
+          "naturalWaistToFloor": 1310,
+          "naturalWaistToSeat": 280
+        },
+        layout: false
+      };
+let settings1 = { ...settings};
+      settings1.sample = {
+        type: "models",
+        models: {
+          a: {
+          "bicepsCircumference": 335,
+          "centerBackNeckToWaist": 520,
+          "chestCircumference": 1080,
+          "hipsCircumference": 990,
+          "naturalWaist": 925,
+          "naturalWaistToHip": 145,
+          "neckCircumference": 420,
+          "shoulderSlope": 55,
+          "shoulderToElbow": 410,
+          "shoulderToShoulder": 465,
+          "shoulderToWrist": 680,
+          "wristCircumference": 190,
+          "seatCircumference": 1080,
+          "inseam": 910,
+          "seatDepth": 200,
+          "hipsToUpperLeg": 220,
+          "upperLegCircumference": 630,
+          "headCircumference": 590,
+          "naturalWaistToFloor": 1310,
+          "naturalWaistToSeat": 280
+        },
+        b: {
+          "bicepsCircumference": 33.5,
+          "centerBackNeckToWaist": 52,
+          "chestCircumference": 108,
+          "hipsCircumference": 99,
+          "naturalWaist": 92,
+          "naturalWaistToHip": 14,
+          "neckCircumference": 42,
+          "shoulderSlope": 5,
+          "shoulderToElbow": 41,
+          "shoulderToShoulder": 46,
+          "shoulderToWrist": 68,
+          "wristCircumference": 19,
+          "seatCircumference": 108,
+          "inseam": 91,
+          "seatDepth": 20,
+          "hipsToUpperLeg": 22,
+          "upperLegCircumference": 63,
+          "headCircumference": 59,
+          "naturalWaistToFloor": 131,
+          "naturalWaistToSeat": 28
+        }}
+      }
+      var pattern1 = new freesewing.patterns.Aaron(settings1);
+      pattern1.use(freesewing.plugins.theme);
+      pattern1.use(freesewing.plugins.designer);
+      pattern1.draft();
+      document.getElementById("svg1").innerHTML = pattern1.render();
+
+      function pointHover(evt) {
+        var point = evt.target;
+        var id = point.id;
+        var cx = point.getAttribute('x');
+        var cy = point.getAttribute('y');
+        var name = point.getAttribute('data-point');
+        var part = point.getAttribute('data-part');
+        console.log(name+' ('+cx+', '+cy+') @ '+part);
+        var scale = 2;
+        cx = cx-scale*cx;
+        cy = cy-scale*cy;
+        point.setAttribute("transform", 'matrix('+scale+', 0, 0, '+scale+', '+cx+', '+cy+')');
+        pointUnhover(id);
+      }
+      function pointUnhover(id) {
+        setTimeout(function(){
+            document.getElementById(id).removeAttribute("transform", '');
+        }, 500);
+      }
+    </script>
+  </body>
+</html>

@@ -27,7 +27,7 @@
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
     "watch": "rollup -w -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns.patterns;'",
     "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
     "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
     "rebuild": "npm run nodebuild && npm run modulebuild",
