@@ -13,19 +13,8 @@ import draftHoodCenter from "./hoodcenter";
 import draftWaistband from "./waistband";
 import draftCuff from "./cuff";
 
-// Constructor boilerplate
-const Hugo = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this
-    .use(plugins)
-    .apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Hugo.prototype = Object.create(freesewing.Pattern.prototype);
-Hugo.prototype.constructor = Hugo;
+// Create pattern
+const Hugo = freesewing.create(config, plugins);
 
 // Attach per-part draft methods to prototype
 Hugo.prototype.draftBase = function (part) {
