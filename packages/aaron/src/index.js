@@ -6,18 +6,8 @@ import config from "../config";
 import draftBack from "./back";
 import draftFront from "./front";
 
-const Aaron = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this
-    .use(plugins)
-    .apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Aaron.prototype = Object.create(freesewing.Pattern.prototype);
-Aaron.prototype.constructor = Aaron;
+// Create pattern
+const Aaron = freesewing.create(config, plugins);
 
 // Per-part draft methods
 Aaron.prototype.draftBase = function (part) {
