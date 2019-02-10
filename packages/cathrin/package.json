@@ -47,8 +47,8 @@
     ]
   },
   "dependencies": {
-    "freesewing": "^0.29.3",
-    "@freesewing/plugin-bundle": "^0.7.1"
+    "@freesewing/plugin-bundle": "^0.7.1",
+    "freesewing": "0.29.4"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
