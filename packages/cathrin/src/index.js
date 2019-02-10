@@ -11,19 +11,8 @@ import draftPanel4 from "./panel4";
 import draftPanel5 from "./panel5";
 import draftPanel6 from "./panel6";
 
-// Constructor
-const Cathrin = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this
-    .use(plugins)
-    .apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Cathrin.prototype = Object.create(freesewing.Pattern.prototype);
-Cathrin.prototype.constructor = Cathrin;
+// Create pattern
+const Cathrin = freesewing.create(config, plugins);
 
 // Attach per-part draft methods to prototype
 Cathrin.prototype.draftBase = draftBase;
