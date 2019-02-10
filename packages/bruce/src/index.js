@@ -7,19 +7,8 @@ import draftSide from "./side";
 import draftFront from "./front";
 import draftInset from "./inset";
 
-// Constructor
-const Bruce = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this
-    .use(plugins)
-    .apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Bruce.prototype = Object.create(freesewing.Pattern.prototype);
-Bruce.prototype.constructor = Bruce;
+// Create pattern
+const Bruce = freesewing.create(config, plugins);
 
 // Attach per-part draft methods to prototype
 Bruce.prototype.draftBack = part => draftBack(part);
