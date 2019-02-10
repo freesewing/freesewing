@@ -45,13 +45,13 @@
     ]
   },
   "dependencies": {
-    "@freesewing/aaron": "0.10.8",
-    "@freesewing/brian": "0.22.6",
-    "@freesewing/bruce": "0.5.6",
-    "@freesewing/cathrin": "0.4.6",
-    "@freesewing/hugo": "0.4.6",
-    "@freesewing/simon": "0.3.10",
-    "@freesewing/sven": "0.1.5",
+    "@freesewing/aaron": "0.10.9",
+    "@freesewing/brian": "0.22.7",
+    "@freesewing/bruce": "0.5.7",
+    "@freesewing/cathrin": "0.4.7",
+    "@freesewing/hugo": "0.4.7",
+    "@freesewing/simon": "0.3.11",
+    "@freesewing/sven": "0.1.6",
     "freesewing": "0.29.4"
   },
   "devDependencies": {
