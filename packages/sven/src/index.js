@@ -8,17 +8,8 @@ import draftSleeve from "./sleeve";
 import draftCuff from "./cuff";
 import draftWaistband from "./waistband";
 
-// Constructor
-const Sven = function(settings) {
-  freesewing.Pattern.call(this, config);
-  this.use(plugins).apply(settings);
-
-  return this;
-};
-
-// Set up inheritance
-Sven.prototype = Object.create(freesewing.Pattern.prototype);
-Sven.prototype.constructor = Sven;
+// Create pattern
+const Sven = freesewing.create(config, plugins);
 
 // Attach per-part draft methods to prototype
 Sven.prototype.draftBase = function(part) {
