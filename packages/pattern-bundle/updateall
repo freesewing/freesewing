@@ -1,0 +1,10 @@
+npm install -save \
+freesewing@latest \
+@freesewing/aaron@latest \
+@freesewing/brian@latest \
+@freesewing/bruce@latest \
+@freesewing/cathrin@latest \
+@freesewing/hugo@latest \
+@freesewing/simon@latest \
+@freesewing/sven@latest \
+
