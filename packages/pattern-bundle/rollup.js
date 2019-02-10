@@ -21,7 +21,7 @@ export default {
       }
     })
   ],
-  external: ["freesewing"],
+  external: ["freesewing", "@freesewing/plugin-bundle"],
   output: {
     globals: {
       freesewing: "freesewing"
