@@ -52,7 +52,7 @@
     "@freesewing/hugo": "0.4.6",
     "@freesewing/simon": "0.3.10",
     "@freesewing/sven": "0.1.5",
-    "freesewing": "0.29.3"
+    "freesewing": "0.29.4"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
