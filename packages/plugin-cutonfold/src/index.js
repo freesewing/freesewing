@@ -15,7 +15,7 @@ export default {
   macros: {
     cutonfold: function(so) {
       let points = this.points;
-      let so = {
+      so = {
         offset: 50,
         margin: 0.05,
         ...so
