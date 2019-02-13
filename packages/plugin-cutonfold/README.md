@@ -66,8 +66,8 @@ This plugin provides the `cutonfold` macro.
 
 ```js
 macro('cutonfold', {
-  from: points.cbNeck
-  , to: points.cbHips
+  from: points.cbNeck,
+  to: points.cbHips
 });
   ```
 
@@ -75,6 +75,8 @@ macro('cutonfold', {
 
  - `to`: A point object at the start of the cut-on-fold indicator
  - `from`: A point object at the end of the cut-on-fold indicator
+ - `offset`: Distance in mm that the cut-on-fold line is offset from the line between `from` and `to`.  Default: 50mm.
+ - `margin`: Percentange the cut-on-fold line will remain from the `from` and `to` points. Default: 5%.
         
 As all freesewing macros, bundle these parameters into a single object.
 

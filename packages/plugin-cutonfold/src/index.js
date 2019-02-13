@@ -15,13 +15,18 @@ export default {
   macros: {
     cutonfold: function(so) {
       let points = this.points;
-      points.cutonfoldFrom = so.to.shiftTowards(so.from, 30);
-      points.cutonfoldTo = so.from.shiftTowards(so.to, 30);
+      let so = {
+        offset: 50,
+        margin: 0.05,
+        ...so
+      };
+      points.cutonfoldFrom = so.to.shiftFractionTowards(so.from, so.margin);
+      points.cutonfoldTo = so.from.shiftFractionTowards(so.to, so.margin);
       points.cutonfoldVia1 = so.to
-        .shiftTowards(so.from, 50)
+        .shiftTowards(so.from, so.offset)
         .rotate(-90, points.cutonfoldFrom);
       points.cutonfoldVia2 = so.from
-        .shiftTowards(so.to, 50)
+        .shiftTowards(so.to, so.offset)
         .rotate(90, points.cutonfoldTo);
       let text = so.grainline ? "cutOnFoldAndGrainline" : "cutOnFold";
       this.paths.cutonfold = new this.Path()
