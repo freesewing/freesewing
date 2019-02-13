@@ -1,5 +1,5 @@
 {
-  "version": "0.11.12",
+  "version": "0.12.0",
   "name": "@freesewing/patterns",
   "description": "An umbrella package for all freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
