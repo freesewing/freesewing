@@ -8,7 +8,7 @@ export default {
   tags: ["top"],
   parts: ["top"],
   optionGroups: {
-    fit: ["armholeDepth", "chestEase", "shoulderSlope"],
+    fit: ["armholeDepthFactor", "chestEase", "shoulderSlope"],
     style: ["flare", "lengthBonus", "shoulderseamLength"]
   }
 };
