@@ -115,6 +115,11 @@ export default function(part) {
     macro("title", { at: points.title, nr: 1, title: "top" });
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.15);
     snippets.logo = new Snippet("logo", points.logo);
+    points.scalebox = points.topLeft.shiftFractionTowards(
+      points.bottomRight,
+      0.65
+    );
+    macro("scalebox", { at: points.scalebox });
     macro("sprinkle", {
       snippet: "notch",
       on: [
