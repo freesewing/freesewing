@@ -5,6 +5,7 @@ import Cathrin from "@freesewing/cathrin";
 import Hugo from "@freesewing/hugo";
 import Simon from "@freesewing/simon";
 import Sven from "@freesewing/sven";
+import Tamiko from "@freesewing/tamiko";
 import info from "./info";
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
@@ -17,7 +18,8 @@ export const patterns = {
   Cathrin,
   Hugo,
   Simon,
-  Sven
+  Sven,
+  Tamiko
 };
 
 export const patternList = Object.keys(patterns).map(p => uncapitalize(p));
