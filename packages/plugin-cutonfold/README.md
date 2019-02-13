@@ -77,6 +77,7 @@ macro('cutonfold', {
  - `from`: A point object at the end of the cut-on-fold indicator
  - `offset`: Distance in mm that the cut-on-fold line is offset from the line between `from` and `to`.  Default: 50mm.
  - `margin`: Percentange the cut-on-fold line will remain from the `from` and `to` points. Default: 5%.
+ - `grainline`: Whether this is also the grainline. Default: `false`
         
 As all freesewing macros, bundle these parameters into a single object.
 

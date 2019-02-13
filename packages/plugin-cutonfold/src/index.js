@@ -17,11 +17,14 @@ export default {
       let points = this.points;
       so = {
         offset: 50,
-        margin: 0.05,
+        margin: 5,
         ...so
       };
-      points.cutonfoldFrom = so.to.shiftFractionTowards(so.from, so.margin);
-      points.cutonfoldTo = so.from.shiftFractionTowards(so.to, so.margin);
+      points.cutonfoldFrom = so.to.shiftFractionTowards(
+        so.from,
+        so.margin / 100
+      );
+      points.cutonfoldTo = so.from.shiftFractionTowards(so.to, so.margin / 100);
       points.cutonfoldVia1 = so.to
         .shiftTowards(so.from, so.offset)
         .rotate(-90, points.cutonfoldFrom);
