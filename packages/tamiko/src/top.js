@@ -28,7 +28,7 @@ export default function(part) {
     (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip);
 
   // Armhole depth
-  let arm = measurements.shoulderToShoulder * options.armholeDepth;
+  let arm = shoulders * options.armholeDepthFactor;
 
   // Shoulder seam length
   let shoulderseam = shoulders * options.shoulderseamLength;
@@ -42,17 +42,9 @@ export default function(part) {
   // Armhole
   points.bottomLeft = new Point(0, shoulders);
   points.armholeTop = new Point(shoulders / 4, shoulders);
-  points.armholeBottom = points.armholeTop.shift(
-    0,
-    shoulders * options.armholeDepth
-  );
-  points.armholePitch = points.armholeTop
-    .shift(0, (shoulders * options.armholeDepth) / 2)
-    .shift(90, (shoulders * options.armholeDepth) / 5);
-  points.armholePitchCp1 = points.armholePitch.shift(
-    180,
-    (shoulders * options.armholeDepth) / 2.5
-  );
+  points.armholeBottom = points.armholeTop.shift(0, arm);
+  points.armholePitch = points.armholeTop.shift(0, arm / 2).shift(90, arm / 5);
+  points.armholePitchCp1 = points.armholePitch.shift(180, arm / 2.5);
   points.armholePitchCp2 = points.armholePitchCp1.flipX(points.armholePitch);
 
   // Left shoulder seam
@@ -61,10 +53,7 @@ export default function(part) {
     .rotate(options.shoulderSlope, points.armholeTop);
 
   // Side seam
-  points.armgapBottom = points.armgapTop.shift(
-    0,
-    shoulders * options.armholeDepth
-  );
+  points.armgapBottom = points.armgapTop.shift(0, arm);
   points.armgapBottom = points.armholeBottom.shiftTowards(
     points.armgapBottom,
     chest

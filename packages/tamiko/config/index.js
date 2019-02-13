@@ -11,14 +11,9 @@ export default {
   ],
   parts: ["top"],
   options: {
-    shoulderSlope: {
-      deg: 15,
-      min: 0,
-      max: 25
-    },
-    lengthBonus: {
-      pct: 13,
-      min: 0,
+    armholeDepthFactor: {
+      pct: 50,
+      min: 40,
       max: 60
     },
     chestEase: {
@@ -26,9 +21,14 @@ export default {
       min: 1,
       max: 20
     },
-    armholeDepth: {
-      pct: 50,
-      min: 40,
+    flare: {
+      deg: 15,
+      min: -10,
+      max: 30
+    },
+    lengthBonus: {
+      pct: 13,
+      min: 0,
       max: 60
     },
     shoulderseamLength: {
@@ -36,10 +36,10 @@ export default {
       min: 5,
       max: 25
     },
-    flare: {
+    shoulderSlope: {
       deg: 15,
-      min: -10,
-      max: 30
+      min: 0,
+      max: 25
     }
   }
 };
