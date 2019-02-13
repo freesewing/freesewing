@@ -6,7 +6,7 @@ import draftTop from "./top";
 
 // Create pattern
 const Tamiko = freesewing.create(config, plugins);
-
+console.log(config, new Tamiko());
 // Part draft method
 Tamiko.prototype.draftTop = part => draftTop(part);
 
