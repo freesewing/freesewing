@@ -1,0 +1,15 @@
+armholeDepthFactor: brian
+chestEase: brian
+lengthBonus: brian
+
+flare:
+  title: Flare
+  description: The amount by which the garment flares from your chest downwards
+
+shoulderseamLength:
+  title: Shoulderseam length
+  description: The length of the shoulder seam, as a factor of your shoulder to shoulder measurement
+
+shoulderSlope:
+  title: Shoulder slope
+  description: Controls the angle of the shoulderseams

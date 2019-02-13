@@ -2,8 +2,10 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-aboutGist1: Un résumé contient toutes les informations nécessaires pour dessiner un rédiger un ébauche.
-aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
+aboutGist1: Un résumé contient toutes les informations nécessaires pour dessiner un
+  rédiger un ébauche.
+aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point
+  de départ pour votre propre ébauche.
 account: Compte
 accountCreated: Compte créé
 actions: Actions
@@ -24,8 +26,11 @@ cancel: Annuler
 changeModel: Changer le modèle
 changePattern: Changer le patron
 chatOnGitter: Chatter sur Gitter
-checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
-chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
+checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans
+  l'e-mail de confirmation que nous vous avons envoyé.
+chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de
+  seins, les mesures non pertinentes seront masquées lors de la configuration du
+  modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
 chest: Poitrine
 chooseAModel: Choisir un modèle
 chooseAPattern: Choisir un patron
@@ -43,7 +48,8 @@ continue: Continuer
 copiedToClipboard: Copié dans le presse-papier
 copy: Copier
 couldYouTranslateThis: Pourriez-vous traduire cela?
-countModelsLackingForPattern: Vous avez {count} modèles qui ne disposent pas des mesures requises pour dessiner {pattern}
+countModelsLackingForPattern: Vous avez {count} modèles qui ne disposent pas des mesures requises pour
+  dessiner {pattern}
 created: Créé
 createModel: Créer le modèle
 custom: Personnalisé
@@ -52,8 +58,10 @@ darkMode: Mode sombre
 default: Standard
 demo: Démo
 docs: Documentation
-docsFooterMsg: La documentation n'est jamais terminée. J'espère que nous avons pu répondre à toutes vos questions, mais si ce n'est pas le cas, de l'aide est disponible.
-docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement qu'elle n'a pas encore été écrite.
+docsFooterMsg: La documentation n'est jamais terminée. J'espère que nous avons pu répondre à
+  toutes vos questions, mais si ce n'est pas le cas, de l'aide est disponible.
+docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement
+  qu'elle n'a pas encore été écrite.
 docsNotFoundTitle: Cette documentation est manquante
 documentationForDevelopers: Documentation pour les développeurs
 documentationForEditors: Documentation pour les éditeurs
@@ -61,13 +69,15 @@ documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
-draftPattern: 'Ébauche de {pattern}'
-draftPatternForModel: 'Ebauche de {pattern} pour {model}'
+draftPattern: Ébauche de {pattern}
+draftPatternForModel: Ebauche de {pattern} pour {model}
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
-dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
+dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide
+  du bouton ci-dessous
 emailAddress: Adresse mail
-emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
+emailWorksToo: Si vous ne connaissez pas votre nom d'utilisateur, votre adresse mail
+  fonctionne également
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 exportDraft: Exporter l'ébauche
 export: Exporter
@@ -77,7 +87,8 @@ faq: Questions fréquemment posées
 fieldRemoved: "{field} enlevé"
 fieldSaved: "{field} enregistré"
 filterPatterns: Filtrez les patrons
-forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
+forgotLoginInstructions: Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez
+  sur le bouton <b>Réintialiser le mot de passe</b>.
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
 gist: Résumé
@@ -100,7 +111,7 @@ justAMoment: Juste un instant
 layout: Mis en page
 letUsSetupYourAccount: Laissez-nous configurer votre compte
 logIn: Connexion
-loginWithProvider: 'Connectez-vous avec<br>{provider}'
+loginWithProvider: Connectez-vous avec<br>{provider}
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -127,15 +138,19 @@ ohNo: Oh non !
 options: Options
 orPayPerYear: Ou payer par an
 other: Autre
-otherThing: "Autres {thing}"
+otherThing: Autres {thing}
 patron-2: Powder monkey
 patron-4: Second
 patron-8: Capitaine
-patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
+patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron,
+  veuillez contacter Joost.
 patron: Mécène
 ourPatrons: Notre mécènes
-patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez épargner quelques pièces chaque mois, vous devriez également devenir un mécène de Freesewing.
-patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
+patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez
+  épargner quelques pièces chaque mois, vous devriez également devenir un mécène
+  de Freesewing.
+patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils
+  gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
 pattern: Patron
@@ -152,12 +167,13 @@ relatedLinks: Liens connexes
 remove: Supprimer
 reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
-resendActivationEmailMessage: Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation
+resendActivationEmailMessage: Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons
+  un nouveau message de confirmation
 resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
-saveDraftToYourAccount: "Enregistrer l'ébauche sur votre compte"
+saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
 search: Chercher
 selectAPartToMoveMirrorOrRotate: Sélectionnez une pièce à déplacer, inverser ou faire pivoter
@@ -170,12 +186,12 @@ share: Partager
 showcase: Galerie
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
-signupWithProvider: 'Inscrivez-vous avec<br>{provider}'
+signupWithProvider: Inscrivez-vous avec<br>{provider}
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
 startTranslatingNow: Commencez à traduire maintenant
-startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
+startTranslatingNowOrRead: "{startTranslatingNow}, ou lisez d'abord la {documentationForTranslators}."
 subscribe: Souscrire
 supportFreesewing: Soutenir freesewing
 tellMeMore: En savoir plus
@@ -185,16 +201,25 @@ thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
 thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
-txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de nos mécènes
-txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
-txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
-txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
-txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
-txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
-unitsInfo: Freesewing prend en charge le système métrique et les unités impériales. Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le
+  soutien financier de nos mécènes
+txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous
+  soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
+txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le
+  prix d'un latte, mais votre soutien compte beaucoup pour nous.
+txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag
+  Freesewing tant convoité chez vous, partout dans le monde.
+txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le
+  freesewing se développe, c'est le niveau qui vous convient. Aussi: swag
+  supplémentaire!"
+txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre
+  niveaux:"
+unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.
+  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous
+  utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 update: Mettre à jour
-userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
+userHasBeenWithUsSince: "{user} est parmi nous depuis {since}"
 users: Utilisateurs
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
@@ -214,5 +239,6 @@ youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
 filterByPattern: Filtrer par patron
 searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez?
-searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
-
+searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu
+  n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en
+  anglais.
