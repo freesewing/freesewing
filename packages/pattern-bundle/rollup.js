@@ -14,14 +14,14 @@ export default {
     json(),
     babel({
       exclude: "node_modules/**"
+    }),
+    terser({
+      output: {
+        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      }
     })
-    //terser({
-    //  output: {
-    //    preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-    //  }
-    //})
   ],
-  external: ["freesewing", "@freesewing/plugin-bundle"],
+  //external: ["freesewing", "@freesewing/plugin-bundle"], // FIXME: See https://github.com/freesewing/patterns/issues/1
   output: {
     globals: {
       freesewing: "freesewing"
