@@ -2,6 +2,7 @@ department:
   title: Abteilung
   menswear: Herrenbekleidung
   womenswear: Frauenkleidung
+  accessories: Accessoires
 
 type:
   title: Art

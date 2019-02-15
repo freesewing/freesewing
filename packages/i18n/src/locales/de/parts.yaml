@@ -6,6 +6,8 @@ buttonPlacket: Knopfleiste
 collar: Kragen
 collarStand: Kragenstand
 cuff: Manschetten
+fabricTail: Stoffschwanz
+fabricTip: Stoffspitze
 frontBase: Vorderseite Basis
 frontLeft: Vorne links
 frontRight: Vorne rechts
@@ -13,6 +15,11 @@ front: Vorderseite
 hoodCenter: Haubenmitte
 hoodSide: Haube Seite
 inset: Einsatz
+interfacingTail: Einlageschwanz
+interfacingTip: Einlagespitze
+liningTail: Futterschwanz
+liningTip: Futterspitze
+loop: Schleife
 panel1: Teil 1
 panel2: Teil 2
 panel3: Teil 3

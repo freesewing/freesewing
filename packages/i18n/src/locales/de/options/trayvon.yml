@@ -1,0 +1,9 @@
+lengthBonus: brian
+
+tipWidth:
+  title: Spitzenbreite
+  description: Die Breite Ihrer Krawatte an der Spitze
+
+knotWidth:
+  title: Knotenbreite
+  description: Die Breite Ihrer Krawatte am Knoten

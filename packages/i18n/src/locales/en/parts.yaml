@@ -6,6 +6,8 @@ buttonPlacket: Button placket
 collar: Collar
 collarStand: Collar stand
 cuff: Cuff
+fabricTail: Fabric tail
+fabricTip: Fabric tip
 frontBase: Front base
 front: Front
 frontLeft: Front left
@@ -13,6 +15,11 @@ frontRight: Front right
 hoodCenter: Hood center
 hoodSide: Hood side
 inset: Inset
+interfacingTail: Interfacing tail
+interfacingTip: Interfacing tip
+liningTail: Lining tail
+liningTip: Lining tip
+loop: Loop
 panel1: Panel 1
 panel2: Panel 2
 panel3: Panel 3

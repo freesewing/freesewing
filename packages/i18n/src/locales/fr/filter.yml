@@ -2,6 +2,7 @@ department:
   title: Département
   menswear: Vêtements pour hommes
   womenswear: Vêtements pour femmes
+  accessories: Accessories
 
 type:
   title: Type

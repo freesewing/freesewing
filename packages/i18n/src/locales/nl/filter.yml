@@ -2,6 +2,7 @@ department:
   title: Afdeling
   menswear: Herenkleding
   womenswear: Dameskleding
+  accessories: Accessoires
 
 type:
   title: Soort

@@ -6,6 +6,8 @@ buttonPlacket: Patte de boutonnage
 collar: Col
 collarStand: Col support
 cuff: Manchette
+fabricTail: Queue en tissu
+fabricTip: Pointe en tissu
 front: Avant
 frontBase: Base avant
 frontLeft: Avant gauche
@@ -13,6 +15,11 @@ frontRight: Avant droit
 hoodCenter: Capuchon centre
 hoodSide: Capuchon côté
 inset: Encart
+interfacingTail: Queue en entoilage
+interfacingTip: Pointe en entoilage
+liningTail: Queue en doublure
+liningTip: Pointe en doublure
+loop: Boucle
 panel1: Pièce 1
 panel2: Pièce 2
 panel3: Pièce 3

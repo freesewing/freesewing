@@ -2,6 +2,7 @@ department:
   title: Departamento
   menswear: Ropa de caballero
   womenswear: Ropa de mujer
+  accessories: Accesorios
 
 type:
   title: Tipo
