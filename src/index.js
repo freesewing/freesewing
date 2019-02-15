@@ -25,12 +25,12 @@ const create = function(config, plugins = false) {
 
 export default {
   version: version,
+  create,
   Pattern,
   Point,
   Path,
   Snippet,
   utils,
   patterns: {},
-  plugins: {},
-  create
+  plugins: {}
 };

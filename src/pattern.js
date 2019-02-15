@@ -135,6 +135,12 @@ Pattern.prototype.draft = function() {
           'Method "' + method + '" on pattern object is not callable'
         );
       this.parts[partName] = this[method](this.parts[partName]);
+      if (typeof this.parts[partName] === "undefined")
+        throw new Error(
+          "Result of " +
+            method +
+            "() was undefined. Did you forget to return the Part object?"
+        );
       this.parts[partName].render = this.wants(partName);
     }
   }
