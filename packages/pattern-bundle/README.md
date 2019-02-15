@@ -30,7 +30,11 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
 ### Womenswear
 
  - [cathrin](https://github.com/freesewing/cathrin) : An underbust corset or waist trainer
+ - [tamiko](https://github.com/freesewing/tamiko) : A zero-waste top
 
+### Accessories
+ 
+ - [trayvon](https://github.com/freesewing/trayvon) : A (neck) tie
 
 > #### Note: menswear/womenswear has nothing to do with gender
 >
