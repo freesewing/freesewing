@@ -5,7 +5,7 @@ export default {
   department: "menswear",
   type: "pattern",
   difficulty: 4,
-  tags: ["top", "shirt"],
+  tags: ["top"],
   parts: [
     "cuff",
     "sleevePlacketOverlap",

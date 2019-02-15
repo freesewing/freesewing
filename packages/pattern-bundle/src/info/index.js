@@ -6,6 +6,7 @@ import hugo from "./hugo";
 import simon from "./simon";
 import sven from "./sven";
 import tamiko from "./tamiko";
+import trayvon from "./trayvon";
 
 export default {
   aaron,
@@ -15,5 +16,6 @@ export default {
   hugo,
   simon,
   sven,
-  tamiko
+  tamiko,
+  trayvon
 };
