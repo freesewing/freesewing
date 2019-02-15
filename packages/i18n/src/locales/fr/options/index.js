@@ -6,6 +6,7 @@ import hugo from "./hugo.yml";
 import simon from "./simon.yml";
 import sven from "./sven.yml";
 import tamiko from "./tamiko.yml";
+import trayvon from "./trayvon.yml";
 
 let patterns = {
   brian,
@@ -15,7 +16,8 @@ let patterns = {
   hugo,
   simon,
   sven,
-  tamiko
+  tamiko,
+  trayvon
 };
 
 let options = {};
