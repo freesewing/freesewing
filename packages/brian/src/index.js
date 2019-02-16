@@ -8,10 +8,10 @@ import draftFront from "./front";
 import draftSleevecap from "./sleevecap";
 import draftSleeve from "./sleeve";
 
-// Create pattern
-const Brian = freesewing.create(config, plugins);
+// Create design
+const Brian = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Brian.prototype.draftBase = draftBase;
 Brian.prototype.draftBack = draftBack;
 Brian.prototype.draftFront = draftFront;

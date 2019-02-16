@@ -2,8 +2,21 @@ import freesewing from "freesewing";
 import * as shared from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {units, debug, measurements, options, store, points, snippets, Point, Snippet, Path, paths, utils, complete } = part.shorthand();
+  let {
+    units,
+    debug,
+    measurements,
+    options,
+    store,
+    points,
+    snippets,
+    Point,
+    Snippet,
+    Path,
+    paths,
+    utils,
+    complete
+  } = part.shorthand();
 
   store.set(
     "shoulderEase",
