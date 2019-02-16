@@ -19,10 +19,14 @@ import draftSleevePlacketUnderlap from "./sleeveplacket-underlap";
 import draftSleevePlacketOverlap from "./sleeveplacket-overlap";
 import draftCuff from "./cuff";
 
-// Create pattern
-const Simon = freesewing.create(config, [plugins, flipPlugin, buttonPlugin]);
+// Create design
+const Simon = new freesewing.Design(config, [
+  plugins,
+  flipPlugin,
+  buttonPlugin
+]);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Simon.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
