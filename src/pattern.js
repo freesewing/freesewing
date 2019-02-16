@@ -78,7 +78,7 @@ export default function Pattern(config = { options: {} }) {
   };
 
   // Part closure
-  this.Part = () => {
+  this.Part = function() {
     let part = new Part();
     part.context = context;
     for (let macro in context.macros) {
