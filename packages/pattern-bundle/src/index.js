@@ -1,27 +1,27 @@
-import Aaron from "@freesewing/aaron";
+//import Aaron from "@freesewing/aaron";
 import Brian from "@freesewing/brian";
-import Bruce from "@freesewing/bruce";
-import Cathrin from "@freesewing/cathrin";
-import Hugo from "@freesewing/hugo";
-import Simon from "@freesewing/simon";
-import Sven from "@freesewing/sven";
-import Tamiko from "@freesewing/tamiko";
-import Trayvon from "@freesewing/trayvon";
+//import Bruce from "@freesewing/bruce";
+//import Cathrin from "@freesewing/cathrin";
+//import Hugo from "@freesewing/hugo";
+//import Simon from "@freesewing/simon";
+//import Sven from "@freesewing/sven";
+//import Tamiko from "@freesewing/tamiko";
+//import Trayvon from "@freesewing/trayvon";
 import info from "./info";
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 const uncapitalize = string => string.charAt(0).toLowerCase() + string.slice(1);
 
 export const patterns = {
-  Aaron,
-  Brian,
-  Bruce,
-  Cathrin,
-  Hugo,
-  Simon,
-  Sven,
-  Tamiko,
-  Trayvon
+  //  Aaron,
+  Brian
+  //  Bruce,
+  //  Cathrin,
+  //  Hugo,
+  //  Simon,
+  //  Sven,
+  //  Tamiko,
+  //  Trayvon
 };
 
 export const patternList = Object.keys(patterns).map(p => uncapitalize(p));

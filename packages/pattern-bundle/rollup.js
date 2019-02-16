@@ -21,10 +21,11 @@ export default {
       }
     })
   ],
-  //external: ["freesewing", "@freesewing/plugin-bundle"], // FIXME: See https://github.com/freesewing/patterns/issues/1
+  external: ["freesewing", "@freesewing/plugin-bundle"],
   output: {
     globals: {
-      freesewing: "freesewing"
+      freesewing: "freesewing",
+      "@freesewing/plugin-bundle": "freesewing.plugins.bundle"
     }
   }
 };
