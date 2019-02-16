@@ -6,10 +6,10 @@ import config from "../config";
 import draftBack from "./back";
 import draftFront from "./front";
 
-// Create pattern
-const Aaron = freesewing.create(config, plugins);
+// Create design
+const Aaron = new freesewing.Design(config, plugins);
 
-// Per-part draft methods
+// Attach draft methods to prototype
 Aaron.prototype.draftBase = function(part) {
   // Getting the base part from Brian
   return new Brian(this.settings).draftBase(part);
