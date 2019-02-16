@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@freesewing/aaron": "0.12.3",
-    "@freesewing/brian": "0.22.12",
+    "@freesewing/brian": "0.22.13",
     "@freesewing/bruce": "0.6.1",
     "@freesewing/cathrin": "0.5.1",
     "@freesewing/examples": "0.7.2",
@@ -73,9 +73,9 @@
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-babel-minify": "7.0.0",
     "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "4.0.0",
-    "rollup-plugin-terser": "4.0.4"
+    "rollup-plugin-node-resolve": "4.0.0"
   },
   "files": [
     "dist/*",
