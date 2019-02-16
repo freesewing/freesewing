@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
