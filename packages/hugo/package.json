@@ -47,14 +47,14 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "0.22.6",
+    "@freesewing/brian": "0.22.10",
     "@freesewing/plugin-bundle": "0.7.3",
-    "freesewing": "0.29.4"
+    "freesewing": "0.30.2"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
     "@freesewing/antman": "0.3.0",
-    "@freesewing/models": "0.7.1",
+    "@freesewing/models": "0.7.3",
     "@freesewing/plugin-debug": "0.5.2",
     "@freesewing/plugin-designer": "0.10.0",
     "@freesewing/plugin-i18n": "0.1.2",

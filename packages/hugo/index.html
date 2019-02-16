@@ -18,6 +18,7 @@
     <script type="text/javascript" src="node_modules/@freesewing/models/dist/browser.js"></script>
     <script type="text/javascript" src="node_modules/@freesewing/antman/dist/browser.js"></script>
     <script>
+      console.log(freesewing);
       var pattern = new freesewing.patterns.hugo;
       pattern
         .use(freesewing.plugins.debug)
@@ -28,14 +29,14 @@
       ;
       pattern.settings.locale = 'nl';
       pattern.settings.paperless = true;
-      pattern.settings.measurements = freesewing.models.men.manSize40;
+      pattern.settings.measurements = freesewing.models.manSize40;
       pattern.settings.margin = 2;
       pattern.settings.sa = 10;
       pattern.settings.units = 'metric';
       pattern.settings.sample = {
         type: 'models',
         focus: 'manSize34',
-        models: freesewing.models.men
+        models: freesewing.models
       }
 
     pattern.settings.measurements = {

@@ -13,33 +13,33 @@ import draftHoodCenter from "./hoodcenter";
 import draftWaistband from "./waistband";
 import draftCuff from "./cuff";
 
-// Create pattern
-const Hugo = freesewing.create(config, plugins);
+// Create design
+const Hugo = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
-Hugo.prototype.draftBase = function (part) {
+// Attach draft methods to prototype
+Hugo.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
-}
-Hugo.prototype.draftFrontBase = function (part) {
+};
+Hugo.prototype.draftFrontBase = function(part) {
   return new Brian(this.settings).draftFront(part);
-}
-Hugo.prototype.draftBackBase = function (part) {
+};
+Hugo.prototype.draftBackBase = function(part) {
   return new Brian(this.settings).draftBack(part);
-}
-Hugo.prototype.draftSleeveBase = function (part) {
+};
+Hugo.prototype.draftSleeveBase = function(part) {
   return new Brian(this.settings).draftSleeve(part);
-}
-Hugo.prototype.draftSleevecap = function (part) {
+};
+Hugo.prototype.draftSleevecap = function(part) {
   return new Brian(this.settings).draftSleevecap(part);
-}
-Hugo.prototype.draftBack         = draftBack;
-Hugo.prototype.draftFront        = draftFront;
-Hugo.prototype.draftSleeve       = draftSleeve;
-Hugo.prototype.draftPocket       = draftPocket;
+};
+Hugo.prototype.draftBack = draftBack;
+Hugo.prototype.draftFront = draftFront;
+Hugo.prototype.draftSleeve = draftSleeve;
+Hugo.prototype.draftPocket = draftPocket;
 Hugo.prototype.draftPocketFacing = draftPocketFacing;
-Hugo.prototype.draftHoodSide     = draftHoodSide;
-Hugo.prototype.draftHoodCenter   = draftHoodCenter;
-Hugo.prototype.draftWaistband    = draftWaistband;
-Hugo.prototype.draftCuff         = draftCuff;
+Hugo.prototype.draftHoodSide = draftHoodSide;
+Hugo.prototype.draftHoodCenter = draftHoodCenter;
+Hugo.prototype.draftWaistband = draftWaistband;
+Hugo.prototype.draftCuff = draftCuff;
 
 export default Hugo;
