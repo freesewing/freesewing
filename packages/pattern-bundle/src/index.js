@@ -7,7 +7,7 @@ import Brian from "@freesewing/brian";
 //import Sven from "@freesewing/sven";
 //import Tamiko from "@freesewing/tamiko";
 //import Trayvon from "@freesewing/trayvon";
-//import info from "./info";
+import info from "./info";
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 const uncapitalize = string => string.charAt(0).toLowerCase() + string.slice(1);
