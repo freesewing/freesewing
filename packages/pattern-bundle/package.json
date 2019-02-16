@@ -47,14 +47,14 @@
   "dependencies": {
     "@freesewing/aaron": "0.11",
     "@freesewing/brian": "0.22.10",
-    "@freesewing/bruce": "0.5.8",
-    "@freesewing/cathrin": "0.4.8",
-    "@freesewing/hugo": "0.4.8",
+    "@freesewing/bruce": "0.6",
+    "@freesewing/cathrin": "0.5",
+    "@freesewing/hugo": "0.5",
     "@freesewing/plugin-bundle": "0.7.3",
-    "@freesewing/simon": "0.3.12",
-    "@freesewing/sven": "0.1.7",
-    "@freesewing/tamiko": "0.1.3",
-    "@freesewing/trayvon": "0.0.2"
+    "@freesewing/simon": "0.4",
+    "@freesewing/sven": "0.2",
+    "@freesewing/tamiko": "0.2",
+    "@freesewing/trayvon": "0.1"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
