@@ -8,10 +8,10 @@ import draftSleeve from "./sleeve";
 import draftCuff from "./cuff";
 import draftWaistband from "./waistband";
 
-// Create pattern
-const Sven = freesewing.create(config, plugins);
+// Create design
+const Sven = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Sven.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
