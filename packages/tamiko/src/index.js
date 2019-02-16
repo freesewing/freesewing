@@ -4,8 +4,8 @@ import config from "../config";
 // Parts
 import draftTop from "./top";
 
-// Create pattern
-const Tamiko = freesewing.create(config, plugins);
+// Create design
+const Tamiko = new freesewing.Design(config, plugins);
 
 // Part draft method
 Tamiko.prototype.draftTop = part => draftTop(part);
