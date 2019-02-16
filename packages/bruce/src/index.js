@@ -7,10 +7,10 @@ import draftSide from "./side";
 import draftFront from "./front";
 import draftInset from "./inset";
 
-// Create pattern
-const Bruce = freesewing.create(config, plugins);
+// Create design
+const Bruce = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Bruce.prototype.draftBack = part => draftBack(part);
 Bruce.prototype.draftSide = part => draftSide(part);
 Bruce.prototype.draftInset = part => draftInset(part);
