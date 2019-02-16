@@ -11,10 +11,10 @@ import draftPanel4 from "./panel4";
 import draftPanel5 from "./panel5";
 import draftPanel6 from "./panel6";
 
-// Create pattern
-const Cathrin = freesewing.create(config, plugins);
+// Create design
+const Cathrin = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Cathrin.prototype.draftBase = draftBase;
 Cathrin.prototype.draftPanels = draftPanels;
 Cathrin.prototype.draftPanel1 = draftPanel1;
