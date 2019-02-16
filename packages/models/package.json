@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write \"src/*.js\"",
     "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -n freesewing_models --footer 'freesewing.models = freesewing_models''",
+    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -n freesewing_models --footer 'freesewing.models = freesewing_models'",
     "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
     "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
