@@ -66,10 +66,10 @@ import draftSettings_sa from "./settings_sa";
 import draftSnippet_attr from "./snippet_attr";
 import draftSnippet_clone from "./snippet_clone";
 
-// Create pattern
-const Examples = freesewing.create(config, plugins);
+// Create design
+const Examples = new freesewing.Design(config, plugins);
 
-// Attach per-part draft methods to prototype
+// Attach draft methods to prototype
 Examples.prototype.draftPath_move = draftPath_ops;
 Examples.prototype.draftPath_line = draftPath_ops;
 Examples.prototype.draftPath_curve = draftPath_ops;
