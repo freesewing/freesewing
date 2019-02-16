@@ -10,10 +10,10 @@ import draftLiningTip from "./liningtip";
 import draftLiningTail from "./liningtail";
 import draftLoop from "./loop";
 
-// Create pattern
-const Trayvon = freesewing.create(config, plugins);
+// Create design
+const Trayvon = new freesewing.Design(config, plugins);
 
-// Per-part draft methods
+// Attach draft methods to prototype
 Trayvon.prototype.draftInterfacingTip = part => draftInterfacingTip(part);
 Trayvon.prototype.draftInterfacingTail = part => draftInterfacingTail(part);
 Trayvon.prototype.draftFabricTip = part => draftFabricTip(part);

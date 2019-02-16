@@ -23,12 +23,11 @@ export default {
     //  }
     //})
   ],
-  external: ["freesewing", "@freesewing/plugin-bundle", "@freesewing/brian"],
+  external: ["freesewing", "@freesewing/plugin-bundle"],
   output: {
     globals: {
       freesewing: "freesewing",
-      "@freesewing/plugin-bundle": "freesewing.plugins.bundle",
-      "@freesewing/brian": "freesewing.patterns.brian"
+      "@freesewing/plugin-bundle": "freesewing.plugins.bundle"
     }
   }
 };
