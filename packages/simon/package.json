@@ -47,7 +47,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/brian": "0.22.10",
+    "@freesewing/brian": "^0.22.12",
     "@freesewing/plugin-banner": "0.2.0",
     "@freesewing/plugin-bundle": "0.7.3",
     "@freesewing/plugin-buttons": "0.1.0",
