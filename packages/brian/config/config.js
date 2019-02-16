@@ -2,7 +2,7 @@ import { version } from "../package.json";
 
 export default {
   name: "brian",
-  version,
+  version: version,
   measurements: [
     "bicepsCircumference",
     "centerBackNeckToWaist",
