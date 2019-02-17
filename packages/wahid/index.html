@@ -31,11 +31,12 @@
         "idPrefix": "fs-",
         "locale": "en",
         "options": {
-          //"hemStyle": "rounded"
+          "frontStyle": "rounded",
+          "hemStyle": "rounded",
         },
         //"embed": true,
         "sa": 10,
-        "paperless": true,
+        //"paperless": true,
         "measurements": {
           "bicepsCircumference": 335,
           "centerBackNeckToWaist": 520,
@@ -55,6 +56,7 @@
       pattern.use(freesewing.plugins.designer);
       pattern.use(freesewing.plugins.validate);
       pattern.draft();
+//pattern.sampleOption("backScyeDart");
       document.getElementById("svg1").innerHTML = pattern.render();
 
       function pointHover(evt) {

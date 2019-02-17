@@ -1,4 +1,4 @@
-import { constructMainDart, shapeSideSeam } from "./shared";
+import { constructMainDart, shapeSideSeam, dartPath } from "./shared";
 
 export default part => {
   let {
@@ -24,15 +24,16 @@ export default part => {
   // Neck cutout
   points.closureTop = new Point(
     measurements.chestCircumference * options.frontOverlap * -1,
-    points.armhole.y * options.necklineDrop
+    points.waist.y * options.necklineDrop
   );
   if (options.frontStyle === "classic")
     points.closureTopCp1 = new Point(
       points.neck.x,
-      (points.armhole.y * options.necklineDrop) / 2
+      (points.waist.y * options.necklineDrop) / 2
     );
-  else points.closureTopCp1 = new Point(points.neck.x, points.p300.y);
-
+  else {
+    points.closureTopCp1 = new Point(points.neck.x, points.closureTop.y);
+  }
   // Front inset
   let shoulderLen = points.shoulder.dist(points.neck);
   let frontInset = shoulderLen * options.frontInset;
@@ -129,6 +130,16 @@ export default part => {
     points.lastButton = new Point(0, points.roundStart.y);
   }
 
+  // Add dart start and end point regardless of style or front or back
+  points.dartStart =
+    options.hemStyle === "classic"
+      ? points.splitDartHemLeft
+      : points.dartHemLeft;
+  points.dartEnd =
+    options.hemStyle === "classic"
+      ? points.splitDartHemRight
+      : points.dartHemRight;
+
   // Pockets
   let pw = measurements.hipsCircumference * options.pocketWidth; // Pocket width
   let pwh = pw * options.weltHeight; // Pocket welt height
@@ -212,7 +223,8 @@ export default part => {
     "pocketTopMidRight",
     "pocketBottomMidRight",
     "pocketTopRight",
-    "pocketBottomRight"
+    "pocketBottomRight",
+    "dartEnd"
   ];
   for (let p of toRotate) {
     if (typeof points[p] !== "undefined")
@@ -227,14 +239,8 @@ export default part => {
   delete paths.cutonfold;
   delete paths.saBase;
   delete paths.sa;
-  if (options.hemStyle === "classic") {
-    paths.saBase = new Path()
-      .move(points.splitDartHemRight)
-      .curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem);
-  } else {
-    paths.saBase = new Path().move(points.dartHemRight).line(points.hem);
-  }
-  paths.saBase
+  paths.saBase = new Path()
+    .move(points.hem)
     .line(points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
     .curve_(points.waistCp2, points.armhole)
@@ -248,34 +254,40 @@ export default part => {
       .line(points.closureBottom)
       .line(points.hemTip)
       ._curve(points.splitDartHemLeftCp1, points.splitDartHemLeft);
+    paths.hemBase = new Path()
+      .move(points.dartEnd)
+      .curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem);
   } else {
     paths.saBase
       .line(points.roundStart)
       .curve(points.roundCp1, points.roundCp2, points.roundEnd)
       .line(points.dartHemLeft);
+    paths.hemBase = new Path().move(points.dartEnd).line(points.hem);
   }
-  paths.dart = new Path()
-    .move(paths.saBase.end())
-    .line(points.dartHipLeft)
-    .curve(
-      points.dartHipLeftCpTop,
-      points.dartWaistLeftCpBottom,
-      points.dartWaistLeft
-    )
-    .curve_(points.dartWaistLeftCpTop, points.dartTop)
-    ._curve(points.dartWaistRightCpTop, points.dartWaistRight)
-    .curve(
-      points.dartWaistRightCpBottom,
-      points.dartHipRightCpTop,
-      points.dartHipRight
-    )
-    .line(paths.saBase.start());
-  paths.seam = paths.saBase.join(paths.dart).attr("class", "fabric");
+  paths.dart = dartPath(part);
+  paths.seam = paths.saBase
+    .join(paths.dart)
+    .join(paths.hemBase)
+    .attr("class", "fabric");
   paths.saBase.render = false;
+  paths.hemBase.render = false;
   paths.dart.render = false;
+
+  // Pocket path
+  paths.pocket = new Path()
+    .move(points.pocketTopMidLeft)
+    .line(points.pocketTopLeft)
+    .line(points.pocketBottomLeft)
+    .line(points.pocketBottomMidLeft)
+    .move(points.pocketBottomMidRight)
+    .line(points.pocketBottomRight)
+    .line(points.pocketTopRight)
+    .line(points.pocketTopMidRight)
+    .attr("class", "fabric dashed");
+
   if (complete) {
     // Buttons
-    points.button1 = new Point(0, points.closureTop.y);
+    points.button1 = new Point(0, points.closureTop.y + 10);
     let delta = points.button1.dist(points.lastButton) / (options.buttons - 1);
     for (let i = 1; i <= options.buttons; i++) {
       points["button" + i] = points.button1.shift(-90, delta * (i - 1));
@@ -300,19 +312,12 @@ export default part => {
       .attr("class", "fabric");
     paths.flbLining = paths.flbFacing.clone().attr("class", "lining dashed");
 
-    // Pocket path
-    paths.pocket = new Path()
-      .move(points.pocketTopMidLeft)
-      .line(points.pocketTopLeft)
-      .line(points.pocketBottomLeft)
-      .line(points.pocketBottomMidLeft)
-      .move(points.pocketBottomMidRight)
-      .line(points.pocketBottomRight)
-      .line(points.pocketTopRight)
-      .line(points.pocketTopMidRight)
-      .attr("class", "fabric dashed");
-
-    if (sa) paths.sa = paths.saBase.offset(sa).close();
+    if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .join(paths.hemBase.offset(sa * 3))
+        .close();
+    }
 
     if (paperless) {
       macro("hd", {

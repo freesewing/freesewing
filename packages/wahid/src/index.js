@@ -6,6 +6,7 @@ import buttons from "@freesewing/plugin-buttons";
 import config from "../config";
 // Parts
 import draftFront from "./front";
+import draftBack from "./back";
 
 // Create pattern
 const Wahid = new freesewing.Design(config, [plugins, round, buttons]);
@@ -21,7 +22,8 @@ Wahid.prototype.draftFrontBlock = function(part) {
   return new Brian(this.settings).draftFront(part);
 };
 
-// Per-part draft methods
+// Attach draft methods to prototype
 Wahid.prototype.draftFront = part => draftFront(part);
+Wahid.prototype.draftBack = part => draftBack(part);
 
 export default Wahid;

@@ -19,21 +19,17 @@ export default {
   dependencies: {
     backBlock: "base",
     frontBlock: "backBlock",
-    front: "frontBlock"
+    front: "frontBlock",
+    back: "backBlock"
   },
   inject: {
     backBlock: "base",
     frontBlock: "backBlock",
-    front: "frontBlock"
+    front: "frontBlock",
+    back: "backBlock"
   },
-  hide: ["base", "frontBlock"],
+  hide: ["base", "frontBlock", "backBlock"],
   parts: [
-    //"base",
-    //"backBlock"
-    //"frontBlock",
-    //"waistcoatFrontBlock",
-    //"front",
-    //"back",
     //"frontFacing",
     //"frontLining",
     //"pocketWelt",
@@ -51,25 +47,29 @@ export default {
     collarEase: 0.035,
     shoulderEase: 0,
     bicepsEase: 0.15,
-    armholeDepthFactor: 0.6,
     acrossBackFactor: 0.97,
     frontArmholeDeeper: 0.005,
 
     // Wahid options start here
     frontOverlap: 0.01,
+    armholeDepthFactor: {
+      pct: 70,
+      min: 60,
+      max: 80
+    },
     pocketLocation: {
       pct: 35,
       min: 25,
-      max: 45
+      max: 55
     },
     pocketWidth: {
-      pct: 9,
-      max: 12,
-      min: 6
+      pct: 10,
+      max: 15,
+      min: 8
     },
     weltHeight: {
       pct: 12.5,
-      max: 15,
+      max: 20,
       min: 10
     },
     chestEase: {
@@ -90,10 +90,10 @@ export default {
     lengthBonus: {
       pct: 1,
       min: 0,
-      max: 5
+      max: 8
     },
     backScyeDart: {
-      pct: 2,
+      deg: 2,
       min: 0,
       max: 6
     },
@@ -108,9 +108,9 @@ export default {
       max: 5
     },
     necklineDrop: {
-      pct: 100,
-      min: 50,
-      max: 150
+      pct: 50,
+      min: 35,
+      max: 85
     },
     frontStyle: {
       dflt: "classic",
@@ -123,37 +123,32 @@ export default {
     hemRadius: {
       pct: 6,
       min: 0,
-      max: 10
+      max: 12
     },
     buttons: {
       count: 6,
       min: 4,
       max: 12
     },
-    neckInset: {
-      pct: 3,
-      min: 0,
-      max: 5
-    },
     backInset: {
-      pct: 4,
-      min: 2,
-      max: 8
+      pct: 15,
+      min: 10,
+      max: 20
     },
     frontInset: {
       pct: 15,
-      min: 0,
-      max: 25
+      min: 10,
+      max: 20
     },
     shoulderInset: {
-      pct: 15,
+      pct: 10,
       min: 0,
-      max: 25
+      max: 20
     },
     neckInset: {
       pct: 5,
       min: 0,
-      max: 15
+      max: 10
     },
     pocketAngle: {
       deg: 5,

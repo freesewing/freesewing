@@ -21,15 +21,15 @@ export const constructMainDart = part => {
   points.dartWaistLeft = points.dartWaistCenter.shift(180, wr12);
   points.dartTop = points.dartWaistCenter.shift(
     90,
-    points.armhole.dy(points.waist) * 0.75
+    points.neck.dy(points.waist) * 0.35
   );
   points.dartWaistRightCpTop = points.dartWaistRight.shift(
     90,
-    points.armhole.dy(points.waist) * 0.35
+    points.dartTop.dy(points.waist) * 0.35
   );
   points.dartWaistLeftCpTop = points.dartWaistLeft.shift(
     90,
-    points.armhole.dy(points.waist) * 0.35
+    points.dartTop.dy(points.waist) * 0.35
   );
   points.dartHipCenter = new Point(points.dartWaistCenter.x, points.hips.y);
   points.dartHipRight = points.dartHipCenter.shift(0, hr12);
@@ -65,4 +65,24 @@ export const shapeSideSeam = part => {
   points.hips = points.hips.shift(180, hr12);
   points.hipsCp2 = new Point(points.hips.x, points.dartHipRightCpTop.y);
   points.hem = points.hem.shift(180, hr12);
+};
+
+export const dartPath = part => {
+  let { paths, Path, points } = part.shorthand();
+  return new Path()
+    .move(points.dartStart)
+    .line(points.dartHipLeft)
+    .curve(
+      points.dartHipLeftCpTop,
+      points.dartWaistLeftCpBottom,
+      points.dartWaistLeft
+    )
+    .curve_(points.dartWaistLeftCpTop, points.dartTop)
+    ._curve(points.dartWaistRightCpTop, points.dartWaistRight)
+    .curve(
+      points.dartWaistRightCpBottom,
+      points.dartHipRightCpTop,
+      points.dartHipRight
+    )
+    .line(points.dartEnd);
 };
