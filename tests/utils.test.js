@@ -462,3 +462,40 @@ it("Should capitalize a string", () => {
   expect(utils.capitalize("test")).to.equal("Test");
   expect(utils.capitalize("Freesewing")).to.equal("Freesewing");
 });
+
+it("Should split a curve", () => {
+  let a = new freesewing.Point(0, 0);
+  let b = new freesewing.Point(50, 0);
+  let c = new freesewing.Point(50, 100);
+  let d = new freesewing.Point(100, 100);
+  let X = new freesewing.Point(50, 50);
+  let [c1, c2] = utils.splitCurve(a, b, c, d, X);
+  expect(c1.cp1.x).to.equal(25);
+  expect(c1.cp1.y).to.equal(0);
+  expect(c1.cp2.x).to.equal(37.5);
+  expect(c1.cp2.y).to.equal(25);
+  expect(c2.cp1.x).to.equal(62.5);
+  expect(c2.cp1.y).to.equal(75);
+  expect(c2.cp2.x).to.equal(75);
+  expect(c2.cp2.y).to.equal(100);
+});
+
+it("Should find where a curve intersects a given X-value", () => {
+  let a = new freesewing.Point(0, 0);
+  let b = new freesewing.Point(50, 0);
+  let c = new freesewing.Point(50, 100);
+  let d = new freesewing.Point(100, 100);
+  let i = utils.curveIntersectsX(a, b, c, d, 30);
+  expect(i.x).to.equal(30);
+  expect(i.y).to.equal(16);
+});
+
+it("Should find where a curve intersects a given Y-value", () => {
+  let a = new freesewing.Point(0, 0);
+  let b = new freesewing.Point(50, 0);
+  let c = new freesewing.Point(50, 100);
+  let d = new freesewing.Point(100, 100);
+  let i = utils.curveIntersectsY(a, b, c, d, 30);
+  expect(i.x).to.equal(39.49);
+  expect(i.y).to.equal(30);
+});

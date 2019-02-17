@@ -1,3 +1,4 @@
+import Path from "./path";
 import Point from "./point";
 import Bezier from "bezier-js";
 
@@ -91,6 +92,29 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
   else return false;
 }
 
+/** Splits a curve on a point */
+export function splitCurve(start, cp1, cp2, end, split) {
+  let [c1, c2] = new Path()
+    .move(start)
+    .curve(cp1, cp2, end)
+    .split(split);
+
+  return [
+    {
+      start: c1.ops[0].to,
+      cp1: c1.ops[1].cp1,
+      cp2: c1.ops[1].cp2,
+      end: c1.ops[1].to
+    },
+    {
+      start: c2.ops[0].to,
+      cp1: c2.ops[1].cp1,
+      cp2: c2.ops[1].cp2,
+      end: c2.ops[1].to
+    }
+  ];
+}
+
 /** Find where an (endless) line intersects with a certain X-value */
 export function beamIntersectsX(from, to, x) {
   if (from.x === to.x) return false; // Vertical line
@@ -136,6 +160,20 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   if (intersections.length === 0) return false;
   else if (intersections.length === 1) return intersections[0];
   else return intersections;
+}
+
+/** Find where a curve intersects with a given X-value */
+export function curveIntersectsX(from, cp1, cp2, to, x) {
+  let start = new Point(x, -10000);
+  let end = new Point(x, 10000);
+  return lineIntersectsCurve(start, end, from, cp1, cp2, to);
+}
+
+/** Find where a curve intersects with a given Y-value */
+export function curveIntersectsY(from, cp1, cp2, to, y) {
+  let start = new Point(-10000, y);
+  let end = new Point(10000, y);
+  return lineIntersectsCurve(start, end, from, cp1, cp2, to);
 }
 
 /** Find where a curve intersects with another curve */
@@ -308,4 +346,8 @@ export function sampleStyle(run, runs) {
   let hue = (run - 1) * (330 / runs);
 
   return `stroke: hsl(${hue}, 100%, 35%);`;
+}
+
+export function deg2rad(degrees) {
+  return degrees * (Math.PI / 180);
 }
