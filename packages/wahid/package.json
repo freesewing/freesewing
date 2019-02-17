@@ -1,0 +1,83 @@
+{
+  "version": "0.0.2",
+  "name": "@freesewing/wahid",
+  "description": "Freesewing pattern for a classic fitted waistcoat",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "homepage": "https://github.com/freesewing/wahid#readme",
+  "repository": "github:freesewing/wahid",
+  "bugs": {
+    "url": "https://github.com/freesewing/wahid/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "pattern",
+    "sewing",
+    "menswear",
+    "waistcoat"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/browser.js",
+  "scripts": {
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write 'src/*.js'",
+    "lint": "eslint --fix 'src/*.js'",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_wahid --footer 'freesewing.patterns.wahid = freesewing_patterns_wahid;'",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m true",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@freesewing/brian": "0.22.13",
+    "@freesewing/plugin-bundle": "0.7.3",
+    "@freesewing/plugin-buttons": "0.1.0",
+    "@freesewing/plugin-round": "0.2.0",
+    "freesewing": "0.30.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@freesewing/antman": "0.2.0",
+    "@freesewing/models": "0.4.0",
+    "@freesewing/plugin-debug": "0.5.2",
+    "@freesewing/plugin-designer": "0.10",
+    "@freesewing/plugin-theme": "0.18.4",
+    "@freesewing/plugin-validate": "0.4.1",
+    "eslint": "5.13.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "1.14.0",
+    "rimraf": "^2.6.2",
+    "rollup": "0.65.0",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-babel-minify": "7.0.0",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
+}

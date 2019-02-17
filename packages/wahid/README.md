@@ -1,2 +1,20 @@
-# wahid
-Port of the Wahid waistcoat pattern to JS
+<p align="center">
+  <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
+</p>
+<h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
+<br><sup>a library for made-to-measure sewing patterns</sup>
+</h4>
+
+# freesewing / patterns / wahid
+
+Wahid is a [freesewing](https://github.com/freesewing/freesewing) pattern
+for a classic fitted waistcoat.
+
+See [freesewing.org/patterns/wahid](https://freesewing.org/patterns/wahid)
+for more info and examples.
+
+## Install
+
+```
+npm i --save @freesewing/wahid
+```
