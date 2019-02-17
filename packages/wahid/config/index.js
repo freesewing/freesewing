@@ -21,14 +21,16 @@ export default {
     frontBlock: "backBlock",
     front: "frontBlock",
     back: "backBlock",
-    frontFacing: "front"
+    frontFacing: "front",
+    frontLining: "front"
   },
   inject: {
     backBlock: "base",
     frontBlock: "backBlock",
     front: "frontBlock",
     back: "backBlock",
-    frontFacing: "front"
+    frontFacing: "front",
+    frontLining: "front"
   },
   hide: ["base", "frontBlock", "backBlock"],
   parts: [
