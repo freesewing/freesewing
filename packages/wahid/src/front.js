@@ -14,7 +14,8 @@ export default part => {
     Snippet,
     complete,
     sa,
-    paperless
+    paperless,
+    store
   } = part.shorthand();
 
   // Cleanup from Brian
@@ -184,6 +185,8 @@ export default part => {
     options.pocketAngle - 90,
     pwh
   );
+  // Store pocket bag length
+  store.set("pocketBagLength", points.pocketTopMid.dy(points.cfHem) * 0.75);
 
   // Front scye dart
   points._dartWidth = points.dartTop.shiftFractionTowards(

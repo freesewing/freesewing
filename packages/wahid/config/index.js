@@ -22,7 +22,8 @@ export default {
     front: "frontBlock",
     back: "backBlock",
     frontFacing: "front",
-    frontLining: "front"
+    frontLining: "front",
+    pocketBag: "front"
   },
   inject: {
     backBlock: "base",
@@ -33,14 +34,7 @@ export default {
     frontLining: "front"
   },
   hide: ["base", "frontBlock", "backBlock"],
-  parts: [
-    //"frontFacing",
-    //"frontLining",
-    "pocketWelt"
-    //"pocketFacing",
-    //"pocketBag",
-    //"pocketInterfacing"
-  ],
+  parts: ["pocketWelt", "pocketFacing", "pocketInterfacing"],
   options: {
     // These are needed because Brian expects them
     brianFitSleeve: false,
