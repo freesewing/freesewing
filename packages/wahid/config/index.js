@@ -36,7 +36,7 @@ export default {
   parts: [
     //"frontFacing",
     //"frontLining",
-    //"pocketWelt",
+    "pocketWelt"
     //"pocketFacing",
     //"pocketBag",
     //"pocketInterfacing"

@@ -9,6 +9,7 @@ import draftFront from "./front";
 import draftBack from "./back";
 import draftFrontFacing from "./frontfacing";
 import draftFrontLining from "./frontlining";
+import draftPocketWelt from "./pocketwelt";
 
 // Create pattern
 const Wahid = new freesewing.Design(config, [plugins, round, buttons]);
@@ -29,5 +30,6 @@ Wahid.prototype.draftFront = part => draftFront(part);
 Wahid.prototype.draftBack = part => draftBack(part);
 Wahid.prototype.draftFrontFacing = part => draftFrontFacing(part);
 Wahid.prototype.draftFrontLining = part => draftFrontLining(part);
+Wahid.prototype.draftPocketWelt = part => draftPocketWelt(part);
 
 export default Wahid;
