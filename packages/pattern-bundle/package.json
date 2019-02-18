@@ -55,7 +55,8 @@
     "@freesewing/simon": "0.4.3",
     "@freesewing/sven": "0.2.3",
     "@freesewing/tamiko": "0.2.2",
-    "@freesewing/trayvon": "0.1.2"
+    "@freesewing/trayvon": "0.1.2",
+    "@freesewing/wahid": "0.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
