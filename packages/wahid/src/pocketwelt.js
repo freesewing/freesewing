@@ -57,5 +57,33 @@ export default part => {
       .attr("class", "hint dotted");
   }
 
+  if (paperless) {
+    macro("hd", {
+      from: points.notchLeft,
+      to: points.notchRight,
+      y: points.bottomLeft.y + 15
+    });
+    macro("hd", {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + 30
+    });
+    macro("vd", {
+      from: points.midRight,
+      to: points.notchRight,
+      x: points.midRight.x + 15
+    });
+    macro("vd", {
+      from: points.midRight,
+      to: points.topRight,
+      x: points.midRight.x + 30
+    });
+    macro("vd", {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.midRight.x + 45
+    });
+  }
+
   return part;
 };
