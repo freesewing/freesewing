@@ -60,6 +60,9 @@ import draftUtils_pointoncurve from "./utils_pointoncurve";
 import draftUtils_circlesintersect from "./utils_circlesintersect";
 import draftUtils_beamintersectscircle from "./utils_beamintersectscircle";
 import draftUtils_lineintersectscircle from "./utils_lineintersectscircle";
+import draftUtils_curveintersectsx from "./utils_curveintersectsx";
+import draftUtils_curveintersectsy from "./utils_curveintersectsy";
+import draftUtils_splitcurve from "./utils_splitcurve";
 
 import draftSettings_sa from "./settings_sa";
 
@@ -139,5 +142,8 @@ Examples.prototype.draftUtils_pointoncurve = draftUtils_pointoncurve;
 Examples.prototype.draftUtils_circlesintersect = draftUtils_circlesintersect;
 Examples.prototype.draftUtils_beamintersectscircle = draftUtils_beamintersectscircle;
 Examples.prototype.draftUtils_lineintersectscircle = draftUtils_lineintersectscircle;
+Examples.prototype.draftUtils_curveintersectsx = draftUtils_curveintersectsx;
+Examples.prototype.draftUtils_curveintersectsy = draftUtils_curveintersectsy;
+Examples.prototype.draftUtils_splitcurve = draftUtils_splitcurve;
 
 export default Examples;

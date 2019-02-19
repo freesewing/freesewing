@@ -67,6 +67,9 @@ export default {
     "utils_pointoncurve",
     "utils_circlesintersect",
     "utils_beamintersectscircle",
-    "utils_lineintersectscircle"
+    "utils_lineintersectscircle",
+    "utils_curveintersectsy",
+    "utils_curveintersectsx",
+    "utils_splitcurve"
   ]
 };
