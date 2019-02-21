@@ -17,11 +17,12 @@ export default {
       banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
     })
   ],
-  external: ["freesewing", "@freesewing/plugin-bundle"],
+  external: ["freesewing", "@freesewing/plugin-bundle", "@freesewing/brian"],
   output: {
     globals: {
       freesewing: "freesewing",
-      "@freesewing/plugin-bundle": "freesewing.plugins.bundle"
+      "@freesewing/plugin-bundle": "freesewing.plugins.bundle",
+      "@freesewing/brian": "freesewing.patterns.brian"
     }
   }
 };
