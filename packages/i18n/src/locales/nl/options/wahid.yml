@@ -1,0 +1,25 @@
+armholeDepthFactor: brian
+chestEase: brian
+hipsEase: aaron
+lengthBonus: brian
+waistEase: simon
+
+backScyeDart:
+  title: Neep armsgat achter
+  description: De hoeveelheid die verwijderd wordt met een neep aan de achterkant van het armsgat.
+
+frontScyeDart:
+  title: Neep armsgat voor
+  description: De hoeveelheid die verwijderd wordt met een neep aan de voorkant van het armsgat.
+
+pocketLocation:
+  title: Locatie van de zak
+  description: Bepaalt de locatie van de zak
+
+pocketWidth:
+  title: Breedte van de zak
+  description: Bepaalt de breedte van de zak
+
+weltHeight:
+  title: Hoogte paspel zak
+  description: De hoogte van de paspel van de zak

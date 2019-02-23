@@ -7,6 +7,7 @@ import simon from "./simon.yml";
 import sven from "./sven.yml";
 import tamiko from "./tamiko.yml";
 import trayvon from "./trayvon.yml";
+import wahid from "./wahid.yml";
 
 let patterns = {
   brian,
@@ -17,7 +18,8 @@ let patterns = {
   simon,
   sven,
   tamiko,
-  trayvon
+  trayvon,
+  wahid
 };
 
 let options = {};

@@ -1,0 +1,25 @@
+armholeDepthFactor: brian
+chestEase: brian
+hipsEase: aaron
+lengthBonus: brian
+waistEase: simon
+
+backScyeDart:
+  title: Back scye dart
+  description: The amount to take out in a dart at the back of the armhole.
+
+frontScyeDart:
+  title: Front scye dart
+  description: The amount to take out in a dart at the front of the armhole.
+
+pocketLocation:
+  title: Pocket location
+  description: Determines the placement of the pocket
+
+pocketWidth:
+  title: Pocket width
+  description: Determines the width of the pocket
+
+weltHeight:
+  title: Welt height
+  description: Determines the height of the welt
