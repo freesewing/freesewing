@@ -9,8 +9,10 @@ cuff: Puño
 fabricTail: Cola de tela
 fabricTip: Punta de tela
 frontBase: Base delantera
+frontFacing: Delantero mirando hacia
 front: Frente
 frontLeft: Delantero izquierdo
+frontLining: Delantero revestimiento
 frontRight: Delantero derecha
 hoodCenter: Centro de la capucha
 hoodSide: Lado de la capucha
@@ -27,8 +29,11 @@ panel4: Panel 4
 panel5: Panel 5
 panel6: Panel 6
 panels: Paneles
+pocketBag: Bolsa de bolsillo
 pocket: Bolsillo
 pocketFacing: Mirando hacia el bolsillo
+pocketInterfacing:  Entretela de bolsillo
+pocketWelt: Ribete de bolsillo
 side: Lado
 sleeveBase: Base de la manga
 sleevecap: Manga corta

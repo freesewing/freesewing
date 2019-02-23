@@ -76,6 +76,7 @@ exportTiledPDF: Exportar PDF paginado
 faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
+filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
 forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
 freesewing: Freesewing
@@ -128,12 +129,12 @@ options: Opciones
 orPayPerYear: O pagar por año
 other: Otro
 otherThing: "Otras {thing}"
+ourPatrons: Nuestros mecenas
 patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
 patronHelp: Si tiene alguna pregunta o desea realizar cambios en su estado de mecenas, comuníquese con Joost.
 patron: Mecenas
-ourPatrons: Nuestros mecenas
 patronPitch: Si crees que lo que hacemos vale la pena, y si puedes ahorrar unas cuantas monedas cada mes, entonces también deberías convertirte en un mecenas de freesewing.
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
@@ -160,6 +161,8 @@ restoreDefaults: Restaurar valores por defecto
 saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
 search: Buscar
+searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
+searchLanguageTitle: ¿No encuentras lo que buscas?
 selectAPartToMoveMirrorOrRotate: Seleccione una parte para mover, reflejar o rotar
 selectImage: Seleccionar imagen
 sendAnEmail: Enviar un correo electrónico
@@ -212,7 +215,3 @@ youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn:  No has iniciado sesión
 yourRights: Tus derechos
-filterByPattern: Filtrar por patrón
-searchLanguageTitle: ¿No encuentras lo que buscas?
-searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
-

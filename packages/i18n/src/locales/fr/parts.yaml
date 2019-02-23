@@ -10,7 +10,9 @@ fabricTail: Queue en tissu
 fabricTip: Pointe en tissu
 front: Avant
 frontBase: Base avant
+frontFacing: Doublure avant FIXME
 frontLeft: Avant gauche
+frontLining: Doublure avant
 frontRight: Avant droit
 hoodCenter: Capuchon centre
 hoodSide: Capuchon côté
@@ -27,8 +29,11 @@ panel4: Pièce 4
 panel5: Pièce 5
 panel6: Pièce 6
 panels: Pièces
+pocketBag: Sac de poche
 pocketFacing: Doublure de poche
+pocketInterfacing: Entoilage de poche
 pocket: Poche
+pocketWelt: Passepoile
 side: Côté
 sleeveBase: Base de manche
 sleevecap: Sleevecap FIXME

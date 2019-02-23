@@ -76,6 +76,7 @@ exportTiledPDF: Gepagineerde PDF exporteren
 faq: Vaak gestelde vragen
 fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
+filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
 forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
@@ -128,12 +129,12 @@ options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: "Andere {thing}"
+ourPatrons: Onze mecenassen
 patron-2: Powder monkey
 patron-4: Eerste stuurman
 patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
 patron: Mecenas
-ourPatrons: Onze mecenassen
 patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maand een paar munten kunt missen, dan moet jij ook een mecenas worden van freesewing.
 patronsKeepUsAfloat: Freesewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
@@ -159,6 +160,8 @@ reset: Reset
 restoreDefaults: Standaardwaarden herstellen
 saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
+searchLanguageMsg: Elke taal heeft een eigen zoekindex. Aangezien niet al onze inhoud is vertaald, vindt u mogelijk meer resultaten via een Engelse zoekopdracht.
+searchLanguageTitle: Kunt u niet vinden waarnaar u op zoek bent?
 search: Zoeken
 selectAPartToMoveMirrorOrRotate: Selecteer een onderdeel om te verplaatsen, spiegelen of draaien
 selectImage: Selecteer afbeelding
@@ -212,7 +215,3 @@ youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
-filterByPattern: Filter op patroon
-searchLanguageTitle: Kunt u niet vinden waarnaar u op zoek bent?
-searchLanguageMsg: Elke taal heeft een eigen zoekindex. Aangezien niet al onze inhoud is vertaald, vindt u mogelijk meer resultaten via een Engelse zoekopdracht.
-

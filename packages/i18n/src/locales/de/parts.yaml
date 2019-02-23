@@ -9,7 +9,9 @@ cuff: Manschetten
 fabricTail: Stoffschwanz
 fabricTip: Stoffspitze
 frontBase: Vorderseite Basis
+frontFacing: Verkleidung vorderseite
 frontLeft: Vorne links
+frontLining: Futter vorderseite
 frontRight: Vorne rechts
 front: Vorderseite
 hoodCenter: Haubenmitte
@@ -27,8 +29,11 @@ panel4: Teil 4
 panel5: Teil 5
 panel6: Teil 6
 panels: Teile
+pocketBag: Taschenbeutel
 pocketFacing: Taschenverkleidung
+pocketInterfacing: Tasheneinlage
 pocket: Tasche
+pocketWelt: Tasche Welt
 side: Seite
 sleeve: Ärmel
 sleeveBase: Ärmel Basis

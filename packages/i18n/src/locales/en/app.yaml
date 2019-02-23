@@ -76,6 +76,7 @@ exportTiledPDF: Export tiled PDF
 faq: Frequently asked questions
 fieldRemoved: "{field} removed"
 fieldSaved: "{field} saved"
+filterByPattern: Filter by pattern
 filterPatterns: Filter patterns
 forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
 freesewing: Freesewing
@@ -128,12 +129,12 @@ options: Options
 orPayPerYear: Or pay per year
 other: Other
 otherThing: "Other {thing}"
+ourPatrons: Our patrons
 patron-2: Powder monkey
 patron-4: First mate
 patron-8: Captain
 patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact Joost.
 patron: Patron
-ourPatrons: Our patrons
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins every month, then you too should become a Patron of freesewing.
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
@@ -159,6 +160,8 @@ reset: Reset
 restoreDefaults: Restore defaults
 saveDraftToYourAccount: Save draft to your account
 save: Save
+searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
+searchLanguageTitle: Can't find what you're looking for?
 search: Search
 selectAPartToMoveMirrorOrRotate: Select a part to move, mirror, or rotate
 selectImage: Select image
@@ -212,7 +215,3 @@ youAreAPatron: You are a patron
 youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in
 yourRights: Your rights
-filterByPattern: Filter by pattern
-searchLanguageTitle: Can't find what you're looking for?
-searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
-

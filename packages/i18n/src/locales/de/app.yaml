@@ -76,6 +76,7 @@ exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
 fieldSaved: "{field} gespeichert"
+filterByPattern: Nach Muster filtern
 filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
 freesewing: Freesewing
@@ -128,11 +129,11 @@ options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: "Andere {thing}"
+ourPatrons: Unsere Gönner
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
 patron: Gönner
-ourPatrons: Unsere Gönner
 patronHelp: Wenn Sie Fragen haben oder Änderungen an Ihrem Schutzstatus vornehmen möchten, wenden Sie sich bitte an Joost.
 patronPitch: Wenn Sie der Meinung sind, dass das, was wir tun, sich lohnt, und wenn Sie jeden Monat ein paar Münzen einsparen können, dann sollten auch Sie ein Gönner des Freesewing werden.
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
@@ -159,6 +160,8 @@ reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
+searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
+searchLanguageTitle: Können Sie nicht finden, wonach Sie suchen?
 search: Suche
 selectAPartToMoveMirrorOrRotate: Wählen Sie einen Bereich zum Verschieben, Spiegeln oder Drehen aus
 selectImage: Bild auswählen
@@ -212,6 +215,3 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
-filterByPattern: Nach Muster filtern
-searchLanguageTitle: Können Sie nicht finden, wonach Sie suchen?
-searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.

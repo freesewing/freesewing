@@ -9,7 +9,9 @@ cuff: Manchette
 fabricTail: Stof staart
 fabricTip: Stof tip
 frontBase: Basis voorzijde
+frontFacing: Voering vooraan FIXME
 frontLeft: Voorzijde links
+frontLining: Voering vooraan
 frontRight: Voorzijde rechts
 front: Voorzijde
 hoodCenter: Capuchon midden
@@ -27,7 +29,10 @@ panel4: Deel 4
 panel5: Deel 5
 panel6: Deel 6
 panels: Delen
+pocketBag: Zak
 pocketFacing: Zak doublure
+pocketInterfacing: Interfacing zak
+pocketWelt: Paspel zak
 pocket: Zak
 side: Zijkant
 sleeveBase: Basis mouw

@@ -9,8 +9,10 @@ cuff: Cuff
 fabricTail: Fabric tail
 fabricTip: Fabric tip
 frontBase: Front base
+frontFacing: Front facing
 front: Front
 frontLeft: Front left
+frontLining: Front lining
 frontRight: Front right
 hoodCenter: Hood center
 hoodSide: Hood side
@@ -27,8 +29,11 @@ panel4: Panel 4
 panel5: Panel 5
 panel6: Panel 6
 panels: Panels
+pocketBag: Pocket bag
 pocketFacing: Pocket facing
+pocketInterfacing: Pocket interfacing
 pocket: Pocket
+pocketWelt: Pocket welt
 side: Side
 sleeveBase: Sleeve base
 sleevecap: Sleevecap
