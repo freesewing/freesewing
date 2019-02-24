@@ -50,8 +50,14 @@ it("Should check points for equality", () => {
   expect(a).to.deep.equal(b);
 });
 
-it("Should flip point around X value zero", () => {
+it("Should flip point around unset X value", () => {
   let result = new Point(2, 4).flipX();
+  expect(result.x).to.equal(-2);
+  expect(result.y).to.equal(4);
+});
+
+it("Should flip point around X value that is zero", () => {
+  let result = new Point(2, 4).flipX(0);
   expect(result.x).to.equal(-2);
   expect(result.y).to.equal(4);
 });
@@ -62,8 +68,14 @@ it("Should flip point around X value", () => {
   expect(result.y).to.equal(4);
 });
 
-it("Should flip point around Y value zero", () => {
+it("Should flip point around unset Y value", () => {
   let result = new Point(2, 4).flipY();
+  expect(result.x).to.equal(2);
+  expect(result.y).to.equal(-4);
+});
+
+it("Should flip point around Y value that is zero", () => {
+  let result = new Point(2, 4).flipY(0);
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(-4);
 });

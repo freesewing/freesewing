@@ -73,13 +73,13 @@ Point.prototype.copy = function() {
 
 /** Mirrors this point around X value of that point */
 Point.prototype.flipX = function(that = false) {
-  if (that === false) return new Point(this.x * -1, this.y);
+  if (that === false || that === 0) return new Point(this.x * -1, this.y);
   else return new Point(that.x + this.dx(that), this.y);
 };
 
 /** Mirrors this point around Y value of that point */
 Point.prototype.flipY = function(that = false) {
-  if (that === false) return new Point(this.x, this.y * -1);
+  if (that === false || that === 0) return new Point(this.x, this.y * -1);
   else return new Point(this.x, that.y + this.dy(that));
 };
 
