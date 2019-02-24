@@ -1,6 +1,6 @@
 import freesewing from "freesewing";
 import plugins from "@freesewing/plugin-bundle";
-import config from "../config/config";
+import config from "../config";
 // Parts
 import draftBase from "./base";
 import draftBack from "./back";

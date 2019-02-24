@@ -1,5 +1,3 @@
-import freesewing from "freesewing";
-
 /** Calculates the differece between actual and optimal sleevecap length
  * Positive values mean sleevecap is longer than armhole
  */
@@ -22,10 +20,11 @@ function draftSleevecap(part, run) {
   points.centerBiceps = new Point(0, 0);
   points.centerCap = points.centerBiceps.shift(
     90,
-    measurements.bicepsCircumference *
-      (1 + options.bicepsEase) *
-      options.armholeDepthFactor *
-      store.get("sleeveFactor")
+    options.sleevecapTopFactorY *
+      (measurements.bicepsCircumference *
+        (1 + options.bicepsEase) *
+        options.armholeDepthFactor *
+        store.get("sleeveFactor"))
   );
 
   // Left and right biceps points, limit impact of sleeveFactor to 25%
@@ -37,6 +36,14 @@ function draftSleevecap(part, run) {
       halfWidth * (1 - options.sleeveWidthGuarantee) * store.get("sleeveFactor")
   );
   points.bicepsRight = points.bicepsLeft.flipX(points.centerBiceps);
+
+  // Adapt sleeve center axis
+  points.capLeft = new Point(points.bicepsLeft.x, points.centerCap.y);
+  points.capRight = points.capLeft.flipX();
+  points.centerCap = points.capLeft.shiftFractionTowards(
+    points.capRight,
+    options.sleevecapTopFactorX
+  );
 
   // Pitch points
   let width = points.bicepsRight.x;
