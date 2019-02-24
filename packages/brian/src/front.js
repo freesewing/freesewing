@@ -1,5 +1,3 @@
-import freesewing from "freesewing";
-import base from "./base";
 import * as shared from "./shared";
 
 export default part => {

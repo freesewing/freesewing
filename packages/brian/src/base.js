@@ -1,4 +1,3 @@
-import freesewing from "freesewing";
 import * as shared from "./shared";
 
 export default part => {

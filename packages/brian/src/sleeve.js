@@ -1,5 +1,3 @@
-import freesewing from "freesewing";
-
 export default part => {
   // prettier-ignore
   let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro} = part.shorthand();

@@ -157,7 +157,7 @@ function draftSleevecap(part, run) {
 
 export default part => {
   // prettier-ignore
-  let {debug, store, units, sa, measurements, options, Point, points, Path, paths } = part.shorthand();
+  let {debug, store, units, measurements, options, Point, points, paths } = part.shorthand();
 
   store.set("sleeveFactor", 1);
   let run = 0;
