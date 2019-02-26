@@ -17,6 +17,7 @@ This bundles the sewing patterns available for (the JavaScript version of)
 Blocks or slopers are basic patterns shapes that you can extend into fully detailed patterns.
 
  - [brian](https://github.com/freesewing/brian) : A basic body block for menswear, and the basis for many of our menswear patterns. 
+ - [bent](https://github.com/freesewing/bent) : A version of [brian](https://github.com/freesewing/brian) with a two-part sleeve, and the and the basis of our menswear coat and jacket patterns. 
 
 ### Menswear
 

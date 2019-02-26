@@ -1,4 +1,5 @@
 import Aaron from "@freesewing/aaron";
+import Bent from "@freesewing/bent";
 import Brian from "@freesewing/brian";
 import Bruce from "@freesewing/bruce";
 import Cathrin from "@freesewing/cathrin";
@@ -15,6 +16,7 @@ const uncapitalize = string => string.charAt(0).toLowerCase() + string.slice(1);
 
 export const patterns = {
   Aaron,
+  Bent,
   Brian,
   Bruce,
   Cathrin,
