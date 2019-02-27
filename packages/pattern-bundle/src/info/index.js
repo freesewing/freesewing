@@ -1,4 +1,5 @@
 import aaron from "./aaron";
+import bent from "./bent";
 import brian from "./brian";
 import bruce from "./bruce";
 import cathrin from "./cathrin";
@@ -11,6 +12,7 @@ import wahid from "./wahid";
 
 export default {
   aaron,
+  bent,
   brian,
   bruce,
   cathrin,
