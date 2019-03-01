@@ -1,0 +1,22 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleevecapEase: brian
+sleeveLengthBonus: brian
+
+sleeveBend:
+  title: Sleeve bend
+  description: Controls the bend of the sleeve at the elbow.
+
+sleevecapHeight:
+  title: Sleevecap height
+  description: Controls the height of the sleevecap.
+

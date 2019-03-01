@@ -50,8 +50,12 @@ sleevecapEase:
   title: Extra ruimte mouwkop
   description: Hoeveel langer de naad van de mouwkop is dan de naad van het armsgat.
 
-sleevecapHeightFactor:
-  title: Hoogte mouwkop factor
+sleevecapTopFactorX:
+  title: Mouwkop top X
+  description: Bepaalt de horizontale locatie van de top van de mouwkop
+
+sleevecapTopFactorY:
+  title: Mouwkop top X
   description: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
 
 sleevecapBackFactorX:

@@ -50,8 +50,12 @@ sleevecapEase:
   title: Sleevecap ease
   description: The amount by which the sleevecap seam is longer than the armhole seam.
 
-sleevecapHeightFactor:
-  title: Sleevecap height factor
+sleevecapTopFactorX:
+  title: Sleevecap top X
+  description: Controls the horizontal location of the sleevecap top.
+
+sleevecapTopFactorY:
+  title: Sleevecap top Y
   description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap.
 
 sleevecapBackFactorX:

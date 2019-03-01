@@ -50,8 +50,12 @@ sleevecapEase:
   title: Aisance tête de manche
   description: Le montant par lequel la couture du tête de manche est plus longue que celle des emmanchures.
 
-sleevecapHeightFactor:
-  title: Facteur de hauteur tête de manche
+sleevecapTopFactorX:
+  title: Tête de manche top X
+  description: Contrôle l'emplacement horizontal du tête de manche.
+
+sleevecapTopFactorY:
+  title: Tête de manche top Y
   description: Contrôle la hauteur du tête de manche. Plus la valeur est élevée, plus la tête de manche est haute et étroite.
 
 sleevecapBackFactorX:

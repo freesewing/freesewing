@@ -11,7 +11,8 @@ shoulderEase: brian
 shoulderSlopeReduction: brian
 sleeveLengthBonus: brian
 sleevecapEase: brian
-sleevecapHeightFactor: brian
+sleevecapTopFactorX: brian
+sleevecapTopFactorY: brian
 sleevecapBackFactorX: brian
 sleevecapBackFactorY: brian
 sleevecapFrontFactorX: brian

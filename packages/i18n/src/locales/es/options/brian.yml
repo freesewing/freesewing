@@ -50,8 +50,12 @@ sleevecapEase:
   title: Holgura de la parte superior de la manga
   description: La cantidad en la que la parte superior de la manga es más larga que la sisa
 
-sleevecapHeightFactor:
-  title: Factor de altura de la manga
+sleevecapTopFactorX:
+  title: Funda tapa X
+  description: Controla la ubicación horizontal de la parte superior de la funda
+
+sleevecapTopFactorY:
+  title: Funda tapa Y
   description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
 
 sleevecapBackFactorX:

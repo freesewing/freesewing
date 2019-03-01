@@ -50,8 +50,12 @@ sleevecapEase:
   title: Ärmelkappe Leichtigkeit
   description: Der Betrag, um den die Ärmelkappennaht länger ist als die Armlochnaht.
 
-sleevecapHeightFactor:
-  title: Ärmelkappe Höhenfaktor
+sleevecapTopFactorX:
+  title: Ärmelkappe Oberteil X
+  description: Steuert die horizontale Position der Ärmelkappe
+
+sleevecapTopFactorY:
+  title: Ärmelkappe Oberteil Y
   description: Steuert die Höhe der Ärmelkappe. Ein höherer Wert führt zu einer höheren und schmaleren Ärmelkappe.
 
 sleevecapBackFactorX:
