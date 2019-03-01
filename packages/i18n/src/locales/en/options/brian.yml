@@ -16,7 +16,7 @@ bicepsEase:
 
 collarEase:
   title: Collar ease
-  description: La cantidad de facilidad alrededor de tu cuello.
+  description: The amount of ease around your neck
 
 chestEase:
   title: Chest ease
