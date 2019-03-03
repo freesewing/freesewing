@@ -8,10 +8,10 @@ export default {
   tags: ["top", "basics"],
   parts: [
     "base",
-    "backBlock",
-    "frontBlock",
+    "backBase",
+    "frontBase",
     "sleevecap",
-    "sleeveBlock",
+    "sleeveBase",
     "back",
     "front",
     "sleeve",
