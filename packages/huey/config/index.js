@@ -82,7 +82,7 @@ export default {
     ribbing: { bool: true },
     pocket: { bool: true },
 
-    ribbingWidth: { pct: 10, min: 5, max: 15 },
+    ribbingHeight: { pct: 10, min: 5, max: 15 },
     pocketHeight: { pct: 30, min: 25, max: 35 },
     pocketWidth: { pct: 60, min: 50, max: 70 },
     waistEase: { pct: 12, min: 4, max: 20 },
