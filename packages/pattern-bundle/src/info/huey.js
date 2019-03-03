@@ -1,21 +1,50 @@
 export default {
-  name: "brian",
+  name: "huey",
   design: "Joost De Cock",
   code: "Joost De Cock",
   department: "menswear",
-  type: "block",
+  type: "pattern",
   difficulty: 3,
-  tags: ["top"],
-  parts: ["front", "back", "sleeve"],
+  tags: ["top", "basics"],
+  parts: [
+    "base",
+    "backBlock",
+    "frontBlock",
+    "sleevecap",
+    "sleeveBlock",
+    "back",
+    "front",
+    "sleeve",
+    "pocket",
+    "hood",
+    "cuff",
+    "waistband"
+  ],
   optionGroups: {
     fit: [
-      "chestEase",
-      "collarEase",
       "bicepsEase",
+      "chestEase",
       "cuffEase",
+      "collarEase",
+      "ribbingStretchFactor",
       "shoulderEase",
+      "waistEase",
+      "hipsEase",
+      "ribbingStretch"
+    ],
+    style: [
       "lengthBonus",
-      "sleeveLengthBonus"
+      "sleeveLengthBonus",
+      "ribbing",
+      "pocket",
+      "ribbingWidth",
+      "pocketHeight",
+      "pocketWidth",
+      "hoodHeight",
+      "hoodCutback",
+      "hoodClosure",
+      "hoodDepth",
+      "hoodAngle"
     ],
     advanced: [
       "acrossBackFactor",

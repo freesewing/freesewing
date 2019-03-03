@@ -3,6 +3,7 @@ import Bent from "@freesewing/bent";
 import Brian from "@freesewing/brian";
 import Bruce from "@freesewing/bruce";
 import Cathrin from "@freesewing/cathrin";
+import Huey from "@freesewing/huey";
 import Hugo from "@freesewing/hugo";
 import Simon from "@freesewing/simon";
 import Sven from "@freesewing/sven";
@@ -20,6 +21,7 @@ export const patterns = {
   Brian,
   Bruce,
   Cathrin,
+  Huey,
   Hugo,
   Simon,
   Sven,

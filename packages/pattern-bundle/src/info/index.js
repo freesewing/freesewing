@@ -3,6 +3,7 @@ import bent from "./bent";
 import brian from "./brian";
 import bruce from "./bruce";
 import cathrin from "./cathrin";
+import huey from "./huey";
 import hugo from "./hugo";
 import simon from "./simon";
 import sven from "./sven";
@@ -16,6 +17,7 @@ export default {
   brian,
   bruce,
   cathrin,
+  huey,
   hugo,
   simon,
   sven,
