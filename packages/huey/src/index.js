@@ -18,16 +18,16 @@ const Huey = new freesewing.Design(config, plugins);
 Huey.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
-Huey.prototype.draftFrontBlock = function(part) {
+Huey.prototype.draftFrontBase = function(part) {
   return new Brian(this.settings).draftFront(part);
 };
-Huey.prototype.draftBackBlock = function(part) {
+Huey.prototype.draftBackBase = function(part) {
   return new Brian(this.settings).draftBack(part);
 };
 Huey.prototype.draftSleevecap = function(part) {
   return new Brian(this.settings).draftSleevecap(part);
 };
-Huey.prototype.draftSleeveBlock = function(part) {
+Huey.prototype.draftSleeveBase = function(part) {
   return new Brian(this.settings).draftSleeve(part);
 };
 

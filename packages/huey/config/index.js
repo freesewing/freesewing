@@ -18,25 +18,25 @@ export default {
     "wristCircumference"
   ],
   dependencies: {
-    backBlock: "base",
-    frontBlock: "backBlock",
-    sleevecap: "frontBlock",
-    sleeveBlock: "sleevecap",
-    back: "backBlock",
-    front: "frontBlock",
-    sleeve: "sleeveBlock",
+    backBase: "base",
+    frontBase: "backBase",
+    sleevecap: "frontBase",
+    sleeveBase: "sleevecap",
+    back: "backBase",
+    front: "frontBase",
+    sleeve: "sleeveBase",
     pocket: "front"
   },
   inject: {
-    backBlock: "base",
-    frontBlock: "backBlock",
-    sleeveBlock: "sleevecap",
-    back: "backBlock",
-    front: "frontBlock",
-    sleeve: "sleeveBlock",
+    backBase: "base",
+    frontBase: "backBase",
+    sleeveBase: "sleevecap",
+    back: "backBase",
+    front: "frontBase",
+    sleeve: "sleeveBase",
     pocket: "front"
   },
-  hide: ["base", "sleevecap", "backBlock", "frontBlock", "sleeveBlock"],
+  hide: ["base", "sleevecap", "backBase", "frontBase", "sleeveBase"],
   parts: ["hood", "waistband", "cuff"],
   options: {
     // Constants
