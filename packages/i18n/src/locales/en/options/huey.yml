@@ -1,0 +1,67 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapTopFactorX: brian
+sleevecapTopFactorY: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+ribbing: sven
+ribbingHeight: sven
+ribbingStretch: sven
+waistEase: simon
+hipsEase: aaron
+pocketWidth: wahid
+
+pocket:
+  title: Pocket
+  description: Whether to include a pocket or not
+
+pocketHeight:
+  title: Pocket height
+  description: Controls the height of the pocket
+
+hoodHeight:
+  title: Hood height
+  description: Controls the height of the hood
+
+hoodCutback:
+  title: Hood cutback
+  description: Controls how far the hood opening is cut back
+
+hoodClosure:
+  title: Hood closure
+  description: Controls how much of the hood is part of the front closure
+
+hoodDepth:
+  title: Hood depth
+  description: Controls the depth of the hood
+
+hoodAngle:
+  title: Hood angle
+  description: Controls the andle at which the hood is attached

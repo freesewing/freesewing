@@ -16,6 +16,7 @@ frontLining: Front lining
 frontRight: Front right
 hoodCenter: Hood center
 hoodSide: Hood side
+hood: Hood
 inset: Inset
 interfacingTail: Interfacing tail
 interfacingTip: Interfacing tip
@@ -45,3 +46,4 @@ topsleeve: Topsleeve
 undersleeve: Undersleeve
 waistband: Waistband
 yoke: Yoke
+

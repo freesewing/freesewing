@@ -3,6 +3,7 @@ import aaron from "./aaron.yml";
 import bent from "./bent.yml";
 import bruce from "./bruce.yml";
 import cathrin from "./cathrin.yml";
+import huey from "./huey.yml";
 import hugo from "./hugo.yml";
 import simon from "./simon.yml";
 import sven from "./sven.yml";
@@ -16,6 +17,7 @@ let patterns = {
   bent,
   bruce,
   cathrin,
+  huey,
   hugo,
   simon,
   sven,

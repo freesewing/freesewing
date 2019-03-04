@@ -1,0 +1,67 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapTopFactorX: brian
+sleevecapTopFactorY: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+ribbing: sven
+ribbingHeight: sven
+ribbingStretch: sven
+waistEase: simon
+hipsEase: aaron
+pocketWidth: wahid
+
+pocket:
+  title: Bolsillo
+  description: Ya sea para incluir un bolsillo o no
+
+pocketHeight:
+  title: Altura de bolsillo
+  description: Controla la altura del bolsillo
+
+hoodHeight:
+  title: Altura de capucha
+  description:  Controla la altura del capucha
+
+hoodCutback:
+  title: Recorta capucha
+  description: Controla cómo abrir el capó se recorta
+
+hoodClosure:
+  title: Cierre de capucha
+  description: Controla la parte del capó que forma parte del cierre frontal
+
+hoodDepth:
+  title:  Profundidad de capucha
+  description: Controla la profundidad del capucha
+
+hoodAngle:
+  title: Angulo de capucha
+  description: Controla el ángulo en el que se fija la campana
