@@ -1,29 +1,29 @@
 import brian from "./brian.yml";
 import aaron from "./aaron.yml";
+import simon from "./simon.yml";
+import sven from "./sven.yml";
+import wahid from "./wahid.yml";
 import bent from "./bent.yml";
 import bruce from "./bruce.yml";
 import cathrin from "./cathrin.yml";
 import huey from "./huey.yml";
 import hugo from "./hugo.yml";
-import simon from "./simon.yml";
-import sven from "./sven.yml";
 import tamiko from "./tamiko.yml";
 import trayvon from "./trayvon.yml";
-import wahid from "./wahid.yml";
 
 let patterns = {
   brian,
   aaron,
+  simon,
+  sven,
+  wahid,
   bent,
   bruce,
   cathrin,
   huey,
   hugo,
-  simon,
-  sven,
   tamiko,
-  trayvon,
-  wahid
+  trayvon
 };
 
 let options = {};
