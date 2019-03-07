@@ -1,7 +1,7 @@
 acrossBack: Largeur du dos (obsolète)
 bicepsCircumference: Tour de bras
-bustSpan: Ecart entre les pointes des seins
-centerBackNeckToWaist: Hauteur du dos
+bustSpan: Ecart de poitrine
+centerBackNeckToWaist: Hauteur dos
 chestCircumference: Tour de poitrine
 headCircumference: Tour de tête
 highBust: Tour de buste
@@ -16,12 +16,12 @@ naturalWaistToSeat: Longueur de la taille jusqu'aux hanches
 naturalWaistToUnderbust: Longueur de la taille jusqu'au dessous de la poitrine
 naturalWaist: Tour de taille
 neckCircumference: Tour de cou
-seatCircumference: Tour des hanches
-seatDepth: Profondeur d'entrejambe
+seatCircumference: Tour de hanches ou bassin
+seatDepth: Hauteur du montant
 shoulderSlope: Pente d'épaule
-shoulderToElbow: Longueur de l'épaule jusqu'au coude
-shoulderToShoulder: Largeur d'épaule
+shoulderToElbow: Longueur épaule au coude
+shoulderToShoulder: Largeur des épaules
 shoulderToWrist: Longueur de bras
-underbust: Tour sous la poitrine
+underbust: Dessous de poitrine
 upperLegCircumference: Tour de cuisse
 wristCircumference: Tour de poignet
