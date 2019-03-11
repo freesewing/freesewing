@@ -1,0 +1,79 @@
+{
+  "version": "0.0.1",
+  "name": "@freesewing/shin",
+  "description": "Freesewing pattern for swim trunks",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "homepage": "https://github.com/freesewing/shin#readme",
+  "repository": "github:freesewing/shin",
+  "bugs": {
+    "url": "https://github.com/freesewing/shin/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "block",
+    "sloper",
+    "sewing"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/browser.js",
+  "scripts": {
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "pretty": "npx prettier --write 'src/*.js'",
+    "lint": "eslint --fix 'src/*.js'",
+    "watch": "nodemon -w src -w config --exec 'rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_shin --footer \"freesewing.patterns.shin = freesewing_patterns_shin;\"'",
+    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_shin --footer 'freesewing.patterns.shin = freesewing_patterns_shin;'",
+    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
+    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m true",
+    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@freesewing/plugin-bundle": "latest",
+    "freesewing": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@freesewing/antman": "latest",
+    "@freesewing/models": "latest",
+    "@freesewing/plugin-debug": "latest",
+    "@freesewing/plugin-designer": "latest",
+    "@freesewing/plugin-i18n": "latest",
+    "@freesewing/plugin-theme": "latest",
+    "@freesewing/plugin-validate": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest",
+    "rimraf": "latest",
+    "rollup": "latest",
+    "rollup-plugin-babel": "latest",
+    "rollup-plugin-babel-minify": "latest",
+    "rollup-plugin-json": "latest",
+    "rollup-plugin-node-resolve": "latest"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package-lock.json",
+    "package.json"
+  ]
+}
