@@ -58,6 +58,8 @@ export default function(part) {
     .curve(points.frontPitchPointCpBottom, points.tsLeftEdgeCpRight, points.tsLeftEdge)
     ._curve(points.tsElbowLeftCpTop, points.tsElbowLeft)
     .line(points.tsWristLeft)
+    .line(points.hemLeft)
+    .line(points.ventRight)
     .line(points.ventFoldRight)
     .close()
     .attr("class", "fabric");
@@ -69,10 +71,35 @@ export default function(part) {
 
   paths.hem = new Path()
     .move(points.tsWristLeft)
-    .line(points.hemLeft)
-    .line(points.ventRight)
     .line(points.ventFoldRight)
     .attr("class", "fabric lashed");
+
+  if (complete) {
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "top",
+        "tsElbowLeft",
+        "elbowRight",
+      ]
+    });
+    // Title
+    points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 4,
+      title: "topSleeve"
+    });
+
+    // Grainline
+    macro("grainline", {
+      from: points.boxBottom,
+      to: points.top
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+  }
 
   return part;
 }
