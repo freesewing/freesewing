@@ -26,5 +26,17 @@ export default function(part) {
     .line(points.foldRight)
     .attr("class", "stroke-sm dashed");
 
+  if (complete) {
+    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    // Title
+    macro("title", {
+      at: points.title,
+      nr: 13,
+      title: "innerPocketWelt"
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+  }
+
   return part;
 }

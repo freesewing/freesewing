@@ -74,7 +74,7 @@ export default function(part) {
 
     // Instructions
     paths.fold
-      .attr("data-text", "foldOverAlongThisLine")
+      .attr("data-text", "foldAlongThisLine")
       .attr("data-text-class", "center");
 
     // Grainline

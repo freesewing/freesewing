@@ -32,5 +32,22 @@ export default function(part) {
     .line(points.topRight)
     .attr("class", "stroke-sm dashed");
 
+  if (complete) {
+    // Title
+    macro("title", {
+      at: points.top,
+      nr: 11,
+      title: "chestPocketWelt"
+    });
+
+    // Grainline
+    macro("grainline", {
+      from: points.bottomLeft.shift(0, 10),
+      to: points.bottomLeft.shiftFractionTowards(points.topLeft, 2).shift(0, 10)
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+  }
+
   return part;
 }

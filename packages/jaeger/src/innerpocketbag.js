@@ -27,5 +27,28 @@ export default function(part) {
     .line(points.foldRight)
     .attr("class", "stroke-sm lining dashed");
 
+  if (complete) {
+    points.title = points.topLeft.shiftFractionTowards(points.foldRight, 0.5)
+    // Title
+    macro("title", {
+      at: points.title,
+      nr: 14,
+      title: "innerPocketBag"
+    });
+
+    // Grainline
+    macro("grainline", {
+      from: points.bottomLeft.shift(0, 10),
+      to: points.topLeft.shift(0, 10)
+    });
+
+    // Instructions
+    paths.fold
+      .attr("data-text", "foldAlongThisLine")
+      .attr("data-text-class", "center");
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
+  }
+
   return part;
 }
