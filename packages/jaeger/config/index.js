@@ -127,6 +127,7 @@ export default {
     frontPocketPlacement: { pct: 75, min: 65, max: 85 },
     frontPocketWidth: { pct: 68, min: 55, max: 75 },
     frontPocketDepth: { pct: 110, min: 80, max: 130 },
+    frontPocketRadius: { pct: 10, min: 0, max: 50 },
 
     lapelStart: { pct: 10, min: 0, max: 35 },
     lapelReduction: { pct: 5, min: 0, max: 10 },
