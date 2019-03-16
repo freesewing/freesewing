@@ -78,5 +78,34 @@ export default function(part) {
     .close()
     .attr("class", "fabric");
 
+  if (complete) {
+    // Logo
+    points.logo = points.sideHips.shiftFractionTowards(points.bsHips, 0.5);
+    snippets.logo = new Snippet("logo", points.logo);
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "sideWaist",
+        "bsWaist",
+      ]
+    });
+    points.title = points.sideWaistCp2.shiftFractionTowards(points.bsWaistCp2, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 3,
+      text: "side"
+    });
+
+    if (sa) {
+      paths.sa = paths.saBase
+        .clone()
+        .offset(sa)
+        .join(paths.hemBase.offset(sa*3))
+        .close()
+        .attr("class", "fabric sa");
+    }
+  }
+
   return part;
 }
