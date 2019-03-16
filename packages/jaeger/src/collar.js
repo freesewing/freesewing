@@ -28,7 +28,11 @@ export default function(part) {
   ];
   for (let i of mirror) points[i+"Left"] = points[i].flipX(points.collarCbTop);
 
+  // Clean up
+  for (let i of Object.keys(paths)) delete paths[i];
+  for (let i of Object.keys(snippets)) delete snippets[i];
 
+  // Paths
   paths.seam = new Path()
     .move(points.collarstandCbTop)
     .curve_(points.collarstandCbTopCpLeft, points.collarstandTipLeft)
@@ -47,6 +51,34 @@ export default function(part) {
     ._curve(points.collarCbTopCp, points.collarCbTop)
     .curve_(points.collarCbTopCpLeft, points.notchTipLeft)
     .attr("class", "stroke-sm dashed");
+
+
+  if (complete) {
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "collarstandCbTop",
+        "notchTip",
+        "notchTipLeft",
+      ]
+    });
+    // Title
+    points.title = points.collarstandCbTopCp.shiftFractionTowards(points.collarCbTopCpRoll, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 7,
+      title: "collar"
+    });
+
+    // Grainline
+    macro("grainline", {
+      from: points.collarCbTopRoll,
+      to: points.collarstandCbTop
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+  }
 
   return part;
 }
