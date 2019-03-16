@@ -1,0 +1,65 @@
+import { calculateRatios, backSideBoundary } from "./shared";
+
+export default function(part) {
+  calculateRatios(part);
+  let { store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+
+  /**
+   * Shaping the back seam
+   */
+
+  points.cbChest = new Point(0, points.armholePitchCp1.y);
+  if (options.centerBackDart > 0) {
+    points.cbChestCp1 = points.cbChest.shiftFractionTowards(points.cbNeck, 0.5);
+    points.cbNeck = points.cbNeck.shift(0, measurements.chestCircumference * options.centerBackDart);
+  }
+  points.cbChestCp2 = points.cbChest.shift(-90, points.cbChest.dy(points.cbWaist)/3);
+  points.cbWaist = points.cbWaist.shift(0, store.get("waistReductionBack")/2);
+  points.cbWaistCp1 = points.cbWaist.shift(90, points.cbChest.dy(points.cbWaist)/3);
+  points.cbHips = points.cbHips.shift(0, store.get("hipsReductionBack")/2);
+  points.cbHem = points.cbHem.shift(0, store.get("hipsReductionBack")/2);
+  points.cbWaistCp2 = points.cbWaist.shift(-90, points.cbWaist.dy(points.cbHips)/3);
+  points.cbHipsCp1 = points.cbHips.shift(90, points.cbWaist.dy(points.cbHips)/3);
+
+  /**
+   * Shaping the side seam
+   */
+
+  backSideBoundary(part);
+
+  // Divide reduction by 4: two side panels x two sides per panel = 4
+  points.waist = points.bsWaist.shift(180, store.get("waistReductionSide")/4);
+  points.waistCp2 = points.waist.shift(90, points.cbChest.dy(points.waist)/3);
+  points.hips = points.bsHips.shift(180, store.get("hipsReductionSide")/4);
+  points.waistCp1 = points.waist.shift(-90, points.waist.dy(points.hips)/3);
+  points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips)/3);
+  points.hem = new Point(points.hips.x, points.hem.y);
+
+  // Store length of back collar
+  store.set("backCollarLength", new Path()
+    .move(points.cbNeck)
+    ._curve(points.neckCp2, points.neck)
+    .length()
+  );
+
+  // Paths
+  paths.cb = new Path().move(points.cbNeck);
+  if (options.centerBackDart > 0)
+    paths.cb._curve(points.cbChestCp1, points.cbChest);
+  else paths.cb.line(points.cbChest);
+
+  paths.cb
+    .curve(points.cbChestCp2, points.cbWaistCp1, points.cbWaist)
+    .curve(points.cbWaistCp2, points.cbHipsCp1, points.cbHips)
+    .line(points.cbHem)
+    .attr("class", "stroke-xl lining")
+
+  paths.bss = new Path()
+    .move(points.armholeHollow)
+    .curve(points.bsArmholeHollowCp2, points.waistCp2, points.waist)
+    .curve(points.waistCp1, points.hipsCp2, points.hips)
+    .line(points.hem)
+    .attr("class", "stroke-xl lining")
+
+  return part;
+}
