@@ -33,7 +33,30 @@ export default function(part) {
       title: "underCollar"
     });
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "various sa");
+    if (sa) {
+      paths.sa1 = new Path()
+        .move(points.collarstandCbTop)
+        .line(points.collarCbTop)
+        .offset(sa);
+      paths.sa2 = new Path()
+        .move(points.collarstandTip)
+        .line(points.notch)
+        .line(points.notchTip)
+        .offset(-1 * sa);
+      paths.sa = new Path()
+        .move(points.collarstandTip)
+        .line(paths.sa2.start())
+        .join(paths.sa2)
+        .line(points.notchTip)
+        .move(points.collarstandCbTop)
+        .line(paths.sa1.start())
+        .line(paths.sa1.end())
+        .line(points.collarCbTop)
+        .attr("class", "various sa");
+      paths.sa1.render = false;
+      paths.sa2.render = false;
+    }
   }
+
   return part;
 }
