@@ -388,6 +388,7 @@ export default function(part) {
         "frontPocketTopLeft",
         "frontPocketBottomLeft",
         "armholeHollow",
+        "waist"
       ]
     });
     // Buttons
