@@ -4,8 +4,6 @@
 export const calculateRatios = part => {
   let { store, measurements, options } = part.shorthand();
 
-  if (store.get("ratiosCalculated")) return true;
-
   // Make sure collar height makes sense
   if (options.collarHeight * 2 < options.rollLineCollarHeight) options.rollLineCollarHeight = options.collarHeight * 2;
 
@@ -24,8 +22,6 @@ export const calculateRatios = part => {
   store.set("hipsReductionBack", store.get("hipsReduction") * options.hipsReductionRatioBack);
   store.set("hipsReductionFront", store.get("hipsReduction") * options.hipsReductionRatioFront);
   store.set("hipsReductionSide", store.get("hipsReduction") * (1 - options.hipsReductionRatioFront - options.hipsReductionRatioBack));
-
-  store.set("ratiosCalculated", true);
 
   // FIXME: Still needed?
   // Prevent chest shaping from being 0, because that will get read as 360 degrees

@@ -74,7 +74,7 @@ export default function(part) {
   // Lapel break point and cutaway point
   points.lapelBreakPoint = new Point(
     points.hemEdge.x,
-    points.dartTop.y * (1 + options.lapelBreak)
+    points.dartTop.y * (1 + options.lapelStart)
   );
   points.cutawayPoint = points.lapelBreakPoint.shift(
     -90,
@@ -345,6 +345,13 @@ export default function(part) {
     .curve_(points.dartLeftCpBottom, points.dartBottom)
     .close()
     .attr("class", "fabric");
+
+  paths.frontPocket = new Path()
+    .move(points.frontPocketTopEnd)
+    .line(points.frontPocketTopLeft)
+    .line(points.frontPocketBottomLeft)
+    .line(points.frontPocketBottomEnd)
+    .attr("class", "help");
 
   if (complete) {
 

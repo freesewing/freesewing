@@ -87,9 +87,10 @@ export default function(part) {
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
-    .curve_(points.neckCp2, points.cbNeck)
-    ._curve(points.cbChestCp1, points.cbChest)
-    .curve(points.cbChestCp2, points.cbWaistCp1, points.cbWaist)
+    .curve_(points.neckCp2, points.cbNeck);
+  if (options.centerBackDart > 0) paths.saBase = paths.saBase._curve(points.cbChestCp1, points.cbChest);
+  else paths.saBase = paths.saBase.line(points.cbChest);
+  paths.saBase = paths.saBase.curve(points.cbChestCp2, points.cbWaistCp1, points.cbWaist);
   if (options.backVent === 1) {
     paths.saBase = paths.saBase
       .join(

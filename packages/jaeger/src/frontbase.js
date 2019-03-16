@@ -131,13 +131,18 @@ export default function(part) {
   store.set("pocketWidth", width);
   store.set("pocketDepth", depth);
 
-  paths.frontPocket = new Path()
-    .move(points.frontPocketTopRight)
-    .line(points.frontPocketTopLeft)
-    .line(points.frontPocketBottomLeft)
-    .line(points.frontPocketBottomRight)
-    .line(points.frontPocketTopRight)
-    .close()
+  points.frontPocketTopEnd = utils.curveIntersectsY(
+    points.waist,
+    points.waistCp1,
+    points.hipsCp2,
+    points.hips,
+    points.frontPocketTopLeft.y
+  );
+  points.frontPocketBottomEnd = utils.beamIntersectsY(
+    points.hips,
+    points.hem,
+    points.frontPocketBottomLeft.y
+  );
 
   paths.dart = new Path()
     .move(points.dartRight)
