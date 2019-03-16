@@ -79,7 +79,7 @@ export default {
     bicepsEase:             { pct:  20, min:  0, max:  50 },
     chestEase:              { pct:  10, min:  5, max:  20 },
     collarEase:             { pct: 3.5, min:  0, max:  10 },
-    cuffEase:               { pct:  20, min:  0, max: 200 },
+    cuffEase:               { pct:  60, min: 30, max: 100 },
     frontArmholeDeeper:     { pct: 0.5, min:  0, max: 1.5 },
     lengthBonus:            { pct:  19, min:  0, max:   25 },
     shoulderEase:           { pct:   0, min: -2, max:   6 },
