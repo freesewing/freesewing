@@ -31,6 +31,7 @@ export default {
     collar: "collarstand",
     undercollar: "collarstand",
     pocket: "frontBase",
+    pocketLining: "pocket",
     chestPocketWelt: "front",
     chestPocketBag: "front",
     innerPocketWelt: "front",
@@ -53,6 +54,7 @@ export default {
     undercollar: "collarstand",
     topSleeve: "bentTopSleeve",
     underSleeve: "bentUnderSleeve",
+    pocketLining: "pocket",
   },
   hide: [
     "bentBase",
