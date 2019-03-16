@@ -94,7 +94,7 @@ export default function(part) {
     macro("title", {
       at: points.title,
       nr: 3,
-      text: "side"
+      title: "side"
     });
 
     if (sa) {
