@@ -81,6 +81,11 @@ export default function(part) {
   points.leftNeck = points.neck.flipX(points.collarCbTop);
   points.leftCollarstandCbTopCp = points.collarstandCbTopCp.flipX(points.collarCbTop);
 
+  // Clean up
+  for (let i of Object.keys(paths)) delete paths[i];
+  for (let i of Object.keys(snippets)) delete snippets[i];
+
+  // Paths
   paths.seam = new Path()
     .move(points.collarCorner)
     ._curve(points.neck, points.collarstandCbBottom)
@@ -103,6 +108,32 @@ export default function(part) {
     .line(points.collarstandCbTop)
     .curve_(points.collarstandCbTopCp, points.collarstandTip)
   */
+
+  if (complete) {
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "collarstandCbBottom",
+        "collarstandCbTop",
+      ]
+    });
+    // Title
+    points.title = points.collarstandCbTop.shiftFractionTowards(points.collarCbBottom, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 8,
+      title: "collarstand"
+    });
+
+    // Grainline
+    macro("grainline", {
+      from: points.collarstandCbTop,
+      to: points.collarstandCbBottom
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+  }
 
   return part;
 }
