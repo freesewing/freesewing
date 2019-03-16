@@ -77,6 +77,7 @@ export default function(part) {
     .curve_(points.sideWaistCp2, points.split)
     .length();
   points.sideArmhole = points.armhole.shift(90, frontLength - sideLength);
+  points.sideArmholeCp2 = points.sideArmholeCp2.shift(90, frontLength - sideLength);
   points.bsArmholeCp2 = points.bsArmholeCp2.shift(90, frontLength - sideLength);
 
   /**
