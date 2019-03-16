@@ -270,7 +270,6 @@ export default function(part) {
 
   */
 
-
   // Paths
   paths.saBase = new Path()
     .move(points.hem)
@@ -335,7 +334,7 @@ export default function(part) {
   paths.breakLine = new Path()
     .move(points.lapelBreakPoint)
     .line(points.shoulderRoll)
-    .attr("class", "fabric lashed");
+    .attr("class", "canvas lashed");
 
   paths.dart = new Path()
     .move(points.dartBottom)
@@ -353,8 +352,74 @@ export default function(part) {
     .line(points.frontPocketBottomEnd)
     .attr("class", "help");
 
-  if (complete) {
+  paths.chestPiece = new Path()
+    .move(points.lapelBreakPoint)
+    .curve(
+      points.cutawayPoint,
+      points.waist,
+      points.fsArmhole
+    )
+    .attr("class", "canvas lashed")
+    .attr("data-text", "chestPiece")
+    .attr("data-text-class", "center")
 
+
+  if (complete) {
+    // Logo
+    points.logo = new Point(
+      points.dartBottom.x,
+      points.hips.y
+    );
+    snippets.logo = new Snippet("logo", points.logo);
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "neck",
+        "shoulder",
+        "armholePitch",
+        "chestPocketBottomLeft",
+        "chestPocketBottomRight",
+        "lapelBreakPoint",
+        "notchMax",
+        "notch",
+        "innerPocketLeft",
+        "innerPocketRight",
+        "frontPocketTopLeft",
+        "frontPocketBottomLeft",
+        "armholeHollow"
+      ]
+    });
+    // Buttons
+    points.button1 = new Point(
+      points.cfWaist.x,
+      points.lapelBreakPoint.y
+    );
+    let buttons = ["button1"];
+    if (options.buttons > 1) {
+      points.button2 = new Point(
+        points.cfWaist.x,
+        points.cutawayPoint.y
+      );
+      buttons.push("button2");
+
+    }
+    for (let button of buttons) snippets[button] = new Snippet("button", points[button]).attr("data-scale", 2);
+
+    // Instructions
+    paths.breakLine
+      .attr("data-text", "breakLine")
+      .attr("data-text-class", "center");
+    paths.flb
+      .attr("data-text-xml:space", "preserve")
+      .attr("data-text", "            ")
+      .attr("data-text", "facingLiningBoundary")
+
+    // Grainline
+    macro("grainline", {
+      from: points.cfHips,
+      to: new Point(points.cfArmhole.x, points.collarCorner.y)
+    });
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)

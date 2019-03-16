@@ -36,7 +36,7 @@
         },
         //"embed": true,
         "sa": 0,
-        "paperless": true,
+        //"paperless": true,
         "measurements": {
           "bicepsCircumference": 335,
           "centerBackNeckToWaist": 520,
@@ -57,8 +57,8 @@
       pattern.use(freesewing.plugins.theme);
       pattern.use(freesewing.plugins.designer);
       pattern.use(freesewing.plugins.validate);
-      //pattern.draft();
-      pattern.sampleOption("buttonLength");
+      pattern.draft();
+      //pattern.sampleOption("buttonLength");
       document.getElementById("svg1").innerHTML = pattern.render();
 
       function pointHover(evt) {

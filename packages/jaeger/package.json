@@ -49,6 +49,7 @@
   "dependencies": {
     "@freesewing/bent": "0.1.1",
     "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-buttons": "0.1.0",
     "freesewing": "latest"
   },
   "devDependencies": {

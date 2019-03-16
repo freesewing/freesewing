@@ -90,7 +90,7 @@ export default {
     sleeveLengthBonus:      { pct:   0, min:-40, max:  10 },
 
     // Jaeger options
-    frontOverlap: { pct: 2, min: 1, max: 3},
+    frontOverlap: { pct: 1.5, min: 1, max: 2},
 
     sleeveVentLength: { pct: 35, min: 25, max: 55 },
     sleeveVentWidth: { pct: 18, min: 10, max: 26 },

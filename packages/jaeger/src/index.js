@@ -1,5 +1,6 @@
 import freesewing from "freesewing";
 import plugins from "@freesewing/plugin-bundle";
+import buttons from "@freesewing/plugin-buttons";
 import Bent from "@freesewing/bent";
 import config from "../config";
 // Parts
@@ -20,7 +21,10 @@ import draftTopSleeve from "./topsleeve";
 import draftUnderSleeve from "./undersleeve";
 
 // Create new design
-const Jaeger = new freesewing.Design(config, plugins);
+const Jaeger = new freesewing.Design(config, [
+  plugins,
+  buttons
+]);
 
 // Attach draft methods from Bent to prototype
 Jaeger.prototype.draftBentBase = function(part) {
