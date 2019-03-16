@@ -118,6 +118,28 @@ export default function(part) {
   paths.seam = paths.saBase.join(paths.hemBase).attr("class", "fabric");
 
   if (complete) {
+    // Logo
+    points.logo = new Point(
+      points.title.x,
+      points.armholeHollow.y
+    );
+    snippets.logo = new Snippet("logo", points.logo);
+    // Notches
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "neck",
+        "shoulder",
+        "armholePitch",
+        "cbWaist",
+        "waist"
+      ]
+    });
+    // Grainline
+    macro("grainline", {
+      from: new Point(points.neck.x, points.hips.y),
+      to: points.neck
+    });
 
     if (sa) {
       paths.sa = paths.saBase
