@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   let width = store.get("innerPocketWidth");
   let welt = store.get("innerPocketWeltHeight");
@@ -48,6 +48,39 @@ export default function(part) {
       .attr("data-text-class", "center");
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topRight.y - sa - 15
+      });
+      macro("vd", {
+        from: points.bottomRight,
+        to: points.foldRight,
+        x: points.topRight.x + sa + 15
+      });
+      macro("vd", {
+        from: points.foldRight,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      });
+      macro("vd", {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + sa + 30
+      });
+      macro("vd", {
+        from: points.bottomLeft,
+        to: points.foldLeft,
+        x: points.topLeft.x - sa - 15
+      });
+      macro("vd", {
+        from: points.foldLeft,
+        to: points.topLeft,
+        x: points.topLeft.x - sa - 15
+      });
+    }
   }
 
   return part;
