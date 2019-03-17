@@ -618,6 +618,12 @@ export default function(part) {
         to: points.chestPocketBottomLeft,
         x: points.chestPocketBottomLeft.x - 15
       });
+      points.cfWaist = new Point(
+        points.button1.x,
+        points.waist.y
+      );
+      macro("ld", { from: points.cfWaist, to: points.dartLeft });
+      macro("ld", { from: points.dartRight, to: points.waist });
     }
   }
 
