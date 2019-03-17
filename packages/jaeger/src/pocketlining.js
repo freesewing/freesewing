@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand();
 
   // Adapt length
   points.topLeft = points.edgeLeft.flipY(points.topLeft);

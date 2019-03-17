@@ -7,7 +7,7 @@
  */
 
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, store, complete, points, measurements, options, macro, snippets, paths, Path } = part.shorthand();
 
   // Only keep what's relevant from the front part
   let collarPoints = [

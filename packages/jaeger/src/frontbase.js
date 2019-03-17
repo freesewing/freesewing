@@ -1,7 +1,7 @@
 import { backSideBoundary } from "./shared";
 
 export default function(part) {
-  let { store, complete, points, utils, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { store, points, utils, options, Point, paths, Path } = part.shorthand();
 
   /**
    * Add side part from back to front, draw front style line

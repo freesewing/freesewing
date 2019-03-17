@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Double back vent
   if (options.backVent === 2) {

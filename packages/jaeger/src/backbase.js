@@ -2,7 +2,7 @@ import { calculateRatios, backSideBoundary } from "./shared";
 
 export default function(part) {
   calculateRatios(part);
-  let { store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { store, points, measurements, options, Point, paths, Path } = part.shorthand();
 
   /**
    * Shaping the back seam

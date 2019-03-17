@@ -6,7 +6,7 @@
  */
 
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, complete, points, macro, paths, Path } = part.shorthand();
 
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i];

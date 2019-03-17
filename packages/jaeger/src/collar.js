@@ -6,7 +6,7 @@
  */
 
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand();
 
   // Add extra fabric for collar roll
   points.collarCbTopRoll = points.collarCbTop.shift(-90, options.collarRoll);
