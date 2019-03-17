@@ -1,6 +1,4 @@
 /*
- * FIXME
- *
  * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
  * would love the input from someone with more pattern design
@@ -8,7 +6,7 @@
  */
 
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i];
@@ -55,6 +53,44 @@ export default function(part) {
         .attr("class", "various sa");
       paths.sa1.render = false;
       paths.sa2.render = false;
+    }
+
+    if (paperless) {
+      macro("hd", {
+        from: points.collarstandCbTop,
+        to: points.collarstandTip,
+        y: points.collarstandCbTop.y - 15
+      });
+      macro("hd", {
+        from: points.collarstandCbTop,
+        to: points.notch,
+        y: points.collarstandCbTop.y - 30
+      });
+      macro("hd", {
+        from: points.collarCbTop,
+        to: points.notchTip,
+        y: points.notchTip.y + 15
+      });
+      macro("vd", {
+        from: points.collarCbTop,
+        to: points.collarstandCbTop,
+        x: points.collarCbTop.x - sa - 15
+      });
+      macro("ld", {
+        from: points.collarstandTip,
+        to: points.notch,
+        d: sa + 15
+      });
+      macro("ld", {
+        from: points.notchTip,
+        to: points.notch,
+        d: -15 - sa
+      });
+      macro("vd", {
+        from: points.notchTip,
+        to: points.collarstandCbTop,
+        x: points.notch.x + sa + 40
+      });
     }
   }
 

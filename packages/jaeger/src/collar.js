@@ -1,15 +1,12 @@
 /*
- * FIXME
- *
- * This collar was ported as-is from the original (PHP) design
- * I did a few years ago. I think it would benefit from a redesign
+ * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
  * would love the input from someone with more pattern design
  * experience, or more tailoring exprience.
  */
 
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Add extra fabric for collar roll
   points.collarCbTopRoll = points.collarCbTop.shift(-90, options.collarRoll);
@@ -78,6 +75,55 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.collarstandTipLeft,
+        to: points.collarstandTip,
+        y: points.collarstandCbTop.y - sa - 15
+      });
+      macro("hd", {
+        from: points.notchLeft,
+        to: points.notch,
+        y: points.collarstandCbTop.y - sa - 30
+      });
+      macro("hd", {
+        from: points.notchTipRollLeft,
+        to: points.notchTipRoll,
+        y: points.notchTipRoll.y + sa + 15
+      });
+      macro("hd", {
+        from: points.notchTipLeft,
+        to: points.notchTip,
+        y: points.notchTipRoll.y + sa + 30
+      });
+      macro("vd", {
+        from: points.collarCbTopRoll,
+        to: points.collarstandCbTop,
+        x: points.collarCbTopRoll.x + 15
+      });
+      macro("ld", {
+        from: points.collarstandTip,
+        to: points.notch,
+        d: sa + 15
+      });
+      macro("ld", {
+        from: points.notchTip,
+        to: points.notch,
+        d: -15 - sa
+      });
+      macro("ld", {
+        from: points.notchTipRoll,
+        to: points.notch,
+        d: -30 - sa
+      });
+      macro("vd", {
+        from: points.notchTipRoll,
+        to: points.collarstandCbTop,
+        x: points.notch.x + sa + 40
+      });
+
+    }
   }
 
   return part;

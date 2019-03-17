@@ -1,6 +1,5 @@
+
 /*
- * FIXME
- *
  * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
  * would love the input from someone with more pattern design
@@ -8,7 +7,7 @@
  */
 
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Only keep what's relevant from the front part
   let collarPoints = [
@@ -133,6 +132,29 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.leftCollarCorner,
+        to: points.collarCorner,
+        y: points.collarstandCbBottom.y - sa - 15
+      });
+      macro("hd", {
+        from: points.leftCollarstandTip,
+        to: points.collarstandTip,
+        y: points.collarstandTip.y + sa + 15
+      });
+      macro("vd", {
+        from: points.collarstandTip,
+        to: points.collarCorner,
+        x: points.collarstandTip.x + sa + 15
+      });
+      macro("vd", {
+        from: points.collarstandCbTop,
+        to: points.collarstandCbBottom,
+        x: points.collarstandCbTop.x + 15
+      });
+    }
   }
 
   return part;
