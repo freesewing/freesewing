@@ -4,6 +4,13 @@
 <h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
+<p align="center">
+  <a href="https://www.npmjs.com/package/@freesewing/jaeger"><img src="https://badgen.net/npm/v/@freesewing/jaeger" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/jaeger"><img src="https://badgen.net/npm/license/@freesewing/jaeger" alt="License"></a>
+  <a href="https://deepscan.io/dashboard#view=project&tid=2114&pid=4633&bid=37171"><img src="https://deepscan.io/api/teams/2114/projects/4633/branches/37171/badge/grade.svg" alt="DeepScan grade"></a>
+  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
+  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
+</p>
 
 # freesewing / patterns / jaeger
 
