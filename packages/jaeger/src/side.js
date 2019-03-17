@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Double back vent
   if (options.backVent === 2) {
@@ -104,6 +104,53 @@ export default function(part) {
         .join(paths.hemBase.offset(sa*3))
         .close()
         .attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("ld", {
+        from: points.sideWaist,
+        to:points.bsWaist
+      });
+      macro("hd", {
+        from: points.sideHem,
+        to:points.bsHem,
+        y: points.sideHem.y + 3*sa + 15
+      });
+      macro("hd", {
+        from: points.fsArmhole,
+        to:points.bsArmholeHollow,
+        y: points.bsArmholeHollow.y - sa - 15
+      });
+      macro("vd", {
+        from: points.bsHem,
+        to:points.bsHips,
+        x: points.bsHips.x + sa + 15
+      });
+      macro("vd", {
+        from: points.bsHem,
+        to:points.bsWaist,
+        x: points.bsHips.x + sa + 30
+      });
+      macro("vd", {
+        from: points.bsHem,
+        to:points.bsArmholeHollow,
+        x: points.bsHips.x + sa + 45
+      });
+      macro("vd", {
+        from: points.sideHem,
+        to:points.bsArmholeHollow,
+        x: points.bsHips.x + sa + 60
+      });
+      macro("vd", {
+        from: points.sideHem,
+        to:points.sideWaist,
+        x: points.sideHem.x - sa - 15
+      });
+      macro("vd", {
+        from: points.sideWaist,
+        to:points.fsArmhole,
+        x: points.sideHem.x - sa - 15
+      });
     }
   }
 
