@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, store, complete, points, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } = part.shorthand();
 
   let width = store.get("chestPocketWidth");
   let welt = store.get("chestPocketWeltHeight");
