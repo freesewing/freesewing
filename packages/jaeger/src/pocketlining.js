@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Adapt length
   points.topLeft = points.edgeLeft.flipY(points.topLeft);
@@ -48,6 +48,21 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topLeft.y - sa - 15
+      });
+      let corner = points.bottomRight
+      if (options.frontPocketRadius > 0) corner = points.rightStart;
+      macro("vd", {
+        from: corner,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      });
+    }
   }
 
   return part;

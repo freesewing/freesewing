@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   let width = store.get("pocketWidth");
   let depth = store.get("pocketDepth");
@@ -84,6 +84,26 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.edgeLeft,
+        to: points.edgeRight,
+        y: points.edgeLeft.y - sa - 15
+      });
+      let corner = points.bottomRight
+      if (options.frontPocketRadius > 0) corner = points.rightStart;
+      macro("vd", {
+        from: corner,
+        to: points.topRight,
+        x: points.edgeRight.x + sa + 15
+      });
+      macro("vd", {
+        from: corner,
+        to: points.edgeRight,
+        x: points.edgeRight.x + sa + 30
+      });
+    }
   }
 
   return part;
