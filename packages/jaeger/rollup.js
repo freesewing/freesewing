@@ -10,11 +10,11 @@ export default {
     resolve({ browser: true }),
     json(),
     babel({ exclude: "node_modules/**" }),
-    //minify({
-    //  comments: false,
-    //  sourceMap: true,
-    //  banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-    //})
+    minify({
+      comments: false,
+      sourceMap: true,
+      banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+    })
   ],
   external: ["freesewing", "@freesewing/bent", "@freesewing/plugin-bundle"],
   output: {
