@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Front closure overlap
   points.neckEdge = points.cfNeck.shift(180, measurements.chestCircumference * options.frontOverlap);
@@ -428,8 +428,198 @@ export default function(part) {
         .close()
         .attr("class", "fabric sa");
     }
+    if (paperless) {
+      macro("vd", {
+        from: points.notchEdge,
+        to:points.neck,
+        x: points.lapelBreakPoint.x - 15 - sa
+      });
+      macro("vd", {
+        from: points.lapelBreakPoint,
+        to:points.notchEdge,
+        x: points.lapelBreakPoint.x - 15 - sa
+      });
+      macro("vd", {
+        from: points.cutawayPoint,
+        to: points.lapelBreakPoint,
+        x: points.lapelBreakPoint.x - 15 - sa
+      });
+      macro("vd", {
+        from: points.facingBottom,
+        to: points.cutawayPoint,
+        x: points.lapelBreakPoint.x - 15 - sa
+      });
+      macro("vd", {
+        from: points.facingBottom,
+        to: points.notchEdge,
+        x: points.lapelBreakPoint.x - 30 - sa
+      });
+      macro("vd", {
+        from: points.facingBottom,
+        to: points.neck,
+        x: points.lapelBreakPoint.x - 45 - sa
+      });
+      macro("hd", {
+        from: points.notchEdge,
+        to: points.notchMax,
+        y: points.notchEdge.y - 15 - sa
+      });
+      macro("hd", {
+        from: points.notchEdge,
+        to: points.collarCorner,
+        y: points.notchEdge.y - 30 - sa
+      });
+      macro("hd", {
+        from: points.notchEdge,
+        to: points.neck,
+        y: points.neck.y - 15 - sa
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.neck,
+        y: points.neck.y - 30 - sa
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.armholePitch,
+        y: points.neck.y - 45 - sa
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.shoulder,
+        y: points.neck.y - 60 - sa
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.fsArmhole,
+        y: points.neck.y - 75 - sa
+      });
+      macro("ld", {
+        from: points.neck,
+        to: points.shoulder,
+        d: -15
+      });
+      macro("ld", {
+        from: points.collarCorner,
+        to: points.neck,
+        d: -15
+      });
+      macro("ld", {
+        from: points.lapelBreakPoint,
+        to: points.button1,
+        d: -15
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.innerPocketTopLeft,
+        y: points.innerPocketTopLeft.y - 35,
+      });
+      macro("hd", {
+        from: points.innerPocketTopLeft,
+        to: points.innerPocketTopRight,
+        y: points.innerPocketTopLeft.y - 35,
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.ipfeTopRightEnd,
+        y: points.innerPocketTopLeft.y - 50,
+      });
+      macro("vd", {
+        from: points.ipfeBottomRightStart,
+        to: points.ipfeTopRightStart,
+        x: points.ipfeTopRightEnd.x + 15,
+      });
+      macro("vd", {
+        from: points.innerPocketBottomRight,
+        to: points.innerPocketTopRight,
+        x: points.innerPocketTopRight.x - 15,
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.dartTop,
+        y: points.dartTop.y + 15,
+      });
+      macro("ld", {
+        from: points.dartLeft,
+        to: points.dartRight,
+      });
+      macro("vd", {
+        from: points.dartBottom,
+        to: points.dartTop,
+        x: points.dartRight.x + 15,
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.facingBottom,
+        y: points.facingBottom.y + 15 + sa,
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.roundEnd,
+        y: points.facingBottom.y + 15 + 3*sa,
+      });
+      macro("hd", {
+        from: points.lapelBreakPoint,
+        to: points.hem,
+        y: points.facingBottom.y + 30 + 3*sa,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.hips,
+        x: points.hem.x + 15 + sa,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.dartBottom,
+        x: points.hem.x + 30 + sa,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.waist,
+        x: points.hem.x + 45 + sa,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.innerPocketRight,
+        x: points.hem.x + 60 + sa,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.fsArmhole,
+        x: points.hem.x + 75 + sa,
+      });
+      macro("vd", {
+        from: points.fsArmhole,
+        to: points.armholePitch,
+        x: points.fsArmhole.x + 15 + sa,
+      });
+      macro("vd", {
+        from: points.fsArmhole,
+        to: points.shoulder,
+        x: points.fsArmhole.x + 30 + sa,
+      });
+      macro("vd", {
+        from: points.fsArmhole,
+        to: points.neck,
+        x: points.fsArmhole.x + 45 + sa,
+      });
+      macro("hd", {
+        from: points.cutawayPoint,
+        to: points.frontPocketTopLeft,
+        y: points.frontPocketTopLeft.y - 15
+      });
+      macro("vd", {
+        from: points.frontPocketBottomLeft,
+        to: points.frontPocketTopLeft,
+        x: points.frontPocketTopLeft.x - 15
+      });
+      macro("vd", {
+        from: points.fsArmhole,
+        to: points.chestPocketBottomLeft,
+        x: points.chestPocketBottomLeft.x - 15
+      });
+    }
   }
-
 
   return part;
 }
