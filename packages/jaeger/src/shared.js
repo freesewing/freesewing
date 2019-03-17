@@ -14,18 +14,6 @@ export const calculateRatios = part => {
 
   store.set("waistReduction",  store.get("chest") - store.get("waist"));
   store.set("hipsReduction",  store.get("chest") - store.get("hips"));
-
-  store.set("waistReductionBack", store.get("waistReduction") * options.waistReductionRatioBack);
-  store.set("waistReductionFront", store.get("waistReduction") * options.waistReductionRatioFront);
-  store.set("waistReductionSide", store.get("waistReduction") * (1 - options.waistReductionRatioFront - options.waistReductionRatioBack));
-
-  store.set("hipsReductionBack", store.get("hipsReduction") * options.hipsReductionRatioBack);
-  store.set("hipsReductionFront", store.get("hipsReduction") * options.hipsReductionRatioFront);
-  store.set("hipsReductionSide", store.get("hipsReduction") * (1 - options.hipsReductionRatioFront - options.hipsReductionRatioBack));
-
-  // FIXME: Still needed?
-  // Prevent chest shaping from being 0, because that will get read as 360 degrees
-  // if($this->o('chestShaping') == 0) $this->setOptionIfUnset('chestShaping', 0.0001);
 };
 
 /**

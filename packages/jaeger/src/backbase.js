@@ -14,10 +14,10 @@ export default function(part) {
     points.cbNeck = points.cbNeck.shift(0, measurements.chestCircumference * options.centerBackDart);
   }
   points.cbChestCp2 = points.cbChest.shift(-90, points.cbChest.dy(points.cbWaist)/3);
-  points.cbWaist = points.cbWaist.shift(0, store.get("waistReductionBack")/2);
+  points.cbWaist = points.cbWaist.shift(0, store.get("waistReduction") * options.reduceWaistStandardFraction);
   points.cbWaistCp1 = points.cbWaist.shift(90, points.cbChest.dy(points.cbWaist)/3);
-  points.cbHips = points.cbHips.shift(0, store.get("hipsReductionBack")/2);
-  points.cbHem = points.cbHem.shift(0, store.get("hipsReductionBack")/2);
+  points.cbHips = points.cbHips.shift(0, store.get("hipsReduction") * options.reduceHipsStandardFraction);
+  points.cbHem = points.cbHem.shift(0, store.get("hipsReduction") * options.reduceHipsStandardFraction);
   points.cbWaistCp2 = points.cbWaist.shift(-90, points.cbWaist.dy(points.cbHips)/3);
   points.cbHipsCp1 = points.cbHips.shift(90, points.cbWaist.dy(points.cbHips)/3);
 
@@ -28,9 +28,9 @@ export default function(part) {
   backSideBoundary(part);
 
   // Divide reduction by 4: two side panels x two sides per panel = 4
-  points.waist = points.bsWaist.shift(180, store.get("waistReductionSide")/4);
+  points.waist = points.bsWaist.shift(180, store.get("waistReduction") * options.reduceWaistStandardFraction);
   points.waistCp2 = points.waist.shift(90, points.cbChest.dy(points.waist)/3);
-  points.hips = points.bsHips.shift(180, store.get("hipsReductionSide")/4);
+  points.hips = points.bsHips.shift(180, store.get("hipsReduction") * options.reduceHipsStandardFraction);
   points.waistCp1 = points.waist.shift(-90, points.waist.dy(points.hips)/3);
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips)/3);
   points.hem = new Point(points.hips.x, points.hem.y);

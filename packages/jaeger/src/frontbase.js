@@ -45,13 +45,12 @@ export default function(part) {
   /**
    * Shape the front/side seam
    */
-  // Divide reduction by 4: two side panels x two sides per panel = 4
-  points.waist = points.fsWaist.shift(180, store.get("waistReductionSide")/4);
+  points.waist = points.fsWaist.shift(180, store.get("waistReduction") * options.reduceWaistStandardFraction);
   points.waistCp2 = new Point(
     points.waist.x,
     points.fsWaistCp2.y
   );
-  points.hips = points.fsHips.shift(180, store.get("hipsReductionSide")/4);
+  points.hips = points.fsHips.shift(180, store.get("hipsReduction") * options.reduceHipsStandardFraction);
   points.waistCp1 = points.waist.shift(-90, points.waist.dy(points.hips)/3);
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips)/3);
   points.hem = new Point(points.hips.x, points.hem.y);
@@ -81,12 +80,12 @@ export default function(part) {
   points.bsArmholeCp2 = points.bsArmholeCp2.shift(90, frontLength - sideLength);
 
   /**
-   * Shape the side/back seam
+   * Shape the side/back seam (15% of reduction x 2)
    */
-  points.bsWaist = points.bsWaist.shift(180, store.get("waistReductionSide")/4);
+  points.bsWaist = points.bsWaist.shift(180, store.get("waistReduction") * options.reduceWaistStandardFraction);
   points.bsWaistCp2 = new Point(points.bsWaist.x, points.sideWaistCp2.y);
   points.bsWaistCp1 = new Point(points.bsWaist.x, points.sideWaistCp1.y);
-  points.bsHips = points.bsHips.shift(180, store.get("hipsReductionSide")/4);
+  points.bsHips = points.bsHips.shift(180, store.get("hipsReduction") * options.reduceHipsStandardFraction);
   points.bsHipsCp2 = new Point(points.bsHips.x, points.sideHipsCp2.y);
   points.bsHem = new Point(points.bsHips.x, points.sideHem.y);
 
@@ -103,7 +102,7 @@ export default function(part) {
   points.sideHem = points.hem.flipX(points.fsHem);
 
   /**
-   * Front dart
+   * Front dart (12.5% of reduction x 2)
    */
   points.dart = new Point(
     points.waist.x * options.frontDartPlacement,
@@ -111,7 +110,7 @@ export default function(part) {
   );
   points.dartTop = points.dart.shift(90, points.armhole.dy(points.waist) / 1.5);
   points.dartBottom = points.dart.shift(-90, points.waist.dy(points.hips) / 1.5);
-  points.dartRight = points.dart.shift(0, store.get("waistReductionFront")/2);
+  points.dartRight = points.dart.shift(0, store.get("waistReduction") * options.reduceWaistDartFraction);
   points.dartLeft = points.dartRight.flipX(points.dart);
   points.dartRightCpTop = points.dartRight.shift(90, points.dartTop.dy(points.dart)/3);
   points.dartLeftCpTop = points.dartRightCpTop.flipX(points.dart);

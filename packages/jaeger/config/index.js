@@ -74,6 +74,21 @@ export default {
     collarFactor: 4.8,
     chestShapingMax: 5,
 
+    // How the reduction of waist and hips is divided
+    // Waist:
+    //  - front dart: 10%
+    //  - Side/front: 16%
+    //  - Side/back: 16%
+    //  - Back: 8%
+    //  Total for half garment = 50%
+    // Hips:
+    //  - Side/front: 20%
+    //  - Side/back: 20%
+    //  - Back: 10%
+    reduceWaistStandardFraction: 0.08,
+    reduceWaistDartFraction: 0.05,
+    reduceHipsStandardFraction: 0.1,
+
     // Options inherited from Bent
     acrossBackFactor:       { pct:  97, min: 93, max: 100 },
     armholeDepthFactor:     { pct:  65, min: 50, max:  70 },
@@ -140,10 +155,6 @@ export default {
     collarNotchReturn: { pct: 100, min: 50, max: 100 },
     collarRoll: {mm: 2.5, min: 0, max: 5 },
 
-    waistReductionRatioBack: { pct: 15, min: 10, max: 25 },
-    waistReductionRatioFront: { pct: 15, min: 10, max: 25 },
-    hipsReductionRatioBack: { pct: 25, min: 20, max: 30 },
-    hipsReductionRatioFront: { pct: 25, min: 20, max: 30 },
     frontDartPlacement: { pct: 55, min: 45, max: 60 },
     sideFrontPlacement: { pct: 85, min: 80, max: 90 },
 
