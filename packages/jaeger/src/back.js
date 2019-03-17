@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Back vent(s)
   let ventY = points.cbHips.y - points.cbWaistCp2.dy(points.cbHips) * options.backVentLength;
@@ -147,6 +147,108 @@ export default function(part) {
         .join(paths.hemBase.offset(sa * 3))
         .close()
         .attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("hd", {
+        from: points.cbNeck,
+        to: points.neck,
+        y: points.neck.y - 15 -sa
+      });
+      macro("hd", {
+        from: points.cbChest,
+        to: points.neck,
+        y: points.neck.y - 30 -sa
+      });
+      macro("hd", {
+        from: points.cbChest,
+        to: points.armholePitch,
+        y: points.neck.y - 45 -sa
+      });
+      macro("hd", {
+        from: points.cbChest,
+        to: points.shoulder,
+        y: points.neck.y - 60 -sa
+      });
+      macro("hd", {
+        from: points.cbChest,
+        to: points.bsArmholeHollow,
+        y: points.neck.y - 75 -sa
+      });
+      macro("vd", {
+        from: points.bsArmholeHollow,
+        to: points.armholePitch,
+        x: points.bsArmholeHollow.x + sa + 15,
+      });
+      macro("vd", {
+        from: points.bsArmholeHollow,
+        to: points.shoulder,
+        x: points.bsArmholeHollow.x + sa + 30,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.hips,
+        x: points.hem.x + sa + 15,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.waist,
+        x: points.hem.x + sa + 30,
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.bsArmholeHollow,
+        x: points.hem.x + sa + 45,
+      });
+      macro("hd", {
+        from: paths.vent.start(),
+        to: points.ventSlopeStart,
+        y: points.ventSlopeStart.y + 25,
+      });
+      macro("hd", {
+        from: paths.vent.end(),
+        to: points.hem,
+        y: points.hem.y + 3*sa + 15,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: paths.vent.start(),
+        x: paths.vent.end().x  - sa - 15,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: points.ventSlopeStart,
+        x: paths.vent.end().x  - sa - 30,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: points.cbWaist,
+        x: paths.vent.end().x  - sa - 45,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: points.cbChest,
+        x: paths.vent.end().x  - sa - 60,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: points.cbNeck,
+        x: paths.vent.end().x  - sa - 75,
+      });
+      macro("vd", {
+        from: paths.vent.end(),
+        to: points.neck,
+        x: paths.vent.end().x  - sa - 90,
+      });
+      macro("ld", {
+        from: points.cbWaist,
+        to: points.waist
+      });
+      macro("ld", {
+        from: points.neck,
+        to: points.shoulder,
+        d: -15
+      });
     }
   }
 
