@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   let width = store.get("chestPocketWidth");
   let height = store.get("chestPocketWeltHeight");
@@ -47,6 +47,20 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.foldLeft,
+        to: points.foldRight,
+        y: points.foldLeft.y - sa - 15
+      });
+      macro("vd", {
+        from: points.bottomRight,
+        to: points.foldRight,
+        x: points.bottomRight.x + sa + 15
+      });
+    }
+
   }
 
   return part;
