@@ -1,5 +1,5 @@
 export default function(part) {
-  let { sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   // Vent
   let slope = 15;
@@ -99,6 +99,92 @@ export default function(part) {
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("ld", {
+        from: points.tsWristLeft,
+        to: points.tsWristRight,
+        d: 15
+      });
+      macro("ld", {
+        from: points.tsWristLeft,
+        to: points.ventFoldRight,
+        d: 30
+      });
+      macro("ld", {
+        from: points.hemLeft,
+        to: points.ventRight,
+        d: -15 - sa
+      });
+      macro("ld", {
+        from: points.hemLeft,
+        to: points.tsWristLeft,
+        d: 15 + sa
+      });
+      macro("ld", {
+        from: points.tsWristRight,
+        to: points.ventSlopeStart,
+        d: 15
+      });
+      macro("ld", {
+        from: points.ventFoldRight,
+        to: points.ventSlopeEnd,
+        d: 15
+      });
+      macro("ld", {
+        from: points.tsWristRight,
+        to: points.ventFoldRight,
+        d: -15
+      });
+      macro("vd", {
+        from: points.ventRight,
+        to: points.top,
+        x: points.ventSlopeEnd.x + sa + 15
+      });
+      macro("vd", {
+        from: points.tsWristLeft,
+        to: points.tsElbowLeft,
+        x: points.tsLeftEdge.x - sa - 15
+      });
+      macro("vd", {
+        from: points.tsWristLeft,
+        to: points.tsLeftEdge,
+        x: points.tsLeftEdge.x - sa - 30
+      });
+      macro("vd", {
+        from: points.tsLeftEdge,
+        to: points.top,
+        x: points.tsLeftEdge.x - sa - 30
+      });
+      macro("vd", {
+        from: points.tsWristLeft,
+        to: points.top,
+        x: points.tsLeftEdge.x - sa - 45
+      });
+      macro("ld", {
+        from: points.tsLeftEdge,
+        to: points.tsRightEdge,
+      });
+      macro("ld", {
+        from: points.tsElbowLeft,
+        to: points.elbowRight,
+      });
+      macro("hd", {
+        from: points.tsLeftEdge,
+        to: points.top,
+        y: points.top.y - sa - 15
+      });
+      macro("hd", {
+        from: points.tsLeftEdge,
+        to: points.backPitchPoint,
+        y: points.top.y - sa - 30
+      });
+      macro("hd", {
+        from: points.tsLeftEdge,
+        to: points.tsRightEdge,
+        y: points.top.y - sa - 45
+      });
+    }
   }
 
   return part;
