@@ -46,13 +46,13 @@
     ]
   },
   "dependencies": {
-    "@freesewing/plugin-bundle": "latest",
-    "freesewing": "latest"
+    "@freesewing/plugin-bundle": "0.8.0",
+    "freesewing": "0.30.6"
   },
   "devDependencies": {
     "@babel/core": "7.3.3",
     "@freesewing/antman": "latest",
-    "@freesewing/models": "latest",
+    "@freesewing/models": "0.7.3",
     "@freesewing/plugin-debug": "latest",
     "@freesewing/plugin-designer": "latest",
     "@freesewing/plugin-i18n": "latest",
