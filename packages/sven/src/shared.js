@@ -43,14 +43,14 @@ export const draftRibbing = function(part, length) {
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.rightGapStart)
-    .attr("class", "fabric");
+    .attr("class", "various");
 
   paths.hint = new Path()
     .move(points.leftGapStart)
     .line(points.leftGapEnd)
     .move(points.rightGapStart)
     .line(points.rightGapEnd)
-    .attr("class", "fabric dashed");
+    .attr("class", "various dashed");
 
   if (complete) {
     points.title = new Point(
@@ -66,7 +66,7 @@ export const draftRibbing = function(part, length) {
         .line(points.topLeft)
         .close()
         .offset(sa)
-        .attr("class", "fabric sa");
+        .attr("class", "various sa");
     }
   }
 
