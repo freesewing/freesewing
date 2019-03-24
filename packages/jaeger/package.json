@@ -48,12 +48,12 @@
   },
   "dependencies": {
     "@freesewing/bent": "0.1.1",
-    "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-bundle": "0.8.0",
     "@freesewing/plugin-buttons": "0.1.0",
     "freesewing": "latest"
   },
   "devDependencies": {
-    "@babel/core": "latest",
+    "@babel/core": "7.4.0",
     "@freesewing/antman": "latest",
     "@freesewing/models": "latest",
     "@freesewing/plugin-debug": "latest",
@@ -61,17 +61,17 @@
     "@freesewing/plugin-i18n": "latest",
     "@freesewing/plugin-theme": "latest",
     "@freesewing/plugin-validate": "latest",
-    "eslint": "latest",
+    "eslint": "5.15.3",
     "eslint-config-prettier": "latest",
     "eslint-plugin-prettier": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
     "rimraf": "latest",
-    "rollup": "latest",
+    "rollup": "1.7.2",
     "rollup-plugin-babel": "latest",
-    "rollup-plugin-babel-minify": "latest",
-    "rollup-plugin-json": "latest",
+    "rollup-plugin-babel-minify": "8.0.0",
+    "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "latest"
   },
   "files": [

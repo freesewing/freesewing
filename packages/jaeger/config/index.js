@@ -66,7 +66,6 @@ export default {
     "frontBase",
     "backBase"
   ],
-  //parts: ["hood", "waistband", "cuff"],
   options: {
     // Constants
     brianFitSleeve: true,
