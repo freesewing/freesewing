@@ -20,8 +20,8 @@ export default {
       let prefix = so.prefix;
       let angle1 = from.angle(via);
       let angle2 = via.angle(to);
-      if((angle1-angle2)%90 !== 0)
-        throw new Error("The tound macro currently only supports 90 degree angles.");
+      if((Math.round(angle1)-Math.round(angle2))%90 !== 0)
+        throw new Error("The round macro currently only supports 90 degree angles.");
       let fd = from.dist(via);
       let td = to.dist(via);
       if(radius > fd || radius > td || typeof radius === "undefined")
