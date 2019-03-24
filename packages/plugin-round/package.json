@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-round",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A freesewing plugin to round corners",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
