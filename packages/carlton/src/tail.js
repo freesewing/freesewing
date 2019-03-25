@@ -1,0 +1,59 @@
+export default function(part) {
+  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+
+  let beltWidth = measurements.centerBackNeckToWaist * options.beltWidth;
+  let waist = store.get("chest") / 4 - store.get("waistReduction") / 8;
+  let length = store.get("waistToHem") - store.get("beltWidth")/2;
+
+  points.cbTop = new Point(0,0);
+  points.fold1Top = points.cbTop.shift(0, store.get("cbToDart")/2);
+  points.fold2Top = points.cbTop.shift(0, store.get("cbToDart"));
+  points.fold3Top = points.cbTop.shift(0, store.get("cbToDart")*2);
+  points.fold4Top = points.fold3Top.shift(0, store.get("cbToDart")/2);
+  points.waistTop = points.fold4Top.shift(0, store.get("dartToSide"));
+
+  // 12cm will do as we're just drawing a rectangle.
+  // But check that lenght > 12cm because doll clothes.
+  let drawnLength = length < 120 ? length : 120;
+
+  for (let i of ["cb", "fold1", "fold2", "fold3", "fold4", "waist"]) {
+    points[i+"Bottom"] = points[i+"Top"].shift(-90, drawnLength);
+    if (i === "cb" || i === "waist") {
+      points[i+"MidTop"] = points[i+"Top"].shift(-90, drawnLength * 0.4);
+      points[i+"MidBottom"] = points[i+"Top"].shift(-90, drawnLength * 0.6);
+    }
+  }
+
+  paths.seam = new Path()
+    .move(points.cbTop)
+    .line(points.cbMidTop)
+    .move(points.cbMidBottom)
+    .line(points.cbBottom)
+    .line(points.waistBottom)
+    .line(points.waistMidBottom)
+    .move(points.waistMidTop)
+    .line(points.waistTop)
+    .line(points.cbTop)
+    .attr("class", "fabric");
+
+  paths.folds = new Path()
+    .move(points.fold1Top)
+    .line(points.fold1Bottom)
+    .move(points.fold2Top)
+    .line(points.fold2Bottom)
+    .move(points.fold3Top)
+    .line(points.fold3Bottom)
+    .move(points.fold4Top)
+    .line(points.fold4Bottom)
+    .attr("class", "lashed");
+
+  paths.hint = new Path()
+    .move(points.cbMidTop)
+    .line(points.cbMidBottom)
+    .move(points.waistMidBottom)
+    .line(points.waistMidTop)
+    .attr("class", "fabric dashed");
+
+  return part;
+}
+
