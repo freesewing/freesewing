@@ -205,11 +205,8 @@ export default function(part) {
   for (let i in snippets) delete snippets[i]
 
   // Paths
-  paths.seam = new Path()
-    .move(points.collarTip)
-    ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
-    .line(points.hemEdge)
-    .line(points.hem)
+  paths.saBase = new Path()
+    .move(points.hem)
     .line(points.seat)
     .curve(points.seatCp2, points.waistCp1, points.waist)
     .curve_(points.waistCp2, points.armhole)
@@ -219,6 +216,16 @@ export default function(part) {
     .line(points.neck)
     .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
     .line(points.collarTip)
+    ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
+    .line(points.hemEdge)
+    .line(points.flbHem);
+  paths.hemBase = new Path()
+    .move(points.flbHem)
+    .line(points.hem);
+  paths.saBase.render = false;
+  paths.hemBase.render = false;
+  paths.seam = paths.saBase
+    .join(paths.hemBase)
     .close()
     .attr("class", "fabric");
 
@@ -289,6 +296,179 @@ export default function(part) {
     snippets.button2Right = new Snippet("button", points.button2Right).attr("data-scale", 2);
     snippets.button3Left = new Snippet("button", points.button3Left).attr("data-scale", 2);
     snippets.button3Right = new Snippet("button", points.button3Right).attr("data-scale", 2);
+
+    macro("sprinkle", {
+      snippet: "notch",
+      on: [
+        "armholePitch",
+        "cfNeck",
+        "rollLineStart",
+        "waist",
+        "seat"
+      ]
+    });
+
+    points.logo = new Point(
+      points.chestPocketTopRight.x,
+      points.armhole.y
+    );
+    snippets.logo = new Snippet("logo", points.logo);
+
+    macro("grainline", {
+      from: points.cfHem,
+      to: points.cfNeck
+    });
+
+    if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .join(paths.hemBase.offset(sa*3))
+        .close()
+        .attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("ld", {
+        from: points.hemEdge,
+        to: points.flbHem,
+        d: 15
+      });
+      macro("ld", {
+        from: points.flbHem,
+        to: points.hem,
+        d: 15
+      });
+      macro("hd", {
+        from: points.hemEdge,
+        to: points.hem,
+        y: points.hem.y + 15 + 3*sa
+      });
+      macro("hd", {
+        from: points.rollLineStart,
+        to: points.pocketTopLeft,
+        y: points.pocketFlapBottomLeft.y
+      });
+      macro("vd", {
+        from: points.pocketFlapTopRight,
+        to: points.waist,
+        x: points.pocketTopRight.x - 15
+      });
+      macro("vd", {
+        from: points.pocketTopRight,
+        to: points.waist,
+        x: points.pocketTopRight.x - 30
+      });
+      macro("vd", {
+        from: points.chestPocketBottomLeft,
+        to: points.waist,
+        x: points.chestPocketBottomLeft.x - 15
+      });
+      macro("hd", {
+        from: points.rollLineStart,
+        to: points.chestPocketBottomLeft,
+        y: points.chestPocketBottomLeft.y + 15
+      });
+      macro("hd", {
+        from: points.rollLineStart,
+        to: points.button3Left,
+        y: points.button3Left.y + 15
+      });
+      macro("hd", {
+        from: points.button3Left,
+        to: points.button3Right,
+        y: points.button3Left.y + 15
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.seat,
+        x: points.hem.x + sa + 15
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.waist,
+        x: points.hem.x + sa + 30
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.armhole,
+        x: points.hem.x + sa + 45
+      });
+      macro("vd", {
+        from: points.armhole,
+        to: points.armholePitch,
+        x: points.armhole.x + sa + 15
+      });
+      macro("vd", {
+        from: points.armhole,
+        to: points.shoulder,
+        x: points.armhole.x + sa + 30
+      });
+      macro("vd", {
+        from: points.armhole,
+        to: points.neck,
+        x: points.armhole.x + sa + 45
+      });
+      macro("vd", {
+        from: points.rollLineStart,
+        to: points.collarTip,
+        x: points.rollLineStart.x - sa - 15
+      });
+      macro("vd", {
+        from: points.button2Left,
+        to: points.rollLineStart,
+        x: points.rollLineStart.x - sa - 15
+      });
+      macro("vd", {
+        from: points.button1Left,
+        to: points.button2Left,
+        x: points.rollLineStart.x - sa - 15
+      });
+      macro("vd", {
+        from: points.hemEdge,
+        to: points.collarTip,
+        x: points.rollLineStart.x - sa - 30
+      });
+      macro("vd", {
+        from: points.hemEdge,
+        to: points.neck,
+        x: points.rollLineStart.x - sa - 45
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.collarTip,
+        y: points.collarTip.y - sa - 15
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.cfNeck,
+        y: points.collarTip.y - sa - 30
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.rollLineEnd,
+        y: points.collarTip.y - sa - 45
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.neck,
+        y: points.neck.y - sa - 15
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.armholePitch,
+        y: points.neck.y - sa - 30
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.shoulder,
+        y: points.neck.y - sa - 45
+      });
+      macro("hd", {
+        from: points.lapelStraightEnd,
+        to: points.armhole,
+        y: points.neck.y - sa - 60
+      });
+    }
   }
 
 
