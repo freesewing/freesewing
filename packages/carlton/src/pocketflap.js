@@ -49,5 +49,51 @@ export default function(part) {
     .close()
     .attr("class", "fabric");
 
+  if (complete) {
+    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 11,
+      title: "pocketFlap"
+    });
+
+    macro("grainline", {
+      from: points.bottomLeft.shift(0, points.topRight.x/5 ),
+      to: points.topLeft.shift(0, points.topRight.x/5)
+    });
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("hd", {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topLeft.y - sa - 15
+      });
+      if (options.pocketFlapRadius > 0) {
+        macro("vd", {
+          from: points.roundRightStart,
+          to: points.roundRightEnd,
+          x: points.topRight.x + sa + 15
+        });
+        macro("vd", {
+          from: points.roundRightStart,
+          to: points.topRight,
+          x: points.topRight.x + sa + 30
+        });
+      } else {
+        macro("vd", {
+          from: points.bottomRight,
+          to: points.topRight,
+          x: points.topRight.x + sa + 15
+        });
+      }
+
+    }
+  }
+
+
   return part;
 }
