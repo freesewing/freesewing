@@ -23,8 +23,10 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
 
  - [aaron](https://github.com/freesewing/aaron) : A tank top or A-shirt
  - [bruce](https://github.com/freesewing/bruce) : Boxer briefs
+ - [carlton](https://github.com/freesewing/carlton) : A long coat, perfect for Sherlock Holmes cosplay
  - [huey](https://github.com/freesewing/huey) : A zip-up hoodie
  - [hugo](https://github.com/freesewing/hugo) : A hooded sweatshirt with raglan sleeves
+ - [jaeger](https://github.com/freesewing/jaeger) : A sportscoat
  - [simon](https://github.com/freesewing/simon) : A versatile button-down shirt
  - [sven](https://github.com/freesewing/sven) : A straightforward sweater
  - [wahid](https://github.com/freesewing/wahid) : A classic waistcoat
