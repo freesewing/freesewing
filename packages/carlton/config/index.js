@@ -36,7 +36,9 @@ export default {
     cuffFacing: ["topSleeve", "underSleeve"],
     pocket: "front",
     pocketFlap: "front",
+    pocketLining: "pocket",
     chestPocketWelt: "front",
+    chestPocketBag: "front",
     innerPocketWelt: "front",
     innerPocketBag: "front",
     innerPocketTab: "front",
@@ -51,6 +53,7 @@ export default {
     topSleeve: "bentTopSleeve",
     underSleeve: "bentUnderSleeve",
     collar: "collarStand",
+    pocketLining: "pocket",
   },
   hide: [
     "bentBase",
@@ -60,7 +63,6 @@ export default {
     "bentTopSleeve",
     "bentUnderSleeve",
   ],
-  //parts: ["collar"],
   options: {
     // Constants
     brianFitSleeve: true,

@@ -55,11 +55,11 @@
           "naturalWaistToSeat": 280,
           "seatCircumference": 1130
         },
-        //only: ["topSleeve"]
+        only: ["pocket", "pocketLining"]
       };
       var pattern = new freesewing.patterns.carlton(settings);
       pattern.use(freesewing.plugins.theme);
-      //pattern.use(freesewing.plugins.designer);
+      pattern.use(freesewing.plugins.designer);
       pattern.use(freesewing.plugins.validate);
       pattern.draft();
       //pattern.sampleOption("collarFlare");

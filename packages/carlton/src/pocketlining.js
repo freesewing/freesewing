@@ -1,23 +1,10 @@
 export default function(part) {
   let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } = part.shorthand();
 
-  points.topLeft = new Point(0, 0);
-  points.bottomRight = new Point(
-    store.get("pocketWidth"),
-    store.get("pocketHeight")
-  );
-  points.bottomLeft = new Point(
-    points.topLeft.x,
-    points.bottomRight.y
-  );
+  points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75);
   points.topRight = new Point(
     points.bottomRight.x,
     points.topLeft.y
-  );
-  points.edgeLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 1.25);
-  points.edgeRight = new Point(
-    points.topRight.x,
-    points.edgeLeft.y
   );
   if (options.pocketRadius > 0) {
     macro("round", {
@@ -36,43 +23,40 @@ export default function(part) {
     });
 
     paths.seam = new Path()
-      .move(points.edgeLeft)
+      .move(points.topLeft)
       .line(points.roundLeftStart)
       .curve(points.roundLeftCp1, points.roundLeftCp2, points.roundLeftEnd)
       .line(points.roundRightStart)
       .curve(points.roundRightCp1, points.roundRightCp2, points.roundRightEnd)
   } else {
   paths.seam = new Path()
-    .move(points.edgeLeft)
+    .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight);
   }
 
   paths.seam = paths.seam
-    .line(points.edgeRight)
-    .line(points.edgeLeft)
-    .close()
-    .attr("class", "fabric");
-
-  paths.fold = new Path()
-    .move(points.topLeft)
     .line(points.topRight)
-    .attr("class", "fabric dashed");
+    .line(points.topLeft)
+    .close()
+    .attr("class", "lining");
+
+  delete paths.fold;
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
     macro("title", {
       at: points.title,
-      nr: 10,
-      title: "pocket"
+      nr: 16,
+      title: "pocketLining"
     });
 
     macro("grainline", {
       from: points.bottomLeft.shift(0, 10+store.get("pocketRadius")),
-      to: points.edgeLeft.shift(0, 10+store.get("pocketRadius")),
+      to: points.topLeft.shift(0, 10+store.get("pocketRadius")),
     });
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
 
     if (paperless) {
       macro("vd", {
@@ -80,15 +64,10 @@ export default function(part) {
         to: points.topRight,
         x: points.topRight.x + sa + 15
       });
-      macro("vd", {
-        from: points.bottomRight,
-        to: points.edgeRight,
-        x: points.topRight.x + sa + 30
-      });
       macro("hd", {
-        from: points.edgeLeft,
-        to: points.edgeRight,
-        y: points.edgeRight.y - sa - 15
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topRight.y - sa - 15
       });
       if (options.pocketRadius > 0) {
         macro("hd", {
