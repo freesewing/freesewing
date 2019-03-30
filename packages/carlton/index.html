@@ -35,8 +35,8 @@
           //"hemStyle": "rounded",
         },
         //"embed": true,
-        "sa": 0,
-        //"paperless": true,
+        "sa": 10,
+        "paperless": true,
         "measurements": {
           "bicepsCircumference": 350,
           "centerBackNeckToWaist": 560,
@@ -55,10 +55,11 @@
           "naturalWaistToSeat": 280,
           "seatCircumference": 1130
         },
+        //only: ["topSleeve"]
       };
       var pattern = new freesewing.patterns.carlton(settings);
       pattern.use(freesewing.plugins.theme);
-      pattern.use(freesewing.plugins.designer);
+      //pattern.use(freesewing.plugins.designer);
       pattern.use(freesewing.plugins.validate);
       pattern.draft();
       //pattern.sampleOption("collarFlare");

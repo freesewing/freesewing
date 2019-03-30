@@ -289,6 +289,15 @@ export default function(part) {
     .close()
     .attr("class", "fabric help");
 
+  paths.innerPocket = new Path()
+    .move(points.innerPocketTopLeft)
+    .line(points.innerPocketBottomLeft)
+    .line(points.innerPocketBottomRight)
+    .line(points.innerPocketTopRight)
+    .line(points.innerPocketTopLeft)
+    .close()
+    .attr("class", "fabric help");
+
   if (complete) {
     snippets.button1Left = new Snippet("button", points.button1Left).attr("data-scale", 2);
     snippets.button1Right = new Snippet("button", points.button1Right).attr("data-scale", 2);
