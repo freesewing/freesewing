@@ -37,5 +37,32 @@ export default function(part) {
     .line(points.bottomMid)
     .attr("class", "dashed");
 
+  if (complete) {
+    points.title = new Point(
+      points.bottomRight.x/4,
+      points.bottomRight.y/2,
+    );
+    macro("title", {
+      at: points.title,
+      nr: 12,
+      title: "chestPocketWelt"
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + sa + 15
+      });
+      macro("vd", {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      });
+    }
+  }
+
   return part;
 }

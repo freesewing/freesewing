@@ -160,7 +160,7 @@ export default function(part) {
    */
 
 
-  paths.seam = new Path()
+  paths.saBase = new Path()
     .move(points.standTop)
     /** This is the non-slashed path. We use this instead of the slashed
      *  parts of the path, so that we get a smooth line
@@ -175,10 +175,82 @@ export default function(part) {
     //.curve_(points.rot3q4Cp1, points.rot3standTip)
     .line(points.rot4bottomRight)
     .line(points.rot4topRight)
-    ._curve(points.topLeftCp, points.topLeft)
+    ._curve(points.topLeftCp, points.topLeft);
+  paths.seam = paths.saBase.clone()
     .line(points.standTop)
     .close()
     .attr("class", "fabric");
+
+  if (complete) {
+    points.title = points.standTopCp.clone();
+    macro("title", {
+      at: points.title,
+      nr: 8,
+      title: "collar"
+    });
+
+    macro("grainline", {
+      from: points.standTop.shift(0, 10),
+      to: points.topLeft.shift(0, 10)
+    });
+
+    if (sa) {
+      paths.sa = paths.saBase.offset(sa);
+      paths.sa = paths.sa
+        .line(points.topLeft)
+        .move(points.standTop)
+        .line(paths.sa.start())
+        .attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("hd", {
+        from: points.standTop,
+        to: points.rot3standTip,
+        y: points.rot4bottomRight.y + sa + 15
+      });
+      macro("hd", {
+        from: points.standTop,
+        to: points.rot4bottomRight,
+        y: points.rot4bottomRight.y + sa + 30
+      });
+      macro("hd", {
+        from: points.standTop,
+        to: points.rot4topRight,
+        y: points.rot4bottomRight.y + sa + 45
+      });
+      macro("vd", {
+        from: points.standTop,
+        to: points.topLeft,
+        x: points.topLeft.x - 15
+      });
+      macro("vd", {
+        from: points.rot3standTip,
+        to: points.topLeft,
+        x: points.topLeft.x - 30
+      });
+      macro("vd", {
+        from: points.rot4topRight,
+        to: points.topLeft,
+        x: points.rot4topRight.x + sa + 15
+      });
+      macro("vd", {
+        from: points.rot4bottomRight,
+        to: points.topLeft,
+        x: points.rot4topRight.x + sa + 30
+      });
+      macro("ld", {
+        from: points.rot4bottomRight,
+        to: points.rot4topRight,
+        d: -1*sa - 15
+      });
+      macro("ld", {
+        from: points.rot3standTip,
+        to: points.rot4bottomRight,
+        d: -1*sa - 15
+      });
+    }
+  }
 
   return part;
 }
