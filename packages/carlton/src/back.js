@@ -1,7 +1,7 @@
 import { calculateRatios } from "./shared";
 
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   calculateRatios(part);
   // Belt width

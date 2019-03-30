@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } = part.shorthand();
 
   points.topLeft = new Point(0, 0);
   points.bottomRight = new Point(

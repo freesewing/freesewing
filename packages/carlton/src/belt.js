@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, Snippet, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   let length = 1.6 * (store.get("cbToDart") + store.get("dartToSide"));
   let width = measurements.centerBackNeckToWaist * options.beltWidth;

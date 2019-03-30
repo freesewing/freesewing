@@ -5,7 +5,7 @@
  */
 
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { paperless, sa, complete, points, options, macro, paths, Path } = part.shorthand();
 
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
