@@ -56,7 +56,7 @@ export default function(part) {
     points.button1Right.x + points.button1Right.dx(points.hips) * options.pocketPlacementHorizontal,
     points.button1Right.y + points.button1Right.dy(points.button3Right) * options.pocketPlacementVertical
   );
-  let pocketWidth = points.pocketTopLeft.dx(points.hips) * options.pocketWidth;
+  let pocketWidth = points.button1Right.dx(points.hips) * options.pocketWidth;
   let pocketHeight = pocketWidth * (1 + options.pocketHeight);
   points.pocketTopRight = points.pocketTopLeft.shift(0, pocketWidth);
   points.pocketBottomLeft = points.pocketTopLeft.shift(-90, pocketHeight);
