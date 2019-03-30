@@ -26,5 +26,39 @@ export default function(part) {
     .close()
     .attr("class", "fabric");
 
+  if (complete) {
+    points.title = points.bottomLeftCp.clone();
+    macro("title", {
+      at: points.title,
+      nr: 7,
+      title: "collarStand"
+    });
+
+    macro("grainline", {
+      from: points.bottomLeft,
+      to: points.standTop
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.standTipLeft,
+        to: points.standTip,
+        y: points.standTip.y + sa + 15
+      });
+      macro("vd", {
+        from: points.bottomLeft,
+        to: points.standTop,
+        x: points.standTip.x + sa + 15
+      });
+      macro("vd", {
+        from: points.standTip,
+        to: points.standTop,
+        x: points.standTip.x + sa + 30
+      });
+    }
+  }
+
   return part;
 }

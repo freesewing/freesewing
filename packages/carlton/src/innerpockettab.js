@@ -28,5 +28,39 @@ export default function(part) {
     .line(points.bottom)
     .attr("class", "lining dashed");
 
+  if (complete) {
+    points.title = points.top.shiftFractionTowards(points.bottom, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 15,
+      title: "innerPocketTab"
+    });
+
+    macro("grainline", {
+      from: points.top,
+      to: points.top.shift(-45, points.top.x*0.7)
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
+
+    if (paperless) {
+      macro("hd", {
+        from: points.topLeft,
+        to: points.top,
+        y: points.topLeft.y - sa - 15
+      });
+      macro("hd", {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topLeft.y - sa - 30
+      });
+      macro("vd", {
+        from: points.bottom,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      });
+    }
+  }
+
   return part;
 }

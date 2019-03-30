@@ -49,5 +49,41 @@ export default function(part) {
     .close()
     .attr("class", "fabric");
 
+  if (complete) {
+    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 10,
+      title: "pocket"
+    });
+
+    macro("grainline", {
+      from: points.bottomLeft.shift(0, 10+store.get("pocketRadius")),
+      to: points.topLeft.shift(0, 10+store.get("pocketRadius")),
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+
+    if (paperless) {
+      macro("vd", {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      });
+      macro("hd", {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topRight.y - sa - 15
+      });
+      if (options.pocketRadius > 0) {
+        macro("hd", {
+          from: points.roundRightStart,
+          to: points.roundRightEnd,
+          y: points.bottomRight.y + sa + 15
+        });
+      }
+    }
+  }
+
   return part;
 }

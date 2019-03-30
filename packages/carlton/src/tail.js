@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { units, paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   let beltWidth = measurements.centerBackNeckToWaist * options.beltWidth;
   let waist = store.get("chest") / 4 - store.get("waistReduction") / 8;
@@ -53,6 +53,60 @@ export default function(part) {
     .move(points.waistMidBottom)
     .line(points.waistMidTop)
     .attr("class", "fabric dashed");
+
+  if (complete) {
+    points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 3,
+      title: "tail"
+    });
+
+    macro("grainline", {
+      from: points.fold2Bottom.shift(0, 10),
+      to: points.fold2Top.shift(0, 10)
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).close().attr("class", "fabric sa");
+    macro("vd", {
+      from: points.fold4Bottom.shift(0, 15),
+      to: points.fold4Top.shift(0, 15),
+      text: units(length)
+    });
+
+    if (paperless) {
+      macro("hd", {
+        from: points.cbBottom,
+        to: points.fold1Bottom,
+        y: points.cbBottom.y + sa + 15
+      });
+      macro("hd", {
+        from: points.fold1Bottom,
+        to: points.fold2Bottom,
+        y: points.cbBottom.y + sa + 15
+      });
+      macro("hd", {
+        from: points.fold2Bottom,
+        to: points.fold3Bottom,
+        y: points.cbBottom.y + sa + 15
+      });
+      macro("hd", {
+        from: points.fold3Bottom,
+        to: points.fold4Bottom,
+        y: points.cbBottom.y + sa + 15
+      });
+      macro("hd", {
+        from: points.fold4Bottom,
+        to: points.waistBottom,
+        y: points.cbBottom.y + sa + 15
+      });
+      macro("hd", {
+        from: points.cbBottom,
+        to: points.waistBottom,
+        y: points.cbBottom.y + sa + 30
+      });
+    }
+  }
 
   return part;
 }

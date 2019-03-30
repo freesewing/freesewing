@@ -1,5 +1,5 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let { units, paperless, sa, snippets, Snippet, utils, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
 
   points.topLeft = new Point(0, 0);
   points.bottomRight = new Point(
@@ -36,6 +36,38 @@ export default function(part) {
     .move(points.endRight)
     .line(points.startRight)
     .attr("class", "lining dashed");
+
+  if (complete) {
+    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    macro("title", {
+      at: points.title,
+      nr: 14,
+      title: "innerPocketBag"
+    });
+
+    macro("grainline", {
+      from: points.bottomLeft.shift(0, 10),
+      to: points.topLeft.shift(0, 10)
+    });
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
+    }
+    macro("ld", {
+      from: points.bottomRight.shift(180, 15),
+      to: points.topRight.shift(180, 15),
+      text: units(store.get("innerPocketWidth") * options.innerPocketDepth * 2)
+
+    });
+
+    if (paperless) {
+      macro("hd", {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + sa + 15
+      });
+    }
+  }
 
   return part;
 }
