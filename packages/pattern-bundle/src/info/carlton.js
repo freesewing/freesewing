@@ -37,69 +37,40 @@ export default {
       "acrossBackFactor",
       "armholeDepthFactor",
       "bicepsEase",
-      "centerBackDart",
       "chestEase",
-      "collarEase",
       "cuffEase",
-      "hipsEase",
-      "lengthBonus",
       "shoulderEase",
-      "waistEase"
-    ],
-    sleeves: [
       "sleeveBend",
       "sleeveLengthBonus",
-      "sleeveVentLength",
-      "sleeveVentWidth"
+      "waistEase",
+      "seatEase"
     ],
     advanced: [
       "backNeckCutout",
-      "chestShaping",
       "frontArmholeDeeper",
-      "frontDartPlacement",
       "frontOverlap",
       "lapelReduction",
       "shoulderSlopeReduction",
-      "sideFrontPlacement",
-      "sleevecapEase",
-      "sleevecapHeight"
+      "sleevecapHeight",
+      "sleevecapEase"
     ],
     pockets: [
-      "chestPocketDepth",
+      "pocketPlacementHorizontal",
+      "pocketPlacementVertical",
+      "pocketWidth",
+      "pocketHeight",
+      "pocketRadius",
+      "pocketFlapRadius",
+      "chestPocketHeight",
       "chestPocketWidth",
       "chestPocketPlacement",
       "chestPocketAngle",
-      "chestPocketWeltSize",
-      "frontPocketPlacement",
-      "frontPocketWidth",
-      "frontPocketDepth",
-      "frontPocketRadius",
       "innerPocketPlacement",
       "innerPocketWidth",
       "innerPocketDepth",
-      "innerPocketWeltHeight",
-      "pocketFoldover"
+      "innerPocketWeltHeight"
     ],
-    style: [
-      "backVent",
-      "backVentLength",
-      "buttonLength",
-      "buttons",
-      "centerFrontHemDrop",
-      "frontCutawayAngle",
-      "frontCutawayStart",
-      "frontCutawayEnd",
-      "hemRadius",
-      "lapelStart"
-    ],
-    collar: [
-      "collarSpread",
-      "collarHeight",
-      "collarNotchDepth",
-      "collarNotchAngle",
-      "collarNotchReturn",
-      "collarRoll",
-      "rollLineCollarHeight"
-    ]
+    style: ["beltWidth", "buttonSpacingHorizontal", "cuffLength", "length"],
+    collar: ["collarHeight", "collarSpread", "collarFlare"]
   }
 };
