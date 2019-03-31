@@ -57,8 +57,8 @@
       pattern.use(freesewing.plugins.theme);
       pattern.use(freesewing.plugins.designer);
       pattern.use(freesewing.plugins.validate);
-      pattern.draft();
-      //pattern.sampleOption("buttonLength");
+      //pattern.draft();
+      pattern.sampleOption("frontCutawayEnd");
       document.getElementById("svg1").innerHTML = pattern.render();
 
       function pointHover(evt) {
