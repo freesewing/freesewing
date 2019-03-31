@@ -1,6 +1,12 @@
 back: Arrière
 backBase: Base arrière
 base: Base
+bentBack: Arrière Bent
+bentBase: Base Bent
+bentFront: Avant Bent
+bentSleeve: Manche Bent
+bentTopSleeve: Manche Bent
+bentUnderSleeve: Sous-manche Bent
 buttonholePlacket: Patte de boutonnière
 buttonPlacket: Patte de boutonnage
 collar: Col
@@ -14,9 +20,9 @@ frontFacing: Doublure avant FIXME
 frontLeft: Avant gauche
 frontLining: Doublure avant
 frontRight: Avant droit
+hood: Capuchon
 hoodCenter: Capuchon centre
 hoodSide: Capuchon côté
-hood: Capuchon
 inset: Encart
 interfacingTail: Queue en entoilage
 interfacingTip: Pointe en entoilage
@@ -41,8 +47,9 @@ sleevecap: Tête de manche
 sleeve: Manche
 sleevePlacketOverlap: Patte de manche supérieur
 sleevePlacketUnderlap: Patte de manche en dessous
+topSleeve: Manche
 top: Top
-topsleeve: Manche
-undersleeve: Sous-manche
+underCollar: Sous-col
+underSleeve: Sous-manche
 waistband: Ceinture
 yoke: Empiècement

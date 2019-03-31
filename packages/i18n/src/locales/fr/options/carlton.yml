@@ -1,0 +1,69 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+bicepsEase: brian
+chestEase: brian
+cuffEase: brian
+shoulderEase: brian
+sleeveBend: bent
+sleeveLengthBonus: brian
+waistEase: simon
+backNeckCutout: brian
+frontArmholeDeeper: brian
+frontOverlap: jaeger
+lapelReduction: jaeger
+shoulderSlopeReduction: brian
+sleevecapHeight: brian
+sleevecapEase: brian
+pocketWidth: wahid
+pocketHeight: huey
+cuffLength: simon
+collarSpread: jaeger
+collarFlare: simon
+chestPocketWidth: jaeger
+chestPocketPlacement: jaeger
+chestPocketAngle: jaeger
+innerPocketPlacement: jaeger
+innerPocketWidth: jaeger
+innerPocketDepth: jaeger
+innerPocketWeltHeight: jaeger
+
+
+seatEase:
+  title: Aisance de siège
+  description: Quantité d'aisance autour de vos fesses
+
+pocketPlacementHorizontal:
+  title: Placement horizontal de la poche
+  description: L'emplacement (horizontal) des poches
+
+pocketPlacementVertical:
+  title: Placement vertical de la poche
+  description: L'emplacement (vertical) des poches
+
+collarHeight:
+  title: Hauteur du col
+  description: Hauteur du col
+
+length:
+  title: Longeur
+  description: Longueur totale
+
+pocketFlapRadius:
+  title: Rayon de rabat de poche
+  description: Le montant par lequel le rabat de poche est arrondi
+
+pocketRadius:
+  title: Rayon de poche
+  description: Le montant par lequel la poche est arrondie
+
+chestPocketHeight:
+  title: Hauteur de la poche de poitrine
+  description: Hauteur de la poche de poitrine
+
+beltWidth:
+  title: Largeur de ceinture
+  description: Largeur de ceinture
+
+buttonSpacingHorizontal:
+  title: Espacement horizontal des boutons
+  description: L'espacement horizontal des boutons détermine également le chevauchement de la fermeture avant

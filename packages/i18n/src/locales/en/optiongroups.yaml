@@ -3,6 +3,8 @@ closure: Closure
 collar: Collar
 cuffs: Cuffs
 fit: Fit
+pockets: Pockets
 preferences: Preferences
 sleevecap: Sleevecap
+sleeves: Sleeves
 style: Style

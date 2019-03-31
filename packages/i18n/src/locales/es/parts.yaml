@@ -1,6 +1,12 @@
 backBase: Base trasera
 back: Trasero
 base: Base
+bentBack: Trasero Bent
+bentBase: Base Bent
+bentFront: Frente Bent
+bentSleeve: Manga Bent
+bentTopSleeve: Manga superior Bent
+bentUnderSleeve: Manga debajo Bent
 buttonholePlacket: Tapeta de ojal
 buttonPlacket: Tapeta de botones
 collar: Cuello
@@ -14,9 +20,9 @@ front: Frente
 frontLeft: Delantero izquierdo
 frontLining: Delantero revestimiento
 frontRight: Delantero derecha
+hood: Capucha
 hoodCenter: Centro de la capucha
 hoodSide: Lado de la capucha
-hood: Capucha
 inset: Encarte
 interfacingTail: Cola de entretela
 interfacingTip: Punta de entretela
@@ -41,8 +47,9 @@ sleevecap: Manga corta
 sleeve: Manga
 sleevePlacketOverlap: Vista de la manga superior
 sleevePlacketUnderlap: Vista de la manga fondo
+topSleeve: Manga superior
 top: Top
-topsleeve: Manga superior
-undersleeve: Manga debajo
+underCollar: Debajo del cuello
+underSleeve: Manga debajo
 waistband: Pretina
 yoke: Canesú

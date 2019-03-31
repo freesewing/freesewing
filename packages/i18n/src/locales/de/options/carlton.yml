@@ -1,0 +1,69 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+bicepsEase: brian
+chestEase: brian
+cuffEase: brian
+shoulderEase: brian
+sleeveBend: bent
+sleeveLengthBonus: brian
+waistEase: simon
+backNeckCutout: brian
+frontArmholeDeeper: brian
+frontOverlap: jaeger
+lapelReduction: jaeger
+shoulderSlopeReduction: brian
+sleevecapHeight: brian
+sleevecapEase: brian
+pocketWidth: wahid
+pocketHeight: huey
+cuffLength: simon
+collarSpread: jaeger
+collarFlare: simon
+chestPocketWidth: jaeger
+chestPocketPlacement: jaeger
+chestPocketAngle: jaeger
+innerPocketPlacement: jaeger
+innerPocketWidth: jaeger
+innerPocketDepth: jaeger
+innerPocketWeltHeight: jaeger
+
+
+seatEase:
+  title: Leichtigkeit Hintern
+  description: Leichtigkeit um Ihren Hintern
+
+pocketPlacementHorizontal:
+  title: Horizontale Taschenplatzierung
+  description: Die (horizontale) Position der Taschen
+
+pocketPlacementVertical:
+  title: Vertikale Taschenplatzierung
+  description: Die (vertikale) Position der Taschen
+
+collarHeight:
+  title: Kragenhöhe
+  description: Höhe des Kragens
+
+length:
+  title: Länge
+  description: Gesamtlänge
+
+pocketFlapRadius:
+  title: Taschenklappenradius
+  description: Der Betrag, um den die Taschenklappe gerundet ist
+
+pocketRadius:
+  title: Taschenradius
+  description: Der Betrag, um den die Tasche gerundet wird
+
+chestPocketHeight:
+  title: Brusttaschenhöhe
+  description: Höhe der Brusttasche
+
+beltWidth:
+  title: Gürteilbreite
+  description: Breite des Gürtels
+
+buttonSpacingHorizontal:
+  title: Horizontaler Tastenabstand
+  description: Der horizontale Abstand der Knöpfe bestimmt auch die Überlappung des vorderen Verschlusses

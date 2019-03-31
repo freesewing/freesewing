@@ -1,6 +1,12 @@
 backBase: Rückseite Basis
 back: Rückseite
 base: Basis
+bentBack: Rückseite Bent
+bentBase: Basis Bent
+bentFront: Vorderseite Bent
+bentSleeve: Ärmel Bent
+bentTopSleeve: Oberarmel Bent
+bentUnderSleeve: Unterarmel Bent
 buttonholePlacket: Knopflochleiste
 buttonPlacket: Knopfleiste
 collar: Kragen
@@ -15,8 +21,8 @@ frontLining: Futter vorderseite
 frontRight: Vorne rechts
 front: Vorderseite
 hoodCenter: Haubenmitte
-hoodSide: Haube Seite
 hood: Haube
+hoodSide: Haube Seite
 inset: Einsatz
 interfacingTail: Einlageschwanz
 interfacingTip: Einlagespitze
@@ -41,8 +47,9 @@ sleeveBase: Ärmel Basis
 sleevecap: Ärmelkappe
 sleevePlacketOverlap: Ärmelknopflänge oben
 sleevePlacketUnderlap: Ärmelknopflänge unter
+topSleeve: Oberarmel
 top: Top
-topsleeve: Oberarmel
-undersleeve: Unterarmel
+underCollar: Unterkragen
+underSleeve: Unterarmel
 waistband: Bund
 yoke: Joch

@@ -1,0 +1,69 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+bicepsEase: brian
+chestEase: brian
+cuffEase: brian
+shoulderEase: brian
+sleeveBend: bent
+sleeveLengthBonus: brian
+waistEase: simon
+backNeckCutout: brian
+frontArmholeDeeper: brian
+frontOverlap: jaeger
+lapelReduction: jaeger
+shoulderSlopeReduction: brian
+sleevecapHeight: brian
+sleevecapEase: brian
+pocketWidth: wahid
+pocketHeight: huey
+cuffLength: simon
+collarSpread: jaeger
+collarFlare: simon
+chestPocketWidth: jaeger
+chestPocketPlacement: jaeger
+chestPocketAngle: jaeger
+innerPocketPlacement: jaeger
+innerPocketWidth: jaeger
+innerPocketDepth: jaeger
+innerPocketWeltHeight: jaeger
+
+
+seatEase:
+  title: Facilidad de asiento
+  description: Cantidad de facilidad alrededor de tu trasero
+
+pocketPlacementHorizontal:
+  title: Colocación horizontal del bolsillo
+  description: La ubicación (horizontal) de los bolsillos
+
+pocketPlacementVertical:
+  title: Colocación vertical del bolsillo
+  description: La ubicación (vertical) de los bolsillos
+
+collarHeight:
+  title: Altura del collar
+  description: Altura del cuello
+
+length:
+  title: Longitud
+  description: Largo total
+
+pocketFlapRadius:
+  title: Radio de la tapa del bolsillo
+  description: La cantidad por la cual se redondea la solapa del bolsillo
+
+pocketRadius:
+  title: Radio de bolsillo
+  description: La cantidad por la cual se redondea el bolsillo
+
+chestPocketHeight:
+  title: Altura del bolsillo pecho
+  description: Altura del bolsillo del pecho
+
+beltWidth:
+  title: Ancho del cinturón
+  description: Ancho del cinturón
+
+buttonSpacingHorizontal:
+  title: Espaciado horizontal de los botones
+  description: El espaciado horizontal de los botones, también determina la superposición del cierre frontal

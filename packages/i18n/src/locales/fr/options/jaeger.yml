@@ -1,0 +1,167 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+hipsEase: aaron
+lengthBonus: brian
+shoulderEase: brian
+waistEase: simon
+sleeveBend: bent
+sleeveLengthBonus: brian
+backNeckCutout: brian
+frontArmholeDeeper: brian
+shoulderSlopeReduction: brian
+sleevecapHeight: brian
+sleevecapEase: brian
+buttons: simon
+collarRoll: simon
+
+centerBackDart:
+  title: Fléchette centrale
+  description: Dart au centre de la nuque pour accueillir un dos arrondi
+
+sleeveVentLength:
+  title: Longueur des manches
+  description: Longueur des manches
+
+sleeveVentWidth:
+  title: Largeur d'aération des manches
+  description: Largeur d'aération des manches
+
+chestShaping:
+  title: Mise en forme de la poitrine
+  description: Quantité de mise en forme à adapter pour la courbe de la poitrine
+
+frontDartPlacement:
+  title: Emplacement des fléchettes avant
+  description: Emplacement des fléchettes avant
+
+frontOverlap:
+  title: Chevauchement avant
+  description: Jusqu'où le tissu s'étend au-delà des boutons de fermeture
+
+sideFrontPlacement:
+  title: Placement latéral / avant
+  description: L'emplacement de la barrière latérale / frontale
+
+chestPocketDepth:
+  title: Profondeur de la poche de poitrine
+  description: La profondeur de la poche de poitrine
+
+chestPocketWidth:
+  title: Largeur de la poche poitrine
+  description: Largeur de la poche poitrine
+
+chestPocketPlacement:
+  title: Emplacement poche de poitrine
+  description: L'emplacement de la poche de poitrine
+
+chestPocketAngle:
+  title: Angle de poche de poitrine
+  description: L'angle sous lequel la poche de poitrine est placée
+
+chestPocketWeltSize:
+  title: Taille de poche passepoilée à la poitrine
+  description: La taille de la poche de poitrine passepoilée
+
+frontPocketPlacement:
+  title: Placement de la poche avant
+  description: Emplacement de la poche avant
+
+frontPocketWidth:
+  title: Largeur de la poche avant
+  description: La largeur de la poche avant
+
+frontPocketDepth:
+  title: Profondeur de la poche avant
+  description: La profondeur de la poche avant
+
+frontPocketRadius:
+  title: Rayon de la poche avant
+  description: Le rayon par lequel la poche avant est arrondie
+
+innerPocketPlacement:
+  title: Placement de la poche intérieure
+  description: L'emplacement de la poche intérieure
+
+innerPocketWidth:
+  title: Largeur de la poche intérieure
+  description: La largeur de la poche intérieure
+
+innerPocketDepth:
+  title: Profondeur de la poche intérieure
+  description: La profondeur de la poche intérieure
+
+innerPocketWeltHeight:
+  title: Hauteur de la poche passepoilée intérieure
+  description: La hauteur de la poche intérieure passepoilée
+
+pocketFoldover:
+  title: Poche repliable
+  description: Le montant par lequel le tissu principal est plié dans la poche
+
+centerFrontHemDrop:
+  title: Ourlet central devant
+  description: La quantité par laquelle l'ourlet est abaissé vers le centre avant
+
+backVent:
+  title: Évent arrière
+  description: La quantité de fentes arrières
+
+backVentLength:
+  title: Longueur d'évent arrière
+  description: La longueur du ou des évent arrière
+
+buttonLength:
+  title: Longueur des boutons
+  description: La distance sur laquelle les boutons sont répartis
+
+frontCutawayAngle:
+  title: Angle de coupe avant
+  description: L'angle sous lequel le devant est coupé vers l'ourlet
+
+frontCutawayStart:
+  title: Étoile coupée devant
+  description: L'endroit où le front commence à s'ouvrir vers l'ourlet
+
+frontCutawayEnd:
+  title: Extrémité coupée devant
+  description: En augmentant cela, l’échantillonneur avant restera plus proche du centre avant
+
+collarSpread:
+  title: Collier de propagation
+  description: La propagation du col contrôle la façon dont le col se drape sur les épaules
+
+lapelStart:
+  title: Début de revers
+  description: Lieu où le centre avant passe dans les revers
+
+lapelReduction:
+  title: Réduction de revers
+  description: Combien la pointe des revers tourne vers l'intérieur
+
+collarHeight:
+  title: Hauteur du collier
+  description: Hauteur du col
+
+collarNotchDepth:
+  title: Profondeur de l'encoche du collier
+  description: Profondeur de l'encoche du collier
+
+collarNotchAngle:
+  title: Angle d'encoche du collier
+  description: Angle de l'encoche du col
+
+collarNotchReturn:
+  title: Retour de cran de collier
+  description: Combien le collier revient de l'entaille, par rapport au revers
+
+rollLineCollarHeight:
+  title: Hauteur du col Roll-line
+  description: Combien la ligne de rouleau épouse le cou
+
+hemRadius:
+  title: Rayon d'ourlet
+  description: Le montant par lequel l'ourlet est arrondi
