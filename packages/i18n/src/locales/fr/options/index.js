@@ -10,6 +10,8 @@ import huey from "./huey.yml";
 import hugo from "./hugo.yml";
 import tamiko from "./tamiko.yml";
 import trayvon from "./trayvon.yml";
+import jaeger from "./jaeger.yml";
+import cartlton from "./carlton.yml";
 
 let patterns = {
   brian,
@@ -23,7 +25,9 @@ let patterns = {
   huey,
   hugo,
   tamiko,
-  trayvon
+  trayvon,
+  jaeger,
+  carlton
 };
 
 let options = {};
