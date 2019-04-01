@@ -133,7 +133,7 @@ export default function(part) {
     "chestPocketBottomLeft",
     "chestPocketTopRight",
     "chestPocketBottomRight"]) points[i] = points[i].rotate(options.chestPocketAngle, points.chestPocketAnchor);
-
+  store.set("chestPocketBagDepth", points.button3Left.dx(points.chestPocketBottomLeft));
 
   // Inner pocket
   points.innerPocketAnchor = new Point(
