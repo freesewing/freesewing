@@ -19,32 +19,32 @@ buttons: simon
 collarRoll: simon
 
 centerBackDart:
-  title: Fléchette centrale
-  description: Dart au centre de la nuque pour accueillir un dos arrondi
+  title: Pince milieu dos
+  description: Pince au milieu de la nuque pour s'ajuster à un dos arrondi
 
 sleeveVentLength:
-  title: Longueur des manches
-  description: Longueur des manches
+  title: Longueur de la fente des manches
+  description: Longueur de la fente des manches
 
 sleeveVentWidth:
-  title: Largeur d'aération des manches
-  description: Largeur d'aération des manches
+  title: Largeur de la fente des manches
+  description: Largeur de la fente des manches
 
 chestShaping:
   title: Mise en forme de la poitrine
-  description: Quantité de mise en forme à adapter pour la courbe de la poitrine
+  description: Quantité de mise en forme pour ajuster la courbe de la poitrine
 
 frontDartPlacement:
-  title: Emplacement des fléchettes avant
-  description: Emplacement des fléchettes avant
-
+  title: Emplacement des pinces devant
+  description: Emplacement des pinces devant
+  
 frontOverlap:
   title: Chevauchement avant
   description: Jusqu'où le tissu s'étend au-delà des boutons de fermeture
 
 sideFrontPlacement:
-  title: Placement latéral / avant
-  description: L'emplacement de la barrière latérale / frontale
+  title: Emplacement côté / devant
+  description: L'emplacement de la limite côté / devant
 
 chestPocketDepth:
   title: Profondeur de la poche de poitrine
@@ -63,11 +63,11 @@ chestPocketAngle:
   description: L'angle sous lequel la poche de poitrine est placée
 
 chestPocketWeltSize:
-  title: Taille de poche passepoilée à la poitrine
+  title: Taille de poche passepoilée de poitrine
   description: La taille de la poche de poitrine passepoilée
 
 frontPocketPlacement:
-  title: Placement de la poche avant
+  title: Emplacement de la poche avant
   description: Emplacement de la poche avant
 
 frontPocketWidth:
@@ -107,12 +107,12 @@ centerFrontHemDrop:
   description: La quantité par laquelle l'ourlet est abaissé vers le centre avant
 
 backVent:
-  title: Évent arrière
-  description: La quantité de fentes arrières
+  title: Fente arrière
+  description: Le nombre de fentes à l'arrière
 
 backVentLength:
-  title: Longueur d'évent arrière
-  description: La longueur du ou des évent arrière
+  title: Longueur de la fente arrière
+  description: La longueur du ou des fentes arrière(s)
 
 buttonLength:
   title: Longueur des boutons
@@ -128,22 +128,22 @@ frontCutawayStart:
 
 frontCutawayEnd:
   title: Extrémité coupée devant
-  description: En augmentant cela, l’échantillonneur avant restera plus proche du centre avant
+  description: En augmentant cela, l’échantillonneur avant restera plus proche du milieu devant
 
 collarSpread:
-  title: Collier de propagation
-  description: La propagation du col contrôle la façon dont le col se drape sur les épaules
+  title: Propagation du col
+  description: La propagation du col contrôle le drapé du col sur les épaules
 
 lapelStart:
   title: Début de revers
-  description: Lieu où le centre avant passe dans les revers
+  description: Lieu où le milieu devant passe dans les revers
 
 lapelReduction:
   title: Réduction de revers
   description: Combien la pointe des revers tourne vers l'intérieur
 
 collarHeight:
-  title: Hauteur du collier
+  title: Hauteur du col
   description: Hauteur du col
 
 collarNotchDepth:
@@ -151,7 +151,7 @@ collarNotchDepth:
   description: Profondeur de l'encoche du collier
 
 collarNotchAngle:
-  title: Angle d'encoche du collier
+  title: Angle d'encoche du col
   description: Angle de l'encoche du col
 
 collarNotchReturn:
@@ -159,8 +159,8 @@ collarNotchReturn:
   description: Combien le collier revient de l'entaille, par rapport au revers
 
 rollLineCollarHeight:
-  title: Hauteur du col Roll-line
-  description: Combien la ligne de rouleau épouse le cou
+  title: Hauteur de la ligne de roulement du col
+  description: Combien la ligne de roulement épouse le cou
 
 hemRadius:
   title: Rayon d'ourlet
