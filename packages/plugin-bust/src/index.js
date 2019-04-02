@@ -5,7 +5,7 @@ export default {
   version: version,
   hooks: {
     preDraft: function({ settings }) {
-      if (typeof settings.measurements.bust !== "undefined") {
+      if (typeof settings.measurements.bust === "undefined") {
         settings.measurements.bust = settings.measurements.chestCircumference;
         settings.measurements.chestCircumference =
           settings.measurements.highBust;
