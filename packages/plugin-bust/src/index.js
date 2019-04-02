@@ -5,8 +5,7 @@ export default {
   version: version,
   hooks: {
     preDraft: function({ settings }) {
-      if (svg.attributes.get("freesewing:plugin-bust") === false) {
-        svg.attributes.set("freesewing:plugin-bust", version);
+      if (typeof settings.measurements.bust !== "undefined") {
         settings.measurements.bust = settings.measurements.chestCircumference;
         settings.measurements.chestCircumference =
           settings.measurements.highBust;
