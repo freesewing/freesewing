@@ -16,12 +16,18 @@ export default {
       banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
     })
   ],
-  external: ["freesewing", "@freesewing/bent", "@freesewing/plugin-bundle"],
+  external: [
+    "freesewing",
+    "@freesewing/bent",
+    "@freesewing/plugin-bundle",
+    "@freesewing/plugin-buttons"
+  ],
   output: {
     globals: {
       freesewing: "freesewing",
       "@freesewing/bent": "freesewing.patterns.bent",
-      "@freesewing/plugin-bundle": "freesewing.plugins.bundle"
+      "@freesewing/plugin-bundle": "freesewing.plugins.bundle",
+      "@freesewing/plugin-buttons": "freesewing.plugins.buttons"
     }
   }
 };
