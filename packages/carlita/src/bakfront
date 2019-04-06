@@ -1,0 +1,69 @@
+export default function(part) {
+  let {
+    paperless,
+    sa,
+    snippets,
+    Snippet,
+    utils,
+    store,
+    complete,
+    points,
+    measurements,
+    options,
+    macro,
+    Point,
+    paths,
+    Path
+  } = part.shorthand();
+
+  /**
+   * we're adding half of the proportionate amount of chest east for the bust span
+   * Only half because this is not where ease is needed or pools
+   */
+  points.bustPoint = new Point(
+    measurements.bustSpan / 2 +
+      ((measurements.bustSpan / measurements.bust) * options.chestEase) / 4,
+    points.neck.y + measurements.highPointShoulderToBust
+  );
+
+  // Draw the princess seam (ps)
+  points.psHem = new Point(points.bustPoint.x, points.hem.y);
+  points.bustPointCp1 = points.bustPoint.shift(
+    90,
+    points.armholePitch.dy(points.bustPoint) / 2
+  );
+
+  // Paths
+  paths.seam = new Path()
+    .move(points.psHem)
+    .line(points.bustPoint)
+    .curve_(points.bustPointCp1, points.armholePitch)
+    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+    .line(points.neck)
+    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .line(points.collarTip)
+    ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
+    .line(points.hemEdge)
+    .line(points.psHem)
+    .close()
+    .attr("class", "fabric");
+
+  paths.chestPiece = paths.chestPiece
+    .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
+    .curve(
+      points.armholeHollowCp2,
+      points.armholePitchCp1,
+      points.armholePitch
+    );
+
+  paths.chestPocket = new Path()
+    .move(points.chestPocketTopLeft)
+    .line(points.chestPocketBottomLeft)
+    .line(points.chestPocketBottomRight)
+    .line(points.chestPocketTopRight)
+    .line(points.chestPocketTopLeft)
+    .close()
+    .attr("class", "fabric help");
+
+  return part;
+}
