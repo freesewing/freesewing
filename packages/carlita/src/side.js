@@ -40,7 +40,7 @@ export default function(part) {
     .attr("class", "fabric");
 
   if (complete) {
-    points.title = points.psWaist.shiftFractionTowards(points.waist, 0.5);
+    points.title = points.bustPoint.shiftFractionTowards(points.waist, 0.5);
     macro("title", {
       at: points.title,
       nr: "1b",
@@ -59,6 +59,7 @@ export default function(part) {
       from: points.grainlineFrom,
       to: points.grainlineTo
     });
+    snippets.bust = new Snippet("notch", points.bustPoint);
 
     if (sa) {
       paths.sa = paths.saBase
@@ -67,6 +68,63 @@ export default function(part) {
         .line(points.hem.shift(-90, 3 * sa).shift(0, sa))
         .close()
         .attr("class", "fabric sa");
+    }
+
+    if (paperless) {
+      macro("vd", {
+        from: points.psHem,
+        to: points.psWaist,
+        x: points.psWaist.x - sa - 15
+      });
+      macro("vd", {
+        from: points.psHem,
+        to: points.bustPoint,
+        x: points.bustPoint.x - sa - 15
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.seat,
+        x: points.hem.x + sa + 15
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.waist,
+        x: points.hem.x + sa + 30
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.armhole,
+        x: points.hem.x + sa + 45
+      });
+      macro("vd", {
+        from: points.hem,
+        to: points.armholePitch,
+        x: points.hem.x + sa + 60
+      });
+      macro("hd", {
+        from: points.psWaist,
+        to: points.waist
+      });
+      macro("hd", {
+        from: points.bustPoint,
+        to: points.waist,
+        y: points.bustPoint.y
+      });
+      macro("hd", {
+        from: points.bustPoint,
+        to: points.armholePitch,
+        y: points.armholePitch.y - sa - 15
+      });
+      macro("hd", {
+        from: points.bustPoint,
+        to: points.armhole,
+        y: points.armholePitch.y - sa - 30
+      });
+      macro("hd", {
+        from: points.psHem,
+        to: points.hem,
+        y: points.hem.y + 3 * sa + 15
+      });
     }
   }
 
