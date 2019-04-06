@@ -68,8 +68,8 @@ export default function(part) {
     });
 
     macro("grainline", {
-      from: points.bottomLeft.shift(0, 10+store.get("pocketRadius")),
-      to: points.edgeLeft.shift(0, 10+store.get("pocketRadius")),
+      from: points.bottomLeft.shift(0, 10+ (store.get("pocketRadius") || 0)),
+      to: points.edgeLeft.shift(0, 10+ (store.get("pocketRadius") || 0)),
     });
 
     if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
