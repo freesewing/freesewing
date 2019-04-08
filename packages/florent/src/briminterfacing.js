@@ -56,11 +56,44 @@ export default function(part) {
     .close()
     .attr("class", "interfacing");
 
+  // Clean up
+  for (let i of Object.keys(paths)) {
+    if (["seam", "inset", "outset"].indexOf(i) === -1) delete paths[i];
+  }
+
   if (complete) {
-    if (sa) {
-    }
+    points.title = points.innerMid.shiftFractionTowards(
+      points.outerMidCp2,
+      0.35
+    );
+    macro("title", {
+      at: points.title,
+      nr: 5,
+      title: "brimInterfacing"
+    });
+    macro("grainline", {
+      from: points.outerMid,
+      to: points.innerMid
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
 
     if (paperless) {
+      macro("hd", {
+        from: paths.seam.edge("left"),
+        to: paths.seam.edge("right"),
+        y: points.tipLeft.y - sa - 15
+      });
+      macro("vd", {
+        from: paths.outset.edge("bottom"),
+        to: paths.inset.edge("bottom"),
+        x: points.innerMid.x - 15
+      });
+      macro("vd", {
+        from: paths.outset.edge("bottom"),
+        to: paths.inset.edge("topRight"),
+        x: points.tipRight.x + sa + 18
+      });
     }
   }
 

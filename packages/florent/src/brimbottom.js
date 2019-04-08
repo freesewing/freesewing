@@ -48,10 +48,43 @@ export default function(part) {
     .attr("class", "fabric");
 
   if (complete) {
-    if (sa) {
-    }
+    points.title = points.innerMid.shiftFractionTowards(
+      points.outerMidCp2,
+      0.35
+    );
+    macro("title", {
+      at: points.title,
+      nr: 3,
+      title: "brimBottom"
+    });
+    macro("grainline", {
+      from: points.outerMid,
+      to: points.innerMid
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
 
     if (paperless) {
+      macro("hd", {
+        from: points.tipLeft,
+        to: points.tipRight,
+        y: points.tipLeft.y - sa - 15
+      });
+      macro("hd", {
+        from: paths.seam.edge("left"),
+        to: paths.seam.edge("right"),
+        y: points.tipLeft.y - sa - 30
+      });
+      macro("vd", {
+        from: points.outerMid,
+        to: points.innerMid,
+        x: points.innerMid.x - 15
+      });
+      macro("vd", {
+        from: points.outerMid,
+        to: points.tipRight,
+        x: points.tipRight.x + sa + 18
+      });
     }
   }
 

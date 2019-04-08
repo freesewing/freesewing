@@ -29,10 +29,39 @@ export default function(part) {
     .attr("class", "fabric");
 
   if (complete) {
-    if (sa) {
-    }
+    points.title = points.innerMid.shiftFractionTowards(
+      points.outerMidCp2,
+      0.35
+    );
+    macro("title", {
+      at: points.title,
+      nr: 4,
+      title: "brimTop"
+    });
+    macro("grainline", {
+      from: points.outerMid,
+      to: points.innerMid
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
 
     if (paperless) {
+      let bottom = paths.seam.edge("bottom");
+      macro("hd", {
+        from: paths.seam.edge("left"),
+        to: paths.seam.edge("right"),
+        y: points.tipLeft.y - sa - 15
+      });
+      macro("vd", {
+        from: bottom,
+        to: points.innerMid,
+        x: points.innerMid.x - 15
+      });
+      macro("vd", {
+        from: bottom,
+        to: points.tipRight,
+        x: points.tipRight.x + sa + 18
+      });
     }
   }
 
