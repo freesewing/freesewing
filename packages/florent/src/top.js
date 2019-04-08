@@ -10,7 +10,9 @@ export default function(part) {
     Point,
     paths,
     Path,
-    measurements
+    measurements,
+    snippets,
+    Snippet
   } = part.shorthand();
 
   const fitCap = (part, scale) => {
@@ -152,10 +154,64 @@ export default function(part) {
   paths.side.render = false;
 
   if (complete) {
-    if (sa) {
-    }
+    points.title = new Point(points.midMid.x, points.midFrontCp2.y);
+    macro("title", {
+      at: points.title,
+      nr: 1,
+      title: "top"
+    });
+    points.logo = new Point(points.title.x / 2, points.title.y);
+    snippets.logo = new Snippet("logo", points.logo).attr("data-scale", 0.75);
+    points.grainlineFrom = new Point(points.midSideCp1.x, points.midBack.y);
+    points.grainlineTo = points.midBack.clone();
+    macro("grainline", {
+      from: points.grainlineFrom,
+      to: points.grainlineTo
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
 
     if (paperless) {
+      macro("vd", {
+        from: points.midSide,
+        to: points.foldTop,
+        x: points.foldTop.x - sa - 15
+      });
+      macro("vd", {
+        from: points.backHollow,
+        to: points.midMid,
+        x: points.midMid.x - 15
+      });
+      macro("vd", {
+        from: points.midBack,
+        to: points.midMid,
+        x: points.midBack.x + sa + 15
+      });
+      macro("vd", {
+        from: points.backEdge,
+        to: points.midMid,
+        x: points.midBack.x + sa + 30
+      });
+      macro("hd", {
+        from: points.foldTop,
+        to: points.midSide,
+        y: points.midSide.y + sa + 15
+      });
+      macro("hd", {
+        from: points.foldTop,
+        to: points.backHollow,
+        y: points.midSide.y + sa + 30
+      });
+      macro("hd", {
+        from: points.foldTop,
+        to: points.backEdge,
+        y: points.midSide.y + sa + 45
+      });
+      macro("hd", {
+        from: points.foldTop,
+        to: points.midBack,
+        y: points.midSide.y + sa + 60
+      });
     }
   }
 
