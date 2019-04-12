@@ -14,7 +14,7 @@ module.exports = async () => {
   const defaults = await getDefaultLibraryParams()
 
   program
-    .name('create-react-library')
+    .name('create-freesewing-pattern')
     .version(version)
     .usage('[options] [package-name]')
     .option('-d, --desc <string>', 'package description')
@@ -23,7 +23,7 @@ module.exports = async () => {
     .option('-r, --repo <string>', 'package repo path')
     .option('-g, --no-git', 'generate without git init')
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
-    .option('-t, --template <default|typescript>', 'package template to use', /^(default|typescript|custom)$/, defaults.template)
+    .option('-t, --template <light|dark>', 'package template to use', /^(light|dark|custom)$/, defaults.template)
     .option('-p, --template-path <string>', 'custom package template path')
     .option('-s, --skip-prompts', 'skip all prompts (must provide package-name via cli)')
     .parse(process.argv)
@@ -59,12 +59,14 @@ module.exports = async () => {
 
   console.log(`
 
-Your module has been created at ${dest}.
+Your pattern skeleton has been created at ${dest}.
 
-To get started, in one tab, run:
+Before you start hacking, run these two commands, each in their own terminal:
+
+In one terminal, start the rollup bundler in watch mode:
 $ ${chalk.cyan(`cd ${params.shortName} && ${params.manager} start`)}
 
-And in another tab, run the create-react-app dev server:
+And in another terminal, run the dev server:
 $ ${chalk.cyan(`cd ${path.join(params.shortName, 'example')} && ${params.manager} start`)}
 `)
 

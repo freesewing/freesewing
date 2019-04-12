@@ -15,17 +15,17 @@ const tests = [
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'yarn',
-    template: 'default',
+    template: 'light',
     git: true
   },
   {
-    name: 'my-test-typescript-library',
+    name: 'my-test-dark-library',
     author: 'nala',
     description: 'this is a auto-generated test module. please ignore.',
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'yarn',
-    template: 'typescript',
+    template: 'dark',
     git: true
   },
   {
@@ -35,7 +35,7 @@ const tests = [
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'npm',
-    template: 'default',
+    template: 'light',
     git: true
   },
   {
@@ -45,12 +45,12 @@ const tests = [
     repo: 'nala/my-test-typescript-library',
     license: 'MIT',
     manager: 'npm',
-    template: 'typescript',
+    template: 'dark',
     git: true
   },
   {
-    name: '@automagical/nala',
-    author: 'superstar-cats',
+    name: '@freesewing/test',
+    author: 'joostdecock',
     description: 'this is a auto-generated test module. please ignore.',
     repo: 'superstar-cats/nala',
     license: 'GPL',

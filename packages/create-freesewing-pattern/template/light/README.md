@@ -12,7 +12,7 @@ npm install --save {{name}}
 
 ## Usage
 
-```tsx
+```jsx
 import React, { Component } from 'react'
 
 import MyComponent from '{{name}}'

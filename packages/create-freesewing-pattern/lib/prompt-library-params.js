@@ -30,7 +30,7 @@ module.exports = async (opts) => {
       {
         type: 'input',
         name: 'name',
-        message: 'Package Name',
+        message: 'Pattern Name',
         validate: (name) => {
           return name && validateNpmName(name).validForNewPackages
         },
@@ -39,7 +39,7 @@ module.exports = async (opts) => {
       {
         type: 'input',
         name: 'description',
-        message: 'Package Description',
+        message: 'Pattern Description',
         default: opts.description
       },
       {
@@ -70,8 +70,8 @@ module.exports = async (opts) => {
       {
         type: 'list',
         name: 'template',
-        message: 'Template',
-        choices: [ 'default', 'typescript', 'custom' ],
+        message: 'Development Mode',
+        choices: [ 'light', 'dark', 'custom' ],
         default: opts.template
       },
       {

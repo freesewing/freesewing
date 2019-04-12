@@ -7,6 +7,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
+    "freesewing": "^0.30.6",
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "scripts": {

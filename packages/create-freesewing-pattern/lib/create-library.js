@@ -155,6 +155,6 @@ yarn-debug.log*
 yarn-error.log*
 `, 'utf8')
 
-  const cmd = `git init && git add . && git commit -m "init ${pkg.name}@${pkg.version}"`
+  const cmd = `git init && git add . && git commit -m ":tada: Initialized ${pkg.name}@${pkg.version} with create-freesewing-pattern"`
   return execa.shell(cmd, { cwd: dest })
 }

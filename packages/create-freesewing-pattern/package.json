@@ -1,14 +1,26 @@
 {
-  "name": "create-react-library",
-  "version": "2.6.7",
-  "description": "CLI for easily bootstrapping modern react libraries",
-  "repository": "transitive-bullshit/create-react-library",
-  "author": "Travis Fischer <travis@automagical.ai>",
-  "main": "index.js",
+  "name": "create-freesewing-pattern",
+  "version": "0.2.1",
+  "description": "Initilizer package for freesewing patterns",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
+  "homepage": "https://github.com/freesewing/create-freesewing-pattern#readme",
+  "bugs": {
+    "url": "https://github.com/freesewing/create-freesewing-pattern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freesewing/create-freesewing-pattern.git"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "freesewing"
+  ],
+  "main": "index.js",
   "reveal": true,
   "bin": {
-    "create-react-library": "index.js"
+    "create-freesewing-pattern": "index.js"
   },
   "scripts": {
     "test": "ava -v && standard *.js lib/*.js"
@@ -17,18 +29,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "keywords": [
-    "react",
-    "preact",
-    "library",
-    "module",
-    "create-react-app",
-    "cli",
-    "component",
-    "rollup",
-    "babel",
-    "publish"
-  ],
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
