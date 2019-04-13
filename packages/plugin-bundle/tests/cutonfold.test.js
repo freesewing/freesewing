@@ -24,6 +24,7 @@ it("Should run the default cutonfold macro", () => {
     to: pattern.parts.test.points.to
   });
   let c = pattern.parts.test.paths.cutonfold;
+  console.log(c.ops);
   expect(c.attributes.get("class")).to.equal("note");
   expect(c.attributes.get("marker-start")).to.equal("url(#cutonfoldFrom)");
   expect(c.attributes.get("marker-end")).to.equal("url(#cutonfoldTo)");
