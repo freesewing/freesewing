@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-svgattr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A freesewing plugin to set SVG attributes",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
