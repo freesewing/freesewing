@@ -17,7 +17,6 @@
     "title"
   ],
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
   "scripts": {
     "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
@@ -32,9 +31,7 @@
     "lint": "eslint --fix 'src/*.js'",
     "nodebuild": "rollup -c -o dist/index.js -f cjs",
     "modulebuild": "rollup -c -o dist/index.mjs -f es",
-    "browserbuild": "rollup -c -o dist/browser.js -f iife -n freesewing_plugins_title --footer \"freesewing.plugins.title = freesewing_plugins_title;\"",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
     "hooks": {
@@ -67,10 +64,10 @@
     "rimraf": "^2.6.2",
     "rollup": "^0.66.2",
     "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-babel-minify": "8.0.0",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-terser": "^1.0.1"
+    "rollup-plugin-node-resolve": "^3.3.0"
   },
   "files": [
     "dist/*",
