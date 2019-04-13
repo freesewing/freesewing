@@ -30,9 +30,9 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -m true --name freesewing.plugins.title",
-    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs -m true",
-    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es -m true",
+    "nodebuild": "rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "rollup -c -o dist/index.mjs -f es",
+    "browserbuild": "rollup -c -o dist/browser.js -f iife -n freesewing_plugins_title --footer \"freesewing.plugins.title = freesewing_plugins_title;\"",
     "rebuild": "npm run nodebuild && npm run modulebuild",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
   },
@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "chai": "^4.1.2",

@@ -6,13 +6,17 @@ import { version, name, description, author, license } from "./package.json";
 
 export default {
   input: "src/index.js",
+  output: {
+    sourcemap: true
+  },
   plugins: [
     resolve({
       browser: true
     }),
     json(),
     babel({
-      exclude: "node_modules/**"
+      exclude: "node_modules/**",
+      plugins: ["@babel/plugin-proposal-object-rest-spread"]
     }),
     terser({
       output: {
