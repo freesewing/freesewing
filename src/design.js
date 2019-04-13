@@ -4,7 +4,7 @@ export default function Design(config, plugins = false) {
   const pattern = function(settings) {
     Pattern.call(this, config);
     if (Array.isArray(plugins)) for (let plugin of plugins) this.use(plugin);
-    if (plugins) this.use(plugins);
+    else if (plugins) this.use(plugins);
     this.apply(settings);
 
     return this;
