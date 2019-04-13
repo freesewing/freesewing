@@ -25,6 +25,8 @@ A freesewing plugin that provides the following plugins in one bundle:
  4)  [plugin-logo](https://github.com/freesewing/plugin-logo) : Add a scalebox to your patterns
  5)  [plugin-scalebox](https://github.com/freesewing/plugin-scalebox) : Add pretty titles to your pattern parts 
  6)  [plugin-title](https://github.com/freesewing/plugin-title) : Add pretty titles to your pattern parts 
+ 7)  [plugin-round](https://github.com/freesewing/plugin-title) : Rounds corners
+ 8)  [plugin-sprinkle](https://github.com/freesewing/plugin-sprinkle) : Add multiple snippets to your pattern
 
 Note that these are all **build-time plugins**. In other words, plugins used by developers/pattern designers,
 rather than run-time plugins that are used when generating patterns.
