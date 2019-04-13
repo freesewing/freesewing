@@ -7,6 +7,9 @@ import { name, version, description, author, license } from "./package.json";
 
 export default {
   input: "src/index.js",
+  output: {
+    sourcemap: true
+  },
   plugins: [
     resolve({
       browser: true
@@ -15,6 +18,13 @@ export default {
     commonjs(),
     babel({
       exclude: "node_modules/**"
+    }),
+    babel({
+      exclude: "node_modules/**",
+      plugins: [
+        "@babel/plugin-external-helpers",
+        "@babel/plugin-proposal-object-rest-spread"
+      ]
     }),
     terser({
       output: {

@@ -26,13 +26,13 @@
     "clean": "rimraf dist && rimraf tests/dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "BABEL_ENV=develop rollup --silent --config rollup.js --file dist/browser.js --format iife --sourcemap true --name freesewing",
-    "nodebuild": "BABEL_ENV=production rollup --silent --config rollup.js --file dist/index.js --format cjs --sourcemap true -e bezier-js,bin-pack",
-    "modulebuild": "BABEL_ENV=develop rollup --silent --config rollup.js --file dist/index.mjs --format esm --sourcemap true",
-    "testbuild": "BABEL_ENV=test rollup --silent -c rollup.js -o tests/dist/index.js -f cjs -e bezier-js,bin-pack",
+    "browserbuild": "rollup --silent -c -o dist/browser.js -f iife -n freesewing",
+    "nodebuild": "rollup --silent -c -o dist/index.js -f cjs -e bezier-js,bin-pack",
+    "modulebuild": "rollup --silent -c -o dist/index.mjs -f esm",
+    "testbuild": "rollup --silent -c -o tests/dist/index.js -f cjs -e bezier-js,bin-pack",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild && npm run testbuild",
     "rebuild": "npm run nodebuild && npm run modulebuild",
-    "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
+    "watch": "rollup -c -o dist/index.js -f cjs -m true --watch"
   },
   "nyc": {
     "exclude": [
@@ -57,6 +57,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.3.3",
+    "@babel/plugin-external-helpers": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
     "@babel/preset-env": "7.3.1",
     "babel-eslint": "^8.2.6",
     "babel-plugin-istanbul": "5.1.1",
