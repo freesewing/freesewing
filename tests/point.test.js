@@ -57,7 +57,8 @@ it("Should flip point around unset X value", () => {
 });
 
 it("Should flip point around X value that is zero", () => {
-  let result = new Point(2, 4).flipX(0);
+  let flip = new Point(0, 0);
+  let result = new Point(2, 4).flipX(flip);
   expect(result.x).to.equal(-2);
   expect(result.y).to.equal(4);
 });
@@ -75,7 +76,8 @@ it("Should flip point around unset Y value", () => {
 });
 
 it("Should flip point around Y value that is zero", () => {
-  let result = new Point(2, 4).flipY(0);
+  let flip = new Point(0, 0);
+  let result = new Point(2, 4).flipY(flip);
   expect(result.x).to.equal(2);
   expect(result.y).to.equal(-4);
 });
