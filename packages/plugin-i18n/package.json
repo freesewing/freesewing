@@ -17,7 +17,6 @@
     "patterns"
   ],
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
   "scripts": {
     "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
@@ -30,11 +29,9 @@
     "clean": "rimraf dist",
     "pretty": "npx prettier --write 'src/*.js'",
     "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -m true --name freesewing.plugins.i18n",
-    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs -m true",
-    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es -m true",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "nodebuild": "rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "rollup -c -o dist/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
   },
   "husky": {
     "hooks": {
@@ -49,6 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "chai": "^4.1.2",
@@ -66,10 +64,10 @@
     "rimraf": "^2.6.2",
     "rollup": "^0.66.2",
     "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-babel-minify": "8.0.0",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-terser": "^1.0.1"
+    "rollup-plugin-node-resolve": "^3.3.0"
   },
   "files": [
     "dist/*",
