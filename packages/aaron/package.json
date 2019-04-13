@@ -46,20 +46,13 @@
     ]
   },
   "peerDependencies": {
-    "@freesewing/brian": "0.23.2",
-    "@freesewing/plugin-bundle": "0.8.0",
-    "freesewing": "0.30.6"
+    "@freesewing/brian": "^0.25",
+    "@freesewing/plugin-bundle": "^0.9",
+    "freesewing": "^0.31"
   },
   "devDependencies": {
     "@babel/core": "7.3.3",
     "@babel/plugin-proposal-object-rest-spread": "7.4.3",
-    "@freesewing/antman": "latest",
-    "@freesewing/models": "0.7.3",
-    "@freesewing/plugin-debug": "latest",
-    "@freesewing/plugin-designer": "latest",
-    "@freesewing/plugin-i18n": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/plugin-validate": "latest",
     "babel-core": "^6.26.3",
     "babel-eslint": "10.0.1",
     "eslint": "5.13.0",
@@ -73,7 +66,8 @@
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-babel-minify": "7.0.0",
     "rollup-plugin-json": "3.1.0",
-    "rollup-plugin-node-resolve": "4.0.0"
+    "rollup-plugin-node-resolve": "4.0.0",
+    "rollup-plugin-peer-deps-external": "2.2.0"
   },
   "files": [
     "dist/*",
