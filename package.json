@@ -29,7 +29,7 @@
     "browserbuild": "rollup --silent -c -o dist/browser.js -f iife -n freesewing",
     "nodebuild": "rollup --silent -c -o dist/index.js -f cjs -e bezier-js,bin-pack",
     "modulebuild": "rollup --silent -c -o dist/index.mjs -f esm",
-    "testbuild": "rollup --silent -c -o tests/dist/index.js -f cjs -e bezier-js,bin-pack",
+    "testbuild": "BABEL_ENV=test rollup --silent -c -o tests/dist/index.js -f cjs -e bezier-js,bin-pack",
     "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild && npm run testbuild",
     "rebuild": "npm run nodebuild && npm run modulebuild",
     "watch": "rollup -c -o dist/index.js -f cjs -m true --watch"
