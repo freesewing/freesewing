@@ -64,6 +64,17 @@ it("Should load a count option", () => {
   expect(pattern.settings.options.test).to.equal(3);
 });
 
+it("Should load a boolean option", () => {
+  let pattern = new freesewing.Pattern({
+    options: {
+      test1: { bool: false },
+      test2: { bool: true }
+    }
+  });
+  expect(pattern.settings.options.test1).to.be.false;
+  expect(pattern.settings.options.test2).to.be.true;
+});
+
 it("Should throw an error for an unknown option", () => {
   expect(
     () =>
@@ -92,18 +103,12 @@ it("Should merge settings with default settings", () => {
 });
 
 it("Should draft according to settings", () => {
-  let config = {
+  const Test = new freesewing.Design({
     name: "test",
     dependencies: { back: "front" },
     inject: { back: "front" },
     hide: ["back"]
-  };
-  const Test = function(settings = false) {
-    freesewing.Pattern.call(this, config);
-    return this;
-  };
-  Test.prototype = Object.create(freesewing.Pattern.prototype);
-  Test.prototype.constructor = Test;
+  });
   Test.prototype.draftBack = function(part) {
     this.count++;
     return part;
@@ -120,21 +125,23 @@ it("Should draft according to settings", () => {
 });
 
 it("Should throw an error if per-part draft method is missing", () => {
-  let config = {
+  const Test = new freesewing.Design({
     name: "test",
     dependencies: { back: "front" },
     inject: { back: "front" },
     hide: ["back"]
-  };
-  const Test = function(settings = false) {
-    freesewing.Pattern.call(this, config);
-    return this;
-  };
-  Test.prototype = Object.create(freesewing.Pattern.prototype);
-  Test.prototype.constructor = Test;
-  Test.prototype.draftBack = function(part) {
-    return part;
-  };
+  });
+  Test.prototype.draftBack = part => part;
+  let pattern = new Test();
+  expect(() => pattern.draft()).to.throw();
+});
+
+it("Should throw an error if a part draft method doesn't return", () => {
+  const Test = new freesewing.Design({
+    name: "test",
+    parts: ["back"]
+  });
+  Test.prototype.draftBack = part => {};
   let pattern = new Test();
   expect(() => pattern.draft()).to.throw();
 });
@@ -188,31 +195,22 @@ it("Should sample a measurement", () => {
   expect(pattern.parts.b.paths.test_10.ops[1].to.x).to.equal(10);
   expect(() => pattern.sampleMeasurement("unknown")).to.throw();
 });
-/* FIXME: This needs work
+/* FIXME: this needs work
 it("Should sample models", () => {
-  let config = {
+  const Test = new freesewing.Design({
     name: "test",
     dependencies: { b: "a" },
     inject: { b: "a" },
-  };
-  const Test = function(settings) {
-    freesewing.Pattern.call(this, config);
-    this.apply(settings);
-    return this;
-  };
-  Test.prototype = Object.create(freesewing.Pattern.prototype);
-  Test.prototype.constructor = Test;
-  Test.prototype.draftA = function(part) {
-    console.log(part.context);
+  });
+  Test.prototype.draftA = part => {
+    console.log(part.shorthand());
     part.points.from = new part.Point(0, 0);
     part.points.to = new part.Point(10, part.context.settings.measurements.headToToe);
     part.points.anchor = new part.Point(20, 30);
     part.paths.test = new part.Path().move(part.points.from).line(part.points.to);
     return part;
   };
-  Test.prototype.draftB = function(part) {
-    return part;
-  };
+  Test.prototype.draftB = part => part;
 
   let pattern = new Test({
     sample: {
@@ -224,7 +222,7 @@ it("Should sample models", () => {
     }
   });
   pattern.sample();
-  //console.log(pattern);
+  console.log(pattern);
   //expect(pattern.parts.a.paths.test_1.render).to.equal(true);
   //expect(pattern.parts.b.paths.test_2.ops[1].to.x).to.equal(10);
 });
