@@ -29,7 +29,7 @@ After installing [@freesewing/mui-theme](https://www.npmjs.com/package/@freesewi
 import it:
 
 ```js 
-import createTheme from "../../mui-theme";
+import createTheme from "@freesewing/mui-theme";
 ```
 
 The default export (`createTheme` in our example above) is a method that 
@@ -45,7 +45,7 @@ Anything else, and you'll get the light theme.
 
 ## Using the theme
 
-To use this theme, you need to pass it to
+To use this theme, you need to pass it as the `theme` prop to
 [`muiThemeProvider`](https://material-ui.com/customization/themes/#muithemeprovider):
 
 ```js 
