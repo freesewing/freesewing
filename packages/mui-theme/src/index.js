@@ -33,8 +33,8 @@ const theme = {
   }
 };
 
-const dark = "#111";
-const light = "#fff";
+const dark = "#212529";
+const light = "#f8f9fa";
 
 const palettes = {
   dark: {
