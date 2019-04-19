@@ -1,54 +1,36 @@
 {
-  "name": "@freesewing/models",
-  "version": "0.33.0",
-  "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/models#readme",
-  "repository": "github:freesewing/models",
   "bugs": {
-    "url": "https://github.com/freesewing/models/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
-    "plugin",
-    "sewing",
-    "patterns",
-    "models"
+    "bodies",
+    "data",
+    "fashion",
+    "measurements",
+    "sizes"
   ],
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
-  "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
-    "lint": "eslint --fix \"src/*.js\"",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -n freesewing_models --footer 'freesewing.models = freesewing_models'",
-    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs",
-    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/models/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/models"
 }

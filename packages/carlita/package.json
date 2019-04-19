@@ -1,62 +1,48 @@
 {
-  "version": "0.33.0",
-  "name": "@freesewing/carlita",
-  "description": "Freesewing pattern for Sherlock Holmes cosplay, or just a nice long coat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/carlita#readme",
-  "repository": "github:freesewing/carlita",
   "bugs": {
-    "url": "https://github.com/freesewing/carlita/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "pattern",
-    "coat",
-    "sewing"
+    "sewing",
+    "sewing pattern"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
   "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "watch": "nodemon -w src -w config --exec 'rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_carlita --footer \"freesewing.patterns.carlita = freesewing_patterns_carlita;\"'",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_carlita --footer 'freesewing.patterns.carlita = freesewing_patterns_carlita;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m true",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "clean": "rimraf ../../dist/carlita",
+    "nodebuild": "rollup -c -o ../../dist/carlita/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/carlita/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"carlita: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/plugin-bundle": "^0.33.0"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@freesewing/bent": "file:../bent",
-    "@freesewing/carlton": "0.2.1",
-    "@freesewing/plugin-bundle": "0.8.0",
-    "@freesewing/plugin-bust": "0.1.2",
-    "@freesewing/plugin-buttons": "0.1.0",
-    "freesewing": "latest"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/carlita/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/carlita"
 }

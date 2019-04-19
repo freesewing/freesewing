@@ -1,46 +1,35 @@
 {
-  "name": "@freesewing/components",
-  "version": "0.33.0",
-  "description": "A collection of React components for freesewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freesewing/components.git"
-  },
   "bugs": {
-    "url": "https://github.com/freesewing/components/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
+  "keywords": [
+    "freesewing",
+    "react"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "nodebuild": "rollup --silent -c -o dist/index.js -f cjs -e bezier-js,bin-pack",
-    "modulebuild": "rollup --silent -c -o dist/index.mjs -f esm",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
+    "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "build": "echo \"components: No build command available.\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/components/*",
     "README.md",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/components"
 }

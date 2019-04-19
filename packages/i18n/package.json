@@ -1,90 +1,36 @@
 {
-  "name": "@freesewing/i18n",
-  "version": "0.33.0",
-  "description": "Translations for the freesewing project",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freesewing/i18n.git"
-  },
   "bugs": {
-    "url": "https://github.com/freesewing/i18n/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
+  "keywords": [
+    "freesewing",
+    "i18n",
+    "internationalisation",
+    "languages",
+    "localisation",
+    "translation"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "test": "mocha tests/*.test.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "clean": "rimraf dist && rimraf tests/dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "nodebuild": "BABEL_ENV=production rollup -c rollup.js -o dist/index.js -f cjs -m true",
-    "modulebuild": "BABEL_ENV=develop rollup -c rollup.js -o dist/index.mjs -f es -m true",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
-    "watch": "rollup -c rollup.js -o dist/index.js -f cjs -m true --watch"
-  },
-  "nyc": {
-    "exclude": [
-      "dist",
-      "tests"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/i18n/*",
     "README.md",
     "package.json"
   ],
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "modules": false
-        }
-      ]
-    ],
-    "env": {
-      "develop": {
-        "plugins": [
-          "external-helpers",
-          "syntax-object-rest-spread",
-          "transform-object-rest-spread"
-        ]
-      },
-      "production": {
-        "plugins": [
-          "external-helpers",
-          "syntax-object-rest-spread",
-          "transform-object-rest-spread"
-        ]
-      },
-      "test": {
-        "plugins": [
-          "external-helpers",
-          "syntax-object-rest-spread",
-          "transform-object-rest-spread",
-          "istanbul"
-        ]
-      }
-    }
+  "publishConfig": {
+    "access": "public"
   },
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/i18n"
 }

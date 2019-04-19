@@ -1,54 +1,47 @@
 {
-  "name": "@freesewing/plugin-svgattr",
-  "version": "0.33.0",
-  "description": "A freesewing plugin to set SVG attributes",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/plugin-svgattr#readme",
-  "repository": "github:freesewing/plugin-svgattr",
   "bugs": {
-    "url": "https://github.com/freesewing/plugin-svgattr/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
     "plugin",
-    "theme",
-    "svg",
-    "attributes"
+    "sewing pattern",
+    "sewing",
+    "design",
+    "parametric design",
+    "made to measure",
+    "diy",
+    "fashion"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "test": "nyc mocha --require @babel/register tests/*.test.js",
-    "report": "nyc report --reporter=html  mocha --require @babel/register tests/*.test.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "nodebuild": "rollup -c -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
+    "clean": "rimraf ../../dist/plugin-svgattr",
+    "nodebuild": "rollup -c -o ../../dist/plugin-svgattr/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/plugin-svgattr/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"plugin-svgattr: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/plugin-svgattr/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/plugin-svgattr"
 }

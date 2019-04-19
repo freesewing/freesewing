@@ -1,63 +1,48 @@
 {
-  "version": "0.33.0",
-  "name": "@freesewing/cathrin",
-  "description": "Freesewing pattern for a underbust corset / waist trainer",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/cathrin#readme",
-  "repository": "github:freesewing/cathrin",
   "bugs": {
-    "url": "https://github.com/freesewing/cathrin/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "pattern",
     "sewing",
-    "womenswear",
-    "corset",
-    "underbust"
+    "sewing pattern"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
   "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
-    "lint": "eslint --fix \"src/*.js\"",
-    "watch": "npx webpack --watch",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_cathrin --footer 'freesewing.patterns.cathrin = freesewing_patterns_cathrin;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m  true",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "clean": "rimraf ../../dist/cathrin",
+    "nodebuild": "rollup -c -o ../../dist/cathrin/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/cathrin/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"cathrin: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/plugin-bundle": "^0.33.0"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@freesewing/plugin-bundle": "0.8.0",
-    "freesewing": "0.30.6"
-  },
-  "devDependencies": {
-    "@freesewing/models": "file:../models"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/cathrin/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/cathrin"
 }

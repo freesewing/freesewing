@@ -1,0 +1,11 @@
+_types:
+  pattern:
+    peer:
+      "@freesewing/core": "^{{version}}"
+      "@freesewing/plugin-bundle": "^{{version}}"
+  plugin:
+    peer:
+      "@freesewing/core": "^{{version}}"
+aaron:
+  peer:
+    "@freesewing/brian": "^{{version}}"

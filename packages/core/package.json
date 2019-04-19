@@ -1,73 +1,40 @@
 {
-  "name": "@freesewing/core",
-  "version": "0.33.0",
-  "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freesewing/freesewing.git"
-  },
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
   },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "library",
+    "parametric design",
+    "patterns",
+    "sewing",
+    "sewing patterns"
+  ],
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
-  "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "test": "nyc mocha tests/*.test.js",
-    "report": "nyc report --reporter=html  mocha --compilers js:babel-core/register tests/*.test.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "clean": "rimraf dist && rimraf tests/dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup --silent -c -o dist/browser.js -f iife -n freesewing",
-    "nodebuild": "rollup --silent -c -o dist/index.js -f cjs -e bezier-js,bin-pack",
-    "modulebuild": "rollup --silent -c -o dist/index.mjs -f esm",
-    "testbuild": "BABEL_ENV=test rollup --silent -c -o tests/dist/index.js -f cjs -e bezier-js,bin-pack",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild && npm run testbuild",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "watch": "rollup -c -o dist/index.js -f cjs -m true --watch"
-  },
-  "nyc": {
-    "exclude": [
-      "dist",
-      "tests"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "bezier-js": "2.3.2",
-    "bin-pack": "1.0.2"
-  },
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/core/*",
     "README.md",
     "package.json"
   ],
-  "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "istanbul"
-        ]
-      }
-    }
+  "publishConfig": {
+    "access": "public"
   },
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/core"
 }

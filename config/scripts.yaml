@@ -1,0 +1,16 @@
+_types:
+  pattern:
+    clean: "rimraf ../../dist/{{name}}"
+    nodebuild: "rollup -c -o ../../dist/{{name}}/index.js -f cjs"
+    modulebuild: "rollup -c -o ../../dist/{{name}}/index.mjs -f es"
+    build: "npm run clean && npm run nodebuild && npm run modulebuild"
+    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+  plugin:
+    clean: "rimraf ../../dist/{{name}}"
+    nodebuild: "rollup -c -o ../../dist/{{name}}/index.js -f cjs"
+    modulebuild: "rollup -c -o ../../dist/{{name}}/index.mjs -f es"
+    build: "npm run clean && npm run nodebuild && npm run modulebuild"
+    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+components:
+    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+    build: "echo \"{{name}}: No build command available.\" && exit 0"

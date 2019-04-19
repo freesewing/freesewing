@@ -1,51 +1,33 @@
 {
-  "name": "@freesewing/workbench",
-  "version": "0.33.0",
-  "description": "A React component to facilitate freesewing pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": "freesewing/workbench",
   "bugs": {
-    "url": "https://github.com/freesewing/workbench/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
-  "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
-  },
-  "files": [
-    "dist"
+  "keywords": [
+    "freesewing",
+    "react",
+    "development"
   ],
-  "dependencies": {
-    "@freesewing/i18n": "file:../i18n",
-    "@freesewing/mui-theme": "file:../mui-theme",
-    "@freesewing/plugin-theme": "file:../plugin-theme",
-    "@material-ui/core": "3.9.2",
-    "@material-ui/icons": "3.0.2",
-    "freesewing": "0.30.6",
-    "material-icons": "0.3.1",
-    "react-intl": "2.8.0",
-    "typeface-roboto-condensed": "0.0.54"
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "../../dist/packages/workbench/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/workbench"
 }

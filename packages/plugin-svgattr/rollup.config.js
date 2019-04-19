@@ -2,7 +2,7 @@ import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
 import json from "rollup-plugin-json";
 import minify from "rollup-plugin-babel-minify";
-import path from "path";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import { name, version, description, author, license } from "./package.json";
 
 export default {
@@ -11,6 +11,7 @@ export default {
     sourcemap: true
   },
   plugins: [
+    peerDepsExternal(),
     resolve({ browser: true }),
     json(),
     babel({

@@ -1,61 +1,48 @@
 {
-  "version": "0.33.0",
-  "name": "@freesewing/wahid",
-  "description": "Freesewing pattern for a classic fitted waistcoat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/wahid#readme",
-  "repository": "github:freesewing/wahid",
   "bugs": {
-    "url": "https://github.com/freesewing/wahid/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "pattern",
     "sewing",
-    "menswear",
-    "waistcoat"
+    "sewing pattern"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
   "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -m true -n freesewing_patterns_wahid --footer 'freesewing.patterns.wahid = freesewing_patterns_wahid;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs -m true",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es -m true",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "clean": "rimraf ../../dist/wahid",
+    "nodebuild": "rollup -c -o ../../dist/wahid/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/wahid/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"wahid: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/plugin-bundle": "^0.33.0"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@freesewing/brian": "0.23.2",
-    "@freesewing/plugin-bundle": "0.8.0",
-    "@freesewing/plugin-buttons": "latest",
-    "@freesewing/plugin-round": "latest",
-    "freesewing": "0.30.6"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/wahid/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/wahid"
 }

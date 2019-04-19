@@ -1,42 +1,35 @@
 {
-  "name": "@freesewing/css-theme",
-  "version": "0.33.0",
-  "description": "A CSS theme for freesewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freesewing/css-theme.git"
-  },
   "bugs": {
-    "url": "https://github.com/freesewing/css-theme/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
-  "main": "dist/theme.css",
-  "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.scss'",
-    "watch": "npx node-sass --watch --recursive src/theme.scss dist/theme.css",
-    "build": "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "keywords": [
+    "freesewing",
+    "css",
+    "scss",
+    "sass",
+    "theme"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/css-theme/*",
     "README.md",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/css-theme"
 }

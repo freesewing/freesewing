@@ -1,0 +1,90 @@
+core:
+  - design
+  - diy
+  - fashion
+  - made to measure
+  - library
+  - parametric design
+  - patterns
+  - sewing
+  - sewing patterns
+create-freesewing-pattern:
+  - development
+  - initializer
+  - react
+components:
+  - react
+css-theme:
+  - css
+  - scss
+  - sass
+  - theme
+examples:
+  - documentation
+  - example
+  - parametric design
+i18n:
+  - i18n
+  - internationalisation
+  - languages
+  - localisation
+  - translation
+models:
+  - bodies
+  - data
+  - fashion
+  - measurements
+  - sizes
+mui-theme:
+  - material-ui
+  - react
+  - theme
+other:
+  - design
+  - diy
+  - fashion
+  - made to measure
+  - parametric design
+  - sewing
+pattern:
+  - design
+  - diy
+  - fashion
+  - made to measure
+  - parametric design
+  - pattern
+  - sewing
+  - sewing pattern
+patterns:
+  - bundle
+  - design
+  - diy
+  - fashion
+  - sewing
+  - sewing pattern
+  - parametric design
+  - made to measure
+plugin:
+  - plugin
+  - sewing pattern
+  - sewing
+  - design
+  - parametric design
+  - made to measure
+  - diy
+  - fashion
+plugin-bundle:
+  - bundle
+  - plugin
+  - sewing pattern
+  - sewing
+  - design
+  - parametric design
+  - made to measure
+  - diy
+  - fashion
+workbench:
+  - react
+  - development
+
+

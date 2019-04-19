@@ -1,72 +1,37 @@
 {
-  "version": "0.33.0",
-  "name": "@freesewing/patterns",
-  "description": "An umbrella package for all freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/patterns#readme",
-  "repository": "github:freesewing/patterns",
   "bugs": {
-    "url": "https://github.com/freesewing/patterns/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
-    "patterns",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "sewing"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
-  "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
-    "lint": "eslint --fix \"src/*.js\"",
-    "watch": "rollup -w -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns;'",
-    "browserbuild": "rollup -c rollup.js -o dist/browser.js -f iife -n freesewing_patterns --footer 'freesewing.patterns = freesewing_patterns.patterns;'",
-    "nodebuild": "rollup -c rollup.js -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c rollup.js -o dist/index.mjs -f es",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@freesewing/aaron": "latest",
-    "@freesewing/bent": "latest",
-    "@freesewing/brian": "latest",
-    "@freesewing/bruce": "latest",
-    "@freesewing/carlton": "0.2.0",
-    "@freesewing/cathrin": "latest",
-    "@freesewing/examples": "latest",
-    "@freesewing/huey": "latest",
-    "@freesewing/hugo": "latest",
-    "@freesewing/jaeger": "file:../jaeger",
-    "@freesewing/plugin-bundle": "latest",
-    "@freesewing/simon": "latest",
-    "@freesewing/sven": "latest",
-    "@freesewing/tamiko": "latest",
-    "@freesewing/trayvon": "latest",
-    "@freesewing/wahid": "latest"
-  },
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/pattern-bundle/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/pattern-bundle"
 }

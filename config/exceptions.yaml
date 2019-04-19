@@ -1,0 +1,8 @@
+noNamespace:
+  - create-freesewing-pattern
+noRollup:
+  - css-theme
+  - create-freesewing-pattern
+  - mui-theme
+  - plugin-theme
+  - workbench

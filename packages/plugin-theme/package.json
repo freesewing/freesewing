@@ -1,63 +1,47 @@
 {
-  "name": "@freesewing/plugin-theme",
-  "version": "0.33.0",
-  "description": "A freesewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/plugin-theme#readme",
-  "repository": "github:freesewing/plugin-theme",
   "bugs": {
-    "url": "https://github.com/freesewing/plugin-theme/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
     "plugin",
-    "theme",
-    "svg",
-    "style",
+    "sewing pattern",
     "sewing",
-    "patterns"
+    "design",
+    "parametric design",
+    "made to measure",
+    "diy",
+    "fashion"
   ],
   "main": "dist/index.js",
-  "unpkg": "dist/browser.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "precommit": "npm run pretty && lint-staged",
-    "cssDraft": "uglifycss src/lib/draft.css > src/lib/draft.min.css && echo 'export default `'> src/lib/draft.css.js && cat src/lib/draft.min.css >> src/lib/draft.css.js && echo '`;' >> src/lib/draft.css.js",
-    "cssSample": "uglifycss src/lib/sample.css > src/lib/sample.min.css && echo 'export default `'> src/lib/sample.css.js && cat src/lib/sample.min.css >> src/lib/sample.css.js && echo '`;' >> src/lib/sample.css.js",
-    "cssPaperless": "uglifycss src/lib/paperless.css > src/lib/paperless.min.css && echo 'export default `'> src/lib/paperless.css.js && cat src/lib/paperless.min.css >> src/lib/paperless.css.js && echo '`;' >> src/lib/paperless.css.js",
-    "css": "npm run cssDraft && npm run cssSample && npm run cssPaperless",
-    "test": "nyc mocha --require @babel/register tests/*.test.js",
-    "report": "nyc report --reporter=html  mocha --require @babel/register tests/*.test.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "browserbuild": "rollup -c rollup.js --file dist/browser.js --format iife -m true --name freesewing.plugins.theme",
-    "nodebuild": "rollup -c rollup.js --file dist/index.js --format cjs -m true",
-    "modulebuild": "rollup -c rollup.js --file dist/index.mjs --format es -m true",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "clean": "rimraf ../../dist/plugin-theme",
+    "nodebuild": "rollup -c -o ../../dist/plugin-theme/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/plugin-theme/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"plugin-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
-    "dist/*",
+    "../../dist/packages/plugin-theme/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/plugin-theme"
 }

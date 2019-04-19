@@ -1,60 +1,47 @@
 {
-  "version": "0.33.0",
-  "name": "@freesewing/aaron",
-  "description": "Freesewing pattern for a A-shirt / tank top",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/aaron#readme",
-  "repository": "github:freesewing/aaron",
   "bugs": {
-    "url": "https://github.com/freesewing/aaron/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "pattern",
     "sewing",
-    "menswear",
-    "block"
+    "sewing pattern"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
   "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
-    "lint": "eslint --fix \"src/*.js\"",
-    "watch": "nodemon -w src --exec npm run browserbuild",
-    "nodebuild": "rollup -c -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c -o dist/index.mjs -f es",
-    "rebuild": "npm run nodebuild && npm run modulebuild",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "clean": "rimraf ../../dist/aaron",
+    "nodebuild": "rollup -c -o ../../dist/aaron/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/aaron/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"aaron: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   },
   "peerDependencies": {
-    "@freesewing/brian": "^0.25",
-    "@freesewing/plugin-bundle": "^0.9",
-    "freesewing": "^0.31"
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/plugin-bundle": "^0.33.0",
+    "@freesewing/brian": "^0.33.0"
   },
   "files": [
-    "dist/*",
+    "../../dist/packages/aaron/*",
     "README.md",
-    "package-lock.json",
     "package.json"
   ],
-  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "version": "0.33.0",
+  "name": "@freesewing/aaron"
 }
