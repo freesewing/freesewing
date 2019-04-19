@@ -192,16 +192,28 @@ function packageConfig(pkg, config) {
  */
 function badges(pkg, config) {
   let markup = "";
-  for (let key of Object.keys(config.badges._all)) {
-    let b = config.badges._all[key];
-    markup += `<a href="${b.link}" title="${b.alt}"><img src="${b.img}" alt="${
-      b.alt
-    }"/></a>`;
+  for (let group of ["_all", "_social"]) {
+    markup += "<p align='center'>";
+    for (let key of Object.keys(config.badges[group])) {
+      markup += formatBadge(config.badges[group][key], fullName(pkg, config));
+    }
+    markup += "</p>";
   }
 
   return markup;
 }
 
+/**
+ * Formats a badge for a readme file
+ */
+function formatBadge(badge, fullname) {
+  return `<a
+  href="${Mustache.render(badge.link, { fullname })}"
+  title="${Mustache.render(badge.alt, { fullname })}"
+  ><img src="${Mustache.render(badge.img, { fullname })}"
+  alt="${Mustache.render(badge.alt, { fullname })}"/>
+  </a>`;
+}
 /**
  * Returns the full (namespaced) name of a package
  */

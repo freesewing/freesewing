@@ -1,33 +1,26 @@
 _all:
+  npm:
+    link: "https://www.npmjs.com/package/{{{fullname}}}"
+    img: "https://badgen.net/npm/v/{{{fullname}}}"
+    alt: "{{{fullname}}} on NPM"
+  license:
+    link: "https://opensource.org/licenses/MIT"
+    img: "https://badgen.net/badge/License/MIT/blue"
+    alt: "License: MIT"
+_social:
   gitter:
     link: "https://gitter.im/freesewing/freesewing"
-    img: "https://badgen.net/badge/Gitter/Chat%20with%20us/CA0547?icon=gitter"
+    img: "https://badgen.net/badge//Chat/CA0547?icon=gitter"
     alt: "Chat with us on Gitter"
   twitter:
     link: "https://twitter.com/freesewing_org"
-    img: "https://badgen.net/badge/Twitter/@freesewing_org/1DA1F2?icon=twitter"
+    img: "https://badgen.net/badge//@freesewing_org/1DA1F2?icon=twitter"
     alt: "Follow @freesewing_org on Twitter"
   github:
     link: "https://github.com/freesewing"
-    img: "https://badgen.net/badge/GitHub/freesewing/269F42?icon=github"
+    img: "https://badgen.net/badge//freesewing/269F42?icon=github"
     alt: "FreeSewing on GitHub"
   patron:
     link: "https://freesewing.org/patrons/join"
     img: "https://badgen.net/badge/Become%20a/Patron/purple"
     alt: "Become a FreeSewing Patron"
-  license:
-    link: "https://opensource.org/licenses/MIT"
-    img: "https://badgen.net/badge/License/MIT/blue"
-    alt: "License: MIT"
-  npm:
-    link: "https://freesewing.org/patrons/join"
-    img: "https://badgen.net/badge/Become%20a/Patron/purple"
-    alt: "Become a FreeSewing Patron"
-  org:
-    link: "https://freesewing.org/"
-    img: "https://badgen.net/badge/FreeSewing/.org/3DA639"
-    alt: "FreeSewing.org"
-  dev:
-    link: "https://freesewing.dev/"
-    img: "https://badgen.net/badge/FreeSewing/.dev/3DA639"
-    alt: "FreeSewing.dev"

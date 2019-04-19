@@ -8,12 +8,14 @@
   },
   "keywords": [
     "freesewing",
+    "bundle",
     "design",
     "diy",
     "fashion",
-    "made to measure",
+    "sewing",
+    "sewing pattern",
     "parametric design",
-    "sewing"
+    "made to measure"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -22,7 +24,7 @@
   "dependencies": {},
   "devDependencies": {},
   "files": [
-    "../../dist/packages/pattern-bundle/*",
+    "../../dist/packages/patterns/*",
     "README.md",
     "package.json"
   ],
@@ -33,5 +35,5 @@
     "node": ">=8.0.0"
   },
   "version": "0.33.0",
-  "name": "@freesewing/pattern-bundle"
+  "name": "@freesewing/patterns"
 }
