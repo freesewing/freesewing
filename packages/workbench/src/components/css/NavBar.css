@@ -1,0 +1,43 @@
+header.navbar {
+  height: 64px;
+  background: #222;
+  color: #fff;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+div.right {
+  flex-grow: 1;
+  text-align: right;
+}
+div.logo {
+  line-height: 0
+}
+button.emblem {
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  height: 64px;
+  background: transparent;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  transition: border 0.2s ease-out;
+}
+a.navbar,
+button.navbar {
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  height: 64px;
+  background: transparent;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  transition: border 0.2s ease-out;
+}
+button.navbar:hover {
+  border-bottom: 4px solid #61dafb;
+}
+a.navbar {
+  line-height: 64px
+}
+
