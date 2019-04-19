@@ -1,5 +1,5 @@
 {
-  "version": "0.32.0",
+  "version": "0.33.0",
   "name": "@freesewing/huey",
   "description": "Freesewing pattern for a zip-up hoodie with optional front pockets",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",

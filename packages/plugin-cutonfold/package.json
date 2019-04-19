@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-cutonfold",
-  "version": "0.32.0",
+  "version": "0.33.0",
   "description": "A freesewing plugin to add cut-on-fold indicators on your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",

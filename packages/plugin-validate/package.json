@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-validate",
-  "version": "0.32.0",
+  "version": "0.33.0",
   "description": "A freesewing plugin that checks whether all required measurements are set prior to drafting your pattern ",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",

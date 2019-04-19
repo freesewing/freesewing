@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/workbench",
-  "version": "0.32.0",
+  "version": "0.33.0",
   "description": "A React component to facilitate freesewing pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
