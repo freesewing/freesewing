@@ -13,6 +13,7 @@ const config = {
   defaults: readConfigFile("defaults.yaml"),
   descriptions: readConfigFile("descriptions.yaml"),
   keywords: readConfigFile("keywords.yaml"),
+  badges: readConfigFile("badges.yaml"),
   scripts: readConfigFile("scripts.yaml"),
   dependencies: readConfigFile("dependencies.yaml", { version }),
   exceptions: readConfigFile("exceptions.yaml"),
@@ -26,7 +27,6 @@ const packages = glob.sync("*", {
   cwd: path.join(config.repoPath, "packages")
 });
 
-console.log(config.defaults);
 validate(packages, config);
 reconfigure(packages, config);
 
@@ -56,6 +56,24 @@ function readConfigFile(file, replace = false) {
   return yaml.safeLoad(
     fse.readFileSync(path.join(repoPath, "config", file), "utf-8")
   );
+}
+
+/**
+ * Reads info.md from the package directory
+ * Returns its contents if it exists, or an empty string if not
+ */
+function readInfoFile(pkg) {
+  let markup = "";
+  try {
+    markup = fse.readFileSync(
+      path.join(repoPath, "packages", pkg, "info.md"),
+      "utf-8"
+    );
+  } catch {
+    return "";
+  }
+
+  return markup;
 }
 
 /**
@@ -159,8 +177,7 @@ function packageConfig(pkg, config) {
     })
   );
   pkgConf.version = version;
-  if (config.exceptions.noNamespace.indexOf(pkg) !== -1) pkgConf.name = pkg;
-  else pkgConf.name = `@freesewing/${pkg}`;
+  pkgConf.name = fullName(pkg, config);
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg, config, type));
   (pkgConf.scripts = scripts(pkg, config, type)),
     (pkgConf.dependencies = dependencies(pkg, config, type));
@@ -168,6 +185,43 @@ function packageConfig(pkg, config) {
   pkgConf.peerDependencies = peerDependencies(pkg, config, type);
 
   return pkgConf;
+}
+
+/**
+ * Returns an string with the markup for badges in the readme file
+ */
+function badges(pkg, config) {
+  let markup = "";
+  for (let key of Object.keys(config.badges._all)) {
+    let b = config.badges._all[key];
+    markup += `<a href="${b.link}" title="${b.alt}"><img src="${b.img}" alt="${
+      b.alt
+    }"/></a>`;
+  }
+
+  return markup;
+}
+
+/**
+ * Returns the full (namespaced) name of a package
+ */
+function fullName(pkg, config) {
+  if (config.exceptions.noNamespace.indexOf(pkg) !== -1) return pkg;
+  else return `@freesewing/${pkg}`;
+}
+
+/**
+ * Creates a README.md file for a package
+ */
+function readme(pkg, config) {
+  let markup = Mustache.render(config.templates.readme, {
+    fullname: fullName(pkg, config),
+    description: config.descriptions[pkg],
+    badges: badges(pkg, config),
+    info: readInfoFile(pkg)
+  });
+
+  return markup;
 }
 
 /**
@@ -206,6 +260,10 @@ function reconfigure(pkgs, config) {
         config.templates.rollup
       );
     }
+    fse.writeFileSync(
+      path.join(config.repoPath, "packages", pkg, "README.md"),
+      readme(pkg, config)
+    );
   }
   console.log(
     chalk.yellowBright.bold("All done."),

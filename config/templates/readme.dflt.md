@@ -1,49 +1,62 @@
-> **NOTE:** We are currently switching to a monorepo, which is causing some turbulence.
->
-> Join [our chat room](https://gitter.im/freesewing/freesewing) for questions and support.
+> **Note**: This is part of version 2 of FreeSewing.  
+> It is a work in progress, and not ready for prime-time yet
+> 
+> For all questions, please come say hellp in [our chatroom on Gitter](https://gitter.im/).
 
-<p align="center">
-  <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
-</p>
-<h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
-<br><sup>a library for made-to-measure sewing patterns</sup>
-</h4>
-<p align="center">
-  <a href="https://travis-ci.org/freesewing/core"><img src="https://badgen.net/travis/freesewing/core/master" alt="Travis build"></a>
-  <a href="https://www.npmjs.com/package/@freesewing/core"><img src="https://badgen.net/npm/v/@freesewing/core" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/@freesewing/core"><img src="https://badgen.net/npm/license/@freesewing/core" alt="License"></a>
-  <a href="https://codecov.io/gh/freesewing/freesewing"><img src="https://badgen.net/codecov/c/github/freesewing/freesewing/master" alt="Code coverage"></a>
-  <a href="https://deepscan.io/dashboard#view=project&pid=2993&bid=23256"><img src="https://deepscan.io/api/projects/2993/branches/23256/badge/grade.svg" alt="DeepScan grade"></a>
-  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
-  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
-</p>
+<p align="center"><a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a></p>
+<p>FreeSewing is a free and open source library for made-to-measure sewing patterns</p>
+<p align="center">{{{badges}}}</p>
 
-# freesewing
+# {{fullname}}
 
-[Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing patterns.  
+{{description}}
 
-Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
+{{{info}}}
+
+## License: MIT
+
+© [Joost De Cock](https://github.com/joostdecock).
+See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
+
+## Where to get helpLicense
+
+MIT © [freesewing](https://github.com/freesewing)
+
+
+## About FreeSewing
+
+Where the world of makers and developers collide, that's where you'll find FreeSewing.
+
+Our [core library](https://freesewing.dev/en/freesewing) is a *batteries-included* toolbox
+for parametric design of sewing patterns. It's a modular system (check our list
+of [plugins](https://freesewing.dev/en/plugins) and getting started is as simple as:
+
+```bash
+npm init freesewing-pattern
+```
+
+The [getting started] section on [freesewing.dev](https://freesewing.dev/) is a good
+entrypoint to our documentation, but you'll find a lot more there, including
+our [API documentation](https://freesewing.dev/en/freesewing/api),
+as well as [examples](https://freesewing.dev/en/freesewing/examples),
+and [best practices](https://freesewing.dev/en/do).
+
+If you're a maker, checkout [freesewing.org](https://freesewing/) where you can generate
+our sewing patterns adapted to your measurements.
+
+## ♥️ Support FreeSewing: Become a patron ♥️
+
+FreeSewing is an open source project run by a community, 
+and financially supported by our patrons.
+
+If you feel what we do is worthwhile, you too 
+should [become a patron](https://freesewing.org/patrons/join).
 
 ## Links
 
- - 💻 Website: [freesewing.org](https://freesewing.org)
- - 💬 Chat: [Gitter](https://gitter.im/freesewing/freesewing)
+ - 💻 Makers website: [freesewing.org](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.org)
+ - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/freesewing)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
- 
-## Features
 
-- Parametric design of sewing patterns
-- Modular design with support for [plugins](https://github.com/freesewing/plugins)
-- Auto-layout of pattern parts
-- Auto-offset of paths for seam allowance
-- Support for paperless patterns (with [our theme plugin](https://github.com/freesewing/plugin-theme))
-- Sampling of options, a single measurement, or across models
-- Renders to SVG
-- Run in the browser as well as on the server with Node.js
-
-## Getting started
-
-**@freesewing/core** is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
-
-It is an ongoing project, and not ready for prime-time yet. Watch this space.

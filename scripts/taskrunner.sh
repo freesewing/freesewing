@@ -9,7 +9,7 @@ CUR=`pwd`
 cd $DIR
 for d in ../packages/*/ ; do {
   cd $d
-  pwd
+  # do something here
   cd ..
 }
 done
