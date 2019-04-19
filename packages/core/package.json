@@ -1,5 +1,5 @@
 {
-  "name": "freesewing",
+  "name": "@freesewing/core",
   "version": "0.32.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",

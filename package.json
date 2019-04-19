@@ -70,6 +70,7 @@
     "@freesewing/carlton": "file:packages/carlton",
     "@freesewing/cathrin": "file:packages/cathrin",
     "@freesewing/components": "file:packages/components",
+    "@freesewing/core": "file:packages/core",
     "@freesewing/css-theme": "file:packages/css-theme",
     "@freesewing/examples": "file:packages/examples",
     "@freesewing/florent": "file:packages/florent",
@@ -106,8 +107,7 @@
     "@freesewing/trayvon": "file:packages/trayvon",
     "@freesewing/wahid": "file:packages/wahid",
     "@freesewing/workbench": "file:packages/workbench",
-    "create-freesewing-pattern": "file:packages/create-freesewing-pattern",
-    "freesewing": "file:packages/freesewing"
+    "create-freesewing-pattern": "file:packages/create-freesewing-pattern"
   },
    "workspaces": ["packages/*"]
 }

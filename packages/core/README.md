@@ -1,3 +1,7 @@
+> **NOTE:** We are currently switching to a monorepo, which is causing some turbulence.
+>
+> Join [our chat room](https://gitter.im/freesewing/freesewing) for questions and support.
+
 <p align="center">
   <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
 </p>
@@ -5,9 +9,9 @@
 <br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 <p align="center">
-  <a href="https://travis-ci.org/freesewing/freesewing"><img src="https://badgen.net/travis/freesewing/freesewing/master" alt="Travis build"></a>
-  <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/v/freesewing" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/freesewing"><img src="https://badgen.net/npm/license/freesewing" alt="License"></a>
+  <a href="https://travis-ci.org/freesewing/core"><img src="https://badgen.net/travis/freesewing/core/master" alt="Travis build"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/core"><img src="https://badgen.net/npm/v/@freesewing/core" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@freesewing/core"><img src="https://badgen.net/npm/license/@freesewing/core" alt="License"></a>
   <a href="https://codecov.io/gh/freesewing/freesewing"><img src="https://badgen.net/codecov/c/github/freesewing/freesewing/master" alt="Code coverage"></a>
   <a href="https://deepscan.io/dashboard#view=project&pid=2993&bid=23256"><img src="https://deepscan.io/api/projects/2993/branches/23256/badge/grade.svg" alt="DeepScan grade"></a>
   <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
@@ -40,6 +44,6 @@ Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
 
 ## Getting started
 
-This repository is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
+**@freesewing/core** is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
 
 It is an ongoing project, and not ready for prime-time yet. Watch this space.

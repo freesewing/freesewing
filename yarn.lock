@@ -967,11 +967,6 @@
   resolved "https://registry.yarnpkg.com/@freesewing/aaron/-/aaron-0.14.0.tgz#523b20266ff63c06cf5a7408021bccfa9417e2e1"
   integrity sha512-C8moTyZCwbG0YU0wx0yNAtjwV5NkIGA1Vw3rxiRoQTB+a7+f1S9cqol1QcRlEIEzf+W7piQSUL8VB9hgKPFvsA==
 
-"@freesewing/antman@latest":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@freesewing/antman/-/antman-0.3.0.tgz#4a71482dc13af26c7d4054b3ce1f1c0b0fbf0089"
-  integrity sha512-0IggXcT1E0pBKpOZubrnaF1efYiu4MdfFb5XoIoVHDYGE552xbL/NUrOfKj8GrmLlGnzVMw3CDBKTi/OCXnoVw==
-
 "@freesewing/bent@0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@freesewing/bent/-/bent-0.1.1.tgz#0e6c865132d4c114a31992186daf0e65591314a2"
@@ -1038,7 +1033,7 @@
 "@freesewing/carlita@file:packages/carlita":
   version "0.32.0"
   dependencies:
-    "@freesewing/bent" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-carlita-0.32.0-597ec78b-0e61-431a-a4ad-8df177e5c8be-1555659153728/node_modules/@freesewing/bent"
+    "@freesewing/bent" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-carlita-0.32.0-ad8ecb78-6336-4c97-a33c-bcd9267ecbde-1555661273044/node_modules/@freesewing/bent"
     "@freesewing/carlton" "0.2.1"
     "@freesewing/plugin-bundle" "0.8.0"
     "@freesewing/plugin-bust" "0.1.2"
@@ -1068,7 +1063,7 @@
 "@freesewing/carlton@file:packages/carlton":
   version "0.32.0"
   dependencies:
-    "@freesewing/bent" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-carlton-0.32.0-e8bebe4e-0be2-4b46-b7a9-60891b23a5dc-1555659157056/node_modules/@freesewing/bent"
+    "@freesewing/bent" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-carlton-0.32.0-22cff167-06e1-4070-a295-3580dd1f30d6-1555661273057/node_modules/@freesewing/bent"
     "@freesewing/plugin-bundle" "0.8.0"
     "@freesewing/plugin-buttons" latest
     freesewing latest
@@ -1089,6 +1084,12 @@
 
 "@freesewing/components@file:packages/components":
   version "0.32.0"
+
+"@freesewing/core@file:packages/core":
+  version "0.32.0"
+  dependencies:
+    bezier-js "2.3.2"
+    bin-pack "1.0.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
   version "0.32.0"
@@ -1174,7 +1175,7 @@
     "@freesewing/examples" latest
     "@freesewing/huey" latest
     "@freesewing/hugo" latest
-    "@freesewing/jaeger" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-patterns-0.32.0-b210196a-5a42-4463-99df-9e9266ad5197-1555659157264/node_modules/@freesewing/jaeger"
+    "@freesewing/jaeger" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-patterns-0.32.0-d3481600-d7d6-4641-8e86-f6a4ac0510d9-1555661273098/node_modules/@freesewing/jaeger"
     "@freesewing/plugin-bundle" latest
     "@freesewing/simon" latest
     "@freesewing/sven" latest
@@ -1207,14 +1208,14 @@
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
   version "0.32.0"
   dependencies:
-    "@freesewing/plugin-cutonfold" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-cutonfold"
-    "@freesewing/plugin-dimension" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-dimension"
-    "@freesewing/plugin-grainline" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-grainline"
-    "@freesewing/plugin-logo" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-logo"
-    "@freesewing/plugin-round" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-round"
-    "@freesewing/plugin-scalebox" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-scalebox"
-    "@freesewing/plugin-sprinkle" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-sprinkle"
-    "@freesewing/plugin-title" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-a0484113-0f7e-4879-a4e9-c5ccb539e0f1-1555659161156/node_modules/@freesewing/plugin-title"
+    "@freesewing/plugin-cutonfold" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-cutonfold"
+    "@freesewing/plugin-dimension" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-dimension"
+    "@freesewing/plugin-grainline" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-grainline"
+    "@freesewing/plugin-logo" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-logo"
+    "@freesewing/plugin-round" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-round"
+    "@freesewing/plugin-scalebox" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-scalebox"
+    "@freesewing/plugin-sprinkle" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-sprinkle"
+    "@freesewing/plugin-title" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-plugin-bundle-0.32.0-b9fb002e-1884-442b-9129-437d521bffdc-1555661273120/node_modules/@freesewing/plugin-title"
 
 "@freesewing/plugin-bundle@latest":
   version "0.9.0"
@@ -1476,9 +1477,9 @@
 "@freesewing/workbench@file:packages/workbench":
   version "0.32.0"
   dependencies:
-    "@freesewing/i18n" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-059c2479-7e09-4bc5-b6a5-82dbcc91d463-1555659161305/node_modules/@freesewing/i18n"
-    "@freesewing/mui-theme" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-059c2479-7e09-4bc5-b6a5-82dbcc91d463-1555659161305/node_modules/@freesewing/mui-theme"
-    "@freesewing/plugin-theme" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-059c2479-7e09-4bc5-b6a5-82dbcc91d463-1555659161305/node_modules/@freesewing/plugin-theme"
+    "@freesewing/i18n" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-1ffd101c-84db-43e4-aef3-6eda576ac07a-1555661273157/node_modules/@freesewing/i18n"
+    "@freesewing/mui-theme" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-1ffd101c-84db-43e4-aef3-6eda576ac07a-1555661273157/node_modules/@freesewing/mui-theme"
+    "@freesewing/plugin-theme" "file:../../../../home/joost/.cache/yarn/v4/npm-@freesewing-workbench-0.32.0-1ffd101c-84db-43e4-aef3-6eda576ac07a-1555661273157/node_modules/@freesewing/plugin-theme"
     "@material-ui/core" "3.9.2"
     "@material-ui/icons" "3.0.2"
     freesewing "0.30.6"
@@ -7627,12 +7628,6 @@ freesewing@0.30.6:
   version "0.30.6"
   resolved "https://registry.yarnpkg.com/freesewing/-/freesewing-0.30.6.tgz#5029957bd864df3d902812d413eef5052e809aee"
   integrity sha512-iacKTnjNCzMyMcIfutMm7UHO51ewgtpZ5TTkL7gho0nZyAvjdwreNw5yrEej73nhr7zobGQqOijw+z3JdPNQ8w==
-  dependencies:
-    bezier-js "2.3.2"
-    bin-pack "1.0.2"
-
-"freesewing@file:packages/freesewing":
-  version "0.32.0"
   dependencies:
     bezier-js "2.3.2"
     bin-pack "1.0.2"
