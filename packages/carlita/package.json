@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.32.0",
   "name": "@freesewing/carlita",
   "description": "Freesewing pattern for Sherlock Holmes cosplay, or just a nice long coat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/bent": "0.1.2",
+    "@freesewing/bent": "^0.32.0",
     "@freesewing/carlton": "0.2.1",
     "@freesewing/plugin-bundle": "0.8.0",
     "@freesewing/plugin-bust": "0.1.2",

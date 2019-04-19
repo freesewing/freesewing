@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-debug",
-  "version": "0.6.0",
+  "version": "0.32.0",
   "description": "A freesewing plugin to log debug info to your browser console",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
@@ -74,6 +74,5 @@
     "README.md",
     "package-lock.json",
     "package.json"
-  ],
-  "dependencies": {}
+  ]
 }

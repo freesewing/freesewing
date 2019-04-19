@@ -1,6 +1,6 @@
 {
   "name": "create-freesewing-pattern",
-  "version": "0.2.1",
+  "version": "0.32.0",
   "description": "Initilizer package for freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",

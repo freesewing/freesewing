@@ -1,5 +1,5 @@
 {
-  "version": "0.4.6",
+  "version": "0.32.0",
   "name": "@freesewing/simon",
   "description": "Freesewing pattern for a button down shirt",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
@@ -57,7 +57,7 @@
   "devDependencies": {
     "@babel/core": "7.3.3",
     "@freesewing/antman": "latest",
-    "@freesewing/models": "0.7.3",
+    "@freesewing/models": "^0.32.0",
     "@freesewing/plugin-debug": "latest",
     "@freesewing/plugin-designer": "latest",
     "@freesewing/plugin-i18n": "latest",

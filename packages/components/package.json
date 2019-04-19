@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/components",
-  "version": "0.0.1",
+  "version": "0.32.0",
   "description": "A collection of React components for freesewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -37,7 +37,6 @@
       "git add"
     ]
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.3.3",
     "@babel/plugin-proposal-object-rest-spread": "7.4.3",

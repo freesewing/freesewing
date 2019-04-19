@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "0.9.0",
+  "version": "0.32.0",
   "description": "Eight essential freesewing build-time plugins in one neat bundle",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "license": "MIT",
@@ -83,13 +83,13 @@
     "package.json"
   ],
   "dependencies": {
-    "@freesewing/plugin-cutonfold": "^0.11",
-    "@freesewing/plugin-dimension": "^0.8",
-    "@freesewing/plugin-grainline": "^0.3",
-    "@freesewing/plugin-logo": "^0.6",
-    "@freesewing/plugin-round": "^0.4",
-    "@freesewing/plugin-scalebox": "^0.4",
-    "@freesewing/plugin-sprinkle": "^0.2",
-    "@freesewing/plugin-title": "^0.11"
+    "@freesewing/plugin-cutonfold": "^0.32.0",
+    "@freesewing/plugin-dimension": "^0.32.0",
+    "@freesewing/plugin-grainline": "^0.32.0",
+    "@freesewing/plugin-logo": "^0.32.0",
+    "@freesewing/plugin-round": "^0.32.0",
+    "@freesewing/plugin-scalebox": "^0.32.0",
+    "@freesewing/plugin-sprinkle": "^0.32.0",
+    "@freesewing/plugin-title": "^0.32.0"
   }
 }

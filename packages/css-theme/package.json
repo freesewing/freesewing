@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/css-theme",
-  "version": "0.0.1",
+  "version": "0.32.0",
   "description": "A CSS theme for freesewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,7 +33,6 @@
       "git add"
     ]
   },
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "4.11.0"
   },
