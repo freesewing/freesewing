@@ -55,37 +55,6 @@
     "bezier-js": "2.3.2",
     "bin-pack": "1.0.2"
   },
-  "devDependencies": {
-    "@babel/core": "7.3.3",
-    "@babel/plugin-external-helpers": "7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
-    "@babel/preset-env": "7.3.1",
-    "babel-eslint": "^8.2.6",
-    "babel-plugin-istanbul": "5.1.1",
-    "chai": "4.2.0",
-    "chai-string": "1.4.0",
-    "codecov": "3.0.4",
-    "eslint": "5.14.0",
-    "eslint-config-prettier": "^2.10.0",
-    "eslint-config-standard": "12.0.0",
-    "eslint-plugin-import": "2.15.0",
-    "eslint-plugin-node": "8.0.1",
-    "eslint-plugin-prettier": "2.7.0",
-    "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-standard": "4.0.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.3.0",
-    "mocha": "^5.2.0",
-    "nyc": "13.3.0",
-    "prettier": "1.16.4",
-    "rimraf": "2.6.3",
-    "rollup": "0.63.4",
-    "rollup-plugin-babel": "4.3.2",
-    "rollup-plugin-commonjs": "9.2.0",
-    "rollup-plugin-json": "^3.1.0",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-terser": "^1.0.1"
-  },
   "files": [
     "dist/*",
     "README.md",
@@ -99,5 +68,6 @@
         ]
       }
     }
-  }
+  },
+  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
 }

@@ -33,12 +33,10 @@
       "git add"
     ]
   },
-  "devDependencies": {
-    "node-sass": "4.11.0"
-  },
   "files": [
     "dist/*",
     "README.md",
     "package.json"
-  ]
+  ],
+  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
 }

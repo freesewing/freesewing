@@ -52,32 +52,11 @@
     "@freesewing/plugin-buttons": "0.1.0",
     "freesewing": "latest"
   },
-  "devDependencies": {
-    "@babel/core": "7.4.0",
-    "@freesewing/antman": "latest",
-    "@freesewing/models": "latest",
-    "@freesewing/plugin-debug": "latest",
-    "@freesewing/plugin-designer": "latest",
-    "@freesewing/plugin-i18n": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/plugin-validate": "latest",
-    "eslint": "5.15.3",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-prettier": "latest",
-    "husky": "latest",
-    "lint-staged": "latest",
-    "prettier": "latest",
-    "rimraf": "latest",
-    "rollup": "1.7.2",
-    "rollup-plugin-babel": "latest",
-    "rollup-plugin-babel-minify": "8.0.0",
-    "rollup-plugin-json": "4.0.0",
-    "rollup-plugin-node-resolve": "latest"
-  },
   "files": [
     "dist/*",
     "README.md",
     "package-lock.json",
     "package.json"
-  ]
+  ],
+  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
 }

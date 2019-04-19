@@ -44,26 +44,11 @@
       "git add"
     ]
   },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.2.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.13.7",
-    "rimraf": "^2.6.2",
-    "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-filesize": "^4.0.1",
-    "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-terser": "^1.0.1"
-  },
   "files": [
     "dist/*",
     "README.md",
     "package-lock.json",
     "package.json"
-  ]
+  ],
+  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
 }

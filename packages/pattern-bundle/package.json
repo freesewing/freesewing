@@ -54,7 +54,7 @@
     "@freesewing/examples": "latest",
     "@freesewing/huey": "latest",
     "@freesewing/hugo": "latest",
-    "@freesewing/jaeger": "^0.32.0",
+    "@freesewing/jaeger": "file:../jaeger",
     "@freesewing/plugin-bundle": "latest",
     "@freesewing/simon": "latest",
     "@freesewing/sven": "latest",
@@ -62,30 +62,11 @@
     "@freesewing/trayvon": "latest",
     "@freesewing/wahid": "latest"
   },
-  "devDependencies": {
-    "@babel/core": "latest",
-    "@freesewing/antman": "latest",
-    "@freesewing/models": "latest",
-    "@freesewing/plugin-debug": "latest",
-    "@freesewing/plugin-designer": "latest",
-    "@freesewing/plugin-i18n": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/plugin-validate": "latest",
-    "freesewing": "latest",
-    "husky": "latest",
-    "lint-staged": "latest",
-    "prettier": "latest",
-    "rimraf": "latest",
-    "rollup": "latest",
-    "rollup-plugin-babel": "latest",
-    "rollup-plugin-babel-minify": "latest",
-    "rollup-plugin-json": "latest",
-    "rollup-plugin-node-resolve": "latest"
-  },
   "files": [
     "dist/*",
     "README.md",
     "package-lock.json",
     "package.json"
-  ]
+  ],
+  "gitHead": "db3d4df92285ac8889fa72fba68c970ffcd59775"
 }

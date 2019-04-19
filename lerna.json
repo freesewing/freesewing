@@ -1,13 +1,13 @@
 {
   "version": "0.32.0",
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "ignoreChanges": [
         "ignored-file",
         "*.md"
       ],
-      "message": "chore(release): publish"
+      "message": ":bookmark: Publish %s"
     },
     "bootstrap": {
       "ignore": "component-*",
@@ -18,5 +18,6 @@
   },
   "packages": [
     "packages/*"
-  ]
+  ],
+  "useWorkspaces": true
 }
