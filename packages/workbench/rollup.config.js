@@ -3,6 +3,7 @@ import resolve from "rollup-plugin-node-resolve";
 import json from "rollup-plugin-json";
 import minify from "rollup-plugin-babel-minify";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import sass from "rollup-plugin-sass";
 import { name, version, description, author, license } from "./package.json";
 
 export default {
@@ -16,8 +17,12 @@ export default {
     json(),
     babel({
       exclude: "node_modules/**",
-      plugins: ["@babel/plugin-proposal-object-rest-spread"]
+      plugins: [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties"
+      ]
     }),
+    sass(),
     minify({
       comments: false,
       sourceMap: true,

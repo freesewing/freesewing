@@ -1,7 +1,7 @@
 import React from "react";
 import Emblem from "../Emblem";
 import { FormattedMessage } from "react-intl";
-import css from "../css/Settings.css";
+import css from "../scss/Settings.scss";
 import Config from "./Config";
 import ResolvedConfig from "./ResolvedConfig";
 import Options from "./Options";
@@ -27,9 +27,9 @@ const Settings = props => {
       </div>
     </section>
   );
-}
+};
 
-        //<Config pattern={pattern} />
-        //<ResolvedConfig pattern={pattern} />
+//<Config pattern={pattern} />
+//<ResolvedConfig pattern={pattern} />
 
 export default Settings;

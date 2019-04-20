@@ -1,15 +1,13 @@
 noNamespace:
   - create-freesewing-pattern
-noRollup:
+customRollup:
   - css-theme
   - create-freesewing-pattern
-  - mui-theme
   - plugin-theme
   - workbench
-extraPackageJson:
+  - components
+packageJson:
   create-freesewing-pattern:
-    "reveal": true,
+    "reveal": true
     "bin":
       "create-freesewing-pattern": "index.js"
-    "engines":
-      "npm": ">=5"

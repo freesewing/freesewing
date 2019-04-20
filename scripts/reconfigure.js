@@ -173,21 +173,26 @@ function peerDependencies(pkg, config, type) {
  */
 function packageConfig(pkg, config) {
   let type = packageType(pkg, config);
-  let pkgConf = JSON.parse(
-    Mustache.render(config.templates.pkg, {
-      name: pkg,
-      description: config.descriptions[pkg],
-      author: config.defaults.author,
-      keywords: keywords(pkg, config, type)
-    })
-  );
-  pkgConf.version = version;
+  let pkgConf = {};
+  // Let's keep these at the top
   pkgConf.name = fullName(pkg, config);
+  pkgConf.version = version;
+  (pkgConf.description = config.descriptions[pkg]),
+    (pkgConf = {
+      ...pkgConf,
+      ...JSON.parse(Mustache.render(config.templates.pkg, { name: pkg }))
+    });
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg, config, type));
   (pkgConf.scripts = scripts(pkg, config, type)),
     (pkgConf.dependencies = dependencies(pkg, config, type));
   pkgConf.devDependencies = devDependencies(pkg, config, type);
   pkgConf.peerDependencies = peerDependencies(pkg, config, type);
+  if (typeof config.exceptions.packageJson[pkg] !== "undefined") {
+    pkgConf = {
+      ...pkgConf,
+      ...config.exceptions.packageJson[pkg]
+    };
+  }
 
   return pkgConf;
 }
@@ -271,7 +276,7 @@ function reconfigure(pkgs, config) {
       path.join(config.repoPath, "packages", pkg, "package.json"),
       JSON.stringify(packageConfig(pkg, config), null, 2) + "\n"
     );
-    if (config.exceptions.noRollup.indexOf(pkg) === -1) {
+    if (config.exceptions.customRollup.indexOf(pkg) === -1) {
       fse.writeFileSync(
         path.join(config.repoPath, "packages", pkg, "rollup.config.js"),
         config.templates.rollup

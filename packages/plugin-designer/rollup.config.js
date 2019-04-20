@@ -12,7 +12,7 @@ export default {
   },
   plugins: [
     peerDepsExternal(),
-    resolve({ browser: true }),
+    resolve({ modulesOnly: true }),
     json(),
     babel({
       exclude: "node_modules/**",

@@ -1,4 +1,7 @@
 {
+  "name": "@freesewing/examples",
+  "version": "0.33.0",
+  "description": "A FreeSewing pattern holding examples for our documentation",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -16,8 +19,8 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf ../../dist/examples",
-    "nodebuild": "rollup -c -o ../../dist/examples/index.js -f cjs",
-    "modulebuild": "rollup -c -o ../../dist/examples/index.mjs -f es",
+    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/examples/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/examples/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"examples: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
@@ -37,8 +40,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=8.0.0"
-  },
-  "version": "0.33.0",
-  "name": "@freesewing/examples"
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
 }

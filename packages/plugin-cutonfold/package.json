@@ -1,4 +1,7 @@
 {
+  "name": "@freesewing/plugin-cutonfold",
+  "version": "0.33.0",
+  "description": "A FreeSewing plugin to add cut-on-fold indicators on your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -21,8 +24,8 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf ../../dist/plugin-cutonfold",
-    "nodebuild": "rollup -c -o ../../dist/plugin-cutonfold/index.js -f cjs",
-    "modulebuild": "rollup -c -o ../../dist/plugin-cutonfold/index.mjs -f es",
+    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/plugin-cutonfold/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/plugin-cutonfold/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"plugin-cutonfold: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
@@ -41,8 +44,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=8.0.0"
-  },
-  "version": "0.33.0",
-  "name": "@freesewing/plugin-cutonfold"
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
 }
