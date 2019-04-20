@@ -111,6 +111,11 @@ function keywords(pkg, config, type) {
  */
 function scripts(pkg, config, type) {
   let runScripts = {};
+  for (let key of Object.keys(config.scripts._)) {
+    runScripts[key] = Mustache.render(config.scripts._[key], {
+      name: pkg
+    });
+  }
   if (typeof config.scripts._types[type] !== "undefined") {
     for (let key of Object.keys(config.scripts._types[type])) {
       runScripts[key] = Mustache.render(config.scripts._types[type][key], {

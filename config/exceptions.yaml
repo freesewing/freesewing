@@ -6,3 +6,10 @@ noRollup:
   - mui-theme
   - plugin-theme
   - workbench
+extraPackageJson:
+  create-freesewing-pattern:
+    "reveal": true,
+    "bin":
+      "create-freesewing-pattern": "index.js"
+    "engines":
+      "npm": ">=5"

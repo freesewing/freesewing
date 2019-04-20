@@ -7,6 +7,9 @@ node_modules
 # build
 dist
 
+# Mock registry (verdaccio)
+.registry
+
 # misc
 .DS_Store
 .env

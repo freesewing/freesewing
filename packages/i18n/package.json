@@ -16,7 +16,14 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf ../../dist/i18n",
+    "nodebuild": "rollup -c -o ../../dist/i18n/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/i18n/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"i18n: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
+  },
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},

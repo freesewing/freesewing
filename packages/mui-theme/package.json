@@ -14,10 +14,19 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "scripts": {},
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "scripts": {
+    "clean": "rimraf ../../dist/mui-theme",
+    "nodebuild": "rollup -c -o ../../dist/mui-theme/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/mui-theme/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"mui-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^3.9.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
   "files": [
     "../../dist/packages/mui-theme/*",
     "README.md",

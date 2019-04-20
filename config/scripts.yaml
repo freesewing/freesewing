@@ -1,16 +1,23 @@
+_:
+  clean: "rimraf ../../dist/{{name}}"
+  nodebuild: "rollup -c -o ../../dist/{{name}}/index.js -f cjs"
+  modulebuild: "rollup -c -o ../../dist/{{name}}/index.mjs -f es"
+  build: "npm run clean && npm run nodebuild && npm run modulebuild"
+  test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+  pubtest: "npm publish --registry http://localhost:6662"
 _types:
-  pattern:
-    clean: "rimraf ../../dist/{{name}}"
-    nodebuild: "rollup -c -o ../../dist/{{name}}/index.js -f cjs"
-    modulebuild: "rollup -c -o ../../dist/{{name}}/index.mjs -f es"
-    build: "npm run clean && npm run nodebuild && npm run modulebuild"
-    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-  plugin:
-    clean: "rimraf ../../dist/{{name}}"
-    nodebuild: "rollup -c -o ../../dist/{{name}}/index.js -f cjs"
-    modulebuild: "rollup -c -o ../../dist/{{name}}/index.mjs -f es"
-    build: "npm run clean && npm run nodebuild && npm run modulebuild"
-    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+  patterns:
+  plugins:
 components:
-    test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-    build: "echo \"{{name}}: No build command available.\" && exit 0"
+  test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+  build: "echo \"{{name}}: No build command available.\" && exit 0"
+core:
+  test: "nyc mocha tests/*.test.js"
+  report: "nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js"
+  coverage: "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+create-freesewing-pattern:
+  test: "ava -v && standard *.js lib/*.js"
+workbench:
+  test: "cross-env CI=1 react-scripts test --env=jsdom"
+  test:watch: "react-scripts test --env=jsdom"
+

@@ -97,7 +97,8 @@
     "rollup-plugin-url": "2.2.1",
     "rollup-plugin-yaml": "1.1.0",
     "standard": "^12.0.1",
-    "uglifycss": "0.0.29"
+    "uglifycss": "0.0.29",
+    "verdaccio": "3.11.6"
   },
   "dependencies": {
     "@freesewing/aaron": "file:packages/aaron",
@@ -118,7 +119,7 @@
     "@freesewing/jaeger": "file:packages/jaeger",
     "@freesewing/models": "file:packages/models",
     "@freesewing/mui-theme": "file:packages/mui-theme",
-    "@freesewing/patterns": "file:packages/pattern-bundle",
+    "@freesewing/patterns": "file:packages/patterns",
     "@freesewing/plugin-banner": "file:packages/plugin-banner",
     "@freesewing/plugin-bundle": "file:packages/plugin-bundle",
     "@freesewing/plugin-bust": "file:packages/plugin-bust",

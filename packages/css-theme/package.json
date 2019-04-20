@@ -15,7 +15,14 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf ../../dist/css-theme",
+    "nodebuild": "rollup -c -o ../../dist/css-theme/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/css-theme/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
+  },
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},

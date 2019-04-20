@@ -13,10 +13,21 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "scripts": {},
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "scripts": {
+    "clean": "rimraf ../../dist/workbench",
+    "nodebuild": "rollup -c -o ../../dist/workbench/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/workbench/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "test:watch": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/i18n": "^0.33.0",
+    "@freesewing/plugin-theme": "^0.33.0",
+    "react-intl": "^2.8.0"
+  },
   "files": [
     "../../dist/packages/workbench/*",
     "README.md",

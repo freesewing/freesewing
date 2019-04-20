@@ -24,7 +24,8 @@
     "nodebuild": "rollup -c -o ../../dist/brian/index.js -f cjs",
     "modulebuild": "rollup -c -o ../../dist/brian/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
-    "test": "echo \"brian: No tests configured. Perhaps you'd like to do this?\" && exit 0"
+    "test": "echo \"brian: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
   },
   "peerDependencies": {
     "@freesewing/core": "^0.33.0",

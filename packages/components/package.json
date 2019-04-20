@@ -13,8 +13,12 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "clean": "rimraf ../../dist/components",
+    "nodebuild": "rollup -c -o ../../dist/components/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/components/index.mjs -f es",
+    "build": "echo \"components: No build command available.\" && exit 0",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "build": "echo \"components: No build command available.\" && exit 0"
+    "pubtest": "npm publish --registry http://localhost:6662"
   },
   "peerDependencies": {},
   "dependencies": {},
