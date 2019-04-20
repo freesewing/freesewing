@@ -17,7 +17,7 @@ css-theme:
   build: "npx node-sass --output-style compressed src/theme.scss ../../dist/css-theme/theme.css"
 components:
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-  build: "echo \"{{name}}: No build command available.\" && exit 0"
+  build: "./scripts/build.sh"
 core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
   report: "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js"

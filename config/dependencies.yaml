@@ -74,7 +74,7 @@ patterns:
     "@freesewing/trayvon": "^{{version}}"
     "@freesewing/wahid": "^{{version}}"
 workbench:
-  _:
+  peer:
     "@freesewing/core": "^{{version}}"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/plugin-theme": "^{{version}}"

@@ -6,6 +6,7 @@ node_modules
 
 # build
 dist
+build
 
 # Mock registry (verdaccio)
 .registry
