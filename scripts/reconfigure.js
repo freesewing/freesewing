@@ -205,7 +205,11 @@ function badges(pkg, config) {
   for (let group of ["_all", "_social"]) {
     markup += "<p align='center'>";
     for (let key of Object.keys(config.badges[group])) {
-      markup += formatBadge(config.badges[group][key], fullName(pkg, config));
+      markup += formatBadge(
+        config.badges[group][key],
+        pkg,
+        fullName(pkg, config)
+      );
     }
     markup += "</p>";
   }
@@ -216,12 +220,12 @@ function badges(pkg, config) {
 /**
  * Formats a badge for a readme file
  */
-function formatBadge(badge, fullname) {
+function formatBadge(badge, name, fullname) {
   return `<a
-  href="${Mustache.render(badge.link, { fullname })}"
-  title="${Mustache.render(badge.alt, { fullname })}"
-  ><img src="${Mustache.render(badge.img, { fullname })}"
-  alt="${Mustache.render(badge.alt, { fullname })}"/>
+  href="${Mustache.render(badge.link, { name, fullname })}"
+  title="${Mustache.render(badge.alt, { name, fullname })}"
+  ><img src="${Mustache.render(badge.img, { name, fullname })}"
+  alt="${Mustache.render(badge.alt, { name, fullname })}"/>
   </a>`;
 }
 /**

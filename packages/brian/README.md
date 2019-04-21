@@ -8,33 +8,38 @@
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/brian"
   title="@freesewing/brian on NPM"
-  ><img src="https://badgen.net/npm/v/@freesewing/brian"
+  ><img src="https://img.shields.io/npm/v/freesewing.svg"
   alt="@freesewing/brian on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://badgen.net/badge/License/MIT/blue"
+  ><img src="https://img.shields.io/npm/l/freesewing.svg?label=License"
   alt="License: MIT"/>
-  </a></p><p align='center'><a
-  href="https://gitter.im/freesewing/freesewing"
-  title="Chat with us on Gitter"
-  ><img src="https://badgen.net/badge//Chat/CA0547?icon=gitter"
-  alt="Chat with us on Gitter"/>
   </a><a
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Abrian"
+  title="Open issues tagged pkg:brian"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:brian.svg?label=Issues"
+  alt="Open issues tagged pkg:brian"/>
+  </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
   title="Follow @freesewing_org on Twitter"
-  ><img src="https://badgen.net/badge//@freesewing_org/1DA1F2?icon=twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
   alt="Follow @freesewing_org on Twitter"/>
   </a><a
-  href="https://github.com/freesewing"
-  title="FreeSewing on GitHub"
-  ><img src="https://badgen.net/badge//freesewing/269F42?icon=github"
-  alt="FreeSewing on GitHub"/>
+  href="https://gitter.im/freesewing/freesewing"
+  title="Chat with us on Gitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Chat%20with%20us-CA0547.svg?logo=gitter&logoColor=white&logoWidth=15"
+  alt="Chat with us on Gitter"/>
   </a><a
   href="https://freesewing.org/patrons/join"
   title="Become a FreeSewing Patron"
-  ><img src="https://badgen.net/badge/Become%20a/Patron/purple"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Support%20us-blueviolet.svg?logo=cash-app&logoColor=white&logoWidth=15"
   alt="Become a FreeSewing Patron"/>
+  </a><a
+  href="https://instagram.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-E4405F.svg?logo=instagram&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
 # @freesewing/brian
