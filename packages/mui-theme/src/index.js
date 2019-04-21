@@ -1,26 +1,9 @@
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
-
 const asTitle = {
   fontFamily: "Roboto Condensed",
   fontWeight: "bold"
 };
 
 const theme = {
-  typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      "Segoe UI",
-      "Roboto",
-      "Helvetica",
-      "Arial",
-      "sans-serif",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol"
-    ].join(","),
-    useNextVariants: true
-  },
   props: {
     MuiButtonBase: {
       //disableRipple: true // Disabling ripple everywhere
@@ -33,30 +16,21 @@ const theme = {
   }
 };
 
-const dark = "#212529";
-const light = "#f8f9fa";
+const darkBg = "#212529";
+const lightBg = "#f8f9fa";
 
 const palettes = {
   dark: {
-    primary: { main: light },
-    secondary: { main: dark },
+    primary: { main: lightBg },
+    secondary: { main: darkBg },
     type: "dark"
   },
   light: {
-    primary: { main: dark },
-    secondary: { main: light },
+    primary: { main: darkBg },
+    secondary: { main: lightBg },
     type: "light"
   }
 };
 
-/** Allows us to switch the theme's dark mode
- * returns a theme object configured for dark mode
- * or not, depending whether you pass it 'dark' or anything else
- */
-const createTheme = name =>
-  createMuiTheme({
-    ...theme,
-    palette: name === "dark" ? palettes.dark : palettes.light
-  });
-
-export default createTheme;
+export const dark = { ...theme, palette: palettes.dark, themeName: "Dark" };
+export const light = { ...theme, palette: palettes.dark, themeName: "Light" };

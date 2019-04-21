@@ -18,6 +18,7 @@ css-theme:
 components:
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   build: "./scripts/build.sh"
+  storybook: "start-storybook -p 6663"
 core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
   report: "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js"
