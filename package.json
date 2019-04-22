@@ -53,6 +53,7 @@
     "@babel/register": "^7.0.0",
     "@material-ui/core": "3.9.3",
     "@material-ui/icons": "3.0.2",
+    "@material-ui/lab": "3.0.0-alpha.30",
     "@storybook/addon-backgrounds": "5.0.10",
     "@storybook/addon-knobs": "5.0.10",
     "@storybook/addon-notes": "5.0.10",
