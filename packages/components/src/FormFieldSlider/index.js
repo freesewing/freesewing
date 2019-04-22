@@ -13,7 +13,7 @@ const FormFieldSlider = props => {
   const [value, setValue] = useState(props.value);
 
   const update = (evt, newValue) => {
-    props.updateOption(props.name, newValue, evt);
+    props.updateValue(props.name, newValue, evt);
     setValue(newValue);
   };
 
@@ -41,7 +41,7 @@ FormFieldSlider.propTypes = {
   min: PropTypes.number,
   max: PropTypes.number,
   step: PropTypes.number,
-  updateOption: PropTypes.func.isRequired,
+  updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
 };

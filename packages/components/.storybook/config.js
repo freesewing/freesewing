@@ -1,5 +1,6 @@
 import { configure } from "@storybook/react";
 import { addParameters } from "@storybook/react";
+import "../../../dist/css-theme/theme.css";
 
 function loadStories() {
   // Load all 'stories.js' files under src

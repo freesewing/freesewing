@@ -7,9 +7,12 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 const Bool = props => {
   const [value, setValue] = useState(props.dflt);
   const toggle = () => {
-    props.updateOption(props.name, !value);
+    props.updateValue(props.name, !value);
     setValue(!value);
   };
+  // Force state update when rerendering due to props change
+  if (props.value !== value) setValue(props.value);
+
   return (
     <RadioGroup onChange={toggle} value={JSON.stringify(value)}>
       <FormControlLabel
@@ -17,12 +20,14 @@ const Bool = props => {
         value="false"
         checked={value === "false" ? true : false}
         label={props.labels[0]}
+        className="po-list-item"
       />
       <FormControlLabel
         control={<Radio color="primary" />}
         value="true"
         checked={value === "true" ? true : false}
         label={props.labels[1]}
+        className="po-list-item"
       />
     </RadioGroup>
   );
@@ -31,7 +36,7 @@ const Bool = props => {
 Bool.propTypes = {
   dflt: PropTypes.bool,
   labels: PropTypes.arrayOf(PropTypes.string),
-  updateOption: PropTypes.func.isRequired,
+  updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired
 };
 

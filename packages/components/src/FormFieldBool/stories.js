@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import FormFieldBool from ".";
 
 const props = {
-  updateOption: (name, value) =>
+  updateValue: (name, value) =>
     console.log(`Updated option ${name}, value is now: ${value}`),
   name: "exampleBoolOption"
 };

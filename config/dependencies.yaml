@@ -22,6 +22,9 @@ carlton:
   peer:
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
+css-theme:
+  _:
+    "open-color": "1.6.3"
 components:
   peer:
     "react": "^16.4.1"

@@ -26,9 +26,9 @@
     "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "open-color": "1.6.3"
+  },
   "files": [
     "../../dist/packages/css-theme/*",
     "README.md",

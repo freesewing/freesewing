@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import Logo from ".";
 
 storiesOf("Logo", module)
