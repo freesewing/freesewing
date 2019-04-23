@@ -29,6 +29,9 @@ components:
   peer:
     "react": "^16.4.1"
     "prop-types": "15.7.2"
+    "@freesewing/patterns": "^{{version}}"
+    "@freesewing/i18n": "^{{version}}"
+    "react-intl": "^2.8.0"
 core:
   _:
     "bezier-js": "^2.2.13"

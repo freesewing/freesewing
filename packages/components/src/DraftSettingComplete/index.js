@@ -1,4 +1,4 @@
 import React from "react";
-import DraftSettingBool from "../DraftSettingBool";
+import PatternOptionBool from "../PatternOptionBool";
 
-export default props => <DraftSettingBool {...props} name="complete" />;
+export default props => <PatternOptionBool {...props} name="complete" />;

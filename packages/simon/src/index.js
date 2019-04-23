@@ -55,3 +55,4 @@ Simon.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap;
 Simon.prototype.draftCuff = draftCuff;
 
 export default Simon;
+export { config };

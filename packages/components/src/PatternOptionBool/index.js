@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import FormFieldBool from "../FormFieldBool";
 import OptionPreamble from "../OptionPreamble";
 
-const DraftSettingBool = props => {
+const PatternOptionBool = props => {
   const [value, setValue] = useState(props.dflt);
 
   const update = (name, newValue, evt) => {
@@ -17,7 +17,7 @@ const DraftSettingBool = props => {
   };
 
   return (
-    <div className={"pattern-option list"}>
+    <div className={"pattern-option bool"}>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -46,23 +46,17 @@ const DraftSettingBool = props => {
   );
 };
 
-DraftSettingBool.propTypes = {
+PatternOptionBool.propTypes = {
+  triggerAction: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   dflt: PropTypes.oneOfType([
     PropTypes.number.isRequired,
     PropTypes.string.isRequired
   ]),
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  resetLabel: PropTypes.string,
-  docsLabel: PropTypes.string,
-  list: PropTypes.object.isRequired
+  title: PropTypes.node.isRequired,
+  desc: PropTypes.node.isRequired,
+  labels: PropTypes.array.isRequired
 };
 
-DraftSettingBool.defaultProps = {
-  title: false,
-  desc: false
-};
-
-export default DraftSettingBool;
+export default PatternOptionBool;

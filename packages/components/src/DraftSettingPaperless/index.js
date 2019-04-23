@@ -1,4 +1,4 @@
 import React from "react";
-import DraftSettingBool from "../DraftSettingBool";
+import PatternOptionBool from "../PatternOptionBool";
 
-export default props => <DraftSettingBool {...props} name="paperless" />;
+export default props => <PatternOptionBool {...props} name="paperless" />;

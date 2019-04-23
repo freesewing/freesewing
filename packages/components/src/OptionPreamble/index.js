@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import IconButton from "@material-ui/core/IconButton";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
 import HelpIcon from "@material-ui/icons/Help";
+import { injectIntl } from "react-intl";
 
 const OptionPreamble = props => {
   const styles = {
@@ -17,6 +18,15 @@ const OptionPreamble = props => {
     },
     right: { margin: "0 0.5rem" }
   };
+
+  const resetLabel = props.intl.formatMessage({
+    id: "app.restoreDefaults",
+    defaultMessage: " ♻️  "
+  });
+  const docsLabel = props.intl.formatMessage({
+    id: "app.docs",
+    defaultMessage: " 🤔 "
+  });
 
   return (
     <React.Fragment>
@@ -36,8 +46,8 @@ const OptionPreamble = props => {
         </div>
         <div style={styles.right}>
           <IconButton
-            title={props.resetLabel}
-            aria-label={props.resetLabel}
+            title={resetLabel}
+            aria-label={resetLabel}
             color="primary"
             disabled={props.value === props.dflt ? true : false}
             onClick={props.reset}
@@ -45,8 +55,8 @@ const OptionPreamble = props => {
             <ResetIcon />
           </IconButton>
           <IconButton
-            title={props.docsLabel}
-            aria-label={props.docsLabel}
+            title={docsLabel}
+            aria-label={docsLabel}
             color="primary"
             onClick={props.showHelp}
           >
@@ -67,17 +77,10 @@ OptionPreamble.propTypes = {
     PropTypes.number.isRequired,
     PropTypes.string.isRequired
   ]),
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  resetLabel: PropTypes.string,
-  docsLabel: PropTypes.string,
+  title: PropTypes.node.isRequired,
+  desc: PropTypes.node.isRequired,
   reset: PropTypes.func.isRequired,
   showHelp: PropTypes.func.isRequired
 };
 
-OptionPreamble.defaultProps = {
-  resetLabel: "♻️",
-  docsLabel: "🤔"
-};
-
-export default OptionPreamble;
+export default injectIntl(OptionPreamble);

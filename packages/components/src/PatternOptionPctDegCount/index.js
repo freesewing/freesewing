@@ -82,10 +82,8 @@ PatternOptionPctDegCount.propTypes = {
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   dflt: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  resetLabel: PropTypes.string,
-  docsLabel: PropTypes.string,
+  title: PropTypes.node.isRequired,
+  desc: PropTypes.node.isRequired,
   type: PropTypes.oneOf(["pct", "deg", "count"])
 };
 
@@ -93,8 +91,6 @@ PatternOptionPctDegCount.defaultProps = {
   min: 0,
   max: 100,
   step: 0.1,
-  title: false,
-  desc: false,
   type: "pct"
 };
 
