@@ -1,0 +1,46 @@
+{
+  "name": "@freesewing/examples",
+  "version": "0.33.0",
+  "description": "A FreeSewing pattern holding examples for our documentation",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "documentation",
+    "example",
+    "parametric design"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf ../../dist/examples",
+    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/examples/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/examples/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"examples: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
+  },
+  "peerDependencies": {
+    "@freesewing/core": "^0.33.0",
+    "@freesewing/plugin-bundle": "^0.33.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "../../dist/packages/examples/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
+}

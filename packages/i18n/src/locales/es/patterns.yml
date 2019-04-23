@@ -1,0 +1,57 @@
+aaron:
+  description: Aaron es una camiseta deportiva sin mangas.
+  title: Camiseta Aaron
+benjamin:
+  description: Benjamin es un patrón de pajarita con cuatro estilos diferentes.
+  title: Pajarita Benjamin
+bent:
+  description: Este patrón con manga sastre es la base del molde de nuestro abrigo y de nuestra chaqueta.
+  title: Patrón Base Bent
+brian:
+  description: Brian es el patrón base de cuerpo para hombre.
+  title: Patrón Base Brian
+bruce:
+  description: Bruce es un bóxer cerrado cómodo y elegante.
+  title: ' Bóxer Cerrado Bruce'
+carlita:
+  description: 'La versión para mujer de nuestro abrigo Carlton, también conocido como el abrigo Sherlock Holmes.'
+  title: Abrigo Carlita
+carlton:
+  description: Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.
+  title: Abrigo Carlton
+cathrin:
+  description: Cathrin es un corsé bajo pecho o reductor de la cintura.
+  title: Corsé Cathrin
+florent:
+  description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
+  title: Boina Plana Florent
+huey:
+  description: 'Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.'
+  title: Sudadera con Capucha Huey
+hugo:
+  description: Hugo es una sudadera con capucha y manga ranglán.
+  title: Sudadera con Capucha Hugo
+jaeger:
+  description: Jeager es una blazer informal con dos botones y bolsillos estilo parche.
+  title: Chaqueta Jaeger
+simon:
+  description: Simon es un patrón de camisa de hombre con múltiples opciones.
+  title: Camisa Simon
+sven:
+  description: Sven es una sudadera de líneas sencillas.
+  title: Sudadera Sven
+tamiko:
+  description: Tamiko es un top cero residuos.
+  title: Top Tamiko
+theo:
+  description: Theo es una versión de Theodore con un corte más ajustado.
+  title: Pantalones Theo
+theodore:
+  description: Thedore es el pantalón de corte clásico basado en el libro de (Aldrich).
+  title: Pantalones Theodore
+trayvon:
+  description: Trayvon es una corbata que no toma atajos para un resultado profesional.
+  title: Corbata Trayvon
+wahid:
+  description: Wahid es el clásico chaleco entallado.
+  title: Chaleco Wahid

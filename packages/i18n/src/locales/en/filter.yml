@@ -1,0 +1,22 @@
+department:
+  title: Department
+  menswear: Menswear
+  womenswear: Womenswear
+  accessories: Accessories
+
+type:
+  title: Type
+  block: Block/Sloper
+  pattern: Pattern
+
+tags:
+  title: Tags
+  basics: Basics
+  bottom: Bottom
+  top: Top
+  underwear: Underwear
+
+code: Code
+design: Design
+difficulty: Difficulty
+resetFilter: Reset filter

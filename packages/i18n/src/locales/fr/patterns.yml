@@ -1,0 +1,57 @@
+aaron:
+  description: Aaron est un débardeur ou marcel
+  title: Débardeur Aaron
+benjamin:
+  description: Benjamin est un noeud papillon avec 4 possibilités de styles différents
+  title: Noeud papillon Benjamin
+bent:
+  description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
+  title: Bloc d'emmanchure
+brian:
+  description: Brian est un patron de base de corps pour les hommes.
+  title: Patron de base de corps Brian
+bruce:
+  description: Bruce sont des boxers confortables et élégants.
+  title: Boxer Bruce
+carlita:
+  description: 'La version femme de notre manteau Carlton, aka manteau Sherlock Holmes.'
+  title: Manteau Carlita
+carlton:
+  description: 'Pour le cosplay de Sherlock Holmes, ou juste un très beau manteau.'
+  title: Manteau Carlton
+cathrin:
+  description: Cathrin est un corset underbust ou un modeleur de la taille.
+  title: Corset Cathrin
+florent:
+  description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
+  title: Casquette plate Florent
+huey:
+  description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
+  title: Sweat à capuche Huey
+hugo:
+  description: Hugo est un pull à capuche avec des manches raglan.
+  title: Pull à capuche Hugo
+jaeger:
+  description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
+  title: Veste Jaeger
+simon:
+  description: Simon est un modèle de chemise pour homme hautement adaptable.
+  title: Chemise Simon
+sven:
+  description: Sven est un pull simple.
+  title: Pull Sven
+tamiko:
+  description: Tamiko est un top zéro déchet.
+  title: Top Tamiko
+theo:
+  description: Théo est un pantalon Théodore avec une coupe plus moulante.
+  title: Pantalons Theo
+theodore:
+  description: Theodore sont des pantalons classiques du livre (Aldrich).
+  title: Pantalons Theodore
+trayvon:
+  description: Trayvon est une cravate qui ne coupe aucun coin pour un résultat professionnel.
+  title: Cravate Trayvon
+wahid:
+  description: Wahid est un gilet classique ajusté.
+  title: Gilet Wahid

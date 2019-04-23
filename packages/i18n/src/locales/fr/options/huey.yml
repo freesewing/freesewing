@@ -1,0 +1,67 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+backNeckCutout: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+frontArmholeDeeper: brian
+lengthBonus: brian
+shoulderEase: brian
+shoulderSlopeReduction: brian
+sleeveLengthBonus: brian
+sleevecapEase: brian
+sleevecapTopFactorX: brian
+sleevecapTopFactorY: brian
+sleevecapBackFactorX: brian
+sleevecapBackFactorY: brian
+sleevecapFrontFactorX: brian
+sleevecapFrontFactorY: brian
+sleevecapQ1Offset: brian
+sleevecapQ2Offset: brian
+sleevecapQ3Offset: brian
+sleevecapQ4Offset: brian
+sleevecapQ1Spread1: brian
+sleevecapQ1Spread2: brian
+sleevecapQ2Spread1: brian
+sleevecapQ2Spread2: brian
+sleevecapQ3Spread1: brian
+sleevecapQ3Spread2: brian
+sleevecapQ4Spread1: brian
+sleevecapQ4Spread2: brian
+sleeveWidthGuarantee: brian
+
+ribbing: sven
+ribbingHeight: sven
+ribbingStretch: sven
+waistEase: simon
+hipsEase: aaron
+pocketWidth: wahid
+
+pocket:
+  title: Poche
+  description: S'il faut inclure une poche ou non
+
+pocketHeight:
+  title: Hauteur de la poche
+  description: Contrôle la hauteur de la poche
+
+hoodHeight:
+  title: Hauteur du capuchon
+  description: Contrôle la hauteur du capuchon
+
+hoodCutback:
+  title: Capuchon coupe
+  description: Contrôle jusqu'où l'ouverture du capuchon est coupée
+
+hoodClosure:
+  title: Capuchon fermeture
+  description: Contrôle la quantité de capuchon faisant partie de la fermeture avant
+
+hoodDepth:
+  title: Profondeur du capuchon
+  description: Contrôle la profondeur de la hotte
+
+hoodAngle:
+  title: Angle du capuchon
+  description: Contrôle l'angle auquel la hotte est fixée

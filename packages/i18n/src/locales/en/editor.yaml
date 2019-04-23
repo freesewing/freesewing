@@ -1,0 +1,32 @@
+allMarkdownContent: All Markdown content
+attributeTheseChangesTo: Attribute these changes to
+blurb: Blurb
+body: Body
+caption: Caption
+category: Category
+changesAreSubmitted: "{commit} are submitted for review as part of {pr}"
+commitAnonMsg: Publish these changes with an anonymized email address
+commitAttributionMsg: Publish these changes with your email address
+commit: Commit
+commitMessage: Commit message
+continueBrowsing: Continue browsing
+createLanguageVersion: Create the English version
+createOnline: Create online
+editEnglishVersion: Edit the English version
+editOnline: Edit online
+editor: Editor
+githubCommitMatchingMsg: GitHub matches commits to users based on the committer's email address
+linkTitle: Link title
+missingSomething: Missing something?
+open: Open
+provideAnOptionalCommitMessage: Provide an (optional) commit message
+pullRequest: Pull request
+thankYouForYourContribution: Thank you for your contribution
+thisIsASharedOption: This is a shared option
+thisOptionIsSharedByMoreThanOnePattern: This optionn is shared by more than one pattern
+title: Title
+topics: Topics
+translateOrEditQuestion: Do you want to create this page by translating the English version.<br>Or would you like to edit the original English version instead?
+translateOrEdit: Translate, or edit?
+weHaveCopiedTheLanguageVersion: We've copied the English version as a starting point.
+yourChanges: Your changes

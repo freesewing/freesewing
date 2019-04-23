@@ -1,0 +1,217 @@
+100PercentCommunity: 100% gemeenschap
+100PercentFree: 100% gratis
+100PercentOpenSource: 100% open source
+aboutFreesewing: Over Freesewing
+aboutGist1: Een resumé bevat alle informatie die nodig is om een patroon te tekenen.
+aboutGist2: Je kan een bestaande resumé kopiëren en plakken om als basis te dienen voor je eigen patroontekening.
+account: Account
+accountCreated: Account aangemaakt
+actions: Acties
+allDocumentation: Alle documentatie
+andThatIsAwesome: En dat is geweldig
+applyThisLayout: Pas deze layout toe
+areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
+automatic: Automatisch
+back: Terug
+becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
+becomeAPatron: Word mecenas
+blog: Blog
+browseBlogposts: Bekijk de blogposts
+browsePatterns: Bekijk de patronen
+browseShowcases: Bekijk de voorbeelden
+butThatCouldChange: Maar dat kan veranderen
+cancel: Annuleren
+changeModel: Ander model
+changePattern: Ander patroon
+chatOnGitter: Chat via Gitter
+checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
+chest: Borst
+chestInfo: Borsten vereisen extra metingen. Als uw model geen borsten heeft, worden irrelevante metingen verborgen bij het configureren van het model. Dit heeft geen invloed op hoe patronen worden opgesteld.
+chooseAModel: Kies een model
+chooseAPattern: Kies een patroon
+chooseYourOptions: Kies je opties
+clearGist: Resumé wissen
+close: Sluiten
+colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
+community: Gemeenschap
+configureLayout: Configureer layout
+configureYourDraft: Configureer je patroontekening
+contactUs: Neem contact op
+contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
+contents: Inhoud
+continue: Doorgaan
+copiedToClipboard: Gekopieerd naar het klembord
+copy: Kopiëren
+couldYouTranslateThis: Kan jij dit vertalen?
+countModelsLackingForPattern: Je hebt {count} modellen die niet alle vereiste maten hebben om {pattern} te tekenen
+created: Aangemaakt
+createModel: Model aanmaken
+custom: Aangepast
+customSeamAllowance: Aangepaste naadtoeslag
+darkMode: Donkere modus
+default: Standaard
+demo: Demo
+docs: Documentatie
+docsFooterMsg: Documentatie is nooit af. Hopelijk hebben we al je vragen kunnen beantwoorden, maar als dat niet het geval is, is er hulp beschikbaar.
+docsNotFoundMsg: We konden deze documentatie niet vinden, wat meestal betekent dat deze nog niet is geschreven.
+docsNotFoundTitle: Deze documentatie ontbreekt
+documentationForDevelopers: Documentatie voor ontwikkelaars
+documentationForEditors: Documentatie voor redacteuren
+documentationForTranslators: Documentatie voor vertalers
+documentationOverview: Overzicht documentatie
+download: Download
+draft: Patroontekening
+draftPatternForModel: 'Teken {pattern} voor {model}'
+draftPattern: 'Teken {pattern}'
+draftSettings: Instellingen patroontekening
+drafts: Patroontekeningen
+dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
+emailAddress: Email adres
+emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
+enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
+exportDraft: Patroontekening exporteren
+export: Exporteren
+exportGist: Resumé exporteren
+exportTiledPDF: Gepagineerde PDF exporteren
+faq: Vaak gestelde vragen
+fieldRemoved: "{field} verwijderd"
+fieldSaved: "{field} opgeslagen"
+filterByPattern: Filter op patroon
+filterPatterns: Patronen filteren
+forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
+freesewing: Freesewing
+freesewingOnGithub: Freesewing op GitHub
+gist: Resumé
+github: GitHub
+goAheadWeWillWait: Doe maar, we wachten wel.
+goodJob: Goed gedaan
+goodToSeeYouAgain: Leuk je weer te zien {user}
+handle: Referntie
+helpUsTranslate: Help ons met vertalen
+home: Startpagina
+howCanWeHelpYou: Hoe kunnen we je helpen?
+howToTakeMeasurements: Leer hoe je maten neemt
+i18n: Internationalisering
+imperialUnits: Imperiale (Engelse) eenheden (duim)
+info: Info
+instagram: Instagram
+invalidTldMessage: '.{tld} is geen geldige TLD'
+joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die graag helpen. Dus wees niet verlegen en kom langs voor een praatje.
+justAMoment: Een ogenblikje
+layout: Layout
+letUsSetupYourAccount: Laten we je account instellen
+logIn: Aanmelden
+loginWithProvider: 'Aanmelden met<br>{provider}'
+logOut: Afmelden
+manual: Manueel
+markdownHelp: MarkDown hulp
+measurements: Maten
+menu: Menu
+metadata: Metadata
+metricUnits: Metrische eenheden (cm)
+model: Model
+models: Modellen
+monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
+nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
+name: Naam
+newDraftFromGist: Nieuwe patroontekening van resumé
+newDraft: Nieuwe patroontekening
+newModel: Nieuw model
+noChanges: Geen wijzigingen
+no: Neen
+noPasswordPolicy: We handhaven geen wachtwoordbeleid
+noSeamAllowance: Geen naadtoeslag
+notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
+notes: Aantekeningen
+notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
+ohNo: Oh nee!
+options: Opties
+orPayPerYear: Of betaal per jaar
+other: Andere
+otherThing: "Andere {thing}"
+ourPatrons: Onze mecenassen
+patron-2: Powder monkey
+patron-4: Eerste stuurman
+patron-8: Kapitein
+patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
+patron: Mecenas
+patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maand een paar munten kunt missen, dan moet jij ook een mecenas worden van freesewing.
+patronsKeepUsAfloat: Freesewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
+patternInstructions: Patroon instructies
+patternOptions: Patroon opties
+pattern: Patroon
+patterns: Patronen
+pendingConfirmation: In afwachting van bevestiging
+perMonth: per maand
+pleaseEnterAValidEmailAddress: 'Gelieve een geldig email adres in te voeren'
+pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
+preview: Voorbeeld
+privacyNotice: Privacy melding
+proceedWithCaution: Ga voorzichtig te werk
+profile: Profiel
+relatedLinks: Gerelateerde links
+remove: Verwijderen
+reportThisOnGithub: Melden via GitHub
+requiredMeasurements: Vereiste maten
+resendActivationEmailMessage: 'Je kan je weer inschrijven met hetzelfde email adres, en dan sturen we je een nieuwe activatie email.'
+resendActivationEmail: Stuur een nieuwe activatie email
+resetPassword: Herstel wachtwoord
+reset: Reset
+restoreDefaults: Standaardwaarden herstellen
+saveDraftToYourAccount: Patroontekening opslaan in je account
+save: Opslaan
+searchLanguageMsg: Elke taal heeft een eigen zoekindex. Aangezien niet al onze inhoud is vertaald, vindt u mogelijk meer resultaten via een Engelse zoekopdracht.
+searchLanguageTitle: Kunt u niet vinden waarnaar u op zoek bent?
+search: Zoeken
+selectAPartToMoveMirrorOrRotate: Selecteer een onderdeel om te verplaatsen, spiegelen of draaien
+selectImage: Selecteer afbeelding
+sendAnEmail: Stuur een email
+settings: Instellingen
+sewingHelp: Naai hulp
+sewingPatternsForNonAveragePeople: Naaipatronen voor niet-gemiddelde mensen
+share: Delen
+showcase: Voorbeelden
+signUpForAFreeAccount: Schrijf je gratis in
+signUp: Inschrijven
+signupWithProvider: 'Inschrijven met<br>{provider}'
+sortByField: Sorteren op {field}
+standardSeamAllowance: Standaard naadtoeslag
+startOver: Begin opnieuw
+startTranslatingNow: Begin meteen te vertalen
+startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
+subscribe: Abonneren
+supportFreesewing: Ondersteun freesewing
+tellMeMore: Vertel me meer
+thanksForYourSupport: Bedankt voor je steun
+thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands
+thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
+thisPageRequiresAuthentication: Deze pagina vereist authenticatie
+troubleLoggingIn: Problemen met aanmelden?
+twitter: Twitter
+txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze mecenassen
+txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
+txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
+txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
+txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
+unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
+update: Bijwerken
+updated: Bijgewerkt
+userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
+users: Gebruikers
+weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
+weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valideren
+weEncounteredAProblem: We zijn op een probleem gestoten
+weEncourageYouToReportThis: We nodigen je uit om dit te melden
+welcomeAboard: Welkom aan boord
+welcome: Welkom
+weNeverShareYourEmail: We geven jouw email adres nooit door aan derden
+whatIsThis: What betekent dit?
+withBreasts: Met borsten
+withoutBreasts: Zonder borsten
+yay: Joehoew!
+yes: Ja
+youAreAPatron: Je bent een mecenas
+youAreNotAPatron: Je bent geen mecenas
+youAreNotLoggedIn: Je bent niet ingelogd
+yourRights: Jouw rechten

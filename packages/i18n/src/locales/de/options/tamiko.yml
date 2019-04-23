@@ -1,0 +1,15 @@
+armholeDepthFactor: brian
+chestEase: brian
+lengthBonus: brian
+
+flare:
+  title: Flare
+  description: Die Menge, um die sich das Kleidungsstück von der Brust nach unten erweitert
+
+shoulderseamLength:
+  title: Schulternaht Länge
+  description: Die Länge der Schulternaht als Faktor Ihrer Schulter-zu-Schulter-Messung
+
+shoulderSlope:
+  title: Schulterabhang
+  description: Steuert den Winkel der Schulternägel

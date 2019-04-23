@@ -1,0 +1,28 @@
+{
+  "name": "workbench-example",
+  "homepage": "https://freesewing.github.io/workbench",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@freesewing/aaron": "file:../../aaron",
+    "@freesewing/brian": "file:../../brian",
+    "@freesewing/core": "file:../../core",
+    "@freesewing/i18n": "file:../../i18n",
+    "@freesewing/plugin-bundle": "file:../../plugin-bundle",
+    "@freesewing/plugin-theme": "file:../../plugin-theme",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-intl": "2.8.0",
+    "react-scripts": "^1.1.4",
+    "workbench": "file:.."
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {}
+}

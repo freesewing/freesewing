@@ -1,0 +1,19 @@
+div.pattern-option {
+  .po-custom {
+    color: $fc-notice-light;
+  }
+  label.po-list-item:hover {
+    background: $fc-hoverbg-light;
+  }
+}
+
+body.dark {
+  div.pattern-option {
+    .po-custom {
+      color: $fc-notice-dark;
+    }
+    label.po-list-item:hover {
+      background: $fc-hoverbg-dark;
+    }
+  }
+}

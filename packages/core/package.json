@@ -1,0 +1,53 @@
+{
+  "name": "@freesewing/core",
+  "version": "0.33.0",
+  "description": "A library for creating made-to-measure sewing patterns",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "library",
+    "parametric design",
+    "patterns",
+    "sewing",
+    "sewing patterns"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf ../../dist/core",
+    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/core/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/core/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "BABEL_ENV=production nyc mocha tests/*.test.js",
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "report": "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js",
+    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+  },
+  "dependencies": {
+    "bezier-js": "^2.2.13",
+    "bin-pack": "1.0.2",
+    "hooks": "^0.3.2"
+  },
+  "files": [
+    "../../dist/packages/core/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
+}

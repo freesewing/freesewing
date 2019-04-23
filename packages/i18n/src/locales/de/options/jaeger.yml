@@ -1,0 +1,167 @@
+acrossBackFactor: brian
+armholeDepthFactor: brian
+bicepsEase: brian
+chestEase: brian
+collarEase: brian
+cuffEase: brian
+hipsEase: aaron
+lengthBonus: brian
+shoulderEase: brian
+waistEase: simon
+sleeveBend: bent
+sleeveLengthBonus: brian
+backNeckCutout: brian
+frontArmholeDeeper: brian
+shoulderSlopeReduction: brian
+sleevecapHeight: bent
+sleevecapEase: brian
+buttons: simon
+collarRoll: simon
+
+centerBackDart:
+  title: Dart in der Mitte der Rückseite
+  description: Dart in der Mitte des Nackens, um einen abgerundeten Rücken aufzunehmen
+
+sleeveVentLength:
+  title: Ärmellüftungslänge
+  description: Länge der Ärmelöffnung
+
+sleeveVentWidth:
+  title: Ärmelschlitzbreite
+  description: Breite der Ärmelöffnung
+
+chestShaping:
+  title: Brustformung
+  description: Menge an Formung für die Brustkurve
+
+frontDartPlacement:
+  title: Platzierung des vorderen Pfeils
+  description: Position der vorderen Dartpfeile
+
+frontOverlap:
+  title: Überlappung vorne
+  description: Wie weit der Stoff über die Schließknöpfe hinausragt
+
+sideFrontPlacement:
+  title: Seitliche / vordere Platzierung
+  description: Die Position der Seiten- / Frontgrenze
+
+chestPocketDepth:
+  title: Brusttasche Tiefe
+  description: Die Tiefe der Brusttasche
+
+chestPocketWidth:
+  title: Brusttaschenbreite
+  description: Die Breite der Brusttasche
+
+chestPocketPlacement:
+  title: Platzierung der Brusttasche
+  description: Die Position der Brusttasche
+
+chestPocketAngle:
+  title: Brusttaschenwinkel
+  description: Der Winkel, unter dem die Brusttasche platziert wird
+
+chestPocketWeltSize:
+  title: Brusttasche Rahmengröße
+  description: Die Größe der Brusttasche
+
+frontPocketPlacement:
+  title: Fronttaschenplatzierung
+  description: Position der Fronttasche
+
+frontPocketWidth:
+  title: Breite der Vordertasche
+  description: Die Breite der Fronttasche
+
+frontPocketDepth:
+  title: Tiefe der Vordertasche
+  description: Die Tiefe der Fronttasche
+
+frontPocketRadius:
+  title: Radius der Vordertasche
+  description: Der Radius, um den die Fronttasche gerundet ist
+
+innerPocketPlacement:
+  title: Innentaschenplatzierung
+  description: Die Position der Innentasche
+
+innerPocketWidth:
+  title: Innentaschenbreite
+  description: Die Breite der Innentasche
+
+innerPocketDepth:
+  title: Innentaschentiefe
+  description: Die Tiefe der Innentasche
+
+innerPocketWeltHeight:
+  title: Innentasche Rahmenhöhe
+  description: Die Höhe der Innentasche
+
+pocketFoldover:
+  title: Taschenfalte
+  description: Der Betrag, um den sich der Hauptstoff in der Tasche befindet
+
+centerFrontHemDrop:
+  title: Saumabfall in der Mitte
+  description: Der Betrag, um den der Saum zur vorderen Mitte hin abgesenkt wird
+
+backVent:
+  title: Hinterlüftung
+  description: Die Anzahl der hinteren Öffnungen
+
+backVentLength:
+  title: Rückenlüftungslänge
+  description: Die Länge der Hinterlüftung(en)
+
+buttonLength:
+  title: Tastenlänge
+  description: Die Entfernung, über die sich die Schaltflächen erstrecken
+
+frontCutawayAngle:
+  title: Frontschnittwinkel
+  description: Der Winkel, unter dem die Vorderseite zum Saum hin abgeschnitten wird
+
+frontCutawayStart:
+  title: Stern vorne
+  description: Die Stelle, an der sich die Vorderseite zum Saum hin öffnet
+
+frontCutawayEnd:
+  title: Vorderes Cutaway-Ende
+  description: Wenn Sie diesen Wert erhöhen, bleibt der vordere Schnitt näher an der vorderen Mitte
+
+collarSpread:
+  title: Kragen ausgebreitet
+  description: Der Kragenausschnitt steuert, wie der Kragen über die Schultern drapiert
+
+lapelStart:
+  title: Revers beginnt
+  description: Position, wo die Mittelfront in das Revers geht
+
+lapelReduction:
+  title: Reversverkleinerung
+  description: Wie weit ist die Spitze der Revers nach innen gedreht?
+
+collarHeight:
+  title: Kragenhöhe
+  description: Höhe des Kragens
+
+collarNotchDepth:
+  title: Kragentiefe
+  description: Tiefe der Kragenkerbe
+
+collarNotchAngle:
+  title: Kragenwinkel
+  description: Winkel der Kragenkerbe
+
+collarNotchReturn:
+  title: Kragenrückkehr
+  description: Wie viel Kragen kommt von der Kerbe im Vergleich zum Revers zurück?
+
+rollLineCollarHeight:
+  title: Rollkragenhöhe
+  description: Wie sehr die Rollschnur den Hals umarmt
+
+hemRadius:
+  title: Saumradius
+  description: Der Betrag, um den der Saum gerundet ist

@@ -1,0 +1,29 @@
+{
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": ["freesewing"],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf ../../dist/{{name}}",
+    "nodebuild": "rollup -c -o ../../dist/{{name}}/index.js -f cjs",
+    "modulebuild": "rollup -c -o ../../dist/{{name}}/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": ["../../dist/packages/{{name}}/*", "README.md", "package.json"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@freesewing/css-theme",
+  "version": "0.33.0",
+  "description": "A CSS theme for FreeSewing web UIs",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "css",
+    "scss",
+    "sass",
+    "theme"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf ../../dist/css-theme",
+    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/css-theme/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/css-theme/index.mjs -f es",
+    "build": "npx node-sass --output-style compressed src/theme.scss ../../dist/css-theme/theme.css",
+    "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
+  },
+  "dependencies": {
+    "open-color": "1.6.3"
+  },
+  "files": [
+    "../../dist/packages/css-theme/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
+}

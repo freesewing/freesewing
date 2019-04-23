@@ -1,0 +1,31 @@
+_all:
+  version:
+    link: "https://www.npmjs.com/package/{{{fullname}}}"
+    img: "https://img.shields.io/npm/v/freesewing.svg"
+    alt: "{{{fullname}}} on NPM"
+  license:
+    link: "https://opensource.org/licenses/MIT"
+    img: "https://img.shields.io/npm/l/freesewing.svg?label=License"
+    alt: "License: MIT"
+  issues:
+    link: "https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3A{{name}}"
+    img: "https://img.shields.io/github/issues/freesewing/freesewing/pkg:{{name}}.svg?label=Issues"
+    alt: "Open issues tagged pkg:{{name}}"
+_social:
+  twitter:
+    link: "https://twitter.com/freesewing_org"
+    img: "https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
+    alt: "Follow @freesewing_org on Twitter"
+  gitter:
+    link: "https://gitter.im/freesewing/freesewing"
+    img: "https://img.shields.io/badge/%F3%A0%80%A0-Chat%20with%20us-CA0547.svg?logo=gitter&logoColor=white&logoWidth=15"
+    alt: "Chat with us on Gitter"
+  patron:
+    link: "https://freesewing.org/patrons/join"
+    img: "https://img.shields.io/badge/%F3%A0%80%A0-Support%20us-blueviolet.svg?logo=cash-app&logoColor=white&logoWidth=15"
+    alt: "Become a FreeSewing Patron"
+  instagram:
+    link: "https://instagram.com/freesewing_org"
+    img: "https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-E4405F.svg?logo=instagram&logoColor=white&logoWidth=15"
+    alt: "Follow @freesewing_org on Twitter"
+

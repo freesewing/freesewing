@@ -1,0 +1,22 @@
+department:
+  title: Abteilung
+  menswear: Herrenbekleidung
+  womenswear: Frauenkleidung
+  accessories: Accessoires
+
+type:
+  title: Art
+  block: Block
+  pattern: Muster
+
+tags:
+  title: Stichworte
+  basics: Grundlagen
+  bottom: Boden
+  top: Oben
+  underwear: Unterwäsche
+
+code: Code
+design: Design
+difficulty: Schwierigkeit
+resetFilter: Filter zurücksetzen

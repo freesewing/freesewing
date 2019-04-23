@@ -4,8 +4,11 @@
   </a>
 </p>
 <h4 align="center">
-  <span style="font-weight: 900; letter-spacing: -0.02em; color: red;">Free</span><span style="font-weight: 900; letter-spacing: -0.0rem; color: #222;">Sewing</span>
-<br><sup>A free and open source library for made-to-measure sewing patterns</sup>
+<a title="Go to freesewing.org" href="https://freesewing.org/">
+<span style="font-weight: 900; letter-spacing: -0.02em; color: #61dafb;">Free</span>
+<span style="font-family: 'Roboto Condensed', sans-serif; font-weight: 900; letter-spacing: -0.02em; color: #222">Sewing</span>
+</a>
+<br><sup>a library for made-to-measure sewing patterns</sup>
 </h4>
 <p align="center">
   <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
