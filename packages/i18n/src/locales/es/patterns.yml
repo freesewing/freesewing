@@ -1,3 +1,4 @@
+---
 aaron:
   description: Aaron es una camiseta deportiva sin mangas.
   title: Camiseta Aaron
@@ -17,7 +18,7 @@ carlita:
   description: 'La versión para mujer de nuestro abrigo Carlton, también conocido como el abrigo Sherlock Holmes.'
   title: Abrigo Carlita
 carlton:
-  description: Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.
+  description: 'Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.'
   title: Abrigo Carlton
 cathrin:
   description: Cathrin es un corsé bajo pecho o reductor de la cintura.
@@ -26,7 +27,7 @@ florent:
   description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
   title: Boina Plana Florent
 huey:
-  description: 'Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.'
+  description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
   title: Sudadera con Capucha Huey
 hugo:
   description: Hugo es una sudadera con capucha y manga ranglán.
