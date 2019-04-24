@@ -1,3 +1,4 @@
+---
 acrossBackFactor: brian
 armholeDepthFactor: brian
 backNeckCutout: brian
@@ -12,12 +13,12 @@ shoulderEase: brian
 shoulderSlopeReduction: brian
 sleeveLengthBonus: brian
 sleevecapEase: brian
-sleevecapTopFactorX: brian
-sleevecapTopFactorY: brian
 sleevecapBackFactorX: brian
 sleevecapBackFactorY: brian
 sleevecapFrontFactorX: brian
 sleevecapFrontFactorY: brian
+sleevecapTopFactorX: brian
+sleevecapTopFactorY: brian
 sleevecapQ1Offset: brian
 sleevecapQ2Offset: brian
 sleevecapQ3Offset: brian
@@ -31,92 +32,72 @@ sleevecapQ3Spread2: brian
 sleevecapQ4Spread1: brian
 sleevecapQ4Spread2: brian
 sleeveWidthGuarantee: brian
-
 barrelCuffNarrowButton:
   title: Extra knoop manchet
   description: Of je al dan niet een knoop wil om de manchetten smaller te maken. Deze optie is enkel relevant bij klassieke manchetten (zonder manchetknopen).
-
 buttonPlacketStyle:
   title: Stijl knopenpat
   description: De stijl van het knopenpat.
   options:
     classic: Klassieke stijl
     seamless: Franse stijl (naadloos)
-
 buttonPlacketWidth:
   title: Breedte knopenpat
   description: De breedte van het knopenpat.
-
 buttonFreeLength:
   title: Lengte knooploos stuk
   description: Hoe lang het stuk zonder knopen onderaan de sluiting moet zijn.
-
 buttonholePlacketFoldWidth:
   title: Breedte vouw knoopsgatenpat
   description: De breedte van de vouw in het knoopsgatenpat.
-
 buttonholePlacketStyle:
   title: Stijl knoopsgatenpat
   description: De stijl van het knoopsgatenpat.
   options:
     classic: Klassieke stijl
     seamless: Franse stijl (naadloos)
-
 buttonholePlacketWidth:
   title: Breedte knoopsgatenpat
   description: De breedte van het knoopsgatenpat.
-
 buttons:
   title: Aantal knopen
   description: Het aantal knopen op de sluiting vooraan.
-
 collarAngle:
   title: Hoekjes kraag
-  description: 'De hoek van de punten van de kraag. '
-
+  description: De hoek van de punten van de kraag. 
 collarBend:
   title: Kromming kraag
   description: De kromming van de kraag.
-
 collarFlare:
   title: Spreiding kraag
   description: Hoe ver de punten van de kraag spreiden.
-
 collarGap:
   title: Afstand kraag
   description: De open ruimte tussen de uiteindes van de kraag.
-
 collarRoll:
   title: Omval kraag
   description: Hoeveel groter de bovenkraag is dan de onderkraag.
-
 collarStandBend:
   title: Kromming staander
-  description: 'De kromming van de staander in het midden, achteraan de nek.'
-
+  description: De kromming van de staander in het midden, achteraan de nek.
 collarStandCurve:
   title: Curve staander
   description: De curve van de uiteindes van de staander.
-
 collarStandWidth:
   title: Breedte staander
   description: De breedte van de staander.
-
 cuffButtonRows:
   title: Rijen knopen op manchet
   description: Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten.
   options:
     '1': Enkele rij knopen
     '2': Dubbele rij knopen
-
 cuffDrape:
   title: Verschil mouw/manchet
   description: Hoeveel wijder de mouw is dan de manchet op het punt waar ze wordt aangezet.
-
 cuffLength:
   title: Lengte manchet
   description: De lengte van de manchetten.
-
 cuffStyle:
   title: Stijl manchet
   description: De stijl van de manchetten.
@@ -127,15 +108,12 @@ cuffStyle:
     roundedFrenchCuff: Afgeronde Franse manchet
     angledFrenchCuff: Afgesneden Franse manchet
     straightFrenchCuff: Rechte Franse manchet
-
 extraTopButton:
   title: Extra knoop bovenaan
   description: Of je al dan niet een extra knoop bovenaan de sluiting wil.
-
 hemCurve:
   title: Curve zoom
   description: De hoogte van de curve op een afgeronde zoom.
-
 hemStyle:
   title: Vorm zoom
   description: De vorm van de zoom van het hemd.
@@ -143,31 +121,24 @@ hemStyle:
     straight: Rechte zoom
     baseball: Ronde zoom
     slashed: Zoom met zijsplit
-
 seperateButtonholePlacket:
   title: Apart knoopsgatenpat
   description: Teken een apart knoopsgatenpat
-
 seperateButtonPlacket:
   title: Apart knopenpat
   description: Teken een apart knopenpat
-
 sleevePlacketLength:
   title: Lengte mouwsplit
   description: De lengte van het mouwsplit.
-
 sleevePlacketWidth:
   title: Breedte mouwsplit
   description: De breedte van het mouwsplit.
-
 splitYoke:
   title: Tweedelige schouderpas
   description: Wil je een tweedelige schouderpas?
-
 waistEase:
   title: Overwijdte taille
   description: De hoeveelheid extra ruimte aan je (natuurlijke) taille.
-
 yokeDart:
   title: Neep schouderpas
   description: Of je een neep aan de zijkanten van de schouderpas wil om beter te passen voor een ronde rug.
