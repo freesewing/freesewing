@@ -1,5 +1,6 @@
-backBase: Basis rug
+---
 back: Rug
+backBase: Basis rug
 base: Basis
 bentBack: Achterzijde Bent
 bentBase: Basis Bent
@@ -16,12 +17,12 @@ fabricTail: Stof staart
 fabricTip: Stof tip
 frontBase: Basis voorzijde
 frontFacing: Voering vooraan FIXME
+front: Voorzijde
 frontLeft: Voorzijde links
 frontLining: Voering vooraan
 frontRight: Voorzijde rechts
-front: Voorzijde
-hood: Capuchon
 hoodCenter: Capuchon midden
+hood: Capuchon
 hoodSide: Capuchon zijkant
 inset: Inzet
 interfacingTail: Interfacing staart
@@ -39,14 +40,14 @@ panels: Delen
 pocketBag: Zak
 pocketFacing: Zak doublure
 pocketInterfacing: Interfacing zak
-pocketWelt: Paspel zak
 pocket: Zak
+pocketWelt: Paspel zak
 side: Zijkant
 sleeveBase: Basis mouw
 sleevecap: Mouwkop
-sleeve: Mouw
 sleevePlacketOverlap: Mouwsplit bovendeel
 sleevePlacketUnderlap: Mouwsplit onder
+sleeve: Mouw
 topSleeve: Bovenmouw
 top: Top
 underCollar: Onderkraag
