@@ -1,127 +1,97 @@
+---
 acrossBackFactor:
   title: Rückenweitenverhältnis
   description: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement.
-
 armholeDepthFactor:
   title: Tiefenfaktor des Ärmelansatze
   description: Beeinflusst die Tiefe des Ärmelansatze nach innen zur Brust.
-
 backNeckCutout:
   title: Ausschnitt im Nacken
   description: Wie tief ist der Hals im Rücken ausgeschnitten?
-
 bicepsEase:
   title: Bizeps Leichtigkeit
-  description: Die Leichtigkeit am Oberarm. Während wir versuchen, dies zu respektieren, hat das Anbringen der Manschette am Armloch Vorrang vor der Einhaltung des genauen Maßes an Leichtigkeit.
-
+  description: 'Die Leichtigkeit am Oberarm. Während wir versuchen, dies zu respektieren, hat das Anbringen der Manschette am Armloch Vorrang vor der Einhaltung des genauen Maßes an Leichtigkeit.'
+collarEase:
+  title: Kragen Leichtigkeit
+  description: Die Menge an Leichtigkeit um den Hals.
 chestEase:
   title: Entlastung der Brust
   description: Die Menge an Leichtigkeit an Ihrer Brust
-
-collarEase:
-  description: Die Menge an Leichtigkeit um den Hals.
-  title: Kragen Leichtigkeit
-
 cuffEase:
   title: Manschette Leichtigkeit
   description: Die Leichtigkeit am Handgelenk
-
 frontArmholeDeeper:
   title: Zusätzlicher Ausschnitt am vorderen Armloch
   description: Wie viel soll das vordere Armloch tiefer ausgeschnitten werden als der Rücken.
-
 lengthBonus:
   title: Längenbonus
   description: Der Betrag, um das Kleidungsstück zu verlängern. Ein negativer Wert verkürzt ihn.
-
 shoulderEase:
   title: Schulter Leichtigkeit
   description: Die Leichtigkeit an der Schulter. Dadurch wird der Abstand von Schulter zu Schulter vergrößert, um das aufzunehmen, was Sie darunter tragen.
-
 shoulderSlopeReduction:
   title: Reduktion der Schulterneigung
   description: Der Betrag, um den die Schulterneigung reduziert wird, um die Schulterpolsterung zu ermöglichen.
-
 sleeveLengthBonus:
   title: Hülsenlängen-Bonus
   description: Der Betrag, um die Hülse zu verlängern. Ein negativer Wert verkürzt ihn.
-
 sleevecapEase:
   title: Ärmelkappe Leichtigkeit
   description: Der Betrag, um den die Ärmelkappennaht länger ist als die Armlochnaht.
-
 sleevecapTopFactorX:
   title: Ärmelkappe Oberteil X
   description: Steuert die horizontale Position der Ärmelkappe
-
 sleevecapTopFactorY:
   title: Ärmelkappe Oberteil Y
   description: Steuert die Höhe der Ärmelkappe. Ein höherer Wert führt zu einer höheren und schmaleren Ärmelkappe.
-
 sleevecapBackFactorX:
   title: Ärmelkappe Rückseite X
   description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe Rückseite auf der X-Achse (horizontal)
-
 sleevecapBackFactorY:
   title: Ärmelkappe Rückseite Y
   description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe Rückseite auf der Y-Achse (vertikal)
-
 sleevecapFrontFactorX:
   title: Ärmelkappe vorne X
   description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe vorne auf der X-Achse (horizontal)
-
 sleevecapFrontFactorY:
   title: Ärmelkappe vorne Y
   description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe vorne auf der Y-Achse (vertikal)
-
 sleevecapQ1Offset:
   title: Offset der Ärmelkappe Q1
   description: Steuert die Krümmung der Ärmelkappe im ersten Viertelkreis (vorderes Armloch)
-
 sleevecapQ2Offset:
   title: Offset der Ärmelkappe Q2
   description: Steuert die Krümmung der Ärmelkappe im zweite Viertelkreis (vorderes Schulter)
-
 sleevecapQ3Offset:
   title: Offset der Ärmelkappe Q3
   description: Steuert die Krümmung der Ärmelkappe im dritte Viertelkreis (hintere Schulter)
-
 sleevecapQ4Offset:
   title: Offset der Ärmelkappe Q4
   description: Steuert die Krümmung der Ärmelkappe im vierte Viertelkreis (hintere Armloch)
-
 sleevecapQ1Spread1:
   title: Ärmelkappe Q1 nach unten gespreizt
   description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
-
 sleevecapQ1Spread2:
   title: Ärmelkappe Q1 nach oben gespreizt
   description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
-
 sleevecapQ2Spread1:
   title: Ärmelkappe Q2 nach unten gespreizt
   description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
-
 sleevecapQ2Spread2:
   title: Ärmelkappe Q2 nach oben gespreizt
   description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
-
 sleevecapQ3Spread1:
   title: Ärmelkappe Q3 nach oben gespreizt
   description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
-
 sleevecapQ3Spread2:
   title: Ärmelkappe Q3 nach unten gespreizt
   description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
-
 sleevecapQ4Spread1:
   title: Ärmelkappe Q4 nach oben gespreizt
   description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
-
 sleevecapQ4Spread2:
   title: Ärmelkappe Q4 nach unten gespreizt
   description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
-
 sleeveWidthGuarantee:
   title: Garantie der Ärmelbreite
   description: Steuert, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, um wie viel wir die Ärmelbreite verändern können, um die Ärmel in das Armloch einzupassen.
