@@ -1,25 +1,21 @@
+---
 armholeDepthFactor: brian
 chestEase: brian
 hipsEase: aaron
 lengthBonus: brian
 waistEase: simon
-
 backScyeDart:
   title: Pince arrière sans gêne
   description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
-
 frontScyeDart:
   title: Pince avant de l'emmanchure
   description: La quantité à retirer de la pince à l'avant de l'emmanchure.
-
 pocketLocation:
   title: Emplacement de poche
   description: Détermine l'emplacement de la poche
-
 pocketWidth:
   title: Largeur de poche
   description: Détermine la largeur de la poche
-
 weltHeight:
   title: Hauteur monde de poche
   description: Détermine l'hauteur de la monde de poche
