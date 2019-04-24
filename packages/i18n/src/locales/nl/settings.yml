@@ -1,33 +1,25 @@
+---
 paperless:
   title: Papierloos
   description: Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken.
-
 sa:
   title: Naadtoeslag
   description: Bepaalt de hoeveelheid naadtoeslag die is inbegrepen in uw patroon
-
 locale:
   title: Taal
   description: Bepaalt de taal die op uw patroon wordt gebruikt
-
 only:
   title: Inhoud
   description: Hiermee kunt u precies bepalen welke patroononderdelen in uw patroon worden opgenomen
-
 units:
   title: Eenheden
   description: Bepaalt de eenheden die op uw patroon worden gebruikt
-
 margin:
   title: Marge
   description: Bepaalt de marge rond patroondelen
-
 complete:
   title: Detail
   description: Bepaalt hoe gedetailleerd het patroon is. Ofwel een patroon met alle details, ofwel een eenvoudiger patroon met slechts de contouren van de verschillende patroondelen.
-
 layout:
   title: Layout
   description: Bepaalt hoe de afzonderlijke patroondelen op uw patroon worden geplaatst.
-
-
