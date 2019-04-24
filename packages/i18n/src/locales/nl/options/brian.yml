@@ -7,7 +7,7 @@ armholeDepthFactor:
   description: Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.
 backNeckCutout:
   title: Hals uitsnijding achteraan
-  description: How deep the neck is cut out at the back
+  description: Hoe diep de nek wordt uitgesneden aan de rug
 bicepsEase:
   title: Overwijdte biceps
   description: 'De hoeveelheid overwijdte aan je bovenarm. Let op dat we proberen dit te respecteren, maar dat de mouw in het armsgat laten passen voorrang krijgt op de hoeveelheid overwijdte. '
