@@ -1,25 +1,21 @@
+---
 armholeDepthFactor: brian
 chestEase: brian
 hipsEase: aaron
 lengthBonus: brian
 waistEase: simon
-
 backScyeDart:
   title: Rückseite Scye Dart
   description: Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss.
-
 frontScyeDart:
   title: Vorderer scye dart
   description: Die Menge, die in einem Pfeil an der Vorderseite des Armlochs entnommen werden muss
-
 pocketLocation:
   title: Taschenort
   description: Bestimmt die Platzierung der Tasche
-
 pocketWidth:
   title: Taschenbreite
   description: Bestimmt die Breite der Tasche
-
 weltHeight:
   title: Welthöhe
   description: Bestimmt die Höhe des Welt
