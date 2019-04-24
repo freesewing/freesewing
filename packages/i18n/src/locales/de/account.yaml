@@ -1,3 +1,4 @@
+---
 accountRemoved: Konto entfernt
 accountRestricted: Konto eingeschränkt
 avatar: Avatar
@@ -26,16 +27,16 @@ newPassword: Neues Passwort
 passwordInfo: Das Ändern Ihres Passworts erfordert Ihr aktuelles Passwort. Füllen Sie das aus und geben Sie dann auch Ihr neues Passwort ein.
 password: Passwort
 passwordTitle: Geben Sie Ihr aktuelles Passwort und Ihr neues Passwort ein
-patron: Gönner
 patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Muster und unsere Community.
-removeYourAccount: Entfernen Sie Ihr Konto
+patron: Gönner
 removeYourAccountInfo: FIXME
+removeYourAccount: Entfernen Sie Ihr Konto
 removeYourAccountWarning: Dadurch werden Ihr Konto, Ihre Entwürfe, Ihre Modelle und alle Daten, die wir für Sie gespeichert haben, entfernt. Es gibt keinen Weg zurück.
 resetPasswordInfo: Geben Sie ein neues Passwort ein.
 resetPassword: Passwort zurücksetzen
 resetPasswordTitle: Geben Sie Ihr neues Passwort ein
-restrictProcessingOfYourData: Beschränken Sie die Verarbeitung Ihrer Daten
 restrictProcessingOfYourDataInfo: Das Allgemeine Datenschutzgesetz (DSGVO) der EU gewährleistet, dass Ihr sogenanntes <em> Recht, die Verarbeitung zu beschränken </em> - das Recht, die Verarbeitung Ihrer Daten zu unterbinden.
+restrictProcessingOfYourData: Beschränken Sie die Verarbeitung Ihrer Daten
 restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird Sie jedoch abmelden und Ihr Konto einfrieren. Darüber hinaus sind Sie möglicherweise an Ihrem eigenen Geschäft interessiert, müssen sich aber mit uns in Verbindung setzen, wenn Sie den Zugriff auf Ihr Konto wiederherstellen möchten.
 reviewYourConsent: Überprüfen Sie Ihre Zustimmung
 socialInfo: Wenn Sie Ihren GitHub-, Twitter- oder Instagram-Benutzernamen angeben, enthält Ihre Profilseite Links zu Ihren Konten auf diesen Websites. Dadurch können kostenlose Benutzer Sie dort verfolgen.<br>Wir kontaktieren keine dieser Seiten in Ihrem Namen. Dies ist nur so, dass Leute die Punkte verbinden können und wissen, dass zum Beispiel Benutzer @joost bei freesewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
@@ -44,9 +45,9 @@ socialTitle: Lass die Leute dir anderswo folgen
 twitterInfo: Wenn Sie Ihren Twitter-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Twitter-Account, sodass Besucher Ihre Tweets entdecken und Ihnen folgen können.
 twitterTitle: Geben Sie Ihren Twitter-Benutzernamen ein
 twitter: Twitter
-units: Einheiten
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Messungen.
 unitsTitle: Bitte wählen Sie das Einheitensystem aus, mit dem Sie am besten vertraut sind
+units: Einheiten
 usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas mehr ändern. Wie dein Name oder Queenoffarts oder was auch immer. Geben Sie einfach den gewünschten Benutzernamen ein.
 usernameTitle: Bitte wähle Deinen Benutzernamen
 username: Username
