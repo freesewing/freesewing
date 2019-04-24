@@ -1,3 +1,4 @@
+---
 100PercentCommunity: 100% gemeenschap
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
@@ -61,10 +62,10 @@ documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
 draft: Patroontekening
-draftPatternForModel: 'Teken {pattern} voor {model}'
 draftPattern: 'Teken {pattern}'
-draftSettings: Instellingen patroontekening
+draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
+draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
 emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
@@ -118,12 +119,12 @@ newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
 noChanges: Geen wijzigingen
-no: Neen
+no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
-notes: Aantekeningen
 notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
+notes: Aantekeningen
 ohNo: Oh nee!
 options: Opties
 orPayPerYear: Of betaal per jaar
@@ -143,7 +144,7 @@ pattern: Patroon
 patterns: Patronen
 pendingConfirmation: In afwachting van bevestiging
 perMonth: per maand
-pleaseEnterAValidEmailAddress: 'Gelieve een geldig email adres in te voeren'
+pleaseEnterAValidEmailAddress: Gelieve een geldig email adres in te voeren
 pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
 preview: Voorbeeld
 privacyNotice: Privacy melding
@@ -177,8 +178,8 @@ signupWithProvider: 'Inschrijven met<br>{provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
-startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
+startTranslatingNow: Begin meteen te vertalen
 subscribe: Abonneren
 supportFreesewing: Ondersteun freesewing
 tellMeMore: Vertel me meer
@@ -195,8 +196,8 @@ txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde free
 txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
 txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
 unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
-update: Bijwerken
 updated: Bijgewerkt
+update: Bijwerken
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
@@ -210,7 +211,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
-yes: Ja
+yes: true
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
