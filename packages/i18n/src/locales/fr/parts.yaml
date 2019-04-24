@@ -1,3 +1,4 @@
+---
 back: Arrière
 backBase: Base arrière
 base: Base
@@ -14,14 +15,14 @@ collarStand: Col support
 cuff: Manchette
 fabricTail: Queue en tissu
 fabricTip: Pointe en tissu
-front: Avant
 frontBase: Base avant
 frontFacing: Doublure avant FIXME
+front: Avant
 frontLeft: Avant gauche
 frontLining: Doublure avant
 frontRight: Avant droit
-hood: Capuchon
 hoodCenter: Capuchon centre
+hood: Capuchon
 hoodSide: Capuchon côté
 inset: Encart
 interfacingTail: Queue en entoilage
@@ -44,9 +45,9 @@ pocketWelt: Passepoile
 side: Côté
 sleeveBase: Base de manche
 sleevecap: Tête de manche
-sleeve: Manche
 sleevePlacketOverlap: Patte de manche supérieur
 sleevePlacketUnderlap: Patte de manche en dessous
+sleeve: Manche
 topSleeve: Manche
 top: Top
 underCollar: Sous-col
