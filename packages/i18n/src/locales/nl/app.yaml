@@ -2,7 +2,7 @@
 100PercentCommunity: 100% gemeenschap
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
-aboutFreesewing: Over Freesewing
+aboutFreesewing: Over FreeSewing
 aboutGist1: Een resumé bevat alle informatie die nodig is om een patroon te tekenen.
 aboutGist2: Je kan een bestaande resumé kopiëren en plakken om als basis te dienen voor je eigen patroontekening.
 account: Account
@@ -68,7 +68,7 @@ drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
-emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
+emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 exportDraft: Patroontekening exporteren
 export: Exporteren
@@ -79,15 +79,15 @@ fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
 filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
-forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
+forgotLoginInstructions: 'Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
-freesewingOnGithub: Freesewing op GitHub
+freesewingOnGithub: FreeSewing op GitHub
 gist: Resumé
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Goed gedaan
 goodToSeeYouAgain: Leuk je weer te zien {user}
-handle: Referntie
+handle: Referentie
 helpUsTranslate: Help ons met vertalen
 home: Startpagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
@@ -131,7 +131,7 @@ orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: "Andere {thing}"
 ourPatrons: Onze mecenassen
-patron-2: Powder monkey
+patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
