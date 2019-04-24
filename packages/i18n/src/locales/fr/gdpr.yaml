@@ -1,3 +1,4 @@
+---
 compliant: Freesewing.org respecte votre vie privée et vos droits. Nous appliquons le règlement général sur la protection des données (RGPD) de l'Union européenne (UE).
 consent: Consentement
 consentForModelData: Consentement pour les données de modèle
@@ -9,8 +10,8 @@ createMyAccount: Créer mon compte
 furtherReading: Lire plus
 modelQuestion: Donnez-vous votre consentement pour traiter vos données de modèle?
 modelWarning: Révoquer ce consentement vous exclura de toutes vos données de modèle, ainsi que des fonctionnalités qui en dépendent.
-modelWhatAnswerOptional: 'Facultatif: un modèle <b> image </ b> et le <b> nom </ b> que vous donnez à votre modèle.'
 modelWhatAnswer: Pour chaque modèle, leurs <b> mesures </ b> et <b> paramètres de poitrine </ b>.
+modelWhatAnswerOptional: 'Facultatif: un modèle <b> image </ b> et le <b> nom </ b> que vous donnez à votre modèle.'
 modelWhatQuestion: Que sont les données de modèle?
 modelWhyAnswer: 'Pour créer des <b> motifs de couture sur mesure </ b>, nous avons besoin de <b> mesures du corps </ b>.'
 noIDoNot: 'Non, je ne le fais pas'
@@ -18,10 +19,10 @@ openDataInfo: Ces données sont utilisées pour étudier et comprendre la forme 
 openDataQuestion: Partager des mesures anonymisées sous forme de données ouvertes
 profileQuestion: Donnez-vous votre consentement pour traiter vos données de profil?
 profileShareAnswer: '<b> Non </ b>, jamais.'
-profileTimingAnswer: "<b> 12 mois </b> après votre dernière connexion ou jusqu'à ce que vous <b> supprimiez </b> votre compte ou <b> révoquiez </b> ce consentement."
+profileTimingAnswer: '<b> 12 mois </b> après votre dernière connexion ou jusqu''à ce que vous <b> supprimiez </b> votre compte ou <b> révoquiez </b> ce consentement.'
 profileWarning: Révoquer ce consentement entraînera la suppression de toutes vos données. Cela a exactement le même effet que de supprimer votre compte.
 profileWhatAnswerOptional: 'Facultatif: une <b> photo de profil </b>, <b>bio</b>, et des <b> comptes de réseaux sociaux </b>'
-profileWhatAnswer: "Votre <b> adresse électronique </b>, <b> nom d'utilisateur </b> et <b> mot de passe </ b>."
+profileWhatAnswer: 'Votre <b> adresse électronique </b>, <b> nom d''utilisateur </b> et <b> mot de passe </ b>.'
 profileWhatQuestion: Que sont les données de profil?
 profileWhyAnswer: 'Pour <b> vous authentifier </b>, <b> vous contacter </b> si nécessaire et créer une <b> communauté </b>.'
 readMore: Pour plus d'informations, veuillez lire notre déclaration de confidentialité.
@@ -31,5 +32,5 @@ shareQuestion: La partageons-nous avec les autres?
 timingQuestion: Combien de temps le gardons-nous?
 whatYouNeedToKnow: Ce que vous devez savoir
 whyQuestion: Pourquoi en avons-nous besoin?
-yesIDoObject: "Oui, je m'oppose"
+yesIDoObject: 'Oui, je m''oppose'
 yesIDo: 'Oui, je le fais'
