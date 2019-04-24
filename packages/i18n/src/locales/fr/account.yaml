@@ -1,3 +1,4 @@
+---
 accountRemoved: Compte supprimé
 accountRestricted: Compte restreint
 avatar: Avatar
@@ -48,5 +49,5 @@ unitsInfo: Freesewing prend en charge le système métrique et les mesures impé
 unitsTitle: Veuillez sélectionner le système d'unités que vous préférez
 units: Unités
 usernameInfo: Vous avez actuellement un nom d'utilisateur généré de manière aléatoire. Ce n'est pas très personnel, vous pouvez donc changer votre nom d'utilisateur pour quelque chose de plus vous. Comme votre nom, <em> queenoffarts </ em> ou autre chose. Il vous suffit de saisir le nom d'utilisateur souhaité.
-username: Nom d'utilisateur
 usernameTitle: Veuillez choisir votre nom d'utilisateur
+username: Nom d'utilisateur
