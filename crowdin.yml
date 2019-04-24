@@ -1,4 +1,3 @@
-content_segmentation: no
 files:
   - source: /packages/i18n/src/locales/en/**/*.yaml
     translation: /packages/i18n/src/locales/%two_letters_code%/**/%original_file_name%
