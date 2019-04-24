@@ -1,3 +1,4 @@
+---
 acrossBackFactor: brian
 armholeDepthFactor: brian
 backNeckCutout: brian
@@ -30,38 +31,30 @@ sleevecapQ3Spread2: brian
 sleevecapQ4Spread1: brian
 sleevecapQ4Spread2: brian
 sleeveWidthGuarantee: brian
-
 ribbing: sven
 ribbingHeight: sven
 ribbingStretch: sven
 waistEase: simon
 hipsEase: aaron
 pocketWidth: wahid
-
 pocket:
   title: Zak
   description: Of een zak moet worden toegevoegd of niet
-
 pocketHeight:
   title: Zak hoogte
   description: Bepaalt de hoogte van de zak
-
 hoodHeight:
   title: Capuchon hoogte
   description: Bepaalt de hoogte van de capuchon
-
 hoodCutback:
   title: Capuchon inkorting
   description: Bepaalt hoever de capuchon opening is ingekort
-
 hoodClosure:
   title: Capuchon sluiting
   description: Bepaalt hoeveel van de capuchon deel uitmaakt van de sluiting vooraan
-
 hoodDepth:
   title: Capuchon diepte
   description: Bepaalt de diepte van de capuchon
-
 hoodAngle:
   title: Capuchon hoek
   description: Bepaalt de hoek waaronder de capuchon is geplaatst
