@@ -1,3 +1,4 @@
+---
 acrossBackFactor: brian
 armholeDepthFactor: brian
 backNeckCutout: brian
@@ -11,11 +12,9 @@ shoulderEase: brian
 shoulderSlopeReduction: brian
 sleevecapEase: brian
 sleeveLengthBonus: brian
-
 sleeveBend:
   title: Manga doblada
   description: Curva de la manga en el codo.
-
 sleevecapHeight:
   title: Altura de la manga
   description: Controla la altura de la manga.
