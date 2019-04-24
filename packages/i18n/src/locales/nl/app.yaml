@@ -123,7 +123,7 @@ no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
-notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
+notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
 options: Opties
@@ -137,13 +137,13 @@ patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
 patron: Mecenas
 patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maand een paar munten kunt missen, dan moet jij ook een mecenas worden van freesewing.
-patronsKeepUsAfloat: Freesewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
+patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
-pattern: Patroon
+pattern: patroon
 patterns: Patronen
 pendingConfirmation: In afwachting van bevestiging
-perMonth: per maand
+perMonth: Per maand
 pleaseEnterAValidEmailAddress: Gelieve een geldig email adres in te voeren
 pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
 preview: Voorbeeld
@@ -189,13 +189,13 @@ thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
 thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
-txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze mecenassen
-txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
+txt-footer: FreeSewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze mecenassen
+txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>FreeSewing is gratis voor iedereen. Zonder verdere vragen.
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
-txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
-txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
-unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
+txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
+txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tiers: "FreeSewing wordt gefinancierd door een vrijwillig abonnementsmodel met vier opties:"
+unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 update: Bijwerken
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
