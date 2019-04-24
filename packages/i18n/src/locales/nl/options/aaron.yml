@@ -24,4 +24,4 @@ shoulderStrapWidth:
   description: De breedte van de schouderbandjes.
 stretchFactor:
   description: Bepaalt hoeveel kleiner de horizontale omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.
-  title: Stretch
+  title: Rek
