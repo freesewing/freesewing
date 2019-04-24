@@ -1,11 +1,12 @@
+---
 100PercentCommunity: 100% community DONE
 100PercentFree: 100% kostenlos
 100PercentOpenSource: 100% Open Source DONE
 aboutFreesewing: Über Freesewing
 aboutGist1: Ein Kern enthält alle Informationen, die zum Erstellen eines Musters erforderlich sind.
 aboutGist2: Sie können einen vorhandenen Kern hier kopieren und einfügen, um ihn als Ausgangspunkt für Ihren eigenen Entwurf zu verwenden.
-accountCreated: Account erstellt
 account: Konto
+accountCreated: Account erstellt
 actions: Aktions
 allDocumentation: Alle dokumentationen
 andThatIsAwesome: Und das ist großartig
@@ -118,12 +119,12 @@ newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
 noChanges: Keine Änderungen
-no: Nein
+no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
 noSeamAllowance: Keine Nahtzugabe
 notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch verfügbar
-notes: Anmerkungen
 notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
+notes: Anmerkungen
 ohNo: Oh Nein!
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
@@ -133,8 +134,8 @@ ourPatrons: Unsere Gönner
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
-patron: Gönner
 patronHelp: Wenn Sie Fragen haben oder Änderungen an Ihrem Schutzstatus vornehmen möchten, wenden Sie sich bitte an Joost.
+patron: Gönner
 patronPitch: Wenn Sie der Meinung sind, dass das, was wir tun, sich lohnt, und wenn Sie jeden Monat ein paar Münzen einsparen können, dann sollten auch Sie ein Gönner des Freesewing werden.
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
@@ -153,8 +154,8 @@ relatedLinks: Verwandte Links
 remove: Löschen
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
+resendActivationEmailMessage: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
-resendActivationEmailMessage: Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
@@ -177,8 +178,8 @@ signupWithProvider: 'Registrieren mit<br>{provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
-startTranslatingNow: Beginne jetzt mit dem Übersetzen
 startTranslatingNowOrRead: '{startTranslatingNow}, oder lies zuerst die {documentationForTranslators}.'
+startTranslatingNow: Beginne jetzt mit dem Übersetzen
 subscribe: Abonnieren
 supportFreesewing: Unterstützung freesewing
 tellMeMore: Erzähl mir mehr
@@ -188,15 +189,15 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: 'Freesewing wurde von Joost De Cock & den Mitwirkenden kreiert,<br>mit der finanziellen Unterstützung unserer Gönner'
+txt-footer: Freesewing wurde von Joost De Cock & den Mitwirkenden kreiert,<br>mit der finanziellen Unterstützung unserer Gönner
 txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
 txt-tiers: "Freesewing wird durch ein freiwilliges Abonnementmodell mit vier Stufen finanziert:"
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
-update: Aktualisieren
 updated: Aktualisierte
+update: Aktualisieren
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 users: Benutzer
 weAreValidatingYourConfirmationCode: Wir prüfen deinen Bestätigungs-Code.
@@ -210,7 +211,7 @@ whatIsThis: Wast ist das?
 withBreasts: Mit Brüsten
 withoutBreasts: Ohne Brüste
 yay: Yay!
-yes: Ja
+yes: true
 youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
