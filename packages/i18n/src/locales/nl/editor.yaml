@@ -2,7 +2,7 @@
 allMarkdownContent: Alle Markdown inhoud
 attributeTheseChangesTo: Attribueer deze wijzigingen aan
 blurb: Inro
-body: Body
+body: Berichttekst
 caption: Onderschrift
 category: Categorie
 changesAreSubmitted: "{commit} zijn ingestuurd voor nazicht als deel van {pr}"
