@@ -9,7 +9,7 @@ rise:
   title: Hoogte
   description: Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen.
 stretch:
-  title: Stretch
+  title: Rek
   description: Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.
 legStretch:
   title: Stretch pijp
