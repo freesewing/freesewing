@@ -9,12 +9,12 @@ type:
   block: Blok
   pattern: Patroon
 tags:
-  title: Tags
-  basics: Basics
+  title: Labels
+  basics: Basis
   bottom: Bodem
   top: Top
   underwear: Ondergoed
 code: Code
 design: Ontwerp
 difficulty: Moeilijkheid
-resetFilter: Reset filter
+resetFilter: Filters terugzetten
