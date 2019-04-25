@@ -30,7 +30,6 @@ export default {
       "sleeveLengthBonus",
       "waistEase",
       "hipsEase",
-      "collarEase",
       "yokeDart"
     ],
     style: [

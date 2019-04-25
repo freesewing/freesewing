@@ -122,7 +122,7 @@ export const defaultGist = {
   }
 };
 
-export const gistDefaults = (config, gist) => {
+export const gistDefaults = (config, gist = { settings: {} }) => {
   let options = {};
   for (let option of Object.keys(config.options)) {
     if (
@@ -137,7 +137,7 @@ export const gistDefaults = (config, gist) => {
   delete settings.locale;
   delete settings.units;
   for (let setting of Object.keys(settings)) {
-    if (typeof gist.settings[setting] !== undefined) {
+    if (typeof gist.settings[setting] !== "undefined") {
       settings[setting] = gist.settings[setting];
     }
   }
