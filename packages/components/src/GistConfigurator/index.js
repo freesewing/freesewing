@@ -9,8 +9,6 @@ import { optionType, gistDefaults } from "../utils";
 import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage, injectIntl } from "react-intl";
 import { i18n as languages } from "@freesewing/i18n";
-import List from "@material-ui/core/List";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import CollapsedIcon from "@material-ui/icons/ArrowDropDown";
 import ExpandedIcon from "@material-ui/icons/ArrowRight";
 import PatternOptions from "../PatternOptions";
@@ -37,8 +35,8 @@ const GistConfigurator = props => {
   let dflts = gistDefaults(pattern.config, props.gist);
 
   return (
-    <div className="gist-config">
-      <div className="gist-options">
+    <ul className="nav l1">
+      <li>
         <h2>
           <FormattedMessage id="app.patternOptions" />
         </h2>
@@ -48,6 +46,8 @@ const GistConfigurator = props => {
           updateValue={update}
           triggerAction={props.triggerAction}
         />
+      </li>
+      <li>
         <h2>
           <FormattedMessage id="app.draftSettings" />
         </h2>
@@ -59,8 +59,8 @@ const GistConfigurator = props => {
           language={props.intl.locale}
           languages={languages[props.intl.locale]}
         />
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 };
 

@@ -27,44 +27,46 @@ const PatternOptions = props => {
   let pattern = patternInfo[props.pattern];
   let dflts = gistDefaults(pattern.config, props.gist);
 
+  const renderGroup = group => {
+    let open = true;
+    if (expanded.indexOf(group) === -1) open = false;
+    let output = [];
+    let children = null;
+    if (expanded.indexOf(group) !== -1)
+      children = (
+        <ul className="nav l3">
+          <OptionGroup
+            key={group + "-group"}
+            units={props.units}
+            pattern={pattern}
+            dflts={dflts}
+            options={pattern.optionGroups[group]}
+            updateValue={props.updateValue}
+            triggerAction={props.triggerAction}
+          />
+        </ul>
+      );
+    output.push(
+      <li className={open ? "expanded" : "collapsed"} key={group + "-ghead"}>
+        <h3 onClick={() => toggleGroup(group)}>
+          {open ? (
+            <CollapsedIcon className="collapse-icon" />
+          ) : (
+            <ExpandedIcon className="collapse-icon" />
+          )}
+          <FormattedMessage id={"optiongroups." + group} />
+        </h3>
+        {children}
+      </li>
+    );
+
+    return output;
+  };
+
   return (
-    <List subheader={<h3 />} className="pattern-options gist-side">
-      {Object.keys(pattern.optionGroups).map(group => {
-        let open = true;
-        if (expanded.indexOf(group) === -1) open = false;
-        return (
-          <React.Fragment key={group + "-ghead"}>
-            <ListSubheader
-              className="optiongroup-heading"
-              className={
-                (open ? "expanded" : "collapsed") + " optiongroup-heading"
-              }
-              onClick={() => toggleGroup(group)}
-            >
-              <h3>
-                {open ? (
-                  <CollapsedIcon className="collapse-icon" />
-                ) : (
-                  <ExpandedIcon className="collapse-icon" />
-                )}
-                <FormattedMessage id={"optiongroups." + group} />
-              </h3>
-            </ListSubheader>
-            {expanded.indexOf(group) === -1 ? null : (
-              <OptionGroup
-                key={group + "-group"}
-                units={props.units}
-                pattern={pattern}
-                dflts={dflts}
-                options={pattern.optionGroups[group]}
-                updateValue={props.updateValue}
-                triggerAction={props.triggerAction}
-              />
-            )}
-          </React.Fragment>
-        );
-      })}
-    </List>
+    <ul className="nav l2">
+      {Object.keys(pattern.optionGroups).map(group => renderGroup(group))}
+    </ul>
   );
 };
 

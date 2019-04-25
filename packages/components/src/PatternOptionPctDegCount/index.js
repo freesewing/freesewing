@@ -6,6 +6,7 @@ import OptionPreamble from "../OptionPreamble";
 const PatternOptionPctDegCount = props => {
   const [value, setValue] = useState(props.dflt);
   const [previousValue, setPreviousValue] = useState(props.dflt);
+  const [expanded, setExpanded] = useState(false);
 
   const round = val => Math.round(val * 10) / 10;
 
@@ -28,6 +29,8 @@ const PatternOptionPctDegCount = props => {
     props.updateValue(props.name, props.dflt);
   };
 
+  const toggleExpanded = () => setExpanded(!expanded);
+
   const styles = {
     container: {
       display: "flex",
@@ -45,7 +48,7 @@ const PatternOptionPctDegCount = props => {
   if (props.type === "deg") unit = "°";
 
   return (
-    <div className={"pattern-option " + props.type}>
+    <li>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -54,6 +57,8 @@ const PatternOptionPctDegCount = props => {
         id={"po-" + props.type + "-" + props.name}
         displayValue={value + unit}
         reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
         showHelp={() =>
           props.triggerAction("showHelp", {
             type: "patternOption",
@@ -61,17 +66,19 @@ const PatternOptionPctDegCount = props => {
           })
         }
       />
-      <FormFieldSlider
-        name={props.name}
-        value={value}
-        min={props.min}
-        max={props.max}
-        step={props.type === "count" ? 1 : props.step}
-        onChange={update}
-        label={"po-" + props.type + "-" + props.name}
-        updateValue={update}
-      />
-    </div>
+      {!expanded ? null : (
+        <FormFieldSlider
+          name={props.name}
+          value={value}
+          min={props.min}
+          max={props.max}
+          step={props.type === "count" ? 1 : props.step}
+          onChange={update}
+          label={"po-" + props.type + "-" + props.name}
+          updateValue={update}
+        />
+      )}
+    </li>
   );
 };
 

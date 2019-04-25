@@ -9,8 +9,6 @@ import Count from "../PatternOptionCount";
 import { optionType } from "../utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 
 const OptionGroup = props => {
   const update = (name, value) => props.updateValue("option", name, value);
@@ -60,7 +58,7 @@ const OptionGroup = props => {
   };
 
   return (
-    <div className="optiongroup">
+    <React.Fragment>
       {props.options.map(name => {
         let key = name;
         let output = [];
@@ -78,13 +76,9 @@ const OptionGroup = props => {
           }
         } else output.push(renderOption(name));
 
-        return (
-          <ListItem key={`lki-${key}`}>
-            <ListItemText>{output}</ListItemText>
-          </ListItem>
-        );
+        return output;
       })}
-    </div>
+    </React.Fragment>
   );
 };
 

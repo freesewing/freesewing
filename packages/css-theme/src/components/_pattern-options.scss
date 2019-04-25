@@ -1,20 +1,49 @@
-li.optiongroup-heading {
+ul.nav.l1,
+ul.nav.l2,
+ul.nav.l3 {
+  margin-left: 0.5rem;
+  padding: 0;
+  @include title-font;
+}
+
+ul.nav li {list-style-type: none;}
+
+ul.nav h2,
+ul.nav h3,
+ul.nav h4 {
+  font-weight: normal;
+  display: block;
+  margin: 0;
+  padding: 0.5rem;
+}
+ul.nav h2:hover,
+ul.nav h3:hover,
+ul.nav h4:hover {
+  cursor: pointer;
+  background: $fc-hoverbg-light;
+}
+ul.nav h2 { font-size: 1.2rem; }
+ul.nav h3 { font-size: 1.1rem; }
+ul.nav h4 { font-size: 1rem; }
+
+li.zdsfsdfptiongroup-heading,
+li.option-headdsg {
   background: $fc-bg-light;
   z-index: 3;
-  h3 {
+  h3, h4 {
     margin: 0;
     svg.collapse-icon { margin-bottom: -5px;}
   }
 }
-li.optiongroup-heading:hover {
+li.optiongroup-heafsding:hover {
   cursor: pointer;
   background: $fc-hoverbg-light;
 }
 body.dark {
-  li.optiongroup-heading {
+  li.optisdfsdongroup-heading {
     background: $fc-bg-dark;
   }
-  li.optiongroup-heading:hover {
+  li.optiongrsdfsdoup-heading:hover {
     background: $fc-hoverbg-dark;
   }
 }

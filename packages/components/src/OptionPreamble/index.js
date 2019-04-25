@@ -4,6 +4,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
 import HelpIcon from "@material-ui/icons/Help";
 import { injectIntl } from "react-intl";
+import ListSubheader from "@material-ui/core/ListSubheader";
 
 const OptionPreamble = props => {
   const styles = {
@@ -31,7 +32,7 @@ const OptionPreamble = props => {
   return (
     <React.Fragment>
       <div style={styles.container}>
-        <div style={styles.left}>
+        <div style={styles.left} onClick={props.toggleExpanded}>
           <h4 id={props.id}>{props.title}</h4>
         </div>
         <div style={styles.right}>
@@ -40,7 +41,10 @@ const OptionPreamble = props => {
           </h4>
         </div>
       </div>
-      <div style={styles.container}>
+      <div
+        style={styles.container}
+        className={expanded ? "expanded" : "collapsed"}
+      >
         <div style={styles.left}>
           <p>{props.desc}</p>
         </div>
@@ -80,7 +84,8 @@ OptionPreamble.propTypes = {
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,
   reset: PropTypes.func.isRequired,
-  showHelp: PropTypes.func.isRequired
+  showHelp: PropTypes.func.isRequired,
+  expanded: PropTypes.bool
 };
 
 export default injectIntl(OptionPreamble);
