@@ -1,8 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import GistConfigurator from ".";
-//import { IntlProvider } from "react-intl";
-//import { strings } from "@freesewing/i18n";
+import DraftSettings from ".";
 
 const props = {
   triggerAction: (type, data) =>
@@ -13,13 +11,21 @@ const props = {
     settings: {
       options: {}
     }
-  }
+  },
+  languages: {
+    de: "German",
+    en: "English",
+    es: "Spanish",
+    fr: "French",
+    nl: "Dutch"
+  },
+  language: "en"
 };
 
-storiesOf("GistConfigurator", module)
+storiesOf("DraftSettings", module)
   .add("Simon metric", () => (
-    <GistConfigurator pattern="simon" {...props} units="metric" />
+    <DraftSettings pattern="simon" gist={false} units="metric" {...props} />
   ))
   .add("Trayvon imperial", () => (
-    <GistConfigurator pattern="trayvon" {...props} units="imperial" />
+    <DraftSettings pattern="trayvon" gist={false} units="imperial" {...props} />
   ));

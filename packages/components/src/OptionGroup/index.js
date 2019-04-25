@@ -9,6 +9,8 @@ import Count from "../PatternOptionCount";
 import { optionType } from "../utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
 
 const OptionGroup = props => {
   const update = (name, value) => props.updateValue("option", name, value);
@@ -26,33 +28,31 @@ const OptionGroup = props => {
       title: <FormattedMessage id={stringKey + "title"} />,
       desc: <FormattedMessage id={stringKey + "description"} />,
       intl: props.intl,
-      pattern: props.pattern.config.name
+      pattern: props.pattern.config.name,
+      key: name
     };
     let noyes = [
       <FormattedMessage id="app.no" />,
       <FormattedMessage id="app.yes" />
     ];
-
     switch (type) {
       case "pct":
-        return <Pct {...option} {...extraProps} key={name} />;
+        return <Pct {...option} {...extraProps} />;
         break;
       case "deg":
-        return <Deg {...option} {...extraProps} key={name} />;
+        return <Deg {...option} {...extraProps} />;
         break;
       case "mm":
-        return (
-          <Mm {...option} {...extraProps} key={name} units={props.units} />
-        );
+        return <Mm {...option} {...extraProps} units={props.units} />;
         break;
       case "bool":
-        return <Bool {...option} {...extraProps} key={name} labels={noyes} />;
+        return <Bool {...option} {...extraProps} labels={noyes} />;
         break;
       case "list":
-        return <List {...option} {...extraProps} key={name} />;
+        return <List {...option} {...extraProps} />;
         break;
       case "count":
-        return <Count {...option} {...extraProps} key={name} />;
+        return <Count {...option} {...extraProps} />;
         break;
       default:
         throw new Error("Unsupport option type: " + type);
@@ -62,8 +62,10 @@ const OptionGroup = props => {
   return (
     <div className="optiongroup">
       {props.options.map(name => {
+        let key = name;
         let output = [];
         if (typeof name === "object") {
+          key = Object.keys(name).pop();
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
@@ -76,7 +78,11 @@ const OptionGroup = props => {
           }
         } else output.push(renderOption(name));
 
-        return output;
+        return (
+          <ListItem key={`lki-${key}`}>
+            <ListItemText>{output}</ListItemText>
+          </ListItem>
+        );
       })}
     </div>
   );

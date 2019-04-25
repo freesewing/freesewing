@@ -1,0 +1,20 @@
+li.optiongroup-heading {
+  background: $fc-bg-light;
+  z-index: 3;
+  h3 {
+    margin: 0;
+    svg.collapse-icon { margin-bottom: -5px;}
+  }
+}
+li.optiongroup-heading:hover {
+  cursor: pointer;
+  background: $fc-hoverbg-light;
+}
+body.dark {
+  li.optiongroup-heading {
+    background: $fc-bg-dark;
+  }
+  li.optiongroup-heading:hover {
+    background: $fc-hoverbg-dark;
+  }
+}
