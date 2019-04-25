@@ -21,7 +21,7 @@ profileQuestion: '¿Das tu consentimiento para procesar los datos de tu perfil?'
 profileShareAnswer: '<b>No</b>, nunca.'
 profileTimingAnswer: '<b>12 meses</b> después de su último inicio de sesión, o hasta que <b> elimine </b> su cuenta o <b> revoque </b> este consentimiento.'
 profileWarning: La revocación de este consentimiento activará la eliminación de todos sus datos. Tiene exactamente el mismo efecto que la eliminación de su cuenta.
-profileWhatAnswerOptional: 'Opcional: una <b> foto de perfil </b>, <b>bio</b>, y <b> cuentas de redes sociales </b>'
+profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
 profileWhatAnswer: 'Su <b> dirección de correo electrónico </b>, <b> nombre de usuario </b> y <b> contraseña </b>.'
 profileWhatQuestion: '¿Qué son los datos de perfil?'
 profileWhyAnswer: 'Para <b> autenticar </b> usted, <b> contactarse </b> con usted cuando sea necesario y crear una <b> comunidad </b>.'
