@@ -1,7 +1,7 @@
 ---
 paperless:
   title: Sin papel
-  description: Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir.
+  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 sa:
   title: Margen de costura
   description: Controla la cantidad de margen de costura incluido en tu patrón
@@ -13,13 +13,13 @@ only:
   description: Le permite controlar qué partes del patrón se incluirán en su patrón
 units:
   title: Unidades
-  description: Controla las unidades utilizadas en tu patrón
+  description: Controls the units used on your pattern
 margin:
   title: Margen
   description: Controla el margen alrededor de las partes del patrón
 complete:
   title: Detalle
-  description: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón.
+  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 layout:
   title: Diseño
-  description: Controla cómo se colocan las partes individuales del patrón en tu patrón.
+  description: Controls how the individual pattern parts are placed on your pattern
