@@ -21,7 +21,7 @@ profileQuestion: Donnez-vous votre consentement pour traiter vos données de pro
 profileShareAnswer: '<b> Non </ b>, jamais.'
 profileTimingAnswer: '<b> 12 mois </b> après votre dernière connexion ou jusqu''à ce que vous <b> supprimiez </b> votre compte ou <b> révoquiez </b> ce consentement.'
 profileWarning: Révoquer ce consentement entraînera la suppression de toutes vos données. Cela a exactement le même effet que de supprimer votre compte.
-profileWhatAnswerOptional: 'Facultatif: une <b> photo de profil </b>, <b>bio</b>, et des <b> comptes de réseaux sociaux </b>'
+profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
 profileWhatAnswer: 'Votre <b> adresse électronique </b>, <b> nom d''utilisateur </b> et <b> mot de passe </ b>.'
 profileWhatQuestion: Que sont les données de profil?
 profileWhyAnswer: 'Pour <b> vous authentifier </b>, <b> vous contacter </b> si nécessaire et créer une <b> communauté </b>.'
