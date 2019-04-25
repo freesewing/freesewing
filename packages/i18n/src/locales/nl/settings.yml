@@ -1,7 +1,7 @@
 ---
 paperless:
   title: Papierloos
-  description: Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken.
+  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 sa:
   title: Naadtoeslag
   description: Bepaalt de hoeveelheid naadtoeslag die is inbegrepen in uw patroon
@@ -13,13 +13,13 @@ only:
   description: Hiermee kunt u precies bepalen welke patroononderdelen in uw patroon worden opgenomen
 units:
   title: Eenheden
-  description: Bepaalt de eenheden die op uw patroon worden gebruikt
+  description: Controls the units used on your pattern
 margin:
   title: Marge
   description: Bepaalt de marge rond patroondelen
 complete:
   title: Detail
-  description: Bepaalt hoe gedetailleerd het patroon is. Ofwel een patroon met alle details, ofwel een eenvoudiger patroon met slechts de contouren van de verschillende patroondelen.
+  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 layout:
   title: Layout
-  description: Bepaalt hoe de afzonderlijke patroondelen op uw patroon worden geplaatst.
+  description: Controls how the individual pattern parts are placed on your pattern
