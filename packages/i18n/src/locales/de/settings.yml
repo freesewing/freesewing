@@ -1,7 +1,7 @@
 ---
 paperless:
   title: Papierlos
-  description: Zeichnet ein Muster mit allen enthaltenen Abmessungen, sodass Sie es auf Stoff oder ein anderes Medium übertragen können, ohne dass Sie drucken müssen.
+  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 sa:
   title: Nahtzugabe
   description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
@@ -13,13 +13,13 @@ only:
   description: Damit können Sie genau steuern, welche Musterteile in Ihrem Muster enthalten sind
 units:
   title: Einheiten
-  description: Steuert die für Ihr Muster verwendeten Einheiten.
+  description: Controls the units used on your pattern
 margin:
   title: Marge
   description: Steuert den Rand um Musterteile
 complete:
   title: Detail
-  description: Steuert, wie detailliert das Muster ist. Entweder ein vollständiges Muster mit allen Details oder eine grundlegende Kontur der Musterteile.
+  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 layout:
   title: Layout
-  description: Steuert, wie die einzelnen Musterteile auf Ihrem Muster platziert werden.
+  description: Controls how the individual pattern parts are placed on your pattern
