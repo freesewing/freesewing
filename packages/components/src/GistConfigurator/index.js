@@ -13,6 +13,7 @@ import CollapsedIcon from "@material-ui/icons/ArrowDropDown";
 import ExpandedIcon from "@material-ui/icons/ArrowRight";
 import PatternOptions from "../PatternOptions";
 import DraftSettings from "../DraftSettings";
+import DraftActions from "../DraftActions";
 
 const GistConfigurator = props => {
   console.log(languages);
@@ -59,6 +60,12 @@ const GistConfigurator = props => {
           language={props.intl.locale}
           languages={languages[props.intl.locale]}
         />
+      </li>
+      <li>
+        <h2>
+          <FormattedMessage id="app.save" />
+        </h2>
+        <DraftActions />
       </li>
     </ul>
   );

@@ -8,6 +8,7 @@ import OptionPreamble from "../OptionPreamble";
 const DraftSettingOnly = props => {
   const [value, setValue] = useState(props.dflt);
   const [parts, setParts] = useState([]);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     setValue(newValue);
@@ -26,38 +27,28 @@ const DraftSettingOnly = props => {
     setParts(newValue);
   };
 
+  const toggleExpanded = () => setExpanded(!expanded);
+
   const list = {
     dflt: props.labels.dflt,
     custom: props.labels.custom
   };
 
-  return (
-    <div className={"pattern-option list"}>
-      <OptionPreamble
-        dflt="dflt"
-        value={value}
-        desc={props.desc}
-        title={props.title}
-        id="po-list-only"
-        displayValue={props.labels[value]}
-        reset={reset}
-        showHelp={() =>
-          props.triggerAction("showHelp", {
-            type: "draftSetting",
-            value: "only"
-          })
-        }
-      />
-      <FormFieldList
-        name="only"
-        value={value}
-        dflt={props.dflt}
-        onChange={update}
-        label="po-list-only"
-        updateValue={update}
-        list={list}
-      />
-      {value === "custom" ? (
+  let option = (
+    <FormFieldList
+      name="only"
+      value={value}
+      dflt={props.dflt}
+      onChange={update}
+      label="po-list-only"
+      updateValue={update}
+      list={list}
+    />
+  );
+  if (value === "custom")
+    option = (
+      <React.Fragment>
+        {option}
         <FormFieldChecks
           checks={props.parts}
           name="parts"
@@ -68,10 +59,30 @@ const DraftSettingOnly = props => {
           updateValue={updateCustom}
           list={list}
         />
-      ) : (
-        ""
-      )}
-    </div>
+      </React.Fragment>
+    );
+
+  return (
+    <li>
+      <OptionPreamble
+        dflt="dflt"
+        value={value}
+        desc={props.desc}
+        title={props.title}
+        id="po-list-only"
+        displayValue={props.labels[value]}
+        reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
+        showHelp={() =>
+          props.triggerAction("showHelp", {
+            type: "draftSetting",
+            value: "only"
+          })
+        }
+        option={option}
+      />
+    </li>
   );
 };
 

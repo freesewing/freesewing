@@ -9,7 +9,6 @@ import { optionType, defaultGist, gistDefaults } from "../utils";
 import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
 import List from "@material-ui/core/List";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const PatternOptions = props => {
@@ -48,7 +47,9 @@ const PatternOptions = props => {
     output.push(
       <li className={open ? "expanded" : "collapsed"} key={group + "-ghead"}>
         <h3 onClick={() => toggleGroup(group)}>
-          <DownIcon className={"icon-col-exp "+ (open ? "expanded" : "collapsed")}/>
+          <DownIcon
+            className={"icon-col-exp " + (open ? "expanded" : "collapsed")}
+          />
           <FormattedMessage id={"optiongroups." + group} />
         </h3>
         {children}

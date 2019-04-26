@@ -40,7 +40,7 @@ ul.nav span.custom {
   font-weight: bold;
 }
 .col-exp {
-  transition: max-height 0.3s ease-in-out, opacity 0.2s ease 0.2s;
+  transition: max-height 0.2s ease-in-out, opacity 0.1s cubic-bezier(.55,.06,.68,.19) 0.05s;
 }
 
 .col-exp.expanded {
@@ -64,6 +64,7 @@ svg.icon-col-exp.expanded {
   opacity: 1;
 }
 
+ul.nav.l2 div.col-exp,
 ul.nav.l3 div.col-exp {
   margin: 0 27px;
 }

@@ -5,6 +5,7 @@ import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingLanguage = props => {
   const [value, setValue] = useState(props.dflt);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     props.updateValue(props.name, newValue);
@@ -16,8 +17,22 @@ const DraftSettingLanguage = props => {
     props.updateValue(props.name, props.dflt);
   };
 
+  const toggleExpanded = () => setExpanded(!expanded);
+
+  const option = (
+    <FormFieldList
+      name={props.name}
+      value={value}
+      dflt={props.dflt}
+      onChange={update}
+      label={"po-list-" + props.name}
+      updateValue={update}
+      list={props.languages}
+    />
+  );
+
   return (
-    <div className={"pattern-option list"}>
+    <li>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -26,23 +41,17 @@ const DraftSettingLanguage = props => {
         id={"po-list-" + props.name}
         displayValue={props.languages[value]}
         reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
         showHelp={() =>
           props.triggerAction("showHelp", {
             type: "draftSetting",
             value: props.name
           })
         }
+        option={option}
       />
-      <FormFieldList
-        name={props.name}
-        value={value}
-        dflt={props.dflt}
-        onChange={update}
-        label={"po-list-" + props.name}
-        updateValue={update}
-        list={props.languages}
-      />
-    </div>
+    </li>
   );
 };
 

@@ -4,9 +4,6 @@ import { gistDefaults } from "../utils";
 import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
 import List from "@material-ui/core/List";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import CollapsedIcon from "@material-ui/icons/KeyboardArrowDown";
-import ExpandedIcon from "@material-ui/icons/ArrowRight";
 import DraftSettingSa from "../DraftSettingSa";
 import DraftSettingMargin from "../DraftSettingMargin";
 import DraftSettingComplete from "../DraftSettingComplete";
@@ -14,6 +11,7 @@ import DraftSettingPaperless from "../DraftSettingPaperless";
 import DraftSettingUnits from "../DraftSettingUnits";
 import DraftSettingLanguage from "../DraftSettingLanguage";
 import DraftSettingOnly from "../DraftSettingOnly";
+import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const DraftSettings = props => {
   const [expanded, setExpanded] = useState([]);
@@ -104,27 +102,24 @@ const DraftSettings = props => {
       {Object.keys(groups).map(group => {
         let open = true;
         if (expanded.indexOf(group) === -1) open = false;
+        let children = null;
+        if (open) children = groups[group].map(component => component);
         return (
-          <React.Fragment key={group + "-ghead"}>
-            <ListSubheader
-              className="optiongroup-heading"
-              className={
-                (open ? "expanded" : "collapsed") + " optiongroup-heading"
-              }
-              onClick={() => toggleGroup(group)}
+          <React.Fragment>
+            <li
+              className={open ? "expanded" : "collapsed"}
+              key={group + "-ghead"}
             >
-              <h3>
-                {open ? (
-                  <CollapsedIcon className="collapse-icon" />
-                ) : (
-                  <ExpandedIcon className="collapse-icon" />
-                )}
+              <h3 onClick={() => toggleGroup(group)}>
+                <DownIcon
+                  className={
+                    "icon-col-exp " + (open ? "expanded" : "collapsed")
+                  }
+                />
                 <FormattedMessage id={"optiongroups." + group} />
               </h3>
-            </ListSubheader>
-            {expanded.indexOf(group) === -1
-              ? null
-              : groups[group].map(component => component)}
+            </li>
+            {children}
           </React.Fragment>
         );
       })}

@@ -9,6 +9,7 @@ const DraftSettingSa = props => {
   const [value, setValue] = useState("dflt");
   const [saValue, setSaValue] = useState(defaultSa[props.units]);
   const [customValue, setCustomValue] = useState(10);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     switch (newValue) {
@@ -35,6 +36,7 @@ const DraftSettingSa = props => {
     setSaValue(defaultSa[props.units]);
     props.updateValue("sa", defaultSa[props.units]);
   };
+  const toggleExpanded = () => setExpanded(!expanded);
 
   const updateCustom = (name, newValue, evt) => {
     newValue = roundMm(newValue);
@@ -56,33 +58,21 @@ const DraftSettingSa = props => {
     custom: props.labels.custom
   };
 
-  return (
-    <div className={"pattern-option list"}>
-      <OptionPreamble
-        dflt={"dflt"}
-        value={value}
-        desc={props.desc}
-        title={props.title}
-        id="po-list-sa"
-        displayValue={formatMm(saValue, props.units)}
-        reset={reset}
-        showHelp={() =>
-          props.triggerAction("showHelp", {
-            type: "draftSetting",
-            value: "sa"
-          })
-        }
-      />
-      <FormFieldList
-        name="sa"
-        value={value}
-        dflt={"dflt"}
-        onChange={update}
-        label="po-bool-sa"
-        updateValue={update}
-        list={list}
-      />
-      {value === "custom" ? (
+  let option = (
+    <FormFieldList
+      name="sa"
+      value={value}
+      dflt={"dflt"}
+      onChange={update}
+      label="po-bool-sa"
+      updateValue={update}
+      list={list}
+    />
+  );
+  if (value === "custom")
+    option = (
+      <React.Fragment>
+        {option}
         <FormFieldSlider
           name="customSa"
           value={saValue}
@@ -93,10 +83,30 @@ const DraftSettingSa = props => {
           max={25.4}
           step={sliderStep[props.units]}
         />
-      ) : (
-        ""
-      )}
-    </div>
+      </React.Fragment>
+    );
+
+  return (
+    <li>
+      <OptionPreamble
+        dflt={"dflt"}
+        value={value}
+        desc={props.desc}
+        title={props.title}
+        id="po-list-sa"
+        displayValue={formatMm(saValue, props.units)}
+        reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
+        showHelp={() =>
+          props.triggerAction("showHelp", {
+            type: "draftSetting",
+            value: "sa"
+          })
+        }
+        option={option}
+      />
+    </li>
   );
 };
 
