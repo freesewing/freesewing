@@ -5,6 +5,7 @@ import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionBool = props => {
   const [value, setValue] = useState(props.dflt);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     props.updateValue(props.name, newValue);
@@ -16,8 +17,21 @@ const PatternOptionBool = props => {
     props.updateValue(props.name, props.dflt);
   };
 
+  const toggleExpanded = () => setExpanded(!expanded);
+
+  let option = (
+    <FormFieldBool
+      name={props.name}
+      value={value}
+      dflt={props.dflt}
+      onChange={update}
+      label={"po-bool-" + props.name}
+      updateValue={update}
+      labels={props.labels}
+    />
+  )
   return (
-    <div className={"pattern-option bool"}>
+    <li>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -25,6 +39,8 @@ const PatternOptionBool = props => {
         title={props.title}
         id={"po-list-" + props.name}
         displayValue={value ? props.labels[1] : props.labels[0]}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
         reset={reset}
         showHelp={() =>
           props.triggerAction("showHelp", {
@@ -32,17 +48,9 @@ const PatternOptionBool = props => {
             value: props.name
           })
         }
+        option={option}
       />
-      <FormFieldBool
-        name={props.name}
-        value={value}
-        dflt={props.dflt}
-        onChange={update}
-        label={"po-bool-" + props.name}
-        updateValue={update}
-        labels={props.labels}
-      />
-    </div>
+    </li>
   );
 };
 

@@ -13,6 +13,7 @@ import OptionPreamble from "../OptionPreamble";
 const PatternOptionMillimeter = props => {
   const [value, setValue] = useState(props.dflt);
   const [previousValue, setPreviousValue] = useState(props.dflt);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     newValue = roundMm(newValue, props.units);
@@ -33,6 +34,8 @@ const PatternOptionMillimeter = props => {
     props.updateValue(props.name, props.dflt);
   };
 
+  const toggleExpanded = () => setExpanded(!expanded);
+
   const styles = {
     container: {
       display: "flex",
@@ -46,8 +49,21 @@ const PatternOptionMillimeter = props => {
     right: { margin: "0 0.5rem" }
   };
 
+  let option = (
+    <FormFieldSlider
+      name={props.name}
+      value={value}
+      min={roundMmUp(props.min, props.units)}
+      max={roundMmDown(props.max, props.units)}
+      step={sliderStep[props.units]}
+      onChange={update}
+      label={"po-mm-" + props.name}
+      updateValue={update}
+    />
+  )
+
   return (
-    <div className="pattern-option millimeter">
+    <li>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -56,24 +72,17 @@ const PatternOptionMillimeter = props => {
         id={"po-mm-" + props.name}
         displayValue={formatMm(value, props.units)}
         reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
         showHelp={() =>
           props.triggerAction("showHelp", {
             type: "patternOption",
             value: props.name
           })
         }
+        option={option}
       />
-      <FormFieldSlider
-        name={props.name}
-        value={value}
-        min={roundMmUp(props.min, props.units)}
-        max={roundMmDown(props.max, props.units)}
-        step={sliderStep[props.units]}
-        onChange={update}
-        label={"po-mm-" + props.name}
-        updateValue={update}
-      />
-    </div>
+    </li>
   );
 };
 

@@ -5,7 +5,7 @@ import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
 import List from "@material-ui/core/List";
 import ListSubheader from "@material-ui/core/ListSubheader";
-import CollapsedIcon from "@material-ui/icons/ArrowDropDown";
+import CollapsedIcon from "@material-ui/icons/KeyboardArrowDown";
 import ExpandedIcon from "@material-ui/icons/ArrowRight";
 import DraftSettingSa from "../DraftSettingSa";
 import DraftSettingMargin from "../DraftSettingMargin";
@@ -100,7 +100,7 @@ const DraftSettings = props => {
   };
 
   return (
-    <List subheader={<h3 />} className="draft-settings gist-side">
+    <ul className="nav l2">
       {Object.keys(groups).map(group => {
         let open = true;
         if (expanded.indexOf(group) === -1) open = false;
@@ -128,7 +128,7 @@ const DraftSettings = props => {
           </React.Fragment>
         );
       })}
-    </List>
+    </ul>
   );
 };
 

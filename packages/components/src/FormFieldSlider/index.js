@@ -6,7 +6,7 @@ import { withStyles } from "@material-ui/core/styles";
 const PaddedSlider = withStyles({
   container: {
     padding: "25px 0",
-    overflowX: "hidden" // See: https://github.com/mui-org/material-ui/issues/14234
+    //overflowX: "hidden" // See: https://github.com/mui-org/material-ui/issues/14234
   },
   track: { height: "4px" },
   thumb: { width: "16px", height: "16px" }

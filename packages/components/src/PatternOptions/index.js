@@ -10,8 +10,7 @@ import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
 import List from "@material-ui/core/List";
 import ListSubheader from "@material-ui/core/ListSubheader";
-import CollapsedIcon from "@material-ui/icons/ArrowDropDown";
-import ExpandedIcon from "@material-ui/icons/ArrowRight";
+import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const PatternOptions = props => {
   const [expanded, setExpanded] = useState([]);
@@ -49,11 +48,7 @@ const PatternOptions = props => {
     output.push(
       <li className={open ? "expanded" : "collapsed"} key={group + "-ghead"}>
         <h3 onClick={() => toggleGroup(group)}>
-          {open ? (
-            <CollapsedIcon className="collapse-icon" />
-          ) : (
-            <ExpandedIcon className="collapse-icon" />
-          )}
+          <DownIcon className={"icon-col-exp "+ (open ? "expanded" : "collapsed")}/>
           <FormattedMessage id={"optiongroups." + group} />
         </h3>
         {children}

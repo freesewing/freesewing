@@ -5,6 +5,7 @@ import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionList = props => {
   const [value, setValue] = useState(props.dflt);
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     props.updateValue(props.name, newValue);
@@ -15,6 +16,8 @@ const PatternOptionList = props => {
     setValue(props.dflt);
     props.updateValue(props.name, props.dflt);
   };
+
+  const toggleExpanded = () => setExpanded(!expanded);
 
   const styles = {
     container: {
@@ -37,9 +40,19 @@ const PatternOptionList = props => {
       id: stringKey + item,
       defaultMessage: item
     });
-
+  let option = (
+    <FormFieldList
+      name={props.name}
+      value={value}
+      dflt={props.dflt}
+      onChange={update}
+      label={"po-list-" + props.name}
+      updateValue={update}
+      list={list}
+    />
+  )
   return (
-    <div className={"pattern-option list"}>
+    <li>
       <OptionPreamble
         dflt={props.dflt}
         value={value}
@@ -48,23 +61,17 @@ const PatternOptionList = props => {
         id={"po-list-" + props.name}
         displayValue={list[value]}
         reset={reset}
+        toggleExpanded={toggleExpanded}
+        expanded={expanded}
         showHelp={() =>
           props.triggerAction("showHelp", {
             type: "patternOption",
             value: props.name
           })
         }
+        option={option}
       />
-      <FormFieldList
-        name={props.name}
-        value={value}
-        dflt={props.dflt}
-        onChange={update}
-        label={"po-list-" + props.name}
-        updateValue={update}
-        list={list}
-      />
-    </div>
+    </li>
   );
 };
 

@@ -1,49 +1,77 @@
+ul.nav.l1 { overflow-x: hidden;}
 ul.nav.l1,
 ul.nav.l2,
-ul.nav.l3 {
-  margin-left: 0.5rem;
+ul.nav.l3,
+ul.nav.l4 {
+  margin: 0;
   padding: 0;
   @include title-font;
 }
 
 ul.nav li {list-style-type: none;}
-
+ul.nav p { @include body-font;}
+ul.nav.l4 li { padding-left: 0.75rem; }
 ul.nav h2,
 ul.nav h3,
-ul.nav h4 {
+ul.nav h4,
+ul.nav h5 {
   font-weight: normal;
   display: block;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
 }
-ul.nav h2:hover,
 ul.nav h3:hover,
 ul.nav h4:hover {
   cursor: pointer;
   background: $fc-hoverbg-light;
 }
 ul.nav h2 { font-size: 1.2rem; }
-ul.nav h3 { font-size: 1.1rem; }
 ul.nav h4 { font-size: 1rem; }
-
-li.zdsfsdfptiongroup-heading,
-li.option-headdsg {
+ul.nav h5 { font-size: 1rem; padding-left: 1.5rem; font-weight: bold;}
+ul.nav h3 {
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
   background: $fc-bg-light;
   z-index: 3;
-  h3, h4 {
-    margin: 0;
-    svg.collapse-icon { margin-bottom: -5px;}
-  }
 }
-li.optiongroup-heafsding:hover {
-  cursor: pointer;
-  background: $fc-hoverbg-light;
+ul.nav span.custom {
+  color: $fc-notice-light;
+  font-weight: bold;
 }
+.col-exp {
+  transition: max-height 0.3s ease-in-out, opacity 0.2s ease 0.2s;
+}
+
+.col-exp.expanded {
+  margin-top: 0;
+  opacity: 1;
+}
+.col-exp.collapsed {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+svg.icon-col-exp {
+  margin-bottom: -5px;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0.4;
+}
+svg.icon-col-exp.expanded {
+  transform: scale(-1);
+  opacity: 1;
+}
+
+ul.nav.l3 div.col-exp {
+  margin: 0 27px;
+}
+
+button.mini-icon-btn {
+  margin: 0;
+  padding: 2px;
+}
+
 body.dark {
-  li.optisdfsdongroup-heading {
-    background: $fc-bg-dark;
-  }
-  li.optiongrsdfsdoup-heading:hover {
-    background: $fc-hoverbg-dark;
-  }
 }

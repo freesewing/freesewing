@@ -13,7 +13,7 @@ import { injectIntl } from "react-intl";
 const OptionGroup = props => {
   const update = (name, value) => props.updateValue("option", name, value);
 
-  const renderOption = name => {
+  const renderOption = (name, sub=false) => {
     let option = props.pattern.config.options[name];
     let type = optionType(option);
     let stringKey = `options.${props.pattern.config.name}.${name}.`;
@@ -67,12 +67,14 @@ const OptionGroup = props => {
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
-              <h4 key={subGroup + "-title"}>
+              <h5 key={subGroup + "-title"} className="subheading">
                 <FormattedMessage id={"optiongroups." + subGroup} />
-              </h4>
+              </h5>
             );
+            let children = [];
             for (let option of name[subGroup])
-              output.push(renderOption(option));
+              children.push(renderOption(option, true));
+            output.push(<ul className="nav l4">{children}</ul>);
           }
         } else output.push(renderOption(name));
 

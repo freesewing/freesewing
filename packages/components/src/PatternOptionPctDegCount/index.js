@@ -31,21 +31,21 @@ const PatternOptionPctDegCount = props => {
 
   const toggleExpanded = () => setExpanded(!expanded);
 
-  const styles = {
-    container: {
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center"
-    },
-    left: {
-      flexGrow: 1,
-      margin: "0 0.5rem"
-    },
-    right: { margin: "0 0.5rem" }
-  };
   let unit = "";
   if (props.type === "pct") unit = "%";
   if (props.type === "deg") unit = "°";
+
+  let option = (
+    <FormFieldSlider
+      name={props.name}
+      value={value}
+      min={props.min}
+      max={props.max}
+      step={props.type === "count" ? 1 : props.step}
+      onChange={update}
+      label={"po-" + props.type + "-" + props.name}
+      updateValue={update}
+    />)
 
   return (
     <li>
@@ -65,19 +65,8 @@ const PatternOptionPctDegCount = props => {
             value: props.name
           })
         }
+        option={option}
       />
-      {!expanded ? null : (
-        <FormFieldSlider
-          name={props.name}
-          value={value}
-          min={props.min}
-          max={props.max}
-          step={props.type === "count" ? 1 : props.step}
-          onChange={update}
-          label={"po-" + props.type + "-" + props.name}
-          updateValue={update}
-        />
-      )}
     </li>
   );
 };
