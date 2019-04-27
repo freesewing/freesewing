@@ -1,5 +1,5 @@
 export default class Storage {
-  set(key, value, isJson) {
+  set(key, value, raw = false) {
     if (typeof localStorage === "undefined") {
       return;
     }
@@ -9,13 +9,13 @@ export default class Storage {
     if (typeof value === "undefined" || value === null) {
       localStorage.removeItem(_key);
     } else {
-      localStorage.setItem(_key, isJson ? JSON.stringify(value) : value);
+      localStorage.setItem(_key, raw ? value : JSON.stringify(value));
     }
 
     return value;
   }
 
-  get(key, isJson) {
+  get(key, raw = false) {
     if (typeof localStorage === "undefined") {
       return;
     }
@@ -24,6 +24,6 @@ export default class Storage {
 
     const value = localStorage.getItem(_key);
 
-    return isJson ? JSON.parse(value) : value;
+    return raw ? value : JSON.parse(value);
   }
 }

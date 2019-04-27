@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const Emblem = props => (
   <React.Fragment>
-    <span className="emb" style={{color: props.c1}}>{props.t1}</span>
-    <span className="lem" style={{color: props.c2}}>{props.t2}</span>
+    <span className="emb" style={{color: props.c1, fontSize: props.size+"px"}}>{props.t1}</span>
+    <span className="lem" style={{color: props.c2, fontSize: props.size+"px"}}>{props.t2}</span>
   </React.Fragment>
 );
 
@@ -17,11 +17,11 @@ Emblem.propTypes = {
 };
 
 Emblem.defaultProps = {
-  size: 24,
+  size: 36,
   c1: "#111111",
   c2: "#111111",
   t1: "",
-  t2: ""
+  t2: "",
 };
 
 export default Emblem;

@@ -1,0 +1,65 @@
+header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: calc(100% - 52px);
+  margin: 0;
+  padding: 0 26px;
+  background: $fc-bg-dark;
+
+  div.logo {
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    color: $oc-gray-2;
+  }
+  div.emblem {
+    margin-right: 26px;
+  }
+  div.spread { flex-grow: 1}
+  a.nav,
+  button {
+    @include title-font;
+    margin: 0;
+    padding: 0 13px;
+    height: 60px;
+    color: $fc-text-dark;
+    border: 0;
+    line-height: 64px;
+    border-bottom: 4px solid $fc-bg-dark;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease-in-out;
+    background:none;
+  }
+  button {
+    /* For buttons, border does not count for height */
+    height: 64px;
+  }
+  button:hover,
+  a.nav:hover {
+    cursor: pointer;
+    color: $fc-link-dark;
+    border-color: $fc-link-dark;
+  }
+  a.nav.active {
+    border-color: $fc-link-dark;
+  }
+  svg.nav-icon {
+    margin-right: 5px;
+    margin-bottom: -6px;
+  }
+  svg.nav-icon.moon {
+    transform: rotate(26deg);
+  }
+}
+
+header.navbar > div {
+  display: flex;
+  align-items: center;
+}
+
