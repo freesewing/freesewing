@@ -15,6 +15,7 @@ create-freesewing-pattern:
   test: "ava -v && standard *.js lib/*.js"
 css-theme:
   build: "npx node-sass --output-style compressed src/theme.scss ../../dist/css-theme/theme.css"
+  watch: "npx node-sass --watch --output-style compressed src/theme.scss ../../dist/css-theme/theme.css"
 components:
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   build: "./scripts/build.sh"
