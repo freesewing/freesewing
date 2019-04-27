@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormFieldList from "../../form/FormFieldList";
+import FormFieldList from "../../.form/FormFieldList";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingUnits = props => {

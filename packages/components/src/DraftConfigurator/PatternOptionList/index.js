@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import FormFieldList from "../../form/FormFieldList";
+import FormFieldList from "../../.form/FormFieldList";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionList = props => {

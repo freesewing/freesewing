@@ -10,10 +10,10 @@ cd $DIR/../src/
 rm -rf ../../../dist/components
 for d in * ; do {
   cd ..
-  # do something here
   mkdir -p ../../dist/components/$d
+  echo "Building $d"
   rollup -c ./rollup.config.js ./src/$d/index.js -m -o ../../dist/components/$d/index.js -f cjs
-  rollup -c ./rollup.config.js ./src/$d/index.js -m -o ../../dist/components/$d/index.mjs -f es
+  rollup --silent -c ./rollup.config.js ./src/$d/index.js -m -o ../../dist/components/$d/index.mjs -f es
   cd src
 }
 done

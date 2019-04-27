@@ -1,5 +1,5 @@
 import React from "react";
-import { storage, cloneObject } from "../utils";
+import { storage, cloneObject } from "../.utils";
 
 const withGist = (WrappedComponent, settings={gist:{}, store:false}) => {
 

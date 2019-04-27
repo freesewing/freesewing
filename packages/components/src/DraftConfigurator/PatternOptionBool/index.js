@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import FormFieldBool from "../../form/FormFieldBool";
+import FormFieldBool from "../../.form/FormFieldBool";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionBool = props => {

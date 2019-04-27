@@ -6,8 +6,8 @@ import {
   roundMmUp,
   roundMmDown,
   formatMm
-} from "../../utils";
-import FormFieldSlider from "../../form/FormFieldSlider";
+} from "../../.utils";
+import FormFieldSlider from "../../.form/FormFieldSlider";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionMillimeter = props => {

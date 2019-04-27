@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { gistDefaults } from "../../utils";
+import { gistDefaults } from "../../.utils";
 import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
-import List from "@material-ui/core/List";
 import DraftSettingSa from "../DraftSettingSa";
 import DraftSettingMargin from "../DraftSettingMargin";
 import DraftSettingComplete from "../DraftSettingComplete";

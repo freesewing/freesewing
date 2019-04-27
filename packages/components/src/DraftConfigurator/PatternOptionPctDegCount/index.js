@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import FormFieldSlider from "../../form/FormFieldSlider";
+import FormFieldSlider from "../../.form/FormFieldSlider";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionPctDegCount = props => {

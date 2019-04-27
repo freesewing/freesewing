@@ -5,7 +5,6 @@ import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
 import HelpIcon from "@material-ui/icons/Help";
 import { injectIntl } from "react-intl";
-import ListSubheader from "@material-ui/core/ListSubheader";
 
 const OptionPreamble = props => {
   const styles = {

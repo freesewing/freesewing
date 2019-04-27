@@ -5,10 +5,9 @@ import Deg from "../PatternOptionDegree";
 import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import OptionGroup from "../OptionGroup";
-import { optionType, defaultGist, gistDefaults } from "../../utils";
+import { optionType, defaultGist, gistDefaults } from "../../.utils";
 import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
-import List from "@material-ui/core/List";
 import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const PatternOptions = props => {

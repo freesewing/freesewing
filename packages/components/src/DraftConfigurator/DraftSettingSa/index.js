@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import FormFieldList from "../../form/FormFieldList";
-import FormFieldSlider from "../../form/FormFieldSlider";
-import { formatMm, roundMm, defaultSa, sliderStep } from "../../utils";
+import FormFieldList from "../../.form/FormFieldList";
+import FormFieldSlider from "../../.form/FormFieldSlider";
+import { formatMm, roundMm, defaultSa, sliderStep } from "../../.utils";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingSa = props => {

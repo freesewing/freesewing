@@ -6,7 +6,7 @@ import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import List from "../PatternOptionList";
 import Count from "../PatternOptionCount";
-import { optionType } from "../../utils";
+import { optionType } from "../../.utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
 
