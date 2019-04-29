@@ -22,24 +22,13 @@ const Workbench = props => {
   const [settings, setSettings] = useState(false);
   const [theme, setTheme] = useState("light");
 
-  const themes = { dark, light };
-
   const showLanguageChooser = () => setDisplay("language");
-
-  const loadPattern = () => {
-    let p = storage.get("pattern");
-    if (Object.keys(props.freesewing.patterns).indexOf(p) === -1)
-      p = props.pattern;
-    setPattern(p);
-    return p;
-  };
+  const toggleSettings = () => setSettings(!settings);
 
   const updatePattern = p => {
     setPattern(p);
     store.set("pattern", p);
   };
-
-  const toggleSettings = () => setSettings(!settings);
 
   const toggleDarkMode = () => {
     if (theme === "light") setTheme("dark");
@@ -108,9 +97,10 @@ const Workbench = props => {
   }
 
   // Load defaults into gist
-  console.log(props.info);
+  console.log(props);
   //props.loadGistDefaults({options: props.info.config.options});
 
+  const themes = { dark, light };
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
       <div

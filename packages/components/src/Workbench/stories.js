@@ -2,13 +2,13 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Workbench from ".";
 import freesewing from "@freesewing/core";
-import aaron from "@freesewing/aaron";
-import { patternInfo } from "@freesewing/patterns";
+import aaron, { config } from "@freesewing/aaron";
 
 const props = {
   freesewing,
   pattern: aaron,
-  info: patternInfo.aaron
+  config: config
 };
-console.log(patternInfo, props);
+
+console.log("story", config, props);
 storiesOf("Workbench", module).add("Aaron", () => <Workbench {...props} />);
