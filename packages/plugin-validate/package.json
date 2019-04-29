@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-validate",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "description": "A FreeSewing plugin that validates aspects of your code",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
