@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-logo",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "A FreeSewing plugin to add our logo to your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",

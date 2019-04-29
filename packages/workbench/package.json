@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/workbench",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "A React component to facilitate FreeSewing pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,10 +35,10 @@
     "react-intl": "^2.8.0"
   },
   "dependencies": {
-    "@freesewing/components": "^2.0.0-alpha.0",
-    "@freesewing/css-theme": "^2.0.0-alpha.0",
-    "@freesewing/mui-theme": "^2.0.0-alpha.0",
-    "@freesewing/utils": "^2.0.0-alpha.0"
+    "@freesewing/components": "^2.0.0-alpha.1",
+    "@freesewing/css-theme": "^2.0.0-alpha.1",
+    "@freesewing/mui-theme": "^2.0.0-alpha.1",
+    "@freesewing/utils": "^2.0.0-alpha.1"
   },
   "files": [
     "dist/*",
