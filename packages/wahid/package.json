@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/wahid",
-  "version": "0.32.4",
+  "version": "2.0.0-alpha.0",
   "description": "A FreeSewing pattern for a classic fitted waistcoat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -31,9 +31,9 @@
     "pubtest": "npm publish --registry http://localhost:6662"
   },
   "peerDependencies": {
+    "@freesewing/brian": "^0.32.4",
     "@freesewing/core": "^0.32.4",
     "@freesewing/plugin-bundle": "^0.32.4",
-    "@freesewing/brian": "^0.32.4",
     "@freesewing/plugin-buttons": "^0.32.4",
     "@freesewing/plugin-round": "^0.32.4"
   },

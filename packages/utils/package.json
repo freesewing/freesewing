@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "0.32.4",
+  "version": "2.0.0-alpha.0",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -28,9 +28,6 @@
     "test": "echo \"utils: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
