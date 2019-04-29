@@ -11,6 +11,7 @@ allDocumentation: All documentation
 andThatIsAwesome: And that is awesome
 applyThisLayout: Apply this layout
 areYouSureYouWantToContinue: Are you sure you want to continue?
+askForHelp: Ask for help
 automatic: Automatic
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
@@ -180,6 +181,7 @@ startOver: Start over
 startTranslatingNowOrRead: '{startTranslatingNow}, or read the {documentationForTranslators} first.'
 startTranslatingNow: Start translating now
 subscribe: Subscribe
+support: Support
 supportFreesewing: Support freesewing
 tellMeMore: Tell me more
 thanksForYourSupport: Thanks for your support

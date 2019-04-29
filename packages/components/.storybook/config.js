@@ -1,6 +1,6 @@
 import React from "react";
 import { configure } from "@storybook/react";
-import "../../../dist/css-theme/theme.css";
+import "../../css-theme/dist/theme.css";
 import { addParameters, addDecorator } from "@storybook/react";
 import { IntlProvider } from "react-intl";
 import { strings } from "@freesewing/i18n";

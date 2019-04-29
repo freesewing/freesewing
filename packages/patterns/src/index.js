@@ -13,6 +13,7 @@ import Tamiko from "@freesewing/tamiko";
 import Trayvon from "@freesewing/trayvon";
 import Wahid from "@freesewing/wahid";
 import info from "./info";
+import { cloneObject } from "@freesewing/utils";
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 const uncapitalize = string => string.charAt(0).toLowerCase() + string.slice(1);
@@ -43,7 +44,8 @@ for (let p of patternList) {
   info[p].measurements = pattern.config.measurements;
   info[p].options = [];
   for (let o of Object.keys(pattern.config.options)) {
-    if (typeof pattern.config.options[o] === "object") info[p].options.push(o);
+    if (typeof pattern.config.options[o] === "object")
+      info[p].options.push(cloneObject(o));
   }
   info[p].config = pattern.config;
 }

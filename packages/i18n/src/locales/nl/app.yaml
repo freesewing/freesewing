@@ -11,6 +11,7 @@ allDocumentation: Alle documentatie
 andThatIsAwesome: En dat is geweldig
 applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
+askForHelp: Vraag om hulp
 automatic: Automatisch
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
@@ -180,6 +181,7 @@ startOver: Begin opnieuw
 startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
 subscribe: Abonneren
+support: Ondersteuning
 supportFreesewing: Ondersteun freesewing
 tellMeMore: Vertel me meer
 thanksForYourSupport: Bedankt voor je steun

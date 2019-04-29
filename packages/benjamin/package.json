@@ -1,78 +1,51 @@
 {
-  "version": "0.2.0",
   "name": "@freesewing/benjamin",
-  "description": "Freesewing pattern for benjamin",
-  "author": "Wouter van Wageningen <wouter.vdub@yahoo.com> (https://github.com/woutervdub)",
+  "version": "0.32.4",
+  "description": "A FreeSewing pattern for a bow tie",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "homepage": "https://github.com/freesewing/benjamin#readme",
-  "repository": "github:freesewing/benjamin",
   "bugs": {
-    "url": "https://github.com/freesewing/benjamin/issues"
+    "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
     "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
     "pattern",
-    "sewing"
+    "sewing",
+    "sewing pattern"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "unpkg": "dist/browser.js",
   "scripts": {
-    "precommit": "npm run pretty && lint-staged",
-    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
-    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
-    "major": "npm version major -m ':bookmark: v%s' && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "pretty": "npx prettier --write 'src/*.js'",
-    "lint": "eslint --fix 'src/*.js'",
-    "watch": "nodemon -w src -w config --exec 'rollup -c rollup.config.js -o dist/browser.js -f iife -m true -n freesewing_patterns_florent --footer \"freesewing.patterns.benjamin=freesewing_patterns_template;\"'",
-    "browserbuild": "rollup -c rollup.config.js -o dist/browser.js -f iife -m true -n freesewing_patterns_benjamin --footer \"freesewing.patterns.template = freesewing_patterns_benjamin;\"",
-    "nodebuild": "rollup -c rollup.config.js -o dist/index.js -f cjs -m true",
-    "modulebuild": "rollup -c rollup.config.js -o dist/index.mjs -f es -m true",
-    "build": "npm run clean && npm run browserbuild && npm run nodebuild && npm run modulebuild"
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "test": "echo \"benjamin: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "peerDependencies": {
+    "@freesewing/core": "^0.32.4",
+    "@freesewing/plugin-bundle": "^0.32.4"
   },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@freesewing/plugin-bundle": "0.8.0",
-    "freesewing": "latest"
-  },
-  "devDependencies": {
-    "@babel/core": "7.4.0",
-    "@freesewing/antman": "latest",
-    "@freesewing/models": "latest",
-    "@freesewing/plugin-debug": "latest",
-    "@freesewing/plugin-designer": "latest",
-    "@freesewing/plugin-i18n": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/plugin-validate": "latest",
-    "eslint": "5.15.3",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-plugin-prettier": "latest",
-    "husky": "latest",
-    "lint-staged": "8.1.5",
-    "prettier": "latest",
-    "rimraf": "latest",
-    "rollup": "1.7.2",
-    "rollup-plugin-babel": "latest",
-    "rollup-plugin-babel-minify": "8.0.0",
-    "rollup-plugin-json": "4.0.0",
-    "rollup-plugin-node-resolve": "latest"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
-    "package-lock.json",
     "package.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
 }

@@ -6,13 +6,12 @@ import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import List from "../PatternOptionList";
 import Count from "../PatternOptionCount";
-import { optionType } from "../../.utils";
+import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
 
 const OptionGroup = props => {
-
-  const renderOption = (name, sub=false) => {
+  const renderOption = (name, sub = false) => {
     let option = props.pattern.config.options[name];
     let type = optionType(option);
     let stringKey = `options.${props.pattern.config.name}.${name}.`;

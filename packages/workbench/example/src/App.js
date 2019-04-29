@@ -1,5 +1,5 @@
 import React from "react";
-import Workbench from "../../workbench";
+import Workbench from "@freesewing/workbench";
 import freesewing from "@freesewing/core";
 //import Aaron from "@freesewing/aaron";
 //import Brian from "@freesewing/brian";

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/wahid",
-  "version": "0.33.0",
+  "version": "0.32.4",
   "description": "A FreeSewing pattern for a classic fitted waistcoat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -23,21 +23,21 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/wahid",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/wahid/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/wahid/index.mjs -f es",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"wahid: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
   },
   "peerDependencies": {
-    "@freesewing/core": "^0.33.0",
-    "@freesewing/plugin-bundle": "^0.33.0"
+    "@freesewing/core": "^0.32.4",
+    "@freesewing/plugin-bundle": "^0.32.4"
   },
   "dependencies": {},
   "devDependencies": {},
   "files": [
-    "../../dist/packages/wahid/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],

@@ -18,7 +18,7 @@ const OptionPreamble = props => {
       margin: "0 0.5rem"
     },
     right: {
-      margin: 0,
+      margin: "0 5px 0 0 ",
       textAlign: "right"
     }
   };
@@ -36,16 +36,22 @@ const OptionPreamble = props => {
     <React.Fragment>
       <h4 onClick={props.toggleExpanded} style={styles.container}>
         <div style={styles.left}>
-          <DownIcon className={"icon-col-exp "+ (props.expanded ? "expanded" : "collapsed")}/>
+          <DownIcon
+            className={
+              "icon-col-exp " + (props.expanded ? "expanded" : "collapsed")
+            }
+          />
           {props.title}
-          </div>
+        </div>
         <div style={styles.right}>
           <span className={props.value === props.dflt ? "dflt" : "custom"}>
             {props.displayValue}
           </span>
         </div>
       </h4>
-      <div className={props.expanded ? "col-exp expanded" : "col-exp collapsed"}>
+      <div
+        className={props.expanded ? "col-exp expanded" : "col-exp collapsed"}
+      >
         <div style={styles.container}>
           <div style={styles.left}>
             <p>{props.desc}</p>

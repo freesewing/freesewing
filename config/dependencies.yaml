@@ -31,6 +31,7 @@ components:
     "prop-types": "15.7.2"
     "@freesewing/patterns": "^{{version}}"
     "@freesewing/i18n": "^{{version}}"
+    "@freesewing/utils": "^{{version}}"
     "react-intl": "^2.8.0"
 core:
   _:
@@ -80,9 +81,15 @@ patterns:
     "@freesewing/trayvon": "^{{version}}"
     "@freesewing/wahid": "^{{version}}"
 workbench:
+  _:
+    "@freesewing/components": "^{{version}}"
+    "@freesewing/css-theme": "^{{version}}"
+    "@freesewing/utils": "^{{version}}"
+    "@freesewing/mui-theme": "^{{version}}"
   peer:
     "@freesewing/core": "^{{version}}"
     "@freesewing/i18n": "^{{version}}"
+    "@freesewing/utils": "^{{version}}"
     "@freesewing/plugin-theme": "^{{version}}"
     "react-intl": "^2.8.0"
 		"typeface-roboto-condensed": "^0.0.54"

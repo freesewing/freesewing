@@ -8,6 +8,8 @@
     "@freesewing/aaron": "file:../../aaron",
     "@freesewing/brian": "file:../../brian",
     "@freesewing/core": "file:../../core",
+    "@freesewing/components": "file:../../components",
+    "@freesewing/utils": "file:../../core",
     "@freesewing/i18n": "file:../../i18n",
     "@freesewing/plugin-bundle": "file:../../plugin-bundle",
     "@freesewing/plugin-theme": "file:../../plugin-theme",
@@ -16,7 +18,7 @@
     "react-dom": "^16.4.1",
     "react-intl": "2.8.0",
     "react-scripts": "^1.1.4",
-    "workbench": "file:.."
+    "@freesewing/workbench": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",

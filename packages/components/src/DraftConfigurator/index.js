@@ -5,16 +5,12 @@ import Deg from "./PatternOptionDegree";
 import Mm from "./PatternOptionMillimeter";
 import Bool from "./PatternOptionBool";
 import OptionGroup from "./OptionGroup";
-import { optionType, gistDefaults } from "../.utils";
-import { patternInfo, patternList } from "@freesewing/patterns";
+import { optionType, gistDefaults } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import PatternOptions from "./PatternOptions";
 import DraftSettings from "./DraftSettings";
-//import DraftActions from "DraftActions";
-import withGist from "../withGist";
 
 const DraftConfigurator = props => {
-  const [gist, setGist] = useState(props.gist.get);
   const [expanded, setExpanded] = useState([]);
 
   const update = (type, name, value) => {
@@ -28,8 +24,7 @@ const DraftConfigurator = props => {
     else shown.splice(index, 1);
     setExpanded(shown);
   };
-  let pattern = patternInfo[props.pattern];
-  let dflts = gistDefaults(pattern.config, props.gist.get);
+  let dflts = gistDefaults(props.info.config, props.gist);
 
   return (
     <ul className="nav l1">
@@ -38,9 +33,11 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.patternOptions" />
         </h2>
         <PatternOptions
-          pattern={props.pattern}
-          units={props.units}
-          updateValue={(name, value) => props.gist.set(value, 'settings', 'options', name)}
+          info={props.info}
+          gist={props.gist}
+          updateValue={(name, value) =>
+            props.updateGist(value, "settings", "options", name)
+          }
           triggerAction={props.triggerAction}
         />
       </li>
@@ -49,9 +46,11 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.draftSettings" />
         </h2>
         <DraftSettings
-          pattern={props.pattern}
-          units={props.units}
-          updateValue={(name, value) => props.gist.set(value, 'settings', name)}
+          info={props.info}
+          gist={props.gist}
+          updateValue={(name, value) =>
+            props.updateGist(value, "settings", name)
+          }
           triggerAction={props.triggerAction}
         />
       </li>
@@ -59,11 +58,8 @@ const DraftConfigurator = props => {
   );
 };
 
-DraftConfigurator.propTypes = {
-  pattern: PropTypes.oneOf(patternList),
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
-};
+DraftConfigurator.propTypes = {};
 
 DraftConfigurator.defaultProps = {};
 
-export default withGist(DraftConfigurator, {gist: {}, store: "yes"});
+export default DraftConfigurator;

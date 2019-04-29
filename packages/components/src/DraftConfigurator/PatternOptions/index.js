@@ -5,8 +5,7 @@ import Deg from "../PatternOptionDegree";
 import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import OptionGroup from "../OptionGroup";
-import { optionType, defaultGist, gistDefaults } from "../../.utils";
-import { patternInfo, patternList } from "@freesewing/patterns";
+import { optionType, gistDefaults } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
@@ -21,9 +20,6 @@ const PatternOptions = props => {
     setExpanded(shown);
   };
 
-  let pattern = patternInfo[props.pattern];
-  let dflts = gistDefaults(pattern.config, props.gist);
-
   const renderGroup = group => {
     let open = true;
     if (expanded.indexOf(group) === -1) open = false;
@@ -35,9 +31,9 @@ const PatternOptions = props => {
           <OptionGroup
             key={group + "-group"}
             units={props.units}
-            pattern={pattern}
-            dflts={dflts}
-            options={pattern.optionGroups[group]}
+            info={props.info}
+            dflts={gistDefaults(props.info.config, props.gist)}
+            options={props.info.optionGroups[group]}
             updateValue={props.updateValue}
             triggerAction={props.triggerAction}
           />
@@ -60,14 +56,14 @@ const PatternOptions = props => {
 
   return (
     <ul className="nav l2">
-      {Object.keys(pattern.optionGroups).map(group => renderGroup(group))}
+      {Object.keys(props.info.optionGroups).map(group => renderGroup(group))}
     </ul>
   );
 };
 
 PatternOptions.propTypes = {
-  pattern: PropTypes.oneOf(patternList),
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+  info: PropTypes.object.isRequired,
+  gist: PropTypes.object.isRequired
 };
 
 PatternOptions.defaultProps = {};

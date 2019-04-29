@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bent",
-  "version": "0.33.0",
+  "version": "0.32.4",
   "description": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -23,20 +23,20 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/bent",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/bent/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/bent/index.mjs -f es",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"bent: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662"
   },
   "peerDependencies": {
-    "@freesewing/core": "^0.33.0",
-    "@freesewing/plugin-bundle": "^0.33.0",
-    "@freesewing/brian": "^0.33.0"
+    "@freesewing/core": "^0.32.4",
+    "@freesewing/plugin-bundle": "^0.32.4",
+    "@freesewing/brian": "^0.32.4"
   },
   "files": [
-    "../../dist/packages/bent/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],

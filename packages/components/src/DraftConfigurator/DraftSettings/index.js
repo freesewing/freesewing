@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { gistDefaults } from "../../.utils";
-import { patternInfo, patternList } from "@freesewing/patterns";
 import { FormattedMessage } from "react-intl";
 import DraftSettingSa from "../DraftSettingSa";
 import DraftSettingMargin from "../DraftSettingMargin";
@@ -22,9 +20,6 @@ const DraftSettings = props => {
     else shown.splice(index, 1);
     setExpanded(shown);
   };
-
-  let pattern = patternInfo[props.pattern];
-  let dflts = gistDefaults(pattern.config, props.gist);
 
   let noyes = [
     <FormattedMessage id="app.no" />,
@@ -67,7 +62,7 @@ const DraftSettings = props => {
       childProps.dflt = "dflt";
       childProps.customDflt = [];
       childProps.parts = {};
-      for (let part of pattern.parts)
+      for (let part of props.info.parts)
         childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
     }
 
@@ -123,8 +118,8 @@ const DraftSettings = props => {
 };
 
 DraftSettings.propTypes = {
-  pattern: PropTypes.oneOf(patternList),
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+  info: PropTypes.object.isRequired,
+  gist: PropTypes.object.isRequired
 };
 
 DraftSettings.defaultProps = {};

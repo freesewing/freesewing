@@ -6,7 +6,7 @@ import {
   roundMmUp,
   roundMmDown,
   formatMm
-} from "../../.utils";
+} from "@freesewing/utils";
 import FormFieldSlider from "../../.form/FormFieldSlider";
 import OptionPreamble from "../OptionPreamble";
 
@@ -60,7 +60,7 @@ const PatternOptionMillimeter = props => {
       label={"po-mm-" + props.name}
       updateValue={update}
     />
-  )
+  );
 
   return (
     <li>

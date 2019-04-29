@@ -6,9 +6,7 @@ const defaultGist = {
     paperless: false,
     locale: "en",
     units: "metric",
-    margin: 2,
-    measurements: {},
-    options: {}
+    margin: 2
   }
 };
 

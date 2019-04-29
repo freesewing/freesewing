@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/css-theme",
-  "version": "0.33.0",
+  "version": "0.32.4",
   "description": "A CSS theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -16,22 +16,22 @@
     "sass",
     "theme"
   ],
-  "main": "dist/index.js",
+  "main": "dist/theme.css",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/css-theme",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/css-theme/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/css-theme/index.mjs -f es",
-    "watch": "npx node-sass --watch --output-style compressed src/theme.scss ../../dist/css-theme/theme.css",
-    "build": "npx node-sass --output-style compressed src/theme.scss ../../dist/css-theme/theme.css",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
+    "build": "npx node-sass --output-style compressed src/theme.scss dist/theme.css",
     "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662"
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
   },
   "dependencies": {
     "open-color": "1.6.3"
   },
   "files": [
-    "../../dist/packages/css-theme/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],

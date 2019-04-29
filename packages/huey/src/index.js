@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import Brian from "@freesewing/brian";
 import config from "../config";
@@ -41,3 +41,4 @@ Huey.prototype.draftWaistband = draftWaistband;
 Huey.prototype.draftCuff = draftCuff;
 
 export default Huey;
+export { config };

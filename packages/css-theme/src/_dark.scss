@@ -1,0 +1,15 @@
+.theme-wrapper {
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+.theme-wrapper.light {
+  background: $fc-bg-light;
+  color: $fc-bg-dark;
+}
+
+.theme-wrapper.dark {
+  background: $fc-bg-dark;
+  color: $fc-bg-light;
+}
+

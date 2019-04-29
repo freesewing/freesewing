@@ -11,6 +11,7 @@ allDocumentation: Toute la documentation
 andThatIsAwesome: Et c'est génial
 applyThisLayout: Appliquer cette mise en page
 areYouSureYouWantToContinue: Es-tu sur de vouloir continuer?
+askForHelp: Demander de l'aide
 automatic: Automatique
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
@@ -180,6 +181,7 @@ startOver: Recommencer
 startTranslatingNow: Commencez à traduire maintenant
 startTranslatingNowOrRead: "{startTranslatingNow}, ou lisez d'abord la {documentationForTranslators}."
 subscribe: Souscrire
+support: Soutien
 supportFreesewing: Soutenir freesewing
 tellMeMore: En savoir plus
 thanksForYourSupport: Merci pour votre soutien

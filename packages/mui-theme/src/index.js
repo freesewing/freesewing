@@ -23,14 +23,22 @@ const palettes = {
   dark: {
     primary: { main: lightBg },
     secondary: { main: darkBg },
-    type: "dark"
+    type: "dark",
+    background: {
+      paper: "#212529",
+      default: "#343a40"
+    }
   },
   light: {
     primary: { main: darkBg },
     secondary: { main: lightBg },
-    type: "light"
+    type: "light",
+    background: {
+      paper: "#FFF",
+      default: "#f8f9fa"
+    }
   }
 };
 
 export const dark = { ...theme, palette: palettes.dark, themeName: "Dark" };
-export const light = { ...theme, palette: palettes.dark, themeName: "Light" };
+export const light = { ...theme, palette: palettes.light, themeName: "Light" };

@@ -1,16 +1,15 @@
 import defaultGist from "./defaultGist";
 import optionDefault from "./optionDefault";
 
-const gistDefaults = (config, gist = false) => {
+const gistDefaults = (options, gist = false) => {
   if (!gist) gist = defaultGist;
-  let options = {};
-  for (let option of Object.keys(config.options)) {
+  for (let option of Object.keys(options)) {
     if (
       typeof gist.options !== "undefined" &&
       typeof gist.options[option] !== undefined
     )
       options[option] = gist.options[option];
-    else options[option] = optionDefault(config.options[option]);
+    else options[option] = optionDefault(options[option]);
   }
   delete gist.options;
   let settings = JSON.parse(JSON.stringify(defaultGist.settings));

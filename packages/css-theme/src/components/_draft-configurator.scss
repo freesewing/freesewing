@@ -23,16 +23,16 @@ ul.nav h5 {
 ul.nav h3:hover,
 ul.nav h4:hover {
   cursor: pointer;
-  background: $fc-hoverbg-light;
+  background: $oc-gray-3;
 }
-ul.nav h2 { font-size: 1.2rem; }
+ul.nav h2 { font-size: 1.2rem; margin-left: 5px;}
 ul.nav h4 { font-size: 1rem; }
 ul.nav h5 { font-size: 1rem; padding-left: 1.5rem; font-weight: bold;}
 ul.nav h3 {
   font-size: 1.1rem;
   position: sticky;
   top: 0;
-  background: $fc-bg-light;
+  background: $oc-gray-1;
   z-index: 3;
 }
 ul.nav span.custom {
@@ -75,5 +75,14 @@ button.mini-icon-btn {
   padding: 2px;
 }
 
-body.dark {
+.theme-wrapper.dark {
+  ul.nav h3,
+  ul.nav h4 {
+    background: $oc-gray-8;
+  }
+  ul.nav h3:hover,
+  ul.nav h4:hover {
+    cursor: pointer;
+    background: $oc-gray-7;
+  }
 }

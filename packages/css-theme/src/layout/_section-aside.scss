@@ -1,0 +1,35 @@
+div.fs-sa {
+  display: flex;
+
+  section{
+    width: 100%;
+    padding: 1rem;
+  }
+  aside {
+    padding: 1rem 0;
+    max-width: 400px;
+    min-width: 200px;
+    width: 30%;
+    height: 100%;
+    min-height: calc(120vh - 64px);
+    background: $oc-gray-1;
+    border-left: 1px solid $oc-gray-3;
+  }
+  aside div.sticky {
+    position: sticky;
+    top: calc(64px + 1rem);
+  }
+}
+
+
+.theme-wrapper.dark {
+  div.fs-sa {
+    section {
+      background: $oc-gray-9;
+    }
+    aside {
+      background: $oc-gray-8;
+      border-color: $oc-gray-7;
+    }
+  }
+}

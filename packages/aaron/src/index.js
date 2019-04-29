@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
@@ -18,3 +18,4 @@ Aaron.prototype.draftFront = part => draftFront(part);
 Aaron.prototype.draftBack = part => draftBack(part);
 
 export default Aaron;
+export { config };

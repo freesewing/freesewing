@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 // Parts
@@ -17,3 +17,4 @@ Bruce.prototype.draftInset = part => draftInset(part);
 Bruce.prototype.draftFront = part => draftFront(part);
 
 export default Bruce;
+export { config };

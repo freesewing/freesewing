@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/workbench",
-  "version": "0.33.0",
+  "version": "0.32.4",
   "description": "A React component to facilitate FreeSewing pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -17,22 +17,33 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/workbench",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/workbench/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/workbench/index.mjs -f es",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "test:watch": "react-scripts test --env=jsdom"
+    "test:watch": "react-scripts test --env=jsdom",
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^0.33.0",
-    "@freesewing/i18n": "^0.33.0",
-    "@freesewing/plugin-theme": "^0.33.0",
+    "@freesewing/core": "^0.32.4",
+    "@freesewing/utils": "^0.32.4",
+    "@freesewing/plugin-theme": "^0.32.4",
     "react-intl": "^2.8.0"
   },
+  "dependencies": {
+    "@freesewing/components": "file:../components",
+    "@freesewing/css-theme": "file:../css-theme",
+    "@freesewing/i18n": "file:../i18n",
+    "@freesewing/utils": "file:../utils",
+    "@material-ui/core": "3.9.3",
+    "@material-ui/icons": "3.0.2",
+    "@material-ui/lab": "3.0.0-alpha.30",
+    "@material-ui/styles": "3.0.0-alpha.10"
+  },
   "files": [
-    "../../dist/packages/workbench/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],
@@ -42,5 +53,9 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5"
+  },
+  "devDependencies": {
+    "@babel/plugin-external-helpers": "7.2.0",
+    "@babel/plugin-transform-react-jsx": "7.3.0"
   }
 }
