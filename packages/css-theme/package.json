@@ -25,6 +25,7 @@
     "build": "npx node-sass --output-style compressed src/theme.scss dist/theme.css",
     "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
   },
   "dependencies": {
@@ -36,7 +37,8 @@
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

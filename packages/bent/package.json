@@ -28,12 +28,13 @@
     "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"bent: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662"
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha"
   },
   "peerDependencies": {
-    "@freesewing/brian": "^0.32.4",
-    "@freesewing/core": "^0.32.4",
-    "@freesewing/plugin-bundle": "^0.32.4"
+    "@freesewing/core": "^2.0.0-alpha.0",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.0",
+    "@freesewing/brian": "^2.0.0-alpha.0"
   },
   "files": [
     "dist/*",
@@ -41,7 +42,8 @@
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

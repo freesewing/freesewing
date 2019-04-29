@@ -28,15 +28,16 @@
     "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"carlita: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662"
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha"
   },
   "peerDependencies": {
-    "@freesewing/bent": "^0.32.4",
-    "@freesewing/carlton": "^0.32.4",
-    "@freesewing/core": "^0.32.4",
-    "@freesewing/plugin-bundle": "^0.32.4",
-    "@freesewing/plugin-bust": "^0.32.4",
-    "@freesewing/plugin-buttons": "^0.32.4"
+    "@freesewing/core": "^2.0.0-alpha.0",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.0",
+    "@freesewing/bent": "^2.0.0-alpha.0",
+    "@freesewing/carlton": "^2.0.0-alpha.0",
+    "@freesewing/plugin-bust": "^2.0.0-alpha.0",
+    "@freesewing/plugin-buttons": "^2.0.0-alpha.0"
   },
   "files": [
     "dist/*",
@@ -44,7 +45,8 @@
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

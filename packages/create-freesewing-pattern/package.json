@@ -24,6 +24,7 @@
     "build": "npm run clean && npm run mkdist && npm run copyfiles",
     "test": "ava -v && standard *.js lib/*.js",
     "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
     "mkdist": "mkdir -p dist",
     "copyfiles": "cp -R index.js package.json README.md lib template dist/"
   },
@@ -51,7 +52,8 @@
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

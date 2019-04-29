@@ -13,14 +13,16 @@
     "clean": "rimraf dist",
     "nodebuild": "rollup -c -o dist/index.js -f cjs",
     "modulebuild": "rollup -c -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild"
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "publish": "npm run build && npm publish --access public"
   },
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
   "files": ["dist/*", "README.md", "package.json"],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

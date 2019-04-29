@@ -30,6 +30,7 @@
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "BABEL_ENV=production nyc mocha tests/*.test.js",
     "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
     "report": "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js",
     "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },
@@ -44,7 +45,8 @@
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",
