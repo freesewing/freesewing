@@ -30,15 +30,15 @@
   "peerDependencies": {
     "@freesewing/core": "^2.0.0-alpha.0",
     "@freesewing/i18n": "^2.0.0-alpha.0",
-    "@freesewing/utils": "^2.0.0-alpha.0",
     "@freesewing/plugin-theme": "^2.0.0-alpha.0",
+    "@freesewing/utils": "^2.0.0-alpha.0",
     "react-intl": "^2.8.0"
   },
   "dependencies": {
     "@freesewing/components": "^2.0.0-alpha.0",
     "@freesewing/css-theme": "^2.0.0-alpha.0",
-    "@freesewing/utils": "^2.0.0-alpha.0",
-    "@freesewing/mui-theme": "^2.0.0-alpha.0"
+    "@freesewing/mui-theme": "^2.0.0-alpha.0",
+    "@freesewing/utils": "^2.0.0-alpha.0"
   },
   "files": [
     "dist/*",

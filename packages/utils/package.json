@@ -29,9 +29,6 @@
     "pubtest": "npm publish --registry http://localhost:6662",
     "publish": "npm build && npm publish --access=public --tag=alpha"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

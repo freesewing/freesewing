@@ -35,8 +35,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.0.0-alpha.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
