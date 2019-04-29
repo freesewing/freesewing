@@ -3,6 +3,15 @@ import { version } from "../package.json";
 export default {
   name: "trayvon",
   version,
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  department: "accessories",
+  type: "pattern",
+  difficulty: 2,
+  tags: ["top", "basics"],
+  optionGroups: {
+    style: ["tipWidth", "knotWidth", "lengthBonus"]
+  },
   measurements: [
     "centerBackNeckToWaist",
     "naturalWaistToHip",

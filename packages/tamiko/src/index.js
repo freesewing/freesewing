@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 // Parts
@@ -11,3 +11,4 @@ const Tamiko = new freesewing.Design(config, plugins);
 Tamiko.prototype.draftTop = part => draftTop(part);
 
 export default Tamiko;
+export { config };

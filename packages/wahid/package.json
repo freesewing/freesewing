@@ -32,10 +32,11 @@
   },
   "peerDependencies": {
     "@freesewing/core": "^0.32.4",
-    "@freesewing/plugin-bundle": "^0.32.4"
+    "@freesewing/plugin-bundle": "^0.32.4",
+    "@freesewing/brian": "^0.32.4",
+    "@freesewing/plugin-buttons": "^0.32.4",
+    "@freesewing/plugin-round": "^0.32.4"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

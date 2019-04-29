@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
@@ -32,3 +32,4 @@ Sven.prototype.draftCuff = draftCuff;
 Sven.prototype.draftWaistband = draftWaistband;
 
 export default Sven;
+export { config };

@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
 import round from "@freesewing/plugin-round";
@@ -39,3 +39,4 @@ Wahid.prototype.draftPocketFacing = part => draftPocketFacing(part);
 Wahid.prototype.draftPocketInterfacing = part => draftPocketInterfacing(part);
 
 export default Wahid;
+export { config };

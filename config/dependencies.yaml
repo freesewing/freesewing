@@ -80,6 +80,16 @@ patterns:
     "@freesewing/tamiko": "^{{version}}"
     "@freesewing/trayvon": "^{{version}}"
     "@freesewing/wahid": "^{{version}}"
+simon:
+  peer:
+    "@freesewing/brian": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
+    "@freesewing/plugin-flip": "^{{version}}"
+wahid:
+  peer:
+    "@freesewing/brian": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
+    "@freesewing/plugin-round": "^{{version}}"
 workbench:
   _:
     "@freesewing/components": "^{{version}}"

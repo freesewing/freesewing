@@ -3,6 +3,24 @@ import { version } from "../package.json";
 export default {
   name: "wahid",
   version,
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  department: "menswear",
+  type: "pattern",
+  difficulty: 4,
+  tags: ["top", "formal"],
+  optionGroups: {
+    fit: [
+      "chestEase",
+      "waistEase",
+      "hipsEase",
+      "lengthBonus",
+      "armholeDepthFactor",
+      "backScyeDart",
+      "frontScyeDart"
+    ],
+    style: ["pocketLocation", "pocketWidth", "weltHeight"]
+  },
   measurements: [
     "bicepsCircumference",
     "centerBackNeckToWaist",
