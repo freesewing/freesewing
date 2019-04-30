@@ -5,10 +5,10 @@ import GistConfigurator from ".";
 //import { strings } from "@freesewing/i18n";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (type, data) =>
-    console.log(`Update ${type} with new value`, data),
+    console.log(`Update ${type} with new value`, data)
 };
 
 storiesOf("DraftConfigurator", module)

@@ -75,7 +75,7 @@ const DraftSettingOnly = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: "only"
           })

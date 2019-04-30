@@ -8,14 +8,18 @@ const Pattern = props => {
 
   return (
     <div className="fs-sa">
-      <section>hi mom</section>
+      <section>
+        <pre>{JSON.stringify(props.gist, null, 2)}</pre>
+      </section>
       <aside>
         <div className="sticky">
           <DraftConfigurator
+            config={props.config}
             gist={props.gist}
-            info={props.info}
             updateGist={props.updateGist}
             raiseEvent={props.raiseEvent}
+            freesewing={props.freesewing}
+            units={props.units}
           />
         </div>
       </aside>
@@ -26,9 +30,10 @@ const Pattern = props => {
 Pattern.propTypes = {
   gist: PropTypes.object.isRequired,
   updateGist: PropTypes.func.isRequired,
-  info: PropTypes.object.isRequired,
+  config: PropTypes.object.isRequired,
   raiseEvent: PropTypes.func.isRequired,
-  Pattern: PropTypes.func.isRequired
+  Pattern: PropTypes.func.isRequired,
+  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
 };
 
 export default Pattern;

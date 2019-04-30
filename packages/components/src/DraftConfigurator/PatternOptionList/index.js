@@ -50,7 +50,7 @@ const PatternOptionList = props => {
       updateValue={update}
       list={list}
     />
-  )
+  );
   return (
     <li>
       <OptionPreamble
@@ -64,7 +64,7 @@ const PatternOptionList = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "patternOption",
             value: props.name
           })

@@ -62,6 +62,5 @@
   "reveal": true,
   "bin": {
     "create-freesewing-pattern": "index.js"
-  },
-  "gitHead": "aec02a355494839184b3ae4598322912386badf6"
+  }
 }

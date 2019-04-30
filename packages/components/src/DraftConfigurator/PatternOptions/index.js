@@ -5,13 +5,12 @@ import Deg from "../PatternOptionDegree";
 import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import OptionGroup from "../OptionGroup";
-import { optionType, gistDefaults } from "@freesewing/utils";
+import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const PatternOptions = props => {
   const [expanded, setExpanded] = useState([]);
-
   const toggleGroup = group => {
     let shown = expanded.slice(0);
     let index = shown.indexOf(group);
@@ -31,11 +30,10 @@ const PatternOptions = props => {
           <OptionGroup
             key={group + "-group"}
             units={props.units}
-            info={props.info}
-            dflts={gistDefaults(props.info.config, props.gist)}
-            options={props.info.optionGroups[group]}
+            config={props.config}
+            options={props.config.optionGroups[group]}
             updateValue={props.updateValue}
-            triggerAction={props.triggerAction}
+            raiseEvent={props.raiseEvent}
           />
         </ul>
       );
@@ -56,14 +54,15 @@ const PatternOptions = props => {
 
   return (
     <ul className="nav l2">
-      {Object.keys(props.info.optionGroups).map(group => renderGroup(group))}
+      {Object.keys(props.config.optionGroups).map(group => renderGroup(group))}
     </ul>
   );
 };
 
 PatternOptions.propTypes = {
-  info: PropTypes.object.isRequired,
-  gist: PropTypes.object.isRequired
+  config: PropTypes.object.isRequired,
+  gist: PropTypes.object.isRequired,
+  raiseEvent: PropTypes.func
 };
 
 PatternOptions.defaultProps = {};

@@ -45,7 +45,8 @@ const PatternOptionPctDegCount = props => {
       onChange={update}
       label={"po-" + props.type + "-" + props.name}
       updateValue={update}
-    />)
+    />
+  );
 
   return (
     <li>
@@ -60,7 +61,7 @@ const PatternOptionPctDegCount = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "patternOption",
             value: props.name
           })

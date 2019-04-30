@@ -71,11 +71,12 @@ const PatternOptionMillimeter = props => {
         title={props.title}
         id={"po-mm-" + props.name}
         displayValue={formatMm(value, props.units)}
+        displayFormat="html"
         reset={reset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "patternOption",
             value: props.name
           })

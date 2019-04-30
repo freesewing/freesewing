@@ -28,6 +28,9 @@
     "pubtest": "npm publish --registry http://localhost:6662",
     "publish": "npm build && npm publish --access=public --tag=alpha"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
@@ -40,6 +43,5 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5"
-  },
-  "gitHead": "aec02a355494839184b3ae4598322912386badf6"
+  }
 }

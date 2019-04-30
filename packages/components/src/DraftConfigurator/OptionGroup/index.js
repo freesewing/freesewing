@@ -6,25 +6,25 @@ import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import List from "../PatternOptionList";
 import Count from "../PatternOptionCount";
-import { optionType } from "@freesewing/utils";
+import { optionType, optionDefault } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
 
 const OptionGroup = props => {
   const renderOption = (name, sub = false) => {
-    let option = props.pattern.config.options[name];
+    let option = props.config.options[name];
     let type = optionType(option);
-    let stringKey = `options.${props.pattern.config.name}.${name}.`;
+    let stringKey = `options.${props.config.name}.${name}.`;
     let extraProps = {
       name,
-      dflt: props.dflts.options[name],
+      dflt: optionDefault(props.config.options[name]),
       units: props.units,
       updateValue: props.updateValue,
-      triggerAction: props.triggerAction,
+      raiseEvent: props.raiseEvent,
       title: <FormattedMessage id={stringKey + "title"} />,
       desc: <FormattedMessage id={stringKey + "description"} />,
       intl: props.intl,
-      pattern: props.pattern.config.name,
+      pattern: props.config.name,
       key: name
     };
     let noyes = [
@@ -83,8 +83,7 @@ const OptionGroup = props => {
 };
 
 OptionGroup.propTypes = {
-  pattern: PropTypes.object.isRequired,
-  dflts: PropTypes.object.isRequired,
+  config: PropTypes.object.isRequired,
   options: PropTypes.array.isRequired,
   units: PropTypes.oneOf(["metric", "imperial"]).isRequired
 };

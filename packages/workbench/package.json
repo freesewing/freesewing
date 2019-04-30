@@ -23,22 +23,22 @@
     "SKIPbuild": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "SKIPpublish": "npm build && npm publish --access=public --tag=alpha",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
     "test:watch": "react-scripts test --env=jsdom",
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.0",
-    "@freesewing/i18n": "^2.0.0-alpha.0",
-    "@freesewing/plugin-theme": "^2.0.0-alpha.0",
-    "@freesewing/utils": "^2.0.0-alpha.0",
+    "@freesewing/core": "^2.0.0-alpha.2",
+    "@freesewing/i18n": "^2.0.0-alpha.2",
+    "@freesewing/utils": "^2.0.0-alpha.2",
+    "@freesewing/plugin-theme": "^2.0.0-alpha.2",
     "react-intl": "^2.8.0"
   },
   "dependencies": {
     "@freesewing/components": "^2.0.0-alpha.2",
     "@freesewing/css-theme": "^2.0.0-alpha.2",
-    "@freesewing/mui-theme": "^2.0.0-alpha.2",
-    "@freesewing/utils": "^2.0.0-alpha.2"
+    "@freesewing/utils": "^2.0.0-alpha.2",
+    "@freesewing/mui-theme": "^2.0.0-alpha.2"
   },
   "files": [
     "dist/*",
@@ -52,6 +52,5 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5"
-  },
-  "gitHead": "aec02a355494839184b3ae4598322912386badf6"
+  }
 }

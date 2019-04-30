@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Bool from ".";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (name, value) =>
     console.log(`Updated pct/deg/count option ${name}, value is now: ${value}`),

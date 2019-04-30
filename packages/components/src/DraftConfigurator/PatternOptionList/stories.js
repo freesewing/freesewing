@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import List from ".";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (name, value) =>
     console.log(`Updated pct/deg/count option ${name}, value is now: ${value}`),
@@ -20,4 +20,6 @@ const props = {
   }
 };
 
-storiesOf("Low level/PatternOptionList", module).add("Basic", () => <List {...props} />);
+storiesOf("Low level/PatternOptionList", module).add("Basic", () => (
+  <List {...props} />
+));

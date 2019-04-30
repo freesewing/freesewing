@@ -5,17 +5,13 @@ import Deg from "./PatternOptionDegree";
 import Mm from "./PatternOptionMillimeter";
 import Bool from "./PatternOptionBool";
 import OptionGroup from "./OptionGroup";
-import { optionType, gistDefaults } from "@freesewing/utils";
+import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import PatternOptions from "./PatternOptions";
 import DraftSettings from "./DraftSettings";
 
 const DraftConfigurator = props => {
   const [expanded, setExpanded] = useState([]);
-
-  const update = (type, name, value) => {
-    console.log("updating", type, name, value);
-  };
 
   const toggleGroup = group => {
     let shown = expanded.slice(0);
@@ -24,7 +20,6 @@ const DraftConfigurator = props => {
     else shown.splice(index, 1);
     setExpanded(shown);
   };
-  let dflts = gistDefaults(props.info.config, props.gist);
 
   return (
     <ul className="nav l1">
@@ -33,12 +28,13 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.patternOptions" />
         </h2>
         <PatternOptions
-          info={props.info}
+          config={props.config}
           gist={props.gist}
           updateValue={(name, value) =>
             props.updateGist(value, "settings", "options", name)
           }
-          triggerAction={props.triggerAction}
+          raiseEvent={props.raiseEvent}
+          units={props.units}
         />
       </li>
       <li>
@@ -46,19 +42,22 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.draftSettings" />
         </h2>
         <DraftSettings
-          info={props.info}
+          config={props.config}
           gist={props.gist}
           updateValue={(name, value) =>
             props.updateGist(value, "settings", name)
           }
-          triggerAction={props.triggerAction}
+          raiseEvent={props.raiseEvent}
+          units={props.units}
         />
       </li>
     </ul>
   );
 };
 
-DraftConfigurator.propTypes = {};
+DraftConfigurator.propTypes = {
+  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+};
 
 DraftConfigurator.defaultProps = {};
 

@@ -32,6 +32,16 @@ const OptionPreamble = props => {
     defaultMessage: " 🤔 "
   });
 
+  let displayClass = props.value === props.dflt ? "dflt" : "custom";
+  let displayValue = <span className={displayClass}>{props.displayValue}</span>;
+  if (props.displayFormat === "html")
+    displayValue = (
+      <span
+        className={displayClass}
+        dangerouslySetInnerHTML={{ __html: props.displayValue }}
+      />
+    );
+
   return (
     <React.Fragment>
       <h4 onClick={props.toggleExpanded} style={styles.container}>
@@ -43,11 +53,7 @@ const OptionPreamble = props => {
           />
           {props.title}
         </div>
-        <div style={styles.right}>
-          <span className={props.value === props.dflt ? "dflt" : "custom"}>
-            {props.displayValue}
-          </span>
-        </div>
+        <div style={styles.right}>{displayValue}</div>
       </h4>
       <div
         className={props.expanded ? "col-exp expanded" : "col-exp collapsed"}
@@ -97,7 +103,12 @@ OptionPreamble.propTypes = {
   desc: PropTypes.node.isRequired,
   reset: PropTypes.func.isRequired,
   showHelp: PropTypes.func.isRequired,
-  expanded: PropTypes.bool
+  expanded: PropTypes.bool,
+  displayFormat: PropTypes.string
+};
+
+OptionPreamble.defaultProps = {
+  displayFormat: "node"
 };
 
 export default injectIntl(OptionPreamble);

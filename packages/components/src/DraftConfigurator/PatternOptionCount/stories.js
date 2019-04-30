@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Count from ".";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (name, value) =>
     console.log(`Updated percentage option ${name}, value is now: ${value}`),

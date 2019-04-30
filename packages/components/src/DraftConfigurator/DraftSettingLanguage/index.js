@@ -45,7 +45,7 @@ const DraftSettingLanguage = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: props.name
           })
@@ -57,7 +57,7 @@ const DraftSettingLanguage = props => {
 };
 
 DraftSettingLanguage.propTypes = {
-  triggerAction: PropTypes.func.isRequired,
+  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,

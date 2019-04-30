@@ -29,7 +29,7 @@ const PatternOptionBool = props => {
       updateValue={update}
       labels={props.labels}
     />
-  )
+  );
   return (
     <li>
       <OptionPreamble
@@ -43,7 +43,7 @@ const PatternOptionBool = props => {
         expanded={expanded}
         reset={reset}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: props.name
           })
@@ -55,7 +55,7 @@ const PatternOptionBool = props => {
 };
 
 PatternOptionBool.propTypes = {
-  triggerAction: PropTypes.func.isRequired,
+  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   dflt: PropTypes.oneOfType([

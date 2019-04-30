@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Preamble from ".";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   id: "example",
   value: 120,

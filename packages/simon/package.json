@@ -32,11 +32,11 @@
     "publish": "npm build && npm publish --access=public --tag=alpha"
   },
   "peerDependencies": {
-    "@freesewing/brian": "^2.0.0-alpha.0",
-    "@freesewing/core": "^2.0.0-alpha.0",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.0",
-    "@freesewing/plugin-buttons": "^2.0.0-alpha.0",
-    "@freesewing/plugin-flip": "^2.0.0-alpha.0"
+    "@freesewing/core": "^2.0.0-alpha.2",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.2",
+    "@freesewing/brian": "^2.0.0-alpha.2",
+    "@freesewing/plugin-buttons": "^2.0.0-alpha.2",
+    "@freesewing/plugin-flip": "^2.0.0-alpha.2"
   },
   "files": [
     "dist/*",
@@ -50,6 +50,5 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5"
-  },
-  "gitHead": "aec02a355494839184b3ae4598322912386badf6"
+  }
 }

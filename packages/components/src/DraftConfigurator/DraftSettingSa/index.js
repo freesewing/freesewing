@@ -95,11 +95,12 @@ const DraftSettingSa = props => {
         title={props.title}
         id="po-list-sa"
         displayValue={formatMm(saValue, props.units)}
+        displayFormat="html"
         reset={reset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEventAction("showHelp", {
             type: "draftSetting",
             value: "sa"
           })
@@ -111,7 +112,7 @@ const DraftSettingSa = props => {
 };
 
 DraftSettingSa.propTypes = {
-  triggerAction: PropTypes.func.isRequired,
+  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,

@@ -22,15 +22,15 @@
     "SKIPbuild": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "SKIPpublish": "npm build && npm publish --access=public --tag=alpha",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
     "storybook": "start-storybook -p 6663"
   },
   "peerDependencies": {
-    "@freesewing/i18n": "^2.0.0-alpha.0",
-    "@freesewing/patterns": "^2.0.0-alpha.0",
-    "@freesewing/utils": "^2.0.0-alpha.0",
-    "prop-types": "15.7.2",
     "react": "^16.4.1",
+    "prop-types": "15.7.2",
+    "@freesewing/patterns": "^2.0.0-alpha.2",
+    "@freesewing/i18n": "^2.0.0-alpha.2",
+    "@freesewing/utils": "^2.0.0-alpha.2",
     "react-intl": "^2.8.0"
   },
   "files": [
@@ -46,5 +46,13 @@
     "node": ">=8.0.0",
     "npm": ">=5"
   },
-  "gitHead": "aec02a355494839184b3ae4598322912386badf6"
+  "dependencies": {
+    "@freesewing/i18n": "^2.0.0-alpha.2",
+    "@freesewing/utils": "^2.0.0-alpha.2",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/lab": "^3.0.0-alpha.30",
+    "@material-ui/styles": "^3.0.0-alpha.10",
+    "react": "^16.8.6",
+    "react-intl": "^2.8.0"
+  }
 }

@@ -16,7 +16,7 @@ const options = {
 };
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (type, data) =>
     console.log(`Update ${type} with new value`, data),

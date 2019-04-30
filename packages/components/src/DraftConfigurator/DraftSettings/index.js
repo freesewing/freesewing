@@ -12,7 +12,6 @@ import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const DraftSettings = props => {
   const [expanded, setExpanded] = useState([]);
-
   const toggleGroup = group => {
     let shown = expanded.slice(0);
     let index = shown.indexOf(group);
@@ -45,7 +44,7 @@ const DraftSettings = props => {
       complete: noyes
     };
     let childProps = {
-      triggerAction: props.triggerAction,
+      raiseEvent: props.raiseEvent,
       updateValue: props.updateValue,
       units: props.units,
       key: setting,
@@ -62,7 +61,7 @@ const DraftSettings = props => {
       childProps.dflt = "dflt";
       childProps.customDflt = [];
       childProps.parts = {};
-      for (let part of props.info.parts)
+      for (let part of props.config.parts) // HERE
         childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
     }
 

@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Units from ".";
 
 const props = {
-  triggerAction: (type, data) =>
+  raiseEvent: (type, data) =>
     console.log(`Action of type ${type} triggered, data passed is`, data),
   updateValue: (name, value) =>
     console.log(`Updated setting ${name}, value is now: ${value}`),
@@ -18,4 +18,6 @@ const props = {
   }
 };
 
-storiesOf("Low level/DraftSettingUnits", module).add("Basic", () => <Units {...props} />);
+storiesOf("Low level/DraftSettingUnits", module).add("Basic", () => (
+  <Units {...props} />
+));

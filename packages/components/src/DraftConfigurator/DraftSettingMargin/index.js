@@ -51,11 +51,12 @@ const DraftSettingMargin = props => {
         title={props.title}
         id="po-slider-margin"
         displayValue={formatMm(value, props.units)}
+        displayFormat="html"
         reset={reset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.triggerAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: "margin"
           })
@@ -67,7 +68,7 @@ const DraftSettingMargin = props => {
 };
 
 DraftSettingMargin.propTypes = {
-  triggerAction: PropTypes.func.isRequired,
+  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
