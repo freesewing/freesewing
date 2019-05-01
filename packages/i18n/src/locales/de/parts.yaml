@@ -1,5 +1,6 @@
-backBase: Rückseite Basis
+---
 back: Rückseite
+backBase: Rückseite Basis
 base: Basis
 bentBack: Rückseite Bent
 bentBase: Basis Bent
@@ -16,10 +17,10 @@ fabricTail: Stoffschwanz
 fabricTip: Stoffspitze
 frontBase: Vorderseite Basis
 frontFacing: Verkleidung vorderseite
+front: Vorderseite
 frontLeft: Vorne links
 frontLining: Futter vorderseite
 frontRight: Vorne rechts
-front: Vorderseite
 hoodCenter: Haubenmitte
 hood: Haube
 hoodSide: Haube Seite
@@ -42,11 +43,11 @@ pocketInterfacing: Tasheneinlage
 pocket: Tasche
 pocketWelt: Tasche Welt
 side: Seite
-sleeve: Ärmel
 sleeveBase: Ärmel Basis
 sleevecap: Ärmelkappe
 sleevePlacketOverlap: Ärmelknopflänge oben
 sleevePlacketUnderlap: Ärmelknopflänge unter
+sleeve: Ärmel
 topSleeve: Oberarmel
 top: Top
 underCollar: Unterkragen

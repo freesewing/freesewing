@@ -1,10 +1,11 @@
+---
 compliant: Freesewing.org respektiert Ihre Privatsphäre und Ihre Rechte. Wir wenden die Allgemeine Datenschutzverordnung (DSGVO) der Europäischen Union (EU) an.
-consentForModelData:  Zustimmung für Modelldaten
+consent: Zustimmung
+consentForModelData: Zustimmung für Modelldaten
 consentForProfileData: Zustimmung für Profildaten
 consentGiven: Zustimmung erteilt
 consentNotGiven: Zustimmung nicht erteilt
 consentWhyAnswer: Die Verarbeitung Ihrer personenbezogenen Daten bedarf im Rahmen der DSGVO Ihrer Zustimmung, also Ihrer Erlaubnis.
-consent: Zustimmung
 createMyAccount: Erstelle mein Konto
 furtherReading: Weiter lesen
 modelQuestion: Geben Sie Ihre Zustimmung zur Verarbeitung Ihrer Modelldaten?
@@ -20,8 +21,8 @@ profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildate
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach Ihrem letzten Login oder bis Sie <b> Ihr Konto entfernen oder <b> diese Einwilligung widerrufen.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle Ihre Daten entfernt. Es hat den gleichen Effekt wie das Entfernen Ihres Kontos.
+profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
 profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
-profileWhatAnswerOptional: 'Optional: Ein <b> Profilbild </b>, <b>bio</b>, und <b> Social-Media-Konten </b>'
 profileWhatQuestion: Was sind Profildaten?
 profileWhyAnswer: 'Um sich <b> zu authentifizieren </b>, kontaktieren Sie <b> Sie </b>, wenn Sie benötigt werden, und bauen eine <b> Community </b> auf.'
 readMore: Weitere Informationen finden Sie in unserer Datenschutzerklärung.
@@ -31,5 +32,5 @@ shareQuestion: Teilen wir es mit anderen?
 timingQuestion: Wie lange halten wir es?
 whatYouNeedToKnow: Was Sie wissen müssen
 whyQuestion: Warum brauchen wir es?
-yesIDo: 'Ja, das mache ich'
 yesIDoObject: 'Ja, ich widerspreche'
+yesIDo: 'Ja, das mache ich'

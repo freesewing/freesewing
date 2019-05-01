@@ -1,3 +1,4 @@
+---
 accountRemoved: Cuenta eliminada
 accountRestricted: Cuenta restringida
 avatar: Avatar
@@ -19,22 +20,22 @@ githubTitle: Rellene su nombre de usuario Github
 instagramInfo: Si proporciona su nombre de usuario de Instagram, su página de perfil contendrá un enlace a su cuenta de Instagram, para que los visitantes puedan descubrir sus imágenes y seguirlo.
 instagram: Instagram
 instagramTitle: Rellene su nombre de usuario Instagram
-language: Idioma
 languageInfo: Esta opción de idioma determina en qué idioma recibirá los correos electrónicos de freesewing. No determina el idioma del sitio web, que se puede elegir en cada página
+language: Idioma
 languageTitle: Seleccione el idioma de su elección
 newPassword: Nueva contraseña
-password: Contraseña
 passwordInfo: Cambiar tu contraseña requiere tu contraseña actual. Rellene eso, luego complete su nueva contraseña también.
+password: Contraseña
 passwordTitle: Ingrese su contraseña actual y su nueva contraseña
 patronInfo: Los patrocinadores apoyan a Freesewing financieramente. Son partidarios leales que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.
 patron: Patrocinador
-removeYourAccount: Elimina tu cuenta
 removeYourAccountInfo: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que tenemos almacenados para usted. No hay vuelta atrás, así que proceda con precaución.
+removeYourAccount: Elimina tu cuenta
 removeYourAccountWarning: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que hemos almacenado para usted. No hay vuelta atrás de esto.
 resetPasswordInfo: Ingrese una nueva contraseña.
 resetPassword: Restablecer contraseña
 resetPasswordTitle: Ingrese su nueva contraseña
-restrictProcessingOfYourDataInfo: "La Protección de datos general (GDPR) de la UE garantiza su llamado <em> derecho a restringir el procesamiento </em>: el derecho a detener el procesamiento de sus datos."
+restrictProcessingOfYourDataInfo: 'La Protección de datos general (GDPR) de la UE garantiza su llamado <em> derecho a restringir el procesamiento </em>: el derecho a detener el procesamiento de sus datos.'
 restrictProcessingOfYourData: Restringir el procesamiento de sus datos
 restrictProcessingWarning: Si bien no se eliminarán los datos, esto lo desconectará y congelará su cuenta. Además, puede interesarle su propio negocio, pero deberá comunicarse con nosotros cuando desee restaurar el acceso a su cuenta.
 reviewYourConsent: Revisa tu consentimiento
@@ -48,5 +49,5 @@ unitsInfo: Freesewing admite tanto el sistema métrico como las medidas imperial
 unitsTitle: Seleccione el sistema de unidad con el que esté más familiarizado
 units: Unidades
 usernameInfo: Actualmente tienes un nombre de usuario generado aleatoriamente. Eso no es muy personal, por lo que puedes cambiar tu nombre de usuario a algo más para ti. Me gusta tu nombre, o <em> reinadepedos </em> o lo que sea.
-username: Nombre de usuario
 usernameTitle: Por favor, elija su nombre de usuario
+username: Nombre de usuario

@@ -1,15 +1,13 @@
+---
 armholeDepthFactor: brian
 chestEase: brian
 lengthBonus: brian
-
 flare:
   title: Évasion
   description: La quantité par laquelle le vêtement s'évase de votre poitrine vers le bas
-
 shoulderseamLength:
   title: Longueur de l'épaule
   description: La longueur de la couture d'épaule, en tant que facteur de la mesure d'épaule à épaule
-
 shoulderSlope:
   title: Pente des épaules
   description: Contrôle l'angle de la couture d'épaule

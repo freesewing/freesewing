@@ -1,11 +1,12 @@
+---
 100PercentCommunity: 100% comunidad
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
 aboutGist1: Un esencia contiene toda la información requerida para redactar un patrón.
 aboutGist2: Puede copiar / pegar una esencia existente aquí para usarla como punto de partida para su propio boceto.
-accountCreated: cuenta creada
 account: Cuenta
+accountCreated: cuenta creada
 actions: Acciones
 allDocumentation: Toda la documentación
 andThatIsAwesome: Y eso es genial
@@ -26,8 +27,8 @@ changeModel: Cambiar modelo
 changePattern: Cambiar patrón
 chatOnGitter: Chatea en Gitter
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
-chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chest: Pecho
+chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chooseAModel: Elige un modelo
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
@@ -43,7 +44,7 @@ contents: Contenidos
 continue: Continuar
 copiedToClipboard: Copiado al portapapeles
 copy: Dupdo
-couldYouTranslateThis: ¿Podrías traducir esto?
+couldYouTranslateThis: '¿Podrías traducir esto?'
 countModelsLackingForPattern: Tiene {count} modelos que carecen de las medidas necesarias para dibujar {pattern}
 created: Creado
 createModel: Crear el modelo
@@ -62,8 +63,8 @@ documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
 draft: Boceto
-draftPatternForModel: 'Trazar {pattern} para {model} '
 draftPattern: 'Trazar {pattern} '
+draftPatternForModel: 'Trazar {pattern} para {model} '
 drafts: Bocetos
 draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manualmente con el botón de abajo
@@ -79,7 +80,7 @@ fieldRemoved: "{field} eliminado"
 fieldSaved: "{field} guardado"
 filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
-forgotLoginInstructions: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña
+forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
 gist: Esencia
@@ -90,7 +91,7 @@ goodToSeeYouAgain: Bueno verte de nuevo {user}
 handle: Referencia
 helpUsTranslate: Ayúdanos a traducir
 home: Página principal
-howCanWeHelpYou: ¿Cómo podemos ayudarte?
+howCanWeHelpYou: '¿Cómo podemos ayudarte?'
 howToTakeMeasurements: Cómo tomar medidas
 i18n: Internacionalización
 imperialUnits: Unidades imperiales (pulgadas)
@@ -119,13 +120,13 @@ newDraftFromGist: Nuevo patrón de la esencia
 newDraft: Nuevo boceto
 newModel: Nuevo modelo
 noChanges: No hay cambios
-no: No
+no: false
 noPasswordPolicy: No aplicamos una política de contraseña
 noSeamAllowance: Sin margen de costura
 notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponible en español.
 notesInfo: Estas son tus notas. Puedes escribir lo que quieras aquí.
 notes: Notas
-ohNo: ¡Oh no!
+ohNo: '¡Oh no!'
 options: Opciones
 orPayPerYear: O pagar por año
 other: Otro
@@ -144,7 +145,7 @@ pattern: Patrón
 patterns: Patrones
 pendingConfirmation: Confirmación pendiente
 perMonth: por mes
-pleaseEnterAValidEmailAddress: 'Por favor, entra una dirección de E-mail válida'
+pleaseEnterAValidEmailAddress: Por favor, entra una dirección de E-mail válida
 pleaseIncludeTheInformationBelow: Por favor incluya la siguiente información
 preview: vista previa
 privacyNotice: Aviso de Privacidad
@@ -161,9 +162,9 @@ reset: Reiniciar
 restoreDefaults: Restaurar valores por defecto
 saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
-search: Buscar
 searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
-searchLanguageTitle: ¿No encuentras lo que buscas?
+searchLanguageTitle: '¿No encuentras lo que buscas?'
+search: Buscar
 selectAPartToMoveMirrorOrRotate: Seleccione una parte para mover, reflejar o rotar
 selectImage: Seleccionar imagen
 sendAnEmail: Enviar un correo electrónico
@@ -178,8 +179,8 @@ signupWithProvider: 'Registrarse con<br>{provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo
-startTranslatingNow: Empezar a traducir ahora
 startTranslatingNowOrRead: '{startTranslatingNow}, o lea primero la {documentationForTranslators}.'
+startTranslatingNow: Empezar a traducir ahora
 subscribe: Suscribir
 support: Apoyo
 supportFreesewing: Apoyo de freesewing
@@ -188,17 +189,17 @@ thanksForYourSupport: Gracias por su apoyo
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisFieldSupportsMarkdown: Este campo admite Markdown
 thisPageRequiresAuthentication: esta página requiere autenticación
-troubleLoggingIn: ¿Problemas para acceder?
+troubleLoggingIn: '¿Problemas para acceder?'
 twitter: Twitter
 txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
-txt-tier0: ¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? <br> La liberación gratuita es gratuita para todos. No se hicieron preguntas.
+txt-tier0: '¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? <br> La liberación gratuita es gratuita para todos. No se hicieron preguntas.'
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
 txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
 txt-tiers: "Freesewing está financiado por un modelo de suscripción voluntaria con cuatro niveles:"
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
-update: Actualizar
 updated: Actualizado
+update: Actualizar
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 users: Userios
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
@@ -211,9 +212,9 @@ weNeverShareYourEmail: Nunca compartiremos esto con nadie
 whatIsThis: Que es esto
 withBreasts: Con pechos
 withoutBreasts: Sin pechos
-yay: ¡Hurra!
-yes: Sí
+yay: '¡Hurra!'
+yes: true
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
-youAreNotLoggedIn:  No has iniciado sesión
+youAreNotLoggedIn: No has iniciado sesión
 yourRights: Tus derechos

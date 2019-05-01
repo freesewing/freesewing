@@ -1,3 +1,4 @@
+---
 aaron:
   description: Aaron ist ein sportliches Shirt oder ein Tank Top.
   title: Shirt Aaron
@@ -23,7 +24,7 @@ cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
   title: Korsett Cathrin
 florent:
-  description: Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.
+  description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
@@ -50,7 +51,7 @@ theodore:
   description: Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.
   title: Hose Theodore
 trayvon:
-  description: 'Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.'
+  description: Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.
   title: Krawatte Trayvon
 wahid:
   description: Wahid ist eine klassische taillierte Weste.

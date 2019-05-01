@@ -1,3 +1,4 @@
+---
 aaron:
   description: Aaron is een sportief mouwloos hemdje of onderhemd.
   title: Aaron Onderhemd
@@ -26,7 +27,7 @@ florent:
   description: 'Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.'
   title: Florent Pet
 huey:
-  description: 'Huey is een trui met kap met een rits, en optionele voorzakken.'
+  description: Huey is een trui met kap met een rits, en optionele voorzakken.
   title: Huey Hoodie DONE
 hugo:
   description: Hugo is een trui met kap en een raglanmouw.
@@ -44,13 +45,13 @@ tamiko:
   description: Tamiko is een top die geen stof verspilt.
   title: Tamiko Top DONE
 theo:
-  description: 'Theo is Theodore, maar dan smaller.'
+  description: Theo is Theodore, maar dan smaller.
   title: Theo Broek
 theodore:
   description: Theodore is een klassieke broek volgens het boekje (van Aldrich).
   title: Theodore Broek
 trayvon:
-  description: 'Trayvon is een das zoals het hoort, voor een professioneel resultaat.'
+  description: Trayvon is een das zoals het hoort, voor een professioneel resultaat.
   title: Trayvon Das
 wahid:
   description: Wahid is een klassiek aansluitend gilet.

@@ -1,3 +1,4 @@
+---
 acrossBackFactor: brian
 armholeDepthFactor: brian
 backNeckCutout: brian
@@ -11,11 +12,9 @@ shoulderEase: brian
 shoulderSlopeReduction: brian
 sleevecapEase: brian
 sleeveLengthBonus: brian
-
 sleeveBend:
   title: Ärmelbiegung
   description: Steuert die Biegung der Schulter am Ellbogen
-
 sleevecapHeight:
   title: Sleevecap Höhe
   description: Steuert die Höhe der Ärmelkappe.

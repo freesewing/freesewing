@@ -1,9 +1,8 @@
+---
 lengthBonus: brian
-
 tipWidth:
   title: Largeur de pointe
   description: La largeur de votre cravate au bout
-
 knotWidth:
   title: Largeur du noeud
   description: La largeur de votre cravate au noeud

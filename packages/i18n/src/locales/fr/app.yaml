@@ -1,3 +1,4 @@
+---
 100PercentCommunity: 100 % communautaire
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
@@ -26,8 +27,8 @@ changeModel: Changer le modèle
 changePattern: Changer le patron
 chatOnGitter: Chatter sur Gitter
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
-chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
 chest: Poitrine
+chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
 chooseAModel: Choisir un modèle
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
@@ -62,13 +63,13 @@ documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
-draftPattern: Ébauche de {pattern}
-draftPatternForModel: Ebauche de {pattern} pour {model}
+draftPattern: 'Ébauche de {pattern}'
+draftPatternForModel: 'Ebauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
 dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
 emailAddress: Adresse mail
-emailWorksToo: Si vous ne connaissez pas votre nom d'utilisateur, votre adresse mail fonctionne également
+emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 exportDraft: Exporter l'ébauche
 export: Exporter
@@ -79,7 +80,7 @@ fieldRemoved: "{field} enlevé"
 fieldSaved: "{field} enregistré"
 filterByPattern: Filtrer par patron
 filterPatterns: Filtrez les patrons
-forgotLoginInstructions: Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.
+forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
 gist: Résumé
@@ -102,7 +103,7 @@ justAMoment: Juste un instant
 layout: Mis en page
 letUsSetupYourAccount: Laissez-nous configurer votre compte
 logIn: Connexion
-loginWithProvider: Connectez-vous avec<br>{provider}
+loginWithProvider: 'Connectez-vous avec<br>{provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -119,7 +120,7 @@ newDraftFromGist: Nouveau ébauche a partir d'un résumé
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
 noChanges: Pas de changement
-no: Non
+no: false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
 noSeamAllowance: Marge de couture non-inclus
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
@@ -129,7 +130,7 @@ ohNo: Oh non !
 options: Options
 orPayPerYear: Ou payer par an
 other: Autre
-otherThing: Autres {thing}
+otherThing: "Autres {thing}"
 ourPatrons: Notre mécènes
 patron-2: Powder monkey
 patron-4: Second
@@ -154,16 +155,16 @@ relatedLinks: Liens connexes
 remove: Supprimer
 reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
-resendActivationEmailMessage: Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation
+resendActivationEmailMessage: 'Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation'
 resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
 saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
-search: Chercher
 searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
 searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez?
+search: Chercher
 selectAPartToMoveMirrorOrRotate: Sélectionnez une pièce à déplacer, inverser ou faire pivoter
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
@@ -172,14 +173,14 @@ sewingHelp: Aide de couture
 sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
 share: Partager
 showcase: Galerie
-signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
-signupWithProvider: Inscrivez-vous avec<br>{provider}
+signUp: Créer un compte
+signupWithProvider: 'Inscrivez-vous avec<br>{provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
+startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
 startTranslatingNow: Commencez à traduire maintenant
-startTranslatingNowOrRead: "{startTranslatingNow}, ou lisez d'abord la {documentationForTranslators}."
 subscribe: Souscrire
 support: Soutien
 supportFreesewing: Soutenir freesewing
@@ -199,7 +200,7 @@ txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à qu
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 update: Mettre à jour
-userHasBeenWithUsSince: "{user} est parmi nous depuis {since}"
+userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
 users: Utilisateurs
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
@@ -212,7 +213,7 @@ whatIsThis: Qu'est-ce que c'est
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yay!
-yes: Oui
+yes: true
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté

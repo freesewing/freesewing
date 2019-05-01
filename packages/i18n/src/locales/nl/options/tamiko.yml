@@ -1,15 +1,13 @@
+---
 armholeDepthFactor: brian
 chestEase: brian
 lengthBonus: brian
-
 flare:
   title: Waaier
   description: De mate waarin het kledingstuk van je borst naar beneden uitwaaierd
-
 shoulderseamLength:
   title: Length schouderzoom
   description: De lengte van de schouderzoom, als een factor van schouder tot schouder maat
-
 shoulderSlope:
   title: Schoulder helling
   description: Bepaalt de hoek van de schouderzoom

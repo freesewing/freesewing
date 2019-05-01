@@ -1,3 +1,4 @@
+---
 acrossBackFactor: brian
 backNeckCutout: brian
 bicepsEase: brian
@@ -5,11 +6,9 @@ chestEase: brian
 cuffEase: brian
 lengthBonus: brian
 sleeveLengthBonus: brian
-
 ribbingStretchFactor:
   title: Facteur d'élasticité des côtes
   description: iDétermine la facilité négative pour des côtes.
-
 ribbingWidth:
   title: Largeur des côtes
   description: La largeur des côtes que vous souhaitez utiliser.

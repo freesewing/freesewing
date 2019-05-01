@@ -1,3 +1,4 @@
+---
 allMarkdownContent: Todo el contenido de Markdown
 attributeTheseChangesTo: Atribuye estos cambios a
 blurb: Blurb
@@ -17,7 +18,7 @@ editOnline: Editar en linea
 editor: Editor
 githubCommitMatchingMsg: GitHub hace coincidir los compromisos con los usuarios según la dirección de correo electrónico del remitente
 linkTitle: Título del enlace
-missingSomething: ¿Echando de menos algo?
+missingSomething: '¿Echando de menos algo?'
 open: Abierto
 provideAnOptionalCommitMessage: Proporcionar un mensaje de confirmación (opcional)
 pullRequest: Pull request
@@ -26,7 +27,7 @@ thisIsASharedOption: Esta es una opción compartida
 thisOptionIsSharedByMoreThanOnePattern: Esta opción es compartida por más de un patrón.
 title: Título
 topics: Temas
-translateOrEditQuestion: ¿Desea crear esta página traduciendo la versión en inglés?<br>¿O le gustaría editar la versión original en inglés en su lugar?
-translateOrEdit: ¿Traducir o editar?
+translateOrEditQuestion: '¿Desea crear esta página traduciendo la versión en inglés?<br>¿O le gustaría editar la versión original en inglés en su lugar?'
+translateOrEdit: '¿Traducir o editar?'
 weHaveCopiedTheLanguageVersion: Hemos copiado la versión en inglés como punto de partida.
 yourChanges: Tus cambios

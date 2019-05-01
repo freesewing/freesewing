@@ -1,25 +1,21 @@
+---
 armholeDepthFactor: brian
 chestEase: brian
 hipsEase: aaron
 lengthBonus: brian
 waistEase: simon
-
 backScyeDart:
   title: Pinza posterior de la sisa
   description: La cantidad a reducir en una pinza en la parte posterior de la sisa.
-
 frontScyeDart:
   title: Pinza frontal de la sisa
   description: La cantidad a reducir en una pinza en el frente de la sisa.
-
 pocketLocation:
   title: Ubicación de bolsillo
   description: Determina la colocación del bolsillo
-
 pocketWidth:
   title: Anchura de bolsillo
   description: La anchura del bolsillo
-
 weltHeight:
   title: Altura de verdugón del bolsillo
   description: La altura de verdugón del bolsillo.

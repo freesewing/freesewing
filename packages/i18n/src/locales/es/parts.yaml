@@ -1,5 +1,6 @@
-backBase: Base trasera
+---
 back: Trasero
+backBase: Base trasera
 base: Base
 bentBack: Trasero Bent
 bentBase: Base Bent
@@ -20,8 +21,8 @@ front: Frente
 frontLeft: Delantero izquierdo
 frontLining: Delantero revestimiento
 frontRight: Delantero derecha
-hood: Capucha
 hoodCenter: Centro de la capucha
+hood: Capucha
 hoodSide: Lado de la capucha
 inset: Encarte
 interfacingTail: Cola de entretela
@@ -37,16 +38,16 @@ panel5: Panel 5
 panel6: Panel 6
 panels: Paneles
 pocketBag: Bolsa de bolsillo
-pocket: Bolsillo
 pocketFacing: Mirando hacia el bolsillo
-pocketInterfacing:  Entretela de bolsillo
+pocketInterfacing: Entretela de bolsillo
+pocket: Bolsillo
 pocketWelt: Ribete de bolsillo
 side: Lado
 sleeveBase: Base de la manga
 sleevecap: Manga corta
-sleeve: Manga
 sleevePlacketOverlap: Vista de la manga superior
 sleevePlacketUnderlap: Vista de la manga fondo
+sleeve: Manga
 topSleeve: Manga superior
 top: Top
 underCollar: Debajo del cuello

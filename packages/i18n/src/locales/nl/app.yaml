@@ -1,7 +1,8 @@
+---
 100PercentCommunity: 100% gemeenschap
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
-aboutFreesewing: Over Freesewing
+aboutFreesewing: Over FreeSewing
 aboutGist1: Een resumé bevat alle informatie die nodig is om een patroon te tekenen.
 aboutGist2: Je kan een bestaande resumé kopiëren en plakken om als basis te dienen voor je eigen patroontekening.
 account: Account
@@ -62,13 +63,13 @@ documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
 download: Download
 draft: Patroontekening
-draftPatternForModel: 'Teken {pattern} voor {model}'
 draftPattern: 'Teken {pattern}'
-draftSettings: Instellingen patroontekening
+draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
+draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
-emailWorksToo: 'Als je je <b>gebruikersnaam</b> niet meer weet, vul dan je email adres in. Dat werkt ook'
+emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 exportDraft: Patroontekening exporteren
 export: Exporteren
@@ -79,15 +80,15 @@ fieldRemoved: "{field} verwijderd"
 fieldSaved: "{field} opgeslagen"
 filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
-forgotLoginInstructions: 'Als je je <b>wachtwoord</b> niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
+forgotLoginInstructions: 'Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
-freesewingOnGithub: Freesewing op GitHub
+freesewingOnGithub: FreeSewing op GitHub
 gist: Resumé
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Goed gedaan
 goodToSeeYouAgain: Leuk je weer te zien {user}
-handle: Referntie
+handle: Referentie
 helpUsTranslate: Help ons met vertalen
 home: Startpagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
@@ -119,32 +120,32 @@ newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
 noChanges: Geen wijzigingen
-no: Neen
+no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
+notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
-notesInfo: Dit zijn je aantekeningen. Je kunt hier alles schrijven wat je wilt.
 ohNo: Oh nee!
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: "Andere {thing}"
 ourPatrons: Onze mecenassen
-patron-2: Powder monkey
+patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
 patron: Mecenas
 patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maand een paar munten kunt missen, dan moet jij ook een mecenas worden van freesewing.
-patronsKeepUsAfloat: Freesewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
+patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
-pattern: Patroon
+pattern: patroon
 patterns: Patronen
 pendingConfirmation: In afwachting van bevestiging
-perMonth: per maand
-pleaseEnterAValidEmailAddress: 'Gelieve een geldig email adres in te voeren'
+perMonth: Per maand
+pleaseEnterAValidEmailAddress: Gelieve een geldig email adres in te voeren
 pleaseIncludeTheInformationBelow: Gelieve onderstaande informatie mee te geven
 preview: Voorbeeld
 privacyNotice: Privacy melding
@@ -178,8 +179,8 @@ signupWithProvider: 'Inschrijven met<br>{provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
-startTranslatingNow: Begin meteen te vertalen
 startTranslatingNowOrRead: '{startTranslatingNow}, of lees eerst de {documentationForTranslators}.'
+startTranslatingNow: Begin meteen te vertalen
 subscribe: Abonneren
 support: Ondersteuning
 supportFreesewing: Ondersteun freesewing
@@ -190,15 +191,15 @@ thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
 thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
-txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze mecenassen
-txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>Freesewing is gratis voor iedereen. Zonder verdere vragen.
+txt-footer: FreeSewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze mecenassen
+txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>FreeSewing is gratis voor iedereen. Zonder verdere vragen.
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
-txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde freesewing-swag naar je thuis. Waar ook ter wereld dat mag zijn.
-txt-tier8: "Als je ons niet louter wil steunen, maar freesewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "Freesewing wordt gefinancierd door een vrijwillig abonnementmodel met vier opties:"
-unitsInfo: Freesewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
-update: Bijwerken
+txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
+txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tiers: "FreeSewing wordt gefinancierd door een vrijwillig abonnementsmodel met vier opties:"
+unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
+update: Bijwerken
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
@@ -212,7 +213,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
-yes: Ja
+yes: true
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
