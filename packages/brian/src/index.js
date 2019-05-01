@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 // Parts
@@ -19,3 +19,4 @@ Brian.prototype.draftSleevecap = draftSleevecap;
 Brian.prototype.draftSleeve = draftSleeve;
 
 export default Brian;
+export { config };

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/mui-theme",
-  "version": "0.33.0",
+  "version": "2.0.0-alpha.3",
   "description": "A Material-UI theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -18,12 +18,14 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/mui-theme",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/mui-theme/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/mui-theme/index.mjs -f es",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"mui-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662"
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "publish": "npm build && npm publish --access=public --tag=alpha",
+    "watch": "rollup -c -w -o dist/index.mjs -f es"
   },
   "peerDependencies": {
     "@material-ui/core": "^3.9.3",
@@ -31,12 +33,13 @@
     "react-dom": "^16.3.0"
   },
   "files": [
-    "../../dist/packages/mui-theme/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 // Parts
@@ -23,3 +23,4 @@ Trayvon.prototype.draftLiningTail = part => draftLiningTail(part);
 Trayvon.prototype.draftLoop = part => draftLoop(part);
 
 export default Trayvon;
+export { config };

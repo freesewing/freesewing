@@ -20,7 +20,7 @@ profileQuestion: Do you give your consent to process your profile data?
 profileShareAnswer: '<b>No</b>, never.'
 profileTimingAnswer: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
 profileWarning: Revoking this consent will trigger the removal of all of your data. It has the exact same affect as removing your account.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b>'
+profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
 profileWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>.'
 profileWhatQuestion: What is profile data?
 profileWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>.'

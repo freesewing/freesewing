@@ -1,23 +1,24 @@
 _:
-  clean: "rimraf ../../dist/{{name}}"
-  nodebuild: "BABEL_ENV=production rollup -c -o ../../dist/{{name}}/index.js -f cjs"
-  modulebuild: "BABEL_ENV=production rollup -c -o ../../dist/{{name}}/index.mjs -f es"
+  clean: "rimraf dist"
+  nodebuild: "BABEL_ENV=production rollup -c -o dist/index.js -f cjs"
+  modulebuild: "BABEL_ENV=production rollup -c -o dist/index.mjs -f es"
   build: "npm run clean && npm run nodebuild && npm run modulebuild"
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   pubtest: "npm publish --registry http://localhost:6662"
+  publish: "npm build && npm publish --access=public --tag=alpha"
 _types:
   patterns:
   plugins:
 create-freesewing-pattern:
-  mkdist: "mkdir -p ../../dist/create-freesewing-pattern"
-  copyfiles: "cp -R index.js package.json README.md lib template ../../dist/create-freesewing-pattern/"
+  mkdist: "mkdir -p dist"
+  copyfiles: "cp -R index.js package.json README.md lib template dist/"
   build: "npm run clean && npm run mkdist && npm run copyfiles"
   test: "ava -v && standard *.js lib/*.js"
 css-theme:
-  build: "npx node-sass --output-style compressed src/theme.scss ../../dist/css-theme/theme.css"
+  build: "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
+  watch: "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
 components:
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-  build: "./scripts/build.sh"
   storybook: "start-storybook -p 6663"
 core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
@@ -26,4 +27,5 @@ core:
 workbench:
   test: "cross-env CI=1 react-scripts test --env=jsdom"
   test:watch: "react-scripts test --env=jsdom"
+  start: "rollup -c -w"
 

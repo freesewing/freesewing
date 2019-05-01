@@ -3,6 +3,16 @@ import { version } from "../package.json";
 export default {
   name: "hugo",
   version,
+  code: "Joost De Cock",
+  department: "menswear",
+  type: "pattern",
+  difficulty: 3,
+  tags: ["top", "basics"],
+  optionGroups: {
+    fit: ["bicepsEase", "chestEase", "cuffEase", "ribbingStretchFactor"],
+    style: ["lengthBonus", "sleeveLengthBonus", "ribbingWidth"],
+    advanced: ["acrossBackFactor", "backNeckCutout"]
+  },
   measurements: [
     "bicepsCircumference",
     "centerBackNeckToWaist",
@@ -14,9 +24,9 @@ export default {
     "hipsCircumference",
     "shoulderToWrist",
     "wristCircumference",
-    "headCircumference",
+    "headCircumference"
   ],
-  parts: [ "waistband", "cuff" ],
+  parts: ["waistband", "cuff"],
   dependencies: {
     frontBase: "base",
     front: "frontBase",
@@ -27,7 +37,7 @@ export default {
     pocket: "front",
     pocketFacing: "pocket",
     hoodCenter: "hoodSide",
-    hoodSide: [ "front", "back" ]
+    hoodSide: ["front", "back"]
   },
   inject: {
     frontBase: "base",
@@ -39,7 +49,7 @@ export default {
     pocket: "front",
     pocketFacing: "pocket"
   },
-  hide: [ "base", "frontBase", "backBase", "sleeveBase", "sleevecap" ],
+  hide: ["base", "frontBase", "backBase", "sleeveBase", "sleevecap"],
   options: {
     // Constants
     brianFitSleeve: false,
@@ -69,14 +79,14 @@ export default {
     sleeveWidthGuarantee: 1,
 
     // Percentages
-    acrossBackFactor:       { pct:  97, min: 93, max: 100 },
-    backNeckCutout:         { pct:   5, min:  2, max:   8 },
-    bicepsEase:             { pct:  15, min:  0, max:  50 },
-    chestEase:              { pct:   8, min: -4, max:  20 },
-    cuffEase:               { pct:  20, min:  0, max: 200 },
-    lengthBonus:            { pct:  10, min:  0, max:  20 },
-    sleeveLengthBonus:      { pct:   0, min:-40, max:  10 },
-    ribbingStretchFactor:   { pct:   5, min:  0, max:  10 },
-    ribbingWidth:           { pct:  10, min:  4, max:  20 },
+    acrossBackFactor: { pct: 97, min: 93, max: 100 },
+    backNeckCutout: { pct: 5, min: 2, max: 8 },
+    bicepsEase: { pct: 15, min: 0, max: 50 },
+    chestEase: { pct: 8, min: -4, max: 20 },
+    cuffEase: { pct: 20, min: 0, max: 200 },
+    lengthBonus: { pct: 10, min: 0, max: 20 },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    ribbingStretchFactor: { pct: 5, min: 0, max: 10 },
+    ribbingWidth: { pct: 10, min: 4, max: 20 }
   }
 };

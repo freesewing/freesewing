@@ -2,12 +2,13 @@ noNamespace:
   - create-freesewing-pattern
 customRollup:
   - css-theme
-  - create-freesewing-pattern
   - plugin-theme
-  - workbench
   - components
+  - core
 packageJson:
   create-freesewing-pattern:
     "reveal": true
     "bin":
       "create-freesewing-pattern": "index.js"
+  css-theme:
+    main: "dist/theme.css"

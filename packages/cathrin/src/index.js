@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 //Parts
@@ -25,3 +25,4 @@ Cathrin.prototype.draftPanel5 = draftPanel5;
 Cathrin.prototype.draftPanel6 = draftPanel6;
 
 export default Cathrin;
+export { config };

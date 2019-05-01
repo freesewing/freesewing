@@ -3,6 +3,16 @@ import { version } from "../package.json";
 export default {
   name: "bruce",
   version,
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  department: "menswear",
+  type: "pattern",
+  difficulty: 3,
+  tags: ["underwear", "bottom", "basics"],
+  optionGroups: {
+    fit: ["bulge", "stretch", "legStretch", "backRise"],
+    style: ["rise", "legBonus"]
+  },
   measurements: [
     "hipsCircumference",
     "upperLegCircumference",
@@ -11,7 +21,7 @@ export default {
   dependencies: {
     side: "back",
     front: "inset",
-    inset: "back",
+    inset: "back"
   },
   options: {
     // Constants
@@ -38,10 +48,10 @@ export default {
     bulge: { deg: 20, min: 0, max: 40 },
 
     // Percentages
-    legBonus:   { pct:  0,   min: -10, max: 20},
-    rise:       { pct: 10,   min:   0, max: 25},
-    stretch:    { pct: 15,   min:   5, max: 25},
-    legStretch: { pct: 40,   min:  25, max: 45},
-    backRise:   { pct:  5, min:   0, max: 10},
+    legBonus: { pct: 0, min: -10, max: 20 },
+    rise: { pct: 10, min: 0, max: 25 },
+    stretch: { pct: 15, min: 5, max: 25 },
+    legStretch: { pct: 40, min: 25, max: 45 },
+    backRise: { pct: 5, min: 0, max: 10 }
   }
 };

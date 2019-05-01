@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
 import flipPlugin from "@freesewing/plugin-flip";
@@ -55,3 +55,4 @@ Simon.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap;
 Simon.prototype.draftCuff = draftCuff;
 
 export default Simon;
+export { config };

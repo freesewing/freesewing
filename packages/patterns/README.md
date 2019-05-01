@@ -91,11 +91,10 @@ Blocks or slopers are basic patterns shapes that you can extend into fully detai
 
 ## Usage
 
-This exposes 3 named exports:
+This package has 2 exports:
 
- - `patterns` : An object holding pattern constructors
+ - `patterns` : (the default export) An object holding pattern constructors
  - `patternList` : An array of pattern names
- - `patternInfo` : Extra pattern information that is typically used for frontend integration (tags, difficulty level, that sort of thing).
 
 
 

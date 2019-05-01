@@ -3,6 +3,16 @@ import { version } from "../package.json";
 export default {
   name: "tamiko",
   version,
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  department: "womenswear",
+  type: "pattern",
+  difficulty: 1,
+  tags: ["top"],
+  optionGroups: {
+    fit: ["armholeDepthFactor", "chestEase", "shoulderSlope"],
+    style: ["flare", "lengthBonus", "shoulderseamLength"]
+  },
   measurements: [
     "shoulderToShoulder",
     "chestCircumference",

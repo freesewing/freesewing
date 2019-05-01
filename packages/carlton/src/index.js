@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import buttons from "@freesewing/plugin-buttons";
 import Bent from "@freesewing/bent";
@@ -23,10 +23,7 @@ import draftInnerPocketBag from "./innerpocketbag";
 import draftInnerPocketTab from "./innerpockettab";
 
 // Create new design
-const Carlton = new freesewing.Design(config, [
-  plugins,
-  buttons
-]);
+const Carlton = new freesewing.Design(config, [plugins, buttons]);
 
 // Attach draft methods from Bent to prototype
 Carlton.prototype.draftBentBase = function(part) {
@@ -34,7 +31,7 @@ Carlton.prototype.draftBentBase = function(part) {
 };
 Carlton.prototype.draftBentFront = function(part) {
   return new Bent(this.settings).draftFront(part);
-}
+};
 Carlton.prototype.draftBentBack = function(part) {
   return new Bent(this.settings).draftBack(part);
 };
@@ -68,3 +65,4 @@ Carlton.prototype.draftInnerPocketBag = draftInnerPocketBag;
 Carlton.prototype.draftInnerPocketTab = draftInnerPocketTab;
 
 export default Carlton;
+export { config };

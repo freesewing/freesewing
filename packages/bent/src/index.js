@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import Brian from "@freesewing/brian";
 import config from "../config";
@@ -27,3 +27,4 @@ Bent.prototype.draftTopSleeve = draftTopSleeve;
 Bent.prototype.draftUnderSleeve = draftUnderSleeve;
 
 export default Bent;
+export { config };

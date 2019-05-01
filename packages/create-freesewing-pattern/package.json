@@ -1,6 +1,6 @@
 {
   "name": "create-freesewing-pattern",
-  "version": "0.33.0",
+  "version": "2.0.0-alpha.3",
   "description": "Initializer package for FreeSewing patterns: npm init FreeSewing-pattern",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -18,14 +18,15 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/create-freesewing-pattern",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/create-freesewing-pattern/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/create-freesewing-pattern/index.mjs -f es",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run mkdist && npm run copyfiles",
     "test": "ava -v && standard *.js lib/*.js",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "mkdist": "mkdir -p ../../dist/create-freesewing-pattern",
-    "copyfiles": "cp -R index.js package.json README.md lib template ../../dist/create-freesewing-pattern/"
+    "publish": "npm build && npm publish --access=public --tag=alpha",
+    "mkdist": "mkdir -p dist",
+    "copyfiles": "cp -R index.js package.json README.md lib template dist/"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -46,12 +47,13 @@
     "which": "^1.3.1"
   },
   "files": [
-    "../../dist/packages/create-freesewing-pattern/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

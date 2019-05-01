@@ -1,6 +1,6 @@
 paperless:
   title: Paperless
-  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print.
+  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 
 sa:
   title: Seam allowance
@@ -16,7 +16,7 @@ only:
 
 units:
   title: Units
-  description: Controls the units used on your pattern.
+  description: Controls the units used on your pattern
 
 margin:
   title: Margin
@@ -24,8 +24,8 @@ margin:
 
 complete:
   title: Detail
-  description: Controls how detailed the pattern is. Either a complete pattern with all details, or a basic outline of the pattern parts.
+  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 
 layout:
   title: Layout
-  description: Controls how the individual pattern parts are placed on your pattern.
+  description: Controls how the individual pattern parts are placed on your pattern

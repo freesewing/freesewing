@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/workbench",
-  "version": "0.33.0",
+  "version": "2.0.0-alpha.3",
   "description": "A React component to facilitate FreeSewing pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -17,27 +17,37 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf ../../dist/workbench",
-    "nodebuild": "BABEL_ENV=production rollup -c -o ../../dist/workbench/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o ../../dist/workbench/index.mjs -f es",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "clean": "rimraf dist",
+    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
+    "SKIPbuild": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "test:watch": "react-scripts test --env=jsdom"
+    "publish": "npm build && npm publish --access=public --tag=alpha",
+    "test:watch": "react-scripts test --env=jsdom",
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^0.33.0",
-    "@freesewing/i18n": "^0.33.0",
-    "@freesewing/plugin-theme": "^0.33.0",
+    "@freesewing/core": "^2.0.0-alpha.2",
+    "@freesewing/i18n": "^2.0.0-alpha.2",
+    "@freesewing/plugin-theme": "^2.0.0-alpha.2",
+    "@freesewing/utils": "^2.0.0-alpha.2",
     "react-intl": "^2.8.0"
   },
+  "dependencies": {
+    "@freesewing/components": "^2.0.0-alpha.3",
+    "@freesewing/css-theme": "^2.0.0-alpha.3",
+    "@freesewing/mui-theme": "^2.0.0-alpha.3",
+    "@freesewing/utils": "^2.0.0-alpha.3"
+  },
   "files": [
-    "../../dist/packages/workbench/*",
+    "dist/*",
     "README.md",
     "package.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "alpha"
   },
   "engines": {
     "node": ">=8.0.0",

@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
@@ -43,3 +43,4 @@ Hugo.prototype.draftWaistband = draftWaistband;
 Hugo.prototype.draftCuff = draftCuff;
 
 export default Hugo;
+export { config };
