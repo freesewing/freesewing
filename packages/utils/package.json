@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.3",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,9 +29,6 @@
     "pubtest": "npm publish --registry http://localhost:6662",
     "publish": "npm build && npm publish --access=public --tag=alpha"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
