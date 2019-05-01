@@ -70,8 +70,8 @@ const DraftSettingMargin = props => {
 DraftSettingMargin.propTypes = {
   raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
+  desc: PropTypes.node.isRequired,
   units: PropTypes.oneOf(["metric", "imperial"]).isRequired,
   labels: PropTypes.array
 };

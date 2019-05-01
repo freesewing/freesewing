@@ -35,7 +35,7 @@ const Bool = props => {
 
 Bool.propTypes = {
   dflt: PropTypes.bool,
-  labels: PropTypes.arrayOf(PropTypes.string),
+  labels: PropTypes.array,
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired
 };

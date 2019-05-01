@@ -5,7 +5,7 @@ import Emblem from "../Emblem";
 import { FormattedMessage } from "react-intl";
 
 const Navbar = props => {
-  const renderNav = nav => {
+  const renderNav = (key, nav) => {
     let title = nav.title || nav.text;
     let text =
       typeof nav.text === "string" ? (
@@ -16,12 +16,12 @@ const Navbar = props => {
     if (nav.type === "component") return nav.component;
     else if (nav.type === "button")
       return (
-        <button title={title} onClick={nav.onClick}>
+        <button title={title} onClick={nav.onClick} key={key}>
           {text}
         </button>
       );
     return (
-      <a href={nav.href} className="nav" title={title}>
+      <a href={nav.href} className="nav" title={title} key={key}>
         {text}
       </a>
     );
@@ -36,9 +36,13 @@ const Navbar = props => {
         <div className="emblem">
           <a href={props.home}>{props.emblem}</a>
         </div>
-        {props.navs.left.map(nav => renderNav(nav))}
+        {Object.keys(props.navs.left).map(key =>
+          renderNav(key, props.navs.left[key])
+        )}
         <div className="spread" />
-        {props.navs.right.map(nav => renderNav(nav))}
+        {Object.keys(props.navs.right).map(key =>
+          renderNav(key, props.navs.right[key])
+        )}
       </div>
     </header>
   );

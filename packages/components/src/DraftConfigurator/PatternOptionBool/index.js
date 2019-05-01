@@ -60,7 +60,8 @@ PatternOptionBool.propTypes = {
   name: PropTypes.string.isRequired,
   dflt: PropTypes.oneOfType([
     PropTypes.number.isRequired,
-    PropTypes.string.isRequired
+    PropTypes.string.isRequired,
+    PropTypes.bool.isRequired
   ]),
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,

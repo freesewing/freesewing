@@ -94,7 +94,7 @@ const DraftSettings = props => {
         let children = null;
         if (open) children = groups[group].map(component => component);
         return (
-          <React.Fragment>
+          <React.Fragment key={group}>
             <li
               className={open ? "expanded" : "collapsed"}
               key={group + "-ghead"}
@@ -117,7 +117,7 @@ const DraftSettings = props => {
 };
 
 DraftSettings.propTypes = {
-  info: PropTypes.object.isRequired,
+  config: PropTypes.object.isRequired,
   gist: PropTypes.object.isRequired
 };
 

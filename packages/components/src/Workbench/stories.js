@@ -40,7 +40,7 @@ const gist = {
 
 const props = {
   freesewing,
-  pattern: () => "aaron",
+  Pattern: () => "aaron",
   config,
   from: gist
 };

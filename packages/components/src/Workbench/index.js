@@ -20,12 +20,9 @@ const Workbench = props => {
   const [pattern, setPattern] = useState(false);
   const [settings, setSettings] = useState(false);
   const [theme, setTheme] = useState("light");
-  useEffect(
-    () => {
-      if (props.from) props.importGist(props.from);
-    },
-    [props.from]
-  );
+  useEffect(() => {
+    if (props.from) props.importGist(props.from);
+  }, [props.from]);
 
   const showLanguageChooser = () => setDisplay("language");
   const toggleSettings = () => setSettings(!settings);
@@ -42,37 +39,37 @@ const Workbench = props => {
   };
 
   const navs = {
-    left: [
-      {
+    left: {
+      docs: {
         type: "link",
         href: "https://freesewing.dev/",
         text: "app.docs"
       },
-      {
+      help: {
         type: "link",
         href: "https://gitter.im/freesewing/freesewing/",
         text: "app.askForHelp"
       }
-    ],
-    right: [
-      {
+    },
+    right: {
+      version: {
         type: "link",
         href: "https://github.com/freesewing/freesewing",
         text: "v" + props.freesewing.version
       },
-      {
+      language: {
         type: "button",
         onClick: () => setDisplay("languages"),
         text: <LanguageIcon className="nav-icon" />,
         title: "Languages"
       },
-      {
+      dark: {
         type: "button",
         onClick: toggleDarkMode,
         text: <DarkModeIcon className="nav-icon moon" />,
         title: "Toggle dark mode"
       }
-    ]
+    }
   };
 
   let main = null;
@@ -89,7 +86,7 @@ const Workbench = props => {
       main = (
         <Pattern
           freesewing={props.freesewing}
-          pattern={props.pattern}
+          Pattern={props.Pattern}
           config={props.config}
           gist={props.gist}
           updateGist={props.updateGist}
@@ -117,7 +114,7 @@ const Workbench = props => {
 
 Workbench.propTypes = {
   freesewing: PropTypes.object.isRequired,
-  pattern: PropTypes.func.isRequired,
+  Pattern: PropTypes.func.isRequired,
   config: PropTypes.object.isRequired,
   from: PropTypes.object
 };

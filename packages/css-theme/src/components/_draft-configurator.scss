@@ -36,7 +36,7 @@ ul.nav h3 {
   z-index: 3;
 }
 ul.nav span.custom {
-  color: $fc-notice-light;
+  color: $fc-bg-dark;
   font-weight: bold;
 }
 .col-exp {
@@ -84,5 +84,8 @@ button.mini-icon-btn {
   ul.nav h4:hover {
     cursor: pointer;
     background: $oc-gray-7;
+  }
+  ul.nav span.custom {
+    color: $fc-bg-light;
   }
 }

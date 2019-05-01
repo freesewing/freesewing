@@ -41,7 +41,6 @@ const OptionPreamble = props => {
         dangerouslySetInnerHTML={{ __html: props.displayValue }}
       />
     );
-
   return (
     <React.Fragment>
       <h4 onClick={props.toggleExpanded} style={styles.container}>
@@ -93,11 +92,13 @@ const OptionPreamble = props => {
 OptionPreamble.propTypes = {
   dflt: PropTypes.oneOfType([
     PropTypes.number.isRequired,
-    PropTypes.string.isRequired
+    PropTypes.string.isRequired,
+    PropTypes.bool.isRequired
   ]),
   value: PropTypes.oneOfType([
     PropTypes.number.isRequired,
-    PropTypes.string.isRequired
+    PropTypes.string.isRequired,
+    PropTypes.bool.isRequired
   ]),
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,

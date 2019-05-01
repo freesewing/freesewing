@@ -1,44 +1,56 @@
+const darkBg = "#212529";
+const lightBg = "#f8f9fa";
+const colors = {
+  light: {
+    primary: darkBg,
+    secondary: lightBg,
+    link: "#74c0fc",
+    paper: "#FFF"
+  },
+  dark: {
+    primary: lightBg,
+    secondary: darkBg,
+    link: "#74c0fc",
+    paper: "#000"
+  }
+};
 const asTitle = {
   fontFamily: "Roboto Condensed",
   fontWeight: "bold"
 };
+const important = "!important";
 
-const theme = {
-  props: {
-    MuiButtonBase: {
-      //disableRipple: true // Disabling ripple everywhere
+const getTheme = mode => {
+  let c = colors[mode];
+  let forceColor = {
+    root: {
+      color: c.primary + important
     }
-  },
-  overrides: {
-    MuiButton: { root: asTitle },
-    MuiMenuItem: { root: asTitle },
-    MuiListItemText: { primary: asTitle }
-  }
+  };
+  return {
+    overrides: {
+      MuiButton: { root: asTitle },
+      MuiMenuItem: { root: asTitle },
+      MuiListItemText: { primary: asTitle },
+      MuiRadio: forceColor,
+      MuiCheckbox: forceColor
+    },
+    palette: {
+      primary: {
+        main: c.primary
+      },
+      secondary: {
+        main: c.secondary
+      },
+      type: mode,
+      background: {
+        paper: c.paper,
+        default: c.secondary
+      }
+    },
+    themeName: mode
+  };
 };
 
-const darkBg = "#212529";
-const lightBg = "#f8f9fa";
-
-const palettes = {
-  dark: {
-    primary: { main: lightBg },
-    secondary: { main: darkBg },
-    type: "dark",
-    background: {
-      paper: "#212529",
-      default: "#343a40"
-    }
-  },
-  light: {
-    primary: { main: darkBg },
-    secondary: { main: lightBg },
-    type: "light",
-    background: {
-      paper: "#FFF",
-      default: "#f8f9fa"
-    }
-  }
-};
-
-export const dark = { ...theme, palette: palettes.dark, themeName: "Dark" };
-export const light = { ...theme, palette: palettes.light, themeName: "Light" };
+export const light = getTheme("light");
+export const dark = getTheme("dark");
