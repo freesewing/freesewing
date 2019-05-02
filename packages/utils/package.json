@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.0.0-alpha.9",
+  "version": "2.0.0-alpha.10",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -30,9 +30,6 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
