@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/patterns",
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.9",
   "description": "An umbrella package for all FreeSewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,27 +33,27 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.4",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.4"
+    "@freesewing/core": "^2.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.9"
   },
   "dependencies": {
-    "@freesewing/aaron": "^2.0.0-alpha.5",
-    "@freesewing/bent": "^2.0.0-alpha.5",
-    "@freesewing/brian": "^2.0.0-alpha.5",
-    "@freesewing/bruce": "^2.0.0-alpha.5",
-    "@freesewing/carlita": "^2.0.0-alpha.5",
-    "@freesewing/carlton": "^2.0.0-alpha.5",
-    "@freesewing/cathrin": "^2.0.0-alpha.5",
-    "@freesewing/florent": "^2.0.0-alpha.5",
-    "@freesewing/huey": "^2.0.0-alpha.5",
-    "@freesewing/hugo": "^2.0.0-alpha.5",
+    "@freesewing/aaron": "^2.0.0-alpha.9",
+    "@freesewing/bent": "^2.0.0-alpha.9",
+    "@freesewing/brian": "^2.0.0-alpha.9",
+    "@freesewing/bruce": "^2.0.0-alpha.9",
+    "@freesewing/carlita": "^2.0.0-alpha.9",
+    "@freesewing/carlton": "^2.0.0-alpha.9",
+    "@freesewing/cathrin": "^2.0.0-alpha.9",
+    "@freesewing/florent": "^2.0.0-alpha.9",
+    "@freesewing/huey": "^2.0.0-alpha.9",
+    "@freesewing/hugo": "^2.0.0-alpha.9",
     "@freesewing/jaeger": "0.2.1",
-    "@freesewing/shin": "^2.0.0-alpha.5",
-    "@freesewing/simon": "^2.0.0-alpha.5",
-    "@freesewing/sven": "^2.0.0-alpha.5",
-    "@freesewing/tamiko": "^2.0.0-alpha.5",
-    "@freesewing/trayvon": "^2.0.0-alpha.5",
-    "@freesewing/wahid": "^2.0.0-alpha.5"
+    "@freesewing/shin": "^2.0.0-alpha.9",
+    "@freesewing/simon": "^2.0.0-alpha.9",
+    "@freesewing/sven": "^2.0.0-alpha.9",
+    "@freesewing/tamiko": "^2.0.0-alpha.9",
+    "@freesewing/trayvon": "^2.0.0-alpha.9",
+    "@freesewing/wahid": "^2.0.0-alpha.9"
   },
   "files": [
     "dist/*",
