@@ -38,11 +38,11 @@ export default {
     babel({
       exclude: "node_modules/**",
       plugins: ["@babel/plugin-proposal-object-rest-spread"]
+    }),
+    minify({
+      comments: false,
+      sourceMap: true,
+      banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
     })
-    //minify({
-    //  comments: false,
-    //  sourceMap: true,
-    //  banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-    //})
   ]
 };

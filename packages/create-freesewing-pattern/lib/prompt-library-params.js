@@ -123,7 +123,8 @@ module.exports = async opts => {
 
     return {
       ...info,
-      git: opts.git
+      git: opts.git,
+      version: opts.version
     };
   }
 };

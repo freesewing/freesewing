@@ -1,14 +1,18 @@
 import React, { Component } from "react";
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
+import { Workbench } from "@freesewing/components";
+
+import "typeface-roboto-condensed";
+import "@freesewing/css-theme";
 import "./App.css";
 
-import ExampleComponent from "{{name}}";
+import Pattern from "pattern";
 
 class App extends Component {
   render() {
     console.log(freesewing);
-    console.log({ ExampleComponent });
-    return <p>hi there</p>;
+    console.log({ Pattern });
+    return <Workbench />;
   }
 }
 

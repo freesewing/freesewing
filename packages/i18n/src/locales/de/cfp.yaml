@@ -4,3 +4,10 @@ packageManager: Paket-Manager
 patternDescription: Schnittmusterbeschreibung
 patternName: Schnittmustername
 patternType: Schnittmustertyp
+patternCreated: Das Skelett Ihres Schnittmusters wurde um erstellt
+runTheseCommands: Führen Sie diese beiden Befehle aus, um zu beginnen
+startRollup: Starten Sie den Rollup-Bündler in einem Terminal im Überwachungsmodus
+startWebpack: Führen Sie in einem anderen Terminal den Webpack-Dev-Server aus
+devDocsAvailableAt: Entwicklerdokumentation ist verfügbar unter
+talkToUs: Für Fragen, Feedback oder Anregungen sprechen Sie mit uns in unserem Chatroom
+

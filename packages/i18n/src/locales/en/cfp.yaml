@@ -3,3 +3,9 @@ githubRepo: GitHub repository
 packageManager: Package manager
 patternName: Pattern name
 patternType: Pattern type
+patternCreated: Your pattern skeleton has been created at
+runTheseCommands: To get started, run these two commands
+startRollup: In one terminal, start the rollup bundler in watch mode
+startWebpack: And in another terminal, run the webpack dev server
+devDocsAvailableAt: Developer documentation is available at
+talkToUs: For questions, feedback or suggestions, come talk to us in our chat room

@@ -4,6 +4,7 @@
 const path = require("path");
 const chalk = require("chalk");
 const program = require("commander");
+const strings = require("@freesewing/i18n").strings;
 const { version } = require("../package");
 
 const getDefaultLibraryParams = require("./get-default-library-params");
@@ -50,7 +51,8 @@ module.exports = async () => {
     template: program.template,
     templatePath: program.templatePath,
     skipPrompts: program.skipPrompts,
-    git: program.git
+    git: program.git,
+    version
   };
 
   Object.keys(opts).forEach(key => {
@@ -71,18 +73,27 @@ module.exports = async () => {
   const dest = await createLibrary(params);
 
   console.log(`
+🎉 ${strings[params.language]["cfp.patternCreated"]} ${chalk.bold(dest)}
 
-Your pattern skeleton has been created at ${dest}.
+${strings[params.language]["cfp.runTheseCommands"]}:
 
-Before you start hacking, run these two commands, each in their own terminal:
+ - ${strings[params.language]["cfp.startRollup"]}
 
-In one terminal, start the rollup bundler in watch mode:
-$ ${chalk.cyan(`cd ${params.shortName} && ${params.manager} start`)}
+  👉  ${chalk.cyan(`cd ${params.shortName} && ${params.manager} start`)}
 
-And in another terminal, run the dev server:
-$ ${chalk.cyan(
+ - ${strings[params.language]["cfp.startWebpack"]}
+
+  👉  ${chalk.cyan(
     `cd ${path.join(params.shortName, "example")} && ${params.manager} start`
   )}
+
+
+${strings[params.language]["cfp.devDocsAvailableAt"]}
+  ${chalk.bold("https://" + params.language + ".freesewing.dev/")}
+
+${strings[params.language]["cfp.talkToUs"]}
+  ${chalk.bold("https://gitter.im/freesewing/freesewing")}
+
 `);
 
   return dest;

@@ -7,8 +7,20 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
-    "freesewing": "^0.30.6",
-    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+    "@freesewing/core": "^{{version}}",
+    "@freesewing/plugin-bundle": "^{{version}}",
+    "@freesewing/plugin-bust": "^{{version}}",
+    "@freesewing/plugin-buttons": "^{{version}}",
+    "@freesewing/plugin-flip": "^{{version}}",
+    "@freesewing/plugin-debug": "^{{version}}",
+    "@freesewing/plugin-theme": "^{{version}}",
+    "@freesewing/plugin-designer": "^{{version}}",
+    "@freesewing/i18n": "^{{version}}",
+    "@freesewing/components": "^{{version}}",
+    "@freesewing/css-theme": "^{{version}}",
+    "@freesewing/mui-theme": "^{{version}}",
+    "typeface-roboto-condensed": "^0.0.54",
+    "pattern": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -4,3 +4,10 @@ packageManager: Pakket manager
 patternName: Patroonnaam
 patternDescription: Patroon beschrijving
 patternType: Patroon type
+patternCreated: Het skelet van je patroon is aangemaakt in
+runTheseCommands: Voer deze twee opdrachten uit om aan de slag te gaan
+startRollup: Start in één terminal rollup in watch-modus
+startWebpack: En in een andere terminal start je de webpack dev-server
+devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
+talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chatroom
+
