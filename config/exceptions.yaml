@@ -7,8 +7,11 @@ customRollup:
   - core
 packageJson:
   create-freesewing-pattern:
-    "reveal": true
-    "bin":
-      "create-freesewing-pattern": "index.js"
+    bin:
+      create-freesewing-pattern: index.js
+    main: index.js
+    module: '!'
   css-theme:
-    main: "dist/theme.css"
+    main: dist/theme.css
+    module: '!'
+

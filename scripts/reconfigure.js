@@ -125,9 +125,11 @@ function scripts(pkg, config, type) {
   }
   if (typeof config.scripts[pkg] !== "undefined") {
     for (let key of Object.keys(config.scripts[pkg])) {
-      runScripts[key] = Mustache.render(config.scripts[pkg][key], {
-        name: pkg
-      });
+      if (config.scripts[pkg][key] === "!") delete runScripts[key];
+      else
+        runScripts[key] = Mustache.render(config.scripts[pkg][key], {
+          name: pkg
+        });
     }
   }
 
@@ -192,6 +194,9 @@ function packageConfig(pkg, config) {
       ...pkgConf,
       ...config.exceptions.packageJson[pkg]
     };
+    for (let key of Object.keys(config.exceptions.packageJson[pkg])) {
+      if (config.exceptions.packageJson[pkg][key] === "!") delete pkgConf[key];
+    }
   }
 
   return pkgConf;

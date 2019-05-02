@@ -11,10 +11,10 @@ _types:
   patterns:
   plugins:
 create-freesewing-pattern:
-  mkdist: "mkdir -p dist"
-  copyfiles: "cp -R index.js package.json README.md lib template dist/"
-  build: "npm run clean && npm run mkdist && npm run copyfiles"
-  test: "ava -v && standard *.js lib/*.js"
+  clean: "!"
+  nodebuild: "!"
+  modulebuild: "!"
+  build: "!"
 css-theme:
   build: "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
   watch: "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
