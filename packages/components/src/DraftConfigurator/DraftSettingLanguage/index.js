@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import FormFieldList from "../../.form/FormFieldList";
 import OptionPreamble from "../OptionPreamble";
 import { injectIntl } from "react-intl";
-import { i18n as languages } from "@freesewing/i18n";
+import { languages } from "@freesewing/i18n";
 
 const DraftSettingLanguage = props => {
   const [value, setValue] = useState(props.intl.locale);

@@ -1,7 +1,7 @@
 import React from "react";
-import { configure } from "@storybook/react";
 import "../../css-theme/dist/theme.css";
-import { addParameters, addDecorator } from "@storybook/react";
+import { configure } from "@storybook/react";
+import { addDecorator } from "@storybook/react";
 import { IntlProvider } from "react-intl";
 import { strings } from "@freesewing/i18n";
 
@@ -16,12 +16,5 @@ addDecorator(story => (
     {story()}
   </IntlProvider>
 ));
-
-//addParameters({
-//  backgrounds: [
-//    { name: 'Light', value: '#f8f9fa', default: true },
-//    { name: 'Dark', value: '#212529' },
-//  ],
-//});
 
 configure(loadStories, module);

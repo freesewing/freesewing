@@ -1,9 +1,8 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
-
 import config from "../config/";
 import { version } from "../package.json";
-
+// Path API
 import draftPath_ops from "./path_ops";
 import draftPath_attr from "./path_attr";
 import draftPath_clone from "./path_clone";
@@ -23,14 +22,14 @@ import draftPath_split from "./path_split";
 import draftPath_start from "./path_start";
 import draftPath_translate from "./path_translate";
 import draftPath_trim from "./path_trim";
-
+// Plugins
 import draftPlugin_cutonfold from "./plugin_cutonfold";
 import draftPlugin_dimension from "./plugin_dimension";
 import draftPlugin_grainline from "./plugin_grainline";
 import draftPlugin_logo from "./plugin_logo";
 import draftPlugin_scalebox from "./plugin_scalebox";
 import draftPlugin_title from "./plugin_title";
-
+// Point API
 import draftPoint_angle from "./point_angle";
 import draftPoint_attr from "./point_attr";
 import draftPoint_clone from "./point_clone";
@@ -47,7 +46,7 @@ import draftPoint_shiftoutwards from "./point_shiftoutwards";
 import draftPoint_sitson from "./point_sitson";
 import draftPoint_rotate from "./point_rotate";
 import draftPoint_translate from "./point_translate";
-
+// Utils API
 import draftUtils_linesintersect from "./utils_linesintersect";
 import draftUtils_beamsintersect from "./utils_beamsintersect";
 import draftUtils_beamintersectsx from "./utils_beamintersectsx";
@@ -63,87 +62,84 @@ import draftUtils_lineintersectscircle from "./utils_lineintersectscircle";
 import draftUtils_curveintersectsx from "./utils_curveintersectsx";
 import draftUtils_curveintersectsy from "./utils_curveintersectsy";
 import draftUtils_splitcurve from "./utils_splitcurve";
-
+// Various
 import draftSettings_sa from "./settings_sa";
-
 import draftSnippet_attr from "./snippet_attr";
 import draftSnippet_clone from "./snippet_clone";
 
 // Create design
-const Examples = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods to prototype
-Examples.prototype.draftPath_move = draftPath_ops;
-Examples.prototype.draftPath_line = draftPath_ops;
-Examples.prototype.draftPath_curve = draftPath_ops;
-Examples.prototype.draftPath__curve = draftPath_ops;
-Examples.prototype.draftPath_curve_ = draftPath_ops;
-Examples.prototype.draftPath_close = draftPath_ops;
+let methods = {
+  draftPath_move: draftPath_ops,
+  draftPath_line: draftPath_ops,
+  draftPath_curve: draftPath_ops,
+  draftPath__curve: draftPath_ops,
+  draftPath_curve_: draftPath_ops,
+  draftPath_close: draftPath_ops,
+  draftPath_attr,
+  draftPath_clone,
+  draftPath_divide,
+  draftPath_edge,
+  draftPath_end,
+  draftPath_intersects,
+  draftPath_intersectsx,
+  draftPath_intersectsy,
+  draftPath_join,
+  draftPath_length,
+  draftPath_offset,
+  draftPath_ops,
+  draftPath_reverse,
+  draftPath_shiftalong,
+  draftPath_shiftfractionalong,
+  draftPath_split,
+  draftPath_start,
+  draftPath_translate,
+  draftPath_trim,
+  draftPlugin_cutonfold,
+  draftPlugin_dimension,
+  draftPlugin_grainline,
+  draftPlugin_logo,
+  draftPlugin_scalebox,
+  draftPlugin_title,
+  draftPoint_attr,
+  draftPoint_angle,
+  draftPoint_attr,
+  draftPoint_clone,
+  draftPoint_copy,
+  draftPoint_dist,
+  draftPoint_dx,
+  draftPoint_dy,
+  draftPoint_flipx,
+  draftPoint_flipy,
+  draftPoint_shift,
+  draftPoint_shiftfractiontowards,
+  draftPoint_shifttowards,
+  draftPoint_shiftoutwards,
+  draftPoint_sitson,
+  draftPoint_rotate,
+  draftPoint_translate,
+  draftSettings_sa,
+  draftSnippet_attr,
+  draftSnippet_clone,
+  draftUtils_linesintersect,
+  draftUtils_beamsintersect,
+  draftUtils_beamintersectsx,
+  draftUtils_beamintersectsy,
+  draftUtils_lineintersectscurve,
+  draftUtils_curvesintersect,
+  draftUtils_pointonbeam,
+  draftUtils_pointonline,
+  draftUtils_pointoncurve,
+  draftUtils_circlesintersect,
+  draftUtils_beamintersectscircle,
+  draftUtils_lineintersectscircle,
+  draftUtils_curveintersectsx,
+  draftUtils_curveintersectsy,
+  draftUtils_splitcurve
+};
 
-Examples.prototype.draftPath_attr = draftPath_attr;
-Examples.prototype.draftPath_clone = draftPath_clone;
-Examples.prototype.draftPath_divide = draftPath_divide;
-Examples.prototype.draftPath_edge = draftPath_edge;
-Examples.prototype.draftPath_end = draftPath_end;
-Examples.prototype.draftPath_intersects = draftPath_intersects;
-Examples.prototype.draftPath_intersectsx = draftPath_intersectsx;
-Examples.prototype.draftPath_intersectsy = draftPath_intersectsy;
-Examples.prototype.draftPath_join = draftPath_join;
-Examples.prototype.draftPath_length = draftPath_length;
-Examples.prototype.draftPath_offset = draftPath_offset;
-Examples.prototype.draftPath_ops = draftPath_ops;
-Examples.prototype.draftPath_reverse = draftPath_reverse;
-Examples.prototype.draftPath_shiftalong = draftPath_shiftalong;
-Examples.prototype.draftPath_shiftfractionalong = draftPath_shiftfractionalong;
-Examples.prototype.draftPath_split = draftPath_split;
-Examples.prototype.draftPath_start = draftPath_start;
-Examples.prototype.draftPath_translate = draftPath_translate;
-Examples.prototype.draftPath_trim = draftPath_trim;
+for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m];
 
-Examples.prototype.draftPlugin_cutonfold = draftPlugin_cutonfold;
-Examples.prototype.draftPlugin_dimension = draftPlugin_dimension;
-Examples.prototype.draftPlugin_grainline = draftPlugin_grainline;
-Examples.prototype.draftPlugin_logo = draftPlugin_logo;
-Examples.prototype.draftPlugin_scalebox = draftPlugin_scalebox;
-Examples.prototype.draftPlugin_title = draftPlugin_title;
-
-Examples.prototype.draftPoint_attr = draftPoint_attr;
-Examples.prototype.draftPoint_angle = draftPoint_angle;
-Examples.prototype.draftPoint_attr = draftPoint_attr;
-Examples.prototype.draftPoint_clone = draftPoint_clone;
-Examples.prototype.draftPoint_copy = draftPoint_copy;
-Examples.prototype.draftPoint_dist = draftPoint_dist;
-Examples.prototype.draftPoint_dx = draftPoint_dx;
-Examples.prototype.draftPoint_dy = draftPoint_dy;
-Examples.prototype.draftPoint_flipx = draftPoint_flipx;
-Examples.prototype.draftPoint_flipy = draftPoint_flipy;
-Examples.prototype.draftPoint_shift = draftPoint_shift;
-Examples.prototype.draftPoint_shiftfractiontowards = draftPoint_shiftfractiontowards;
-Examples.prototype.draftPoint_shifttowards = draftPoint_shifttowards;
-Examples.prototype.draftPoint_shiftoutwards = draftPoint_shiftoutwards;
-Examples.prototype.draftPoint_sitson = draftPoint_sitson;
-Examples.prototype.draftPoint_rotate = draftPoint_rotate;
-Examples.prototype.draftPoint_translate = draftPoint_translate;
-
-Examples.prototype.draftSettings_sa = draftSettings_sa;
-
-Examples.prototype.draftSnippet_attr = draftSnippet_attr;
-Examples.prototype.draftSnippet_clone = draftSnippet_clone;
-
-Examples.prototype.draftUtils_linesintersect = draftUtils_linesintersect;
-Examples.prototype.draftUtils_beamsintersect = draftUtils_beamsintersect;
-Examples.prototype.draftUtils_beamintersectsx = draftUtils_beamintersectsx;
-Examples.prototype.draftUtils_beamintersectsy = draftUtils_beamintersectsy;
-Examples.prototype.draftUtils_lineintersectscurve = draftUtils_lineintersectscurve;
-Examples.prototype.draftUtils_curvesintersect = draftUtils_curvesintersect;
-Examples.prototype.draftUtils_pointonbeam = draftUtils_pointonbeam;
-Examples.prototype.draftUtils_pointonline = draftUtils_pointonline;
-Examples.prototype.draftUtils_pointoncurve = draftUtils_pointoncurve;
-Examples.prototype.draftUtils_circlesintersect = draftUtils_circlesintersect;
-Examples.prototype.draftUtils_beamintersectscircle = draftUtils_beamintersectscircle;
-Examples.prototype.draftUtils_lineintersectscircle = draftUtils_lineintersectscircle;
-Examples.prototype.draftUtils_curveintersectsx = draftUtils_curveintersectsx;
-Examples.prototype.draftUtils_curveintersectsy = draftUtils_curveintersectsy;
-Examples.prototype.draftUtils_splitcurve = draftUtils_splitcurve;
-
-export default Examples;
+export default Pattern;

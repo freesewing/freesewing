@@ -1,31 +1,14 @@
-import Aaron from "@freesewing/aaron";
-import Bent from "@freesewing/bent";
-import Brian from "@freesewing/brian";
-import Bruce from "@freesewing/bruce";
-import Carlton from "@freesewing/carlton";
-import Cathrin from "@freesewing/cathrin";
-import Huey from "@freesewing/huey";
-import Hugo from "@freesewing/hugo";
-import Jaeger from "@freesewing/jaeger";
-import Simon from "@freesewing/simon";
-import Sven from "@freesewing/sven";
-import Tamiko from "@freesewing/tamiko";
-import Trayvon from "@freesewing/trayvon";
-import Wahid from "@freesewing/wahid";
-
-export default {
-  Aaron,
-  Bent,
-  Brian,
-  Bruce,
-  Carlton,
-  Cathrin,
-  Huey,
-  Hugo,
-  Jaeger,
-  Simon,
-  Sven,
-  Tamiko,
-  Trayvon,
-  Wahid
-};
+export { default as Aaron } from "@freesewing/aaron";
+export { default as Bent } from "@freesewing/bent";
+export { default as Brian } from "@freesewing/brian";
+export { default as Bruce } from "@freesewing/bruce";
+export { default as Carlton } from "@freesewing/carlton";
+export { default as Cathrin } from "@freesewing/cathrin";
+export { default as Huey } from "@freesewing/huey";
+export { default as Hugo } from "@freesewing/hugo";
+export { default as Jaeger } from "@freesewing/jaeger";
+export { default as Simon } from "@freesewing/simon";
+export { default as Sven } from "@freesewing/sven";
+export { default as Tamiko } from "@freesewing/tamiko";
+export { default as Trayvon } from "@freesewing/trayvon";
+export { default as Wahid } from "@freesewing/wahid";

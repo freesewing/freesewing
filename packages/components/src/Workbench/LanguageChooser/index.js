@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import { i18n } from "@freesewing/i18n";
+import { languages } from "@freesewing/i18n";
 
 const LanguageChooser = props => {
   const styles = {
@@ -27,7 +27,7 @@ const LanguageChooser = props => {
   return (
     <div style={styles.container}>
       <div style={styles.chooser}>
-        {Object.keys(i18n).map(lang => {
+        {Object.keys(languages).map(lang => {
           return (
             <Button
               style={styles.button}
@@ -37,7 +37,7 @@ const LanguageChooser = props => {
               variant="contained"
               onClick={() => changeLanguage(lang)}
             >
-              {i18n[lang][lang]}
+              {languages[lang][lang]}
             </Button>
           );
         })}

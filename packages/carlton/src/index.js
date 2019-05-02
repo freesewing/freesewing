@@ -23,46 +23,45 @@ import draftInnerPocketBag from "./innerpocketbag";
 import draftInnerPocketTab from "./innerpockettab";
 
 // Create new design
-const Carlton = new freesewing.Design(config, [plugins, buttons]);
+const Pattern = new freesewing.Design(config, [plugins, buttons]);
 
 // Attach draft methods from Bent to prototype
-Carlton.prototype.draftBentBase = function(part) {
+Pattern.prototype.draftBentBase = function(part) {
   return new Bent(this.settings).draftBase(part);
 };
-Carlton.prototype.draftBentFront = function(part) {
+Pattern.prototype.draftBentFront = function(part) {
   return new Bent(this.settings).draftFront(part);
 };
-Carlton.prototype.draftBentBack = function(part) {
+Pattern.prototype.draftBentBack = function(part) {
   return new Bent(this.settings).draftBack(part);
 };
-Carlton.prototype.draftBentSleeve = function(part) {
+Pattern.prototype.draftBentSleeve = function(part) {
   return new Bent(this.settings).draftSleeve(part);
 };
-Carlton.prototype.draftBentTopSleeve = function(part) {
+Pattern.prototype.draftBentTopSleeve = function(part) {
   return new Bent(this.settings).draftTopSleeve(part);
 };
-Carlton.prototype.draftBentUnderSleeve = function(part) {
+Pattern.prototype.draftBentUnderSleeve = function(part) {
   return new Bent(this.settings).draftUnderSleeve(part);
 };
 
 // Attach own draft methods to prototype
-Carlton.prototype.draftFront = draftFront;
-Carlton.prototype.draftBack = draftBack;
-Carlton.prototype.draftTail = draftTail;
-Carlton.prototype.draftTopSleeve = draftTopSleeve;
-Carlton.prototype.draftUnderSleeve = draftUnderSleeve;
-Carlton.prototype.draftBelt = draftBelt;
-Carlton.prototype.draftCollarStand = draftCollarStand;
-Carlton.prototype.draftCollar = draftCollar;
-Carlton.prototype.draftCuffFacing = draftCuffFacing;
-Carlton.prototype.draftPocket = draftPocket;
-Carlton.prototype.draftPocketFlap = draftPocketFlap;
-Carlton.prototype.draftPocketLining = draftPocketLining;
-Carlton.prototype.draftChestPocketWelt = draftChestPocketWelt;
-Carlton.prototype.draftChestPocketBag = draftChestPocketBag;
-Carlton.prototype.draftInnerPocketWelt = draftInnerPocketWelt;
-Carlton.prototype.draftInnerPocketBag = draftInnerPocketBag;
-Carlton.prototype.draftInnerPocketTab = draftInnerPocketTab;
+Pattern.prototype.draftFront = draftFront;
+Pattern.prototype.draftBack = draftBack;
+Pattern.prototype.draftTail = draftTail;
+Pattern.prototype.draftTopSleeve = draftTopSleeve;
+Pattern.prototype.draftUnderSleeve = draftUnderSleeve;
+Pattern.prototype.draftBelt = draftBelt;
+Pattern.prototype.draftCollarStand = draftCollarStand;
+Pattern.prototype.draftCollar = draftCollar;
+Pattern.prototype.draftCuffFacing = draftCuffFacing;
+Pattern.prototype.draftPocket = draftPocket;
+Pattern.prototype.draftPocketFlap = draftPocketFlap;
+Pattern.prototype.draftPocketLining = draftPocketLining;
+Pattern.prototype.draftChestPocketWelt = draftChestPocketWelt;
+Pattern.prototype.draftChestPocketBag = draftChestPocketBag;
+Pattern.prototype.draftInnerPocketWelt = draftInnerPocketWelt;
+Pattern.prototype.draftInnerPocketBag = draftInnerPocketBag;
+Pattern.prototype.draftInnerPocketTab = draftInnerPocketTab;
 
-export default Carlton;
-export { config };
+export default Pattern;

@@ -1,8 +1,8 @@
-import options from "./prebuild/options";
-import optionGroups from "./prebuild/option-groups";
-import versions from "./prebuild/versions";
+export { default as options } from "./prebuild/options";
+export { default as optionGroups } from "./prebuild/option-groups";
+export { default as versions } from "./prebuild/versions";
 
-const list = [
+export const list = [
   "aaron",
   "bent",
   "brian",
@@ -18,5 +18,3 @@ const list = [
   "trayvon",
   "wahid"
 ];
-
-export { list, options, optionGroups, versions };

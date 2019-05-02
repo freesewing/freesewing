@@ -12,33 +12,32 @@ import draftWaistband from "./waistband";
 import draftCuff from "./cuff";
 
 // Create new design
-const Huey = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods from Brian to prototype
-Huey.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
-Huey.prototype.draftFrontBase = function(part) {
+Pattern.prototype.draftFrontBase = function(part) {
   return new Brian(this.settings).draftFront(part);
 };
-Huey.prototype.draftBackBase = function(part) {
+Pattern.prototype.draftBackBase = function(part) {
   return new Brian(this.settings).draftBack(part);
 };
-Huey.prototype.draftSleevecap = function(part) {
+Pattern.prototype.draftSleevecap = function(part) {
   return new Brian(this.settings).draftSleevecap(part);
 };
-Huey.prototype.draftSleeveBase = function(part) {
+Pattern.prototype.draftSleeveBase = function(part) {
   return new Brian(this.settings).draftSleeve(part);
 };
 
 // Attach own draft methods to prototype
-Huey.prototype.draftBack = draftBack;
-Huey.prototype.draftFront = draftFront;
-Huey.prototype.draftSleeve = draftSleeve;
-Huey.prototype.draftPocket = draftPocket;
-Huey.prototype.draftHood = draftHood;
-Huey.prototype.draftWaistband = draftWaistband;
-Huey.prototype.draftCuff = draftCuff;
+Pattern.prototype.draftBack = draftBack;
+Pattern.prototype.draftFront = draftFront;
+Pattern.prototype.draftSleeve = draftSleeve;
+Pattern.prototype.draftPocket = draftPocket;
+Pattern.prototype.draftHood = draftHood;
+Pattern.prototype.draftWaistband = draftWaistband;
+Pattern.prototype.draftCuff = draftCuff;
 
-export default Huey;
-export { config };
+export default Pattern;

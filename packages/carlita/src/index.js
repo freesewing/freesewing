@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import buttons from "@freesewing/plugin-buttons";
 import bust from "@freesewing/plugin-bust";
@@ -10,13 +10,13 @@ import draftFront from "./front";
 import draftSide from "./side";
 
 // Create new design
-const Carlita = new freesewing.Design(config, [plugins, buttons, bust]);
+const Pattern = new freesewing.Design(config, [plugins, buttons, bust]);
 
 let fromBent = ["Base", "Front", "Back", "Sleeve", "TopSleeve", "UnderSleeve"];
 
 // Attach draft methods from Bent to prototype
 for (let m of fromBent) {
-  Carlita.prototype["draftBent" + m] = function(part) {
+  Pattern.prototype["draftBent" + m] = function(part) {
     return new Bent(this.settings)["draft" + m](part);
   };
 }
@@ -40,17 +40,17 @@ for (let m of [
   "draftInnerPocketBag",
   "draftInnerPocketTab"
 ]) {
-  Carlita.prototype[m] = function(part) {
+  Pattern.prototype[m] = function(part) {
     return new Carlton(this.settings)[m](part);
   };
 }
 
-Carlita.prototype.draftCarltonFront = function(part) {
+Pattern.prototype.draftCarltonFront = function(part) {
   return new Carlton(this.settings).draftFront(part);
 };
 
 // Attach own draft methods to prototype
-Carlita.prototype.draftFront = draftFront;
-Carlita.prototype.draftSide = draftSide;
+Pattern.prototype.draftFront = draftFront;
+Pattern.prototype.draftSide = draftSide;
 
-export default Carlita;
+export default Pattern;

@@ -8,23 +8,22 @@ import draftTopSleeve from "./topsleeve";
 import draftUnderSleeve from "./undersleeve";
 
 // Create new design
-const Bent = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods from Brian to prototype
-Bent.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
-Bent.prototype.draftFront = function(part) {
+Pattern.prototype.draftFront = function(part) {
   return new Brian(this.settings).draftFront(part);
 };
-Bent.prototype.draftBack = function(part) {
+Pattern.prototype.draftBack = function(part) {
   return new Brian(this.settings).draftBack(part);
 };
 
 // Attach own draft methods to prototype
-Bent.prototype.draftSleeve = draftSleeve;
-Bent.prototype.draftTopSleeve = draftTopSleeve;
-Bent.prototype.draftUnderSleeve = draftUnderSleeve;
+Pattern.prototype.draftSleeve = draftSleeve;
+Pattern.prototype.draftTopSleeve = draftTopSleeve;
+Pattern.prototype.draftUnderSleeve = draftUnderSleeve;
 
-export default Bent;
-export { config };
+export default Pattern;

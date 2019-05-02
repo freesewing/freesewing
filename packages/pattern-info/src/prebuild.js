@@ -1,6 +1,6 @@
 const path = require("path");
 const fse = require("fs-extra");
-const patterns = require("@freesewing/patterns").default;
+const patterns = require("@freesewing/patterns");
 
 const patternOptions = pattern => {
   let all = [];

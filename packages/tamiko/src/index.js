@@ -5,10 +5,9 @@ import config from "../config";
 import draftTop from "./top";
 
 // Create design
-const Tamiko = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins);
 
 // Part draft method
-Tamiko.prototype.draftTop = part => draftTop(part);
+Pattern.prototype.draftTop = part => draftTop(part);
 
-export default Tamiko;
-export { config };
+export default Pattern;

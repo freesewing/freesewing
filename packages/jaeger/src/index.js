@@ -22,45 +22,44 @@ import draftTopSleeve from "./topsleeve";
 import draftUnderSleeve from "./undersleeve";
 
 // Create new design
-const Jaeger = new freesewing.Design(config, [plugins, buttons]);
+const Pattern = new freesewing.Design(config, [plugins, buttons]);
 
 // Attach draft methods from Bent to prototype
-Jaeger.prototype.draftBentBase = function(part) {
+Pattern.prototype.draftBentBase = function(part) {
   return new Bent(this.settings).draftBase(part);
 };
-Jaeger.prototype.draftBentFront = function(part) {
+Pattern.prototype.draftBentFront = function(part) {
   return new Bent(this.settings).draftFront(part);
 };
-Jaeger.prototype.draftBentBack = function(part) {
+Pattern.prototype.draftBentBack = function(part) {
   return new Bent(this.settings).draftBack(part);
 };
-Jaeger.prototype.draftBentSleeve = function(part) {
+Pattern.prototype.draftBentSleeve = function(part) {
   return new Bent(this.settings).draftSleeve(part);
 };
-Jaeger.prototype.draftBentTopSleeve = function(part) {
+Pattern.prototype.draftBentTopSleeve = function(part) {
   return new Bent(this.settings).draftTopSleeve(part);
 };
-Jaeger.prototype.draftBentUnderSleeve = function(part) {
+Pattern.prototype.draftBentUnderSleeve = function(part) {
   return new Bent(this.settings).draftUnderSleeve(part);
 };
 
 // Attach own draft methods to prototype
-Jaeger.prototype.draftBackBase = draftBackBase;
-Jaeger.prototype.draftFrontBase = draftFrontBase;
-Jaeger.prototype.draftFront = draftFront;
-Jaeger.prototype.draftBack = draftBack;
-Jaeger.prototype.draftSide = draftSide;
-Jaeger.prototype.draftCollarStand = draftCollarStand;
-Jaeger.prototype.draftCollar = draftCollar;
-Jaeger.prototype.draftUnderCollar = draftUnderCollar;
-Jaeger.prototype.draftPocket = draftPocket;
-Jaeger.prototype.draftPocketLining = draftPocketLining;
-Jaeger.prototype.draftChestPocketWelt = draftChestPocketWelt;
-Jaeger.prototype.draftChestPocketBag = draftChestPocketBag;
-Jaeger.prototype.draftInnerPocketWelt = draftInnerPocketWelt;
-Jaeger.prototype.draftInnerPocketBag = draftInnerPocketBag;
-Jaeger.prototype.draftTopSleeve = draftTopSleeve;
-Jaeger.prototype.draftUnderSleeve = draftUnderSleeve;
+Pattern.prototype.draftBackBase = draftBackBase;
+Pattern.prototype.draftFrontBase = draftFrontBase;
+Pattern.prototype.draftFront = draftFront;
+Pattern.prototype.draftBack = draftBack;
+Pattern.prototype.draftSide = draftSide;
+Pattern.prototype.draftCollarStand = draftCollarStand;
+Pattern.prototype.draftCollar = draftCollar;
+Pattern.prototype.draftUnderCollar = draftUnderCollar;
+Pattern.prototype.draftPocket = draftPocket;
+Pattern.prototype.draftPocketLining = draftPocketLining;
+Pattern.prototype.draftChestPocketWelt = draftChestPocketWelt;
+Pattern.prototype.draftChestPocketBag = draftChestPocketBag;
+Pattern.prototype.draftInnerPocketWelt = draftInnerPocketWelt;
+Pattern.prototype.draftInnerPocketBag = draftInnerPocketBag;
+Pattern.prototype.draftTopSleeve = draftTopSleeve;
+Pattern.prototype.draftUnderSleeve = draftUnderSleeve;
 
-export default Jaeger;
-export { config };
+export default Pattern;

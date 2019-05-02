@@ -33,7 +33,12 @@ const getTheme = mode => {
       MuiMenuItem: { root: asTitle },
       MuiListItemText: { primary: asTitle },
       MuiRadio: forceColor,
-      MuiCheckbox: forceColor
+      MuiCheckbox: forceColor,
+      MuiSlider: {
+        container: { padding: "25px 0" },
+        track: { height: "4px" },
+        thumb: { width: "16px", height: "16px" }
+      }
     },
     palette: {
       primary: {

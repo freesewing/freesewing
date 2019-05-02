@@ -15,28 +15,27 @@ import draftPocketFacing from "./pocketfacing";
 import draftPocketInterfacing from "./pocketinterfacing";
 
 // Create pattern
-const Wahid = new freesewing.Design(config, [plugins, round, buttons]);
+const Pattern = new freesewing.Design(config, [plugins, round, buttons]);
 
 // Parts we're getting from Brian
-Wahid.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function(part) {
   return new Brian(this.settings).draftBase(part);
 };
-Wahid.prototype.draftBackBlock = function(part) {
+Pattern.prototype.draftBackBlock = function(part) {
   return new Brian(this.settings).draftBack(part);
 };
-Wahid.prototype.draftFrontBlock = function(part) {
+Pattern.prototype.draftFrontBlock = function(part) {
   return new Brian(this.settings).draftFront(part);
 };
 
 // Attach draft methods to prototype
-Wahid.prototype.draftFront = part => draftFront(part);
-Wahid.prototype.draftBack = part => draftBack(part);
-Wahid.prototype.draftFrontFacing = part => draftFrontFacing(part);
-Wahid.prototype.draftFrontLining = part => draftFrontLining(part);
-Wahid.prototype.draftPocketWelt = part => draftPocketWelt(part);
-Wahid.prototype.draftPocketBag = part => draftPocketBag(part);
-Wahid.prototype.draftPocketFacing = part => draftPocketFacing(part);
-Wahid.prototype.draftPocketInterfacing = part => draftPocketInterfacing(part);
+Pattern.prototype.draftFront = part => draftFront(part);
+Pattern.prototype.draftBack = part => draftBack(part);
+Pattern.prototype.draftFrontFacing = part => draftFrontFacing(part);
+Pattern.prototype.draftFrontLining = part => draftFrontLining(part);
+Pattern.prototype.draftPocketWelt = part => draftPocketWelt(part);
+Pattern.prototype.draftPocketBag = part => draftPocketBag(part);
+Pattern.prototype.draftPocketFacing = part => draftPocketFacing(part);
+Pattern.prototype.draftPocketInterfacing = part => draftPocketInterfacing(part);
 
-export default Wahid;
-export { config };
+export default Pattern;

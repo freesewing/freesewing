@@ -33,11 +33,11 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/brian": "^2.0.0-alpha.3",
-    "@freesewing/core": "^2.0.0-alpha.3",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.3",
-    "@freesewing/plugin-buttons": "^2.0.0-alpha.3",
-    "@freesewing/plugin-flip": "^2.0.0-alpha.3"
+    "@freesewing/core": "^2.0.0-alpha.4",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.4",
+    "@freesewing/brian": "^2.0.0-alpha.4",
+    "@freesewing/plugin-buttons": "^2.0.0-alpha.4",
+    "@freesewing/plugin-flip": "^2.0.0-alpha.4"
   },
   "files": [
     "dist/*",

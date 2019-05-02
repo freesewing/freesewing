@@ -9,14 +9,13 @@ import draftSleevecap from "./sleevecap";
 import draftSleeve from "./sleeve";
 
 // Create design
-const Brian = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods to prototype
-Brian.prototype.draftBase = draftBase;
-Brian.prototype.draftBack = draftBack;
-Brian.prototype.draftFront = draftFront;
-Brian.prototype.draftSleevecap = draftSleevecap;
-Brian.prototype.draftSleeve = draftSleeve;
+Pattern.prototype.draftBase = draftBase;
+Pattern.prototype.draftBack = draftBack;
+Pattern.prototype.draftFront = draftFront;
+Pattern.prototype.draftSleevecap = draftSleevecap;
+Pattern.prototype.draftSleeve = draftSleeve;
 
-export default Brian;
-export { config };
+export default Pattern;
