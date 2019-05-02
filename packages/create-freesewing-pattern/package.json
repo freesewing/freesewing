@@ -1,6 +1,6 @@
 {
   "name": "create-freesewing-pattern",
-  "version": "2.0.0-alpha.6",
+  "version": "2.0.0-alpha.7",
   "description": "Initializer package for FreeSewing patterns: npm init FreeSewing-pattern",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
