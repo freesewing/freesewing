@@ -59,6 +59,7 @@ create-freesewing-pattern:
     "parse-git-config": "^3.0.0"
     "validate-npm-package-name": "^3.0.0"
     "which": "^1.3.1"
+    "@freesewing/i18n": "^{{version}}"
 i18n:
   peer:
     "@freesewing/pattern-info": "^{{version}}"
