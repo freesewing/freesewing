@@ -13,24 +13,7 @@ import Tamiko from "@freesewing/tamiko";
 import Trayvon from "@freesewing/trayvon";
 import Wahid from "@freesewing/wahid";
 
-const patternList = [
-  "aaron",
-  "bent",
-  "brian",
-  "bruce",
-  "carlton",
-  "cathrin",
-  "huey",
-  "hugo",
-  "jaeger",
-  "simon",
-  "sven",
-  "tamiko",
-  "trayvon",
-  "wahid"
-];
-
-const patterns = {
+export default {
   Aaron,
   Bent,
   Brian,
@@ -46,6 +29,3 @@ const patterns = {
   Trayvon,
   Wahid
 };
-
-export default patterns;
-export { patternList };
