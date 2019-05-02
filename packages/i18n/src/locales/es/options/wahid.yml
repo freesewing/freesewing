@@ -1,9 +1,4 @@
 ---
-armholeDepthFactor: brian
-chestEase: brian
-hipsEase: aaron
-lengthBonus: brian
-waistEase: simon
 backScyeDart:
   title: Pinza posterior de la sisa
   description: La cantidad a reducir en una pinza en la parte posterior de la sisa.

@@ -1,0 +1,62 @@
+aaron:
+  dflt: brian
+bent:
+  dflt: brian
+carlton:
+  dflt: brian
+  other:
+    sleeveBend: bent
+    waistEase: simon
+    frontOverlap: jaeger
+    lapelReduction: jaeger
+    sleevecapHeight: bent
+    pocketWidth: wahid
+    pocketHeight: huey
+    cuffLength: simon
+    collarSpread: jaeger
+    collarFlare: simon
+    chestPocketWidth: jaeger
+    chestPocketPlacement: jaeger
+    chestPocketAngle: jaeger
+    innerPocketPlacement: jaeger
+    innerPocketWidth: jaeger
+    innerPocketDepth: jaeger
+    innerPocketWeltHeight: jaeger
+huey:
+  dflt: brian
+  other:
+    ribbing: sven
+    ribbingHeight: sven
+    ribbingStretch: sven
+    waistEase: simon
+    hipsEase: aaron
+    pocketWidth: wahid
+hugo:
+  dflt: brian
+  other:
+    ribbingHeight: sven
+    ribbingStretch: sven
+jaeger:
+  dflt: brian
+  other:
+    hipsEase: aaron
+    waistEase: simon
+    sleeveBend: bent
+    sleevecapHeight: bent
+    buttons: simon
+    collarRoll: simon
+simon:
+  dflt: brian
+  other:
+    hipsEase: aaron
+sven:
+  dflt: brian
+tamiko:
+  dflt: brian
+trayvon:
+  dflt: brian
+wahid:
+  dflt: brian
+  other:
+    hipsEase: aaron
+    waistEase: simon

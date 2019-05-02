@@ -1,32 +1,4 @@
 ---
-acrossBackFactor: brian
-armholeDepthFactor: brian
-bicepsEase: brian
-chestEase: brian
-cuffEase: brian
-shoulderEase: brian
-sleeveBend: bent
-sleeveLengthBonus: brian
-waistEase: simon
-backNeckCutout: brian
-frontArmholeDeeper: brian
-frontOverlap: jaeger
-lapelReduction: jaeger
-shoulderSlopeReduction: brian
-sleevecapHeight: bent
-sleevecapEase: brian
-pocketWidth: wahid
-pocketHeight: huey
-cuffLength: simon
-collarSpread: jaeger
-collarFlare: simon
-chestPocketWidth: jaeger
-chestPocketPlacement: jaeger
-chestPocketAngle: jaeger
-innerPocketPlacement: jaeger
-innerPocketWidth: jaeger
-innerPocketDepth: jaeger
-innerPocketWeltHeight: jaeger
 seatEase:
   title: Overwijdte zitvlak
   description: De hoeveelheid overwijdte aan je zitvlak

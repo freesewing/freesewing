@@ -1,6 +1,3 @@
-chestEase: brian
-lengthBonus: brian
-
 armholeDrop:
   title: Armhole drop
   description: Lower the armhole by this amount. Negative values will raise it.

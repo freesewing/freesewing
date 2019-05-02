@@ -1,9 +1,4 @@
 ---
-armholeDepthFactor: brian
-chestEase: brian
-hipsEase: aaron
-lengthBonus: brian
-waistEase: simon
 backScyeDart:
   title: Pince arrière sans gêne
   description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.

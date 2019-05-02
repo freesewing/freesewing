@@ -1,17 +1,4 @@
 ---
-acrossBackFactor: brian
-armholeDepthFactor: brian
-backNeckCutout: brian
-bicepsEase: brian
-chestEase: brian
-collarEase: brian
-cuffEase: brian
-frontArmholeDeeper: brian
-lengthBonus: brian
-shoulderEase: brian
-shoulderSlopeReduction: brian
-sleevecapEase: brian
-sleeveLengthBonus: brian
 sleeveBend:
   title: Ärmelbiegung
   description: Steuert die Biegung der Schulter am Ellbogen

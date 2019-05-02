@@ -1,23 +1,4 @@
 ---
-acrossBackFactor: brian
-armholeDepthFactor: brian
-bicepsEase: brian
-chestEase: brian
-collarEase: brian
-cuffEase: brian
-hipsEase: aaron
-lengthBonus: brian
-shoulderEase: brian
-waistEase: simon
-sleeveBend: bent
-sleeveLengthBonus: brian
-backNeckCutout: brian
-frontArmholeDeeper: brian
-shoulderSlopeReduction: brian
-sleevecapHeight: bent
-sleevecapEase: brian
-buttons: simon
-collarRoll: simon
 centerBackDart:
   title: Nek neep
   description: Neep aan de achterkant van de nek om de kromming van de rug op te vangen

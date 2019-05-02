@@ -1,6 +1,4 @@
 ---
-chestEase: brian
-lengthBonus: brian
 armholeDrop:
   title: Caída de la sisa
   description: Baja la sisa esta cantidad. Valores negativos la elevan.

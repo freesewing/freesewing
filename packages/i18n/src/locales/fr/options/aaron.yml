@@ -1,6 +1,4 @@
 ---
-chestEase: brian
-lengthBonus: brian
 armholeDrop:
   title: Abaissement d'emmanchure
   description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.

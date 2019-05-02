@@ -12,6 +12,8 @@ import tamiko from "./tamiko.yml";
 import trayvon from "./trayvon.yml";
 import jaeger from "./jaeger.yml";
 import carlton from "./carlton.yml";
+import { options as optionList } from "@freesewing/pattern-info";
+import shared from "../../../shared-options.yml";
 
 let patterns = {
   brian,
@@ -31,23 +33,32 @@ let patterns = {
 };
 
 let options = {};
-let optionInheritance = {};
-
 for (let pattern of Object.keys(patterns)) {
   options[pattern] = {};
-  optionInheritance[pattern] = {};
-  for (let option of Object.keys(patterns[pattern])) {
+  if (typeof optionList[pattern] === "undefined")
+    throw new Error("pattern " + pattern + " has no option list");
+  for (let option of optionList[pattern]) {
     let value = patterns[pattern][option];
     if (typeof value === "object") options[pattern][option] = value;
-    else if (typeof value === "string") {
-      if (typeof patterns[value][option].title === "undefined")
-        throw new Error(
-          `Option ${option} in pattern ${pattern} refers to pattern {value}, but it's not there`
-        );
-      options[pattern][option] = options[value][option];
-      optionInheritance[pattern][option] = value;
+    else {
+      if (typeof value === "undefined") {
+        let inherit = shared[pattern].dflt;
+        if (typeof patterns[shared[pattern].dflt][option] === "object")
+          options[pattern][option] = patterns[shared[pattern].dflt][option];
+        else if (
+          typeof shared[pattern].other !== "undefined" &&
+          typeof shared[pattern].other[option] === "string"
+        )
+          options[pattern][option] =
+            patterns[shared[pattern].other[option]][option];
+        else {
+          throw new Error(
+            `No option translation found for ${option} in ${pattern}`
+          );
+        }
+      }
     }
   }
 }
 
-export { options, optionInheritance };
+export default options;

@@ -1,37 +1,3 @@
-acrossBackFactor: brian
-armholeDepthFactor: brian
-backNeckCutout: brian
-bicepsEase: brian
-chestEase: brian
-collarEase: brian
-cuffEase: brian
-frontArmholeDeeper: brian
-hipsEase: aaron
-lengthBonus: brian
-shoulderEase: brian
-shoulderSlopeReduction: brian
-sleeveLengthBonus: brian
-sleevecapEase: brian
-sleevecapBackFactorX: brian
-sleevecapBackFactorY: brian
-sleevecapFrontFactorX: brian
-sleevecapFrontFactorY: brian
-sleevecapTopFactorX: brian
-sleevecapTopFactorY: brian
-sleevecapQ1Offset: brian
-sleevecapQ2Offset: brian
-sleevecapQ3Offset: brian
-sleevecapQ4Offset: brian
-sleevecapQ1Spread1: brian
-sleevecapQ1Spread2: brian
-sleevecapQ2Spread1: brian
-sleevecapQ2Spread2: brian
-sleevecapQ3Spread1: brian
-sleevecapQ3Spread2: brian
-sleevecapQ4Spread1: brian
-sleevecapQ4Spread2: brian
-sleeveWidthGuarantee: brian
-
 barrelCuffNarrowButton:
   title: Cuff narrow button
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.

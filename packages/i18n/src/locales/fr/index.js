@@ -1,5 +1,6 @@
 import account from "./account.yaml";
 import app from "./app.yaml";
+import cfp from "./cfp.yaml";
 import editor from "./editor.yaml";
 import email from "./email.yaml";
 import errors from "./errors.yaml";
@@ -8,7 +9,7 @@ import gdpr from "./gdpr.yaml";
 import i18n from "./i18n.yaml";
 import intro from "./intro.yaml";
 import measurements from "./measurements.yaml";
-import { options, optionInheritance } from "./options/";
+import options from "./options/";
 import optiongroups from "./optiongroups.yaml";
 import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
@@ -19,6 +20,7 @@ const topics = {
   account,
   app,
   editor,
+  cfp,
   email,
   errors,
   filter,
@@ -86,23 +88,4 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
-export {
-  account,
-  app,
-  editor,
-  email,
-  errors,
-  filter,
-  gdpr,
-  i18n,
-  intro,
-  measurements,
-  options,
-  optiongroups,
-  parts,
-  patterns,
-  plugin,
-  settings,
-  strings,
-  optionInheritance
-};
+export default strings;
