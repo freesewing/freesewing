@@ -1,9 +1,4 @@
 ---
-armholeDepthFactor: brian
-chestEase: brian
-hipsEase: aaron
-lengthBonus: brian
-waistEase: simon
 backScyeDart:
   title: Rückseite Scye Dart
   description: Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss.
