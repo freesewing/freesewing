@@ -22,7 +22,8 @@
     "prettier": "babel-node ./scripts/prettier.js",
     "pretty": "npx prettier --write 'src/*.js'",
     "precommit": "npm run pretty && lint-staged",
-    "reconfigure": "npx babel-node scripts/reconfigure.js"
+    "reconfigure": "npx babel-node scripts/reconfigure.js",
+    "bump": "git add . && git commit -m ':wrench: Reconfigure packages'"
   },
   "repository": {
     "type": "git",

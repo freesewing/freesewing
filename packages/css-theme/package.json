@@ -17,7 +17,6 @@
     "theme"
   ],
   "main": "dist/theme.css",
-  "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
     "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
