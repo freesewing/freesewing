@@ -1,14 +1,2 @@
 ---
-acrossBackFactor: brian
-backNeckCutout: brian
-bicepsEase: brian
-chestEase: brian
-cuffEase: brian
-lengthBonus: brian
-sleeveLengthBonus: brian
-ribbingStretchFactor:
-  title: Stretchfactor boord
-  description: Bepaalt hoever de boord uitgerokken wordt.
-ribbingWidth:
-  title: Breedte boord
-  description: De breedte van de boord die je wil gebruiken.
+_: _
