@@ -33,6 +33,9 @@ components:
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/utils": "^{{version}}"
     "react-intl": "^2.8.0"
+    "@material-ui/core": "^3.9.3"
+    "@material-ui/icons": "^3.0.2"
+    "@material-ui/lab": "^3.0.0-alpha.30"
 core:
   _:
     "bezier-js": "^2.2.13"
@@ -96,16 +99,3 @@ wahid:
     "@freesewing/brian": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-round": "^{{version}}"
-workbench:
-  _:
-    "@freesewing/components": "^{{version}}"
-    "@freesewing/css-theme": "^{{version}}"
-    "@freesewing/utils": "^{{version}}"
-    "@freesewing/mui-theme": "^{{version}}"
-  peer:
-    "@freesewing/core": "^{{version}}"
-    "@freesewing/i18n": "^{{version}}"
-    "@freesewing/utils": "^{{version}}"
-    "@freesewing/plugin-theme": "^{{version}}"
-    "react-intl": "^2.8.0"
-		"typeface-roboto-condensed": "^0.0.54"
