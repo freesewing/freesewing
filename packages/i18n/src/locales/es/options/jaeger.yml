@@ -1,23 +1,4 @@
 ---
-acrossBackFactor: brian
-armholeDepthFactor: brian
-bicepsEase: brian
-chestEase: brian
-collarEase: brian
-cuffEase: brian
-hipsEase: aaron
-lengthBonus: brian
-shoulderEase: brian
-waistEase: simon
-sleeveBend: bent
-sleeveLengthBonus: brian
-backNeckCutout: brian
-frontArmholeDeeper: brian
-shoulderSlopeReduction: brian
-sleevecapHeight: bent
-sleevecapEase: brian
-buttons: simon
-collarRoll: simon
 centerBackDart:
   title: Dardo en el centro de la espalda
   description: Dardo en la parte central posterior de su cuello para acomodar una espalda redondeada
