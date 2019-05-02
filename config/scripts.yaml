@@ -5,7 +5,8 @@ _:
   build: "npm run clean && npm run nodebuild && npm run modulebuild"
   test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
   pubtest: "npm publish --registry http://localhost:6662"
-  publish: "npm build && npm publish --access=public --tag=alpha"
+  pubforce: "npm publish"
+  symlink: "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
 _types:
   patterns:
   plugins:
@@ -24,6 +25,8 @@ core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
   report: "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js"
   coverage: "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+pattern-info:
+  prebuild: "node src/prebuild.js"
 workbench:
   test: "cross-env CI=1 react-scripts test --env=jsdom"
   test:watch: "react-scripts test --env=jsdom"

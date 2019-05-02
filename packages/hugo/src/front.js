@@ -16,7 +16,7 @@ export default function(part) {
   store.set(
     "ribbing",
     (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-      options.ribbingWidth
+      options.ribbingHeight
   );
 
   // Hem is more descripting than hips in this case
@@ -35,11 +35,11 @@ export default function(part) {
   let neckOpeningParts = neckOpening.split(points.raglanTipFront);
 
   // Pocket
-  points.pocketHem = points.cfRibbing.shiftFractionTowards(
-    points.ribbing,
-    0.6
+  points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6);
+  points.pocketCf = points.cfHem.shift(
+    90,
+    measurements.centerBackNeckToWaist * 0.33 + store.get("ribbing")
   );
-  points.pocketCf = points.cfHem.shift(90, measurements.centerBackNeckToWaist*0.33 + store.get("ribbing"));
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y);
   points.pocketTip = points.pocketHem
     .shift(90, points.pocketHem.x / 3)
@@ -171,4 +171,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

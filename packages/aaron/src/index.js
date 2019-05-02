@@ -1,7 +1,7 @@
 import freesewing from "@freesewing/core";
 import Brian from "@freesewing/brian";
 import plugins from "@freesewing/plugin-bundle";
-import config from "../config";
+import config from "./config";
 // Parts
 import draftBack from "./back";
 import draftFront from "./front";

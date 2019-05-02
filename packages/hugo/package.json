@@ -29,12 +29,15 @@
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"hugo: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "publish": "npm build && npm publish --access=public --tag=alpha"
+    "pubforce": "npm publish",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.2",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.2"
+    "@freesewing/core": "^2.0.0-alpha.3",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.3"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

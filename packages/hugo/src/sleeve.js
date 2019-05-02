@@ -83,10 +83,7 @@ export default function(part) {
     let slope = store.get("shoulderSlopeDeltaY");
     let angleFront = points.raglanTipFront.angle(points.capQ4Base);
     let angleBack = points.raglanTipBack.angle(points.capQ1Base);
-    points.slopeFront = points.raglanMidFront.shift(
-      angleFront + 90,
-      slope / 2
-    );
+    points.slopeFront = points.raglanMidFront.shift(angleFront + 90, slope / 2);
     points.slopeBack = points.raglanMidBack.shift(angleBack - 90, slope / 2);
     points.slopeFrontCp1 = points.raglanFrontCp1.shift(
       angleFront + 90,
@@ -96,14 +93,8 @@ export default function(part) {
       angleFront + 90,
       slope / 2
     );
-    points.slopeBackCp1 = points.raglanBackCp1.shift(
-      angleBack - 90,
-      slope / 2
-    );
-    points.slopeBackCp2 = points.raglanBackCp2.shift(
-      angleBack - 90,
-      slope / 2
-    );
+    points.slopeBackCp1 = points.raglanBackCp1.shift(angleBack - 90, slope / 2);
+    points.slopeBackCp2 = points.raglanBackCp2.shift(angleBack - 90, slope / 2);
     points.capQ4BaseCp = utils.beamsIntersect(
       points.slopeFrontCp2,
       points.capQ4Base,
@@ -144,22 +135,17 @@ export default function(part) {
     let lenTotal =
       store.get("shoulderLength") +
       measurements.shoulderToWrist * (1 + options.sleeveLengthBonus) -
-      options.ribbingWidth;
+      options.ribbingHeight;
     let lenDelta = points.raglanTop.dist(points.centerWrist) - lenTotal;
     let wristPoints = ["wristLeft", "centerWrist", "wristRight"];
-    for (let pid of wristPoints)
-      points[pid] = points[pid].shift(90, lenDelta);
+    for (let pid of wristPoints) points[pid] = points[pid].shift(90, lenDelta);
     runs++;
   } while (Math.abs(ragDiff) > 5 && runs < 10);
 
   paths.seam = new Path()
     .move(points.raglanTipBack)
     .curve(points.raglanTipBackCp2, points.raglanTopCp1, points.raglanTop)
-    .curve(
-      points.raglanTopCp2,
-      points.raglanTipFrontCp1,
-      points.raglanTipFront
-    )
+    .curve(points.raglanTopCp2, points.raglanTipFrontCp1, points.raglanTipFront)
     .curve(points.raglanTipFront, points.slopeFrontCp1, points.slopeFront)
     .curve(points.slopeFrontCp2, points.capQ4Cp2, points.bicepsLeft)
     .line(points.wristLeft)
@@ -251,4 +237,4 @@ export default function(part) {
     });
   }
   return part;
-};
+}

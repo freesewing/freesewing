@@ -4,7 +4,7 @@ export default function(part) {
 
   let width =
     (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-    options.ribbingWidth *
+    options.ribbingHeight *
     2;
 
   points.topLeft = new Point(0, 0);
@@ -38,10 +38,7 @@ export default function(part) {
     if (sa) {
       paths.sa = paths.seam.offset(sa);
     }
-    points.title = points.bottomLeft.shiftFractionTowards(
-      points.topRight,
-      0.5
-    );
+    points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5);
     macro("title", { at: points.title, nr: 8, title: "waistband" });
     macro("grainline", {
       from: points.bottomMidLeft,
@@ -63,10 +60,10 @@ export default function(part) {
       text: units(
         measurements.chestCircumference *
           (1 + options.chestEase) *
-          (1 - options.ribbingStretchFactor)
+          (1 - options.ribbingStretch)
       )
     });
   }
 
   return part;
-};
+}

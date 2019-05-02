@@ -19,18 +19,19 @@
     "clean": "rimraf dist",
     "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
     "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
-    "SKIPbuild": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
-    "publish": "npm build && npm publish --access=public --tag=alpha",
+    "pubforce": "npm publish",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "storybook": "start-storybook -p 6663"
   },
   "peerDependencies": {
-    "@freesewing/i18n": "^2.0.0-alpha.2",
-    "@freesewing/patterns": "^2.0.0-alpha.2",
-    "@freesewing/utils": "^2.0.0-alpha.2",
-    "prop-types": "15.7.2",
     "react": "^16.4.1",
+    "prop-types": "15.7.2",
+    "@freesewing/patterns": "^2.0.0-alpha.3",
+    "@freesewing/i18n": "^2.0.0-alpha.3",
+    "@freesewing/utils": "^2.0.0-alpha.3",
     "react-intl": "^2.8.0"
   },
   "files": [
@@ -45,14 +46,5 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5"
-  },
-  "dependencies": {
-    "@freesewing/i18n": "^2.0.0-alpha.3",
-    "@freesewing/utils": "^2.0.0-alpha.3",
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/lab": "^3.0.0-alpha.30",
-    "@material-ui/styles": "^3.0.0-alpha.10",
-    "react": "^16.8.6",
-    "react-intl": "^2.8.0"
   }
 }

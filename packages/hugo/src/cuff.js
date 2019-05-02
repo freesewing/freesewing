@@ -4,12 +4,12 @@ export default function(part) {
 
   let width =
     (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-    options.ribbingWidth *
+    options.ribbingHeight *
     2;
   let length =
     measurements.wristCircumference *
     (1 + options.cuffEase) *
-    (1 - options.ribbingStretchFactor);
+    (1 - options.ribbingStretch);
 
   points.topLeft = new Point(0, 0);
   points.bottomLeft = new Point(0, width);
@@ -30,10 +30,7 @@ export default function(part) {
     if (sa) {
       paths.sa = paths.seam.offset(sa);
     }
-    points.title = points.bottomLeft.shiftFractionTowards(
-      points.topRight,
-      0.5
-    );
+    points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5);
     macro("title", { at: points.title, nr: 9, title: "cuff" });
     macro("grainline", {
       from: points.bottomLeft.shift(0, 20),
@@ -56,4 +53,4 @@ export default function(part) {
   }
 
   return part;
-};
+}
