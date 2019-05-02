@@ -27,7 +27,7 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "mkdist": "mkdir -p dist",
-    "copyfiles": "cp -R index.js package.json README.md lib template dist/"
+    "copyfiles": "cp -R index.js lib template dist/"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -47,11 +47,6 @@
     "validate-npm-package-name": "^3.0.0",
     "which": "^1.3.1"
   },
-  "files": [
-    "dist/*",
-    "README.md",
-    "package.json"
-  ],
   "publishConfig": {
     "access": "public",
     "tag": "alpha"
@@ -60,8 +55,11 @@
     "node": ">=8.0.0",
     "npm": ">=5"
   },
-  "reveal": true,
+  "files": [
+    "dist",
+    "!dist/template/default/node_modules"
+  ],
   "bin": {
-    "create-freesewing-pattern": "index.js"
+    "create-freesewing-pattern": "dist/index.js"
   }
 }
