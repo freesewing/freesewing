@@ -1,6 +1,4 @@
 ---
-chestEase: brian
-lengthBonus: brian
 armholeDrop:
   title: Armsgat verlagen/verhogen
   description: Verlaag het armsgat met deze hoeveelheid. Een negatieve waarde maakt het hoger.
