@@ -1,7 +1,4 @@
 ---
-armholeDepthFactor: brian
-chestEase: brian
-lengthBonus: brian
 flare:
   title: Ensanchamiento
   description: La cantidad por la cual la prenda se ensancha desde tu pecho hacia abajo.
