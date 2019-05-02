@@ -1,6 +1,4 @@
 ---
-chestEase: brian
-lengthBonus: brian
 armholeDrop:
   title: Armlochabsenkung
   description: Senkt den  Ärmelansatz und diesen Wert. Negative Werte erhöhen ihn.
