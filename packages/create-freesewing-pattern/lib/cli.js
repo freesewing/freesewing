@@ -23,7 +23,7 @@ module.exports = async () => {
     .option('-r, --repo <string>', 'package repo path')
     .option('-g, --no-git', 'generate without git init')
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
-    .option('-t, --template <light|dark>', 'package template to use', /^(light|dark|custom)$/, defaults.template)
+    .option('-t, --template <default|custom>', 'package template to use', /^(default|custom)$/, defaults.template)
     .option('-p, --template-path <string>', 'custom package template path')
     .option('-s, --skip-prompts', 'skip all prompts (must provide package-name via cli)')
     .parse(process.argv)

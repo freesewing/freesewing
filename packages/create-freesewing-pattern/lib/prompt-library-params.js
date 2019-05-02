@@ -4,8 +4,18 @@ const path = require('path')
 const fs = require('fs')
 const inquirer = require('inquirer')
 const validateNpmName = require('validate-npm-package-name')
-
+const languages = require('@freesewing/i18n').languages;
+const strings = require('@freesewing/i18n').strings;
 const config = require('./config')
+
+let languageChoices = []
+for (let l of Object.keys(languages)) {
+  languageChoices.push({
+    name: languages[l],
+    value: l,
+    short: languages[l]
+  });
+}
 
 module.exports = async (opts) => {
   if (opts.name && !validateNpmName(opts.name).validForNewPackages) {
@@ -28,10 +38,17 @@ module.exports = async (opts) => {
   } else {
     const info = await inquirer.prompt([
       {
+        type: 'list',
+        name: 'language',
+        message: 'Language',
+        choices: languageChoices,
+        default: 'en'
+      },
+      {
         type: 'input',
         name: 'name',
-        message: 'Pattern Name',
-        validate: (name) => {
+        message: info => strings[info.language]['cfp.patternName'],
+        validate: name => {
           return name && validateNpmName(name).validForNewPackages
         },
         default: opts.name
@@ -39,63 +56,56 @@ module.exports = async (opts) => {
       {
         type: 'input',
         name: 'description',
-        message: 'Pattern Description',
+        message: info => strings[info.language]['cfp.patternDescription'],
         default: opts.description
+      },
+      {
+        type: 'list',
+        name: 'type',
+        message: info => strings[info.language]['cfp.patternType'],
+        choices: info => [
+          { name: strings[info.language]['filter.type.pattern'], value: 'pattern'},
+          { name: strings[info.language]['filter.type.block'], value: 'block'},
+        ],
+        default: 'pattern',
+      },
+      {
+        type: 'list',
+        name: 'department',
+        message: info => strings[info.language]['filter.department.title'],
+        choices: info => [
+          { name: strings[info.language]['filter.department.menswear'], value: 'menswear'},
+          { name: strings[info.language]['filter.department.womenswear'], value: 'womenswear'},
+          { name: strings[info.language]['filter.department.accessories'], value: 'accessories'},
+        ],
+        default: 'womenswear',
       },
       {
         type: 'input',
         name: 'author',
-        message: 'Author\'s GitHub Handle',
+        message: info => strings[info.language]['cfp.author'],
         default: opts.author
       },
       {
         type: 'input',
         name: 'repo',
-        message: 'GitHub Repo Path',
+        message: info => strings[info.language]['cfp.githubRepo'],
         default: opts.repo
-      },
-      {
-        type: 'input',
-        name: 'license',
-        message: 'License',
-        default: opts.license
       },
       {
         type: 'list',
         name: 'manager',
-        message: 'Package Manager',
+        message: info => strings[info.language]['cfp.packageManager'],
         choices: [ 'npm', 'yarn' ],
         default: opts.manager
       },
-      {
-        type: 'list',
-        name: 'template',
-        message: 'Development Mode',
-        choices: [ 'light', 'dark', 'custom' ],
-        default: opts.template
-      },
-      {
-        type: 'input',
-        name: 'templatePath',
-        message: 'Template Path',
-        default: opts.templatePath,
-        when: ({ template }) => template === 'custom',
-        validate: input => new Promise(resolve => {
-          const fullPath = path.resolve(process.cwd(), input)
-          fs.stat(fullPath, (err, stats) => {
-            if (err) {
-              return resolve(`Cannot resolve directory at: ${fullPath}`)
-            }
-            resolve(true)
-          })
-        })
-      }
     ])
 
     config.set('author', info.author)
-    config.set('license', info.license)
     config.set('manager', info.manager)
-    config.set('template', info.template)
+    config.set('template', 'default')
+    config.set('license', 'MIT')
+    info.template = 'default';
 
     return {
       ...info,
