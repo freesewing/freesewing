@@ -1,14 +1,2 @@
 ---
-acrossBackFactor: brian
-backNeckCutout: brian
-bicepsEase: brian
-chestEase: brian
-cuffEase: brian
-lengthBonus: brian
-sleeveLengthBonus: brian
-ribbingStretchFactor:
-  title: Estiramiento del ribete
-  description: Determina la holgura negativa para el ribete elástico.
-ribbingWidth:
-  title: Anchura del ribete
-  description: La anchura del ribete que vas a usar.
+_: _
