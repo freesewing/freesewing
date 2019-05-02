@@ -1,9 +1,4 @@
 ---
-armholeDepthFactor: brian
-chestEase: brian
-hipsEase: aaron
-lengthBonus: brian
-waistEase: simon
 backScyeDart:
   title: Neep armsgat achter
   description: De hoeveelheid die verwijderd wordt met een neep aan de achterkant van het armsgat.
