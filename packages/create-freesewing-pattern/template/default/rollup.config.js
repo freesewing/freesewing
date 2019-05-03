@@ -33,8 +33,7 @@ export default {
     url({ exclude: ["**/*.svg"] }),
     svgr(),
     babel({
-      exclude: "node_modules/**",
-      plugins: ["@babel/external-helpers"]
+      exclude: "node_modules/**"
     }),
     resolve({ browser: true }),
     json(),

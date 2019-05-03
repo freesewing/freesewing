@@ -1,5 +1,5 @@
 import freesewing from "@freesewing/core";
-import plugins from "@freesewing/plugins";
+import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 import draftBox from "./box";
 
