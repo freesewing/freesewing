@@ -17,7 +17,6 @@
   "scripts": {
     "clean": "rimraf dist",
     "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
-    "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs",
     "build": "npm run clean && npm run nodebuild",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
@@ -26,18 +25,18 @@
     "storybook": "start-storybook -p 6663"
   },
   "peerDependencies": {
-    "@freesewing/css-theme": "^2.0.0-alpha.16",
-    "@freesewing/i18n": "^2.0.0-alpha.16",
-    "@freesewing/mui-theme": "^2.0.0-alpha.16",
-    "@freesewing/pattern-info": "^2.0.0-alpha.16",
-    "@freesewing/utils": "^2.0.0-alpha.16",
+    "react": "^16.8",
+    "prop-types": "15.7.2",
+    "@freesewing/pattern-info": "^2.0.0-alpha.17",
+    "@freesewing/mui-theme": "^2.0.0-alpha.17",
+    "@freesewing/css-theme": "^2.0.0-alpha.17",
+    "typeface-roboto-condensed": "latest",
+    "@freesewing/i18n": "^2.0.0-alpha.17",
+    "@freesewing/utils": "^2.0.0-alpha.17",
+    "react-intl": "^2.8.0",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
-    "@material-ui/lab": "^3.0.0-alpha.30",
-    "prop-types": "15.7.2",
-    "react": "^16.8",
-    "react-intl": "^2.8.0",
-    "typeface-roboto-condensed": "latest"
+    "@material-ui/lab": "^3.0.0-alpha.30"
   },
   "files": [
     "dist/*",
