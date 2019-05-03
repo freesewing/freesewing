@@ -8,7 +8,6 @@
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
     "@freesewing/core": "alpha",
-    "@freesewing/plugin-bundle": "alpha",
     "@freesewing/plugin-bust": "alpha",
     "@freesewing/plugin-buttons": "alpha",
     "@freesewing/plugin-flip": "alpha",
@@ -19,6 +18,9 @@
     "@freesewing/components": "alpha",
     "@freesewing/css-theme": "alpha",
     "@freesewing/mui-theme": "alpha",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/lab": "^3.0.0-alpha.30",
     "typeface-roboto-condensed": "latest",
     "pattern": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },

@@ -21,14 +21,12 @@
     "predeploy": "cd example && {{manager}} install && {{manager}} run build",
     "deploy": "gh-pages -d example/build"
   },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
-  },
   "devDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
     "babel-jest": "23.6.0",
     "@freesewing/core": "alpha",
     "@freesewing/plugin-bundle": "alpha",
@@ -57,6 +55,12 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-url": "^1.4.0"
+    "rollup-plugin-url": "^1.4.0",
+    "@material-ui/core": "3.9.3",
+    "@material-ui/icons": "3.0.2",
+    "@material-ui/lab": "3.0.0-alpha.30",
+    "react-intl": "2.8.0",
+    "prop-types": "15.7.2",
+    "react-intl": "2.8.0"
   }
 }
