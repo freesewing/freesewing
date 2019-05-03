@@ -2,9 +2,9 @@ const path = require("path");
 const fse = require("fs-extra");
 const patterns = require("@freesewing/patterns");
 
-const patternOptions = pattern => {
+const patternOptions = config => {
   let all = [];
-  let groups = pattern.optionGroups;
+  let groups = config.optionGroups;
   for (let group of Object.keys(groups)) {
     for (let option of groups[group]) {
       if (typeof option === "string") all.push(option);
@@ -19,14 +19,44 @@ const patternOptions = pattern => {
   return all;
 };
 
+const patternParts = config => {
+  let parts = {};
+  if (config.parts) {
+    for (let p of config.parts) parts[p] = p;
+  }
+  if (config.dependencies) {
+    for (let p of Object.keys(config.dependencies)) {
+      parts[p] = p;
+      if (typeof config.dependencies[p] === "string") {
+        parts[config.dependencies[p]] = config.dependencies[p];
+      } else {
+        for (let d of config.dependencies[p]) parts[d] = d;
+      }
+    }
+  }
+  if (config.inject) {
+    for (let p of Object.keys(config.inject)) {
+      parts[p] = p;
+      parts[config.inject[p]] = config.inject[p];
+    }
+  }
+  if (config.hide) {
+    for (let p of config.hide) delete parts[p];
+  }
+
+  return Object.keys(parts);
+};
+
 let options = {};
 let optionGroups = {};
+let parts = {};
 let versions = {};
 for (let pattern of Object.keys(patterns)) {
   let instance = new patterns[pattern]();
   let p = pattern.toLowerCase();
   options[p] = patternOptions(instance.config);
   optionGroups[p] = instance.config.optionGroups;
+  parts[p] = patternParts(instance.config);
   versions[p] = instance.config.version;
 }
 
@@ -37,6 +67,10 @@ fse.writeFileSync(
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "option-groups.js"),
   "module.exports = " + JSON.stringify(optionGroups) + "\n"
+);
+fse.writeFileSync(
+  path.join(".", "src", "prebuild", "parts.js"),
+  "module.exports = " + JSON.stringify(parts) + "\n"
 );
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "versions.js"),

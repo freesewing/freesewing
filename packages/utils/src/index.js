@@ -5,7 +5,6 @@ export { default as formatImperial } from "./formatImperial";
 export { default as formatMm } from "./formatMm";
 export { default as optionDefault } from "./optionDefault";
 export { default as optionType } from "./optionType";
-export { default as partList } from "./partList";
 export { default as roundMm } from "./roundMm";
 export { default as roundMmDown } from "./roundMmDown";
 export { default as roundMmUp } from "./roundMmUp";
