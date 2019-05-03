@@ -6,6 +6,7 @@ const LanguageChooser = props => {
   const styles = {
     container: {
       display: "flex",
+      flexDirection: "row",
       height: "calc(100vh - 64px)",
       width: "100%"
     },
@@ -37,7 +38,7 @@ const LanguageChooser = props => {
               variant="contained"
               onClick={() => changeLanguage(lang)}
             >
-              {languages[lang][lang]}
+              {languages[lang]}
             </Button>
           );
         })}

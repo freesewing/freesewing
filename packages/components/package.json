@@ -17,6 +17,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs",
     "build": "npm run clean && npm run nodebuild",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
@@ -34,7 +35,7 @@
     "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^3.0.0-alpha.30",
     "prop-types": "15.7.2",
-    "react": "^16.4.1",
+    "react": "^16.8",
     "react-intl": "^2.8.0",
     "typeface-roboto-condensed": "latest"
   },

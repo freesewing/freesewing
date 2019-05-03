@@ -4,13 +4,15 @@ import { defaultGist } from "@freesewing/utils";
 import DraftConfigurator from "../../DraftConfigurator";
 
 const Pattern = props => {
-  //let pattern = new props.Pattern();
-
+  let pattern = new props.Pattern(props.gist);
   return (
     <div className="fs-sa">
       <section>
+        <div dangerouslySetInnerHTML={{ __hmtl: pattern.draft().render() }} />
+        <h2>gist</h2>
         <pre>{JSON.stringify(props.gist, null, 2)}</pre>
       </section>
+
       <aside>
         <div className="sticky">
           <DraftConfigurator

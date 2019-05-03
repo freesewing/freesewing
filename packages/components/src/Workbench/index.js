@@ -13,10 +13,11 @@ import withLanguage from "../withLanguage";
 import LanguageIcon from "@material-ui/icons/Translate";
 import DarkModeIcon from "@material-ui/icons/Brightness3";
 import LanguageChooser from "./LanguageChooser";
-import Pattern from "./Pattern";
+import ShowPattern from "./Pattern";
+import Welcome from "./Welcome";
 
 const Workbench = props => {
-  const [display, setDisplay] = useState("pattern");
+  const [display, setDisplay] = useState("welcome");
   const [pattern, setPattern] = useState(false);
   const [settings, setSettings] = useState(false);
   const [theme, setTheme] = useState("light");
@@ -82,9 +83,9 @@ const Workbench = props => {
         />
       );
       break;
-    default:
+    case "pattern":
       main = (
-        <Pattern
+        <ShowPattern
           freesewing={props.freesewing}
           Pattern={props.Pattern}
           config={props.config}
@@ -94,6 +95,9 @@ const Workbench = props => {
           units={props.units}
         />
       );
+      break;
+    default:
+      main = <Welcome language={props.language} setDisplay={setDisplay} />;
   }
 
   const themes = { dark, light };
@@ -105,7 +109,9 @@ const Workbench = props => {
           theme === "light" ? "theme-wrapper light" : "theme-wrapper dark"
         }
       >
-        <Navbar navs={navs} />
+        {display !== "welcome" ? (
+          <Navbar navs={navs} home={() => setDisplay("welcome")} />
+        ) : null}
         {main}
       </div>
     </MuiThemeProvider>

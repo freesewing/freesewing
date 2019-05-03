@@ -27,14 +27,22 @@ const Navbar = props => {
     );
   };
 
+  let homeProps = {
+    href: "#home"
+  };
+  if (typeof props.home === "function") homeProps.onClick = props.home;
+  else homeProps.href = props.home;
+
   return (
     <header className="navbar">
       <div>
         <div className="logo">
-          <a href={props.home}>{props.logo}</a>
+          <a id="home" {...homeProps}>
+            {props.logo}
+          </a>
         </div>
         <div className="emblem">
-          <a href={props.home}>{props.emblem}</a>
+          <a {...homeProps}>{props.emblem}</a>
         </div>
         {Object.keys(props.navs.left).map(key =>
           renderNav(key, props.navs.left[key])
