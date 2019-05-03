@@ -23,7 +23,7 @@ const Icon = props => {
 Icon.propTypes = {
   size: PropTypes.number,
   viewBox: PropTypes.string,
-  pathString: PropTypes.string.isRequired
+  icon: PropTypes.string
 };
 
 Icon.defaultProps = {

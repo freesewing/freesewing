@@ -1,12 +1,26 @@
 export default function(part) {
-  let { Point, Path, points, paths, complete, paperless } = part.shorthand();
+  let {
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    complete,
+    paperless
+  } = part.shorthand();
 
-  points.start = new Point(0, 0);
-  points.end = new Point(75, 0);
+  points.topLeft = new Point(0, 0);
+  points.topRight = new Point(options.size, 0);
+  points.bottomLeft = new Point(0, options.size);
+  points.bottomRight = new Point(options.size, options.size);
 
   paths.demo = new Path()
-    .move(points.start)
-    .line(points.end)
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
     .attr("data-text", "thisIsTheFrontPart")
     .attr("data-text-class", "center");
 

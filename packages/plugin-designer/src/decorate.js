@@ -1,26 +1,25 @@
 const decorate = {};
 
 /** Decorares points with extra info */
-decorate.points = function(svg) {
+decorate.points = function(svg, pointHover) {
   for (let partId in svg.pattern.parts) {
     let part = svg.pattern.parts[partId];
     if (part.render) {
       for (let pointId in part.points) {
         let point = part.points[pointId];
-        point.attributes.set("id", svg.getId());
-        point.attributes.set("data-point", pointId);
-        point.attributes.set("data-part", partId);
         let type = pointId.substr(0, 1) === "_" ? "point-hidden" : "point";
         let id = "snippet-" + pointId;
-        part.snippets[id] = new svg.pattern.Snippet(
-          type,
-          point,
-          `Point ${pointId} in part ${partId}`
-        );
-        part.snippets[id].attributes.set("onmouseover", "pointHover(evt)");
-        part.snippets[id].attributes.set("id", id);
-        part.snippets[id].attributes.set("data-point", pointId);
-        part.snippets[id].attributes.set("data-part", partId);
+        part.snippets[id] = new svg.pattern.Snippet(type, point);
+        part.snippets[id].attributes.set("onmouseover", function() {
+          pointHover("test", "data");
+        });
+        //  raiseEvent('pointHover', {
+        //    type: "point",
+        //    pointId,
+        //    partId,
+        //    point,
+        //  })
+        //}));
       }
     }
   }

@@ -13,7 +13,7 @@ import withLanguage from "../withLanguage";
 import LanguageIcon from "@material-ui/icons/Translate";
 import DarkModeIcon from "@material-ui/icons/Brightness3";
 import LanguageChooser from "./LanguageChooser";
-import ShowPattern from "./Pattern";
+import DraftPattern from "./DraftPattern";
 import Welcome from "./Welcome";
 
 const Workbench = props => {
@@ -35,7 +35,7 @@ const Workbench = props => {
     if (theme === "light") setTheme("dark");
     else setTheme("light");
   };
-  const raiseEvent = (type, data) => {
+  const raiseEvent = (type = null, data = null) => {
     console.log("FIXME: Event raised", type, data);
   };
 
@@ -83,9 +83,9 @@ const Workbench = props => {
         />
       );
       break;
-    case "pattern":
+    case "draft":
       main = (
-        <ShowPattern
+        <DraftPattern
           freesewing={props.freesewing}
           Pattern={props.Pattern}
           config={props.config}
@@ -126,7 +126,7 @@ Workbench.propTypes = {
 };
 
 Workbench.defaultProps = {
-  from: false
+  from: { settings: { embed: true } }
 };
 
 export default withLanguage(

@@ -52,7 +52,7 @@ const Welcome = props => {
           variant="contained"
           size="large"
           color="primary"
-          onClick={() => props.setDisplay("pattern")}
+          onClick={() => props.setDisplay("draft")}
         >
           <FormattedMessage id="cfp.renderYourPattern" />
         </Button>
