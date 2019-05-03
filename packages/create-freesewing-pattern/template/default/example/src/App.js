@@ -10,9 +10,11 @@ import Pattern from "pattern";
 
 class App extends Component {
   render() {
-    console.log(freesewing);
-    console.log({ Pattern });
-    return <Workbench />;
+    let instance = new Pattern();
+    let config = instance.config;
+    return (
+      <Workbench freesewing={freesewing} Pattern={Pattern} config={config} />
+    );
   }
 }
 

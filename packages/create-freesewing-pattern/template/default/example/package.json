@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.8",
+    "react-dom": "^16.8",
     "react-scripts": "2.0.4",
     "@freesewing/core": "alpha",
     "@freesewing/plugin-bust": "alpha",
