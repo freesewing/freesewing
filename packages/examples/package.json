@@ -28,9 +28,11 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.10",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.10"
+    "@freesewing/core": "^2.0.0-alpha.11",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.11"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
