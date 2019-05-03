@@ -1,21 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import freesewing from "@freesewing/core";
 import { Workbench } from "@freesewing/components";
-
 import "typeface-roboto-condensed";
 import "@freesewing/css-theme";
 import "./App.css";
 
 import Pattern from "pattern";
 
-class App extends Component {
-  render() {
-    let instance = new Pattern();
-    let config = instance.config;
-    return (
-      <Workbench freesewing={freesewing} Pattern={Pattern} config={config} />
-    );
-  }
-}
+const App = props => {
+  let instance = new Pattern();
+  let config = instance.config;
+  return (
+    <Workbench freesewing={freesewing} Pattern={Pattern} config={config} />
+  );
+};
 
 export default App;
