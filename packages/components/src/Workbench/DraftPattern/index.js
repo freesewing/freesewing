@@ -6,7 +6,7 @@ import themePlugin from "@freesewing/plugin-theme";
 import svgattrPlugin from "@freesewing/plugin-svgattr";
 import i18nPlugin from "@freesewing/plugin-i18n";
 import validatePlugin from "@freesewing/plugin-validate";
-import designerPlugin from "@freesewing/plugin-designer";
+import reactPlugin from "@freesewing/plugin-react";
 import { strings } from "@freesewing/i18n";
 import { FormattedMessage } from "react-intl";
 
@@ -16,9 +16,8 @@ const DraftPattern = props => {
     .use(svgattrPlugin, { class: "freesewing draft" })
     .use(i18nPlugin, { strings: strings })
     .use(validatePlugin)
-    .use(designerPlugin, props.raiseEvent);
+    .use(reactPlugin);
   pattern.draft();
-  console.dir({ pattern });
 
   return (
     <div className="fs-sa">

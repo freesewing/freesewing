@@ -32,6 +32,7 @@ components:
     "@freesewing/pattern-info": "^{{version}}"
     "@freesewing/mui-theme": "^{{version}}"
     "@freesewing/css-theme": "^{{version}}"
+    "@freesewing/plugin-react": "^{{version}}"
     "typeface-roboto-condensed": "latest"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/utils": "^{{version}}"

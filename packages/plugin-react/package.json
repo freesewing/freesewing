@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/sven",
+  "name": "@freesewing/plugin-react",
   "version": "2.0.0-alpha.18",
-  "description": "A FreeSewing pattern for a straightforward sweater",
+  "description": "A FreeSewing plugin to turn your pattern into a React component",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -11,14 +11,14 @@
   },
   "keywords": [
     "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "pattern",
+    "plugin",
+    "sewing pattern",
     "sewing",
-    "sewing pattern"
+    "design",
+    "parametric design",
+    "made to measure",
+    "diy",
+    "fashion"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -27,14 +27,13 @@
     "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
     "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
-    "test": "echo \"sven: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "test": "echo \"plugin-react: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.18",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.18"
+    "@freesewing/core": "^2.0.0-alpha.18"
   },
   "dependencies": {},
   "devDependencies": {},
