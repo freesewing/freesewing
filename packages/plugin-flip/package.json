@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-flip",
-  "version": "2.0.0-alpha.15",
+  "version": "2.0.0-alpha.16",
   "description": "A FreeSewing plugin to flip parts horizontally",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,8 +35,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.0.0-alpha.15"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
