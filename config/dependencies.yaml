@@ -27,7 +27,7 @@ css-theme:
     "open-color": "1.6.3"
 components:
   peer:
-    "react": "^16.4.1"
+    "react": "^16.8"
     "prop-types": "15.7.2"
     "@freesewing/pattern-info": "^{{version}}"
     "@freesewing/mui-theme": "^{{version}}"
@@ -70,8 +70,8 @@ i18n:
 mui-theme:
   peer:
     "@material-ui/core": "^3.9.3"
-    "react": "^16.3.0"
-    "react-dom": "^16.3.0"
+    "react": "^16.8"
+    "react-dom": "^16.8"
 patterns:
   _:
     "@freesewing/aaron": "^{{version}}"
