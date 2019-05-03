@@ -30,4 +30,8 @@ core:
   coverage: "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
 pattern-info:
   prebuild: "node src/prebuild.js"
+utils:
+  # react-scripts doesn't handle .mjs files correctly
+  modulebuild: '!'
+  build: "npm run clean && npm run nodebuild"
 

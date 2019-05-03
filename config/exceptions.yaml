@@ -24,4 +24,7 @@ packageJson:
   css-theme:
     main: dist/theme.css
     module: '!'
+  utils:
+    # react-scripts doesn't handle .mjs files correctly
+    module: '!'
 
