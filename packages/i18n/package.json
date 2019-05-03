@@ -30,7 +30,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.0.0-alpha.13"
+    "@freesewing/pattern-info": "^2.0.0-alpha.14"
   },
   "files": [
     "dist/*",
