@@ -23,8 +23,6 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "dependencies": {
-    "@freesewing/i18n": "^2.0.0-alpha.15",
-    "@freesewing/pattern-info": "^2.0.0-alpha.15",
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "conf": "^2.2.0",
@@ -40,7 +38,9 @@
     "p-each-series": "^1.0.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^1.3.1"
+    "which": "^1.3.1",
+    "@freesewing/i18n": "^2.0.0-alpha.15",
+    "@freesewing/pattern-info": "^2.0.0-alpha.15"
   },
   "files": [
     "lib",
