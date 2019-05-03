@@ -31,6 +31,9 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "prebuild": "node src/prebuild.js"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
