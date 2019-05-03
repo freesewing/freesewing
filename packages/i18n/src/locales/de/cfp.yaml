@@ -10,4 +10,7 @@ startRollup: Starten Sie den Rollup-Bündler in einem Terminal im Überwachungsm
 startWebpack: Führen Sie in einem anderen Terminal den Webpack-Dev-Server aus
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar unter
 talkToUs: Für Fragen, Feedback oder Anregungen sprechen Sie mit uns in unserem Chatroom
+renderYourPattern: Rendern Sie Ihr Schnitmuster
+renderInBrowser: Klicken Sie unten, um Ihr schnittmuster im Browser zu rendern.
+weWillReRender: Wenn Sie Änderungen vornehmen, werden wir für Sie erneut rendern.
 

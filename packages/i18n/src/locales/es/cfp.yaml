@@ -10,3 +10,7 @@ startRollup: En un terminal, inicie rollup en modo de reloj
 startWebpack: Y en otro terminal, ejecuta el servidor webpack dev
 devDocsAvailableAt: La documentación del desarrollador está disponible en
 talkToUs: Para preguntas, comentarios o sugerencias, venga a hablar con nosotros en nuestra sala de chat
+renderYourPattern: Rinda su patrón
+renderInBrowser: Haga clic a continuación para representar su patrón en el navegador.
+weWillReRender: Cuando haga cambios, volveremos a renderizar por usted.
+
