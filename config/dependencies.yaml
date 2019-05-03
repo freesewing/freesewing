@@ -29,7 +29,10 @@ components:
   peer:
     "react": "^16.4.1"
     "prop-types": "15.7.2"
-    "@freesewing/patterns": "^{{version}}"
+    "@freesewing/pattern-info": "^{{version}}"
+    "@freesewing/mui-theme": "^{{version}}"
+    "@freesewing/css-theme": "^{{version}}"
+    "typeface-roboto-condensed": "latest"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/utils": "^{{version}}"
     "react-intl": "^2.8.0"
