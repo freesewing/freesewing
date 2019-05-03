@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Logo = props => {
+const Ogol = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,15 +19,15 @@ const Logo = props => {
   );
 };
 
-Logo.propTypes = {
+Ogol.propTypes = {
   size: PropTypes.number,
   embed: PropTypes.bool
 };
 
-Logo.defaultProps = {
+Ogol.defaultProps = {
   size: 24,
   embed: false,
   color: "#fff"
 };
 
-export default Logo;
+export default Ogol;

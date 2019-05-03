@@ -6,6 +6,9 @@ customRollup:
   - components
   - core
 packageJson:
+  components:
+    # react-scripts doesn't handle .mjs files correctly
+    module: '!'
   create-freesewing-pattern:
     bin:
       create-freesewing-pattern: index.js
