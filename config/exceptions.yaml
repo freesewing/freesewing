@@ -11,6 +11,13 @@ packageJson:
       create-freesewing-pattern: index.js
     main: index.js
     module: '!'
+    files:
+      - lib
+      - template
+      - README.md
+      - package.json
+      - '!lib/*.test.js'
+      - '!template/default/node_modules'
   css-theme:
     main: dist/theme.css
     module: '!'
