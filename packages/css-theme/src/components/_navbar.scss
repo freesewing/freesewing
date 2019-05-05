@@ -1,7 +1,4 @@
 header.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   height: 64px;
   width: calc(100% - 52px);
   margin: 0;
@@ -17,9 +14,11 @@ header.navbar {
     display: flex;
     align-items: center;
     color: $oc-gray-2;
+    a { text-decoration: none; }
   }
   div.emblem {
     margin-right: 26px;
+    a { text-decoration: none; }
   }
   div.spread { flex-grow: 1}
   a.nav,
@@ -44,10 +43,12 @@ header.navbar {
   button:hover,
   a.nav:hover {
     cursor: pointer;
-    color: $fc-link-dark;
-    border-color: $fc-link-dark;
   }
+  button:hover,
+  a.nav:hover,
+  button.active,
   a.nav.active {
+    color: $fc-link-dark;
     border-color: $fc-link-dark;
   }
   svg.nav-icon {

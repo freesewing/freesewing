@@ -7,7 +7,6 @@ const LanguageChooser = props => {
     container: {
       display: "flex",
       flexDirection: "row",
-      height: "calc(100vh - 64px)",
       width: "100%"
     },
     chooser: {

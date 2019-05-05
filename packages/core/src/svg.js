@@ -62,7 +62,7 @@ Svg.prototype.render = function(pattern) {
   this.layout = {}; // Reset layout
   for (let partId in pattern.parts) {
     let part = pattern.parts[partId];
-    if (part.render && pattern.needs(partId)) {
+    if (part.render) {
       let partSvg = this.renderPart(part);
       this.layout[partId] = {
         svg: partSvg,

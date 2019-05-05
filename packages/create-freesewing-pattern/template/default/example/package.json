@@ -16,6 +16,8 @@
     "@freesewing/plugin-validate": "alpha",
     "@freesewing/plugin-react": "alpha",
     "@freesewing/i18n": "alpha",
+    "@freesewing/utils": "alpha",
+    "@freesewing/models": "alpha",
     "@freesewing/components": "alpha",
     "@freesewing/css-theme": "alpha",
     "@freesewing/mui-theme": "alpha",

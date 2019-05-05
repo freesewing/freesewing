@@ -16,11 +16,15 @@ const PatternOptionPctDegCount = props => {
     // causes a weird timing issue to result in a value that is NaN.
     // If that's the case, just ignore this update and keep the
     // previous one instead
+    let factor = 1;
+    if (props.type === "pct") factor = 100;
     if (!isNaN(newValue)) {
       setValue(newValue);
-      if (evt.type !== "mousemove") props.updateValue(props.name, newValue);
+      if (evt.type !== "mousemove")
+        props.updateValue(props.name, newValue / factor);
     } else {
-      if (evt.type !== "mousemove") props.updateValue(props.name, value);
+      if (evt.type !== "mousemove")
+        props.updateValue(props.name, value / factor);
     }
   };
 

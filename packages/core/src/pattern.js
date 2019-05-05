@@ -142,6 +142,8 @@ Pattern.prototype.draft = function() {
             "() was undefined. Did you forget to return the Part object?"
         );
       this.parts[partName].render = this.wants(partName);
+    } else {
+      this.parts[partName].render = false;
     }
   }
   this.runHooks("postDraft");
@@ -390,7 +392,7 @@ Pattern.prototype.pack = function() {
     let part = this.parts[key];
     // Avoid multiple render calls to cause stacking of transforms
     part.attributes.remove("transform");
-    if (part.render && this.needs(key)) {
+    if (part.render) {
       part.stack();
       let width = part.bottomRight.x - part.topLeft.x;
       let height = part.bottomRight.y - part.topLeft.y;
@@ -576,4 +578,32 @@ Pattern.prototype.wants = function(partName) {
   }
 
   return true;
+};
+
+/** Returns props required to render this pattern through
+ *  an external renderer (eg. a React component)
+ */
+Pattern.prototype.getRenderProps = function() {
+  this.pack();
+  let props = {};
+  props.width = this.width;
+  props.height = this.height;
+  props.settings = this.settings;
+  props.parts = {};
+  for (let p of Object.keys(this.parts)) {
+    if (this.parts[p].render) {
+      props.parts[p] = {
+        paths: this.parts[p].paths,
+        points: this.parts[p].points,
+        snippets: this.parts[p].points,
+        attributes: this.parts[p].attributes,
+        height: this.parts[p].height,
+        width: this.parts[p].width,
+        bottomRight: this.parts[p].bottomRight,
+        topLeft: this.parts[p].topLeft
+      };
+    }
+  }
+
+  return props;
 };

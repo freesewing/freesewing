@@ -1,0 +1,108 @@
+svg.freesewing.draft {
+  max-width: 100%;
+  max-height: 90vh;
+  /* Reset */
+  path,circle,rect{fill:none;stroke:none}
+
+  /* Defaults */
+  path,circle{
+    stroke-opacity:1;
+    stroke-width:.7;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  /* Stroke classes */
+  .note{ stroke-width:.8; }
+  .mark{ stroke-width:.8; }
+  .contrast{ stroke-width:1.2; }
+  .stroke-xs{ stroke-width:.5; }
+  .stroke-sm{ stroke-width:.5; }
+  .stroke-xl{ stroke-width:1.4; }
+  .stroke-xxl{ stroke-width:2.4; }
+
+  .sa { stroke-dasharray:1,3; }
+  .help {
+    stroke-width:.6;
+    stroke-dasharray:15,5,2,5;
+  }
+  .dotted { stroke-dasharray:2,3; }
+  .dashed { stroke-dasharray:2,5; }
+  .lashed { stroke-dasharray:8,8; }
+  .hidden {
+    stroke:none;
+    fill:none;
+  }
+
+  /* Sampling */
+  path.sample-focus  {stroke-width: 1.5; fill: rgba(0,0,0,0.1)}
+
+  /* Text */
+  text{
+    font-size:6px;
+    @include title-font;
+    text-anchor:start;
+    font-weight:200;
+    dominant-baseline:ideographic;
+  }
+  .text-xs { font-size:4px; }
+  .text-sm { font-size:5px; }
+  .text-lg { font-size:8px; }
+  .text-xl { font-size:10px; }
+  .text-xxl{ font-size:13px; }
+
+  .center{ text-anchor:middle; }
+  .right{ text-anchor:end; }
+
+  /* Plugins */
+  text.title-nr {
+    font-size: 32px;
+    @include title-font;
+    font-weight: bold;
+    stroke: none;
+  }
+}
+
+.theme-wrapper.light svg.freesewing.draft {
+  /* Stroke classes */
+  path,circle{ stroke: $fc-draft-fabric-light; }
+  .fabric{ stroke: $fc-draft-fabric-light; }
+  .lining{ stroke: $fc-draft-lining-light; }
+  .interfacing{ stroke: $fc-draft-interfacing-light; }
+  .canvas{ stroke: $fc-draft-canvas-light; }
+  .various{ stroke: $fc-draft-various-light; }
+  .mark{ stroke: $fc-draft-mark-light; }
+  .contrast{ stroke: $fc-draft-contrast-light; }
+  .note{ stroke: $fc-draft-note-light; }
+  /* Fill classes */
+  .fill-fabric{ fill: $fc-draft-fabric-light; }
+  .fill-lining{ fill: $fc-draft-lining-light; }
+  .fill-interfacing{ fill: $fc-draft-interfacing-light; }
+  .fill-canvas{ fill: $fc-draft-canvas-light; }
+  .fill-various{ fill: $fc-draft-various-light; }
+  .fill-mark{ fill: $fc-draft-mark-light; }
+  .fill-contrast{ fill: $fc-draft-contrast-light; }
+  .fill-note{ fill: $fc-draft-note-light; }
+}
+.theme-wrapper.dark svg.freesewing.draft {
+  /* Stroke classes */
+  path,circle{ stroke: $fc-draft-fabric-dark; }
+  .fabric{ stroke: $fc-draft-fabric-dark; }
+  .lining{ stroke: $fc-draft-lining-dark; }
+  .interfacing{ stroke: $fc-draft-interfacing-dark; }
+  .canvas{ stroke: $fc-draft-canvas-dark; }
+  .various{ stroke: $fc-draft-various-dark; }
+  .mark{ stroke: $fc-draft-mark-dark; }
+  .contrast{ stroke: $fc-draft-contrast-dark; }
+  .note{ stroke: $fc-draft-note-dark; }
+  /* Fill classes */
+  .fill-fabric{ fill: $fc-draft-fabric-dark; }
+  .fill-lining{ fill: $fc-draft-lining-dark; }
+  .fill-interfacing{ fill: $fc-draft-interfacing-dark; }
+  .fill-canvas{ fill: $fc-draft-canvas-dark; }
+  .fill-various{ fill: $fc-draft-various-dark; }
+  .fill-mark{ fill: $fc-draft-mark-dark; }
+  .fill-contrast{ fill: $fc-draft-contrast-dark; }
+  .fill-note{ fill: $fc-draft-note-dark; }
+}
+

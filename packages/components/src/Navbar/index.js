@@ -16,12 +16,22 @@ const Navbar = props => {
     if (nav.type === "component") return nav.component;
     else if (nav.type === "button")
       return (
-        <button title={title} onClick={nav.onClick} key={key}>
+        <button
+          title={title}
+          onClick={nav.onClick}
+          key={key}
+          className={nav.active ? "active" : ""}
+        >
           {text}
         </button>
       );
     return (
-      <a href={nav.href} className="nav" title={title} key={key}>
+      <a
+        href={nav.href}
+        className={nav.active ? "nav active" : "nav"}
+        title={title}
+        key={key}
+      >
         {text}
       </a>
     );
@@ -60,7 +70,7 @@ Navbar.propTypes = {
   navs: PropTypes.object,
   logo: PropTypes.node,
   emblem: PropTypes.node,
-  home: PropTypes.string
+  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
 };
 
 Navbar.defaultProps = {

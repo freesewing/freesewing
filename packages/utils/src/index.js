@@ -11,3 +11,4 @@ export { default as roundMmUp } from "./roundMmUp";
 export { default as sliderStep } from "./sliderStep";
 export { default as smallestImperialStep } from "./smallestImperialStep";
 export { default as storage } from "./storage";
+export { default as measurementAsMm } from "./measurementAsMm";

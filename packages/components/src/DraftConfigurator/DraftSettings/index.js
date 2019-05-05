@@ -61,8 +61,10 @@ const DraftSettings = props => {
       childProps.dflt = "dflt";
       childProps.customDflt = [];
       childProps.parts = {};
-      for (let part of props.config.parts) // HERE
-        childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
+      if (props.config.parts) {
+        for (let part of props.config.parts) // HERE
+          childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
+      }
     }
 
     return childProps;

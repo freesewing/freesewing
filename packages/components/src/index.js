@@ -1,3 +1,4 @@
+export { default as Draft } from "./Draft";
 export { default as DraftConfigurator } from "./DraftConfigurator";
 export { default as Emblem } from "./Emblem";
 export { default as Logo } from "./Logo";

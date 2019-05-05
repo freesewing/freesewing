@@ -10,7 +10,11 @@ startRollup: Start in één terminal rollup in watch-modus
 startWebpack: En in een andere terminal start je de webpack dev-server
 devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
 talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chatroom
-renderYourPattern: Render je patroon
+draftYourPattern: Teken je patroon
+testYourPattern: Test je patroon
 renderInBrowser: Klik hieronder om uw patroon te renderen in de browser.
 weWillReRender: Telkens u wijzigingen aanbrengt renderen we opnieuw.
-
+youCan: Je kan
+enterMeasurements: Handmatig afmetingen invoeren
+preloadMeasurements: Een reeks afmetingen laden
+size: Maat

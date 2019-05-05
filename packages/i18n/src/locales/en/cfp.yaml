@@ -9,6 +9,11 @@ startRollup: In one terminal, start the rollup bundler in watch mode
 startWebpack: And in another terminal, run the webpack dev server
 devDocsAvailableAt: Developer documentation is available at
 talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
-renderYourPattern: Render your pattern
+draftYourPattern: Draft your pattern
+testYourPattern: Test your pattern
 renderInBrowser: Click below to render your pattern in the browser.
 weWillReRender: When you make changes, we will re-render for you.
+youCan: You can
+enterMeasurements: Enter measurements by hand
+preloadMeasurements: Preload a set of measurements
+size: Size

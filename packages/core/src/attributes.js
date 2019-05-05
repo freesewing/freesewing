@@ -72,6 +72,22 @@ Attributes.prototype.renderIfPrefixIs = function(prefix = "") {
   return svg;
 };
 
+/** Returns a props object for attributes with a fiven prefix
+ * typically used for data-text*/
+Attributes.prototype.asPropsIfPrefixIs = function(prefix = "") {
+  let props = {};
+  let prefixLen = prefix.length;
+  for (let key in this.list) {
+    if (key.substr(0, prefixLen) === prefix) {
+      let propKey = key.substr(prefixLen);
+      if (propKey === "class") propKey = "className";
+      props[propKey] = this.get(key);
+    }
+  }
+
+  return props;
+};
+
 /** Returns a deep copy of this */
 Attributes.prototype.clone = function() {
   let clone = new Attributes();

@@ -10,6 +10,11 @@ startRollup: Dans un terminal, démarrez rollup en mode veille
 startWebpack: Et dans un autre terminal, exécutez le serveur de développement webpack
 devDocsAvailableAt: La documentation du développeur est disponible à l'adresse
 talkToUs: Pour des questions, des commentaires ou des suggestions, venez nous parler dans notre salle de chat
-renderYourPattern: Rendez votre patron
+draftYourPattern: Ébauche votre patron
+testYourPattern: Test votre patron
 renderInBrowser: Cliquez ci-dessous pour rendre votre motif dans le navigateur.
 weWillReRender: Lorsque vous apportez des modifications, nous effectuons un nouveau rendu pour vous.
+youCan: Vous pouvez
+enterMeasurements: Entrer les mesures à la main
+preloadMeasurements: Précharger un ensemble de mesures
+size: Taille

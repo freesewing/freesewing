@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "2.0.0-alpha.18",
+  "version": "2.0.0-alpha.19",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,7 +33,8 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "report": "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js",
-    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
+    "watch": "BABEL_ENV=production rollup -c -w -o dist/index.mjs -f es"
   },
   "dependencies": {
     "bezier-js": "^2.2.13",

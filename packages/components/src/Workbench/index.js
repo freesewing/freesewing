@@ -15,18 +15,57 @@ import DarkModeIcon from "@material-ui/icons/Brightness3";
 import LanguageChooser from "./LanguageChooser";
 import DraftPattern from "./DraftPattern";
 import Welcome from "./Welcome";
+import Footer from "../Footer";
+import Measurements from "./Measurements";
 
 const Workbench = props => {
   const [display, setDisplay] = useState("welcome");
   const [pattern, setPattern] = useState(false);
-  const [settings, setSettings] = useState(false);
   const [theme, setTheme] = useState("light");
+  const [measurements, setMeasurements] = useState(null);
+  useEffect(() => {
+    let m = getMeasurements();
+    setMeasurements(m);
+    props.updateGist(m, "settings", "measurements");
+  }, []);
   useEffect(() => {
     if (props.from) props.importGist(props.from);
   }, [props.from]);
+  useEffect(() => {
+    if (props.language !== props.gist.settings.locale)
+      props.updateGist(props.language, "settings", "locale");
+  }, [props.language]);
 
+  const getMeasurements = () =>
+    storage.get(props.config.name + "-measurements");
+  const saveMeasurements = data => {
+    storage.set(props.config.name + "-measurements", data);
+    props.updateGist(data, "settings", "measurements");
+  };
+  const updateMeasurement = (name, val) => {
+    let updatedMeasurements = { ...measurements };
+    updatedMeasurements[name] = val;
+    setMeasurements(updatedMeasurements);
+    saveMeasurements(updatedMeasurements);
+  };
+  const preloadMeasurements = model => {
+    let updatedMeasurements = {
+      ...measurements,
+      ...model
+    };
+    setMeasurements(updatedMeasurements);
+    saveMeasurements(updatedMeasurements);
+  };
+  const measurementsMissing = () => {
+    let required = props.config.measurements;
+    if (measurements === null) return true;
+    for (let m of required) {
+      if (typeof measurements[m] === "undefined") return true;
+    }
+
+    return false;
+  };
   const showLanguageChooser = () => setDisplay("language");
-  const toggleSettings = () => setSettings(!settings);
   const updatePattern = p => {
     setPattern(p);
     store.set("pattern", p);
@@ -41,28 +80,37 @@ const Workbench = props => {
 
   const navs = {
     left: {
-      docs: {
-        type: "link",
-        href: "https://freesewing.dev/",
-        text: "app.docs"
+      draft: {
+        type: "button",
+        onClick: () => setDisplay("draft"),
+        text: "cfp.draftYourPattern",
+        active: display === "draft" ? true : false
       },
-      help: {
-        type: "link",
-        href: "https://gitter.im/freesewing/freesewing/",
-        text: "app.askForHelp"
+      sample: {
+        type: "button",
+        onClick: () => setDisplay("sample"),
+        text: "cfp.testYourPattern",
+        active: display === "sample" ? true : false
+      },
+      measurements: {
+        type: "button",
+        onClick: () => setDisplay("measurements"),
+        text: "app.measurements",
+        active: display === "measurements" ? true : false
       }
     },
     right: {
       version: {
         type: "link",
-        href: "https://github.com/freesewing/freesewing",
+        href: "https://github.com/freesewing/freesewing/releases",
         text: "v" + props.freesewing.version
       },
       language: {
         type: "button",
         onClick: () => setDisplay("languages"),
         text: <LanguageIcon className="nav-icon" />,
-        title: "Languages"
+        title: "Languages",
+        active: display === "languages" ? true : false
       },
       dark: {
         type: "button",
@@ -84,6 +132,7 @@ const Workbench = props => {
       );
       break;
     case "draft":
+      if (measurementsMissing()) setDisplay("measurements");
       main = (
         <DraftPattern
           freesewing={props.freesewing}
@@ -93,6 +142,21 @@ const Workbench = props => {
           updateGist={props.updateGist}
           raiseEvent={raiseEvent}
           units={props.units}
+        />
+      );
+      break;
+    case "sample":
+      if (measurementsMissing()) setDisplay("measurements");
+      main = <p>Sample: TODO</p>;
+      break;
+    case "measurements":
+      main = (
+        <Measurements
+          measurements={measurements}
+          required={props.config.measurements}
+          units={props.units}
+          updateMeasurement={updateMeasurement}
+          preloadMeasurements={preloadMeasurements}
         />
       );
       break;
@@ -113,6 +177,7 @@ const Workbench = props => {
           <Navbar navs={navs} home={() => setDisplay("welcome")} />
         ) : null}
         {main}
+        {display !== "welcome" ? <Footer language={props.language} /> : null}
       </div>
     </MuiThemeProvider>
   );

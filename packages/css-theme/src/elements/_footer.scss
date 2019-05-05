@@ -1,0 +1,19 @@
+footer {
+  background: $fc-bg-dark;
+  color: $fc-text-dark;
+  margin: 0;
+  padding: 4rem 1rem;
+  text-align: center;
+  a { color: $fc-text-dark!important; }
+  a:hover { color: $fc-link-dark!important; }
+  a.gitter:hover { color: #ed1965!important; }
+  a.twitter:hover { color: #1da1f2!important; }
+  a.github:hover { color: #6cc644!important; }
+  a.instagram:hover { color: #e1306c!important; }
+  a.facebook:hover { color: #3b5998!important; }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li { list-style-type: none; }
+}

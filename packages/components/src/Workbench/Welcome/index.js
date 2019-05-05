@@ -34,66 +34,43 @@ const Welcome = props => {
   };
 
   return (
-    <div className="fs-sa">
-      <section style={styles.container}>
-        <div>
-          <Logo size={250} />
-        </div>
-        <h1 style={styles.title}>
-          <FormattedMessage id="app.welcome" />
-        </h1>
-        <p>
-          <FormattedMessage id="cfp.renderInBrowser" />
-          <br />
-          <FormattedMessage id="cfp.weWillReRender" />
-        </p>
-        <Button
-          style={styles.bigButton}
-          variant="contained"
-          size="large"
-          color="primary"
-          onClick={() => props.setDisplay("draft")}
-        >
-          <FormattedMessage id="cfp.renderYourPattern" />
-        </Button>
-        <footer style={styles.footer}>
+    <React.Fragment>
+      <div />
+      <div className="fs-sa">
+        <section style={styles.container}>
+          <div>
+            <Logo size={250} />
+          </div>
+          <h1 style={styles.title}>
+            <FormattedMessage id="app.welcome" />
+          </h1>
+          <p>
+            <FormattedMessage id="cfp.renderInBrowser" />
+            <br />
+            <FormattedMessage id="cfp.weWillReRender" />
+          </p>
           <Button
-            style={styles.button}
-            href={
-              "https://" +
-              props.language +
-              ".freesewing.dev/pkg/create-freesewing-pattern"
-            }
+            style={styles.bigButton}
+            variant="contained"
+            size="large"
             color="primary"
-            onClick={() => props.setDisplay("pattern")}
+            onClick={() => props.setDisplay("draft")}
           >
-            <FormattedMessage id="app.docs" />
+            <FormattedMessage id="cfp.draftYourPattern" />
           </Button>
           <Button
-            style={styles.button}
-            href="https://gitter.im/freesewing/freesewing"
+            style={styles.bigButton}
+            variant="contained"
+            size="large"
             color="primary"
-            onClick={() => props.setDisplay("pattern")}
+            onClick={() => props.setDisplay("sample")}
           >
-            <FormattedMessage id="app.askForHelp" />
+            <FormattedMessage id="cfp.testYourPattern" />
           </Button>
-          <p>
-            <IconButton href="https://twitter.com/freesewing_org">
-              <Icon icon="twitter" color="#00aced" />
-            </IconButton>
-            <IconButton href="https://twitter.com/freesewing_org">
-              <Icon icon="github" color="#666" />
-            </IconButton>
-            <IconButton href="https://twitter.com/freesewing_org">
-              <Icon icon="instagram" color="#e1306c" />
-            </IconButton>
-          </p>
-          <p>
-            <FormattedHTMLMessage id="app.txt-footer" />
-          </p>
-        </footer>
-      </section>
-    </div>
+        </section>
+      </div>
+      <div />
+    </React.Fragment>
   );
 };
 

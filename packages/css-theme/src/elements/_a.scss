@@ -1,0 +1,12 @@
+.theme-wrapper a {
+  text-decoration: none;
+}
+.theme-wrapper a:hover {
+  text-decoration: underline;
+}
+.theme-wrapper.light a {
+  color: $fc-link-light;
+}
+.theme-wrapper.dark a {
+  color: $fc-link-dark;
+}
