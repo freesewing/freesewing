@@ -29,6 +29,7 @@ core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
   report: "BABEL_ENV=production nyc report --reporter=html mocha --compilers js:babel-core/register tests/*.test.js"
   coverage: "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+  watch: "BABEL_ENV=production rollup -c -w -o dist/index.mjs -f es"
 i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
