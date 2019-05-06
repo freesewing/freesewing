@@ -30,7 +30,6 @@ const Text = props => {
       );
     }
   } else text.push(<tspan key="tspan-1">{translated}</tspan>);
-  return null;
   return (
     <text
       x={props.point.x}
@@ -43,7 +42,8 @@ const Text = props => {
 };
 
 Text.propTypes = {
-  point: PropTypes.object.isRequired
+  point: PropTypes.object.isRequired,
+  language: PropTypes.string.isRequired
 };
 
 export default Text;

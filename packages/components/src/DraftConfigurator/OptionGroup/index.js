@@ -51,7 +51,7 @@ const OptionGroup = props => {
         return <Count {...option} {...extraProps} />;
         break;
       default:
-        throw new Error("Unsupport option type: " + type);
+        throw new Error("Unsupported option type: " + type);
     }
   };
 

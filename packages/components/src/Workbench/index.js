@@ -58,6 +58,7 @@ const Workbench = props => {
   };
   const measurementsMissing = () => {
     let required = props.config.measurements;
+    if (required.length < 1) return false;
     if (measurements === null) return true;
     for (let m of required) {
       if (typeof measurements[m] === "undefined") return true;

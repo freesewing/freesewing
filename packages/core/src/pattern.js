@@ -595,7 +595,7 @@ Pattern.prototype.getRenderProps = function() {
       props.parts[p] = {
         paths: this.parts[p].paths,
         points: this.parts[p].points,
-        snippets: this.parts[p].points,
+        snippets: this.parts[p].snippets,
         attributes: this.parts[p].attributes,
         height: this.parts[p].height,
         width: this.parts[p].width,

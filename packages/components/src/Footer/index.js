@@ -64,7 +64,7 @@ const Footer = props => {
             );
           }
           return (
-            <div>
+            <div key={l}>
               <h4>
                 <FormattedMessage id={"app." + l} />
               </h4>
