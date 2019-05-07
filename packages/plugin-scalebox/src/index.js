@@ -81,19 +81,19 @@ export default {
       }
       // Paths
       this.paths.__scaleboxImperial = new this.Path()
+        .attr("class", "scalebox imperial")
         .move(this.points.__scaleboxImperialTopLeft)
         .line(this.points.__scaleboxImperialBottomLeft)
         .line(this.points.__scaleboxImperialBottomRight)
         .line(this.points.__scaleboxImperialTopRight)
-        .close()
-        .attr("class", "scalebox imperial");
+        .close();
       this.paths.__scaleboxMetric = new this.Path()
+        .attr("class", "scalebox metric")
         .move(this.points.__scaleboxMetricTopLeft)
         .line(this.points.__scaleboxMetricBottomLeft)
         .line(this.points.__scaleboxMetricBottomRight)
         .line(this.points.__scaleboxMetricTopRight)
-        .close()
-        .attr("class", "scalebox metric");
+        .close();
       // Lead
       this.points.__scaleboxLead = this.points.__scaleboxLead
         .attr("data-text", so.lead || "freesewing")

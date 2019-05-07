@@ -10,14 +10,20 @@ export default {
   difficulty: 1,
   tags: ["test"],
   optionGroups: {
-    fit: ["width"]
+    size: ["width"],
+    content: ["colors", "circles", "text", "snippets", "macros"]
   },
   measurements: [],
   dependencies: {},
-  parts: ["colors"],
+  parts: ["test"],
   inject: {},
   hide: [],
   options: {
-    width: { mm: 200, min: 50, max: 500 }
+    width: { mm: 200, min: 50, max: 500 },
+    colors: { bool: true },
+    circles: { bool: true },
+    text: { bool: true },
+    snippets: { bool: true },
+    macros: { bool: true }
   }
 };

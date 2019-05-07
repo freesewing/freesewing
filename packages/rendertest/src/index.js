@@ -2,12 +2,12 @@ import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config";
 // Parts
-import draftColors from "./colors";
+import draftTest from "./test";
 
 // Create design
 const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods to prototype
-Pattern.prototype.draftColors = part => draftColors(part);
+Pattern.prototype.draftTest = part => draftTest(part);
 
 export default Pattern;

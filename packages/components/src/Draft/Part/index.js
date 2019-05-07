@@ -21,15 +21,6 @@ const Part = props => {
   return (
     <g {...getProps(props.part)}>
       {grid}
-      {Object.keys(props.part.points).map(name => (
-        <Point
-          key={name}
-          name={name}
-          part={props.name}
-          language={props.language}
-          point={props.part.points[name]}
-        />
-      ))}
       {Object.keys(props.part.paths).map(name => (
         <Path
           key={name}
@@ -37,6 +28,15 @@ const Part = props => {
           part={props.name}
           language={props.language}
           path={props.part.paths[name]}
+        />
+      ))}
+      {Object.keys(props.part.points).map(name => (
+        <Point
+          key={name}
+          name={name}
+          part={props.name}
+          language={props.language}
+          point={props.part.points[name]}
         />
       ))}
       {Object.keys(props.part.snippets).map(name => (
