@@ -59,6 +59,9 @@ svg.freesewing.draft {
   }
 }
 
+svg.freesewing.draft text {
+  fill: currentColor;
+}
 .theme-wrapper.light svg.freesewing.draft {
   /* Stroke classes */
   path,circle{ stroke: $fc-draft-fabric-light; }
@@ -79,6 +82,15 @@ svg.freesewing.draft {
   .fill-mark{ fill: $fc-draft-mark-light; }
   .fill-contrast{ fill: $fc-draft-contrast-light; }
   .fill-note{ fill: $fc-draft-note-light; }
+  /* scalebox plugin */
+  path.scalebox.metric {
+    stroke: none;
+    fill: $fc-bg-light;
+  }
+  path.scalebox.imperial {
+    stroke: none;
+    fill: $fc-bg-dark;
+  }
 }
 .theme-wrapper.dark svg.freesewing.draft {
   /* Stroke classes */
@@ -100,6 +112,15 @@ svg.freesewing.draft {
   .fill-mark{ fill: $fc-draft-mark-dark; }
   .fill-contrast{ fill: $fc-draft-contrast-dark; }
   .fill-note{ fill: $fc-draft-note-dark; }
+  /* scalebox plugin */
+  path.scalebox.metric {
+    stroke: none;
+    fill: $fc-bg-dark;
+  }
+  path.scalebox.imperial {
+    stroke: none;
+    fill: $fc-bg-light;
+  }
 }
 
 /* SVG defs (snippets) are in the shadow DOM */
@@ -150,4 +171,3 @@ path.gridline.imperial.sm {
     color: $oc-gray-6!important;
   }
 }
-
