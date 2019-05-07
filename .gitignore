@@ -1,5 +1,7 @@
-
 # See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Specifics
+packages/plugin-theme/src/bundle.css.js
 
 # dependencies
 node_modules
