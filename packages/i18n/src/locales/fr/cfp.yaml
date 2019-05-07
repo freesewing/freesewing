@@ -18,3 +18,6 @@ youCan: Vous pouvez
 enterMeasurements: Entrer les mesures à la main
 preloadMeasurements: Précharger un ensemble de mesures
 size: Taille
+noRequiredMeasurements: Ce patron n'a pas de mesures requises.
+howtoAddMeasurements: Pour exiger des mesures, ajoutez-les à la section <b>measurements</b> du fichier de configuration du patron.
+seeDocsAt: Documentation sur ce sujet est disponible à l'adresse

@@ -1,11 +1,10 @@
+ul.nav { padding-left: 0;}
 ul.nav.l1 { overflow-x: hidden;}
-ul.nav.l1,
 ul.nav.l2,
 ul.nav.l3,
 ul.nav.l4 {
   margin: 0;
   padding: 0;
-  @include title-font;
 }
 
 ul.nav li {list-style-type: none;}
@@ -15,21 +14,17 @@ ul.nav h2,
 ul.nav h3,
 ul.nav h4,
 ul.nav h5 {
-  font-weight: normal;
   display: block;
   margin: 0;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0.25rem 0.5rem 1rem;
 }
 ul.nav h3:hover,
 ul.nav h4:hover {
   cursor: pointer;
   background: $oc-gray-3;
 }
-ul.nav h2 { font-size: 1.2rem; margin-left: 5px;}
-ul.nav h4 { font-size: 1rem; }
-ul.nav h5 { font-size: 1rem; padding-left: 1.5rem; font-weight: bold;}
+ul.nav h5 { padding-left: 1.5rem; }
 ul.nav h3 {
-  font-size: 1.1rem;
   position: sticky;
   top: 0;
   background: $oc-gray-1;

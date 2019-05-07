@@ -18,3 +18,7 @@ youCan: Sie können
 enterMeasurements: Geben Sie die Maße von Hand ein
 preloadMeasurements: Laden Sie eine Reihe von Messungen vor
 size: Größe
+noRequiredMeasurements: Dieses Muster hat keine erforderlichen Messungen.
+howtoAddMeasurements: Um Messungen anzufordern, fügen Sie sie dem <b>measurements</b> der Konfigurationsdatei des Musters hinzu.
+seeDocsAt: Dokumentation zu diesem Thema finden Sie unter
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { storage } from "@freesewing/utils";
 import Button from "@material-ui/core/Button";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import FormFieldMeasurement from "../../.form/FormFieldMeasurement";
 import models from "@freesewing/models";
 
@@ -11,7 +11,8 @@ const Measurements = props => {
     container: {
       display: "flex",
       flexDirection: "row",
-      width: "100%"
+      width: "100%",
+      minHeight: "70vh"
     },
     chooser: {
       width: "100%",
@@ -27,6 +28,33 @@ const Measurements = props => {
     return props.measurements[m];
   };
 
+  if (props.required.length < 1)
+    return (
+      <div style={styles.container}>
+        <div style={styles.chooser}>
+          <h2>
+            <FormattedMessage id="app.requiredMeasurements" />
+          </h2>
+          <h3>
+            <FormattedMessage id="cfp.noRequiredMeasurements" />
+          </h3>
+          <p>
+            <FormattedHTMLMessage id="cfp.howtoAddMeasurements" />
+          </p>
+          <p>
+            <FormattedMessage id="cfp.seeDocsAt" />
+            &nbsp;
+            <a
+              href={
+                "https://" + props.language + "/.freesewing.dev/core/config"
+              }
+            >
+              {props.language}.freesewing.dev/core/config
+            </a>
+          </p>
+        </div>
+      </div>
+    );
   return (
     <div style={styles.container}>
       <div style={styles.chooser}>

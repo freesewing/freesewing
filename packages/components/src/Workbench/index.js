@@ -14,12 +14,13 @@ import LanguageIcon from "@material-ui/icons/Translate";
 import DarkModeIcon from "@material-ui/icons/Brightness3";
 import LanguageChooser from "./LanguageChooser";
 import DraftPattern from "./DraftPattern";
+import SamplePattern from "./SamplePattern";
 import Welcome from "./Welcome";
 import Footer from "../Footer";
 import Measurements from "./Measurements";
 
 const Workbench = props => {
-  const [display, setDisplay] = useState("welcome");
+  const [display, setDisplay] = useState(null);
   const [pattern, setPattern] = useState(false);
   const [theme, setTheme] = useState("light");
   const [measurements, setMeasurements] = useState(null);
@@ -27,6 +28,7 @@ const Workbench = props => {
     let m = getMeasurements();
     setMeasurements(m);
     props.updateGist(m, "settings", "measurements");
+    setDisplay(getDisplay());
   }, []);
   useEffect(() => {
     if (props.from) props.importGist(props.from);
@@ -36,6 +38,11 @@ const Workbench = props => {
       props.updateGist(props.language, "settings", "locale");
   }, [props.language]);
 
+  const getDisplay = () => storage.get(props.config.name + "-display");
+  const saveDisplay = d => {
+    setDisplay(d);
+    storage.set(props.config.name + "-display", d);
+  };
   const getMeasurements = () =>
     storage.get(props.config.name + "-measurements");
   const saveMeasurements = data => {
@@ -66,7 +73,7 @@ const Workbench = props => {
 
     return false;
   };
-  const showLanguageChooser = () => setDisplay("language");
+  const showLanguageChooser = () => saveDisplay("language");
   const updatePattern = p => {
     setPattern(p);
     store.set("pattern", p);
@@ -83,19 +90,19 @@ const Workbench = props => {
     left: {
       draft: {
         type: "button",
-        onClick: () => setDisplay("draft"),
+        onClick: () => saveDisplay("draft"),
         text: "cfp.draftYourPattern",
         active: display === "draft" ? true : false
       },
       sample: {
         type: "button",
-        onClick: () => setDisplay("sample"),
+        onClick: () => saveDisplay("sample"),
         text: "cfp.testYourPattern",
         active: display === "sample" ? true : false
       },
       measurements: {
         type: "button",
-        onClick: () => setDisplay("measurements"),
+        onClick: () => saveDisplay("measurements"),
         text: "app.measurements",
         active: display === "measurements" ? true : false
       }
@@ -108,7 +115,7 @@ const Workbench = props => {
       },
       language: {
         type: "button",
-        onClick: () => setDisplay("languages"),
+        onClick: () => saveDisplay("languages"),
         text: <LanguageIcon className="nav-icon" />,
         title: "Languages",
         active: display === "languages" ? true : false
@@ -128,12 +135,12 @@ const Workbench = props => {
       main = (
         <LanguageChooser
           setLanguage={props.setLanguage}
-          setDisplay={setDisplay}
+          setDisplay={saveDisplay}
         />
       );
       break;
     case "draft":
-      if (measurementsMissing()) setDisplay("measurements");
+      if (measurementsMissing()) saveDisplay("measurements");
       main = (
         <DraftPattern
           freesewing={props.freesewing}
@@ -147,8 +154,18 @@ const Workbench = props => {
       );
       break;
     case "sample":
-      if (measurementsMissing()) setDisplay("measurements");
-      main = <p>Sample: TODO</p>;
+      if (measurementsMissing()) saveDisplay("measurements");
+      main = (
+        <SamplePattern
+          freesewing={props.freesewing}
+          Pattern={props.Pattern}
+          config={props.config}
+          gist={props.gist}
+          updateGist={props.updateGist}
+          raiseEvent={raiseEvent}
+          units={props.units}
+        />
+      );
       break;
     case "measurements":
       main = (
@@ -158,11 +175,12 @@ const Workbench = props => {
           units={props.units}
           updateMeasurement={updateMeasurement}
           preloadMeasurements={preloadMeasurements}
+          language={props.language}
         />
       );
       break;
     default:
-      main = <Welcome language={props.language} setDisplay={setDisplay} />;
+      main = <Welcome language={props.language} setDisplay={saveDisplay} />;
   }
 
   const themes = { dark, light };
@@ -175,7 +193,7 @@ const Workbench = props => {
         }
       >
         {display !== "welcome" ? (
-          <Navbar navs={navs} home={() => setDisplay("welcome")} />
+          <Navbar navs={navs} home={() => saveDisplay("welcome")} />
         ) : null}
         {main}
         {display !== "welcome" ? <Footer language={props.language} /> : null}

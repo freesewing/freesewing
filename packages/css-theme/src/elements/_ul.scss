@@ -1,0 +1,24 @@
+ul.links {
+  padding-left: 1rem;
+  li {
+    list-style-type: none;
+  }
+  li:before {
+		content: "\00a0";
+		background: $oc-gray-5;
+		border-radius: 3.5px;
+		display: inline-block;
+		height: 7px;
+		width: 7px;
+		padding: 0;
+		margin: 0 0.5rem 0 0;
+    font-size: 9px;
+    transition: background 0.15s ease-in;
+  }
+	li.nodot:before {
+		content: none;
+	}
+  li:hover:before {
+		background: $fc-link-light;
+	}
+}

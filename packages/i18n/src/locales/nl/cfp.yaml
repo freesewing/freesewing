@@ -15,6 +15,9 @@ testYourPattern: Test je patroon
 renderInBrowser: Klik hieronder om uw patroon te renderen in de browser.
 weWillReRender: Telkens u wijzigingen aanbrengt renderen we opnieuw.
 youCan: Je kan
-enterMeasurements: Handmatig afmetingen invoeren
-preloadMeasurements: Een reeks afmetingen laden
+enterMeasurements: Handmatig lichaamsmaten invoeren
+preloadMeasurements: Een reeks lichaamsmaten laden
 size: Maat
+noRequiredMeasurements: Dit patroon vereist geen lichaamsmaten.
+howtoAddMeasurements: Om lichaamsmaten te vereisen, voegt u ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
+seeDocsAt: Documentatie over dit onderwerp is beschikbaar op
