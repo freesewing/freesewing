@@ -14,7 +14,6 @@
     "@freesewing/plugin-debug": "alpha",
     "@freesewing/plugin-designer": "alpha",
     "@freesewing/plugin-i18n": "alpha",
-    "@freesewing/plugin-react": "alpha",
     "@freesewing/plugin-svgattr": "alpha",
     "@freesewing/plugin-theme": "alpha",
     "@freesewing/plugin-validate": "alpha",
