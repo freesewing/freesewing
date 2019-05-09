@@ -1,109 +1,95 @@
-'use strict'
+"use strict";
 
-const handlebars = require('handlebars')
-const execa = require('execa')
-const fs = require('fs')
-const globby = require('globby')
-const mkdirp = require('make-dir')
-const ora = require('ora')
-const path = require('path')
-const pEachSeries = require('p-each-series')
+const handlebars = require("handlebars");
+const execa = require("execa");
+const fs = require("fs");
+const globby = require("globby");
+const mkdirp = require("make-dir");
+const ora = require("ora");
+const path = require("path");
+const pEachSeries = require("p-each-series");
 
-const pkg = require('../package')
+const pkg = require("../package");
 
-const templateBlacklist = new Set([
-  'example/public/favicon.ico'
-])
+const templateBlacklist = new Set(["example/public/favicon.ico"]);
 
-module.exports = async (info) => {
-  const {
-    manager,
-    template,
-    name,
-    templatePath,
-    git
-  } = info
+module.exports = async info => {
+  const { manager, template, name, templatePath, git } = info;
 
   // handle scoped package names
-  const parts = name.split('/')
-  info.shortName = parts[parts.length - 1]
+  const parts = name.split("/");
+  info.shortName = parts[parts.length - 1];
 
-  const dest = path.join(process.cwd(), info.shortName)
-  info.dest = dest
-  await mkdirp(dest)
+  const dest = path.join(process.cwd(), info.shortName);
+  info.dest = dest;
+  await mkdirp(dest);
 
-  const source = template === 'custom'
-    ? path.join(process.cwd(), templatePath)
-    : path.join(__dirname, '..', 'template', template)
+  const source =
+    template === "custom"
+      ? path.join(process.cwd(), templatePath)
+      : path.join(__dirname, "..", "template", template);
   const files = await globby(source, {
     dot: true
-  })
+  });
 
   {
-    const promise = pEachSeries(files, async (file) => {
+    const promise = pEachSeries(files, async file => {
       return module.exports.copyTemplateFile({
         file,
         source,
         dest,
         info
-      })
-    })
-    ora.promise(promise, `Copying ${template} template to ${dest}`)
-    await promise
+      });
+    });
+    ora.promise(promise, `Copying ${template} template to ${dest}`);
+    await promise;
   }
 
   {
-    const promise = module.exports.initPackageManager({ dest, info })
-    ora.promise(promise, `Running ${manager} install and ${manager} link`)
-    await promise
+    const promise = module.exports.initPackageManager({ dest, info });
+    ora.promise(promise, `Running ${manager} install and ${manager} link`);
+    await promise;
   }
 
   if (git) {
-    const promise = module.exports.initGitRepo({ dest })
-    ora.promise(promise, 'Initializing git repo')
-    await promise
+    const promise = module.exports.initGitRepo({ dest });
+    ora.promise(promise, "Initializing git repo");
+    await promise;
   }
 
-  return dest
-}
+  return dest;
+};
 
-module.exports.copyTemplateFile = async (opts) => {
-  const {
-    file,
-    source,
-    dest,
-    info
-  } = opts
+module.exports.copyTemplateFile = async opts => {
+  const { file, source, dest, info } = opts;
 
-  const fileRelativePath = path.relative(source, file)
-  const destFilePath = path.join(dest, fileRelativePath)
-  const destFileDir = path.parse(destFilePath).dir
+  const fileRelativePath = path.relative(source, file);
+  const destFilePath = path.join(dest, fileRelativePath);
+  const destFileDir = path.parse(destFilePath).dir;
 
-  await mkdirp(destFileDir)
+  await mkdirp(destFileDir);
 
   if (templateBlacklist.has(fileRelativePath)) {
-    const content = fs.readFileSync(file)
-    fs.writeFileSync(destFilePath, content)
+    const content = fs.readFileSync(file);
+    fs.writeFileSync(destFilePath, content);
   } else {
-    const template = handlebars.compile(fs.readFileSync(file, 'utf8'))
+    console.log("loading", file);
+    const template = handlebars.compile(fs.readFileSync(file, "utf8"));
     const content = template({
       ...info,
-      yarn: (info.manager === 'yarn')
-    })
+      yarn: info.manager === "yarn"
+    });
 
-    fs.writeFileSync(destFilePath, content, 'utf8')
+    fs.writeFileSync(destFilePath, content, "utf8");
   }
 
-  return fileRelativePath
-}
+  return fileRelativePath;
+};
 
-module.exports.initPackageManager = async (opts) => {
-  const {
-    dest,
-    info
-  } = opts
+module.exports.initPackageManager = async opts => {
+  const { dest, info } = opts;
 
-  const example = path.join(dest, 'example')
+  const example = path.join(dest, "example");
 
   const commands = [
     {
@@ -118,20 +104,20 @@ module.exports.initPackageManager = async (opts) => {
       cmd: `${info.manager} install`,
       cwd: example
     }
-  ]
+  ];
 
   return pEachSeries(commands, async ({ cmd, cwd }) => {
-    return execa.shell(cmd, { cwd })
-  })
-}
+    return execa.shell(cmd, { cwd });
+  });
+};
 
-module.exports.initGitRepo = async (opts) => {
-  const {
-    dest
-  } = opts
+module.exports.initGitRepo = async opts => {
+  const { dest } = opts;
 
-  const gitIgnorePath = path.join(dest, '.gitignore')
-  fs.writeFileSync(gitIgnorePath, `
+  const gitIgnorePath = path.join(dest, ".gitignore");
+  fs.writeFileSync(
+    gitIgnorePath,
+    `
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -153,8 +139,12 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-`, 'utf8')
+`,
+    "utf8"
+  );
 
-  const cmd = `git init && git add . && git commit -m ":tada: Initialized ${pkg.name}@${pkg.version} with create-freesewing-pattern"`
-  return execa.shell(cmd, { cwd: dest })
-}
+  const cmd = `git init && git add . && git commit -m ":tada: Initialized ${
+    pkg.name
+  }@${pkg.version} with create-freesewing-pattern"`;
+  return execa.shell(cmd, { cwd: dest });
+};
