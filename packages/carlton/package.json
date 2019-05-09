@@ -33,10 +33,10 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/bent": "^2.0.0-alpha.19",
-    "@freesewing/core": "^2.0.0-alpha.19",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.19",
-    "@freesewing/plugin-buttons": "^2.0.0-alpha.19"
+    "@freesewing/core": "^2.0.0-alpha.20",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.20",
+    "@freesewing/bent": "^2.0.0-alpha.20",
+    "@freesewing/plugin-buttons": "^2.0.0-alpha.20"
   },
   "files": [
     "dist/*",
