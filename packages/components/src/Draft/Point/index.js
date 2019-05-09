@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import DesignPoint from "../DesignPoint";
 import Text from "../Text";
 import Circle from "../Circle";
 
 const Point = props => {
   const output = [];
+  if (props.design)
+    output.push(
+      <DesignPoint
+        {...props}
+        key={"dp-" + props.name}
+        className="design point"
+      />
+    );
   if (props.point.attributes.get("data-text"))
     output.push(<Text {...props} key={"point-" + props.name} />);
   if (props.point.attributes.get("data-circle"))

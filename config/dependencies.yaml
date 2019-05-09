@@ -40,6 +40,7 @@ components:
     "@material-ui/core": "^3.9.3"
     "@material-ui/icons": "^3.0.2"
     "@material-ui/lab": "^3.0.0-alpha.30"
+    "prismjs": "1.16.0"
 core:
   _:
     "bezier-js": "^2.2.13"

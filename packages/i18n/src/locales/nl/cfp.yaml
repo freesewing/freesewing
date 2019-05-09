@@ -21,3 +21,8 @@ size: Maat
 noRequiredMeasurements: Dit patroon vereist geen lichaamsmaten.
 howtoAddMeasurements: Om lichaamsmaten te vereisen, voegt u ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
 seeDocsAt: Documentatie over dit onderwerp is beschikbaar op
+designModeIsOn: Ontwerpmodus is ingeschakeld
+designModeIsOff: Ontwerpmodus is uitgeschakeld
+turnOn: Inschakelen
+turnOff: Uitschakelen
+

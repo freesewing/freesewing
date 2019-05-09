@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import TextOnPath from "../TextOnPath";
+import DesignPath from "../DesignPath";
 import { getProps } from "../utils";
 
 const Path = props => {
   if (!props.path.render) return null;
   const output = [];
   const pathId = "path-" + props.part + "-" + props.name;
+  if (props.design)
+    output.push(<DesignPath {...props} key={"dpa-" + props.name} />);
   output.push(
     <path
       id={pathId}

@@ -17,6 +17,7 @@ const Draft = props => {
         units={props.settings.units}
         parts={props.parts}
         paperless={props.settings.paperless}
+        design={props.design}
       />
       <g>
         {Object.keys(props.parts).map(name => (
@@ -27,6 +28,9 @@ const Draft = props => {
             units={props.settings.units}
             key={name}
             name={name}
+            focus={props.focus}
+            design={props.design}
+            raiseEvent={props.raiseEvent}
           />
         ))}
       </g>
@@ -41,7 +45,8 @@ Draft.propTypes = {
 };
 
 Draft.defaultProps = {
-  design: false
+  design: false,
+  focus: false
 };
 
 export default Draft;

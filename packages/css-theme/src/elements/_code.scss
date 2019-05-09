@@ -1,0 +1,54 @@
+.theme-wrapper.light :not(pre) > code[class*="language-"] {
+  padding: 0.125rem 0.5rem;
+  background: $oc-gray-6;
+  border: 1px $oc-gray-5 solid;
+  color: $oc-gray-9;
+}
+.theme-wrapper.dark :not(pre) > code[class*="language-"] {
+  padding: 0.125rem 0.5rem;
+  background: $oc-gray-6;
+  border: 1px $oc-gray-5 solid;
+  color: $oc-gray-9;
+}
+
+div.gatsby-highlight {
+  position: relative;
+}
+div.gatsby-highlight pre.language-js {
+  padding-top: 1rem;
+}
+
+pre.language-js:before,
+pre.language-json:before,
+pre.language-svg:before,
+pre.language-bash:before {
+  border-top: 2px dashed $oc-gray-9;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: black;
+  padding: 1px 4px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-weight: bold;
+  text-shadow: none;
+}
+pre.language-js:before {
+  content: "js";
+  background: rgba(255, 255, 0, 0.9);
+}
+pre.language-json:before {
+  content: "json";
+  background: rgba(255, 255, 0, 0.9);
+}
+pre.language-bash:before {
+  content: "bash";
+  background: rgba(29, 227, 0, 0.9);
+}
+pre.language-svg:before {
+  content: "svg";
+  background: rgba(129, 197, 255, 0.9);
+}
+
+

@@ -82,9 +82,7 @@ const Workbench = props => {
     if (theme === "light") setTheme("dark");
     else setTheme("light");
   };
-  const raiseEvent = (type = null, data = null) => {
-    console.log("FIXME: Event raised", type, data);
-  };
+  const raiseEvent = (type = null, data = null) => {};
 
   const navs = {
     left: {

@@ -4,29 +4,30 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8",
-    "react-dom": "^16.8",
-    "react-scripts": "^3.0.0",
-    "@freesewing/core": "alpha",
-    "@freesewing/plugin-debug": "alpha",
-    "@freesewing/plugin-theme": "alpha",
-    "@freesewing/plugin-designer": "alpha",
-    "@freesewing/plugin-svgattr": "alpha",
-    "@freesewing/plugin-i18n": "alpha",
-    "@freesewing/plugin-validate": "alpha",
-    "@freesewing/plugin-react": "alpha",
-    "@freesewing/i18n": "alpha",
-    "@freesewing/utils": "alpha",
-    "@freesewing/models": "alpha",
     "@freesewing/components": "alpha",
+    "@freesewing/core": "alpha",
     "@freesewing/css-theme": "alpha",
+    "@freesewing/i18n": "alpha",
+    "@freesewing/models": "alpha",
     "@freesewing/mui-theme": "alpha",
     "@freesewing/pattern-info": "alpha",
+    "@freesewing/plugin-debug": "alpha",
+    "@freesewing/plugin-designer": "alpha",
+    "@freesewing/plugin-i18n": "alpha",
+    "@freesewing/plugin-react": "alpha",
+    "@freesewing/plugin-svgattr": "alpha",
+    "@freesewing/plugin-theme": "alpha",
+    "@freesewing/plugin-validate": "alpha",
+    "@freesewing/utils": "alpha",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^3.0.0-alpha.30",
-    "typeface-roboto-condensed": "latest",
-    "pattern": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+    "pattern": "{{#if yarn}}link:..{{else}}file:..{{/if}}",
+    "prismjs": "1.16.0",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-scripts": "^3.0.0",
+    "typeface-roboto-condensed": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +43,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "1.0.2"
+  }
 }
