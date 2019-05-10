@@ -46,9 +46,10 @@ const DraftSettingSa = props => {
     // previous one instead
     if (!isNaN(newValue)) {
       setSaValue(newValue);
+      setCustomValue(newValue);
       if (evt.type !== "mousemove") props.updateValue("sa", newValue);
     } else {
-      if (evt.type !== "mousemove") props.updateValue("sa", newValue);
+      props.updateValue("sa", customValue);
     }
   };
 
