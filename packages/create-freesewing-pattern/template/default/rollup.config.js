@@ -37,6 +37,11 @@ export default {
     }),
     resolve({ browser: true }),
     json(),
-    commonjs()
+    commonjs(),
+    minify({
+      comments: false,
+      sourceMap: true,
+      banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+    })
   ]
 };

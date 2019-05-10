@@ -1,6 +1,13 @@
 export default function(part) {
-  // prettier-ignore
-  let {macro, sa, points, paths, Point, complete, paperless } = part.shorthand();
+  let {
+    macro,
+    sa,
+    points,
+    paths,
+    Point,
+    complete,
+    paperless
+  } = part.shorthand();
 
   delete paths.outline;
   delete paths.panel1;
@@ -10,7 +17,7 @@ export default function(part) {
   delete paths.panel5;
 
   // Complete pattern?
-  if(complete) {
+  if (complete) {
     points.grainlineTop = new Point(
       points.waistGap5Right.shiftFractionTowards(points.waistCB, 0.5).x,
       points.underbustGap5Right.y
@@ -19,59 +26,59 @@ export default function(part) {
       points.grainlineTop.x,
       points.hipsGap5.y
     );
-    macro('grainline', {
+    macro("grainline", {
       from: points.grainlineBottom,
       to: points.grainlineTop
     });
-    points.title = points.grainlineTop.shift(-90, points.grainlineTop.dy(points.waistGap5Right)/2);
-    macro('title', {
+    points.title = points.grainlineTop.shift(
+      -90,
+      points.grainlineTop.dy(points.waistGap5Right) / 2
+    );
+    macro("title", {
       nr: 6,
-      title: '',
+      title: "",
       at: points.title
     });
-    points.scalebox = new Point(
-      points.grainlineTop.x,
-      points.hipsGap5.y - 55
-    );
-    macro('scalebox', {
+    points.scalebox = new Point(points.grainlineTop.x, points.hipsGap5.y - 55);
+    macro("scalebox", {
       at: points.scalebox,
       rotate: 90
     });
-    if(sa) paths.sa = paths.panel6.offset(sa).attr('class', 'fabric sa');
+    if (sa) paths.sa = paths.panel6.offset(sa).attr("class", "fabric sa");
   }
 
   // Paperless?
   if (paperless) {
-    macro('hd', {
+    macro("hd", {
       from: points.hipsGap5,
       to: points.backDrop,
       y: points.backDrop.y + sa + 15
     });
-    macro('ld', {
+    macro("ld", {
       from: points.waistGap5Right,
       to: points.waistCB
     });
-    macro('hd', {
+    macro("hd", {
       from: points.underbustGap5Right,
       to: points.backRise,
       y: points.backRise.y - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.hipsGap5,
       to: points.waistGap5Right,
       x: points.hipsGap5.x - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.waistGap5Right,
       to: points.underbustGap5Right,
       x: points.hipsGap5.x - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.backDrop,
       to: points.waistCB,
       x: points.backDrop.x + sa + 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.waistCB,
       to: points.backRise,
       x: points.backDrop.x + sa + 15
@@ -79,4 +86,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

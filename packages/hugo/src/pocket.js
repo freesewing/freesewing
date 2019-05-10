@@ -4,8 +4,18 @@ export default function(part) {
   part.paths = {};
   part.snippets = {};
 
-  // prettier-ignore
-  let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, debug} = part.shorthand();
+  let {
+    utils,
+    store,
+    sa,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    debug
+  } = part.shorthand();
 
   paths.seam = pocket
     .line(points.cfRibbing)
@@ -38,10 +48,7 @@ export default function(part) {
       from: points.cfRibbing.shift(0, 15),
       to: points.pocketCf.shift(0, 15)
     });
-    points.title = points.cfRibbing.shiftFractionTowards(
-      points.pocketTop,
-      0.5
-    );
+    points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5);
     macro("title", { at: points.title, nr: 4, title: "pocket" });
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
@@ -73,4 +80,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

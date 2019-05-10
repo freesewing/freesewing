@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { defaultGist } from "@freesewing/utils";
-import Draft from "../../Draft";
 import SampleConfigurator from "../../SampleConfigurator";
 import svgattrPlugin from "@freesewing/plugin-svgattr";
-import { strings } from "@freesewing/i18n";
 import { FormattedMessage } from "react-intl";
 
 const SamplePattern = props => {

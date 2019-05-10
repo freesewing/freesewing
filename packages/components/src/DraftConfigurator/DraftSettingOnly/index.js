@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import FormFieldChecks from "../../.form/FormFieldChecks";
 import FormFieldList from "../../.form/FormFieldList";
-import FormFieldSlider from "../../.form/FormFieldSlider";
-import { formatMm, roundMm, defaultSa, sliderStep } from "@freesewing/utils";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingOnly = props => {

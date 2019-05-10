@@ -55,7 +55,7 @@ export const constructMainDart = part => {
 };
 
 export const shapeSideSeam = part => {
-  let { measurements, options, points, Point, store } = part.shorthand();
+  let { points, Point, store } = part.shorthand();
   let wr12 = store.get("wr12");
   let hr12 = store.get("hr12");
 
@@ -68,7 +68,7 @@ export const shapeSideSeam = part => {
 };
 
 export const dartPath = part => {
-  let { paths, Path, points } = part.shorthand();
+  let { Path, points } = part.shorthand();
   return new Path()
     .move(points.dartStart)
     .line(points.dartHipLeft)

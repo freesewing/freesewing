@@ -2,16 +2,9 @@ import { draftRibbing } from "./shared";
 
 export default part => {
   let {
-    store,
     measurements,
-    utils,
     sa,
-    Point,
     points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,
@@ -34,6 +27,7 @@ export default part => {
       title: "waistband"
     });
     if (sa) {
+      // FIXME: Don't we need SA here?
     }
   }
 

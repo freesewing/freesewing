@@ -1,6 +1,13 @@
 export default part => {
-  // prettier-ignore
-  let { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
+  let {
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    utils
+  } = part.shorthand();
 
   points.from1 = new Point(10, 10);
   points.to1 = new Point(90, 60);

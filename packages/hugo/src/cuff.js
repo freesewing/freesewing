@@ -1,6 +1,16 @@
 export default function(part) {
-  // prettier-ignore
-  let {measurements, options, sa, Point, points, Path, paths, complete, paperless, macro, units} = part.shorthand();
+  let {
+    measurements,
+    options,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro
+  } = part.shorthand();
 
   let width =
     (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *

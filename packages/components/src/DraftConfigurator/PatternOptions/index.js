@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Pct from "../PatternOptionPercentage";
-import Deg from "../PatternOptionDegree";
-import Mm from "../PatternOptionMillimeter";
-import Bool from "../PatternOptionBool";
 import OptionGroup from "../OptionGroup";
-import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 

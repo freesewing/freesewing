@@ -4,14 +4,11 @@ export default function(part) {
   let {
     store,
     macro,
-    Point,
     Path,
     points,
     paths,
     complete,
     paperless,
-    snippets,
-    Snippet,
     sa,
     options,
     measurements

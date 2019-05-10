@@ -19,19 +19,6 @@ const PatternOptionList = props => {
 
   const toggleExpanded = () => setExpanded(!expanded);
 
-  const styles = {
-    container: {
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center"
-    },
-    left: {
-      flexGrow: 1,
-      margin: "0 0.5rem"
-    },
-    right: { margin: "0 0.5rem" }
-  };
-
   // Add translations
   let stringKey = `options.${props.pattern}.${props.name}.options.`;
   let list = {};

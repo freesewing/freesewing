@@ -8,11 +8,8 @@ export default function(part) {
     paths,
     complete,
     paperless,
-    snippets,
-    Snippet,
     sa,
     options,
-    measurements,
     utils
   } = part.shorthand();
 

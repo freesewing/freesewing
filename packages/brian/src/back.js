@@ -1,8 +1,18 @@
 import * as shared from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {store, sa, points, Path, paths, Snippet, snippets, complete, paperless, macro} = part.shorthand();
+  let {
+    store,
+    sa,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro
+  } = part.shorthand();
 
   // Seamline
   paths.saBase = shared.saBase("back", points, Path);

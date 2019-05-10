@@ -2,22 +2,15 @@ import { addButtonHoles } from "./shared";
 
 export default part => {
   let {
-    store,
-    measurements,
-    utils,
     sa,
-    Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,
     options
   } = part.shorthand();
-  let fold = options.buttonholePlacketFoldWidth;
   let width = options.buttonholePlacketWidth;
   points.placketCfNeck = points.cfNeck;
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2);
@@ -96,8 +89,6 @@ export default part => {
       to: points.neck,
       y: points.neck.y - 15 - sa
     });
-    let len =
-      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
     points.button0 = points.placketTopEdge;
     let j;
     for (let i = 0; i < options.buttons; i++) {

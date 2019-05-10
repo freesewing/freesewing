@@ -1,8 +1,6 @@
 export default function(part) {
   let {
-    store,
     macro,
-    Point,
     Path,
     points,
     paths,
@@ -11,8 +9,7 @@ export default function(part) {
     snippets,
     Snippet,
     sa,
-    options,
-    measurements
+    options
   } = part.shorthand();
 
   if (!options.pocket) return part;

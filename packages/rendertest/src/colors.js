@@ -1,5 +1,5 @@
 export default function(part) {
-  let { options, Point, Path, points, paths, store, macro } = part.shorthand();
+  let { Point, Path, points, paths, store } = part.shorthand();
 
   let y = store.get("y");
   let w = store.get("w");
@@ -17,7 +17,7 @@ export default function(part) {
   let sizes = ["xs", "sm", "", "l", "xl"];
   let utility = ["dotted", "dashed", "lashed", "sa", "help", "hidden"];
 
-  for (let i in colors) {
+  for (let i = 0; i < utility.length; i++) {
     y += 15;
     points["l" + i] = new Point(0, y);
     points["r" + i] = new Point(w, y);
@@ -26,7 +26,7 @@ export default function(part) {
       .line(points["r" + i])
       .attr("class", colors[i])
       .attr("data-text", colors[i]);
-    for (let j in sizes) {
+    for (let j = 0; j < sizes.length; j++) {
       y += 10;
       points["sl" + i + j] = new Point(0, y);
       points["sr" + i + j] = new Point(w, y);
@@ -41,7 +41,7 @@ export default function(part) {
         )
         .attr("data-text-class", "center");
     }
-    for (let j in utility) {
+    for (let j = 0; j < utility.length; j++) {
       y += 10;
       points["ul" + i + j] = new Point(0, y);
       points["ur" + i + j] = new Point(w, y);

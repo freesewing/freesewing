@@ -2,15 +2,11 @@ export default function(part) {
   let {
     paperless,
     sa,
-    store,
     complete,
     points,
-    options,
     macro,
-    Point,
     paths,
-    Path,
-    measurements
+    Path
   } = part.shorthand();
 
   paths.hint = new Path()

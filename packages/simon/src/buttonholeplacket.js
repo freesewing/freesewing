@@ -2,8 +2,6 @@ import { addButtonHoles } from "./shared";
 
 export default part => {
   let {
-    store,
-    measurements,
     utils,
     sa,
     Point,
@@ -200,8 +198,6 @@ export default part => {
         y: points.placketBottomEdge.y + offset + 3 * sa
       });
     }
-    let len =
-      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
     points.button0 = points.placketTopEdge;
     let j;
     for (let i = 0; i < options.buttons; i++) {

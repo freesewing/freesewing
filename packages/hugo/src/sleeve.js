@@ -1,6 +1,21 @@
 export default function(part) {
-  // prettier-ignore
-  let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, debug} = part.shorthand();
+  let {
+    utils,
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    measurements,
+    complete,
+    paperless,
+    macro,
+    debug
+  } = part.shorthand();
 
   // Top of raglan sleeve
   points.raglanTop = new Point(

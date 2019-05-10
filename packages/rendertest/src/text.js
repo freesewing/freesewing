@@ -27,10 +27,10 @@ export default function(part) {
     .line(points.trr)
     .attr("data-text", "text.right")
     .attr("data-text-class", "right");
-  for (let i in text) {
+  for (let i = 0; i < text.length; i++) {
     y += 15;
     points["t" + i] = new Point(0, y)
-      .attr("data-text", "text" + text[i] === "" ? "" : ".text-" + text[i])
+      .attr("data-text", "text" + (text[i] === "" ? "" : ".text-" + text[i]))
       .attr("data-text-class", "text-" + text[i]);
   }
   store.set("y", y);

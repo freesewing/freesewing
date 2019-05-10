@@ -1,7 +1,5 @@
 "use strict";
 
-const path = require("path");
-const fs = require("fs");
 const inquirer = require("inquirer");
 const validateNpmName = require("validate-npm-package-name");
 const languages = require("@freesewing/i18n").languages;

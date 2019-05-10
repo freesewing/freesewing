@@ -35,7 +35,7 @@ export default {
         .clone()
         .attr("data-text", so.nr, overwrite)
         .attr("data-text-class", "title-nr note fill-note")
-        .attr("data-text-transform", transform(so.at, so.at));
+        .attr("data-text-transform", transform(so.at));
       let shift = 10;
       if (so.title) {
         this.points[`_${prefix}_titleName`] = so.at

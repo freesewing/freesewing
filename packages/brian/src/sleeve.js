@@ -1,6 +1,21 @@
 export default part => {
-  // prettier-ignore
-  let {debug, store, units, sa, measurements, options, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro} = part.shorthand();
+  let {
+    debug,
+    store,
+    units,
+    sa,
+    measurements,
+    options,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro
+  } = part.shorthand();
 
   // Wrist
   let top = paths.sleevecap.bbox().topLeft.y;

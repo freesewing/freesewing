@@ -6,8 +6,6 @@ export default function(part) {
     paths,
     store,
     options,
-    measurements,
-    utils,
     complete,
     sa,
     paperless,

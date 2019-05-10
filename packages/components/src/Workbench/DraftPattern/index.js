@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { defaultGist } from "@freesewing/utils";
 import Draft from "../../Draft";
 import Design from "../Design";
 import DraftConfigurator from "../../DraftConfigurator";
-import { strings } from "@freesewing/i18n";
 import { FormattedMessage } from "react-intl";
 import Prism from "prismjs";
 

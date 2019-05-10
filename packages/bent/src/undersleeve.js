@@ -1,13 +1,21 @@
 import dimensions from "./shared";
 
 export default function(part) {
-  let { macro, Point, Path, points, paths, complete, paperless, snippets, Snippet, sa } = part.shorthand();
+  let {
+    macro,
+    Path,
+    points,
+    paths,
+    complete,
+    paperless,
+    snippets,
+    Snippet,
+    sa
+  } = part.shorthand();
 
   // Extract seamline from sleeve
   delete paths.ts;
-  paths.seam = paths.us
-    .clone()
-    .attr("class", "fabric", true);
+  paths.seam = paths.us.clone().attr("class", "fabric", true);
   delete paths.us;
 
   // Complete?
@@ -25,15 +33,15 @@ export default function(part) {
       paths.sa.ops.splice(-2);
       paths.sa = paths.sa
         .offset(sa)
-        .join(new Path()
-          .move(points.usWristLeft)
-          .line(points.usWristRight)
-          .offset(sa * 3)
+        .join(
+          new Path()
+            .move(points.usWristLeft)
+            .line(points.usWristRight)
+            .offset(sa * 3)
         )
         .close()
         .attr("class", "fabric sa");
     }
-
   }
 
   // Paperless?

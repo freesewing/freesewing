@@ -1,4 +1,3 @@
-import script from "./lib/script";
 import snippets from "./lib/snippets";
 import { version, name } from "../package.json";
 import decorate from "./decorate";
@@ -14,8 +13,7 @@ export default {
       //  raiseEvent.bind(svg)('plugin-designer-pointHover', evt);
       //}
       if (svg.attributes.get("freesewing:plugin-designer") === false) {
-        // Add script and snippets
-        //svg.script += script;
+        // Add snippets
         svg.defs += snippets;
 
         // Add SVG attributes

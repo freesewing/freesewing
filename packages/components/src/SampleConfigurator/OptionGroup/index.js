@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
 
@@ -8,10 +7,8 @@ const OptionGroup = props => {
   return (
     <React.Fragment>
       {props.options.map(name => {
-        let key = name;
         let output = [];
         if (typeof name === "object") {
-          key = Object.keys(name).pop();
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(

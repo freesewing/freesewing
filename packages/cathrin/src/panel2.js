@@ -1,6 +1,13 @@
 export default function(part) {
-  // prettier-ignore
-  let {macro, sa, points, paths, Point, complete, paperless } = part.shorthand();
+  let {
+    macro,
+    sa,
+    points,
+    paths,
+    Point,
+    complete,
+    paperless
+  } = part.shorthand();
 
   delete paths.outline;
   delete paths.panel1;
@@ -10,7 +17,7 @@ export default function(part) {
   delete paths.panel6;
 
   // Complete pattern?
-  if(complete) {
+  if (complete) {
     points.grainlineTop = new Point(
       points.waistGap1Right.shiftFractionTowards(points.waistGap2Left, 0.5).x,
       points.underbustGap1Right.y
@@ -19,51 +26,54 @@ export default function(part) {
       points.grainlineTop.x,
       points.hipsGap2.y
     );
-    macro('grainline', {
+    macro("grainline", {
       from: points.grainlineBottom,
       to: points.grainlineTop
     });
-    points.title = points.grainlineTop.shift(-90, points.grainlineTop.dy(points.waistGap2Left)/2);
-    macro('title', {
+    points.title = points.grainlineTop.shift(
+      -90,
+      points.grainlineTop.dy(points.waistGap2Left) / 2
+    );
+    macro("title", {
       nr: 2,
-      title: '',
+      title: "",
       at: points.title
     });
-    if(sa) paths.sa = paths.panel2.offset(sa).attr('class', 'fabric sa');
+    if (sa) paths.sa = paths.panel2.offset(sa).attr("class", "fabric sa");
   }
 
   // Paperless?
   if (paperless) {
-    macro('hd', {
+    macro("hd", {
       from: points.hipsGap1,
       to: points.hipsGap2,
       y: points.hipsGap1.y + sa + 15
     });
-    macro('ld', {
+    macro("ld", {
       from: points.waistGap1Right,
       to: points.waistGap2Left
     });
-    macro('hd', {
+    macro("hd", {
       from: points.underbustGap1Right,
       to: points.underbustGap2Left,
       y: points.underbustGap1Right.y - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.hipsGap1,
       to: points.waistGap1Right,
       x: points.hipsGap1.x - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.waistGap1Right,
       to: points.underbustGap1Right,
       x: points.hipsGap1.x - sa - 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.hipsGap2,
       to: points.waistGap1Right,
       x: points.hipsGap2.x + sa + 15
     });
-    macro('vd', {
+    macro("vd", {
       from: points.waistGap1Right,
       to: points.underbustGap2Left,
       x: points.hipsGap2.x + sa + 15
@@ -71,4 +81,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

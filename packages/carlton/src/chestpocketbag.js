@@ -1,23 +1,37 @@
 export default function(part) {
-  let { units, paperless, sa, store, complete, points, options, macro, Point, paths, Path } = part.shorthand();
+  let {
+    units,
+    paperless,
+    sa,
+    store,
+    complete,
+    points,
+    macro,
+    Point,
+    paths,
+    Path
+  } = part.shorthand();
 
   points.topLeft = new Point(0, 0);
   points.bottomRight = new Point(
     store.get("chestPocketHeight"),
     store.get("chestPocketBagDepth") / 2
   );
-  points.bottomLeft = new Point(
-    points.topLeft.x,
-    points.bottomRight.y
+  points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y);
+  points.topRight = new Point(points.bottomRight.x, points.topLeft.y);
+  points.startLeft = points.topLeft.shiftFractionTowards(
+    points.bottomLeft,
+    0.33
   );
-  points.topRight = new Point(
-    points.bottomRight.x,
-    points.topLeft.y
-  );
-  points.startLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.33);
   points.endLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.66);
-  points.startRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.33);
-  points.endRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.66);
+  points.startRight = points.topRight.shiftFractionTowards(
+    points.bottomRight,
+    0.33
+  );
+  points.endRight = points.topRight.shiftFractionTowards(
+    points.bottomRight,
+    0.66
+  );
 
   paths.seam = new Path()
     .move(points.startRight)
@@ -57,7 +71,6 @@ export default function(part) {
       from: points.bottomRight.shift(180, 15),
       to: points.topRight.shift(180, 15),
       text: units(store.get("chestPocketBagDepth") * 2)
-
     });
 
     if (paperless) {

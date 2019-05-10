@@ -1,8 +1,6 @@
 export default part => {
   let {
-    store,
     measurements,
-    utils,
     sa,
     Point,
     points,
@@ -23,7 +21,6 @@ export default part => {
     let half = length / 2;
     let buttonSideExtra = options.buttonPlacketWidth / 2;
     let buttonholeSideExtra = options.buttonholePlacketWidth / 2;
-    let extra = buttonSideExtra + buttonholeSideExtra;
     let bend = options.collarStandBend * -1;
     let curve = options.collarStandCurve - options.collarStandBend;
     let hinge = 90 + (bend + curve) / 2;

@@ -1,8 +1,21 @@
 import * as shared from "./shared";
 
 export default part => {
-  // prettier-ignore
-  let {store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro} = part.shorthand();
+  let {
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    measurements,
+    complete,
+    paperless,
+    macro
+  } = part.shorthand();
 
   // Cut arm a bit deeper at the front
   let deeper = measurements.chestCircumference * options.frontArmholeDeeper;

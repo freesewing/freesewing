@@ -36,19 +36,6 @@ const PatternOptionMillimeter = props => {
 
   const toggleExpanded = () => setExpanded(!expanded);
 
-  const styles = {
-    container: {
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center"
-    },
-    left: {
-      flexGrow: 1,
-      margin: "0 0.5rem"
-    },
-    right: { margin: "0 0.5rem" }
-  };
-
   let option = (
     <FormFieldSlider
       name={props.name}

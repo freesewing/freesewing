@@ -14,8 +14,17 @@ function sleevecapAdjust(store) {
 }
 
 function draftSleevecap(part, run) {
-  // prettier-ignore
-  let {debug, units, store, measurements, options, Point, points, Path, paths} = part.shorthand();
+  let {
+    debug,
+    units,
+    store,
+    measurements,
+    options,
+    Point,
+    points,
+    Path,
+    paths
+  } = part.shorthand();
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0);
   points.centerCap = points.centerBiceps.shift(
@@ -156,8 +165,7 @@ function draftSleevecap(part, run) {
 }
 
 export default part => {
-  // prettier-ignore
-  let {debug, store, units, options, Point, points, paths } = part.shorthand();
+  let { debug, store, units, options, Point, points, paths } = part.shorthand();
 
   store.set("sleeveFactor", 1);
   let run = 0;

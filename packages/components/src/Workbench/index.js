@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import withGist from "../withGist";
-import { FormattedMessage, IntlProvider } from "react-intl";
-import Button from "@material-ui/core/Button";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { strings } from "@freesewing/i18n";
 import Navbar from "../Navbar";
 import { defaultGist, storage } from "@freesewing/utils";
 import { dark, light } from "@freesewing/mui-theme";
-import Logo from "../Logo";
 import withLanguage from "../withLanguage";
 import LanguageIcon from "@material-ui/icons/Translate";
 import DarkModeIcon from "@material-ui/icons/Brightness3";
@@ -73,11 +69,6 @@ const Workbench = props => {
     }
 
     return false;
-  };
-  const showLanguageChooser = () => saveDisplay("language");
-  const updatePattern = p => {
-    setPattern(p);
-    store.set("pattern", p);
   };
   const toggleDarkMode = () => {
     if (theme === "light") setTheme("dark");

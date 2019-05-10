@@ -1,16 +1,5 @@
 export const sharedDimensions = function(part, s) {
-  let {
-    macro,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa
-  } = part.shorthand();
+  let { macro, Point, points, sa } = part.shorthand();
 
   if (s === "front") {
     points.cHem = points.cfHem;

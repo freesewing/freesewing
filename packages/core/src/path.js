@@ -666,7 +666,7 @@ Path.prototype.split = function(point) {
   let divided = this.divide();
   let firstHalf = false;
   let secondHalf = false;
-  for (let pi in divided) {
+  for (let pi = 0; pi < divided.length; pi++) {
     let path = divided[pi];
     if (path.ops[1].type === "line") {
       if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
@@ -725,7 +725,7 @@ Path.prototype.split = function(point) {
 /** Removes self-intersections (overlap) from the path */
 Path.prototype.trim = function() {
   let chunks = this.divide();
-  for (let i in chunks) {
+  for (let i = 0; i < chunks.length; i++) {
     let firstCandidate = parseInt(i) + 2;
     let lastCandidate = parseInt(chunks.length) - 1;
     for (let j = firstCandidate; j < lastCandidate; j++) {

@@ -54,7 +54,7 @@ const withGist = (WrappedComponent, settings = { gist: {}, store: false }) => {
 
       if (l3) gist[l1][l2][l3] = value;
       else if (l2) gist[l1][l2] = value;
-      else if (l1) gist[l1] = value;
+      else gist[l1] = value;
       this.setState({ gist });
       if (settings.store) storage.set(this.state.gist.name || "gist", gist);
     }

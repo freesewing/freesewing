@@ -145,7 +145,6 @@ export default part => {
   let pw = measurements.hipsCircumference * options.pocketWidth; // Pocket width
   let pwh = pw * options.weltHeight; // Pocket welt height
   let pwvh = pwh / Math.cos(utils.deg2rad(options.pocketAngle)); // Pocket welt vertical height
-  let pbh = pw * 1.3; // Pocket bag height
 
   points.pocketTopMid = points.dartWaistCenter.shiftFractionTowards(
     points.dartHipCenter,
@@ -294,13 +293,11 @@ export default part => {
     let delta = points.button1.dist(points.lastButton) / (options.buttons - 1);
     for (let i = 1; i <= options.buttons; i++) {
       points["button" + i] = points.button1.shift(-90, delta * (i - 1));
-      if (complete) {
-        snippets["button" + i] = new Snippet("button", points["button" + i]);
-        snippets["buttonhole" + i] = new Snippet(
-          "buttonhole",
-          points["button" + i]
-        ).attr("data-rotate", 90);
-      }
+      snippets["button" + i] = new Snippet("button", points["button" + i]);
+      snippets["buttonhole" + i] = new Snippet(
+        "buttonhole",
+        points["button" + i]
+      ).attr("data-rotate", 90);
     }
 
     // Facing/Lining boundary (flb)

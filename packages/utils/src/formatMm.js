@@ -3,7 +3,6 @@ import formatImperial from "./formatImperial";
 
 const formatMm = (val, units, format = "html") => {
   val = roundMm(val);
-  let H = format === "html" ? true : false;
   if (units === "imperial") {
     if (val == 0) return formatImperial("", 0, false, false, format);
     let negative = "";

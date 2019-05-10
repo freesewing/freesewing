@@ -4,7 +4,7 @@ const measurementAsMm = (value, units = "metric") => {
   if (units === "metric") {
     value = Number(value);
     if (isNaN(value)) return false;
-    return value * (units === "imperial" ? 25.4 : 10);
+    return value * 10;
   } else {
     let chunks = value.split(" ");
     if (chunks.length === 1) {

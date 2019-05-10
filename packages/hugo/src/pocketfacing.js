@@ -3,8 +3,16 @@ export default function(part) {
   let facing = part.paths.facing;
   part.paths = {};
 
-  // prettier-ignore
-  let {sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, utils, store} = part.shorthand();
+  let {
+    sa,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    store
+  } = part.shorthand();
 
   paths.seam = facing
     .line(points.pocketTop)
@@ -44,4 +52,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

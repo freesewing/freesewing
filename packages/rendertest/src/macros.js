@@ -1,17 +1,5 @@
 export default function(part) {
-  let {
-    macro,
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    snippets,
-    Snippet,
-    complete,
-    paperless,
-    store
-  } = part.shorthand();
+  let { macro, Point, Path, points, paths, store } = part.shorthand();
 
   let y = store.get("y");
   let w = store.get("w");

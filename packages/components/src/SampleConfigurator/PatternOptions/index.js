@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import OptionGroup from "../OptionGroup";
-import { optionType } from "@freesewing/utils";
 import { FormattedMessage } from "react-intl";
-import DownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const PatternOptions = props => {
   const renderGroup = group => {

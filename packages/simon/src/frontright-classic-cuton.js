@@ -2,16 +2,12 @@ import { addButtons } from "./shared";
 
 export default part => {
   let {
-    store,
-    measurements,
     utils,
     sa,
     Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,
@@ -114,8 +110,6 @@ export default part => {
       to: points.placketTopEdge,
       y: points.neck.y - 30 - sa
     });
-    let len =
-      points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength);
     points.button0 = points.placketTopEdge;
     let j;
     for (let i = 0; i < options.buttons; i++) {

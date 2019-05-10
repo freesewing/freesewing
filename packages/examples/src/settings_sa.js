@@ -1,6 +1,5 @@
 export default part => {
-  // prettier-ignore
-  let { Point, points, Path, paths } = part.shorthand()
+  let { Point, points, Path, paths } = part.shorthand();
 
   points.A = new Point(45, 60);
   points.B = new Point(10, 30);

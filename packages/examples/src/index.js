@@ -1,7 +1,6 @@
 import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config/";
-import { version } from "../package.json";
 // Path API
 import draftPath_ops from "./path_ops";
 import draftPath_attr from "./path_attr";
@@ -103,7 +102,6 @@ let methods = {
   draftPlugin_logo,
   draftPlugin_scalebox,
   draftPlugin_title,
-  draftPoint_attr,
   draftPoint_angle,
   draftPoint_attr,
   draftPoint_clone,

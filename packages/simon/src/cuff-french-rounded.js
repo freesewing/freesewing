@@ -8,18 +8,13 @@ export default part => {
   let {
     store,
     measurements,
-    utils,
     sa,
-    Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
-    macro,
-    options
+    macro
   } = part.shorthand();
   draftFrenchCuff(part);
   let height = store.get("cuffHeight");

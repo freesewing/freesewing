@@ -1,5 +1,3 @@
-import { calculateReduction } from "./shared";
-
 export default part => {
   part.paths = {}; // This removed paperless dimensions from brian block
   for (let pid of [
@@ -12,16 +10,12 @@ export default part => {
   ])
     delete part.points[pid];
   let {
-    store,
     measurements,
-    utils,
     sa,
     Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,

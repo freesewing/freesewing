@@ -11,9 +11,7 @@ export default function(part) {
     measurements,
     complete,
     paperless,
-    macro,
-    utils,
-    units
+    macro
   } = part.shorthand();
 
   // Width at shoulders

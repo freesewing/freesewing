@@ -6,7 +6,6 @@ import es from "react-intl/locale-data/es";
 import fr from "react-intl/locale-data/fr";
 import nl from "react-intl/locale-data/nl";
 import { strings } from "@freesewing/i18n";
-import { storage } from "@freesewing/utils";
 
 const withLanguage = (WrappedComponent, lang = "en", store = false) => {
   return class extends React.Component {

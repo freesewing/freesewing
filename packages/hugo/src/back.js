@@ -4,12 +4,24 @@ export default function(part) {
   part.paths = {};
   part.paths.seam = seam;
 
-  // prettier-ignore
-  let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, debug} = part.shorthand();
+  let {
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    debug
+  } = part.shorthand();
 
   // Hem is more descripting than hips in this case
   //points.cbHem = points.cbHips;
- // points.hem = points.hips;
+  // points.hem = points.hips;
 
   // Ribbing
   points.cbRibbing = points.cbHem.shift(90, store.get("ribbing"));
@@ -50,10 +62,7 @@ export default function(part) {
     });
     points.title = new Point(points.armhole.x / 2, points.armhole.y);
     macro("title", { at: points.title, nr: 2, title: "back" });
-    store.set(
-      "notchBack",
-      points.raglanTipBack.dist(points.armholeHollow) / 2
-    );
+    store.set("notchBack", points.raglanTipBack.dist(points.armholeHollow) / 2);
     points.sleeveNotch = points.raglanTipBack.shiftTowards(
       points.armholeHollow,
       store.get("notchBack")
@@ -109,4 +118,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

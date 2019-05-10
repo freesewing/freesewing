@@ -3,14 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Navbar from ".";
 import LanguageIcon from "@material-ui/icons/Translate";
 import DarkModeIcon from "@material-ui/icons/Brightness3";
-import Avatar from "@material-ui/core/Avatar";
 
-const props = {
-  raiseEvent: (type, data) =>
-    console.log(`Action of type ${type} triggered, data passed is`, data),
-  updateValue: (type, data) =>
-    console.log(`Update ${type} with new value`, data)
-};
 const navs = {
   left: [
     {

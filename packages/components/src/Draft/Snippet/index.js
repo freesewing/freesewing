@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Text from "../Text";
-import Circle from "../Circle";
 
 const Snippet = props => {
   const snippetProps = {

@@ -2,16 +2,9 @@ import { draftRibbing } from "./shared";
 
 export default part => {
   let {
-    store,
     measurements,
-    utils,
     sa,
-    Point,
     points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,
@@ -33,6 +26,7 @@ export default part => {
       title: "cuff"
     });
     if (sa) {
+      // FIXME: Don't we need SA here?
     }
   }
 

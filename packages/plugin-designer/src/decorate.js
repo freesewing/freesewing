@@ -63,7 +63,6 @@ decorate.paths = function(svg) {
       for (let pathId in part.paths) {
         let path = part.paths[pathId];
         if (path.render) {
-          let id;
           let current;
           for (let op of path.ops) {
             if (op.type !== "close") {

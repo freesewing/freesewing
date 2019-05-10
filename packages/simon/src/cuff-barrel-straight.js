@@ -5,22 +5,7 @@ import {
 } from "./shared";
 
 export default part => {
-  let {
-    store,
-    measurements,
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options
-  } = part.shorthand();
+  let { sa, points, Path, paths, complete, paperless } = part.shorthand();
 
   draftBarrelCuff(part);
   paths.seam = new Path()

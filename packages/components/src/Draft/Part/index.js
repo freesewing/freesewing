@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Path from "../Path";
 import Point from "../Point";
@@ -73,11 +73,6 @@ const Part = props => {
 
   let focus = [];
   if (props.design) {
-    let designProps = {
-      ...props,
-      key: "dp-" + props.name,
-      className: "design point"
-    };
     if (props.focus && typeof props.focus[props.name] !== "undefined") {
       for (let i in props.focus[props.name].points)
         focus.push(focusPoint(props.focus[props.name].points[i], i));

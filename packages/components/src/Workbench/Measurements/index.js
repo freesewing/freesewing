@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { storage } from "@freesewing/utils";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import FormFieldMeasurement from "../../.form/FormFieldMeasurement";

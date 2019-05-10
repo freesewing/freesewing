@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Logo from "../Logo";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
-import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import Icon from "../Icon";
 

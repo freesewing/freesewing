@@ -1,18 +1,14 @@
 export default part => {
   let {
     points,
-    Point,
     paths,
     Path,
-    measurements,
     options,
-    utils,
     macro,
     snippets,
     Snippet,
     complete,
-    sa,
-    paperless
+    sa
   } = part.shorthand();
 
   // Cleanup from Brian

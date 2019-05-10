@@ -1,6 +1,5 @@
 export default part => {
   let {
-    store,
     measurements,
     utils,
     sa,
@@ -8,8 +7,6 @@ export default part => {
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
     paperless,
     macro,

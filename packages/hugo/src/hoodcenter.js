@@ -1,6 +1,16 @@
 export default function(part) {
-  // prettier-ignore
-  let {store, sa, Point, points, Path, paths, complete, paperless, macro, units} = part.shorthand();
+  let {
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    units
+  } = part.shorthand();
 
   let width = store.get("hoodCenterWidth");
   points.topLeft = new Point(0, 0);
@@ -34,10 +44,7 @@ export default function(part) {
     if (sa) {
       paths.sa = paths.seam.offset(sa);
     }
-    points.title = points.bottomLeft.shiftFractionTowards(
-      points.topRight,
-      0.5
-    );
+    points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5);
     macro("title", { at: points.title, nr: 7, title: "hoodCenter" });
     macro("grainline", {
       from: points.topLeft.shift(-90, width / 2),
@@ -61,4 +68,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

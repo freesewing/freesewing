@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Pct from "../PatternOptionPercentage";
 import Deg from "../PatternOptionDegree";
@@ -59,10 +59,10 @@ const OptionGroup = props => {
   return (
     <React.Fragment>
       {props.options.map(name => {
-        let key = name;
+        //let key = name;
         let output = [];
         if (typeof name === "object") {
-          key = Object.keys(name).pop();
+          //key = Object.keys(name).pop();
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(

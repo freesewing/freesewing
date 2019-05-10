@@ -8,10 +8,7 @@ export default part => {
     Path,
     measurements,
     options,
-    utils,
     macro,
-    snippets,
-    Snippet,
     complete,
     sa,
     paperless

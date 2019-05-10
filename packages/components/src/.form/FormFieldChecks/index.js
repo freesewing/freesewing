@@ -16,13 +16,9 @@ const FormFieldChecks = props => {
     props.updateValue(props.name, parts);
   };
 
-  // Force state update when rerendering due to props change
-  // if (props.value !== value) setValue(props.value);
-
   return (
     <FormGroup>
       {Object.keys(props.checks).map(i => {
-        let check = props.checks[i];
         return (
           <FormControlLabel
             control={

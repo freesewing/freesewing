@@ -7,14 +7,6 @@ import models from "@freesewing/models";
 const SampleConfigurator = props => {
   const [expanded, setExpanded] = useState([]);
 
-  const toggleGroup = group => {
-    let shown = expanded.slice(0);
-    let index = shown.indexOf(group);
-    if (index === -1) shown.push(group);
-    else shown.splice(index, 1);
-    setExpanded(shown);
-  };
-
   const sampleOption = option => {
     props.updateGist(
       {

@@ -1,5 +1,5 @@
 export default function(part) {
-  let { options, Point, Path, points, paths, store, macro } = part.shorthand();
+  let { Point, Path, points, paths, store } = part.shorthand();
 
   let y = store.get("y");
   let w = store.get("w");

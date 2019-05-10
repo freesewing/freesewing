@@ -7,23 +7,15 @@ import {
 export default part => {
   let {
     store,
-    measurements,
-    utils,
     sa,
-    Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     complete,
-    paperless,
-    macro,
-    options
+    paperless
   } = part.shorthand();
 
   draftFrenchCuff(part);
-  let height = store.get("barrelCuffHeight");
 
   paths.seam = new Path()
     .move(points.topLeft)

@@ -1,6 +1,19 @@
 export default function(part) {
-  // prettier-ignore
-  let {utils, store, sa, Point, points, Path, paths, Snippet, snippets, options, measurements, complete, paperless, macro, debug} = part.shorthand();
+  let {
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    measurements,
+    complete,
+    paperless,
+    macro,
+    debug
+  } = part.shorthand();
 
   let neckOpening =
     store.get("neckOpeningLenFront") + store.get("neckOpeningLenBack");
@@ -145,4 +158,4 @@ export default function(part) {
   }
 
   return part;
-};
+}

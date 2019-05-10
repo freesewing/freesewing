@@ -6,14 +6,9 @@ export default part => {
     Path,
     measurements,
     options,
-    utils,
     macro,
-    snippets,
-    Snippet,
     complete,
-    sa,
-    paperless,
-    store
+    paperless
   } = part.shorthand();
 
   let pw = measurements.hipsCircumference * options.pocketWidth; // Pocket width

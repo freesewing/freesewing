@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import InvalidIcon from "@material-ui/icons/Warning";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import { withStyles } from "@material-ui/core/styles";
 import { measurementAsMm, formatMm } from "@freesewing/utils";
 import { injectIntl } from "react-intl";
 
@@ -14,10 +13,6 @@ const FormFieldMeasurement = props => {
       props.name,
       measurementAsMm(evt.target.value, props.units)
     );
-  };
-
-  const distance = {
-    asMm: () => false
   };
 
   return (

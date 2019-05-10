@@ -250,16 +250,7 @@ export const paperlessFrenchCuff = part => {
 };
 
 export const frontDimensions = (part, side = "left") => {
-  let {
-    sa,
-    options,
-    complete,
-    paperless,
-    points,
-    macro,
-    Path,
-    paths
-  } = part.shorthand();
+  let { sa, options, paperless, points, macro, Path } = part.shorthand();
   let factor = side === "right" ? -1 : 1;
   macro("banner", {
     path: "hemSa",
