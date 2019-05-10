@@ -5,15 +5,7 @@ import {
 } from "./shared";
 
 export default part => {
-  let {
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless
-  } = part.shorthand();
+  let { sa, points, Path, paths, complete, paperless } = part.shorthand();
 
   draftFrenchCuff(part);
 

@@ -7,7 +7,6 @@ import {
 export default part => {
   let {
     store,
-    measurements,
     sa,
     points,
     Path,

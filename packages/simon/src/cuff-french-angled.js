@@ -12,8 +12,7 @@ export default part => {
     Path,
     paths,
     complete,
-    paperless,
-    macro
+    paperless
   } = part.shorthand();
 
   draftFrenchCuff(part);

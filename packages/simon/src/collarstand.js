@@ -19,8 +19,6 @@ export default part => {
       measurements.neckCircumference * (1 + options.collarEase) * tweak;
     let width = options.collarStandWidth;
     let half = length / 2;
-    let buttonSideExtra = options.buttonPlacketWidth / 2;
-    let buttonholeSideExtra = options.buttonholePlacketWidth / 2;
     let bend = options.collarStandBend * -1;
     let curve = options.collarStandCurve - options.collarStandBend;
     let hinge = 90 + (bend + curve) / 2;

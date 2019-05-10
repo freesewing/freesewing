@@ -1,15 +1,7 @@
 import draftPanel1ab from "./panel1ab";
 
 export default function(part) {
-  let {
-    macro,
-    sa,
-    paths,
-    Path,
-    options,
-    complete,
-    paperless
-  } = part.shorthand();
+  let { macro, sa, paths, options, complete, paperless } = part.shorthand();
 
   delete paths.outline;
   delete paths.panel2;

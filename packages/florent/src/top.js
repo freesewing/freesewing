@@ -10,16 +10,7 @@ export default function(part) {
   } = part.shorthand();
 
   const fitCap = (part, scale) => {
-    let {
-      sa,
-      complete,
-      points,
-      options,
-      Point,
-      paths,
-      Path,
-      measurements
-    } = part.shorthand();
+    let { points, options, Point, Path, measurements } = part.shorthand();
 
     let base = scale * measurements.headCircumference * (1 + options.headEase);
 

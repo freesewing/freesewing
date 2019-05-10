@@ -6,7 +6,6 @@ export default function(part) {
       Point,
       Path,
       points,
-      paths,
       store,
       options,
       measurements,

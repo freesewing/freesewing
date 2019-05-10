@@ -8,9 +8,6 @@ export default function(part) {
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
-    measurements,
     complete,
     paperless,
     macro
