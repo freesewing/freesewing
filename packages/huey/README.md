@@ -3,8 +3,12 @@
 > 
 > For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/).
 
-<p align="center"><a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a></p>
-<p align="center">FreeSewing is a JavaScript library for made-to-measure sewing patterns</p>
+<p align="center">
+<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
+<br>
+<a href="https://freesewing.org/">FreeSewing v2</a>
+</p>
+<p align="center">A JavaScript library for made-to-measure sewing patterns</p>
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/huey"
   title="@freesewing/huey on NPM"
@@ -15,6 +19,11 @@
   title="License: MIT"
   ><img src="https://img.shields.io/npm/l/@freesewing/huey.svg?label=License"
   alt="License: MIT"/>
+  </a><a
+  href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
+  title="Code quality on DeepScan"
+  ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
+  alt="Code quality on DeepScan"/>
   </a><a
   href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Ahuey"
   title="Open issues tagged pkg:huey"

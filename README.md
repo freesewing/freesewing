@@ -9,7 +9,7 @@
   </a>
 </p>
 <h4 align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing</a>
+<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing v2</a>
 <br><sup>A JavaScript library for made-to-measure sewing patterns</sup>
 </h4>
 <p align='center'><a
@@ -22,7 +22,12 @@
   title="License: MIT"
   ><img src="https://img.shields.io/npm/l/@freesewing/core.svg?label=License"
   alt="License: MIT"/>
-  </a><a
+  </a><a 
+  href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
+  title="Code quality on DeepScan"
+  ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg" 
+  alt="DeepScan grade"
+  ></a><a
   href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen"
   title="Open issues tagged pkg:aaron"
   ><img src="https://img.shields.io/github/issues/freesewing/freesewing.svg?label=Issues"
