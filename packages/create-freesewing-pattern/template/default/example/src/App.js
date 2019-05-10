@@ -11,7 +11,12 @@ const App = props => {
   let instance = new Pattern();
   let config = instance.config;
   return (
-    <Workbench freesewing={freesewing} Pattern={Pattern} config={config} />
+    <Workbench
+      freesewing={freesewing}
+      Pattern={Pattern}
+      config={config}
+      userLanguage="{{language}}"
+    />
   );
 };
 

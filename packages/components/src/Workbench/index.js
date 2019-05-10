@@ -29,6 +29,7 @@ const Workbench = props => {
     setMeasurements(m);
     props.updateGist(m, "settings", "measurements");
     setDisplay(getDisplay());
+    props.setLanguage(props.userLanguage || "en");
   }, []);
   useEffect(() => {
     if (props.from) props.importGist(props.from);
