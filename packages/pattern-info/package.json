@@ -32,8 +32,8 @@
     "prebuild": "node src/prebuild.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.24",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.24"
+    "@freesewing/core": "^2.0.0-alpha.25",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.25"
   },
   "files": [
     "dist/*",
