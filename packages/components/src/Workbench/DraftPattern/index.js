@@ -65,7 +65,7 @@ const DraftPattern = props => {
           raiseEvent={raiseEvent}
         />
         <h2>gist</h2>
-        <div className="gatsby-highlight" dataLanguage="json">
+        <div className="gatsby-highlight">
           <pre
             className="language-json"
             dangerouslySetInnerHTML={{ __html: gist }}
