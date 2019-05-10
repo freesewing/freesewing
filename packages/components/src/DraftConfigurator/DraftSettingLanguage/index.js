@@ -28,7 +28,7 @@ const DraftSettingLanguage = props => {
       onChange={update}
       label={"po-list-" + props.name}
       updateValue={update}
-      list={languages[props.intl.locale]}
+      list={languages}
     />
   );
 
