@@ -18,7 +18,7 @@ const DraftSettingMargin = props => {
       setValue(newValue);
       if (evt.type !== "mousemove") props.updateValue("margin", newValue);
     } else {
-      if (evt.type !== "mousemove") props.updateValue("margin", newValue);
+      props.updateValue("margin", value);
     }
   };
 
