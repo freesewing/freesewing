@@ -5,31 +5,51 @@ export default function(part) {
     Path,
     points,
     paths,
+    Snippet,
+    snippets,
     complete,
-    paperless
+    sa,
+    paperless,
+    macro
   } = part.shorthand();
 
+  let w = 500 * options.size;
   points.topLeft = new Point(0, 0);
-  points.topRight = new Point(options.size, 0);
-  points.bottomLeft = new Point(0, options.size);
-  points.bottomRight = new Point(options.size, options.size);
+  points.topRight = new Point(w, 0);
+  points.bottomLeft = new Point(0, w / 2);
+  points.bottomRight = new Point(w, w / 2);
 
-  paths.demo = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr("data-text", "thisIsTheFrontPart")
-    .attr("data-text-class", "center");
+    .attr("class", "fabric");
 
   // Complete?
   if (complete) {
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5);
+    snippets.logo = new Snippet("logo", points.logo);
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    }
   }
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15
+    });
+    macro("vd", {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + sa + 15
+    });
   }
 
   return part;

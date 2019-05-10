@@ -10,12 +10,26 @@ export default {
   department: "{{department}}",
   type: "{{type}}",
   difficulty: 3,
-  tags: [],
-  optionGroups: {},
+  tags: [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "{{type}}",
+    "sewing",
+    "sewing pattern"
+  ],
+  optionGroups: {
+    fit: ["size"]
+  },
   measurements: [],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: [],
-  options: {}
+  parts: ["box"],
+  options: {
+    size: { pct: 50, min: 10, max: 100 }
+  }
 };
