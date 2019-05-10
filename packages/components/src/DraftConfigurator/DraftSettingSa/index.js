@@ -107,6 +107,7 @@ const DraftSettingSa = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

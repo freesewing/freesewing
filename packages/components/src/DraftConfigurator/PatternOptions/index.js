@@ -28,6 +28,7 @@ const PatternOptions = props => {
       children = (
         <ul className="nav l3">
           <OptionGroup
+            noDocs={props.noDocs}
             key={group + "-group"}
             units={props.units}
             config={props.config}

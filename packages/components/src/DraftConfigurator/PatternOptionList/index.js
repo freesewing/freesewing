@@ -70,6 +70,7 @@ const PatternOptionList = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

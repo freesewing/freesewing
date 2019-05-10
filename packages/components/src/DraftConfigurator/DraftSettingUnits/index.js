@@ -49,6 +49,7 @@ const DraftSettingUnits = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

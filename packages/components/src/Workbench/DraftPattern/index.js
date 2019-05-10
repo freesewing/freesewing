@@ -115,6 +115,7 @@ const DraftPattern = props => {
             </p>
           )}
           <DraftConfigurator
+            noDocs
             config={props.config}
             gist={props.gist}
             updateGist={props.updateGist}

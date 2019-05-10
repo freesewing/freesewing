@@ -72,15 +72,17 @@ const OptionPreamble = props => {
             >
               <ResetIcon />
             </IconButton>
-            <IconButton
-              title={docsLabel}
-              aria-label={docsLabel}
-              color="primary"
-              onClick={props.showHelp}
-              className="mini-icon-btn"
-            >
-              <HelpIcon />
-            </IconButton>
+            {props.noDocs ? null : (
+              <IconButton
+                title={docsLabel}
+                aria-label={docsLabel}
+                color="primary"
+                onClick={props.showHelp}
+                className="mini-icon-btn"
+              >
+                <HelpIcon />
+              </IconButton>
+            )}
           </div>
         </div>
         {props.option}

@@ -71,6 +71,7 @@ const PatternOptionPctDegCount = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

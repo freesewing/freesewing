@@ -25,7 +25,8 @@ const OptionGroup = props => {
       desc: <FormattedMessage id={stringKey + "description"} />,
       intl: props.intl,
       pattern: props.config.name,
-      key: name
+      key: name,
+      noDocs: props.noDocs
     };
     let noyes = [
       <FormattedMessage id="app.no" />,

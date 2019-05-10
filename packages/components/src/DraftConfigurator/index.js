@@ -20,7 +20,7 @@ const DraftConfigurator = props => {
     else shown.splice(index, 1);
     setExpanded(shown);
   };
-
+  console.log("dc props", props);
   return (
     <ul className="nav l1">
       <li>
@@ -28,6 +28,7 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.patternOptions" />
         </h2>
         <PatternOptions
+          noDocs={props.noDocs}
           config={props.config}
           gist={props.gist}
           updateValue={(name, value) =>
@@ -42,6 +43,7 @@ const DraftConfigurator = props => {
           <FormattedMessage id="app.draftSettings" />
         </h2>
         <DraftSettings
+          noDocs={props.noDocs}
           config={props.config}
           gist={props.gist}
           updateValue={(name, value) =>
@@ -59,6 +61,8 @@ DraftConfigurator.propTypes = {
   units: PropTypes.oneOf(["metric", "imperial"]).isRequired
 };
 
-DraftConfigurator.defaultProps = {};
+DraftConfigurator.defaultProps = {
+  noDocs: false
+};
 
 export default DraftConfigurator;

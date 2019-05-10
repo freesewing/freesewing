@@ -82,6 +82,7 @@ const PatternOptionMillimeter = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

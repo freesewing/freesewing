@@ -62,6 +62,7 @@ const DraftSettingMargin = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

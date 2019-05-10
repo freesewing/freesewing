@@ -40,7 +40,7 @@ const DraftSettingLanguage = props => {
         desc={props.desc}
         title={props.title}
         id={"po-list-" + props.name}
-        displayValue={languages[props.intl.locale][value]}
+        displayValue={languages[value]}
         reset={reset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
@@ -51,6 +51,7 @@ const DraftSettingLanguage = props => {
           })
         }
         option={option}
+        noDocs={props.noDocs}
       />
     </li>
   );

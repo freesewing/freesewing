@@ -49,7 +49,8 @@ const DraftSettings = props => {
       units: props.units,
       key: setting,
       name: setting,
-      labels: labels[setting]
+      labels: labels[setting],
+      noDocs: props.noDocs
     };
     childProps.title = (
       <FormattedMessage id={"settings." + setting + ".title"} />
