@@ -155,12 +155,37 @@ Part.prototype.attr = function(name, value, overwrite = false) {
 
 /** Copies point/path/snippet data from part orig into this */
 Part.prototype.inject = function(orig) {
-  for (let type of ["points", "paths", "snippets"]) {
-    for (let i in orig[type]) {
-      if (typeof this[type][i] === "undefined") {
-        this[type][i] = orig[type][i].clone();
+  const findBasePoint = p => {
+    for (let i in orig.points) {
+      if (orig.points[i] === p) return i;
+    }
+
+    return false;
+  };
+
+  for (let i in orig.points) this.points[i] = orig.points[i].clone();
+  for (let i in orig.paths) {
+    this.paths[i] = orig.paths[i].clone();
+    // Keep link between points and path ops where possible
+    for (let j in orig.paths[i].ops) {
+      let op = orig.paths[i].ops[j];
+      if (op.type !== "close") {
+        let toPoint = findBasePoint(op.to);
+        if (toPoint) this.paths[i].ops[j].to = this.points[toPoint];
+      }
+      if (op.type === "curve") {
+        let cp1Point = findBasePoint(op.cp1);
+        if (cp1Point) this.paths[i].ops[j].cp1 = this.points[cp1Point];
+        let cp2Point = findBasePoint(op.cp2);
+        if (cp2Point) this.paths[i].ops[j].cp2 = this.points[cp2Point];
       }
     }
+  }
+  for (let i in orig.snippets) {
+    this.snippets[i] = orig.snippets[i].clone();
+    // Keep link between points and snippet anchor where possible
+    let anchorPoint = findBasePoint(orig.snippets[i].anchor);
+    if (anchorPoint) this.snippets[i].anchor = this.points[i];
   }
 
   return this;
