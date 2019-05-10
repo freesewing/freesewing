@@ -1,23 +1,57 @@
+> **Note**: This is part of version 2 of FreeSewing.  
+> It is a work in progress, and not ready for prime-time yet
+> 
+> For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/).
+
 <p align="center">
   <a title="Visit freesewing.org" href="https://freesewing.org/">
     <img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/>
   </a>
 </p>
 <h4 align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/">
-<span style="font-weight: 900; letter-spacing: -0.02em; color: #61dafb;">Free</span>
-<span style="font-family: 'Roboto Condensed', sans-serif; font-weight: 900; letter-spacing: -0.02em; color: #222">Sewing</span>
-</a>
-<br><sup>a library for made-to-measure sewing patterns</sup>
+<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing</a>
+<br><sup>A JavaScript library for made-to-measure sewing patterns</sup>
 </h4>
-<p align="center">
-  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
-  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
-</p>
+<p align='center'><a
+  href="https://www.npmjs.com/package/@freesewing/core"
+  title="@freesewing/core on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/core.svg"
+  alt="@freesewing/core on NPM"/>
+  </a><a
+  href="https://opensource.org/licenses/MIT"
+  title="License: MIT"
+  ><img src="https://img.shields.io/npm/l/@freesewing/core.svg?label=License"
+  alt="License: MIT"/>
+  </a><a
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen"
+  title="Open issues tagged pkg:aaron"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing.svg?label=Issues"
+  alt="Open issues"/>
+  </a></p><p align='center'><a
+  href="https://twitter.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a><a
+  href="https://gitter.im/freesewing/freesewing"
+  title="Chat with us on Gitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Chat%20with%20us-CA0547.svg?logo=gitter&logoColor=white&logoWidth=15"
+  alt="Chat with us on Gitter"/>
+  </a><a
+  href="https://freesewing.org/patrons/join"
+  title="Become a FreeSewing Patron"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Support%20us-blueviolet.svg?logo=cash-app&logoColor=white&logoWidth=15"
+  alt="Become a FreeSewing Patron"/>
+  </a><a
+  href="https://instagram.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-E4405F.svg?logo=instagram&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a></p>
 
 ## About freesewing
 
-FreeSewing is a free and open source library for made-to-measure sewing patterns.
+FreeSewing is JavaScript library for made-to-measure sewing patterns.
 
 Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
 

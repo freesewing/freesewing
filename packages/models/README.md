@@ -4,16 +4,16 @@
 > For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/).
 
 <p align="center"><a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a></p>
-<p align="center">FreeSewing is a free and open source library for made-to-measure sewing patterns</p>
+<p align="center">FreeSewing is a JavaScript library for made-to-measure sewing patterns</p>
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/models"
   title="@freesewing/models on NPM"
-  ><img src="https://img.shields.io/npm/v/freesewing.svg"
+  ><img src="https://img.shields.io/npm/v/@freesewing/models.svg"
   alt="@freesewing/models on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/freesewing.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/models.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Amodels"

@@ -1,11 +1,11 @@
 _all:
   version:
     link: "https://www.npmjs.com/package/{{{fullname}}}"
-    img: "https://img.shields.io/npm/v/freesewing.svg"
+    img: "https://img.shields.io/npm/v/{{{fullname}}}.svg"
     alt: "{{{fullname}}} on NPM"
   license:
     link: "https://opensource.org/licenses/MIT"
-    img: "https://img.shields.io/npm/l/freesewing.svg?label=License"
+    img: "https://img.shields.io/npm/l/{{{fullname}}}.svg?label=License"
     alt: "License: MIT"
   issues:
     link: "https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3A{{name}}"
