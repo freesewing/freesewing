@@ -30,9 +30,13 @@ ul.nav h3 {
   background: $oc-gray-1;
   z-index: 3;
 }
-ul.nav span.custom {
-  color: $fc-bg-dark;
-  font-weight: bold;
+span.dflt,
+span.custom {
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+span.custom {
+  background: rgba($oc-yellow-6, 0.65);
 }
 .col-exp {
   transition: max-height 0.2s ease-in-out, opacity 0.1s cubic-bezier(.55,.06,.68,.19) 0.05s;
