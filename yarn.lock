@@ -1923,14 +1923,6 @@
 "@freesewing/wahid@file:packages/wahid":
   version "2.0.0-alpha.2"
 
-"@freesewing/workbench@file:packages/workbench":
-  version "2.0.0-alpha.2"
-  dependencies:
-    "@freesewing/components" "^2.0.0-alpha.2"
-    "@freesewing/css-theme" "^2.0.0-alpha.2"
-    "@freesewing/mui-theme" "^2.0.0-alpha.2"
-    "@freesewing/utils" "^2.0.0-alpha.2"
-
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"

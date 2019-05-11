@@ -30,6 +30,8 @@
   "peerDependencies": {
     "@freesewing/pattern-info": "^2.0.0-alpha.25"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

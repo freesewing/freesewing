@@ -9,6 +9,7 @@ _:
   symlink: "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
 _types:
   patterns:
+    start: "rollup -c -w"
   plugins:
 create-freesewing-pattern:
   clean: "!"

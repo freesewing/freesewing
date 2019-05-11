@@ -2,6 +2,8 @@
 
 # Specifics
 packages/plugin-theme/src/bundle.css.js
+**/example/
+!packages/create-freesewing-pattern/temlate/default/example
 
 # dependencies
 node_modules
@@ -25,4 +27,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-
+packages/core/.nyc_output

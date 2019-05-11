@@ -41,6 +41,8 @@
     "@material-ui/lab": "^3.0.0-alpha.30",
     "prismjs": "1.16.0"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

@@ -55,6 +55,7 @@
     "@freesewing/trayvon": "^2.0.0-alpha.25",
     "@freesewing/wahid": "^2.0.0-alpha.25"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

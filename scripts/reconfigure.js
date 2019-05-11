@@ -1,9 +1,11 @@
 /* eslint-disable no-console */
 const path = require("path");
+const fs = require("fs");
 const fse = require("fs-extra");
 const glob = require("glob");
 const yaml = require("js-yaml");
 const chalk = require("chalk");
+const handlebars = require("handlebars");
 const Mustache = require("mustache");
 const { version } = require("../lerna.json");
 
@@ -33,11 +35,40 @@ reconfigure(packages, config);
 process.exit();
 
 /**
- * Reads a template file, with Mustache replacements if needed
+ * Reads a template file
  */
-function readTemplateFile(file, replace = false) {
-  return fse.readFileSync(
+function readTemplateFile(file) {
+  return fs.readFileSync(
     path.join(repoPath, "config", "templates", file),
+    "utf-8"
+  );
+}
+
+/**
+ * Reads a pattern example file
+ */
+function readExampleFile(file, subdir = false) {
+  return fs.readFileSync(
+    subdir
+      ? path.join(
+          repoPath,
+          "packages",
+          "create-freesewing-pattern",
+          "template",
+          "default",
+          "example",
+          file
+        )
+      : path.join(
+          repoPath,
+          "packages",
+          "create-freesewing-pattern",
+          "template",
+          "default",
+          "example",
+          subdir,
+          file
+        ),
     "utf-8"
   );
 }
@@ -49,12 +80,12 @@ function readConfigFile(file, replace = false) {
   if (replace)
     return yaml.safeLoad(
       Mustache.render(
-        fse.readFileSync(path.join(repoPath, "config", file), "utf-8"),
+        fs.readFileSync(path.join(repoPath, "config", file), "utf-8"),
         replace
       )
     );
   return yaml.safeLoad(
-    fse.readFileSync(path.join(repoPath, "config", file), "utf-8")
+    fs.readFileSync(path.join(repoPath, "config", file), "utf-8")
   );
 }
 
@@ -65,7 +96,7 @@ function readConfigFile(file, replace = false) {
 function readInfoFile(pkg) {
   let markup = "";
   try {
-    markup = fse.readFileSync(
+    markup = fs.readFileSync(
       path.join(repoPath, "packages", pkg, "info.md"),
       "utf-8"
     );
@@ -138,7 +169,7 @@ function scripts(pkg, config, type) {
 
 /**
  * Returns an plain object with the of dependencies for a package
- * section is the key in teh dependencies.yaml fine, one of:
+ * section is the key in the dependencies.yaml fine, one of:
  *
  *  - _ (for dependencies)
  *  - dev (for devDependencies)
@@ -155,6 +186,8 @@ function deps(section, pkg, config, type) {
   if (typeof config.dependencies[pkg] === "undefined") return dependencies;
   if (typeof config.dependencies[pkg][section] !== "undefined")
     return { ...dependencies, ...config.dependencies[pkg][section] };
+
+  return dependencies;
 }
 
 /**
@@ -179,14 +212,14 @@ function packageConfig(pkg, config) {
   // Let's keep these at the top
   pkgConf.name = fullName(pkg, config);
   pkgConf.version = version;
-  (pkgConf.description = config.descriptions[pkg]),
-    (pkgConf = {
-      ...pkgConf,
-      ...JSON.parse(Mustache.render(config.templates.pkg, { name: pkg }))
-    });
+  pkgConf.description = config.descriptions[pkg];
+  pkgConf = {
+    ...pkgConf,
+    ...JSON.parse(Mustache.render(config.templates.pkg, { name: pkg }))
+  };
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg, config, type));
-  (pkgConf.scripts = scripts(pkg, config, type)),
-    (pkgConf.dependencies = dependencies(pkg, config, type));
+  pkgConf.scripts = scripts(pkg, config, type);
+  pkgConf.dependencies = dependencies(pkg, config, type);
   pkgConf.devDependencies = devDependencies(pkg, config, type);
   pkgConf.peerDependencies = peerDependencies(pkg, config, type);
   if (typeof config.exceptions.packageJson[pkg] !== "undefined") {
@@ -275,31 +308,84 @@ function validate(pkgs, config) {
 }
 
 /**
+ * Creates and 'example' directory for patterns,
+ * same result as what gets done by create-freesewing-pattern.
+ */
+function configurePatternExample(pkg, config) {
+  // Create example dir structure
+  let source = path.join(
+    config.repoPath,
+    "packages",
+    "create-freesewing-pattern",
+    "template",
+    "default",
+    "example"
+  );
+  let dest = path.join(config.repoPath, "packages", pkg, "example");
+  fse.ensureDirSync(path.join(dest, "src"));
+  fse.ensureDirSync(path.join(dest, "public"));
+  // Copy files
+  for (let file of [".babelrc", ".env"])
+    fs.copyFileSync(path.join(source, file), path.join(dest, file));
+  for (let file of ["index.js", "serviceWorker.js"])
+    fs.copyFileSync(
+      path.join(source, "src", file),
+      path.join(dest, "src", file)
+    );
+  fs.copyFileSync(
+    path.join(source, "public", "favicon.ico"),
+    path.join(dest, "public", "favicon.ico")
+  );
+  // Write templates
+  let replace = {
+    name: pkg,
+    author: "freesewing",
+    yarn: true,
+    language: "en"
+  };
+  for (let file of ["package.json", "README.md"]) {
+    let template = handlebars.compile(
+      fs.readFileSync(path.join(source, file), "utf-8")
+    );
+    fs.writeFileSync(path.join(dest, file), template(replace));
+  }
+  for (let file of ["index.html", "manifest.json"]) {
+    let template = handlebars.compile(
+      fs.readFileSync(path.join(source, "public", file), "utf-8")
+    );
+    fs.writeFileSync(path.join(dest, "public", file), template(replace));
+  }
+  let template = handlebars.compile(
+    fs.readFileSync(path.join(source, "src", "App.js"), "utf-8")
+  );
+  fs.writeFileSync(path.join(dest, "src", "App.js"), template(replace));
+}
+
+/**
  * Puts a package.json, rollup.config.js, and README.md
  * into every subdirectory under the packages directory.
+ * Also creates an example dir for pattern packages.
  */
 function reconfigure(pkgs, config) {
   for (let pkg of pkgs) {
     console.log(chalk.blueBright(`Reconfiguring ${pkg}`));
-    fse.writeFileSync(
+    let pkgConfig = packageConfig(pkg, config);
+    fs.writeFileSync(
       path.join(config.repoPath, "packages", pkg, "package.json"),
-      JSON.stringify(packageConfig(pkg, config), null, 2) + "\n"
+      JSON.stringify(pkgConfig, null, 2) + "\n"
     );
     if (config.exceptions.customRollup.indexOf(pkg) === -1) {
-      fse.writeFileSync(
+      fs.writeFileSync(
         path.join(config.repoPath, "packages", pkg, "rollup.config.js"),
         config.templates.rollup
       );
     }
-    fse.writeFileSync(
+    fs.writeFileSync(
       path.join(config.repoPath, "packages", pkg, "README.md"),
       readme(pkg, config)
     );
+    if (packageType(pkg, config) === "pattern")
+      configurePatternExample(pkg, config);
   }
-  console.log(
-    chalk.yellowBright.bold("All done."),
-    chalk.yellowBright("Run"),
-    chalk.white.bold("lerna bootstrap"),
-    chalk.yellowBright("to load new dependencies.")
-  );
+  console.log(chalk.yellowBright.bold("All done."));
 }
