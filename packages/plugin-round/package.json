@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-round",
-  "version": "2.0.0-alpha.26",
+  "version": "2.0.0-alpha.27",
   "description": "A FreeSewing plugin to round corners",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,7 +33,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.26"
+    "@freesewing/core": "^2.0.0-alpha.27"
   },
   "dependencies": {},
   "devDependencies": {},

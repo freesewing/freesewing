@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/patterns",
-  "version": "2.0.0-alpha.26",
+  "version": "2.0.0-alpha.27",
   "description": "An umbrella package for all FreeSewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,27 +33,27 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.26",
-    "@freesewing/plugin-bundle": "^2.0.0-alpha.26"
+    "@freesewing/core": "^2.0.0-alpha.27",
+    "@freesewing/plugin-bundle": "^2.0.0-alpha.27"
   },
   "dependencies": {
-    "@freesewing/aaron": "^2.0.0-alpha.26",
-    "@freesewing/bent": "^2.0.0-alpha.26",
-    "@freesewing/brian": "^2.0.0-alpha.26",
-    "@freesewing/bruce": "^2.0.0-alpha.26",
-    "@freesewing/carlita": "^2.0.0-alpha.26",
-    "@freesewing/carlton": "^2.0.0-alpha.26",
-    "@freesewing/cathrin": "^2.0.0-alpha.26",
-    "@freesewing/florent": "^2.0.0-alpha.26",
-    "@freesewing/huey": "^2.0.0-alpha.26",
-    "@freesewing/hugo": "^2.0.0-alpha.26",
+    "@freesewing/aaron": "^2.0.0-alpha.27",
+    "@freesewing/bent": "^2.0.0-alpha.27",
+    "@freesewing/brian": "^2.0.0-alpha.27",
+    "@freesewing/bruce": "^2.0.0-alpha.27",
+    "@freesewing/carlita": "^2.0.0-alpha.27",
+    "@freesewing/carlton": "^2.0.0-alpha.27",
+    "@freesewing/cathrin": "^2.0.0-alpha.27",
+    "@freesewing/florent": "^2.0.0-alpha.27",
+    "@freesewing/huey": "^2.0.0-alpha.27",
+    "@freesewing/hugo": "^2.0.0-alpha.27",
     "@freesewing/jaeger": "0.2.1",
-    "@freesewing/shin": "^2.0.0-alpha.26",
-    "@freesewing/simon": "^2.0.0-alpha.26",
-    "@freesewing/sven": "^2.0.0-alpha.26",
-    "@freesewing/tamiko": "^2.0.0-alpha.26",
-    "@freesewing/trayvon": "^2.0.0-alpha.26",
-    "@freesewing/wahid": "^2.0.0-alpha.26"
+    "@freesewing/shin": "^2.0.0-alpha.27",
+    "@freesewing/simon": "^2.0.0-alpha.27",
+    "@freesewing/sven": "^2.0.0-alpha.27",
+    "@freesewing/tamiko": "^2.0.0-alpha.27",
+    "@freesewing/trayvon": "^2.0.0-alpha.27",
+    "@freesewing/wahid": "^2.0.0-alpha.27"
   },
   "devDependencies": {},
   "files": [
