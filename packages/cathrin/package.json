@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/cathrin",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0-beta.1",
   "description": "A FreeSewing pattern for a underbust corset / waist trainer",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,8 +33,8 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.0",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.0"
+    "@freesewing/core": "^2.0.0-beta.1",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.1"
   },
   "dependencies": {},
   "devDependencies": {
@@ -45,15 +45,15 @@
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
-    "@freesewing/components": "^2.0.0-beta.0",
-    "@freesewing/css-theme": "^2.0.0-beta.0",
-    "@freesewing/i18n": "^2.0.0-beta.0",
-    "@freesewing/mui-theme": "^2.0.0-beta.0",
-    "@freesewing/patterns": "^2.0.0-beta.0",
-    "@freesewing/plugin-bust": "^2.0.0-beta.0",
-    "@freesewing/plugin-buttons": "^2.0.0-beta.0",
-    "@freesewing/plugin-flip": "^2.0.0-beta.0",
-    "@freesewing/utils": "^2.0.0-beta.0",
+    "@freesewing/components": "^2.0.0-beta.1",
+    "@freesewing/css-theme": "^2.0.0-beta.1",
+    "@freesewing/i18n": "^2.0.0-beta.1",
+    "@freesewing/mui-theme": "^2.0.0-beta.1",
+    "@freesewing/patterns": "^2.0.0-beta.1",
+    "@freesewing/plugin-bust": "^2.0.0-beta.1",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.1",
+    "@freesewing/plugin-flip": "^2.0.0-beta.1",
+    "@freesewing/utils": "^2.0.0-beta.1",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
