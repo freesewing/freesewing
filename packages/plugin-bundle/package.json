@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "2.0.0-alpha.27",
+  "version": "2.0.0-beta.0",
   "description": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,7 +34,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-alpha.27"
+    "@freesewing/core": "^2.0.0-beta.0"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -45,7 +45,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "alpha"
+    "tag": "beta"
   },
   "engines": {
     "node": ">=8.0.0",

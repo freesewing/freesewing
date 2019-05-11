@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/mui-theme",
-  "version": "2.0.0-alpha.27",
+  "version": "2.0.0-beta.0",
   "description": "A Material-UI theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -41,7 +41,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "alpha"
+    "tag": "beta"
   },
   "engines": {
     "node": ">=8.0.0",

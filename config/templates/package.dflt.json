@@ -22,7 +22,7 @@
   "files": ["dist/*", "README.md", "package.json"],
   "publishConfig": {
     "access": "public",
-    "tag": "alpha"
+    "tag": "beta"
   },
   "engines": {
     "node": ">=8.0.0",
