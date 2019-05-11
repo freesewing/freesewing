@@ -1,8 +1,12 @@
 export { default as Draft } from "./Draft";
 export { default as DraftConfigurator } from "./DraftConfigurator";
 export { default as Emblem } from "./Emblem";
+export { default as Footer } from "./Footer";
+export { default as Icon } from "./Icon";
 export { default as Logo } from "./Logo";
 export { default as Navbar } from "./Navbar";
 export { default as Ogol } from "./Ogol";
+export { default as SampleConfigurator } from "./SampleConfigurator";
 export { default as withGist } from "./withGist";
+export { default as withLanguage } from "./withLanguage";
 export { default as Workbench } from "./Workbench";
