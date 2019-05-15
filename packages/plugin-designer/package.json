@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-designer",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "A FreeSewing plugin to facilitate pattern design",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,8 +35,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.0.0-beta.1"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
