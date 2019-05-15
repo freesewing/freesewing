@@ -1,4 +1,6 @@
 footer {
+  @include title-font;
+  font-size: 90%;
   background: $fc-bg-dark;
   color: $fc-text-dark;
   margin: 0;

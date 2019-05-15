@@ -3,13 +3,13 @@ div.fs-sa {
 
   section{
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
   aside {
     padding: 1rem 0;
     max-width: 400px;
     min-width: 200px;
-    width: 30%;
+    width: 40%;
     background: $oc-gray-1;
     border-left: 1px solid $oc-gray-3;
   }
@@ -20,7 +20,6 @@ div.fs-sa {
     overflow-y: scroll;
   }
 }
-
 
 .theme-wrapper.dark {
   div.fs-sa {

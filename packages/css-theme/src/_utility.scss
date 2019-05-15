@@ -1,0 +1,7 @@
+@include xs-screen {
+  .only-xs { display: inherit!important; }
+  .not-xs { display: none!important; }
+}
+.only-xs { display: none; }
+.not-xs { display: inherit; }
+

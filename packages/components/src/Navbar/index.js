@@ -43,24 +43,50 @@ const Navbar = props => {
   if (typeof props.home === "function") homeProps.onClick = props.home;
   else homeProps.href = props.home;
 
+  let logo = (
+    <div className="logo">
+      <a id="home" {...homeProps}>
+        {props.logo}
+      </a>
+    </div>
+  );
+  let emblem = (
+    <div className="emblem">
+      <a {...homeProps}>{props.emblem}</a>
+    </div>
+  );
+
   return (
     <header className="navbar">
       <div>
-        <div className="logo">
-          <a id="home" {...homeProps}>
-            {props.logo}
-          </a>
+        <div className="only-xs">
+          {Object.keys(props.navs.mleft).map(key =>
+            renderNav(key, props.navs.mleft[key])
+          )}
         </div>
-        <div className="emblem">
-          <a {...homeProps}>{props.emblem}</a>
+        <div className="not-xs">
+          {logo}
+          {emblem}
+          {Object.keys(props.navs.left).map(key =>
+            renderNav(key, props.navs.left[key])
+          )}
         </div>
-        {Object.keys(props.navs.left).map(key =>
-          renderNav(key, props.navs.left[key])
-        )}
-        <div className="spread" />
-        {Object.keys(props.navs.right).map(key =>
-          renderNav(key, props.navs.right[key])
-        )}
+        <div className="spread">
+          <div className="only-xs">
+            {logo}
+            {emblem}
+          </div>
+        </div>
+        <div className="only-xs">
+          {Object.keys(props.navs.mright).map(key =>
+            renderNav(key, props.navs.mright[key])
+          )}
+        </div>
+        <div className="not-xs">
+          {Object.keys(props.navs.right).map(key =>
+            renderNav(key, props.navs.right[key])
+          )}
+        </div>
       </div>
     </header>
   );
@@ -70,13 +96,15 @@ Navbar.propTypes = {
   navs: PropTypes.object,
   logo: PropTypes.node,
   emblem: PropTypes.node,
-  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  toggleMenu: PropTypes.func,
+  toggleToc: PropTypes.func
 };
 
 Navbar.defaultProps = {
   home: "https://freesewing.org/",
   navs: { left: [], right: [] },
-  logo: <Logo size={32} color="#e9ecef" />,
-  emblem: <Emblem t1="Free" t2="Sewing" size={20} c1="#74c0fc" c2="#e9ecef" />
+  logo: <Logo embed color="#e9ecef" />,
+  emblem: <Emblem />
 };
 export default Navbar;

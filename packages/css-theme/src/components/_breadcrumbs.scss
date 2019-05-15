@@ -1,0 +1,31 @@
+nav.breadcrumbs {
+  ul {
+    @include title-font;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 95%;
+    li {
+      list-style-type: none;
+      display: inline-block;
+    }
+    li:first-child:before {
+      content: "";
+      padding: 0;
+    }
+    li:before {
+      content: "»";
+      padding: 0 0.25rem;
+      font-size: 125%;
+    }
+  }
+}
+
+.theme-wrapper.dark {
+  nav.breadcrumbs {
+    ul {
+      li {
+      }
+    }
+  }
+}
+

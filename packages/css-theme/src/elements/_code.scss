@@ -1,21 +1,21 @@
 .theme-wrapper.light :not(pre) > code[class*="language-"] {
-  padding: 0.125rem 0.5rem;
-  background: $oc-gray-6;
-  border: 1px $oc-gray-5 solid;
+  padding: 0.1rem 0.25rem;
+  background: $oc-gray-2;
+  border: 1px $oc-gray-3 solid;
   color: $oc-gray-9;
 }
 .theme-wrapper.dark :not(pre) > code[class*="language-"] {
   padding: 0.125rem 0.5rem;
-  background: $oc-gray-6;
-  border: 1px $oc-gray-5 solid;
-  color: $oc-gray-9;
+  background: $oc-gray-9;
+  border: 1px $oc-gray-7 solid;
+  color: $oc-gray-1;
 }
 
 div.gatsby-highlight {
   position: relative;
 }
-div.gatsby-highlight pre.language-js {
-  padding-top: 1rem;
+div.gatsby-highlight pre {
+  padding: 1.5rem 1rem;
 }
 
 pre.language-js:before,
@@ -50,5 +50,8 @@ pre.language-svg:before {
   content: "svg";
   background: rgba(129, 197, 255, 0.9);
 }
-
+code[class*="language-"],
+pre[class*="language-"] {
+  white-space: pre-wrap;
+}
 

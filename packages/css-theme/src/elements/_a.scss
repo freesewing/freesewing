@@ -1,12 +1,12 @@
-.theme-wrapper a {
+.theme-wrapper a:not([role="button"]) {
   text-decoration: none;
 }
-.theme-wrapper a:hover {
+.theme-wrapper a:not([role="button"]):hover {
   text-decoration: underline;
 }
-.theme-wrapper.light a {
+.theme-wrapper.light a:not([role="button"]) {
   color: $fc-link-light;
 }
-.theme-wrapper.dark a {
+.theme-wrapper.dark a:not([role="button"]) {
   color: $fc-link-dark;
 }

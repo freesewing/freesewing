@@ -14,18 +14,16 @@ const Footer = props => {
   };
   const links = {
     docs: {
+      blog: "https://" + props.language + ".freesewing.org/blog",
       aboutFreesewing:
         "https://" + props.language + ".freesewing.org/docs/about",
-      faq: "https://" + props.language + ".freesewing.org/docs/faq",
-      makerDocs: "https://" + props.language + ".freesewing.org/docs/",
-      devDocs: "https://" + props.language + ".freesewing.dev/"
+      faq: "https://" + props.language + ".freesewing.org/docs/faq"
     },
     community: {
       becomeAPatron:
         "https://" + props.language + ".freesewing.org/patrons/join",
-      showcase: "https://" + props.language + ".freesewing.org/showcase",
-      makerBlog: "https://" + props.language + ".freesewing.org/blog",
-      devBlog: "https://" + props.language + ".freesewing.dev/blog"
+      makerDocs: "https://" + props.language + ".freesewing.org/docs/",
+      devDocs: "https://" + props.language + ".freesewing.dev/"
     }
   };
   const styles = {
@@ -63,9 +61,6 @@ const Footer = props => {
           }
           return (
             <div key={l}>
-              <h4>
-                <FormattedMessage id={"app." + l} />
-              </h4>
               <ul>{items}</ul>
             </div>
           );

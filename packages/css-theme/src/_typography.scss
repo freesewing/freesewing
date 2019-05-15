@@ -1,0 +1,61 @@
+h1,h2,h3,h4,h5,h6,button { @include title-font; }
+h1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin: 1rem 0 2rem;
+}
+h2 {
+  font-size: 2.5rem;
+  border-top: 1px solid $oc-gray-4;
+  margin: 3.5rem 0 1rem;
+  padding: 1.5rem 0 1rem;
+  font-weight: 400;
+}
+.theme-wrapper.dark h2 {
+  border-color: $oc-gray-7;
+}
+h2.bare {
+  border: none;
+  margin: 0;
+}
+h3 {
+  font-size: 2rem;
+  margin: 1.75rem 0 1rem;
+}
+h4 {
+  font-size: 1.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+h5 {
+  font-size: 1.5rem;
+  margin: 1.25rem 0 0.5rem;
+}
+h6 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.25rem;
+}
+h2 a.anchor,
+h3 a.anchor,
+h4 a.anchor,
+h5 a.anchor,
+h6 a.anchor {
+  margin-left: -20px;
+  margin-right: 4px;
+}
+
+@include sm-screen {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.25rem; }
+}
+@include xs-screen {
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 2.5rem 0 0.5rem;
+  }
+  h3 { font-size: 1.85rem; }
+  h4 { font-size: 1.65rem; }
+}

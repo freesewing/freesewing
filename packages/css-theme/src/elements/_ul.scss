@@ -1,8 +1,13 @@
 ul.links {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.35;
+  font-size: 95%;
+  font-weight: normal;
   li {
     list-style-type: none;
+    a { display: inline-block; }
   }
+  li.active { font-weight: bold; }
   li:before {
 		content: "\00a0";
 		background: $oc-gray-5;
@@ -18,6 +23,7 @@ ul.links {
 	li.nodot:before {
 		content: none;
 	}
+  li.active:before,
   li:hover:before {
 		background: $fc-link-light;
 	}

@@ -10,10 +10,16 @@
 .theme-wrapper.light {
   background: $fc-bg-light;
   color: $fc-bg-dark;
+  .altbg {
+    background: $fc-altbg-light;
+  }
 }
 
 .theme-wrapper.dark {
   background: $fc-bg-dark;
   color: $fc-bg-light;
+  .altbg {
+    background: $fc-altbg-dark;
+  }
 }
 
