@@ -26,20 +26,22 @@
     "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
   },
   "peerDependencies": {
-    "@freesewing/css-theme": "^2.0.0-beta.2",
-    "@freesewing/i18n": "^2.0.0-beta.2",
-    "@freesewing/mui-theme": "^2.0.0-beta.2",
-    "@freesewing/pattern-info": "^2.0.0-beta.2",
-    "@freesewing/utils": "^2.0.0-beta.2",
+    "react": "^16.8",
+    "prop-types": "15.7.2",
+    "@freesewing/pattern-info": "^2.0.0-beta.3",
+    "@freesewing/mui-theme": "^2.0.0-beta.3",
+    "@freesewing/css-theme": "^2.0.0-beta.3",
+    "typeface-roboto-condensed": "latest",
+    "@freesewing/i18n": "^2.0.0-beta.3",
+    "@freesewing/utils": "^2.0.0-beta.3",
+    "react-intl": "^2.8.0",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^3.0.0-alpha.30",
-    "prismjs": "1.16.0",
-    "prop-types": "15.7.2",
-    "react": "^16.8",
-    "react-intl": "^2.8.0",
-    "typeface-roboto-condensed": "latest"
+    "prismjs": "1.16.0"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
