@@ -3,6 +3,7 @@ import Logo from "../Logo";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import IconButton from "@material-ui/core/IconButton";
 import Icon from "../Icon";
+import { version } from "../../package.json";
 
 const Footer = props => {
   const icons = {
@@ -66,6 +67,7 @@ const Footer = props => {
           );
         })}
       </div>
+      <p className="version">{version}</p>
     </footer>
   );
 };

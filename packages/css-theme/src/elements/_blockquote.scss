@@ -1,0 +1,20 @@
+blockquote {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background: $oc-gray-2;
+  border-left: .5rem solid $oc-gray-6;
+}
+.theme-wrapper.dark blockquote {
+  background: $oc-gray-8;
+  border-color: $oc-gray-5;
+}
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
+
+@include xs-screen {
+  blockquote {
+    margin: 1rem -1.5rem;
+    border: 0;
+  }
+}
+

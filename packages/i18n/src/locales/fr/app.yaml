@@ -220,6 +220,7 @@ youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
 makerDocs: Documentation créateur
 devDocs: Documentation développeur
-makerBlog: Blog de créateur
-devBlog: Blog de développeur
+getStarted: Commencer
+apiReference: Référence de l'API
+tutorial: Tutoriel
 

@@ -220,6 +220,7 @@ youAreNotLoggedIn: No has iniciado sesión
 yourRights: Tus derechos
 makerDocs: Documentación del creador
 devDocs: Documentación del desarrollador
-makerBlog: Blog de creadores
-devBlog: Blog de desarrolladores
+getStarted: Empezar
+apiReference: Referencia API
+tutorial: Tutorial
 
