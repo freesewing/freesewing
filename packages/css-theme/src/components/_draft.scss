@@ -50,6 +50,8 @@ svg.freesewing.draft {
   .center{ text-anchor:middle; }
   .right{ text-anchor:end; }
 
+  .scribble{ @include scribble-font; }
+
   /* Plugins */
   text.title-nr {
     font-size: 32px;
@@ -82,6 +84,7 @@ svg.freesewing.draft text {
   .fill-mark{ fill: $fc-draft-mark-light; }
   .fill-contrast{ fill: $fc-draft-contrast-light; }
   .fill-note{ fill: $fc-draft-note-light; }
+  .fill-bg{ fill: $fc-bg-light; }
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;
@@ -112,6 +115,7 @@ svg.freesewing.draft text {
   .fill-mark{ fill: $fc-draft-mark-dark; }
   .fill-contrast{ fill: $fc-draft-contrast-dark; }
   .fill-note{ fill: $fc-draft-note-dark; }
+  .fill-bg{ fill: $fc-bg-dark; }
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;

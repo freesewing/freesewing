@@ -1,20 +1,86 @@
 blockquote {
-  margin: 1rem 0;
+  border-radius: 4px;
+  margin: 2rem 0;
   padding: 1.5rem;
-  background: $oc-gray-2;
-  border-left: .5rem solid $oc-gray-6;
-}
-.theme-wrapper.dark blockquote {
-  background: $oc-gray-8;
-  border-color: $oc-gray-5;
+  background: $oc-gray-1;
+  border: 1px solid $oc-gray-2;
+  position: relative;
+  svg.icon {
+    color: $oc-gray-7;
+    position: absolute;
+    top: calc(50% - 18px);
+    left: -18px;
+    padding: 5px;
+    background: inherit;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-color: inherit;
+  }
 }
 blockquote > :first-child { margin-top: 0; }
-blockquote > :last-child { margin-bottom: 0; }
+blockquote > p:last-of-type { margin-bottom: 0; }
+
+blockquote.note {
+  background: $oc-blue-0;
+  border-color: $oc-blue-1;
+  svg.icon.note {
+    color: $oc-blue-7;
+  }
+}
+blockquote.tip {
+  background: $oc-grape-0;
+  border-color: $oc-grape-1;
+  svg.icon.tip {
+    color: $oc-grape-7;
+  }
+}
+blockquote.warning {
+  background: $oc-red-0;
+  border-color: $oc-red-1;
+  svg.icon.warning {
+    color: $oc-red-7;
+  }
+}
 
 @include xs-screen {
   blockquote {
-    margin: 1rem -1.5rem;
-    border: 0;
+    margin: 2rem -1.5rem;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    svg.icon {
+      left: calc(50% - 18px);
+      top: -18px;
+    }
+  }
+}
+
+
+.theme-wrapper.dark {
+  blockquote {
+    background: $oc-gray-8;
+    border-color: $oc-gray-7;
+  }
+  blockquote.note {
+    background: $oc-blue-9;
+    border-color: $oc-blue-8;
+    svg.icon.note {
+      color: $oc-blue-2;
+    }
+  }
+  blockquote.tip {
+    background: $oc-grape-9;
+    border-color: $oc-grape-8;
+    svg.icon.tip {
+      color: $oc-grape-2;
+    }
+  }
+  blockquote.warning {
+    background: $oc-red-9;
+    border-color: $oc-red-8;
+    svg.icon.warning {
+      color: $oc-red-2;
+    }
   }
 }
 
