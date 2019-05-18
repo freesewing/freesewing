@@ -3,11 +3,13 @@ import { version } from "../package.json";
 export default {
   name: "examples",
   version,
-  // This is not needed, but is here to sidestep an issue in freesewing
-  // that needs to be fixed but hasn't yet
-  dependencies: {
-    path_attr: "path_ops"
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  optionGroups: {
+    fit: ["fixme"]
   },
+  measurements: [],
+  dependencies: {},
   parts: [
     "point_attr",
     "path__curve",
@@ -70,6 +72,15 @@ export default {
     "utils_lineintersectscircle",
     "utils_curveintersectsy",
     "utils_curveintersectsx",
-    "utils_splitcurve"
-  ]
+    "utils_splitcurve",
+    "docs_overview"
+  ],
+  options: {
+    // Optiongroups are needed for now, because workbench
+    fixme: {
+      pct: 50,
+      min: 0,
+      max: 100
+    }
+  }
 };

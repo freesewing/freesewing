@@ -25,6 +25,7 @@
     "test": "echo \"examples: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
+    "start": "rollup -c -w",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {

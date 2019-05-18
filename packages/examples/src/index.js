@@ -65,6 +65,8 @@ import draftUtils_splitcurve from "./utils_splitcurve";
 import draftSettings_sa from "./settings_sa";
 import draftSnippet_attr from "./snippet_attr";
 import draftSnippet_clone from "./snippet_clone";
+// Docs illustrations
+import draftDocs_overview from "./docs_overview";
 
 // Create design
 const Pattern = new freesewing.Design(config, plugins);
@@ -135,7 +137,8 @@ let methods = {
   draftUtils_lineintersectscircle,
   draftUtils_curveintersectsx,
   draftUtils_curveintersectsy,
-  draftUtils_splitcurve
+  draftUtils_splitcurve,
+  draftDocs_overview
 };
 
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m];
