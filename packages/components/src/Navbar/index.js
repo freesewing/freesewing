@@ -55,14 +55,16 @@ const Navbar = props => {
       <a {...homeProps}>{props.emblem}</a>
     </div>
   );
-
+  console.log(props);
   return (
     <header className="navbar">
       <div>
         <div className="only-xs">
-          {Object.keys(props.navs.mleft).map(key =>
-            renderNav(key, props.navs.mleft[key])
-          )}
+          {
+            //Object.keys(props.navs.mleft).map(key =>
+            //renderNav(key, props.navs.mleft[key])
+            //)
+          }
         </div>
         <div className="not-xs">
           {logo}
@@ -78,9 +80,11 @@ const Navbar = props => {
           </div>
         </div>
         <div className="only-xs">
-          {Object.keys(props.navs.mright).map(key =>
-            renderNav(key, props.navs.mright[key])
-          )}
+          {
+            //Object.keys(props.navs.mright).map(key =>
+            //renderNav(key, props.navs.mright[key])
+            // )
+          }
         </div>
         <div className="not-xs">
           {Object.keys(props.navs.right).map(key =>
@@ -103,7 +107,7 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   home: "https://freesewing.org/",
-  navs: { left: [], right: [] },
+  navs: { left: [], right: [], mleft: {}, mright: {} },
   logo: <Logo embed color="#e9ecef" />,
   emblem: <Emblem />
 };

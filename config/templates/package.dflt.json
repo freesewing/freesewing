@@ -10,10 +10,8 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf dist",
-    "nodebuild": "rollup -c -o dist/index.js -f cjs",
-    "modulebuild": "rollup -c -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "watch": "rollup -c -w",
+    "build": "rollup -c",
     "publish": "npm run build && npm publish --access public"
   },
   "peerDependencies": {},

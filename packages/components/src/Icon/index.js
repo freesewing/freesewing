@@ -5,7 +5,7 @@ import icons from "./icons";
 const Icon = props => {
   return (
     <svg
-      className={props.classes}
+      className={props.className}
       xmlns="http://www.w3.org/2000/svg"
       width={props.size}
       height={props.size}

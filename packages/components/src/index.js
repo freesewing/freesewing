@@ -1,3 +1,4 @@
+export { default as Blockquote } from "./Blockquote";
 export { default as Draft } from "./Draft";
 export { default as DraftConfigurator } from "./DraftConfigurator";
 export { default as Emblem } from "./Emblem";

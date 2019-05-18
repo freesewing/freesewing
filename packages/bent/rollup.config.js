@@ -8,18 +8,26 @@ import url from "rollup-plugin-url";
 import postcss from "rollup-plugin-postcss";
 import svgr from "@svgr/rollup";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import { name, version, description, author, license } from "./package.json";
+import {
+  name,
+  version,
+  description,
+  author,
+  license,
+  main,
+  module
+} from "./package.json";
 
 export default {
   input: "src/index.js",
   output: [
     {
-      file: "dist/index.js",
+      file: main,
       format: "cjs",
       sourcemap: true
     },
     {
-      file: "dist/index.mjs",
+      file: module,
       format: "es",
       sourcemap: true
     }

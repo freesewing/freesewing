@@ -1,5 +1,5 @@
 const darkBg = "#212529";
-const lightBg = "#f8f9fa";
+const lightBg = "#ffffff";
 const colors = {
   light: {
     primary: darkBg,

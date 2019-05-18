@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import withGist from "../withGist";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import Navbar from "../Navbar";
+//import Navbar from "../Navbar";
 import { defaultGist, storage } from "@freesewing/utils";
 import { dark, light } from "@freesewing/mui-theme";
 import withLanguage from "../withLanguage";
@@ -118,7 +118,9 @@ const Workbench = props => {
       }
     }
   };
-
+  // FIXME:
+  navs.mleft = navs.left;
+  navs.mright = navs.right;
   let main = null;
   switch (display) {
     case "languages":
@@ -182,7 +184,7 @@ const Workbench = props => {
           theme === "light" ? "theme-wrapper light" : "theme-wrapper dark"
         }
       >
-        {display !== "welcome" ? (
+        {display !== "welcome" && false ? (
           <Navbar navs={navs} home={() => saveDisplay("welcome")} />
         ) : null}
         {main}
