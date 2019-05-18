@@ -1,3 +1,7 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none;
+}
 .theme-wrapper.light :not(pre) > code[class*="language-"] {
   padding: 0.1rem 0.25rem;
   background: $oc-gray-2;
@@ -50,8 +54,29 @@ pre.language-svg:before {
   content: "svg";
   background: rgba(129, 197, 255, 0.9);
 }
-code[class*="language-"],
+pre code[class*="language-"],
 pre[class*="language-"] {
   white-space: pre-wrap;
+  border-radius: 4px;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
 }
+.theme-wrapper.dark pre[class*="language-"] {
+  border: 1px solid $oc-gray-8;
+}
+@include xs-screen {
+  pre code[class*="language-"],
+  pre[class*="language-"] {
+    margin: 2rem -1.5rem;
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+  pre.language-js:before,
+  pre.language-json:before,
+  pre.language-svg:before,
+  pre.language-bash:before {
+    right: calc(20px - 1.5rem);
+  }
+}
+
 
