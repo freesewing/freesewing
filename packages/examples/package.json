@@ -23,7 +23,6 @@
     "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
     "build": "npm run clean && npm run nodebuild && npm run modulebuild",
     "test": "echo \"examples: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "start": "rollup -c -w",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
