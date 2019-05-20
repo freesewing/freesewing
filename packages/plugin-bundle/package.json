@@ -34,8 +34,19 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.3"
+    "@freesewing/core": "^2.0.0-beta.4"
   },
+  "dependencies": {
+    "@freesewing/plugin-cutonfold": "^2.0.0-beta.4",
+    "@freesewing/plugin-dimension": "^2.0.0-beta.4",
+    "@freesewing/plugin-grainline": "^2.0.0-beta.4",
+    "@freesewing/plugin-logo": "^2.0.0-beta.4",
+    "@freesewing/plugin-title": "^2.0.0-beta.4",
+    "@freesewing/plugin-scalebox": "^2.0.0-beta.4",
+    "@freesewing/plugin-round": "^2.0.0-beta.4",
+    "@freesewing/plugin-sprinkle": "^2.0.0-beta.4"
+  },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
