@@ -89,10 +89,14 @@ svg.freesewing.draft {
 }
 
 div.design {
-  h4.point.c0 { border-bottom: 1px solid $oc-red-6; }
-  h4.point.c1 { border-bottom: 1px solid $oc-green-6; }
-  h4.point.c2 { border-bottom: 1px solid $oc-blue-6; }
-  h4.point.c3 { border-bottom: 1px solid $oc-grape-6; }
+  @include title-font;
+  font-size: 115%;
+  margin: 1rem 0;
+  text-align: left;
+  h6.point.c0 { border-bottom: 1px solid $oc-red-6; }
+  h6.point.c1 { border-bottom: 1px solid $oc-green-6; }
+  h6.point.c2 { border-bottom: 1px solid $oc-blue-6; }
+  h6.point.c3 { border-bottom: 1px solid $oc-grape-6; }
 }
 
 .theme-wrapper.light svg.freesewing.draft {
@@ -105,10 +109,10 @@ div.design {
 }
 
 .theme-wrapper.light div.design {
-  h4.path.c0 { background-color: rgba($oc-red-6, 0.3) }
-  h4.path.c1 { background-color: rgba($oc-green-6, 0.3) }
-  h4.path.c2 { background-color: rgba($oc-blue-6, 0.3) }
-  h4.path.c3 { background-color: rgba($oc-grape-6, 0.3) }
+  h6.path.c0 { background-color: rgba($oc-red-6, 0.3) }
+  h6.path.c1 { background-color: rgba($oc-green-6, 0.3) }
+  h6.path.c2 { background-color: rgba($oc-blue-6, 0.3) }
+  h6.path.c3 { background-color: rgba($oc-grape-6, 0.3) }
 }
 
 .theme-wrapper.dark svg.freesewing.draft {
@@ -122,8 +126,8 @@ div.design {
 }
 
 .theme-wrapper.dark div.design {
-  h4.path.c0 { background-color: rgba($oc-red-6, 0.5) }
-  h4.path.c1 { background-color: rgba($oc-green-6, 0.5) }
-  h4.path.c2 { background-color: rgba($oc-blue-6, 0.5) }
-  h4.path.c3 { background-color: rgba($oc-grape-6, 0.5) }
+  h6.path.c0 { background-color: rgba($oc-red-6, 0.5) }
+  h6.path.c1 { background-color: rgba($oc-green-6, 0.5) }
+  h6.path.c2 { background-color: rgba($oc-blue-6, 0.5) }
+  h6.path.c3 { background-color: rgba($oc-grape-6, 0.5) }
 }
