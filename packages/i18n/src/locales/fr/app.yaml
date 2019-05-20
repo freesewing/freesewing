@@ -220,6 +220,7 @@ youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
 makerDocs: Maker documentation
 devDocs: Developer documentation
-makerBlog: Maker blog
-devBlog: Developer blog
 slogan: A JavaScript library for made-to-measure sewing patterns
+getStarted: Get started
+apiReference: API Reference
+tutorial: Tutorial
