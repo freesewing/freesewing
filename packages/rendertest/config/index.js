@@ -14,16 +14,14 @@ export default {
     content: ["colors", "circles", "text", "snippets", "macros"]
   },
   measurements: [],
-  dependencies: {},
   parts: ["test"],
-  inject: {},
-  hide: [],
   options: {
     width: { mm: 200, min: 50, max: 500 },
     colors: { bool: true },
     circles: { bool: true },
     text: { bool: true },
     snippets: { bool: true },
-    macros: { bool: true }
+    macros: { bool: true },
+    widthHd: { bool: true }
   }
 };

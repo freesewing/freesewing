@@ -8,10 +8,22 @@ export default function(part) {
   let { macro, store, options, Path, paths, Point } = part.shorthand();
   store.set("y", 0);
   store.set("w", options.width);
-  macro("hd", {
-    from: new Point(0, 0),
-    to: new Point(options.width, 0)
-  });
+  let colors = [
+    "fabric",
+    "lining",
+    "interfacing",
+    "canvas",
+    "various",
+    "mark",
+    "contrast",
+    "note"
+  ];
+  store.set("colors", colors);
+  if (options.widthHd)
+    macro("hd", {
+      from: new Point(0, 0),
+      to: new Point(options.width, 0)
+    });
   if (options.colors) colors(part);
   if (options.circles) circles(part);
   if (options.text) text(part);

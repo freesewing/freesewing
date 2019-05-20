@@ -3,17 +3,7 @@ export default function(part) {
 
   let y = store.get("y");
   let w = store.get("w");
-  let colors = [
-    "fabric",
-    "lining",
-    "interfacing",
-    "canvas",
-    "various",
-    "mark",
-    "contrast",
-    "note"
-  ];
-  store.set("colors", colors);
+  let colors = store.get("colors");
   let sizes = ["xs", "sm", "", "l", "xl"];
   let utility = ["dotted", "dashed", "lashed", "sa", "help", "hidden"];
 

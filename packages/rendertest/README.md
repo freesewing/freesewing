@@ -53,7 +53,7 @@
 
 # @freesewing/rendertest
 
-A freesewing pattern to test (y)our render engine our CSS
+A FreeSewing pattern to test (y)our render engine our CSS
 
 
 
