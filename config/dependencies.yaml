@@ -68,6 +68,9 @@ components:
     "@freesewing/pattern-info": "^{{version}}"
     "@freesewing/mui-theme": "^{{version}}"
     "@freesewing/css-theme": "^{{version}}"
+    "@freesewing/core": "^{{version}}"
+    "@freesewing/examples": "^{{version}}"
+    "@freesewing/rendertest": "^{{version}}"
     "typeface-roboto-condensed": "latest"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/utils": "^{{version}}"
@@ -135,6 +138,16 @@ patterns:
   peer:
     "@freesewing/core": "^{{version}}"
     "@freesewing/plugin-bundle": "^{{version}}"
+plugin-bundle:
+  _:
+    "@freesewing/plugin-cutonfold": "^{{version}}"
+    "@freesewing/plugin-dimension": "^{{version}}"
+    "@freesewing/plugin-grainline": "^{{version}}"
+    "@freesewing/plugin-logo": "^{{version}}"
+    "@freesewing/plugin-title": "^{{version}}"
+    "@freesewing/plugin-scalebox": "^{{version}}"
+    "@freesewing/plugin-round": "^{{version}}"
+    "@freesewing/plugin-sprinkle": "^{{version}}"
 simon:
   peer:
     "@freesewing/brian": "^{{version}}"
