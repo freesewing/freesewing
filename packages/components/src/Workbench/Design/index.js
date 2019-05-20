@@ -132,10 +132,10 @@ const Design = props => {
     container: {
       padding: "0 1rem"
     },
-    h3: {
+    h5: {
       margin: "0.5rem 0"
     },
-    h4: {
+    h6: {
       margin: "0.25rem 0 0 0.5rem"
     },
     ul: {
@@ -152,21 +152,21 @@ const Design = props => {
   let info = [];
   for (let part of Object.keys(props.focus)) {
     info.push(
-      <h3 key={"part-" + part} style={styles.h3}>
+      <h5 key={"part-" + part} style={styles.h5}>
         parts.<b>{part}</b>
-      </h3>
+      </h5>
     );
     for (let i in props.focus[part].paths) {
       let name = props.focus[part].paths[i];
       let path = props.parts[part].paths[name];
       info.push(
-        <h4
+        <h6
           key={"patitle-" + name}
-          style={styles.h4}
+          style={styles.h6}
           className={"path c" + (i % 4)}
         >
           path.<b>{name}</b>
-        </h4>
+        </h6>
       );
       info.push(
         <ul className="links" key={"ops-" + name} style={styles.ul}>
@@ -183,13 +183,13 @@ const Design = props => {
       let name = props.focus[part].points[i];
       let point = props.parts[part].points[name];
       info.push(
-        <h4
+        <h6
           key={"potitle-" + name}
-          style={styles.h4}
+          style={styles.h6}
           className={"point c" + (i % 4)}
         >
           point.<b>{name}</b>
-        </h4>
+        </h6>
       );
       info.push(
         <ul className="links" key={"pdata-" + name} style={styles.ul}>

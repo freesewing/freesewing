@@ -55,7 +55,6 @@ const Navbar = props => {
       <a {...homeProps}>{props.emblem}</a>
     </div>
   );
-  console.log(props);
   return (
     <header className="navbar">
       <div>
