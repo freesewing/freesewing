@@ -9,9 +9,9 @@ export default part => {
   paths.example = new Path()
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-    .attr("class", "stroke-xl canvas")
-    .attr("data-text", "msg")
-    .attr("data-text-class", "center fill-note");
+    .attr("class", "canvas")
+    .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
+    .attr("data-text-class", "text-xs center");
 
   return part;
 };

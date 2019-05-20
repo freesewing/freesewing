@@ -9,7 +9,9 @@ export default {
     fit: ["fixme"]
   },
   measurements: [],
-  dependencies: {},
+  dependencies: {
+    point_attr: "path_attr"
+  },
   parts: [
     "point_attr",
     "path__curve",
@@ -56,6 +58,7 @@ export default {
     "point_rotate",
     "point_translate",
     "settings_sa",
+    "snippet",
     "snippet_attr",
     "snippet_clone",
     "utils_linesintersect",
@@ -73,9 +76,11 @@ export default {
     "utils_curveintersectsy",
     "utils_curveintersectsx",
     "utils_splitcurve",
-    "docs_overview"
+    "docs_overview",
+    "docs_coords"
   ],
   options: {
+    focus: "",
     // Optiongroups are needed for now, because workbench
     fixme: {
       pct: 50,

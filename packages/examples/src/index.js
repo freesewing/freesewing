@@ -63,10 +63,12 @@ import draftUtils_curveintersectsy from "./utils_curveintersectsy";
 import draftUtils_splitcurve from "./utils_splitcurve";
 // Various
 import draftSettings_sa from "./settings_sa";
+import draftSnippet from "./snippet";
 import draftSnippet_attr from "./snippet_attr";
 import draftSnippet_clone from "./snippet_clone";
 // Docs illustrations
 import draftDocs_overview from "./docs_overview";
+import draftDocs_coords from "./docs_coords";
 
 // Create design
 const Pattern = new freesewing.Design(config, plugins);
@@ -121,6 +123,7 @@ let methods = {
   draftPoint_rotate,
   draftPoint_translate,
   draftSettings_sa,
+  draftSnippet,
   draftSnippet_attr,
   draftSnippet_clone,
   draftUtils_linesintersect,
@@ -138,7 +141,8 @@ let methods = {
   draftUtils_curveintersectsx,
   draftUtils_curveintersectsy,
   draftUtils_splitcurve,
-  draftDocs_overview
+  draftDocs_overview,
+  draftDocs_coords
 };
 
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m];

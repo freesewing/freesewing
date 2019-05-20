@@ -1,5 +1,5 @@
 export default part => {
-  let { Point, points, Path, paths } = part.shorthand();
+  let { Point, points, Path, paths, options } = part.shorthand();
 
   /**
    * Returs the value passed to it randomized with a given tolerance
@@ -102,7 +102,7 @@ export default part => {
         points[name + "TopLeft"]
       )
       .close()
-      .attr("class", "fabric");
+      .attr("class", options.focus === name ? "note" : "fabric");
   };
 
   /**
@@ -141,10 +141,12 @@ export default part => {
       .line(to)
       .line(points[name + "Tip2"])
       .attr("class", "fabric");
+    if (options.focus === name) path = path.attr("class", "note");
     if (text)
       return path
         .attr("data-text", "  " + text)
-        .attr("data-text-class", "scribble");
+        .attr("data-text-class", "scribble")
+        .attr("data-text-class", options.focus === name ? "fill-note" : "");
     else return path;
   };
 
@@ -155,6 +157,8 @@ export default part => {
       points[name + "Mid"]
         .attr("data-text", name)
         .attr("data-text-class", "center scribble");
+      if (options.focus === name)
+        points[name + "Mid"].attr("data-text-class", "fill-note");
     }
   };
 
@@ -275,12 +279,10 @@ export default part => {
   y += 18;
   drawBox("Snippets", x, y, w, h);
   x = -35;
-  y = -15;
+  y = -3;
   w = 25;
   h = 20;
   drawBox("config", x, y, w, h);
-  y += 23;
-  drawBox("utils", x, y, w, h);
   y += 23;
   drawBox("Store", x, y, w, h);
   x = -40;
