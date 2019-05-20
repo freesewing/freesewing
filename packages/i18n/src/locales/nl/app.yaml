@@ -218,9 +218,9 @@ youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
-makerDocs: Maker documentation
-devDocs: Developer documentation
-slogan: A JavaScript library for made-to-measure sewing patterns
-getStarted: Get started
-apiReference: API Reference
-tutorial: Tutorial
+makerDocs: Maker documentatie
+devDocs: Documentatie voor ontwikkelaars
+slogan: Een JavaScript bibliotheek voor naaipatronen op maat
+getStarted: Aan de slag
+apiReference: API Referentie
+tutorial: Handleiding
