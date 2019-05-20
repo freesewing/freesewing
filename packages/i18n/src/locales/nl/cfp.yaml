@@ -19,9 +19,9 @@ enterMeasurements: Maten manueel invoeren
 preloadMeasurements: Een set van maten inladen
 size: Maat
 noRequiredMeasurements: Dit patroon heeft geen vereiste maten
-howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
-seeDocsAt: Documentation on this topic is available at
-designModeIsOn: Design mode is on
-designModeIsOff: Design mode is off
-turnOn: Turn on
-turnOff: Turn off
+howtoAddMeasurements: Om maten te vereisen, voeg je ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
+seeDocsAt: Documentatie over dit onderwerp is beschikbaar op
+designModeIsOn: Ontwerpmodus is aan
+designModeIsOff: Ontwerpmodus is uit
+turnOn: Inschakelen
+turnOff: Uitschakelen
