@@ -6,9 +6,16 @@ import i18nPlugin from "@freesewing/plugin-i18n";
 import Draft from "../Draft";
 import Design from "../Workbench/Design";
 import { FormattedMessage } from "react-intl";
+import source from "./source";
+import IconButton from "@material-ui/core/IconButton";
+import DesignIcon from "@material-ui/icons/LocationSearching";
+import CodeIcon from "@material-ui/icons/Code";
+import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
+import Prism from "prismjs";
 
 const Example = props => {
   const [design, setDesign] = useState(false);
+  const [code, setCode] = useState(false);
   const [focus, setFocus] = useState(null);
 
   const raiseEvent = (type, data) => {
@@ -54,57 +61,67 @@ const Example = props => {
   pattern.draft();
   const patternProps = pattern.getRenderProps();
   return (
-    <figure className={design ? "design" : ""}>
-      <Draft
-        {...patternProps}
-        design={design}
-        focus={focus}
-        raiseEvent={raiseEvent}
-      />
-      <figcaption>
-        {props.caption}&nbsp;|&nbsp;
-        {design ? (
-          <React.Fragment>
-            <FormattedMessage id="cfp.designModeIsOn" />
-            &nbsp; (
-            <a href="#logo" onClick={() => setDesign(false)}>
-              <FormattedMessage id="cfp.turnOff" />
-            </a>
-            )
-            {focusCount > 0 ? (
-              <React.Fragment>
-                &ensp; (
-                <a
-                  href="#logo"
-                  onClick={() => raiseEvent("clearFocusAll", null)}
-                >
-                  <FormattedMessage id="app.reset" />
-                </a>
+    <figure className={design ? "design example" : "example"}>
+      <div className="example">
+        <div className="actions">
+          {design ? (
+            <IconButton
+              color="primary"
+              variant="contained"
+              onClick={() => raiseEvent("clearFocusAll", null)}
+            >
+              <ResetIcon />
+            </IconButton>
+          ) : null}
+          <IconButton
+            color="inherit"
+            className={design ? "active" : ""}
+            onClick={() => setDesign(!design)}
+          >
+            <DesignIcon color="inherit" />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            className={code ? "active" : ""}
+            onClick={() => setCode(!code)}
+          >
+            <CodeIcon color="inherit" />
+          </IconButton>
+        </div>
+        <Draft
+          {...patternProps}
+          design={design}
+          focus={focus}
+          raiseEvent={raiseEvent}
+        />
+      </div>
+      <figcaption>{props.caption}</figcaption>
+      {design ? (
+        <div className="design">
+          <Design
+            focus={focus}
+            design={design}
+            raiseEvent={raiseEvent}
+            parts={patternProps.parts}
+          />
+        </div>
+      ) : null}
+      {code ? (
+        <div className="gatsby-highlight">
+          <pre className="language-js">
+            <code
+              className="language-js"
+              dangerouslySetInnerHTML={{
+                __html: Prism.highlight(
+                  source[props.part].toSource(),
+                  Prism.languages.javascript,
+                  "javascript"
                 )
-              </React.Fragment>
-            ) : null}
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            <FormattedMessage id="cfp.designModeIsOff" />
-            &nbsp; (
-            <a href="#logo" onClick={() => setDesign(true)}>
-              <FormattedMessage id="cfp.turnOn" />
-            </a>
-            )
-          </React.Fragment>
-        )}
-        {design ? (
-          <div className="design">
-            <Design
-              focus={focus}
-              design={design}
-              raiseEvent={raiseEvent}
-              parts={patternProps.parts}
+              }}
             />
-          </div>
-        ) : null}
-      </figcaption>
+          </pre>
+        </div>
+      ) : null}
     </figure>
   );
 };
