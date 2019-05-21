@@ -52,12 +52,6 @@ const Example = props => {
   if (props.part !== "") settings.only = [props.part];
   const pattern = new patterns[props.pattern](settings);
 
-  const styles = {
-    paragraph: {
-      padding: "0 1rem"
-    }
-  };
-
   pattern.draft();
   const patternProps = pattern.getRenderProps();
   return (

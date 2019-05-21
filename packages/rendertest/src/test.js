@@ -8,7 +8,7 @@ export default function(part) {
   let { macro, store, options, Path, paths, Point } = part.shorthand();
   store.set("y", 0);
   store.set("w", options.width);
-  let colors = [
+  let color = [
     "fabric",
     "lining",
     "interfacing",
@@ -18,7 +18,7 @@ export default function(part) {
     "contrast",
     "note"
   ];
-  store.set("colors", colors);
+  store.set("colors", color);
   if (options.widthHd)
     macro("hd", {
       from: new Point(0, 0),

@@ -1,7 +1,7 @@
 import { box } from "./shared";
 
 export default part => {
-  let { Point, points, paths, Path, macro } = part.shorthand();
+  let { Point, points, paths, Path } = part.shorthand();
 
   points.origin = new Point(10, 10);
   points.x = new Point(100, 10);
