@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,8 +35,6 @@
     "@freesewing/core": "^2.0.0-beta.4",
     "@freesewing/plugin-bundle": "^2.0.0-beta.4"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
