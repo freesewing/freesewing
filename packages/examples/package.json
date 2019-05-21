@@ -71,6 +71,7 @@
   },
   "files": [
     "dist/*",
+    "scr/*",
     "README.md",
     "package.json"
   ],
