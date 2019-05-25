@@ -59,22 +59,24 @@ const Example = props => {
   return (
     <figure className={design ? "design example" : "example"}>
       <div className="example">
-        <div className="actions">
-          {design ? (
-            <IconButton
+        {props.design ? (
+          <div className="actions">
+            {design ? (
+              <IconButton
+                color="primary"
+                onClick={() => raiseEvent("clearFocusAll", null)}
+              >
+                <ResetIcon />
+              </IconButton>
+            ) : null}
+            <Switch
+              checked={design}
+              onChange={() => setDesign(!design)}
+              value={design}
               color="primary"
-              onClick={() => raiseEvent("clearFocusAll", null)}
-            >
-              <ResetIcon />
-            </IconButton>
-          ) : null}
-          <Switch
-            checked={design}
-            onChange={() => setDesign(!design)}
-            value={design}
-            color="primary"
-          />
-        </div>
+            />
+          </div>
+        ) : null}
         <Draft
           {...patternProps}
           design={design}
@@ -107,7 +109,7 @@ Example.propTypes = {
 
 Example.defaultProps = {
   pattern: "examples",
-  design: false,
+  design: true,
   caption: "",
   options: {},
   part: ""
