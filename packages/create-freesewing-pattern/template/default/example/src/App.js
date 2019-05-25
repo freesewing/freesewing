@@ -3,7 +3,6 @@ import freesewing from "@freesewing/core";
 import { Workbench } from "@freesewing/components";
 import "typeface-roboto-condensed";
 import "@freesewing/css-theme";
-import "./App.css";
 
 import Pattern from "pattern";
 
