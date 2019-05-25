@@ -103,7 +103,6 @@ let methods = {
   draftPath_join,
   draftPath_length,
   draftPath_offset,
-  draftPath_ops,
   draftPath_reverse,
   draftPath_shiftalong,
   draftPath_shiftfractionalong,

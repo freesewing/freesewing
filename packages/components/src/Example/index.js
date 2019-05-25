@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import examples from "@freesewing/examples";
 import rendertest from "@freesewing/rendertest";
-import i18nPlugin from "@freesewing/plugin-i18n";
 import Draft from "../Draft";
 import Design from "../Workbench/Design";
-import { FormattedMessage } from "react-intl";
 import IconButton from "@material-ui/core/IconButton";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
 import Switch from "@material-ui/core/Switch";
@@ -47,12 +45,6 @@ const Example = props => {
   const settings = { options: { ...props.options } };
   if (props.part !== "") settings.only = [props.part];
   const pattern = new patterns[props.pattern](settings);
-
-  const style = {
-    thumb: {
-      background: "blue"
-    }
-  };
 
   pattern.draft();
   const patternProps = pattern.getRenderProps();
