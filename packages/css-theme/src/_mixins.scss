@@ -4,6 +4,9 @@
 @mixin sm-screen {
   @media (min-width: 600px) and (max-width: 959px) { @content; }
 }
+@mixin lg-screen {
+  @media (min-width: 960px) { @content; }
+}
 
 @mixin body-font { font-family:  -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 @mixin title-font { font-family: 'Roboto Condensed', sans-serif; }

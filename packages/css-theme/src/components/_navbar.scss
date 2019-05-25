@@ -5,8 +5,7 @@ header.navbar {
   padding: 0 26px;
   background: $fc-bg-dark;
   z-index: 15;
-  div.only-xs,
-  div.not-xs {
+  div {
     align-items: center;
   }
 
@@ -87,36 +86,7 @@ header.navbar > div {
 
 @include xs-screen {
   header.navbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 42px;
-    width: calc(100% - 26px);
-    padding: 0 13px;
-  	> div {
-  	  height: 42px;
-  	}
-  	div.spread {
-      justify-content: center;
-    }
-  	div.logo,
-  	div.emblem {
-  	  margin-right: 12px;
-  	}
-  	div.logo a {
-  	  height: 32px;
-  	  width: 32px;
-  	}
-  	div.emblem a {
-      font-size: 22px;
-  	}
-    a.nav,
-    button {
-      border: 0;
-  	  padding: 0 6px;
-  	  height: 42px;
-  	  line-height: 42px;
-  	}
+    display: none;
   }
 }
 

@@ -1,46 +1,22 @@
 figure.example {
   div.example {
     position: relative;
-    svg.freesewing.draft {
-      box-shadow: 0 0 3px #0006;
-    }
     div.actions {
       position: absolute;
-      right: 5px;
-      bottom: 14px;
-      button {
-        display: block;
-        background: $fc-text-light;
-        color: $fc-bg-light;
-        padding: 5px;
-        margin: 5px;
-      }
-      button:hover {
-        background: $oc-green-7;
-      }
-      button.active {
-        background: $oc-green-7;
-      }
+      right: 0;
+      top: 0;
     }
   }
-  > div.design {
-    border-top: 2px solid $oc-gray-4;
-    border-bottom: 2px solid $oc-gray-4;
+}
+figure.design.example {
+  border: 1px solid $oc-gray-4;
+  svg.freesewing.draft.design {
+    border-bottom: 1px solid $oc-gray-4;
+  }
+  figcaption {
+    display: none;
   }
 }
 
 .theme-wrapper.dark figure.example div.example {
-  svg.freesewing.draft {
-    box-shadow: none;
-    border: 1px solid $oc-gray-8;
-  }
-  div.actions {
-    button {
-      background: $fc-text-dark;
-      color: $fc-bg-light;
-    }
-    button.active {
-      background: $fc-text-dark;
-    }
-  }
 }

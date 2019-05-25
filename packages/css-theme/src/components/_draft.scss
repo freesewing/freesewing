@@ -129,11 +129,13 @@ svg.freesewing.draft text {
 
 /* SVG defs (snippets) are in the shadow DOM */
 g.snippet.notch > circle,
-g.snippet.bnotch > circle,
-g.snippet.bnotch > path,
-g.snippet.utton > circle,
-g.snippet.uttonhole > path {
+g.snippet.button > circle,
+g.snippet.buttonhole > path {
   color: $fc-draft-mark-light;
+}
+g.snippet.bnotch > circle,
+g.snippet.bnotch > path {
+  color: $fc-draft-note-light;
 }
 /* Same for paperless grid, also in shadow DOM */
 rect.grid {
