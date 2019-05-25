@@ -29,9 +29,12 @@ import draftPath_translate from "./path_translate";
 import draftPath_trim from "./path_trim";
 // Plugins
 import draftPlugin_cutonfold from "./plugin_cutonfold";
+import draftPlugin_buttons from "./plugin_buttons";
 import draftPlugin_dimension from "./plugin_dimension";
 import draftPlugin_grainline from "./plugin_grainline";
 import draftPlugin_logo from "./plugin_logo";
+import draftPlugin_round from "./plugin_round";
+import draftPlugin_sprinkle from "./plugin_sprinkle";
 import draftPlugin_scalebox from "./plugin_scalebox";
 import draftPlugin_title from "./plugin_title";
 // Point API
@@ -108,11 +111,14 @@ let methods = {
   draftPath_start,
   draftPath_translate,
   draftPath_trim,
+  draftPlugin_buttons,
   draftPlugin_cutonfold,
   draftPlugin_dimension,
   draftPlugin_grainline,
   draftPlugin_logo,
+  draftPlugin_round,
   draftPlugin_scalebox,
+  draftPlugin_sprinkle,
   draftPlugin_title,
   draftPoint_angle,
   draftPoint_attr,
