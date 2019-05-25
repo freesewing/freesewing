@@ -15,6 +15,7 @@ const Svg = props => {
     attributes.width = props.width;
     attributes.height = props.height;
   }
+  if (props.design) attributes.className += " design";
 
   return <svg {...attributes}>{props.children}</svg>;
 };

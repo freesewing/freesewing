@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { getProps } from "../utils";
 
 const Snippet = props => {
   const snippetProps = {
@@ -26,7 +27,7 @@ const Snippet = props => {
     }
   }
 
-  return <use {...snippetProps} />;
+  return <use {...snippetProps} {...getProps(props.snippet)} />;
 };
 
 Snippet.propTypes = {

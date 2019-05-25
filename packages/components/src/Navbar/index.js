@@ -3,8 +3,13 @@ import PropTypes from "prop-types";
 import Logo from "../Logo";
 import Emblem from "../Emblem";
 import { FormattedMessage } from "react-intl";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const Navbar = props => {
+  const mobile = useMediaQuery.unstable_useMediaQuery("(max-width:599px)");
+
+  if (mobile) return null;
+
   const renderNav = (key, nav) => {
     let title = nav.title || nav.text;
     let text =
@@ -58,34 +63,15 @@ const Navbar = props => {
   return (
     <header className="navbar">
       <div>
-        <div className="only-xs">
-          {
-            //Object.keys(props.navs.mleft).map(key =>
-            //renderNav(key, props.navs.mleft[key])
-            //)
-          }
-        </div>
-        <div className="not-xs">
+        <div style={{ display: "flex" }}>
           {logo}
           {emblem}
           {Object.keys(props.navs.left).map(key =>
             renderNav(key, props.navs.left[key])
           )}
         </div>
-        <div className="spread">
-          <div className="only-xs">
-            {logo}
-            {emblem}
-          </div>
-        </div>
-        <div className="only-xs">
-          {
-            //Object.keys(props.navs.mright).map(key =>
-            //renderNav(key, props.navs.mright[key])
-            // )
-          }
-        </div>
-        <div className="not-xs">
+        <div className="spread" />
+        <div style={{ display: "flex" }}>
           {Object.keys(props.navs.right).map(key =>
             renderNav(key, props.navs.right[key])
           )}

@@ -11,6 +11,7 @@ const Draft = props => (
     height={props.height}
     language={props.settings.locale}
     id={props.settings.idPrefix + "svg"}
+    design={props.design}
   >
     <Defs
       units={props.settings.units}

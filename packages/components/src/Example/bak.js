@@ -7,11 +7,14 @@ import Draft from "../Draft";
 import Design from "../Workbench/Design";
 import { FormattedMessage } from "react-intl";
 import IconButton from "@material-ui/core/IconButton";
+import DesignIcon from "@material-ui/icons/LocationSearching";
+import CodeIcon from "@material-ui/icons/Code";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
-import Switch from "@material-ui/core/Switch";
+import Prism from "prismjs";
 
 const Example = props => {
   const [design, setDesign] = useState(false);
+  const [code, setCode] = useState(false);
   const [focus, setFocus] = useState(null);
 
   const raiseEvent = (type, data) => {
@@ -48,13 +51,8 @@ const Example = props => {
   if (props.part !== "") settings.only = [props.part];
   const pattern = new patterns[props.pattern](settings);
 
-  const style = {
-    thumb: {
-      background: "blue"
-    }
-  };
-
   pattern.draft();
+  console.log(props);
   const patternProps = pattern.getRenderProps();
   return (
     <figure className={design ? "design example" : "example"}>
@@ -63,17 +61,26 @@ const Example = props => {
           {design ? (
             <IconButton
               color="primary"
+              variant="contained"
               onClick={() => raiseEvent("clearFocusAll", null)}
             >
               <ResetIcon />
             </IconButton>
           ) : null}
-          <Switch
-            checked={design}
-            onChange={() => setDesign(!design)}
-            value={design}
-            color="primary"
-          />
+          <IconButton
+            color="inherit"
+            className={design ? "active" : ""}
+            onClick={() => setDesign(!design)}
+          >
+            <DesignIcon color="inherit" />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            className={code ? "active" : ""}
+            onClick={() => setCode(!code)}
+          >
+            <CodeIcon color="inherit" />
+          </IconButton>
         </div>
         <Draft
           {...patternProps}
@@ -91,6 +98,13 @@ const Example = props => {
             raiseEvent={raiseEvent}
             parts={patternProps.parts}
           />
+        </div>
+      ) : null}
+      {code ? (
+        <div className="gatsby-highlight">
+          <pre className="language-js">
+            <code className="language-js">hi</code>
+          </pre>
         </div>
       ) : null}
     </figure>
