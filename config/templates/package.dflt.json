@@ -11,6 +11,7 @@
   "module": "dist/index.mjs",
   "scripts": {
     "watch": "rollup -c -w",
+    "start": "rollup -c -w",
     "build": "rollup -c",
     "publish": "npm run build && npm publish --access public"
   },
