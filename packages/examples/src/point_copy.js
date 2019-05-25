@@ -8,7 +8,7 @@ export default part => {
     .attr("data-text-class", "text-xl");
   points.B = points.A.copy().attr("data-text", "Point B");
 
-  snippets.x = new Snippet("x", points.A);
+  snippets.x = new Snippet("notch", points.A);
 
   return box(part);
 };

@@ -24,7 +24,7 @@ export default part => {
     .curve(points.DCp1, points.DCp1, points.D);
 
   for (let p of paths.demo.intersectsX(60)) {
-    snippets[part.getId()] = new Snippet("x", p);
+    snippets[part.getId()] = new Snippet("notch", p);
   }
 
   return part;

@@ -29,7 +29,7 @@ export default part => {
     .curve(points._DCp1, points._DCp1, points._D);
 
   for (let p of paths.demo1.intersects(paths.demo2)) {
-    snippets[part.getId()] = new Snippet("x", p);
+    snippets[part.getId()] = new Snippet("notch", p);
   }
 
   return part;

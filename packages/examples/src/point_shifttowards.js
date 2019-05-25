@@ -1,13 +1,7 @@
+import { box } from "./shared";
+
 export default part => {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    macro
-  } = part.shorthand();
+  let { Point, points, Path, paths, macro } = part.shorthand();
 
   points.A = new Point(90, 70).attr("data-text", "Point A");
   points.B = new Point(10, 10).attr("data-text", "Point B");
@@ -18,10 +12,6 @@ export default part => {
     )
     .attr("data-text-class", "center")
     .attr("data-text-lineheight", 6);
-
-  snippets.A = new Snippet("x", points.A);
-  snippets.B = new Snippet("x", points.B);
-  snippets.C = new Snippet("x", points.C);
 
   paths.direction = new Path()
     .move(points.A)
@@ -34,5 +24,5 @@ export default part => {
     d: -10
   });
 
-  return part;
+  return box(part, 110, 80);
 };

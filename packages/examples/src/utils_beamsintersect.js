@@ -17,8 +17,8 @@ export default part => {
   paths.AB = new Path().move(points.A).line(points.B);
   paths.CD = new Path().move(points.C).line(points.D);
 
-  snippets.X = new Snippet(
-    "x",
+  snippets.x = new Snippet(
+    "notch",
     utils.beamsIntersect(points.A, points.B, points.C, points.D)
   );
 

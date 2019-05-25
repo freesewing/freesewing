@@ -1,7 +1,9 @@
-export default part => {
-  let { Point, points, Snippet, snippets, macro } = part.shorthand();
+import { box } from "./shared";
 
-  points.A = new Point(10, 10).attr("data-text", "Point A");
+export default part => {
+  let { Point, points, macro } = part.shorthand();
+
+  points.A = new Point(20, 20).attr("data-text", "Point A");
   points.B = points.A.translate(120, 60)
     .attr(
       "data-text",
@@ -11,9 +13,6 @@ export default part => {
     .attr("data-text-dy", -6)
     .attr("data-text-lineheight", 6);
 
-  snippets.A = new Snippet("x", points.A);
-  snippets.B = new Snippet("x", points.B);
-
   macro("ld", {
     from: points.A,
     to: points.B,
@@ -21,5 +20,5 @@ export default part => {
     noStartMarker: true
   });
 
-  return part;
+  return box(part, 150, 85);
 };

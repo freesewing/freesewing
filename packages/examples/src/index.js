@@ -2,6 +2,12 @@ import freesewing from "@freesewing/core";
 import plugins from "@freesewing/plugin-bundle";
 import config from "../config/";
 // Path API
+import draftPath_move from "./path_move";
+import draftPath_line from "./path_line";
+import draftPath_curve from "./path_curve";
+import draftPath__curve from "./path__curve";
+import draftPath_curve_ from "./path_curve_";
+import draftPath_close from "./path_close";
 import draftPath_ops from "./path_ops";
 import draftPath_attr from "./path_attr";
 import draftPath_clone from "./path_clone";
@@ -43,6 +49,7 @@ import draftPoint_shiftfractiontowards from "./point_shiftfractiontowards";
 import draftPoint_shifttowards from "./point_shifttowards";
 import draftPoint_shiftoutwards from "./point_shiftoutwards";
 import draftPoint_sitson from "./point_sitson";
+import draftPoint_sitsroughlyon from "./point_sitsroughlyon";
 import draftPoint_rotate from "./point_rotate";
 import draftPoint_translate from "./point_translate";
 // Utils API
@@ -75,12 +82,13 @@ const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods to prototype
 let methods = {
-  draftPath_move: draftPath_ops,
-  draftPath_line: draftPath_ops,
-  draftPath_curve: draftPath_ops,
-  draftPath__curve: draftPath_ops,
-  draftPath_curve_: draftPath_ops,
-  draftPath_close: draftPath_ops,
+  draftPath_move,
+  draftPath_line,
+  draftPath_curve,
+  draftPath__curve,
+  draftPath_curve_,
+  draftPath_close,
+  draftPath_ops,
   draftPath_attr,
   draftPath_clone,
   draftPath_divide,
@@ -120,6 +128,7 @@ let methods = {
   draftPoint_shifttowards,
   draftPoint_shiftoutwards,
   draftPoint_sitson,
+  draftPoint_sitsroughlyon,
   draftPoint_rotate,
   draftPoint_translate,
   draftSettings_sa,

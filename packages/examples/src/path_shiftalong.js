@@ -12,19 +12,19 @@ export default part => {
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C);
 
-  points.X1 = paths.example
+  points.x1 = paths.example
     .shiftAlong(20)
-    .attr("data-text", "msg_2cm")
-    .attr("data-text-class", "center")
+    .attr("data-text", "2cm")
+    .attr("data-text-class", "center fill-note")
     .attr("data-text-lineheight", 6);
-  points.X2 = paths.example
+  points.x2 = paths.example
     .shiftAlong(90)
-    .attr("data-text", "msg_9cm")
-    .attr("data-text-class", "center")
+    .attr("data-text", "9cm")
+    .attr("data-text-class", "center fill-note")
     .attr("data-text-lineheight", 6);
 
-  snippets.Xl = new Snippet("x", points.X1);
-  snippets.X2 = new Snippet("x", points.X2);
+  snippets.x1 = new Snippet("notch", points.x1);
+  snippets.x2 = new Snippet("notch", points.x2);
 
   return part;
 };

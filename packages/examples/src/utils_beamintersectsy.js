@@ -14,7 +14,10 @@ export default part => {
 
   paths.AB = new Path().move(points.A).line(points.B);
 
-  snippets.X = new Snippet("x", utils.beamIntersectsY(points.A, points.B, 30));
+  snippets.x = new Snippet(
+    "notch",
+    utils.beamIntersectsY(points.A, points.B, 30)
+  );
 
   paths.help = new Path()
     .move(new Point(0, 30))

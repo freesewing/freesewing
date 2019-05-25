@@ -19,17 +19,17 @@ export default part => {
   let scatter = [];
   for (let i = 1; i < 36; i++) {
     for (let j = 1; j < 27; j++) {
-      scatter.push(new Point(i * 5, j * 5));
+      scatter.push(new Point(i * 10, j * 10));
     }
   }
   let snippet;
   for (let point of scatter) {
     if (utils.pointOnLine(points.from1, points.to1, point)) snippet = "notch";
-    else snippet = "x";
+    else snippet = "bnotch";
     snippets[part.getId()] = new Snippet(snippet, point);
     if (utils.pointOnLine(points.from2, points.to2, point, 0.01)) {
       snippet = "notch";
-    } else snippet = "x";
+    } else snippet = "bnotch";
     snippets[part.getId()] = new Snippet(snippet, point);
   }
   paths.line1 = new Path()

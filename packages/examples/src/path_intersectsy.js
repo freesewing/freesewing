@@ -23,7 +23,7 @@ export default part => {
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.DCp1, points.DCp1, points.D);
   for (let p of paths.demo.intersectsY(58)) {
-    snippets[part.getId()] = new Snippet("x", p);
+    snippets[part.getId()] = new Snippet("notch", p);
   }
 
   return part;

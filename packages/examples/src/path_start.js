@@ -12,6 +12,6 @@ export default part => {
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C);
 
-  snippets.x = new Snippet("x", paths.example.start());
+  snippets.start = new Snippet("notch", paths.example.start());
   return part;
 };

@@ -16,14 +16,17 @@ export default part => {
     .curve(points.E, points.D, points.A)
     .close();
 
-  snippets.a = new Snippet("x", paths.demo.edge("topLeft"));
-  snippets.b = new Snippet("x", paths.demo.edge("topRight"));
-  snippets.c = new Snippet("x", paths.demo.edge("bottomLeft"));
-  snippets.d = new Snippet("x", paths.demo.edge("bottomRight"));
-  snippets.e = new Snippet("x", paths.demo.edge("top"));
-  snippets.f = new Snippet("x", paths.demo.edge("left"));
-  snippets.g = new Snippet("x", paths.demo.edge("bottom"));
-  snippets.h = new Snippet("x", paths.demo.edge("right"));
+  for (let i of [
+    "topLeft",
+    "topRight",
+    "bottomLeft",
+    "bottomRight",
+    "top",
+    "left",
+    "bottom",
+    "right"
+  ])
+    snippets[i] = new Snippet("notch", paths.demo.edge(i));
 
   return part;
 };

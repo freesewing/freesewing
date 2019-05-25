@@ -17,7 +17,7 @@ export default part => {
   let scatter = [];
   for (let i = 1; i < 19; i++) {
     for (let j = 1; j < 14; j++) {
-      scatter.push(new Point(i * 5, j * 5));
+      scatter.push(new Point(i * 10, j * 10));
     }
   }
   let snippet;
@@ -32,7 +32,7 @@ export default part => {
       )
     ) {
       snippet = "notch";
-    } else snippet = "x";
+    } else snippet = "bnotch";
     snippets[part.getId()] = new Snippet(snippet, point);
   }
   paths.curve = new Path()

@@ -1,3 +1,5 @@
+import { box } from "./shared";
+
 export default part => {
   let {
     Point,
@@ -9,16 +11,16 @@ export default part => {
     utils
   } = part.shorthand();
 
-  points.A = new Point(45, 45)
+  points.A = new Point(95, 45)
     .attr("data-circle", 35)
     .attr("data-circle-class", "fabric");
-  points.B = new Point(5, 50);
-  points.C = new Point(25, 30);
+  points.B = new Point(55, 50);
+  points.C = new Point(75, 30);
 
-  points.D = new Point(5, 65);
-  points.E = new Point(65, 5);
-  points.F = new Point(15, 75);
-  points.G = new Point(75, 15);
+  points.D = new Point(55, 65);
+  points.E = new Point(115, 5);
+  points.F = new Point(65, 75);
+  points.G = new Point(125, 15);
 
   paths.line1 = new Path().move(points.B).line(points.C);
   paths.line2 = new Path().move(points.D).line(points.E);
@@ -45,9 +47,9 @@ export default part => {
   );
   snippets.first1 = new Snippet("bnotch", intersections1[0]);
   snippets.first2 = new Snippet("bnotch", intersections2[0]);
-  snippets.second2 = new Snippet("x", intersections2[1]);
+  snippets.second2 = new Snippet("notch", intersections2[1]);
   snippets.first3 = new Snippet("bnotch", intersections3[0]);
-  snippets.second3 = new Snippet("x", intersections3[1]);
+  snippets.second3 = new Snippet("notch", intersections3[1]);
 
-  return part;
+  return box(part, 200, 80);
 };

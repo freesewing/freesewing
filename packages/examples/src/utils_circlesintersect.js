@@ -29,9 +29,9 @@ export default part => {
   );
 
   snippets.first1 = new Snippet("bnotch", intersections1[0]);
-  snippets.second1 = new Snippet("x", intersections1[1]);
+  snippets.second1 = new Snippet("notch", intersections1[1]);
   snippets.first2 = new Snippet("bnotch", intersections2[0]);
-  snippets.second2 = new Snippet("x", intersections2[1]);
+  snippets.second2 = new Snippet("notch", intersections2[1]);
 
   return part;
 };

@@ -1,5 +1,7 @@
+import { box } from "./shared";
+
 export default part => {
-  let { Point, points, Snippet, snippets, macro } = part.shorthand();
+  let { Point, points, macro } = part.shorthand();
 
   points.A = new Point(90, 40)
     .attr("data-text", "Point A")
@@ -8,14 +10,11 @@ export default part => {
     .attr("data-text", "Point B is point A shifted 7cm\nat a 155 degree angle")
     .attr("data-text-lineheight", 6);
 
-  snippets.A = new Snippet("x", points.A);
-  snippets.B = new Snippet("x", points.B);
-
   macro("ld", {
     from: points.B,
     to: points.A,
     d: -10
   });
 
-  return part;
+  return box(part, 100, 45);
 };

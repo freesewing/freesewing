@@ -9,9 +9,13 @@ export default part => {
   paths.example = new Path()
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-    .attr("data-text", "msg");
+    .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
+    .attr("data-text-class", "text-xs fill-note");
 
-  paths.reverse = paths.example.reverse().attr("data-text", "gsm");
+  paths.reverse = paths.example
+    .reverse()
+    .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
+    .attr("data-text-class", "text-xs fill-lining");
 
   return part;
 };

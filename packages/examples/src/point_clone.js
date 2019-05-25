@@ -9,7 +9,7 @@ export default part => {
     .attr("data-text-fill-opacity", "0.5");
   points.B = points.A.clone().attr("data-text", "Point B");
 
-  snippets.x = new Snippet("x", points.A);
+  snippets.x = new Snippet("notch", points.A);
 
   return box(part);
 };

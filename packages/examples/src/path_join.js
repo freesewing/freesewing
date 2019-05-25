@@ -19,7 +19,8 @@ export default part => {
 
   paths.joint = paths.path1
     .join(paths.path2)
-    .attr("class", "note lashed stroke-xl");
+    .attr("class", "note lashed stroke-l")
+    .attr("style", "stroke-opacity: 0.5");
 
   return part;
 };

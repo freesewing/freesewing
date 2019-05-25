@@ -10,11 +10,9 @@ export default part => {
   paths.A = new Path()
     .move(points.A)
     .line(points.B)
-    .curve(points.BCp2, points.CCp1, points.C)
-    .attr("data-text", "msg_path")
-    .attr("data-text-class", "center");
+    .curve(points.BCp2, points.CCp1, points.C);
 
-  paths.B = paths.A.translate(60, 30).attr("data-text", "msg_transform", true);
+  paths.B = paths.A.translate(60, 30);
 
   points.step1 = points.B.shift(0, 60);
   points.step2 = points.step1.shift(-90, 30);

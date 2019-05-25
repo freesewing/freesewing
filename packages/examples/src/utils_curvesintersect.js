@@ -35,7 +35,7 @@ export default part => {
     points.Dcp,
     points.D
   )) {
-    snippets[part.getId()] = new Snippet("x", p);
+    snippets[part.getId()] = new Snippet("notch", p);
   }
 
   return part;

@@ -10,15 +10,18 @@ export default part => {
   } = part.shorthand();
 
   points.A = new Point(10, 10);
-  points.B = new Point(50, 40);
+  points.B = new Point(90, 30);
 
   paths.AB = new Path().move(points.A).line(points.B);
 
-  snippets.X = new Snippet("x", utils.beamIntersectsX(points.A, points.B, 40));
+  snippets.x = new Snippet(
+    "notch",
+    utils.beamIntersectsX(points.A, points.B, 40)
+  );
 
   paths.help = new Path()
-    .move(new Point(40, 0))
-    .line(new Point(40, 50))
+    .move(new Point(40, 5))
+    .line(new Point(40, 35))
     .attr("class", "note dashed");
 
   return part;

@@ -10,8 +10,5 @@ export default part => {
     y: 25
   });
 
-  snippets.notch1 = new Snippet("x", points.from);
-  snippets.notch2 = new Snippet("x", points.to);
-
   return part;
 };

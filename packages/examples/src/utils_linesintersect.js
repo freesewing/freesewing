@@ -18,7 +18,7 @@ export default part => {
   paths.CD = new Path().move(points.C).line(points.D);
 
   snippets.X = new Snippet(
-    "x",
+    "notch",
     utils.linesIntersect(points.A, points.B, points.C, points.D)
   );
 
