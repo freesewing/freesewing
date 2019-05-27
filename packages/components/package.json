@@ -16,8 +16,7 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
-    "build": "npm run clean && npm run nodebuild",
+    "build": "npm run clean && rollup -c",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",

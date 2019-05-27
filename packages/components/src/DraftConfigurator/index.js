@@ -10,9 +10,9 @@ const DraftConfigurator = props => {
   return (
     <ul className="nav l1">
       <li>
-        <h2>
+        <h4>
           <FormattedMessage id="app.patternOptions" />
-        </h2>
+        </h4>
         <PatternOptions
           noDocs={props.noDocs}
           config={props.config}
@@ -25,9 +25,9 @@ const DraftConfigurator = props => {
         />
       </li>
       <li>
-        <h2>
+        <h4>
           <FormattedMessage id="app.draftSettings" />
-        </h2>
+        </h4>
         <DraftSettings
           noDocs={props.noDocs}
           config={props.config}

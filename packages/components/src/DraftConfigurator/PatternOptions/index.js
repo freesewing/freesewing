@@ -35,12 +35,12 @@ const PatternOptions = props => {
       );
     output.push(
       <li className={open ? "expanded" : "collapsed"} key={group + "-ghead"}>
-        <h3 onClick={() => toggleGroup(group)}>
+        <h5 onClick={() => toggleGroup(group)}>
           <DownIcon
             className={"icon-col-exp " + (open ? "expanded" : "collapsed")}
           />
           <FormattedMessage id={"optiongroups." + group} />
-        </h3>
+        </h5>
         {children}
       </li>
     );

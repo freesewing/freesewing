@@ -1,15 +1,17 @@
-export { default as Blockquote } from "./Blockquote";
-export { default as Draft } from "./Draft";
-export { default as DraftConfigurator } from "./DraftConfigurator";
-export { default as Emblem } from "./Emblem";
-export { default as Example } from "./Example";
-export { default as Footer } from "./Footer";
-export { default as Icon } from "./Icon";
-export { default as Logo } from "./Logo";
-export { default as Navbar } from "./Navbar";
-export { default as Ogol } from "./Ogol";
-export { default as Robot } from "./Robot";
-export { default as SampleConfigurator } from "./SampleConfigurator";
-export { default as withGist } from "./withGist";
-export { default as withLanguage } from "./withLanguage";
-export { default as Workbench } from "./Workbench";
+export default [
+  "Blockquote",
+  "Draft",
+  "DraftConfigurator",
+  "Emblem",
+  "Example",
+  "Footer",
+  "Icon",
+  "Logo",
+  "Navbar",
+  "Ogol",
+  "Robot",
+  "SampleConfigurator",
+  "withGist",
+  "withLanguage",
+  "Workbench"
+];

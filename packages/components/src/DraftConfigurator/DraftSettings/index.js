@@ -102,14 +102,14 @@ const DraftSettings = props => {
               className={open ? "expanded" : "collapsed"}
               key={group + "-ghead"}
             >
-              <h3 onClick={() => toggleGroup(group)}>
+              <h5 onClick={() => toggleGroup(group)}>
                 <DownIcon
                   className={
                     "icon-col-exp " + (open ? "expanded" : "collapsed")
                   }
                 />
                 <FormattedMessage id={"optiongroups." + group} />
-              </h3>
+              </h5>
             </li>
             {children}
           </React.Fragment>

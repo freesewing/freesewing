@@ -6,7 +6,7 @@ import { FormattedMessage } from "react-intl";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const Navbar = props => {
-  const mobile = useMediaQuery.unstable_useMediaQuery("(max-width:599px)");
+  const mobile = useMediaQuery("(max-width:599px)");
 
   if (mobile) return null;
 

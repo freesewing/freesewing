@@ -48,9 +48,9 @@ const SampleConfigurator = props => {
   return (
     <ul className="links">
       <li className="nodot">
-        <h2>
+        <h4>
           <FormattedMessage id="app.patternOptions" />
-        </h2>
+        </h4>
         <PatternOptions
           config={props.config}
           gist={props.gist}
@@ -58,9 +58,9 @@ const SampleConfigurator = props => {
         />
       </li>
       <li className="nodot">
-        <h2>
+        <h4>
           <FormattedMessage id="app.measurements" />
-        </h2>
+        </h4>
         <ul style={{ paddingLeft: "1rem" }}>
           {props.config.measurements.map(m => (
             <li key={m}>
@@ -72,9 +72,9 @@ const SampleConfigurator = props => {
         </ul>
       </li>
       <li className="nodot">
-        <h2>
+        <h4>
           <FormattedMessage id="app.models" />
-        </h2>
+        </h4>
         <ul style={{ paddingLeft: "1rem" }}>
           <li>
             <a href="#logo" onClick={() => sampleModels(models)}>
