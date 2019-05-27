@@ -19,7 +19,8 @@ ul.nav h5 {
   padding: 0.5rem 0.25rem 0.5rem 1rem;
 }
 ul.nav h3:hover,
-ul.nav h4:hover {
+ul.nav h4:hover,
+ul.nav h5:hover, {
   cursor: pointer;
   background: $oc-gray-3;
 }

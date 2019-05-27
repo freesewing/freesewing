@@ -70,6 +70,7 @@ pre[class*="language-"] {
     margin: 2rem -1.5rem;
     padding: 1.5rem;
     border-radius: 0;
+    word-break: break-word;
   }
   pre.language-js:before,
   pre.language-json:before,
