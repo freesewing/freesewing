@@ -12,6 +12,7 @@ _types:
       "babel-jest": "24.7.1"
       "jest": "24.7.1"
       "@freesewing/components": "^{{version}}"
+      "@freesewing/rendertest": "^{{version}}"
       "@freesewing/css-theme": "^{{version}}"
       "@freesewing/i18n": "^{{version}}"
       "@freesewing/mui-theme": "^{{version}}"
