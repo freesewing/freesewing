@@ -1,0 +1,49 @@
+{
+  "name": "examples-example",
+  "homepage": "https://freesewing.github.io/examples",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@freesewing/components": "beta",
+    "@freesewing/core": "beta",
+    "@freesewing/css-theme": "beta",
+    "@freesewing/i18n": "beta",
+    "@freesewing/models": "beta",
+    "@freesewing/mui-theme": "beta",
+    "@freesewing/pattern-info": "beta",
+    "@freesewing/plugin-debug": "beta",
+    "@freesewing/plugin-designer": "beta",
+    "@freesewing/plugin-i18n": "beta",
+    "@freesewing/plugin-svgattr": "beta",
+    "@freesewing/plugin-theme": "beta",
+    "@freesewing/plugin-validate": "beta",
+    "@freesewing/utils": "beta",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/lab": "^3.0.0-alpha.30",
+    "pattern": "link:..",
+    "prismjs": "1.16.0",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-scripts": "^3.0.0",
+    "typeface-roboto-condensed": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "1.0.2"
+  }
+}
