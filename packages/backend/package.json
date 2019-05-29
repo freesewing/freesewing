@@ -15,7 +15,7 @@
     "lint": "eslint --fix \"src/*.js\"",
     "dev": "backpack",
     "build": "backpack build",
-    "start": "backpack build && pm2 start build/main.js"
+    "start": "backpack build && pm2 start build/main.js --name freesewing-backend"
   },
   "repository": {
     "type": "git",
