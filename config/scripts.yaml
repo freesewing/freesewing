@@ -23,7 +23,7 @@ components:
   storybook: "start-storybook -p 6663"
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
-  clean: "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench",
+  clean: "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench"
   build: "npm run clean && npm run nodebuild"
   watch: "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
 core:

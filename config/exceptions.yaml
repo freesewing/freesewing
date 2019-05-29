@@ -10,21 +10,21 @@ packageJson:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
     files:
-      - "Blockquote/*",
-      - "Draft/*",
-      - "DraftConfigurator/*",
-      - "Emblem/*",
-      - "Example/*",
-      - "Footer/*",
-      - "Icon/*",
-      - "Logo/*",
-      - "Navbar/*",
-      - "Ogol/*",
-      - "Robot/*",
-      - "SampleConfigurator/*",
-      - "withGist/*",
-      - "withLanguage/*",
-      - "Workbench/*",
+      - "Blockquote/*"
+      - "Draft/*"
+      - "DraftConfigurator/*"
+      - "Emblem/*"
+      - "Example/*"
+      - "Footer/*"
+      - "Icon/*"
+      - "Logo/*"
+      - "Navbar/*"
+      - "Ogol/*"
+      - "Robot/*"
+      - "SampleConfigurator/*"
+      - "withGist/*"
+      - "withLanguage/*"
+      - "Workbench/*"
 
   create-freesewing-pattern:
     bin:
