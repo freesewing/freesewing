@@ -113,7 +113,7 @@
     "standard": "^12.0.1",
     "storybook-addon-material-ui": "0.9.0-alpha.18",
     "uglifycss": "0.0.29",
-    "verdaccio": "3.11.6"
+    "verdaccio": ">=3.12.0"
   },
   "dependencies": {
     "@freesewing/aaron": "file:packages/aaron",
