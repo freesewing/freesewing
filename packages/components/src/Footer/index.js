@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Logo from "../Logo";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import IconButton from "@material-ui/core/IconButton";
@@ -37,7 +38,9 @@ const Footer = props => {
   };
   return (
     <footer>
-      <Logo size={101} />
+      <a href={props.home}>
+        <Logo size={101} />
+      </a>
       <p>
         {Object.keys(icons).map(i => (
           <IconButton href={icons[i]} className={i} title={i} key={i}>
@@ -72,4 +75,7 @@ const Footer = props => {
   );
 };
 
+Footer.defaultProps = {
+  home: "/"
+};
 export default Footer;

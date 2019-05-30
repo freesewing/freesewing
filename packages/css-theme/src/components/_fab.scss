@@ -6,6 +6,8 @@ button.fab {
   background: $fc-text-light!important;
   z-index: 20;
   font-size: 2rem;
+  border: 1px solid $oc-gray-7;
+  border-radius: 50%;
 }
 button.fab.primary {
   right: 1rem;

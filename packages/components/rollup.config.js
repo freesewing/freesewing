@@ -34,7 +34,8 @@ const createConfig = (component, module) => {
 const config = [];
 for (let component of components) {
   config.push(createConfig(component, false));
-  config.push(createConfig(component, true));
+  // Webpack doesn't handle .mjs very well
+  //config.push(createConfig(component, true));
 }
 
 export default config;

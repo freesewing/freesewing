@@ -2,7 +2,7 @@ ul.topics {
   margin: 0;
   padding: 0;
 }
-ul.topics > li.topic {
+ul.topics > li {
   @include title-font;
   list-style-type: none;
   //text-transform: uppercase;
@@ -19,13 +19,13 @@ ul.topics > li.topic {
     text-decoration: none!important;
   }
 }
-ul.topics > li.topic.active {
+ul.topics > li.active {
   font-weight: bold;
   a.topic {
     border-left: 4px solid $fc-link-light;
   }
 }
-ul.topics > li.topic > ul.topics.l1 {
+ul.topics > li > ul.topics.l1 {
   font-weight: normal;
   a {
     color: $fc-text-light!important;
@@ -55,7 +55,7 @@ ul.topics > li.topic > ul.topics.l1 {
 }
 
 .theme-wrapper.dark {
-  ul.topics > li.topic {
+  ul.topics > li {
     a.topic {
       color: $fc-text-dark!important;
     }
@@ -63,7 +63,7 @@ ul.topics > li.topic > ul.topics.l1 {
       background: $oc-gray-6;
     }
   }
-  ul.topics > li.topic > ul.topics.l1 {
+  ul.topics > li > ul.topics.l1 {
     a {
       color: $fc-text-dark!important;
     }

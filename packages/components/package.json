@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench",
-    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
+    "nodebuild": "BABEL_ENV=production rollup -c",
     "build": "npm run clean && npm run nodebuild",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
@@ -38,9 +38,9 @@
     "@freesewing/i18n": "^2.0.0-beta.9",
     "@freesewing/utils": "^2.0.0-beta.9",
     "react-intl": "^2.8.0",
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
-    "@material-ui/lab": "^3.0.0-alpha.30",
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/icons": "^4.0.1",
+    "@material-ui/lab": "^v4.0.0-alpha.14",
     "prismjs": "1.16.0"
   },
   "dependencies": {},
