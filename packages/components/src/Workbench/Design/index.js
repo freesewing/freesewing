@@ -153,7 +153,11 @@ const Design = props => {
   for (let part of Object.keys(props.focus)) {
     info.push(
       <h5 key={"part-" + part} style={styles.h5}>
-        parts.<b>{part}</b>
+        parts.<b>{part}</b>(
+        <a href="#logo" onClick={() => props.raiseEvent("part", part)}>
+          Isolate
+        </a>
+        )
       </h5>
     );
     for (let i in props.focus[part].paths) {

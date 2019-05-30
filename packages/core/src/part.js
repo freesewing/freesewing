@@ -183,9 +183,6 @@ Part.prototype.inject = function(orig) {
   }
   for (let i in orig.snippets) {
     this.snippets[i] = orig.snippets[i].clone();
-    // Keep link between points and snippet anchor where possible
-    let anchorPoint = findBasePoint(orig.snippets[i].anchor);
-    if (anchorPoint) this.snippets[i].anchor = this.points[i];
   }
 
   return this;

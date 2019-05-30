@@ -11,7 +11,10 @@ const DraftPattern = props => {
   const [focus, setFocus] = useState(null);
 
   const raiseEvent = (type, data) => {
-    if (type === "clearFocusAll") return setFocus(null);
+    if (type === "clearFocusAll") {
+      props.updateGist(false, "settings", "only");
+      return setFocus(null);
+    }
     let f = {};
     if (focus !== null) f = { ...focus };
     if (typeof f[data.part] === "undefined")
@@ -22,7 +25,7 @@ const DraftPattern = props => {
     else if (type === "clearFocus") {
       let i = focus[data.part][data.type].indexOf(data.name);
       f[data.part][data.type].splice(i, 1);
-    }
+    } else if (type === "part") props.updateGist(data, "settings", "only");
 
     setFocus(f);
   };
