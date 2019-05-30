@@ -36,11 +36,13 @@
     "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "watch": "BABEL_ENV=production rollup -c -w -o dist/index.mjs -f es"
   },
+  "peerDependencies": {},
   "dependencies": {
     "bezier-js": "^2.2.13",
     "bin-pack": "1.0.2",
     "hooks": "^0.3.2"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

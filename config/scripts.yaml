@@ -24,7 +24,7 @@ components:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
   clean: "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench"
-  build: "npm run clean && npm run nodebuild"
+  build: "npm run clean && rollup -c"
   watch: "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
 core:
   test: "BABEL_ENV=production nyc mocha tests/*.test.js"
