@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import examples from "@freesewing/examples";
 import rendertest from "@freesewing/rendertest";
+import tutorial from "@freesewing/tutorial";
 import Draft from "../Draft";
 import Design from "../Workbench/Design";
 import IconButton from "@material-ui/core/IconButton";
@@ -40,7 +41,8 @@ const Example = props => {
 
   const patterns = {
     examples,
-    rendertest
+    rendertest,
+    tutorial
   };
   const settings = { options: { ...props.options } };
   if (props.part !== "") settings.only = [props.part];
