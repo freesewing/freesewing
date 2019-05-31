@@ -21,8 +21,8 @@ export default {
       let angle1 = from.angle(via);
       let angle2 = via.angle(to);
       if ((Math.round(angle1) - Math.round(angle2)) % 90 !== 0)
-        throw new Error(
-          "The round macro currently only supports 90 degree angles."
+        console.log(
+          "Warning: The round macro only handles 90 degree angles correctly."
         );
       let fd = from.dist(via);
       let td = to.dist(via);
