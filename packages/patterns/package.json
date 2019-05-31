@@ -46,7 +46,7 @@
     "@freesewing/florent": "^2.0.0-beta.13",
     "@freesewing/huey": "^2.0.0-beta.13",
     "@freesewing/hugo": "^2.0.0-beta.13",
-    "@freesewing/jaeger": "0.2.1",
+    "@freesewing/jaeger": "^2.0.0-beta.13",
     "@freesewing/shin": "^2.0.0-beta.13",
     "@freesewing/simon": "^2.0.0-beta.13",
     "@freesewing/sven": "^2.0.0-beta.13",
