@@ -39,5 +39,4 @@ pattern-info:
 utils:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
-  build: "npm run clean && npm run nodebuild"
 

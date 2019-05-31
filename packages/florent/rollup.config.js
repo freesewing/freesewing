@@ -18,20 +18,23 @@ import {
   module
 } from "./package.json";
 
+const output = [
+  {
+    file: main,
+    format: "cjs",
+    sourcemap: true
+  }
+];
+if (typeof module !== "undefined")
+  output.push({
+    file: module,
+    format: "es",
+    sourcemap: true
+  });
+
 export default {
   input: "src/index.js",
-  output: [
-    {
-      file: main,
-      format: "cjs",
-      sourcemap: true
-    },
-    {
-      file: module,
-      format: "es",
-      sourcemap: true
-    }
-  ],
+  output,
   plugins: [
     peerDepsExternal(),
     resolve({ modulesOnly: true }),
