@@ -36,7 +36,7 @@ export default {
     step10: "step9",
     step11: "step10"
   },
-  parts: ["step1", "step2"],
+  parts: ["step1", "step2", "bib"],
   options: {
     size: { pct: 50, min: 10, max: 100 },
     neckRatio: { pct: 80, min: 70, max: 90 },
