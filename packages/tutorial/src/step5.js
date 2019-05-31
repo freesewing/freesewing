@@ -20,15 +20,5 @@ export default function(part) {
     .line(points.topLeft)
     .close();
 
-  // Complete?
-  if (complete) {
-    if (sa) {
-    }
-
-    // Paperless?
-    if (paperless) {
-    }
-  }
-
   return part;
 }

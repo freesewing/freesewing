@@ -4,8 +4,8 @@ _types:
       "@freesewing/core": "^{{version}}"
       "@freesewing/plugin-bundle": "^{{version}}"
     dev:
-      "react": "^16.4.1"
-      "react-dom": "^16.4.1"
+      "react": "^16.8"
+      "react-dom": "^16.8"
       "@babel/plugin-proposal-class-properties": "^7.0.0"
       "babel-eslint": "10.0.1"
       "eslint": "^5.16.0"

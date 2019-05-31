@@ -38,10 +38,6 @@ export default function(part) {
 
     points.logo = new Point(0, 0);
     snippets.logo = new Snippet("logo", points.logo);
-
-    // Paperless?
-    if (paperless) {
-    }
   }
 
   return part;

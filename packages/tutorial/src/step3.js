@@ -1,6 +1,7 @@
 export default function(part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand();
 
+  return part;
   let tweak = 1;
   let target = (measurements.headCircumference * options.neckRatio) / 4;
   let delta = Infinity;
@@ -25,16 +26,6 @@ export default function(part) {
     if (delta > 0) tweak = tweak * 0.99;
     else tweak = tweak * 1.02;
   } while (Math.abs(delta) > 1);
-
-  // Complete?
-  if (complete) {
-    if (sa) {
-    }
-
-    // Paperless?
-    if (paperless) {
-    }
-  }
 
   return part;
 }

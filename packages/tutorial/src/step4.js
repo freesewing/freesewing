@@ -1,6 +1,7 @@
 export default function(part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand();
 
+  return part;
   points.rightCp2 = points.rightCp1.flipY();
   points.bottomCp1 = points.bottomCp2.flipX();
 
@@ -19,16 +20,6 @@ export default function(part) {
     .curve(points.bottomCp2, points.rightCp1, points.right)
     .curve(points.rightCp2, points.topCp1, points.top)
     .close();
-
-  // Complete?
-  if (complete) {
-    if (sa) {
-    }
-
-    // Paperless?
-    if (paperless) {
-    }
-  }
 
   return part;
 }

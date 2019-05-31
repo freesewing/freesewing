@@ -30,15 +30,5 @@ export default function(part) {
     render: true
   });
 
-  // Complete?
-  if (complete) {
-    if (sa) {
-    }
-
-    // Paperless?
-    if (paperless) {
-    }
-  }
-
   return part;
 }

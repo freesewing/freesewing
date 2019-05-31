@@ -121,6 +121,7 @@ Pattern.prototype.runHooks = function(hookName, data = false) {
  *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function() {
+  console.log("draft this", this);
   if (this.is !== "sample") this.is = "draft";
   this.runHooks("preDraft");
   for (let partName of this.config.draftOrder) {
@@ -472,6 +473,7 @@ Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
     if (sorted.indexOf(name) < 0) sorted.push(name);
   });
 
+  console.log("sorted", sorted);
   return sorted;
 };
 
@@ -518,6 +520,7 @@ Pattern.prototype.resolveDependencies = function(
   for (let part of Object.keys(seen))
     if (typeof resolved[part] === "undefined") resolved[part] = [];
 
+  console.log("resolved", resolved);
   return resolved;
 };
 

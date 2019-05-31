@@ -25,15 +25,5 @@ export default function(part) {
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close();
 
-  // Complete?
-  if (complete) {
-    if (sa) {
-    }
-
-    // Paperless?
-    if (paperless) {
-    }
-  }
-
   return part;
 }

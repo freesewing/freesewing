@@ -27,27 +27,27 @@ export default {
   },
   measurements: ["headCircumference"],
   dependencies: {
-    step4: "step3",
-    step5: "step4",
-    step6: "step5",
-    step7: "step6",
-    step8: "step7",
-    step9: "step8",
-    step10: "step9",
-    step11: "step10"
+    step4: "step3"
+    //step5: "step4",
+    //step6: "step5",
+    //step7: "step6",
+    //step8: "step7",
+    //step9: "step8",
+    //step10: "step9",
+    //step11: "step10"
   },
   inject: {
-    step4: "step3",
-    step5: "step4",
-    step6: "step5",
-    step7: "step6",
-    step8: "step7",
-    step9: "step8",
-    step10: "step9",
-    step11: "step10"
+    step4: "step3"
+    //step5: "step4",
+    //step6: "step5",
+    //step7: "step6",
+    //step8: "step7",
+    //step9: "step8",
+    //step10: "step9",
+    //step11: "step10"
   },
   hide: [],
-  parts: ["step1", "step2", "bib"],
+  parts: ["step1", "step2", "step3"],
   options: {
     size: { pct: 50, min: 10, max: 100 },
     neckRatio: { pct: 80, min: 70, max: 90 },
