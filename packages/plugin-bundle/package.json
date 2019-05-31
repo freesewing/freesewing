@@ -25,27 +25,27 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
-    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
-    "modulebuild": "BABEL_ENV=production rollup -c -o dist/index.mjs -f es",
-    "build": "npm run clean && npm run nodebuild && npm run modulebuild",
+    "build": "npm run clean && rollup -c",
     "test": "echo \"plugin-bundle: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
-    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.12"
+    "@freesewing/core": "^2.0.0-beta.13"
   },
   "dependencies": {
     "@freesewing/plugin-cutonfold": "^2.0.0-beta.13",
     "@freesewing/plugin-dimension": "^2.0.0-beta.13",
     "@freesewing/plugin-grainline": "^2.0.0-beta.13",
     "@freesewing/plugin-logo": "^2.0.0-beta.13",
-    "@freesewing/plugin-round": "^2.0.0-beta.13",
+    "@freesewing/plugin-title": "^2.0.0-beta.13",
     "@freesewing/plugin-scalebox": "^2.0.0-beta.13",
-    "@freesewing/plugin-sprinkle": "^2.0.0-beta.13",
-    "@freesewing/plugin-title": "^2.0.0-beta.13"
+    "@freesewing/plugin-round": "^2.0.0-beta.13",
+    "@freesewing/plugin-sprinkle": "^2.0.0-beta.13"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

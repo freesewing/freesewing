@@ -25,11 +25,6 @@ export default {
       file: main,
       format: "cjs",
       sourcemap: true
-    },
-    {
-      file: module,
-      format: "es",
-      sourcemap: true
     }
   ],
   plugins: [

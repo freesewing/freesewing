@@ -26,20 +26,22 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c && rollup -c rollup.tests.js",
-    "testonly": "BABEL_ENV=production mocha tests/*.test.js",
     "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "start": "rollup -c -w",
+    "testonly": "BABEL_ENV=production mocha tests/*.test.js",
     "report": "BABEL_ENV=production nyc report --reporter=html",
-    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "watch": "BABEL_ENV=production rollup -c -w"
+    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },
+  "peerDependencies": {},
   "dependencies": {
     "bezier-js": "^2.2.13",
     "bin-pack": "1.0.2",
     "hooks": "^0.3.2"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

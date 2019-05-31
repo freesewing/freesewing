@@ -19,6 +19,7 @@ packages/components/withLanguage
 packages/components/Workbench
 packages/core/coverage
 packages/workbench
+.netlify
 
 # dependencies
 node_modules
