@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist/index.js");
+let freesewing = require("./dist");
 
 it("Design constructor should return pattern constructor", () => {
   let design = new freesewing.Design({
@@ -60,4 +60,41 @@ it("Design constructor should load array of plugins", () => {
   let design = new freesewing.Design({}, [plugin1, plugin2]);
   let pattern = new design();
   expect(pattern.hooks.preRender.length).to.equal(2);
+});
+
+it("Design constructor should construct basic part order", () => {
+  let design = new freesewing.Design({
+    dependencies: { step4: "step3" },
+    inject: { step4: "step3" },
+    parts: ["step1", "step2"]
+  });
+  let pattern = new design();
+  expect(pattern.config.draftOrder[0]).to.equal("step3");
+  expect(pattern.config.draftOrder[1]).to.equal("step4");
+  expect(pattern.config.draftOrder[2]).to.equal("step1");
+  expect(pattern.config.draftOrder[3]).to.equal("step2");
+});
+
+it("Design constructor should not require depencies for injected parts", () => {
+  let design = new freesewing.Design({
+    inject: { step4: "step3" },
+    parts: ["step1", "step2"]
+  });
+  let pattern = new design();
+  expect(pattern.config.draftOrder[0]).to.equal("step3");
+  expect(pattern.config.draftOrder[1]).to.equal("step4");
+  expect(pattern.config.draftOrder[2]).to.equal("step1");
+  expect(pattern.config.draftOrder[3]).to.equal("step2");
+});
+
+it("Design constructor should handle parts and dependencies overlap", () => {
+  let design = new freesewing.Design({
+    inject: { step4: "step3" },
+    parts: ["step1", "step2", "step3"]
+  });
+  let pattern = new design();
+  expect(pattern.config.draftOrder[0]).to.equal("step3");
+  expect(pattern.config.draftOrder[1]).to.equal("step4");
+  expect(pattern.config.draftOrder[2]).to.equal("step1");
+  expect(pattern.config.draftOrder[3]).to.equal("step2");
 });

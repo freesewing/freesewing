@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist/index.js");
+let freesewing = require("./dist");
 
 it("Should contain all hooks", () => {
   let pattern = new freesewing.Pattern();

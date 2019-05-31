@@ -17,6 +17,11 @@ export default {
       file: "dist/index.mjs",
       format: "es",
       sourcemap: true
+    },
+    {
+      file: "tests/dist/index.js",
+      format: "cjs",
+      sourcemap: true
     }
   ],
   plugins: [
