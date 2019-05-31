@@ -5,7 +5,7 @@ import "typeface-roboto-condensed";
 import "@freesewing/css-theme";
 
 import Pattern from "pattern";
-console.log(Pattern);
+
 const App = props => {
   let instance = new Pattern();
   let config = instance.config;

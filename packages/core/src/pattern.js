@@ -62,7 +62,6 @@ export default function Pattern(config = { options: {} }) {
       }
     }
   }
-  console.log("updated core", this.config);
   if (typeof this.config.hide === "undefined") this.config.hide = [];
   this.config.resolvedDependencies = this.resolveDependencies(
     this.config.dependencies
