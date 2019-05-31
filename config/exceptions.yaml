@@ -5,6 +5,7 @@ customRollup:
   - plugin-theme
   - components
   - core
+  - i18n
 packageJson:
   components:
     # react-scripts doesn't handle .mjs files correctly
