@@ -37,31 +37,6 @@ export default function Pattern(config = { options: {} }) {
   if (typeof this.config.dependencies === "undefined")
     this.config.dependencies = {};
   if (typeof this.config.inject === "undefined") this.config.inject = {};
-  else {
-    for (let i in this.config.inject) {
-      if (typeof this.config.dependencies[i] === "undefined")
-        this.config.dependencies[i] = this.config.inject[i];
-      else if (this.config.dependencies[i] !== this.config.inject[i]) {
-        if (typeof this.config.dependencies[i] === "string")
-          this.config.dependencies[i] = [
-            this.config.dependencies[i],
-            this.config.inject[i]
-          ];
-        else if (Array.isArray(this.config.dependencies[i])) {
-          if (this.config.dependencies[i].indexOf(i) === -1)
-            this.config.dependencies[i].push(i);
-        } else
-          throw new Error(
-            "Part dependencies should be a string or an array of strings"
-          );
-      }
-      // Parts both in the parts and dependencies array trip up the dependency resolver
-      if (Array.isArray(this.config.parts)) {
-        let pos = this.config.parts.indexOf(this.config.inject[i]);
-        if (pos !== -1) this.config.parts.splice(pos, 1);
-      }
-    }
-  }
   if (typeof this.config.hide === "undefined") this.config.hide = [];
   this.config.resolvedDependencies = this.resolveDependencies(
     this.config.dependencies
@@ -507,9 +482,10 @@ Pattern.prototype.resolveDependency = function(
   graph = this.config.dependencies,
   deps = []
 ) {
+  console.log("resolving", part, JSON.stringify(graph));
   if (typeof seen[part] === "undefined") seen[part] = true;
   if (typeof graph[part] === "string") {
-    deps.push(graph[part]);
+    if (deps.indexOf(graph[part]) === -1) deps.push(graph[part]);
     return this.resolveDependency(seen, graph[part], graph, deps);
   } else if (Array.isArray(graph[part])) {
     if (graph[part].length === 0) return [];
@@ -527,6 +503,28 @@ Pattern.prototype.resolveDependency = function(
 Pattern.prototype.resolveDependencies = function(
   graph = this.config.dependencies
 ) {
+  for (let i in this.config.inject) {
+    let dependency = this.config.inject[i];
+    if (typeof this.config.dependencies[i] === "undefined")
+      this.config.dependencies[i] = dependency;
+    else if (this.config.dependencies[i] !== dependency) {
+      if (typeof this.config.dependencies[i] === "string")
+        this.config.dependencies[i] = [this.config.dependencies[i], dependency];
+      else if (Array.isArray(this.config.dependencies[i])) {
+        if (this.config.dependencies[i].indexOf(dependency) === -1)
+          this.config.dependencies[i].push(dependency);
+      } else
+        throw new Error(
+          "Part dependencies should be a string or an array of strings"
+        );
+    }
+    // Parts both in the parts and dependencies array trip up the dependency resolver
+    if (Array.isArray(this.config.parts)) {
+      let pos = this.config.parts.indexOf(this.config.inject[i]);
+      if (pos !== -1) this.config.parts.splice(pos, 1);
+    }
+  }
+
   // Include parts outside the dependency graph
   if (Array.isArray(this.config.parts)) {
     for (let part of this.config.parts) {
