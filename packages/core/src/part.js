@@ -163,7 +163,6 @@ Part.prototype.inject = function(orig) {
     return false;
   };
 
-  console.log("inject. points?", orig);
   for (let i in orig.points) this.points[i] = orig.points[i].clone();
   for (let i in orig.paths) {
     this.paths[i] = orig.paths[i].clone();

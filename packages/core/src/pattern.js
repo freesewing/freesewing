@@ -34,9 +34,32 @@ export default function Pattern(config = { options: {} }) {
     options: {}
   };
 
-  if (typeof this.config.inject === "undefined") this.config.inject = [];
   if (typeof this.config.dependencies === "undefined")
     this.config.dependencies = {};
+  if (typeof this.config.inject === "undefined") this.config.inject = {};
+  else {
+    for (let i in this.config.inject) {
+      if (typeof this.config.dependencies[i] === "undefined")
+        this.config.dependencies[i] = this.config.inject[i];
+      else if (this.config.dependencies[i] !== this.config.inject[i]) {
+        if (typeof this.config.dependencies[i] === "string")
+          this.config.dependencies[i] = [
+            this.config.dependencies[i],
+            this.config.inject[i]
+          ];
+        else if (Array.isArray(this.config.dependencies[i])) {
+          if (this.config.dependencies[i].indexOf(i) === -1)
+            this.config.dependencies[i].push(i);
+        } else
+          throw new Error(
+            "Part dependencies should be a string or an array of strings"
+          );
+      }
+      // Parts both in the parts and dependencies array trip up the dependency resolver
+      let pos = this.config.parts.indexOf(this.config.inject[i]);
+      if (pos !== -1) this.config.parts.splice(pos, 1);
+    }
+  }
   if (typeof this.config.hide === "undefined") this.config.hide = [];
   this.config.resolvedDependencies = this.resolveDependencies(
     this.config.dependencies
@@ -121,7 +144,6 @@ Pattern.prototype.runHooks = function(hookName, data = false) {
  *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function() {
-  console.log("draft this", this);
   if (this.is !== "sample") this.is = "draft";
   this.runHooks("preDraft");
   for (let partName of this.config.draftOrder) {
@@ -473,7 +495,6 @@ Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
     if (sorted.indexOf(name) < 0) sorted.push(name);
   });
 
-  console.log("sorted", sorted);
   return sorted;
 };
 
@@ -514,13 +535,11 @@ Pattern.prototype.resolveDependencies = function(
 
   let resolved = {};
   let seen = {};
-  for (let part of Object.keys(graph)) {
+  for (let part in graph)
     resolved[part] = this.resolveDependency(seen, part, graph);
-  }
-  for (let part of Object.keys(seen))
+  for (let part in seen)
     if (typeof resolved[part] === "undefined") resolved[part] = [];
 
-  console.log("resolved", resolved);
   return resolved;
 };
 
