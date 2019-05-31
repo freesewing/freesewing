@@ -8,7 +8,7 @@ import components from "./src/index.js";
 
 const createConfig = (component, module) => {
   return {
-    input: `./src/${component === "index" ? "" : component + "/"}index.js`,
+    input: `./src/${component + "/"}index.js`,
     output: {
       file: `./${component}/index` + (module ? ".mjs" : ".js"),
       format: module ? "es" : "cjs",
@@ -37,5 +37,4 @@ for (let component of components) {
   // Webpack doesn't handle .mjs very well
   //config.push(createConfig(component, true));
 }
-
 export default config;

@@ -25,7 +25,6 @@ packageJson:
       - "withGist/*"
       - "withLanguage/*"
       - "Workbench/*"
-
   create-freesewing-pattern:
     bin:
       create-freesewing-pattern: index.js

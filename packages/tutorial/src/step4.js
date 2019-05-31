@@ -1,7 +1,6 @@
 export default function(part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand();
 
-  return part;
   points.rightCp2 = points.rightCp1.flipY();
   points.bottomCp1 = points.bottomCp2.flipX();
 

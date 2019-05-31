@@ -16,7 +16,6 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench",
-    "nodebuild": "BABEL_ENV=production rollup -c -o dist/index.js -f cjs",
     "build": "npm run clean && rollup -c",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",

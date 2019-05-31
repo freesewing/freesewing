@@ -56,10 +56,13 @@ export default function Pattern(config = { options: {} }) {
           );
       }
       // Parts both in the parts and dependencies array trip up the dependency resolver
-      let pos = this.config.parts.indexOf(this.config.inject[i]);
-      if (pos !== -1) this.config.parts.splice(pos, 1);
+      if (Array.isArray(this.config.parts)) {
+        let pos = this.config.parts.indexOf(this.config.inject[i]);
+        if (pos !== -1) this.config.parts.splice(pos, 1);
+      }
     }
   }
+  console.log("updated core", this.config);
   if (typeof this.config.hide === "undefined") this.config.hide = [];
   this.config.resolvedDependencies = this.resolveDependencies(
     this.config.dependencies

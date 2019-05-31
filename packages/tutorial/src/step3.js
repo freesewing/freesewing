@@ -1,7 +1,6 @@
 export default function(part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand();
 
-  return part;
   let tweak = 1;
   let target = (measurements.headCircumference * options.neckRatio) / 4;
   let delta = Infinity;

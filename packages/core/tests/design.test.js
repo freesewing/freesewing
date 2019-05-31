@@ -98,3 +98,33 @@ it("Design constructor should handle parts and dependencies overlap", () => {
   expect(pattern.config.draftOrder[2]).to.equal("step1");
   expect(pattern.config.draftOrder[3]).to.equal("step2");
 });
+
+it("Design constructor discover all parts", () => {
+  let design = new freesewing.Design({
+    inject: {
+      step4: "step3",
+      step5: "step4",
+      step6: "step5",
+      step7: "step6",
+      step8: "step7",
+      step9: "step8",
+      step10: "step9",
+      step11: "step10"
+    },
+    hide: [],
+    parts: ["step1", "step2"]
+  });
+  let pattern = new design();
+  console.log("order is", pattern.config.draftOrder);
+  expect(pattern.config.draftOrder[0]).to.equal("step3");
+  expect(pattern.config.draftOrder[1]).to.equal("step4");
+  expect(pattern.config.draftOrder[2]).to.equal("step5");
+  expect(pattern.config.draftOrder[3]).to.equal("step6");
+  expect(pattern.config.draftOrder[4]).to.equal("step7");
+  expect(pattern.config.draftOrder[5]).to.equal("step8");
+  expect(pattern.config.draftOrder[6]).to.equal("step9");
+  expect(pattern.config.draftOrder[7]).to.equal("step10");
+  expect(pattern.config.draftOrder[8]).to.equal("step11");
+  expect(pattern.config.draftOrder[9]).to.equal("step1");
+  expect(pattern.config.draftOrder[10]).to.equal("step2");
+});
