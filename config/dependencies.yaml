@@ -12,7 +12,6 @@ _types:
       "babel-jest": "24.7.1"
       "jest": "24.7.1"
       "@freesewing/components": "^{{version}}"
-      "@freesewing/rendertest": "^{{version}}"
       "@freesewing/css-theme": "^{{version}}"
       "@freesewing/i18n": "^{{version}}"
       "@freesewing/mui-theme": "^{{version}}"
@@ -35,9 +34,9 @@ _types:
       "rollup-plugin-peer-deps-external": "^2.2.0"
       "rollup-plugin-postcss": "^1.6.2"
       "rollup-plugin-url": "^1.4.0"
-      "@material-ui/core": "3.9.3"
-      "@material-ui/icons": "3.0.2"
-      "@material-ui/lab": "3.0.0-alpha.30"
+      "@material-ui/core": "4.0.1"
+      "@material-ui/icons": "4.0.1"
+      "@material-ui/lab": "^v4.0.0-alpha.14"
       "react-intl": "2.8.0"
       "prop-types": "15.7.2"
   plugin:
@@ -110,7 +109,7 @@ i18n:
     "@freesewing/pattern-info": "^{{version}}"
 mui-theme:
   peer:
-    "@material-ui/core": "^3.9.3"
+    "@material-ui/core": "^4.0.1"
     "react": "^16.8"
     "react-dom": "^16.8"
 pattern-info:

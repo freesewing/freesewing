@@ -17,6 +17,8 @@ packages/components/SampleConfigurator
 packages/components/withGist
 packages/components/withLanguage
 packages/components/Workbench
+packages/core/coverage
+packages/workbench
 
 # dependencies
 node_modules
