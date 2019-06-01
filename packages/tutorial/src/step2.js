@@ -1,5 +1,5 @@
 export default function(part) {
-  let { Point, points, Path, paths, measurements, options } = part.shorthand();
+  let { Point, points, Path, paths, measurements } = part.shorthand();
 
   points.right = new Point(measurements.headCircumference / 10, 0);
   points.bottom = new Point(0, measurements.headCircumference / 12);
