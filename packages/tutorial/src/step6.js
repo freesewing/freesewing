@@ -1,9 +1,6 @@
 export default function(part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand();
 
-  let width = measurements.headCircumference * options.widthRatio;
-  let length = measurements.headCircumference * options.lengthRatio;
-
   points.edgeLeft = new Point(points.topLeft.x, points.left.y);
   points.edgeRight = new Point(points.topRight.x, points.right.y);
   points.edgeTop = new Point(0, points.topLeft.y);

@@ -1,13 +1,5 @@
 export default function(part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro
-  } = part.shorthand();
+  let { points, Path, paths } = part.shorthand();
 
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX();
   points.topCp1 = points.topCp2.flipX();

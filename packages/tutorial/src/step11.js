@@ -2,10 +2,7 @@ export default function(part) {
   let {
     Point,
     points,
-    Path,
     paths,
-    measurements,
-    options,
     macro,
     complete,
     snippets,

@@ -1,13 +1,5 @@
 export default function(part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro
-  } = part.shorthand();
+  let { points, Path, paths, macro } = part.shorthand();
 
   let rotateThese = [
     "edgeTopLeftCp",

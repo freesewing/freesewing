@@ -3,7 +3,7 @@ export default function(part) {
 
   let tweak = 1;
   let target = (measurements.headCircumference * options.neckRatio) / 4;
-  let delta = Infinity;
+  let delta;
   do {
     points.right = new Point((tweak * measurements.headCircumference) / 10, 0);
     points.bottom = new Point(0, (tweak * measurements.headCircumference) / 12);

@@ -1,13 +1,5 @@
 export default function(part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro
-  } = part.shorthand();
+  let { Point, points, macro } = part.shorthand();
 
   let strap = points.edgeTop.dy(points.top);
 
