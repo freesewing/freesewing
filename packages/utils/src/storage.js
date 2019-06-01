@@ -15,7 +15,7 @@ const storage = {
   get: (key, raw) => {
     if (typeof localStorage === "undefined") {
       console.log("Warning: No localStorage support");
-      return value;
+      return null;
     }
 
     const value = localStorage.getItem("fs_" + key);
