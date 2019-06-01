@@ -25,6 +25,7 @@ packageJson:
       - "SampleConfigurator/*"
       - "withGist/*"
       - "withLanguage/*"
+      - "withStorage/*"
       - "Workbench/*"
   create-freesewing-pattern:
     bin:

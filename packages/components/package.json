@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/components",
-  "version": "2.0.0-beta.15",
+  "version": "2.0.0-beta.15-1",
   "description": "A collection of React components for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -61,6 +61,7 @@
     "SampleConfigurator/*",
     "withGist/*",
     "withLanguage/*",
+    "withStorage/*",
     "Workbench/*"
   ],
   "publishConfig": {
