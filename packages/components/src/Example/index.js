@@ -44,7 +44,11 @@ const Example = props => {
     rendertest,
     tutorial
   };
-  const settings = { options: { ...props.options } };
+  const settings = {
+    options: { ...props.options },
+    measurements: { headCircumference: 390 },
+    ...props.settings
+  };
   if (props.part !== "") settings.only = [props.part];
   const pattern = new patterns[props.pattern](settings);
 

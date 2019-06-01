@@ -16,6 +16,7 @@ packages/components/Robot
 packages/components/SampleConfigurator
 packages/components/withGist
 packages/components/withLanguage
+packages/components/withStorage
 packages/components/Workbench
 packages/core/coverage
 packages/workbench

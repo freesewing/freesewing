@@ -13,5 +13,6 @@ export default [
   "SampleConfigurator",
   "withGist",
   "withLanguage",
+  "withStorage",
   "Workbench"
 ];
