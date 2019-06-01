@@ -51,7 +51,9 @@ let options = {};
 let optionGroups = {};
 let parts = {};
 let versions = {};
+console.log(Object.keys(patterns));
 for (let pattern of Object.keys(patterns)) {
+  console.log(pattern);
   let instance = new patterns[pattern]();
   let p = pattern.toLowerCase();
   options[p] = patternOptions(instance.config);

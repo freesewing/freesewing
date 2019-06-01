@@ -482,7 +482,6 @@ Pattern.prototype.resolveDependency = function(
   graph = this.config.dependencies,
   deps = []
 ) {
-  console.log("resolving", part, JSON.stringify(graph));
   if (typeof seen[part] === "undefined") seen[part] = true;
   if (typeof graph[part] === "string") {
     if (deps.indexOf(graph[part]) === -1) deps.push(graph[part]);

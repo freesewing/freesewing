@@ -108,15 +108,6 @@ export default {
     "wristCircumference"
   ],
   dependencies: {
-    frontBase: "base",
-    backBase: "base",
-    back: "backBase",
-    front: "frontBase",
-    frontRight: "front",
-    frontLeft: "front",
-    buttonPlacket: "front",
-    buttonholePlacket: "front",
-    yoke: "backBase",
     sleeve: ["sleeveBase", "front", "back"]
   },
   inject: {

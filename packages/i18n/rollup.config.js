@@ -4,9 +4,6 @@ import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
 import minify from "rollup-plugin-babel-minify";
 import yaml from "rollup-plugin-yaml";
-import url from "rollup-plugin-url";
-import postcss from "rollup-plugin-postcss";
-import svgr from "@svgr/rollup";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import {
   name,
@@ -14,8 +11,7 @@ import {
   description,
   author,
   license,
-  main,
-  module
+  main
 } from "./package.json";
 
 export default {
@@ -30,14 +26,9 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve({ modulesOnly: true }),
-    url(),
     commonjs(),
     json(),
     yaml(),
-    svgr(),
-    postcss({
-      modules: true
-    }),
     babel({
       exclude: "node_modules/**",
       plugins: ["@babel/plugin-proposal-object-rest-spread"]
