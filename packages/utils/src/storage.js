@@ -1,8 +1,9 @@
 const storage = {
   set: (key, value, raw) => {
-    if (typeof localStorage === "undefined")
-      throw(new Error("No localStorage support. And we need it. Bailing out."));
-
+    if (typeof localStorage === "undefined") {
+      console.log("Warning: No localStorage support");
+      return value;
+    }
     const _key = "fs_" + key;
 
     if (typeof value === "undefined" || value === null)
@@ -12,13 +13,15 @@ const storage = {
     return value;
   },
   get: (key, raw) => {
-    if (typeof localStorage === "undefined")
-      throw(new Error("No localStorage support. And we need it. Bailing out."));
+    if (typeof localStorage === "undefined") {
+      console.log("Warning: No localStorage support");
+      return value;
+    }
 
-    const value = localStorage.getItem("fs_"+key);
+    const value = localStorage.getItem("fs_" + key);
 
     return raw ? value : JSON.parse(value);
   }
-}
+};
 
 export default storage;
