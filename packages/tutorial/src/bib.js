@@ -221,7 +221,32 @@ export default function(part) {
       macro("hd", {
         from: points.bottomLeftStart,
         to: points.bottomRightEnd,
-        y: points.bottomLeft - 15
+        y: points.bottomLeft.y + 15
+      });
+      macro("vd", {
+        from: points.bottomRightStart,
+        to: points.bottom,
+        x: points.bottomRight.x + 15
+      });
+      macro("vd", {
+        from: points.bottomRightStart,
+        to: points.right,
+        x: points.bottomRight.x + 30
+      });
+      macro("vd", {
+        from: points.bottomRightStart,
+        to: points.tipLeftTopStart,
+        x: points.bottomRight.x + 45
+      });
+      macro("hd", {
+        from: points.left,
+        to: points.right,
+        y: points.left.y + 25
+      });
+      macro("ld", {
+        from: points.tipLeftBottomEnd,
+        to: points.tipLeftTopStart,
+        d: -15
       });
     }
   }
