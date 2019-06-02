@@ -52,7 +52,8 @@ const Example = props => {
   if (props.part !== "") settings.only = [props.part];
   const pattern = new patterns[props.pattern](settings);
 
-  pattern.draft();
+  if (props.sample) pattern.sample();
+  else pattern.draft();
   const patternProps = pattern.getRenderProps();
   return (
     <figure className={design ? "design example" : "example"}>
