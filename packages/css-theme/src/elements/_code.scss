@@ -4,8 +4,8 @@ pre[class*="language-"] {
 }
 .theme-wrapper.light :not(pre) > code[class*="language-"] {
   padding: 0.1rem 0.25rem;
-  background: $oc-gray-2;
-  border: 1px $oc-gray-3 solid;
+  background: $oc-yellow-0;
+  border: 1px $oc-yellow-2 solid;
   color: $oc-gray-9;
 }
 .theme-wrapper.dark :not(pre) > code[class*="language-"] {

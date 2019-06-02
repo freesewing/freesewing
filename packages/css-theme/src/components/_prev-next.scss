@@ -1,17 +1,20 @@
 div.prev-next {
-  margin: 3rem 0 0 0;
+  margin: 3.33rem 0 6.66rem 0;
   padding: 0.25rem;
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  border-bottom: 1px solid $oc-gray-3;
-  span.arrow {
-    font-weight: bold;
-    font-size: 120%;
+  background: $oc-blue-0;
+  border: 1px solid $oc-blue-1;
+  border-radius: 4px;
+  padding: 9px;
+}
+.theme-wrapper.dark {
+  div.prev-next {
+    background: $oc-blue-9;
+    border-color: $oc-blue-7;
   }
-  span.arrow.prev { padding-right: 0.5rem; }
-  span.arrow.next { padding-left: 0.5rem; }
-
 }
