@@ -21,7 +21,7 @@ profileQuestion: Geeft je de toestemming om je profielgegevens te verwerken?
 profileShareAnswer: '<b> Nee </b>, nooit.'
 profileTimingAnswer: '<b> 12 maanden </b> na je laatste aanmelding of totdat je je <b>account verwijdert</b> of <b>deze toestemming intrekt</b>.'
 profileWarning: Als u deze toestemming intrekt, worden al je gegevens verwijderd. Het heeft precies hetzelfde effect als het verwijderen van je account.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
+profileWhatAnswerOptional: 'Optioneel: een <b>profielfoto</b>, <b>bio</b>, en <b>accounts voor sociale media</b>'
 profileWhatAnswer: 'Je <b> e-mailadres </b>, <b> gebruikersnaam </b> en <b> wachtwoord </b>.'
 profileWhatQuestion: Wat zijn profielgegevens?
 profileWhyAnswer: 'Om je te <b>authenticeren</b>, je te <b> contacteren </b> wanneer nodig, en een <b>gemeenschap</b> te bouwen.'
