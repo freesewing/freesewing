@@ -219,8 +219,9 @@ youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
 makerDocs: Maker documentatie
-devDocs: Ontwikkelaar documentatie
+devDocs: Documentatie voor ontwikkelaars
+slogan: Een JavaScript bibliotheek voor naaipatronen op maat
 getStarted: Aan de slag
-apiReference: API-referentie
-tutorial: Stap voor stap
-
+apiReference: API Referentie
+tutorial: Handleiding
+editThisPage: Deze pagina bewerken
