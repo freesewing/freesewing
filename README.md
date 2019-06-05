@@ -58,8 +58,6 @@
 
 FreeSewing is JavaScript library for made-to-measure sewing patterns.
 
-Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
-
 ## Links
 
  - 💻 Website: [freesewing.org](https://freesewing.org)
