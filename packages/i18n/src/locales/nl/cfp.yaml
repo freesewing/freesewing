@@ -1,28 +1,27 @@
+---
 author: Auteur
 githubRepo: GitHub repository
-packageManager: Pakket manager
-patternName: Patroonnaam
-patternDescription: Patroon beschrijving
+packageManager: Pakketbeheerder
+patternName: Patroon naam
 patternType: Patroon type
 patternCreated: Het skelet van je patroon is aangemaakt in
-runTheseCommands: Voer deze twee opdrachten uit om aan de slag te gaan
-startRollup: Start in één terminal rollup in watch-modus
-startWebpack: En in een andere terminal start je de webpack dev-server
+runTheseCommands: Om aan de slag te gaan, voer deze twee opdrachten uit
+startRollup: In één terminal, start de rollup bundler in de volgmodus
+startWebpack: En in een andere terminal start je de webpack dev server
 devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
-talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chatroom
+talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chat room
 draftYourPattern: Teken je patroon
 testYourPattern: Test je patroon
-renderInBrowser: Klik hieronder om uw patroon te renderen in de browser.
-weWillReRender: Telkens u wijzigingen aanbrengt renderen we opnieuw.
+renderInBrowser: Klik hieronder om je patroon in de browser te tonen.
+weWillReRender: Wanneer je wijzigingen maakt, renderen we opnieuw.
 youCan: Je kan
-enterMeasurements: Handmatig lichaamsmaten invoeren
-preloadMeasurements: Een reeks lichaamsmaten laden
+enterMeasurements: Maten manueel invoeren
+preloadMeasurements: Een set van maten inladen
 size: Maat
-noRequiredMeasurements: Dit patroon vereist geen lichaamsmaten.
-howtoAddMeasurements: Om lichaamsmaten te vereisen, voegt u ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
+noRequiredMeasurements: Dit patroon heeft geen vereiste maten
+howtoAddMeasurements: Om maten te vereisen, voeg je ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
 seeDocsAt: Documentatie over dit onderwerp is beschikbaar op
-designModeIsOn: Ontwerpmodus is ingeschakeld
-designModeIsOff: Ontwerpmodus is uitgeschakeld
+designModeIsOn: Ontwerpmodus is aan
+designModeIsOff: Ontwerpmodus is uit
 turnOn: Inschakelen
 turnOff: Uitschakelen
-
