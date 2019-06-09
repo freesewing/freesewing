@@ -1,12 +1,11 @@
 import axios from "axios";
-import storage from "./storage";
 
 function useBackend(baseURL, timeout = 10000) {
   // Configure Axios
   const api = axios.create({ baseURL, timeout });
 
   // Helper method for Authorization header
-  const auth = (token = storage.get("token")) => ({
+  const auth = token => ({
     headers: { Authorization: "Bearer " + token }
   });
 
@@ -30,29 +29,36 @@ function useBackend(baseURL, timeout = 10000) {
   backend.loadPatrons = handle => api.get("/patrons"); // Load patron list
 
   // Users
-  backend.account = () => api.get("/account", auth()); // Try to authenticate based on stored token
-  backend.export = () => api.get("/export", auth()); // Export data
-  backend.restrict = () => api.get("/restrict", auth()); // Restrict data processing (freeze account)
-  backend.remove = () => api.get("/remove", auth()); // Remove account
-  backend.saveAccount = data => api.put("/user", data, auth()); // Update account
-  backend.availableUsername = data =>
-    api.post("/available/username", data, auth()); // Check is a username is available
-  backend.resetPassword = username =>
-    api.post("/reset/password", { username: username }, auth()); // Ask for a password reset
-  backend.setPassword = data => api.post("/set/password", data, auth()); // (re)set a new password
+  backend.account = token => api.get("/account", auth(token)); // Try to authenticate based on stored token
+  backend.export = token => api.get("/export", auth(token)); // Export data
+  backend.restrict = token => api.get("/restrict", auth(token)); // Restrict data processing (freeze account)
+  backend.remove = token => api.get("/remove", auth(token)); // Remove account
+  backend.saveAccount = (data, token) => {
+    console.log("in utils, token is", token);
+    return api.put("/user", data, auth(token)); // Update account
+  };
+  backend.availableUsername = (data, token) =>
+    api.post("/available/username", data, auth(token)); // Check is a username is available
+  backend.resetPassword = (username, token) =>
+    api.post("/reset/password", { username: username }, auth(token)); // Ask for a password reset
+  backend.setPassword = (data, token) =>
+    api.post("/set/password", data, auth(token)); // (re)set a new password
 
   // Models
-  backend.removeModels = data => api.post("/remove/models", data, auth()); // Delete multiple models
-  backend.createModel = data => api.post("/model", data, auth()); // Create model
-  backend.saveModel = (handle, data) =>
-    api.put("/model/" + handle, data, auth()); // Update model
+  backend.removeModels = (data, token) =>
+    api.post("/remove/models", data, auth(token)); // Delete multiple models
+  backend.createModel = (data, token) => api.post("/model", data, auth(token)); // Create model
+  backend.saveModel = (handle, data, token) =>
+    api.put("/model/" + handle, data, auth(token)); // Update model
 
   // Drafts
-  backend.createDraft = data => api.post("/draft", data, auth()); // Create draft
-  backend.saveDraft = (handle, data) =>
-    api.put("/draft/" + handle, data, auth()); // Update draft
-  backend.removeDraft = handle => api.delete("/draft/" + handle, auth()); // Remove draft
-  backend.removeDrafts = data => api.post("/remove/drafts", data, auth()); // Delete multiple drafts
+  backend.createDraft = (data, token) => api.post("/draft", data, auth(token)); // Create draft
+  backend.saveDraft = (handle, data, token) =>
+    api.put("/draft/" + handle, data, auth(token)); // Update draft
+  backend.removeDraft = (handle, token) =>
+    api.delete("/draft/" + handle, auth(token)); // Remove draft
+  backend.removeDrafts = (data, token) =>
+    api.post("/remove/drafts", data, auth(token)); // Delete multiple drafts
 
   return backend;
 }

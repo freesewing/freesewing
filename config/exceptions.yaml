@@ -23,6 +23,7 @@ packageJson:
       - "Ogol/*"
       - "Robot/*"
       - "SampleConfigurator/*"
+      - "Spinner/*"
       - "withGist/*"
       - "withLanguage/*"
       - "withStorage/*"
