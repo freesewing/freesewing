@@ -9,7 +9,7 @@
   </a>
 </p>
 <h4 align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing v2</a>
+<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing</a>
 <br><sup>A JavaScript library for made-to-measure sewing patterns</sup>
 </h4>
 <p align='center'><a
@@ -57,8 +57,6 @@
 ## About freesewing
 
 FreeSewing is JavaScript library for made-to-measure sewing patterns.
-
-Try [the online demo](https://beta.freesewing.org/en/demo/) to *get it*.
 
 ## Links
 
