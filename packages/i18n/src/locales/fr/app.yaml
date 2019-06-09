@@ -12,7 +12,7 @@ allDocumentation: Toute la documentation
 andThatIsAwesome: Et c'est génial
 applyThisLayout: Appliquer cette mise en page
 areYouSureYouWantToContinue: Es-tu sur de vouloir continuer?
-askForHelp: Demander de l'aide
+askForHelp: Ask for help
 automatic: Automatique
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
@@ -182,7 +182,7 @@ startOver: Recommencer
 startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
 startTranslatingNow: Commencez à traduire maintenant
 subscribe: Souscrire
-support: Soutien
+support: Support
 supportFreesewing: Soutenir freesewing
 tellMeMore: En savoir plus
 thanksForYourSupport: Merci pour votre soutien
@@ -218,9 +218,11 @@ youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
-makerDocs: Documentation créateur
-devDocs: Documentation développeur
-getStarted: Commencer
-apiReference: Référence de l'API
-tutorial: Tutoriel
-
+makerDocs: Maker documentation
+devDocs: Developer documentation
+slogan: A JavaScript library for made-to-measure sewing patterns
+getStarted: Get started
+apiReference: API Reference
+tutorial: Tutorial
+editThisPage: Edit this page
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
