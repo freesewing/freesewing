@@ -1,5 +1,5 @@
 /**
- * @freesewing/components/Spinner | v2.0.0-beta.19-1
+ * @freesewing/components/Spinner | v2.0.0-beta.20
  * A collection of React components for FreeSewing web UIs
  * (c) 2019 Joost De Cock <joost@decock.org> (https://github.com/joostdecock)
  * @license MIT
