@@ -28,7 +28,9 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "axios": "^0.19.0"
+  },
   "dependencies": {},
   "devDependencies": {},
   "files": [

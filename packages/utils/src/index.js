@@ -1,3 +1,5 @@
+export { default as backend } from "./backend";
+export { default as camelCase } from "./camelCase";
 export { default as cloneObject } from "./cloneObject";
 export { default as defaultGist } from "./defaultGist";
 export { default as defaultSa } from "./defaultSa";

@@ -154,6 +154,9 @@ simon:
     "@freesewing/brian": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-flip": "^{{version}}"
+utils:
+  peer:
+    "axios": "^0.19.0"
 wahid:
   peer:
     "@freesewing/brian": "^{{version}}"

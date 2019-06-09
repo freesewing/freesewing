@@ -224,3 +224,4 @@ getStarted: Get started
 apiReference: API Reference
 tutorial: Tutorial
 editThisPage: Edit this page
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'

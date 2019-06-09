@@ -10,6 +10,7 @@ export default [
   "Navbar",
   "Ogol",
   "Robot",
+  "Spinner",
   "SampleConfigurator",
   "withGist",
   "withLanguage",
