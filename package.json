@@ -160,8 +160,8 @@
     "@freesewing/tamiko": "file:packages/tamiko",
     "@freesewing/trayvon": "file:packages/trayvon",
     "@freesewing/wahid": "file:packages/wahid",
-    "@freesewing/workbench": "file:packages/workbench",
-    "create-freesewing-pattern": "file:packages/create-freesewing-pattern"
+    "create-freesewing-pattern": "file:packages/create-freesewing-pattern",
+    "tlds": "1.203.1"
   },
   "workspaces": [
     "packages/*"
