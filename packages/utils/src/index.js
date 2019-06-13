@@ -14,3 +14,5 @@ export { default as sliderStep } from "./sliderStep";
 export { default as smallestImperialStep } from "./smallestImperialStep";
 export { default as storage } from "./storage";
 export { default as measurementAsMm } from "./measurementAsMm";
+export { default as validateEmail } from "./validateEmail";
+export { default as validateTld } from "./validateTld";

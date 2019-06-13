@@ -19,7 +19,8 @@ function useBackend(baseURL, timeout = 10000) {
   backend.signup = (email, password, language) =>
     api.post("/signup", { email, password, language }); // Signup
   backend.confirm = confirmId => api.post("/confirm", { id: confirmId }); // Confirm
-  backend.createAccount = confirmId => api.post("/user", { id: confirmId }); // Create account
+  backend.createAccount = (confirmId, consent) =>
+    api.post("/user", { id: confirmId, consent }); // Create account
 
   // Other non-authenticated calls
   backend.login = (username, password) =>
@@ -33,10 +34,7 @@ function useBackend(baseURL, timeout = 10000) {
   backend.export = token => api.get("/export", auth(token)); // Export data
   backend.restrict = token => api.get("/restrict", auth(token)); // Restrict data processing (freeze account)
   backend.remove = token => api.get("/remove", auth(token)); // Remove account
-  backend.saveAccount = (data, token) => {
-    console.log("in utils, token is", token);
-    return api.put("/user", data, auth(token)); // Update account
-  };
+  backend.saveAccount = (data, token) => api.put("/user", data, auth(token)); // Update account
   backend.availableUsername = (data, token) =>
     api.post("/available/username", data, auth(token)); // Check is a username is available
   backend.resetPassword = (username, token) =>
