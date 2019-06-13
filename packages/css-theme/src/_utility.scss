@@ -19,3 +19,6 @@
   border: 1px solid #fff3;
 }
 
+.font-text { @include body-font; }
+.font-title { @include title-font; }
+.poh:hover {cursor: pointer;}
