@@ -6,6 +6,14 @@ const measurementAsMm = (value, units = "metric") => {
     if (isNaN(value)) return false;
     return value * 10;
   } else {
+    const imperialFractionToMm = value => {
+      let chunks = value.trim().split("/");
+      if (chunks.length !== 2 || chunks[1] === "") return false;
+      let num = Number(chunks[0]);
+      let denom = Number(chunks[1]);
+      if (isNaN(num) || isNaN(denom)) return false;
+      else return (num * 25.4) / denom;
+    };
     let chunks = value.split(" ");
     if (chunks.length === 1) {
       let val = chunks[0];

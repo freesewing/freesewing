@@ -21,17 +21,17 @@ const formatMm = (val, units, format = "html") => {
     let fraction128 = Math.round(rest * 128);
     if (fraction128 == 0) return formatImperial(negative, inches);
     if (fraction128 % 64 == 0)
-      return formatImperial(negative, inches, fraction128 / 64, 2);
+      return formatImperial(negative, inches, fraction128 / 64, 2, format);
     if (fraction128 % 32 == 0)
-      return formatImperial(negative, inches, fraction128 / 32, 4);
+      return formatImperial(negative, inches, fraction128 / 32, 4, format);
     if (fraction128 % 16 == 0)
-      return formatImperial(negative, inches, fraction128 / 16, 8);
+      return formatImperial(negative, inches, fraction128 / 16, 8, format);
     if (fraction128 % 8 == 0)
-      return formatImperial(negative, inches, fraction128 / 8, 16);
+      return formatImperial(negative, inches, fraction128 / 8, 16, format);
     if (fraction128 % 4 == 0)
-      return formatImperial(negative, inches, fraction128 / 4, 32);
+      return formatImperial(negative, inches, fraction128 / 4, 32, format);
     if (fraction128 % 2 == 0)
-      return formatImperial(negative, inches, fraction128 / 2, 64);
+      return formatImperial(negative, inches, fraction128 / 2, 64, format);
     return negative + fraction;
   } else {
     if (format === "html") return roundMm(val / 10) + "cm";
