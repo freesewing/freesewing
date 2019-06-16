@@ -10,3 +10,9 @@
 .theme-wrapper.dark a:not([role="button"]) {
   color: $fc-link-dark;
 }
+.theme-wrapper.light a.anchor svg path {
+  stroke: $fc-link-light;
+}
+.theme-wrapper.dark a.anchor svg path {
+  stroke: $fc-link-dark;
+}
