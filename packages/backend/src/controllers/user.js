@@ -38,7 +38,7 @@ UserController.prototype.login = function (req, res) {
           Draft.find({user: user.handle}, (err, draftList) => {
             if(err) return res.sendStatus(400);
             for ( let draft of draftList ) drafts[draft.handle] = draft;
-            user.updateLoginTime(() => res.send({account, models, token}));
+            user.updateLoginTime(() => res.send({account, models, recipes: drafts, token}));
           });
         });
       } else {
@@ -65,7 +65,7 @@ UserController.prototype.create = (req, res) => {
       handle,
       username,
       password: confirmation.data.password,
-      consent: { profile: true },
+      consent: req.body.consent,
       settings: { language: confirmation.data.language },
       time: {
         created: new Date(),
@@ -143,7 +143,7 @@ UserController.prototype.update = (req, res) => {
         ...data.consent
       }
     }
-    if(typeof data.avatar !== "undefined") {
+    if(typeof data.avatar !== "undefined" && data.avatar) {
       let type = imageTypeFromDataUri(data.avatar);
       saveAvatar(data.avatar, user.handle, type);
       user.avatar = user.handle+"."+type;
