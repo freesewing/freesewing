@@ -1,5 +1,56 @@
-export default {
-  manSize34: {
+export const measurements = {
+  menswear: [
+    "bicepsCircumference",
+    "centerBackNeckToWaist",
+    "chestCircumference",
+    "headCircumference",
+    "hipsCircumference",
+    "hipsToUpperLeg",
+    "inseam",
+    "naturalWaist",
+    "naturalWaistToFloor",
+    "naturalWaistToHip",
+    "naturalWaistToKnee",
+    "naturalWaistToSeat",
+    "neckCircumference",
+    "seatDepth",
+    "shoulderSlope",
+    "shoulderToElbow",
+    "shoulderToShoulder",
+    "shoulderToWrist",
+    "upperLegCircumference",
+    "wristCircumference"
+  ],
+  womenswear: [
+    "bicepsCircumference",
+    "bustSpan",
+    "centerBackNeckToWaist",
+    "chestCircumference",
+    "headCircumference",
+    "highBust",
+    "highPointShoulderToBust",
+    "hipsCircumference",
+    "hipsToUpperLeg",
+    "inseam",
+    "naturalWaist",
+    "naturalWaistToFloor",
+    "naturalWaistToHip",
+    "naturalWaistToKnee",
+    "naturalWaistToUnderbust",
+    "naturalWaistToSeat",
+    "neckCircumference",
+    "seatDepth",
+    "shoulderSlope",
+    "shoulderToElbow",
+    "shoulderToShoulder",
+    "shoulderToWrist",
+    "upperLegCircumference",
+    "wristCircumference"
+  ]
+};
+
+export const menswear = {
+  size34: {
     bicepsCircumference: 335,
     centerBackNeckToWaist: 489,
     chestCircumference: 849,
@@ -14,7 +65,7 @@ export default {
     upperLegCircumference: 565,
     wristCircumference: 175
   },
-  manSize36: {
+  size36: {
     bicepsCircumference: 290,
     centerBackNeckToWaist: 492,
     chestCircumference: 907,
@@ -29,7 +80,7 @@ export default {
     upperLegCircumference: 582,
     wristCircumference: 180
   },
-  manSize38: {
+  size38: {
     bicepsCircumference: 305,
     centerBackNeckToWaist: 495,
     chestCircumference: 965,
@@ -44,7 +95,7 @@ export default {
     upperLegCircumference: 598,
     wristCircumference: 185
   },
-  manSize40: {
+  size40: {
     bicepsCircumference: 320,
     centerBackNeckToWaist: 498,
     chestCircumference: 1023,
@@ -59,7 +110,7 @@ export default {
     upperLegCircumference: 614,
     wristCircumference: 190
   },
-  manSize42: {
+  size42: {
     bicepsCircumference: 335,
     centerBackNeckToWaist: 501,
     chestCircumference: 1081,
@@ -76,7 +127,7 @@ export default {
     upperLegCircumference: 630,
     wristCircumference: 195
   },
-  manSize44: {
+  size44: {
     bicepsCircumference: 350,
     centerBackNeckToWaist: 505,
     chestCircumference: 1139,
