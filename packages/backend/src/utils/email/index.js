@@ -53,7 +53,7 @@ email.signup = (recipient, language, id) => {
     '__footerWhy__',
   ];
   let to = [
-    `${config.website}/${language}/confirm/${id}`,
+    `${config.website}/confirm/signup/${id}`,
     i18n[language].signupHeaderOpeningLine,
     i18n[language].signupHiddenIntro,
     i18n[language].signupWhy,
@@ -84,7 +84,7 @@ email.emailchange = (newAddress, currentAddress, language, id) => {
     '__footerWhy__',
   ];
   let to = [
-    `${config.website}/${language}/confirm/${id}`,
+    `${config.website}/confirm/email/${id}`,
     i18n[language].emailchangeHeaderOpeningLine,
     i18n[language].emailchangeHiddenIntro,
     i18n[language].emailchangeWhy,
@@ -116,7 +116,7 @@ email.passwordreset = (recipient, language, id) => {
     '__footerWhy__',
   ];
   let to = [
-    `${config.website}/${language}/confirm/${id}`,
+    `${config.website}/confirm/reset/${id}`,
     i18n[language].passwordresetHeaderOpeningLine,
     i18n[language].passwordresetHiddenIntro,
     i18n[language].passwordresetWhy,
