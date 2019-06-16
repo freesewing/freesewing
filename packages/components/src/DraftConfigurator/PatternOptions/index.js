@@ -57,7 +57,6 @@ const PatternOptions = props => {
 
 PatternOptions.propTypes = {
   config: PropTypes.object.isRequired,
-  gist: PropTypes.object.isRequired,
   raiseEvent: PropTypes.func
 };
 

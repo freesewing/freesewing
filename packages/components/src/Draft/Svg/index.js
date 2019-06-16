@@ -21,10 +21,9 @@ const Svg = props => {
 };
 
 Svg.propTypes = {
-  attributes: PropTypes.object,
   embed: PropTypes.bool,
-  languages: PropTypes.string,
   className: PropTypes.string,
+  language: PropTypes.string,
   design: PropTypes.bool
 };
 

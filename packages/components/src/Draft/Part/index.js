@@ -142,8 +142,7 @@ Part.propTypes = {
   name: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
   paperless: PropTypes.bool.isRequired,
-  design: PropTypes.bool.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+  design: PropTypes.bool.isRequired
 };
 
 export default Part;

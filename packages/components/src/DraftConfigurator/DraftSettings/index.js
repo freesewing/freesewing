@@ -120,8 +120,7 @@ const DraftSettings = props => {
 };
 
 DraftSettings.propTypes = {
-  config: PropTypes.object.isRequired,
-  gist: PropTypes.object.isRequired
+  config: PropTypes.object.isRequired
 };
 
 DraftSettings.defaultProps = {};

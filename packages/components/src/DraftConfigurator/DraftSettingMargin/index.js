@@ -73,8 +73,7 @@ DraftSettingMargin.propTypes = {
   updateValue: PropTypes.func.isRequired,
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired,
-  labels: PropTypes.array
+  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
 };
 
 DraftSettingMargin.defaultProps = {

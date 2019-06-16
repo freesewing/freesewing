@@ -62,8 +62,7 @@ DraftSettingLanguage.propTypes = {
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  list: PropTypes.object.isRequired
+  desc: PropTypes.node.isRequired
 };
 
 export default injectIntl(DraftSettingLanguage);

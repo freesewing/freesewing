@@ -48,7 +48,8 @@ const Measurements = props => {
                 "https://" + props.language + "/.freesewing.dev/core/config"
               }
             >
-              {props.language}.freesewing.dev/core/config
+              {props.language}
+              .freesewing.dev/core/config
             </a>
           </p>
         </div>
@@ -115,7 +116,7 @@ const Measurements = props => {
 };
 
 Measurements.propTypes = {
-  measuremnents: PropTypes.object.isRequired,
+  measurements: PropTypes.object.isRequired,
   required: PropTypes.array.isRequired,
   units: PropTypes.oneOf(["metric", "imperial"]),
   updateMeasurement: PropTypes.func.isRequired,

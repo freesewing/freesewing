@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import PatternOptions from "./PatternOptions";
 import models from "@freesewing/models";
@@ -91,11 +90,5 @@ const SampleConfigurator = props => {
     </ul>
   );
 };
-
-SampleConfigurator.propTypes = {
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
-};
-
-SampleConfigurator.defaultProps = {};
 
 export default SampleConfigurator;

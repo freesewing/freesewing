@@ -31,8 +31,7 @@ const Snippet = props => {
 };
 
 Snippet.propTypes = {
-  snippet: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired
+  snippet: PropTypes.object.isRequired
 };
 
 export default Snippet;

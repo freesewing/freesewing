@@ -39,8 +39,7 @@ const OptionGroup = props => {
 
 OptionGroup.propTypes = {
   config: PropTypes.object.isRequired,
-  options: PropTypes.array.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+  options: PropTypes.array.isRequired
 };
 
 OptionGroup.defaultProps = {};

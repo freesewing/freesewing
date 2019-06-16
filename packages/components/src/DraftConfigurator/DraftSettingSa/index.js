@@ -114,7 +114,6 @@ const DraftSettingSa = props => {
 };
 
 DraftSettingSa.propTypes = {
-  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,
