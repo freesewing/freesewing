@@ -51,38 +51,27 @@ UserController.prototype.login = function (req, res) {
 
 // CRUD basics
 
+// Note that the user is already crearted (in signup)
+// we just need to active the account
 UserController.prototype.create = (req, res) => {
   if (!req.body) return res.sendStatus(400);
   Confirmation.findById(req.body.id, (err, confirmation) => {
     if (err) return res.sendStatus(400);
     if(confirmation === null) return res.sendStatus(401);
-    let handle = uniqueHandle();
-    let username = "user-"+handle;
-    let user = new User({
-      email: confirmation.data.email,
-      initial: confirmation.data.email,
-      ehash: ehash(confirmation.data.email),
-      handle,
-      username,
-      password: confirmation.data.password,
-      consent: req.body.consent,
-      settings: { language: confirmation.data.language },
-      time: {
-        created: new Date(),
-        login: new Date(),
-      }
-    });
-    user.save(function (err) {
-      if (err) {
-        log.error('accountCreationFailed', user);
-        console.log(err);
-        return res.sendStatus(500);
-      }
+    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
+      if (err) return res.sendStatus(400);
+      if(user === null) return res.sendStatus(401);
+      user.status = "active";
+      user.consent = req.body.consent;
+      user.time.login = new Date();
+      log.info('accountActivated', { handle: user.handle });
       let account = user.account();
-      log.info('accountCreated', { handle: user.handle });
       let token = getToken(account);
-      Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
-        return res.send({account,token});
+      user.save(function (err) {
+        if (err) return res.sendStatus(400);
+        Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
+          return res.send({account,token});
+        });
       });
     });
   });
@@ -286,19 +275,44 @@ UserController.prototype.signup = (req, res) => {
     if (err) return res.sendStatus(500);
     if(user !== null) return res.status(400).send('userExists');
     else {
-      let confirmation = new Confirmation({
-        type: "signup",
-        data: {
-          language: req.body.language,
-          email: req.body.email,
-          password: req.body.password
+      // FROM HERE
+      let handle = uniqueHandle();
+      let username = "user-"+handle;
+      let user = new User({
+        email: req.body.email,
+        initial: req.body.email,
+        ehash: ehash(req.body.email),
+        handle,
+        username,
+        password: req.body.password,
+        settings: { language: req.body.language },
+        status: "pending",
+        time: {
+          created: new Date(),
         }
       });
-      confirmation.save(function (err) {
-        if (err) return res.sendStatus(500);
-        log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id });
-        email.signup(req.body.email, req.body.language, confirmation._id);
-        return res.sendStatus(200);
+      user.save(function (err) {
+        if (err) {
+          log.error('accountCreationFailed', user);
+          console.log(err);
+          return res.sendStatus(500);
+        }
+        log.info('accountCreated', { handle: user.handle });
+        let confirmation = new Confirmation({
+          type: "signup",
+          data: {
+            language: req.body.language,
+            email: req.body.email,
+            password: req.body.password,
+            handle
+          }
+        });
+        confirmation.save(function (err) {
+          if (err) return res.sendStatus(500);
+          log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id });
+          email.signup(req.body.email, req.body.language, confirmation._id);
+          return res.sendStatus(200);
+        });
       });
     }
   });
