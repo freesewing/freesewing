@@ -33,7 +33,7 @@ UserController.prototype.login = function (req, res) {
         let models = {};
         Model.find({user: user.handle}, (err, modelList) => {
           if(err) return res.sendStatus(400);
-          for ( let model of modelList ) models[model.handle] = model;
+          for ( let model of modelList ) models[model.handle] = model.info();
           let drafts = {};
           Draft.find({user: user.handle}, (err, draftList) => {
             if(err) return res.sendStatus(400);
