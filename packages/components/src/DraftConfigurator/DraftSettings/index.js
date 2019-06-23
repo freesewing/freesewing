@@ -8,7 +8,7 @@ import DraftSettingPaperless from "../DraftSettingPaperless";
 import DraftSettingUnits from "../DraftSettingUnits";
 import DraftSettingLanguage from "../DraftSettingLanguage";
 import DraftSettingOnly from "../DraftSettingOnly";
-import DownIcon from "@material-ui/icons/KeyboardArrowDown";
+import RightIcon from "@material-ui/icons/KeyboardArrowRight";
 
 const DraftSettings = props => {
   const [expanded, setExpanded] = useState([]);
@@ -90,7 +90,7 @@ const DraftSettings = props => {
   };
 
   return (
-    <ul className="nav l2">
+    <ul className="config l2">
       {Object.keys(groups).map(group => {
         let open = true;
         if (expanded.indexOf(group) === -1) open = false;
@@ -102,14 +102,14 @@ const DraftSettings = props => {
               className={open ? "expanded" : "collapsed"}
               key={group + "-ghead"}
             >
-              <h5 onClick={() => toggleGroup(group)}>
-                <DownIcon
+              <span onClick={() => toggleGroup(group)}>
+                <RightIcon
                   className={
                     "icon-col-exp " + (open ? "expanded" : "collapsed")
                   }
                 />
                 <FormattedMessage id={"optiongroups." + group} />
-              </h5>
+              </span>
             </li>
             {children}
           </React.Fragment>

@@ -66,14 +66,14 @@ const OptionGroup = props => {
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
-              <h5 key={subGroup + "-title"} className="subheading">
+              <span key={subGroup + "-title"} className="subheading">
                 <FormattedMessage id={"optiongroups." + subGroup} />
-              </h5>
+              </span>
             );
             let children = [];
             for (let option of name[subGroup])
               children.push(renderOption(option, true));
-            output.push(<ul className="nav l4">{children}</ul>);
+            output.push(<ul className="config l4">{children}</ul>);
           }
         } else output.push(renderOption(name));
 
