@@ -66,13 +66,23 @@ app.post("/api", async (req, res) => {
       console.log(err);
       return res.sendStatus(500);
       }
-    let target = storage+dir+"/pattern-"+req.body.size+".pdf";
+    let target = storage+dir+"/pattern-"+req.body.size;
   	if(req.body.size === "full") { // Do not tile
-  	  cmd = "/usr/bin/inkscape --export-pdf="+target+" "+svg;
-  	  shellExec(cmd).then(() => {
-  	    return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-full.pdf"});
-  	  });
+      if (req.body.format === "ps") {
+        target += ".ps";
+  	    cmd = "/usr/bin/inkscape --export-ps="+target+" "+svg;
+  	    shellExec(cmd).then(() => {
+  	      return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-full.ps"});
+  	    });
+      } else {
+        target += ".pdf";
+  	    cmd = "/usr/bin/inkscape --export-pdf="+target+" "+svg;
+  	    shellExec(cmd).then(() => {
+  	      return res.send({link: process.env.TILER_DOWNLOAD+"/tmp/"+dir+"/pattern-full.pdf"});
+  	    });
+      }
   	} else { // Do tile
+      target += ".pdf";
     	let untiled = storage+dir+"/untiled.ps";
     	let tiled = storage+dir+"/tiled.ps";
     	cmd = `/usr/bin/inkscape --export-ps=${untiled} ${svg}`;
