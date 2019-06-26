@@ -26,7 +26,7 @@ function useBackend(baseURL, timeout = 10000) {
   backend.login = (username, password) =>
     api.post("/login", { username, password }); // Login
   backend.profile = username => api.get("/users/" + username); // Load user profile
-  backend.loadGist = handle => api.get("/gist/" + handle); // Load draft/gist anonymously
+  backend.loadGist = handle => api.get("/gist/" + handle); // Load recipe/gist anonymously
   backend.loadPatrons = handle => api.get("/patrons"); // Load patron list
 
   // Users
@@ -49,14 +49,19 @@ function useBackend(baseURL, timeout = 10000) {
   backend.saveModel = (handle, data, token) =>
     api.put("/model/" + handle, data, auth(token)); // Update model
 
-  // Drafts
-  backend.createDraft = (data, token) => api.post("/draft", data, auth(token)); // Create draft
-  backend.saveDraft = (handle, data, token) =>
-    api.put("/draft/" + handle, data, auth(token)); // Update draft
-  backend.removeDraft = (handle, token) =>
-    api.delete("/draft/" + handle, auth(token)); // Remove draft
-  backend.removeDrafts = (data, token) =>
-    api.post("/remove/drafts", data, auth(token)); // Delete multiple drafts
+  // Recipes
+  backend.createRecipe = (data, token) =>
+    api.post("/recipe", data, auth(token)); // Create recipe
+  backend.removeRecipe = (handle, token) =>
+    api.delete("/recipe/" + handle, auth(token)); // Remove recipe
+  backend.saveRecipe = (handle, data, token) =>
+    api.put("/recipe/" + handle, data, auth(token)); // Update recipe
+
+  //backend.createDraft = (data, token) => api.post("/draft", data, auth(token)); // Create draft
+  //backend.saveDraft = (handle, data, token) =>
+  //  api.put("/draft/" + handle, data, auth(token)); // Update draft
+  //backend.removeDrafts = (data, token) =>
+  //  api.post("/remove/drafts", data, auth(token)); // Delete multiple drafts
 
   return backend;
 }
