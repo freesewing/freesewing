@@ -22,8 +22,11 @@ ul.topics > li {
 ul.topics > li.active {
   font-weight: bold;
   a.topic {
-    border-left: 4px solid $fc-link-light;
+    border-left: 4px solid $fc-text-light;
   }
+}
+.theme-wrapper.dark ul.topics > li.active a.topic {
+    border-color: 4px solid $fc-text-dark;
 }
 ul.topics > li > ul.topics.l1 {
   font-weight: normal;
