@@ -27,13 +27,19 @@ const Workbench = props => {
     setDisplay(getDisplay());
     props.setLanguage(props.userLanguage || "en");
   }, []);
-  useEffect(() => {
-    if (props.from) props.importGist(props.from);
-  }, [props.from]);
-  useEffect(() => {
-    if (props.language !== props.gist.settings.locale)
-      props.updateGist(props.language, "settings", "locale");
-  }, [props.language]);
+  useEffect(
+    () => {
+      if (props.from) props.importGist(props.from);
+    },
+    [props.from]
+  );
+  useEffect(
+    () => {
+      if (props.language !== props.gist.settings.locale)
+        props.updateGist(props.language, "settings", "locale");
+    },
+    [props.language]
+  );
 
   const getDisplay = () => storage.get(props.config.name + "-display");
   const saveDisplay = d => {
@@ -176,7 +182,6 @@ const Workbench = props => {
   }
 
   const themes = { dark, light };
-  console.log("With navbar");
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
       <div

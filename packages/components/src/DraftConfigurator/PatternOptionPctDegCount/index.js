@@ -30,7 +30,9 @@ const PatternOptionPctDegCount = props => {
 
   const reset = () => {
     setValue(props.dflt);
-    props.updateValue(props.name, props.dflt);
+    let factor = 1;
+    if (props.type === "pct") factor = 100;
+    props.updateValue(props.name, props.dflt / factor);
   };
 
   const toggleExpanded = () => setExpanded(!expanded);
