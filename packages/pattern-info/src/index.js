@@ -20,3 +20,21 @@ export const list = [
   "trayvon",
   "wahid"
 ];
+
+export const withoutBreasts = [
+  "aaron",
+  "bent",
+  "brian",
+  "bruce",
+  "carlton",
+  "huey",
+  "hugo",
+  "jaeger",
+  "simon",
+  "sven",
+  "tamiko",
+  "trayvon",
+  "wahid"
+];
+
+export const withBreasts = ["cathrin"];
