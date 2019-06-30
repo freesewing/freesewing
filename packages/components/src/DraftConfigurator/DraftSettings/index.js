@@ -28,7 +28,6 @@ const DraftSettings = props => {
     metric: <FormattedMessage id="app.metricUnits" />,
     imperial: <FormattedMessage id="app.imperialUnits" />
   };
-
   const addProps = setting => {
     const labels = {
       sa: {
@@ -62,8 +61,8 @@ const DraftSettings = props => {
       childProps.dflt = "dflt";
       childProps.customDflt = [];
       childProps.parts = {};
-      if (props.config.parts) {
-        for (let part of props.config.parts) // HERE
+      if (props.config.draftOrder) {
+        for (let part of props.config.draftOrder)
           childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
       }
     }
