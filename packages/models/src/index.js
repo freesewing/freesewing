@@ -49,7 +49,7 @@ export const measurements = {
   ]
 };
 
-export const menswear = {
+export const withoutBreasts = {
   size34: {
     bicepsCircumference: 335,
     centerBackNeckToWaist: 489,
@@ -142,4 +142,8 @@ export const menswear = {
     upperLegCircumference: 646,
     wristCircumference: 200
   }
+};
+
+export const withBreasts = {
+  // FIXME
 };
