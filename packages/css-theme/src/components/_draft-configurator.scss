@@ -46,7 +46,6 @@ ul.config.l3 > li > div {
 ul.config.l3 > li > div.expanded {
   margin: 0 0 2rem 0;
   padding: 0.75 0.5rem 1.5rem;
-  border-left: 4px solid $fc-text-light;
 }
 ul.config.l2 > li > div:hover,
 ul.config.l3 > li > div:hover {
@@ -75,6 +74,12 @@ span.custom {
 }
 .theme-wrapper.dark span.custom {
   color: $oc-yellow-8;
+}
+.theme-wrapper.light div.col-exp.expanded {
+  border-left: 4px solid $fc-text-light;
+}
+.theme-wrapper.dark div.col-exp.expanded {
+  border-left: 4px solid $fc-text-dark;
 }
 
 svg.icon-col-exp {
