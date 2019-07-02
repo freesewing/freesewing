@@ -11,7 +11,8 @@ export default part => {
     macro,
     complete,
     sa,
-    paperless
+    paperless,
+    snippets
   } = part.shorthand();
 
   // Cleanup from Brian

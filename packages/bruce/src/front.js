@@ -1,7 +1,7 @@
 import init from "./init";
 
 function tuskDelta(part) {
-  let { Path, points } = part.shorthand();
+  let { Path, points, store } = part.shorthand();
   let len = new Path()
     .move(points.midRight)
     .curve(
