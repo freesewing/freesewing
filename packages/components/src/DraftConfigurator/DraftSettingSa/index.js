@@ -101,7 +101,7 @@ const DraftSettingSa = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.raiseEventAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: "sa"
           })

@@ -5,6 +5,7 @@ import icons from "./icons";
 const Icon = props => {
   return (
     <svg
+      style={props.style}
       className={props.className}
       xmlns="http://www.w3.org/2000/svg"
       width={props.size}
@@ -23,7 +24,8 @@ const Icon = props => {
 Icon.propTypes = {
   size: PropTypes.number,
   viewBox: PropTypes.string,
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  style: PropTypes.object
 };
 
 Icon.defaultProps = {
@@ -31,7 +33,8 @@ Icon.defaultProps = {
   viewBox: "0 0 24 24",
   className: "",
   icon: "github",
-  color: false
+  color: false,
+  style: {}
 };
 
 export default Icon;
