@@ -17,7 +17,7 @@ const OptionGroup = props => {
     let stringKey = `options.${props.config.name}.${name}.`;
     let extraProps = {
       name,
-      dflt: optionDefault(props.config.options[name]),
+      dflt: optionDefault(props.config.options[name], props.gist),
       units: props.units,
       updateValue: props.updateValue,
       raiseEvent: props.raiseEvent,
@@ -28,6 +28,10 @@ const OptionGroup = props => {
       key: name,
       noDocs: props.noDocs
     };
+    if (typeof props.gist.settings.options[name] !== "undefined")
+      extraProps.value = props.gist.settings.options[name];
+    else extraProps.value = null;
+
     let noyes = [
       <FormattedMessage id="app.no" />,
       <FormattedMessage id="app.yes" />

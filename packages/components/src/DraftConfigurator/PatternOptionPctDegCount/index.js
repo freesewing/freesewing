@@ -4,11 +4,16 @@ import FormFieldSlider from "../../.form/FormFieldSlider";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionPctDegCount = props => {
-  const [value, setValue] = useState(props.dflt);
-  const [previousValue, setPreviousValue] = useState(props.dflt);
-  const [expanded, setExpanded] = useState(false);
-
+  let factor = 1;
+  if (props.type === "pct") factor = 100;
   const round = val => Math.round(val * 10) / 10;
+  const [value, setValue] = useState(
+    props.value === null ? props.dflt : round(props.value * factor)
+  );
+  const [previousValue, setPreviousValue] = useState(
+    props.value === null ? props.dflt : round(props.value * factor)
+  );
+  const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
     newValue = round(newValue);
@@ -16,8 +21,6 @@ const PatternOptionPctDegCount = props => {
     // causes a weird timing issue to result in a value that is NaN.
     // If that's the case, just ignore this update and keep the
     // previous one instead
-    let factor = 1;
-    if (props.type === "pct") factor = 100;
     if (!isNaN(newValue)) {
       setValue(newValue);
       if (evt.type !== "mousemove")
@@ -30,8 +33,6 @@ const PatternOptionPctDegCount = props => {
 
   const reset = () => {
     setValue(props.dflt);
-    let factor = 1;
-    if (props.type === "pct") factor = 100;
     props.updateValue(props.name, props.dflt / factor);
   };
 

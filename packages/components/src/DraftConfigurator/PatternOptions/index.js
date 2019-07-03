@@ -27,6 +27,7 @@ const PatternOptions = props => {
             key={group + "-group"}
             units={props.units}
             config={props.config}
+            gist={props.gist}
             options={props.config.optionGroups[group]}
             updateValue={props.updateValue}
             raiseEvent={props.raiseEvent}
