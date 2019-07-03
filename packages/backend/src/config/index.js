@@ -18,32 +18,32 @@ export default {
     saltRounds: 10
   },
   encryption: {
-    key: process.env.MONGO_ENC_KEY,
+    key: process.env.FS_ENC_KEY || '', // Prevent mongoose plugin from throwing an error
   },
   jwt: {
-    secretOrKey: process.env.MONGO_ENC_KEY,
-    issuer: process.env.JWT_ISSUER,
-    audience: process.env.JWT_ISSUER,
+    secretOrKey: process.env.FS_ENC_KEY,
+    issuer: process.env.FS_JWT_ISSUER,
+    audience: process.env.FS_JWT_ISSUER,
     expiresIn: "36 days",
 
   },
   languages: ["en", "de", "es", "fr", "nl"],
   smtp: {
-    host: process.env.SMTP_HOST,
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    host: process.env.FS_SMTP_HOST,
+    user: process.env.FS_SMTP_USER,
+    pass: process.env.FS_SMTP_PASS,
 
   },
   oauth: {
     github: {
-      clientId: process.env.GITHUB_CLIENT_ID,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      clientId: process.env.FS_GITHUB_CLIENT_ID,
+      clientSecret: process.env.FS_GITHUB_CLIENT_SECRET,
       tokenUri: "https://github.com/login/oauth/access_token",
       dataUri: "https://api.github.com/user"
     },
     google: {
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.FS_GOOGLE_CLIENT_ID,
+      clientSecret: process.env.FS_GOOGLE_CLIENT_SECRET,
       tokenUri: "https://oauth2.googleapis.com/token",
       dataUri: "https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
     }

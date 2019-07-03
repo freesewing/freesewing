@@ -2,11 +2,17 @@ import express from "express";
 import mongoose from "mongoose";
 import chalk from "chalk";
 import passport from "passport";
-import config from "./config";
+import config from "./config/index";
+import verifyConfig from "./config/verify";
 import expressMiddleware from "./middleware/express";
 import passportMiddleware from "./middleware/passport";
 import routes from "./routes";
+import path from "path";
 
+// Verify configuration
+verifyConfig(config, chalk);
+
+// Start Express
 const app = express();
 
 // Load Express middleware
@@ -38,25 +44,14 @@ mongoose
     process.exit();
   });
 
-app.get("/", async (req, res) => {
-  try {
-    const thing = await Promise.resolve({ one: "two" }); // async/await!
-    return res.json({ ...thing, hello: "world" }); // object-rest-spread!
-  } catch (e) {
-    return res.json({ error: e.message });
-  }
-});
+// Catch-all route
+app.get("/", async (req, res)
+  => res.sendFile(path.resolve(__dirname, "landing", "index.html")));
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, err => {
-  if (err) {
-    console.error('Error occured', err);
-  }
-
-  if (__DEV__) {
-    // webpack flags!
-    console.log("> in development");
-  }
-
-  console.log(`> listening on port ${port}`);
+  if (err) console.error(chalk.red('Error occured'), err);
+  if (__DEV__) console.log(chalk.yellow("> in development"));
+  console.log(chalk.green(`> listening on port ${port}`));
 });
