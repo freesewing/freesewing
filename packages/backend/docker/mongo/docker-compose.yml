@@ -1,0 +1,9 @@
+freesewing-mongo:
+  image: mongo:3.4
+  ports:
+    - "27017:27017"
+  volumes:
+    - "mongo-entrypoint/:/docker-entrypoint-initdb.d/"
+  # If you want to mount your own data volume, do so here
+  # - /my/own/datadir:/data/db
+  command: mongod --auth
