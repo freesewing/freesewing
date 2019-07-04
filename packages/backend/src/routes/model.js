@@ -15,7 +15,11 @@ export default (app, passport) => {
     passport.authenticate('jwt', {session: false }),
     Model.update
   ); // Update
-  app.delete('/model/:handle', Model.delete); // Delete
+  app.delete(
+    '/model/:handle',
+    passport.authenticate('jwt', { session: false }),
+    Model.delete
+  ); // Delete
 
   // Delete multiple
   app.post(

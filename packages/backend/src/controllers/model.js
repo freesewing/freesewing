@@ -63,7 +63,17 @@ ModelController.prototype.update = (req, res) => {
   });
 }
 
-ModelController.prototype.delete =  function (req, res) { }
+ModelController.prototype.delete = (req, res) => {
+  if (!req.user._id) return res.sendStatus(400);
+  User.findById(req.user._id, async (err, user) => {
+    if(err || user === null) return res.sendStatus(400);
+      Model.deleteOne({ handle: req.params.handle, user: user.handle }, (err) => {
+        if (err) return res.sendStatus(400);
+        else return res.sendStatus(204);
+      });
+    });
+}
+
 
 function imageType(uri) {
   let type = uri.split(';').shift();
