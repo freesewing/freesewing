@@ -6,7 +6,9 @@ import { injectIntl } from "react-intl";
 import { languages } from "@freesewing/i18n";
 
 const DraftSettingLanguage = props => {
-  const [value, setValue] = useState(props.intl.locale);
+  const [value, setValue] = useState(
+    props.value === null ? props.intl.locale : props.value
+  );
   const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
