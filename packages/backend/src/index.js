@@ -45,8 +45,7 @@ mongoose
   });
 
 // Catch-all route
-app.get("/", async (req, res)
-  => res.sendFile(path.resolve(__dirname, "landing", "index.html")));
+app.get("/", async (req, res) => res.sendFile(path.resolve(__dirname, "landing", "index.html")));
 
 const port = process.env.PORT || 3000;
 

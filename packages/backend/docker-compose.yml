@@ -5,19 +5,6 @@ services:
     image: freesewing/backend:beta
     env_file:
       - .env
-    environment:
-      - FS_BACKEND=${FS_BACKEND}
-      - FS_SITE=${FS_SITE}
-      - FS_MONGO_URI=$FS_MONGO_URI}
-      - FS_ENC_KEY=${FS_ENC_KEY}
-      - FS_JWT_ISSUER=${FS_JWT_ISSUER}
-      - FS_SMTP_HOST=${FS_SMTP_HOST}
-      - FS_SMTP_USER=${FS_SMTP_USER}
-      - FS_SMTP_PASS=${FS_SMTP_PASS}
-      - FS_GITHUB_CLIENT_ID=${FS_GITHUB_CLIENT_ID}
-      - FS_GITHUB_CLIENT_SECRET=${FS_GITHUB_CLIENT_SECRET}
-      - FS_GOOGLE_CLIENT_ID=${FS_GOOGLE_CLIENT_ID}
-      - FS_GOOGLE_CLIENT_SECRET=${FS_GOOGLE_CLIENT_SECRET}
     ports:
       - "3000:3000"
     depends_on:
@@ -37,9 +24,6 @@ services:
     image: mongo:3.4
     env_file:
       - .env
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
-      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     networks:
       - private
     volumes:
