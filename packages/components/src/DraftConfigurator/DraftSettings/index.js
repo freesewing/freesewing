@@ -66,6 +66,13 @@ const DraftSettings = props => {
           childProps.parts[part] = <FormattedMessage id={"parts." + part} />;
       }
     }
+    if (
+      typeof props.gist !== "undefined" &&
+      typeof props.gist.settings !== "undefined" &&
+      typeof props.gist.settings[setting] !== "undefined"
+    )
+      childProps.value = props.gist.settings[setting];
+    else childProps.value = null;
 
     return childProps;
   };

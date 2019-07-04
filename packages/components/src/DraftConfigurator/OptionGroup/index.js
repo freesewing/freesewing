@@ -28,7 +28,12 @@ const OptionGroup = props => {
       key: name,
       noDocs: props.noDocs
     };
-    if (typeof props.gist.settings.options[name] !== "undefined")
+    if (
+      typeof props.gist !== "undefined" &&
+      typeof props.gist.settings !== "undefined" &&
+      typeof props.gist.settings.options !== "undefined" &&
+      typeof props.gist.settings.options[name] !== "undefined"
+    )
       extraProps.value = props.gist.settings.options[name];
     else extraProps.value = null;
 
