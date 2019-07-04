@@ -4,7 +4,9 @@ import FormFieldBool from "../../.form/FormFieldBool";
 import OptionPreamble from "../OptionPreamble";
 
 const PatternOptionBool = props => {
-  const [value, setValue] = useState(props.dflt);
+  const [value, setValue] = useState(
+    props.value === null ? props.dflt : props.value
+  );
   const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
