@@ -43,11 +43,13 @@ function useBackend(baseURL, timeout = 10000) {
     api.post("/set/password", data, auth(token)); // (re)set a new password
 
   // Models
-  backend.removeModels = (data, token) =>
-    api.post("/remove/models", data, auth(token)); // Delete multiple models
   backend.createModel = (data, token) => api.post("/model", data, auth(token)); // Create model
   backend.saveModel = (handle, data, token) =>
     api.put("/model/" + handle, data, auth(token)); // Update model
+  backend.removeModel = (handle, token) =>
+    api.delete("/model/" + handle, auth(token)); // Remove model
+  backend.removeModels = (data, token) =>
+    api.post("/remove/models", data, auth(token)); // Delete multiple models
 
   // Recipes
   backend.createRecipe = (data, token) =>
