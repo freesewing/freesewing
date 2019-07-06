@@ -44,6 +44,7 @@ export const measurements = {
     "shoulderToElbow",
     "shoulderToShoulder",
     "shoulderToWrist",
+    "underbust",
     "upperLegCircumference",
     "wristCircumference"
   ]
