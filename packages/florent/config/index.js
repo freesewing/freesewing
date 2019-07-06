@@ -3,6 +3,15 @@ import { version } from "../package.json";
 export default {
   name: "florent",
   version: version,
+  design: "Quentin Felix",
+  code: ["Quentin Felix", "Joost De Cock"],
+  department: "accessories",
+  type: "pattern",
+  difficulty: 2,
+  tags: ["headwear", "cap"],
+  optionGroups: {
+    fit: ["headEase"]
+  },
   measurements: ["headCircumference"],
   dependencies: {
     side: "top",
