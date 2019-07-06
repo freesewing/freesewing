@@ -105,9 +105,16 @@ create-freesewing-pattern:
     "which": "^1.3.1"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/pattern-info": "^{{version}}"
+hugo:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 i18n:
   peer:
     "@freesewing/pattern-info": "^{{version}}"
+jaeger:
+  peer:
+    "@freesewing/bent": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
 mui-theme:
   peer:
     "@material-ui/core": "^4.0.1"
