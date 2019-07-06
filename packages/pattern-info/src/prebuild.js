@@ -53,6 +53,7 @@ let parts = {};
 let measurements = {};
 let versions = {};
 for (let pattern of Object.keys(patterns)) {
+  //console.log(pattern);
   let instance = new patterns[pattern]();
   let p = pattern.toLowerCase();
   options[p] = patternOptions(instance.config);
