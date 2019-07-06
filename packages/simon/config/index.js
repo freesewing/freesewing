@@ -74,6 +74,8 @@ export default {
       {
         sleevecap: [
           "sleevecapEase",
+          "sleevecapTopFactorX",
+          "sleevecapTopFactorY",
           "sleevecapBackFactorX",
           "sleevecapBackFactorY",
           "sleevecapFrontFactorX",
@@ -108,6 +110,7 @@ export default {
     "wristCircumference"
   ],
   dependencies: {
+    sleeveBase: ["frontBase", "backBase"],
     sleeve: ["sleeveBase", "front", "back"]
   },
   inject: {
@@ -120,6 +123,7 @@ export default {
     buttonPlacket: "front",
     buttonholePlacket: "front",
     yoke: "backBase",
+    sleeveBase: "front",
     sleeve: "sleeveBase"
   },
   parts: [
@@ -208,6 +212,8 @@ export default {
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
+    sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
     sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
     sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
     sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
