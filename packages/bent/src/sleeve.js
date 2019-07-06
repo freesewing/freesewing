@@ -1,5 +1,5 @@
 export default function(part) {
-  let { Path, points, store, options } = part.shorthand();
+  let { Path, paths, points, store, options } = part.shorthand();
 
   function draftSleeve(part, tweak) {
     let {
