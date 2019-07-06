@@ -347,7 +347,9 @@ Path.prototype.shiftAlong = function(distance) {
     }
     current = op.to;
   }
-  throw new Error("Ran out of path to shift along");
+  throw new Error(
+    `Error in Path.shiftAlong(): Ran out of path to shift along. Distance requested was ${distance}, path length is${this.length()}.`
+  );
 };
 
 /** Returns a point that lies at fraction along this */
