@@ -1,4 +1,5 @@
 export { default as Aaron } from "@freesewing/aaron";
+export { default as Benjamin } from "@freesewing/benjamin";
 export { default as Bent } from "@freesewing/bent";
 export { default as Brian } from "@freesewing/brian";
 export { default as Bruce } from "@freesewing/bruce";

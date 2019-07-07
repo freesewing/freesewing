@@ -127,6 +127,7 @@ pattern-info:
 patterns:
   _:
     "@freesewing/aaron": "^{{version}}"
+    "@freesewing/benjamin": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/brian": "^{{version}}"
     "@freesewing/bruce": "^{{version}}"
@@ -146,6 +147,7 @@ patterns:
   peer:
     "@freesewing/core": "^{{version}}"
     "@freesewing/plugin-bundle": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
 plugin-bundle:
   _:
     "@freesewing/plugin-cutonfold": "^{{version}}"

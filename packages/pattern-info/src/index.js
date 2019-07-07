@@ -6,6 +6,7 @@ export { default as versions } from "./prebuild/versions";
 
 export const list = [
   "aaron",
+  "benjamin",
   "bent",
   "brian",
   "bruce",
@@ -26,13 +27,16 @@ export const list = [
 
 export const withoutBreasts = [
   "aaron",
+  "benjamin",
   "bent",
   "brian",
   "bruce",
   "carlton",
+  "florent",
   "huey",
   "hugo",
   "jaeger",
+  "shin",
   "simon",
   "sven",
   "tamiko",
@@ -40,4 +44,4 @@ export const withoutBreasts = [
   "wahid"
 ];
 
-export const withBreasts = ["cathrin"];
+export const withBreasts = ["cathrin", "carlita"];
