@@ -1,12 +1,15 @@
 export default function(part) {
   let {
     paperless,
+    sa,
     points,
     macro,
     Point,
     Path,
+    paths,
     snippets,
-    Snippet
+    Snippet,
+    complete
   } = part.shorthand();
 
   const fitCap = (part, scale) => {
