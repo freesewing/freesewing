@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import poses from "./poses";
 
 const Robot = props => {
-  console.log("roboprops", props);
   return (
     <svg
       className={props.className}
