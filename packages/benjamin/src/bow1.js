@@ -1,13 +1,5 @@
 export default function(part) {
-  let {
-    complete,
-    macro,
-    points,
-    paths,
-    snippets,
-    Snippet,
-    sa
-  } = part.shorthand();
+  let { complete, macro, points, paths, sa } = part.shorthand();
 
   paths.seam.render = true;
 
