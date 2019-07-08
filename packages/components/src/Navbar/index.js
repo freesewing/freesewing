@@ -85,9 +85,7 @@ Navbar.propTypes = {
   navs: PropTypes.object,
   logo: PropTypes.node,
   emblem: PropTypes.node,
-  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
-  toggleMenu: PropTypes.func,
-  toggleToc: PropTypes.func
+  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
 };
 
 Navbar.defaultProps = {

@@ -3,6 +3,16 @@ import { version } from "../package.json";
 export default {
   name: "shin",
   version: version,
+  design: "Joost De Cock",
+  code: "Joost De Cock",
+  department: "menswear",
+  type: "pattern",
+  difficulty: 2,
+  tags: ["swimwear", "bottom"],
+  optionGroups: {
+    fit: ["bulge", "backRise", "legReduction", "stretch"],
+    style: ["lengthBonus", "rise"]
+  },
   measurements: [
     "hipsCircumference",
     "upperLegCircumference",

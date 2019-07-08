@@ -5,7 +5,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 
 const FormFieldChecks = props => {
-  const [value, setValue] = useState(props.dflt);
+  const [value, setValue] = useState(props.dflt ? props.dflt : []);
 
   const toggle = part => {
     let parts = value.slice(0);

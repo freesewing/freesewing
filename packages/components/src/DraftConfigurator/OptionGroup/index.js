@@ -17,7 +17,7 @@ const OptionGroup = props => {
     let stringKey = `options.${props.config.name}.${name}.`;
     let extraProps = {
       name,
-      dflt: optionDefault(props.config.options[name]),
+      dflt: optionDefault(props.config.options[name], props.gist),
       units: props.units,
       updateValue: props.updateValue,
       raiseEvent: props.raiseEvent,
@@ -28,6 +28,15 @@ const OptionGroup = props => {
       key: name,
       noDocs: props.noDocs
     };
+    if (
+      typeof props.gist !== "undefined" &&
+      typeof props.gist.settings !== "undefined" &&
+      typeof props.gist.settings.options !== "undefined" &&
+      typeof props.gist.settings.options[name] !== "undefined"
+    )
+      extraProps.value = props.gist.settings.options[name];
+    else extraProps.value = null;
+
     let noyes = [
       <FormattedMessage id="app.no" />,
       <FormattedMessage id="app.yes" />
@@ -66,14 +75,14 @@ const OptionGroup = props => {
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
-              <h5 key={subGroup + "-title"} className="subheading">
+              <span key={subGroup + "-title"} className="subheading">
                 <FormattedMessage id={"optiongroups." + subGroup} />
-              </h5>
+              </span>
             );
             let children = [];
             for (let option of name[subGroup])
               children.push(renderOption(option, true));
-            output.push(<ul className="nav l4">{children}</ul>);
+            output.push(<ul className="config l4">{children}</ul>);
           }
         } else output.push(renderOption(name));
 

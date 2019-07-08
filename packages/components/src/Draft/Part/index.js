@@ -34,7 +34,6 @@ const Part = props => {
   };
 
   const focusCoords = (p, i) => {
-    console.log("focus coords", p, i);
     let pathString = `M ${p.x} ${props.part.topLeft.y} `;
     pathString += `L ${p.x} ${props.part.bottomRight.y} `;
     pathString += `M ${props.part.topLeft.x} ${p.y} `;
@@ -142,8 +141,7 @@ Part.propTypes = {
   name: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
   paperless: PropTypes.bool.isRequired,
-  design: PropTypes.bool.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
+  design: PropTypes.bool.isRequired
 };
 
 export default Part;

@@ -23,8 +23,9 @@ export default function(part) {
     .split(points.outsetStart)
     .pop()
     .split(points.outsetEnd)
-    .shift()
-    .offset(1.5);
+    .shift();
+  // We check for sa here because it's a good way to sidestep issue #19
+  if (sa) paths.outset = paths.outset.offset(1.5);
 
   paths.inset = new Path()
     .move(points.tipLeft)
@@ -38,8 +39,9 @@ export default function(part) {
     .split(points.insetStart)
     .pop()
     .split(points.insetEnd)
-    .shift()
-    .offset(1.5);
+    .shift();
+  // We check for sa here because it's a good way to sidestep issue #19
+  if (sa) paths.inset = paths.inset.offset(1.5);
   paths.inset.render = false;
   paths.outset.render = false;
 

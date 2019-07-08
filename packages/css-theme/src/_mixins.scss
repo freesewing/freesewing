@@ -8,7 +8,7 @@
   @media (min-width: 960px) { @content; }
 }
 
-@mixin body-font { font-family:  -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+@mixin body-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 @mixin title-font { font-family: 'Roboto Condensed', sans-serif; }
 @mixin fixed-font { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 @mixin scribble-font { font-family: 'Permanent Marker', cursive; }

@@ -1,12 +1,18 @@
-.theme-wrapper a:not([role="button"]) {
+.theme-wrapper a:not(.MuiButton-root) {
   text-decoration: none;
 }
-.theme-wrapper a:not([role="button"]):hover {
+.theme-wrapper a:not(.MuiButton-root):hover {
   text-decoration: underline;
 }
-.theme-wrapper.light a:not([role="button"]) {
+.theme-wrapper.light a:not(.MuiButton-root) {
   color: $fc-link-light;
 }
-.theme-wrapper.dark a:not([role="button"]) {
+.theme-wrapper.dark a:not(.MuiButton-root) {
   color: $fc-link-dark;
+}
+.theme-wrapper.light a.anchor svg path {
+  stroke: $fc-link-light;
+}
+.theme-wrapper.dark a.anchor svg path {
+  stroke: $fc-link-dark;
 }

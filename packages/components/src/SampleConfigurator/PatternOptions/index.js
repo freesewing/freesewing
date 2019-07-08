@@ -38,7 +38,6 @@ const PatternOptions = props => {
 
 PatternOptions.propTypes = {
   config: PropTypes.object.isRequired,
-  gist: PropTypes.object.isRequired,
   sampleOption: PropTypes.func.isRequired
 };
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import OptionGroup from "../OptionGroup";
 import { FormattedMessage } from "react-intl";
-import DownIcon from "@material-ui/icons/KeyboardArrowDown";
+import RightIcon from "@material-ui/icons/KeyboardArrowRight";
 
 const PatternOptions = props => {
   const [expanded, setExpanded] = useState([]);
@@ -21,12 +21,13 @@ const PatternOptions = props => {
     let children = null;
     if (expanded.indexOf(group) !== -1)
       children = (
-        <ul className="nav l3">
+        <ul className="config l3">
           <OptionGroup
             noDocs={props.noDocs}
             key={group + "-group"}
             units={props.units}
             config={props.config}
+            gist={props.gist}
             options={props.config.optionGroups[group]}
             updateValue={props.updateValue}
             raiseEvent={props.raiseEvent}
@@ -35,12 +36,12 @@ const PatternOptions = props => {
       );
     output.push(
       <li className={open ? "expanded" : "collapsed"} key={group + "-ghead"}>
-        <h5 onClick={() => toggleGroup(group)}>
-          <DownIcon
+        <span onClick={() => toggleGroup(group)}>
+          <RightIcon
             className={"icon-col-exp " + (open ? "expanded" : "collapsed")}
           />
           <FormattedMessage id={"optiongroups." + group} />
-        </h5>
+        </span>
         {children}
       </li>
     );
@@ -49,7 +50,7 @@ const PatternOptions = props => {
   };
 
   return (
-    <ul className="nav l2">
+    <ul className="config l2">
       {Object.keys(props.config.optionGroups).map(group => renderGroup(group))}
     </ul>
   );
@@ -57,7 +58,6 @@ const PatternOptions = props => {
 
 PatternOptions.propTypes = {
   config: PropTypes.object.isRequired,
-  gist: PropTypes.object.isRequired,
   raiseEvent: PropTypes.func
 };
 

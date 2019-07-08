@@ -1,9 +1,6 @@
 const storage = {
   set: (key, value, raw) => {
-    if (typeof localStorage === "undefined") {
-      console.log("Warning: No localStorage support");
-      return value;
-    }
+    if (typeof localStorage === "undefined") return value;
     const _key = "fs_" + key;
 
     if (typeof value === "undefined" || value === null)
@@ -13,10 +10,7 @@ const storage = {
     return value;
   },
   get: (key, raw) => {
-    if (typeof localStorage === "undefined") {
-      console.log("Warning: No localStorage support");
-      return null;
-    }
+    if (typeof localStorage === "undefined") return null;
 
     const value = localStorage.getItem("fs_" + key);
 

@@ -6,9 +6,19 @@ import { formatMm, roundMm, defaultSa, sliderStep } from "@freesewing/utils";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingSa = props => {
-  const [value, setValue] = useState("dflt");
-  const [saValue, setSaValue] = useState(defaultSa[props.units]);
-  const [customValue, setCustomValue] = useState(10);
+  const [value, setValue] = useState(
+    props.value === defaultSa[props.units]
+      ? "dflt"
+      : props.value === 0
+        ? "none"
+        : "custom"
+  );
+  const [saValue, setSaValue] = useState(
+    props.value === null ? defaultSa[props.units] : props.value
+  );
+  const [customValue, setCustomValue] = useState(
+    value === "custom" ? props.value : 10
+  );
   const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
@@ -101,7 +111,7 @@ const DraftSettingSa = props => {
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.raiseEventAction("showHelp", {
+          props.raiseEvent("showHelp", {
             type: "draftSetting",
             value: "sa"
           })
@@ -114,7 +124,6 @@ const DraftSettingSa = props => {
 };
 
 DraftSettingSa.propTypes = {
-  raiseEvent: PropTypes.func.isRequired,
   updateValue: PropTypes.func.isRequired,
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,

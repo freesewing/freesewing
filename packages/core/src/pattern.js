@@ -141,7 +141,8 @@ Pattern.prototype.draft = function() {
             method +
             "() was undefined. Did you forget to return the Part object?"
         );
-      this.parts[partName].render = this.wants(partName);
+      this.parts[partName].render =
+        this.parts[partName].render === false ? false : this.wants(partName);
     } else {
       this.parts[partName].render = false;
     }
@@ -611,7 +612,7 @@ Pattern.prototype.getRenderProps = function() {
   props.height = this.height;
   props.settings = this.settings;
   props.parts = {};
-  for (let p of Object.keys(this.parts)) {
+  for (let p in this.parts) {
     if (this.parts[p].render) {
       props.parts[p] = {
         paths: this.parts[p].paths,

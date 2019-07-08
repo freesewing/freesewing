@@ -50,15 +50,16 @@ const patternParts = config => {
 let options = {};
 let optionGroups = {};
 let parts = {};
+let measurements = {};
 let versions = {};
-console.log(Object.keys(patterns));
 for (let pattern of Object.keys(patterns)) {
-  console.log(pattern);
+  //console.log(pattern);
   let instance = new patterns[pattern]();
   let p = pattern.toLowerCase();
   options[p] = patternOptions(instance.config);
   optionGroups[p] = instance.config.optionGroups;
   parts[p] = patternParts(instance.config);
+  measurements[p] = instance.config.measurements;
   versions[p] = instance.config.version;
 }
 
@@ -73,6 +74,10 @@ fse.writeFileSync(
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "parts.js"),
   "module.exports = " + JSON.stringify(parts) + "\n"
+);
+fse.writeFileSync(
+  path.join(".", "src", "prebuild", "measurements.js"),
+  "module.exports = " + JSON.stringify(measurements) + "\n"
 );
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "versions.js"),

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/patterns",
-  "version": "2.0.0-beta.18",
+  "version": "2.0.0-beta.28",
   "description": "An umbrella package for all FreeSewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,28 +32,31 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.17",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.17"
+    "@freesewing/core": "^2.0.0-beta.28",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.28",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.28"
   },
   "dependencies": {
-    "@freesewing/aaron": "^2.0.0-beta.18",
-    "@freesewing/bent": "^2.0.0-beta.18",
-    "@freesewing/brian": "^2.0.0-beta.18",
-    "@freesewing/bruce": "^2.0.0-beta.18",
-    "@freesewing/carlita": "^2.0.0-beta.18",
-    "@freesewing/carlton": "^2.0.0-beta.18",
-    "@freesewing/cathrin": "^2.0.0-beta.18",
-    "@freesewing/florent": "^2.0.0-beta.18",
-    "@freesewing/huey": "^2.0.0-beta.18",
-    "@freesewing/hugo": "^2.0.0-beta.18",
-    "@freesewing/jaeger": "^2.0.0-beta.18",
-    "@freesewing/shin": "^2.0.0-beta.18",
-    "@freesewing/simon": "^2.0.0-beta.18",
-    "@freesewing/sven": "^2.0.0-beta.18",
-    "@freesewing/tamiko": "^2.0.0-beta.18",
-    "@freesewing/trayvon": "^2.0.0-beta.18",
-    "@freesewing/wahid": "^2.0.0-beta.18"
+    "@freesewing/aaron": "^2.0.0-beta.28",
+    "@freesewing/benjamin": "^2.0.0-beta.28",
+    "@freesewing/bent": "^2.0.0-beta.28",
+    "@freesewing/brian": "^2.0.0-beta.28",
+    "@freesewing/bruce": "^2.0.0-beta.28",
+    "@freesewing/carlita": "^2.0.0-beta.28",
+    "@freesewing/carlton": "^2.0.0-beta.28",
+    "@freesewing/cathrin": "^2.0.0-beta.28",
+    "@freesewing/florent": "^2.0.0-beta.28",
+    "@freesewing/huey": "^2.0.0-beta.28",
+    "@freesewing/hugo": "^2.0.0-beta.28",
+    "@freesewing/jaeger": "^2.0.0-beta.28",
+    "@freesewing/shin": "^2.0.0-beta.28",
+    "@freesewing/simon": "^2.0.0-beta.28",
+    "@freesewing/sven": "^2.0.0-beta.28",
+    "@freesewing/tamiko": "^2.0.0-beta.28",
+    "@freesewing/trayvon": "^2.0.0-beta.28",
+    "@freesewing/wahid": "^2.0.0-beta.28"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

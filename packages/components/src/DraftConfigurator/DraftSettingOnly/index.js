@@ -4,8 +4,12 @@ import FormFieldList from "../../.form/FormFieldList";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingOnly = props => {
-  const [value, setValue] = useState(props.dflt);
-  const [parts, setParts] = useState([]);
+  const [value, setValue] = useState(
+    props.value === null ? "dflt" : props.value === false ? "dflt" : "custom"
+  );
+  const [parts, setParts] = useState(
+    value === "custom" ? props.value : props.customDflt
+  );
   const [expanded, setExpanded] = useState(false);
 
   const update = (name, newValue, evt) => {
@@ -51,7 +55,7 @@ const DraftSettingOnly = props => {
           checks={props.parts}
           name="parts"
           value={value}
-          dflt={props.customDflt}
+          dflt={parts}
           onChange={updateCustom}
           label="po-list-only"
           updateValue={updateCustom}

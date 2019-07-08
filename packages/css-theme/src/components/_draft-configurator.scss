@@ -1,56 +1,85 @@
-ul.nav { padding-left: 0;}
-ul.nav.l1 { overflow-x: hidden;}
-ul.nav.l2,
-ul.nav.l3,
-ul.nav.l4 {
+ul.config {
+  @include title-font;
+  padding: 0;
+}
+ul.config.l1 { overflow-x: hidden;}
+ul.config.l2,
+ul.config.l3,
+ul.config.l4 {
   margin: 0;
   padding: 0;
 }
 
-ul.nav li {list-style-type: none;}
-ul.nav p { @include body-font;}
-ul.nav.l4 li { padding-left: 0.75rem; }
-ul.nav h2,
-ul.nav h3,
-ul.nav h4,
-ul.nav h5 {
+ul.config li { list-style-type: none; }
+
+/* level 1 */
+ul.config.l1 > li > span {
   display: block;
-  margin: 0;
-  padding: 0.5rem 0.25rem 0.5rem 1rem;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid $oc-gray-6;
+  margin: 0.5rem 0;
 }
-ul.nav h3:hover,
-ul.nav h4:hover,
-ul.nav h5:hover, {
+
+/* level 2 */
+ul.config.l2 > li.collapsed > span,
+ul.config.l2 > li.expanded > span {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+ul.config.l2 > li > span:hover {
   cursor: pointer;
-  background: $oc-gray-3;
+  background: $oc-gray-5;
 }
-ul.nav h5 { padding-left: 1.5rem; }
-ul.nav h3 {
-  position: sticky;
-  top: 0;
-  background: $oc-gray-1;
-  z-index: 3;
+
+/* level 3 */
+div.collapsed {
+  display: none;
 }
+ul.config.l2 > li > div,
+ul.config.l3 > li > div {
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+}
+ul.config.l3 > li > div.expanded {
+  margin: 0 0 2rem 0;
+  padding: 0.75 0.5rem 1.5rem;
+}
+ul.config.l2 > li > div:hover,
+ul.config.l3 > li > div:hover {
+  cursor: pointer;
+  background: $oc-gray-4;
+}
+ul.config.l2 > li > div.expanded:hover,
+ul.config.l3 > li > div.expanded:hover {
+  background: initial;
+  cursor: initial;
+}
+div.expanded div.MuiSlider-container {
+  width: initial;
+  margin: 0;
+  overflow: initial;
+}
+ul.config p { @include body-font;}
+ul.config.l4 li { padding-left: 0.75rem; }
 span.dflt,
 span.custom {
   padding: 2px 4px;
   border-radius: 4px;
 }
-span.custom {
-  background: rgba($oc-yellow-6, 0.65);
+.theme-wrapper.light span.custom {
+  background: $oc-orange-2;
 }
-.col-exp {
-  transition: max-height 0.2s ease-in-out, opacity 0.1s cubic-bezier(.55,.06,.68,.19) 0.05s;
+.theme-wrapper.dark span.custom {
+  color: $oc-yellow-8;
 }
-
-.col-exp.expanded {
-  margin-top: 0;
-  opacity: 1;
+.theme-wrapper.light div.col-exp.expanded {
+  border-left: 4px solid $fc-text-light;
 }
-.col-exp.collapsed {
-  opacity: 0;
-  max-height: 0;
-  overflow-y: hidden;
+.theme-wrapper.dark div.col-exp.expanded {
+  border-left: 4px solid $fc-text-dark;
 }
 
 svg.icon-col-exp {
@@ -60,32 +89,10 @@ svg.icon-col-exp {
   opacity: 0.4;
 }
 svg.icon-col-exp.expanded {
-  transform: scale(-1);
+  transform: rotate(90deg);
   opacity: 1;
 }
-
-ul.nav.l2 div.col-exp,
-ul.nav.l3 div.col-exp,
-ul.nav.l4 div.col-exp {
-  margin: 0 27px;
-}
-
 button.mini-icon-btn {
   margin: 0;
   padding: 2px;
-}
-
-.theme-wrapper.dark {
-  ul.nav h3,
-  ul.nav h4 {
-    background: $oc-gray-8;
-  }
-  ul.nav h3:hover,
-  ul.nav h4:hover {
-    cursor: pointer;
-    background: $oc-gray-7;
-  }
-  ul.nav span.custom {
-    color: $fc-bg-light;
-  }
 }

@@ -8,12 +8,13 @@ const Svg = props => {
     xmlnsXlink: "http://www.w3.org/1999/xlink",
     xmlLang: props.language,
     viewBox: `0 0 ${props.width} ${props.height}`,
-    className: props.className
+    className: props.className,
+    style: props.style
   };
 
   if (!props.embed) {
-    attributes.width = props.width;
-    attributes.height = props.height;
+    attributes.width = props.width + "mm";
+    attributes.height = props.height + "mm";
   }
   if (props.design) attributes.className += " design";
 
@@ -21,10 +22,9 @@ const Svg = props => {
 };
 
 Svg.propTypes = {
-  attributes: PropTypes.object,
   embed: PropTypes.bool,
-  languages: PropTypes.string,
   className: PropTypes.string,
+  language: PropTypes.string,
   design: PropTypes.bool
 };
 
@@ -32,7 +32,8 @@ Svg.defaultProps = {
   embed: true,
   design: false,
   language: "en",
-  className: "freesewing draft"
+  className: "freesewing draft",
+  style: {}
 };
 
 export default Svg;

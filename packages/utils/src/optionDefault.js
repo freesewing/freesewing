@@ -2,7 +2,7 @@ import optionType from "./optionType";
 
 const optionDefault = option => {
   let type = optionType(option);
-  switch (optionType(option)) {
+  switch (type) {
     case "constant":
       return option;
       break;

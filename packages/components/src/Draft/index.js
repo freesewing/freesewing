@@ -12,6 +12,7 @@ const Draft = props => (
     language={props.settings.locale}
     id={props.settings.idPrefix + "svg"}
     design={props.design}
+    style={props.style}
   >
     <Defs
       units={props.settings.units}
@@ -45,7 +46,8 @@ Draft.propTypes = {
 
 Draft.defaultProps = {
   design: false,
-  focus: false
+  focus: false,
+  style: {}
 };
 
 export default Draft;

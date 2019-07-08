@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import IconButton from "@material-ui/core/IconButton";
-import DownIcon from "@material-ui/icons/KeyboardArrowDown";
+import RightIcon from "@material-ui/icons/KeyboardArrowRight";
 import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
 import HelpIcon from "@material-ui/icons/Help";
 import { injectIntl } from "react-intl";
@@ -43,9 +43,9 @@ const OptionPreamble = props => {
     );
   return (
     <React.Fragment>
-      <h4 onClick={props.toggleExpanded} style={styles.container}>
+      <div onClick={props.toggleExpanded} style={styles.container}>
         <div style={styles.left}>
-          <DownIcon
+          <RightIcon
             className={
               "icon-col-exp " + (props.expanded ? "expanded" : "collapsed")
             }
@@ -53,7 +53,7 @@ const OptionPreamble = props => {
           {props.title}
         </div>
         <div style={styles.right}>{displayValue}</div>
-      </h4>
+      </div>
       <div
         className={props.expanded ? "col-exp expanded" : "col-exp collapsed"}
       >

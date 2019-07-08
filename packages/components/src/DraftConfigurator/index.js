@@ -8,11 +8,9 @@ const DraftConfigurator = props => {
   const [expanded, setExpanded] = useState([]);
 
   return (
-    <ul className="nav l1">
+    <ul className="config l1">
       <li>
-        <h4>
-          <FormattedMessage id="app.patternOptions" />
-        </h4>
+        <FormattedMessage id="app.patternOptions" />
         <PatternOptions
           noDocs={props.noDocs}
           config={props.config}
@@ -25,9 +23,7 @@ const DraftConfigurator = props => {
         />
       </li>
       <li>
-        <h4>
-          <FormattedMessage id="app.draftSettings" />
-        </h4>
+        <FormattedMessage id="app.draftSettings" />
         <DraftSettings
           noDocs={props.noDocs}
           config={props.config}

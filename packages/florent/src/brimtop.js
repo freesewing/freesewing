@@ -15,7 +15,8 @@ export default function(part) {
     .curve(points.outerMidCp2, points.tipRightCp1, points.tipRight)
     .attr("class", "dashed stroke-sm");
 
-  paths.seam = paths.hint.offset(3);
+  // We check for sa here because it's a good way to sidestep issue #19
+  if (sa) paths.seam = paths.hint.offset(3);
   paths.seam = paths.seam
     .line(points.tipRight)
     .curve(points.tipRightCp2, points.innerMidCp1, points.innerMid)

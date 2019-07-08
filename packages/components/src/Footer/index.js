@@ -32,7 +32,7 @@ const Footer = props => {
       display: "flex",
       flexDirection: "row",
       flexWrap: "wrap",
-      justifyContent: "space-evenly"
+      justifyContent: "center"
     }
   };
   return (
@@ -55,7 +55,10 @@ const Footer = props => {
           let items = [];
           for (let i of Object.keys(links[l])) {
             items.push(
-              <li key={i}>
+              <li
+                key={i}
+                style={{ textAlign: l === "docs" ? "right" : "left" }}
+              >
                 <a href={links[l][i]}>
                   <FormattedMessage id={"app." + i} />
                 </a>
@@ -64,7 +67,7 @@ const Footer = props => {
           }
           return (
             <div key={l}>
-              <ul>{items}</ul>
+              <ul style={{ margin: "0 1rem" }}>{items}</ul>
             </div>
           );
         })}

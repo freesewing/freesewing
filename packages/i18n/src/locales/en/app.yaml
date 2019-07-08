@@ -13,6 +13,8 @@ applyThisLayout: Apply this layout
 areYouSureYouWantToContinue: Are you sure you want to continue?
 askForHelp: Ask for help
 automatic: Automatic
+averagePeopleDoNotExist: "Average people don't exist"
+awesome: Awesome
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
@@ -126,6 +128,7 @@ notAllOfThisContentIsAvailableInLanguage: Not all of this content is available i
 notesInfo: These are your notes. You can write anything you want here
 notes: Notes
 ohNo: Oh no!
+oneMoreThing: One more thing
 options: Options
 orPayPerYear: Or pay per year
 other: Other
@@ -224,3 +227,4 @@ getStarted: Get started
 apiReference: API Reference
 tutorial: Tutorial
 editThisPage: Edit this page
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'

@@ -29,9 +29,8 @@ svg.freesewing.draft {
     stroke:none!important;
     fill:none!important;
   }
-
-  /* Sampling */
-  path.sample-focus  {stroke-width: 1.5; fill: rgba(0,0,0,0.1)}
+  /* sample */
+  path.sample-focus  {stroke-width: 0; fill-opacity: 0.2;}
 
   /* Text */
   text{
@@ -85,6 +84,7 @@ svg.freesewing.draft text {
   .fill-contrast{ fill: $fc-draft-contrast-light; }
   .fill-note{ fill: $fc-draft-note-light; }
   .fill-bg{ fill: $fc-bg-light; }
+  path.sample-focus  {fill: #000}
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;
@@ -116,6 +116,7 @@ svg.freesewing.draft text {
   .fill-contrast{ fill: $fc-draft-contrast-dark; }
   .fill-note{ fill: $fc-draft-note-dark; }
   .fill-bg{ fill: $fc-bg-dark; }
+  path.sample-focus  {fill: #fff}
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;

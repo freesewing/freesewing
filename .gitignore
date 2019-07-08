@@ -14,6 +14,7 @@ packages/components/Navbar
 packages/components/Ogol
 packages/components/Robot
 packages/components/SampleConfigurator
+packages/components/Spinner
 packages/components/withGist
 packages/components/withLanguage
 packages/components/withStorage
