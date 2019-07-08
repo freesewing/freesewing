@@ -17,27 +17,38 @@ export default {
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ["front"],
+  parts: ["base"],
   options: {
+    transitionLength: 0.7, // 70% of bandLength
+    bandLength: {
+      pct: 17,
+      min: 15,
+      max: 20
+    },
+    ribbonWidth: {
+      pct: 6,
+      min: 4,
+      max: 8
+    },
     tipWidth: {
-      mm: 65,
-      min: 24,
-      max: 80
+      pct: 15,
+      min: 5,
+      max: 20
     },
     knotWidth: {
-      mm: 30,
-      min: 24,
-      max: 40
+      pct: 7,
+      min: 6,
+      max: 9
     },
     bowLength: {
-      mm: 120,
-      min: 100,
-      max: 140
+      pct: 28,
+      min: 23,
+      max: 33
     },
     collarEase: {
-      mm: 15,
+      pct: 3,
       min: 0,
-      max: 15
+      max: 6
     },
     bowStyle: {
       dflt: "butterfly",
@@ -47,9 +58,6 @@ export default {
       dflt: "straight",
       list: ["straight", "pointed", "rounded"]
     },
-    adjustmentRibbon: {
-      dflt: "0",
-      list: ["0", "1"]
-    }
+    adjustmentRibbon: { bool: false }
   }
 };
