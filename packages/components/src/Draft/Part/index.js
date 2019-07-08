@@ -34,7 +34,6 @@ const Part = props => {
   };
 
   const focusCoords = (p, i) => {
-    console.log("focus coords", p, i);
     let pathString = `M ${p.x} ${props.part.topLeft.y} `;
     pathString += `L ${p.x} ${props.part.bottomRight.y} `;
     pathString += `M ${props.part.topLeft.x} ${p.y} `;
