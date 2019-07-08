@@ -15,9 +15,13 @@ export default {
   },
   measurements: ["neckCircumference"],
   dependencies: {},
-  inject: {},
-  hide: [],
-  parts: ["base"],
+  inject: {
+    bow1: "base",
+    bow2: "base",
+    bow3: "base"
+  },
+  hide: ["base"],
+  parts: ["ribbon"],
   options: {
     transitionLength: 0.7, // 70% of bandLength
     bandLength: {
@@ -32,13 +36,13 @@ export default {
     },
     tipWidth: {
       pct: 15,
-      min: 5,
+      min: 10,
       max: 20
     },
     knotWidth: {
       pct: 7,
-      min: 6,
-      max: 9
+      min: 5,
+      max: 10
     },
     bowLength: {
       pct: 28,
