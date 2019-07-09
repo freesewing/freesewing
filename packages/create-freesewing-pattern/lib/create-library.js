@@ -11,7 +11,9 @@ const pEachSeries = require("p-each-series");
 
 const pkg = require("../package");
 
-const templateBlacklist = new Set(["example/public/favicon.ico"]);
+const templateBlacklist = new Set([
+  path.join("example", "public", "favicon.ico")
+]);
 
 module.exports = async info => {
   const { manager, template, name, templatePath, git } = info;
