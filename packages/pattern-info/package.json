@@ -31,9 +31,11 @@
     "prepare": "node src/prebuild.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.28",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.28"
+    "@freesewing/core": "^2.0.0-beta.29",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.29"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

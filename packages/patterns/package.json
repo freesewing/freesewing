@@ -32,9 +32,9 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.28",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.28",
-    "@freesewing/plugin-buttons": "^2.0.0-beta.28"
+    "@freesewing/core": "^2.0.0-beta.29",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.29",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.29"
   },
   "dependencies": {
     "@freesewing/aaron": "^2.0.0-beta.29",
@@ -56,6 +56,7 @@
     "@freesewing/trayvon": "^2.0.0-beta.29",
     "@freesewing/wahid": "^2.0.0-beta.29"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
