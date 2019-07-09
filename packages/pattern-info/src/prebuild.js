@@ -63,6 +63,7 @@ for (let pattern of Object.keys(patterns)) {
   versions[p] = instance.config.version;
 }
 
+fse.mkdirSync(path.join(".", "src", "prebuild"), { recursive: true });
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "options.js"),
   "module.exports = " + JSON.stringify(options) + "\n"
