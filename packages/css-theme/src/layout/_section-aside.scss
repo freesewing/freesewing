@@ -6,7 +6,7 @@ div.fs-sa {
     padding: 1rem 1.5rem;
   }
   aside {
-    padding: 1rem 0;
+    padding: 0;
     max-width: 400px;
     min-width: 200px;
     width: 40%;
@@ -15,8 +15,8 @@ div.fs-sa {
   }
   aside div.sticky {
     position: sticky;
-    top: 1rem;
-    min-height: 100vh;
+    top: 0;
+    height: 100vh;
     overflow-y: scroll;
   }
 }
