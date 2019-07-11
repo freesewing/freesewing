@@ -39,12 +39,10 @@ ul.topic-links {
   padding: 0;
   li { list-style-type: none; }
 }
-ul.topic-links.level-1 li {
-  padding-left: 1.5rem;
+ul.topic-links li {
+  padding-left: 1rem;
 }
-ul.topic-links.level-2 li {
-  padding-left: 1.5rem;
-}
+
 ul.topic-links ul.links {
   margin-left: 1rem;
   padding: 0;
