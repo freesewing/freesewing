@@ -351,3 +351,7 @@ export function sampleStyle(run, runs) {
 export function deg2rad(degrees) {
   return degrees * (Math.PI / 180);
 }
+
+export function rad2deg(radians) {
+  return (radians / Math.PI) * 180;
+}
