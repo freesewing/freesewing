@@ -1,3 +1,5 @@
+import draftRingSector from "./shared";
+
 export default function(part) {
   let {
     utils,
@@ -16,13 +18,13 @@ export default function(part) {
     macro
   } = part.shorthand();
 
-  const roundExtended = (radius, angle = 90) => {
+  const oundExtended = (radius, angle = 90) => {
     let arg = utils.deg2rad(angle / 2);
 
     return (radius * 4 * (1 - Math.cos(arg))) / Math.sin(arg) / 3;
   };
 
-  const draftRingSector = (rot, an, radIn, radEx) => {
+  const raftRingSector = (rot, an, radIn, radEx) => {
     /**
      * Calculates the distance of the control point for the internal
      * and external arcs using bezierCircleExtended
@@ -133,6 +135,13 @@ export default function(part) {
     // If the waistband is straight, the bottom circumference is the same as the top circumference
     store.set("bottomCircumference", store.get("topCircumference"));
   }
+
+  // Overlap of the waistband
+  store.set(
+    "waistbandOverlap",
+    store.get("topCircumference") * options.waistbandOverlap
+  );
+
   // The top circumference of the skirt corresponds to the bottom circumference of the waistband, plus the extraWaist option for gathering/pleating
   store.set(
     "skirtCircumference",
@@ -192,7 +201,7 @@ export default function(part) {
   let rot = an / 2;
 
   // Call draftRingSector to draft the part
-  paths.seam = draftRingSector(rot, an, radiusWaist, radiusHem).attr(
+  paths.seam = draftRingSector(part, rot, an, radiusWaist, radiusHem).attr(
     "class",
     "fabric"
   );

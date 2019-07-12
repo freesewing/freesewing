@@ -28,10 +28,9 @@ export default {
     "naturalWaistToHip",
     "hipsCircumference"
   ],
-  dependencies: {},
-  inject: {},
-  hide: [],
-  parts: ["skirt"],
+  dependencies: {
+    waistband: "skirt"
+  },
   options: {
     // Bool
     seamlessFullCircle: { bool: false },
@@ -43,7 +42,7 @@ export default {
     waistbandPosition: { pct: 50, min: 0, max: 100 },
     lengthBonus: { pct: 50, min: 10, max: 100 },
     circleRatio: { pct: 50, min: 20, max: 100 },
-    waistbandOverlap: { pct: 0, min: 20, max: 100 },
+    waistbandOverlap: { pct: 3, min: 0, max: 15 },
     gathering: { pct: 0, min: 0, max: 200 },
     hemWidth: { pct: 1, min: 0, max: 5 },
 
