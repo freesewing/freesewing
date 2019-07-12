@@ -52,8 +52,61 @@ export default function(part) {
 
   // Complete pattern?
   if (complete) {
-    if (sa) {
+    points.title = points.in1Rotated
+      .shiftFractionTowards(points.ex1Rotated, 0.5)
+      .shift(0, 25);
+    macro("title", {
+      at: points.title,
+      nr: 2,
+      title: "curvedWaistband",
+      scale: 0.5
+    });
+    points.grainlineFrom = utils.curveIntersectsY(
+      points.ex2FlippedRotated,
+      points.ex2CFlippedRotated,
+      points.ex1CFlippedRotated,
+      points.ex1Rotated,
+      points.title.y
+    );
+    points.grainlineTo = points.grainlineFrom.flipX();
+    macro("grainline", {
+      from: points.grainlineFrom,
+      to: points.grainlineTo
+    });
+
+    if (store.get("waistbandOverlap") >= options.minimumOverlap) {
+      points.pivot = points.in2Rotated.shiftFractionTowards(
+        points.ex2Rotated,
+        0.5
+      );
+      points.button = points.pivot
+        .shiftTowards(points.ex2Rotated, store.get("waistbandOverlap") / 2)
+        .rotate(-90, points.pivot);
+      points.buttonhole = points.button.flipX();
+      snippets.button = new Snippet("button", points.button);
+      snippets.buttonhole = new Snippet("buttonhole", points.buttonhole).attr(
+        "data-rotate",
+        -1 * points.ex2FlippedRotated.angle(points.in2FlippedRotated)
+      );
+      points.centerNotch = new Path()
+        .move(points.ex1Rotated)
+        .curve(
+          points.ex1CFlippedRotated,
+          points.ex2CFlippedRotated,
+          points.ex2FlippedRotated
+        )
+        .shiftAlong(store.get("waistbandOverlap") / 2);
+      points.buttonNotch = new Path()
+        .move(points.ex2Rotated)
+        .curve(points.ex2CRotated, points.ex1CRotated, points.ex1Rotated)
+        .shiftAlong(store.get("waistbandOverlap"));
+      macro("sprinkle", {
+        snippet: "notch",
+        on: ["centerNotch", "buttonNotch", "ex2FlippedRotated"]
+      });
     }
+
+    if (sa) paths.sa = paths.seam.offset(sa * -1).attr("class", "fabric sa");
   }
 
   // Paperless?

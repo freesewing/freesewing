@@ -1,4 +1,4 @@
-const draftRingSector = (part, rot, an, radIn, radEx) => {
+const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
   let {
     utils,
     store,
@@ -101,6 +101,13 @@ const draftRingSector = (part, rot, an, radIn, radEx) => {
   ])
     points[id + "Rotated"] = points[id].rotate(rot, points.center);
 
+  if (rotate) {
+    // Rotate all points so the line from in1Rotated to ex1Rotated is vertical
+    let deg = 270 - points.in1Rotated.angle(points.ex1Rotated);
+    for (let id in points) {
+      points[id] = points[id].rotate(deg, points.in1Rotated);
+    }
+  }
   // Return the path of the full ring sector
   return new Path()
     .move(points.in2Flipped)

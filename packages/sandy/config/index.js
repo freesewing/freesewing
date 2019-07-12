@@ -10,17 +10,15 @@ export default {
   difficulty: 3,
   tags: ["skirt", "top", "basics"],
   optionGroups: {
-    fit: ["waistbandPosition"],
+    fit: ["waistbandPosition", "waistbandShape"],
     style: [
       "lengthBonus",
       "circleRatio",
       "waistbandWidth",
-      "waistbandShape",
       "waistbandOverlap",
-      "gathering",
-      "seamlessFullCircle",
-      "hemWidth"
-    ]
+      "gathering"
+    ],
+    construction: ["seamlessFullCircle", "hemWidth"]
   },
   measurements: [
     "naturalWaist",
@@ -32,6 +30,9 @@ export default {
     waistband: "skirt"
   },
   options: {
+    // Constants
+    minimumOverlap: 15, // Lower than this and we don't draw a button
+
     // Bool
     seamlessFullCircle: { bool: false },
 
@@ -44,7 +45,7 @@ export default {
     circleRatio: { pct: 50, min: 20, max: 100 },
     waistbandOverlap: { pct: 3, min: 0, max: 15 },
     gathering: { pct: 0, min: 0, max: 200 },
-    hemWidth: { pct: 1, min: 0, max: 5 },
+    hemWidth: { pct: 2, min: 1, max: 10 },
 
     // Lists
     waistbandShape: {

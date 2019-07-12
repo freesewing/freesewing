@@ -50,8 +50,39 @@ export default function(part) {
 
   // Complete pattern?
   if (complete) {
-    if (sa) {
-    }
+    points.title = points.center.shiftFractionTowards(points.centerRight, 0.5);
+    macro("title", { at: points.title, nr: 2, title: "straightWaistband" });
+    points.grainlineFrom = points.centerLeft.shiftFractionTowards(
+      points.topLeft,
+      0.5
+    );
+    points.grainlineTo = points.grainlineFrom.flipX();
+    macro("grainline", {
+      from: points.grainlineFrom,
+      to: points.grainlineTo
+    });
+    points.button = points.centerRight
+      .shiftFractionTowards(points.bottomRight, 0.5)
+      .shift(180, store.get("waistbandOverlap") / 2);
+    points.buttonhole = points.centerLeft
+      .shiftFractionTowards(points.bottomLeft, 0.5)
+      .shift(0, store.get("waistbandOverlap") / 2);
+    snippets.button = new Snippet("button", points.button);
+    snippets.buttonhole = new Snippet("buttonhole", points.buttonhole);
+    points.centerNotch = new Point(
+      (-1 * store.get("waistbandOverlap")) / 2,
+      points.bottomLeft.y
+    );
+    points.buttonNotch = points.bottomRight.shift(
+      180,
+      store.get("waistbandOverlap")
+    );
+    macro("sprinkle", {
+      snippet: "notch",
+      on: ["centerNotch", "buttonNotch", "bottomLeft"]
+    });
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
   }
 
   // Paperless?
