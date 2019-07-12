@@ -18,25 +18,29 @@ export default {
       so = {
         offset: 50,
         margin: 5,
+        prefix: "",
         ...so
       };
-      points.cutonfoldFrom = so.to.shiftFractionTowards(
+      points["cutonfoldFrom" + so.prefix] = so.to.shiftFractionTowards(
         so.from,
         so.margin / 100
       );
-      points.cutonfoldTo = so.from.shiftFractionTowards(so.to, so.margin / 100);
-      points.cutonfoldVia1 = so.to
+      points["cutonfoldTo" + so.prefix] = so.from.shiftFractionTowards(
+        so.to,
+        so.margin / 100
+      );
+      points["cutonfoldVia1" + so.prefix] = so.to
         .shiftTowards(so.from, so.offset)
-        .rotate(-90, points.cutonfoldFrom);
-      points.cutonfoldVia2 = so.from
+        .rotate(-90, points["cutonfoldFrom" + so.prefix]);
+      points["cutonfoldVia2" + so.prefix] = so.from
         .shiftTowards(so.to, so.offset)
-        .rotate(90, points.cutonfoldTo);
+        .rotate(90, points["cutonfoldTo" + so.prefix]);
       let text = so.grainline ? "cutOnFoldAndGrainline" : "cutOnFold";
-      this.paths.cutonfold = new this.Path()
-        .move(points.cutonfoldFrom)
-        .line(points.cutonfoldVia1)
-        .line(points.cutonfoldVia2)
-        .line(points.cutonfoldTo)
+      this.paths["cutonfold" + so.prefix] = new this.Path()
+        .move(points["cutonfoldFrom" + so.prefix])
+        .line(points["cutonfoldVia1" + so.prefix])
+        .line(points["cutonfoldVia2" + so.prefix])
+        .line(points["cutonfoldTo" + so.prefix])
         .attr("class", "note")
         .attr("marker-start", "url(#cutonfoldFrom)")
         .attr("marker-end", "url(#cutonfoldTo)")
