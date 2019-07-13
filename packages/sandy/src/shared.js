@@ -1,20 +1,5 @@
 const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand();
+  let { utils, Point, points, Path } = part.shorthand();
 
   const roundExtended = (radius, angle = 90) => {
     let arg = utils.deg2rad(angle / 2);

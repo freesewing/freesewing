@@ -4,7 +4,6 @@ export default function(part) {
    * of double the waistband width, since it will be folded
    */
   let {
-    utils,
     store,
     sa,
     Point,
@@ -14,7 +13,6 @@ export default function(part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro
