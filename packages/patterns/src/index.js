@@ -10,6 +10,7 @@ export { default as Florent } from "@freesewing/florent";
 export { default as Huey } from "@freesewing/huey";
 export { default as Hugo } from "@freesewing/hugo";
 export { default as Jaeger } from "@freesewing/jaeger";
+export { default as Sandy } from "@freesewing/sandy";
 export { default as Shin } from "@freesewing/shin";
 export { default as Simon } from "@freesewing/simon";
 export { default as Sven } from "@freesewing/sven";
