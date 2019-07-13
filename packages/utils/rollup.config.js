@@ -1,59 +1,40 @@
 import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
 import minify from "rollup-plugin-babel-minify";
-import yaml from "rollup-plugin-yaml";
-import url from "rollup-plugin-url";
-import postcss from "rollup-plugin-postcss";
-import svgr from "@svgr/rollup";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import {
-  name,
-  version,
-  description,
-  author,
-  license,
-  main,
-  module
-} from "./package.json";
+import { name, version, description, author, license } from "./package.json";
+import utils from "./src/index.js";
 
-const output = [
-  {
-    file: main,
-    format: "cjs",
-    sourcemap: true
-  }
-];
-if (typeof module !== "undefined")
-  output.push({
-    file: module,
-    format: "es",
-    sourcemap: true
-  });
-
-export default {
-  input: "src/index.js",
-  output,
-  plugins: [
-    peerDepsExternal(),
-    resolve({ modulesOnly: true }),
-    url(),
-    commonjs(),
-    json(),
-    yaml(),
-    svgr(),
-    postcss({
-      modules: true
-    }),
-    babel({
-      exclude: "node_modules/**",
-      plugins: ["@babel/plugin-proposal-object-rest-spread"]
-    }),
-    minify({
-      comments: false,
-      sourceMap: true,
-      banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-    })
-  ]
+const createConfig = (util, module) => {
+  return {
+    input: `./src/${util + "/"}index.js`,
+    output: {
+      file: `./${util}/index` + (module ? ".mjs" : ".js"),
+      format: module ? "es" : "cjs",
+      sourcemap: true
+    },
+    plugins: [
+      peerDepsExternal(),
+      resolve({ modulesOnly: true }),
+      json(),
+      babel({
+        exclude: "node_modules/**",
+        plugins: ["@babel/plugin-proposal-object-rest-spread"]
+      }),
+      minify({
+        comments: false,
+        sourceMap: true,
+        banner: `/**\n * ${name}/${util} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      })
+    ]
+  };
 };
+
+const config = [];
+for (let util of utils) {
+  config.push(createConfig(util, false));
+  // Webpack doesn't handle .mjs very well
+  //config.push(createConfig(util, true));
+}
+export default config;

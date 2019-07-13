@@ -1,4 +1,4 @@
-import optionType from "./optionType";
+import optionType from "../optionType";
 
 const optionDefault = option => {
   let type = optionType(option);

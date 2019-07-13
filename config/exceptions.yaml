@@ -6,6 +6,7 @@ customRollup:
   - components
   - core
   - i18n
+  - utils
 packageJson:
   components:
     # react-scripts doesn't handle .mjs files correctly
