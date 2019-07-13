@@ -111,6 +111,26 @@ export default function(part) {
 
   // Paperless?
   if (paperless) {
+    macro("hd", {
+      from: points.in2FlippedRotated,
+      to: points.in2Rotated,
+      y: points.in2Rotated.y - sa - 15
+    });
+    macro("hd", {
+      from: points.ex2FlippedRotated,
+      to: points.ex2Rotated,
+      y: points.in2Rotated.y - sa - 30
+    });
+    macro("vd", {
+      from: points.ex1Rotated,
+      to: points.in2Rotated,
+      x: points.in2Rotated.x + sa + 30
+    });
+    macro("ld", {
+      from: points.ex2Rotated,
+      to: points.in2Rotated,
+      d: -1 * sa - 15
+    });
   }
 
   return part;

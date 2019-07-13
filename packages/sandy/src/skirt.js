@@ -205,6 +205,48 @@ export default function(part) {
 
   // Paperless?
   if (paperless) {
+    macro("vd", {
+      from: points.ex2Flipped,
+      to: points.in2Flipped,
+      x: points.ex2Flipped.x - sa - 15
+    });
+    macro("vd", {
+      from: points.in2Flipped,
+      to: points.center,
+      x: points.ex2Flipped.x - sa - 15
+    });
+    macro("vd", {
+      from: points.ex2Flipped,
+      to: points.center,
+      x: points.ex2Flipped.x - sa - 30
+    });
+    if (options.circleRatio !== 0.5) {
+      macro("vd", {
+        from: points.ex1Rotated,
+        to: points.in1Rotated,
+        x:
+          options.circleRatio > 0.5
+            ? points.in1Rotated.x - sa - 15
+            : points.ex1Rotated.x + sa + 15
+      });
+      macro("vd", {
+        from: points.in1Rotated,
+        to: points.center,
+        x:
+          options.circleRatio > 0.5
+            ? points.in1Rotated.x - sa - 15
+            : points.ex1Rotated.x + sa + 15
+      });
+      macro("vd", {
+        from: points.ex1Rotated,
+        to: points.center,
+        x:
+          options.circleRatio > 0.5
+            ? points.in1Rotated.x - sa - 30
+            : points.ex1Rotated.x + sa + 30
+      });
+    }
+    snippets.center = new Snippet("bnotch", points.center);
   }
 
   return part;
