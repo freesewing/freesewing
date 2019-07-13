@@ -5,7 +5,6 @@ export default function(part) {
     utils,
     store,
     sa,
-    Point,
     points,
     Path,
     paths,
