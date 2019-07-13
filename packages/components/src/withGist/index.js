@@ -1,5 +1,5 @@
 import React from "react";
-import { storage } from "@freesewing/utils";
+import storage from "@freesewing/utils/storage";
 
 const withGist = (WrappedComponent, settings = { gist: {}, store: false }) => {
   return class extends React.Component {

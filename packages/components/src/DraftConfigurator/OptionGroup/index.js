@@ -6,7 +6,8 @@ import Mm from "../PatternOptionMillimeter";
 import Bool from "../PatternOptionBool";
 import List from "../PatternOptionList";
 import Count from "../PatternOptionCount";
-import { optionType, optionDefault } from "@freesewing/utils";
+import optionType from "@freesewing/utils/optionType";
+import optionDefault from "@freesewing/utils/optionDefault";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
 

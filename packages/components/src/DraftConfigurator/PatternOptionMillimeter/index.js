@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import {
-  sliderStep,
-  roundMm,
-  roundMmUp,
-  roundMmDown,
-  formatMm
-} from "@freesewing/utils";
+import sliderStep from "@freesewing/utils/sliderStep";
+import roundMm from "@freesewing/utils/roundMm";
+import roundMmUp from "@freesewing/utils/roundMmUp";
+import roundMmDown from "@freesewing/utils/roundMmDown";
+import formatMm from "@freesewing/utils/formatMm";
 import FormFieldSlider from "../../.form/FormFieldSlider";
 import OptionPreamble from "../OptionPreamble";
 
