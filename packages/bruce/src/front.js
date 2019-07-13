@@ -194,9 +194,17 @@ export default function(part) {
         let saStart = paths.seamStart.offset(sa * -1);
         let saTrim = paths.trimBase.offset(sa * -1).trim();
         let saEnd = paths.seamEnd.offset(sa * -1);
-        paths.sa = saStart.join(saTrim).join(saEnd);
+        paths.sa = saStart
+          .join(saTrim)
+          .join(saEnd)
+          .close()
+          .attr("class", "fabric sa");
       } else {
-        paths.sa = paths.seam.offset(sa * -1).trim();
+        paths.sa = paths.seam
+          .offset(sa * -1)
+          .trim()
+          .close()
+          .attr("class", "fabric sa");
       }
     }
     macro("title", {
