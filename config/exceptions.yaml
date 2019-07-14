@@ -50,3 +50,25 @@ packageJson:
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
+    files:
+      - "backend/*"
+      - "camelCase/*"
+      - "capitalize/*"
+      - "cloneObject/*"
+      - "defaultGist/*"
+      - "defaultSa/*"
+      - "formatImperial/*"
+      - "formatMm/*"
+      - "optionDefault/*"
+      - "optionType/*"
+      - "roundMm/*"
+      - "roundMmDown/*"
+      - "roundMmUp/*"
+      - "sliderStep/*"
+      - "smallestImperialStep/*"
+      - "storage/*"
+      - "tiler/*"
+      - "measurementAsMm/*"
+      - "validateEmail/*"
+      - "validateTld/*"
+
