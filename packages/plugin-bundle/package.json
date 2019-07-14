@@ -33,18 +33,19 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.30"
+    "@freesewing/core": "^2.0.0-beta.31"
   },
   "dependencies": {
     "@freesewing/plugin-cutonfold": "^2.0.0-beta.31",
     "@freesewing/plugin-dimension": "^2.0.0-beta.31",
     "@freesewing/plugin-grainline": "^2.0.0-beta.31",
     "@freesewing/plugin-logo": "^2.0.0-beta.31",
-    "@freesewing/plugin-round": "^2.0.0-beta.31",
+    "@freesewing/plugin-title": "^2.0.0-beta.31",
     "@freesewing/plugin-scalebox": "^2.0.0-beta.31",
-    "@freesewing/plugin-sprinkle": "^2.0.0-beta.31",
-    "@freesewing/plugin-title": "^2.0.0-beta.31"
+    "@freesewing/plugin-round": "^2.0.0-beta.31",
+    "@freesewing/plugin-sprinkle": "^2.0.0-beta.31"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

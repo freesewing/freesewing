@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import FormFieldMeasurement from "../../.form/FormFieldMeasurement";
-import models from "@freesewing/models";
+import { withBreasts, withoutBreasts } from "@freesewing/models";
 
 const Measurements = props => {
   const styles = {
@@ -96,9 +96,11 @@ const Measurements = props => {
           <FormattedMessage id="app.withoutBreasts" />
         </h4>
         <ul>
-          {Object.keys(models).map(m => (
+          {Object.keys(withoutBreasts).map(m => (
             <li key={m}>
-              <Button onClick={() => props.preloadMeasurements(models[m])}>
+              <Button
+                onClick={() => props.preloadMeasurements(withoutBreasts[m])}
+              >
                 <FormattedMessage id="cfp.size" />
                 &nbsp;
                 {m.slice(-2)}

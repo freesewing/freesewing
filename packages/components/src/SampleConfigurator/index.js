@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import PatternOptions from "./PatternOptions";
-import models from "@freesewing/models";
+import { withoutBreasts } from "@freesewing/models";
 
 const SampleConfigurator = props => {
   const [expanded, setExpanded] = useState([]);
@@ -40,9 +40,9 @@ const SampleConfigurator = props => {
   };
   let antMan = {
     ant: {},
-    man: models.manSize42
+    man: withoutBreasts.manSize42
   };
-  for (let m in models.manSize42) antMan.ant[m] = antMan.man[m] / 10;
+  for (let m in withoutBreasts.manSize42) antMan.ant[m] = antMan.man[m] / 10;
 
   return (
     <ul className="links">
@@ -76,7 +76,7 @@ const SampleConfigurator = props => {
         </h4>
         <ul style={{ paddingLeft: "1rem" }}>
           <li>
-            <a href="#logo" onClick={() => sampleModels(models)}>
+            <a href="#logo" onClick={() => sampleModels(withoutBreasts)}>
               <FormattedMessage id="app.withoutBreasts" />
             </a>
           </li>
