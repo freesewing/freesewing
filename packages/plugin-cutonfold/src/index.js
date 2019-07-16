@@ -14,6 +14,14 @@ export default {
   },
   macros: {
     cutonfold: function(so) {
+      if (so === false) {
+        delete this.points.cutonfoldFrom;
+        delete this.points.cutonfoldTo;
+        delete this.points.cutonfoldVia1;
+        delete this.points.cutonfoldVia2;
+        delete this.paths.cutonfold;
+        return true;
+      }
       let points = this.points;
       so = {
         offset: 50,
