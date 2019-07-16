@@ -19,6 +19,14 @@ function Path() {
   this.ops = [];
 }
 
+/** Chainable way to set the render property */
+Path.prototype.setRender = function(render = true) {
+  if (render) this.render = true;
+  else this.render = false;
+
+  return this;
+};
+
 /** Adds a move operation to Point to */
 Path.prototype.move = function(to) {
   this.ops.push({ type: "move", to });
@@ -83,9 +91,7 @@ Path.prototype.asPathstring = function() {
         d += ` L ${op.to.x},${op.to.y}`;
         break;
       case "curve":
-        d += ` C ${op.cp1.x},${op.cp1.y} ${op.cp2.x},${op.cp2.y} ${op.to.x},${
-          op.to.y
-        }`;
+        d += ` C ${op.cp1.x},${op.cp1.y} ${op.cp2.x},${op.cp2.y} ${op.to.x},${op.to.y}`;
         break;
       case "close":
         d += " z";
