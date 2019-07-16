@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import InvalidIcon from "@material-ui/icons/Warning";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import measurementAsMm from "@freesewing/utils/measurementsAsMm";
+import measurementAsMm from "@freesewing/utils/measurementAsMm";
 import formatMm from "@freesewing/utils/formatMm";
 import { injectIntl } from "react-intl";
 
