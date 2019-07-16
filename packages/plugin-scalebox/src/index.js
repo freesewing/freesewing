@@ -10,6 +10,29 @@ export default {
   },
   macros: {
     scalebox: function(so) {
+      // Passing `false` will remove the scalebox
+      if (so === false) {
+        for (let id of [
+          "__scaleboxMetricTopLeft",
+          "__scaleboxMetricTopRight",
+          "__scaleboxMetricBottomRight",
+          "__scaleboxMetricBottomLeft",
+          "__scaleboxImperialTopLeft",
+          "__scaleboxImperialTopRight",
+          "__scaleboxImperialBottomRight",
+          "__scaleboxImperialBottomLeft",
+          "__scaleboxLead",
+          "__scaleboxTitle",
+          "__scaleboxText",
+          "__scaleboxLink",
+          "__scaleboxMetric",
+          "__scaleboxImperial"
+        ])
+          delete this.points[id];
+        for (let id of ["__scaleboxMetric", "__scaleboxImperial"])
+          delete this.paths[id];
+        return true;
+      }
       // Box points
       this.points.__scaleboxMetricTopLeft = new this.Point(
         so.at.x - 50,
