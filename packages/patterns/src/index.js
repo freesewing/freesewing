@@ -15,5 +15,6 @@ export { default as Shin } from "@freesewing/shin";
 export { default as Simon } from "@freesewing/simon";
 export { default as Sven } from "@freesewing/sven";
 export { default as Tamiko } from "@freesewing/tamiko";
+export { default as Theo } from "@freesewing/theo";
 export { default as Trayvon } from "@freesewing/trayvon";
 export { default as Wahid } from "@freesewing/wahid";

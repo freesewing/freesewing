@@ -22,6 +22,7 @@ export const list = [
   "simon",
   "sven",
   "tamiko",
+  "theo",
   "trayvon",
   "wahid"
 ];
@@ -42,6 +43,7 @@ export const withoutBreasts = [
   "simon",
   "sven",
   "tamiko",
+  "theo",
   "trayvon",
   "wahid"
 ];
