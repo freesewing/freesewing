@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@freesewing/components": "2.0.0-beta.31",
+    "@freesewing/components": "beta",
     "@freesewing/core": "beta",
     "@freesewing/css-theme": "beta",
     "@freesewing/i18n": "beta",
@@ -14,7 +14,7 @@
     "@freesewing/plugin-bundle": "beta",
     "@freesewing/plugin-i18n": "beta",
     "@freesewing/plugin-svgattr": "beta",
-    "@freesewing/utils": "2.0.0-beta.31",
+    "@freesewing/utils": "beta",
     "@material-ui/core": "^4.0.1",
     "@material-ui/icons": "^4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
