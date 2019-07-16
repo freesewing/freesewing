@@ -11,7 +11,6 @@ export default function(part) {
     paperless,
     macro,
     utils,
-    units,
     measurements,
     snippets,
     Snippet

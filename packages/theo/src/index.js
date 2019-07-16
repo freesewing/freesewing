@@ -24,17 +24,6 @@ import draftBeltLoop from "./belt-loop";
 const Pattern = new freesewing.Design(config, plugins);
 
 // Attach draft methods to prototype
-let methods = [
-  draftBack,
-  draftFront,
-  draftWaistbandInterfacingLeft,
-  draftWaistbandInterfacingRight,
-  draftWaistbandLiningLeft,
-  draftWaistbandLiningRight,
-  draftWaistbandLeft,
-  draftWaistbandRight
-];
-
 Pattern.prototype.draftBack = part => draftBack(part);
 Pattern.prototype.draftFront = part => draftFront(part);
 Pattern.prototype.draftWaistbandInterfacingLeft = part =>

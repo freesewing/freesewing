@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import FormFieldMeasurement from "../../.form/FormFieldMeasurement";
-import { withBreasts, withoutBreasts } from "@freesewing/models";
+import { withoutBreasts } from "@freesewing/models";
 
 const Measurements = props => {
   const styles = {

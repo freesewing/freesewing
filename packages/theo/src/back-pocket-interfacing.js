@@ -1,15 +1,5 @@
 export default function(part) {
-  let {
-    macro,
-    measurements,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless
-  } = part.shorthand();
+  let { macro, points, paths, complete, paperless } = part.shorthand();
 
   paths.seam.attributes.set("class", "interfacing");
   paths.welt.attributes.set("class", "interfacing dashed");

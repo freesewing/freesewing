@@ -1,8 +1,6 @@
 export default function(part) {
   let {
     macro,
-    measurements,
-    Point,
     points,
     Path,
     paths,

@@ -7,7 +7,6 @@ export default function(part) {
     Path,
     paths,
     complete,
-    sa,
     paperless
   } = part.shorthand();
 

@@ -1,13 +1,11 @@
 export default function(part) {
   let {
     options,
-    measurements,
     Point,
     points,
     Path,
     paths,
     complete,
-    sa,
     paperless,
     macro
   } = part.shorthand();
