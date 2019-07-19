@@ -75,8 +75,6 @@ const DraftPattern = props => {
   return (
     <div className="fs-sa">
       <section>
-        <h5>REMOVEME</h5>
-        <pre>{JSON.stringify(props.svgExport, null, 2)}</pre>
         <h2>
           <FormattedMessage id="app.pattern" />
         </h2>
