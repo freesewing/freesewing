@@ -28,10 +28,7 @@ export default {
     resolve(),
     json(),
     commonjs(),
-    babel({
-      exclude: "node_modules/**",
-      plugins: ["@babel/plugin-proposal-object-rest-spread"]
-    }),
+    babel(),
     minify({
       comments: false,
       sourceMap: true,

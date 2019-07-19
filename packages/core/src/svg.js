@@ -236,12 +236,9 @@ Svg.prototype.renderText = function(point) {
 };
 
 Svg.prototype.renderCircle = function(point) {
-  return `<circle
-    cx="${point.x}"
-    cy="${point.y}"
-    r="${point.attributes.get("data-circle")}"
-    ${point.attributes.renderIfPrefixIs("data-circle-")}
-  ></circle>`;
+  return `<circle cx="${point.x}" cy="${point.y}" r="${point.attributes.get(
+    "data-circle"
+  )}" ${point.attributes.renderIfPrefixIs("data-circle-")}></circle>`;
 };
 
 /** Returns SVG code for a snippet */

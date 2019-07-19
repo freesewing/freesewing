@@ -1,11 +1,11 @@
 noNamespace:
   - create-freesewing-pattern
 customRollup:
-  - css-theme
-  - plugin-theme
   - components
   - core
+  - css-theme
   - i18n
+  - plugin-theme
   - utils
 packageJson:
   components:
