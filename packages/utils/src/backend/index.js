@@ -25,11 +25,12 @@ function useBackend(baseURL, timeout = 10000) {
   // Other non-authenticated calls
   backend.login = (username, password) =>
     api.post("/login", { username, password }); // Login
-  backend.profile = username => api.get("/users/" + username); // Load user profile
   backend.loadGist = handle => api.get("/gist/" + handle); // Load recipe/gist anonymously
   backend.loadPatrons = handle => api.get("/patrons"); // Load patron list
 
   // Users
+  backend.profile = (username, token) =>
+    api.get("/users/" + username, auth(token)); // Load user profile
   backend.account = token => api.get("/account", auth(token)); // Try to authenticate based on stored token
   backend.export = token => api.get("/export", auth(token)); // Export data
   backend.restrict = token => api.get("/restrict", auth(token)); // Restrict data processing (freeze account)
@@ -52,6 +53,8 @@ function useBackend(baseURL, timeout = 10000) {
     api.post("/remove/models", data, auth(token)); // Delete multiple models
 
   // Recipes
+  backend.loadRecipe = (handle, token) =>
+    api.get("/recipe/" + handle, auth(token)); // Load recipe
   backend.createRecipe = (data, token) =>
     api.post("/recipe", data, auth(token)); // Create recipe
   backend.removeRecipe = (handle, token) =>
