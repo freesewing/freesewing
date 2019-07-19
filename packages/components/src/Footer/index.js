@@ -13,20 +13,23 @@ const Footer = props => {
     instagram: "https://instagram.com/freesewing_org",
     facebook: "https://facebook.com/freesewing.org/"
   };
-  const links = {
-    docs: {
-      blog: "https://" + props.language + ".freesewing.org/blog",
-      aboutFreesewing:
-        "https://" + props.language + ".freesewing.org/docs/about",
-      faq: "https://" + props.language + ".freesewing.org/docs/faq"
-    },
-    community: {
-      becomeAPatron:
-        "https://" + props.language + ".freesewing.org/patrons/join",
-      makerDocs: "https://" + props.language + ".freesewing.org/docs/",
-      devDocs: "https://" + props.language + ".freesewing.dev/"
-    }
-  };
+  const links =
+    props.links === false
+      ? {
+          left: {
+            blog: "https://" + props.language + ".freesewing.org/blog",
+            aboutFreesewing:
+              "https://" + props.language + ".freesewing.org/docs/about",
+            faq: "https://" + props.language + ".freesewing.org/docs/faq"
+          },
+          right: {
+            becomeAPatron:
+              "https://" + props.language + ".freesewing.org/patrons/join",
+            makerDocs: "https://" + props.language + ".freesewing.org/docs/",
+            devDocs: "https://" + props.language + ".freesewing.dev/"
+          }
+        }
+      : props.links;
   const styles = {
     container: {
       display: "flex",
@@ -57,7 +60,7 @@ const Footer = props => {
             items.push(
               <li
                 key={i}
-                style={{ textAlign: l === "docs" ? "right" : "left" }}
+                style={{ textAlign: l === "left" ? "right" : "left" }}
               >
                 <a href={links[l][i]}>
                   <FormattedMessage id={"app." + i} />
@@ -78,6 +81,7 @@ const Footer = props => {
 };
 
 Footer.defaultProps = {
-  home: "/"
+  home: "/",
+  links: false
 };
 export default Footer;
