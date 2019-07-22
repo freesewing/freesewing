@@ -161,6 +161,7 @@
     "@freesewing/trayvon": "file:packages/trayvon",
     "@freesewing/wahid": "file:packages/wahid",
     "create-freesewing-pattern": "file:packages/create-freesewing-pattern",
+    "file-saver": "2.0.2",
     "tlds": "^1.203.1"
   },
   "workspaces": [

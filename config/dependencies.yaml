@@ -69,6 +69,7 @@ components:
     "@freesewing/mui-theme": "^{{version}}"
     "@freesewing/css-theme": "^{{version}}"
     "@freesewing/core": "^{{version}}"
+    "@freesewing/models": "^{{version}}"
     "@freesewing/examples": "^{{version}}"
     "@freesewing/rendertest": "^{{version}}"
     "@freesewing/tutorial": "^{{version}}"
