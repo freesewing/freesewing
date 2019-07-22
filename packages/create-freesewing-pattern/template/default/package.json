@@ -60,6 +60,7 @@
     "@material-ui/icons": "^4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
     "react-intl": "2.8.0",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "file-saver": "^2.0.2"
   }
 }
