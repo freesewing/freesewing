@@ -15,7 +15,6 @@ _types:
       "@freesewing/css-theme": "^{{version}}"
       "@freesewing/i18n": "^{{version}}"
       "@freesewing/mui-theme": "^{{version}}"
-      "@freesewing/patterns": "^{{version}}"
       "@freesewing/plugin-bust": "^{{version}}"
       "@freesewing/plugin-buttons": "^{{version}}"
       "@freesewing/plugin-flip": "^{{version}}"
