@@ -121,6 +121,8 @@ name: Nom
 newDraftFromGist: Nouveau ébauche a partir d'un résumé
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: Pas de changement
 no: false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
