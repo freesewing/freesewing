@@ -121,6 +121,8 @@ name: Name
 newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
