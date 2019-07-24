@@ -1,5 +1,6 @@
 export const measurements = {
   menswear: [
+    "ankleCircumference",
     "bicepsCircumference",
     "centerBackNeckToWaist",
     "chestCircumference",
@@ -23,6 +24,7 @@ export const measurements = {
     "wristCircumference"
   ],
   womenswear: [
+    "ankleCircumference",
     "bicepsCircumference",
     "bustSpan",
     "centerBackNeckToWaist",
