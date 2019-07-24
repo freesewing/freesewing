@@ -18,7 +18,7 @@ const OptionGroup = props => {
     let stringKey = `options.${props.config.name}.${name}.`;
     let extraProps = {
       name,
-      dflt: optionDefault(props.config.options[name], props.gist),
+      dflt: optionDefault(name, props.config.options[name], props.recipe),
       units: props.units,
       updateValue: props.updateValue,
       raiseEvent: props.raiseEvent,

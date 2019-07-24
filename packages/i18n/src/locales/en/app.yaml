@@ -120,6 +120,8 @@ name: Name
 newDraftFromGist: New draft from gist
 newDraft: New draft
 newModel: New model
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: No changes
 no: No
 noPasswordPolicy: We don't enforce a password policy
