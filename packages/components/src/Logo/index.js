@@ -2,14 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Logo = props => {
+  let svgProps = {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 48 48",
+    className: props.className
+  };
+  if (!props.embed) {
+    svgProps.width = props.size;
+    svgProps.height = props.size;
+  }
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={props.embed ? "" : props.size}
-      height={props.embed ? "" : props.size}
-      viewBox="0 0 48 48"
-      className={props.className}
-    >
+    <svg {...svgProps}>
       <path
         fill={props.color ? props.color : "currentColor"}
         stroke="none"
