@@ -121,6 +121,8 @@ name: Naam
 newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: Geen wijzigingen
 no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
