@@ -58,10 +58,7 @@ const Footer = props => {
           let items = [];
           for (let i of Object.keys(links[l])) {
             items.push(
-              <li
-                key={i}
-                style={{ textAlign: l === "left" ? "right" : "left" }}
-              >
+              <li key={i} style={{ textAlign: "center" }}>
                 <a href={links[l][i]}>
                   <FormattedMessage id={"app." + i} />
                 </a>
