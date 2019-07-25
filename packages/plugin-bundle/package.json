@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "2.0.0-beta.35",
+  "version": "2.0.0-beta.36",
   "description": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,18 +33,19 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.34"
+    "@freesewing/core": "^2.0.0-beta.36"
   },
   "dependencies": {
-    "@freesewing/plugin-cutonfold": "^2.0.0-beta.35",
-    "@freesewing/plugin-dimension": "^2.0.0-beta.35",
-    "@freesewing/plugin-grainline": "^2.0.0-beta.35",
-    "@freesewing/plugin-logo": "^2.0.0-beta.35",
-    "@freesewing/plugin-round": "^2.0.0-beta.35",
-    "@freesewing/plugin-scalebox": "^2.0.0-beta.35",
-    "@freesewing/plugin-sprinkle": "^2.0.0-beta.35",
-    "@freesewing/plugin-title": "^2.0.0-beta.35"
+    "@freesewing/plugin-cutonfold": "^2.0.0-beta.36",
+    "@freesewing/plugin-dimension": "^2.0.0-beta.36",
+    "@freesewing/plugin-grainline": "^2.0.0-beta.36",
+    "@freesewing/plugin-logo": "^2.0.0-beta.36",
+    "@freesewing/plugin-title": "^2.0.0-beta.36",
+    "@freesewing/plugin-scalebox": "^2.0.0-beta.36",
+    "@freesewing/plugin-round": "^2.0.0-beta.36",
+    "@freesewing/plugin-sprinkle": "^2.0.0-beta.36"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

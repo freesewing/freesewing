@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-banner",
-  "version": "2.0.0-beta.35",
+  "version": "2.0.0-beta.36",
   "description": "A FreeSewing plugin to repeat text on a path",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,8 +32,10 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.34"
+    "@freesewing/core": "^2.0.0-beta.36"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
