@@ -52,8 +52,8 @@ let optionGroups = {};
 let parts = {};
 let measurements = {};
 let versions = {};
+let info = {};
 for (let pattern of Object.keys(patterns)) {
-  //console.log(pattern);
   let instance = new patterns[pattern]();
   let p = pattern.toLowerCase();
   options[p] = patternOptions(instance.config);
@@ -61,6 +61,14 @@ for (let pattern of Object.keys(patterns)) {
   parts[p] = patternParts(instance.config);
   measurements[p] = instance.config.measurements;
   versions[p] = instance.config.version;
+  info[p] = {
+    design: instance.config.design,
+    code: instance.config.code,
+    department: instance.config.department,
+    type: instance.config.type,
+    difficulty: instance.config.difficulty,
+    tags: instance.config.tags
+  };
 }
 
 fse.mkdirSync(path.join(".", "src", "prebuild"), { recursive: true });
@@ -83,4 +91,8 @@ fse.writeFileSync(
 fse.writeFileSync(
   path.join(".", "src", "prebuild", "versions.js"),
   "module.exports = " + JSON.stringify(versions) + "\n"
+);
+fse.writeFileSync(
+  path.join(".", "src", "prebuild", "info.js"),
+  "module.exports = " + JSON.stringify(info) + "\n"
 );
