@@ -1,21 +1,6 @@
-department:
-  title: Department
-  menswear: Menswear
-  womenswear: Womenswear
-  accessories: Accessories
-
-type:
-  title: Type
-  block: Block/Sloper
-  pattern: Pattern
-
-tags:
-  title: Tags
-  basics: Basics
-  bottom: Bottom
-  top: Top
-  underwear: Underwear
-
+department: Department
+type: Type
+tags: Tags
 code: Code
 design: Design
 difficulty: Difficulty

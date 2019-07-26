@@ -15,6 +15,7 @@ import parts from "./parts.yaml";
 import patterns from "./patterns.yml";
 import plugin from "./plugin/";
 import settings from "./settings.yml";
+import homepage from "./homepage.yaml";
 
 const topics = {
   account,
@@ -33,7 +34,8 @@ const topics = {
   parts,
   patterns,
   plugin,
-  settings
+  settings,
+  homepage
 };
 
 const strings = {};
