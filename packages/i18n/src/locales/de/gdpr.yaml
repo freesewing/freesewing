@@ -14,6 +14,8 @@ modelWhatAnswer: Für jedes Modell deren <b>Messwerte</b> und <b>Brusteinstellun
 modelWhatAnswerOptional: 'Optional: Ein <b> Modell </ b> und der <b> Name </ b>, den Sie Ihrem Modell geben.'
 modelWhatQuestion: Was sind Modelldaten?
 modelWhyAnswer: 'Zum Erstellen von <b> Nähen nach Maß </b> benötigen wir <b> Körpermaße </b>.'
+noConsentNoAccount: Without this consent, we cannot create your account
+noConsentNoPatterns: Without this consent, you cannot create any patterns
 noIDoNot: 'Nein, ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, können Sie dem widersprechen.
 openDataQuestion: Teilen Sie anonymisierte Messungen als offene Daten
@@ -34,3 +36,4 @@ whatYouNeedToKnow: Was Sie wissen müssen
 whyQuestion: Warum brauchen wir es?
 yesIDoObject: 'Ja, ich widerspreche'
 yesIDo: 'Ja, das mache ich'
+openData: "Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this"

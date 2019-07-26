@@ -14,6 +14,8 @@ applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
 askForHelp: Vraag om hulp
 automatic: Automatisch
+averagePeopleDoNotExist: "Average people don't exist"
+awesome: Awesome
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -119,6 +121,8 @@ name: Naam
 newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: Geen wijzigingen
 no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
@@ -127,6 +131,7 @@ notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in 
 notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
+oneMoreThing: One more thing
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
@@ -219,8 +224,16 @@ youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
 makerDocs: Maker documentatie
-devDocs: Ontwikkelaar documentatie
+devDocs: Documentatie voor ontwikkelaars
+slogan: Een JavaScript bibliotheek voor naaipatronen op maat
 getStarted: Aan de slag
-apiReference: API-referentie
-tutorial: Stap voor stap
-
+apiReference: API Referentie
+tutorial: Handleiding
+editThisPage: Deze pagina bewerken
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+recipes: Recipes
+various: Various
+sewing: Sewing
+examples: Examples
+by: by
+years: Years
