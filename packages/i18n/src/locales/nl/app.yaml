@@ -14,8 +14,8 @@ applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
 askForHelp: Vraag om hulp
 automatic: Automatisch
-averagePeopleDoNotExist: "Average people don't exist"
-awesome: Awesome
+averagePeopleDoNotExist: "Gemiddelde mensen bestaan niet"
+awesome: Super
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -121,8 +121,8 @@ name: Naam
 newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
-newPattern: 'New {pattern}'
-newPatternForModel: 'New {pattern} for {model}'
+newPattern: 'Nieuw {pattern}'
+newPatternForModel: 'Nieuwe {pattern} voor {model}'
 noChanges: Geen wijzigingen
 no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
