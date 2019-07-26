@@ -14,8 +14,8 @@ modelWhatAnswer: Voor elk model hun <b>lichaamsmaten</b> en <b>borst-instelling<
 modelWhatAnswerOptional: 'Optioneel: een model <b> afbeelding </b> en de <b> naam </b> die je aan je model geeft.'
 modelWhatQuestion: Wat zijn modelgegevens?
 modelWhyAnswer: 'Voor het tekenen van <b> op maat gemaakte naaipatronen </b> hebben we <b> lichaamsmaten </b> nodig.'
-noConsentNoAccount: Without this consent, we cannot create your account
-noConsentNoPatterns: Without this consent, you cannot create any patterns
+noConsentNoAccount: Zonder deze toestemming kunnen we je account niet aanmaken
+noConsentNoPatterns: Zonder deze toestemming kunt u geen patronen creëren
 noIDoNot: 'Neen, ik geef geen toestemming'
 openDataInfo: Deze gegevens worden gebruikt om de menselijke vorm in al zijn vormen te bestuderen en te begrijpen, zodat we betere naaipatronen en beter passende kledingstukken kunnen krijgen. Hoewel deze gegevens anoniem zijn, hebt u het recht hiertegen bezwaar te maken.
 openDataQuestion: Deel geanonimiseerde lichaamsmaten als open data
@@ -36,4 +36,4 @@ whatYouNeedToKnow: Wat je moet weten
 whyQuestion: Waarom hebben we ze nodig?
 yesIDoObject: 'Ja, ik maak bezwaar'
 yesIDo: 'Ja, ik geef mijn toestemming'
-openData: "Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this"
+openData: "Opmerking: FreeSewing publiceert geanonimmiseerde maten als open gegevens voor wetenschappelijk onderzoek. U heeft het recht om hier bezwaar tegen te maken"
