@@ -12,8 +12,10 @@ allDocumentation: Alle dokumentationen
 andThatIsAwesome: Und das ist großartig
 applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
-askForHelp: Bitten Sie um Hilfe
+askForHelp: Ask for help
 automatic: Automatisch
+averagePeopleDoNotExist: "Average people don't exist"
+awesome: Awesome
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
@@ -119,6 +121,8 @@ name: Name
 newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
@@ -127,6 +131,7 @@ notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch ve
 notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
 notes: Anmerkungen
 ohNo: Oh Nein!
+oneMoreThing: One more thing
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
@@ -182,7 +187,7 @@ startOver: Von vorn anfangen
 startTranslatingNowOrRead: '{startTranslatingNow}, oder lies zuerst die {documentationForTranslators}.'
 startTranslatingNow: Beginne jetzt mit dem Übersetzen
 subscribe: Abonnieren
-support: Unterstützung
+support: Support
 supportFreesewing: Unterstützung freesewing
 tellMeMore: Erzähl mir mehr
 thanksForYourSupport: Danke für deine Unterstützung
@@ -218,8 +223,17 @@ youAreAPatron: Du bist ein Gönner
 youAreNotAPatron: Sie sind gein Gönner
 youAreNotLoggedIn: Du bist nicht eingeloggt
 yourRights: Deine Rechte
-makerDocs: Herstellerdokumentation
-devDocs: Entwicklerdokumentation
-getStarted: Fangen Sie an
-apiReference: API-Referenz
+makerDocs: Maker documentation
+devDocs: Developer documentation
+slogan: A JavaScript library for made-to-measure sewing patterns
+getStarted: Get started
+apiReference: API Reference
 tutorial: Tutorial
+editThisPage: Edit this page
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+recipes: Recipes
+various: Various
+sewing: Sewing
+examples: Examples
+by: by
+years: Years

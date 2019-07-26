@@ -14,6 +14,8 @@ modelWhatAnswer: Voor elk model hun <b>lichaamsmaten</b> en <b>borst-instelling<
 modelWhatAnswerOptional: 'Optioneel: een model <b> afbeelding </b> en de <b> naam </b> die je aan je model geeft.'
 modelWhatQuestion: Wat zijn modelgegevens?
 modelWhyAnswer: 'Voor het tekenen van <b> op maat gemaakte naaipatronen </b> hebben we <b> lichaamsmaten </b> nodig.'
+noConsentNoAccount: Without this consent, we cannot create your account
+noConsentNoPatterns: Without this consent, you cannot create any patterns
 noIDoNot: 'Neen, ik geef geen toestemming'
 openDataInfo: Deze gegevens worden gebruikt om de menselijke vorm in al zijn vormen te bestuderen en te begrijpen, zodat we betere naaipatronen en beter passende kledingstukken kunnen krijgen. Hoewel deze gegevens anoniem zijn, hebt u het recht hiertegen bezwaar te maken.
 openDataQuestion: Deel geanonimiseerde lichaamsmaten als open data
@@ -21,7 +23,7 @@ profileQuestion: Geeft je de toestemming om je profielgegevens te verwerken?
 profileShareAnswer: '<b> Nee </b>, nooit.'
 profileTimingAnswer: '<b> 12 maanden </b> na je laatste aanmelding of totdat je je <b>account verwijdert</b> of <b>deze toestemming intrekt</b>.'
 profileWarning: Als u deze toestemming intrekt, worden al je gegevens verwijderd. Het heeft precies hetzelfde effect als het verwijderen van je account.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
+profileWhatAnswerOptional: 'Optioneel: een <b>profielfoto</b>, <b>bio</b>, en <b>accounts voor sociale media</b>'
 profileWhatAnswer: 'Je <b> e-mailadres </b>, <b> gebruikersnaam </b> en <b> wachtwoord </b>.'
 profileWhatQuestion: Wat zijn profielgegevens?
 profileWhyAnswer: 'Om je te <b>authenticeren</b>, je te <b> contacteren </b> wanneer nodig, en een <b>gemeenschap</b> te bouwen.'
@@ -34,3 +36,4 @@ whatYouNeedToKnow: Wat je moet weten
 whyQuestion: Waarom hebben we ze nodig?
 yesIDoObject: 'Ja, ik maak bezwaar'
 yesIDo: 'Ja, ik geef mijn toestemming'
+openData: "Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this"

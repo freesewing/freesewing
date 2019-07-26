@@ -12,8 +12,10 @@ allDocumentation: Toda la documentación
 andThatIsAwesome: Y eso es genial
 applyThisLayout: Aplicar este diseño
 areYouSureYouWantToContinue: Estás seguro de que quieres continuar?
-askForHelp: Pedir ayuda
+askForHelp: Ask for help
 automatic: Automático
+averagePeopleDoNotExist: "Average people don't exist"
+awesome: Awesome
 back: atras
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
@@ -119,6 +121,8 @@ name: Nombre
 newDraftFromGist: Nuevo patrón de la esencia
 newDraft: Nuevo boceto
 newModel: Nuevo modelo
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: No hay cambios
 no: false
 noPasswordPolicy: No aplicamos una política de contraseña
@@ -127,6 +131,7 @@ notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponibl
 notesInfo: Estas son tus notas. Puedes escribir lo que quieras aquí.
 notes: Notas
 ohNo: '¡Oh no!'
+oneMoreThing: One more thing
 options: Opciones
 orPayPerYear: O pagar por año
 other: Otro
@@ -182,7 +187,7 @@ startOver: Comenzar de nuevo
 startTranslatingNowOrRead: '{startTranslatingNow}, o lea primero la {documentationForTranslators}.'
 startTranslatingNow: Empezar a traducir ahora
 subscribe: Suscribir
-support: Apoyo
+support: Support
 supportFreesewing: Apoyo de freesewing
 tellMeMore: Dime más
 thanksForYourSupport: Gracias por su apoyo
@@ -218,9 +223,17 @@ youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn: No has iniciado sesión
 yourRights: Tus derechos
-makerDocs: Documentación del creador
-devDocs: Documentación del desarrollador
-getStarted: Empezar
-apiReference: Referencia API
+makerDocs: Maker documentation
+devDocs: Developer documentation
+slogan: A JavaScript library for made-to-measure sewing patterns
+getStarted: Get started
+apiReference: API Reference
 tutorial: Tutorial
-
+editThisPage: Edit this page
+loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+recipes: Recipes
+various: Various
+sewing: Sewing
+examples: Examples
+by: by
+years: Years
