@@ -53,6 +53,7 @@ const Footer = props => {
       <p>
         <FormattedHTMLMessage id="app.txt-footer" />
       </p>
+      {props.patrons}
       <div style={styles.container}>
         {Object.keys(links).map(l => {
           let items = [];
@@ -79,6 +80,7 @@ const Footer = props => {
 
 Footer.defaultProps = {
   home: "/",
-  links: false
+  links: false,
+  patrons: null
 };
 export default Footer;
