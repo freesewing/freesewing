@@ -3,7 +3,7 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-aboutGist1: Un résumé contient toutes les informations nécessaires pour dessiner un rédiger un ébauche.
+aboutGist1: Un résumé contient toutes les informations nécessaires pour ébaucher un patron.
 aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
 account: Compte
 accountCreated: Compte créé
@@ -11,7 +11,7 @@ actions: Actions
 allDocumentation: Toute la documentation
 andThatIsAwesome: Et c'est génial
 applyThisLayout: Appliquer cette mise en page
-areYouSureYouWantToContinue: Es-tu sur de vouloir continuer?
+areYouSureYouWantToContinue: Êtes-vous sûr de vouloir continuer?
 askForHelp: Demander de l'aide
 automatic: Automatique
 averagePeopleDoNotExist: "Les personnes moyennes n'existent pas"
@@ -217,23 +217,23 @@ weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quico
 whatIsThis: Qu'est-ce que c'est
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
-yay: Yay!
+yay: Yahou !
 yes: true
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
-makerDocs: Maker documentation
-devDocs: Developer documentation
-slogan: A JavaScript library for made-to-measure sewing patterns
-getStarted: Get started
-apiReference: API Reference
-tutorial: Tutorial
-editThisPage: Edit this page
-loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
-recipes: Recipes
-various: Various
-sewing: Sewing
-examples: Examples
-by: by
-years: Years
+makerDocs: Documentation pour les couturiers
+devDocs: Documentation pour les développeurs
+slogan: Une librairie JavaScript pour des patrons de couture sur mesure
+getStarted: Pour démarrer
+apiReference: Référence API
+tutorial: Tutoriel
+editThisPage: Éditer cette page
+loginRequiredRedirect: 'Vous avez été redirigé vers cette page car {page} requiert une authentification'
+recipes: Recettes
+various: Divers
+sewing: Couture
+examples: Exemples
+by: par
+years: Des années
