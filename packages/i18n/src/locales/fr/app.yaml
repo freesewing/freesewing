@@ -121,7 +121,7 @@ name: Nom
 newDraftFromGist: Nouveau ébauche a partir d'un résumé
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
-newPattern: 'New {pattern}'
+newPattern: 'Nouveau {pattern} (patron)'
 newPatternForModel: 'New {pattern} for {model}'
 noChanges: Pas de changement
 no: false
