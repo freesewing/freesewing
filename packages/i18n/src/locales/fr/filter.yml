@@ -3,16 +3,16 @@ department:
   title: Département
   menswear: Vêtements pour hommes
   womenswear: Vêtements pour femmes
-  accessories: Accessories
+  accessories: Accessoires
 type:
   title: Type
-  block: Bloc
+  block: Bloc/Patron de base
   pattern: Patron
 tags:
-  title: Tags
+  title: Étiquettes
   basics: Les bases
   bottom: Bas
-  top: Top
+  top: Haut
   underwear: Sous-vêtements
 code: Code
 design: Conception
