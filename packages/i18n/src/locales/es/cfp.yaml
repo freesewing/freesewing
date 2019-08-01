@@ -1,14 +1,14 @@
 ---
-author: Author
-githubRepo: GitHub repository
-packageManager: Package manager
-patternName: Pattern name
-patternType: Pattern type
-patternCreated: Your pattern skeleton has been created at
-runTheseCommands: To get started, run these two commands
-startRollup: In one terminal, start the rollup bundler in watch mode
-startWebpack: And in another terminal, run the webpack dev server
-devDocsAvailableAt: Developer documentation is available at
+author: Autor
+githubRepo: Repositorio GitHub
+packageManager: Gestor de paquetes
+patternName: Nombre del patrón
+patternType: Tipo de patrón
+patternCreated: Tu esqueleto de patrón ha sido creado en
+runTheseCommands: Para empezar, ejecuta estos dos comandos
+startRollup: En una terminal, inicia el paquete de rollup en modo reloj
+startWebpack: Y en otra terminal, ejecuta el servidor dev de webpack
+devDocsAvailableAt: Documentación para desarrolladores está disponible en
 talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
 draftYourPattern: Draft your pattern
 testYourPattern: Test your pattern
