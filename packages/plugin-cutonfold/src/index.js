@@ -29,21 +29,21 @@ export default {
         prefix: "",
         ...so
       };
-      points["cutonfoldFrom" + so.prefix] = so.to.shiftFractionTowards(
-        so.from,
-        so.margin / 100
-      );
-      points["cutonfoldTo" + so.prefix] = so.from.shiftFractionTowards(
-        so.to,
-        so.margin / 100
-      );
-      points["cutonfoldVia1" + so.prefix] = so.to
-        .shiftTowards(so.from, so.offset)
-        .rotate(-90, points["cutonfoldFrom" + so.prefix]);
-      points["cutonfoldVia2" + so.prefix] = so.from
-        .shiftTowards(so.to, so.offset)
-        .rotate(90, points["cutonfoldTo" + so.prefix]);
-      let text = so.grainline ? "cutOnFoldAndGrainline" : "cutOnFold";
+    points["cutonfoldFrom" + so.prefix] = so.from.shiftFractionTowards(
+      so.to,
+      so.margin / 100
+    );
+    points["cutonfoldTo" + so.prefix] = so.to.shiftFractionTowards(
+      so.from,
+      so.margin / 100
+    );
+    points["cutonfoldVia1" + so.prefix] = points["cutonfoldFrom" + so.prefix]
+      .shiftTowards(so.from, so.offset)
+      .rotate(-90, points["cutonfoldFrom" + so.prefix]);
+    points["cutonfoldVia2" + so.prefix] = points["cutonfoldTo" + so.prefix]
+      .shiftTowards(so.to, so.offset)
+      .rotate(90, points["cutonfoldTo" + so.prefix]);
+    let text = so.grainline ? "cutOnFoldAndGrainline" : "cutOnFold";
       this.paths["cutonfold" + so.prefix] = new this.Path()
         .move(points["cutonfoldFrom" + so.prefix])
         .line(points["cutonfoldVia1" + so.prefix])
