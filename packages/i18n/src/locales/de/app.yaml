@@ -142,7 +142,7 @@ patron-4: Steuermann
 patron-8: Kapitän
 patronHelp: Wenn Sie Fragen haben oder Änderungen an Ihrem Schutzstatus vornehmen möchten, wenden Sie sich bitte an Joost.
 patron: Gönner
-patronPitch: Wenn Sie der Meinung sind, dass das, was wir tun, sich lohnt, und wenn Sie jeden Monat ein paar Münzen einsparen können, dann sollten auch Sie ein Gönner des Freesewing werden.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
 patternOptions: Musteroptionen
@@ -201,7 +201,7 @@ txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns z
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
-txt-tiers: "Freesewing wird durch ein freiwilliges Abonnementmodell mit vier Stufen finanziert:"
+txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 updated: Aktualisierte
 update: Aktualisieren
@@ -237,3 +237,13 @@ sewing: Sewing
 examples: Examples
 by: by
 years: Years
+pricing: Pricing
+createFirst: Start by creating a new pattern
+noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
+modelFirst: Start by creating a model
+noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
+noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
+noUserBrowsingTitle: "You can't just browse all users"
+noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
+useRecipeModel: "Use the recipe's model"
+createReplica: Create a replica
