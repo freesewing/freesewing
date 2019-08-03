@@ -1,19 +1,7 @@
 ---
-department:
-  title: Département
-  menswear: Vêtements pour hommes
-  womenswear: Vêtements pour femmes
-  accessories: Accessoires
-type:
-  title: Type
-  block: Bloc/Patron de base
-  pattern: Patron
-tags:
-  title: Étiquettes
-  basics: Les bases
-  bottom: Bas
-  top: Haut
-  underwear: Sous-vêtements
+department: Department
+type: Type
+tags: Tags
 code: Code
 design: Conception
 difficulty: Difficulté
