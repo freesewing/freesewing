@@ -1,19 +1,7 @@
 ---
-department:
-  title: Departamento
-  menswear: Ropa de caballero
-  womenswear: Ropa de mujer
-  accessories: Accesorios
-type:
-  title: Tipo
-  block: Bloque
-  pattern: Patrón
-tags:
-  title: Etiquetas
-  basics: Lo esencial
-  bottom: Fondo
-  top: Top
-  underwear: Ropa interior
+department: Department
+type: Type
+tags: Tags
 code: Código
 design: Diseño
 difficulty: Dificultad
