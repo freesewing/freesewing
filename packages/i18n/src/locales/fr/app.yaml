@@ -142,7 +142,7 @@ patron-4: Second
 patron-8: Capitaine
 patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
 patron: Mécène
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
+patronPitch: Si vous pensez que ce que nous faisons en vaut la peine, et si vous pouvez consacrer quelques pièces chaque mois sans trop de difficulté, vous aussi pourriez devenir mécène de FreeSewing.
 patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
@@ -201,7 +201,7 @@ txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre d
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
 txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
 txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
-txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
+txt-tiers: "Freesewing est financé par un modèle de souscription volontaire"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 update: Mettre à jour
@@ -237,10 +237,10 @@ sewing: Couture
 examples: Exemples
 by: par
 years: Des années
-pricing: Pricing
-createFirst: Start by creating a new pattern
-noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
-modelFirst: Start by creating a model
+pricing: Nos montants de donation
+createFirst: Commencer en créant un nouveau patron
+noRecipe: Vous n'avez pas (encore) de recettes. Créez un nouveau patron, puis sauvegardez sa recette.
+modelFirst: Commencer par créer un modèle
 noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
 noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
 noUserBrowsingTitle: "You can't just browse all users"
