@@ -142,7 +142,7 @@ patron-4: Eerste stuurman
 patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
 patron: Mecenas
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
+patronPitch: Als je denkt dat wat we doen de moeite is, en je kan maandelijks een paar centen missen zonder droog brood te moeten eten, wil je misschien overwegen om sponsor te worden van FreeSewing.
 patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
@@ -201,7 +201,7 @@ txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
+txt-tiers: "FreeSewing draait op een vrijwillig subscriptiemodel"
 unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 update: Bijwerken
@@ -237,13 +237,13 @@ sewing: Naaien
 examples: Voorbeelden
 by: door
 years: Jaren
-pricing: Pricing
-createFirst: Start by creating a new pattern
-noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
-modelFirst: Start by creating a model
-noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
-noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
-noUserBrowsingTitle: "You can't just browse all users"
-noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-useRecipeModel: "Use the recipe's model"
-createReplica: Create a replica
+pricing: Prijzen
+createFirst: Begin een nieuw patroon te maken
+noRecipe: Je hebt (nog) geen recepten. Maak een nieuw patroon, en sla dan het recept op.
+modelFirst: Begin door een model te maken
+noModel: Je hebt (nog) geen modellen. FreeSewing genereert naaipatronen op maar. We kunnen geen patronen maken als we geen maten hebben.
+noModel2: Dus wat je als eerste moet doen is een model maken met jouw maten, of de maten van de persoon waar je een patroon voor wil maken.
+noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
+noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
+useRecipeModel: "Gebruik het model van het recept"
+createReplica: Creëer een replica
