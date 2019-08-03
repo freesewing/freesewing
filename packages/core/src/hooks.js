@@ -8,5 +8,5 @@ export default function Hooks() {
     postRender: [],
     insertText: [],
     debug: []
-  };
+  }
 }

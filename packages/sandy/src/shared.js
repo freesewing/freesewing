@@ -1,20 +1,20 @@
 const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
-  let { utils, Point, points, Path } = part.shorthand();
+  let { utils, Point, points, Path } = part.shorthand()
 
   const roundExtended = (radius, angle = 90) => {
-    let arg = utils.deg2rad(angle / 2);
+    let arg = utils.deg2rad(angle / 2)
 
-    return (radius * 4 * (1 - Math.cos(arg))) / Math.sin(arg) / 3;
-  };
+    return (radius * 4 * (1 - Math.cos(arg))) / Math.sin(arg) / 3
+  }
 
   /**
    * Calculates the distance of the control point for the internal
    * and external arcs using bezierCircleExtended
    */
-  let distIn = roundExtended(radIn, an / 2);
-  let distEx = roundExtended(radEx, an / 2);
+  let distIn = roundExtended(radIn, an / 2)
+  let distEx = roundExtended(radEx, an / 2)
   // The centre of the circles
-  points.center = new Point(0, 0);
+  points.center = new Point(0, 0)
 
   /**
    * This function is expected to draft ring sectors for
@@ -27,7 +27,7 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
    * The first point of the internal arc, situated at
    * a radIn distance below the centre
    */
-  points.in1 = points.center.shift(-90, radIn);
+  points.in1 = points.center.shift(-90, radIn)
 
   /**
    * The control point for 'in1'. It's situated at a
@@ -36,14 +36,14 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
    * the line between 'in1' and the centre, so it's
    * shifted in the direction 0º
    */
-  points.in1C = points.in1.shift(0, distIn);
+  points.in1C = points.in1.shift(0, distIn)
 
   /**
    * The second point of the internal arc, situated at
    * a $radIn distance of the centre in the direction
    * $an/2 - 90º
    */
-  points.in2 = points.center.shift(an / 2 - 90, radIn);
+  points.in2 = points.center.shift(an / 2 - 90, radIn)
 
   /**
    * The control point for 'in2'. It's situated at a
@@ -52,45 +52,45 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
    * the line between 'in2' and the centre, so it's
    * shifted in the direction $an/2 + 180º
    */
-  points.in2C = points.in2.shift(an / 2 + 180, distIn);
+  points.in2C = points.in2.shift(an / 2 + 180, distIn)
 
   /**
    * The points for the external arc are generated in the
    * same way, using $radEx and $distEx instead
    */
-  points.ex1 = points.center.shift(-90, radEx);
-  points.ex1C = points.ex1.shift(0, distEx);
-  points.ex2 = points.center.shift(an / 2 - 90, radEx);
-  points.ex2C = points.ex2.shift(an / 2 + 180, distEx);
+  points.ex1 = points.center.shift(-90, radEx)
+  points.ex1C = points.ex1.shift(0, distEx)
+  points.ex2 = points.center.shift(an / 2 - 90, radEx)
+  points.ex2C = points.ex2.shift(an / 2 + 180, distEx)
 
   // Flip all the points to generate the full ring sector
-  for (let id of ["in2", "in2C", "in1C", "ex1C", "ex2C", "ex2"])
-    points[id + "Flipped"] = points[id].flipX();
+  for (let id of ['in2', 'in2C', 'in1C', 'ex1C', 'ex2C', 'ex2'])
+    points[id + 'Flipped'] = points[id].flipX()
 
   // Rotate all the points an angle rot
   for (let id of [
-    "in1",
-    "in1C",
-    "in2",
-    "in2C",
-    "ex1",
-    "ex1C",
-    "ex2",
-    "ex2C",
-    "in2Flipped",
-    "in2CFlipped",
-    "in1CFlipped",
-    "ex1CFlipped",
-    "ex2CFlipped",
-    "ex2Flipped"
+    'in1',
+    'in1C',
+    'in2',
+    'in2C',
+    'ex1',
+    'ex1C',
+    'ex2',
+    'ex2C',
+    'in2Flipped',
+    'in2CFlipped',
+    'in1CFlipped',
+    'ex1CFlipped',
+    'ex2CFlipped',
+    'ex2Flipped'
   ])
-    points[id + "Rotated"] = points[id].rotate(rot, points.center);
+    points[id + 'Rotated'] = points[id].rotate(rot, points.center)
 
   if (rotate) {
     // Rotate all points so the line from in1Rotated to ex1Rotated is vertical
-    let deg = 270 - points.in2Flipped.angle(points.ex2Flipped);
+    let deg = 270 - points.in2Flipped.angle(points.ex2Flipped)
     for (let id in points) {
-      points[id] = points[id].rotate(deg, points.in2Flipped);
+      points[id] = points[id].rotate(deg, points.in2Flipped)
     }
   }
   // Return the path of the full ring sector
@@ -101,7 +101,7 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
     .line(points.ex2)
     .curve(points.ex2C, points.ex1C, points.ex1)
     .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
-    .close();
-};
+    .close()
+}
 
-export default draftRingSector;
+export default draftRingSector

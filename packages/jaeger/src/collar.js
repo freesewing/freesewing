@@ -6,28 +6,28 @@
  */
 
 export default function(part) {
-  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand();
+  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand()
 
   // Add extra fabric for collar roll
-  points.collarCbTopRoll = points.collarCbTop.shift(-90, options.collarRoll);
-  points.collarCbTopCpRoll = points.collarCbTopCp.shift(-90, options.collarRoll);
-  points.notchTipRoll = points.notch.shiftOutwards(points.notchTip, options.collarRoll);
+  points.collarCbTopRoll = points.collarCbTop.shift(-90, options.collarRoll)
+  points.collarCbTopCpRoll = points.collarCbTopCp.shift(-90, options.collarRoll)
+  points.notchTipRoll = points.notch.shiftOutwards(points.notchTip, options.collarRoll)
 
   // Mirror to create left half
   let mirror = [
-    "collarstandCbTopCp",
-    "collarstandTip",
-    "notch",
-    "notchTip",
-    "collarCbTopCp",
-    "notchTipRoll",
-    "collarCbTopCpRoll",
-  ];
-  for (let i of mirror) points[i+"Left"] = points[i].flipX(points.collarCbTop);
+    'collarstandCbTopCp',
+    'collarstandTip',
+    'notch',
+    'notchTip',
+    'collarCbTopCp',
+    'notchTipRoll',
+    'collarCbTopCpRoll'
+  ]
+  for (let i of mirror) points[i + 'Left'] = points[i].flipX(points.collarCbTop)
 
   // Clean up
-  for (let i of Object.keys(paths)) delete paths[i];
-  for (let i of Object.keys(snippets)) delete snippets[i];
+  for (let i of Object.keys(paths)) delete paths[i]
+  for (let i of Object.keys(snippets)) delete snippets[i]
 
   // Paths
   paths.seam = new Path()
@@ -41,90 +41,84 @@ export default function(part) {
     .line(points.collarstandTip)
     ._curve(points.collarstandCbTopCp, points.collarstandCbTop)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   paths.roll = new Path()
     .move(points.notchTip)
     ._curve(points.collarCbTopCp, points.collarCbTop)
     .curve_(points.collarCbTopCpLeft, points.notchTipLeft)
-    .attr("class", "stroke-sm dashed");
-
+    .attr('class', 'stroke-sm dashed')
 
   if (complete) {
     // Notches
-    macro("sprinkle", {
-      snippet: "notch",
-      on: [
-        "collarstandCbTop",
-        "notchTip",
-        "notchTipLeft",
-      ]
-    });
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['collarstandCbTop', 'notchTip', 'notchTipLeft']
+    })
     // Title
-    points.title = points.collarstandCbTopCp.shiftFractionTowards(points.collarCbTopCpRoll, 0.5);
-    macro("title", {
+    points.title = points.collarstandCbTopCp.shiftFractionTowards(points.collarCbTopCpRoll, 0.5)
+    macro('title', {
       at: points.title,
       nr: 7,
-      title: "collar"
-    });
+      title: 'collar'
+    })
 
     // Grainline
-    macro("grainline", {
+    macro('grainline', {
       from: points.collarCbTopRoll,
       to: points.collarstandCbTop
-    });
+    })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {
-      macro("hd", {
+      macro('hd', {
         from: points.collarstandTipLeft,
         to: points.collarstandTip,
         y: points.collarstandCbTop.y - sa - 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.notchLeft,
         to: points.notch,
         y: points.collarstandCbTop.y - sa - 30
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.notchTipRollLeft,
         to: points.notchTipRoll,
         y: points.notchTipRoll.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.notchTipLeft,
         to: points.notchTip,
         y: points.notchTipRoll.y + sa + 30
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.collarCbTopRoll,
         to: points.collarstandCbTop,
         x: points.collarCbTopRoll.x + 15
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.collarstandTip,
         to: points.notch,
         d: sa + 15
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.notchTip,
         to: points.notch,
         d: -15 - sa
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.notchTipRoll,
         to: points.notch,
         d: -30 - sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.notchTipRoll,
         to: points.collarstandCbTop,
         x: points.notch.x + sa + 40
-      });
-
+      })
     }
   }
 
-  return part;
+  return part
 }

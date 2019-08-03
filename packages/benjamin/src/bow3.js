@@ -1,20 +1,20 @@
 export default function(part) {
-  let { options, points, paths, complete, macro, sa } = part.shorthand();
+  let { options, points, paths, complete, macro, sa } = part.shorthand()
 
   if (options.adjustmentRibbon) {
-    part.render = false;
-    return part;
+    part.render = false
+    return part
   }
 
   if (complete) {
-    if (sa) paths.sa.render = true;
-    macro("title", {
+    if (sa) paths.sa.render = true
+    macro('title', {
       at: points.titleAnchor,
       nr: 3,
-      title: "bowTie",
+      title: 'bowTie',
       scale: 0.8
-    });
+    })
   }
 
-  return part;
+  return part
 }

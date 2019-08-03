@@ -1,24 +1,22 @@
-import { draftRibbing } from "./shared";
+import { draftRibbing } from './shared'
 
 export default part => {
-  let { complete, points, measurements, options, macro } = part.shorthand();
-  if (!options.ribbing) return part;
+  let { complete, points, measurements, options, macro } = part.shorthand()
+  if (!options.ribbing) return part
 
   draftRibbing(
     part,
-    measurements.wristCircumference *
-      (1 + options.cuffEase) *
-      (1 - options.ribbingStretch)
-  );
+    measurements.wristCircumference * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+  )
 
   // Complete pattern?
   if (complete) {
-    macro("title", {
+    macro('title', {
       at: points.title,
       nr: 7,
-      title: "cuff"
-    });
+      title: 'cuff'
+    })
   }
 
-  return part;
-};
+  return part
+}

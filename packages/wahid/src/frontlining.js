@@ -1,19 +1,9 @@
 export default part => {
-  let {
-    points,
-    paths,
-    Path,
-    options,
-    macro,
-    snippets,
-    Snippet,
-    complete,
-    sa
-  } = part.shorthand();
+  let { points, paths, Path, options, macro, snippets, Snippet, complete, sa } = part.shorthand()
 
   // Cleanup from Brian
-  for (let i of Object.keys(paths)) delete paths[i];
-  for (let i of Object.keys(snippets)) delete snippets[i];
+  for (let i of Object.keys(paths)) delete paths[i]
+  for (let i of Object.keys(snippets)) delete snippets[i]
 
   // Seam line
   paths.seam = new Path()
@@ -27,31 +17,23 @@ export default part => {
     .line(points.flbTop)
     ._curve(points.flbCp, points.dartTop)
     ._curve(points.dartWaistRightCpTop, points.dartWaistRight)
-    .curve(
-      points.dartWaistRightCpBottom,
-      points.dartHipRightCpTop,
-      points.dartHipRight
-    )
-    .line(points.dartEnd);
-  if (options.hemStyle === "classic") {
-    paths.seam.curve(
-      points.splitDartHemRightCp2,
-      points.splitHemCp1,
-      points.hem
-    );
-  } else paths.seam.line(points.hem);
+    .curve(points.dartWaistRightCpBottom, points.dartHipRightCpTop, points.dartHipRight)
+    .line(points.dartEnd)
+  if (options.hemStyle === 'classic') {
+    paths.seam.curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
+  } else paths.seam.line(points.hem)
 
   if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
-    points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5);
-    macro("title", {
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
+    macro('title', {
       nr: 4,
       at: points.title,
-      title: "frontLining"
-    });
-    points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5);
-    snippets.logo = new Snippet("logo", points.logo);
+      title: 'frontLining'
+    })
+    points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
   }
 
-  return part;
-};
+  return part
+}

@@ -1,13 +1,9 @@
-import {
-  draftFrenchCuff,
-  decorateFrenchCuff,
-  paperlessFrenchCuff
-} from "./shared";
+import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default part => {
-  let { sa, points, Path, paths, complete, paperless } = part.shorthand();
+  let { sa, points, Path, paths, complete, paperless } = part.shorthand()
 
-  draftFrenchCuff(part);
+  draftFrenchCuff(part)
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -16,21 +12,21 @@ export default part => {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   paths.fold = new Path()
     .move(points.midLeft)
     .line(points.midRight)
-    .attr("class", "dotted");
+    .attr('class', 'dotted')
 
   // Complete pattern?
   if (complete) {
-    decorateFrenchCuff(part);
-    if (sa) paths.sa = paths.seam.offset(sa);
+    decorateFrenchCuff(part)
+    if (sa) paths.sa = paths.seam.offset(sa)
   }
 
   // Paperless?
-  if (paperless) paperlessFrenchCuff(part);
+  if (paperless) paperlessFrenchCuff(part)
 
-  return part;
-};
+  return part
+}

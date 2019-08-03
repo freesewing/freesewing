@@ -1,21 +1,21 @@
 export function saBase(side, points, Path) {
-  let path = new Path();
-  if (side === "back") path.move(points.cbHem);
-  else path.move(points.cfHem);
+  let path = new Path()
+  if (side === 'back') path.move(points.cbHem)
+  else path.move(points.cfHem)
   path
     .line(points.hem)
     .line(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck);
-  if (side === "back") {
-    path.curve(points.neckCp2, points.cbNeck, points.cbNeck);
+    .line(points.neck)
+  if (side === 'back') {
+    path.curve(points.neckCp2, points.cbNeck, points.cbNeck)
   } else {
-    path.curve(points.neckCp2, points.cfNeckCp1, points.cfNeck);
+    path.curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
   }
 
-  return path;
+  return path
 }
 
 export function armholeLength(points, Path) {
@@ -24,54 +24,50 @@ export function armholeLength(points, Path) {
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .length();
+    .length()
 }
 
 export function shoulderToArmholePitch(points, Path) {
   return new Path()
     .move(points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .length();
+    .length()
 }
 
 export function dimensions(macro, points, Path, sa) {
-  macro("pd", {
+  macro('pd', {
     path: new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-      .curve(
-        points.armholeHollowCp2,
-        points.armholePitchCp1,
-        points.armholePitch
-      )
+      .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
     d: sa + 15
-  });
-  macro("pd", {
+  })
+  macro('pd', {
     path: new Path()
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
     d: -15
-  });
-  macro("vd", {
+  })
+  macro('vd', {
     from: points.hips,
     to: points.armhole,
     x: points.hips.x + sa + 15
-  });
-  macro("vd", {
+  })
+  macro('vd', {
     from: points.hips,
     to: points.armholePitch,
     x: points.hips.x + sa + 30
-  });
-  macro("vd", {
+  })
+  macro('vd', {
     from: points.hips,
     to: points.shoulder,
     x: points.hips.x + sa + 45
-  });
-  macro("vd", {
+  })
+  macro('vd', {
     from: points.hips,
     to: points.neck,
     x: points.hips.x + sa + 60
-  });
-  macro("ld", { from: points.neck, to: points.shoulder, d: sa + 15 });
+  })
+  macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
 }

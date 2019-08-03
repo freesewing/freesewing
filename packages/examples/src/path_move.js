@@ -1,13 +1,13 @@
-import { box } from "./shared";
+import { box } from './shared'
 
 export default part => {
-  let { Point, points, Path, paths } = part.shorthand();
+  let { Point, points, Path, paths } = part.shorthand()
 
   points.to = new Point(50, 10)
-    .attr("data-text", "Path.move()")
-    .attr("data-text-class", "fill-note center");
+    .attr('data-text', 'Path.move()')
+    .attr('data-text-class', 'fill-note center')
 
-  paths.noline = new Path().move(points.to);
+  paths.noline = new Path().move(points.to)
 
-  return box(part, 100, 15);
-};
+  return box(part, 100, 15)
+}

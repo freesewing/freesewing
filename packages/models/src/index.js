@@ -1,58 +1,58 @@
 export const measurements = {
   menswear: [
-    "ankleCircumference",
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "headCircumference",
-    "hipsCircumference",
-    "hipsToUpperLeg",
-    "inseam",
-    "kneeCircumference",
-    "naturalWaist",
-    "naturalWaistToFloor",
-    "naturalWaistToHip",
-    "naturalWaistToKnee",
-    "naturalWaistToSeat",
-    "neckCircumference",
-    "seatDepth",
-    "shoulderSlope",
-    "shoulderToElbow",
-    "shoulderToShoulder",
-    "shoulderToWrist",
-    "upperLegCircumference",
-    "wristCircumference"
+    'ankleCircumference',
+    'bicepsCircumference',
+    'centerBackNeckToWaist',
+    'chestCircumference',
+    'headCircumference',
+    'hipsCircumference',
+    'hipsToUpperLeg',
+    'inseam',
+    'kneeCircumference',
+    'naturalWaist',
+    'naturalWaistToFloor',
+    'naturalWaistToHip',
+    'naturalWaistToKnee',
+    'naturalWaistToSeat',
+    'neckCircumference',
+    'seatDepth',
+    'shoulderSlope',
+    'shoulderToElbow',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'upperLegCircumference',
+    'wristCircumference'
   ],
   womenswear: [
-    "ankleCircumference",
-    "bicepsCircumference",
-    "bustSpan",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "headCircumference",
-    "highBust",
-    "highPointShoulderToBust",
-    "hipsCircumference",
-    "hipsToUpperLeg",
-    "inseam",
-    "kneeCircumference",
-    "naturalWaist",
-    "naturalWaistToFloor",
-    "naturalWaistToHip",
-    "naturalWaistToKnee",
-    "naturalWaistToUnderbust",
-    "naturalWaistToSeat",
-    "neckCircumference",
-    "seatDepth",
-    "shoulderSlope",
-    "shoulderToElbow",
-    "shoulderToShoulder",
-    "shoulderToWrist",
-    "underbust",
-    "upperLegCircumference",
-    "wristCircumference"
+    'ankleCircumference',
+    'bicepsCircumference',
+    'bustSpan',
+    'centerBackNeckToWaist',
+    'chestCircumference',
+    'headCircumference',
+    'highBust',
+    'highPointShoulderToBust',
+    'hipsCircumference',
+    'hipsToUpperLeg',
+    'inseam',
+    'kneeCircumference',
+    'naturalWaist',
+    'naturalWaistToFloor',
+    'naturalWaistToHip',
+    'naturalWaistToKnee',
+    'naturalWaistToUnderbust',
+    'naturalWaistToSeat',
+    'neckCircumference',
+    'seatDepth',
+    'shoulderSlope',
+    'shoulderToElbow',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'underbust',
+    'upperLegCircumference',
+    'wristCircumference'
   ]
-};
+}
 
 export const withoutBreasts = {
   size34: {
@@ -147,8 +147,8 @@ export const withoutBreasts = {
     upperLegCircumference: 646,
     wristCircumference: 200
   }
-};
+}
 
 export const withBreasts = {
   // FIXME
-};
+}

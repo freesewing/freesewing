@@ -1,22 +1,22 @@
 export default function(part) {
-  let { macro, points, paths, complete, paperless } = part.shorthand();
+  let { macro, points, paths, complete, paperless } = part.shorthand()
 
-  paths.seam.attributes.set("class", "interfacing");
-  paths.welt.attributes.set("class", "interfacing dashed");
+  paths.seam.attributes.set('class', 'interfacing')
+  paths.welt.attributes.set('class', 'interfacing dashed')
 
   // Complete pattern?
   if (complete) {
-    macro("title", {
+    macro('title', {
       at: points.title,
-      title: "backPocketInterfacing",
+      title: 'backPocketInterfacing',
       nr: 13
-    });
-    macro("grainline", false);
+    })
+    macro('grainline', false)
   }
 
   // Paperless?
   if (paperless) {
   }
 
-  return part;
+  return part
 }

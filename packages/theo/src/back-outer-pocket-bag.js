@@ -1,17 +1,9 @@
 export default function(part) {
-  let {
-    macro,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless
-  } = part.shorthand();
+  let { macro, points, Path, paths, complete, sa, paperless } = part.shorthand()
 
   // Make bag 2cm longer
-  points.topRight = points.topRight.shift(90, 20);
-  points.topLeft = points.topLeft.shift(90, 20);
+  points.topRight = points.topRight.shift(90, 20)
+  points.topLeft = points.topLeft.shift(90, 20)
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -22,21 +14,21 @@ export default function(part) {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr("class", "lining");
+    .attr('class', 'lining')
   paths.welt = new Path()
     .move(points.weltLeft)
     .line(points.weltRight)
-    .attr("class", "lining dashed");
+    .attr('class', 'lining dashed')
 
   // Complete pattern?
   if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "lining sa");
-    macro("title", { at: points.title, title: "backInnerPocketBag", nr: 11 });
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
+    macro('title', { at: points.title, title: 'backInnerPocketBag', nr: 11 })
   }
 
   // Paperless?
   if (paperless) {
   }
 
-  return part;
+  return part
 }

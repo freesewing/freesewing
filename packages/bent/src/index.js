@@ -1,29 +1,29 @@
-import freesewing from "@freesewing/core";
-import plugins from "@freesewing/plugin-bundle";
-import Brian from "@freesewing/brian";
-import config from "../config";
+import freesewing from '@freesewing/core'
+import plugins from '@freesewing/plugin-bundle'
+import Brian from '@freesewing/brian'
+import config from '../config'
 // Parts
-import draftSleeve from "./sleeve";
-import draftTopSleeve from "./topsleeve";
-import draftUnderSleeve from "./undersleeve";
+import draftSleeve from './sleeve'
+import draftTopSleeve from './topsleeve'
+import draftUnderSleeve from './undersleeve'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods from Brian to prototype
 Pattern.prototype.draftBase = function(part) {
-  return new Brian(this.settings).draftBase(part);
-};
+  return new Brian(this.settings).draftBase(part)
+}
 Pattern.prototype.draftFront = function(part) {
-  return new Brian(this.settings).draftFront(part);
-};
+  return new Brian(this.settings).draftFront(part)
+}
 Pattern.prototype.draftBack = function(part) {
-  return new Brian(this.settings).draftBack(part);
-};
+  return new Brian(this.settings).draftBack(part)
+}
 
 // Attach own draft methods to prototype
-Pattern.prototype.draftSleeve = draftSleeve;
-Pattern.prototype.draftTopSleeve = draftTopSleeve;
-Pattern.prototype.draftUnderSleeve = draftUnderSleeve;
+Pattern.prototype.draftSleeve = draftSleeve
+Pattern.prototype.draftTopSleeve = draftTopSleeve
+Pattern.prototype.draftUnderSleeve = draftUnderSleeve
 
-export default Pattern;
+export default Pattern

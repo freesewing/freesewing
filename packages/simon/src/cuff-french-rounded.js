@@ -1,50 +1,37 @@
-import {
-  draftFrenchCuff,
-  decorateFrenchCuff,
-  paperlessFrenchCuff
-} from "./shared";
+import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default part => {
-  let {
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand();
-  draftFrenchCuff(part);
-  let height = store.get("cuffHeight");
-  macro("round", {
+  let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  draftFrenchCuff(part)
+  let height = store.get('cuffHeight')
+  macro('round', {
     from: points.topRight,
     to: points.bottomLeft,
     via: points.topLeft,
     radius: height / 3,
-    prefix: "topLeft"
-  });
-  macro("round", {
+    prefix: 'topLeft'
+  })
+  macro('round', {
     from: points.topLeft,
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: height / 3,
-    prefix: "bottomLeft"
-  });
-  macro("round", {
+    prefix: 'bottomLeft'
+  })
+  macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: height / 3,
-    prefix: "bottomRight"
-  });
-  macro("round", {
+    prefix: 'bottomRight'
+  })
+  macro('round', {
     from: points.bottomRight,
     to: points.topLeft,
     via: points.topRight,
     radius: height / 3,
-    prefix: "topRight"
-  });
+    prefix: 'topRight'
+  })
 
   paths.seam = new Path()
     .move(points.topLeftEnd)
@@ -57,21 +44,21 @@ export default part => {
     .line(points.topLeftStart)
     .curve(points.topLeftCp1, points.topLeftCp2, points.topLeftEnd)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   paths.fold = new Path()
     .move(points.midLeft)
     .line(points.midRight)
-    .attr("class", "dotted");
+    .attr('class', 'dotted')
 
   // Complete pattern?
   if (complete) {
-    decorateFrenchCuff(part);
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    decorateFrenchCuff(part)
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   // Paperless?
-  if (paperless) paperlessFrenchCuff(part);
+  if (paperless) paperlessFrenchCuff(part)
 
-  return part;
-};
+  return part
+}

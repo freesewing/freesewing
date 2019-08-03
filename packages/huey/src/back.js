@@ -1,4 +1,4 @@
-import { sharedDimensions } from "./shared";
+import { sharedDimensions } from './shared'
 
 export default function(part) {
   let {
@@ -12,33 +12,32 @@ export default function(part) {
     sa,
     options,
     measurements
-  } = part.shorthand();
+  } = part.shorthand()
 
   // Clear paths from Brian
-  for (let p of Object.keys(paths)) delete paths[p];
+  for (let p of Object.keys(paths)) delete paths[p]
 
   // Shorten body to take ribbing into account
   if (options.ribbing) {
     let rh =
-      options.ribbingHeight *
-      (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip);
-    for (let p of ["hem", "cbHem"]) points[p] = points[p].shift(90, rh);
-    store.set("ribbingHeight", rh);
+      options.ribbingHeight * (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip)
+    for (let p of ['hem', 'cbHem']) points[p] = points[p].shift(90, rh)
+    store.set('ribbingHeight', rh)
   }
 
   // Shape side seam
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4;
-  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4;
-  points.hem.x = points.hips.x;
+  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
+  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hem.x = points.hips.x
 
   // Store length of the neck seam
   store.set(
-    "backNeckSeamLength",
+    'backNeckSeamLength',
     new Path()
       .move(points.neck)
       .curve_(points.neckCp2, points.cbNeck)
       .length()
-  );
+  )
 
   // Paths
   paths.saBase = new Path()
@@ -49,43 +48,41 @@ export default function(part) {
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve_(points.neckCp2, points.cbNeck)
-    .attr("class", "note stroke-xxl");
+    .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path()
     .move(points.cbHem)
     .line(points.hem)
-    .attr("class", "note stroke-xxl");
-  paths.saBase.render = false;
-  paths.hemBase.render = false;
+    .attr('class', 'note stroke-xxl')
+  paths.saBase.render = false
+  paths.hemBase.render = false
 
   paths.seam = paths.saBase
     .clone()
     .line(points.cbHem)
     .join(paths.hemBase)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   // Complete?
   if (complete) {
-    macro("cutonfold", {
+    macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbHem,
       grainline: true
-    });
+    })
     if (sa) {
-      paths.sa = paths.hemBase
-        .offset(options.ribbing ? sa : 3 * sa)
-        .join(paths.saBase.offset(sa));
+      paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
       paths.sa
         .move(paths.sa.end())
         .line(points.cbNeck)
         .move(paths.sa.start())
         .line(points.cbHem)
-        .attr("class", "fabric sa");
+        .attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
-  if (paperless) sharedDimensions(part, "back");
+  if (paperless) sharedDimensions(part, 'back')
 
-  return part;
+  return part
 }
