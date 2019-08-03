@@ -142,7 +142,7 @@ patron-4: Primer oficial
 patron-8: Capitán
 patronHelp: Si tiene alguna pregunta o desea realizar cambios en su estado de mecenas, comuníquese con Joost.
 patron: Mecenas
-patronPitch: Si crees que lo que hacemos vale la pena, y si puedes ahorrar unas cuantas monedas cada mes, entonces también deberías convertirte en un mecenas de freesewing.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
 patternOptions: Opciones del patrón
@@ -201,7 +201,7 @@ txt-tier0: '¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? 
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
 txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
-txt-tiers: "Freesewing está financiado por un modelo de suscripción voluntaria con cuatro niveles:"
+txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 updated: Actualizado
 update: Actualizar
@@ -237,3 +237,13 @@ sewing: Costura
 examples: Ejemplos
 by: por
 years: Años
+pricing: Pricing
+createFirst: Start by creating a new pattern
+noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
+modelFirst: Start by creating a model
+noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
+noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
+noUserBrowsingTitle: "You can't just browse all users"
+noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
+useRecipeModel: "Use the recipe's model"
+createReplica: Create a replica
