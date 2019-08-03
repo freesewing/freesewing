@@ -19,8 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "jsonlint": "yarn --silent jsonlint:files | xargs -n1 jsonlint -q -c && echo \"jsonlint: no lint errors\"",
     "jsonlint:files": "find . -name \"*.json\" | grep -v -f .eslintignore",
-    "prettier": "babel-node ./scripts/prettier.js",
-    "pretty": "npx prettier --write 'src/*.js'",
+    "prettier": "npx prettier --write 'packages/**/src/*.js'",
     "precommit": "npm run pretty && lint-staged",
     "reconfigure": "npx babel-node scripts/reconfigure.js",
     "bump": "git add . && git commit -m ':wrench: Reconfigure packages'"
@@ -32,6 +31,7 @@
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
   },
+  "prettier": "@freesewing/prettier-config",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
