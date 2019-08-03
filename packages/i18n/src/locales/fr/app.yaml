@@ -241,9 +241,9 @@ pricing: Nos montants de donation
 createFirst: Commencer en créant un nouveau patron
 noRecipe: Vous n'avez pas (encore) de recettes. Créez un nouveau patron, puis sauvegardez sa recette.
 modelFirst: Commencer par créer un modèle
-noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
-noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
-noUserBrowsingTitle: "You can't just browse all users"
-noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-useRecipeModel: "Use the recipe's model"
-createReplica: Create a replica
+noModel: Vous n'avez pas (encore) de modèle. FreeSewing génère des patrons de couture sur mesure. Et nous ne pouvons pas générer de patron si nous n'avons pas de mesures.
+noModel2: La première chose que vous devriez faire est de créer un modèle avec vos mesures, ou les mesures de la personne pour laquelle vous souhaitez créer un patron.
+noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisateurs"
+noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
+useRecipeModel: "Utiliser le modèle de la recette"
+createReplica: Créer une réplique
