@@ -11,7 +11,7 @@
     "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "pretty": "npx prettier --write \"src/*.js\"",
+    "prettier": "npx prettier --write 'src/**'",
     "lint": "eslint --fix \"src/*.js\"",
     "dev": "backpack",
     "build": "backpack build"
@@ -26,6 +26,7 @@
     "url": "https://github.com/freesewing/svg2pdf/issues"
   },
   "homepage": "https://github.com/freesewing/svg2pdf#readme",
+  "prettier": "@freesewing/prettier-config",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -46,6 +47,7 @@
     "shell-exec": "1.0.2"
   },
   "devDependencies": {
+    "@freesewing/prettier-config": "2.0.0-beta.37",
     "backpack-core": "0.7.0",
     "nodemon": "1.18.6"
   }

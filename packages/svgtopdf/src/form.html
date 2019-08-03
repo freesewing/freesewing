@@ -1,76 +1,82 @@
 <html>
   <head>
-  <title>Convert your SVG pattern</title>
-  <link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans+Condensed:300" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Domine', serif;
-      font-size: 100%;
-      max-width: 600px;
-      margin: 30px auto;
-    }
-    h1 {
-      font-family: 'Open Sans Condensed', sans-serif;
-      font-size: 3rem;
-    }
-  </style>
+    <title>Convert your SVG pattern</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine|Open+Sans+Condensed:300"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Domine', serif;
+        font-size: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+      }
+      h1 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 3rem;
+      }
+    </style>
   </head>
   <body>
     <p align="center">
       <a title="Go to freesewing.org" href="https://freesewing.org/">
-        <img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/>
+        <img
+          src="https://freesewing.org/img/logo/black.svg"
+          align="center"
+          width="150px"
+          alt="Freesewing logo"
+        />
       </a>
     </p>
     <h1>Convert your freesewing pattern</h1>
-    <form method="POST" action="/" enctype='multipart/form-data'>
+    <form method="POST" action="/" enctype="multipart/form-data">
       <h2>Upload your pattern</h2>
-      <input type="file" id="svg" name="svg" accept="image/svg+xml">
+      <input type="file" id="svg" name="svg" accept="image/svg+xml" />
       <h2>Choose a file format</h2>
       <p>
-        <input type="radio" name="format" value="ps" id="ps">
-        <label for='ps'>PostScript (.ps)</label>
+        <input type="radio" name="format" value="ps" id="ps" />
+        <label for="ps">PostScript (.ps)</label>
       </p>
       <p>
-        <input type="radio" name="format" value="pdf" checked id="pdf">
-        <label for='pdf'>Portable Document Format (.pdf)</label>
+        <input type="radio" name="format" value="pdf" checked id="pdf" />
+        <label for="pdf">Portable Document Format (.pdf)</label>
       </p>
       <h2>Choose a paper size</h2>
       <p>
-        <input type="radio" name="size" value="full" id="full" checked>
-        <label for='full'>Full size (do not tile)</label>
+        <input type="radio" name="size" value="full" id="full" checked />
+        <label for="full">Full size (do not tile)</label>
       </p>
       <p>
-        <input type="radio" name="size" value="a4" id="a4">
-        <label for='a4'>A4</label>
+        <input type="radio" name="size" value="a4" id="a4" />
+        <label for="a4">A4</label>
       </p>
       <p>
-        <input type="radio" name="size" value="a3" id="a3">
-        <label for='a3'>A3</label>
+        <input type="radio" name="size" value="a3" id="a3" />
+        <label for="a3">A3</label>
       </p>
       <p>
-        <input type="radio" name="size" value="a2" id="a2">
-        <label for='a2'>A2</label>
+        <input type="radio" name="size" value="a2" id="a2" />
+        <label for="a2">A2</label>
       </p>
       <p>
-        <input type="radio" name="size" value="a1" id="a1">
-        <label for='a1'>A1</label>
+        <input type="radio" name="size" value="a1" id="a1" />
+        <label for="a1">A1</label>
       </p>
       <p>
-        <input type="radio" name="size" value="a0" id="a0">
-        <label for='a0'>A0</label>
+        <input type="radio" name="size" value="a0" id="a0" />
+        <label for="a0">A0</label>
       </p>
       <p>
-        <input type="radio" name="size" value="letter" id="letter">
-        <label for='letter'>Letter</label>
+        <input type="radio" name="size" value="letter" id="letter" />
+        <label for="letter">Letter</label>
       </p>
       <p>
-        <input type="radio" name="size" value="tabloid" id="tabloid">
-        <label for='tabloid'>Tabloid</label>
+        <input type="radio" name="size" value="tabloid" id="tabloid" />
+        <label for="tabloid">Tabloid</label>
       </p>
       <h2>We'll do the rest</h2>
-      <input type="submit" value="Convert my pattern">
+      <input type="submit" value="Convert my pattern" />
     </form>
   </body>
-  </html>
-
-
+</html>
