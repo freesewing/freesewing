@@ -1,8 +1,8 @@
 ---
-department: Department
+department: Afdeling
 type: Type
-tags: Tags
+tags: Labels
 code: Code
 design: Ontwerp
 difficulty: Moeilijkheid
-resetFilter: Filters terugzetten
+resetFilter: Filters herstellen
