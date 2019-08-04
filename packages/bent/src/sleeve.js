@@ -2,7 +2,7 @@ export default function(part) {
   let { Path, paths, points, store, options } = part.shorthand()
 
   function draftSleeve(part, tweak) {
-    let { Point, Path, points, paths, store, options, measurements, utils } = part.shorthand()
+    let { Point, Path, points, store, options, measurements, utils } = part.shorthand()
     // Sleeve frame
     points.top = new Point(0, 0)
     points.boxTopRight = points.top.shift(0, (store.get('sleevecapTarget') / 5.8) * tweak)
