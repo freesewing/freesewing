@@ -9,7 +9,6 @@ export default {
       if (svg.attributes.get('freesewing:plugin-logo') === false) {
         svg.attributes.set('freesewing:plugin-logo', version)
         svg.defs += logo
-        svg.style += 'path.logo{stroke:none;fill:#000;}'
       }
     }
   }
