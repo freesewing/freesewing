@@ -4,55 +4,58 @@ aaron:
   title: Shirt Aaron
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.
-  title: Schleife Benjamin
+  title: Benjamin bow tie
 bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.
-  title: Grundschnitt Bent
+  title: Bent body Block
 brian:
   description: Brian ist eine Grundschnitt für Männer.
-  title: Grundschnitt Brian
+  title: Brian body block
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
-  title: Retroshorts Bruce
+  title: Bruce boxer briefs
 carlita:
   description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
-  title: Mantel Carlita
+  title: Carlita coat
 carlton:
   description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
-  title: Mantel Carlton Coat
+  title: Carlton coat
 cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
-  title: Korsett Cathrin
+  title: Cathrin corset
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
-  title: Schiebermütze Florent
+  title: Florent flat cap
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
-  title: Hoodie Huey
+  title: Huey hoodie
 hugo:
   description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
-  title: Hoodie Hugo
+  title: Hugo hoodie
 jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
-  title: Sakko Jaeger
+  title: Jaeger jacket
+sandy:
+  description: Sandy is an adaptable circle skirt pattern
+  title: Sandt circle skirt
+shin:
+  description: Shin are atheltic swim trunks for men
+  title: Shin swim trunks
 simon:
   description: Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.
-  title: Hemd Simon
+  title: Simon shirt
 sven:
   description: Sven ist ein geradliniges Sweatshirt.
-  title: Sweatshirt Sven
+  title: Sven sweatshirt
 tamiko:
   description: Tamiko ist ein Zero Waste Top.
-  title: Tamiko Top DONE
+  title: Tamiko top
 theo:
-  description: Theo ist Theodore - mit einem schmaleren Schnitt.
+  description: Theo is a classic trouser pattern.
   title: Hose Theo
-theodore:
-  description: Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.
-  title: Hose Theodore
 trayvon:
   description: Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.
-  title: Krawatte Trayvon
+  title: Trayvon tie
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
-  title: Weste Wahid
+  title: Wahid waistcoat

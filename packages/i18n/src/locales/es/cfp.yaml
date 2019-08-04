@@ -1,24 +1,24 @@
 ---
-author: Author
-githubRepo: GitHub repository
-packageManager: Package manager
-patternName: Pattern name
-patternType: Pattern type
-patternCreated: Your pattern skeleton has been created at
-runTheseCommands: To get started, run these two commands
-startRollup: In one terminal, start the rollup bundler in watch mode
-startWebpack: And in another terminal, run the webpack dev server
-devDocsAvailableAt: Developer documentation is available at
-talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
-draftYourPattern: Draft your pattern
-testYourPattern: Test your pattern
-renderInBrowser: Click below to render your pattern in the browser.
-weWillReRender: When you make changes, we will re-render for you.
-youCan: You can
-enterMeasurements: Enter measurements by hand
-preloadMeasurements: Preload a set of measurements
-size: Size
-noRequiredMeasurements: This pattern has no required measurements
+author: Autor
+githubRepo: Repositorio GitHub
+packageManager: Gestor de paquetes
+patternName: Nombre del patrón
+patternType: Tipo de patrón
+patternCreated: Tu esqueleto de patrón ha sido creado en
+runTheseCommands: Para empezar, ejecuta estos dos comandos
+startRollup: En una terminal, inicia el paquete de rollup en modo reloj
+startWebpack: Y en otra terminal, ejecuta el servidor dev de webpack
+devDocsAvailableAt: Documentación para desarrolladores está disponible en
+talkToUs: Para preguntas, comentarios o sugerencias, contáctanos en nuestra sala de chat
+draftYourPattern: Traza tu patrón
+testYourPattern: Prueba tu patrón
+renderInBrowser: Haz clic abajo para mostrar el patrón en el navegador.
+weWillReRender: Cuando realices cambios, lo volveremos a trazar para ti.
+youCan: Puedes
+enterMeasurements: Introducir medidas a mano
+preloadMeasurements: Precarga un conjunto de medidas
+size: Tamaño
+noRequiredMeasurements: Este patrón no requiere tiene medidas
 howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
 seeDocsAt: Documentation on this topic is available at
 designModeIsOn: Design mode is on

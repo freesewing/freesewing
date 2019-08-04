@@ -1,20 +1,8 @@
 ---
-department:
-  title: Afdeling
-  menswear: Herenkleding
-  womenswear: Dameskleding
-  accessories: Accessoires
-type:
-  title: Soort
-  block: Blok
-  pattern: Patroon
-tags:
-  title: Labels
-  basics: Basis
-  bottom: Bodem
-  top: Top
-  underwear: Ondergoed
+department: Afdeling
+type: Type
+tags: Labels
 code: Code
 design: Ontwerp
 difficulty: Moeilijkheid
-resetFilter: Filters terugzetten
+resetFilter: Filters herstellen

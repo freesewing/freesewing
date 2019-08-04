@@ -4,13 +4,13 @@ aaron:
   title: Débardeur Aaron
 benjamin:
   description: Benjamin est un noeud papillon avec 4 possibilités de styles différents
-  title: Noeud papillon Benjamin
+  title: Nœud papillon Benjamin
 bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
-  title: Bloc d'emmanchure
+  title: Patron de base Bent
 brian:
   description: Brian est un patron de base de corps pour les hommes.
-  title: Patron de base de corps Brian
+  title: Patron de base Brian
 bruce:
   description: Bruce sont des boxers confortables et élégants.
   title: Boxer Bruce
@@ -25,31 +25,34 @@ cathrin:
   title: Corset Cathrin
 florent:
   description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
-  title: Casquette plate Florent
+  title: Casquette Florent
 huey:
   description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
   title: Sweat à capuche Huey
 hugo:
   description: Hugo est un pull à capuche avec des manches raglan.
-  title: Pull à capuche Hugo
+  title: Sweat à capuche Hugo
 jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
+sandy:
+  description: Sandy est un patron de jupe cercle adaptable
+  title: Jupe cercle Sandy
+shin:
+  description: Shin est un caleçon de bain athlétique pour hommes
+  title: Caleçon de bain Shin
 simon:
   description: Simon est un modèle de chemise pour homme hautement adaptable.
   title: Chemise Simon
 sven:
   description: Sven est un pull simple.
-  title: Pull Sven
+  title: Sweatshirt Sven
 tamiko:
   description: Tamiko est un top zéro déchet.
   title: Top Tamiko
 theo:
-  description: Théo est un pantalon Théodore avec une coupe plus moulante.
+  description: Theo est un patron de pantalon classique.
   title: Pantalons Theo
-theodore:
-  description: Theodore sont des pantalons classiques du livre (Aldrich).
-  title: Pantalons Theodore
 trayvon:
   description: Trayvon est une cravate qui ne coupe aucun coin pour un résultat professionnel.
   title: Cravate Trayvon
