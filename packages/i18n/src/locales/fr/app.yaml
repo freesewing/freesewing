@@ -247,3 +247,9 @@ noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisate
 noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
 useRecipeModel: "Utiliser le modèle de la recette"
 createReplica: Créer une réplique
+showDetails: Show details
+clickBelowToLogOut: Click below to log out
+compare: Compare
+saveRecipe: Save recipe
+exportPattern: Export pattern
+recreate: Recreate
