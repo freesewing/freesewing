@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/patterns",
-  "version": "2.0.0-beta.39",
+  "version": "2.0.0-beta.40",
   "description": "An umbrella package for all FreeSewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,29 +32,29 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.39",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.39",
-    "@freesewing/plugin-buttons": "^2.0.0-beta.39"
+    "@freesewing/core": "^2.0.0-beta.40",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.40",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.40"
   },
   "dependencies": {
-    "@freesewing/aaron": "^2.0.0-beta.39",
-    "@freesewing/benjamin": "^2.0.0-beta.39",
-    "@freesewing/bent": "^2.0.0-beta.39",
-    "@freesewing/brian": "^2.0.0-beta.39",
-    "@freesewing/bruce": "^2.0.0-beta.39",
-    "@freesewing/carlita": "^2.0.0-beta.39",
-    "@freesewing/carlton": "^2.0.0-beta.39",
-    "@freesewing/cathrin": "^2.0.0-beta.39",
-    "@freesewing/florent": "^2.0.0-beta.39",
-    "@freesewing/huey": "^2.0.0-beta.39",
-    "@freesewing/hugo": "^2.0.0-beta.39",
-    "@freesewing/jaeger": "^2.0.0-beta.39",
-    "@freesewing/shin": "^2.0.0-beta.39",
-    "@freesewing/simon": "^2.0.0-beta.39",
-    "@freesewing/sven": "^2.0.0-beta.39",
-    "@freesewing/tamiko": "^2.0.0-beta.39",
-    "@freesewing/trayvon": "^2.0.0-beta.39",
-    "@freesewing/wahid": "^2.0.0-beta.39"
+    "@freesewing/aaron": "^2.0.0-beta.40",
+    "@freesewing/benjamin": "^2.0.0-beta.40",
+    "@freesewing/bent": "^2.0.0-beta.40",
+    "@freesewing/brian": "^2.0.0-beta.40",
+    "@freesewing/bruce": "^2.0.0-beta.40",
+    "@freesewing/carlita": "^2.0.0-beta.40",
+    "@freesewing/carlton": "^2.0.0-beta.40",
+    "@freesewing/cathrin": "^2.0.0-beta.40",
+    "@freesewing/florent": "^2.0.0-beta.40",
+    "@freesewing/huey": "^2.0.0-beta.40",
+    "@freesewing/hugo": "^2.0.0-beta.40",
+    "@freesewing/jaeger": "^2.0.0-beta.40",
+    "@freesewing/shin": "^2.0.0-beta.40",
+    "@freesewing/simon": "^2.0.0-beta.40",
+    "@freesewing/sven": "^2.0.0-beta.40",
+    "@freesewing/tamiko": "^2.0.0-beta.40",
+    "@freesewing/trayvon": "^2.0.0-beta.40",
+    "@freesewing/wahid": "^2.0.0-beta.40"
   },
   "devDependencies": {},
   "files": [
