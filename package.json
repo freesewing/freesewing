@@ -83,7 +83,7 @@
     "js-yaml": "^3.13.1",
     "jsonlint": "^1.6.3",
     "lerna": "^3.13.3",
-    "lint-staged": "^7.3.0",
+    "lint-staged": "^9.2.1",
     "mocha": "^6.1.4",
     "mustache": "^3.0.1",
     "node-sass": "^4.11.0",
