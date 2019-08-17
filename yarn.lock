@@ -1278,170 +1278,170 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/components@file:packages/components":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/core@file:packages/core":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
     bezier-js "^2.2.13"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/models@file:packages/models":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/patterns@file:packages/patterns":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/aaron" "^2.0.0-beta.39"
-    "@freesewing/benjamin" "^2.0.0-beta.39"
-    "@freesewing/bent" "^2.0.0-beta.39"
-    "@freesewing/brian" "^2.0.0-beta.39"
-    "@freesewing/bruce" "^2.0.0-beta.39"
-    "@freesewing/carlita" "^2.0.0-beta.39"
-    "@freesewing/carlton" "^2.0.0-beta.39"
-    "@freesewing/cathrin" "^2.0.0-beta.39"
-    "@freesewing/florent" "^2.0.0-beta.39"
-    "@freesewing/huey" "^2.0.0-beta.39"
-    "@freesewing/hugo" "^2.0.0-beta.39"
-    "@freesewing/jaeger" "^2.0.0-beta.39"
-    "@freesewing/shin" "^2.0.0-beta.39"
-    "@freesewing/simon" "^2.0.0-beta.39"
-    "@freesewing/sven" "^2.0.0-beta.39"
-    "@freesewing/tamiko" "^2.0.0-beta.39"
-    "@freesewing/trayvon" "^2.0.0-beta.39"
-    "@freesewing/wahid" "^2.0.0-beta.39"
+    "@freesewing/aaron" "^2.0.0-beta.40"
+    "@freesewing/benjamin" "^2.0.0-beta.40"
+    "@freesewing/bent" "^2.0.0-beta.40"
+    "@freesewing/brian" "^2.0.0-beta.40"
+    "@freesewing/bruce" "^2.0.0-beta.40"
+    "@freesewing/carlita" "^2.0.0-beta.40"
+    "@freesewing/carlton" "^2.0.0-beta.40"
+    "@freesewing/cathrin" "^2.0.0-beta.40"
+    "@freesewing/florent" "^2.0.0-beta.40"
+    "@freesewing/huey" "^2.0.0-beta.40"
+    "@freesewing/hugo" "^2.0.0-beta.40"
+    "@freesewing/jaeger" "^2.0.0-beta.40"
+    "@freesewing/shin" "^2.0.0-beta.40"
+    "@freesewing/simon" "^2.0.0-beta.40"
+    "@freesewing/sven" "^2.0.0-beta.40"
+    "@freesewing/tamiko" "^2.0.0-beta.40"
+    "@freesewing/trayvon" "^2.0.0-beta.40"
+    "@freesewing/wahid" "^2.0.0-beta.40"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.0.0-beta.39"
-    "@freesewing/plugin-dimension" "^2.0.0-beta.39"
-    "@freesewing/plugin-grainline" "^2.0.0-beta.39"
-    "@freesewing/plugin-logo" "^2.0.0-beta.39"
-    "@freesewing/plugin-round" "^2.0.0-beta.39"
-    "@freesewing/plugin-scalebox" "^2.0.0-beta.39"
-    "@freesewing/plugin-sprinkle" "^2.0.0-beta.39"
-    "@freesewing/plugin-title" "^2.0.0-beta.39"
+    "@freesewing/plugin-cutonfold" "^2.0.0-beta.40"
+    "@freesewing/plugin-dimension" "^2.0.0-beta.40"
+    "@freesewing/plugin-grainline" "^2.0.0-beta.40"
+    "@freesewing/plugin-logo" "^2.0.0-beta.40"
+    "@freesewing/plugin-round" "^2.0.0-beta.40"
+    "@freesewing/plugin-scalebox" "^2.0.0-beta.40"
+    "@freesewing/plugin-sprinkle" "^2.0.0-beta.40"
+    "@freesewing/plugin-title" "^2.0.0-beta.40"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -2585,15 +2585,15 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-knobs@^5.0.10":
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.1.9.tgz#74db07fd644b41e63274f8754fbfb18f43d4cf01"
-  integrity sha512-7/bICMYtR9CaTqfZX1kT2pBOTLZo3HxeslyQKWWsWlNElV33Ym2d0PPL5eS36eFxG/ZOp6lQWIFhunNnlmP5xg==
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.1.11.tgz#a7e7d986b45e8addb25151b81008af1648ef1f2a"
+  integrity sha512-16GY8IPxVBcmq5TqPtP6254Qw5FvdefDZjIQd+ByJJliQjXZMQKxEl6JhRq98iUfSxEB+6JCPnpKPa666jmCMA==
   dependencies:
-    "@storybook/addons" "5.1.9"
-    "@storybook/client-api" "5.1.9"
-    "@storybook/components" "5.1.9"
-    "@storybook/core-events" "5.1.9"
-    "@storybook/theming" "5.1.9"
+    "@storybook/addons" "5.1.11"
+    "@storybook/client-api" "5.1.11"
+    "@storybook/components" "5.1.11"
+    "@storybook/core-events" "5.1.11"
+    "@storybook/theming" "5.1.11"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     escape-html "^1.0.3"
@@ -2625,6 +2625,18 @@
     prop-types "^15.7.2"
     util-deprecate "^1.0.2"
 
+"@storybook/addons@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.1.11.tgz#27f9cfed8d7f7c8a3fc341cdba3b0bdf608f02aa"
+  integrity sha512-714Xg6pX4rjDY1urL94w4oOxIiK6jCFSp4oKvqLj7dli5CG7d34Yt9joyTgOb2pkbrgmbMWAZJq0L0iOjHzpzw==
+  dependencies:
+    "@storybook/api" "5.1.11"
+    "@storybook/channels" "5.1.11"
+    "@storybook/client-logger" "5.1.11"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addons@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.1.9.tgz#ecf218d08508b97ca5e6e0f1ed361081385bd3ff"
@@ -2635,6 +2647,29 @@
     "@storybook/client-logger" "5.1.9"
     core-js "^3.0.1"
     global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/api@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/api/-/api-5.1.11.tgz#71ef00285cd8602aad24cdb26c60c5d3c76631e5"
+  integrity sha512-zzPZM6W67D4YKCbUN4RhC/w+/CtnH/hFbSh/QUBdwXFB1aLh2qA1UTyB8i6m6OA6JgVHBqEkl10KhmeILLv/eA==
+  dependencies:
+    "@storybook/channels" "5.1.11"
+    "@storybook/client-logger" "5.1.11"
+    "@storybook/core-events" "5.1.11"
+    "@storybook/router" "5.1.11"
+    "@storybook/theming" "5.1.11"
+    core-js "^3.0.1"
+    fast-deep-equal "^2.0.1"
+    global "^4.3.2"
+    lodash "^4.17.11"
+    memoizerific "^1.11.3"
+    prop-types "^15.6.2"
+    react "^16.8.3"
+    semver "^6.0.0"
+    shallow-equal "^1.1.0"
+    store2 "^2.7.1"
+    telejson "^2.2.1"
     util-deprecate "^1.0.2"
 
 "@storybook/api@5.1.9":
@@ -2671,12 +2706,37 @@
     global "^4.3.2"
     telejson "^2.2.1"
 
+"@storybook/channels@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.1.11.tgz#77ddf9d777891f975ac10095772c840fed4c4620"
+  integrity sha512-MlrjVGNvYOnDvv2JDRhr4wikbnZ8HCFCpVsFqKPFxj7I3OYBR417RvFkydX3Rtx4kwB9rmZEgLhfAfsSytkALg==
+  dependencies:
+    core-js "^3.0.1"
+
 "@storybook/channels@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.1.9.tgz#003cfca0b9f1ba6cf47ce68304aedd71bdb55e74"
   integrity sha512-R6i7859FsXgY9XFFErVe7gS37wGYpQEEWsO1LzUW7YptGuFTUa8yLgKkNkgfy7Zs61Xm+GiBq8PvS/CWxjotPw==
   dependencies:
     core-js "^3.0.1"
+
+"@storybook/client-api@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.1.11.tgz#30d82c09c6c40aa70d932e77b1d1e65526bddc0c"
+  integrity sha512-znzSxZ1ZCqtEKrFoW7xT8iBbdiAXaQ8RNxQFKHuYPqWX+RLol6S3duEOxu491X2SzUg0StUmrX5qL9Rnth8dRQ==
+  dependencies:
+    "@storybook/addons" "5.1.11"
+    "@storybook/client-logger" "5.1.11"
+    "@storybook/core-events" "5.1.11"
+    "@storybook/router" "5.1.11"
+    common-tags "^1.8.0"
+    core-js "^3.0.1"
+    eventemitter3 "^3.1.0"
+    global "^4.3.2"
+    is-plain-object "^3.0.0"
+    lodash "^4.17.11"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
 
 "@storybook/client-api@5.1.9":
   version "5.1.9"
@@ -2696,12 +2756,43 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
 
+"@storybook/client-logger@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.1.11.tgz#9509af3021b7a9977f9dba1f2ff038fd3c994437"
+  integrity sha512-je4To+9zD3SEJsKe9R4u15N4bdXFBR7pdBToaRIur+XSvvShLFehZGseQi+4uPAj8vyG34quGTCeUC/BKY0LwQ==
+  dependencies:
+    core-js "^3.0.1"
+
 "@storybook/client-logger@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.1.9.tgz#87e2f7578416269adeccd407584010bc353f14d3"
   integrity sha512-1+Otcn0EFgWNviDPNCR5LtUViADlboz9fmpZc7UY7bgaY5FVNIUO01E4T43tO7fduiRZoEvdltwTuQRm260Vjw==
   dependencies:
     core-js "^3.0.1"
+
+"@storybook/components@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.1.11.tgz#da253af0a8cb1b063c5c2e8016c4540c983f717d"
+  integrity sha512-EQgD7HL2CWnnY968KrwUSU2dtKFGTGRJVc4vwphYEeZwAI0lX6qbTMuwEP22hDZ2OSRBxcvcXT8cvduDlZlFng==
+  dependencies:
+    "@storybook/client-logger" "5.1.11"
+    "@storybook/theming" "5.1.11"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    markdown-to-jsx "^6.9.1"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    popper.js "^1.14.7"
+    prop-types "^15.7.2"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-focus-lock "^1.18.3"
+    react-helmet-async "^1.0.2"
+    react-popper-tooltip "^2.8.3"
+    react-syntax-highlighter "^8.0.1"
+    react-textarea-autosize "^7.1.0"
+    recompose "^0.30.0"
+    simplebar-react "^1.0.0-alpha.6"
 
 "@storybook/components@5.1.9":
   version "5.1.9"
@@ -2726,6 +2817,13 @@
     react-textarea-autosize "^7.1.0"
     recompose "^0.30.0"
     simplebar-react "^1.0.0-alpha.6"
+
+"@storybook/core-events@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.1.11.tgz#9d00503a936d30398f7a64336eb956303d053765"
+  integrity sha512-m+yIFRdB47+IPBFBGS2OUXrSLkoz5iAXvb3c0lGAePf5wSR+o/Ni/9VD5l6xBf+InxHLSc9gcDEJehrT0fJAaQ==
+  dependencies:
+    core-js "^3.0.1"
 
 "@storybook/core-events@5.1.9":
   version "5.1.9"
@@ -2843,6 +2941,17 @@
     semver "^6.0.0"
     webpack "^4.33.0"
 
+"@storybook/router@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.1.11.tgz#75089e9e623482e52ed894c3f0cb0fc6a5372da9"
+  integrity sha512-Xt7R1IOWLlIxis6VKV9G8F+e/G4G8ng1zXCqoDq+/RlWzlQJ5ccO4bUm2/XGS1rEgY4agMzmzjum18HoATpLGA==
+  dependencies:
+    "@reach/router" "^1.2.1"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
+
 "@storybook/router@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.1.9.tgz#8cd97bea4f2acf8ec5f6694d06fb0633dde33417"
@@ -2853,6 +2962,24 @@
     global "^4.3.2"
     memoizerific "^1.11.3"
     qs "^6.6.0"
+
+"@storybook/theming@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.1.11.tgz#0d1af46535f2e601293c999a314905069a93ec3b"
+  integrity sha512-PtRPfiAWx5pQbTm45yyPB+CuW/vyDmcmNOt+xnDzK52omeWaSD7XK2RfadN3u4QXCgha7zs35Ppx1htJio2NRA==
+  dependencies:
+    "@emotion/core" "^10.0.9"
+    "@emotion/styled" "^10.0.7"
+    "@storybook/client-logger" "5.1.11"
+    common-tags "^1.8.0"
+    core-js "^3.0.1"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.9"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    prop-types "^15.7.2"
+    resolve-from "^5.0.0"
 
 "@storybook/theming@5.1.9":
   version "5.1.9"
@@ -6179,10 +6306,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/i18n" "^2.0.0-beta.39"
-    "@freesewing/pattern-info" "^2.0.0-beta.39"
+    "@freesewing/i18n" "^2.0.0-beta.40"
+    "@freesewing/pattern-info" "^2.0.0-beta.40"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
