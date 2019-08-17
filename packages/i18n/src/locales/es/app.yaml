@@ -247,3 +247,9 @@ noUserBrowsingTitle: "You can't just browse all users"
 noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
 useRecipeModel: "Use the recipe's model"
 createReplica: Create a replica
+showDetails: Show details
+clickBelowToLogOut: Click below to log out
+compare: Compare
+saveRecipe: Save recipe
+exportPattern: Export pattern
+recreate: Recreate
