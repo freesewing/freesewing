@@ -252,3 +252,5 @@ compare: Compare
 saveRecipe: Save recipe
 exportPattern: Export pattern
 recreate: Recreate
+seeYouLaterUser: See you later {user}
+
