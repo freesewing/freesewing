@@ -22,6 +22,8 @@
     "prettier": "npx prettier --write 'packages/**/src/*.js'",
     "precommit": "npm run pretty && lint-staged",
     "reconfigure": "npx babel-node scripts/reconfigure.js",
+    "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run build",
+    "release": "lerna exec -- npm publish",
     "bump": "git add . && git commit -m ':wrench: Reconfigure packages'"
   },
   "repository": {

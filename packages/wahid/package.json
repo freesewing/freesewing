@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/wahid",
-  "version": "2.0.0-beta.40",
+  "version": "2.0.0-beta.41",
   "description": "A FreeSewing pattern for a classic fitted waistcoat",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,11 +33,11 @@
     "netlify": "echo \"Not configured yet\""
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.40",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.40",
-    "@freesewing/brian": "^2.0.0-beta.40",
-    "@freesewing/plugin-buttons": "^2.0.0-beta.40",
-    "@freesewing/plugin-round": "^2.0.0-beta.40"
+    "@freesewing/core": "^2.0.0-beta.41",
+    "@freesewing/plugin-bundle": "^2.0.0-beta.41",
+    "@freesewing/brian": "^2.0.0-beta.41",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.41",
+    "@freesewing/plugin-round": "^2.0.0-beta.41"
   },
   "dependencies": {},
   "devDependencies": {
@@ -48,14 +48,14 @@
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
-    "@freesewing/components": "^2.0.0-beta.40",
-    "@freesewing/css-theme": "^2.0.0-beta.40",
-    "@freesewing/i18n": "^2.0.0-beta.40",
-    "@freesewing/mui-theme": "^2.0.0-beta.40",
-    "@freesewing/plugin-bust": "^2.0.0-beta.40",
-    "@freesewing/plugin-buttons": "^2.0.0-beta.40",
-    "@freesewing/plugin-flip": "^2.0.0-beta.40",
-    "@freesewing/utils": "^2.0.0-beta.40",
+    "@freesewing/components": "^2.0.0-beta.41",
+    "@freesewing/css-theme": "^2.0.0-beta.41",
+    "@freesewing/i18n": "^2.0.0-beta.41",
+    "@freesewing/mui-theme": "^2.0.0-beta.41",
+    "@freesewing/plugin-bust": "^2.0.0-beta.41",
+    "@freesewing/plugin-buttons": "^2.0.0-beta.41",
+    "@freesewing/plugin-flip": "^2.0.0-beta.41",
+    "@freesewing/utils": "^2.0.0-beta.41",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
