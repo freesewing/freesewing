@@ -1278,170 +1278,170 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/components@file:packages/components":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/core@file:packages/core":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
     bezier-js "^2.2.13"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/models@file:packages/models":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/patterns@file:packages/patterns":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/aaron" "^2.0.0-beta.39"
-    "@freesewing/benjamin" "^2.0.0-beta.39"
-    "@freesewing/bent" "^2.0.0-beta.39"
-    "@freesewing/brian" "^2.0.0-beta.39"
-    "@freesewing/bruce" "^2.0.0-beta.39"
-    "@freesewing/carlita" "^2.0.0-beta.39"
-    "@freesewing/carlton" "^2.0.0-beta.39"
-    "@freesewing/cathrin" "^2.0.0-beta.39"
-    "@freesewing/florent" "^2.0.0-beta.39"
-    "@freesewing/huey" "^2.0.0-beta.39"
-    "@freesewing/hugo" "^2.0.0-beta.39"
-    "@freesewing/jaeger" "^2.0.0-beta.39"
-    "@freesewing/shin" "^2.0.0-beta.39"
-    "@freesewing/simon" "^2.0.0-beta.39"
-    "@freesewing/sven" "^2.0.0-beta.39"
-    "@freesewing/tamiko" "^2.0.0-beta.39"
-    "@freesewing/trayvon" "^2.0.0-beta.39"
-    "@freesewing/wahid" "^2.0.0-beta.39"
+    "@freesewing/aaron" "^2.0.0-beta.40"
+    "@freesewing/benjamin" "^2.0.0-beta.40"
+    "@freesewing/bent" "^2.0.0-beta.40"
+    "@freesewing/brian" "^2.0.0-beta.40"
+    "@freesewing/bruce" "^2.0.0-beta.40"
+    "@freesewing/carlita" "^2.0.0-beta.40"
+    "@freesewing/carlton" "^2.0.0-beta.40"
+    "@freesewing/cathrin" "^2.0.0-beta.40"
+    "@freesewing/florent" "^2.0.0-beta.40"
+    "@freesewing/huey" "^2.0.0-beta.40"
+    "@freesewing/hugo" "^2.0.0-beta.40"
+    "@freesewing/jaeger" "^2.0.0-beta.40"
+    "@freesewing/shin" "^2.0.0-beta.40"
+    "@freesewing/simon" "^2.0.0-beta.40"
+    "@freesewing/sven" "^2.0.0-beta.40"
+    "@freesewing/tamiko" "^2.0.0-beta.40"
+    "@freesewing/trayvon" "^2.0.0-beta.40"
+    "@freesewing/wahid" "^2.0.0-beta.40"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.0.0-beta.39"
-    "@freesewing/plugin-dimension" "^2.0.0-beta.39"
-    "@freesewing/plugin-grainline" "^2.0.0-beta.39"
-    "@freesewing/plugin-logo" "^2.0.0-beta.39"
-    "@freesewing/plugin-round" "^2.0.0-beta.39"
-    "@freesewing/plugin-scalebox" "^2.0.0-beta.39"
-    "@freesewing/plugin-sprinkle" "^2.0.0-beta.39"
-    "@freesewing/plugin-title" "^2.0.0-beta.39"
+    "@freesewing/plugin-cutonfold" "^2.0.0-beta.40"
+    "@freesewing/plugin-dimension" "^2.0.0-beta.40"
+    "@freesewing/plugin-grainline" "^2.0.0-beta.40"
+    "@freesewing/plugin-logo" "^2.0.0-beta.40"
+    "@freesewing/plugin-round" "^2.0.0-beta.40"
+    "@freesewing/plugin-scalebox" "^2.0.0-beta.40"
+    "@freesewing/plugin-sprinkle" "^2.0.0-beta.40"
+    "@freesewing/plugin-title" "^2.0.0-beta.40"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -3221,6 +3221,13 @@
     babel-runtime "^6.5.0"
     prop-types "^15.6.0"
 
+"@verdaccio/commons-api@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@verdaccio/commons-api/-/commons-api-0.1.2.tgz#084c2c06b22e998ff3bab265de17397998953da3"
+  integrity sha512-BweLdqHGVpDPZf1BkFVOTb+OW+WQp8TiEFJ4EvVJkpngg9rgvK9MAdJF/NZorGuUIoVIPJmtNwf/fId/ya9Udw==
+  dependencies:
+    http-errors "1.7.3"
+
 "@verdaccio/file-locking@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@verdaccio/file-locking/-/file-locking-1.0.0.tgz#2f148612d9ce5c3c0dfd826151561b2aa887777d"
@@ -3261,10 +3268,10 @@
   resolved "https://registry.yarnpkg.com/@verdaccio/streams/-/streams-2.0.0.tgz#27f51d0cb19d5e49248860942092646e9a357967"
   integrity sha512-QW1LsYir3wNnqhSznbJlt0iqkcgve0LpXI8RkoTTBPrq3M6ei3Ys4iw+JQKFve3gmYw9O+w8lBiOLc1qvvsoVQ==
 
-"@verdaccio/ui-theme@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@verdaccio/ui-theme/-/ui-theme-0.1.11.tgz#48e1bb9139c61016e143e57102bee8c8fbf0cb92"
-  integrity sha512-VxuqUOycaFRwZ7RV6etvGECELvgZ1iO8KFZJlLVUWvrv218mAULZVacKyJ6i8FbLvaqxnx7lEUIEBzhz7KX/Iw==
+"@verdaccio/ui-theme@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@verdaccio/ui-theme/-/ui-theme-0.2.2.tgz#53a74e9a4c75a93fbe678c6f5cd2a31dcff77f1d"
+  integrity sha512-Y5AwR0or0gMPuRW5dn8taWNUOr23c4rHgTrh/Q8vjrvZdBs4gMQ/SGghQ/idMjv+Ksk/ch/wQzxt9ut6F1MxJg==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -6179,10 +6186,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.0.0-beta.39"
+  version "2.0.0-beta.40"
   dependencies:
-    "@freesewing/i18n" "^2.0.0-beta.39"
-    "@freesewing/pattern-info" "^2.0.0-beta.39"
+    "@freesewing/i18n" "^2.0.0-beta.40"
+    "@freesewing/pattern-info" "^2.0.0-beta.40"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -6664,10 +6671,10 @@ dateformat@^3.0.0:
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
-dayjs@1.8.14:
-  version "1.8.14"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.14.tgz#43e4f62830c2c3342c3fcd25934dc9162dbe6f38"
-  integrity sha512-AVhDmRTe541iWirnoeFSSDDGvCT6HWaNQ4z2WmmzXMGZj6ph6ydao2teKq/eUtR43GPJXlYFD+C/SotG1P9wUQ==
+dayjs@1.8.15:
+  version "1.8.15"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.15.tgz#7121bc04e6a7f2621ed6db566be4a8aaf8c3913e"
+  integrity sha512-HYHCI1nohG52B45vCQg8Re3hNDZbMroWPkhz50yaX7Lu0ATyjGsTdoYZBpjED9ar6chqTx2dmSmM8A51mojnAg==
 
 debounce@^1.1.0:
   version "1.2.0"
@@ -8034,7 +8041,7 @@ express@4.16.4:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-express@^4.16.2, express@^4.17.0:
+express@4.17.1, express@^4.16.2, express@^4.17.0:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
@@ -12065,6 +12072,11 @@ lodash@4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+
+lodash@4.17.14:
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.10:
   version "4.17.15"
@@ -19080,10 +19092,10 @@ vendors@^1.0.0:
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"
   integrity sha512-fOi47nsJP5Wqefa43kyWSg80qF+Q3XA6MUkgi7Hp1HQaKDQW4cQrK2D0P7mmbFtsV1N89am55Yru/nyEwRubcw==
 
-verdaccio-audit@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/verdaccio-audit/-/verdaccio-audit-1.2.0.tgz#932485729a39f518bd4fd8d5688160cc5edafcbb"
-  integrity sha512-383K+EFqsc0kirh2mXrd7xCBzEIQBHlGZsJCT99W8UxKtdG1vyaHiPOe8wb7/aLENSOu7G7UFSMrad/F3oCrtw==
+verdaccio-audit@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/verdaccio-audit/-/verdaccio-audit-1.2.1.tgz#24aca87c0cd2f3b576e123d2da8b53d620f836c6"
+  integrity sha512-kSQ4s3B0VgO43r7zOjteINzomeTEjaQwRwcNX0XDcm671pM+ZzPFEbv6VZ+vN75KdwCYmli5r8AUI9TMcj1JEg==
   dependencies:
     express "4.16.4"
     request "2.88.0"
@@ -19100,14 +19112,15 @@ verdaccio-htpasswd@2.0.0:
     unix-crypt-td-js "1.0.0"
 
 verdaccio@>=3.12.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/verdaccio/-/verdaccio-4.1.0.tgz#b80084baacf9cb59aa4469ae0a412fe797b146b7"
-  integrity sha512-l4MH9rhtMXq/WZsG3azcINJbd3jku4fvRJR/a6dGFR8qllO/aE1jE1wnL+CWUpa+YtiGOaeb3X5D4Y4mzx/9JQ==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/verdaccio/-/verdaccio-4.2.1.tgz#3f9819f537de0301adfa0e291a1c2736343acbab"
+  integrity sha512-Xk65HJHVHl3RuScEk5P10vVgwPWEhlulXl9IehRHZM+7CPoEcw//WPA+JN4x+rzsVP/Ozt/gkiOONyJaUKP6Wg==
   dependencies:
+    "@verdaccio/commons-api" "0.1.2"
     "@verdaccio/local-storage" "2.2.1"
     "@verdaccio/readme" "1.0.4"
     "@verdaccio/streams" "2.0.0"
-    "@verdaccio/ui-theme" "0.1.11"
+    "@verdaccio/ui-theme" "0.2.2"
     JSONStream "1.3.5"
     async "3.1.0"
     body-parser "1.19.0"
@@ -19116,15 +19129,15 @@ verdaccio@>=3.12.0:
     compression "1.7.4"
     cookies "0.7.3"
     cors "2.8.5"
-    dayjs "1.8.14"
+    dayjs "1.8.15"
     envinfo "7.3.1"
-    express "4.16.4"
+    express "4.17.1"
     handlebars "4.1.2"
     http-errors "1.7.3"
     js-yaml "3.13.1"
     jsonwebtoken "8.5.1"
     kleur "3.0.3"
-    lodash "4.17.11"
+    lodash "4.17.14"
     lunr-mutable-indexes "2.3.2"
     marked "0.7.0"
     mime "2.4.4"
@@ -19134,7 +19147,7 @@ verdaccio@>=3.12.0:
     pkginfo "0.4.1"
     request "2.87.0"
     semver "6.2.0"
-    verdaccio-audit "1.2.0"
+    verdaccio-audit "1.2.1"
     verdaccio-htpasswd "2.0.0"
 
 verror@1.10.0:
