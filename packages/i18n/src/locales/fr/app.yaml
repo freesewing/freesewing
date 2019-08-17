@@ -253,3 +253,5 @@ compare: Comparer
 saveRecipe: Sauvegarder la recette
 exportPattern: Exporter le patron
 recreate: Recréer
+seeYouLaterUser: See you later {user}
+
