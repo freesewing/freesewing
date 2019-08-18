@@ -254,6 +254,6 @@ saveRecipe: Recept opslaan
 exportPattern: Patroon exporteren
 recreate: Opnieuw aanmaken
 seeYouLaterUser: Tot later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
-exportRecipe: Export recipe
+exportForPrinting: Exporteren om te printen
+exportForEditing: Exporteren om te bewerken
+exportRecipe: Exporteer recept
