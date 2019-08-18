@@ -1,4 +1,5 @@
 ---
+filter: Filter
 department: Afdeling
 type: Type
 tags: Labels
@@ -6,3 +7,9 @@ code: Code
 design: Ontwerp
 difficulty: Moeilijkheid
 resetFilter: Filters herstellen
+menswear: Herenkleding
+womenswear: Dameskleding
+accessories: Accessoires
+block: Basisvorm
+pattern: Patroon
+
