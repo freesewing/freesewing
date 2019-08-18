@@ -68,4 +68,7 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
-export default strings
+export default {
+  strings,
+  plugin
+}

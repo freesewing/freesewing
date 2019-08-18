@@ -253,4 +253,6 @@ saveRecipe: Save recipe
 exportPattern: Export pattern
 recreate: Recreate
 seeYouLaterUser: See you later {user}
-
+exportForPrinting: Export for printing
+exportForEditing: Export for editing
+exportRecipe: Export recipe
