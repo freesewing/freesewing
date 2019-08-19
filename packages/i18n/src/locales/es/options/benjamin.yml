@@ -1,0 +1,27 @@
+---
+collarEase:
+  title: Collar ease
+  description: Controls the amount of ease at your collar (around your neck)
+adjustmentRibbon:
+  title: Adjustment ribbon
+  description: Whether or not to include an adjustment ribbon
+tipWidth:
+  title: Tip width
+  description: Width of the tips
+knotWidth:
+  title: Knot width
+  description: Width of the knot
+bowWidth:
+  title: Bow width
+  description: Length of the bow (when knotted)
+bowStyle:
+  title: Bow style
+  description: Style of the bow
+endStyle:
+  title: End style
+  description: Style of the bow ends
+
+
+
+
+
