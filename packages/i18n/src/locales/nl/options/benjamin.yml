@@ -1,25 +1,25 @@
 ---
 collarEase:
-  title: Collar ease
-  description: Controls the amount of ease at your collar (around your neck)
+  title: Overwijdte kraag
+  description: Controleert de hoeveelheid overwijdte aan je kraag (rond je nek)
 adjustmentRibbon:
-  title: Adjustment ribbon
-  description: Whether or not to include an adjustment ribbon
+  title: Aanpaslintje
+  description: Of je wel of geen aanpaslintje wil
 tipWidth:
-  title: Tip width
-  description: Width of the tips
+  title: Breedte punten
+  description: Breedte van de punten
 knotWidth:
-  title: Knot width
-  description: Width of the knot
+  title: Breedte knoop
+  description: Breedte van de knoop
 bowWidth:
-  title: Bow width
-  description: Length of the bow (when knotted)
+  title: Breedte strik
+  description: De lengte van gestrikt (gestrikt)
 bowStyle:
-  title: Bow style
-  description: Style of the bow
+  title: Stijl strik
+  description: Stijl van de strik
 endStyle:
-  title: End style
-  description: Style of the bow ends
+  title: Stijl punt
+  description: Stijl van de puntjes van de strik
 
 
 
