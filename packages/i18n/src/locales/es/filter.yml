@@ -1,4 +1,5 @@
 ---
+filter: Filter
 department: Department
 type: Type
 tags: Tags
@@ -6,3 +7,9 @@ code: Código
 design: Diseño
 difficulty: Dificultad
 resetFilter: Reajustar el filtro
+menswear: Menswear
+womenswear: Womenswear
+accessories: Accessories
+block: Block
+pattern: Pattern
+
