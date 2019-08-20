@@ -6398,7 +6398,7 @@ create-error-class@^3.0.0:
     execa "^1.0.0"
     git-config-path "^2.0.0"
     github-username "^4.1.0"
-    globby "^9.0.0"
+    globby "^10.0.1"
     handlebars "^4.1.0"
     inquirer "^6.2.2"
     make-dir "^2.0.0"
@@ -9357,7 +9357,7 @@ globby@8.0.2:
     pify "^3.0.0"
     slash "^1.0.0"
 
-globby@^10.0.0:
+globby@^10.0.0, globby@^10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/globby/-/globby-10.0.1.tgz#4782c34cb75dd683351335c5829cc3420e606b22"
   integrity sha512-sSs4inE1FB2YQiymcmTv6NWENryABjUNPeWhOvmn4SjtKybglsyPZxFB3U1/+L1bYi0rNZDqCLlHyLYDl1Pq5A==
@@ -9394,7 +9394,7 @@ globby@^7.1.1:
     pify "^3.0.0"
     slash "^1.0.0"
 
-globby@^9.0.0, globby@^9.2.0:
+globby@^9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-9.2.0.tgz#fd029a706c703d29bdd170f4b6db3a3f7a7cb63d"
   integrity sha512-ollPHROa5mcxDEkwg6bPt3QbEf4pDQSNtd6JPL1YvOvAo/7/0VAm9TccUeoTmarjPw4pfUthSCqcyfNB1I3ZSg==
