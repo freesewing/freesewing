@@ -1,0 +1,40 @@
+svg.fs.linedrawing {
+  path.primary {
+    stroke-width: 2;
+  }
+  path.secondary {
+    stroke-width: 1;
+  }
+  path.inside {
+    stroke-width: 2;
+  }
+}
+
+.theme-wrapper.light svg.fs.linedrawing {
+  path.primary {
+    stroke: $oc-gray-8;
+    fill: $oc-gray-3;
+  }
+  path.secondary {
+    stroke: $oc-gray-8;
+    fill: none;
+  }
+  path.inside, rect.inside {
+    stroke: $oc-gray-8;
+    fill: $oc-gray-5;
+  }
+}
+.theme-wrapper.dark svg.fs.linedrawing {
+  path.primary {
+    stroke: $oc-gray-5;
+    fill: $oc-gray-9;
+  }
+  path.secondary {
+    stroke: $oc-gray-5;
+    fill: none;
+  }
+  path.inside, rect.inside {
+    stroke: $oc-gray-5;
+    fill: $oc-gray-7;
+  }
+}
