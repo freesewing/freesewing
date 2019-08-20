@@ -28,6 +28,7 @@ const PatternOptions = props => {
             units={props.units}
             config={props.config}
             gist={props.gist}
+            recipe={props.recipe}
             options={props.config.optionGroups[group]}
             updateValue={props.updateValue}
             raiseEvent={props.raiseEvent}

@@ -1,13 +1,13 @@
 export default part => {
-  let { Point, points, macro } = part.shorthand();
+  let { Point, points, macro } = part.shorthand()
 
-  points.grainlineFrom = new Point(10, 10);
-  points.grainlineTo = new Point(100, 10);
+  points.grainlineFrom = new Point(10, 10)
+  points.grainlineTo = new Point(100, 10)
 
-  macro("grainline", {
+  macro('grainline', {
     from: points.grainlineFrom,
     to: points.grainlineTo
-  });
+  })
 
-  return part;
-};
+  return part
+}

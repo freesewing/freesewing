@@ -1,49 +1,76 @@
 export default function(part) {
-  let { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } = part.shorthand();
+  let {
+    paperless,
+    sa,
+    utils,
+    complete,
+    points,
+    measurements,
+    options,
+    macro,
+    paths,
+    Path
+  } = part.shorthand()
 
   // Vent
-  let slope = 15;
-  let width = measurements.wristCircumference * (1 + options.cuffEase) * options.sleeveVentWidth;
-  points.ventFoldRight = points.tsWristLeft.shiftOutwards(points.tsWristRight, width);
-  points.ventHelper = points.tsWristRight.shiftFractionTowards(points.elbowRight, options.sleeveVentLength);
+  let slope = 15
+  let width = measurements.wristCircumference * (1 + options.cuffEase) * options.sleeveVentWidth
+  points.ventFoldRight = points.tsWristLeft.shiftOutwards(points.tsWristRight, width)
+  points.ventHelper = points.tsWristRight.shiftFractionTowards(
+    points.elbowRight,
+    options.sleeveVentLength
+  )
   points.ventSlopeEnd = points.ventHelper
     .shiftTowards(points.tsWristRight, width)
-    .rotate(90, points.ventHelper);
+    .rotate(90, points.ventHelper)
   points.ventSlopeStart = utils.beamsIntersect(
-    points.tsWristRight, points.elbowRight,
-    points.ventSlopeEnd, points.ventHelper.rotate(-1 * slope, points.ventSlopeEnd)
-  );
+    points.tsWristRight,
+    points.elbowRight,
+    points.ventSlopeEnd,
+    points.ventHelper.rotate(-1 * slope, points.ventSlopeEnd)
+  )
 
   // Hem
-  let hemSa = sa ? 3*sa : 30;
+  let hemSa = sa ? 3 * sa : 30
   points.hemHelperLeft = points.tsWristLeft
     .shiftTowards(points.tsWristRight, hemSa)
-    .rotate(90, points.tsWristLeft);
+    .rotate(90, points.tsWristLeft)
   points.hemHelperRight = points.tsWristRight
     .shiftTowards(points.tsWristLeft, hemSa)
-    .rotate(-90, points.tsWristRight);
+    .rotate(-90, points.tsWristRight)
   points.hemLeftIntersection = utils.beamsIntersect(
-    points.hemHelperLeft, points.hemHelperRight,
-    points.tsWristLeft, points.tsElbowLeft
-  );
+    points.hemHelperLeft,
+    points.hemHelperRight,
+    points.tsWristLeft,
+    points.tsElbowLeft
+  )
   points.hemRightIntersection = utils.beamsIntersect(
-    points.hemHelperLeft, points.hemHelperRight,
-    points.tsWristRight, points.elbowRight
-  );
+    points.hemHelperLeft,
+    points.hemHelperRight,
+    points.tsWristRight,
+    points.elbowRight
+  )
   points.hemVentIntersection = utils.beamsIntersect(
-    points.hemHelperLeft, points.hemHelperRight,
-    points.ventFoldRight, points.ventSlopeEnd
-  );
-  points.hemLeft = points.hemLeftIntersection
-    .rotate(points.tsWristLeft.angle(points.hemLeftIntersection) * -2, points.tsWristLeft);
-  points.hemRight = points.hemRightIntersection
-    .rotate(points.tsWristRight.angle(points.hemRightIntersection) * -2, points.tsWristRight);
-  points.ventRight = points.hemVentIntersection
-    .rotate(points.ventFoldRight.angle(points.hemVentIntersection) * -2, points.ventFoldRight);
-
+    points.hemHelperLeft,
+    points.hemHelperRight,
+    points.ventFoldRight,
+    points.ventSlopeEnd
+  )
+  points.hemLeft = points.hemLeftIntersection.rotate(
+    points.tsWristLeft.angle(points.hemLeftIntersection) * -2,
+    points.tsWristLeft
+  )
+  points.hemRight = points.hemRightIntersection.rotate(
+    points.tsWristRight.angle(points.hemRightIntersection) * -2,
+    points.tsWristRight
+  )
+  points.ventRight = points.hemVentIntersection.rotate(
+    points.ventFoldRight.angle(points.hemVentIntersection) * -2,
+    points.ventFoldRight
+  )
 
   // Clean up - Remove this and uncomment paths below to understand what's going on
-  for (let i of Object.keys(paths)) delete paths[i];
+  for (let i of Object.keys(paths)) delete paths[i]
 
   // Paths
   paths.seam = new Path()
@@ -62,130 +89,126 @@ export default function(part) {
     .line(points.ventRight)
     .line(points.ventFoldRight)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   paths.ventHint = new Path()
     .move(points.ventSlopeStart)
     .line(points.tsWristRight)
-    .attr("class", "stroke-sm help");
+    .attr('class', 'stroke-sm help')
 
   paths.hem = new Path()
     .move(points.tsWristLeft)
     .line(points.ventFoldRight)
-    .attr("class", "fabric lashed");
+    .attr('class', 'fabric lashed')
 
   if (complete) {
     // Notches
-    macro("sprinkle", {
-      snippet: "notch",
-      on: [
-        "top",
-        "tsElbowLeft",
-        "elbowRight",
-      ]
-    });
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['top', 'tsElbowLeft', 'elbowRight']
+    })
     // Title
-    points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5);
-    macro("title", {
+    points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
+    macro('title', {
       at: points.title,
       nr: 4,
-      title: "topSleeve"
-    });
+      title: 'topSleeve'
+    })
 
     // Grainline
-    macro("grainline", {
+    macro('grainline', {
       from: points.boxBottom,
       to: points.top
-    });
+    })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {
-      macro("ld", {
+      macro('ld', {
         from: points.tsWristLeft,
         to: points.tsWristRight,
         d: 15
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsWristLeft,
         to: points.ventFoldRight,
         d: 30
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.hemLeft,
         to: points.ventRight,
         d: -15 - sa
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.hemLeft,
         to: points.tsWristLeft,
         d: 15 + sa
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsWristRight,
         to: points.ventSlopeStart,
         d: 15
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.ventFoldRight,
         to: points.ventSlopeEnd,
         d: 15
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsWristRight,
         to: points.ventFoldRight,
         d: -15
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.ventRight,
         to: points.top,
         x: points.ventSlopeEnd.x + sa + 15
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsWristLeft,
         to: points.tsElbowLeft,
         x: points.tsLeftEdge.x - sa - 15
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsWristLeft,
         to: points.tsLeftEdge,
         x: points.tsLeftEdge.x - sa - 30
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsLeftEdge,
         to: points.top,
         x: points.tsLeftEdge.x - sa - 30
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsWristLeft,
         to: points.top,
         x: points.tsLeftEdge.x - sa - 45
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsLeftEdge,
-        to: points.tsRightEdge,
-      });
-      macro("ld", {
+        to: points.tsRightEdge
+      })
+      macro('ld', {
         from: points.tsElbowLeft,
-        to: points.elbowRight,
-      });
-      macro("hd", {
+        to: points.elbowRight
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.top,
         y: points.top.y - sa - 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.backPitchPoint,
         y: points.top.y - sa - 30
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.tsRightEdge,
         y: points.top.y - sa - 45
-      });
+      })
     }
   }
 
-  return part;
+  return part
 }

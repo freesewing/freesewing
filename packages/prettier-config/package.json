@@ -1,0 +1,34 @@
+{
+  "name": "@freesewing/prettier-config",
+  "version": "2.0.0-beta.42",
+  "description": "FreeSewing's shared configuration for prettier",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "main": "index.json",
+  "scripts": {
+    "build": "echo \"prettier-config: No build required\" && exit 0"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "index.json",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
+  }
+}

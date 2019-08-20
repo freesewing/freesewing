@@ -12,6 +12,7 @@
     "@freesewing/mui-theme": "beta",
     "@freesewing/pattern-info": "beta",
     "@freesewing/plugin-bundle": "beta",
+    "@freesewing/plugin-theme": "beta",
     "@freesewing/plugin-i18n": "beta",
     "@freesewing/plugin-svgattr": "beta",
     "@freesewing/utils": "beta",

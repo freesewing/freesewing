@@ -1,47 +1,27 @@
 export default function(part) {
-  let {
-    measurements,
-    options,
-    store,
-    points,
-    paths,
-    Point,
-    Path,
-    utils,
-    debug
-  } = part.shorthand();
+  let { measurements, options, store, points, paths, Point, Path, utils, debug } = part.shorthand()
 
   // Where to divide our corset into panels
-  if (options.panels === 11) store.set("gaps", [0.15, 0.275, 0.4, 0.6, 0.75]);
-  else store.set("gaps", [0.2, 0.35, 0.5, 0.65, 0.8]);
+  if (options.panels === 11) store.set('gaps', [0.15, 0.275, 0.4, 0.6, 0.75])
+  else store.set('gaps', [0.2, 0.35, 0.5, 0.65, 0.8])
 
   // Absolute values for some options
-  store.set(
-    "waistReduction",
-    measurements.naturalWaist * options.waistReduction
-  );
+  store.set('waistReduction', measurements.naturalWaist * options.waistReduction)
   debug({
-    type: "info",
-    label: "✅ Waist reduction",
-    msg: utils.units(store.get("waistReduction"))
-  });
-  store.set("backOpening", measurements.underbust * options.backOpening);
+    type: 'info',
+    label: '✅ Waist reduction',
+    msg: utils.units(store.get('waistReduction'))
+  })
+  store.set('backOpening', measurements.underbust * options.backOpening)
   debug({
-    type: "info",
-    label: "✅ Back opening",
-    msg: utils.units(store.get("backOpening"))
-  });
-  let len =
-    measurements.naturalWaistToUnderbust + measurements.naturalWaistToHip;
-  for (let option of [
-    "backRise",
-    "backDrop",
-    "frontRise",
-    "frontDrop",
-    "hipRise"
-  ])
-    store.set(option, len * options[option]);
-  store.set("length", len);
+    type: 'info',
+    label: '✅ Back opening',
+    msg: utils.units(store.get('backOpening'))
+  })
+  let len = measurements.naturalWaistToUnderbust + measurements.naturalWaistToHip
+  for (let option of ['backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise'])
+    store.set(option, len * options[option])
+  store.set('length', len)
 
   /**
    * How much should we take in the corset at waist and bust
@@ -50,62 +30,47 @@ export default function(part) {
    * Can I be sure? Maybe not, but a larger underbust than hip
    * measurements seems very rare to say the least.
    */
+  store.set('width', 0.5 * (measurements.hipsCircumference - store.get('backOpening')))
   store.set(
-    "width",
-    0.5 * (measurements.hipsCircumference - store.get("backOpening"))
-  );
-  store.set(
-    "waistIntake",
-    0.5 *
-      (measurements.hipsCircumference -
-        measurements.naturalWaist +
-        store.get("waistReduction"))
-  );
-  store.set(
-    "bustIntake",
-    0.5 * (measurements.hipsCircumference - measurements.underbust)
-  );
+    'waistIntake',
+    0.5 * (measurements.hipsCircumference - measurements.naturalWaist + store.get('waistReduction'))
+  )
+  store.set('bustIntake', 0.5 * (measurements.hipsCircumference - measurements.underbust))
 
   // Basic box (CB = Center back, CF = Center front)
-  let wid = store.get("width");
-  points.underbustCF = new Point(0, 0);
-  points.hipsCF = new Point(0, len);
-  points.hipsCB = new Point(wid, len);
-  points.underbustCB = new Point(wid, 0);
-  points.topSide = points.underbustCF.shiftFractionTowards(
-    points.underbustCB,
-    0.5
-  );
-  points.bottomSide = points.hipsCF.shiftFractionTowards(points.hipsCB, 0.5);
-  points.waistCF = points.underbustCF.shift(
-    -90,
-    measurements.naturalWaistToUnderbust
-  );
-  points.waistCB = new Point(points.hipsCB.x, points.waistCF.y);
+  let wid = store.get('width')
+  points.underbustCF = new Point(0, 0)
+  points.hipsCF = new Point(0, len)
+  points.hipsCB = new Point(wid, len)
+  points.underbustCB = new Point(wid, 0)
+  points.topSide = points.underbustCF.shiftFractionTowards(points.underbustCB, 0.5)
+  points.bottomSide = points.hipsCF.shiftFractionTowards(points.hipsCB, 0.5)
+  points.waistCF = points.underbustCF.shift(-90, measurements.naturalWaistToUnderbust)
+  points.waistCB = new Point(points.hipsCB.x, points.waistCF.y)
 
   // frontRise
-  points.topCF = points.underbustCF.shift(90, store.get("frontRise"));
-  points.frontRiseStart = points.underbustCF.shift(0, wid * 0.15);
-  points.frontRiseStartCp2 = points.underbustCF.shift(0, wid * 0.11);
-  points.topCFCp1 = points.topCF.shift(0, wid * 0.11);
+  points.topCF = points.underbustCF.shift(90, store.get('frontRise'))
+  points.frontRiseStart = points.underbustCF.shift(0, wid * 0.15)
+  points.frontRiseStartCp2 = points.underbustCF.shift(0, wid * 0.11)
+  points.topCFCp1 = points.topCF.shift(0, wid * 0.11)
 
   // frontDrop
-  points.bottomCF = points.hipsCF.shift(-90, store.get("frontDrop"));
-  points.bottomCFCp2 = points.bottomCF.shift(0, wid * 0.11);
+  points.bottomCF = points.hipsCF.shift(-90, store.get('frontDrop'))
+  points.bottomCFCp2 = points.bottomCF.shift(0, wid * 0.11)
 
   // hipRise
-  points.hipRise = points.bottomSide.shift(90, store.get("hipRise"));
-  points.hipRiseCp1 = points.hipRise.shift(180, wid * 0.3);
-  points.hipRiseCp2 = points.hipRise.shift(0, wid * 0.2);
+  points.hipRise = points.bottomSide.shift(90, store.get('hipRise'))
+  points.hipRiseCp1 = points.hipRise.shift(180, wid * 0.3)
+  points.hipRiseCp2 = points.hipRise.shift(0, wid * 0.2)
 
   // backDrop
-  points.backDrop = points.hipsCB.shift(-90, store.get("backDrop"));
-  points.backDropCp1 = points.backDrop.shift(180, wid * 0.3);
+  points.backDrop = points.hipsCB.shift(-90, store.get('backDrop'))
+  points.backDropCp1 = points.backDrop.shift(180, wid * 0.3)
 
   // backRise
-  points.backRise = points.underbustCB.shift(90, store.get("backRise"));
-  points.backRiseCp1 = points.backRise.shift(180, wid * 0.4);
-  points.topSideCp1 = points.topSide.shift(0, wid * 0.2);
+  points.backRise = points.underbustCB.shift(90, store.get('backRise'))
+  points.backRiseCp1 = points.backRise.shift(180, wid * 0.4)
+  points.topSideCp1 = points.topSide.shift(0, wid * 0.2)
 
   // Paths
   paths.help1 = new Path()
@@ -113,14 +78,14 @@ export default function(part) {
     .line(points.hipsCF)
     .line(points.hipsCB)
     .line(points.underbustCB)
-    .close();
+    .close()
   paths.help2 = new Path()
     .move(points.topSide)
     .line(points.bottomSide)
     .line(points.waistCF)
-    .line(points.waistCB);
-  paths.help1.render = false;
-  paths.help2.render = false;
+    .line(points.waistCB)
+  paths.help1.render = false
+  paths.help2.render = false
 
   paths.outline = new Path()
     .move(points.bottomCF)
@@ -131,7 +96,7 @@ export default function(part) {
     .line(points.frontRiseStart)
     .curve(points.frontRiseStartCp2, points.topCFCp1, points.topCF)
     .line(points.bottomCF)
-    .close();
+    .close()
 
-  return part;
+  return part
 }

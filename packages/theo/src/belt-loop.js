@@ -1,24 +1,13 @@
 export default function(part) {
-  let {
-    options,
-    measurements,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless,
-    macro
-  } = part.shorthand();
+  let { options, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
-  let height = options.waistbandWidth + 30;
-  let width = (height - 30) / 2;
+  let height = options.waistbandWidth + 30
+  let width = (height - 30) / 2
 
-  points.topRight = new Point(width / 2, 0);
-  points.topLeft = points.topRight.flipX();
-  points.bottomRight = new Point(width / 2, height);
-  points.bottomLeft = points.bottomRight.flipX();
+  points.topRight = new Point(width / 2, 0)
+  points.topLeft = points.topRight.flipX()
+  points.bottomRight = new Point(width / 2, height)
+  points.bottomLeft = points.bottomRight.flipX()
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -27,34 +16,28 @@ export default function(part) {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {
-    points.title = new Point(0, height / 2);
-    macro("title", {
+    points.title = new Point(0, height / 2)
+    macro('title', {
       at: points.title,
-      title: "beltLoop",
+      title: 'beltLoop',
       nr: 14,
       scale: 0.4
-    });
-    points.grainlineTop = points.topLeft.shiftFractionTowards(
-      points.topRight,
-      0.5
-    );
-    points.grainlineBottom = new Point(
-      points.grainlineTop.x,
-      points.bottomLeft.y
-    );
-    macro("grainline", {
+    })
+    points.grainlineTop = points.topLeft.shiftFractionTowards(points.topRight, 0.5)
+    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
+    macro('grainline', {
       from: points.grainlineBottom,
       to: points.grainlineTop
-    });
+    })
   }
 
   // Paperless?
   if (paperless) {
   }
 
-  return part;
+  return part
 }

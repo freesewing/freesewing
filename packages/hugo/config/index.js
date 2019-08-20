@@ -3,6 +3,7 @@ import { version } from "../package.json";
 export default {
   name: "hugo",
   version,
+  design: "Joost De Cock",
   code: "Joost De Cock",
   department: "menswear",
   type: "pattern",

@@ -21,6 +21,7 @@ const Workbench = props => {
   const [pattern, setPattern] = useState(false);
   const [theme, setTheme] = useState("light");
   const [measurements, setMeasurements] = useState(null);
+  const [svgExport, setSvgExport] = useState(false);
   useEffect(() => {
     let m = getMeasurements();
     setMeasurements(m);
@@ -28,19 +29,13 @@ const Workbench = props => {
     setDisplay(getDisplay());
     props.setLanguage(props.userLanguage || "en");
   }, []);
-  useEffect(
-    () => {
-      if (props.from) props.importGist(props.from);
-    },
-    [props.from]
-  );
-  useEffect(
-    () => {
-      if (props.language !== props.gist.settings.locale)
-        props.updateGist(props.language, "settings", "locale");
-    },
-    [props.language]
-  );
+  useEffect(() => {
+    if (props.from) props.importGist(props.from);
+  }, [props.from]);
+  useEffect(() => {
+    if (props.language !== props.gist.settings.locale)
+      props.updateGist(props.language, "settings", "locale");
+  }, [props.language]);
 
   const getDisplay = () => storage.get(props.config.name + "-display");
   const saveDisplay = d => {
@@ -125,6 +120,13 @@ const Workbench = props => {
       }
     }
   };
+  if (display === "draft" && !measurementsMissing())
+    navs.left.svgExport = {
+      type: "button",
+      onClick: () => setSvgExport(true),
+      text: "app.export",
+      active: false
+    };
   // FIXME:
   navs.mleft = navs.left;
   navs.mright = navs.right;
@@ -149,6 +151,8 @@ const Workbench = props => {
           updateGist={props.updateGist}
           raiseEvent={raiseEvent}
           units={props.units}
+          svgExport={svgExport}
+          setSvgExport={setSvgExport}
         />
       );
       break;

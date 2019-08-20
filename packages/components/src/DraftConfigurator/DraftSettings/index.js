@@ -19,6 +19,24 @@ const DraftSettings = props => {
     else shown.splice(index, 1);
     setExpanded(shown);
   };
+  const getDefault = setting => {
+    if (props.recipe && typeof props.recipe.settings[setting] !== "undefined")
+      return props.recipe.settings[setting];
+    switch (setting) {
+      case "sa":
+        return 10;
+      case "only":
+        return "dflt";
+      case "complete":
+        return true;
+      case "margin":
+        return 2;
+      case "units":
+        return props.units;
+      default:
+        return false;
+    }
+  };
 
   let noyes = [
     <FormattedMessage id="app.no" />,
@@ -49,7 +67,8 @@ const DraftSettings = props => {
       key: setting,
       name: setting,
       labels: labels[setting],
-      noDocs: props.noDocs
+      noDocs: props.noDocs,
+      dflt: getDefault(setting)
     };
     childProps.title = (
       <FormattedMessage id={"settings." + setting + ".title"} />
@@ -58,7 +77,6 @@ const DraftSettings = props => {
       <FormattedMessage id={"settings." + setting + ".description"} />
     );
     if (setting === "only") {
-      childProps.dflt = "dflt";
       childProps.customDflt = [];
       childProps.parts = {};
       if (props.config.draftOrder) {
@@ -80,17 +98,13 @@ const DraftSettings = props => {
   let groups = {
     preferences: [
       <DraftSettingSa {...addProps("sa")} />,
-      <DraftSettingPaperless {...addProps("paperless")} dflt={false} />,
-      <DraftSettingComplete {...addProps("complete")} dflt={true} />
+      <DraftSettingPaperless {...addProps("paperless")} />,
+      <DraftSettingComplete {...addProps("complete")} />
     ],
     advanced: [
       <DraftSettingOnly {...addProps("only")} />,
-      <DraftSettingMargin {...addProps("margin")} dflt={2} />,
-      <DraftSettingUnits
-        {...addProps("units")}
-        dflt={props.units}
-        list={units}
-      />,
+      <DraftSettingMargin {...addProps("margin")} />,
+      <DraftSettingUnits {...addProps("units")} list={units} />,
       <DraftSettingLanguage {...addProps("locale")} />
     ]
   };

@@ -1,28 +1,27 @@
+---
 author: Auteur
-githubRepo: GitHub dépôt
-packageManager: Gestionnaire de paquets
-patternName: Nom du patron
-patternDescription: Description du patron
+githubRepo: Dépôt GitHub
+packageManager: Gestionnaire de package
+patternName: Nom de patron
 patternType: Type de patron
-patternCreated: Le squelette de votre patron a été créé à
-runTheseCommands: Pour commencer, lancez ces deux commandes
-startRollup: Dans un terminal, démarrez rollup en mode veille
-startWebpack: Et dans un autre terminal, exécutez le serveur de développement webpack
-devDocsAvailableAt: La documentation du développeur est disponible à l'adresse
-talkToUs: Pour des questions, des commentaires ou des suggestions, venez nous parler dans notre salle de chat
-draftYourPattern: Ébauche votre patron
-testYourPattern: Test votre patron
-renderInBrowser: Cliquez ci-dessous pour rendre votre motif dans le navigateur.
-weWillReRender: Lorsque vous apportez des modifications, nous effectuons un nouveau rendu pour vous.
+patternCreated: Le squelette de votre patron a été créé sur
+runTheseCommands: Pour commencer, exécutez ces deux commandes
+startRollup: Dans un terminal, démarrez l'installateur rollup en mode veille
+startWebpack: Et dans un autre, exécutez le serveur de développement webpack
+devDocsAvailableAt: La documentation pour développeur est disponible sur
+talkToUs: Pour des questions, des avis ou des suggestions, venez nous parler sur notre chat
+draftYourPattern: Ébaucher votre patron
+testYourPattern: Tester votre patron
+renderInBrowser: Cliquer ci-dessous pour afficher votre patron dans votre navigateur.
+weWillReRender: Lorsque vous effectuez des modifications, nous allons mettre à jour le rendu pour vous.
 youCan: Vous pouvez
-enterMeasurements: Entrer les mesures à la main
-preloadMeasurements: Précharger un ensemble de mesures
+enterMeasurements: Entrer des mesures manuellement
+preloadMeasurements: Pré-charger un set de mesures
 size: Taille
-noRequiredMeasurements: Ce patron n'a pas de mesures requises.
-howtoAddMeasurements: Pour exiger des mesures, ajoutez-les à la section <b>measurements</b> du fichier de configuration du patron.
-seeDocsAt: Documentation sur ce sujet est disponible à l'adresse
-designModeIsOn: Le mode de conception est activé
-designModeIsOff: Le mode de conception est désactivé
+noRequiredMeasurements: Ce patron n'a pas de mesure requise
+howtoAddMeasurements: Pour rendre des mesures nécessaires, ajoutez-les à la section <b>measurements</b> du fichier de configuration du patron.
+seeDocsAt: La documentation à ce sujet est disponible sur
+designModeIsOn: Le mode Conception est activé
+designModeIsOff: Le mode Conception est désactivé
 turnOn: Activer
 turnOff: Désactiver
-

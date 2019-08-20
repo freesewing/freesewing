@@ -1,25 +1,36 @@
 export default function(part) {
-  let { paperless, sa, store, complete, points, measurements, options, macro, paths, Path } = part.shorthand();
+  let {
+    paperless,
+    sa,
+    store,
+    complete,
+    points,
+    measurements,
+    options,
+    macro,
+    paths,
+    Path
+  } = part.shorthand()
 
   // Add cuff
-  let length = measurements.shoulderToWrist * options.cuffLength;
-  let angle = points.tsWristRight.angle(points.tsWristLeft);
-  points.cuffBottomRight = points.tsWristRight.shift(angle+90, length);
-  points.cuffBottomLeft = points.tsWristLeft.shift(angle+90, length);
-  macro("round", {
+  let length = measurements.shoulderToWrist * options.cuffLength
+  let angle = points.tsWristRight.angle(points.tsWristLeft)
+  points.cuffBottomRight = points.tsWristRight.shift(angle + 90, length)
+  points.cuffBottomLeft = points.tsWristLeft.shift(angle + 90, length)
+  macro('round', {
     to: points.tsWristRight,
     from: points.cuffBottomLeft,
     via: points.cuffBottomRight,
-    radius: length/3,
+    radius: length / 3,
     render: true,
-    prefix: "round"
-  });
-  store.set("topCuffWidth", points.tsWristLeft.dist(points.tsWristRight));
-  store.set("cuffLength", length);
-  store.set("cuffRadius", length/3);
+    prefix: 'round'
+  })
+  store.set('topCuffWidth', points.tsWristLeft.dist(points.tsWristRight))
+  store.set('cuffLength', length)
+  store.set('cuffRadius', length / 3)
 
   // Clean up
-  for (let i in paths) delete paths[i];
+  for (let i in paths) delete paths[i]
 
   // Paths
   paths.seam = new Path()
@@ -37,90 +48,89 @@ export default function(part) {
     .curve(points.topCpLeft, points.frontPitchPointCpTop, points.frontPitchPoint)
     .curve(points.frontPitchPointCpBottom, points.tsLeftEdgeCpRight, points.tsLeftEdge)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   if (complete) {
-
-    macro("grainline", {
+    macro('grainline', {
       from: points.boxBottom,
       to: points.top
-    });
+    })
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
 
     if (paperless) {
-      macro("ld", {
+      macro('ld', {
         from: points.tsWristLeft,
         to: points.tsWristRight,
         d: -15
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsWristLeft,
         to: points.tsElbowLeft,
         x: points.tsLeftEdge.x - sa - 15
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.tsWristLeft,
         to: points.tsLeftEdge,
         x: points.tsLeftEdge.x - sa - 30
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.cuffBottomLeft,
         to: points.tsWristLeft,
         d: 15 + sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.cuffBottomRight,
         to: points.usWristRight,
         x: points.usWristRight.x + 15 + sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.usWristRight,
         to: points.elbowRight,
         x: points.elbowRight.x + 15 + sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.usWristRight,
         to: points.tsRightEdge,
         x: points.elbowRight.x + 30 + sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.usWristRight,
         to: points.backPitchPoint,
         x: points.elbowRight.x + 45 + sa
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.usWristRight,
         to: points.top,
         x: points.elbowRight.x + 60 + sa
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsElbowLeft,
         to: points.elbowRight
-      });
-      macro("ld", {
+      })
+      macro('ld', {
         from: points.tsLeftEdge,
         to: points.tsRightEdge
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.top,
         y: points.top.y - sa - 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.backPitchPoint,
         y: points.top.y - sa - 30
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.tsLeftEdge,
         to: points.tsRightEdge,
         y: points.top.y - sa - 45
-      });
+      })
     }
   }
 
-  return part;
+  return part
 }

@@ -1,14 +1,14 @@
-import React from "react";
-import freesewing from "@freesewing/core";
-import Workbench from "@freesewing/components/Workbench";
-import "typeface-roboto-condensed";
-import "@freesewing/css-theme";
+import React from 'react'
+import freesewing from '@freesewing/core'
+import Workbench from '@freesewing/components/Workbench'
+import 'typeface-roboto-condensed'
+import '@freesewing/css-theme'
 
-import Pattern from "pattern";
+import Pattern from 'pattern'
 
 const App = props => {
-  let instance = new Pattern();
-  let config = instance.config;
+  let instance = new Pattern()
+  let config = instance.config
   return (
     <Workbench
       freesewing={freesewing}
@@ -16,7 +16,7 @@ const App = props => {
       config={config}
       userLanguage="{{language}}"
     />
-  );
-};
+  )
+}
 
-export default App;
+export default App

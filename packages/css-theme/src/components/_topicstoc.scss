@@ -42,6 +42,9 @@ ul.topic-links {
 ul.topic-links li {
   padding-left: 1rem;
 }
+ul.topic-links.level-1 > li {
+  padding-left: 1.5rem;
+}
 
 ul.topic-links ul.links {
   margin-left: 1rem;
