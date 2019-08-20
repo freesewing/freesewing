@@ -1,5 +1,5 @@
 ---
-filter: Filter
+filter: Filtre
 department: Département
 type: Type
 tags: Étiquettes
@@ -7,9 +7,9 @@ code: Code
 design: Conception
 difficulty: Difficulté
 resetFilter: Réinitialiser le filtre
-menswear: Menswear
-womenswear: Womenswear
-accessories: Accessories
-block: Block
-pattern: Pattern
+menswear: Vêtements pour hommes
+womenswear: Vêtements pour femmes
+accessories: Accessoires
+block: Patron de base
+pattern: Patron
 
