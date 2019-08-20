@@ -44,7 +44,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@7.5.5", "@babel/core@^7.0.0", "@babel/core@^7.0.1", "@babel/core@^7.1.0", "@babel/core@^7.4.0", "@babel/core@^7.4.5", "@babel/core@^7.5.4":
+"@babel/core@7.5.5", "@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.4.0", "@babel/core@^7.4.5", "@babel/core@^7.5.4":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.5.5.tgz#17b2686ef0d6bc58f963dddd68ab669755582c30"
   integrity sha512-i4qoSr2KTtce0DmkuuQBV4AuQgGPUcPXMr9L5MyYAtk06z068lQ10a4O009fe5OB/DfNV+h+qqT7ddNV8UnRjg==
@@ -743,7 +743,7 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.2"
 
-"@babel/preset-env@7.5.5", "@babel/preset-env@^7.0.0", "@babel/preset-env@^7.4.5":
+"@babel/preset-env@7.5.5", "@babel/preset-env@^7.4.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.5.5.tgz#bc470b53acaa48df4b8db24a570d6da1fef53c9a"
   integrity sha512-GMZQka/+INwsMz1A5UEql8tG015h5j/qjptpKY2gJ7giy8ohzU710YciJB5rcKsWGWHiW3RUnHib0E5/m3Tp3A==
@@ -3100,19 +3100,6 @@
     "@svgr/babel-plugin-transform-react-native-svg" "^4.2.0"
     "@svgr/babel-plugin-transform-svg-component" "^4.2.0"
 
-"@svgr/core@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@svgr/core/-/core-2.4.1.tgz#03a407c28c4a1d84305ae95021e8eabfda8fa731"
-  integrity sha512-2i1cUbjpKt1KcIP05e10vkmu9Aedp32EFqVcSQ08onbB8lVxJqMPci3Hr54aI14S9cLg4JdcpO0D35HHUtT8oQ==
-  dependencies:
-    camelcase "^5.0.0"
-    cosmiconfig "^5.0.6"
-    h2x-core "^1.1.0"
-    h2x-plugin-jsx "^1.1.0"
-    merge-deep "^3.0.2"
-    prettier "^1.14.2"
-    svgo "^1.0.5"
-
 "@svgr/core@^4.3.2":
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/@svgr/core/-/core-4.3.2.tgz#939c89be670ad79b762f4c063f213f0e02535f2e"
@@ -3148,17 +3135,19 @@
     merge-deep "^3.0.2"
     svgo "^1.2.2"
 
-"@svgr/rollup@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@svgr/rollup/-/rollup-2.4.1.tgz#88fc72e8e23221946ff648e90765c39138773320"
-  integrity sha512-x1rBH9pn+Dt4x2ubn+YTySfJjGzQHcLl2Jd0GookbAsncgk2eO6S/Hrhjps9u889t3eTO5pZiZ8hUR7mQWpfKA==
+"@svgr/rollup@^4.3.2":
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@svgr/rollup/-/rollup-4.3.2.tgz#e33669e37feeac0c9bc3f0a643d08cd2ee88c011"
+  integrity sha512-uKmf+NtvY9yxCmq3TNEuKHvGHmoIzMVmARBSf9fvqwSubDuMB4CXwoHWQ5LmO3igwFYZ6B9jHDxQe8ukbtkDjA==
   dependencies:
-    "@babel/core" "^7.0.1"
+    "@babel/core" "^7.4.5"
     "@babel/plugin-transform-react-constant-elements" "^7.0.0"
-    "@babel/preset-env" "^7.0.0"
+    "@babel/preset-env" "^7.4.5"
     "@babel/preset-react" "^7.0.0"
-    "@svgr/core" "^2.4.1"
-    rollup-pluginutils "^2.3.1"
+    "@svgr/core" "^4.3.2"
+    "@svgr/plugin-jsx" "^4.3.2"
+    "@svgr/plugin-svgo" "^4.3.1"
+    rollup-pluginutils "^2.8.1"
 
 "@svgr/webpack@4.3.2", "@svgr/webpack@^4.0.3":
   version "4.3.2"
@@ -6351,7 +6340,7 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     parse-json "^2.2.0"
     require-from-string "^1.1.0"
 
-cosmiconfig@^5.0.0, cosmiconfig@^5.0.6, cosmiconfig@^5.0.7, cosmiconfig@^5.1.0, cosmiconfig@^5.2.0, cosmiconfig@^5.2.1:
+cosmiconfig@^5.0.0, cosmiconfig@^5.0.7, cosmiconfig@^5.1.0, cosmiconfig@^5.2.0, cosmiconfig@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
@@ -9515,49 +9504,6 @@ gzip-size@^3.0.0:
   dependencies:
     duplexer "^0.1.1"
 
-h2x-core@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/h2x-core/-/h2x-core-1.1.1.tgz#7fb31ab28e30ebf11818e3c7d183487ecf489f9f"
-  integrity sha512-LdXe4Irs731knLtHgLyFrnJCumfiqXXQwKN1IMUhi37li29PLfLbMDvfK7Rk4wmgHLKP+sIITT1mcJV4QsC3nw==
-  dependencies:
-    h2x-generate "^1.1.0"
-    h2x-parse "^1.1.1"
-    h2x-traverse "^1.1.0"
-
-h2x-generate@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/h2x-generate/-/h2x-generate-1.1.0.tgz#c2c98c60070e1eed231e482d5826c3c5dab2a9ba"
-  integrity sha512-L7Hym0yb20QIjvqeULUPOeh/cyvScdOAyJ6oRlh5dF0+w92hf3OiTk1q15KBijde7jGEe+0R4aOmtW8gkPNIzg==
-  dependencies:
-    h2x-traverse "^1.1.0"
-
-h2x-parse@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/h2x-parse/-/h2x-parse-1.1.1.tgz#875712cd3be75cf736c610d279b8653b24f58385"
-  integrity sha512-WRSmPF+tIWuUXVEZaYRhcZx/JGEJx8LjZpDDtrvMr5m/GTR0NerydCik5dRzcKXPWCtfXxuJRLR4v2P4HB2B1A==
-  dependencies:
-    h2x-types "^1.1.0"
-    jsdom ">=11.0.0"
-
-h2x-plugin-jsx@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/h2x-plugin-jsx/-/h2x-plugin-jsx-1.2.0.tgz#211fa02e5c4e0a07307b0005629923910e631c01"
-  integrity sha512-a7Vb3BHhJJq0dPDNdqguEyQirENkVsFtvM2YkiaT5h/fmGhmM1nDy3BLeJeSKi2tL2g9v4ykm2Z+GG9QrhDgPA==
-  dependencies:
-    h2x-types "^1.1.0"
-
-h2x-traverse@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/h2x-traverse/-/h2x-traverse-1.1.0.tgz#194b36c593f4e20a754dee47fa6b2288647b2271"
-  integrity sha512-1ND8ZbISLSUgpLHYJRvhvElITvs0g44L7RxjeXViz5XP6rooa+FtXTFLByl2Yg01zj2txubifHIuU4pgvj8l+A==
-  dependencies:
-    h2x-types "^1.1.0"
-
-h2x-types@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/h2x-types/-/h2x-types-1.1.0.tgz#ec0d5e3674e2207269f32976ac9c82aaff4818e6"
-  integrity sha512-QdH5qfLcdF209UsCdM0ZNZ9Dwm2PHvMfeLZtivBrjX3Y/df4US2pwsUC4HBfWhye/mx/t6puODeC7Oacb/Ol8g==
-
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
@@ -11718,7 +11664,7 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@15.1.1, jsdom@>=11.0.0:
+jsdom@15.1.1:
   version "15.1.1"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-15.1.1.tgz#21ed01f81d95ef4327f3e564662aef5e65881252"
   integrity sha512-cQZRBB33arrDAeCrAEWn1U3SvrvC8XysBua9Oqg1yWrsY/gYcusloJC3RZJXuY5eehSCmws8f2YeliCqGSkrtQ==
@@ -16052,7 +15998,7 @@ prepend-http@^1.0.0, prepend-http@^1.0.1:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-prettier@^1.14.0, prettier@^1.14.2:
+prettier@^1.14.0:
   version "1.18.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
   integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
@@ -18976,7 +18922,7 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
-svgo@^1.0.0, svgo@^1.0.5, svgo@^1.2.2:
+svgo@^1.0.0, svgo@^1.2.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.3.0.tgz#bae51ba95ded9a33a36b7c46ce9c359ae9154313"
   integrity sha512-MLfUA6O+qauLDbym+mMZgtXCGRfIxyQoeH6IKVcFslyODEe/ElJNwr0FohQ3xG4C6HK6bk3KYPPXwHVJk3V5NQ==
