@@ -48,7 +48,7 @@
     "@freesewing/plugin-buttons": "^2.0.0-beta.42",
     "@freesewing/plugin-flip": "^2.0.0-beta.42",
     "@freesewing/utils": "^2.0.0-beta.42",
-    "@svgr/rollup": "^2.4.1",
+    "@svgr/rollup": "^4.3.2",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
     "react-scripts": "^3.0.0",
