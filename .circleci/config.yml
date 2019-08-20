@@ -7,4 +7,6 @@ jobs:
       - checkout
       - run: 'sudo npm install -g yarn@latest lerna@latest'
       - run: yarn install
-      - run: lerna run build
+      - run: cd packages/patterns && yarn build
+      - run: cd ../pattern-info && yarn prepare
+      - run: cd ../../ && lerna run build
