@@ -1,8 +1,24 @@
-version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/node:lts
-     steps:
-       - checkout
-       - run: npm install --global lerna && lerna bootstrap
+version: 2.1
+orbs:
+  node: circleci/node@1.1.4
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run:
+        name: Update yarn & lerna
+        command: 'sudo npm install -g yarn@latest lerna@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - build:
+        name: Build packages
+        command: 'lerna run build'
