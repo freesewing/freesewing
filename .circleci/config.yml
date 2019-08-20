@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: 'sudo npm install -g yarn@latest lerna@latest'
       - run: yarn install
-      - run: cd node_modules/@freesewing && rm -rf * ** ln -s ../../packages/* .
+      - run: cd node_modules/@freesewing && rm -rf * && ln -s ../../packages/* .
       - run: cd packages/patterns && yarn build
       - run: cd packages/pattern-info && yarn prepare
       - run: lerna run build
