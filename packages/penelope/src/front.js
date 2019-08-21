@@ -1,18 +1,16 @@
 import { BuildMainShape } from "./shape";
 
 export default function(part) {
-  let frontPart = true;
-
   let {
     options,
-    measurements,
-    Point,
+    /*measurements,*/
+    /*Point,*/
     Path,
     points,
     paths,
     Snippet,
     snippets,
-    store,
+    /*store,*/
     complete,
     sa,
     paperless,

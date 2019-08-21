@@ -75,7 +75,7 @@ function BuildMainShape(part, frontPart) {
   waist += waistEase;
 
   let sideSeam = seat / 4 + sideSeamShift;
-  let hipSeam = hip / 4 + sideSeamShift;
+  //let hipSeam = hip / 4 + sideSeamShift;
 
   points.lWaist = new Point(0, 0);
   points.lLeg = new Point(0, skirtLength);
