@@ -7,13 +7,13 @@ export default function(part) {
     Point,
     Path,
     points,
-    paths,
+    paths/*,
     Snippet,
     snippets,
     complete,
     sa,
     paperless,
-    macro
+    macro*/
   } = part.shorthand();
 
   let seatDepth =

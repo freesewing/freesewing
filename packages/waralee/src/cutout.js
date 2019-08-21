@@ -17,8 +17,6 @@ export default function(part) {
   } = part.shorthand();
 
   let seatDepth = measurements.seatDepth + (measurements.seatDepth *options.waistRaise );
-  let circumference = measurements.seatCircumference;
-  let circumference4 = circumference / 4;
 
   points.mWaist = new Point(0, 0);
   points.mHip = points.mWaist.shift(270, seatDepth);

@@ -1,9 +1,9 @@
 export default function(part) {
   let {
     options,
-    measurements,
+    /*measurements,
     Point,
-    Path,
+    Path,*/
     points,
     paths,
     Snippet,

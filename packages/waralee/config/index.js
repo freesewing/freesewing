@@ -1,4 +1,4 @@
-import { version } from "../package.json";
+//import { version } from "../package.json";
 
 // ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
 

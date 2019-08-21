@@ -6,10 +6,10 @@ export default function(part) {
     Path,
     points,
     paths,
-    Snippet,
+    /*Snippet,*/
     snippets,
     complete,
-    sa,
+    /*sa,*/
     paperless,
     macro
   } = part.shorthand();
