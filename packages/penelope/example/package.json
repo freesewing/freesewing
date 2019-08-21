@@ -1,0 +1,47 @@
+{
+  "name": "penelope-example",
+  "homepage": "https://woutervdub.github.io/penelope",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@freesewing/components": "beta",
+    "@freesewing/core": "beta",
+    "@freesewing/css-theme": "beta",
+    "@freesewing/i18n": "beta",
+    "@freesewing/models": "beta",
+    "@freesewing/mui-theme": "beta",
+    "@freesewing/pattern-info": "beta",
+    "@freesewing/plugin-bundle": "beta",
+    "@freesewing/plugin-i18n": "beta",
+    "@freesewing/plugin-svgattr": "beta",
+    "@freesewing/utils": "beta",
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/icons": "^4.0.1",
+    "@material-ui/lab": "^v4.0.0-alpha.14",
+    "axios": "^0.19.0",
+    "pattern": "file:..",
+    "prismjs": "1.16.0",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-scripts": "^3.0.0",
+    "typeface-roboto-condensed": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "1.0.2"
+  }
+}
