@@ -6,7 +6,7 @@ import draftPants from "./pants";
 import draftCutout from "./cutout";
 import draftPocket from "./pocket";
 import draftFacings from "./facings";
-import draftMini from "./mini";
+//import draftMini from "./mini";
 
 // Create new design
 const Pattern = new freesewing.Design(config, plugins);
@@ -17,6 +17,6 @@ Pattern.prototype.draftPants = draftPants;
 Pattern.prototype.draftCutout = draftCutout;
 Pattern.prototype.draftPocket = draftPocket;
 Pattern.prototype.draftFacings = draftFacings;
-Pattern.prototype.draftMini = draftMini;
+//Pattern.prototype.draftMini = draftMini;
 
 export default Pattern;

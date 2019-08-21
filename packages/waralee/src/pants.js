@@ -1,5 +1,3 @@
-import { CreateCrotchPoints } from "./util";
-
 export default function(part) {
   let {
     options,
@@ -15,11 +13,6 @@ export default function(part) {
     paperless,
     macro
   } = part.shorthand();
-
-  let seatDepth =
-    measurements.seatDepth + measurements.seatDepth * options.waistRaise;
-  let circumference = measurements.seatCircumference;
-  let circumference4 = circumference / 4;
 
 
   paths.waistFoldBack = paths.waistBack

@@ -42,8 +42,7 @@ export default {
     "seatDepth"
   ],
   dependencies: {},
-  inject: {pants:"pantsproto",
-  mini:"pantsproto"},
+  inject: {pants:"pantsproto"/*,mini:"pantsproto"*/},
   hide: [],
   parts: ["cutout", "pocket", "facings"],
   options: {
