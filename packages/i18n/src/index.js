@@ -1,18 +1,20 @@
-import en from "./locales/en";
-import de from "./locales/de";
-import es from "./locales/es";
-import fr from "./locales/fr";
-import nl from "./locales/nl";
+import en from './locales/en'
+import de from './locales/de'
+import es from './locales/es'
+import fr from './locales/fr'
+import nl from './locales/nl'
 
-const languageCodes = ["en", "de", "es", "fr", "nl"];
-const imports = { en, de, es, fr, nl };
+const languageCodes = ['en', 'de', 'es', 'fr', 'nl']
+const imports = { en, de, es, fr, nl }
 
-const strings = {};
-const languages = {};
+const plugin = {}
+const strings = {}
+const languages = {}
 
 for (let l of languageCodes) {
-  strings[l] = imports[l];
-  languages[l] = strings[l]["i18n." + l];
+  strings[l] = imports[l].strings
+  plugin[l] = imports[l].plugin
+  languages[l] = strings[l]['i18n.' + l]
 }
 
-export { strings, languages };
+export { strings, languages, plugin }

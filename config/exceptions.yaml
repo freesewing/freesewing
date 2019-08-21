@@ -1,11 +1,13 @@
 noNamespace:
   - create-freesewing-pattern
 customRollup:
-  - css-theme
-  - plugin-theme
   - components
   - core
+  - css-theme
   - i18n
+  - plugin-theme
+  - utils
+  - prettier-config
 packageJson:
   components:
     # react-scripts doesn't handle .mjs files correctly
@@ -18,6 +20,7 @@ packageJson:
       - "Example/*"
       - "Footer/*"
       - "Icon/*"
+      - "LineDrawing/*"
       - "Logo/*"
       - "Navbar/*"
       - "Ogol/*"
@@ -46,6 +49,37 @@ packageJson:
   i18n:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
+  prettier-config:
+    main: "index.json"
+    module: '!'
+    scripts: { build: "echo \"prettier-config: No build required\" && exit 0" }
+    keywords:
+      - prettier
+    files:
+      - index.json
+      - package.json
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
+    files:
+      - "backend/*"
+      - "camelCase/*"
+      - "capitalize/*"
+      - "cloneObject/*"
+      - "defaultGist/*"
+      - "defaultSa/*"
+      - "formatImperial/*"
+      - "formatMm/*"
+      - "optionDefault/*"
+      - "optionType/*"
+      - "roundMm/*"
+      - "roundMmDown/*"
+      - "roundMmUp/*"
+      - "sliderStep/*"
+      - "smallestImperialStep/*"
+      - "storage/*"
+      - "tiler/*"
+      - "measurementAsMm/*"
+      - "validateEmail/*"
+      - "validateTld/*"
+

@@ -1,7 +1,7 @@
 > **Note**: This is part of version 2 of FreeSewing.  
 > It is a work in progress, and not ready for prime-time yet
 > 
-> For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/).
+> For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/freesewing/chat).
 
 <p align="center">
 <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
@@ -50,7 +50,7 @@ should [become a patron](https://freesewing.org/patrons/join).
 
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
  - 💻 Developers website: [freesewing.dev](https://freesewing.org)
- - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/freesewing)
+ - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
@@ -61,7 +61,7 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatroom on Gitter](https://gitter.im) is the best place to ask questions,
+Our [chatroom on Gitter](https://gitter.im/freesewing/chat) is the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import FormFieldSlider from "../../.form/FormFieldSlider";
-import { formatMm, roundMm, sliderStep } from "@freesewing/utils";
+import formatMm from "@freesewing/utils/formatMm";
+import roundMm from "@freesewing/utils/roundMm";
+import sliderStep from "@freesewing/utils/sliderStep";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingMargin = props => {

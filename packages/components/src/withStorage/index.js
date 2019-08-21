@@ -1,5 +1,5 @@
 import React from "react";
-import { storage } from "@freesewing/utils";
+import storage from "@freesewing/utils/storage";
 
 const withStorage = (WrappedComponent, name) => {
   return class extends React.Component {

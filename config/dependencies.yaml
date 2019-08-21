@@ -15,7 +15,6 @@ _types:
       "@freesewing/css-theme": "^{{version}}"
       "@freesewing/i18n": "^{{version}}"
       "@freesewing/mui-theme": "^{{version}}"
-      "@freesewing/patterns": "^{{version}}"
       "@freesewing/plugin-bust": "^{{version}}"
       "@freesewing/plugin-buttons": "^{{version}}"
       "@freesewing/plugin-flip": "^{{version}}"
@@ -68,7 +67,9 @@ components:
     "@freesewing/pattern-info": "^{{version}}"
     "@freesewing/mui-theme": "^{{version}}"
     "@freesewing/css-theme": "^{{version}}"
+    "@freesewing/plugin-theme": "^{{version}}"
     "@freesewing/core": "^{{version}}"
+    "@freesewing/models": "^{{version}}"
     "@freesewing/examples": "^{{version}}"
     "@freesewing/rendertest": "^{{version}}"
     "@freesewing/tutorial": "^{{version}}"
@@ -80,6 +81,7 @@ components:
     "@material-ui/icons": "^4.0.1"
     "@material-ui/lab": "^v4.0.0-alpha.14"
     "prismjs": "1.16.0"
+    "file-saver": "^2.0.2"
 core:
   _:
     "bezier-js": "^2.2.13"

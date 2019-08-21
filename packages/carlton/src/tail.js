@@ -1,24 +1,35 @@
 export default function(part) {
-  let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand();
+  let {
+    units,
+    paperless,
+    sa,
+    store,
+    complete,
+    points,
+    macro,
+    Point,
+    paths,
+    Path
+  } = part.shorthand()
 
-  let length = store.get("waistToHem") - store.get("beltWidth")/2;
+  let length = store.get('waistToHem') - store.get('beltWidth') / 2
 
-  points.cbTop = new Point(0,0);
-  points.fold1Top = points.cbTop.shift(0, store.get("cbToDart")/2);
-  points.fold2Top = points.cbTop.shift(0, store.get("cbToDart"));
-  points.fold3Top = points.cbTop.shift(0, store.get("cbToDart")*2);
-  points.fold4Top = points.fold3Top.shift(0, store.get("cbToDart")/2);
-  points.waistTop = points.fold4Top.shift(0, store.get("dartToSide"));
+  points.cbTop = new Point(0, 0)
+  points.fold1Top = points.cbTop.shift(0, store.get('cbToDart') / 2)
+  points.fold2Top = points.cbTop.shift(0, store.get('cbToDart'))
+  points.fold3Top = points.cbTop.shift(0, store.get('cbToDart') * 2)
+  points.fold4Top = points.fold3Top.shift(0, store.get('cbToDart') / 2)
+  points.waistTop = points.fold4Top.shift(0, store.get('dartToSide'))
 
   // 12cm will do as we're just drawing a rectangle.
   // But check that lenght > 12cm because doll clothes.
-  let drawnLength = length < 120 ? length : 120;
+  let drawnLength = length < 120 ? length : 120
 
-  for (let i of ["cb", "fold1", "fold2", "fold3", "fold4", "waist"]) {
-    points[i+"Bottom"] = points[i+"Top"].shift(-90, drawnLength);
-    if (i === "cb" || i === "waist") {
-      points[i+"MidTop"] = points[i+"Top"].shift(-90, drawnLength * 0.4);
-      points[i+"MidBottom"] = points[i+"Top"].shift(-90, drawnLength * 0.6);
+  for (let i of ['cb', 'fold1', 'fold2', 'fold3', 'fold4', 'waist']) {
+    points[i + 'Bottom'] = points[i + 'Top'].shift(-90, drawnLength)
+    if (i === 'cb' || i === 'waist') {
+      points[i + 'MidTop'] = points[i + 'Top'].shift(-90, drawnLength * 0.4)
+      points[i + 'MidBottom'] = points[i + 'Top'].shift(-90, drawnLength * 0.6)
     }
   }
 
@@ -32,7 +43,7 @@ export default function(part) {
     .move(points.waistMidTop)
     .line(points.waistTop)
     .line(points.cbTop)
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   paths.folds = new Path()
     .move(points.fold1Top)
@@ -43,69 +54,72 @@ export default function(part) {
     .line(points.fold3Bottom)
     .move(points.fold4Top)
     .line(points.fold4Bottom)
-    .attr("class", "lashed");
+    .attr('class', 'lashed')
 
   paths.hint = new Path()
     .move(points.cbMidTop)
     .line(points.cbMidBottom)
     .move(points.waistMidBottom)
     .line(points.waistMidTop)
-    .attr("class", "fabric dashed");
+    .attr('class', 'fabric dashed')
 
   if (complete) {
-    points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5);
-    macro("title", {
+    points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5)
+    macro('title', {
       at: points.title,
       nr: 3,
-      title: "tail"
-    });
+      title: 'tail'
+    })
 
-    macro("grainline", {
+    macro('grainline', {
       from: points.fold2Bottom.shift(0, 10),
       to: points.fold2Top.shift(0, 10)
-    });
+    })
 
-    if (sa) paths.sa = paths.seam.offset(sa).close().attr("class", "fabric sa");
-    macro("vd", {
+    if (sa)
+      paths.sa = paths.seam
+        .offset(sa)
+        .close()
+        .attr('class', 'fabric sa')
+    macro('vd', {
       from: points.fold4Bottom.shift(0, 15),
       to: points.fold4Top.shift(0, 15),
       text: units(length)
-    });
+    })
 
     if (paperless) {
-      macro("hd", {
+      macro('hd', {
         from: points.cbBottom,
         to: points.fold1Bottom,
         y: points.cbBottom.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.fold1Bottom,
         to: points.fold2Bottom,
         y: points.cbBottom.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.fold2Bottom,
         to: points.fold3Bottom,
         y: points.cbBottom.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.fold3Bottom,
         to: points.fold4Bottom,
         y: points.cbBottom.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.fold4Bottom,
         to: points.waistBottom,
         y: points.cbBottom.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.cbBottom,
         to: points.waistBottom,
         y: points.cbBottom.y + sa + 30
-      });
+      })
     }
   }
 
-  return part;
+  return part
 }
-

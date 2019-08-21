@@ -1,32 +1,32 @@
-const darkBg = "#212529";
-const lightBg = "#ffffff";
+const darkBg = '#212529'
+const lightBg = '#ffffff'
 const colors = {
   light: {
     primary: darkBg,
     secondary: lightBg,
-    link: "#74c0fc",
-    paper: "#FFF"
+    link: '#74c0fc',
+    paper: '#FFF'
   },
   dark: {
     primary: lightBg,
     secondary: darkBg,
-    link: "#74c0fc",
-    paper: "#000"
+    link: '#74c0fc',
+    paper: '#000'
   }
-};
+}
 const asTitle = {
-  fontFamily: "Roboto Condensed",
-  fontWeight: "bold"
-};
-const important = "!important";
+  fontFamily: 'Roboto Condensed',
+  fontWeight: 'bold'
+}
+const important = '!important'
 
 const getTheme = mode => {
-  let c = colors[mode];
+  let c = colors[mode]
   let forceColor = {
     root: {
       color: c.primary + important
     }
-  };
+  }
   return {
     overrides: {
       MuiButton: { root: asTitle },
@@ -35,9 +35,9 @@ const getTheme = mode => {
       MuiRadio: forceColor,
       MuiCheckbox: forceColor,
       MuiSlider: {
-        container: { padding: "25px 0" },
-        track: { height: "4px" },
-        thumb: { width: "16px", height: "16px" }
+        container: { padding: '25px 0' },
+        track: { height: '4px' },
+        thumb: { width: '16px', height: '16px' }
       }
     },
     palette: {
@@ -55,21 +55,21 @@ const getTheme = mode => {
     },
     typography: {
       fontFamily: [
-        "-apple-system",
-        "BlinkMacSystemFont",
+        '-apple-system',
+        'BlinkMacSystemFont',
         '"Segoe UI"',
-        "Roboto",
+        'Roboto',
         '"Helvetica Neue"',
-        "Arial",
-        "sans-serif",
+        'Arial',
+        'sans-serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"'
-      ].join(",")
+      ].join(',')
     },
     themeName: mode
-  };
-};
+  }
+}
 
-export const light = getTheme("light");
-export const dark = getTheme("dark");
+export const light = getTheme('light')
+export const dark = getTheme('dark')

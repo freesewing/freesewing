@@ -120,6 +120,8 @@ name: Name
 newDraftFromGist: New draft from gist
 newDraft: New draft
 newModel: New model
+newPattern: 'New {pattern}'
+newPatternForModel: 'New {pattern} for {model}'
 noChanges: No changes
 no: No
 noPasswordPolicy: We don't enforce a password policy
@@ -139,7 +141,7 @@ patron-4: First mate
 patron-8: Captain
 patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact Joost.
 patron: Patron
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins every month, then you too should become a Patron of freesewing.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
 patternOptions: Pattern options
@@ -198,7 +200,7 @@ txt-tier0: Don't want to support us? Can't afford to support us?<br>Freesewing i
 txt-tier2: Our most democractically priced tier. It may be less than the price of a latte, but your support means the world to us.
 txt-tier4: Subscribe to this tier and we'll send some of our much covetted freesewing swag to your home anywhere in the world.
 txt-tier8: "If you don't merely want to support us, but want to see freesewing thrive, this is the tier for you. Also: extra swag."
-txt-tiers: "Freesewing is funded by a voluntary subscription model with four tiers:"
+txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
 update: Update
@@ -228,3 +230,29 @@ apiReference: API Reference
 tutorial: Tutorial
 editThisPage: Edit this page
 loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+recipes: Recipes
+various: Various
+sewing: Sewing
+examples: Examples
+by: by
+years: Years
+pricing: Pricing
+createFirst: Start by creating a new pattern
+noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
+modelFirst: Start by creating a model
+noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
+noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
+noUserBrowsingTitle: "You can't just browse all users"
+noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
+useRecipeModel: "Use the recipe's model"
+createReplica: Create a replica
+showDetails: Show details
+clickBelowToLogOut: Click below to log out
+compare: Compare
+saveRecipe: Save recipe
+exportPattern: Export pattern
+recreate: Recreate
+seeYouLaterUser: See you later {user}
+exportForPrinting: Export for printing
+exportForEditing: Export for editing
+exportRecipe: Export recipe

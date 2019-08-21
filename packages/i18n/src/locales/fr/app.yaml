@@ -3,7 +3,7 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-aboutGist1: Un résumé contient toutes les informations nécessaires pour dessiner un rédiger un ébauche.
+aboutGist1: Un résumé contient toutes les informations nécessaires pour ébaucher un patron.
 aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
 account: Compte
 accountCreated: Compte créé
@@ -11,9 +11,11 @@ actions: Actions
 allDocumentation: Toute la documentation
 andThatIsAwesome: Et c'est génial
 applyThisLayout: Appliquer cette mise en page
-areYouSureYouWantToContinue: Es-tu sur de vouloir continuer?
+areYouSureYouWantToContinue: Êtes-vous sûr de vouloir continuer?
 askForHelp: Demander de l'aide
 automatic: Automatique
+averagePeopleDoNotExist: "Les personnes moyennes n'existent pas"
+awesome: Incroyable
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
@@ -119,6 +121,8 @@ name: Nom
 newDraftFromGist: Nouveau ébauche a partir d'un résumé
 newDraft: Nouvelle ébauche
 newModel: Nouveau modèle
+newPattern: 'Nouveau {pattern}'
+newPatternForModel: 'Nouveau {pattern} pour {model}'
 noChanges: Pas de changement
 no: false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
@@ -127,17 +131,18 @@ notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible e
 notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
 ohNo: Oh non !
+oneMoreThing: Encore une chose
 options: Options
 orPayPerYear: Ou payer par an
 other: Autre
 otherThing: "Autres {thing}"
 ourPatrons: Notre mécènes
-patron-2: Powder monkey
+patron-2: Singe Dynamite
 patron-4: Second
 patron-8: Capitaine
 patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
 patron: Mécène
-patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez épargner quelques pièces chaque mois, vous devriez également devenir un mécène de Freesewing.
+patronPitch: Si vous pensez que ce que nous faisons en vaut la peine, et si vous pouvez consacrer quelques pièces chaque mois sans trop de difficulté, vous aussi pourriez devenir mécène de FreeSewing.
 patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
@@ -196,7 +201,7 @@ txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre d
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
 txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
 txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
-txt-tiers: "Freesewing est financé par un modèle d'abonnement volontaire à quatre niveaux:"
+txt-tiers: "Freesewing est financé par un modèle de souscription volontaire"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 update: Mettre à jour
@@ -212,15 +217,43 @@ weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quico
 whatIsThis: Qu'est-ce que c'est
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
-yay: Yay!
+yay: Yahou !
 yes: true
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
 yourRights: Vos droits
-makerDocs: Documentation créateur
-devDocs: Documentation développeur
-getStarted: Commencer
-apiReference: Référence de l'API
+makerDocs: Documentation pour les couturiers
+devDocs: Documentation pour les développeurs
+slogan: Une librairie JavaScript pour des patrons de couture sur mesure
+getStarted: Pour démarrer
+apiReference: Référence API
 tutorial: Tutoriel
-
+editThisPage: Éditer cette page
+loginRequiredRedirect: 'Vous avez été redirigé vers cette page car {page} requiert une authentification'
+recipes: Recettes
+various: Divers
+sewing: Couture
+examples: Exemples
+by: par
+years: Des années
+pricing: Nos montants de donation
+createFirst: Commencer en créant un nouveau patron
+noRecipe: Vous n'avez pas (encore) de recettes. Créez un nouveau patron, puis sauvegardez sa recette.
+modelFirst: Commencer par créer un modèle
+noModel: Vous n'avez pas (encore) de modèle. FreeSewing génère des patrons de couture sur mesure. Et nous ne pouvons pas générer de patron si nous n'avons pas de mesures.
+noModel2: La première chose que vous devriez faire est de créer un modèle avec vos mesures, ou les mesures de la personne pour laquelle vous souhaitez créer un patron.
+noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisateurs"
+noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
+useRecipeModel: "Utiliser le modèle de la recette"
+createReplica: Créer une réplique
+showDetails: Voir les détails
+clickBelowToLogOut: Cliquez ci-dessous pour vous déconnecter
+compare: Comparer
+saveRecipe: Sauvegarder la recette
+exportPattern: Exporter le patron
+recreate: Recréer
+seeYouLaterUser: À plus tard {user}
+exportForPrinting: Exporter pour l'impression
+exportForEditing: Exporter pour édition
+exportRecipe: Exporter la recette

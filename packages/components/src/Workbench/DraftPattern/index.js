@@ -5,6 +5,8 @@ import Design from "../Design";
 import DraftConfigurator from "../../DraftConfigurator";
 import { FormattedMessage } from "react-intl";
 import Prism from "prismjs";
+import fileSaver from "file-saver";
+import theme from "@freesewing/plugin-theme";
 
 const DraftPattern = props => {
   const [design, setDesign] = useState(true);
@@ -29,6 +31,23 @@ const DraftPattern = props => {
 
     setFocus(f);
   };
+
+  const svgToFile = svg => {
+    const blob = new Blob([svg], {
+      type: "image/svg+xml;charset=utf-8"
+    });
+    fileSaver.saveAs(blob, "freesewing-" + props.config.name + ".svg");
+  };
+
+  if (props.svgExport) {
+    svgToFile(
+      new props.Pattern(props.gist.settings)
+        .use(theme)
+        .draft()
+        .render()
+    );
+    props.setSvgExport(false);
+  }
 
   const styles = {
     paragraph: {

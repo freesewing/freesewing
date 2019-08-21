@@ -1,9 +1,9 @@
 function Option(config) {
-  this.id = config.id;
-  this.config = config;
-  this.val = config.val;
+  this.id = config.id
+  this.config = config
+  this.val = config.val
 
-  return this;
+  return this
 }
 
-export default Option;
+export default Option

@@ -1,16 +1,13 @@
 export default function(part) {
-  let { Point, points, Path, paths, measurements, options } = part.shorthand();
+  let { Point, points, Path, paths, measurements, options } = part.shorthand()
 
-  let width = measurements.headCircumference * options.widthRatio;
-  let length = measurements.headCircumference * options.lengthRatio;
+  let width = measurements.headCircumference * options.widthRatio
+  let length = measurements.headCircumference * options.lengthRatio
 
-  points.topLeft = new Point(
-    width / -2,
-    points.top.y - (width / 2 - points.right.x)
-  );
-  points.topRight = points.topLeft.shift(0, width);
-  points.bottomLeft = points.topLeft.shift(-90, length);
-  points.bottomRight = points.topRight.shift(-90, length);
+  points.topLeft = new Point(width / -2, points.top.y - (width / 2 - points.right.x))
+  points.topRight = points.topLeft.shift(0, width)
+  points.bottomLeft = points.topLeft.shift(-90, length)
+  points.bottomRight = points.topRight.shift(-90, length)
 
   paths.rect = new Path()
     .move(points.topLeft)
@@ -18,7 +15,7 @@ export default function(part) {
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
-    .close();
+    .close()
 
-  return part;
+  return part
 }

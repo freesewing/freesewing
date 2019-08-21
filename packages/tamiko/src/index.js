@@ -1,13 +1,13 @@
-import freesewing from "@freesewing/core";
-import plugins from "@freesewing/plugin-bundle";
-import config from "../config";
+import freesewing from '@freesewing/core'
+import plugins from '@freesewing/plugin-bundle'
+import config from '../config'
 // Parts
-import draftTop from "./top";
+import draftTop from './top'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins);
+const Pattern = new freesewing.Design(config, plugins)
 
 // Part draft method
-Pattern.prototype.draftTop = part => draftTop(part);
+Pattern.prototype.draftTop = part => draftTop(part)
 
-export default Pattern;
+export default Pattern

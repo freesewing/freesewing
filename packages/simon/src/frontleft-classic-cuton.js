@@ -1,4 +1,4 @@
-import { addButtonHoles } from "./shared";
+import { addButtonHoles } from './shared'
 
 export default part => {
   let {
@@ -12,58 +12,31 @@ export default part => {
     paperless,
     macro,
     options
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let fold = options.buttonholePlacketFoldWidth;
-  let width = options.buttonholePlacketWidth;
-  points.placketCfNeck = points.cfNeck.shift(180, fold * 2);
-  points.placketTopInnerEdgeFold = points.placketCfNeck.shift(0, width / 2);
-  points.placketTopInnerEdgeOver = points.placketCfNeck.shift(
-    0,
-    width / 2 - fold
-  );
-  points.placketTopInnerEdgeUnder = points.placketCfNeck.shift(
-    0,
-    width / 2 + fold
-  );
-  points.placketTopOuterEdgeFold = points.placketCfNeck.shift(180, width / 2);
-  points.placketTopOuterEdgeOver = points.placketCfNeck.shift(
-    180,
-    width / 2 - fold
-  );
-  points.placketTopOuterEdgeUnder = points.placketCfNeck.shift(
-    180,
-    width / 2 + fold
-  );
-  points.placketCfHem = points.cfHem.shift(180, fold * 2);
-  points.placketBottomInnerEdgeFold = points.placketCfHem.shift(0, width / 2);
-  points.placketBottomInnerEdgeOver = points.placketCfHem.shift(
-    0,
-    width / 2 - fold
-  );
-  points.placketBottomInnerEdgeUnder = points.placketCfHem.shift(
-    0,
-    width / 2 + fold
-  );
-  points.placketBottomOuterEdgeFold = points.placketCfHem.shift(180, width / 2);
-  points.placketBottomOuterEdgeOver = points.placketCfHem.shift(
-    180,
-    width / 2 - fold
-  );
-  points.placketBottomOuterEdgeUnder = points.placketCfHem.shift(
-    180,
-    width / 2 + fold
-  );
-  points.placketTopEdge = points.placketTopOuterEdgeFold.shift(180, width);
-  points.placketBottomEdge = points.placketBottomOuterEdgeFold.shift(
-    180,
-    width
-  );
+  let fold = options.buttonholePlacketFoldWidth
+  let width = options.buttonholePlacketWidth
+  points.placketCfNeck = points.cfNeck.shift(180, fold * 2)
+  points.placketTopInnerEdgeFold = points.placketCfNeck.shift(0, width / 2)
+  points.placketTopInnerEdgeOver = points.placketCfNeck.shift(0, width / 2 - fold)
+  points.placketTopInnerEdgeUnder = points.placketCfNeck.shift(0, width / 2 + fold)
+  points.placketTopOuterEdgeFold = points.placketCfNeck.shift(180, width / 2)
+  points.placketTopOuterEdgeOver = points.placketCfNeck.shift(180, width / 2 - fold)
+  points.placketTopOuterEdgeUnder = points.placketCfNeck.shift(180, width / 2 + fold)
+  points.placketCfHem = points.cfHem.shift(180, fold * 2)
+  points.placketBottomInnerEdgeFold = points.placketCfHem.shift(0, width / 2)
+  points.placketBottomInnerEdgeOver = points.placketCfHem.shift(0, width / 2 - fold)
+  points.placketBottomInnerEdgeUnder = points.placketCfHem.shift(0, width / 2 + fold)
+  points.placketBottomOuterEdgeFold = points.placketCfHem.shift(180, width / 2)
+  points.placketBottomOuterEdgeOver = points.placketCfHem.shift(180, width / 2 - fold)
+  points.placketBottomOuterEdgeUnder = points.placketCfHem.shift(180, width / 2 + fold)
+  points.placketTopEdge = points.placketTopOuterEdgeFold.shift(180, width)
+  points.placketBottomEdge = points.placketBottomOuterEdgeFold.shift(180, width)
 
   paths.seam
     .line(points.placketTopEdge)
     .line(points.placketBottomEdge)
-    .close();
+    .close()
 
   // Complete pattern?
   if (complete) {
@@ -71,73 +44,64 @@ export default part => {
     paths.frontCenter = new Path()
       .move(points.placketCfNeck)
       .line(points.placketCfHem)
-      .attr("class", "help");
+      .attr('class', 'help')
     paths.placketInnerEdgeFold = new Path()
       .move(points.placketTopInnerEdgeFold)
       .line(points.placketBottomInnerEdgeFold)
-      .attr("class", "dotted");
+      .attr('class', 'dotted')
     paths.placketInnerEdgeOver = new Path()
       .move(points.placketTopInnerEdgeOver)
       .line(points.placketBottomInnerEdgeOver)
-      .attr("class", "dotted");
+      .attr('class', 'dotted')
     paths.placketInnerEdgeUnder = new Path()
       .move(points.placketTopInnerEdgeUnder)
       .line(points.placketBottomInnerEdgeUnder)
-      .attr("class", "dotted");
+      .attr('class', 'dotted')
     paths.placketOuterEdgeFold = new Path()
       .move(points.placketTopOuterEdgeFold)
       .line(points.placketBottomOuterEdgeFold)
-      .attr("class", "dotted");
+      .attr('class', 'dotted')
     paths.placketOuterEdgeOver = new Path()
       .move(points.placketTopOuterEdgeOver)
       .line(points.placketBottomOuterEdgeOver)
-      .attr("class", "dotted");
+      .attr('class', 'dotted')
     paths.placketOuterEdgeUnder = new Path()
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)
-      .attr("class", "dotted");
-    points.placketEdgeWaist = new Point(
-      points.placketBottomEdge.x,
-      points.waist.y
-    );
-    points.placketEdgeArmhole = new Point(
-      points.placketBottomEdge.x,
-      points.armhole.y
-    );
-    points.placketEdgeHips = new Point(
-      points.placketBottomEdge.x,
-      points.hips.y
-    );
-    macro("sprinkle", {
-      snippet: "notch",
+      .attr('class', 'dotted')
+    points.placketEdgeWaist = new Point(points.placketBottomEdge.x, points.waist.y)
+    points.placketEdgeArmhole = new Point(points.placketBottomEdge.x, points.armhole.y)
+    points.placketEdgeHips = new Point(points.placketBottomEdge.x, points.hips.y)
+    macro('sprinkle', {
+      snippet: 'notch',
       on: [
-        "placketCfNeck",
-        "placketCfHem",
-        "placketEdgeArmhole",
-        "placketEdgeWaist",
-        "placketEdgeHips",
-        "placketTopInnerEdgeFold",
-        "placketTopInnerEdgeOver",
-        "placketTopInnerEdgeUnder",
-        "placketTopOuterEdgeFold",
-        "placketTopOuterEdgeOver",
-        "placketTopOuterEdgeUnder",
-        "placketBottomInnerEdgeFold",
-        "placketBottomInnerEdgeOver",
-        "placketBottomInnerEdgeUnder",
-        "placketBottomOuterEdgeFold",
-        "placketBottomOuterEdgeOver",
-        "placketBottomOuterEdgeUnder"
+        'placketCfNeck',
+        'placketCfHem',
+        'placketEdgeArmhole',
+        'placketEdgeWaist',
+        'placketEdgeHips',
+        'placketTopInnerEdgeFold',
+        'placketTopInnerEdgeOver',
+        'placketTopInnerEdgeUnder',
+        'placketTopOuterEdgeFold',
+        'placketTopOuterEdgeOver',
+        'placketTopOuterEdgeUnder',
+        'placketBottomInnerEdgeFold',
+        'placketBottomInnerEdgeOver',
+        'placketBottomInnerEdgeUnder',
+        'placketBottomOuterEdgeFold',
+        'placketBottomOuterEdgeOver',
+        'placketBottomOuterEdgeUnder'
       ]
-    });
-    delete snippets["cfWaist-notch"];
-    delete snippets["cfHips-notch"];
-    delete snippets["cfArmhole-notch"];
+    })
+    delete snippets['cfWaist-notch']
+    delete snippets['cfHips-notch']
+    delete snippets['cfArmhole-notch']
     // Buttons
-    addButtonHoles(part, "placketCfNeck");
+    addButtonHoles(part, 'placketCfNeck')
 
     // Title
-    macro("title", { at: points.title, nr: 2, title: "frontLeft" });
+    macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 
     if (sa) {
       paths.saFromArmhole
@@ -145,66 +109,66 @@ export default part => {
         .line(points.placketTopEdge)
         .move(points.placketBottomEdge)
         .line(points.placketBottomEdge.shift(-90, 3 * sa))
-        .line(paths.hemSa.start());
+        .line(paths.hemSa.start())
     }
   }
 
   // Paperless?
   if (paperless) {
-    macro("hd", {
+    macro('hd', {
       from: points.placketEdgeArmhole,
       to: points.armhole
-    });
-    macro("hd", {
+    })
+    macro('hd', {
       from: points.placketEdgeWaist,
       to: points.waist
-    });
-    macro("hd", {
+    })
+    macro('hd', {
       from: points.placketEdgeHips,
       to: points.hips
-    });
-    let offset = 0;
+    })
+    let offset = 0
     for (let pid of [
-      "placketTopOuterEdgeUnder",
-      "placketTopOuterEdgeFold",
-      "placketTopOuterEdgeOver",
-      "placketCfNeck",
-      "placketTopInnerEdgeOver",
-      "placketTopInnerEdgeFold",
-      "placketTopInnerEdgeUnder"
+      'placketTopOuterEdgeUnder',
+      'placketTopOuterEdgeFold',
+      'placketTopOuterEdgeOver',
+      'placketCfNeck',
+      'placketTopInnerEdgeOver',
+      'placketTopInnerEdgeFold',
+      'placketTopInnerEdgeUnder'
     ]) {
-      offset += 15;
-      macro("hd", {
+      offset += 15
+      macro('hd', {
         from: points.placketTopEdge,
         to: points[pid],
         y: points.placketTopEdge.y - offset - sa
-      });
+      })
     }
-    macro("hd", {
+    macro('hd', {
       from: points.placketTopEdge,
       to: points.neck,
       y: points.placketTopEdge.y - offset - sa - 15
-    });
-    macro("hd", {
+    })
+    macro('hd', {
       from: points.placketTopEdge,
       to: points.shoulder,
       y: points.placketTopEdge.y - offset - sa - 30
-    });
-    points.button0 = points.placketTopEdge;
-    let j;
+    })
+    points.button0 = points.placketTopEdge
+    let j
     for (let i = 0; i < options.buttons; i++) {
-      j = i + 1;
-      macro("vd", {
-        from: points["button" + j],
-        to: points["button" + i],
+      j = i + 1
+      macro('vd', {
+        from: points['button' + j],
+        to: points['button' + i],
         x: points.placketTopEdge.x - 15
-      });
+      })
     }
-    macro("vd", {
+    macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
       x: points.placketTopEdge.x - 30
-    });
+    })
   }
-  return part;
-};
+  return part
+}

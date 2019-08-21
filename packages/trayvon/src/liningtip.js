@@ -1,9 +1,4 @@
-import {
-  calculateHelpers,
-  draftTieShape,
-  tieShapeDimensions,
-  seamAllowance
-} from "./shared";
+import { calculateHelpers, draftTieShape, tieShapeDimensions, seamAllowance } from './shared'
 
 export default part => {
   let {
@@ -17,17 +12,14 @@ export default part => {
     points,
     sa,
     snippets
-  } = part.shorthand();
+  } = part.shorthand()
 
-  calculateHelpers(part);
-  draftTieShape(part, options.tipWidth * 2.5, options.knotWidth * 2.5);
+  calculateHelpers(part)
+  draftTieShape(part, options.tipWidth * 2.5, options.knotWidth * 2.5)
 
   // Cut part short
-  points.cutRight = points.tipRight.shiftTowards(
-    points.midRight,
-    options.tipWidth * 2.5
-  );
-  points.cutLeft = points.cutRight.flipX();
+  points.cutRight = points.tipRight.shiftTowards(points.midRight, options.tipWidth * 2.5)
+  points.cutLeft = points.cutRight.flipX()
 
   // Overwrite path
   paths.seam = new Path()
@@ -38,25 +30,25 @@ export default part => {
     .line(points.tipRight)
     .line(points.tip)
     .close()
-    .attr("class", "lining");
+    .attr('class', 'lining')
 
   // Complete pattern?
   if (complete) {
-    macro("title", {
+    macro('title', {
       at: points.title,
       nr: 5,
-      title: "liningTip",
+      title: 'liningTip',
       rotation: -90
-    });
-    snippets.notch = new Snippet("notch", points.tip);
+    })
+    snippets.notch = new Snippet('notch', points.tip)
 
-    if (sa) seamAllowance(part, "lining");
+    if (sa) seamAllowance(part, 'lining')
   }
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part, true);
+    tieShapeDimensions(part, true)
   }
 
-  return part;
-};
+  return part
+}

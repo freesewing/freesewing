@@ -1,85 +1,98 @@
-const path = require("path");
-const fse = require("fs-extra");
-const patterns = require("@freesewing/patterns");
+const path = require('path')
+const fse = require('fs-extra')
+const patterns = require('@freesewing/patterns')
 
 const patternOptions = config => {
-  let all = [];
-  let groups = config.optionGroups;
+  let all = []
+  let groups = config.optionGroups
   for (let group of Object.keys(groups)) {
     for (let option of groups[group]) {
-      if (typeof option === "string") all.push(option);
+      if (typeof option === 'string') all.push(option)
       else {
         for (let subgroup of Object.keys(option)) {
-          for (let suboption of option[subgroup]) all.push(suboption);
+          for (let suboption of option[subgroup]) all.push(suboption)
         }
       }
     }
   }
 
-  return all;
-};
+  return all
+}
 
 const patternParts = config => {
-  let parts = {};
+  let parts = {}
   if (config.parts) {
-    for (let p of config.parts) parts[p] = p;
+    for (let p of config.parts) parts[p] = p
   }
   if (config.dependencies) {
     for (let p of Object.keys(config.dependencies)) {
-      parts[p] = p;
-      if (typeof config.dependencies[p] === "string") {
-        parts[config.dependencies[p]] = config.dependencies[p];
+      parts[p] = p
+      if (typeof config.dependencies[p] === 'string') {
+        parts[config.dependencies[p]] = config.dependencies[p]
       } else {
-        for (let d of config.dependencies[p]) parts[d] = d;
+        for (let d of config.dependencies[p]) parts[d] = d
       }
     }
   }
   if (config.inject) {
     for (let p of Object.keys(config.inject)) {
-      parts[p] = p;
-      parts[config.inject[p]] = config.inject[p];
+      parts[p] = p
+      parts[config.inject[p]] = config.inject[p]
     }
   }
   if (config.hide) {
-    for (let p of config.hide) delete parts[p];
+    for (let p of config.hide) delete parts[p]
   }
 
-  return Object.keys(parts);
-};
-
-let options = {};
-let optionGroups = {};
-let parts = {};
-let measurements = {};
-let versions = {};
-for (let pattern of Object.keys(patterns)) {
-  //console.log(pattern);
-  let instance = new patterns[pattern]();
-  let p = pattern.toLowerCase();
-  options[p] = patternOptions(instance.config);
-  optionGroups[p] = instance.config.optionGroups;
-  parts[p] = patternParts(instance.config);
-  measurements[p] = instance.config.measurements;
-  versions[p] = instance.config.version;
+  return Object.keys(parts)
 }
 
+let options = {}
+let optionGroups = {}
+let parts = {}
+let measurements = {}
+let versions = {}
+let info = {}
+for (let pattern of Object.keys(patterns)) {
+  let instance = new patterns[pattern]()
+  let p = pattern.toLowerCase()
+  options[p] = patternOptions(instance.config)
+  optionGroups[p] = instance.config.optionGroups
+  parts[p] = patternParts(instance.config)
+  measurements[p] = instance.config.measurements
+  versions[p] = instance.config.version
+  info[p] = {
+    design: instance.config.design,
+    code: instance.config.code,
+    department: instance.config.department,
+    type: instance.config.type,
+    difficulty: instance.config.difficulty,
+    tags: instance.config.tags
+  }
+}
+
+fse.mkdirSync(path.join('.', 'src', 'prebuild'), { recursive: true })
 fse.writeFileSync(
-  path.join(".", "src", "prebuild", "options.js"),
-  "module.exports = " + JSON.stringify(options) + "\n"
-);
+  path.join('.', 'src', 'prebuild', 'options.js'),
+  'module.exports = ' + JSON.stringify(options) + '\n'
+)
 fse.writeFileSync(
-  path.join(".", "src", "prebuild", "option-groups.js"),
-  "module.exports = " + JSON.stringify(optionGroups) + "\n"
-);
+  path.join('.', 'src', 'prebuild', 'option-groups.js'),
+  'module.exports = ' + JSON.stringify(optionGroups) + '\n'
+)
 fse.writeFileSync(
-  path.join(".", "src", "prebuild", "parts.js"),
-  "module.exports = " + JSON.stringify(parts) + "\n"
-);
+  path.join('.', 'src', 'prebuild', 'parts.js'),
+  'module.exports = ' + JSON.stringify(parts) + '\n'
+)
 fse.writeFileSync(
-  path.join(".", "src", "prebuild", "measurements.js"),
-  "module.exports = " + JSON.stringify(measurements) + "\n"
-);
+  path.join('.', 'src', 'prebuild', 'measurements.js'),
+  'module.exports = ' + JSON.stringify(measurements) + '\n'
+)
 fse.writeFileSync(
-  path.join(".", "src", "prebuild", "versions.js"),
-  "module.exports = " + JSON.stringify(versions) + "\n"
-);
+  path.join('.', 'src', 'prebuild', 'versions.js'),
+  'module.exports = ' + JSON.stringify(versions) + '\n'
+)
+fse.writeFileSync(
+  path.join('.', 'src', 'prebuild', 'info.js'),
+  'module.exports = ' + JSON.stringify(info) + '\n'
+)

@@ -14,6 +14,8 @@ applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
 askForHelp: Vraag om hulp
 automatic: Automatisch
+averagePeopleDoNotExist: "Gemiddelde mensen bestaan niet"
+awesome: Super
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
@@ -119,6 +121,8 @@ name: Naam
 newDraftFromGist: Nieuwe patroontekening van resumé
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
+newPattern: 'Nieuw {pattern}'
+newPatternForModel: 'Nieuwe {pattern} voor {model}'
 noChanges: Geen wijzigingen
 no: false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
@@ -127,6 +131,7 @@ notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in 
 notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
+oneMoreThing: En dan nog dit
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
@@ -137,7 +142,7 @@ patron-4: Eerste stuurman
 patron-8: Kapitein
 patronHelp: Neem contact op met Joost als u vragen heeft of wijzigingen wilt aanbrengen in uw mecenas-status.
 patron: Mecenas
-patronPitch: Als je denkt dat wat we doen de moeite waard is, en als je elke maand een paar munten kunt missen, dan moet jij ook een mecenas worden van freesewing.
+patronPitch: Als je denkt dat wat we doen de moeite is, en je kan maandelijks een paar centen missen zonder droog brood te moeten eten, wil je misschien overwegen om sponsor te worden van FreeSewing.
 patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
@@ -196,7 +201,7 @@ txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "FreeSewing wordt gefinancierd door een vrijwillig abonnementsmodel met vier opties:"
+txt-tiers: "FreeSewing draait op een vrijwillig subscriptiemodel"
 unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 update: Bijwerken
@@ -219,8 +224,36 @@ youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
 yourRights: Jouw rechten
 makerDocs: Maker documentatie
-devDocs: Ontwikkelaar documentatie
+devDocs: Documentatie voor ontwikkelaars
+slogan: Een JavaScript bibliotheek voor naaipatronen op maat
 getStarted: Aan de slag
-apiReference: API-referentie
-tutorial: Stap voor stap
-
+apiReference: API Referentie
+tutorial: Handleiding
+editThisPage: Deze pagina bewerken
+loginRequiredRedirect: 'U bent doorgestuurd naar de inlogpagina omdat {page} authenticatie vereist'
+recipes: Recepten
+various: Overige
+sewing: Naaien
+examples: Voorbeelden
+by: door
+years: Jaren
+pricing: Prijzen
+createFirst: Begin een nieuw patroon te maken
+noRecipe: Je hebt (nog) geen recepten. Maak een nieuw patroon, en sla dan het recept op.
+modelFirst: Begin door een model te maken
+noModel: Je hebt (nog) geen modellen. FreeSewing genereert naaipatronen op maar. We kunnen geen patronen maken als we geen maten hebben.
+noModel2: Dus wat je als eerste moet doen is een model maken met jouw maten, of de maten van de persoon waar je een patroon voor wil maken.
+noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
+noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
+useRecipeModel: "Gebruik het model van het recept"
+createReplica: Creëer een replica
+showDetails: Toon details
+clickBelowToLogOut: Klik hieronder om uit te loggen
+compare: Vergelijk
+saveRecipe: Recept opslaan
+exportPattern: Patroon exporteren
+recreate: Opnieuw aanmaken
+seeYouLaterUser: Tot later {user}
+exportForPrinting: Exporteren om te printen
+exportForEditing: Exporteren om te bewerken
+exportRecipe: Exporteer recept

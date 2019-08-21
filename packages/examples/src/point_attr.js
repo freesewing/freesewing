@@ -1,11 +1,11 @@
-import { box } from "./shared";
+import { box } from './shared'
 
 export default part => {
-  let { Point, points } = part.shorthand();
+  let { Point, points } = part.shorthand()
 
   points.anchor = new Point(100, 25)
-    .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-    .attr("data-text-class", "center");
+    .attr('data-text', 'freesewingIsMadeByJoostDeCockAndContributors')
+    .attr('data-text-class', 'center')
 
-  return box(part, 200, 50);
-};
+  return box(part, 200, 50)
+}

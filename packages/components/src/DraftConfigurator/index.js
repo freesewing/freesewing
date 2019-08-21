@@ -15,6 +15,7 @@ const DraftConfigurator = props => {
           noDocs={props.noDocs}
           config={props.config}
           gist={props.gist}
+          recipe={props.recipe}
           updateValue={(name, value) =>
             props.updateGist(value, "settings", "options", name)
           }
@@ -28,6 +29,7 @@ const DraftConfigurator = props => {
           noDocs={props.noDocs}
           config={props.config}
           gist={props.gist}
+          recipe={props.recipe}
           updateValue={(name, value) =>
             props.updateGist(value, "settings", name)
           }

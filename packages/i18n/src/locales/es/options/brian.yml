@@ -6,8 +6,8 @@ armholeDepthFactor:
   title: Factor de profundidad de la sisa
   description: Controla la profundidad de la sisa. Valores más altos producen sisas más profundas.
 backNeckCutout:
-  title: Back neck cutout
-  description: How deep the neck is cut out at the back
+  title: Corte trasero del cuello
+  description: Cómo de profundo es el cuello por detrás
 bicepsEase:
   title: Holgura del bíceps
   description: 'La cantidad de holgura en la parte superior del brazo. Ten en cuenta que, aunque intentamos repetar esto, ajustar la manga a la sisa toma preferencia sobre respetar la cantidad exacta de holgura.'

@@ -1,30 +1,44 @@
 export default function(part) {
-  let { paperless, sa, snippets, Snippet, store, complete, points, measurements, options, macro, Point, paths, Path } = part.shorthand();
+  let {
+    paperless,
+    sa,
+    snippets,
+    Snippet,
+    store,
+    complete,
+    points,
+    measurements,
+    options,
+    macro,
+    Point,
+    paths,
+    Path
+  } = part.shorthand()
 
-  let length = 1.6 * (store.get("cbToDart") + store.get("dartToSide"));
-  let width = measurements.centerBackNeckToWaist * options.beltWidth;
+  let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
+  let width = measurements.centerBackNeckToWaist * options.beltWidth
 
-  points.topLeft = new Point(0, 0);
-  points.topRight = new Point(length, 0);
-  points.bottomLeft = new Point(0, width);
-  points.bottomRight = new Point(length, width);
-  points.button = new Point(width/2, width/2);
-  macro("round", {
+  points.topLeft = new Point(0, 0)
+  points.topRight = new Point(length, 0)
+  points.bottomLeft = new Point(0, width)
+  points.bottomRight = new Point(length, width)
+  points.button = new Point(width / 2, width / 2)
+  macro('round', {
     from: points.topRight,
     to: points.bottomLeft,
     via: points.topLeft,
-    prefix: "roundTop",
-    radius: width/4,
+    prefix: 'roundTop',
+    radius: width / 4,
     render: true
-  });
-  macro("round", {
+  })
+  macro('round', {
     from: points.topLeft,
     to: points.bottomRight,
     via: points.bottomLeft,
-    prefix: "roundBottom",
-    radius: width/4,
+    prefix: 'roundBottom',
+    radius: width / 4,
     render: true
-  });
+  })
 
   // Paths
   paths.seam = new Path()
@@ -36,50 +50,44 @@ export default function(part) {
     .line(points.topRight)
     .line(points.roundTopStart)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   if (complete) {
-    snippets.button = new Snippet("button", points.button).attr("data-scale", 2);
-    points.title = new Point(
-      points.bottomRight.x/2,
-      points.bottomRight.y/2
-    );
-    macro("title", {
+    snippets.button = new Snippet('button', points.button).attr('data-scale', 2)
+    points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
+    macro('title', {
       at: points.title,
       nr: 6,
-      title: "belt"
-    });
-    points.logo = new Point(
-      points.bottomRight.x * 0.75,
-      points.bottomRight.y * 0.65
-    );
-    snippets.logo = new Snippet("logo", points.logo);
+      title: 'belt'
+    })
+    points.logo = new Point(points.bottomRight.x * 0.75, points.bottomRight.y * 0.65)
+    snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {
-      macro("hd", {
+      macro('hd', {
         from: points.roundBottomStart,
         to: points.roundBottomEnd,
         y: points.roundBottomEnd.y + sa + 15
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.roundBottomStart,
         to: points.button,
         y: points.roundBottomEnd.y + sa + 30
-      });
-      macro("hd", {
+      })
+      macro('hd', {
         from: points.roundBottomStart,
         to: points.bottomRight,
         y: points.roundBottomEnd.y + sa + 45
-      });
-      macro("vd", {
+      })
+      macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
         x: points.topRight.x + sa + 15
-      });
+      })
     }
   }
 
-  return part;
+  return part
 }

@@ -1,5 +1,6 @@
 ---
 acrossBack: Largeur du dos (obsolète)
+ankleCircumference: Tour de cheville
 bicepsCircumference: Tour de bras
 bustSpan: Ecart de poitrine
 centerBackNeckToWaist: Hauteur dos
@@ -10,6 +11,7 @@ highPointShoulderToBust: Hauteur de poitrine
 hipsCircumference: Tour des petites hanches
 hipsToUpperLeg: Hauteur des hanches à l'entrejambe
 inseam: Longueur d'entrejambe
+kneeCircumference: Tour de genou
 naturalWaist: Tour de taille
 naturalWaistToFloor: Hauteur de taille
 naturalWaistToHip: Longueur de la taille jusqu'aux petites hanches

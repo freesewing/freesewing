@@ -4,55 +4,58 @@ aaron:
   title: Camiseta Aaron
 benjamin:
   description: Benjamin es un patrón de pajarita con cuatro estilos diferentes.
-  title: Pajarita Benjamin
+  title: Benjamin bow tie
 bent:
   description: Este patrón con manga sastre es la base del molde de nuestro abrigo y de nuestra chaqueta.
-  title: Patrón Base Bent
+  title: Bent body Block
 brian:
   description: Brian es el patrón base de cuerpo para hombre.
-  title: Patrón Base Brian
+  title: Brian body block
 bruce:
   description: Bruce es un bóxer cerrado cómodo y elegante.
-  title: ' Bóxer Cerrado Bruce'
+  title: Bruce boxer briefs
 carlita:
   description: 'La versión para mujer de nuestro abrigo Carlton, también conocido como el abrigo Sherlock Holmes.'
-  title: Abrigo Carlita
+  title: Carlita coat
 carlton:
   description: 'Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.'
-  title: Abrigo Carlton
+  title: Carlton coat
 cathrin:
   description: Cathrin es un corsé bajo pecho o reductor de la cintura.
-  title: Corsé Cathrin
+  title: Cathrin corset
 florent:
   description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
-  title: Boina Plana Florent
+  title: Florent flat cap
 huey:
   description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
-  title: Sudadera con Capucha Huey
+  title: Huey hoodie
 hugo:
   description: Hugo es una sudadera con capucha y manga ranglán.
-  title: Sudadera con Capucha Hugo
+  title: Hugo hoodie
 jaeger:
   description: Jeager es una blazer informal con dos botones y bolsillos estilo parche.
-  title: Chaqueta Jaeger
+  title: Jaeger jacket
+sandy:
+  description: Sandy is an adaptable circle skirt pattern
+  title: Sandt circle skirt
+shin:
+  description: Shin are atheltic swim trunks for men
+  title: Shin swim trunks
 simon:
   description: Simon es un patrón de camisa de hombre con múltiples opciones.
-  title: Camisa Simon
+  title: Simon shirt
 sven:
   description: Sven es una sudadera de líneas sencillas.
-  title: Sudadera Sven
+  title: Sven sweatshirt
 tamiko:
   description: Tamiko es un top cero residuos.
-  title: Top Tamiko
+  title: Tamiko top
 theo:
-  description: Theo es una versión de Theodore con un corte más ajustado.
+  description: Theo is a classic trouser pattern.
   title: Pantalones Theo
-theodore:
-  description: Thedore es el pantalón de corte clásico basado en el libro de (Aldrich).
-  title: Pantalones Theodore
 trayvon:
   description: Trayvon es una corbata que no toma atajos para un resultado profesional.
-  title: Corbata Trayvon
+  title: Trayvon tie
 wahid:
   description: Wahid es el clásico chaleco entallado.
-  title: Chaleco Wahid
+  title: Wahid waistcoat

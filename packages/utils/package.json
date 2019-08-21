@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.0.0-beta.28",
+  "version": "2.0.0-beta.42",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,9 +35,26 @@
   "dependencies": {},
   "devDependencies": {},
   "files": [
-    "dist/*",
-    "README.md",
-    "package.json"
+    "backend/*",
+    "camelCase/*",
+    "capitalize/*",
+    "cloneObject/*",
+    "defaultGist/*",
+    "defaultSa/*",
+    "formatImperial/*",
+    "formatMm/*",
+    "optionDefault/*",
+    "optionType/*",
+    "roundMm/*",
+    "roundMmDown/*",
+    "roundMmUp/*",
+    "sliderStep/*",
+    "smallestImperialStep/*",
+    "storage/*",
+    "tiler/*",
+    "measurementAsMm/*",
+    "validateEmail/*",
+    "validateTld/*"
   ],
   "publishConfig": {
     "access": "public",

@@ -1,10 +1,10 @@
 export default part => {
-  let { Point, points, Path, paths, macro } = part.shorthand();
+  let { Point, points, Path, paths, macro } = part.shorthand()
 
-  points.topLeft = new Point(0, 0);
-  points.bottomLeft = new Point(0, 30);
-  points.topRight = new Point(100, 0);
-  points.bottomRight = new Point(100, 30);
+  points.topLeft = new Point(0, 0)
+  points.bottomLeft = new Point(0, 30)
+  points.topRight = new Point(100, 0)
+  points.bottomRight = new Point(100, 30)
 
   paths.demo = new Path()
     .move(points.topLeft)
@@ -12,24 +12,24 @@ export default part => {
     .line(points.bottomRight)
     .line(points.topRight)
     .close()
-    .attr("class", "note dashed");
+    .attr('class', 'note dashed')
 
-  macro("round", {
+  macro('round', {
     from: points.topLeft,
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: 10,
-    prefix: "bl",
+    prefix: 'bl',
     render: true
-  });
-  macro("round", {
+  })
+  macro('round', {
     from: points.bottomRight,
     to: points.topLeft,
     via: points.topRight,
     radius: 20,
-    prefix: "tr",
+    prefix: 'tr',
     render: true
-  });
+  })
 
-  return part;
-};
+  return part
+}

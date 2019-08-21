@@ -1,5 +1,5 @@
-import roundMm from "./roundMm";
-import formatImperial from "./formatImperial";
+import roundMm from "../roundMm";
+import formatImperial from "../formatImperial";
 
 const formatMm = (val, units, format = "html") => {
   val = roundMm(val);

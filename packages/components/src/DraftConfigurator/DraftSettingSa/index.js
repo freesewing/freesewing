@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import FormFieldList from "../../.form/FormFieldList";
 import FormFieldSlider from "../../.form/FormFieldSlider";
-import { formatMm, roundMm, defaultSa, sliderStep } from "@freesewing/utils";
+import formatMm from "@freesewing/utils/formatMm";
+import roundMm from "@freesewing/utils/roundMm";
+import defaultSa from "@freesewing/utils/defaultSa";
+import sliderStep from "@freesewing/utils/sliderStep";
 import OptionPreamble from "../OptionPreamble";
 
 const DraftSettingSa = props => {
