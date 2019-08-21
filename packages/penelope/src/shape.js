@@ -34,10 +34,11 @@ function BuildMainShape(part, frontPart) {
     measurements.seatCircumference > waist
       ? measurements.seatCircumference
       : waist;
-  let hip =
+  /*let hip =
     measurements.hipsCircumference > waist
       ? measurements.hipsCircumference
       : waist;
+  */
 
   dartCalc(options, seat, seatEase, waist, waistEase);
 
