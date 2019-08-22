@@ -22,6 +22,8 @@ carlton:
     innerPocketWidth: jaeger
     innerPocketDepth: jaeger
     innerPocketWeltHeight: jaeger
+carlita:
+  dflt: carlton
 huey:
   dflt: brian
   other:
@@ -60,3 +62,5 @@ wahid:
   other:
     hipsEase: aaron
     waistEase: simon
+    centerBackDart: jaeger
+    buttons: simon
