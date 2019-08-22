@@ -19,4 +19,4 @@ hoodDepth:
   description: Contrôle la profondeur de la hotte
 hoodAngle:
   title: Angle du capuchon
-  description: Contrôle l'angle auquel la hotte est fixée
+  description: Controls the angle at which the hood is attached
