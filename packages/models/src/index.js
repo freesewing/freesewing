@@ -78,7 +78,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 620,
     naturalWaistToSeat: 260,
     seatDepth: 180,
-    shoulderToElbow: 370
+    shoulderToElbow: 370,
+    seatCircumference: 840
   },
   size36: {
     bicepsCircumference: 290,
@@ -103,7 +104,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 630,
     naturalWaistToSeat: 265,
     seatDepth: 185,
-    shoulderToElbow: 375
+    shoulderToElbow: 375,
+    seatCircumference: 900
   },
   size38: {
     bicepsCircumference: 305,
@@ -128,7 +130,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 640,
     naturalWaistToSeat: 270,
     seatDepth: 190,
-    shoulderToElbow: 380
+    shoulderToElbow: 380,
+    seatCircumference: 960
   },
   size40: {
     bicepsCircumference: 320,
@@ -153,7 +156,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 650,
     naturalWaistToSeat: 275,
     seatDepth: 195,
-    shoulderToElbow: 385
+    shoulderToElbow: 385,
+    seatCircumference: 1020
   },
   size42: {
     bicepsCircumference: 335,
@@ -180,7 +184,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 660,
     naturalWaistToSeat: 280,
     seatDepth: 200,
-    shoulderToElbow: 390
+    shoulderToElbow: 390,
+    seatCircumference: 1080
   },
   size44: {
     bicepsCircumference: 350,
@@ -205,7 +210,8 @@ export const withoutBreasts = {
     naturalWaistToKnee: 670,
     naturalWaistToSeat: 285,
     seatDepth: 205,
-    shoulderToElbow: 395
+    shoulderToElbow: 395,
+    seatCircumference: 1140
   }
 }
 
