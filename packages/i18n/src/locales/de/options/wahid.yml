@@ -14,3 +14,30 @@ pocketWidth:
 weltHeight:
   title: Welthöhe
   description: Bestimmt die Höhe des Welt
+necklineDrop:
+  title: Neckline drop
+  description: Determines how low the neckline drops at the front
+frontStyle:
+  title: Neck opening style
+  description: Style of the neck opening
+hemStyle:
+  title: Hem style
+  description: Style of the front hem
+hemRadius:
+  title: Hem radius
+  desciption: Radius by which the hem is rounded
+backInset:
+  title: Back inset
+  description: How much the back of the armhole is cut inwards
+frontInset:
+  title: Front inset
+  description: How much the front of the armhole is cut inwards
+shoulderInset:
+  title: Shoulder inset
+  description: How much the shoulder seam is cut inwards at the shoulder
+neckInset:
+  title: Neck inset
+  description: How much the shoulder seam is cut inwards at the neck
+pocketAngle:
+  title: Pocket angle
+  description: Angle of the pocket slant
