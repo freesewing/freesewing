@@ -4,6 +4,7 @@ export default part => {
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
+  if (!complete) return part
 
   // Seam line
   paths.seam = new Path()
