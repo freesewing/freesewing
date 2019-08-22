@@ -68,7 +68,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 419,
     shoulderToWrist: 670,
     upperLegCircumference: 565,
-    wristCircumference: 175
+    wristCircumference: 175,
+
+    ankleCircumference: 230,
+    inseam: 820,
+    kneeCircumference: 380,
+    naturalWaist: 785,
+    naturalWaistToFloor: 85,
+    naturalWaistToKnee: 620,
+    naturalWaistToSeat: 260,
+    seatDepth: 180,
+    shoulderToElbow: 370
   },
   size36: {
     bicepsCircumference: 290,
@@ -83,7 +93,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 431,
     shoulderToWrist: 675,
     upperLegCircumference: 582,
-    wristCircumference: 180
+    wristCircumference: 180,
+
+    ankleCircumference: 235,
+    inseam: 835,
+    kneeCircumference: 390,
+    naturalWaist: 820,
+    naturalWaistToFloor: 95,
+    naturalWaistToKnee: 630,
+    naturalWaistToSeat: 265,
+    seatDepth: 185,
+    shoulderToElbow: 375
   },
   size38: {
     bicepsCircumference: 305,
@@ -98,7 +118,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 444,
     shoulderToWrist: 680,
     upperLegCircumference: 598,
-    wristCircumference: 185
+    wristCircumference: 185,
+
+    ankleCircumference: 240,
+    inseam: 850,
+    kneeCircumference: 400,
+    naturalWaist: 855,
+    naturalWaistToFloor: 105,
+    naturalWaistToKnee: 640,
+    naturalWaistToSeat: 270,
+    seatDepth: 190,
+    shoulderToElbow: 380
   },
   size40: {
     bicepsCircumference: 320,
@@ -113,7 +143,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 457,
     shoulderToWrist: 685,
     upperLegCircumference: 614,
-    wristCircumference: 190
+    wristCircumference: 190,
+
+    ankleCircumference: 245,
+    inseam: 865,
+    kneeCircumference: 410,
+    naturalWaist: 890,
+    naturalWaistToFloor: 115,
+    naturalWaistToKnee: 650,
+    naturalWaistToSeat: 275,
+    seatDepth: 195,
+    shoulderToElbow: 385
   },
   size42: {
     bicepsCircumference: 335,
@@ -130,7 +170,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 470,
     shoulderToWrist: 690,
     upperLegCircumference: 630,
-    wristCircumference: 195
+    wristCircumference: 195,
+
+    ankleCircumference: 250,
+    inseam: 880,
+    kneeCircumference: 420,
+    naturalWaist: 930,
+    naturalWaistToFloor: 125,
+    naturalWaistToKnee: 660,
+    naturalWaistToSeat: 280,
+    seatDepth: 200,
+    shoulderToElbow: 390
   },
   size44: {
     bicepsCircumference: 350,
@@ -145,7 +195,17 @@ export const withoutBreasts = {
     shoulderToShoulder: 483,
     shoulderToWrist: 700,
     upperLegCircumference: 646,
-    wristCircumference: 200
+    wristCircumference: 200,
+
+    ankleCircumference: 255,
+    inseam: 895,
+    kneeCircumference: 430,
+    naturalWaist: 945,
+    naturalWaistToFloor: 135,
+    naturalWaistToKnee: 670,
+    naturalWaistToSeat: 285,
+    seatDepth: 205,
+    shoulderToElbow: 395
   }
 }
 
