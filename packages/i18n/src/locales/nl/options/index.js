@@ -30,7 +30,8 @@ let patterns = {
   tamiko,
   trayvon,
   jaeger,
-  carlton
+  carlton,
+  carlita
 }
 
 let options = {}
