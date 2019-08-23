@@ -22,6 +22,36 @@ carlton:
     innerPocketWidth: jaeger
     innerPocketDepth: jaeger
     innerPocketWeltHeight: jaeger
+carlita:
+  dflt: brian
+  other:
+    sleeveBend: bent
+    waistEase: simon
+    frontOverlap: jaeger
+    lapelReduction: jaeger
+    sleevecapHeight: bent
+    pocketWidth: wahid
+    pocketHeight: huey
+    cuffLength: simon
+    collarSpread: jaeger
+    collarFlare: simon
+    chestPocketWidth: jaeger
+    chestPocketPlacement: jaeger
+    chestPocketAngle: jaeger
+    innerPocketPlacement: jaeger
+    innerPocketWidth: jaeger
+    innerPocketDepth: jaeger
+    innerPocketWeltHeight: jaeger
+    seatEase: carlton
+    pocketPlacementHorizontal: carlton
+    pocketPlacementVertical: carlton
+    collarHeight: carlton
+    length: carlton
+    pocketFlapRadius: carlton
+    pocketRadius: carlton
+    chestPocketHeight: carlton
+    beltWidth: carlton
+    buttonSpacingHorizontal: carlton
 huey:
   dflt: brian
   other:
@@ -60,3 +90,5 @@ wahid:
   other:
     hipsEase: aaron
     waistEase: simon
+    centerBackDart: jaeger
+    buttons: simon

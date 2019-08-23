@@ -19,7 +19,6 @@ const LineDrawing = props => {
 
 LineDrawing.propTypes = {
   size: PropTypes.number,
-  viewBox: PropTypes.string,
   pattern: PropTypes.string,
   style: PropTypes.object
 }

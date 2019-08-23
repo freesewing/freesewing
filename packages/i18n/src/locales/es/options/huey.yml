@@ -19,4 +19,4 @@ hoodDepth:
   description: Controla la profundidad del capucha
 hoodAngle:
   title: Angulo de capucha
-  description: Controla el ángulo en el que se fija la campana
+  description: Controls the angle at which the hood is attached

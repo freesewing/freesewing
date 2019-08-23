@@ -14,3 +14,30 @@ pocketWidth:
 weltHeight:
   title: Hoogte paspel zak
   description: De hoogte van de paspel van de zak
+necklineDrop:
+  title: Diepte halslijn
+  description: Bepaalt hoe laag de halslijn vooraan wordt
+frontStyle:
+  title: Stijl halsopening
+  description: Stijl van de halsopening
+hemStyle:
+  title: Vorm zoom
+  description: De vorm van de zoom vooraan
+hemRadius:
+  title: Ronding zoom
+  desciption: De straal van de ronding van de zoom
+backInset:
+  title: Insnede rug
+  description: Hoeveel het armsgat achteraan naar binnen gaat
+frontInset:
+  title: Insnede voorpand
+  description: Hoeveel het armsgat vooraan naar binnen gaat
+shoulderInset:
+  title: Insnede schouder
+  description: Hoeveel de schoudernaad aan de schouder naar binnen gaat
+neckInset:
+  title: Insnede nek
+  description: Hoeveel de schoudernaad aan de hals naar binnen gaat
+pocketAngle:
+  title: Hoek zak
+  description: De hoek van de zakopening
