@@ -19,4 +19,4 @@ hoodDepth:
   description: Bepaalt de diepte van de capuchon
 hoodAngle:
   title: Capuchon hoek
-  description: Controls the angle at which the hood is attached
+  description: Bepaalt de hoek waaronder de capuchon is geplaatst

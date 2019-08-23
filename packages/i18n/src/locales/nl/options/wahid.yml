@@ -15,29 +15,29 @@ weltHeight:
   title: Hoogte paspel zak
   description: De hoogte van de paspel van de zak
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Diepte halslijn
+  description: Bepaalt hoe laag de halslijn vooraan wordt
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Stijl halsopening
+  description: Stijl van de halsopening
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  title: Vorm zoom
+  description: De vorm van de zoom vooraan
 hemRadius:
-  title: Hem radius
-  desciption: Radius by which the hem is rounded
+  title: Ronding zoom
+  desciption: De straal van de ronding van de zoom
 backInset:
-  title: Back inset
-  description: How much the back of the armhole is cut inwards
+  title: Insnede rug
+  description: Hoeveel het armsgat achteraan naar binnen gaat
 frontInset:
-  title: Front inset
-  description: How much the front of the armhole is cut inwards
+  title: Insnede voorpand
+  description: Hoeveel het armsgat vooraan naar binnen gaat
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Insnede schouder
+  description: Hoeveel de schoudernaad aan de schouder naar binnen gaat
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Insnede nek
+  description: Hoeveel de schoudernaad aan de hals naar binnen gaat
 pocketAngle:
-  title: Pocket angle
-  description: Angle of the pocket slant
+  title: Hoek zak
+  description: De hoek van de zakopening
