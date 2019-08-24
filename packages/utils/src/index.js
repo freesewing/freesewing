@@ -7,6 +7,7 @@ export default [
   'defaultSa',
   'formatImperial',
   'formatMm',
+  'neckstimate',
   'optionDefault',
   'optionType',
   'roundMm',
