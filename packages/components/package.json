@@ -26,28 +26,31 @@
     "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
   },
   "peerDependencies": {
-    "react": "^16.8",
-    "prop-types": "15.7.2",
-    "@freesewing/pattern-info": "^2.0.0-beta.44",
-    "@freesewing/mui-theme": "^2.0.0-beta.44",
-    "@freesewing/css-theme": "^2.0.0-beta.44",
-    "@freesewing/plugin-theme": "^2.0.0-beta.44",
     "@freesewing/core": "^2.0.0-beta.44",
-    "@freesewing/models": "^2.0.0-beta.44",
+    "@freesewing/css-theme": "^2.0.0-beta.44",
     "@freesewing/examples": "^2.0.0-beta.44",
+    "@freesewing/i18n": "^2.0.0-beta.44",
+    "@freesewing/models": "^2.0.0-beta.44",
+    "@freesewing/mui-theme": "^2.0.0-beta.44",
+    "@freesewing/pattern-info": "^2.0.0-beta.44",
+    "@freesewing/plugin-theme": "^2.0.0-beta.44",
     "@freesewing/rendertest": "^2.0.0-beta.44",
     "@freesewing/tutorial": "^2.0.0-beta.44",
-    "typeface-roboto-condensed": "latest",
-    "@freesewing/i18n": "^2.0.0-beta.44",
     "@freesewing/utils": "^2.0.0-beta.44",
-    "react-intl": "^2.8.0",
     "@material-ui/core": "^4.0.1",
     "@material-ui/icons": "^4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
+    "file-saver": "^2.0.2",
     "prismjs": "1.16.0",
-    "file-saver": "^2.0.2"
+    "prop-types": "15.7.2",
+    "react": "^16.8",
+    "react-intl": "^2.8.0",
+    "typeface-roboto-condensed": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "4.3.3",
+    "storybook-addon-material-ui": "0.9.0-alpha.20"
+  },
   "devDependencies": {},
   "files": [
     "Blockquote/*",

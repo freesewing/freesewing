@@ -31,6 +31,7 @@ packages/utils/defaultGist
 packages/utils/defaultSa
 packages/utils/formatImperial
 packages/utils/formatMm
+packages/utils/neckstimate
 packages/utils/optionDefault
 packages/utils/optionType
 packages/utils/roundMm
