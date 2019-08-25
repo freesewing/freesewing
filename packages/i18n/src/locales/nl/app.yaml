@@ -257,9 +257,9 @@ seeYouLaterUser: Tot later {user}
 exportForPrinting: Exporteren om te printen
 exportForEditing: Exporteren om te bewerken
 exportRecipe: Exporteer recept
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
-instructions: Instructions
+startWithNeckTitle: Begin met de omtrek van de hals
+startWithNeckDescription: We kunnen je helpen fouten in je maten te vinden, gebaseerd op je halsomtrek.
+whatYouNeed: Wat je nodig hebt
+fabricOptions: Stofkeuze
+cutting: Knippen
+instructions: Instructies
