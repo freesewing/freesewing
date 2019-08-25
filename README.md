@@ -1,8 +1,3 @@
-> **Note**: This is part of version 2 of FreeSewing.  
-> It is a work in progress, and not ready for prime-time yet
-> 
-> For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/).
-
 <p align="center">
   <a title="Visit freesewing.org" href="https://freesewing.org/">
     <img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/>
@@ -38,7 +33,7 @@
   ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
   alt="Follow @freesewing_org on Twitter"/>
   </a><a
-  href="https://gitter.im/freesewing/freesewing"
+  href="https://gitter.im/freesewing/chat"
   title="Chat with us on Gitter"
   ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Chat%20with%20us-CA0547.svg?logo=gitter&logoColor=white&logoWidth=15"
   alt="Chat with us on Gitter"/>
@@ -56,7 +51,7 @@
 
 ## About freesewing
 
-FreeSewing is JavaScript library for made-to-measure sewing patterns.
+FreeSewing is on open source platform for made-to-measure sewing patterns.
 
 ## Links
 
@@ -76,8 +71,6 @@ FreeSewing is JavaScript library for made-to-measure sewing patterns.
 - Renders to SVG
 - Run in the browser as well as on the server with Node.js
 
-## Getting started
+## Documentation
 
-This repository is a rewrite of [freesewing/core](https://github.com/freesewing/core) in JavaScript.  
-
-It is an ongoing project, and not ready for prime-time yet. Watch this space.
+Please go to [freesewing.dev](https://freesewing.dev) for our developer documentation.

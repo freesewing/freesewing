@@ -1,14 +1,9 @@
-> **Note**: This is part of version 2 of FreeSewing.  
-> It is a work in progress, and not ready for prime-time yet
-> 
-> For all questions, please come say hello in [our chatroom on Gitter](https://gitter.im/freesewing/chat).
-
 <p align="center">
 <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
 <br>
 <a href="https://freesewing.org/">FreeSewing v2</a>
 </p>
-<p align="center">A JavaScript library for made-to-measure sewing patterns</p>
+<p align="center">An open source platform for made-to-measure sewing patterns</p>
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/core"
   title="@freesewing/core on NPM"
