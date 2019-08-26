@@ -834,7 +834,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@7.5.5", "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
+"@babel/runtime@7.5.5", "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
@@ -1124,6 +1124,172 @@
     tar "^4.4.10"
     unique-filename "^1.1.1"
     which "^1.3.1"
+
+"@freesewing/aaron@file:packages/aaron":
+  version "2.0.0"
+
+"@freesewing/bent@file:packages/bent":
+  version "2.0.0"
+
+"@freesewing/brian@file:packages/brian":
+  version "2.0.0"
+
+"@freesewing/bruce@file:packages/bruce":
+  version "2.0.0"
+
+"@freesewing/carlita@file:packages/carlita":
+  version "2.0.0"
+
+"@freesewing/carlton@file:packages/carlton":
+  version "2.0.0"
+
+"@freesewing/cathrin@file:packages/cathrin":
+  version "2.0.0"
+
+"@freesewing/components@file:packages/components":
+  version "2.0.0"
+
+"@freesewing/core@file:packages/core":
+  version "2.0.0"
+  dependencies:
+    bezier-js "^2.2.13"
+    bin-pack "1.0.2"
+    hooks "^0.3.2"
+
+"@freesewing/css-theme@file:packages/css-theme":
+  version "2.0.0"
+  dependencies:
+    open-color "1.6.3"
+
+"@freesewing/examples@file:packages/examples":
+  version "2.0.0"
+
+"@freesewing/florent@file:packages/florent":
+  version "2.0.0"
+
+"@freesewing/huey@file:packages/huey":
+  version "2.0.0"
+
+"@freesewing/hugo@file:packages/hugo":
+  version "2.0.0"
+
+"@freesewing/i18n@file:packages/i18n":
+  version "2.0.0"
+
+"@freesewing/jaeger@file:packages/jaeger":
+  version "2.0.0"
+
+"@freesewing/models@file:packages/models":
+  version "2.0.0"
+
+"@freesewing/mui-theme@file:packages/mui-theme":
+  version "2.0.0"
+
+"@freesewing/patterns@file:packages/patterns":
+  version "2.0.0"
+  dependencies:
+    "@freesewing/aaron" "^2.0.0"
+    "@freesewing/benjamin" "^2.0.0"
+    "@freesewing/bent" "^2.0.0"
+    "@freesewing/brian" "^2.0.0"
+    "@freesewing/bruce" "^2.0.0"
+    "@freesewing/carlita" "^2.0.0"
+    "@freesewing/carlton" "^2.0.0"
+    "@freesewing/cathrin" "^2.0.0"
+    "@freesewing/florent" "^2.0.0"
+    "@freesewing/huey" "^2.0.0"
+    "@freesewing/hugo" "^2.0.0"
+    "@freesewing/jaeger" "^2.0.0"
+    "@freesewing/shin" "^2.0.0"
+    "@freesewing/simon" "^2.0.0"
+    "@freesewing/sven" "^2.0.0"
+    "@freesewing/tamiko" "^2.0.0"
+    "@freesewing/trayvon" "^2.0.0"
+    "@freesewing/wahid" "^2.0.0"
+
+"@freesewing/plugin-banner@file:packages/plugin-banner":
+  version "2.0.0"
+
+"@freesewing/plugin-bundle@file:packages/plugin-bundle":
+  version "2.0.0"
+  dependencies:
+    "@freesewing/plugin-cutonfold" "^2.0.0"
+    "@freesewing/plugin-dimension" "^2.0.0"
+    "@freesewing/plugin-grainline" "^2.0.0"
+    "@freesewing/plugin-logo" "^2.0.0"
+    "@freesewing/plugin-round" "^2.0.0"
+    "@freesewing/plugin-scalebox" "^2.0.0"
+    "@freesewing/plugin-sprinkle" "^2.0.0"
+    "@freesewing/plugin-title" "^2.0.0"
+
+"@freesewing/plugin-bust@file:packages/plugin-bust":
+  version "2.0.0"
+
+"@freesewing/plugin-buttons@file:packages/plugin-buttons":
+  version "2.0.0"
+
+"@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
+  version "2.0.0"
+
+"@freesewing/plugin-debug@file:packages/plugin-debug":
+  version "2.0.0"
+
+"@freesewing/plugin-designer@file:packages/plugin-designer":
+  version "2.0.0"
+
+"@freesewing/plugin-dimension@file:packages/plugin-dimension":
+  version "2.0.0"
+
+"@freesewing/plugin-flip@file:packages/plugin-flip":
+  version "2.0.0"
+
+"@freesewing/plugin-grainline@file:packages/plugin-grainline":
+  version "2.0.0"
+
+"@freesewing/plugin-i18n@file:packages/plugin-i18n":
+  version "2.0.0"
+
+"@freesewing/plugin-logo@file:packages/plugin-logo":
+  version "2.0.0"
+
+"@freesewing/plugin-round@file:packages/plugin-round":
+  version "2.0.0"
+
+"@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
+  version "2.0.0"
+
+"@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
+  version "2.0.0"
+
+"@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
+  version "2.0.0"
+
+"@freesewing/plugin-theme@file:packages/plugin-theme":
+  version "2.0.0"
+
+"@freesewing/plugin-title@file:packages/plugin-title":
+  version "2.0.0"
+
+"@freesewing/plugin-validate@file:packages/plugin-validate":
+  version "2.0.0"
+
+"@freesewing/shin@file:packages/shin":
+  version "2.0.0"
+
+"@freesewing/simon@file:packages/simon":
+  version "2.0.0"
+
+"@freesewing/sven@file:packages/sven":
+  version "2.0.0"
+
+"@freesewing/tamiko@file:packages/tamiko":
+  version "2.0.0"
+
+"@freesewing/trayvon@file:packages/trayvon":
+  version "2.0.0"
+
+"@freesewing/wahid@file:packages/wahid":
+  version "2.0.0"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -2164,28 +2330,6 @@
     react-transition-group "^4.0.0"
     warning "^4.0.1"
 
-"@material-ui/core@4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.3.3.tgz#38a02331da7916c18e65c3dc56f3f6a67ba60c07"
-  integrity sha512-wUQjoJEbtVWYi+R9gBWCPGy0O+c0oY8cAp2TugyB70f89ahq/cnfnTbMZl6O2arKe2xQlfAMzY8rOOy8UMzJoQ==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@material-ui/styles" "^4.3.3"
-    "@material-ui/system" "^4.3.3"
-    "@material-ui/types" "^4.1.1"
-    "@material-ui/utils" "^4.3.0"
-    "@types/react-transition-group" "^4.2.0"
-    clsx "^1.0.2"
-    convert-css-length "^2.0.1"
-    deepmerge "^4.0.0"
-    hoist-non-react-statics "^3.2.1"
-    is-plain-object "^3.0.0"
-    normalize-scroll-left "^0.2.0"
-    popper.js "^1.14.1"
-    prop-types "^15.7.2"
-    react-transition-group "^4.0.0"
-    warning "^4.0.1"
-
 "@material-ui/core@^3.9.3":
   version "3.9.3"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-3.9.3.tgz#d378c1f4beb18df9a534ca7258c2c33fb8e0e51f"
@@ -2268,30 +2412,6 @@
     prop-types "^15.7.2"
     warning "^4.0.1"
 
-"@material-ui/styles@^4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.3.3.tgz#39867dd6f3779a8326075e097d72208d3c5b4977"
-  integrity sha512-quupQ6RYXbtKBJxhLkF3RQx6LSfrfuh2lYpILvk7p9XNkfqOQq36fuNVgrJ/A+NNn03uqDFfQYIWh4CByKr4hA==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@emotion/hash" "^0.7.1"
-    "@material-ui/types" "^4.1.1"
-    "@material-ui/utils" "^4.1.0"
-    clsx "^1.0.2"
-    csstype "^2.5.2"
-    deepmerge "^4.0.0"
-    hoist-non-react-statics "^3.2.1"
-    jss "10.0.0-alpha.24"
-    jss-plugin-camel-case "10.0.0-alpha.24"
-    jss-plugin-default-unit "10.0.0-alpha.24"
-    jss-plugin-global "10.0.0-alpha.24"
-    jss-plugin-nested "10.0.0-alpha.24"
-    jss-plugin-props-sort "10.0.0-alpha.24"
-    jss-plugin-rule-value-function "10.0.0-alpha.24"
-    jss-plugin-vendor-prefixer "10.0.0-alpha.24"
-    prop-types "^15.7.2"
-    warning "^4.0.1"
-
 "@material-ui/system@^3.0.0-alpha.0":
   version "3.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-3.0.0-alpha.2.tgz#096e80c8bb0f70aea435b9e38ea7749ee77b4e46"
@@ -2308,16 +2428,6 @@
   integrity sha512-Krrc/p/A3rod4M3FYcsWSqE5KxpoyMzYuUHhs0Pns3KH+5kcFyBU+aYbIzMfUz58rhbHkqrShf1fjj7EKcgY0g==
   dependencies:
     "@babel/runtime" "^7.2.0"
-    deepmerge "^4.0.0"
-    prop-types "^15.7.2"
-    warning "^4.0.1"
-
-"@material-ui/system@^4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.3.3.tgz#8534fe76adbd3938a8dea833e69d84a7a143ecff"
-  integrity sha512-j7JyvlhcTdc1wV6HzrDTU7XXlarxYXEUyzyHawOA0kCGmYVN2uFHENQRARLUdl+mEmuXO4TsAhNAiqiKakkFMg==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
     deepmerge "^4.0.0"
     prop-types "^15.7.2"
     warning "^4.0.1"
@@ -2346,15 +2456,6 @@
     "@babel/runtime" "^7.2.0"
     prop-types "^15.7.2"
     react-is "^16.8.0"
-
-"@material-ui/utils@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.3.0.tgz#ea7f09815c792e80f270ef8b916517c3f9caba13"
-  integrity sha512-tK3Z/ap5ifPQwIryuGQ+AHLh2hEyBLRPj4NCMcqVrQfD+0KH2IP5BXR4A+wGVsyamKfLaOc8tz1fzxZblsztpw==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    prop-types "^15.7.2"
-    react-is "^16.8.6"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -3202,13 +3303,6 @@
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-2.9.2.tgz#c48cf2a11977c8b4ff539a1c91d259eaa627028d"
   integrity sha512-5Fv2DQNO+GpdPZcxp2x/OQG/H19A01WlmpjVD9cKvVFmoVLOZ9LvBgSWG6pSXIU4og5fgbvGPaCV5+VGkWAEHA==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-transition-group@^4.2.0":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.2.2.tgz#8c851c4598a23a3a34173069fb4c5c9e41c02e3f"
-  integrity sha512-YfoaTNqBwbIqpiJ5NNfxfgg5kyFP1Hqf/jqBtSWNv0E+EkkxmN+3VD6U2fu86tlQvdAc1o0SdWhnWFwcRMTn9A==
   dependencies:
     "@types/react" "*"
 
@@ -6199,11 +6293,6 @@ convert-css-length@^1.0.2:
     console-polyfill "^0.1.2"
     parse-unit "^1.0.1"
 
-convert-css-length@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/convert-css-length/-/convert-css-length-2.0.1.tgz#90a76bde5bfd24d72881a5b45d02249b2c1d257c"
-  integrity sha512-iGpbcvhLPRKUbBc0Quxx7w/bV14AC3ItuBEGMahA5WTYqB8lq9jH0kTXFheCBASsYnqeMFZhiTruNxr1N59Axg==
-
 convert-source-map@1.6.0, convert-source-map@^1.1.0, convert-source-map@^1.4.0, convert-source-map@^1.5.0, convert-source-map@^1.5.1, convert-source-map@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.6.0.tgz#51b537a8c43e0f04dec1993bffcdd504e758ac20"
@@ -6379,6 +6468,28 @@ create-error-class@^3.0.0:
   integrity sha1-Br56vvlHo/FKMP1hBnHUAbyot7Y=
   dependencies:
     capture-stack-trace "^1.0.0"
+
+"create-freesewing-pattern@file:packages/create-freesewing-pattern":
+  version "2.0.0"
+  dependencies:
+    "@freesewing/i18n" "^2.0.0"
+    "@freesewing/pattern-info" "^2.0.0"
+    chalk "^2.4.2"
+    commander "^2.19.0"
+    conf "^2.2.0"
+    cp-file "^6.0.0"
+    execa "^1.0.0"
+    git-config-path "^2.0.0"
+    github-username "^4.1.0"
+    globby "^9.0.0"
+    handlebars "^4.1.0"
+    inquirer "^6.2.2"
+    make-dir "^2.0.0"
+    ora "^3.1.0"
+    p-each-series "^1.0.0"
+    parse-git-config "^3.0.0"
+    validate-npm-package-name "^3.0.0"
+    which "^1.3.1"
 
 create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.2.0"
@@ -6619,14 +6730,6 @@ css-vendor@^2.0.1:
     "@babel/runtime" "^7.3.1"
     is-in-browser "^1.0.2"
 
-css-vendor@^2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-2.0.6.tgz#a205f73d7562e8728c86ef6ce5ee7c7e5eefd71b"
-  integrity sha512-buv8FoZh84iMrtPHYGYll00/qSNV0gYO6E/GUCjUPTsSPj7uf/wot/QZwig+7qdFGxJ7HjOSJoclbhag09TVUQ==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    is-in-browser "^1.0.2"
-
 css-what@2.1, css-what@^2.1.2:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.3.tgz#a6d7604573365fe74686c3f311c56513d88285f2"
@@ -6795,7 +6898,7 @@ cssstyle@^1.0.0, cssstyle@^1.1.1, cssstyle@^1.2.2:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.0.0, csstype@^2.2.0, csstype@^2.5.2, csstype@^2.5.7, csstype@^2.6.5:
+csstype@^2.0.0, csstype@^2.2.0, csstype@^2.5.2, csstype@^2.5.7:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
   integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
@@ -7907,18 +8010,13 @@ eslint-scope@^5.0.0:
     estraverse "^4.1.1"
 
 eslint-utils@^1.3.0, eslint-utils@^1.3.1, eslint-utils@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.0.tgz#e2c3c8dba768425f897cf0f9e51fe2e241485d4c"
-  integrity sha512-7ehnzPaP5IIEh1r1tkjuIrxqhNkzUJa9z3R92tLJdZIVdWaczEhr3EbhGtsMrVxi1KeR8qA7Off6SWc5WNQqyQ==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
+  integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
   dependencies:
     eslint-visitor-keys "^1.0.0"
 
-eslint-visitor-keys@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
-  integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
-
-eslint-visitor-keys@^1.1.0:
+eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
@@ -11949,15 +12047,6 @@ jss-plugin-camel-case@10.0.0-alpha.17:
     hyphenate-style-name "^1.0.3"
     jss "10.0.0-alpha.17"
 
-jss-plugin-camel-case@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-camel-case/-/jss-plugin-camel-case-10.0.0-alpha.24.tgz#579a48989d2628ee8baaa006449b1b82d32ee27e"
-  integrity sha512-cRYLbGl6oO9wdGXp3hn+xqc8pw8bjaui25dDYuEeEsRZMh5/OKl3ByYxDT3PLKgFqouy5Xo+YmLGVH8l+nnEdQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    hyphenate-style-name "^1.0.3"
-    jss "10.0.0-alpha.24"
-
 jss-plugin-default-unit@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
   resolved "https://registry.yarnpkg.com/jss-plugin-default-unit/-/jss-plugin-default-unit-10.0.0-alpha.17.tgz#4e3bf6d8e9691a8e05d50b5abf300515eb0f67ee"
@@ -11966,14 +12055,6 @@ jss-plugin-default-unit@10.0.0-alpha.17:
     "@babel/runtime" "^7.3.1"
     jss "10.0.0-alpha.17"
 
-jss-plugin-default-unit@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-default-unit/-/jss-plugin-default-unit-10.0.0-alpha.24.tgz#3e6e24e8ec7aaa950c8975f1645ea861b8aa338e"
-  integrity sha512-1E1XlJqJ/9I1lR5EO/tA75U1LIIicKvW6xZEKLxAP8NC/rUjI+yBQBTBJn61LOpua51e7fgW8me46Z+iuXiC4A==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    jss "10.0.0-alpha.24"
-
 jss-plugin-global@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
   resolved "https://registry.yarnpkg.com/jss-plugin-global/-/jss-plugin-global-10.0.0-alpha.17.tgz#13005f6b963aee3c1498fe2bad767967ad2eb838"
@@ -11981,14 +12062,6 @@ jss-plugin-global@10.0.0-alpha.17:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.0.0-alpha.17"
-
-jss-plugin-global@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-global/-/jss-plugin-global-10.0.0-alpha.24.tgz#a53e2028d0cb073661e8213f2e622fef9ef4b1fa"
-  integrity sha512-3LoxrZloF4tvXrS5S7enV9OhtaxXsEP3BQdiE76vI/ecCmgNDZNpnPd8MG20ptn2iAOsoMGfoMX20Ea1IKl/Mg==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    jss "10.0.0-alpha.24"
 
 jss-plugin-nested@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
@@ -11999,15 +12072,6 @@ jss-plugin-nested@10.0.0-alpha.17:
     jss "10.0.0-alpha.17"
     tiny-warning "^1.0.2"
 
-jss-plugin-nested@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-nested/-/jss-plugin-nested-10.0.0-alpha.24.tgz#f1b4a0bd1050e29d627c9bc2dc0f424c35f0aa44"
-  integrity sha512-BWU6NaRZTVSJc7N+3FeHacdkFOjCMThouoRQPCWVxeT0nmAVlVGwgYzChcI+vzncx+UaRQC0x+01FYhVQ2xAFA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    jss "10.0.0-alpha.24"
-    tiny-warning "^1.0.2"
-
 jss-plugin-props-sort@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
   resolved "https://registry.yarnpkg.com/jss-plugin-props-sort/-/jss-plugin-props-sort-10.0.0-alpha.17.tgz#a49be72b8dc8e2861f8136661c53d130abb07ccd"
@@ -12015,14 +12079,6 @@ jss-plugin-props-sort@10.0.0-alpha.17:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.0.0-alpha.17"
-
-jss-plugin-props-sort@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-props-sort/-/jss-plugin-props-sort-10.0.0-alpha.24.tgz#e309e286004b6e059c373efaa308b8742e22ec16"
-  integrity sha512-TB4RpXwnGSEE58rN2RRzcWqhIaz0oAS1UBg10mk1fuLpkKyHEJWuuZXzgGih23Ivl/8LDVzTF+QRY5JagMUUGg==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    jss "10.0.0-alpha.24"
 
 jss-plugin-rule-value-function@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
@@ -12032,14 +12088,6 @@ jss-plugin-rule-value-function@10.0.0-alpha.17:
     "@babel/runtime" "^7.3.1"
     jss "10.0.0-alpha.17"
 
-jss-plugin-rule-value-function@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.0.0-alpha.24.tgz#85bfd5f994647cb4bf2237d18232421ea362665c"
-  integrity sha512-uFw4tf8PN48bdv4ZcDjG3OzKPIFZ4gpCC1cWO/dyexYfFIubX3bnQUbK4B0wPNe9LJU4KQo8s4F42B8B1ADTrA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    jss "10.0.0-alpha.24"
-
 jss-plugin-vendor-prefixer@10.0.0-alpha.17:
   version "10.0.0-alpha.17"
   resolved "https://registry.yarnpkg.com/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.0.0-alpha.17.tgz#7bb05076d1a14d20b567231c36e57ebf6cb6625f"
@@ -12048,15 +12096,6 @@ jss-plugin-vendor-prefixer@10.0.0-alpha.17:
     "@babel/runtime" "^7.3.1"
     css-vendor "^2.0.1"
     jss "10.0.0-alpha.17"
-
-jss-plugin-vendor-prefixer@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.0.0-alpha.24.tgz#c4c2c28667d3c7c0d9a01ca1f7a2f74367d1ceef"
-  integrity sha512-hffKj0kSSvZsXs6RYEylpBlEGjryMzU1lsWqC5vQAT/Xb3tDe60BbEarEOFLBGv7EfyajXkuRwlXAQocV5ejCg==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    css-vendor "^2.0.5"
-    jss "10.0.0-alpha.24"
 
 jss-props-sort@^6.0.0:
   version "6.0.0"
@@ -12076,16 +12115,6 @@ jss@10.0.0-alpha.17:
   integrity sha512-egGIUg+YRu0+U+XXlD0gmVtU/gW5sn7+qmDv7opwK5s8emZBE/VoN55X6CaMrAa0kLeGMldnI43KOWea6M9/mA==
   dependencies:
     "@babel/runtime" "^7.3.1"
-    is-in-browser "^1.1.3"
-    tiny-warning "^1.0.2"
-
-jss@10.0.0-alpha.24:
-  version "10.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/jss/-/jss-10.0.0-alpha.24.tgz#f8e2044b6b2f034db05a685d99c599095baf8b61"
-  integrity sha512-kfuSitcj7MTrDtSPLkrWcZppgZlTE3A+cqrkC+Z10WYROt0RXIWINAaK8tE2ohwkDfUlaM1YcRYvV3iT6YNFTA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    csstype "^2.6.5"
     is-in-browser "^1.1.3"
     tiny-warning "^1.0.2"
 
@@ -13887,11 +13916,6 @@ normalize-scroll-left@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.1.2.tgz#6b79691ba79eb5fb107fa5edfbdc06b55caee2aa"
   integrity sha512-F9YMRls0zCF6BFIE2YnXDRpHPpfd91nOIaNdDgrx5YMoPLo8Wqj+6jNXHQsYBavJeXP4ww8HCt0xQAKc5qk2Fg==
-
-normalize-scroll-left@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.2.0.tgz#9445d74275f303cc661e113329aefa492f58114c"
-  integrity sha512-t5oCENZJl8TGusJKoCJm7+asaSsPuNmK6+iEjrZ5TyBj2f02brCRsd4c83hwtu+e5d4LCSBZ0uoDlMjBo+A8yA==
 
 normalize-url@1.9.1, normalize-url@^1.0.0, normalize-url@^1.4.0:
   version "1.9.1"
@@ -16727,11 +16751,6 @@ react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-is@^16.8.6:
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
-  integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
-
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -18696,7 +18715,7 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.7.1.tgz#22070b7dc04748a792fc6912a58ab99d3a21d788"
   integrity sha512-zzzP5ZY6QWumnAFV6kBRbS44pUMcpZBNER5DWUe1HETlaKXqLcCQxbNu6IHaKr1pUsjuhUGBdOy8sWKmMkL6pQ==
 
-storybook-addon-material-ui@0.9.0-alpha.20, storybook-addon-material-ui@^0.9.0-alpha.18:
+storybook-addon-material-ui@^0.9.0-alpha.18:
   version "0.9.0-alpha.20"
   resolved "https://registry.yarnpkg.com/storybook-addon-material-ui/-/storybook-addon-material-ui-0.9.0-alpha.20.tgz#fef5b2c3062bc2036321c4254814f8d84d49796e"
   integrity sha512-1pUKZ5Y6Xrz73V2KmjsnayfHDdjrUJLpljQnd7B843lwSluBKatdTkjn9aBooPXC91+TViK+WGmAGlNEKoxDcQ==
