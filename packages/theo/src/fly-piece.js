@@ -2,6 +2,7 @@ export default function(part) {
   let { snippets, Point, macro, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Clean up paths from paperless dimensions
   for (let id in paths) delete paths[id]
+  for (let id in snippets) delete snippets[id]
 
   // We need to split the crotch curve at the bottom of the fly
   paths.fly = new Path()
