@@ -17,6 +17,10 @@
 
  - The models data is now based on the data from the `neckstimate` method in the utils package.
 
+### Fixed
+
+ - [#86](https://github.com/freesewing/freesewing/issues/86): The `seatCircumference` measurement was missing, thus making it unavailable on the website
+
 
 ## 2.0.0 (2019-08-25)
 
