@@ -46,7 +46,7 @@
     "react-dom": "^16.8",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "babel-eslint": "10.0.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.3.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
     "@freesewing/components": "^2.0.1",

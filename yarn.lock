@@ -1126,170 +1126,170 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/components@file:packages/components":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/core@file:packages/core":
-  version "2.0.0"
+  version "2.0.1"
   dependencies:
     bezier-js "^2.2.13"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.0.0"
+  version "2.0.1"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/models@file:packages/models":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/patterns@file:packages/patterns":
-  version "2.0.0"
+  version "2.0.1"
   dependencies:
-    "@freesewing/aaron" "^2.0.0"
-    "@freesewing/benjamin" "^2.0.0"
-    "@freesewing/bent" "^2.0.0"
-    "@freesewing/brian" "^2.0.0"
-    "@freesewing/bruce" "^2.0.0"
-    "@freesewing/carlita" "^2.0.0"
-    "@freesewing/carlton" "^2.0.0"
-    "@freesewing/cathrin" "^2.0.0"
-    "@freesewing/florent" "^2.0.0"
-    "@freesewing/huey" "^2.0.0"
-    "@freesewing/hugo" "^2.0.0"
-    "@freesewing/jaeger" "^2.0.0"
-    "@freesewing/shin" "^2.0.0"
-    "@freesewing/simon" "^2.0.0"
-    "@freesewing/sven" "^2.0.0"
-    "@freesewing/tamiko" "^2.0.0"
-    "@freesewing/trayvon" "^2.0.0"
-    "@freesewing/wahid" "^2.0.0"
+    "@freesewing/aaron" "^2.0.1"
+    "@freesewing/benjamin" "^2.0.1"
+    "@freesewing/bent" "^2.0.1"
+    "@freesewing/brian" "^2.0.1"
+    "@freesewing/bruce" "^2.0.1"
+    "@freesewing/carlita" "^2.0.1"
+    "@freesewing/carlton" "^2.0.1"
+    "@freesewing/cathrin" "^2.0.1"
+    "@freesewing/florent" "^2.0.1"
+    "@freesewing/huey" "^2.0.1"
+    "@freesewing/hugo" "^2.0.1"
+    "@freesewing/jaeger" "^2.0.1"
+    "@freesewing/shin" "^2.0.1"
+    "@freesewing/simon" "^2.0.1"
+    "@freesewing/sven" "^2.0.1"
+    "@freesewing/tamiko" "^2.0.1"
+    "@freesewing/trayvon" "^2.0.1"
+    "@freesewing/wahid" "^2.0.1"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.0.0"
+  version "2.0.1"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.0.0"
-    "@freesewing/plugin-dimension" "^2.0.0"
-    "@freesewing/plugin-grainline" "^2.0.0"
-    "@freesewing/plugin-logo" "^2.0.0"
-    "@freesewing/plugin-round" "^2.0.0"
-    "@freesewing/plugin-scalebox" "^2.0.0"
-    "@freesewing/plugin-sprinkle" "^2.0.0"
-    "@freesewing/plugin-title" "^2.0.0"
+    "@freesewing/plugin-cutonfold" "^2.0.1"
+    "@freesewing/plugin-dimension" "^2.0.1"
+    "@freesewing/plugin-grainline" "^2.0.1"
+    "@freesewing/plugin-logo" "^2.0.1"
+    "@freesewing/plugin-round" "^2.0.1"
+    "@freesewing/plugin-scalebox" "^2.0.1"
+    "@freesewing/plugin-sprinkle" "^2.0.1"
+    "@freesewing/plugin-title" "^2.0.1"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.0.0"
+  version "2.0.1"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.0.0"
+  version "2.0.1"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -3650,10 +3650,10 @@ acorn-globals@^4.1.0, acorn-globals@^4.3.0, acorn-globals@^4.3.2:
     acorn "^6.0.1"
     acorn-walk "^6.0.1"
 
-acorn-jsx@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
-  integrity sha512-HJ7CfNHrfJLlNTzIEUTj43LNWGkqpRLxm3YjAlcD0ACydk9XynzYsCBHxut+iqt+1aBXkx9UP/w/ZqMr13XIzg==
+acorn-jsx@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.2.tgz#84b68ea44b373c4f8686023a551f61a21b7c4a4f"
+  integrity sha512-tiNTrP1MP0QrChmD2DdupCr6HWSFeKVw5d/dHTu4Y7rkAkRhU/Dt7dphAfIUyxtHpl/eBVip5uTNSpQJHylpAw==
 
 acorn-walk@^6.0.1:
   version "6.2.0"
@@ -3665,7 +3665,7 @@ acorn@^5.5.3:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
 
-acorn@^6.0.1, acorn@^6.0.4, acorn@^6.0.5, acorn@^6.0.7, acorn@^6.1.1, acorn@^6.2.0:
+acorn@^6.0.1, acorn@^6.0.4, acorn@^6.0.5, acorn@^6.1.1, acorn@^6.2.0:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.2.1.tgz#3ed8422d6dec09e6121cc7a843ca86a330a86b51"
   integrity sha512-JD0xT5FCRDNyjDda3Lrg/IxFscp9q4tiYtxE1/nOzlKCk7hIRuYjhq1kCNkbPjMRMZuFq20HNQn1I9k8Oj0E+Q==
@@ -3760,7 +3760,7 @@ ajv@^5.1.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5, ajv@^6.9.1:
+ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
   version "6.10.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
   integrity sha512-TXtUUEYHuaTEbLZWIKUr5pmBuhDLy+8KYtPYdcV8qC+pOZL+NKqYwvWSRrVXHn+ZmRRAu8vJTAznH7Oag6RVRw==
@@ -6470,10 +6470,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.0.0"
+  version "2.0.1"
   dependencies:
-    "@freesewing/i18n" "^2.0.0"
-    "@freesewing/pattern-info" "^2.0.0"
+    "@freesewing/i18n" "^2.0.1"
+    "@freesewing/pattern-info" "^2.0.1"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -8009,7 +8009,7 @@ eslint-scope@^5.0.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^1.3.0, eslint-utils@^1.3.1, eslint-utils@^1.4.0:
+eslint-utils@^1.3.0, eslint-utils@^1.3.1, eslint-utils@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
   integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
@@ -8021,52 +8021,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^5.0.1, eslint@^5.16.0:
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.16.0.tgz#a1e3ac1aae4a3fbd8296fcf8f7ab7314cbb6abea"
-  integrity sha512-S3Rz11i7c8AA5JPv7xAH+dOyq/Cu/VXHiHXBPOU1k/JAM5dXqQPt3qcrhpHSorXmrpu2g0gkIBVXAqCpzfoZIg==
-  dependencies:
-    "@babel/code-frame" "^7.0.0"
-    ajv "^6.9.1"
-    chalk "^2.1.0"
-    cross-spawn "^6.0.5"
-    debug "^4.0.1"
-    doctrine "^3.0.0"
-    eslint-scope "^4.0.3"
-    eslint-utils "^1.3.1"
-    eslint-visitor-keys "^1.0.0"
-    espree "^5.0.1"
-    esquery "^1.0.1"
-    esutils "^2.0.2"
-    file-entry-cache "^5.0.1"
-    functional-red-black-tree "^1.0.1"
-    glob "^7.1.2"
-    globals "^11.7.0"
-    ignore "^4.0.6"
-    import-fresh "^3.0.0"
-    imurmurhash "^0.1.4"
-    inquirer "^6.2.2"
-    js-yaml "^3.13.0"
-    json-stable-stringify-without-jsonify "^1.0.1"
-    levn "^0.3.0"
-    lodash "^4.17.11"
-    minimatch "^3.0.4"
-    mkdirp "^0.5.1"
-    natural-compare "^1.4.0"
-    optionator "^0.8.2"
-    path-is-inside "^1.0.2"
-    progress "^2.0.0"
-    regexpp "^2.0.1"
-    semver "^5.5.1"
-    strip-ansi "^4.0.0"
-    strip-json-comments "^2.0.1"
-    table "^5.2.3"
-    text-table "^0.2.0"
-
-eslint@^6.1.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.2.0.tgz#4c42c20e3fc03f28db25f34ccba621a9a47e8b56"
-  integrity sha512-sS0SZwm5UAoI83F+cgdomz0cBNPs+AnRvEboNYeWvrZ8UcDHCu/5muocwoDL2TkHq9skkP0GvZjmwI8HG7S3sw==
+eslint@^6.1.0, eslint@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.3.0.tgz#1f1a902f67bfd4c354e7288b81e40654d927eb6a"
+  integrity sha512-ZvZTKaqDue+N8Y9g0kp6UPZtS4FSY3qARxBs7p4f0H0iof381XHduqVerFWtK8DPtKmemqbqCFENWSQgPR/Gow==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -8075,9 +8033,9 @@ eslint@^6.1.0:
     debug "^4.0.1"
     doctrine "^3.0.0"
     eslint-scope "^5.0.0"
-    eslint-utils "^1.4.0"
+    eslint-utils "^1.4.2"
     eslint-visitor-keys "^1.1.0"
-    espree "^6.1.0"
+    espree "^6.1.1"
     esquery "^1.0.1"
     esutils "^2.0.2"
     file-entry-cache "^5.0.1"
@@ -8164,22 +8122,13 @@ espower-location-detector@^1.0.0:
     source-map "^0.5.0"
     xtend "^4.0.0"
 
-espree@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-5.0.1.tgz#5d6526fa4fc7f0788a5cf75b15f30323e2f81f7a"
-  integrity sha512-qWAZcWh4XE/RwzLJejfcofscgMc9CamR6Tn1+XRXNzrvUSSbiAjGOI/fggztjIi7y9VLPqnICMIPiGyr8JaZ0A==
-  dependencies:
-    acorn "^6.0.7"
-    acorn-jsx "^5.0.0"
-    eslint-visitor-keys "^1.0.0"
-
-espree@^6.0.0, espree@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-6.1.0.tgz#a1e8aa65bf29a331d70351ed814a80e7534e0884"
-  integrity sha512-boA7CHRLlVWUSg3iL5Kmlt/xT3Q+sXnKoRYYzj1YeM10A76TEJBbotV5pKbnK42hEUIr121zTv+QLRM5LsCPXQ==
+espree@^6.0.0, espree@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-6.1.1.tgz#7f80e5f7257fc47db450022d723e356daeb1e5de"
+  integrity sha512-EYbr8XZUhWbYCqQRW0duU5LxzL5bETN6AjKBGy1302qqzPaCH10QbRg3Wvco79Z8x9WbiE8HYB4e75xl6qUYvQ==
   dependencies:
     acorn "^7.0.0"
-    acorn-jsx "^5.0.0"
+    acorn-jsx "^5.0.2"
     eslint-visitor-keys "^1.1.0"
 
 esprima@^2.6.0:
@@ -11763,7 +11712,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@3.13.1, js-yaml@^3.10.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.4.3, js-yaml@^3.8.4:
+js-yaml@3.13.1, js-yaml@^3.10.0, js-yaml@^3.13.1, js-yaml@^3.4.3, js-yaml@^3.8.4:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
@@ -18967,7 +18916,7 @@ strip-indent@^2.0.0:
   resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
   integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
 
-strip-json-comments@2.0.1, strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
+strip-json-comments@2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
