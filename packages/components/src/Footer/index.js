@@ -18,7 +18,7 @@ const Footer = props => {
           left: {
             blog: 'https://' + props.language + '.freesewing.org/blog',
             aboutFreesewing: 'https://' + props.language + '.freesewing.org/docs/about',
-            faq: 'https://' + props.language + '.freesewing.org/docs/faq'
+            faq: 'https://' + props.language + '.freesewing.org/faq'
           },
           right: {
             becomeAPatron: 'https://' + props.language + '.freesewing.org/patrons/join',
