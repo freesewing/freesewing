@@ -1,14 +1,40 @@
-FIXME: This needs to be automated, but this is until then
+# Change log for: FreeSewing (global)
 
 
 
+## Unreleased
+
+
+## 2.0.1 (2019-09-01)
+
+### models
+
+#### Added
+
+ - Expanded the size ranges available.
+ - Added the `withBreasts` models which were missing in earlier releases.
+
+#### Changed
+
+ - The models data is now based on the data from the `neckstimate` method in the utils package.
+
+### theo
+
+#### Fixed
+
+ - [#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece.
+
+### utils
+
+#### Added
+
+ - The `measurementDiffers` method is new.
 
 
 
-2.0.1
+## 2.0.0 (2019-08-25)
 
- theo: Removed inherited notches from fly shield and side piece
- models: switched to neckstimate based data
- utils: added measurementDiffers method
+This is the **initial release**, and the start of this change log.
 
-2.0.0 -> initial release (v1 was PHP)
+Prior to version 2, FreeSewing was not a JavaScript project.
+As such, that history is out of scope for this change log.

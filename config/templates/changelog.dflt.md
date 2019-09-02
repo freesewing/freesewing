@@ -1,18 +1,9 @@
-<p align="center">
-  <a title="Go to freesewing.org" href="https://freesewing.org/">
-    <img src="https://freesewing.org/share/en.wide.jpg" align="center" width="200px" alt="FreeSewing.org"/>
-  </a>
-  <br>
-  <b><a href="https://freesewing.org/">FreeSewing</a></b>
-  <br>
-  An open source platform for made-to-measure sewing patterns
-</p>
+# Change log for: {{{fullname}}}
 
-# {{{fullname}}} Change log
 
-{{changelog}}
+{{{changelog}}}
 
-## 2.0.0
+## 2.0.0 (2019-08-25)
 
 This is the **initial release**, and the start of this change log.
 

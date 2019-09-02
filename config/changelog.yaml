@@ -273,7 +273,7 @@ Unreleased:
   Security:
 
 2.0.1:
-  date: 2008-09-01
+  date: 2019-09-01
   Added:
     utils:
       - The `measurementDiffers` method is new.
@@ -285,4 +285,5 @@ Unreleased:
       - The models data is now based on the data from the `neckstimate` method in the utils package.
   Fixed:
     theo:
-      - "[#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece."
+      - "[#78](https://github.com/freesewing/freesewing/issues/78):
+        Removed inherited notches from fly shield and side piece."
