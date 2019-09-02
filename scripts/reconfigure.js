@@ -17,14 +17,18 @@ const config = {
   keywords: readConfigFile("keywords.yaml"),
   badges: readConfigFile("badges.yaml"),
   scripts: readConfigFile("scripts.yaml"),
+  changelog: readConfigFile("changelog.yaml"),
+  changes: ["Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"],
   dependencies: readConfigFile("dependencies.yaml", { version }),
   exceptions: readConfigFile("exceptions.yaml"),
   templates: {
     pkg: readTemplateFile("package.dflt.json"),
     rollup: readTemplateFile("rollup.config.dflt.js"),
+    changelog: readTemplateFile("changelog.dflt.md"),
     readme: readTemplateFile("readme.dflt.md")
   }
 };
+
 const packages = glob.sync("*", {
   cwd: path.join(config.repoPath, "packages")
 });
@@ -289,6 +293,32 @@ function readme(pkg, config) {
 }
 
 /**
+ * Creates a CHANGELOG.md file for a package
+ */
+function changelog(pkg, config) {
+  let markup = Mustache.render(config.templates.changelog, {
+    fullname: fullName(pkg, config),
+    changelog: packageChangelog(pkg, config)
+  });
+
+  return markup;
+}
+
+/**
+ * Generates the changelog data for a package
+ */
+function packageChangelog(pkg, config) {
+  let markup = "";
+  if (pkg === "theo") {
+    for (let v in config.changelog) {
+      markup += "## " + v + "\n\n";
+    }
+  }
+
+  return markup;
+}
+
+/**
  * Make sure we have (at least) a description for each package
  */
 function validate(pkgs, config) {
@@ -362,9 +392,10 @@ function configurePatternExample(pkg, config) {
 }
 
 /**
- * Puts a package.json, rollup.config.js, and README.md
+ * Puts a package.json, rollup.config.js, README.md, and CHANGELOG.md
  * into every subdirectory under the packages directory.
- * Also creates an example dir for pattern packages.
+ * Also creates an example dir for pattern packages, and writes
+ * the global CHANGELOG.md.
  */
 function reconfigure(pkgs, config) {
   for (let pkg of pkgs) {
@@ -383,6 +414,10 @@ function reconfigure(pkgs, config) {
     fs.writeFileSync(
       path.join(config.repoPath, "packages", pkg, "README.md"),
       readme(pkg, config)
+    );
+    fs.writeFileSync(
+      path.join(config.repoPath, "packages", pkg, "CHANGELOG.md"),
+      changelog(pkg, config)
     );
     if (packageType(pkg, config) === "pattern")
       configurePatternExample(pkg, config);
