@@ -7,6 +7,8 @@ export default [
   'defaultSa',
   'formatImperial',
   'formatMm',
+  'measurementAsMm',
+  'measurementDiffers',
   'neckstimate',
   'optionDefault',
   'optionType',
@@ -17,7 +19,6 @@ export default [
   'smallestImperialStep',
   'storage',
   'tiler',
-  'measurementAsMm',
   'validateEmail',
   'validateTld'
 ]

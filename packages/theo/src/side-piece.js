@@ -2,7 +2,7 @@ export default function(part) {
   let { macro, Point, points, Path, paths, complete, sa, paperless, snippets } = part.shorthand()
   // Clean up paths from paperless dimensions
   for (let id in paths) delete paths[id]
-  delete snippets.logo
+  for (let id in snippets) delete snippets[id]
 
   // Add points
   points.topLeft = new Path()

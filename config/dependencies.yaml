@@ -117,6 +117,9 @@ jaeger:
   peer:
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
+models:
+  peer:
+    "@freesewing/utils": "^{{version}}"
 mui-theme:
   peer:
     "@material-ui/core": "^4.0.1"
