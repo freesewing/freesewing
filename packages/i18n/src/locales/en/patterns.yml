@@ -34,9 +34,12 @@ hugo:
 jaeger:
   description: Jeager is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy is an adaptable circle skirt pattern
-  title: Sandt circle skirt
+  title: Sandy circle skirt
 shin:
   description: Shin are atheltic swim trunks for men
   title: Shin swim trunks
