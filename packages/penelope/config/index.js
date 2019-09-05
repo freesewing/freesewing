@@ -33,7 +33,7 @@ export default {
       "seatEase",
       "waistEase",
       "nrOfDarts",
-      "waistSideSeamRaise",
+      /*"waistSideSeamRaise",*/
       "backDartDepthFactor",
       "frontDartDepthFactor",
       "dartToSideSeamFactor"
@@ -80,7 +80,7 @@ export default {
 
     seatEase: { mm: 5, min: 0, max: 15 },
     waistEase: { mm: 5, min: 0, max: 15 },
-    waistSideSeamRaise: { pct: 0, min: 0, max: 10 },
+    /*waistSideSeamRaise: { pct: 0, min: 0, max: 10 },*/
     backDartDepthFactor: { pct: 50, min: 35, max: 70 },
     frontDartDepthFactor: { pct: 45, min: 30, max: 65 },
     dartToSideSeamFactor: { pct: 50, min: 30, max: 70 }
