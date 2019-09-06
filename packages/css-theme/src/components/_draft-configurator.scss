@@ -40,15 +40,18 @@ div.collapsed {
   display: none;
 }
 ul.config.l2 > li > div,
-ul.config.l3 > li > div {
+ul.config.l3 > li > div,
+ul.config.l4 > li > div {
   padding: 0.25rem 1.5rem 0.25rem 1.5rem;
 }
-ul.config.l3 > li > div.expanded {
+ul.config.l3 > li > div.expanded,
+ul.config.l4 > li > div.expanded {
   margin: 0 0 2rem 0;
   padding: 0.75 0.5rem 1.5rem;
 }
 ul.config.l2 > li > div:hover,
-ul.config.l3 > li > div:hover {
+ul.config.l3 > li > div:hover,
+ul.config.l4 > li > div:hover {
   cursor: pointer;
   background: $oc-gray-4;
 }
@@ -63,7 +66,15 @@ div.expanded div.MuiSlider-container {
   overflow: initial;
 }
 ul.config p { @include body-font;}
-ul.config.l4 li { padding-left: 0.75rem; }
+
+/* level 4 */
+ul.config.l3 li span.subheading {
+  padding-left: 2rem;
+  font-weight: bold;
+}
+ul.config.l4 > li > div { padding-left: 2.5rem; }
+
+
 span.dflt,
 span.custom {
   padding: 2px 4px;

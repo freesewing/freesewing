@@ -13,6 +13,11 @@ import trayvon from './trayvon.yml'
 import jaeger from './jaeger.yml'
 import carlton from './carlton.yml'
 import carlita from './carlita.yml'
+import benjamin from './benjamin.yml'
+import florent from './florent.yml'
+import theo from './theo.yml'
+import sandy from './sandy.yml'
+import shin from './shin.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -31,7 +36,12 @@ let patterns = {
   trayvon,
   jaeger,
   carlton,
-  carlita
+  carlita,
+  benjamin,
+  florent,
+  theo,
+  sandy,
+  shin
 }
 
 let options = {}

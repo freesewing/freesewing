@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/patterns",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An umbrella package for all FreeSewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,29 +32,29 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.1",
-    "@freesewing/plugin-bundle": "^2.0.1",
-    "@freesewing/plugin-buttons": "^2.0.1"
+    "@freesewing/core": "^2.0.2",
+    "@freesewing/plugin-bundle": "^2.0.2",
+    "@freesewing/plugin-buttons": "^2.0.2"
   },
   "dependencies": {
-    "@freesewing/aaron": "^2.0.1",
-    "@freesewing/benjamin": "^2.0.1",
-    "@freesewing/bent": "^2.0.1",
-    "@freesewing/brian": "^2.0.1",
-    "@freesewing/bruce": "^2.0.1",
-    "@freesewing/carlita": "^2.0.1",
-    "@freesewing/carlton": "^2.0.1",
-    "@freesewing/cathrin": "^2.0.1",
-    "@freesewing/florent": "^2.0.1",
-    "@freesewing/huey": "^2.0.1",
-    "@freesewing/hugo": "^2.0.1",
-    "@freesewing/jaeger": "^2.0.1",
-    "@freesewing/shin": "^2.0.1",
-    "@freesewing/simon": "^2.0.1",
-    "@freesewing/sven": "^2.0.1",
-    "@freesewing/tamiko": "^2.0.1",
-    "@freesewing/trayvon": "^2.0.1",
-    "@freesewing/wahid": "^2.0.1"
+    "@freesewing/aaron": "^2.0.2",
+    "@freesewing/benjamin": "^2.0.2",
+    "@freesewing/bent": "^2.0.2",
+    "@freesewing/brian": "^2.0.2",
+    "@freesewing/bruce": "^2.0.2",
+    "@freesewing/carlita": "^2.0.2",
+    "@freesewing/carlton": "^2.0.2",
+    "@freesewing/cathrin": "^2.0.2",
+    "@freesewing/florent": "^2.0.2",
+    "@freesewing/huey": "^2.0.2",
+    "@freesewing/hugo": "^2.0.2",
+    "@freesewing/jaeger": "^2.0.2",
+    "@freesewing/shin": "^2.0.2",
+    "@freesewing/simon": "^2.0.2",
+    "@freesewing/sven": "^2.0.2",
+    "@freesewing/tamiko": "^2.0.2",
+    "@freesewing/trayvon": "^2.0.2",
+    "@freesewing/wahid": "^2.0.2"
   },
   "devDependencies": {},
   "files": [
@@ -64,7 +64,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=8.0.0",

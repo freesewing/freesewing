@@ -17,14 +17,25 @@ const config = {
   keywords: readConfigFile("keywords.yaml"),
   badges: readConfigFile("badges.yaml"),
   scripts: readConfigFile("scripts.yaml"),
+  changelog: readConfigFile("changelog.yaml"),
+  changetypes: [
+    "Added",
+    "Changed",
+    "Deprecated",
+    "Removed",
+    "Fixed",
+    "Security"
+  ],
   dependencies: readConfigFile("dependencies.yaml", { version }),
   exceptions: readConfigFile("exceptions.yaml"),
   templates: {
     pkg: readTemplateFile("package.dflt.json"),
     rollup: readTemplateFile("rollup.config.dflt.js"),
+    changelog: readTemplateFile("changelog.dflt.md"),
     readme: readTemplateFile("readme.dflt.md")
   }
 };
+
 const packages = glob.sync("*", {
   cwd: path.join(config.repoPath, "packages")
 });
@@ -100,7 +111,7 @@ function readInfoFile(pkg) {
       path.join(repoPath, "packages", pkg, "info.md"),
       "utf-8"
     );
-  } catch {
+  } catch (err) {
     return "";
   }
 
@@ -289,6 +300,94 @@ function readme(pkg, config) {
 }
 
 /**
+ * Creates a CHANGELOG.md file for a package
+ */
+function changelog(pkg, config) {
+  let markup = Mustache.render(config.templates.changelog, {
+    fullname: pkg === "global" ? "FreeSewing (global)" : fullName(pkg, config),
+    changelog:
+      pkg === "global" ? globalChangelog(config) : packageChangelog(pkg, config)
+  });
+
+  return markup;
+}
+
+/**
+ * Generates the global changelog data
+ */
+function globalChangelog(config) {
+  let markup = "";
+  for (let v in config.changelog) {
+    let changes = config.changelog[v];
+    markup += "\n## " + v;
+    if (v !== "Unreleased") markup += " (" + formatDate(changes.date) + ")";
+    markup += "\n\n";
+    for (let pkg of packages) {
+      let changed = false;
+      for (let type of config.changetypes) {
+        if (
+          typeof changes[type] !== "undefined" &&
+          changes[type] !== null &&
+          typeof changes[type][pkg] !== "undefined" &&
+          changes[type][pkg] !== null
+        ) {
+          if (!changed) changed = "";
+          changed += "\n#### " + type + "\n\n";
+          for (let change of changes[type][pkg])
+            changed += " - " + change + "\n";
+        }
+      }
+      if (changed) markup += "### " + pkg + "\n" + changed + "\n";
+    }
+  }
+
+  return markup;
+}
+
+/**
+ * Generates the changelog data for a package
+ */
+function packageChangelog(pkg, config) {
+  let markup = "";
+  for (let v in config.changelog) {
+    let changes = config.changelog[v];
+    let changed = false;
+    for (let type of config.changetypes) {
+      if (
+        typeof changes[type] !== "undefined" &&
+        changes[type] !== null &&
+        typeof changes[type][pkg] !== "undefined" &&
+        changes[type][pkg] !== null
+      ) {
+        if (!changed) changed = "";
+        changed += "\n### " + type + "\n\n";
+        for (let change of changes[type][pkg]) changed += " - " + change + "\n";
+      }
+    }
+    markup += "## " + v;
+    if (v !== "Unreleased") markup += " (" + formatDate(changes.date) + ")";
+    markup += "\n";
+    markup += changed
+      ? changed
+      : `\n**Note:** Version bump only for package ${pkg}\n\n\n`;
+  }
+
+  return markup;
+}
+
+function formatDate(date) {
+  let d = new Date(date),
+    month = "" + (d.getMonth() + 1),
+    day = "" + d.getDate(),
+    year = d.getFullYear();
+
+  if (month.length < 2) month = "0" + month;
+  if (day.length < 2) day = "0" + day;
+
+  return [year, month, day].join("-");
+}
+
+/**
  * Make sure we have (at least) a description for each package
  */
 function validate(pkgs, config) {
@@ -362,9 +461,10 @@ function configurePatternExample(pkg, config) {
 }
 
 /**
- * Puts a package.json, rollup.config.js, and README.md
+ * Puts a package.json, rollup.config.js, README.md, and CHANGELOG.md
  * into every subdirectory under the packages directory.
- * Also creates an example dir for pattern packages.
+ * Also creates an example dir for pattern packages, and writes
+ * the global CHANGELOG.md.
  */
 function reconfigure(pkgs, config) {
   for (let pkg of pkgs) {
@@ -384,8 +484,16 @@ function reconfigure(pkgs, config) {
       path.join(config.repoPath, "packages", pkg, "README.md"),
       readme(pkg, config)
     );
+    fs.writeFileSync(
+      path.join(config.repoPath, "packages", pkg, "CHANGELOG.md"),
+      changelog(pkg, config)
+    );
     if (packageType(pkg, config) === "pattern")
       configurePatternExample(pkg, config);
   }
+  fs.writeFileSync(
+    path.join(config.repoPath, "CHANGELOG.md"),
+    changelog("global", config)
+  );
   console.log(chalk.yellowBright.bold("All done."));
 }

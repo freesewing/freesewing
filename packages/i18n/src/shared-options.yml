@@ -1,5 +1,7 @@
 aaron:
   dflt: brian
+benjamin:
+  dflt: brian
 bent:
   dflt: brian
 carlton:
@@ -75,6 +77,13 @@ jaeger:
     sleevecapHeight: bent
     buttons: simon
     collarRoll: simon
+sandy:
+  dflt: brian
+shin:
+  dflt: bruce
+  other:
+    legBonus: bruce
+    lengthBonus: brian
 simon:
   dflt: brian
   other:
@@ -83,6 +92,11 @@ sven:
   dflt: brian
 tamiko:
   dflt: brian
+theo:
+  dflt: bruce
+  other:
+    waistbandWidth: sandy
+    lengthBonus: brian
 trayvon:
   dflt: brian
 wahid:

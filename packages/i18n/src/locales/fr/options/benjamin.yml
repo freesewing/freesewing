@@ -1,7 +1,4 @@
 ---
-collarEase:
-  title: Aisance du col
-  description: Contrôle la quantité d'aisance au niveau du col (autour de votre cou)
 adjustmentRibbon:
   title: Ruban d'ajustement
   description: Si vous souhaitez inclure ou non un ruban d'ajustement
