@@ -10,6 +10,8 @@ Unreleased:
   Deprecated:
   Removed:
   Fixed:
+    benjamin:
+      - Added bandLength option to fit optiongroup (it was missing)
     css-theme:
       - Updated styles for DraftConfigurator component for pattern options 3 levels deep
     components:
