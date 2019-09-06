@@ -1,7 +1,4 @@
 ---
-collarEase:
-  title: Collar ease
-  description: Controls the amount of ease at your collar (around your neck)
 adjustmentRibbon:
   title: Adjustment ribbon
   description: Whether or not to include an adjustment ribbon
