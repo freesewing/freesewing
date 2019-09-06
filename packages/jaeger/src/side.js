@@ -16,7 +16,7 @@ export default function(part) {
 
   // Double back vent
   if (options.backVent === 2) {
-    let ventY = points.bsHips.y - points.bsWaistCp2.dy(points.bsHips) * options.backVentLength
+    let ventY = points.bsHips.y - points.bsWaistCp1.dy(points.bsHips) * options.backVentLength
     // Vent tip
     points.ventStart = utils.curveIntersectsY(
       points.bsHips,

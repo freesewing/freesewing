@@ -4,6 +4,54 @@
 
 ## Unreleased
 
+### benjamin
+
+#### Fixed
+
+ - Added bandLength option to fit optiongroup (it was missing)
+
+### components
+
+#### Fixed
+
+ - [#104](https://github.com/freesewing/freesewing.org/issues/104): Changed `onDragEnd` to `onChangeCommitted` in slider element (change in material-ui API when slider came out of beta)
+ - Workbench now also lets you preload a `withBreasts` set of measurements
+ - DraftConfigurator now properly styles pattern options 3 levels deep
+
+### create-freesewing-pattern
+
+#### Changed
+
+ - Updated dependencies
+
+#### Fixed
+
+ - Added missing `file-saver` dependency
+
+### css-theme
+
+#### Fixed
+
+ - Updated styles for DraftConfigurator component for pattern options 3 levels deep
+
+### i18n
+
+#### Added
+
+ - [#90](https://github.com/freesewing/freesewing/issues/90): Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo
+
+### jaeger
+
+#### Fixed
+
+ - [#76](https://github.com/freesewing/freesewing.org/issues/76): Fixed a typo in Jaeger that was causing the side vent length to be wrong
+
+### simon
+
+#### Fixed
+
+ - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
+
 
 ## 2.0.1 (2019-09-01)
 
