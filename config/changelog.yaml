@@ -22,6 +22,9 @@ Unreleased:
       - DraftConfigurator now properly styles pattern options 3 levels deep
     create-freesewing-pattern:
       - Added missing `file-saver` dependency
+    simon:
+      - "[#100](https://github.com/freesewing/freesewing.org/issues/100):
+        Updated simon with more sensible defaults for ease options"
   Security:
 
 2.0.1:
