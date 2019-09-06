@@ -53,6 +53,12 @@
 
  - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
 
+### utils
+
+#### Fixed
+
+ - Removed lingering debug statement in formatImperial
+
 
 ## 2.0.1 (2019-09-01)
 

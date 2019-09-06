@@ -30,6 +30,8 @@ Unreleased:
     simon:
       - "[#100](https://github.com/freesewing/freesewing.org/issues/100):
         Updated simon with more sensible defaults for ease options"
+    utils:
+      - Removed lingering debug statement in formatImperial
   Security:
 
 2.0.1:
