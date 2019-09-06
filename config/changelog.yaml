@@ -5,6 +5,8 @@ Unreleased:
   Deprecated:
   Removed:
   Fixed:
+    create-freesewing-pattern:
+      - Updated example package.json to use latest tag rather than beta
   Security:
 
 2.0.2:

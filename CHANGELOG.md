@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated example package.json to use latest tag rather than beta
+
 
 ## 2.0.2 (2019-09-06)
 
