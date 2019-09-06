@@ -1,26 +1,26 @@
 ---
 waistbandWidth:
-  title: Waistband width
-  description: Controls the width of the waistband.
+  title: Breedte tailleband
+  description: De breedte van de tailleband.
 waistbandPosition:
-  title: Waistband position
-  description: Controls the position of the waistband.
+  title: Positie tailleband
+  description: Bepaalt de positie van de tailleband.
 waistbandShape:
-  title: Waistband shape
-  description: Whether you want a straight or shaped waistband.
+  title: Vorm tailleband
+  description: Wil je een rechte of gebogen tailleband?
 circleRatio:
-  title: Circle ratio
-  description: The percentage of a circle you want the skirt to be.
+  title: Cirkel ratio
+  description: Hoeveel procent van een cirkel wil je dat de rok is?
 waistbandOverlap:
-  title: Waistband overlap
-  description: The amount by which the waistband overlaps.
+  title: Overlap Tailleband
+  description: Hoeveel de tailleband overlapt.
 gathering:
-  title: Gathering
-  description: The percent by which the top of the skirt is longer than the bottom of the waistband.
+  title: Fronsen
+  description: Met hoeveel procent de bovenrand van de rok langer is dan de onderrand van de tailleband.
 seamlessFullCircle:
-  title: Seamless full circle
-  description: Enables a seamless full circle skirt.
+  title: Naadloze volledige cirkel
+  description: Maakt een naadloze volle cirkelrok mogelijk.
 hemWidth:
-  title: Hem widt
-  description: Width of the hem
+  title: Breedte zoom
+  description: Breedte van de zoom
 
