@@ -16,8 +16,10 @@ export default part => {
         to: points.neck,
         d: 15 + sa
       })
-      paths.hemSa.attr('data-text-dy', 7, true)
-      paths.saFrench.attr('data-text-dy', 7, true)
+      if (sa) {
+        paths.hemSa.attr('data-text-dy', 7, true)
+        paths.saFrench.attr('data-text-dy', 7, true)
+      }
     }
   }
 

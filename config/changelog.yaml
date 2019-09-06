@@ -32,6 +32,8 @@ Unreleased:
         Updated simon with more sensible defaults for ease options"
       - "[#102](https://github.com/freesewing/freesewing.org/issues/102):
         Fixed 'Snippets not defined' error when drafting a seperate button placket"
+      - "[#103](https://github.com/freesewing/freesewing.org/issues/103):
+        Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance"
     utils:
       - Removed lingering debug statement in formatImperial
   Security:
