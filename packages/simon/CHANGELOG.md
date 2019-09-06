@@ -6,6 +6,13 @@
 **Note:** Version bump only for package simon
 
 
+## 2.0.2 (2019-09-06)
+
+### Fixed
+
+ - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
+ - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
+ - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
 ## 2.0.1 (2019-09-01)
 
 **Note:** Version bump only for package simon

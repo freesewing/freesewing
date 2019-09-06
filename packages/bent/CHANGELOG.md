@@ -6,6 +6,11 @@
 **Note:** Version bump only for package bent
 
 
+## 2.0.2 (2019-09-06)
+
+**Note:** Version bump only for package bent
+
+
 ## 2.0.1 (2019-09-01)
 
 **Note:** Version bump only for package bent

@@ -6,6 +6,15 @@
 **Note:** Version bump only for package create-freesewing-pattern
 
 
+## 2.0.2 (2019-09-06)
+
+### Changed
+
+ - Updated dependencies
+
+### Fixed
+
+ - Added missing `file-saver` dependency
 ## 2.0.1 (2019-09-01)
 
 **Note:** Version bump only for package create-freesewing-pattern

@@ -4,26 +4,27 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@freesewing/components": "beta",
-    "@freesewing/core": "beta",
-    "@freesewing/css-theme": "beta",
-    "@freesewing/i18n": "beta",
-    "@freesewing/models": "beta",
-    "@freesewing/mui-theme": "beta",
-    "@freesewing/pattern-info": "beta",
-    "@freesewing/plugin-bundle": "beta",
-    "@freesewing/plugin-theme": "beta",
-    "@freesewing/plugin-i18n": "beta",
-    "@freesewing/plugin-svgattr": "beta",
-    "@freesewing/utils": "beta",
-    "@material-ui/core": "^4.0.1",
-    "@material-ui/icons": "^4.0.1",
-    "@material-ui/lab": "^v4.0.0-alpha.14",
+    "@freesewing/components": "latest",
+    "@freesewing/core": "latest",
+    "@freesewing/css-theme": "latest",
+    "@freesewing/i18n": "latest",
+    "@freesewing/models": "latest",
+    "@freesewing/mui-theme": "latest",
+    "@freesewing/pattern-info": "latest",
+    "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-theme": "latest",
+    "@freesewing/plugin-i18n": "latest",
+    "@freesewing/plugin-svgattr": "latest",
+    "@freesewing/utils": "latest",
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/lab": "^v4.0.0-alpha.25",
     "pattern": "link:..",
-    "prismjs": "1.16.0",
-    "react": "^16.8",
-    "react-dom": "^16.8",
-    "react-scripts": "^3.0.0",
+    "prismjs": "1.17.1",
+    "react": "^16.9",
+    "react-dom": "^16.9",
+    "react-scripts": "^3.1.1",
+    "file-saver": "^2.0.2",
     "typeface-roboto-condensed": "latest"
   },
   "scripts": {
@@ -42,6 +43,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-prismjs": "1.0.2"
+    "babel-plugin-prismjs": "1.1.1"
   }
 }

@@ -1,14 +1,21 @@
 Unreleased:
   date:
   Added:
+  Changed:
+  Deprecated:
+  Removed:
+  Fixed:
+  Security:
+
+2.0.2:
+  date: 2019-09-06
+  Added:
     i18n:
       - "[#90](https://github.com/freesewing/freesewing/issues/90):
         Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo"
   Changed:
     create-freesewing-pattern:
       - Updated dependencies
-  Deprecated:
-  Removed:
   Fixed:
     benjamin:
       - Added bandLength option to fit optiongroup (it was missing)
@@ -36,7 +43,6 @@ Unreleased:
         Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance"
     utils:
       - Removed lingering debug statement in formatImperial
-  Security:
 
 2.0.1:
   date: 2019-09-01

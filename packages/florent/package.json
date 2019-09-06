@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/florent",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A FreeSewing pattern for a flat cap",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,8 +33,8 @@
     "netlify": "echo \"Not configured yet\""
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.0.1",
-    "@freesewing/plugin-bundle": "^2.0.1"
+    "@freesewing/core": "^2.0.2",
+    "@freesewing/plugin-bundle": "^2.0.2"
   },
   "dependencies": {},
   "devDependencies": {
@@ -45,14 +45,14 @@
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
-    "@freesewing/components": "^2.0.1",
-    "@freesewing/css-theme": "^2.0.1",
-    "@freesewing/i18n": "^2.0.1",
-    "@freesewing/mui-theme": "^2.0.1",
-    "@freesewing/plugin-bust": "^2.0.1",
-    "@freesewing/plugin-buttons": "^2.0.1",
-    "@freesewing/plugin-flip": "^2.0.1",
-    "@freesewing/utils": "^2.0.1",
+    "@freesewing/components": "^2.0.2",
+    "@freesewing/css-theme": "^2.0.2",
+    "@freesewing/i18n": "^2.0.2",
+    "@freesewing/mui-theme": "^2.0.2",
+    "@freesewing/plugin-bust": "^2.0.2",
+    "@freesewing/plugin-buttons": "^2.0.2",
+    "@freesewing/plugin-flip": "^2.0.2",
+    "@freesewing/utils": "^2.0.2",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
@@ -80,7 +80,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=8.0.0",

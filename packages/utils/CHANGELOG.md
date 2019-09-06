@@ -6,6 +6,11 @@
 **Note:** Version bump only for package utils
 
 
+## 2.0.2 (2019-09-06)
+
+### Fixed
+
+ - Removed lingering debug statement in formatImperial
 ## 2.0.1 (2019-09-01)
 
 ### Added

@@ -6,6 +6,11 @@
 **Note:** Version bump only for package i18n
 
 
+## 2.0.2 (2019-09-06)
+
+### Added
+
+ - [#90](https://github.com/freesewing/freesewing/issues/90): Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo
 ## 2.0.1 (2019-09-01)
 
 **Note:** Version bump only for package i18n

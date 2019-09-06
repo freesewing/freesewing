@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+
+## 2.0.2 (2019-09-06)
+
 ### benjamin
 
 #### Fixed
