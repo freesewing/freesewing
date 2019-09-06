@@ -190,7 +190,7 @@ export default {
     armholeDepthFactor: { pct: 60, min: 50, max: 70 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     bicepsEase: { pct: 20, min: 10, max: 50 },
-    buttonFreeLength: { pct: 2, min: 0, max: 40 },
+    buttonFreeLength: { pct: 2, min: 0, max: 15 },
     chestEase: { pct: 20, min: 10, max: 35 },
     collarBend: { pct: 5, min: 0, max: 10 },
     collarEase: { pct: 3.5, min: 2, max: 10 },
