@@ -7,11 +7,14 @@ Unreleased:
   Deprecated:
   Removed:
   Fixed:
+    css-theme:
+      - Updated styles for DraftConfigurator component for pattern options 3 levels deep
     components:
       - "[#104](https://github.com/freesewing/freesewing.org/issues/104):
         Changed `onDragEnd` to `onChangeCommitted` in slider element
         (change in material-ui API when slider came out of beta)"
       - Workbench now also lets you preload a `withBreasts` set of measurements
+      - DraftConfigurator now properly styles pattern options 3 levels deep
     create-freesewing-pattern:
       - Added missing `file-saver` dependency
   Security:
