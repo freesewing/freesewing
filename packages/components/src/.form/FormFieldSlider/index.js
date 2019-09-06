@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Slider from '@material-ui/core/Slider'
 import { withStyles } from '@material-ui/core/styles'
@@ -13,14 +13,14 @@ const PaddedSlider = withStyles({
 
 const FormFieldSlider = props => {
   const [value, setValue] = useState(props.value)
+  useEffect(() => {
+    if (props.value !== value) setValue(props.value)
+  }, [props.value])
 
   const update = (evt, newValue) => {
     props.updateValue(props.name, newValue, evt)
     setValue(newValue)
   }
-
-  // Force state update when rerendering due to props change
-  if (props.value !== value) setValue(props.value)
 
   return (
     <PaddedSlider

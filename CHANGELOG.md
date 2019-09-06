@@ -17,6 +17,7 @@
  - [#104](https://github.com/freesewing/freesewing.org/issues/104): Changed `onDragEnd` to `onChangeCommitted` in slider element (change in material-ui API when slider came out of beta)
  - Workbench now also lets you preload a `withBreasts` set of measurements
  - DraftConfigurator now properly styles pattern options 3 levels deep
+ - [#105](https://github.com/freesewing/freesewing.org/issues/105): Moved state change in render loop to useEffect
 
 ### create-freesewing-pattern
 
