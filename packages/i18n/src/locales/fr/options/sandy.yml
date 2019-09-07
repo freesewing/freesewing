@@ -13,14 +13,14 @@ circleRatio:
   description: Le pourcentage d'un cercle auquel vous souhaitez que la jupe corresponde.
 waistbandOverlap:
   title: Recouvrement de ceinture
-  description: The amount by which the waistband overlaps.
+  description: La quantité de chevauchement de la ceinture.
 gathering:
-  title: Gathering
-  description: The percent by which the top of the skirt is longer than the bottom of the waistband.
+  title: Fronçage
+  description: Le pourcentage duquel le haut de la jupe est plus long que le bas de la ceinture.
 seamlessFullCircle:
-  title: Seamless full circle
-  description: Enables a seamless full circle skirt.
+  title: Cercle entier sans couture
+  description: Permet une jupe totalement circulaire sans couture.
 hemWidth:
-  title: Hem widt
-  description: Width of the hem
+  title: Largeur d'ourlet
+  description: Largeur de l'ourlet
 
