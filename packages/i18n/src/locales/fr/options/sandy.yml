@@ -1,18 +1,18 @@
 ---
 waistbandWidth:
-  title: Waistband width
-  description: Controls the width of the waistband.
+  title: Largeur de ceinture
+  description: Contrôle la largeur de la ceinture.
 waistbandPosition:
-  title: Waistband position
-  description: Controls the position of the waistband.
+  title: Position de ceinture
+  description: Contrôle la position de la ceinture.
 waistbandShape:
-  title: Waistband shape
-  description: Whether you want a straight or shaped waistband.
+  title: Forme de ceinture
+  description: Si vous voulez une ceinture droite ou bien de forme particulière.
 circleRatio:
-  title: Circle ratio
-  description: The percentage of a circle you want the skirt to be.
+  title: Ratio circulaire
+  description: Le pourcentage d'un cercle auquel vous souhaitez que la jupe corresponde.
 waistbandOverlap:
-  title: Waistband overlap
+  title: Recouvrement de ceinture
   description: The amount by which the waistband overlaps.
 gathering:
   title: Gathering
