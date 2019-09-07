@@ -15,19 +15,19 @@ weltHeight:
   title: Hauteur monde de poche
   description: Détermine l'hauteur de la monde de poche
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Profondeur d'encolure
+  description: Détermine la profondeur d'encolure sur le devant
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Style d'encolure
+  description: Style de l'encolure
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  title: Style d'ourlet
+  description: Style de l'ourlet avant
 hemRadius:
-  title: Hem radius
-  desciption: Radius by which the hem is rounded
+  title: Rayon d'ourlet
+  desciption: Rayon avec lequel l'ourlet est arrondi
 backInset:
-  title: Back inset
+  title: Base arrière
   description: How much the back of the armhole is cut inwards
 frontInset:
   title: Front inset
