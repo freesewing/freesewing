@@ -1,6 +1,6 @@
 ---
 backScyeDart:
-  title: Pince arrière sans gêne
+  title: Pince dos
   description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
 frontScyeDart:
   title: Pince avant de l'emmanchure
@@ -28,16 +28,16 @@ hemRadius:
   desciption: Rayon avec lequel l'ourlet est arrondi
 backInset:
   title: Base arrière
-  description: How much the back of the armhole is cut inwards
+  description: A quel point l'arrière de l'emmanchure est coupée vers l'intérieur
 frontInset:
-  title: Front inset
-  description: How much the front of the armhole is cut inwards
+  title: Base avant
+  description: A quel point l'avant de l'emmanchure est coupée vers l'intérieur
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Aisance d'épaule
+  description: A quel point la couture d'épaule est placée vers l'intérieur des épaules
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Base cou
+  description: A quel point la couture d'épaule est coupée vers le cou
 pocketAngle:
-  title: Pocket angle
-  description: Angle of the pocket slant
+  title: Angle de poche
+  description: Angle de l'ouverture de poche
