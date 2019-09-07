@@ -3,8 +3,8 @@ adjustmentRibbon:
   title: Ruban d'ajustement
   description: Si vous souhaitez inclure ou non un ruban d'ajustement
 bandLength:
-  title: Band length
-  description: Length of the band
+  title: Longueur de bande
+  description: Longueur de la bande
 tipWidth:
   title: Largeur de la pointe
   description: Largeur des pointes
@@ -12,8 +12,8 @@ knotWidth:
   title: Largeur du noeud
   description: Largeur du nœud
 bowLength:
-  title: Bow length
-  description: Length of the bow (when knotted)
+  title: Longueur de noeud
+  description: Longueur du noeud (lorsqu'il est noué)
 bowStyle:
   title: Style de nœud
   description: Style du nœud
