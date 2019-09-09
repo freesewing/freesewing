@@ -15,29 +15,29 @@ weltHeight:
   title: Altura de verdugón del bolsillo
   description: La altura de verdugón del bolsillo.
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Caída del escote
+  description: Determina lo bajo que cae la línea de cuello en la parte delantera
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Estilo de la apertura del cuello
+  description: Estilo de apertura del cuello
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  title: Estilo del dobladillo
+  description: Estilo del dobladillo delantero
 hemRadius:
-  title: Hem radius
-  desciption: Radius by which the hem is rounded
+  title: Radio del dobladillo
+  desciption: Radio por el que el dobladillo es redondeado
 backInset:
-  title: Back inset
-  description: How much the back of the armhole is cut inwards
+  title: Inserción trasera
+  description: Cuánto de la parte de atrás de la sisa se corta hacia el interior
 frontInset:
-  title: Front inset
-  description: How much the front of the armhole is cut inwards
+  title: Inserción delantera
+  description: Cuánto de la parte de delante de la sisa se corta hacia el interior
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Inserción de hombro
+  description: Cuánto la costura del hombro se recorta hacia el interior en el hombro
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Inserción de cuello
+  description: Cuánto de la costura del hombro se corta hacia el interior en el cuello
 pocketAngle:
-  title: Pocket angle
-  description: Angle of the pocket slant
+  title: Ángulo del bolsillo
+  description: Ángulo del forro del bolsillo
