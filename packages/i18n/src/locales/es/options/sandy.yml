@@ -18,9 +18,9 @@ gathering:
   title: Fruncido
   description: El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla.
 seamlessFullCircle:
-  title: Seamless full circle
-  description: Enables a seamless full circle skirt.
+  title: Círculo completo sin costura
+  description: Permite una falda de círculo completo sin costuras.
 hemWidth:
-  title: Hem widt
-  description: Width of the hem
+  title: Anchura del dobladillo
+  description: Anchura del dobladillo
 
