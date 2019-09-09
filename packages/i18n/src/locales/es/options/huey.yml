@@ -19,4 +19,4 @@ hoodDepth:
   description: Controla la profundidad del capucha
 hoodAngle:
   title: Angulo de capucha
-  description: Controls the angle at which the hood is attached
+  description: Controla el ángulo en el que la capucha es unida
