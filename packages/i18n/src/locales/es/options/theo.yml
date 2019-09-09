@@ -1,7 +1,7 @@
 ---
 wedge:
-  title: Wedge
-  description: Controls the length of the crossseam
+  title: Cuña
+  description: Controla la longitud de la costura transversal
 legWidth:
-  title: Leg width
-  description: Controls the width of the legs
+  title: Ancho de la pierna
+  description: Controla la anchura de la pernera
