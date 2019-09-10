@@ -5,6 +5,8 @@ Unreleased:
   Deprecated:
   Removed:
   Fixed:
+    utils:
+      - Fix measurementDiffers to crash with breasts
   Security:
 
 2.0.2:
