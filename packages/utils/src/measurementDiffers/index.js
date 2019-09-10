@@ -9,6 +9,6 @@ const measurementDiffers = (
   measurementName,
   measurementValue,
   breasts = false
-) => Math.abs(Math.round((measurementValue - neckstimate(neckCircumference, measurementName)) / 20))
+) => Math.abs(Math.round((measurementValue - neckstimate(neckCircumference, measurementName, breasts)) / 20))
 
 export default measurementDiffers
