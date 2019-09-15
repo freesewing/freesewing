@@ -31,18 +31,28 @@ export default function(part) {
   )
 
   // Path
-  paths.seam = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
+  paths.saBase = new Path()
+    .move(points.bottomRight)
     .line(points.tip)
     .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
+    .line(points.bottomLeft)
+  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight)
+  paths.saBase.render = false
+  paths.hemBase.render = false
+  paths.seam = paths.saBase
+    .join(paths.hemBase)
     .close()
     .attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .join(paths.hemBase.offset(sa * 2))
+        .close()
+        .attr('class', 'fabric sa')
+    }
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {
       at: points.title.shift(-90, 15),

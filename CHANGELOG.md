@@ -5,6 +5,33 @@
 ## Unreleased
 
 
+## 2.0.3 (2019-09-15)
+
+### bruce
+
+#### Fixed
+
+ - [#106](https://github.com/freesewing/freesewing/issues/106): Fix incorrect hem allowance
+
+### components
+
+#### Changed
+
+ - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated example package.json to use latest tag rather than beta
+
+### utils
+
+#### Fixed
+
+ - Fix measurementDiffers to pass breasts parameter to necstimate
+
+
 ## 2.0.2 (2019-09-06)
 
 ### benjamin

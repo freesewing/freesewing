@@ -6,6 +6,11 @@
 **Note:** Version bump only for package components
 
 
+## 2.0.3 (2019-09-15)
+
+### Changed
+
+ - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
 ## 2.0.2 (2019-09-06)
 
 ### Fixed
