@@ -2,16 +2,24 @@ Unreleased:
   date:
   Added:
   Changed:
-    components:
-      - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
   Deprecated:
   Removed:
   Fixed:
+  Security:
+
+2.0.3:
+  date: 2019-09-15
+  Changed:
+    components:
+      - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
+  Fixed:
+    bruce:
+      - "[#106](https://github.com/freesewing/freesewing/issues/106):
+        Fix incorrect hem allowance"
     create-freesewing-pattern:
       - Updated example package.json to use latest tag rather than beta
     utils:
       - Fix measurementDiffers to pass breasts parameter to necstimate
-  Security:
 
 2.0.2:
   date: 2019-09-06

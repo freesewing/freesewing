@@ -6,6 +6,11 @@
 **Note:** Version bump only for package utils
 
 
+## 2.0.3 (2019-09-15)
+
+### Fixed
+
+ - Fix measurementDiffers to pass breasts parameter to necstimate
 ## 2.0.2 (2019-09-06)
 
 ### Fixed

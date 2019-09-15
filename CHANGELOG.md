@@ -4,6 +4,15 @@
 
 ## Unreleased
 
+
+## 2.0.3 (2019-09-15)
+
+### bruce
+
+#### Fixed
+
+ - [#106](https://github.com/freesewing/freesewing/issues/106): Fix incorrect hem allowance
+
 ### components
 
 #### Changed

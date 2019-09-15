@@ -6,6 +6,11 @@
 **Note:** Version bump only for package create-freesewing-pattern
 
 
+## 2.0.3 (2019-09-15)
+
+### Fixed
+
+ - Updated example package.json to use latest tag rather than beta
 ## 2.0.2 (2019-09-06)
 
 ### Changed
