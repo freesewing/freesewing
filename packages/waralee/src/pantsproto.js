@@ -7,13 +7,13 @@ export default function(part) {
     Point,
     Path,
     points,
-    paths/*,
+    paths,
     Snippet,
     snippets,
     complete,
     sa,
     paperless,
-    macro*/
+    macro
   } = part.shorthand();
 
   let seatDepth =
@@ -25,7 +25,7 @@ export default function(part) {
 
   CreateCrotchPoints(part);
 
-  points.mLeg = points.mHip.shift(270, measurements.inseam);
+  points.mLeg = points.mHip.shift(270, measurements.inseam * (1 -options.legShortening));
   points.fLegSide = points.mLeg.shift(
     180,
     options.crotchFront * circumference4

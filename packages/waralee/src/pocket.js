@@ -92,6 +92,11 @@ export default function(part) {
       to: points.bottomRight,
       x: points.bottomRight.x
     });
+    macro("vd", {
+      from: points.bottomRight,
+      to: points.bottomLeft,
+      x: points.bottomRight.x
+    });
   }
 
   return part;

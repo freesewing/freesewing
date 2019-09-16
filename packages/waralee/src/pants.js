@@ -1,9 +1,11 @@
+import { CreateCrotchPoints } from "./util";
+
 export default function(part) {
   let {
     options,
-    /*measurements,
+    measurements,
     Point,
-    Path,*/
+    Path,
     points,
     paths,
     Snippet,
@@ -13,6 +15,11 @@ export default function(part) {
     paperless,
     macro
   } = part.shorthand();
+
+  let seatDepth =
+    measurements.seatDepth + measurements.seatDepth * options.waistRaise;
+  let circumference = measurements.seatCircumference;
+  let circumference4 = circumference / 4;
 
 
   paths.waistFoldBack = paths.waistBack
@@ -133,8 +140,8 @@ export default function(part) {
         from: points.bWaistSide,
         to: points.backPocketRight,
         y: points.backPocketRight.y
-      });
-    }
+      });  
+    } 
   }
   
   return part;
