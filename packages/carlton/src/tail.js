@@ -19,13 +19,14 @@ export default function(part) {
   points.fold2Top = points.cbTop.shift(0, store.get('cbToDart'))
   points.fold3Top = points.cbTop.shift(0, store.get('cbToDart') * 2)
   points.fold4Top = points.fold3Top.shift(0, store.get('cbToDart') / 2)
-  points.waistTop = points.fold4Top.shift(0, store.get('dartToSide'))
+  points.fold5Top = points.fold4Top.shift(0, store.get('cbToDart') / 2)
+  points.waistTop = points.fold5Top.shift(0, store.get('dartToSide'))
 
   // 12cm will do as we're just drawing a rectangle.
   // But check that lenght > 12cm because doll clothes.
   let drawnLength = length < 120 ? length : 120
 
-  for (let i of ['cb', 'fold1', 'fold2', 'fold3', 'fold4', 'waist']) {
+  for (let i of ['cb', 'fold1', 'fold2', 'fold3', 'fold4', 'fold5', 'waist']) {
     points[i + 'Bottom'] = points[i + 'Top'].shift(-90, drawnLength)
     if (i === 'cb' || i === 'waist') {
       points[i + 'MidTop'] = points[i + 'Top'].shift(-90, drawnLength * 0.4)
@@ -61,6 +62,8 @@ export default function(part) {
     .line(points.cbMidBottom)
     .move(points.waistMidBottom)
     .line(points.waistMidTop)
+    .move(points.fold5Top)
+    .line(points.fold5Bottom)
     .attr('class', 'fabric dashed')
 
   if (complete) {
@@ -110,6 +113,11 @@ export default function(part) {
       })
       macro('hd', {
         from: points.fold4Bottom,
+        to: points.fold5Bottom,
+        y: points.cbBottom.y + sa + 15
+      })
+      macro('hd', {
+        from: points.fold5Bottom,
         to: points.waistBottom,
         y: points.cbBottom.y + sa + 15
       })
