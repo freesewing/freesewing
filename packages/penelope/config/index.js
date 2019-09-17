@@ -44,7 +44,7 @@ export default {
   },
   measurements: [
     "naturalWaist",
-    "hipsCircumference",
+    /*"hipsCircumference",*/
     "seatCircumference",
     "naturalWaistToHip",
     "naturalWaistToSeat",
