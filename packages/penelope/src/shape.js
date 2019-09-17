@@ -34,33 +34,20 @@ function BuildMainShape(part, frontPart) {
     measurements.seatCircumference > waist
       ? measurements.seatCircumference
       : waist;
-  let hip =
+  /*let hip =
     measurements.hipsCircumference > waist
       ? measurements.hipsCircumference
-      : waist;
+      : waist;*/
 
   dartCalc(options, seat, seatEase, waist, waistEase);
 
-  /*
-  console.log(
-    "seat: " +
-      seat +
-      " seatEase: " +
-      seatEase +
-      " waist: " +
-      waist +
-      " waistEase: " +
-      waistEase
-  );
-  */
-
+  
   let nrOfDarts = options.nrOfDarts;
   let dartSize = options.frontDartSize;
   if (frontPart == false) {
     dartSize = options.backDartSize;
   }
-  //console.log("dartSize: " + dartSize + " nrOfDarts: " + nrOfDarts);
-
+  
   if (dartSize <= 0) {
     nrOfDarts = 0;
   }
@@ -75,7 +62,7 @@ function BuildMainShape(part, frontPart) {
   waist += waistEase;
 
   let sideSeam = seat / 4 + sideSeamShift;
-  let hipSeam = hip / 4 + sideSeamShift;
+  //let hipSeam = hip / 4 + sideSeamShift;
 
   points.lWaist = new Point(0, 0);
   points.lLeg = new Point(0, skirtLength);
