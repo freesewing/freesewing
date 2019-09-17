@@ -18,7 +18,7 @@ function BuildMainShape(part, frontPart) {
   } = part.shorthand();
 
   let skirtLength =
-    measurements.naturalWaistToKnee + options.lengthBonus + options.hem;
+    (measurements.naturalWaistToKnee * (1+ options.lengthBonus)) + options.hem;
 
   store.set("skirtLength", skirtLength);
 
@@ -34,11 +34,10 @@ function BuildMainShape(part, frontPart) {
     measurements.seatCircumference > waist
       ? measurements.seatCircumference
       : waist;
-  /*let hip =
+  let hip =
     measurements.hipsCircumference > waist
       ? measurements.hipsCircumference
       : waist;
-  */
 
   dartCalc(options, seat, seatEase, waist, waistEase);
 
@@ -76,7 +75,7 @@ function BuildMainShape(part, frontPart) {
   waist += waistEase;
 
   let sideSeam = seat / 4 + sideSeamShift;
-  //let hipSeam = hip / 4 + sideSeamShift;
+  let hipSeam = hip / 4 + sideSeamShift;
 
   points.lWaist = new Point(0, 0);
   points.lLeg = new Point(0, skirtLength);
