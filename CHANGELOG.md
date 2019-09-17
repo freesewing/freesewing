@@ -5,6 +5,21 @@
 ## Unreleased
 
 
+## 2.0.4 (2019-09-27)
+
+### carlton
+
+#### Fixed
+
+ - [#108](https://github.com/freesewing/freesewing/issues/108): Fixed incorrect width of the Carlton tail
+
+### components
+
+#### Added
+
+ - Advanced options and settings are now hidden by default in DraftConfigurator
+
+
 ## 2.0.3 (2019-09-15)
 
 ### bruce

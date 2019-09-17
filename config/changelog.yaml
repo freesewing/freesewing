@@ -7,6 +7,16 @@ Unreleased:
   Fixed:
   Security:
 
+2.0.4:
+  date: 2019-09-27
+  Added:
+    components:
+      - Advanced options and settings are now hidden by default in DraftConfigurator
+  Fixed:
+    carlton:
+      - "[#108](https://github.com/freesewing/freesewing/issues/108):
+        Fixed incorrect width of the Carlton tail"
+
 2.0.3:
   date: 2019-09-15
   Changed:
