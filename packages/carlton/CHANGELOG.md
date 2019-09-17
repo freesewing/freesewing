@@ -6,6 +6,11 @@
 **Note:** Version bump only for package carlton
 
 
+## 2.0.4 (2019-09-27)
+
+### Fixed
+
+ - [#108](https://github.com/freesewing/freesewing/issues/108): Fixed incorrect width of the Carlton tail
 ## 2.0.3 (2019-09-15)
 
 **Note:** Version bump only for package carlton
