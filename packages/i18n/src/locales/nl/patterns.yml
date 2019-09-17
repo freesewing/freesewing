@@ -35,6 +35,9 @@ hugo:
 jaeger:
   description: Jaeger is een sportief jasje met twee knopen en opgestikte zakken.
   title: Jaeger jasje
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy is een veelzijdig patroon voor een cirkelrok
   title: Sandy cirkelrok
