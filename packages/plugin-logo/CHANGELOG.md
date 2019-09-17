@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-logo
 
 
+## 2.0.4 (2019-09-27)
+
+**Note:** Version bump only for package plugin-logo
+
+
 ## 2.0.3 (2019-09-15)
 
 **Note:** Version bump only for package plugin-logo

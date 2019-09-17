@@ -19,6 +19,10 @@
 
  - Advanced options and settings are now hidden by default in DraftConfigurator
 
+#### Fixed
+
+ - [#104](https://github.com/freesewing/freesewing/issues/104): Fixed incorrect embed setting on Workbench pattern export
+
 
 ## 2.0.3 (2019-09-15)
 
