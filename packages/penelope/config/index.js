@@ -30,9 +30,11 @@ export default {
       "waistBand",
       "waistBandWidth",
       "zipperLocation",
+      "nrOfDarts"
+    ],
+    advanced: [
       "seatEase",
       "waistEase",
-      "nrOfDarts",
       /*"waistSideSeamRaise",*/
       "backDartDepthFactor",
       "frontDartDepthFactor",
