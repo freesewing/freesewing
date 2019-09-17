@@ -1,4 +1,7 @@
 ---
+advanced:
+  title: Advanced
+  description: Controls whether or not to display advanced settings and pattern options
 paperless:
   title: Papierloos
   description: Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken
