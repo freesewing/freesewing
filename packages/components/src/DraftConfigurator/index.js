@@ -25,7 +25,7 @@ const DraftConfigurator = props => {
       </li>
       <li>
         <span>
-          <FormattedMessage id="app.draftSettings" />
+          <FormattedMessage id="app.settings" />
         </span>
         <DraftSettings
           noDocs={props.noDocs}
