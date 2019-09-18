@@ -28,11 +28,11 @@ crotchFactorFrontVer:
   description: Wordt gebruikt om de curve van het kruis vooraan verticaal te verplaatsen
 waistOverlap:
   title: Overlap Taille
-  description: This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
+  description: Dit bepaalt in hoeverre dat je de beenflappen wil laten overlappen aan de taille. Als je 0 instelt komen ze elkaar tegen ze aan de zijnaad, een instelling van 100 zorgt dat ze aan middenvoor/achter tegen elkaar komen.
 legShortening:
-  title: Leg Shortening
-  description: This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length.
+  title: Been Inkorten
+  description: Dit bepaalt hoe lang de broek zal zijn. Het is een factor van de binnenbeennaad. Hoe groter de waarde, hoe meer van de lengte verwijderd zal worden.
 backRaise:
-  title: Back Raise
-  description: This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+  title: Hoogte Rug
+  description: Deze instelling verhoogt de taille in de rug. Onze taille zit niet horizontaal, maar ligt wat hoger in de rug. Deze instelling staat je toe de rug te verhogen als dit nodig is voor een goede pasvorm.
 
