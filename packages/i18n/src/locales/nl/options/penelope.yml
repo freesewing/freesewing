@@ -1,40 +1,40 @@
 ---
 backDartDepthFactor:
-  title: Back Dart Depth Factor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Factor Lengte Neep Achter
+  description: Hoe ver de neep achteraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 backVent:
-  title: Back Vent
-  description: Add a vent in the back of the skirt.
+  title: Loopsplit
+  description: Voeg een split toe aan de achterkant van de rok.
 backVentLength:
-  title: Back Vent Length
-  description: Length of the Back Vent as a percentage of the skirt length.
+  title: Lengte Loopsplit
+  description: Lengte van het loopsplit als een percentage van de lengte van de rok.
 dartToSideSeamFactor:
-  title: Dart to Side Seam factor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  title: Factor Neep tot Zijnaad
+  description: Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
 frontDartDepthFactor:
-  title: Front Dart Depth Factor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Factor Lengte Neep Vooraan
+  description: Hoe ver de neep vooraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 hem:
-  title: Size of the hem.
-  description: The size of the hem. Measurement in absolute values.
+  title: Afmeting van de zoom.
+  description: De afmeting van de zoom. Een maat in absolute waarden.
 hemBonus:
-  title: Hem Bonus
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  title: Bonus Zoom
+  description: Deze optie maakt de omtrek van de rok aan de zoom kleiner. Percentage van de Omtrek Zitvlak-maat.
 lengthBonus:
-  title: Length Bonus
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  title: Bonus lengte
+  description: Dit bepaalt de lengte van de rok. Een percentage van de Taille tot Knie-maat.
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Aantal nepen
+  description: Het aantal nepen in het patroon. Het maximum is 2. Deze optie kan aangepast worden door het patroon als de berekeningen te kleine nepen als resultaat hebben.
 seatEase:
-  title: Seat Ease
-  description: Amount of ease at the seat level.
+  title: Overwijdte zitvlak
+  description: Hoeveelheid overwijdte aan het zitvlak.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Tailleband
+  description: Voeg een tailleband toe aan het patroon.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Breedte tailleband
+  description: De breedte van de tailleband.
 waistEase:
   title: waist Ease
   description: Amount of ease at the waist level.
