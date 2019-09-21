@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package simon
+### Added
 
-
+ - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package simon

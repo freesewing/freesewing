@@ -22,6 +22,12 @@
 
  - Added the Penelope Pencil Skirt pattern by @woutervdub
 
+### simon
+
+#### Added
+
+ - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
+
 ### utils
 
 #### Added
