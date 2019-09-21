@@ -2,6 +2,15 @@
 barrelCuffNarrowButton:
   title: Manschette schmaler Knopf
   description: Gibt an, ob Sie einen Knopf hinzufügen, um die Manschetten enger zu binden. Diese Option ist nur für Fassmanschetten relevant.
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+boxPleatWidth:
+  title: Box pleat width
+  description: The total widh of the box pleat
+boxPleatFold:
+  title: Box pleat fold
+  description: The amount by with the box pleat folds inwards
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.
