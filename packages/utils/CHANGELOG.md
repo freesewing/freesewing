@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package utils
+### Added
 
-
+ - Added backend methods for administration
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package utils

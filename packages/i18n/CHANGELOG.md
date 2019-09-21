@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package i18n
+### Added
 
-
+ - Added translations for Penelope and Waralee
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package i18n

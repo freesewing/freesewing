@@ -4,6 +4,36 @@
 
 ## Unreleased
 
+### core
+
+#### Changed
+
+ - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
+
+### i18n
+
+#### Added
+
+ - Added translations for Penelope and Waralee
+
+### penelope
+
+#### Added
+
+ - Added the Penelope Pencil Skirt pattern by @woutervdub
+
+### utils
+
+#### Added
+
+ - Added backend methods for administration
+
+### waralee
+
+#### Added
+
+ - Added the Waralee wrap Pants pattern by @woutervdub
+
 
 ## 2.0.4 (2019-09-27)
 

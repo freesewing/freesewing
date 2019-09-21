@@ -1,8 +1,24 @@
 Unreleased:
   date:
   Added:
+    penelope:
+      - Added the Penelope Pencil Skirt pattern by @woutervdub
+    waralee:
+      - Added the Waralee wrap Pants pattern by @woutervdub
+    i18n:
+      - Added translations for Penelope and Waralee
+    utils:
+      - Added backend methods for administration
   Changed:
+    core:
+      - The pattern super constructor now sets a `config` property that
+        holds the pattern configuration. This means that unlike before, there
+        is no need to instantiate a pattern to access its config. You can just
+        import the pattern, and it's config property will contain the pattern config.
   Deprecated:
+    patterns:
+      - The [@freesewing/patterns](https://www.npmjs.com/package/@freesewing/patterns)
+        package has been deprecated. Please import our patterns individually.
   Removed:
   Fixed:
   Security:

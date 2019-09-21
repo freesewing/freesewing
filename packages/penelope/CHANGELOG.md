@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package penelope
+### Added
 
-
+ - Added the Penelope Pencil Skirt pattern by @woutervdub
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package penelope
