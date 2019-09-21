@@ -1,11 +1,7 @@
-import { CreateCrotchPoints } from './util'
-
 export default function(part) {
   let {
     options,
     measurements,
-    Point,
-    Path,
     points,
     paths,
     Snippet,
@@ -16,9 +12,7 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let seatDepth = measurements.seatDepth + measurements.seatDepth * options.waistRaise
   let circumference = measurements.seatCircumference
-  let circumference4 = circumference / 4
 
   paths.waistFoldBack = paths.waistBack
     .offset(-1 * options.waistBand)

@@ -9,7 +9,6 @@ export default function(part) {
     Snippet,
     snippets,
     complete,
-    sa,
     paperless,
     macro
   } = part.shorthand()
