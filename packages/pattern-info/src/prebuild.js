@@ -1,7 +1,52 @@
 const path = require('path')
 const fse = require('fs-extra')
-const patterns = require('@freesewing/patterns')
+const aaron = require('@freesewing/aaron').config
+const benjamin = require('@freesewing/benjamin').config
+const bent = require('@freesewing/bent').config
+const brian = require('@freesewing/brian').config
+const bruce = require('@freesewing/bruce').config
+const carlita = require('@freesewing/carlita').config
+const carlton = require('@freesewing/carlton').config
+const cathrin = require('@freesewing/cathrin').config
+const florent = require('@freesewing/florent').config
+const huey = require('@freesewing/huey').config
+const hugo = require('@freesewing/hugo').config
+const jaeger = require('@freesewing/jaeger').config
+const penelope = require('@freesewing/penelope').config
+const sandy = require('@freesewing/sandy').config
+const shin = require('@freesewing/shin').config
+const simon = require('@freesewing/simon').config
+const sven = require('@freesewing/sven').config
+const tamiko = require('@freesewing/tamiko').config
+const theo = require('@freesewing/theo').config
+const trayvon = require('@freesewing/trayvon').config
+const wahid = require('@freesewing/wahid').config
+const waralee = require('@freesewing/waralee').config
 
+const patterns = {
+  aaron,
+  benjamin,
+  bent,
+  brian,
+  bruce,
+  carlita,
+  carlton,
+  cathrin,
+  florent,
+  huey,
+  hugo,
+  jaeger,
+  penelope,
+  sandy,
+  shin,
+  simon,
+  sven,
+  tamiko,
+  theo,
+  trayvon,
+  wahid,
+  waralee
+}
 const patternOptions = config => {
   let all = []
   let groups = config.optionGroups
@@ -47,27 +92,25 @@ const patternParts = config => {
   return Object.keys(parts)
 }
 
-let options = {}
-let optionGroups = {}
-let parts = {}
-let measurements = {}
-let versions = {}
-let info = {}
+const options = {}
+const optionGroups = {}
+const parts = {}
+const measurements = {}
+const versions = {}
+const info = {}
 for (let pattern of Object.keys(patterns)) {
-  let instance = new patterns[pattern]()
-  let p = pattern.toLowerCase()
-  options[p] = patternOptions(instance.config)
-  optionGroups[p] = instance.config.optionGroups
-  parts[p] = patternParts(instance.config)
-  measurements[p] = instance.config.measurements
-  versions[p] = instance.config.version
-  info[p] = {
-    design: instance.config.design,
-    code: instance.config.code,
-    department: instance.config.department,
-    type: instance.config.type,
-    difficulty: instance.config.difficulty,
-    tags: instance.config.tags
+  options[pattern] = patternOptions(patterns[pattern])
+  optionGroups[pattern] = patterns[pattern].optionGroups
+  parts[pattern] = patternParts(patterns[pattern])
+  measurements[pattern] = patterns[pattern].measurements
+  versions[pattern] = patterns[pattern].version
+  info[pattern] = {
+    design: patterns[pattern].design,
+    code: patterns[pattern].code,
+    department: patterns[pattern].department,
+    type: patterns[pattern].type,
+    difficulty: patterns[pattern].difficulty,
+    tags: patterns[pattern].tags
   }
 }
 

@@ -50,8 +50,7 @@ export default function(part) {
     macro('title', {
       nr: 5,
       at: points.frontTitle.shift(0, 30),
-      title: 'frontFacing',
-      prefix: 'front'
+      title: '4x fromFabric'
     })
     points.frontLogo = points.frontTitle.shift(270, 15)
     snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.4)
@@ -64,8 +63,7 @@ export default function(part) {
     macro('title', {
       nr: 6,
       at: points.backTitle.shift(0, 30),
-      title: 'backFacing',
-      prefix: 'back'
+      title: '4x fromFabric'
     })
     points.backLogo = points.backTitle.shift(270, 15)
     snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.4)

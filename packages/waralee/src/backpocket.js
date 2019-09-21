@@ -12,26 +12,21 @@ export default function(part) {
     sa,
     paperless,
     macro
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let pocketDepth = options.backPocketDepth;
+  let pocketDepth = options.backPocketDepth
 
-  points.topLeft = new Point(0, 0);
+  points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * measurements.seatDepth
-  );
+    (pocketDepth + 30) * 2 + options.backPocketVerticalOffset * measurements.seatDepth
+  )
 
-  points.topRight = points.topLeft.shift(
-    0,
-    options.backPocketSize * measurements.seatDepth + 24
-  );
+  points.topRight = points.topLeft.shift(0, options.backPocketSize * measurements.seatDepth + 24)
   points.bottomRight = points.topRight.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * measurements.seatDepth
-  );
+    (pocketDepth + 30) * 2 + options.backPocketVerticalOffset * measurements.seatDepth
+  )
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -40,37 +35,38 @@ export default function(part) {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   // Complete?
   if (complete) {
-    points.title = points.topLeft.shift(270, 75).shift(0, 50);
-    macro("title", {
+    points.title = points.topLeft.shift(270, 75).shift(0, 50)
+    macro('title', {
+      nr: 4,
       at: points.title,
-      title: "2x " + "fromFabric"
-    });
+      title: 'backPocket'
+    })
 
-    points.logo = points.title.shift(270, 75);
-    snippets.logo = new Snippet("logo", points.logo);
+    points.logo = points.title.shift(270, 75)
+    snippets.logo = new Snippet('logo', points.logo)
     points.text = points.logo
       .shift(-90, 25)
-      .attr("data-text", "Waralee")
-      .attr("data-text-class", "center");
+      .attr('data-text', 'Waralee')
+      .attr('data-text-class', 'center')
   }
 
   // Paperless?
   if (paperless) {
-    macro("hd", {
+    macro('hd', {
       from: points.topLeft,
       to: points.topRight,
       y: points.topLeft.y + 15
-    });
-    macro("vd", {
+    })
+    macro('vd', {
       from: points.topLeft,
       to: points.bottomLeft,
       x: points.topLeft.x + 15
-    });
+    })
   }
 
-  return part;
+  return part
 }

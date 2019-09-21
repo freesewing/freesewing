@@ -1,48 +1,43 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 // ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
 
 export default {
-  name: "waralee",
-  version: "0.0.1",
-  design: "woutervdub",
-  code: "woutervdub",
-  department: "menswear",
-  type: "pattern",
+  name: 'waralee',
+  version,
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 3,
   tags: [
-    "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "pattern",
-    "sewing",
-    "sewing pattern"
+    'freesewing',
+    'design',
+    'diy',
+    'fashion',
+    'made to measure',
+    'parametric design',
+    'pattern',
+    'sewing',
+    'sewing pattern'
   ],
   optionGroups: {
-    fit: ["legShortening", "waistOverlap", "backRaise"],
+    fit: ['legShortening', 'waistOverlap', 'backRaise'],
     advanced: [
-      "crotchFront",
-      "crotchBack",
-      "crotchFactorBackHor",
-      "crotchFactorBackVer",
-      "crotchFactorFrontHor",
-      "crotchFactorFrontVer",
-      "waistRaise"
+      'crotchFront',
+      'crotchBack',
+      'crotchFactorBackHor',
+      'crotchFactorBackVer',
+      'crotchFactorFrontHor',
+      'crotchFactorFrontVer',
+      'waistRaise'
     ]
   },
-  measurements: [
-    "hipsCircumference",
-    "seatCircumference",
-    "inseam",
-    "seatDepth"
-  ],
+  measurements: ['seatCircumference', 'inseam', 'seatDepth'],
   dependencies: {},
-  inject: { pants: "pantsproto", mini: "pantsproto" },
+  inject: { pants: 'pantsproto', mini: 'pantsproto' },
   hide: [],
-  parts: ["cutout", "pocket", "backPocket", "facings"],
+  parts: ['cutout', 'pocket', 'backPocket', 'facings'],
   options: {
     minimizer: 5,
     frontPocketVerticalOffset: 0.07,
@@ -68,4 +63,4 @@ export default {
     legShortening: { pct: 25, min: -10, max: 50 },
     backRaise: { pct: 10, min: 0, max: 25 }
   }
-};
+}

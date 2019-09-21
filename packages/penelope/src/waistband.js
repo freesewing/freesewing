@@ -12,22 +12,19 @@ export default function(part) {
     sa,
     paperless,
     macro
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let waistEase = options.waistEase;
-  let waist = measurements.naturalWaist;
-  waist += waistEase;
+  let waistEase = options.waistEase
+  let waist = measurements.naturalWaist
+  waist += waistEase
 
-  points.TL = new Point(0, 0);
-  points.BL = new Point(0, waist / 2 + options.waistBandOverlap);
-  points.TR = new Point(options.waistBandWidth, 0);
-  points.BR = new Point(
-    options.waistBandWidth,
-    waist / 2 + options.waistBandOverlap
-  );
+  points.TL = new Point(0, 0)
+  points.BL = new Point(0, waist / 2 + options.waistBandOverlap)
+  points.TR = new Point(options.waistBandWidth, 0)
+  points.BR = new Point(options.waistBandWidth, waist / 2 + options.waistBandOverlap)
 
-  points.titleAnchor = new Point(options.waistBandWidth / 2, waist / 6);
-  points.logoAnchor = new Point(options.waistBandWidth / 2, waist / 3);
+  points.titleAnchor = new Point(options.waistBandWidth / 2, waist / 6)
+  points.logoAnchor = new Point(options.waistBandWidth / 2, waist / 3)
 
   paths.outline = new Path()
     .move(points.TL)
@@ -36,24 +33,25 @@ export default function(part) {
     .line(points.TR)
     .line(points.TL)
     .close()
-    .attr("class", "fabric");
+    .attr('class', 'fabric')
 
   // Complete?
   if (complete) {
-    macro("cutonfold", {
+    macro('cutonfold', {
       from: points.TR,
       to: points.TL,
       margin: 15,
       offset: 15,
       grainline: true
-    });
+    })
 
-    snippets.logo = new Snippet("logo", points.logoAnchor);
+    snippets.logo = new Snippet('logo', points.logoAnchor)
 
-    macro("title", {
+    macro('title', {
+      nr: 3,
       at: points.titleAnchor,
-      title: "1x " + "fromFabric"
-    });
+      title: 'waistband'
+    })
 
     if (sa) {
       paths.sa = new Path()
@@ -67,22 +65,22 @@ export default function(part) {
             .offset(sa)
         )
         .line(points.TR)
-        .attr("class", "fabric sa");
+        .attr('class', 'fabric sa')
     }
   }
 
   if (paperless) {
-    macro("vd", {
+    macro('vd', {
       from: points.TL,
       to: points.BL,
       x: points.TL.x + options.paperlessOffset
-    });
-    macro("hd", {
+    })
+    macro('hd', {
       from: points.BL,
       to: points.BR,
       y: points.BR.y - options.paperlessOffset
-    });
+    })
   }
 
-  return part;
+  return part
 }

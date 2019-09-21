@@ -18,6 +18,7 @@ export const list = [
   'huey',
   'hugo',
   'jaeger',
+  'penelope',
   'sandy',
   'shin',
   'simon',
@@ -25,7 +26,8 @@ export const list = [
   'tamiko',
   'theo',
   'trayvon',
-  'wahid'
+  'wahid',
+  'waralee'
 ]
 
 export const withoutBreasts = [
@@ -39,6 +41,7 @@ export const withoutBreasts = [
   'huey',
   'hugo',
   'jaeger',
+  'penelope',
   'sandy',
   'shin',
   'simon',
@@ -46,7 +49,8 @@ export const withoutBreasts = [
   'tamiko',
   'theo',
   'trayvon',
-  'wahid'
+  'wahid',
+  'waralee'
 ]
 
 export const withBreasts = ['cathrin', 'carlita']

@@ -1,59 +1,57 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 // ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
 
 export default {
-  name: "penelope",
+  name: 'penelope',
   version,
-  design: "woutervdub",
-  code: "woutervdub",
-  department: "womenswear",
-  type: "pattern",
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
+  department: 'womenswear',
+  type: 'pattern',
   difficulty: 3,
   tags: [
-    "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "pattern",
-    "sewing",
-    "sewing pattern"
+    'freesewing',
+    'design',
+    'diy',
+    'fashion',
+    'made to measure',
+    'parametric design',
+    'pattern',
+    'sewing',
+    'sewing pattern'
   ],
   optionGroups: {
     fit: [
-      "lengthBonus",
-      "hem",
-      "backVent",
-      "backVentLength",
-      "waistBand",
-      "waistBandWidth",
-      "zipperLocation",
-      "nrOfDarts",
-      "hemBonus"
+      'lengthBonus',
+      'hem',
+      'backVent',
+      'backVentLength',
+      'waistBand',
+      'waistBandWidth',
+      'zipperLocation',
+      'nrOfDarts',
+      'hemBonus'
     ],
     advanced: [
-      "seatEase",
-      "waistEase",
-      /*"waistSideSeamRaise",*/
-      "backDartDepthFactor",
-      "frontDartDepthFactor",
-      "dartToSideSeamFactor"
+      'seatEase',
+      'waistEase',
+      'backDartDepthFactor',
+      'frontDartDepthFactor',
+      'dartToSideSeamFactor'
     ]
   },
   measurements: [
-    "naturalWaist",
-    /*"hipsCircumference",*/
-    "seatCircumference",
-    "naturalWaistToHip",
-    "naturalWaistToSeat",
-    "naturalWaistToKnee"
+    'naturalWaist',
+    'seatCircumference',
+    'naturalWaistToHip',
+    'naturalWaistToSeat',
+    'naturalWaistToKnee'
   ],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ["front", "back", "waistband"],
+  parts: ['front', 'back', 'waistband'],
   options: {
     dartMaximumDifference: 300,
     dartMinimumDifference: 180,
@@ -64,7 +62,7 @@ export default {
     dartBackControl3: 4,
     curvePlacement: 2.4,
     dart2offset: 32,
-    dart2factor: 0.80,
+    dart2factor: 0.8,
     hipCurveDividerDown: 40,
     hipCurveDividerUp: 3,
     sideSeamShiftPercentage: 0.006,
@@ -78,14 +76,13 @@ export default {
     backVentLength: { pct: 40, min: 5, max: 70 },
     waistBand: { bool: true },
     waistBandWidth: { mm: 50, min: 10, max: 200 },
-    zipperLocation: { dflt: "backSeam", list: ["backSeam", "sideSeam"] },
+    zipperLocation: { dflt: 'backSeam', list: ['backSeam', 'sideSeam'] },
     nrOfDarts: { count: 2, min: 1, max: 2 },
 
     seatEase: { mm: 5, min: 0, max: 15 },
     waistEase: { mm: 5, min: 0, max: 15 },
-    /*waistSideSeamRaise: { pct: 0, min: 0, max: 10 },*/
     backDartDepthFactor: { pct: 50, min: 35, max: 70 },
     frontDartDepthFactor: { pct: 45, min: 30, max: 65 },
     dartToSideSeamFactor: { pct: 50, min: 30, max: 70 }
   }
-};
+}
