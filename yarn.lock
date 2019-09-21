@@ -5904,6 +5904,11 @@ commander@2.20.0, commander@^2.11.0, commander@^2.19.0, commander@^2.20.0, comma
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
+commander@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.1.tgz#4595aec3530525e671fb6f85fb173df8ff8bf57a"
+  integrity sha512-UNgvDd+csKdc9GD4zjtkHKQbT8Aspt2jCBqNSPp53vAS0L1tS9sXB2TCEOPHJ7kt9bN/niWkYj8T3RQSoMXdSQ==
+
 commander@~2.19.0:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
@@ -6383,7 +6388,7 @@ create-error-class@^3.0.0:
     "@freesewing/i18n" "^2.0.3"
     "@freesewing/pattern-info" "^2.0.3"
     chalk "^2.4.2"
-    commander "^2.19.0"
+    commander "^3.0.1"
     conf "^2.2.0"
     cp-file "^6.0.0"
     execa "^1.0.0"
