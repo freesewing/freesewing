@@ -18,7 +18,7 @@ function BuildMainShape(part, frontPart) {
   } = part.shorthand();
 
   let skirtLength =
-    measurements.naturalWaistToKnee + options.lengthBonus + options.hem;
+    (measurements.naturalWaistToKnee * (1+ options.lengthBonus)); // + options.hem;
 
   store.set("skirtLength", skirtLength);
 
@@ -37,31 +37,17 @@ function BuildMainShape(part, frontPart) {
   /*let hip =
     measurements.hipsCircumference > waist
       ? measurements.hipsCircumference
-      : waist;
-  */
+      : waist;*/
 
   dartCalc(options, seat, seatEase, waist, waistEase);
 
-  /*
-  console.log(
-    "seat: " +
-      seat +
-      " seatEase: " +
-      seatEase +
-      " waist: " +
-      waist +
-      " waistEase: " +
-      waistEase
-  );
-  */
-
+  
   let nrOfDarts = options.nrOfDarts;
   let dartSize = options.frontDartSize;
   if (frontPart == false) {
     dartSize = options.backDartSize;
   }
-  //console.log("dartSize: " + dartSize + " nrOfDarts: " + nrOfDarts);
-
+  
   if (dartSize <= 0) {
     nrOfDarts = 0;
   }
@@ -212,18 +198,8 @@ function BuildMainShape(part, frontPart) {
       sideSeamLength = sideSeamPath.length();
       sdelta = store.get("sideSeamLength") - sideSeamLength;
     }
-    /*
-    console.log({
-      iteration: iteration,
-      wdelta: wdelta,
-      waistFactor: waistFactor,
-      sdelta: sdelta,
-      sideFactor: sideFactor
-    });
-    */
   } while ((Math.abs(wdelta) > 1 || Math.abs(sdelta) > 1) && iteration++ < 100);
 
-  //paths.waist0 = waistCurveHelper.translate( 0, -10 ).attr('class', 'lining dashed');
   paths.waist1 = waistCurve.translate(0, 10).attr("class", "lining dashed");
 
   if (iteration >= 100) {
@@ -233,9 +209,6 @@ function BuildMainShape(part, frontPart) {
   if (frontPart) {
     sideSeamLength = sideSeamPath.length();
     store.set("sideSeamLength", sideSeamLength);
-    //console.log("Front sideseam length: " + sideSeamLength);
-  } else {
-    //console.log("back sideseam length: " + sideSeamLength);
   }
 
   points.lHem = points.lLeg;
