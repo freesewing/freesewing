@@ -35,6 +35,9 @@ hugo:
 jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy est un patron de jupe cercle adaptable
   title: Jupe circulaire Sandy
@@ -59,3 +62,7 @@ trayvon:
 wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+
