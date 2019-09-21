@@ -1,14 +1,17 @@
 Unreleased:
   date:
   Added:
-    penelope:
-      - Added the Penelope Pencil Skirt pattern by @woutervdub
-    waralee:
-      - Added the Waralee wrap Pants pattern by @woutervdub
     i18n:
       - Added translations for Penelope and Waralee
+    penelope:
+      - Added the Penelope Pencil Skirt pattern by @woutervdub
+    simon:
+      - "[#123](https://github.com/freesewing/freesewing/issues/123):
+        Added a box pleat option to Simon"
     utils:
       - Added backend methods for administration
+    waralee:
+      - Added the Waralee wrap Pants pattern by @woutervdub
   Changed:
     core:
       - The pattern super constructor now sets a `config` property that

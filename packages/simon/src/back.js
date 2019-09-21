@@ -77,6 +77,29 @@ export default part => {
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
+  // Cut off at yoke
+  points.cbYoke = new Point(0, points.armholePitch.y)
+
+  // Box pleat
+  if (options.boxPleat) {
+    points.boxPleatLeft = points.cbYoke.shift(0, options.boxPleatWidth / 2)
+    points.boxPleatMid = points.boxPleatLeft.shift(0, options.boxPleatFold)
+    points.boxPleatRight = points.boxPleatMid.shift(0, options.boxPleatFold)
+    points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
+    points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
+    points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
+    for (let p of [
+      'armholePitch',
+      'armholePitchCp1',
+      'armholeHollowCp2',
+      'armholeHollow',
+      'armholeHollowCp1',
+      'armholeCp2',
+      'armhole'
+    ])
+      points[p] = points[p].shift(0, options.boxPleatFold * 2)
+  }
+
   // Yoke dart
   paths.armhole = new Path()
     .move(points.armhole)
@@ -108,9 +131,6 @@ export default part => {
       store.get('backArmholeLength') - points.yokeDartEdge.dist(points.armholePitch)
     )
   }
-
-  // Cut off at yoke
-  points.cbYoke = new Point(0, points.armholePitch.y)
 
   // Draft hem
   switch (options.hemStyle) {
@@ -181,6 +201,16 @@ export default part => {
     macro('title', { at: points.title, nr: 3, title: 'back' })
     points.logo = points.title.shift(-90, 70)
     snippets.logo = new Snippet('logo', points.logo)
+    if (options.boxPleat) {
+      paths.boxPleat = new Path()
+        .move(points.boxPleatLeft)
+        .line(points.boxPleatLeftBottom)
+        .move(points.boxPleatMid)
+        .line(points.boxPleatMidBottom)
+        .move(points.boxPleatRight)
+        .line(points.boxPleatRightBottom)
+        .attr('class', 'fabric stroke-sm dashed')
+    }
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')

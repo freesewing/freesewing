@@ -26,6 +26,7 @@ export default {
       'splitYoke',
       'hemStyle',
       'hemCurve',
+      'boxPleat',
       {
         closure: [
           'extraTopButton',
@@ -71,6 +72,8 @@ export default {
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
+      'boxPleatWidth',
+      'boxPleatFold',
       {
         sleevecap: [
           'sleevecapEase',
@@ -168,6 +171,8 @@ export default {
       dflt: 'angledBarrelCuff'
     },
 
+    // Bool
+    boxPleat: { bool: false },
     // Counters
     buttons: { count: 7, min: 4, max: 12 },
     cuffButtonRows: { count: 1, min: 1, max: 2 },
@@ -184,6 +189,8 @@ export default {
     buttonholePlacketFoldWidth: { mm: 6, min: 3, max: 10 },
     collarStandWidth: { mm: 35, min: 15, max: 60 },
     sleevePlacketWidth: { mm: 25, min: 15, max: 35 },
+    boxPleatWidth: { mm: 35, min: 5, max: 65 },
+    boxPleatFold: { mm: 5, min: 1, max: 15 },
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },

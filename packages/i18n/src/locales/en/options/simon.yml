@@ -2,6 +2,18 @@ barrelCuffNarrowButton:
   title: Cuff narrow button
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
 
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+
+boxPleatWidth:
+  title: Box pleat width
+  description: The total widh of the box pleat
+
+boxPleatFold:
+  title: Box pleat fold
+  description: The amount by with the box pleat folds inwards
+
 buttonPlacketStyle:
   title: Button placket style
   description: Style of the button placket.
