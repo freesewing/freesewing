@@ -35,6 +35,9 @@ hugo:
 jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Jaeger jacket
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy is an adaptable circle skirt pattern
   title: Sandy circle skirt
@@ -59,3 +62,7 @@ trayvon:
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
   title: Wahid waistcoat
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+

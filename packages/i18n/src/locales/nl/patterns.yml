@@ -35,6 +35,9 @@ hugo:
 jaeger:
   description: Jaeger is een sportief jasje met twee knopen en opgestikte zakken.
   title: Jaeger jasje
+penelope:
+  description: Penelope is een smalle rok, met of zonder split achteraan.
+  title: Penelope potloodrok
 sandy:
   description: Sandy is een veelzijdig patroon voor een cirkelrok
   title: Sandy cirkelrok
@@ -59,3 +62,7 @@ trayvon:
 wahid:
   description: Wahid is een klassiek aansluitend gilet.
   title: Wahid gilet
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+
