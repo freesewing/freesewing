@@ -2,6 +2,15 @@
 barrelCuffNarrowButton:
   title: Botón de ajuste del puño
   description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+boxPleatWidth:
+  title: Box pleat width
+  description: The total widh of the box pleat
+boxPleatFold:
+  title: Box pleat fold
+  description: The amount by with the box pleat folds inwards
 buttonPlacketStyle:
   title: Estilo de la vista de los botones
   description: Estilo de la visto de los botones
