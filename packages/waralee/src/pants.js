@@ -12,8 +12,6 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let circumference = measurements.seatCircumference
-
   paths.waistFoldBack = paths.waistBack
     .offset(-1 * options.waistBand)
     .attr('class', 'fabric stroke-sm')
