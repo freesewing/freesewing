@@ -1,4 +1,10 @@
 ---
+backPocket:
+  title: Back pocket
+  description: Whether to include a back pocket or not
+frontPocket:
+  title: Front pocket
+  description: Whether to include a front pocket or not
 hem:
   title: Hem size
   description: Size of the hem at the bottom of the pants
