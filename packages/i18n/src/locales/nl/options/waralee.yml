@@ -1,4 +1,10 @@
 ---
+backPocket:
+  title: Back pocket
+  description: Whether to include a back pocket or not
+frontPocket:
+  title: Front pocket
+  description: Whether to include a front pocket or not
 hem:
   title: Afmeting zoom
   description: De afmeting van de zoom onderaan de broek
