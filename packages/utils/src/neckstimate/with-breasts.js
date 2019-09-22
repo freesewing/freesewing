@@ -101,7 +101,7 @@ export default {
   },
   highPointShoulderToBust: {
     slope: 0.1,
-    base: 28.5
+    base: 285
   },
   naturalWaistToUnderbust: {
     slope: 0.1,
