@@ -22,15 +22,15 @@ export default {
     'sewing pattern'
   ],
   optionGroups: {
-    fit: ['legShortening', 'waistOverlap', 'backRaise'],
+    fit: ['backRaise', 'waistRaise'],
+    style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],
     advanced: [
       'crotchFront',
       'crotchBack',
       'crotchFactorBackHor',
       'crotchFactorBackVer',
       'crotchFactorFrontHor',
-      'crotchFactorFrontVer',
-      'waistRaise'
+      'crotchFactorFrontVer'
     ]
   },
   measurements: ['seatCircumference', 'inseam', 'seatDepth'],
