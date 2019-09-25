@@ -1,0 +1,11 @@
+bustDartAngle:
+  title: Bust dart angle
+  description: Controls the angle by which the (side) bust dart slopes downward
+
+bustDartLength:
+  title: Bust dart length
+  description: Controls how close the bust dart approaches the bust point
+
+contour:
+  title: Contour
+  description: Controls how fast the extra room for your bust is reduced below the bust line.

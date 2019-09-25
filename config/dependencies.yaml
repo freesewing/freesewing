@@ -140,6 +140,13 @@ simon:
     "@freesewing/brian": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-flip": "^{{version}}"
+simone:
+  peer:
+    "@freesewing/brian": "^{{version}}"
+    "@freesewing/simon": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
+    "@freesewing/plugin-flip": "^{{version}}"
+    "@freesewing/plugin-bust": "^{{version}}"
 utils:
   peer:
     "tlds": "^0.203.1"

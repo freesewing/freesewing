@@ -1,6 +1,7 @@
 import brian from './brian.yml'
 import aaron from './aaron.yml'
 import simon from './simon.yml'
+import simone from './simone.yml'
 import sven from './sven.yml'
 import wahid from './wahid.yml'
 import bent from './bent.yml'
@@ -27,6 +28,7 @@ let patterns = {
   brian,
   aaron,
   simon,
+  simone,
   sven,
   wahid,
   bent,

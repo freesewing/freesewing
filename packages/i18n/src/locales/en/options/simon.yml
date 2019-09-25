@@ -1,3 +1,15 @@
+backDarts:
+  tile: Back darts
+  description: Whether or not to include back darts
+  options:
+    auto: Automatic
+    always: Always
+    never: Never
+
+backDartShaping:
+  title: Back dart shaping
+  description: The amount of shaping that is done by the back darts
+
 barrelCuffNarrowButton:
   title: Cuff narrow button
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
