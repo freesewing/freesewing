@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+### components
+
+#### Changed
+
+ - Added Penelope and Waralee linedrawings
+
 ### core
 
 #### Changed

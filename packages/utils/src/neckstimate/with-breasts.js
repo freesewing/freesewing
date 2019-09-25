@@ -92,7 +92,7 @@ export default {
     base: 158
   },
   bustSpan: {
-    slope: 0.1,
+    slope: 0.6,
     base: 160
   },
   highBust: {
@@ -100,7 +100,7 @@ export default {
     base: 820
   },
   highPointShoulderToBust: {
-    slope: 0.1,
+    slope: 0.3,
     base: 285
   },
   naturalWaistToUnderbust: {
