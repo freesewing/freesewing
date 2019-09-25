@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package components
+### Changed
 
-
+ - Added Penelope and Waralee linedrawings
 ## 2.0.4 (2019-09-27)
 
 ### Added

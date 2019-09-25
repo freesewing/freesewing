@@ -2,7 +2,9 @@ Unreleased:
   date:
   Added:
     i18n:
-      - Added translations for Penelope and Waralee
+      - Added translations for Penelope, Waralee, and Simone
+    simone:
+      - Added the Simone shirt pattern
     penelope:
       - Added the Penelope Pencil Skirt pattern by @woutervdub
     utils:
@@ -29,6 +31,8 @@ Unreleased:
         package has been deprecated. Please import our patterns individually.
   Removed:
   Fixed:
+    components:
+      - Fixed display of nested option in SampleConfigurator
     simon:
       - Fixed an issue where the store wasn't properly initialized causing hips and waist ease
         to be set incorrectly
