@@ -16,6 +16,7 @@ const penelope = require('@freesewing/penelope').config
 const sandy = require('@freesewing/sandy').config
 const shin = require('@freesewing/shin').config
 const simon = require('@freesewing/simon').config
+const simone = require('@freesewing/simone').config
 const sven = require('@freesewing/sven').config
 const tamiko = require('@freesewing/tamiko').config
 const theo = require('@freesewing/theo').config
@@ -40,6 +41,7 @@ const patterns = {
   sandy,
   shin,
   simon,
+  simone,
   sven,
   tamiko,
   theo,
