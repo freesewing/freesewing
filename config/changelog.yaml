@@ -5,9 +5,6 @@ Unreleased:
       - Added translations for Penelope and Waralee
     penelope:
       - Added the Penelope Pencil Skirt pattern by @woutervdub
-    simon:
-      - "[#123](https://github.com/freesewing/freesewing/issues/123):
-        Added a box pleat option to Simon"
     utils:
       - Added backend methods for administration
     waralee:
@@ -20,12 +17,22 @@ Unreleased:
         import the pattern, and it's config property will contain the pattern config.
     components:
       - Added Penelope and Waralee linedrawings
+    simon:
+      - "[#123](https://github.com/freesewing/freesewing/issues/123):
+        Added a box pleat option to Simon"
+      - Added the `backDarts` option to control the inclusion of back darts
+      - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+
   Deprecated:
     patterns:
       - The [@freesewing/patterns](https://www.npmjs.com/package/@freesewing/patterns)
         package has been deprecated. Please import our patterns individually.
   Removed:
   Fixed:
+    simon:
+      - Fixed an issue where the store wasn't properly initialized causing hips and waist ease
+        to be set incorrectly
+      - Added a missing paperless dimension for the waist
   Security:
 
 2.0.4:

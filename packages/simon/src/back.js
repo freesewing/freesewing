@@ -35,16 +35,17 @@ export default part => {
   points.hips = points.hips.shift(180, store.get('hipsReduction') / 4)
   points.hem = points.hem.shift(180, store.get('hipsReduction') / 4)
 
-  // Waist shaping
   let reduce = store.get('waistReduction')
-  if (reduce / 4 > options.minimalDartShaping) {
+  if (store.get('backDarts')) {
     // Add darts in the back
-    points.waist = points.waist.shift(180, reduce / 8)
+    let darts = (reduce * options.backDartShaping) / 4
+    let nonDarts = (reduce * (1 - options.backDartShaping)) / 4
+    points.waist = points.waist.shift(180, nonDarts)
     points.dartCenter = points.cbWaist.shiftFractionTowards(points.waist, 0.6)
     points.dartTop = points.dartCenter.shift(90, points.armhole.dy(points.waist) * 0.75)
     points.dartBottom = points.dartCenter.shift(-90, measurements.naturalWaistToHip * 0.75)
-    points.dartCenterIn = points.dartCenter.shift(180, reduce / 8)
-    points.dartCenterOut = points.dartCenter.shift(0, reduce / 8)
+    points.dartCenterIn = points.dartCenter.shift(180, darts)
+    points.dartCenterOut = points.dartCenter.shift(0, darts)
     points.dartCenterInCp1 = points.dartCenterIn.shift(
       90,
       points.dartTop.dy(points.dartCenter) * 0.2
@@ -131,6 +132,13 @@ export default part => {
       store.get('backArmholeLength') - points.yokeDartEdge.dist(points.armholePitch)
     )
   }
+
+  // Never make the hips more narrow than the waist because that looks silly
+  //if (points.hem.x < points.waist.x) {
+  //  points.hem.x = points.waist.x
+  //  points.hips.x = points.waist.x
+  //  points.hipsCp2.x = points.waist.x
+  //}
 
   // Draft hem
   switch (options.hemStyle) {
@@ -232,7 +240,7 @@ export default part => {
 
   // Paperless?
   if (paperless) {
-    if (reduce / 4 > options.minimalDartShaping) {
+    if (store.get('backDarts')) {
       macro('vd', {
         from: points.dartBottom,
         to: points.dartCenterIn,

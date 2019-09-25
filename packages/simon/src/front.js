@@ -34,12 +34,19 @@ export default part => {
 
   // Waist shaping
   let reduce = store.get('waistReduction')
-  if (reduce / 4 > options.minimalDartShaping) reduce = reduce / 8
+  if (store.get('backDarts')) reduce = (reduce * (1 - options.backDartShaping)) / 4
   else reduce = reduce / 4
   points.waist = points.waist.shift(180, reduce)
   points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip * 0.5)
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
+
+  // Never make the hips more narrow than the waist because that looks silly
+  if (points.hem.x < points.waist.x) {
+    points.hem.x = points.waist.x
+    points.hips.x = points.waist.x
+    points.hipsCp2.x = points.waist.x
+  }
 
   // Draft hem
   paths.saBaseFromHips = new Path()
@@ -135,10 +142,6 @@ export default part => {
         .attr('class', 'fabric sa')
       delete paths.sa
     }
-  }
-
-  // Paperless?
-  if (paperless) {
   }
 
   return part

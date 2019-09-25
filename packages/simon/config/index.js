@@ -27,6 +27,7 @@ export default {
       'hemStyle',
       'hemCurve',
       'boxPleat',
+      'backDarts',
       {
         closure: [
           'extraTopButton',
@@ -74,6 +75,7 @@ export default {
       'sleeveWidthGuarantee',
       'boxPleatWidth',
       'boxPleatFold',
+      'backDartShaping',
       {
         sleevecap: [
           'sleevecapEase',
@@ -134,7 +136,6 @@ export default {
   options: {
     // Constants
     collarFactor: 5,
-    minimalDartShaping: 5,
     brianFitSleeve: true,
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
@@ -169,6 +170,10 @@ export default {
         'straightFrenchCuff'
       ],
       dflt: 'angledBarrelCuff'
+    },
+    backDarts: {
+      list: ['auto', 'never', 'always'],
+      dflt: 'auto'
     },
 
     // Bool
@@ -235,6 +240,7 @@ export default {
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
     sleevePlacketLength: { pct: 25, min: 15, max: 35 },
     waistEase: { pct: 20, min: 10, max: 35 },
-    yokeDart: { pct: 0, min: 0, max: 15 }
+    yokeDart: { pct: 0, min: 0, max: 15 },
+    backDartShaping: { pct: 25, min: 5, max: 75 }
   }
 }
