@@ -137,7 +137,6 @@
     "@freesewing/jaeger": "file:packages/jaeger",
     "@freesewing/models": "file:packages/models",
     "@freesewing/mui-theme": "file:packages/mui-theme",
-    "@freesewing/patterns": "file:packages/patterns",
     "@freesewing/plugin-banner": "file:packages/plugin-banner",
     "@freesewing/plugin-bundle": "file:packages/plugin-bundle",
     "@freesewing/plugin-bust": "file:packages/plugin-bust",
