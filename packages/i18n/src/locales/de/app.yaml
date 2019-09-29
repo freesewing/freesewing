@@ -239,12 +239,12 @@ by: von
 years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
-noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
-modelFirst: Start by creating a model
-noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
-noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
-noUserBrowsingTitle: "You can't just browse all users"
-noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
+noRecipe: Du hast keine Rezepte (noch). Erstelle ein neues Schnittmuster und speichere dann sein Rezept.
+modelFirst: Beginnen Sie mit dem Erstellen eines Modells
+noModel: Du hast noch keine Modelle (noch). FreeSewing erzeugt maßgeschneiderte Schnittmuster. Und wir können keine Muster erstellen, wenn wir keine Massangaben von Ihnen haben.
+noModel2: Als erstes erstellen Sie bitte ein Modell mit Ihren Massen oder den Massen der Person, für die Sie ein Schnittmuster erstellen möchten.
+noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
+noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
 useRecipeModel: "Use the recipe's model"
 createReplica: Create a replica
 showDetails: Show details
