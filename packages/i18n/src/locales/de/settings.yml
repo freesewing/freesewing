@@ -1,7 +1,7 @@
 ---
 advanced:
-  title: Advanced
-  description: Controls whether or not to display advanced settings and pattern options
+  title: Fortgeschritten
+  description: Legen Sie fest, ob erweiterte Einstellungen und Schnittmusteroptionen angezeigt werden sollen oder nicht
 paperless:
   title: Papierlos
   description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
