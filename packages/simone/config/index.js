@@ -142,7 +142,7 @@ export default {
     sleeve: 'sleeveBase'
   },
   parts: ['collarStand', 'collar', 'sleevePlacketUnderlap', 'sleevePlacketOverlap', 'cuff'],
-  hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase'],
+  hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase', 'fbaFront'],
   options: {
     // Constants
     collarFactor: 5,
