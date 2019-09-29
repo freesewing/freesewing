@@ -46,6 +46,8 @@ packages/utils/tiler
 packages/utils/validateEmail
 packages/utils/validateTld
 
+packages/*/example/yarn.lock
+
 # dependencies
 node_modules
 
