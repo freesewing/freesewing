@@ -47,6 +47,9 @@ shin:
 simon:
   description: Simon es un patrón de camisa de hombre con múltiples opciones.
   title: Simon shirt
+simone:
+  description: Simone is simon, adapted for breasts
+  title: Simone shirt
 sven:
   description: Sven es una sudadera de líneas sencillas.
   title: Sven sweatshirt
