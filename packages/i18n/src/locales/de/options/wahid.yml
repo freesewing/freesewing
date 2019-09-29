@@ -15,8 +15,8 @@ weltHeight:
   title: Welthöhe
   description: Bestimmt die Höhe des Welt
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Ausschnitt Tiefe
+  description: Definiert wie tief der Ausschnitt vorne ausgeschnitten ist
 frontStyle:
   title: Neck opening style
   description: Style of the neck opening
