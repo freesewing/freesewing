@@ -26,10 +26,13 @@ export default part => {
 
   /*
    * How much room to we need to create to fit the breasts?
-   * Note that measurements.bust is added by the bust plugin
-   * and that we divide by two since we add room on right and left side
+   * Note that:
+   *  - measurements.bust is added by the bust plugin
+   *  - we divide by two since we add room on right and left side
+   *  - we also add the equivalent chest ease to the extra room we create
+   *
    */
-  const FBA = (measurements.bust - measurements.highBust) / 2
+  const FBA = ((1 + options.chestEase) * (measurements.bust - measurements.highBust)) / 2
 
   /*
    * Locate bust point
@@ -41,11 +44,10 @@ export default part => {
 
   /*
    * Figure out how much do we need to open a dart to create the required FBA room
-   * Obviously, we don't guess, we use maths :)
    */
-  let one = points.armholeHollow.dist(points.bust) // We consider this to be 1
-  let cosBust = (points.bust.dx(points.armholeHollow) / one) * -1 // Which means this gives us the cos of the bust point
-  let cosRot = ((points.bust.dx(points.armholeHollow) - FBA) / one) * -1 // And this gives us the cos of the target
+  let one = points.armholePitch.dist(points.bust) // We consider this to be 1
+  let cosBust = (points.bust.dx(points.armholePitch) / one) * -1 // Which means this gives us the cos of the bust point
+  let cosRot = ((points.bust.dx(points.armholePitch) - FBA) / one) * -1 // And this gives us the cos of the target
   const FBARot = utils.rad2deg(Math.acos(cosBust)) - utils.rad2deg(Math.acos(cosRot)) // Now just acos these and subtract
 
   /*
@@ -59,11 +61,11 @@ export default part => {
    * For this, we'll just rotate it FBARot in the other direction
    */
   points.realBustPoint = points.bust.clone()
-  points.bust = points.bust.rotate(FBARot * -1, points.armholeHollow)
+  points.bust = points.bust.rotate(FBARot * -1, points.armholePitch)
 
-  /*
-   * Cut to the side seam
-   */
+  //
+  // Cut to the side seam
+  //
   points._dartDirection = points.bust.shift(options.bustDartAngle * -1, measurements.bust / 4)
   points.bustSideCut1 = utils.lineIntersectsCurve(
     points.bust,
@@ -74,15 +76,15 @@ export default part => {
     points.armhole
   )
 
-  /*
-   * Mark bust at waist and hem level
-   */
+  //
+  // Mark bust at waist and hem level
+  //
   points.bustWaist = new Point(points.bust.x, points.waist.y)
   points.bustHem = new Point(points.bust.x, points.hem.y)
 
-  /*
-   * Now rotate entire side around armhole hollow to create room for FBA
-   */
+  //
+  // Now rotate entire side around armhole hollow to create room for FBA
+  //
   const rot1 = [
     'bust',
     'bustSideCut1',
@@ -96,35 +98,42 @@ export default part => {
     'waistCp2',
     'armhole',
     'armholeCp2',
-    'armholeHollowCp1'
+    'armholeHollowCp1',
+    'armholeHollow',
+    'armholeHollowCp2',
+    'armholePitchCp1'
   ]
-  for (let p of rot1) points[`${p}_rot1`] = points[p].rotate(FBARot, points.armholeHollow)
+  for (let p of rot1) points[`${p}_rot1`] = points[p].rotate(FBARot, points.armholePitch)
+  //
+  //  Help line to show the initial cut lines and first rotation
+  //  Uncomment this if you'd like to understand what's going on
+  //
+  //
   /*
-   *  Help line to show the initial cut lines and first rotation
-   *  Uncomment this if you'd like to understand what's going on
   paths.fbaCut1 = new Path()
-    .move(points.armholeHollow)
+    .move(points.armholePitch)
     .line(points.bust)
     .line(points.bustSideCut1)
     .move(points.bust)
     .line(points.bustHem)
     .attr('class', 'various dashed')
   paths.rot1 = new Path()
-    .move(points.armholeHollow)
+    .move(points.armholePitch)
     .line(points.bust_rot1)
     .line(points.bustHem_rot1)
     .line(points.hem_rot1)
     .line(points.hips_rot1)
     .curve(points.hipsCp2_rot1, points.waistCp1_rot1, points.waist_rot1)
     .curve_(points.waistCp2_rot1, points.armhole_rot1)
-    .curve(points.armholeCp2_rot1, points.armholeHollowCp1_rot1, points.armholeHollow)
+    .curve(points.armholeCp2_rot1, points.armholeHollowCp1_rot1, points.armholeHollow_rot1)
+    .curve(points.armholeHollowCp2_rot1, points.armholePitchCp1_rot1, points.armholePitch)
     .close()
     .attr('class', 'lining lashed')
   */
 
-  /*
-   * Split the side seam at the dart, and extrac control points from the Path object
-   */
+  //
+  // Split the side seam at the dart, and extrct control points from the Path object
+  //
   const toSplit = new Path()
     .move(points.waist_rot1)
     .curve_(points.waistCp2_rot1, points.armhole_rot1)
@@ -136,10 +145,9 @@ export default part => {
   points.belowDartCpTop_rot1 = paths.fbaBelowDart.ops[1].cp2
   points.belowDartCpBottom_rot1 = paths.fbaBelowDart.ops[1].cp1
   points.aboveDartCpBottom_rot1 = paths.fbaAboveDart.ops[1].cp1 // (only one CP on this part
-
-  /*
-   * Now rotate the bottom part around the (rotated) bust point so it's straight again
-   */
+  //
+  // Now rotate the bottom part around the (rotated) bust point so it's straight again
+  //
   const rot2 = [
     'bust',
     'bustSideCut1',
@@ -154,15 +162,20 @@ export default part => {
     'armhole',
     'armholeCp2',
     'armholeHollowCp1',
+    'armholeHollow',
+    'armholeHollowCp2',
+    'armholePitchCp1',
     'belowDartCpTop',
     'belowDartCpBottom'
   ]
   for (let p of rot2)
     points[`${p}_rot2`] = points[`${p}_rot1`].rotate(FBARot * -1, points.bust_rot1)
 
+  //
+  // Help line to show the second rotation
+  // Uncomment this if you'd like to understand what's going on
+  //
   /*
-   * Help line to show the second rotation
-   *  Uncomment this if you'd like to understand what's going on
   paths.fbaCut2 = new Path()
     .move(points.bust_rot2)
     .line(points.bustHem_rot2)
@@ -173,17 +186,18 @@ export default part => {
     .line(points.bust_rot2)
     .line(points.bustSideCut1_rot1)
     .curve_(points.aboveDartCpBottom_rot1, points.armhole_rot1)
-    .curve(points.armholeCp2_rot1, points.armholeHollowCp1_rot1, points.armholeHollow)
+    .curve(points.armholeCp2_rot1, points.armholeHollowCp1_rot1, points.armholeHollow_rot1)
+    .curve(points.armholeHollowCp2_rot1, points.armholePitchCp1_rot1, points.armholePitch)
     .line(points.bust_rot2)
     .attr('class', 'interfacing lashed')
   */
 
-  /*
-   * Bust darts don't actually run entirely up to the bust point but stop a bit short
-   * How short is controlled by the bustDartLength option
-   * First we'll find the middle of the dart, then shift towards the bust point along it
-   * for as far as the bustDartLength option tells us to
-   */
+  //
+  // Bust darts don't actually run entirely up to the bust point but stop a bit short
+  // How short is controlled by the bustDartLength option
+  // First we'll find the middle of the dart, then shift towards the bust point along it
+  // for as far as the bustDartLength option tells us to
+  //
   points.bustDartCenter = points.bustSideCut1_rot2.shiftFractionTowards(
     points.bustSideCut1_rot1,
     0.5
@@ -193,46 +207,55 @@ export default part => {
     options.bustDartLength
   )
 
-  /*
-   * Draw the front dart. Or if we're not adding a front dart, narrow the side from the waist down
-   */
+  //
+  // Draw the front dart. Or if we're not adding a front dart, narrow the side from the waist down
+  // taking into account the contour option to see how abrupt we should narrow the body below the breasts
+  //
   if (options.frontDarts) {
     let reduce = points.waist.dx(points.waist_rot2)
     points.frontDartTip = points.bustWaist_rot2.shiftFractionTowards(
       points.bust_rot2,
       options.frontDartLength
     )
-    points.frontDartWaistRight = points.bustWaist_rot2.shift(0, reduce / 2)
-    points.frontDartWaistLeft = points.bustWaist_rot2.shift(180, reduce / 2)
-    points.frontDartWaistLeftCpTop = points.frontDartWaistLeft.shift(
-      90,
-      points.frontDartTip.dy(points.waist_rot2) / 2
+    points.frontDartRight = new Point(
+      points.frontDartTip.x + reduce / 2,
+      points.hem_rot2.y - points.frontDartTip.dy(points.hem_rot2) * options.contour
     )
-    points.frontDartWaistRightCpTop = points.frontDartWaistRight.shift(
+    points.frontDartLeft = points.frontDartRight.flipX(points.frontDartTip)
+    points.frontDartLeftCp = points.frontDartLeft.shift(
       90,
-      points.frontDartTip.dy(points.waist_rot2) / 2
+      points.frontDartTip.dy(points.frontDartLeft) / 2
     )
-    points.frontDartHemLeft = new Point(points.frontDartWaistLeft.x, points.hem_rot2.y)
-    points.frontDartHemRight = new Point(points.frontDartWaistRight.x, points.hem_rot2.y)
+    points.frontDartRightCp = points.frontDartLeftCp.flipX(points.frontDartTip)
+    points.frontDartHemLeft = new Point(points.frontDartLeft.x, points.hem_rot2.y)
+    points.frontDartHemRight = new Point(points.frontDartRight.x, points.hem_rot2.y)
     paths.frontDart = new Path()
       .move(points.frontDartHemRight)
-      .line(points.frontDartWaistRight)
-      .curve_(points.frontDartWaistRightCpTop, points.frontDartTip)
-      ._curve(points.frontDartWaistLeftCpTop, points.frontDartWaistLeft)
+      .line(points.frontDartRight)
+      .curve_(points.frontDartRightCp, points.frontDartTip)
+      ._curve(points.frontDartLeftCp, points.frontDartLeft)
       .line(points.frontDartHemLeft)
       .attr('class', 'fabric dotted')
   } else {
-    let waistX = points.waist.x
-    let hipsX = points.hips.x
-    for (let p of ['waist_rot2', 'waistCp1_rot2', 'belowDartCpBottom_rot2']) points[p].x = waistX
-    for (let p of ['hipsCp2_rot2', 'hips_rot2', 'hem_rot2']) points[p].x = hipsX
+    let waistDelta = points.waist.dx(points.waist_rot2) * options.contour
+    let hipsDelta = points.hips.dx(points.hips_rot2)
+    for (let p of ['waist_rot2', 'waistCp1_rot2', 'belowDartCpBottom_rot2'])
+      points[p] = points[p].shift(180, waistDelta)
+    for (let p of ['hipsCp2_rot2', 'hips_rot2', 'hem_rot2'])
+      points[p] = points[p].shift(180, hipsDelta)
   }
 
-  /*
-   * Now overwrite the points that need to be adapted, and re-create the seam path.
-   * After that, we'll let Simon take it from here
-   */
-  let clone1 = ['armhole', 'armholeCp2', 'armholeHollowCp1']
+  //
+  // Now overwrite the points that need to be adapted
+  //
+  let clone1 = [
+    'armhole',
+    'armholeCp2',
+    'armholeHollowCp1',
+    'armholeHollow',
+    'armholeHollowCp2',
+    'armholePitchCp1'
+  ]
   for (let p of clone1) points[p] = points[`${p}_rot1`].clone()
   let clone2 = ['hem', 'hips', 'hipsCp2', 'waistCp1', 'waist']
   for (let p of clone2) points[p] = points[`${p}_rot2`].clone()
@@ -242,10 +265,45 @@ export default part => {
   points.dartBottom = points.bustSideCut1_rot2.clone()
   points.dartTop = points.bustSideCut1_rot1.clone()
   points.dartTopCp = points.aboveDartCpBottom_rot1.clone()
+  points.cfArmhole = new Point(0, points.armhole.y)
+  points.cfWaist = new Point(0, points.waist.y)
+  points.cfHips = new Point(0, points.hips.y)
 
-  /*
-   * Recreate the base paths, and let Simon take it from here
-   */
+  //
+  // Smooth out the armhole to avoid a kink where we rotated
+  // Note that this will ever so slightly shorten the armhole.
+  // But that will just end up being sleevecap ease
+  //
+  points.armholePitch = points.armholePitchCp1_rot1.shiftTowards(
+    points.armholePitchCp2,
+    points.armholePitch.dist(points.armholePitchCp1_rot1)
+  )
+
+  //
+  // Put the snippets in the right place
+  //
+  for (let s in snippets) delete snippets[s]
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'armhole',
+      'armholePitch',
+      'cfArmhole',
+      'cfWaist',
+      'cfHem',
+      'hips',
+      'waist',
+      'bust_rot2',
+      'neck',
+      'shoulder'
+    ]
+  })
+  points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  //
+  // Now recreate the paths and let Simon take it from here
+  //
   paths.saBaseFromHips = new Path()
     .move(points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -265,8 +323,8 @@ export default part => {
     case 'baseball':
       points.bballStart = points.cfHem.shiftFractionTowards(points.hem, 0.5)
       // Don't let front dart fall into curved part of hem
-      if (options.frontDarts && points.bballStart.x > points.frontDartWaistRight.x) {
-        points.bballStart.x = points.frontDartWaistRight.x
+      if (options.frontDarts && points.bballStart.x > points.frontDartRight.x) {
+        points.bballStart.x = points.frontDartRight.x
       }
       points.bballEnd = points.hem.shiftFractionTowards(points.hips, options.hemCurve)
       points.bballCp1 = points.bballStart.shiftFractionTowards(points.hem, 0.5)

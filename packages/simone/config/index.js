@@ -3,6 +3,7 @@ import { version } from '../package.json'
 export default {
   name: 'simone',
   version,
+  beta: true,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'womenswear',
@@ -29,6 +30,7 @@ export default {
       'boxPleat',
       'backDarts',
       'frontDarts',
+      'contour',
       {
         closure: [
           'extraTopButton',
@@ -190,14 +192,14 @@ export default {
     // Counters
     buttons: { count: 7, min: 4, max: 12 },
     cuffButtonRows: { count: 1, min: 1, max: 2 },
-    frontDarts: { bool: true },
+    frontDarts: { bool: false },
 
     // Angles
     collarAngle: { deg: 85, min: 60, max: 130 },
     collarStandBend: { deg: 3, min: 0, max: 5 },
     collarStandCurve: { deg: 2, min: 0, max: 5 },
     collarFlare: { deg: 4, min: 0, max: 10 },
-    bustDartAngle: { deg: 20, min: 10, max: 30 },
+    bustDartAngle: { deg: 10, min: 0, max: 20 },
 
     // Millimeter
     buttonPlacketWidth: { mm: 20, min: 10, max: 30 },
@@ -228,14 +230,14 @@ export default {
     lengthBonus: { pct: 25, min: -4, max: 60 },
     shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
-    sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapEase: { pct: 0, min: 0, max: 5 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
     sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
     sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
     sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
     sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
-    sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
+    sleevecapQ1Offset: { pct: 5, min: 3, max: 7 },
     sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
     sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
     sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
@@ -254,6 +256,7 @@ export default {
     yokeDart: { pct: 0, min: 0, max: 15 },
     backDartShaping: { pct: 25, min: 5, max: 75 },
     bustDartLength: { pct: 80, min: 50, max: 90 },
-    frontDartLength: { pct: 45, min: 30, max: 60 }
+    frontDartLength: { pct: 45, min: 30, max: 60 },
+    contour: { pct: 50, min: 30, max: 75 }
   }
 }

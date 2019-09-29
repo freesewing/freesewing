@@ -3,18 +3,17 @@ import PropTypes from 'prop-types'
 import patterns from './patterns'
 
 const LineDrawing = props => {
-  return (
-    <svg
-      style={props.style}
-      className={'fs linedrawing ' + props.className}
-      xmlns="http://www.w3.org/2000/svg"
-      width={props.size}
-      height={props.size}
-      viewBox="0 0 270 270"
-    >
-      {patterns[props.pattern].map(el => el)}
-    </svg>
-  )
+  const attr = {
+    style: props.style,
+    className: 'fs linedrawing ' + props.className,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 270 270'
+  }
+  if (props.size) {
+    attr.width = props.size
+    attr.height = props.size
+  }
+  return <svg {...attr}>{patterns[props.pattern].map(el => el)}</svg>
 }
 
 LineDrawing.propTypes = {
@@ -24,10 +23,9 @@ LineDrawing.propTypes = {
 }
 
 LineDrawing.defaultProps = {
-  size: 64,
+  size: false,
   className: '',
   pattern: 'aaron',
-  color: false,
   style: {}
 }
 

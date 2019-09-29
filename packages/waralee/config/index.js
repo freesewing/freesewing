@@ -5,6 +5,7 @@ import { version } from '../package.json'
 export default {
   name: 'waralee',
   version,
+  beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
   department: 'menswear',

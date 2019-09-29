@@ -1,7 +1,6 @@
 import React from 'react'
 
 const DesignPath = props => {
-  console.log('design path props', props)
   let output = []
   let i = 0
   let from = null
