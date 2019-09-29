@@ -12,10 +12,10 @@ allDocumentation: Alle dokumentationen
 andThatIsAwesome: Und das ist großartig
 applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
-askForHelp: Ask for help
+askForHelp: Nach Hilfe fragen
 automatic: Automatisch
-averagePeopleDoNotExist: "Average people don't exist"
-awesome: Awesome
+averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
+awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Gönner werden
@@ -54,7 +54,7 @@ custom: Angepasst
 customSeamAllowance: Kundenspezifische Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
-demo: Demo
+demo: Vorschau
 docs: Dokumente
 docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
@@ -74,7 +74,7 @@ emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 exportDraft: Entwurf exportieren
-export: Export
+export: Exportieren
 exportGist: Kern exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
@@ -97,12 +97,12 @@ howCanWeHelpYou: Wie können wir Dir helfen
 howToTakeMeasurements: Richtiges Maß nehmen
 i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
-info: Info
+info: Informationen
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, die gerne helfen. Also sei nicht schüchtern und schau bei einem Chat vorbei.
 justAMoment: Einen Moment bitte
-layout: Layout
+layout: Darstellung
 letUsSetupYourAccount: Lassen Sie uns Ihr Konto einrichten
 logIn: Anmelden
 loginWithProvider: 'Anmelden mit<br>{provider}'
@@ -121,7 +121,7 @@ name: Name
 newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
-newPattern: 'New {pattern}'
+newPattern: 'Neu {pattern}'
 newPatternForModel: 'New {pattern} for {model}'
 noChanges: Keine Änderungen
 no: false
