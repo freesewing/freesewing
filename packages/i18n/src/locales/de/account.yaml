@@ -1,10 +1,10 @@
 ---
 accountRemoved: Konto entfernt
 accountRestricted: Konto eingeschränkt
-avatar: Avatar
+avatar: Profilbild
 avatarInfo: Ihr Avatar oder Ihr Profilbild wird auf Ihrer Profilseite angezeigt.
 avatarTitle: Stell dein Profilbild ein
-bio: Bio
+bio: Über mich
 bioInfo: Hier können Sie anderen Freesewing-Benutzern etwas über sich erzählen. Dieses Feld unterstützt MarkDown, sodass Sie auch Links einfügen können. Wenn Sie einen Blog haben, können Sie ihn hierher verlinken, damit andere ihn entdecken können.
 bioTitle: Schreibe eine kurze Biographie
 currentPassword: Derzeitiges Passwort
@@ -50,4 +50,4 @@ unitsTitle: Bitte wählen Sie das Einheitensystem aus, mit dem Sie am besten ver
 units: Einheiten
 usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas mehr ändern. Wie dein Name oder Queenoffarts oder was auch immer. Geben Sie einfach den gewünschten Benutzernamen ein.
 usernameTitle: Bitte wähle Deinen Benutzernamen
-username: Username
+username: Benutzername

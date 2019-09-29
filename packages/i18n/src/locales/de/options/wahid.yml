@@ -15,23 +15,23 @@ weltHeight:
   title: Welthöhe
   description: Bestimmt die Höhe des Welt
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Ausschnitt Tiefe
+  description: Definiert wie tief der Ausschnitt vorne ausgeschnitten ist
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Ausschnittstil
+  description: Stil des Ausschnitts
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  title: Saumart
+  description: Art des vorderen Saums
 hemRadius:
-  title: Hem radius
-  desciption: Radius by which the hem is rounded
+  title: Saumradius
+  desciption: Der Betrag, um den der Saum gerundet ist
 backInset:
   title: Back inset
-  description: How much the back of the armhole is cut inwards
+  description: Wie viel die Rückseite des Armlochs nach innen verschoben ist
 frontInset:
   title: Front inset
-  description: How much the front of the armhole is cut inwards
+  description: Wieviel die das Armloch an der Vorderseite nach Innen verschoben wird
 shoulderInset:
   title: Shoulder inset
   description: How much the shoulder seam is cut inwards at the shoulder
@@ -39,5 +39,5 @@ neckInset:
   title: Neck inset
   description: How much the shoulder seam is cut inwards at the neck
 pocketAngle:
-  title: Pocket angle
+  title: Winkel der Tasche
   description: Angle of the pocket slant

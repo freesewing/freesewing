@@ -1,4 +1,10 @@
 ---
+backPocket:
+  title: Achterzak
+  description: Of een achterzak moet worden toegevoegd of niet
+frontPocket:
+  title: Voorzak
+  description: Of een voorzak moet worden toegevoegd of niet
 hem:
   title: Afmeting zoom
   description: De afmeting van de zoom onderaan de broek
