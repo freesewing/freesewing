@@ -6,6 +6,11 @@
 ### Changed
 
  - Added Penelope and Waralee linedrawings
+
+### Fixed
+
+ - Fixed display of nested option in SampleConfigurator
+ - Fixed conflicting key values in React components
 ## 2.0.4 (2019-09-27)
 
 ### Added

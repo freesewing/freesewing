@@ -10,6 +10,11 @@
 
  - Added Penelope and Waralee linedrawings
 
+#### Fixed
+
+ - Fixed display of nested option in SampleConfigurator
+ - Fixed conflicting key values in React components
+
 ### core
 
 #### Changed
@@ -20,7 +25,7 @@
 
 #### Added
 
- - Added translations for Penelope and Waralee
+ - Added translations for Penelope, Waralee, and Simone
 
 ### penelope
 
@@ -30,9 +35,24 @@
 
 ### simon
 
-#### Added
+#### Changed
 
  - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
+ - Added the `backDarts` option to control the inclusion of back darts
+ - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+ - Changed the defaults to slightly reduce the ease and adapt the sleevecap
+
+#### Fixed
+
+ - Fixed an issue where the store wasn't properly initialized causing hips and waist ease to be set incorrectly
+ - Added a missing paperless dimension for the waist
+ - Fixed an issue where the split yoke option was not taken into account correctly
+
+### simone
+
+#### Added
+
+ - Added the Simone shirt pattern
 
 ### utils
 

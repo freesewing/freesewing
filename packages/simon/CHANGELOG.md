@@ -3,9 +3,18 @@
 
 ## Unreleased
 
-### Added
+### Changed
 
  - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
+ - Added the `backDarts` option to control the inclusion of back darts
+ - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+ - Changed the defaults to slightly reduce the ease and adapt the sleevecap
+
+### Fixed
+
+ - Fixed an issue where the store wasn't properly initialized causing hips and waist ease to be set incorrectly
+ - Added a missing paperless dimension for the waist
+ - Fixed an issue where the split yoke option was not taken into account correctly
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package simon
