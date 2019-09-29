@@ -6,11 +6,11 @@ boxPleat:
   title: Box pleat
   description: Whether to include a box pleat at the back or not
 boxPleatWidth:
-  title: Box pleat width
-  description: The total widh of the box pleat
+  title: Quetschfaltenweite
+  description: Gesamtbreite der Quetschfalte
 boxPleatFold:
-  title: Box pleat fold
-  description: The amount by with the box pleat folds inwards
+  title: Quetschfalte Falz
+  description: Der Betrag, um welchen die Quetschfalte nach innen gefaltet wird
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.
