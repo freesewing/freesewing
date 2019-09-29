@@ -11,7 +11,6 @@ export default part => {
     Path,
     paths,
     complete,
-    paperless,
     macro,
     options
   } = part.shorthand()
