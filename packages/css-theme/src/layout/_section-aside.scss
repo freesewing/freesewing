@@ -7,17 +7,17 @@ div.fs-sa {
   }
   aside {
     padding: 0;
-    max-width: 400px;
-    min-width: 200px;
-    width: 40%;
+    max-width: 600px;
+    min-width: 250px;
+    width: 50%;
     background: $oc-gray-1;
     border-left: 1px solid $oc-gray-3;
   }
   aside div.sticky {
     position: sticky;
     top: 0;
-    height: 100vh;
-    overflow-y: scroll;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
   }
 }
 
