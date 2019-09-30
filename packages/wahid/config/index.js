@@ -1,58 +1,69 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "wahid",
+  name: 'wahid',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 4,
-  tags: ["top", "formal"],
+  tags: ['top', 'formal'],
   optionGroups: {
     fit: [
-      "chestEase",
-      "waistEase",
-      "hipsEase",
-      "lengthBonus",
-      "armholeDepthFactor",
-      "backScyeDart",
-      "frontScyeDart"
+      'chestEase',
+      'waistEase',
+      'hipsEase',
+      'lengthBonus',
+      'armholeDepthFactor',
+      'backScyeDart',
+      'frontScyeDart',
+      'centerBackDart'
     ],
-    style: ["pocketLocation", "pocketWidth", "weltHeight"]
+    style: [
+      'pocketLocation',
+      'pocketWidth',
+      'weltHeight',
+      'necklineDrop',
+      'frontStyle',
+      'hemStyle',
+      'hemRadius',
+      'buttons'
+    ],
+    advanced: ['backInset', 'frontInset', 'shoulderInset', 'neckInset', 'pocketAngle']
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToShoulder",
-    "hipsCircumference",
-    "naturalWaist",
-    "shoulderToWrist",
-    "wristCircumference"
+    'bicepsCircumference',
+    'centerBackNeckToWaist',
+    'chestCircumference',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'hipsCircumference',
+    'naturalWaist',
+    'shoulderToWrist',
+    'wristCircumference'
   ],
   dependencies: {
-    backBlock: "base",
-    frontBlock: "backBlock",
-    front: "frontBlock",
-    back: "backBlock",
-    frontFacing: "front",
-    frontLining: "front",
-    pocketBag: "front"
+    backBlock: 'base',
+    frontBlock: 'backBlock',
+    front: 'frontBlock',
+    back: 'backBlock',
+    frontFacing: 'front',
+    frontLining: 'front',
+    pocketBag: 'front'
   },
   inject: {
-    backBlock: "base",
-    frontBlock: "backBlock",
-    front: "frontBlock",
-    back: "backBlock",
-    frontFacing: "front",
-    frontLining: "front"
+    backBlock: 'base',
+    frontBlock: 'backBlock',
+    front: 'frontBlock',
+    back: 'backBlock',
+    frontFacing: 'front',
+    frontLining: 'front'
   },
-  hide: ["base", "frontBlock", "backBlock"],
-  parts: ["pocketWelt", "pocketFacing", "pocketInterfacing"],
+  hide: ['base', 'frontBlock', 'backBlock'],
+  parts: ['pocketWelt', 'pocketFacing', 'pocketInterfacing'],
   options: {
     // These are needed because Brian expects them
     brianFitSleeve: false,
@@ -129,12 +140,12 @@ export default {
       max: 85
     },
     frontStyle: {
-      dflt: "classic",
-      list: ["classic", "rounded"]
+      dflt: 'classic',
+      list: ['classic', 'rounded']
     },
     hemStyle: {
-      dflt: "classic",
-      list: ["classic", "rounded"]
+      dflt: 'classic',
+      list: ['classic', 'rounded']
     },
     hemRadius: {
       pct: 6,
@@ -172,4 +183,4 @@ export default {
       max: 5
     }
   }
-};
+}

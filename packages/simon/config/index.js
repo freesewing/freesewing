@@ -1,143 +1,141 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "simon",
+  name: 'simon',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 4,
-  tags: ["top"],
+  tags: ['top'],
   optionGroups: {
     fit: [
-      "chestEase",
-      "collarEase",
-      "bicepsEase",
-      "cuffEase",
-      "shoulderEase",
-      "lengthBonus",
-      "sleeveLengthBonus",
-      "waistEase",
-      "hipsEase",
-      "yokeDart"
+      'chestEase',
+      'collarEase',
+      'bicepsEase',
+      'cuffEase',
+      'shoulderEase',
+      'lengthBonus',
+      'sleeveLengthBonus',
+      'waistEase',
+      'hipsEase',
+      'yokeDart'
     ],
     style: [
-      "splitYoke",
-      "hemStyle",
-      "hemCurve",
+      'splitYoke',
+      'hemStyle',
+      'hemCurve',
+      'boxPleat',
+      'backDarts',
       {
         closure: [
-          "extraTopButton",
-          "buttons",
-          "seperateButtonPlacket",
-          "buttonPlacketStyle",
-          "seperateButtonholePlacket",
-          "buttonholePlacketStyle",
-          "buttonPlacketWidth",
-          "buttonholePlacketWidth",
-          "buttonholePlacketFoldWidth",
-          "buttonFreeLength"
+          'extraTopButton',
+          'buttons',
+          'seperateButtonPlacket',
+          'buttonPlacketStyle',
+          'seperateButtonholePlacket',
+          'buttonholePlacketStyle',
+          'buttonPlacketWidth',
+          'buttonholePlacketWidth',
+          'buttonholePlacketFoldWidth',
+          'buttonFreeLength'
         ]
       },
       {
         cuffs: [
-          "cuffStyle",
-          "barrelCuffNarrowButton",
-          "cuffButtonRows",
-          "sleevePlacketWidth",
-          "sleevePlacketLength",
-          "cuffDrape",
-          "cuffLength"
+          'cuffStyle',
+          'barrelCuffNarrowButton',
+          'cuffButtonRows',
+          'sleevePlacketWidth',
+          'sleevePlacketLength',
+          'cuffDrape',
+          'cuffLength'
         ]
       },
       {
         collar: [
-          "collarAngle",
-          "collarStandBend",
-          "collarStandCurve",
-          "collarFlare",
-          "collarStandWidth",
-          "collarBend",
-          "collarGap",
-          "collarRoll"
+          'collarAngle',
+          'collarStandBend',
+          'collarStandCurve',
+          'collarFlare',
+          'collarStandWidth',
+          'collarBend',
+          'collarGap',
+          'collarRoll'
         ]
       }
     ],
     advanced: [
-      "acrossBackFactor",
-      "armholeDepthFactor",
-      "backNeckCutout",
-      "frontArmholeDeeper",
-      "shoulderSlopeReduction",
-      "sleeveWidthGuarantee",
+      'acrossBackFactor',
+      'armholeDepthFactor',
+      'backNeckCutout',
+      'frontArmholeDeeper',
+      'shoulderSlopeReduction',
+      'sleeveWidthGuarantee',
+      'boxPleatWidth',
+      'boxPleatFold',
+      'backDartShaping',
       {
         sleevecap: [
-          "sleevecapEase",
-          "sleevecapTopFactorX",
-          "sleevecapTopFactorY",
-          "sleevecapBackFactorX",
-          "sleevecapBackFactorY",
-          "sleevecapFrontFactorX",
-          "sleevecapFrontFactorY",
-          "sleevecapQ1Offset",
-          "sleevecapQ2Offset",
-          "sleevecapQ3Offset",
-          "sleevecapQ4Offset",
-          "sleevecapQ1Spread1",
-          "sleevecapQ1Spread2",
-          "sleevecapQ2Spread1",
-          "sleevecapQ2Spread2",
-          "sleevecapQ3Spread1",
-          "sleevecapQ3Spread2",
-          "sleevecapQ4Spread1",
-          "sleevecapQ4Spread2"
+          'sleevecapEase',
+          'sleevecapTopFactorX',
+          'sleevecapTopFactorY',
+          'sleevecapBackFactorX',
+          'sleevecapBackFactorY',
+          'sleevecapFrontFactorX',
+          'sleevecapFrontFactorY',
+          'sleevecapQ1Offset',
+          'sleevecapQ2Offset',
+          'sleevecapQ3Offset',
+          'sleevecapQ4Offset',
+          'sleevecapQ1Spread1',
+          'sleevecapQ1Spread2',
+          'sleevecapQ2Spread1',
+          'sleevecapQ2Spread2',
+          'sleevecapQ3Spread1',
+          'sleevecapQ3Spread2',
+          'sleevecapQ4Spread1',
+          'sleevecapQ4Spread2'
         ]
       }
     ]
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaist",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToShoulder",
-    "hipsCircumference",
-    "shoulderToWrist",
-    "wristCircumference"
+    'bicepsCircumference',
+    'centerBackNeckToWaist',
+    'chestCircumference',
+    'naturalWaist',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'hipsCircumference',
+    'shoulderToWrist',
+    'wristCircumference'
   ],
   dependencies: {
-    sleeveBase: ["frontBase", "backBase"],
-    sleeve: ["sleeveBase", "front", "back"]
+    sleeveBase: ['frontBase', 'backBase'],
+    sleeve: ['sleeveBase', 'front', 'back']
   },
   inject: {
-    frontBase: "base",
-    backBase: "base",
-    back: "backBase",
-    front: "frontBase",
-    frontRight: "front",
-    frontLeft: "front",
-    buttonPlacket: "front",
-    buttonholePlacket: "front",
-    yoke: "backBase",
-    sleeveBase: "front",
-    sleeve: "sleeveBase"
+    frontBase: 'base',
+    backBase: 'base',
+    back: 'backBase',
+    front: 'frontBase',
+    frontRight: 'front',
+    frontLeft: 'front',
+    buttonPlacket: 'front',
+    buttonholePlacket: 'front',
+    yoke: 'backBase',
+    sleeveBase: 'front',
+    sleeve: 'sleeveBase'
   },
-  parts: [
-    "collarStand",
-    "collar",
-    "sleevePlacketUnderlap",
-    "sleevePlacketOverlap",
-    "cuff"
-  ],
-  hide: ["base", "frontBase", "front", "backBase", "sleeveBase"],
+  parts: ['collarStand', 'collar', 'sleevePlacketUnderlap', 'sleevePlacketOverlap', 'cuff'],
+  hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase'],
   options: {
     // Constants
     collarFactor: 5,
-    minimalDartShaping: 5,
     brianFitSleeve: true,
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
@@ -151,29 +149,35 @@ export default {
 
     // Lists
     hemStyle: {
-      list: ["straight", "baseball", "slashed"],
-      dflt: "straight"
+      list: ['straight', 'baseball', 'slashed'],
+      dflt: 'straight'
     },
     buttonPlacketStyle: {
-      list: ["classic", "seamless"],
-      dflt: "classic"
+      list: ['classic', 'seamless'],
+      dflt: 'classic'
     },
     buttonholePlacketStyle: {
-      list: ["classic", "seamless"],
-      dflt: "seamless"
+      list: ['classic', 'seamless'],
+      dflt: 'seamless'
     },
     cuffStyle: {
       list: [
-        "roundedBarrelCuff",
-        "angledBarrelCuff",
-        "straightBarrelCuff",
-        "roundedFrenchCuff",
-        "angledFrenchCuff",
-        "straightFrenchCuff"
+        'roundedBarrelCuff',
+        'angledBarrelCuff',
+        'straightBarrelCuff',
+        'roundedFrenchCuff',
+        'angledFrenchCuff',
+        'straightFrenchCuff'
       ],
-      dflt: "angledBarrelCuff"
+      dflt: 'angledBarrelCuff'
+    },
+    backDarts: {
+      list: ['auto', 'never', 'always'],
+      dflt: 'auto'
     },
 
+    // Bool
+    boxPleat: { bool: false },
     // Counters
     buttons: { count: 7, min: 4, max: 12 },
     cuffButtonRows: { count: 1, min: 1, max: 2 },
@@ -190,35 +194,37 @@ export default {
     buttonholePlacketFoldWidth: { mm: 6, min: 3, max: 10 },
     collarStandWidth: { mm: 35, min: 15, max: 60 },
     sleevePlacketWidth: { mm: 25, min: 15, max: 35 },
+    boxPleatWidth: { mm: 35, min: 5, max: 65 },
+    boxPleatFold: { mm: 5, min: 1, max: 15 },
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     armholeDepthFactor: { pct: 60, min: 50, max: 70 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
-    bicepsEase: { pct: 15, min: 0, max: 50 },
+    bicepsEase: { pct: 15, min: 10, max: 35 },
     buttonFreeLength: { pct: 2, min: 0, max: 15 },
-    chestEase: { pct: 8, min: -4, max: 20 },
+    chestEase: { pct: 15, min: 10, max: 35 },
     collarBend: { pct: 5, min: 0, max: 10 },
-    collarEase: { pct: 3.5, min: 0, max: 10 },
+    collarEase: { pct: 3.5, min: 2, max: 10 },
     collarGap: { pct: 3, min: 0, max: 6 },
     collarRoll: { pct: 3, min: 0, max: 6 },
     cuffDrape: { pct: 5, min: 0, max: 10 },
-    cuffEase: { pct: 20, min: 0, max: 30 },
+    cuffEase: { pct: 20, min: 10, max: 40 },
     cuffLength: { pct: 10, min: 3, max: 15 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     hemCurve: { pct: 50, min: 25, max: 100 },
-    hipsEase: { pct: 8, min: -4, max: 20 },
+    hipsEase: { pct: 15, min: 10, max: 35 },
     lengthBonus: { pct: 25, min: -4, max: 60 },
-    shoulderEase: { pct: 0, min: -2, max: 6 },
+    shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
-    sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapEase: { pct: 0, min: 0, max: 3 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
     sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
     sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
     sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
     sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
-    sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
+    sleevecapQ1Offset: { pct: 5, min: 3, max: 7 },
     sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
     sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
     sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
@@ -233,7 +239,8 @@ export default {
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
     sleevePlacketLength: { pct: 25, min: 15, max: 35 },
-    waistEase: { pct: 8, min: -4, max: 20 },
-    yokeDart: { pct: 0, min: 0, max: 15 }
+    waistEase: { pct: 15, min: 10, max: 35 },
+    yokeDart: { pct: 0, min: 0, max: 15 },
+    backDartShaping: { pct: 25, min: 5, max: 75 }
   }
-};
+}

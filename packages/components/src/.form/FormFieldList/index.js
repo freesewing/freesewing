@@ -1,17 +1,18 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
+import Radio from '@material-ui/core/Radio'
+import RadioGroup from '@material-ui/core/RadioGroup'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
 
 const FormFieldList = props => {
-  const [value, setValue] = useState(props.dflt);
+  const [value, setValue] = useState(props.dflt)
+  useEffect(() => {
+    if (props.value !== value) setValue(props.value)
+  }, [props.value])
   const update = evt => {
-    props.updateValue(props.name, evt.target.value);
-    setValue(evt.target.value);
-  };
-  // Force state update when rerendering due to props change
-  if (props.value !== value) setValue(props.value);
+    props.updateValue(props.name, evt.target.value)
+    setValue(evt.target.value)
+  }
 
   return (
     <RadioGroup onChange={update} value={value}>
@@ -26,8 +27,8 @@ const FormFieldList = props => {
         />
       ))}
     </RadioGroup>
-  );
-};
+  )
+}
 
 FormFieldList.propTypes = {
   dflt: PropTypes.oneOfType([
@@ -38,6 +39,6 @@ FormFieldList.propTypes = {
   list: PropTypes.object,
   updateValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired
-};
+}
 
-export default FormFieldList;
+export default FormFieldList

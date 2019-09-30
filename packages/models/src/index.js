@@ -1,154 +1,22 @@
-export const measurements = {
-  menswear: [
-    'ankleCircumference',
-    'bicepsCircumference',
-    'centerBackNeckToWaist',
-    'chestCircumference',
-    'headCircumference',
-    'hipsCircumference',
-    'hipsToUpperLeg',
-    'inseam',
-    'kneeCircumference',
-    'naturalWaist',
-    'naturalWaistToFloor',
-    'naturalWaistToHip',
-    'naturalWaistToKnee',
-    'naturalWaistToSeat',
-    'neckCircumference',
-    'seatDepth',
-    'shoulderSlope',
-    'shoulderToElbow',
-    'shoulderToShoulder',
-    'shoulderToWrist',
-    'upperLegCircumference',
-    'wristCircumference'
-  ],
-  womenswear: [
-    'ankleCircumference',
-    'bicepsCircumference',
-    'bustSpan',
-    'centerBackNeckToWaist',
-    'chestCircumference',
-    'headCircumference',
-    'highBust',
-    'highPointShoulderToBust',
-    'hipsCircumference',
-    'hipsToUpperLeg',
-    'inseam',
-    'kneeCircumference',
-    'naturalWaist',
-    'naturalWaistToFloor',
-    'naturalWaistToHip',
-    'naturalWaistToKnee',
-    'naturalWaistToUnderbust',
-    'naturalWaistToSeat',
-    'neckCircumference',
-    'seatDepth',
-    'shoulderSlope',
-    'shoulderToElbow',
-    'shoulderToShoulder',
-    'shoulderToWrist',
-    'underbust',
-    'upperLegCircumference',
-    'wristCircumference'
-  ]
-}
+import neckstimate from '@freesewing/utils/neckstimate'
+import measurements from './measurements'
+import sizes from './sizes'
 
-export const withoutBreasts = {
-  size34: {
-    bicepsCircumference: 335,
-    centerBackNeckToWaist: 489,
-    chestCircumference: 849,
-    headCircumference: 570,
-    hipsCircumference: 722,
-    hipsToUpperLeg: 183,
-    naturalWaistToHip: 100,
-    neckCircumference: 366,
-    shoulderSlope: 43,
-    shoulderToShoulder: 419,
-    shoulderToWrist: 670,
-    upperLegCircumference: 565,
-    wristCircumference: 175
-  },
-  size36: {
-    bicepsCircumference: 290,
-    centerBackNeckToWaist: 492,
-    chestCircumference: 907,
-    headCircumference: 575,
-    hipsCircumference: 780,
-    hipsToUpperLeg: 193,
-    naturalWaistToHip: 105,
-    neckCircumference: 378,
-    shoulderSlope: 46,
-    shoulderToShoulder: 431,
-    shoulderToWrist: 675,
-    upperLegCircumference: 582,
-    wristCircumference: 180
-  },
-  size38: {
-    bicepsCircumference: 305,
-    centerBackNeckToWaist: 495,
-    chestCircumference: 965,
-    headCircumference: 580,
-    hipsCircumference: 838,
-    hipsToUpperLeg: 202,
-    naturalWaistToHip: 110,
-    neckCircumference: 391,
-    shoulderSlope: 49,
-    shoulderToShoulder: 444,
-    shoulderToWrist: 680,
-    upperLegCircumference: 598,
-    wristCircumference: 185
-  },
-  size40: {
-    bicepsCircumference: 320,
-    centerBackNeckToWaist: 498,
-    chestCircumference: 1023,
-    headCircumference: 585,
-    hipsCircumference: 896,
-    hipsToUpperLeg: 211,
-    naturalWaistToHip: 115,
-    neckCircumference: 404,
-    shoulderSlope: 52,
-    shoulderToShoulder: 457,
-    shoulderToWrist: 685,
-    upperLegCircumference: 614,
-    wristCircumference: 190
-  },
-  size42: {
-    bicepsCircumference: 335,
-    centerBackNeckToWaist: 501,
-    chestCircumference: 1081,
-    headCircumference: 590,
-    hipsCircumference: 995,
-    hipsToUpperLeg: 220,
-    naturalWaist: 925,
-    naturalWaistToHip: 120,
-    neckCircumference: 416,
-    shoulderSlope: 55,
-    shoulderToElbow: 415,
-    shoulderToShoulder: 470,
-    shoulderToWrist: 690,
-    upperLegCircumference: 630,
-    wristCircumference: 195
-  },
-  size44: {
-    bicepsCircumference: 350,
-    centerBackNeckToWaist: 505,
-    chestCircumference: 1139,
-    headCircumference: 595,
-    hipsCircumference: 1012,
-    hipsToUpperLeg: 229,
-    naturalWaistToHip: 125,
-    neckCircumference: 429,
-    shoulderSlope: 58,
-    shoulderToShoulder: 483,
-    shoulderToWrist: 700,
-    upperLegCircumference: 646,
-    wristCircumference: 200
+const withBreasts = {}
+const withoutBreasts = {}
+
+for (let s of sizes.womenswear) {
+  withBreasts['size' + s] = {}
+  for (let m of measurements.womenswear) {
+    withBreasts['size' + s][m] = neckstimate(s * 10, m, true)
   }
 }
 
-export const withBreasts = {
-  // FIXME
+for (let s of sizes.menswear) {
+  withoutBreasts['size' + s] = {}
+  for (let m of measurements.menswear) {
+    withoutBreasts['size' + s][m] = neckstimate(s * 10, m, false)
+  }
 }
+
+export { measurements, sizes, withoutBreasts, withBreasts }

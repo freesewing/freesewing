@@ -35,15 +35,21 @@ hugo:
 jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy est un patron de jupe cercle adaptable
-  title: Jupe cercle Sandy
+  title: Jupe circulaire Sandy
 shin:
   description: Shin est un caleçon de bain athlétique pour hommes
   title: Caleçon de bain Shin
 simon:
   description: Simon est un modèle de chemise pour homme hautement adaptable.
   title: Chemise Simon
+simone:
+  description: Simone is simon, adapted for breasts
+  title: Simone shirt
 sven:
   description: Sven est un pull simple.
   title: Sweatshirt Sven
@@ -59,3 +65,7 @@ trayvon:
 wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+

@@ -21,7 +21,7 @@
   "files": ["dist/*", "README.md", "package.json"],
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "next"
   },
   "engines": {
     "node": ">=8.0.0",

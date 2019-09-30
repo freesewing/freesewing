@@ -1,6 +1,6 @@
 pocket:
   title: Pocket
-  description: Whether to include a pocket or not
+  description: Whether to include a front pocket or not
 
 pocketHeight:
   title: Pocket height
@@ -24,4 +24,4 @@ hoodDepth:
 
 hoodAngle:
   title: Hood angle
-  description: Controls the andle at which the hood is attached
+  description: Controls the angle at which the hood is attached

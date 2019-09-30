@@ -44,12 +44,16 @@ export default function(part) {
   points.topRight = points.topRight.shift(90, store.get('frontRise'))
 
   // Path
-  paths.seam = new Path()
-    .move(points.topLeft)
+  paths.saBase = new Path()
+    .move(points.bottomLeft)
+    .line(points.topLeft)
     .line(points.topRight)
     .line(points.bottomRight)
-    .line(points.bottomLeft)
-    .line(points.topLeft)
+  paths.hemBase = new Path().move(points.bottomRight).line(points.bottomLeft)
+  paths.saBase.render = false
+  paths.hemBase.render = false
+  paths.seam = paths.saBase
+    .join(paths.hemBase)
     .close()
     .attr('class', 'fabric')
 
@@ -65,7 +69,11 @@ export default function(part) {
       title: 'side'
     })
     if (sa) {
-      paths.sa = paths.seam.offset(sa * -1).attr('class', 'fabric sa')
+      paths.sa = paths.saBase
+        .offset(sa * -1)
+        .join(paths.hemBase.offset(sa * -2))
+        .close()
+        .attr('class', 'fabric sa')
     }
     macro('grainline', {
       from: new Point(points.bottomRight.x / 2, points.bottomRight.y),

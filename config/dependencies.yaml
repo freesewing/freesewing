@@ -117,39 +117,14 @@ jaeger:
   peer:
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
+models:
+  peer:
+    "@freesewing/utils": "^{{version}}"
 mui-theme:
   peer:
     "@material-ui/core": "^4.0.1"
     "react": "^16.8"
     "react-dom": "^16.8"
-pattern-info:
-  peer:
-    "@freesewing/core": "^{{version}}"
-    "@freesewing/plugin-bundle": "^{{version}}"
-patterns:
-  _:
-    "@freesewing/aaron": "^{{version}}"
-    "@freesewing/benjamin": "^{{version}}"
-    "@freesewing/bent": "^{{version}}"
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/bruce": "^{{version}}"
-    "@freesewing/carlita": "^{{version}}"
-    "@freesewing/carlton": "^{{version}}"
-    "@freesewing/cathrin": "^{{version}}"
-    "@freesewing/florent": "^{{version}}"
-    "@freesewing/huey": "^{{version}}"
-    "@freesewing/hugo": "^{{version}}"
-    "@freesewing/jaeger": "^{{version}}"
-    "@freesewing/shin": "^{{version}}"
-    "@freesewing/simon": "^{{version}}"
-    "@freesewing/sven": "^{{version}}"
-    "@freesewing/tamiko": "^{{version}}"
-    "@freesewing/trayvon": "^{{version}}"
-    "@freesewing/wahid": "^{{version}}"
-  peer:
-    "@freesewing/core": "^{{version}}"
-    "@freesewing/plugin-bundle": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
 plugin-bundle:
   _:
     "@freesewing/plugin-cutonfold": "^{{version}}"
@@ -165,6 +140,13 @@ simon:
     "@freesewing/brian": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-flip": "^{{version}}"
+simone:
+  peer:
+    "@freesewing/brian": "^{{version}}"
+    "@freesewing/simon": "^{{version}}"
+    "@freesewing/plugin-buttons": "^{{version}}"
+    "@freesewing/plugin-flip": "^{{version}}"
+    "@freesewing/plugin-bust": "^{{version}}"
 utils:
   peer:
     "tlds": "^0.203.1"

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.0.0-beta.43",
+  "version": "2.1.0-alpha.0",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -43,6 +43,9 @@
     "defaultSa/*",
     "formatImperial/*",
     "formatMm/*",
+    "measurementAsMm/*",
+    "measurementDiffers/*",
+    "neckstimate/*",
     "optionDefault/*",
     "optionType/*",
     "roundMm/*",
@@ -52,13 +55,12 @@
     "smallestImperialStep/*",
     "storage/*",
     "tiler/*",
-    "measurementAsMm/*",
     "validateEmail/*",
     "validateTld/*"
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "next"
   },
   "engines": {
     "node": ">=8.0.0",

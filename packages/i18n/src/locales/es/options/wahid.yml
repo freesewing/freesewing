@@ -14,3 +14,30 @@ pocketWidth:
 weltHeight:
   title: Altura de verdugón del bolsillo
   description: La altura de verdugón del bolsillo.
+necklineDrop:
+  title: Caída del escote
+  description: Determina lo bajo que cae la línea de cuello en la parte delantera
+frontStyle:
+  title: Estilo de la apertura del cuello
+  description: Estilo de apertura del cuello
+hemStyle:
+  title: Estilo del dobladillo
+  description: Estilo del dobladillo delantero
+hemRadius:
+  title: Radio del dobladillo
+  desciption: Radio por el que el dobladillo es redondeado
+backInset:
+  title: Inserción trasera
+  description: Cuánto de la parte de atrás de la sisa se corta hacia el interior
+frontInset:
+  title: Inserción delantera
+  description: Cuánto de la parte de delante de la sisa se corta hacia el interior
+shoulderInset:
+  title: Inserción de hombro
+  description: Cuánto la costura del hombro se recorta hacia el interior en el hombro
+neckInset:
+  title: Inserción de cuello
+  description: Cuánto de la costura del hombro se corta hacia el interior en el cuello
+pocketAngle:
+  title: Ángulo del bolsillo
+  description: Ángulo del forro del bolsillo

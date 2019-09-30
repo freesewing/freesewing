@@ -1,7 +1,26 @@
 ---
+backDarts:
+  tile: Back darts
+  description: Whether or not to include back darts
+  options:
+    auto: Automatic
+    always: Always
+    never: Never
+backDartShaping:
+  title: Back dart shaping
+  description: The amount of shaping that is done by the back darts
 barrelCuffNarrowButton:
   title: Botón de ajuste del puño
   description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+boxPleatWidth:
+  title: Box pleat width
+  description: The total widh of the box pleat
+boxPleatFold:
+  title: Box pleat fold
+  description: The amount by with the box pleat folds inwards
 buttonPlacketStyle:
   title: Estilo de la vista de los botones
   description: Estilo de la visto de los botones

@@ -1,27 +1,27 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "benjamin",
+  name: 'benjamin',
   version: version,
-  design: "Wouter Van Wageningen",
-  code: "Wouter Van Wageningen",
-  department: "accessories",
-  type: "pattern",
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
+  department: 'accessories',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["top", "basics"],
+  tags: ['top', 'basics'],
   optionGroups: {
-    fit: ["collarEase", "adjustmentRibbon"],
-    style: ["tipWidth", "knotWidth", "bowLength", "bowStyle", "endStyle"]
+    fit: ['collarEase', 'adjustmentRibbon', 'bandLength'],
+    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle']
   },
-  measurements: ["neckCircumference"],
+  measurements: ['neckCircumference'],
   dependencies: {},
   inject: {
-    bow1: "base",
-    bow2: "base",
-    bow3: "base"
+    bow1: 'base',
+    bow2: 'base',
+    bow3: 'base'
   },
-  hide: ["base"],
-  parts: ["ribbon"],
+  hide: ['base'],
+  parts: ['ribbon'],
   options: {
     transitionLength: 0.7, // 70% of bandLength
     bandLength: {
@@ -55,13 +55,13 @@ export default {
       max: 6
     },
     bowStyle: {
-      dflt: "butterfly",
-      list: ["diamond", "butterfly", "square", "widesquare"]
+      dflt: 'butterfly',
+      list: ['diamond', 'butterfly', 'square', 'widesquare']
     },
     endStyle: {
-      dflt: "straight",
-      list: ["straight", "pointed", "rounded"]
+      dflt: 'straight',
+      list: ['straight', 'pointed', 'rounded']
     },
     adjustmentRibbon: { bool: false }
   }
-};
+}

@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Bolsillo
-  description: Ya sea para incluir un bolsillo o no
+  description: Whether to include a front pocket or not
 pocketHeight:
   title: Altura de bolsillo
   description: Controla la altura del bolsillo
@@ -19,4 +19,4 @@ hoodDepth:
   description: Controla la profundidad del capucha
 hoodAngle:
   title: Angulo de capucha
-  description: Controla el ángulo en el que se fija la campana
+  description: Controla el ángulo en el que la capucha es unida

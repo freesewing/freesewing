@@ -14,5 +14,8 @@ export default function Design(config, plugins = false) {
   pattern.prototype = Object.create(Pattern.prototype)
   pattern.prototype.constructor = pattern
 
+  // Make config available without need to instantiate pattern
+  pattern.config = config
+
   return pattern
 }

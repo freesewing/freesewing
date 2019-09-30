@@ -1,7 +1,26 @@
 ---
+backDarts:
+  tile: Back darts
+  description: Whether or not to include back darts
+  options:
+    auto: Automatic
+    always: Always
+    never: Never
+backDartShaping:
+  title: Back dart shaping
+  description: The amount of shaping that is done by the back darts
 barrelCuffNarrowButton:
   title: Extra knoop manchet
   description: Of je al dan niet een knoop wil om de manchetten smaller te maken. Deze optie is enkel relevant bij klassieke manchetten (zonder manchetknopen).
+boxPleat:
+  title: Stolpplooi
+  description: Of je wel of niet een stolpplooi in de rug wil
+boxPleatWidth:
+  title: Breedte stolpplooi
+  description: De totale breedte van de stolpplooi
+boxPleatFold:
+  title: Vouw stolpplooi
+  description: Hoe ver de stolpplooi naar binnen vouwt
 buttonPlacketStyle:
   title: Stijl knopenpat
   description: De stijl van het knopenpat.

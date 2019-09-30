@@ -1,7 +1,26 @@
 ---
+backDarts:
+  tile: Back darts
+  description: Whether or not to include back darts
+  options:
+    auto: Automatic
+    always: Always
+    never: Never
+backDartShaping:
+  title: Back dart shaping
+  description: The amount of shaping that is done by the back darts
 barrelCuffNarrowButton:
   title: Manschette schmaler Knopf
   description: Gibt an, ob Sie einen Knopf hinzufügen, um die Manschetten enger zu binden. Diese Option ist nur für Fassmanschetten relevant.
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+boxPleatWidth:
+  title: Quetschfaltenweite
+  description: Gesamtbreite der Quetschfalte
+boxPleatFold:
+  title: Quetschfalte Falz
+  description: Der Betrag, um welchen die Quetschfalte nach innen gefaltet wird
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.

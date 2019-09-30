@@ -1,27 +1,23 @@
 ---
-collarEase:
-  title: Aisance du col
-  description: Contrôle la quantité d'aisance au niveau du col (autour de votre cou)
 adjustmentRibbon:
   title: Ruban d'ajustement
   description: Si vous souhaitez inclure ou non un ruban d'ajustement
+bandLength:
+  title: Longueur de bande
+  description: Longueur de la bande
 tipWidth:
   title: Largeur de la pointe
   description: Largeur des pointes
 knotWidth:
   title: Largeur du noeud
   description: Largeur du nœud
-bowWidth:
-  title: Largeur du noeud
-  description: Longueur du nœud (lorsqu'il est noué)
+bowLength:
+  title: Longueur de noeud
+  description: Longueur du noeud (lorsqu'il est noué)
 bowStyle:
   title: Style de nœud
   description: Style du nœud
 endStyle:
   title: Style de l'extrémité
   description: Style des extrémités du noeud
-
-
-
-
 

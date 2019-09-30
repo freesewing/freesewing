@@ -1,5 +1,16 @@
 export default part => {
-  let { utils, sa, Point, points, paths, complete, paperless, macro, options } = part.shorthand()
+  let {
+    snippets,
+    utils,
+    sa,
+    Point,
+    points,
+    paths,
+    complete,
+    paperless,
+    macro,
+    options
+  } = part.shorthand()
 
   let width = options.buttonPlacketWidth
   points.placketTopIn = utils.lineIntersectsCurve(

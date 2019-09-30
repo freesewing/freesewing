@@ -41,7 +41,10 @@ const DraftPattern = props => {
 
   if (props.svgExport) {
     svgToFile(
-      new props.Pattern(props.gist.settings)
+      new props.Pattern({
+        ...props.gist.settings,
+        embed: false
+      })
         .use(theme)
         .draft()
         .render()

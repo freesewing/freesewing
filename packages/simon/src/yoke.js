@@ -26,6 +26,16 @@ export default part => {
     .line(points.neck)
     .curve_(points.neckCp2, points.cbNeck)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()
+  else {
+    for (let p of ['neckCp2', 'neck', 'shoulder', 'shoulderCp1', 'armholePitchCp2', 'armholePitch'])
+      points['_' + p] = points[p].flipX()
+    paths.saBase
+      ._curve(points._neckCp2, points._neck)
+      .line(points._shoulder)
+      .curve(points._shoulderCp1, points._armholePitchCp2, points._armholePitch)
+      .line(points.cbYoke)
+      .close()
+  }
   paths.seam = paths.saBase.clone()
   paths.saBase.render = false
   paths.seam = paths.seam.close().attr('class', 'fabric')
@@ -39,17 +49,17 @@ export default part => {
     snippets.logo = new Snippet('logo', points.logo)
     snippets.logo.attr('data-scale', 0.8)
     if (options.splitYoke) {
+      macro('cutonfold', {
+        from: points.cbNeck,
+        to: points.cbYoke,
+        grainline: true
+      })
+    } else {
       points.grainlineFrom = points.cbYoke.shift(0, 20)
       points.grainlineTo = points.cbNeck.shift(0, 20)
       macro('grainline', {
         from: points.grainlineFrom,
         to: points.grainlineTo
-      })
-    } else {
-      macro('cutonfold', {
-        from: points.cbNeck,
-        to: points.cbYoke,
-        grainline: true
       })
     }
 

@@ -1,27 +1,23 @@
 ---
-collarEase:
-  title: Overwijdte kraag
-  description: Controleert de hoeveelheid overwijdte aan je kraag (rond je nek)
 adjustmentRibbon:
   title: Aanpaslintje
   description: Of je wel of geen aanpaslintje wil
+bandLength:
+  title: Lengte band
+  description: Lengte van de band
 tipWidth:
   title: Breedte punten
   description: Breedte van de punten
 knotWidth:
   title: Breedte knoop
   description: Breedte van de knoop
-bowWidth:
-  title: Breedte strik
-  description: De lengte van gestrikt (gestrikt)
+bowLength:
+  title: Lengte strik
+  description: Lengte van de strik (wanneer geknoopt)
 bowStyle:
   title: Stijl strik
   description: Stijl van de strik
 endStyle:
   title: Stijl punt
   description: Stijl van de puntjes van de strik
-
-
-
-
 

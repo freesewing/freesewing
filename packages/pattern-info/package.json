@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.0.0-beta.43",
+  "version": "2.1.0-alpha.0",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -30,10 +30,7 @@
     "start": "rollup -c -w",
     "prepare": "node src/prebuild.js"
   },
-  "peerDependencies": {
-    "@freesewing/core": "^2.0.0-beta.43",
-    "@freesewing/plugin-bundle": "^2.0.0-beta.43"
-  },
+  "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
   "files": [
@@ -43,7 +40,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "next"
   },
   "engines": {
     "node": ">=8.0.0",

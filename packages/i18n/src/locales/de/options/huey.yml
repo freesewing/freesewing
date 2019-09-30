@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Tasche
-  description: Gibt an, ob eine Tasche hinzugefügt werden soll
+  description: Whether to include a front pocket or not
 pocketHeight:
   title: Taschenhöhe
   description: Steuert die Höhe der Tasche
@@ -19,4 +19,4 @@ hoodDepth:
   description: Steuert die Tiefe der Haube
 hoodAngle:
   title: Winkel der Haube
-  description: Steuert den Winkel, in dem die Haube angebracht wird
+  description: Controls the angle at which the hood is attached

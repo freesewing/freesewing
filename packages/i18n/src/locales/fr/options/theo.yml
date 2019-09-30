@@ -1,0 +1,7 @@
+---
+wedge:
+  title: Mélange
+  description: Contrôle la longueur de la couture de la fourche
+legWidth:
+  title: Largeur de jambe
+  description: Contrôle la largeur des jambes

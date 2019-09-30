@@ -1,6 +1,6 @@
 ---
 backScyeDart:
-  title: Pince arrière sans gêne
+  title: Pince dos
   description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
 frontScyeDart:
   title: Pince avant de l'emmanchure
@@ -14,3 +14,30 @@ pocketWidth:
 weltHeight:
   title: Hauteur monde de poche
   description: Détermine l'hauteur de la monde de poche
+necklineDrop:
+  title: Profondeur d'encolure
+  description: Détermine la profondeur d'encolure sur le devant
+frontStyle:
+  title: Style d'encolure
+  description: Style de l'encolure
+hemStyle:
+  title: Style d'ourlet
+  description: Style de l'ourlet avant
+hemRadius:
+  title: Rayon d'ourlet
+  desciption: Rayon avec lequel l'ourlet est arrondi
+backInset:
+  title: Base arrière
+  description: A quel point l'arrière de l'emmanchure est coupée vers l'intérieur
+frontInset:
+  title: Base avant
+  description: A quel point l'avant de l'emmanchure est coupée vers l'intérieur
+shoulderInset:
+  title: Aisance d'épaule
+  description: A quel point la couture d'épaule est placée vers l'intérieur des épaules
+neckInset:
+  title: Base cou
+  description: A quel point la couture d'épaule est coupée vers le cou
+pocketAngle:
+  title: Angle de poche
+  description: Angle de l'ouverture de poche

@@ -247,7 +247,7 @@ noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
 noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
 useRecipeModel: "Gebruik het model van het recept"
 createReplica: Creëer een replica
-showDetails: Toon details
+showDetails: Details tonen
 clickBelowToLogOut: Klik hieronder om uit te loggen
 compare: Vergelijk
 saveRecipe: Recept opslaan
@@ -257,3 +257,11 @@ seeYouLaterUser: Tot later {user}
 exportForPrinting: Exporteren om te printen
 exportForEditing: Exporteren om te bewerken
 exportRecipe: Exporteer recept
+startWithNeckTitle: Begin met de omtrek van de hals
+startWithNeckDescription: We kunnen je helpen fouten in je maten te vinden, gebaseerd op je halsomtrek.
+whatYouNeed: Wat je nodig hebt
+fabricOptions: Stofkeuze
+cutting: Knippen
+instructions: Instructies
+hide: Verberg
+show: Toon
