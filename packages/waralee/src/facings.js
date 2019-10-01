@@ -45,28 +45,28 @@ export default function(part) {
 
   // Complete?
   if (complete) {
-    points.frontTitle = points.frontTL.shift(270, 15).shift(0, 50)
+    points.frontTitle = points.frontTL.shift(270, 50).shift(0, 50)
     macro('title', {
       nr: 5,
       at: points.frontTitle.shift(0, 30),
       title: 'frontFacing',
       prefix: 'front'
     })
-    points.frontLogo = points.frontTitle.shift(270, 15)
+    points.frontLogo = points.frontTitle.shift(270, 0)
     snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.4)
     points.frontText = points.frontLogo
       .shift(-90, 25)
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
 
-    points.backTitle = points.backTL.shift(270, 15).shift(0, 50)
+    points.backTitle = points.backTL.shift(270, 50).shift(0, 50)
     macro('title', {
       nr: 6,
       at: points.backTitle.shift(0, 30),
       title: 'backFacing',
       prefix: 'back'
     })
-    points.backLogo = points.backTitle.shift(270, 15)
+    points.backLogo = points.backTitle.shift(270, 0)
     snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.4)
     points.backText = points.backLogo
       .shift(-90, 25)

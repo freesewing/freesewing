@@ -27,12 +27,18 @@ export default function(part) {
   ])
     store.set(option, measurements.neckCircumference * options[option])
 
-  // For easy access
-  const knot = store.get('knotWidth')
+  if (options.adjustmentRibbon) {
+    store.set('ribbonWidth', Math.max(options.adjustmentRibbonWidth, store.get('ribbonWidth')))
+  }
   const ribbon = store.get('ribbonWidth')
+  store.set('knotWidth', Math.max(ribbon, store.get('knotWidth')))
+  const knot = store.get('knotWidth')
+  store.set('tipWidth', Math.max(knot, store.get('tipWidth')))
+
+  // For easy access
   const tip = store.get('tipWidth')
   const band = store.get('bandLength')
-  const transition = band * options.transitionLength
+  const transition = knot * options.transitionLength
   const bow = store.get('bowLength')
 
   // Points
@@ -55,7 +61,6 @@ export default function(part) {
     points.tip = new Point(points.tip2Bottom.x + points.tip2Bottom.y, 0)
   } else points.tip = new Point(points.tip2Bottom.x, 0)
 
-  points.grainlineStart = new Point(0, 0)
   points.titleAnchor = new Point(points.tip1Top.x, 0)
 
   // Paths
@@ -93,6 +98,9 @@ export default function(part) {
       points.transitionBottomRight,
       cpl
     )
+    if (points.transitionBottomRightCp2.y > points.tip1Bottom.y)
+      points.transitionBottomRightCp2.y = points.tip1Bottom.y
+
     points.transitionTopRightCp1 = points.transitionBottomRightCp2.flipY()
     points.tip1TopCp2 = points.tip1Top.shift(180, cpl)
     points.tip1TopCp1 = points.tip1Top.shift(0, cpl)
@@ -105,10 +113,8 @@ export default function(part) {
     points.tip2TopCp2 = points.tip2Top.shift(180, cpl)
     points.tip2BottomCp1 = points.tip2Bottom.shift(180, cpl)
 
-    paths.seam = new Path()
-      .move(points.bandTopLeft)
-      .line(points.bandBottomLeft)
-      .line(points.bandBottomRight)
+    paths.bow = new Path()
+      .move(points.bandBottomRight)
       .line(points.transitionBottomRight)
       .curve(points.transitionBottomRightCp2, points.tip1BottomCp1, points.tip1Bottom)
       .curve(points.tip1BottomCp2, points.knotBottomCp1, points.knotBottom)
@@ -119,46 +125,34 @@ export default function(part) {
       .curve(points.knotTopCp2, points.tip1TopCp1, points.tip1Top)
       .curve(points.tip1TopCp2, points.transitionTopRightCp1, points.transitionTopRight)
       .line(points.bandTopRight)
-      .line(points.bandTopLeft)
-      .close()
+      .setRender(false)
   } else {
-    paths.seam = new Path()
-      .move(points.bandTopLeft)
-      .line(points.bandBottomLeft)
-      .line(points.bandBottomRight)
+    paths.bow = new Path()
+      .move(points.bandBottomRight)
       .line(points.transitionBottomRight)
       .line(points.tip2Bottom)
       .join(paths.cap)
       .line(points.tip2Top)
       .line(points.transitionTopRight)
       .line(points.bandTopRight)
-      .line(points.bandTopLeft)
-      .close()
+      .setRender(false)
   }
-
-  paths.seam.attr('class', 'fabric')
 
   // Complete?
   if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    macro('grainline', {
-      from: points.grainlineStart,
-      to: points.tip
-    })
     points.logoAnchor = points.tip.shift(180, 20)
-    snippets.logo = new Snippet('logo', points.logoAnchor).attr('data-scale', 0.5)
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr('data-scale', tip / 120)
 
     // Paperless?
     if (paperless) {
-      let baseY = points.tip2Bottom.y + 15 + sa
+      let baseY = points.tip2Bottom.y + sa
+      macro('hd', {
+        from: points.knotBottom,
+        to: points.tip2Bottom,
+        y: baseY
+      })
+      baseY += 15
       if (options.bowStyle === 'butterfly' || options.bowStyle === 'diamond') {
-        macro('hd', {
-          from: points.knotBottom,
-          to: points.tip2Bottom,
-          y: baseY
-        })
-        baseY += 15
         macro('hd', {
           from: points.tip1Bottom,
           to: points.tip2Bottom,
@@ -182,11 +176,8 @@ export default function(part) {
         y: baseY
       })
       baseY += 15
-      macro('hd', {
-        from: points.bandBottomLeft,
-        to: points.tip2Bottom,
-        y: baseY
-      })
+      store.set('baseY', baseY)
+
       macro('vd', {
         from: points.bandBottomRight,
         to: points.bandTopRight
