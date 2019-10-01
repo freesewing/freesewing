@@ -1,9 +1,9 @@
 ---
 bustDartAngle:
-  title: Bust dart angle
-  description: Controls the angle by which the (side) bust dart slopes downward
+  title: Hoek busteneep
+  description: Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst
 bustDartLength:
-  title: Bust dart length
+  title: Lengte busteneep
   description: Controls how close the bust dart approaches the bust point
 contour:
   title: Contour
