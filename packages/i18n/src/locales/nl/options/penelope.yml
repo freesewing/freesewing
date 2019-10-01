@@ -36,14 +36,14 @@ waistBandWidth:
   title: Breedte tailleband
   description: De breedte van de tailleband.
 waistEase:
-  title: waist Ease
-  description: Amount of ease at the waist level.
+  title: overwijdte taille
+  description: Hoeveelheid overwijdte aan de taille.
 waistSideSeamRaise:
-  title: Unused
-  description: Unused.
+  title: Ongebruikt
+  description: Ongebruikt.
 zipperLocation:
-  title: Zipper Location
-  description: The location of the zipper.
+  title: Locatie rits
+  description: De locatie van de rits.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: In de rugnaad
+    sideSeam: In de zijnaad
