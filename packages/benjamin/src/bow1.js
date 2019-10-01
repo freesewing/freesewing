@@ -1,6 +1,5 @@
 export default function(part) {
   let {
-    options,
     Point,
     points,
     Path,
