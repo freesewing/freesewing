@@ -4,13 +4,13 @@ bustDartAngle:
   description: Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst
 bustDartLength:
   title: Lengte busteneep
-  description: Controls how close the bust dart approaches the bust point
+  description: Bepaalt hoe dicht de punt van de busteneep bij het bustepunt komt
 contour:
   title: Contour
-  description: Controls how sharply the extra room for breasts is removed again below the chest
+  description: Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt
 frontDarts:
-  title: Front darts
-  description: Whether to include front darts or not
+  title: Nepen voor
+  description: Of je vooraan nepen wil of niet
 frontDartLength:
-  title: Front dart length
-  description: Controls how close the front dart approaches the bust point
+  title: Lengte nepen voor
+  description: Bepaalt hoe dicht de punt van de voorste neep bij het bustepunt komt
