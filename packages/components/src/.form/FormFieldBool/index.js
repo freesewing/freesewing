@@ -19,14 +19,14 @@ const Bool = props => {
       <FormControlLabel
         control={<Radio color="primary" />}
         value="false"
-        checked={value === 'false' || value === false ? true : false}
+        checked={value === 'true' || value === true || value === 1 ? false : true}
         label={props.labels[0]}
         className="po-list-item"
       />
       <FormControlLabel
         control={<Radio color="primary" />}
         value="true"
-        checked={value === 'true' || value === true ? true : false}
+        checked={value === 'true' || value === true || value === 1 ? true : false}
         label={props.labels[1]}
         className="po-list-item"
       />

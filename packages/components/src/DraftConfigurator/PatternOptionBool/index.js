@@ -1,25 +1,28 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import FormFieldBool from "../../.form/FormFieldBool";
-import OptionPreamble from "../OptionPreamble";
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import FormFieldBool from '../../.form/FormFieldBool'
+import OptionPreamble from '../OptionPreamble'
 
 const PatternOptionBool = props => {
-  const [value, setValue] = useState(
-    props.value === null ? props.dflt : props.value
-  );
-  const [expanded, setExpanded] = useState(false);
+  const [value, setValue] = useState(props.value === null ? props.dflt : props.value)
+  const [expanded, setExpanded] = useState(false)
 
   const update = (name, newValue, evt) => {
-    props.updateValue(props.name, newValue);
-    setValue(newValue);
-  };
+    props.updateValue(props.name, newValue)
+    setValue(newValue)
+  }
 
   const reset = () => {
-    setValue(props.dflt);
-    props.updateValue(props.name, props.dflt);
-  };
+    setValue(props.dflt)
+    props.updateValue(props.name, props.dflt)
+  }
 
-  const toggleExpanded = () => setExpanded(!expanded);
+  const patternReset = () => {
+    setValue(props.patternDflt)
+    props.updateValue(props.name, props.patternDflt)
+  }
+
+  const toggleExpanded = () => setExpanded(!expanded)
 
   let option = (
     <FormFieldBool
@@ -27,26 +30,28 @@ const PatternOptionBool = props => {
       value={value}
       dflt={props.dflt}
       onChange={update}
-      label={"po-bool-" + props.name}
+      label={'po-bool-' + props.name}
       updateValue={update}
       labels={props.labels}
     />
-  );
+  )
   return (
     <li>
       <OptionPreamble
         dflt={props.dflt}
+        patternDflt={props.patternDflt}
         value={value}
         desc={props.desc}
         title={props.title}
-        id={"po-list-" + props.name}
+        id={'po-list-' + props.name}
         displayValue={value ? props.labels[1] : props.labels[0]}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         reset={reset}
+        patternReset={patternReset}
         showHelp={() =>
-          props.raiseEvent("showHelp", {
-            type: "draftSetting",
+          props.raiseEvent('showHelp', {
+            type: 'draftSetting',
             value: props.name
           })
         }
@@ -54,8 +59,8 @@ const PatternOptionBool = props => {
         noDocs={props.noDocs}
       />
     </li>
-  );
-};
+  )
+}
 
 PatternOptionBool.propTypes = {
   raiseEvent: PropTypes.func.isRequired,
@@ -69,6 +74,6 @@ PatternOptionBool.propTypes = {
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,
   labels: PropTypes.array.isRequired
-};
+}
 
-export default PatternOptionBool;
+export default PatternOptionBool

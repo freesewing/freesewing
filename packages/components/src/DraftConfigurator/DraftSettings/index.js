@@ -20,9 +20,8 @@ const DraftSettings = props => {
     else shown.splice(index, 1)
     setExpanded(shown)
   }
-  const getDefault = setting => {
-    if (props.recipe && typeof props.recipe.settings[setting] !== 'undefined')
-      return props.recipe.settings[setting]
+  const getDefault = (setting, recipe = false) => {
+    if (recipe && typeof recipe.settings[setting] !== 'undefined') return recipe.settings[setting]
     switch (setting) {
       case 'sa':
         return 10
@@ -68,7 +67,8 @@ const DraftSettings = props => {
       name: setting,
       labels: labels[setting],
       noDocs: props.noDocs,
-      dflt: getDefault(setting)
+      dflt: getDefault(setting, props.recipe),
+      patternDflt: getDefault(setting)
     }
     childProps.title = <FormattedMessage id={'settings.' + setting + '.title'} />
     childProps.desc = <FormattedMessage id={'settings.' + setting + '.description'} />

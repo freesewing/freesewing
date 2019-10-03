@@ -1,74 +1,90 @@
-import React from "react";
-import PropTypes from "prop-types";
-import IconButton from "@material-ui/core/IconButton";
-import RightIcon from "@material-ui/icons/KeyboardArrowRight";
-import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
-import HelpIcon from "@material-ui/icons/Help";
-import { injectIntl } from "react-intl";
+import React from 'react'
+import PropTypes from 'prop-types'
+import IconButton from '@material-ui/core/IconButton'
+import RightIcon from '@material-ui/icons/KeyboardArrowRight'
+import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
+import HelpIcon from '@material-ui/icons/Help'
+import { injectIntl } from 'react-intl'
 
 const OptionPreamble = props => {
   const styles = {
     container: {
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center"
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center'
     },
     left: {
       flexGrow: 1,
-      margin: "0 0.5rem"
+      margin: '0 0.5rem'
     },
     right: {
-      margin: "0 5px 0 0 ",
-      textAlign: "right"
+      margin: '0 5px 0 0 ',
+      textAlign: 'right'
     }
-  };
+  }
 
   const resetLabel = props.intl.formatMessage({
-    id: "app.restoreDefaults",
-    defaultMessage: " ♻️  "
-  });
+    id: 'app.restoreDefaults',
+    defaultMessage: ' ♻️  '
+  })
+  const resetPatternLabel = props.intl.formatMessage({
+    id: 'app.restorePatternDefaults',
+    defaultMessage: ' ♻️  '
+  })
+  const resetRecipeLabel = props.intl.formatMessage({
+    id: 'app.restoreRecipeDefaults',
+    defaultMessage: ' ♻️  '
+  })
   const docsLabel = props.intl.formatMessage({
-    id: "app.docs",
-    defaultMessage: " 🤔 "
-  });
+    id: 'app.docs',
+    defaultMessage: ' 🤔 '
+  })
 
-  let displayClass = props.value === props.dflt ? "dflt" : "custom";
-  let displayValue = <span className={displayClass}>{props.displayValue}</span>;
-  if (props.displayFormat === "html")
+  let recipe = false
+  if (props.dflt !== props.patternDflt) recipe = true
+  let displayClass = props.value === props.dflt ? 'dflt' : 'custom'
+  if (recipe && props.value === props.patternDflt) displayClass = 'p-dflt'
+  else if (recipe && props.sameButDifferent) displayClass = 'custom'
+  let displayValue = <span className={displayClass}>{props.displayValue}</span>
+
+  if (props.displayFormat === 'html')
     displayValue = (
-      <span
-        className={displayClass}
-        dangerouslySetInnerHTML={{ __html: props.displayValue }}
-      />
-    );
+      <span className={displayClass} dangerouslySetInnerHTML={{ __html: props.displayValue }} />
+    )
   return (
     <React.Fragment>
       <div onClick={props.toggleExpanded} style={styles.container}>
         <div style={styles.left}>
-          <RightIcon
-            className={
-              "icon-col-exp " + (props.expanded ? "expanded" : "collapsed")
-            }
-          />
+          <RightIcon className={'icon-col-exp ' + (props.expanded ? 'expanded' : 'collapsed')} />
           {props.title}
         </div>
         <div style={styles.right}>{displayValue}</div>
       </div>
-      <div
-        className={props.expanded ? "col-exp expanded" : "col-exp collapsed"}
-      >
+      <div className={props.expanded ? 'col-exp expanded' : 'col-exp collapsed'}>
         <div style={styles.container}>
           <div style={styles.left}>
             <p>{props.desc}</p>
           </div>
           <div style={styles.right}>
+            {recipe ? (
+              <IconButton
+                title={resetPatternLabel}
+                aria-label={resetPatternLabel}
+                color="primary"
+                disabled={props.value === props.patternDflt ? true : false}
+                onClick={props.patternReset}
+                className="mini-icon-btn pattern"
+              >
+                <ResetIcon />
+              </IconButton>
+            ) : null}
             <IconButton
-              title={resetLabel}
-              aria-label={resetLabel}
+              title={recipe ? resetRecipeLabel : resetLabel}
+              aria-label={recipe ? resetRecipeLabel : resetLabel}
               color="primary"
-              disabled={props.value === props.dflt ? true : false}
+              disabled={props.value === props.dflt && !props.sameButDifferent ? true : false}
               onClick={props.reset}
-              className="mini-icon-btn"
+              className={'mini-icon-btn' + (recipe ? ' recipe' : '')}
             >
               <ResetIcon />
             </IconButton>
@@ -88,8 +104,8 @@ const OptionPreamble = props => {
         {props.option}
       </div>
     </React.Fragment>
-  );
-};
+  )
+}
 
 OptionPreamble.propTypes = {
   dflt: PropTypes.oneOfType([
@@ -108,10 +124,10 @@ OptionPreamble.propTypes = {
   showHelp: PropTypes.func.isRequired,
   expanded: PropTypes.bool,
   displayFormat: PropTypes.string
-};
+}
 
 OptionPreamble.defaultProps = {
-  displayFormat: "node"
-};
+  displayFormat: 'node'
+}
 
-export default injectIntl(OptionPreamble);
+export default injectIntl(OptionPreamble)

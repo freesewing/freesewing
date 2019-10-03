@@ -20,6 +20,7 @@ const OptionGroup = props => {
     let extraProps = {
       name,
       dflt: optionDefault(name, props.config.options[name], props.recipe),
+      patternDflt: optionDefault(name, props.config.options[name]),
       units: props.units,
       updateValue: props.updateValue,
       raiseEvent: props.raiseEvent,
