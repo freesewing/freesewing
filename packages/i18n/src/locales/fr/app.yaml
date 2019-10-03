@@ -165,6 +165,8 @@ resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
 searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
@@ -265,3 +267,7 @@ cutting: Coupe
 instructions: Instructions
 hide: Hide
 show: Show
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual
