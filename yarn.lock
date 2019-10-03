@@ -1314,148 +1314,148 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/components@file:packages/components":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/core@file:packages/core":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
   dependencies:
     bezier-js "^2.2.13"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/models@file:packages/models":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.0.3"
-    "@freesewing/plugin-dimension" "^2.0.3"
-    "@freesewing/plugin-grainline" "^2.0.3"
-    "@freesewing/plugin-logo" "^2.0.3"
-    "@freesewing/plugin-round" "^2.0.3"
-    "@freesewing/plugin-scalebox" "^2.0.3"
-    "@freesewing/plugin-sprinkle" "^2.0.3"
-    "@freesewing/plugin-title" "^2.0.3"
+    "@freesewing/plugin-cutonfold" "^2.1.0-alpha.0"
+    "@freesewing/plugin-dimension" "^2.1.0-alpha.0"
+    "@freesewing/plugin-grainline" "^2.1.0-alpha.0"
+    "@freesewing/plugin-logo" "^2.1.0-alpha.0"
+    "@freesewing/plugin-round" "^2.1.0-alpha.0"
+    "@freesewing/plugin-scalebox" "^2.1.0-alpha.0"
+    "@freesewing/plugin-sprinkle" "^2.1.0-alpha.0"
+    "@freesewing/plugin-title" "^2.1.0-alpha.0"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -5086,9 +5086,9 @@ before-after-hook@^2.0.0:
   integrity sha512-IWIbu7pMqyw3EAJHzzHbWa85b6oud/yfKYg5rqB5hNE8CeMi3nX+2C2sj0HswfblST86hpVEOAb9x34NZd6P7A==
 
 bezier-js@^2.2.13:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-2.4.0.tgz#8fb65113e01c7d3e443aa9fd66921478befc24a0"
-  integrity sha512-ttwqGL47RtYOoZy10oFJZ1VlEC6w1eJW1xMPBAvEx57cTWgmaJNr/c2ZLMr/O2RD50saR0OaLBIpgyZ7rkHLSw==
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-2.4.4.tgz#2859edc31e1b1c287ba4788dcccd5d23838c4578"
+  integrity sha512-qYC9FBubdTK4VZe0m+lS7lEpf87w1fnm6g2m1FKsnlz+wfNnJy3gjQt4Y5nnI1NrjJrnQqnZt3S6Z5qjhloDNA==
 
 big.js@^3.1.3:
   version "3.2.0"
@@ -6666,10 +6666,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.0.3"
+  version "2.1.0-alpha.0"
   dependencies:
-    "@freesewing/i18n" "^2.0.3"
-    "@freesewing/pattern-info" "^2.0.3"
+    "@freesewing/i18n" "^2.1.0-alpha.0"
+    "@freesewing/pattern-info" "^2.1.0-alpha.0"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -13269,9 +13269,9 @@ mkpath@^1.0.0:
   integrity sha1-67Opd+evHGg65v2hK1Raa6bFhT0=
 
 mocha@^6.1.4:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-6.2.0.tgz#f896b642843445d1bb8bca60eabd9206b8916e56"
-  integrity sha512-qwfFgY+7EKAAUAdv7VYMZQknI7YJSGesxHyhn6qD52DV8UcSZs5XwCifcZGMVIE4a5fbmhvbotxC0DLQ0oKohQ==
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-6.2.1.tgz#da941c99437da9bac412097859ff99543969f94c"
+  integrity sha512-VCcWkLHwk79NYQc8cxhkmI8IigTIhsCwZ6RTxQsqK6go4UvEhzJkYuHm8B2YtlSxcYq2fY+ucr4JBwoD6ci80A==
   dependencies:
     ansi-colors "3.2.3"
     browser-stdout "1.3.1"
@@ -13293,9 +13293,9 @@ mocha@^6.1.4:
     supports-color "6.0.0"
     which "1.3.1"
     wide-align "1.1.3"
-    yargs "13.2.2"
-    yargs-parser "13.0.0"
-    yargs-unparser "1.5.0"
+    yargs "13.3.0"
+    yargs-parser "13.1.1"
+    yargs-unparser "1.6.0"
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -14304,7 +14304,7 @@ os-locale@^2.0.0:
     lcid "^1.0.0"
     mem "^1.1.0"
 
-os-locale@^3.0.0, os-locale@^3.1.0:
+os-locale@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-3.1.0.tgz#a802a6ee17f24c10483ab9935719cef4ed16bf1a"
   integrity sha512-Z8l3R4wYWM40/52Z+S265okfFj8Kt2cC2MKY+xNi3kFs+XGI7WXu/I309QQQYbRW4ijiZ+yxs9pqEhJh0DqW3Q==
@@ -20449,10 +20449,10 @@ yallist@^3.0.0, yallist@^3.0.2, yallist@^3.0.3:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.3.tgz#b4b049e314be545e3ce802236d6cd22cd91c3de9"
   integrity sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
 
-yargs-parser@13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.0.0.tgz#3fc44f3e76a8bdb1cc3602e860108602e5ccde8b"
-  integrity sha512-w2LXjoL8oRdRQN+hOyppuXs+V/fVAYtpcrRxZuF7Kt/Oc+Jr2uAcVntaUTNT6w5ihoWfFDpNY8CPx1QskxZ/pw==
+yargs-parser@13.1.1, yargs-parser@^13.0.0, yargs-parser@^13.1.1:
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.1.1.tgz#d26058532aa06d365fe091f6a1fc06b2f7e5eca0"
+  integrity sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
@@ -20472,14 +20472,6 @@ yargs-parser@^11.1.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^13.0.0, yargs-parser@^13.1.1:
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.1.1.tgz#d26058532aa06d365fe091f6a1fc06b2f7e5eca0"
-  integrity sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
 yargs-parser@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-5.0.0.tgz#275ecf0d7ffe05c77e64e7c86e4cd94bf0e1228a"
@@ -20494,14 +20486,14 @@ yargs-parser@^9.0.2:
   dependencies:
     camelcase "^4.1.0"
 
-yargs-unparser@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/yargs-unparser/-/yargs-unparser-1.5.0.tgz#f2bb2a7e83cbc87bb95c8e572828a06c9add6e0d"
-  integrity sha512-HK25qidFTCVuj/D1VfNiEndpLIeJN78aqgR23nL3y4N0U/91cOAzqfHlF8n2BvoNDcZmJKin3ddNSvOxSr8flw==
+yargs-unparser@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/yargs-unparser/-/yargs-unparser-1.6.0.tgz#ef25c2c769ff6bd09e4b0f9d7c605fb27846ea9f"
+  integrity sha512-W9tKgmSn0DpSatfri0nx52Joq5hVXgeLiqR/5G0sZNDoLZFOr/xjBUDcShCOGNsBnEMNo1KAMBkTej1Hm62HTw==
   dependencies:
     flat "^4.1.0"
-    lodash "^4.17.11"
-    yargs "^12.0.5"
+    lodash "^4.17.15"
+    yargs "^13.3.0"
 
 yargs@12.0.2:
   version "12.0.2"
@@ -20521,22 +20513,21 @@ yargs@12.0.2:
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^10.1.0"
 
-yargs@13.2.2:
-  version "13.2.2"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.2.2.tgz#0c101f580ae95cea7f39d927e7770e3fdc97f993"
-  integrity sha512-WyEoxgyTD3w5XRpAQNYUB9ycVH/PQrToaTXdYXRdOXvEy1l19br+VJsc0vcO8PTGg5ro/l/GY7F/JMEBmI0BxA==
+yargs@13.3.0, yargs@^13.2.2, yargs@^13.2.4, yargs@^13.3.0:
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.0.tgz#4c657a55e07e5f2cf947f8a366567c04a0dedc83"
+  integrity sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
   dependencies:
-    cliui "^4.0.0"
+    cliui "^5.0.0"
     find-up "^3.0.0"
     get-caller-file "^2.0.1"
-    os-locale "^3.1.0"
     require-directory "^2.1.1"
     require-main-filename "^2.0.0"
     set-blocking "^2.0.0"
     string-width "^3.0.0"
     which-module "^2.0.0"
     y18n "^4.0.0"
-    yargs-parser "^13.0.0"
+    yargs-parser "^13.1.1"
 
 yargs@^11.0.0:
   version "11.1.0"
@@ -20556,7 +20547,7 @@ yargs@^11.0.0:
     y18n "^3.2.1"
     yargs-parser "^9.0.2"
 
-yargs@^12.0.1, yargs@^12.0.5:
+yargs@^12.0.1:
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-12.0.5.tgz#05f5997b609647b64f66b81e3b4b10a368e7ad13"
   integrity sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==
@@ -20573,22 +20564,6 @@ yargs@^12.0.1, yargs@^12.0.5:
     which-module "^2.0.0"
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^11.1.1"
-
-yargs@^13.2.2, yargs@^13.2.4, yargs@^13.3.0:
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.0.tgz#4c657a55e07e5f2cf947f8a366567c04a0dedc83"
-  integrity sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
-  dependencies:
-    cliui "^5.0.0"
-    find-up "^3.0.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^3.0.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^13.1.1"
 
 yargs@^7.0.0:
   version "7.1.0"

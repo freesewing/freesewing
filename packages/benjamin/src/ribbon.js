@@ -13,7 +13,7 @@ export default function(part) {
     paperless
   } = part.shorthand()
 
-  if (!options.adjustmentRibbon) {
+  if (options.adjustmentRibbon) {
     part.render = false
     return part
   }
@@ -21,8 +21,10 @@ export default function(part) {
   // Points
   points.bottomLeft = new Point(0, 0.5 * store.get('ribbonWidth'))
   points.topLeft = points.bottomLeft.flipY()
-  // FIXME: How long should this adjustment ribbon be?
-  points.bottomRight = points.bottomLeft.shift(0, measurements.neckCircumference)
+  points.bottomRight = points.bottomLeft.shift(
+    0,
+    measurements.neckCircumference * (1 + options.collarEase)
+  )
   points.topRight = points.bottomRight.flipY()
   points.titleAnchor = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
 
@@ -40,9 +42,9 @@ export default function(part) {
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     macro('title', {
       at: points.titleAnchor,
-      nr: 4,
+      nr: 2,
       title: 'ribbon',
-      scale: 0.5
+      scale: 0.3
     })
 
     if (paperless) {

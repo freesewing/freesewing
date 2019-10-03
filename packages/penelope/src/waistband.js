@@ -14,6 +14,11 @@ export default function(part) {
     macro
   } = part.shorthand()
 
+  if (!options.waistBand) {
+    part.render = false
+    return part
+  }
+
   let waistEase = options.waistEase
   let waist = measurements.naturalWaist
   waist += waistEase
@@ -50,7 +55,9 @@ export default function(part) {
     macro('title', {
       nr: 3,
       at: points.titleAnchor,
-      title: 'waistband'
+      title: 'waistband',
+      rotation: 90,
+      scale: 0.75
     })
 
     if (sa) {
