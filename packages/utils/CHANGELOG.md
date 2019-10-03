@@ -6,6 +6,10 @@
 ### Added
 
  - Added backend methods for administration
+
+### Fixed
+
+ - Fixed an issue where optionDefault was not handling list options correctly
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package utils

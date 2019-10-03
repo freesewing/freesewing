@@ -6,6 +6,7 @@
 ### Changed
 
  - Added Penelope and Waralee linedrawings
+ - Changed animation of the Spinner component
 
 ### Fixed
 

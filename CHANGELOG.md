@@ -9,6 +9,7 @@
 #### Changed
 
  - Added Penelope and Waralee linedrawings
+ - Changed animation of the Spinner component
 
 #### Fixed
 
@@ -20,6 +21,16 @@
 #### Changed
 
  - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
+
+### css-theme
+
+#### Changed
+
+ - Made tweaks to the main/sidebar layout
+
+#### Fixed
+
+ - Reduced the sidebar height by 64px to take navbar into account
 
 ### i18n
 
@@ -59,6 +70,10 @@
 #### Added
 
  - Added backend methods for administration
+
+#### Fixed
+
+ - Fixed an issue where optionDefault was not handling list options correctly
 
 ### waralee
 

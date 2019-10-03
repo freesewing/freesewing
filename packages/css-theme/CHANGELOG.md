@@ -3,9 +3,13 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package css-theme
+### Changed
 
+ - Made tweaks to the main/sidebar layout
 
+### Fixed
+
+ - Reduced the sidebar height by 64px to take navbar into account
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package css-theme
