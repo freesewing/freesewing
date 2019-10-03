@@ -165,6 +165,8 @@ resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
 restoreDefaults: Standaardwaarden herstellen
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
 searchLanguageMsg: Elke taal heeft een eigen zoekindex. Aangezien niet al onze inhoud is vertaald, vindt u mogelijk meer resultaten via een Engelse zoekopdracht.
@@ -247,7 +249,7 @@ noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
 noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
 useRecipeModel: "Gebruik het model van het recept"
 createReplica: Creëer een replica
-showDetails: Details tonen
+showDetails: Toon details
 clickBelowToLogOut: Klik hieronder om uit te loggen
 compare: Vergelijk
 saveRecipe: Recept opslaan
@@ -265,3 +267,7 @@ cutting: Knippen
 instructions: Instructies
 hide: Verberg
 show: Toon
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual

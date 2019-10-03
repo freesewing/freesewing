@@ -165,6 +165,8 @@ resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
 searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
@@ -265,3 +267,7 @@ cutting: Cutting
 instructions: Instructions
 hide: Hide
 show: Show
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual
