@@ -59,18 +59,18 @@ collarFlare:
   description: Die Ausstellung der Kragenspitzen.
 collarGap:
   title: Kragenlücke
-  description: Der Spalt zwischen den beiden Kragen endet.
+  description: Der Spalt zwischen den beiden Kragenenden.
 collarRoll:
   title: Kragenrolle
-  description: Der Betrag, um den der obere Kragen größer ist als der Unterspanzer.
+  description: Der Betrag, um den der Oberragen größer ist als der Unterkragen.
 collarStandBend:
-  title: Kragenstandbiegung
-  description: Die Biegung des Kragensstand.
+  title: Kragenstegbiegung
+  description: Die Biegung des Kragensstegs.
 collarStandCurve:
-  title: Kragenstandkrümmung
-  description: Die Krümmung des Kragensstand.
+  title: Kragenstegkrümmung
+  description: Die Krümmung des Kragensstegs.
 collarStandWidth:
-  title: Kragenstandbreite
+  title: Kragenstegbreite
   description: Breite des Kragenständers.
 cuffButtonRows:
   title: Manschettenknopfreihen
@@ -80,7 +80,7 @@ cuffButtonRows:
     '2': Doppelte Manschettenknopfreihe
 cuffDrape:
   title: Manschette drapieren
-  description: Der Betrag, um den die Hülse breiter ist als die Manschette, an der sie verbunden sind.
+  description: Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden.
 cuffLength:
   title: Manschettenlänge
   description: die Länge der Manschetten
@@ -124,7 +124,7 @@ splitYoke:
   description: Ob ein Split-Joch erstellt werden soll.
 waistEase:
   title: Taille erleichtert
-  description: Das Maß an Leichtigkeit an Ihrer (natürlichen) Taille.
+  description: Der Betrag, der an Ihrer (natürlichen) Taille zugegeben wird.
 yokeDart:
-  title: Jochpfeil
-  description: Gibt an, ob ein Pfeil an den Seiten des Jochs angebracht werden soll, um einen runderen Rücken zu passen.
+  title: Jochabnäher
+  description: Gibt an, ob ein Abnäher an den Seiten des Jochs angebracht werden soll, um an einen runderen Rücken zu passen.
