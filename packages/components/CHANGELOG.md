@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package components
+
+
+## 2.1.0 (2019-10-06)
+
 ### Added
 
  - Added support for restoring recipe and pattern defaults in DraftConfigurator

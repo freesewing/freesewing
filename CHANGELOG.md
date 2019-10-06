@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+
+## 2.1.0 (2019-10-06)
+
 ### components
 
 #### Added
@@ -36,6 +39,8 @@
 #### Fixed
 
  - Reduced the sidebar height by 64px to take navbar into account
+ - Fixed blockquote width on XS screens
+ - Made sidebar wider
 
 ### i18n
 

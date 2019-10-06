@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package waralee
+
+
+## 2.1.0 (2019-10-06)
+
 ### Added
 
  - Added the Waralee wrap Pants pattern by @woutervdub
