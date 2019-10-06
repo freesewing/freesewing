@@ -49,13 +49,13 @@ blockquote.warning {
     border-left: 0;
     border-right: 0;
     border-radius: 0;
+    width: 100%;
     svg.icon {
       left: calc(50% - 18px);
       top: -18px;
     }
   }
 }
-
 
 .theme-wrapper.dark {
   blockquote {
