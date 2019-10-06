@@ -165,6 +165,8 @@ resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
 restoreDefaults: Standaardwaarden herstellen
+restorePatternDefaults: Standaardwaarden patroon herstellen
+restoreRecipeDefaults: Standaardwaarden recept herstellen
 saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
 searchLanguageMsg: Elke taal heeft een eigen zoekindex. Aangezien niet al onze inhoud is vertaald, vindt u mogelijk meer resultaten via een Engelse zoekopdracht.
@@ -263,3 +265,9 @@ whatYouNeed: Wat je nodig hebt
 fabricOptions: Stofkeuze
 cutting: Knippen
 instructions: Instructies
+hide: Verberg
+show: Toon
+oneMomentPlease: Een momentje alsjeblieft
+loadingMagic: De magie is aan het laden
+estimate: Schatting
+actual: Feitelijk

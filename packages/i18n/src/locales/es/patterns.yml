@@ -35,6 +35,9 @@ hugo:
 jaeger:
   description: Jeager es una blazer informal con dos botones y bolsillos estilo parche.
   title: Jaeger jacket
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy is an adaptable circle skirt pattern
   title: Sandy circle skirt
@@ -44,6 +47,9 @@ shin:
 simon:
   description: Simon es un patrón de camisa de hombre con múltiples opciones.
   title: Simon shirt
+simone:
+  description: Simone is simon, adapted for breasts
+  title: Simone shirt
 sven:
   description: Sven es una sudadera de líneas sencillas.
   title: Sven sweatshirt
@@ -59,3 +65,7 @@ trayvon:
 wahid:
   description: Wahid es el clásico chaleco entallado.
   title: Wahid waistcoat
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+

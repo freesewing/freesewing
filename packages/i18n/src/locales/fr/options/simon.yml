@@ -1,7 +1,26 @@
 ---
+backDarts:
+  tile: Back darts
+  description: Whether or not to include back darts
+  options:
+    auto: Automatic
+    always: Always
+    never: Never
+backDartShaping:
+  title: Back dart shaping
+  description: The amount of shaping that is done by the back darts
 barrelCuffNarrowButton:
   title: Bouton de manche étroit
   description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
+boxPleat:
+  title: Box pleat
+  description: Whether to include a box pleat at the back or not
+boxPleatWidth:
+  title: Box pleat width
+  description: The total widh of the box pleat
+boxPleatFold:
+  title: Box pleat fold
+  description: The amount by with the box pleat folds inwards
 buttonPlacketStyle:
   title: Style de patte de boutonnage
   description: Style de la patte de boutonnage

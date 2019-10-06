@@ -165,6 +165,8 @@ resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
 restoreDefaults: Restaurar valores por defecto
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
 searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
@@ -263,3 +265,9 @@ whatYouNeed: What you need
 fabricOptions: Fabric options
 cutting: Cutting
 instructions: Instructions
+hide: Hide
+show: Show
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual

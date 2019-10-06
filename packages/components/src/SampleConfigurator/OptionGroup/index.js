@@ -1,47 +1,54 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { FormattedMessage } from "react-intl";
-import { injectIntl } from "react-intl";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { FormattedMessage } from 'react-intl'
+import { injectIntl } from 'react-intl'
 
 const OptionGroup = props => {
   return (
     <React.Fragment>
       {props.options.map(name => {
-        let output = [];
-        if (typeof name === "object") {
+        let output = []
+        if (typeof name === 'object') {
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
-              <h5 key={subGroup + "-title"} className="subheading">
-                <FormattedMessage id={"optiongroups." + subGroup} />
+              <h5 key={subGroup + '-title'} className="subheading">
+                <FormattedMessage id={'optiongroups.' + subGroup} />
               </h5>
-            );
-            let children = [];
-            for (let option of name[subGroup]) children.push(<p>{option}</p>);
-            output.push(<ul style={{ paddingLeft: "1rem" }}>{children}</ul>);
+            )
+            let children = []
+            for (let option of name[subGroup])
+              children.push(
+                <li>
+                  <a href="#logo" onClick={() => props.sampleOption(option)}>
+                    <FormattedMessage
+                      id={'options.' + props.config.name + '.' + option + '.title'}
+                    />
+                  </a>
+                </li>
+              )
+            output.push(<ul style={{ paddingLeft: '1rem' }}>{children}</ul>)
           }
         } else
           output.push(
             <li>
               <a href="#logo" onClick={() => props.sampleOption(name)}>
-                <FormattedMessage
-                  id={"options." + props.config.name + "." + name + ".title"}
-                />
+                <FormattedMessage id={'options.' + props.config.name + '.' + name + '.title'} />
               </a>
             </li>
-          );
+          )
 
-        return output;
+        return output
       })}
     </React.Fragment>
-  );
-};
+  )
+}
 
 OptionGroup.propTypes = {
   config: PropTypes.object.isRequired,
   options: PropTypes.array.isRequired
-};
+}
 
-OptionGroup.defaultProps = {};
+OptionGroup.defaultProps = {}
 
-export default injectIntl(OptionGroup);
+export default injectIntl(OptionGroup)

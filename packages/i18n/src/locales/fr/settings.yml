@@ -1,4 +1,7 @@
 ---
+advanced:
+  title: Expert mode
+  description: Controls whether or not to display advanced settings and pattern options
 paperless:
   title: Sans papier
   description: Ébauche un patron comportant toutes les dimensions incluses de façon à ce que vous puissiez le transférer sur du tissu ou un autre médium sans avoir à l'imprimer

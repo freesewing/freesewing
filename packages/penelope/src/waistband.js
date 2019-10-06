@@ -1,0 +1,93 @@
+export default function(part) {
+  let {
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro
+  } = part.shorthand()
+
+  if (!options.waistBand) {
+    part.render = false
+    return part
+  }
+
+  let waistEase = options.waistEase
+  let waist = measurements.naturalWaist
+  waist += waistEase
+
+  points.TL = new Point(0, 0)
+  points.BL = new Point(0, waist / 2 + options.waistBandOverlap)
+  points.TR = new Point(options.waistBandWidth, 0)
+  points.BR = new Point(options.waistBandWidth, waist / 2 + options.waistBandOverlap)
+
+  points.titleAnchor = new Point(options.waistBandWidth / 2, waist / 6)
+  points.logoAnchor = new Point(options.waistBandWidth / 2, waist / 3)
+
+  paths.outline = new Path()
+    .move(points.TL)
+    .line(points.BL)
+    .line(points.BR)
+    .line(points.TR)
+    .line(points.TL)
+    .close()
+    .attr('class', 'fabric')
+
+  // Complete?
+  if (complete) {
+    macro('cutonfold', {
+      from: points.TR,
+      to: points.TL,
+      margin: 15,
+      offset: 15,
+      grainline: true
+    })
+
+    snippets.logo = new Snippet('logo', points.logoAnchor)
+
+    macro('title', {
+      nr: 3,
+      at: points.titleAnchor,
+      title: 'waistband',
+      rotation: 90,
+      scale: 0.75
+    })
+
+    if (sa) {
+      paths.sa = new Path()
+        .move(points.TL)
+        .join(
+          new Path()
+            .move(points.TL)
+            .line(points.BL)
+            .line(points.BR)
+            .line(points.TR)
+            .offset(sa)
+        )
+        .line(points.TR)
+        .attr('class', 'fabric sa')
+    }
+  }
+
+  if (paperless) {
+    macro('vd', {
+      from: points.TL,
+      to: points.BL,
+      x: points.TL.x + options.paperlessOffset
+    })
+    macro('hd', {
+      from: points.BL,
+      to: points.BR,
+      y: points.BR.y - options.paperlessOffset
+    })
+  }
+
+  return part
+}

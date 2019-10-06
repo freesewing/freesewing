@@ -6,6 +6,11 @@
 **Note:** Version bump only for package core
 
 
+## 2.1.0 (2019-10-06)
+
+### Changed
+
+ - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package core

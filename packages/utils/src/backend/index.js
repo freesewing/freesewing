@@ -19,6 +19,7 @@ function useBackend(baseURL, timeout = 10000) {
   backend.signup = (email, password, language) => api.post('/signup', { email, password, language }) // Signup
   backend.confirm = confirmId => api.post('/account', { id: confirmId }) // Confirm
   backend.createAccount = (confirmId, consent) => api.post('/account', { id: confirmId, consent }) // Create account
+  backend.resendActivationEmail = (email, language) => api.post('/resend', { email, language }) // Re-send activation email
 
   // Other non-authenticated calls
   backend.login = (username, password) => api.post('/login', { username, password }) // Login
@@ -48,6 +49,13 @@ function useBackend(baseURL, timeout = 10000) {
   backend.createRecipe = (data, token) => api.post('/recipes', data, auth(token)) // Create recipe
   backend.removeRecipe = (handle, token) => api.delete('/recipes/' + handle, auth(token)) // Remove recipe
   backend.saveRecipe = (handle, data, token) => api.put('/recipes/' + handle, data, auth(token)) // Update recipe
+
+  // Admin
+  backend.adminSearch = (query, token) => api.post('/admin/search', { query }, auth(token)) // Search users as admin
+  backend.adminSetPatronStatus = (data, token) => api.put('/admin/patron', data, auth(token)) // Set patron status for a user
+  backend.adminSetRole = (data, token) => api.put('/admin/role', data, auth(token)) // Set role for a user
+  backend.adminUnfreeze = (data, token) => api.put('/admin/unfreeze', data, auth(token)) // Unfreeze a user account
+  backend.adminImpersonate = (data, token) => api.post('/admin/impersonate', data, auth(token)) // Impersonate a user
 
   return backend
 }

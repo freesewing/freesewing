@@ -24,7 +24,7 @@ export default {
       }
       let points = this.points
       so = {
-        offset: 50,
+        offset: 15,
         margin: 5,
         prefix: '',
         ...so

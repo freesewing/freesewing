@@ -165,6 +165,8 @@ resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
 restoreDefaults: Restaurer les valeurs par défaut
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
 searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
@@ -257,9 +259,15 @@ seeYouLaterUser: À plus tard {user}
 exportForPrinting: Exporter pour l'impression
 exportForEditing: Exporter pour édition
 exportRecipe: Exporter la recette
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
+startWithNeckTitle: Commencer par le tour de cou
+startWithNeckDescription: En se basant sur votre tour de cou, nous pouvons vous aider à repérer des erreurs dans vos mesures.
+whatYouNeed: Ce dont vous avez besoin
+fabricOptions: Options de tissu
+cutting: Coupe
 instructions: Instructions
+hide: Hide
+show: Show
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual

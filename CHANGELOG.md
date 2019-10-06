@@ -5,6 +5,94 @@
 ## Unreleased
 
 
+## 2.1.0 (2019-10-06)
+
+### components
+
+#### Added
+
+ - Added support for restoring recipe and pattern defaults in DraftConfigurator
+
+#### Changed
+
+ - Added Penelope and Waralee linedrawings
+ - Changed animation of the Spinner component
+
+#### Fixed
+
+ - Fixed display of nested option in SampleConfigurator
+ - Fixed conflicting key values in React components
+ - Fixed issue with display of list options in Draftconfigurator
+
+### core
+
+#### Changed
+
+ - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
+
+### css-theme
+
+#### Changed
+
+ - Made tweaks to the main/sidebar layout
+
+#### Fixed
+
+ - Reduced the sidebar height by 64px to take navbar into account
+ - Fixed blockquote width on XS screens
+ - Made sidebar wider
+
+### i18n
+
+#### Added
+
+ - Added translations for Penelope, Waralee, and Simone
+
+### penelope
+
+#### Added
+
+ - Added the Penelope Pencil Skirt pattern by @woutervdub
+
+### simon
+
+#### Changed
+
+ - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
+ - Added the `backDarts` option to control the inclusion of back darts
+ - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+ - Changed the defaults to slightly reduce the ease and adapt the sleevecap
+
+#### Fixed
+
+ - Fixed an issue where the store wasn't properly initialized causing hips and waist ease to be set incorrectly
+ - Added a missing paperless dimension for the waist
+ - Fixed an issue where the split yoke option was not taken into account correctly
+
+### simone
+
+#### Added
+
+ - Added the Simone shirt pattern
+
+### utils
+
+#### Added
+
+ - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
+
+#### Fixed
+
+ - Fixed an issue where optionDefault was not handling list options correctly
+
+### waralee
+
+#### Added
+
+ - Added the Waralee wrap Pants pattern by @woutervdub
+
+
 ## 2.0.4 (2019-09-27)
 
 ### carlton
@@ -48,7 +136,7 @@
 
 #### Fixed
 
- - Fix measurementDiffers to pass breasts parameter to necstimate
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
 ## 2.0.2 (2019-09-06)

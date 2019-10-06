@@ -6,7 +6,6 @@ import DraftSettings from './DraftSettings'
 
 const DraftConfigurator = props => {
   const [expanded, setExpanded] = useState([])
-
   return (
     <ul className="config l1">
       <li>

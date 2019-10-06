@@ -35,16 +35,17 @@ export default part => {
   points.hips = points.hips.shift(180, store.get('hipsReduction') / 4)
   points.hem = points.hem.shift(180, store.get('hipsReduction') / 4)
 
-  // Waist shaping
   let reduce = store.get('waistReduction')
-  if (reduce / 4 > options.minimalDartShaping) {
+  if (store.get('backDarts')) {
     // Add darts in the back
-    points.waist = points.waist.shift(180, reduce / 8)
+    let darts = (reduce * options.backDartShaping) / 4
+    let nonDarts = (reduce * (1 - options.backDartShaping)) / 4
+    points.waist = points.waist.shift(180, nonDarts)
     points.dartCenter = points.cbWaist.shiftFractionTowards(points.waist, 0.6)
     points.dartTop = points.dartCenter.shift(90, points.armhole.dy(points.waist) * 0.75)
     points.dartBottom = points.dartCenter.shift(-90, measurements.naturalWaistToHip * 0.75)
-    points.dartCenterIn = points.dartCenter.shift(180, reduce / 8)
-    points.dartCenterOut = points.dartCenter.shift(0, reduce / 8)
+    points.dartCenterIn = points.dartCenter.shift(180, darts)
+    points.dartCenterOut = points.dartCenter.shift(0, darts)
     points.dartCenterInCp1 = points.dartCenterIn.shift(
       90,
       points.dartTop.dy(points.dartCenter) * 0.2
@@ -76,6 +77,29 @@ export default part => {
   points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip * 0.5)
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
+
+  // Cut off at yoke
+  points.cbYoke = new Point(0, points.armholePitch.y)
+
+  // Box pleat
+  if (options.boxPleat) {
+    points.boxPleatLeft = points.cbYoke.shift(0, options.boxPleatWidth / 2)
+    points.boxPleatMid = points.boxPleatLeft.shift(0, options.boxPleatFold)
+    points.boxPleatRight = points.boxPleatMid.shift(0, options.boxPleatFold)
+    points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
+    points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
+    points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
+    for (let p of [
+      'armholePitch',
+      'armholePitchCp1',
+      'armholeHollowCp2',
+      'armholeHollow',
+      'armholeHollowCp1',
+      'armholeCp2',
+      'armhole'
+    ])
+      points[p] = points[p].shift(0, options.boxPleatFold * 2)
+  }
 
   // Yoke dart
   paths.armhole = new Path()
@@ -109,8 +133,12 @@ export default part => {
     )
   }
 
-  // Cut off at yoke
-  points.cbYoke = new Point(0, points.armholePitch.y)
+  // Never make the hips more narrow than the waist because that looks silly
+  //if (points.hem.x < points.waist.x) {
+  //  points.hem.x = points.waist.x
+  //  points.hips.x = points.waist.x
+  //  points.hipsCp2.x = points.waist.x
+  //}
 
   // Draft hem
   switch (options.hemStyle) {
@@ -181,6 +209,16 @@ export default part => {
     macro('title', { at: points.title, nr: 3, title: 'back' })
     points.logo = points.title.shift(-90, 70)
     snippets.logo = new Snippet('logo', points.logo)
+    if (options.boxPleat) {
+      paths.boxPleat = new Path()
+        .move(points.boxPleatLeft)
+        .line(points.boxPleatLeftBottom)
+        .move(points.boxPleatMid)
+        .line(points.boxPleatMidBottom)
+        .move(points.boxPleatRight)
+        .line(points.boxPleatRightBottom)
+        .attr('class', 'fabric stroke-sm dashed')
+    }
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
@@ -202,7 +240,7 @@ export default part => {
 
   // Paperless?
   if (paperless) {
-    if (reduce / 4 > options.minimalDartShaping) {
+    if (store.get('backDarts')) {
       macro('vd', {
         from: points.dartBottom,
         to: points.dartCenterIn,

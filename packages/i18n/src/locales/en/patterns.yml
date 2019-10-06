@@ -34,6 +34,9 @@ hugo:
 jaeger:
   description: Jeager is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
+penelope:
+  description: Penelope is a pencil skirt with or without a vent in the back.
+  title: Penelope pencil skirt
 sandy:
   description: Sandy is an adaptable circle skirt pattern
   title: Sandy circle skirt
@@ -43,6 +46,9 @@ shin:
 simon:
   description: Simon is a highly adaptable shirt pattern for men.
   title: Simon shirt
+simone:
+  description: Simone is simon, adapted for breasts
+  title: Simone shirt
 sven:
   description: Sven is a straightforward sweater.
   title: Sven sweatshirt
@@ -58,3 +64,7 @@ trayvon:
 wahid:
   description: Wahid is a classic fitted waistcoat.
   title: Wahid waistcoat
+waralee:
+  description: Waralee are wrap pants
+  title: Waralee wrap pants
+

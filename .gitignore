@@ -46,6 +46,8 @@ packages/utils/tiler
 packages/utils/validateEmail
 packages/utils/validateTld
 
+packages/*/example/yarn.lock
+
 # dependencies
 node_modules
 
@@ -69,3 +71,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 packages/core/.nyc_output
+packages/i18n/sort.sh
+packages/create-freesewing-pattern/index.js
+packages/create-freesewing-pattern/lib/cli.js
+.gitignore
+scripts/taskrunner.sh
+scripts/verdaccio.sh

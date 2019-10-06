@@ -1,4 +1,7 @@
 ---
+advanced:
+  title: Expert modus
+  description: Bepaalt of de geavanceerde patroonopties wel of niet getoond worden
 paperless:
   title: Papierloos
   description: Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken

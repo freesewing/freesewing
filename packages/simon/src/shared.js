@@ -1,7 +1,5 @@
 export const calculateReduction = function(part) {
   let { store, measurements, options } = part.shorthand()
-  if (store.get('reduction') === true) return
-
   let chest = measurements.chestCircumference * (1 + options.chestEase)
   let waist = measurements.naturalWaist * (1 + options.waistEase)
   let hips = measurements.hipsCircumference * (1 + options.hipsEase)
@@ -10,10 +8,21 @@ export const calculateReduction = function(part) {
 
   // If your waist > chest, this pattern is not going to work for you as-is.
   if (waistReduction < 0) waistReduction = 0
-  if (hipsReduction < 0) hipsReduction = 0
+  // Never make the hips smaller than the waist. That just looks silly
+  if (waistReduction < hipsReduction) hipsReduction = waistReduction
   store.set('waistReduction', waistReduction)
   store.set('hipsReduction', hipsReduction)
   store.set('reduction', true)
+  store.set('chest', chest)
+  store.set('waist', waist)
+  store.set('hips', hips)
+  // Figure out whether to include back darts or not
+  if (
+    (options.backDarts === 'never' || waistReduction <= hipsReduction) &&
+    options.backDarts !== 'always'
+  )
+    store.set('backDarts', false)
+  else store.set('backDarts', true)
 }
 
 export const addButtons = function(part, origin = 'cfNeck', snippet = 'button') {
@@ -235,6 +244,10 @@ export const frontDimensions = (part, side = 'left') => {
       from: points.hips,
       to: points.armhole,
       x: points.armhole.x + (30 + sa * 2) * factor
+    })
+    macro('ld', {
+      from: points.cfWaist,
+      to: points.waist
     })
     if (options.hemStyle === 'baseball') {
       macro('vd', {

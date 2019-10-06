@@ -6,6 +6,22 @@
 **Note:** Version bump only for package components
 
 
+## 2.1.0 (2019-10-06)
+
+### Added
+
+ - Added support for restoring recipe and pattern defaults in DraftConfigurator
+
+### Changed
+
+ - Added Penelope and Waralee linedrawings
+ - Changed animation of the Spinner component
+
+### Fixed
+
+ - Fixed display of nested option in SampleConfigurator
+ - Fixed conflicting key values in React components
+ - Fixed issue with display of list options in Draftconfigurator
 ## 2.0.4 (2019-09-27)
 
 ### Added

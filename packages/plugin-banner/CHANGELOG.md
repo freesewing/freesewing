@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-banner
 
 
+## 2.1.0 (2019-10-06)
+
+**Note:** Version bump only for package plugin-banner
+
+
 ## 2.0.4 (2019-09-27)
 
 **Note:** Version bump only for package plugin-banner

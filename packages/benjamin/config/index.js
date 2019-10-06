@@ -10,7 +10,7 @@ export default {
   difficulty: 3,
   tags: ['top', 'basics'],
   optionGroups: {
-    fit: ['collarEase', 'adjustmentRibbon', 'bandLength'],
+    fit: ['collarEase', 'adjustmentRibbon'],
     style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle']
   },
   measurements: ['neckCircumference'],
@@ -23,20 +23,16 @@ export default {
   hide: ['base'],
   parts: ['ribbon'],
   options: {
-    transitionLength: 0.7, // 70% of bandLength
-    bandLength: {
-      pct: 17,
-      min: 15,
-      max: 20
-    },
+    transitionLength: 2, //Twice the knot
+    bandLength: 0.17,
     ribbonWidth: {
       pct: 6,
-      min: 4,
+      min: 5,
       max: 8
     },
     tipWidth: {
       pct: 15,
-      min: 10,
+      min: 0,
       max: 20
     },
     knotWidth: {
@@ -62,6 +58,9 @@ export default {
       dflt: 'straight',
       list: ['straight', 'pointed', 'rounded']
     },
-    adjustmentRibbon: { bool: false }
+    adjustmentRibbon: {
+      bool: false
+    },
+    adjustmentRibbonWidth: 20
   }
 }

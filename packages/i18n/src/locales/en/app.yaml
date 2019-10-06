@@ -159,11 +159,13 @@ relatedLinks: Related links
 remove: Remove
 reportThisOnGithub: Report this on GitHub
 requiredMeasurements: Required measurements
-resendActivationEmailMessage: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message.'
+resendActivationEmailMessage: 'Fill in the E-mail address you signed up with, and we''ll send you a new confirmation message.'
 resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
 reset: Reset
 restoreDefaults: Restore defaults
+restorePatternDefaults: Restore pattern defaults
+restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Save draft to your account
 save: Save
 searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
@@ -264,3 +266,7 @@ cutting: Cutting
 instructions: Instructions
 hide: Hide
 show: Show
+oneMomentPlease: One moment please
+loadingMagic: We are loading the magic
+estimate: Estimate
+actual: Actual

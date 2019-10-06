@@ -5,14 +5,14 @@
 </p>
 <p align="center">An open source platform for made-to-measure sewing patterns</p>
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/patterns"
-  title="@freesewing/patterns on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/patterns.svg"
-  alt="@freesewing/patterns on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/simone"
+  title="@freesewing/simone on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/simone.svg"
+  alt="@freesewing/simone on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/patterns.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/simone.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -20,10 +20,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Apatterns"
-  title="Open issues tagged pkg:patterns"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:patterns.svg?label=Issues"
-  alt="Open issues tagged pkg:patterns"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Asimone"
+  title="Open issues tagged pkg:simone"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:simone.svg?label=Issues"
+  alt="Open issues tagged pkg:simone"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
   title="Follow @freesewing_org on Twitter"
@@ -46,59 +46,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/patterns
+# @freesewing/simone
 
-An umbrella package for all FreeSewing patterns
-
-
-## Included patterns
-
-### Blocks
-
-Blocks or slopers are basic patterns shapes that you can extend into fully detailed patterns.
-
- - [brian](https://github.com/freesewing/brian) : A basic body block for menswear, and the basis for many of our menswear patterns. 
- - [bent](https://github.com/freesewing/bent) : A version of [brian](https://github.com/freesewing/brian) with a two-part sleeve, and the and the basis of our menswear coat and jacket patterns. 
-
-### Menswear
-
- - [aaron](https://github.com/freesewing/aaron) : A tank top or A-shirt
- - [bruce](https://github.com/freesewing/bruce) : Boxer briefs
- - [carlton](https://github.com/freesewing/carlton) : A long coat, perfect for Sherlock Holmes cosplay
- - [huey](https://github.com/freesewing/huey) : A zip-up hoodie
- - [hugo](https://github.com/freesewing/hugo) : A hooded sweatshirt with raglan sleeves
- - [jaeger](https://github.com/freesewing/jaeger) : A sportscoat
- - [simon](https://github.com/freesewing/simon) : A versatile button-down shirt
- - [sven](https://github.com/freesewing/sven) : A straightforward sweater
- - [wahid](https://github.com/freesewing/wahid) : A classic waistcoat
- 
-
-### Womenswear
-
- - [cathrin](https://github.com/freesewing/cathrin) : An underbust corset or waist trainer
- - [tamiko](https://github.com/freesewing/tamiko) : A zero-waste top
-
-### Accessories
- 
- - [trayvon](https://github.com/freesewing/trayvon) : A (neck) tie
-
-> #### Note: menswear/womenswear has nothing to do with gender
->
-> Freesewing is gender-neutral. When we use the terms **menswear** or **womenswear**
-> we are not talking about clothes for men or women. It is merely a category of clothing
-> much like **accessories** or **shoes** are categories.
->
-> The category gives you an idea what to expect, and is there to help you find things.
-> It is not a limitation, or even a suggestion, of what you can or should wear or make.
->
-> Wear whatever you want, and be proud of the things you make.
-
-## Usage
-
-This package has 2 exports:
-
- - `patterns` : (the default export) An object holding pattern constructors
- - `patternList` : An array of pattern names
+A FreeSewing pattern for a button down shirt (Simone &#x3D; Simon for people with breasts)
 
 
 

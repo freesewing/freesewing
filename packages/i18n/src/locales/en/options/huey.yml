@@ -1,6 +1,6 @@
 pocket:
   title: Pocket
-  description: Whether to include a pocket or not
+  description: Whether to include a front pocket or not
 
 pocketHeight:
   title: Pocket height
