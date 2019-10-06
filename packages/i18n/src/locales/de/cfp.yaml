@@ -1,9 +1,9 @@
 ---
-author: Author
-githubRepo: GitHub repository
-packageManager: Package manager
-patternName: Pattern name
-patternType: Pattern type
+author: Autor
+githubRepo: GitHub-Repository
+packageManager: Paket-Manager
+patternName: Schnittmuster-Name
+patternType: Schnittmuster-Art
 patternCreated: Your pattern skeleton has been created at
 runTheseCommands: To get started, run these two commands
 startRollup: In one terminal, start the rollup bundler in watch mode
