@@ -39,7 +39,7 @@ waistEase:
   title: Taillenkomfort
   description: Amount of ease at the waist level.
 zipperLocation:
-  title: Zipper location
+  title: Platzierung des Reissverschlusses
   description: The location of the zipper.
   options:
     backSeam: At the back seam
