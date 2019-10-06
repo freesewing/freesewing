@@ -122,7 +122,7 @@ newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
 newPattern: 'Neu {pattern}'
-newPatternForModel: 'New {pattern} for {model}'
+newPatternForModel: 'Neues {pattern} für {model}'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
@@ -165,8 +165,8 @@ resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
-restorePatternDefaults: Restore pattern defaults
-restoreRecipeDefaults: Restore recipe defaults
+restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
+restoreRecipeDefaults: Standardwerte für Rezept wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
 searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
@@ -232,7 +232,7 @@ getStarted: Jetzt loslegen
 apiReference: API-Referenz
 tutorial: Anleitung
 editThisPage: Diese Seite bearbeiten
-loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+loginRequiredRedirect: 'Sie wurden auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
 recipes: Rezepte
 various: Verschiedenes
 sewing: Nähen
@@ -247,12 +247,12 @@ noModel: Du hast noch keine Modelle (noch). FreeSewing erzeugt maßgeschneiderte
 noModel2: Als erstes erstellen Sie bitte ein Modell mit Ihren Massen oder den Massen der Person, für die Sie ein Schnittmuster erstellen möchten.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-useRecipeModel: "Use the recipe's model"
-createReplica: Create a replica
-showDetails: Show details
-clickBelowToLogOut: Click below to log out
-compare: Compare
-saveRecipe: Save recipe
+useRecipeModel: "Rezeptmodell verwenden"
+createReplica: Duplikat erstellen
+showDetails: Details anzeigen
+clickBelowToLogOut: Klicken Sie unten sich abzumelden
+compare: Vergleichen
+saveRecipe: Rezept speichern
 exportPattern: Export pattern
 recreate: Recreate
 seeYouLaterUser: See you later {user}
