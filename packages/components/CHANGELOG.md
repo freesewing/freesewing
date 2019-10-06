@@ -3,6 +3,10 @@
 
 ## Unreleased
 
+### Added
+
+ - Added support for restoring recipe and pattern defaults in DraftConfigurator
+
 ### Changed
 
  - Added Penelope and Waralee linedrawings
@@ -12,6 +16,7 @@
 
  - Fixed display of nested option in SampleConfigurator
  - Fixed conflicting key values in React components
+ - Fixed issue with display of list options in Draftconfigurator
 ## 2.0.4 (2019-09-27)
 
 ### Added

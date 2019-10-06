@@ -6,6 +6,10 @@
 
 ### components
 
+#### Added
+
+ - Added support for restoring recipe and pattern defaults in DraftConfigurator
+
 #### Changed
 
  - Added Penelope and Waralee linedrawings
@@ -15,6 +19,7 @@
 
  - Fixed display of nested option in SampleConfigurator
  - Fixed conflicting key values in React components
+ - Fixed issue with display of list options in Draftconfigurator
 
 ### core
 
@@ -70,6 +75,7 @@
 #### Added
 
  - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
 
 #### Fixed
 
@@ -125,7 +131,7 @@
 
 #### Fixed
 
- - Fix measurementDiffers to pass breasts parameter to necstimate
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
 ## 2.0.2 (2019-09-06)

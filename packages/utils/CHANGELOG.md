@@ -6,6 +6,7 @@
 ### Added
 
  - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
 
 ### Fixed
 
@@ -19,7 +20,7 @@
 
 ### Fixed
 
- - Fix measurementDiffers to pass breasts parameter to necstimate
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 ## 2.0.2 (2019-09-06)
 
 ### Fixed
