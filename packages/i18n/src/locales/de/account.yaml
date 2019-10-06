@@ -37,7 +37,7 @@ resetPassword: Passwort zurücksetzen
 resetPasswordTitle: Geben Sie Ihr neues Passwort ein
 restrictProcessingOfYourDataInfo: Das Datenschutzgrubdverordnung (DSGVO) der EU gewährleistet, dass Ihr sogenanntes <em>Recht, die Verarbeitung zu beschränken</em> - das Recht, die Verarbeitung Ihrer Daten zu unterbinden.
 restrictProcessingOfYourData: Beschränken Sie die Verarbeitung Ihrer Daten
-restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird Sie jedoch abmelden und Ihr Konto einfrieren. Darüber hinaus sind Sie möglicherweise an Ihrem eigenen Geschäft interessiert, müssen sich aber mit uns in Verbindung setzen, wenn Sie den Zugriff auf Ihr Konto wiederherstellen möchten.
+restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird Sie jedoch abmelden und Ihr Konto einfrieren. Sie können die nicht selbst rückgängig machen. Wenn Sie den Zugriff auf Ihr Konto reaktivieren möchten, nehmen Sie bitte Kontakt mit uns auf.
 reviewYourConsent: Überprüfen Sie Ihre Zustimmung
 socialInfo: Wenn Sie Ihren GitHub-, Twitter- oder Instagram-Benutzernamen angeben, enthält Ihre Profilseite Links zu Ihren Konten auf diesen Websites. Dadurch können kostenlose Benutzer Sie dort verfolgen.<br>Wir kontaktieren keine dieser Seiten in Ihrem Namen. Dies ist nur so, dass Leute die Punkte verbinden können und wissen, dass zum Beispiel Benutzer @joost bei freesewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
 social: Sozial
@@ -45,9 +45,9 @@ socialTitle: Lass die Leute dir anderswo folgen
 twitterInfo: Wenn Sie Ihren Twitter-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Twitter-Account, sodass Besucher Ihre Tweets entdecken und Ihnen folgen können.
 twitterTitle: Geben Sie Ihren Twitter-Benutzernamen ein
 twitter: Twitter
-unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Messungen.
-unitsTitle: Bitte wählen Sie das Einheitensystem aus, mit dem Sie am besten vertraut sind
-units: Einheiten
-usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas mehr ändern. Wie dein Name oder Queenoffarts oder was auch immer. Geben Sie einfach den gewünschten Benutzernamen ein.
+unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Masseinheiten.
+unitsTitle: Bitte wählen Sie die Masseinheit aus, mit der Sie am besten vertraut sind
+units: Masseinheiten
+usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Name oder oder <em>queenoffarts</em> oder was auch immer dir gefällt. Geben Sie einfach den gewünschten Benutzernamen ein.
 usernameTitle: Bitte wähle Deinen Benutzernamen
 username: Benutzername
