@@ -160,7 +160,7 @@ relatedLinks: Verwandte Links
 remove: Löschen
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
+resendActivationEmailMessage: 'Fill in the E-mail address you signed up with, and we''ll send you a new confirmation message.'
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
