@@ -9,7 +9,9 @@ export default part => {
     options,
     Snippet,
     snippets,
-    utils
+    utils,
+    sa,
+    complete
   } = part.shorthand()
 
   /*
@@ -300,12 +302,15 @@ export default part => {
   //
   // Now recreate the paths and let Simon take it from here
   //
+  paths.dart = new Path()
+    .move(points.dartBottom)
+    .line(points.bustDartTip)
+    .line(points.dartTop)
   paths.saBaseFromHips = new Path()
     .move(points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
     .curve(points.belowDartCpBottom_rot2, points.dartBottomCp, points.dartBottom)
-    .line(points.bustDartTip)
-    .line(points.dartTop)
+    .move(points.dartTop)
     .curve_(points.dartTopCp, points.armhole)
   paths.saBaseFromArmhole = new Path()
     .move(points.armhole)
@@ -360,6 +365,23 @@ export default part => {
     .join(paths.saBase)
     .join(paths.saBaseFromArmhole)
     .attr('class', 'fabric')
+
+  paths.saBaseFromHips.render = false
+  paths.saBaseFromArmhole.render = false
+  paths.saBase.render = false
+
+  if (complete && sa) {
+    paths.saFrench = paths.saBase.offset(sa * 2).attr('class', 'fabric sa')
+    paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
+    paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
+    paths.saConnect = new Path()
+      .move(paths.hemSa.end())
+      .line(paths.saFrench.start())
+      .move(paths.saFrench.end())
+      .line(paths.saFromArmhole.start())
+      .attr('class', 'fabric sa')
+    delete paths.sa
+  }
 
   return part
 }
