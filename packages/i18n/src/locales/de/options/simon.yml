@@ -1,26 +1,26 @@
 ---
 backDarts:
-  tile: Back darts
-  description: Whether or not to include back darts
+  tile: Hintere Abnäher
+  description: Sollen Abnäher am Rücken eingefügt werden oder nicht
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Automatisch
+    always: Immer
+    never: Niemals
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Formgebung der hinteren Abnäher
+  description: Wie stark die hinteren Abnäher die Figur betonen
 barrelCuffNarrowButton:
   title: Manschette schmaler Knopf
   description: Gibt an, ob Sie einen Knopf hinzufügen, um die Manschetten enger zu binden. Diese Option ist nur für Fassmanschetten relevant.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Kellerfalte
+  description: Eine Kellerfalte am Rückenteil einfügen oder nicht
 boxPleatWidth:
   title: Quetschfaltenweite
-  description: Gesamtbreite der Quetschfalte
+  description: Gesamtbreite der Kellerfalte
 boxPleatFold:
-  title: Quetschfalte Falz
-  description: Der Betrag, um welchen die Quetschfalte nach innen gefaltet wird
+  title: Kellerfalte Falz
+  description: Der Betrag, um welchen die Kellerfalte nach innen gefaltet wird
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.
@@ -32,7 +32,7 @@ buttonPlacketWidth:
   description: Breite der Knopfleiste.
 buttonFreeLength:
   title: Knopf freie länge
-  description: Wie viel von der Unterseite des Frontverschlusses hält der Knopf frei.
+  description: Wie viel soll am unteren Ende der Verschlussleiste knopffrei bleiben.
 buttonholePlacketFoldWidth:
   title: Knopflochleiste Faltenbreite
   description: Knopflochleiste Faltenbreite
@@ -55,8 +55,8 @@ collarBend:
   title: Kragenbiegung
   description: Die Krümmung des Kragens.
 collarFlare:
-  title: Kragenaufflackern
-  description: Die Flare der Kragenspitzen.
+  title: Kragenausstellung
+  description: Die Ausstellung der Kragenspitzen.
 collarGap:
   title: Kragenlücke
   description: Der Spalt zwischen den beiden Kragen endet.
