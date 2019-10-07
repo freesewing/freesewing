@@ -27,17 +27,17 @@ hemRadius:
   title: Saumradius
   desciption: Der Betrag, um den der Saum gerundet ist
 backInset:
-  title: Back inset
+  title: Rückseite Ausschnitt
   description: Wie viel die Rückseite des Armlochs nach innen verschoben ist
 frontInset:
-  title: Front inset
+  title: Vorderseite Ausschnitt
   description: Wieviel die das Armloch an der Vorderseite nach Innen verschoben wird
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Schulterversatz nach innen
+  description: Wieviel die Schulternaht nach inne Richtung Schulter versetzt wird
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Nackenauschnitt
+  description: Wieviel die Schulternaht am Nacken nach Innen versetzt wird
 pocketAngle:
   title: Winkel der Tasche
-  description: Angle of the pocket slant
+  description: Winkel der Taschenneigung
