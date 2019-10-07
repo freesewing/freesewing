@@ -10,19 +10,19 @@ sa:
   description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
 locale:
   title: Sprache
-  description: Legt die für Ihr Muster verwendete Sprache fest
+  description: Legt die für Ihre Schnittmuster verwendete Sprache fest
 only:
   title: Inhalt
-  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Muster enthalten sind
+  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Schnittmuster enthalten sind
 units:
-  title: Einheiten
+  title: Masseinheit
   description: Legt die Masseinheit in Ihrem Schnittmuster fest
 margin:
   title: Marge
   description: Steuert den Rand um Musterteile
 complete:
   title: Detail
-  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+  description: Legt fest wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
 layout:
-  title: Layout
-  description: Controls how the individual pattern parts are placed on your pattern
+  title: Darstellung
+  description: Legt fest wie die einzelnen Schnittmusterteile auf Ihrem Schnittmusterbogen angeordnet werden
