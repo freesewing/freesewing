@@ -1,13 +1,13 @@
 ---
 backDartDepthFactor:
   title: Zurück zum Abnäherinhalttiefenfaktor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  description: Wie weit geht der rückwärtige Abnäher von dem Taillenbund nach unten. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesässumfang.
 backVent:
   title: Tinterer Gehschlitz
-  description: Add a vent in the back of the skirt.
+  description: "Fügen Sie einen Bewegungschlitz hinten am\nRock hinzu."
 backVentLength:
   title: Hinterer Gehschlitz Länge
-  description: Length of the Back Vent as a percentage of the skirt length.
+  description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
 dartToSideSeamFactor:
   title: Abnäher zu Seitennaht Faktor
   description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
