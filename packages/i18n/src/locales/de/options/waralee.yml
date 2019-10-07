@@ -28,12 +28,12 @@ crotchFactorBackVer:
   description: Wird benutzt um die Kurve des hinteren Schritts vertikal zu verschieben
 crotchFactorFrontHor:
   title: Horizontaler vorderer Schritt Faktor
-  description: Used to move the curve of the crotch in the front horizontally
+  description: Wird verwendet um die Kurve des vorderen Schritts horizontal zu verschieben
 crotchFactorFrontVer:
-  title: Front Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the front vertically
+  title: Vertikaler vorderer Schritt Faktor
+  description: Wird benutzt um die Kurve des vorderen Schritts vertikal zu verschieben
 waistOverlap:
-  title: Waist Overlap
+  title: Übertritt an der Taille
   description: This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
 legShortening:
   title: Leg Shortening
