@@ -19,28 +19,28 @@ hem:
   description: Breite des Saums. Mass in absoluten Werten angeben.
 hemBonus:
   title: Saumzugabe
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  description: Diese Option reduziert die Saumweite. Sie ist ein Prozentsatz des Gesässumfangs.
 lengthBonus:
   title: Längenzugabe
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  description: Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert.
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Anzahl Abnäher
+  description: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
 seatEase:
   title: Sitzkomfort
-  description: Amount of ease at the seat level.
+  description: Zugegebene Weite auf Höhe des Gesäss.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Taillenbund
+  description: Füge einen Taillenbund zum Schnittmuster hinzu.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Breite des Taillenbundes
+  description: Die Breite des Taillenbundes.
 waistEase:
   title: Taillenkomfort
-  description: Amount of ease at the waist level.
+  description: Zugegebene Weite auf Taillenhöhe.
 zipperLocation:
   title: Platzierung des Reissverschlusses
-  description: The location of the zipper.
+  description: Platzierung des Reissverschlusses.
   options:
     backSeam: At the back seam
     sideSeam: At the side seam
