@@ -37,8 +37,8 @@ waistOverlap:
   description: Dieser Wert legt fest, wie starken Übertritt Sie auf Taillenhöhe an der Seite haben möchten. Beim Wert 0 treffen sich die Teile auf der Linie der Seitennaht. Beim Wert 100 überlappen die Teile soweit, dass sie jeweils zur vorderen und hinteren Mitte reichen.
 legShortening:
   title: Verkürzung des Hosenbeins
-  description: This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length.
+  description: Dieser Wert legt fest wie lange die Hosen sind. Es ist ein Faktor der Innenbeinnahtlänge. Je höher der Wert, desto mehr wird die Länge gekürzt.
 backRaise:
-  title: Back Raise
-  description: This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+  title: Hintere Anstieg
+  description: Diese Einstellung erhöht den Taillenlinie im Rücken. Unsere Taille sitzt nicht horizontal, sondern ist auf der Rückseite angehoben. Diese Einstellung erlaubt es Ihnen, dies im Rücken zu erhöhen, wenn Sie es für eine gute Passform benötigen.
 
