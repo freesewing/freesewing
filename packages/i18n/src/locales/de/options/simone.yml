@@ -1,9 +1,9 @@
 ---
 bustDartAngle:
-  title: Bust dart angle
-  description: Controls the angle by which the (side) bust dart slopes downward
+  title: Winkel des Brustabnähers
+  description: Kontrolliert den Winkel in welchem der (seitliche) Brustabnäher nach unten weisst
 bustDartLength:
-  title: Bust dart length
+  title: Länge des Brustabnähers
   description: Controls how close the bust dart approaches the bust point
 contour:
   title: Contour
