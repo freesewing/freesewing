@@ -10,13 +10,13 @@ backVentLength:
   description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
 dartToSideSeamFactor:
   title: Abnäher zu Seitennaht Faktor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
   title: Vorderer Abnäherinhälttiefenfaktor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  description: Wie weit geht der vordere Abnäher von der Taillenlinie. Dies ist ein Faktor des Masses von der natürlichen Taille zum Gesässumfang.
 hem:
   title: Höhe des Saumes
-  description: The size of the hem. Measurement in absolute values.
+  description: Breite des Saums. Mass in absoluten Werten angeben.
 hemBonus:
   title: Saumzugabe
   description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
