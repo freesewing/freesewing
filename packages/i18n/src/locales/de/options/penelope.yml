@@ -3,7 +3,7 @@ backDartDepthFactor:
   title: Zurück zum Abnäherinhalttiefenfaktor
   description: Wie weit geht der rückwärtige Abnäher von dem Taillenbund nach unten. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesässumfang.
 backVent:
-  title: Tinterer Gehschlitz
+  title: Hinterer Gehschlitz
   description: "Fügen Sie einen Bewegungschlitz hinten am\nRock hinzu."
 backVentLength:
   title: Hinterer Gehschlitz Länge
@@ -27,7 +27,7 @@ nrOfDarts:
   title: Anzahl Abnäher
   description: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
 seatEase:
-  title: Sitzkomfort
+  title: Hüftzugabe
   description: Zugegebene Weite auf Höhe des Gesäss.
 waistBand:
   title: Taillenbund
@@ -36,11 +36,11 @@ waistBandWidth:
   title: Breite des Taillenbundes
   description: Die Breite des Taillenbundes.
 waistEase:
-  title: Taillenkomfort
+  title: Taillenzugabe
   description: Zugegebene Weite auf Taillenhöhe.
 zipperLocation:
   title: Platzierung des Reissverschlusses
   description: Platzierung des Reissverschlusses.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: An der hinteren Mittelnaht
+    sideSeam: In der Seitennaht
