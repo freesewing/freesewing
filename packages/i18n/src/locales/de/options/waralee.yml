@@ -34,9 +34,9 @@ crotchFactorFrontVer:
   description: Wird benutzt um die Kurve des vorderen Schritts vertikal zu verschieben
 waistOverlap:
   title: Übertritt an der Taille
-  description: This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
+  description: Dieser Wert legt fest, wie starken Übertritt Sie auf Taillenhöhe an der Seite haben möchten. Beim Wert 0 treffen sich die Teile auf der Linie der Seitennaht. Beim Wert 100 überlappen die Teile soweit, dass sie jeweils zur vorderen und hinteren Mitte reichen.
 legShortening:
-  title: Leg Shortening
+  title: Verkürzung des Hosenbeins
   description: This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length.
 backRaise:
   title: Back Raise
