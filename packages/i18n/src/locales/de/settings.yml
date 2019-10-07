@@ -4,7 +4,7 @@ advanced:
   description: Legen Sie fest, ob erweiterte Einstellungen und Schnittmusteroptionen angezeigt werden sollen oder nicht
 paperless:
   title: Papierlos
-  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
+  description: Zeichnen Sie ein Schnittmuster mit allen benötigten Dimensionen drin, so dass Sie es direkt auf den Stoff oder ein anderes Medium transferieren können ohne es Ausdrucken zu müssen
 sa:
   title: Nahtzugabe
   description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
@@ -16,7 +16,7 @@ only:
   description: Damit können Sie genau steuern, welche Musterteile in Ihrem Muster enthalten sind
 units:
   title: Einheiten
-  description: Controls the units used on your pattern
+  description: Legt die Masseinheit in Ihrem Schnittmuster fest
 margin:
   title: Marge
   description: Steuert den Rand um Musterteile
