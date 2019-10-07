@@ -23,7 +23,7 @@ profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildate
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach Ihrem letzten Login oder bis Sie <b> Ihr Konto entfernen oder <b> diese Einwilligung widerrufen.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle Ihre Daten entfernt. Es hat den gleichen Effekt wie das Entfernen Ihres Kontos.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
+profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, <b>Beschreibung über Sie</b>, und <b>Socialmediaaccounts</b>'
 profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
 profileWhatQuestion: Was sind Profildaten?
 profileWhyAnswer: 'Um sich <b> zu authentifizieren </b>, kontaktieren Sie <b> Sie </b>, wenn Sie benötigt werden, und bauen eine <b> Community </b> auf.'
