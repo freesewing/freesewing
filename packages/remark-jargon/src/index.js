@@ -22,6 +22,7 @@ export default options => {
       let html = options.jargon[term.toLowerCase()]
       let value = `<span class="jargon-term">${term}<span class="jargon-info">${html}</span></span>`
       let position = node.children[0].position
+      console.log('is jargon', { term, html, value, position })
       position.end.column = position.end.column + value.length - term.lenght
       position.end.offset = position.end.column - 1
       node.children = [
@@ -32,7 +33,7 @@ export default options => {
           indent: node.children[0].indent
         }
       ]
-    }
+    } else console.log('-', node)
   }
 
   const transform = tree => {
