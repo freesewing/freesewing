@@ -107,6 +107,9 @@ create-freesewing-pattern:
     "which": "^1.3.1"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/pattern-info": "^{{version}}"
+gatsby-remark-jargon:
+  _:
+    "@freesewing/remark-jargon": "^{{version}}"
 hugo:
   peer:
     "@freesewing/brian": "^{{version}}"
@@ -135,6 +138,12 @@ plugin-bundle:
     "@freesewing/plugin-scalebox": "^{{version}}"
     "@freesewing/plugin-round": "^{{version}}"
     "@freesewing/plugin-sprinkle": "^{{version}}"
+remark-jargon:
+  _:
+    "unist-util-visit": "^1.4.0"
+  peer:
+    "remark": "^10.0.1"
+    "remark-html": "^9.0.0"
 simon:
   peer:
     "@freesewing/brian": "^{{version}}"
