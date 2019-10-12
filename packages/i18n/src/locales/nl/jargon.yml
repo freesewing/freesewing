@@ -1,42 +1,42 @@
 ---
 basting:
-  term: basting
-  description: "See <a href='/docs/sewing/basting/'>Basting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: driegen
+  description: "Zie <a href='/docs/sewing/basting/'>Driegen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 coverlock:
   term: coverlock
-  description: "See <a href='/docs/sewing/coverlock/'>Coverlock</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Zie <a href='/docs/sewing/coverlock/'>Coverlock</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 cutting:
-  term: cutting
-  description: "See <a href='/docs/sewing/cutting/'>Cutting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: knippen
+  description: "Zie <a href='/docs/sewing/cutting/'>Knippen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 darts:
-  term: darts
-  description: "See <a href='/docs/sewing/darts/'>Darts</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: nepen
+  description: "Zie <a href='/docs/sewing/darts/'>Nepen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 doubleWeltPockets:
-  term: double welt pockets
-  description: "See <a href='/docs/sewing/double-welt-pockets/'>Double welt pockets</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: dubbele paspelzak
+  description: "Zie <a href='/docs/sewing/double-welt-pockets/'>Dubbele paspelzak</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 ease:
-  term: ease
-  description: "See <a href='/docs/sewing/ease/'>Ease</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: overwijdte
+  description: "Zie <a href='/docs/sewing/ease/'>Overwijdte</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 fabricGrain:
-  term: fabric grain
-  description: "See <a href='/docs/sewing/fabric-grain/'>Fabric grain</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: draadrichting
+  description: "Zie <a href='/docs/sewing/fabric-grain/'>Draadrichting</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 goodSidesTogether:
-  term: good sides together
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: goede kanten op elkaar
+  description: "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 hemming:
-  term: hemming
-  description: "See <a href='/docs/sewing/hemming/'>Hemming</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: zomen
+  description: "Zie <a href='/docs/sewing/hemming/'>Zomen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 jersey:
   term: jersey
-  description: "See <a href='/docs/sewing/jersey/'>Jersey</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Zie <a href='/docs/sewing/jersey/'>Jersey</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 knitBinding:
-  term: knit binding
-  description: "See <a href='/docs/sewing/knit-binding/'>Knit binding</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: jersey biezen
+  description: "Zie <a href='/docs/sewing/knit-binding/'>Jersey biezen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 knitFabric:
-  term: knit fabric
-  description: "See <a href='/docs/sewing/knit-fabric/'>Knit fabric</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: gebreide stof
+  description: "Zie <a href='/docs/sewing/knit-fabric/'>Gebreide stof</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 pinning:
-  term: pinning
+  term: spelden
   description: "See <a href='/docs/sewing/pinning/'>Pinning</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 rayon:
   term: rayon
