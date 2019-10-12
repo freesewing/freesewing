@@ -1,6 +1,17 @@
 Unreleased:
   date:
   Added:
+  Changed:
+  Deprecated:
+  Removed:
+  Fixed:
+  Security:
+
+2.1.0:
+  date: 2019-10-06
+  Added:
+    components:
+      - Added support for restoring recipe and pattern defaults in DraftConfigurator
     i18n:
       - Added translations for Penelope, Waralee, and Simone
     simone:
@@ -9,6 +20,7 @@ Unreleased:
       - Added the Penelope Pencil Skirt pattern by @woutervdub
     utils:
       - Added backend methods for administration
+      - Added the resendActivationEmail method to backend
     waralee:
       - Added the Waralee wrap Pants pattern by @woutervdub
   Changed:
@@ -33,13 +45,15 @@ Unreleased:
     patterns:
       - The [@freesewing/patterns](https://www.npmjs.com/package/@freesewing/patterns)
         package has been deprecated. Please import our patterns individually.
-  Removed:
   Fixed:
-    css-theme:
-      - Reduced the sidebar height by 64px to take navbar into account
     components:
       - Fixed display of nested option in SampleConfigurator
       - Fixed conflicting key values in React components
+      - Fixed issue with display of list options in Draftconfigurator
+    css-theme:
+      - Reduced the sidebar height by 64px to take navbar into account
+      - Fixed blockquote width on XS screens
+      - Made sidebar wider
     simon:
       - Fixed an issue where the store wasn't properly initialized causing hips and waist ease
         to be set incorrectly
@@ -47,7 +61,6 @@ Unreleased:
       - Fixed an issue where the split yoke option was not taken into account correctly
     utils:
       - Fixed an issue where optionDefault was not handling list options correctly
-  Security:
 
 2.0.4:
   date: 2019-09-27
@@ -74,7 +87,7 @@ Unreleased:
     create-freesewing-pattern:
       - Updated example package.json to use latest tag rather than beta
     utils:
-      - Fix measurementDiffers to pass breasts parameter to necstimate
+      - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 2.0.2:
   date: 2019-09-06

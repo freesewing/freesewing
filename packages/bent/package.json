@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bent",
-  "version": "2.1.0-2.1.0-beta.0.0",
+  "version": "2.1.0",
   "description": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,9 +33,9 @@
     "netlify": "echo \"Not configured yet\""
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/plugin-bundle": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/brian": "^2.1.0-2.1.0-beta.0.0"
+    "@freesewing/core": "^2.1.0",
+    "@freesewing/plugin-bundle": "^2.1.0",
+    "@freesewing/brian": "^2.1.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,16 +46,16 @@
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
-    "@freesewing/components": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/css-theme": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/i18n": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/mui-theme": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/plugin-bust": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/plugin-buttons": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/plugin-flip": "^2.1.0-2.1.0-beta.0.0",
-    "@freesewing/utils": "^2.1.0-2.1.0-beta.0.0",
+    "@freesewing/components": "^2.1.0",
+    "@freesewing/css-theme": "^2.1.0",
+    "@freesewing/i18n": "^2.1.0",
+    "@freesewing/mui-theme": "^2.1.0",
+    "@freesewing/plugin-bust": "^2.1.0",
+    "@freesewing/plugin-buttons": "^2.1.0",
+    "@freesewing/plugin-flip": "^2.1.0",
+    "@freesewing/utils": "^2.1.0",
     "@svgr/rollup": "^2.4.1",
-    "cross-env": "^5.1.4",
+    "cross-env": "^6.0.3",
     "gh-pages": "^1.2.0",
     "react-scripts": "^3.0.0",
     "webpack": "4.29.6",
@@ -81,7 +81,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=8.0.0",

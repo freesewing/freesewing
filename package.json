@@ -25,7 +25,7 @@
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run build",
     "release": "lerna exec -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
-    "bump": "git add . && git commit -m ':wrench: Reconfigure packages'"
+    "bump": "git add . && git commit -m 'chore: Reconfigure packages'"
   },
   "repository": {
     "type": "git",
@@ -112,7 +112,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-sass": "^1.2.2",
-    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-terser": "^5.1.2",
     "rollup-plugin-url": "^2.2.1",
     "rollup-plugin-yaml": "^1.1.0",
     "standard": "^14.0.2",

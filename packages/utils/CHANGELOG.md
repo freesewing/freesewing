@@ -3,9 +3,15 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package utils
+
+
+## 2.1.0 (2019-10-06)
+
 ### Added
 
  - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
 
 ### Fixed
 
@@ -19,7 +25,7 @@
 
 ### Fixed
 
- - Fix measurementDiffers to pass breasts parameter to necstimate
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 ## 2.0.2 (2019-09-06)
 
 ### Fixed

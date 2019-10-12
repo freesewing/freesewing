@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package simone
+
+
+## 2.1.0 (2019-10-06)
+
 ### Added
 
  - Added the Simone shirt pattern

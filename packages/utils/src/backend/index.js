@@ -19,6 +19,7 @@ function useBackend(baseURL, timeout = 10000) {
   backend.signup = (email, password, language) => api.post('/signup', { email, password, language }) // Signup
   backend.confirm = confirmId => api.post('/account', { id: confirmId }) // Confirm
   backend.createAccount = (confirmId, consent) => api.post('/account', { id: confirmId, consent }) // Create account
+  backend.resendActivationEmail = (email, language) => api.post('/resend', { email, language }) // Re-send activation email
 
   // Other non-authenticated calls
   backend.login = (username, password) => api.post('/login', { username, password }) // Login

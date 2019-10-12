@@ -4,7 +4,14 @@
 
 ## Unreleased
 
+
+## 2.1.0 (2019-10-06)
+
 ### components
+
+#### Added
+
+ - Added support for restoring recipe and pattern defaults in DraftConfigurator
 
 #### Changed
 
@@ -15,6 +22,7 @@
 
  - Fixed display of nested option in SampleConfigurator
  - Fixed conflicting key values in React components
+ - Fixed issue with display of list options in Draftconfigurator
 
 ### core
 
@@ -31,6 +39,8 @@
 #### Fixed
 
  - Reduced the sidebar height by 64px to take navbar into account
+ - Fixed blockquote width on XS screens
+ - Made sidebar wider
 
 ### i18n
 
@@ -70,6 +80,7 @@
 #### Added
 
  - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
 
 #### Fixed
 
@@ -125,7 +136,7 @@
 
 #### Fixed
 
- - Fix measurementDiffers to pass breasts parameter to necstimate
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
 ## 2.0.2 (2019-09-06)
