@@ -1,0 +1,51 @@
+.jargon-term {
+  text-decoration: underline dashed $fc-link-light;
+}
+.jargon-term::after {
+  content: "?";
+  font-weight: bold;
+  display: inline-block;
+  transform: translate(0, -0.5em);
+  font-size: 75%;
+  color: $fc-link-light;
+  margin-left: 3px;
+}
+
+.jargon-term:hover {
+  position: relative;
+  text-decoration: none;
+  cursor: help;
+}
+.jargon-term .jargon-info {
+  display: none
+}
+.jargon-term:hover .jargon-info {
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  background: $fc-bg-light;
+  color: $fc-text-light;
+  border: 1px solid #DCDCDC;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 90%;
+  min-width: 250px;
+  max-width: 450px;
+  z-index: 1;
+}
+.theme-wrapper.dark {
+  .jargon-term {
+    text-decoration: underline dashed $fc-link-dark;
+  }
+  .jargon-term::after {
+    color: $fc-link-dark;
+  }
+  .jargon-term:hover .jargon-info {
+    background: $fc-bg-dark;
+    color: $fc-text-dark;
+    border: 1px solid #5A5A5A;
+  }
+}
+
+
