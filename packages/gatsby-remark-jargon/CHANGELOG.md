@@ -1,4 +1,4 @@
-# Change log for: @freesewing/gatsby-remark-jargon
+# Change log for: gatsby-remark-jargon
 
 
 ## Unreleased

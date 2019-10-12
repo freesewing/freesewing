@@ -55,7 +55,7 @@
     "@freesewing/plugin-flip": "^2.1.0",
     "@freesewing/utils": "^2.1.0",
     "@svgr/rollup": "^2.4.1",
-    "cross-env": "^6.0.3",
+    "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
     "react-scripts": "^3.0.0",
     "webpack": "4.29.6",

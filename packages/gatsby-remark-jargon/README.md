@@ -5,14 +5,14 @@
 </p>
 <p align="center">An open source platform for made-to-measure sewing patterns</p>
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/gatsby-remark-jargon"
-  title="@freesewing/gatsby-remark-jargon on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/gatsby-remark-jargon.svg"
-  alt="@freesewing/gatsby-remark-jargon on NPM"/>
+  href="https://www.npmjs.com/package/gatsby-remark-jargon"
+  title="gatsby-remark-jargon on NPM"
+  ><img src="https://img.shields.io/npm/v/gatsby-remark-jargon.svg"
+  alt="gatsby-remark-jargon on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/gatsby-remark-jargon.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/gatsby-remark-jargon.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -46,7 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/gatsby-remark-jargon
+# gatsby-remark-jargon
 
 A gatsby-transformer-remark sub-plugin for jargon terms
 

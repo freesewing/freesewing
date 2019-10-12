@@ -1,11 +1,15 @@
 noNamespace:
   - create-freesewing-pattern
+  - remark-jargon
+  - gatsby-remark-jargon
 customRollup:
   - components
   - core
   - css-theme
+  - gatsby-remark-jargon
   - i18n
   - plugin-theme
+  - remark-jargon
   - utils
   - prettier-config
 packageJson:
