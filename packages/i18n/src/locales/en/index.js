@@ -17,6 +17,8 @@ import plugin from './plugin/'
 import settings from './settings.yml'
 import homepage from './homepage.yaml'
 
+import jargonFile from './jargon.yml'
+
 const topics = {
   account,
   app,
@@ -68,7 +70,13 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
+const jargon = {}
+for (let entry in jargonFile) {
+  jargon[jargonFile[entry].term] = jargonFile[entry].description
+}
+
 export default {
   strings,
-  plugin
+  plugin,
+  jargon
 }
