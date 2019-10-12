@@ -1,15 +1,15 @@
 ---
 filter: Filter
-department: Department
-type: Type
-tags: Tags
+department: Abteilung
+type: Art
+tags: Stichworte
 code: Code
-design: Design
+design: Gestaltung
 difficulty: Schwierigkeit
 resetFilter: Filter zurücksetzen
-menswear: Menswear
-womenswear: Womenswear
-accessories: Accessories
-block: Block
-pattern: Pattern
+menswear: Herrenbekleidung
+womenswear: Frauenkleidung
+accessories: Accessoires
+block: Grundschnitt
+pattern: Schnittmuster
 

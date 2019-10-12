@@ -1,49 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Back Dart Depth Factor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Zurück zum Abnäherinhalttiefenfaktor
+  description: Wie weit geht der rückwärtige Abnäher von dem Taillenbund nach unten. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesässumfang.
 backVent:
-  title: Back Vent
-  description: Add a vent in the back of the skirt.
+  title: Hinterer Gehschlitz
+  description: "Fügen Sie einen Bewegungschlitz hinten am\nRock hinzu."
 backVentLength:
-  title: Back Vent Length
-  description: Length of the Back Vent as a percentage of the skirt length.
+  title: Hinterer Gehschlitz Länge
+  description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
 dartToSideSeamFactor:
-  title: Dart to Side Seam factor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  title: Abnäher zu Seitennaht Faktor
+  description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
-  title: Front Dart Depth Factor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Vorderer Abnäherinhälttiefenfaktor
+  description: Wie weit geht der vordere Abnäher von der Taillenlinie. Dies ist ein Faktor des Masses von der natürlichen Taille zum Gesässumfang.
 hem:
-  title: Size of the hem.
-  description: The size of the hem. Measurement in absolute values.
+  title: Höhe des Saumes
+  description: Breite des Saums. Mass in absoluten Werten angeben.
 hemBonus:
-  title: Hem Bonus
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  title: Saumzugabe
+  description: Diese Option reduziert die Saumweite. Sie ist ein Prozentsatz des Gesässumfangs.
 lengthBonus:
-  title: Length Bonus
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  title: Längenzugabe
+  description: Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert.
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Anzahl Abnäher
+  description: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
 seatEase:
-  title: Seat Ease
-  description: Amount of ease at the seat level.
+  title: Hüftzugabe
+  description: Zugegebene Weite auf Höhe des Gesäss.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Taillenbund
+  description: Füge einen Taillenbund zum Schnittmuster hinzu.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Breite des Taillenbundes
+  description: Die Breite des Taillenbundes.
 waistEase:
-  title: waist Ease
-  description: Amount of ease at the waist level.
-waistSideSeamRaise:
-  title: Unused
-  description: Unused.
+  title: Taillenzugabe
+  description: Zugegebene Weite auf Taillenhöhe.
 zipperLocation:
-  title: Zipper Location
-  description: The location of the zipper.
+  title: Platzierung des Reissverschlusses
+  description: Platzierung des Reissverschlusses.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: An der hinteren Mittelnaht
+    sideSeam: In der Seitennaht
