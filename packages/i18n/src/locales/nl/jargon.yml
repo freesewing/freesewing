@@ -37,40 +37,40 @@ knitFabric:
   description: "Zie <a href='/docs/sewing/knit-fabric/'>Gebreide stof</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 pinning:
   term: spelden
-  description: "See <a href='/docs/sewing/pinning/'>Pinning</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Zie <a href='/docs/sewing/pinning/'>Spelden</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 rayon:
   term: rayon
-  description: "See <a href='/docs/sewing/rayon/'>Rayon</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Zie <a href='/docs/sewing/rayon/'>Rayon</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 sa:
-  term: seam allowance
-  description: "See <a href='/docs/sewing/seam-allowance/'>Seam allowance</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: naadtoeslag
+  description: "Zie <a href='/docs/sewing/seam-allowance/'>Naadtoeslag</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 serger:
-  term: serger
-  description: "See <a href='/docs/sewing/serger/'>Serger</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: serger/overlock
+  description: "Zie <a href='/docs/sewing/serger/'>Serger/Overlock</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 topstitching:
-  term: topstitching
-  description: "See <a href='/docs/sewing/topstitching/'>Topstitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: sierstiksel
+  description: "Zie <a href='/docs/sewing/topstitching/'>Sierstiksel</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 trimming:
-  term: trimming
-  description: "See <a href='/docs/sewing/trimming/'>Trimming</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: bijknippen
+  description: "Zie <a href='/docs/sewing/trimming/'>Bijknippen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 twinNeedle:
-  term: twin needle
-  description: "See <a href='/docs/sewing/twin-neelde/'>Twin needle</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: tweelingnaald
+  description: "Zie <a href='/docs/sewing/twin-neelde/'>Tweelingnaald</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 zigZag:
-  term: zig-zag stitch
-  description: "See <a href='/docs/sewing/zig-zag-stitch/'>Zig-zag stitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: zigzagsteek
+  description: "Zie <a href='/docs/sewing/zig-zag-stitch/'>Zigzagsteek</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 freesewing:
   term: freesewing
-  description: "<b>FreeSewing</b> is an open source platform for made-to-measure sewing patterns"
+  description: "<b>FreeSewing</b> is een open source platform voor naaipatronen op maat"
 recipe:
-  term: recipe
-  description: "A <b>Recipe</b> contains all the information required to re-create your pattern"
+  term: recept
+  description: "Een <b>Recept</b> bevat alle informatie die nodig is om je patroon te recreëren"
 patternOptions:
-  term: pattern options
-  description: "The <b>pattern options</b> allow you to customize the design of the pattern"
+  term: patroon opties
+  description: "De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen"
 draftSettings:
-  term: draft settings
-  description: "The <b>draft settings</b> give you control of how a pattern is generated"
+  term: instellingen patroontekening
+  description: "De <b>instellingen patroontekening</b> geven je controle over goe een patroon gegenereerd wordt"
 patrons:
-  term: patrons
-  description: "Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
+  term: mecenas
+  description: "Mecenassen ondersteunen FreeSewing financieel. Het zijn loyale supporters die zorgen voor een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap."
