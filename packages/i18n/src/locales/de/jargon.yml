@@ -1,39 +1,39 @@
 ---
 basting:
-  term: basting
-  description: "See <a href='/docs/sewing/basting/'>Basting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: heften
+  description: "<a href='/docs/sewing/basting/'>Heften</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 coverlock:
-  term: coverlock
-  description: "See <a href='/docs/sewing/coverlock/'>Coverlock</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Coverlock
+  description: "Siehe <a href='/docs/sewing/coverlock/'>Coverlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 cutting:
-  term: cutting
-  description: "See <a href='/docs/sewing/cutting/'>Cutting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Zuschnitt
+  description: "Siehe <a href='/docs/sewing/cutting/'>Zuschnitt</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 darts:
-  term: darts
-  description: "See <a href='/docs/sewing/darts/'>Darts</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Abnäher
+  description: "<a href='/docs/sewing/darts/'>Abnäher</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 doubleWeltPockets:
-  term: double welt pockets
-  description: "See <a href='/docs/sewing/double-welt-pockets/'>Double welt pockets</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Doppelpaspeltaschen
+  description: "Siehe <a href='/docs/sewing/double-welt-pockets/'>Doppelpaspeltasche</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 ease:
-  term: ease
-  description: "See <a href='/docs/sewing/ease/'>Ease</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Zugabe
+  description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
-  term: fabric grain
-  description: "See <a href='/docs/sewing/fabric-grain/'>Fabric grain</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Fadenlauf
+  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenluf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
-  term: good sides together
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: rechts auf rechts
+  description: "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 hemming:
-  term: hemming
-  description: "See <a href='/docs/sewing/hemming/'>Hemming</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Säumen
+  description: "Siehe <a href='/docs/sewing/hemming/'>Säumen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 jersey:
-  term: jersey
-  description: "See <a href='/docs/sewing/jersey/'>Jersey</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Jersey
+  description: "Siehe <a href='/docs/sewing/jersey/'>Jersey</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 knitBinding:
-  term: knit binding
-  description: "See <a href='/docs/sewing/knit-binding/'>Knit binding</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Kantenabschluss mit Maschenware
+  description: "Siehe <a href='/docs/sewing/knit-binding/'>Kantenabschluss mit Maschenware</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 knitFabric:
-  term: knit fabric
+  term: Maschenware
   description: "See <a href='/docs/sewing/knit-fabric/'>Knit fabric</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 pinning:
   term: pinning
