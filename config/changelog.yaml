@@ -7,6 +7,21 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.1:
+  date: 2019-10-13
+  Added:
+    components:
+      - Added the fixme type Blockquote component
+    gatsby-remark-jargon:
+      - Added the gatsby-remark-jargon package, a gatbsy plugin wrapping remark-jargon
+    remark-jargon:
+      - Added the remark-jargon package, a remark plugin for jargon terms
+  Fixed:
+    css-theme:
+      - Fixed padding issue on mobile
+    utils:
+      - Fixed an issue with the formatMm method not adding units
+
 2.1.0:
   date: 2019-10-06
   Added:
