@@ -5,6 +5,39 @@
 ## Unreleased
 
 
+## 2.1.1 (2019-10-13)
+
+### components
+
+#### Added
+
+ - Added the fixme type Blockquote component
+
+### css-theme
+
+#### Fixed
+
+ - Fixed padding issue on mobile
+
+### gatsby-remark-jargon
+
+#### Added
+
+ - Added the gatsby-remark-jargon package, a gatbsy plugin wrapping remark-jargon
+
+### remark-jargon
+
+#### Added
+
+ - Added the remark-jargon package, a remark plugin for jargon terms
+
+### utils
+
+#### Fixed
+
+ - Fixed an issue with the formatMm method not adding units
+
+
 ## 2.1.0 (2019-10-06)
 
 ### components

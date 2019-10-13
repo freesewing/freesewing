@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-flip
 
 
+## 2.1.1 (2019-10-13)
+
+**Note:** Version bump only for package plugin-flip
+
+
 ## 2.1.0 (2019-10-06)
 
 **Note:** Version bump only for package plugin-flip
