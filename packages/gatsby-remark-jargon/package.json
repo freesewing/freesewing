@@ -10,13 +10,11 @@
     "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
-    "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "sewing"
+    "remark",
+    "mdx",
+    "jargon",
+    "gatsby",
+    "gatsby-plugin"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
