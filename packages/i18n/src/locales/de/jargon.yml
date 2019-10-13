@@ -1,7 +1,7 @@
 ---
 basting:
-  term: heften
-  description: "<a href='/docs/sewing/basting/'>Heften</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  term: Heften
+  description: "Siehe <a href='/docs/sewing/basting/'>Heften</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 coverlock:
   term: Coverlock
   description: "Siehe <a href='/docs/sewing/coverlock/'>Coverlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
@@ -73,4 +73,4 @@ draftSettings:
   description: "Mit den <b>Entwurfseinstellungen</b> legen Sie fest, wie ein Muster erzeugt wird"
 patrons:
   term: Gönner
-  description: "Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
+  description: "Gönner unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community."
