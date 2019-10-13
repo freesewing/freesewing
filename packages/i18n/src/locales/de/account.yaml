@@ -51,3 +51,5 @@ units: Masseinheiten
 usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Name oder oder <em>queenoffarts</em> oder was auch immer dir gefällt. Geben Sie einfach den gewünschten Benutzernamen ein.
 usernameTitle: Bitte wähle Deinen Benutzernamen
 username: Benutzername
+accountIsInactive: Your account is inactive
+accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
