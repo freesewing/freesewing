@@ -109,7 +109,7 @@ create-freesewing-pattern:
     "@freesewing/pattern-info": "^{{version}}"
 gatsby-remark-jargon:
   _:
-    "@freesewing/remark-jargon": "^{{version}}"
+    "remark-jargon": "^{{version}}"
 hugo:
   peer:
     "@freesewing/brian": "^{{version}}"

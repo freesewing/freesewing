@@ -1,6 +1,6 @@
 {
-  "name": "@freesewing/gatsby-remark-jargon",
-  "version": "2.1.0",
+  "name": "gatsby-remark-jargon",
+  "version": "2.1.1-beta.1",
   "description": "A gatsby-transformer-remark sub-plugin for jargon terms",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -10,13 +10,11 @@
     "url": "https://github.com/freesewing/freesewing/issues"
   },
   "keywords": [
-    "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "sewing"
+    "remark",
+    "mdx",
+    "jargon",
+    "gatsby",
+    "gatsby-plugin"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -31,7 +29,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@freesewing/remark-jargon": "^2.1.0"
+    "remark-jargon": "^2.1.1-beta.1"
   },
   "devDependencies": {},
   "files": [
@@ -41,7 +39,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=8.0.0",

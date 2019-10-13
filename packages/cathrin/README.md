@@ -1,7 +1,7 @@
 <p align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
+<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/logo.svg" align="center" width="150px" alt="FreeSewing logo"/></a>
 <br>
-<a href="https://freesewing.org/">FreeSewing v2</a>
+<a href="https://freesewing.org/">FreeSewing</a>
 </p>
 <p align="center">An open source platform for made-to-measure sewing patterns</p>
 <p align='center'><a
@@ -56,19 +56,19 @@ A FreeSewing pattern for a underbust corset &#x2F; waist trainer
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/en/freesewing) is a *batteries-included* toolbox
+Our [core library](https://freesewing.dev/) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
-of [plugins](https://freesewing.dev/en/plugins) and getting started is as simple as:
+of [plugins](https://freesewing.dev/plugins) and getting started is as simple as:
 
 ```bash
 npm init freesewing-pattern
 ```
 
-The [getting started] section on [freesewing.dev](https://freesewing.dev/) is a good
+The [getting started](https://freesewing.dev/start) section on [freesewing.dev](https://freesewing.dev/) is a good
 entrypoint to our documentation, but you'll find a lot more there, including
-our [API documentation](https://freesewing.dev/en/freesewing/api),
-as well as [examples](https://freesewing.dev/en/freesewing/examples),
-and [best practices](https://freesewing.dev/en/do).
+our [API reference](https://freesewing.dev/api),
+as well as [our turorial](https://freesewing.dev/tutorial),
+and [best practices](https://freesewing.dev/do).
 
 If you're a maker, checkout [freesewing.org](https://freesewing/) where you can generate
 our sewing patterns adapted to your measurements.

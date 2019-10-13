@@ -1,4 +1,4 @@
-# Change log for: @freesewing/remark-jargon
+# Change log for: remark-jargon
 
 
 ## Unreleased

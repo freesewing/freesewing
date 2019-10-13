@@ -1,18 +1,18 @@
 <p align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
+<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/logo.svg" align="center" width="150px" alt="FreeSewing logo"/></a>
 <br>
-<a href="https://freesewing.org/">FreeSewing v2</a>
+<a href="https://freesewing.org/">FreeSewing</a>
 </p>
 <p align="center">An open source platform for made-to-measure sewing patterns</p>
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/gatsby-remark-jargon"
-  title="@freesewing/gatsby-remark-jargon on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/gatsby-remark-jargon.svg"
-  alt="@freesewing/gatsby-remark-jargon on NPM"/>
+  href="https://www.npmjs.com/package/gatsby-remark-jargon"
+  title="gatsby-remark-jargon on NPM"
+  ><img src="https://img.shields.io/npm/v/gatsby-remark-jargon.svg"
+  alt="gatsby-remark-jargon on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/gatsby-remark-jargon.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/gatsby-remark-jargon.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -46,9 +46,139 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/gatsby-remark-jargon
+# gatsby-remark-jargon
 
 A gatsby-transformer-remark sub-plugin for jargon terms
+
+## About
+
+This wraps the [remark-jargon](https://github.com/freesewing/freesewing/tree/develop/packages/remark-jargon) plugin
+for Gatsby so you can use _jargon_ in the markdown/mdx of your Gatsby site:
+
+![An example of this plugin being used on freesewing.org](example.png)
+
+## Install
+
+```bash
+npm install --save gatsby-remark-jargon
+```
+
+## Configuration
+
+
+In `gatsby-config.js` include your jargon file, and add the remark plugin:
+
+
+```js
+  {
+    resolve: 'gatsby-remark-jargon',
+    options: { jargon: require('./jargon.js') }
+  }
+```
+
+## Usage
+
+### The jargon file
+
+The jagon file is a simple key-value file:
+
+```js
+const jargon = {
+  msf: "<b>MSF</b> Médecins Sans Frontières / Doctors Without Borders — An international, independent, medical humanitarian organisation. See <a href='https://www.msf.org/'>msf.org</a>"
+}
+
+export default jargon
+```
+
+### Using jargon in markdown
+
+This plugin will only add markup to your jargon if you emphasize it. In the following example, 
+only the first mention of MSF will be changed:
+
+```md
+_MSF_ was founded in 1971 by 13 doctors and journalists. Today, MSF is a worldwide movement of more than 67,000 people.
+```
+
+This will be rendered as:
+
+```html
+<p>
+  <em>
+    <span class="jargon-term">
+      MSF
+      <span class="jargon-info">
+        <b>MSF</b> Médecins Sans Frontières / Doctors Without Borders — An international, independent, medical humanitarian organisation. See <a href='https://www.msf.org/'>msf.org</a>
+      </span>
+    </span>
+  </em>
+  was founded in 1971 by 13 doctors and journalists. Today, MSF is a worldwide movement of more than 67,000 people.
+</p>
+```
+
+Which you can then style so that the definition is only show on hover/touch.
+
+### Styling your jargon
+
+You will need to add CSS to style your jargon properly, and hide the definition by default.
+Below is an example to get you started:
+
+```css
+// Add a dashed line under jargon terms
+.jargon-term {
+  text-decoration: underline dotted #228be6
+}
+// Add a question mark behind/above jargon terms
+.jargon-term::after {
+  content: "?";
+  font-weight: bold;
+  display: inline-block;
+  transform: translate(0, -0.5em);
+  font-size: 75%;
+  color: #228be6;
+  margin-left: 3px;
+}
+// Hover behavior for the therm itself
+.jargon-term:hover {
+  position: relative;
+  text-decoration: none;
+  cursor: help;
+}
+// Hide info by default
+.jargon-term .jargon-info {
+  display: none
+}
+// Show info on hover
+.jargon-term:hover .jargon-info {
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  background: #F8F8F8;
+  border: 1px solid #DCDCDC;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 90%;
+  min-width: 250px;
+  max-width: 450px;
+  z-index: 1;
+}
+```
+
+## Tips for using jargon
+
+### Lowercase your terms in the jargon file
+
+When looking for terms to match, we lowercase the term your emphazised.
+So in the jargon file, you should use `msf`, but in your text, you can use `MSF`, `Msf`, or `msf`.
+
+### If you use HTML, only use inline elements
+
+Your jargon term definition can contain HTML, but only inline elements.
+Typically, you will want to stick to:
+
+ - Making things **bold**
+ - Inserting [links](#)
+
 
 
 
@@ -56,19 +186,19 @@ A gatsby-transformer-remark sub-plugin for jargon terms
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/en/freesewing) is a *batteries-included* toolbox
+Our [core library](https://freesewing.dev/) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
-of [plugins](https://freesewing.dev/en/plugins) and getting started is as simple as:
+of [plugins](https://freesewing.dev/plugins) and getting started is as simple as:
 
 ```bash
 npm init freesewing-pattern
 ```
 
-The [getting started] section on [freesewing.dev](https://freesewing.dev/) is a good
+The [getting started](https://freesewing.dev/start) section on [freesewing.dev](https://freesewing.dev/) is a good
 entrypoint to our documentation, but you'll find a lot more there, including
-our [API documentation](https://freesewing.dev/en/freesewing/api),
-as well as [examples](https://freesewing.dev/en/freesewing/examples),
-and [best practices](https://freesewing.dev/en/do).
+our [API reference](https://freesewing.dev/api),
+as well as [our turorial](https://freesewing.dev/tutorial),
+and [best practices](https://freesewing.dev/do).
 
 If you're a maker, checkout [freesewing.org](https://freesewing/) where you can generate
 our sewing patterns adapted to your measurements.

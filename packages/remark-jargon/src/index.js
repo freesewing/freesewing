@@ -22,7 +22,7 @@ export default options => {
       let html = options.jargon[term.toLowerCase()]
       let value = `<span class="jargon-term">${term}<span class="jargon-info">${html}</span></span>`
       let position = node.children[0].position
-      position.end.column = position.end.column + value.length - term.lenght
+      position.end.column = position.end.column + value.length - term.length
       position.end.offset = position.end.column - 1
       node.children = [
         {

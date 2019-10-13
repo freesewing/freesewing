@@ -23,9 +23,10 @@ if (typeof module !== 'undefined')
 export default {
   input: 'src/index.js',
   output,
+  external: ['remark-jargon'],
   plugins: [
     peerDepsExternal(),
-    resolve({ modulesOnly: true }),
+    resolve(),
     commonjs(),
     json(),
     babel({
