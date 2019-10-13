@@ -1,7 +1,7 @@
 div.fs-sa {
   display: flex;
 
-  section{
+  > section{
     width: 100%;
     padding: 1rem 1.5rem;
   }
@@ -23,7 +23,7 @@ div.fs-sa {
 
 .theme-wrapper.dark {
   div.fs-sa {
-    section {
+    > section {
       background: $oc-gray-9;
     }
     aside {
