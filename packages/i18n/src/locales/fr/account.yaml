@@ -51,3 +51,5 @@ units: Unités
 usernameInfo: Vous avez actuellement un nom d'utilisateur généré de manière aléatoire. Ce n'est pas très personnel, vous pouvez donc changer votre nom d'utilisateur pour quelque chose de plus vous. Comme votre nom, <em> queenoffarts </ em> ou autre chose. Il vous suffit de saisir le nom d'utilisateur souhaité.
 usernameTitle: Veuillez choisir votre nom d'utilisateur
 username: Nom d'utilisateur
+accountIsInactive: Your account is inactive
+accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.

@@ -1,5 +1,5 @@
 ---
-compliant: Freesewing.org respektiert Ihre Privatsphäre und Ihre Rechte. Wir wenden die Allgemeine Datenschutzverordnung (DSGVO) der Europäischen Union (EU) an.
+compliant: Freesewing.org respektiert Ihre Privatsphäre und Ihre Rechte. Wir wenden die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
 consent: Zustimmung
 consentForModelData: Zustimmung für Modelldaten
 consentForProfileData: Zustimmung für Profildaten
@@ -9,21 +9,21 @@ consentWhyAnswer: Die Verarbeitung Ihrer personenbezogenen Daten bedarf im Rahme
 createMyAccount: Erstelle mein Konto
 furtherReading: Weiter lesen
 modelQuestion: Geben Sie Ihre Zustimmung zur Verarbeitung Ihrer Modelldaten?
-modelWarning: Wenn Sie diese Einwilligung widerrufen, werden Sie von Ihren Modelldaten ausgeschlossen sowie von diesen abhängig deaktiviert.
+modelWarning: Wenn Sie diese Einwilligung widerrufen, werden Sie von Ihren Modelldaten ausgeschlossen und es werden alle Funktionen, die diesen abhängen, deaktiviert.
 modelWhatAnswer: Für jedes Modell deren <b>Messwerte</b> und <b>Brusteinstellungen</b>
-modelWhatAnswerOptional: 'Optional: Ein <b> Modell </ b> und der <b> Name </ b>, den Sie Ihrem Modell geben.'
+modelWhatAnswerOptional: 'Optional: Ein Modell-<b>Bild</b> und ein <b>Name</b>, die Sie Ihrem Modell geben.'
 modelWhatQuestion: Was sind Modelldaten?
-modelWhyAnswer: 'Zum Erstellen von <b> Nähen nach Maß </b> benötigen wir <b> Körpermaße </b>.'
-noConsentNoAccount: Without this consent, we cannot create your account
-noConsentNoPatterns: Without this consent, you cannot create any patterns
-noIDoNot: 'Nein, ich nicht'
+modelWhyAnswer: 'Zum Erstellen von <b> Masschnittmustern</b> benötigen wir <b>Körpermaße</b>.'
+noConsentNoAccount: Ohne diese Zustimmung können wir Ihr Konto nicht erstellen
+noConsentNoPatterns: Ohne diese Zustimmung können Sie keine Schnittmuster erstellen
+noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, können Sie dem widersprechen.
 openDataQuestion: Teilen Sie anonymisierte Messungen als offene Daten
 profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach Ihrem letzten Login oder bis Sie <b> Ihr Konto entfernen oder <b> diese Einwilligung widerrufen.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle Ihre Daten entfernt. Es hat den gleichen Effekt wie das Entfernen Ihres Kontos.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
+profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, <b>Beschreibung über Sie</b>, und <b>Socialmediaaccounts</b>'
 profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
 profileWhatQuestion: Was sind Profildaten?
 profileWhyAnswer: 'Um sich <b> zu authentifizieren </b>, kontaktieren Sie <b> Sie </b>, wenn Sie benötigt werden, und bauen eine <b> Community </b> auf.'
@@ -36,4 +36,4 @@ whatYouNeedToKnow: Was Sie wissen müssen
 whyQuestion: Warum brauchen wir es?
 yesIDoObject: 'Ja, ich widerspreche'
 yesIDo: 'Ja, das mache ich'
-openData: "Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this"
+openData: "Hinweis: Freesewing veröffentlicht anonymisierte Messungen als offene Daten für wissenschaftliche Forschung. Du hast das Recht, dies zu verwehren"

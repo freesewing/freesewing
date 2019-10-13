@@ -9,7 +9,7 @@ const Blockquote = props => {
   return (
     <blockquote className={props.type} {...attr}>
       {props.children}
-      <Icon icon={props.type} className={'icon ' + props.type} />
+      {props.type === 'fixme' ? null : <Icon icon={props.type} className={'icon ' + props.type} />}
     </blockquote>
   )
 }

@@ -6,6 +6,11 @@
 **Note:** Version bump only for package utils
 
 
+## 2.1.1 (2019-10-13)
+
+### Fixed
+
+ - Fixed an issue with the formatMm method not adding units
 ## 2.1.0 (2019-10-06)
 
 ### Added

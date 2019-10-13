@@ -1,24 +1,24 @@
 ---
 backDartDepthFactor:
-  title: Factor Lengte Neep Achter
+  title: Factor lengte neep rug
   description: Hoe ver de neep achteraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 backVent:
-  title: Loopsplit
+  title: Split achter
   description: Voeg een split toe aan de achterkant van de rok.
 backVentLength:
-  title: Lengte Loopsplit
+  title: Lengte split achter
   description: Lengte van het loopsplit als een percentage van de lengte van de rok.
 dartToSideSeamFactor:
-  title: Factor Neep tot Zijnaad
+  title: Factor neep tot zijnaad
   description: Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
 frontDartDepthFactor:
-  title: Factor Lengte Neep Vooraan
+  title: Factor lengte neep vooraan
   description: Hoe ver de neep vooraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 hem:
-  title: Afmeting van de zoom.
+  title: Afmeting van de zoom
   description: De afmeting van de zoom. Een maat in absolute waarden.
 hemBonus:
-  title: Bonus Zoom
+  title: Bonus zoom
   description: Deze optie maakt de omtrek van de rok aan de zoom kleiner. Percentage van de Omtrek Zitvlak-maat.
 lengthBonus:
   title: Bonus lengte
@@ -36,11 +36,8 @@ waistBandWidth:
   title: Breedte tailleband
   description: De breedte van de tailleband.
 waistEase:
-  title: overwijdte taille
+  title: Overwijdte taille
   description: Hoeveelheid overwijdte aan de taille.
-waistSideSeamRaise:
-  title: Ongebruikt
-  description: Ongebruikt.
 zipperLocation:
   title: Locatie rits
   description: De locatie van de rits.

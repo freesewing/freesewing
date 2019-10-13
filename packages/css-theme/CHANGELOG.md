@@ -6,6 +6,11 @@
 **Note:** Version bump only for package css-theme
 
 
+## 2.1.1 (2019-10-13)
+
+### Fixed
+
+ - Fixed padding issue on mobile
 ## 2.1.0 (2019-10-06)
 
 ### Changed
