@@ -271,3 +271,5 @@ oneMomentPlease: Een momentje alsjeblieft
 loadingMagic: De magie is aan het laden
 estimate: Schatting
 actual: Feitelijk
+weEstimateYM2B: "We estimate your {measurement} to be around:"
+
