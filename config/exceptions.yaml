@@ -53,6 +53,13 @@ packageJson:
   i18n:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
+  gatsby-remark-jargon:
+    keywords:
+      - remark
+      - mdx
+      - jargon
+      - gatsby
+      - gatsby-plugin
   prettier-config:
     main: "index.json"
     module: '!'
