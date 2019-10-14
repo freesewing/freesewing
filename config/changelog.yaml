@@ -7,6 +7,12 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.2:
+  date: 2019-10-14
+  Fixed:
+    i18n:
+      - Fixed issue where symlinks were causing all languages to export English strings
+
 2.1.1:
   date: 2019-10-13
   Added:
