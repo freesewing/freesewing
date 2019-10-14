@@ -31,7 +31,7 @@
     "cp-file": "^6.0.0",
     "execa": "^1.0.0",
     "git-config-path": "^2.0.0",
-    "github-username": "^4.1.0",
+    "github-username": "^5.0.1",
     "globby": "^9.0.0",
     "handlebars": "^4.1.0",
     "inquirer": "^6.2.2",
