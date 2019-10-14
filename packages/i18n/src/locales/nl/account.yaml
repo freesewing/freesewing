@@ -51,3 +51,5 @@ units: Eenheden
 usernameInfo: Iedereen start met een willekeurig gegenereerde gebruikersnaam. Dat is niet erg persoonlijk, dus je kunt je gebruikersnaam veranderen in iets meer jij. Zoals je naam, of <em> scheetje </em> of wat dan ook. Typ gewoon de gebruikersnaam die u wilt hebben.
 usernameTitle: Kies een gebruikersnaam
 username: Gebruikersnaam
+accountIsInactive: Je account is inactief
+accountNeedsActivation: Vooraleer u kan inloggen, moet u uw account activeren. Controleer uw inbox voor onze registratie e-mail en klik op de link binnen deze e-mail.

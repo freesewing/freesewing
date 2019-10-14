@@ -6,6 +6,16 @@
 **Note:** Version bump only for package wahid
 
 
+## 2.1.2 (2019-10-14)
+
+**Note:** Version bump only for package wahid
+
+
+## 2.1.1 (2019-10-13)
+
+**Note:** Version bump only for package wahid
+
+
 ## 2.1.0 (2019-10-06)
 
 **Note:** Version bump only for package wahid

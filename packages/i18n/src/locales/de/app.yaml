@@ -1,14 +1,14 @@
 ---
-100PercentCommunity: 100% community DONE
+100PercentCommunity: 100% Community
 100PercentFree: 100% kostenlos
 100PercentOpenSource: 100% Open Source DONE
 aboutFreesewing: Über Freesewing
-aboutGist1: Ein Kern enthält alle Informationen, die zum Erstellen eines Musters erforderlich sind.
-aboutGist2: Sie können einen vorhandenen Kern hier kopieren und einfügen, um ihn als Ausgangspunkt für Ihren eigenen Entwurf zu verwenden.
+aboutGist1: Ein Kernstück enthält alle Informationen, die zum Erstellen eines Musters erforderlich sind.
+aboutGist2: Sie können ein vorhandenes Kernstück hier kopieren und einfügen, um es als Ausgangspunkt für Ihren eigenen Entwurf zu verwenden.
 account: Konto
 accountCreated: Account erstellt
 actions: Aktions
-allDocumentation: Alle dokumentationen
+allDocumentation: Alle Dokumentationen
 andThatIsAwesome: Und das ist großartig
 applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
@@ -49,9 +49,9 @@ copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
 countModelsLackingForPattern: Sie haben {count}-Modelle, denen die zum Messen von {pattern} erforderlichen Maße fehlen.
 created: Erstellt
-createModel: Erstellen Sie das Modell
+createModel: Erstellen Sie ein Modell
 custom: Angepasst
-customSeamAllowance: Kundenspezifische Nahtzugabe
+customSeamAllowance: Benutzerdefinierte Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
@@ -122,7 +122,7 @@ newDraftFromGist: Neue muster aus Kern
 newDraft: Neuer Entwurf
 newModel: Neues Modell
 newPattern: 'Neu {pattern}'
-newPatternForModel: 'New {pattern} for {model}'
+newPatternForModel: 'Neues {pattern} für {model}'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
@@ -160,13 +160,13 @@ relatedLinks: Verwandte Links
 remove: Löschen
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
+resendActivationEmailMessage: 'Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht.'
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
-restorePatternDefaults: Restore pattern defaults
-restoreRecipeDefaults: Restore recipe defaults
+restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
+restoreRecipeDefaults: Standardwerte für Rezept wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
 searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
@@ -232,7 +232,7 @@ getStarted: Jetzt loslegen
 apiReference: API-Referenz
 tutorial: Anleitung
 editThisPage: Diese Seite bearbeiten
-loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
+loginRequiredRedirect: 'Sie wurden auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
 recipes: Rezepte
 various: Verschiedenes
 sewing: Nähen
@@ -247,27 +247,29 @@ noModel: Du hast noch keine Modelle (noch). FreeSewing erzeugt maßgeschneiderte
 noModel2: Als erstes erstellen Sie bitte ein Modell mit Ihren Massen oder den Massen der Person, für die Sie ein Schnittmuster erstellen möchten.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-useRecipeModel: "Use the recipe's model"
-createReplica: Create a replica
-showDetails: Show details
-clickBelowToLogOut: Click below to log out
-compare: Compare
-saveRecipe: Save recipe
-exportPattern: Export pattern
-recreate: Recreate
-seeYouLaterUser: See you later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
-exportRecipe: Export recipe
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
-instructions: Instructions
-hide: Hide
-show: Show
-oneMomentPlease: One moment please
-loadingMagic: We are loading the magic
-estimate: Estimate
-actual: Actual
+useRecipeModel: "Rezeptmodell verwenden"
+createReplica: Duplikat erstellen
+showDetails: Details anzeigen
+clickBelowToLogOut: Klicken Sie unten sich abzumelden
+compare: Vergleichen
+saveRecipe: Rezept speichern
+exportPattern: Schnittmuster exportieren
+recreate: Wiederherstellen
+seeYouLaterUser: Auf Wiedersehen {user}
+exportForPrinting: Exportieren für den Druck
+exportForEditing: Exportieren für Bearbeitung
+exportRecipe: Rezept exportieren
+startWithNeckTitle: Beginnen Sie mit dem Hals-Umfang
+startWithNeckDescription: Auf Basis Ihres Hals-Umfangs können wir Ihnen helfen, Fehler in Ihren Messungen zu erkennen.
+whatYouNeed: Was Sie benötigen
+fabricOptions: Stoffauswahl
+cutting: Zuschnitt
+instructions: Anleitung
+hide: Verbergen
+show: Anzeigen
+oneMomentPlease: Einen Moment bitte
+loadingMagic: Wir laden die Magie
+estimate: Schätzung
+actual: Aktuell
+weEstimateYM2B: "We estimate your {measurement} to be around:"
+

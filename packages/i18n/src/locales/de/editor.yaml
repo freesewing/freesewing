@@ -2,7 +2,7 @@
 allMarkdownContent: Alle Markdown-Inhalte
 attributeTheseChangesTo: Attributieren Sie diese Änderungen in
 blurb: Klappentext
-body: Body
+body: Körper
 caption: Bildbeschriftung
 category: Kategorie
 changesAreSubmitted: "{commit} werden zur Überprüfung im Rahmen von {pr} eingereicht"
@@ -15,13 +15,13 @@ createLanguageVersion: Erstellen Sie die deutsche Version
 createOnline: Online erstellen
 editEnglishVersion: Bearbeiten Sie die englische Version
 editOnline: Online bearbeiten
-editor: Editor
+editor: AutorIn
 githubCommitMatchingMsg: GitHub vergleicht Commits an Benutzer basierend auf der E-Mail-Adresse des Committers
 linkTitle: Linktitel
-missingSomething: Etwas vermissen?
+missingSomething: Vermissen Sie etwas?
 open: Öffnen
 provideAnOptionalCommitMessage: Geben Sie eine (optionale) Commit-Nachricht an
-pullRequest: Pull request
+pullRequest: Pull Request
 thankYouForYourContribution: Danke für Ihren Beitrag
 thisIsASharedOption: Dies ist eine gemeinsam genutzte Option
 thisOptionIsSharedByMoreThanOnePattern: Diese Option wird von mehreren Mustern gemeinsam genutzt

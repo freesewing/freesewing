@@ -18,16 +18,24 @@ const formatMm = (val, units, format = 'html') => {
       inches = Math.floor(fraction)
       rest = fraction - inches
     }
+    let suffix = ''
+    if (format === 'html') suffix = '"'
     let fraction128 = Math.round(rest * 128)
     if (fraction128 == 0) return formatImperial(negative, inches)
-    if (fraction128 % 64 == 0) return formatImperial(negative, inches, fraction128 / 64, 2, format)
-    if (fraction128 % 32 == 0) return formatImperial(negative, inches, fraction128 / 32, 4, format)
-    if (fraction128 % 16 == 0) return formatImperial(negative, inches, fraction128 / 16, 8, format)
-    if (fraction128 % 8 == 0) return formatImperial(negative, inches, fraction128 / 8, 16, format)
-    if (fraction128 % 4 == 0) return formatImperial(negative, inches, fraction128 / 4, 32, format)
-    if (fraction128 % 2 == 0) return formatImperial(negative, inches, fraction128 / 2, 64, format)
-    if (format === 'html') return negative + Math.round(fraction * 100) / 100 + '"'
-    else return negative + Math.round(fraction * 100) / 100
+    if (fraction128 % 64 == 0)
+      return formatImperial(negative, inches, fraction128 / 64, 2, format) + suffix
+    if (fraction128 % 32 == 0)
+      return formatImperial(negative, inches, fraction128 / 32, 4, format) + suffix
+    if (fraction128 % 16 == 0)
+      return formatImperial(negative, inches, fraction128 / 16, 8, format) + suffix
+    if (fraction128 % 8 == 0)
+      return formatImperial(negative, inches, fraction128 / 8, 16, format) + suffix
+    if (fraction128 % 4 == 0)
+      return formatImperial(negative, inches, fraction128 / 4, 32, format) + suffix
+    if (fraction128 % 2 == 0)
+      return formatImperial(negative, inches, fraction128 / 2, 64, format) + suffix
+    if (format === 'html') return negative + Math.round(fraction * 100) / 100 + suffix
+    else return negative + Math.round(fraction * 100) / 100 + suffix
   } else {
     if (format === 'html') return roundMm(val / 10) + 'cm'
     else return roundMm(val / 10)

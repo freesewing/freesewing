@@ -160,7 +160,7 @@ relatedLinks: Liens connexes
 remove: Supprimer
 reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
-resendActivationEmailMessage: 'Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation'
+resendActivationEmailMessage: 'Fill in the E-mail address you signed up with, and we''ll send you a new confirmation message.'
 resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réintialiser le mot de passe
 reset: Réinitialiser
@@ -271,3 +271,5 @@ oneMomentPlease: One moment please
 loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
+weEstimateYM2B: "We estimate your {measurement} to be around:"
+

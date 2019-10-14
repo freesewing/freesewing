@@ -1,19 +1,19 @@
 ---
 backScyeDart:
-  title: Rückseite Scye Dart
+  title: Rückwärtige Armlochabnäher
   description: Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss.
 frontScyeDart:
-  title: Vorderer scye dart
-  description: Die Menge, die in einem Pfeil an der Vorderseite des Armlochs entnommen werden muss
+  title: Vorderer Armlochabnäher
+  description: Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss.
 pocketLocation:
-  title: Taschenort
+  title: Taschenplatzierung
   description: Bestimmt die Platzierung der Tasche
 pocketWidth:
   title: Taschenbreite
   description: Bestimmt die Breite der Tasche
 weltHeight:
   title: Welthöhe
-  description: Bestimmt die Höhe des Welt
+  description: Bestimmt die Höhe der Paspel
 necklineDrop:
   title: Ausschnitt Tiefe
   description: Definiert wie tief der Ausschnitt vorne ausgeschnitten ist
@@ -27,17 +27,17 @@ hemRadius:
   title: Saumradius
   desciption: Der Betrag, um den der Saum gerundet ist
 backInset:
-  title: Back inset
+  title: Rückseite Ausschnitt
   description: Wie viel die Rückseite des Armlochs nach innen verschoben ist
 frontInset:
-  title: Front inset
+  title: Vorderseite Ausschnitt
   description: Wieviel die das Armloch an der Vorderseite nach Innen verschoben wird
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Schulterversatz nach innen
+  description: Wieviel die Schulternaht nach inne Richtung Schulter versetzt wird
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Nackenauschnitt
+  description: Wieviel die Schulternaht am Nacken nach Innen versetzt wird
 pocketAngle:
   title: Winkel der Tasche
-  description: Angle of the pocket slant
+  description: Winkel der Taschenneigung

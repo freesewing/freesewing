@@ -270,3 +270,5 @@ oneMomentPlease: One moment please
 loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
+weEstimateYM2B: "We estimate your {measurement} to be around:"
+

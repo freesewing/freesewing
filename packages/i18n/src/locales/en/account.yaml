@@ -50,3 +50,5 @@ units: Units
 usernameInfo: Everyone starts with a randomly generated username. That isn't very personal, so you can change your username to something more you. Like your name, or <em>queenoffarts</em> or whatever.
 usernameTitle: Please choose your username
 username: Username
+accountIsInactive: Your account is inactive
+accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
