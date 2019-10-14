@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-scalebox
 
 
+## 2.1.2 (2019-10-14)
+
+**Note:** Version bump only for package plugin-scalebox
+
+
 ## 2.1.1 (2019-10-13)
 
 **Note:** Version bump only for package plugin-scalebox
