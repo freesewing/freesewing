@@ -7,14 +7,39 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
 
   if (!neckCircumference)
     throw new Error('neckstimate() requires a neck circumference in mm as first parameter')
-  if (!measurement || typeof data[measurement] === 'undefined') {
+  if (!measurement) {
+    // No measurement passed
     throw new Error(
-      'neckstimate() requires a valid measurement name as second parameter. (received ' +
-        measurement +
+      'new neckstimate() requires a valid measurement name as second parameter. (received ' +
+        JSON.stringify(measurement) +
         ')'
     )
   }
+  if (typeof data[measurement] === 'undefined') {
+    // Unknown measurement passed
+    if (typeof withBreasts[measurement] === 'undefined') {
+      // Fully unknown
+      throw new Error(
+        'neckstimate() requires a valid measurement name as second parameter. (received ' +
+          measurement +
+          ')'
+      )
+    } else {
+      // This is a breasts measurements on a no-breasts model
+      // Let's at least warn the user
+      console.log(
+        'WARNING: You used neckstimate to calculate the ' +
+          measurement +
+          ' measurement, but this model has no breasts.'
+      )
+      return (
+        withBreasts[measurement].base +
+        (neckCircumference - withBreasts.neckCircumference.base) * withBreasts[measurement].slope
+      )
+    }
+  }
 
+  // This is what should happen
   return (
     data[measurement].base +
     (neckCircumference - data.neckCircumference.base) * data[measurement].slope
