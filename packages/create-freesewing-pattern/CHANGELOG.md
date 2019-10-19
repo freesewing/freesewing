@@ -6,6 +6,11 @@
 **Note:** Version bump only for package create-freesewing-pattern
 
 
+## 2.1.3 (2019-10-18)
+
+**Note:** Version bump only for package create-freesewing-pattern
+
+
 ## 2.1.2 (2019-10-14)
 
 **Note:** Version bump only for package create-freesewing-pattern

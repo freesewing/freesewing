@@ -12,6 +12,9 @@ Unreleased:
   Added:
     i18n:
       - More translated strings
+  Changed:
+    utils:
+      - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
   Fixed:
     utils:
       - "[#250](https://github.com/freesewing/freesewing.org/issues/2503):
