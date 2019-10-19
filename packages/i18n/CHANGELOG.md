@@ -6,6 +6,11 @@
 **Note:** Version bump only for package i18n
 
 
+## 2.1.3 (2019-10-18)
+
+### Added
+
+ - More translated strings
 ## 2.1.2 (2019-10-14)
 
 ### Fixed

@@ -12,5 +12,9 @@ womenswear: Frauenkleidung
 accessories: Accessoires
 block: Grundschnitt
 pattern: Schnittmuster
+<<<<<<< HEAD
 byPattern: Filter by pattern
+=======
+byPattern: Filtern nach Schnittmuster
+>>>>>>> develop
 

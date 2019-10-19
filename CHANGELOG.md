@@ -5,6 +5,25 @@
 ## Unreleased
 
 
+## 2.1.3 (2019-10-18)
+
+### i18n
+
+#### Added
+
+ - More translated strings
+
+### utils
+
+#### Changed
+
+ - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
+
+#### Fixed
+
+ - [#250](https://github.com/freesewing/freesewing.org/issues/2503): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
+
+
 ## 2.1.2 (2019-10-14)
 
 ### i18n

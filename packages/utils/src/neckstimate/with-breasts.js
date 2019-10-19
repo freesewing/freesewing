@@ -76,7 +76,7 @@ export default {
     base: 325
   },
   shoulderToShoulder: {
-    slope: 0.3,
+    slope: 1,
     base: 410
   },
   shoulderToWrist: {
