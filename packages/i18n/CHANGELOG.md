@@ -6,6 +6,16 @@
 **Note:** Version bump only for package i18n
 
 
+## 2.1.2 (2019-10-14)
+
+### Fixed
+
+ - Fixed issue where symlinks were causing all languages to export English strings
+## 2.1.1 (2019-10-13)
+
+**Note:** Version bump only for package i18n
+
+
 ## 2.1.0 (2019-10-06)
 
 ### Added
