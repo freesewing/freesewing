@@ -1,12 +1,4 @@
-<p align="center">
-  <a title="Visit freesewing.org" href="https://freesewing.org/">
-    <img src="https://freesewing.org/logo.svg" align="center" width="150px" alt="Freesewing logo"/>
-  </a>
-</p>
-<h4 align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/">FreeSewing</a>
-<br><sup>An open source platform for made-to-measure sewing patterns</sup>
-</h4>
+![FreeSewing](https://freesewing.org/banner.jpg)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/core"
   title="@freesewing/core on NPM"
@@ -49,7 +41,11 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## About FreeSewing 🤔
+## What am I looking at? 🤔
+
+This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).
+
+## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
