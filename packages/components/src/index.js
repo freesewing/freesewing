@@ -10,6 +10,7 @@ export default [
   'Logo',
   'Navbar',
   'Ogol',
+  'Render',
   'Robot',
   'Spinner',
   'SampleConfigurator',

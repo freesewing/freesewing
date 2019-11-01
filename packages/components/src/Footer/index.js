@@ -48,7 +48,7 @@ const Footer = props => {
         ))}
       </p>
       <p data-test="text">
-        <FormattedHTMLMessage id="app.txt-footer" />
+        <FormattedHTMLMessage id="app.txt-footer" />:
       </p>
       {props.patrons}
       <div style={styles.container}>
@@ -70,7 +70,9 @@ const Footer = props => {
           )
         })}
       </div>
-      <p className="version">{version}</p>
+      <p className="version">
+        <a href={'https://github.com/freesewing/freesewing/releases/tag/v' + version}>v{version}</a>
+      </p>
     </footer>
   )
 }

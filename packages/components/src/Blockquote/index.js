@@ -16,13 +16,11 @@ const Blockquote = props => {
 
 Blockquote.propTypes = {
   type: PropTypes.string.isRequired,
-  children: PropTypes.node,
-  style: PropTypes.object
+  children: PropTypes.node
 }
 
 Blockquote.defaultProps = {
   type: 'note',
-  children: null,
-  style: {}
+  children: null
 }
 export default Blockquote
