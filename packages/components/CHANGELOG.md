@@ -6,6 +6,15 @@
 **Note:** Version bump only for package components
 
 
+## 2.1.4 (2019-11-01)
+
+### Deprecated
+
+ - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
+
+### Removed
+
+ - The Ogol component has been removed as it wasn't used
 ## 2.1.3 (2019-10-18)
 
 **Note:** Version bump only for package components
