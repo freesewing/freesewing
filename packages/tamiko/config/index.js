@@ -1,25 +1,25 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "tamiko",
+  name: 'tamiko',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "womenswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'unisex',
+  type: 'pattern',
   difficulty: 1,
-  tags: ["top"],
+  tags: ['top'],
   optionGroups: {
-    fit: ["armholeDepthFactor", "chestEase", "shoulderSlope"],
-    style: ["flare", "lengthBonus", "shoulderseamLength"]
+    fit: ['armholeDepthFactor', 'chestEase', 'shoulderSlope'],
+    style: ['flare', 'lengthBonus', 'shoulderseamLength']
   },
   measurements: [
-    "shoulderToShoulder",
-    "chestCircumference",
-    "centerBackNeckToWaist",
-    "naturalWaistToHip"
+    'shoulderToShoulder',
+    'chestCircumference',
+    'centerBackNeckToWaist',
+    'naturalWaistToHip'
   ],
-  parts: ["top"],
+  parts: ['top'],
   options: {
     armholeDepthFactor: {
       pct: 50,
@@ -52,4 +52,4 @@ export default {
       max: 25
     }
   }
-};
+}

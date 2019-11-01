@@ -1,45 +1,45 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "aaron",
+  name: 'aaron',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'unisex',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["underwear", "top", "basics"],
+  tags: ['underwear', 'top', 'basics'],
   optionGroups: {
-    fit: ["chestEase", "hipsEase", "stretchFactor"],
+    fit: ['chestEase', 'hipsEase', 'stretchFactor'],
     style: [
-      "armholeDrop",
-      "backlineBend",
-      "necklineBend",
-      "necklineDrop",
-      "shoulderStrapWidth",
-      "shoulderStrapPlacement",
-      "lengthBonus"
+      'armholeDrop',
+      'backlineBend',
+      'necklineBend',
+      'necklineDrop',
+      'shoulderStrapWidth',
+      'shoulderStrapPlacement',
+      'lengthBonus'
     ]
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToShoulder",
-    "hipsCircumference"
+    'bicepsCircumference',
+    'centerBackNeckToWaist',
+    'chestCircumference',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'hipsCircumference'
   ],
   dependencies: {
-    front: "base",
-    back: "front"
+    front: 'base',
+    back: 'front'
   },
   inject: {
-    front: "base",
-    back: "front"
+    front: 'base',
+    back: 'front'
   },
-  hide: ["base"],
+  hide: ['base'],
   options: {
     // Constants
     collarFactor: 4.8,
@@ -64,4 +64,4 @@ export default {
     shoulderStrapWidth: { pct: 15, min: 10, max: 40 },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80 }
   }
-};
+}
