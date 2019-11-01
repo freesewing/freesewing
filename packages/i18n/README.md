@@ -1,9 +1,4 @@
-<p align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/logo.svg" align="center" width="150px" alt="FreeSewing logo"/></a>
-<br>
-<a href="https://freesewing.org/">FreeSewing</a>
-</p>
-<p align="center">An open source platform for made-to-measure sewing patterns</p>
+![FreeSewing](https://freesewing.org/banner.jpg)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/i18n"
   title="@freesewing/i18n on NPM"
@@ -46,7 +41,10 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/i18n
+## What am I looking at? 🤔
+
+This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
+This folder holds **@freesewing/i18n**
 
 Translations for the FreeSewing project
 
@@ -104,7 +102,7 @@ We also use it in our [backend repository](https://github.com/freesewing/website
 to translate the emails we send out to users.
 
 
-## About FreeSewing 🤔
+## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
@@ -136,7 +134,7 @@ should [become a patron](https://freesewing.org/patrons/join).
 ## Links 👩‍💻
 
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
- - 💻 Developers website: [freesewing.dev](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
  - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)

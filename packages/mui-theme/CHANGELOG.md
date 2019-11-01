@@ -6,6 +6,11 @@
 **Note:** Version bump only for package mui-theme
 
 
+## 2.1.4 (2019-11-01)
+
+**Note:** Version bump only for package mui-theme
+
+
 ## 2.1.3 (2019-10-18)
 
 **Note:** Version bump only for package mui-theme

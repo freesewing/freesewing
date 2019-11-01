@@ -8,7 +8,7 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'menswear',
+  department: 'unisex',
   type: 'pattern',
   difficulty: 3,
   tags: [

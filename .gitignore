@@ -12,6 +12,7 @@ packages/components/Icon
 packages/components/LineDrawing
 packages/components/Logo
 packages/components/Navbar
+packages/components/Render
 packages/components/Ogol
 packages/components/Robot
 packages/components/SampleConfigurator
