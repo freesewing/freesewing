@@ -8,6 +8,10 @@
 
 ## 2.1.4 (2019-11-01)
 
+### Changed
+
+ - Footer version number now links to Github release page
+
 ### Deprecated
 
  - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
