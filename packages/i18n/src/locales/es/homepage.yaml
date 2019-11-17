@@ -8,7 +8,7 @@ row1col3text: FreeSewing uses a <em>recipe</em> to capture how you configure you
 row2col1title: Looking for our code?
 row2col1text: "Our developer documentation is hosted on <a href='https://freesewing.dev'>freesewing.dev</a>. You'll find links to all our repositories there, as well as in-depth documentation, tutorials, and examples."
 row2col2title: Want to help out?
-row2col2text: "Awesome ❤️<br>Our <a href='https://freesewing.dev/contributor'>contributor documentation</a> is a good starting point. We also have dedicated guides for <a href='https://freesewing.dev/translator'>translators</a> and <a href='https://freesewing.dev/editor'>editors</a>."
+row2col2text: "Awesome ❤️<br>Our <a href='https://freesewing.dev/guides/contributor/'>contributor documentation</a> is a good starting point. We also have dedicated guides for <a href='https://freesewing.dev/guides/translator/'>translators</a> and <a href='https://freesewing.dev/guides/editor/'>editors</a>."
 row2col3title: More questions?
-row2col3text: "Our <a href='/docs/about/faq'>frequently asked questions might have the answer you're looking for. If not, <a href='https://gitter.im/freesewing/freesewing'>join our chat room</a> and we'll try to help you there."
+row2col3text: "Our <a href='/docs/about/faq/'>frequently asked questions might have the answer you're looking for. If not, <a href='https://gitter.im/freesewing/freesewing'>join our chat room</a> and we'll try to help you there."
 
