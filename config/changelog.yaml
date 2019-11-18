@@ -7,6 +7,12 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.5:
+  date:
+  Fixed:
+    plugin-dimension:
+      - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
+
 2.1.4:
   date: 2019-11-01
   Added:
