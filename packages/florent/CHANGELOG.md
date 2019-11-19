@@ -6,6 +6,11 @@
 **Note:** Version bump only for package florent
 
 
+## 2.1.4-1 (2019-11-19)
+
+**Note:** Version bump only for package florent
+
+
 ## 2.1.4 (2019-11-01)
 
 **Note:** Version bump only for package florent
