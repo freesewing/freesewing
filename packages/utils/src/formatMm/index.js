@@ -21,7 +21,7 @@ const formatMm = (val, units, format = 'html') => {
     let suffix = ''
     if (format === 'html') suffix = '"'
     let fraction128 = Math.round(rest * 128)
-    if (fraction128 == 0) return formatImperial(negative, inches)
+    if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
     if (fraction128 % 64 == 0)
       return formatImperial(negative, inches, fraction128 / 64, 2, format) + suffix
     if (fraction128 % 32 == 0)
