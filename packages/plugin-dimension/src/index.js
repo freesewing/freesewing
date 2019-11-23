@@ -6,7 +6,7 @@ function drawDimension(from, to, so, self) {
     .move(from)
     .line(to)
     .attr('class', 'mark')
-    .attr('data-text', so.text || self.units(from.dist(to)))
+    .attr('data-text', so.text || self.units(from.dist(to)).replace('"', '&#8220;'))
     .attr('data-text-class', 'fill-mark center')
   if (!so.noStartMarker) dimension.attributes.set('marker-start', 'url(#dimensionFrom)')
   if (!so.noEndMarker) dimension.attributes.set('marker-end', 'url(#dimensionTo)')
