@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.1.4"
+    "@freesewing/core": "^2.1.5"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -43,7 +43,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=8.0.0",

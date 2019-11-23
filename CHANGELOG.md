@@ -5,7 +5,7 @@
 ## Unreleased
 
 
-## 2.1.5@next (2019-11-19)
+## 2.1.4-1 (2019-11-19)
 
 ### plugin-dimension
 
