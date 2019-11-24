@@ -7,6 +7,19 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.6:
+  date: 2019-11-24
+  Fixed:
+    utils:
+      - "[#317](https://github.com/freesewing/freesewing.org/issues/317):
+        Fixed bug where format was not passed to formatImperial"
+
+2.1.5:
+  date: 2019-11-19
+  Fixed:
+    plugin-dimension:
+      - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
+
 2.1.4:
   date: 2019-11-01
   Added:
@@ -36,7 +49,7 @@ Unreleased:
       - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
   Fixed:
     utils:
-      - "[#250](https://github.com/freesewing/freesewing.org/issues/2503):
+      - "[#250](https://github.com/freesewing/freesewing.org/issues/250):
         Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'"
 
 2.1.2:

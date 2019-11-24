@@ -6,6 +6,16 @@
 **Note:** Version bump only for package plugin-dimension
 
 
+## 2.1.6 (2019-11-24)
+
+**Note:** Version bump only for package plugin-dimension
+
+
+## 2.1.5 (2019-11-19)
+
+### Fixed
+
+ - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
 ## 2.1.4 (2019-11-01)
 
 **Note:** Version bump only for package plugin-dimension

@@ -87,7 +87,7 @@
     "husky": "^3.0.5",
     "js-yaml": "^3.13.1",
     "jsonlint": "^1.6.3",
-    "lerna": "^3.13.3",
+    "lerna": "^3.18.4",
     "lint-staged": "^9.2.1",
     "mocha": "^6.1.4",
     "mustache": "^3.0.1",
