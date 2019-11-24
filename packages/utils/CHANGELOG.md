@@ -6,7 +6,12 @@
 **Note:** Version bump only for package utils
 
 
-## 2.1.4-1 (2019-11-19)
+## 2.1.6 (2019-11-24)
+
+### Fixed
+
+ - [#317](https://github.com/freesewing/freesewing.org/issues/317): Fixed bug where format was not passed to formatImperial
+## 2.1.5 (2019-11-19)
 
 **Note:** Version bump only for package utils
 
@@ -24,7 +29,7 @@
 
 ### Fixed
 
- - [#250](https://github.com/freesewing/freesewing.org/issues/2503): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
+ - [#250](https://github.com/freesewing/freesewing.org/issues/250): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
 ## 2.1.2 (2019-10-14)
 
 **Note:** Version bump only for package utils

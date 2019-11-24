@@ -6,7 +6,12 @@
 **Note:** Version bump only for package models
 
 
-## 2.1.4-1 (2019-11-19)
+## 2.1.6 (2019-11-24)
+
+**Note:** Version bump only for package models
+
+
+## 2.1.5 (2019-11-19)
 
 **Note:** Version bump only for package models
 
