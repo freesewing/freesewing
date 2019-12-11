@@ -34,7 +34,7 @@
     "github-username": "^5.0.1",
     "globby": "^10.0.1",
     "handlebars": "^4.1.0",
-    "inquirer": "^6.2.2",
+    "inquirer": "^7.0.0",
     "make-dir": "^3.0.0",
     "ora": "^3.1.0",
     "p-each-series": "^1.0.0",
