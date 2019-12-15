@@ -7,6 +7,13 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.7:
+  date: 2019-12-15
+  Fixed:
+    carlton:
+      - Added missing scalebox
+      - Re-numbered tail as part 5
+
 2.1.6:
   date: 2019-11-24
   Fixed:

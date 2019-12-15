@@ -6,6 +6,12 @@
 **Note:** Version bump only for package carlton
 
 
+## 2.1.7 (2019-12-15)
+
+### Fixed
+
+ - Added missing scalebox
+ - Re-numbered tail as part 5
 ## 2.1.6 (2019-11-24)
 
 **Note:** Version bump only for package carlton

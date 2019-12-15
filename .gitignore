@@ -48,6 +48,7 @@ packages/utils/validateEmail
 packages/utils/validateTld
 
 packages/*/example/yarn.lock
+packages/*/report
 
 # dependencies
 node_modules

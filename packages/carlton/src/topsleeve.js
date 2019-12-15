@@ -9,7 +9,8 @@ export default function(part) {
     options,
     macro,
     paths,
-    Path
+    Path,
+    snippets
   } = part.shorthand()
 
   // Add cuff
@@ -55,6 +56,8 @@ export default function(part) {
       from: points.boxBottom,
       to: points.top
     })
+    macro('scalebox', { at: points.tsWristLeftHelperTop })
+    delete snippets.logo
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
