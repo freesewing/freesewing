@@ -11,6 +11,7 @@ for d in ../packages/*/ ; do {
   cd $d
   # do something here
   pwd
+  npm run build
   cd ..
 }
 done

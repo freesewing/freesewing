@@ -6,6 +6,11 @@
 **Note:** Version bump only for package utils
 
 
+## 2.1.7 (2019-12-15)
+
+**Note:** Version bump only for package utils
+
+
 ## 2.1.6 (2019-11-24)
 
 ### Fixed
