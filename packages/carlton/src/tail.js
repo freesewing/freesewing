@@ -70,7 +70,7 @@ export default function(part) {
     points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5)
     macro('title', {
       at: points.title,
-      nr: 3,
+      nr: 5,
       title: 'tail'
     })
 
