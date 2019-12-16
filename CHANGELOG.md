@@ -5,6 +5,15 @@
 ## Unreleased
 
 
+## 2.1.8 (2019-12-16)
+
+### simon
+
+#### Fixed
+
+ - [#416](https://github.com/freesewing/freesewing.org/issues/416): Fixed bug in simon sleeve
+
+
 ## 2.1.7 (2019-12-15)
 
 ### carlton

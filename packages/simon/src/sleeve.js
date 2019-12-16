@@ -51,7 +51,6 @@ export default part => {
   let pleats = 0
   let pleatLength = measurements.shoulderToWrist * 0.15
   if (drape > 0) {
-    pl
     let shiftRight = [
       'cuffRightCuspCp1',
       'cuffRightCusp',
