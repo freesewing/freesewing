@@ -6,6 +6,11 @@
 **Note:** Version bump only for package prettier-config
 
 
+## 2.1.8 (2019-12-16)
+
+**Note:** Version bump only for package prettier-config
+
+
 ## 2.1.7 (2019-12-15)
 
 **Note:** Version bump only for package prettier-config
