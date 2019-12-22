@@ -25,7 +25,7 @@ function useBackend(baseURL, timeout = 10000) {
   backend.login = (username, password) => api.post('/login', { username, password }) // Login
   backend.confirmationLogin = id => api.post('/confirm/login', { id }) // Confirmation-based login
   backend.recoverAccount = username => api.post('/account/recover', { username: username }) // Ask for a password reset
-  backend.loadGist = handle => api.get('/gist/' + handle) // Load recipe/gist anonymously
+  backend.loadPattern = handle => api.get('/pattern/' + handle) // Load pattern anonymously
   backend.loadPatrons = handle => api.get('/patrons') // Load patron list
 
   // Users
@@ -44,11 +44,11 @@ function useBackend(baseURL, timeout = 10000) {
   backend.removeModel = (handle, token) => api.delete('/models/' + handle, auth(token)) // Remove model
   //backend.removeModels = (data, token) => api.post('/remove/models', data, auth(token)) // Delete multiple models
 
-  // Recipes
-  backend.loadRecipe = (handle, token) => api.get('/recipes/' + handle, auth(token)) // Load recipe
-  backend.createRecipe = (data, token) => api.post('/recipes', data, auth(token)) // Create recipe
-  backend.removeRecipe = (handle, token) => api.delete('/recipes/' + handle, auth(token)) // Remove recipe
-  backend.saveRecipe = (handle, data, token) => api.put('/recipes/' + handle, data, auth(token)) // Update recipe
+  // Patterns
+  backend.loadPattern = (handle, token) => api.get('/patterns/' + handle, auth(token)) // Load pattern
+  backend.createPattern = (data, token) => api.post('/patterns', data, auth(token)) // Create pattern
+  backend.removePattern = (handle, token) => api.delete('/patterns/' + handle, auth(token)) // Remove pattern
+  backend.savePattern = (handle, data, token) => api.put('/patterns/' + handle, data, auth(token)) // Update pattern
 
   // Admin
   backend.adminSearch = (query, token) => api.post('/admin/search', { query }, auth(token)) // Search users as admin
