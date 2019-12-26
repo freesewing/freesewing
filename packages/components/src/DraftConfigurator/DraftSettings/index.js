@@ -20,8 +20,9 @@ const DraftSettings = props => {
     else shown.splice(index, 1)
     setExpanded(shown)
   }
-  const getDefault = (setting, recipe = false) => {
-    if (recipe && typeof recipe.settings[setting] !== 'undefined') return recipe.settings[setting]
+  const getDefault = (setting, pattern = false) => {
+    if (pattern && typeof pattern.settings[setting] !== 'undefined')
+      return pattern.settings[setting]
     switch (setting) {
       case 'sa':
         return 10
@@ -67,8 +68,8 @@ const DraftSettings = props => {
       name: setting,
       labels: labels[setting],
       noDocs: props.noDocs,
-      dflt: getDefault(setting, props.recipe),
-      patternDflt: getDefault(setting)
+      dflt: getDefault(setting, props.pattern),
+      designDflt: getDefault(setting)
     }
     childProps.title = <FormattedMessage id={'settings.' + setting + '.title'} />
     childProps.desc = <FormattedMessage id={'settings.' + setting + '.description'} />
@@ -81,11 +82,11 @@ const DraftSettings = props => {
       }
     }
     if (
-      typeof props.gist !== 'undefined' &&
-      typeof props.gist.settings !== 'undefined' &&
-      typeof props.gist.settings[setting] !== 'undefined'
+      typeof props.data !== 'undefined' &&
+      typeof props.data.settings !== 'undefined' &&
+      typeof props.data.settings[setting] !== 'undefined'
     )
-      childProps.value = props.gist.settings[setting]
+      childProps.value = props.data.settings[setting]
     else childProps.value = null
 
     return childProps
@@ -108,7 +109,7 @@ const DraftSettings = props => {
         <DraftSettingPaperless {...addProps('paperless')} />
         <DraftSettingAdvanced {...addProps('advanced')} />
       </ul>
-      {props.gist.settings.advanced ? (
+      {props.data.settings.advanced ? (
         <ul className="config l2">
           {Object.keys(groups).map(group => {
             let open = true

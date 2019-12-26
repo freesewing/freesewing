@@ -29,7 +29,7 @@ const DraftSettingLanguage = props => {
       name={props.name}
       value={value}
       dflt={props.dflt}
-      patternDflt={props.intl.locale}
+      designDflt={props.intl.locale}
       onChange={update}
       label={'po-list-' + props.name}
       updateValue={update}
@@ -41,7 +41,7 @@ const DraftSettingLanguage = props => {
     <li>
       <OptionPreamble
         dflt={props.dflt}
-        patternDflt={props.intl.locale}
+        designDflt={props.intl.locale}
         value={value}
         desc={props.desc}
         title={props.title}

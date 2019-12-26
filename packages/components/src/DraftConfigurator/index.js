@@ -10,28 +10,28 @@ const DraftConfigurator = props => {
     <ul className="config l1">
       <li>
         <span>
-          <FormattedMessage id="app.patternOptions" />
+          <FormattedMessage id="app.designOptions" />
         </span>
         <PatternOptions
           noDocs={props.noDocs}
           config={props.config}
-          gist={props.gist}
-          recipe={props.recipe}
-          updateValue={(name, value) => props.updateGist(value, 'settings', 'options', name)}
+          data={props.data}
+          pattern={props.pattern}
+          updateValue={(name, value) => props.updatePatternData(value, 'settings', 'options', name)}
           raiseEvent={props.raiseEvent}
           units={props.units}
         />
       </li>
       <li>
         <span>
-          <FormattedMessage id="app.settings" />
+          <FormattedMessage id="app.patternOptions" />
         </span>
         <DraftSettings
           noDocs={props.noDocs}
           config={props.config}
-          gist={props.gist}
-          recipe={props.recipe}
-          updateValue={(name, value) => props.updateGist(value, 'settings', name)}
+          data={props.data}
+          pattern={props.pattern}
+          updateValue={(name, value) => props.updatePatternData(value, 'settings', name)}
           raiseEvent={props.raiseEvent}
           units={props.units}
         />

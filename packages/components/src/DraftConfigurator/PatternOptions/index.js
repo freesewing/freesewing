@@ -27,8 +27,8 @@ const PatternOptions = props => {
             key={group + '-group'}
             units={props.units}
             config={props.config}
-            gist={props.gist}
-            recipe={props.recipe}
+            data={props.data}
+            pattern={props.pattern}
             options={props.config.optionGroups[group]}
             updateValue={props.updateValue}
             raiseEvent={props.raiseEvent}
@@ -50,7 +50,7 @@ const PatternOptions = props => {
 
   const children = []
   for (let group in props.config.optionGroups) {
-    if (props.gist.settings.advanced || group !== 'advanced') {
+    if (props.data.settings.advanced || group !== 'advanced') {
       children.push(renderGroup(group))
     }
   }

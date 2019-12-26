@@ -27,12 +27,12 @@ const OptionPreamble = props => {
     id: 'app.restoreDefaults',
     defaultMessage: ' ♻️  '
   })
-  const resetPatternLabel = props.intl.formatMessage({
-    id: 'app.restorePatternDefaults',
+  const resetDesignLabel = props.intl.formatMessage({
+    id: 'app.restoreDesignDefaults',
     defaultMessage: ' ♻️  '
   })
-  const resetRecipeLabel = props.intl.formatMessage({
-    id: 'app.restoreRecipeDefaults',
+  const resetPatternLabel = props.intl.formatMessage({
+    id: 'app.restorePatternDefaults',
     defaultMessage: ' ♻️  '
   })
   const docsLabel = props.intl.formatMessage({
@@ -40,11 +40,11 @@ const OptionPreamble = props => {
     defaultMessage: ' 🤔 '
   })
 
-  let recipe = false
-  if (props.dflt !== props.patternDflt) recipe = true
+  let pattern = false
+  if (props.dflt !== props.designDflt) pattern = true
   let displayClass = props.value === props.dflt ? 'dflt' : 'custom'
-  if (recipe && props.value === props.patternDflt) displayClass = 'p-dflt'
-  else if (recipe && props.sameButDifferent) displayClass = 'custom'
+  if (pattern && props.value === props.designDflt) displayClass = 'p-dflt'
+  else if (pattern && props.sameButDifferent) displayClass = 'custom'
   let displayValue = <span className={displayClass}>{props.displayValue}</span>
 
   if (props.displayFormat === 'html')
@@ -66,25 +66,25 @@ const OptionPreamble = props => {
             <p>{props.desc}</p>
           </div>
           <div style={styles.right}>
-            {recipe ? (
+            {pattern ? (
               <IconButton
-                title={resetPatternLabel}
-                aria-label={resetPatternLabel}
+                title={resetDesignLabel}
+                aria-label={resetDesignLabel}
                 color="primary"
-                disabled={props.value === props.patternDflt ? true : false}
-                onClick={props.patternReset}
+                disabled={props.value === props.designDflt ? true : false}
+                onClick={props.designReset}
                 className="mini-icon-btn pattern"
               >
                 <ResetIcon />
               </IconButton>
             ) : null}
             <IconButton
-              title={recipe ? resetRecipeLabel : resetLabel}
-              aria-label={recipe ? resetRecipeLabel : resetLabel}
+              title={pattern ? resetPatternLabel : resetLabel}
+              aria-label={pattern ? resetPatternLabel : resetLabel}
               color="primary"
               disabled={props.value === props.dflt && !props.sameButDifferent ? true : false}
               onClick={props.reset}
-              className={'mini-icon-btn' + (recipe ? ' recipe' : '')}
+              className={'mini-icon-btn' + (pattern ? ' pattern' : '')}
             >
               <ResetIcon />
             </IconButton>
