@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.1.8",
+  "version": "2.2.0-alpha.0",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -60,7 +60,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=8.0.0",
