@@ -62,9 +62,6 @@ zigZag:
 freesewing:
   term: freesewing
   description: "<b>FreeSewing</b> is an open source platform for made-to-measure sewing patterns"
-recipe:
-  term: recipe
-  description: "A <b>Recipe</b> contains all the information required to re-create your pattern"
 patternOptions:
   term: pattern options
   description: "The <b>pattern options</b> allow you to customize the design of the pattern"

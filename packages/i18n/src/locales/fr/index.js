@@ -16,6 +16,7 @@ import patterns from './patterns.yml'
 import plugin from './plugin/'
 import settings from './settings.yml'
 import homepage from './homepage.yaml'
+import welcome from './welcome.yaml'
 
 import jargonFile from './jargon.yml'
 
@@ -37,7 +38,8 @@ const topics = {
   patterns,
   plugin,
   settings,
-  homepage
+  homepage,
+  welcome
 }
 
 const strings = {}

@@ -54,6 +54,8 @@ customSeamAllowance: Custom seam allowance
 darkMode: Dark mode
 default: Default
 demo: Demo
+designOptions: Design options
+designs: Designs
 docs: Documentation
 docsFooterMsg: Documentation is never finished. Hopefully we were able to answer all your questions, but if that's not the case, help is available.
 docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
@@ -102,7 +104,6 @@ invalidTldMessage: '.{tld} is not a valid TLD'
 joinTheChatMsg: We have a chatroom on Gitter with friendly people who are happy to help out.  So don't be shy, and stop by for a chat.
 justAMoment: Just a moment
 layout: Layout
-letUsSetupYourAccount: Let us set up your account
 logIn: Log in
 loginWithProvider: 'Log in with<br>{provider}'
 logOut: Log out
@@ -164,8 +165,8 @@ resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
 reset: Reset
 restoreDefaults: Restore defaults
+restoreDesignDefaults: Restore design defaults
 restorePatternDefaults: Restore pattern defaults
-restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Save draft to your account
 save: Save
 searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
@@ -232,7 +233,6 @@ apiReference: API Reference
 tutorial: Tutorial
 editThisPage: Edit this page
 loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
-recipes: Recipes
 various: Various
 sewing: Sewing
 examples: Examples
@@ -240,24 +240,23 @@ by: by
 years: Years
 pricing: Pricing
 createFirst: Start by creating a new pattern
-noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
+noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
 modelFirst: Start by creating a model
 noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
 noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
 noUserBrowsingTitle: "You can't just browse all users"
 noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-useRecipeModel: "Use the recipe's model"
+usePatternModel: "Use the pattern's model"
 createReplica: Create a replica
 showDetails: Show details
 clickBelowToLogOut: Click below to log out
 compare: Compare
-saveRecipe: Save recipe
+savePattern: Save pattern
 exportPattern: Export pattern
 recreate: Recreate
 seeYouLaterUser: See you later {user}
 exportForPrinting: Export for printing
 exportForEditing: Export for editing
-exportRecipe: Export recipe
 startWithNeckTitle: Start with the neck circumference
 startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
 whatYouNeed: What you need
@@ -271,4 +270,15 @@ loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
 weEstimateYM2B: "We estimate your {measurement} to be around:"
-
+exportAsData: Export as data
+availablePatterns: Available patterns
+browseCollection: Browse collection
+browseYourPatterns: Browse your patterns
+yourPatterns: Your patterns
+loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
+docsForContributors: Documentation for contributors
+patternDocs: Pattern documentation
+socialMedia: Social media
+create: Create
+browse: Browse
+patrons: Patrons
