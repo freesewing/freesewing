@@ -12,13 +12,6 @@ button.fab {
 button.fab.primary {
   right: 1rem;
 }
-button.fab.secondary {
-  right: calc(1rem + 69px);
-  background: $fc-link-light!important;
-}
 .theme-wrapper.dark button.fab {
   background: $fc-text-dark!important;
-}
-.theme-wrapper.dark button.fab.secondary {
-  background: $fc-link-dark!important;
 }
