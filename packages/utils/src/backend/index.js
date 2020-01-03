@@ -38,11 +38,10 @@ function useBackend(baseURL, timeout = 10000) {
   backend.availableUsername = (data, token) => api.post('/available/username', data, auth(token)) // Check is a username is available
   backend.setPassword = (data, token) => api.post('/set/password', data, auth(token)) // (re)set a new password
 
-  // Models
-  backend.createModel = (data, token) => api.post('/models', data, auth(token)) // Create model
-  backend.saveModel = (handle, data, token) => api.put('/models/' + handle, data, auth(token)) // Update model
-  backend.removeModel = (handle, token) => api.delete('/models/' + handle, auth(token)) // Remove model
-  //backend.removeModels = (data, token) => api.post('/remove/models', data, auth(token)) // Delete multiple models
+  // People
+  backend.createPerson = (data, token) => api.post('/people', data, auth(token)) // Create person
+  backend.savePerson = (handle, data, token) => api.put('/people/' + handle, data, auth(token)) // Update person
+  backend.removePerson = (handle, token) => api.delete('/people/' + handle, auth(token)) // Remove person
 
   // Patterns
   backend.loadPattern = (handle, token) => api.get('/patterns/' + handle, auth(token)) // Load pattern
