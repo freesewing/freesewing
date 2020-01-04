@@ -3,15 +3,23 @@ button.fab {
   bottom: 1rem;
   width: 64px;
   height: 64px!important;
-  background: $fc-text-light!important;
   z-index: 20;
   font-size: 2rem;
-  border: 1px solid $oc-gray-7;
   border-radius: 50%;
 }
 button.fab.primary {
   right: 1rem;
 }
-.theme-wrapper.dark button.fab {
-  background: $fc-text-dark!important;
+
+.style-wrapper.light,
+.theme-wrapper.light,
+.style-wrapper.dark,
+.theme-wrapper.dark {
+  button.fab.accent {
+    background-color: $fc-accent-light;
+    color: $fc-text-dark;
+  }
+  button.fab.accent:hover {
+    background-color: darken($fc-accent-light, 10%);
+  }
 }
