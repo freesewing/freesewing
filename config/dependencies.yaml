@@ -84,7 +84,7 @@ components:
     "file-saver": "^2.0.2"
 core:
   _:
-    "bezier-js": "^2.2.13"
+    "@freesewing/bezier-js": "^2.4.5-beta.0"
     "bin-pack": "1.0.2"
     "hooks": "^0.3.2"
 create-freesewing-pattern:

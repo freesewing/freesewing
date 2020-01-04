@@ -1,6 +1,6 @@
 import Path from './path'
 import Point from './point'
-import Bezier from 'bezier-js'
+import Bezier from '@freesewing/bezier-js'
 
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
