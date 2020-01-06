@@ -36,6 +36,7 @@
   "dependencies": {
     "unist-util-visit": "^1.4.0"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
