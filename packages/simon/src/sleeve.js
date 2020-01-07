@@ -25,8 +25,8 @@ export default part => {
   // Sleeve width depends on cuff style
   let width = measurements.wristCircumference * (1 + options.cuffEase + options.cuffOverlap)
   if (
-    options.cuffStyle === 'straightFrenchcuff' ||
-    options.cuffStyle === 'roundedFrenchcuff' ||
+    options.cuffStyle === 'straightFrenchCuff' ||
+    options.cuffStyle === 'roundedFrenchCuff' ||
     options.cuffStyle === 'angledFrenchCuff'
   )
     width = measurements.wristCircumference * (1 + options.cuffEase + options.cuffOverlap * 1.5)
