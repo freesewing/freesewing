@@ -71,6 +71,13 @@ Path.prototype.close = function() {
   return this
 }
 
+/** Adds a noop operation */
+Path.prototype.noop = function(id = false) {
+  this.ops.push({ type: 'noop', id })
+
+  return this
+}
+
 /** Adds an attribute. This is here to make this call chainable in assignment */
 Path.prototype.attr = function(name, value, overwrite = false) {
   if (overwrite) this.attributes.set(name, value)
