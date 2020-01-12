@@ -1,10 +1,4 @@
-import {
-  insertDart,
-  applyBustDarts,
-  getDartPaths,
-  getSaDartPaths,
-  getDartInsertionPoint
-} from './dart-utils'
+import { applyBustDarts, getDartPaths, getSaDartPaths, getDartInsertionPoint } from './dart-utils'
 
 export default part => {
   let {
@@ -72,10 +66,14 @@ export default part => {
       break
   }
 
-  paths.seam = insertDart(insertDart(template, primary, 'primary'), secondary, 'secondary')
+  paths.seam = template
+    .insop('primary', primary)
+    .insop('secondary', secondary)
     .close()
     .attr('class', 'fabric stroke-xl')
-  paths.saBase = insertDart(insertDart(template, saPrimary, 'primary'), saSecondary, 'secondary')
+  paths.saBase = template
+    .insop('primary', saPrimary)
+    .insop('secondary', saSecondary)
     .close()
     .attr('class', 'lining lashed')
 

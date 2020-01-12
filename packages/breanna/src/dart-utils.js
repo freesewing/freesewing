@@ -138,22 +138,3 @@ export const applyBustDarts = (points, options, utils) => {
     )
   }
 }
-
-export const insertDart = (path, dart, id) => {
-  let newPath = path.clone()
-  let ops = path.ops
-  for (let i in ops) {
-    let op = ops[i]
-    if (op.type === 'noop' && op.id === id) {
-      newPath.ops = ops
-        .slice(0, i)
-        .concat(dart.ops)
-        .concat(ops.slice(Number(i) + 1))
-
-      return newPath
-    }
-  }
-
-  // No noop found with matching id
-  return newPath
-}
