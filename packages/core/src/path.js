@@ -78,6 +78,21 @@ Path.prototype.noop = function(id = false) {
   return this
 }
 
+/** Replace a noop operation with the ops from path */
+Path.prototype.insop = function(noopId, path) {
+  let newPath = this.clone()
+  for (let i in newPath.ops) {
+    if (newPath.ops[i].type === 'noop' && newPath.ops[i].id === noopId) {
+      newPath.ops = newPath.ops
+        .slice(0, i)
+        .concat(path.ops)
+        .concat(newPath.ops.slice(Number(i) + 1))
+    }
+  }
+
+  return newPath
+}
+
 /** Adds an attribute. This is here to make this call chainable in assignment */
 Path.prototype.attr = function(name, value, overwrite = false) {
   if (overwrite) this.attributes.set(name, value)
@@ -238,6 +253,8 @@ Path.prototype.clone = function() {
       clone.ops[i].to = op.to.clone()
       clone.ops[i].cp1 = op.cp1.clone()
       clone.ops[i].cp2 = op.cp2.clone()
+    } else if (op.type === 'noop') {
+      clone.ops[i].id = op.id
     }
   }
 
