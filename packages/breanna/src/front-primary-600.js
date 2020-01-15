@@ -1,42 +1,9 @@
-import { applyBustDarts, getDartPaths, getSaDartPaths, getDartInsertionPoint } from './dart-utils'
-
 export default part => {
-  let {
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    Point,
-    measurements,
-    options,
-    utils,
-    store
-  } = part.shorthand()
-
-  // Make bust darts practical
-  applyBustDarts(points, options, utils)
-
-  /*
-   * Paths
-   *
-   * We are using the 'noop' method of a path here, which is pretty low-level freesewing stuff
-   * By passing the noop method with an ID, we are merely marking this among the different path
-   * (drawing operations). This allows us to easily inject operations at this point later,
-   * which is exactly what the insertDraft() method does.
-   * Doing this allows us to use the same base path for both the seam line and SA outline
-   */
-  let template = new Path()
-  let [primary, secondary] = getDartPaths(Path, points)
-  let [saPrimary, saSecondary] = getSaDartPaths(Path, points)
+  let { points, Path, store } = part.shorthand()
 
   switch (store.get('secondaryBustDartLocation')) {
     case 700:
-      template
+      return new Path()
         .move(points.cfNeck)
         .noop('secondary')
         .noop('primary')
@@ -50,7 +17,7 @@ export default part => {
     case 800:
     case 900:
     case 1000:
-      template
+      return new Path()
         .move(points.cfNeck)
         .noop('secondary')
         .line(points.cfWaist)
@@ -63,7 +30,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1100:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -76,7 +43,7 @@ export default part => {
         .noop('secondary')
       break
     case 1130:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -89,7 +56,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1200:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -103,7 +70,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1230:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -116,7 +83,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1300:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -129,7 +96,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1330:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -144,7 +111,7 @@ export default part => {
     case 1400:
     case 1500:
     case 1600:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -158,7 +125,7 @@ export default part => {
         .curve_(points.hpsCp2, points.cfNeck)
       break
     case 1700:
-      template
+      return new Path()
         .move(points.cfNeck)
         .line(points.cfWaist)
         .noop('primary')
@@ -170,18 +137,7 @@ export default part => {
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
       break
+    default:
+      return new Path()
   }
-
-  paths.seam = template
-    .insop('primary', primary)
-    .insop('secondary', secondary)
-    .close()
-    .attr('class', 'fabric stroke-xl')
-  paths.saBase = template
-    .insop('primary', saPrimary)
-    .insop('secondary', saSecondary)
-    .close()
-    .attr('class', 'lining lashed')
-
-  return part
 }
