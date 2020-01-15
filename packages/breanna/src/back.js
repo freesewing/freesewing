@@ -28,18 +28,19 @@ export default part => {
       points.hps,
       options.shoulderDartSize
     )
-    points.shoulderDart1 = points.shoulderDart1.rotate(180, points.shoulderDartCenter)
+    points.shoulderDart1 = points.shoulderDart2.rotate(180, points.shoulderDartCenter)
     points.shoulderDartTip = points.shoulderDartCenter.shiftFractionTowards(
       points.shoulderDartTarget,
       options.shoulderDartLength
     )
-    points.shoulderDart1 = points.shoulderDart1.rotate(options.shoulderDartSize * 10, points.hps)
-    points.shoulderDart2 = points.shoulderDart2.rotate(
-      options.shoulderDartSize * -10,
-      points.shoulder
+    points.shoulderDartEdge = utils.beamsIntersect(
+      points.shoulderDart1,
+      points.shoulderDartTip.rotate(90, points.shoulderDart1),
+      points.shoulderDart2,
+      points.shoulderDartTip.rotate(90, points.shoulderDart2)
     )
     let angle = points.hps.angle(points.shoulder)
-    let extra = points.hps.dist(points.shoulder) - points.hps.dist(points.shoulderDart1) * 2
+    let extra = points.shoulderDart1.dist(points.shoulderDart2)
     points.shoulder = points.shoulder.shift(angle, extra)
     points.shoulderCp1 = points.shoulderCp1.shift(angle, extra)
     points.armholePitch = utils.beamIntersectsY(
@@ -67,34 +68,69 @@ export default part => {
     )
     points.waistDart2 = points.waistDart1.rotate(180, points.waistDartCenter)
     points.waist = points.waist.shift(0, points.waist.x * options.waistDartSize)
-    points.waistDart1 = points.waistDart1.rotate(options.waistDartSize * -10, points.cbWaist)
-    points.waistDart2 = points.waistDart2.rotate(options.waistDartSize * 10, points.waist)
+    points.waistDartEdge = utils.beamsIntersect(
+      points.waistDart1,
+      points.waistDartTarget.rotate(90, points.waistDart1),
+      points.waistDart2,
+      points.waistDartTarget.rotate(90, points.waistDart2)
+    )
   }
 
   // Paths
-  paths.seam = new Path().move(points.cbNeck).line(points.cbWaist)
-  if (options.waistDart) {
-    paths.seam
-      .line(points.waistDart1)
-      .line(points.waistDartTip)
-      .line(points.waistDart2)
-  }
-  paths.seam
+  paths.seam = new Path()
+    .move(points.cbNeck)
+    .line(points.cbWaist)
+    .noop('waistDart')
     .line(points.waist)
     .line(points.armhole)
     .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+    .noop('shoulderDart')
+    .line(points.hps)
+    .curve_(points.hpsCp2, points.cbNeck)
+  paths.saBase = paths.seam.clone()
+
+  // Insert darts
+  if (options.waistDart) {
+    let dart = new Path()
+      .line(points.waistDart1)
+      .line(points.waistDartTip)
+      .line(points.waistDart2)
+    paths.seam = paths.seam.insop('waistDart', dart)
+    let saDart = new Path()
+      .line(points.waistDart1)
+      .line(points.waistDartEdge)
+      .line(points.waistDart2)
+    paths.saBase = paths.saBase.insop('waistDart', saDart)
+    paths.waistDartHint = new Path()
+      .move(points.waistDart1)
+      .line(points.waistDartEdge)
+      .line(points.waistDart2)
+      .attr('class', 'fabric dotted')
+  }
+
+  // Shoulder dart
   if (options.shoulderDart) {
-    paths.seam
+    let dart = new Path()
       .line(points.shoulderDart2)
       .line(points.shoulderDartTip)
       .line(points.shoulderDart1)
+    paths.seam = paths.seam.insop('shoulderDart', dart)
+    let saDart = new Path()
+      .line(points.shoulderDart2)
+      .line(points.shoulderDartEdge)
+      .line(points.shoulderDart1)
+    paths.saBase = paths.seam.insop('shoulderDart', saDart)
+    paths.shoulderDartHint = new Path()
+      .move(points.shoulderDart1)
+      .line(points.shoulderDartEdge)
+      .line(points.shoulderDart2)
+      .attr('class', 'fabric dotted')
   }
-  paths.seam
-    .line(points.hps)
-    .curve_(points.hpsCp2, points.cbNeck)
-    .close()
-    .attr('class', 'fabric stroke-xl')
+
+  paths.seam.close().attr('class', 'fabric')
+  paths.saBase.close()
+  paths.saBase.render = false
 
   // Store data
   if (options.shoulderDart) {
@@ -132,7 +168,16 @@ export default part => {
 
   // Complete pattern?
   if (complete) {
+    // Logo
+    points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Scalebox
+    points.scalebox = new Point(points.cbNeck.x + 60, points.cbNeck.y + 40)
+    macro('scalebox', { at: points.scalebox })
+
     if (sa) {
+      paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
     }
   }
 

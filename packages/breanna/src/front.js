@@ -92,6 +92,16 @@ export default part => {
     // Apply correct bust dart length
     applyBustDarts(points, options, utils)
 
+    // Redraw the waist
+    points.cfWaistCp2 = points.cfWaist.shiftFractionTowards(points.origBustDart2, 0.5)
+    points.waistCp1 = points.waist.shiftFractionTowards(points.origBustDart2, 0.5)
+
+    // Let's keep the center front vertical as it is the grainline/cut-on-fold
+    if (true || loc1 >= 1100) {
+      let tilt = 270 - points.cfNeck.angle(points.cfWaist)
+      for (let p in points) points[p] = points[p].rotate(tilt, points.cfNeck)
+    }
+
     // Load path template
     let template
     if (loc1 <= 600) template = frontWithPrimaryAt600(part)

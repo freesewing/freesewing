@@ -104,6 +104,7 @@ export default {
     breannaFitCollar: true,
     //collarFactor: 4.8,
     //backNeckCutout: 0.05,
+    armholeDepthBase: 0.6,
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
@@ -139,7 +140,7 @@ export default {
         '16:00',
         '17:00'
       ],
-      dflt: '06:00'
+      dflt: '14:00'
     },
     secondaryBustDart: {
       list: [
@@ -160,7 +161,7 @@ export default {
         '16:00',
         '17:00'
       ],
-      dflt: '14:00'
+      dflt: '15:00'
     },
     primaryBustDartShaping: { pct: 50, min: 25, max: 75 },
     primaryBustDartLength: { pct: 85, min: 65, max: 95 },

@@ -58,7 +58,7 @@ export default part => {
   // Armhhole
   points.armhole = new Point(
     ((measurements.highBust - measurements.highBustFront) * (1 + options.chestEase)) / 2,
-    (points.shoulder.y + measurements.bicepsCircumference / 2) *
+    (points.shoulder.y + measurements.bicepsCircumference * options.armholeDepthBase) *
       options.armholeDepthFactor *
       (1 + options.verticalEase)
   )
