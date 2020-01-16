@@ -38,6 +38,12 @@ export default part => {
           .length() * 2
       collarDelta = front + back - target
     } while (Math.abs(collarDelta) > 1)
+  } else {
+    points.hpsCp2 = utils.beamIntersectsY(
+      points.hps,
+      points.hps.shiftTowards(points.shoulder, 10).rotate(-90, points.hps),
+      points.cfNeck.y
+    )
   }
 
   // Armhole deeper at the front
@@ -63,7 +69,6 @@ export default part => {
   points.armhole = points.armhole.shift(0, bustDelta)
 
   // Adjust waist down to accomodate bust
-  points.cfHips = new Point(0, measurements.hpsToHipsFront)
   points.cfWaist = new Point(
     0,
     measurements.hpsToHipsFront - (measurements.hpsToHipsBack - measurements.hpsToWaistBack)
@@ -89,13 +94,21 @@ export default part => {
   )
   points.primaryBustDart2 = points.primaryBustDart1.rotate(180, points.primaryBustDartCenter)
 
-  // Store bust dart angle
+  // Store bust dart angle and armhole length
   store.set(
     'bustDartAngle',
     Math.abs(
       points.primaryBustDartTip.angle(points.primaryBustDart1) -
         points.primaryBustDartTip.angle(points.primaryBustDart2)
     )
+  )
+  store.set(
+    'frontArmholeLength',
+    new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .length()
   )
 
   return part

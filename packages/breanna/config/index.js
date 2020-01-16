@@ -20,46 +20,48 @@ export default {
       'verticalEase',
       'chestEase',
       'collarEase',
-      //    'bicepsEase',
-      //    'cuffEase',
+      'bicepsEase',
+      'cuffEase',
       'shoulderEase',
-      'waistEase',
-      'primaryBustDartLength',
-      'secondaryBustDartLength'
-
-      //    'lengthBonus',
-      //    'sleeveLengthBonus'
+      'waistEase'
     ],
-    style: ['primaryBustDart', 'secondaryBustDart', 'primaryBustDartShaping'],
+    style: [
+      'primaryBustDart',
+      'primaryBustDartLength',
+      'secondaryBustDart',
+      'secondaryBustDartLength',
+      'primaryBustDartShaping',
+      'sleeveLengthBonus'
+    ],
     advanced: [
       'acrossBackFactor',
-      'armholeDepthFactor'
-      //    'frontArmholeDeeper',
-      //    'shoulderSlopeReduction',
-      //    'sleeveWidthGuarantee',
-      //    {
-      //      sleevecap: [
-      //        'sleevecapEase',
-      //        'sleevecapTopFactorX',
-      //        'sleevecapTopFactorY',
-      //        'sleevecapBackFactorX',
-      //        'sleevecapBackFactorY',
-      //        'sleevecapFrontFactorX',
-      //        'sleevecapFrontFactorY',
-      //        'sleevecapQ1Offset',
-      //        'sleevecapQ2Offset',
-      //        'sleevecapQ3Offset',
-      //        'sleevecapQ4Offset',
-      //        'sleevecapQ1Spread1',
-      //        'sleevecapQ1Spread2',
-      //        'sleevecapQ2Spread1',
-      //        'sleevecapQ2Spread2',
-      //        'sleevecapQ3Spread1',
-      //        'sleevecapQ3Spread2',
-      //        'sleevecapQ4Spread1',
-      //        'sleevecapQ4Spread2'
-      //      ]
-      //    }
+      'armholeDepthFactor',
+      'frontArmholeDeeper',
+      //'shoulderSlopeReduction',
+      'sleeveWidthGuarantee',
+      {
+        sleevecap: [
+          'sleevecapEase',
+          'sleevecapTopFactorX',
+          'sleevecapTopFactorY',
+          'sleevecapBackFactorX',
+          'sleevecapBackFactorY',
+          'sleevecapFrontFactorX',
+          'sleevecapFrontFactorY',
+          'sleevecapQ1Offset',
+          'sleevecapQ2Offset',
+          'sleevecapQ3Offset',
+          'sleevecapQ4Offset',
+          'sleevecapQ1Spread1',
+          'sleevecapQ1Spread2',
+          'sleevecapQ2Spread1',
+          'sleevecapQ2Spread2',
+          'sleevecapQ3Spread1',
+          'sleevecapQ3Spread2',
+          'sleevecapQ4Spread1',
+          'sleevecapQ4Spread2'
+        ]
+      }
     ]
   },
   measurements: [
@@ -76,39 +78,31 @@ export default {
     'bustSpan',
     'shoulderSlope',
     'neckCircumference'
-    //'hpsToHipsFront',
-    //'bicepsCircumference',
-    //'chestCircumference',
-    //'hpsToWaistBack',
-    //'shoulderToWrist',
-    //'wristCircumference'
   ],
-  //dependencies: {
-  //  back: 'base',
-  //  front: 'back',
-  //  sleevecap: 'front',
-  //  sleeve: 'sleevecap'
-  //},
+  dependencies: {
+    back: 'base',
+    frontBase: 'base',
+    front: 'frontBase',
+    sleevecap: 'front'
+    //sleeve: 'sleevecap'
+  },
   inject: {
     back: 'base',
     frontBase: 'base',
     front: 'frontBase'
-    //  sleeve: 'sleevecap'
+    //sleeve: 'sleevecap'
   },
   hide: ['frontBase'],
-  //parts: ['back', 'front'],
   options: {
     // Constants
     collarFactor: 4.8,
-    //brianFitSleeve: true,
+    armholeDepthBase: 0.65,
+    breannaFitSleeve: true,
     breannaFitCollar: true,
-    //collarFactor: 4.8,
-    //backNeckCutout: 0.05,
-    armholeDepthBase: 0.6,
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 90, min: 80, max: 120 },
+    armholeDepthFactor: { pct: 100, min: 80, max: 120 },
     shoulderDart: { bool: false },
     shoulderDartSize: { pct: 7, min: 4, max: 10 },
     shoulderDartLength: { pct: 85, min: 60, max: 100 },
@@ -165,32 +159,32 @@ export default {
     },
     primaryBustDartShaping: { pct: 50, min: 25, max: 75 },
     primaryBustDartLength: { pct: 85, min: 65, max: 95 },
-    secondaryBustDartLength: { pct: 85, min: 65, max: 95 }
+    secondaryBustDartLength: { pct: 85, min: 65, max: 95 },
 
-    //bicepsEase: { pct: 15, min: 0, max: 50 },
-    //cuffEase: { pct: 20, min: 0, max: 200 },
-    //lengthBonus: { pct: 0, min: -4, max: 60 },
     //shoulderSlopeReduction: { pct: 0, min: 0, max: 100 },
-    //sleevecapEase: { pct: 1, min: 0, max: 10 },
-    //sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
-    //sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
-    //sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
-    //sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
-    //sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
-    //sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
-    //sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
-    //sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
-    //sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
-    //sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
-    //sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
-    //sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
-    //sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
-    //sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
-    //sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
-    //sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
-    //sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
-    //sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
-    //sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    //sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
+
+    bicepsEase: { pct: 15, min: 0, max: 50 },
+    cuffEase: { pct: 20, min: 0, max: 200 },
+    sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
+    sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
+    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
+    sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
+    sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
+    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
+    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
+    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
+    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
+    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
   }
 }

@@ -275,5 +275,12 @@ export default part => {
     })
   }
 
+  macro('pd', {
+    path: new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
+    d: 15
+  })
   return part
 }
