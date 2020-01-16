@@ -62,10 +62,6 @@ export default part => {
     for (let p of getPrimaryDartRotationList(loc1))
       points[p] = points[p].rotate(angle, points.primaryBustDartTip)
 
-    // Redraw the waist
-    points.cfWaistCp2 = points.cfWaist.shiftFractionTowards(points.origBustDart2, 0.5)
-    points.waistCp1 = points.waist.shiftFractionTowards(points.origBustDart2, 0.5)
-
     // Let's keep the center front vertical as it is the grainline/cut-on-fold
     if (loc1 >= 1100) {
       let tilt = 270 - points.cfNeck.angle(points.cfWaist)
@@ -104,10 +100,6 @@ export default part => {
 
     // Apply correct bust dart length
     applyBustDarts(points, options, utils)
-
-    // Redraw the waist
-    points.cfWaistCp2 = points.cfWaist.shiftFractionTowards(points.origBustDart2, 0.5)
-    points.waistCp1 = points.waist.shiftFractionTowards(points.origBustDart2, 0.5)
 
     // Let's keep the center front vertical as it is the grainline/cut-on-fold
     let tilt = 270 - points.cfNeck.angle(loc1 === 700 ? points.primaryBustDart1 : points.cfWaist)
