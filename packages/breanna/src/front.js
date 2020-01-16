@@ -19,7 +19,21 @@ import {
 } from './dart-utils'
 
 export default part => {
-  let { options, store, utils, points, Path, paths, sa, complete, paperless } = part.shorthand()
+  let {
+    options,
+    store,
+    utils,
+    points,
+    Path,
+    paths,
+    sa,
+    complete,
+    paperless,
+    Point,
+    macro,
+    snippets,
+    Snippet
+  } = part.shorthand()
 
   /*
    * We're starting from front-base here, which is injected into this part
@@ -58,7 +72,6 @@ export default part => {
       for (let p in points) points[p] = points[p].rotate(tilt, points.cfNeck)
     }
   }
-
   if (loc2 === 0 || loc1 === loc2) {
     // Primary bust dart only
 
@@ -68,7 +81,7 @@ export default part => {
     // Load path template
     let template = frontWithPrimaryOnly(part)
     let [primary] = getDartPaths(Path, points)
-    let [saPrimary] = getDartPaths(Path, points)
+    let [saPrimary] = getSaDartPaths(Path, points)
 
     // Insert dart into template
     paths.seam = template.insop('primary', primary)
@@ -97,10 +110,8 @@ export default part => {
     points.waistCp1 = points.waist.shiftFractionTowards(points.origBustDart2, 0.5)
 
     // Let's keep the center front vertical as it is the grainline/cut-on-fold
-    if (true || loc1 >= 1100) {
-      let tilt = 270 - points.cfNeck.angle(points.cfWaist)
-      for (let p in points) points[p] = points[p].rotate(tilt, points.cfNeck)
-    }
+    let tilt = 270 - points.cfNeck.angle(loc1 === 700 ? points.primaryBustDart1 : points.cfWaist)
+    for (let p in points) points[p] = points[p].rotate(tilt, points.cfNeck)
 
     // Load path template
     let template
@@ -119,20 +130,128 @@ export default part => {
     let [saPrimary, saSecondary] = getSaDartPaths(Path, points)
     paths.seam = template.insop('primary', primary).insop('secondary', secondary)
     paths.saBase = template.insop('primary', saPrimary).insop('secondary', saSecondary)
+
+    // Secondary dart hint
+    paths.secondaryBustDartHint = new Path()
+      .move(points.secondaryBustDart1)
+      .line(points.secondaryBustDartEdge)
+      .line(points.secondaryBustDart2)
+      .attr('class', 'fabric dotted stroke-sm')
   }
+  // Primary dart hint
+  paths.primaryBustDartHint = new Path()
+    .move(points.primaryBustDart1)
+    .line(points.primaryBustDartEdge)
+    .line(points.primaryBustDart2)
+    .attr('class', 'fabric dotted stroke-sm')
 
   // All done. Just set final path properties before we get to SA/final/paperless
   paths.seam.close().attr('class', 'fabric')
-  paths.saBase.render = false
+  paths.saBase.close().render = false
 
   // Complete pattern?
   if (complete) {
-    if (sa) {
-    }
+    // Logo
+    points.logo = points.cfNeck.shift(-60, 70)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Title
+    points.title = points.logo.shift(-90, 70)
+    macro('title', { nr: 2, title: 'front', at: points.title })
+
+    // Notches
+    snippets.bustNotch = new Snippet('notch', points.bustPoint)
+    snippets.armholePitch = new Snippet('notch', points.armholePitch)
+
+    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
   }
 
   // Paperless?
   if (paperless) {
+    let tl = paths.seam.edge('topLeft')
+    let br = paths.seam.edge('bottomRight')
+    macro('vd', {
+      from: points.cfWaist,
+      to: points.bustPoint,
+      x: tl.x - 15 - sa
+    })
+    macro('vd', {
+      from: points.cfWaist,
+      to: points.cfNeck,
+      x: tl.x - 30 - sa
+    })
+    macro('vd', {
+      from: points.cfWaist,
+      to: points.hps,
+      x: tl.x - 45 - sa
+    })
+    macro('vd', {
+      from: points.waist,
+      to: points.armhole,
+      x: br.x + 15 + sa
+    })
+    macro('vd', {
+      from: points.waist,
+      to: points.armholePitch,
+      x: br.x + 30 + sa
+    })
+    macro('vd', {
+      from: points.waist,
+      to: points.shoulder,
+      x: br.x + 45 + sa
+    })
+    macro('vd', {
+      from: points.waist,
+      to: points.hps,
+      x: br.x + 60 + sa
+    })
+    macro('hd', {
+      from: points.cfNeck,
+      to: points.hps,
+      y: tl.y - 15 - sa
+    })
+    macro('hd', {
+      from: points.cfNeck,
+      to: points.shoulder,
+      y: tl.y - 30 - sa
+    })
+    macro('hd', {
+      from: points.cfNeck,
+      to: points.armhole,
+      y: tl.y - 30 - sa
+    })
+    macro('hd', {
+      from: points.cfWaist,
+      to: points.bustPoint,
+      y: br.y + 15 + sa
+    })
+    macro('hd', {
+      from: points.cfWaist,
+      to: points.waist,
+      y: br.y + 30 + sa
+    })
+    macro('ld', {
+      from: points.primaryBustDart1,
+      to: points.primaryBustDart2,
+      d: 15
+    })
+    macro('ld', {
+      from: points.primaryBustDart2,
+      to: points.primaryBustDartTip,
+      d: 15
+    })
+    macro('ld', {
+      from: points.primaryBustDart2,
+      to: points.primaryBustDartTip,
+      d: 15
+    })
+    if (loc2 !== 0 && loc1 !== loc2) {
+      macro('ld', {
+        from: points.secondaryBustDart2,
+        to: points.secondaryBustDartTip,
+        d: 15
+      })
+    }
   }
 
   return part

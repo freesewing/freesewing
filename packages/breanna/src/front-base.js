@@ -54,7 +54,7 @@ export default part => {
     (measurements.bustFront * (1 + options.chestEase)) / 2,
     points.cfBust.y
   )
-  points.bustpoint = points.cfBust.shift(0, measurements.bustSpan / 2)
+  points.bustPoint = points.cfBust.shift(0, measurements.bustSpan / 2)
 
   // Work in room for bust from armhole pitch point down
   let bustDelta =
@@ -78,10 +78,10 @@ export default part => {
   points.primaryBustDartCenter = utils.beamIntersectsX(
     points.cfWaist,
     points.waist,
-    points.bustpoint.x
+    points.bustPoint.x
   )
-  // Let the bustdart run to the bustpoint (for now), that makes it easier to rotate it later
-  points.primaryBustDartTip = points.bustpoint.clone()
+  // Let the bustdart run to the bustPoint (for now), that makes it easier to rotate it later
+  points.primaryBustDartTip = points.bustPoint.clone()
   let waistDelta = 2 * points.cfWaist.dist(points.waist) - store.get('backWaistLength')
   points.primaryBustDart1 = points.primaryBustDartCenter.shiftTowards(
     points.cfWaist,

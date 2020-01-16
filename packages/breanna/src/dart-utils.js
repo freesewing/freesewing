@@ -1,7 +1,6 @@
 // Where to cut for a dart in a given location
 export const getDartInsertionPoint = (points, utils, loc, angle) => {
-  let tip = points.bustpoint
-  //angle = angle - (360 - points.bustpoint.angle(points.bustSide))
+  let tip = points.bustPoint
   switch (loc) {
     case 700:
       return points.cfWaist.clone()

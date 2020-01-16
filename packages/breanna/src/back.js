@@ -106,7 +106,7 @@ export default part => {
       .move(points.waistDart1)
       .line(points.waistDartEdge)
       .line(points.waistDart2)
-      .attr('class', 'fabric dotted')
+      .attr('class', 'fabric dotted stroke-sm')
   }
 
   // Shoulder dart
@@ -125,7 +125,7 @@ export default part => {
       .move(points.shoulderDart1)
       .line(points.shoulderDartEdge)
       .line(points.shoulderDart2)
-      .attr('class', 'fabric dotted')
+      .attr('class', 'fabric dotted stroke-sm')
   }
 
   paths.seam.close().attr('class', 'fabric')
@@ -168,17 +168,22 @@ export default part => {
 
   // Complete pattern?
   if (complete) {
+    // Title
+    points.title = new Point(points.armhole.x / 4, points.armhole.y - 60)
+    macro('title', { nr: 1, title: 'back', at: points.title })
+
     // Logo
-    points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+    points.logo = new Point(points.armhole.x / 1.5, points.armhole.y)
     snippets.logo = new Snippet('logo', points.logo)
 
     // Scalebox
-    points.scalebox = new Point(points.cbNeck.x + 80, points.cbNeck.y + 40)
+    points.scalebox = new Point(points.cbWaist.x + 60, points.armhole.y)
     macro('scalebox', { at: points.scalebox })
 
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
-    }
+    // Notch
+    snippets.armholePitch = new Snippet('bnotch', points.armholePitch)
+
+    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
   }
 
   // Paperless?
