@@ -1,6 +1,5 @@
 export default part => {
   let {
-    debug,
     store,
     units,
     sa,
@@ -18,17 +17,7 @@ export default part => {
   } = part.shorthand()
 
   // Wrist
-  let top = paths.sleevecap.bbox().topLeft.y
-  debug({
-    style: 'info',
-    label: '🗸 Sleevecap height',
-    msg: units(Math.abs(top))
-  })
-  debug({
-    style: 'info',
-    label: '🗸 Sleevecap width',
-    msg: units(points.bicepsRight.x * 2)
-  })
+  let top = paths.sleevecap.edge('topLeft').y
   points.centerWrist = new Point(
     0,
     top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
@@ -44,8 +33,8 @@ export default part => {
   paths.sleevecap.render = false
   paths.seam = new Path()
     .move(points.bicepsLeft)
-    .move(points.wristLeft)
-    .move(points.wristRight)
+    .line(points.wristLeft)
+    .line(points.wristRight)
     .line(points.bicepsRight)
     .join(paths.sleevecap)
     .close()
@@ -66,18 +55,28 @@ export default part => {
     )
     macro('scalebox', { at: points.scalebox })
 
-    points.frontNotch = paths.sleevecap.shiftAlong(
-      paths.sleevecap.length() / 2 -
-        store.get('frontShoulderToArmholePitch') -
-        store.get('sleevecapEase') / 2
-    )
-    points.backNotch = paths.sleevecap.shiftAlong(
-      paths.sleevecap.length() / 2 +
-        store.get('backShoulderToArmholePitch') +
-        store.get('sleevecapEase') / 2
-    )
+    // Figure out where notches go
+    let q1 = new Path().move(points.bicepsRight)._curve(points.capQ1Cp1, points.capQ1)
+    let q1Len = q1.length()
+    let frontTarget = store.get('frontArmholeToArmholePitch')
+    if (q1Len === frontTarget) points.frontNotch = points.capQ1.clone()
+    else if (q1Len > frontTarget) points.frontNotch = q1.shiftAlong(frontTarget)
+    else {
+      let q2 = new Path().move(points.capQ1).curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+      points.frontNotch = q2.shiftAlong(frontTarget - q1Len)
+    }
+    let q4 = new Path().move(points.bicepsLeft)._curve(points.capQ4Cp2, points.capQ4)
+    let q4Len = q4.length()
+    let backTarget = store.get('backArmholeToArmholePitch')
+    if (q4Len === backTarget) points.backNotch = points.capQ4.clone()
+    else if (q4Len > backTarget) points.backNotch = q4.shiftAlong(backTarget)
+    else {
+      let q3 = new Path().move(points.capQ4).curve(points.capQ4Cp1, points.capQ3Cp2, points.capQ3)
+      points.backNotch = q3.shiftAlong(frontTarget - q4Len)
+    }
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
+
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 

@@ -83,16 +83,16 @@ export default {
     back: 'base',
     frontBase: 'base',
     front: 'frontBase',
-    sleevecap: 'front'
-    //sleeve: 'sleevecap'
+    sleevecap: 'front',
+    sleeve: 'sleevecap'
   },
   inject: {
     back: 'base',
     frontBase: 'base',
-    front: 'frontBase'
-    //sleeve: 'sleevecap'
+    front: 'frontBase',
+    sleeve: 'sleevecap'
   },
-  hide: ['frontBase'],
+  hide: ['frontBase', 'sleevecap'],
   options: {
     // Constants
     collarFactor: 4.8,

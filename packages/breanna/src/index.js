@@ -7,7 +7,7 @@ import draftBack from './back'
 import draftFrontBase from './front-base'
 import draftFront from './front'
 import draftSleevecap from './sleevecap'
-//import draftSleeve from './sleeve'
+import draftSleeve from './sleeve'
 
 // Create design
 const Pattern = new freesewing.Design(config, plugins)
@@ -18,6 +18,6 @@ Pattern.prototype.draftBack = draftBack
 Pattern.prototype.draftFrontBase = draftFrontBase
 Pattern.prototype.draftFront = draftFront
 Pattern.prototype.draftSleevecap = draftSleevecap
-//Pattern.prototype.draftSleeve = draftSleeve
+Pattern.prototype.draftSleeve = draftSleeve
 
 export default Pattern

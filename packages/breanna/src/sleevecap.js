@@ -116,11 +116,11 @@ function draftSleevecap(part, run) {
   // Sleevecap seamline
   paths.sleevecap = new Path()
     .move(points.bicepsRight)
-    .curve(points.bicepsRight, points.capQ1Cp1, points.capQ1)
+    ._curve(points.capQ1Cp1, points.capQ1)
     .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
-    .curve(points.capQ4Cp2, points.bicepsLeft, points.bicepsLeft)
+    .curve_(points.capQ4Cp2, points.bicepsLeft)
 
   // Store sleevecap length
   store.set('sleevecapLength', paths.sleevecap.length())

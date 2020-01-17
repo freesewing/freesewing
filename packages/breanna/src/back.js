@@ -150,12 +150,18 @@ export default part => {
     store.set('backWaistLength', 2 * points.cbWaist.dist(points.waist))
   }
   store.set(
-    'backArmholeLength',
+    'backArmholeToArmholePitch',
     new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .length()
+  )
+  store.set(
+    'backArmholeLength',
+    new Path()
+      .move(points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .length() + store.get('backArmholeToArmholePitch')
   )
   store.set('backSideSeamLength', points.armhole.dist(points.waist))
   store.set(
@@ -175,10 +181,6 @@ export default part => {
     // Logo
     points.logo = new Point(points.armhole.x / 1.5, points.armhole.y)
     snippets.logo = new Snippet('logo', points.logo)
-
-    // Scalebox
-    points.scalebox = new Point(points.cbWaist.x + 60, points.armhole.y)
-    macro('scalebox', { at: points.scalebox })
 
     // Notch
     snippets.armholePitch = new Snippet('bnotch', points.armholePitch)

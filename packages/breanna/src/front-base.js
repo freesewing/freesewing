@@ -103,12 +103,18 @@ export default part => {
     )
   )
   store.set(
-    'frontArmholeLength',
+    'frontArmholeToArmholePitch',
     new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .length()
+  )
+  store.set(
+    'frontArmholeLength',
+    new Path()
+      .move(points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .length() + store.get('frontArmholeToArmholePitch')
   )
 
   return part
