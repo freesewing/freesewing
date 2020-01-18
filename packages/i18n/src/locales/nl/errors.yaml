@@ -8,3 +8,4 @@ requestFailedWithStatusCode400: Verzoek mislukt
 requestFailedWithStatusCode401: Authenticatie mislukt
 requestFailedWithStatusCode403: Verboden
 requestFailedWithStatusCode500: Er was een onverwacht probleem. Rapporteer dit alstublieft.
+something: Something went wrong
