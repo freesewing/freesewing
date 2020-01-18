@@ -277,22 +277,22 @@ availablePatterns: Beschikbare patronen
 browseCollection: Grasduin door de collectie
 browseYourPatterns: Snuister door jouw patronen
 yourPatterns: Jouw patronen
-loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
-docsForContributors: Documentation for contributors
-patternDocs: Pattern documentation
+loginNeededToSavePatternsMsg: Je moet aangemeld zijn om je patronen te bewaren
+docsForContributors: Documentatie voor kabouterhulpjes
+patternDocs: Patroon documentatie
 socialMedia: Social media
-create: Create
-browse: Browse
+create: Creëer
+browse: Blader
 patrons: Patrons
-scrollToTop: Scroll to top
+scrollToTop: Scroll naar boven
 sitemap: Sitemap
-contributeToThing: Contribute to {thing}
-mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
-fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
-supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
-madeToMeasure: Made-to-measure
-sizes: Sizes
-accountRequired: This feature requires a FreeSewing account
-size: Size
-switchToThing: 'Switch to {thing}'
-shareThing: 'Share {thing}'
+contributeToThing: Draag bij aan {thing}
+mtmIsOurJam: Naaipatronen op maat is onze specialiteit
+fitYouDeserve: Je mist heel wat als je voor standaard maten gaat. <br /> Dus schrijf je vandaag in, en krijg de pasvorm die je verdient.
+supportNag: <b>Free</b>Sewing is <b>gratis</b>, maar we zouden het appreciëren mocht je overwegen <a href='/patrons/join/'>ons te steunen</a>.
+madeToMeasure: Op maat gemaakt
+sizes: Maten
+accountRequired: Deze functie vereist een FreeSewing account
+size: Maat
+switchToThing: 'Schakel over naar {thing}'
+shareThing: 'Deel {thing}'
