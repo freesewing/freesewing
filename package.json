@@ -164,6 +164,7 @@
     "@freesewing/tamiko": "file:packages/tamiko",
     "@freesewing/trayvon": "file:packages/trayvon",
     "@freesewing/wahid": "file:packages/wahid",
+    "bezier-js": "2.4.6",
     "create-freesewing-pattern": "file:packages/create-freesewing-pattern",
     "file-saver": "2.0.2",
     "tlds": "^1.203.1"

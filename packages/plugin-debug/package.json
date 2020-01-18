@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-debug",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "A FreeSewing plugin to log debug info to your browser console",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.1.8"
+    "@freesewing/core": "^2.1.9"
   },
   "dependencies": {},
   "devDependencies": {},

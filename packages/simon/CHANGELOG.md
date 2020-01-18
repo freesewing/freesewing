@@ -6,6 +6,11 @@
 **Note:** Version bump only for package simon
 
 
+## 2.1.9 (2020-01-18)
+
+### Fixed
+
+ - [#253](https://github.com/freesewing/freesewing/issues/253): Fixed type in simon sleeve causing incorrect cuff issue
 ## 2.1.8 (2019-12-16)
 
 ### Fixed

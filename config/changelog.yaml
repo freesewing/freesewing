@@ -7,6 +7,16 @@ Unreleased:
   Fixed:
   Security:
 
+2.1.9:
+  date: 2020-01-18
+  Fixed:
+    simon:
+      - "[#253](https://github.com/freesewing/freesewing/issues/253):
+        Fixed type in simon sleeve causing incorrect cuff issue"
+    core:
+      - "[#19](https://github.com/freesewing/freesewing/issues/19):
+        Path offset issue is now fixed in upstream bezier-js@2.4.6"
+
 2.1.8:
   date: 2019-12-16
   Fixed:
