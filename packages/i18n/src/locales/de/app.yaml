@@ -25,13 +25,13 @@ browsePatterns: Schnittmuster dursuchen
 browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
 cancel: Stornieren
-changeModel: Modell ändern
+changePerson: Change person
 changePattern: Muster ändern
 chatOnGitter: Chatte bei Gitter
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
-chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
-chooseAModel: Wähle ein Modell
+chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
+chooseAPerson: Choose a person
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 clearGist: Kern löschen
@@ -47,14 +47,15 @@ continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: Sie haben {count}-Modelle, denen die zum Messen von {pattern} erforderlichen Maße fehlen.
+countModelsLackingForPattern: "{count} of your people lack the required measurements to draft {pattern}"
 created: Erstellt
-createModel: Erstellen Sie ein Modell
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
+designOptions: Design options
+designs: Designs
 docs: Dokumente
 docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
@@ -103,7 +104,6 @@ invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, die gerne helfen. Also sei nicht schüchtern und schau bei einem Chat vorbei.
 justAMoment: Einen Moment bitte
 layout: Darstellung
-letUsSetupYourAccount: Lassen Sie uns Ihr Konto einrichten
 logIn: Anmelden
 loginWithProvider: 'Anmelden mit<br>{provider}'
 logOut: Abmelden
@@ -113,15 +113,14 @@ measurements: Maße
 menu: Menü
 metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
-model: Modell
-models: Modelle (Personen)
+person: Person
+people: People
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
 newDraftFromGist: Neue muster aus Kern
-newDraft: Neuer Entwurf
-newModel: Neues Modell
-newPattern: 'Neu {pattern}'
+addThing: Add {thing}
+newThing: New {thing}
 newPatternForModel: 'Neues {pattern} für {model}'
 noChanges: Keine Änderungen
 no: false
@@ -158,6 +157,7 @@ proceedWithCaution: Gehen Sie vorsichtig vor
 profile: Profil
 relatedLinks: Verwandte Links
 remove: Löschen
+removeThing: Remove {thing}
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
 resendActivationEmailMessage: 'Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht.'
@@ -165,8 +165,8 @@ resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
+restoreDesignDefaults: Restore design defaults
 restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
-restoreRecipeDefaults: Standardwerte für Rezept wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
 searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
@@ -198,7 +198,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing wurde von Joost De Cock & den Mitwirkenden kreiert,<br>mit der finanziellen Unterstützung unserer Gönner
+txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
 txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
@@ -233,7 +233,6 @@ apiReference: API-Referenz
 tutorial: Anleitung
 editThisPage: Diese Seite bearbeiten
 loginRequiredRedirect: 'Sie wurden auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
-recipes: Rezepte
 various: Verschiedenes
 sewing: Nähen
 examples: Beispiele
@@ -241,24 +240,25 @@ by: von
 years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
-noRecipe: Du hast keine Rezepte (noch). Erstelle ein neues Schnittmuster und speichere dann sein Rezept.
-modelFirst: Beginnen Sie mit dem Erstellen eines Modells
-noModel: Du hast noch keine Modelle (noch). FreeSewing erzeugt maßgeschneiderte Schnittmuster. Und wir können keine Muster erstellen, wenn wir keine Massangaben von Ihnen haben.
-noModel2: Als erstes erstellen Sie bitte ein Modell mit Ihren Massen oder den Massen der Person, für die Sie ein Schnittmuster erstellen möchten.
+noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
+modelFirst: Start by adding measurements
+noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
+noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-useRecipeModel: "Rezeptmodell verwenden"
+usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
 clickBelowToLogOut: Klicken Sie unten sich abzumelden
 compare: Vergleichen
-saveRecipe: Rezept speichern
+savePattern: Save pattern
 exportPattern: Schnittmuster exportieren
 recreate: Wiederherstellen
+recreateThing: Recreate {thing}
+recreateThingForPerson: Recreate {thing} for {person}
 seeYouLaterUser: Auf Wiedersehen {user}
 exportForPrinting: Exportieren für den Druck
 exportForEditing: Exportieren für Bearbeitung
-exportRecipe: Rezept exportieren
 startWithNeckTitle: Beginnen Sie mit dem Hals-Umfang
 startWithNeckDescription: Auf Basis Ihres Hals-Umfangs können wir Ihnen helfen, Fehler in Ihren Messungen zu erkennen.
 whatYouNeed: Was Sie benötigen
@@ -272,4 +272,27 @@ loadingMagic: Wir laden die Magie
 estimate: Schätzung
 actual: Aktuell
 weEstimateYM2B: "Wir schätzen, dein {measurement} auf etwa:"
-
+exportAsData: Export as data
+availablePatterns: Available patterns
+browseCollection: Browse collection
+browseYourPatterns: Browse your patterns
+yourPatterns: Your patterns
+loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
+docsForContributors: Documentation for contributors
+patternDocs: Pattern documentation
+socialMedia: Social media
+create: Create
+browse: Browse
+patrons: Patrons
+scrollToTop: Scroll to top
+sitemap: Sitemap
+contributeToThing: Contribute to {thing}
+mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
+fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
+supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
+madeToMeasure: Made-to-measure
+sizes: Sizes
+accountRequired: This feature requires a FreeSewing account
+size: Size
+switchToThing: 'Switch to {thing}'
+shareThing: 'Share {thing}'
