@@ -6,6 +6,11 @@
 **Note:** Version bump only for package core
 
 
+## 2.1.9 (2020-01-18)
+
+### Fixed
+
+ - [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
 ## 2.1.8 (2019-12-16)
 
 **Note:** Version bump only for package core
