@@ -25,13 +25,13 @@ browsePatterns: Bekijk de patronen
 browseShowcases: Bekijk de voorbeelden
 butThatCouldChange: Maar dat kan veranderen
 cancel: Annuleren
-changePerson: Change person
+changePerson: Verander persoon
 changePattern: Ander patroon
 chatOnGitter: Chat via Gitter
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
-chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
-chooseAPerson: Choose a person
+chestInfo: Borsten hebben extra maten nodig. Als deze persoon geen borsten heeft zullen overbodige maten verborgen worden bij het configureren. Dit heeft geen invloed op hoe patronen getekend worden.
+chooseAPerson: Kies een persoon
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 clearGist: Resumé wissen
@@ -47,14 +47,14 @@ continue: Doorgaan
 copiedToClipboard: Gekopieerd naar het klembord
 copy: Kopiëren
 couldYouTranslateThis: Kan jij dit vertalen?
-countModelsLackingForPattern: "{count} of your people lack the required measurements to draft {pattern}"
+countModelsLackingForPattern: "{count} van je mensen hebben niet de nodige maten op {pattern} te tekenen"
 created: Aangemaakt
 custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
 darkMode: Donkere modus
 default: Standaard
 demo: Demo
-designOptions: Design options
+designOptions: Design opties
 designs: Designs
 docs: Documentatie
 docsFooterMsg: Documentatie is nooit af. Hopelijk hebben we al je vragen kunnen beantwoorden, maar als dat niet het geval is, is er hulp beschikbaar.
@@ -113,14 +113,14 @@ measurements: Maten
 menu: Menu
 metadata: Metadata
 metricUnits: Metrische eenheden (cm)
-person: Person
-people: People
+person: Persoon
+people: Mensen
 monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
 nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
 newDraftFromGist: Nieuwe patroontekening van resumé
-addThing: Add {thing}
-newThing: New {thing}
+addThing: Voeg {thing} toe
+newThing: Nieuw {thing}
 newPatternForModel: 'Nieuwe {pattern} voor {model}'
 noChanges: Geen wijzigingen
 no: false
@@ -157,7 +157,7 @@ proceedWithCaution: Ga voorzichtig te werk
 profile: Profiel
 relatedLinks: Gerelateerde links
 remove: Verwijderen
-removeThing: Remove {thing}
+removeThing: '{thing} verwijderen'
 reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
 resendActivationEmailMessage: 'Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen.'
@@ -165,7 +165,7 @@ resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
 restoreDefaults: Standaardwaarden herstellen
-restoreDesignDefaults: Restore design defaults
+restoreDesignDefaults: Standaardwaarden ontwerp herstellen
 restorePatternDefaults: Standaardwaarden patroon herstellen
 saveDraftToYourAccount: Patroontekening opslaan in je account
 save: Opslaan
@@ -198,7 +198,7 @@ thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
 thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
-txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
+txt-footer: Freesewing is gemaakt door joost & kabouterhulpjes <br>met de financiële steun van onze Patrons
 txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>FreeSewing is gratis voor iedereen. Zonder verdere vragen.
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
@@ -240,22 +240,22 @@ by: door
 years: Jaren
 pricing: Prijzen
 createFirst: Begin een nieuw patroon te maken
-noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
-modelFirst: Start by adding measurements
-noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
-noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
+noPattern: Je hebt (nog) geen patronen. Maak een nieuw patroon, en sla het op in je account.
+modelFirst: Begin met maten toe te voegen
+noModel: Je hebt (nog) geen maten toegevoegd. FreeSewing can naaipatronen op maat genereren. Maar daarvoor hebben we maten nodig.
+noModel2: Dus het eerste dat je zou moeten doen is een persoon toevoegen, en je lintmeter bovenhalen.
 noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
 noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
-usePatternMeasurements: "Use the measurements of the original pattern"
+usePatternMeasurements: "Gebruik de maten van het originele patroon"
 createReplica: Creëer een replica
 showDetails: Toon details
 clickBelowToLogOut: Klik hieronder om uit te loggen
 compare: Vergelijk
-savePattern: Save pattern
+savePattern: Bewaar patroon
 exportPattern: Patroon exporteren
 recreate: Opnieuw aanmaken
-recreateThing: Recreate {thing}
-recreateThingForPerson: Recreate {thing} for {person}
+recreateThing: Maak {thing} opnieuw
+recreateThingForPerson: Maak {thing} opnieuw voor {person}
 seeYouLaterUser: Tot later {user}
 exportForPrinting: Exporteren om te printen
 exportForEditing: Exporteren om te bewerken
@@ -272,11 +272,11 @@ loadingMagic: De magie is aan het laden
 estimate: Schatting
 actual: Feitelijk
 weEstimateYM2B: "We schatten uw {measurement} op ongeveer:"
-exportAsData: Export as data
-availablePatterns: Available patterns
-browseCollection: Browse collection
-browseYourPatterns: Browse your patterns
-yourPatterns: Your patterns
+exportAsData: Exporteer als data
+availablePatterns: Beschikbare patronen
+browseCollection: Grasduin door de collectie
+browseYourPatterns: Snuister door jouw patronen
+yourPatterns: Jouw patronen
 loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
 docsForContributors: Documentation for contributors
 patternDocs: Pattern documentation
