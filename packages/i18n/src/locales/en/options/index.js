@@ -1,4 +1,5 @@
 import brian from './brian.yml'
+import breanna from './breanna.yml'
 import aaron from './aaron.yml'
 import simon from './simon.yml'
 import simone from './simone.yml'
@@ -26,6 +27,7 @@ import shared from '../../../shared-options.yml'
 
 let patterns = {
   brian,
+  breanna,
   aaron,
   simon,
   simone,

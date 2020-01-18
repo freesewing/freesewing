@@ -30,8 +30,8 @@ const DraftSettingMargin = props => {
   }
 
   const patternReset = () => {
-    setValue(props.patternDflt)
-    props.updateValue('margin', props.patternDflt)
+    setValue(props.designDflt)
+    props.updateValue('margin', props.designDflt)
   }
 
   const toggleExpanded = () => setExpanded(!expanded)
@@ -53,7 +53,7 @@ const DraftSettingMargin = props => {
     <li>
       <OptionPreamble
         dflt={props.dflt}
-        patternDflt={props.patternDflt}
+        designDflt={props.designDflt}
         value={value}
         desc={props.desc}
         title={props.title}

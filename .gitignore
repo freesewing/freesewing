@@ -49,6 +49,8 @@ packages/utils/validateTld
 
 packages/*/example/yarn.lock
 packages/*/report
+packages/*/package-lock.json
+packages/*/yarn.lock
 
 # dependencies
 node_modules

@@ -106,7 +106,7 @@ const DraftSettingSa = props => {
     <li>
       <OptionPreamble
         dflt={saDfltToggle}
-        patternDflt={'dflt'}
+        designDflt={'dflt'}
         sameButDifferent={props.dflt !== props.value}
         value={value}
         desc={props.desc}

@@ -22,6 +22,7 @@ div.gatsby-highlight pre {
   padding: 1.5rem 1rem;
 }
 
+pre.language-yaml:before,
 pre.language-js:before,
 pre.language-jsx:before,
 pre.language-mdx:before,
@@ -39,6 +40,10 @@ pre.language-bash:before {
   border-bottom-left-radius: 3px;
   font-weight: bold;
   text-shadow: none;
+}
+pre.language-yaml:before {
+  content: "yaml";
+  background: rgba(255, 255, 0, 0.9);
 }
 pre.language-js:before {
   content: "js";
@@ -82,6 +87,7 @@ pre[class*="language-"] {
     border-radius: 0;
     word-break: break-word;
   }
+  pre.language-yaml:before,
   pre.language-js:before,
   pre.language-jsx:before,
   pre.language-mdx:before,

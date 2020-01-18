@@ -1,4 +1,4 @@
-// This is an idea to keep the printing to a minimum. The whole patterns is rather large. 
+// This is an idea to keep the printing to a minimum. The whole patterns is rather large.
 // To keep you from printing it completely, you could print this part in paperless mode
 // and only have a single sheet with all the dimensions on it.
 
@@ -16,57 +16,48 @@ export default function(part) {
     sa,
     paperless,
     macro
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let mini = options.minimizer;
+  let mini = options.minimizer
 
-  for( var p in points ) {
-    points[p].x = points[p].x /mini;
-    points[p].y = points[p].y /mini;
+  for (var p in points) {
+    points[p].x = points[p].x / mini
+    points[p].y = points[p].y / mini
   }
 
-  
   paths.waistFoldBack = paths.waistBack
-    .offset(-1 * options.waistBand/mini)
-    .attr("class", "fabric stroke-sm");
+    .offset((-1 * options.waistBand) / mini)
+    .attr('class', 'fabric stroke-sm')
   paths.waistFoldFront = paths.waistFront
-    .offset(-1 * options.waistBand/mini)
-    .attr("class", "fabric stroke-sm");
+    .offset((-1 * options.waistBand) / mini)
+    .attr('class', 'fabric stroke-sm')
 
-  paths.frontFold = paths.front
-    .offset(-1 * options.hem/mini)
-    .attr("class", "fabric stroke-sm");
-  paths.legFold = paths.leg
-    .offset(-1 * options.hem/mini)
-    .attr("class", "fabric stroke-sm");
-  paths.backFold = paths.back
-    .offset(-1 * options.hem/mini)
-    .attr("class", "fabric stroke-sm");
-
-
+  paths.frontFold = paths.front.offset((-1 * options.hem) / mini).attr('class', 'fabric stroke-sm')
+  paths.legFold = paths.leg.offset((-1 * options.hem) / mini).attr('class', 'fabric stroke-sm')
+  paths.backFold = paths.back.offset((-1 * options.hem) / mini).attr('class', 'fabric stroke-sm')
 
   // Complete?
   if (complete) {
-    points.logo = points.fWaistFront.shift(270, 400);
-    snippets.logo = new Snippet("logo", points.logo);
+    points.logo = points.fWaistFront.shift(270, 400)
+    snippets.logo = new Snippet('logo', points.logo)
     points.text = points.logo
       .shift(-90, 50)
-      .attr("data-text", "hello")
-      .attr("data-text-class", "center");
+      .attr('data-text', 'hello')
+      .attr('data-text-class', 'center')
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr("class", "fabric sa");
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
-    macro("hd", {
+    macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
       y: points.fWaistSide.y,
-      text: part.units(points.fWaistSide.dist(points.mWaist)*mini)
-    });
+      text: part.units(points.fWaistSide.dist(points.mWaist) * mini)
+    })
     /*
     macro("hd", {
       from: points.fWaistFrontOverlap,
@@ -152,7 +143,7 @@ export default function(part) {
   }
 
   // keep this secret for now:
-  part.render = false;
+  part.render = false
 
-  return part;
+  return part
 }

@@ -1,5 +1,5 @@
 const darkBg = '#212529'
-const lightBg = '#ffffff'
+const lightBg = '#f8f9fa'
 const colors = {
   light: {
     primary: darkBg,
@@ -38,6 +38,13 @@ const getTheme = mode => {
         container: { padding: '25px 0' },
         track: { height: '4px' },
         thumb: { width: '16px', height: '16px' }
+      },
+      MuiToolbar: {
+        root: {
+          maxWidth: '1600px',
+          margin: 'auto',
+          width: '100%'
+        }
       }
     },
     palette: {

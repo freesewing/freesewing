@@ -55,7 +55,7 @@ export default function(part) {
       at: points.titleAnchor,
       nr: 3,
       title: 'bowTie',
-      scale: (store.get('tipWidth')/75)
+      scale: store.get('tipWidth') / 75
     })
   }
 

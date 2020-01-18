@@ -1,15 +1,5 @@
 export default function(part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    macro,
-    sa,
-    store,
-    paperless
-  } = part.shorthand()
+  let { Point, points, Path, paths, complete, macro, sa, store, paperless } = part.shorthand()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(0, 0)
   points.bandTopLeft = points.bandBottomLeft.flipY()
@@ -49,7 +39,7 @@ export default function(part) {
       at: points.titleAnchor,
       nr: 1,
       title: 'bowTie',
-      scale: (store.get('tipWidth')/75)
+      scale: store.get('tipWidth') / 75
     })
     points.scaleboxAnchor = points.bandTopLeft.shift(30, 80)
     macro('scalebox', { at: points.scaleboxAnchor })

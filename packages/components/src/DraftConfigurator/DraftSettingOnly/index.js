@@ -52,7 +52,7 @@ const DraftSettingOnly = props => {
       name="only"
       value={value}
       dflt={props.dflt}
-      patternDflt={props.dflt}
+      designDflt={props.dflt}
       onChange={update}
       label="po-list-only"
       updateValue={update}
@@ -80,7 +80,7 @@ const DraftSettingOnly = props => {
     <li>
       <OptionPreamble
         dflt={onlyDfltToggle}
-        patternDflt="dflt"
+        designDflt="dflt"
         sameButDifferent={props.dflt !== props.value}
         value={value}
         desc={props.desc}
