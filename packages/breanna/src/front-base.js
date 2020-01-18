@@ -48,10 +48,8 @@ export default part => {
 
   // Armhole deeper at the front
   if (options.frontArmholeDeeper > 0) {
-    let deeper = (measurements.shoulderToShoulder * options.frontArmholeDeeper) / 2
-    points.armholePitch = points.armholePitch.shift(180, deeper)
-    points.armholePitchCp1 = points.armholePitch.shift(180, deeper)
-    points.armholePitchCp2 = points.armholePitch.shift(180, deeper)
+    for (let p of ['armholePitch', 'armholePitchCp1', 'armholePitchCp2'])
+      points[p].x -= (measurements.shoulderToShoulder * options.frontArmholeDeeper) / 2
   }
 
   // Bust
@@ -64,14 +62,15 @@ export default part => {
 
   // Work in room for bust from armhole pitch point down
   let bustDelta =
-    (points.armhole.dx(points.bustSide) * points.armhole.dy(points.bustSide)) /
+    (points.armhole.dx(points.bustSide) * points.armholePitch.dy(points.armhole)) /
     points.armholePitch.dy(points.bustSide)
   points.armhole = points.armhole.shift(0, bustDelta)
 
   // Adjust waist down to accomodate bust
   points.cfWaist = new Point(
     0,
-    measurements.hpsToHipsFront - (measurements.hpsToHipsBack - measurements.hpsToWaistBack)
+    measurements.hpsToHipsFront * (1 + options.verticalEase) -
+      (measurements.hpsToHipsBack - measurements.hpsToWaistBack) * (1 + options.verticalEase)
   )
   points.waist = utils.beamIntersectsY(points.armhole, points.bustSide, points.cfWaist.y)
   points.waist = points.armhole.shiftTowards(points.waist, store.get('backSideSeamLength'))

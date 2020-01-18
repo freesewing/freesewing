@@ -20,7 +20,8 @@ export default part => {
   let top = paths.sleevecap.edge('topLeft').y
   points.centerWrist = new Point(
     0,
-    top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
+    top +
+      measurements.shoulderToWrist * (1 + options.sleeveLengthBonus) * (1 + options.verticalEase)
   )
   points.wristRight = points.centerWrist.shift(
     0,
@@ -72,7 +73,7 @@ export default part => {
     else if (q4Len > backTarget) points.backNotch = q4.shiftAlong(backTarget)
     else {
       let q3 = new Path().move(points.capQ4).curve(points.capQ4Cp1, points.capQ3Cp2, points.capQ3)
-      points.backNotch = q3.shiftAlong(frontTarget - q4Len)
+      points.backNotch = q3.shiftAlong(backTarget - q4Len)
     }
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)

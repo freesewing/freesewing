@@ -37,7 +37,7 @@ export default {
       'acrossBackFactor',
       'armholeDepthFactor',
       'frontArmholeDeeper',
-      //'shoulderSlopeReduction',
+      'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
       {
         sleevecap: [
@@ -96,26 +96,15 @@ export default {
   options: {
     // Constants
     collarFactor: 4.8,
-    armholeDepthBase: 0.65,
+    armholeDepthBase: 0.6,
     breannaFitSleeve: true,
     breannaFitCollar: true,
 
-    // Percentages
-    acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 100, min: 80, max: 120 },
+    // Booleans
     shoulderDart: { bool: false },
-    shoulderDartSize: { pct: 7, min: 4, max: 10 },
-    shoulderDartLength: { pct: 85, min: 60, max: 100 },
     waistDart: { bool: true },
-    waistDartSize: { pct: 10, min: 4, max: 15 },
-    waistDartLength: { pct: 85, min: 60, max: 100 },
-    verticalEase: { pct: 1, min: 0, max: 5 },
-    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
-    shoulderEase: { pct: 0, min: -2, max: 6 },
-    collarEase: { pct: 3.5, min: 0, max: 10 },
-    chestEase: { pct: 8, min: -4, max: 20 },
-    waistEase: { pct: 8, min: -4, max: 20 },
 
+    // Lists
     primaryBustDart: {
       list: [
         '06:00',
@@ -134,7 +123,7 @@ export default {
         '16:00',
         '17:00'
       ],
-      dflt: '14:00'
+      dflt: '06:00'
     },
     secondaryBustDart: {
       list: [
@@ -155,16 +144,28 @@ export default {
         '16:00',
         '17:00'
       ],
-      dflt: '15:00'
+      dflt: '13:30'
     },
+
+    // Percentages
+    acrossBackFactor: { pct: 96, min: 93, max: 100 },
+    armholeDepthFactor: { pct: 100, min: 80, max: 120 },
+    shoulderDartSize: { pct: 7, min: 4, max: 10 },
+    shoulderDartLength: { pct: 85, min: 60, max: 100 },
+    waistDartSize: { pct: 10, min: 4, max: 15 },
+    waistDartLength: { pct: 85, min: 60, max: 100 },
+    verticalEase: { pct: 2, min: 0, max: 8 },
+    frontArmholeDeeper: { pct: 1, min: 0, max: 5 },
+    shoulderEase: { pct: 0, min: 0, max: 4 },
+    collarEase: { pct: 3.5, min: 0, max: 10 },
+    chestEase: { pct: 10, min: 5, max: 20 },
+    waistEase: { pct: 10, min: 5, max: 20 },
     primaryBustDartShaping: { pct: 50, min: 25, max: 75 },
     primaryBustDartLength: { pct: 85, min: 65, max: 95 },
     secondaryBustDartLength: { pct: 85, min: 65, max: 95 },
-
-    //shoulderSlopeReduction: { pct: 0, min: 0, max: 100 },
-
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 100 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
-    cuffEase: { pct: 20, min: 0, max: 200 },
+    cuffEase: { pct: 20, min: 0, max: 50 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },

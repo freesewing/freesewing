@@ -141,6 +141,9 @@ export default part => {
   paths.seam.close().attr('class', 'fabric')
   paths.saBase.close().render = false
 
+  // Anchor point
+  points.gridAnchor = points.cfNeck.clone()
+
   // Complete pattern?
   if (complete) {
     // Logo
@@ -245,14 +248,6 @@ export default part => {
       })
     }
   }
-
-  macro('pd', {
-    path: new Path()
-      .move(points.armhole)
-      .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-    d: 15
-  })
 
   return part
 }
