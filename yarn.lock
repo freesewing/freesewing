@@ -1514,148 +1514,148 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/components@file:packages/components":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/core@file:packages/core":
-  version "2.1.8"
+  version "2.2.0-beta.1"
   dependencies:
-    bezier-js "^2.2.13"
+    bezier-js "^2.4.6"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.1.8"
+  version "2.2.0-beta.1"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/models@file:packages/models":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.1.8"
+  version "2.2.0-beta.1"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.1.8"
-    "@freesewing/plugin-dimension" "^2.1.8"
-    "@freesewing/plugin-grainline" "^2.1.8"
-    "@freesewing/plugin-logo" "^2.1.8"
-    "@freesewing/plugin-round" "^2.1.8"
-    "@freesewing/plugin-scalebox" "^2.1.8"
-    "@freesewing/plugin-sprinkle" "^2.1.8"
-    "@freesewing/plugin-title" "^2.1.8"
+    "@freesewing/plugin-cutonfold" "^2.2.0-beta.1"
+    "@freesewing/plugin-dimension" "^2.2.0-beta.1"
+    "@freesewing/plugin-grainline" "^2.2.0-beta.1"
+    "@freesewing/plugin-logo" "^2.2.0-beta.1"
+    "@freesewing/plugin-round" "^2.2.0-beta.1"
+    "@freesewing/plugin-scalebox" "^2.2.0-beta.1"
+    "@freesewing/plugin-sprinkle" "^2.2.0-beta.1"
+    "@freesewing/plugin-title" "^2.2.0-beta.1"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.1.8"
+  version "2.2.0-beta.1"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -5073,10 +5073,10 @@ bezier-js@2.4.6:
   resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-2.4.6.tgz#f418058c1c8d2f2e6ce7ad756ba0a0d4766f761f"
   integrity sha512-wkIw2mrUXuHeRKIrn+opgb82wiWZ0gmLXPPrl1D0z23n2BwDM6KSyqevHdSj/BWP5ihA5Ktr0uaAX7eZ/tIuzw==
 
-bezier-js@^2.2.13:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-2.4.4.tgz#2859edc31e1b1c287ba4788dcccd5d23838c4578"
-  integrity sha512-qYC9FBubdTK4VZe0m+lS7lEpf87w1fnm6g2m1FKsnlz+wfNnJy3gjQt4Y5nnI1NrjJrnQqnZt3S6Z5qjhloDNA==
+bezier-js@^2.4.6:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-2.5.1.tgz#c27addc905a9f84a09cc02a4329be8769cd638a7"
+  integrity sha512-a+U+hOQWIx1aM37TZLGbAH1Hw0YdsuBTWYNlFudz/V/CvOM56gl5RyPoH0pUwuIqg1LAhDtoA3uRVYl0ZJpi5w==
 
 big.js@^3.1.3:
   version "3.2.0"
@@ -6227,10 +6227,10 @@ commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, comm
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commander@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
-  integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
+commander@^4.0.0, commander@^4.0.1:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
+  integrity sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
 
 commander@~2.19.0:
   version "2.19.0"
@@ -6717,10 +6717,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.1.8"
+  version "2.2.0-beta.1"
   dependencies:
-    "@freesewing/i18n" "^2.1.8"
-    "@freesewing/pattern-info" "^2.1.8"
+    "@freesewing/i18n" "^2.2.0-beta.1"
+    "@freesewing/pattern-info" "^2.2.0-beta.1"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -6736,7 +6736,7 @@ create-error-class@^3.0.0:
     p-each-series "^1.0.0"
     parse-git-config "^3.0.0"
     validate-npm-package-name "^3.0.0"
-    which "^1.3.1"
+    which "^2.0.2"
 
 create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.2.0"
@@ -7468,20 +7468,6 @@ del@^4.1.1:
     p-map "^2.0.0"
     pify "^4.0.1"
     rimraf "^2.6.3"
-
-del@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/del/-/del-5.1.0.tgz#d9487c94e367410e6eff2925ee58c0c84a75b3a7"
-  integrity sha512-wH9xOVHnczo9jN2IW68BabcecVPxacIA3g/7z6vhSU/4stOKQzeCRK0yD0A24WiAAUJmmVpWqrERcTxnLo3AnA==
-  dependencies:
-    globby "^10.0.1"
-    graceful-fs "^4.2.2"
-    is-glob "^4.0.1"
-    is-path-cwd "^2.2.0"
-    is-path-inside "^3.0.1"
-    p-map "^3.0.0"
-    rimraf "^3.0.0"
-    slash "^3.0.0"
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -8687,16 +8673,17 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^2.0.3:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-2.0.4.tgz#2f5cc589c81db316628627004ea4e37b93391d8e"
-  integrity sha512-VcQfhuGD51vQUQtKIq2fjGDLDbL6N1DTQVpYzxZ7LPIXw3HqTuIz6uxRmpV1qf8i31LHf2kjiaGI+GdHwRgbnQ==
+execa@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-3.4.0.tgz#c08ed4550ef65d858fac269ffc8572446f37eb89"
+  integrity sha512-r9vdGQk4bmCuK1yKQu1KTwcT2zwfWdbdaXfCtAh+5nU/4fSX+JAb7vZGvI5naJrQlvONrEB20jeruESI69530g==
   dependencies:
-    cross-spawn "^6.0.5"
+    cross-spawn "^7.0.0"
     get-stream "^5.0.0"
+    human-signals "^1.1.1"
     is-stream "^2.0.0"
     merge-stream "^2.0.0"
-    npm-run-path "^3.0.0"
+    npm-run-path "^4.0.0"
     onetime "^5.1.0"
     p-finally "^2.0.0"
     signal-exit "^3.0.2"
@@ -10419,6 +10406,11 @@ https-proxy-agent@^2.2.1, https-proxy-agent@^2.2.3:
     agent-base "^4.3.0"
     debug "^3.1.0"
 
+human-signals@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
+  integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
+
 humanize-ms@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/humanize-ms/-/humanize-ms-1.2.1.tgz#c46e3159a293f6b896da29316d8b6fe8bb79bbed"
@@ -11137,7 +11129,7 @@ is-observable@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-observable/-/is-observable-2.0.0.tgz#327af1e8cdea9cd717f95911b87c5d34301721a6"
   integrity sha512-fhBZv3eFKUbyHXZ1oHujdo2tZ+CNbdpdzzlENgCGZUC8keoGxUew2jYFLYcUB4qo7LDD03o4KK11m/QYD7kEjg==
 
-is-path-cwd@^2.0.0, is-path-cwd@^2.2.0:
+is-path-cwd@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-2.2.0.tgz#67d43b82664a7b5191fd9119127eb300048a9fdb"
   integrity sha512-w942bTcih8fdJPJmQHFzkS76NEP8Kzzvmw92cXsazb8intwLqPibPPdXf4ANdKV3rYMuuQYGIWtvz9JilB3NFQ==
@@ -11162,11 +11154,6 @@ is-path-inside@^2.1.0:
   integrity sha512-wiyhTzfDWsvwAW53OBWF5zuvaOGlZ6PwYxAbPVDhpm+gM09xKQGjBq/8uYN12aDvMxnAnq3dxTyoSoRNmg5YFg==
   dependencies:
     path-is-inside "^1.0.2"
-
-is-path-inside@^3.0.1:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/is-path-inside/-/is-path-inside-3.0.2.tgz#f5220fc82a3e233757291dddc9c5877f2a1f3017"
-  integrity sha512-/2UGPSgmtqwo1ktx8NDHjuPwZWmHhO+gj0f93EkhLB5RgW9RZevWYYlIkS6zePc6U2WpOdQYIwHe9YC4DWEBVg==
 
 is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
@@ -12669,24 +12656,22 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^9.2.1:
-  version "9.5.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-9.5.0.tgz#290ec605252af646d9b74d73a0fa118362b05a33"
-  integrity sha512-nawMob9cb/G1J98nb8v3VC/E8rcX1rryUYXVZ69aT9kde6YWX+uvNOEHY5yf2gcWcTJGiD0kqXmCnS3oD75GIA==
+lint-staged@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.0.tgz#2560394062b6e0be77247761bba5fde26025fb89"
+  integrity sha512-/MrZOLMnljjMHakxlRd1Z5Kr8wWWlrWFasye7HaTv5tx56icwzT/STRty8flMKsyzBGTfTa9QszNVPsDS/yOug==
   dependencies:
-    chalk "^2.4.2"
-    commander "^2.20.0"
-    cosmiconfig "^5.2.1"
+    chalk "^3.0.0"
+    commander "^4.0.1"
+    cosmiconfig "^6.0.0"
     debug "^4.1.1"
     dedent "^0.7.0"
-    del "^5.0.0"
-    execa "^2.0.3"
+    execa "^3.4.0"
     listr "^0.14.3"
     log-symbols "^3.0.0"
     micromatch "^4.0.2"
     normalize-path "^3.0.0"
-    please-upgrade-node "^3.1.1"
-    string-argv "^0.3.0"
+    please-upgrade-node "^3.2.0"
     stringify-object "^3.3.0"
 
 listr-silent-renderer@^1.1.1:
@@ -14211,10 +14196,10 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-run-path@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-3.1.0.tgz#7f91be317f6a466efed3c9f2980ad8a4ee8b0fa5"
-  integrity sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
+npm-run-path@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
+  integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
 
@@ -15272,7 +15257,7 @@ pkginfo@0.4.1:
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.1.tgz#b5418ef0439de5425fc4995042dced14fb2a84ff"
   integrity sha1-tUGO8EOd5UJfxJlQQtztFPsqhP8=
 
-please-upgrade-node@^3.1.1, please-upgrade-node@^3.2.0:
+please-upgrade-node@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/please-upgrade-node/-/please-upgrade-node-3.2.0.tgz#aeddd3f994c933e4ad98b99d9a556efa0e2fe942"
   integrity sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
@@ -18979,11 +18964,6 @@ strict-uri-encode@^2.0.0:
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
   integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
 
-string-argv@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
-  integrity sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==
-
 string-hash@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
@@ -20628,7 +20608,7 @@ which@1, which@1.3.1, which@^1.2.9, which@^1.3.0, which@^1.3.1:
   dependencies:
     isexe "^2.0.0"
 
-which@^2.0.1:
+which@^2.0.1, which@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
