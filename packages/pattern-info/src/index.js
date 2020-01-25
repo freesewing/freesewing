@@ -9,6 +9,7 @@ export const list = [
   'aaron',
   'benjamin',
   'bent',
+  'breanna',
   'brian',
   'bruce',
   'carlita',
@@ -55,4 +56,4 @@ export const withoutBreasts = [
   'waralee'
 ]
 
-export const withBreasts = ['cathrin', 'carlita']
+export const withBreasts = ['breanna', 'cathrin', 'carlita']
