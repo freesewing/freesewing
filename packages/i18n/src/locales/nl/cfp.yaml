@@ -25,3 +25,4 @@ designModeIsOn: Ontwerpmodus is aan
 designModeIsOff: Ontwerpmodus is uit
 turnOn: Inschakelen
 turnOff: Uitschakelen
+validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
