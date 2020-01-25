@@ -4,6 +4,81 @@
 
 ## Unreleased
 
+### breanna
+
+#### Added
+
+ - Breanna is a body block for womenswear
+
+### carlita
+
+#### Changed
+
+ - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+
+### components
+
+#### Changed
+
+ - DraftConfigurator has been updated to reflect frontend naming changes
+ - Term `pattern` is now `design`
+ - Term `recipe` is now `pattern`
+ - Term `gist` is now `data`
+
+### core
+
+#### Added
+
+ - Added the `Path.noop()` method
+ - Added the `Path.insop()` methods
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
+
+### css-theme
+
+#### Changed
+
+ - Added new styles for the frontend changes in 2.2
+
+### i18n
+
+#### Added
+
+ - Added translations for Breanna
+
+#### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+#### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
+
+### models
+
+#### Changed
+
+ - Extended the menswear size range to have 10 different sizes, just like womenswear
+
+### mui-theme
+
+#### Changed
+
+ - Changed the light background to `#f8f9fa` rather than `#fff`
+ - Changed the navbar to be light/dark based on the theme, rather than always dark
+
+### simone
+
+#### Changed
+
+ - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+
 
 ## 2.1.9 (2020-01-18)
 

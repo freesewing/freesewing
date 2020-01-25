@@ -3,9 +3,19 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package i18n
+### Added
 
+ - Added translations for Breanna
 
+### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package i18n

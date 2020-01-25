@@ -13,9 +13,9 @@ Unreleased:
       - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
     components:
       - DraftConfigurator has been updated to reflect frontend naming changes
-      - `pattern` is now `design`
-      - `recipe` is now `pattern`
-      - `gist` is now `data`
+      - Term `pattern` is now `design`
+      - Term `recipe` is now `pattern`
+      - Term `gist` is now `data`
     css-theme:
       - Added new styles for the frontend changes in 2.2
     i18n:

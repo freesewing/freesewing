@@ -3,9 +3,10 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package mui-theme
+### Changed
 
-
+ - Changed the light background to `#f8f9fa` rather than `#fff`
+ - Changed the navbar to be light/dark based on the theme, rather than always dark
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package mui-theme

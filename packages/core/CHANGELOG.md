@@ -3,9 +3,10 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package core
+### Added
 
-
+ - Added the `Path.noop()` method
+ - Added the `Path.insop()` methods
 ## 2.1.9 (2020-01-18)
 
 ### Fixed

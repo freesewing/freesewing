@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package css-theme
+### Changed
 
-
+ - Added new styles for the frontend changes in 2.2
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package css-theme

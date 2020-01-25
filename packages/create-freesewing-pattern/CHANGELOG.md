@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package create-freesewing-pattern
+### Fixed
 
-
+ - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package create-freesewing-pattern

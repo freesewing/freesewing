@@ -3,9 +3,12 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package components
+### Changed
 
-
+ - DraftConfigurator has been updated to reflect frontend naming changes
+ - Term `pattern` is now `design`
+ - Term `recipe` is now `pattern`
+ - Term `gist` is now `data`
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package components
