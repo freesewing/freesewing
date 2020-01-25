@@ -34,6 +34,9 @@ Unreleased:
       - Removed the files for homepage translation, and moved that content to markdown
       - Removed the files for editor translation, as it is no longer used
   Fixed:
+    create-freesewing-pattern:
+      - "[#257](https://github.com/freesewing/freesewing/issues/257):
+        Explain that pattern names are bound by the constraints of NPM package names"
   Security:
 
 2.1.9:
