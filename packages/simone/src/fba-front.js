@@ -35,10 +35,7 @@ export default part => {
   /*
    * Locate bust point
    */
-  points.bust = new Point(
-    measurements.bustSpan / 2,
-    points.neck.y + measurements.highPointShoulderToBust
-  )
+  points.bust = new Point(measurements.bustSpan / 2, points.neck.y + measurements.hpsToBust)
 
   /*
    * Figure out how much do we need to open a dart to create the required FBA room

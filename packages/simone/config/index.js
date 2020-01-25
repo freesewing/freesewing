@@ -113,7 +113,7 @@ export default {
     'centerBackNeckToWaist',
     'chestCircumference',
     'highBust',
-    'highPointShoulderToBust',
+    'hpsToBust',
     'naturalWaist',
     'naturalWaistToHip',
     'neckCircumference',
