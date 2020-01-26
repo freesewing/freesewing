@@ -36,7 +36,7 @@
     "handlebars": "^4.1.0",
     "inquirer": "^6.2.2",
     "make-dir": "^2.0.0",
-    "ora": "^3.1.0",
+    "ora": "^4.0.3",
     "p-each-series": "^1.0.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
