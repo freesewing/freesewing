@@ -6,6 +6,7 @@
 ### Changed
 
  - DraftConfigurator has been updated to reflect frontend naming changes
+ - Updated Workbench component to pass data rather than gist to DraftConfigurator
  - Term `pattern` is now `design`
  - Term `recipe` is now `pattern`
  - Term `gist` is now `data`

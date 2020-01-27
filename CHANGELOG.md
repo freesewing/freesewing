@@ -10,6 +10,12 @@
 
  - Breanna is a body block for womenswear
 
+### brian
+
+#### Changed
+
+ - Reworked Brian to use the new shoulderslope measurement
+
 ### carlita
 
 #### Changed
@@ -21,6 +27,7 @@
 #### Changed
 
  - DraftConfigurator has been updated to reflect frontend naming changes
+ - Updated Workbench component to pass data rather than gist to DraftConfigurator
  - Term `pattern` is now `design`
  - Term `recipe` is now `pattern`
  - Term `gist` is now `data`
@@ -39,6 +46,10 @@
  - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
 
 ### css-theme
+
+#### Added
+
+ - Added styling for table.data
 
 #### Changed
 
@@ -78,6 +89,12 @@
 #### Changed
 
  - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+
+### utils
+
+#### Changed
+
+ - Started reworking the neckstimate values (under construction)
 
 
 ## 2.1.9 (2020-01-18)

@@ -3,6 +3,10 @@
 
 ## Unreleased
 
+### Added
+
+ - Added styling for table.data
+
 ### Changed
 
  - Added new styles for the frontend changes in 2.2
