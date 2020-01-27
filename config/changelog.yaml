@@ -3,16 +3,21 @@ Unreleased:
   Added:
     breanna:
       - Breanna is a body block for womenswear
+    css-theme:
+      - Added styling for table.data
     core:
       - Added the `Path.noop()` method
       - Added the `Path.insop()` methods
     i18n:
       - Added translations for Breanna
   Changed:
+    brian:
+      - Reworked Brian to use the new shoulderslope measurement
     carlita:
       - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
     components:
       - DraftConfigurator has been updated to reflect frontend naming changes
+      - Updated Workbench component to pass data rather than gist to DraftConfigurator
       - Term `pattern` is now `design`
       - Term `recipe` is now `pattern`
       - Term `gist` is now `data`
@@ -28,6 +33,8 @@ Unreleased:
       - Changed the navbar to be light/dark based on the theme, rather than always dark
     simone:
       - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+    utils:
+      - Started reworking the neckstimate values (under construction)
   Deprecated:
   Removed:
     i18n:
