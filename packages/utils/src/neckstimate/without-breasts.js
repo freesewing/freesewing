@@ -68,8 +68,8 @@ export default {
     base: 300
   },
   shoulderSlope: {
-    slope: 0.01,
-    base: 50
+    slope: 0.43,
+    base: 670
   },
   shoulderToElbow: {
     slope: 0.1,

@@ -8,8 +8,8 @@ export default {
     base: 280
   },
   centerBackNeckToHips: {
-    slope: 0.15,
-    base: 490
+    slope: 0.9,
+    base: 470
   },
   centerBackNeckToWaist: {
     slope: 0.15,
@@ -72,8 +72,8 @@ export default {
     base: 261
   },
   shoulderSlope: {
-    slope: 0.01,
-    base: 40
+    slope: 0.9,
+    base: 520
   },
   shoulderToElbow: {
     slope: 0.1,
@@ -96,7 +96,7 @@ export default {
     base: 158
   },
   bustFront: {
-    slope: 1.5,
+    slope: 2,
     base: 520
   },
   bustSpan: {
@@ -116,15 +116,15 @@ export default {
     base: 285
   },
   hpsToHipsBack: {
-    slope: 1.1,
+    slope: 0.9,
     base: 490
   },
   hpsToHipsFront: {
-    slope: 1.1,
+    slope: 0.9,
     base: 495
   },
   hpsToWaistBack: {
-    slope: 1.1,
+    slope: 0.9,
     base: 400
   },
   naturalWaistToUnderbust: {
