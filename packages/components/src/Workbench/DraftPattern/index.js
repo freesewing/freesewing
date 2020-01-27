@@ -1,43 +1,42 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Draft from "../../Draft";
-import Design from "../Design";
-import DraftConfigurator from "../../DraftConfigurator";
-import { FormattedMessage } from "react-intl";
-import Prism from "prismjs";
-import fileSaver from "file-saver";
-import theme from "@freesewing/plugin-theme";
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import Draft from '../../Draft'
+import Design from '../Design'
+import DraftConfigurator from '../../DraftConfigurator'
+import { FormattedMessage } from 'react-intl'
+import Prism from 'prismjs'
+import fileSaver from 'file-saver'
+import theme from '@freesewing/plugin-theme'
 
 const DraftPattern = props => {
-  const [design, setDesign] = useState(true);
-  const [focus, setFocus] = useState(null);
+  const [design, setDesign] = useState(true)
+  const [focus, setFocus] = useState(null)
 
   const raiseEvent = (type, data) => {
-    if (type === "clearFocusAll") {
-      props.updateGist(false, "settings", "only");
-      return setFocus(null);
+    if (type === 'clearFocusAll') {
+      props.updateGist(false, 'settings', 'only')
+      return setFocus(null)
     }
-    let f = {};
-    if (focus !== null) f = { ...focus };
-    if (typeof f[data.part] === "undefined")
-      f[data.part] = { paths: [], points: [], coords: [] };
-    if (type === "point") f[data.part].points.push(data.name);
-    else if (type === "path") f[data.part].paths.push(data.name);
-    else if (type === "coords") f[data.part].coords.push(data.coords);
-    else if (type === "clearFocus") {
-      let i = focus[data.part][data.type].indexOf(data.name);
-      f[data.part][data.type].splice(i, 1);
-    } else if (type === "part") props.updateGist(data, "settings", "only");
+    let f = {}
+    if (focus !== null) f = { ...focus }
+    if (typeof f[data.part] === 'undefined') f[data.part] = { paths: [], points: [], coords: [] }
+    if (type === 'point') f[data.part].points.push(data.name)
+    else if (type === 'path') f[data.part].paths.push(data.name)
+    else if (type === 'coords') f[data.part].coords.push(data.coords)
+    else if (type === 'clearFocus') {
+      let i = focus[data.part][data.type].indexOf(data.name)
+      f[data.part][data.type].splice(i, 1)
+    } else if (type === 'part') props.updateGist(data, 'settings', 'only')
 
-    setFocus(f);
-  };
+    setFocus(f)
+  }
 
   const svgToFile = svg => {
     const blob = new Blob([svg], {
-      type: "image/svg+xml;charset=utf-8"
-    });
-    fileSaver.saveAs(blob, "freesewing-" + props.config.name + ".svg");
-  };
+      type: 'image/svg+xml;charset=utf-8'
+    })
+    fileSaver.saveAs(blob, 'freesewing-' + props.config.name + '.svg')
+  }
 
   if (props.svgExport) {
     svgToFile(
@@ -48,32 +47,32 @@ const DraftPattern = props => {
         .use(theme)
         .draft()
         .render()
-    );
-    props.setSvgExport(false);
+    )
+    props.setSvgExport(false)
   }
 
   const styles = {
     paragraph: {
-      padding: "0 1rem"
+      padding: '0 1rem'
     }
-  };
-  let pattern = new props.Pattern(props.gist.settings);
-  pattern.draft();
-  let patternProps = pattern.getRenderProps();
-  let focusCount = 0;
+  }
+  let pattern = new props.Pattern(props.gist.settings)
+  pattern.draft()
+  let patternProps = pattern.getRenderProps()
+  let focusCount = 0
   if (focus !== null) {
     for (let p of Object.keys(focus)) {
-      for (let i in focus[p].points) focusCount++;
-      for (let i in focus[p].paths) focusCount++;
-      for (let i in focus[p].coords) focusCount++;
+      for (let i in focus[p].points) focusCount++
+      for (let i in focus[p].paths) focusCount++
+      for (let i in focus[p].coords) focusCount++
     }
   }
 
   let gist = Prism.highlight(
     JSON.stringify(props.gist, null, 2),
     Prism.languages.javascript,
-    "javascript"
-  );
+    'javascript'
+  )
 
   return (
     <div className="fs-sa">
@@ -81,18 +80,10 @@ const DraftPattern = props => {
         <h2>
           <FormattedMessage id="app.pattern" />
         </h2>
-        <Draft
-          {...patternProps}
-          design={design}
-          focus={focus}
-          raiseEvent={raiseEvent}
-        />
+        <Draft {...patternProps} design={design} focus={focus} raiseEvent={raiseEvent} />
         <h2>gist</h2>
         <div className="gatsby-highlight">
-          <pre
-            className="language-json"
-            dangerouslySetInnerHTML={{ __html: gist }}
-          />
+          <pre className="language-json" dangerouslySetInnerHTML={{ __html: gist }} />
         </div>
       </section>
 
@@ -110,10 +101,7 @@ const DraftPattern = props => {
                 {focusCount > 0 ? (
                   <React.Fragment>
                     &ensp;(
-                    <a
-                      href="#logo"
-                      onClick={() => raiseEvent("clearFocusAll", null)}
-                    >
+                    <a href="#logo" onClick={() => raiseEvent('clearFocusAll', null)}>
                       <FormattedMessage id="app.reset" />
                     </a>
                     )
@@ -140,8 +128,8 @@ const DraftPattern = props => {
           <DraftConfigurator
             noDocs
             config={props.config}
-            gist={props.gist}
-            updateGist={props.updateGist}
+            data={props.gist}
+            updateData={props.updateGist}
             raiseEvent={props.raiseEvent}
             freesewing={props.freesewing}
             units={props.units}
@@ -149,8 +137,8 @@ const DraftPattern = props => {
         </div>
       </aside>
     </div>
-  );
-};
+  )
+}
 
 DraftPattern.propTypes = {
   gist: PropTypes.object.isRequired,
@@ -158,12 +146,12 @@ DraftPattern.propTypes = {
   config: PropTypes.object.isRequired,
   raiseEvent: PropTypes.func.isRequired,
   Pattern: PropTypes.func.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"])
-};
+  units: PropTypes.oneOf(['metric', 'imperial'])
+}
 
 DraftPattern.defaultProps = {
-  units: "metric",
+  units: 'metric',
   pointInfo: null
-};
+}
 
-export default DraftPattern;
+export default DraftPattern
