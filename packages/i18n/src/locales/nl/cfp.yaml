@@ -25,4 +25,4 @@ designModeIsOn: Ontwerpmodus is aan
 designModeIsOff: Ontwerpmodus is uit
 turnOn: Inschakelen
 turnOff: Uitschakelen
-validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
+validNameWarning: "Kies een andere naam, deze zou voor problemen zorgen.\nWe (her)gebruiken de patroonnaam als naam voor het NPM-pakket.\nPakketnamen mogen geen hoofdletters of speciale tekens bevatten.\nDus geef je patroon een geschikte naam, zoals:"
