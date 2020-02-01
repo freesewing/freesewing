@@ -4,8 +4,6 @@ ankleCircumference: Enkelomtrek
 bicepsCircumference: Omtrek biceps
 bustFront: Buste voor
 bustSpan: Borstwijdte
-centerBackNeckToHips: Middennek achter tot heupen
-centerBackNeckToWaist: Middennek achter tot taille
 chestCircumference: Borstomtrek
 headCircumference: Hoofdomtrek
 highBust: Hoge borstomtrek
@@ -13,7 +11,6 @@ highBustFront: Hoge buste vooraan
 hpsToBust: HPS tot buste
 hpsToHipsBack: HPS tot heupen achter
 hpsToHipsFront: HPS tot heupen voor
-hpsToWaistBack: HPS tot taille achter
 hipsCircumference: Heupomtrek
 hipsToUpperLeg: Heup tot bovenbeen
 inseam: Binnenbeennaad
