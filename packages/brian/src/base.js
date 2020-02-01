@@ -22,8 +22,8 @@ export default part => {
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
-  points.cbWaist = new Point(0, points.cbNeck.y + measurements.centerBackNeckToWaist)
-  points.cbHips = new Point(0, points.cbWaist.y + measurements.naturalWaistToHip)
+  points.cbHips = new Point(0, measurements.hpsToHipsBack)
+  points.cbWaist = new Point(0, points.cbHips - measurements.naturalWaistToHip)
 
   // Shoulder point using new shoulderSlope measurement
   points.shoulder = utils
@@ -50,12 +50,7 @@ export default part => {
       (measurements.shoulderToShoulder * options.shoulderSlopeReduction) / 2 +
       measurements.bicepsCircumference * (1 + options.bicepsEase) * options.armholeDepthFactor
   )
-  points.cbHem = new Point(
-    0,
-    points.cbWaist.y +
-      measurements.naturalWaistToHip +
-      (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) * options.lengthBonus
-  )
+  points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
   points.armhole = new Point(
