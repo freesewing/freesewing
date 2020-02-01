@@ -1,60 +1,60 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "bent",
+  name: 'bent',
   version: version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "block",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'block',
   difficulty: 3,
-  tags: ["top"],
+  tags: ['top'],
   optionGroups: {
     fit: [
-      "chestEase",
-      "collarEase",
-      "bicepsEase",
-      "cuffEase",
-      "shoulderEase",
-      "lengthBonus",
-      "sleeveLengthBonus",
-      "sleeveBend"
+      'chestEase',
+      'collarEase',
+      'bicepsEase',
+      'cuffEase',
+      'shoulderEase',
+      'lengthBonus',
+      'sleeveLengthBonus',
+      'sleeveBend'
     ],
     advanced: [
-      "acrossBackFactor",
-      "armholeDepthFactor",
-      "backNeckCutout",
-      "frontArmholeDeeper",
-      "shoulderSlopeReduction",
-      "sleevecapHeight",
-      "sleevecapEase"
+      'acrossBackFactor',
+      'armholeDepthFactor',
+      'backNeckCutout',
+      'frontArmholeDeeper',
+      'shoulderSlopeReduction',
+      'sleevecapHeight',
+      'sleevecapEase'
     ]
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToElbow",
-    "shoulderToShoulder",
-    "shoulderToWrist",
-    "wristCircumference"
+    'bicepsCircumference',
+    'chestCircumference',
+    'hpsToHipsBack',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToElbow',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wristCircumference'
   ],
   dependencies: {
-    back: "base",
-    front: "back",
-    topSleeve: "sleeve",
-    underSleeve: "sleeve"
+    back: 'base',
+    front: 'back',
+    topSleeve: 'sleeve',
+    underSleeve: 'sleeve'
   },
   inject: {
-    back: "base",
-    front: "back",
-    topSleeve: "sleeve",
-    underSleeve: "sleeve"
+    back: 'base',
+    front: 'back',
+    topSleeve: 'sleeve',
+    underSleeve: 'sleeve'
   },
-  hide: ["base", "sleeve"],
+  hide: ['base', 'sleeve'],
   options: {
     // Constants
     brianFitSleeve: true,
@@ -79,4 +79,4 @@ export default {
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
   }
-};
+}
