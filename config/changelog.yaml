@@ -11,10 +11,20 @@ Unreleased:
     i18n:
       - Added translations for Breanna
   Changed:
+    aaron:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    bent:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    breanna:
+      - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
     brian:
       - Reworked Brian to use the new shoulderslope measurement
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    carlton:
+      - Removed deprecated `centerBackNeckToWaist` measurement
     carlita:
       - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+      - Removed deprecated `centerBackNeckToWaist` measurement
     components:
       - DraftConfigurator has been updated to reflect frontend naming changes
       - Updated Workbench component to pass data rather than gist to DraftConfigurator
@@ -31,10 +41,27 @@ Unreleased:
     mui-theme:
       - Changed the light background to `#f8f9fa` rather than `#fff`
       - Changed the navbar to be light/dark based on the theme, rather than always dark
+    huey:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    hugo:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    jaeger:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    simon:
+      - Removed deprecated `centerBackNeckToWaist` measurement
     simone:
       - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    sven:
+      - Removed deprecated `centerBackNeckToWaist` measurement
     utils:
       - Started reworking the neckstimate values (under construction)
+    tamiko:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    trayvon:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    wahid:
+      - Removed deprecated `centerBackNeckToWaist` measurement
   Deprecated:
   Removed:
     i18n:
