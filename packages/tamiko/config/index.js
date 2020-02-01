@@ -13,12 +13,7 @@ export default {
     fit: ['armholeDepthFactor', 'chestEase', 'shoulderSlope'],
     style: ['flare', 'lengthBonus', 'shoulderseamLength']
   },
-  measurements: [
-    'shoulderToShoulder',
-    'chestCircumference',
-    'centerBackNeckToWaist',
-    'naturalWaistToHip'
-  ],
+  measurements: ['shoulderToShoulder', 'chestCircumference', 'hpsToHipsBack'],
   parts: ['top'],
   options: {
     armholeDepthFactor: {
