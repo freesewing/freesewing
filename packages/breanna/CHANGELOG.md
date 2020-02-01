@@ -6,6 +6,10 @@
 ### Added
 
  - Breanna is a body block for womenswear
+
+### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package breanna

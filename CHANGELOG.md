@@ -4,23 +4,47 @@
 
 ## Unreleased
 
+### aaron
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### bent
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
 ### breanna
 
 #### Added
 
  - Breanna is a body block for womenswear
 
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
+
 ### brian
 
 #### Changed
 
  - Reworked Brian to use the new shoulderslope measurement
+ - Removed deprecated `centerBackNeckToWaist` measurement
 
 ### carlita
 
 #### Changed
 
  - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### carlton
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
 
 ### components
 
@@ -55,6 +79,18 @@
 
  - Added new styles for the frontend changes in 2.2
 
+### huey
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### hugo
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
 ### i18n
 
 #### Added
@@ -71,6 +107,12 @@
  - Removed the files for homepage translation, and moved that content to markdown
  - Removed the files for editor translation, as it is no longer used
 
+### jaeger
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
 ### models
 
 #### Changed
@@ -84,17 +126,48 @@
  - Changed the light background to `#f8f9fa` rather than `#fff`
  - Changed the navbar to be light/dark based on the theme, rather than always dark
 
+### simon
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
 ### simone
 
 #### Changed
 
  - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### sven
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### tamiko
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### trayvon
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
 
 ### utils
 
 #### Changed
 
  - Started reworking the neckstimate values (under construction)
+
+### wahid
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
 
 
 ## 2.1.9 (2020-01-18)

@@ -6,6 +6,7 @@
 ### Changed
 
  - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+ - Removed deprecated `centerBackNeckToWaist` measurement
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package carlita
