@@ -2,10 +2,7 @@ export const calculateHelpers = part => {
   let { store, measurements, options } = part.shorthand()
 
   let halfLength =
-    (measurements.centerBackNeckToWaist +
-      measurements.naturalWaistToHip +
-      measurements.neckCircumference / 2) *
-    (1 + options.lengthBonus)
+    (measurements.hpsToHipsBack + measurements.neckCircumference / 2) * (1 + options.lengthBonus)
   let backTip = options.tipWidth * 0.7
   if (backTip < options.knotWidth) backTip = options.knotWidth
 

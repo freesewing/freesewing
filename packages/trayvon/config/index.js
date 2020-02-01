@@ -1,30 +1,26 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "trayvon",
+  name: 'trayvon',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "accessories",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'accessories',
+  type: 'pattern',
   difficulty: 2,
-  tags: ["top", "basics"],
+  tags: ['top', 'basics'],
   optionGroups: {
-    style: ["tipWidth", "knotWidth", "lengthBonus"]
+    style: ['tipWidth', 'knotWidth', 'lengthBonus']
   },
-  measurements: [
-    "centerBackNeckToWaist",
-    "naturalWaistToHip",
-    "neckCircumference"
-  ],
+  measurements: ['hpsToHipsBack', 'naturalWaistToHip', 'neckCircumference'],
   parts: [
-    "interfacingTip",
-    "interfacingTail",
-    "fabricTip",
-    "fabricTail",
-    "liningTip",
-    "liningTail",
-    "loop"
+    'interfacingTip',
+    'interfacingTail',
+    'fabricTip',
+    'fabricTail',
+    'liningTip',
+    'liningTail',
+    'loop'
   ],
   options: {
     tipWidth: {
@@ -43,4 +39,4 @@ export default {
       max: 50
     }
   }
-};
+}
