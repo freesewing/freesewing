@@ -31,10 +31,7 @@ export default function(part) {
   }
 
   // Neckline
-  points.cfNeck = points.cfNeck.shift(
-    -90,
-    options.necklineDrop * (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip)
-  )
+  points.cfNeck = points.cfNeck.shift(-90, options.necklineDrop * measurements.hpsToHipsBack)
 
   // Strap
   points.strapCenter = points.neck.shiftFractionTowards(
