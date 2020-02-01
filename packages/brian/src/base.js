@@ -23,7 +23,7 @@ export default part => {
   points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
   points.cbHips = new Point(0, measurements.hpsToHipsBack)
-  points.cbWaist = new Point(0, points.cbHips - measurements.naturalWaistToHip)
+  points.cbWaist = new Point(0, points.cbHips.y - measurements.naturalWaistToHip)
 
   // Shoulder point using new shoulderSlope measurement
   points.shoulder = utils
