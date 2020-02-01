@@ -12,10 +12,7 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let width =
-    (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-    options.ribbingHeight *
-    2
+  let width = measurements.hpsToHipsBack * options.ribbingHeight * 2
   let length =
     measurements.wristCircumference * (1 + options.cuffEase) * (1 - options.ribbingStretch)
 

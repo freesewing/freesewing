@@ -1,57 +1,57 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "hugo",
+  name: 'hugo',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["top", "basics"],
+  tags: ['top', 'basics'],
   optionGroups: {
-    fit: ["bicepsEase", "chestEase", "cuffEase", "ribbingStretch"],
-    style: ["lengthBonus", "sleeveLengthBonus", "ribbingHeight"],
-    advanced: ["acrossBackFactor", "backNeckCutout"]
+    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'ribbingStretch'],
+    style: ['lengthBonus', 'sleeveLengthBonus', 'ribbingHeight'],
+    advanced: ['acrossBackFactor', 'backNeckCutout']
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToShoulder",
-    "hipsCircumference",
-    "shoulderToWrist",
-    "wristCircumference",
-    "headCircumference"
+    'bicepsCircumference',
+    'chestCircumference',
+    'headCircumference',
+    'hipsCircumference',
+    'hpsToHipsBack',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wristCircumference'
   ],
-  parts: ["waistband", "cuff"],
+  parts: ['waistband', 'cuff'],
   dependencies: {
-    frontBase: "base",
-    front: "frontBase",
-    backBase: "base",
-    back: "backBase",
-    sleevecap: "front",
-    sleeveBase: "sleevecap",
-    sleeve: "sleeveBase",
-    pocket: "front",
-    pocketFacing: "pocket",
-    hoodCenter: "hoodSide",
-    hoodSide: ["front", "back"]
+    frontBase: 'base',
+    front: 'frontBase',
+    backBase: 'base',
+    back: 'backBase',
+    sleevecap: 'front',
+    sleeveBase: 'sleevecap',
+    sleeve: 'sleeveBase',
+    pocket: 'front',
+    pocketFacing: 'pocket',
+    hoodCenter: 'hoodSide',
+    hoodSide: ['front', 'back']
   },
   inject: {
-    frontBase: "base",
-    front: "frontBase",
-    backBase: "base",
-    back: "backBase",
-    sleeveBase: "sleevecap",
-    sleeve: "sleeveBase",
-    pocket: "front",
-    pocketFacing: "pocket"
+    frontBase: 'base',
+    front: 'frontBase',
+    backBase: 'base',
+    back: 'backBase',
+    sleeveBase: 'sleevecap',
+    sleeve: 'sleeveBase',
+    pocket: 'front',
+    pocketFacing: 'pocket'
   },
-  hide: ["base", "frontBase", "backBase", "sleeveBase", "sleevecap"],
+  hide: ['base', 'frontBase', 'backBase', 'sleeveBase', 'sleevecap'],
   options: {
     // Constants
     brianFitSleeve: false,
@@ -93,4 +93,4 @@ export default {
     ribbingStretch: { pct: 5, min: 0, max: 10 },
     ribbingHeight: { pct: 10, min: 4, max: 20 }
   }
-};
+}

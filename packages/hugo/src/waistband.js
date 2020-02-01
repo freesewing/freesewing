@@ -13,10 +13,7 @@ export default function(part) {
     units
   } = part.shorthand()
 
-  let width =
-    (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-    options.ribbingHeight *
-    2
+  let width = measurements.hpsToHipsBack * options.ribbingHeight * 2
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
