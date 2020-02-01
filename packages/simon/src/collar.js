@@ -105,7 +105,7 @@ export default part => {
     points.title = new Point(20, points.bottomMid.y / 2)
     macro('title', {
       at: points.title,
-      nr: '7 & 8',
+      nr: '7 + 8',
       title: 'collarAndUndercollar',
       scale: 0.6,
       append: true
