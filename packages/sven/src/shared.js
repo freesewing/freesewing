@@ -14,10 +14,7 @@ export const draftRibbing = function(part, length) {
     units
   } = part.shorthand()
   if (typeof store.get('ribbingHeight') === 'undefined') {
-    store.set(
-      'ribbingHeight',
-      (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) * options.ribbingHeight
-    )
+    store.set('ribbingHeight', measurements.hpsToHipsBack * options.ribbingHeight)
   }
   let height = store.get('ribbingHeight')
   let gap = 25
