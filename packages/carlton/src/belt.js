@@ -16,7 +16,7 @@ export default function(part) {
   } = part.shorthand()
 
   let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
-  let width = measurements.centerBackNeckToWaist * options.beltWidth
+  let width = store.get('beltWidth')
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(length, 0)
