@@ -7,10 +7,6 @@ export default {
     slope: 0.45,
     base: 325
   },
-  centerBackNeckToWaist: {
-    slope: 0.15,
-    base: 453
-  },
   chestCircumference: {
     slope: 2.0,
     base: 1040
@@ -26,6 +22,18 @@ export default {
   hipsToUpperLeg: {
     slope: 0.1,
     base: 220
+  },
+  hpsToBust: {
+    slope: 0.3,
+    base: 275
+  },
+  hpsToHipsBack: {
+    slope: 0.9,
+    base: 690
+  },
+  hpsToHipsFront: {
+    slope: 0.9,
+    base: 635
   },
   inseam: {
     slope: 0.2,
@@ -69,7 +77,7 @@ export default {
   },
   shoulderSlope: {
     slope: 0.43,
-    base: 670
+    base: 690
   },
   shoulderToElbow: {
     slope: 0.1,
