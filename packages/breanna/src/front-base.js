@@ -70,7 +70,7 @@ export default part => {
   points.cfWaist = new Point(
     0,
     measurements.hpsToHipsFront * (1 + options.verticalEase) -
-      (measurements.hpsToHipsBack - measurements.hpsToWaistBack) * (1 + options.verticalEase)
+      measurements.naturalWaistToHip * (1 + options.verticalEase)
   )
   points.waist = utils.beamIntersectsY(points.armhole, points.bustSide, points.cfWaist.y)
   points.waist = points.armhole.shiftTowards(points.waist, store.get('backSideSeamLength'))

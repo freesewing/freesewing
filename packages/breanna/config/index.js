@@ -36,6 +36,7 @@ export default {
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
+      'backNeckCutout',
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
@@ -65,19 +66,18 @@ export default {
     ]
   },
   measurements: [
-    'hpsToHipsBack',
-    'hpsToHipsFront',
-    'hpsToWaistBack',
-    'shoulderToShoulder',
-    'centerBackNeckToHips',
-    'naturalWaist',
+    'bustFront',
+    'bustSpan',
     'highBust',
     'highBustFront',
     'hpsToBust',
-    'bustFront',
-    'bustSpan',
-    'shoulderSlope',
-    'neckCircumference'
+    'hpsToHipsBack',
+    'hpsToHipsFront',
+    'naturalWaist',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderToShoulder',
+    'shoulderSlope'
   ],
   dependencies: {
     back: 'base',
@@ -150,6 +150,7 @@ export default {
     // Percentages
     acrossBackFactor: { pct: 96, min: 93, max: 100 },
     armholeDepthFactor: { pct: 100, min: 80, max: 120 },
+    backNeckCutout: { pct: 5, min: 2, max: 8 },
     shoulderDartSize: { pct: 7, min: 4, max: 10 },
     shoulderDartLength: { pct: 85, min: 60, max: 100 },
     waistDartSize: { pct: 10, min: 4, max: 15 },

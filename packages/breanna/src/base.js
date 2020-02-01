@@ -19,7 +19,7 @@ export default part => {
   // Shoulder
   points.cbHps = new Point(0, 0)
   // Step 1/3:  no vertical ease to make sure shoulder slope is not influenced
-  points.cbWaist = new Point(0, measurements.hpsToWaistBack)
+  points.cbWaist = new Point(0, measurements.hpsToHipsBack - measurements.naturalWaistToHip)
   points.cbHips = new Point(0, measurements.hpsToHipsBack)
   points.shoulder = utils
     .circlesIntersect(
@@ -32,14 +32,14 @@ export default part => {
     .shift()
 
   // Step 2/3: add vertical ease to waist and hips
-  points.cbWaist = new Point(0, measurements.hpsToWaistBack * (1 + options.verticalEase))
+  points.cbWaist = new Point(
+    0,
+    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * (1 + options.verticalEase)
+  )
   points.cbHips = new Point(0, measurements.hpsToHipsBack * (1 + options.verticalEase))
 
   // Neck
-  points.cbNeck = points.cbHips.shift(
-    90,
-    measurements.centerBackNeckToHips * (1 + options.verticalEase)
-  )
+  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
   points.hps = new Point(
     (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
     0
