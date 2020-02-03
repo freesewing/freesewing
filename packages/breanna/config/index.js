@@ -66,6 +66,7 @@ export default {
     ]
   },
   measurements: [
+    'bicepsCircumference',
     'bustFront',
     'bustSpan',
     'highBust',
@@ -77,7 +78,9 @@ export default {
     'naturalWaistToHip',
     'neckCircumference',
     'shoulderToShoulder',
-    'shoulderSlope'
+    'shoulderToWrist',
+    'shoulderSlope',
+    'wristCircumference'
   ],
   dependencies: {
     back: 'base',
