@@ -16,34 +16,15 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
     )
   }
   if (typeof data[measurement] === 'undefined') {
-    // Unknown measurement passed
-    if (typeof withBreasts[measurement] === 'undefined') {
-      // Fully unknown
-      throw new Error(
-        'neckstimate() requires a valid measurement name as second parameter. (received ' +
-          measurement +
-          ')'
-      )
-    } else {
-      // This is a breasts measurements on a no-breasts model
-      // Let's at least warn the user
-      console.log(
-        'WARNING: You used neckstimate to calculate the ' +
-          measurement +
-          ' measurement, but this model has no breasts.'
-      )
-      return (
-        withBreasts[measurement].base +
-        (neckCircumference - withBreasts.neckCircumference.base) * withBreasts[measurement].slope
-      )
-    }
+    let msg =
+      typeof withBreasts[measurement] === 'undefined'
+        ? `neckstimate() called with an invalid measurement name (${measurement})`
+        : `neckstimate() called for a breasts-only measurement (${measurement}) on a no-breasts person`
+    throw new Error(msg)
   }
 
   // This is what should happen
-  return (
-    data[measurement].base +
-    (neckCircumference - data.neckCircumference.base) * data[measurement].slope
-  )
+  return neckCircumference * (data[measurement] / data.neckCircumference)
 }
 
 export default neckstimate

@@ -1,102 +1,34 @@
+/*
+ * These are a set of measurements of an average-sized woman.
+ * We simply extrapolate for other sizes (based on neckCircumference)
+ * by keeping the same proportions.
+ * That is almost certainly not the best sizing table you can get,
+ * but we are not in the business of standard sizes, so this will do.
+ */
 export default {
-  ankleCircumference: {
-    slope: 0.15,
-    base: 256
-  },
-  bicepsCircumference: {
-    slope: 0.45,
-    base: 325
-  },
-  chestCircumference: {
-    slope: 2.0,
-    base: 1040
-  },
-  headCircumference: {
-    slope: 0.15,
-    base: 579
-  },
-  hipsCircumference: {
-    slope: 2.0,
-    base: 920
-  },
-  hipsToUpperLeg: {
-    slope: 0.1,
-    base: 220
-  },
-  hpsToBust: {
-    slope: 0.3,
-    base: 275
-  },
-  hpsToHipsBack: {
-    slope: 0.9,
-    base: 690
-  },
-  hpsToHipsFront: {
-    slope: 0.9,
-    base: 635
-  },
-  inseam: {
-    slope: 0.2,
-    base: 850
-  },
-  kneeCircumference: {
-    slope: 0.15,
-    base: 410
-  },
-  naturalWaist: {
-    slope: 2.0,
-    base: 880
-  },
-  naturalWaistToFloor: {
-    slope: 0.1,
-    base: 1300
-  },
-  naturalWaistToHip: {
-    slope: 0.05,
-    base: 180
-  },
-  naturalWaistToKnee: {
-    slope: 0.07,
-    base: 580
-  },
-  naturalWaistToSeat: {
-    slope: 0.05,
-    base: 280
-  },
-  neckCircumference: {
-    slope: 1,
-    base: 420
-  },
-  seatCircumference: {
-    slope: 2,
-    base: 1060
-  },
-  seatDepth: {
-    slope: 0.02,
-    base: 300
-  },
-  shoulderSlope: {
-    slope: 0.43,
-    base: 690
-  },
-  shoulderToElbow: {
-    slope: 0.1,
-    base: 345
-  },
-  shoulderToShoulder: {
-    slope: 1.3,
-    base: 460
-  },
-  shoulderToWrist: {
-    slope: 0.15,
-    base: 640
-  },
-  upperLegCircumference: {
-    slope: 0.35,
-    base: 599
-  },
-  wristCircumference: {
-    slope: 0.1,
-    base: 180
-  }
+  ankleCircumference: 256,
+  bicepsCircumference: 325,
+  chestCircumference: 1040,
+  headCircumference: 579,
+  hipsCircumference: 920,
+  hipsToUpperLeg: 220,
+  hpsToBust: 275,
+  hpsToHipsBack: 690,
+  hpsToHipsFront: 635,
+  inseam: 859,
+  kneeCircumference: 410,
+  naturalWaist: 880,
+  naturalWaistToFloor: 1300,
+  naturalWaistToHip: 180,
+  naturalWaistToKnee: 580,
+  naturalWaistToSeat: 280,
+  neckCircumference: 420,
+  seatCircumference: 1060,
+  seatDepth: 380,
+  shoulderSlope: 690,
+  shoulderToElbow: 345,
+  shoulderToShoulder: 460,
+  shoulderToWrist: 640,
+  upperLegCircumference: 599,
+  wristCircumference: 180
 }
