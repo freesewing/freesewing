@@ -55,7 +55,7 @@ Unreleased:
     sven:
       - Removed deprecated `centerBackNeckToWaist` measurement
     utils:
-      - Started reworking the neckstimate values (under construction)
+      - Neckstimate now uses proportions only
     tamiko:
       - Removed deprecated `centerBackNeckToWaist` measurement
     trayvon:
