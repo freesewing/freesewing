@@ -5,7 +5,7 @@
 
 ### Changed
 
- - Started reworking the neckstimate values (under construction)
+ - Neckstimate now uses proportions only
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package utils

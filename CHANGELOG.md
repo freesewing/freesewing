@@ -161,7 +161,7 @@
 
 #### Changed
 
- - Started reworking the neckstimate values (under construction)
+ - Neckstimate now uses proportions only
 
 ### wahid
 
