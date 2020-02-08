@@ -39,7 +39,7 @@
     "babel-eslint": "10.0.1",
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
-    "jest": "24.7.1",
+    "jest": "25.1.0",
     "@freesewing/components": "^2.2.0-beta.6",
     "@freesewing/css-theme": "^2.2.0-beta.6",
     "@freesewing/i18n": "^2.2.0-beta.6",
