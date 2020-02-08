@@ -3,8 +3,6 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
-aboutGist1: Un esencia contiene toda la información requerida para redactar un patrón.
-aboutGist2: Puede copiar / pegar una esencia existente aquí para usarla como punto de partida para su propio boceto.
 account: Cuenta
 accountCreated: cuenta creada
 actions: Acciones
@@ -34,7 +32,6 @@ chestInfo: Breasts require extra measurements. If this person has no breasts, ir
 chooseAPerson: Choose a person
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
-clearGist: Borrar esencia
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
 community: Comunidad
@@ -76,7 +73,6 @@ emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo elec
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 exportDraft: Exportar boceto
 export: Exportar
-exportGist: Exportar esencia
 exportTiledPDF: Exportar PDF paginado
 faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
@@ -86,7 +82,6 @@ filterPatterns: Filtrar los patrones
 forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
-gist: Esencia
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -118,7 +113,6 @@ people: People
 monochromeNo: "Imagen monocroma: el contenido no está disponible en español."
 nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
 name: Nombre
-newDraftFromGist: Nuevo patrón de la esencia
 addThing: Add {thing}
 newThing: New {thing}
 newPatternForModel: 'Nuevo {pattern} para {model}'
@@ -296,3 +290,7 @@ accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
 shareThing: 'Share {thing}'
+link: Link
+cloneThing: 'Clone {thing}'
+cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
+
