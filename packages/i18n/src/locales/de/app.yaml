@@ -3,8 +3,6 @@
 100PercentFree: 100% kostenlos
 100PercentOpenSource: 100% Open Source DONE
 aboutFreesewing: Über Freesewing
-aboutGist1: Ein Kernstück enthält alle Informationen, die zum Erstellen eines Musters erforderlich sind.
-aboutGist2: Sie können ein vorhandenes Kernstück hier kopieren und einfügen, um es als Ausgangspunkt für Ihren eigenen Entwurf zu verwenden.
 account: Konto
 accountCreated: Account erstellt
 actions: Aktions
@@ -34,7 +32,6 @@ chestInfo: Breasts require extra measurements. If this person has no breasts, ir
 chooseAPerson: Choose a person
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
-clearGist: Kern löschen
 close: Schließen
 colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
@@ -76,7 +73,6 @@ emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse 
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 exportDraft: Entwurf exportieren
 export: Exportieren
-exportGist: Kern exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
@@ -86,7 +82,6 @@ filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
-gist: Kern
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
@@ -118,7 +113,6 @@ people: People
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
-newDraftFromGist: Neue muster aus Kern
 addThing: Add {thing}
 newThing: New {thing}
 newPatternForModel: 'Neues {pattern} für {model}'
@@ -296,3 +290,7 @@ accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
 shareThing: 'Share {thing}'
+link: Link
+cloneThing: 'Clone {thing}'
+cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
+
