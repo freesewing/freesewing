@@ -3,8 +3,6 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-aboutGist1: Un résumé contient toutes les informations nécessaires pour ébaucher un patron.
-aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
 account: Compte
 accountCreated: Compte créé
 actions: Actions
@@ -34,7 +32,6 @@ chestInfo: Breasts require extra measurements. If this person has no breasts, ir
 chooseAPerson: Choose a person
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
-clearGist: Effacer le résumé
 close: Fermer
 colourYes: "Image couleur: le contenu est disponible en français"
 community: Communauté
@@ -76,7 +73,6 @@ emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adress
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 exportDraft: Exporter l'ébauche
 export: Exporter
-exportGist: Exporter le résumé
 exportTiledPDF: Exporter un PDF paginé
 faq: Questions fréquemment posées
 fieldRemoved: "{field} enlevé"
@@ -86,7 +82,6 @@ filterPatterns: Filtrez les patrons
 forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
-gist: Résumé
 github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
@@ -118,7 +113,6 @@ people: People
 monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
 nameInfo: Un nom aide à séparer les choses. Vous pouvez choisir n'importe quel nom.
 name: Nom
-newDraftFromGist: Nouveau ébauche a partir d'un résumé
 addThing: Add {thing}
 newThing: New {thing}
 newPatternForModel: 'Nouveau {pattern} pour {model}'
@@ -296,3 +290,7 @@ accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
 shareThing: 'Share {thing}'
+link: Link
+cloneThing: 'Clone {thing}'
+cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
+
