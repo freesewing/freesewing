@@ -78,11 +78,12 @@ export default part => {
   // Remove waistDart from back
   for (let p of ['Center', 'Tip', 'Target', 'Left']) delete points['waistDart' + p]
 
-  // Bust dart towards waist
-  points.primaryBustDartCenter = utils.beamIntersectsX(
+  // Bust dart downwards, perpendicular to the waist line (which gets more and more slanted as breasts get bigger)
+  points.primaryBustDartCenter = utils.beamsIntersect(
     points.cfWaist,
     points.waist,
-    points.bustPoint.x
+    points.bustPoint,
+    points.bustPoint.shift(points.cfWaist.angle(points.waist) + 90, 10)
   )
   // Let the bustdart run to the bustPoint (for now), that makes it easier to rotate it later
   points.primaryBustDartTip = points.bustPoint.clone()
