@@ -62,7 +62,6 @@ export default part => {
     )
     macro('scalebox', { at: points.scalebox })
 
-    /*
     // Figure out where notches go
     let q1 = new Path().move(points.bicepsRight)._curve(points.capQ1Cp1, points.capQ1)
     let q1Len = q1.length()
@@ -84,7 +83,6 @@ export default part => {
     }
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
-    */
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
