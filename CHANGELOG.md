@@ -126,6 +126,18 @@
  - Changed the light background to `#f8f9fa` rather than `#fff`
  - Changed the navbar to be light/dark based on the theme, rather than always dark
 
+### penelope
+
+#### Fixed
+
+ - Fixed tags in pattern config file
+
+### sandy
+
+#### Fixed
+
+ - Fixed tags in pattern config file
+
 ### simon
 
 #### Changed
@@ -168,6 +180,12 @@
 #### Changed
 
  - Removed deprecated `centerBackNeckToWaist` measurement
+
+### waralee
+
+#### Fixed
+
+ - Fixed tags in pattern config file
 
 
 ## 2.1.9 (2020-01-18)

@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package penelope
+### Fixed
 
-
+ - Fixed tags in pattern config file
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package penelope
