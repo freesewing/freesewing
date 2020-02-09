@@ -58,6 +58,7 @@ export default part => {
     // Take shoulder slope reduction into account
     points.shoulder.y -= (points.shoulder.y - points.hps.y) * options.shoulderSlopeReduction
   }
+  points.shoulderNoEase = points.shoulder.clone()
 
   // Step 3/3: Add shoulder ease to shoulder point
   points.shoulder = points.hps.shiftOutwards(
@@ -74,7 +75,7 @@ export default part => {
       (1 + options.bicepsEase)
   )
   points.armholePitch = new Point(
-    (measurements.shoulderToShoulder * options.acrossBackFactor * (1 + options.shoulderEase)) / 2,
+    points.shoulder.x * options.acrossBackFactor,
     points.armhole.y / 2
   )
   points.armholeCp2 = utils.beamIntersectsX(
