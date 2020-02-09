@@ -71,6 +71,12 @@ Unreleased:
     create-freesewing-pattern:
       - "[#257](https://github.com/freesewing/freesewing/issues/257):
         Explain that pattern names are bound by the constraints of NPM package names"
+    sandy:
+      - Fixed tags in pattern config file
+    penelope:
+      - Fixed tags in pattern config file
+    waralee:
+      - Fixed tags in pattern config file
   Security:
 
 2.1.9:
