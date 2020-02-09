@@ -1,12 +1,27 @@
+/*
+ * We can't simply use the Brian sleevecap here because as breasts get bigger
+ * the front part of the armhole seam will get a lot longer. With the default
+ * sleevecap from our menswear block, we'd end up with a more or less symmetrical
+ * sleeve which we now have to fit in a very asymetrical armhole -> not good.
+ * So, instead we draft an initial sleevecap aiming for twice the length of
+ * the back armhole seam. Then, we will adjust (only) the front part of the
+ * sleevecap until the length is correct.
+ *
+ * Apart from the two-step approach, the overal construction is similar as in Brian.
+ */
+
 /** Calculates the differece between actual and optimal sleevecap length
  * Positive values mean sleevecap is longer than armhole
  */
-function sleevecapDelta(store) {
-  return store.get('sleevecapLength') - store.get('sleevecapTarget')
+function sleevecapDelta(store, twoBacks = false, options = null) {
+  return twoBacks
+    ? store.get('sleevecapLength') -
+        store.get('backArmholeLength') * 2 * (1 + options.sleevecapEase)
+    : store.get('sleevecapLength') - store.get('sleevecapTarget')
 }
 
-function sleevecapAdjust(store) {
-  let delta = sleevecapDelta(store)
+function sleevecapAdjust(store, twoBacks = false, options = null) {
+  let delta = sleevecapDelta(store, twoBacks, options)
   let factor = store.get('sleeveFactor')
   if (delta > 10) factor = factor * 0.75
   else if (delta > 0) factor = factor * 0.9
@@ -125,8 +140,9 @@ function draftSleevecap(part, run) {
   // Store sleevecap length
   store.set('sleevecapLength', paths.sleevecap.length())
   if (run === 0) {
-    let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
-    let sleevecapEase = armholeLength * options.sleevecapEase
+    let armholeLength, sleevecapEase
+    armholeLength = 2 * store.get('backArmholeLength')
+    sleevecapEase = armholeLength * options.sleevecapEase
     store.set('sleevecapEase', sleevecapEase)
     store.set('sleevecapTarget', armholeLength + sleevecapEase)
 
@@ -135,14 +151,66 @@ function draftSleevecap(part, run) {
   }
 }
 
+function redrawSleevecapFront(part, delta) {
+  let { store, points, Path, paths } = part.shorthand()
+  let factor = points.bicepsRight.x
+  for (let p of [
+    'bicepsRight',
+    'capQ1Cp1',
+    'capQ1',
+    'capQ1Base',
+    'capQ1Cp2',
+    'frontPitch',
+    'capQ2Cp1',
+    'capQ2',
+    'capQ2Base',
+    'capQ2Cp2'
+  ]) {
+    points[p].x += (points[p].x / factor) * delta * -1
+  }
+
+  // Sleevecap seamline
+  paths.sleevecap = new Path()
+    .move(points.bicepsRight)
+    ._curve(points.capQ1Cp1, points.capQ1)
+    .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+    .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+    .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
+    .curve_(points.capQ4Cp2, points.bicepsLeft)
+
+  // Store sleevecap length
+  store.set('sleevecapLength', paths.sleevecap.length())
+}
+
 export default part => {
   let { debug, store, units, options, Point, points, paths } = part.shorthand()
 
+  // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
   store.set('sleeveFactor', 1)
   let run = 0
   let delta = 0
   do {
     draftSleevecap(part, run)
+    delta = sleevecapDelta(store, true, options)
+    sleevecapAdjust(store, true, options)
+    run++
+  } while (
+    options.breannaFitSleeve === true &&
+    run < 50 &&
+    Math.abs(sleevecapDelta(store, true, options)) > 2
+  )
+
+  //
+  let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
+  let sleevecapEase = armholeLength * options.sleevecapEase
+  store.set('sleevecapEase', sleevecapEase)
+  store.set('sleevecapTarget', armholeLength + sleevecapEase)
+
+  // Step 2: sleevecap for back joined with front (twoBacks = false)
+  run = 0
+  delta = sleevecapDelta(store)
+  do {
+    redrawSleevecapFront(part, delta)
     delta = sleevecapDelta(store)
     sleevecapAdjust(store)
     run++

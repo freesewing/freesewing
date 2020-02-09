@@ -30,6 +30,12 @@ export default part => {
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
   points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5)
 
+  // Adjust seam length
+  points.wristRight = points.bicepsRight.shiftTowards(
+    points.wristRight,
+    points.bicepsLeft.dist(points.wristLeft)
+  )
+
   // Paths
   paths.sleevecap.render = false
   paths.seam = new Path()
@@ -56,6 +62,7 @@ export default part => {
     )
     macro('scalebox', { at: points.scalebox })
 
+    /*
     // Figure out where notches go
     let q1 = new Path().move(points.bicepsRight)._curve(points.capQ1Cp1, points.capQ1)
     let q1Len = q1.length()
@@ -77,6 +84,7 @@ export default part => {
     }
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
+    */
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
