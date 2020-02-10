@@ -52,7 +52,7 @@
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
     "react-scripts": "^3.0.0",
-    "webpack": "4.29.6",
+    "webpack": "4.41.5",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^4.0.1",
     "rollup-plugin-babel-minify": "^7.0.0",
