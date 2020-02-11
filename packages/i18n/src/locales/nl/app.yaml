@@ -291,6 +291,6 @@ size: Maat
 switchToThing: 'Schakel over naar {thing}'
 shareThing: 'Deel {thing}'
 link: Link
-cloneThing: 'Clone {thing}'
-cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
+cloneThing: 'Kopieer {thing}'
+cloneDescription: Maak een exacte kopie die de maten van het originele patroon gebruikt.
 
