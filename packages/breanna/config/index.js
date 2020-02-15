@@ -17,6 +17,7 @@ export default {
       'waistDart',
       'waistDartSize',
       'waistDartLength',
+      'frontScyeDart',
       'verticalEase',
       'chestEase',
       'collarEase',
@@ -39,7 +40,6 @@ export default {
       'backNeckCutout',
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
-      'sleeveWidthGuarantee',
       {
         sleevecap: [
           'sleevecapEase',
@@ -100,6 +100,8 @@ export default {
     // Constants
     collarFactor: 4.8,
     armholeDepthBase: 0.6,
+    shoulderSeamLength: 0.95, // 1 tends to be slightly off-shoulder
+    sleeveWidthGuarantee: 0.9,
     breannaFitSleeve: true,
     breannaFitCollar: true,
 
@@ -170,10 +172,10 @@ export default {
     shoulderSlopeReduction: { pct: 0, min: 0, max: 100 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
     cuffEase: { pct: 20, min: 0, max: 50 },
-    sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapEase: { pct: 0.5, min: 0, max: 2.5 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
-    sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
-    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
+    sleevecapTopFactorY: { pct: 110, min: 35, max: 165 },
+    sleevecapBackFactorX: { pct: 45, min: 35, max: 55 },
     sleevecapBackFactorY: { pct: 33, min: 35, max: 65 },
     sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
     sleevecapFrontFactorY: { pct: 33, min: 35, max: 65 },
@@ -181,15 +183,15 @@ export default {
     sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
     sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
     sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
-    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
-    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
+    sleevecapQ1Spread1: { pct: 10, min: 4, max: 20 },
+    sleevecapQ1Spread2: { pct: 12.5, min: 4, max: 20 },
+    sleevecapQ2Spread1: { pct: 12.5, min: 4, max: 20 },
+    sleevecapQ2Spread2: { pct: 12.5, min: 4, max: 20 },
+    sleevecapQ3Spread1: { pct: 12.5, min: 4, max: 20 },
     sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
-    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    frontScyeDart: { pct: 25, min: 0, max: 45 }
   }
 }

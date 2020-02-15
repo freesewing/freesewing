@@ -94,6 +94,39 @@ export default part => {
   )
   points.primaryBustDart2 = points.primaryBustDart1.rotate(180, points.primaryBustDartCenter)
 
+  if (options.frontScyeDart) {
+    // Now calculat the front scye dart (armhole dart) and rotate it into the bust dart
+    // We're going to draw this dart midway the curve between armhole and armholePitch points
+    // but we're not actually splitting the curve
+    // Angle from bustpoint towards armhole and armholePitch
+    let angle1 = points.bustPoint.angle(points.armhole)
+    let angle2 = points.bustPoint.angle(points.armholePitch)
+    points.scyeDart1 = utils.lineIntersectsCurve(
+      points.bustPoint,
+      points.bustPoint.shift(angle1 + (angle2 - angle1) / 2, measurements.highBustFront * 0.666),
+      points.armhole,
+      points.armholeCp2,
+      points.armholePitchCp1,
+      points.armholePitch
+    )
+    // How much should this dart be?
+    let scyeDartWidth =
+      (measurements.bustFront - measurements.highBustFront) * options.frontScyeDart
+    points.scyeDart2 = points.scyeDart1
+      .shiftTowards(points.bustPoint, scyeDartWidth)
+      .rotate(90, points.scyeDart1)
+    let scyeDartAngle =
+      points.bustPoint.angle(points.scyeDart1) - points.bustPoint.angle(points.scyeDart2)
+    // Now rotate this into the bust dart
+    let rotateThese = ['armholeCp2', 'armhole', 'waist', 'primaryBustDart2']
+    for (let p of rotateThese) points[p] = points[p].rotate(scyeDartAngle, points.bustPoint)
+    // And rotate bust dart center halfway to keep it in the middle of the dart
+    points.primaryBustDartCenter = points.primaryBustDartCenter.rotate(
+      scyeDartAngle / 2,
+      points.bustPoint
+    )
+  }
+
   // Store bust dart angle and armhole length
   store.set(
     'bustDartAngle',
@@ -116,6 +149,21 @@ export default part => {
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .length() + store.get('frontArmholeToArmholePitch')
   )
+
+  // This path is just for those who are curious as this part is hidden by default
+  paths.seam = new Path()
+    .move(points.cfNeck)
+    .line(points.cfWaist)
+    .line(points.primaryBustDart1)
+    .line(points.bustPoint)
+    .line(points.primaryBustDart2)
+    .line(points.waist)
+    .line(points.armhole)
+    .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+    .line(points.hps)
+    .curve_(points.hpsCp2, points.cfNeck)
+    .close()
 
   return part
 }
