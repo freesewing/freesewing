@@ -85,7 +85,7 @@ export default {
   dependencies: {
     back: 'base',
     frontBase: 'base',
-    front: 'frontBase',
+    front: ['back', 'frontBase'],
     sleevecap: 'front',
     sleeve: 'sleevecap'
   },
