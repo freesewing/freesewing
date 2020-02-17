@@ -48,7 +48,7 @@ function draftSleevecap(part, run) {
     halfWidth * options.sleeveWidthGuarantee +
       halfWidth * (1 - options.sleeveWidthGuarantee) * store.get('sleeveFactor')
   )
-  points.bicepsRight = points.bicepsLeft.flipX(points.centerBiceps)
+  points.bicepsRight = points.bicepsLeft.flipX()
 
   // Adapt sleeve center axis
   points.capLeft = new Point(points.bicepsLeft.x, points.centerCap.y)

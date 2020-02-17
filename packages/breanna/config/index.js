@@ -83,11 +83,10 @@ export default {
     'wristCircumference'
   ],
   dependencies: {
-    back: 'base',
-    frontBase: 'base',
+    frontBase: 'back',
     front: ['back', 'frontBase'],
-    sleevecap: 'front',
-    sleeve: 'sleevecap'
+    sleevecap: ['front', 'frontBase', 'back'],
+    sleeve: ['sleevecap', 'front', 'frontBase', 'back']
   },
   inject: {
     back: 'base',
