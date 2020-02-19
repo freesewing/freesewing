@@ -91,6 +91,10 @@
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
+#### Fixed
+
+ - Made sure dimensions for hood center and waistband are always shown
+
 ### i18n
 
 #### Added
