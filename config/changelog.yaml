@@ -71,6 +71,8 @@ Unreleased:
     create-freesewing-pattern:
       - "[#257](https://github.com/freesewing/freesewing/issues/257):
         Explain that pattern names are bound by the constraints of NPM package names"
+    hugo:
+      - Made sure dimensions for hood center and waistband are always shown
     sandy:
       - Fixed tags in pattern config file
     penelope:
