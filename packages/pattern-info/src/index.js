@@ -47,7 +47,6 @@ export const withoutBreasts = [
   'sandy',
   'shin',
   'simon',
-  'simone',
   'sven',
   'tamiko',
   'theo',
@@ -56,4 +55,4 @@ export const withoutBreasts = [
   'waralee'
 ]
 
-export const withBreasts = ['breanna', 'cathrin', 'carlita']
+export const withBreasts = ['breanna', 'cathrin', 'carlita', 'simone']
