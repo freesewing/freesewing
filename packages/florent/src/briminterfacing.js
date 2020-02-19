@@ -8,7 +8,6 @@ export default function(part) {
     .curve(points.tipLeftCp2, points.outerMidCp1, points.outerMid)
     .curve(points.outerMidCp2, points.tipRightCp1, points.tipRight)
     .attr('class', 'lining')
-  //.offset(1.5)
   points.outsetStart = paths.outset.shiftAlong(5)
   points.outsetEnd = paths.outset.reverse().shiftAlong(5)
   paths.outset = paths.outset
@@ -16,15 +15,12 @@ export default function(part) {
     .pop()
     .split(points.outsetEnd)
     .shift()
-  // We check for sa here because it's a good way to sidestep issue #19
-  if (sa) paths.outset = paths.outset.offset(1.5)
 
   paths.inset = new Path()
     .move(points.tipLeft)
     .curve(points.tipLeftCp1, points.innerMidCp2, points.innerMid)
     .curve(points.innerMidCp1, points.tipRightCp2, points.tipRight)
     .attr('class', 'various')
-  //.offset(1.5)
   points.insetStart = paths.inset.shiftAlong(5)
   points.insetEnd = paths.inset.reverse().shiftAlong(5)
   paths.inset = paths.inset
@@ -32,8 +28,6 @@ export default function(part) {
     .pop()
     .split(points.insetEnd)
     .shift()
-  // We check for sa here because it's a good way to sidestep issue #19
-  if (sa) paths.inset = paths.inset.offset(1.5)
   paths.inset.render = false
   paths.outset.render = false
 
@@ -62,8 +56,6 @@ export default function(part) {
       from: points.outerMid,
       to: points.innerMid
     })
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {
       macro('hd', {
