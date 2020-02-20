@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Back darts
+  tile: Pinzas traseras
   description: Incluir o no pinzas traseras
   options:
     auto: Automático
@@ -20,7 +20,7 @@ boxPleatWidth:
   description: El ancho total del pliegue en caja
 boxPleatFold:
   title: Doblado del pliegue en caja
-  description: The amount by with the box pleat folds inwards
+  description: La cantidad por la que el piegue en caja se dobla hacia adentro
 buttonPlacketStyle:
   title: Estilo de la vista de los botones
   description: Estilo de la visto de los botones
