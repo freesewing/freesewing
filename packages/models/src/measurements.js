@@ -8,7 +8,6 @@ export default {
     'hipsToUpperLeg',
     'hpsToBust',
     'hpsToHipsBack',
-    'hpsToHipsFront',
     'inseam',
     'kneeCircumference',
     'naturalWaist',

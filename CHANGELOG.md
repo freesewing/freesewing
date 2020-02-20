@@ -78,6 +78,13 @@
 #### Changed
 
  - Added new styles for the frontend changes in 2.2
+ - Removed smaller fonts in ul.links
+
+### florent
+
+#### Fixed
+
+ - Fixed an SA issue in brim top and removed SA from interfacing
 
 ### huey
 
@@ -166,6 +173,12 @@
 #### Changed
 
  - Removed deprecated `centerBackNeckToWaist` measurement
+
+### theo
+
+#### Fixed
+
+ - Fixed issue with side piece
 
 ### trayvon
 

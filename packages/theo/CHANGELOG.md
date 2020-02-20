@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package theo
+### Fixed
 
-
+ - Fixed issue with side piece
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package theo
