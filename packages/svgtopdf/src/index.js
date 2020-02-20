@@ -8,7 +8,7 @@ import shellExec from 'shell-exec'
 
 const app = express()
 app.use(cors())
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: '5mb'}))
 const port = process.env.PORT || 4000
 const formats = ['pdf', 'ps']
 const sizes = ['full', 'a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
