@@ -5,6 +5,8 @@ Unreleased:
       - Breanna is a body block for womenswear
     css-theme:
       - Added styling for table.data
+    components:
+      - Added LineDrawing for Breanna
     core:
       - Added the `Path.noop()` method
       - Added the `Path.insop()` methods
