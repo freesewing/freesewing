@@ -1,5 +1,6 @@
 import withBreasts from './with-breasts'
 import withoutBreasts from './without-breasts'
+import ratio from './ratio'
 
 // This estimates a measurement based on the neck circumference
 const neckstimate = (neckCircumference = false, measurement = false, breasts = false) => {
@@ -24,7 +25,9 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
   }
 
   // This is what should happen
-  return neckCircumference * (data[measurement] / data.neckCircumference)
+  let delta = (neckCircumference / data.neckCircumference) * data[measurement] - data[measurement]
+
+  return data[measurement] + delta * ratio[measurement]
 }
 
 export default neckstimate

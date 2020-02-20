@@ -1,34 +1,33 @@
 /*
- * These are a set of measurements of an average-sized woman.
+ * These are a set of measurements of an average-sized man.
  * We simply extrapolate for other sizes (based on neckCircumference)
  * by keeping the same proportions.
  * That is almost certainly not the best sizing table you can get,
  * but we are not in the business of standard sizes, so this will do.
  */
 export default {
-  ankleCircumference: 256,
-  bicepsCircumference: 325,
-  chestCircumference: 1040,
-  headCircumference: 579,
-  hipsCircumference: 920,
-  hipsToUpperLeg: 220,
-  hpsToBust: 275,
-  hpsToHipsBack: 690,
-  hpsToHipsFront: 635,
-  inseam: 859,
+  ankleCircumference: 235,
+  bicepsCircumference: 350,
+  chestCircumference: 1000,
+  headCircumference: 590,
+  hipsCircumference: 840,
+  hipsToUpperLeg: 210,
+  hpsToBust: 28,
+  hpsToHipsBack: 600,
+  inseam: 780,
   kneeCircumference: 410,
-  naturalWaist: 880,
-  naturalWaistToFloor: 1300,
-  naturalWaistToHip: 180,
-  naturalWaistToKnee: 580,
-  naturalWaistToSeat: 280,
-  neckCircumference: 420,
-  seatCircumference: 1060,
-  seatDepth: 380,
-  shoulderSlope: 690,
-  shoulderToElbow: 345,
-  shoulderToShoulder: 460,
-  shoulderToWrist: 640,
-  upperLegCircumference: 599,
-  wristCircumference: 180
+  naturalWaist: 810,
+  naturalWaistToFloor: 1160,
+  naturalWaistToHip: 130,
+  naturalWaistToKnee: 640,
+  naturalWaistToSeat: 270,
+  neckCircumference: 380,
+  seatCircumference: 1020,
+  seatDepth: 210,
+  shoulderSlope: 585,
+  shoulderToElbow: 36,
+  shoulderToShoulder: 450,
+  shoulderToWrist: 630,
+  upperLegCircumference: 625,
+  wristCircumference: 175
 }
