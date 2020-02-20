@@ -292,4 +292,4 @@ shareThing: 'Share {thing}'
 link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
-
+furtherReading: Further reading
