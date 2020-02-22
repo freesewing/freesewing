@@ -23,7 +23,7 @@ LineDrawing.propTypes = {
 }
 
 LineDrawing.defaultProps = {
-  size: false,
+  size: 0,
   className: '',
   pattern: 'aaron',
   style: {}
