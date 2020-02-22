@@ -8,6 +8,7 @@ import wahid from './wahid.yml'
 import bent from './bent.yml'
 import bruce from './bruce.yml'
 import cathrin from './cathrin.yml'
+import holmes from './holmes.yml'
 import huey from './huey.yml'
 import hugo from './hugo.yml'
 import tamiko from './tamiko.yml'
@@ -49,7 +50,8 @@ let patterns = {
   sandy,
   shin,
   penelope,
-  waralee
+  waralee,
+  holmes
 }
 
 let options = {}

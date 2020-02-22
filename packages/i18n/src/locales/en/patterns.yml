@@ -28,6 +28,9 @@ cathrin:
 florent:
   description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
   title: Florent flat cap
+holmes:
+  description: 'For Sherlock Holmes cosplay or just a cute hat'
+  title: Holmes hat
 huey:
   description: Huey is a zip-up hoodie with optional front pockets.
   title: Huey hoodie
