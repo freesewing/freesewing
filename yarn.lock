@@ -2154,148 +2154,148 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/components@file:packages/components":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/core@file:packages/core":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
   dependencies:
     bezier-js "^2.4.6"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/models@file:packages/models":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.2.0-beta.8"
-    "@freesewing/plugin-dimension" "^2.2.0-beta.8"
-    "@freesewing/plugin-grainline" "^2.2.0-beta.8"
-    "@freesewing/plugin-logo" "^2.2.0-beta.8"
-    "@freesewing/plugin-round" "^2.2.0-beta.8"
-    "@freesewing/plugin-scalebox" "^2.2.0-beta.8"
-    "@freesewing/plugin-sprinkle" "^2.2.0-beta.8"
-    "@freesewing/plugin-title" "^2.2.0-beta.8"
+    "@freesewing/plugin-cutonfold" "^2.2.0-beta.9"
+    "@freesewing/plugin-dimension" "^2.2.0-beta.9"
+    "@freesewing/plugin-grainline" "^2.2.0-beta.9"
+    "@freesewing/plugin-logo" "^2.2.0-beta.9"
+    "@freesewing/plugin-round" "^2.2.0-beta.9"
+    "@freesewing/plugin-scalebox" "^2.2.0-beta.9"
+    "@freesewing/plugin-sprinkle" "^2.2.0-beta.9"
+    "@freesewing/plugin-title" "^2.2.0-beta.9"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -7527,7 +7527,7 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-cp-file@^6.0.0, cp-file@^6.2.0:
+cp-file@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/cp-file/-/cp-file-6.2.0.tgz#40d5ea4a1def2a9acdd07ba5c0b0246ef73dc10d"
   integrity sha512-fmvV4caBnofhPe8kOcitBwSn2f39QLjnAnGq3gO9dfd75mUytzKNZB1hde6QHunW2Rt+OwuBOMc3i1tNElbszA==
@@ -7537,6 +7537,16 @@ cp-file@^6.0.0, cp-file@^6.2.0:
     nested-error-stacks "^2.0.0"
     pify "^4.0.1"
     safe-buffer "^5.0.1"
+
+cp-file@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/cp-file/-/cp-file-7.0.0.tgz#b9454cfd07fe3b974ab9ea0e5f29655791a9b8cd"
+  integrity sha512-0Cbj7gyvFVApzpK/uhCtQ/9kE9UnYpxMzaq5nQQC/Dh4iaj5fxp7iEFIullrYwzj8nf0qnsI1Qsx34hAeAebvw==
+  dependencies:
+    graceful-fs "^4.1.2"
+    make-dir "^3.0.0"
+    nested-error-stacks "^2.0.0"
+    p-event "^4.1.0"
 
 create-ecdh@^4.0.0:
   version "4.0.3"
@@ -7554,14 +7564,14 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.2.0-beta.8"
+  version "2.2.0-beta.9"
   dependencies:
-    "@freesewing/i18n" "^2.2.0-beta.8"
-    "@freesewing/pattern-info" "^2.2.0-beta.8"
+    "@freesewing/i18n" "^2.2.0-beta.9"
+    "@freesewing/pattern-info" "^2.2.0-beta.9"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
-    cp-file "^6.0.0"
+    cp-file "^7.0.0"
     execa "^1.0.0"
     git-config-path "^2.0.0"
     github-username "^4.1.0"
@@ -15637,6 +15647,13 @@ p-each-series@^1.0.0:
   dependencies:
     p-reduce "^1.0.0"
 
+p-event@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/p-event/-/p-event-4.1.0.tgz#e92bb866d7e8e5b732293b1c8269d38e9982bf8e"
+  integrity sha512-4vAd06GCsgflX4wHN1JqrMzBh/8QZ4j+rzp0cd2scXRwuBEv+QR3wrVA5aLhWDLw4y2WgDKvzWF3CCLmVM1UgA==
+  dependencies:
+    p-timeout "^2.0.1"
+
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -15746,6 +15763,13 @@ p-timeout@^1.1.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-1.2.1.tgz#5eb3b353b7fce99f101a1038880bb054ebbea386"
   integrity sha1-XrOzU7f86Z8QGhA4iAuwVOu+o4Y=
+  dependencies:
+    p-finally "^1.0.0"
+
+p-timeout@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-2.0.1.tgz#d8dd1979595d2dc0139e1fe46b8b646cb3cdf038"
+  integrity sha512-88em58dDVB/KzPEx1X0N3LwFfYZPyDc4B6eF38M1rk9VTZMbxXXgjugz8mmwpS9Ox4BDZ+t6t3QP5+/gazweIA==
   dependencies:
     p-finally "^1.0.0"
 
