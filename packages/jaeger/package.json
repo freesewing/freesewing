@@ -70,7 +70,7 @@
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
     "@material-ui/core": "4.0.1",
-    "@material-ui/icons": "4.0.1",
+    "@material-ui/icons": "4.9.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
     "react-intl": "2.8.0",
     "prop-types": "15.7.2"
