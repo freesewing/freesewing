@@ -7,8 +7,6 @@ export default function(part) {
     store,
     complete,
     points,
-    measurements,
-    options,
     macro,
     Point,
     paths,
