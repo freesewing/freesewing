@@ -1,13 +1,13 @@
 ![FreeSewing](https://freesewing.org/banner.jpg)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/holmes"
-  title="@freesewing/holmes on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/holmes.svg"
-  alt="@freesewing/holmes on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/plugin-gore"
+  title="@freesewing/plugin-gore on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/plugin-gore.svg"
+  alt="@freesewing/plugin-gore on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/holmes.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/plugin-gore.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aholmes"
-  title="Open issues tagged pkg:holmes"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:holmes.svg?label=Issues"
-  alt="Open issues tagged pkg:holmes"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-gore"
+  title="Open issues tagged pkg:plugin-gore"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-gore.svg?label=Issues"
+  alt="Open issues tagged pkg:plugin-gore"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
   title="Follow @freesewing_org on Twitter"
@@ -44,9 +44,9 @@
 ## What am I looking at? 🤔
 
 This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
-This folder holds **@freesewing/holmes**
+This folder holds **@freesewing/plugin-gore**
 
-A FreeSewing pattern for a Sherlock Holmes hat
+A FreeSewing plugin to generate gores for a semi-sphere or dome
 
 
 

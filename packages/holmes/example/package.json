@@ -1,6 +1,6 @@
 {
   "name": "holmes-example",
-  "homepage": "https://AlfaLyr.github.io/holmes",
+  "homepage": "https://freesewing.github.io/holmes",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/lab": "^v4.0.0-alpha.25",
-    "pattern": "file:..",
+    "pattern": "link:..",
     "prismjs": "1.17.1",
     "react": "^16.9",
     "react-dom": "^16.9",
