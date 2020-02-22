@@ -188,7 +188,6 @@ export default part => {
   // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
   store.set('sleeveFactor', 1)
   let run = 0
-  let delta
   do {
     draftSleevecap(part, run)
     sleevecapAdjust(store, true, options)
