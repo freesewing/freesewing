@@ -191,7 +191,6 @@ export default part => {
   let delta
   do {
     draftSleevecap(part, run)
-    delta = sleevecapDelta(store, true, options)
     sleevecapAdjust(store, true, options)
     run++
   } while (
@@ -208,10 +207,8 @@ export default part => {
 
   // Step 2: sleevecap for back joined with front (twoBacks = false)
   run = 0
-  delta = sleevecapDelta(store)
   do {
-    redrawSleevecapFront(part, delta)
-    delta = sleevecapDelta(store)
+    redrawSleevecapFront(part, sleevecapDelta(store))
     sleevecapAdjust(store)
     run++
   } while (options.breannaFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
