@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Length ratio
+  title: Lengteratio
   description: fixme
 goreNumber:
-  title: Number of gores
-  description: The number of gores used to construct the semi-sphere
+  title: Aantal panden
+  description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
 brimAngle:
-  title: Brim angle
-  description: Controls the curvature of the brim
+  title: Hoek klep
+  description: Bepaalt de kromming van de klep
 brimWidth:
-  title: Brim width
-  description: Controls the width of the brim
+  title: Breedte klep
+  description: Bepaalt de breedte van de klep
 
