@@ -48,6 +48,10 @@
 
 ### components
 
+#### Added
+
+ - Added LineDrawing for Breanna
+
 #### Changed
 
  - DraftConfigurator has been updated to reflect frontend naming changes
