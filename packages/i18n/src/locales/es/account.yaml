@@ -51,5 +51,5 @@ units: Unidades
 usernameInfo: Actualmente tienes un nombre de usuario generado aleatoriamente. Eso no es muy personal, por lo que puedes cambiar tu nombre de usuario a algo más para ti. Me gusta tu nombre, o <em> reinadepedos </em> o lo que sea.
 usernameTitle: Por favor, elija su nombre de usuario
 username: Nombre de usuario
-accountIsInactive: Your account is inactive
-accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
+accountIsInactive: Tu cuenta está inactiva
+accountNeedsActivation: Antes de poder iniciar sesión, necesitas activar tu cuenta. Por favor, revisa tu bandeja de entrada para ver el correo electrónico de registro y haz clic en el enlace en él.
