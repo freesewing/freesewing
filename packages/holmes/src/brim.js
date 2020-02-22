@@ -8,8 +8,6 @@ export default function(part) {
     options,
     complete,
     sa,
-    snippets,
-    Snippet,
     paperless,
     macro
   } = part.shorthand()

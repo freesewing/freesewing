@@ -9,36 +9,34 @@ export default function(part) {
     macro,
     complete,
     sa,
-    snippets,
-    Snippet,
     paperless
-  } = part.shorthand();
+  } = part.shorthand()
 
-// Design pattern here
+  // Design pattern here
 
-//Radius of the head
-let headRadius = measurements.headCircumference/2/Math.PI
+  //Radius of the head
+  let headRadius = measurements.headCircumference / 2 / Math.PI
 
-points.p0 = new Point(0, 0);
+  points.p0 = new Point(0, 0)
 
-macro("gore", {
-  from: points.p0,
-  radius: headRadius,
-  goreNumber: options.goreNumber,
-  extraLength: (options.lengthRatio-0.5)*measurements.headCircumference/2,
-  prefix: "gore_",
-  render: true
-});
+  macro('gore', {
+    from: points.p0,
+    radius: headRadius,
+    goreNumber: options.goreNumber,
+    extraLength: ((options.lengthRatio - 0.5) * measurements.headCircumference) / 2,
+    prefix: 'gore_',
+    render: true
+  })
 
   // Complete?
   if (complete) {
-    points.title = new Point(points.gore_p1.x/10, points.gore_p2.y/1.8)
-    macro('title', { at: points.title, nr: 1, title: 'gore', scale: 0.5})
+    points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
+    macro('title', { at: points.title, nr: 1, title: 'gore', scale: 0.5 })
 
     macro('cutonfold', {
       from: points.p0,
       to: points.gore_p1.shift(180, 20),
-      offset: -points.gore_p2.y/6,
+      offset: -points.gore_p2.y / 6,
       grainline: true
     })
 
@@ -73,5 +71,5 @@ macro("gore", {
       })
     }
   }
-  return part;
+  return part
 }
