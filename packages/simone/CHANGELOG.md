@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package simone
+
+
+## 2.2.0 (2020-02-22)
+
 ### Changed
 
  - Renamed `highPointShoulderToBust` measurement to `hpsToBust`

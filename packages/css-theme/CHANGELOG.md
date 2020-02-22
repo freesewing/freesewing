@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package css-theme
+
+
+## 2.2.0 (2020-02-22)
+
 ### Added
 
  - Added styling for table.data

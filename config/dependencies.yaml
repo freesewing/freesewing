@@ -110,6 +110,9 @@ create-freesewing-pattern:
 gatsby-remark-jargon:
   _:
     "remark-jargon": "^{{version}}"
+holmes:
+  peer:
+    "@freesewing/plugin-bust": "^{{version}}"
 hugo:
   peer:
     "@freesewing/brian": "^{{version}}"

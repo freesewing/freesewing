@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+### Added
+
+ - Homes is a pattern for a Sherlock Holmes hat
+## 2.2.0 (2020-02-22)
+
 **Note:** Version bump only for package holmes
 
 

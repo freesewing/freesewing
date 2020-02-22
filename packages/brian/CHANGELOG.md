@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package brian
+
+
+## 2.2.0 (2020-02-22)
+
 ### Changed
 
  - Reworked Brian to use the new shoulderslope measurement

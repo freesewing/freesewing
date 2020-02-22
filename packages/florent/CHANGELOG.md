@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package florent
+
+
+## 2.2.0 (2020-02-22)
+
 ### Fixed
 
  - Fixed an SA issue in brim top and removed SA from interfacing

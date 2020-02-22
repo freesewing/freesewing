@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package penelope
+
+
+## 2.2.0 (2020-02-22)
+
 ### Fixed
 
  - Fixed tags in pattern config file

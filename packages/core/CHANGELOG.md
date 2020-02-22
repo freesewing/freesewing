@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package core
+
+
+## 2.2.0 (2020-02-22)
+
 ### Added
 
  - Added the `Path.noop()` method

@@ -13,6 +13,8 @@ customRollup:
   - utils
   - prettier-config
 packageJson:
+  benjamin:
+    author: woutervdub (https://github.com/woutervdub)
   components:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
@@ -50,6 +52,8 @@ packageJson:
   css-theme:
     main: dist/theme.css
     module: '!'
+  holmes:
+    author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
@@ -60,6 +64,8 @@ packageJson:
       - jargon
       - gatsby
       - gatsby-plugin
+  plugin-gore:
+    author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
     main: "index.json"
     module: '!'
@@ -69,6 +75,8 @@ packageJson:
     files:
       - index.json
       - package.json
+  sandy:
+    author: AlfaLyr (https://github.com/alfalyr)
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
@@ -95,4 +103,6 @@ packageJson:
       - "tiler/*"
       - "validateEmail/*"
       - "validateTld/*"
+  waralee:
+    author: woutervdub (https://github.com/woutervdub)
 

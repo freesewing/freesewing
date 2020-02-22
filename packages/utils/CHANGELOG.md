@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package utils
+
+
+## 2.2.0 (2020-02-22)
+
 ### Changed
 
  - Neckstimate now uses proportions only

@@ -1,5 +1,13 @@
 Unreleased:
-  date: 2020-02-02
+  date: 2020-02-22
+  Added:
+    holmes:
+      - Homes is a pattern for a Sherlock Holmes hat
+    plugin-gore:
+      - A plugin to generate gores for semi-spheres or domes
+
+2.2.0:
+  date: 2020-02-22
   Added:
     breanna:
       - Breanna is a body block for womenswear

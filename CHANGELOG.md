@@ -4,6 +4,21 @@
 
 ## Unreleased
 
+### holmes
+
+#### Added
+
+ - Homes is a pattern for a Sherlock Holmes hat
+
+### plugin-gore
+
+#### Added
+
+ - A plugin to generate gores for semi-spheres or domes
+
+
+## 2.2.0 (2020-02-22)
+
 ### aaron
 
 #### Changed

@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package breanna
+
+
+## 2.2.0 (2020-02-22)
+
 ### Added
 
  - Breanna is a body block for womenswear

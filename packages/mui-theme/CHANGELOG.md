@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package mui-theme
+
+
+## 2.2.0 (2020-02-22)
+
 ### Changed
 
  - Changed the light background to `#f8f9fa` rather than `#fff`
