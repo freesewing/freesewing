@@ -1,20 +1,5 @@
 export default part => {
-  let {
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    Point,
-    measurements,
-    options,
-    utils,
-    store
-  } = part.shorthand()
+  let { points, Path, paths, Point, measurements, options, utils, store } = part.shorthand()
 
   // Fit neck
   points.cfHps = points.cbHps.clone()

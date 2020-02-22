@@ -10,7 +10,6 @@ export default part => {
     paperless,
     macro,
     Point,
-    measurements,
     options,
     utils,
     store

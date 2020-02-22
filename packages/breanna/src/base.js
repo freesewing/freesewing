@@ -1,20 +1,5 @@
 export default part => {
-  let {
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    Point,
-    measurements,
-    options,
-    utils,
-    store
-  } = part.shorthand()
+  let { points, Point, measurements, options, utils } = part.shorthand()
 
   // Shoulder
   points.cbHps = new Point(0, 0)

@@ -29,7 +29,6 @@ export default part => {
     sa,
     complete,
     paperless,
-    Point,
     macro,
     snippets,
     Snippet
