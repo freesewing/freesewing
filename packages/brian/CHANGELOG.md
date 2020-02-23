@@ -6,12 +6,18 @@
 **Note:** Version bump only for package brian
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package brian
+
+
 ## 2.2.0 (2020-02-22)
 
 ### Changed
 
  - Reworked Brian to use the new shoulderslope measurement
  - Removed deprecated `centerBackNeckToWaist` measurement
+ - The `neck` point has been renamed to `hps`
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package brian

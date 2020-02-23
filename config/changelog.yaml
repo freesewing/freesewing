@@ -1,6 +1,15 @@
 Unreleased:
   date: 2020-02-22
   Added:
+  Changed:
+  Deprecated:
+  Fixed:
+  Removed:
+  Security:
+
+2.3.0:
+  date: 2020-02-23
+  Added:
     holmes:
       - Homes is a pattern for a Sherlock Holmes hat
     plugin-gore:
@@ -30,6 +39,7 @@ Unreleased:
     brian:
       - Reworked Brian to use the new shoulderslope measurement
       - Removed deprecated `centerBackNeckToWaist` measurement
+      - The `neck` point has been renamed to `hps`
     carlton:
       - Removed deprecated `centerBackNeckToWaist` measurement
     carlita:
@@ -73,7 +83,6 @@ Unreleased:
       - Removed deprecated `centerBackNeckToWaist` measurement
     wahid:
       - Removed deprecated `centerBackNeckToWaist` measurement
-  Deprecated:
   Removed:
     i18n:
       - Removed the files for homepage translation, and moved that content to markdown
@@ -94,7 +103,6 @@ Unreleased:
       - Fixed tags in pattern config file
     waralee:
       - Fixed tags in pattern config file
-  Security:
 
 2.1.9:
   date: 2020-01-18

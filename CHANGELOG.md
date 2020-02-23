@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+
+## 2.3.0 (2020-02-23)
+
 ### holmes
 
 #### Added
@@ -47,6 +50,7 @@
 
  - Reworked Brian to use the new shoulderslope measurement
  - Removed deprecated `centerBackNeckToWaist` measurement
+ - The `neck` point has been renamed to `hps`
 
 ### carlita
 

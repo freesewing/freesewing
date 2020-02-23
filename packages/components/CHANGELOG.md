@@ -6,6 +6,11 @@
 **Note:** Version bump only for package components
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package components
+
+
 ## 2.2.0 (2020-02-22)
 
 ### Added

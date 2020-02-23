@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package plugin-gore
+
+
+## 2.3.0 (2020-02-23)
+
 ### Added
 
  - A plugin to generate gores for semi-spheres or domes
