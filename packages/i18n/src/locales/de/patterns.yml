@@ -8,8 +8,11 @@ benjamin:
 bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Grundschnitt Bent
+breanna:
+  description: Breanna is a basic body block for womenswear.
+  title: Breanna body block
 brian:
-  description: Brian ist ein Grundschnitt für Männer.
+  description: Brian is a basic body block for menswear.
   title: Grundschnitt Brian
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
@@ -26,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
+holmes:
+  description: 'For Sherlock Holmes cosplay or just a cute hat'
+  title: Holmes hat
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
   title: Hoodie Huey
