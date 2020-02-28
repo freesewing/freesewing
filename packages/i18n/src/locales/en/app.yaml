@@ -288,6 +288,7 @@ sizes: Sizes
 accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
+saveThing: 'Save {thing}'
 shareThing: 'Share {thing}'
 link: Link
 cloneThing: 'Clone {thing}'
