@@ -28,6 +28,9 @@ cathrin:
 florent:
   description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
   title: Florent flat cap
+fu:
+  description: 'Fu is a face mask'
+  title: Fu face mask
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat

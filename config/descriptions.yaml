@@ -13,6 +13,7 @@ create-freesewing-pattern: "Initializer package for FreeSewing patterns: npm ini
 css-theme: "A CSS theme for FreeSewing web UIs"
 examples: "A FreeSewing pattern holding examples for our documentation"
 florent: "A FreeSewing pattern for a flat cap"
+fu: "A FreeSewing pattern for a face mask"
 gatsby-remark-jargon: "A gatsby-transformer-remark sub-plugin for jargon terms"
 holmes: "A FreeSewing pattern for a Sherlock Holmes hat"
 huey: "A FreeSewing pattern for a zip-up hoodie"

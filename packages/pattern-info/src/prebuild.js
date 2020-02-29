@@ -10,6 +10,7 @@ const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
 const cathrin = require('@freesewing/cathrin').config
 const florent = require('@freesewing/florent').config
+const fu = require('@freesewing/fu').config
 const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
@@ -37,6 +38,7 @@ const patterns = {
   carlton,
   cathrin,
   florent,
+  fu,
   holmes,
   huey,
   hugo,
