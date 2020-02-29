@@ -35,8 +35,8 @@ const PatternOptionPctDegCount = props => {
   }
 
   const patternReset = () => {
-    setValue(props.patternDflt)
-    props.updateValue(props.name, props.patternDflt / factor)
+    setValue(props.designDflt)
+    props.updateValue(props.name, props.designDflt / factor)
   }
 
   const toggleExpanded = () => setExpanded(!expanded)
@@ -62,7 +62,7 @@ const PatternOptionPctDegCount = props => {
     <li>
       <OptionPreamble
         dflt={props.dflt}
-        patternDflt={props.patternDflt}
+        designDflt={props.designDflt}
         value={value}
         desc={props.desc}
         title={props.title}

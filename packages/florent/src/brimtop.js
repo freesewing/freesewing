@@ -6,14 +6,15 @@ export default function(part) {
     .curve(points.tipLeftCp2, points.outerMidCp1, points.outerMid)
     .curve(points.outerMidCp2, points.tipRightCp1, points.tipRight)
     .attr('class', 'dashed stroke-sm')
-
-  // We check for sa here because it's a good way to sidestep issue #19
-  if (sa) paths.seam = paths.hint.offset(3)
-  paths.seam = paths.seam
-    .line(points.tipRight)
+  paths.rest = new Path()
+    .move(points.tipRight)
     .curve(points.tipRightCp2, points.innerMidCp1, points.innerMid)
     .curve(points.innerMidCp2, points.tipLeftCp1, points.tipLeft)
     .line(paths.seam.start())
+
+  paths.seam = paths.hint
+    .offset(3)
+    .join(paths.rest)
     .close()
     .attr('class', 'fabric')
 
@@ -29,7 +30,12 @@ export default function(part) {
       to: points.innerMid
     })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa)
+      paths.sa = paths.hint
+        .offset(sa + 3)
+        .join(paths.rest.offset(sa))
+        .close()
+        .attr('class', 'fabric sa')
 
     if (paperless) {
       let bottom = paths.seam.edge('bottom')

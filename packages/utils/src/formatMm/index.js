@@ -34,8 +34,8 @@ const formatMm = (val, units, format = 'html') => {
       return formatImperial(negative, inches, fraction128 / 4, 32, format) + suffix
     if (fraction128 % 2 == 0)
       return formatImperial(negative, inches, fraction128 / 2, 64, format) + suffix
-    if (format === 'html') return negative + Math.round(fraction * 100) / 100 + suffix
-    else return negative + Math.round(fraction * 100) / 100 + suffix
+
+    return negative + Math.round(fraction * 100) / 100 + suffix
   } else {
     if (format === 'html') return roundMm(val / 10) + 'cm'
     else return roundMm(val / 10)

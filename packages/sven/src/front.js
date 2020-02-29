@@ -20,15 +20,16 @@ export default part => {
   points.hem.x = points.hips.x
   points.hipsCp2 = points.hips.shift(90, measurements.naturalWaistToHip / 3)
   points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip / 3)
-  points.waistCp2 = points.waist.shift(90, measurements.centerBackNeckToWaist / 4)
+  points.waistCp2 = points.waist.shift(
+    90,
+    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) / 4
+  )
 
   if (options.ribbing) {
     // Adapt lengtht for ribbing
     let ribbingHeight
     if (typeof store.get('ribbingHeight') === 'undefined') {
-      ribbingHeight =
-        (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-        options.ribbingHeight
+      ribbingHeight = measurements.hpsToHipsBack * options.ribbingHeight
       store.set('ribbingHeight', ribbingHeight)
     } else ribbingHeight = store.get('ribbingHeight')
     points.hem = points.hem.shift(90, ribbingHeight)

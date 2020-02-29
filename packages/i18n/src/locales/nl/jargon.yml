@@ -62,9 +62,6 @@ zigZag:
 freesewing:
   term: freesewing
   description: "<b>FreeSewing</b> is een open source platform voor naaipatronen op maat"
-recipe:
-  term: recept
-  description: "Een <b>Recept</b> bevat alle informatie die nodig is om je patroon te recreëren"
 patternOptions:
   term: patroon opties
   description: "De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen"

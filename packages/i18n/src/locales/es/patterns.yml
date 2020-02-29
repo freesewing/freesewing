@@ -8,8 +8,11 @@ benjamin:
 bent:
   description: Este patrón con manga sastre es la base del molde de nuestro abrigo y de nuestra chaqueta.
   title: Bent body Block
+breanna:
+  description: Breanna is a basic body block for womenswear.
+  title: Breanna body block
 brian:
-  description: Brian es el patrón base de cuerpo para hombre.
+  description: Brian is a basic body block for menswear.
   title: Brian body block
 bruce:
   description: Bruce es un bóxer cerrado cómodo y elegante.
@@ -26,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
   title: Florent flat cap
+holmes:
+  description: 'For Sherlock Holmes cosplay or just a cute hat'
+  title: Holmes hat
 huey:
   description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
   title: Huey hoodie

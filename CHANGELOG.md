@@ -5,6 +5,229 @@
 ## Unreleased
 
 
+## 2.3.0 (2020-02-23)
+
+### holmes
+
+#### Added
+
+ - Homes is a pattern for a Sherlock Holmes hat
+
+### plugin-gore
+
+#### Added
+
+ - A plugin to generate gores for semi-spheres or domes
+
+
+## 2.2.0 (2020-02-22)
+
+### aaron
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### bent
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### breanna
+
+#### Added
+
+ - Breanna is a body block for womenswear
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
+
+### brian
+
+#### Changed
+
+ - Reworked Brian to use the new shoulderslope measurement
+ - Removed deprecated `centerBackNeckToWaist` measurement
+ - The `neck` point has been renamed to `hps`
+
+### carlita
+
+#### Changed
+
+ - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### carlton
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### components
+
+#### Added
+
+ - Added LineDrawing for Breanna
+
+#### Changed
+
+ - DraftConfigurator has been updated to reflect frontend naming changes
+ - Updated Workbench component to pass data rather than gist to DraftConfigurator
+ - Term `pattern` is now `design`
+ - Term `recipe` is now `pattern`
+ - Term `gist` is now `data`
+
+### core
+
+#### Added
+
+ - Added the `Path.noop()` method
+ - Added the `Path.insop()` methods
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
+
+### css-theme
+
+#### Added
+
+ - Added styling for table.data
+
+#### Changed
+
+ - Added new styles for the frontend changes in 2.2
+ - Removed smaller fonts in ul.links
+
+### florent
+
+#### Fixed
+
+ - Fixed an SA issue in brim top and removed SA from interfacing
+
+### huey
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### hugo
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+#### Fixed
+
+ - Made sure dimensions for hood center and waistband are always shown
+
+### i18n
+
+#### Added
+
+ - Added translations for Breanna
+
+#### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+#### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
+
+### jaeger
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### models
+
+#### Changed
+
+ - Extended the menswear size range to have 10 different sizes, just like womenswear
+
+### mui-theme
+
+#### Changed
+
+ - Changed the light background to `#f8f9fa` rather than `#fff`
+ - Changed the navbar to be light/dark based on the theme, rather than always dark
+
+### penelope
+
+#### Fixed
+
+ - Fixed tags in pattern config file
+
+### sandy
+
+#### Fixed
+
+ - Fixed tags in pattern config file
+
+### simon
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### simone
+
+#### Changed
+
+ - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### sven
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### tamiko
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### theo
+
+#### Fixed
+
+ - Fixed issue with side piece
+
+### trayvon
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### utils
+
+#### Changed
+
+ - Neckstimate now uses proportions only
+
+### wahid
+
+#### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
+
+### waralee
+
+#### Fixed
+
+ - Fixed tags in pattern config file
+
+
 ## 2.1.9 (2020-01-18)
 
 ### core

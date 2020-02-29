@@ -6,6 +6,16 @@
 **Note:** Version bump only for package bent
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package bent
+
+
+## 2.2.0 (2020-02-22)
+
+### Changed
+
+ - Removed deprecated `centerBackNeckToWaist` measurement
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package bent

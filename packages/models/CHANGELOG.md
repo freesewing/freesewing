@@ -6,6 +6,16 @@
 **Note:** Version bump only for package models
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package models
+
+
+## 2.2.0 (2020-02-22)
+
+### Changed
+
+ - Extended the menswear size range to have 10 different sizes, just like womenswear
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package models

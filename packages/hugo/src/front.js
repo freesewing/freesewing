@@ -23,14 +23,8 @@ export default function(part) {
   } = part.shorthand()
 
   // Absolute values for percentages
-  store.set(
-    'lengthBonus',
-    options.lengthBonus * (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip)
-  )
-  store.set(
-    'ribbing',
-    (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) * options.ribbingHeight
-  )
+  store.set('lengthBonus', options.lengthBonus * measurements.hpsToHipsBack)
+  store.set('ribbing', measurements.hpsToHipsBack * options.ribbingHeight)
 
   // Hem is more descripting than hips in this case
   //points.cfHem = points.cfHips;
@@ -49,7 +43,7 @@ export default function(part) {
   points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6)
   points.pocketCf = points.cfHem.shift(
     90,
-    measurements.centerBackNeckToWaist * 0.33 + store.get('ribbing')
+    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * 0.33 + store.get('ribbing')
   )
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y)
   points.pocketTip = points.pocketHem

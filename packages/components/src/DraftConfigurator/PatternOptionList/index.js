@@ -18,8 +18,8 @@ const PatternOptionList = props => {
   }
 
   const patternReset = () => {
-    setValue(props.patternDflt)
-    props.updateValue(props.name, props.patternDflt)
+    setValue(props.designDflt)
+    props.updateValue(props.name, props.designDflt)
   }
 
   const toggleExpanded = () => setExpanded(!expanded)
@@ -37,7 +37,7 @@ const PatternOptionList = props => {
       name={props.name}
       value={value}
       dflt={props.dflt}
-      patternDflt={props.patternDflt}
+      designDflt={props.designDflt}
       onChange={update}
       label={'po-list-' + props.name}
       updateValue={update}

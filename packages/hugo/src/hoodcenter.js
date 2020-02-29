@@ -50,6 +50,13 @@ export default function(part) {
       from: points.topLeft.shift(-90, width / 2),
       to: points.topRight.shift(-90, width / 2)
     })
+    // Always include this dimension as we don't print the entire part
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomRight.y + sa + 15,
+      text: units(store.get('hoodCenterLength'))
+    })
   }
 
   // Paperless?
@@ -58,12 +65,6 @@ export default function(part) {
       from: points.bottomRight,
       to: points.topRight,
       x: points.topRight.x + sa + 15
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomRight.y + sa + 15,
-      text: units(store.get('hoodCenterLength'))
     })
   }
 

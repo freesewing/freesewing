@@ -3,8 +3,6 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
-aboutGist1: Un esencia contiene toda la información requerida para redactar un patrón.
-aboutGist2: Puede copiar / pegar una esencia existente aquí para usarla como punto de partida para su propio boceto.
 account: Cuenta
 accountCreated: cuenta creada
 actions: Acciones
@@ -25,16 +23,15 @@ browsePatterns: Navegar por les patrones
 browseShowcases: Navegar por las escaparates
 butThatCouldChange: Pero eso podría cambiar
 cancel: Cancelar
-changeModel: Cambiar modelo
+changePerson: Change person
 changePattern: Cambiar patrón
 chatOnGitter: Chatea en Gitter
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chest: Pecho
-chestInfo: Los senos requieren medidas adicionales. Si su modelo no tiene pechos, se ocultarán las mediciones irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
-chooseAModel: Elige un modelo
+chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
+chooseAPerson: Choose a person
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
-clearGist: Borrar esencia
 close: Cerrar
 colourYes: "Imagen en color: el contenido está disponible en español."
 community: Comunidad
@@ -47,14 +44,15 @@ continue: Continuar
 copiedToClipboard: Copiado al portapapeles
 copy: Dupdo
 couldYouTranslateThis: '¿Podrías traducir esto?'
-countModelsLackingForPattern: Tiene {count} modelos que carecen de las medidas necesarias para dibujar {pattern}
+countModelsLackingForPattern: "{count} of your people lack the required measurements to draft {pattern}"
 created: Creado
-createModel: Crear el modelo
 custom: personalizado
 customSeamAllowance: Margen de costura personalizada
 darkMode: Modo oscuro
 default: Defecto
 demo: Demostración
+designOptions: Design options
+designs: Designs
 docs: Documentación
 docsFooterMsg: La documentación nunca se termina. Ojalá pudiéramos responder a todas sus preguntas, pero si ese no es el caso, hay ayuda disponible.
 docsNotFoundMsg: No pudimos encontrar esta documentación, lo que generalmente significa que aún no se ha escrito.
@@ -75,7 +73,6 @@ emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo elec
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 exportDraft: Exportar boceto
 export: Exportar
-exportGist: Exportar esencia
 exportTiledPDF: Exportar PDF paginado
 faq: Preguntas frecuentes
 fieldRemoved: "{field} eliminado"
@@ -85,7 +82,6 @@ filterPatterns: Filtrar los patrones
 forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
-gist: Esencia
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -103,7 +99,6 @@ invalidTldMessage: '.{tld} no es un TLD válido'
 joinTheChatMsg: Tenemos una sala de chat en Gitter con personas amigables que están felices de ayudar. Así que no seas tímido, y pasa por un chat.
 justAMoment: Un momento
 layout: Diseño
-letUsSetupYourAccount: Permítanos configurar su cuenta
 logIn: Iniciar sesión
 loginWithProvider: 'Inicia sesión con<br>{provider}'
 logOut: cerrar sesión
@@ -113,15 +108,13 @@ measurements: Medidas
 menu: Menú
 metadata: Metadatos
 metricUnits: Unidades métricas (cm)
-model: Modelo
-models: Modelos
+person: Person
+people: People
 monochromeNo: "Imagen monocroma: el contenido no está disponible en español."
 nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
 name: Nombre
-newDraftFromGist: Nuevo patrón de la esencia
-newDraft: Nuevo boceto
-newModel: Nuevo modelo
-newPattern: 'Nuevo {pattern}'
+addThing: Add {thing}
+newThing: New {thing}
 newPatternForModel: 'Nuevo {pattern} para {model}'
 noChanges: No hay cambios
 no: false
@@ -158,6 +151,7 @@ proceedWithCaution: Proceder con cautela
 profile: Perfil
 relatedLinks: Enlaces relacionados
 remove: Eliminar
+removeThing: Remove {thing}
 reportThisOnGithub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
 resendActivationEmailMessage: 'Fill in the E-mail address you signed up with, and we''ll send you a new confirmation message.'
@@ -165,8 +159,8 @@ resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
 restoreDefaults: Restaurar valores por defecto
+restoreDesignDefaults: Restore design defaults
 restorePatternDefaults: Restore pattern defaults
-restoreRecipeDefaults: Restore recipe defaults
 saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
 searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
@@ -198,7 +192,7 @@ thisFieldSupportsMarkdown: Este campo admite Markdown
 thisPageRequiresAuthentication: esta página requiere autenticación
 troubleLoggingIn: '¿Problemas para acceder?'
 twitter: Twitter
-txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
+txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
 txt-tier0: '¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? <br> La liberación gratuita es gratuita para todos. No se hicieron preguntas.'
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
@@ -233,7 +227,6 @@ apiReference: Referencia de la API
 tutorial: Tutorial
 editThisPage: Edita esta página
 loginRequiredRedirect: 'Has sido redirigido a la página de inicio de sesión porque {page} requiere autenticación'
-recipes: Recetas
 various: Varios
 sewing: Costura
 examples: Ejemplos
@@ -241,24 +234,25 @@ by: por
 years: Años
 pricing: Pricing
 createFirst: Start by creating a new pattern
-noRecipe: You don't have any recipes (yet). Create a new pattern, then save its recipe.
-modelFirst: Start by creating a model
-noModel: You don't have any models (yet). FreeSewing generates made-to-measure sewing patterns. And we can't generate any patterns if we don't have measurements.
-noModel2: So the first thing you should do is create a model with your measurments, or the measurements of the person you want to create a pattern for.
+noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
+modelFirst: Start by adding measurements
+noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
+noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
 noUserBrowsingTitle: "You can't just browse all users"
 noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-useRecipeModel: "Use the recipe's model"
+usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Create a replica
 showDetails: Show details
 clickBelowToLogOut: Click below to log out
 compare: Compare
-saveRecipe: Save recipe
+savePattern: Save pattern
 exportPattern: Export pattern
 recreate: Recreate
+recreateThing: Recreate {thing}
+recreateThingForPerson: Recreate {thing} for {person}
 seeYouLaterUser: See you later {user}
 exportForPrinting: Export for printing
 exportForEditing: Export for editing
-exportRecipe: Export recipe
 startWithNeckTitle: Start with the neck circumference
 startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
 whatYouNeed: What you need
@@ -272,4 +266,31 @@ loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
 weEstimateYM2B: "We estimate your {measurement} to be around:"
-
+exportAsData: Export as data
+availablePatterns: Available patterns
+browseCollection: Browse collection
+browseYourPatterns: Browse your patterns
+yourPatterns: Your patterns
+loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
+docsForContributors: Documentation for contributors
+patternDocs: Pattern documentation
+socialMedia: Social media
+create: Create
+browse: Browse
+patrons: Patrons
+scrollToTop: Scroll to top
+sitemap: Sitemap
+contributeToThing: Contribute to {thing}
+mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
+fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
+supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
+madeToMeasure: Made-to-measure
+sizes: Sizes
+accountRequired: This feature requires a FreeSewing account
+size: Size
+switchToThing: 'Switch to {thing}'
+shareThing: 'Share {thing}'
+link: Link
+cloneThing: 'Clone {thing}'
+cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
+furtherReading: Further reading

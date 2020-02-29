@@ -24,3 +24,4 @@ designModeIsOn: Design mode is on
 designModeIsOff: Design mode is off
 turnOn: Turn on
 turnOff: Turn off
+validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"

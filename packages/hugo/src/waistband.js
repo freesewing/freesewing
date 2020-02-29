@@ -13,10 +13,7 @@ export default function(part) {
     units
   } = part.shorthand()
 
-  let width =
-    (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-    options.ribbingHeight *
-    2
+  let width = measurements.hpsToHipsBack * options.ribbingHeight * 2
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
@@ -55,6 +52,16 @@ export default function(part) {
       from: points.bottomMidLeft,
       to: points.topMidLeft
     })
+
+    // Always include this dimension as we don't print the entire part
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomRight.y + sa + 15,
+      text: units(
+        measurements.chestCircumference * (1 + options.chestEase) * (1 - options.ribbingStretch)
+      )
+    })
   }
 
   // Paperless?
@@ -63,14 +70,6 @@ export default function(part) {
       from: points.bottomRight,
       to: points.topRight,
       x: points.topRight.x + sa + 15
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomRight.y + sa + 15,
-      text: units(
-        measurements.chestCircumference * (1 + options.chestEase) * (1 - options.ribbingStretch)
-      )
     })
   }
 

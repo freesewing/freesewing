@@ -1,87 +1,87 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "sven",
+  name: 'sven',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["top", "basics"],
+  tags: ['top', 'basics'],
   optionGroups: {
     fit: [
-      "chestEase",
-      "collarEase",
-      "bicepsEase",
-      "cuffEase",
-      "shoulderEase",
-      "lengthBonus",
-      "sleeveLengthBonus"
+      'chestEase',
+      'collarEase',
+      'bicepsEase',
+      'cuffEase',
+      'shoulderEase',
+      'lengthBonus',
+      'sleeveLengthBonus'
     ],
-    style: ["ribbing", "ribbingHeight"],
+    style: ['ribbing', 'ribbingHeight'],
     advanced: [
-      "acrossBackFactor",
-      "armholeDepthFactor",
-      "backNeckCutout",
-      "frontArmholeDeeper",
-      "ribbingStretch",
-      "shoulderSlopeReduction",
-      "sleeveWidthGuarantee",
+      'acrossBackFactor',
+      'armholeDepthFactor',
+      'backNeckCutout',
+      'frontArmholeDeeper',
+      'ribbingStretch',
+      'shoulderSlopeReduction',
+      'sleeveWidthGuarantee',
       {
         sleevecap: [
-          "sleevecapEase",
-          "sleevecapTopFactorX",
-          "sleevecapTopFactorY",
-          "sleevecapBackFactorX",
-          "sleevecapBackFactorY",
-          "sleevecapFrontFactorX",
-          "sleevecapFrontFactorY",
-          "sleevecapQ1Offset",
-          "sleevecapQ2Offset",
-          "sleevecapQ3Offset",
-          "sleevecapQ4Offset",
-          "sleevecapQ1Spread1",
-          "sleevecapQ1Spread2",
-          "sleevecapQ2Spread1",
-          "sleevecapQ2Spread2",
-          "sleevecapQ3Spread1",
-          "sleevecapQ3Spread2",
-          "sleevecapQ4Spread1",
-          "sleevecapQ4Spread2"
+          'sleevecapEase',
+          'sleevecapTopFactorX',
+          'sleevecapTopFactorY',
+          'sleevecapBackFactorX',
+          'sleevecapBackFactorY',
+          'sleevecapFrontFactorX',
+          'sleevecapFrontFactorY',
+          'sleevecapQ1Offset',
+          'sleevecapQ2Offset',
+          'sleevecapQ3Offset',
+          'sleevecapQ4Offset',
+          'sleevecapQ1Spread1',
+          'sleevecapQ1Spread2',
+          'sleevecapQ2Spread1',
+          'sleevecapQ2Spread2',
+          'sleevecapQ3Spread1',
+          'sleevecapQ3Spread2',
+          'sleevecapQ4Spread1',
+          'sleevecapQ4Spread2'
         ]
       }
     ]
   },
   measurements: [
-    "bicepsCircumference",
-    "centerBackNeckToWaist",
-    "chestCircumference",
-    "naturalWaist",
-    "naturalWaistToHip",
-    "neckCircumference",
-    "shoulderSlope",
-    "shoulderToShoulder",
-    "hipsCircumference",
-    "shoulderToWrist",
-    "wristCircumference"
+    'bicepsCircumference',
+    'chestCircumference',
+    'hpsToHipsBack',
+    'hipsCircumference',
+    'naturalWaist',
+    'naturalWaistToHip',
+    'neckCircumference',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wristCircumference'
   ],
   dependencies: {
-    frontBase: "base",
-    backBase: "base",
-    front: "frontBase",
-    back: "backBase",
-    sleeve: ["sleeveBase", "front", "back"]
+    frontBase: 'base',
+    backBase: 'base',
+    front: 'frontBase',
+    back: 'backBase',
+    sleeve: ['sleeveBase', 'front', 'back']
   },
   inject: {
-    frontBase: "base",
-    backBase: "base",
-    front: "frontBase",
-    back: "backBase",
-    sleeve: "sleeveBase"
+    frontBase: 'base',
+    backBase: 'base',
+    front: 'frontBase',
+    back: 'backBase',
+    sleeve: 'sleeveBase'
   },
-  parts: ["cuff", "waistband"],
-  hide: ["base", "frontBase", "backBase", "sleeveBase"],
+  parts: ['cuff', 'waistband'],
+  hide: ['base', 'frontBase', 'backBase', 'sleeveBase'],
   options: {
     // Constants
     collarFactor: 5,
@@ -134,4 +134,4 @@ export default {
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
     waistEase: { pct: 8, min: -4, max: 20 }
   }
-};
+}

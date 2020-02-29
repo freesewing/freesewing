@@ -62,9 +62,6 @@ zigZag:
 freesewing:
   term: FreeSewing
   description: "<b>FreeSewing</b> ist eine Open Source Plattform für Schnittmuster nach Maß"
-recipe:
-  term: Rezept
-  description: "Ein <b>Rezept</b> enthält all Informationen, die benötigt werde Ihr Schnittmuster erneut zu kreieren"
 patternOptions:
   term: Schnittmusteroptionen
   description: "Die <b>Schnittmusteroptionen</b> erlauben es Ihnen, das Design des Schnittmusters anzupassen"

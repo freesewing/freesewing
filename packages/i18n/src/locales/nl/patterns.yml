@@ -8,8 +8,11 @@ benjamin:
 bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
+breanna:
+  description: Breanna is een basispatroon voor dameskleding.
+  title: Breanna basispatroon
 brian:
-  description: Brian is een basispatroon voor mannen.
+  description: Brian is een basispatroon voor mannenkleding.
   title: Brian Basisvorm
 bruce:
   description: Bruce is een boxershort die zowel comfortabel als stylish is.
@@ -26,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.'
   title: Florent pet
+holmes:
+  description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt'
+  title: Holmes hoed
 huey:
   description: Huey is een trui met kap met een rits, en optionele voorzakken.
   title: Huey hoodie

@@ -18,8 +18,8 @@ const PatternOptionBool = props => {
   }
 
   const patternReset = () => {
-    setValue(props.patternDflt)
-    props.updateValue(props.name, props.patternDflt)
+    setValue(props.designDflt)
+    props.updateValue(props.name, props.designDflt)
   }
 
   const toggleExpanded = () => setExpanded(!expanded)
@@ -39,7 +39,7 @@ const PatternOptionBool = props => {
     <li>
       <OptionPreamble
         dflt={props.dflt}
-        patternDflt={props.patternDflt}
+        designDflt={props.designDflt}
         value={value}
         desc={props.desc}
         title={props.title}

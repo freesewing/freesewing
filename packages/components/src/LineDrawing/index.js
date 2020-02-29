@@ -13,7 +13,7 @@ const LineDrawing = props => {
     attr.width = props.size
     attr.height = props.size
   }
-  return <svg {...attr}>{patterns[props.pattern].map(el => el)}</svg>
+  return <svg {...attr}>{patterns[props.pattern] || null}</svg>
 }
 
 LineDrawing.propTypes = {
@@ -23,7 +23,7 @@ LineDrawing.propTypes = {
 }
 
 LineDrawing.defaultProps = {
-  size: false,
+  size: 0,
   className: '',
   pattern: 'aaron',
   style: {}

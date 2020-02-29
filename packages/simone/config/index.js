@@ -110,10 +110,10 @@ export default {
   measurements: [
     'bicepsCircumference',
     'bustSpan',
-    'centerBackNeckToWaist',
     'chestCircumference',
     'highBust',
-    'highPointShoulderToBust',
+    'hpsToBust',
+    'hpsToHipsBack',
     'naturalWaist',
     'naturalWaistToHip',
     'neckCircumference',

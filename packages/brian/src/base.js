@@ -20,27 +20,37 @@ export default part => {
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
 
   // Center back (cb) vertical axis
+  points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
-  points.cbShoulder = new Point(
-    0,
-    (measurements.shoulderSlope -
-      measurements.shoulderToShoulder * options.shoulderSlopeReduction) /
-      2
-  )
+  points.cbHips = new Point(0, measurements.hpsToHipsBack)
+  points.cbWaist = new Point(0, points.cbHips.y - measurements.naturalWaistToHip)
+
+  // Shoulder point using new shoulderSlope measurement
+  points.shoulder = utils
+    .circlesIntersect(
+      points.cbHps,
+      measurements.shoulderToShoulder / 2,
+      points.cbHips,
+      measurements.shoulderSlope,
+      'y'
+    )
+    .shift()
+  if (points.shoulder.y < points.cbHps.y) {
+    // Shoulder should never be higher than HPS
+    points.shoulder = utils.beamIntersectsY(points.shoulder, points.cbHips, points.cbHps.y)
+  } else {
+    // Take shoulder slope reduction into account
+    points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
+  }
+
+  points.cbShoulder = new Point(0, points.shoulder.y)
   points.cbArmhole = new Point(
     0,
     points.cbShoulder.y +
       (measurements.shoulderToShoulder * options.shoulderSlopeReduction) / 2 +
       measurements.bicepsCircumference * (1 + options.bicepsEase) * options.armholeDepthFactor
   )
-  points.cbWaist = new Point(0, points.cbNeck.y + measurements.centerBackNeckToWaist)
-  points.cbHips = new Point(0, points.cbWaist.y + measurements.naturalWaistToHip)
-  points.cbHem = new Point(
-    0,
-    points.cbWaist.y +
-      measurements.naturalWaistToHip +
-      (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) * options.lengthBonus
-  )
+  points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
   points.armhole = new Point(

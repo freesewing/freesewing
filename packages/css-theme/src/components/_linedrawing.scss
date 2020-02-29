@@ -1,12 +1,21 @@
 svg.fs.linedrawing {
   path.primary {
-    stroke-width: 2;
+    stroke-width: 1.5;
+  }
+  path.primary-line {
+    stroke-width: 1.5;
+    fill: none;
   }
   path.secondary {
-    stroke-width: 1;
+    stroke-width: 0.75;
   }
   path.inside {
-    stroke-width: 2;
+    stroke-width: 1.5;
+  }
+  path.stitch {
+    stroke-width: 0.5;
+    stroke-dasharray: 3 1;
+    fill: none;
   }
 }
 
@@ -23,6 +32,10 @@ svg.fs.linedrawing {
     stroke: $oc-gray-8;
     fill: $oc-gray-5;
   }
+  path.stitch,
+  path.primary-line {
+    stroke: $oc-gray-8;
+  }
 }
 .theme-wrapper.dark svg.fs.linedrawing {
   path.primary {
@@ -37,4 +50,9 @@ svg.fs.linedrawing {
     stroke: $oc-gray-5;
     fill: $oc-gray-7;
   }
+  path.stitch,
+  path.primary-line {
+    stroke: $oc-gray-5;
+  }
 }
+

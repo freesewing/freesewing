@@ -6,6 +6,24 @@
 **Note:** Version bump only for package components
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package components
+
+
+## 2.2.0 (2020-02-22)
+
+### Added
+
+ - Added LineDrawing for Breanna
+
+### Changed
+
+ - DraftConfigurator has been updated to reflect frontend naming changes
+ - Updated Workbench component to pass data rather than gist to DraftConfigurator
+ - Term `pattern` is now `design`
+ - Term `recipe` is now `pattern`
+ - Term `gist` is now `data`
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package components

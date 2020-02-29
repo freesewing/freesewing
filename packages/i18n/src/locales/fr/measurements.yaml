@@ -2,12 +2,15 @@
 acrossBack: Largeur du dos (obsolète)
 ankleCircumference: Tour de cheville
 bicepsCircumference: Tour de bras
+bustFront: Bust front
 bustSpan: Ecart de poitrine
-centerBackNeckToWaist: Hauteur dos
 chestCircumference: Tour de poitrine
 headCircumference: Tour de tête
 highBust: Tour de buste
-highPointShoulderToBust: Hauteur de poitrine
+highBustFront: High bust front
+hpsToBust: HPS to bust
+hpsToHipsBack: HPS to hips back
+hpsToHipsFront: HPS to hips front
 hipsCircumference: Tour des petites hanches
 hipsToUpperLeg: Hauteur des hanches à l'entrejambe
 inseam: Longueur d'entrejambe

@@ -1,26 +1,26 @@
 ---
 backDarts:
-  tile: Back darts
-  description: Whether or not to include back darts
+  tile: Pinzas traseras
+  description: Incluir o no pinzas traseras
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Automático
+    always: Siempre
+    never: Nunca
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Forma de las pinzas traseras
+  description: La cantidad de forma que añaden las pinzas traseras
 barrelCuffNarrowButton:
   title: Botón de ajuste del puño
   description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Pliegue en caja
+  description: Si incluir un pliegue en caja en la parte trasera o no
 boxPleatWidth:
-  title: Box pleat width
-  description: The total widh of the box pleat
+  title: Anchura del pliegue en caja
+  description: El ancho total del pliegue en caja
 boxPleatFold:
-  title: Box pleat fold
-  description: The amount by with the box pleat folds inwards
+  title: Doblado del pliegue en caja
+  description: La cantidad por la que el piegue en caja se dobla hacia adentro
 buttonPlacketStyle:
   title: Estilo de la vista de los botones
   description: Estilo de la visto de los botones

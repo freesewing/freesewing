@@ -6,6 +6,16 @@
 **Note:** Version bump only for package theo
 
 
+## 2.3.0 (2020-02-23)
+
+**Note:** Version bump only for package theo
+
+
+## 2.2.0 (2020-02-22)
+
+### Fixed
+
+ - Fixed issue with side piece
 ## 2.1.9 (2020-01-18)
 
 **Note:** Version bump only for package theo

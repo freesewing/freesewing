@@ -8,8 +8,11 @@ benjamin:
 bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
+breanna:
+  description: Breanna is a basic body block for womenswear.
+  title: Breanna body block
 brian:
-  description: Brian est un patron de base de corps pour les hommes.
+  description: Brian is a basic body block for menswear.
   title: Patron de base Brian
 bruce:
   description: Bruce sont des boxers confortables et élégants.
@@ -26,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
   title: Casquette Florent
+holmes:
+  description: 'For Sherlock Holmes cosplay or just a cute hat'
+  title: Holmes hat
 huey:
   description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
   title: Sweat à capuche Huey

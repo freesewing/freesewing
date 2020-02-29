@@ -11,17 +11,7 @@ export default {
   department: 'womenswear',
   type: 'pattern',
   difficulty: 3,
-  tags: [
-    'freesewing',
-    'design',
-    'diy',
-    'fashion',
-    'made to measure',
-    'parametric design',
-    'pattern',
-    'sewing',
-    'sewing pattern'
-  ],
+  tags: ['skirt', 'bottom', 'basics'],
   optionGroups: {
     fit: [
       'lengthBonus',

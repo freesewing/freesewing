@@ -4,11 +4,14 @@ const aaron = require('@freesewing/aaron').config
 const benjamin = require('@freesewing/benjamin').config
 const bent = require('@freesewing/bent').config
 const brian = require('@freesewing/brian').config
+const breanna = require('@freesewing/breanna').config
 const bruce = require('@freesewing/bruce').config
 const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
 const cathrin = require('@freesewing/cathrin').config
 const florent = require('@freesewing/florent').config
+const fu = require('@freesewing/fu').config
+const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
@@ -29,11 +32,14 @@ const patterns = {
   benjamin,
   bent,
   brian,
+  breanna,
   bruce,
   carlita,
   carlton,
   cathrin,
   florent,
+  fu,
+  holmes,
   huey,
   hugo,
   jaeger,
