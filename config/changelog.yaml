@@ -1,5 +1,5 @@
 Unreleased:
-  date: 2020-02-22
+  date:
   Added:
   Changed:
   Deprecated:
@@ -12,6 +12,9 @@ Unreleased:
   Fixed:
     components:
       - Fixed `updatePatternData` props issue in the Workbench component
+    utils:
+      - "[#542](https://github.com/freesewing/freesewing.org/issues/542):
+        Prevent neckstimate from throwing when getting an unexpected measurement "
 
 2.4.0:
   date: 2020-02-29
