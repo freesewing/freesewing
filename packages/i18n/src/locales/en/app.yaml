@@ -70,7 +70,6 @@ dragAndDropImageHere: Drag and drop and image here, or select one manually with 
 emailAddress: E-mail address
 emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
 enterEmailPickPassword: Enter your E-mail address, and pick a password
-exportDraft: Export draft
 export: Export
 exportTiledPDF: Export tiled PDF
 faq: Frequently asked questions
@@ -245,7 +244,6 @@ showDetails: Show details
 clickBelowToLogOut: Click below to log out
 compare: Compare
 savePattern: Save pattern
-exportPattern: Export pattern
 recreate: Recreate
 recreateThing: Recreate {thing}
 recreateThingForPerson: Recreate {thing} for {person}
@@ -294,3 +292,12 @@ link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
 furtherReading: Further reading
+
+saveAsNewPattern: Save As New Pattern
+saveAsNewPattern-txt: Copy this pattern and store it in your FreeSewing account
+exportPattern: Export pattern
+printPattern: Print pattern
+exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
+editThing: 'Edit {thing}'
+editPattern-txt: Load this pattern in the pattern editor
+featureRequiresAccount: This feature requires a FreeSewing account

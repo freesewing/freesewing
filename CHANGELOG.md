@@ -5,6 +5,30 @@
 ## Unreleased
 
 
+## 2.4.1 (2020-03-04)
+
+### components
+
+#### Fixed
+
+ - Fixed `updatePatternData` props issue in the Workbench component
+
+### utils
+
+#### Fixed
+
+ - [#542](https://github.com/freesewing/freesewing.org/issues/542): Prevent neckstimate from throwing when getting an unexpected measurement 
+
+
+## 2.4.0 (2020-02-29)
+
+### fu
+
+#### Added
+
+ - Fu is a face mask pattern
+
+
 ## 2.3.0 (2020-02-23)
 
 ### holmes

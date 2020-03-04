@@ -129,7 +129,7 @@ const DraftPattern = props => {
             noDocs
             config={props.config}
             data={props.gist}
-            updateData={props.updateGist}
+            updatePatternData={props.updateGist}
             raiseEvent={props.raiseEvent}
             freesewing={props.freesewing}
             units={props.units}

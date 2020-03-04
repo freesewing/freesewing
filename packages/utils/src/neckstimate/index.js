@@ -4,7 +4,7 @@ import ratio from './ratio'
 
 // This estimates a measurement based on the neck circumference
 const neckstimate = (neckCircumference = false, measurement = false, breasts = false) => {
-  const data = breasts ? withBreasts : withoutBreasts
+  let data = breasts ? withBreasts : withoutBreasts
 
   if (!neckCircumference)
     throw new Error('neckstimate() requires a neck circumference in mm as first parameter')
@@ -17,11 +17,15 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
     )
   }
   if (typeof data[measurement] === 'undefined') {
-    let msg =
-      typeof withBreasts[measurement] === 'undefined'
-        ? `neckstimate() called with an invalid measurement name (${measurement})`
-        : `neckstimate() called for a breasts-only measurement (${measurement}) on a no-breasts person`
-    throw new Error(msg)
+    if (typeof withBreasts[measurement] === 'undefined') {
+      throw new Error(`neckstimate() called with an invalid measurement name (${measurement})`)
+    } else {
+      console.log(
+        `WARNING: neckstimate() called for a breasts-only measurement (${measurement}) on a no-breasts person`
+      )
+      // Return something anyway, rather than fall over
+      data = withBreasts
+    }
   }
 
   // This is what should happen
