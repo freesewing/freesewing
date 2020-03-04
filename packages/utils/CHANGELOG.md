@@ -6,6 +6,16 @@
 **Note:** Version bump only for package utils
 
 
+## 2.4.1 (2020-03-04)
+
+### Fixed
+
+ - [#542](https://github.com/freesewing/freesewing.org/issues/542): Prevent neckstimate from throwing when getting an unexpected measurement 
+## 2.4.0 (2020-02-29)
+
+**Note:** Version bump only for package utils
+
+
 ## 2.3.0 (2020-02-23)
 
 **Note:** Version bump only for package utils

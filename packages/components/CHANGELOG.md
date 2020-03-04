@@ -6,6 +6,16 @@
 **Note:** Version bump only for package components
 
 
+## 2.4.1 (2020-03-04)
+
+### Fixed
+
+ - Fixed `updatePatternData` props issue in the Workbench component
+## 2.4.0 (2020-02-29)
+
+**Note:** Version bump only for package components
+
+
 ## 2.3.0 (2020-02-23)
 
 **Note:** Version bump only for package components

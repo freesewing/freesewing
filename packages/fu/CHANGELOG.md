@@ -6,6 +6,16 @@
 **Note:** Version bump only for package fu
 
 
+## 2.4.1 (2020-03-04)
+
+**Note:** Version bump only for package fu
+
+
+## 2.4.0 (2020-02-29)
+
+### Added
+
+ - Fu is a face mask pattern
 ## 2.3.0 (2020-02-23)
 
 **Note:** Version bump only for package fu

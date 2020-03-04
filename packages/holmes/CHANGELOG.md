@@ -6,6 +6,16 @@
 **Note:** Version bump only for package holmes
 
 
+## 2.4.1 (2020-03-04)
+
+**Note:** Version bump only for package holmes
+
+
+## 2.4.0 (2020-02-29)
+
+**Note:** Version bump only for package holmes
+
+
 ## 2.3.0 (2020-02-23)
 
 ### Added
