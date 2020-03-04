@@ -7,6 +7,18 @@ Unreleased:
   Removed:
   Security:
 
+2.4.1:
+  date: 2020-03-04
+  Fixed:
+    components:
+      - Fixed `updatePatternData` props issue in the Workbench component
+
+2.4.0:
+  date: 2020-02-29
+  Added:
+    fu:
+      - Fu is a face mask pattern
+
 2.3.0:
   date: 2020-02-23
   Added:
