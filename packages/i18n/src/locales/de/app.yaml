@@ -71,7 +71,6 @@ dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie
 emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
-exportDraft: Entwurf exportieren
 export: Exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
@@ -246,7 +245,6 @@ showDetails: Details anzeigen
 clickBelowToLogOut: Klicken Sie unten sich abzumelden
 compare: Vergleichen
 savePattern: Save pattern
-exportPattern: Schnittmuster exportieren
 recreate: Wiederherstellen
 recreateThing: Recreate {thing}
 recreateThingForPerson: Recreate {thing} for {person}
@@ -289,8 +287,24 @@ sizes: Sizes
 accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
+saveThing: 'Save {thing}'
 shareThing: 'Share {thing}'
 link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
 furtherReading: Further reading
+saveAsNewPattern: Save As New Pattern
+saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
+exportPattern: Schnittmuster exportieren
+printPattern: Print pattern
+exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
+editThing: 'Edit {thing}'
+editPattern-txt: Load this pattern in the pattern editor
+featureRequiresAccount: This feature requires a FreeSewing account
+zoom: Zoom
+zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
+savePattern-txt: Store this pattern in your FreeSewing account
+comparePattern: Compare pattern
+comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
+recreatePattern: Recreate pattern
+recreatePattern-txt: Choose a different person, then recreate this pattern for that person
