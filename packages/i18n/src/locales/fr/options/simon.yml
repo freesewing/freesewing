@@ -74,29 +74,29 @@ collarStandWidth:
   description: Largeur du pied de col.
 cuffButtonRows:
   title: Rangée de boutons de manchette
-  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
+  description: Simple ou double rangée de boutons de poignet. Cette option n'est pertinente que pour les poignets classiques.
   options:
     '1': rangée de boutons de manchette simple
     '2': rangée de boutons de manchette double
 cuffDrape:
   title: Drapé d'emmanchure
-  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
+  description: La largeur de la manche en excès par rapport au poignet, à l'endroit où ils sont joints.
 cuffLength:
-  title: Longueur d'emmanchure
-  description: La longueur d'emmanchure.
+  title: Longueur de poignet
+  description: La longueur des poignets.
 cuffStyle:
-  title: Style d'emmanchure
+  title: Style de poignet
   description: Style d'emmanchure.
   options:
-    roundedBarrelCuff: Emmanchure classique arrondie
-    angledBarrelCuff: Emmanchure classique angulaire
-    straightBarrelCuff: Emmanchure classique droite
+    roundedBarrelCuff: Poignet classique arrondi
+    angledBarrelCuff: Poignet classique angulaire
+    straightBarrelCuff: Poignet classique droit
     roundedFrenchCuff: Poignet français arrondi
-    angledFrenchCuff: Emmanchure française angulaire
-    straightFrenchCuff: Emmanchure française droite
+    angledFrenchCuff: Poignet français angulaire
+    straightFrenchCuff: Poignet français droit
 extraTopButton:
   title: Bouton supérieur supplémentaire
-  description: Pour inclure un bouton supérieur supplémentaire sur la fermeture avant.
+  description: Inclure ou non un bouton supplémentaire en haut de fermeture avant.
 hemCurve:
   title: Courbe de l'ourlet
   description: La hauteur de l'arrondi sur un ourlet arrondi.
