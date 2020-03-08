@@ -65,13 +65,13 @@ collarRoll:
   description: La valeur rendant le tombant du col plus large que le pied de col.
 collarStandBend:
   title: Courbure du col
-  description: La courbure du col.
+  description: La courbure du pied de col.
 collarStandCurve:
-  title: Courbe du col
-  description: La courbe du col.
+  title: Courbe du pied de col
+  description: La courbe du pied de col.
 collarStandWidth:
   title: Largeur du col
-  description: Largeur du col.
+  description: Largeur du pied de col.
 cuffButtonRows:
   title: Rangée de boutons de manchette
   description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
@@ -91,7 +91,7 @@ cuffStyle:
     roundedBarrelCuff: Emmanchure classique arrondie
     angledBarrelCuff: Emmanchure classique angulaire
     straightBarrelCuff: Emmanchure classique droite
-    roundedFrenchCuff: Emmanchure française arrondie
+    roundedFrenchCuff: Poignet français arrondi
     angledFrenchCuff: Emmanchure française angulaire
     straightFrenchCuff: Emmanchure française droite
 extraTopButton:
