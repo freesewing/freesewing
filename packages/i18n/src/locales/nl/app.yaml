@@ -299,12 +299,12 @@ exportPattern: Patroon exporteren
 printPattern: Print patroon
 exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
 editThing: 'Bewerk {thing}'
-editPattern-txt: Load this pattern in the pattern editor
-featureRequiresAccount: This feature requires a FreeSewing account
+editPattern-txt: Laad dit patroon in de patroonbewerker
+featureRequiresAccount: Deze functie vereist een FreeSewing account
 zoom: Zoom
-zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
-savePattern-txt: Store this pattern in your FreeSewing account
-comparePattern: Compare pattern
-comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
-recreatePattern: Recreate pattern
-recreatePattern-txt: Choose a different person, then recreate this pattern for that person
+zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
+savePattern-txt: Bewaar dit patroon in je FreeSewing account
+comparePattern: Vergelijk patroon
+comparePattern-txt: Vergelijk je patroon met een aantal standaardmaten om mogelijke pasproblemen te vinden
+recreatePattern: Maak patroon opnieuw
+recreatePattern-txt: Kies een ander persoon en maak dit patroon opnieuw voor deze persoon
