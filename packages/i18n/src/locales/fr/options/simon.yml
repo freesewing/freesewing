@@ -1,7 +1,7 @@
 ---
 backDarts:
-  tile: Back darts
-  description: Whether or not to include back darts
+  tile: Pinces du dos
+  description: Inclure ou non des pinces au dos
   options:
     auto: Automatic
     always: Always
