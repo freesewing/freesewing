@@ -6,6 +6,11 @@
 **Note:** Version bump only for package florent
 
 
+## 2.4.2 (2020-03-08)
+
+**Note:** Version bump only for package florent
+
+
 ## 2.4.1 (2020-03-04)
 
 **Note:** Version bump only for package florent

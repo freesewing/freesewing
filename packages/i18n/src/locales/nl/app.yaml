@@ -71,7 +71,6 @@ dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmat
 emailAddress: Email adres
 emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
-exportDraft: Patroontekening exporteren
 export: Exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
 faq: Vaak gestelde vragen
@@ -246,7 +245,6 @@ showDetails: Toon details
 clickBelowToLogOut: Klik hieronder om uit te loggen
 compare: Vergelijk
 savePattern: Bewaar patroon
-exportPattern: Patroon exporteren
 recreate: Opnieuw aanmaken
 recreateThing: Maak {thing} opnieuw
 recreateThingForPerson: Maak {thing} opnieuw voor {person}
@@ -289,8 +287,24 @@ sizes: Maten
 accountRequired: Deze functie vereist een FreeSewing account
 size: Maat
 switchToThing: 'Schakel over naar {thing}'
+saveThing: 'Bewaar {thing}'
 shareThing: 'Deel {thing}'
 link: Link
 cloneThing: 'Kopieer {thing}'
 cloneDescription: Maak een exacte kopie die de maten van het originele patroon gebruikt.
 furtherReading: Further reading
+saveAsNewPattern: Bewaar Als Nieuw Patroon
+saveAsNewPattern-txt: Sla (een kopie van) dit patroon op in je FreeSewing account
+exportPattern: Patroon exporteren
+printPattern: Print patroon
+exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
+editThing: 'Bewerk {thing}'
+editPattern-txt: Laad dit patroon in de patroonbewerker
+featureRequiresAccount: Deze functie vereist een FreeSewing account
+zoom: Zoom
+zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
+savePattern-txt: Bewaar dit patroon in je FreeSewing account
+comparePattern: Vergelijk patroon
+comparePattern-txt: Vergelijk je patroon met een aantal standaardmaten om mogelijke pasproblemen te vinden
+recreatePattern: Maak patroon opnieuw
+recreatePattern-txt: Kies een ander persoon en maak dit patroon opnieuw voor deze persoon

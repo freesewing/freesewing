@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import IconButton from '@material-ui/core/IconButton'
 import RightIcon from '@material-ui/icons/KeyboardArrowRight'
 import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
-import HelpIcon from '@material-ui/icons/Help'
 import { injectIntl } from 'react-intl'
 
 const OptionPreamble = props => {
@@ -88,17 +87,6 @@ const OptionPreamble = props => {
             >
               <ResetIcon />
             </IconButton>
-            {props.noDocs ? null : (
-              <IconButton
-                title={docsLabel}
-                aria-label={docsLabel}
-                color="primary"
-                onClick={props.showHelp}
-                className="mini-icon-btn"
-              >
-                <HelpIcon />
-              </IconButton>
-            )}
           </div>
         </div>
         {props.option}

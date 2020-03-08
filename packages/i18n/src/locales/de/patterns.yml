@@ -29,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
+fu:
+  description: 'Fu is a face mask'
+  title: Fu face mask
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat

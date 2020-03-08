@@ -7,6 +7,17 @@ Unreleased:
   Removed:
   Security:
 
+2.4.2:
+  date: 2020-03-08
+  Added:
+    i18n:
+      - Added more strings
+  Changed:
+    components:
+      - Don't load docs in DraftConfigurator
+    plugin-title:
+      - Added *for* to title output
+
 2.4.1:
   date: 2020-03-04
   Fixed:

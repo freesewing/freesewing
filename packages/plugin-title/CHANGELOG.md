@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-title
 
 
+## 2.4.2 (2020-03-08)
+
+### Changed
+
+ - Added *for* to title output
 ## 2.4.1 (2020-03-04)
 
 **Note:** Version bump only for package plugin-title

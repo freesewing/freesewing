@@ -10,7 +10,14 @@ const App = props => {
   let instance = new Pattern()
   let config = instance.config
 
-  return <Workbench freesewing={freesewing} Pattern={Pattern} config={config} userLanguage="en" />
+  return (
+    <Workbench
+      freesewing={freesewing}
+      Pattern={Pattern}
+      config={config}
+      userLanguage="en"
+    />
+  )
 }
 
 export default App

@@ -5,6 +5,27 @@
 ## Unreleased
 
 
+## 2.4.2 (2020-03-08)
+
+### components
+
+#### Changed
+
+ - Don't load docs in DraftConfigurator
+
+### i18n
+
+#### Added
+
+ - Added more strings
+
+### plugin-title
+
+#### Changed
+
+ - Added *for* to title output
+
+
 ## 2.4.1 (2020-03-04)
 
 ### components

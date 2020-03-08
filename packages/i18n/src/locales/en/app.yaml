@@ -283,6 +283,7 @@ fitYouDeserve: You're really missing out if you go for standardized sizes.<br />
 supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
 madeToMeasure: Made-to-measure
 sizes: Sizes
+standardSizes: Standard sizes
 accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
@@ -292,12 +293,25 @@ link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
 furtherReading: Further reading
-
 saveAsNewPattern: Save As New Pattern
-saveAsNewPattern-txt: Copy this pattern and store it in your FreeSewing account
+saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
 exportPattern: Export pattern
 printPattern: Print pattern
 exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
 editThing: 'Edit {thing}'
 editPattern-txt: Load this pattern in the pattern editor
 featureRequiresAccount: This feature requires a FreeSewing account
+zoom: Zoom
+zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
+savePattern-txt: Store this pattern in your FreeSewing account
+comparePattern: Compare pattern
+comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
+recreatePattern: Recreate pattern
+recreatePattern-txt: Choose a different person, then recreate this pattern for that person
+editOwnPatternsOnly: You can only edit your own patterns
+editOwnPatternsOnly-txt: You cannot edit this pattern because it isn't yours. But you can use it as a baseline to create your own pattern.
+updateNotes-txt: Update the notes you keep along your pattern
+franceWarning: Beware users in France
+franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
+emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
+
