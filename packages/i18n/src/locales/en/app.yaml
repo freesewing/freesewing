@@ -293,7 +293,6 @@ link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
 furtherReading: Further reading
-
 saveAsNewPattern: Save As New Pattern
 saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
 exportPattern: Export pattern
@@ -312,3 +311,7 @@ recreatePattern-txt: Choose a different person, then recreate this pattern for t
 editOwnPatternsOnly: You can only edit your own patterns
 editOwnPatternsOnly-txt: You cannot edit this pattern because it isn't yours. But you can use it as a baseline to create your own pattern.
 updateNotes-txt: Update the notes you keep along your pattern
+franceWarning: Beware users in France
+franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
+emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
+
