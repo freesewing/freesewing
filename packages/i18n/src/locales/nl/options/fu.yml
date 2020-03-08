@@ -1,0 +1,13 @@
+---
+height:
+  title: Height
+  description: Controls the height of the face mask
+length:
+  title: Lenght
+  description: Controls the length of the face mask
+curve:
+  title: Curve
+  description: Controls the curvature of the upper edge of the face mask
+shaping:
+  title: Shaping
+  description: Controls the amount of shaping in the face mask
