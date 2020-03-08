@@ -3,23 +3,23 @@ backDarts:
   tile: Pinces du dos
   description: Inclure ou non des pinces au dos
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Automatique
+    always: Toujours
+    never: Jamais
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Elaboration de la pince dos
+  description: L'ajustement résultant des pinces du dos
 barrelCuffNarrowButton:
   title: Bouton de manche étroit
   description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Pli creux
+  description: Inclure ou non un pli creux au dos
 boxPleatWidth:
-  title: Box pleat width
-  description: The total widh of the box pleat
+  title: Largeur du pli creux
+  description: Largeur totale du pli creux
 boxPleatFold:
-  title: Box pleat fold
+  title: Réalisation du pli creux
   description: The amount by with the box pleat folds inwards
 buttonPlacketStyle:
   title: Style de patte de boutonnage
