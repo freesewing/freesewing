@@ -287,18 +287,18 @@ sizes: Maten
 accountRequired: Deze functie vereist een FreeSewing account
 size: Maat
 switchToThing: 'Schakel over naar {thing}'
-saveThing: 'Save {thing}'
+saveThing: 'Bewaar {thing}'
 shareThing: 'Deel {thing}'
 link: Link
 cloneThing: 'Kopieer {thing}'
 cloneDescription: Maak een exacte kopie die de maten van het originele patroon gebruikt.
 furtherReading: Further reading
-saveAsNewPattern: Save As New Pattern
-saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
+saveAsNewPattern: Bewaar Als Nieuw Patroon
+saveAsNewPattern-txt: Sla (een kopie van) dit patroon op in je FreeSewing account
 exportPattern: Patroon exporteren
-printPattern: Print pattern
-exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
-editThing: 'Edit {thing}'
+printPattern: Print patroon
+exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
+editThing: 'Bewerk {thing}'
 editPattern-txt: Load this pattern in the pattern editor
 featureRequiresAccount: This feature requires a FreeSewing account
 zoom: Zoom
