@@ -1,13 +1,13 @@
 ---
 height:
-  title: Height
-  description: Controls the height of the face mask
+  title: Hoogte
+  description: Bepaalt de hoogte van het mondmasker
 length:
-  title: Lenght
-  description: Controls the length of the face mask
+  title: Lengte
+  description: Bepaalt de lengte van het mondmasker
 curve:
-  title: Curve
-  description: Controls the curvature of the upper edge of the face mask
+  title: Boog
+  description: Bepaalt de curve van de bovenrand van het mondmasker
 shaping:
-  title: Shaping
-  description: Controls the amount of shaping in the face mask
+  title: Vorming
+  description: Bepaalt in hoeverre het mondmasker voorgevormd is
