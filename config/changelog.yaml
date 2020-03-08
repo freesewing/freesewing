@@ -2,6 +2,8 @@ Unreleased:
   date:
   Added:
   Changed:
+    plugin-title:
+      Added *for* to title output
   Deprecated:
   Fixed:
   Removed:

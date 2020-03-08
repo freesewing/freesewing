@@ -49,6 +49,14 @@ export default {
         .attr('data-text', 'v' + this.context.config.version)
         .attr('data-text-class', 'title-pattern fill-note')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+      if (this.context.settings.metadata && this.context.settings.metadata.for) {
+        shift += 8
+        this.points[`_${prefix}_titleFor`] = so.at
+          .shift(-90 - so.rotation, shift * so.scale)
+          .attr('data-text', '( ' + this.context.settings.metadata.for + ' )')
+          .attr('data-text-class', 'title-pattern')
+          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+      }
     }
   }
 }
