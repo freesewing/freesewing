@@ -29,6 +29,9 @@ cathrin:
 florent:
   description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
   title: Florent flat cap
+fu:
+  description: 'Fu is a face mask'
+  title: Fu face mask
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat
