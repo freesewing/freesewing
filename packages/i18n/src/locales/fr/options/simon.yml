@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Pinces du dos
+  tile: Pinces dos
   description: Inclure ou non des pinces au dos
   options:
     auto: Automatique
@@ -16,11 +16,11 @@ boxPleat:
   title: Pli plat
   description: Inclure ou non un pli plat au dos
 boxPleatWidth:
-  title: Largeur du pli creux
-  description: Largeur totale du pli creux
+  title: Largeur du pli plat
+  description: Largeur totale du pli plat
 boxPleatFold:
-  title: Réalisation du pli creux
-  description: The amount by with the box pleat folds inwards
+  title: Réalisation du pli plat
+  description: La largeur du pli plat repliée à l'intérieur
 buttonPlacketStyle:
   title: Style de patte de boutonnage
   description: Style de la patte de boutonnage
@@ -32,7 +32,7 @@ buttonPlacketWidth:
   description: Largeur de la patte de boutonnage.
 buttonFreeLength:
   title: Longueur sans bouton
-  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+  description: Quelle distance laisser sans bouton à partir du bas devant de la chemise .
 buttonholePlacketFoldWidth:
   title: Largeur de pli de boutonnière
   description: Largeur du pli de la boutonnière.
