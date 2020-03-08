@@ -284,6 +284,7 @@ fitYouDeserve: You're really missing out if you go for standardized sizes.<br />
 supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
 madeToMeasure: Made-to-measure
 sizes: Sizes
+standardSizes: Standard sizes
 accountRequired: This feature requires a FreeSewing account
 size: Size
 switchToThing: 'Switch to {thing}'
@@ -308,3 +309,10 @@ comparePattern: Compare pattern
 comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
 recreatePattern: Recreate pattern
 recreatePattern-txt: Choose a different person, then recreate this pattern for that person
+editOwnPatternsOnly: You can only edit your own patterns
+editOwnPatternsOnly-txt: You cannot edit this pattern because it isn't yours. But you can use it as a baseline to create your own pattern.
+updateNotes-txt: Update the notes you keep along your pattern
+franceWarning: Beware users in France
+franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
+emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
+
