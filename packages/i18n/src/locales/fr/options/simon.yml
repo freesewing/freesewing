@@ -13,8 +13,8 @@ barrelCuffNarrowButton:
   title: Bouton de manche étroit
   description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
 boxPleat:
-  title: Pli creux
-  description: Inclure ou non un pli creux au dos
+  title: Pli plat
+  description: Inclure ou non un pli plat au dos
 boxPleatWidth:
   title: Largeur du pli creux
   description: Largeur totale du pli creux
