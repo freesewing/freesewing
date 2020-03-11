@@ -1647,16 +1647,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@emotion/cache@^10.0.17", "@emotion/cache@^10.0.9":
-  version "10.0.19"
-  resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.19.tgz#d258d94d9c707dcadaf1558def968b86bb87ad71"
-  integrity sha512-BoiLlk4vEsGBg2dAqGSJu0vJl/PgVtCYLBFJaEO8RmQzPugXewQCXZJNXTDFaRlfCs0W+quesayav4fvaif5WQ==
-  dependencies:
-    "@emotion/sheet" "0.9.3"
-    "@emotion/stylis" "0.8.4"
-    "@emotion/utils" "0.11.2"
-    "@emotion/weak-memoize" "0.2.4"
-
 "@emotion/cache@^10.0.27":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.27.tgz#7895db204e2c1a991ae33d51262a3a44f6737303"
@@ -1667,19 +1657,17 @@
     "@emotion/utils" "0.11.3"
     "@emotion/weak-memoize" "0.2.5"
 
-"@emotion/core@^10.0.14", "@emotion/core@^10.0.4", "@emotion/core@^10.0.9":
-  version "10.0.22"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.22.tgz#2ac7bcf9b99a1979ab5b0a876fbf37ab0688b177"
-  integrity sha512-7eoP6KQVUyOjAkE6y4fdlxbZRA4ILs7dqkkm6oZUJmihtHv0UBq98VgPirq9T8F9K2gKu0J/au/TpKryKMinaA==
+"@emotion/cache@^10.0.9":
+  version "10.0.19"
+  resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.19.tgz#d258d94d9c707dcadaf1558def968b86bb87ad71"
+  integrity sha512-BoiLlk4vEsGBg2dAqGSJu0vJl/PgVtCYLBFJaEO8RmQzPugXewQCXZJNXTDFaRlfCs0W+quesayav4fvaif5WQ==
   dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@emotion/cache" "^10.0.17"
-    "@emotion/css" "^10.0.22"
-    "@emotion/serialize" "^0.11.12"
     "@emotion/sheet" "0.9.3"
+    "@emotion/stylis" "0.8.4"
     "@emotion/utils" "0.11.2"
+    "@emotion/weak-memoize" "0.2.4"
 
-"@emotion/core@^10.0.20":
+"@emotion/core@^10.0.14", "@emotion/core@^10.0.20", "@emotion/core@^10.0.4", "@emotion/core@^10.0.9":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.27.tgz#7c3f78be681ab2273f3bf11ca3e2edc4a9dd1fdc"
   integrity sha512-XbD5R36pVbohQMnKfajHv43g8EbN4NHdF6Zh9zg/C0nr0jqwOw3gYnC07Xj3yG43OYSRyrGsoQ5qPwc8ycvLZw==
@@ -1691,15 +1679,6 @@
     "@emotion/sheet" "0.9.4"
     "@emotion/utils" "0.11.3"
 
-"@emotion/css@^10.0.22", "@emotion/css@^10.0.9":
-  version "10.0.22"
-  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.22.tgz#37b1abb6826759fe8ac0af0ac0034d27de6d1793"
-  integrity sha512-8phfa5mC/OadBTmGpMpwykIVH0gFCbUoO684LUkyixPq4F1Wwri7fK5Xlm8lURNBrd2TuvTbPUGxFsGxF9UacA==
-  dependencies:
-    "@emotion/serialize" "^0.11.12"
-    "@emotion/utils" "0.11.2"
-    babel-plugin-emotion "^10.0.22"
-
 "@emotion/css@^10.0.27":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.27.tgz#3a7458198fbbebb53b01b2b87f64e5e21241e14c"
@@ -1708,6 +1687,15 @@
     "@emotion/serialize" "^0.11.15"
     "@emotion/utils" "0.11.3"
     babel-plugin-emotion "^10.0.27"
+
+"@emotion/css@^10.0.9":
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.22.tgz#37b1abb6826759fe8ac0af0ac0034d27de6d1793"
+  integrity sha512-8phfa5mC/OadBTmGpMpwykIVH0gFCbUoO684LUkyixPq4F1Wwri7fK5Xlm8lURNBrd2TuvTbPUGxFsGxF9UacA==
+  dependencies:
+    "@emotion/serialize" "^0.11.12"
+    "@emotion/utils" "0.11.2"
+    babel-plugin-emotion "^10.0.22"
 
 "@emotion/hash@0.7.3", "@emotion/hash@^0.7.1":
   version "0.7.3"
@@ -1718,13 +1706,6 @@
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.4.tgz#f14932887422c9056b15a8d222a9074a7dfa2831"
   integrity sha512-fxfMSBMX3tlIbKUdtGKxqB1fyrH6gVrX39Gsv3y8lRYKUqlgDt3UMqQyGnR1bQMa2B8aGnhLZokZgg8vT0Le+A==
-
-"@emotion/is-prop-valid@0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.5.tgz#2dda0791f0eafa12b7a0a5b39858405cc7bde983"
-  integrity sha512-6ZODuZSFofbxSbcxwsFz+6ioPjb0ISJRRPLZ+WIbjcU2IMU0Io+RGQjjaTgOvNQl007KICBm7zXQaYQEC1r6Bg==
-  dependencies:
-    "@emotion/memoize" "0.7.3"
 
 "@emotion/is-prop-valid@0.8.6":
   version "0.8.6"
@@ -1775,16 +1756,6 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-0.9.4.tgz#894374bea39ec30f489bbfc3438192b9774d32e5"
   integrity sha512-zM9PFmgVSqBw4zL101Q0HrBVTGmpAxFZH/pYx/cjJT5advXguvcgjHFTCaIO3enL/xr89vK2bh0Mfyj9aa0ANA==
 
-"@emotion/styled-base@^10.0.23":
-  version "10.0.24"
-  resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.24.tgz#9497efd8902dfeddee89d24b0eeb26b0665bfe8b"
-  integrity sha512-AnBImerf0h4dGAJVo0p0VE8KoAns71F28ErGFK474zbNAHX6yqSWQUasb+1jvg/VPwZjCp19+tAr6oOB0pwmLQ==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@emotion/is-prop-valid" "0.8.5"
-    "@emotion/serialize" "^0.11.14"
-    "@emotion/utils" "0.11.2"
-
 "@emotion/styled-base@^10.0.27":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.27.tgz#d9efa307ae4e938fcc4d0596b40b7e8bc10f7c7c"
@@ -1795,15 +1766,7 @@
     "@emotion/serialize" "^0.11.15"
     "@emotion/utils" "0.11.3"
 
-"@emotion/styled@^10.0.14", "@emotion/styled@^10.0.4":
-  version "10.0.23"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.23.tgz#2f8279bd59b99d82deade76d1046249ddfab7c1b"
-  integrity sha512-gNr04eqBQ2iYUx8wFLZDfm3N8/QUOODu/ReDXa693uyQGy2OqA+IhPJk+kA7id8aOfwAsMuvZ0pJImEXXKtaVQ==
-  dependencies:
-    "@emotion/styled-base" "^10.0.23"
-    babel-plugin-emotion "^10.0.23"
-
-"@emotion/styled@^10.0.17":
+"@emotion/styled@^10.0.14", "@emotion/styled@^10.0.17", "@emotion/styled@^10.0.4":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.27.tgz#12cb67e91f7ad7431e1875b1d83a94b814133eaf"
   integrity sha512-iK/8Sh7+NLJzyp9a5+vIQIXTYxfT4yB/OJbjzQanB2RZpvmzBQOHZWhpAMZWYEKRNNbsD6WfBw5sVWkb6WzS/Q==
@@ -1926,148 +1889,148 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/components@file:packages/components":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/core@file:packages/core":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
     bezier-js "^2.4.6"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/models@file:packages/models":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.4.1"
-    "@freesewing/plugin-dimension" "^2.4.1"
-    "@freesewing/plugin-grainline" "^2.4.1"
-    "@freesewing/plugin-logo" "^2.4.1"
-    "@freesewing/plugin-round" "^2.4.1"
-    "@freesewing/plugin-scalebox" "^2.4.1"
-    "@freesewing/plugin-sprinkle" "^2.4.1"
-    "@freesewing/plugin-title" "^2.4.1"
+    "@freesewing/plugin-cutonfold" "^2.4.2"
+    "@freesewing/plugin-dimension" "^2.4.2"
+    "@freesewing/plugin-grainline" "^2.4.2"
+    "@freesewing/plugin-logo" "^2.4.2"
+    "@freesewing/plugin-round" "^2.4.2"
+    "@freesewing/plugin-scalebox" "^2.4.2"
+    "@freesewing/plugin-sprinkle" "^2.4.2"
+    "@freesewing/plugin-title" "^2.4.2"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.4.1"
+  version "2.4.2"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -5344,7 +5307,7 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.22, babel-plugin-emotion@^10.0.23:
+babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.22:
   version "10.0.23"
   resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.23.tgz#040d40bf61dcab6d31dd6043d10e180240b8515b"
   integrity sha512-1JiCyXU0t5S2xCbItejCduLGGcKmF3POT0Ujbexog2MI4IlRcIn/kWjkYwCUZlxpON0O5FC635yPl/3slr7cKQ==
@@ -7411,10 +7374,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
-    "@freesewing/i18n" "^2.4.1"
-    "@freesewing/pattern-info" "^2.4.1"
+    "@freesewing/i18n" "^2.4.2"
+    "@freesewing/pattern-info" "^2.4.2"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -19780,9 +19743,9 @@ store2@^2.7.1:
   integrity sha512-tWEpK0snS2RPUq1i3R6OahfJNjWCQYNxq0+by1amCSuw0mXtymJpzmZIeYpA1UAa+7B0grCpNYIbDcd7AgTbFg==
 
 storybook-addon-material-ui@^0.9.0-alpha.18:
-  version "0.9.0-alpha.20"
-  resolved "https://registry.yarnpkg.com/storybook-addon-material-ui/-/storybook-addon-material-ui-0.9.0-alpha.20.tgz#fef5b2c3062bc2036321c4254814f8d84d49796e"
-  integrity sha512-1pUKZ5Y6Xrz73V2KmjsnayfHDdjrUJLpljQnd7B843lwSluBKatdTkjn9aBooPXC91+TViK+WGmAGlNEKoxDcQ==
+  version "0.9.0-alpha.21"
+  resolved "https://registry.yarnpkg.com/storybook-addon-material-ui/-/storybook-addon-material-ui-0.9.0-alpha.21.tgz#31c8805756456fd536dad4d08f013697068646a7"
+  integrity sha512-IsD6lvtlFr8mLJUIvyusrJsaMa6C/30bjCDafqO8gzh3qiJ+3vFBkYwtPuWFnEADgfuoWwQpeGFfWDOV6ZS5fw==
   dependencies:
     "@emotion/core" "^10.0.4"
     "@emotion/styled" "^10.0.4"
