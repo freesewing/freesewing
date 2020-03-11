@@ -55,7 +55,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
-    "@commitlint/cli": "8.2.0",
+    "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^4.2.0",
