@@ -520,16 +520,17 @@
     js-tokens "^4.0.0"
 
 "@babel/node@^7.5.0":
-  version "7.7.4"
-  resolved "https://registry.yarnpkg.com/@babel/node/-/node-7.7.4.tgz#de1cc9c67b335a19e4f71208554779bc63719f5a"
-  integrity sha512-Vhhq2kK+BpsR2tW35zP8yOJZ7ONMVBwCD9fmNeRTU3MNNpcJDrrtVP5NK8ZX4nQAs0GSq6ky8noyn6MCVgL08g==
+  version "7.8.7"
+  resolved "https://registry.yarnpkg.com/@babel/node/-/node-7.8.7.tgz#4213ea99f0c86cc1cf460e61131e7acbb723e13a"
+  integrity sha512-o8cBT3cfRPLwoPh7VBYonSeZypIawGUeVfOIt1xSDgcDdirRGDPZ7/x+FLhhgQmKp3PKbz5Juh9/BNP4Jzrr9Q==
   dependencies:
-    "@babel/register" "^7.7.4"
-    commander "^2.8.1"
+    "@babel/register" "^7.8.3"
+    commander "^4.0.1"
     core-js "^3.2.1"
     lodash "^4.17.13"
     node-environment-flags "^1.0.5"
-    regenerator-runtime "^0.13.3"
+    regenerator-runtime "^0.13.4"
+    resolve "^1.13.1"
     v8flags "^3.1.1"
 
 "@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.7.4":
@@ -1338,10 +1339,10 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-transform-typescript" "^7.8.3"
 
-"@babel/register@^7.4.4", "@babel/register@^7.7.4":
-  version "7.7.4"
-  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.7.4.tgz#45a4956471a9df3b012b747f5781cc084ee8f128"
-  integrity sha512-/fmONZqL6ZMl9KJUYajetCrID6m0xmL4odX7v+Xvoxcv0DdbP/oO0TWIeLUCHqczQ6L6njDMqmqHFy2cp3FFsA==
+"@babel/register@^7.4.4", "@babel/register@^7.8.3":
+  version "7.8.6"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.8.6.tgz#a1066aa6168a73a70c35ef28cc5865ccc087ea69"
+  integrity sha512-7IDO93fuRsbyml7bAafBQb3RcBGlCpU4hh5wADA2LJEEcYk92WkwFZ0pHyIi2fb5Auoz1714abETdZKCOxN0CQ==
   dependencies:
     find-cache-dir "^2.0.0"
     lodash "^4.17.13"
@@ -1926,148 +1927,148 @@
     which "^1.3.1"
 
 "@freesewing/aaron@file:packages/aaron":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/bent@file:packages/bent":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/brian@file:packages/brian":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/bruce@file:packages/bruce":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/carlita@file:packages/carlita":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/carlton@file:packages/carlton":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/cathrin@file:packages/cathrin":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/components@file:packages/components":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/core@file:packages/core":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
     bezier-js "^2.4.6"
     bin-pack "1.0.2"
     hooks "^0.3.2"
 
 "@freesewing/css-theme@file:packages/css-theme":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
     open-color "1.6.3"
 
 "@freesewing/examples@file:packages/examples":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/florent@file:packages/florent":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/huey@file:packages/huey":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/hugo@file:packages/hugo":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/i18n@file:packages/i18n":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/jaeger@file:packages/jaeger":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/models@file:packages/models":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/mui-theme@file:packages/mui-theme":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-banner@file:packages/plugin-banner":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-bundle@file:packages/plugin-bundle":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
-    "@freesewing/plugin-cutonfold" "^2.4.1"
-    "@freesewing/plugin-dimension" "^2.4.1"
-    "@freesewing/plugin-grainline" "^2.4.1"
-    "@freesewing/plugin-logo" "^2.4.1"
-    "@freesewing/plugin-round" "^2.4.1"
-    "@freesewing/plugin-scalebox" "^2.4.1"
-    "@freesewing/plugin-sprinkle" "^2.4.1"
-    "@freesewing/plugin-title" "^2.4.1"
+    "@freesewing/plugin-cutonfold" "^2.4.2"
+    "@freesewing/plugin-dimension" "^2.4.2"
+    "@freesewing/plugin-grainline" "^2.4.2"
+    "@freesewing/plugin-logo" "^2.4.2"
+    "@freesewing/plugin-round" "^2.4.2"
+    "@freesewing/plugin-scalebox" "^2.4.2"
+    "@freesewing/plugin-sprinkle" "^2.4.2"
+    "@freesewing/plugin-title" "^2.4.2"
 
 "@freesewing/plugin-bust@file:packages/plugin-bust":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-buttons@file:packages/plugin-buttons":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-cutonfold@file:packages/plugin-cutonfold":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-debug@file:packages/plugin-debug":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-designer@file:packages/plugin-designer":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-dimension@file:packages/plugin-dimension":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-flip@file:packages/plugin-flip":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-grainline@file:packages/plugin-grainline":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-i18n@file:packages/plugin-i18n":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-logo@file:packages/plugin-logo":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-round@file:packages/plugin-round":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-scalebox@file:packages/plugin-scalebox":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-sprinkle@file:packages/plugin-sprinkle":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-svgattr@file:packages/plugin-svgattr":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-theme@file:packages/plugin-theme":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-title@file:packages/plugin-title":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/plugin-validate@file:packages/plugin-validate":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/shin@file:packages/shin":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/simon@file:packages/simon":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/sven@file:packages/sven":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/tamiko@file:packages/tamiko":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/trayvon@file:packages/trayvon":
-  version "2.4.1"
+  version "2.4.2"
 
 "@freesewing/wahid@file:packages/wahid":
-  version "2.4.1"
+  version "2.4.2"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -6912,7 +6913,7 @@ commander@3.0.2:
   resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
   integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
-commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@^2.8.1, commander@~2.20.3:
+commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -7319,12 +7320,7 @@ core-js@^2.0.0, core-js@^2.4.0, core-js@^2.5.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-js@^3.0.1, core-js@^3.0.4, core-js@^3.2.1:
-  version "3.4.8"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
-  integrity sha512-b+BBmCZmVgho8KnBUOXpvlqEMguko+0P+kXCwD4vIprsXC6ht1qgPxtb1OK6XgSlrySF71wkwBQ0Hv695bk9gQ==
-
-core-js@^3.5.0:
+core-js@^3.0.1, core-js@^3.0.4, core-js@^3.2.1, core-js@^3.5.0:
   version "3.6.4"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.4.tgz#440a83536b458114b9cb2ac1580ba377dc470647"
   integrity sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw==
@@ -7411,10 +7407,10 @@ create-error-class@^3.0.0:
     capture-stack-trace "^1.0.0"
 
 "create-freesewing-pattern@file:packages/create-freesewing-pattern":
-  version "2.4.1"
+  version "2.4.2"
   dependencies:
-    "@freesewing/i18n" "^2.4.1"
-    "@freesewing/pattern-info" "^2.4.1"
+    "@freesewing/i18n" "^2.4.2"
+    "@freesewing/pattern-info" "^2.4.2"
     chalk "^2.4.2"
     commander "^2.19.0"
     conf "^2.2.0"
@@ -18262,12 +18258,7 @@ regenerator-runtime@^0.12.1:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
 
-regenerator-runtime@^0.13.2, regenerator-runtime@^0.13.3:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
-  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
-
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.2, regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4:
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.4.tgz#e96bf612a3362d12bb69f7e8f74ffeab25c7ac91"
   integrity sha512-plpwicqEzfEyTQohIKktWigcLzmNStMGwbOUbykx51/29Z3JOGYldaaNGK7ngNXV+UcoqvIMmloZ48Sr74sd+g==
@@ -18615,7 +18606,7 @@ resolve@1.15.0:
   dependencies:
     path-parse "^1.0.6"
 
-resolve@^1.1.6, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.11.1, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1:
+resolve@^1.1.6, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.11.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
   integrity sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
