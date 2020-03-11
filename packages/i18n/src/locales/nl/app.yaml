@@ -284,6 +284,7 @@ fitYouDeserve: Je mist heel wat als je voor standaard maten gaat. <br /> Dus sch
 supportNag: <b>Free</b>Sewing is <b>gratis</b>, maar we zouden het appreciëren mocht je overwegen <a href='/patrons/join/'>ons te steunen</a>.
 madeToMeasure: Op maat gemaakt
 sizes: Maten
+standardSizes: Standaardmaten
 accountRequired: Deze functie vereist een FreeSewing account
 size: Maat
 switchToThing: 'Schakel over naar {thing}'
@@ -308,3 +309,10 @@ comparePattern: Vergelijk patroon
 comparePattern-txt: Vergelijk je patroon met een aantal standaardmaten om mogelijke pasproblemen te vinden
 recreatePattern: Maak patroon opnieuw
 recreatePattern-txt: Kies een ander persoon en maak dit patroon opnieuw voor deze persoon
+editOwnPatternsOnly: Je kan alleen je eigen patronen bewerken
+editOwnPatternsOnly-txt: Je kan dit patroon niet bewerken omdat het niet van jou is. Maar je kan het als basis gebruiken om je eigen patroon te maken.
+updateNotes-txt: Hou de notities die je bij je patroon maakt up to date
+franceWarning: Let op, Franse gebruikers
+franceWarning-txt: Verschillende Franse e-mailproviders- onder andere free.fr, laposte.net, orange.fr en sfr.fr- houden onze e-mails regelmatig tegen.
+emailNotReceived: Indien je de activatiemail niet ontvangt, laat ons dan iets weten zodat we je kunnen helpen.
+
