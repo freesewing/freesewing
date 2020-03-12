@@ -6,6 +6,11 @@
 **Note:** Version bump only for package bruce
 
 
+## 2.4.3 (2020-03-12)
+
+**Note:** Version bump only for package bruce
+
+
 ## 2.4.2 (2020-03-08)
 
 **Note:** Version bump only for package bruce

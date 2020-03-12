@@ -6,6 +6,11 @@
 **Note:** Version bump only for package i18n
 
 
+## 2.4.3 (2020-03-12)
+
+### Added
+
+ - Added more translations
 ## 2.4.2 (2020-03-08)
 
 ### Added
