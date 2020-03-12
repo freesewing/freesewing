@@ -5,6 +5,15 @@
 ## Unreleased
 
 
+## 2.4.3 (2020-03-12)
+
+### i18n
+
+#### Added
+
+ - Added more translations
+
+
 ## 2.4.2 (2020-03-08)
 
 ### components
