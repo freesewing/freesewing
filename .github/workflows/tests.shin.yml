@@ -9,9 +9,6 @@ on:
   pull_request:
     paths: *files
 
-env:
-  CI: true
-
 jobs:
   test:
 
@@ -22,12 +19,18 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-      name: Use Node.js $
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Setup Node.js $
       uses: actions/setup-node@v1
       with:
         node-version: $
-      run: npm ci
+    - name: Install dependencies
+      env:
+        CI: true
+      run: cd packages/shin
+    - name: Build pattern
       run: npm run build --if-present
+    - name: Run pattern unit tests
       run: npm testonly
 
