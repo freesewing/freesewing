@@ -5,9 +5,12 @@ on:
     paths: &files
       - 'packages/sandy/src/**.js'
       - 'packages/sandy/config/**.js'
-      - 'packages/sandy/rollup.config.js
+      - 'packages/sandy/rollup.config.js'
   pull_request:
     paths: *files
+
+env:
+  CI: true
 
 jobs:
   test:
@@ -20,12 +23,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js $
+      name: Use Node.js $
       uses: actions/setup-node@v1
       with:
         node-version: $
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm testonly
-      env:
-        CI: true
+      run: npm ci
+      run: npm run build --if-present
+      run: npm testonly
+
