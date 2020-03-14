@@ -19,16 +19,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Change directory
-        run: cd packages/bent
-      - name: Install dependencies
+        run: cd packages/bent && npm install
         env:
           CI: true
-        run: npm install
       - name: Build pattern
-        run: npm run build --if-present
-      - name: Where are we?
-        run: pwd
+        run: cd packages/bent && npm run build
       - name: Show package.json
-        run: cat package.json
+        run: cd packages/bent && cat package.json
       - name: Run pattern unit tests
-        run: npm run testonly
+        run: cd packages/bent && npm run testonly

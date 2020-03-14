@@ -19,16 +19,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Change directory
-        run: cd packages/holmes
-      - name: Install dependencies
+        run: cd packages/holmes && npm install
         env:
           CI: true
-        run: npm install
       - name: Build pattern
-        run: npm run build --if-present
-      - name: Where are we?
-        run: pwd
+        run: cd packages/holmes && npm run build
       - name: Show package.json
-        run: cat package.json
+        run: cd packages/holmes && cat package.json
       - name: Run pattern unit tests
-        run: npm run testonly
+        run: cd packages/holmes && npm run testonly
