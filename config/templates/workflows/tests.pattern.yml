@@ -1,5 +1,8 @@
 name: Unit tests - {{ Pattern }}
 
+env:
+  CI: true
+
 on:
   push:
     paths:
@@ -32,8 +35,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      env:
-        CI: true
 <%={{ }}=%>
       run: cd packages/{{ pattern }}
     - name: Build pattern

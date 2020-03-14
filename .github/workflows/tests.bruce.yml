@@ -1,5 +1,8 @@
 name: Unit tests - Bruce
 
+env:
+  CI: true
+
 on:
   push:
     paths:
@@ -31,8 +34,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      env:
-        CI: true
       run: cd packages/bruce
     - name: Build pattern
       run: npm run build --if-present
