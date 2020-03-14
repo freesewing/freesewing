@@ -22,12 +22,8 @@ jobs:
         run: cd packages/wahid && npm install
         env:
           CI: true
-      - name: Install peer dependencies
-        run: cd packages/wahid && npm install -g install-peerdeps && install-peerdeps
-        env:
-          CI: true
-      - name: Install test dependencies
-        run: cd packages/wahid && npm install @freesewing/models @freesewing/pattern-info
+      - name: Install peer & dependencies
+        run: cd packages/wahid && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/brian @freesewing/plugin-buttons @freesewing/plugin-round @freesewing/models @freesewing/pattern-info
         env:
           CI: true
       - name: Build pattern

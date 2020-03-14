@@ -22,12 +22,8 @@ jobs:
         run: cd packages/brian && npm install
         env:
           CI: true
-      - name: Install peer dependencies
-        run: cd packages/brian && npm install -g install-peerdeps && install-peerdeps
-        env:
-          CI: true
-      - name: Install test dependencies
-        run: cd packages/brian && npm install @freesewing/models @freesewing/pattern-info
+      - name: Install peer & dependencies
+        run: cd packages/brian && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/models @freesewing/pattern-info
         env:
           CI: true
       - name: Build pattern

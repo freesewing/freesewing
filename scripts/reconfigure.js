@@ -478,8 +478,10 @@ function configurePatternUnitTests(pkg, config) {
   // Write templates
   let replace = {
     pattern: pkg,
-    Pattern: capitalize(pkg)
+    Pattern: capitalize(pkg),
+    peerdeps: Object.keys(peerDependencies(pkg, config, 'pattern')).join(' ')
   };
+
   for (let file of ["config.test.js"]) {
     fs.writeFileSync(
       path.join(dest, file),
