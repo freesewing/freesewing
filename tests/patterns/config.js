@@ -4,11 +4,12 @@
  *
  * @param string me: Name of the pattern (eg 'aaron')
  * @param object Pattern: Instantiated pattern object
+ *
+ * @param object expect: Imported chai.expect
+ * @param object models: Imported @freesewing/models
+ * @param object patterns: Imported @freesewing/pattern-info
  */
-const testPatternConfig = (design, pattern) => {
-  const expect = require("chai").expect;
-  const models = require("@freesewing/models")
-  const patterns = require("@freesewing/pattern-info")
+const testPatternConfig = (design, pattern, expect, models, patterns) => {
 
   it('Metadata:' , () => true)
   it(`  - 'name' should match package name`, () => {
