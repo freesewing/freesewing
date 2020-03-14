@@ -1,21 +1,18 @@
 name: Unit tests - Bruce
 
-env:
-  CI: true
-
 on:
   push:
     paths:
-    - 'packages/bruce/src/**.js'
-    - 'packages/bruce/config/**.js'
-    - 'packages/bruce/tests/**.js'
-    - 'packages/bruce/rollup.config.js'
+      - 'packages/bruce/src/**.js'
+      - 'packages/bruce/config/**.js'
+      - 'packages/bruce/tests/**.js'
+      - 'packages/bruce/rollup.config.js'
   pull_request:
     paths:
-    - 'packages/bruce/src/**.js'
-    - 'packages/bruce/config/**.js'
-    - 'packages/bruce/tests/**.js'
-    - 'packages/bruce/rollup.config.js'
+      - 'packages/bruce/src/**.js'
+      - 'packages/bruce/config/**.js'
+      - 'packages/bruce/tests/**.js'
+      - 'packages/bruce/rollup.config.js'
 
 jobs:
   test:
@@ -27,16 +24,20 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: cd packages/bruce
-    - name: Build pattern
-      run: npm run build --if-present
-    - name: Run pattern unit tests
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Change directory
+        run: cd packages/bruce
+      - name: Install dependencies
+        env:
+          CI: true
+        run: npm ci
+      - name: Build pattern
+        run: npm run build --if-present
+      - name: Run pattern unit tests
       run: npm testonly
 

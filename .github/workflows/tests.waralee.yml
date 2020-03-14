@@ -1,21 +1,18 @@
 name: Unit tests - Waralee
 
-env:
-  CI: true
-
 on:
   push:
     paths:
-    - 'packages/waralee/src/**.js'
-    - 'packages/waralee/config/**.js'
-    - 'packages/waralee/tests/**.js'
-    - 'packages/waralee/rollup.config.js'
+      - 'packages/waralee/src/**.js'
+      - 'packages/waralee/config/**.js'
+      - 'packages/waralee/tests/**.js'
+      - 'packages/waralee/rollup.config.js'
   pull_request:
     paths:
-    - 'packages/waralee/src/**.js'
-    - 'packages/waralee/config/**.js'
-    - 'packages/waralee/tests/**.js'
-    - 'packages/waralee/rollup.config.js'
+      - 'packages/waralee/src/**.js'
+      - 'packages/waralee/config/**.js'
+      - 'packages/waralee/tests/**.js'
+      - 'packages/waralee/rollup.config.js'
 
 jobs:
   test:
@@ -27,16 +24,20 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: cd packages/waralee
-    - name: Build pattern
-      run: npm run build --if-present
-    - name: Run pattern unit tests
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Change directory
+        run: cd packages/waralee
+      - name: Install dependencies
+        env:
+          CI: true
+        run: npm ci
+      - name: Build pattern
+        run: npm run build --if-present
+      - name: Run pattern unit tests
       run: npm testonly
 

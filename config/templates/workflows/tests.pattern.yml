@@ -1,21 +1,18 @@
 name: Unit tests - {{ Pattern }}
 
-env:
-  CI: true
-
 on:
   push:
     paths:
-    - 'packages/{{ pattern }}/src/**.js'
-    - 'packages/{{ pattern }}/config/**.js'
-    - 'packages/{{ pattern }}/tests/**.js'
-    - 'packages/{{ pattern }}/rollup.config.js'
+      - 'packages/{{ pattern }}/src/**.js'
+      - 'packages/{{ pattern }}/config/**.js'
+      - 'packages/{{ pattern }}/tests/**.js'
+      - 'packages/{{ pattern }}/rollup.config.js'
   pull_request:
     paths:
-    - 'packages/{{ pattern }}/src/**.js'
-    - 'packages/{{ pattern }}/config/**.js'
-    - 'packages/{{ pattern }}/tests/**.js'
-    - 'packages/{{ pattern }}/rollup.config.js'
+      - 'packages/{{ pattern }}/src/**.js'
+      - 'packages/{{ pattern }}/config/**.js'
+      - 'packages/{{ pattern }}/tests/**.js'
+      - 'packages/{{ pattern }}/rollup.config.js'
 
 jobs:
   test:
@@ -28,17 +25,21 @@ jobs:
 
 {{=<% %>=}}
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 <%={{ }}=%>
-      run: cd packages/{{ pattern }}
-    - name: Build pattern
-      run: npm run build --if-present
-    - name: Run pattern unit tests
+      - name: Change directory
+        run: cd packages/{{ pattern }}
+      - name: Install dependencies
+        env:
+          CI: true
+        run: npm ci
+      - name: Build pattern
+        run: npm run build --if-present
+      - name: Run pattern unit tests
       run: npm testonly
 
