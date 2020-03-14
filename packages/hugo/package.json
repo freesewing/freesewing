@@ -30,7 +30,8 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
-    "netlify": "echo \"Not configured yet\""
+    "netlify": "echo \"Not configured yet\"",
+    "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.4.3",
@@ -43,7 +44,7 @@
     "react-dom": "^16.8",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "babel-eslint": "10.0.1",
-    "eslint": "^6.8.0",
+    "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
     "@freesewing/components": "^2.4.3",
@@ -58,7 +59,7 @@
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
     "react-scripts": "^3.0.0",
-    "webpack": "4.42.0",
+    "webpack": "4.29.6",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^4.0.1",
     "rollup-plugin-babel-minify": "^7.0.0",

@@ -4,6 +4,18 @@
 
 ## Unreleased
 
+### simon
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+### simone
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
 
 ## 2.4.3 (2020-03-12)
 

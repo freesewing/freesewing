@@ -8,6 +8,7 @@ const chalk = require("chalk");
 const handlebars = require("handlebars");
 const Mustache = require("mustache");
 const { version } = require("../lerna.json");
+const capitalize = require("@freesewing/utils/capitalize")
 
 const repoPath = process.cwd();
 const config = {
@@ -461,10 +462,54 @@ function configurePatternExample(pkg, config) {
 }
 
 /**
+ * Adds unit tests for patterns
+ */
+function configurePatternUnitTests(pkg, config) {
+  // Create tests directory
+  let dest = path.join(config.repoPath, "packages", pkg, "tests");
+  fse.ensureDirSync(dest)
+  let source = path.join(
+    config.repoPath,
+    "config",
+    "templates",
+    "tests",
+    "patterns"
+  );
+  // Write templates
+  let replace = {
+    pattern: pkg,
+    Pattern: capitalize(pkg)
+  };
+  for (let file of ["config.test.js"]) {
+    let template = handlebars.compile(
+      fs.readFileSync(path.join(source, file), "utf-8")
+    );
+    fs.writeFileSync(path.join(dest, file), template(replace));
+  }
+  // Add workflow file for Github actions
+  let template = handlebars.compile(
+    fs.readFileSync(path.join(
+      config.repoPath,
+      'config',
+      'templates',
+      'workflows',
+      'tests.pattern.yml'
+    ), "utf-8")
+  );
+  fs.writeFileSync(path.join(
+    config.repoPath,
+    '.github',
+    'workflows',
+    `tests.${pkg}.yml`
+  ), template(replace));
+}
+
+/**
  * Puts a package.json, rollup.config.js, README.md, and CHANGELOG.md
  * into every subdirectory under the packages directory.
  * Also creates an example dir for pattern packages, and writes
  * the global CHANGELOG.md.
+ * New: Adds unit tests for patterns
  */
 function reconfigure(pkgs, config) {
   for (let pkg of pkgs) {
@@ -488,8 +533,10 @@ function reconfigure(pkgs, config) {
       path.join(config.repoPath, "packages", pkg, "CHANGELOG.md"),
       changelog(pkg, config)
     );
-    if (packageType(pkg, config) === "pattern")
+    if (packageType(pkg, config) === "pattern") {
       configurePatternExample(pkg, config);
+      configurePatternUnitTests(pkg, config);
+    }
   }
   fs.writeFileSync(
     path.join(config.repoPath, "CHANGELOG.md"),

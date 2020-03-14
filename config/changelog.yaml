@@ -4,6 +4,10 @@ Unreleased:
   Changed:
   Deprecated:
   Fixed:
+    simon:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+    simone:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
   Removed:
   Security:
 

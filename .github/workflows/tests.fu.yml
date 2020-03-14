@@ -1,0 +1,31 @@
+name: Unit tests - Fu
+
+on:
+  push:
+    paths: &files
+      - 'packages/fu/src/**.js'
+      - 'packages/fu/config/**.js'
+      - 'packages/fu/rollup.config.js
+  pull_request:
+    paths: *files
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js $
+      uses: actions/setup-node@v1
+      with:
+        node-version: $
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm testonly
+      env:
+        CI: true
