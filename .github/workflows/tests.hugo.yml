@@ -22,8 +22,8 @@ jobs:
         run: cd packages/hugo && npm install
         env:
           CI: true
-      - name: Install peer & dependencies
-        run: cd packages/hugo && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/brian @freesewing/models @freesewing/pattern-info
+      - name: Install peer & test dependencies
+        run: cd packages/hugo && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/brian @freesewing/models @freesewing/pattern-info mocha chai
         env:
           CI: true
       - name: Build pattern
