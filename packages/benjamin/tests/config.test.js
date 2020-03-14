@@ -3,8 +3,5 @@
 const Benjamin  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('benjamin', new Benjamin(), meta)
+testPatternConfig('benjamin', new Benjamin())

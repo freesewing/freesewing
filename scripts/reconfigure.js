@@ -481,27 +481,33 @@ function configurePatternUnitTests(pkg, config) {
     Pattern: capitalize(pkg)
   };
   for (let file of ["config.test.js"]) {
-    let template = handlebars.compile(
-      fs.readFileSync(path.join(source, file), "utf-8")
+    fs.writeFileSync(
+      path.join(dest, file),
+      Mustache.render(
+        fs.readFileSync(path.join(source, file), "utf-8"),
+        replace
+      )
     );
-    fs.writeFileSync(path.join(dest, file), template(replace));
   }
   // Add workflow file for Github actions
-  let template = handlebars.compile(
-    fs.readFileSync(path.join(
+  fs.writeFileSync(
+    path.join(
       config.repoPath,
-      'config',
-      'templates',
+      '.github',
       'workflows',
-      'tests.pattern.yml'
-    ), "utf-8")
+      `tests.${pkg}.yml`
+    ),
+    Mustache.render(
+      fs.readFileSync(path.join(
+        config.repoPath,
+        'config',
+        'templates',
+        'workflows',
+        'tests.pattern.yml'
+      ), "utf-8"),
+      replace
+    )
   );
-  fs.writeFileSync(path.join(
-    config.repoPath,
-    '.github',
-    'workflows',
-    `tests.${pkg}.yml`
-  ), template(replace));
 }
 
 /**

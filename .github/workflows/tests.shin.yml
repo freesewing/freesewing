@@ -5,6 +5,7 @@ on:
     paths: &files
       - 'packages/shin/src/**.js'
       - 'packages/shin/config/**.js'
+      - 'packages/shin/tests/**.js'
       - 'packages/shin/rollup.config.js'
   pull_request:
     paths: *files
@@ -17,14 +18,13 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-    - name: Setup Node.js $
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: $
+        node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       env:
         CI: true

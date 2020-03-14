@@ -3,8 +3,5 @@
 const Penelope  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('penelope', new Penelope(), meta)
+testPatternConfig('penelope', new Penelope())

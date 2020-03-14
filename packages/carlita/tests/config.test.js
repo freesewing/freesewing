@@ -3,8 +3,5 @@
 const Carlita  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('carlita', new Carlita(), meta)
+testPatternConfig('carlita', new Carlita())

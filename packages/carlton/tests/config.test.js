@@ -3,8 +3,5 @@
 const Carlton  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('carlton', new Carlton(), meta)
+testPatternConfig('carlton', new Carlton())

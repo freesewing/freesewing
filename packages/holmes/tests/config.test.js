@@ -3,8 +3,5 @@
 const Holmes  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('holmes', new Holmes(), meta)
+testPatternConfig('holmes', new Holmes())

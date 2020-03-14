@@ -4,18 +4,8 @@
  *
  * @param string me: Name of the pattern (eg 'aaron')
  * @param object Pattern: Instantiated pattern object
- * @param object meta: Object that holds pattern metadata eg: {
- *   name: 'aaron',
- *   version: '2.4.3',
- *   design: 'Joost De Cock',
- *   code: 'Joost De Cock',
- *   department: 'unisex',
- *   type: 'pattern',
- *   difficulty: 3,
- *   tags: [ 'underwear', 'top', 'basics' ],
- * }
  */
-const testPatternConfig = (design, pattern, meta) => {
+const testPatternConfig = (design, pattern) => {
   const expect = require("chai").expect;
   const models = require("@freesewing/models")
   const patterns = require("@freesewing/pattern-info")

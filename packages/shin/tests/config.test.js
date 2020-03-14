@@ -3,8 +3,5 @@
 const Shin  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('shin', new Shin(), meta)
+testPatternConfig('shin', new Shin())

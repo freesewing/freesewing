@@ -3,8 +3,5 @@
 const Waralee  = require('../dist')
 const testPatternConfig = require('../../../tests/patterns/config')
 
-// The pattern's metadata from package.json
-const meta = 
-
 // Test config
-testPatternConfig('waralee', new Waralee(), meta)
+testPatternConfig('waralee', new Waralee())
