@@ -2,13 +2,17 @@ name: Unit tests - Jaeger
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/jaeger/src/**.js'
       - 'packages/jaeger/config/**.js'
       - 'packages/jaeger/tests/**.js'
       - 'packages/jaeger/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/jaeger/src/**.js'
+      - 'packages/jaeger/config/**.js'
+      - 'packages/jaeger/tests/**.js'
+      - 'packages/jaeger/rollup.config.js'
 
 jobs:
   test:

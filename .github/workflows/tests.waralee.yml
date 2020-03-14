@@ -2,13 +2,17 @@ name: Unit tests - Waralee
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/waralee/src/**.js'
       - 'packages/waralee/config/**.js'
       - 'packages/waralee/tests/**.js'
       - 'packages/waralee/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/waralee/src/**.js'
+      - 'packages/waralee/config/**.js'
+      - 'packages/waralee/tests/**.js'
+      - 'packages/waralee/rollup.config.js'
 
 jobs:
   test:

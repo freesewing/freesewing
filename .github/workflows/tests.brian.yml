@@ -2,13 +2,17 @@ name: Unit tests - Brian
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/brian/src/**.js'
       - 'packages/brian/config/**.js'
       - 'packages/brian/tests/**.js'
       - 'packages/brian/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/brian/src/**.js'
+      - 'packages/brian/config/**.js'
+      - 'packages/brian/tests/**.js'
+      - 'packages/brian/rollup.config.js'
 
 jobs:
   test:

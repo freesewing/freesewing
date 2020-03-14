@@ -2,13 +2,17 @@ name: Unit tests - Holmes
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/holmes/src/**.js'
       - 'packages/holmes/config/**.js'
       - 'packages/holmes/tests/**.js'
       - 'packages/holmes/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/holmes/src/**.js'
+      - 'packages/holmes/config/**.js'
+      - 'packages/holmes/tests/**.js'
+      - 'packages/holmes/rollup.config.js'
 
 jobs:
   test:

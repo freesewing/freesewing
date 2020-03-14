@@ -2,13 +2,17 @@ name: Unit tests - Sandy
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/sandy/src/**.js'
       - 'packages/sandy/config/**.js'
       - 'packages/sandy/tests/**.js'
       - 'packages/sandy/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/sandy/src/**.js'
+      - 'packages/sandy/config/**.js'
+      - 'packages/sandy/tests/**.js'
+      - 'packages/sandy/rollup.config.js'
 
 jobs:
   test:

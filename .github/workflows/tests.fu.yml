@@ -2,13 +2,17 @@ name: Unit tests - Fu
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/fu/src/**.js'
       - 'packages/fu/config/**.js'
       - 'packages/fu/tests/**.js'
       - 'packages/fu/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/fu/src/**.js'
+      - 'packages/fu/config/**.js'
+      - 'packages/fu/tests/**.js'
+      - 'packages/fu/rollup.config.js'
 
 jobs:
   test:

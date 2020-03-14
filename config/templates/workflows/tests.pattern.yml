@@ -2,13 +2,17 @@ name: Unit tests - {{ Pattern }}
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/{{ pattern }}/src/**.js'
       - 'packages/{{ pattern }}/config/**.js'
       - 'packages/{{ pattern }}/tests/**.js'
       - 'packages/{{ pattern }}/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/{{ pattern }}/src/**.js'
+      - 'packages/{{ pattern }}/config/**.js'
+      - 'packages/{{ pattern }}/tests/**.js'
+      - 'packages/{{ pattern }}/rollup.config.js'
 
 jobs:
   test:

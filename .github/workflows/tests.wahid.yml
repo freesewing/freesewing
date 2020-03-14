@@ -2,13 +2,17 @@ name: Unit tests - Wahid
 
 on:
   push:
-    paths: &files
+    paths:
       - 'packages/wahid/src/**.js'
       - 'packages/wahid/config/**.js'
       - 'packages/wahid/tests/**.js'
       - 'packages/wahid/rollup.config.js'
   pull_request:
-    paths: *files
+    paths:
+      - 'packages/wahid/src/**.js'
+      - 'packages/wahid/config/**.js'
+      - 'packages/wahid/tests/**.js'
+      - 'packages/wahid/rollup.config.js'
 
 jobs:
   test:
