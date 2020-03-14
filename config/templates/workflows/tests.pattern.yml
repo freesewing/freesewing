@@ -20,8 +20,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 <%={{ }}=%>
-      - name: Change directory
+      - name: Install dependencies
         run: cd packages/{{ pattern }} && npm install
+        env:
+          CI: true
+      - name: Install peer dependencies
+        run: cd packages/{{ pattern }} && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/models @freesewing/pattern-info
         env:
           CI: true
       - name: Build pattern
