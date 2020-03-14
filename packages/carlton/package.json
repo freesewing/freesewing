@@ -31,7 +31,8 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
     "netlify": "echo \"Not configured yet\"",
-    "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+    "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
+    "testonlyci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.4.3",
@@ -74,7 +75,11 @@
     "@material-ui/icons": "4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
     "react-intl": "2.8.0",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "mocha": "^6.1.4",
+    "chai": "^4.1.2",
+    "chai-string": "^1.4.0",
+    "@babel/register": "^7.4.4"
   },
   "files": [
     "dist/*",

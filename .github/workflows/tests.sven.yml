@@ -24,7 +24,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/sven && npm run build
-      - name: Show package.json
-        run: cd packages/sven && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/sven && npm run testonly
+        run: cd packages/sven && npm run testonlyci

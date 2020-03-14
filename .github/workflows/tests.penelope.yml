@@ -24,7 +24,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/penelope && npm run build
-      - name: Show package.json
-        run: cd packages/penelope && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/penelope && npm run testonly
+        run: cd packages/penelope && npm run testonlyci

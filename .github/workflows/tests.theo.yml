@@ -24,7 +24,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/theo && npm run build
-      - name: Show package.json
-        run: cd packages/theo && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/theo && npm run testonly
+        run: cd packages/theo && npm run testonlyci

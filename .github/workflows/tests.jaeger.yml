@@ -24,7 +24,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/jaeger && npm run build
-      - name: Show package.json
-        run: cd packages/jaeger && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/jaeger && npm run testonly
+        run: cd packages/jaeger && npm run testonlyci

@@ -10,6 +10,7 @@ _types:
   pattern:
     netlify: "echo \"Not configured yet\""
     testonly: "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+    testonlyci: "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
 create-freesewing-pattern:
   clean: "!"
   nodebuild: "!"

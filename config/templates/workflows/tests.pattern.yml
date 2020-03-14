@@ -26,7 +26,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/{{ pattern }} && npm run build
-      - name: Show package.json
-        run: cd packages/{{ pattern }} && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/{{ pattern }} && npm run testonly
+        run: cd packages/{{ pattern }} && npm run testonlyci

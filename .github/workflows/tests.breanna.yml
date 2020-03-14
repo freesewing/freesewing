@@ -24,7 +24,5 @@ jobs:
           CI: true
       - name: Build pattern
         run: cd packages/breanna && npm run build
-      - name: Show package.json
-        run: cd packages/breanna && cat package.json
       - name: Run pattern unit tests
-        run: cd packages/breanna && npm run testonly
+        run: cd packages/breanna && npm run testonlyci
