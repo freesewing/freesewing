@@ -1,18 +1,6 @@
 name: Unit tests - Hugo
 
-on:
-  push:
-    paths:
-      - 'packages/hugo/src/**.js'
-      - 'packages/hugo/config/**.js'
-      - 'packages/hugo/tests/**.js'
-      - 'packages/hugo/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/hugo/src/**.js'
-      - 'packages/hugo/config/**.js'
-      - 'packages/hugo/tests/**.js'
-      - 'packages/hugo/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

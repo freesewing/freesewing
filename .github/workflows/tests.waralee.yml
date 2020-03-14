@@ -1,18 +1,6 @@
 name: Unit tests - Waralee
 
-on:
-  push:
-    paths:
-      - 'packages/waralee/src/**.js'
-      - 'packages/waralee/config/**.js'
-      - 'packages/waralee/tests/**.js'
-      - 'packages/waralee/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/waralee/src/**.js'
-      - 'packages/waralee/config/**.js'
-      - 'packages/waralee/tests/**.js'
-      - 'packages/waralee/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

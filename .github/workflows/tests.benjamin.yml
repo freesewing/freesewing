@@ -1,18 +1,6 @@
 name: Unit tests - Benjamin
 
-on:
-  push:
-    paths:
-      - 'packages/benjamin/src/**.js'
-      - 'packages/benjamin/config/**.js'
-      - 'packages/benjamin/tests/**.js'
-      - 'packages/benjamin/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/benjamin/src/**.js'
-      - 'packages/benjamin/config/**.js'
-      - 'packages/benjamin/tests/**.js'
-      - 'packages/benjamin/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

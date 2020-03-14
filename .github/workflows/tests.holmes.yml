@@ -1,18 +1,6 @@
 name: Unit tests - Holmes
 
-on:
-  push:
-    paths:
-      - 'packages/holmes/src/**.js'
-      - 'packages/holmes/config/**.js'
-      - 'packages/holmes/tests/**.js'
-      - 'packages/holmes/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/holmes/src/**.js'
-      - 'packages/holmes/config/**.js'
-      - 'packages/holmes/tests/**.js'
-      - 'packages/holmes/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

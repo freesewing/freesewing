@@ -1,18 +1,6 @@
 name: Unit tests - Aaron
 
-on:
-  push:
-    paths:
-      - 'packages/aaron/src/**.js'
-      - 'packages/aaron/config/**.js'
-      - 'packages/aaron/tests/**.js'
-      - 'packages/aaron/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/aaron/src/**.js'
-      - 'packages/aaron/config/**.js'
-      - 'packages/aaron/tests/**.js'
-      - 'packages/aaron/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

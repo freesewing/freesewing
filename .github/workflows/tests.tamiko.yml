@@ -1,18 +1,6 @@
 name: Unit tests - Tamiko
 
-on:
-  push:
-    paths:
-      - 'packages/tamiko/src/**.js'
-      - 'packages/tamiko/config/**.js'
-      - 'packages/tamiko/tests/**.js'
-      - 'packages/tamiko/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/tamiko/src/**.js'
-      - 'packages/tamiko/config/**.js'
-      - 'packages/tamiko/tests/**.js'
-      - 'packages/tamiko/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests

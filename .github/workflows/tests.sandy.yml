@@ -1,18 +1,6 @@
 name: Unit tests - Sandy
 
-on:
-  push:
-    paths:
-      - 'packages/sandy/src/**.js'
-      - 'packages/sandy/config/**.js'
-      - 'packages/sandy/tests/**.js'
-      - 'packages/sandy/rollup.config.js'
-  pull_request:
-    paths:
-      - 'packages/sandy/src/**.js'
-      - 'packages/sandy/config/**.js'
-      - 'packages/sandy/tests/**.js'
-      - 'packages/sandy/rollup.config.js'
+on: [push, pull_request]
 
 jobs:
   test:
@@ -35,7 +23,7 @@ jobs:
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npm install
       - name: Build pattern
         run: npm run build --if-present
       - name: Run pattern unit tests
