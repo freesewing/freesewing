@@ -3,16 +3,16 @@ name: Unit tests - Carlita
 on:
   push:
     paths:
-      - 'packages/carlita/src/**.js'
-      - 'packages/carlita/config/**.js'
-      - 'packages/carlita/tests/**.js'
-      - 'packages/carlita/rollup.config.js'
+    - 'packages/carlita/src/**.js'
+    - 'packages/carlita/config/**.js'
+    - 'packages/carlita/tests/**.js'
+    - 'packages/carlita/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/carlita/src/**.js'
-      - 'packages/carlita/config/**.js'
-      - 'packages/carlita/tests/**.js'
-      - 'packages/carlita/rollup.config.js'
+    - 'packages/carlita/src/**.js'
+    - 'packages/carlita/config/**.js'
+    - 'packages/carlita/tests/**.js'
+    - 'packages/carlita/rollup.config.js'
 
 jobs:
   test:

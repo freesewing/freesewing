@@ -3,16 +3,16 @@ name: Unit tests - Simon
 on:
   push:
     paths:
-      - 'packages/simon/src/**.js'
-      - 'packages/simon/config/**.js'
-      - 'packages/simon/tests/**.js'
-      - 'packages/simon/rollup.config.js'
+    - 'packages/simon/src/**.js'
+    - 'packages/simon/config/**.js'
+    - 'packages/simon/tests/**.js'
+    - 'packages/simon/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/simon/src/**.js'
-      - 'packages/simon/config/**.js'
-      - 'packages/simon/tests/**.js'
-      - 'packages/simon/rollup.config.js'
+    - 'packages/simon/src/**.js'
+    - 'packages/simon/config/**.js'
+    - 'packages/simon/tests/**.js'
+    - 'packages/simon/rollup.config.js'
 
 jobs:
   test:

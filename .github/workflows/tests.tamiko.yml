@@ -3,16 +3,16 @@ name: Unit tests - Tamiko
 on:
   push:
     paths:
-      - 'packages/tamiko/src/**.js'
-      - 'packages/tamiko/config/**.js'
-      - 'packages/tamiko/tests/**.js'
-      - 'packages/tamiko/rollup.config.js'
+    - 'packages/tamiko/src/**.js'
+    - 'packages/tamiko/config/**.js'
+    - 'packages/tamiko/tests/**.js'
+    - 'packages/tamiko/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/tamiko/src/**.js'
-      - 'packages/tamiko/config/**.js'
-      - 'packages/tamiko/tests/**.js'
-      - 'packages/tamiko/rollup.config.js'
+    - 'packages/tamiko/src/**.js'
+    - 'packages/tamiko/config/**.js'
+    - 'packages/tamiko/tests/**.js'
+    - 'packages/tamiko/rollup.config.js'
 
 jobs:
   test:

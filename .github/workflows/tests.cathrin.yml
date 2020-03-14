@@ -3,16 +3,16 @@ name: Unit tests - Cathrin
 on:
   push:
     paths:
-      - 'packages/cathrin/src/**.js'
-      - 'packages/cathrin/config/**.js'
-      - 'packages/cathrin/tests/**.js'
-      - 'packages/cathrin/rollup.config.js'
+    - 'packages/cathrin/src/**.js'
+    - 'packages/cathrin/config/**.js'
+    - 'packages/cathrin/tests/**.js'
+    - 'packages/cathrin/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/cathrin/src/**.js'
-      - 'packages/cathrin/config/**.js'
-      - 'packages/cathrin/tests/**.js'
-      - 'packages/cathrin/rollup.config.js'
+    - 'packages/cathrin/src/**.js'
+    - 'packages/cathrin/config/**.js'
+    - 'packages/cathrin/tests/**.js'
+    - 'packages/cathrin/rollup.config.js'
 
 jobs:
   test:

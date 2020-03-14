@@ -3,16 +3,16 @@ name: Unit tests - Penelope
 on:
   push:
     paths:
-      - 'packages/penelope/src/**.js'
-      - 'packages/penelope/config/**.js'
-      - 'packages/penelope/tests/**.js'
-      - 'packages/penelope/rollup.config.js'
+    - 'packages/penelope/src/**.js'
+    - 'packages/penelope/config/**.js'
+    - 'packages/penelope/tests/**.js'
+    - 'packages/penelope/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/penelope/src/**.js'
-      - 'packages/penelope/config/**.js'
-      - 'packages/penelope/tests/**.js'
-      - 'packages/penelope/rollup.config.js'
+    - 'packages/penelope/src/**.js'
+    - 'packages/penelope/config/**.js'
+    - 'packages/penelope/tests/**.js'
+    - 'packages/penelope/rollup.config.js'
 
 jobs:
   test:

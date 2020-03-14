@@ -3,16 +3,16 @@ name: Unit tests - Hugo
 on:
   push:
     paths:
-      - 'packages/hugo/src/**.js'
-      - 'packages/hugo/config/**.js'
-      - 'packages/hugo/tests/**.js'
-      - 'packages/hugo/rollup.config.js'
+    - 'packages/hugo/src/**.js'
+    - 'packages/hugo/config/**.js'
+    - 'packages/hugo/tests/**.js'
+    - 'packages/hugo/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/hugo/src/**.js'
-      - 'packages/hugo/config/**.js'
-      - 'packages/hugo/tests/**.js'
-      - 'packages/hugo/rollup.config.js'
+    - 'packages/hugo/src/**.js'
+    - 'packages/hugo/config/**.js'
+    - 'packages/hugo/tests/**.js'
+    - 'packages/hugo/rollup.config.js'
 
 jobs:
   test:

@@ -3,16 +3,16 @@ name: Unit tests - Waralee
 on:
   push:
     paths:
-      - 'packages/waralee/src/**.js'
-      - 'packages/waralee/config/**.js'
-      - 'packages/waralee/tests/**.js'
-      - 'packages/waralee/rollup.config.js'
+    - 'packages/waralee/src/**.js'
+    - 'packages/waralee/config/**.js'
+    - 'packages/waralee/tests/**.js'
+    - 'packages/waralee/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/waralee/src/**.js'
-      - 'packages/waralee/config/**.js'
-      - 'packages/waralee/tests/**.js'
-      - 'packages/waralee/rollup.config.js'
+    - 'packages/waralee/src/**.js'
+    - 'packages/waralee/config/**.js'
+    - 'packages/waralee/tests/**.js'
+    - 'packages/waralee/rollup.config.js'
 
 jobs:
   test:

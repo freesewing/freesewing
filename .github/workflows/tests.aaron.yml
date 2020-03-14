@@ -3,16 +3,16 @@ name: Unit tests - Aaron
 on:
   push:
     paths:
-      - 'packages/aaron/src/**.js'
-      - 'packages/aaron/config/**.js'
-      - 'packages/aaron/tests/**.js'
-      - 'packages/aaron/rollup.config.js'
+    - 'packages/aaron/src/**.js'
+    - 'packages/aaron/config/**.js'
+    - 'packages/aaron/tests/**.js'
+    - 'packages/aaron/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/aaron/src/**.js'
-      - 'packages/aaron/config/**.js'
-      - 'packages/aaron/tests/**.js'
-      - 'packages/aaron/rollup.config.js'
+    - 'packages/aaron/src/**.js'
+    - 'packages/aaron/config/**.js'
+    - 'packages/aaron/tests/**.js'
+    - 'packages/aaron/rollup.config.js'
 
 jobs:
   test:

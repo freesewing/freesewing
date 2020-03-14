@@ -3,16 +3,16 @@ name: Unit tests - {{ Pattern }}
 on:
   push:
     paths:
-      - 'packages/{{ pattern }}/src/**.js'
-      - 'packages/{{ pattern }}/config/**.js'
-      - 'packages/{{ pattern }}/tests/**.js'
-      - 'packages/{{ pattern }}/rollup.config.js'
+    - 'packages/{{ pattern }}/src/**.js'
+    - 'packages/{{ pattern }}/config/**.js'
+    - 'packages/{{ pattern }}/tests/**.js'
+    - 'packages/{{ pattern }}/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/{{ pattern }}/src/**.js'
-      - 'packages/{{ pattern }}/config/**.js'
-      - 'packages/{{ pattern }}/tests/**.js'
-      - 'packages/{{ pattern }}/rollup.config.js'
+    - 'packages/{{ pattern }}/src/**.js'
+    - 'packages/{{ pattern }}/config/**.js'
+    - 'packages/{{ pattern }}/tests/**.js'
+    - 'packages/{{ pattern }}/rollup.config.js'
 
 jobs:
   test:

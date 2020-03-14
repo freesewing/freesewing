@@ -3,16 +3,16 @@ name: Unit tests - Sandy
 on:
   push:
     paths:
-      - 'packages/sandy/src/**.js'
-      - 'packages/sandy/config/**.js'
-      - 'packages/sandy/tests/**.js'
-      - 'packages/sandy/rollup.config.js'
+    - 'packages/sandy/src/**.js'
+    - 'packages/sandy/config/**.js'
+    - 'packages/sandy/tests/**.js'
+    - 'packages/sandy/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/sandy/src/**.js'
-      - 'packages/sandy/config/**.js'
-      - 'packages/sandy/tests/**.js'
-      - 'packages/sandy/rollup.config.js'
+    - 'packages/sandy/src/**.js'
+    - 'packages/sandy/config/**.js'
+    - 'packages/sandy/tests/**.js'
+    - 'packages/sandy/rollup.config.js'
 
 jobs:
   test:

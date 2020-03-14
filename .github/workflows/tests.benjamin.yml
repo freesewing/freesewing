@@ -3,16 +3,16 @@ name: Unit tests - Benjamin
 on:
   push:
     paths:
-      - 'packages/benjamin/src/**.js'
-      - 'packages/benjamin/config/**.js'
-      - 'packages/benjamin/tests/**.js'
-      - 'packages/benjamin/rollup.config.js'
+    - 'packages/benjamin/src/**.js'
+    - 'packages/benjamin/config/**.js'
+    - 'packages/benjamin/tests/**.js'
+    - 'packages/benjamin/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/benjamin/src/**.js'
-      - 'packages/benjamin/config/**.js'
-      - 'packages/benjamin/tests/**.js'
-      - 'packages/benjamin/rollup.config.js'
+    - 'packages/benjamin/src/**.js'
+    - 'packages/benjamin/config/**.js'
+    - 'packages/benjamin/tests/**.js'
+    - 'packages/benjamin/rollup.config.js'
 
 jobs:
   test:

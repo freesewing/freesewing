@@ -3,16 +3,16 @@ name: Unit tests - Simone
 on:
   push:
     paths:
-      - 'packages/simone/src/**.js'
-      - 'packages/simone/config/**.js'
-      - 'packages/simone/tests/**.js'
-      - 'packages/simone/rollup.config.js'
+    - 'packages/simone/src/**.js'
+    - 'packages/simone/config/**.js'
+    - 'packages/simone/tests/**.js'
+    - 'packages/simone/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/simone/src/**.js'
-      - 'packages/simone/config/**.js'
-      - 'packages/simone/tests/**.js'
-      - 'packages/simone/rollup.config.js'
+    - 'packages/simone/src/**.js'
+    - 'packages/simone/config/**.js'
+    - 'packages/simone/tests/**.js'
+    - 'packages/simone/rollup.config.js'
 
 jobs:
   test:

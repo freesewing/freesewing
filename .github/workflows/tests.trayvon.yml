@@ -3,16 +3,16 @@ name: Unit tests - Trayvon
 on:
   push:
     paths:
-      - 'packages/trayvon/src/**.js'
-      - 'packages/trayvon/config/**.js'
-      - 'packages/trayvon/tests/**.js'
-      - 'packages/trayvon/rollup.config.js'
+    - 'packages/trayvon/src/**.js'
+    - 'packages/trayvon/config/**.js'
+    - 'packages/trayvon/tests/**.js'
+    - 'packages/trayvon/rollup.config.js'
   pull_request:
     paths:
-      - 'packages/trayvon/src/**.js'
-      - 'packages/trayvon/config/**.js'
-      - 'packages/trayvon/tests/**.js'
-      - 'packages/trayvon/rollup.config.js'
+    - 'packages/trayvon/src/**.js'
+    - 'packages/trayvon/config/**.js'
+    - 'packages/trayvon/tests/**.js'
+    - 'packages/trayvon/rollup.config.js'
 
 jobs:
   test:
