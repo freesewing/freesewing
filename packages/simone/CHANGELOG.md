@@ -3,6 +3,11 @@
 
 ## Unreleased
 
+**Note:** Version bump only for package simone
+
+
+## 2.4.4 (2020-03-15)
+
 ### Fixed
 
  - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default

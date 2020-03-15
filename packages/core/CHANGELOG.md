@@ -6,6 +6,11 @@
 **Note:** Version bump only for package core
 
 
+## 2.4.4 (2020-03-15)
+
+### Fixed
+
+ - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
 ## 2.4.3 (2020-03-12)
 
 **Note:** Version bump only for package core

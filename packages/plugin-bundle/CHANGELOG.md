@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-bundle
 
 
+## 2.4.4 (2020-03-15)
+
+**Note:** Version bump only for package plugin-bundle
+
+
 ## 2.4.3 (2020-03-12)
 
 **Note:** Version bump only for package plugin-bundle
