@@ -68,7 +68,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   }
 
 
-  if (['rendertest', 'tutorial'].indexOf(design) === -1) {
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
     /*
      *  Ensure pattern is listed as being for breasts or not
      */
