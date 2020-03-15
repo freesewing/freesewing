@@ -486,7 +486,7 @@ function configurePatternUnitTests(pkg, config) {
     fs.writeFileSync(
       path.join(dest, file),
       Mustache.render(
-        fs.readFileSync(path.join(source, file), "utf-8"),
+        fs.readFileSync(path.join(source, file+'.template'), "utf-8"),
         replace
       )
     );

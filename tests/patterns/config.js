@@ -68,7 +68,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   }
 
 
-  if (['rendertest', 'tutorial'].indexOf(design) !== -1) {
+  if (['rendertest', 'tutorial'].indexOf(design) === -1) {
     /*
      *  Ensure pattern is listed as being for breasts or not
      */
@@ -103,11 +103,9 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   for (let name in pattern.config.options) {
     let option = pattern.config.options[name]
     let type = typeof option
-    let dflt
     if (type === 'object' && typeof option.pct !== 'undefined') {
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
-      dflt = option.pct
       it(`    - Should have a default value`, () => {
         expect(typeof option.pct).to.equal('number')
       })
@@ -121,7 +119,6 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     else if (type === 'object' && typeof option.deg !== 'undefined') {
       // Degree option
       it(`  - '${name}' is a degree option`, () => true)
-      dflt = option.deg
       it(`    - Should have a default value`, () => {
         expect(typeof option.deg).to.equal('number')
       })
@@ -135,7 +132,6 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     else if (type === 'object' && typeof option.mm !== 'undefined') {
       // Millimeter option
       it(`  - '${name}' is a distance (mm) option`, () => true)
-      dflt = option.mm
       it(`    - Should have a default value`, () => {
         expect(typeof option.mm).to.equal('number')
       })
@@ -149,7 +145,6 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)
-      dflt = option.bool
       it(`    - Should have a default value`, () => {
         expect(typeof option.bool).to.equal('boolean')
       })
@@ -160,7 +155,6 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     else if (type === 'object' && typeof option.count !== 'undefined') {
       // Count option
       it(`  - '${name}' is a count option`, () => true)
-      dflt = option.count
       it(`    - Should have a default value`, () => {
         expect(typeof option.count).to.equal('number')
       })
@@ -174,7 +168,6 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     else if (type === 'object' && typeof option.list !== 'undefined') {
       // List option
       it(`  - '${name}' is a list option`, () => true)
-      dflt = option.dflt
       it(`    - Should have a default value`, () => {
         expect(typeof option.dflt).to.not.equal('undefined')
       })
