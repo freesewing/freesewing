@@ -182,7 +182,7 @@ Svg.prototype.renderPathText = function(path) {
   let svg = this.nl() + '<text>'
   this.indent()
   svg += `<textPath xlink:href="#${path.attributes.get('id')}" ${offset}><tspan ${attributes}>${
-    this.escapteText(this.text)
+    this.escapeText(this.text)
   }</tspan></textPath>`
   this.outdent()
   svg += this.nl() + '</text>'

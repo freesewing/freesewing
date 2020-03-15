@@ -3,9 +3,9 @@
 
 ## Unreleased
 
-**Note:** Version bump only for package utils
+### Changed
 
-
+ - neckstimate() now returns values rounded to nearest mm
 ## 2.4.4 (2020-03-15)
 
 **Note:** Version bump only for package utils

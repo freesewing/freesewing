@@ -2,6 +2,8 @@ Unreleased:
   date:
   Added:
   Changed:
+    utils:
+      - neckstimate() now returns values rounded to nearest mm
   Deprecated:
   Fixed:
   Removed:
