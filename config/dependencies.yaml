@@ -53,12 +53,14 @@ bent:
     "@freesewing/brian": "^{{version}}"
 carlita:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/carlton": "^{{version}}"
     "@freesewing/plugin-bust": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 carlton:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 css-theme:
@@ -115,8 +117,13 @@ gatsby-remark-jargon:
   _:
     "remark-jargon": "^{{version}}"
 holmes:
+  _:
+    "@freesewing/plugin-gore": "^{{version}}"
   peer:
     "@freesewing/plugin-bust": "^{{version}}"
+huey:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 hugo:
   peer:
     "@freesewing/brian": "^{{version}}"
@@ -125,6 +132,7 @@ i18n:
     "@freesewing/pattern-info": "^{{version}}"
 jaeger:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 models:

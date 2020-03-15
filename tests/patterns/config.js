@@ -68,30 +68,32 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   }
 
 
-  /*
-   *  Ensure pattern is listed as being for breasts or not
-   */
-  let breasts = false
-  it('Pattern should be listed as with or without breasts', () => {
-    let result = false
-    if (patterns.withBreasts.indexOf(design) !== -1) {
-      breasts = true
-      result = true
-    } else {
-      if (patterns.withoutBreasts.indexOf(design) !== -1) result = true
-    }
-    expect(result).to.be.true
-  })
-
-
-  /*
-   *  Ensure required measurements are known measurements
-   */
-  it('Required measurements:' , () => true)
-  for (let measurement of pattern.config.measurements) {
-    it(`  - '${measurement}' should be a known measurement`, () => {
-      expect(models.measurements[breasts ? 'womenswear' : 'menswear'].indexOf(measurement)).to.not.equal(-1)
+  if (['rendertest', 'tutorial'].indexOf(design) !== -1) {
+    /*
+     *  Ensure pattern is listed as being for breasts or not
+     */
+    let breasts = false
+    it('Pattern should be listed as with or without breasts', () => {
+      let result = false
+      if (patterns.withBreasts.indexOf(design) !== -1) {
+        breasts = true
+        result = true
+      } else {
+        if (patterns.withoutBreasts.indexOf(design) !== -1) result = true
+      }
+      expect(result).to.be.true
     })
+
+
+    /*
+     *  Ensure required measurements are known measurements
+     */
+    it('Required measurements:' , () => true)
+    for (let measurement of pattern.config.measurements) {
+      it(`  - '${measurement}' should be a known measurement`, () => {
+        expect(models.measurements[breasts ? 'womenswear' : 'menswear'].indexOf(measurement)).to.not.equal(-1)
+      })
+    }
   }
 
   /*

@@ -37,6 +37,7 @@
   "peerDependencies": {
     "@freesewing/core": "^2.4.3",
     "@freesewing/plugin-bundle": "^2.4.3",
+    "@freesewing/brian": "^2.4.3",
     "@freesewing/bent": "^2.4.3",
     "@freesewing/plugin-buttons": "^2.4.3"
   },
