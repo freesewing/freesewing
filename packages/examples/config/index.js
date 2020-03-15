@@ -5,6 +5,12 @@ export default {
   version,
   design: "Joost De Cock",
   code: "Joost De Cock",
+  department: "womenswear",
+  type: "pattern",
+  difficulty: 1,
+  tags: [
+    "example",
+  ],
   optionGroups: {
     fit: ["fixme"]
   },

@@ -38,6 +38,10 @@ _types:
       "@material-ui/lab": "^v4.0.0-alpha.14"
       "react-intl": "2.8.0"
       "prop-types": "15.7.2"
+      "mocha": "^6.1.4"
+      "chai": "^4.1.2"
+      "chai-string": "^1.4.0"
+      "@babel/register": "^7.4.4"
   plugin:
     peer:
       "@freesewing/core": "^{{version}}"
@@ -49,12 +53,14 @@ bent:
     "@freesewing/brian": "^{{version}}"
 carlita:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/carlton": "^{{version}}"
     "@freesewing/plugin-bust": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 carlton:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 css-theme:
@@ -111,8 +117,13 @@ gatsby-remark-jargon:
   _:
     "remark-jargon": "^{{version}}"
 holmes:
+  _:
+    "@freesewing/plugin-gore": "^{{version}}"
   peer:
     "@freesewing/plugin-bust": "^{{version}}"
+huey:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 hugo:
   peer:
     "@freesewing/brian": "^{{version}}"
@@ -121,6 +132,7 @@ i18n:
     "@freesewing/pattern-info": "^{{version}}"
 jaeger:
   peer:
+    "@freesewing/brian": "^{{version}}"
     "@freesewing/bent": "^{{version}}"
     "@freesewing/plugin-buttons": "^{{version}}"
 models:
@@ -159,6 +171,9 @@ simone:
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-flip": "^{{version}}"
     "@freesewing/plugin-bust": "^{{version}}"
+sven:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 utils:
   peer:
     "tlds": "^0.203.1"

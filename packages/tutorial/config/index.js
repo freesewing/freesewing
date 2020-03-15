@@ -11,15 +11,7 @@ export default {
   type: "pattern",
   difficulty: 1,
   tags: [
-    "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "pattern",
-    "sewing",
-    "sewing pattern"
+    "example",
   ],
   optionGroups: {
     fit: ["neckRatio", "widthRatio", "lengthRatio"],

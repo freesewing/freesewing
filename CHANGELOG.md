@@ -5,6 +5,39 @@
 ## Unreleased
 
 
+## 2.4.4 (2020-03-15)
+
+### core
+
+#### Fixed
+
+ - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
+
+### huey
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+### simon
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+### simone
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+### sven
+
+#### Fixed
+
+ - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+
 ## 2.4.3 (2020-03-12)
 
 ### i18n

@@ -34,10 +34,6 @@ const OptionPreamble = props => {
     id: 'app.restorePatternDefaults',
     defaultMessage: ' ♻️  '
   })
-  const docsLabel = props.intl.formatMessage({
-    id: 'app.docs',
-    defaultMessage: ' 🤔 '
-  })
 
   let pattern = false
   if (props.dflt !== props.designDflt) pattern = true
@@ -109,7 +105,6 @@ OptionPreamble.propTypes = {
   title: PropTypes.node.isRequired,
   desc: PropTypes.node.isRequired,
   reset: PropTypes.func.isRequired,
-  showHelp: PropTypes.func.isRequired,
   expanded: PropTypes.bool,
   displayFormat: PropTypes.string
 }

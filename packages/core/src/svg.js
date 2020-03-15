@@ -182,7 +182,7 @@ Svg.prototype.renderPathText = function(path) {
   let svg = this.nl() + '<text>'
   this.indent()
   svg += `<textPath xlink:href="#${path.attributes.get('id')}" ${offset}><tspan ${attributes}>${
-    this.text
+    this.escapteText(this.text)
   }</tspan></textPath>`
   this.outdent()
   svg += this.nl() + '</text>'
@@ -214,12 +214,17 @@ Svg.prototype.renderText = function(point) {
       svg += `<tspan x="${point.x}" dy="${lineHeight}">${line}</tspan>`
     }
   } else {
-    svg += `<tspan>${this.text}</tspan>`
+    svg += `<tspan>${this.escapeText(this.text)
+    }</tspan>`
   }
   this.outdent()
   svg += this.nl() + '</text>'
 
   return svg
+}
+
+Svg.prototype.escapeText = function(text) {
+  return text.replace('"', '&#8220;')
 }
 
 Svg.prototype.renderCircle = function(point) {
