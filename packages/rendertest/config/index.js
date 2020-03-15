@@ -5,10 +5,10 @@ export default {
   version,
   design: "Joost De Cock",
   code: "Joost De Cock",
-  department: "menswear",
+  department: "womenswear",
   type: "pattern",
   difficulty: 1,
-  tags: ["test"],
+  tags: ["example"],
   optionGroups: {
     size: ["width"],
     content: ["colors", "circles", "text", "snippets", "macros"]

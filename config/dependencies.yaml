@@ -171,6 +171,9 @@ simone:
     "@freesewing/plugin-buttons": "^{{version}}"
     "@freesewing/plugin-flip": "^{{version}}"
     "@freesewing/plugin-bust": "^{{version}}"
+sven:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 utils:
   peer:
     "tlds": "^0.203.1"
