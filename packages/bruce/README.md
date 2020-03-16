@@ -54,19 +54,19 @@ A FreeSewing pattern for boxer briefs
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/) is a *batteries-included* toolbox
+Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
-of [plugins](https://freesewing.dev/plugins) and getting started is as simple as:
+of [plugins](https://freesewing.dev/reference/plugins/) and getting started is as simple as:
 
 ```bash
 npm init freesewing-pattern
 ```
 
-The [getting started](https://freesewing.dev/start) section on [freesewing.dev](https://freesewing.dev/) is a good
+The [getting started](https://freesewing.dev/guides/getting-started/) section on [freesewing.dev](https://freesewing.dev/) is a good
 entrypoint to our documentation, but you'll find a lot more there, including
-our [API reference](https://freesewing.dev/api),
-as well as [our turorial](https://freesewing.dev/tutorial),
-and [best practices](https://freesewing.dev/do).
+our [API reference](https://freesewing.dev/reference/api/),
+as well as [our turorial](https://freesewing.dev/tutorials/pattern-design/),
+and [howtos](https://freesewing.dev/howtos/).
 
 If you're a maker, checkout [freesewing.org](https://freesewing/) where you can generate
 our sewing patterns adapted to your measurements.
