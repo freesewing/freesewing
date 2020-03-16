@@ -58,7 +58,7 @@ export default {
     backOpening: { pct: 4, min: 3, max: 10 },
     backRise: { pct: 15, min: 1, max: 25 },
     backDrop: { pct: 2, min: 0, max: 5 },
-    frontRise: { pct: 4, min: 0, max: 8 },
+    frontRise: { pct: 4, min: 0.1, max: 8 },
     frontDrop: { pct: 5, min: 0, max: 10 },
     hipRise: { pct: 5, min: 0, max: 15 }
   }
