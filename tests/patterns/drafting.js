@@ -47,8 +47,10 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
    * Draft parts individually
    */
   it('Draft parts individually:' , () => true)
-
-  for (let name of patterns.parts[design]) {
+  let parts
+  if (['rendertest'].indexOf(design) === -1) parts = patterns.parts[design]
+  else parts = Pattern.config.parts
+  for (let name of parts) {
     it(`  - ${name} should draft on its own`, () => {
       expect(doesItDraft(new Pattern({
         measurements,

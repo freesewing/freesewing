@@ -149,52 +149,54 @@ export default part => {
   // Store pocket bag length
   store.set('pocketBagLength', points.pocketTopMid.dy(points.cfHem) * 0.75)
 
-  // Front scye dart
-  points._dartWidth = points.dartTop.shiftFractionTowards(
-    points.armholeHollow.rotate(options.frontScyeDart, points.dartTop),
-    1.5
-  )
-  points.armholeHollowTop = new Path()
-    .move(points.armholeHollow)
-    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .intersects(new Path().move(points.dartTop).line(points._dartWidth))
-    .pop()
-  // Adjust control point
-  points.armholeHollowCp2 = points.armholeHollowCp2.shift(
-    points.armholeHollow.angle(points.armholeHollowTop),
-    points.armholeHollow.dist(points.armholeHollowTop)
-  )
-  // Rotate front scye dart into front dart
-  let toRotate = [
-    'dartWaistRightCpTop',
-    'dartWaistRight',
-    'dartWaistRightCpBottom',
-    'dartHipRightCpTop',
-    'dartHipRight',
-    'dartHemRight',
-    'splitDartHemRight',
-    'splitDartHemRightCp2',
-    'splitHemCp1',
-    'hem',
-    'hips',
-    'hipsCp2',
-    'waistCp1',
-    'waist',
-    'waistCp2',
-    'armhole',
-    'armholeCp2',
-    'armholeHollow',
-    'pocketTopMidRight',
-    'pocketBottomMidRight',
-    'pocketTopRight',
-    'pocketBottomRight',
-    'dartEnd'
-  ]
-  for (let p of toRotate) {
-    if (typeof points[p] !== 'undefined')
-      points[p] = points[p].rotate(options.frontScyeDart, points.dartTop)
+  if (options.frontScyeDart) {
+    // Front scye dart
+    points._dartWidth = points.dartTop.shiftFractionTowards(
+      points.armholeHollow.rotate(options.frontScyeDart, points.dartTop),
+      1.5
+    )
+    points.armholeHollowTop = new Path()
+      .move(points.armholeHollow)
+      .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+      .intersects(new Path().move(points.dartTop).line(points._dartWidth))
+      .pop()
+    // Adjust control point
+    points.armholeHollowCp2 = points.armholeHollowCp2.shift(
+      points.armholeHollow.angle(points.armholeHollowTop),
+      points.armholeHollow.dist(points.armholeHollowTop)
+    )
+    // Rotate front scye dart into front dart
+    let toRotate = [
+      'dartWaistRightCpTop',
+      'dartWaistRight',
+      'dartWaistRightCpBottom',
+      'dartHipRightCpTop',
+      'dartHipRight',
+      'dartHemRight',
+      'splitDartHemRight',
+      'splitDartHemRightCp2',
+      'splitHemCp1',
+      'hem',
+      'hips',
+      'hipsCp2',
+      'waistCp1',
+      'waist',
+      'waistCp2',
+      'armhole',
+      'armholeCp2',
+      'armholeHollow',
+      'pocketTopMidRight',
+      'pocketBottomMidRight',
+      'pocketTopRight',
+      'pocketBottomRight',
+      'dartEnd'
+    ]
+    for (let p of toRotate) {
+      if (typeof points[p] !== 'undefined')
+        points[p] = points[p].rotate(options.frontScyeDart, points.dartTop)
+    }
+    points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
   }
-  points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
 
   // Seam line
   delete paths.cutonfold

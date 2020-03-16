@@ -6,6 +6,8 @@ Unreleased:
       - neckstimate() now returns values rounded to nearest mm
   Deprecated:
   Fixed:
+    wahid:
+      - Check whether frontScyeDart option is zero prior to implementing it
   Removed:
   Security:
 
