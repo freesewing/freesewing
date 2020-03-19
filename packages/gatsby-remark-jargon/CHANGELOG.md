@@ -6,6 +6,11 @@
 **Note:** Version bump only for package gatsby-remark-jargon
 
 
+## 2.4.5 (2020-03-19)
+
+**Note:** Version bump only for package gatsby-remark-jargon
+
+
 ## 2.4.4 (2020-03-15)
 
 **Note:** Version bump only for package gatsby-remark-jargon
