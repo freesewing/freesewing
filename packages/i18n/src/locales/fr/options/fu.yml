@@ -8,6 +8,3 @@ length:
 curve:
   title: Curve
   description: Controls the curvature of the upper edge of the face mask
-shaping:
-  title: Shaping
-  description: Controls the amount of shaping in the face mask
