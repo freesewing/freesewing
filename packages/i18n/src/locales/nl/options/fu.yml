@@ -5,9 +5,6 @@ height:
 length:
   title: Lengte
   description: Bepaalt de lengte van het mondmasker
-curve:
-  title: Boog
-  description: Bepaalt de curve van de bovenrand van het mondmasker
 shaping:
   title: Vorming
   description: Bepaalt in hoeverre het mondmasker voorgevormd is
