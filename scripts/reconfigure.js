@@ -482,7 +482,7 @@ function configurePatternUnitTests(pkg, config) {
     peerdeps: Object.keys(peerDependencies(pkg, config, 'pattern')).join(' ')
   };
 
-  for (let file of ["config.test.js"]) {
+  for (let file of ["shared.test.js"]) {
     fs.writeFileSync(
       path.join(dest, file),
       Mustache.render(

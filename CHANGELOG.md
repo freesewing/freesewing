@@ -5,6 +5,15 @@
 ## Unreleased
 
 
+## 2.4.5 (2020-03-19)
+
+### wahid
+
+#### Fixed
+
+ - Check whether frontScyeDart option is zero prior to implementing it
+
+
 ## 2.4.4 (2020-03-15)
 
 ### core

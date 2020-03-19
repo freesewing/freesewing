@@ -5,12 +5,34 @@ const models = require("@freesewing/models")
 const patterns = require("@freesewing/pattern-info")
 
 const Tutorial  = require('../dist')
+
+// Shared tests
 const testPatternConfig = require('../../../tests/patterns/config')
+const testPatternDrafting = require('../../../tests/patterns/drafting')
+const testPatternSampling = require('../../../tests/patterns/sampling')
 
 // Test config
 testPatternConfig(
   'tutorial',
   new Tutorial(),
+  expect,
+  models,
+  patterns
+)
+
+// Test drafting
+testPatternDrafting(
+  'tutorial',
+  Tutorial,
+  expect,
+  models,
+  patterns
+)
+
+// Test sampling
+testPatternSampling(
+  'tutorial',
+  Tutorial,
   expect,
   models,
   patterns

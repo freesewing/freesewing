@@ -180,9 +180,11 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     }
     else if (type === 'number') {
       // Static number
+      return true
     }
     else if (type === 'string') {
       // Static string
+      return true
     }
   }
 }

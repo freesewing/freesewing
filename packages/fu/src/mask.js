@@ -11,41 +11,56 @@ export default part => {
     paperless,
     Snippet,
     snippets,
-    macro
+    macro,
+    utils
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, measurements.headCircumference * options.height)
   points.topRight = new Point((measurements.headCircumference * options.length) / 2, 0)
   points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
-  points.tipCenter = new Point(points.topRight.x, points.bottomRight.y / 2)
+  points.tipCenter = new Point(points.topRight.x, points.bottomRight.y / 4)
 
   points.topEdge = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.2)
   points.bottomEdge = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.18)
-  points.topTip = points.topRight.shiftFractionTowards(points.topLeft, 0.42 * options.shaping)
+  points.topTip = points.topRight.shiftFractionTowards(points.topLeft, 0.1)
   points.bottomTip = points.bottomRight.shiftFractionTowards(
     points.bottomLeft,
-    0.6 * options.shaping
+    0.4
   )
-  points.topTipCp = points.tipCenter.shiftFractionTowards(points.topRight, 0.5)
-  points.bottomTipCp = points.tipCenter.shiftFractionTowards(points.bottomRight, 0.5)
+  points.tipCenterCp2 = points.tipCenter.shiftFractionTowards(points.topRight, 0.55)
+  points.tipCenterCp1 = points.tipCenter.shiftFractionTowards(points.bottomRight, 0.5)
 
-  points.topEdgeCp = points.topEdge.shift(0, measurements.headCircumference * options.curve)
+  points.topTipCp2 = points.topEdge.shift(0, measurements.headCircumference * options.curve)
+  points.topTipCp1 = points.topTip
+    .shiftTowards(points.topTipCp2, points.topTip.dist(points.tipCenterCp2)/2)
+    .rotate(90, points.topTip)
+
+  points.tipCenterCp1 = points.tipCenterCp1.rotate(-4, points.tipCenter)
+  points.tipCenterCp2 = points.tipCenterCp2.rotate(-4, points.tipCenter)
+
+  points.bottomTipCp2 = points.bottomTip.shiftFractionTowards(
+    utils.beamsIntersect(
+      points.bottomTip,
+      points.bottomTip.shift(15, 30),
+      points.tipCenter,
+      points.tipCenterCp1
+    ), 0.75)
 
   paths.seam = new Path()
     .move(points.topEdge)
     .line(points.bottomEdge)
     .line(points.bottomTip)
-    ._curve(points.bottomTipCp, points.tipCenter)
-    .curve_(points.topTipCp, points.topTip)
-    .curve_(points.topEdgeCp, points.topEdge)
+    .curve(points.bottomTipCp2, points.tipCenterCp1, points.tipCenter)
+    .curve(points.tipCenterCp2, points.topTipCp1, points.topTip)
+    .curve_(points.topTipCp2, points.topEdge)
     .close()
     .attr('class', 'fabric')
 
   if (complete) {
-    points.logo = new Point(points.tipCenter.x / 2, points.tipCenter.y / 1.5)
+    points.logo = new Point(points.tipCenter.x / 2, points.tipCenterCp1.y)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
-    points.title = new Point(points.tipCenter.x / 2, points.tipCenter.y * 1.25)
+    points.title = points.logo.shift(90, 40)
     macro('title', {
       at: points.title,
       nr: 1,
@@ -53,16 +68,25 @@ export default part => {
       scale: 0.5
     })
 
-    points.topSnap = points.topEdge.shift(-45, 6)
-    points.bottomSnap = points.bottomEdge.shift(45, 6)
-    snippets.topSnap = new Snippet('snap-male', points.topSnap)
-    snippets.bottomSnap = new Snippet('snap-male', points.bottomSnap)
+    points.ribbon1TopLeft = points.topEdge.shift(-90, 2)
+    points.ribbon1TopRight = points.ribbon1TopLeft.shift(0, 10)
+    points.ribbon1BottomRight = points.ribbon1TopRight.shift(-90, 10)
+    points.ribbon1BottomLeft = points.ribbon1TopLeft.shift(-90, 10)
+    points.ribbon2TopLeft = points.bottomEdge.shift(90, 12)
+    points.ribbon2TopRight = points.ribbon2TopLeft.shift(0, 10)
+    points.ribbon2BottomRight = points.ribbon2TopRight.shift(-90, 10)
+    points.ribbon2BottomLeft = points.ribbon2TopLeft.shift(-90, 10)
 
-    paths.strip = new Path()
-      .move(points.topTip)
-      .curve_(points.topEdgeCp, points.topEdge)
-      .offset(-10)
-      .attr('class', 'stroke-sm dotted')
+    paths.ribbon1 = new Path()
+      .move(points.ribbon1TopLeft)
+      .line(points.ribbon1TopRight)
+      .line(points.ribbon1BottomRight)
+      .line(points.ribbon1BottomLeft)
+      .move(points.ribbon2TopLeft)
+      .line(points.ribbon2TopRight)
+      .line(points.ribbon2BottomRight)
+      .line(points.ribbon2BottomLeft)
+      .attr('class', 'stroke-sm fabric dashed')
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
