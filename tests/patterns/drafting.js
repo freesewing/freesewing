@@ -33,14 +33,16 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
   /*
    * Draft pattern for different models
    */
-  it('Draft for different models:' , () => true)
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    it('Draft for different models:' , () => true)
 
-  for (let size in ourModels) {
-    it(`  - Drafting for ${size} (${breasts ? 'with':'no'} breasts)`, () => {
-      expect(doesItDraft(new Pattern({
-        measurements: ourModels[size],
-      }))).to.equal(true)
-    })
+    for (let size in ourModels) {
+      it(`  - Drafting for ${size} (${breasts ? 'with':'no'} breasts)`, () => {
+        expect(doesItDraft(new Pattern({
+          measurements: ourModels[size],
+        }))).to.equal(true)
+      })
+    }
   }
 
   /*
@@ -48,7 +50,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
    */
   it('Draft parts individually:' , () => true)
   let parts
-  if (['rendertest', 'tutorial'].indexOf(design) === -1) parts = patterns.parts[design]
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) parts = patterns.parts[design]
   else parts = Pattern.config.parts
   for (let name of parts) {
     it(`  - ${name} should draft on its own`, () => {

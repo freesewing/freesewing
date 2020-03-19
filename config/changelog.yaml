@@ -1,15 +1,22 @@
 Unreleased:
   date:
   Added:
-  Changed:
+  Changes:
+  Deprecated:
+  Fixed:
+  Removed:
+  Security:
+
+2.4.5:
+  date: 2020-03-19
+  Changes:
+    fu:
+      - Improved shape based on community feedback
     utils:
       - neckstimate() now returns values rounded to nearest mm
-  Deprecated:
   Fixed:
     wahid:
       - Check whether frontScyeDart option is zero prior to implementing it
-  Removed:
-  Security:
 
 2.4.4:
   date: 2020-03-15

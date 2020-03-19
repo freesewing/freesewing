@@ -31,50 +31,56 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
   const measurements = ourModels
     [breasts ? 'size34' : 'size42']
 
-  /*
-   * Sample different measurements
-   */
-  it('Sample different measurements:' , () => true)
-  for (let measurement of Pattern.config.measurements) {
-    it(`  Sample ${measurement}:` , () => {
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    /*
+     * Sample different measurements
+     */
+    it('Sample different measurements:' , () => true)
+    for (let measurement of Pattern.config.measurements) {
+      it(`  Sample ${measurement}:` , () => {
+        expect(doesItSample(new Pattern({
+          sample: {
+            type: 'measurement',
+            measurement
+          },
+          measurements
+        }))).to.equal(true)
+      })
+    }
+  }
+
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    /*
+     * Sample different options
+     */
+    it('Sample different options:' , () => true)
+    for (let option in Pattern.config.options) {
+      it(`  Sample ${option}:` , () => {
+        expect(doesItSample(new Pattern({
+          sample: {
+            type: 'option',
+            option
+          },
+          measurements
+        }))).to.equal(true)
+      })
+    }
+  }
+
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    /*
+     * Sample pattern for different models
+     */
+    it('Sample pattern for different models:' , () => {
       expect(doesItSample(new Pattern({
         sample: {
-          type: 'measurement',
-          measurement
+          type: 'models',
+          models: ourModels,
         },
         measurements
       }))).to.equal(true)
     })
   }
-
-  /*
-   * Sample different options
-   */
-  it('Sample different options:' , () => true)
-  for (let option in Pattern.config.options) {
-    it(`  Sample ${option}:` , () => {
-      expect(doesItSample(new Pattern({
-        sample: {
-          type: 'option',
-          option
-        },
-        measurements
-      }))).to.equal(true)
-    })
-  }
-
-  /*
-   * Sample pattern for different models
-   */
-  it('Sample pattern for different models:' , () => {
-    expect(doesItSample(new Pattern({
-      sample: {
-        type: 'models',
-        models: ourModels,
-      },
-      measurements
-    }))).to.equal(true)
-  })
 
 }
 
