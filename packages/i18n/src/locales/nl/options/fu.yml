@@ -7,4 +7,4 @@ length:
   description: Bepaalt de lengte van het mondmasker
 curve:
   title: Curve
-  description: Controls the curvature of the upper edge of the face mask
+  description: Bepaalt de curve van de bovenrand van het mondmasker
