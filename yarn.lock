@@ -1959,8 +1959,13 @@
 "@freesewing/hugo@file:packages/hugo":
   version "2.4.5"
 
-"@freesewing/i18n@file:packages/i18n":
+"@freesewing/i18n@^2.4.5":
   version "2.4.5"
+  resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.4.5.tgz#ec5b7b1dfccbddf5489563d64c3a8096c58ce4a5"
+  integrity sha512-oFUE2r9bw03UoD2d7zH2CprnWl6c2MhIZ+VLU6wRLC+7+9IKPuF1kjoXgMbOFPHsxRXMqnOkC1ynngL4vzE3TQ==
+
+"@freesewing/i18n@file:packages/i18n":
+  version "2.4.5-1"
 
 "@freesewing/jaeger@file:packages/jaeger":
   version "2.4.5"
@@ -7119,6 +7124,11 @@ commander@^4.0.0, commander@^4.0.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
   integrity sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
 
+commander@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.0.0.tgz#dbf1909b49e5044f8fdaf0adc809f0c0722bdfd0"
+  integrity sha512-JrDGPAKjMGSP1G0DUoaceEJ3DZgAfr/q6X7FVk4+U5KxUSKviYGM2k6zWkfyyBHy5rAtzgYJFa1ro2O9PtoxwQ==
+
 common-path-prefix@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/common-path-prefix/-/common-path-prefix-1.0.0.tgz#cd52f6f0712e0baab97d6f9732874f22f47752c0"
@@ -7595,7 +7605,7 @@ create-error-class@^3.0.0:
     "@freesewing/i18n" "^2.4.5"
     "@freesewing/pattern-info" "^2.4.5"
     chalk "^2.4.2"
-    commander "^2.19.0"
+    commander "^5.0.0"
     conf "^2.2.0"
     cp-file "^6.0.0"
     execa "^1.0.0"
