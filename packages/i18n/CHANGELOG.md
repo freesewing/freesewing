@@ -6,6 +6,11 @@
 **Note:** Version bump only for package i18n
 
 
+## 2.4.6 (2020-03-23)
+
+### Fixed
+
+ - Fixed an bug in the i18n package
 ## 2.4.5 (2020-03-19)
 
 **Note:** Version bump only for package i18n

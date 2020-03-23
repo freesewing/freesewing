@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-bust
 
 
+## 2.4.6 (2020-03-23)
+
+**Note:** Version bump only for package plugin-bust
+
+
 ## 2.4.5 (2020-03-19)
 
 **Note:** Version bump only for package plugin-bust

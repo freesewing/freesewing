@@ -7,6 +7,12 @@ Unreleased:
   Removed:
   Security:
 
+2.4.6:
+  date: 2020-03-23
+  Fixed:
+    i18n:
+      - Fixed an bug in the i18n package
+
 2.4.5:
   date: 2020-03-19
   Changes:
