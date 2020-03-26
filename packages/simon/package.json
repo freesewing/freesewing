@@ -48,7 +48,7 @@
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "babel-eslint": "10.0.1",
     "eslint": "^5.16.0",
-    "babel-jest": "24.7.1",
+    "babel-jest": "25.2.0",
     "jest": "24.7.1",
     "@freesewing/components": "^2.4.5",
     "@freesewing/css-theme": "^2.4.5",
