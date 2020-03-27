@@ -3,7 +3,7 @@ height:
   title: Height
   description: Controls the height of the face mask
 length:
-  title: Lenght
+  title: Length
   description: Controls the length of the face mask
 curve:
   title: Curve
