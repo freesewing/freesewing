@@ -7,4 +7,4 @@ length:
   description: Controla la longitud de la mascarilla
 curve:
   title: Curva
-  description: Controls the curvature of the upper edge of the face mask
+  description: Controla la curvatura del borde superior de la mascarilla
