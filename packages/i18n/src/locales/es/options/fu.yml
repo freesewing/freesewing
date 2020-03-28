@@ -1,10 +1,10 @@
 ---
 height:
-  title: Height
-  description: Controls the height of the face mask
+  title: Altura
+  description: Controla la altura de la mascarilla
 length:
-  title: Length
-  description: Controls the length of the face mask
+  title: Longitud
+  description: Controla la longitud de la mascarilla
 curve:
-  title: Curve
+  title: Curva
   description: Controls the curvature of the upper edge of the face mask
