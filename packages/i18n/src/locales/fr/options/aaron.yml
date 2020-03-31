@@ -1,7 +1,7 @@
 ---
 armholeDrop:
   title: Abaissement d'emmanchure
-  description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.
+  description: Il s'agit d'abaisser l'emmanchure avec cette valeur. Les valeurs négatives la remonteront.
 backlineBend:
   title: Forme de l'arrière des emmanchures
   description: Détermine la forme/courbure de l'arrière des emmanchures.
