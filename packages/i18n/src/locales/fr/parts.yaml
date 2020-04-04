@@ -2,11 +2,11 @@
 back: Dos
 backBase: Base dorsale
 base: Base
-bentBack: Arrière Bent
-bentBase: Base Bent
-bentFront: Avant Bent
-bentSleeve: Manche Bent
-bentTopSleeve: Manche Bent
+bentBack: Courbure arrière
+bentBase: Base de courbure
+bentFront: Courbure avant
+bentSleeve: Pli intérieur du coude
+bentTopSleeve: Pli du haut de manche
 bentUnderSleeve: Sous-manche Bent
 buttonholePlacket: Patte de boutonnière
 buttonPlacket: Patte de boutonnage
