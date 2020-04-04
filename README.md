@@ -45,10 +45,9 @@
 
 This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).
 
-## Getting started  🤔
+## Getting started ⚡ 
 
-As this is a monorepo. You'll need [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.
-
+As this is a monorepo. You'll need [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
 Once you have those, clone (or fork) this repo and run `yarn kickstart`:
 
 ```bash
