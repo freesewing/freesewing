@@ -221,7 +221,7 @@ yourRights: Vos droits
 makerDocs: Documentation pour les couturiers
 devDocs: Documentation pour les développeurs
 slogan: Une librairie JavaScript pour des patrons de couture sur mesure
-getStarted: Pour démarrer
+getStarted: Pour commencer
 apiReference: Référence API
 tutorial: Tutoriel
 editThisPage: Éditer cette page
@@ -230,8 +230,8 @@ various: Divers
 sewing: Couture
 examples: Exemples
 by: par
-years: Des années
-pricing: Nos montants de donation
+years: Années
+pricing: Tarifs
 createFirst: Commencer en créant un nouveau patron
 noPattern: Vous n'avez pas (encore) de patrons. Créez un nouveau patron, puis sauvegardez-le sur votre compte.
 modelFirst: Commencez par ajouter des mensurations
@@ -285,7 +285,7 @@ supportNag: <b>Free</b>Sewing est <b>gratuit</b>, mais nous apprécierions si vo
 madeToMeasure: Sur-mesure
 sizes: Tailles
 standardSizes: Tailles standard
-accountRequired: This feature requires a FreeSewing account
+accountRequired: Cette fonctionnalité nécessite un compte FreeSewing
 size: Taille
 switchToThing: 'Passer à {thing}'
 saveThing: 'Enregistrer {thing}'
