@@ -7,4 +7,4 @@ length:
   description: Contrôle la longueur du masque
 curve:
   title: Courbe
-  description: Controls the curvature of the upper edge of the face mask
+  description: Contrôle la courbe du bord supérieur du masque
