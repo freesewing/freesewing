@@ -286,25 +286,25 @@ madeToMeasure: Sur-mesure
 sizes: Tailles
 standardSizes: Tailles standard
 accountRequired: This feature requires a FreeSewing account
-size: Size
-switchToThing: 'Switch to {thing}'
-saveThing: 'Save {thing}'
-shareThing: 'Share {thing}'
-link: Link
-cloneThing: 'Clone {thing}'
-cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
-furtherReading: Further reading
-saveAsNewPattern: Save As New Pattern
-saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
+size: Taille
+switchToThing: 'Passer à {thing}'
+saveThing: 'Enregistrer {thing}'
+shareThing: 'Partager {thing}'
+link: Lien
+cloneThing: 'Dupliquer {thing}'
+cloneDescription: Recréer une copie exacte, en utilisant les mesures du patron d'origine.
+furtherReading: En lire plus
+saveAsNewPattern: Enregistrer en tant que nouveau patron
+saveAsNewPattern-txt: Stocker (une copie de) ce patron sur votre compte FreeSewing
 exportPattern: Exporter le patron
-printPattern: Print pattern
-exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
-editThing: 'Edit {thing}'
-editPattern-txt: Load this pattern in the pattern editor
-featureRequiresAccount: This feature requires a FreeSewing account
+printPattern: Imprimer le patron
+exportPattern-txt: Exporter au format PDF adapté à votre imprimante, ou télécharger ce modèle dans une variété de formats
+editThing: 'Modifier {thing}'
+editPattern-txt: Charger ce patron dans l'éditeur de patron
+featureRequiresAccount: Cette fonctionnalité nécessite un compte FreeSewing
 zoom: Zoom
-zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
-savePattern-txt: Store this pattern in your FreeSewing account
+zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
+savePattern-txt: Stocker ce patron sur votre compte FreeSewing
 comparePattern: Compare pattern
 comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
 recreatePattern: Recreate pattern
