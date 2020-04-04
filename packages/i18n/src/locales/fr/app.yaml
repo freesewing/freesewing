@@ -129,24 +129,24 @@ orPayPerYear: Ou payer par an
 other: Autre
 otherThing: "Autres {thing}"
 ourPatrons: Nos mécènes
-patron-2: Soldat
+patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
-patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
+patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Mécène, veuillez contacter Joost.
 patron: Mécène
 patronPitch: Si vous pensez que ce que nous faisons en vaut la peine, et si vous pouvez consacrer quelques pièces chaque mois sans trop de difficulté, vous aussi pourriez devenir mécène de FreeSewing.
-patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
+patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
 pattern: Patron
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
-perMonth: par mois
+perMonth: Par Mois
 pleaseEnterAValidEmailAddress: Merci d'entrer une adresse e-mail valide
-pleaseIncludeTheInformationBelow: S'il vous plaît inclure les informations ci-dessous
+pleaseIncludeTheInformationBelow: Merci d'inclure les informations ci-dessous
 preview: Aperçu
-privacyNotice: Avis de confidentialité
-proceedWithCaution: Procéder avec prudence
+privacyNotice: Politique de confidentialité
+proceedWithCaution: Procédez avec précaution
 profile: Profil
 relatedLinks: Liens connexes
 remove: Supprimer
@@ -155,26 +155,26 @@ reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
 resendActivationEmailMessage: 'Remplissez l''adresse e-mail avec laquelle vous vous êtes inscrit, et nous vous enverrons un nouveau message de confirmation.'
 resendActivationEmail: Renvoyer le mail d'activation
-resetPassword: Réintialiser le mot de passe
+resetPassword: Réinitialiser le mot de passe
 reset: Réinitialiser
-restoreDefaults: Restaurer les valeurs par défaut
-restoreDesignDefaults: Restaurer les paramètres par défaut du design
-restorePatternDefaults: Restaurer les paramètres par défaut du patron
+restoreDefaults: Rétablir les paramètres par défaut
+restoreDesignDefaults: Rétablir les paramètres par défaut du design
+restorePatternDefaults: Rétablie les paramètres par défaut du patron
 saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
 searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
-searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez?
+searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez ?
 search: Chercher
 selectAPartToMoveMirrorOrRotate: Sélectionnez une pièce à déplacer, inverser ou faire pivoter
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
 settings: Paramètres
 sewingHelp: Aide de couture
-sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
+sewingPatternsForNonAveragePeople: Patrons de couture pour personnes non-standards
 share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
-signUp: Créer un compte
+signUp: S'inscrire
 signupWithProvider: 'Inscrivez-vous avec<br>{provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
@@ -192,10 +192,10 @@ thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
 txt-footer: Freesewing est la création de Joost et ses contributeurs<br>avec le soutien financier de nos mécènes
-txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
+txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir ?<br>Freesewing est gratuit pour tout le monde. On ne vous demande rien.
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
-txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
-txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
+txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une part de notre swag Freesewing tant convoité chez vous, partout dans le monde.
+txt-tier8: "Si vous ne voulez simplement pas nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi : swag supplémentaire !"
 txt-tiers: "Freesewing est financé par un modèle de souscription volontaire"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
@@ -209,7 +209,7 @@ weEncourageYouToReportThis: Nous vous encourageons à signaler ceci
 welcomeAboard: Bienvenue à bord
 welcome: Bienvenue
 weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.
-whatIsThis: Qu'est-ce que c'est
+whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yahou !
