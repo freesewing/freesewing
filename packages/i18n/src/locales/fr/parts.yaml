@@ -1,6 +1,6 @@
 ---
 back: Dos
-backBase: Base dorsale
+backBase: Base dos
 base: Base
 bentBack: Dos de Bent
 bentBase: Base de Bent
@@ -16,19 +16,19 @@ cuff: Poignet
 fabricTail: Queue en tissu
 fabricTip: Pointe en tissu
 frontBase: Base avant
-frontFacing: Doublure avant FIXME
+frontFacing: Doublure avant
 front: Avant
 frontLeft: Avant gauche
 frontLining: Doublure avant
 frontRight: Avant droit
-hoodCenter: Capuchon centre
-hood: Capuchon
-hoodSide: Capuchon côté
-inset: Encart
-interfacingTail: Queue en entoilage
-interfacingTip: Pointe en entoilage
-liningTail: Queue en doublure
-liningTip: Pointe en doublure
+hoodCenter: Milieu de capuche
+hood: Capuche
+hoodSide: Côté de capuche
+inset: Incrusté
+interfacingTail: Entoilage de queue
+interfacingTip: Entoilage de pointe
+liningTail: Doublure de queue
+liningTip: Doublure de pointe
 loop: Boucle
 panel1: Pièce 1
 panel2: Pièce 2
@@ -37,16 +37,16 @@ panel4: Pièce 4
 panel5: Pièce 5
 panel6: Pièce 6
 panels: Pièces
-pocketBag: Sac de poche
+pocketBag: Fond de poche
 pocketFacing: Doublure de poche
 pocketInterfacing: Entoilage de poche
 pocket: Poche
-pocketWelt: Passepoile
+pocketWelt: Rabat de poche
 side: Côté
 sleeveBase: Base de manche
 sleevecap: Tête de manche
-sleevePlacketOverlap: Patte de manche supérieur
-sleevePlacketUnderlap: Patte de manche en dessous
+sleevePlacketOverlap: Patte de manche supérieure
+sleevePlacketUnderlap: Patte de manche inférieure
 sleeve: Manche
 topSleeve: Manche
 top: Haut
