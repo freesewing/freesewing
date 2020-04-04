@@ -8,7 +8,6 @@ customRollup:
   - css-theme
   - gatsby-remark-jargon
   - i18n
-  - plugin-theme
   - remark-jargon
   - utils
   - prettier-config

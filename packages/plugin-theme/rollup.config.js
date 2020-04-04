@@ -1,37 +1,36 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
-import sass from 'rollup-plugin-sass'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import minify from 'rollup-plugin-babel-minify'
-import { version, name, description, author, license, main, module } from './package.json'
-import fs from 'fs'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import { name, version, description, author, license, main, module } from './package.json'
+
+const output = [
+  {
+    file: main,
+    format: 'cjs',
+    sourcemap: true
+  }
+]
+if (typeof module !== 'undefined')
+  output.push({
+    file: module,
+    format: 'es',
+    sourcemap: true
+  })
 
 export default {
   input: 'src/index.js',
-  output: [
-    {
-      file: main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: module,
-      format: 'es',
-      sourcemap: true
-    }
-  ],
+  output,
   plugins: [
     peerDepsExternal(),
-    resolve(),
+    resolve({ modulesOnly: true }),
+    commonjs(),
     json(),
     babel({
-      exclude: 'node_modules/**'
-    }),
-    sass({
-      output(styles, styleNodes) {
-        fs.writeFileSync('./src/bundle.css.js', 'export default `' + styles + '`;')
-      }
+      exclude: 'node_modules/**',
+      plugins: ['@babel/plugin-proposal-object-rest-spread']
     }),
     minify({
       comments: false,
