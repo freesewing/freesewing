@@ -1,26 +1,45 @@
 {
-  "name": "test",
-  "version": "0.0.1",
-  "description": "",
-  "author": "Erica",
+  "name": "@freesewing/diana",
+  "version": "2.4.6",
+  "description": "A FreeSewing pattern for a top with a draped neck",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
   "license": "MIT",
-  "repository": "Erica/test",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "pattern",
+    "sewing",
+    "sewing pattern"
+  ],
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
+  "module": "dist/index.mjs",
   "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c",
+    "test": "echo \"diana: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "pubforce": "npm publish",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "netlify": "echo \"Not configured yet\"",
+    "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
+    "testonlyci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
+  "peerDependencies": {
+    "@freesewing/core": "^2.4.6",
+    "@freesewing/plugin-bundle": "^2.4.6",
+    "@freesewing/brian": "^2.4.6"
+  },
+  "dependencies": {},
   "devDependencies": {
     "react": "^16.8",
     "react-dom": "^16.8",
@@ -29,23 +48,18 @@
     "eslint": "^5.16.0",
     "babel-jest": "24.7.1",
     "jest": "24.7.1",
-    "@freesewing/core": "latest",
-    "@freesewing/plugin-bundle": "latest",
-    "@freesewing/components": "latest",
-    "@freesewing/css-theme": "latest",
-    "@freesewing/i18n": "latest",
-    "@freesewing/mui-theme": "latest",
-    "@freesewing/patterns": "latest",
-    "@freesewing/plugin-bust": "latest",
-    "@freesewing/plugin-buttons": "latest",
-    "@freesewing/plugin-debug": "latest",
-    "@freesewing/plugin-designer": "latest",
-    "@freesewing/plugin-flip": "latest",
-    "@freesewing/utils": "latest",
+    "@freesewing/components": "^2.4.6",
+    "@freesewing/css-theme": "^2.4.6",
+    "@freesewing/i18n": "^2.4.6",
+    "@freesewing/mui-theme": "^2.4.6",
+    "@freesewing/plugin-bust": "^2.4.6",
+    "@freesewing/plugin-buttons": "^2.4.6",
+    "@freesewing/plugin-flip": "^2.4.6",
+    "@freesewing/utils": "^2.4.6",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.0.0",
     "webpack": "4.29.6",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^4.0.1",
@@ -56,11 +70,27 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
-    "@material-ui/core": "^4.0.1",
-    "@material-ui/icons": "^4.0.1",
+    "@material-ui/core": "4.0.1",
+    "@material-ui/icons": "4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",
     "react-intl": "2.8.0",
     "prop-types": "15.7.2",
-    "file-saver": "^2.0.2"
+    "mocha": "^6.1.4",
+    "chai": "^4.1.2",
+    "chai-string": "^1.4.0",
+    "@babel/register": "^7.4.4"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5"
   }
 }

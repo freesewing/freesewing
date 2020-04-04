@@ -36,7 +36,8 @@
   },
   "peerDependencies": {
     "@freesewing/core": "^2.4.6",
-    "@freesewing/plugin-bundle": "^2.4.6"
+    "@freesewing/plugin-bundle": "^2.4.6",
+    "@freesewing/brian": "^2.4.6"
   },
   "dependencies": {},
   "devDependencies": {

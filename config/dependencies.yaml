@@ -51,6 +51,9 @@ aaron:
 bent:
   peer:
     "@freesewing/brian": "^{{version}}"
+breanna:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 carlita:
   peer:
     "@freesewing/brian": "^{{version}}"
@@ -113,6 +116,9 @@ create-freesewing-pattern:
     "which": "^1.3.1"
     "@freesewing/i18n": "^{{version}}"
     "@freesewing/pattern-info": "^{{version}}"
+diana:
+  peer:
+    "@freesewing/brian": "^{{version}}"
 gatsby-remark-jargon:
   _:
     "remark-jargon": "^{{version}}"

@@ -5,6 +5,7 @@ const benjamin = require('@freesewing/benjamin').config
 const bent = require('@freesewing/bent').config
 const brian = require('@freesewing/brian').config
 const breanna = require('@freesewing/breanna').config
+const diana = require('@freesewing/diana').config
 const bruce = require('@freesewing/bruce').config
 const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
@@ -33,6 +34,7 @@ const patterns = {
   bent,
   brian,
   breanna,
+  diana,
   bruce,
   carlita,
   carlton,
