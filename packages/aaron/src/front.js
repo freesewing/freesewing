@@ -65,15 +65,21 @@ export default function(part) {
   // Hem
   points.hem.x = points.hips.x
 
-  // Armhole drop
-  let side = new Path()
-    .move(points.hem)
-    .line(points.waist)
-    .curve(points.waistCp2, points.armhole, points.armhole)
-  let split = side.intersectsY(points.armhole.y * (1 + options.armholeDrop)).pop()
-  paths.side = side.split(split)[0]
+  // Keep armhole drop from going below the wait line
+  let dropY = points.armhole.y * (1 + options.armholeDrop)
+  if (dropY >= points.waist.y) {
+    paths.side = new Path().move(points.hem).line(points.waist)
+    points.aaronArmhole = points.waist
+  } else {
+    let side = new Path()
+      .move(points.hem)
+      .line(points.waist)
+      .curve(points.waistCp2, points.armhole, points.armhole)
+    let split = side.intersectsY(points.armhole.y * (1 + options.armholeDrop)).pop()
+    points.aaronArmhole = split
+    paths.side = side.split(split)[0]
+  }
   paths.side.render = false
-  points.aaronArmhole = split
 
   // Armhole
   points.armholeCorner = utils.beamsIntersect(
