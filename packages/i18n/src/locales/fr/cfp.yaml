@@ -6,14 +6,14 @@ patternName: Nom de patron
 patternType: Type de patron
 patternCreated: Le squelette de votre patron a été créé sur
 runTheseCommands: Pour commencer, exécutez ces deux commandes
-startRollup: Dans un terminal, démarrez l'installateur rollup en mode veille
+startRollup: Dans un terminal, démarrez le bundler rollup en mode watch
 startWebpack: Et dans un autre, exécutez le serveur de développement webpack
 devDocsAvailableAt: La documentation pour développeur est disponible sur
 talkToUs: Pour des questions, des avis ou des suggestions, venez nous parler sur notre chat
-draftYourPattern: Ébaucher votre patron
+draftYourPattern: Dessiner votre patron
 testYourPattern: Tester votre patron
 renderInBrowser: Cliquer ci-dessous pour afficher votre patron dans votre navigateur.
-weWillReRender: Lorsque vous effectuez des modifications, nous allons mettre à jour le rendu pour vous.
+weWillReRender: Lorsque vous effectuez des modifications, nous mettons à jour le rendu pour vous.
 youCan: Vous pouvez
 enterMeasurements: Entrer des mesures manuellement
 preloadMeasurements: Pré-charger un set de mesures
