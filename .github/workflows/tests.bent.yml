@@ -29,4 +29,4 @@ jobs:
       - name: Build pattern
         run: cd packages/bent && npm run build
       - name: Run pattern unit tests
-        run: cd packages/bent && npm run testonlyci
+        run: cd packages/bent && npm run testci

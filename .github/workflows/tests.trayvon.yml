@@ -29,4 +29,4 @@ jobs:
       - name: Build pattern
         run: cd packages/trayvon && npm run build
       - name: Run pattern unit tests
-        run: cd packages/trayvon && npm run testonlyci
+        run: cd packages/trayvon && npm run testci
