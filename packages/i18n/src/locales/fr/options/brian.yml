@@ -57,38 +57,38 @@ sleevecapFrontFactorY:
   title: Tête de manche devant Y
   description: Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des Y (vertical)
 sleevecapQ1Offset:
-  title: Tête de manche Q1 offset
+  title: Tête de manche décalage Q1
   description: Contrôle la courbure du tête de manche dans le premier quadrant (emmanchure devant).
 sleevecapQ2Offset:
-  title: Tête de manche Q2 offset
+  title: Tête de manche décalage Q2
   description: Contrôle la courbure du tête de manche dans le deuxième quadrant (épaule avant).
 sleevecapQ3Offset:
-  title: Tête de manche Q3 offset
+  title: Tête de manche décalage Q3
   description: Contrôle la courbure du tête de manche dans le troisième quadrant (épaule arrière).
 sleevecapQ4Offset:
-  title: Tête de manche Q4 offset
+  title: Tête de manche décalage Q4
   description: Contrôle la courbure du tête de manche dans le quatrième quadrant (emmanchure au dos).
 sleevecapQ1Spread1:
-  title: Tête de manche Q1 propagation vers le bas
-  description: Contrôle la propagation de la courbure dans le premiere quadrant du tête de manche vers l'emmanchure.
+  title: Tête de manche abaissement Q1
+  description: Contrôle l'abaissement de la courbure du premier quadrant de la tête de manche vers l'emmanchure
 sleevecapQ1Spread2:
-  title: Tête de manche Q1 propagation vers le haut
-  description: Contrôle la propagation de la courbure dans le premiere quadrant du tête de manche vers l'épaule.
+  title: Tête de manche élévation Q1
+  description: Contrôle l'élévation de la courbure du premier quadrant de la tête de manche vers l'épaule
 sleevecapQ2Spread1:
-  title: Tête de manche Q2 propagation vers le bas
-  description: Contrôle la propagation de la courbure dans le deuxième quadrant du tête de manche vers l'emmanchure.
+  title: Tête de manche abaissement Q2
+  description: Contrôle l'abaissement de la courbure du second quadrant de la tête de manche vers l'emmanchure
 sleevecapQ2Spread2:
-  title: Tête de manche Q2 propagation vers le haut
-  description: Contrôle la propagation de la courbure dans le deuxième quadrant du tête de manche vers l'épaule.
+  title: Tête de manche élévation Q2
+  description: Contrôle l'élévation de la courbure du second quadrant de la tête de manche vers l'épaule
 sleevecapQ3Spread1:
-  title: Tête de manche Q3 propagation vers le haut
-  description: Contrôle la propagation de la courbure dans le troisième quadrant du tête de manche vers l'épaule.
+  title: Tête de manche élévation Q3
+  description: Contrôle l'élévation de la courbure du troisième quadrant de la tête de manche vers l'épaule
 sleevecapQ3Spread2:
-  title: Tête de manche Q3 propagation vers le bas
-  description: Contrôle la propagation de la courbure dans le troisième quadrant du tête de manche vers l'emmanchure.
+  title: Tête de manche abaissement Q3
+  description: Contrôle l'abaissement de la courbure du troisième quadrant de la tête de manche vers l'emmanchure
 sleevecapQ4Spread1:
-  title: Tête de manche Q4 propagation vers le haut
-  description: Contrôle la propagation de la courbure dans le quatrième quadrant du tête de manche vers l'épaule.
+  title: Tête de manche élévation Q4
+  description: Contrôle l'élévation de la courbure du quatrième quadrant de la tête de manche vers l'épaule
 sleevecapQ4Spread2:
   title: Tête de manche Q4 propagation vers le bas
   description: Contrôle la propagation de la courbure dans le quatrième quadrant du tête de manche vers l'emmanchure.
