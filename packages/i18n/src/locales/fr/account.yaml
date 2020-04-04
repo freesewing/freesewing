@@ -5,7 +5,7 @@ avatar: Avatar
 avatarInfo: Votre avatar ou votre photo de profil s'afficheront sur votre page de profil.
 avatarTitle: Configurez votre photo de profil
 bio: Bio
-bioInfo: C’est ici que vous pouvez parler un peu de vous aux autres utilisateurs de freesewing. Ce champ prend en charge MarkDown, vous pouvez donc également inclure des liens. Si vous avez un blog, c’est là que vous vous connectez pour que les autres puissent le découvrir.
+bioInfo: C’est ici que vous pouvez parler un peu de vous aux autres utilisateurs de freesewing. Ce champ prend en charge MarkDown (langage de balisage) ; vous pouvez donc également inclure des liens. Si vous avez un blog, c’est là que vous indiquez le lien pour que les autres puissent le découvrir.
 bioTitle: Rédigez une courte biographie
 currentPassword: Mot de passe actuel
 email: Adresse mail
