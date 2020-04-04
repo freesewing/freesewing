@@ -12,7 +12,7 @@ email: Adresse mail
 emailInfo: L'adresse e-mail associée à votre compte est importante car elle sera utilisée pour retrouver l'accès à votre compte si vous oubliez votre mot de passe. Pour cette raison, la modification de votre adresse e-mail nécessite une confirmation.
 emailTitle: Entrez l'adresse e-mail que vous souhaitez associer à ce compte
 exportYourData: Exportez vos données
-exportYourDataInfo: La protection générale des données de l'UE (GDPR) garantit votre droit à la portabilité des données.
+exportYourDataInfo: La protection générale des données de l'UE (RGPD) garantit votre <em>droit à la portabilité</em>  - le droit d'obtenir et de réutiliser vos données personnelles à des fins personnelles, ou sur pour d'autres services.
 exportYourDataTitle: Cliquez ci-dessous pour télécharger vos données personnelles
 github: GitHub
 githubInfo: Si vous fournissez votre nom d'utilisateur GitHub, votre page de profil contiendra un lien vers votre compte Github, afin que les visiteurs puissent découvrir vos contributions au code, vous mettre en vedette ou vous suivre.
