@@ -90,8 +90,8 @@ sleevecapQ4Spread1:
   title: Tête de manche élévation Q4
   description: Contrôle l'élévation de la courbure du quatrième quadrant de la tête de manche vers l'épaule
 sleevecapQ4Spread2:
-  title: Tête de manche Q4 propagation vers le bas
-  description: Contrôle la propagation de la courbure dans le quatrième quadrant du tête de manche vers l'emmanchure.
+  title: Tête de manche abaissement Q4
+  description: Contrôle l'abaissement de la courbure du quatrième quadrant de la tête de manche vers l'emmanchure
 sleeveWidthGuarantee:
   title: Largeur des manches garantie
-  description: Contrôle la quantité de largeur de manche garantie. Cela détermine à quel point nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure.
+  description: Contrôle la largeur de manche garantie. Cela détermine à quel point nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure.
