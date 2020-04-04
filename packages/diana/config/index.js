@@ -19,14 +19,10 @@ export default {
       'lengthBonus',
       'sleeveLengthBonus'
     ],
-    style: [
-      'drapeAngle',
-      'shoulderSeamLength'
-    ],
+    style: ['drapeAngle', 'shoulderSeamLength'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
-      'backNeckCutout',
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
@@ -89,26 +85,25 @@ export default {
     brianFitSleeve: true,
     brianFitCollar: true,
     collarEase: 0,
-
+    backNeckCutout: 0.05,
 
     // Angles
-    drapeAngle: {deg: 20, min:10, max:30},
+    drapeAngle: { deg: 20, min: 10, max: 30 },
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     cuffEase: { pct: 20, min: 0, max: 30 },
     lengthBonus: { pct: 0, min: 0, max: 50 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
-    shoulderSeamLength: { pct: 35, min: 0.1, max:60},
+    shoulderSeamLength: { pct: 35, min: 0.1, max: 60 },
 
     armholeDepthFactor: { pct: 55, min: 50, max: 70 },
-    backNeckCutout: { pct: 5, min: 2, max: 8 },
 
     frontArmholeDeeper: { pct: 0, min: 0, max: 1.5 },
 
     shoulderEase: { pct: 0, min: -2, max: 6 },
-    waistEase: { pct: 0, min:-10, max:20},
-    hipsEase: { pct:0, min: -10, max:20},
+    waistEase: { pct: 0, min: -10, max: 20 },
+    hipsEase: { pct: 0, min: -10, max: 20 },
     chestEase: { pct: 0, min: -10, max: 20 },
     bicepsEase: { pct: 0, min: -5, max: 50 },
 
