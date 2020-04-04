@@ -1,6 +1,6 @@
 ---
 author: Auteur
-githubRepo: Dépôt GitHub
+githubRepo: Répertoire GitHub
 packageManager: Gestionnaire de package
 patternName: Nom de patron
 patternType: Type de patron
@@ -25,4 +25,4 @@ designModeIsOn: Le mode Conception est activé
 designModeIsOff: Le mode Conception est désactivé
 turnOn: Activer
 turnOff: Désactiver
-validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
+validNameWarning: "Veuillez choisir un nom différent car ce nom causerait des problèmes.\nNous (ré-)utilisons le nom du modèle comme nom de paquet NPM.\nLes noms de paquets doivent être en minuscule et ne peuvent pas contenir de caractères spéciaux.\nVeuillez donc nommer votre patron en conséquence, comme :"
