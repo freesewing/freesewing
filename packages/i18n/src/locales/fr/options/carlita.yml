@@ -1,4 +1,4 @@
 ---
 contour:
-  title: Angle des découpes princesse
-  description: Contrôle la netteté de la couture princesse.
+  title: Angle des découpes princesses
+  description: Contrôle à quel point la courbe de la découpe princesse sera saillante ou adoucie.
