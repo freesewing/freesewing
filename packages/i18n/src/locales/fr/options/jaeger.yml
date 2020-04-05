@@ -9,8 +9,8 @@ sleeveVentWidth:
   title: Largeur de la fente des manches
   description: Largeur de la fente des manches
 chestShaping:
-  title: Mise en forme de la poitrine
-  description: Quantité de mise en forme pour ajuster la courbe de la poitrine
+  title: Courbe du col poitrine
+  description: Quantité d'ajustement de la courbe au niveau de la poitrine
 frontDartPlacement:
   title: Emplacement des pinces devant
   description: Emplacement des pinces devant
