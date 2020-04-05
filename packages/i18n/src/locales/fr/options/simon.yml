@@ -64,13 +64,13 @@ collarRoll:
   title: Repli du col
   description: La valeur rendant le tombant du col plus large que le pied de col.
 collarStandBend:
-  title: Courbure du col
-  description: La courbure du pied de col.
+  title: Courbure centrale du pied de col
+  description: La courbure centrale du pied de col.
 collarStandCurve:
-  title: Courbe du pied de col
-  description: La courbe du pied de col.
+  title: Courbe des extrémités du pied de col
+  description: La courbe des extrémités du pied de col.
 collarStandWidth:
-  title: Largeur du col
+  title: Largeur du pied de col
   description: Largeur du pied de col.
 cuffButtonRows:
   title: Rangée de boutons de manchette
@@ -79,21 +79,21 @@ cuffButtonRows:
     '1': rangée de boutons de manchette simple
     '2': rangée de boutons de manchette double
 cuffDrape:
-  title: Drapé d'emmanchure
-  description: La largeur de la manche en excès par rapport au poignet, à l'endroit où ils sont joints.
+  title: Drapé du bas de manche
+  description: Il s'agit de la largeur supplémentaire de tissu de la manche par rapport au poignet, à l'endroit où ils sont joints.
 cuffLength:
   title: Longueur de poignet
   description: La longueur des poignets.
 cuffStyle:
   title: Style de poignet
-  description: Style d'emmanchure.
+  description: Style de poignets.
   options:
-    roundedBarrelCuff: Poignet classique arrondi
-    angledBarrelCuff: Poignet classique angulaire
-    straightBarrelCuff: Poignet classique droit
-    roundedFrenchCuff: Poignet français arrondi
-    angledFrenchCuff: Poignet français angulaire
-    straightFrenchCuff: Poignet français droit
+    roundedBarrelCuff: Poignet classique rond
+    angledBarrelCuff: Poignet classique cassé
+    straightBarrelCuff: Poignet classique carré
+    roundedFrenchCuff: Poignet mousquetaire rond
+    angledFrenchCuff: Poignet mousquetaire cassé
+    straightFrenchCuff: Poignet mousquetaire carré
 extraTopButton:
   title: Bouton supérieur supplémentaire
   description: Inclure ou non un bouton supplémentaire en haut de fermeture avant.
