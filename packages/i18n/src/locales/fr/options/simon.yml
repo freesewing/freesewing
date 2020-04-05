@@ -34,17 +34,17 @@ buttonFreeLength:
   title: Longueur sans bouton
   description: Quelle distance laisser sans bouton à partir du bas devant de la chemise .
 buttonholePlacketFoldWidth:
-  title: Largeur de repli de la patte de boutonnage - du côté boutonnières
-  description: Largeur du pli de la patte de boutonnage, du côté des boutonnières.
+  title: Largeur de repli de la gorge (patte de boutonnage - du côté boutonnières)
+  description: Largeur du pli de la gorge (patte de boutonnage, du côté des boutonnières).
 buttonholePlacketStyle:
-  title: Style de patte de boutonnage - du côté boutonnières
-  description: Style de la patte de boutonnage, côté boutonnières.
+  title: Style de gorge (patte de boutonnage - du côté boutonnières)
+  description: Style de la gorge (patte de boutonnage, côté boutonnières).
   options:
     classic: Style classique (gorge américaine, bande avec surpiqûres)
     seamless: Style français (gorge simple, sans couture)
 buttonholePlacketWidth:
-  title: Largeur de la patte de boutonnage - du côté boutonnières
-  description: Largeur de la patte de boutonnage sur le côté des boutonnières.
+  title: Largeur de la gorge (patte de boutonnage - du côté boutonnières)
+  description: Largeur de la gorge (patte de boutonnage, côté des boutonnières).
 buttons:
   title: Nombre de boutons
   description: Le nombre de boutons sur la fermeture avant.
