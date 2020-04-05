@@ -1,12 +1,12 @@
 ---
 seatEase:
-  title: Aisance de siège
+  title: Aisance d'assise
   description: Quantité d'aisance autour de vos fesses
 pocketPlacementHorizontal:
-  title: Placement horizontal de la poche
+  title: Placement horizontal des poches
   description: L'emplacement (horizontal) des poches
 pocketPlacementVertical:
-  title: Placement vertical de la poche
+  title: Placement vertical des poches
   description: L'emplacement (vertical) des poches
 collarHeight:
   title: Hauteur du col
@@ -15,10 +15,10 @@ length:
   title: Longeur
   description: Longueur totale
 pocketFlapRadius:
-  title: Rayon de rabat de poche
+  title: Angle de rabat de poche
   description: Le montant par lequel le rabat de poche est arrondi
 pocketRadius:
-  title: Rayon de poche
+  title: Arrondi de poche
   description: Le montant par lequel la poche est arrondie
 chestPocketHeight:
   title: Hauteur de la poche de poitrine

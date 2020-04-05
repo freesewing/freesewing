@@ -1,11 +1,11 @@
 ---
-units: Select the units you want to use
-username: Pick a username
-avatar: Add a profile picture
-bio: Tell us a little bit about yourself
-social: Let us know where we can follow you
-letUsSetupYourAccount: Let us set up your account.
-walkYouThrough: "We'll walk you through the following steps:"
-someOptional: While all these steps are optional, we recommend you go through them to get the most out of FreeSewing.
+units: Sélectionnez les unités que vous souhaitez utiliser
+username: Choisissez un nom d’utilisateur
+avatar: Ajoutez une photo de profil
+bio: Parlez-nous un peu de vous
+social: Dites-nous où nous pouvons vous suivre
+letUsSetupYourAccount: Laissez-nous configurer votre compte.
+walkYouThrough: "Nous vous guiderons à travers les étapes suivantes :"
+someOptional: Bien que toutes ces étapes soient facultatives, nous vous recommandons de les passer en revue pour tirer le meilleur parti de FreeSewing.
 
 

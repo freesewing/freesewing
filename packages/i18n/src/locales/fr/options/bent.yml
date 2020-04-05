@@ -1,7 +1,7 @@
 ---
 sleeveBend:
-  title: Pliage des manches
-  description: Contrôle la courbure de la manche au coude
+  title: Courbe de manche
+  description: Contrôle la courbure de la manche au niveau du coude.
 sleevecapHeight:
   title: Hauteur du tête de manche
   description: Contrôle la hauteur du tête de manche
