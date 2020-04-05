@@ -84,8 +84,8 @@ frontCutawayEnd:
   title: Fin de l'arrondi de coupe avant
   description: En augmentant cette valeur, l'arrondi du pan se terminera plus proche du milieu devant
 collarSpread:
-  title: Propagation du col
-  description: La propagation du col contrôle le drapé du col sur les épaules
+  title: Écartement du col
+  description: L'écartement du col contrôle la position des pointes du col - plus c'est grand, plus elles seront vers les épaules
 lapelStart:
   title: Début de revers
   description: Lieu où le milieu devant passe dans les revers
