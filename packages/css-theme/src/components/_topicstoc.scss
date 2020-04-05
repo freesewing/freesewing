@@ -67,7 +67,7 @@ ul.topic-links a.active {
 }
 
 .theme-wrapper.dark ul.topics > li.active a.topic {
-    border-color: 4px solid $fc-text-dark;
+    border-color: $fc-text-dark;
 }
 ul.opics > li > ul.topics.l1 {
   font-weight: normal;
