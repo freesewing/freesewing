@@ -87,22 +87,22 @@ collarSpread:
   title: Écartement du col
   description: L'écartement du col contrôle la position des pointes du col - plus c'est grand, plus elles seront vers les épaules
 lapelStart:
-  title: Début de revers
-  description: Lieu où le milieu devant passe dans les revers
+  title: Début des revers
+  description: Emplacement où les revers démarrent sur le milieu devant
 lapelReduction:
   title: Réduction de revers
-  description: Combien la pointe des revers tourne vers l'intérieur
+  description: Combien la pointe des revers se réduit vers l'intérieur
 collarHeight:
   title: Hauteur du col
   description: Hauteur du col
 collarNotchDepth:
-  title: Profondeur de l'encoche du collier
-  description: Profondeur de l'encoche du collier
+  title: Profondeur du col cranté
+  description: Profondeur du col cranté
 collarNotchAngle:
-  title: Angle d'encoche du col
-  description: Angle de l'encoche du col
+  title: Angle du col cranté
+  description: Angle du col cranté
 collarNotchReturn:
-  title: Retour de cran de collier
+  title: Revers du col cranté
   description: Combien le collier revient de l'entaille, par rapport au revers
 rollLineCollarHeight:
   title: Hauteur de la ligne de roulement du col
