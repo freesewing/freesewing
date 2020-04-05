@@ -106,10 +106,10 @@ hemStyle:
   options:
     straight: Ourlet droit
     baseball: Ourlet liquette
-    slashed: Ourlet taillé
+    slashed: Ourlet arrondi
 seperateButtonholePlacket:
-  title: Patte de boutonnière séparée
-  description: Dessinez une patte de boutonnière séparée.
+  title: Gorge (Patte de boutonnières) séparée
+  description: Dessinez une gorge (patte de boutonnières) séparée.
 seperateButtonPlacket:
   title: Patte de boutonnage séparée
   description: Dessinez une patte de boutonnage séparée.
@@ -121,10 +121,10 @@ sleevePlacketWidth:
   description: La largeur de la patte de manche
 splitYoke:
   title: Empiècement divisé
-  description: Dessiner un mpiècement divisé ou en une seule pièce?
+  description: Dessiner un empiècement divisé ou classique (une seule pièce).
 waistEase:
   title: Aisance à la taille
   description: La quantité d'aisance à votre taille (naturelle).
 yokeDart:
   title: Pinces empiècement
-  description: S'il faut inclure des pinces empiècement pour un dos plus rond.
+  description: S'il faut inclure des pinces sur l'empiècement pour un dos plus rond.
