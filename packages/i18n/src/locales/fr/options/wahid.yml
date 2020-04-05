@@ -1,9 +1,9 @@
 ---
 backScyeDart:
-  title: Pince dos
-  description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
+  title: Pince de carrure
+  description: La valeur à retirer dans une pince de carrure (à l'emmanchure arrière).
 frontScyeDart:
-  title: Pince avant de l'emmanchure
+  title: Pince d'emmanchure
   description: La quantité à retirer de la pince à l'avant de l'emmanchure.
 pocketLocation:
   title: Emplacement de poche
@@ -12,7 +12,7 @@ pocketWidth:
   title: Largeur de poche
   description: Détermine la largeur de la poche
 weltHeight:
-  title: Hauteur monde de poche
+  title: Hauteur du repli de poche
   description: Détermine l'hauteur de la monde de poche
 necklineDrop:
   title: Profondeur d'encolure
