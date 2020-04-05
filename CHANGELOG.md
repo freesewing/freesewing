@@ -410,6 +410,10 @@
 
 ### components
 
+#### Changed
+
+ - Footer version number now links to Github release page
+
 #### Deprecated
 
  - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
@@ -417,6 +421,12 @@
 #### Removed
 
  - The Ogol component has been removed as it wasn't used
+
+### css-theme
+
+#### Added
+
+ - Added styling for search results
 
 
 ## 2.1.3 (2019-10-18)

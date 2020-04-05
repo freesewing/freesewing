@@ -225,12 +225,12 @@ Unreleased:
 2.1.4:
   date: 2019-11-01
   Added:
-    - css-theme:
+    css-theme:
       - Added styling for search results
   Changed:
-    - components:
+    components:
       - Footer version number now links to Github release page
-    - example:
+    example:
       - Added the `snap-male` and `snap-female` snippets to the `plugin-buttons` example
   Deprecated:
     components:
