@@ -103,10 +103,10 @@ collarNotchAngle:
   description: Angle du col cranté
 collarNotchReturn:
   title: Revers du col cranté
-  description: Combien le collier revient de l'entaille, par rapport au revers
+  description: Combien le col dépasse du cran, par rapport au revers du bas
 rollLineCollarHeight:
-  title: Hauteur de la ligne de roulement du col
-  description: Combien la ligne de roulement épouse le cou
+  title: Hauteur de la ligne de cassure du col
+  description: Combien la ligne de cassure épouse le cou
 hemRadius:
-  title: Rayon d'ourlet
+  title: Arrondi d'ourlet
   description: Le montant par lequel l'ourlet est arrondi
