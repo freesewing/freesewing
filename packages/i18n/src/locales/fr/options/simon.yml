@@ -40,8 +40,8 @@ buttonholePlacketStyle:
   title: Style de patte de boutonnage - du côté boutonnières
   description: Style de la patte de boutonnage, côté boutonnières.
   options:
-    classic: Style classique
-    seamless: Style français (sans couture)
+    classic: Style classique (gorge américaine, bande avec surpiqûres)
+    seamless: Style français (gorge simple, sans couture)
 buttonholePlacketWidth:
   title: Largeur de la patte de boutonnage - du côté boutonnières
   description: Largeur de la patte de boutonnage sur le côté des boutonnières.
@@ -105,7 +105,7 @@ hemStyle:
   description: Le style de l'ourlet de la chemise.
   options:
     straight: Ourlet droit
-    baseball: Ourlet baseball
+    baseball: Ourlet liquette
     slashed: Ourlet taillé
 seperateButtonholePlacket:
   title: Patte de boutonnière séparée
