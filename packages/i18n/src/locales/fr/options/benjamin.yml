@@ -12,8 +12,8 @@ knotWidth:
   title: Largeur du noeud
   description: Largeur du nœud
 bowLength:
-  title: Longueur de noeud
-  description: Longueur du noeud (lorsqu'il est noué)
+  title: Longueur de nœud
+  description: Longueur du nœud (lorsqu'il est noué)
 bowStyle:
   title: Style de nœud
   description: Style du nœud

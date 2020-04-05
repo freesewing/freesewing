@@ -1,7 +1,7 @@
 ---
 panels:
-  title: Pièces
-  description: Le nombre de pièces à rédiger. 13 pièces est mieux pour les modèles plus courbé.
+  title: Nombre de pièces
+  description: Le nombre de pièces à tracer. Plus il y a de pièces, mieux c'est pour l'ajustement des modèles avec courbes.
   options:
     '11': 11 pièces
     '13': 13 pièces
@@ -12,17 +12,17 @@ backOpening:
   title: Ouverture arrière
   description: Ouverture au centre de la fermeture du dos.
 backRise:
-  title: Montée arrière
+  title: Élévation arrière
   description: À quel point les panneaux arrière s’élèvent de vos bras au centre de votre dos.
 backDrop:
   title: Abaissement du dos
   description: Combien les panneaux arrière s'abaissent de vos hanches vers votre centre arrière Les valeurs négatives vont lever le dos.
 frontRise:
-  title: Montée avant
+  title: Élévation avant
   description: 'Élévation des panneaux avant au centre avant, entre vos seins. Les valeurs négatives les diminueront.'
 frontDrop:
   title: Abaissement avant
   description: Combien les panneaux avant s'abaissent de vos hanches vers votre centre avant.
 hipRise:
-  title: Montée des hanches
+  title: Élévation des hanches
   description: Combien les panneaux latéraux montent sur vos hanches.
