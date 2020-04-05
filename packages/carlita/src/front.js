@@ -182,7 +182,7 @@ export default function(part) {
     // Round points depend on options, so add a check
     if (typeof points[i] !== 'undefined') {
       points[i] = points[i].shift(-90, longer)
-    } else console.log(i)
+    }
   }
 
   // Move the map/chest pocket into the princess seam
