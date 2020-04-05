@@ -3,8 +3,8 @@ import { version } from '../package.json'
 export default {
   name: 'diana',
   version,
-  design: 'Alfalyr',
-  code: 'Alfalyr',
+  design: 'Erica Alcusa Sáez',
+  code: 'Erica Alcusa Sáez',
   department: 'womenswear',
   type: 'pattern',
   difficulty: 2,
