@@ -6,6 +6,11 @@
 **Note:** Version bump only for package css-theme
 
 
+## 2.5.0 (2020-04-05)
+
+### Fixed
+
+ - Fixed incorrect border value on active sidebar link
 ## 2.4.6 (2020-03-23)
 
 **Note:** Version bump only for package css-theme

@@ -6,6 +6,11 @@
 **Note:** Version bump only for package plugin-designer
 
 
+## 2.5.0 (2020-04-05)
+
+**Note:** Version bump only for package plugin-designer
+
+
 ## 2.4.6 (2020-03-23)
 
 **Note:** Version bump only for package plugin-designer

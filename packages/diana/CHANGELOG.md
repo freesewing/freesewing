@@ -6,6 +6,11 @@
 **Note:** Version bump only for package diana
 
 
+## 2.5.0 (2020-04-05)
+
+### Added
+
+ - Diana is a top with a draped neck
 ## 2.4.6 (2020-03-23)
 
 **Note:** Version bump only for package diana
