@@ -18,22 +18,22 @@ crotchBack:
   title: Fourche arrière
   description: Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos.
 crotchFront:
-  title: Crotch Front
-  description: The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.
+  title: Fourche avant
+  description: Le pourcentage de la circonférence d'assise à l'avant. Cela crée plus ou moins d'espace entre la couture latérale et le devant.
 crotchFactorBackHor:
-  title: Back Crotch Factor Horizontal
-  description: Used to move the curve of the crotch in the back horizontally
+  title: Reculer la fourche arrière
+  description: Utilisé pour déplacer la courbe de la fourche arrière horizontalement
 crotchFactorBackVer:
-  title: Back Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the back vertically
+  title: Remonter la fourche arrière
+  description: Utilisé pour déplacer la courbe de la fourche arrière verticalement
 crotchFactorFrontHor:
-  title: Front Crotch Factor Horizontal
-  description: Used to move the curve of the crotch in the front horizontally
+  title: Avancer la fourche avant
+  description: Utilisé pour déplacer la courbe de la fourche avant horizontalement
 crotchFactorFrontVer:
-  title: Front Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the front vertically
+  title: Remonter la fourche avant
+  description: Utilisé pour déplacer la courbe de la fourche avant verticalement
 waistOverlap:
-  title: Waist Overlap
+  title: Chevauchement de la ceinture
   description: This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
 legShortening:
   title: Leg Shortening
