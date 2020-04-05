@@ -16,7 +16,7 @@ frontDartPlacement:
   description: Emplacement des pinces devant
 frontOverlap:
   title: Chevauchement avant
-  description: Taux de chevauchement du pan des boutonnières vers le pan des boutons
+  description: Taux de chevauchement du pan des boutonnières vers le pan des boutons (largeur de la croisure)
 sideFrontPlacement:
   title: Placement latéral/avant
   description: L'emplacement de la séparation côté / devant
