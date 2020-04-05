@@ -1,22 +1,22 @@
 ---
 backPocket:
-  title: Back pocket
-  description: Whether to include a back pocket or not
+  title: Poche arrière
+  description: S'il faut inclure une poche arrière ou non
 frontPocket:
-  title: Front pocket
-  description: Whether to include a front pocket or not
+  title: Poche avant
+  description: S'il faut inclure une poche avant ou non
 hem:
-  title: Hem size
-  description: Size of the hem at the bottom of the pants
+  title: Taille de l'ourlet
+  description: Taille de l'ourlet au bas du pantalon
 waistBand:
-  title: Waist Band
-  description: Size of the waist band
+  title: Bande de taille
+  description: Taille de la bande de taille
 waistRaise:
-  title: Waist Raise
-  description: How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+  title: Hauteur de taille
+  description: Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe.
 crotchBack:
-  title: Crotch Back
-  description: The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.
+  title: Fourche arrière
+  description: Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos.
 crotchFront:
   title: Crotch Front
   description: The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.
