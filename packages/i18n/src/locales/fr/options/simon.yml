@@ -7,7 +7,7 @@ backDarts:
     always: Toujours
     never: Jamais
 backDartShaping:
-  title: Elaboration de la pince dos
+  title: Forme de la pince dos
   description: L'ajustement résultant des pinces du dos
 barrelCuffNarrowButton:
   title: Bouton de manche étroit
