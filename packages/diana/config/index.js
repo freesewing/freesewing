@@ -127,7 +127,6 @@ export default {
     sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
-    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    waistEase: { pct: 0, min: -4, max: 20 }
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 }
   }
 }
