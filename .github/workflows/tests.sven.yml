@@ -1,6 +1,6 @@
 name: Unit tests - Sven
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:

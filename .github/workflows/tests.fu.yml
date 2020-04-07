@@ -1,6 +1,6 @@
 name: Unit tests - Fu
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:

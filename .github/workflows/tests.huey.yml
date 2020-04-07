@@ -1,6 +1,6 @@
 name: Unit tests - Huey
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
