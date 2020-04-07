@@ -77,7 +77,6 @@ export default function(part) {
     points.hipSide = points.hipSide.shift(90, shift / 2)
     points.hipCbCp = new Point(points.hipCb.x / 2, points.hipCb.y)
   }
-  console.log(points.hipSideCpBottom)
 
   // Paths
   paths.saBase = new Path() // Use full crossSeam path

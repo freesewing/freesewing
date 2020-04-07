@@ -1,7 +1,7 @@
 ---
 tipWidth:
   title: Largeur de pointe
-  description: La largeur de votre cravate au bout
+  description: La largeur de votre cravate au niveau de la pointe
 knotWidth:
   title: Largeur du noeud
-  description: La largeur de votre cravate au noeud
+  description: La largeur de votre cravate au niveau du noeud

@@ -1,6 +1,6 @@
 name: Unit tests - Huey
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
@@ -29,4 +29,4 @@ jobs:
       - name: Build pattern
         run: cd packages/huey && npm run build
       - name: Run pattern unit tests
-        run: cd packages/huey && npm run testonlyci
+        run: cd packages/huey && npm run testci

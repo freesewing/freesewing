@@ -2,12 +2,6 @@ import { version, name } from '../package.json'
 import notch from './defs/notch'
 import gridMetric from './defs/grid-metric'
 import gridImperial from './defs/grid-imperial'
-// we don't use these vars, but they will trigger the
-// rollup sass plugin to compile a CSS bundle
-import draftCss from './scss/draft.scss'
-import sampleCss from './scss/sample.scss'
-import paperlessCss from './scss/paperless.scss'
-// This is the CSS bundle
 import css from './bundle.css.js'
 
 export default {

@@ -1,34 +1,34 @@
 ---
-back: Arrière
-backBase: Base arrière
+back: Dos
+backBase: Base dos
 base: Base
-bentBack: Arrière Bent
-bentBase: Base Bent
-bentFront: Avant Bent
-bentSleeve: Manche Bent
-bentTopSleeve: Manche Bent
-bentUnderSleeve: Sous-manche Bent
-buttonholePlacket: Patte de boutonnière
-buttonPlacket: Patte de boutonnage
+bentBack: Dos de Bent
+bentBase: Base de Bent
+bentFront: Avant de Bent
+bentSleeve: Manche de Bent
+bentTopSleeve: Partie supérieure de la manche de Bent
+bentUnderSleeve: Partie inférieure de la manche de Bent
+buttonholePlacket: Patte de boutonnage - boutonnières
+buttonPlacket: Patte de boutonnage - boutons
 collar: Col
-collarStand: Col support
-cuff: Manchette
+collarStand: Pied de col
+cuff: Poignet
 fabricTail: Queue en tissu
 fabricTip: Pointe en tissu
 frontBase: Base avant
-frontFacing: Doublure avant FIXME
+frontFacing: Doublure avant
 front: Avant
 frontLeft: Avant gauche
 frontLining: Doublure avant
 frontRight: Avant droit
-hoodCenter: Capuchon centre
-hood: Capuchon
-hoodSide: Capuchon côté
-inset: Encart
-interfacingTail: Queue en entoilage
-interfacingTip: Pointe en entoilage
-liningTail: Queue en doublure
-liningTip: Pointe en doublure
+hoodCenter: Milieu de capuche
+hood: Capuche
+hoodSide: Côté de capuche
+inset: Incrusté
+interfacingTail: Entoilage de queue
+interfacingTip: Entoilage de pointe
+liningTail: Doublure de queue
+liningTip: Doublure de pointe
 loop: Boucle
 panel1: Pièce 1
 panel2: Pièce 2
@@ -37,18 +37,18 @@ panel4: Pièce 4
 panel5: Pièce 5
 panel6: Pièce 6
 panels: Pièces
-pocketBag: Sac de poche
+pocketBag: Fond de poche
 pocketFacing: Doublure de poche
 pocketInterfacing: Entoilage de poche
 pocket: Poche
-pocketWelt: Passepoile
+pocketWelt: Rabat de poche
 side: Côté
 sleeveBase: Base de manche
 sleevecap: Tête de manche
-sleevePlacketOverlap: Patte de manche supérieur
-sleevePlacketUnderlap: Patte de manche en dessous
+sleevePlacketOverlap: Patte de manche supérieure
+sleevePlacketUnderlap: Patte de manche inférieure
 sleeve: Manche
-topSleeve: Manche
+topSleeve: Haut de manche
 top: Haut
 underCollar: Sous-col
 underSleeve: Sous-manche

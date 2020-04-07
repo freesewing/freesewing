@@ -1,46 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Back dart depth factor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Profondeur de la pince dos
+  description: Jusqu'où va la pince arrière depuis la ceinture, facteur de la mensuration "Hauteur taille bassin".
 backVent:
-  title: Back vent
-  description: Add a vent in the back of the skirt.
+  title: Fente dos
+  description: Ajouter une fente au dos de la jupe.
 backVentLength:
-  title: Back vent length
-  description: Length of the Back Vent as a percentage of the skirt length.
+  title: Longueur de la fente arrière
+  description: Longueur de la fente dos par rapport à la longueur de la jupe.
 dartToSideSeamFactor:
-  title: Dart to side seam factor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  title: Pince de côté
+  description: Pourcentage de la part de la réduction de la hanche à la taille par rapport à la couture latérale.
 frontDartDepthFactor:
-  title: Front dart depth factor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Profondeur de la pince avant
+  description: Jusqu'où va la pince avant depuis la ceinture, facteur de la mensuration "Hauteur taille bassin".
 hem:
-  title: Size of the hem
-  description: The size of the hem. Measurement in absolute values.
+  title: Taille de l'ourlet
+  description: La taille de l'ourlet. Mesure en valeurs absolues.
 hemBonus:
-  title: Hem bonus
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  title: Bonus d'ourlet
+  description: Cette option réduira la circonférence de la jupe à l'ourlet. Pourcentage de la mesure de l'assise.
 lengthBonus:
-  title: Length bonus
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  title: Supplément de longueur
+  description: Ceci définit la longueur de la jupe. Pourcentage de la mensuration "Hauteur taille genou".
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Nombre de pinces
+  description: Le nombre de pinces utilisées dans le patron. Maximum de 2. Cette option peut être réduite par le patron si les calculs créent des pinces trop petites.
 seatEase:
-  title: Seat ease
-  description: Amount of ease at the seat level.
+  title: Aisance d'assise
+  description: Quantité d'aisance au niveau de l'assise.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Ceinture
+  description: Ajouter une ceinture au patron.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Largeur de ceinture
+  description: La largeur de la ceinture.
 waistEase:
-  title: Waist ease
-  description: Amount of ease at the waist level.
+  title: Aisance à la taille
+  description: Quantité d'aisance au niveau de la taille.
 zipperLocation:
-  title: Zipper location
-  description: The location of the zipper.
+  title: Emplacement du Zip
+  description: L'emplacement du zip (fermeture éclair).
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: À la couture arrière
+    sideSeam: À la couture latérale

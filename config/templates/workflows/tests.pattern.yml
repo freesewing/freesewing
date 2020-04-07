@@ -1,6 +1,6 @@
 name: Unit tests - {{ Pattern }}
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
@@ -31,4 +31,4 @@ jobs:
       - name: Build pattern
         run: cd packages/{{ pattern }} && npm run build
       - name: Run pattern unit tests
-        run: cd packages/{{ pattern }} && npm run testonlyci
+        run: cd packages/{{ pattern }} && npm run testci

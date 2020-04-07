@@ -5,6 +5,36 @@
 ## Unreleased
 
 
+## 2.5.0 (2020-04-05)
+
+### css-theme
+
+#### Fixed
+
+ - Fixed incorrect border value on active sidebar link
+
+### diana
+
+#### Added
+
+ - Diana is a top with a draped neck
+
+### i18n
+
+#### Added
+
+ - title, description, and options for Dianna
+
+
+## 2.4.6 (2020-03-23)
+
+### i18n
+
+#### Fixed
+
+ - Fixed an bug in the i18n package
+
+
 ## 2.4.5 (2020-03-19)
 
 ### wahid

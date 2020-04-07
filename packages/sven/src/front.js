@@ -67,6 +67,7 @@ export default part => {
       if (front) paths.sa.line(points.cfNeck).move(points.cfHem)
       else paths.sa.line(points.cbNeck).move(points.cbHem)
       paths.sa.line(paths.sa.start())
+      paths.sa.attr('class', 'fabric sa')
     }
   }
 

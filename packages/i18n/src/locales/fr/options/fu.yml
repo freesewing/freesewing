@@ -1,10 +1,10 @@
 ---
 height:
-  title: Height
-  description: Controls the height of the face mask
+  title: Hauteur
+  description: Contrôle la hauteur du masque
 length:
-  title: Lenght
-  description: Controls the length of the face mask
+  title: Longueur
+  description: Contrôle la longueur du masque
 curve:
-  title: Curve
-  description: Controls the curvature of the upper edge of the face mask
+  title: Courbe
+  description: Contrôle la courbe du bord supérieur du masque

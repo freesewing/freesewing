@@ -1,6 +1,6 @@
 name: Unit tests - Breanna
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
@@ -23,10 +23,10 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: cd packages/breanna && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/models @freesewing/pattern-info mocha chai
+        run: cd packages/breanna && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/brian @freesewing/models @freesewing/pattern-info mocha chai
         env:
           CI: true
       - name: Build pattern
         run: cd packages/breanna && npm run build
       - name: Run pattern unit tests
-        run: cd packages/breanna && npm run testonlyci
+        run: cd packages/breanna && npm run testci

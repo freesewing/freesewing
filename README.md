@@ -45,6 +45,17 @@
 
 This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).
 
+## Getting started ⚡ 
+
+As this is a monorepo. You'll need [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+
+```bash
+git clone git@github.com:freesewing/freesewing.git
+cd freesewing
+yarn kickstart
+```
+
 ## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.

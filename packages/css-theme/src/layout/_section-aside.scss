@@ -10,8 +10,6 @@ div.fs-sa {
     max-width: 600px;
     min-width: 250px;
     width: 50%;
-    background: $oc-gray-1;
-    border-left: 1px solid $oc-gray-3;
   }
   aside div.sticky {
     position: sticky;
@@ -25,10 +23,6 @@ div.fs-sa {
   div.fs-sa {
     > section {
       background: $oc-gray-9;
-    }
-    aside {
-      background: $oc-gray-8;
-      border-color: $oc-gray-7;
     }
   }
 }

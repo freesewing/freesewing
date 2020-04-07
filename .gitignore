@@ -2,6 +2,7 @@
 
 # Specifics
 packages/plugin-theme/src/bundle.css.js
+packages/plugin-theme/css
 packages/components/Blockquote
 packages/components/Draft
 packages/components/DraftConfigurator

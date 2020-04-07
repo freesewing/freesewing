@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.4.5",
+  "version": "2.5.0",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -28,7 +28,7 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
-    "prepare": "node src/prebuild.js"
+    "prebuild": "node src/prebuild.js"
   },
   "peerDependencies": {},
   "dependencies": {},

@@ -6,6 +6,16 @@
 **Note:** Version bump only for package core
 
 
+## 2.5.0 (2020-04-05)
+
+**Note:** Version bump only for package core
+
+
+## 2.4.6 (2020-03-23)
+
+**Note:** Version bump only for package core
+
+
 ## 2.4.5 (2020-03-19)
 
 **Note:** Version bump only for package core

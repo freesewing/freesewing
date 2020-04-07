@@ -1,6 +1,7 @@
 import fu from './fu.yml'
 import brian from './brian.yml'
 import breanna from './breanna.yml'
+import diana from './diana.yml'
 import aaron from './aaron.yml'
 import simon from './simon.yml'
 import simone from './simone.yml'
@@ -31,6 +32,7 @@ let patterns = {
   fu,
   brian,
   breanna,
+  diana,
   aaron,
   simon,
   simone,
