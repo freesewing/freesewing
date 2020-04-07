@@ -99,7 +99,7 @@ joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes 
 justAMoment: Juste un instant
 layout: Mis en page
 logIn: Connexion
-loginWithProvider: 'Log in with<br />{provider}'
+loginWithProvider: 'Connectez-vous avec<br />{provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -175,7 +175,7 @@ share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
-signupWithProvider: 'Sign up with<br />{provider}'
+signupWithProvider: 'Inscrivez-vous avec<br />{provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
@@ -191,7 +191,7 @@ thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
 thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
-txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br />avec le soutien financier de nos mécènes
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
 txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une part de notre swag Freesewing tant convoité chez vous, partout dans le monde.
 txt-tier8: "Si vous ne voulez simplement pas nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi : swag supplémentaire !"
@@ -241,7 +241,7 @@ noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre ch
 usePatternMeasurements: "Utiliser les mesures du patron d'origine"
 createReplica: Créer une réplique
 showDetails: Voir les détails
-hideDetails: Hide details
+hideDetails: Masquer les détails
 clickBelowToLogOut: Cliquez ci-dessous pour vous déconnecter
 compare: Comparer
 savePattern: Enregistrer le patron
