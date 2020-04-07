@@ -99,7 +99,7 @@ joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, d
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
-loginWithProvider: 'Anmelden mit<br>{provider}'
+loginWithProvider: 'Log in with<br />{provider}'
 logOut: Abmelden
 manual: Manuell
 markdownHelp: Markdown-Hilfe
@@ -175,7 +175,7 @@ share: Teilen
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
-signupWithProvider: 'Registrieren mit<br>{provider}'
+signupWithProvider: 'Sign up with<br />{provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
@@ -191,8 +191,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
-txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
+txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
@@ -242,6 +241,7 @@ noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes 
 usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
+hideDetails: Hide details
 clickBelowToLogOut: Klicken Sie unten sich abzumelden
 compare: Vergleichen
 savePattern: Save pattern
