@@ -1,16 +1,16 @@
 ---
 bustDartAngle:
-  title: Bust dart angle
-  description: Controls the angle by which the (side) bust dart slopes downward
+  title: Angle des pinces poitrine
+  description: Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas
 bustDartLength:
-  title: Bust dart length
-  description: Controls how close the bust dart approaches the bust point
+  title: Longueur des pinces poitrine
+  description: Contrôle à quel point la pince poitrine sera proche de l'apex du buste (la pointe des seins)
 contour:
   title: Contour
-  description: Controls how sharply the extra room for breasts is removed again below the chest
+  description: Contrôle à quel point le volume sera réduit sous les seins
 frontDarts:
-  title: Front darts
-  description: Whether to include front darts or not
+  title: Pinces de taille
+  description: Inclure ou non des pinces de taille
 frontDartLength:
-  title: Front dart length
-  description: Controls how close the front dart approaches the bust point
+  title: Longueur des pinces de taille
+  description: Contrôle à quel point la pince de taille sera proche de l'apex du buste (la pointe des seins)
