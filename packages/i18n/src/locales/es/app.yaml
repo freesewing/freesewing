@@ -99,7 +99,7 @@ joinTheChatMsg: Tenemos una sala de chat en Gitter con personas amigables que es
 justAMoment: Un momento
 layout: Diseño
 logIn: Iniciar sesión
-loginWithProvider: 'Inicia sesión con<br>{provider}'
+loginWithProvider: 'Log in with<br />{provider}'
 logOut: cerrar sesión
 manual: A mano
 markdownHelp: Markdown ayuda
@@ -175,7 +175,7 @@ share: Compartir
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
-signupWithProvider: 'Registrarse con<br>{provider}'
+signupWithProvider: 'Sign up with<br />{provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo
@@ -191,8 +191,7 @@ thisFieldSupportsMarkdown: Este campo admite Markdown
 thisPageRequiresAuthentication: esta página requiere autenticación
 troubleLoggingIn: '¿Problemas para acceder?'
 twitter: Twitter
-txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
-txt-tier0: '¿No quieres apoyarnos? ¿No puede permitirse el lujo de apoyarnos? <br> La liberación gratuita es gratuita para todos. No se hicieron preguntas.'
+txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
 txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
@@ -242,6 +241,7 @@ noUserBrowsingText: "We've got thousands of them. Surely you have better things 
 usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Create a replica
 showDetails: Show details
+hideDetails: Hide details
 clickBelowToLogOut: Click below to log out
 compare: Compare
 savePattern: Save pattern

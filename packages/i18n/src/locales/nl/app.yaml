@@ -99,7 +99,7 @@ joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die gra
 justAMoment: Een ogenblikje
 layout: Layout
 logIn: Aanmelden
-loginWithProvider: 'Aanmelden met<br>{provider}'
+loginWithProvider: 'Log in met<br />{provider}'
 logOut: Afmelden
 manual: Manueel
 markdownHelp: MarkDown hulp
@@ -175,7 +175,7 @@ share: Delen
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
-signupWithProvider: 'Inschrijven met<br>{provider}'
+signupWithProvider: 'Maak een account met<br />{provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
@@ -191,8 +191,7 @@ thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
 thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
-txt-footer: Freesewing is gemaakt door joost & kabouterhulpjes <br>met de financiële steun van onze Patrons
-txt-tier0: Wil je ons niet steunen? Kan het niet veroorloven om ons te steunen?<br>FreeSewing is gratis voor iedereen. Zonder verdere vragen.
+txt-footer: Gemaakt door joost & vrijwilligers<br /> met de financiële steun van onze Patrons
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
@@ -242,6 +241,7 @@ noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen
 usePatternMeasurements: "Gebruik de maten van het originele patroon"
 createReplica: Creëer een replica
 showDetails: Toon details
+hideDetails: Verberg details
 clickBelowToLogOut: Klik hieronder om uit te loggen
 compare: Vergelijk
 savePattern: Bewaar patroon
