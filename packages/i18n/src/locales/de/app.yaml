@@ -29,8 +29,8 @@ chatOnGitter: Chatte bei Gitter
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
 chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
-chooseASize: Wähle eine Grösse
-chooseAPerson: Choose a person
+chooseASize: Grösse wählen
+chooseAPerson: Person wählen
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
@@ -45,14 +45,14 @@ continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: "{count} of your people lack the required measurements to draft {pattern}"
+countModelsLackingForPattern: "{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen."
 created: Erstellt
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
-designOptions: Design options
+designOptions: Designoptionen
 designs: Designs
 docs: Dokumente
 docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
@@ -100,7 +100,7 @@ joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, d
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
-loginWithProvider: 'Log in with<br />{provider}'
+loginWithProvider: 'Anmelden mit<br />{provider}'
 logOut: Abmelden
 manual: Manuell
 markdownHelp: Markdown-Hilfe
@@ -109,12 +109,12 @@ menu: Menü
 metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
 person: Person
-people: People
+people: Personen
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
-addThing: Add {thing}
-newThing: New {thing}
+addThing: '{thing} hinzufügen'
+newThing: Neues {thing}
 newPatternForModel: 'Neues {pattern} für {model}'
 noChanges: Keine Änderungen
 no: false
@@ -151,7 +151,7 @@ proceedWithCaution: Gehen Sie vorsichtig vor
 profile: Profil
 relatedLinks: Verwandte Links
 remove: Löschen
-removeThing: Remove {thing}
+removeThing: '{thing} entfernen'
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
 resendActivationEmailMessage: 'Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht.'
@@ -159,7 +159,7 @@ resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
-restoreDesignDefaults: Restore design defaults
+restoreDesignDefaults: Designeinstellungen zurücksetzen
 restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
@@ -176,7 +176,7 @@ share: Teilen
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
-signupWithProvider: 'Sign up with<br />{provider}'
+signupWithProvider: 'Registrieren mit<br />{provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
@@ -233,8 +233,8 @@ by: von
 years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
-noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
-modelFirst: Start by adding measurements
+noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
+modelFirst: Beginne damit Masse hinzuzufügen
 noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
 noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
@@ -242,13 +242,13 @@ noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes 
 usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
-hideDetails: Hide details
+hideDetails: Details ausblenden
 clickBelowToLogOut: Klicken Sie unten sich abzumelden
 compare: Vergleichen
-savePattern: Save pattern
+savePattern: Schnittmuster speichern
 recreate: Wiederherstellen
-recreateThing: Recreate {thing}
-recreateThingForPerson: Recreate {thing} for {person}
+recreateThing: '{thing} neu erstellen'
+recreateThingForPerson: '{thing} für {person} neu erstellen'
 seeYouLaterUser: Auf Wiedersehen {user}
 exportForPrinting: Exportieren für den Druck
 exportForEditing: Exportieren für Bearbeitung
@@ -265,15 +265,15 @@ loadingMagic: Wir laden die Magie
 estimate: Schätzung
 actual: Aktuell
 weEstimateYM2B: "Wir schätzen, dein {measurement} auf etwa:"
-exportAsData: Export as data
-availablePatterns: Available patterns
-browseCollection: Browse collection
-browseYourPatterns: Browse your patterns
-yourPatterns: Your patterns
-loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
+exportAsData: Als Daten exportieren
+availablePatterns: Verfügbare Schnittmuster
+browseCollection: Sammlung durchsuchen
+browseYourPatterns: Deine Schnittmuster durchsuchen
+yourPatterns: Deine Schnittmuster
+loginNeededToSavePatternsMsg: Du musst angemeldet sein, um deine Schnittmuster zu speichern
 docsForContributors: Documentation for contributors
 patternDocs: Pattern documentation
-socialMedia: Social media
+socialMedia: Soziale Medien
 create: Create
 browse: Browse
 patrons: Patrons
