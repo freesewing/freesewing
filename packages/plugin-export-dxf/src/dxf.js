@@ -103,8 +103,8 @@ Dxf.prototype.curve = function (from, cp1, cp2, to, layer, part) {
   let steps = Math.floor(path.length() / this.config.precision)
   let current
   let dxf = ''
-  for (let i = 0; i < steps; i++) {
-    current = path.shiftAlong((i + 1) * this.config.precision)
+  for (let i = 1; i < steps; i++) {
+    current = path.shiftAlong(i * this.config.precision)
     dxf += this.line(current, layer)
   }
   if (current.dist(to) > 0.1) dxf += this.line(to, layer)
@@ -137,6 +137,8 @@ ${layer}
       case 'close':
         dxf += this.line(start, layer)
         break
+      case 'noop':
+        break
       default:
         throw new Error(`Unsupported path operation: ${op.type}`)
     }
@@ -165,6 +167,8 @@ ${name}
  20
 0.00`
   for (let key in part.paths) {
+    this.pathName = key
+    this.partName = name
     let path = part.paths[key]
     if (path.render) dxf += this.path(path, layer, part)
   }
