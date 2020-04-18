@@ -198,6 +198,10 @@ export default (part) => {
     points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
   }
 
+  // Facing/Lining boundary (flb)
+  points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
+  points.flbCp = points.dartTop.shift(90, points.dartTop.dist(points.flbTop) / 2)
+
   // Seam line
   delete paths.cutonfold
   delete paths.saBase
@@ -228,7 +232,7 @@ export default (part) => {
     paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
   }
   paths.dart = dartPath(part)
-  paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).close().attr('class', 'fabric')
   paths.saBase.render = false
   paths.hemBase.render = false
   paths.dart.render = false
