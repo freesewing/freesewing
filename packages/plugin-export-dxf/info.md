@@ -19,9 +19,9 @@ It will add the `exportDxf()` method to the pattern object.
 This method will return the DXF-ASTM output.
 
 ```js
-const models import '@freesewing/models'
-const Aaron import '@freesewing/aaron'
-const exportDxfPlugin = import '@freesewing/plugin-export-dxf'
+import models from '@freesewing/models'
+import Aaron from '@freesewing/aaron'
+import exportDxfPlugin from '@freesewing/plugin-export-dxf'
 
 const settings = {
   // Make sure to set complete to false
@@ -29,10 +29,7 @@ const settings = {
   measurements: models.withoutBreasts.size42
 }
 
-let dxf = new Aaron(settings)
-  .use(exportDxfPlugin)
-  .draft()
-  .exportDxf()
+let dxf = new Aaron(settings).use(exportDxfPlugin).draft().exportDxf()
 ```
 
 ## Configuration
