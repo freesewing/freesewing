@@ -1,6 +1,6 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -228,27 +228,24 @@ export default part => {
     paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
   }
   paths.dart = dartPath(part)
-  paths.seam = paths.saBase
-    .join(paths.dart)
-    .join(paths.hemBase)
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).attr('class', 'fabric')
   paths.saBase.render = false
   paths.hemBase.render = false
   paths.dart.render = false
 
-  // Pocket path
-  paths.pocket = new Path()
-    .move(points.pocketTopMidLeft)
-    .line(points.pocketTopLeft)
-    .line(points.pocketBottomLeft)
-    .line(points.pocketBottomMidLeft)
-    .move(points.pocketBottomMidRight)
-    .line(points.pocketBottomRight)
-    .line(points.pocketTopRight)
-    .line(points.pocketTopMidRight)
-    .attr('class', 'fabric dashed')
-
   if (complete) {
+    // Pocket path
+    paths.pocket = new Path()
+      .move(points.pocketTopMidLeft)
+      .line(points.pocketTopLeft)
+      .line(points.pocketBottomLeft)
+      .line(points.pocketBottomMidLeft)
+      .move(points.pocketBottomMidRight)
+      .line(points.pocketBottomRight)
+      .line(points.pocketTopRight)
+      .line(points.pocketTopMidRight)
+      .attr('class', 'fabric dashed')
+
     // Buttons
     points.button1 = new Point(0, points.closureTop.y + 10)
     let delta = points.button1.dist(points.lastButton) / (options.buttons - 1)
