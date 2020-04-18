@@ -1,6 +1,6 @@
 import * as shared from './shared'
 
-export default part => {
+export default (part) => {
   let {
     store,
     sa,
@@ -16,6 +16,7 @@ export default part => {
 
   // Seamline
   paths.saBase = shared.saBase('back', points, Path)
+  paths.saBase.render = false
   paths.seam = new Path()
     .move(points.cbNeck)
     .line(points.cbHips)
