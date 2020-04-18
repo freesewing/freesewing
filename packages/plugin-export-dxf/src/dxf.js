@@ -101,9 +101,10 @@ Dxf.prototype.curve = function (from, cp1, cp2, to, layer, part) {
   let { Path } = part.shorthand()
   let path = new Path().move(from).curve(cp1, cp2, to)
   let steps = Math.floor(path.length() / this.config.precision)
-  let dxf, current
-  for (let i = 1; i <= steps; i++) {
-    current = path.shiftAlong(i * this.config.precision)
+  let current
+  let dxf = ''
+  for (let i = 0; i < steps; i++) {
+    current = path.shiftAlong((i + 1) * this.config.precision)
     dxf += this.line(current, layer)
   }
   if (current.dist(to) > 0.1) dxf += this.line(to, layer)
