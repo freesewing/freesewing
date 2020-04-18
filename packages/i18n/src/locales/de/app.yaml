@@ -274,22 +274,22 @@ loginNeededToSavePatternsMsg: Du musst angemeldet sein, um deine Schnittmuster z
 docsForContributors: Documentation for contributors
 patternDocs: Pattern documentation
 socialMedia: Soziale Medien
-create: Create
-browse: Browse
+create: Erstellen
+browse: Durchsuchen
 patrons: Patrons
-scrollToTop: Scroll to top
-sitemap: Sitemap
+scrollToTop: Zum Seitenanfang
+sitemap: Seitenübersicht
 contributeToThing: Contribute to {thing}
 mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
 fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
 supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
 madeToMeasure: Made-to-measure
-sizes: Sizes
-standardSizes: Standard sizes
-accountRequired: This feature requires a FreeSewing account
-size: Size
-switchToThing: 'Switch to {thing}'
-saveThing: 'Save {thing}'
+sizes: Grössen
+standardSizes: Standardgrößen
+accountRequired: Diese Funktion erfordert ein FreeSewing-Konto
+size: Grösse
+switchToThing: 'Zu {thing} wechseln'
+saveThing: '{thing} speichern'
 shareThing: 'Share {thing}'
 link: Link
 cloneThing: 'Clone {thing}'
