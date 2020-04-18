@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   // Remove clutter
   let pocket = part.paths.pocket
   part.paths = {}
@@ -17,10 +17,8 @@ export default function(part) {
     debug
   } = part.shorthand()
 
-  paths.seam = pocket
-    .line(points.cfRibbing)
-    .line(points.pocketHem)
-    .attr('class', 'fabric', true)
+  paths.seam = pocket.line(points.cfRibbing).line(points.pocketHem).attr('class', 'fabric', true)
+  paths.seam.render = true
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)
 
@@ -41,9 +39,11 @@ export default function(part) {
     .line(facing.start())
     .join(facing)
     .attr('class', ' fabric help')
+  paths.facing.render = false
 
   // Complete pattern?
   if (complete) {
+    paths.facing.render = true
     macro('grainline', {
       from: points.cfRibbing.shift(0, 15),
       to: points.pocketCf.shift(0, 15)
