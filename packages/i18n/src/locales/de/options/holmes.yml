@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Length ratio
+  title: Längenverhältnis
   description: fixme
 goreNumber:
   title: Number of gores
   description: The number of gores used to construct the semi-sphere
 brimAngle:
-  title: Brim angle
-  description: Controls the curvature of the brim
+  title: Winkel der Krempe
+  description: Steuert die Krümmung der Krempe
 brimWidth:
-  title: Brim width
-  description: Controls the width of the brim
+  title: Breite der Krempe
+  description: Steuert die Breite der Krempe
 
