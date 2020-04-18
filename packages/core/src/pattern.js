@@ -69,7 +69,7 @@ export default function Pattern(config = { options: {} }) {
   }
 
   // Part closure
-  this.Part = function() {
+  this.Part = function () {
     let part = new Part()
     part.context = context
     for (let macro in context.macros) {
@@ -80,7 +80,7 @@ export default function Pattern(config = { options: {} }) {
 }
 
 // Merges settings object with this.settings
-Pattern.prototype.apply = function(settings) {
+Pattern.prototype.apply = function (settings) {
   if (typeof settings !== 'object') return this
   for (let key of Object.keys(settings)) {
     if (Array.isArray(settings[key])) {
@@ -98,7 +98,7 @@ Pattern.prototype.apply = function(settings) {
   return this
 }
 
-Pattern.prototype.runHooks = function(hookName, data = false) {
+Pattern.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks.length > 0) {
@@ -111,7 +111,7 @@ Pattern.prototype.runHooks = function(hookName, data = false) {
 /**
  *  The default draft method with pre- and postDraft hooks
  */
-Pattern.prototype.draft = function() {
+Pattern.prototype.draft = function () {
   if (this.is !== 'sample') this.is = 'draft'
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
@@ -142,7 +142,7 @@ Pattern.prototype.draft = function() {
 /**
  * Handles pattern sampling
  */
-Pattern.prototype.sample = function() {
+Pattern.prototype.sample = function () {
   if (this.settings.sample.type === 'option') {
     return this.sampleOption(this.settings.sample.option)
   } else if (this.settings.sample.type === 'measurement') {
@@ -152,7 +152,7 @@ Pattern.prototype.sample = function() {
   }
 }
 
-Pattern.prototype.sampleParts = function() {
+Pattern.prototype.sampleParts = function () {
   let parts = {}
   this.settings.complete = false
   this.settings.paperless = false
@@ -164,7 +164,7 @@ Pattern.prototype.sampleParts = function() {
   return parts
 }
 
-Pattern.prototype.sampleRun = function(parts, anchors, run, runs, extraClass = false) {
+Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = false) {
   this.draft()
   for (let i in this.parts) {
     let anchor = false
@@ -193,7 +193,7 @@ Pattern.prototype.sampleRun = function(parts, anchors, run, runs, extraClass = f
 /**
  * Handles option sampling
  */
-Pattern.prototype.sampleOption = function(optionName) {
+Pattern.prototype.sampleOption = function (optionName) {
   this.is = 'sample'
   this.runHooks('preSample')
   let step, val
@@ -228,7 +228,7 @@ Pattern.prototype.sampleOption = function(optionName) {
   return this
 }
 
-Pattern.prototype.sampleListOption = function(optionName) {
+Pattern.prototype.sampleListOption = function (optionName) {
   let parts = this.sampleParts()
   let option = this.config.options[optionName]
   let anchors = {}
@@ -252,7 +252,7 @@ Pattern.prototype.sampleListOption = function(optionName) {
 /**
  * Handles measurement sampling
  */
-Pattern.prototype.sampleMeasurement = function(measurementName) {
+Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.is = 'sample'
   this.runHooks('preSample')
   let anchors = {}
@@ -281,7 +281,7 @@ Pattern.prototype.sampleMeasurement = function(measurementName) {
 /**
  * Handles models sampling
  */
-Pattern.prototype.sampleModels = function(models, focus = false) {
+Pattern.prototype.sampleModels = function (models, focus = false) {
   this.is = 'sample'
   this.runHooks('preSample')
   let anchors = {}
@@ -306,22 +306,22 @@ Pattern.prototype.sampleModels = function(models, focus = false) {
 }
 
 /** Debug method, exposes debug hook */
-Pattern.prototype.debug = function(data) {
+Pattern.prototype.debug = function (data) {
   this.runHooks('debug', data)
 }
 
-Pattern.prototype.render = function() {
+Pattern.prototype.render = function () {
   this.svg = new Svg(this)
   this.svg.hooks = this.hooks
 
   return this.pack().svg.render(this)
 }
 
-Pattern.prototype.on = function(hook, method, data) {
+Pattern.prototype.on = function (hook, method, data) {
   this.hooks[hook].push({ method, data })
 }
 
-Pattern.prototype.use = function(plugin, data = false) {
+Pattern.prototype.use = function (plugin, data) {
   this.debug({
     type: 'success',
     label: '🔌 Plugin loaded',
@@ -333,7 +333,7 @@ Pattern.prototype.use = function(plugin, data = false) {
   return this
 }
 
-Pattern.prototype.loadPluginHooks = function(plugin, data) {
+Pattern.prototype.loadPluginHooks = function (plugin, data) {
   for (let hook of Object.keys(this.hooks)) {
     if (typeof plugin.hooks[hook] === 'function') {
       this.on(hook, plugin.hooks[hook], data)
@@ -345,7 +345,7 @@ Pattern.prototype.loadPluginHooks = function(plugin, data) {
   }
 }
 
-Pattern.prototype.loadPluginMacros = function(plugin) {
+Pattern.prototype.loadPluginMacros = function (plugin) {
   for (let macro in plugin.macros) {
     if (typeof plugin.macros[macro] === 'function') {
       this.macro(macro, plugin.macros[macro])
@@ -353,12 +353,12 @@ Pattern.prototype.loadPluginMacros = function(plugin) {
   }
 }
 
-Pattern.prototype.macro = function(key, method) {
+Pattern.prototype.macro = function (key, method) {
   this.macros[key] = method
 }
 
 /** Packs parts in a 2D space and sets pattern size */
-Pattern.prototype.pack = function() {
+Pattern.prototype.pack = function () {
   let bins = []
   for (let key in this.parts) {
     let part = this.parts[key]
@@ -416,8 +416,9 @@ Pattern.prototype.pack = function() {
         this.parts[partId].attributes.add('transform', transform)
       }
       if (transforms.rotate) {
-        let transform = `rotate(${transforms.rotate}, ${center.x - anchor.x}, ${center.y -
-          anchor.y})`
+        let transform = `rotate(${transforms.rotate}, ${center.x - anchor.x}, ${
+          center.y - anchor.y
+        })`
         this.parts[partId].attributes.add('transform', transform)
       }
     }
@@ -427,7 +428,7 @@ Pattern.prototype.pack = function() {
 }
 
 /** Determines the order to draft parts in, based on dependencies */
-Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
+Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
   let sorted = []
   let visited = {}
   Object.keys(graph).forEach(function visit(name, ancestors) {
@@ -435,7 +436,7 @@ Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
     ancestors.push(name)
     visited[name] = true
     if (typeof graph[name] !== 'undefined') {
-      graph[name].forEach(function(dep) {
+      graph[name].forEach(function (dep) {
         if (visited[dep]) return
         visit(dep, ancestors.slice(0))
       })
@@ -447,7 +448,7 @@ Pattern.prototype.draftOrder = function(graph = this.resolveDependencies()) {
 }
 
 /** Recursively solves part dependencies for a part */
-Pattern.prototype.resolveDependency = function(
+Pattern.prototype.resolveDependency = function (
   seen,
   part,
   graph = this.config.dependencies,
@@ -469,7 +470,7 @@ Pattern.prototype.resolveDependency = function(
 }
 
 /** Resolves part dependencies into a flat array */
-Pattern.prototype.resolveDependencies = function(graph = this.config.dependencies) {
+Pattern.prototype.resolveDependencies = function (graph = this.config.dependencies) {
   for (let i in this.config.inject) {
     let dependency = this.config.inject[i]
     if (typeof this.config.dependencies[i] === 'undefined') this.config.dependencies[i] = dependency
@@ -507,7 +508,7 @@ Pattern.prototype.resolveDependencies = function(graph = this.config.dependencie
  * This depends on the 'only' setting and the
  * configured dependencies.
  */
-Pattern.prototype.needs = function(partName) {
+Pattern.prototype.needs = function (partName) {
   if (typeof this.settings.only === 'undefined' || this.settings.only === false) return true
   else if (typeof this.settings.only === 'string') {
     if (this.settings.only === partName) return true
@@ -529,7 +530,7 @@ Pattern.prototype.needs = function(partName) {
 }
 
 /* Checks whether a part is hidden in the config */
-Pattern.prototype.isHidden = function(partName) {
+Pattern.prototype.isHidden = function (partName) {
   if (Array.isArray(this.config.hide)) {
     if (this.config.hide.indexOf(partName) !== -1) return true
   }
@@ -540,7 +541,7 @@ Pattern.prototype.isHidden = function(partName) {
 /** Determines whether a part is wanted by the user
  * This depends on the 'only' setting
  */
-Pattern.prototype.wants = function(partName) {
+Pattern.prototype.wants = function (partName) {
   if (typeof this.settings.only === 'undefined' || this.settings.only === false) {
     if (this.isHidden(partName)) return false
   } else if (typeof this.settings.only === 'string') {
@@ -559,7 +560,7 @@ Pattern.prototype.wants = function(partName) {
 /** Returns props required to render this pattern through
  *  an external renderer (eg. a React component)
  */
-Pattern.prototype.getRenderProps = function() {
+Pattern.prototype.getRenderProps = function () {
   this.pack()
   let props = {}
   props.width = this.width
