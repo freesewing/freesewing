@@ -88,10 +88,7 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
 
 /** Splits a curve on a point */
 export function splitCurve(start, cp1, cp2, end, split) {
-  let [c1, c2] = new Path()
-    .move(start)
-    .curve(cp1, cp2, end)
-    .split(split)
+  let [c1, c2] = new Path().move(start).curve(cp1, cp2, end).split(split)
 
   return [
     {
@@ -335,3 +332,6 @@ export function deg2rad(degrees) {
 export function rad2deg(radians) {
   return (radians / Math.PI) * 180
 }
+
+// Export bezier-js so plugins can use it
+export { default as Bezier } from 'bezier-js'

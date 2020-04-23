@@ -28,6 +28,7 @@ chatOnGitter: Chat on Gitter
 checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
 chest: Chest
 chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
+chooseASize: Choose a size
 chooseAPerson: Choose a person
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
@@ -98,7 +99,7 @@ joinTheChatMsg: We have a chatroom on Gitter with friendly people who are happy 
 justAMoment: Just a moment
 layout: Layout
 logIn: Log in
-loginWithProvider: 'Log in with<br>{provider}'
+loginWithProvider: 'Log in with<br />{provider}'
 logOut: Log out
 manual: Manual
 markdownHelp: MarkDown help
@@ -174,7 +175,7 @@ share: Share
 showcase: Showcase
 signUpForAFreeAccount: Sign up for a free account
 signUp: Sign up
-signupWithProvider: 'Sign up with<br>{provider}'
+signupWithProvider: 'Sign up with<br />{provider}'
 sortByField: Sort by {field}
 standardSeamAllowance: Standard seam allowance
 startOver: Start over
@@ -190,8 +191,7 @@ thisFieldSupportsMarkdown: This field supports Markdown
 thisPageRequiresAuthentication: This page requires authentication
 troubleLoggingIn: Trouble logging in?
 twitter: Twitter
-txt-footer: Freesewing is made by joost & contributors<br>with the financial support of our Patrons
-txt-tier0: Don't want to support us? Can't afford to support us?<br>Freesewing is free for everyone. No questions asked.
+txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Our most democractically priced tier. It may be less than the price of a latte, but your support means the world to us.
 txt-tier4: Subscribe to this tier and we'll send some of our much covetted freesewing swag to your home anywhere in the world.
 txt-tier8: "If you don't merely want to support us, but want to see freesewing thrive, this is the tier for you. Also: extra swag."
@@ -241,6 +241,7 @@ noUserBrowsingText: "We've got thousands of them. Surely you have better things 
 usePatternMeasurements: "Use the measurements of the original pattern"
 createReplica: Create a replica
 showDetails: Show details
+hideDetails: Hide details
 clickBelowToLogOut: Click below to log out
 compare: Compare
 savePattern: Save pattern

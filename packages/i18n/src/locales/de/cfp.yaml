@@ -25,4 +25,4 @@ designModeIsOn: Design-Modus ist aktiv
 designModeIsOff: Dalton Modus ist aus
 turnOn: Aktivieren
 turnOff: Deaktivieren
-validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
+validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschreiben sein und dürfen keine Sonderzeichen enhalten.\nBennen Sie ihr Name also entsprechend, wie in etwa:"

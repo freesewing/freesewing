@@ -1,8 +1,8 @@
 ---
 shoulderSeamLength:
-  title: Shoulder seam length
-  description: Controls the length of the shoulder seam
+  title: Longitud de la costura de hombro
+  description: Controla la longitud de la costura de hombro
 drapeAngle:
-  title: Drape angle
-  description: Controls the amount of drape
+  title: Ángulo del drapeado
+  description: Controla la cantidad de drapeado
 
