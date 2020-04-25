@@ -1,11 +1,25 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import IconButton from '@material-ui/core/IconButton'
 import RightIcon from '@material-ui/icons/KeyboardArrowRight'
 import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
 import { injectIntl } from 'react-intl'
 
-const OptionPreamble = props => {
+const OptionPreamble = ({
+  intl,
+  title,
+  desc,
+  dflt,
+  designDflt,
+  option,
+  value,
+  displayValue,
+  displayFormat = 'node',
+  sameButDifferent,
+  expanded,
+  toggleExpanded,
+  reset,
+  designReset
+}) => {
   const styles = {
     container: {
       display: 'flex',
@@ -22,43 +36,41 @@ const OptionPreamble = props => {
     }
   }
 
-  const resetLabel = props.intl.formatMessage({
+  const resetLabel = intl.formatMessage({
     id: 'app.restoreDefaults',
     defaultMessage: ' ♻️  '
   })
-  const resetDesignLabel = props.intl.formatMessage({
+  const resetDesignLabel = intl.formatMessage({
     id: 'app.restoreDesignDefaults',
     defaultMessage: ' ♻️  '
   })
-  const resetPatternLabel = props.intl.formatMessage({
+  const resetPatternLabel = intl.formatMessage({
     id: 'app.restorePatternDefaults',
     defaultMessage: ' ♻️  '
   })
 
   let pattern = false
-  if (props.dflt !== props.designDflt) pattern = true
-  let displayClass = props.value === props.dflt ? 'dflt' : 'custom'
-  if (pattern && props.value === props.designDflt) displayClass = 'p-dflt'
-  else if (pattern && props.sameButDifferent) displayClass = 'custom'
-  let displayValue = <span className={displayClass}>{props.displayValue}</span>
+  if (dflt !== designDflt) pattern = true
+  let displayClass = value === dflt ? 'dflt' : 'custom'
+  if (pattern && value === designDflt) displayClass = 'p-dflt'
+  else if (pattern && sameButDifferent) displayClass = 'custom'
+  let dspValue = <span className={displayClass}>{displayValue}</span>
 
-  if (props.displayFormat === 'html')
-    displayValue = (
-      <span className={displayClass} dangerouslySetInnerHTML={{ __html: props.displayValue }} />
-    )
+  if (displayFormat === 'html')
+    dspValue = <span className={displayClass} dangerouslySetInnerHTML={{ __html: displayValue }} />
   return (
     <React.Fragment>
-      <div onClick={props.toggleExpanded} style={styles.container}>
+      <div onClick={toggleExpanded} style={styles.container}>
         <div style={styles.left}>
-          <RightIcon className={'icon-col-exp ' + (props.expanded ? 'expanded' : 'collapsed')} />
-          {props.title}
+          <RightIcon className={'icon-col-exp ' + (expanded ? 'expanded' : 'collapsed')} />
+          {title}
         </div>
-        <div style={styles.right}>{displayValue}</div>
+        <div style={styles.right}>{dspValue}</div>
       </div>
-      <div className={props.expanded ? 'col-exp expanded' : 'col-exp collapsed'}>
+      <div className={expanded ? 'col-exp expanded' : 'col-exp collapsed'}>
         <div style={styles.container}>
           <div style={styles.left}>
-            <p>{props.desc}</p>
+            <p>{desc}</p>
           </div>
           <div style={styles.right}>
             {pattern ? (
@@ -66,8 +78,8 @@ const OptionPreamble = props => {
                 title={resetDesignLabel}
                 aria-label={resetDesignLabel}
                 color="primary"
-                disabled={props.value === props.designDflt ? true : false}
-                onClick={props.designReset}
+                disabled={value === designDflt ? true : false}
+                onClick={designReset}
                 className="mini-icon-btn pattern"
               >
                 <ResetIcon />
@@ -77,40 +89,18 @@ const OptionPreamble = props => {
               title={pattern ? resetPatternLabel : resetLabel}
               aria-label={pattern ? resetPatternLabel : resetLabel}
               color="primary"
-              disabled={props.value === props.dflt && !props.sameButDifferent ? true : false}
-              onClick={props.reset}
+              disabled={value === dflt && !sameButDifferent ? true : false}
+              onClick={reset}
               className={'mini-icon-btn' + (pattern ? ' pattern' : '')}
             >
               <ResetIcon />
             </IconButton>
           </div>
         </div>
-        {props.option}
+        {option}
       </div>
     </React.Fragment>
   )
-}
-
-OptionPreamble.propTypes = {
-  dflt: PropTypes.oneOfType([
-    PropTypes.number.isRequired,
-    PropTypes.string.isRequired,
-    PropTypes.bool.isRequired
-  ]),
-  value: PropTypes.oneOfType([
-    PropTypes.number.isRequired,
-    PropTypes.string.isRequired,
-    PropTypes.bool.isRequired
-  ]),
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  reset: PropTypes.func.isRequired,
-  expanded: PropTypes.bool,
-  displayFormat: PropTypes.string
-}
-
-OptionPreamble.defaultProps = {
-  displayFormat: 'node'
 }
 
 export default injectIntl(OptionPreamble)

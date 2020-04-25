@@ -1,11 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Logo from '../Logo'
 import Emblem from '../Emblem'
 import { FormattedMessage } from 'react-intl'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 
-const Navbar = props => {
+const Navbar = ({
+  home = 'https://freesewing.org/',
+  navs = { left: [], right: [], mleft: {}, mright: {} },
+  logo = <Logo embed color="#e9ecef" />,
+  emblem = <Emblem />
+}) => {
   const mobile = useMediaQuery('(max-width:599px)')
 
   if (mobile) return null
@@ -47,49 +51,36 @@ const Navbar = props => {
   let homeProps = {
     href: '#home'
   }
-  if (typeof props.home === 'function') homeProps.onClick = props.home
-  else homeProps.href = props.home
+  if (typeof home === 'function') homeProps.onClick = home
+  else homeProps.href = home
 
-  let logo = (
+  let logoDiv = (
     <div className="logo">
       <a id="home" {...homeProps} data-test="navbar-home">
-        {props.logo}
+        {logo}
       </a>
     </div>
   )
-  let emblem = (
+  let emblemDiv = (
     <div className="emblem">
-      <a {...homeProps}>{props.emblem}</a>
+      <a {...homeProps}>{emblem}</a>
     </div>
   )
   return (
     <header className="navbar">
       <div>
         <div style={{ display: 'flex' }}>
-          {logo}
-          {emblem}
-          {Object.keys(props.navs.left).map(key => renderNav(key, props.navs.left[key]))}
+          {logoDiv}
+          {emblemDiv}
+          {Object.keys(navs.left).map((key) => renderNav(key, navs.left[key]))}
         </div>
         <div className="spread" />
         <div style={{ display: 'flex' }}>
-          {Object.keys(props.navs.right).map(key => renderNav(key, props.navs.right[key]))}
+          {Object.keys(navs.right).map((key) => renderNav(key, navs.right[key]))}
         </div>
       </div>
     </header>
   )
 }
 
-Navbar.propTypes = {
-  navs: PropTypes.object,
-  logo: PropTypes.node,
-  emblem: PropTypes.node,
-  home: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-}
-
-Navbar.defaultProps = {
-  home: 'https://freesewing.org/',
-  navs: { left: [], right: [], mleft: {}, mright: {} },
-  logo: <Logo embed color="#e9ecef" />,
-  emblem: <Emblem />
-}
 export default Navbar

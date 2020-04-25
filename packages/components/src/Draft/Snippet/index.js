@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { getProps } from '../utils'
 
 const Snippet = (props) => {
@@ -23,10 +22,6 @@ const Snippet = (props) => {
   }
 
   return <use {...snippetProps} {...getProps(props.snippet)} />
-}
-
-Snippet.propTypes = {
-  snippet: PropTypes.object.isRequired
 }
 
 export default Snippet

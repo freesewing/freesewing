@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Circle = (props) => (
   <circle
@@ -9,9 +8,5 @@ const Circle = (props) => (
     {...props.point.attributes.asPropsIfPrefixIs('data-circle-')}
   />
 )
-
-Circle.propTypes = {
-  point: PropTypes.object.isRequired
-}
 
 export default Circle

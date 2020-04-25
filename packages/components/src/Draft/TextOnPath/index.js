@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { strings } from '@freesewing/i18n'
 
 const TextOnPath = (props) => {
@@ -27,11 +26,6 @@ const TextOnPath = (props) => {
       </textPath>
     </text>
   )
-}
-
-TextOnPath.propTypes = {
-  path: PropTypes.object.isRequired,
-  language: PropTypes.string.isRequired
 }
 
 export default TextOnPath

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import Draft from '../../Draft'
 import Zoombox from '../Zoombox'
 import Design from '../Design'
@@ -115,7 +114,7 @@ const DraftPattern = (props) => {
 
   return (
     <div className="fs-sa">
-      <section>
+      <section style={{ margin: '1rem' }}>
         <Draft
           {...patternProps}
           design={design}
@@ -224,26 +223,12 @@ const DraftPattern = (props) => {
             updatePatternData={props.updateGist}
             raiseEvent={props.raiseEvent}
             freesewing={props.freesewing}
-            units={props.units}
+            units={props.units || 'metric'}
           />
         </div>
       </aside>
     </div>
   )
-}
-
-DraftPattern.propTypes = {
-  gist: PropTypes.object.isRequired,
-  updateGist: PropTypes.func.isRequired,
-  config: PropTypes.object.isRequired,
-  raiseEvent: PropTypes.func.isRequired,
-  Pattern: PropTypes.func.isRequired,
-  units: PropTypes.oneOf(['metric', 'imperial'])
-}
-
-DraftPattern.defaultProps = {
-  units: 'metric',
-  pointInfo: null
 }
 
 export default DraftPattern

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import SampleConfigurator from '../../SampleConfigurator'
 import svgattrPlugin from '@freesewing/plugin-svgattr'
 import { FormattedMessage } from 'react-intl'
@@ -35,26 +34,12 @@ const SamplePattern = (props) => {
             updateGist={props.updateGist}
             raiseEvent={props.raiseEvent}
             freesewing={props.freesewing}
-            units={props.units}
+            units={props.units || 'metric'}
           />
         </div>
       </aside>
     </div>
   )
-}
-
-SamplePattern.propTypes = {
-  gist: PropTypes.object.isRequired,
-  updateGist: PropTypes.func.isRequired,
-  config: PropTypes.object.isRequired,
-  raiseEvent: PropTypes.func.isRequired,
-  Pattern: PropTypes.func.isRequired,
-  units: PropTypes.oneOf(['metric', 'imperial'])
-}
-
-SamplePattern.defaultProps = {
-  units: 'metric',
-  pointInfo: null
 }
 
 export default SamplePattern

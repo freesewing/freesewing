@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const Spinner = props => {
+const Spinner = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={props.embed ? '' : props.size}
-      height={props.embed ? '' : props.size}
+      width={props.embed ? '' : props.size || 200}
+      height={props.embed ? '' : props.size || 200}
       viewBox="-28 -28 108 108"
       className={'spinner ' + props.className}
     >
@@ -63,16 +62,6 @@ const Spinner = props => {
       </rect>
     </svg>
   )
-}
-
-Spinner.propTypes = {
-  size: PropTypes.number,
-  embed: PropTypes.bool
-}
-
-Spinner.defaultProps = {
-  size: 200,
-  embed: false
 }
 
 export default Spinner

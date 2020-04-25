@@ -1,41 +1,47 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import examples from "@freesewing/examples";
-import rendertest from "@freesewing/rendertest";
-import tutorial from "@freesewing/tutorial";
-import Draft from "../Draft";
-import Design from "../Workbench/Design";
-import IconButton from "@material-ui/core/IconButton";
-import ResetIcon from "@material-ui/icons/SettingsBackupRestore";
-import Switch from "@material-ui/core/Switch";
+import React, { useState } from 'react'
+import examples from '@freesewing/examples'
+import rendertest from '@freesewing/rendertest'
+import tutorial from '@freesewing/tutorial'
+import Draft from '../Draft'
+import Design from '../Workbench/Design'
+import IconButton from '@material-ui/core/IconButton'
+import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
+import Switch from '@material-ui/core/Switch'
 
-const Example = props => {
-  const [design, setDesign] = useState(false);
-  const [focus, setFocus] = useState(null);
+const Example = ({
+  pattern = 'examples',
+  design = true,
+  caption = '',
+  options = {},
+  settings,
+  part = '',
+  sample
+}) => {
+  const [designMode, setDesignMode] = useState(false)
+  const [focus, setFocus] = useState(null)
 
   const raiseEvent = (type, data) => {
-    if (type === "clearFocusAll") return setFocus(null);
-    let f = {};
-    if (focus !== null) f = { ...focus };
-    if (typeof f[data.part] === "undefined")
-      f[data.part] = { paths: [], points: [], coords: [] };
-    if (type === "point") f[data.part].points.push(data.name);
-    else if (type === "path") f[data.part].paths.push(data.name);
-    else if (type === "coords") f[data.part].coords.push(data.coords);
-    else if (type === "clearFocus") {
-      let i = focus[data.part][data.type].indexOf(data.name);
-      f[data.part][data.type].splice(i, 1);
+    if (type === 'clearFocusAll') return setFocus(null)
+    let f = {}
+    if (focus !== null) f = { ...focus }
+    if (typeof f[data.part] === 'undefined') f[data.part] = { paths: [], points: [], coords: [] }
+    if (type === 'point') f[data.part].points.push(data.name)
+    else if (type === 'path') f[data.part].paths.push(data.name)
+    else if (type === 'coords') f[data.part].coords.push(data.coords)
+    else if (type === 'clearFocus') {
+      let i = focus[data.part][data.type].indexOf(data.name)
+      f[data.part][data.type].splice(i, 1)
     }
 
-    setFocus(f);
-  };
+    setFocus(f)
+  }
 
-  let focusCount = 0;
+  let focusCount = 0
   if (focus !== null) {
     for (let p of Object.keys(focus)) {
-      for (let i in focus[p].points) focusCount++;
-      for (let i in focus[p].paths) focusCount++;
-      for (let i in focus[p].coords) focusCount++;
+      for (let i in focus[p].points) focusCount++
+      for (let i in focus[p].paths) focusCount++
+      for (let i in focus[p].coords) focusCount++
     }
   }
 
@@ -43,75 +49,49 @@ const Example = props => {
     examples,
     rendertest,
     tutorial
-  };
-  const settings = {
-    options: { ...props.options },
+  }
+  settings = {
+    options: { ...options },
     measurements: { headCircumference: 390 },
-    ...props.settings
-  };
-  if (props.part !== "") settings.only = [props.part];
-  const pattern = new patterns[props.pattern](settings);
+    ...settings
+  }
+  if (part !== '') settings.only = [part]
+  const patternInstance = new patterns[pattern](settings)
 
-  if (props.sample) pattern.sample();
-  else pattern.draft();
-  const patternProps = pattern.getRenderProps();
+  if (sample) patternInstance.sample()
+  else patternInstance.draft()
+  const patternProps = patternInstance.getRenderProps()
   return (
-    <figure className={design ? "design example" : "example"}>
+    <figure className={designMode ? 'design example' : 'example'}>
       <div className="example">
-        {props.design ? (
+        {designMode ? (
           <div className="actions">
-            {design ? (
-              <IconButton
-                color="primary"
-                onClick={() => raiseEvent("clearFocusAll", null)}
-              >
-                <ResetIcon />
-              </IconButton>
-            ) : null}
+            <IconButton color="primary" onClick={() => raiseEvent('clearFocusAll', null)}>
+              <ResetIcon />
+            </IconButton>
             <Switch
-              checked={design}
-              onChange={() => setDesign(!design)}
-              value={design}
+              checked={designMode}
+              onChange={() => setDesignMode(!designMode)}
+              value={designMode}
               color="primary"
             />
           </div>
         ) : null}
-        <Draft
-          {...patternProps}
-          design={design}
-          focus={focus}
-          raiseEvent={raiseEvent}
-        />
+        <Draft {...patternProps} design={design} focus={focus} raiseEvent={raiseEvent} />
       </div>
-      <figcaption>{props.caption}</figcaption>
-      {design ? (
+      <figcaption>{caption}</figcaption>
+      {designMode && (
         <div className="design">
           <Design
             focus={focus}
-            design={design}
+            design={designMode}
             raiseEvent={raiseEvent}
             parts={patternProps.parts}
           />
         </div>
-      ) : null}
+      )}
     </figure>
-  );
-};
+  )
+}
 
-Example.propTypes = {
-  pattern: PropTypes.string,
-  design: PropTypes.bool,
-  caption: PropTypes.string,
-  part: PropTypes.string,
-  options: PropTypes.obj
-};
-
-Example.defaultProps = {
-  pattern: "examples",
-  design: true,
-  caption: "",
-  options: {},
-  part: ""
-};
-
-export default Example;
+export default Example

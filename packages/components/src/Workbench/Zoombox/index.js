@@ -43,7 +43,6 @@ const Zoombox = (props) => {
       setPanning(false)
       setPanFrom(false)
       updateViewBox(evt)
-      //props.setViewBox(`${from[0] * factor} ${from[1] * factor} ${to[0] * factor} ${to[1] * factor}`)
     }
   }
   const handlePan = (evt) => {
@@ -55,9 +54,9 @@ const Zoombox = (props) => {
         // Bump into left
       } else if (from[1] + (evt.clientY - panFrom[1]) <= -5) {
         // Bump into top
-      } else if (to[0] + (evt.clientX - panFrom[0]) >= box.width - 11) {
+      } else if (to[0] + (evt.clientX - panFrom[0]) >= box.width + 5) {
         // Bump into right
-      } else if (to[1] + (evt.clientY - panFrom[1]) >= box.height - 11) {
+      } else if (to[1] + (evt.clientY - panFrom[1]) >= box.height + 5) {
         // Bump into bottom
       } else {
         setPanFrom([evt.clientX, evt.clientY])
@@ -78,7 +77,12 @@ const Zoombox = (props) => {
     if (dragging == 2) {
       updateViewBox(evt)
       if (falseAlarm) setFalseAlarm(false)
-    } else setFalseAlarm(true)
+    } else {
+      setFalseAlarm(true)
+      let box = ref.current.getBoundingClientRect()
+      setBox(box)
+      setFactor(props.patternProps.width / box.width)
+    }
     setDragging(false)
     setPanning(false)
     evt.stopPropagation()
@@ -93,20 +97,15 @@ const Zoombox = (props) => {
       setTo([evt.clientX - box.x, evt.clientY - box.y])
     }
   }
-  const handleMouseOver = (evt) => {
-    evt.stopPropagation()
-    evt.preventDefault()
-    setFactor(props.patternProps.width / box.width)
-  }
   const updateViewBox = (evt) => {
     props.setViewBox(
       from[0] * factor +
         ' ' +
         from[1] * factor +
         ' ' +
-        (evt.clientX - box.x - from[0]) * factor +
+        (to[0] - from[0]) * factor +
         ' ' +
-        (evt.clientY - box.y - from[1]) * factor
+        (to[1] - from[1]) * factor
     )
   }
 
@@ -115,7 +114,6 @@ const Zoombox = (props) => {
       <div
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
-        onMouseOver={handleMouseOver}
         onMouseMove={handleMouseMove}
         className="zoombox"
         ref={ref}

@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import patterns from './patterns'
 
-const LineDrawing = props => {
+const LineDrawing = (props) => {
   const attr = {
-    style: props.style,
-    className: 'fs linedrawing ' + props.className,
+    style: props.style || {},
+    className: 'fs linedrawing ' + (props.className || ''),
     xmlns: 'http://www.w3.org/2000/svg',
     viewBox: '0 0 270 270'
   }
@@ -13,20 +12,7 @@ const LineDrawing = props => {
     attr.width = props.size
     attr.height = props.size
   }
-  return <svg {...attr}>{patterns[props.pattern] || null}</svg>
-}
-
-LineDrawing.propTypes = {
-  size: PropTypes.number,
-  pattern: PropTypes.string,
-  style: PropTypes.object
-}
-
-LineDrawing.defaultProps = {
-  size: 0,
-  className: '',
-  pattern: 'aaron',
-  style: {}
+  return <svg {...attr}>{patterns[props.pattern || 'aaron'] || null}</svg>
 }
 
 export default LineDrawing

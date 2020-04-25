@@ -1,94 +1,85 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import sliderStep from "@freesewing/utils/sliderStep";
-import roundMm from "@freesewing/utils/roundMm";
-import roundMmUp from "@freesewing/utils/roundMmUp";
-import roundMmDown from "@freesewing/utils/roundMmDown";
-import formatMm from "@freesewing/utils/formatMm";
-import FormFieldSlider from "../../.form/FormFieldSlider";
-import OptionPreamble from "../OptionPreamble";
+import React, { useState } from 'react'
+import sliderStep from '@freesewing/utils/sliderStep'
+import roundMm from '@freesewing/utils/roundMm'
+import roundMmUp from '@freesewing/utils/roundMmUp'
+import roundMmDown from '@freesewing/utils/roundMmDown'
+import formatMm from '@freesewing/utils/formatMm'
+import FormFieldSlider from '../../.form/FormFieldSlider'
+import OptionPreamble from '../OptionPreamble'
 
-const PatternOptionMillimeter = props => {
-  const [value, setValue] = useState(props.dflt);
-  const [previousValue, setPreviousValue] = useState(props.dflt);
-  const [expanded, setExpanded] = useState(false);
+const PatternOptionMillimeter = ({
+  title = false,
+  desc = false,
+  units = 'metric',
+  min = 0,
+  max = 100,
+  updateValue,
+  name,
+  dflt,
+  noDocs
+}) => {
+  const [val, setVal] = useState(dflt)
+  const [previousValue, setPreviousValue] = useState(dflt)
+  const [expanded, setExpanded] = useState(false)
 
   const update = (name, newValue, evt) => {
-    newValue = roundMm(newValue, props.units);
+    newValue = roundMm(newValue, units)
     // Sometimes, when sliding, the rapid succession of updates
     // causes a weird timing issue to result in a value that is NaN.
     // If that's the case, just ignore this update and keep the
     // previous one instead
     if (!isNaN(newValue)) {
-      setValue(newValue);
-      if (evt.type !== "mousemove") props.updateValue(props.name, newValue);
+      setVal(newValue)
+      if (evt.type !== 'mousemove') updateValue(name, newValue)
     } else {
-      if (evt.type !== "mousemove") props.updateValue(props.name, value);
+      if (evt.type !== 'mousemove') updateValue(name, val)
     }
-  };
+  }
 
   const reset = () => {
-    setValue(props.dflt);
-    props.updateValue(props.name, props.dflt);
-  };
+    setVal(dflt)
+    updateValue(name, dflt)
+  }
 
-  const toggleExpanded = () => setExpanded(!expanded);
+  const toggleExpanded = () => setExpanded(!expanded)
 
   let option = (
     <FormFieldSlider
-      name={props.name}
-      value={value}
-      min={roundMmUp(props.min, props.units)}
-      max={roundMmDown(props.max, props.units)}
-      step={sliderStep[props.units]}
+      name={name}
+      value={val}
+      min={roundMmUp(min, units)}
+      max={roundMmDown(units)}
+      step={sliderStep[units]}
       onChange={update}
-      label={"po-mm-" + props.name}
+      label={'po-mm-' + name}
       updateValue={update}
     />
-  );
+  )
 
   return (
     <li>
       <OptionPreamble
-        dflt={props.dflt}
-        value={value}
-        desc={props.desc}
-        title={props.title}
-        id={"po-mm-" + props.name}
-        displayValue={formatMm(value, props.units)}
+        dflt={dflt}
+        value={val}
+        desc={desc}
+        title={title}
+        id={'po-mm-' + name}
+        displayValue={formatMm(val, units)}
         displayFormat="html"
         reset={reset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.raiseEvent("showHelp", {
-            type: "patternOption",
-            value: props.name
+          raiseEvent('showHelp', {
+            type: 'patternOption',
+            value: name
           })
         }
         option={option}
-        noDocs={props.noDocs}
+        noDocs={noDocs}
       />
     </li>
-  );
-};
+  )
+}
 
-PatternOptionMillimeter.propTypes = {
-  min: PropTypes.number,
-  max: PropTypes.number,
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  dflt: PropTypes.number.isRequired,
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]).isRequired
-};
-
-PatternOptionMillimeter.defaultProps = {
-  min: 0,
-  max: 100,
-  title: false,
-  desc: false
-};
-
-export default PatternOptionMillimeter;
+export default PatternOptionMillimeter

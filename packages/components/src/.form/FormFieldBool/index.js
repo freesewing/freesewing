@@ -1,49 +1,36 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import Radio from '@material-ui/core/Radio'
 import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 
-const Bool = props => {
-  const [value, setValue] = useState(props.dflt)
+const Bool = ({ dflt = false, labels = ['false', 'true'], value, name, updateValue }) => {
+  const [val, setVal] = useState(dflt)
   useEffect(() => {
-    if (props.value !== value) setValue(props.value)
-  }, [props.value])
+    if (value !== val) setVal(value)
+  }, [value])
   const toggle = () => {
-    props.updateValue(props.name, !value)
-    setValue(!value)
+    updateValue(name, !val)
+    setVal(!val)
   }
 
   return (
-    <RadioGroup onChange={toggle} value={JSON.stringify(value)}>
+    <RadioGroup onChange={toggle} value={JSON.stringify(val)}>
       <FormControlLabel
         control={<Radio color="primary" />}
         value="false"
-        checked={value === 'true' || value === true || value === 1 ? false : true}
-        label={props.labels[0]}
+        checked={val === 'true' || val === true || val === 1 ? false : true}
+        label={labels[0]}
         className="po-list-item"
       />
       <FormControlLabel
         control={<Radio color="primary" />}
         value="true"
-        checked={value === 'true' || value === true || value === 1 ? true : false}
-        label={props.labels[1]}
+        checked={val === 'true' || val === true || val === 1 ? true : false}
+        label={labels[1]}
         className="po-list-item"
       />
     </RadioGroup>
   )
-}
-
-Bool.propTypes = {
-  dflt: PropTypes.bool,
-  labels: PropTypes.array,
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired
-}
-
-Bool.defaultProps = {
-  dflt: false,
-  labels: ['false', 'true']
 }
 
 export default Bool

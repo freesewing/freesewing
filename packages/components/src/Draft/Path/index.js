@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import TextOnPath from '../TextOnPath'
 import DesignPath from '../DesignPath'
 import { getProps } from '../utils'
@@ -16,12 +15,6 @@ const Path = (props) => {
     output.push(<TextOnPath key={'text-on-path-' + props.name} pathId={pathId} {...props} />)
 
   return output
-}
-
-Path.propTypes = {
-  path: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired
 }
 
 export default Path
