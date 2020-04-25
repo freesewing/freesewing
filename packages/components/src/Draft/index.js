@@ -13,6 +13,8 @@ const Draft = (props) => (
     id={props.settings.idPrefix + 'svg'}
     design={props.design}
     style={props.style}
+    viewBox={props.viewBox}
+    className={props.className || 'freesewing draft'}
   >
     <Defs
       units={props.settings.units}

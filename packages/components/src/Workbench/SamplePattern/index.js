@@ -1,27 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import SampleConfigurator from "../../SampleConfigurator";
-import svgattrPlugin from "@freesewing/plugin-svgattr";
-import { FormattedMessage } from "react-intl";
+import React from 'react'
+import PropTypes from 'prop-types'
+import SampleConfigurator from '../../SampleConfigurator'
+import svgattrPlugin from '@freesewing/plugin-svgattr'
+import { FormattedMessage } from 'react-intl'
 
-const SamplePattern = props => {
+const SamplePattern = (props) => {
   let pattern = new props.Pattern(props.gist.settings).use(svgattrPlugin, {
-    class: "freesewing draft"
-  });
+    class: 'freesewing draft'
+  })
   try {
-    pattern.sample();
+    pattern.sample()
   } catch (err) {
-    console.log(err);
+    console.log(err)
   }
   return (
     <div className="fs-sa">
       <section>
-        <h2>
-          <FormattedMessage id="app.pattern" />
-        </h2>
         <div dangerouslySetInnerHTML={{ __html: pattern.render() }} />
-        <h2>gist</h2>
-        <pre>{JSON.stringify(props.gist, null, 2)}</pre>
+        <div style={{ padding: '1rem' }}>
+          <div className="gatsby-highlight">
+            <pre
+              className="language-json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(props.gist, null, 2) }}
+            />
+          </div>
+        </div>
       </section>
 
       <aside>
@@ -37,8 +40,8 @@ const SamplePattern = props => {
         </div>
       </aside>
     </div>
-  );
-};
+  )
+}
 
 SamplePattern.propTypes = {
   gist: PropTypes.object.isRequired,
@@ -46,12 +49,12 @@ SamplePattern.propTypes = {
   config: PropTypes.object.isRequired,
   raiseEvent: PropTypes.func.isRequired,
   Pattern: PropTypes.func.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"])
-};
+  units: PropTypes.oneOf(['metric', 'imperial'])
+}
 
 SamplePattern.defaultProps = {
-  units: "metric",
+  units: 'metric',
   pointInfo: null
-};
+}
 
-export default SamplePattern;
+export default SamplePattern

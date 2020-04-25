@@ -7,7 +7,7 @@ const Svg = (props) => {
     'xmlns:svg': 'http://www.w3.org/2000/svg',
     xmlnsXlink: 'http://www.w3.org/1999/xlink',
     xmlLang: props.language,
-    viewBox: `0 0 ${props.width} ${props.height}`,
+    viewBox: props.viewBox || `0 0 ${props.width} ${props.height}`,
     className: props.className,
     style: props.style
   }
@@ -33,7 +33,8 @@ Svg.defaultProps = {
   design: false,
   language: 'en',
   className: 'freesewing draft',
-  style: {}
+  style: {},
+  viewBox: false
 }
 
 export default Svg

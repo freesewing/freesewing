@@ -11,12 +11,13 @@ import LanguageIcon from '@material-ui/icons/Translate'
 import DarkModeIcon from '@material-ui/icons/Brightness3'
 import LanguageChooser from './LanguageChooser'
 import DraftPattern from './DraftPattern'
+import Json from './Json'
 import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
 import Footer from '../Footer'
 import Measurements from './Measurements'
 
-const Workbench = props => {
+const Workbench = (props) => {
   const [display, setDisplay] = useState(null)
   const [pattern, setPattern] = useState(false)
   const [theme, setTheme] = useState('light')
@@ -39,12 +40,12 @@ const Workbench = props => {
   }, [props.language])
 
   const getDisplay = () => storage.get(props.config.name + '-display')
-  const saveDisplay = d => {
+  const saveDisplay = (d) => {
     setDisplay(d)
     storage.set(props.config.name + '-display', d)
   }
   const getMeasurements = () => storage.get(props.config.name + '-measurements')
-  const saveMeasurements = data => {
+  const saveMeasurements = (data) => {
     storage.set(props.config.name + '-measurements', data)
     props.updateGist(data, 'settings', 'measurements')
   }
@@ -54,7 +55,7 @@ const Workbench = props => {
     setMeasurements(updatedMeasurements)
     saveMeasurements(updatedMeasurements)
   }
-  const preloadMeasurements = model => {
+  const preloadMeasurements = (model) => {
     let updatedMeasurements = {
       ...measurements,
       ...model
@@ -97,6 +98,12 @@ const Workbench = props => {
         onClick: () => saveDisplay('measurements'),
         text: 'app.measurements',
         active: display === 'measurements' ? true : false
+      },
+      json: {
+        type: 'button',
+        onClick: () => saveDisplay('json'),
+        text: 'JSON',
+        active: display === 'json' ? true : false
       }
     },
     right: {
@@ -148,6 +155,7 @@ const Workbench = props => {
           units={props.units}
           svgExport={svgExport}
           setSvgExport={setSvgExport}
+          theme={theme}
         />
       )
       break
@@ -174,6 +182,24 @@ const Workbench = props => {
           updateMeasurement={updateMeasurement}
           preloadMeasurements={preloadMeasurements}
           language={props.language}
+        />
+      )
+      break
+    case 'json':
+      main = <Json gist={props.gist} />
+      break
+    case 'inspect':
+      main = (
+        <InspectPattern
+          freesewing={props.freesewing}
+          Pattern={props.Pattern}
+          config={props.config}
+          gist={props.gist}
+          updateGist={props.updateGist}
+          raiseEvent={raiseEvent}
+          units={props.units}
+          svgExport={svgExport}
+          setSvgExport={setSvgExport}
         />
       )
       break
