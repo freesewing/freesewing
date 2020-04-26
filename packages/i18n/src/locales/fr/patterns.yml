@@ -30,11 +30,11 @@ diana:
   description: Diana est un top avec un col drapé.
   title: Top Diana
 florent:
-  description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
+  description: "Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l'avant."
   title: Casquette plate Florent
-fu:
-  description: 'Fu est un masque pour le visage'
-  title: Masque facial Fu
+florence:
+  description: 'Florence est un masque pour le visage'
+  title: Masque facial Florence
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau'
   title: Casquette de détective Holmes
@@ -80,4 +80,3 @@ wahid:
 waralee:
   description: Waralee est un pantalon portefeuille (thaï)
   title: Pantalon portefeuille Waralee
-
