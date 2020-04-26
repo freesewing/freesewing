@@ -53,7 +53,7 @@ Unreleased:
 2.4.5:
   date: 2020-03-19
   Changes:
-    fu:
+    florence:
       - Improved shape based on community feedback
     utils:
       - neckstimate() now returns values rounded to nearest mm
@@ -108,8 +108,8 @@ Unreleased:
 2.4.0:
   date: 2020-02-29
   Added:
-    fu:
-      - Fu is a face mask pattern
+    florence:
+      - Florence is a face mask pattern
 
 2.3.0:
   date: 2020-02-23
