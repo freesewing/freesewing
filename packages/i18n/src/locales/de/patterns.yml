@@ -32,9 +32,9 @@ diana:
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
-fu:
-  description: 'Fu ist eine Gesichtsmaske'
-  title: Fu Gesichtsmaske
+florence:
+  description: 'Florence is a face mask'
+  title: Florence face mask
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
   title: Holmes Deerstalker-Mütze
@@ -80,4 +80,3 @@ wahid:
 waralee:
   description: Waralee ist eine Wickelhose
   title: Wickelhose Wickelhose
-
