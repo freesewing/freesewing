@@ -26,7 +26,9 @@ const Workbench = ({
   config,
   freesewing,
   Pattern,
-  units = 'metric'
+  units = 'metric',
+  translations = false,
+  addTranslations
 }) => {
   const [display, setDisplay] = useState(null)
   const [pattern, setPattern] = useState(false)
@@ -40,6 +42,7 @@ const Workbench = ({
     updateGist(m, 'settings', 'measurements')
     setDisplay(getDisplay())
     setLanguage(userLanguage)
+    if (translations) addTranslations(translations)
   }, [])
   useEffect(() => {
     if (language !== gist.settings.locale) updateGist(language, 'settings', 'locale')
