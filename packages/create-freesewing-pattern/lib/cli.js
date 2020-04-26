@@ -14,7 +14,7 @@ const promptLibraryParams = require('./prompt-library-params')
 module.exports = async () => {
   // Check node version
   const version = process.version.slice(1).split('.')[0]
-  if (parseInt(version) < 10)
+  if (parseInt(version) < 10 && process.argv.indexOf('--skip-version-check') === -1)
     throw `
 ⚠️  FreeSewing requires Node v10 or newer.
 
@@ -38,6 +38,7 @@ module.exports = async () => {
     .option('-r, --repo <string>', 'package repo path')
     .option('-g, --no-git', 'generate without git init')
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
+    .option('-v, --skip-version-check', 'proceed even with Node < v10')
     .option(
       '-t, --template <default|custom>',
       'package template to use',
