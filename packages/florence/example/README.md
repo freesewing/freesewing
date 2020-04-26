@@ -27,7 +27,7 @@
   </a>
 </p>
 
-# fu example
+# florence example
 
 This project was bootstrapped with [Create Freesewing Pattern](https://en.freesewing.dev/create-freesewing-pattern):
 
@@ -43,7 +43,7 @@ To run this example, follow these steps:
 - In the folder above this one, run: `yarn start` (or `npm start`)
 - Then, in new terminal, run the same command in this folder: `yarn start` (or `npm start`)
 
-This will spin up the development environment, similar to [our online demo](https://fu.freesewing.dev/).
+This will spin up the development environment, similar to [our online demo](https://florence.freesewing.dev/).
 
 ## About FreeSewing 🤔
 

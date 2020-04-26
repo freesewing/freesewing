@@ -7,15 +7,35 @@ Unreleased:
   Removed:
   Security:
 
-2.5.1:
-  date: 2020-04-19
+2.6.0:
+  date: 2020-04-26
   Added:
+    components:
+      - '[#368](https://github.com/freesewing/freesewing/issues/368):
+        Allow pan and zoom in the Workbench component.'
+      - '[#374](https://github.com/freesewing/freesewing/issues/374):
+        Allow (extra) translations to be added to the workbench component'
+      - New shortcut buttons and sidebar collapse support for Workbench
+      - Refactor to remove prop-types dependency
+      - Reworked the withLanguage component to allow adding translations at run-time
+    create-freesewing-pattern:
+      - '[#365](https://github.com/freesewing/freesewing/issues/365):
+        Check for node version and raise an error it is too old.'
+    css-theme:
+      - New styled for updated Workbench component
+    florence:
+      - Florence is a face mask pattern
     plugin-export-dxf:
       - This plugin can export your pattern as DXF-ASTM
   Changes:
     core:
       - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
       - We no longer set the plugin configuration/data object to fall in `pattern.use()`
+    i18n:
+      - Changes to support the renaming of @freesewing/fu to @freesewing/florence
+  Deprecated:
+    florence:
+      - '@freesewing/fu has been renamed to @freesewing/florence'
   Fixed:
     brian:
       - The `saBase` path is no longer being rendered

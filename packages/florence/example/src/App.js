@@ -10,7 +10,21 @@ const App = (props) => {
   let instance = new Pattern()
   let config = instance.config
 
-  return <Workbench freesewing={freesewing} Pattern={Pattern} config={config} userLanguage="en" />
+  // You can use this to add transations
+  let translations = {
+    JSON: 'JSON',
+    someOtherString: 'Some other string that needs translation'
+  }
+
+  return (
+    <Workbench
+      freesewing={freesewing}
+      Pattern={Pattern}
+      config={config}
+      userLanguage="en"
+      translations={translations}
+    />
+  )
 }
 
 export default App

@@ -4,6 +4,12 @@
 
 **Note:** Version bump only for package plugin-export-dxf
 
+## 2.6.0 (2020-04-26)
+
+### Added
+
+- This plugin can export your pattern as DXF-ASTM
+
 ## 2.5.0 (2020-04-05)
 
 **Note:** Version bump only for package plugin-export-dxf
