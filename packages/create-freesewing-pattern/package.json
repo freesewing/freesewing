@@ -32,7 +32,7 @@
     "execa": "^1.0.0",
     "git-config-path": "^2.0.0",
     "github-username": "^4.1.0",
-    "globby": "^9.0.0",
+    "globby": "^11.0.0",
     "handlebars": "^4.1.0",
     "inquirer": "^6.2.2",
     "make-dir": "^2.0.0",
