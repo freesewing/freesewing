@@ -32,9 +32,9 @@ diana:
 florent:
   description: 'Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.'
   title: Florent pet
-fu:
-  description: 'Fu is een mondmasker'
-  title: Fu mondmasker
+florence:
+  description: 'Florence is a face mask'
+  title: Florence face mask
 holmes:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt'
   title: Holmes deerstalker hat
@@ -80,4 +80,3 @@ wahid:
 waralee:
   description: Waralee is een wikkelbroek
   title: Waralee wikkelbroek
-
