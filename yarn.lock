@@ -1618,6 +1618,39 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@formatjs/intl-displaynames@^1.2.5":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-1.2.7.tgz#cecc3d4a3a7c470b2e32af9ab59599a462cfe192"
+  integrity sha512-yOjYzFwP/2AaBJ/YbBONNdXKUa1yLyy/qRBU365MtdxKZDNLEIjvD9+L+GHkHE14rJ82pbP+gs7ZME24YM/XRw==
+  dependencies:
+    "@formatjs/intl-utils" "^2.2.3"
+
+"@formatjs/intl-listformat@^1.4.4":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-1.4.5.tgz#3a620fa344188e50e8f06743ca7f1a3052d039ab"
+  integrity sha512-UHZdNuFZxZYhNsUIl31g0zuhRt4mD/j18HlY1t/w6nwe3p5qLySi4ZmxHplGdZMl54ap6Z4+XGEgnxxwqQ4R1g==
+  dependencies:
+    "@formatjs/intl-utils" "^2.2.3"
+
+"@formatjs/intl-relativetimeformat@^4.5.12":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-4.5.13.tgz#1cfd789f5e00bc253720a45a440f75d10e3dd577"
+  integrity sha512-DocBGUaxOydgs0PuN2YGX0zw4ibYqZXLpHn9jnIpn4Gi4YopEEf+6Xf0DGMfaRvjnPe1QztagoaIOtyLvG47fw==
+  dependencies:
+    "@formatjs/intl-utils" "^2.2.3"
+
+"@formatjs/intl-unified-numberformat@^3.3.3", "@formatjs/intl-unified-numberformat@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-unified-numberformat/-/intl-unified-numberformat-3.3.4.tgz#16218f48d322c7b5371909109697bf21fac1491d"
+  integrity sha512-RhgGUOiMvpCOMc0EqM28JgyfFyAKsw1EfnrDAdqMKAZhbUcRj73iQwdusKXoOp++3DAEg9L2TUUes9QcAv5Ypw==
+  dependencies:
+    "@formatjs/intl-utils" "^2.2.3"
+
+"@formatjs/intl-utils@^2.2.2", "@formatjs/intl-utils@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.2.3.tgz#9e5ab8610b4b96c1be6f0f6119fc2fad96d3b297"
+  integrity sha512-CeswyzLq2A3uu7dFptBTn1j815B/stndfHMr+ZPj0QxaN/Q9zLRTQxMYskRW07uPp+a7XobLFqEJHLrMu/tZEw==
+
 "@freesewing/i18n@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.5.0.tgz#704eb7825c5fb751253d6d2454e5007b794c82b8"
@@ -3728,6 +3761,19 @@
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.3.tgz#856c99cdc1551d22c22b18b5402719affec9839a"
   integrity sha512-cS5owqtwzLN5kY+l+KgKdRJ/Cee8tlmQoGQuIE9tWnSmS3JMKzmxo2HIAk2wODMifGwO20d62xZQLYz+RLfXmw==
+
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
+"@types/invariant@^2.2.31":
+  version "2.2.32"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.32.tgz#cf523a609062564e36e7a7dadb5089ed87da6382"
+  integrity sha512-WjY4WVFaehHv+TOgm+dS3UI559NvsPGFz/C0nIo7KOOdC+HeC7Y3/yLzdJYQ3+oFQaTXrOVm7cNtIgMataIDVg==
 
 "@types/is-function@^1.0.0":
   version "1.0.0"
@@ -10839,15 +10885,15 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.5:
+hoist-non-react-statics@^2.3.1:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
-hoist-non-react-statics@^3.2.1, hoist-non-react-statics@^3.3.0:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#101685d3aff3b23ea213163f6e8e12f4f111e19f"
-  integrity sha512-wbg3bpgA/ZqWrZuMOeJi8+SKMhr7X9TesL/rXMjTzh0p0JUBo3II8DHboYbuIXWRlttrUFxwcu/5kygrCw8fJw==
+hoist-non-react-statics@^3.2.1, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
   dependencies:
     react-is "^16.7.0"
 
@@ -11451,31 +11497,27 @@ interpret@^2.0.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.0.0.tgz#b783ffac0b8371503e9ab39561df223286aa5433"
   integrity sha512-e0/LknJ8wpMMhTiWcjivB+ESwIuvHnBSlBbmP/pSb8CQJldoj1p2qv7xGZ/+BtbTziYRFSz8OsvdbiX45LtYQA==
 
-intl-format-cache@^2.0.5:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-2.2.9.tgz#fb560de20c549cda20b569cf1ffb6dc62b5b93b4"
-  integrity sha512-Zv/u8wRpekckv0cLkwpVdABYST4hZNTDaX7reFetrYTJwxExR2VyTqQm+l0WmL0Qo8Mjb9Tf33qnfj0T7pjxdQ==
+intl-format-cache@^4.2.24, intl-format-cache@^4.2.25:
+  version "4.2.25"
+  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.2.25.tgz#f148fe96e94f5de6f2aa009c85d2ffe22885b7f4"
+  integrity sha512-ZwHX7n/Inusc8j/8+Ng6Ik4xHmDkSxOk/kT0KOnEqxpIQQ/2o9TV5aUeorf+RbYA84yLawOcBy4SRZAHSTNTAA==
 
-intl-messageformat-parser@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.4.0.tgz#b43d45a97468cadbe44331d74bb1e8dea44fc075"
-  integrity sha1-tD1FqXRoytvkQzHXS7Ho3qRPwHU=
-
-intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-2.2.0.tgz#345bcd46de630b7683330c2e52177ff5eab484fc"
-  integrity sha1-NFvNRt5jC3aDMwwuUhd/9eq0hPw=
+intl-messageformat-parser@^5.0.0, intl-messageformat-parser@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.0.1.tgz#22a6a6ac3fe07a3b7e7e8db03d6d61ecaa828c57"
+  integrity sha512-hADsMembGSrK2Jo7AKE34xFfnzBV79DTTAby6RZ4NixkC4hCO6zf/m/wj+pdJEmU4549OOeYQHDTSiNpvzavpw==
   dependencies:
-    intl-messageformat-parser "1.4.0"
+    "@formatjs/intl-unified-numberformat" "^3.3.4"
 
-intl-relativeformat@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/intl-relativeformat/-/intl-relativeformat-2.2.0.tgz#6aca95d019ec8d30b6c5653b6629f9983ea5b6c5"
-  integrity sha512-4bV/7kSKaPEmu6ArxXf9xjv1ny74Zkwuey8Pm01NH4zggPP7JHwg2STk8Y3JdspCKRDriwIyLRfEXnj2ZLr4Bw==
+intl-messageformat@^8.3.7:
+  version "8.3.8"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.8.tgz#ff1bbea74aa8cbd38a77de04b3250f519eda6577"
+  integrity sha512-/Kc5V81XvMtN7s3+RIm0ptaWGvf7V0Qqt4XKXLWaONpMu0twa3EhxoqjEi1r/E4zsZyDwjb7YuPdFx7zbfL5UQ==
   dependencies:
-    intl-messageformat "^2.0.0"
+    intl-format-cache "^4.2.25"
+    intl-messageformat-parser "^5.0.1"
 
-invariant@^2.1.1, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -17776,27 +17818,23 @@ react-inspector@^2.3.1:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-intl@2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.8.0.tgz#20b0c1f01d1292427768aa8ec9e51ab7e36503ba"
-  integrity sha512-1cSasNkHxZOXYYhms9Q1tSEWF8AWZQNq3nPLB/j8mYV0ZTSt2DhGQXHfKrKQMu4cgj9J1Crqg7xFPICTBgzqtQ==
+react-intl@4.5.0, react-intl@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.0.tgz#f1ea00eb393b1a0e33850819b5ce8947abed187e"
+  integrity sha512-CQuFR9vjUYOjzxsm7KaVRdM4hKOyMNY2ejvniZCbz3Ni3jMbjfTgcXYmxqYBn0lenMaFg3G2ol7HKkoy2YSXlQ==
   dependencies:
-    hoist-non-react-statics "^2.5.5"
-    intl-format-cache "^2.0.5"
-    intl-messageformat "^2.1.0"
-    intl-relativeformat "^2.1.0"
-    invariant "^2.1.1"
-
-react-intl@^2.8.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.9.0.tgz#c97c5d17d4718f1575fdbd5a769f96018a3b1843"
-  integrity sha512-27jnDlb/d2A7mSJwrbOBnUgD+rPep+abmoJE511Tf8BnoONIAUehy/U1zZCHGO17mnOwMWxqN4qC0nW11cD6rA==
-  dependencies:
-    hoist-non-react-statics "^3.3.0"
-    intl-format-cache "^2.0.5"
-    intl-messageformat "^2.1.0"
-    intl-relativeformat "^2.1.0"
-    invariant "^2.1.1"
+    "@formatjs/intl-displaynames" "^1.2.5"
+    "@formatjs/intl-listformat" "^1.4.4"
+    "@formatjs/intl-relativetimeformat" "^4.5.12"
+    "@formatjs/intl-unified-numberformat" "^3.3.3"
+    "@formatjs/intl-utils" "^2.2.2"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/invariant" "^2.2.31"
+    hoist-non-react-statics "^3.3.2"
+    intl-format-cache "^4.2.24"
+    intl-messageformat "^8.3.7"
+    intl-messageformat-parser "^5.0.0"
+    shallow-equal "^1.2.1"
 
 react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.12.0"
@@ -19294,7 +19332,7 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
-shallow-equal@^1.1.0:
+shallow-equal@^1.1.0, shallow-equal@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
