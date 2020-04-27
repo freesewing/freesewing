@@ -32,7 +32,10 @@ export const list = [
   'theo',
   'trayvon',
   'wahid',
-  'waralee'
+  'waralee',
+  'waralee',
+  'indsleeve',
+  'sleeve_flared'
 ]
 
 export const withoutBreasts = [
@@ -57,7 +60,9 @@ export const withoutBreasts = [
   'theo',
   'trayvon',
   'wahid',
-  'waralee'
+  'waralee',
+  'indsleeve',
+  'sleeve_flared'
 ]
 
 export const withBreasts = ['breanna', 'diana', 'cathrin', 'carlita', 'simone']

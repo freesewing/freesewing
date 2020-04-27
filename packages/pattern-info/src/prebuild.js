@@ -27,6 +27,8 @@ const theo = require('@freesewing/theo').config
 const trayvon = require('@freesewing/trayvon').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
+const indsleeve = require('@freesewing/indsleeve').config
+const sleeve_flared = require('@freesewing/sleeve_flared').config
 
 const patterns = {
   aaron,
@@ -55,9 +57,11 @@ const patterns = {
   theo,
   trayvon,
   wahid,
-  waralee
+  waralee,
+  indsleeve,
+  sleeve_flared
 }
-const patternOptions = config => {
+const patternOptions = (config) => {
   let all = []
   let groups = config.optionGroups
   for (let group of Object.keys(groups)) {
@@ -74,7 +78,7 @@ const patternOptions = config => {
   return all
 }
 
-const patternParts = config => {
+const patternParts = (config) => {
   let parts = {}
   if (config.parts) {
     for (let p of config.parts) parts[p] = p
