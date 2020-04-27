@@ -1,10 +1,9 @@
-name: Unit tests - Fu
+name: Unit tests - Florence
 
 on: [push]
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,14 +18,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: cd packages/fu && npm install
+        run: cd packages/florence && npm install
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: cd packages/fu && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/models @freesewing/pattern-info mocha chai
+        run: cd packages/florence && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/models @freesewing/pattern-info mocha chai
         env:
           CI: true
       - name: Build pattern
-        run: cd packages/fu && npm run build
+        run: cd packages/florence && npm run build
       - name: Run pattern unit tests
-        run: cd packages/fu && npm run testci
+        run: cd packages/florence && npm run testci

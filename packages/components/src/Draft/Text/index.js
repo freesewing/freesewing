@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { strings } from '@freesewing/i18n'
 
 const Text = (props) => {
@@ -30,6 +29,7 @@ const Text = (props) => {
       )
     }
   } else text.push(<tspan key="tspan-1">{translated}</tspan>)
+
   return (
     <text
       x={props.point.x}
@@ -39,11 +39,6 @@ const Text = (props) => {
       {text}
     </text>
   )
-}
-
-Text.propTypes = {
-  point: PropTypes.object.isRequired,
-  language: PropTypes.string.isRequired
 }
 
 export default Text

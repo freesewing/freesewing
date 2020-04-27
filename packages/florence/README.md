@@ -1,13 +1,14 @@
 ![FreeSewing](https://freesewing.org/banner.jpg)
+
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/fu"
-  title="@freesewing/fu on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/fu.svg"
-  alt="@freesewing/fu on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/florence"
+  title="@freesewing/florence on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/florence.svg"
+  alt="@freesewing/florence on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/fu.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/florence.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +16,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Afu"
-  title="Open issues tagged pkg:fu"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:fu.svg?label=Issues"
-  alt="Open issues tagged pkg:fu"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aflorence"
+  title="Open issues tagged pkg:florence"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:florence.svg?label=Issues"
+  alt="Open issues tagged pkg:florence"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
   title="Follow @freesewing_org on Twitter"
@@ -43,18 +44,16 @@
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
-This folder holds **@freesewing/fu**
+This repository is our _monorepo_ holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
+This folder holds **@freesewing/florence**
 
 A FreeSewing pattern for a face mask
-
-
 
 ## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
+Our [core library](https://freesewing.dev/reference/api/) is a _batteries-included_ toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
 of [plugins](https://freesewing.dev/reference/plugins/) and getting started is as simple as:
 
@@ -73,19 +72,19 @@ our sewing patterns adapted to your measurements.
 
 ## Support FreeSewing: Become a patron 🥰
 
-FreeSewing is an open source project run by a community, 
+FreeSewing is an open source project run by a community,
 and financially supported by our patrons.
 
-If you feel what we do is worthwhile, you too 
+If you feel what we do is worthwhile, you too
 should [become a patron](https://freesewing.org/patrons/join).
 
 ## Links 👩‍💻
 
- - 💻 Makers website: [freesewing.org](https://freesewing.org)
- - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
- - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
- - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
- - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+- 💻 Makers website: [freesewing.org](https://freesewing.org)
+- 💻 Developers website: [freesewing.dev](https://freesewing.dev)
+- 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
+- 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+- 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
 ## License: MIT 🤓
 

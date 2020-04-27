@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 import DraftSettingSa from '../DraftSettingSa'
 import DraftSettingMargin from '../DraftSettingMargin'
@@ -11,9 +10,41 @@ import DraftSettingLanguage from '../DraftSettingLanguage'
 import DraftSettingOnly from '../DraftSettingOnly'
 import RightIcon from '@material-ui/icons/KeyboardArrowRight'
 
-const DraftSettings = props => {
+const DraftSettings = ({
+  units = 'metric',
+  raiseEvent,
+  updateValue,
+  noDocs,
+  pattern,
+  config,
+  data = { settings: {} }
+}) => {
+  // State
   const [expanded, setExpanded] = useState([])
-  const toggleGroup = group => {
+
+  // Building blocks
+  const noyes = [<FormattedMessage id="app.no" />, <FormattedMessage id="app.yes" />]
+  const hideshow = [<FormattedMessage id="app.hide" />, <FormattedMessage id="app.show" />]
+  const metricimperial = {
+    metric: <FormattedMessage id="app.metricUnits" />,
+    imperial: <FormattedMessage id="app.imperialUnits" />
+  }
+  const labels = {
+    sa: {
+      none: <FormattedMessage id="app.noSeamAllowance" />,
+      dflt: <FormattedMessage id="app.standardSeamAllowance" />,
+      custom: <FormattedMessage id="app.customSeamAllowance" />
+    },
+    only: {
+      dflt: <FormattedMessage id="app.default" />,
+      custom: <FormattedMessage id="app.custom" />
+    },
+    paperless: noyes,
+    advanced: hideshow,
+    complete: hideshow
+  }
+  // Methods
+  const toggleGroup = (group) => {
     let shown = expanded.slice(0)
     let index = shown.indexOf(group)
     if (index === -1) shown.push(group)
@@ -33,42 +64,21 @@ const DraftSettings = props => {
       case 'margin':
         return 2
       case 'units':
-        return props.units
+        return units
       default:
         return false
     }
   }
-
-  let noyes = [<FormattedMessage id="app.no" />, <FormattedMessage id="app.yes" />]
-  let hideshow = [<FormattedMessage id="app.hide" />, <FormattedMessage id="app.show" />]
-  let units = {
-    metric: <FormattedMessage id="app.metricUnits" />,
-    imperial: <FormattedMessage id="app.imperialUnits" />
-  }
-  const addProps = setting => {
-    const labels = {
-      sa: {
-        none: <FormattedMessage id="app.noSeamAllowance" />,
-        dflt: <FormattedMessage id="app.standardSeamAllowance" />,
-        custom: <FormattedMessage id="app.customSeamAllowance" />
-      },
-      only: {
-        dflt: <FormattedMessage id="app.default" />,
-        custom: <FormattedMessage id="app.custom" />
-      },
-      paperless: noyes,
-      advanced: hideshow,
-      complete: hideshow
-    }
+  const addProps = (setting) => {
     let childProps = {
-      raiseEvent: props.raiseEvent,
-      updateValue: props.updateValue,
-      units: props.units,
+      raiseEvent,
+      updateValue,
+      units,
       key: setting,
       name: setting,
       labels: labels[setting],
-      noDocs: props.noDocs,
-      dflt: getDefault(setting, props.pattern),
+      noDocs,
+      dflt: getDefault(setting, pattern),
       designDflt: getDefault(setting)
     }
     childProps.title = <FormattedMessage id={'settings.' + setting + '.title'} />
@@ -76,26 +86,21 @@ const DraftSettings = props => {
     if (setting === 'only') {
       childProps.customDflt = []
       childProps.parts = {}
-      if (props.config.draftOrder) {
-        for (let part of props.config.draftOrder)
+      if (config.draftOrder) {
+        for (let part of config.draftOrder)
           childProps.parts[part] = <FormattedMessage id={'parts.' + part} />
       }
     }
-    if (
-      typeof props.data !== 'undefined' &&
-      typeof props.data.settings !== 'undefined' &&
-      typeof props.data.settings[setting] !== 'undefined'
-    )
-      childProps.value = props.data.settings[setting]
+    if (typeof data.settings[setting] !== 'undefined') childProps.value = data.settings[setting]
     else childProps.value = null
 
     return childProps
   }
 
-  let groups = {
+  const groups = {
     advanced: [
       <DraftSettingLanguage {...addProps('locale')} />,
-      <DraftSettingUnits {...addProps('units')} list={units} />,
+      <DraftSettingUnits {...addProps('units')} list={metricimperial} />,
       <DraftSettingComplete {...addProps('complete')} />,
       <DraftSettingMargin {...addProps('margin')} />,
       <DraftSettingOnly {...addProps('only')} />
@@ -103,19 +108,19 @@ const DraftSettings = props => {
   }
 
   return (
-    <React.Fragment>
+    <>
       <ul className="config l2 nogroups">
         <DraftSettingSa {...addProps('sa')} />
         <DraftSettingPaperless {...addProps('paperless')} />
         <DraftSettingAdvanced {...addProps('advanced')} />
       </ul>
-      {props.data.settings.advanced ? (
+      {data.settings.advanced && (
         <ul className="config l2">
-          {Object.keys(groups).map(group => {
+          {Object.keys(groups).map((group) => {
             let open = true
             if (expanded.indexOf(group) === -1) open = false
             let children = null
-            if (open) children = groups[group].map(component => component)
+            if (open) children = groups[group].map((component) => component)
             return (
               <React.Fragment key={group}>
                 <li className={open ? 'expanded' : 'collapsed'} key={group + '-ghead'}>
@@ -129,15 +134,9 @@ const DraftSettings = props => {
             )
           })}
         </ul>
-      ) : null}
-    </React.Fragment>
+      )}
+    </>
   )
 }
-
-DraftSettings.propTypes = {
-  config: PropTypes.object.isRequired
-}
-
-DraftSettings.defaultProps = {}
 
 export default DraftSettings

@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import OptionGroup from '../OptionGroup'
 import { FormattedMessage } from 'react-intl'
 import RightIcon from '@material-ui/icons/KeyboardArrowRight'
 
-const PatternOptions = props => {
+const PatternOptions = (props) => {
   const [expanded, setExpanded] = useState([])
-  const toggleGroup = group => {
+  const toggleGroup = (group) => {
     let shown = expanded.slice(0)
     let index = shown.indexOf(group)
     if (index === -1) shown.push(group)
@@ -14,7 +13,7 @@ const PatternOptions = props => {
     setExpanded(shown)
   }
 
-  const renderGroup = group => {
+  const renderGroup = (group) => {
     let open = true
     if (expanded.indexOf(group) === -1) open = false
     let output = []
@@ -57,12 +56,5 @@ const PatternOptions = props => {
 
   return <ul className="config l2">{children}</ul>
 }
-
-PatternOptions.propTypes = {
-  config: PropTypes.object.isRequired,
-  raiseEvent: PropTypes.func
-}
-
-PatternOptions.defaultProps = {}
 
 export default PatternOptions

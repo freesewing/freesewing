@@ -12,6 +12,20 @@ const createLibrary = require('./create-library')
 const promptLibraryParams = require('./prompt-library-params')
 
 module.exports = async () => {
+  // Check node version
+  const version = process.version.slice(1).split('.')[0]
+  if (parseInt(version) < 10 && process.argv.indexOf('--skip-version-check') === -1)
+    throw `
+⚠️  FreeSewing requires Node v10 or newer.
+
+   We hightly recommend using NVM to manage your Node versions:
+     https://github.com/nvm-sh/nvm
+
+   When in doubt, pick an active LTS version:
+     https://nodejs.org/en/about/releases/
+
+`
+
   const defaults = await getDefaultLibraryParams()
 
   program
@@ -24,6 +38,7 @@ module.exports = async () => {
     .option('-r, --repo <string>', 'package repo path')
     .option('-g, --no-git', 'generate without git init')
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
+    .option('-v, --skip-version-check', 'proceed even with Node < v10')
     .option(
       '-t, --template <default|custom>',
       'package template to use',
@@ -47,7 +62,7 @@ module.exports = async () => {
     version
   }
 
-  Object.keys(opts).forEach(key => {
+  Object.keys(opts).forEach((key) => {
     if (!opts[key] && defaults[key]) {
       opts[key] = defaults[key]
     }
@@ -89,7 +104,7 @@ ${strings[params.language]['cfp.talkToUs']}
   return dest
 }
 
-module.exports().catch(err => {
+module.exports().catch((err) => {
   console.error(err)
   process.exit(1)
 })

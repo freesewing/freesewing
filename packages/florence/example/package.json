@@ -1,6 +1,6 @@
 {
-  "name": "fu-example",
-  "homepage": "https://freesewing.github.io/fu",
+  "name": "florence-example",
+  "homepage": "https://freesewing.github.io/florence",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

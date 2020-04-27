@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import FormFieldList from '../../.form/FormFieldList'
 import OptionPreamble from '../OptionPreamble'
 import { injectIntl } from 'react-intl'
 import { languages } from '@freesewing/i18n'
 
-const DraftSettingLanguage = props => {
+const DraftSettingLanguage = (props) => {
   const [value, setValue] = useState(props.value === null ? props.intl.locale : props.value)
   const [expanded, setExpanded] = useState(false)
 
@@ -62,14 +61,6 @@ const DraftSettingLanguage = props => {
       />
     </li>
   )
-}
-
-DraftSettingLanguage.propTypes = {
-  raiseEvent: PropTypes.func.isRequired,
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired
 }
 
 export default injectIntl(DraftSettingLanguage)

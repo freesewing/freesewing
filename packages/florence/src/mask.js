@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -24,16 +24,13 @@ export default part => {
   points.topEdge = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.2)
   points.bottomEdge = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.18)
   points.topTip = points.topRight.shiftFractionTowards(points.topLeft, 0.1)
-  points.bottomTip = points.bottomRight.shiftFractionTowards(
-    points.bottomLeft,
-    0.4
-  )
+  points.bottomTip = points.bottomRight.shiftFractionTowards(points.bottomLeft, 0.4)
   points.tipCenterCp2 = points.tipCenter.shiftFractionTowards(points.topRight, 0.55)
   points.tipCenterCp1 = points.tipCenter.shiftFractionTowards(points.bottomRight, 0.5)
 
   points.topTipCp2 = points.topEdge.shift(0, measurements.headCircumference * options.curve)
   points.topTipCp1 = points.topTip
-    .shiftTowards(points.topTipCp2, points.topTip.dist(points.tipCenterCp2)/2)
+    .shiftTowards(points.topTipCp2, points.topTip.dist(points.tipCenterCp2) / 2)
     .rotate(90, points.topTip)
 
   points.tipCenterCp1 = points.tipCenterCp1.rotate(-4, points.tipCenter)
@@ -45,7 +42,9 @@ export default part => {
       points.bottomTip.shift(15, 30),
       points.tipCenter,
       points.tipCenterCp1
-    ), 0.75)
+    ),
+    0.75
+  )
 
   paths.seam = new Path()
     .move(points.topEdge)
