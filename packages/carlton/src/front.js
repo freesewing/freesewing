@@ -1,6 +1,6 @@
 import { calculateRatios } from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -222,10 +222,7 @@ export default function(part) {
   paths.hemBase = new Path().move(points.flbHem).line(points.hem)
   paths.saBase.render = false
   paths.hemBase.render = false
-  paths.seam = paths.saBase
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   paths.rollLine = new Path()
     .move(points.rollLineStart)
@@ -237,10 +234,7 @@ export default function(part) {
     .curve(points.button3Right, points.waistCp2, points.armhole)
     .attr('class', 'canvas lashed')
 
-  paths.flb = new Path()
-    .move(points.flbHem)
-    .line(points.flbTop)
-    .attr('class', 'lining lashed')
+  paths.flb = new Path().move(points.flbHem).line(points.flbTop).attr('class', 'lining lashed')
 
   paths.pocket = new Path().move(points.pocketTopLeft)
   if (options.pocketRadius > 0) {
@@ -312,7 +306,7 @@ export default function(part) {
 
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['armholePitch', 'cfNeck', 'rollLineStart', 'waist', 'seat']
+      on: ['shoulder', 'cfNeck', 'rollLineStart', 'waist', 'seat']
     })
 
     points.logo = new Point(points.chestPocketTopRight.x, points.armhole.y)

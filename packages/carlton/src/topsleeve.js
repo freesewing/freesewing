@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -10,6 +10,7 @@ export default function(part) {
     macro,
     paths,
     Path,
+    Snippet,
     snippets
   } = part.shorthand()
 
@@ -59,9 +60,9 @@ export default function(part) {
     macro('scalebox', { at: points.tsWristLeftHelperTop })
     delete snippets.logo
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    snippets.sleeveTop = new Snippet('notch', points.top)
 
     if (paperless) {
       macro('ld', {
