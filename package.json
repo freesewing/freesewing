@@ -115,7 +115,7 @@
     "verdaccio": ">=3.12.0"
   },
   "dependencies": {
-    "bezier-js": "2.4.6",
+    "bezier-js": "2.6.1",
     "file-saver": "2.0.2",
     "pretty-quick": "^2.0.1",
     "tlds": "^1.203.1"
