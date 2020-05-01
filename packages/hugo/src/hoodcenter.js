@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -13,31 +13,42 @@ export default function(part) {
   } = part.shorthand()
 
   let width = store.get('hoodCenterWidth')
+  let length = complete ? width * 2.5 : store.get('hoodCenterLength')
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
   points.topMidLeft = new Point(width, 0)
   points.bottomMidLeft = new Point(width, width)
   points.topMidRight = new Point(width * 1.5, 0)
   points.bottomMidRight = new Point(width * 1.5, width)
-  points.topRight = new Point(width * 2.5, 0)
-  points.bottomRight = new Point(width * 2.5, width)
+  points.topRight = new Point(length, 0)
+  points.bottomRight = new Point(length, width)
 
-  paths.seam = new Path()
-    .move(points.topMidLeft)
-    .line(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomMidLeft)
-    .move(points.bottomMidRight)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topMidRight)
-    .attr('class', 'fabric')
-  paths.hint = new Path()
-    .move(points.topMidLeft)
-    .line(points.topMidRight)
-    .move(points.bottomMidLeft)
-    .line(points.bottomMidRight)
-    .attr('class', 'fabric dashed')
+  if (complete) {
+    paths.seam = new Path()
+      .move(points.topMidLeft)
+      .line(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomMidLeft)
+      .move(points.bottomMidRight)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .line(points.topMidRight)
+      .attr('class', 'fabric')
+    paths.hint = new Path()
+      .move(points.topMidLeft)
+      .line(points.topMidRight)
+      .move(points.bottomMidLeft)
+      .line(points.bottomMidRight)
+      .attr('class', 'fabric dashed')
+  } else {
+    paths.seam = new Path()
+      .move(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .close()
+      .attr('class', 'fabric')
+  }
 
   // Complete pattern?
   if (complete) {
@@ -57,15 +68,14 @@ export default function(part) {
       y: points.bottomRight.y + sa + 15,
       text: units(store.get('hoodCenterLength'))
     })
-  }
-
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15
-    })
+    // Paperless?
+    if (paperless) {
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + sa + 15
+      })
+    }
   }
 
   return part

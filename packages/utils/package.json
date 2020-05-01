@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -39,6 +39,7 @@
     "camelCase/*",
     "capitalize/*",
     "cloneObject/*",
+    "convertSize/*",
     "defaultGist/*",
     "defaultSa/*",
     "formatImperial/*",

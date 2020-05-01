@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import FormFieldList from '../../.form/FormFieldList'
 import OptionPreamble from '../OptionPreamble'
 
-const PatternOptionList = props => {
+const PatternOptionList = (props) => {
   const [value, setValue] = useState(props.dflt)
   const [expanded, setExpanded] = useState(false)
 
@@ -68,15 +67,6 @@ const PatternOptionList = props => {
       />
     </li>
   )
-}
-
-PatternOptionList.propTypes = {
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  dflt: PropTypes.oneOfType([PropTypes.number.isRequired, PropTypes.string.isRequired]),
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  list: PropTypes.array.isRequired
 }
 
 export default PatternOptionList

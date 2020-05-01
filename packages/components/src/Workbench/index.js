@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import withGist from '../withGist'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import Navbar from '../Navbar'
@@ -11,12 +10,26 @@ import LanguageIcon from '@material-ui/icons/Translate'
 import DarkModeIcon from '@material-ui/icons/Brightness3'
 import LanguageChooser from './LanguageChooser'
 import DraftPattern from './DraftPattern'
+import Json from './Json'
 import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
 import Footer from '../Footer'
 import Measurements from './Measurements'
 
-const Workbench = props => {
+const Workbench = ({
+  updateGist,
+  setLanguage,
+  userLanguage = 'en',
+  language = 'en',
+  gist,
+  importGist,
+  config,
+  freesewing,
+  Pattern,
+  units = 'metric',
+  translations = false,
+  addTranslations
+}) => {
   const [display, setDisplay] = useState(null)
   const [pattern, setPattern] = useState(false)
   const [theme, setTheme] = useState('light')
@@ -26,27 +39,24 @@ const Workbench = props => {
   useEffect(() => {
     let m = getMeasurements()
     setMeasurements(m)
-    props.updateGist(m, 'settings', 'measurements')
+    updateGist(m, 'settings', 'measurements')
     setDisplay(getDisplay())
-    props.setLanguage(props.userLanguage || 'en')
+    setLanguage(userLanguage)
+    if (translations) addTranslations(translations)
   }, [])
   useEffect(() => {
-    if (props.from) props.importGist(props.from)
-  }, [props.from])
-  useEffect(() => {
-    if (props.language !== props.gist.settings.locale)
-      props.updateGist(props.language, 'settings', 'locale')
-  }, [props.language])
+    if (language !== gist.settings.locale) updateGist(language, 'settings', 'locale')
+  }, [language])
 
-  const getDisplay = () => storage.get(props.config.name + '-display')
-  const saveDisplay = d => {
+  const getDisplay = () => storage.get(config.name + '-display')
+  const saveDisplay = (d) => {
     setDisplay(d)
-    storage.set(props.config.name + '-display', d)
+    storage.set(config.name + '-display', d)
   }
-  const getMeasurements = () => storage.get(props.config.name + '-measurements')
-  const saveMeasurements = data => {
-    storage.set(props.config.name + '-measurements', data)
-    props.updateGist(data, 'settings', 'measurements')
+  const getMeasurements = () => storage.get(config.name + '-measurements')
+  const saveMeasurements = (data) => {
+    storage.set(config.name + '-measurements', data)
+    updateGist(data, 'settings', 'measurements')
   }
   const updateMeasurement = (name, val) => {
     let updatedMeasurements = { ...measurements }
@@ -54,7 +64,7 @@ const Workbench = props => {
     setMeasurements(updatedMeasurements)
     saveMeasurements(updatedMeasurements)
   }
-  const preloadMeasurements = model => {
+  const preloadMeasurements = (model) => {
     let updatedMeasurements = {
       ...measurements,
       ...model
@@ -63,7 +73,7 @@ const Workbench = props => {
     saveMeasurements(updatedMeasurements)
   }
   const measurementsMissing = () => {
-    let required = props.config.measurements
+    let required = config.measurements
     if (required.length < 1) return false
     if (measurements === null) return true
     for (let m of required) {
@@ -97,13 +107,19 @@ const Workbench = props => {
         onClick: () => saveDisplay('measurements'),
         text: 'app.measurements',
         active: display === 'measurements' ? true : false
+      },
+      json: {
+        type: 'button',
+        onClick: () => saveDisplay('json'),
+        text: 'JSON',
+        active: display === 'json' ? true : false
       }
     },
     right: {
       version: {
         type: 'link',
         href: 'https://github.com/freesewing/freesewing/releases',
-        text: 'v' + props.freesewing.version
+        text: 'v' + freesewing.version
       },
       language: {
         type: 'button',
@@ -133,21 +149,22 @@ const Workbench = props => {
   let main = null
   switch (display) {
     case 'languages':
-      main = <LanguageChooser setLanguage={props.setLanguage} setDisplay={saveDisplay} />
+      main = <LanguageChooser setLanguage={setLanguage} setDisplay={saveDisplay} />
       break
     case 'draft':
       if (measurementsMissing()) saveDisplay('measurements')
       main = (
         <DraftPattern
-          freesewing={props.freesewing}
-          Pattern={props.Pattern}
-          config={props.config}
-          gist={props.gist}
-          updateGist={props.updateGist}
+          freesewing={freesewing}
+          Pattern={Pattern}
+          config={config}
+          gist={gist}
+          updateGist={updateGist}
           raiseEvent={raiseEvent}
-          units={props.units}
+          units={units}
           svgExport={svgExport}
           setSvgExport={setSvgExport}
+          theme={theme}
         />
       )
       break
@@ -155,13 +172,13 @@ const Workbench = props => {
       if (measurementsMissing()) saveDisplay('measurements')
       main = (
         <SamplePattern
-          freesewing={props.freesewing}
-          Pattern={props.Pattern}
-          config={props.config}
-          gist={props.gist}
-          updateGist={props.updateGist}
+          freesewing={freesewing}
+          Pattern={Pattern}
+          config={config}
+          gist={gist}
+          updateGist={updateGist}
           raiseEvent={raiseEvent}
-          units={props.units}
+          units={units}
         />
       )
       break
@@ -169,39 +186,47 @@ const Workbench = props => {
       main = (
         <Measurements
           measurements={measurements}
-          required={props.config.measurements}
-          units={props.units}
+          required={config.measurements}
+          units={units}
           updateMeasurement={updateMeasurement}
           preloadMeasurements={preloadMeasurements}
-          language={props.language}
+          language={language}
+        />
+      )
+      break
+    case 'json':
+      main = <Json gist={gist} />
+      break
+    case 'inspect':
+      main = (
+        <InspectPattern
+          freesewing={freesewing}
+          Pattern={Pattern}
+          config={config}
+          gist={gist}
+          updateGist={updateGist}
+          raiseEvent={raiseEvent}
+          units={units}
+          svgExport={svgExport}
+          setSvgExport={setSvgExport}
         />
       )
       break
     default:
-      main = <Welcome language={props.language} setDisplay={saveDisplay} />
+      main = <Welcome language={language} setDisplay={saveDisplay} />
   }
 
   const themes = { dark, light }
+
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
       <div className={theme === 'light' ? 'theme-wrapper light' : 'theme-wrapper dark'}>
         {display !== 'welcome' ? <Navbar navs={navs} home={() => saveDisplay('welcome')} /> : null}
         {main}
-        {display !== 'welcome' ? <Footer language={props.language} /> : null}
+        {display !== 'welcome' ? <Footer language={language} /> : null}
       </div>
     </MuiThemeProvider>
   )
-}
-
-Workbench.propTypes = {
-  freesewing: PropTypes.object.isRequired,
-  Pattern: PropTypes.func.isRequired,
-  config: PropTypes.object.isRequired,
-  from: PropTypes.object
-}
-
-Workbench.defaultProps = {
-  from: { settings: { embed: true } }
 }
 
 export default withLanguage(

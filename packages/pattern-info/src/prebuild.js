@@ -11,7 +11,7 @@ const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
 const cathrin = require('@freesewing/cathrin').config
 const florent = require('@freesewing/florent').config
-const fu = require('@freesewing/fu').config
+const florence = require('@freesewing/florence').config
 const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
@@ -40,7 +40,7 @@ const patterns = {
   carlton,
   cathrin,
   florent,
-  fu,
+  florence,
   holmes,
   huey,
   hugo,
@@ -57,7 +57,7 @@ const patterns = {
   wahid,
   waralee
 }
-const patternOptions = config => {
+const patternOptions = (config) => {
   let all = []
   let groups = config.optionGroups
   for (let group of Object.keys(groups)) {
@@ -74,7 +74,7 @@ const patternOptions = config => {
   return all
 }
 
-const patternParts = config => {
+const patternParts = (config) => {
   let parts = {}
   if (config.parts) {
     for (let p of config.parts) parts[p] = p

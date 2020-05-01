@@ -1,8 +1,7 @@
 ---
 shoulderSeamLength:
-  title: Shoulder seam length
-  description: Controls the length of the shoulder seam
+  title: Schulternahtlänge
+  description: Steuert die Länge der Schulternaht
 drapeAngle:
-  title: Drape angle
-  description: Controls the amount of drape
-
+  title: Fallwinkel
+  description: Steuert die Stärke des Fallwinkels

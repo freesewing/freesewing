@@ -29,14 +29,15 @@ chatOnGitter: Discuter sur Gitter
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
 chest: Poitrine
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si cette personne n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les patrons sont tracés.
+chooseASize: Choisir une taille
 chooseAPerson: Choisir une personne
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-colourYes: "Image en couleur : le contenu est disponible en français"
+colourYes: 'Image en couleur : le contenu est disponible en français'
 community: Communauté
 configureLayout: Configurer la mise en page
-configureYourDraft: Configurez votre ébauche
+configureYourDraft: Configurez votre propre patron
 contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
 contents: Contenus
@@ -44,7 +45,7 @@ continue: Continuer
 copiedToClipboard: Copié dans le presse-papier
 copy: Copier
 couldYouTranslateThis: Pourriez-vous traduire cela ?
-countModelsLackingForPattern: "{count} de vos personnes manquent des mesures requises pour dessiner {pattern}"
+countModelsLackingForPattern: '{count} de vos personnes manquent des mesures requises pour dessiner {pattern}'
 created: Créé
 custom: Personnaliser
 customSeamAllowance: Marge de couture customisée
@@ -69,16 +70,16 @@ drafts: Ébauches
 draftSettings: Réglages de l'ébauche
 dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
 emailAddress: Adresse mail
-emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
+emailWorksToo: "Si vous ne connaissez pas votre nom d'utilisateur, votre adresse mail fonctionne également"
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
 export: Exporter
 exportTiledPDF: Exporter un PDF paginé
 faq: Foire Aux Questions (FAQ)
-fieldRemoved: "{field} supprimé"
-fieldSaved: "{field} enregistré"
+fieldRemoved: '{field} supprimé'
+fieldSaved: '{field} enregistré'
 filterByPattern: Filtrer par patron
 filterPatterns: Filtrez les patrons
-forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
+forgotLoginInstructions: "Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>."
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
 github: GitHub
@@ -94,12 +95,12 @@ i18n: Internationalisation
 imperialUnits: Unités impériales (pouces)
 info: Info
 instagram: Instagram
-invalidTldMessage: '.{tld} n''est pas un TLD valide'
+invalidTldMessage: ".{tld} n'est pas un TLD valide"
 joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes sympathiques qui seront heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
 justAMoment: Juste un instant
 layout: Mis en page
 logIn: Connexion
-loginWithProvider: 'Connectez-vous avec<br>{provider}'
+loginWithProvider: 'Connectez-vous avec<br />{provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -127,7 +128,7 @@ oneMoreThing: Encore une chose
 options: Options
 orPayPerYear: Ou payer par an
 other: Autre
-otherThing: "Autres {thing}"
+otherThing: 'Autres {thing}'
 ourPatrons: Nos mécènes
 patron-2: Matelot
 patron-4: Second
@@ -153,7 +154,7 @@ remove: Supprimer
 removeThing: Supprimer {thing}
 reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
-resendActivationEmailMessage: 'Remplissez l''adresse e-mail avec laquelle vous vous êtes inscrit, et nous vous enverrons un nouveau message de confirmation.'
+resendActivationEmailMessage: "Remplissez l'adresse e-mail avec laquelle vous vous êtes inscrit, et nous vous enverrons un nouveau message de confirmation."
 resendActivationEmail: Renvoyer le mail d'activation
 resetPassword: Réinitialiser le mot de passe
 reset: Réinitialiser
@@ -175,11 +176,11 @@ share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
-signupWithProvider: 'Inscrivez-vous avec<br>{provider}'
+signupWithProvider: 'Inscrivez-vous avec<br />{provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
-startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
+startTranslatingNowOrRead: "{startTranslatingNow}, ou lisez d'abord la {documentationForTranslators}."
 startTranslatingNow: Commencez à traduire maintenant
 subscribe: Souscrire
 support: Soutien
@@ -191,12 +192,11 @@ thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
 thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
-txt-footer: Freesewing est la création de Joost et ses contributeurs<br>avec le soutien financier de nos mécènes
-txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir ?<br>Freesewing est gratuit pour tout le monde. On ne vous demande rien.
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br />avec le soutien financier de nos mécènes
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
 txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une part de notre swag Freesewing tant convoité chez vous, partout dans le monde.
 txt-tier8: "Si vous ne voulez simplement pas nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi : swag supplémentaire !"
-txt-tiers: "Freesewing est financé par un modèle de souscription volontaire"
+txt-tiers: 'Freesewing est financé par un modèle de souscription volontaire'
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
 update: Mettre à jour
@@ -237,11 +237,12 @@ noPattern: Vous n'avez pas (encore) de patrons. Créez un nouveau patron, puis s
 modelFirst: Commencez par ajouter des mensurations
 noModel: Vous n'avez pas (encore) ajouté de mesure. FreeSewing peut générer des patrons de couture sur mesure. Mais pour cela, nous avons besoin de mensurations.
 noModel2: La première chose à faire est donc d'ajouter une personne et de sortir votre mètre-ruban.
-noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisateurs"
-noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
+noUserBrowsingTitle: 'Vous ne pouvez pas simplement parcourir tous les utilisateurs'
+noUserBrowsingText: 'Nous en avons des milliers. Vous avez certainement autre chose à faire ?'
 usePatternMeasurements: "Utiliser les mesures du patron d'origine"
 createReplica: Créer une réplique
 showDetails: Voir les détails
+hideDetails: Masquer les détails
 clickBelowToLogOut: Cliquez ci-dessous pour vous déconnecter
 compare: Comparer
 savePattern: Enregistrer le patron
@@ -263,7 +264,7 @@ oneMomentPlease: Veuillez patienter
 loadingMagic: En cours de chargement
 estimate: Estimation
 actual: Réel
-weEstimateYM2B: "Nous estimons que votre {measurement} est environ :"
+weEstimateYM2B: 'Nous estimons que votre {measurement} est environ :'
 exportAsData: Exporter en tant que données
 availablePatterns: Patrons disponibles
 browseCollection: Parcourez votre collection
@@ -275,7 +276,7 @@ patternDocs: Documentation de patron
 socialMedia: Réseaux sociaux
 create: Créer
 browse: Parcourir
-patrons: Patrons
+patrons: Mécènes
 scrollToTop: Haut de la page
 sitemap: Plan du site
 contributeToThing: Contribuer à {thing}
@@ -315,4 +316,3 @@ updateNotes-txt: Mettre à jour les notes concernant votre patron
 franceWarning: Attention, pour les utilisateurs français
 franceWarning-txt: Plusieurs fournisseurs d'accès français — dont free.fr, laposte.net, orange.fr et sfr.fr — rejettent systématiquement nos e-mails.
 emailNotReceived: Si vous ne recevez pas le mail d'activation, merci de nous contacter pour que nous puissions vous aider.
-

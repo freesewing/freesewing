@@ -1,41 +1,56 @@
-import React from "react";
-import { IntlProvider, addLocaleData } from "react-intl";
-import en from "react-intl/locale-data/en";
-import de from "react-intl/locale-data/de";
-import es from "react-intl/locale-data/es";
-import fr from "react-intl/locale-data/fr";
-import nl from "react-intl/locale-data/nl";
-import { strings } from "@freesewing/i18n";
+import React from 'react'
+import { IntlProvider } from 'react-intl'
+import { strings } from '@freesewing/i18n'
 
-const withLanguage = (WrappedComponent, lang = "en", store = false) => {
+const withLanguage = (WrappedComponent, lang = 'en', store = false, translations = {}) => {
   return class extends React.Component {
     constructor(props) {
-      super(props);
-      this.setLanguage = this.setLanguage.bind(this);
-      this.state = { language: lang };
+      super(props)
+      this.strings = strings
+      this.setLanguage = this.setLanguage.bind(this)
+      this.addTranslations = this.addTranslations.bind(this)
+      this.state = {
+        language: lang,
+        strings: this.strings[lang]
+      }
     }
 
     setLanguage(l) {
-      this.setState({ language: l });
+      this.setState({
+        language: l,
+        strings: this.strings[l]
+      })
+    }
+
+    addTranslations(translations) {
+      this.setState({
+        language: this.state.language,
+        strings: {
+          ...this.strings[this.state.language],
+          ...translations
+        }
+      })
     }
 
     render() {
-      const localeData = { en, de, es, fr, nl };
-      addLocaleData(localeData[this.state.language]);
       return (
         <IntlProvider
           locale={this.state.language}
-          messages={strings[this.state.language]}
+          messages={{
+            ...this.state.strings,
+            ...translations
+          }}
         >
           <WrappedComponent
             language={this.state.language}
             setLanguage={this.setLanguage}
+            addTranslations={this.addTranslations}
             {...this.props}
           />
         </IntlProvider>
-      );
+      )
     }
-  };
-};
+  }
+}
 
-export default withLanguage;
+export default withLanguage

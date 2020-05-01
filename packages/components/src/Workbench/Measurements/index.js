@@ -1,31 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Button from "@material-ui/core/Button";
-import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
-import FormFieldMeasurement from "../../.form/FormFieldMeasurement";
-import { withBreasts, withoutBreasts } from "@freesewing/models";
+import React from 'react'
+import Button from '@material-ui/core/Button'
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
+import FormFieldMeasurement from '../../.form/FormFieldMeasurement'
+import { withBreasts, withoutBreasts } from '@freesewing/models'
 
-const Measurements = props => {
+const Measurements = (props) => {
   const styles = {
     container: {
-      display: "flex",
-      flexDirection: "row",
-      width: "100%",
-      minHeight: "70vh"
+      display: 'flex',
+      flexDirection: 'row',
+      width: '100%',
+      minHeight: '70vh'
     },
     chooser: {
-      width: "100%",
-      maxWidth: "500px",
-      margin: "auto",
-      alignSelf: "center"
+      width: '100%',
+      maxWidth: '500px',
+      margin: 'auto',
+      alignSelf: 'center'
     }
-  };
+  }
 
-  const getValue = m => {
-    if (props.measurements === null) return "";
-    if (typeof props.measurements[m] === "undefined") return "";
-    return props.measurements[m];
-  };
+  const getValue = (m) => {
+    if (props.measurements === null) return ''
+    if (typeof props.measurements[m] === 'undefined') return ''
+    return props.measurements[m]
+  }
 
   if (props.required.length < 1)
     return (
@@ -43,18 +42,14 @@ const Measurements = props => {
           <p>
             <FormattedMessage id="cfp.seeDocsAt" />
             &nbsp;
-            <a
-              href={
-                "https://" + props.language + "/.freesewing.dev/core/config"
-              }
-            >
+            <a href={'https://' + props.language + '/.freesewing.dev/core/config'}>
               {props.language}
               .freesewing.dev/core/config
             </a>
           </p>
         </div>
       </div>
-    );
+    )
   return (
     <div style={styles.container}>
       <div style={styles.chooser}>
@@ -79,13 +74,13 @@ const Measurements = props => {
         <h3 id="manual">
           <FormattedMessage id="cfp.enterMeasurements" />
         </h3>
-        {props.required.map(m => (
+        {props.required.map((m) => (
           <FormFieldMeasurement
             key={m}
             name={m}
             units={props.units}
             value={getValue(m)}
-            label={"measurements." + m}
+            label={'measurements.' + m}
             updateValue={props.updateMeasurement}
           />
         ))}
@@ -96,11 +91,9 @@ const Measurements = props => {
           <FormattedMessage id="app.withoutBreasts" />
         </h4>
         <ul>
-          {Object.keys(withoutBreasts).map(m => (
+          {Object.keys(withoutBreasts).map((m) => (
             <li key={m}>
-              <Button
-                onClick={() => props.preloadMeasurements(withoutBreasts[m])}
-              >
+              <Button onClick={() => props.preloadMeasurements(withoutBreasts[m])}>
                 <FormattedMessage id="cfp.size" />
                 &nbsp;
                 {m.slice(-2)}
@@ -112,7 +105,7 @@ const Measurements = props => {
           <FormattedMessage id="app.withBreasts" />
         </h4>
         <ul>
-          {Object.keys(withBreasts).map(m => (
+          {Object.keys(withBreasts).map((m) => (
             <li key={m}>
               <Button onClick={() => props.preloadMeasurements(withBreasts[m])}>
                 <FormattedMessage id="cfp.size" />
@@ -124,15 +117,7 @@ const Measurements = props => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-Measurements.propTypes = {
-  measurements: PropTypes.object.isRequired,
-  required: PropTypes.array.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"]),
-  updateMeasurement: PropTypes.func.isRequired,
-  preloadMeasurements: PropTypes.func.isRequired
-};
-
-export default Measurements;
+export default Measurements

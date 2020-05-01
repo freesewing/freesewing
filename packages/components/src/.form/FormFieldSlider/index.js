@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import Slider from '@material-ui/core/Slider'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -11,48 +10,40 @@ const PaddedSlider = withStyles({
   thumb: { width: '16px', height: '16px' }
 })(Slider)
 
-const FormFieldSlider = props => {
-  const [value, setValue] = useState(props.value)
+const FormFieldSlider = ({
+  min = 0,
+  max = 100,
+  step = 0.1,
+  label = false,
+  updateValue,
+  name,
+  value
+}) => {
+  const [val, setVal] = useState(value)
   useEffect(() => {
-    if (props.value !== value) setValue(props.value)
-  }, [props.value])
+    if (value !== val) setVal(value)
+  }, [value])
 
   const update = (evt, newValue) => {
-    props.updateValue(props.name, newValue, evt)
-    setValue(newValue)
+    updateValue(name, newValue, evt)
+    setVal(newValue)
   }
 
   return (
     <PaddedSlider
-      value={value}
-      min={props.min}
-      max={props.max}
-      step={props.step}
+      value={val}
+      min={min}
+      max={max}
+      step={step}
       onChange={update}
       onChangeCommitted={update}
       classes={{
         track: 'slider-track',
         thumb: 'slider-thumb'
       }}
-      aria-labelledby={props.label}
+      aria-labelledby={label}
     />
   )
-}
-
-FormFieldSlider.propTypes = {
-  min: PropTypes.number,
-  max: PropTypes.number,
-  step: PropTypes.number,
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
-}
-
-FormFieldSlider.defaultProps = {
-  min: 0,
-  max: 100,
-  step: 0.1,
-  label: false
 }
 
 export default FormFieldSlider

@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -24,7 +24,7 @@ export default part => {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: pw / 8,
-    render: true,
+    render: false,
     prefix: 'roundLeft'
   })
   macro('round', {
@@ -32,7 +32,7 @@ export default part => {
     to: points.topRight,
     via: points.bottomRight,
     radius: pw / 8,
-    render: true,
+    render: false,
     prefix: 'roundRight'
   })
 

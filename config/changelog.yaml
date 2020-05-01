@@ -7,6 +7,49 @@ Unreleased:
   Removed:
   Security:
 
+2.6.0:
+  date: 2020-05-01
+  Added:
+    components:
+      - '[#368](https://github.com/freesewing/freesewing/issues/368):
+        Allow pan and zoom in the Workbench component.'
+      - '[#374](https://github.com/freesewing/freesewing/issues/374):
+        Allow (extra) translations to be added to the workbench component'
+      - New shortcut buttons and sidebar collapse support for Workbench
+      - Refactor to remove prop-types dependency
+      - Reworked the withLanguage component to allow adding translations at run-time
+    create-freesewing-pattern:
+      - '[#365](https://github.com/freesewing/freesewing/issues/365):
+        Check for node version and raise an error it is too old.'
+    css-theme:
+      - New styled for updated Workbench component
+    florence:
+      - Florence is a face mask pattern
+    plugin-export-dxf:
+      - This plugin can export your pattern as DXF-ASTM
+  Changes:
+    core:
+      - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
+      - We no longer set the plugin configuration/data object to fall in `pattern.use()`
+    i18n:
+      - Changes to support the renaming of @freesewing/fu to @freesewing/florence
+  Deprecated:
+    florence:
+      - '@freesewing/fu has been renamed to @freesewing/florence'
+  Fixed:
+    brian:
+      - The `saBase` path is no longer being rendered
+    hugo:
+      - Render fully-sized pattern parts when complete is falsy
+      - Do not render pocket outline when complete is falsy
+      - Do not render pocket facing hint when complete is falsy
+    wahid:
+      - Removed paths.test
+      - Do not draw the pocket outline unless complete is truthy
+      - Prevent rounded corners on pocket bag and lining to be drawn twice
+      - Closed the front seam path
+      - Draft the front lining/facing even when complete is falsy
+
 2.5.0:
   date: 2020-04-05
   Added:
@@ -30,7 +73,7 @@ Unreleased:
 2.4.5:
   date: 2020-03-19
   Changes:
-    fu:
+    florence:
       - Improved shape based on community feedback
     utils:
       - neckstimate() now returns values rounded to nearest mm
@@ -79,14 +122,14 @@ Unreleased:
     components:
       - Fixed `updatePatternData` props issue in the Workbench component
     utils:
-      - "[#542](https://github.com/freesewing/freesewing.org/issues/542):
-        Prevent neckstimate from throwing when getting an unexpected measurement "
+      - '[#542](https://github.com/freesewing/freesewing.org/issues/542):
+        Prevent neckstimate from throwing when getting an unexpected measurement '
 
 2.4.0:
   date: 2020-02-29
   Added:
-    fu:
-      - Fu is a face mask pattern
+    florence:
+      - Florence is a face mask pattern
 
 2.3.0:
   date: 2020-02-23
@@ -170,8 +213,8 @@ Unreleased:
       - Removed the files for editor translation, as it is no longer used
   Fixed:
     create-freesewing-pattern:
-      - "[#257](https://github.com/freesewing/freesewing/issues/257):
-        Explain that pattern names are bound by the constraints of NPM package names"
+      - '[#257](https://github.com/freesewing/freesewing/issues/257):
+        Explain that pattern names are bound by the constraints of NPM package names'
     hugo:
       - Made sure dimensions for hood center and waistband are always shown
     florent:
@@ -189,18 +232,18 @@ Unreleased:
   date: 2020-01-18
   Fixed:
     simon:
-      - "[#253](https://github.com/freesewing/freesewing/issues/253):
-        Fixed type in simon sleeve causing incorrect cuff issue"
+      - '[#253](https://github.com/freesewing/freesewing/issues/253):
+        Fixed type in simon sleeve causing incorrect cuff issue'
     core:
-      - "[#19](https://github.com/freesewing/freesewing/issues/19):
-        Path offset issue is now fixed in upstream bezier-js@2.4.6"
+      - '[#19](https://github.com/freesewing/freesewing/issues/19):
+        Path offset issue is now fixed in upstream bezier-js@2.4.6'
 
 2.1.8:
   date: 2019-12-16
   Fixed:
     simon:
-      - "[#416](https://github.com/freesewing/freesewing.org/issues/416):
-        Fixed bug in simon sleeve"
+      - '[#416](https://github.com/freesewing/freesewing.org/issues/416):
+        Fixed bug in simon sleeve'
 
 2.1.7:
   date: 2019-12-15
@@ -213,8 +256,8 @@ Unreleased:
   date: 2019-11-24
   Fixed:
     utils:
-      - "[#317](https://github.com/freesewing/freesewing.org/issues/317):
-        Fixed bug where format was not passed to formatImperial"
+      - '[#317](https://github.com/freesewing/freesewing.org/issues/317):
+        Fixed bug where format was not passed to formatImperial'
 
 2.1.5:
   date: 2019-11-19
@@ -303,8 +346,8 @@ Unreleased:
       - Added Penelope and Waralee linedrawings
       - Changed animation of the Spinner component
     simon:
-      - "[#123](https://github.com/freesewing/freesewing/issues/123):
-        Added a box pleat option to Simon"
+      - '[#123](https://github.com/freesewing/freesewing/issues/123):
+        Added a box pleat option to Simon'
       - Added the `backDarts` option to control the inclusion of back darts
       - Added the `backDartsShaping` option to control the amount of shaping by the back darts
       - Changed the defaults to slightly reduce the ease and adapt the sleevecap
@@ -337,11 +380,11 @@ Unreleased:
       - Advanced options and settings are now hidden by default in DraftConfigurator
   Fixed:
     carlton:
-      - "[#108](https://github.com/freesewing/freesewing/issues/108):
-        Fixed incorrect width of the Carlton tail"
+      - '[#108](https://github.com/freesewing/freesewing/issues/108):
+        Fixed incorrect width of the Carlton tail'
     components:
-      - "[#104](https://github.com/freesewing/freesewing/issues/104):
-        Fixed incorrect embed setting on Workbench pattern export"
+      - '[#104](https://github.com/freesewing/freesewing/issues/104):
+        Fixed incorrect embed setting on Workbench pattern export'
 
 2.0.3:
   date: 2019-09-15
@@ -350,8 +393,8 @@ Unreleased:
       - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
   Fixed:
     bruce:
-      - "[#106](https://github.com/freesewing/freesewing/issues/106):
-        Fix incorrect hem allowance"
+      - '[#106](https://github.com/freesewing/freesewing/issues/106):
+        Fix incorrect hem allowance'
     create-freesewing-pattern:
       - Updated example package.json to use latest tag rather than beta
     utils:
@@ -361,8 +404,8 @@ Unreleased:
   date: 2019-09-06
   Added:
     i18n:
-      - "[#90](https://github.com/freesewing/freesewing/issues/90):
-        Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo"
+      - '[#90](https://github.com/freesewing/freesewing/issues/90):
+        Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo'
   Changed:
     create-freesewing-pattern:
       - Updated dependencies
@@ -372,21 +415,21 @@ Unreleased:
     css-theme:
       - Updated styles for DraftConfigurator component for pattern options 3 levels deep
     components:
-      - "[#104](https://github.com/freesewing/freesewing.org/issues/104):
+      - '[#104](https://github.com/freesewing/freesewing.org/issues/104):
         Changed `onDragEnd` to `onChangeCommitted` in slider element
-        (change in material-ui API when slider came out of beta)"
+        (change in material-ui API when slider came out of beta)'
       - Workbench now also lets you preload a `withBreasts` set of measurements
       - DraftConfigurator now properly styles pattern options 3 levels deep
-      - "[#105](https://github.com/freesewing/freesewing.org/issues/105):
-        Moved state change in render loop to useEffect"
+      - '[#105](https://github.com/freesewing/freesewing.org/issues/105):
+        Moved state change in render loop to useEffect'
     create-freesewing-pattern:
       - Added missing `file-saver` dependency
     jaeger:
-      - "[#76](https://github.com/freesewing/freesewing.org/issues/76):
-        Fixed a typo in Jaeger that was causing the side vent length to be wrong"
+      - '[#76](https://github.com/freesewing/freesewing.org/issues/76):
+        Fixed a typo in Jaeger that was causing the side vent length to be wrong'
     simon:
-      - "[#100](https://github.com/freesewing/freesewing.org/issues/100):
-        Updated simon with more sensible defaults for ease options"
+      - '[#100](https://github.com/freesewing/freesewing.org/issues/100):
+        Updated simon with more sensible defaults for ease options'
       - "[#102](https://github.com/freesewing/freesewing.org/issues/102):
         Fixed 'Snippets not defined' error when drafting a seperate button placket"
       - "[#103](https://github.com/freesewing/freesewing.org/issues/103):
@@ -407,9 +450,8 @@ Unreleased:
       - The models data is now based on the data from the `neckstimate` method in the utils package.
   Fixed:
     theo:
-      - "[#78](https://github.com/freesewing/freesewing/issues/78):
-        Removed inherited notches from fly shield and side piece."
+      - '[#78](https://github.com/freesewing/freesewing/issues/78):
+        Removed inherited notches from fly shield and side piece.'
     models:
-      - "[#86](https://github.com/freesewing/freesewing/issues/86):
-        The `seatCircumference` measurement was missing, thus making it unavailable on the website"
-
+      - '[#86](https://github.com/freesewing/freesewing/issues/86):
+        The `seatCircumference` measurement was missing, thus making it unavailable on the website'

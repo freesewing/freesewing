@@ -1,20 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import TextField from "@material-ui/core/TextField";
-import IconButton from "@material-ui/core/IconButton";
-import InvalidIcon from "@material-ui/icons/Warning";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import measurementAsMm from "@freesewing/utils/measurementAsMm";
-import formatMm from "@freesewing/utils/formatMm";
-import { injectIntl } from "react-intl";
+import React, { useState, useEffect } from 'react'
+import TextField from '@material-ui/core/TextField'
+import IconButton from '@material-ui/core/IconButton'
+import InvalidIcon from '@material-ui/icons/Warning'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import roundMm from '@freesewing/utils/roundMm'
+import { injectIntl } from 'react-intl'
 
-const FormFieldMeasurement = props => {
-  const update = evt => {
-    props.updateValue(
-      props.name,
-      measurementAsMm(evt.target.value, props.units)
-    );
-  };
+const FormFieldMeasurement = (props) => {
+  let [value, setValue] = useState(roundMm(props.value / 10))
+  useEffect(() => {
+    if (!isNaN(props.value)) setValue(roundMm(props.value / 10))
+  }, [props.value])
+
+  const update = (evt) => {
+    setValue(evt.target.value)
+    if (evt.target.value.slice(-1) !== '.') {
+      props.updateValue(props.name, evt.target.value * 10)
+    }
+  }
 
   return (
     <TextField
@@ -23,33 +26,24 @@ const FormFieldMeasurement = props => {
       label={props.intl.formatMessage({ id: props.label })}
       margin="normal"
       variant="outlined"
-      value={formatMm(props.value, props.units, "text")}
+      value={value}
       type="text"
       onChange={update}
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">
-            {measurementAsMm(props.value, props.units) === false ? (
+            {isNaN(props.value) ? (
               <InvalidIcon color="error" />
             ) : (
-              <IconButton classes={{ label: "color-success" }} size="small">
-                {props.units === "imperial" ? '"' : "cm"}
+              <IconButton classes={{ label: 'color-success' }} size="small">
+                {props.units === 'imperial' ? '"' : 'cm'}
               </IconButton>
             )}
           </InputAdornment>
         )
       }}
     />
-  );
-};
+  )
+}
 
-FormFieldMeasurement.propTypes = {
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"])
-};
-
-FormFieldMeasurement.defaultProps = {};
-
-export default injectIntl(FormFieldMeasurement);
+export default injectIntl(FormFieldMeasurement)

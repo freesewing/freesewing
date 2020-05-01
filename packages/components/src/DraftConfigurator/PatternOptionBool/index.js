@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import FormFieldBool from '../../.form/FormFieldBool'
 import OptionPreamble from '../OptionPreamble'
 
-const PatternOptionBool = props => {
+const PatternOptionBool = (props) => {
   const [value, setValue] = useState(props.value === null ? props.dflt : props.value)
   const [expanded, setExpanded] = useState(false)
 
@@ -60,20 +59,6 @@ const PatternOptionBool = props => {
       />
     </li>
   )
-}
-
-PatternOptionBool.propTypes = {
-  raiseEvent: PropTypes.func.isRequired,
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  dflt: PropTypes.oneOfType([
-    PropTypes.number.isRequired,
-    PropTypes.string.isRequired,
-    PropTypes.bool.isRequired
-  ]),
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  labels: PropTypes.array.isRequired
 }
 
 export default PatternOptionBool

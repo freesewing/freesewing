@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import FormFieldList from '../../.form/FormFieldList'
 import FormFieldSlider from '../../.form/FormFieldSlider'
 import formatMm from '@freesewing/utils/formatMm'
@@ -8,7 +7,7 @@ import defaultSa from '@freesewing/utils/defaultSa'
 import sliderStep from '@freesewing/utils/sliderStep'
 import OptionPreamble from '../OptionPreamble'
 
-const DraftSettingSa = props => {
+const DraftSettingSa = (props) => {
   const [value, setValue] = useState(
     props.value === defaultSa[props.units] ? 'dflt' : props.value === 0 ? 'none' : 'custom'
   )
@@ -129,18 +128,6 @@ const DraftSettingSa = props => {
       />
     </li>
   )
-}
-
-DraftSettingSa.propTypes = {
-  updateValue: PropTypes.func.isRequired,
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  units: PropTypes.oneOf(['metric', 'imperial']).isRequired,
-  labels: PropTypes.object
-}
-
-DraftSettingSa.defaultProps = {
-  // FIXME
 }
 
 export default DraftSettingSa

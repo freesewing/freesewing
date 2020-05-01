@@ -1,10 +1,9 @@
-export default part => {
+export default (part) => {
   let { points, paths, Path, options, macro, snippets, Snippet, complete, sa } = part.shorthand()
 
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
-  if (!complete) return part
 
   // Seam line
   paths.seam = new Path()
@@ -24,15 +23,17 @@ export default part => {
     paths.seam.curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
   } else paths.seam.line(points.hem)
 
-  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
-  macro('title', {
-    nr: 4,
-    at: points.title,
-    title: 'frontLining'
-  })
-  points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
-  snippets.logo = new Snippet('logo', points.logo)
+  if (complete) {
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
+    macro('title', {
+      nr: 4,
+      at: points.title,
+      title: 'frontLining'
+    })
+    points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+  }
 
   return part
 }

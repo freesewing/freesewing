@@ -1,6 +1,6 @@
 import { calculateRatios } from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -58,10 +58,7 @@ export default function(part) {
   // Store collar length
   store.set(
     'backCollarLength',
-    new Path()
-      .move(points.cbNeck)
-      ._curve(points.neckCp2, points.neck)
-      .length()
+    new Path().move(points.cbNeck)._curve(points.neckCp2, points.neck).length()
   )
 
   // Clean up
@@ -86,11 +83,7 @@ export default function(part) {
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve_(points.neckCp2, points.cbNeck)
-  paths.seam = paths.seam1
-    .join(paths.dart)
-    .join(paths.seam2)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.seam1.join(paths.dart).join(paths.seam2).close().attr('class', 'fabric')
 
   paths.backStay = new Path()
     .move(points.bpStart)
@@ -105,8 +98,8 @@ export default function(part) {
 
   if (complete) {
     macro('sprinkle', {
-      snippet: 'notch',
-      on: ['armholePitch', 'bpTriangleTip']
+      snippet: 'bnotch',
+      on: ['shoulder', 'bpTriangleTip']
     })
 
     macro('grainline', {

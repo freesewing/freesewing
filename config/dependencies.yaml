@@ -1,191 +1,190 @@
 _types:
   pattern:
     peer:
-      "@freesewing/core": "^{{version}}"
-      "@freesewing/plugin-bundle": "^{{version}}"
+      '@freesewing/core': '^{{version}}'
+      '@freesewing/plugin-bundle': '^{{version}}'
     dev:
-      "react": "^16.8"
-      "react-dom": "^16.8"
-      "@babel/plugin-proposal-class-properties": "^7.0.0"
-      "babel-eslint": "10.0.1"
-      "eslint": "^5.16.0"
-      "babel-jest": "24.7.1"
-      "jest": "24.7.1"
-      "@freesewing/components": "^{{version}}"
-      "@freesewing/css-theme": "^{{version}}"
-      "@freesewing/i18n": "^{{version}}"
-      "@freesewing/mui-theme": "^{{version}}"
-      "@freesewing/plugin-bust": "^{{version}}"
-      "@freesewing/plugin-buttons": "^{{version}}"
-      "@freesewing/plugin-flip": "^{{version}}"
-      "@freesewing/utils": "^{{version}}"
-      "@svgr/rollup": "^2.4.1"
-      "cross-env": "^5.1.4"
-      "gh-pages": "^1.2.0"
-      "react-scripts": "^3.0.0"
-      "webpack": "4.29.6"
-      "rollup": "^0.64.1"
-      "rollup-plugin-babel": "^4.0.1"
-      "rollup-plugin-babel-minify": "^7.0.0"
-      "rollup-plugin-commonjs": "^9.1.3"
-      "rollup-plugin-json": "^3.1.0"
-      "rollup-plugin-node-resolve": "^3.3.0"
-      "rollup-plugin-peer-deps-external": "^2.2.0"
-      "rollup-plugin-postcss": "^1.6.2"
-      "rollup-plugin-url": "^1.4.0"
-      "@material-ui/core": "4.0.1"
-      "@material-ui/icons": "4.0.1"
-      "@material-ui/lab": "^v4.0.0-alpha.14"
-      "react-intl": "2.8.0"
-      "prop-types": "15.7.2"
-      "mocha": "^6.1.4"
-      "chai": "^4.1.2"
-      "chai-string": "^1.4.0"
-      "@babel/register": "^7.4.4"
+      'react': '^16.8'
+      'react-dom': '^16.8'
+      '@babel/plugin-proposal-class-properties': '^7.0.0'
+      'babel-eslint': '10.0.1'
+      'eslint': '^5.16.0'
+      'babel-jest': '24.7.1'
+      'jest': '24.7.1'
+      '@freesewing/components': '^{{version}}'
+      '@freesewing/css-theme': '^{{version}}'
+      '@freesewing/i18n': '^{{version}}'
+      '@freesewing/mui-theme': '^{{version}}'
+      '@freesewing/plugin-bust': '^{{version}}'
+      '@freesewing/plugin-buttons': '^{{version}}'
+      '@freesewing/plugin-flip': '^{{version}}'
+      '@freesewing/utils': '^{{version}}'
+      '@svgr/rollup': '^2.4.1'
+      'cross-env': '^5.1.4'
+      'gh-pages': '^1.2.0'
+      'react-scripts': '^3.0.0'
+      'webpack': '4.29.6'
+      'rollup': '^0.64.1'
+      'rollup-plugin-babel': '^4.0.1'
+      'rollup-plugin-babel-minify': '^7.0.0'
+      'rollup-plugin-commonjs': '^9.1.3'
+      'rollup-plugin-json': '^3.1.0'
+      'rollup-plugin-node-resolve': '^3.3.0'
+      'rollup-plugin-peer-deps-external': '^2.2.0'
+      'rollup-plugin-postcss': '^1.6.2'
+      'rollup-plugin-url': '^1.4.0'
+      '@material-ui/core': '4.0.1'
+      '@material-ui/icons': '4.0.1'
+      '@material-ui/lab': '^v4.0.0-alpha.14'
+      'react-intl': '2.8.0'
+      'prop-types': '15.7.2'
+      'mocha': '^6.1.4'
+      'chai': '^4.1.2'
+      'chai-string': '^1.4.0'
+      '@babel/register': '^7.4.4'
   plugin:
     peer:
-      "@freesewing/core": "^{{version}}"
+      '@freesewing/core': '^{{version}}'
 aaron:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 bent:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 breanna:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 carlita:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/bent": "^{{version}}"
-    "@freesewing/carlton": "^{{version}}"
-    "@freesewing/plugin-bust": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/bent': '^{{version}}'
+    '@freesewing/carlton': '^{{version}}'
+    '@freesewing/plugin-bust': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
 carlton:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/bent": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/bent': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
 css-theme:
   _:
-    "open-color": "1.6.3"
+    'open-color': '1.6.3'
 components:
   peer:
-    "react": "^16.8"
-    "prop-types": "15.7.2"
-    "@freesewing/pattern-info": "^{{version}}"
-    "@freesewing/mui-theme": "^{{version}}"
-    "@freesewing/css-theme": "^{{version}}"
-    "@freesewing/plugin-theme": "^{{version}}"
-    "@freesewing/core": "^{{version}}"
-    "@freesewing/models": "^{{version}}"
-    "@freesewing/examples": "^{{version}}"
-    "@freesewing/rendertest": "^{{version}}"
-    "@freesewing/tutorial": "^{{version}}"
-    "typeface-roboto-condensed": "latest"
-    "@freesewing/i18n": "^{{version}}"
-    "@freesewing/utils": "^{{version}}"
-    "react-intl": "^2.8.0"
-    "@material-ui/core": "^4.0.1"
-    "@material-ui/icons": "^4.0.1"
-    "@material-ui/lab": "^v4.0.0-alpha.14"
-    "prismjs": "1.16.0"
-    "file-saver": "^2.0.2"
+    'react': '^16.8'
+    '@freesewing/pattern-info': '^{{version}}'
+    '@freesewing/mui-theme': '^{{version}}'
+    '@freesewing/css-theme': '^{{version}}'
+    '@freesewing/plugin-theme': '^{{version}}'
+    '@freesewing/core': '^{{version}}'
+    '@freesewing/models': '^{{version}}'
+    '@freesewing/examples': '^{{version}}'
+    '@freesewing/rendertest': '^{{version}}'
+    '@freesewing/tutorial': '^{{version}}'
+    'typeface-roboto-condensed': 'latest'
+    '@freesewing/i18n': '^{{version}}'
+    '@freesewing/utils': '^{{version}}'
+    'react-intl': '^2.8.0'
+    '@material-ui/core': '^4.0.1'
+    '@material-ui/icons': '^4.0.1'
+    '@material-ui/lab': '^v4.0.0-alpha.14'
+    'prismjs': '1.16.0'
+    'file-saver': '^2.0.2'
 core:
   _:
-    "bezier-js": "^2.4.6"
-    "bin-pack": "1.0.2"
-    "hooks": "^0.3.2"
+    'bezier-js': '^2.4.6'
+    'bin-pack': '1.0.2'
+    'hooks': '^0.3.2'
 create-freesewing-pattern:
   _:
-    "chalk": "^2.4.2"
-    "commander": "^2.19.0"
-    "conf": "^2.2.0"
-    "cp-file": "^6.0.0"
-    "execa": "^1.0.0"
-    "git-config-path": "^2.0.0"
-    "github-username": "^4.1.0"
-    "globby": "^9.0.0"
-    "handlebars": "^4.1.0"
-    "inquirer": "^6.2.2"
-    "make-dir": "^2.0.0"
-    "ora": "^3.1.0"
-    "p-each-series": "^1.0.0"
-    "parse-git-config": "^3.0.0"
-    "validate-npm-package-name": "^3.0.0"
-    "which": "^1.3.1"
-    "@freesewing/i18n": "^{{version}}"
-    "@freesewing/pattern-info": "^{{version}}"
+    'chalk': '^2.4.2'
+    'commander': '^2.19.0'
+    'conf': '^2.2.0'
+    'cp-file': '^6.0.0'
+    'execa': '^1.0.0'
+    'git-config-path': '^2.0.0'
+    'github-username': '^4.1.0'
+    'globby': '^9.0.0'
+    'handlebars': '^4.1.0'
+    'inquirer': '^6.2.2'
+    'make-dir': '^2.0.0'
+    'ora': '^3.1.0'
+    'p-each-series': '^1.0.0'
+    'parse-git-config': '^3.0.0'
+    'validate-npm-package-name': '^3.0.0'
+    'which': '^1.3.1'
+    '@freesewing/i18n': '^{{version}}'
+    '@freesewing/pattern-info': '^{{version}}'
 diana:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 gatsby-remark-jargon:
   _:
-    "remark-jargon": "^{{version}}"
+    'remark-jargon': '^{{version}}'
 holmes:
   _:
-    "@freesewing/plugin-gore": "^{{version}}"
+    '@freesewing/plugin-gore': '^{{version}}'
   peer:
-    "@freesewing/plugin-bust": "^{{version}}"
+    '@freesewing/plugin-bust': '^{{version}}'
 huey:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 hugo:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 i18n:
   peer:
-    "@freesewing/pattern-info": "^{{version}}"
+    '@freesewing/pattern-info': '^{{version}}'
 jaeger:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/bent": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/bent': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
 models:
   peer:
-    "@freesewing/utils": "^{{version}}"
+    '@freesewing/utils': '^{{version}}'
 mui-theme:
   peer:
-    "@material-ui/core": "^4.0.1"
-    "react": "^16.8"
-    "react-dom": "^16.8"
+    '@material-ui/core': '^4.0.1'
+    'react': '^16.8'
+    'react-dom': '^16.8'
 plugin-bundle:
   _:
-    "@freesewing/plugin-cutonfold": "^{{version}}"
-    "@freesewing/plugin-dimension": "^{{version}}"
-    "@freesewing/plugin-grainline": "^{{version}}"
-    "@freesewing/plugin-logo": "^{{version}}"
-    "@freesewing/plugin-title": "^{{version}}"
-    "@freesewing/plugin-scalebox": "^{{version}}"
-    "@freesewing/plugin-round": "^{{version}}"
-    "@freesewing/plugin-sprinkle": "^{{version}}"
+    '@freesewing/plugin-cutonfold': '^{{version}}'
+    '@freesewing/plugin-dimension': '^{{version}}'
+    '@freesewing/plugin-grainline': '^{{version}}'
+    '@freesewing/plugin-logo': '^{{version}}'
+    '@freesewing/plugin-title': '^{{version}}'
+    '@freesewing/plugin-scalebox': '^{{version}}'
+    '@freesewing/plugin-round': '^{{version}}'
+    '@freesewing/plugin-sprinkle': '^{{version}}'
 remark-jargon:
   _:
-    "unist-util-visit": "^1.4.0"
+    'unist-util-visit': '^1.4.0'
   peer:
-    "remark": "^10.0.1"
-    "remark-html": "^9.0.0"
+    'remark': '^10.0.1'
+    'remark-html': '^9.0.0'
 simon:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
-    "@freesewing/plugin-flip": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
+    '@freesewing/plugin-flip': '^{{version}}'
 simone:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/simon": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
-    "@freesewing/plugin-flip": "^{{version}}"
-    "@freesewing/plugin-bust": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/simon': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
+    '@freesewing/plugin-flip': '^{{version}}'
+    '@freesewing/plugin-bust': '^{{version}}'
 sven:
   peer:
-    "@freesewing/brian": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
 utils:
   peer:
-    "tlds": "^0.203.1"
-    "axios": "^0.19.0"
+    'tlds': '^0.203.1'
+    'axios': '^0.19.0'
 wahid:
   peer:
-    "@freesewing/brian": "^{{version}}"
-    "@freesewing/plugin-buttons": "^{{version}}"
-    "@freesewing/plugin-round": "^{{version}}"
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/plugin-buttons': '^{{version}}'
+    '@freesewing/plugin-round': '^{{version}}'

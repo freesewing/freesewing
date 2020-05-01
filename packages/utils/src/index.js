@@ -3,6 +3,7 @@ export default [
   'camelCase',
   'capitalize',
   'cloneObject',
+  'convertSize',
   'defaultGist',
   'defaultSa',
   'formatImperial',

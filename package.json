@@ -21,8 +21,8 @@
     "jsonlint": "yarn --silent jsonlint:files | xargs -n1 jsonlint -q -c && echo \"jsonlint: no lint errors\"",
     "jsonlint:files": "find . -name \"*.json\" | grep -v -f .eslintignore",
     "prettier": "npx prettier --write 'packages/**/src/*.js'",
-    "precommit": "npm run pretty && lint-staged",
     "reconfigure": "npx babel-node scripts/reconfigure.js",
+    "dxf": "npx babel-node scripts/export-dxf.js",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run build",
     "release": "lerna exec -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
@@ -38,14 +38,8 @@
   "prettier": "@freesewing/prettier-config",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pretty-quick --staged"
     }
-  },
-  "lint-staged": {
-    "*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -88,8 +82,7 @@
     "husky": "^3.0.5",
     "js-yaml": "^3.13.1",
     "jsonlint": "^1.6.3",
-    "lerna": "^3.18.4",
-    "lint-staged": "^10.0.0",
+    "lerna": "^3.20.2",
     "mocha": "^7.1.1",
     "mustache": "^4.0.0",
     "node-sass": "^4.11.0",
@@ -106,7 +99,7 @@
     "rollup": "^1.27.13",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-babel-minify": "^10.0.0",
-    "rollup-plugin-commonjs": "10.0.1",
+    "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-filesize": "^6.2.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
@@ -122,8 +115,9 @@
     "verdaccio": ">=3.12.0"
   },
   "dependencies": {
-    "bezier-js": "2.4.6",
+    "bezier-js": "2.6.1",
     "file-saver": "2.0.2",
+    "pretty-quick": "^2.0.1",
     "tlds": "^1.203.1"
   },
   "workspaces": [

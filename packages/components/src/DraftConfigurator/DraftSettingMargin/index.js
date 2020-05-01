@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import FormFieldSlider from '../../.form/FormFieldSlider'
 import formatMm from '@freesewing/utils/formatMm'
 import roundMm from '@freesewing/utils/roundMm'
 import sliderStep from '@freesewing/utils/sliderStep'
 import OptionPreamble from '../OptionPreamble'
 
-const DraftSettingMargin = props => {
+const DraftSettingMargin = (props) => {
   const [value, setValue] = useState(props.value === null ? props.dflt : props.value)
   const [expanded, setExpanded] = useState(false)
 
@@ -75,18 +74,6 @@ const DraftSettingMargin = props => {
       />
     </li>
   )
-}
-
-DraftSettingMargin.propTypes = {
-  raiseEvent: PropTypes.func.isRequired,
-  updateValue: PropTypes.func.isRequired,
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  units: PropTypes.oneOf(['metric', 'imperial']).isRequired
-}
-
-DraftSettingMargin.defaultProps = {
-  // FIXME
 }
 
 export default DraftSettingMargin
