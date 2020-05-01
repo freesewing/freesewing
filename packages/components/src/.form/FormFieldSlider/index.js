@@ -10,7 +10,15 @@ const PaddedSlider = withStyles({
   thumb: { width: '16px', height: '16px' }
 })(Slider)
 
-const FormFieldSlider = ({ min = 0, max = 100, step = 0.1, label = false, updateValue, name }) => {
+const FormFieldSlider = ({
+  min = 0,
+  max = 100,
+  step = 0.1,
+  label = false,
+  updateValue,
+  name,
+  value
+}) => {
   const [val, setVal] = useState(value)
   useEffect(() => {
     if (value !== val) setVal(value)
