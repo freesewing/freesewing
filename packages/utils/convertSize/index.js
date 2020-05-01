@@ -1,5 +1,5 @@
 /**
- * @freesewing/utils/convertSize | v2.6.0-rc.1
+ * @freesewing/utils/convertSize | v2.6.0
  * A collection of utilities shared across freesewing frontend projects
  * (c) 2020 Joost De Cock <joost@decock.org> (https://github.com/joostdecock)
  * @license MIT

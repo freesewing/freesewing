@@ -4,7 +4,7 @@
 
 **Note:** Version bump only for package plugin-svgattr
 
-## 2.6.0 (2020-04-26)
+## 2.6.0 (2020-05-01)
 
 **Note:** Version bump only for package plugin-svgattr
 
