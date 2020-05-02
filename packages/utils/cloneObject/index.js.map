@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/cloneObject/index.js"],"sourcesContent":["const cloneObject = src => Object.assign({}, src);\r\n\r\nexport default cloneObject;\r\n"],"names":["cloneObject","src","Object","assign"],"mappings":";;;;;gBAAA,KAAMA,CAAAA,WAAW,CAAGC,CAAG,EAAIC,MAAM,CAACC,MAAPD,CAAc,EAAdA,CAAkBD,CAAlBC,CAA3B"}
