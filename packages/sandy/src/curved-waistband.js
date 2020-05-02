@@ -62,7 +62,7 @@ export default function(part) {
     macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo
-    })
+    });
 
     if (store.get('waistbandOverlap') >= options.minimumOverlap) {
       points.pivot = points.in2Rotated.shiftFractionTowards(points.ex2Rotated, 0.5)
