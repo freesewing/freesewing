@@ -112,6 +112,10 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    waistbandShape: {
+      list: ['Basic', 'Flared'],
+      dflt: 'Basic'
+    }
   }
 }

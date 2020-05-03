@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/sliderStep/index.js"],"sourcesContent":["const sliderStep = {\r\n  metric: 0.1,\r\n  imperial: 0.396875\r\n};\r\n\r\nexport default sliderStep;\r\n"],"names":["sliderStep","metric","imperial"],"mappings":";;;;;gBAAA,KAAMA,CAAAA,UAAU,CAAG,CACjBC,MAAM,CAAE,EADS,CAEjBC,QAAQ,CAAE,OAFO,CAAnB"}

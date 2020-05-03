@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/defaultSa/index.js"],"sourcesContent":["const defaultSa = {\r\n  imperial: 15.875,\r\n  metric: 10\r\n};\r\n\r\nexport default defaultSa;\r\n"],"names":["defaultSa","imperial","metric"],"mappings":";;;;;gBAAA,KAAMA,CAAAA,SAAS,CAAG,CAChBC,QAAQ,CAAE,MADM,CAEhBC,MAAM,CAAE,EAFQ,CAAlB"}

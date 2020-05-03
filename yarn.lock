@@ -1618,6 +1618,48 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@freesewing/components@^2.4.7-rc.0":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@freesewing/components/-/components-2.5.1.tgz#a2158a0e337eec32813a6eb58cdbfda49c737097"
+  integrity sha512-JtZWfHAuIAVrx6UvTt+KMlYhdQgMGTftRCtWitqY1hccjkcgw5H/DzWopmWumedUVZfdq5mp/aW2OgRRjVpthA==
+
+"@freesewing/css-theme@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/css-theme/-/css-theme-2.5.0.tgz#3ae235ee589faaa45a8b09dc335c0f2e994880ac"
+  integrity sha512-o8cCXCAa6q6Mn4/vNomAfVCkKiYerN5AAnYbex4SBQchfJ5NRI5n/P2yfvkg2vlW/EmsKO/wlu117kFbhJQhUw==
+  dependencies:
+    open-color "1.6.3"
+
+"@freesewing/i18n@^2.4.7-rc.0":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.5.1.tgz#614e18cbe7af9c503f35ccd2ba02f947f8f4583b"
+  integrity sha512-hCr+l1Yi9uII7iB9vGCBgKlt9A4zFU90GBCHvgANEJajtpn43BVpJnoyyVp8CyBszxDKPjq6D7TMh88C1BNMnw==
+
+"@freesewing/mui-theme@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/mui-theme/-/mui-theme-2.5.0.tgz#1c7b75e9290d28d5264e9d67107d645d91fac899"
+  integrity sha512-dYgp2lmWQDDphNAanW0V4MLZGbPB+Fk0ZID0fEPfkoE6d+1ql7eU7s8CVbiKvWPuaKQiMDK+wX8Nj6QSm4sMGA==
+
+"@freesewing/plugin-bust@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/plugin-bust/-/plugin-bust-2.5.0.tgz#9774e17f1cce18a99b638319f20d1301f92e5d0c"
+  integrity sha512-n2G3y5aBeHXxQVr1vbyBuLxS4+Hkyrdr/tB4C9TR4kaxaZ9aYDeA4erd/H1G1kVm5EXcYgn+lsOToopoOq494g==
+
+"@freesewing/plugin-buttons@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/plugin-buttons/-/plugin-buttons-2.5.0.tgz#a0e7008641f703be0835668df6a7895afc844594"
+  integrity sha512-lfBaItJH0/cXMx8JAZdN6hA/x/xKdEO9sRC/qya/gXWPtELlVE6GFPMJbF++lfGVw8vjTSiNT/zq7wnMJZpUuA==
+
+"@freesewing/plugin-flip@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/plugin-flip/-/plugin-flip-2.5.0.tgz#17166e797631f6bbff29ab91054feae8831305e0"
+  integrity sha512-FMB9eDtOdVRId8vXkCEgIXXLhWvwltCuaOrEuHPRYwTgagNLgJ0XjyrECwIohQsCComXOC/2bf4hrfBwmbFaJQ==
+
+"@freesewing/utils@^2.4.7-rc.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@freesewing/utils/-/utils-2.5.0.tgz#fdbb8c03845cee37df72891117ffbfd73a8dbf99"
+  integrity sha512-fIAisbd/H4VdTYFvoG+b4sGd41bdMPKkkMef+fH4jvhtK6f8zK3Xb6S/73U0zdOOBPPY/xUL9atMMktS/gY1qA==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"

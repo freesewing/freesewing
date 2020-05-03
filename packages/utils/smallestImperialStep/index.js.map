@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/smallestImperialStep/index.js"],"sourcesContent":["const smallestImperialStep = 0.396875;\r\n\r\nexport default smallestImperialStep;\r\n"],"names":["smallestImperialStep"],"mappings":";;;;;gBAAA,KAAMA,CAAAA,oBAAoB,CAAG,OAA7B"}
