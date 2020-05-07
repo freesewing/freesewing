@@ -29,6 +29,7 @@ const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
 const indsleeve = require('@freesewing/indsleeve').config
 const sleeve_flared = require('@freesewing/sleeve_flared').config
+const bodiceblock = require('@freesewing/bodiceblock').config
 
 const patterns = {
   aaron,
@@ -59,7 +60,8 @@ const patterns = {
   wahid,
   waralee,
   indsleeve,
-  sleeve_flared
+  sleeve_flared,
+  bodiceblock
 }
 const patternOptions = (config) => {
   let all = []
