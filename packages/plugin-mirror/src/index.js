@@ -52,8 +52,8 @@ export default {
                 break
               }
             }
+            path = clone ? path.clone() : path
             if (clone && foundId !== null) {
-              path = clone ? path.clone() : path
               this.paths[`${prefix}${foundId}`] = path
             }
             for (let op in path.ops) {
