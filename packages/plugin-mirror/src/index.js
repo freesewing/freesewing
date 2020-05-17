@@ -18,6 +18,10 @@ export const mirrorGen = (start, end) => {
   }
 }
 
+function capFirst(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 export default {
   name: name,
   version: version,
@@ -28,55 +32,71 @@ export default {
     }
   },
   macros: {
-    macros: {
-      mirror: function ({
-        mirror,
-        clone = true,
-        points = null,
-        paths = null,
-        prefix = 'mirrored',
-        nameFormat // unimplemented
-      }) {
-        const [start, end] = mirror
-        const mirrorPoint = mirrorGen(start, end)
-        const ops = ['from', 'to', 'cp1', 'cp2']
+    mirror: function ({
+      mirror,
+      clone = true,
+      points = null,
+      paths = null,
+      prefix = 'mirrored',
+      nameFormat = undefined
+    }) {
+      const [start, end] = mirror
+      const mirrorPoint = mirrorGen(start, end)
+      const ops = ['from', 'to', 'cp1', 'cp2']
 
-        if (paths !== null) {
-          paths.forEach((path) => {
-            // find existing path id
-            // Find point name from path by looking in the list of all points?
-            let foundId = null
-            for (let id of Object.keys(this.paths)) {
-              if (this.paths[id] === path) {
-                foundId = id
-                break
+      if (paths !== null) {
+        paths.forEach((path, i) => {
+          // Try to find point name from path by looking in list of all points
+          let foundId = null
+          for (let id of Object.keys(this.paths)) {
+            if (this.paths[id] === path) {
+              foundId = id
+              break
+            }
+          }
+          path = clone ? path.clone() : path
+          if (clone) {
+            if (foundId === null && typeof nameFormat == 'function') {
+              this.paths[nameFormat(path)] = path
+            } else {
+              this.paths[`${prefix}${capFirst(foundId)}`] = path
+            }
+          }
+          for (let op in path.ops) {
+            for (let type of ops) {
+              // Iterate over all possible path op points and clone/move point
+              const pathOp = path.ops[op][type]
+              if (typeof pathOp !== 'undefined') {
+                ;[pathOp.x, pathOp.y] = mirrorPoint(pathOp)
+                pathOp.attributes.set('mirrored', true)
               }
             }
-            path = clone ? path.clone() : path
-            if (clone && foundId !== null) {
-              this.paths[`${prefix}${foundId}`] = path
+          }
+        })
+      }
+
+      if (points !== null) {
+        points.forEach((point) => {
+          let foundId = null
+          for (let id of Object.keys(this.points)) {
+            if (this.points[id] === point) {
+              foundId = id
+              break
             }
-            for (let op in path.ops) {
-              for (let type of ops) {
-                // Iterate over all possible path op points and clone/move point
-                const pathOp = path.ops[op][type]
-                if (typeof pathOp !== 'undefined') {
-                  ;[pathOp.x, pathOp.y] = mirrorPoint(pathOp)
-                  pathOp.attributes.set('mirrored', true)
-                }
-              }
-            }
-          })
-        }
-        if (points !== null) {
-          points.forEach((point) => {
+          }
+          if (clone) {
+            point = point.clone()
             if (clone) {
-              point = point.clone()
+              if (foundId === null && typeof nameFormat == 'function') {
+                this.points[nameFormat(point)] = point
+              } else {
+                this.points[`${prefix}${capFirst(foundId)}`] = point
+              }
             }
-            ;[point.x, point.y] = mirrorPoint(point)
-            point.attributes.set('mirrored', true)
-          })
-        }
+          }
+          ;[point.x, point.y] = mirrorPoint(point)
+          point.attributes.set('mirrored', true)
+        })
       }
     }
   }
