@@ -1,0 +1,76 @@
+import { version } from '../package.json'
+
+export default {
+  name: 'titan',
+  version,
+  design: 'Debra Bean',
+  code: 'Joost De Cock',
+  department: 'unisex',
+  type: 'block',
+  difficulty: 3,
+  tags: ['bottom', 'basics'],
+  optionGroups: {
+    fit: ['seatEase', 'upperLegEase', 'backRise', 'kneeEase', 'ankleEase', 'frontWaistRise'],
+    advanced: [
+      'crotchExtension',
+      'backWaistDart',
+      'backWaistDartLength',
+      'crossSeamCurveStart',
+      'crossSeamCurveBend',
+      'legBalance',
+      'inseamCurve',
+      'outseamCurveKnee',
+      'outseamCurveSeat',
+      'frontWaistDart',
+      'frontWaistDartLength',
+      'flyCurveBend'
+    ]
+  },
+  measurements: [
+    'ankleEntry',
+    'backWaist',
+    'crotchDepth',
+    'crossSeam',
+    'frontCrossSeam',
+    'backSeat',
+    'seatCircumference',
+    'kneeCircumference',
+    'naturalWaist',
+    'naturalWaistToFloor',
+    'naturalWaistToKnee',
+    'naturalWaistToSeat',
+    'upperLegCircumference'
+  ],
+  parts: ['back', 'front'],
+  options: {
+    backWaistFactor: 0.145,
+    grainlineBackFactor: 0.5125,
+    crossSeamFitBalance: 0.5,
+    fitCrossSeam: true,
+    fitFrontCrossSeam: true,
+    fitBackCrossSeam: true,
+    flySlopeHinge: 0.54,
+    flySlopeFactor: 0.09,
+    frontGrainLineFactor: 0.52,
+    frontCrotchExtension: 1.07, // 7% longer at the front
+    flyCurveStart: 0.25,
+    seatEase: { pct: 1, min: 0, max: 5 },
+    upperLegEase: { pct: 8.5, min: 5, max: 12 },
+    crotchExtension: { pct: 5, min: 3, max: 7 },
+    backWaistDart: { pct: 12, min: 5, max: 20 },
+    backWaistDartLength: { pct: 28.5, min: 15, max: 45 },
+    backRise: { pct: 8, min: 3, max: 13 },
+    crossSeamCurveStart: { pct: 25, min: 0, max: 45 },
+    crossSeamCurveBend: { pct: 65, min: 45, max: 95 },
+    kneeEase: { pct: 6, min: 1, max: 25 },
+    ankleEase: { pct: 6, min: 1, max: 25 },
+    legBalance: { pct: 75, min: 25, max: 100 },
+    inseamCurve: { pct: 35, min: 20, max: 50 },
+    outseamCurveKnee: { pct: 35, min: 20, max: 50 },
+    outseamCurveSeat: { pct: 60, min: 40, max: 80 },
+    frontWaistDart: { pct: 5, min: 3, max: 20 },
+    frontWaistDartLength: { pct: 45, min: 25, max: 65 },
+    frontWaistRise: { pct: 2.5, min: 0, max: 10 },
+    flyCurveBend: { pct: 88, min: 70, max: 100 }
+  }
+}
