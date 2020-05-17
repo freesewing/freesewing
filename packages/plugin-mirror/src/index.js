@@ -18,9 +18,7 @@ export const mirrorGen = (start, end) => {
   }
 }
 
-function capFirst(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
+const capFirst = string => string.charAt(0).toUpperCase() + string.slice(1)
 
 export default {
   name: name,
