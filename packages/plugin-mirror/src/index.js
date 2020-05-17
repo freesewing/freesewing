@@ -86,12 +86,10 @@ export default {
           }
           if (clone) {
             point = point.clone()
-            if (clone) {
-              if (foundId === null && typeof nameFormat == 'function') {
-                this.points[nameFormat(point)] = point
-              } else {
-                this.points[`${prefix}${capFirst(foundId)}`] = point
-              }
+            if (foundId === null && typeof nameFormat == 'function') {
+              this.points[nameFormat(point)] = point
+            } else {
+              this.points[`${prefix}${capFirst(foundId)}`] = point
             }
           }
           ;[point.x, point.y] = mirrorPoint(point)

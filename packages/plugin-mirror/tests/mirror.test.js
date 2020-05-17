@@ -1,7 +1,7 @@
 // These tests haven't been run, stub to fix when plugin testing is added
 import freesewing from 'freesewing'
 import { version } from '../package.json'
-import reflect, { lineValues, mirrorGen } from '../src/reflect'
+// import reflect, { lineValues, mirrorGen } from '../src/reflect'
 let chai = require('chai')
 let expect = chai.expect
 chai.use(require('chai-string'))
