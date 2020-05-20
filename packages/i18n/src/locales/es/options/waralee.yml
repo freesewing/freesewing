@@ -1,6 +1,6 @@
 ---
 backPocket:
-  title: Back pocket
+  title: Bolsillo trasero
   description: Whether to include a back pocket or not
 frontPocket:
   title: Front pocket
