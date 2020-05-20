@@ -10,7 +10,7 @@ hem:
   description: Size of the hem at the bottom of the pants
 waistBand:
   title: Waist Band
-  description: Size of the waist band
+  description: Tamaño de la banda de cintura
 waistRaise:
   title: Waist Raise
   description: How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
