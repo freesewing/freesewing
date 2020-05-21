@@ -40,7 +40,10 @@ export default (part) => {
   points.X = points.G.shift(90, measurements.crotchDepth / 2)
 
   points.N = points.H.shift(0, measurements.crotchDepth * options.backWaistFactor)
-  points.O = points.N.shift(0, measurements.backWaistArc * (1 + options.backWaistDart))
+  points.O = points.N.shift(
+    0,
+    measurements.backWaistArc * (1 + options.waistEase) * (1 + options.backWaistDart)
+  )
 
   // Back dart
   points.P = points.N.shift(0, measurements.backWaistArc * 0.56)
@@ -106,13 +109,22 @@ export default (part) => {
   points.floor = new Point(points.grainlineTop.x, measurements.naturalWaistToFloor)
   points.grainlineBottom = points.floor
 
-  let kneeEase = (measurements.kneeCircumference * options.kneeEase * options.legBalance) / 2
-  points.kneeOut = points.knee.shift(0, measurements.kneeCircumference / 4 + kneeEase)
+  let kneeTotal = measurements.kneeCircumference * (1 + options.kneeEase)
+  if (false && !options.fitKnee) {
+    // Based the knee width on the seat, unless that ends up being less
+    let altKneeTotal = measurements.frontSeat * (1 + options.kneeEase)
+    if (altKneeTotal > kneeTotal) kneeTotal = altKneeTotal
+  }
+  store.set('kneeTotal', kneeTotal)
+  store.set('kneeBack', kneeTotal * options.legBalance)
+  store.set('kneeFront', kneeTotal * (1 - options.legBalance))
+  let halfKnee = store.get('kneeBack') / 2
+
+  points.kneeOut = points.knee.shift(0, halfKnee)
   points.kneeIn = points.kneeOut.flipX(points.knee)
 
-  // FIXME: We're using ankleEntry here. But I think ankleCircumference would make more sense
-  let ankleEase = (measurements.ankleEntry * options.ankleEase * options.legBalance) / 2
-  points.floorOut = points.floor.shift(0, measurements.ankleEntry / 4 + ankleEase)
+  // Not shaping the ankle as that's a style choice. Just go straight down from the knee.
+  points.floorOut = points.floor.shift(0, halfKnee)
   points.floorIn = points.floorOut.flipX(points.floor)
 
   points.kneeInCp1 = points.floorIn.shiftFractionTowards(points.kneeIn, 1 + options.inseamCurve)
@@ -202,9 +214,9 @@ export default (part) => {
       points.C,
       points.fPostSpread,
       points.T,
-      points.crossSeamCurveStart
+      points.extendedBackSeam
     )
-    let distance = points.fPostSpread.dist(points.tmp)
+    let distance = measurements.backSeatArc * (1 + options.seatEase) - points.tmp.dist(points.C)
     for (const i of ['C', 'CCp1', 'CCp2']) points[i] = points[i].shift(angle - 180, distance)
   }
 
@@ -248,6 +260,21 @@ export default (part) => {
     if (paperless) {
     }
   }
+
+  /*
+  // Some checks for size
+  macro('ld', {
+    from: points.T,
+    to: points.O,
+    d: 20,
+    text: utils.units(points.T.dist(points.O) - points.dart1.dist(points.dart2)) + ' (actual length without dart - although in a straight line)'
+  })
+  macro('ld', {
+    from: points.tmp,
+    to: points.C,
+    text: utils.units(points.tmp.dist(points.C)) + ' (on the seat line)'
+  })
+  */
 
   return part
 }

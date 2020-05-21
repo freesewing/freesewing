@@ -28,7 +28,10 @@ export default (part) => {
   )
   points.X = points.K.shiftFractionTowards(points.L, options.flySlopeHinge)
   points.Q = points.L.shift(180, points.X.y * options.flySlopeFactor)
-  points.R = points.Q.shift(180, measurements.frontWaistArc * (1 + options.frontWaistDart))
+  points.R = points.Q.shift(
+    180,
+    measurements.frontWaistArc * (1 + options.waistEase) * (1 + options.frontWaistDart)
+  )
   points.U = points.Q.shift(90, measurements.frontWaistArc * options.frontWaistRise)
 
   points.flyCurveMax = utils.beamsIntersect(points.U, points.X, points.M, points.M.shift(165, 10))
@@ -51,14 +54,13 @@ export default (part) => {
   points.floor = new Point(points.grainlineTop.x, measurements.naturalWaistToFloor)
   points.grainlineBottom = points.floor
 
+  let halfKnee = store.get('kneeFront') / 2
   points.knee = new Point(points.grainlineTop.x, measurements.naturalWaistToKnee)
-  let kneeEase = (measurements.kneeCircumference * options.kneeEase * (1 - options.legBalance)) / 2
-  points.kneeOut = points.knee.shift(180, measurements.kneeCircumference / 4 + kneeEase)
+  points.kneeOut = points.knee.shift(180, halfKnee)
   points.kneeIn = points.kneeOut.flipX(points.knee)
 
-  // FIXME: We're using ankleEntry here. But I think ankleCircumference would make more sense
-  let ankleEase = (measurements.ankleEntry * options.ankleEase * (1 - options.legBalance)) / 2
-  points.floorOut = points.floor.shift(180, measurements.ankleEntry / 4 + ankleEase)
+  // Not shaping the ankle as that's a style choice. Just go straight down from the knee.
+  points.floorOut = points.floor.shift(180, halfKnee)
   points.floorIn = points.floorOut.flipX(points.floor)
 
   points.kneeInCp2 = points.floorIn.shiftFractionTowards(points.kneeIn, 1 + options.inseamCurve)
@@ -136,21 +138,32 @@ export default (part) => {
       delta = crossSeamDelta()
     } while (Math.abs(delta) > 0.5 && run < 5)
     // Now assure the horizontal width is respected
-    const flyCurvePostFit = new Path()
-      .move(points.flyCurveStart)
-      .curve(points.flyCurveCp2, points.flyCurveCp1, points.M)
-    for (const i of ['CCp1', 'C', 'CCp2'])
-      points[i] = points[i].shift(
-        180,
-        flyCurvePostFit.intersectsY(points.C.y)[0].x - flyCurvePreFit.intersectsY(points.C.y)[0].x
+    points.seatCf = utils.beamsIntersect(
+      points.U,
+      points.flyCurveStart,
+      points.C,
+      points.C.shift(points.R.angle(points.U), 100)
+    )
+    let angle = points.R.angle(points.U)
+    if (points.seatCf.y > points.flyCurveStart.y) {
+      points.seatCf = utils.lineIntersectsCurve(
+        points.C,
+        points.C.shift(angle, measurements.backSeat),
+        points.flyCurveStart,
+        points.flyCurveCp2,
+        points.flyCurveCp1,
+        points.M
       )
+    }
+    let distance = measurements.frontSeatArc * (1 + options.seatEase) - points.seatCf.dist(points.C)
+    for (const i of ['CCp1', 'C', 'CCp2']) points[i] = points[i].shift(180, distance)
   }
   //paths.intermediateSeam = seamPath().attr('class', 'various')
 
   /*
    * With the cross seams matched back and front,
    * we still have to match the inseam and outseam
-   * (positive values = front is too long)
+   * Here are first some helper methods
    */
   const inseamDelta = () => {
     store.set(
@@ -175,13 +188,34 @@ export default (part) => {
     )
     return store.get('outseamFront') - store.get('outseamBack')
   }
-  const seamDelta = () => {
-    let inseam = inseamDelta()
-    let outseam = outseamDelta()
-    return Math.abs(inseam) > Math.abs(outseam) ? outseam : inseam
+  const adaptSeam = (side) => {
+    const out = side === 'out' ? true : false
+    let rotate = [
+      'dart1',
+      'dart2',
+      'S',
+      'dartTip',
+      'U',
+      'Q',
+      'X',
+      'flyCurveStart',
+      'flyCurveCp1',
+      'flyCurveCp2'
+    ]
+    rotate.push(out ? 'R' : 'M')
+    const deltaMethod = out ? outseamDelta : inseamDelta
+    let run = 0
+    let delta = deltaMethod()
+    do {
+      for (const i of rotate)
+        points[i] = points[i].rotate((delta / 10) * (out ? 1 : -1), points[out ? 'M' : 'R'])
+      run++
+      delta = deltaMethod()
+    } while (Math.abs(delta) > 1 && run < 20)
   }
-  if ((inseamDelta() < 0 && outseamDelta() < 0) || (inseamDelta() > 0 && outseamDelta() > 0)) {
-    // Front is too short/long on both sides. Figure out smallest delta
+  const adaptOutseam = (delta) => adaptSeam('out')
+  const adaptInseam = (delta) => adaptSeam('in')
+  const adaptInseamAndOutseam = () => {
     let shift = [
       'kneeInCp2',
       'kneeOutCp1',
@@ -200,41 +234,25 @@ export default (part) => {
       for (const i of shift) points[i] = points[i].shift(90, delta)
       delta = seamDelta()
     } while (Math.abs(delta) > 1 && run < 10)
-  } else {
-    // There's an inbalance between back and front. Let's assume this will never happen
-    throw new Error('Unhandled inbalance between front and back inseam/outseam lengths')
   }
-  // Which one needs fixing?
-  // in any case, we'll slash from R to M to fix this
-  let deltaMethod, factor
-  if (Math.abs(inseamDelta()) > 1) {
-    deltaMethod = inseamDelta
-    factor = -1
-  } else {
-    deltaMethod - outseamDelta
-    factor = 1
+
+  const seamDelta = () => {
+    let inseam = inseamDelta()
+    let outseam = outseamDelta()
+    return Math.abs(inseam) > Math.abs(outseam) ? outseam : inseam
   }
-  let rotate = [
-    'dart1',
-    'dart2',
-    'S',
-    'dartTip',
-    'U',
-    'Q',
-    'X',
-    'flyCurveStart',
-    'flyCurveCp1',
-    'flyCurveCp2'
-  ]
-  rotate.push(factor === -1 ? 'M' : 'R')
-  let run = 0
-  let delta = deltaMethod()
-  do {
-    for (const i of rotate)
-      points[i] = points[i].rotate((delta / 10) * factor, points[factor === -1 ? 'R' : 'M'])
-    run++
-    delta = deltaMethod()
-  } while (Math.abs(delta) > 1 && run < 20)
+
+  /*
+   * Now it's easy :)
+   */
+
+  // When both are too short/long, adapt the leg length
+  if ((inseamDelta() < 0 && outseamDelta() < 0) || (inseamDelta() > 0 && outseamDelta() > 0))
+    adaptInseamAndOutseam()
+
+  // Now one is ok, the other will be adapted
+  adaptOutseam(outseamDelta())
+  adaptInseam(inseamDelta())
 
   paths.seam = seamPath().attr('class', 'fabric')
 
@@ -247,6 +265,24 @@ export default (part) => {
     if (paperless) {
     }
   }
+
+  /*
+  // Some checks for size
+  points.tmp1 = utils.lineIntersectsCurve(
+    points.C, points.C.shift(points.R.angle(points.U), measurements.backSeat),
+    points.flyCurveStart, points.flyCurveCp2, points.flyCurveCp1, points.M)
+  macro('ld', {
+    from: points.C,
+    to: points.tmp1
+  })
+
+  macro('ld', {
+    from: points.R,
+    to: points.U,
+    text: utils.units(points.R.dist(points.U) - points.dart2.dist(points.dart1)) + ' (actual length without dart)',
+    d: 20
+  })
+  */
 
   return part
 }
