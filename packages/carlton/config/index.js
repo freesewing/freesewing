@@ -124,7 +124,7 @@ export default {
     sleevecapHeight: { pct: 45, min: 40, max: 60 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleeveLengthBonus: { pct: 7, min: 0, max: 20 },
-    shoulderSlopeReduction: { pct: 2, min: 1, max: 5 },
+    shoulderSlopeReduction: { pct: 12, min: 0, max: 80 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
 
