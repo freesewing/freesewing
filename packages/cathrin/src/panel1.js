@@ -1,7 +1,7 @@
 import draftPanel1ab from './panel1ab'
 
-export default function(part) {
-  let { macro, sa, paths, options, complete, paperless } = part.shorthand()
+export default function (part) {
+  let { macro, sa, paths, points, options, complete, paperless } = part.shorthand()
 
   delete paths.outline
   delete paths.panel2
@@ -10,7 +10,7 @@ export default function(part) {
   delete paths.panel5
   delete paths.panel6
 
-  if (options.panels === 13) return draftPanel1ab(part)
+  if (options.panels === '13') return draftPanel1ab(part)
 
   // Complete pattern?
   if (complete) {
