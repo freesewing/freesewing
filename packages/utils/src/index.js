@@ -8,6 +8,7 @@ export default [
   'defaultSa',
   'formatImperial',
   'formatMm',
+  'isDegMeasurement',
   'measurementAsMm',
   'measurementDiffers',
   'neckstimate',
