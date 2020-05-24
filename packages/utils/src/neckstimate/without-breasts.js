@@ -24,7 +24,7 @@ export default {
   neckCircumference: 380,
   seatCircumference: 1020,
   seatDepth: 210,
-  shoulderSlope: 595,
+  shoulderSlope: 17,
   shoulderToElbow: 360,
   shoulderToShoulder: 450,
   shoulderToWrist: 630,
