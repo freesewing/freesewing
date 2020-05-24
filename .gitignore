@@ -29,11 +29,13 @@ packages/workbench
 packages/utils/backend
 packages/utils/camelCase
 packages/utils/capitalize
+packages/utils/convertSize
 packages/utils/cloneObject
 packages/utils/defaultGist
 packages/utils/defaultSa
 packages/utils/formatImperial
 packages/utils/formatMm
+packages/utils/isDegMeasurement
 packages/utils/measurementAsMm
 packages/utils/measurementDiffers
 packages/utils/neckstimate
