@@ -72,11 +72,11 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
 
     sleeveBend: { deg: 10, min: 0, max: 20 },
     sleevecapHeight: { pct: 45, min: 40, max: 60 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
+    sleeveLengthBonus: { pct: 0, min: -20, max: 15 }
   }
 }
