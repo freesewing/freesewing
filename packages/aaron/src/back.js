@@ -13,8 +13,12 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    units
+    units,
+    measurements
   } = part.shorthand()
+
+  // Lower back neck a bit
+  points.cbNeck.y = measurements.neckCircumference / 10
 
   points.strapLeftCp2 = utils.beamsIntersect(
     points.strapLeft,
@@ -37,7 +41,7 @@ export default function (part) {
     .move(points.cbNeck)
     .line(points.cbHem)
     .line(points.hem)
-    .curve_(points.waist, points.armhole)
+    .curve_(points.hipsCp2, points.armhole)
     .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
     .line(points.strapLeft)
     .line(points.strapLeft)

@@ -55,16 +55,29 @@ export default function (part) {
   )
   points.cfNeckCp1 = points.cfNeck.shiftFractionTowards(points.necklineCorner, options.necklineBend)
 
+  // This will come in handy
+  store.set('armholeY', points.armhole.y * (1 + options.armholeDrop))
+
   // Hips
   points.hips.x =
     ((measurements.hipsCircumference + options.hipsEase * measurements.hipsCircumference) / 4) *
     (1 - options.stretchFactor)
   points.waist.x = points.hips.x // Because stretch
 
+  points.hipsCp2 = new Point(
+    points.hips.x,
+    store.get('armholeY') + (points.hips.y - store.get('armholeY')) / 2
+  )
+
   // Hem
   points.hem.x = points.hips.x
 
   // Armhole
+  points.armhole = utils.beamIntersectsY(
+    points.armhole,
+    points.hips,
+    points.armhole.y * (1 + options.armholeDrop)
+  )
   points.armholeCorner = utils.beamsIntersect(
     points.armhole,
     points.armhole.shift(180, 10),
@@ -79,7 +92,7 @@ export default function (part) {
     .move(points.cfNeck)
     .line(points.cfHem)
     .line(points.hem)
-    .curve_(points.waist, points.armhole)
+    .curve_(points.hipsCp2, points.armhole)
     .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
     .line(points.strapLeft)
     .curve(points.strapLeftCp2, points.cfNeckCp1, points.cfNeck)
