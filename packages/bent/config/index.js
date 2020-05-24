@@ -63,12 +63,12 @@ export default {
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 65, min: 50, max: 70 },
+    armholeDepthFactor: { pct: 60, min: 50, max: 70 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
-    bicepsEase: { pct: 20, min: 0, max: 50 },
+    bicepsEase: { pct: 20, min: 10, max: 40 },
     chestEase: { pct: 8, min: -4, max: 20 },
     collarEase: { pct: 3.5, min: 0, max: 10 },
-    cuffEase: { pct: 20, min: 0, max: 200 },
+    cuffEase: { pct: 40, min: 2, max: 100 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
