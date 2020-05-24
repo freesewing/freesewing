@@ -1,6 +1,6 @@
 import * as shared from './shared'
 
-export default part => {
+export default (part) => {
   let {
     units,
     debug,
@@ -25,31 +25,31 @@ export default part => {
   points.cbHips = new Point(0, measurements.hpsToHipsBack)
   points.cbWaist = new Point(0, points.cbHips.y - measurements.naturalWaistToHip)
 
-  // Shoulder point using new shoulderSlope measurement
-  points.shoulder = utils
-    .circlesIntersect(
-      points.cbHps,
-      measurements.shoulderToShoulder / 2,
-      points.cbHips,
-      measurements.shoulderSlope,
-      'y'
-    )
-    .shift()
-  if (points.shoulder.y < points.cbHps.y) {
-    // Shoulder should never be higher than HPS
-    points.shoulder = utils.beamIntersectsY(points.shoulder, points.cbHips, points.cbHps.y)
-  } else {
-    // Take shoulder slope reduction into account
-    points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
-  }
-
+  // Shoulder line
+  points.neck = new Point(
+    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
+    0
+  )
+  // Shoulder point using shoulderSlope degree measurement
+  points.shoulder = utils.beamsIntersect(
+    points.cbHps,
+    points.cbHps.shift(measurements.shoulderSlope * -1, 100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
+  )
+  // Determine armhole depth and cbShoulder independent of shoulder slope reduction
   points.cbShoulder = new Point(0, points.shoulder.y)
   points.cbArmhole = new Point(
     0,
-    points.cbShoulder.y +
-      (measurements.shoulderToShoulder * options.shoulderSlopeReduction) / 2 +
+    points.shoulder.y +
       measurements.bicepsCircumference * (1 + options.bicepsEase) * options.armholeDepthFactor
   )
+
+  // Now take shoulder slope reduction into account
+  points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
+  // Shoulder should never be higher than HPS
+  if (points.shoulder.y < points.cbHps.y) points.shoulder = new Point(points.shoulder.x, 0)
+
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
@@ -60,16 +60,6 @@ export default part => {
   points.waist = new Point(points.armhole.x, points.cbWaist.y)
   points.hips = new Point(points.armhole.x, points.cbHips.y)
   points.hem = new Point(points.armhole.x, points.cbHem.y)
-
-  // Shoulder line
-  points.neck = new Point(
-    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
-    0
-  )
-  points.shoulder = new Point(
-    measurements.shoulderToShoulder / 2 + store.get('shoulderEase'),
-    points.cbShoulder.y
-  )
 
   // Armhhole
   points.armholePitch = new Point(
