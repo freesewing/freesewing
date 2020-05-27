@@ -1,8 +1,8 @@
 {
-  "name": "@freesewing/sleeve_flared",
+  "name": "@freesewing/skirt",
   "version": "2.4.7-rc.0",
-  "description": "A FreeSewing pattern for a indian customized flared sleeve",
-  "author": "devanshkain (https://github.com/saurabhank)",
+  "description": "Skirt patterns",
+  "author": "devanshkain (https://github.com/devanshkain)",
   "homepage": "https://freesewing.org/",
   "repository": "github:saurabhank/freesewing",
   "license": "MIT",

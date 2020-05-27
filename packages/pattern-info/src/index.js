@@ -35,7 +35,7 @@ export const list = [
   'waralee',
   'waralee',
   'indsleeve',
-  'sleeve_flared',
+  'skirt',
   'bodiceblock'
 ]
 
@@ -63,7 +63,7 @@ export const withoutBreasts = [
   'wahid',
   'waralee',
   'indsleeve',
-  'sleeve_flared',
+  'skirt',
   'bodiceblock'
 ]
 

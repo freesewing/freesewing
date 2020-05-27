@@ -28,7 +28,7 @@ const trayvon = require('@freesewing/trayvon').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
 const indsleeve = require('@freesewing/indsleeve').config
-const sleeve_flared = require('@freesewing/sleeve_flared').config
+const skirt = require('@freesewing/skirt').config
 const bodiceblock = require('@freesewing/bodiceblock').config
 
 const patterns = {
@@ -60,7 +60,7 @@ const patterns = {
   wahid,
   waralee,
   indsleeve,
-  sleeve_flared,
+  skirt,
   bodiceblock
 }
 const patternOptions = (config) => {
