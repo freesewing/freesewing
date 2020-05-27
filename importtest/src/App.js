@@ -3,7 +3,7 @@ import freesewing from '@freesewing/core'
 import Workbench from '@freesewing/components/Workbench'
 import 'typeface-roboto-condensed'
 import '@freesewing/css-theme'
-import brian from '@freesewing/bodiceblock'
+import brian from '@freesewing/skirt'
 
 function App() {
   //let instance = new Pattern()
