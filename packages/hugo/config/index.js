@@ -10,7 +10,7 @@ export default {
   difficulty: 3,
   tags: ['top', 'basics'],
   optionGroups: {
-    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'ribbingStretch'],
+    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'hipsEase', 'ribbingStretch'],
     style: ['lengthBonus', 'sleeveLengthBonus', 'ribbingHeight'],
     advanced: ['acrossBackFactor', 'backNeckCutout']
   },
@@ -86,10 +86,11 @@ export default {
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
-    chestEase: { pct: 8, min: -4, max: 20 },
-    cuffEase: { pct: 20, min: 0, max: 200 },
+    chestEase: { pct: 8, min: 4, max: 20 },
+    hipsEase: { pct: 12, min: 4, max: 20 },
+    cuffEase: { pct: 20, min: 10, max: 50 },
     lengthBonus: { pct: 10, min: 0, max: 20 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    sleeveLengthBonus: { pct: 2, min: 0, max: 10 },
     ribbingStretch: { pct: 5, min: 0, max: 10 },
     ribbingHeight: { pct: 10, min: 4, max: 20 }
   }

@@ -22,13 +22,13 @@ export default function (part) {
     debug
   } = part.shorthand()
 
+  // Fit the hips
+  points.hem.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hemCp2 = new Point(points.hem.x, points.cfWaist.y)
+
   // Absolute values for percentages
   store.set('lengthBonus', options.lengthBonus * measurements.hpsToHipsBack)
   store.set('ribbing', measurements.hpsToHipsBack * options.ribbingHeight)
-
-  // Hem is more descripting than hips in this case
-  //points.cfHem = points.cfHips;
-  //points.hem = points.hips;
 
   // Ribbing
   points.cfRibbing = points.cfHem.shift(90, store.get('ribbing'))
@@ -60,7 +60,7 @@ export default function (part) {
   paths.saBase = new Path()
     .move(points.cfRibbing)
     .line(points.ribbing)
-    .line(points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())

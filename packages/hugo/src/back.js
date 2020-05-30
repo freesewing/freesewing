@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   // Remove clutter
   let seam = part.paths.seam
   part.paths = {}
@@ -6,6 +6,8 @@ export default function(part) {
 
   let {
     store,
+    measurements,
+    options,
     sa,
     Point,
     points,
@@ -19,9 +21,9 @@ export default function(part) {
     debug
   } = part.shorthand()
 
-  // Hem is more descripting than hips in this case
-  //points.cbHem = points.cbHips;
-  // points.hem = points.hips;
+  // Fit the hips
+  points.hem.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hemCp2 = new Point(points.hem.x, points.cbWaist.y)
 
   // Ribbing
   points.cbRibbing = points.cbHem.shift(90, store.get('ribbing'))
@@ -35,14 +37,11 @@ export default function(part) {
   paths.saBase = new Path()
     .move(points.cbRibbing)
     .line(points.ribbing)
-    .line(points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipBack)
     .join(neckOpeningParts[0].reverse())
-  paths.seam = paths.saBase
-    .clone()
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
   paths.saBase.render = false
 
   // Store neck opening path
@@ -70,10 +69,7 @@ export default function(part) {
     points.logo = points.title.shift(-90, 70)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .line(points.cbNeck)
-        .attr('class', 'fabric sa')
+      paths.sa = paths.saBase.offset(sa).line(points.cbNeck).attr('class', 'fabric sa')
       paths.sa.move(points.cbRibbing).line(paths.sa.start())
     }
   }
