@@ -30,10 +30,11 @@ export default (part) => {
     (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
     0
   )
+  points.hps = points.neck.clone() // We started using HPS in many measurements
   // Shoulder point using shoulderSlope degree measurement
   points.shoulder = utils.beamsIntersect(
-    points.cbHps,
-    points.cbHps.shift(measurements.shoulderSlope * -1, 100),
+    points.hps,
+    points.hps.shift(measurements.shoulderSlope * -1, 100),
     new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
     new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
   )
