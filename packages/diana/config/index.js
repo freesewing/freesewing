@@ -24,7 +24,6 @@ export default {
       'acrossBackFactor',
       'armholeDepthFactor',
       'frontArmholeDeeper',
-      'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
       {
         sleevecap: [
@@ -86,6 +85,7 @@ export default {
     brianFitCollar: true,
     collarEase: 0,
     backNeckCutout: 0.05,
+    shoulderSlopeReduction: 0,
 
     // Angles
     drapeAngle: { deg: 20, min: 10, max: 30 },
@@ -107,7 +107,6 @@ export default {
     chestEase: { pct: 0, min: -10, max: 20 },
     bicepsEase: { pct: 0, min: -5, max: 50 },
 
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
