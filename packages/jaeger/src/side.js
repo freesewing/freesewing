@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -51,6 +51,9 @@ export default function(part) {
   for (let i of Object.keys(paths)) if (i !== 'vent') delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
 
+  // Anchor for sampling
+  points.anchor = points.sideHem.clone()
+
   // Paths
   paths.hemBase = new Path().move(points.sideHem).line(points.bsHem)
   if (options.backVent === 2) {
@@ -80,11 +83,7 @@ export default function(part) {
     .curve(points.sideWaistCp1, points.sideHipsCp2, points.sideHips)
     .line(points.sideHem)
 
-  paths.seam = paths.saBase
-    .clone()
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 
   if (complete) {
     // Logo
