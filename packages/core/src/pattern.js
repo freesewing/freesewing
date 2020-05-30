@@ -182,7 +182,9 @@ Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = 
     for (let j in this.parts[i].paths) {
       parts[i].paths[j + '_' + run] = this.parts[i].paths[j]
         .clone()
-        .attr('style', sampleStyle(run, runs))
+        .attr('style', sampleStyle(run, runs, this.settings.sample.styles))
+        .attr('data-sample-run', run)
+        .attr('data-sample-runs', runs)
       if (this.parts[i].points.anchor)
         parts[i].paths[j + '_' + run] = parts[i].paths[j + '_' + run].translate(dx, dy)
       if (extraClass !== false) parts[i].paths[j + '_' + run].attributes.add('class', extraClass)

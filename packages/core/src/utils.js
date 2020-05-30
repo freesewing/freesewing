@@ -319,10 +319,10 @@ export function round(value) {
   return Math.round(value * 1e2) / 1e2
 }
 
-export function sampleStyle(run, runs) {
-  let hue = (run - 1) * (330 / runs)
-
-  return `stroke: hsl(${hue}, 100%, 35%);`
+export function sampleStyle(run, runs, styles = false) {
+  return styles && Array.isArray(styles) && styles.length > 0
+    ? styles[run % styles.length]
+    : `stroke: hsl(${(run - 1) * (330 / runs)}, 100%, 35%);`
 }
 
 export function deg2rad(degrees) {
