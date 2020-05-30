@@ -1,10 +1,11 @@
 import { sharedDimensions } from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     macro,
     Path,
+    Point,
     points,
     paths,
     complete,
@@ -25,33 +26,27 @@ export default function(part) {
   }
 
   // Shape side seam
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
   points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
+  points.hemCp2 = new Point(points.hips.x, points.cbWaist.y)
 
   // Store length of the neck seam
   store.set(
     'backNeckSeamLength',
-    new Path()
-      .move(points.neck)
-      .curve_(points.neckCp2, points.cbNeck)
-      .length()
+    new Path().move(points.neck).curve_(points.neckCp2, points.cbNeck).length()
   )
 
   // Paths
   paths.saBase = new Path()
     .move(points.hem)
-    .curve_(points.waist, points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve_(points.neckCp2, points.cbNeck)
     .attr('class', 'note stroke-xxl')
-  paths.hemBase = new Path()
-    .move(points.cbHem)
-    .line(points.hem)
-    .attr('class', 'note stroke-xxl')
+  paths.hemBase = new Path().move(points.cbHem).line(points.hem).attr('class', 'note stroke-xxl')
   paths.saBase.render = false
   paths.hemBase.render = false
 

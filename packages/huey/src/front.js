@@ -1,6 +1,6 @@
 import { sharedDimensions } from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     utils,
     store,
@@ -24,16 +24,16 @@ export default function(part) {
   }
 
   // Shape side seam
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
   points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
+  points.hemCp2 = new Point(points.hips.x, points.cfWaist.y)
 
   // Front pocket
   points.pocketCfTop = points.cfNeck.shiftFractionTowards(points.cfHem, 1 - options.pocketHeight)
-  points.pocketTopRight = points.pocketCfTop.shift(0, points.waist.x * options.pocketWidth)
+  points.pocketTopRight = points.pocketCfTop.shift(0, points.hem.x * options.pocketWidth)
   points.pocketTip = new Point(
     points.pocketTopRight.x * 1.2,
-    points.waist.y + points.waist.dy(points.hem) * 0.7
+    points.cfWaist.y + points.cfWaist.dy(points.hem) * 0.7
   )
   points.pocketHem = new Point(
     points.pocketTopRight.x + points.pocketTopRight.dx(points.pocketTip) / 2,
@@ -58,17 +58,14 @@ export default function(part) {
   // Paths
   paths.saBase = new Path()
     .move(points.hem)
-    .curve_(points.waist, points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
     .attr('class', 'note stroke-xxl')
-  paths.hemBase = new Path()
-    .move(points.cfHem)
-    .line(points.hem)
-    .attr('class', 'note stroke-xxl')
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).attr('class', 'note stroke-xxl')
   paths.saBase.render = false
   paths.hemBase.render = false
 
