@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     sa,
     Point,
@@ -46,7 +46,7 @@ export default function(part) {
   // Left shoulder seam
   points.armholeNeck = points.armholeTop
     .shiftTowards(points.armgapNeck, shoulders * options.shoulderseamLength)
-    .rotate(options.shoulderSlope, points.armholeTop)
+    .rotate(measurements.shoulderSlope, points.armholeTop)
 
   // Side seam
   points.armgapBottom = points.armgapTop.shift(0, arm)
