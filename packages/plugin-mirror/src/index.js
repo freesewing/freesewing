@@ -1,10 +1,11 @@
 import { name, version } from '../package.json'
 
 export const lineValues = (start, end) => {
-  const { x: x1, y: y1 } = end
-  const { x: x2, y: y2 } = start
-  const c = x1 * y2 - x2 * y1
-  return [-(x1 - x2), y1 - y2, c]
+  const { x: x1, y: y1 } = start
+  const { x: x2, y: y2 } = end
+  const [A, B] = [-(y2 - y1), x2 - x1]
+  const C = -(A * x1 + B * y1)
+  return [A, B, C]
 }
 
 export const mirrorGen = (start, end) => {
