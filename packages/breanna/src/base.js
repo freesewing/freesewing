@@ -1,55 +1,45 @@
-export default part => {
-  let { points, Point, measurements, options, utils } = part.shorthand()
+export default (part) => {
+  let { store, points, Point, measurements, options, utils } = part.shorthand()
 
-  // Shoulder
+  // HPS
+  points.hps = new Point(
+    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
+    0
+  )
+
+  // Shoulder point using shoulderSlope degree measurement
+  store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
+  points.shoulder = utils.beamsIntersect(
+    points.hps,
+    points.hps.shift(measurements.shoulderSlope * -1, 100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
+  )
+
+  // Center back axis
   points.cbHps = new Point(0, 0)
-  // Step 1/3:  no vertical ease to make sure shoulder slope is not influenced
-  points.cbWaist = new Point(0, measurements.hpsToHipsBack - measurements.naturalWaistToHip)
-  points.cbHips = new Point(0, measurements.hpsToHipsBack)
-  points.shoulder = utils
-    .circlesIntersect(
-      points.cbHps,
-      measurements.shoulderToShoulder / 2,
-      points.cbHips,
-      measurements.shoulderSlope,
-      'y'
-    )
-    .shift()
-
-  // Step 2/3: add vertical ease to waist and hips
+  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
   points.cbWaist = new Point(
     0,
     (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * (1 + options.verticalEase)
   )
   points.cbHips = new Point(0, measurements.hpsToHipsBack * (1 + options.verticalEase))
 
-  // Neck
-  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
-  points.hps = new Point(
-    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
-    0
-  )
+  // Now take shoulder slope reduction into account
+  points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
+  // Shoulder should never be higher than HPS
+  if (points.shoulder.y < points.cbHps.y) points.shoulder = new Point(points.shoulder.x, 0)
+  points.shoulderNoEase = points.shoulder.clone()
+
+  // Neckline control point
   points.hpsCp2 = utils.beamIntersectsY(
     points.hps,
     points.hps.shiftTowards(points.shoulder, 10).rotate(-90, points.hps),
     points.cbNeck.y
   )
+
+  // Waist at side seam
   points.waist = points.cbWaist.shift(0, (measurements.naturalWaist * (1 + options.waistEase)) / 4)
-
-  if (points.shoulder.y < points.hps.y) {
-    // Shoulder should never be higher than HPS
-    points.shoulder = utils.beamIntersectsY(points.shoulder, points.cbHips, points.hps.y)
-  } else {
-    // Take shoulder slope reduction into account
-    points.shoulder.y -= (points.shoulder.y - points.hps.y) * options.shoulderSlopeReduction
-  }
-  points.shoulderNoEase = points.shoulder.clone()
-
-  // Step 3/3: Add shoulder ease to shoulder point
-  points.shoulder = points.hps.shiftOutwards(
-    points.shoulder,
-    (measurements.shoulderToShoulder * options.shoulderEase) / 2
-  )
 
   // Armhhole
   points.armhole = new Point(
