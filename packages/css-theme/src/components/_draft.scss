@@ -101,6 +101,23 @@ svg.freesewing.draft {
     font-weight: bold;
     stroke: none;
   }
+  /* New style for sampled sizes */
+  path.size-3XS,
+  path.size-2XS,
+  path.size-XS,
+  path.size-S,
+  path.size-M {
+    stroke-width: 0.5;
+    stroke-dasharray: 0.25 0.75;
+  }
+  path.made-to-measure,
+  path.size-L,
+  path.size-XL,
+  path.size-2XL,
+  path.size-3XL,
+  path.size-4XL {
+    stroke-width: 0.5;
+  }
 }
 
 svg.freesewing.draft text {
@@ -176,6 +193,41 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-dark;
   }
+
+  /* New style for sampled sizes */
+  path.made-to-measure {
+    stroke: #212529;
+  }
+  path.size-3XS {
+    stroke: $oc-lime-6;
+  }
+  path.size-2XS {
+    stroke: $oc-orange-6;
+  }
+  path.size-XS {
+    stroke: $oc-grape-6;
+  }
+  path.size-S {
+    stroke: $oc-indigo-6;
+  }
+  path.size-M {
+    stroke: $oc-cyan-6;
+  }
+  path.size-L {
+    stroke: $oc-indigo-6;
+  }
+  path.size-XL {
+    stroke: $oc-grape-6;
+  }
+  path.size-2XL {
+    stroke: $oc-orange-6;
+  }
+  path.size-3XL {
+    stroke: $oc-lime-6;
+  }
+  path.size-4XL {
+    stroke: $oc-teal-6;
+  }
 }
 .theme-wrapper.dark svg.freesewing.draft {
   /* Stroke classes */
@@ -246,6 +298,41 @@ svg.freesewing.draft text {
   path.scalebox.imperial {
     stroke: none;
     fill: $fc-bg-light;
+  }
+
+  /* New style for sampled sizes */
+  path.made-to-measure {
+    stroke: #f8f9fa;
+  }
+  path.size-3XS {
+    stroke: $oc-lime-3;
+  }
+  path.size-2XS {
+    stroke: $oc-orange-3;
+  }
+  path.size-XS {
+    stroke: $oc-grape-3;
+  }
+  path.size-S {
+    stroke: $oc-indigo-3;
+  }
+  path.size-M {
+    stroke: $oc-cyan-3;
+  }
+  path.size-L {
+    stroke: $oc-indigo-3;
+  }
+  path.size-XL {
+    stroke: $oc-grape-3;
+  }
+  path.size-2XL {
+    stroke: $oc-orange-3;
+  }
+  path.size-3XL {
+    stroke: $oc-lime-3;
+  }
+  path.size-4XL {
+    stroke: $oc-teal-3;
   }
 }
 
