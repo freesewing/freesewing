@@ -47,7 +47,7 @@
 This repository is our _monorepo_ holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
 This folder holds **@freesewing/plugin-mirror**
 
-A FreeSewing plugin to mirror parts and points accross a line
+A FreeSewing plugin to mirror points or paths
 
 ## About FreeSewing 💀
 

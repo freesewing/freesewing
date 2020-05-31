@@ -1,7 +1,7 @@
 import { version } from '../package.json'
 
 export default {
-  name: 'notation-legend',
+  name: 'legend',
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',

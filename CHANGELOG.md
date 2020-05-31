@@ -2,6 +2,57 @@
 
 ## Unreleased
 
+### bruce
+
+#### Fixed
+
+- Sampling some options would not work in Bruce because the code shared across patterns would only run once. That's fixed now.
+
+### cathrin
+
+#### Fixed
+
+- [Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)
+- Fixed panels option being a list of numbers rather than strings
+
+### core
+
+#### Added
+
+- Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+
+### hugo
+
+#### Added
+
+- Added shaping of the side seam
+
+### plugin-buttons
+
+#### Removed
+
+- Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
+
+### plugin-mirror
+
+#### Added
+
+- A FreeSewing plugin for mirroring points or paths
+- Initial release
+
+### titan
+
+#### Added
+
+- A FreeSewing block for pants/trousers
+- Initial release
+
+### utils
+
+#### Added
+
+- Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+
 ## 2.6.0 (2020-05-01)
 
 ### brian
@@ -55,6 +106,7 @@
 #### Added
 
 - This plugin can export your pattern as DXF-ASTM
+- Initial release
 
 ### wahid
 
@@ -183,6 +235,7 @@
 #### Added
 
 - Florence is a face mask pattern
+- Initial release
 
 ## 2.3.0 (2020-02-23)
 
@@ -191,12 +244,14 @@
 #### Added
 
 - Homes is a pattern for a Sherlock Holmes hat
+- Initial release
 
 ### plugin-gore
 
 #### Added
 
 - A plugin to generate gores for semi-spheres or domes
+- Initial release
 
 ## 2.2.0 (2020-02-22)
 
@@ -509,12 +564,14 @@
 #### Added
 
 - Added the gatsby-remark-jargon package, a gatbsy plugin wrapping remark-jargon
+- Initial release
 
 ### remark-jargon
 
 #### Added
 
 - Added the remark-jargon package, a remark plugin for jargon terms
+- Initial release
 
 ### utils
 
@@ -570,6 +627,7 @@
 #### Added
 
 - Added the Penelope Pencil Skirt pattern by @woutervdub
+- Initial release
 
 ### simon
 
@@ -591,6 +649,7 @@
 #### Added
 
 - Added the Simone shirt pattern
+- Initial release
 
 ### utils
 
@@ -608,6 +667,7 @@
 #### Added
 
 - Added the Waralee wrap Pants pattern by @woutervdub
+- Initial release
 
 ## 2.0.4 (2019-09-27)
 
@@ -743,7 +803,314 @@
 
 ## 2.0.0 (2019-08-25)
 
-This is the **initial release**, and the start of this change log.
+### aaron
 
-Prior to version 2, FreeSewing was not a JavaScript project.
-As such, that history is out of scope for this change log.
+#### Added
+
+- Initial release
+
+### benjamin
+
+#### Added
+
+- Initial release
+
+### bent
+
+#### Added
+
+- Initial release
+
+### brian
+
+#### Added
+
+- Initial release
+
+### bruce
+
+#### Added
+
+- Initial release
+
+### carlita
+
+#### Added
+
+- Initial release
+
+### carlton
+
+#### Added
+
+- Initial release
+
+### cathrin
+
+#### Added
+
+- Initial release
+
+### components
+
+#### Added
+
+- Initial release
+
+### core
+
+#### Added
+
+- Initial release
+
+### create-freesewing-pattern
+
+#### Added
+
+- Initial release
+
+### css-theme
+
+#### Added
+
+- Initial release
+
+### examples
+
+#### Added
+
+- Initial release
+
+### florent
+
+#### Added
+
+- Initial release
+
+### huey
+
+#### Added
+
+- Initial release
+
+### hugo
+
+#### Added
+
+- Initial release
+
+### i18n
+
+#### Added
+
+- Initial release
+
+### jaeger
+
+#### Added
+
+- Initial release
+
+### models
+
+#### Added
+
+- Initial release
+
+### mui-theme
+
+#### Added
+
+- Initial release
+
+### pattern-info
+
+#### Added
+
+- Initial release
+
+### plugin-banner
+
+#### Added
+
+- Initial release
+
+### plugin-bundle
+
+#### Added
+
+- Initial release
+
+### plugin-bust
+
+#### Added
+
+- Initial release
+
+### plugin-buttons
+
+#### Added
+
+- Initial release
+
+### plugin-cutonfold
+
+#### Added
+
+- Initial release
+
+### plugin-debug
+
+#### Added
+
+- Initial release
+
+### plugin-designer
+
+#### Added
+
+- Initial release
+
+### plugin-dimension
+
+#### Added
+
+- Initial release
+
+### plugin-flip
+
+#### Added
+
+- Initial release
+
+### plugin-grainline
+
+#### Added
+
+- Initial release
+
+### plugin-i18n
+
+#### Added
+
+- Initial release
+
+### plugin-logo
+
+#### Added
+
+- Initial release
+
+### plugin-round
+
+#### Added
+
+- Initial release
+
+### plugin-scalebox
+
+#### Added
+
+- Initial release
+
+### plugin-sprinkle
+
+#### Added
+
+- Initial release
+
+### plugin-svgattr
+
+#### Added
+
+- Initial release
+
+### plugin-theme
+
+#### Added
+
+- Initial release
+
+### plugin-title
+
+#### Added
+
+- Initial release
+
+### plugin-validate
+
+#### Added
+
+- Initial release
+
+### prettier-config
+
+#### Added
+
+- Initial release
+
+### rendertest
+
+#### Added
+
+- Initial release
+
+### sandy
+
+#### Added
+
+- Initial release
+
+### shin
+
+#### Added
+
+- Initial release
+
+### simon
+
+#### Added
+
+- Initial release
+
+### sven
+
+#### Added
+
+- Initial release
+
+### tamiko
+
+#### Added
+
+- Initial release
+
+### theo
+
+#### Added
+
+- Initial release
+
+### trayvon
+
+#### Added
+
+- Initial release
+
+### tutorial
+
+#### Added
+
+- Initial release
+
+### utils
+
+#### Added
+
+- Initial release
+
+### wahid
+
+#### Added
+
+- Initial release

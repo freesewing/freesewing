@@ -148,7 +148,7 @@ mui-theme:
     '@material-ui/core': '^4.0.1'
     'react': '^16.8'
     'react-dom': '^16.8'
-notation-legend:
+legend:
   peer:
     '@freesewing/plugin-buttons': '^{{version}}'
 plugin-bundle:

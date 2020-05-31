@@ -1,10 +1,4 @@
-# Change log for: @freesewing/examples
-
-## 2.0.0 (2019-08-25)
-
-### Added
-
-- Initial release
+# Change log for: @freesewing/legend
 
 This is the **initial release**, and the start of this change log.
 

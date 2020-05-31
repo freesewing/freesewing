@@ -1,10 +1,73 @@
 Unreleased:
   date:
   Added:
+    core:
+      - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+    hugo:
+      - Added shaping of the side seam
+    notation-legend:
+      - A pattern to document the markings on our patterns
+      - Initial release
+    plugin-mirror:
+      - A FreeSewing plugin for mirroring points or paths
+      - Initial release
+    titan:
+      - A FreeSewing block for pants/trousers
+      - Initial release
+    utils:
+      - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+
   Changes:
+    aaron:
+      - Updated side seam shaping and tweaked options for better defaults
+      - Better handling of `armholeDrop` option
+    bent:
+      - Increased default for the `cuffEase` option
+      - Decreased default for the `armholeDepth` option
+      - Better range for the `shoulderSlopeReduction` measurement
+    breanna:
+      - Ported Breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+    brian:
+      - Ported brian to new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+    carlton:
+      - Better range for the `shoulderSlopeReduction` measurement
+    carlita:
+      - Better range for the `shoulderSlopeReduction` measurement
+    css-theme:
+      - Updated the width of the SVG paths of a draft to match plugin-theme
+    diana:
+      - Made the `shoulderSlopeReduction` option static so it's not available in the UI
+    huey:
+      - No longer use the `naturalWaist` measurement
+      - Changed some option to better defaults
+    hugo:
+      - Changed some option to better defaults
+    jaeger:
+      - Changed some option to better defaults
+      - Set an anchor on side part for sampling
+    plugin-buttons:
+      - Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket`
+        Changing this to avoid needless use of gender related terminology.
+    sven:
+      - Improved the shaping of the side seam
+      - Changed some option to better defaults
+    tamiko:
+      - Switch from `shoulderSlope` option to `shoulderSlope` measurement
+    utils:
+      - Changed `neckStimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+    workbench:
+      - Added changes to support new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+
   Deprecated:
   Fixed:
+    bruce:
+      - Sampling some options would not work in Bruce because the code shared across patterns would only run once. That's fixed now.
+    cathrin:
+      - '[Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)'
+      - Fixed panels option being a list of numbers rather than strings
   Removed:
+    plugin-buttons:
+      - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
   Security:
 
 2.6.0:
@@ -27,6 +90,7 @@ Unreleased:
       - Florence is a face mask pattern
     plugin-export-dxf:
       - This plugin can export your pattern as DXF-ASTM
+      - Initial release
   Changes:
     core:
       - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
@@ -130,14 +194,17 @@ Unreleased:
   Added:
     florence:
       - Florence is a face mask pattern
+      - Initial release
 
 2.3.0:
   date: 2020-02-23
   Added:
     holmes:
       - Homes is a pattern for a Sherlock Holmes hat
+      - Initial release
     plugin-gore:
       - A plugin to generate gores for semi-spheres or domes
+      - Initial release
 
 2.2.0:
   date: 2020-02-22
@@ -310,8 +377,10 @@ Unreleased:
       - Added the fixme type Blockquote component
     gatsby-remark-jargon:
       - Added the gatsby-remark-jargon package, a gatbsy plugin wrapping remark-jargon
+      - Initial release
     remark-jargon:
       - Added the remark-jargon package, a remark plugin for jargon terms
+      - Initial release
   Fixed:
     css-theme:
       - Fixed padding issue on mobile
@@ -327,13 +396,16 @@ Unreleased:
       - Added translations for Penelope, Waralee, and Simone
     simone:
       - Added the Simone shirt pattern
+      - Initial release
     penelope:
       - Added the Penelope Pencil Skirt pattern by @woutervdub
+      - Initial release
     utils:
       - Added backend methods for administration
       - Added the resendActivationEmail method to backend
     waralee:
       - Added the Waralee wrap Pants pattern by @woutervdub
+      - Initial release
   Changed:
     css-theme:
       - Made tweaks to the main/sidebar layout
@@ -455,3 +527,111 @@ Unreleased:
     models:
       - '[#86](https://github.com/freesewing/freesewing/issues/86):
         The `seatCircumference` measurement was missing, thus making it unavailable on the website'
+
+2.0.0:
+  date: 2019-08-25
+  Added:
+    aaron:
+      - Initial release
+    benjamin:
+      - Initial release
+    bent:
+      - Initial release
+    brian:
+      - Initial release
+    bruce:
+      - Initial release
+    carlita:
+      - Initial release
+    carlton:
+      - Initial release
+    cathrin:
+      - Initial release
+    components:
+      - Initial release
+    core:
+      - Initial release
+    create-freesewing-pattern:
+      - Initial release
+    css-theme:
+      - Initial release
+    examples:
+      - Initial release
+    florent:
+      - Initial release
+    huey:
+      - Initial release
+    hugo:
+      - Initial release
+    i18n:
+      - Initial release
+    jaeger:
+      - Initial release
+    models:
+      - Initial release
+    mui-theme:
+      - Initial release
+    pattern-info:
+      - Initial release
+    plugin-banner:
+      - Initial release
+    plugin-bundle:
+      - Initial release
+    plugin-bust:
+      - Initial release
+    plugin-buttons:
+      - Initial release
+    plugin-cutonfold:
+      - Initial release
+    plugin-debug:
+      - Initial release
+    plugin-designer:
+      - Initial release
+    plugin-dimension:
+      - Initial release
+    plugin-flip:
+      - Initial release
+    plugin-grainline:
+      - Initial release
+    plugin-i18n:
+      - Initial release
+    plugin-logo:
+      - Initial release
+    plugin-round:
+      - Initial release
+    plugin-scalebox:
+      - Initial release
+    plugin-sprinkle:
+      - Initial release
+    plugin-svgattr:
+      - Initial release
+    plugin-theme:
+      - Initial release
+    plugin-title:
+      - Initial release
+    plugin-validate:
+      - Initial release
+    prettier-config:
+      - Initial release
+    rendertest:
+      - Initial release
+    sandy:
+      - Initial release
+    shin:
+      - Initial release
+    simon:
+      - Initial release
+    sven:
+      - Initial release
+    tamiko:
+      - Initial release
+    theo:
+      - Initial release
+    trayvon:
+      - Initial release
+    tutorial:
+      - Initial release
+    utils:
+      - Initial release
+    wahid:
+      - Initial release

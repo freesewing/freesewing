@@ -1,6 +1,6 @@
 {
-  "name": "examples-example",
-  "homepage": "https://freesewing.github.io/examples",
+  "name": "legend-example",
+  "homepage": "https://freesewing.github.io/legend",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
