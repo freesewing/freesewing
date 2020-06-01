@@ -95,7 +95,7 @@ export default {
     bentUnderSleeve: 'bentSleeve',
     backBase: 'bentBack',
     frontBase: 'bentFront',
-    front: 'frontBase',
+    front: ['frontBase', 'backBase'],
     back: 'backBase',
     side: 'frontBase',
     collarStand: 'front',
