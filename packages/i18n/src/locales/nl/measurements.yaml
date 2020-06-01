@@ -9,8 +9,8 @@ highBustFront: Hoge buste vooraan
 highBust: Hoge borstomtrek
 hipsCircumference: Heupomtrek
 hpsToBust: HPS tot buste
-hpsToWaistBack: HPS to waist back
-hpsToWaistFront: HPS to waist front
+hpsToWaistBack: HPS tot taille achter
+hpsToWaistFront: HPS tot taille voor
 inseam: Binnenbeennaad
 kneeCircumference: Knieomtrek
 neckCircumference: Nekomtrek
@@ -22,11 +22,11 @@ shoulderToShoulder: Schouder tot schouder
 shoulderToWrist: Schouder tot pols
 underbust: Onderborstomtrek
 upperLegCircumference: Bovenbeenomtrek
-waistCircumference: Waist circumference
-waistToFloor: Waist to floor
-waistToHips: Waist to hips
-waistToKnee: Waist to knee
-waistToSeat: Waist to seat
-waistToUnderbust: Waist to underbust
-waistToUpperLeg: Waist to upper leg
+waistCircumference: Omtrek taille
+waistToFloor: Taille tot vloer
+waistToHips: Taille tot heupen
+waistToKnee: Taille tot knie
+waistToSeat: Taille tot zitvlak
+waistToUnderbust: Taille tot onderbuste
+waistToUpperLeg: Taille tot bovenbeen
 wristCircumference: Polsomtrek
