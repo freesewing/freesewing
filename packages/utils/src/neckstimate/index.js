@@ -34,17 +34,6 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
   // This is what should happen
   let delta = (neckCircumference / data.neckCircumference) * data[measurement] - data[measurement]
 
-  console.log(
-    'neckstimate',
-    neckCircumference,
-    measurement,
-    breasts,
-    data[measurement],
-    delta,
-    ratio[measurement],
-    Math.round(data[measurement] + delta * ratio[measurement])
-  )
-
   return Math.round(data[measurement] + delta * ratio[measurement])
 }
 
