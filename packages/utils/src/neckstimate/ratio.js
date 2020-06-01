@@ -3,36 +3,42 @@
  * measurements, we apply a correction ratio.
  */
 
+let a = 0.5 // arc
+let c = 1 // circumference
+let v = 0.75 // vertical
+
 export default {
-  ankleCircumference: 1,
-  bicepsCircumference: 1,
-  bustFront: 0.5,
-  bustSpan: 0.5,
-  chestCircumference: 1,
-  headCircumference: 1,
-  highBust: 1,
-  highBustFront: 0.5,
-  hipsCircumference: 1,
-  hpsToBust: 0.5,
-  hpsToWaistBack: 0.5,
-  hpsToWaistFront: 0.5,
-  inseam: 0.5,
-  kneeCircumference: 1,
-  neckCircumference: 1,
-  seatCircumference: 1,
-  seatDepth: 0.5,
-  shoulderSlope: 0.5,
-  shoulderToElbow: 0.5,
-  shoulderToShoulder: 0.5,
-  shoulderToWrist: 0.5,
-  underbust: 1,
-  upperLegCircumference: 1,
-  waist: 1,
-  waistToFloor: 0.5,
-  waistToHips: 0.5,
-  waistToKnee: 0.5,
-  waistToSeat: 0.5,
-  waistToUnderbust: 0.5,
-  waistToUpperLeg: 0.5,
-  wristCircumference: 1
+  // Arc measurements
+  bustFront: a,
+  bustSpan: a,
+  highBustFront: a,
+  shoulderToShoulder: a,
+  // Circumference measurements
+  ankleCircumference: c,
+  bicepsCircumference: c,
+  chestCircumference: c,
+  headCircumference: c,
+  highBust: c,
+  hipsCircumference: c,
+  kneeCircumference: c,
+  neckCircumference: c,
+  seatCircumference: c,
+  underbust: c,
+  upperLegCircumference: c,
+  waistCircumference: c,
+  wristCircumference: c,
+  // Vertical measurements
+  hpsToBust: v,
+  hpsToWaistBack: v,
+  hpsToWaistFront: v,
+  inseam: v,
+  seatDepth: v,
+  shoulderToElbow: v,
+  shoulderToWrist: v,
+  waistToFloor: v,
+  waistToHips: v,
+  waistToKnee: v,
+  waistToSeat: v,
+  waistToUnderbust: v,
+  waistToUpperLeg: v
 }
