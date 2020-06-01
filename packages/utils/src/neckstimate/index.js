@@ -6,8 +6,8 @@ import ratio from './ratio'
 const neckstimate = (neckCircumference = false, measurement = false, breasts = false) => {
   let data = breasts ? withBreasts : withoutBreasts
 
-  // Shoulder slope is in degrees now. Always defaults to 17.
-  if (measurement === 'shoulderSlope') return 17
+  // Shoulder slope is in degrees now. Always return de default.
+  if (measurement === 'shoulderSlope') return withBreasts.shoulderSlope
 
   if (!neckCircumference)
     throw new Error('neckstimate() requires a neck circumference in mm as first parameter')
@@ -33,6 +33,17 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
 
   // This is what should happen
   let delta = (neckCircumference / data.neckCircumference) * data[measurement] - data[measurement]
+
+  console.log(
+    'neckstimate',
+    neckCircumference,
+    measurement,
+    breasts,
+    data[measurement],
+    delta,
+    ratio[measurement],
+    Math.round(data[measurement] + delta * ratio[measurement])
+  )
 
   return Math.round(data[measurement] + delta * ratio[measurement])
 }
