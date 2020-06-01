@@ -12,6 +12,7 @@ export default {
   bustFront: 480,
   bustSpan: 160,
   chestCircumference: 925,
+  bust: 925, // used by plugin-bust
   headCircumference: 565,
   highBust: 865,
   highBustFront: 440,
