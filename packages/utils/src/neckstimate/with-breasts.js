@@ -21,7 +21,7 @@ export default {
   hpsToWaistFront: 400,
   inseam: 765,
   kneeCircumference: 380,
-  waist: 750,
+  waistCircumference: 750,
   waistToFloor: 1050,
   waistToHip: 125,
   waistToKnee: 600,
