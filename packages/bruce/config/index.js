@@ -1,27 +1,23 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "bruce",
+  name: 'bruce',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["underwear", "bottom", "basics"],
+  tags: ['underwear', 'bottom', 'basics'],
   optionGroups: {
-    fit: ["bulge", "stretch", "legStretch", "backRise"],
-    style: ["rise", "legBonus"]
+    fit: ['bulge', 'stretch', 'legStretch', 'backRise'],
+    style: ['rise', 'legBonus']
   },
-  measurements: [
-    "hipsCircumference",
-    "upperLegCircumference",
-    "hipsToUpperLeg"
-  ],
+  measurements: ['hipsCircumference', 'upperLegCircumference', 'waistToHips', 'waistToUpperLeg'],
   dependencies: {
-    side: "back",
-    front: "inset",
-    inset: "back"
+    side: 'back',
+    front: 'inset',
+    inset: 'back'
   },
   options: {
     // Constants
@@ -54,4 +50,4 @@ export default {
     legStretch: { pct: 40, min: 25, max: 45 },
     backRise: { pct: 5, min: 0, max: 10 }
   }
-};
+}

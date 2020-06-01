@@ -6,12 +6,13 @@ export default function init(part) {
     /* Set vertical scale to 1 (no stretch) */
     store.set('yScale', 1)
 
+    const hipsToUpperLeg = measurements.waistToUpperLeg - measurements.waistToHips
     /* Store rise, backRise and legBonus as absolute values */
-    store.set('rise', measurements.hipsToUpperLeg * options.rise * store.get('yScale'))
-    store.set('backRise', measurements.hipsToUpperLeg * options.backRise * store.get('yScale'))
+    store.set('rise', hipsToUpperLeg * options.rise * store.get('yScale'))
+    store.set('backRise', hipsToUpperLeg * options.backRise * store.get('yScale'))
     store.set('sideRise', store.get('backRise') * 0.75)
     store.set('frontRise', store.get('backRise') * 0.25)
-    store.set('legBonus', measurements.hipsToUpperLeg * options.legBonus * store.get('yScale'))
+    store.set('legBonus', hipsToUpperLeg * options.legBonus * store.get('yScale'))
 
     /* Set horizontal scale based on stretch */
     store.set('xScale', utils.stretchToScale(options.stretch))
@@ -36,8 +37,8 @@ export default function init(part) {
     store.set('gussetInsetRatio', options.gussetInsetRatio)
 
     /* Length helper */
-    store.set('length', measurements.hipsToUpperLeg * store.get('yScale'))
-    store.set('riseLength', measurements.hipsToUpperLeg + store.get('rise'))
+    store.set('length', hipsToUpperLeg * store.get('yScale'))
+    store.set('riseLength', hipsToUpperLeg + store.get('rise'))
     store.set('fullLength', store.get('riseLength') + store.get('legBonus') * store.get('yScale'))
 
     /* Height ratio front/inset */
