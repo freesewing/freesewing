@@ -22,8 +22,8 @@ export default (part) => {
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
-  points.cbHips = new Point(0, measurements.hpsToHipsBack)
-  points.cbWaist = new Point(0, points.cbHips.y - measurements.naturalWaistToHip)
+  points.cbWaist = new Point(0, measurements.hpsToWaistBack)
+  points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
   // Shoulder line
   points.neck = new Point(
