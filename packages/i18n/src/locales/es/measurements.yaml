@@ -1,26 +1,18 @@
 ---
-acrossBack: Ancho de espalda (obsoleto)
 ankleCircumference: Ankle circumference
 bicepsCircumference: Contorno del brazo
 bustFront: Bust front
 bustSpan: Distancia entre pechos
 chestCircumference: Contorno de pecho
 headCircumference: Contorno de cabeza
-highBust: Contorno de alto pecho
 highBustFront: High bust front
-hpsToBust: HPS to bust
-hpsToHipsBack: HPS to hips back
-hpsToHipsFront: HPS to hips front
+highBust: Contorno de alto pecho
 hipsCircumference: Contorno de caderas
-hipsToUpperLeg: Cadera a alto de pierna
+hpsToBust: HPS to bust
+hpsToWaistBack: HPS to waist back
+hpsToWaistFront: HPS to waist front
 inseam: Tiro
 kneeCircumference: Knee circumference
-naturalWaist: Contorno de cintura
-naturalWaistToFloor: Cintura a suelo
-naturalWaistToHip: Cintura a cadera
-naturalWaistToKnee: Cintura a rodilla
-naturalWaistToSeat: Cintura a asiento
-naturalWaistToUnderbust: Cintura a bajo pecho
 neckCircumference: Contorno de cuello
 seatCircumference: Contorno de asiento
 seatDepth: Alto de asiento
@@ -30,4 +22,11 @@ shoulderToShoulder: Distancia entre hombros
 shoulderToWrist: Codo a muñeca
 underbust: Bajo pecho
 upperLegCircumference: Contorno de alto de pierna
+waistCircumference: Waist circumference
+waistToFloor: Waist to floor
+waistToHips: Waist to hips
+waistToKnee: Waist to knee
+waistToSeat: Waist to seat
+waistToUnderbust: Waist to underbust
+waistToUpperLeg: Waist to upper leg
 wristCircumference: Contorno de muñeca
