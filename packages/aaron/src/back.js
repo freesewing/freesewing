@@ -36,6 +36,8 @@ export default function (part) {
     options.backlineBend
   )
 
+  points.anchor = points.cbNeck.clone()
+
   // Seamline
   paths.seam = new Path()
     .move(points.cbNeck)

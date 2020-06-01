@@ -24,14 +24,13 @@ export default function (part) {
   // Handle stretch
   for (let i in points) points[i].x = points[i].x * (1 - options.stretchFactor)
 
-  // Rename cb (center back) to cf (center front)
-  for (let key of ['Neck', 'Shoulder', 'Armhole', 'Waist', 'Hips', 'Hem']) {
-    points[`cf${key}`] = new Point(points[`cb${key}`].x, points[`cb${key}`].y)
-    //delete points[`cb${key}`];
+  // Clone cb (center back) into cf (center front)
+  for (let key of ['Neck', 'Shoulder', 'Armhole', 'Hips', 'Hem']) {
+    points[`cf${key}`] = points[`cb${key}`].clone()
   }
 
   // Neckline
-  points.cfNeck = points.cfNeck.shift(-90, options.necklineDrop * measurements.hpsToHipsBack)
+  points.cfNeck = points.cfNeck.shift(-90, options.necklineDrop * measurements.hpsToWaistBack)
 
   // Strap
   points.strapCenter = points.neck.shiftFractionTowards(
@@ -86,6 +85,8 @@ export default function (part) {
   )
   points.armholeCp2 = points.armhole.shiftFractionTowards(points.armholeCorner, 0.5)
   points.strapRightCp1 = points.strapRight.shiftFractionTowards(points.armholeCorner, 0.5)
+
+  points.anchor = points.cfNeck.clone()
 
   // Seamline
   paths.seam = new Path()
