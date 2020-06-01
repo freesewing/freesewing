@@ -19,7 +19,7 @@ export default function (part) {
 
   calculateRatios(part)
   // Belt width
-  let bw = (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * options.beltWidth
+  let bw = measurements.hpsToWaistBack * options.beltWidth
   store.set('beltWidth', bw)
 
   // Box pleat (bp)

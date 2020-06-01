@@ -26,12 +26,12 @@ export default function (part) {
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
 
   // Seat shaping
-  points.cfSeat = points.cfWaist.shift(-90, measurements.naturalWaistToSeat)
+  points.cfSeat = points.cfWaist.shift(-90, measurements.waistToSeat)
   points.seat = points.cfSeat.shift(0, store.get('seat') / 4)
   points.seatCp2 = points.seat.shift(90, points.waist.dy(points.seat) / 3)
 
   // Hem length
-  points.cfHem = points.cfWaist.shift(-90, measurements.naturalWaistToFloor * options.length)
+  points.cfHem = points.cfWaist.shift(-90, measurements.waistToFloor * options.length)
   points.hem = new Point(points.seat.x, points.cfHem.y)
   store.set('waistToHem', points.cfHem.y - points.waist.y)
 
@@ -47,7 +47,7 @@ export default function (part) {
 
   // Front closure edge
   points.collarEdge = new Point(
-    points.button1Left.x - measurements.naturalWaist * options.frontOverlap,
+    points.button1Left.x - measurements.waistCircumference * options.frontOverlap,
     points.cfNeck.y
   )
   points.hemEdge = new Point(points.collarEdge.x, points.hem.y)

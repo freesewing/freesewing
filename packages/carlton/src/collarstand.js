@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -31,6 +31,8 @@ export default function(part) {
   for (let i of ['standTopCp', 'standTip', 'standTipCp', 'bottomLeftCp']) {
     points[i + 'Left'] = points[i].flipX()
   }
+
+  points.anchor = points.standTop.clone()
 
   paths.seam = new Path()
     .move(points.bottomLeft)
