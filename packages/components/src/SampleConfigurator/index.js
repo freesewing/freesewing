@@ -80,7 +80,7 @@ const SampleConfigurator = (props) => {
       </li>
       <li className="nodot">
         <h4>
-          <FormattedMessage id="app.models" />
+          <FormattedMessage id="app.people" />
         </h4>
         <ul style={{ paddingLeft: '1rem' }}>
           <li>
