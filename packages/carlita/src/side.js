@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -20,6 +20,8 @@ export default function(part) {
   for (let i in paths) delete paths[i]
   for (let i in snippets) delete snippets[i]
 
+  points.anchor = points.armholePitchRot2.clone()
+
   paths.saBase = new Path()
     .move(points.hem)
     .line(points.seat)
@@ -30,11 +32,7 @@ export default function(part) {
     ._curve(points.bustPointCp1, points.bustPoint)
     .curve(points.bustPointCp2, points.psWaistCp1, points.psWaist)
     .line(points.psHem)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.hem)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().line(points.hem).close().attr('class', 'fabric')
 
   if (complete) {
     points.title = points.bustPoint.shiftFractionTowards(points.waist, 0.5)
