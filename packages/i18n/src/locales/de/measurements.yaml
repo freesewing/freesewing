@@ -1,26 +1,18 @@
 ---
-acrossBack: Rückenweite (veraltet)
 ankleCircumference: Fesselumfang
 bicepsCircumference: Bizepsumfang
 bustFront: Bust front
 bustSpan: Brustweite
 chestCircumference: Brustumfang
 headCircumference: Kopfumfang
-highBust: Oberbrustweite
 highBustFront: High bust front
-hpsToBust: HPS to bust
-hpsToHipsBack: HPS to hips back
-hpsToHipsFront: HPS to hips front
+highBust: Oberbrustweite
 hipsCircumference: Hüftumfang
-hipsToUpperLeg: Hüfte bis Oberschenkel
+hpsToBust: HPS to bust
+hpsToWaistBack: HPS to waist back
+hpsToWaistFront: HPS to waist front
 inseam: Schrittlänge
 kneeCircumference: Knieumfang
-naturalWaist: Natürliche Taille
-naturalWaistToFloor: Natürliche Taille bis Boden
-naturalWaistToHip: Natürliche Taille bis Hüfte
-naturalWaistToKnee: Natürliche Taille bis Knie
-naturalWaistToSeat: Natürliche Taille bis Gesäß
-naturalWaistToUnderbust: Natürliche Taille bis zum Unterbrustumfang
 neckCircumference: Halsumfang
 seatCircumference: Gesäßumfang
 seatDepth: Sitztiefe
@@ -30,4 +22,11 @@ shoulderToShoulder: Schulter bis Schulter
 shoulderToWrist: Shulter bis Handgelenk
 underbust: Unterbrustweite
 upperLegCircumference: Oberschenkelumfang
+waistCircumference: Waist circumference
+waistToFloor: Waist to floor
+waistToHips: Waist to hips
+waistToKnee: Waist to knee
+waistToSeat: Waist to seat
+waistToUnderbust: Waist to underbust
+waistToUpperLeg: Waist to upper leg
 wristCircumference: Umfang des Handgelenks
