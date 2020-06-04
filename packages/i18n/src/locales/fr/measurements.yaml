@@ -8,9 +8,9 @@ headCircumference: Tour de tête
 highBustFront: Largeur de buste supérieur
 highBust: Tour de buste supérieur
 hipsCircumference: Tour des petites hanches
-hpsToBust: Hauteur de poitrine
-hpsToWaistBack: HPS to waist back
-hpsToWaistFront: HPS to waist front
+hpsToBust: Longueur épaule-poitrine
+hpsToWaistBack: Longueur épaule-taille dos
+hpsToWaistFront: Longueur épaule-taille devant
 inseam: Longueur d'entrejambe
 kneeCircumference: Tour de genou
 neckCircumference: Tour de cou
@@ -22,11 +22,11 @@ shoulderToShoulder: Largeur d'épaules
 shoulderToWrist: Longueur de bras
 underbust: Tour sous poitrine
 upperLegCircumference: Tour de cuisse
-waistCircumference: Waist circumference
-waistToFloor: Waist to floor
-waistToHips: Waist to hips
-waistToKnee: Waist to knee
-waistToSeat: Waist to seat
-waistToUnderbust: Waist to underbust
-waistToUpperLeg: Waist to upper leg
+waistCircumference: Tour de taille
+waistToFloor: Hauteur de taille
+waistToHips: Hauteur taille hanche
+waistToKnee: Hauteur taille genou
+waistToSeat: Hauteur taille bassin
+waistToUnderbust: Hauteur taille sous-poitrine
+waistToUpperLeg: Hauteur taille bassin
 wristCircumference: Tour de poignet
