@@ -19,11 +19,11 @@ export default function (part) {
     )
     points[`underbustGap${count}RightCp`] = points[`underbustGap${count}Right`].shift(
       -90,
-      measurements.naturalWaistToUnderbust * 0.15
+      measurements.waistToUnderbust * 0.15
     )
     points[`underbustGap${count}LeftCp`] = points[`underbustGap${count}Left`].shift(
       -90,
-      measurements.naturalWaistToUnderbust * 0.15
+      measurements.waistToUnderbust * 0.15
     )
 
     // Waist
@@ -38,19 +38,19 @@ export default function (part) {
     )
     points[`waistGap${count}RightCp1`] = points[`waistGap${count}Right`].shift(
       90,
-      measurements.naturalWaistToUnderbust * 0.2
+      measurements.waistToUnderbust * 0.2
     )
     points[`waistGap${count}LeftCp2`] = points[`waistGap${count}Left`].shift(
       90,
-      measurements.naturalWaistToUnderbust * 0.2
+      measurements.waistToUnderbust * 0.2
     )
     points[`waistGap${count}RightCp2`] = points[`waistGap${count}Right`].shift(
       -90,
-      measurements.naturalWaistToHip * 0.2
+      measurements.waistToHips * 0.2
     )
     points[`waistGap${count}LeftCp1`] = points[`waistGap${count}Left`].shift(
       -90,
-      measurements.naturalWaistToHip * 0.2
+      measurements.waistToHips * 0.2
     )
 
     // Hips

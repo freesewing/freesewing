@@ -15,10 +15,10 @@ export default {
   },
   measurements: [
     'underbust',
-    'naturalWaist',
+    'waistCircumference',
     'hipsCircumference',
-    'naturalWaistToUnderbust',
-    'naturalWaistToHip'
+    'waistToUnderbust',
+    'waistToHips'
   ],
   dependencies: {
     panel1: 'panels',

@@ -6,7 +6,7 @@ export default function (part) {
   else store.set('gaps', [0.2, 0.35, 0.5, 0.65, 0.8])
 
   // Absolute values for some options
-  store.set('waistReduction', measurements.naturalWaist * options.waistReduction)
+  store.set('waistReduction', measurements.waistCircumference * options.waistReduction)
   debug({
     type: 'info',
     label: '✅ Waist reduction',
@@ -18,7 +18,7 @@ export default function (part) {
     label: '✅ Back opening',
     msg: utils.units(store.get('backOpening'))
   })
-  let len = measurements.naturalWaistToUnderbust + measurements.naturalWaistToHip
+  let len = measurements.waistToUnderbust + measurements.waistToHips
   for (let option of ['backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise'])
     store.set(option, len * options[option])
   store.set('length', len)
@@ -33,7 +33,10 @@ export default function (part) {
   store.set('width', 0.5 * (measurements.hipsCircumference - store.get('backOpening')))
   store.set(
     'waistIntake',
-    0.5 * (measurements.hipsCircumference - measurements.naturalWaist + store.get('waistReduction'))
+    0.5 *
+      (measurements.hipsCircumference -
+        measurements.waistCircumference +
+        store.get('waistReduction'))
   )
   store.set('bustIntake', 0.5 * (measurements.hipsCircumference - measurements.underbust))
 
@@ -45,7 +48,7 @@ export default function (part) {
   points.underbustCB = new Point(wid, 0)
   points.topSide = points.underbustCF.shiftFractionTowards(points.underbustCB, 0.5)
   points.bottomSide = points.hipsCF.shiftFractionTowards(points.hipsCB, 0.5)
-  points.waistCF = points.underbustCF.shift(-90, measurements.naturalWaistToUnderbust)
+  points.waistCF = points.underbustCF.shift(-90, measurements.waistToUnderbust)
   points.waistCB = new Point(points.hipsCB.x, points.waistCF.y)
 
   // frontRise

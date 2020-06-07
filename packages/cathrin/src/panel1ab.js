@@ -1,5 +1,7 @@
-export default function(part) {
+export default function (part) {
   let { macro, utils, sa, points, paths, Point, Path, complete, paperless } = part.shorthand()
+
+  points.anchor = points.topCF.clone()
 
   let top = new Path()
     .move(points.underbustGap1Left)

@@ -3,6 +3,8 @@ import draftPanel1ab from './panel1ab'
 export default function (part) {
   let { macro, sa, paths, points, options, complete, paperless } = part.shorthand()
 
+  points.anchor = points.topCF.clone()
+
   delete paths.outline
   delete paths.panel2
   delete paths.panel3
