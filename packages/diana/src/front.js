@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     store,
     measurements,
@@ -20,12 +20,12 @@ export default part => {
   for (let id in paths) delete paths[id]
 
   //  Waist shaping
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
+  points.waist.x = (measurements.waistCircumference * (1 + options.waistEase)) / 4
   points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
-  points.hipsCp2 = points.hips.shift(90, measurements.naturalWaistToHip / 3)
-  points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip / 3)
-  points.waistCp2 = points.waist.shift(90, (measurements.hpsToHipsBack - measurements.naturalWaistToHip) / 4)
+  points.hipsCp2 = points.hips.shift(90, measurements.waistToHips / 3)
+  points.waistCp1 = points.waist.shift(-90, measurements.waistToHips / 3)
+  points.waistCp2 = points.waist.shift(90, measurements.hpsToWaistBack / 4)
 
   // Rotating whole armhole for front
   let rotateThese = [
@@ -38,24 +38,24 @@ export default part => {
     'armholePitchCp2',
     'shoulderCp1',
     'shoulder',
-    'neck',
-  ];
-  if (front) for (let p of rotateThese) points[p] = points[p].rotate(-options.drapeAngle, points.armhole)
+    'neck'
+  ]
+  if (front)
+    for (let p of rotateThese) points[p] = points[p].rotate(-options.drapeAngle, points.armhole)
 
   // Neckline shaping
-  points.neck = points.neck.shiftFractionTowards(points.shoulder, 1-options.shoulderSeamLength)
-  points.neckCp2.y = 1.2*points.shoulder.y
-  points.cbNeck.y = 1.2*points.shoulder.y
-  points.neckCp2Front = points.neck.shiftTowards(points.shoulder, -points.shoulder.x/4)
+  points.neck = points.neck.shiftFractionTowards(points.shoulder, 1 - options.shoulderSeamLength)
+  points.neckCp2.y = 1.2 * points.shoulder.y
+  points.cbNeck.y = 1.2 * points.shoulder.y
+  points.neckCp2Front = points.neck.shiftTowards(points.shoulder, -points.shoulder.x / 4)
   points.cfNeck.y = points.neckCp2Front.y + 0.7 * (points.neckCp2Front.y - points.neck.y)
-  points.cfNeckCp1 = points.cfNeck.shift(0, points.shoulder.x/4)
+  points.cfNeckCp1 = points.cfNeck.shift(0, points.shoulder.x / 4)
 
   if (front) {
     points.cNeck = points.cfNeck
     points.cHem = points.cfHem
     points.neckCp2 = points.neckCp2Front
-  }
-  else {
+  } else {
     points.cNeck = points.cbNeck
     points.cHem = points.cbHem
     points.cfNeckCp1 = points.cNeck
@@ -82,7 +82,7 @@ export default part => {
 
   // Complete
   if (complete) {
-    snippets.shoulderSeamEndNotch = new Snippet("notch", points.neck)
+    snippets.shoulderSeamEndNotch = new Snippet('notch', points.neck)
     if (front) snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
 
     macro('cutonfold', false)
@@ -102,7 +102,7 @@ export default part => {
 
   // Paperless
   if (paperless) {
-   macro('pd', {
+    macro('pd', {
       path: new Path()
         .move(points.armhole)
         .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
@@ -153,9 +153,7 @@ export default part => {
       y: points.cHem.y + 3 * sa + 15
     })
     macro('pd', {
-      path: new Path()
-        .move(points.cNeck)
-        .curve(points.cfNeckCp1, points.neckCp2, points.neck),
+      path: new Path().move(points.cNeck).curve(points.cfNeckCp1, points.neckCp2, points.neck),
       d: -sa - 15
     })
   }
