@@ -13,7 +13,7 @@ export default function (part) {
     units
   } = part.shorthand()
 
-  let width = measurements.hpsToHipsBack * options.ribbingHeight * 2
+  let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = complete
     ? width * 2.5
     : measurements.chestCircumference * (1 + options.chestEase) * (1 - options.ribbingStretch)

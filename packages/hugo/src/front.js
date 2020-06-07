@@ -27,8 +27,14 @@ export default function (part) {
   points.hemCp2 = new Point(points.hem.x, points.cfWaist.y)
 
   // Absolute values for percentages
-  store.set('lengthBonus', options.lengthBonus * measurements.hpsToHipsBack)
-  store.set('ribbing', measurements.hpsToHipsBack * options.ribbingHeight)
+  store.set(
+    'lengthBonus',
+    options.lengthBonus * (measurements.hpsToWaistBack + measurements.waistToHips)
+  )
+  store.set(
+    'ribbing',
+    (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+  )
 
   // Ribbing
   points.cfRibbing = points.cfHem.shift(90, store.get('ribbing'))
@@ -43,7 +49,7 @@ export default function (part) {
   points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6)
   points.pocketCf = points.cfHem.shift(
     90,
-    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * 0.33 + store.get('ribbing')
+    measurements.hpsToWaistBack * 0.33 + store.get('ribbing')
   )
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y)
   points.pocketTip = points.pocketHem
