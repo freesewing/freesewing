@@ -104,9 +104,9 @@ export default {
   measurements: [
     'bicepsCircumference',
     'chestCircumference',
-    'hpsToHipsBack',
-    'naturalWaist',
-    'naturalWaistToHip',
+    'hpsToWaistBack',
+    'waistCircumference',
+    'waistToHips',
     'neckCircumference',
     'shoulderSlope',
     'shoulderToShoulder',

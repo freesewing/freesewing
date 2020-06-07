@@ -1,6 +1,6 @@
 import { calculateReduction } from './shared'
 
-export default part => {
+export default (part) => {
   part.paths = {}
   let {
     store,
@@ -36,7 +36,7 @@ export default part => {
   if (store.get('backDarts')) reduce = (reduce * (1 - options.backDartShaping)) / 4
   else reduce = reduce / 4
   points.waist = points.waist.shift(180, reduce)
-  points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip * 0.5)
+  points.waistCp1 = points.waist.shift(-90, measurements.waistToHips * 0.5)
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
@@ -65,10 +65,7 @@ export default part => {
       points.bballEnd = points.hem.shiftFractionTowards(points.hips, options.hemCurve)
       points.bballCp1 = points.bballStart.shiftFractionTowards(points.hem, 0.5)
       points.bballCp2 = new Point(points.bballCp1.x, points.bballEnd.y)
-      paths.saBase = new Path()
-        .move(points.bballEnd)
-        .line(points.hips)
-        .join(paths.saBaseFromHips)
+      paths.saBase = new Path().move(points.bballEnd).line(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
         .move(points.cfHem)
         .line(points.bballStart)
@@ -89,10 +86,7 @@ export default part => {
         .curve(points.slashCp2, points.slashCp1, points.slashStart)
       break
     default:
-      paths.saBase = new Path()
-        .move(points.hem)
-        .line(points.hips)
-        .join(paths.saBaseFromHips)
+      paths.saBase = new Path().move(points.hem).line(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path().move(points.cfHem).line(points.hem)
   }
 
