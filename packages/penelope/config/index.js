@@ -33,11 +33,11 @@ export default {
     ]
   },
   measurements: [
-    'naturalWaist',
+    'waistCircumference',
     'seatCircumference',
-    'naturalWaistToHip',
-    'naturalWaistToSeat',
-    'naturalWaistToKnee'
+    'waistToHips',
+    'waistToSeat',
+    'waistToKnee'
   ],
   dependencies: {},
   inject: {},

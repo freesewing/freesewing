@@ -14,7 +14,7 @@ function BuildMainShape(part, frontPart) {
     macro
   } = part.shorthand()
 
-  let skirtLength = measurements.naturalWaistToKnee * (1 + options.lengthBonus) // + options.hem;
+  let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
 
   store.set('skirtLength', skirtLength)
 
@@ -23,7 +23,7 @@ function BuildMainShape(part, frontPart) {
 
   let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
 
-  let waist = measurements.naturalWaist
+  let waist = measurements.waistCircumference
   let seat = measurements.seatCircumference > waist ? measurements.seatCircumference : waist
 
   dartCalc(options, seat, seatEase, waist, waistEase)
@@ -53,17 +53,17 @@ function BuildMainShape(part, frontPart) {
   points.rWaistOriginal = new Point(sideSeam, 0)
   points.rLeg = new Point(sideSeam + (options.hemBonus * seat) / 10, skirtLength)
 
-  points.lSeat = new Point(0, measurements.naturalWaistToSeat)
-  points.rSeat = new Point(sideSeam, measurements.naturalWaistToSeat)
-  points.rWaistCPdown = new Point(sideSeam, measurements.naturalWaistToSeat / 3)
-  points.rSeatCPup = new Point(sideSeam, (measurements.naturalWaistToSeat / 3) * 2)
+  points.lSeat = new Point(0, measurements.waistToSeat)
+  points.rSeat = new Point(sideSeam, measurements.waistToSeat)
+  points.rWaistCPdown = new Point(sideSeam, measurements.waistToSeat / 3)
+  points.rSeatCPup = new Point(sideSeam, (measurements.waistToSeat / 3) * 2)
   points.rSeatCPdown = points.rSeat.shift(
     270,
-    ((measurements.naturalWaistToSeat - measurements.naturalWaistToHip) *
+    ((measurements.waistToSeat - measurements.waistToHips) *
       Math.abs((options.hemBonus * seat) / 10)) /
       options.hipCurveDividerDown
   )
-  //$p->newPoint('pH',   $sideSeam, $model->m('naturalWaistToHip') -$this->o('waistSideSeamRise'));
+  //$p->newPoint('pH',   $sideSeam, $model->m('waistToHips') -$this->o('waistSideSeamRise'));
   let waistFactor = 0.99
   let sideFactor = 0.97
   let wdelta = 1
@@ -109,7 +109,7 @@ function BuildMainShape(part, frontPart) {
         waistCurve,
         seat / 4 / options.curvePlacement,
         dartSize,
-        measurements.naturalWaistToSeat * dartDepthFactor
+        measurements.waistToSeat * dartDepthFactor
       )
       waistLength = curve1.left.length()
       points.dart1Start = curve1.dart.start()
@@ -121,7 +121,7 @@ function BuildMainShape(part, frontPart) {
           curve1.right,
           options.dart2offset,
           dartSize,
-          measurements.naturalWaistToSeat * dartDepthFactor * options.dart2factor
+          measurements.waistToSeat * dartDepthFactor * options.dart2factor
         )
         waistLength += curve2.left.length()
         waistLength += curve2.right.length()
@@ -193,15 +193,9 @@ function BuildMainShape(part, frontPart) {
     paths.hem.setRender(true)
   }
 
-  paths.leftSide = new Path()
-    .move(points.lWaist)
-    .line(points.lHem)
-    .setRender(false)
+  paths.leftSide = new Path().move(points.lWaist).line(points.lHem).setRender(false)
 
-  paths.bottom = new Path()
-    .move(points.lHem)
-    .line(points.rHem)
-    .setRender(false)
+  paths.bottom = new Path().move(points.lHem).line(points.rHem).setRender(false)
 
   paths.sideSeam = sideSeamPath.setRender(false)
 
@@ -209,7 +203,7 @@ function BuildMainShape(part, frontPart) {
   paths.waist = waistPath.reverse().setRender(false)
   paths.waistSA = waistPathSA.reverse().setRender(false)
 
-  points.titleAnchor = new Point(measurements.naturalWaist / 6, measurements.naturalWaistToSeat)
+  points.titleAnchor = new Point(measurements.waistCircumference / 6, measurements.waistToSeat)
   points.logoAnchor = points.titleAnchor.shift(270, 75)
 
   points.grainlineTop = points.lWaist.shift(0, 50).shift(270, 50)

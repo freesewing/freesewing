@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     measurements,
@@ -20,7 +20,7 @@ export default function(part) {
   }
 
   let waistEase = options.waistEase
-  let waist = measurements.naturalWaist
+  let waist = measurements.waistCircumference
   waist += waistEase
 
   points.TL = new Point(0, 0)
@@ -63,14 +63,7 @@ export default function(part) {
     if (sa) {
       paths.sa = new Path()
         .move(points.TL)
-        .join(
-          new Path()
-            .move(points.TL)
-            .line(points.BL)
-            .line(points.BR)
-            .line(points.TR)
-            .offset(sa)
-        )
+        .join(new Path().move(points.TL).line(points.BL).line(points.BR).line(points.TR).offset(sa))
         .line(points.TR)
         .attr('class', 'fabric sa')
     }
