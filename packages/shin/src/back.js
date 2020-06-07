@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     macro,
@@ -27,17 +27,20 @@ export default function(part) {
 
   points.hipSide = new Point(0, 0)
   points.hipCb = new Point(store.get('hipBack'), 0)
-  points.legSide = points.hipSide.shift(-90 - options.angle, measurements.hipsToUpperLeg)
+  points.legSide = points.hipSide.shift(
+    -90 - options.angle,
+    measurements.waistToUpperLeg - measurements.waistToHips
+  )
   points.legSideCp = points.legSide.shift(options.angle * -1 + 7, store.get('legBack'))
   points.legInner = points.legSideCp.shift(options.angle * -1 - 90, store.get('gusset') / 2)
   points.legSideCp = points.legSideCp.shiftFractionTowards(points.legSide, 0.5)
-  let tmp = new Path()
-    .move(points.legInner)
-    ._curve(points.legSideCp, points.legSide)
-    .shiftAlong(2)
+  let tmp = new Path().move(points.legInner)._curve(points.legSideCp, points.legSide).shiftAlong(2)
   let gussetAngle = points.legInner.angle(tmp)
   points.crossSeam = points.legInner.shift(gussetAngle - 90, store.get('gusset'))
-  points.seatCb = points.hipCb.shift(-86, measurements.hipsToUpperLeg * 0.62)
+  points.seatCb = points.hipCb.shift(
+    -86,
+    (measurements.waistToUpperLeg - measurements.waistToHips) * 0.62
+  )
   tmp = utils.beamsIntersect(
     points.crossSeam,
     points.crossSeam.shift(gussetAngle, 20),
@@ -60,7 +63,7 @@ export default function(part) {
 
   // Lengthen the legs
   if (options.legBonus > 0) {
-    let bonus = measurements.hipsToUpperLeg * options.legBonus
+    let bonus = (measurements.waistToUpperLeg - measurements.waistToHips) * options.legBonus
     points.legSide = points.legSide.shift(-90, bonus)
     points.legSideCp = points.legSideCp.shift(-90, bonus)
     points.reducedLegInner = points.reducedLegInner.shift(-90, bonus)
@@ -68,14 +71,14 @@ export default function(part) {
 
   // Rise
   if (options.rise > 0) {
-    let rise = measurements.hipsToUpperLeg * options.rise
+    let rise = (measurements.waistToUpperLeg - measurements.waistToHips) * options.rise
     points.hipSide = points.hipSide.shift(90, rise)
     points.hipCb = points.hipCb.shift(90, rise)
   }
 
   // Back rise
   if (options.backRise > 0) {
-    let backRise = measurements.hipsToUpperLeg * options.backRise
+    let backRise = (measurements.waistToUpperLeg - measurements.waistToHips) * options.backRise
     points.hipCb = points.hipCb.shift(90, backRise)
     points.hipSide = points.hipSide.shift(90, backRise)
     points.hipCbCp = new Point(points.hipCb.x / 2, points.hipCb.y)
