@@ -20,7 +20,7 @@ export default function (part) {
 
   // Shorten body to take ribbing into account
   if (options.ribbing) {
-    let rh = options.ribbingHeight * measurements.hpsToHipsBack
+    let rh = options.ribbingHeight * (measurements.hpsToWaistBack + measurements.waistToHips)
     for (let p of ['hem', 'cbHem']) points[p] = points[p].shift(90, rh)
     store.set('ribbingHeight', rh)
   }

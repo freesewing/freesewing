@@ -97,7 +97,10 @@ export const draftRibbing = function (part, length) {
   } = part.shorthand()
   // Don't run this every time, except when sampling
   if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
-    store.set('ribbingHeight', measurements.hpsToHipsBack * options.ribbingHeight)
+    store.set(
+      'ribbingHeight',
+      (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+    )
   }
   let height = store.get('ribbingHeight')
   let gap = 25

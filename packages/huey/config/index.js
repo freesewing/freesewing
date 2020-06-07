@@ -38,7 +38,6 @@ export default {
       'armholeDepthFactor',
       'backNeckCutout',
       'frontArmholeDeeper',
-      'shoulderSlopeReduction',
       'sleeveWidthGuarantee',
       {
         sleevecap: [
@@ -70,8 +69,8 @@ export default {
     'chestCircumference',
     'headCircumference',
     'hipsCircumference',
-    'hpsToHipsBack',
-    'naturalWaistToHip',
+    'hpsToWaistBack',
+    'waistToHips',
     'neckCircumference',
     'shoulderSlope',
     'shoulderToShoulder',
@@ -104,6 +103,7 @@ export default {
     brianFitSleeve: true,
     brianFitCollar: true,
     collarFactor: 4.8,
+    shoulderSlopeReduction: 0,
 
     // Options inherited from Brian
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
@@ -116,7 +116,6 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 10, min: 5, max: 15 },
     shoulderEase: { pct: 0.5, min: -2, max: 6 },
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 40 },
     sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
