@@ -15,17 +15,6 @@ export default (part) => {
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 
-  /*
-  //  Waist shaping
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
-  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
-  points.hem.x = points.hips.x
-  points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip / 3)
-  points.waistCp2 = points.waist.shift(
-    90,
-    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) / 4
-  )
-  */
   // Fit the hips
   points.hem.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
   points.hipsCp2 = new Point(points.hem.x, front ? points.cfWaist.y : points.cbWaist.y)
@@ -34,7 +23,8 @@ export default (part) => {
     // Adapt length for ribbing
     let ribbingHeight
     if (typeof store.get('ribbingHeight') === 'undefined') {
-      ribbingHeight = measurements.hpsToHipsBack * options.ribbingHeight
+      ribbingHeight =
+        (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
       store.set('ribbingHeight', ribbingHeight)
     } else ribbingHeight = store.get('ribbingHeight')
     points.hem = points.hem.shift(90, ribbingHeight)
