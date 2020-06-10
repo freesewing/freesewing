@@ -21,7 +21,7 @@ export default function (part) {
   let chest = (measurements.chestCircumference / 2) * (1 + options.chestEase)
 
   // Length
-  let length = (1 + options.lengthBonus) * measurements.hpsToHipsBack
+  let length = (1 + options.lengthBonus) * (measurements.hpsToWaistBack + measurements.waistToHips)
 
   // Armhole depth
   let arm = shoulders * options.armholeDepthFactor
