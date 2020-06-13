@@ -1,9 +1,13 @@
 export default {
   menswear: [
     'ankleCircumference',
+    'backSeat',
+    'backWaist',
     'bicepsCircumference',
     'chestCircumference',
+    'crossSeam',
     'crotchDepth',
+    'frontCrossSeam',
     'headCircumference',
     'hipsCircumference',
     'hpsToBust',
@@ -27,10 +31,14 @@ export default {
   ],
   womenswear: [
     'ankleCircumference',
+    'backSeat',
+    'backWaist',
     'bicepsCircumference',
     'bustFront',
     'bustSpan',
     'chestCircumference',
+    'frontCrossSeam',
+    'crossSeam',
     'crotchDepth',
     'headCircumference',
     'highBust',
