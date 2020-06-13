@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     measurements,
@@ -18,13 +18,18 @@ export default function(part) {
   points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(
     270,
-    (pocketDepth + 30) * 2 + options.backPocketVerticalOffset * measurements.seatDepth
+    (pocketDepth + 30) * 2 +
+      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
   )
 
-  points.topRight = points.topLeft.shift(0, options.backPocketSize * measurements.seatDepth + 24)
+  points.topRight = points.topLeft.shift(
+    0,
+    options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips) + 24
+  )
   points.bottomRight = points.topRight.shift(
     270,
-    (pocketDepth + 30) * 2 + options.backPocketVerticalOffset * measurements.seatDepth
+    (pocketDepth + 30) * 2 +
+      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
   )
 
   paths.seam = new Path()

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     measurements,
@@ -13,8 +13,10 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let frontPocketSize = options.frontPocketSize * measurements.seatDepth
-  let backPocketSize = options.backPocketSize * measurements.seatDepth
+  let frontPocketSize =
+    options.frontPocketSize * (measurements.crotchDepth - measurements.waistToHips)
+  let backPocketSize =
+    options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips)
 
   points.frontTL = new Point(0, 0)
   points.frontTR = points.frontTL.shift(0, frontPocketSize + 24)

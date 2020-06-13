@@ -1,9 +1,9 @@
 import { CreateCrotchPoints } from './util'
 
-export default function(part) {
+export default function (part) {
   let { options, measurements, Point, Path, points, paths } = part.shorthand()
 
-  let seatDepth = measurements.seatDepth + measurements.seatDepth * options.waistRaise
+  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
   let circumference = measurements.seatCircumference
   let circumference4 = circumference / 4
 
@@ -61,10 +61,7 @@ export default function(part) {
     .line(points.bHipBackOverlap)
     .line(points.bWaistBackOverlap)
     .setRender(false)
-  paths.leg = new Path()
-    .move(points.fLegFrontOverlap)
-    .line(points.bLegBackOverlap)
-    .setRender(false)
+  paths.leg = new Path().move(points.fLegFrontOverlap).line(points.bLegBackOverlap).setRender(false)
   paths.cutout = new Path()
     .move(points.bWaistSide)
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
@@ -83,14 +80,15 @@ export default function(part) {
     points.frontPocketTop = points.fWaistSide
       .shift(
         270,
-        options.frontPocketVerticalOffset * measurements.seatDepth + options.waistBand * 2
+        options.frontPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+          options.waistBand * 2
       )
       .shift(180, options.frontPocketHorizontalOffset * measurements.seatCircumference)
 
     points.frontPocketTop2 = points.frontPocketTop.shift(340, 12)
     points.frontPocketBottom = points.frontPocketTop.shift(
       250,
-      options.frontPocketSize * measurements.seatDepth
+      options.frontPocketSize * (measurements.crotchDepth - measurements.waistToHips)
     )
     points.frontPocketBottom2 = points.frontPocketBottom.shift(340, 12)
 
@@ -109,14 +107,22 @@ export default function(part) {
         points.bWaistSide,
         options.backPocketHorizontalOffset * measurements.seatCircumference
       )
-      .shift(270, options.backPocketVerticalOffset * measurements.seatDepth + options.waistBand * 2)
+      .shift(
+        270,
+        options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+          options.waistBand * 2
+      )
     points.backPocketLeft = points.bWaistBack
       .shiftTowards(
         points.bWaistSide,
         options.backPocketHorizontalOffset * measurements.seatCircumference +
-          options.backPocketSize * measurements.seatDepth
+          options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips)
       )
-      .shift(270, options.backPocketVerticalOffset * measurements.seatDepth + options.waistBand * 2)
+      .shift(
+        270,
+        options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+          options.waistBand * 2
+      )
     points.backPocketRight2 = points.backPocketRight.shift(
       points.backPocketRight.angle(points.backPocketLeft) + 90,
       12

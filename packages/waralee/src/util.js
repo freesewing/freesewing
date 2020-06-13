@@ -1,7 +1,7 @@
 function CreateCrotchPoints(part) {
   let { options, measurements, points } = part.shorthand()
 
-  let seatDepth = measurements.seatDepth + measurements.seatDepth * options.waistRaise
+  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
   let circumference = measurements.seatCircumference
   let circumference4 = circumference / 4
 
