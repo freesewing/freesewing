@@ -5,12 +5,16 @@
 
 let a = 0.5 // arc
 let c = 1 // circumference
-let v = 0.75 // vertical
+let v = 0.65 // vertical
 
 export default {
   // Arc measurements
+  backSeat: a,
+  backWaist: a,
   bustFront: a,
   bustSpan: a,
+  crossSeam: a,
+  frontCrossSeam: a,
   highBustFront: a,
   shoulderToShoulder: a,
   // Circumference measurements
