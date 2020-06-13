@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { points, Path, paths, Point, measurements, options, utils, store } = part.shorthand()
 
   // Fit neck
@@ -16,11 +16,7 @@ export default part => {
         points.hps.shiftTowards(points.shoulder, 10).rotate(-90, points.hps),
         points.cfNeck.y
       )
-      front =
-        new Path()
-          .move(points.hps)
-          .curve_(points.hpsCp2, points.cfNeck)
-          .length() * 2
+      front = new Path().move(points.hps).curve_(points.hpsCp2, points.cfNeck).length() * 2
       collarDelta = front + back - target
     } while (Math.abs(collarDelta) > 1)
   } else {
@@ -52,11 +48,7 @@ export default part => {
   points.armhole = points.armhole.shift(0, bustDelta)
 
   // Adjust waist down to accomodate bust
-  points.cfWaist = new Point(
-    0,
-    measurements.hpsToHipsFront * (1 + options.verticalEase) -
-      measurements.naturalWaistToHip * (1 + options.verticalEase)
-  )
+  points.cfWaist = new Point(0, measurements.hpsToWaistFront * (1 + options.verticalEase))
   points.waist = utils.beamIntersectsY(points.armhole, points.bustSide, points.cfWaist.y)
   points.waist = points.armhole.shiftTowards(points.waist, store.get('backSideSeamLength'))
 
