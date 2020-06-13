@@ -1,46 +1,42 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "theo",
+  name: 'theo',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "menswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'menswear',
+  type: 'pattern',
   difficulty: 4,
-  tags: ["trousers", "bottom"],
+  tags: ['trousers', 'bottom'],
   optionGroups: {
-    fit: ["backRise", "wedge"],
-    style: ["waistbandWidth", "lengthBonus", "legWidth"]
+    fit: ['backRise', 'wedge'],
+    style: ['waistbandWidth', 'lengthBonus', 'legWidth']
   },
   measurements: [
-    "hipsCircumference",
-    "seatCircumference",
-    "inseam",
-    "seatDepth",
-    "kneeCircumference"
+    'crotchDepth',
+    'hipsCircumference',
+    'inseam',
+    'kneeCircumference',
+    'seatCircumference',
+    'waistToHips'
   ],
   dependencies: {},
   inject: {
-    front: "back",
-    waistbandLeft: "waistbandInterfacingLeft",
-    waistbandRight: "waistbandInterfacingRight",
-    waistbandLiningLeft: "waistbandInterfacingLeft",
-    waistbandLiningRight: "waistbandInterfacingRight",
-    flyPiece: "front",
-    flyShield: "flyPiece",
-    sidePiece: "front",
-    frontPocketBag: "front",
-    backOuterPocketBag: "backInnerPocketBag",
-    backPocketInterfacing: "backPocketFacing"
+    front: 'back',
+    waistbandLeft: 'waistbandInterfacingLeft',
+    waistbandRight: 'waistbandInterfacingRight',
+    waistbandLiningLeft: 'waistbandInterfacingLeft',
+    waistbandLiningRight: 'waistbandInterfacingRight',
+    flyPiece: 'front',
+    flyShield: 'flyPiece',
+    sidePiece: 'front',
+    frontPocketBag: 'front',
+    backOuterPocketBag: 'backInnerPocketBag',
+    backPocketInterfacing: 'backPocketFacing'
   },
   hide: [],
-  parts: [
-    "waistbandInterfacingLeft",
-    "waistbandInterfacingRight",
-    "backPocketFacing",
-    "beltLoop"
-  ],
+  parts: ['waistbandInterfacingLeft', 'waistbandInterfacingRight', 'backPocketFacing', 'beltLoop'],
   options: {
     // Constants
 
@@ -53,4 +49,4 @@ export default {
     lengthBonus: { pct: 0, min: -10, max: 10 },
     wedge: { pct: 0, min: -3, max: 3 }
   }
-};
+}

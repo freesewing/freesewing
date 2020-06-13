@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -37,13 +37,16 @@ export default function(part) {
 
   // Points
   points[0] = new Point(0, 0)
-  points[1] = new Point(0, measurements.seatDepth - options.waistbandWidth)
+  points[1] = new Point(
+    0,
+    measurements.crotchDepth - measurements.waistToHips - options.waistbandWidth
+  )
   points[2] = new Point(0, points[1].y + measurements.inseam + store.get('lengthBonus'))
   points[201] = points[2].shift(-90, 10)
   points[202] = new Point(store.get('legWidth') / 4, points[201].y)
   points[203] = points[202].flipX()
   points[3] = new Point(0, points[1].y + measurements.inseam / 2 + 50)
-  points[4] = new Point(0, points[1].y - measurements.seatDepth / 4)
+  points[4] = new Point(0, points[1].y - (measurements.crotchDepth - measurements.waistToHips) / 4)
   points[5] = new Point(10 - measurements.seatCircumference / 8, points[1].y)
   points[9] = new Point(
     points[5].x - measurements.seatCircumference / 16 - 5 + store.get('backReduction'),
@@ -111,22 +114,13 @@ export default function(part) {
   points[-29] = points[29].shift(points[2901].angle(points[29]) - 90, 10)
   points[-2701] = points[2701].shift(180, 10)
 
-  points[-27] = new Path()
-    .move(points[27])
-    ._curve(points[202], points[201])
-    .shiftAlong(10)
+  points[-27] = new Path().move(points[27])._curve(points[202], points[201]).shiftAlong(10)
   points[-28] = points[-27].flipX()
   points[-2702] = points[-2701].flipX()
   points[-30] = points[-29].flipX()
   points[-3001] = points[3001].shift(points[30].angle(points[3001]) + 90, -10)
-  points[-23] = new Path()
-    .move(points[23])
-    ._curve(points[901603], points[901601])
-    .shiftAlong(10)
-  points[-2301] = new Path()
-    .move(points[-23])
-    ._curve(points[-3001], points[-30])
-    .shiftAlong(10)
+  points[-23] = new Path().move(points[23])._curve(points[901603], points[901601]).shiftAlong(10)
+  points[-2301] = new Path().move(points[-23])._curve(points[-3001], points[-30]).shiftAlong(10)
   points[-900] = new Point(points[900].x, points[900].y + 10)
   points[-901603] = points[901603].shift(points[901603].angle(points[901601]) + 90, -10)
   points[-901601] = points[901601].shift(points[901603].angle(points[901601]) + 90, -10)
@@ -242,26 +236,14 @@ export default function(part) {
   // Store length of the inseam and side seam
   store.set(
     'backInseamLength',
-    new Path()
-      .move(points[-2301])
-      .curve_(points[-3001], points[-30])
-      .length() +
-      new Path()
-        .move(points[30])
-        ._curve(points[-2702], points[-28])
-        .length()
+    new Path().move(points[-2301]).curve_(points[-3001], points[-30]).length() +
+      new Path().move(points[30])._curve(points[-2702], points[-28]).length()
   )
   store.set(
     'backSideseamLength',
     points[-2104].dist(points[-26]) +
-      new Path()
-        .move(points[-26])
-        .curve(points[-2601], points[-2901], points[-29])
-        .length() +
-      new Path()
-        .move(points[-29])
-        ._curve(points[-2701], points[-27])
-        .length()
+      new Path().move(points[-26]).curve(points[-2601], points[-2901], points[-29]).length() +
+      new Path().move(points[-29])._curve(points[-2701], points[-27]).length()
   )
 
   // Complete pattern?
