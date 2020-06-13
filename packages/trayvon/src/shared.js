@@ -1,8 +1,9 @@
-export const calculateHelpers = part => {
+export const calculateHelpers = (part) => {
   let { store, measurements, options } = part.shorthand()
 
   let halfLength =
-    (measurements.hpsToHipsBack + measurements.neckCircumference / 2) * (1 + options.lengthBonus)
+    (measurements.hpsToWaistBack + measurements.waistToHips + measurements.neckCircumference / 2) *
+    (1 + options.lengthBonus)
   let backTip = options.tipWidth * 0.7
   if (backTip < options.knotWidth) backTip = options.knotWidth
 
@@ -94,9 +95,5 @@ export const seamAllowance = (part, className) => {
     .line(points.tipRight)
     .offset(sa * -1)
     .attr('class', 'sa ' + className)
-  paths.sa
-    .move(paths.sa.end())
-    .line(points.tipRight)
-    .move(paths.sa.start())
-    .line(points.tipLeft)
+  paths.sa.move(paths.sa.end()).line(points.tipRight).move(paths.sa.start()).line(points.tipLeft)
 }
