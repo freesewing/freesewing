@@ -28,11 +28,11 @@ export default {
   waistCircumference: c,
   wristCircumference: c,
   // Vertical measurements
+  crotchDepth: v,
   hpsToBust: v,
   hpsToWaistBack: v,
   hpsToWaistFront: v,
   inseam: v,
-  seatDepth: v,
   shoulderToElbow: v,
   shoulderToWrist: v,
   waistToFloor: v,

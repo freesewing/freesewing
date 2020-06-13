@@ -12,6 +12,7 @@ export default {
   bustFront: 480,
   bustSpan: 160,
   chestCircumference: 925,
+  crotchDepth: 290,
   bust: 925, // used by plugin-bust
   headCircumference: 565,
   highBust: 865,
@@ -24,7 +25,6 @@ export default {
   kneeCircumference: 380,
   neckCircumference: 340,
   seatCircumference: 1010,
-  seatDepth: 165,
   shoulderSlope: 13,
   shoulderToElbow: 340,
   shoulderToShoulder: 415,
