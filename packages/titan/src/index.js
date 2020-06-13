@@ -20,12 +20,12 @@ const pluginMeasurements = {
         settings.measurements.frontSeatArc = settings.measurements.frontSeat / 2
       }
       if (
-        typeof settings.measurements.naturalWaist !== 'undefined' &&
+        typeof settings.measurements.waistCircumference !== 'undefined' &&
         typeof settings.measurements.backWaist !== 'undefined'
       ) {
         settings.measurements.backWaistArc = settings.measurements.backWaist / 2
         settings.measurements.frontWaistArc =
-          (settings.measurements.naturalWaist - settings.measurements.backWaist) / 2
+          (settings.measurements.waistCircumference - settings.measurements.backWaist) / 2
       }
       if (
         typeof settings.measurements.crossSeam !== 'undefined' &&

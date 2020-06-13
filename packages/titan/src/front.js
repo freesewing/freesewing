@@ -17,7 +17,7 @@ export default (part) => {
 
   points.A = new Point(0, 0)
   points.D = new Point(0, measurements.crotchDepth)
-  points.C = new Point(0, measurements.naturalWaistToSeat)
+  points.C = new Point(0, measurements.waistToSeat)
 
   points.L = new Point(measurements.frontSeatArc * (1 + options.seatEase), 0)
   points.J = new Point(points.L.x, points.C.y)
@@ -51,11 +51,11 @@ export default (part) => {
   points.dart2 = points.dart1.rotate(180, points.S)
 
   points.grainlineTop = points.S.clone()
-  points.floor = new Point(points.grainlineTop.x, measurements.naturalWaistToFloor)
+  points.floor = new Point(points.grainlineTop.x, measurements.waistToFloor)
   points.grainlineBottom = points.floor
 
   let halfKnee = store.get('kneeFront') / 2
-  points.knee = new Point(points.grainlineTop.x, measurements.naturalWaistToKnee)
+  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
   points.kneeOut = points.knee.shift(180, halfKnee)
   points.kneeIn = points.kneeOut.flipX(points.knee)
 

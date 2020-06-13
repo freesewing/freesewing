@@ -17,7 +17,7 @@ export default (part) => {
 
   points.A = new Point(0, 0)
   points.D = new Point(0, measurements.crotchDepth)
-  points.C = new Point(0, measurements.naturalWaistToSeat)
+  points.C = new Point(0, measurements.waistToSeat)
 
   points.H = new Point(-1 * measurements.backSeatArc * (1 + options.seatEase), 0)
   points.F = new Point(points.H.x, points.C.y)
@@ -105,8 +105,8 @@ export default (part) => {
     points.dart2,
     points.T
   )
-  points.knee = new Point(points.grainlineTop.x, measurements.naturalWaistToKnee)
-  points.floor = new Point(points.grainlineTop.x, measurements.naturalWaistToFloor)
+  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
+  points.floor = new Point(points.grainlineTop.x, measurements.waistToFloor)
   points.grainlineBottom = points.floor
 
   let kneeTotal = measurements.kneeCircumference * (1 + options.kneeEase)
