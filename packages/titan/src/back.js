@@ -32,7 +32,7 @@ export default (part) => {
     measurements.seatCircumference * options.crotchExtension
 
   points.I = new Point(
-    crotchWidthOptionA > crotchWidthOptionB ? crotchWidthOptionA : crotchWidthOptionB * -1,
+    crotchWidthOptionA > crotchWidthOptionB ? crotchWidthOptionA * -1 : crotchWidthOptionB * -1,
     points.D.y
   )
 
