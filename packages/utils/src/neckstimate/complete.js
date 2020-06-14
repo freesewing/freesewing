@@ -5,7 +5,7 @@ export default function complete(m) {
   m.bust = m.chestCircumference
 
   // Added by plugin-measurements:
-  m.backCrossSeam = m.crossSeam = m.frontCrossSeam
+  m.backCrossSeam = m.crossSeam - m.frontCrossSeam
   m.backSeatArc = m.backSeat / 2
   m.backWaistArc = m.backWaist / 2
   if (m.bust && m.bustFront) m.bustBack = m.bust - m.bustFront

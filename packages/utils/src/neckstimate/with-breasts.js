@@ -17,7 +17,7 @@ export default complete({
   bustSpan: 160,
   chestCircumference: 925,
   crossSeam: 740,
-  crotchDepth: 290,
+  crotchDepth: 270,
   frontCrossSeam: 370,
   headCircumference: 565,
   highBust: 865,
