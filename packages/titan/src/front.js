@@ -1,220 +1,94 @@
 export default (part) => {
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet
-  } = part.shorthand()
-
-  points.A = new Point(0, 0)
-  points.D = new Point(0, measurements.crotchDepth)
-  points.C = new Point(0, measurements.waistToSeat)
-
-  points.L = new Point(measurements.frontSeatArc * (1 + options.seatEase), 0)
-  points.J = new Point(points.L.x, points.C.y)
-  points.K = new Point(points.L.x, points.D.y)
-  points.M = points.K.shift(
-    0,
-    measurements.seatCircumference * options.crotchExtension * options.frontCrotchExtension
-  )
-  points.X = points.K.shiftFractionTowards(points.L, options.flySlopeHinge)
-  points.Q = points.L.shift(180, points.X.y * options.flySlopeFactor)
-  points.R = points.Q.shift(
-    180,
-    measurements.frontWaistArc * (1 + options.waistEase) * (1 + options.frontWaistDart)
-  )
-  points.U = points.Q.shift(90, measurements.frontWaistArc * options.frontWaistRise)
-
-  points.flyCurveMax = utils.beamsIntersect(points.U, points.X, points.M, points.M.shift(165, 10))
-  points.flyCurveStart = points.X.shiftFractionTowards(points.flyCurveMax, options.flyCurveStart)
-  points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(
-    points.flyCurveMax,
-    options.flyCurveBend
-  )
-  points.flyCurveCp1 = points.M.shiftFractionTowards(points.flyCurveMax, options.flyCurveBend)
-
-  points.CCp1 = points.C.shift(90, points.C.y / 2)
-  points.Z = points.D.shiftFractionTowards(points.M, 0.52)
-
-  points.S = utils.beamsIntersect(points.Z, points.Z.shift(90, 10), points.R, points.U)
-  points.dartTip = points.S.shift(-90, points.X.y * options.frontWaistDartLength)
-  points.dart1 = points.S.shift(0, (measurements.frontWaistArc * options.frontWaistDart) / 2)
-  points.dart2 = points.dart1.rotate(180, points.S)
-
-  points.grainlineTop = points.S.clone()
-  points.floor = new Point(points.grainlineTop.x, measurements.waistToFloor)
-  points.grainlineBottom = points.floor
-
-  let halfKnee = store.get('kneeFront') / 2
-  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
-  points.kneeOut = points.knee.shift(180, halfKnee)
-  points.kneeIn = points.kneeOut.flipX(points.knee)
-
-  // Not shaping the ankle as that's a style choice. Just go straight down from the knee.
-  points.floorOut = points.floor.shift(180, halfKnee)
-  points.floorIn = points.floorOut.flipX(points.floor)
-
-  points.kneeInCp2 = points.floorIn.shiftFractionTowards(points.kneeIn, 1 + options.inseamCurve)
-  points.kneeOutCp1 = points.floorOut.shiftFractionTowards(
-    points.kneeOut,
-    1 + options.outseamCurveKnee
-  )
-
-  points.CCp2 = points.CCp1.rotate(180, points.C)
-
-  // Quick method to draw the path
-  const seamPath = () =>
-    new Path()
-      .move(points.R)
-      ._curve(points.CCp1, points.C)
-      .curve(points.CCp2, points.kneeOutCp1, points.kneeOut)
-      .line(points.floorOut)
-      .line(points.floorIn)
-      .line(points.kneeIn)
-      .curve_(points.kneeInCp2, points.M)
-      .curve(points.flyCurveCp1, points.flyCurveCp2, points.flyCurveStart)
-      .line(points.U)
-      .line(points.dart1)
-      .line(points.dartTip)
-      .line(points.dart2)
-      .line(points.R)
-      .close()
-
-  // Path before fitting cross seam
-  //paths.origSeam = seamPath()
-
-  // Should we fit the cross seam?
-  if (options.fitCrossSeam && options.fitFrontCrossSeam) {
-    // Helper method to calculate the actual length of the cross seam
-    const crossSeamDelta = () => {
-      let len = new Path()
-        .move(points.U)
-        .line(points.flyCurveStart)
-        .curve(points.flyCurveCp2, points.flyCurveCp1, points.M)
-        .length()
-      return len - measurements.frontCrossSeam
+  /*
+   * Helper method to draw the inseam path
+   */
+  const drawInseam = () =>
+    options.fitKnee
+      ? new Path().move(points.floorIn).line(points.kneeIn).curve_(points.kneeInCp2, points.fork)
+      : new Path().move(points.floorIn).curve_(points.kneeInCp2, points.fork)
+  /*
+   * Helper method to draw the outseam path
+   */
+  const drawOutseam = () => {
+    if (options.fitKnee) {
+      if (points.waistOut.x < points.seatOut.x)
+        return new Path()
+          .move(points.waistOut)
+          .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
+          .line(points.floorOut)
+      else
+        return new Path()
+          .move(points.waistOut)
+          ._curve(points.seatOutCp1, points.seatOut)
+          .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
+          .line(points.floorOut)
+    } else {
+      if (points.waistOut.x < points.seatOut.x)
+        return new Path()
+          .move(points.waistOut)
+          .curve(points.seatOut, points.kneeOutCp1, points.floorOut)
+      else
+        return new Path()
+          .move(points.waistOut)
+          ._curve(points.seatOutCp1, points.seatOut)
+          .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
     }
-    let rotate = ['flyCurveStart', 'X', 'U', 'L', 'Q', 'dart1', 'dart2', 'S', 'dartTip', 'R']
-    // Store the original flycurve
-    const flyCurvePreFit = new Path()
-      .move(points.flyCurveStart)
-      .curve(points.flyCurveCp2, points.flyCurveCp1, points.M)
-    // Get to work
-    let delta = crossSeamDelta()
-    let run = 0
-    do {
-      run++
-      for (const i of rotate)
-        points[i] = points[i].rotate((delta / -5) * options.crossSeamFitBalance, points.C)
-      points.M = points.flyCurveCp1.shiftOutwards(
-        points.M,
-        (delta / -1) * (1 - options.crossSeamFitBalance)
-      )
-      points.flyCurveMax = utils.beamsIntersect(
-        points.U,
-        points.X,
-        points.M,
-        points.M.shift(165, 10)
-      )
-      points.flyCurveStart = points.X.shiftFractionTowards(
-        points.flyCurveMax,
-        options.flyCurveStart
-      )
-      points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(
-        points.flyCurveMax,
-        options.flyCurveBend
-      )
-      points.flyCurveCp1 = points.M.shiftFractionTowards(points.flyCurveMax, options.flyCurveBend)
-
-      delta = crossSeamDelta()
-    } while (Math.abs(delta) > 0.5 && run < 5)
-    // Now assure the horizontal width is respected
-    points.seatCf = utils.beamsIntersect(
-      points.U,
-      points.flyCurveStart,
-      points.C,
-      points.C.shift(points.R.angle(points.U), 100)
-    )
-    let angle = points.R.angle(points.U)
-    if (points.seatCf.y > points.flyCurveStart.y) {
-      points.seatCf = utils.lineIntersectsCurve(
-        points.C,
-        points.C.shift(angle, measurements.backSeat),
-        points.flyCurveStart,
-        points.flyCurveCp2,
-        points.flyCurveCp1,
-        points.M
-      )
-    }
-    let distance = measurements.frontSeatArc * (1 + options.seatEase) - points.seatCf.dist(points.C)
-    for (const i of ['CCp1', 'C', 'CCp2']) points[i] = points[i].shift(180, distance)
   }
-  //paths.intermediateSeam = seamPath().attr('class', 'various')
 
   /*
-   * With the cross seams matched back and front,
-   * we still have to match the inseam and outseam
-   * Here are first some helper methods
+   * Helper method to draw the outline path
    */
-  const inseamDelta = () => {
-    store.set(
-      'inseamFront',
-      new Path()
-        .move(points.M)
-        ._curve(points.kneeInCp2, points.kneeIn)
-        .line(points.floorIn)
-        .length()
+  const drawPath = () =>
+    drawOutseam()
+      .line(points.floorIn)
+      .join(drawInseam())
+      .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
+      .line(points.waistIn)
+      .line(points.waistOut)
+      .close()
+  /*
+   * Helper method to calculate the length of the crotch seam
+   */
+  const crotchSeamDelta = () =>
+    new Path()
+      .move(points.waistIn)
+      .line(points.crotchSeamCurveStart)
+      .curve(points.crotchSeamCurveCp2, points.crotchSeamCurveCp1, points.fork)
+      .length() - measurements.frontCrossSeam
+  /*
+   * Helper method to (re)draw the crotch seam
+   */
+  const drawCrotchSeam = () => {
+    points.crotchSeamCurveStart = points.waistIn.shiftFractionTowards(
+      points.cfSeat,
+      options.crotchSeamCurveStart
     )
-    return store.get('inseamFront') - store.get('inseamBack')
-  }
-  const outseamDelta = () => {
-    store.set(
-      'outseamFront',
-      new Path()
-        .move(points.R)
-        ._curve(points.CCp1, points.C)
-        .curve(points.CCp2, points.kneeOutCp1, points.kneeOut)
-        .line(points.floorOut)
-        .length()
+    points.crotchSeamCurveMax = utils.beamsIntersect(
+      points.waistIn,
+      points.cfSeat,
+      points.fork,
+      points.fork.shift(0, 666)
     )
-    return store.get('outseamFront') - store.get('outseamBack')
+    points.crotchSeamCurveCp1 = points.fork.shiftFractionTowards(
+      points.crotchSeamCurveMax,
+      options.crotchSeamCurveBend
+    )
+    points.crotchSeamCurveCp2 = points.crotchSeamCurveStart.shiftFractionTowards(
+      points.crotchSeamCurveMax,
+      options.crotchSeamCurveBend
+    )
   }
-  const adaptSeam = (side) => {
-    const out = side === 'out' ? true : false
-    let rotate = [
-      'dart1',
-      'dart2',
-      'S',
-      'dartTip',
-      'U',
-      'Q',
-      'X',
-      'flyCurveStart',
-      'flyCurveCp1',
-      'flyCurveCp2'
-    ]
-    rotate.push(out ? 'R' : 'M')
-    const deltaMethod = out ? outseamDelta : inseamDelta
-    let run = 0
-    let delta = deltaMethod()
-    do {
-      for (const i of rotate)
-        points[i] = points[i].rotate((delta / 10) * (out ? 1 : -1), points[out ? 'M' : 'R'])
-      run++
-      delta = deltaMethod()
-    } while (Math.abs(delta) > 1 && run < 20)
-  }
-  const adaptOutseam = (delta) => adaptSeam('out')
-  const adaptInseam = (delta) => adaptSeam('in')
+  /*
+   * Helper method to calculate the inseam delta
+   */
+  const inseamDelta = () => drawInseam().length() - store.get('inseamBack')
+  /*
+   * Helper method to calculate the outseam delta
+   */
+  const outseamDelta = () => drawOutseam().length() - store.get('outseamBack')
+  /*
+   * Helper method to lengthen/shorten both inseam and outseam
+   */
   const adaptInseamAndOutseam = () => {
     let shift = [
       'kneeInCp2',
@@ -235,15 +109,144 @@ export default (part) => {
       delta = seamDelta()
     } while (Math.abs(delta) > 1 && run < 10)
   }
-
+  /*
+   * Helper method to determine the delta common when both inseam and outseam
+   * are either too long or too short
+   */
   const seamDelta = () => {
     let inseam = inseamDelta()
     let outseam = outseamDelta()
     return Math.abs(inseam) > Math.abs(outseam) ? outseam : inseam
   }
+  /*
+   * Helper method that can fit either inseam or outseam
+   */
+  const adaptSeam = (side) => {
+    const out = side === 'out' ? true : false
+    let rotate = [
+      'cfSeat',
+      'crotchSeamCurveCp1',
+      'crotchSeamCurveCp2',
+      'crotchSeamCurveStart',
+      'waistIn',
+      'cfWaist',
+      'waistOut'
+    ]
+    rotate.push(out ? 'seatOut' : 'fork')
+    const deltaMethod = out ? outseamDelta : inseamDelta
+    let run = 0
+    let delta = deltaMethod()
+    do {
+      for (const i of rotate)
+        points[i] = points[i].rotate(
+          (delta / 10) * (out ? 1 : -1),
+          points[out ? 'fork' : 'seatOut']
+        )
+      run++
+      delta = deltaMethod()
+    } while (Math.abs(delta) > 1 && run < 20)
+  }
+  const adaptOutseam = (delta) => adaptSeam('out')
+  const adaptInseam = (delta) => adaptSeam('in')
+
+  let {
+    points,
+    Point,
+    paths,
+    Path,
+    measurements,
+    options,
+    complete,
+    paperless,
+    store,
+    macro,
+    utils,
+    snippets,
+    Snippet
+  } = part.shorthand()
+
+  // Fuck this noise, I'm starting over
+  points.waistX = new Point(measurements.frontWaistArc * (1 + options.waistEase), 0)
+  points.upperLegY = new Point(0, measurements.waistToUpperLeg)
+  points.seatX = new Point(measurements.frontSeatArc * (1 + options.seatEase), 0)
+  points.seatY = new Point(0, measurements.waistToSeat)
+  points.seatOut = points.seatY
+  points.cfSeat = new Point(points.seatX.x, points.seatY.y)
+
+  // Determine fork width
+  points.fork = new Point(
+    measurements.frontSeatArc * (1 + options.seatEase) * 1.25,
+    points.upperLegY.y * (1 + options.crotchDrop)
+  )
+
+  // Grainline location, map out center of knee and floor
+  points.grainlineTop = points.upperLegY.shiftFractionTowards(
+    points.fork,
+    options.grainlinePosition
+  )
+  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
+  points.floor = new Point(
+    points.grainlineTop.x,
+    measurements.waistToFloor * (1 + options.lengthBonus)
+  )
+  points.grainlineBottom = points.floor
+
+  // Figure out width at the knee
+  let halfKnee = store.get('kneeFront') / 2
+  points.kneeOut = points.knee.shift(180, halfKnee)
+  points.kneeIn = points.kneeOut.flipX(points.knee)
 
   /*
-   * Now it's easy :)
+   * Not shaping the ankle as that's a style choice.
+   * As this is a block, just go straight down from the knee.
+   */
+  points.floorOut = points.floor.shift(180, halfKnee)
+  points.floorIn = points.floorOut.flipX(points.floor)
+
+  // Control points to shape the legs towards the seat
+  points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
+  points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
+  points.seatOutCp1 = points.seatOut.shift(90, points.seatOut.y / 2)
+  points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
+
+  // Balance the waist
+  if (points.cfSeat.x > points.waistX.x) {
+    let delta = points.waistX.dx(points.cfSeat)
+    let width = points.waistX.x
+    points.waistOut = new Point(delta * options.waistBalance, 0)
+    points.waistIn = points.waistOut.shift(0, width)
+    points.cfWaist = points.waistIn
+  }
+
+  // Draw initial crotch seam
+  drawCrotchSeam()
+
+  // Uncomment this to see the outline prior to fitting the crotch seam
+  // paths.seam1 = drawPath().attr('class', 'dashed lining')
+
+  if (options.fitCrossSeam && options.fitFrontCrossSeam) {
+    let delta = crotchSeamDelta()
+    let rotate = ['waistIn', 'waistOut', 'cfWaist']
+    let run = 0
+    do {
+      run++
+      // Remedy A: Slash and spread
+      for (const i of rotate) points[i] = points[i].rotate(delta / -15, points.seatOut)
+      // Remedy B: Nudge the fork inwards/outwards
+      points.fork = points.fork.shift(180, delta / 5)
+      drawCrotchSeam()
+      delta = crotchSeamDelta()
+      // Uncomment the line below this to see all iterations
+      // paths[`try${run}`] = drawPath().attr('class', 'dotted')
+    } while (Math.abs(delta) > 1 && run < 15)
+  }
+
+  // Uncomment this to see the outline prior to fitting the inseam & outseam
+  // paths.seam2 = drawPath().attr('class', 'dotted interfacing')
+
+  /*
+   * With the cross seams matched back and front,
+   * all that's left is to match the inseam and outseam
    */
 
   // When both are too short/long, adapt the leg length
@@ -254,9 +257,15 @@ export default (part) => {
   adaptOutseam(outseamDelta())
   adaptInseam(inseamDelta())
 
-  paths.seam = seamPath().attr('class', 'fabric')
+  // Changing one will ever so slightly impact the other, so let's run both again to be sure
+  adaptOutseam(outseamDelta())
+  adaptInseam(inseamDelta())
+
+  // Seamline
+  paths.seam = drawPath().attr('class', 'fabric')
 
   if (complete) {
+    points.grainlineTop.y = points.waistIn.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom
@@ -265,24 +274,6 @@ export default (part) => {
     if (paperless) {
     }
   }
-
-  /*
-  // Some checks for size
-  points.tmp1 = utils.lineIntersectsCurve(
-    points.C, points.C.shift(points.R.angle(points.U), measurements.backSeat),
-    points.flyCurveStart, points.flyCurveCp2, points.flyCurveCp1, points.M)
-  macro('ld', {
-    from: points.C,
-    to: points.tmp1
-  })
-
-  macro('ld', {
-    from: points.R,
-    to: points.U,
-    text: utils.units(points.R.dist(points.U) - points.dart2.dist(points.dart1)) + ' (actual length without dart)',
-    d: 20
-  })
-  */
 
   return part
 }

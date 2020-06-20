@@ -1,4 +1,83 @@
 export default (part) => {
+  /*
+   * Helper method to draw the inseam path
+   */
+  const drawInseam = () =>
+    options.fitKnee
+      ? new Path().move(points.fork)._curve(points.kneeInCp1, points.kneeIn).line(points.floorIn)
+      : new Path().move(points.fork)._curve(points.kneeInCp1, points.floorIn)
+  /*
+   * Helper method to draw the outseam path
+   */
+  const drawOutseam = () => {
+    if (options.fitKnee) {
+      if (points.waistOut.x > points.seatOut.x)
+        return new Path()
+          .move(points.floorOut)
+          .line(points.kneeOut)
+          .curve(points.kneeOutCp2, points.seatOut, points.waistOut)
+      else
+        return new Path()
+          .move(points.floorOut)
+          .line(points.kneeOut)
+          .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
+          .curve_(points.seatOutCp2, points.waistOut)
+    } else {
+      if (points.waistOut.x > points.seatOut.x)
+        return new Path()
+          .move(points.floorOut)
+          .curve(points.kneeOutCp2, points.seatOut, points.waistOut)
+      else
+        return new Path()
+          .move(points.floorOut)
+          .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
+          .curve_(points.seatOutCp2, points.waistOut)
+    }
+  }
+  /*
+   * Helper method to draw the outline path
+   */
+  const drawPath = () =>
+    drawInseam()
+      .line(points.floorOut)
+      .join(drawOutseam())
+      .line(points.waistIn)
+      .line(points.crossSeamCurveStart)
+      .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+      .close()
+  /*
+   * Helper method to calculate the length of the cross seam
+   */
+  const crossSeamDelta = () =>
+    new Path()
+      .move(points.waistIn)
+      .line(points.crossSeamCurveStart)
+      .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+      .length() - measurements.backCrossSeam
+  /*
+   * Helper method to (re)draw the cross seam
+   */
+  const drawCrossSeam = () => {
+    points.crossSeamCurveStart = points.waistIn.shiftFractionTowards(
+      points.cbSeat,
+      options.crossSeamCurveStart
+    )
+    points.crossSeamCurveMax = utils.beamsIntersect(
+      points.waistIn,
+      points.cbSeat,
+      points.fork,
+      points.fork.shift(0, 666)
+    )
+    points.crossSeamCurveCp1 = points.crossSeamCurveStart.shiftFractionTowards(
+      points.crossSeamCurveMax,
+      options.crossSeamCurveBend
+    )
+    points.crossSeamCurveCp2 = points.fork.shiftFractionTowards(
+      points.crossSeamCurveMax,
+      options.crossSeamCurveBend
+    )
+  }
+
   let {
     points,
     Point,
@@ -15,243 +94,103 @@ export default (part) => {
     Snippet
   } = part.shorthand()
 
-  points.A = new Point(0, 0)
-  points.D = new Point(0, measurements.crotchDepth)
-  points.C = new Point(0, measurements.waistToSeat)
+  // Fuck this noise, I'm starting over
+  points.waistX = new Point(-1 * measurements.backWaistArc * (1 + options.waistEase), 0)
+  points.upperLegY = new Point(0, measurements.waistToUpperLeg)
+  points.seatX = new Point(-1 * measurements.backSeatArc * (1 + options.seatEase), 0)
+  points.seatY = new Point(0, measurements.waistToSeat)
+  points.seatOut = points.seatY
+  points.cbSeat = new Point(points.seatX.x, points.seatY.y)
 
-  points.H = new Point(-1 * measurements.backSeatArc * (1 + options.seatEase), 0)
-  points.F = new Point(points.H.x, points.C.y)
-
-  // For the widest point of our trouser block, we'll use whichever is widest:
-  // A: 1.25 times the (backSeatArc + ease)
-  // B: (upperLegCircumference + ease) - ((frontSeatArc + ease) * (1 + crotchExtension))
-  let crotchWidthOptionA = measurements.backSeatArc * (1 + options.seatEase) * 1.25
-  let crotchWidthOptionB =
-    measurements.upperLegCircumference * (1 + options.upperLegEase) -
-    measurements.frontSeatArc * (1 + options.seatEase) -
-    measurements.seatCircumference * options.crotchExtension
-
-  points.I = new Point(
-    crotchWidthOptionA > crotchWidthOptionB ? crotchWidthOptionA * -1 : crotchWidthOptionB * -1,
-    points.D.y
+  // Determine fork location
+  points.fork = new Point(
+    measurements.backSeatArc * (1 + options.seatEase) * -1.25,
+    points.upperLegY.y * (1 + options.crotchDrop)
   )
 
-  points.G = new Point(points.H.x, points.D.y)
-  points.X = points.G.shift(90, measurements.crotchDepth / 2)
-
-  points.N = points.H.shift(0, measurements.crotchDepth * options.backWaistFactor)
-  points.O = points.N.shift(
-    0,
-    measurements.backWaistArc * (1 + options.waistEase) * (1 + options.backWaistDart)
-  )
-
-  // Back dart
-  points.P = points.N.shift(0, measurements.backWaistArc * 0.56)
-  points.dartTip = points.P.shift(-90, measurements.crotchDepth * options.backWaistDartLength)
-  points.theoreticDart1 = points.P.shift(0, (measurements.backWaistArc * options.backWaistDart) / 2)
-  points.theoreticDart2 = points.theoreticDart1.flipX(points.P)
-
-  points.T = points.N.shift(90, measurements.crotchDepth * options.backRise)
-
-  points.extendedBackSeam = utils.beamsIntersect(points.I, points.D, points.T, points.X)
-  points.g = utils.beamsIntersect(
-    points.G,
-    points.G.shift(135, 10),
-    points.extendedBackSeam,
-    points.X
-  )
-  points.f = utils.beamsIntersect(points.C, points.F, points.T, points.X)
-  points.crossSeamCurveStart = points.f.shiftFractionTowards(
-    points.extendedBackSeam,
-    options.crossSeamCurveStart
-  )
-  points.crossSeamCurveCp = points.crossSeamCurveStart.shiftFractionTowards(
-    points.extendedBackSeam,
-    options.crossSeamCurveBend
-  )
-
-  // To insert a dart into a curve, we need to split the curve in two halves
-  // Rather than split the whole curve, we split one that is what we'd end
-  // up with with a closed dart, then shift the control points by half a dart.
-  let dartWidth = points.theoreticDart1.dx(points.theoreticDart2) / 2
-  let closedDartCurveEndpoint = points.T.shift(0, dartWidth)
-  // Insert dart into waist seamline
-  points.midDart = utils.curveIntersectsX(
-    points.O,
-    points.theoreticDart1,
-    closedDartCurveEndpoint,
-    closedDartCurveEndpoint,
-    points.dartTip.x
-  )
-  points.dart1 = new Point(points.theoreticDart1.x, points.midDart.y)
-  points.dart2 = new Point(points.theoreticDart2.x, points.midDart.y)
-  // Two halves
-  let [pathA, pathB] = new Path()
-    .move(points.O)
-    .curve_(points.theoreticDart1, closedDartCurveEndpoint)
-    .attr('class', 'stroke-xl lining')
-    .split(points.midDart)
-  // Extract control points from splitted curve
-  points.OCp2 = pathA.ops[1].cp1
-  points.dart1Cp1 = pathA.ops[1].cp2.shift(0, dartWidth / 2)
-  points.dart2Cp2 = pathB.ops[1].cp1.shift(180, dartWidth / 2)
-
-  points.CCp2 = points.C.shiftFractionTowards(points.A, 0.3)
-
-  points.W = points.D.shiftFractionTowards(points.I, options.grainlineBackFactor)
-  points.grainlineTop = utils.beamsIntersect(
-    points.W,
-    points.W.shift(90, 10),
-    points.dart2,
-    points.T
+  // Grainline location, map out center of knee and floor
+  points.grainlineTop = points.upperLegY.shiftFractionTowards(
+    points.fork,
+    options.grainlinePosition
   )
   points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
-  points.floor = new Point(points.grainlineTop.x, measurements.waistToFloor)
+  points.floor = new Point(
+    points.grainlineTop.x,
+    measurements.waistToFloor * (1 + options.lengthBonus)
+  )
   points.grainlineBottom = points.floor
 
+  // Figure out width at the knee
   let kneeTotal = measurements.kneeCircumference * (1 + options.kneeEase)
-  if (false && !options.fitKnee) {
+  if (!options.fitKnee) {
     // Based the knee width on the seat, unless that ends up being less
-    let altKneeTotal = measurements.frontSeat * (1 + options.kneeEase)
+    let altKneeTotal = measurements.frontSeat
     if (altKneeTotal > kneeTotal) kneeTotal = altKneeTotal
   }
+  // Store for re-use in front part
   store.set('kneeTotal', kneeTotal)
   store.set('kneeBack', kneeTotal * options.legBalance)
   store.set('kneeFront', kneeTotal * (1 - options.legBalance))
   let halfKnee = store.get('kneeBack') / 2
-
   points.kneeOut = points.knee.shift(0, halfKnee)
   points.kneeIn = points.kneeOut.flipX(points.knee)
 
-  // Not shaping the ankle as that's a style choice. Just go straight down from the knee.
+  /*
+   * Not shaping the ankle as that's a style choice.
+   * As this is a block, just go straight down from the knee.
+   */
   points.floorOut = points.floor.shift(0, halfKnee)
   points.floorIn = points.floorOut.flipX(points.floor)
 
-  points.kneeInCp1 = points.floorIn.shiftFractionTowards(points.kneeIn, 1 + options.inseamCurve)
-  points.kneeOutCp2 = points.floorOut.shiftFractionTowards(
-    points.kneeOut,
-    1 + options.outseamCurveKnee
-  )
-  points.CCp1 = points.A.shiftFractionTowards(points.C, 1 + options.outseamCurveSeat)
+  // Control points to shape the legs towards the seat
+  points.kneeInCp1 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
+  points.kneeOutCp2 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
+  points.seatOutCp1 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
+  points.seatOutCp2 = points.seatOut.shift(90, points.seatOut.y / 2)
 
-  // Path prior to fitting the cross seam
+  // Balance the waist
+  if (points.cbSeat.x < points.waistX.x) {
+    let delta = points.cbSeat.dx(points.waistX)
+    let width = points.waistX.x
+    points.waistIn = points.waistX.shift(180, delta * (1 - options.waistBalance))
+    points.waistOut = points.waistIn.shift(180, width)
+  }
+
+  // Cross seam
+  drawCrossSeam()
+
   /*
-  paths.origSeam = new Path()
-    .move(points.T)
-    .line(points.crossSeamCurveStart)
-    .curve_(points.crossSeamCurveCp, points.I)
-    ._curve(points.kneeInCp1, points.kneeIn)
-    .line(points.floorIn)
-    .line(points.floorOut)
-    .line(points.kneeOut)
-    .curve(points.kneeOutCp2, points.CCp1, points.C)
-    .curve_(points.CCp2, points.O)
-    .curve(points.OCp2, points.dart1Cp1, points.dart1)
-    .line(points.dartTip)
-    .line(points.dart2)
-    .curve_(points.dart2Cp2, points.T)
-    .attr('class', 'fabric')
-  */
+   * Uncomment the line below to see the seam prior to fitting the cross seam
+   */
+  //paths.seam1 = drawPath().attr('class', 'dashed lining')
 
   // Should we fit the cross seam?
   if (options.fitCrossSeam && options.fitBackCrossSeam) {
-    // Helper method to calculate the actual length of the cross seam
-    const crossSeamDelta = () => {
-      let len = new Path()
-        .move(points.T)
-        .line(points.crossSeamCurveStart)
-        .curve_(points.crossSeamCurveCp, points.I)
-        .length()
-      return len - measurements.backCrossSeam
-    }
-    // Clone some points
-    points.fPreSpread = points.f.clone()
-    points.fPostSpread = points.f.clone()
-    points.CPreShift = points.C.clone()
-    // Points involved in the slash and rotate
-    let rotate = [
-      'fPostSpread',
-      'T',
-      'midDart',
-      'dart1',
-      'dart2',
-      'dartTip',
-      'dart2Cp2',
-      'dart1Cp1',
-      'OCp2',
-      'O',
-      'CCp1',
-      'CCp2'
-    ]
-    // Get to work
+    let rotate = ['waistIn', 'waistOut']
     let delta = crossSeamDelta()
     let run = 0
     do {
       run++
-      for (const i of rotate)
-        points[i] = points[i].rotate((delta / 5) * options.crossSeamFitBalance, points.C)
-      points.I = points.I.shift(0, (delta / 2.5) * (1 - options.crossSeamFitBalance))
-      points.extendedBackSeam = utils.beamsIntersect(
-        points.I,
-        points.D,
-        points.T,
-        points.crossSeamCurveStart
-      )
-      points.f = utils.beamsIntersect(points.C, points.F, points.T, points.crossSeamCurveStart)
-      points.crossSeamCurveStart = points.f.shiftFractionTowards(
-        points.extendedBackSeam,
-        options.crossSeamCurveStart
-      )
-      points.crossSeamCurveCp = points.crossSeamCurveStart.shiftFractionTowards(
-        points.extendedBackSeam,
-        options.crossSeamCurveBend
-      )
+      // Remedy A: Slash and spread
+      for (const i of rotate) points[i] = points[i].rotate(delta / 15, points.seatOut)
+      // Remedy B: Nudge the fork inwards/outwards
+      points.fork = points.fork.shift(0, delta / 5)
+      drawCrossSeam()
       delta = crossSeamDelta()
-    } while (Math.abs(delta) > 0.5 && run < 50)
-    // Now assure the horizontal width is respected
-    let angle = points.C.angle(points.fPostSpread)
-    points.tmp = utils.beamsIntersect(
-      points.C,
-      points.fPostSpread,
-      points.T,
-      points.extendedBackSeam
-    )
-    let distance = measurements.backSeatArc * (1 + options.seatEase) - points.tmp.dist(points.C)
-    for (const i of ['C', 'CCp1', 'CCp2']) points[i] = points[i].shift(angle - 180, distance)
+      // Uncomment the line beloe this to see all iterations
+      // paths[`try${run}`] = drawPath().attr('class', 'dotted')
+    } while (Math.abs(delta) > 1 && run < 15)
   }
 
   // Store inseam & outseam length
-  store.set(
-    'inseamBack',
-    new Path().move(points.I)._curve(points.kneeInCp1, points.kneeIn).line(points.floorIn).length()
-  )
-  store.set(
-    'outseamBack',
-    new Path()
-      .move(points.O)
-      ._curve(points.CCp2, points.C)
-      .curve(points.CCp1, points.kneeOutCp2, points.kneeOut)
-      .line(points.floorOut)
-      .length()
-  )
+  store.set('inseamBack', drawInseam().length())
+  store.set('outseamBack', drawOutseam().length())
 
-  paths.seam = new Path()
-    .move(points.T)
-    .line(points.crossSeamCurveStart)
-    .curve_(points.crossSeamCurveCp, points.I)
-    ._curve(points.kneeInCp1, points.kneeIn)
-    .line(points.floorIn)
-    .line(points.floorOut)
-    .line(points.kneeOut)
-    .curve(points.kneeOutCp2, points.CCp1, points.C)
-    .curve_(points.CCp2, points.O)
-    .curve(points.OCp2, points.dart1Cp1, points.dart1)
-    .line(points.dartTip)
-    .line(points.dart2)
-    .curve_(points.dart2Cp2, points.T)
-    .attr('class', 'fabric')
+  // Paths
+  paths.seam = drawPath()
 
   if (complete) {
+    points.grainlineTop.y = points.waistOut.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom
@@ -260,21 +199,6 @@ export default (part) => {
     if (paperless) {
     }
   }
-
-  /*
-  // Some checks for size
-  macro('ld', {
-    from: points.T,
-    to: points.O,
-    d: 20,
-    text: utils.units(points.T.dist(points.O) - points.dart1.dist(points.dart2)) + ' (actual length without dart - although in a straight line)'
-  })
-  macro('ld', {
-    from: points.tmp,
-    to: points.C,
-    text: utils.units(points.tmp.dist(points.C)) + ' (on the seat line)'
-  })
-  */
 
   return part
 }
