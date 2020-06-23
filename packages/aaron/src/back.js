@@ -68,7 +68,7 @@ export default function (part) {
       .attr('data-text', ':\n')
       .attr('data-text', 'width')
       .attr('data-text', ':')
-      .attr('data-text', units(sa * 6))
+      .attr('data-text', units(sa * 6 || 60))
       .attr('data-text', '\n')
       .attr('data-text', 'length')
       .attr('data-text', ':')
@@ -82,7 +82,7 @@ export default function (part) {
       .attr('data-text', '\n')
       .attr('data-text', 'length')
       .attr('data-text', ':')
-      .attr('data-text', units(neckOpeningLength * 0.95 + 2 * sa))
+      .attr('data-text', units(neckOpeningLength * 2 * 0.95 + 2 * sa))
       .attr('data-text-lineheight', 6)
 
     macro('cutonfold', {
