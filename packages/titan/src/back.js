@@ -195,6 +195,7 @@ export default (part) => {
       from: points.grainlineTop,
       to: points.grainlineBottom
     })
+    macro('scalebox', { at: points.knee })
 
     if (paperless) {
     }
