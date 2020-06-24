@@ -21,6 +21,7 @@ export default {
   neckCircumference: c,
   underbust: c,
   // Vertical measurements
+  crotchDepth: v,
   hpsToBust: v,
   hpsToWaistBack: v,
   hpsToWaistFront: v,
@@ -32,12 +33,11 @@ export default {
   // Other
   backSeat: 0.6,
   backWaist: 0.85,
-  crossSeam: 0.4,
-  crotchDepth: 0.3,
-  frontCrossSeam: 0.2,
+  crossSeam: 0.6,
+  frontCrossSeam: 0.3,
   headCircumference: 0.35,
   inseam: 0.25,
-  kneeCircumference: 0.55,
+  kneeCircumference: 0.65,
   seatCircumference: 0.6,
   shoulderToElbow: 0.5,
   shoulderToShoulder: 0.75,
