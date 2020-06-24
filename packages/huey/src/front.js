@@ -64,17 +64,13 @@ export default function (part) {
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
+    .line(points.cfHem)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).attr('class', 'note stroke-xxl')
   paths.saBase.render = false
   paths.hemBase.render = false
 
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.cfHem)
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 
   // Complete?
   if (complete) {
@@ -89,12 +85,7 @@ export default function (part) {
 
     if (sa) {
       paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
-      paths.sa
-        .move(paths.sa.end())
-        .line(points.cfNeck)
-        .move(paths.sa.start())
-        .line(points.cfHem)
-        .attr('class', 'fabric sa')
+      paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }
   }
 
