@@ -1,5 +1,11 @@
 # Change log for: @freesewing/plugin-dimension
 
+## 2.4.4 (2020-03-15)
+
+### Changed
+
+- Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
+
 ## 2.1.5 (2019-11-19)
 
 ### Fixed

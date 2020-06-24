@@ -1,5 +1,11 @@
 # Change log for: @freesewing/utils
 
+## 2.4.5 (2020-03-19)
+
+### Changed
+
+- neckstimate() now returns values rounded to nearest mm
+
 ## 2.4.1 (2020-03-04)
 
 ### Fixed

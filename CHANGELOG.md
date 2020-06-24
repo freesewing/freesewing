@@ -4,17 +4,72 @@
 
 ### aaron
 
+#### Changed
+
+- Updated side seam shaping and tweaked options for better defaults
+- Better handling of `armholeDrop` option
+- Ported aaron to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
 #### Fixed
 
 - Fixed incorrect instruction for neck binding (the indicated length was only half)
 
+### bent
+
+#### Changed
+
+- Increased default for the `cuffEase` option
+- Decreased default for the `armholeDepth` option
+- Better range for the `shoulderSlopeReduction` measurement
+- Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Set tip of undersleeve as anchor point for sampling
+
+### breanna
+
+#### Changed
+
+- Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+- Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### brian
+
+#### Changed
+
+- Ported brian to new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+- Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Set HPS as anchor point for sampling in front and back
+
 ### bruce
+
+#### Changed
+
+- Ported bruce to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 
 #### Fixed
 
 - Sampling some options would not work in Bruce because the code shared across patterns would only run once. That's fixed now.
 
+### carlita
+
+#### Changed
+
+- Better range for the `shoulderSlopeReduction` measurement
+- Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Set a sample anchor point on the side part
+
+### carlton
+
+#### Changed
+
+- Better range for the `shoulderSlopeReduction` measurement
+- Ported carlton to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
 ### cathrin
+
+#### Changed
+
+- Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Set sample anchor points on all panels
 
 #### Fixed
 
@@ -38,7 +93,27 @@
 
 - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
 
+### css-theme
+
+#### Changed
+
+- Updated the width of the SVG paths of a draft to match plugin-theme
+
+### diana
+
+#### Changed
+
+- Made the `shoulderSlopeReduction` option static so it's not available in the UI
+- Ported diana to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
 ### huey
+
+#### Changed
+
+- No longer use the `naturalWaist` measurement
+- Changed some option to better defaults
+- Ported huey to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Made the `shoulderSlopeReduction` option static so it's not available in the UI
 
 #### Fixed
 
@@ -50,7 +125,37 @@
 
 - Added shaping of the side seam
 
+#### Changed
+
+- Changed some option to better defaults
+- Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### jaeger
+
+#### Changed
+
+- Changed some option to better defaults
+- Set an anchor on side part for sampling
+- Ported jaeger to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### models
+
+#### Changed
+
+- Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+
+### penelope
+
+#### Changed
+
+- Ported penelope to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
 ### plugin-buttons
+
+#### Changed
+
+- Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket` Changing this to avoid needless use of gender related terminology.
 
 #### Removed
 
@@ -63,6 +168,51 @@
 - A FreeSewing plugin for mirroring points or paths
 - Initial release
 
+### sandy
+
+#### Changed
+
+- Ported sandy to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### shin
+
+#### Changed
+
+- Ported shin to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### simon
+
+#### Changed
+
+- Ported simon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### simone
+
+#### Changed
+
+- Ported simone to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### sven
+
+#### Changed
+
+- Improved the shaping of the side seam
+- Changed some option to better defaults
+- Ported sven to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### tamiko
+
+#### Changed
+
+- Switch from `shoulderSlope` option to `shoulderSlope` measurement
+- Ported tamiko to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### theo
+
+#### Changed
+
+- Ported theo to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+
 ### titan
 
 #### Added
@@ -70,12 +220,36 @@
 - A FreeSewing block for pants/trousers
 - Initial release
 
+### trayvon
+
+#### Changed
+
+- Ported trayvon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
 ### utils
 
 #### Added
 
 - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
 - `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+#### Changed
+
+- Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+- Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+
+### wahid
+
+#### Changed
+
+- Ported wahid to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+### waralee
+
+#### Changed
+
+- Ported waralee to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
 
 ## 2.6.0 (2020-05-01)
 
@@ -94,6 +268,13 @@
 - New shortcut buttons and sidebar collapse support for Workbench
 - Refactor to remove prop-types dependency
 - Reworked the withLanguage component to allow adding translations at run-time
+
+### core
+
+#### Changed
+
+- utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
+- We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
 ### create-freesewing-pattern
 
@@ -125,6 +306,12 @@
 - Do not render pocket outline when complete is falsy
 - Do not render pocket facing hint when complete is falsy
 
+### i18n
+
+#### Changed
+
+- Changes to support the renaming of @freesewing/fu to @freesewing/florence
+
 ### plugin-export-dxf
 
 #### Added
@@ -145,6 +332,10 @@
 ## 2.5.0 (2020-04-05)
 
 ### css-theme
+
+#### Changed
+
+- The sidebar no longer has a different background
 
 #### Fixed
 
@@ -172,6 +363,18 @@
 
 ## 2.4.5 (2020-03-19)
 
+### florence
+
+#### Changed
+
+- Improved shape based on community feedback
+
+### utils
+
+#### Changed
+
+- neckstimate() now returns values rounded to nearest mm
+
 ### wahid
 
 #### Fixed
@@ -191,6 +394,12 @@
 #### Fixed
 
 - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+### plugin-dimension
+
+#### Changed
+
+- Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
 
 ### simon
 

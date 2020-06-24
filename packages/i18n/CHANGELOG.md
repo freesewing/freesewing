@@ -1,5 +1,11 @@
 # Change log for: @freesewing/i18n
 
+## 2.6.0 (2020-05-01)
+
+### Changed
+
+- Changes to support the renaming of @freesewing/fu to @freesewing/florence
+
 ## 2.5.0 (2020-04-05)
 
 ### Added

@@ -10,6 +10,12 @@
 
 - @freesewing/fu has been renamed to @freesewing/florence
 
+## 2.4.5 (2020-03-19)
+
+### Changed
+
+- Improved shape based on community feedback
+
 ## 2.4.0 (2020-02-29)
 
 ### Added

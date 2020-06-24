@@ -21,7 +21,7 @@ Unreleased:
       - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
       - '`neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)'
 
-  Changes:
+  Changed:
     aaron:
       - Updated side seam shaping and tweaked options for better defaults
       - Better handling of `armholeDrop` option
@@ -106,7 +106,6 @@ Unreleased:
     workbench:
       - Added changes to support new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
 
-  Deprecated:
   Fixed:
     aaron:
       - Fixed incorrect instruction for neck binding (the indicated length was only half)
@@ -122,7 +121,6 @@ Unreleased:
   Removed:
     plugin-buttons:
       - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
-  Security:
 
 2.6.0:
   date: 2020-05-01
@@ -145,7 +143,7 @@ Unreleased:
     plugin-export-dxf:
       - This plugin can export your pattern as DXF-ASTM
       - Initial release
-  Changes:
+  Changed:
     core:
       - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
       - We no longer set the plugin configuration/data object to fall in `pattern.use()`
@@ -175,7 +173,7 @@ Unreleased:
       - Diana is a top with a draped neck
     i18n:
       - title, description, and options for Dianna
-  Changes:
+  Changed:
     css-theme:
       - The sidebar no longer has a different background
   Fixed:
@@ -190,7 +188,7 @@ Unreleased:
 
 2.4.5:
   date: 2020-03-19
-  Changes:
+  Changed:
     florence:
       - Improved shape based on community feedback
     utils:
@@ -201,7 +199,7 @@ Unreleased:
 
 2.4.4:
   date: 2020-03-15
-  Changes:
+  Changed:
     plugin-dimension:
       - Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
   Fixed:

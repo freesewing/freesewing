@@ -1,5 +1,12 @@
 # Change log for: @freesewing/core
 
+## 2.6.0 (2020-05-01)
+
+### Changed
+
+- utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
+- We no longer set the plugin configuration/data object to fall in `pattern.use()`
+
 ## 2.4.4 (2020-03-15)
 
 ### Fixed

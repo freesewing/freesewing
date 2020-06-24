@@ -8,6 +8,10 @@
 
 ## 2.5.0 (2020-04-05)
 
+### Changed
+
+- The sidebar no longer has a different background
+
 ### Fixed
 
 - Fixed incorrect border value on active sidebar link
