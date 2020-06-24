@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### aaron
+
+#### Fixed
+
+- Fixed incorrect instruction for neck binding (the indicated length was only half)
+
 ### bruce
 
 #### Fixed
@@ -15,11 +21,28 @@
 - [Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)
 - Fixed panels option being a list of numbers rather than strings
 
+### components
+
+#### Added
+
+- The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
+- Changed `models` to `people` in `sampleConfigurator`
+
+#### Fixed
+
+- Fixed bug that broke millimeter sliders
+
 ### core
 
 #### Added
 
 - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+
+### huey
+
+#### Fixed
+
+- [Added seam allowance to the front closure](https://github.com/freesewing/freesewing/issues/420)
 
 ### hugo
 
@@ -52,6 +75,7 @@
 #### Added
 
 - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+- `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 
 ## 2.6.0 (2020-05-01)
 
