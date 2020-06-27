@@ -82,6 +82,7 @@ export default (part) => {
     )
   }
 
+  // Shorthand
   let {
     points,
     Point,
@@ -95,10 +96,11 @@ export default (part) => {
     macro,
     utils,
     snippets,
-    Snippet
+    Snippet,
+    sa
   } = part.shorthand()
 
-  // Fuck this noise, I'm starting over
+  // Let's get to work
   points.waistX = new Point(-1 * measurements.backWaistArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
   points.seatX = new Point(-1 * measurements.backSeatArc * (1 + options.seatEase), 0)
@@ -163,10 +165,8 @@ export default (part) => {
   // Cross seam
   drawCrossSeam()
 
-  /*
-   * Uncomment the line below to see the seam prior to fitting the cross seam
-   */
-  //paths.seam1 = drawPath().attr('class', 'dashed lining')
+  //Uncomment the line below to see the seam prior to fitting the cross seam
+  // paths.seam1 = drawPath().attr('class', 'dashed lining')
 
   // Should we fit the cross seam?
   if (options.fitCrossSeam && options.fitBackCrossSeam) {
@@ -208,7 +208,7 @@ export default (part) => {
   }
 
   // Paths
-  paths.seam = drawPath()
+  paths.seam = drawPath().attr('class', 'fabric')
 
   if (complete) {
     points.grainlineTop.y = points.styleWaistOut.y
@@ -217,6 +217,28 @@ export default (part) => {
       to: points.grainlineBottom
     })
     macro('scalebox', { at: points.knee })
+    points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.crossSeamCurveStart.y)
+    snippets.logo = new Snippet('logo', points.logoAnchor)
+
+    if (sa) {
+      paths.saBase = drawOutseam()
+        .join(
+          new Path()
+            .move(points.styleWaistOut)
+            .line(points.styleWaistIn)
+            .line(points.crossSeamCurveStart)
+            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+        )
+        .join(drawInseam())
+      paths.hemBase = new Path().move(points.floorIn).line(points.floorOut)
+      paths.sa = paths.hemBase
+        .offset(sa * 3)
+        .join(paths.saBase.offset(sa))
+        .close()
+        .attr('class', 'fabric sa')
+      paths.saBase.render = false
+      paths.hemBase.render = false
+    }
 
     if (paperless) {
     }

@@ -155,6 +155,7 @@ export default (part) => {
   const adaptOutseam = (delta) => adaptSeam('out')
   const adaptInseam = (delta) => adaptSeam('in')
 
+  // Shorthand
   let {
     points,
     Point,
@@ -168,10 +169,11 @@ export default (part) => {
     macro,
     utils,
     snippets,
-    Snippet
+    Snippet,
+    sa
   } = part.shorthand()
 
-  // Fuck this noise, I'm starting over
+  // Let's get to work
   points.waistX = new Point(measurements.frontWaistArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
   points.seatX = new Point(measurements.frontSeatArc * (1 + options.seatEase), 0)
@@ -292,6 +294,32 @@ export default (part) => {
       from: points.grainlineTop,
       to: points.grainlineBottom
     })
+    points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.crotchSeamCurveStart.y)
+    snippets.logo = new Snippet('logo', points.logoAnchor)
+
+    if (sa) {
+      paths.saBase = drawInseam()
+        .join(
+          new Path()
+            .move(points.fork)
+            .curve(
+              points.crotchSeamCurveCp1,
+              points.crotchSeamCurveCp2,
+              points.crotchSeamCurveStart
+            )
+            .line(points.styleWaistIn)
+            .line(points.styleWaistOut)
+        )
+        .join(drawOutseam())
+      paths.hemBase = new Path().move(points.floorOut).line(points.floorIn)
+      paths.sa = paths.hemBase
+        .offset(sa * 3)
+        .join(paths.saBase.offset(sa))
+        .close()
+        .attr('class', 'fabric sa')
+      paths.saBase.render = false
+      paths.hemBase.render = false
+    }
 
     if (paperless) {
     }
