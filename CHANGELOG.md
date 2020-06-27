@@ -130,6 +130,12 @@
 - Changed some option to better defaults
 - Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 
+### i18n
+
+#### Changed
+
+- Added translations for Titan
+
 ### jaeger
 
 #### Changed
