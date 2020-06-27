@@ -241,6 +241,87 @@ export default (part) => {
     }
 
     if (paperless) {
+      // Help construct cross seam
+      paths.hint = new Path()
+        .move(points.crossSeamCurveStart)
+        .line(points.crossSeamCurveMax)
+        .line(points.fork)
+        .attr('class', 'note lashed')
+      macro('hd', {
+        from: points.floorIn,
+        to: points.floorOut,
+        y: points.floorIn.y - 30
+      })
+      macro('hd', {
+        from: points.floorIn,
+        to: points.floor,
+        y: points.floorIn.y - 15
+      })
+      macro('hd', {
+        from: points.floor,
+        to: points.floorOut,
+        y: points.floorIn.y - 15
+      })
+      macro('vd', {
+        from: points.floorOut,
+        to: points.styleWaistOut,
+        x:
+          (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
+          sa +
+          15
+      })
+      macro('vd', {
+        from: points.floorIn,
+        to: points.fork,
+        x: points.fork.x - sa - 15
+      })
+      macro('vd', {
+        from: points.fork,
+        to: points.styleWaistIn,
+        x: points.fork.x - sa - 15
+      })
+      macro('vd', {
+        from: points.floorIn,
+        to: points.styleWaistIn,
+        x: points.fork.x - sa - 30
+      })
+      macro('vd', {
+        from: points.crossSeamCurveStart,
+        to: points.styleWaistIn,
+        x: points.crossSeamCurveStart.x - sa - 15
+      })
+      macro('hd', {
+        from: points.styleWaistIn,
+        to: points.grainlineTop,
+        y: points.styleWaistIn.y - sa - 15
+      })
+      macro('hd', {
+        from: points.crossSeamCurveStart,
+        to: points.grainlineTop,
+        y: points.styleWaistIn.y - sa - 30
+      })
+      macro('hd', {
+        from: points.crossSeamCurveMax,
+        to: points.grainlineTop,
+        y: points.styleWaistIn.y - sa - 45
+      })
+      macro('hd', {
+        from: points.fork,
+        to: points.grainlineTop,
+        y: points.styleWaistIn.y - sa - 60
+      })
+      macro('hd', {
+        from: points.grainlineTop,
+        to: points.styleWaistOut,
+        y: points.styleWaistIn.y - sa - 15
+      })
+      if (points.seatOut.x > points.styleWaistOut.x) {
+        macro('hd', {
+          from: points.grainlineTop,
+          to: points.seatOut,
+          y: points.styleWaistIn.y - sa - 30
+        })
+      }
     }
   }
 
