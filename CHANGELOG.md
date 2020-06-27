@@ -161,6 +161,12 @@
 
 - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
 
+### plugin-measurements
+
+#### Added
+
+- A FreeSewing plugin that adds measurements that can be calculated based on existing measurements
+
 ### plugin-mirror
 
 #### Added

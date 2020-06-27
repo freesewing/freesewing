@@ -17,6 +17,8 @@ Unreleased:
     titan:
       - A FreeSewing block for pants/trousers
       - Initial release
+    plugin-measurements:
+      - A FreeSewing plugin that adds measurements that can be calculated based on existing measurements
     utils:
       - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
       - '`neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)'
