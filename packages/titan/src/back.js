@@ -4,8 +4,11 @@ export default (part) => {
    */
   const drawInseam = () =>
     options.fitKnee
-      ? new Path().move(points.fork)._curve(points.kneeInCp1, points.kneeIn).line(points.floorIn)
-      : new Path().move(points.fork)._curve(points.kneeInCp1, points.floorIn)
+      ? new Path()
+          .move(points.fork)
+          .curve(points.forkCp2, points.kneeInCp1, points.kneeIn)
+          .line(points.floorIn)
+      : new Path().move(points.fork).curve(points.forkCp2, points.kneeInCp1, points.floorIn)
   /*
    * Helper method to draw the outseam path
    */
@@ -176,6 +179,7 @@ export default (part) => {
       for (const i of rotate) points[i] = points[i].rotate(delta / 15, points.seatOut)
       // Remedy B: Nudge the fork inwards/outwards
       points.fork = points.fork.shift(0, delta / 5)
+      points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
       drawCrossSeam()
       delta = crossSeamDelta()
       // Uncomment the line beloe this to see all iterations

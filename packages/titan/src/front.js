@@ -4,8 +4,11 @@ export default (part) => {
    */
   const drawInseam = () =>
     options.fitKnee
-      ? new Path().move(points.floorIn).line(points.kneeIn).curve_(points.kneeInCp2, points.fork)
-      : new Path().move(points.floorIn).curve_(points.kneeInCp2, points.fork)
+      ? new Path()
+          .move(points.floorIn)
+          .line(points.kneeIn)
+          .curve(points.kneeInCp2, points.forkCp1, points.fork)
+      : new Path().move(points.floorIn).curve(points.kneeInCp2, points.forkCp1, points.fork)
   /*
    * Helper method to draw the outseam path
    */
@@ -79,6 +82,7 @@ export default (part) => {
       points.crotchSeamCurveMax,
       options.crotchSeamCurveBend
     )
+    points.forkCp1 = points.crotchSeamCurveCp1.rotate(90, points.fork)
   }
   /*
    * Helper method to calculate the inseam delta
