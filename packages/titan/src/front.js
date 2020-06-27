@@ -10,26 +10,25 @@ export default (part) => {
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
+    let waistOut = points.styleWaistOut || points.waistOut
     if (options.fitKnee) {
       if (points.waistOut.x < points.seatOut.x)
         return new Path()
-          .move(points.waistOut)
+          .move(waistOut)
           .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
           .line(points.floorOut)
       else
         return new Path()
-          .move(points.waistOut)
+          .move(waistOut)
           ._curve(points.seatOutCp1, points.seatOut)
           .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
           .line(points.floorOut)
     } else {
       if (points.waistOut.x < points.seatOut.x)
-        return new Path()
-          .move(points.waistOut)
-          .curve(points.seatOut, points.kneeOutCp1, points.floorOut)
+        return new Path().move(waistOut).curve(points.seatOut, points.kneeOutCp1, points.floorOut)
       else
         return new Path()
-          .move(points.waistOut)
+          .move(waistOut)
           ._curve(points.seatOutCp1, points.seatOut)
           .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
     }
@@ -38,14 +37,17 @@ export default (part) => {
   /*
    * Helper method to draw the outline path
    */
-  const drawPath = () =>
-    drawOutseam()
+  const drawPath = () => {
+    let waistIn = points.styleWaistIn || points.waistIn
+    let waistOut = points.styleWaistOut || points.waistOut
+    return drawOutseam()
       .line(points.floorIn)
       .join(drawInseam())
       .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-      .line(points.waistIn)
-      .line(points.waistOut)
+      .line(waistIn)
+      .line(waistOut)
       .close()
+  }
   /*
    * Helper method to calculate the length of the crotch seam
    */
@@ -261,11 +263,27 @@ export default (part) => {
   adaptOutseam(outseamDelta())
   adaptInseam(inseamDelta())
 
+  // Only now style the waist lower if requested
+  if (options.waistHeight < 1) {
+    points.styleWaistOut = drawOutseam().shiftAlong(
+      measurements.waistToHips * (1 - options.waistHeight)
+    )
+    points.styleWaistIn = utils.beamsIntersect(
+      points.styleWaistOut,
+      points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),
+      points.waistIn,
+      points.crotchSeamCurveStart
+    )
+  } else {
+    points.styleWaistIn = points.waistIn.clone()
+    points.styleWaistOut = points.waistOut.clone()
+  }
+
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
 
   if (complete) {
-    points.grainlineTop.y = points.waistIn.y
+    points.grainlineTop.y = points.styleWaistIn.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom

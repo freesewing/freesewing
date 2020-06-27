@@ -11,7 +11,7 @@ export default {
   tags: ['bottom', 'basics'],
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
-    style: ['fitKnee', 'lengthBonus', 'crotchDrop'],
+    style: ['waistHeight', 'fitKnee', 'lengthBonus', 'crotchDrop'],
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
@@ -32,6 +32,7 @@ export default {
     'waistCircumference',
     'waistToFloor',
     'waistToKnee',
+    'waistToHips',
     'waistToSeat',
     'waistToUpperLeg'
   ],
@@ -48,9 +49,10 @@ export default {
     kneeEase: { pct: 6, min: 1, max: 25 },
 
     // Style
-    fitKnee: { bool: false },
+    waistHeight: { pct: 100, min: 0, max: 100 },
     lengthBonus: { pct: 0, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
+    fitKnee: { bool: false },
 
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },

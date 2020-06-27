@@ -10,41 +10,42 @@ export default (part) => {
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
+    let waistOut = points.styleWaistOut || points.waistOut
     if (options.fitKnee) {
       if (points.waistOut.x > points.seatOut.x)
         return new Path()
           .move(points.floorOut)
           .line(points.kneeOut)
-          .curve(points.kneeOutCp2, points.seatOut, points.waistOut)
+          .curve(points.kneeOutCp2, points.seatOut, waistOut)
       else
         return new Path()
           .move(points.floorOut)
           .line(points.kneeOut)
           .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, points.waistOut)
+          .curve_(points.seatOutCp2, points.Out)
     } else {
       if (points.waistOut.x > points.seatOut.x)
-        return new Path()
-          .move(points.floorOut)
-          .curve(points.kneeOutCp2, points.seatOut, points.waistOut)
+        return new Path().move(points.floorOut).curve(points.kneeOutCp2, points.seatOut, waistOut)
       else
         return new Path()
           .move(points.floorOut)
           .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, points.waistOut)
+          .curve_(points.seatOutCp2, waistOut)
     }
   }
   /*
    * Helper method to draw the outline path
    */
-  const drawPath = () =>
-    drawInseam()
+  const drawPath = () => {
+    let waistIn = points.styleWaistIn || points.waistIn
+    return drawInseam()
       .line(points.floorOut)
       .join(drawOutseam())
-      .line(points.waistIn)
+      .line(waistIn)
       .line(points.crossSeamCurveStart)
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
       .close()
+  }
   /*
    * Helper method to calculate the length of the cross seam
    */
@@ -186,11 +187,27 @@ export default (part) => {
   store.set('inseamBack', drawInseam().length())
   store.set('outseamBack', drawOutseam().length())
 
+  // Only now style the waist lower if requested
+  if (options.waistHeight < 1) {
+    points.styleWaistOut = drawOutseam()
+      .reverse()
+      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight))
+    points.styleWaistIn = utils.beamsIntersect(
+      points.styleWaistOut,
+      points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),
+      points.waistIn,
+      points.crossSeamCurveStart
+    )
+  } else {
+    points.styleWaistIn = points.waistIn.clone()
+    points.styleWaistOut = points.waistOut.clone()
+  }
+
   // Paths
   paths.seam = drawPath()
 
   if (complete) {
-    points.grainlineTop.y = points.waistOut.y
+    points.grainlineTop.y = points.styleWaistOut.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom
