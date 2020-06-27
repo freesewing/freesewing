@@ -219,6 +219,12 @@ export default (part) => {
     macro('scalebox', { at: points.knee })
     points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.crossSeamCurveStart.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)
+    points.titleAnchor = points.logoAnchor.shift(-90, 60)
+    macro('title', {
+      nr: 1,
+      title: 'back',
+      at: points.titleAnchor
+    })
 
     if (sa) {
       paths.saBase = drawOutseam()
