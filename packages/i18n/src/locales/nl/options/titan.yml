@@ -1,37 +1,37 @@
 ---
 kneeEase:
-  title: Knee ease
-  description: Controls the amout of ease at the knee
+  title: Overwijdte knie
+  description: Bepaalt de hoeveelheid overwijdte aan de knie
 waistHeight:
-  title: Waist height
-  description: Controls the height of the waist
+  title: Taillehoogte
+  description: Bepaalt de hoogte van de taille
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the trousers
+  title: Lengtebonus
+  description: Bepaalt de lengte van de broek
 crotchDrop:
-  title: Crotch drop
-  description: Lowers the crotch for a more relaxed fit
+  title: Diepte kruis
+  description: Verlaagt het kruis voor een lossere pasvorm
 fitKnee:
-  title: Fit the knee
+  title: Pas de knie aan
   description: Fits the legs from the based on the knee circumference
 legBalance:
-  title: Leg balance
-  description: Controls the ratio between front and back panel of the leg
+  title: Balans been
+  description: Bepaalt de verhouding tussen de voor-en achterkant van de broekspijp
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Begin van de curve van de binnenbeennaad
+  description: Bepaalt hoe ver in de binnenbeennaad de curve start
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Buiging binnenbeennaad
+  description: Bepaalt de curve van de binnenbeennaad
 crotchSeamCurveStart:
-  title: Start of the crotch seam curve
-  description: Controls how far into the crotch seam we start to curve
+  title: Begin van de curve van de kruisnaad
+  description: Bepaalt hoe ver in de kruisnaad de curve start
 crotchSeamCurveBend:
-  title: Crotch seam bend
-  description: Controls the curvature of the crotch seam
+  title: Buiging kruisnaad
+  description: Bepaalt de curve van de kruisnaad
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  title: Balans taille
+  description: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak
 grainlinePosition:
-  title: Grainline position
-  description: Controls the horizontal position of the leg relative to the seat
+  title: Positie draadrichting
+  description: Bepaalt de horizontale positie van het been in relatie tot het zitvlak
