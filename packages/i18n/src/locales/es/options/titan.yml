@@ -19,7 +19,7 @@ legBalance:
   description: Controls the ratio between front and back panel of the leg
 crossSeamCurveStart:
   title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  description: Controla hasta qué punto en la costura cruzada empezamos a curvar
 crossSeamCurveBend:
   title: Cross seam bend
   description: Controls the curvature of the cross seam
