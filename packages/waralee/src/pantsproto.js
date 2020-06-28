@@ -4,7 +4,7 @@ export default function (part) {
   let { options, measurements, Point, Path, points, paths } = part.shorthand()
 
   let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
-  let circumference = measurements.seatCircumference
+  let circumference = measurements.seat
   let circumference4 = circumference / 4
 
   points.mWaist = new Point(0, 0)
@@ -83,7 +83,7 @@ export default function (part) {
         options.frontPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
           options.waistBand * 2
       )
-      .shift(180, options.frontPocketHorizontalOffset * measurements.seatCircumference)
+      .shift(180, options.frontPocketHorizontalOffset * measurements.seat)
 
     points.frontPocketTop2 = points.frontPocketTop.shift(340, 12)
     points.frontPocketBottom = points.frontPocketTop.shift(
@@ -103,10 +103,7 @@ export default function (part) {
 
   if (options.backPocket) {
     points.backPocketRight = points.bWaistBack
-      .shiftTowards(
-        points.bWaistSide,
-        options.backPocketHorizontalOffset * measurements.seatCircumference
-      )
+      .shiftTowards(points.bWaistSide, options.backPocketHorizontalOffset * measurements.seat)
       .shift(
         270,
         options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
@@ -115,7 +112,7 @@ export default function (part) {
     points.backPocketLeft = points.bWaistBack
       .shiftTowards(
         points.bWaistSide,
-        options.backPocketHorizontalOffset * measurements.seatCircumference +
+        options.backPocketHorizontalOffset * measurements.seat +
           options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips)
       )
       .shift(
