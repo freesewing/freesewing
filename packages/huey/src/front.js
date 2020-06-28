@@ -24,7 +24,7 @@ export default function (part) {
   }
 
   // Shape side seam
-  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
   points.hemCp2 = new Point(points.hips.x, points.cfWaist.y)
 
