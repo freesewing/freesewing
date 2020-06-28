@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   part.paths = {} // This removed paperless dimensions from brian block
   for (let pid of [
     '__scaleboxLead',
@@ -23,13 +23,13 @@ export default part => {
   } = part.shorthand()
 
   // Sleeve width depends on cuff style
-  let width = measurements.wristCircumference * (1 + options.cuffEase + options.cuffOverlap)
+  let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
   if (
     options.cuffStyle === 'straightFrenchCuff' ||
     options.cuffStyle === 'roundedFrenchCuff' ||
     options.cuffStyle === 'angledFrenchCuff'
   )
-    width = measurements.wristCircumference * (1 + options.cuffEase + options.cuffOverlap * 1.5)
+    width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap * 1.5)
   points.wristRight.x = width / 2
   points.wristLeft.x = width / -2
   let cuffLength = measurements.shoulderToWrist * options.cuffLength

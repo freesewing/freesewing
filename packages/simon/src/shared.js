@@ -1,8 +1,8 @@
 export const calculateReduction = function (part) {
   let { store, measurements, options } = part.shorthand()
-  let chest = measurements.chestCircumference * (1 + options.chestEase)
-  let waist = measurements.waistCircumference * (1 + options.waistEase)
-  let hips = measurements.hipsCircumference * (1 + options.hipsEase)
+  let chest = measurements.chest * (1 + options.chestEase)
+  let waist = measurements.waist * (1 + options.waistEase)
+  let hips = measurements.hips * (1 + options.hipsEase)
   let waistReduction = chest - waist
   let hipsReduction = chest - hips
 
@@ -44,7 +44,7 @@ export const addButtonHoles = (part, origin) => addButtons(part, origin, 'button
 export const draftBarrelCuff = (part) => {
   let { store, points, measurements, options, Point } = part.shorthand()
   let height = measurements.shoulderToWrist * options.cuffLength
-  let width = measurements.wristCircumference * (1 + options.cuffEase + options.cuffOverlap)
+  let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
   store.set('cuffHeight', height)
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -66,7 +66,7 @@ export const decorateBarrelCuff = (part) => {
   })
 
   // Button and buttonhole
-  let margin = measurements.wristCircumference * options.cuffOverlap
+  let margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin / 2)
   points.buttonLineBottom = points.bottomRight.shift(180, margin / 2)
   points.buttonholeLineTop = points.topLeft.shift(0, margin / 2)
@@ -94,11 +94,10 @@ export const decorateBarrelCuff = (part) => {
 
 export const draftFrenchCuff = (part) => {
   let { store, points, measurements, options, Point } = part.shorthand()
-  let margin = measurements.wristCircumference * options.cuffOverlap
+  let margin = measurements.wrist * options.cuffOverlap
   let height = measurements.shoulderToWrist * options.cuffLength
   let width =
-    measurements.wristCircumference *
-      (1 + options.cuffEase + options.cuffOverlap + options.cuffDrape) +
+    measurements.wrist * (1 + options.cuffEase + options.cuffOverlap + options.cuffDrape) +
     margin / 2
   store.set('cuffHeight', height)
   points.topLeft = new Point(0, 0)
@@ -123,7 +122,7 @@ export const decorateFrenchCuff = (part) => {
   })
 
   // Buttonholes
-  let margin = measurements.wristCircumference * options.cuffOverlap
+  let margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin * 0.75)
   points.buttonLineBottom = points.bottomRight.shift(180, margin * 0.75)
   points.buttonholeLineTop = points.topLeft.shift(0, margin * 0.75)
