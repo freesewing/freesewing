@@ -59,7 +59,7 @@ export default (part) => {
       .move(points.waistIn)
       .line(points.crotchSeamCurveStart)
       .curve(points.crotchSeamCurveCp2, points.crotchSeamCurveCp1, points.fork)
-      .length() - measurements.frontCrossSeam
+      .length() - measurements.crossSeamFront
   /*
    * Helper method to (re)draw the crotch seam
    */
@@ -174,16 +174,16 @@ export default (part) => {
   } = part.shorthand()
 
   // Let's get to work
-  points.waistX = new Point(measurements.frontWaistArc * (1 + options.waistEase), 0)
+  points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
-  points.seatX = new Point(measurements.frontSeatArc * (1 + options.seatEase), 0)
+  points.seatX = new Point(measurements.seatFrontArc * (1 + options.seatEase), 0)
   points.seatY = new Point(0, measurements.waistToSeat)
   points.seatOut = points.seatY
   points.cfSeat = new Point(points.seatX.x, points.seatY.y)
 
   // Determine fork width
   points.fork = new Point(
-    measurements.frontSeatArc * (1 + options.seatEase) * 1.25,
+    measurements.seatFrontArc * (1 + options.seatEase) * 1.25,
     points.upperLegY.y * (1 + options.crotchDrop)
   )
 

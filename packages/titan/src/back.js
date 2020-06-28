@@ -127,10 +127,10 @@ export default (part) => {
   points.grainlineBottom = points.floor
 
   // Figure out width at the knee
-  let kneeTotal = measurements.kneeCircumference * (1 + options.kneeEase)
+  let kneeTotal = measurements.knee * (1 + options.kneeEase)
   if (!options.fitKnee) {
     // Based the knee width on the seat, unless that ends up being less
-    let altKneeTotal = measurements.frontSeat
+    let altKneeTotal = measurements.seatFront
     if (altKneeTotal > kneeTotal) kneeTotal = altKneeTotal
   }
   // Store for re-use in front part

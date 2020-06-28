@@ -7,7 +7,7 @@ export default {
   code: 'Joost De Cock',
   department: 'unisex',
   type: 'block',
-  difficulty: 3,
+  difficulty: 2,
   tags: ['bottom', 'basics'],
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
@@ -23,13 +23,13 @@ export default {
     ]
   },
   measurements: [
-    'backWaist',
     'crossSeam',
-    'frontCrossSeam',
-    'backSeat',
-    'seatCircumference',
-    'kneeCircumference',
-    'waistCircumference',
+    'crossSeamFront',
+    'seatBack',
+    'seat',
+    'knee',
+    'waistBack',
+    'waist',
     'waistToFloor',
     'waistToKnee',
     'waistToHips',
