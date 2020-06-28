@@ -75,18 +75,18 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hipsCircumference',
+    'biceps',
+    'chest',
+    'hips',
     'hpsToWaistBack',
-    'waistCircumference',
+    'waist',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     bentBack: 'bentBase',

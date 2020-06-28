@@ -5,7 +5,7 @@
  * experience, or more tailoring exprience.
  */
 
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -58,7 +58,7 @@ export default function(part) {
   points.collarCbTopDirection = points.neck.rotate(-90, points.collarstandCbBottom) // right direction, but too far
   points.collarCbTop = points.collarstandCbBottom.shiftTowards(
     points.collarCbTopDirection,
-    measurements.neckCircumference * options.collarHeight * 2
+    measurements.neck * options.collarHeight * 2
   )
 
   // Rotate points

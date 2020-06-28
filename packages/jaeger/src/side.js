@@ -31,11 +31,11 @@ export default function (part) {
       .split(points.ventStart)
       .pop()
       .line(points.bsHem)
-    paths.vent = paths.ventBase.offset(measurements.neckCircumference / -10)
+    paths.vent = paths.ventBase.offset(measurements.neck / -10)
     //paths.vent.render = false;
     points.ventSlopeStart = utils.lineIntersectsCurve(
       paths.vent.start(),
-      paths.vent.start().shift(170, measurements.neckCircumference / 5),
+      paths.vent.start().shift(170, measurements.neck / 5),
       points.bsHips,
       points.bsHipsCp2,
       points.bsWaistCp1,
