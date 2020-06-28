@@ -31,9 +31,9 @@ export default function (part) {
 
   // Store
   store.set('lengthBonus', measurements.inseam * options.lengthBonus)
-  store.set('backReduction', (measurements.hipsCircumference / -4) * options.wedge)
-  store.set('legWidth', (measurements.kneeCircumference * (1 + options.legWidth)) / 2)
-  store.set('backRise', measurements.hipsCircumference * options.backRise)
+  store.set('backReduction', (measurements.hips / -4) * options.wedge)
+  store.set('legWidth', (measurements.knee * (1 + options.legWidth)) / 2)
+  store.set('backRise', measurements.hips * options.backRise)
 
   // Points
   points[0] = new Point(0, 0)
@@ -47,9 +47,9 @@ export default function (part) {
   points[203] = points[202].flipX()
   points[3] = new Point(0, points[1].y + measurements.inseam / 2 + 50)
   points[4] = new Point(0, points[1].y - (measurements.crotchDepth - measurements.waistToHips) / 4)
-  points[5] = new Point(10 - measurements.seatCircumference / 8, points[1].y)
+  points[5] = new Point(10 - measurements.seat / 8, points[1].y)
   points[9] = new Point(
-    points[5].x - measurements.seatCircumference / 16 - 5 + store.get('backReduction'),
+    points[5].x - measurements.seat / 16 - 5 + store.get('backReduction'),
     points[5].y
   )
   points[16] = new Point(points[5].x - points[1].dx(points[5]) / 4, points[5].y)
@@ -67,13 +67,13 @@ export default function (part) {
     points[9].y
   )
   points[23] = new Point(points[22].x, points[22].y + 5)
-  points[24] = new Point(points[20].x + measurements.hipsCircumference / 4 + 45, points[20].y)
+  points[24] = new Point(points[20].x + measurements.hips / 4 + 45, points[20].y)
   points[25] = points[21].shiftFractionTowards(points[24], 0.5)
   points[2501] = points[25].shiftTowards(points[24], 120)
   points[2502] = points[2501].rotate(-90, points[25])
   points[2503] = points[25].shiftTowards(points[24], 12.5)
   points[2504] = points[25].shiftTowards(points[21], 12.5)
-  points[26] = new Point(points[17].x + measurements.seatCircumference / 4 + 30, points[17].y)
+  points[26] = new Point(points[17].x + measurements.seat / 4 + 30, points[17].y)
   points[2601] = points[24].shiftFractionTowards(points[26], 1, 4)
   points[27] = new Point(points[2].x + store.get('legWidth') / 2 + 20, points[2].y)
   points[2701] = new Point(points[27].x, points[27].y - 50)

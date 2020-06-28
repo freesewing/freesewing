@@ -13,14 +13,7 @@ export default {
     fit: ['backRise', 'wedge'],
     style: ['waistbandWidth', 'lengthBonus', 'legWidth']
   },
-  measurements: [
-    'crotchDepth',
-    'hipsCircumference',
-    'inseam',
-    'kneeCircumference',
-    'seatCircumference',
-    'waistToHips'
-  ],
+  measurements: ['crotchDepth', 'hips', 'inseam', 'knee', 'seat', 'waistToHips'],
   dependencies: {},
   inject: {
     front: 'back',

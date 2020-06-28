@@ -26,13 +26,13 @@ export default function (part) {
     points[0].x,
     points[1].y - (measurements.crotchDepth - measurements.waistToHips) / 4
   )
-  points[5] = new Point(points[0].x - measurements.seatCircumference / 8 + 10, points[1].y)
+  points[5] = new Point(points[0].x - measurements.seat / 8 + 10, points[1].y)
   points[501] = points[5].shift(135, 30)
   points[502] = points[501].shift(45, 30)
   points[503] = points[501].shift(-135, 30)
   points[6] = new Point(points[5].x, points[4].y)
   points[7] = new Point(points[5].x, points[0].y)
-  points[8] = new Point(points[6].x + measurements.seatCircumference / 4 + 20, points[6].y)
+  points[8] = new Point(points[6].x + measurements.seat / 4 + 20, points[6].y)
   points[801] = new Point(
     points[8].x,
     points[8].y - (measurements.crotchDepth - measurements.waistToHips) / 4
@@ -42,13 +42,13 @@ export default function (part) {
     points[8].y + (measurements.crotchDepth - measurements.waistToHips) / 4
   )
   points[9] = new Point(
-    points[5].x - measurements.seatCircumference / 16 - 5 + store.get('backReduction'),
+    points[5].x - measurements.seat / 16 - 5 + store.get('backReduction'),
     points[5].y
   )
   points[10] = new Point(points[7].x + 10, points[7].y)
   points[1001] = points[10].shiftTowards(points[6], 10)
   points[1002] = new Point(points[0].x, points[1001].y)
-  points[11] = new Point(points[10].x + measurements.hipsCircumference / 4 + 25, points[10].y)
+  points[11] = new Point(points[10].x + measurements.hips / 4 + 25, points[10].y)
   points[12] = new Point(points[2].x + store.get('legWidth') / 2, points[2].y)
   points[1201] = new Point(points[12].x, points[12].y - 50)
   points[13] = points[12].flipX()
