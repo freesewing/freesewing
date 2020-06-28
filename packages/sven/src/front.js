@@ -16,7 +16,7 @@ export default (part) => {
   if (typeof points.cfHem === 'undefined') front = false
 
   // Fit the hips
-  points.hem.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hipsCp2 = new Point(points.hem.x, front ? points.cfWaist.y : points.cbWaist.y)
 
   if (options.ribbing) {
