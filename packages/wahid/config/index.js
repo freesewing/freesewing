@@ -33,17 +33,15 @@ export default {
     advanced: ['backInset', 'frontInset', 'shoulderInset', 'neckInset', 'pocketAngle']
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hipsCircumference',
+    'biceps',
+    'chest',
+    'hips',
     'hpsToWaistBack',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'waistCircumference',
-    'shoulderToWrist',
-    'wristCircumference'
+    'waist'
   ],
   dependencies: {
     backBlock: 'base',

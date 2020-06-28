@@ -2,9 +2,9 @@ export const constructMainDart = (part) => {
   let { measurements, options, points, Point, store } = part.shorthand()
 
   let reduce = {}
-  let chest = measurements.chestCircumference * (1 + options.chestEase)
-  let waist = measurements.waistCircumference * (1 + options.waistEase)
-  let hips = measurements.hipsCircumference * (1 + options.hipsEase)
+  let chest = measurements.chest * (1 + options.chestEase)
+  let waist = measurements.waist * (1 + options.waistEase)
+  let hips = measurements.hips * (1 + options.hipsEase)
 
   reduce.waist = chest - waist
   reduce.hips = chest - hips
