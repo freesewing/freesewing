@@ -12,7 +12,7 @@ export default {
   optionGroups: {
     style: ['tipWidth', 'knotWidth', 'lengthBonus']
   },
-  measurements: ['hpsToWaistBack', 'waistToHips', 'neckCircumference'],
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   parts: [
     'interfacingTip',
     'interfacingTail',
