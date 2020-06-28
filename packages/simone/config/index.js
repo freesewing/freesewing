@@ -108,20 +108,20 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
+    'biceps',
     'bustSpan',
-    'chestCircumference',
+    'chest',
     'highBust',
     'hpsToBust',
     'hpsToWaistBack',
-    'waistCircumference',
+    'waist',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'hipsCircumference',
+    'hips',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase'],
