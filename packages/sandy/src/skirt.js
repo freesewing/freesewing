@@ -20,8 +20,8 @@ export default function (part) {
   // Circumference of the top of the waistband, calculated from the waistbandPosition option
   store.set(
     'topCircumference',
-    options.waistbandPosition * measurements.hipsCircumference +
-      (1 - options.waistbandPosition) * measurements.waistCircumference
+    options.waistbandPosition * measurements.hips +
+      (1 - options.waistbandPosition) * measurements.waist
   )
   // Circumference of the bottom of the waistband
   if (options.waistbandShape === 'curved') {
@@ -29,8 +29,7 @@ export default function (part) {
     store.set(
       'bottomCircumference',
       store.get('topCircumference') +
-        (options.waistbandWidth *
-          (measurements.hipsCircumference - measurements.waistCircumference)) /
+        (options.waistbandWidth * (measurements.hips - measurements.waist)) /
           measurements.waistToHips
     )
   } else {
