@@ -17,13 +17,13 @@ export default function (part) {
   } = part.shorthand()
 
   // Store some helper variables
-  store.set('hips', (measurements.hipsCircumference / 2) * utils.stretchToScale(options.stretch))
+  store.set('hips', (measurements.hips / 2) * utils.stretchToScale(options.stretch))
   store.set('hipFront', store.get('hips') * options.frontFactor)
   store.set('hipBack', store.get('hips') * (1 - options.frontFactor))
-  store.set('legs', measurements.upperLegCircumference * utils.stretchToScale(options.stretch))
+  store.set('legs', measurements.upperLeg * utils.stretchToScale(options.stretch))
   store.set('legFront', store.get('legs') * options.legFrontFactor)
   store.set('legBack', store.get('legs') * (1 - options.legFrontFactor))
-  store.set('gusset', measurements.hipsCircumference * options.gussetFactor)
+  store.set('gusset', measurements.hips * options.gussetFactor)
 
   points.hipSide = new Point(0, 0)
   points.hipCb = new Point(store.get('hipBack'), 0)

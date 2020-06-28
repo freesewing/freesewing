@@ -13,7 +13,7 @@ export default {
     fit: ['bulge', 'backRise', 'legReduction', 'stretch'],
     style: ['lengthBonus', 'rise']
   },
-  measurements: ['hipsCircumference', 'upperLegCircumference', 'waistToUpperLeg', 'waistToHips'],
+  measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
   parts: ['back', 'front', 'waistband'],
   options: {
     // Constants
