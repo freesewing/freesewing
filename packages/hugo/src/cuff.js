@@ -13,8 +13,7 @@ export default function (part) {
   } = part.shorthand()
 
   let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
-  let length =
-    measurements.wristCircumference * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+  let length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)

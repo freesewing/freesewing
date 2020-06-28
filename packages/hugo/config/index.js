@@ -15,17 +15,17 @@ export default {
     advanced: ['acrossBackFactor', 'backNeckCutout']
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'headCircumference',
-    'hipsCircumference',
+    'biceps',
+    'chest',
+    'head',
+    'hips',
     'hpsToWaistBack',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   parts: ['waistband', 'cuff'],
   dependencies: {

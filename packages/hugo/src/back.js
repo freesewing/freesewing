@@ -22,7 +22,7 @@ export default function (part) {
   } = part.shorthand()
 
   // Fit the hips
-  points.hem.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hemCp2 = new Point(points.hem.x, points.cbWaist.y)
 
   // Ribbing
