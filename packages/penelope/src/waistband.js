@@ -20,7 +20,7 @@ export default function (part) {
   }
 
   let waistEase = options.waistEase
-  let waist = measurements.waistCircumference
+  let waist = measurements.waist
   waist += waistEase
 
   points.TL = new Point(0, 0)

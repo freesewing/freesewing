@@ -23,8 +23,8 @@ function BuildMainShape(part, frontPart) {
 
   let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
 
-  let waist = measurements.waistCircumference
-  let seat = measurements.seatCircumference > waist ? measurements.seatCircumference : waist
+  let waist = measurements.waist
+  let seat = measurements.seat > waist ? measurements.seat : waist
 
   dartCalc(options, seat, seatEase, waist, waistEase)
 
@@ -203,7 +203,7 @@ function BuildMainShape(part, frontPart) {
   paths.waist = waistPath.reverse().setRender(false)
   paths.waistSA = waistPathSA.reverse().setRender(false)
 
-  points.titleAnchor = new Point(measurements.waistCircumference / 6, measurements.waistToSeat)
+  points.titleAnchor = new Point(measurements.waist / 6, measurements.waistToSeat)
   points.logoAnchor = points.titleAnchor.shift(270, 75)
 
   points.grainlineTop = points.lWaist.shift(0, 50).shift(270, 50)
