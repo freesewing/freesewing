@@ -18,7 +18,7 @@ export default function (part) {
   let shoulders = measurements.shoulderToShoulder
 
   // Width at chest
-  let chest = (measurements.chestCircumference / 2) * (1 + options.chestEase)
+  let chest = (measurements.chest / 2) * (1 + options.chestEase)
 
   // Length
   let length = (1 + options.lengthBonus) * (measurements.hpsToWaistBack + measurements.waistToHips)
