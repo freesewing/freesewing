@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -14,7 +14,7 @@ export default function(part) {
   } = part.shorthand()
 
   let scale = 1
-  let base = scale * measurements.headCircumference * (1 + options.headEase)
+  let base = scale * measurements.head * (1 + options.headEase)
 
   points.tipRight = new Point(base * 0.147, 0)
   points.tipLeft = points.tipRight.flipX()
