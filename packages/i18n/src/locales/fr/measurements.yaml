@@ -1,32 +1,36 @@
 ---
-ankleCircumference: Tour de cheville
-bicepsCircumference: Tour de bras
+ankle: Ankle circumference
+biceps: Biceps circumference
 bustFront: Largeur de poitrine avant
 bustSpan: Écart de poitrine
-chestCircumference: Tour de poitrine
-headCircumference: Tour de tête
+chest: Chest circumference
+crossSeam: Cross seam
+crossSeamFront: Cross seam front
+head: Head circumference
 highBustFront: Largeur de buste supérieur
 highBust: Tour de buste supérieur
-hipsCircumference: Tour des petites hanches
+hips: Hips circumference
 hpsToBust: Longueur épaule-poitrine
 hpsToWaistBack: Longueur épaule-taille dos
 hpsToWaistFront: Longueur épaule-taille devant
 inseam: Longueur d'entrejambe
-kneeCircumference: Tour de genou
-neckCircumference: Tour de cou
-seatCircumference: Tour de bassin
-seatDepth: Hauteur d'assise
+knee: Knee circumference
+neck: Neck circumference
+seat: Seat circumference
+seatBack: Seat back
+crotchDepth: Crotch depth
 shoulderSlope: Pente d'épaule
 shoulderToElbow: Longueur épaule au coude
 shoulderToShoulder: Largeur d'épaules
 shoulderToWrist: Longueur de bras
 underbust: Tour sous poitrine
-upperLegCircumference: Tour de cuisse
-waistCircumference: Tour de taille
+upperLeg: Upper leg circumference
+waist: Waist circumference
+waistBack: Waist back
 waistToFloor: Hauteur de taille
 waistToHips: Hauteur taille hanche
 waistToKnee: Hauteur taille genou
 waistToSeat: Hauteur taille bassin
 waistToUnderbust: Hauteur taille sous-poitrine
 waistToUpperLeg: Hauteur taille bassin
-wristCircumference: Tour de poignet
+wrist: Wrist circumference
