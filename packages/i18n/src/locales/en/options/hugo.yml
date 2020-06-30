@@ -1,3 +1,3 @@
----
-# This is here because an empty YAML file breaks the rollup yaml loader
-_: _
+hipsEase:
+  title: Hips ease
+  description: The amount of ease at your hips.
