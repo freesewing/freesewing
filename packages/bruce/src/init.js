@@ -19,21 +19,21 @@ export default function init(part) {
     store.set('xScaleLegs', utils.stretchToScale(options.legStretch))
 
     /* Ratio of parts at the hips*/
-    store.set('hips', measurements.hipsCircumference * store.get('xScale'))
+    store.set('hips', measurements.hips * store.get('xScale'))
     store.set('hipsFront', store.get('hips') * options.hipRatioFront)
     let hipRatioSide = (1 - (options.hipRatioFront + options.hipRatioBack)) / 2
     store.set('hipsSide', store.get('hips') * hipRatioSide)
     store.set('hipsBack', store.get('hips') * options.hipRatioBack)
 
     /* Ratio of parts at the legs*/
-    store.set('leg', measurements.upperLegCircumference * store.get('xScaleLegs'))
+    store.set('leg', measurements.upperLeg * store.get('xScaleLegs'))
     store.set('legInset', store.get('leg') * options.legRatioInset)
     let legRatioSide = 1 - options.legRatioInset - options.legRatioBack
     store.set('legSide', store.get('leg') * legRatioSide)
     store.set('legBack', store.get('leg') * options.legRatioBack)
 
     /* Gusset */
-    store.set('gusset', measurements.hipsCircumference * options.gussetRatio)
+    store.set('gusset', measurements.hips * options.gussetRatio)
     store.set('gussetInsetRatio', options.gussetInsetRatio)
 
     /* Length helper */

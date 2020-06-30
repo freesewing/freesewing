@@ -13,7 +13,7 @@ export default {
     fit: ['bulge', 'stretch', 'legStretch', 'backRise'],
     style: ['rise', 'legBonus']
   },
-  measurements: ['hipsCircumference', 'upperLegCircumference', 'waistToHips', 'waistToUpperLeg'],
+  measurements: ['hips', 'upperLeg', 'waistToHips', 'waistToUpperLeg'],
   dependencies: {
     side: 'back',
     front: 'inset',
