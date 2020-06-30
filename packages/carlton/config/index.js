@@ -51,21 +51,21 @@ export default {
     collar: ['collarHeight', 'collarSpread', 'collarFlare']
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hipsCircumference',
+    'biceps',
+    'chest',
+    'hips',
     'hpsToWaistBack',
-    'waistCircumference',
+    'waist',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference',
+    'wrist',
     'waistToFloor',
     'waistToSeat',
-    'seatCircumference'
+    'seat'
   ],
   dependencies: {
     bentBack: 'bentBase',

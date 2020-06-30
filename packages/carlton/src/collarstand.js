@@ -13,7 +13,7 @@ export default function (part) {
     Path
   } = part.shorthand()
 
-  let height = measurements.chestCircumference * options.collarHeight
+  let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)

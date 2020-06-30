@@ -47,7 +47,7 @@ export default function (part) {
 
   // Front closure edge
   points.collarEdge = new Point(
-    points.button1Left.x - measurements.waistCircumference * options.frontOverlap,
+    points.button1Left.x - measurements.waist * options.frontOverlap,
     points.cfNeck.y
   )
   points.hemEdge = new Point(points.collarEdge.x, points.hem.y)
