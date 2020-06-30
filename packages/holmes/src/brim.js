@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     points,
@@ -12,7 +12,7 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let headRadius = measurements.headCircumference / 2 / Math.PI
+  let headRadius = measurements.head / 2 / Math.PI
   let brimRadius = headRadius / Math.sin((options.brimAngle * Math.PI) / 180)
   let sectorAngle = Math.PI / 3
   let brimSectorAngle = (sectorAngle * headRadius) / brimRadius

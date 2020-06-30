@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     points,
@@ -17,10 +17,7 @@ export default function(part) {
   // Design pattern here
 
   points.top = new Point(0, 0)
-  points.bottom = new Point(
-    measurements.headCircumference / 12,
-    (options.lengthRatio * measurements.headCircumference) / 2
-  )
+  points.bottom = new Point(measurements.head / 12, (options.lengthRatio * measurements.head) / 2)
   points.topC = points.top.shift(0, points.bottom.x)
   points.bottomC = points.bottom.shift(90, points.bottom.y - points.bottom.x)
   points.topCFlipped = points.topC.flipX()
