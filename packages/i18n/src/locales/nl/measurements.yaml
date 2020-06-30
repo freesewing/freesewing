@@ -1,32 +1,36 @@
 ---
-ankleCircumference: Enkelomtrek
-bicepsCircumference: Omtrek biceps
+ankle: Ankle circumference
+biceps: Biceps circumference
 bustFront: Buste voor
 bustSpan: Borstwijdte
-chestCircumference: Borstomtrek
-headCircumference: Hoofdomtrek
+chest: Chest circumference
+crossSeam: Cross seam
+crossSeamFront: Cross seam front
+head: Head circumference
 highBustFront: Hoge buste vooraan
 highBust: Hoge borstomtrek
-hipsCircumference: Heupomtrek
+hips: Hips circumference
 hpsToBust: HPS tot buste
 hpsToWaistBack: HPS tot taille achter
 hpsToWaistFront: HPS tot taille voor
 inseam: Binnenbeennaad
-kneeCircumference: Knieomtrek
-neckCircumference: Nekomtrek
-seatCircumference: Omtrek zitvlak
-seatDepth: Hoogte zitvlak
+knee: Knee circumference
+neck: Neck circumference
+seat: Seat circumference
+seatBack: Seat back
+crotchDepth: Crotch depth
 shoulderSlope: Schouderhelling
 shoulderToElbow: Schouder tot elleboog
 shoulderToShoulder: Schouder tot schouder
 shoulderToWrist: Schouder tot pols
 underbust: Onderborstomtrek
-upperLegCircumference: Bovenbeenomtrek
-waistCircumference: Omtrek taille
+upperLeg: Upper leg circumference
+waist: Waist circumference
+waistBack: Waist back
 waistToFloor: Taille tot vloer
 waistToHips: Taille tot heupen
 waistToKnee: Taille tot knie
 waistToSeat: Taille tot zitvlak
 waistToUnderbust: Taille tot onderbuste
 waistToUpperLeg: Taille tot bovenbeen
-wristCircumference: Polsomtrek
+wrist: Wrist circumference
