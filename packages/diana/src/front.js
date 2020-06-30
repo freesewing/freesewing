@@ -20,8 +20,8 @@ export default (part) => {
   for (let id in paths) delete paths[id]
 
   //  Waist shaping
-  points.waist.x = (measurements.waistCircumference * (1 + options.waistEase)) / 4
-  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
+  points.waist.x = (measurements.waist * (1 + options.waistEase)) / 4
+  points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
   points.hipsCp2 = points.hips.shift(90, measurements.waistToHips / 3)
   points.waistCp1 = points.waist.shift(-90, measurements.waistToHips / 3)
