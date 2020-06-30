@@ -21,7 +21,11 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
   }
   if (typeof data[measurement] === 'undefined') {
     if (typeof withBreasts[measurement] === 'undefined') {
-      throw new Error(`neckstimate() called with an invalid measurement name (${measurement})`)
+      // We used to throw this error, but let's just return null instead so things don't go off the rails
+      console.log(
+        new Error(`neckstimate() called with an invalid measurement name (${measurement})`)
+      )
+      return null
     } else {
       console.log(
         `WARNING: neckstimate() called for a breasts-only measurement (${measurement}) on a no-breasts person`
