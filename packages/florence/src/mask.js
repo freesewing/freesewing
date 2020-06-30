@@ -16,8 +16,8 @@ export default (part) => {
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
-  points.bottomLeft = new Point(0, measurements.headCircumference * options.height)
-  points.topRight = new Point((measurements.headCircumference * options.length) / 2, 0)
+  points.bottomLeft = new Point(0, measurements.head * options.height)
+  points.topRight = new Point((measurements.head * options.length) / 2, 0)
   points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
   points.tipCenter = new Point(points.topRight.x, points.bottomRight.y / 4)
 
@@ -28,7 +28,7 @@ export default (part) => {
   points.tipCenterCp2 = points.tipCenter.shiftFractionTowards(points.topRight, 0.55)
   points.tipCenterCp1 = points.tipCenter.shiftFractionTowards(points.bottomRight, 0.5)
 
-  points.topTipCp2 = points.topEdge.shift(0, measurements.headCircumference * options.curve)
+  points.topTipCp2 = points.topEdge.shift(0, measurements.head * options.curve)
   points.topTipCp1 = points.topTip
     .shiftTowards(points.topTipCp2, points.topTip.dist(points.tipCenterCp2) / 2)
     .rotate(90, points.topTip)

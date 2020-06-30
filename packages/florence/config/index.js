@@ -12,7 +12,7 @@ export default {
   optionGroups: {
     fit: ['height', 'length', 'curve']
   },
-  measurements: ['headCircumference'],
+  measurements: ['head'],
   parts: ['mask'],
   options: {
     length: { pct: 40, min: 35, max: 45 },
