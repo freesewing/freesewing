@@ -8,7 +8,7 @@ export default (part) => {
     let collarDelta = 0
     let front = 0
     let back = store.get('backCollarLength')
-    let target = measurements.neckCircumference * (1 + options.collarEase)
+    let target = measurements.neck * (1 + options.collarEase)
     do {
       points.cfNeck = points.cfNeck.shift(90, collarDelta / 1.5)
       points.hpsCp2 = utils.beamIntersectsY(

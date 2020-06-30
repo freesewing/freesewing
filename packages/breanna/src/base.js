@@ -2,10 +2,7 @@ export default (part) => {
   let { store, points, Point, measurements, options, utils } = part.shorthand()
 
   // HPS
-  points.hps = new Point(
-    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
-    0
-  )
+  points.hps = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
 
   // Shoulder point using shoulderSlope degree measurement
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
@@ -18,7 +15,7 @@ export default (part) => {
 
   // Center back axis
   points.cbHps = new Point(0, 0)
-  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
+  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
   points.cbWaist = new Point(0, measurements.hpsToWaistBack * (1 + options.verticalEase))
   points.cbHips = new Point(
     0,
@@ -39,15 +36,12 @@ export default (part) => {
   )
 
   // Waist at side seam
-  points.waist = points.cbWaist.shift(
-    0,
-    (measurements.waistCircumference * (1 + options.waistEase)) / 4
-  )
+  points.waist = points.cbWaist.shift(0, (measurements.waist * (1 + options.waistEase)) / 4)
 
   // Armhhole
   points.armhole = new Point(
     ((measurements.highBust - measurements.highBustFront) * (1 + options.chestEase)) / 2,
-    (points.shoulder.y + measurements.bicepsCircumference * options.armholeDepthBase) *
+    (points.shoulder.y + measurements.biceps * options.armholeDepthBase) *
       options.armholeDepthFactor *
       (1 + options.verticalEase) *
       (1 + options.bicepsEase)
