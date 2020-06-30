@@ -25,11 +25,11 @@ export default {
   measurements: [
     'crossSeam',
     'crossSeamFront',
-    'seatBack',
-    'seat',
     'knee',
-    'waistBack',
+    'seat',
+    'seatBack',
     'waist',
+    'waistBack',
     'waistToFloor',
     'waistToKnee',
     'waistToHips',
@@ -40,17 +40,17 @@ export default {
   options: {
     // Constants
     fitCrossSeam: true,
-    fitFrontCrossSeam: true,
-    fitBackCrossSeam: true,
+    fitCrossSeamFront: true,
+    fitCrossSeamBack: true,
 
     // Fit
-    waistEase: { pct: 2.5, min: 0, max: 10 },
-    seatEase: { pct: 2.5, min: 0, max: 10 },
+    waistEase: { pct: 2, min: 0, max: 10 },
+    seatEase: { pct: 2, min: 0, max: 10 },
     kneeEase: { pct: 6, min: 1, max: 25 },
 
     // Style
     waistHeight: { pct: 100, min: 0, max: 100 },
-    lengthBonus: { pct: 0, min: -20, max: 10 },
+    lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
     fitKnee: { bool: false },
 

@@ -57,7 +57,7 @@ export default (part) => {
       .move(points.waistIn)
       .line(points.crossSeamCurveStart)
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-      .length() - measurements.backCrossSeam
+      .length() - measurements.crossSeamBack
   /*
    * Helper method to (re)draw the cross seam
    */
@@ -101,16 +101,16 @@ export default (part) => {
   } = part.shorthand()
 
   // Let's get to work
-  points.waistX = new Point(-1 * measurements.backWaistArc * (1 + options.waistEase), 0)
+  points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
-  points.seatX = new Point(-1 * measurements.backSeatArc * (1 + options.seatEase), 0)
+  points.seatX = new Point(-1 * measurements.seatBackArc * (1 + options.seatEase), 0)
   points.seatY = new Point(0, measurements.waistToSeat)
   points.seatOut = points.seatY
   points.cbSeat = new Point(points.seatX.x, points.seatY.y)
 
   // Determine fork location
   points.fork = new Point(
-    measurements.backSeatArc * (1 + options.seatEase) * -1.25,
+    measurements.seatBackArc * (1 + options.seatEase) * -1.25,
     points.upperLegY.y * (1 + options.crotchDrop)
   )
 
@@ -169,7 +169,7 @@ export default (part) => {
   // paths.seam1 = drawPath().attr('class', 'dashed lining')
 
   // Should we fit the cross seam?
-  if (options.fitCrossSeam && options.fitBackCrossSeam) {
+  if (options.fitCrossSeam && options.fitCrossSeamBack) {
     let rotate = ['waistIn', 'waistOut']
     let delta = crossSeamDelta()
     let run = 0

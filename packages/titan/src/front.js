@@ -232,7 +232,7 @@ export default (part) => {
   // Uncomment this to see the outline prior to fitting the crotch seam
   // paths.seam1 = drawPath().attr('class', 'dashed lining')
 
-  if (options.fitCrossSeam && options.fitFrontCrossSeam) {
+  if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
     let rotate = ['waistIn', 'waistOut', 'cfWaist']
     let run = 0
