@@ -21,15 +21,12 @@ export default (part) => {
 
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
-  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
+  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
   points.cbWaist = new Point(0, measurements.hpsToWaistBack)
   points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
   // Shoulder line
-  points.neck = new Point(
-    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
-    0
-  )
+  points.neck = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
   points.hps = points.neck.clone() // We started using HPS in many measurements
   // Shoulder point using shoulderSlope degree measurement
   points.shoulder = utils.beamsIntersect(
@@ -42,8 +39,7 @@ export default (part) => {
   points.cbShoulder = new Point(0, points.shoulder.y)
   points.cbArmhole = new Point(
     0,
-    points.shoulder.y +
-      measurements.bicepsCircumference * (1 + options.bicepsEase) * options.armholeDepthFactor
+    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
   )
 
   // Now take shoulder slope reduction into account
@@ -54,10 +50,7 @@ export default (part) => {
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
-  points.armhole = new Point(
-    (measurements.chestCircumference * (1 + options.chestEase)) / 4,
-    points.cbArmhole.y
-  )
+  points.armhole = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbArmhole.y)
   points.waist = new Point(points.armhole.x, points.cbWaist.y)
   points.hips = new Point(points.armhole.x, points.cbHips.y)
   points.hem = new Point(points.armhole.x, points.cbHem.y)
@@ -104,7 +97,7 @@ export default (part) => {
 
   // Fit collar
   points.cfNeck = points.neck.rotate(-90, new Point(0, 0))
-  let target = measurements.neckCircumference * (1 + options.collarEase)
+  let target = measurements.neck * (1 + options.collarEase)
   let delta = 0
   let run = 0
   do {
