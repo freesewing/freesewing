@@ -6,18 +6,8 @@ export default function (part) {
   else store.set('gaps', [0.2, 0.35, 0.5, 0.65, 0.8])
 
   // Absolute values for some options
-  store.set('waistReduction', measurements.waistCircumference * options.waistReduction)
-  debug({
-    type: 'info',
-    label: '✅ Waist reduction',
-    msg: utils.units(store.get('waistReduction'))
-  })
+  store.set('waistReduction', measurements.waist * options.waistReduction)
   store.set('backOpening', measurements.underbust * options.backOpening)
-  debug({
-    type: 'info',
-    label: '✅ Back opening',
-    msg: utils.units(store.get('backOpening'))
-  })
   let len = measurements.waistToUnderbust + measurements.waistToHips
   for (let option of ['backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise'])
     store.set(option, len * options[option])
@@ -30,15 +20,12 @@ export default function (part) {
    * Can I be sure? Maybe not, but a larger underbust than hip
    * measurements seems very rare to say the least.
    */
-  store.set('width', 0.5 * (measurements.hipsCircumference - store.get('backOpening')))
+  store.set('width', 0.5 * (measurements.hips - store.get('backOpening')))
   store.set(
     'waistIntake',
-    0.5 *
-      (measurements.hipsCircumference -
-        measurements.waistCircumference +
-        store.get('waistReduction'))
+    0.5 * (measurements.hips - measurements.waist + store.get('waistReduction'))
   )
-  store.set('bustIntake', 0.5 * (measurements.hipsCircumference - measurements.underbust))
+  store.set('bustIntake', 0.5 * (measurements.hips - measurements.underbust))
 
   // Basic box (CB = Center back, CF = Center front)
   let wid = store.get('width')

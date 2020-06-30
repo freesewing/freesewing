@@ -13,13 +13,7 @@ export default {
     fit: ['waistReduction', 'panels'],
     style: ['backOpening', 'backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise']
   },
-  measurements: [
-    'underbust',
-    'waistCircumference',
-    'hipsCircumference',
-    'waistToUnderbust',
-    'waistToHips'
-  ],
+  measurements: ['underbust', 'waist', 'hips', 'waistToUnderbust', 'waistToHips'],
   dependencies: {
     panel1: 'panels',
     panel2: 'panels',
