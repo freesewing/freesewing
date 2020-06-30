@@ -9,10 +9,17 @@
 - Updated side seam shaping and tweaked options for better defaults
 - Better handling of `armholeDrop` option
 - Ported aaron to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 #### Fixed
 
 - Fixed incorrect instruction for neck binding (the indicated length was only half)
+
+### benjamin
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
 
 ### bent
 
@@ -23,6 +30,7 @@
 - Better range for the `shoulderSlopeReduction` measurement
 - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set tip of undersleeve as anchor point for sampling
+- Removed `Circumference` suffix from measurement names
 
 ### breanna
 
@@ -30,6 +38,7 @@
 
 - Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
 - Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### brian
 
@@ -38,12 +47,14 @@
 - Ported brian to new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
 - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set HPS as anchor point for sampling in front and back
+- Removed `Circumference` suffix from measurement names
 
 ### bruce
 
 #### Changed
 
 - Ported bruce to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 #### Fixed
 
@@ -56,6 +67,7 @@
 - Better range for the `shoulderSlopeReduction` measurement
 - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set a sample anchor point on the side part
+- Removed `Circumference` suffix from measurement names
 
 ### carlton
 
@@ -63,6 +75,7 @@
 
 - Better range for the `shoulderSlopeReduction` measurement
 - Ported carlton to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### cathrin
 
@@ -70,6 +83,7 @@
 
 - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set sample anchor points on all panels
+- Removed `Circumference` suffix from measurement names
 
 #### Fixed
 
@@ -105,6 +119,25 @@
 
 - Made the `shoulderSlopeReduction` option static so it's not available in the UI
 - Ported diana to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
+
+### florence
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
+
+### florent
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
+
+### holmes
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
 
 ### huey
 
@@ -114,6 +147,7 @@
 - Changed some option to better defaults
 - Ported huey to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Made the `shoulderSlopeReduction` option static so it's not available in the UI
+- Removed `Circumference` suffix from measurement names
 
 #### Fixed
 
@@ -129,12 +163,14 @@
 
 - Changed some option to better defaults
 - Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### i18n
 
 #### Changed
 
 - Added translations for Titan
+- Removed `Circumference` suffix from measurement names
 
 ### jaeger
 
@@ -143,6 +179,7 @@
 - Changed some option to better defaults
 - Set an anchor on side part for sampling
 - Ported jaeger to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### models
 
@@ -150,12 +187,20 @@
 
 - Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+- Removed `Circumference` suffix from measurement names
 
 ### penelope
 
 #### Changed
 
 - Ported penelope to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
+
+### plugin-bust
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
 
 ### plugin-buttons
 
@@ -185,24 +230,28 @@
 #### Changed
 
 - Ported sandy to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### shin
 
 #### Changed
 
 - Ported shin to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### simon
 
 #### Changed
 
 - Ported simon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### simone
 
 #### Changed
 
 - Ported simone to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### sven
 
@@ -211,6 +260,7 @@
 - Improved the shaping of the side seam
 - Changed some option to better defaults
 - Ported sven to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### tamiko
 
@@ -218,12 +268,14 @@
 
 - Switch from `shoulderSlope` option to `shoulderSlope` measurement
 - Ported tamiko to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
 
 ### theo
 
 #### Changed
 
 - Ported theo to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+- Removed `Circumference` suffix from measurement names
 
 ### titan
 
@@ -237,6 +289,13 @@
 #### Changed
 
 - Ported trayvon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
+
+### tutorial
+
+#### Changed
+
+- Removed `Circumference` suffix from measurement names
 
 ### utils
 
@@ -250,18 +309,22 @@
 - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
 - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+- Removed `Circumference` suffix from measurement names
 
 ### wahid
 
 #### Changed
 
 - Ported wahid to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+- Removed `Circumference` suffix from measurement names
+- Removed `wrist` and `shoulderToWrist` as required measurements
 
 ### waralee
 
 #### Changed
 
 - Ported waralee to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+- Removed `Circumference` suffix from measurement names
 
 ## 2.6.0 (2020-05-01)
 
