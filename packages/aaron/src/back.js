@@ -18,7 +18,7 @@ export default function (part) {
   } = part.shorthand()
 
   // Lower back neck a bit
-  points.cbNeck.y = measurements.neckCircumference / 10
+  points.cbNeck.y = measurements.neck / 10
 
   points.strapLeftCp2 = utils.beamsIntersect(
     points.strapLeft,

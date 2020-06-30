@@ -22,14 +22,14 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
+    'biceps',
+    'chest',
     'hpsToWaistBack',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'hipsCircumference'
+    'hips'
   ],
   dependencies: {
     front: 'base',

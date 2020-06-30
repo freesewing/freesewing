@@ -59,8 +59,7 @@ export default function (part) {
 
   // Hips
   points.hips.x =
-    ((measurements.hipsCircumference + options.hipsEase * measurements.hipsCircumference) / 4) *
-    (1 - options.stretchFactor)
+    ((measurements.hips + options.hipsEase * measurements.hips) / 4) * (1 - options.stretchFactor)
   points.waist.x = points.hips.x // Because stretch
 
   points.hipsCp2 = new Point(
