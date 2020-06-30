@@ -4,7 +4,7 @@ kneeEase:
   description: Controls the amout of ease at the knee
 waistHeight:
   title: Waist height
-  description: Controls the height of the waist
+  description: Controls the height of the waist, 100% = waist height, 0% = hip height
 lengthBonus:
   title: Length bonus
   description: Controls the length of the trousers
@@ -13,7 +13,7 @@ crotchDrop:
   description: Lowers the crotch for a more relaxed fit
 fitKnee:
   title: Fit the knee
-  description: Fits the legs from the based on the knee circumference
+  description: Fits the legs from based on the knee circumference, rather than seat circumference
 legBalance:
   title: Leg balance
   description: Controls the ratio between front and back panel of the leg
