@@ -31,16 +31,16 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
+    'biceps',
+    'chest',
     'hpsToWaistBack',
     'waistToHips',
-    'neckCircumference',
+    'neck',
     'shoulderSlope',
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     back: 'base',
