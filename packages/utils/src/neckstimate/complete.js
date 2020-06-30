@@ -2,17 +2,17 @@
 // we can calculate based on what we already have
 export default function complete(m) {
   // Added by plugin-bust:
-  m.bust = m.chestCircumference
+  m.bust = m.chest
 
   // Added by plugin-measurements:
-  m.backCrossSeam = m.crossSeam - m.frontCrossSeam
-  m.backSeatArc = m.backSeat / 2
-  m.backWaistArc = m.backWaist / 2
+  m.crossSeamBack = m.crossSeam - m.crossSeamFront
+  m.seatBackArc = m.seatBack / 2
+  m.waistBackArc = m.waistBack / 2
   if (m.bust && m.bustFront) m.bustBack = m.bust - m.bustFront
-  m.frontSeat = m.seatCircumference - m.backSeat
-  m.frontSeatArc = m.frontSeat / 2
-  m.frontWaist = m.waistCircumference - m.backWaist
-  m.frontWaistArc = m.frontWaist / 2
+  m.seatFront = m.seat - m.seatBack
+  m.seatFrontArc = m.seatFront / 2
+  m.waistFront = m.waist - m.waistBack
+  m.waistFrontArc = m.waistFront / 2
   if (m.hightBust && m.highBustFront) m.highBustBack = m.highBust - m.highBustFront
 
   return m

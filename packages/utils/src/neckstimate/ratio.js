@@ -31,10 +31,10 @@ export default {
   waistToUnderbust: v,
   waistToUpperLeg: v,
   // Other
-  backSeat: 0.6,
-  backWaist: 0.85,
+  seatBack: 0.6,
+  waistBack: 0.85,
   crossSeam: 0.6,
-  frontCrossSeam: 0.3,
+  crossSeamFront: 0.3,
   head: 0.35,
   inseam: 0.25,
   knee: 0.65,

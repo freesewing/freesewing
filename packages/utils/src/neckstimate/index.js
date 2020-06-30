@@ -2,15 +2,14 @@ import withBreasts from './with-breasts'
 import withoutBreasts from './without-breasts'
 import ratio from './ratio'
 
-// This estimates a measurement based on the neck circumference
-const neckstimate = (neckCircumference = false, measurement = false, breasts = false) => {
+// This estimates a measurement based on the neck
+const neckstimate = (neck = false, measurement = false, breasts = false) => {
   let data = breasts ? withBreasts : withoutBreasts
 
   // Shoulder slope is in degrees now. Always return de default.
   if (measurement === 'shoulderSlope') return withBreasts.shoulderSlope
 
-  if (!neckCircumference)
-    throw new Error('neckstimate() requires a neck circumference in mm as first parameter')
+  if (!neck) throw new Error('neckstimate() requires a neck measurement in mm as first parameter')
   if (!measurement) {
     // No measurement passed
     throw new Error(
@@ -36,7 +35,7 @@ const neckstimate = (neckCircumference = false, measurement = false, breasts = f
   }
 
   // This is what should happen
-  let delta = (neckCircumference / data.neckCircumference) * data[measurement] - data[measurement]
+  let delta = (neck / data.neck) * data[measurement] - data[measurement]
 
   return Math.round(data[measurement] + delta * ratio[measurement])
 }
