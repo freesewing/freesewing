@@ -30,6 +30,7 @@ export const list = [
   'sven',
   'tamiko',
   'theo',
+  'titan',
   'trayvon',
   'wahid',
   'waralee'
@@ -55,6 +56,7 @@ export const withoutBreasts = [
   'sven',
   'tamiko',
   'theo',
+  'titan',
   'trayvon',
   'wahid',
   'waralee'
