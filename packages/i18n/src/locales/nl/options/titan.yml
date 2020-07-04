@@ -4,7 +4,7 @@ kneeEase:
   description: Bepaalt de hoeveelheid overwijdte aan de knie
 waistHeight:
   title: Taillehoogte
-  description: Controls the height of the waist, 100% = waist height, 0% = hip height
+  description: Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte
 lengthBonus:
   title: Lengtebonus
   description: Bepaalt de lengte van de broek
@@ -13,7 +13,7 @@ crotchDrop:
   description: Verlaagt het kruis voor een lossere pasvorm
 fitKnee:
   title: Pas de knie aan
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  description: Past de broekspijpen aan gebaseerd op de omtrek van de knie in plaats van de omtrek van het zitvlak
 legBalance:
   title: Balans been
   description: Bepaalt de verhouding tussen de voor-en achterkant van de broekspijp
