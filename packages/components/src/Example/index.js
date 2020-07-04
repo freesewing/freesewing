@@ -52,7 +52,7 @@ const Example = ({
   }
   settings = {
     options: { ...options },
-    measurements: { headCircumference: 390 },
+    measurements: { head: 390 },
     ...settings
   }
   if (part !== '') settings.only = [part]
