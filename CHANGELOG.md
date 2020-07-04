@@ -96,6 +96,7 @@
 
 - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
 - Changed `models` to `people` in `sampleConfigurator`
+- The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
 
 #### Fixed
 
@@ -180,6 +181,13 @@
 - Set an anchor on side part for sampling
 - Ported jaeger to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Removed `Circumference` suffix from measurement names
+
+### legend
+
+#### Added
+
+- A pattern to document the markings on our patterns
+- Initial release
 
 ### models
 
@@ -310,6 +318,7 @@
 - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
 - Removed `Circumference` suffix from measurement names
+- Added the `isDegMeasurement` method
 
 ### wahid
 

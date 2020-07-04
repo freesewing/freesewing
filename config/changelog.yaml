@@ -4,11 +4,12 @@ Unreleased:
     components:
       - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
       - Changed `models` to `people` in `sampleConfigurator`
+      - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
     core:
       - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
     hugo:
       - Added shaping of the side seam
-    notation-legend:
+    legend:
       - A pattern to document the markings on our patterns
       - Initial release
     plugin-mirror:
@@ -139,6 +140,7 @@ Unreleased:
       - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
       - Removed `Circumference` suffix from measurement names
+      - Added the `isDegMeasurement` method
     wahid:
       - Ported wahid to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Removed `Circumference` suffix from measurement names

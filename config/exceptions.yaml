@@ -18,24 +18,25 @@ packageJson:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
     files:
-      - "Blockquote/*"
-      - "Draft/*"
-      - "DraftConfigurator/*"
-      - "Emblem/*"
-      - "Example/*"
-      - "Footer/*"
-      - "Icon/*"
-      - "LineDrawing/*"
-      - "Logo/*"
-      - "Navbar/*"
-      - "Ogol/*"
-      - "Robot/*"
-      - "SampleConfigurator/*"
-      - "Spinner/*"
-      - "withGist/*"
-      - "withLanguage/*"
-      - "withStorage/*"
-      - "Workbench/*"
+      - 'Blockquote/*'
+      - 'Draft/*'
+      - 'DraftConfigurator/*'
+      - 'Emblem/*'
+      - 'Example/*'
+      - 'Footer/*'
+      - 'Icon/*'
+      - 'Legend/*'
+      - 'LineDrawing/*'
+      - 'Logo/*'
+      - 'Navbar/*'
+      - 'Ogol/*'
+      - 'Robot/*'
+      - 'SampleConfigurator/*'
+      - 'Spinner/*'
+      - 'withGist/*'
+      - 'withLanguage/*'
+      - 'withStorage/*'
+      - 'Workbench/*'
   create-freesewing-pattern:
     bin:
       create-freesewing-pattern: index.js
@@ -66,9 +67,9 @@ packageJson:
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    main: "index.json"
+    main: 'index.json'
     module: '!'
-    scripts: { build: "echo \"prettier-config: No build required\" && exit 0" }
+    scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier
     files:
@@ -80,29 +81,29 @@ packageJson:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
     files:
-      - "backend/*"
-      - "camelCase/*"
-      - "capitalize/*"
-      - "cloneObject/*"
-      - "convertSize/*"
-      - "defaultGist/*"
-      - "defaultSa/*"
-      - "formatImperial/*"
-      - "formatMm/*"
-      - "measurementAsMm/*"
-      - "measurementDiffers/*"
-      - "neckstimate/*"
-      - "optionDefault/*"
-      - "optionType/*"
-      - "roundMm/*"
-      - "roundMmDown/*"
-      - "roundMmUp/*"
-      - "sliderStep/*"
-      - "smallestImperialStep/*"
-      - "storage/*"
-      - "tiler/*"
-      - "validateEmail/*"
-      - "validateTld/*"
+      - 'backend/*'
+      - 'camelCase/*'
+      - 'capitalize/*'
+      - 'cloneObject/*'
+      - 'convertSize/*'
+      - 'defaultGist/*'
+      - 'defaultSa/*'
+      - 'formatImperial/*'
+      - 'formatMm/*'
+      - 'isDegMeasurement/*'
+      - 'measurementAsMm/*'
+      - 'measurementDiffers/*'
+      - 'neckstimate/*'
+      - 'optionDefault/*'
+      - 'optionType/*'
+      - 'roundMm/*'
+      - 'roundMmDown/*'
+      - 'roundMmUp/*'
+      - 'sliderStep/*'
+      - 'smallestImperialStep/*'
+      - 'storage/*'
+      - 'tiler/*'
+      - 'validateEmail/*'
+      - 'validateTld/*'
   waralee:
     author: woutervdub (https://github.com/woutervdub)
-
