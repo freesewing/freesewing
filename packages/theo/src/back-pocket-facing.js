@@ -1,7 +1,7 @@
-export default function(part) {
+export default function (part) {
   let { macro, measurements, Point, points, Path, paths, complete, paperless } = part.shorthand()
 
-  let width = measurements.hipsCircumference * 0.16
+  let width = measurements.hips * 0.16
   let height = width / 2
 
   points.topRight = new Point(width / 2, 0)

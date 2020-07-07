@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Zak
-  description: Whether to include a front pocket or not
+  description: Of een voorzak moet worden toegevoegd of niet
 pocketHeight:
   title: Zak hoogte
   description: Bepaalt de hoogte van de zak

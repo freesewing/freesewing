@@ -1,26 +1,26 @@
 ---
 backDarts:
-  tile: Back darts
-  description: Whether or not to include back darts
+  tile: Hintere Abnäher
+  description: Sollen Abnäher am Rücken eingefügt werden oder nicht
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Automatisch
+    always: Immer
+    never: Niemals
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Formgebung der hinteren Abnäher
+  description: Wie stark die hinteren Abnäher die Figur betonen
 barrelCuffNarrowButton:
   title: Manschette schmaler Knopf
   description: Gibt an, ob Sie einen Knopf hinzufügen, um die Manschetten enger zu binden. Diese Option ist nur für Fassmanschetten relevant.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Kellerfalte
+  description: Eine Kellerfalte am Rückenteil einfügen oder nicht
 boxPleatWidth:
   title: Quetschfaltenweite
-  description: Gesamtbreite der Quetschfalte
+  description: Gesamtbreite der Kellerfalte
 boxPleatFold:
-  title: Quetschfalte Falz
-  description: Der Betrag, um welchen die Quetschfalte nach innen gefaltet wird
+  title: Kellerfalte Falz
+  description: Der Betrag, um welchen die Kellerfalte nach innen gefaltet wird
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.
@@ -32,7 +32,7 @@ buttonPlacketWidth:
   description: Breite der Knopfleiste.
 buttonFreeLength:
   title: Knopf freie länge
-  description: Wie viel von der Unterseite des Frontverschlusses hält der Knopf frei.
+  description: Wie viel soll am unteren Ende der Verschlussleiste knopffrei bleiben.
 buttonholePlacketFoldWidth:
   title: Knopflochleiste Faltenbreite
   description: Knopflochleiste Faltenbreite
@@ -55,22 +55,22 @@ collarBend:
   title: Kragenbiegung
   description: Die Krümmung des Kragens.
 collarFlare:
-  title: Kragenaufflackern
-  description: Die Flare der Kragenspitzen.
+  title: Kragenausstellung
+  description: Die Ausstellung der Kragenspitzen.
 collarGap:
   title: Kragenlücke
-  description: Der Spalt zwischen den beiden Kragen endet.
+  description: Der Spalt zwischen den beiden Kragenenden.
 collarRoll:
   title: Kragenrolle
-  description: Der Betrag, um den der obere Kragen größer ist als der Unterspanzer.
+  description: Der Betrag, um den der Oberragen größer ist als der Unterkragen.
 collarStandBend:
-  title: Kragenstandbiegung
-  description: Die Biegung des Kragensstand.
+  title: Kragenstegbiegung
+  description: Die Biegung des Kragensstegs.
 collarStandCurve:
-  title: Kragenstandkrümmung
-  description: Die Krümmung des Kragensstand.
+  title: Kragenstegkrümmung
+  description: Die Krümmung des Kragensstegs.
 collarStandWidth:
-  title: Kragenstandbreite
+  title: Kragenstegbreite
   description: Breite des Kragenständers.
 cuffButtonRows:
   title: Manschettenknopfreihen
@@ -80,7 +80,7 @@ cuffButtonRows:
     '2': Doppelte Manschettenknopfreihe
 cuffDrape:
   title: Manschette drapieren
-  description: Der Betrag, um den die Hülse breiter ist als die Manschette, an der sie verbunden sind.
+  description: Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden.
 cuffLength:
   title: Manschettenlänge
   description: die Länge der Manschetten
@@ -124,7 +124,7 @@ splitYoke:
   description: Ob ein Split-Joch erstellt werden soll.
 waistEase:
   title: Taille erleichtert
-  description: Das Maß an Leichtigkeit an Ihrer (natürlichen) Taille.
+  description: Der Betrag, der an Ihrer (natürlichen) Taille zugegeben wird.
 yokeDart:
-  title: Jochpfeil
-  description: Gibt an, ob ein Pfeil an den Seiten des Jochs angebracht werden soll, um einen runderen Rücken zu passen.
+  title: Jochabnäher
+  description: Gibt an, ob ein Abnäher an den Seiten des Jochs angebracht werden soll, um an einen runderen Rücken zu passen.

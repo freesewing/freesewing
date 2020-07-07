@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -54,9 +54,7 @@ export default function(part) {
       to: new Point(points.top.x, points.usLeftEdge.y)
     })
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {
       macro('ld', {

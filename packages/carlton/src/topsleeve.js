@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -9,7 +9,9 @@ export default function(part) {
     options,
     macro,
     paths,
-    Path
+    Path,
+    Snippet,
+    snippets
   } = part.shorthand()
 
   // Add cuff
@@ -55,10 +57,12 @@ export default function(part) {
       from: points.boxBottom,
       to: points.top
     })
+    macro('scalebox', { at: points.tsWristLeftHelperTop })
+    delete snippets.logo
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    snippets.sleeveTop = new Snippet('notch', points.top)
 
     if (paperless) {
       macro('ld', {

@@ -1,43 +1,53 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Draft from "../../Draft";
-import Design from "../Design";
-import DraftConfigurator from "../../DraftConfigurator";
-import { FormattedMessage } from "react-intl";
-import Prism from "prismjs";
-import fileSaver from "file-saver";
-import theme from "@freesewing/plugin-theme";
+import React, { useState } from 'react'
+import Draft from '../../Draft'
+import Zoombox from '../Zoombox'
+import Design from '../Design'
+import DraftConfigurator from '../../DraftConfigurator'
+import { FormattedMessage } from 'react-intl'
+import Prism from 'prismjs'
+import fileSaver from 'file-saver'
+import theme from '@freesewing/plugin-theme'
+import IconButton from '@material-ui/core/IconButton'
+import DesignIcon from '@material-ui/icons/Fingerprint'
+import DumpIcon from '@material-ui/icons/LocalSee'
+import ClearIcon from '@material-ui/icons/HighlightOff'
+import AdvancedIcon from '@material-ui/icons/Policy'
+import PaperlessIcon from '@material-ui/icons/Nature'
+import CompleteIcon from '@material-ui/icons/Style'
+import UnhideIcon from '@material-ui/icons/ChevronLeft'
+import HideIcon from '@material-ui/icons/ChevronRight'
 
-const DraftPattern = props => {
-  const [design, setDesign] = useState(true);
-  const [focus, setFocus] = useState(null);
+const DraftPattern = (props) => {
+  const [design, setDesign] = useState(true)
+  const [focus, setFocus] = useState(null)
+  const [viewBox, setViewBox] = useState(false)
+  const [hideAside, setHideAside] = useState(false)
 
   const raiseEvent = (type, data) => {
-    if (type === "clearFocusAll") {
-      props.updateGist(false, "settings", "only");
-      return setFocus(null);
+    if (type === 'clearFocusAll') {
+      props.updateGist(false, 'settings', 'only')
+      return setFocus(null)
     }
-    let f = {};
-    if (focus !== null) f = { ...focus };
-    if (typeof f[data.part] === "undefined")
-      f[data.part] = { paths: [], points: [], coords: [] };
-    if (type === "point") f[data.part].points.push(data.name);
-    else if (type === "path") f[data.part].paths.push(data.name);
-    else if (type === "coords") f[data.part].coords.push(data.coords);
-    else if (type === "clearFocus") {
-      let i = focus[data.part][data.type].indexOf(data.name);
-      f[data.part][data.type].splice(i, 1);
-    } else if (type === "part") props.updateGist(data, "settings", "only");
+    let f = {}
+    if (focus !== null) f = { ...focus }
+    if (typeof f[data.part] === 'undefined') f[data.part] = { paths: [], points: [], coords: [] }
+    if (type === 'point') f[data.part].points.push(data.name)
+    else if (type === 'path') f[data.part].paths.push(data.name)
+    else if (type === 'coords') f[data.part].coords.push(data.coords)
+    else if (type === 'clearFocus') {
+      let i = focus[data.part][data.type].indexOf(data.name)
+      f[data.part][data.type].splice(i, 1)
+    } else if (type === 'part') props.updateGist(data, 'settings', 'only')
 
-    setFocus(f);
-  };
+    setFocus(f)
+  }
 
-  const svgToFile = svg => {
+  const svgToFile = (svg) => {
     const blob = new Blob([svg], {
-      type: "image/svg+xml;charset=utf-8"
-    });
-    fileSaver.saveAs(blob, "freesewing-" + props.config.name + ".svg");
-  };
+      type: 'image/svg+xml;charset=utf-8'
+    })
+    fileSaver.saveAs(blob, 'freesewing-' + props.config.name + '.svg')
+  }
 
   if (props.svgExport) {
     svgToFile(
@@ -48,122 +58,177 @@ const DraftPattern = props => {
         .use(theme)
         .draft()
         .render()
-    );
-    props.setSvgExport(false);
+    )
+    props.setSvgExport(false)
   }
 
   const styles = {
     paragraph: {
-      padding: "0 1rem"
+      padding: '0 1rem'
+    },
+    aside: {
+      maxWidth: '350px',
+      background: 'transparent',
+      border: 0,
+      fontSize: '90%',
+      boxShadow: '0 0 1px #cccc',
+      display: hideAside ? 'none' : 'block'
+    },
+    icon: {
+      margin: '0 0.25rem'
+    },
+    unhide: {
+      position: 'absolute',
+      top: '76px',
+      right: 0,
+      background: props.theme === 'dark' ? '#f8f9fa' : '#212529',
+      borderTopLeftRadius: '50%',
+      borderBottomLeftRadius: '50%',
+      width: '26px',
+      height: '30px'
     }
-  };
-  let pattern = new props.Pattern(props.gist.settings);
-  pattern.draft();
-  let patternProps = pattern.getRenderProps();
-  let focusCount = 0;
+  }
+  let pattern = new props.Pattern(props.gist.settings)
+  pattern.draft()
+  let patternProps = pattern.getRenderProps()
+  let focusCount = 0
   if (focus !== null) {
     for (let p of Object.keys(focus)) {
-      for (let i in focus[p].points) focusCount++;
-      for (let i in focus[p].paths) focusCount++;
-      for (let i in focus[p].coords) focusCount++;
+      for (let i in focus[p].points) focusCount++
+      for (let i in focus[p].paths) focusCount++
+      for (let i in focus[p].coords) focusCount++
     }
   }
 
   let gist = Prism.highlight(
     JSON.stringify(props.gist, null, 2),
     Prism.languages.javascript,
-    "javascript"
-  );
+    'javascript'
+  )
+  let iconProps = {
+    size: 'small',
+    style: styles.icon,
+    color: 'inherit'
+  }
+  const color = (check) => (check ? '#40c057' : '#fa5252')
 
   return (
     <div className="fs-sa">
-      <section>
-        <h2>
-          <FormattedMessage id="app.pattern" />
-        </h2>
+      <section style={{ margin: '1rem' }}>
         <Draft
           {...patternProps}
           design={design}
           focus={focus}
           raiseEvent={raiseEvent}
+          viewBox={viewBox}
+          className="freesewing draft shadow"
         />
-        <h2>gist</h2>
-        <div className="gatsby-highlight">
-          <pre
-            className="language-json"
-            dangerouslySetInnerHTML={{ __html: gist }}
-          />
-        </div>
+        {hideAside && (
+          <div style={styles.unhide}>
+            <IconButton
+              onClick={() => setHideAside(false)}
+              title="Show sidebar"
+              {...iconProps}
+              style={{ margin: 0 }}
+            >
+              <span style={{ color: props.theme === 'dark' ? '#212529' : '#f8f9fa' }}>
+                <UnhideIcon />
+              </span>
+            </IconButton>
+          </div>
+        )}
       </section>
 
-      <aside>
+      <aside style={styles.aside}>
         <div className="sticky">
-          {design ? (
-            <React.Fragment>
-              <p style={styles.paragraph}>
-                <FormattedMessage id="cfp.designModeIsOn" />
-                &nbsp;(
-                <a href="#logo" onClick={() => setDesign(false)}>
-                  <FormattedMessage id="cfp.turnOff" />
-                </a>
-                )
-                {focusCount > 0 ? (
-                  <React.Fragment>
-                    &ensp;(
-                    <a
-                      href="#logo"
-                      onClick={() => raiseEvent("clearFocusAll", null)}
-                    >
-                      <FormattedMessage id="app.reset" />
-                    </a>
-                    )
-                  </React.Fragment>
-                ) : null}
-              </p>
-              <Design
-                focus={focus}
-                design={design}
-                raiseEvent={raiseEvent}
-                parts={patternProps.parts}
-              />
-            </React.Fragment>
-          ) : (
-            <p style={styles.paragraph}>
-              <FormattedMessage id="cfp.designModeIsOff" />
-              &nbsp;(
-              <a href="#logo" onClick={() => setDesign(true)}>
-                <FormattedMessage id="cfp.turnOn" />
-              </a>
-              )
-            </p>
+          <div style={{ padding: '5px' }}>
+            <Zoombox patternProps={patternProps} setViewBox={setViewBox} />
+          </div>
+          <div style={{ margin: '1rem auto 0', textAlign: 'center' }}>
+            <IconButton
+              onClick={() => setDesign(!design)}
+              title="Toggle design mode"
+              {...iconProps}
+            >
+              <span style={{ color: color(design) }}>
+                <DesignIcon />
+              </span>
+            </IconButton>
+            {design && (
+              <IconButton
+                onClick={() => raiseEvent('clearFocusAll', null)}
+                title="Clear design mode"
+                {...iconProps}
+              >
+                <ClearIcon color="primary" />
+              </IconButton>
+            )}
+            <IconButton
+              onClick={() => console.log(pattern)}
+              title="console.log(pattern)"
+              {...iconProps}
+            >
+              <DumpIcon color="primary" />
+            </IconButton>
+            |
+            <IconButton
+              onClick={() =>
+                props.updateGist(!props.gist.settings.advanced, 'settings', 'advanced')
+              }
+              title="Toggle advanced settings"
+              {...iconProps}
+            >
+              <span style={{ color: color(props.gist.settings.advanced) }}>
+                <AdvancedIcon />
+              </span>
+            </IconButton>
+            <IconButton
+              onClick={() =>
+                props.updateGist(!props.gist.settings.paperless, 'settings', 'paperless')
+              }
+              title="Toggle paperless"
+              {...iconProps}
+            >
+              <span style={{ color: color(props.gist.settings.paperless) }}>
+                <PaperlessIcon />
+              </span>
+            </IconButton>
+            <IconButton
+              onClick={() =>
+                props.updateGist(!props.gist.settings.complete, 'settings', 'complete')
+              }
+              title="Toggle complete"
+              {...iconProps}
+            >
+              <span style={{ color: color(props.gist.settings.complete) }}>
+                <CompleteIcon />
+              </span>
+            </IconButton>
+            <IconButton onClick={() => setHideAside(true)} title="Hide sidebar" {...iconProps}>
+              <HideIcon />
+            </IconButton>
+          </div>
+          {design && (
+            <Design
+              focus={focus}
+              design={design}
+              raiseEvent={raiseEvent}
+              parts={patternProps.parts}
+            />
           )}
           <DraftConfigurator
             noDocs
             config={props.config}
-            gist={props.gist}
-            updateGist={props.updateGist}
+            data={props.gist}
+            updatePatternData={props.updateGist}
             raiseEvent={props.raiseEvent}
             freesewing={props.freesewing}
-            units={props.units}
+            units={props.units || 'metric'}
           />
         </div>
       </aside>
     </div>
-  );
-};
+  )
+}
 
-DraftPattern.propTypes = {
-  gist: PropTypes.object.isRequired,
-  updateGist: PropTypes.func.isRequired,
-  config: PropTypes.object.isRequired,
-  raiseEvent: PropTypes.func.isRequired,
-  Pattern: PropTypes.func.isRequired,
-  units: PropTypes.oneOf(["metric", "imperial"])
-};
-
-DraftPattern.defaultProps = {
-  units: "metric",
-  pointInfo: null
-};
-
-export default DraftPattern;
+export default DraftPattern

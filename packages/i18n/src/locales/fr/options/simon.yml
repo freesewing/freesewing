@@ -1,26 +1,26 @@
 ---
 backDarts:
-  tile: Back darts
-  description: Whether or not to include back darts
+  tile: Pinces dos
+  description: Inclure ou non des pinces au dos
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Automatique
+    always: Toujours
+    never: Jamais
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Forme de la pince dos
+  description: L'ajustement résultant des pinces du dos
 barrelCuffNarrowButton:
-  title: Bouton de manche étroit
-  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
+  title: Bouton de resserrage de poignet
+  description: Détermine si on va inclure un bouton pour rendre les poignets de manche plus étroits. Cette option n'est pertinente que pour les poignets de manche classiques.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Pli plat
+  description: Inclure ou non un pli plat au dos
 boxPleatWidth:
-  title: Box pleat width
-  description: The total widh of the box pleat
+  title: Largeur du pli plat
+  description: Largeur totale du pli plat
 boxPleatFold:
-  title: Box pleat fold
-  description: The amount by with the box pleat folds inwards
+  title: Repli du pli plat
+  description: La largeur du pli plat repliée à l'intérieur
 buttonPlacketStyle:
   title: Style de patte de boutonnage
   description: Style de la patte de boutonnage
@@ -28,23 +28,23 @@ buttonPlacketStyle:
     classic: Style classique
     seamless: Style français (sans couture)
 buttonPlacketWidth:
-  title: Largeur de patte de boutonnage
-  description: Largeur de la patte de boutonnage.
+  title: Largeur de patte de boutonnage - côté boutons
+  description: Largeur de la patte de boutonnage sur le côté des boutons.
 buttonFreeLength:
   title: Longueur sans bouton
-  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+  description: Quelle distance laisser sans bouton à partir du bas devant de la chemise .
 buttonholePlacketFoldWidth:
-  title: Largeur de pli de boutonnière
-  description: Largeur du pli de la boutonnière.
+  title: Largeur de repli de la gorge (patte de boutonnage - du côté boutonnières)
+  description: Largeur du pli de la gorge (patte de boutonnage, du côté des boutonnières).
 buttonholePlacketStyle:
-  title: Style de patte de boutonnière
-  description: Style de la patte de boutonnière.
+  title: Style de gorge (patte de boutonnage - du côté boutonnières)
+  description: Style de la gorge (patte de boutonnage, côté boutonnières).
   options:
-    classic: Style classique
-    seamless: Style français (sans couture)
+    classic: Style classique (gorge américaine, bande avec surpiqûres)
+    seamless: Style français (gorge simple, sans couture)
 buttonholePlacketWidth:
-  title: Largeur de patte de boutonnière
-  description: Largeur de la patte de boutonnière.
+  title: Largeur de la gorge (patte de boutonnage - du côté boutonnières)
+  description: Largeur de la gorge (patte de boutonnage, côté des boutonnières).
 buttons:
   title: Nombre de boutons
   description: Le nombre de boutons sur la fermeture avant.
@@ -61,42 +61,42 @@ collarGap:
   title: Écart du col
   description: L'écart entre les deux extrémités du col.
 collarRoll:
-  title: Pliure du col
+  title: Repli du col
   description: La valeur rendant le tombant du col plus large que le pied de col.
 collarStandBend:
-  title: Courbure du col
-  description: La courbure du col.
+  title: Courbure centrale du pied de col
+  description: La courbure centrale du pied de col.
 collarStandCurve:
-  title: Courbe du col
-  description: La courbe du col.
+  title: Courbe des extrémités du pied de col
+  description: La courbe des extrémités du pied de col.
 collarStandWidth:
-  title: Largeur du col
-  description: Largeur du col.
+  title: Largeur du pied de col
+  description: Largeur du pied de col.
 cuffButtonRows:
   title: Rangée de boutons de manchette
-  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
+  description: Simple ou double rangée de boutons de poignet. Cette option n'est pertinente que pour les poignets classiques.
   options:
     '1': rangée de boutons de manchette simple
     '2': rangée de boutons de manchette double
 cuffDrape:
-  title: Drapé d'emmanchure
-  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
+  title: Drapé du bas de manche
+  description: Il s'agit de la largeur supplémentaire de tissu de la manche par rapport au poignet, à l'endroit où ils sont joints.
 cuffLength:
-  title: Longueur d'emmanchure
-  description: La longueur d'emmanchure.
+  title: Longueur de poignet
+  description: La longueur des poignets.
 cuffStyle:
-  title: Style d'emmanchure
-  description: Style d'emmanchure.
+  title: Style de poignet
+  description: Style de poignets.
   options:
-    roundedBarrelCuff: Emmanchure classique arrondie
-    angledBarrelCuff: Emmanchure classique angulaire
-    straightBarrelCuff: Emmanchure classique droite
-    roundedFrenchCuff: Emmanchure française arrondie
-    angledFrenchCuff: Emmanchure française angulaire
-    straightFrenchCuff: Emmanchure française droite
+    roundedBarrelCuff: Poignet classique rond
+    angledBarrelCuff: Poignet classique cassé
+    straightBarrelCuff: Poignet classique carré
+    roundedFrenchCuff: Poignet mousquetaire rond
+    angledFrenchCuff: Poignet mousquetaire cassé
+    straightFrenchCuff: Poignet mousquetaire carré
 extraTopButton:
   title: Bouton supérieur supplémentaire
-  description: Pour inclure un bouton supérieur supplémentaire sur la fermeture avant.
+  description: Inclure ou non un bouton supplémentaire en haut de fermeture avant.
 hemCurve:
   title: Courbe de l'ourlet
   description: La hauteur de l'arrondi sur un ourlet arrondi.
@@ -105,11 +105,11 @@ hemStyle:
   description: Le style de l'ourlet de la chemise.
   options:
     straight: Ourlet droit
-    baseball: Ourlet baseball
-    slashed: Ourlet taillé
+    baseball: Ourlet liquette
+    slashed: Ourlet arrondi
 seperateButtonholePlacket:
-  title: Patte de boutonnière séparée
-  description: Dessinez une patte de boutonnière séparée.
+  title: Gorge (Patte de boutonnières) séparée
+  description: Dessinez une gorge (patte de boutonnières) séparée.
 seperateButtonPlacket:
   title: Patte de boutonnage séparée
   description: Dessinez une patte de boutonnage séparée.
@@ -121,10 +121,10 @@ sleevePlacketWidth:
   description: La largeur de la patte de manche
 splitYoke:
   title: Empiècement divisé
-  description: Dessiner un mpiècement divisé ou en une seule pièce?
+  description: Dessiner un empiècement divisé ou classique (une seule pièce).
 waistEase:
   title: Aisance à la taille
   description: La quantité d'aisance à votre taille (naturelle).
 yokeDart:
   title: Pinces empiècement
-  description: S'il faut inclure des pinces empiècement pour un dos plus rond.
+  description: S'il faut inclure des pinces sur l'empiècement pour un dos plus rond.

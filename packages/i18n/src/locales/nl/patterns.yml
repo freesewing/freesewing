@@ -8,8 +8,11 @@ benjamin:
 bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
+breanna:
+  description: Breanna is een basispatroon voor dameskleding.
+  title: Breanna basispatroon
 brian:
-  description: Brian is een basispatroon voor mannen.
+  description: Brian is een basispatroon voor mannenkleding.
   title: Brian Basisvorm
 bruce:
   description: Bruce is een boxershort die zowel comfortabel als stylish is.
@@ -23,9 +26,18 @@ carlton:
 cathrin:
   description: Cathrin is een underbust korset of waist trainer.
   title: Cathrin korset
+diana:
+  description: Diana is een top met een gedrapeerde halslijn.
+  title: Diana top
 florent:
   description: 'Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.'
   title: Florent pet
+florence:
+  description: 'Florence is een mondmasker'
+  title: Florence mondmasker
+holmes:
+  description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt'
+  title: Holmes deerstalker hat
 huey:
   description: Huey is een trui met kap met een rits, en optionele voorzakken.
   title: Huey hoodie
@@ -48,8 +60,8 @@ simon:
   description: Simon is een enorm veelzijdig patroon voor een herenhemd.
   title: Simon hemd
 simone:
-  description: Simone is simon, adapted for breasts
-  title: Simone shirt
+  description: Simone is simon, aangepast aan borsten
+  title: Simone hemd
 sven:
   description: Sven is een no-nonsense basic trui.
   title: Sven sweater
@@ -68,4 +80,3 @@ wahid:
 waralee:
   description: Waralee is een wikkelbroek
   title: Waralee wikkelbroek
-

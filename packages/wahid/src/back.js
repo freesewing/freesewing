@@ -1,6 +1,6 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -36,9 +36,6 @@ export default part => {
     shoulderLen * options.shoulderInset
   )
 
-  paths.test = new Path()
-    .move(points.shoulder)
-    .curve(points.shoulderCp1, points.armholePitchCp2, points.armholePitch)
   // Neck inset
   points.neck = points.neck.shiftTowards(points.shoulder, shoulderLen * options.neckInset)
   points.neckCp2 = points.neck.shift(points.shoulder.angle(points.neck) + 90, shoulderLen * 0.1)

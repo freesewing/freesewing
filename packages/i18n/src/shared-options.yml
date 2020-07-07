@@ -4,6 +4,10 @@ benjamin:
   dflt: brian
 bent:
   dflt: brian
+breanna:
+  dflt: brian
+  other:
+    frontScyeDart: wahid
 carlton:
   dflt: brian
   other:
@@ -54,6 +58,11 @@ carlita:
     chestPocketHeight: carlton
     beltWidth: carlton
     buttonSpacingHorizontal: carlton
+diana:
+  dflt: brian
+  other:
+    waistEase: breanna
+    hipsEase: aaron
 huey:
   dflt: brian
   other:
@@ -133,6 +142,8 @@ theo:
   other:
     waistbandWidth: sandy
     lengthBonus: brian
+titan:
+  dflt: penelope
 trayvon:
   dflt: brian
 wahid:

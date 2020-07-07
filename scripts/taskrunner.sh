@@ -10,7 +10,7 @@ cd $DIR
 for d in ../packages/*/ ; do {
   cd $d
   # do something here
-  pwd
+  echo "npm unpubnish $d@test"
   cd ..
 }
 done

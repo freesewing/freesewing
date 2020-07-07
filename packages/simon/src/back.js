@@ -1,6 +1,6 @@
 import { calculateReduction } from './shared'
 
-export default part => {
+export default (part) => {
   part.paths = {} // Removes paperless dimensions from brian
   let {
     store,
@@ -43,7 +43,7 @@ export default part => {
     points.waist = points.waist.shift(180, nonDarts)
     points.dartCenter = points.cbWaist.shiftFractionTowards(points.waist, 0.6)
     points.dartTop = points.dartCenter.shift(90, points.armhole.dy(points.waist) * 0.75)
-    points.dartBottom = points.dartCenter.shift(-90, measurements.naturalWaistToHip * 0.75)
+    points.dartBottom = points.dartCenter.shift(-90, measurements.waistToHips * 0.75)
     points.dartCenterIn = points.dartCenter.shift(180, darts)
     points.dartCenterOut = points.dartCenter.shift(0, darts)
     points.dartCenterInCp1 = points.dartCenterIn.shift(
@@ -74,7 +74,7 @@ export default part => {
     // No darts in the back
     points.waist = points.waist.shift(180, reduce / 4)
   }
-  points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip * 0.5)
+  points.waistCp1 = points.waist.shift(-90, measurements.waistToHips * 0.5)
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
@@ -192,10 +192,7 @@ export default part => {
   // Paths
   paths.saBase.render = false
   paths.hemBase.render = false
-  paths.seam = paths.hemBase
-    .join(paths.saBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.hemBase.join(paths.saBase).close().attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {

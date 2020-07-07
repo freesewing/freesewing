@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   // Remove clutter
   let seam = part.paths.seam
   part.paths = {}
@@ -22,19 +22,19 @@ export default function(part) {
     debug
   } = part.shorthand()
 
+  // Fit the hips
+  points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
+  points.hemCp2 = new Point(points.hem.x, points.cfWaist.y)
+
   // Absolute values for percentages
   store.set(
     'lengthBonus',
-    options.lengthBonus * (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip)
+    options.lengthBonus * (measurements.hpsToWaistBack + measurements.waistToHips)
   )
   store.set(
     'ribbing',
-    (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) * options.ribbingHeight
+    (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
   )
-
-  // Hem is more descripting than hips in this case
-  //points.cfHem = points.cfHips;
-  //points.hem = points.hips;
 
   // Ribbing
   points.cfRibbing = points.cfHem.shift(90, store.get('ribbing'))
@@ -49,7 +49,7 @@ export default function(part) {
   points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6)
   points.pocketCf = points.cfHem.shift(
     90,
-    measurements.centerBackNeckToWaist * 0.33 + store.get('ribbing')
+    measurements.hpsToWaistBack * 0.33 + store.get('ribbing')
   )
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y)
   points.pocketTip = points.pocketHem
@@ -66,23 +66,19 @@ export default function(part) {
   paths.saBase = new Path()
     .move(points.cfRibbing)
     .line(points.ribbing)
-    .line(points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())
-  paths.seam = paths.saBase
-    .clone()
-    .close()
-    .attr('class', 'fabric')
-  paths.saBase.render = false
-
+  paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
   paths.pocket = new Path()
     .move(points.pocketHem)
     .line(points.pocketTip)
     .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
     .attr('class', 'fabric help')
-
+  paths.saBase.render = false
+  paths.pocket.render = false
   // Store shoulder seam length, neck opening path, shoulder slope and raglan length
   store.set('shoulderLength', points.neck.dist(points.shoulder))
   store.set('neckOpeningPartFront', neckOpeningParts[1])
@@ -101,6 +97,7 @@ export default function(part) {
 
   // Complete pattern?
   if (complete) {
+    paths.pocket.render = true
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfRibbing,
@@ -118,10 +115,7 @@ export default function(part) {
     points.logo = points.title.shift(-90, 70)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .line(points.cfNeck)
-        .attr('class', 'fabric sa')
+      paths.sa = paths.saBase.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
       paths.sa.move(points.cfRibbing).line(paths.sa.start())
     }
   }

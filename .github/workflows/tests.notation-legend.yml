@@ -1,0 +1,31 @@
+name: Unit tests - Notation-legend
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: cd packages/notation-legend && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies
+        run: cd packages/notation-legend && npm install @freesewing/core @freesewing/plugin-bundle @freesewing/plugin-buttons @freesewing/models @freesewing/pattern-info mocha chai
+        env:
+          CI: true
+      - name: Build pattern
+        run: cd packages/notation-legend && npm run build
+      - name: Run pattern unit tests
+        run: cd packages/notation-legend && npm run testci

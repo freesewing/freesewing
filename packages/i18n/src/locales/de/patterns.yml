@@ -3,13 +3,16 @@ aaron:
   description: Aaron ist ein sportliches Shirt oder ein Tank Top.
   title: Shirt Aaron
 benjamin:
-  description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.
-  title: Schleife Benjamin
+  description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
+  title: Fliege Benjamin
 bent:
-  description: Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.
+  description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Grundschnitt Bent
+breanna:
+  description: Breanna is a basic body block for womenswear.
+  title: Breanna body block
 brian:
-  description: Brian ist eine Grundschnitt für Männer.
+  description: Brian is a basic body block for menswear.
   title: Grundschnitt Brian
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
@@ -23,9 +26,18 @@ carlton:
 cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
   title: Korsett Cathrin
+diana:
+  description: Diana is a top with a draped neckline.
+  title: Diana Top
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
+florence:
+  description: 'Florence ist eine Gesichtsmaske'
+  title: Florence Gesichtsmaske
+holmes:
+  description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
+  title: Holmes Deerstalker-Mütze
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
   title: Hoodie Huey
@@ -48,8 +60,8 @@ simon:
   description: Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.
   title: Hemd Simon
 simone:
-  description: Simone is simon, adapted for breasts
-  title: Simone shirt
+  description: Simone ist der Schnitt Simon, angepasst für Menschen mit Brüsten
+  title: Bluse Simone
 sven:
   description: Sven ist ein geradliniges Sweatshirt.
   title: Sweatshirt Sven
@@ -68,4 +80,3 @@ wahid:
 waralee:
   description: Waralee ist eine Wickelhose
   title: Wickelhose Wickelhose
-

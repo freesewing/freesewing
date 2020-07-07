@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -15,7 +15,7 @@ export default function(part) {
   const fitCap = (part, scale) => {
     let { points, options, Point, Path, measurements } = part.shorthand()
 
-    let base = scale * measurements.headCircumference * (1 + options.headEase)
+    let base = scale * measurements.head * (1 + options.headEase)
 
     // Top
     points.midFront = new Point(0, 0)
@@ -62,10 +62,10 @@ export default function(part) {
         .length() * 2
 
     // Return delta between target and actual seam length
-    return measurements.headCircumference * (1 + options.headEase) - (backLength + sideLength)
+    return measurements.head * (1 + options.headEase) - (backLength + sideLength)
   }
 
-  const sideSeamDelta = part => {
+  const sideSeamDelta = (part) => {
     let { Path } = part.shorthand()
 
     let top = new Path()

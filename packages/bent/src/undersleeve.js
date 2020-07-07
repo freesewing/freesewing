@@ -1,12 +1,14 @@
 import dimensions from './shared'
 
-export default function(part) {
+export default function (part) {
   let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa } = part.shorthand()
 
   // Extract seamline from sleeve
   delete paths.ts
   paths.seam = paths.us.clone().attr('class', 'fabric', true)
   delete paths.us
+
+  points.anchor = points.usTip.clone()
 
   // Complete?
   if (complete) {

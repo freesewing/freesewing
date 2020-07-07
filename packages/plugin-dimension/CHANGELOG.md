@@ -1,36 +1,24 @@
 # Change log for: @freesewing/plugin-dimension
 
+## 2.4.4 (2020-03-15)
 
-## Unreleased
+### Changed
 
-**Note:** Version bump only for package plugin-dimension
+- Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
 
+## 2.1.5 (2019-11-19)
 
-## 2.0.4 (2019-09-27)
+### Fixed
 
-**Note:** Version bump only for package plugin-dimension
-
-
-## 2.0.3 (2019-09-15)
-
-**Note:** Version bump only for package plugin-dimension
-
-
-## 2.0.2 (2019-09-06)
-
-**Note:** Version bump only for package plugin-dimension
-
-
-## 2.0.1 (2019-09-01)
-
-**Note:** Version bump only for package plugin-dimension
-
-
-
+- Fixed issue where inch marks where breaking SVG because of unescaped double quotes
 
 ## 2.0.0 (2019-08-25)
 
+### Added
+
+- Initial release
+
 This is the **initial release**, and the start of this change log.
 
-Prior to version 2, FreeSewing was not a JavaScript project.
-As such, that history is out of scope for this change log.
+> Prior to version 2, FreeSewing was not a JavaScript project.
+> As such, that history is out of scope for this change log.

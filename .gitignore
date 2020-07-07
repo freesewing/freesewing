@@ -1,7 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # Specifics
+export
 packages/plugin-theme/src/bundle.css.js
+packages/plugin-theme/css
 packages/components/Blockquote
 packages/components/Draft
 packages/components/DraftConfigurator
@@ -12,6 +14,7 @@ packages/components/Icon
 packages/components/LineDrawing
 packages/components/Logo
 packages/components/Navbar
+packages/components/Render
 packages/components/Ogol
 packages/components/Robot
 packages/components/SampleConfigurator
@@ -26,11 +29,13 @@ packages/workbench
 packages/utils/backend
 packages/utils/camelCase
 packages/utils/capitalize
+packages/utils/convertSize
 packages/utils/cloneObject
 packages/utils/defaultGist
 packages/utils/defaultSa
 packages/utils/formatImperial
 packages/utils/formatMm
+packages/utils/isDegMeasurement
 packages/utils/measurementAsMm
 packages/utils/measurementDiffers
 packages/utils/neckstimate
@@ -47,6 +52,9 @@ packages/utils/validateEmail
 packages/utils/validateTld
 
 packages/*/example/yarn.lock
+packages/*/report
+packages/*/package-lock.json
+packages/*/yarn.lock
 
 # dependencies
 node_modules

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -14,7 +14,7 @@ export default function(part) {
 
   // Vent
   let slope = 15
-  let width = measurements.wristCircumference * (1 + options.cuffEase) * options.sleeveVentWidth
+  let width = measurements.wrist * (1 + options.cuffEase) * options.sleeveVentWidth
   points.ventFoldRight = points.tsWristLeft.shiftOutwards(points.tsWristRight, width)
   points.ventHelper = points.tsWristRight.shiftFractionTowards(
     points.elbowRight,

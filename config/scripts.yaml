@@ -9,6 +9,8 @@ _:
 _types:
   pattern:
     netlify: "echo \"Not configured yet\""
+    test: "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+    testci: "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
 create-freesewing-pattern:
   clean: "!"
   nodebuild: "!"
@@ -35,7 +37,9 @@ i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
 pattern-info:
-  prepare: "node src/prebuild.js"
+  prebuild: "node src/prebuild.js"
+plugin-theme:
+  prebuild: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
 utils:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'

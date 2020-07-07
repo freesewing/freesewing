@@ -76,6 +76,7 @@ ul.config.l4 > li > div { padding-left: 2.5rem; }
 
 
 span.dflt,
+span.p-dflt,
 span.custom {
   padding: 2px 4px;
   border-radius: 4px;
@@ -85,6 +86,12 @@ span.custom {
 }
 .theme-wrapper.dark span.custom {
   color: $oc-yellow-8;
+}
+.theme-wrapper.light span.p-dflt {
+  background: $oc-green-2;
+}
+.theme-wrapper.dark span.p-dflt {
+  color: $oc-green-6;
 }
 .theme-wrapper.light div.col-exp.expanded {
   border-left: 4px solid $fc-text-light;
@@ -107,3 +114,16 @@ button.mini-icon-btn {
   margin: 0;
   padding: 2px;
 }
+.theme-wrapper.light button.mini-icon-btn.recipe:enabled {
+  color: $oc-blue-7;
+}
+.theme-wrapper.light button.mini-icon-btn.pattern:enabled {
+  color: $oc-green-8;
+}
+.theme-wrapper.dark button.mini-icon-btn.recipe:enabled {
+  color: $oc-blue-5;
+}
+.theme-wrapper.dark button.mini-icon-btn.pattern:enabled {
+  color: $oc-green-6;
+}
+

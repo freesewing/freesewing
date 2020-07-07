@@ -13,6 +13,7 @@
     "watch": "rollup -c -w",
     "start": "rollup -c -w",
     "build": "rollup -c",
+    "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
     "publish": "npm run build && npm publish --access public"
   },
   "peerDependencies": {},

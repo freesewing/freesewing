@@ -1,36 +1,30 @@
 # Change log for: @freesewing/hugo
 
+## 2.6.0 (2020-05-01)
 
-## Unreleased
+### Fixed
 
-**Note:** Version bump only for package hugo
+- Render fully-sized pattern parts when complete is falsy
+- Do not render pocket outline when complete is falsy
+- Do not render pocket facing hint when complete is falsy
 
+## 2.2.0 (2020-02-22)
 
-## 2.0.4 (2019-09-27)
+### Changed
 
-**Note:** Version bump only for package hugo
+- Removed deprecated `centerBackNeckToWaist` measurement
 
+### Fixed
 
-## 2.0.3 (2019-09-15)
-
-**Note:** Version bump only for package hugo
-
-
-## 2.0.2 (2019-09-06)
-
-**Note:** Version bump only for package hugo
-
-
-## 2.0.1 (2019-09-01)
-
-**Note:** Version bump only for package hugo
-
-
-
+- Made sure dimensions for hood center and waistband are always shown
 
 ## 2.0.0 (2019-08-25)
 
+### Added
+
+- Initial release
+
 This is the **initial release**, and the start of this change log.
 
-Prior to version 2, FreeSewing was not a JavaScript project.
-As such, that history is out of scope for this change log.
+> Prior to version 2, FreeSewing was not a JavaScript project.
+> As such, that history is out of scope for this change log.

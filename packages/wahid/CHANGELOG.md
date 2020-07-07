@@ -1,36 +1,34 @@
 # Change log for: @freesewing/wahid
 
+## 2.6.0 (2020-05-01)
 
-## Unreleased
+### Fixed
 
-**Note:** Version bump only for package wahid
+- Removed paths.test
+- Do not draw the pocket outline unless complete is truthy
+- Prevent rounded corners on pocket bag and lining to be drawn twice
+- Closed the front seam path
+- Draft the front lining/facing even when complete is falsy
 
+## 2.4.5 (2020-03-19)
 
-## 2.0.4 (2019-09-27)
+### Fixed
 
-**Note:** Version bump only for package wahid
+- Check whether frontScyeDart option is zero prior to implementing it
 
+## 2.2.0 (2020-02-22)
 
-## 2.0.3 (2019-09-15)
+### Changed
 
-**Note:** Version bump only for package wahid
-
-
-## 2.0.2 (2019-09-06)
-
-**Note:** Version bump only for package wahid
-
-
-## 2.0.1 (2019-09-01)
-
-**Note:** Version bump only for package wahid
-
-
-
+- Removed deprecated `centerBackNeckToWaist` measurement
 
 ## 2.0.0 (2019-08-25)
 
+### Added
+
+- Initial release
+
 This is the **initial release**, and the start of this change log.
 
-Prior to version 2, FreeSewing was not a JavaScript project.
-As such, that history is out of scope for this change log.
+> Prior to version 2, FreeSewing was not a JavaScript project.
+> As such, that history is out of scope for this change log.

@@ -1,14 +1,12 @@
 ---
-100PercentCommunity: 100% community DONE
+100PercentCommunity: 100% Community
 100PercentFree: 100% kostenlos
 100PercentOpenSource: 100% Open Source DONE
 aboutFreesewing: Über Freesewing
-aboutGist1: Ein Kern enthält alle Informationen, die zum Erstellen eines Musters erforderlich sind.
-aboutGist2: Sie können einen vorhandenen Kern hier kopieren und einfügen, um ihn als Ausgangspunkt für Ihren eigenen Entwurf zu verwenden.
 account: Konto
 accountCreated: Account erstellt
 actions: Aktions
-allDocumentation: Alle dokumentationen
+allDocumentation: Alle Dokumentationen
 andThatIsAwesome: Und das ist großartig
 applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
@@ -25,16 +23,16 @@ browsePatterns: Schnittmuster dursuchen
 browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
 cancel: Stornieren
-changeModel: Modell ändern
+changePerson: Person ändern
 changePattern: Muster ändern
 chatOnGitter: Chatte bei Gitter
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
-chestInfo: Brüste erfordern zusätzliche Messungen. Wenn Ihr Modell keine Brüste hat, werden beim Konfigurieren des Modells irrelevante Messungen ausgeblendet. Dies hat keinen Einfluss darauf, wie Muster erstellt werden.
-chooseAModel: Wähle ein Modell
+chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
+chooseASize: Grösse wählen
+chooseAPerson: Person wählen
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
-clearGist: Kern löschen
 close: Schließen
 colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
@@ -47,14 +45,15 @@ continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: Sie haben {count}-Modelle, denen die zum Messen von {pattern} erforderlichen Maße fehlen.
+countModelsLackingForPattern: "{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen."
 created: Erstellt
-createModel: Erstellen Sie das Modell
 custom: Angepasst
-customSeamAllowance: Kundenspezifische Nahtzugabe
+customSeamAllowance: Benutzerdefinierte Nahtzugabe
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
+designOptions: Designoptionen
+designs: Designs
 docs: Dokumente
 docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
@@ -73,9 +72,7 @@ dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie
 emailAddress: Email Adresse
 emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
-exportDraft: Entwurf exportieren
 export: Exportieren
-exportGist: Kern exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: "{field} entfernt"
@@ -85,7 +82,6 @@ filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
-gist: Kern
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
@@ -103,9 +99,8 @@ invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, die gerne helfen. Also sei nicht schüchtern und schau bei einem Chat vorbei.
 justAMoment: Einen Moment bitte
 layout: Darstellung
-letUsSetupYourAccount: Lassen Sie uns Ihr Konto einrichten
 logIn: Anmelden
-loginWithProvider: 'Anmelden mit<br>{provider}'
+loginWithProvider: 'Anmelden mit<br />{provider}'
 logOut: Abmelden
 manual: Manuell
 markdownHelp: Markdown-Hilfe
@@ -113,16 +108,14 @@ measurements: Maße
 menu: Menü
 metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
-model: Modell
-models: Modelle (Personen)
+person: Person
+people: Personen
 monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
-newDraftFromGist: Neue muster aus Kern
-newDraft: Neuer Entwurf
-newModel: Neues Modell
-newPattern: 'Neu {pattern}'
-newPatternForModel: 'New {pattern} for {model}'
+addThing: '{thing} hinzufügen'
+newThing: Neues {thing}
+newPatternForModel: 'Neues {pattern} für {model}'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
@@ -158,13 +151,16 @@ proceedWithCaution: Gehen Sie vorsichtig vor
 profile: Profil
 relatedLinks: Verwandte Links
 remove: Löschen
+removeThing: '{thing} entfernen'
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
+resendActivationEmailMessage: 'Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht.'
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
 restoreDefaults: Wiederherstellen der Standardwerte
+restoreDesignDefaults: Designeinstellungen zurücksetzen
+restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
 save: Speichern
 searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
@@ -180,7 +176,7 @@ share: Teilen
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
-signupWithProvider: 'Registrieren mit<br>{provider}'
+signupWithProvider: 'Registrieren mit<br />{provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
@@ -196,8 +192,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing wurde von Joost De Cock & den Mitwirkenden kreiert,<br>mit der finanziellen Unterstützung unserer Gönner
-txt-tier0: Will uns nicht unterstützen Können Sie es sich nicht leisten, uns zu unterstützen? <br> Freesewing ist für alle kostenlos. Keine Fragen gefragt.
+txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
@@ -230,8 +225,7 @@ getStarted: Jetzt loslegen
 apiReference: API-Referenz
 tutorial: Anleitung
 editThisPage: Diese Seite bearbeiten
-loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
-recipes: Rezepte
+loginRequiredRedirect: 'Sie wurden auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
 various: Verschiedenes
 sewing: Nähen
 examples: Beispiele
@@ -239,29 +233,87 @@ by: von
 years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
-noRecipe: Du hast keine Rezepte (noch). Erstelle ein neues Schnittmuster und speichere dann sein Rezept.
-modelFirst: Beginnen Sie mit dem Erstellen eines Modells
-noModel: Du hast noch keine Modelle (noch). FreeSewing erzeugt maßgeschneiderte Schnittmuster. Und wir können keine Muster erstellen, wenn wir keine Massangaben von Ihnen haben.
-noModel2: Als erstes erstellen Sie bitte ein Modell mit Ihren Massen oder den Massen der Person, für die Sie ein Schnittmuster erstellen möchten.
+noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
+modelFirst: Beginne damit Masse hinzuzufügen
+noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
+noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-useRecipeModel: "Use the recipe's model"
-createReplica: Create a replica
-showDetails: Show details
-clickBelowToLogOut: Click below to log out
-compare: Compare
-saveRecipe: Save recipe
-exportPattern: Export pattern
-recreate: Recreate
-seeYouLaterUser: See you later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
-exportRecipe: Export recipe
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
-instructions: Instructions
-hide: Hide
-show: Show
+usePatternMeasurements: "Verwende dir Mass des Originalnähmusters"
+createReplica: Duplikat erstellen
+showDetails: Details anzeigen
+hideDetails: Details ausblenden
+clickBelowToLogOut: Klicken Sie unten sich abzumelden
+compare: Vergleichen
+savePattern: Schnittmuster speichern
+recreate: Wiederherstellen
+recreateThing: '{thing} neu erstellen'
+recreateThingForPerson: '{thing} für {person} neu erstellen'
+seeYouLaterUser: Auf Wiedersehen {user}
+exportForPrinting: Exportieren für den Druck
+exportForEditing: Exportieren für Bearbeitung
+startWithNeckTitle: Beginnen Sie mit dem Hals-Umfang
+startWithNeckDescription: Auf Basis Ihres Hals-Umfangs können wir Ihnen helfen, Fehler in Ihren Messungen zu erkennen.
+whatYouNeed: Was Sie benötigen
+fabricOptions: Stoffauswahl
+cutting: Zuschnitt
+instructions: Anleitung
+hide: Verbergen
+show: Anzeigen
+oneMomentPlease: Einen Moment bitte
+loadingMagic: Wir laden die Magie
+estimate: Schätzung
+actual: Aktuell
+weEstimateYM2B: "Wir schätzen, dein {measurement} auf etwa:"
+exportAsData: Als Daten exportieren
+availablePatterns: Verfügbare Schnittmuster
+browseCollection: Sammlung durchsuchen
+browseYourPatterns: Deine Schnittmuster durchsuchen
+yourPatterns: Deine Schnittmuster
+loginNeededToSavePatternsMsg: Du musst angemeldet sein, um deine Schnittmuster zu speichern
+docsForContributors: Dokumentation für Mitwirkende
+patternDocs: Schnittmuster-Dokumentation
+socialMedia: Soziale Medien
+create: Erstellen
+browse: Durchsuchen
+patrons: Patrons
+scrollToTop: Zum Seitenanfang
+sitemap: Seitenübersicht
+contributeToThing: An {thing} mitwirken
+mtmIsOurJam: Maßgeschneiderte Nähmuster sind unser Spezialgebiet
+fitYouDeserve: Du verpasst wirklich etwas, wenn du standardisierte Größen suchst.<br />Also melde dich heute an und erhalte die Passform, die du verdienst.
+supportNag: <b>Free</b>Sewing ist kosten<b>frei</b>, aber wir würden es sehr schätzen, wenn du in Betracht ziehen würdest <a href='/patrons/join/'>uns zu unterstützen</a>.
+madeToMeasure: Maßgeschneidert
+sizes: Grössen
+standardSizes: Standardgrößen
+accountRequired: Diese Funktion erfordert ein FreeSewing-Konto
+size: Grösse
+switchToThing: 'Zu {thing} wechseln'
+saveThing: '{thing} speichern'
+shareThing: '{thing} teilen'
+link: Link
+cloneThing: '{thing} klonen'
+cloneDescription: Erstelle eine exakte Kopie mit den Massen des Originalschnittmusters.
+furtherReading: Weiterlesen
+saveAsNewPattern: Als neues Schnittmuster speichern
+saveAsNewPattern-txt: (Eine Kopie) des Musters in deinem FreeSewing-Konto speichern
+exportPattern: Schnittmuster exportieren
+printPattern: Schnittmuster drucken
+exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder das Schnittmuster in verschiedenen Formaten herunterladen
+editThing: '{thing} bearbeiten'
+editPattern-txt: Dieses Schnittmster im Muster-Editor laden
+featureRequiresAccount: Diese Funktion erfordert ein FreeSewing-Konto
+zoom: Zoom
+zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
+savePattern-txt: Dieses Muster in Ihrem FreeSewing-Konto speichern
+comparePattern: Schnittmuster vergleichen
+comparePattern-txt: Vergleichen Sie Ihr Muster mit einer Reihe von Standardgrößen, um mögliche Passungsprobleme zu prüfen
+recreatePattern: Schnittmuster neu erstellen
+recreatePattern-txt: Wähle eine andere Person und erstelle dann dieses Muster für diese Person neu
+editOwnPatternsOnly: Du kannst nur deine eigenen Schnittmuster bearbeiten
+editOwnPatternsOnly-txt: Du kannst dieses Schnittmuster nicht bearbeiten, weil es nicht dir gehört. Aber du kannst es als Grundlage verwenden, um dein eigenes Schnittmuster zu erstellen.
+updateNotes-txt: Aktualisiere die Notizen, die du zu deinem Schnittmuster führst
+franceWarning: Vorsicht Nutzende in Frankreich
+franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu verwerfen.
+emailNotReceived: Wenn Sie die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
+

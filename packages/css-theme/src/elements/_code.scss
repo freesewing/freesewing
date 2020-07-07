@@ -22,7 +22,10 @@ div.gatsby-highlight pre {
   padding: 1.5rem 1rem;
 }
 
+pre.language-yaml:before,
 pre.language-js:before,
+pre.language-jsx:before,
+pre.language-mdx:before,
 pre.language-json:before,
 pre.language-svg:before,
 pre.language-bash:before {
@@ -38,9 +41,21 @@ pre.language-bash:before {
   font-weight: bold;
   text-shadow: none;
 }
+pre.language-yaml:before {
+  content: "yaml";
+  background: rgba(255, 255, 0, 0.9);
+}
 pre.language-js:before {
   content: "js";
   background: rgba(255, 255, 0, 0.9);
+}
+pre.language-jsx:before {
+  content: "jsx";
+  background: rgba(255, 255, 0, 0.9);
+}
+pre.language-mdx:before {
+  content: "mdx";
+  background: rgba(130, 201, 30, 0.9);
 }
 pre.language-json:before {
   content: "json";
@@ -72,7 +87,10 @@ pre[class*="language-"] {
     border-radius: 0;
     word-break: break-word;
   }
+  pre.language-yaml:before,
   pre.language-js:before,
+  pre.language-jsx:before,
+  pre.language-mdx:before,
   pre.language-json:before,
   pre.language-svg:before,
   pre.language-bash:before {

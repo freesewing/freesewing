@@ -1,5 +1,7 @@
-export default function(part) {
+export default function (part) {
   let { macro, sa, snippets, Snippet, points, paths, Point, complete, paperless } = part.shorthand()
+
+  points.anchor = points.underbustGap3Right.clone()
 
   delete paths.outline
   delete paths.panel1

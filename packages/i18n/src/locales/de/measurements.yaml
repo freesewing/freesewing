@@ -1,17 +1,20 @@
 ---
 acrossBack: Rückenweite (veraltet)
-ankleCircumference: Ankle circumference
+ankleCircumference: Fesselumfang
 bicepsCircumference: Bizepsumfang
+bustFront: Bust front
 bustSpan: Brustweite
-centerBackNeckToWaist: Hintere Mitte vom Hals bis zur Taille
 chestCircumference: Brustumfang
 headCircumference: Kopfumfang
 highBust: Oberbrustweite
-highPointShoulderToBust: Höchster Punkt der Schulter zur Brust
+highBustFront: High bust front
+hpsToBust: HPS to bust
+hpsToHipsBack: HPS to hips back
+hpsToHipsFront: HPS to hips front
 hipsCircumference: Hüftumfang
 hipsToUpperLeg: Hüfte bis Oberschenkel
 inseam: Schrittlänge
-kneeCircumference: Knee circumference
+kneeCircumference: Knieumfang
 naturalWaist: Natürliche Taille
 naturalWaistToFloor: Natürliche Taille bis Boden
 naturalWaistToHip: Natürliche Taille bis Hüfte

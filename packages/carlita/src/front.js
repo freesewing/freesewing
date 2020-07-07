@@ -23,7 +23,7 @@ export default function(part) {
   points.bustPoint = new Point(
     measurements.bustSpan / 2 +
       ((measurements.bustSpan / measurements.bust) * options.chestEase) / 4,
-    points.neck.y + measurements.highPointShoulderToBust
+    points.neck.y + measurements.hpsToBust
   )
 
   // Draw the princess seam (ps)
@@ -182,7 +182,7 @@ export default function(part) {
     // Round points depend on options, so add a check
     if (typeof points[i] !== 'undefined') {
       points[i] = points[i].shift(-90, longer)
-    } else console.log(i)
+    }
   }
 
   // Move the map/chest pocket into the princess seam

@@ -1,0 +1,14 @@
+---
+lengthRatio:
+  title: Profondeur de tête
+  description: fixme
+goreNumber:
+  title: Nombre de pans
+  description: Le nombre de pans utilisés pour construire la semi-sphère
+brimAngle:
+  title: Angle des visières
+  description: Contrôle l'angle de courbure des visières
+brimWidth:
+  title: Largeur des visières
+  description: Contrôle la largeur des visières
+

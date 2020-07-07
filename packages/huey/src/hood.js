@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     macro,
@@ -18,24 +18,18 @@ export default function(part) {
   let base = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
   points.cfBottom = new Point(0, 0)
   points.cbBottom = points.cfBottom.shift(0, base).rotate(options.hoodAngle, points.cfBottom)
-  points.cfHeightLeft = points.cfBottom.shift(
-    90,
-    measurements.headCircumference * options.hoodHeight
-  )
+  points.cfHeightLeft = points.cfBottom.shift(90, measurements.head * options.hoodHeight)
   points.cfHeightRight = points.cfHeightLeft.shift(0, base)
   points.cfTop = points.cfBottom
-    .shift(90, measurements.headCircumference * options.hoodClosure)
+    .shift(90, measurements.head * options.hoodClosure)
     .rotate(options.hoodAngle, points.cfBottom)
-  points.frontTop = points.cfHeightLeft.shift(
-    0,
-    measurements.headCircumference * options.hoodCutback
-  )
+  points.frontTop = points.cfHeightLeft.shift(0, measurements.head * options.hoodCutback)
   points.frontTopCp2 = new Point(points.frontTop.x, points.cfTop.y)
   points.backPitch = new Point(
-    points.cbBottom.x + measurements.headCircumference * options.hoodDepth,
+    points.cbBottom.x + measurements.head * options.hoodDepth,
     points.cfHeightRight.y * 0.6
   )
-  points.backPitchCp1 = points.backPitch.shift(-90, measurements.headCircumference * 0.1)
+  points.backPitchCp1 = points.backPitch.shift(-90, measurements.head * 0.1)
   points.backPitchCp2 = points.backPitchCp1.flipY(points.backPitch)
 
   // Paths

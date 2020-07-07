@@ -1,49 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Back Dart Depth Factor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Factor de la pinza trasera
+  description: Hasta dónde llega la pinza trasera desde la cintura. Es proporción de la medida cintura natural a asiento.
 backVent:
-  title: Back Vent
-  description: Add a vent in the back of the skirt.
+  title: Abertura trasera
+  description: Añade una avertura en la parte trasera de la falda.
 backVentLength:
-  title: Back Vent Length
-  description: Length of the Back Vent as a percentage of the skirt length.
+  title: Longitud de la abertura trasera
+  description: Longitud de la abertura trasera como porcentaje de la longitud de la falda.
 dartToSideSeamFactor:
-  title: Dart to Side Seam factor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  title: Factor pinza a costura lateral
+  description: Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales.
 frontDartDepthFactor:
-  title: Front Dart Depth Factor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Factor de la pinza delantera
+  description: Hasta dónde llega la pinza delantera desde la cintura. Es proporción de la medida cintura natural a asiento.
 hem:
-  title: Size of the hem.
-  description: The size of the hem. Measurement in absolute values.
+  title: Anchura del dobladillo
+  description: El tamaño del dobladillo. Medida en valores absolutos.
 hemBonus:
-  title: Hem Bonus
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  title: Bonus del dobladillo
+  description: Esta opción reduce la circunferencia de la falda en el dobladillo. Porcentaje de la medida de asiento.
 lengthBonus:
-  title: Length Bonus
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  title: Bonus de longitud
+  description: Esto ajusta la longitud de la falda. Porcentaje de la medida de cintura natural a rodilla.
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Número de pinzas
+  description: El número de pinzas usadas en el patrón. El máximo es 2. Esta opción puede ser reducida por el patrón si los cálculos crean pinzas demasiado pequeñas.
 seatEase:
-  title: Seat Ease
-  description: Amount of ease at the seat level.
+  title: Holgura de asiento
+  description: La holgura al nivel del asiento.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Cinturilla
+  description: Añade una cinturilla al patrón.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Anchura de la cinturilla
+  description: La anchura de la cinturilla.
 waistEase:
-  title: waist Ease
-  description: Amount of ease at the waist level.
-waistSideSeamRaise:
-  title: Unused
-  description: Unused.
+  title: Holgura de cintura
+  description: La holgura al nivel de la cintura.
 zipperLocation:
-  title: Zipper Location
-  description: The location of the zipper.
+  title: Ubicación de la cremallera
+  description: La ubicación de la cremallera.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: En la costura trasera
+    sideSeam: En la costura lateral

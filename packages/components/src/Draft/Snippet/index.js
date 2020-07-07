@@ -1,37 +1,27 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { getProps } from "../utils";
+import React from 'react'
+import { getProps } from '../utils'
 
-const Snippet = props => {
+const Snippet = (props) => {
   const snippetProps = {
-    xlinkHref: "#" + props.snippet.def,
+    xlinkHref: '#' + props.snippet.def,
     x: props.snippet.anchor.x,
     y: props.snippet.anchor.y
-  };
-  let scale = props.snippet.attributes.get("data-scale");
-  let rotate = props.snippet.attributes.get("data-rotate");
+  }
+  let scale = props.snippet.attributes.get('data-scale')
+  let rotate = props.snippet.attributes.get('data-rotate')
   if (scale || rotate) {
-    snippetProps.transform = "";
+    snippetProps.transform = ''
     if (scale) {
-      snippetProps.transform += `translate(${snippetProps.x}, ${
-        snippetProps.y
-      }) `;
-      snippetProps.transform += `scale(${scale}) `;
-      snippetProps.transform += `translate(${snippetProps.x *
-        -1}, ${snippetProps.y * -1}) `;
+      snippetProps.transform += `translate(${snippetProps.x}, ${snippetProps.y}) `
+      snippetProps.transform += `scale(${scale}) `
+      snippetProps.transform += `translate(${snippetProps.x * -1}, ${snippetProps.y * -1}) `
     }
     if (rotate) {
-      snippetProps.transform += `rotate(${rotate}, ${snippetProps.x}, ${
-        snippetProps.y
-      }) `;
+      snippetProps.transform += `rotate(${rotate}, ${snippetProps.x}, ${snippetProps.y}) `
     }
   }
 
-  return <use {...snippetProps} {...getProps(props.snippet)} />;
-};
+  return <use {...snippetProps} {...getProps(props.snippet)} />
+}
 
-Snippet.propTypes = {
-  snippet: PropTypes.object.isRequired
-};
-
-export default Snippet;
+export default Snippet

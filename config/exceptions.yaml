@@ -1,36 +1,42 @@
 noNamespace:
   - create-freesewing-pattern
+  - remark-jargon
+  - gatsby-remark-jargon
 customRollup:
   - components
   - core
   - css-theme
+  - gatsby-remark-jargon
   - i18n
-  - plugin-theme
+  - remark-jargon
   - utils
   - prettier-config
 packageJson:
+  benjamin:
+    author: woutervdub (https://github.com/woutervdub)
   components:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
     files:
-      - "Blockquote/*"
-      - "Draft/*"
-      - "DraftConfigurator/*"
-      - "Emblem/*"
-      - "Example/*"
-      - "Footer/*"
-      - "Icon/*"
-      - "LineDrawing/*"
-      - "Logo/*"
-      - "Navbar/*"
-      - "Ogol/*"
-      - "Robot/*"
-      - "SampleConfigurator/*"
-      - "Spinner/*"
-      - "withGist/*"
-      - "withLanguage/*"
-      - "withStorage/*"
-      - "Workbench/*"
+      - 'Blockquote/*'
+      - 'Draft/*'
+      - 'DraftConfigurator/*'
+      - 'Emblem/*'
+      - 'Example/*'
+      - 'Footer/*'
+      - 'Icon/*'
+      - 'Legend/*'
+      - 'LineDrawing/*'
+      - 'Logo/*'
+      - 'Navbar/*'
+      - 'Ogol/*'
+      - 'Robot/*'
+      - 'SampleConfigurator/*'
+      - 'Spinner/*'
+      - 'withGist/*'
+      - 'withLanguage/*'
+      - 'withStorage/*'
+      - 'Workbench/*'
   create-freesewing-pattern:
     bin:
       create-freesewing-pattern: index.js
@@ -46,42 +52,58 @@ packageJson:
   css-theme:
     main: dist/theme.css
     module: '!'
+  holmes:
+    author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
+  gatsby-remark-jargon:
+    keywords:
+      - remark
+      - mdx
+      - jargon
+      - gatsby
+      - gatsby-plugin
+  plugin-gore:
+    author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    main: "index.json"
+    main: 'index.json'
     module: '!'
-    scripts: { build: "echo \"prettier-config: No build required\" && exit 0" }
+    scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier
     files:
       - index.json
       - package.json
+  sandy:
+    author: AlfaLyr (https://github.com/alfalyr)
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
     files:
-      - "backend/*"
-      - "camelCase/*"
-      - "capitalize/*"
-      - "cloneObject/*"
-      - "defaultGist/*"
-      - "defaultSa/*"
-      - "formatImperial/*"
-      - "formatMm/*"
-      - "measurementAsMm/*"
-      - "measurementDiffers/*"
-      - "neckstimate/*"
-      - "optionDefault/*"
-      - "optionType/*"
-      - "roundMm/*"
-      - "roundMmDown/*"
-      - "roundMmUp/*"
-      - "sliderStep/*"
-      - "smallestImperialStep/*"
-      - "storage/*"
-      - "tiler/*"
-      - "validateEmail/*"
-      - "validateTld/*"
-
+      - 'backend/*'
+      - 'camelCase/*'
+      - 'capitalize/*'
+      - 'cloneObject/*'
+      - 'convertSize/*'
+      - 'defaultGist/*'
+      - 'defaultSa/*'
+      - 'formatImperial/*'
+      - 'formatMm/*'
+      - 'isDegMeasurement/*'
+      - 'measurementAsMm/*'
+      - 'measurementDiffers/*'
+      - 'neckstimate/*'
+      - 'optionDefault/*'
+      - 'optionType/*'
+      - 'roundMm/*'
+      - 'roundMmDown/*'
+      - 'roundMmUp/*'
+      - 'sliderStep/*'
+      - 'smallestImperialStep/*'
+      - 'storage/*'
+      - 'tiler/*'
+      - 'validateEmail/*'
+      - 'validateTld/*'
+  waralee:
+    author: woutervdub (https://github.com/woutervdub)

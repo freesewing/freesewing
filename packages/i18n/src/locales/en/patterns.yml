@@ -7,8 +7,11 @@ benjamin:
 bent:
   description: This two-part sleeve block is the basis of our coat and jacket patterns.
   title: Bent body Block
+breanna:
+  description: Breanna is a basic body block for womenswear.
+  title: Breanna body block
 brian:
-  description: Brian is a basic body block for men.
+  description: Brian is a basic body block for menswear.
   title: Brian body block
 bruce:
   description: Bruce are comfortable yet stylish boxer briefs.
@@ -22,9 +25,18 @@ carlton:
 cathrin:
   description: Cathrin is an underbust corset or waist trainer.
   title: Cathrin corset
+diana:
+  description: Diana is a top with a draped neckline.
+  title: Diana draped top
 florent:
   description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
   title: Florent flat cap
+florence:
+  description: 'Florence is a face mask'
+  title: Florence face mask
+holmes:
+  description: 'For Sherlock Holmes cosplay or just a cute hat'
+  title: Holmes deerstalker hat
 huey:
   description: Huey is a zip-up hoodie with optional front pockets.
   title: Huey hoodie
@@ -58,6 +70,9 @@ tamiko:
 theo:
   description: Theo is a classic trouser pattern.
   title: Theo trousers
+titan:
+  description: Titan is a dartless unisex trouser block
+  title: Titan trouser block
 trayvon:
   description: Trayvon is a tie that cuts no corners for a professional result.
   title: Trayvon tie
@@ -67,4 +82,3 @@ wahid:
 waralee:
   description: Waralee are wrap pants
   title: Waralee wrap pants
-

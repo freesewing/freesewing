@@ -1,33 +1,22 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "sandy",
+  name: 'sandy',
   version,
-  design: "Erica Alcusa Sáez",
-  code: ["Erica Alcusa Sáez", "Joost De Cock"],
-  department: "womenswear",
-  type: "pattern",
+  design: 'Erica Alcusa Sáez',
+  code: ['Erica Alcusa Sáez', 'Joost De Cock'],
+  department: 'womenswear',
+  type: 'pattern',
   difficulty: 3,
-  tags: ["skirt", "top", "basics"],
+  tags: ['skirt', 'bottom', 'basics'],
   optionGroups: {
-    fit: ["waistbandPosition", "waistbandShape"],
-    style: [
-      "lengthBonus",
-      "circleRatio",
-      "waistbandWidth",
-      "waistbandOverlap",
-      "gathering"
-    ],
-    construction: ["seamlessFullCircle", "hemWidth"]
+    fit: ['waistbandPosition', 'waistbandShape'],
+    style: ['lengthBonus', 'circleRatio', 'waistbandWidth', 'waistbandOverlap', 'gathering'],
+    construction: ['seamlessFullCircle', 'hemWidth']
   },
-  measurements: [
-    "naturalWaist",
-    "naturalWaistToFloor",
-    "naturalWaistToHip",
-    "hipsCircumference"
-  ],
+  measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
   dependencies: {
-    waistband: "skirt"
+    waistband: 'skirt'
   },
   options: {
     // Constants
@@ -49,8 +38,8 @@ export default {
 
     // Lists
     waistbandShape: {
-      list: ["straight", "curved"],
-      dflt: "straight"
+      list: ['straight', 'curved'],
+      dflt: 'straight'
     }
   }
-};
+}

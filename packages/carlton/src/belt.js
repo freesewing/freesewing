@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -7,8 +7,6 @@ export default function(part) {
     store,
     complete,
     points,
-    measurements,
-    options,
     macro,
     Point,
     paths,
@@ -16,7 +14,7 @@ export default function(part) {
   } = part.shorthand()
 
   let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
-  let width = measurements.centerBackNeckToWaist * options.beltWidth
+  let width = store.get('beltWidth')
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(length, 0)
@@ -62,6 +60,10 @@ export default function(part) {
     })
     points.logo = new Point(points.bottomRight.x * 0.75, points.bottomRight.y * 0.65)
     snippets.logo = new Snippet('logo', points.logo)
+    snippets.waistNotch = new Snippet(
+      'notch',
+      points.bottomRight.shiftFractionTowards(points.topRight, 0.5)
+    )
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 

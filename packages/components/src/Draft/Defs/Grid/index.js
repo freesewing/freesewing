@@ -1,26 +1,16 @@
-import React from "react";
+import React from 'react'
 
-const Grid = props => {
+const Grid = (props) => {
   let style = {
     style: {
-      fill: "none",
-      stroke: "currentColor"
+      fill: 'none',
+      stroke: 'currentColor'
     }
-  };
-  if (props.units === "imperial")
+  }
+  if (props.units === 'imperial')
     return (
-      <pattern
-        id="grid"
-        height="25.4"
-        width="25.4"
-        patternUnits="userSpaceOnUse"
-        key="grid"
-      >
-        <path
-          className="gridline lg imperial"
-          d="M 0 0 L 0 25.4 L 25.4 25.4"
-          {...style}
-        />
+      <pattern id="grid" height="25.4" width="25.4" patternUnits="userSpaceOnUse" key="grid">
+        <path className="gridline lg imperial" d="M 0 0 L 0 25.4 L 25.4 25.4" {...style} />
         <path
           className="gridline lg imperial"
           d="M 12.7 0 L 12.7 25.4 M 0 12.7 L 25.4 12.7"
@@ -37,26 +27,12 @@ const Grid = props => {
           {...style}
         />
       </pattern>
-    );
+    )
   else
     return (
-      <pattern
-        id="grid"
-        height="100"
-        width="100"
-        patternUnits="userSpaceOnUse"
-        key="grid"
-      >
-        <path
-          className="gridline lg metric"
-          d="M 0 0 L 0 100 L 100 100"
-          {...style}
-        />
-        <path
-          className="gridline metric"
-          d="M 50 0 L 50 100 M 0 50 L 100 50"
-          {...style}
-        />
+      <pattern id="grid" height="100" width="100" patternUnits="userSpaceOnUse" key="grid">
+        <path className="gridline lg metric" d="M 0 0 L 0 100 L 100 100" {...style} />
+        <path className="gridline metric" d="M 50 0 L 50 100 M 0 50 L 100 50" {...style} />
         <path
           className="gridline sm metric"
           d="M 10 0 L 10 100 M 20 0 L 20 100 M 30 0 L 30 100 M 40 0 L 40 100 M 60 0 L 60 100 M 70 0 L 70 100 M 80 0 L 80 100 M 90 0 L 90 100"
@@ -78,7 +54,7 @@ const Grid = props => {
           {...style}
         />
       </pattern>
-    );
-};
+    )
+}
 
-export default Grid;
+export default Grid

@@ -1,6 +1,6 @@
 import * as shared from './shared'
 
-export default part => {
+export default (part) => {
   let {
     store,
     sa,
@@ -14,8 +14,11 @@ export default part => {
     macro
   } = part.shorthand()
 
+  points.anchor = points.hps.clone()
+
   // Seamline
   paths.saBase = shared.saBase('back', points, Path)
+  paths.saBase.render = false
   paths.seam = new Path()
     .move(points.cbNeck)
     .line(points.cbHips)

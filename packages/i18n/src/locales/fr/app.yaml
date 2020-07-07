@@ -3,18 +3,16 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-aboutGist1: Un résumé contient toutes les informations nécessaires pour ébaucher un patron.
-aboutGist2: Vous pouvez copier / coller un résumé existant ici pour l'utiliser comme point de départ pour votre propre ébauche.
-account: Compte
+account: Mon Compte
 accountCreated: Compte créé
 actions: Actions
 allDocumentation: Toute la documentation
 andThatIsAwesome: Et c'est génial
 applyThisLayout: Appliquer cette mise en page
-areYouSureYouWantToContinue: Êtes-vous sûr de vouloir continuer?
+areYouSureYouWantToContinue: Êtes-vous sûr de vouloir continuer ?
 askForHelp: Demander de l'aide
 automatic: Automatique
-averagePeopleDoNotExist: "Les personnes moyennes n'existent pas"
+averagePeopleDoNotExist: "Les personnes standards n'existent pas"
 awesome: Incroyable
 back: Retour
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
@@ -25,36 +23,37 @@ browsePatterns: Parcourir les patrons
 browseShowcases: Parcourir la galerie
 butThatCouldChange: Mais cela pourrait changer
 cancel: Annuler
-changeModel: Changer le modèle
-changePattern: Changer le patron
-chatOnGitter: Chatter sur Gitter
+changePerson: Changer de personne
+changePattern: Changer de patron
+chatOnGitter: Discuter sur Gitter
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
 chest: Poitrine
-chestInfo: Les seins nécessitent des mesures supplémentaires. Si votre modèle n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les motifs sont rédigés.
-chooseAModel: Choisir un modèle
+chestInfo: Les seins nécessitent des mesures supplémentaires. Si cette personne n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les patrons sont tracés.
+chooseASize: Choisir une taille
+chooseAPerson: Choisir une personne
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
-clearGist: Effacer le résumé
 close: Fermer
-colourYes: "Image couleur: le contenu est disponible en français"
+colourYes: "Image en couleur : le contenu est disponible en français"
 community: Communauté
 configureLayout: Configurer la mise en page
-configureYourDraft: Configurez votre ébauche
+configureYourDraft: Configurez votre propre patron
 contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
 contents: Contenus
 continue: Continuer
 copiedToClipboard: Copié dans le presse-papier
 copy: Copier
-couldYouTranslateThis: Pourriez-vous traduire cela?
-countModelsLackingForPattern: Vous avez {count} modèles qui ne disposent pas des mesures requises pour dessiner {pattern}
+couldYouTranslateThis: Pourriez-vous traduire cela ?
+countModelsLackingForPattern: "{count} de vos personnes manquent des mesures requises pour dessiner {pattern}"
 created: Créé
-createModel: Créer le modèle
-custom: Personnalisé
+custom: Personnaliser
 customSeamAllowance: Marge de couture customisée
 darkMode: Mode sombre
-default: Standard
+default: Par défaut
 demo: Démo
+designOptions: Options de design
+designs: Designs
 docs: Documentation
 docsFooterMsg: La documentation n'est jamais terminée. J'espère que nous avons pu répondre à toutes vos questions, mais si ce n'est pas le cas, de l'aide est disponible.
 docsNotFoundMsg: Nous n'avons pas pu trouver cette documentation, ce qui signifie généralement qu'elle n'a pas encore été écrite.
@@ -66,26 +65,23 @@ documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
 draftPattern: 'Ébauche de {pattern}'
-draftPatternForModel: 'Ebauche de {pattern} pour {model}'
+draftPatternForModel: 'Ébauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
 dragAndDropImageHere: Glissez et déposez l'image ici, ou sélectionnez-en une manuellement à l'aide du bouton ci-dessous
 emailAddress: Adresse mail
 emailWorksToo: 'Si vous ne connaissez pas votre nom d''utilisateur, votre adresse mail fonctionne également'
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
-exportDraft: Exporter l'ébauche
 export: Exporter
-exportGist: Exporter le résumé
 exportTiledPDF: Exporter un PDF paginé
-faq: Questions fréquemment posées
-fieldRemoved: "{field} enlevé"
+faq: Foire Aux Questions (FAQ)
+fieldRemoved: "{field} supprimé"
 fieldSaved: "{field} enregistré"
 filterByPattern: Filtrer par patron
 filterPatterns: Filtrez les patrons
 forgotLoginInstructions: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>.'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
-gist: Résumé
 github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
@@ -100,12 +96,11 @@ imperialUnits: Unités impériales (pouces)
 info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} n''est pas un TLD valide'
-joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes aimables qui seront heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
+joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes sympathiques qui seront heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
 justAMoment: Juste un instant
 layout: Mis en page
-letUsSetupYourAccount: Laissez-nous configurer votre compte
 logIn: Connexion
-loginWithProvider: 'Connectez-vous avec<br>{provider}'
+loginWithProvider: 'Connectez-vous avec<br />{provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -113,20 +108,18 @@ measurements: Mensurations
 menu: Menu
 metadata: Métadonnées
 metricUnits: Unités métriques (cm)
-model: Modèle
-models: Modèles
-monochromeNo: "Image monochrome: le contenu n'est pas disponible en français"
-nameInfo: Un nom aide à séparer les choses. Vous pouvez choisir n'importe quel nom.
+person: Personne
+people: Personnes
+monochromeNo: "Image monochrome : le contenu n'est pas disponible en français"
+nameInfo: Un nom aide à reconnaitre les choses. Vous pouvez choisir n'importe quel nom.
 name: Nom
-newDraftFromGist: Nouveau ébauche a partir d'un résumé
-newDraft: Nouvelle ébauche
-newModel: Nouveau modèle
-newPattern: 'Nouveau {pattern}'
+addThing: Ajouter {thing}
+newThing: Nouveau {thing}
 newPatternForModel: 'Nouveau {pattern} pour {model}'
 noChanges: Pas de changement
 no: false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
-noSeamAllowance: Marge de couture non-inclus
+noSeamAllowance: Marges de couture non-comprises
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
 notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
@@ -136,51 +129,54 @@ options: Options
 orPayPerYear: Ou payer par an
 other: Autre
 otherThing: "Autres {thing}"
-ourPatrons: Notre mécènes
-patron-2: Singe Dynamite
+ourPatrons: Nos mécènes
+patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
-patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Patron, veuillez contacter Joost.
+patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Mécène, veuillez contacter Joost.
 patron: Mécène
 patronPitch: Si vous pensez que ce que nous faisons en vaut la peine, et si vous pouvez consacrer quelques pièces chaque mois sans trop de difficulté, vous aussi pourriez devenir mécène de FreeSewing.
-patronsKeepUsAfloat: Freesewing est rendue possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
+patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
 pattern: Patron
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
-perMonth: par mois
+perMonth: Par Mois
 pleaseEnterAValidEmailAddress: Merci d'entrer une adresse e-mail valide
-pleaseIncludeTheInformationBelow: S'il vous plaît inclure les informations ci-dessous
+pleaseIncludeTheInformationBelow: Merci d'inclure les informations ci-dessous
 preview: Aperçu
-privacyNotice: Avis de confidentialité
-proceedWithCaution: Procéder avec prudence
+privacyNotice: Politique de confidentialité
+proceedWithCaution: Procédez avec précaution
 profile: Profil
 relatedLinks: Liens connexes
 remove: Supprimer
+removeThing: Supprimer {thing}
 reportThisOnGithub: Le signaler sur Github
 requiredMeasurements: Mensurations requises
-resendActivationEmailMessage: 'Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation'
+resendActivationEmailMessage: 'Remplissez l''adresse e-mail avec laquelle vous vous êtes inscrit, et nous vous enverrons un nouveau message de confirmation.'
 resendActivationEmail: Renvoyer le mail d'activation
-resetPassword: Réintialiser le mot de passe
+resetPassword: Réinitialiser le mot de passe
 reset: Réinitialiser
-restoreDefaults: Restaurer les valeurs par défaut
+restoreDefaults: Rétablir les paramètres par défaut
+restoreDesignDefaults: Rétablir les paramètres par défaut du design
+restorePatternDefaults: Rétablie les paramètres par défaut du patron
 saveDraftToYourAccount: Enregistrer l'ébauche sur votre compte
 save: Sauvegarder
 searchLanguageMsg: Chaque langue a son propre index de recherche. Puisque tout notre contenu n'est pas traduit, vous pouvez trouver plus de résultats dans la recherche en anglais.
-searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez?
+searchLanguageTitle: Vous ne trouvez pas ce que vous cherchez ?
 search: Chercher
 selectAPartToMoveMirrorOrRotate: Sélectionnez une pièce à déplacer, inverser ou faire pivoter
 selectImage: Sélectionner une image
 sendAnEmail: Envoyer un mail
 settings: Paramètres
 sewingHelp: Aide de couture
-sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
+sewingPatternsForNonAveragePeople: Patrons de couture pour personnes non-standards
 share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
-signUp: Créer un compte
-signupWithProvider: 'Inscrivez-vous avec<br>{provider}'
+signUp: S'inscrire
+signupWithProvider: 'Inscrivez-vous avec<br />{provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
@@ -196,11 +192,10 @@ thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
 thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
-txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de nos mécènes
-txt-tier0: Vous ne voulez pas nous soutenir? Vous ne pouvez pas vous permettre de nous soutenir?<br>Freesewing est gratuit pour tout le monde. Aucune question posée.
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br />avec le soutien financier de nos mécènes
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
-txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une partie de notre swag Freesewing tant convoité chez vous, partout dans le monde.
-txt-tier8: "Si vous ne voulez pas simplement nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi: swag supplémentaire!"
+txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une part de notre swag Freesewing tant convoité chez vous, partout dans le monde.
+txt-tier8: "Si vous ne voulez simplement pas nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi : swag supplémentaire !"
 txt-tiers: "Freesewing est financé par un modèle de souscription volontaire"
 unitsInfo: Freesewing prend en charge le système métrique et les unités impériales.  Choisissez simplement celui que vous souhaitez utiliser ici. (Par défaut, vous utilisez les unités configurées dans votre compte).
 updated: Mis à jour
@@ -214,7 +209,7 @@ weEncourageYouToReportThis: Nous vous encourageons à signaler ceci
 welcomeAboard: Bienvenue à bord
 welcome: Bienvenue
 weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quiconque.
-whatIsThis: Qu'est-ce que c'est
+whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yahou !
@@ -226,42 +221,99 @@ yourRights: Vos droits
 makerDocs: Documentation pour les couturiers
 devDocs: Documentation pour les développeurs
 slogan: Une librairie JavaScript pour des patrons de couture sur mesure
-getStarted: Pour démarrer
+getStarted: Pour commencer
 apiReference: Référence API
 tutorial: Tutoriel
 editThisPage: Éditer cette page
 loginRequiredRedirect: 'Vous avez été redirigé vers cette page car {page} requiert une authentification'
-recipes: Recettes
 various: Divers
 sewing: Couture
 examples: Exemples
 by: par
-years: Des années
-pricing: Nos montants de donation
+years: Années
+pricing: Tarifs
 createFirst: Commencer en créant un nouveau patron
-noRecipe: Vous n'avez pas (encore) de recettes. Créez un nouveau patron, puis sauvegardez sa recette.
-modelFirst: Commencer par créer un modèle
-noModel: Vous n'avez pas (encore) de modèle. FreeSewing génère des patrons de couture sur mesure. Et nous ne pouvons pas générer de patron si nous n'avons pas de mesures.
-noModel2: La première chose que vous devriez faire est de créer un modèle avec vos mesures, ou les mesures de la personne pour laquelle vous souhaitez créer un patron.
+noPattern: Vous n'avez pas (encore) de patrons. Créez un nouveau patron, puis sauvegardez-le sur votre compte.
+modelFirst: Commencez par ajouter des mensurations
+noModel: Vous n'avez pas (encore) ajouté de mesure. FreeSewing peut générer des patrons de couture sur mesure. Mais pour cela, nous avons besoin de mensurations.
+noModel2: La première chose à faire est donc d'ajouter une personne et de sortir votre mètre-ruban.
 noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisateurs"
 noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
-useRecipeModel: "Utiliser le modèle de la recette"
+usePatternMeasurements: "Utiliser les mesures du patron d'origine"
 createReplica: Créer une réplique
 showDetails: Voir les détails
+hideDetails: Masquer les détails
 clickBelowToLogOut: Cliquez ci-dessous pour vous déconnecter
 compare: Comparer
-saveRecipe: Sauvegarder la recette
-exportPattern: Exporter le patron
+savePattern: Enregistrer le patron
 recreate: Recréer
+recreateThing: Recréer {thing}
+recreateThingForPerson: Recréer {thing} pour {person}
 seeYouLaterUser: À plus tard {user}
 exportForPrinting: Exporter pour l'impression
 exportForEditing: Exporter pour édition
-exportRecipe: Exporter la recette
 startWithNeckTitle: Commencer par le tour de cou
 startWithNeckDescription: En se basant sur votre tour de cou, nous pouvons vous aider à repérer des erreurs dans vos mesures.
 whatYouNeed: Ce dont vous avez besoin
 fabricOptions: Options de tissu
 cutting: Coupe
 instructions: Instructions
-hide: Hide
-show: Show
+hide: Masquer
+show: Afficher
+oneMomentPlease: Veuillez patienter
+loadingMagic: En cours de chargement
+estimate: Estimation
+actual: Réel
+weEstimateYM2B: "Nous estimons que votre {measurement} est environ :"
+exportAsData: Exporter en tant que données
+availablePatterns: Patrons disponibles
+browseCollection: Parcourez votre collection
+browseYourPatterns: Choisissez votre patron
+yourPatterns: Vos patrons
+loginNeededToSavePatternsMsg: Vous devez être connecté pour enregistrer vos patrons
+docsForContributors: Documentation pour les contributeurs
+patternDocs: Documentation de patron
+socialMedia: Réseaux sociaux
+create: Créer
+browse: Parcourir
+patrons: Mécènes
+scrollToTop: Haut de la page
+sitemap: Plan du site
+contributeToThing: Contribuer à {thing}
+mtmIsOurJam: Les patrons de couture sur mesure sont notre spécialité
+fitYouDeserve: Vous passez vraiment à côté de quelque chose si vous utilisez des tailles standardisées.<br />Alors inscrivez-vous dès aujourd'hui et obtenez le rendu que vous méritez.
+supportNag: <b>Free</b>Sewing est <b>gratuit</b>, mais nous apprécierions si vous envisagiez de <a href='/patrons/join/'>nous soutenir</a>.
+madeToMeasure: Sur-mesure
+sizes: Tailles
+standardSizes: Tailles standard
+accountRequired: Cette fonctionnalité nécessite un compte FreeSewing
+size: Taille
+switchToThing: 'Passer à {thing}'
+saveThing: 'Enregistrer {thing}'
+shareThing: 'Partager {thing}'
+link: Lien
+cloneThing: 'Dupliquer {thing}'
+cloneDescription: Recréer une copie exacte, en utilisant les mesures du patron d'origine.
+furtherReading: En lire plus
+saveAsNewPattern: Enregistrer en tant que nouveau patron
+saveAsNewPattern-txt: Stocker (une copie de) ce patron sur votre compte FreeSewing
+exportPattern: Exporter le patron
+printPattern: Imprimer le patron
+exportPattern-txt: Exporter au format PDF adapté à votre imprimante, ou télécharger ce modèle dans une variété de formats
+editThing: 'Modifier {thing}'
+editPattern-txt: Charger ce patron dans l'éditeur de patron
+featureRequiresAccount: Cette fonctionnalité nécessite un compte FreeSewing
+zoom: Zoom
+zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
+savePattern-txt: Stocker ce patron sur votre compte FreeSewing
+comparePattern: Comparer les patrons
+comparePattern-txt: Comparez votre patron à une plage de tailles standard pour examiner les éventuels problèmes d'ajustement
+recreatePattern: Recréer le patron
+recreatePattern-txt: Choisissez une autre personne, puis recréez ce patron pour cette personne
+editOwnPatternsOnly: Vous ne pouvez modifier que vos propres patrons
+editOwnPatternsOnly-txt: Vous ne pouvez pas modifier ce patron car ce n'est pas le vôtre. Mais vous pouvez l'utiliser comme patron de base pour créer votre propre patron.
+updateNotes-txt: Mettre à jour les notes concernant votre patron
+franceWarning: Attention, pour les utilisateurs français
+franceWarning-txt: Plusieurs fournisseurs d'accès français — dont free.fr, laposte.net, orange.fr et sfr.fr — rejettent systématiquement nos e-mails.
+emailNotReceived: Si vous ne recevez pas le mail d'activation, merci de nous contacter pour que nous puissions vous aider.
+

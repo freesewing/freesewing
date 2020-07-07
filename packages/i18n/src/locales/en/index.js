@@ -1,7 +1,6 @@
 import account from './account.yaml'
 import app from './app.yaml'
 import cfp from './cfp.yaml'
-import editor from './editor.yaml'
 import email from './email.yaml'
 import errors from './errors.yaml'
 import filter from './filter.yml'
@@ -15,12 +14,13 @@ import parts from './parts.yaml'
 import patterns from './patterns.yml'
 import plugin from './plugin/'
 import settings from './settings.yml'
-import homepage from './homepage.yaml'
+import welcome from './welcome.yaml'
+
+import jargonFile from './jargon.yml'
 
 const topics = {
   account,
   app,
-  editor,
   cfp,
   email,
   errors,
@@ -35,7 +35,7 @@ const topics = {
   patterns,
   plugin,
   settings,
-  homepage
+  welcome
 }
 
 const strings = {}
@@ -68,7 +68,13 @@ for (let topic of Object.keys(topics)) {
   }
 }
 
+const jargon = {}
+for (let entry in jargonFile) {
+  jargon[jargonFile[entry].term] = jargonFile[entry].description
+}
+
 export default {
   strings,
-  plugin
+  plugin,
+  jargon
 }

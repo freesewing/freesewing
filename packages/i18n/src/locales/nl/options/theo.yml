@@ -1,7 +1,7 @@
 ---
 wedge:
-  title: Wedge
-  description: Controls the length of the crossseam
+  title: Spie
+  description: Bepaalt de lengte van de kruisnaad
 legWidth:
   title: Breedte been
   description: Bepaalt de breedte van de broekspijpen

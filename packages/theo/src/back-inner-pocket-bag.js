@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     macro,
     measurements,
@@ -11,7 +11,7 @@ export default function(part) {
     paperless
   } = part.shorthand()
 
-  let width = measurements.hipsCircumference * 0.16
+  let width = measurements.hips * 0.16
   let height = width * 1.43
 
   points.topRight = new Point(width / 2, 0)

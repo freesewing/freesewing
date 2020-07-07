@@ -20,12 +20,15 @@ export default function(part) {
   paths.waist.render = false
 
   // Split side curve
-  paths.side = new Path()
-    .move(points[-8])
-    .curve(points[-802], points[-1401], points[-14])
-    .split(points[61])
-    .shift()
-    .reverse()
+  paths.side = new Path().move(points[-8]).curve(points[-802], points[-1401], points[-14])
+  let split = paths.side.split(points[61]).shift()
+  if (split) paths.side = split.reverse()
+  else
+    paths.side = new Path()
+      .move(points[-8])
+      .curve_(points[-801], points[-1102])
+      .split(points[61])
+      .pop()
   paths.side.render = false
 
   paths.seam = new Path()
@@ -33,7 +36,6 @@ export default function(part) {
     .line(points.bottomLeft)
     .line(points[61])
     .join(paths.side)
-    .curve_(points[-801], points[-1102])
     .join(paths.waist)
     .close()
     .attr('class', 'fabric')

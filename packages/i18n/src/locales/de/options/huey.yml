@@ -1,22 +1,22 @@
 ---
 pocket:
   title: Tasche
-  description: Whether to include a front pocket or not
+  description: Soll eine Fronttasche eingefügt werden oder nicht
 pocketHeight:
   title: Taschenhöhe
   description: Steuert die Höhe der Tasche
 hoodHeight:
-  title: Haubenhöhe
+  title: Kaputzenhöhe
   description: Steuert die Höhe der Haube
 hoodCutback:
-  title: Haube cutback FIXME
-  description: Steuert, wie weit die Haubenöffnung zurückgeschnitten wird
+  title: Kaputzenausschnitt
+  description: Leg fest wie weit der Ausschnitt der Kaputze zurückgeschnitten wird
 hoodClosure:
-  title: Haubenverschluss
-  description: Steuert, wie viel von der Haube zum vorderen Verschluss gehört
+  title: Kaputzenverschluss
+  description: Legt fest, wie viel von der der Kaputze zum vorderen Verschluss gehört
 hoodDepth:
-  title: Haubentiefe
-  description: Steuert die Tiefe der Haube
+  title: Kaputzentiefe
+  description: Steuert die Tiefe der Kaputze
 hoodAngle:
-  title: Winkel der Haube
-  description: Controls the angle at which the hood is attached
+  title: Winkel der Kaputze
+  description: Steuert den Winkel mit welchem die Kaputze angebracht wird

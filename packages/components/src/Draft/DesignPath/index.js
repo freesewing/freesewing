@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DesignPath = props => {
+const DesignPath = (props) => {
   let output = []
   let i = 0
   let from = null

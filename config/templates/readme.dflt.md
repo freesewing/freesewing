@@ -1,34 +1,32 @@
-<p align="center">
-<a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
-<br>
-<a href="https://freesewing.org/">FreeSewing v2</a>
-</p>
-<p align="center">An open source platform for made-to-measure sewing patterns</p>
+![FreeSewing](https://freesewing.org/banner.jpg)
 {{{badges}}}
 
-# {{{fullname}}}
+## What am I looking at? 🤔
+
+This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
+This folder holds **{{{fullname}}}**
 
 {{description}}
 
 {{{info}}}
 
-## About FreeSewing 🤔
+## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/en/freesewing) is a *batteries-included* toolbox
+Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
-of [plugins](https://freesewing.dev/en/plugins) and getting started is as simple as:
+of [plugins](https://freesewing.dev/reference/plugins/) and getting started is as simple as:
 
 ```bash
 npm init freesewing-pattern
 ```
 
-The [getting started] section on [freesewing.dev](https://freesewing.dev/) is a good
+The [getting started](https://freesewing.dev/guides/getting-started/) section on [freesewing.dev](https://freesewing.dev/) is a good
 entrypoint to our documentation, but you'll find a lot more there, including
-our [API documentation](https://freesewing.dev/en/freesewing/api),
-as well as [examples](https://freesewing.dev/en/freesewing/examples),
-and [best practices](https://freesewing.dev/en/do).
+our [API reference](https://freesewing.dev/reference/api/),
+as well as [our turorial](https://freesewing.dev/tutorials/pattern-design/),
+and [howtos](https://freesewing.dev/howtos/).
 
 If you're a maker, checkout [freesewing.org](https://freesewing/) where you can generate
 our sewing patterns adapted to your measurements.
@@ -44,7 +42,7 @@ should [become a patron](https://freesewing.org/patrons/join).
 ## Links 👩‍💻
 
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
- - 💻 Developers website: [freesewing.dev](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
  - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)

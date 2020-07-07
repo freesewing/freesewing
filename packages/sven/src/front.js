@@ -1,8 +1,9 @@
-export default part => {
+export default (part) => {
   let {
     store,
     measurements,
     sa,
+    Point,
     points,
     Path,
     paths,
@@ -14,21 +15,16 @@ export default part => {
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 
-  //  Waist shaping
-  points.waist.x = (measurements.naturalWaist * (1 + options.waistEase)) / 4
-  points.hips.x = (measurements.hipsCircumference * (1 + options.hipsEase)) / 4
-  points.hem.x = points.hips.x
-  points.hipsCp2 = points.hips.shift(90, measurements.naturalWaistToHip / 3)
-  points.waistCp1 = points.waist.shift(-90, measurements.naturalWaistToHip / 3)
-  points.waistCp2 = points.waist.shift(90, measurements.centerBackNeckToWaist / 4)
+  // Fit the hips
+  points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
+  points.hipsCp2 = new Point(points.hem.x, front ? points.cfWaist.y : points.cbWaist.y)
 
   if (options.ribbing) {
-    // Adapt lengtht for ribbing
+    // Adapt length for ribbing
     let ribbingHeight
     if (typeof store.get('ribbingHeight') === 'undefined') {
       ribbingHeight =
-        (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip) *
-        options.ribbingHeight
+        (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
       store.set('ribbingHeight', ribbingHeight)
     } else ribbingHeight = store.get('ribbingHeight')
     points.hem = points.hem.shift(90, ribbingHeight)
@@ -39,9 +35,7 @@ export default part => {
   // Paths
   paths.saBase = new Path()
     .move(points.hem)
-    .line(points.hips)
-    .curve(points.hipsCp2, points.waistCp1, points.waist)
-    .curve_(points.waistCp2, points.armhole)
+    .curve_(points.hipsCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
@@ -66,6 +60,7 @@ export default part => {
       if (front) paths.sa.line(points.cfNeck).move(points.cfHem)
       else paths.sa.line(points.cbNeck).move(points.cbHem)
       paths.sa.line(paths.sa.start())
+      paths.sa.attr('class', 'fabric sa')
     }
   }
 

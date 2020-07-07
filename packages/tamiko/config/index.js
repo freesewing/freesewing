@@ -1,55 +1,25 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "tamiko",
+  name: 'tamiko',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "womenswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'unisex',
+  type: 'pattern',
   difficulty: 1,
-  tags: ["top"],
+  tags: ['top'],
   optionGroups: {
-    fit: ["armholeDepthFactor", "chestEase", "shoulderSlope"],
-    style: ["flare", "lengthBonus", "shoulderseamLength"]
+    fit: ['armholeDepthFactor', 'chestEase'],
+    style: ['flare', 'lengthBonus', 'shoulderseamLength']
   },
-  measurements: [
-    "shoulderToShoulder",
-    "chestCircumference",
-    "centerBackNeckToWaist",
-    "naturalWaistToHip"
-  ],
-  parts: ["top"],
+  measurements: ['shoulderToShoulder', 'chest', 'hpsToWaistBack', 'shoulderSlope', 'waistToHips'],
+  parts: ['top'],
   options: {
-    armholeDepthFactor: {
-      pct: 50,
-      min: 40,
-      max: 60
-    },
-    chestEase: {
-      pct: 2,
-      min: 1,
-      max: 20
-    },
-    flare: {
-      deg: 15,
-      min: -10,
-      max: 30
-    },
-    lengthBonus: {
-      pct: 13,
-      min: 0,
-      max: 60
-    },
-    shoulderseamLength: {
-      pct: 10,
-      min: 5,
-      max: 25
-    },
-    shoulderSlope: {
-      deg: 15,
-      min: 0,
-      max: 25
-    }
+    armholeDepthFactor: { pct: 50, min: 40, max: 60 },
+    chestEase: { pct: 2, min: 1, max: 20 },
+    flare: { deg: 15, min: -10, max: 30 },
+    lengthBonus: { pct: 13, min: 0, max: 60 },
+    shoulderseamLength: { pct: 10, min: 5, max: 25 }
   }
-};
+}

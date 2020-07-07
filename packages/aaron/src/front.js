@@ -1,6 +1,6 @@
 import { dimensions } from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     utils,
     store,
@@ -24,17 +24,13 @@ export default function(part) {
   // Handle stretch
   for (let i in points) points[i].x = points[i].x * (1 - options.stretchFactor)
 
-  // Rename cb (center back) to cf (center front)
-  for (let key of ['Neck', 'Shoulder', 'Armhole', 'Waist', 'Hips', 'Hem']) {
-    points[`cf${key}`] = new Point(points[`cb${key}`].x, points[`cb${key}`].y)
-    //delete points[`cb${key}`];
+  // Clone cb (center back) into cf (center front)
+  for (let key of ['Neck', 'Shoulder', 'Armhole', 'Hips', 'Hem']) {
+    points[`cf${key}`] = points[`cb${key}`].clone()
   }
 
   // Neckline
-  points.cfNeck = points.cfNeck.shift(
-    -90,
-    options.necklineDrop * (measurements.centerBackNeckToWaist + measurements.naturalWaistToHip)
-  )
+  points.cfNeck = points.cfNeck.shift(-90, options.necklineDrop * measurements.hpsToWaistBack)
 
   // Strap
   points.strapCenter = points.neck.shiftFractionTowards(
@@ -58,43 +54,45 @@ export default function(part) {
   )
   points.cfNeckCp1 = points.cfNeck.shiftFractionTowards(points.necklineCorner, options.necklineBend)
 
+  // This will come in handy
+  store.set('armholeY', points.armhole.y * (1 + options.armholeDrop))
+
   // Hips
   points.hips.x =
-    ((measurements.hipsCircumference + options.hipsEase * measurements.hipsCircumference) / 4) *
-    (1 - options.stretchFactor)
+    ((measurements.hips + options.hipsEase * measurements.hips) / 4) * (1 - options.stretchFactor)
   points.waist.x = points.hips.x // Because stretch
-  points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 2)
+
+  points.hipsCp2 = new Point(
+    points.hips.x,
+    store.get('armholeY') + (points.hips.y - store.get('armholeY')) / 2
+  )
 
   // Hem
   points.hem.x = points.hips.x
 
-  // Armhole drop
-  let side = new Path()
-    .move(points.hem)
-    .line(points.waist)
-    .curve(points.waistCp2, points.armhole, points.armhole)
-  let split = side.intersectsY(points.armhole.y * (1 + options.armholeDrop)).pop()
-  paths.side = side.split(split)[0]
-  paths.side.render = false
-  points.aaronArmhole = split
-
   // Armhole
+  points.armhole = utils.beamIntersectsY(
+    points.armhole,
+    points.hips,
+    points.armhole.y * (1 + options.armholeDrop)
+  )
   points.armholeCorner = utils.beamsIntersect(
-    points.aaronArmhole,
-    points.aaronArmhole.shift(180, 10),
+    points.armhole,
+    points.armhole.shift(180, 10),
     points.strapRight,
     points.strapLeft.rotate(90, points.strapRight)
   )
-  points.armholeCp2 = points.aaronArmhole.shiftFractionTowards(points.armholeCorner, 0.8)
-  points.strapRightCp1 = points.strapRight.shiftFractionTowards(points.armholeCorner, 0.6)
+  points.armholeCp2 = points.armhole.shiftFractionTowards(points.armholeCorner, 0.5)
+  points.strapRightCp1 = points.strapRight.shiftFractionTowards(points.armholeCorner, 0.5)
+
+  points.anchor = points.cfNeck.clone()
 
   // Seamline
   paths.seam = new Path()
     .move(points.cfNeck)
     .line(points.cfHem)
     .line(points.hem)
-    .line(points.waist)
-    .join(paths.side)
+    .curve_(points.hipsCp2, points.armhole)
     .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
     .line(points.strapLeft)
     .curve(points.strapLeftCp2, points.cfNeckCp1, points.cfNeck)
@@ -105,7 +103,7 @@ export default function(part) {
   store.set(
     'frontArmholeLength',
     new Path()
-      .move(points.aaronArmhole)
+      .move(points.armhole)
       .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
       .length()
   )
@@ -130,24 +128,30 @@ export default function(part) {
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
+      let saShoulder = new Path().move(points.strapRight).line(points.strapLeft).offset(sa)
       paths.saShoulder = new Path()
         .move(points.strapRight)
-        .line(points.strapLeft)
-        .offset(sa)
+        .line(saShoulder.start())
+        .join(saShoulder)
         .line(points.strapLeft)
         .attr('class', 'fabric sa')
-      paths.saShoulder.move(points.strapRight).line(paths.saShoulder.start())
-      paths.saSide = paths.side
-        .offset(sa)
-        .line(points.aaronArmhole)
-        .attr('class', 'fabric sa')
-      paths.saHem = new Path()
+      paths.sa = new Path()
         .move(points.cfHem)
-        .line(points.hem)
-        .offset(sa * 2.5)
+        .line(points.cfHem)
+        .join(
+          new Path()
+            .move(points.cfHem)
+            .line(points.hem)
+            .offset(sa * 2.5)
+        )
+        .join(
+          new Path()
+            .move(points.hem)
+            .curve_(points.waist, points.armhole)
+            .offset(sa)
+            .line(points.armhole)
+        )
         .attr('class', 'fabric sa')
-        .line(paths.saSide.start())
-      paths.saHem.move(points.cfHem).line(paths.saHem.start())
     }
   }
 

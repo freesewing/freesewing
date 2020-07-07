@@ -1,36 +1,44 @@
 # Change log for: @freesewing/core
 
-
-## Unreleased
+## 2.6.0 (2020-05-01)
 
 ### Changed
 
- - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
-## 2.0.4 (2019-09-27)
+- utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
+- We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
-**Note:** Version bump only for package core
+## 2.4.4 (2020-03-15)
 
+### Fixed
 
-## 2.0.3 (2019-09-15)
+- New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
 
-**Note:** Version bump only for package core
+## 2.2.0 (2020-02-22)
 
+### Added
 
-## 2.0.2 (2019-09-06)
+- Added the `Path.noop()` method
+- Added the `Path.insop()` methods
 
-**Note:** Version bump only for package core
+## 2.1.9 (2020-01-18)
 
+### Fixed
 
-## 2.0.1 (2019-09-01)
+- [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
 
-**Note:** Version bump only for package core
+## 2.1.0 (2019-10-06)
 
+### Changed
 
-
+- The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
 
 ## 2.0.0 (2019-08-25)
 
+### Added
+
+- Initial release
+
 This is the **initial release**, and the start of this change log.
 
-Prior to version 2, FreeSewing was not a JavaScript project.
-As such, that history is out of scope for this change log.
+> Prior to version 2, FreeSewing was not a JavaScript project.
+> As such, that history is out of scope for this change log.

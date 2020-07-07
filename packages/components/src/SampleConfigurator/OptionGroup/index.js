@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 import { injectIntl } from 'react-intl'
 
-const OptionGroup = props => {
+const OptionGroup = (props) => {
   return (
     <React.Fragment>
-      {props.options.map(name => {
+      {props.options.map((name) => {
         let output = []
         if (typeof name === 'object') {
           // Subgroup
@@ -43,12 +42,5 @@ const OptionGroup = props => {
     </React.Fragment>
   )
 }
-
-OptionGroup.propTypes = {
-  config: PropTypes.object.isRequired,
-  options: PropTypes.array.isRequired
-}
-
-OptionGroup.defaultProps = {}
 
 export default injectIntl(OptionGroup)

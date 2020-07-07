@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     Path,
@@ -21,10 +21,7 @@ export default function(part) {
   // Points
   points.bottomLeft = new Point(0, 0.5 * store.get('ribbonWidth'))
   points.topLeft = points.bottomLeft.flipY()
-  points.bottomRight = points.bottomLeft.shift(
-    0,
-    measurements.neckCircumference * (1 + options.collarEase)
-  )
+  points.bottomRight = points.bottomLeft.shift(0, measurements.neck * (1 + options.collarEase))
   points.topRight = points.bottomRight.flipY()
   points.titleAnchor = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
 

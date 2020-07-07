@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -12,7 +12,7 @@ export default part => {
     store
   } = part.shorthand()
 
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let ph = store.get('pocketBagLength') + pwh // Pocket height
 
@@ -27,7 +27,7 @@ export default part => {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: pw / 8,
-    render: true,
+    render: false,
     prefix: 'roundLeft'
   })
   macro('round', {
@@ -35,7 +35,7 @@ export default part => {
     to: points.topRight,
     via: points.bottomRight,
     radius: pw / 8,
-    render: true,
+    render: false,
     prefix: 'roundRight'
   })
 

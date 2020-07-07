@@ -8,20 +8,10 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'menswear',
+  department: 'unisex',
   type: 'pattern',
   difficulty: 3,
-  tags: [
-    'freesewing',
-    'design',
-    'diy',
-    'fashion',
-    'made to measure',
-    'parametric design',
-    'pattern',
-    'sewing',
-    'sewing pattern'
-  ],
+  tags: ['trousers', 'bottom', 'basics'],
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
     style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],
@@ -34,7 +24,7 @@ export default {
       'crotchFactorFrontVer'
     ]
   },
-  measurements: ['seatCircumference', 'inseam', 'seatDepth'],
+  measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
   dependencies: {},
   inject: { pants: 'pantsproto', mini: 'pantsproto' },
   hide: [],

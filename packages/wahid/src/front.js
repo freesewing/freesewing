@@ -1,6 +1,6 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -24,7 +24,7 @@ export default part => {
 
   // Neck cutout
   points.closureTop = new Point(
-    measurements.chestCircumference * options.frontOverlap * -1,
+    measurements.chest * options.frontOverlap * -1,
     points.waist.y * options.necklineDrop
   )
   if (options.frontStyle === 'classic')
@@ -99,7 +99,7 @@ export default part => {
   } else {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
     // Draw rounded hem
-    let radius = measurements.hipsCircumference * options.hemRadius
+    let radius = measurements.hips * options.hemRadius
     // Avoid radius extending beyond the dart
     if (radius > points.closureTop.dx(points.dartHemLeft))
       radius = points.closureTop.dx(points.dartHemLeft)
@@ -118,7 +118,7 @@ export default part => {
   points.dartEnd = options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight
 
   // Pockets
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let pwvh = pwh / Math.cos(utils.deg2rad(options.pocketAngle)) // Pocket welt vertical height
 
@@ -149,52 +149,58 @@ export default part => {
   // Store pocket bag length
   store.set('pocketBagLength', points.pocketTopMid.dy(points.cfHem) * 0.75)
 
-  // Front scye dart
-  points._dartWidth = points.dartTop.shiftFractionTowards(
-    points.armholeHollow.rotate(options.frontScyeDart, points.dartTop),
-    1.5
-  )
-  points.armholeHollowTop = new Path()
-    .move(points.armholeHollow)
-    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .intersects(new Path().move(points.dartTop).line(points._dartWidth))
-    .pop()
-  // Adjust control point
-  points.armholeHollowCp2 = points.armholeHollowCp2.shift(
-    points.armholeHollow.angle(points.armholeHollowTop),
-    points.armholeHollow.dist(points.armholeHollowTop)
-  )
-  // Rotate front scye dart into front dart
-  let toRotate = [
-    'dartWaistRightCpTop',
-    'dartWaistRight',
-    'dartWaistRightCpBottom',
-    'dartHipRightCpTop',
-    'dartHipRight',
-    'dartHemRight',
-    'splitDartHemRight',
-    'splitDartHemRightCp2',
-    'splitHemCp1',
-    'hem',
-    'hips',
-    'hipsCp2',
-    'waistCp1',
-    'waist',
-    'waistCp2',
-    'armhole',
-    'armholeCp2',
-    'armholeHollow',
-    'pocketTopMidRight',
-    'pocketBottomMidRight',
-    'pocketTopRight',
-    'pocketBottomRight',
-    'dartEnd'
-  ]
-  for (let p of toRotate) {
-    if (typeof points[p] !== 'undefined')
-      points[p] = points[p].rotate(options.frontScyeDart, points.dartTop)
+  if (options.frontScyeDart) {
+    // Front scye dart
+    points._dartWidth = points.dartTop.shiftFractionTowards(
+      points.armholeHollow.rotate(options.frontScyeDart, points.dartTop),
+      1.5
+    )
+    points.armholeHollowTop = new Path()
+      .move(points.armholeHollow)
+      .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+      .intersects(new Path().move(points.dartTop).line(points._dartWidth))
+      .pop()
+    // Adjust control point
+    points.armholeHollowCp2 = points.armholeHollowCp2.shift(
+      points.armholeHollow.angle(points.armholeHollowTop),
+      points.armholeHollow.dist(points.armholeHollowTop)
+    )
+    // Rotate front scye dart into front dart
+    let toRotate = [
+      'dartWaistRightCpTop',
+      'dartWaistRight',
+      'dartWaistRightCpBottom',
+      'dartHipRightCpTop',
+      'dartHipRight',
+      'dartHemRight',
+      'splitDartHemRight',
+      'splitDartHemRightCp2',
+      'splitHemCp1',
+      'hem',
+      'hips',
+      'hipsCp2',
+      'waistCp1',
+      'waist',
+      'waistCp2',
+      'armhole',
+      'armholeCp2',
+      'armholeHollow',
+      'pocketTopMidRight',
+      'pocketBottomMidRight',
+      'pocketTopRight',
+      'pocketBottomRight',
+      'dartEnd'
+    ]
+    for (let p of toRotate) {
+      if (typeof points[p] !== 'undefined')
+        points[p] = points[p].rotate(options.frontScyeDart, points.dartTop)
+    }
+    points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
   }
-  points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
+
+  // Facing/Lining boundary (flb)
+  points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
+  points.flbCp = points.dartTop.shift(90, points.dartTop.dist(points.flbTop) / 2)
 
   // Seam line
   delete paths.cutonfold
@@ -226,27 +232,24 @@ export default part => {
     paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
   }
   paths.dart = dartPath(part)
-  paths.seam = paths.saBase
-    .join(paths.dart)
-    .join(paths.hemBase)
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).close().attr('class', 'fabric')
   paths.saBase.render = false
   paths.hemBase.render = false
   paths.dart.render = false
 
-  // Pocket path
-  paths.pocket = new Path()
-    .move(points.pocketTopMidLeft)
-    .line(points.pocketTopLeft)
-    .line(points.pocketBottomLeft)
-    .line(points.pocketBottomMidLeft)
-    .move(points.pocketBottomMidRight)
-    .line(points.pocketBottomRight)
-    .line(points.pocketTopRight)
-    .line(points.pocketTopMidRight)
-    .attr('class', 'fabric dashed')
-
   if (complete) {
+    // Pocket path
+    paths.pocket = new Path()
+      .move(points.pocketTopMidLeft)
+      .line(points.pocketTopLeft)
+      .line(points.pocketBottomLeft)
+      .line(points.pocketBottomMidLeft)
+      .move(points.pocketBottomMidRight)
+      .line(points.pocketBottomRight)
+      .line(points.pocketTopRight)
+      .line(points.pocketTopMidRight)
+      .attr('class', 'fabric dashed')
+
     // Buttons
     points.button1 = new Point(0, points.closureTop.y + 10)
     let delta = points.button1.dist(points.lastButton) / (options.buttons - 1)

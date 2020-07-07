@@ -1,43 +1,48 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import FormFieldList from "../../.form/FormFieldList";
-import OptionPreamble from "../OptionPreamble";
+import React, { useState } from 'react'
+import FormFieldList from '../../.form/FormFieldList'
+import OptionPreamble from '../OptionPreamble'
 
-const PatternOptionList = props => {
-  const [value, setValue] = useState(props.dflt);
-  const [expanded, setExpanded] = useState(false);
+const PatternOptionList = (props) => {
+  const [value, setValue] = useState(props.dflt)
+  const [expanded, setExpanded] = useState(false)
 
   const update = (name, newValue, evt) => {
-    props.updateValue(props.name, newValue);
-    setValue(newValue);
-  };
+    props.updateValue(props.name, newValue)
+    setValue(newValue)
+  }
 
   const reset = () => {
-    setValue(props.dflt);
-    props.updateValue(props.name, props.dflt);
-  };
+    setValue(props.dflt)
+    props.updateValue(props.name, props.dflt)
+  }
 
-  const toggleExpanded = () => setExpanded(!expanded);
+  const patternReset = () => {
+    setValue(props.designDflt)
+    props.updateValue(props.name, props.designDflt)
+  }
+
+  const toggleExpanded = () => setExpanded(!expanded)
 
   // Add translations
-  let stringKey = `options.${props.pattern}.${props.name}.options.`;
-  let list = {};
+  let stringKey = `options.${props.pattern}.${props.name}.options.`
+  let list = {}
   for (let item of props.list)
     list[item] = props.intl.formatMessage({
       id: stringKey + item,
       defaultMessage: item
-    });
+    })
   let option = (
     <FormFieldList
       name={props.name}
       value={value}
       dflt={props.dflt}
+      designDflt={props.designDflt}
       onChange={update}
-      label={"po-list-" + props.name}
+      label={'po-list-' + props.name}
       updateValue={update}
       list={list}
     />
-  );
+  )
   return (
     <li>
       <OptionPreamble
@@ -45,14 +50,15 @@ const PatternOptionList = props => {
         value={value}
         desc={props.desc}
         title={props.title}
-        id={"po-list-" + props.name}
+        id={'po-list-' + props.name}
         displayValue={list[value]}
         reset={reset}
+        patternReset={patternReset}
         toggleExpanded={toggleExpanded}
         expanded={expanded}
         showHelp={() =>
-          props.raiseEvent("showHelp", {
-            type: "patternOption",
+          props.raiseEvent('showHelp', {
+            type: 'patternOption',
             value: props.name
           })
         }
@@ -60,19 +66,7 @@ const PatternOptionList = props => {
         noDocs={props.noDocs}
       />
     </li>
-  );
-};
+  )
+}
 
-PatternOptionList.propTypes = {
-  updateValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  dflt: PropTypes.oneOfType([
-    PropTypes.number.isRequired,
-    PropTypes.string.isRequired
-  ]),
-  title: PropTypes.node.isRequired,
-  desc: PropTypes.node.isRequired,
-  list: PropTypes.array.isRequired
-};
-
-export default PatternOptionList;
+export default PatternOptionList
