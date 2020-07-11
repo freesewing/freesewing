@@ -184,7 +184,9 @@ Part.prototype.shorthand = function () {
     Path: this.Path,
     Snippet: this.Snippet,
     complete,
-    paperless
+    paperless,
+    events: this.context.events,
+    raise: this.context.events.raise
   }
 }
 

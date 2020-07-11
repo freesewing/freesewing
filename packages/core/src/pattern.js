@@ -23,6 +23,25 @@ export default function Pattern(config = { options: {} }) {
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
 
+  // Store events
+  this.events = {
+    info: [],
+    warning: [],
+    error: []
+  }
+  const events = this.events
+  this.events.raise = {
+    event: function (data) {
+      events.info.push(data)
+    },
+    warning: function (data) {
+      events.warning.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    }
+  }
+
   // Default settings
   this.settings = {
     complete: true,
@@ -65,7 +84,8 @@ export default function Pattern(config = { options: {} }) {
     config: this.config,
     settings: this.settings,
     store: this.store,
-    macros: this.macros
+    macros: this.macros,
+    events: this.events
   }
 
   // Part closure
@@ -554,6 +574,11 @@ Pattern.prototype.getRenderProps = function () {
   props.width = this.width
   props.height = this.height
   props.settings = this.settings
+  props.events = {
+    info: this.events.info,
+    warning: this.events.warning,
+    error: this.events.error
+  }
   props.parts = {}
   for (let p in this.parts) {
     if (this.parts[p].render) {
