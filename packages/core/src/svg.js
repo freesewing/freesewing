@@ -21,7 +21,7 @@ function Svg(pattern) {
   this.attributes.add('freesewing', version)
 }
 
-Svg.prototype.runHooks = function(hookName, data = false) {
+Svg.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks.length > 0) {
@@ -32,7 +32,7 @@ Svg.prototype.runHooks = function(hookName, data = false) {
 }
 
 /** Runs insertText hooks */
-Svg.prototype.insertText = function(text) {
+Svg.prototype.insertText = function (text) {
   if (this.hooks.insertText.length > 0) {
     for (let hook of this.hooks.insertText)
       text = hook.method(this.pattern.settings.locale, text, hook.data)
@@ -41,11 +41,8 @@ Svg.prototype.insertText = function(text) {
   return text
 }
 
-/** Debug method, exposes debug hook */
-Svg.prototype.debug = function() {}
-
 /** Renders a draft object as SVG */
-Svg.prototype.render = function(pattern) {
+Svg.prototype.render = function (pattern) {
   this.idPrefix = pattern.settings.idPrefix
   this.runHooks('preRender')
   if (!pattern.settings.embed) {
@@ -77,7 +74,7 @@ Svg.prototype.render = function(pattern) {
 }
 
 /** Renders SVG head section */
-Svg.prototype.renderHead = function() {
+Svg.prototype.renderHead = function () {
   let svg = this.renderStyle()
   svg += this.renderScript()
   svg += this.renderDefs()
@@ -87,7 +84,7 @@ Svg.prototype.renderHead = function() {
 }
 
 /** Renders SVG closing section */
-Svg.prototype.renderTail = function() {
+Svg.prototype.renderTail = function () {
   let svg = ''
   svg += this.closeGroup()
   svg += this.nl() + '</svg>'
@@ -96,7 +93,7 @@ Svg.prototype.renderTail = function() {
 }
 
 /** Returns SVG code for the opening SVG tag */
-Svg.prototype.renderSvgTag = function() {
+Svg.prototype.renderSvgTag = function () {
   let svg = '<svg'
   this.indent()
   svg += this.nl() + this.attributes.render()
@@ -107,7 +104,7 @@ Svg.prototype.renderSvgTag = function() {
 }
 
 /** Returns SVG code for the style block */
-Svg.prototype.renderStyle = function() {
+Svg.prototype.renderStyle = function () {
   let svg = '<style type="text/css"> <![CDATA[ '
   this.indent()
   svg += this.nl() + this.style
@@ -117,7 +114,7 @@ Svg.prototype.renderStyle = function() {
 }
 
 /** Returns SVG code for the script block */
-Svg.prototype.renderScript = function() {
+Svg.prototype.renderScript = function () {
   let svg = '<script type="text/javascript"> <![CDATA['
   this.indent()
   svg += this.nl() + this.script
@@ -128,7 +125,7 @@ Svg.prototype.renderScript = function() {
 }
 
 /** Returns SVG code for the defs block */
-Svg.prototype.renderDefs = function() {
+Svg.prototype.renderDefs = function () {
   let svg = '<defs>'
   this.indent()
   svg += this.nl() + this.defs
@@ -139,7 +136,7 @@ Svg.prototype.renderDefs = function() {
 }
 
 /** Returns SVG code for a Part object */
-Svg.prototype.renderPart = function(part) {
+Svg.prototype.renderPart = function (part) {
   let svg = ''
   for (let key in part.paths) {
     let path = part.paths[key]
@@ -162,14 +159,14 @@ Svg.prototype.renderPart = function(part) {
 }
 
 /** Returns SVG code for a Path object */
-Svg.prototype.renderPath = function(path) {
+Svg.prototype.renderPath = function (path) {
   if (!path.attributes.get('id')) path.attributes.add('id', this.idPrefix + this.getId())
   path.attributes.set('d', path.asPathstring())
 
   return `${this.nl()}<path ${path.attributes.render()} />${this.renderPathText(path)}`
 }
 
-Svg.prototype.renderPathText = function(path) {
+Svg.prototype.renderPathText = function (path) {
   let text = path.attributes.get('data-text')
   if (!text) return ''
   else this.text = this.insertText(text)
@@ -181,16 +178,16 @@ Svg.prototype.renderPathText = function(path) {
   else if (align && align.indexOf('right') > -1) offset = ' startOffset="100%" '
   let svg = this.nl() + '<text>'
   this.indent()
-  svg += `<textPath xlink:href="#${path.attributes.get('id')}" ${offset}><tspan ${attributes}>${
-    this.escapeText(this.text)
-  }</tspan></textPath>`
+  svg += `<textPath xlink:href="#${path.attributes.get(
+    'id'
+  )}" ${offset}><tspan ${attributes}>${this.escapeText(this.text)}</tspan></textPath>`
   this.outdent()
   svg += this.nl() + '</text>'
 
   return svg
 }
 
-Svg.prototype.renderText = function(point) {
+Svg.prototype.renderText = function (point) {
   let text = point.attributes.getAsArray('data-text')
   if (text !== false) {
     let joint = ''
@@ -214,8 +211,7 @@ Svg.prototype.renderText = function(point) {
       svg += `<tspan x="${point.x}" dy="${lineHeight}">${line}</tspan>`
     }
   } else {
-    svg += `<tspan>${this.escapeText(this.text)
-    }</tspan>`
+    svg += `<tspan>${this.escapeText(this.text)}</tspan>`
   }
   this.outdent()
   svg += this.nl() + '</text>'
@@ -223,18 +219,18 @@ Svg.prototype.renderText = function(point) {
   return svg
 }
 
-Svg.prototype.escapeText = function(text) {
+Svg.prototype.escapeText = function (text) {
   return text.replace('"', '&#8220;')
 }
 
-Svg.prototype.renderCircle = function(point) {
+Svg.prototype.renderCircle = function (point) {
   return `<circle cx="${point.x}" cy="${point.y}" r="${point.attributes.get(
     'data-circle'
   )}" ${point.attributes.renderIfPrefixIs('data-circle-')}></circle>`
 }
 
 /** Returns SVG code for a snippet */
-Svg.prototype.renderSnippet = function(snippet, part) {
+Svg.prototype.renderSnippet = function (snippet, part) {
   let x = snippet.anchor.x
   let y = snippet.anchor.y
   let scale = snippet.attributes.get('data-scale')
@@ -256,7 +252,7 @@ Svg.prototype.renderSnippet = function(snippet, part) {
 }
 
 /** Returns SVG code to open a group */
-Svg.prototype.openGroup = function(id, attributes = false) {
+Svg.prototype.openGroup = function (id, attributes = false) {
   let svg = this.nl() + this.nl()
   svg += `<!-- Start of group #${id} -->`
   svg += this.nl()
@@ -270,19 +266,19 @@ Svg.prototype.openGroup = function(id, attributes = false) {
 }
 
 /** Returns SVG code to close a group */
-Svg.prototype.closeGroup = function() {
+Svg.prototype.closeGroup = function () {
   this.outdent()
 
   return `${this.nl()}</g>${this.nl()}<!-- end of group #${this.openGroups.pop()} -->`
 }
 
 /** Returns a linebreak + identation */
-Svg.prototype.nl = function() {
+Svg.prototype.nl = function () {
   return '\n' + this.tab()
 }
 
 /** Returns indentation */
-Svg.prototype.tab = function() {
+Svg.prototype.tab = function () {
   let space = ''
   for (let i = 0; i < this.tabs; i++) {
     space += '  '
@@ -292,17 +288,17 @@ Svg.prototype.tab = function() {
 }
 
 /** Increases indentation by 1 */
-Svg.prototype.indent = function() {
+Svg.prototype.indent = function () {
   this.tabs += 1
 }
 
 /** Decreases indentation by 1 */
-Svg.prototype.outdent = function() {
+Svg.prototype.outdent = function () {
   this.tabs -= 1
 }
 
 /** Returns an unused ID */
-Svg.prototype.getId = function() {
+Svg.prototype.getId = function () {
   this.freeId += 1
 
   return '' + this.freeId
