@@ -5,8 +5,10 @@ Unreleased:
       - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
       - Changed `models` to `people` in `sampleConfigurator`
       - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
+      - Added support for custom sample styles
     core:
       - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+      - Added support for custom sample styles
     hugo:
       - Added shaping of the side seam
     legend:
@@ -43,14 +45,17 @@ Unreleased:
       - Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
       - Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
     brian:
       - Ported brian to new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
       - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Set HPS as anchor point for sampling in front and back
       - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
     bruce:
       - Ported bruce to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
     carlton:
       - Better range for the `shoulderSlopeReduction` measurement
       - Ported carlton to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
@@ -64,6 +69,7 @@ Unreleased:
       - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Set sample anchor points on all panels
       - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
     css-theme:
       - Updated the width of the SVG paths of a draft to match plugin-theme
     diana:
@@ -86,6 +92,7 @@ Unreleased:
       - Changed some option to better defaults
       - Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
     i18n:
       - Added translations for Titan
       - Removed `Circumference` suffix from measurement names
@@ -166,6 +173,10 @@ Unreleased:
   Removed:
     plugin-buttons:
       - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
+    plugin-debug:
+      - This plugin is deprecated and removed from the repository
+    plugin-designer:
+      - This plugin is deprecated and removed from the repository
 
 2.6.0:
   date: 2020-05-01
@@ -679,10 +690,6 @@ Unreleased:
     plugin-buttons:
       - Initial release
     plugin-cutonfold:
-      - Initial release
-    plugin-debug:
-      - Initial release
-    plugin-designer:
       - Initial release
     plugin-dimension:
       - Initial release
