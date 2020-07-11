@@ -14,7 +14,8 @@ export default function (part) {
     macro,
     utils,
     units,
-    measurements
+    measurements,
+    raise
   } = part.shorthand()
 
   // Lower back neck a bit
@@ -94,6 +95,10 @@ export default function (part) {
     macro('title', { at: points.title, nr: 2, title: 'back' })
     points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
     macro('scalebox', { at: points.scalebox })
+
+    // Raise events
+    raise.event('Armhole length is ' + units(armholeLength))
+    raise.event('Neck opening length is ' + units(neckOpeningLength))
   }
 
   // Paperless?
