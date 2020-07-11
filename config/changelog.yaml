@@ -9,6 +9,7 @@ Unreleased:
     core:
       - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
       - Added support for custom sample styles
+      - Added support for raising events via `raise.[type]()` method
     hugo:
       - Added shaping of the side seam
     legend:
@@ -32,6 +33,7 @@ Unreleased:
       - Better handling of `armholeDrop` option
       - Ported aaron to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
       - Removed `Circumference` suffix from measurement names
+      - Report armhole and neck opening length through raised events
     benjamin:
       - Removed `Circumference` suffix from measurement names
     bent:
