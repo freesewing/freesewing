@@ -30,7 +30,7 @@ function sleevecapAdjust(store, twoBacks = false, options = null) {
 }
 
 function draftSleevecap(part, run) {
-  let { debug, store, measurements, options, Point, points, Path, paths } = part.shorthand()
+  let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
@@ -181,7 +181,7 @@ function redrawSleevecapFront(part, delta) {
 }
 
 export default (part) => {
-  let { debug, store, options, Point, points, paths } = part.shorthand()
+  let { store, options, Point, points, paths } = part.shorthand()
 
   // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
   store.set('sleeveFactor', 1)

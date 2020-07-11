@@ -22,7 +22,7 @@ function tweakTusk(delta, part) {
   points.curveRightCpBottom = points.curveRightCpBottom.shift(90, delta / factor)
 }
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -34,8 +34,7 @@ export default function(part) {
     complete,
     paperless,
     macro,
-    utils,
-    debug
+    utils
   } = part.shorthand()
 
   // Initialize
@@ -76,7 +75,6 @@ export default function(part) {
     if (count > 150)
       throw 'We got stuck trying to calculate an optimal tusk length. Please report this.'
   }
-  debug(`After ${count} iterations, tusk curve length is ${utils.round(delta)}mm off.`)
 
   // Adjust midMid to new length
   points.bottomMid = new Point(0, points.rightTuskLeft.y)
@@ -158,11 +156,7 @@ export default function(part) {
         let saStart = paths.seamStart.offset(sa * -1)
         let saTrim = paths.trimBase.offset(sa * -1).trim()
         let saEnd = paths.seamEnd.offset(sa * -1)
-        paths.sa = saStart
-          .join(saTrim)
-          .join(saEnd)
-          .close()
-          .attr('class', 'fabric sa')
+        paths.sa = saStart.join(saTrim).join(saEnd).close().attr('class', 'fabric sa')
       } else {
         paths.sa = paths.seam
           .offset(sa * -1)

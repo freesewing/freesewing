@@ -3,7 +3,6 @@ import * as shared from './shared'
 export default (part) => {
   let {
     units,
-    debug,
     measurements,
     options,
     store,
@@ -119,18 +118,6 @@ export default (part) => {
     delta = paths.neckOpening.length() * 2 - target
   } while (Math.abs(delta) > 1 && options.brianFitCollar && run < 10)
   delete paths.neckOpening
-  if (options.brianFitCollar) {
-    debug({
-      style: 'success',
-      label: '🏁 Collar fitted',
-      msg: `Target was ${units(target)}, delta of ${units(delta)} reached in ${run} attempts.`
-    })
-  } else
-    debug({
-      style: 'warning',
-      label: '🚫 Not fittingcollar',
-      msg: '(in Brian)'
-    })
 
   // Anchor point for sampling
   points.gridAnchor = points.cbHem

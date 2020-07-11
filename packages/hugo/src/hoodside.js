@@ -11,8 +11,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
   let neckOpening = store.get('neckOpeningLenFront') + store.get('neckOpeningLenBack')

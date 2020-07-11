@@ -18,8 +18,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
   // Fit the hips

@@ -1,5 +1,5 @@
 export default function (part) {
-  let { measurements, options, store, points, paths, Point, Path, debug } = part.shorthand()
+  let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
   let count = 1
   let bottom = new Path()
     .move(points.bottomCF)

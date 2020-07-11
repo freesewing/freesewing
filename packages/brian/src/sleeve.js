@@ -1,6 +1,5 @@
 export default (part) => {
   let {
-    debug,
     store,
     units,
     sa,
@@ -19,16 +18,6 @@ export default (part) => {
 
   // Wrist
   let top = paths.sleevecap.bbox().topLeft.y
-  debug({
-    style: 'info',
-    label: '🗸 Sleevecap height',
-    msg: units(Math.abs(top))
-  })
-  debug({
-    style: 'info',
-    label: '🗸 Sleevecap width',
-    msg: units(points.bicepsRight.x * 2)
-  })
   points.centerWrist = new Point(
     0,
     top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)

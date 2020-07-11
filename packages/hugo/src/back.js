@@ -17,8 +17,7 @@ export default function (part) {
     snippets,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
   // Fit the hips

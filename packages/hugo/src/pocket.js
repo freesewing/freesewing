@@ -4,18 +4,7 @@ export default function (part) {
   part.paths = {}
   part.snippets = {}
 
-  let {
-    utils,
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    debug
-  } = part.shorthand()
+  let { utils, store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   paths.seam = pocket.line(points.cfRibbing).line(points.pocketHem).attr('class', 'fabric', true)
   paths.seam.render = true
