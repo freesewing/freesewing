@@ -126,7 +126,7 @@ export function beamIntersectsY(from, to, y) {
 
 /** Convert value in mm to cm or imperial units */
 export function units(value, to = 'metric') {
-  if (to === 'imperial') return round(value / 25.4) + '"'
+  if (to === 'imperial') return round(value / 25.4) + '&quot;'
   else return round(value / 10) + 'cm'
 }
 

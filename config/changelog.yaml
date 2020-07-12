@@ -170,6 +170,8 @@ Unreleased:
       - Fixed panels option being a list of numbers rather than strings
     components:
       - Fixed bug that broke millimeter sliders
+    core:
+      - '[Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)'
     huey:
       - '[Added seam allowance to the front closure](https://github.com/freesewing/freesewing/issues/420)'
   Removed:
