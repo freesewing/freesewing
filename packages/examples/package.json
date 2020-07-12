@@ -62,7 +62,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-url": "^1.4.0",
+    "rollup-plugin-url": "^3.0.1",
     "@material-ui/core": "4.0.1",
     "@material-ui/icons": "4.0.1",
     "@material-ui/lab": "^v4.0.0-alpha.14",

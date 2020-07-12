@@ -14947,7 +14947,7 @@ mime@1.6.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
-mime@2.4.4, mime@^2.3.1, mime@^2.4.2, mime@^2.4.4:
+mime@2.4.4, mime@^2.4.2, mime@^2.4.4:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
   integrity sha512-LRxmNwziLPT828z+4YkNzloCFC2YM4wrB99k+AV5ZbEyfGNWfG8SO1FUXLmLDBSo89NrJZ4DIWeLjy1CHGhMGA==
@@ -19687,21 +19687,12 @@ rollup-plugin-terser@^5.1.2:
     serialize-javascript "^2.1.2"
     terser "^4.1.0"
 
-rollup-plugin-url@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-url/-/rollup-plugin-url-1.4.0.tgz#346124cad853267b324cba0991f10bfd4be60c65"
-  integrity sha512-e5gXCLwUd7UQ/aVRJb/K8GNgOYHjqIOVGukhhdZVMuTHPslMJIFkiTVjvPbwwS/5SLbMGjfS0219ur5tmhMD0w==
-  dependencies:
-    mime "^2.3.1"
-    rollup-pluginutils "^2.0.1"
-
-rollup-plugin-url@^2.2.1:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-url/-/rollup-plugin-url-2.2.4.tgz#36a6dedb709f73647bed7b253b9dcd4f3e781af4"
-  integrity sha512-vQjMgJj3tYrg6nKYO/Tvc8s1WTqbaLzHXia17358E6vO0Iq4Ih5WcWYRPopLMUx0x63/31+9ezApAL0HFd998w==
+rollup-plugin-url@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-url/-/rollup-plugin-url-3.0.1.tgz#6362fd31d7ce6d078dc5adffbd844f080de61bd7"
+  integrity sha512-fQVrxlW335snHfPqZ7a0JIkkYEIrLeFobpAxRMQnyv7xQeJOY1yOd84STIdCaLYPoGzwOq8waOdGipNH181kzg==
   dependencies:
     mime "^2.4.4"
-    mkdirp "^0.5.1"
     rollup-pluginutils "^2.8.2"
 
 rollup-plugin-yaml@^2.0.0:
