@@ -10,6 +10,7 @@
 - Better handling of `armholeDrop` option
 - Ported aaron to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Removed `Circumference` suffix from measurement names
+- Report armhole and neck opening length through raised events
 
 #### Fixed
 
@@ -39,6 +40,7 @@
 - Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
 - Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Removed `Circumference` suffix from measurement names
+- Removed deprecated `debug()` statements
 
 ### brian
 
@@ -48,6 +50,7 @@
 - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set HPS as anchor point for sampling in front and back
 - Removed `Circumference` suffix from measurement names
+- Removed deprecated `debug()` statements
 
 ### bruce
 
@@ -55,6 +58,7 @@
 
 - Ported bruce to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Removed `Circumference` suffix from measurement names
+- Removed deprecated `debug()` statements
 
 #### Fixed
 
@@ -84,6 +88,7 @@
 - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Set sample anchor points on all panels
 - Removed `Circumference` suffix from measurement names
+- Removed deprecated `debug()` statements
 
 #### Fixed
 
@@ -97,6 +102,11 @@
 - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
 - Changed `models` to `people` in `sampleConfigurator`
 - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
+- Added support for custom sample styles
+
+#### Changed
+
+- Handle escaped quotes for React render. See [#437](https://github.com/freesewing/freesewing/issues/437)
 
 #### Fixed
 
@@ -107,6 +117,12 @@
 #### Added
 
 - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+- Added support for custom sample styles
+- Added support for raising events via `raise.[type]()` method
+
+#### Fixed
+
+- [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
 
 ### css-theme
 
@@ -165,6 +181,7 @@
 - Changed some option to better defaults
 - Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
 - Removed `Circumference` suffix from measurement names
+- Removed deprecated `debug()` statements
 
 ### i18n
 
@@ -1271,18 +1288,6 @@
 - Initial release
 
 ### plugin-cutonfold
-
-#### Added
-
-- Initial release
-
-### plugin-debug
-
-#### Added
-
-- Initial release
-
-### plugin-designer
 
 #### Added
 

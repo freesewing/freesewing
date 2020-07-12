@@ -72,6 +72,8 @@ Unreleased:
       - Set sample anchor points on all panels
       - Removed `Circumference` suffix from measurement names
       - Removed deprecated `debug()` statements
+    components:
+      - Handle escaped quotes for React render. See [#437](https://github.com/freesewing/freesewing/issues/437)
     css-theme:
       - Updated the width of the SVG paths of a draft to match plugin-theme
     diana:

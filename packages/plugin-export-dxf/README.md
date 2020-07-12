@@ -1,5 +1,4 @@
 ![FreeSewing](https://freesewing.org/banner.jpg)
-
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/plugin-export-dxf"
   title="@freesewing/plugin-export-dxf on NPM"
@@ -44,7 +43,7 @@
 
 ## What am I looking at? 🤔
 
-This repository is our _monorepo_ holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
+This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
 This folder holds **@freesewing/plugin-export-dxf**
 
 A FreeSewing plugin to export your pattern as DXF-ASTM
@@ -132,11 +131,12 @@ This plugin does the minimum to allow export of FreeSewing patterns into
 
 That means, no seam allowance, or titles, no notches, and so on.
 
+
 ## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/reference/api/) is a _batteries-included_ toolbox
+Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
 of [plugins](https://freesewing.dev/reference/plugins/) and getting started is as simple as:
 
@@ -155,19 +155,19 @@ our sewing patterns adapted to your measurements.
 
 ## Support FreeSewing: Become a patron 🥰
 
-FreeSewing is an open source project run by a community,
+FreeSewing is an open source project run by a community, 
 and financially supported by our patrons.
 
-If you feel what we do is worthwhile, you too
+If you feel what we do is worthwhile, you too 
 should [become a patron](https://freesewing.org/patrons/join).
 
 ## Links 👩‍💻
 
-- 💻 Makers website: [freesewing.org](https://freesewing.org)
-- 💻 Developers website: [freesewing.dev](https://freesewing.dev)
-- 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
-- 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
-- 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ - 💻 Makers website: [freesewing.org](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
+ - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
+ - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+ - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
 ## License: MIT 🤓
 

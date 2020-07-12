@@ -445,10 +445,12 @@ function configurePatternUnitTests(pkg, config) {
   fse.ensureDirSync(dest)
   let source = path.join(config.repoPath, 'config', 'templates', 'tests', 'patterns')
   // Write templates
+  let peerdeps = peerDependencies(pkg, config, 'pattern')
   let replace = {
+    version,
     pattern: pkg,
     Pattern: capitalize(pkg),
-    peerdeps: Object.keys(peerDependencies(pkg, config, 'pattern')).join(' ')
+    peerdeps: Object.keys(peerdeps).map( dep => dep+'@'+peerdeps[dep] ).join(' ')
   }
 
   for (let file of ['shared.test.js']) {
