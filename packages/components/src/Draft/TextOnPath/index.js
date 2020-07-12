@@ -8,7 +8,7 @@ const TextOnPath = (props) => {
   for (let string of props.path.attributes.getAsArray('data-text')) {
     if (strings[props.language]['plugin.' + string])
       translated += strings[props.language]['plugin.' + string]
-    else translated += string
+    else translated += string.toString().replace(/&quot;/g, '"')
     translated += ' '
   }
   let textPathProps = {
