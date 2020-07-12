@@ -1,5 +1,8 @@
 Unreleased:
   date:
+
+2.7.0:
+  date: 2020-07-12
   Added:
     components:
       - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)

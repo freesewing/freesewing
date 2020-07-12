@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.7.0 (2020-07-12)
+
 ### aaron
 
 #### Changed
