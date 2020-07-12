@@ -8,7 +8,7 @@ const Text = (props) => {
   for (let string of props.point.attributes.getAsArray('data-text')) {
     if (strings[props.language]['plugin.' + string])
       translated += strings[props.language]['plugin.' + string]
-    else translated += string
+    else translated += string.toString().replace(/&quot;/g, '"')
     translated += ' '
   }
   // Handle muti-line text
@@ -18,13 +18,14 @@ const Text = (props) => {
     text.push(<tspan key={'tspan-' + key}>{lines.shift()}</tspan>)
     for (let line of lines) {
       key++
+      console.log('multi', line, typeof line)
       text.push(
         <tspan
           key={'tspan-' + key}
           x={props.point.x}
           dy={props.point.attributes.get('data-text-lineheight') || 12}
         >
-          {line}
+          {line.toString().replace(/&quot;/g, '"')}
         </tspan>
       )
     }

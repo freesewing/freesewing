@@ -28,34 +28,17 @@ function Part() {
   return this
 }
 
-Part.prototype.macroClosure = function(args) {
+Part.prototype.macroClosure = function (args) {
   let self = this
-  let method = function(key, args) {
+  let method = function (key, args) {
     let macro = utils.macroName(key)
-    if (typeof self[macro] === 'function') {
-      self[macro](args)
-    } else {
-      self.debug({
-        type: 'warning',
-        label: '🚨 Macro not found',
-        msg: `Macro ${key} is not registered`
-      })
-    }
+    if (typeof self[macro] === 'function') self[macro](args)
   }
 
   return method
 }
 
-Part.prototype.debugClosure = function() {
-  let self = this
-  let method = function(data) {
-    self.debug(data)
-  }
-
-  return method
-}
-
-Part.prototype.runHooks = function(hookName, data = false) {
+Part.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks && hooks.length > 0) {
@@ -65,22 +48,17 @@ Part.prototype.runHooks = function(hookName, data = false) {
   }
 }
 
-/** Debug method */
-Part.prototype.debug = function(data) {
-  this.runHooks('debug', data)
-}
-
 /** Returns an unused ID */
-Part.prototype.getId = function() {
+Part.prototype.getId = function () {
   this.freeId += 1
 
   return '' + this.freeId
 }
 
 /** Returns a value formatted for units provided in settings */
-Part.prototype.unitsClosure = function(value) {
+Part.prototype.unitsClosure = function (value) {
   let self = this
-  let method = function(value) {
+  let method = function (value) {
     return utils.units(value, self.context.settings.units)
   }
 
@@ -88,7 +66,7 @@ Part.prototype.unitsClosure = function(value) {
 }
 
 /** Calculates the part's bounding box and sets it */
-Part.prototype.boundary = function() {
+Part.prototype.boundary = function () {
   if (this.topLeft) return this // Cached
 
   let topLeft = new Point(Infinity, Infinity)
@@ -130,7 +108,7 @@ Part.prototype.boundary = function() {
 }
 
 /** Stacks part so that its top left corner is in (0,0) */
-Part.prototype.stack = function() {
+Part.prototype.stack = function () {
   if (this.topLeft !== false) return this
   else this.boundary()
   if (this.topLeft.x == 0 && this.topLeft.y == 0) return this
@@ -140,7 +118,7 @@ Part.prototype.stack = function() {
 }
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-Part.prototype.attr = function(name, value, overwrite = false) {
+Part.prototype.attr = function (name, value, overwrite = false) {
   if (overwrite) this.attributes.set(name, value)
   else this.attributes.add(name, value)
 
@@ -148,8 +126,8 @@ Part.prototype.attr = function(name, value, overwrite = false) {
 }
 
 /** Copies point/path/snippet data from part orig into this */
-Part.prototype.inject = function(orig) {
-  const findBasePoint = p => {
+Part.prototype.inject = function (orig) {
+  const findBasePoint = (p) => {
     for (let i in orig.points) {
       if (orig.points[i] === p) return i
     }
@@ -182,12 +160,12 @@ Part.prototype.inject = function(orig) {
   return this
 }
 
-Part.prototype.units = function(input) {
+Part.prototype.units = function (input) {
   return utils.units(input, this.context.settings.units)
 }
 
 /** Returns an object with shorthand access for pattern design */
-Part.prototype.shorthand = function() {
+Part.prototype.shorthand = function () {
   let complete = this.context.settings.complete ? true : false
   let paperless = this.context.settings.paperless === true ? true : false
   let sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0
@@ -207,7 +185,8 @@ Part.prototype.shorthand = function() {
     Snippet: this.Snippet,
     complete,
     paperless,
-    debug: this.debugClosure()
+    events: this.context.events,
+    raise: this.context.events.raise
   }
 }
 

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     sa,
     Point,
@@ -18,10 +18,10 @@ export default function(part) {
   let shoulders = measurements.shoulderToShoulder
 
   // Width at chest
-  let chest = (measurements.chestCircumference / 2) * (1 + options.chestEase)
+  let chest = (measurements.chest / 2) * (1 + options.chestEase)
 
   // Length
-  let length = (1 + options.lengthBonus) * measurements.hpsToHipsBack
+  let length = (1 + options.lengthBonus) * (measurements.hpsToWaistBack + measurements.waistToHips)
 
   // Armhole depth
   let arm = shoulders * options.armholeDepthFactor
@@ -46,7 +46,7 @@ export default function(part) {
   // Left shoulder seam
   points.armholeNeck = points.armholeTop
     .shiftTowards(points.armgapNeck, shoulders * options.shoulderseamLength)
-    .rotate(options.shoulderSlope, points.armholeTop)
+    .rotate(measurements.shoulderSlope, points.armholeTop)
 
   // Side seam
   points.armgapBottom = points.armgapTop.shift(0, arm)

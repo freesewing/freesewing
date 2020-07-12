@@ -1,5 +1,5 @@
-export default function(part) {
-  let { measurements, options, store, points, paths, Point, Path, debug } = part.shorthand()
+export default function (part) {
+  let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
   let count = 1
   let bottom = new Path()
     .move(points.bottomCF)
@@ -19,11 +19,11 @@ export default function(part) {
     )
     points[`underbustGap${count}RightCp`] = points[`underbustGap${count}Right`].shift(
       -90,
-      measurements.naturalWaistToUnderbust * 0.15
+      measurements.waistToUnderbust * 0.15
     )
     points[`underbustGap${count}LeftCp`] = points[`underbustGap${count}Left`].shift(
       -90,
-      measurements.naturalWaistToUnderbust * 0.15
+      measurements.waistToUnderbust * 0.15
     )
 
     // Waist
@@ -38,19 +38,19 @@ export default function(part) {
     )
     points[`waistGap${count}RightCp1`] = points[`waistGap${count}Right`].shift(
       90,
-      measurements.naturalWaistToUnderbust * 0.2
+      measurements.waistToUnderbust * 0.2
     )
     points[`waistGap${count}LeftCp2`] = points[`waistGap${count}Left`].shift(
       90,
-      measurements.naturalWaistToUnderbust * 0.2
+      measurements.waistToUnderbust * 0.2
     )
     points[`waistGap${count}RightCp2`] = points[`waistGap${count}Right`].shift(
       -90,
-      measurements.naturalWaistToHip * 0.2
+      measurements.waistToHips * 0.2
     )
     points[`waistGap${count}LeftCp1`] = points[`waistGap${count}Left`].shift(
       -90,
-      measurements.naturalWaistToHip * 0.2
+      measurements.waistToHips * 0.2
     )
 
     // Hips
@@ -86,7 +86,7 @@ export default function(part) {
     .move(points.bottomCF)
     .curve(points.bottomCFCp2, points.hipRiseCp1, points.hipRise)
     .split(points.hipsGap2)[1]
-  if (options.panels === 11) panel3 = panel3.split(points.hipsGap3)[0]
+  if (options.panels === '11') panel3 = panel3.split(points.hipsGap3)[0]
   paths.panel3 = panel3
     .curve(points.hipsGap3Cp, points.waistGap3LeftCp1, points.waistGap3Left)
     .curve(points.waistGap3LeftCp2, points.underbustGap3LeftCp, points.underbustGap3Left)
@@ -106,7 +106,7 @@ export default function(part) {
     .curve(points.hipsGap4Cp, points.waistGap4LeftCp1, points.waistGap4Left)
     .curve(points.waistGap4LeftCp2, points.underbustGap4LeftCp, points.underbustGap4Left)
     .join(topBack.split(points.underbustGap4Left)[1])
-  if (options.panels === 11) paths.panel4.line(points.underbustGap3Right)
+  if (options.panels === '11') paths.panel4.line(points.underbustGap3Right)
   paths.panel4
     .curve(points.underbustGap3RightCp, points.waistGap3RightCp1, points.waistGap3Right)
     .curve(points.waistGap3RightCp2, points.hipsGap3Cp, points.hipsGap3)

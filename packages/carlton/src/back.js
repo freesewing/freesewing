@@ -19,15 +19,12 @@ export default function (part) {
 
   calculateRatios(part)
   // Belt width
-  let bw = (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * options.beltWidth
+  let bw = measurements.hpsToWaistBack * options.beltWidth
   store.set('beltWidth', bw)
 
   // Box pleat (bp)
   points.bpStart = new Point(0, points.armholePitch.y)
-  points.bpTop = new Point(
-    measurements.chestCircumference * options.backPleat * -1,
-    points.armholePitch.y
-  )
+  points.bpTop = new Point(measurements.chest * options.backPleat * -1, points.armholePitch.y)
   points.bpBottom = new Point(points.bpTop.x, points.cbWaist.y - bw / 2)
   points.bpTriangleEdge = points.bpStart.shift(0, points.bpTop.dx(points.bpStart) * 0.6)
   points.bpTriangleTip = points.bpStart.shift(90, points.bpStart.dx(points.bpTriangleEdge))

@@ -52,15 +52,15 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hpsToHipsBack',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'waistToHips',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     back: 'base',
@@ -91,7 +91,7 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },

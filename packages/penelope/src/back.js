@@ -1,6 +1,6 @@
 import { BuildMainShape } from './shape'
 
-export default function(part) {
+export default function (part) {
   let {
     options,
     measurements,
@@ -22,7 +22,7 @@ export default function(part) {
   if (options.backVent == true) {
     // I don't care what you're trying to create, the vent will not go higher than your hips.
     let backVentLength = Math.min(
-      store.get('skirtLength') - measurements.naturalWaistToHip,
+      store.get('skirtLength') - measurements.waistToHips,
       options.backVentLength * store.get('skirtLength')
     )
 
@@ -91,12 +91,7 @@ export default function(part) {
       } else {
         paths.sa = new Path()
           .move(points.lHem)
-          .join(
-            paths.bottom
-              .join(paths.sideSeam)
-              .join(paths.waistSA)
-              .offset(sa)
-          )
+          .join(paths.bottom.join(paths.sideSeam).join(paths.waistSA).offset(sa))
           .line(points.lWaist)
           .attr('class', 'fabric sa')
       }

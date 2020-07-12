@@ -24,7 +24,7 @@ export default (part) => {
 
   // Neck cutout
   points.closureTop = new Point(
-    measurements.chestCircumference * options.frontOverlap * -1,
+    measurements.chest * options.frontOverlap * -1,
     points.waist.y * options.necklineDrop
   )
   if (options.frontStyle === 'classic')
@@ -99,7 +99,7 @@ export default (part) => {
   } else {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
     // Draw rounded hem
-    let radius = measurements.hipsCircumference * options.hemRadius
+    let radius = measurements.hips * options.hemRadius
     // Avoid radius extending beyond the dart
     if (radius > points.closureTop.dx(points.dartHemLeft))
       radius = points.closureTop.dx(points.dartHemLeft)
@@ -118,7 +118,7 @@ export default (part) => {
   points.dartEnd = options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight
 
   // Pockets
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let pwvh = pwh / Math.cos(utils.deg2rad(options.pocketAngle)) // Pocket welt vertical height
 

@@ -20,6 +20,7 @@ const Draft = (props) => (
       parts={props.parts}
       paperless={props.settings.paperless}
       design={props.design || false}
+      extraDefs={props.extraDefs}
     />
     <g>
       {Object.keys(props.parts).map((name) => (

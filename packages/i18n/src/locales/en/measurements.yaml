@@ -1,32 +1,35 @@
-acrossBack: Across back (deprecated)
-ankleCircumference: Ankle circumference
-bicepsCircumference: Biceps circumference
+ankle: Ankle circumference
+biceps: Biceps circumference
 bustFront: Bust front
 bustSpan: Bust span
-chestCircumference: Chest circumference
-headCircumference: Head circumference
-highBust: High bust
+chest: Chest circumference
+crossSeam: Cross seam
+crossSeamFront: Cross seam front
+head: Head circumference
 highBustFront: High bust front
+highBust: High bust
+hips: Hips circumference
 hpsToBust: HPS to bust
-hpsToHipsBack: HPS to hips back
-hpsToHipsFront: HPS to hips front
-hipsCircumference: Hips circumference
-hipsToUpperLeg: Hips to upper leg
+hpsToWaistBack: HPS to waist back
+hpsToWaistFront: HPS to waist front
 inseam: Inseam
-kneeCircumference: Knee circumference
-naturalWaist: Natural waist
-naturalWaistToFloor: Natural waist to floor
-naturalWaistToHip: Natural waist to hip
-naturalWaistToKnee: Natural waist to knee
-naturalWaistToSeat: Natural waist to seat
-naturalWaistToUnderbust: Natural waist to underbust
-neckCircumference: Neck circumference
-seatCircumference: Seat circumference
-seatDepth: Seat depth
+knee: Knee circumference
+neck: Neck circumference
+seat: Seat circumference
+seatBack: Seat back
+crotchDepth: Crotch depth
 shoulderSlope: Shoulder slope
 shoulderToElbow: Shoulder to elbow
 shoulderToShoulder: Shoulder to shoulder
 shoulderToWrist: Shoulder to wrist
 underbust: Underbust
-upperLegCircumference: Upper leg circumference
-wristCircumference: Wrist circumference
+upperLeg: Upper leg circumference
+waist: Waist circumference
+waistBack: Waist back
+waistToFloor: Waist to floor
+waistToHips: Waist to hips
+waistToKnee: Waist to knee
+waistToSeat: Waist to seat
+waistToUnderbust: Waist to underbust
+waistToUpperLeg: Waist to upper leg
+wrist: Wrist circumference

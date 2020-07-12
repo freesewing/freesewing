@@ -32,13 +32,7 @@ export default {
       'dartToSideSeamFactor'
     ]
   },
-  measurements: [
-    'naturalWaist',
-    'seatCircumference',
-    'naturalWaistToHip',
-    'naturalWaistToSeat',
-    'naturalWaistToKnee'
-  ],
+  measurements: ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee'],
   dependencies: {},
   inject: {},
   hide: [],

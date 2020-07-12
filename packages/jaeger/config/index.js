@@ -75,18 +75,18 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hipsCircumference',
-    'hpsToHipsBack',
-    'naturalWaist',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'biceps',
+    'chest',
+    'hips',
+    'hpsToWaistBack',
+    'waist',
+    'waistToHips',
+    'neck',
     'shoulderSlope',
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -95,7 +95,7 @@ export default {
     bentUnderSleeve: 'bentSleeve',
     backBase: 'bentBack',
     frontBase: 'bentFront',
-    front: 'frontBase',
+    front: ['frontBase', 'backBase'],
     back: 'backBase',
     side: 'frontBase',
     collarStand: 'front',
@@ -168,12 +168,12 @@ export default {
     collarEase: { pct: 3.5, min: 0, max: 10 },
     cuffEase: { pct: 60, min: 30, max: 100 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
-    lengthBonus: { pct: 19, min: 0, max: 25 },
+    lengthBonus: { pct: 19, min: 10, max: 25 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     sleeveBend: { deg: 10, min: 0, max: 20 },
     sleevecapHeight: { pct: 45, min: 40, max: 60 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+    sleeveLengthBonus: { pct: 2, min: 0, max: 10 },
 
     // Jaeger options
     frontOverlap: { pct: 1.5, min: 1, max: 2 },
@@ -228,7 +228,7 @@ export default {
 
     chestShaping: { pct: 30, min: 0, max: 100 },
     rollLineCollarHeight: { pct: 6, min: 5, max: 9 },
-    shoulderSlopeReduction: { pct: 2, min: 0, max: 5 },
+    shoulderSlopeReduction: { pct: 30, min: 0, max: 50 },
 
     buttonLength: { pct: 30, min: 30, max: 60 },
     buttons: { count: 2, min: 1, max: 3 }

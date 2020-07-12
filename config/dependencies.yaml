@@ -148,6 +148,9 @@ mui-theme:
     '@material-ui/core': '^4.0.1'
     'react': '^16.8'
     'react-dom': '^16.8'
+legend:
+  peer:
+    '@freesewing/plugin-buttons': '^{{version}}'
 plugin-bundle:
   _:
     '@freesewing/plugin-cutonfold': '^{{version}}'

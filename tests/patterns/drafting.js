@@ -10,37 +10,37 @@
  * @param object patterns: Imported @freesewing/pattern-info
  */
 const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
-
   // Helper method to try/catch pattern drafting
-  const doesItDraft = pattern => {
-      try {
-        pattern.draft()
-        return true
-      }
-      catch (err) {
-        return false
-      }
+  const doesItDraft = (pattern) => {
+    try {
+      pattern.draft()
+      return true
+    } catch (err) {
+      return false
+    }
   }
 
   // Figure out whether this is a with(out)breasts pattern
-  const breasts = (patterns.withBreasts.indexOf(design) === -1) ? false : true
+  const breasts = patterns.withBreasts.indexOf(design) === -1 ? false : true
 
-  const ourModels = models
-    [breasts ? 'withBreasts' : 'withoutBreasts']
-  const measurements = ourModels
-    [breasts ? 'size34' : 'size42']
+  const ourModels = models[breasts ? 'withBreasts' : 'withoutBreasts']
+  const measurements = ourModels[breasts ? 'size34' : 'size42']
 
   /*
    * Draft pattern for different models
    */
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
-    it('Draft for different models:' , () => true)
+  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1) {
+    it('Draft for different models:', () => true)
 
     for (let size in ourModels) {
-      it(`  - Drafting for ${size} (${breasts ? 'with':'no'} breasts)`, () => {
-        expect(doesItDraft(new Pattern({
-          measurements: ourModels[size],
-        }))).to.equal(true)
+      it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
+        expect(
+          doesItDraft(
+            new Pattern({
+              measurements: ourModels[size]
+            })
+          )
+        ).to.equal(true)
       })
     }
   }
@@ -48,18 +48,23 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
   /*
    * Draft parts individually
    */
-  it('Draft parts individually:' , () => true)
+  it('Draft parts individually:', () => true)
   let parts
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) parts = patterns.parts[design]
+  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1)
+    parts = patterns.parts[design]
   else parts = Pattern.config.parts
   for (let name of parts) {
     it(`  - ${name} should draft on its own`, () => {
-      expect(doesItDraft(new Pattern({
-        measurements,
-        settings: {
-          only: [name]
-        }
-      }))).to.equal(true)
+      expect(
+        doesItDraft(
+          new Pattern({
+            measurements,
+            settings: {
+              only: [name]
+            }
+          })
+        )
+      ).to.equal(true)
     })
   }
 }

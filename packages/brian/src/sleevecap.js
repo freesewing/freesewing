@@ -14,20 +14,20 @@ function sleevecapAdjust(store) {
 }
 
 function draftSleevecap(part, run) {
-  let { debug, units, store, measurements, options, Point, points, Path, paths } = part.shorthand()
+  let { units, store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
     90,
     options.sleevecapTopFactorY *
-      (measurements.bicepsCircumference *
+      (measurements.biceps *
         (1 + options.bicepsEase) *
         options.armholeDepthFactor *
         store.get('sleeveFactor'))
   )
 
   // Left and right biceps points, limit impact of sleeveFactor to 25%
-  let halfWidth = (measurements.bicepsCircumference * (1 + options.bicepsEase)) / 2
+  let halfWidth = (measurements.biceps * (1 + options.bicepsEase)) / 2
   points.bicepsLeft = points.centerBiceps.shift(
     180,
     halfWidth * options.sleeveWidthGuarantee +
@@ -62,7 +62,7 @@ function draftSleevecap(part, run) {
   points.capQ3Base = points.backPitch.shiftFractionTowards(points.centerCap, 0.5)
   points.capQ4Base = points.backPitch.shiftFractionTowards(points.bicepsLeft, 0.5)
   // Offset points
-  let baseOffset = measurements.bicepsCircumference * (1 + options.bicepsEase)
+  let baseOffset = measurements.biceps * (1 + options.bicepsEase)
   points.capQ1 = points.capQ1Base.shift(
     points.bicepsRight.angle(points.frontPitch) + 90,
     baseOffset * options.sleevecapQ1Offset
@@ -129,19 +129,14 @@ function draftSleevecap(part, run) {
     let sleevecapEase = armholeLength * options.sleevecapEase
     store.set('sleevecapEase', sleevecapEase)
     store.set('sleevecapTarget', armholeLength + sleevecapEase)
-    debug({
-      style: 'info',
-      label: '🗸 Sleevecap ease',
-      msg: units(sleevecapEase)
-    })
 
     // Uncomment this line to see all sleevecap iterations
     //paths[run] = paths.sleevecap;
   }
 }
 
-export default part => {
-  let { debug, store, units, options, Point, points, paths } = part.shorthand()
+export default (part) => {
+  let { store, units, options, Point, points, paths } = part.shorthand()
 
   store.set('sleeveFactor', 1)
   let run = 0
@@ -152,20 +147,6 @@ export default part => {
     sleevecapAdjust(store)
     run++
   } while (options.brianFitSleeve === true && run < 30 && Math.abs(sleevecapDelta(store)) > 2)
-  if (options.brianFitSleeve) {
-    debug({
-      style: 'success',
-      label: '🏁 Sleevecap fitted',
-      msg: `Target was ${units(store.get('sleevecapTarget'))}, delta of ${units(
-        delta
-      )} reached in ${run} attempts.`
-    })
-  } else
-    debug({
-      style: 'warning',
-      label: '🚫 Not fittingsleevecap',
-      msg: '(in Brian)'
-    })
 
   // Paths
   paths.sleevecap.attr('class', 'fabric')

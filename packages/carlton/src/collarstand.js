@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -13,7 +13,7 @@ export default function(part) {
     Path
   } = part.shorthand()
 
-  let height = measurements.chestCircumference * options.collarHeight
+  let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)
@@ -31,6 +31,8 @@ export default function(part) {
   for (let i of ['standTopCp', 'standTip', 'standTipCp', 'bottomLeftCp']) {
     points[i + 'Left'] = points[i].flipX()
   }
+
+  points.anchor = points.standTop.clone()
 
   paths.seam = new Path()
     .move(points.bottomLeft)

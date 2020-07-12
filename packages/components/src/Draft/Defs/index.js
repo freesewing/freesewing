@@ -24,6 +24,8 @@ const Defs = (props) => {
       <Snippets />
       <Grid units={props.units} />
       {paperlessGrids}
+      {props.extraDefs || '<!-- no extras -->'}
+      <g></g>
     </defs>
   )
 }

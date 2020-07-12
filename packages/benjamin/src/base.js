@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -25,7 +25,7 @@ export default function(part) {
     'bowLength',
     'collarEase'
   ])
-    store.set(option, measurements.neckCircumference * options[option])
+    store.set(option, measurements.neck * options[option])
 
   if (options.adjustmentRibbon) {
     store.set('ribbonWidth', Math.max(options.adjustmentRibbonWidth, store.get('ribbonWidth')))
@@ -68,10 +68,7 @@ export default function(part) {
   if (options.endStyle === 'straight') {
     paths.cap = new Path().move(points.tip2Bottom).line(points.tip2Top)
   } else if (options.endStyle === 'pointed') {
-    paths.cap = new Path()
-      .move(points.tip2Bottom)
-      .line(points.tip)
-      .line(points.tip2Top)
+    paths.cap = new Path().move(points.tip2Bottom).line(points.tip).line(points.tip2Top)
   } else {
     points.roundBottom = new Point(points.tip.x, points.tip2Bottom.y)
     points.roundTop = points.roundBottom.flipY()

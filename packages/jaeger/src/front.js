@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -17,7 +17,7 @@ export default function(part) {
   } = part.shorthand()
 
   // Front closure overlap
-  points.neckEdge = points.cfNeck.shift(180, measurements.chestCircumference * options.frontOverlap)
+  points.neckEdge = points.cfNeck.shift(180, measurements.chest * options.frontOverlap)
   points.hemEdge = new Point(points.neckEdge.x, points.cfHem.y)
 
   // Chest pocket
@@ -91,9 +91,9 @@ export default function(part) {
   )
 
   // Lapel roll line
-  let rollHeight = measurements.neckCircumference * options.rollLineCollarHeight
+  let rollHeight = measurements.neck * options.rollLineCollarHeight
   points.shoulderRoll = points.shoulder.shiftOutwards(points.neck, rollHeight)
-  let collarHeight = measurements.neckCircumference * options.collarHeight
+  let collarHeight = measurements.neck * options.collarHeight
   points.shoulderRollCb = points.lapelBreakPoint.shiftOutwards(
     points.shoulderRoll,
     store.get('backCollarLength')
@@ -311,10 +311,7 @@ export default function(part) {
   paths.hemBase = new Path().move(points.roundEnd).line(points.hem)
   paths.hemBase.render = false
 
-  paths.seam = paths.saBase
-    .clone()
-    .join(paths.hemBase)
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().join(paths.hemBase).attr('class', 'fabric')
 
   paths.flb = new Path()
     .move(points.facingTop)

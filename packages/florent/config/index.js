@@ -1,27 +1,27 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "florent",
+  name: 'florent',
   version: version,
-  design: "Quentin Felix",
-  code: ["Quentin Felix", "Joost De Cock"],
-  department: "accessories",
-  type: "pattern",
+  design: 'Quentin Felix',
+  code: ['Quentin Felix', 'Joost De Cock'],
+  department: 'accessories',
+  type: 'pattern',
   difficulty: 2,
-  tags: ["headwear", "cap"],
+  tags: ['headwear', 'cap'],
   optionGroups: {
-    fit: ["headEase"]
+    fit: ['headEase']
   },
-  measurements: ["headCircumference"],
+  measurements: ['head'],
   dependencies: {
-    side: "top",
-    brimTop: "brimBottom",
-    brimInterfacing: "brimBottom"
+    side: 'top',
+    brimTop: 'brimBottom',
+    brimInterfacing: 'brimBottom'
   },
   inject: {
-    side: "top",
-    brimTop: "brimBottom",
-    brimInterfacing: "brimBottom"
+    side: 'top',
+    brimTop: 'brimBottom',
+    brimInterfacing: 'brimBottom'
   },
   options: {
     // Constants
@@ -30,4 +30,4 @@ export default {
     // Percentages
     headEase: { pct: 2, min: 0, max: 5 }
   }
-};
+}

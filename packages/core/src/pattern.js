@@ -23,6 +23,25 @@ export default function Pattern(config = { options: {} }) {
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
 
+  // Store events
+  this.events = {
+    info: [],
+    warning: [],
+    error: []
+  }
+  const events = this.events
+  this.events.raise = {
+    event: function (data) {
+      events.info.push(data)
+    },
+    warning: function (data) {
+      events.warning.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    }
+  }
+
   // Default settings
   this.settings = {
     complete: true,
@@ -65,7 +84,8 @@ export default function Pattern(config = { options: {} }) {
     config: this.config,
     settings: this.settings,
     store: this.store,
-    macros: this.macros
+    macros: this.macros,
+    events: this.events
   }
 
   // Part closure
@@ -182,7 +202,20 @@ Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = 
     for (let j in this.parts[i].paths) {
       parts[i].paths[j + '_' + run] = this.parts[i].paths[j]
         .clone()
-        .attr('style', sampleStyle(run, runs))
+        .attr(
+          'style',
+          extraClass === 'sample-focus'
+            ? this.settings.sample
+              ? this.settings.sample.focusStyle || sampleStyle(run, runs)
+              : sampleStyle(run, runs)
+            : sampleStyle(
+                run,
+                runs,
+                this.settings.sample ? this.settings.sample.styles || false : false
+              )
+        )
+        .attr('data-sample-run', run)
+        .attr('data-sample-runs', runs)
       if (this.parts[i].points.anchor)
         parts[i].paths[j + '_' + run] = parts[i].paths[j + '_' + run].translate(dx, dy)
       if (extraClass !== false) parts[i].paths[j + '_' + run].attributes.add('class', extraClass)
@@ -214,11 +247,6 @@ Pattern.prototype.sampleOption = function (optionName) {
   step = (option.max / factor - val) / 9
   for (let run = 1; run < 11; run++) {
     this.settings.options[optionName] = val
-    this.debug({
-      type: 'info',
-      label: '🏃🏿‍♀️ Sample run',
-      msg: `Sampling option ${optionName} with value ${round(val)}`
-    })
     this.sampleRun(parts, anchors, run, 10)
     val += step
   }
@@ -236,11 +264,6 @@ Pattern.prototype.sampleListOption = function (optionName) {
   let runs = option.list.length
   for (let val of option.list) {
     this.settings.options[optionName] = val
-    this.debug({
-      type: 'info',
-      label: '🏃🏿‍♀️ Sample run',
-      msg: `Sampling option ${optionName} with value ${round(val)}`
-    })
     this.sampleRun(parts, anchors, run, runs)
     run++
   }
@@ -264,11 +287,6 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
   val = val * 0.9
   for (let run = 1; run < 11; run++) {
     this.settings.measurements[measurementName] = val
-    this.debug({
-      type: 'info',
-      label: '🏃🏿‍♀️ Sample run',
-      msg: `Sampling option ${measurementName} with value ${round(val)}`
-    })
     this.sampleRun(parts, anchors, run, 10)
     val += step
   }
@@ -286,28 +304,23 @@ Pattern.prototype.sampleModels = function (models, focus = false) {
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
-  let run = 0
+  // If there's a focus, do it first so it's at the bottom of the SVG
+  if (focus) {
+    this.settings.measurements = models[focus]
+    this.sampleRun(parts, anchors, -1, -1, 'sample-focus')
+    delete models[focus]
+  }
+  let run = -1
   let runs = Object.keys(models).length
   for (let l in models) {
     run++
     this.settings.measurements = models[l]
-    this.debug({
-      type: 'info',
-      label: '🏃🏿‍♀️ Sample run',
-      msg: `Sampling model ${l}`
-    })
-    let className = l === focus ? 'sample-focus' : ''
-    this.sampleRun(parts, anchors, run, runs, className)
+    this.sampleRun(parts, anchors, run, runs)
   }
   this.parts = parts
   this.runHooks('postSample')
 
   return this
-}
-
-/** Debug method, exposes debug hook */
-Pattern.prototype.debug = function (data) {
-  this.runHooks('debug', data)
 }
 
 Pattern.prototype.render = function () {
@@ -322,11 +335,6 @@ Pattern.prototype.on = function (hook, method, data) {
 }
 
 Pattern.prototype.use = function (plugin, data) {
-  this.debug({
-    type: 'success',
-    label: '🔌 Plugin loaded',
-    msg: `${plugin.name} v${plugin.version}`
-  })
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
 
@@ -566,6 +574,11 @@ Pattern.prototype.getRenderProps = function () {
   props.width = this.width
   props.height = this.height
   props.settings = this.settings
+  props.events = {
+    info: this.events.info,
+    warning: this.events.warning,
+    error: this.events.error
+  }
   props.parts = {}
   for (let p in this.parts) {
     if (this.parts[p].render) {

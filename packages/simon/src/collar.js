@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     measurements,
     utils,
@@ -13,9 +13,8 @@ export default part => {
     options
   } = part.shorthand()
 
-  const draft = function(tweak = 1) {
-    let length =
-      measurements.neckCircumference * (1 + options.collarEase - options.collarGap) * tweak
+  const draft = function (tweak = 1) {
+    let length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
     let width = options.collarStandWidth * (1 + options.collarRoll)
 
     // Draft right side
@@ -46,7 +45,7 @@ export default part => {
       ._curve(points.bottomMidCp2, points.bottomMid)
       .length()
 
-    return len * 2 - measurements.neckCircumference * (1 + options.collarEase - options.collarGap)
+    return len * 2 - measurements.neck * (1 + options.collarEase - options.collarGap)
   }
 
   let delta, tweak, run
@@ -90,10 +89,7 @@ export default part => {
       .attr('data-text-class', 'center')
 
     // Helplines
-    paths.help = new Path()
-      .move(points.topMid)
-      .line(points.bottomMid)
-      .attr('class', 'dotted')
+    paths.help = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dotted')
 
     // Grainline
     macro('grainline', {

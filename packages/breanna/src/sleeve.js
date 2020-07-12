@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     store,
     sa,
@@ -22,10 +22,7 @@ export default part => {
     top +
       measurements.shoulderToWrist * (1 + options.sleeveLengthBonus) * (1 + options.verticalEase)
   )
-  points.wristRight = points.centerWrist.shift(
-    0,
-    (measurements.wristCircumference * (1 + options.cuffEase)) / 2
-  )
+  points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
   points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5)
 

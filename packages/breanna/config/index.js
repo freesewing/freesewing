@@ -66,21 +66,21 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
+    'biceps',
     'bustFront',
     'bustSpan',
     'highBust',
     'highBustFront',
     'hpsToBust',
-    'hpsToHipsBack',
-    'hpsToHipsFront',
-    'naturalWaist',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'hpsToWaistBack',
+    'hpsToWaistFront',
+    'waist',
+    'waistToHips',
+    'neck',
     'shoulderToShoulder',
     'shoulderToWrist',
     'shoulderSlope',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     frontBase: 'back',

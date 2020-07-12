@@ -24,7 +24,7 @@ export default {
   optionGroups: {
     style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth']
   },
-  measurements: ['headCircumference'],
+  measurements: ['head'],
   dependencies: {},
   inject: {},
   hide: [],

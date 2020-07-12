@@ -6,6 +6,7 @@ export default [
   'Example',
   'Footer',
   'Icon',
+  'Legend',
   'LineDrawing',
   'Logo',
   'Navbar',

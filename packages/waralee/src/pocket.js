@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     measurements,
@@ -14,7 +14,8 @@ export default function(part) {
     macro
   } = part.shorthand()
 
-  let pocketDepth = measurements.seatDepth * options.frontPocketDepthFactor
+  let pocketDepth =
+    (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(270, pocketDepth)

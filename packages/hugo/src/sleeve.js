@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     utils,
     store,
@@ -13,8 +13,7 @@ export default function(part) {
     measurements,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
   // Top of raglan sleeve
