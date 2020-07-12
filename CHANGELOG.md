@@ -103,6 +103,7 @@
 - Changed `models` to `people` in `sampleConfigurator`
 - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
 - Added support for custom sample styles
+- Added Titan linedrawing
 
 #### Changed
 

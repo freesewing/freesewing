@@ -6,6 +6,7 @@ Unreleased:
       - Changed `models` to `people` in `sampleConfigurator`
       - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
       - Added support for custom sample styles
+      - Added Titan linedrawing
     core:
       - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
       - Added support for custom sample styles
