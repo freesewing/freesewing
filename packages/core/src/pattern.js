@@ -23,25 +23,6 @@ export default function Pattern(config = { options: {} }) {
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
 
-  // Store events
-  this.events = {
-    info: [],
-    warning: [],
-    error: []
-  }
-  const events = this.events
-  this.events.raise = {
-    event: function (data) {
-      events.info.push(data)
-    },
-    warning: function (data) {
-      events.warning.push(data)
-    },
-    error: function (data) {
-      events.error.push(data)
-    }
-  }
-
   // Default settings
   this.settings = {
     complete: true,
@@ -50,6 +31,7 @@ export default function Pattern(config = { options: {} }) {
     units: 'metric',
     margin: 2,
     layout: true,
+    debug: false,
     options: {}
   }
 
@@ -74,6 +56,31 @@ export default function Pattern(config = { options: {} }) {
       this.settings.options[i] = option
     }
   }
+
+  // Store events
+  this.events = {
+    info: [],
+    warning: [],
+    error: [],
+    debug: []
+  }
+  const events = this.events
+  this.events.raise = {
+    event: function (data) {
+      events.info.push(data)
+    },
+    warning: function (data) {
+      events.warning.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    },
+    debug: function (data) {
+      if (this.settings.debug) events.debug.push(data)
+    }
+  }
+  // Debug helper
+  this.debug = this.events.raise.debug
 
   // Macros
   this.macros = {}
@@ -114,6 +121,7 @@ Pattern.prototype.apply = function (settings) {
       }
     } else this.settings[key] = settings[key]
   }
+  if (this.settings.debug) this.debug('Debug enabled')
 
   return this
 }
@@ -575,6 +583,7 @@ Pattern.prototype.getRenderProps = function () {
   props.height = this.height
   props.settings = this.settings
   props.events = {
+    debug: this.events.debug,
     info: this.events.info,
     warning: this.events.warning,
     error: this.events.error
