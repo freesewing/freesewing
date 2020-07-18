@@ -1,21 +1,21 @@
 ---
 kneeEase:
-  title: Knee ease
-  description: Controls the amout of ease at the knee
+  title: Knie-Zugabe
+  description: Kontrolliert die Zugabe am Knie
 waistHeight:
-  title: Waist height
-  description: Controls the height of the waist, 100% = waist height, 0% = hip height
+  title: Taillenhöhe
+  description: Steuert die Höhe des Taillenbund, 100% = Taillenhöhe, 0% = Hüfthöhe
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the trousers
+  title: Längenzugabe
+  description: Steuert die Längenzugabe an der Hose
 crotchDrop:
-  title: Crotch drop
-  description: Lowers the crotch for a more relaxed fit
+  title: Schritt-Tiefe
+  description: Senke die Schrittiefe für mehr Tragekomfort
 fitKnee:
-  title: Fit the knee
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  title: Am Knie anliegend
+  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesässumfangs fest
 legBalance:
-  title: Leg balance
+  title: Bein-Balance
   description: Controls the ratio between front and back panel of the leg
 crossSeamCurveStart:
   title: Start of the cross seam curve
