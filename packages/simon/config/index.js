@@ -136,6 +136,7 @@ export default {
   options: {
     // Constants
     collarFactor: 5,
+    brianFitCollar: false,
     brianFitSleeve: true,
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
