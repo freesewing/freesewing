@@ -6,6 +6,13 @@ export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+/** Checks for a valid coordinate value **/
+export function isCoord(value) {
+  return value === value // NaN does not equal itself
+    ? typeof value === 'number'
+    : false
+}
+
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`

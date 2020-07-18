@@ -1,5 +1,13 @@
 Unreleased:
   date:
+  Added:
+    core:
+      - Added new debug functionality through the use of the `raise.debug`
+      - Added a new `debug` setting
+    components:
+      - Workbench now includes events debug output and enables debug by default
+    css-theme:
+      - Added themeing for events
 
 2.7.0:
   date: 2020-07-12

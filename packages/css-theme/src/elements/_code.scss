@@ -1,14 +1,16 @@
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   text-shadow: none;
 }
-.theme-wrapper.light :not(pre) > code[class*="language-"] {
+.workbench.theme-wrapper.light code,
+.theme-wrapper.light :not(pre) > code[class*='language-'] {
   padding: 0.1rem 0.25rem;
   background: $oc-yellow-0;
   border: 1px $oc-yellow-2 solid;
   color: $oc-gray-9;
 }
-.theme-wrapper.dark :not(pre) > code[class*="language-"] {
+.workbench.theme-wrapper.dark code,
+.theme-wrapper.dark :not(pre) > code[class*='language-'] {
   padding: 0.125rem 0.5rem;
   background: $oc-gray-9;
   border: 1px $oc-gray-7 solid;
@@ -42,46 +44,46 @@ pre.language-bash:before {
   text-shadow: none;
 }
 pre.language-yaml:before {
-  content: "yaml";
+  content: 'yaml';
   background: rgba(255, 255, 0, 0.9);
 }
 pre.language-js:before {
-  content: "js";
+  content: 'js';
   background: rgba(255, 255, 0, 0.9);
 }
 pre.language-jsx:before {
-  content: "jsx";
+  content: 'jsx';
   background: rgba(255, 255, 0, 0.9);
 }
 pre.language-mdx:before {
-  content: "mdx";
+  content: 'mdx';
   background: rgba(130, 201, 30, 0.9);
 }
 pre.language-json:before {
-  content: "json";
+  content: 'json';
   background: rgba(255, 255, 0, 0.9);
 }
 pre.language-bash:before {
-  content: "bash";
+  content: 'bash';
   background: rgba(29, 227, 0, 0.9);
 }
 pre.language-svg:before {
-  content: "svg";
+  content: 'svg';
   background: rgba(129, 197, 255, 0.9);
 }
-pre code[class*="language-"],
-pre[class*="language-"] {
+pre code[class*='language-'],
+pre[class*='language-'] {
   white-space: pre-wrap;
   border-radius: 6px;
   margin: 2rem 0;
   padding: 1.5rem 0;
 }
-.theme-wrapper.dark pre[class*="language-"] {
+.theme-wrapper.dark pre[class*='language-'] {
   border: 1px solid $oc-gray-8;
 }
 @include xs-screen {
-  pre code[class*="language-"],
-  pre[class*="language-"] {
+  pre code[class*='language-'],
+  pre[class*='language-'] {
     margin: 2rem -1.5rem;
     padding: 1.5rem;
     border-radius: 0;
@@ -97,5 +99,3 @@ pre[class*="language-"] {
     right: calc(20px - 1.5rem);
   }
 }
-
-

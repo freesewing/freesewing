@@ -1,0 +1,58 @@
+div.draft-events {
+  margin: 2rem auto;
+  max-width: 900px;
+  div.draft-event {
+    margin: 0.5rem auto;
+    line-height: 1.1;
+    font-size: 85%;
+    padding: 0.5rem;
+    border: 1px dotted black;
+    border-radius: 3px;
+    position: relative;
+    padding-left: 36px;
+    div.icon {
+      position: absolute;
+      top: 0;
+      left: 6px;
+      padding: 2px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      color: white;
+      line-height: 0.4;
+      display: inline-block;
+    }
+    div.icon svg {
+      font-size: 20px;
+    }
+    div.icon.debug {
+      background: $oc-grape-5;
+    }
+    div.icon.info {
+      background: $oc-blue-6;
+    }
+    div.icon.warning {
+      background: $oc-orange-6;
+    }
+    div.icon.error {
+      background: $oc-red-6;
+    }
+    p:first-of-type {
+      margin-top: 0;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  div.draft-event.debug {
+    border-color: $oc-grape-5;
+  }
+  div.draft-event.info {
+    border-color: $oc-blue-6;
+  }
+  div.draft-event.warning {
+    border-color: $oc-orange-6;
+  }
+  div.draft-event.error {
+    border-color: $oc-red-6;
+  }
+}

@@ -36,6 +36,9 @@ const Workbench = ({
   const [measurements, setMeasurements] = useState(null)
   const [svgExport, setSvgExport] = useState(false)
 
+  // Enable debug in Workbench
+  defaultGist.settings.debug = true
+
   useEffect(() => {
     let m = getMeasurements()
     setMeasurements(m)
@@ -220,7 +223,11 @@ const Workbench = ({
 
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
-      <div className={theme === 'light' ? 'theme-wrapper light' : 'theme-wrapper dark'}>
+      <div
+        className={
+          theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'
+        }
+      >
         {display !== 'welcome' ? <Navbar navs={navs} home={() => saveDisplay('welcome')} /> : null}
         {main}
         {display !== 'welcome' ? <Footer language={language} /> : null}
