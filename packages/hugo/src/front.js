@@ -40,7 +40,9 @@ export default function (part) {
   points.ribbing = points.hem.shift(90, store.get('ribbing'))
 
   // Raglan tip
-  let neckOpening = new Path().move(points.cfNeck).curve(points.cfNeck, points.neckCp2, points.neck)
+  let neckOpening = new Path()
+    .move(points.cfNeck)
+    .curve(points.cfNeckCp1, points.neckCp2, points.neck)
   points.raglanTipFront = neckOpening.shiftFractionAlong(0.8)
   let neckOpeningParts = neckOpening.split(points.raglanTipFront)
 
