@@ -42,6 +42,7 @@ export default {
   hide: ['base'],
   options: {
     // Constants
+    brianFitCollar: false,
     collarFactor: 4.8,
     acrossBackFactor: 0.97,
     backNeckCutout: 0.05,
