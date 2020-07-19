@@ -21,12 +21,9 @@ export default (part) => {
 
   if (options.ribbing) {
     // Adapt length for ribbing
-    let ribbingHeight
-    if (typeof store.get('ribbingHeight') === 'undefined') {
-      ribbingHeight =
-        (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
-      store.set('ribbingHeight', ribbingHeight)
-    } else ribbingHeight = store.get('ribbingHeight')
+    let ribbingHeight =
+      (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+    store.setIfUnset('ribbingHeight', ribbingHeight)
     points.hem = points.hem.shift(90, ribbingHeight)
     if (front) points.cfHem = points.cfHem.shift(90, ribbingHeight)
     else points.cbHem = points.cbHem.shift(90, ribbingHeight)

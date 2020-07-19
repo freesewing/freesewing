@@ -13,13 +13,11 @@ export const draftRibbing = function (part, length) {
     macro,
     units
   } = part.shorthand()
-  if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
-    store.set(
-      'ribbingHeight',
-      (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
-    )
-  }
-  let height = store.get('ribbingHeight')
+
+  let height = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+  if (part.context.settings.sample) store.set('ribbingHeight', height)
+  else store.setIfUnset('ribbingHeight', height)
+
   let gap = 25
   let lead = 50
   if (length < 125) lead = length / 3
