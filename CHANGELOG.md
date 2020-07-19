@@ -2,6 +2,68 @@
 
 ## Unreleased
 
+### aaron
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
+### bruce
+
+#### Fixed
+
+- Fixed a check for an undefined value in the store
+
+### carlton
+
+#### Fixed
+
+- Removed unused `hipsEase` code
+
+### components
+
+#### Added
+
+- Workbench now includes events debug output and enables debug by default
+
+### core
+
+#### Added
+
+- Added new debug functionality through the use of the `raise.debug`
+- Added a new `debug` setting
+
+### css-theme
+
+#### Added
+
+- Added themeing for events
+
+### hugo
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+- Adding missing control point to front neck opening
+
+### simon
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
+### simone
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
+### sven
+
+#### Fixed
+
+- Avoided loading unset ribbingHeight from store
+
 ## 2.7.0 (2020-07-12)
 
 ### aaron
