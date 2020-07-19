@@ -11,8 +11,8 @@ import {
   round
 } from './utils'
 
-function Path(raise = false) {
-  this.debug = raise ? true : false
+function Path(debug = false) {
+  this.debug = debug
   this.render = true
   this.topLeft = false
   this.bottomRight = false
@@ -24,7 +24,7 @@ function Path(raise = false) {
 Path.prototype.setRender = function (render = true) {
   if (render) this.render = true
   else this.render = false
-  if (this.debug) this.raise('Setting `Path.render` to ' + render ? '`true`' : '`false`')
+  if (this.debug) this.raise.debug('Setting `Path.render` to ' + render ? '`true`' : '`false`')
 
   return this
 }
@@ -387,7 +387,9 @@ function joinPaths(paths, closed = false) {
         // We're using sitsRoughlyOn here to avoid miniscule line segments
         if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to)
       } else {
-        throw new Error('Cannot join a closed paths with another')
+        let err = 'Cannot join a closed path with another'
+        this.raise.error(err)
+        throw new Error(err)
       }
       if (op.to) current = op.to
     }

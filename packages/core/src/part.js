@@ -75,12 +75,20 @@ Part.prototype.boundary = function () {
   let topLeft = new Point(Infinity, Infinity)
   let bottomRight = new Point(-Infinity, -Infinity)
   for (let key in this.paths) {
-    let path = this.paths[key].boundary()
-    if (path.render) {
-      if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
-      if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
-      if (path.bottomRight.x > bottomRight.x) bottomRight.x = path.bottomRight.x
-      if (path.bottomRight.y > bottomRight.y) bottomRight.y = path.bottomRight.y
+    try {
+      let path = this.paths[key].boundary()
+      if (path.render) {
+        if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
+        if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
+        if (path.bottomRight.x > bottomRight.x) bottomRight.x = path.bottomRight.x
+        if (path.bottomRight.y > bottomRight.y) bottomRight.y = path.bottomRight.y
+      }
+    } catch (err) {
+      this.context.raise.error(`Could not calculate boundary of \`paths.${key}\``)
+      this.context.raise.debug(
+        `Since \`paths.${key}\` has no boundary, neither does \`parts.${this.name}\`. Ejecting part`
+      )
+      return false
     }
   }
   for (let key in this.points) {
@@ -190,19 +198,19 @@ Part.prototype.shorthand = function () {
 
     // Wrap the Point constructor so objects can raise events
     shorthand.Point = function (x, y) {
-      Point.apply(this, [x, y, self.context.raise])
+      Point.apply(this, [x, y, true])
       this.raise = self.context.raise
     }
     shorthand.Point.prototype = Object.create(Point.prototype)
     // Wrap the Path constructor so objects can raise events
     shorthand.Path = function () {
-      Path.apply(this, [self.context.raise])
+      Path.apply(this, [true])
       this.raise = self.context.raise
     }
     shorthand.Path.prototype = Object.create(Path.prototype)
     // Wrap the Snippet constructor so objects can raise events
     shorthand.Snippet = function (def, anchor) {
-      Snippet.apply(this, [def, anchor, self.context.raise])
+      Snippet.apply(this, [def, anchor, true])
       Snippet.apply(this, arguments)
       shorthand.raise = self.context.raise
     }
@@ -227,8 +235,12 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(
             `\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``
           )
-        value.name = name
-        return (self.points[name] = value)
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`points.${name}\``)
+        }
+        return (self.points[name] = value) || true
       }
     }
     shorthand.points = new Proxy(this.points || {}, pointsProxy)
@@ -243,8 +255,12 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(
             `\`paths.${name}\` was set with a value that is not a \`Path\` object`
           )
-        value.name = name
-        return (self.paths[name] = value)
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`paths.${name}\``)
+        }
+        return (self.paths[name] = value) || true
       }
     }
     shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
@@ -267,8 +283,12 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(
             `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
           )
-        value.name = name
-        return (self.snippets[name] = value)
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`snippets.${name}\``)
+        }
+        return (self.snippets[name] = value) || true
       }
     }
     shorthand.snippets = new Proxy(this.snippets || {}, snippetsProxy)
@@ -282,7 +302,7 @@ Part.prototype.shorthand = function () {
         return Reflect.get(...arguments)
       },
       set: (measurements, name, value) => {
-        return (self.measurements[name] = value)
+        return (self.measurements[name] = value) || true
       }
     }
     shorthand.measurements = new Proxy(this.context.settings.measurements || {}, measurementsProxy)
@@ -294,7 +314,7 @@ Part.prototype.shorthand = function () {
         return Reflect.get(...arguments)
       },
       set: (options, name, value) => {
-        return (self.options[name] = value)
+        return (self.options[name] = value) || true
       }
     }
     shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)

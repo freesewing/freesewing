@@ -1,8 +1,8 @@
 import Attributes from './attributes'
 import Point from './point'
 
-function Snippet(def, anchor, raise = false) {
-  this.debug = raise ? true : false
+function Snippet(def, anchor, debug = false) {
+  this.debug = debug
   if (this.debug) {
     if (typeof def !== 'string')
       raise.warning('Called `new Snippet(def, anchor)` but `def` is not a string')

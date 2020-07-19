@@ -1,8 +1,8 @@
 import Attributes from './attributes'
 import { round } from './utils'
 
-function Point(x, y, raise = false) {
-  this.debug = raise ? true : false
+function Point(x, y, debug = false) {
+  this.debug = debug
   if (this.debug) {
     if (typeof x !== 'number') raise.warning('Called `new Point(x,y)` but `x` is not a number')
     if (typeof y !== 'number') raise.warning('Called `new Point(x,y)` but `y` is not a number')

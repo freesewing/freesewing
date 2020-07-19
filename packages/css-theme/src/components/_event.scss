@@ -3,13 +3,11 @@ div.draft-events {
   max-width: 900px;
   div.draft-event {
     margin: 0.5rem auto;
-    line-height: 1.1;
     font-size: 85%;
     padding: 0.5rem;
     border: 1px dotted black;
     border-radius: 3px;
     position: relative;
-    padding-left: 36px;
     div.icon {
       position: absolute;
       top: 0;
@@ -38,6 +36,7 @@ div.draft-events {
     }
     p:first-of-type {
       margin-top: 0;
+      padding-left: 32px;
     }
     p:last-of-type {
       margin-bottom: 0;
@@ -54,5 +53,12 @@ div.draft-events {
   }
   div.draft-event.error {
     border-color: $oc-red-6;
+  }
+  div.draft-event details summary {
+    margin-left: 1rem;
+    list-style-position: outside;
+  }
+  div.draft-event details summary:hover {
+    cursor: help;
   }
 }

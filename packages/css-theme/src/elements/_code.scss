@@ -2,14 +2,14 @@ code[class*='language-'],
 pre[class*='language-'] {
   text-shadow: none;
 }
-.workbench.theme-wrapper.light code,
+.workbench.theme-wrapper.light :not(pre) > code,
 .theme-wrapper.light :not(pre) > code[class*='language-'] {
   padding: 0.1rem 0.25rem;
   background: $oc-yellow-0;
   border: 1px $oc-yellow-2 solid;
   color: $oc-gray-9;
 }
-.workbench.theme-wrapper.dark code,
+.workbench.theme-wrapper.dark :not(pre) > code,
 .theme-wrapper.dark :not(pre) > code[class*='language-'] {
   padding: 0.125rem 0.5rem;
   background: $oc-gray-9;
@@ -20,8 +20,13 @@ pre[class*='language-'] {
 div.gatsby-highlight {
   position: relative;
 }
+div.react-markdown pre,
 div.gatsby-highlight pre {
   padding: 1.5rem 1rem;
+}
+div.react-markdown.dense pre,
+div.gatsby-highlight.dense pre {
+  padding: 0.5rem 1rem;
 }
 
 pre.language-yaml:before,
@@ -81,6 +86,14 @@ pre[class*='language-'] {
 .theme-wrapper.dark pre[class*='language-'] {
   border: 1px solid $oc-gray-8;
 }
+div.react-markdown pre[class*='language-'],
+div.react-markdown pre code[class*='language-'] {
+  margin: 0.5rem 0;
+}
+div.react-markdown pre[class*='language-']:before {
+  display: none;
+}
+
 @include xs-screen {
   pre code[class*='language-'],
   pre[class*='language-'] {

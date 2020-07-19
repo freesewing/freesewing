@@ -31,7 +31,6 @@ export default function Pattern(config = { options: {} }) {
     },
     debug: function (data) {
       events.debug.push(data)
-      console.log(data)
     }
   }
   this.raise.debug(
@@ -80,7 +79,11 @@ export default function Pattern(config = { options: {} }) {
       else if (typeof option.count !== 'undefined') this.settings.options[i] = option.count
       else if (typeof option.bool !== 'undefined') this.settings.options[i] = option.bool
       else if (typeof option.dflt !== 'undefined') this.settings.options[i] = option.dflt
-      else throw new Error('Unknown option type: ' + JSON.stringify(option))
+      else {
+        let err = 'Unknown option type: ' + JSON.stringify(option)
+        this.raise.error(err)
+        throw new Error(err)
+      }
     } else {
       this.settings.options[i] = option
     }
@@ -129,11 +132,7 @@ Pattern.prototype.apply = function (settings) {
       }
     } else this.settings[key] = settings[key]
   }
-  if (this.settings.debug) this.raise.debug('Debug enabled')
-  else {
-    this.raise.debug('Debug disabled')
-    this.debug = false
-  }
+  if (!this.settings.debug) this.debug = false
 
   return this
 }
@@ -166,7 +165,14 @@ Pattern.prototype.draft = function () {
         this.raise.debug(
           `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
         )
-      this.parts[partName].inject(this.parts[this.config.inject[partName]])
+      try {
+        this.parts[partName].inject(this.parts[this.config.inject[partName]])
+      } catch (err) {
+        this.raise.error([
+          `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
+          err
+        ])
+      }
     }
     if (this.needs(partName)) {
       let method = 'draft' + capitalize(partName)
@@ -174,17 +180,22 @@ Pattern.prototype.draft = function () {
         this.raise.error(`Method \`pattern.${method}\` is callable`)
         throw new Error('Method "' + method + '" on pattern object is not callable')
       }
-      this.parts[partName] = this[method](this.parts[partName])
+      try {
+        this.parts[partName] = this[method](this.parts[partName])
+      } catch (err) {
+        this.raise.error([`Unable to draft part \`${partName}\``, err])
+      }
       if (typeof this.parts[partName] === 'undefined') {
         this.raise.error(
           `Result of \`pattern.${method}\` was \`undefined\`. Did you forget to return the \`Part\` object?`
         )
-        throw new Error(
-          'Result of ' + method + '() was undefined. Did you forget to return the Part object?'
-        )
       }
-      this.parts[partName].render =
-        this.parts[partName].render === false ? false : this.wants(partName)
+      try {
+        this.parts[partName].render =
+          this.parts[partName].render === false ? false : this.wants(partName)
+      } catch (err) {
+        this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
+      }
     } else {
       if (this.debug)
         this.raise.debug(
@@ -323,7 +334,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
   let parts = this.sampleParts()
   let val = this.settings.measurements[measurementName]
   if (val === undefined)
-    throw new Error('Cannot sample a measurement that is undefined: ' + measurementName)
+    this.raise.error(`Cannot sample measurement \`${measurementName}\` because it's \`undefined\``)
   let step = val / 50
   val = val * 0.9
   for (let run = 1; run < 11; run++) {
@@ -410,6 +421,10 @@ Pattern.prototype.macro = function (key, method) {
 
 /** Packs parts in a 2D space and sets pattern size */
 Pattern.prototype.pack = function () {
+  if (this.events.error.length > 0) {
+    this.raise.warning(`One or more errors occured. Not packing pattern parts`)
+    return this
+  }
   let bins = []
   for (let key in this.parts) {
     let part = this.parts[key]
@@ -531,7 +546,10 @@ Pattern.prototype.resolveDependencies = function (graph = this.config.dependenci
       else if (Array.isArray(this.config.dependencies[i])) {
         if (this.config.dependencies[i].indexOf(dependency) === -1)
           this.config.dependencies[i].push(dependency)
-      } else throw new Error('Part dependencies should be a string or an array of strings')
+      } else {
+        this.raise.error('Part dependencies should be a string or an array of strings')
+        throw new Error('Part dependencies should be a string or an array of strings')
+      }
     }
     // Parts both in the parts and dependencies array trip up the dependency resolver
     if (Array.isArray(this.config.parts)) {
