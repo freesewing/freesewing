@@ -41,6 +41,9 @@ div.draft-events {
     p:last-of-type {
       margin-bottom: 0;
     }
+    div.gatsby-highlight {
+      margin: 0.5rem 0;
+    }
   }
   div.draft-event.debug {
     border-color: $oc-grape-5;
@@ -59,6 +62,6 @@ div.draft-events {
     list-style-position: outside;
   }
   div.draft-event details summary:hover {
-    cursor: help;
+    cursor: pointer;
   }
 }

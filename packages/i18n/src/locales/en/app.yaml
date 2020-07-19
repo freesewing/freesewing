@@ -33,7 +33,7 @@ chooseAPerson: Choose a person
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
-colourYes: "Colour picture: Content is available in English"
+colourYes: 'Colour picture: Content is available in English'
 community: Community
 configureLayout: Configure layout
 configureYourDraft: Configure your draft
@@ -44,7 +44,7 @@ continue: Continue
 copiedToClipboard: Copied to clipboard
 copy: Copy
 couldYouTranslateThis: Could you translate this?
-countModelsLackingForPattern: "{count} of your people lack the required measurements to draft {pattern}"
+countModelsLackingForPattern: '{count} of your people lack the required measurements to draft {pattern}'
 created: Created
 custom: Custom
 customSeamAllowance: Custom seam allowance
@@ -69,16 +69,16 @@ drafts: Drafts
 draftSettings: Draft settings
 dragAndDropImageHere: Drag and drop and image here, or select one manually with the button below
 emailAddress: E-mail address
-emailWorksToo: 'If you don''t know your username, you can also use your E-mail address to login'
+emailWorksToo: "If you don't know your username, you can also use your E-mail address to login"
 enterEmailPickPassword: Enter your E-mail address, and pick a password
 export: Export
 exportTiledPDF: Export tiled PDF
 faq: Frequently asked questions
-fieldRemoved: "{field} removed"
-fieldSaved: "{field} saved"
+fieldRemoved: '{field} removed'
+fieldSaved: '{field} saved'
 filterByPattern: Filter by pattern
 filterPatterns: Filter patterns
-forgotLoginInstructions: 'If you don''t remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button'
+forgotLoginInstructions: "If you don't remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing on GitHub
 github: GitHub
@@ -92,7 +92,6 @@ howCanWeHelpYou: How can we help you?
 howToTakeMeasurements: How to take measurements
 i18n: Internationalization
 imperialUnits: Imperial units (inch)
-info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is not a valid TLD'
 joinTheChatMsg: We have a chatroom on Gitter with friendly people who are happy to help out.  So don't be shy, and stop by for a chat.
@@ -109,7 +108,7 @@ metadata: Metadata
 metricUnits: Metric units (cm)
 person: Person
 people: People
-monochromeNo: "Monochrome picture: Content is not availabel in English"
+monochromeNo: 'Monochrome picture: Content is not availabel in English'
 nameInfo: A name helps to keep things apart. You can pick any name you want.
 name: Name
 addThing: Add {thing}
@@ -127,7 +126,7 @@ oneMoreThing: One more thing
 options: Options
 orPayPerYear: Or pay per year
 other: Other
-otherThing: "Other {thing}"
+otherThing: 'Other {thing}'
 ourPatrons: Our patrons
 patron-2: Powder monkey
 patron-4: First mate
@@ -153,7 +152,7 @@ remove: Remove
 removeThing: Remove {thing}
 reportThisOnGithub: Report this on GitHub
 requiredMeasurements: Required measurements
-resendActivationEmailMessage: 'Fill in the E-mail address you signed up with, and we''ll send you a new confirmation message.'
+resendActivationEmailMessage: "Fill in the E-mail address you signed up with, and we'll send you a new confirmation message."
 resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
 reset: Reset
@@ -195,7 +194,7 @@ txt-footer: Freesewing is made by joost & contributors<br />with the financial s
 txt-tier2: Our most democractically priced tier. It may be less than the price of a latte, but your support means the world to us.
 txt-tier4: Subscribe to this tier and we'll send some of our much covetted freesewing swag to your home anywhere in the world.
 txt-tier8: "If you don't merely want to support us, but want to see freesewing thrive, this is the tier for you. Also: extra swag."
-txt-tiers: "FreeSewing is fuelled by a voluntary subscription model"
+txt-tiers: 'FreeSewing is fuelled by a voluntary subscription model'
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
 update: Update
@@ -238,7 +237,7 @@ noModel: You haven't added any measurements (yet). FreeSewing can generate made-
 noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
 noUserBrowsingTitle: "You can't just browse all users"
 noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-usePatternMeasurements: "Use the measurements of the original pattern"
+usePatternMeasurements: 'Use the measurements of the original pattern'
 createReplica: Create a replica
 showDetails: Show details
 hideDetails: Hide details
@@ -263,7 +262,7 @@ oneMomentPlease: One moment please
 loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
-weEstimateYM2B: "We estimate your {measurement} to be around:"
+weEstimateYM2B: 'We estimate your {measurement} to be around:'
 exportAsData: Export as data
 availablePatterns: Available patterns
 browseCollection: Browse collection
@@ -315,4 +314,7 @@ updateNotes-txt: Update the notes you keep along your pattern
 franceWarning: Beware users in France
 franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
 emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
-
+error: Error
+info: Info
+warning: Warning
+debug: Debug
