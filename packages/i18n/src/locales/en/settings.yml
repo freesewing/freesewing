@@ -33,3 +33,7 @@ complete:
 layout:
   title: Layout
   description: Controls how the individual pattern parts are placed on your pattern
+
+debug:
+  title: Debug
+  description: Enable debug to gain additional info about how your pattern was created

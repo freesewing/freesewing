@@ -5,6 +5,7 @@ import DraftSettingMargin from '../DraftSettingMargin'
 import DraftSettingComplete from '../DraftSettingComplete'
 import DraftSettingPaperless from '../DraftSettingPaperless'
 import DraftSettingAdvanced from '../DraftSettingAdvanced'
+import DraftSettingDebug from '../DraftSettingDebug'
 import DraftSettingUnits from '../DraftSettingUnits'
 import DraftSettingLanguage from '../DraftSettingLanguage'
 import DraftSettingOnly from '../DraftSettingOnly'
@@ -41,7 +42,8 @@ const DraftSettings = ({
     },
     paperless: noyes,
     advanced: hideshow,
-    complete: hideshow
+    complete: hideshow,
+    debug: noyes
   }
   // Methods
   const toggleGroup = (group) => {
@@ -65,6 +67,8 @@ const DraftSettings = ({
         return 2
       case 'units':
         return units
+      case 'debug':
+        return false
       default:
         return false
     }
@@ -103,7 +107,8 @@ const DraftSettings = ({
       <DraftSettingUnits {...addProps('units')} list={metricimperial} />,
       <DraftSettingComplete {...addProps('complete')} />,
       <DraftSettingMargin {...addProps('margin')} />,
-      <DraftSettingOnly {...addProps('only')} />
+      <DraftSettingOnly {...addProps('only')} />,
+      <DraftSettingDebug {...addProps('debug')} />
     ]
   }
 
