@@ -5,35 +5,35 @@ function useBackend(baseURL, timeout = 10000) {
   const api = axios.create({ baseURL, timeout })
 
   // Helper method for Authorization header
-  const auth = token => ({
+  const auth = (token) => ({
     headers: { Authorization: 'Bearer ' + token }
   })
 
   const backend = {}
 
   // Oauth
-  backend.initOauth = data => api.post('/oauth/init', data) // Init Oauth (to get state)
-  backend.providerLogin = data => api.post('/oauth/login', data) // Finalize Oauth login
+  backend.initOauth = (data) => api.post('/oauth/init', data) // Init Oauth (to get state)
+  backend.providerLogin = (data) => api.post('/oauth/login', data) // Finalize Oauth login
 
   // Signup flow
   backend.signup = (email, password, language) => api.post('/signup', { email, password, language }) // Signup
-  backend.confirm = confirmId => api.post('/account', { id: confirmId }) // Confirm
+  backend.confirm = (confirmId) => api.post('/account', { id: confirmId }) // Confirm
   backend.createAccount = (confirmId, consent) => api.post('/account', { id: confirmId, consent }) // Create account
   backend.resendActivationEmail = (email, language) => api.post('/resend', { email, language }) // Re-send activation email
 
   // Other non-authenticated calls
   backend.login = (username, password) => api.post('/login', { username, password }) // Login
-  backend.confirmationLogin = id => api.post('/confirm/login', { id }) // Confirmation-based login
-  backend.recoverAccount = username => api.post('/account/recover', { username: username }) // Ask for a password reset
-  backend.loadPattern = handle => api.get('/pattern/' + handle) // Load pattern anonymously
-  backend.loadPatrons = handle => api.get('/patrons') // Load patron list
+  backend.confirmationLogin = (id) => api.post('/confirm/login', { id }) // Confirmation-based login
+  backend.recoverAccount = (username) => api.post('/account/recover', { username: username }) // Ask for a password reset
+  backend.loadPattern = (handle) => api.get('/pattern/' + handle) // Load pattern anonymously
+  backend.loadPatrons = (handle) => api.get('/patrons') // Load patron list
 
   // Users
   backend.profile = (username, token) => api.get('/users/' + username, auth(token)) // Load user profile
-  backend.account = token => api.get('/account', auth(token)) // Try to authenticate based on stored token
-  backend.export = token => api.get('/account/export', auth(token)) // Export data
-  backend.restrict = token => api.get('/account/restrict', auth(token)) // Restrict data processing (freeze account)
-  backend.remove = token => api.delete('/account', auth(token)) // Remove account
+  backend.account = (token) => api.get('/account', auth(token)) // Try to authenticate based on stored token
+  backend.export = (token) => api.get('/account/export', auth(token)) // Export data
+  backend.restrict = (token) => api.get('/account/restrict', auth(token)) // Restrict data processing (freeze account)
+  backend.remove = (token) => api.delete('/account', auth(token)) // Remove account
   backend.saveAccount = (data, token) => api.put('/account', data, auth(token)) // Update account
   backend.availableUsername = (data, token) => api.post('/available/username', data, auth(token)) // Check is a username is available
   backend.setPassword = (data, token) => api.post('/set/password', data, auth(token)) // (re)set a new password
@@ -48,6 +48,10 @@ function useBackend(baseURL, timeout = 10000) {
   backend.createPattern = (data, token) => api.post('/patterns', data, auth(token)) // Create pattern
   backend.removePattern = (handle, token) => api.delete('/patterns/' + handle, auth(token)) // Remove pattern
   backend.savePattern = (handle, data, token) => api.put('/patterns/' + handle, data, auth(token)) // Update pattern
+
+  // Github
+  backend.createGist = (data) => api.post('/github/gist', data) // Export pattern as Github gist
+  backend.createIssue = (data) => api.post('/github/issue', { data }) // Create Github issue
 
   // Admin
   backend.adminSearch = (query, token) => api.post('/admin/search', { query }, auth(token)) // Search users as admin
