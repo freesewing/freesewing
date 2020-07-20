@@ -26,3 +26,6 @@ complete:
 layout:
   title: Layout
   description: Bepaalt hoe de afzonderlijke patroondelen op uw patroon worden geplaatst
+debug:
+  title: Debug
+  description: Enable debug to gain additional info about how your pattern was created
