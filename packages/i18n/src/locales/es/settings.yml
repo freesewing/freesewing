@@ -26,3 +26,6 @@ complete:
 layout:
   title: Diseño
   description: Controla cómo se colocan las partes individuales del patrón en tu patrón
+debug:
+  title: Debug
+  description: Enable debug to gain additional info about how your pattern was created
