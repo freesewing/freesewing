@@ -8,6 +8,8 @@ Unreleased:
       - Workbench now includes events debug output and enables debug by default
     css-theme:
       - Added themeing for events
+    utils:
+      - Added backend calls for creating gists/issues on Github
   Fixed:
     aaron:
       - Set missing option `brianFitCollar` to `false`
