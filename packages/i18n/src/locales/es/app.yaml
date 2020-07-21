@@ -34,7 +34,6 @@ chooseAPerson: Elige una persona
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
-colourYes: 'Imagen en color: el contenido está disponible en español.'
 community: Comunidad
 configureLayout: Configurar diseño
 configureYourDraft: Configurar su boceto
@@ -109,7 +108,6 @@ metadata: Metadatos
 metricUnits: Unidades métricas (cm)
 person: Persona
 people: Personas
-monochromeNo: 'Imagen monocroma: el contenido no está disponible en español.'
 nameInfo: Un nombre ayuda a mantener las cosas separadas. Puedes elegir el nombre que quieras.
 name: Nombre
 addThing: Añadir {thing}
