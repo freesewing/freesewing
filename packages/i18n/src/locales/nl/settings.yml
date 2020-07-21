@@ -28,4 +28,4 @@ layout:
   description: Bepaalt hoe de afzonderlijke patroondelen op uw patroon worden geplaatst
 debug:
   title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  description: Schakel debug in om extra informatie te krijgen over hoe je patroon tot stand kwam
