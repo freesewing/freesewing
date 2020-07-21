@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Franse stijl (naadloos)
 buttonholePlacketWidth:
   title: Breedte knoopsgatenpat
-  description: Width of the buttonhole placket.
+  description: De breedte van het knoopsgatenpat.
 buttons:
   title: Aantal knopen
   description: Het aantal knopen op de sluiting vooraan.
@@ -109,10 +109,10 @@ hemStyle:
     slashed: Zoom met zijsplit
 seperateButtonholePlacket:
   title: Apart knoopsgatenpat
-  description: Draft a separate buttonhole placket.
+  description: Teken een apart knoopsgatenpat.
 seperateButtonPlacket:
   title: Apart knopenpat
-  description: Draft a separate button placket
+  description: Teken een apart knopenpat
 sleevePlacketLength:
   title: Lengte mouwsplit
   description: De lengte van het mouwsplit.
