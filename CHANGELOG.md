@@ -64,6 +64,12 @@
 
 - Avoided loading unset ribbingHeight from store
 
+### utils
+
+#### Added
+
+- Added backend calls for creating gists/issues on Github
+
 ## 2.7.0 (2020-07-12)
 
 ### aaron
