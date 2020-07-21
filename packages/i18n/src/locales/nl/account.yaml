@@ -53,5 +53,5 @@ usernameTitle: Kies een gebruikersnaam
 username: Gebruikersnaam
 accountIsInactive: Je account is inactief
 accountNeedsActivation: Vooraleer u kan inloggen, moet u uw account activeren. Controleer uw inbox voor onze registratie e-mail en klik op de link binnen deze e-mail.
-reloadAccount: Reload account
-reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.
+reloadAccount: Account opnieuw laden
+reloadAccountDescription: Dit zal de data van je account opnieuw laden vanuit de backend. Het heeft hetzelfde effect als jezelf afmelden en opnieuw aanmelden.
