@@ -34,7 +34,6 @@ chooseAPerson: Kies een persoon
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
-colourYes: 'Kleurenfoto: Inhoud is beschikbaar in het Nederlands'
 community: Gemeenschap
 configureLayout: Configureer layout
 configureYourDraft: Configureer je patroontekening
@@ -109,7 +108,6 @@ metadata: Metadata
 metricUnits: Metrische eenheden (cm)
 person: Persoon
 people: Mensen
-monochromeNo: 'Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands'
 nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
 addThing: Voeg {thing} toe
