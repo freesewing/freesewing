@@ -51,7 +51,7 @@ function useBackend(baseURL, timeout = 10000) {
 
   // Github
   backend.createGist = (data) => api.post('/github/gist', data) // Export pattern as Github gist
-  backend.createIssue = (data) => api.post('/github/issue', { data }) // Create Github issue
+  backend.createIssue = (data) => api.post('/github/issue', data) // Create Github issue
 
   // Admin
   backend.adminSearch = (query, token) => api.post('/admin/search', { query }, auth(token)) // Search users as admin
