@@ -33,7 +33,6 @@ chooseAPerson: Choose a person
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
-colourYes: 'Colour picture: Content is available in English'
 community: Community
 configureLayout: Configure layout
 configureYourDraft: Configure your draft
@@ -108,7 +107,6 @@ metadata: Metadata
 metricUnits: Metric units (cm)
 person: Person
 people: People
-monochromeNo: 'Monochrome picture: Content is not availabel in English'
 nameInfo: A name helps to keep things apart. You can pick any name you want.
 name: Name
 addThing: Add {thing}
