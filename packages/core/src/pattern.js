@@ -328,7 +328,7 @@ Pattern.prototype.sampleListOption = function (optionName) {
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.is = 'sample'
-  if (this.debug) this.raise.debug(`Sampling measurement \`${measurement}\``)
+  if (this.debug) this.raise.debug(`Sampling measurement \`${measurementName}\``)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
