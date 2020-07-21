@@ -36,7 +36,7 @@ lengthBonus:
 
 shoulderEase:
   title: Shoulder ease
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.
+  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distanceTo accommodate additional layers or thickness.
 
 shoulderSlopeReduction:
   title: Shoulder slope reduction
