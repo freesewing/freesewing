@@ -12,6 +12,14 @@ function Point(x, y, debug = false) {
   this.attributes = new Attributes()
 }
 
+/** Adds the raise method for a path not created through the proxy **/
+Point.prototype.withRaise = function (raise = false) {
+  if (raise) this.raise = raise
+  else this.raise = () => null
+
+  return this
+}
+
 /** Debug method to validate point data **/
 Point.prototype.check = function () {
   if (this.debug) {
@@ -105,13 +113,13 @@ Point.prototype.rotate = function (deg, that) {
   let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1
   let y = that.y + radius * Math.sin(this.deg2rad(angle + deg))
 
-  return new Point(x, y)
+  return new Point(x, y).withRaise(this.raise)
 }
 
 /** returns an identical copy of this point */
 Point.prototype.copy = function () {
   if (this.debug) this.check()
-  return new Point(this.x, this.y)
+  return new Point(this.x, this.y).withRaise(this.raise)
 }
 
 /** Mirrors this point around X value of that point */
@@ -124,8 +132,8 @@ Point.prototype.flipX = function (that = false) {
       that.check()
     }
   }
-  if (that === false || that.x === 0) return new Point(this.x * -1, this.y)
-  else return new Point(that.x + this.dx(that), this.y)
+  if (that === false || that.x === 0) return new Point(this.x * -1, this.y).withRaise(this.raise)
+  else return new Point(that.x + this.dx(that), this.y).withRaise(this.raise)
 }
 
 /** Mirrors this point around Y value of that point */
@@ -138,8 +146,8 @@ Point.prototype.flipY = function (that = false) {
       that.check()
     }
   }
-  if (that === false || that.y === 0) return new Point(this.x, this.y * -1)
-  else return new Point(this.x, that.y + this.dy(that))
+  if (that === false || that.y === 0) return new Point(this.x, this.y * -1).withRaise(this.raise)
+  else return new Point(this.x, that.y + this.dy(that)).withRaise(this.raise)
 }
 
 /** Shifts this point distance in the deg direction */
@@ -231,7 +239,7 @@ Point.prototype.shiftOutwards = function (that, distance) {
 /** Returns a deep copy of this */
 Point.prototype.clone = function () {
   if (this.debug) this.check()
-  let clone = new Point(this.x, this.y)
+  let clone = new Point(this.x, this.y).withRaise(this.raise)
   clone.attributes = this.attributes.clone()
 
   return clone

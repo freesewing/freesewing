@@ -28,6 +28,7 @@ Snippet.prototype.attr = function (name, value, overwrite = false) {
 Snippet.prototype.clone = function () {
   let clone = new Snippet(this.def, this.anchor.clone())
   clone.attributes = this.attributes.clone()
+  clone.raise = this.raise
 
   return clone
 }
