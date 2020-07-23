@@ -143,7 +143,7 @@ export default {
     },
     hemStyle: {
       dflt: 'classic',
-      list: ['classic', 'rounded']
+      list: ['classic', 'rounded', 'square']
     },
     hemRadius: {
       pct: 6,
