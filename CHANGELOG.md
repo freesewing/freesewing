@@ -32,6 +32,7 @@
 
 - Added new debug functionality through the use of the `raise.debug`
 - Added a new `debug` setting
+- Shorthand now proxies objects to allow debug and raise
 
 ### css-theme
 
@@ -51,6 +52,7 @@
 #### Fixed
 
 - Set missing option `brianFitCollar` to `false`
+- Don't assume the `chHips-notch` is available because it's not in Simone. Fixes [#833](https://github.com/freesewing/freesewing.org/issues/833)
 
 ### simone
 
@@ -69,6 +71,16 @@
 #### Added
 
 - Added backend calls for creating gists/issues on Github
+
+### wahid
+
+#### Added
+
+- Added the `square` hem style. Fixes [#672](https://github.com/freesewing/freesewing.org/issues/672)
+
+#### Changed
+
+- Hem radius can no longer be zero. Use teh `square` hem style for that
 
 ## 2.7.0 (2020-07-12)
 
