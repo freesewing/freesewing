@@ -5,7 +5,7 @@ function Point(x, y, debug = false) {
   this.x = round(x)
   this.y = round(y)
   this.attributes = new Attributes()
-  Object.defineProperty(this, 'debug', { value: debug })
+  Object.defineProperty(this, 'debug', { value: debug, configurable: true })
 }
 
 /** Adds the raise method for a path not created through the proxy **/
@@ -17,10 +17,8 @@ Point.prototype.withRaise = function (raise = false) {
 
 /** Debug method to validate point data **/
 Point.prototype.check = function () {
-  if (this.debug) {
-    if (typeof this.x !== 'number') this.raise.warning('X value of `Point` is not a number')
-    if (typeof this.y !== 'number') this.raise.warning('Y value of `Point` is not a number')
-  }
+  if (typeof this.x !== 'number') this.raise.warning('X value of `Point` is not a number')
+  if (typeof this.y !== 'number') this.raise.warning('Y value of `Point` is not a number')
 }
 
 /** Radians to degrees */
@@ -108,13 +106,13 @@ Point.prototype.rotate = function (deg, that) {
   let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1
   let y = that.y + radius * Math.sin(this.deg2rad(angle + deg))
 
-  return new Point(x, y).withRaise(this.raise)
+  return new Point(x, y, this.debug).withRaise(this.raise)
 }
 
 /** returns an identical copy of this point */
 Point.prototype.copy = function () {
   if (this.debug) this.check()
-  return new Point(this.x, this.y).withRaise(this.raise)
+  return new Point(this.x, this.y, this.debug).withRaise(this.raise)
 }
 
 /** Mirrors this point around X value of that point */
@@ -127,8 +125,9 @@ Point.prototype.flipX = function (that = false) {
       that.check()
     }
   }
-  if (that === false || that.x === 0) return new Point(this.x * -1, this.y).withRaise(this.raise)
-  else return new Point(that.x + this.dx(that), this.y).withRaise(this.raise)
+  if (that === false || that.x === 0)
+    return new Point(this.x * -1, this.y, this.debug).withRaise(this.raise)
+  else return new Point(that.x + this.dx(that), this.y, this.debug).withRaise(this.raise)
 }
 
 /** Mirrors this point around Y value of that point */
@@ -141,8 +140,9 @@ Point.prototype.flipY = function (that = false) {
       that.check()
     }
   }
-  if (that === false || that.y === 0) return new Point(this.x, this.y * -1).withRaise(this.raise)
-  else return new Point(this.x, that.y + this.dy(that)).withRaise(this.raise)
+  if (that === false || that.y === 0)
+    return new Point(this.x, this.y * -1, this.debug).withRaise(this.raise)
+  else return new Point(this.x, that.y + this.dy(that), this.debug).withRaise(this.raise)
 }
 
 /** Shifts this point distance in the deg direction */
@@ -234,7 +234,7 @@ Point.prototype.shiftOutwards = function (that, distance) {
 /** Returns a deep copy of this */
 Point.prototype.clone = function () {
   if (this.debug) this.check()
-  let clone = new Point(this.x, this.y).withRaise(this.raise)
+  let clone = new Point(this.x, this.y, this.debug).withRaise(this.raise)
   clone.attributes = this.attributes.clone()
 
   return clone

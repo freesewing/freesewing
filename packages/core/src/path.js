@@ -17,7 +17,7 @@ function Path(debug = false) {
   this.bottomRight = false
   this.attributes = new Attributes()
   this.ops = []
-  Object.defineProperty(this, 'debug', { value: debug })
+  Object.defineProperty(this, 'debug', { value: debug, configurable: true })
 }
 
 /** Adds the raise method for a path not created through the proxy **/
@@ -295,10 +295,7 @@ Path.prototype.boundary = function () {
 
 /** Returns a deep copy of this */
 Path.prototype.clone = function () {
-  let clone = new Path()
-  clone.render = this.render
-  clone.debug = this.debug
-  clone.raise = this.raise
+  let clone = new Path(this.debug).withRaise(this.raise).setRender(this.render)
   if (this.topLeft) clone.topLeft = this.topLeft.clone()
   else clone.topLeft = false
   if (this.bottomRight) clone.bottomRight = this.bottomRight.clone()
@@ -338,21 +335,21 @@ function pathOffset(path, distance, raise) {
   for (let i in path.ops) {
     let op = path.ops[i]
     if (op.type === 'line') {
-      let segment = offsetLine(current, op.to, distance, path.raise)
+      let segment = offsetLine(current, op.to, distance, path.debug, path.raise)
       if (segment) offset.push(segment)
     } else if (op.type === 'curve') {
       // We need to avoid a control point sitting on top of start or end
       // because that will break the offset in bezier-js
       let cp1, cp2
       if (current.sitsRoughlyOn(op.cp1)) {
-        cp1 = new Path()
+        cp1 = new Path(path.debug)
           .withRaise(path.raise)
           .move(current)
           .curve(op.cp1, op.cp2, op.to)
           .shiftAlong(2)
       } else cp1 = op.cp1
       if (op.cp2.sitsRoughlyOn(op.to)) {
-        cp2 = new Path()
+        cp2 = new Path(path.debug)
           .withRaise(path.raise)
           .move(op.to)
           .curve(op.cp2, op.cp1, current)
@@ -364,7 +361,7 @@ function pathOffset(path, distance, raise) {
         { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       )
-      for (let bezier of b.offset(distance)) offset.push(asPath(bezier, raise))
+      for (let bezier of b.offset(distance)) offset.push(asPath(bezier, path.debug, path.raise))
     } else if (op.type === 'close') closed = true
     if (op.to) current = op.to
     if (!start) start = current
@@ -374,19 +371,19 @@ function pathOffset(path, distance, raise) {
 }
 
 /** Offsets a line by distance */
-function offsetLine(from, to, distance, raise = false) {
+function offsetLine(from, to, distance, debug = false, raise = false) {
   if (from.x === to.x && from.y === to.y) return false
   let angle = from.angle(to) - 90
 
-  return new Path()
+  return new Path(debug)
     .withRaise(raise)
     .move(from.shift(angle, distance))
     .line(to.shift(angle, distance))
 }
 
 /** Converts a bezier-js instance to a path */
-function asPath(bezier, raise = false) {
-  return new Path()
+function asPath(bezier, debug = false, raise = false) {
+  return new Path(debug)
     .withRaise(raise)
     .move(new Point(bezier.points[0].x, bezier.points[0].y))
     .curve(
@@ -398,7 +395,7 @@ function asPath(bezier, raise = false) {
 
 /** Joins path segments together into one path */
 function joinPaths(paths, closed = false, raise = false) {
-  let joint = new Path().withRaise(raise).move(paths[0].ops[0].to)
+  let joint = new Path(paths[0].debug).withRaise(paths[0].raise).move(paths[0].ops[0].to)
   let current
   for (let p of paths) {
     for (let op of p.ops) {
@@ -409,7 +406,7 @@ function joinPaths(paths, closed = false, raise = false) {
         if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to)
       } else {
         let err = 'Cannot join a closed path with another'
-        this.raise.error(err)
+        joint.raise.error(err)
         throw new Error(err)
       }
       if (op.to) current = op.to
@@ -564,15 +561,17 @@ Path.prototype.reverse = function () {
     let op = this.ops[i]
     if (op.type === 'line') {
       if (!op.to.sitsOn(current))
-        sections.push(new Path().withRaise(this.raise).move(op.to).line(current))
+        sections.push(new Path(this.debug).withRaise(this.raise).move(op.to).line(current))
     } else if (op.type === 'curve') {
-      sections.push(new Path().withRaise(this.raise).move(op.to).curve(op.cp2, op.cp1, current))
+      sections.push(
+        new Path(this.debug).withRaise(this.raise).move(op.to).curve(op.cp2, op.cp1, current)
+      )
     } else if (op.type === 'close') {
       closed = true
     }
     if (op.to) current = op.to
   }
-  let rev = new Path().withRaise(this.raise).move(current)
+  let rev = new Path(this.debug).withRaise(this.raise).move(current)
   for (let section of sections.reverse()) rev.ops.push(section.ops[1])
   if (closed) rev.close()
 
@@ -630,11 +629,13 @@ Path.prototype.divide = function () {
       start = op.to
     } else if (op.type === 'line') {
       if (!op.to.sitsRoughlyOn(current))
-        paths.push(new Path().withRaise(this.raise).move(current).line(op.to))
+        paths.push(new Path(this.debug).withRaise(this.raise).move(current).line(op.to))
     } else if (op.type === 'curve') {
-      paths.push(new Path().withRaise(this.raise).move(current).curve(op.cp1, op.cp2, op.to))
+      paths.push(
+        new Path(this.debug).withRaise(this.raise).move(current).curve(op.cp1, op.cp2, op.to)
+      )
     } else if (op.type === 'close') {
-      paths.push(new Path().withRaise(this.raise).move(current).line(start))
+      paths.push(new Path(this.debug).withRaise(this.raise).move(current).line(start))
     }
     if (op.to) current = op.to
   }
@@ -768,10 +769,12 @@ Path.prototype.split = function (point) {
     if (path.ops[1].type === 'line') {
       if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
-        firstHalf.push(new Path().withRaise(this.raise).move(path.ops[0].to).line(point))
+        firstHalf.push(new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(point))
         pi++
         secondHalf = divided.slice(pi)
-        secondHalf.unshift(new Path().withRaise(this.raise).move(point).line(path.ops[1].to))
+        secondHalf.unshift(
+          new Path(this.debug).withRaise(this.raise).move(point).line(path.ops[1].to)
+        )
       }
     } else if (path.ops[1].type === 'curve') {
       let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
@@ -785,7 +788,7 @@ Path.prototype.split = function (point) {
         let split = curve.split(t)
         firstHalf = divided.slice(0, pi)
         firstHalf.push(
-          new Path()
+          new Path(this.debug)
             .withRaise(this.raise)
             .move(new Point(split.left.points[0].x, split.left.points[0].y))
             .curve(
@@ -797,7 +800,7 @@ Path.prototype.split = function (point) {
         pi++
         secondHalf = divided.slice(pi)
         secondHalf.unshift(
-          new Path()
+          new Path(this.debug)
             .withRaise(this.raise)
             .move(new Point(split.right.points[0].x, split.right.points[0].y))
             .curve(
@@ -827,7 +830,7 @@ Path.prototype.trim = function () {
         let intersection = intersections.pop()
         let trimmedStart = chunks.slice(0, i)
         let trimmedEnd = chunks.slice(parseInt(j) + 1)
-        let glue = new Path().withRaise(this.raise)
+        let glue = new Path(this.debug).withRaise(this.raise)
         let first = true
         for (let k of [i, j]) {
           let ops = chunks[k].ops

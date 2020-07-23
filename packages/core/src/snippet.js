@@ -5,7 +5,7 @@ function Snippet(def, anchor, debug = false) {
   this.def = def
   this.anchor = anchor
   this.attributes = new Attributes()
-  Object.defineProperty(this, 'debug', { value: debug })
+  Object.defineProperty(this, 'debug', { value: debug, configurable: true })
 
   return this
 }
@@ -26,9 +26,8 @@ Snippet.prototype.attr = function (name, value, overwrite = false) {
 
 /** Returns a deep copy of this */
 Snippet.prototype.clone = function () {
-  let clone = new Snippet(this.def, this.anchor.clone()).withRaise(this.raise)
+  let clone = new Snippet(this.def, this.anchor.clone(), this.debug).withRaise(this.raise)
   clone.attributes = this.attributes.clone()
-  clone.raise = this.raise
 
   return clone
 }
