@@ -2,20 +2,15 @@ import Attributes from './attributes'
 import { round } from './utils'
 
 function Point(x, y, debug = false) {
-  this.debug = debug
-  if (this.debug) {
-    if (typeof x !== 'number') raise.warning('Called `new Point(x,y)` but `x` is not a number')
-    if (typeof y !== 'number') raise.warning('Called `new Point(x,y)` but `y` is not a number')
-  }
   this.x = round(x)
   this.y = round(y)
   this.attributes = new Attributes()
+  Object.defineProperty(this, 'debug', { value: debug })
 }
 
 /** Adds the raise method for a path not created through the proxy **/
 Point.prototype.withRaise = function (raise = false) {
-  if (raise) this.raise = raise
-  else this.raise = () => null
+  if (raise) Object.defineProperty(this, 'raise', { value: raise })
 
   return this
 }

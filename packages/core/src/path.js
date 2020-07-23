@@ -12,18 +12,17 @@ import {
 } from './utils'
 
 function Path(debug = false) {
-  this.debug = debug
   this.render = true
   this.topLeft = false
   this.bottomRight = false
   this.attributes = new Attributes()
   this.ops = []
+  Object.defineProperty(this, 'debug', { value: debug })
 }
 
 /** Adds the raise method for a path not created through the proxy **/
 Path.prototype.withRaise = function (raise = false) {
-  if (raise) this.raise = raise
-  else this.raise = () => null
+  if (raise) Object.defineProperty(this, 'raise', { value: raise })
 
   return this
 }

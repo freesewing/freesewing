@@ -199,20 +199,20 @@ Part.prototype.shorthand = function () {
     // Wrap the Point constructor so objects can raise events
     shorthand.Point = function (x, y) {
       Point.apply(this, [x, y, true])
-      this.raise = self.context.raise
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
     }
     shorthand.Point.prototype = Object.create(Point.prototype)
     // Wrap the Path constructor so objects can raise events
     shorthand.Path = function () {
       Path.apply(this, [true])
-      this.raise = self.context.raise
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
     }
     shorthand.Path.prototype = Object.create(Path.prototype)
     // Wrap the Snippet constructor so objects can raise events
     shorthand.Snippet = function (def, anchor) {
       Snippet.apply(this, [def, anchor, true])
       Snippet.apply(this, arguments)
-      shorthand.raise = self.context.raise
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
     }
     shorthand.Snippet.prototype = Object.create(Snippet.prototype)
 
