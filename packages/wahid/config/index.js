@@ -147,7 +147,7 @@ export default {
     },
     hemRadius: {
       pct: 6,
-      min: 0,
+      min: 2,
       max: 12
     },
     buttons: {
