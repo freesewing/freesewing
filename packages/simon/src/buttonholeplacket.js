@@ -1,6 +1,6 @@
 import { addButtonHoles } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     utils,
     sa,
@@ -61,11 +61,7 @@ export default part => {
     .split(points.topInnerEdge)[0]
     .line(points.bottomInnerEdge)
 
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.placketBottomEdge)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().line(points.placketBottomEdge).close().attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {
@@ -98,7 +94,9 @@ export default part => {
     // Notches
     snippets['cfArmhole-notch'].anchor.x = points.cfArmhole.x - fold * 2
     snippets['cfWaist-notch'].anchor.x = points.cfArmhole.x - fold * 2
-    snippets['cfHips-notch'].anchor.x = points.cfArmhole.x - fold * 2
+    // This notch is not available in Simone
+    if (typeof snippets['cfHips-notch'] !== 'undefined')
+      snippets['cfHips-notch'].anchor.x = points.cfArmhole.x - fold * 2
 
     // Buttons
     addButtonHoles(part, 'placketCfNeck')
