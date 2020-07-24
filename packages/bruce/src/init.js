@@ -2,6 +2,7 @@ export default function init(part) {
   let { store, options, measurements, utils } = part.shorthand()
 
   // Don't run this every time, except when sampling
+  store.setIfUnset('init', false)
   if (store.get('init') !== true || part.context.settings.sample) {
     /* Set vertical scale to 1 (no stretch) */
     store.set('yScale', 1)

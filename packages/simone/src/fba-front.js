@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     measurements,
     Point,
@@ -299,10 +299,7 @@ export default part => {
   //
   // Now recreate the paths and let Simon take it from here
   //
-  paths.dart = new Path()
-    .move(points.dartBottom)
-    .line(points.bustDartTip)
-    .line(points.dartTop)
+  paths.dart = new Path().move(points.dartBottom).line(points.bustDartTip).line(points.dartTop)
   paths.saBaseFromHips = new Path()
     .move(points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -327,10 +324,7 @@ export default part => {
       points.bballEnd = points.hem.shiftFractionTowards(points.hips, options.hemCurve)
       points.bballCp1 = points.bballStart.shiftFractionTowards(points.hem, 0.5)
       points.bballCp2 = new Point(points.bballCp1.x, points.bballEnd.y)
-      paths.saBase = new Path()
-        .move(points.bballEnd)
-        .line(points.hips)
-        .join(paths.saBaseFromHips)
+      paths.saBase = new Path().move(points.bballEnd).line(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
         .move(points.cfHem)
         .line(points.bballStart)
@@ -351,10 +345,7 @@ export default part => {
         .curve(points.slashCp2, points.slashCp1, points.slashStart)
       break
     default:
-      paths.saBase = new Path()
-        .move(points.hem)
-        .line(points.hips)
-        .join(paths.saBaseFromHips)
+      paths.saBase = new Path().move(points.hem).line(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path().move(points.cfHem).line(points.hem)
   }
 

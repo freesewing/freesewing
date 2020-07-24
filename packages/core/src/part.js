@@ -18,7 +18,6 @@ function Part() {
   this.render = true
   this.utils = utils
 
-  // Constructors so macros can create objects
   this.Point = Point
   this.Path = Path
   this.Snippet = Snippet
@@ -59,6 +58,10 @@ Part.prototype.getId = function () {
 Part.prototype.unitsClosure = function (value) {
   let self = this
   let method = function (value) {
+    if (self.context.settings.debug && typeof value !== 'number')
+      self.context.raise.debug(
+        `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
+      )
     return utils.units(value, self.context.settings.units)
   }
 
@@ -72,12 +75,20 @@ Part.prototype.boundary = function () {
   let topLeft = new Point(Infinity, Infinity)
   let bottomRight = new Point(-Infinity, -Infinity)
   for (let key in this.paths) {
-    let path = this.paths[key].boundary()
-    if (path.render) {
-      if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
-      if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
-      if (path.bottomRight.x > bottomRight.x) bottomRight.x = path.bottomRight.x
-      if (path.bottomRight.y > bottomRight.y) bottomRight.y = path.bottomRight.y
+    try {
+      let path = this.paths[key].boundary()
+      if (path.render) {
+        if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
+        if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
+        if (path.bottomRight.x > bottomRight.x) bottomRight.x = path.bottomRight.x
+        if (path.bottomRight.y > bottomRight.y) bottomRight.y = path.bottomRight.y
+      }
+    } catch (err) {
+      this.context.raise.error(`Could not calculate boundary of \`paths.${key}\``)
+      this.context.raise.debug(
+        `Since \`paths.${key}\` has no boundary, neither does \`parts.${this.name}\`. Ejecting part`
+      )
+      return false
     }
   }
   for (let key in this.points) {
@@ -169,25 +180,156 @@ Part.prototype.shorthand = function () {
   let complete = this.context.settings.complete ? true : false
   let paperless = this.context.settings.paperless === true ? true : false
   let sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0
-  return {
+  const shorthand = {
     sa,
-    measurements: this.context.settings.measurements || {},
-    options: this.context.settings.options || {},
     store: this.context.store,
-    points: this.points || {},
-    paths: this.paths || {},
-    snippets: this.snippets || {},
     macro: this.macroClosure(),
     units: this.unitsClosure(),
     utils: utils,
-    Point: this.Point,
-    Path: this.Path,
-    Snippet: this.Snippet,
     complete,
     paperless,
     events: this.context.events,
-    raise: this.context.events.raise
+    raise: this.context.raise
   }
+
+  if (this.context.settings.debug) {
+    // We'll need this
+    let self = this
+
+    // Wrap the Point constructor so objects can raise events
+    shorthand.Point = function (x, y) {
+      Point.apply(this, [x, y, true])
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
+    }
+    shorthand.Point.prototype = Object.create(Point.prototype)
+    // Wrap the Path constructor so objects can raise events
+    shorthand.Path = function () {
+      Path.apply(this, [true])
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
+    }
+    shorthand.Path.prototype = Object.create(Path.prototype)
+    // Wrap the Snippet constructor so objects can raise events
+    shorthand.Snippet = function (def, anchor) {
+      Snippet.apply(this, [def, anchor, true])
+      Snippet.apply(this, arguments)
+      Object.defineProperty(this, 'raise', { value: self.context.raise })
+    }
+    shorthand.Snippet.prototype = Object.create(Snippet.prototype)
+
+    // Proxy the points object
+    const pointsProxy = {
+      get: function () {
+        return Reflect.get(...arguments)
+      },
+      set: (points, name, value) => {
+        // Constructor checks
+        if (value instanceof Point !== true)
+          self.context.raise.warning(
+            `\`points.${name}\` was set with a value that is not a \`Point\` object`
+          )
+        if (!utils.isCoord(value.x))
+          self.context.raise.warning(
+            `\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``
+          )
+        if (!utils.isCoord(value.y))
+          self.context.raise.warning(
+            `\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``
+          )
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`points.${name}\``)
+        }
+        return (self.points[name] = value) || true
+      }
+    }
+    shorthand.points = new Proxy(this.points || {}, pointsProxy)
+    // Proxy the paths object
+    const pathsProxy = {
+      get: function () {
+        return Reflect.get(...arguments)
+      },
+      set: (paths, name, value) => {
+        // Constructor checks
+        if (value instanceof Path !== true)
+          self.context.raise.warning(
+            `\`paths.${name}\` was set with a value that is not a \`Path\` object`
+          )
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`paths.${name}\``)
+        }
+        return (self.paths[name] = value) || true
+      }
+    }
+    shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
+    // Proxy the snippets object
+    const snippetsProxy = {
+      get: function (target, prop, receiver) {
+        return Reflect.get(...arguments)
+      },
+      set: (snippets, name, value) => {
+        // Constructor checks
+        if (value instanceof Snippet !== true)
+          self.context.raise.warning(
+            `\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`
+          )
+        if (typeof value.def !== 'string')
+          self.context.raise.warning(
+            `\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``
+          )
+        if (value.anchor instanceof Point !== true)
+          self.context.raise.warning(
+            `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
+          )
+        try {
+          value.name = name
+        } catch (err) {
+          self.context.raise.warning(`Could not set \`name\` property on \`snippets.${name}\``)
+        }
+        return (self.snippets[name] = value) || true
+      }
+    }
+    shorthand.snippets = new Proxy(this.snippets || {}, snippetsProxy)
+    // Proxy the measurements object
+    const measurementsProxy = {
+      get: function (measurements, name) {
+        if (typeof measurements[name] === 'undefined')
+          self.context.raise.warning(
+            `Tried to access \`measurements.${name}\` but it is \`undefined\``
+          )
+        return Reflect.get(...arguments)
+      },
+      set: (measurements, name, value) => {
+        return (self.measurements[name] = value) || true
+      }
+    }
+    shorthand.measurements = new Proxy(this.context.settings.measurements || {}, measurementsProxy)
+    // Proxy the options object
+    const optionsProxy = {
+      get: function (options, name) {
+        if (typeof options[name] === 'undefined')
+          self.context.raise.warning(`Tried to access \`options.${name}\` but it is \`undefined\``)
+        return Reflect.get(...arguments)
+      },
+      set: (options, name, value) => {
+        return (self.options[name] = value) || true
+      }
+    }
+    shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)
+  } else {
+    shorthand.Point = Point
+    shorthand.Path = Path
+    shorthand.Snippet = Snippet
+    shorthand.points = this.points || {}
+    shorthand.paths = this.paths || {}
+    shorthand.snippets = this.snippets || {}
+    shorthand.measurements = this.context.settings.measurements || {}
+    shorthand.options = this.context.settings.options || {}
+  }
+
+  return shorthand
 }
 
 export default Part

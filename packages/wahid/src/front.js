@@ -96,7 +96,7 @@ export default (part) => {
     )
     points.splitDartHemRight = points.splitDartHemLeft.shift(0, shift)
     points.lastButton = new Point(0, points.closureBottom.y)
-  } else {
+  } else if (options.hemStyle === 'rounded') {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
     // Draw rounded hem
     let radius = measurements.hips * options.hemRadius
@@ -111,6 +111,9 @@ export default (part) => {
       prefix: 'round'
     })
     points.lastButton = new Point(0, points.roundStart.y)
+  } else {
+    points.closureBottom = new Point(points.closureTop.x, points.hem.y)
+    points.lastButton = new Point(0, points.hem.y)
   }
 
   // Add dart start and end point regardless of style or front or back
@@ -224,11 +227,14 @@ export default (part) => {
     paths.hemBase = new Path()
       .move(points.dartEnd)
       .curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
-  } else {
+  } else if (options.hemStyle === 'rounded') {
     paths.saBase
       .line(points.roundStart)
       .curve(points.roundCp1, points.roundCp2, points.roundEnd)
       .line(points.dartHemLeft)
+    paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
+  } else {
+    paths.saBase.line(points.closureBottom).line(points.dartHemLeft)
     paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
   }
   paths.dart = dartPath(part)

@@ -62,14 +62,6 @@ export default function (part) {
     .curve(points.crossSeamCp, points.seatCp, points.seatCb)
     .shiftFractionAlong(options.legReduction * 2)
 
-  // Lengthen legs
-  if (options.legBonus > 0) {
-    let shift = (measurements.waistToUpperLeg - measurements.waistToHips) * options.legBonus
-    points.legSide = points.legSide.shift(-90, shift)
-    points.legSideCp = points.legSideCp.shift(-90, shift)
-    points.reducedLegInner = points.reducedLegInner(-90, shift)
-  }
-
   // Rise
   if (options.rise > 0) {
     let shift = (measurements.waistToUpperLeg - measurements.waistToHips) * options.rise

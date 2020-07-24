@@ -2,6 +2,86 @@
 
 ## Unreleased
 
+### aaron
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
+### bruce
+
+#### Fixed
+
+- Fixed a check for an undefined value in the store
+
+### carlton
+
+#### Fixed
+
+- Removed unused `hipsEase` code
+
+### components
+
+#### Added
+
+- Workbench now includes events debug output and enables debug by default
+
+### core
+
+#### Added
+
+- Added new debug functionality through the use of the `raise.debug`
+- Added a new `debug` setting
+- Shorthand now proxies objects to allow debug and raise
+
+### css-theme
+
+#### Added
+
+- Added themeing for events
+
+### hugo
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+- Adding missing control point to front neck opening
+
+### simon
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+- Don't assume the `chHips-notch` is available because it's not in Simone. Fixes [#833](https://github.com/freesewing/freesewing.org/issues/833)
+
+### simone
+
+#### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
+### sven
+
+#### Fixed
+
+- Avoided loading unset ribbingHeight from store
+
+### utils
+
+#### Added
+
+- Added backend calls for creating gists/issues on Github
+
+### wahid
+
+#### Added
+
+- Added the `square` hem style. Fixes [#672](https://github.com/freesewing/freesewing.org/issues/672)
+
+#### Changed
+
+- Hem radius can no longer be zero. Use teh `square` hem style for that
+
 ## 2.7.0 (2020-07-12)
 
 ### aaron
