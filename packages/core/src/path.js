@@ -31,7 +31,7 @@ Path.prototype.withRaise = function (raise = false) {
 Path.prototype.setRender = function (render = true) {
   if (render) this.render = true
   else this.render = false
-  if (this.debug) this.raise.debug('Setting `Path.render` to ' + render ? '`true`' : '`false`')
+  if (this.debug) this.raise.debug('Setting `Path.render` to ' + (render ? '`true`' : '`false`'))
 
   return this
 }
