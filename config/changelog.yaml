@@ -1,6 +1,10 @@
 Unreleased:
   date:
   Added:
+
+2.7.1:
+  date: 2020-07-24
+  Added:
     core:
       - Added new debug functionality through the use of the `raise.debug`
       - Added a new `debug` setting

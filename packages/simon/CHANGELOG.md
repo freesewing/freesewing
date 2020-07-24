@@ -1,5 +1,12 @@
 # Change log for: @freesewing/simon
 
+## 2.7.1 (2020-07-24)
+
+### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+- Don't assume the `chHips-notch` is available because it's not in Simone. Fixes [#833](https://github.com/freesewing/freesewing.org/issues/833)
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

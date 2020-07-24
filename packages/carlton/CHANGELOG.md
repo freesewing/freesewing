@@ -1,5 +1,11 @@
 # Change log for: @freesewing/carlton
 
+## 2.7.1 (2020-07-24)
+
+### Fixed
+
+- Removed unused `hipsEase` code
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

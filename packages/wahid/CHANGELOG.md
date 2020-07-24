@@ -1,5 +1,15 @@
 # Change log for: @freesewing/wahid
 
+## 2.7.1 (2020-07-24)
+
+### Added
+
+- Added the `square` hem style. Fixes [#672](https://github.com/freesewing/freesewing.org/issues/672)
+
+### Changed
+
+- Hem radius can no longer be zero. Use teh `square` hem style for that
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

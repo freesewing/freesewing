@@ -1,5 +1,13 @@
 # Change log for: @freesewing/core
 
+## 2.7.1 (2020-07-24)
+
+### Added
+
+- Added new debug functionality through the use of the `raise.debug`
+- Added a new `debug` setting
+- Shorthand now proxies objects to allow debug and raise
+
 ## 2.7.0 (2020-07-12)
 
 ### Added
