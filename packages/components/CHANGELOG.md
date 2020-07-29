@@ -1,5 +1,11 @@
 # Change log for: @freesewing/components
 
+## 2.7.1 (2020-07-24)
+
+### Added
+
+- Workbench now includes events debug output and enables debug by default
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

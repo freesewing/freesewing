@@ -1,5 +1,11 @@
 # Change log for: @freesewing/simone
 
+## 2.7.1 (2020-07-24)
+
+### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

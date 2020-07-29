@@ -1,5 +1,11 @@
 # Change log for: @freesewing/utils
 
+## 2.7.1 (2020-07-24)
+
+### Added
+
+- Added backend calls for creating gists/issues on Github
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### core
+
+#### Fixed
+
+- Fixed wrong return value in debug message from Path
+
+## 2.7.1 (2020-07-24)
+
 ### aaron
 
 #### Fixed

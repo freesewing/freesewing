@@ -1,5 +1,12 @@
 # Change log for: @freesewing/hugo
 
+## 2.7.1 (2020-07-24)
+
+### Fixed
+
+- Set missing option `brianFitCollar` to `false`
+- Adding missing control point to front neck opening
+
 ## 2.7.0 (2020-07-12)
 
 ### Added
