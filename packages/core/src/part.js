@@ -302,7 +302,7 @@ Part.prototype.shorthand = function () {
         return Reflect.get(...arguments)
       },
       set: (measurements, name, value) => {
-        return (self.measurements[name] = value) || true
+        return (self.context.settings.measurements[name] = value) || true
       }
     }
     shorthand.measurements = new Proxy(this.context.settings.measurements || {}, measurementsProxy)
@@ -314,7 +314,7 @@ Part.prototype.shorthand = function () {
         return Reflect.get(...arguments)
       },
       set: (options, name, value) => {
-        return (self.options[name] = value) || true
+        return (self.context.settings.options[name] = value) || true
       }
     }
     shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)
