@@ -40,7 +40,7 @@ export default {
   knee: 0.65,
   seat: 0.6,
   shoulderToElbow: 0.5,
-  shoulderToShoulder: 0.75,
+  shoulderToShoulder: 0.65,
   shoulderToWrist: 0.3,
   upperLeg: 0.45,
   waist: 0.85,
