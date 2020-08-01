@@ -18,24 +18,31 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
-  // Absolute values for percentages
-  store.set('lengthBonus', options.lengthBonus * measurements.hpsToHipsBack)
-  store.set('ribbing', measurements.hpsToHipsBack * options.ribbingHeight)
+  // Fit the hips
+  points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
+  points.hemCp2 = new Point(points.hem.x, points.cfWaist.y)
 
-  // Hem is more descripting than hips in this case
-  //points.cfHem = points.cfHips;
-  //points.hem = points.hips;
+  // Absolute values for percentages
+  store.set(
+    'lengthBonus',
+    options.lengthBonus * (measurements.hpsToWaistBack + measurements.waistToHips)
+  )
+  store.set(
+    'ribbing',
+    (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+  )
 
   // Ribbing
   points.cfRibbing = points.cfHem.shift(90, store.get('ribbing'))
   points.ribbing = points.hem.shift(90, store.get('ribbing'))
 
   // Raglan tip
-  let neckOpening = new Path().move(points.cfNeck).curve(points.cfNeck, points.neckCp2, points.neck)
+  let neckOpening = new Path()
+    .move(points.cfNeck)
+    .curve(points.cfNeckCp1, points.neckCp2, points.neck)
   points.raglanTipFront = neckOpening.shiftFractionAlong(0.8)
   let neckOpeningParts = neckOpening.split(points.raglanTipFront)
 
@@ -43,7 +50,7 @@ export default function (part) {
   points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6)
   points.pocketCf = points.cfHem.shift(
     90,
-    (measurements.hpsToHipsBack - measurements.naturalWaistToHip) * 0.33 + store.get('ribbing')
+    measurements.hpsToWaistBack * 0.33 + store.get('ribbing')
   )
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y)
   points.pocketTip = points.pocketHem
@@ -60,7 +67,7 @@ export default function (part) {
   paths.saBase = new Path()
     .move(points.cfRibbing)
     .line(points.ribbing)
-    .line(points.armhole)
+    .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())

@@ -11,7 +11,7 @@ const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
 const cathrin = require('@freesewing/cathrin').config
 const florent = require('@freesewing/florent').config
-const fu = require('@freesewing/fu').config
+const florence = require('@freesewing/florence').config
 const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
@@ -24,6 +24,7 @@ const simone = require('@freesewing/simone').config
 const sven = require('@freesewing/sven').config
 const tamiko = require('@freesewing/tamiko').config
 const theo = require('@freesewing/theo').config
+const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
@@ -40,7 +41,7 @@ const patterns = {
   carlton,
   cathrin,
   florent,
-  fu,
+  florence,
   holmes,
   huey,
   hugo,
@@ -53,11 +54,12 @@ const patterns = {
   sven,
   tamiko,
   theo,
+  titan,
   trayvon,
   wahid,
   waralee
 }
-const patternOptions = config => {
+const patternOptions = (config) => {
   let all = []
   let groups = config.optionGroups
   for (let group of Object.keys(groups)) {
@@ -74,7 +76,7 @@ const patternOptions = config => {
   return all
 }
 
-const patternParts = config => {
+const patternParts = (config) => {
   let parts = {}
   if (config.parts) {
     for (let p of config.parts) parts[p] = p

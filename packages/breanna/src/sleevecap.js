@@ -30,19 +30,17 @@ function sleevecapAdjust(store, twoBacks = false, options = null) {
 }
 
 function draftSleevecap(part, run) {
-  let { debug, store, measurements, options, Point, points, Path, paths } = part.shorthand()
+  let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
     90,
     options.sleevecapTopFactorY *
-      ((measurements.bicepsCircumference / 2) *
-        (1 + options.bicepsEase) *
-        store.get('sleeveFactor'))
+      ((measurements.biceps / 2) * (1 + options.bicepsEase) * store.get('sleeveFactor'))
   )
 
   // Left and right biceps points, limit impact of sleeveFactor to 25%
-  let halfWidth = (measurements.bicepsCircumference * (1 + options.bicepsEase)) / 2
+  let halfWidth = (measurements.biceps * (1 + options.bicepsEase)) / 2
   points.bicepsLeft = points.centerBiceps.shift(
     180,
     halfWidth * options.sleeveWidthGuarantee +
@@ -77,7 +75,7 @@ function draftSleevecap(part, run) {
   points.capQ3Base = points.backPitch.shiftFractionTowards(points.centerCap, 0.5)
   points.capQ4Base = points.backPitch.shiftFractionTowards(points.bicepsLeft, 0.5)
   // Offset points
-  let baseOffset = measurements.bicepsCircumference * (1 + options.bicepsEase)
+  let baseOffset = measurements.biceps * (1 + options.bicepsEase)
   points.capQ1 = points.capQ1Base.shift(
     points.bicepsRight.angle(points.frontPitch) + 90,
     baseOffset * options.sleevecapQ1Offset
@@ -182,8 +180,8 @@ function redrawSleevecapFront(part, delta) {
   store.set('sleevecapLength', paths.sleevecap.length())
 }
 
-export default part => {
-  let { debug, store, options, Point, points, paths } = part.shorthand()
+export default (part) => {
+  let { store, options, Point, points, paths } = part.shorthand()
 
   // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
   store.set('sleeveFactor', 1)

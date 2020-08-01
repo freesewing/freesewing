@@ -30,11 +30,13 @@ export default (part) => {
       .line(points.closureBottom)
       .line(points.hemTip)
       ._curve(points.splitDartHemLeftCp1, points.splitDartHemLeft)
-  } else {
+  } else if (options.hemStyle === 'rounded') {
     paths.seam
       .line(points.roundStart)
       .curve(points.roundCp1, points.roundCp2, points.roundEnd)
       .line(points.dartHemLeft)
+  } else {
+    paths.seam.line(points.closureBottom).line(points.dartHemLeft)
   }
   paths.seam.close().attr('class', 'fabric')
 

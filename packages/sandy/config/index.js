@@ -14,7 +14,7 @@ export default {
     style: ['lengthBonus', 'circleRatio', 'waistbandWidth', 'waistbandOverlap', 'gathering'],
     construction: ['seamlessFullCircle', 'hemWidth']
   },
-  measurements: ['naturalWaist', 'naturalWaistToFloor', 'naturalWaistToHip', 'hipsCircumference'],
+  measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
   dependencies: {
     waistband: 'skirt'
   },

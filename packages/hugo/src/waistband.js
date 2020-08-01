@@ -13,10 +13,10 @@ export default function (part) {
     units
   } = part.shorthand()
 
-  let width = measurements.hpsToHipsBack * options.ribbingHeight * 2
+  let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = complete
     ? width * 2.5
-    : measurements.chestCircumference * (1 + options.chestEase) * (1 - options.ribbingStretch)
+    : measurements.chest * (1 + options.chestEase) * (1 - options.ribbingStretch)
 
   // We only print a part, unless complete is false in which case
   // we print the entire thing (because laser cutters and so on)
@@ -73,9 +73,7 @@ export default function (part) {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: points.bottomRight.y + sa + 15,
-      text: units(
-        measurements.chestCircumference * (1 + options.chestEase) * (1 - options.ribbingStretch)
-      )
+      text: units(measurements.chest * (1 + options.chestEase) * (1 - options.ribbingStretch))
     })
   }
 

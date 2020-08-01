@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -11,14 +11,13 @@ export default function(part) {
     measurements,
     complete,
     paperless,
-    macro,
-    debug
+    macro
   } = part.shorthand()
 
   let neckOpening = store.get('neckOpeningLenFront') + store.get('neckOpeningLenBack')
-  let hoodOpening = measurements.headCircumference
+  let hoodOpening = measurements.head
   let neckCutoutDelta = store.get('neckCutoutFront') - store.get('neckCutoutBack')
-  store.set('hoodCenterWidth', measurements.headCircumference / 10)
+  store.set('hoodCenterWidth', measurements.head / 10)
   let halfCenterPanel = store.get('hoodCenterWidth') / 2
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(neckOpening, 0)

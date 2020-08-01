@@ -12,7 +12,7 @@ export default (part) => {
     store
   } = part.shorthand()
 
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let ph = store.get('pocketBagLength') + pwh // Pocket height
 

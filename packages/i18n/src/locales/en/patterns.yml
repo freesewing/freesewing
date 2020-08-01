@@ -27,13 +27,13 @@ cathrin:
   title: Cathrin corset
 diana:
   description: Diana is a top with a draped neckline.
-  title: Diana top
+  title: Diana draped top
 florent:
   description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
   title: Florent flat cap
-fu:
-  description: 'Fu is a face mask'
-  title: Fu face mask
+florence:
+  description: 'Florence is a face mask'
+  title: Florence face mask
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat
@@ -70,6 +70,9 @@ tamiko:
 theo:
   description: Theo is a classic trouser pattern.
   title: Theo trousers
+titan:
+  description: Titan is a dartless unisex trouser block
+  title: Titan trouser block
 trayvon:
   description: Trayvon is a tie that cuts no corners for a professional result.
   title: Trayvon tie
@@ -79,4 +82,3 @@ wahid:
 waralee:
   description: Waralee are wrap pants
   title: Waralee wrap pants
-

@@ -54,7 +54,7 @@ buttonholePlacketStyle:
 
 buttonholePlacketWidth:
   title: Buttonhole placket width
-  description: Width of the butonhole placket.
+  description: Width of the buttonhole placket.
 
 buttons:
   title: Number of buttons
@@ -136,11 +136,11 @@ hemStyle:
 
 seperateButtonholePlacket:
   title: Seperate buttonhole placket
-  description: Draft a seperate buttonhole placket.
+  description: Draft a separate buttonhole placket.
 
 seperateButtonPlacket:
   title: Seperate button placket
-  description: Draft a seperate button placket
+  description: Draft a separate button placket
 
 sleevePlacketLength:
   title: Sleeve placket length

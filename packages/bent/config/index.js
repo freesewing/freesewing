@@ -31,16 +31,16 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hpsToHipsBack',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'waistToHips',
+    'neck',
     'shoulderSlope',
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     back: 'base',
@@ -63,20 +63,20 @@ export default {
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 65, min: 50, max: 70 },
+    armholeDepthFactor: { pct: 60, min: 50, max: 70 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
-    bicepsEase: { pct: 20, min: 0, max: 50 },
+    bicepsEase: { pct: 20, min: 10, max: 40 },
     chestEase: { pct: 8, min: -4, max: 20 },
     collarEase: { pct: 3.5, min: 0, max: 10 },
-    cuffEase: { pct: 20, min: 0, max: 200 },
+    cuffEase: { pct: 40, min: 2, max: 100 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
 
     sleeveBend: { deg: 10, min: 0, max: 20 },
     sleevecapHeight: { pct: 45, min: 40, max: 60 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
+    sleeveLengthBonus: { pct: 0, min: -20, max: 15 }
   }
 }

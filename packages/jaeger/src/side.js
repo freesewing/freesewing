@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -31,11 +31,11 @@ export default function(part) {
       .split(points.ventStart)
       .pop()
       .line(points.bsHem)
-    paths.vent = paths.ventBase.offset(measurements.neckCircumference / -10)
+    paths.vent = paths.ventBase.offset(measurements.neck / -10)
     //paths.vent.render = false;
     points.ventSlopeStart = utils.lineIntersectsCurve(
       paths.vent.start(),
-      paths.vent.start().shift(170, measurements.neckCircumference / 5),
+      paths.vent.start().shift(170, measurements.neck / 5),
       points.bsHips,
       points.bsHipsCp2,
       points.bsWaistCp1,
@@ -50,6 +50,9 @@ export default function(part) {
   // Clean up - Remove this to understand what's going on
   for (let i of Object.keys(paths)) if (i !== 'vent') delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
+
+  // Anchor for sampling
+  points.anchor = points.sideHem.clone()
 
   // Paths
   paths.hemBase = new Path().move(points.sideHem).line(points.bsHem)
@@ -80,11 +83,7 @@ export default function(part) {
     .curve(points.sideWaistCp1, points.sideHipsCp2, points.sideHips)
     .line(points.sideHem)
 
-  paths.seam = paths.saBase
-    .clone()
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 
   if (complete) {
     // Logo

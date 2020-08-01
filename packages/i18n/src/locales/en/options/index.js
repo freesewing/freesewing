@@ -1,4 +1,4 @@
-import fu from './fu.yml'
+import florence from './florence.yml'
 import brian from './brian.yml'
 import breanna from './breanna.yml'
 import diana from './diana.yml'
@@ -25,11 +25,12 @@ import sandy from './sandy.yml'
 import shin from './shin.yml'
 import penelope from './penelope.yml'
 import waralee from './waralee.yml'
+import titan from './titan.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
 let patterns = {
-  fu,
+  florence,
   brian,
   breanna,
   diana,
@@ -55,7 +56,8 @@ let patterns = {
   shin,
   penelope,
   waralee,
-  holmes
+  holmes,
+  titan
 }
 
 let options = {}

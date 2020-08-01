@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { strings } from '@freesewing/i18n'
 
 const TextOnPath = (props) => {
@@ -9,7 +8,7 @@ const TextOnPath = (props) => {
   for (let string of props.path.attributes.getAsArray('data-text')) {
     if (strings[props.language]['plugin.' + string])
       translated += strings[props.language]['plugin.' + string]
-    else translated += string
+    else translated += string.toString().replace(/&quot;/g, '"')
     translated += ' '
   }
   let textPathProps = {
@@ -27,11 +26,6 @@ const TextOnPath = (props) => {
       </textPath>
     </text>
   )
-}
-
-TextOnPath.propTypes = {
-  path: PropTypes.object.isRequired,
-  language: PropTypes.string.isRequired
 }
 
 export default TextOnPath

@@ -33,17 +33,15 @@ export default {
     advanced: ['backInset', 'frontInset', 'shoulderInset', 'neckInset', 'pocketAngle']
   },
   measurements: [
-    'bicepsCircumference',
-    'chestCircumference',
-    'hipsCircumference',
-    'hpsToHipsBack',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'biceps',
+    'chest',
+    'hips',
+    'hpsToWaistBack',
+    'waistToHips',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'naturalWaist',
-    'shoulderToWrist',
-    'wristCircumference'
+    'waist'
   ],
   dependencies: {
     backBlock: 'base',
@@ -145,11 +143,11 @@ export default {
     },
     hemStyle: {
       dflt: 'classic',
-      list: ['classic', 'rounded']
+      list: ['classic', 'rounded', 'square']
     },
     hemRadius: {
       pct: 6,
-      min: 0,
+      min: 2,
       max: 12
     },
     buttons: {

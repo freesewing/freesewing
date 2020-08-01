@@ -1,13 +1,10 @@
 import { draftRibbing } from './shared'
 
-export default part => {
+export default (part) => {
   let { complete, points, measurements, options, macro } = part.shorthand()
   if (!options.ribbing) return part
 
-  draftRibbing(
-    part,
-    measurements.wristCircumference * (1 + options.cuffEase) * (1 - options.ribbingStretch)
-  )
+  draftRibbing(part, measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch))
 
   // Complete pattern?
   if (complete) {

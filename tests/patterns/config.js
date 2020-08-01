@@ -10,8 +10,7 @@
  * @param object patterns: Imported @freesewing/pattern-info
  */
 const testPatternConfig = (design, pattern, expect, models, patterns) => {
-
-  it('Metadata:' , () => true)
+  it('Metadata:', () => true)
   it(`  - 'name' should match package name`, () => {
     expect(pattern.config.name).to.equal(design)
   })
@@ -35,7 +34,9 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     expect(['pattern', 'block'].indexOf(pattern.config.type)).to.not.equal(-1)
   })
   it(`  - 'department' should be one of menswear, womenswear, unisex, or accessories`, () => {
-    expect(['menswear', 'womenswear', 'unisex', 'accessories'].indexOf(pattern.config.department)).to.not.equal(-1)
+    expect(
+      ['menswear', 'womenswear', 'unisex', 'accessories'].indexOf(pattern.config.department)
+    ).to.not.equal(-1)
   })
   it(`  - 'difficulty' should be a number between 1 and 5`, () => {
     expect(typeof pattern.config.difficulty).to.equal('number')
@@ -43,11 +44,10 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     expect(pattern.config.difficulty < 6).to.be.true
   })
 
-
   /*
    *  Ensure optiongroup structure and content
    */
-  it('Option groups:' , () => true)
+  it('Option groups:', () => true)
   for (let group in pattern.config.optionGroups) {
     for (let option of pattern.config.optionGroups[group]) {
       if (typeof option === 'string') {
@@ -56,7 +56,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
         })
       } else {
         for (let subgroup in option) {
-          it(`  Subgroup: ${subgroup}` , () => true)
+          it(`  Subgroup: ${subgroup}`, () => true)
           for (let suboption of option[subgroup]) {
             it(`    - '${suboption}' should be a valid option`, () => {
               expect(pattern.config.options[suboption]).to.exist
@@ -67,8 +67,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     }
   }
 
-
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1) {
     /*
      *  Ensure pattern is listed as being for breasts or not
      */
@@ -84,14 +83,15 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       expect(result).to.be.true
     })
 
-
     /*
      *  Ensure required measurements are known measurements
      */
-    it('Required measurements:' , () => true)
+    it('Required measurements:', () => true)
     for (let measurement of pattern.config.measurements) {
       it(`  - '${measurement}' should be a known measurement`, () => {
-        expect(models.measurements[breasts ? 'womenswear' : 'menswear'].indexOf(measurement)).to.not.equal(-1)
+        expect(
+          models.measurements[breasts ? 'womenswear' : 'menswear'].indexOf(measurement)
+        ).to.not.equal(-1)
       })
     }
   }
@@ -99,7 +99,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   /*
    *  Test validity of the pattern's options
    */
-  it('Pattern options:' , () => true)
+  it('Pattern options:', () => true)
   for (let name in pattern.config.options) {
     let option = pattern.config.options[name]
     let type = typeof option
@@ -115,8 +115,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.pct).to.be.true
       })
-    }
-    else if (type === 'object' && typeof option.deg !== 'undefined') {
+    } else if (type === 'object' && typeof option.deg !== 'undefined') {
       // Degree option
       it(`  - '${name}' is a degree option`, () => true)
       it(`    - Should have a default value`, () => {
@@ -128,8 +127,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.deg).to.be.true
       })
-    }
-    else if (type === 'object' && typeof option.mm !== 'undefined') {
+    } else if (type === 'object' && typeof option.mm !== 'undefined') {
       // Millimeter option
       it(`  - '${name}' is a distance (mm) option`, () => true)
       it(`    - Should have a default value`, () => {
@@ -141,8 +139,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-    }
-    else if (type === 'object' && typeof option.bool !== 'undefined') {
+    } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)
       it(`    - Should have a default value`, () => {
@@ -151,8 +148,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Default value should be one of TRUE or FALSE`, () => {
         expect([true, false].indexOf(option.bool)).to.not.equal(-1)
       })
-    }
-    else if (type === 'object' && typeof option.count !== 'undefined') {
+    } else if (type === 'object' && typeof option.count !== 'undefined') {
       // Count option
       it(`  - '${name}' is a count option`, () => true)
       it(`    - Should have a default value`, () => {
@@ -164,8 +160,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.count).to.be.true
       })
-    }
-    else if (type === 'object' && typeof option.list !== 'undefined') {
+    } else if (type === 'object' && typeof option.list !== 'undefined') {
       // List option
       it(`  - '${name}' is a list option`, () => true)
       it(`    - Should have a default value`, () => {
@@ -177,12 +172,10 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Its options should be an array of numbers or strings`, () => {
         for (let o of option.list) expect(['number', 'string'].indexOf(typeof o)).to.not.equal(-1)
       })
-    }
-    else if (type === 'number') {
+    } else if (type === 'number') {
       // Static number
       return true
-    }
-    else if (type === 'string') {
+    } else if (type === 'string') {
       // Static string
       return true
     }

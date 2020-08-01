@@ -52,3 +52,5 @@ usernameTitle: Please choose your username
 username: Username
 accountIsInactive: Your account is inactive
 accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
+reloadAccount: Reload account
+reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.

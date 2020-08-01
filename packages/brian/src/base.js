@@ -1,9 +1,8 @@
 import * as shared from './shared'
 
-export default part => {
+export default (part) => {
   let {
     units,
-    debug,
     measurements,
     options,
     store,
@@ -21,55 +20,39 @@ export default part => {
 
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
-  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neckCircumference)
-  points.cbHips = new Point(0, measurements.hpsToHipsBack)
-  points.cbWaist = new Point(0, points.cbHips.y - measurements.naturalWaistToHip)
+  points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
+  points.cbWaist = new Point(0, measurements.hpsToWaistBack)
+  points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
-  // Shoulder point using new shoulderSlope measurement
-  points.shoulder = utils
-    .circlesIntersect(
-      points.cbHps,
-      measurements.shoulderToShoulder / 2,
-      points.cbHips,
-      measurements.shoulderSlope,
-      'y'
-    )
-    .shift()
-  if (points.shoulder.y < points.cbHps.y) {
-    // Shoulder should never be higher than HPS
-    points.shoulder = utils.beamIntersectsY(points.shoulder, points.cbHips, points.cbHps.y)
-  } else {
-    // Take shoulder slope reduction into account
-    points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
-  }
-
+  // Shoulder line
+  points.neck = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
+  points.hps = points.neck.clone() // We started using HPS in many measurements
+  // Shoulder point using shoulderSlope degree measurement
+  points.shoulder = utils.beamsIntersect(
+    points.hps,
+    points.hps.shift(measurements.shoulderSlope * -1, 100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
+    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
+  )
+  // Determine armhole depth and cbShoulder independent of shoulder slope reduction
   points.cbShoulder = new Point(0, points.shoulder.y)
   points.cbArmhole = new Point(
     0,
-    points.cbShoulder.y +
-      (measurements.shoulderToShoulder * options.shoulderSlopeReduction) / 2 +
-      measurements.bicepsCircumference * (1 + options.bicepsEase) * options.armholeDepthFactor
+    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
   )
+
+  // Now take shoulder slope reduction into account
+  points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
+  // Shoulder should never be higher than HPS
+  if (points.shoulder.y < points.cbHps.y) points.shoulder = new Point(points.shoulder.x, 0)
+
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
-  points.armhole = new Point(
-    (measurements.chestCircumference * (1 + options.chestEase)) / 4,
-    points.cbArmhole.y
-  )
+  points.armhole = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbArmhole.y)
   points.waist = new Point(points.armhole.x, points.cbWaist.y)
   points.hips = new Point(points.armhole.x, points.cbHips.y)
   points.hem = new Point(points.armhole.x, points.cbHem.y)
-
-  // Shoulder line
-  points.neck = new Point(
-    (measurements.neckCircumference * (1 + options.collarEase)) / options.collarFactor,
-    0
-  )
-  points.shoulder = new Point(
-    measurements.shoulderToShoulder / 2 + store.get('shoulderEase'),
-    points.cbShoulder.y
-  )
 
   // Armhhole
   points.armholePitch = new Point(
@@ -113,7 +96,7 @@ export default part => {
 
   // Fit collar
   points.cfNeck = points.neck.rotate(-90, new Point(0, 0))
-  let target = measurements.neckCircumference * (1 + options.collarEase)
+  let target = measurements.neck * (1 + options.collarEase)
   let delta = 0
   let run = 0
   do {
@@ -135,18 +118,6 @@ export default part => {
     delta = paths.neckOpening.length() * 2 - target
   } while (Math.abs(delta) > 1 && options.brianFitCollar && run < 10)
   delete paths.neckOpening
-  if (options.brianFitCollar) {
-    debug({
-      style: 'success',
-      label: '🏁 Collar fitted',
-      msg: `Target was ${units(target)}, delta of ${units(delta)} reached in ${run} attempts.`
-    })
-  } else
-    debug({
-      style: 'warning',
-      label: '🚫 Not fittingcollar',
-      msg: '(in Brian)'
-    })
 
   // Anchor point for sampling
   points.gridAnchor = points.cbHem

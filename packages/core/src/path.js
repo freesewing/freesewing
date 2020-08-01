@@ -11,45 +11,72 @@ import {
   round
 } from './utils'
 
-function Path() {
+function Path(debug = false) {
   this.render = true
   this.topLeft = false
   this.bottomRight = false
   this.attributes = new Attributes()
   this.ops = []
+  Object.defineProperty(this, 'debug', { value: debug, configurable: true })
+}
+
+/** Adds the raise method for a path not created through the proxy **/
+Path.prototype.withRaise = function (raise = false) {
+  if (raise) Object.defineProperty(this, 'raise', { value: raise })
+
+  return this
 }
 
 /** Chainable way to set the render property */
-Path.prototype.setRender = function(render = true) {
+Path.prototype.setRender = function (render = true) {
   if (render) this.render = true
   else this.render = false
+  if (this.debug) this.raise.debug('Setting `Path.render` to ' + (render ? '`true`' : '`false`'))
 
   return this
 }
 
 /** Adds a move operation to Point to */
-Path.prototype.move = function(to) {
+Path.prototype.move = function (to) {
+  if (this.debug && to instanceof Point !== true)
+    this.raise.warning('Called `Path.rotate(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'move', to })
 
   return this
 }
 
 /** Adds a line operation to Point to */
-Path.prototype.line = function(to) {
+Path.prototype.line = function (to) {
+  if (this.debug && to instanceof Point !== true)
+    this.raise.warning('Called `Path.line(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'line', to })
 
   return this
 }
 
 /** Adds a curve operation via cp1 & cp2 to Point to */
-Path.prototype.curve = function(cp1, cp2, to) {
+Path.prototype.curve = function (cp1, cp2, to) {
+  if (this.debug) {
+    if (to instanceof Point !== true)
+      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `to` is not a `Point` object')
+    if (cp1 instanceof Point !== true)
+      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp1` is not a `Point` object')
+    if (cp2 instanceof Point !== true)
+      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp2` is not a `Point` object')
+  }
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
   return this
 }
 
 /** Adds a curve operation without cp1 via cp2 to Point to */
-Path.prototype._curve = function(cp2, to) {
+Path.prototype._curve = function (cp2, to) {
+  if (this.debug) {
+    if (to instanceof Point !== true)
+      this.raise.warning('Called `Path._curve(cp2, to)` but `to` is not a `Point` object')
+    if (cp2 instanceof Point !== true)
+      this.raise.warning('Called `Path._curve(cp2, to)` but `cp2` is not a `Point` object')
+  }
   let cp1 = this.ops.slice(-1).pop().to
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -57,7 +84,13 @@ Path.prototype._curve = function(cp2, to) {
 }
 
 /** Adds a curve operation via cp1 with no cp2 to Point to */
-Path.prototype.curve_ = function(cp1, to) {
+Path.prototype.curve_ = function (cp1, to) {
+  if (this.debug) {
+    if (to instanceof Point !== true)
+      this.raise.warning('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
+    if (cp1 instanceof Point !== true)
+      this.raise.warning('Called `Path.curve_(cp1, to)` but `cp2` is not a `Point` object')
+  }
   let cp2 = to.copy()
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -65,21 +98,27 @@ Path.prototype.curve_ = function(cp1, to) {
 }
 
 /** Adds a close operation */
-Path.prototype.close = function() {
+Path.prototype.close = function () {
   this.ops.push({ type: 'close' })
 
   return this
 }
 
 /** Adds a noop operation */
-Path.prototype.noop = function(id = false) {
+Path.prototype.noop = function (id = false) {
   this.ops.push({ type: 'noop', id })
 
   return this
 }
 
 /** Replace a noop operation with the ops from path */
-Path.prototype.insop = function(noopId, path) {
+Path.prototype.insop = function (noopId, path) {
+  if (this.debug) {
+    if (!noopId)
+      this.raise.warning('Called `Path.insop(noopId, path)` but `noopId` is undefined or false')
+    if (path instanceof Path !== true)
+      this.raise.warning('Called `Path.insop(noopId, path) but `path` is not a `Path` object')
+  }
   let newPath = this.clone()
   for (let i in newPath.ops) {
     if (newPath.ops[i].type === 'noop' && newPath.ops[i].id === noopId) {
@@ -94,7 +133,21 @@ Path.prototype.insop = function(noopId, path) {
 }
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
-Path.prototype.attr = function(name, value, overwrite = false) {
+Path.prototype.attr = function (name, value, overwrite = false) {
+  if (this.debug) {
+    if (!name)
+      this.raise.warning(
+        'Called `Path.attr(name, value, overwrite=false)` but `name` is undefined or false'
+      )
+    if (typeof value === 'undefined')
+      this.raise.warning(
+        'Called `Path.attr(name, value, overwrite=false)` but `value` is undefined'
+      )
+    if (overwrite)
+      this.raise.debug(
+        `Overwriting \`Path.attribute.${name}\` with ${value} (was: ${this.attributes.get(name)})`
+      )
+  }
   if (overwrite) this.attributes.set(name, value)
   else this.attributes.add(name, value)
 
@@ -102,7 +155,7 @@ Path.prototype.attr = function(name, value, overwrite = false) {
 }
 
 /** Returns SVG pathstring for this path */
-Path.prototype.asPathstring = function() {
+Path.prototype.asPathstring = function () {
   let d = ''
   for (let op of this.ops) {
     switch (op.type) {
@@ -125,12 +178,14 @@ Path.prototype.asPathstring = function() {
 }
 
 /** Returns offset of this path as a new path */
-Path.prototype.offset = function(distance) {
-  return pathOffset(this, distance)
+Path.prototype.offset = function (distance) {
+  if (typeof distance !== 'number')
+    this.raise.error('Called `Path.offset(distance)` but `distance` is not a number')
+  return pathOffset(this, distance, this.raise)
 }
 
 /** Returns the length of this path */
-Path.prototype.length = function() {
+Path.prototype.length = function () {
   let current, start
   let length = 0
   for (let i in this.ops) {
@@ -156,12 +211,16 @@ Path.prototype.length = function() {
 }
 
 /** Returns the startpoint of the path */
-Path.prototype.start = function() {
+Path.prototype.start = function () {
+  if (this.ops.length < 1 || typeof this.ops[0].to === 'undefined')
+    this.raise.error('Called `Path.start()` but this path has no drawing operations')
   return this.ops[0].to
 }
 
 /** Returns the endpoint of the path */
-Path.prototype.end = function() {
+Path.prototype.end = function () {
+  if (this.ops.length < 1)
+    this.raise.error('Called `Path.end()` but this path has no drawing operations')
   let op = this.ops[this.ops.length - 1]
 
   if (op.type === 'close') return this.start()
@@ -169,7 +228,7 @@ Path.prototype.end = function() {
 }
 
 /** Finds the bounding box of a path */
-Path.prototype.boundary = function() {
+Path.prototype.boundary = function () {
   if (this.topLeft) return this // Cached
 
   let current
@@ -235,9 +294,8 @@ Path.prototype.boundary = function() {
 }
 
 /** Returns a deep copy of this */
-Path.prototype.clone = function() {
-  let clone = new Path()
-  clone.render = this.render
+Path.prototype.clone = function () {
+  let clone = new Path(this.debug).withRaise(this.raise).setRender(this.render)
   if (this.topLeft) clone.topLeft = this.topLeft.clone()
   else clone.topLeft = false
   if (this.bottomRight) clone.bottomRight = this.bottomRight.clone()
@@ -262,12 +320,14 @@ Path.prototype.clone = function() {
 }
 
 /** Joins this with that path, closes them if wanted */
-Path.prototype.join = function(that, closed = false) {
-  return joinPaths([this, that], closed)
+Path.prototype.join = function (that, closed = false) {
+  if (that instanceof Path !== true)
+    this.raise.error('Called `Path.join(that)` but `that` is not a `Path` object')
+  return joinPaths([this, that], closed, this.raise)
 }
 
 /** Offsets a path by distance */
-function pathOffset(path, distance) {
+function pathOffset(path, distance, raise) {
   let offset = []
   let current
   let start = false
@@ -275,20 +335,22 @@ function pathOffset(path, distance) {
   for (let i in path.ops) {
     let op = path.ops[i]
     if (op.type === 'line') {
-      let segment = offsetLine(current, op.to, distance)
+      let segment = offsetLine(current, op.to, distance, path.debug, path.raise)
       if (segment) offset.push(segment)
     } else if (op.type === 'curve') {
       // We need to avoid a control point sitting on top of start or end
       // because that will break the offset in bezier-js
       let cp1, cp2
       if (current.sitsRoughlyOn(op.cp1)) {
-        cp1 = new Path()
+        cp1 = new Path(path.debug)
+          .withRaise(path.raise)
           .move(current)
           .curve(op.cp1, op.cp2, op.to)
           .shiftAlong(2)
       } else cp1 = op.cp1
       if (op.cp2.sitsRoughlyOn(op.to)) {
-        cp2 = new Path()
+        cp2 = new Path(path.debug)
+          .withRaise(path.raise)
           .move(op.to)
           .curve(op.cp2, op.cp1, current)
           .shiftAlong(2)
@@ -299,26 +361,30 @@ function pathOffset(path, distance) {
         { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       )
-      for (let bezier of b.offset(distance)) offset.push(asPath(bezier))
+      for (let bezier of b.offset(distance)) offset.push(asPath(bezier, path.debug, path.raise))
     } else if (op.type === 'close') closed = true
     if (op.to) current = op.to
     if (!start) start = current
   }
 
-  return joinPaths(offset, closed)
+  return joinPaths(offset, closed, raise)
 }
 
 /** Offsets a line by distance */
-function offsetLine(from, to, distance) {
+function offsetLine(from, to, distance, debug = false, raise = false) {
   if (from.x === to.x && from.y === to.y) return false
   let angle = from.angle(to) - 90
 
-  return new Path().move(from.shift(angle, distance)).line(to.shift(angle, distance))
+  return new Path(debug)
+    .withRaise(raise)
+    .move(from.shift(angle, distance))
+    .line(to.shift(angle, distance))
 }
 
 /** Converts a bezier-js instance to a path */
-function asPath(bezier) {
-  return new Path()
+function asPath(bezier, debug = false, raise = false) {
+  return new Path(debug)
+    .withRaise(raise)
     .move(new Point(bezier.points[0].x, bezier.points[0].y))
     .curve(
       new Point(bezier.points[1].x, bezier.points[1].y),
@@ -328,8 +394,8 @@ function asPath(bezier) {
 }
 
 /** Joins path segments together into one path */
-function joinPaths(paths, closed = false) {
-  let joint = new Path().move(paths[0].ops[0].to)
+function joinPaths(paths, closed = false, raise = false) {
+  let joint = new Path(paths[0].debug).withRaise(paths[0].raise).move(paths[0].ops[0].to)
   let current
   for (let p of paths) {
     for (let op of p.ops) {
@@ -339,7 +405,9 @@ function joinPaths(paths, closed = false) {
         // We're using sitsRoughlyOn here to avoid miniscule line segments
         if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to)
       } else {
-        throw new Error('Cannot join a closed paths with another')
+        let err = 'Cannot join a closed path with another'
+        joint.raise.error(err)
+        throw new Error(err)
       }
       if (op.to) current = op.to
     }
@@ -350,7 +418,9 @@ function joinPaths(paths, closed = false) {
 }
 
 /** Returns a point that lies at distance along this */
-Path.prototype.shiftAlong = function(distance) {
+Path.prototype.shiftAlong = function (distance) {
+  if (typeof distance !== 'number')
+    this.raise.error('Called `Path.shiftAlong(distance)` but `distance` is not a number')
   let len = 0
   let current
   for (let i in this.ops) {
@@ -372,13 +442,15 @@ Path.prototype.shiftAlong = function(distance) {
     }
     current = op.to
   }
-  throw new Error(
-    `Error in Path.shiftAlong(): Ran out of path to shift along. Distance requested was ${distance}, path length is${this.length()}.`
+  this.raise.error(
+    `Called \`Path.shiftAlong(distance)\` with a \`distance\` of \`${distance}\` but \`Path.length()\` is only \`${this.length()}\``
   )
 }
 
 /** Returns a point that lies at fraction along this */
-Path.prototype.shiftFractionAlong = function(fraction) {
+Path.prototype.shiftFractionAlong = function (fraction) {
+  if (typeof fraction !== 'number')
+    this.raise.error('Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number')
   return this.shiftAlong(this.length() * fraction)
 }
 
@@ -401,7 +473,7 @@ function shiftAlongBezier(distance, bezier) {
 }
 
 /** Returns a point at the top edge of a bounding box of this */
-Path.prototype.bbox = function() {
+Path.prototype.bbox = function () {
   let bbs = []
   let current
   for (let i in this.ops) {
@@ -481,22 +553,25 @@ function bbbbox(boxes) {
 }
 
 /** Returns a reversed version of this */
-Path.prototype.reverse = function() {
+Path.prototype.reverse = function () {
   let sections = []
   let current
   let closed = false
   for (let i in this.ops) {
     let op = this.ops[i]
     if (op.type === 'line') {
-      if (!op.to.sitsOn(current)) sections.push(new Path().move(op.to).line(current))
+      if (!op.to.sitsOn(current))
+        sections.push(new Path(this.debug).withRaise(this.raise).move(op.to).line(current))
     } else if (op.type === 'curve') {
-      sections.push(new Path().move(op.to).curve(op.cp2, op.cp1, current))
+      sections.push(
+        new Path(this.debug).withRaise(this.raise).move(op.to).curve(op.cp2, op.cp1, current)
+      )
     } else if (op.type === 'close') {
       closed = true
     }
     if (op.to) current = op.to
   }
-  let rev = new Path().move(current)
+  let rev = new Path(this.debug).withRaise(this.raise).move(current)
   for (let section of sections.reverse()) rev.ops.push(section.ops[1])
   if (closed) rev.close()
 
@@ -504,7 +579,7 @@ Path.prototype.reverse = function() {
 }
 
 /** Returns the point at an edge of this path */
-Path.prototype.edge = function(side) {
+Path.prototype.edge = function (side) {
   this.boundary()
   if (side === 'topLeft') return this.topLeft
   else if (side === 'bottomRight') return this.bottomRight
@@ -532,6 +607,7 @@ Path.prototype.edge = function(side) {
       return curveEdge(curve, side)
     }
   }
+  this.raise.error(`Unable to find \`Path.edge(side)\` for side ${side}`)
 }
 
 function edgeCurveAsBezier(op) {
@@ -544,7 +620,7 @@ function edgeCurveAsBezier(op) {
 }
 
 /** Divides a path into atomic paths */
-Path.prototype.divide = function() {
+Path.prototype.divide = function () {
   let paths = []
   let current, start
   for (let i in this.ops) {
@@ -552,11 +628,14 @@ Path.prototype.divide = function() {
     if (op.type === 'move') {
       start = op.to
     } else if (op.type === 'line') {
-      if (!op.to.sitsRoughlyOn(current)) paths.push(new Path().move(current).line(op.to))
+      if (!op.to.sitsRoughlyOn(current))
+        paths.push(new Path(this.debug).withRaise(this.raise).move(current).line(op.to))
     } else if (op.type === 'curve') {
-      paths.push(new Path().move(current).curve(op.cp1, op.cp2, op.to))
+      paths.push(
+        new Path(this.debug).withRaise(this.raise).move(current).curve(op.cp1, op.cp2, op.to)
+      )
     } else if (op.type === 'close') {
-      paths.push(new Path().move(current).line(start))
+      paths.push(new Path(this.debug).withRaise(this.raise).move(current).line(start))
     }
     if (op.to) current = op.to
   }
@@ -565,18 +644,21 @@ Path.prototype.divide = function() {
 }
 
 /** Finds intersections between this path and an X value */
-Path.prototype.intersectsX = function(x) {
+Path.prototype.intersectsX = function (x) {
+  if (typeof x !== 'number')
+    this.raise.error('Called `Path.intersectsX(x)` but `x` is not a number')
   return this.intersectsAxis(x, 'x')
 }
 
 /** Finds intersections between this path and an Y value */
-Path.prototype.intersectsY = function(y) {
+Path.prototype.intersectsY = function (y) {
+  if (typeof y !== 'number')
+    this.raise.error('Called `Path.intersectsX(y)` but `y` is not a number')
   return this.intersectsAxis(y, 'y')
 }
 
 /** Finds intersections between this path and a X or Y value */
-Path.prototype.intersectsAxis = function(val = false, mode) {
-  if (val === false) throw new Error('Path.intersects[X-Y] requires an value as parameter')
+Path.prototype.intersectsAxis = function (val = false, mode) {
   let intersections = []
   let lineStart = mode === 'x' ? new Point(val, -100000) : new Point(-10000, val)
   let lineEnd = mode === 'x' ? new Point(val, 100000) : new Point(100000, val)
@@ -605,9 +687,9 @@ Path.prototype.intersectsAxis = function(val = false, mode) {
 }
 
 /** Finds intersections between this path and another path */
-Path.prototype.intersects = function(path) {
+Path.prototype.intersects = function (path) {
   if (this === path)
-    throw new Error('Calculating intersections between two identical paths is bad idea')
+    this.raise.error('You called Path.intersects(path)` but `path` and `this` are the same object')
   let intersections = []
   for (let pathA of this.divide()) {
     for (let pathB of path.divide()) {
@@ -676,7 +758,9 @@ function addIntersectionsToArray(candidates, intersections) {
 }
 
 /** Splits path on point, and retuns both halves */
-Path.prototype.split = function(point) {
+Path.prototype.split = function (point) {
+  if (point instanceof Point !== true)
+    this.raise.error('Called `Path.split(point)` but `point` is not a `Point` object')
   let divided = this.divide()
   let firstHalf = false
   let secondHalf = false
@@ -685,10 +769,12 @@ Path.prototype.split = function(point) {
     if (path.ops[1].type === 'line') {
       if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
-        firstHalf.push(new Path().move(path.ops[0].to).line(point))
+        firstHalf.push(new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(point))
         pi++
         secondHalf = divided.slice(pi)
-        secondHalf.unshift(new Path().move(point).line(path.ops[1].to))
+        secondHalf.unshift(
+          new Path(this.debug).withRaise(this.raise).move(point).line(path.ops[1].to)
+        )
       }
     } else if (path.ops[1].type === 'curve') {
       let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
@@ -702,7 +788,8 @@ Path.prototype.split = function(point) {
         let split = curve.split(t)
         firstHalf = divided.slice(0, pi)
         firstHalf.push(
-          new Path()
+          new Path(this.debug)
+            .withRaise(this.raise)
             .move(new Point(split.left.points[0].x, split.left.points[0].y))
             .curve(
               new Point(split.left.points[1].x, split.left.points[1].y),
@@ -713,7 +800,8 @@ Path.prototype.split = function(point) {
         pi++
         secondHalf = divided.slice(pi)
         secondHalf.unshift(
-          new Path()
+          new Path(this.debug)
+            .withRaise(this.raise)
             .move(new Point(split.right.points[0].x, split.right.points[0].y))
             .curve(
               new Point(split.right.points[1].x, split.right.points[1].y),
@@ -724,14 +812,14 @@ Path.prototype.split = function(point) {
       }
     }
   }
-  if (firstHalf) firstHalf = joinPaths(firstHalf)
-  if (secondHalf) secondHalf = joinPaths(secondHalf)
+  if (firstHalf) firstHalf = joinPaths(firstHalf, false, this.raise)
+  if (secondHalf) secondHalf = joinPaths(secondHalf, false, this.raise)
 
   return [firstHalf, secondHalf]
 }
 
 /** Removes self-intersections (overlap) from the path */
-Path.prototype.trim = function() {
+Path.prototype.trim = function () {
   let chunks = this.divide()
   for (let i = 0; i < chunks.length; i++) {
     let firstCandidate = parseInt(i) + 2
@@ -742,7 +830,7 @@ Path.prototype.trim = function() {
         let intersection = intersections.pop()
         let trimmedStart = chunks.slice(0, i)
         let trimmedEnd = chunks.slice(parseInt(j) + 1)
-        let glue = new Path()
+        let glue = new Path(this.debug).withRaise(this.raise)
         let first = true
         for (let k of [i, j]) {
           let ops = chunks[k].ops
@@ -770,9 +858,9 @@ Path.prototype.trim = function() {
           first = false
         }
         let joint
-        if (trimmedStart.length > 0) joint = joinPaths(trimmedStart).join(glue)
+        if (trimmedStart.length > 0) joint = joinPaths(trimmedStart, false, this.raise).join(glue)
         else joint = glue
-        if (trimmedEnd.length > 0) joint = joint.join(joinPaths(trimmedEnd))
+        if (trimmedEnd.length > 0) joint = joint.join(joinPaths(trimmedEnd, false, this.raise))
 
         return joint.trim()
       }
@@ -783,7 +871,13 @@ Path.prototype.trim = function() {
 }
 
 /** Applies a path translate transform */
-Path.prototype.translate = function(x, y) {
+Path.prototype.translate = function (x, y) {
+  if (this.debug) {
+    if (typeof x !== 'number')
+      this.raise.warning('Called `Path.translate(x, y)` but `x` is not a number')
+    if (typeof y !== 'number')
+      this.raise.warning('Called `Path.translate(x, y)` but `y` is not a number')
+  }
   let clone = this.clone()
   for (let op of clone.ops) {
     if (op.type !== 'close') {

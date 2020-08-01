@@ -24,7 +24,7 @@ export default (part) => {
 
   // Neck cutout
   points.closureTop = new Point(
-    measurements.chestCircumference * options.frontOverlap * -1,
+    measurements.chest * options.frontOverlap * -1,
     points.waist.y * options.necklineDrop
   )
   if (options.frontStyle === 'classic')
@@ -96,10 +96,10 @@ export default (part) => {
     )
     points.splitDartHemRight = points.splitDartHemLeft.shift(0, shift)
     points.lastButton = new Point(0, points.closureBottom.y)
-  } else {
+  } else if (options.hemStyle === 'rounded') {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
     // Draw rounded hem
-    let radius = measurements.hipsCircumference * options.hemRadius
+    let radius = measurements.hips * options.hemRadius
     // Avoid radius extending beyond the dart
     if (radius > points.closureTop.dx(points.dartHemLeft))
       radius = points.closureTop.dx(points.dartHemLeft)
@@ -111,6 +111,9 @@ export default (part) => {
       prefix: 'round'
     })
     points.lastButton = new Point(0, points.roundStart.y)
+  } else {
+    points.closureBottom = new Point(points.closureTop.x, points.hem.y)
+    points.lastButton = new Point(0, points.hem.y)
   }
 
   // Add dart start and end point regardless of style or front or back
@@ -118,7 +121,7 @@ export default (part) => {
   points.dartEnd = options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight
 
   // Pockets
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let pwvh = pwh / Math.cos(utils.deg2rad(options.pocketAngle)) // Pocket welt vertical height
 
@@ -224,11 +227,14 @@ export default (part) => {
     paths.hemBase = new Path()
       .move(points.dartEnd)
       .curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
-  } else {
+  } else if (options.hemStyle === 'rounded') {
     paths.saBase
       .line(points.roundStart)
       .curve(points.roundCp1, points.roundCp2, points.roundEnd)
       .line(points.dartHemLeft)
+    paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
+  } else {
+    paths.saBase.line(points.closureBottom).line(points.dartHemLeft)
     paths.hemBase = new Path().move(points.dartEnd).line(points.hem)
   }
   paths.dart = dartPath(part)

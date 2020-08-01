@@ -14,6 +14,8 @@ export default (part) => {
     macro
   } = part.shorthand()
 
+  points.anchor = points.hps.clone()
+
   // Seamline
   paths.saBase = shared.saBase('back', points, Path)
   paths.saBase.render = false

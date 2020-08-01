@@ -1,4 +1,4 @@
-export const sharedDimensions = function(part, s) {
+export const sharedDimensions = function (part, s) {
   let { macro, Point, points, sa } = part.shorthand()
 
   if (s === 'front') {
@@ -80,7 +80,7 @@ export const sharedDimensions = function(part, s) {
   })
 }
 
-export const draftRibbing = function(part, length) {
+export const draftRibbing = function (part, length) {
   let {
     store,
     measurements,
@@ -95,8 +95,12 @@ export const draftRibbing = function(part, length) {
     macro,
     units
   } = part.shorthand()
-  if (typeof store.get('ribbingHeight') === 'undefined') {
-    store.set('ribbingHeight', measurements.hpsToHipsBack * options.ribbingHeight)
+  // Don't run this every time, except when sampling
+  if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
+    store.set(
+      'ribbingHeight',
+      (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+    )
   }
   let height = store.get('ribbingHeight')
   let gap = 25

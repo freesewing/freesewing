@@ -1,0 +1,48 @@
+{
+  "name": "titan-example",
+  "homepage": "https://freesewing.github.io/titan",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@freesewing/components": "latest",
+    "@freesewing/core": "latest",
+    "@freesewing/css-theme": "latest",
+    "@freesewing/i18n": "latest",
+    "@freesewing/models": "latest",
+    "@freesewing/mui-theme": "latest",
+    "@freesewing/pattern-info": "latest",
+    "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-theme": "latest",
+    "@freesewing/plugin-i18n": "latest",
+    "@freesewing/plugin-svgattr": "latest",
+    "@freesewing/utils": "latest",
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/lab": "^v4.0.0-alpha.25",
+    "pattern": "link:..",
+    "prismjs": "1.17.1",
+    "react": "^16.9",
+    "react-dom": "^16.9",
+    "react-scripts": "^3.1.1",
+    "file-saver": "^2.0.2",
+    "typeface-roboto-condensed": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "1.1.1"
+  }
+}

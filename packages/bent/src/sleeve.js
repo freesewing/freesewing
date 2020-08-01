@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Path, paths, points, store, options } = part.shorthand()
 
   function draftSleeve(part, tweak) {
@@ -15,7 +15,7 @@ export default function(part) {
     points.boxBottomLeft = points.boxBottomRight.flipX()
     points.armCenter = points.top.shift(
       -90,
-      measurements.bicepsCircumference * (1 + options.bicepsEase) * options.sleevecapHeight * tweak
+      measurements.biceps * (1 + options.bicepsEase) * options.sleevecapHeight * tweak
     )
     points.armRight = points.armCenter.shift(0, points.boxTopRight.x)
     points.armLeft = points.armRight.flipX()
@@ -47,7 +47,7 @@ export default function(part) {
     points.usWristRight = points.tsWristRight.clone()
 
     // Shift wrist left to the exact wrist width
-    let wristWidth = measurements.wristCircumference * (1 + options.cuffEase)
+    let wristWidth = measurements.wrist * (1 + options.cuffEase)
     let topWrist = wristWidth / 2 + factor / 5
     let underWrist = wristWidth / 2 - factor / 5
     points.tsWristLeftHelperBottom = points.tsWristRight.shift(180, topWrist / 2)

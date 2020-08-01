@@ -1,21 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
 
-const Emblem = props => (
+const Emblem = (props) => (
   <React.Fragment>
-    <span className="emb">{props.t1}</span>
-    <span className="lem">{props.t2}</span>
+    <span className="emb">{props.t1 || 'Free'}</span>
+    <span className="lem">{props.t2 || 'Sewing'}</span>
   </React.Fragment>
-);
+)
 
-Emblem.propTypes = {
-  t1: PropTypes.string,
-  t2: PropTypes.string
-};
-
-Emblem.defaultProps = {
-  t1: "Free",
-  t2: "Sewing"
-};
-
-export default Emblem;
+export default Emblem

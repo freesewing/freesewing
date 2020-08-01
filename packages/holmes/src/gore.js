@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     points,
@@ -15,7 +15,7 @@ export default function(part) {
   // Design pattern here
 
   //Radius of the head
-  let headRadius = measurements.headCircumference / 2 / Math.PI
+  let headRadius = measurements.head / 2 / Math.PI
 
   points.p0 = new Point(0, 0)
 
@@ -23,7 +23,7 @@ export default function(part) {
     from: points.p0,
     radius: headRadius,
     goreNumber: options.goreNumber,
-    extraLength: ((options.lengthRatio - 0.5) * measurements.headCircumference) / 2,
+    extraLength: ((options.lengthRatio - 0.5) * measurements.head) / 2,
     prefix: 'gore_',
     render: true
   })

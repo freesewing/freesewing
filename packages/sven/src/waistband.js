@@ -1,12 +1,11 @@
 import { draftRibbing } from './shared'
 
-export default part => {
+export default (part) => {
   let { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
 
   if (!options.ribbing) return part
 
-  let length =
-    measurements.hipsCircumference * (1 + options.hipsEase) * (1 - options.ribbingStretch)
+  let length = measurements.hips * (1 + options.hipsEase) * (1 - options.ribbingStretch)
   draftRibbing(part, length)
 
   // Complete pattern?

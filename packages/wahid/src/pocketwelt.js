@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     points,
     Point,
@@ -11,7 +11,7 @@ export default part => {
     paperless
   } = part.shorthand()
 
-  let pw = measurements.hipsCircumference * options.pocketWidth // Pocket width
+  let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
 
   points.topLeft = new Point(0, 0)

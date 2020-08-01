@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     measurements,
     sa,
@@ -14,8 +14,8 @@ export default part => {
     options
   } = part.shorthand()
 
-  const draft = function(tweak = 1) {
-    let length = measurements.neckCircumference * (1 + options.collarEase) * tweak
+  const draft = function (tweak = 1) {
+    let length = measurements.neck * (1 + options.collarEase) * tweak
     let width = options.collarStandWidth
     let half = length / 2
     let bend = options.collarStandBend * -1
@@ -73,7 +73,7 @@ export default part => {
       .curve(points.leftBottomHingeCp2, points.bottomMidCp1, points.bottomMid)
       .length()
 
-    return len * 2 - measurements.neckCircumference * (1 + options.collarEase)
+    return len * 2 - measurements.neck * (1 + options.collarEase)
   }
 
   let delta, tweak, run

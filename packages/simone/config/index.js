@@ -108,20 +108,20 @@ export default {
     ]
   },
   measurements: [
-    'bicepsCircumference',
+    'biceps',
     'bustSpan',
-    'chestCircumference',
+    'chest',
     'highBust',
     'hpsToBust',
-    'hpsToHipsBack',
-    'naturalWaist',
-    'naturalWaistToHip',
-    'neckCircumference',
+    'hpsToWaistBack',
+    'waist',
+    'waistToHips',
+    'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'hipsCircumference',
+    'hips',
     'shoulderToWrist',
-    'wristCircumference'
+    'wrist'
   ],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase'],
@@ -147,6 +147,7 @@ export default {
     // Constants
     collarFactor: 5,
     minimalDartShaping: 5,
+    brianFitCollar: false,
     brianFitSleeve: true,
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,

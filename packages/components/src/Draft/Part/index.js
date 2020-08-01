@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Path from '../Path'
 import Point from '../Point'
 import Snippet from '../Snippet'
@@ -134,14 +133,6 @@ const Part = (props) => {
       {focus}
     </g>
   )
-}
-
-Part.propTypes = {
-  part: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
-  paperless: PropTypes.bool.isRequired,
-  design: PropTypes.bool.isRequired
 }
 
 export default Part

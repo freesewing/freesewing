@@ -17,7 +17,7 @@ export const list = [
   'carlton',
   'cathrin',
   'florent',
-  'fu',
+  'florence',
   'holmes',
   'huey',
   'hugo',
@@ -30,6 +30,7 @@ export const list = [
   'sven',
   'tamiko',
   'theo',
+  'titan',
   'trayvon',
   'wahid',
   'waralee'
@@ -43,7 +44,7 @@ export const withoutBreasts = [
   'bruce',
   'carlton',
   'florent',
-  'fu',
+  'florence',
   'holmes',
   'huey',
   'hugo',
@@ -55,6 +56,7 @@ export const withoutBreasts = [
   'sven',
   'tamiko',
   'theo',
+  'titan',
   'trayvon',
   'wahid',
   'waralee'

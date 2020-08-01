@@ -6,6 +6,13 @@ export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+/** Checks for a valid coordinate value **/
+export function isCoord(value) {
+  return value === value // NaN does not equal itself
+    ? typeof value === 'number'
+    : false
+}
+
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`
@@ -126,7 +133,7 @@ export function beamIntersectsY(from, to, y) {
 
 /** Convert value in mm to cm or imperial units */
 export function units(value, to = 'metric') {
-  if (to === 'imperial') return round(value / 25.4) + '"'
+  if (to === 'imperial') return round(value / 25.4) + '&quot;'
   else return round(value / 10) + 'cm'
 }
 
@@ -319,10 +326,10 @@ export function round(value) {
   return Math.round(value * 1e2) / 1e2
 }
 
-export function sampleStyle(run, runs) {
-  let hue = (run - 1) * (330 / runs)
-
-  return `stroke: hsl(${hue}, 100%, 35%);`
+export function sampleStyle(run, runs, styles = false) {
+  return styles && Array.isArray(styles) && styles.length > 0
+    ? styles[run % styles.length]
+    : `stroke: hsl(${(run - 1) * (330 / runs)}, 100%, 35%);`
 }
 
 export function deg2rad(degrees) {

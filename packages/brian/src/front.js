@@ -18,7 +18,7 @@ export default (part) => {
   } = part.shorthand()
 
   // Cut arm a bit deeper at the front
-  let deeper = measurements.chestCircumference * options.frontArmholeDeeper
+  let deeper = measurements.chest * options.frontArmholeDeeper
   points.armholePitchCp1.x -= deeper
   points.armholePitch.x -= deeper
   points.armholePitchCp2.x -= deeper

@@ -1,8 +1,8 @@
-export default function(part) {
+export default function (part) {
   let { Point, points, Path, paths, measurements, options } = part.shorthand()
 
-  let width = measurements.headCircumference * options.widthRatio
-  let length = measurements.headCircumference * options.lengthRatio
+  let width = measurements.head * options.widthRatio
+  let length = measurements.head * options.lengthRatio
 
   points.topLeft = new Point(width / -2, points.top.y - (width / 2 - points.right.x))
   points.topRight = points.topLeft.shift(0, width)

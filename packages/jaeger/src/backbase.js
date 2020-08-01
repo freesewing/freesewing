@@ -1,6 +1,6 @@
 import { calculateRatios, backSideBoundary } from './shared'
 
-export default function(part) {
+export default function (part) {
   calculateRatios(part)
   let { store, points, measurements, options, Point, paths, Path } = part.shorthand()
 
@@ -11,7 +11,7 @@ export default function(part) {
   points.cbChest = new Point(0, points.armholePitchCp1.y)
   if (options.centerBackDart > 0) {
     points.cbChestCp1 = points.cbChest.shiftFractionTowards(points.cbNeck, 0.5)
-    points.cbNeck = points.cbNeck.shift(0, measurements.chestCircumference * options.centerBackDart)
+    points.cbNeck = points.cbNeck.shift(0, measurements.chest * options.centerBackDart)
   }
   points.cbChestCp2 = points.cbChest.shift(-90, points.cbChest.dy(points.cbWaist) / 3)
   points.cbWaist = points.cbWaist.shift(
@@ -53,10 +53,7 @@ export default function(part) {
   // Store length of back collar
   store.set(
     'backCollarLength',
-    new Path()
-      .move(points.cbNeck)
-      ._curve(points.neckCp2, points.neck)
-      .length()
+    new Path().move(points.cbNeck)._curve(points.neckCp2, points.neck).length()
   )
 
   // Paths

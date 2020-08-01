@@ -1,6 +1,6 @@
 import draftRingSector from './shared'
 
-export default function(part) {
+export default function (part) {
   let {
     utils,
     store,
@@ -20,8 +20,8 @@ export default function(part) {
   // Circumference of the top of the waistband, calculated from the waistbandPosition option
   store.set(
     'topCircumference',
-    options.waistbandPosition * measurements.hipsCircumference +
-      (1 - options.waistbandPosition) * measurements.naturalWaist
+    options.waistbandPosition * measurements.hips +
+      (1 - options.waistbandPosition) * measurements.waist
   )
   // Circumference of the bottom of the waistband
   if (options.waistbandShape === 'curved') {
@@ -29,8 +29,8 @@ export default function(part) {
     store.set(
       'bottomCircumference',
       store.get('topCircumference') +
-        (options.waistbandWidth * (measurements.hipsCircumference - measurements.naturalWaist)) /
-          measurements.naturalWaistToHip
+        (options.waistbandWidth * (measurements.hips - measurements.waist)) /
+          measurements.waistToHips
     )
   } else {
     // If the waistband is straight, the bottom circumference is the same as the top circumference
@@ -46,7 +46,7 @@ export default function(part) {
   // The length from the top of the skirt to the floor (max length available)
   store.set(
     'fullLength',
-    measurements.naturalWaistToFloor - measurements.naturalWaistToHip * options.waistbandPosition
+    measurements.waistToFloor - measurements.waistToHips * options.waistbandPosition
   )
 
   let radiusWaist, an

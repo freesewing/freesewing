@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.5.1-1",
+  "version": "2.7.2",
   "description": "A collection of utilities shared across freesewing frontend projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -44,6 +44,7 @@
     "defaultSa/*",
     "formatImperial/*",
     "formatMm/*",
+    "isDegMeasurement/*",
     "measurementAsMm/*",
     "measurementDiffers/*",
     "neckstimate/*",
@@ -61,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=8.0.0",

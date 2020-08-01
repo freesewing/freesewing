@@ -13,7 +13,7 @@ export default {
     fit: ['collarEase', 'adjustmentRibbon'],
     style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle']
   },
-  measurements: ['neckCircumference'],
+  measurements: ['neck'],
   dependencies: {},
   inject: {
     bow1: 'base',
