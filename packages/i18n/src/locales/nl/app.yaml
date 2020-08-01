@@ -34,7 +34,6 @@ chooseAPerson: Kies een persoon
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
-colourYes: "Kleurenfoto: Inhoud is beschikbaar in het Nederlands"
 community: Gemeenschap
 configureLayout: Configureer layout
 configureYourDraft: Configureer je patroontekening
@@ -45,7 +44,7 @@ continue: Doorgaan
 copiedToClipboard: Gekopieerd naar het klembord
 copy: Kopiëren
 couldYouTranslateThis: Kan jij dit vertalen?
-countModelsLackingForPattern: "{count} van je mensen hebben niet de nodige maten op {pattern} te tekenen"
+countModelsLackingForPattern: '{count} van je mensen hebben niet de nodige maten op {pattern} te tekenen'
 created: Aangemaakt
 custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
@@ -70,16 +69,16 @@ drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
-emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
+emailWorksToo: "Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook"
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 export: Exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
 faq: Vaak gestelde vragen
-fieldRemoved: "{field} verwijderd"
-fieldSaved: "{field} opgeslagen"
+fieldRemoved: '{field} verwijderd'
+fieldSaved: '{field} opgeslagen'
 filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
-forgotLoginInstructions: 'Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
+forgotLoginInstructions: "Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop"
 freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
 github: GitHub
@@ -93,7 +92,6 @@ howCanWeHelpYou: Hoe kunnen we je helpen?
 howToTakeMeasurements: Leer hoe je maten neemt
 i18n: Internationalisering
 imperialUnits: Imperiale (Engelse) eenheden (duim)
-info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
 joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die graag helpen. Dus wees niet verlegen en kom langs voor een praatje.
@@ -110,7 +108,6 @@ metadata: Metadata
 metricUnits: Metrische eenheden (cm)
 person: Persoon
 people: Mensen
-monochromeNo: "Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands"
 nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
 addThing: Voeg {thing} toe
@@ -128,7 +125,7 @@ oneMoreThing: En dan nog dit
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
-otherThing: "Andere {thing}"
+otherThing: 'Andere {thing}'
 ourPatrons: Onze mecenassen
 patron-2: Poeder aap
 patron-4: Eerste stuurman
@@ -154,7 +151,7 @@ remove: Verwijderen
 removeThing: '{thing} verwijderen'
 reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
-resendActivationEmailMessage: 'Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen.'
+resendActivationEmailMessage: "Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen."
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
@@ -196,7 +193,7 @@ txt-footer: Gemaakt door joost & vrijwilligers<br /> met de financiële steun va
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
-txt-tiers: "FreeSewing draait op een vrijwillig subscriptiemodel"
+txt-tiers: 'FreeSewing draait op een vrijwillig subscriptiemodel'
 unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 update: Bijwerken
@@ -239,7 +236,7 @@ noModel: Je hebt (nog) geen maten toegevoegd. FreeSewing can naaipatronen op maa
 noModel2: Dus het eerste dat je zou moeten doen is een persoon toevoegen, en je lintmeter bovenhalen.
 noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
 noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
-usePatternMeasurements: "Gebruik de maten van het originele patroon"
+usePatternMeasurements: 'Gebruik de maten van het originele patroon'
 createReplica: Creëer een replica
 showDetails: Toon details
 hideDetails: Verberg details
@@ -264,7 +261,7 @@ oneMomentPlease: Een momentje alsjeblieft
 loadingMagic: De magie is aan het laden
 estimate: Schatting
 actual: Feitelijk
-weEstimateYM2B: "We schatten uw {measurement} op ongeveer:"
+weEstimateYM2B: 'We schatten uw {measurement} op ongeveer:'
 exportAsData: Exporteer als data
 availablePatterns: Beschikbare patronen
 browseCollection: Grasduin door de collectie
@@ -316,4 +313,7 @@ updateNotes-txt: Hou de notities die je bij je patroon maakt up to date
 franceWarning: Let op, Franse gebruikers
 franceWarning-txt: Verschillende Franse e-mailproviders- onder andere free.fr, laposte.net, orange.fr en sfr.fr- houden onze e-mails regelmatig tegen.
 emailNotReceived: Indien je de activatiemail niet ontvangt, laat ons dan iets weten zodat we je kunnen helpen.
-
+error: Error
+info: Info
+warning: Waarschuwing
+debug: Debug

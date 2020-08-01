@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Estilo francés (sin costuras)
 buttonholePlacketWidth:
   title: Anchura de la vista de los ojales
-  description: Anchura de la vista de los ojales.
+  description: Width of the buttonhole placket.
 buttons:
   title: Número de botones
   description: Número de botones delanteros
@@ -109,10 +109,10 @@ hemStyle:
     slashed: Recortado
 seperateButtonholePlacket:
   title: Tapeta de ojal separada
-  description: Diseñar una tapeta separada para ojales.
+  description: Draft a separate buttonhole placket.
 seperateButtonPlacket:
   title: Tapeta de botones separada
-  description: Redactar una tapeta de botones separada.
+  description: Draft a separate button placket
 sleevePlacketLength:
   title: Longitud de la vista de la manga
   description: La longitud de la vista de la manga.
