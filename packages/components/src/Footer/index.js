@@ -5,28 +5,28 @@ import IconButton from '@material-ui/core/IconButton'
 import Icon from '../Icon'
 import { version } from '../../package.json'
 
-const Footer = props => {
+const Footer = ({ links = false, home = '/', patrons = null, language = 'en' }) => {
   const icons = {
     gitter: 'https://gitter.im/freesewing/chat',
     twitter: 'https://twitter.com/freesewing_org',
     github: 'https://github.com/freesewing',
     instagram: 'https://instagram.com/freesewing_org'
   }
-  const links =
-    props.links === false
-      ? {
-          left: {
-            blog: 'https://' + props.language + '.freesewing.org/blog',
-            aboutFreesewing: 'https://' + props.language + '.freesewing.org/docs/about',
-            faq: 'https://' + props.language + '.freesewing.org/faq'
-          },
-          right: {
-            becomeAPatron: 'https://' + props.language + '.freesewing.org/patrons/join',
-            makerDocs: 'https://' + props.language + '.freesewing.org/docs/',
-            devDocs: 'https://' + props.language + '.freesewing.dev/'
-          }
-        }
-      : props.links
+
+  if (!links)
+    links = {
+      left: {
+        blog: 'https://' + language + '.freesewing.org/blog',
+        aboutFreesewing: 'https://' + language + '.freesewing.org/docs/about',
+        faq: 'https://' + language + '.freesewing.org/faq'
+      },
+      right: {
+        becomeAPatron: 'https://' + language + '.freesewing.org/patrons/join',
+        makerDocs: 'https://' + language + '.freesewing.org/docs/',
+        devDocs: 'https://' + language + '.freesewing.dev/'
+      }
+    }
+
   const styles = {
     container: {
       display: 'flex',
@@ -35,13 +35,16 @@ const Footer = props => {
       justifyContent: 'center'
     }
   }
+
+  return <p>This is a footer</p>
+
   return (
     <footer>
-      <a href={props.home} data-test="logo">
+      <a href={home} data-test="logo">
         <Logo size={101} />
       </a>
       <p data-test="social">
-        {Object.keys(icons).map(i => (
+        {Object.keys(icons).map((i) => (
           <IconButton href={icons[i]} className={i} title={i} key={i}>
             <Icon icon={i} />
           </IconButton>
@@ -50,9 +53,9 @@ const Footer = props => {
       <p data-test="text">
         <FormattedHTMLMessage id="app.txt-footer" />:
       </p>
-      {props.patrons}
+      {patrons}
       <div style={styles.container}>
-        {Object.keys(links).map(l => {
+        {Object.keys(links).map((l) => {
           let items = []
           for (let i of Object.keys(links[l])) {
             items.push(
@@ -77,9 +80,4 @@ const Footer = props => {
   )
 }
 
-Footer.defaultProps = {
-  home: '/',
-  links: false,
-  patrons: null
-}
 export default Footer

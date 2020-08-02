@@ -29,7 +29,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "open-color": "1.6.3"
+    "open-color": "^1.7.0"
   },
   "devDependencies": {},
   "files": [
@@ -42,7 +42,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=5"
+    "node": ">=12.0.0",
+    "npm": ">=6"
   }
 }

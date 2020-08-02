@@ -114,7 +114,7 @@ const Workbench = ({
       json: {
         type: 'button',
         onClick: () => saveDisplay('json'),
-        text: 'JSON',
+        text: ['JSON'],
         active: display === 'json' ? true : false
       }
     },
@@ -122,7 +122,7 @@ const Workbench = ({
       version: {
         type: 'link',
         href: 'https://github.com/freesewing/freesewing/releases',
-        text: 'v' + freesewing.version
+        text: ['v' + freesewing.version]
       },
       language: {
         type: 'button',

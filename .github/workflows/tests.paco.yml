@@ -1,0 +1,31 @@
+name: Unit tests - Paco
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: cd packages/paco && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies
+        run: 'cd packages/paco && npm install @freesewing/core@^2.7.2 @freesewing/plugin-bundle@^2.7.2 @freesewing/models@2.7.2 @freesewing/pattern-info@2.7.2 mocha chai'
+        env:
+          CI: true
+      - name: Build pattern
+        run: cd packages/paco && npm run build
+      - name: Run pattern unit tests
+        run: cd packages/paco && npm run testci

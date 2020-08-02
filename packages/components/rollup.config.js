@@ -1,7 +1,7 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-import json from 'rollup-plugin-json'
-import minify from 'rollup-plugin-babel-minify'
+import babel from '@rollup/plugin-babel'
+import resolve from '@rollup/plugin-node-resolve'
+import json from '@rollup/plugin-json'
+import { terser } from 'rollup-plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { name, version, description, author, license } from './package.json'
 import components from './src/index.js'
@@ -12,20 +12,21 @@ const createConfig = (component, module) => {
     output: {
       file: `./${component}/index` + (module ? '.mjs' : '.js'),
       format: module ? 'es' : 'cjs',
-      sourcemap: true
+      sourcemap: true,
+      exports: 'default'
     },
     plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        babelHelpers: 'bundled'
+      }),
       peerDepsExternal(),
       resolve({ modulesOnly: true }),
       json(),
-      babel({
-        exclude: 'node_modules/**',
-        plugins: ['@babel/plugin-proposal-object-rest-spread']
-      }),
-      minify({
-        comments: false,
-        sourceMap: true,
-        banner: `/**\n * ${name}/${component} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      terser({
+        output: {
+          preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+        }
       })
     ]
   }
@@ -33,7 +34,7 @@ const createConfig = (component, module) => {
 
 const config = []
 // When developing, you can use this to only rebuild the components you're working on
-let dev = false
+let dev = true
 let only = ['Workbench']
 for (let component of components) {
   if (!dev || only.indexOf(component) !== -1) config.push(createConfig(component, false))

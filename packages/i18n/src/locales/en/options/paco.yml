@@ -1,0 +1,9 @@
+heelEase:
+  title: Heel ease
+  description: The amount of ease at your heel (when stepping into the leg)
+frontPockets:
+  title: Front pockets
+  description: Whether or not to add front pockets on the side seam
+backPockets:
+  title: Back pockets
+  description: Whether or not to add welt pockets to the back

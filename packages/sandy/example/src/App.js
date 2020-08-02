@@ -11,10 +11,12 @@ const App = (props) => {
   let config = instance.config
 
   // You can use this to add transations
+  /*
   let translations = {
     JSON: 'JSON',
     someOtherString: 'Some other string that needs translation'
   }
+  */
 
   return (
     <Workbench
@@ -22,7 +24,7 @@ const App = (props) => {
       Pattern={Pattern}
       config={config}
       userLanguage="en"
-      translations={translations}
+      //translations={translations}
     />
   )
 }

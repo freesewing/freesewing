@@ -37,8 +37,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "bezier-js": "^2.4.6",
-    "bin-pack": "1.0.2",
+    "bezier-js": "^2.6.1",
+    "bin-pack": "^1.0.2",
     "hooks": "^0.3.2"
   },
   "devDependencies": {},
@@ -52,7 +52,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=5"
+    "node": ">=12.0.0",
+    "npm": ">=6"
   }
 }

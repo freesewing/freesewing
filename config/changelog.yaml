@@ -1,5 +1,8 @@
 Unreleased:
   date:
+  Added:
+    paco:
+      - Initial release for Paco, a pattern for summer pants
   Fixed:
     core:
       - Fixed wrong return value in debug message from Path

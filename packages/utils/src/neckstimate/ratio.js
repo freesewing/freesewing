@@ -36,6 +36,7 @@ export default {
   crossSeam: 0.6,
   crossSeamFront: 0.3,
   head: 0.35,
+  heel: 0.25,
   inseam: 0.25,
   knee: 0.65,
   seat: 0.6,

@@ -8,6 +8,12 @@
 
 - Fixed wrong return value in debug message from Path
 
+### paco
+
+#### Added
+
+- Initial release for Paco, a pattern for summer pants
+
 ## 2.7.1 (2020-07-24)
 
 ### aaron
