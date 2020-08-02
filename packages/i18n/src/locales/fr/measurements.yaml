@@ -1,33 +1,36 @@
 ---
-acrossBack: Largeur du dos (obsolète)
-ankleCircumference: Tour de cheville
-bicepsCircumference: Tour de bras
+ankle: Ankle circumference
+biceps: Biceps circumference
 bustFront: Largeur de poitrine avant
 bustSpan: Écart de poitrine
-chestCircumference: Tour de poitrine
-headCircumference: Tour de tête
-highBust: Tour de buste supérieur
+chest: Chest circumference
+crossSeam: Cross seam
+crossSeamFront: Cross seam front
+head: Head circumference
 highBustFront: Largeur de buste supérieur
-hpsToBust: Hauteur de poitrine
-hpsToHipsBack: Longueur dos depuis l'épaule
-hpsToHipsFront: Longueur devant depuis l'épaule
-hipsCircumference: Tour des petites hanches
-hipsToUpperLeg: Hauteur hanche bassin
+highBust: Tour de buste supérieur
+hips: Hips circumference
+hpsToBust: Longueur épaule-poitrine
+hpsToWaistBack: Longueur épaule-taille dos
+hpsToWaistFront: Longueur épaule-taille devant
 inseam: Longueur d'entrejambe
-kneeCircumference: Tour de genou
-naturalWaist: Tour de taille
-naturalWaistToFloor: Hauteur de taille
-naturalWaistToHip: Hauteur taille hanche
-naturalWaistToKnee: Hauteur taille genou
-naturalWaistToSeat: Hauteur taille bassin
-naturalWaistToUnderbust: Hauteur taille sous-poitrine
-neckCircumference: Tour de cou
-seatCircumference: Tour de bassin
-seatDepth: Hauteur d'assise
+knee: Knee circumference
+neck: Neck circumference
+seat: Seat circumference
+seatBack: Seat back
+crotchDepth: Crotch depth
 shoulderSlope: Pente d'épaule
 shoulderToElbow: Longueur épaule au coude
 shoulderToShoulder: Largeur d'épaules
 shoulderToWrist: Longueur de bras
 underbust: Tour sous poitrine
-upperLegCircumference: Tour de cuisse
-wristCircumference: Tour de poignet
+upperLeg: Upper leg circumference
+waist: Waist circumference
+waistBack: Waist back
+waistToFloor: Hauteur de taille
+waistToHips: Hauteur taille hanche
+waistToKnee: Hauteur taille genou
+waistToSeat: Hauteur taille bassin
+waistToUnderbust: Hauteur taille sous-poitrine
+waistToUpperLeg: Hauteur taille bassin
+wrist: Wrist circumference

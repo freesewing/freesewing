@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Französischer Stil (nahtlos)
 buttonholePlacketWidth:
   title: Knopflochleiste Breite
-  description: Breite der Knopflochleiste.
+  description: Width of the buttonhole placket.
 buttons:
   title: Anzahl der Tasten
   description: Die Anzahl der Tasten am vorderen Verschluss.
@@ -109,10 +109,10 @@ hemStyle:
     slashed: Abgerundeter Saum
 seperateButtonholePlacket:
   title: Separate Knopflochleiste
-  description: Zeichnen Sie eine separate Knopflochleiste.
+  description: Draft a separate buttonhole placket.
 seperateButtonPlacket:
   title: Separate Knopfleiste
-  description: Zeichnen Sie eine separate Knopfleiste.
+  description: Draft a separate button placket
 sleevePlacketLength:
   title: Ärmelknopflänge
   description: Die Länge der Ärmelleiste.

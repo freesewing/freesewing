@@ -53,3 +53,5 @@ usernameTitle: Por favor, elija su nombre de usuario
 username: Nombre de usuario
 accountIsInactive: Tu cuenta está inactiva
 accountNeedsActivation: Antes de poder iniciar sesión, necesitas activar tu cuenta. Por favor, revisa tu bandeja de entrada para ver el correo electrónico de registro y haz clic en el enlace en él.
+reloadAccount: Reload account
+reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.

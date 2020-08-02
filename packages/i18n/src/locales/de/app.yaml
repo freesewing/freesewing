@@ -12,7 +12,7 @@ applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
 askForHelp: Nach Hilfe fragen
 automatic: Automatisch
-averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
+averagePeopleDoNotExist: 'Durchschnittliche Menschen existieren nicht'
 awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
@@ -34,7 +34,6 @@ chooseAPerson: Person wählen
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
-colourYes: "Farbbild: Inhalt ist auf Deutsch verfügbar"
 community: Community
 configureLayout: Layout konfigurieren
 configureYourDraft: Konfigurieren Sie Ihren Entwurf
@@ -45,7 +44,7 @@ continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: "{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen."
+countModelsLackingForPattern: '{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen.'
 created: Erstellt
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
@@ -75,8 +74,8 @@ enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
-fieldRemoved: "{field} entfernt"
-fieldSaved: "{field} gespeichert"
+fieldRemoved: '{field} entfernt'
+fieldSaved: '{field} gespeichert'
 filterByPattern: Nach Muster filtern
 filterPatterns: Filtern der Schnittmuster
 forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
@@ -93,7 +92,6 @@ howCanWeHelpYou: Wie können wir Dir helfen
 howToTakeMeasurements: Richtiges Maß nehmen
 i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
-info: Informationen
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, die gerne helfen. Also sei nicht schüchtern und schau bei einem Chat vorbei.
@@ -110,7 +108,6 @@ metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
 person: Person
 people: Personen
-monochromeNo: "Monochromes Bild: Inhalt ist nicht in Deutsch verfügbar"
 nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
 name: Name
 addThing: '{thing} hinzufügen'
@@ -128,7 +125,7 @@ oneMoreThing: Und zum Schluss
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
-otherThing: "Andere {thing}"
+otherThing: 'Andere {thing}'
 ourPatrons: Unsere Gönner
 patron-2: Pulveraffe
 patron-4: Steuermann
@@ -195,8 +192,8 @@ twitter: Twitter
 txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
-txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
-txt-tiers: "FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt"
+txt-tier8: 'Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!'
+txt-tiers: 'FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt'
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 updated: Aktualisierte
 update: Aktualisieren
@@ -237,9 +234,9 @@ noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster 
 modelFirst: Beginne damit Masse hinzuzufügen
 noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
 noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
-noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
-noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-usePatternMeasurements: "Verwende dir Mass des Originalnähmusters"
+noUserBrowsingTitle: 'Sie können nicht nur alle Benutzer durchsuchen'
+noUserBrowsingText: 'Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?'
+usePatternMeasurements: 'Verwende dir Mass des Originalnähmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
 hideDetails: Details ausblenden
@@ -264,7 +261,7 @@ oneMomentPlease: Einen Moment bitte
 loadingMagic: Wir laden die Magie
 estimate: Schätzung
 actual: Aktuell
-weEstimateYM2B: "Wir schätzen, dein {measurement} auf etwa:"
+weEstimateYM2B: 'Wir schätzen, dein {measurement} auf etwa:'
 exportAsData: Als Daten exportieren
 availablePatterns: Verfügbare Schnittmuster
 browseCollection: Sammlung durchsuchen
@@ -316,4 +313,7 @@ updateNotes-txt: Aktualisiere die Notizen, die du zu deinem Schnittmuster führs
 franceWarning: Vorsicht Nutzende in Frankreich
 franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu verwerfen.
 emailNotReceived: Wenn Sie die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
-
+error: Error
+info: Informationen
+warning: Warning
+debug: Debug
