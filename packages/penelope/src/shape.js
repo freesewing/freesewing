@@ -202,7 +202,7 @@ function BuildMainShape(part, frontPart) {
   // Turn the path in the other direction, to comply with the counter-clockwise guideline
   if( null == waistPath ) {throw 'waistPath is null!'}
   if( null == waistPathSA ) {throw 'waistPathSA is null!'}
-  
+
   paths.waist = waistPath.reverse().setRender(false)
   paths.waistSA = waistPathSA.reverse().setRender(false)
 
