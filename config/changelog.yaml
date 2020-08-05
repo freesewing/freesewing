@@ -6,6 +6,8 @@ Unreleased:
   Fixed:
     core:
       - Fixed wrong return value in debug message from Path
+    benjamin:
+      - Fix for incorrect length of the ribbon
 
 2.7.1:
   date: 2020-07-24
