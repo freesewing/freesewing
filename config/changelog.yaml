@@ -4,10 +4,14 @@ Unreleased:
     paco:
       - Initial release for Paco, a pattern for summer pants
   Fixed:
-    core:
-      - Fixed wrong return value in debug message from Path
     benjamin:
       - Fix for incorrect length of the ribbon
+
+2.7.2:
+  date: 2020-07-29
+  Fixed:
+    core:
+      - Fixed wrong return value in debug message from Path
 
 2.7.1:
   date: 2020-07-24
