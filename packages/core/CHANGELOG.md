@@ -1,5 +1,11 @@
 # Change log for: @freesewing/core
 
+## 2.7.2 (2020-07-29)
+
+### Fixed
+
+- Fixed wrong return value in debug message from Path
+
 ## 2.7.1 (2020-07-24)
 
 ### Added
