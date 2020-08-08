@@ -26,12 +26,6 @@ export default function (part) {
   for (const path in paths) delete paths[path]
   for (const snippet in snippets) delete snippets[snippet]
 
-  let welt = points.pocketLeft.dist(points.pocketRight) * options.weltFactor
-  points.topLeft = new Point(points.pocketBagWaistLeft.x, points.pocketLeft.y)
-  points.topRight = new Point(points.pocketBagWaistRight.x, points.topLeft.y)
-  points.bottomLeft = points.topLeft.shift(-90, welt * 2)
-  points.bottomRight = points.topRight.shift(-90, welt * 2)
-
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -39,27 +33,19 @@ export default function (part) {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr('class', 'fabric')
+    .attr('class', 'interfacing')
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.4)
     macro('title', {
       at: points.title,
-      nr: 5,
-      title: 'pocketWelt'
-    })
-    macro('grainline', {
-      from: points.topLeft.shift(0, 15),
-      to: points.bottomLeft.shift(0, 15)
+      nr: 6,
+      title: 'pocketWeltInterfacing'
     })
     macro('sprinkle', {
       snippet: 'bnotch',
       on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
     })
-
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
 
     if (paperless) {
     }

@@ -69,11 +69,28 @@ export default function (part) {
     paths.cut = new Path()
       .move(points.pocketLeft)
       .line(points.pocketRight)
-      .attr('class', 'lining dashed')
+      .attr('class', 'lining lashed')
     macro('sprinkle', {
       snippet: 'bnotch',
       on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
     })
+
+    if (sa) {
+      paths.sa = new Path()
+        .move(points.pocketBagBottomRight)
+        .line(points.pocketBagWaistRight)
+        .line(points.pocketBagWaistLeft)
+        .line(points.pocketBagBottomLeft)
+        .offset(sa)
+      paths.sa = new Path()
+        .move(points.pocketBagBottomRight)
+        .join(paths.sa)
+        .line(points.pocketBagBottomLeft)
+        .attr('class', 'lining sa')
+    }
+
+    if (paperless) {
+    }
   }
 
   return part

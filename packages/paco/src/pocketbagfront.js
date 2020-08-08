@@ -59,6 +59,24 @@ export default function (part) {
       snippet: 'notch',
       on: ['flapTopLeft', 'flapBottomLeft']
     })
+
+    if (sa) {
+      paths.sa = new Path()
+        .move(points.topRight)
+        .line(points.topLeft)
+        .line(points.flapBottomLeft)
+        ._curve(points.bottomCp1, points.bottom)
+        .line(points.bottomRight)
+        .offset(sa)
+      paths.sa = new Path()
+        .move(points.topRight)
+        .join(paths.sa)
+        .line(points.bottomRight)
+        .attr('class', 'lining sa')
+    }
+
+    if (paperless) {
+    }
   }
 
   return part

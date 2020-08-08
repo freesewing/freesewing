@@ -39,23 +39,33 @@ export default {
     'waistToSeat',
     'waistToUpperLeg'
   ],
-  parts: ['back', 'front', 'pocketBagFront', 'pocketBagBack', 'pocketWelt'],
+  parts: [
+    'back',
+    'front',
+    'pocketBagFront',
+    'pocketBagBack',
+    'pocketWelt',
+    'pocketWeltInterfacing'
+  ],
   inject: {
     back: 'titanBack',
     front: 'titanFront',
     pocketBagFront: 'front',
     pocketBagBack: 'back',
-    pocketWelt: 'pocketBagBack'
+    pocketWelt: 'pocketBagBack',
+    pocketWeltInterfacing: 'pocketWelt'
   },
   dependencies: {
     front: 'back',
     pocketBagFront: 'front',
     pocketBagBack: 'back',
-    pocketWelt: 'pocketBagBack'
+    pocketWelt: 'pocketBagBack',
+    pocketWeltInterfacing: 'pocketWelt'
   },
   hide: ['titanBack', 'titanFront'],
   options: {
     // Constants
+    titanPaperless: false,
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,

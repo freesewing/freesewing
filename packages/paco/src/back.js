@@ -145,17 +145,39 @@ export default function (part) {
       paths.pocket = new Path()
         .move(points.pocketLeft)
         .line(points.pocketRight)
-        .attr('class', 'farbic dashed')
+        .attr('class', 'farbic lashed')
       paths.pocketBag = new Path()
         .move(points.pocketBagWaistLeft)
         .line(points.pocketBagBottomLeft)
         .line(points.pocketBagBottomRight)
         .line(points.pocketBagWaistRight)
-        .attr('class', 'lining dashed')
+        .attr('class', 'lining lashed')
       macro('sprinkle', {
         snippet: 'bnotch',
         on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
       })
+    }
+
+    if (sa) {
+      let waistIn = points.styleWaistIn || points.waistIn
+      let hemOffset = options.elasticatedHem ? sa : 4 * sa
+      paths.sa = drawInseam()
+        .offset(sa)
+        .join(new Path().move(points.floorIn).line(points.floorOut).offset(hemOffset))
+        .join(drawOutseam().offset(sa).trim())
+        .join(
+          new Path()
+            .move(points.styleWaistOut)
+            .line(waistIn)
+            .line(points.crossSeamCurveStart)
+            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+            .offset(sa)
+        )
+        .close()
+        .attr('class', 'fabric sa')
+    }
+
+    if (paperless) {
     }
   }
 

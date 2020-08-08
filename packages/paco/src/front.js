@@ -170,17 +170,45 @@ export default function (part) {
         .line(points.topRight)
         .line(points.topLeft)
         .close()
-        .attr('class', 'lining dashed')
+        .attr('class', 'lining lashed')
       paths.pocketFlap = new Path()
         .move(points.pocketFlapTopIn)
         .line(points.flapTopLeft)
         .move(points.pocketFlapBottomIn)
         .line(points.flapBottomLeft)
-        .attr('class', 'fabric dashed')
+        .attr('class', 'fabric lashed')
       macro('sprinkle', {
         snippet: 'notch',
         on: ['flapTopLeft', 'flapBottomLeft', 'topLeft', 'topRight']
       })
+    }
+
+    if (sa) {
+      let waistIn = points.styleWaistIn || points.waistIn
+      let waistOut = points.styleWaistOut || points.waistOut
+      let hemSa = options.elasticatedHem ? sa : 4 * sa
+      paths.sa = drawOutseam()
+        .offset(sa)
+        .join(new Path().move(points.floorOut).line(points.floorIn).offset(hemSa))
+        .join(drawInseam().offset(sa))
+        .join(
+          new Path()
+            .move(points.fork)
+            .curve(
+              points.crotchSeamCurveCp1,
+              points.crotchSeamCurveCp2,
+              points.crotchSeamCurveStart
+            )
+            .line(waistIn)
+            .line(waistOut)
+            .offset(sa)
+            .trim()
+        )
+        .close()
+        .attr('class', 'fabric sa')
+    }
+
+    if (paperless) {
     }
   }
 
