@@ -68,14 +68,20 @@ export default function (part) {
     macro
   } = part.shorthand()
 
-  // Adapt bottom leg based on heel, heel ease, and ankle elastic width
+  // Adapt bottom leg based on heel and heel ease
   let quarterHeel = (measurements.heel * (1 + options.heelEase) * (1 - options.legBalance)) / 2
-  points.floorOut = points.floor.shift(180, quarterHeel).shift(90, options.ankleElastic)
-  points.floorIn = points.floor.shift(0, quarterHeel).shift(90, options.ankleElastic)
+  points.floorOut = points.floor.shift(180, quarterHeel)
+  points.floorIn = points.floor.shift(0, quarterHeel)
   points.kneeOut = points.knee.shift(180, quarterHeel)
   points.kneeOutCp1 = points.kneeOut
   points.kneeIn = points.knee.shift(0, quarterHeel)
   points.kneeInCp2 = points.kneeIn
+
+  // Shorter leg if we have an elasticated hem
+  if (options.elasticatedHem) {
+    for (const p of ['floor', 'floorIn', 'floorOut'])
+      points[p] = points[p].shift(90, options.ankleElastic)
+  }
 
   // Adapt waist so we can get these pants over our bum without a zipper
   let delta =
@@ -118,18 +124,65 @@ export default function (part) {
       points.pocketFlapBottomOut,
       options.frontPocketFlapSize
     )
+
+    points.flapTopLeft = points.pocketFlapTopOut.flipX(points.pocketFlapTopIn)
+    points.flapBottomLeft = points.pocketFlapBottomOut.flipX(points.pocketFlapBottomIn)
+    points.topLeft = utils.beamsIntersect(
+      points.flapBottomLeft,
+      points.flapTopLeft,
+      points.styleWaistOut,
+      points.styleWaistIn
+    )
+    points.topRight = points.topLeft.shiftFractionTowards(points.styleWaistIn, 0.6)
+    points.bottomRight = points.topRight
+      .shift(
+        points.flapTopLeft.angle(points.flapBottomLeft),
+        points.flapTopLeft.dist(points.flapBottomLeft) * 1.75
+      )
+      .rotate(5, points.topRight)
+    points.bottom = new Point(
+      points.flapBottomLeft.x + points.flapBottomLeft.dx(points.bottomRight) / 2,
+      points.bottomRight.y
+    )
+    points.bottomCp1 = new Point(points.flapBottomLeft.x, points.bottom.y)
+    points.bottomCp2 = utils.beamIntersectsY(points.topRight, points.bottomRight, points.bottom.y)
+    paths.pocket = new Path()
+      .move(points.topLeft)
+      .line(points.flapBottomLeft)
+      ._curve(points.bottomCp1, points.bottom)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .line(points.topLeft)
+      .close()
+      .attr('class', 'lining')
   }
 
   // Now draw the outline
   paths.seam = drawPath()
 
   if (complete) {
+    if (options.frontPockets) {
+      paths.pocket = new Path()
+        .move(points.topLeft)
+        .line(points.flapBottomLeft)
+        ._curve(points.bottomCp1, points.bottom)
+        .line(points.bottomRight)
+        .line(points.topRight)
+        .line(points.topLeft)
+        .close()
+        .attr('class', 'lining dashed')
+      paths.pocketFlap = new Path()
+        .move(points.pocketFlapTopIn)
+        .line(points.flapTopLeft)
+        .move(points.pocketFlapBottomIn)
+        .line(points.flapBottomLeft)
+        .attr('class', 'fabric dashed')
+      macro('sprinkle', {
+        snippet: 'notch',
+        on: ['flapTopLeft', 'flapBottomLeft', 'topLeft', 'topRight']
+      })
+    }
   }
 
-  //macro('ld', {
-  //  to: points.styleWaistIn,
-  //  from: points.styleWaistOut,
-  //  d: 15
-  //})
   return part
 }

@@ -11,7 +11,7 @@ export default {
   tags: ['bottom', 'basics', 'pants', 'trousers', 'casual'],
   optionGroups: {
     fit: ['seatEase', 'waistEase'],
-    style: ['waistHeight', 'lengthBonus', 'crotchDrop'],
+    style: ['waistHeight', 'lengthBonus', 'crotchDrop', 'elasticatedHem'],
     elastic: ['waistElastic', 'ankleElastic', 'heelEase'],
     pockets: ['frontPockets', 'backPockets'],
     advanced: [
@@ -39,15 +39,19 @@ export default {
     'waistToSeat',
     'waistToUpperLeg'
   ],
-  parts: ['back', 'front', 'pocketBagFront'],
+  parts: ['back', 'front', 'pocketBagFront', 'pocketBagBack', 'pocketWelt'],
   inject: {
     back: 'titanBack',
     front: 'titanFront',
-    pocketBagFront: 'front'
+    pocketBagFront: 'front',
+    pocketBagBack: 'back',
+    pocketWelt: 'pocketBagBack'
   },
   dependencies: {
     front: 'back',
-    pocketBagFront: 'front'
+    pocketBagFront: 'front',
+    pocketBagBack: 'back',
+    pocketWelt: 'pocketBagBack'
   },
   hide: ['titanBack', 'titanFront'],
   options: {
@@ -59,6 +63,10 @@ export default {
     fitKnee: false,
     frontPocketFlapSize: 25,
     frontPocketHeelRatio: 0.4,
+    backPocketWaistRatio: 0.4,
+    backPocketHeightRatio: 0.4,
+    backPocketWidthRatio: 0.37,
+    weltFactor: 0.15,
 
     // Fit
     waistEase: { pct: 2, min: 0, max: 10 },
@@ -68,6 +76,7 @@ export default {
     waistHeight: { pct: 5, min: 0, max: 100 },
     lengthBonus: { pct: 2, min: 0, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 10 },
+    elasticatedHem: { bool: true },
 
     // Elastic
     waistElastic: { mm: 35, min: 10, max: 60 },
@@ -76,7 +85,7 @@ export default {
 
     // Pockets
     frontPockets: { bool: true },
-    backPockets: { bool: false },
+    backPockets: { bool: true },
 
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },

@@ -59,12 +59,18 @@ export default function (part) {
 
   // Adapt bottom leg width based on heel & heel ease
   let quarterHeel = (measurements.heel * (1 + options.heelEase) * options.legBalance) / 2
-  points.floorOut = points.floor.shift(0, quarterHeel).shift(90, options.ankleElastic)
-  points.floorIn = points.floor.shift(180, quarterHeel).shift(90, options.ankleElastic)
+  points.floorOut = points.floor.shift(0, quarterHeel)
+  points.floorIn = points.floor.shift(180, quarterHeel)
   points.kneeOut = points.knee.shift(0, quarterHeel)
   points.kneeOutCp2 = points.kneeOut
   points.kneeIn = points.knee.shift(180, quarterHeel)
   points.kneeInCp1 = points.kneeIn
+
+  // Shorter leg if we have an elasticated hem
+  if (options.elasticatedHem) {
+    for (const p of ['floor', 'floorIn', 'floorOut'])
+      points[p] = points[p].shift(90, options.ankleElastic)
+  }
 
   // Adapt waist so we can get these pants over our bum without a zipper
   let delta =
@@ -99,6 +105,32 @@ export default function (part) {
     )
   }
 
+  // Add markings for the (optional) back pockets
+  if (options.backPockets) {
+    const pocketWidth = () =>
+      points.styleWaistOut.dist(points.styleWaistIn) * options.backPocketWidthRatio
+    let angle = points.styleWaistOut.angle(points.styleWaistIn)
+    points.pocketWaistCenter = points.styleWaistIn.shiftFractionTowards(
+      points.styleWaistOut,
+      options.backPocketWaistRatio
+    )
+    points.pocketCenter = points.pocketWaistCenter.shift(
+      angle + 90,
+      points.styleWaistIn.dist(points.crossSeamCurveStart) * options.backPocketHeightRatio
+    )
+    points.pocketLeft = points.pocketCenter.shift(angle, pocketWidth() / 2)
+    points.pocketRight = points.pocketLeft.rotate(180, points.pocketCenter)
+    // Pocket bag
+    points.pocketBagWaistLeft = points.pocketWaistCenter.shift(angle, pocketWidth() / 1.5)
+    points.pocketBagWaistRight = points.pocketBagWaistLeft.rotate(180, points.pocketWaistCenter)
+    points.pocketBagBottomCenter = points.pocketCenter.shift(angle + 90, pocketWidth() * 1.5)
+    points.pocketBagBottomLeft = points.pocketBagBottomCenter.shift(angle, pocketWidth() / 1.5)
+    points.pocketBagBottomRight = points.pocketBagBottomLeft.rotate(
+      180,
+      points.pocketBagBottomCenter
+    )
+  }
+
   // Now draw the outline
   paths.seam = drawPath()
 
@@ -108,11 +140,24 @@ export default function (part) {
   // Store top length
   store.set('backWaist', points.styleWaistIn.dist(points.styleWaistOut))
 
-  //macro('ld', {
-  //  from: points.styleWaistIn,
-  //  to: points.styleWaistOut,
-  //  d: 15
-  //})
+  if (complete) {
+    if (options.backPockets) {
+      paths.pocket = new Path()
+        .move(points.pocketLeft)
+        .line(points.pocketRight)
+        .attr('class', 'farbic dashed')
+      paths.pocketBag = new Path()
+        .move(points.pocketBagWaistLeft)
+        .line(points.pocketBagBottomLeft)
+        .line(points.pocketBagBottomRight)
+        .line(points.pocketBagWaistRight)
+        .attr('class', 'lining dashed')
+      macro('sprinkle', {
+        snippet: 'bnotch',
+        on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
+      })
+    }
+  }
 
   return part
 }

@@ -6,6 +6,8 @@ import config from '../config'
 import draftBack from './back'
 import draftFront from './front'
 import draftPocketBagFront from './pocketbagfront'
+import draftPocketBagBack from './pocketbagback'
+import draftPocketWelt from './pocketwelt'
 
 // Create design
 const Pattern = new freesewing.Design(config, plugins)
@@ -22,5 +24,7 @@ Pattern.prototype.draftTitanFront = function (part) {
 Pattern.prototype.draftFront = (part) => draftFront(part)
 Pattern.prototype.draftBack = (part) => draftBack(part)
 Pattern.prototype.draftPocketBagFront = (part) => draftPocketBagFront(part)
+Pattern.prototype.draftPocketBagBack = (part) => draftPocketBagBack(part)
+Pattern.prototype.draftPocketWelt = (part) => draftPocketWelt(part)
 
 export default Pattern
