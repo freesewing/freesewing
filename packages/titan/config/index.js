@@ -39,6 +39,7 @@ export default {
   parts: ['back', 'front'],
   options: {
     // Constants
+    titanPaperless: true,
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
