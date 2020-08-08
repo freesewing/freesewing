@@ -76,6 +76,36 @@ export default function (part) {
     }
 
     if (paperless) {
+      macro('hd', {
+        from: points.flapBottomLeft,
+        to: points.bottomRight,
+        y: points.bottomRight.y + 15 + sa
+      })
+      macro('hd', {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topLeft.y - 15 - sa
+      })
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + 15 + sa
+      })
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.topLeft,
+        x: points.topRight.x + 30 + sa
+      })
+      macro('ld', {
+        from: points.flapTopLeft,
+        to: points.topLeft,
+        d: 15 + sa
+      })
+      macro('ld', {
+        from: points.flapBottomLeft,
+        to: points.flapTopLeft,
+        d: 15 + sa
+      })
     }
   }
 

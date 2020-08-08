@@ -48,6 +48,21 @@ export default function (part) {
     })
 
     if (paperless) {
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + 15
+      })
+      macro('hd', {
+        from: points.pocketLeft,
+        to: points.pocketRight,
+        y: points.topLeft.y - 15
+      })
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.topRight,
+        x: points.topRight.x + 15
+      })
     }
   }
 
