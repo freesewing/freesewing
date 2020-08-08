@@ -10,9 +10,9 @@ export default {
   difficulty: 3,
   tags: ['bottom', 'basics', 'pants', 'trousers', 'casual'],
   optionGroups: {
-    fit: ['seatEase', 'waistEase'],
+    fit: ['seatEase', 'waistEase', 'heelEase'],
     style: ['waistHeight', 'lengthBonus', 'crotchDrop', 'elasticatedHem'],
-    elastic: ['waistElastic', 'ankleElastic', 'heelEase'],
+    elastic: ['waistElastic', 'ankleElastic'],
     pockets: ['frontPockets', 'backPockets'],
     advanced: [
       'crossSeamCurveStart',
