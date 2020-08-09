@@ -54,7 +54,7 @@ export default function (part) {
     points.title = points.pocketLeft.shiftFractionTowards(points.pocketBagBottomRight, 0.4)
     macro('title', {
       at: points.title,
-      nr: 4,
+      nr: 6,
       title: 'backPocketBag'
     })
     macro('cutonfold', {

@@ -42,6 +42,8 @@ export default {
   parts: [
     'back',
     'front',
+    'waistband',
+    'cuff',
     'pocketBagFront',
     'pocketBagBack',
     'pocketWelt',
@@ -84,7 +86,7 @@ export default {
 
     // Style
     waistHeight: { pct: 5, min: 0, max: 100 },
-    lengthBonus: { pct: 2, min: 0, max: 10 },
+    lengthBonus: { pct: 0, min: -15, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 10 },
     elasticatedHem: { bool: true },
 
@@ -95,7 +97,7 @@ export default {
 
     // Pockets
     frontPockets: { bool: true },
-    backPockets: { bool: true },
+    backPockets: { bool: false },
 
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },

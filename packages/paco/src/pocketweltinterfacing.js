@@ -39,7 +39,7 @@ export default function (part) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.4)
     macro('title', {
       at: points.title,
-      nr: 6,
+      nr: 8,
       title: 'pocketWeltInterfacing'
     })
     macro('sprinkle', {

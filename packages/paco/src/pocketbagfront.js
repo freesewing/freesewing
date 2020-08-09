@@ -47,7 +47,7 @@ export default function (part) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {
       at: points.title,
-      nr: 3,
+      nr: 5,
       title: 'pocketBag'
     })
     macro('cutonfold', {

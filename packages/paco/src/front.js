@@ -157,6 +157,10 @@ export default function (part) {
       .attr('class', 'lining')
   }
 
+  // Store top&ankle length
+  store.set('frontWaist', points.styleWaistIn.dist(points.styleWaistOut))
+  store.set('frontAnkle', points.floorIn.dist(points.floorOut))
+
   // Now draw the outline
   paths.seam = drawPath()
 

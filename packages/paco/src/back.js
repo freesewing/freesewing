@@ -137,8 +137,9 @@ export default function (part) {
   // Store inseam & outseam length
   store.set('pacoInseamBack', drawInseam().length())
   store.set('pacoOutseamBack', drawOutseam(true).length())
-  // Store top length
+  // Store top&ankle length
   store.set('backWaist', points.styleWaistIn.dist(points.styleWaistOut))
+  store.set('backAnkle', points.floorIn.dist(points.floorOut))
 
   if (complete) {
     if (options.backPockets) {

@@ -45,7 +45,7 @@ export default function (part) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.4)
     macro('title', {
       at: points.title,
-      nr: 5,
+      nr: 7,
       title: 'pocketWelt'
     })
     macro('grainline', {
