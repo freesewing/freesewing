@@ -3,11 +3,16 @@ Unreleased:
   Added:
     paco:
       - Initial release for Paco, a pattern for summer pants
+    components:
+      - Added Paco to LineDrawing component
   Fixed:
     benjamin:
       - Fix for incorrect length of the ribbon
     core:
       - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+  Removed:
+    components:
+      - Removed the `Footer` component
 
 2.7.2:
   date: 2020-07-29
