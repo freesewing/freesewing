@@ -47,6 +47,9 @@ hugo:
 jaeger:
   description: Jaeger is een sportief jasje met twee knopen en opgestikte zakken.
   title: Jaeger jasje
+paco:
+  description: Paco are casual yet stylish summer pants
+  title: Paco pants
 penelope:
   description: Penelope is een smalle rok, met of zonder split achteraan.
   title: Penelope potloodrok
