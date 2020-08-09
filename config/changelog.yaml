@@ -6,6 +6,8 @@ Unreleased:
   Fixed:
     benjamin:
       - Fix for incorrect length of the ribbon
+    core:
+      - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
 
 2.7.2:
   date: 2020-07-29
