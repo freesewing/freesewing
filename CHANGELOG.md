@@ -8,6 +8,22 @@
 
 - Fix for incorrect length of the ribbon
 
+### components
+
+#### Added
+
+- Added Paco to LineDrawing component
+
+#### Removed
+
+- Removed the `Footer` component
+
+### core
+
+#### Fixed
+
+- Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+
 ### paco
 
 #### Added
