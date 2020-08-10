@@ -1,5 +1,15 @@
 # Change log for: @freesewing/components
 
+## 2.8.0 (2020-08-10)
+
+### Added
+
+- Added Paco to LineDrawing component
+
+### Removed
+
+- Removed the `Footer` component
+
 ## 2.7.1 (2020-07-24)
 
 ### Added

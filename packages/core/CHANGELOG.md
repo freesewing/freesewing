@@ -1,5 +1,11 @@
 # Change log for: @freesewing/core
 
+## 2.8.0 (2020-08-10)
+
+### Fixed
+
+- Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+
 ## 2.7.2 (2020-07-29)
 
 ### Fixed

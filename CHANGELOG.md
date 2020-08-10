@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.8.0 (2020-08-10)
+
 ### benjamin
 
 #### Fixed
