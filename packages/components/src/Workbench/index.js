@@ -13,7 +13,6 @@ import DraftPattern from './DraftPattern'
 import Json from './Json'
 import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
-import Footer from '../Footer'
 import Measurements from './Measurements'
 
 const Workbench = ({
@@ -35,6 +34,9 @@ const Workbench = ({
   const [theme, setTheme] = useState('light')
   const [measurements, setMeasurements] = useState(null)
   const [svgExport, setSvgExport] = useState(false)
+
+  // Enable debug in Workbench
+  defaultGist.settings.debug = true
 
   useEffect(() => {
     let m = getMeasurements()
@@ -111,7 +113,7 @@ const Workbench = ({
       json: {
         type: 'button',
         onClick: () => saveDisplay('json'),
-        text: 'JSON',
+        text: ['JSON'],
         active: display === 'json' ? true : false
       }
     },
@@ -119,7 +121,7 @@ const Workbench = ({
       version: {
         type: 'link',
         href: 'https://github.com/freesewing/freesewing/releases',
-        text: 'v' + freesewing.version
+        text: ['v' + freesewing.version]
       },
       language: {
         type: 'button',
@@ -220,10 +222,13 @@ const Workbench = ({
 
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
-      <div className={theme === 'light' ? 'theme-wrapper light' : 'theme-wrapper dark'}>
+      <div
+        className={
+          theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'
+        }
+      >
         {display !== 'welcome' ? <Navbar navs={navs} home={() => saveDisplay('welcome')} /> : null}
         {main}
-        {display !== 'welcome' ? <Footer language={language} /> : null}
       </div>
     </MuiThemeProvider>
   )

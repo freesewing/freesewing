@@ -18,7 +18,6 @@ const Text = (props) => {
     text.push(<tspan key={'tspan-' + key}>{lines.shift()}</tspan>)
     for (let line of lines) {
       key++
-      console.log('multi', line, typeof line)
       text.push(
         <tspan
           key={'tspan-' + key}

@@ -1,6 +1,64 @@
 Unreleased:
   date:
 
+2.8.0:
+  date: 2020-08-10
+  Added:
+    paco:
+      - Initial release for Paco, a pattern for summer pants
+    components:
+      - Added Paco to LineDrawing component
+  Fixed:
+    benjamin:
+      - Fix for incorrect length of the ribbon
+    core:
+      - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+  Removed:
+    components:
+      - Removed the `Footer` component
+
+2.7.2:
+  date: 2020-07-29
+  Fixed:
+    core:
+      - Fixed wrong return value in debug message from Path
+
+2.7.1:
+  date: 2020-07-24
+  Added:
+    core:
+      - Added new debug functionality through the use of the `raise.debug`
+      - Added a new `debug` setting
+      - Shorthand now proxies objects to allow debug and raise
+    components:
+      - Workbench now includes events debug output and enables debug by default
+    css-theme:
+      - Added themeing for events
+    utils:
+      - Added backend calls for creating gists/issues on Github
+    wahid:
+      - Added the `square` hem style. Fixes [#672](https://github.com/freesewing/freesewing.org/issues/672)
+  Changed:
+    wahid:
+      - Hem radius can no longer be zero. Use teh `square` hem style for that
+  Fixed:
+    aaron:
+      - Set missing option `brianFitCollar` to `false`
+    bruce:
+      - Fixed a check for an undefined value in the store
+    carlton:
+      - Removed unused `hipsEase` code
+    hugo:
+      - Set missing option `brianFitCollar` to `false`
+      - Adding missing control point to front neck opening
+    simon:
+      - Set missing option `brianFitCollar` to `false`
+      - Don't assume the `chHips-notch` is available because it's not in Simone. Fixes [#833](https://github.com/freesewing/freesewing.org/issues/833)
+    simone:
+      - Set missing option `brianFitCollar` to `false`
+    sven:
+      - Avoided loading unset ribbingHeight from store
+
 2.7.0:
   date: 2020-07-12
   Added:

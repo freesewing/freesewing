@@ -33,7 +33,6 @@ chooseAPerson: Choose a person
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
-colourYes: 'Colour picture: Content is available in English'
 community: Community
 configureLayout: Configure layout
 configureYourDraft: Configure your draft
@@ -92,7 +91,6 @@ howCanWeHelpYou: How can we help you?
 howToTakeMeasurements: How to take measurements
 i18n: Internationalization
 imperialUnits: Imperial units (inch)
-info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is not a valid TLD'
 joinTheChatMsg: We have a chatroom on Gitter with friendly people who are happy to help out.  So don't be shy, and stop by for a chat.
@@ -109,7 +107,6 @@ metadata: Metadata
 metricUnits: Metric units (cm)
 person: Person
 people: People
-monochromeNo: 'Monochrome picture: Content is not availabel in English'
 nameInfo: A name helps to keep things apart. You can pick any name you want.
 name: Name
 addThing: Add {thing}
@@ -315,3 +312,7 @@ updateNotes-txt: Update the notes you keep along your pattern
 franceWarning: Beware users in France
 franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
 emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
+error: Error
+info: Info
+warning: Warning
+debug: Debug

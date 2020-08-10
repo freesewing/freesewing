@@ -1,18 +1,18 @@
 ---
-filter: Filter
-department: Department
-type: Type
-tags: Tags
+filter: Filtros
+department: Departamento
+type: Tipo
+tags: Etiquetas
 code: Código
 design: Diseño
 difficulty: Dificultad
 resetFilter: Reajustar el filtro
-menswear: Menswear
-womenswear: Womenswear
-accessories: Accessories
-block: Block
-pattern: Pattern
-byPattern: Filter by pattern
+menswear: Ropa de caballero
+womenswear: Ropa de mujer
+accessories: Accesorios
+block: Bloque
+pattern: Patrón
+byPattern: Filtrar por patrón
 underwear: ropa interior
 top: Arriba
 basics: Fundamentos

@@ -4,10 +4,11 @@ const defaultGist = {
     sa: 0,
     complete: true,
     paperless: false,
-    locale: "en",
-    units: "metric",
-    margin: 2
+    locale: 'en',
+    units: 'metric',
+    margin: 2,
+    debug: false
   }
-};
+}
 
-export default defaultGist;
+export default defaultGist

@@ -1,5 +1,25 @@
 # Change log for: @freesewing/core
 
+## 2.8.0 (2020-08-10)
+
+### Fixed
+
+- Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+
+## 2.7.2 (2020-07-29)
+
+### Fixed
+
+- Fixed wrong return value in debug message from Path
+
+## 2.7.1 (2020-07-24)
+
+### Added
+
+- Added new debug functionality through the use of the `raise.debug`
+- Added a new `debug` setting
+- Shorthand now proxies objects to allow debug and raise
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

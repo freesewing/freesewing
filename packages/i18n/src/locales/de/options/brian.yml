@@ -28,7 +28,7 @@ lengthBonus:
   description: Der Betrag, um das Kleidungsstück zu verlängern. Ein negativer Wert verkürzt ihn.
 shoulderEase:
   title: Schulter Leichtigkeit
-  description: Die Leichtigkeit an der Schulter. Dadurch wird der Abstand von Schulter zu Schulter vergrößert, um das aufzunehmen, was Sie darunter tragen.
+  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
 shoulderSlopeReduction:
   title: Reduktion der Schulterneigung
   description: Der Betrag, um den die Schulterneigung reduziert wird, um die Schulterpolsterung zu ermöglichen.

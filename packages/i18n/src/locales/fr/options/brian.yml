@@ -10,7 +10,7 @@ backNeckCutout:
   description: Quelle est la profondeur de l'encolure dans le dos
 bicepsEase:
   title: Aisance au niveau des biceps
-  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
+  description: "L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance."
 collarEase:
   title: Aisance du cou
   description: L'ampleur d'aisance au niveau du cou.
@@ -28,7 +28,7 @@ lengthBonus:
   description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
 shoulderEase:
   title: Aisance des épaules
-  description: La quantité d'aisance à votre épaule. Cela augmente la distance épaule à épaule pour s'adapter à ce que vous portez en dessous.
+  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
 shoulderSlopeReduction:
   title: Réduction de la pente d'épaule
   description: La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.

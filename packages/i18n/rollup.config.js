@@ -1,42 +1,34 @@
-import babel from "rollup-plugin-babel";
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
-import json from "rollup-plugin-json";
-import minify from "rollup-plugin-babel-minify";
-import yaml from "rollup-plugin-yaml";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import {
-  name,
-  version,
-  description,
-  author,
-  license,
-  main
-} from "./package.json";
+import babel from '@rollup/plugin-babel'
+import resolve from '@rollup/plugin-node-resolve'
+import json from '@rollup/plugin-json'
+import { terser } from 'rollup-plugin-terser'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import { main, name, version, description, author, license } from './package.json'
+import yaml from 'rollup-plugin-yaml'
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: [
     {
       file: main,
-      format: "cjs",
-      sourcemap: true
+      format: 'cjs',
+      sourcemap: true,
+      exports: 'named'
     }
   ],
   plugins: [
+    babel({
+      exclude: 'node_modules/**',
+      babelHelpers: 'bundled'
+    }),
     peerDepsExternal(),
     resolve({ modulesOnly: true }),
-    commonjs(),
     json(),
     yaml(),
-    babel({
-      exclude: "node_modules/**",
-      plugins: ["@babel/plugin-proposal-object-rest-spread"]
-    }),
-    minify({
-      comments: false,
-      sourceMap: true,
-      banner: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+    terser({
+      output: {
+        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      }
     })
   ]
-};
+}

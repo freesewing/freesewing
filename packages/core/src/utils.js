@@ -6,6 +6,13 @@ export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+/** Checks for a valid coordinate value **/
+export function isCoord(value) {
+  return value === value // NaN does not equal itself
+    ? typeof value === 'number'
+    : false
+}
+
 /** Returns internal hook name for a macro */
 export function macroName(name) {
   return `_macro_${name}`
@@ -82,6 +89,14 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
     p1: { x: check.x - 1, y: check.y },
     p2: { x: check.x + 1, y: check.y }
   })
+  if (intersections.length === 0) {
+    // Handle edge case of a curve that's a perfect horizontal line
+    intersections = curve.intersects({
+      p1: { x: check.x, y: check.y - 1 },
+      p2: { x: check.x, y: check.y + 1 }
+    })
+  }
+
   if (intersections.length > 0) return intersections.shift()
   else return false
 }

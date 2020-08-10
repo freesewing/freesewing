@@ -16,6 +16,7 @@ import PaperlessIcon from '@material-ui/icons/Nature'
 import CompleteIcon from '@material-ui/icons/Style'
 import UnhideIcon from '@material-ui/icons/ChevronLeft'
 import HideIcon from '@material-ui/icons/ChevronRight'
+import Events from './Events'
 
 const DraftPattern = (props) => {
   const [design, setDesign] = useState(true)
@@ -123,6 +124,7 @@ const DraftPattern = (props) => {
           viewBox={viewBox}
           className="freesewing draft shadow"
         />
+        <Events events={patternProps.events} />
         {hideAside && (
           <div style={styles.unhide}>
             <IconButton

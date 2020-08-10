@@ -8,39 +8,44 @@ import pack from 'bin-pack'
 import Store from './store'
 import Hooks from './hooks'
 import Attributes from './attributes'
+import { version } from '../package.json'
 
 export default function Pattern(config = { options: {} }) {
+  // Events store and raise methods
+  this.events = {
+    warning: [],
+    error: [],
+    debug: []
+  }
+  const events = this.events
+  this.raise = {
+    warning: function (data) {
+      events.warning.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    },
+    debug: function (data) {
+      events.debug.push(data)
+    }
+  }
+  this.raise.debug(
+    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
+  )
+
   this.config = config // Pattern configuration
   this.width = 0 // Will be set after render
   this.height = 0 // Will be set after render
   this.is = '' // Will be set when drafting/sampling
+  this.debug = true // Will be set when applying settings
 
-  this.store = new Store() // Store for sharing data across parts
+  this.store = new Store(this.raise) // Store for sharing data across parts
   this.parts = {} // Parts container
   this.hooks = new Hooks() // Hooks container
   this.Point = Point // Point constructor
   this.Path = Path // Path constructor
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
-
-  // Store events
-  this.events = {
-    info: [],
-    warning: [],
-    error: []
-  }
-  const events = this.events
-  this.events.raise = {
-    event: function (data) {
-      events.info.push(data)
-    },
-    warning: function (data) {
-      events.warning.push(data)
-    },
-    error: function (data) {
-      events.error.push(data)
-    }
-  }
 
   // Default settings
   this.settings = {
@@ -50,6 +55,7 @@ export default function Pattern(config = { options: {} }) {
     units: 'metric',
     margin: 2,
     layout: true,
+    debug: true,
     options: {}
   }
 
@@ -69,7 +75,11 @@ export default function Pattern(config = { options: {} }) {
       else if (typeof option.count !== 'undefined') this.settings.options[i] = option.count
       else if (typeof option.bool !== 'undefined') this.settings.options[i] = option.bool
       else if (typeof option.dflt !== 'undefined') this.settings.options[i] = option.dflt
-      else throw new Error('Unknown option type: ' + JSON.stringify(option))
+      else {
+        let err = 'Unknown option type: ' + JSON.stringify(option)
+        this.raise.error(err)
+        throw new Error(err)
+      }
     } else {
       this.settings.options[i] = option
     }
@@ -85,7 +95,8 @@ export default function Pattern(config = { options: {} }) {
     settings: this.settings,
     store: this.store,
     macros: this.macros,
-    events: this.events
+    events: this.events,
+    raise: this.raise
   }
 
   // Part closure
@@ -101,7 +112,10 @@ export default function Pattern(config = { options: {} }) {
 
 // Merges settings object with this.settings
 Pattern.prototype.apply = function (settings) {
-  if (typeof settings !== 'object') return this
+  if (typeof settings !== 'object') {
+    this.raise.warning('Pattern initialized without any settings')
+    return this
+  }
   for (let key of Object.keys(settings)) {
     if (Array.isArray(settings[key])) {
       if (Array.isArray(this.settings[key])) {
@@ -114,6 +128,7 @@ Pattern.prototype.apply = function (settings) {
       }
     } else this.settings[key] = settings[key]
   }
+  if (!this.settings.debug) this.debug = false
 
   return this
 }
@@ -122,6 +137,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks.length > 0) {
+    if (this.debug) this.raise.debug(`Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }
@@ -132,25 +148,55 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
  *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function () {
-  if (this.is !== 'sample') this.is = 'draft'
+  if (this.is !== 'sample') {
+    this.is = 'draft'
+    if (this.debug) this.raise.debug(`Drafting pattern`)
+  }
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
+    if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
     this.parts[partName] = new this.Part()
     if (typeof this.config.inject[partName] === 'string') {
-      this.parts[partName].inject(this.parts[this.config.inject[partName]])
+      if (this.debug)
+        this.raise.debug(
+          `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
+        )
+      try {
+        this.parts[partName].inject(this.parts[this.config.inject[partName]])
+      } catch (err) {
+        this.raise.error([
+          `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
+          err
+        ])
+      }
     }
     if (this.needs(partName)) {
       let method = 'draft' + capitalize(partName)
-      if (typeof this[method] !== 'function')
+      if (typeof this[method] !== 'function') {
+        this.raise.error(`Method \`pattern.${method}\` is callable`)
         throw new Error('Method "' + method + '" on pattern object is not callable')
-      this.parts[partName] = this[method](this.parts[partName])
-      if (typeof this.parts[partName] === 'undefined')
-        throw new Error(
-          'Result of ' + method + '() was undefined. Did you forget to return the Part object?'
+      }
+      try {
+        this.parts[partName] = this[method](this.parts[partName])
+      } catch (err) {
+        this.raise.error([`Unable to draft part \`${partName}\``, err])
+      }
+      if (typeof this.parts[partName] === 'undefined') {
+        this.raise.error(
+          `Result of \`pattern.${method}\` was \`undefined\`. Did you forget to return the \`Part\` object?`
         )
-      this.parts[partName].render =
-        this.parts[partName].render === false ? false : this.wants(partName)
+      }
+      try {
+        this.parts[partName].render =
+          this.parts[partName].render === false ? false : this.wants(partName)
+      } catch (err) {
+        this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
+      }
     } else {
+      if (this.debug)
+        this.raise.debug(
+          `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
+        )
       this.parts[partName].render = false
     }
   }
@@ -228,6 +274,7 @@ Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = 
  */
 Pattern.prototype.sampleOption = function (optionName) {
   this.is = 'sample'
+  if (this.debug) this.raise.debug(`Sampling option \`${optionName}\``)
   this.runHooks('preSample')
   let step, val
   let factor = 1
@@ -277,12 +324,13 @@ Pattern.prototype.sampleListOption = function (optionName) {
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.is = 'sample'
+  if (this.debug) this.raise.debug(`Sampling measurement \`${measurementName}\``)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
   let val = this.settings.measurements[measurementName]
   if (val === undefined)
-    throw new Error('Cannot sample a measurement that is undefined: ' + measurementName)
+    this.raise.error(`Cannot sample measurement \`${measurementName}\` because it's \`undefined\``)
   let step = val / 50
   val = val * 0.9
   for (let run = 1; run < 11; run++) {
@@ -301,6 +349,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
  */
 Pattern.prototype.sampleModels = function (models, focus = false) {
   this.is = 'sample'
+  if (this.debug) this.raise.debug(`Sampling models`)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
@@ -335,6 +384,7 @@ Pattern.prototype.on = function (hook, method, data) {
 }
 
 Pattern.prototype.use = function (plugin, data) {
+  if (this.debug) this.raise.debug(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
 
@@ -367,6 +417,10 @@ Pattern.prototype.macro = function (key, method) {
 
 /** Packs parts in a 2D space and sets pattern size */
 Pattern.prototype.pack = function () {
+  if (this.events.error.length > 0) {
+    this.raise.warning(`One or more errors occured. Not packing pattern parts`)
+    return this
+  }
   let bins = []
   for (let key in this.parts) {
     let part = this.parts[key]
@@ -488,7 +542,10 @@ Pattern.prototype.resolveDependencies = function (graph = this.config.dependenci
       else if (Array.isArray(this.config.dependencies[i])) {
         if (this.config.dependencies[i].indexOf(dependency) === -1)
           this.config.dependencies[i].push(dependency)
-      } else throw new Error('Part dependencies should be a string or an array of strings')
+      } else {
+        this.raise.error('Part dependencies should be a string or an array of strings')
+        throw new Error('Part dependencies should be a string or an array of strings')
+      }
     }
     // Parts both in the parts and dependencies array trip up the dependency resolver
     if (Array.isArray(this.config.parts)) {
@@ -575,7 +632,7 @@ Pattern.prototype.getRenderProps = function () {
   props.height = this.height
   props.settings = this.settings
   props.events = {
-    info: this.events.info,
+    debug: this.events.debug,
     warning: this.events.warning,
     error: this.events.error
   }

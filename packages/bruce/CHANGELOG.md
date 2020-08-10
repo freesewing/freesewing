@@ -1,5 +1,11 @@
 # Change log for: @freesewing/bruce
 
+## 2.7.1 (2020-07-24)
+
+### Fixed
+
+- Fixed a check for an undefined value in the store
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

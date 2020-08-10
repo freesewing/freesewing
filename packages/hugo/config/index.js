@@ -54,6 +54,7 @@ export default {
   hide: ['base', 'frontBase', 'backBase', 'sleeveBase', 'sleevecap'],
   options: {
     // Constants
+    brianFitCollar: false,
     brianFitSleeve: false,
     collarEase: 0.05,
     collarFactor: 4.3,
