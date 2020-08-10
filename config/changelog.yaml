@@ -1,5 +1,8 @@
 Unreleased:
   date:
+
+2.8.0:
+  date: 2020-08-10
   Added:
     paco:
       - Initial release for Paco, a pattern for summer pants
