@@ -44,6 +44,9 @@ const Snippets = (props) => {
         d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1"
       />
     </g>,
+    <g id="eyelet" className="snippet eyelet" key="eyelet">
+      <circle cy="0" cx="0" r="2.5" {...stroke} />
+    </g>,
     <g id="logo" className="snippet logo" transform="translate(-23 -36)" key="logo">
       <path d={logoPathString} {...fill} />
     </g>

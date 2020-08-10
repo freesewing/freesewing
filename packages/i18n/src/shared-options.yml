@@ -86,6 +86,11 @@ jaeger:
     sleevecapHeight: bent
     buttons: simon
     collarRoll: simon
+paco:
+  dflt: titan
+  other:
+    seatEase: penelope
+    waistEase: penelope
 sandy:
   dflt: brian
 shin:

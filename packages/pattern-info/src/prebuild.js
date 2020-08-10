@@ -16,6 +16,7 @@ const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
+const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
 const sandy = require('@freesewing/sandy').config
 const shin = require('@freesewing/shin').config
@@ -46,6 +47,7 @@ const patterns = {
   huey,
   hugo,
   jaeger,
+  paco,
   penelope,
   sandy,
   shin,

@@ -34,7 +34,6 @@ chooseAPerson: Choisir une personne
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-colourYes: 'Image en couleur : le contenu est disponible en français'
 community: Communauté
 configureLayout: Configurer la mise en page
 configureYourDraft: Configurez votre propre patron
@@ -93,7 +92,6 @@ howCanWeHelpYou: Comment pouvons-nous vous aider ?
 howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation
 imperialUnits: Unités impériales (pouces)
-info: Info
 instagram: Instagram
 invalidTldMessage: ".{tld} n'est pas un TLD valide"
 joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes sympathiques qui seront heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
@@ -110,7 +108,6 @@ metadata: Métadonnées
 metricUnits: Unités métriques (cm)
 person: Personne
 people: Personnes
-monochromeNo: "Image monochrome : le contenu n'est pas disponible en français"
 nameInfo: Un nom aide à reconnaitre les choses. Vous pouvez choisir n'importe quel nom.
 name: Nom
 addThing: Ajouter {thing}
@@ -316,3 +313,7 @@ updateNotes-txt: Mettre à jour les notes concernant votre patron
 franceWarning: Attention, pour les utilisateurs français
 franceWarning-txt: Plusieurs fournisseurs d'accès français — dont free.fr, laposte.net, orange.fr et sfr.fr — rejettent systématiquement nos e-mails.
 emailNotReceived: Si vous ne recevez pas le mail d'activation, merci de nous contacter pour que nous puissions vous aider.
+error: Error
+info: Info
+warning: Warning
+debug: Debug

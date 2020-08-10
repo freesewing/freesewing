@@ -26,6 +26,7 @@ import shin from './shin.yml'
 import penelope from './penelope.yml'
 import waralee from './waralee.yml'
 import titan from './titan.yml'
+import paco from './paco.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -57,7 +58,8 @@ let patterns = {
   penelope,
   waralee,
   holmes,
-  titan
+  titan,
+  paco
 }
 
 let options = {}
@@ -78,6 +80,7 @@ for (let pattern of Object.keys(patterns)) {
         )
           options[pattern][option] = patterns[shared[pattern].other[option]][option]
         else {
+          console.log(options[pattern])
           throw new Error(`No option translation found for ${option} in ${pattern}`)
         }
       }

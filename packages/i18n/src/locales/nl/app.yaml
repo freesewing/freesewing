@@ -34,7 +34,6 @@ chooseAPerson: Kies een persoon
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
-colourYes: 'Kleurenfoto: Inhoud is beschikbaar in het Nederlands'
 community: Gemeenschap
 configureLayout: Configureer layout
 configureYourDraft: Configureer je patroontekening
@@ -93,7 +92,6 @@ howCanWeHelpYou: Hoe kunnen we je helpen?
 howToTakeMeasurements: Leer hoe je maten neemt
 i18n: Internationalisering
 imperialUnits: Imperiale (Engelse) eenheden (duim)
-info: Info
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
 joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die graag helpen. Dus wees niet verlegen en kom langs voor een praatje.
@@ -110,7 +108,6 @@ metadata: Metadata
 metricUnits: Metrische eenheden (cm)
 person: Persoon
 people: Mensen
-monochromeNo: 'Zwart-wit foto: Inhoud is niet beschikbaar niet het Nederlands'
 nameInfo: Een naam helpt om dingen uit elkaar te houden. Je kan eender welke naam kiezen.
 name: Naam
 addThing: Voeg {thing} toe
@@ -316,3 +313,7 @@ updateNotes-txt: Hou de notities die je bij je patroon maakt up to date
 franceWarning: Let op, Franse gebruikers
 franceWarning-txt: Verschillende Franse e-mailproviders- onder andere free.fr, laposte.net, orange.fr en sfr.fr- houden onze e-mails regelmatig tegen.
 emailNotReceived: Indien je de activatiemail niet ontvangt, laat ons dan iets weten zodat we je kunnen helpen.
+error: Error
+info: Info
+warning: Waarschuwing
+debug: Debug
