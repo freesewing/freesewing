@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/titan",
-  "version": "2.8.0",
+  "version": "2.8.1-rc.0",
   "description": "A FreeSewing block for trousers",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,9 +29,6 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
