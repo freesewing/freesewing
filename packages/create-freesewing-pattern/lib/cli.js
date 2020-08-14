@@ -94,10 +94,10 @@ ${strings[params.language]['cfp.runTheseCommands']}:
 
 
 ${strings[params.language]['cfp.devDocsAvailableAt']}
-  ${chalk.bold('https://' + params.language + '.freesewing.dev/')}
+  ${chalk.bold('https://freesewing.dev/')}
 
 ${strings[params.language]['cfp.talkToUs']}
-  ${chalk.bold('https://gitter.im/freesewing/freesewing')}
+  ${chalk.bold('https://gitter.im/freesewing/development')}
 
 `)
 

@@ -1,5 +1,8 @@
 Unreleased:
   date:
+    Fixed:
+      create-freesewing-pattern:
+        - Fixed breaking change in execa upgrade in 2.8.0
 
 2.8.0:
   date: 2020-08-10
