@@ -1,6 +1,8 @@
 Unreleased:
   date:
     Fixed:
+      benjamin:
+        - Fixed issue with (length of) band
       create-freesewing-pattern:
         - Fixed breaking change in execa upgrade in 2.8.0
 
