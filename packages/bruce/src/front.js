@@ -33,8 +33,7 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro,
-    utils
+    macro
   } = part.shorthand()
 
   // Initialize
