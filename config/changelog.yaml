@@ -1,5 +1,31 @@
 Unreleased:
   date:
+    Added:
+      teagan: Teagan is a T-shirt pattern
+    Fixed:
+      benjamin:
+        - Fixed issue with (length of) band
+      create-freesewing-pattern:
+        - Fixed breaking change in execa upgrade in 2.8.0
+
+2.8.0:
+  date: 2020-08-10
+  Added:
+    paco:
+      - Initial release for Paco, a pattern for summer pants
+    components:
+      - Added Paco to LineDrawing component
+  Fixed:
+    benjamin:
+      - Fix for incorrect length of the ribbon
+    core:
+      - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+  Removed:
+    components:
+      - Removed the `Footer` component
+
+2.7.2:
+  date: 2020-07-29
   Fixed:
     core:
       - Fixed wrong return value in debug message from Path

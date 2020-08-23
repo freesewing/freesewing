@@ -14,6 +14,7 @@ export default complete({
   crossSeam: 870,
   crossSeamFront: 410,
   crotchDepth: 340,
+  heel: 360,
   head: 590,
   hips: 840,
   hpsToBust: 280,

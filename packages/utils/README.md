@@ -46,7 +46,7 @@
 This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
 This folder holds **@freesewing/utils**
 
-A collection of utilities shared across freesewing frontend projects
+A collection of utilities shared across freesewing projects
 
 
 

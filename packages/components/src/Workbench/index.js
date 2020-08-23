@@ -13,7 +13,6 @@ import DraftPattern from './DraftPattern'
 import Json from './Json'
 import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
-import Footer from '../Footer'
 import Measurements from './Measurements'
 
 const Workbench = ({
@@ -114,7 +113,7 @@ const Workbench = ({
       json: {
         type: 'button',
         onClick: () => saveDisplay('json'),
-        text: 'JSON',
+        text: ['JSON'],
         active: display === 'json' ? true : false
       }
     },
@@ -122,7 +121,7 @@ const Workbench = ({
       version: {
         type: 'link',
         href: 'https://github.com/freesewing/freesewing/releases',
-        text: 'v' + freesewing.version
+        text: ['v' + freesewing.version]
       },
       language: {
         type: 'button',
@@ -230,7 +229,6 @@ const Workbench = ({
       >
         {display !== 'welcome' ? <Navbar navs={navs} home={() => saveDisplay('welcome')} /> : null}
         {main}
-        {display !== 'welcome' ? <Footer language={language} /> : null}
       </div>
     </MuiThemeProvider>
   )

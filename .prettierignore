@@ -1,0 +1,11 @@
+# Since we generate a bunch of YAML and MarkDown files programatically
+# It triggers this constant fight between prettier and YAML/MD formatting
+# So let's not
+*.yml
+*.md
+
+
+# More auto-generated code
+packages/*/example/public/*
+packages/*/example/src/*
+packages/*/tests/*.js

@@ -16,6 +16,7 @@ const holmes = require('@freesewing/holmes').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
+const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
 const sandy = require('@freesewing/sandy').config
 const shin = require('@freesewing/shin').config
@@ -23,6 +24,7 @@ const simon = require('@freesewing/simon').config
 const simone = require('@freesewing/simone').config
 const sven = require('@freesewing/sven').config
 const tamiko = require('@freesewing/tamiko').config
+const teagan = require('@freesewing/teagan').config
 const theo = require('@freesewing/theo').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
@@ -46,6 +48,7 @@ const patterns = {
   huey,
   hugo,
   jaeger,
+  paco,
   penelope,
   sandy,
   shin,
@@ -53,6 +56,7 @@ const patterns = {
   simone,
   sven,
   tamiko,
+  teagan,
   theo,
   titan,
   trayvon,

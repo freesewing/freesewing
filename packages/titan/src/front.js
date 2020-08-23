@@ -327,7 +327,7 @@ export default (part) => {
       paths.hemBase.render = false
     }
 
-    if (paperless) {
+    if (paperless && options.titanPaperless) {
       // Help construct crotch seam
       paths.hint = new Path()
         .move(points.crotchSeamCurveStart)
