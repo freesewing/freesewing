@@ -2,7 +2,6 @@ import * as shared from './shared'
 
 export default (part) => {
   let {
-    units,
     measurements,
     options,
     store,

@@ -14,7 +14,7 @@ function sleevecapAdjust(store) {
 }
 
 function draftSleevecap(part, run) {
-  let { units, store, measurements, options, Point, points, Path, paths } = part.shorthand()
+  let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
