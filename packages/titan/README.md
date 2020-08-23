@@ -46,7 +46,7 @@
 This repository is our *monorepo* holding [all our NPM packages](https://www.npmjs.com/search?q=keywords:freesewing).  
 This folder holds **@freesewing/titan**
 
-A FreeSewing block for trousers
+A FreeSewing pattern for a unisex trouser block
 
 
 

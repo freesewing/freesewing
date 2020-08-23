@@ -27,7 +27,7 @@
   </a>
 </p>
 
-# trayvon example
+# titan example
 
 This project was bootstrapped with [Create Freesewing Pattern](https://en.freesewing.dev/create-freesewing-pattern):
 
@@ -40,16 +40,16 @@ It is **not** part of the pattern's source code.
 
 To run this example, follow these steps:
 
-- In the folder above this one, run: `yarn start` (or `npm start`)
-- Then, in new terminal, run the same command in this folder: `yarn start` (or `npm start`)
+ - In the folder above this one, run: `yarn start` (or `npm start`)
+ - Then, in new terminal, run the same command in this folder: `yarn start` (or `npm start`)
 
-This will spin up the development environment, similar to [our online demo](https://trayvon.freesewing.dev/).
+This will spin up the development environment, similar to [our online demo](https://titan.freesewing.dev/).
 
 ## About FreeSewing 🤔
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-Our [core library](https://freesewing.dev/en/freesewing) is a _batteries-included_ toolbox
+Our [core library](https://freesewing.dev/en/freesewing) is a *batteries-included* toolbox
 for parametric design of sewing patterns. It's a modular system (check our list
 of [plugins](https://freesewing.dev/en/plugins) and getting started is as simple as:
 
@@ -76,11 +76,11 @@ should [become a patron](https://freesewing.org/patrons/join).
 
 ## Links 👩‍💻
 
-- 💻 Makers website: [freesewing.org](https://freesewing.org)
-- 💻 Developers website: [freesewing.dev](https://freesewing.org)
-- 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/freesewing)
-- 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
-- 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ - 💻 Makers website: [freesewing.org](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.org)
+ - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/freesewing)
+ - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+ - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
 ## License: MIT 🤓
 
@@ -93,3 +93,4 @@ Our [chatroom on Gitter](https://gitter.im) is the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+
