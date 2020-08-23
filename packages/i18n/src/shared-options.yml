@@ -142,6 +142,10 @@ sven:
   dflt: brian
 tamiko:
   dflt: brian
+teagan:
+  dflt: brian
+  other:
+    hipsEase: aaron
 theo:
   dflt: bruce
   other:

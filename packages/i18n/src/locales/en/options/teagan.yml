@@ -1,0 +1,7 @@
+necklineDepth:
+  title: Neckline depth
+  description: Controls how deep the neck opening plunges down.
+
+necklineWidth:
+  title: Neckline width
+  description: Controls the width of the neck opening.

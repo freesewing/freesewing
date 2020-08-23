@@ -1,6 +1,6 @@
 {
-  "name": "examples-example",
-  "homepage": "https://freesewing.github.io/examples",
+  "name": "teagan-example",
+  "homepage": "https://freesewing.github.io/teagan",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

@@ -14,6 +14,7 @@ import holmes from './holmes.yml'
 import huey from './huey.yml'
 import hugo from './hugo.yml'
 import tamiko from './tamiko.yml'
+import teagan from './teagan.yml'
 import trayvon from './trayvon.yml'
 import jaeger from './jaeger.yml'
 import carlton from './carlton.yml'
@@ -59,7 +60,8 @@ let patterns = {
   waralee,
   holmes,
   titan,
-  paco
+  paco,
+  teagan
 }
 
 let options = {}
