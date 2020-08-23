@@ -22,7 +22,10 @@ fabricGrain:
   description: "Voir <a href='/docs/sewing/fabric-grain/'>Droit fil</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 goodSidesTogether:
   term: endroit contre endroit
-  description: "Voir <a href='/docs/sewing/good-sides-together/'>Endroit contre endroit</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
+  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+onTheFold:
+  term: on the fold
+  description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
 hemming:
   term: ourlet
   description: "Voir <a href='/docs/sewing/hemming/'>Ourlet</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
@@ -61,13 +64,13 @@ zigZag:
   description: "Voir <a href='/docs/sewing/zig-zag-stitch/'>Point zig-zag</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 freesewing:
   term: freesewing
-  description: "<b>FreeSewing</b> est une plate-forme open source pour des patrons de couture sur-mesure"
+  description: '<b>FreeSewing</b> est une plate-forme open source pour des patrons de couture sur-mesure'
 patternOptions:
   term: options du patron
-  description: "Les <b>options de patron</b> vous permettent de personnaliser le design du patron"
+  description: 'Les <b>options de patron</b> vous permettent de personnaliser le design du patron'
 draftSettings:
   term: Paramètres de patrons générés
-  description: "Les <b>paramètres de patrons générés</b> vous donnent le contrôle de la manière dont un patron est généré"
+  description: 'Les <b>paramètres de patrons générés</b> vous donnent le contrôle de la manière dont un patron est généré'
 patrons:
   term: patrons
-  description: "Les mécènes soutiennent financièrement Freesewing. Ce sont des fidèles soutiens qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté."
+  description: 'Les mécènes soutiennent financièrement Freesewing. Ce sont des fidèles soutiens qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.'
