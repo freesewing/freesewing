@@ -1,6 +1,6 @@
 name: Unit tests - Teagan
 
-on: [push]
+on: [pull_request]
 
 jobs:
   test:

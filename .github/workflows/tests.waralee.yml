@@ -1,6 +1,6 @@
 name: Unit tests - Waralee
 
-on: [push]
+on: [pull_request]
 
 jobs:
   test:

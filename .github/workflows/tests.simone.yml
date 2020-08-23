@@ -1,6 +1,6 @@
 name: Unit tests - Simone
 
-on: [push]
+on: [pull_request]
 
 jobs:
   test:

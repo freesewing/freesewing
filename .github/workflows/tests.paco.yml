@@ -1,6 +1,6 @@
 name: Unit tests - Paco
 
-on: [push]
+on: [pull_request]
 
 jobs:
   test:
