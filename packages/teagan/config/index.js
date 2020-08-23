@@ -71,9 +71,7 @@ export default {
     collarFactor: 4.8,
     shoulderEase: 0,
     collarEase: 0,
-    frontArmholeDeeper: 0.05,
     shoulderSlopeReduction: 0,
-    backNeckCutout: 0.05,
     sleeveWidthGuarantee: 0.85,
 
     // Percentages

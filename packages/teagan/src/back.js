@@ -1,5 +1,3 @@
-import { dimensions } from './shared'
-
 export default function (part) {
   let {
     store,
@@ -13,7 +11,6 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    units,
     measurements
   } = part.shorthand()
 
@@ -60,6 +57,9 @@ export default function (part) {
     macro('title', { at: points.title, nr: 2, title: 'back' })
     points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
     macro('scalebox', { at: points.scalebox })
+
+    if (sa) {
+    }
   }
 
   // Paperless?

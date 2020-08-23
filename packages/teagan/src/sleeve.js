@@ -12,7 +12,6 @@ export default function (part) {
     complete,
     paperless,
     macro,
-    utils,
     units,
     measurements
   } = part.shorthand()
