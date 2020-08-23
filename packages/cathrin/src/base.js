@@ -1,5 +1,5 @@
 export default function (part) {
-  let { measurements, options, store, points, paths, Point, Path, utils } = part.shorthand()
+  let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
 
   // Where to divide our corset into panels
   if (options.panels === '11') store.set('gaps', [0.15, 0.275, 0.4, 0.6, 0.75])
