@@ -5,7 +5,6 @@ const path = require('path')
 const chalk = require('chalk')
 const program = require('commander')
 const strings = require('@freesewing/i18n').strings
-const { version } = require('../package')
 
 const getDefaultLibraryParams = require('./get-default-library-params')
 const createLibrary = require('./create-library')
