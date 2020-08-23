@@ -1,4 +1,4 @@
-import { macroName, round, sampleStyle, capitalize } from './utils'
+import { macroName, sampleStyle, capitalize } from './utils'
 import Part from './part'
 import Point from './point'
 import Path from './path'

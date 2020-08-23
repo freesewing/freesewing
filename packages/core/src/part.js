@@ -227,11 +227,11 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(
             `\`points.${name}\` was set with a value that is not a \`Point\` object`
           )
-        if (!utils.isCoord(value.x))
+        if (typeof value.x !== 'undefined' && !utils.isCoord(value.x))
           self.context.raise.warning(
             `\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``
           )
-        if (!utils.isCoord(value.y))
+        if (typeof value.y !== 'undefined' && !utils.isCoord(value.y))
           self.context.raise.warning(
             `\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``
           )
