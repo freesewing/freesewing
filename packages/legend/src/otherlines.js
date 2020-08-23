@@ -2,7 +2,7 @@ import { box } from './shared'
 import { lineTypes } from './styles'
 
 export default (part) => {
-  let { points, Point, paths, Path, snippets, Snippet } = part.shorthand()
+  let { points, Point, paths, Path } = part.shorthand()
 
   const drawLine = (y, t) => {
     points[`${t}From`] = new Point(10, y)

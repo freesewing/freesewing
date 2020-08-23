@@ -1,5 +1,4 @@
-import { box, drawLine } from './shared'
-import { fabricTypes } from './styles'
+import { box } from './shared'
 
 export default (part) => {
   const { points, Point, snippets, Snippet } = part.shorthand()
