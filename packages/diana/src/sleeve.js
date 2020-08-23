@@ -1,5 +1,5 @@
-export default part => {
-  let { store, sa, points, paths, Path, complete, paperless, macro, options } = part.shorthand()
+export default (part) => {
+  let { sa, points, paths, Path, complete, paperless, macro } = part.shorthand()
 
   paths.seam = new Path()
     .move(points.wristRight)
@@ -26,10 +26,7 @@ export default part => {
       paths.saBase.render = false
       paths.hemBase.render = false
       paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa * 3))
-      paths.sa
-        .line(paths.sa.start())
-        .close()
-        .attr('class', 'fabric sa')
+      paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }
   }
 

@@ -1,9 +1,7 @@
 export default (part) => {
   let {
-    store,
     measurements,
     sa,
-    Point,
     points,
     Path,
     paths,
