@@ -1,20 +1,5 @@
 export default function (part) {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { sa, points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
 
   // Don't bother of we're not drafting front pockets
   if (!options.frontPockets) {

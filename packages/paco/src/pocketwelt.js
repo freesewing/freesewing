@@ -1,16 +1,12 @@
 export default function (part) {
   let {
-    utils,
-    store,
     sa,
     Point,
     points,
     Path,
     paths,
-    Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro
