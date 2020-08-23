@@ -42,14 +42,13 @@ const Zoombox = (props) => {
       evt.preventDefault()
       setPanning(false)
       setPanFrom(false)
-      updateViewBox(evt)
+      updateViewBox()
     }
   }
   const handlePan = (evt) => {
     if (!dragging && panning) {
       evt.stopPropagation()
       evt.preventDefault()
-      let x, y
       if (from[0] + (evt.clientX - panFrom[0]) <= -5) {
         // Bump into left
       } else if (from[1] + (evt.clientY - panFrom[1]) <= -5) {
@@ -75,7 +74,7 @@ const Zoombox = (props) => {
   }
   const handleMouseUp = (evt) => {
     if (dragging == 2) {
-      updateViewBox(evt)
+      updateViewBox()
       if (falseAlarm) setFalseAlarm(false)
     } else {
       setFalseAlarm(true)
@@ -97,7 +96,7 @@ const Zoombox = (props) => {
       setTo([evt.clientX - box.x, evt.clientY - box.y])
     }
   }
-  const updateViewBox = (evt) => {
+  const updateViewBox = () => {
     props.setViewBox(
       from[0] * factor +
         ' ' +

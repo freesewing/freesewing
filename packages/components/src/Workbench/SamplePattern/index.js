@@ -1,7 +1,6 @@
 import React from 'react'
 import SampleConfigurator from '../../SampleConfigurator'
 import svgattrPlugin from '@freesewing/plugin-svgattr'
-import { FormattedMessage } from 'react-intl'
 
 const SamplePattern = (props) => {
   let pattern = new props.Pattern(props.gist.settings).use(svgattrPlugin, {
