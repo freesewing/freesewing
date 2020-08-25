@@ -23,17 +23,24 @@ export default function (part) {
   points.shoulderCp1 = points.shoulderCp1.shiftFractionTowards(points.shoulder, 0.25)
 
   // Draw seamline
-  paths.seam = new Path()
-    .move(points.cfHem)
-    .line(points.hem)
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
+  paths.saBase = new Path()
+    .move(points.hem)
     .line(points.waist)
     .curve_(points.waistCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
+    .setRender(false)
+  paths.seam = new Path()
+    .move(points.cfHem)
+    .join(paths.hemBase)
+    .join(paths.saBase)
     .line(points.cfHem)
     .close()
+    .setRender(true)
+    .attr('class', 'fabric')
 
   // Set store values required to draft sleevecap
   store.set('sleevecapEase', 0)
@@ -59,6 +66,12 @@ export default function (part) {
     macro('scalebox', { at: points.scalebox })
 
     if (sa) {
+      paths.sa = new Path()
+        .move(points.cfHem)
+        .join(paths.hemBase.offset(sa * 3))
+        .join(paths.saBase.offset(sa))
+        .line(points.cbNeck)
+        .attr('class', 'fabric sa')
     }
   }
 

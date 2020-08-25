@@ -57,17 +57,23 @@ export default function (part) {
   )
 
   // Draw seamline
-  paths.seam = new Path()
-    .move(points.cfHem)
-    .line(points.hem)
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
+  paths.saBase = new Path()
+    .move(points.hem)
     .line(points.waist)
     .curve_(points.waistCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
+    .setRender(false)
+  paths.seam = new Path()
+    .move(points.cfHem)
+    .join(paths.hemBase)
+    .join(paths.saBase)
     .line(points.cfHem)
     .close()
+    .attr('class', 'fabric')
 
   // Store front sleevecap length
   store.set(
@@ -92,6 +98,12 @@ export default function (part) {
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
+      paths.sa = new Path()
+        .move(points.cfHem)
+        .join(paths.hemBase.offset(sa * 3))
+        .join(paths.saBase.offset(sa))
+        .line(points.cfNeck)
+        .attr('class', 'fabric sa')
       /*
       let saShoulder = new Path().move(points.strapRight).line(points.strapLeft).offset(sa)
       paths.saShoulder = new Path()

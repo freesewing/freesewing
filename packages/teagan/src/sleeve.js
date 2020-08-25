@@ -22,34 +22,41 @@ export default function (part) {
   points.hemLeft = new Point(width / -2, height)
   points.hemRight = new Point(width / 2, height)
 
-  paths.sleevecap = new Path()
-    .move(points.bicepsRight)
+  paths.hemBase = new Path().move(points.hemLeft).line(points.hemRight).setRender(false)
+  paths.saBase = new Path()
+    .move(points.hemRight)
+    .line(points.bicepsRight)
     .curve(points.bicepsRight, points.capQ1Cp1, points.capQ1)
     .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
     .curve(points.capQ4Cp2, points.bicepsLeft, points.bicepsLeft)
     .line(points.hemLeft)
-    .line(points.hemRight)
-    .line(points.bicepsRight)
+    .setRender(false)
+  paths.seam = new Path()
+    .move(points.hemLeft)
+    .join(paths.hemBase)
+    .join(paths.saBase)
+    .close()
+    .attr('class', 'fabric')
 
   let target = store.get('frontArmholeLength') + store.get('backArmholeLength')
   let ist = paths.sleevecap.length()
-  console.log({ target, ist })
-
-  return part
 
   // Complete pattern?
   if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true
-    })
-
+    points.title = points.gridAnchor.clone()
     macro('title', { at: points.title, nr: 2, title: 'back' })
-    points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
-    macro('scalebox', { at: points.scalebox })
+
+    if (sa) {
+      paths.sa = new Path()
+        .move(points.hemLeft.shift(-90, sa * 3))
+        .join(paths.hemBase.offset(sa * 3))
+        .join(paths.saBase.offset(sa))
+        .line(points.hemLeft.shift(-90, sa * 3))
+        .close()
+        .attr('class', 'fabric sa')
+    }
   }
 
   // Paperless?
