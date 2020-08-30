@@ -58,7 +58,7 @@
     "rollup-plugin-terser": "^6.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "4.9.1",
