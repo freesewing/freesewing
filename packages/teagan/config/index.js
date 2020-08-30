@@ -9,6 +9,11 @@ export default {
   type: 'pattern',
   difficulty: 3,
   tags: ['top', 'basics'],
+  cut: {
+    front: [2, 'onFold'],
+    back: [2, 'onFold'],
+    sleeve: 2
+  },
   optionGroups: {
     fit: ['chestEase', 'hipsEase', 'sleeveEase'],
     style: ['necklineWidth', 'necklineDepth', 'necklineBend', 'lengthBonus', 'sleeveLength'],
@@ -86,7 +91,7 @@ export default {
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     armholeDepthFactor: { pct: 65, min: 60, max: 70 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
-    backNeckCutout: { pct: 5, min: 2, max: 8 },
+    backNeckCutout: { pct: 8, min: 4, max: 12 },
 
     // Sleevecap (from brian)
     sleevecapEase: { pct: 0, min: 0, max: 5 },

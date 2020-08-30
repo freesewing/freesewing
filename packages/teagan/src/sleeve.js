@@ -1,5 +1,3 @@
-import { dimensions } from './shared'
-
 export default function (part) {
   let {
     store,
@@ -21,6 +19,12 @@ export default function (part) {
   if (width > points.bicepsRight.x * 2) width = points.bicepsRight.x * 2
   points.hemLeft = new Point(width / -2, height)
   points.hemRight = new Point(width / 2, height)
+
+  // Find top for grainline/dimensions later
+  points.top = new Path()
+    .move(points.capQ2)
+    .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+    .edge('top')
 
   paths.hemBase = new Path().move(points.hemLeft).line(points.hemRight).setRender(false)
   paths.saBase = new Path()
@@ -47,6 +51,10 @@ export default function (part) {
   if (complete) {
     points.title = points.gridAnchor.clone()
     macro('title', { at: points.title, nr: 2, title: 'back' })
+    macro('grainline', {
+      from: new Point(points.top.x, points.hemLeft.y),
+      to: points.top
+    })
 
     if (sa) {
       paths.sa = new Path()
@@ -61,12 +69,29 @@ export default function (part) {
 
   // Paperless?
   if (paperless) {
-    //dimensions(macro, points, sa)
-    //macro('vd', {
-    //  from: points.cbHem,
-    //  to: points.cbNeck,
-    //  x: points.cbHem.x - sa - 15
-    //})
+    macro('hd', {
+      from: points.hemLeft,
+      to: points.hemRight,
+      y: points.hemLeft.y + sa * 3 + 15
+    })
+    macro('hd', {
+      from: points.bicepsLeft,
+      to: points.bicepsRight,
+      y: points.hemLeft.y + sa * 3 + 30
+    })
+    macro('vd', {
+      from: points.hemRight,
+      to: points.bicepsRight,
+      x: points.bicepsRight.x + sa + 15
+    })
+    macro('vd', {
+      from: points.hemRight,
+      to: new Path()
+        .move(points.capQ2)
+        .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+        .edge('top'),
+      x: points.bicepsRight.x + sa + 30
+    })
   }
 
   return part

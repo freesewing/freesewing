@@ -77,12 +77,14 @@ export default function (part) {
 
   // Paperless?
   if (paperless) {
-    //dimensions(macro, points, sa)
-    //macro('vd', {
-    //  from: points.cbHem,
-    //  to: points.cbNeck,
-    //  x: points.cbHem.x - sa - 15
-    //})
+    // Remove dimensions that are front only
+    macro('rmd', { ids: store.get('frontOnlyDimensions') })
+    // These dimensions are only for the front
+    macro('vd', {
+      from: points.cbHem,
+      to: points.cbNeck,
+      x: points.cbHem.x - sa - 15
+    })
   }
 
   return part
