@@ -1,6 +1,12 @@
 # Change log for: @freesewing/teagan
 
 
+## 2.8.2 (2020-08-30)
+
+### Added
+
+ - Teagan is a T-shirt pattern
+
 
 This is the **initial release**, and the start of this change log.
 

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/paco
 
 
+## 2.8.1 (2020-08-16)
+
+### Fixed
+
+ - Added Titan as a peer dependency
+
 ## 2.8.0 (2020-08-10)
 
 ### Added

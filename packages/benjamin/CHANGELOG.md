@@ -1,6 +1,12 @@
 # Change log for: @freesewing/benjamin
 
 
+## 2.8.1 (2020-08-16)
+
+### Fixed
+
+ - Fixed issue with (length of) band
+
 ## 2.8.0 (2020-08-10)
 
 ### Fixed

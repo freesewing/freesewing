@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.8.2 (2020-08-30)
+
+### Added
+
+ - Parts not get a `name` property set that hold their (own) name/id
+
 ## 2.8.0 (2020-08-10)
 
 ### Fixed

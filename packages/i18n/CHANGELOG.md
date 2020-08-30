@@ -1,6 +1,16 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.8.2 (2020-08-30)
+
+### Added
+
+ - Added translations for plugin-title
+
+### Fixed
+
+ - Replaced a few identical files with symlinks
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

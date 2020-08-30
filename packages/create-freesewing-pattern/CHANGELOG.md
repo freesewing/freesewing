@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.8.1 (2020-08-16)
+
+### Fixed
+
+ - Fixed breaking change in execa upgrade in 2.8.0
+
 ## 2.6.0 (2020-05-01)
 
 ### Added

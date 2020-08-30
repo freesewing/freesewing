@@ -4,6 +4,65 @@
 ## Unreleased
 
 
+## 2.8.2 (2020-08-30)
+
+### core
+
+#### Added
+
+ - Parts not get a `name` property set that hold their (own) name/id
+
+### i18n
+
+#### Added
+
+ - Added translations for plugin-title
+
+#### Fixed
+
+ - Replaced a few identical files with symlinks
+
+### plugin-dimension
+
+#### Added
+
+ - Added support for passing in the ID used to add paths to the part
+ - Added the `rmd` macro that removes dimensions
+
+### plugin-title
+
+#### Added
+
+ - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
+
+### teagan
+
+#### Added
+
+ - Teagan is a T-shirt pattern
+
+
+## 2.8.1 (2020-08-16)
+
+### benjamin
+
+#### Fixed
+
+ - Fixed issue with (length of) band
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fixed breaking change in execa upgrade in 2.8.0
+
+### paco
+
+#### Fixed
+
+ - Added Titan as a peer dependency
+
+
 ## 2.8.0 (2020-08-10)
 
 ### benjamin
