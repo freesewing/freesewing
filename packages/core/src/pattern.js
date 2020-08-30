@@ -100,12 +100,14 @@ export default function Pattern(config = { options: {} }) {
   }
 
   // Part closure
-  this.Part = function () {
+  this.Part = function (name = false) {
     let part = new Part()
     part.context = context
     for (let macro in context.macros) {
       part[macroName(macro)] = context.macros[macro]
     }
+    if (name) part.name = name
+
     return part
   }
 }
@@ -155,7 +157,7 @@ Pattern.prototype.draft = function () {
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
     if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
-    this.parts[partName] = new this.Part()
+    this.parts[partName] = new this.Part(partName)
     if (typeof this.config.inject[partName] === 'string') {
       if (this.debug)
         this.raise.debug(
