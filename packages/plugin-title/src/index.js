@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-title') === false) {
         svg.attributes.set('freesewing:plugin-title', version)
         svg.style += style
@@ -13,8 +13,8 @@ export default {
     }
   },
   macros: {
-    title: function(so) {
-      const transform = function(anchor) {
+    title: function (so) {
+      const transform = function (anchor) {
         let cx = anchor.x - so.scale * anchor.x
         let cy = anchor.y - so.scale * anchor.y
 
@@ -56,6 +56,22 @@ export default {
           .attr('data-text', '( ' + this.context.settings.metadata.for + ' )')
           .attr('data-text-class', 'title-pattern')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+      }
+      if (this.context.config.cut && this.context.config.cut[this.name]) {
+        shift += 8
+        let cid = `_${prefix}_titleCut`
+        let cut = this.context.config.cut[this.name]
+        this.points[cid] = so.at
+          .shift(-90 - so.rotation, shift * so.scale)
+          .attr('data-text', 'cut')
+          .attr('data-text-class', 'title-pattern')
+          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+        if (typeof cut === 'number') this.points[cid].attr('data-text', ` ${cut}x`)
+        else if (Array.isArray(cut)) {
+          cut = Array.from(cut) // Don't change the original array
+          this.points[cid].attr('data-text', ` ${cut.shift()}x`)
+          for (const txt of cut) this.points[cid].attr('data-text', txt)
+        }
       }
     }
   }
