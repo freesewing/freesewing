@@ -29,8 +29,10 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/utils": "^2.8.1"
+    "@freesewing/utils": "^2.8.2-rc.0"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
