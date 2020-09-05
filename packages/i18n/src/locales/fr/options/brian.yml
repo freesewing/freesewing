@@ -10,7 +10,7 @@ backNeckCutout:
   description: Quelle est la profondeur de l'encolure dans le dos
 bicepsEase:
   title: Aisance au niveau des biceps
-  description: "L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance."
+  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
 collarEase:
   title: Aisance du cou
   description: L'ampleur d'aisance au niveau du cou.

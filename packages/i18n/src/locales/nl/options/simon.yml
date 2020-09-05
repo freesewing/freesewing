@@ -50,7 +50,7 @@ buttons:
   description: Het aantal knopen op de sluiting vooraan.
 collarAngle:
   title: Hoekjes kraag
-  description: De hoek van de punten van de kraag.
+  description: De hoek van de punten van de kraag. 
 collarBend:
   title: Kromming kraag
   description: De kromming van de kraag.
