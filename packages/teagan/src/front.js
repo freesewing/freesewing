@@ -60,7 +60,6 @@ export default function (part) {
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
   paths.saBase = new Path()
     .move(points.hem)
-    .line(points.waist)
     .curve_(points.waistCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
