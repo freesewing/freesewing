@@ -1,7 +1,7 @@
 # Change log for: @freesewing/teagan
 
 
-## 2.8.2 (2020-08-30)
+## 2.9.0 (2020-09-09)
 
 ### Added
 

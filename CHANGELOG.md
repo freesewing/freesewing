@@ -4,7 +4,13 @@
 ## Unreleased
 
 
-## 2.8.2 (2020-08-30)
+## 2.9.0 (2020-09-09)
+
+### components
+
+#### Added
+
+ - Added Teagan line drawing
 
 ### core
 
@@ -17,10 +23,17 @@
 #### Added
 
  - Added translations for plugin-title
+ - Added translations for teagan
 
 #### Fixed
 
  - Replaced a few identical files with symlinks
+
+### pattern-info
+
+#### Added
+
+ - Added teagan info
 
 ### plugin-dimension
 

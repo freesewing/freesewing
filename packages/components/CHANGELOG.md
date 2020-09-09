@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.9.0 (2020-09-09)
+
+### Added
+
+ - Added Teagan line drawing
+
 ## 2.8.0 (2020-08-10)
 
 ### Added
