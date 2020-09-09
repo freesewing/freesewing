@@ -49,12 +49,13 @@ export default {
   measurements: [
     'biceps',
     'chest',
+    'hips',
     'hpsToWaistBack',
-    'waistToHips',
     'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'hips'
+    'waistToHips',
+    'waist'
   ],
   dependencies: {
     front: 'base',
