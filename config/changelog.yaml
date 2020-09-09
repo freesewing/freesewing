@@ -2,13 +2,18 @@ Unreleased:
   date:
   Added:
 
-2.8.2:
-  date: 2020-08-30
+2.9.0:
+  date: 2020-09-09
   Added:
+    components:
+      - Added Teagan line drawing
     core:
       - Parts not get a `name` property set that hold their (own) name/id
     i18n:
       - Added translations for plugin-title
+      - Added translations for teagan
+    pattern-info:
+      - Added teagan info
     plugin-dimension:
       - Added support for passing in the ID used to add paths to the part
       - Added the `rmd` macro that removes dimensions
