@@ -1,7 +1,15 @@
+sleeveEase:
+  title: Sleeve ease
+  description: Amount of ease of your sleeves
+sleeveLength:
+  title: Sleeve length
+  description: Controls the length of your sleeves
+necklineBend:
+  title: Neckline curvature
+  description: Controls the curvature of the neckline.
 necklineDepth:
   title: Neckline depth
   description: Controls how deep the neck opening plunges down.
-
 necklineWidth:
   title: Neckline width
   description: Controls the width of the neck opening.
