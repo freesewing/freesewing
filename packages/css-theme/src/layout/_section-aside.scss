@@ -1,21 +1,149 @@
 div.fs-sa {
   display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  max-width: 1600px;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  > section{
-    width: 100%;
+  > section {
+    width: calc(100% - 300px - 4rem);
     padding: 1rem 1.5rem;
   }
   aside {
     padding: 0;
-    max-width: 600px;
-    min-width: 250px;
-    width: 50%;
+    width: 300px;
   }
   aside div.sticky {
     position: sticky;
     top: 0;
     height: calc(100vh - 64px);
     overflow-y: auto;
+    ul.links {
+      margin-top: 0;
+    }
+  }
+  aside div.aside-context {
+    padding: 0;
+    h5 {
+      padding: 1.5rem 1rem 0.5rem 1rem;
+      a {
+        margin-left: -1rem;
+        margin-right: -1rem;
+      }
+    }
+    h6 {
+      padding: 0;
+    }
+    h5 a,
+    h6 a {
+      padding: 0.25rem 0 0 1rem;
+    }
+    h5,
+    h6 {
+      margin: 0;
+      color: $oc-gray-6;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li > a {
+      padding: 0.25rem 1rem 0.25rem 1rem;
+    }
+  }
+  aside ul.aside-main-menu {
+    margin: 2rem 0 1rem;
+    list-style-type: none;
+    padding: 0;
+    li {
+      text-transform: uppercase;
+      font-family: 'Roboto condensed';
+      line-height: 2;
+      font-size: 1.25rem;
+      a {
+        font-weight: 900;
+        padding: 0.25rem 0;
+        display: block;
+        svg {
+          margin: 5px 1rem -5px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  section {
+    padding-left: 2rem;
+    article > div.text-section {
+      /* I've got 99 problems but too long text lines ain't on */
+      max-width: 99ch;
+    }
+  }
+}
+
+.theme-wrapper.light > div.fs-sa > aside > div.sticky {
+  ul.aside-main-menu li {
+    a {
+      color: $oc-gray-7;
+      svg {
+        color: $oc-violet-5;
+      }
+    }
+    a:hover {
+      background-color: $oc-violet-0;
+      text-decoration: none;
+    }
+    a.active {
+      background-color: $oc-violet-0;
+      svg {
+        color: $oc-gray-7;
+      }
+    }
+  }
+  div.aside-context {
+    a {
+      color: $oc-gray-7 !important;
+      font-family: 'Roboto condensed';
+      display: block;
+    }
+    a:hover {
+      background-color: $oc-violet-0;
+      text-decoration: none;
+    }
+  }
+}
+
+.theme-wrapper.dark > div.fs-sa > aside > div.sticky {
+  ul.aside-main-menu li {
+    a {
+      color: $oc-gray-4;
+      svg {
+        color: $oc-violet-4;
+      }
+    }
+    a:hover {
+      background-color: $oc-gray-8;
+      text-decoration: none;
+    }
+    a.active {
+      background-color: $oc-gray-8;
+      svg {
+        color: $oc-gray-4;
+      }
+    }
+  }
+  div.aside-context {
+    a {
+      color: $oc-gray-4 !important;
+      font-family: 'Roboto condensed';
+      display: block;
+    }
+    a:hover {
+      background-color: $oc-gray-8;
+      text-decoration: none;
+    }
   }
 }
 

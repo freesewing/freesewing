@@ -18,28 +18,35 @@ blockquote {
     border-color: inherit;
   }
 }
-blockquote > :first-child { margin-top: 0; }
-blockquote > p:last-of-type { margin-bottom: 0; }
+blockquote > :first-child {
+  margin-top: 0;
+}
+blockquote > p:last-of-type {
+  margin-bottom: 0;
+}
 
 blockquote.note {
-  background: $oc-blue-0;
-  border-color: $oc-blue-1;
+  background: lighten($oc-violet-0, 1);
+  border-color: $oc-violet-2;
   svg.icon.note {
-    color: $oc-blue-7;
+    color: $oc-gray-0;
+    background: $oc-violet-6;
   }
 }
 blockquote.tip {
-  background: $oc-grape-0;
-  border-color: $oc-grape-1;
+  background: lighten($oc-yellow-0, 1);
+  border-color: $oc-yellow-3;
   svg.icon.tip {
-    color: $oc-grape-7;
+    color: $oc-gray-0;
+    background: $oc-yellow-6;
   }
 }
 blockquote.warning {
   background: $oc-red-0;
-  border-color: $oc-red-1;
+  border-color: $oc-red-3;
   svg.icon.warning {
-    color: $oc-red-7;
+    color: $oc-gray-0;
+    background: $oc-red-7;
   }
 }
 
@@ -65,7 +72,6 @@ blockquote.fixme:after {
   text-shadow: none;
 }
 
-
 @include xs-screen {
   blockquote {
     margin: 2rem -1.5rem;
@@ -90,24 +96,27 @@ blockquote.fixme:after {
     border-color: $oc-gray-7;
   }
   blockquote.note {
-    background: $oc-blue-9;
-    border-color: $oc-blue-8;
+    background: darken($oc-violet-9, 30);
+    border-color: $oc-violet-9;
     svg.icon.note {
-      color: $oc-blue-2;
+      color: $oc-gray-0;
+      background: $oc-violet-9;
     }
   }
   blockquote.tip {
-    background: $oc-grape-9;
-    border-color: $oc-grape-8;
+    background: darken($oc-yellow-9, 35);
+    border-color: $oc-yellow-9;
     svg.icon.tip {
-      color: $oc-grape-2;
+      color: $oc-gray-0;
+      background: $oc-yellow-9;
     }
   }
   blockquote.warning {
-    background: $oc-red-9;
-    border-color: $oc-red-8;
+    background: darken($oc-red-9, 30);
+    border-color: $oc-red-9;
     svg.icon.warning {
-      color: $oc-red-2;
+      color: $oc-gray-0;
+      background: $oc-red-9;
     }
   }
   blockquote.fixme {
@@ -122,4 +131,3 @@ blockquote.fixme:after {
     border-right: 0;
   }
 }
-
