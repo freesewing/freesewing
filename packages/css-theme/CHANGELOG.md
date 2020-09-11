@@ -1,6 +1,12 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.9.0 (2020-09-09)
+
+### Added
+
+ - Changes to UI colors
+
 ## 2.7.1 (2020-07-24)
 
 ### Added

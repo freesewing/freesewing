@@ -6,6 +6,7 @@
 ### Added
 
  - Added Teagan line drawing
+ - Added Discord icon in Icon component
 
 ## 2.8.0 (2020-08-10)
 

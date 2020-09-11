@@ -11,6 +11,7 @@
 #### Added
 
  - Added Teagan line drawing
+ - Added Discord icon in Icon component
 
 ### core
 
@@ -18,12 +19,19 @@
 
  - Parts not get a `name` property set that hold their (own) name/id
 
+### css-theme
+
+#### Added
+
+ - Changes to UI colors
+
 ### i18n
 
 #### Added
 
  - Added translations for plugin-title
  - Added translations for teagan
+ - Added some translations for the UI
 
 #### Fixed
 

@@ -7,6 +7,7 @@
 
  - Added translations for plugin-title
  - Added translations for teagan
+ - Added some translations for the UI
 
 ### Fixed
 
