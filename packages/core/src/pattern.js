@@ -13,12 +13,16 @@ import { version } from '../package.json'
 export default function Pattern(config = { options: {} }) {
   // Events store and raise methods
   this.events = {
+    info: [],
     warning: [],
     error: [],
     debug: []
   }
   const events = this.events
   this.raise = {
+    info: function (data) {
+      events.info.push(data)
+    },
     warning: function (data) {
       events.warning.push(data)
     },
@@ -635,6 +639,7 @@ Pattern.prototype.getRenderProps = function () {
   props.settings = this.settings
   props.events = {
     debug: this.events.debug,
+    info: this.events.info,
     warning: this.events.warning,
     error: this.events.error
   }
