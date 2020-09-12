@@ -3,6 +3,7 @@ import aaron from './patterns/aaron.yaml'
 import bruce from './patterns/bruce.yaml'
 import hugo from './patterns/hugo.yaml'
 import simon from './patterns/simon.yaml'
+import teagan from './patterns/teagan.yaml'
 import cfp from './patterns/cfp.yaml'
 import cutonfold from './plugins/cutonfold.yaml'
 import grainline from './plugins/grainline.yaml'
@@ -15,6 +16,7 @@ let files = {
   bruce,
   hugo,
   simon,
+  teagan,
   cfp,
   cutonfold,
   grainline,
