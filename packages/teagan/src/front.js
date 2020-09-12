@@ -15,7 +15,9 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
+    raise,
+    units
   } = part.shorthand()
 
   // Hide Brian paths
@@ -55,6 +57,9 @@ export default function (part) {
     points.armholeHollowCp2,
     points.armholePitch.x
   )
+
+  // Raise info for full length
+  raise.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
