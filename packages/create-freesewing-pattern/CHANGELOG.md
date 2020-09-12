@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.9.0 (2020-09-09)
+
+### Fixed
+
+ - No longer instantiate a pattern, just to get the config
+
 ## 2.8.1 (2020-08-16)
 
 ### Fixed

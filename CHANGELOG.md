@@ -18,6 +18,14 @@
 #### Added
 
  - Parts not get a `name` property set that hold their (own) name/id
+ - Added the `info` type to raised events
+ - Added support for conditional loading of plugins
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - No longer instantiate a pattern, just to get the config
 
 ### css-theme
 
