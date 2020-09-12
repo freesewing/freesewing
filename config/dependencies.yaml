@@ -186,6 +186,7 @@ sven:
 teagan:
   peer:
     '@freesewing/brian': '^{{version}}'
+    '@freesewing/plugin-bust': '^{{version}}'
 utils:
   peer:
     'tlds': '^1.207.0'
