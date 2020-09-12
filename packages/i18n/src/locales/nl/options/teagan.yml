@@ -12,8 +12,8 @@ necklineBend:
   title: Curve halslijn
   description: Bepaalt de curve van de halsuitsnijding.
 necklineDepth:
-  title: Neckline depth
-  description: Controls how deep the neck opening plunges down.
+  title: Diepte halsuitsnijding
+  description: Bepaalt hoe diep de halsopening is.
 necklineWidth:
-  title: Neckline width
-  description: Controls the width of the neck opening.
+  title: Breedte halsuitsnijding
+  description: Bepaalt hoe breed de halsopening is.
