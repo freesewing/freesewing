@@ -15,7 +15,7 @@ export default {
     sleeve: 2
   },
   optionGroups: {
-    fit: ['chestEase', 'hipsEase', 'sleeveEase'],
+    fit: ['chestEase', 'hipsEase', 'sleeveEase', 'draftForHighBust'],
     style: ['necklineWidth', 'necklineDepth', 'necklineBend', 'lengthBonus', 'sleeveLength'],
     advanced: [
       'acrossBackFactor',
@@ -79,6 +79,9 @@ export default {
     collarEase: 0,
     shoulderSlopeReduction: 0,
     sleeveWidthGuarantee: 0.85,
+
+    // Boolean
+    draftForHighBust: { bool: false },
 
     // Percentages
     chestEase: { pct: 12, min: 5, max: 25 },
