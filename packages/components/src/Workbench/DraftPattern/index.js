@@ -108,7 +108,7 @@ const DraftPattern = (props) => {
 
   return (
     <div className="fs-sa">
-      <section style={{ margin: '1rem' }}>
+      <section>
         <Draft
           {...patternProps}
           design={design}
