@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-sprinkle",
-  "version": "2.9.0-rc.1",
+  "version": "2.9.0-rc.2",
   "description": "A FreeSewing plugin to bulk-add snippets to your pattern",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.9.0-rc.1"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
