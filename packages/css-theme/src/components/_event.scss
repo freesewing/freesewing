@@ -23,10 +23,10 @@ div.draft-events {
       font-size: 20px;
     }
     div.icon.debug {
-      background: $oc-grape-5;
+      background: $oc-gray-8;
     }
     div.icon.info {
-      background: $oc-blue-6;
+      background: $oc-violet-6;
     }
     div.icon.warning {
       background: $oc-orange-6;
@@ -46,10 +46,10 @@ div.draft-events {
     }
   }
   div.draft-event.debug {
-    border-color: $oc-grape-5;
+    border-color: $oc-gray-8;
   }
   div.draft-event.info {
-    border-color: $oc-blue-6;
+    border-color: $oc-violet-6;
   }
   div.draft-event.warning {
     border-color: $oc-orange-6;
@@ -63,5 +63,37 @@ div.draft-events {
   }
   div.draft-event details summary:hover {
     cursor: pointer;
+  }
+}
+
+.theme-wrapper.dark div.draft-events {
+  div.draft-event.debug {
+    border-color: $oc-gray-6;
+  }
+  div.draft-event.info {
+    border-color: $oc-violet-4;
+  }
+  div.draft-event.warning {
+    border-color: $oc-orange-4;
+  }
+  div.draft-event.error {
+    border-color: $oc-red-4;
+  }
+  div.draft-event {
+    div.icon {
+      color: $oc-gray-9;
+    }
+    div.icon.debug {
+      background: $oc-gray-6;
+    }
+    div.icon.info {
+      background: $oc-violet-4;
+    }
+    div.icon.warning {
+      background: $oc-orange-4;
+    }
+    div.icon.error {
+      background: $oc-red-4;
+    }
   }
 }
