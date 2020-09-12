@@ -397,6 +397,23 @@ Pattern.prototype.use = function (plugin, data) {
   return this
 }
 
+Pattern.prototype.useIf = function (plugin, settings) {
+  if (plugin.condition(settings)) {
+    if (this.debug)
+      this.raise.debug(
+        `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+      )
+    this.loadPluginHooks(plugin.plugin, plugin.data)
+  } else {
+    if (this.debug)
+      this.raise.debug(
+        `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+      )
+  }
+
+  return this
+}
+
 Pattern.prototype.loadPluginHooks = function (plugin, data) {
   for (let hook of Object.keys(this.hooks)) {
     if (typeof plugin.hooks[hook] === 'function') {
