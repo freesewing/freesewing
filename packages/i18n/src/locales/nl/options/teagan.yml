@@ -1,16 +1,19 @@
 ---
+draftForHighBust:
+  title: Teken voor hoge buste
+  description: Teken het patroon voor de hoge bustemaat (indien beschikbaar) in plaats van de volle borstomtrek. Dit heeft een aansluitender kledingstuk als resultaat voor mensen met borsten.
 sleeveEase:
-  title: Sleeve ease
-  description: Amount of ease of your sleeves
+  title: Overwijdte mouw
+  description: De hoeveelheid extra ruimte in je mouwen
 sleeveLength:
-  title: Sleeve length
-  description: Controls the length of your sleeves
+  title: Mouwlengte
+  description: Bepaalt de lengte van je mouwen
 necklineBend:
-  title: Neckline curvature
-  description: Controls the curvature of the neckline.
+  title: Curve halslijn
+  description: Bepaalt de curve van de halsuitsnijding.
 necklineDepth:
-  title: Neckline depth
-  description: Controls how deep the neck opening plunges down.
+  title: Diepte halsuitsnijding
+  description: Bepaalt hoe diep de halsopening is.
 necklineWidth:
-  title: Neckline width
-  description: Controls the width of the neck opening.
+  title: Breedte halsuitsnijding
+  description: Bepaalt hoe breed de halsopening is.
