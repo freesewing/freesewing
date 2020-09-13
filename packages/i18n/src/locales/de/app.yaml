@@ -31,6 +31,7 @@ chest: Brust
 chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
 chooseASize: Grösse wählen
 chooseAPerson: Person wählen
+chooseADesign: Choose a design
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
