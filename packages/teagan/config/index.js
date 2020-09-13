@@ -57,6 +57,7 @@ export default {
     'waistToHips',
     'waist'
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     front: 'base',
     back: 'front',

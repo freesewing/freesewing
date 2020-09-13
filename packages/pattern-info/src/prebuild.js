@@ -112,6 +112,7 @@ const options = {}
 const optionGroups = {}
 const parts = {}
 const measurements = {}
+const optionalMeasurements = {}
 const versions = {}
 const info = {}
 for (let pattern of Object.keys(patterns)) {
@@ -119,6 +120,7 @@ for (let pattern of Object.keys(patterns)) {
   optionGroups[pattern] = patterns[pattern].optionGroups
   parts[pattern] = patternParts(patterns[pattern])
   measurements[pattern] = patterns[pattern].measurements
+  optionalMeasurements[pattern] = patterns[pattern].optionalMeasurements || []
   versions[pattern] = patterns[pattern].version
   info[pattern] = {
     design: patterns[pattern].design,
@@ -146,6 +148,10 @@ fse.writeFileSync(
 fse.writeFileSync(
   path.join('.', 'src', 'prebuild', 'measurements.js'),
   'module.exports = ' + JSON.stringify(measurements) + '\n'
+)
+fse.writeFileSync(
+  path.join('.', 'src', 'prebuild', 'optional-measurements.js'),
+  'module.exports = ' + JSON.stringify(optionalMeasurements) + '\n'
 )
 fse.writeFileSync(
   path.join('.', 'src', 'prebuild', 'versions.js'),
