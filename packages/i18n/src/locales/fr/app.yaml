@@ -31,6 +31,7 @@ chest: Poitrine
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si cette personne n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les patrons sont tracés.
 chooseASize: Choisir une taille
 chooseAPerson: Choisir une personne
+chooseADesign: Choose a design
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
