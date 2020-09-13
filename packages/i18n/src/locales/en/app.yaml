@@ -30,6 +30,7 @@ chest: Chest
 chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
 chooseASize: Choose a size
 chooseAPerson: Choose a person
+chooseADesign: Choose a design
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
