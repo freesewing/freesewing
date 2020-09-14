@@ -28,7 +28,7 @@ lengthBonus:
   description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
 shoulderEase:
   title: Overwijdte schouder
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  description: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
 shoulderSlopeReduction:
   title: Reductie helling schouder
   description: De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
