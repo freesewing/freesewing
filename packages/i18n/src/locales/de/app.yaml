@@ -25,7 +25,7 @@ butThatCouldChange: Das könnte sich aber ändern
 cancel: Stornieren
 changePerson: Person ändern
 changePattern: Muster ändern
-chatOnGitter: Chatte bei Gitter
+chatOnDiscord: Chat on Discord
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
 chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
@@ -95,11 +95,11 @@ i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
-joinTheChatMsg: Wir haben einen Chatroom auf Gitter mit freundlichen Menschen, die gerne helfen. Also sei nicht schüchtern und schau bei einem Chat vorbei.
+joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
-loginWithProvider: 'Anmelden mit<br />{provider}'
+loginWithProvider: 'Log in with {provider}'
 logOut: Abmelden
 manual: Manuell
 markdownHelp: Markdown-Hilfe
@@ -128,6 +128,7 @@ orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: 'Andere {thing}'
 ourPatrons: Unsere Gönner
+ourRevenuePledge: Our revenue pledge
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
@@ -175,7 +176,7 @@ share: Teilen
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
-signupWithProvider: 'Registrieren mit<br />{provider}'
+signupWithProvider: 'Sign up with {provider}'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
@@ -303,6 +304,8 @@ editThing: '{thing} bearbeiten'
 editPattern-txt: Dieses Schnittmster im Muster-Editor laden
 featureRequiresAccount: Diese Funktion erfordert ein FreeSewing-Konto
 zoom: Zoom
+zoomIn: Zoom in
+zoomOut: Zoom out
 zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
 savePattern-txt: Dieses Muster in Ihrem FreeSewing-Konto speichern
 comparePattern: Schnittmuster vergleichen
