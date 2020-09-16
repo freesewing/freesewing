@@ -1,6 +1,8 @@
 @include xs-screen {
   .theme-wrapper.light div.fs-sa aside,
   .theme-wrapper.dark div.fs-sa aside,
+  .theme-wrapper.light div.draft-ui-menu,
+  .theme-wrapper.dark div.draft-ui-menu,
   .theme-wrapper.light div.menu,
   .theme-wrapper.dark div.menu {
     position: fixed;
@@ -8,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 0 0  1rem;
+    padding: 0 0 1rem;
     max-width: 600px;
     z-index: -10;
     transition: opacity 0.5s ease 0s;
@@ -29,9 +31,11 @@
   }
 }
 
+.theme-wrapper.light div.draft-ui-menu,
 .theme-wrapper.light div.menu {
   background: $oc-gray-1;
 }
+.theme-wrapper.dark div.draft-ui-menu,
 .theme-wrapper.dark div.menu {
   background: $oc-gray-8;
 }
@@ -42,4 +46,3 @@
     transform: translate(0px, 0px);
   }
 }
-

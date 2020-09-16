@@ -6,16 +6,48 @@ footer {
   margin: 0;
   padding: 4rem 1rem;
   text-align: center;
-  a { color: $fc-text-dark!important; }
-  a:hover { color: $fc-link-dark!important; }
-  a.gitter:hover { color: #ed1965!important; }
-  a.twitter:hover { color: #1da1f2!important; }
-  a.github:hover { color: #6cc644!important; }
-  a.instagram:hover { color: #e1306c!important; }
-  a.facebook:hover { color: #3b5998!important; }
+  a {
+    color: $fc-text-dark !important;
+  }
+  a:hover {
+    color: $fc-link-dark !important;
+  }
+  a.discord:hover {
+    color: #2a5ee8 !important;
+  }
+  a.twitter:hover {
+    color: #1da1f2 !important;
+  }
+  a.github:hover {
+    color: #6cc644 !important;
+  }
+  a.instagram:hover {
+    color: #e1306c !important;
+  }
+  a.facebook:hover {
+    color: #3b5998 !important;
+  }
   ul {
     margin: 0;
     padding: 0;
   }
-  li { list-style-type: none; }
+  li {
+    list-style-type: none;
+  }
+  p.social {
+    margin: 0;
+  }
+  ul.footer-main-menu {
+    margin-top: 2rem;
+    li {
+      display: inline;
+      a {
+        padding: 0.5rem;
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
 }
