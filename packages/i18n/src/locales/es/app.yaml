@@ -25,7 +25,7 @@ butThatCouldChange: Pero eso podría cambiar
 cancel: Cancelar
 changePerson: Cambiar persona
 changePattern: Cambiar patrón
-chatOnGitter: Chatea en Gitter
+chatOnDiscord: Chat on Discord
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chest: Pecho
 chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
@@ -95,11 +95,11 @@ i18n: Internacionalización
 imperialUnits: Unidades imperiales (pulgadas)
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
-joinTheChatMsg: Tenemos una sala de chat en Gitter con personas amigables que están felices de ayudar. Así que no seas tímido, y pasa por un chat.
+joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
 justAMoment: Un momento
 layout: Diseño
 logIn: Iniciar sesión
-loginWithProvider: 'Iniciar sesión con<br />{provider}'
+loginWithProvider: 'Log in with {provider}'
 logOut: cerrar sesión
 manual: A mano
 markdownHelp: Markdown ayuda
@@ -128,6 +128,7 @@ orPayPerYear: O pagar por año
 other: Otro
 otherThing: 'Otras {thing}'
 ourPatrons: Nuestros mecenas
+ourRevenuePledge: Our revenue pledge
 patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
@@ -175,7 +176,7 @@ share: Compartir
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
-signupWithProvider: 'Sign up with<br />{provider}'
+signupWithProvider: 'Sign up with {provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo
@@ -303,6 +304,8 @@ editThing: 'Edit {thing}'
 editPattern-txt: Load this pattern in the pattern editor
 featureRequiresAccount: This feature requires a FreeSewing account
 zoom: Zoom
+zoomIn: Zoom in
+zoomOut: Zoom out
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
 savePattern-txt: Store this pattern in your FreeSewing account
 comparePattern: Compare pattern
