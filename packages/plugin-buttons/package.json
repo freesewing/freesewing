@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-buttons",
-  "version": "2.9.0-rc.4",
+  "version": "2.9.0-rc.5",
   "description": "A FreeSewing plugin that provides button and buttonhole snippets",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.9.0-rc.4"
+    "@freesewing/core": "^2.9.0-rc.5"
   },
   "dependencies": {},
   "devDependencies": {},
