@@ -1,7 +1,15 @@
-h1,h2,h3,h4,h5,h6,button { @include title-font; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  @include title-font;
+}
 h1 {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 200;
   margin: 1rem 0 2rem;
   line-height: 1.1;
 }
@@ -10,7 +18,7 @@ h2 {
   border-top: 1px solid $oc-gray-4;
   margin: 3.5rem 0 1rem;
   padding: 1rem 0 1rem;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.1;
 }
 .theme-wrapper.dark h2 {
@@ -23,18 +31,22 @@ h2.bare {
 h3 {
   font-size: 2rem;
   margin: 1.75rem 0 1rem;
+  font-weight: 300;
 }
 h4 {
   font-size: 1.75rem;
   margin: 1.5rem 0 0.75rem;
+  font-weight: 300;
 }
 h5 {
   font-size: 1.5rem;
   margin: 1.25rem 0 0.5rem;
+  font-weight: 400;
 }
 h6 {
   font-size: 1.25rem;
   margin: 1rem 0 0.25rem;
+  font-weight: 400;
 }
 h2 a.anchor,
 h3 a.anchor,
@@ -46,8 +58,12 @@ h6 a.anchor {
 }
 
 @include sm-screen {
-  h1 { font-size: 3rem; }
-  h2 { font-size: 2.25rem; }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 @include xs-screen {
   h1 {
@@ -58,6 +74,10 @@ h6 a.anchor {
     font-size: 2rem;
     margin: 2.5rem 0 0.5rem;
   }
-  h3 { font-size: 1.85rem; }
-  h4 { font-size: 1.65rem; }
+  h3 {
+    font-size: 1.85rem;
+  }
+  h4 {
+    font-size: 1.65rem;
+  }
 }
