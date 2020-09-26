@@ -30,7 +30,6 @@ export default {
     'waistCircumference',
     'hipsCircumference',
     'hpsToWaistBack',
-    'hpsToWaistFront',
     'waistToKnee'
   ],
   dependencies: {},

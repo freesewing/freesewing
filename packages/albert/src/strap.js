@@ -25,8 +25,8 @@ export default function (part) {
   let hSpan = backOpening / 2 + bibWidth / 2
   let vSpan =
     measurements.hpsToWaistBack +
-    measurements.hpsToWaistFront -
-    measurements.hpsToWaistFront * options.bibLength
+    measurements.hpsToWaistBack -
+    measurements.hpsToWaistBack * options.bibLength
 
   let strapLength =
     Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chestCircumference * options.chestDepth

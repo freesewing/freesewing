@@ -16,19 +16,21 @@ export default function (part) {
 
   let chestWidth = measurements.chestCircumference / 4
   let bibWidth = chestWidth * options.bibWidth
-  let bibLength = measurements.hpsToWaistFront * options.bibLength
+  let bibLength = measurements.hpsToWaistBack * options.bibLength
   let apronLength =
-    measurements.hpsToWaistFront * options.bibLength +
+    measurements.hpsToWaistBack * options.bibLength +
     measurements.waistToKnee * (1 + options.lengthBonus)
   let apronWidth =
     Math.max(measurements.hipsCircumference, measurements.waistCircumference) *
     (1 - options.backOpening)
   let strapWidth = options.strapWidth * sa
   let hemWidth = 3 * sa
+  let pocketSize = apronLength / 4
 
   points.topLeft = new Point(0, 0)
   points.topLeftHem = points.topLeft.shift(270, hemWidth)
   points.bottomLeftHem = points.topLeftHem.shift(270, apronLength)
+  points.waistLeft = points.topLeftHem.shift(270, bibLength)
   points.bottomLeft = points.bottomLeftHem.shift(270, hemWidth)
   points.topRight = points.topLeft.shift(0, bibWidth / 2)
   points.topRightHem = points.topLeftHem.shift(0, bibWidth / 2)
@@ -38,14 +40,18 @@ export default function (part) {
   points.topRightBackCPfront = points.topRightBack.shift(180, (apronWidth - bibWidth) / 2 / 1.5)
   points.topRightCPdown = points.topRightHem.shift(
     270,
-    (measurements.hpsToWaistFront * options.bibLength) / 4
+    (measurements.hpsToWaistBack * options.bibLength) / 4
   )
 
   points.topCOF = points.topLeft.shift(270, apronLength / 5)
   points.bottomCOF = points.bottomLeft.shift(90, apronLength / 5)
 
-  console.log('bibLength ' + measurements.hpsToWaistFront * options.bibLength)
-  console.log('hpsToWaistFront ' + measurements.hpsToWaistFront)
+  points.pocketLeftTop = points.waistLeft.copy()
+  points.pocketRightTop = points.pocketLeftTop.shift(0, pocketSize)
+  points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
+  points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
+
+  console.log('bibLength ' + measurements.hpsToWaistBack * options.bibLength)
   console.log('hpsToWaistBack ' + measurements.hpsToWaistBack)
 
   paths.rightHem = new Path()
@@ -55,6 +61,16 @@ export default function (part) {
     .line(points.topRight)
     .attr('class', 'various dashed')
     .attr('data-text', 'narrow hem')
+    .attr('data-text-class', 'text-xs center')
+
+  paths.pocket = new Path()
+    .move(points.pocketLeftBottom)
+    .line(points.pocketLeftTop)
+    .line(points.pocketRightTop)
+    .line(points.pocketRightBottom)
+    .line(points.pocketLeftBottom)
+    .attr('class', 'various dashed')
+    .attr('data-text', 'pocket')
     .attr('data-text-class', 'text-xs center')
 
   paths.right = paths.rightHem.offset(sa)
@@ -83,7 +99,7 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(-90, 100)
     macro('title', {
