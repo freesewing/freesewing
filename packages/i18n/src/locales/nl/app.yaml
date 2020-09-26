@@ -25,12 +25,13 @@ butThatCouldChange: Maar dat kan veranderen
 cancel: Annuleren
 changePerson: Verander persoon
 changePattern: Ander patroon
-chatOnGitter: Chat via Gitter
+chatOnDiscord: Chat on Discord
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
 chestInfo: Borsten hebben extra maten nodig. Als deze persoon geen borsten heeft zullen overbodige maten verborgen worden bij het configureren. Dit heeft geen invloed op hoe patronen getekend worden.
 chooseASize: Kies een maat
 chooseAPerson: Kies een persoon
+chooseADesign: Kies een ontwerp
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
@@ -94,11 +95,11 @@ i18n: Internationalisering
 imperialUnits: Imperiale (Engelse) eenheden (duim)
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
-joinTheChatMsg: We hebben een chatroom op Gitter met vriendelijke mensen die graag helpen. Dus wees niet verlegen en kom langs voor een praatje.
+joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
 justAMoment: Een ogenblikje
 layout: Layout
 logIn: Aanmelden
-loginWithProvider: 'Log in met<br />{provider}'
+loginWithProvider: 'Log in with {provider}'
 logOut: Afmelden
 manual: Manueel
 markdownHelp: MarkDown hulp
@@ -127,6 +128,7 @@ orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: 'Andere {thing}'
 ourPatrons: Onze mecenassen
+ourRevenuePledge: Our revenue pledge
 patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
@@ -174,7 +176,7 @@ share: Delen
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
-signupWithProvider: 'Maak een account met<br />{provider}'
+signupWithProvider: 'Sign up with {provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
@@ -302,6 +304,8 @@ editThing: 'Bewerk {thing}'
 editPattern-txt: Laad dit patroon in de patroonbewerker
 featureRequiresAccount: Deze functie vereist een FreeSewing account
 zoom: Zoom
+zoomIn: Zoom in
+zoomOut: Zoom out
 zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
 savePattern-txt: Bewaar dit patroon in je FreeSewing account
 comparePattern: Vergelijk patroon
