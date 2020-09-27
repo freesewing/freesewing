@@ -28,7 +28,7 @@ lengthBonus:
   description: La cantidad a elongar. Valores negativos lo acortan.
 shoulderEase:
   title: Holgura de hombro
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
 shoulderSlopeReduction:
   title: Reducción de caída del hombro
   description: La cantidad en la que la caída del hombro se reduce para añadir hombreras.

@@ -1,19 +1,19 @@
 ---
 centerBackDart:
-  title: Dardo en el centro de la espalda
-  description: Dardo en la parte central posterior de su cuello para acomodar una espalda redondeada
+  title: Pinza en el centro de la espalda
+  description: Pinza en la parte central posterior de su cuello para acomodar una espalda redondeada
 sleeveVentLength:
-  title: Longitud de ventilación de la manga
-  description: Longitud de ventilación de la manga
+  title: Longitud de la vista de la manga
+  description: Longitud de la vista de la manga
 sleeveVentWidth:
-  title: Ancho de ventilación de la manga
-  description: Ancho de ventilación de la manga
+  title: Ancho de la vista de la manga
+  description: Ancho de la vista de la manga
 chestShaping:
-  title: Modelado del pecho
-  description: Cantidad de moldeado para acomodar la curva de pecho
+  title: Forma del pecho
+  description: Cantidad de forma para acomodar la curva de pecho
 frontDartPlacement:
-  title: Colocación delantera del dardo
-  description: Ubicación de los dardos delanteros
+  title: Colocación de la pinza delantera
+  description: Ubicación de las pinzas delanteras
 frontOverlap:
   title: Superposición frontal
   description: Cuánto se extiende la tela más allá de los botones de cierre

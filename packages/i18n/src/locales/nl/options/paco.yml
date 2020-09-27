@@ -1,19 +1,19 @@
 ---
 heelEase:
-  title: Heel ease
-  description: The amount of ease at your heel (when stepping into the leg)
+  title: Overwijdte hiel
+  description: De hoeveelheid overwijdte aan de hiel (wanneer je je been door de broekspijp steekt)
 frontPockets:
-  title: Front pockets
-  description: Whether or not to add front pockets on the side seam
+  title: Voorzakken
+  description: Of je al dan niet zakken in de zijnaad wil
 backPockets:
-  title: Back pockets
-  description: Whether or not to add welt pockets to the back
+  title: Achterzakken
+  description: Of je al dan niet paspelzakken op de achterkant wil
 elasticatedHem:
-  title: Elasticated hem
-  description: Whether or not you want an elasticated hem
+  title: Elastische zoom
+  description: Of je wel of niet elastiek aan de zoom wil
 waistElastic:
-  title: Waist elastic width
-  description: Width of the elastic at the waist
+  title: Breedte taille elastiek
+  description: Breedte van de elastiek aan de taille
 ankleElastic:
-  title: Ankle/Hem elastic width
-  description: Width of the (optional) elastic at the ankle/hem
+  title: Breedte enkel/zoom elastiek
+  description: Breedte van de (optionele) elastiek aan de enkel/zoom

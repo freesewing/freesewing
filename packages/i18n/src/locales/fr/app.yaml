@@ -25,12 +25,13 @@ butThatCouldChange: Mais cela pourrait changer
 cancel: Annuler
 changePerson: Changer de personne
 changePattern: Changer de patron
-chatOnGitter: Discuter sur Gitter
+chatOnDiscord: Chat on Discord
 checkInboxClickLinkInConfirmationEmail: Maintenant, vérifiez votre boîte de réception et cliquez sur le lien dans l'e-mail de confirmation que nous vous avons envoyé.
 chest: Poitrine
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si cette personne n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les patrons sont tracés.
 chooseASize: Choisir une taille
 chooseAPerson: Choisir une personne
+chooseADesign: Choose a design
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
@@ -94,11 +95,11 @@ i18n: Internationalisation
 imperialUnits: Unités impériales (pouces)
 instagram: Instagram
 invalidTldMessage: '.{tld} n''est pas un TLD valide'
-joinTheChatMsg: Nous avons un forum de discussion sur Gitter avec des personnes sympathiques qui seront heureuses d'aider. Alors ne soyez pas timide, et arrêtez-vous pour bavarder.
+joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
 justAMoment: Juste un instant
 layout: Mis en page
 logIn: Connexion
-loginWithProvider: 'Connectez-vous avec<br />{provider}'
+loginWithProvider: 'Log in with {provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -127,6 +128,7 @@ orPayPerYear: Ou payer par an
 other: Autre
 otherThing: 'Autres {thing}'
 ourPatrons: Nos mécènes
+ourRevenuePledge: Our revenue pledge
 patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
@@ -174,7 +176,7 @@ share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
-signupWithProvider: 'Inscrivez-vous avec<br />{provider}'
+signupWithProvider: 'Sign up with {provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
@@ -302,6 +304,8 @@ editThing: 'Modifier {thing}'
 editPattern-txt: Charger ce patron dans l'éditeur de patron
 featureRequiresAccount: Cette fonctionnalité nécessite un compte FreeSewing
 zoom: Zoom
+zoomIn: Zoom in
+zoomOut: Zoom out
 zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
 savePattern-txt: Stocker ce patron sur votre compte FreeSewing
 comparePattern: Comparer les patrons

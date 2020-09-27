@@ -22,10 +22,10 @@ fabricGrain:
   description: "Zie <a href='/docs/sewing/fabric-grain/'>Draadrichting</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 goodSidesTogether:
   term: goede kanten op elkaar
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  description: "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
 onTheFold:
-  term: on the fold
-  description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  term: aan de stofvouw
+  description: "Zie <a href='/docs/sewing/on-the-fold/'>Aan de stofvouw</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
 hemming:
   term: zomen
   description: "Zie <a href='/docs/sewing/hemming/'>Zomen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
