@@ -21,6 +21,7 @@ export default function (part) {
     (1 - options.backOpening)
   let backOpening =
     apronWidth - Math.max(measurements.hipsCircumference, measurements.waistCircumference)
+  let hemWidth = 3 * sa
 
   let hSpan = backOpening / 2 + bibWidth / 2
   let vSpan =
@@ -31,19 +32,23 @@ export default function (part) {
   let strapLength =
     Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chestCircumference * options.chestDepth
   let strapWidth = options.strapWidth * sa
-
+  /* 
   console.log('chestWidth ' + chestWidth)
   console.log('backOpening ' + backOpening)
   console.log('hSpan ' + hSpan)
   console.log('vSpan ' + vSpan)
   console.log('strapLength ' + strapLength)
-
+ */
   points.topLeft = new Point(0, 0)
+  points.topLeftHem = points.topLeft.shift(270, hemWidth)
   points.topMiddle = new Point(strapWidth, 0)
+  points.topMiddleHem = new Point(strapWidth, hemWidth)
   points.topRight = new Point(strapWidth * 2, 0)
-  points.bottomLeft = new Point(0, strapLength)
-  points.bottomMiddle = new Point(strapWidth, strapLength)
-  points.bottomRight = new Point(strapWidth * 2, strapLength)
+  points.bottomLeftHem = new Point(0, strapLength + hemWidth)
+  points.bottomLeft = new Point(0, strapLength + hemWidth * 2)
+  points.bottomMiddleHem = new Point(strapWidth, strapLength + hemWidth)
+  points.bottomMiddle = new Point(strapWidth, strapLength + hemWidth * 2)
+  points.bottomRight = new Point(strapWidth * 2, strapLength + hemWidth * 2)
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -54,12 +59,28 @@ export default function (part) {
     .close()
     .attr('class', 'fabric')
 
+  paths.topHem = new Path()
+    .move(points.topLeftHem)
+    .line(points.topMiddleHem)
+    .attr('class', 'various dashed')
+    .attr('data-text', 'attach')
+    .attr('data-text-class', 'text-xs center')
+  paths.bottomHem = new Path()
+    .move(points.bottomLeftHem)
+    .line(points.bottomMiddleHem)
+    .attr('class', 'various dashed')
+    .attr('data-text', 'attach')
+    .attr('data-text-class', 'text-xs center')
+
   paths.fold = new Path()
     .move(points.topMiddle)
     .line(points.bottomMiddle)
     .attr('class', 'various dashed')
     .attr('data-text', 'fold')
     .attr('data-text-class', 'text-xs center')
+
+  macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
+  macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
 
   // Complete?
   if (complete) {
@@ -87,6 +108,21 @@ export default function (part) {
       from: points.bottomLeft,
       to: points.topLeft,
       x: points.topLeft.x - sa - 15
+    })
+    macro('vd', {
+      from: points.topMiddle,
+      to: points.topMiddleHem,
+      x: points.topMiddleHem.x + sa + 15
+    })
+    macro('vd', {
+      from: points.topMiddleHem,
+      to: points.bottomMiddleHem,
+      x: points.topMiddleHem.x + sa + 15
+    })
+    macro('vd', {
+      from: points.bottomMiddleHem,
+      to: points.bottomMiddle,
+      x: points.bottomMiddleHem.x + sa + 15
     })
   }
 

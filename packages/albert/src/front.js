@@ -51,6 +51,12 @@ export default function (part) {
   points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
   points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
 
+  points.crossBoxTo1 = new Point(points.topRightHem.x - strapWidth, points.topRightHem.y + hemWidth)
+  points.crossBoxTo2 = new Point(
+    points.topRightBack.x - strapWidth,
+    points.topRightBack.y + hemWidth
+  )
+
   console.log('bibLength ' + measurements.hpsToWaistBack * options.bibLength)
   console.log('hpsToWaistBack ' + measurements.hpsToWaistBack)
 
@@ -69,7 +75,7 @@ export default function (part) {
     .line(points.pocketRightTop)
     .line(points.pocketRightBottom)
     .line(points.pocketLeftBottom)
-    .attr('class', 'various dashed')
+    .attr('class', 'lining dotted stroke-sm')
     .attr('data-text', 'pocket')
     .attr('data-text-class', 'text-xs center')
 
@@ -108,6 +114,16 @@ export default function (part) {
       title: 'Front'
     })
 
+    macro('crossBox', {
+      from: points.topRightHem,
+      to: points.crossBoxTo1
+    })
+    macro('crossBox', {
+      from: points.topRightBack,
+      to: points.crossBoxTo2,
+      text: 'attachment'
+    })
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
@@ -144,6 +160,21 @@ export default function (part) {
       from: points.topRightBack,
       to: points.topRight,
       x: points.topRightBack.x + sa + 15
+    })
+    macro('vd', {
+      from: points.topLeft,
+      to: points.topLeftHem,
+      x: points.topLeftHem.x + sa + 15
+    })
+    macro('vd', {
+      from: points.topLeftHem,
+      to: points.bottomLeftHem,
+      x: points.topLeftHem.x + sa + 15
+    })
+    macro('vd', {
+      from: points.bottomLeftHem,
+      to: points.bottomLeft,
+      x: points.bottomLeftHem.x + sa + 15
     })
   }
 
