@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-logo",
-  "version": "2.9.0-rc.5",
+  "version": "2.9.0-rc.6",
   "description": "A FreeSewing plugin to add our logo to your patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.9.0-rc.5"
+    "@freesewing/core": "^2.9.0-rc.6"
   },
   "dependencies": {},
   "devDependencies": {},
