@@ -11,6 +11,11 @@ customRollup:
   - remark-jargon
   - utils
   - prettier-config
+namedExports:
+  - css-theme
+  - models
+  - pattern-info
+  - mui-theme
 packageJson:
   benjamin:
     author: woutervdub (https://github.com/woutervdub)

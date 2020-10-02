@@ -2,17 +2,43 @@
 
 ## Unreleased
 
+## 2.8.0 (2020-08-10)
+
+### benjamin
+
+#### Fixed
+
+- Fix for incorrect length of the ribbon
+
+### components
+
+#### Added
+
+- Added Paco to LineDrawing component
+
+#### Removed
+
+- Removed the `Footer` component
+
 ### core
 
 #### Fixed
 
-- Fixed wrong return value in debug message from Path
+- Fix an edge case in utils.pointOnCurve for perfect horizontal curves
 
 ### paco
 
 #### Added
 
 - Initial release for Paco, a pattern for summer pants
+
+## 2.7.2 (2020-07-29)
+
+### core
+
+#### Fixed
+
+- Fixed wrong return value in debug message from Path
 
 ## 2.7.1 (2020-07-24)
 
@@ -942,6 +968,10 @@
 
 ### components
 
+#### Changed
+
+- Footer version number now links to Github release page
+
 #### Deprecated
 
 - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
@@ -949,6 +979,12 @@
 #### Removed
 
 - The Ogol component has been removed as it wasn't used
+
+### css-theme
+
+#### Added
+
+- Added styling for search results
 
 ## 2.1.3 (2019-10-18)
 

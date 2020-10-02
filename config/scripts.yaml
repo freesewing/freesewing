@@ -1,46 +1,44 @@
 _:
-  clean: "rimraf dist"
-  build: "npm run clean && rollup -c"
-  test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-  pubtest: "npm publish --registry http://localhost:6662"
-  pubforce: "npm publish"
-  symlink: "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
-  start: "rollup -c -w"
+  clean: 'rimraf dist'
+  build: 'rollup -c'
+  test: 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
+  pubtest: 'npm publish --registry http://localhost:6662'
+  pubforce: 'npm publish'
+  symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
+  start: 'rollup -c -w'
 _types:
   pattern:
-    netlify: "echo \"Not configured yet\""
-    test: "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
-    testci: "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+    netlify: 'echo "Not configured yet"'
+    test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+    testci: 'BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
 create-freesewing-pattern:
-  clean: "!"
-  nodebuild: "!"
-  modulebuild: "!"
-  build: "!"
+  clean: '!'
+  nodebuild: '!'
+  modulebuild: '!'
+  build: '!'
 css-theme:
-  build: "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
-  watch: "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
+  build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
+  watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
 components:
-  test: "echo \"{{name}}: No tests configured. Perhaps you'd like to do this?\" && exit 0"
-  storybook: "start-storybook -p 6663"
+  test: 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
+  storybook: 'start-storybook -p 6663'
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
-  clean: "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench"
-  build: "npm run clean && rollup -c"
-  watch: "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
+  clean: 'rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench'
+  build: 'rollup -c'
+  watch: 'BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs'
 core:
-  build: "npm run clean && rollup -c && rollup -c rollup.tests.js"
-  testonly: "BABEL_ENV=production mocha tests/*.test.js"
-  test: "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js"
-  report: "BABEL_ENV=production nyc report --reporter=html"
-  coverage: "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+  testonly: 'BABEL_ENV=production mocha tests/*.test.js'
+  test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
+  report: 'BABEL_ENV=production nyc report --reporter=html'
+  coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
 pattern-info:
-  prebuild: "node src/prebuild.js"
+  prebuild: 'node src/prebuild.js'
 plugin-theme:
   prebuild: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
 utils:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
-

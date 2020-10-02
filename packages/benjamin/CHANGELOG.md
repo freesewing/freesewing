@@ -1,5 +1,11 @@
 # Change log for: @freesewing/benjamin
 
+## 2.8.0 (2020-08-10)
+
+### Fixed
+
+- Fix for incorrect length of the ribbon
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

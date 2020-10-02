@@ -4,7 +4,6 @@ export default [
   'DraftConfigurator',
   'Emblem',
   'Example',
-  'Footer',
   'Icon',
   'Legend',
   'LineDrawing',

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-flip",
-  "version": "2.7.2",
+  "version": "2.8.0",
   "description": "A FreeSewing plugin to flip parts horizontally",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,7 +24,7 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && rollup -c",
+    "build": "rollup -c",
     "test": "echo \"plugin-flip: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.7.2"
+    "@freesewing/core": "^2.8.0"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -48,5 +48,8 @@
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6"
+  },
+  "rollup": {
+    "exports": "default"
   }
 }

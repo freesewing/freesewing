@@ -46,6 +46,9 @@ hugo:
 jaeger:
   description: Jeager is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
+paco:
+  description: Paco are casual yet stylish summer pants
+  title: Paco pants
 penelope:
   description: Penelope is a pencil skirt with or without a vent in the back.
   title: Penelope pencil skirt

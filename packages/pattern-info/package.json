@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.7.2",
+  "version": "2.8.0",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -22,7 +22,7 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && rollup -c",
+    "build": "rollup -c",
     "test": "echo \"pattern-info: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -45,5 +45,8 @@
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6"
+  },
+  "rollup": {
+    "exports": "named"
   }
 }

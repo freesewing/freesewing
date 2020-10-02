@@ -223,6 +223,9 @@ function packageConfig(pkg, config) {
       if (config.exceptions.packageJson[pkg][key] === '!') delete pkgConf[key]
     }
   }
+  if (config.exceptions.namedExports.indexOf(pkg) !== -1) {
+    pkgConf.rollup.exports = 'named'
+  }
 
   return pkgConf
 }
@@ -450,7 +453,9 @@ function configurePatternUnitTests(pkg, config) {
     version,
     pattern: pkg,
     Pattern: capitalize(pkg),
-    peerdeps: Object.keys(peerdeps).map( dep => dep+'@'+peerdeps[dep] ).join(' ')
+    peerdeps: Object.keys(peerdeps)
+      .map((dep) => dep + '@' + peerdeps[dep])
+      .join(' ')
   }
 
   for (let file of ['shared.test.js']) {

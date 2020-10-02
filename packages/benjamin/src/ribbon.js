@@ -21,7 +21,10 @@ export default function (part) {
   // Points
   points.bottomLeft = new Point(0, 0.5 * store.get('ribbonWidth'))
   points.topLeft = points.bottomLeft.flipY()
-  points.bottomRight = points.bottomLeft.shift(0, measurements.neck * (1 + options.collarEase) - (band *2))
+  points.bottomRight = points.bottomLeft.shift(
+    0,
+    measurements.neck * (1 + options.collarEase) - store.get('knotWidth') * 2
+  )
   points.topRight = points.bottomRight.flipY()
   points.titleAnchor = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
 

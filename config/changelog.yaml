@@ -1,13 +1,27 @@
 Unreleased:
   date:
+
+2.8.0:
+  date: 2020-08-10
   Added:
     paco:
       - Initial release for Paco, a pattern for summer pants
+    components:
+      - Added Paco to LineDrawing component
+  Fixed:
+    benjamin:
+      - Fix for incorrect length of the ribbon
+    core:
+      - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+  Removed:
+    components:
+      - Removed the `Footer` component
+
+2.7.2:
+  date: 2020-07-29
   Fixed:
     core:
       - Fixed wrong return value in debug message from Path
-    benjamin:
-      - Fix for incorrect length of the ribbon
 
 2.7.1:
   date: 2020-07-24
@@ -497,13 +511,13 @@ Unreleased:
 2.1.4:
   date: 2019-11-01
   Added:
-    - css-theme:
-        - Added styling for search results
+    css-theme:
+      - Added styling for search results
   Changed:
-    - components:
-        - Footer version number now links to Github release page
-    - example:
-        - Added the `snap-male` and `snap-female` snippets to the `plugin-buttons` example
+    components:
+      - Footer version number now links to Github release page
+    example:
+      - Added the `snap-male` and `snap-female` snippets to the `plugin-buttons` example
   Deprecated:
     components:
       - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
