@@ -1,14 +1,32 @@
 @mixin xs-screen {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin sm-screen {
-  @media (min-width: 600px) and (max-width: 959px) { @content; }
+  @media (min-width: 600px) and (max-width: 959px) {
+    @content;
+  }
 }
 @mixin lg-screen {
-  @media (min-width: 960px) { @content; }
+  @media (min-width: 960px) {
+    @content;
+  }
 }
 
-@mixin body-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-@mixin title-font { font-family: 'Roboto Condensed', sans-serif; }
-@mixin fixed-font { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-@mixin scribble-font { font-family: 'Permanent Marker', cursive; }
+@mixin body-font {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+@mixin title-font {
+  font-family: 'Raleway', sans-serif;
+}
+@mixin button-font {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@mixin fixed-font {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+@mixin scribble-font {
+  font-family: 'Permanent Marker', cursive;
+}

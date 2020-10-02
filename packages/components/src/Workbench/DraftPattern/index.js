@@ -3,8 +3,6 @@ import Draft from '../../Draft'
 import Zoombox from '../Zoombox'
 import Design from '../Design'
 import DraftConfigurator from '../../DraftConfigurator'
-import { FormattedMessage } from 'react-intl'
-import Prism from 'prismjs'
 import fileSaver from 'file-saver'
 import theme from '@freesewing/plugin-theme'
 import IconButton from '@material-ui/core/IconButton'
@@ -101,11 +99,6 @@ const DraftPattern = (props) => {
     }
   }
 
-  let gist = Prism.highlight(
-    JSON.stringify(props.gist, null, 2),
-    Prism.languages.javascript,
-    'javascript'
-  )
   let iconProps = {
     size: 'small',
     style: styles.icon,
@@ -115,7 +108,7 @@ const DraftPattern = (props) => {
 
   return (
     <div className="fs-sa">
-      <section style={{ margin: '1rem' }}>
+      <section>
         <Draft
           {...patternProps}
           design={design}

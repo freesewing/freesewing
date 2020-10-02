@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-title
 
 
+## 2.9.0 (2020-09-09)
+
+### Added
+
+ - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
+
 ## 2.4.2 (2020-03-08)
 
 ### Changed

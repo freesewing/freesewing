@@ -12,7 +12,7 @@ applyThisLayout: Aplicar este diseño
 areYouSureYouWantToContinue: Estás seguro de que quieres continuar?
 askForHelp: Pide ayuda
 automatic: Automático
-averagePeopleDoNotExist: 'La gente promedio no existe'
+averagePeopleDoNotExist: "La gente promedio no existe"
 awesome: Genial
 back: atras
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
@@ -25,12 +25,13 @@ butThatCouldChange: Pero eso podría cambiar
 cancel: Cancelar
 changePerson: Cambiar persona
 changePattern: Cambiar patrón
-chatOnGitter: Chatea en Gitter
+chatOnDiscord: Chat on Discord
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chest: Pecho
 chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chooseASize: Elige un tamaño
 chooseAPerson: Elige una persona
+chooseADesign: Choose a design
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
@@ -69,7 +70,7 @@ drafts: Bocetos
 draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastre y suelte una imagen aquí, o seleccione una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
-emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
+emailWorksToo: "Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará"
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 export: Exportar
 exportTiledPDF: Exportar PDF paginado
@@ -78,7 +79,7 @@ fieldRemoved: '{field} eliminado'
 fieldSaved: '{field} guardado'
 filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
-forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
+forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
 github: GitHub
@@ -94,11 +95,11 @@ i18n: Internacionalización
 imperialUnits: Unidades imperiales (pulgadas)
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
-joinTheChatMsg: Tenemos una sala de chat en Gitter con personas amigables que están felices de ayudar. Así que no seas tímido, y pasa por un chat.
+joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
 justAMoment: Un momento
 layout: Diseño
 logIn: Iniciar sesión
-loginWithProvider: 'Iniciar sesión con<br />{provider}'
+loginWithProvider: 'Log in with {provider}'
 logOut: cerrar sesión
 manual: A mano
 markdownHelp: Markdown ayuda
@@ -127,6 +128,7 @@ orPayPerYear: O pagar por año
 other: Otro
 otherThing: 'Otras {thing}'
 ourPatrons: Nuestros mecenas
+ourRevenuePledge: Our revenue pledge
 patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
@@ -137,6 +139,7 @@ patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liber
 patternInstructions: Intrucciones de los patrones
 patternOptions: Opciones del patrón
 pattern: Patrón
+sewingPatterns: Sewing patterns
 patterns: Patrones
 pendingConfirmation: Confirmación pendiente
 perMonth: por mes
@@ -173,7 +176,7 @@ share: Compartir
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
-signupWithProvider: 'Sign up with<br />{provider}'
+signupWithProvider: 'Sign up with {provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo
@@ -192,7 +195,7 @@ twitter: Twitter
 txt-footer: Freesewing is made by joost & contributors<br />with the financial support of our Patrons
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
-txt-tier8: 'Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!'
+txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
 txt-tiers: 'FreeSewing is fuelled by a voluntary subscription model'
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 updated: Actualizado
@@ -301,6 +304,8 @@ editThing: 'Edit {thing}'
 editPattern-txt: Load this pattern in the pattern editor
 featureRequiresAccount: This feature requires a FreeSewing account
 zoom: Zoom
+zoomIn: Zoom in
+zoomOut: Zoom out
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
 savePattern-txt: Store this pattern in your FreeSewing account
 comparePattern: Compare pattern

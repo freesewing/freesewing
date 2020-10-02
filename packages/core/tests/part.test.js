@@ -47,19 +47,6 @@ it("Should register and run a macro", () => {
   expect(part.points.macro.y).to.equal(456);
 });
 
-it("Should run debug", () => {
-  let pattern = new freesewing.Pattern();
-  let part = new pattern.Part();
-  let debug = part.debugClosure();
-  expect(typeof debug).to.equal("function");
-  let d = 1;
-  let e = 11;
-  let b = 111;
-  let u = 1111;
-  let g = 11111;
-  expect(debug(d, e, b, u, g)).to.equal(undefined);
-});
-
 it("Should return a free ID", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();

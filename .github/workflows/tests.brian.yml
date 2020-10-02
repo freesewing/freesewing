@@ -1,9 +1,10 @@
 name: Unit tests - Brian
 
-on: [push]
+on: [pull_request]
 
 jobs:
   test:
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,7 +23,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: 'cd packages/brian && npm install @freesewing/core@^2.8.0 @freesewing/plugin-bundle@^2.8.0 @freesewing/models@2.8.0 @freesewing/pattern-info@2.8.0 mocha chai'
+        run: "cd packages/brian && npm install @freesewing/core@^2.9.0-rc.6 @freesewing/plugin-bundle@^2.9.0-rc.6 @freesewing/models@2.9.0-rc.6 @freesewing/pattern-info@2.9.0-rc.6 mocha chai"
         env:
           CI: true
       - name: Build pattern

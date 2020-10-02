@@ -1,4 +1,4 @@
-import { macroName, round, sampleStyle, capitalize } from './utils'
+import { macroName, sampleStyle, capitalize } from './utils'
 import Part from './part'
 import Point from './point'
 import Path from './path'
@@ -13,12 +13,16 @@ import { version } from '../package.json'
 export default function Pattern(config = { options: {} }) {
   // Events store and raise methods
   this.events = {
+    info: [],
     warning: [],
     error: [],
     debug: []
   }
   const events = this.events
   this.raise = {
+    info: function (data) {
+      events.info.push(data)
+    },
     warning: function (data) {
       events.warning.push(data)
     },
@@ -100,12 +104,14 @@ export default function Pattern(config = { options: {} }) {
   }
 
   // Part closure
-  this.Part = function () {
+  this.Part = function (name = false) {
     let part = new Part()
     part.context = context
     for (let macro in context.macros) {
       part[macroName(macro)] = context.macros[macro]
     }
+    if (name) part.name = name
+
     return part
   }
 }
@@ -155,7 +161,7 @@ Pattern.prototype.draft = function () {
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
     if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
-    this.parts[partName] = new this.Part()
+    this.parts[partName] = new this.Part(partName)
     if (typeof this.config.inject[partName] === 'string') {
       if (this.debug)
         this.raise.debug(
@@ -387,6 +393,23 @@ Pattern.prototype.use = function (plugin, data) {
   if (this.debug) this.raise.debug(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
+
+  return this
+}
+
+Pattern.prototype.useIf = function (plugin, settings) {
+  if (plugin.condition(settings)) {
+    if (this.debug)
+      this.raise.debug(
+        `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+      )
+    this.loadPluginHooks(plugin.plugin, plugin.data)
+  } else {
+    if (this.debug)
+      this.raise.debug(
+        `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+      )
+  }
 
   return this
 }
@@ -633,6 +656,7 @@ Pattern.prototype.getRenderProps = function () {
   props.settings = this.settings
   props.events = {
     debug: this.events.debug,
+    info: this.events.info,
     warning: this.events.warning,
     error: this.events.error
   }

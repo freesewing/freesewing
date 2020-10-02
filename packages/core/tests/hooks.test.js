@@ -12,7 +12,6 @@ it("Should contain all hooks", () => {
     preRender: [],
     postRender: [],
     insertText: [],
-    debug: []
   };
   expect(h).to.eql(test);
 });

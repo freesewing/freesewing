@@ -152,8 +152,8 @@ export default (part) => {
       delta = deltaMethod()
     } while (Math.abs(delta) > 1 && run < 20)
   }
-  const adaptOutseam = (delta) => adaptSeam('out')
-  const adaptInseam = (delta) => adaptSeam('in')
+  const adaptOutseam = () => adaptSeam('out')
+  const adaptInseam = () => adaptSeam('in')
 
   // Shorthand
   let {
@@ -262,12 +262,12 @@ export default (part) => {
     adaptInseamAndOutseam()
 
   // Now one is ok, the other will be adapted
-  adaptOutseam(outseamDelta())
-  adaptInseam(inseamDelta())
+  adaptOutseam()
+  adaptInseam()
 
   // Changing one will ever so slightly impact the other, so let's run both again to be sure
-  adaptOutseam(outseamDelta())
-  adaptInseam(inseamDelta())
+  adaptOutseam()
+  adaptInseam()
 
   // Only now style the waist lower if requested
   if (options.waistHeight < 1) {

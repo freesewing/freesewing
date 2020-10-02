@@ -7,26 +7,21 @@ import '@freesewing/css-theme'
 import Pattern from 'pattern'
 
 const App = (props) => {
-  let instance = new Pattern()
-  let config = instance.config
-
-  // Adding untranslated strings
+  // You can use this to add transations
+  /*
   let translations = {
-    'measurements.ankleEntry': 'Ankle entry',
-    'measurements.backWaist': 'Back waist',
-    'measurements.crotchDepth': 'Crotch depth',
-    'measurements.crotchLength': 'Crotch length',
-    'measurements.frontCrotchLength': 'Front crotch length',
-    'measurements.frontHip': 'Front hip'
+    JSON: 'JSON',
+    someOtherString: 'Some other string that needs translation'
   }
+  */
 
   return (
     <Workbench
       freesewing={freesewing}
       Pattern={Pattern}
-      config={config}
+      config={Pattern.config}
       userLanguage="en"
-      translations={translations}
+      //translations={translations}
     />
   )
 }

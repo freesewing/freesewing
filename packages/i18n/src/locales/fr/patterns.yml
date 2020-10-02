@@ -30,7 +30,7 @@ diana:
   description: Diana est un top avec un col drapé.
   title: Diana draped top
 florent:
-  description: "Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l'avant."
+  description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
   title: Casquette plate Florent
 florence:
   description: 'Florence est un masque facial'
@@ -47,6 +47,9 @@ hugo:
 jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
+paco:
+  description: Paco are casual yet stylish summer pants
+  title: Paco pants
 penelope:
   description: Penelope est une jupe crayon avec ou sans fente dans le dos.
   title: Jupe crayon Penelope
@@ -68,6 +71,9 @@ sven:
 tamiko:
   description: Tamiko est un top zéro déchet.
   title: Top Tamiko
+teagan:
+  description: Teagan is a fitted T-shirt pattern
+  title: Teagan T-shirt
 theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo

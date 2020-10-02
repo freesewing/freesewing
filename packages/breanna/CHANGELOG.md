@@ -1,25 +1,28 @@
 # Change log for: @freesewing/breanna
 
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed
 
-- Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
-- Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
-- Removed `Circumference` suffix from measurement names
-- Removed deprecated `debug()` statements
+ - Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+ - Removed `Circumference` suffix from measurement names
+ - Removed deprecated `debug()` statements
 
 ## 2.2.0 (2020-02-22)
 
 ### Added
 
-- Breanna is a body block for womenswear
+ - Breanna is a body block for womenswear
 
 ### Changed
 
-- Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
+ - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
+
 
 This is the **initial release**, and the start of this change log.
 
 > Prior to version 2, FreeSewing was not a JavaScript project.
 > As such, that history is out of scope for this change log.
+

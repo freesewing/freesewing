@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bruce",
-  "version": "2.8.0",
+  "version": "2.9.0-rc.6",
   "description": "A FreeSewing pattern for boxer briefs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,8 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.8.0",
-    "@freesewing/plugin-bundle": "^2.8.0"
+    "@freesewing/core": "^2.9.0-rc.6",
+    "@freesewing/plugin-bundle": "^2.9.0-rc.6"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,14 +46,14 @@
     "eslint": "^7.6.0",
     "babel-jest": "^26.2.2",
     "jest": "26.2.2",
-    "@freesewing/components": "^2.8.0",
-    "@freesewing/css-theme": "^2.8.0",
-    "@freesewing/i18n": "^2.8.0",
-    "@freesewing/mui-theme": "^2.8.0",
-    "@freesewing/plugin-bust": "^2.8.0",
-    "@freesewing/plugin-buttons": "^2.8.0",
-    "@freesewing/plugin-flip": "^2.8.0",
-    "@freesewing/utils": "^2.8.0",
+    "@freesewing/components": "^2.9.0-rc.6",
+    "@freesewing/css-theme": "^2.9.0-rc.6",
+    "@freesewing/i18n": "^2.9.0-rc.6",
+    "@freesewing/mui-theme": "^2.9.0-rc.6",
+    "@freesewing/plugin-bust": "^2.9.0-rc.6",
+    "@freesewing/plugin-buttons": "^2.9.0-rc.6",
+    "@freesewing/plugin-flip": "^2.9.0-rc.6",
+    "@freesewing/utils": "^2.9.0-rc.6",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^7.0.2",
     "react-scripts": "^3.4.1",
@@ -82,7 +82,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

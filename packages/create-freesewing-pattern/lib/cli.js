@@ -5,7 +5,6 @@ const path = require('path')
 const chalk = require('chalk')
 const program = require('commander')
 const strings = require('@freesewing/i18n').strings
-const { version } = require('../package')
 
 const getDefaultLibraryParams = require('./get-default-library-params')
 const createLibrary = require('./create-library')
@@ -94,10 +93,10 @@ ${strings[params.language]['cfp.runTheseCommands']}:
 
 
 ${strings[params.language]['cfp.devDocsAvailableAt']}
-  ${chalk.bold('https://' + params.language + '.freesewing.dev/')}
+  ${chalk.bold('https://freesewing.dev/')}
 
 ${strings[params.language]['cfp.talkToUs']}
-  ${chalk.bold('https://gitter.im/freesewing/freesewing')}
+  ${chalk.bold('https://gitter.im/freesewing/development')}
 
 `)
 

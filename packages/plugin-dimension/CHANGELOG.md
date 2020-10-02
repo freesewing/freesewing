@@ -1,6 +1,13 @@
 # Change log for: @freesewing/plugin-dimension
 
 
+## 2.9.0 (2020-09-09)
+
+### Added
+
+ - Added support for passing in the ID used to add paths to the part
+ - Added the `rmd` macro that removes dimensions
+
 ## 2.4.4 (2020-03-15)
 
 ### Changed

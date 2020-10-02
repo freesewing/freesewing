@@ -1,5 +1,4 @@
 import Attributes from './attributes'
-import Point from './point'
 
 function Snippet(def, anchor, debug = false) {
   this.def = def

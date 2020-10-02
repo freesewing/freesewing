@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "2.8.0",
+  "version": "2.9.0-rc.6",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -28,7 +28,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.8.0"
+    "@freesewing/pattern-info": "^2.9.0-rc.6"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -39,7 +39,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

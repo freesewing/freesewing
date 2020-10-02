@@ -26,11 +26,15 @@ header.navbar {
   div.emblem {
     margin-right: 26px;
     a {
-      text-decoration: none!important;
-      @include title-font;
+      text-decoration: none !important;
+      @include button-font;
       font-size: 26px;
-      span.lem { color: $oc-gray-2; }
-      span.emb { color: $fc-link-dark; }
+      span.lem {
+        color: $oc-gray-2;
+      }
+      span.emb {
+        color: $fc-link-dark;
+      }
     }
   }
   div.spread {
@@ -41,18 +45,18 @@ header.navbar {
   a.nav,
   button {
     @include title-font;
-    text-decoration: none!important;
+    text-decoration: none !important;
     margin: 0;
     padding: 0 13px;
     height: 60px;
-    color: $fc-text-dark!important;
+    color: $fc-text-dark !important;
     border: 0;
     line-height: 64px;
     border-bottom: 4px solid $fc-bg-dark;
     font-size: 18px;
     text-decoration: none;
     transition: color 0.2s ease, border-color 0.2s ease-in-out;
-    background:none;
+    background: none;
   }
   button {
     /* For buttons, border does not count for height */
@@ -83,7 +87,6 @@ header.navbar > div {
   align-items: center;
 }
 
-
 @include xs-screen {
   header.navbar {
     display: none;
@@ -95,29 +98,29 @@ header.navbar > div {
     height: 54px;
     width: calc(100% - 36px);
     padding: 0 18px;
-  	> div {
-  	  height: 54px;
-  	}
-  	div.logo,
-  	div.emblem {
-  	  margin-right: 12px;
-  	}
-  	div.logo a {
-  	  height: 32px;
-  	  width: 32px;
-  	}
-  	div.emblem a {
+    > div {
+      height: 54px;
+    }
+    div.logo,
+    div.emblem {
+      margin-right: 12px;
+    }
+    div.logo a {
+      height: 32px;
+      width: 32px;
+    }
+    div.emblem a {
       font-size: 22px;
-  	}
-  	a.nav {
-  	  padding: 0 6px;
-  	  line-height: 54px;
-  	  height: 50px;
-  	}
-  	button {
-  	  padding: 0 6px;
-  	  height: 54px;
-  	  line-height: 54px;
-  	}
+    }
+    a.nav {
+      padding: 0 6px;
+      line-height: 54px;
+      height: 50px;
+    }
+    button {
+      padding: 0 6px;
+      height: 54px;
+      line-height: 54px;
+    }
   }
 }

@@ -185,7 +185,7 @@ it("Should find no intersection between two curves", () => {
 
 it("Should correctly format units", () => {
   expect(freesewing.utils.units(123.456)).to.equal("12.35cm");
-  expect(freesewing.utils.units(123.456, "imperial")).to.equal('4.86"');
+  expect(freesewing.utils.units(123.456, "imperial")).to.equal('4.86&quot;');
 });
 
 it("Should find a start or end point on beam", () => {

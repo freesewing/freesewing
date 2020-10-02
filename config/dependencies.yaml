@@ -149,6 +149,9 @@ mui-theme:
 legend:
   peer:
     '@freesewing/plugin-buttons': '^{{version}}'
+paco:
+  peer:
+    '@freesewing/titan': '^{{version}}'
 plugin-bundle:
   _:
     '@freesewing/plugin-cutonfold': '^{{version}}'
@@ -180,6 +183,10 @@ simone:
 sven:
   peer:
     '@freesewing/brian': '^{{version}}'
+teagan:
+  peer:
+    '@freesewing/brian': '^{{version}}'
+    '@freesewing/plugin-bust': '^{{version}}'
 utils:
   peer:
     'tlds': '^1.207.0'

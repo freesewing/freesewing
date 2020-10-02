@@ -7,9 +7,6 @@ import '@freesewing/css-theme'
 import Pattern from 'pattern'
 
 const App = (props) => {
-  let instance = new Pattern()
-  let config = instance.config
-
   // You can use this to add transations
   /*
   let translations = {
@@ -22,7 +19,7 @@ const App = (props) => {
     <Workbench
       freesewing={freesewing}
       Pattern={Pattern}
-      config={config}
+      config={Pattern.config}
       userLanguage="{{language}}"
       //translations={translations}
     />

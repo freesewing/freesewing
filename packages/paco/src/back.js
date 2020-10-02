@@ -48,8 +48,6 @@ export default function (part) {
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     options,
     measurements,
     complete,

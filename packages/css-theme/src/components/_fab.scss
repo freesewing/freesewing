@@ -2,13 +2,16 @@ button.fab {
   position: fixed;
   bottom: 1rem;
   width: 64px;
-  height: 64px!important;
+  height: 64px !important;
   z-index: 20;
   font-size: 2rem;
   border-radius: 50%;
 }
 button.fab.primary {
   right: 1rem;
+}
+button.fab.secondary {
+  right: calc(1.5rem + 64px);
 }
 
 .style-wrapper.light,

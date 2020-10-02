@@ -16,15 +16,16 @@
     "@freesewing/plugin-i18n": "latest",
     "@freesewing/plugin-svgattr": "latest",
     "@freesewing/utils": "latest",
-    "@material-ui/core": "^4.4.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/lab": "^v4.0.0-alpha.25",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^v4.0.0-alpha.56",
     "pattern": "link:..",
-    "prismjs": "1.17.1",
-    "react": "^16.9",
-    "react-dom": "^16.9",
-    "react-scripts": "^3.1.1",
+    "prismjs": "1.20.0",
+    "react": "^16.13",
+    "react-dom": "^16.13",
+    "react-scripts": "^3.4.1",
     "file-saver": "^2.0.2",
+    "react-markdown": "4.3.1",
     "typeface-roboto-condensed": "latest"
   },
   "scripts": {
@@ -43,6 +44,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-prismjs": "1.1.1"
+    "babel-plugin-prismjs": "2.0.1"
   }
 }

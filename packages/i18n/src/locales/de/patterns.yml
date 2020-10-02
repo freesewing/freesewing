@@ -33,8 +33,8 @@ florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
 florence:
-  description: 'Florence ist eine Gesichtsmaske'
-  title: Florence Gesichtsmaske
+  description: 'Florence is a face mask'
+  title: Florence face mask
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
   title: Holmes Deerstalker-Mütze
@@ -47,6 +47,9 @@ hugo:
 jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Sakko Jaeger
+paco:
+  description: Paco are casual yet stylish summer pants
+  title: Paco pants
 penelope:
   description: Penelope ist ein Bleistiftrock mit oder ohne Gehschlitz in rückwärtigen Teil.
   title: Penelope Bleistiftrock
@@ -68,6 +71,9 @@ sven:
 tamiko:
   description: Tamiko ist ein Zero Waste Top.
   title: Top Tamiko
+teagan:
+  description: Teagan is a fitted T-shirt pattern
+  title: Teagan T-shirt
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Hose Theo

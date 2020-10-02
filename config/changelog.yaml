@@ -1,5 +1,47 @@
 Unreleased:
   date:
+  Added:
+
+2.9.0:
+  date: 2020-09-09
+  Added:
+    components:
+      - Added Teagan line drawing
+      - Added Discord icon in Icon component
+    core:
+      - Parts not get a `name` property set that hold their (own) name/id
+      - Added the `info` type to raised events
+      - Added support for conditional loading of plugins
+    css-theme:
+      - Changes to UI colors
+    i18n:
+      - Added translations for plugin-title
+      - Added translations for teagan
+      - Added some translations for the UI
+    pattern-info:
+      - Added teagan info
+    plugin-dimension:
+      - Added support for passing in the ID used to add paths to the part
+      - Added the `rmd` macro that removes dimensions
+    plugin-title:
+      - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
+    teagan:
+      - Teagan is a T-shirt pattern
+  Fixed:
+    create-freesewing-pattern:
+      - No longer instantiate a pattern, just to get the config
+    i18n:
+      - Replaced a few identical files with symlinks
+
+2.8.1:
+  date: 2020-08-16
+  Fixed:
+    benjamin:
+      - Fixed issue with (length of) band
+    create-freesewing-pattern:
+      - Fixed breaking change in execa upgrade in 2.8.0
+    paco:
+      - Added Titan as a peer dependency
 
 2.8.0:
   date: 2020-08-10

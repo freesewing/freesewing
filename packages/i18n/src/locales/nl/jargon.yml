@@ -22,7 +22,10 @@ fabricGrain:
   description: "Zie <a href='/docs/sewing/fabric-grain/'>Draadrichting</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 goodSidesTogether:
   term: goede kanten op elkaar
-  description: "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
+  description: "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
+onTheFold:
+  term: aan de stofvouw
+  description: "Zie <a href='/docs/sewing/on-the-fold/'>Aan de stofvouw</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
 hemming:
   term: zomen
   description: "Zie <a href='/docs/sewing/hemming/'>Zomen</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
@@ -61,13 +64,13 @@ zigZag:
   description: "Zie <a href='/docs/sewing/zig-zag-stitch/'>Zigzagsteek</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
 freesewing:
   term: freesewing
-  description: "<b>FreeSewing</b> is een open source platform voor naaipatronen op maat"
+  description: '<b>FreeSewing</b> is een open source platform voor naaipatronen op maat'
 patternOptions:
   term: patroon opties
-  description: "De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen"
+  description: 'De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen'
 draftSettings:
   term: instellingen patroontekening
-  description: "De <b>instellingen patroontekening</b> geven je controle over goe een patroon gegenereerd wordt"
+  description: 'De <b>instellingen patroontekening</b> geven je controle over goe een patroon gegenereerd wordt'
 patrons:
   term: mecenas
-  description: "Mecenassen ondersteunen FreeSewing financieel. Het zijn loyale supporters die zorgen voor een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap."
+  description: 'Mecenassen ondersteunen FreeSewing financieel. Het zijn loyale supporters die zorgen voor een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap.'

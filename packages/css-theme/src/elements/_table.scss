@@ -7,7 +7,7 @@
 
 // Data tables
 table.data {
-  @include title-font;
+  @include button-font;
   border-collapse: collapse;
 }
 table.data tr {
@@ -31,4 +31,3 @@ table.data tbody tr.neckcircumference td {
 .theme-wrapper.dark table.data tr:nth-child(even) {
   background-color: $oc-gray-8;
 }
-

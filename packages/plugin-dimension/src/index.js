@@ -15,10 +15,7 @@ function drawDimension(from, to, so, self) {
 }
 
 function drawLeader(self, from, to, id) {
-  self.paths[id] = new self.Path()
-    .move(from)
-    .line(to)
-    .attr('class', 'mark dotted')
+  self.paths[id] = new self.Path().move(from).line(to).attr('class', 'mark dotted')
 }
 
 function hleader(so, type, self, id) {
@@ -68,7 +65,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-dimension') === false) {
         svg.attributes.set('freesewing:plugin-dimension', version)
         svg.defs += markers
@@ -77,28 +74,28 @@ export default {
   },
   macros: {
     // horizontal
-    hd: function(so) {
-      let id = this.getId()
+    hd: function (so) {
+      let id = so.id || this.getId()
       let from = hleader(so, 'from', this, id + '_ls')
       let to = hleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
     },
     // vertical
-    vd: function(so) {
-      let id = this.getId()
+    vd: function (so) {
+      let id = so.id || this.getId()
       let from = vleader(so, 'from', this, id + '_ls')
       let to = vleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
     },
     // linear
-    ld: function(so) {
-      let id = this.getId()
+    ld: function (so) {
+      let id = so.id || this.getId()
       let from = lleader(so, 'from', this, id + '_ls')
       let to = lleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
     },
     // path
-    pd: function(so) {
+    pd: function (so) {
       let dimension = so.path
         .offset(so.d)
         .attr('class', 'mark')
@@ -106,10 +103,23 @@ export default {
         .attr('marker-end', 'url(#dimensionTo)')
         .attr('data-text', so.text || this.units(so.path.length()))
         .attr('data-text-class', 'fill-mark center')
-      let id = this.getId()
+      let id = so.id || this.getId()
       drawLeader(this, so.path.start(), dimension.start(), id + '_ls')
       drawLeader(this, so.path.end(), dimension.end(), id + '_le')
       this.paths[id] = dimension
+    },
+    // Remove dimension
+    rmd: function (so) {
+      if (this.paths[so.id]) delete this.paths[so.id]
+      if (this.paths[`${so.id}_ls`]) delete this.paths[`${so.id}_ls`]
+      if (this.paths[`${so.id}_le`]) delete this.paths[`${so.id}_le`]
+      if (Array.isArray(so.ids)) {
+        for (const id of so.ids) {
+          if (this.paths[id]) delete this.paths[id]
+          if (this.paths[`${id}_ls`]) delete this.paths[`${id}_ls`]
+          if (this.paths[`${id}_le`]) delete this.paths[`${id}_le`]
+        }
+      }
     }
   }
 }

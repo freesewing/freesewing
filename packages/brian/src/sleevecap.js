@@ -14,7 +14,7 @@ function sleevecapAdjust(store) {
 }
 
 function draftSleevecap(part, run) {
-  let { units, store, measurements, options, Point, points, Path, paths } = part.shorthand()
+  let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
@@ -136,7 +136,7 @@ function draftSleevecap(part, run) {
 }
 
 export default (part) => {
-  let { store, units, options, Point, points, paths } = part.shorthand()
+  let { store, units, options, Point, points, paths, raise } = part.shorthand()
 
   store.set('sleeveFactor', 1)
   let run = 0
@@ -146,7 +146,8 @@ export default (part) => {
     delta = sleevecapDelta(store)
     sleevecapAdjust(store)
     run++
-  } while (options.brianFitSleeve === true && run < 30 && Math.abs(sleevecapDelta(store)) > 2)
+    raise.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
+  } while (options.brianFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
 
   // Paths
   paths.sleevecap.attr('class', 'fabric')

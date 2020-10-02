@@ -1,6 +1,6 @@
 nav.breadcrumbs {
   ul {
-    @include title-font;
+    @include button-font;
     margin-left: 0;
     padding-left: 0;
     font-size: 95%;
@@ -9,11 +9,11 @@ nav.breadcrumbs {
       display: inline-block;
     }
     li:first-child:before {
-      content: "";
+      content: '';
       padding: 0;
     }
     li:before {
-      content: "»";
+      content: '»';
       padding: 0 0.25rem;
       font-size: 125%;
     }
@@ -28,4 +28,3 @@ nav.breadcrumbs {
     }
   }
 }
-

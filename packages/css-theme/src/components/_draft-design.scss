@@ -55,19 +55,19 @@ svg.freesewing.draft {
   path.focus.point.c1,
   circle.focus.point.c1,
   path.focus.coords.c1,
-  circle.focus.coords.c01{
+  circle.focus.coords.c01 {
     stroke: $oc-green-6;
   }
   path.focus.point.c2,
   circle.focus.point.c2,
   path.focus.coords.c2,
-  circle.focus.coords.c02{
+  circle.focus.coords.c02 {
     stroke: $oc-blue-6;
   }
   path.focus.point.c3,
   circle.focus.point.c3,
   path.focus.coords.c3,
-  circle.focus.coords.c03{
+  circle.focus.coords.c03 {
     stroke: $oc-grape-6;
   }
   path.focus.coords,
@@ -82,52 +82,102 @@ svg.freesewing.draft {
     stroke: $oc-orange-5;
     stroke-width: 1;
   }
-  path.focus.path.c0 { stroke: $oc-red-6 }
-  path.focus.path.c1 { stroke: $oc-green-6 }
-  path.focus.path.c2 { stroke: $oc-blue-6 }
-  path.focus.path.c3 { stroke: $oc-grape-6 }
+  path.focus.path.c0 {
+    stroke: $oc-red-6;
+  }
+  path.focus.path.c1 {
+    stroke: $oc-green-6;
+  }
+  path.focus.path.c2 {
+    stroke: $oc-blue-6;
+  }
+  path.focus.path.c3 {
+    stroke: $oc-grape-6;
+  }
 }
 
 div.design {
-  @include title-font;
+  @include button-font;
   font-size: 115%;
   margin: 1rem 0;
   text-align: left;
-  h6.point.c0 { border-bottom: 1px solid $oc-red-6; }
-  h6.point.c1 { border-bottom: 1px solid $oc-green-6; }
-  h6.point.c2 { border-bottom: 1px solid $oc-blue-6; }
-  h6.point.c3 { border-bottom: 1px solid $oc-grape-6; }
+  h6.point.c0 {
+    border-bottom: 1px solid $oc-red-6;
+  }
+  h6.point.c1 {
+    border-bottom: 1px solid $oc-green-6;
+  }
+  h6.point.c2 {
+    border-bottom: 1px solid $oc-blue-6;
+  }
+  h6.point.c3 {
+    border-bottom: 1px solid $oc-grape-6;
+  }
 }
 
 .theme-wrapper.light svg.freesewing.draft {
   g.design.point {
-    circle { fill: $fc-link-light; }
-    circle.hovertrap { stroke: $fc-link-light; }
+    circle {
+      fill: $fc-link-light;
+    }
+    circle.hovertrap {
+      stroke: $fc-link-light;
+    }
   }
-  path.design.hovertrap { stroke: $fc-link-light; }
-  circle.design.path.cp { fill: $fc-bg-light; }
+  path.design.hovertrap {
+    stroke: $fc-link-light;
+  }
+  circle.design.path.cp {
+    fill: $fc-bg-light;
+  }
 }
 
 .theme-wrapper.light div.design {
-  h6.path.c0 { background-color: rgba($oc-red-6, 0.3) }
-  h6.path.c1 { background-color: rgba($oc-green-6, 0.3) }
-  h6.path.c2 { background-color: rgba($oc-blue-6, 0.3) }
-  h6.path.c3 { background-color: rgba($oc-grape-6, 0.3) }
+  h6.path.c0 {
+    background-color: rgba($oc-red-6, 0.3);
+  }
+  h6.path.c1 {
+    background-color: rgba($oc-green-6, 0.3);
+  }
+  h6.path.c2 {
+    background-color: rgba($oc-blue-6, 0.3);
+  }
+  h6.path.c3 {
+    background-color: rgba($oc-grape-6, 0.3);
+  }
 }
 
 .theme-wrapper.dark svg.freesewing.draft {
   g.design.point {
-    circle { fill: $fc-link-dark; }
-    circle.hovertrap { stroke: $fc-link-dark; }
+    circle {
+      fill: $fc-link-dark;
+    }
+    circle.hovertrap {
+      stroke: $fc-link-dark;
+    }
   }
-  path.design.hovertrap { stroke: $fc-link-dark; }
-  circle.design.path.cp { fill: $fc-bg-dark; }
-  path.focus.path { stroke-opacity: 0.5; }
+  path.design.hovertrap {
+    stroke: $fc-link-dark;
+  }
+  circle.design.path.cp {
+    fill: $fc-bg-dark;
+  }
+  path.focus.path {
+    stroke-opacity: 0.5;
+  }
 }
 
 .theme-wrapper.dark div.design {
-  h6.path.c0 { background-color: rgba($oc-red-6, 0.5) }
-  h6.path.c1 { background-color: rgba($oc-green-6, 0.5) }
-  h6.path.c2 { background-color: rgba($oc-blue-6, 0.5) }
-  h6.path.c3 { background-color: rgba($oc-grape-6, 0.5) }
+  h6.path.c0 {
+    background-color: rgba($oc-red-6, 0.5);
+  }
+  h6.path.c1 {
+    background-color: rgba($oc-green-6, 0.5);
+  }
+  h6.path.c2 {
+    background-color: rgba($oc-blue-6, 0.5);
+  }
+  h6.path.c3 {
+    background-color: rgba($oc-grape-6, 0.5);
+  }
 }

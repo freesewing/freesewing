@@ -1,3 +1,19 @@
-changeMe:
-  title: change me
-  description: Place holder for now
+---
+heelEase:
+  title: Overwijdte hiel
+  description: De hoeveelheid overwijdte aan de hiel (wanneer je je been door de broekspijp steekt)
+frontPockets:
+  title: Voorzakken
+  description: Of je al dan niet zakken in de zijnaad wil
+backPockets:
+  title: Achterzakken
+  description: Of je al dan niet paspelzakken op de achterkant wil
+elasticatedHem:
+  title: Elastische zoom
+  description: Of je wel of niet elastiek aan de zoom wil
+waistElastic:
+  title: Breedte taille elastiek
+  description: Breedte van de elastiek aan de taille
+ankleElastic:
+  title: Breedte enkel/zoom elastiek
+  description: Breedte van de (optionele) elastiek aan de enkel/zoom
