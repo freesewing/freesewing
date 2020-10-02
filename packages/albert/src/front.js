@@ -20,9 +20,12 @@ export default function (part) {
   let apronLength =
     measurements.hpsToWaistBack * options.bibLength +
     measurements.waistToKnee * (1 + options.lengthBonus)
+  /*
   let apronWidth =
     Math.max(measurements.hipsCircumference, measurements.waistCircumference) *
     (1 - options.backOpening)
+  */
+  let apronWidth = measurements.waistCircumference * (1 - options.backOpening)
   let strapWidth = options.strapWidth * sa
   let hemWidth = 3 * sa
   let pocketSize = apronLength / 4
@@ -46,7 +49,7 @@ export default function (part) {
   points.topCOF = points.topLeft.shift(270, apronLength / 5)
   points.bottomCOF = points.bottomLeft.shift(90, apronLength / 5)
 
-  points.pocketLeftTop = points.waistLeft.copy()
+  points.pocketLeftTop = points.waistLeft.shift(270, hemWidth)
   points.pocketRightTop = points.pocketLeftTop.shift(0, pocketSize)
   points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
   points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
@@ -56,9 +59,6 @@ export default function (part) {
     points.topRightBack.x - strapWidth,
     points.topRightBack.y + hemWidth
   )
-
-  console.log('bibLength ' + measurements.hpsToWaistBack * options.bibLength)
-  console.log('hpsToWaistBack ' + measurements.hpsToWaistBack)
 
   paths.rightHem = new Path()
     .move(points.bottomRight)

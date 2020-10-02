@@ -16,9 +16,12 @@ export default function (part) {
 
   let chestWidth = measurements.chestCircumference / 4
   let bibWidth = chestWidth * options.bibWidth
+  /*
   let apronWidth =
     Math.max(measurements.hipsCircumference, measurements.waistCircumference) *
     (1 - options.backOpening)
+  */
+  let apronWidth = measurements.waistCircumference * (1 - options.backOpening)
   let backOpening =
     apronWidth - Math.max(measurements.hipsCircumference, measurements.waistCircumference)
   let hemWidth = 3 * sa
@@ -79,9 +82,6 @@ export default function (part) {
     .attr('data-text', 'fold')
     .attr('data-text-class', 'text-xs center')
 
-  macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
-  macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
-
   // Complete?
   if (complete) {
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
@@ -92,6 +92,8 @@ export default function (part) {
       at: points.title,
       title: 'Strap'
     })
+    macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
+    macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
@@ -125,6 +127,8 @@ export default function (part) {
       x: points.bottomMiddleHem.x + sa + 15
     })
   }
+
+  console.log('straplength: ' + points.topLeftHem.dy(points.bottomLeftHem))
 
   return part
 }
