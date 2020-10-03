@@ -1,7 +1,7 @@
 # Change log for: create-freesewing-pattern
 
 
-## 2.9.0 (2020-09-09)
+## 2.9.0 (2020-10-02)
 
 ### Fixed
 

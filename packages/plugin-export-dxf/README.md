@@ -25,10 +25,10 @@
   ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
   alt="Follow @freesewing_org on Twitter"/>
   </a><a
-  href="https://gitter.im/freesewing/chat"
-  title="Chat with us on Gitter"
-  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Chat%20with%20us-CA0547.svg?logo=gitter&logoColor=white&logoWidth=15"
-  alt="Chat with us on Gitter"/>
+  href="https://chat.freesewing.org"
+  title="Chat with us on Discord"
+  ><img src="https://img.shields.io/discord/698854858052075530?label=Chat%20on%20Discord"
+  alt="Chat with us on Discord"/>
   </a><a
   href="https://freesewing.org/patrons/join"
   title="Become a FreeSewing Patron"
@@ -165,7 +165,7 @@ should [become a patron](https://freesewing.org/patrons/join).
 
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
  - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
- - 💬 Chat: [gitter.im/freesewing](https://gitter.im/freesewing/chat)
+ - 💬 Chat: On Discord via [chat.freesewing.org](https://chat.freesewing.org/)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
@@ -176,7 +176,7 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatroom on Gitter](https://gitter.im/freesewing/chat) is the best place to ask questions,
+Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
