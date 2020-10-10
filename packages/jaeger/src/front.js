@@ -409,10 +409,7 @@ export default function (part) {
 
     // Instructions
     paths.breakLine.attr('data-text', 'breakLine').attr('data-text-class', 'center')
-    paths.flb
-      .attr('data-text-xml:space', 'preserve')
-      .attr('data-text', '            ')
-      .attr('data-text', 'facingLiningBoundary')
+    paths.flb.attr('data-text', 'facingLiningBoundary')
 
     // Grainline
     macro('grainline', {
