@@ -8,6 +8,7 @@ export { default as info } from './prebuild/info'
 
 export const list = [
   'aaron',
+  'albert',
   'benjamin',
   'bent',
   'breanna',
@@ -41,6 +42,7 @@ export const list = [
 
 export const withoutBreasts = [
   'aaron',
+  'albert',
   'benjamin',
   'bent',
   'brian',
