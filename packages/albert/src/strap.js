@@ -35,7 +35,7 @@ export default function (part) {
   let strapLength =
     Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chestCircumference * options.chestDepth
   let strapWidth = options.strapWidth * sa
-  /* 
+  /*
   console.log('chestWidth ' + chestWidth)
   console.log('backOpening ' + backOpening)
   console.log('hSpan ' + hSpan)
@@ -127,8 +127,6 @@ export default function (part) {
       x: points.bottomMiddleHem.x + sa + 15
     })
   }
-
-  console.log('straplength: ' + points.topLeftHem.dy(points.bottomLeftHem))
 
   return part
 }
