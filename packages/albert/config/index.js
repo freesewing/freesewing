@@ -23,13 +23,7 @@ export default {
     fit: ['backOpening', 'chestDepth'],
     style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth']
   },
-  measurements: [
-    'chestCircumference',
-    'waistCircumference',
-    'hipsCircumference',
-    'hpsToWaistBack',
-    'waistToKnee'
-  ],
+  measurements: ['chest', 'waist', 'hips', 'hpsToWaistBack', 'waistToKnee'],
   dependencies: {},
   inject: {},
   hide: [],

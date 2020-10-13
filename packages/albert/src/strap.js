@@ -14,16 +14,15 @@ export default function (part) {
     macro
   } = part.shorthand()
 
-  let chestWidth = measurements.chestCircumference / 4
+  let chestWidth = measurements.chest / 4
   let bibWidth = chestWidth * options.bibWidth
   /*
   let apronWidth =
-    Math.max(measurements.hipsCircumference, measurements.waistCircumference) *
+    Math.max(measurements.hips, measurements.waist) *
     (1 - options.backOpening)
   */
-  let apronWidth = measurements.waistCircumference * (1 - options.backOpening)
-  let backOpening =
-    apronWidth - Math.max(measurements.hipsCircumference, measurements.waistCircumference)
+  let apronWidth = measurements.waist * (1 - options.backOpening)
+  let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
   let hemWidth = 3 * sa
 
   let hSpan = backOpening / 2 + bibWidth / 2
@@ -33,7 +32,7 @@ export default function (part) {
     measurements.hpsToWaistBack * options.bibLength
 
   let strapLength =
-    Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chestCircumference * options.chestDepth
+    Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
   let strapWidth = options.strapWidth * sa
   /*
   console.log('chestWidth ' + chestWidth)
