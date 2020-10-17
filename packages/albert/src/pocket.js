@@ -15,7 +15,7 @@ export default function (part) {
   } = part.shorthand()
 
   let apronLength =
-    measurements.hpsToWaistFront * options.bibLength +
+    measurements.hpsToWaistBack * options.bibLength +
     measurements.waistToKnee * (1 + options.lengthBonus)
   let pocketSize = apronLength / 4
   let hemWidth = 3 * sa
