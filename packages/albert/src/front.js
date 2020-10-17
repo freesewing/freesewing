@@ -26,7 +26,7 @@ export default function (part) {
     (1 - options.backOpening)
   */
   let apronWidth = measurements.waist * (1 - options.backOpening)
-  let strapWidth = options.strapWidth * sa
+  let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
   let hemWidth = 3 * sa
   let pocketSize = apronLength / 4
 

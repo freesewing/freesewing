@@ -31,9 +31,9 @@ export default function (part) {
     measurements.hpsToWaistBack -
     measurements.hpsToWaistBack * options.bibLength
 
+  let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
   let strapLength =
     Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
-  let strapWidth = options.strapWidth * sa
   /*
   console.log('chestWidth ' + chestWidth)
   console.log('backOpening ' + backOpening)

@@ -34,6 +34,6 @@ export default {
     chestDepth: { pct: 22, min: 15, max: 90 },
     bibLength: { pct: 75, min: 0, max: 90 },
     bibWidth: { pct: 100, min: 50, max: 125 },
-    strapWidth: { pct: 750, min: 100, max: 1500 }
+    strapWidth: { pct: 60, min: 20, max: 100 }
   }
 }
