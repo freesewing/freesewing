@@ -1,6 +1,12 @@
 # Change log for: @freesewing/albert
 
 
+## 2.10.0 (2020-10-17)
+
+### Added
+
+ - Albert is an apron pattern
+
 
 This is the **initial release**, and the start of this change log.
 
