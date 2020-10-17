@@ -2,6 +2,9 @@
 aaron:
   description: Aaron es una camiseta deportiva sin mangas.
   title: Camiseta Aaron
+albert:
+  description: Albert is an apron.
+  title: Albert apron
 benjamin:
   description: Benjamin es un patrón de pajarita con cuatro estilos diferentes.
   title: Benjamin bow tie
