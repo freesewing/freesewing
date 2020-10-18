@@ -18,7 +18,7 @@ const footer = {
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 30px 0 20px 0; color: #212121; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; font-weight: 300; line-height: 18px;" >
                   <p style="margin: 0;">
-                    <a href="https://gitter.im/freesewing/freesewing" target="_blank" style="color: #212121; font-weight: 700;">__chatWithUs__</a> -
+                    <a href="https://chat.freesewing.org/" target="_blank" style="color: #212121; font-weight: 700;">Discord</a> -
                     <a href="https://twitter.com/freesewing_org" target="_blank" style="color: #212121; font-weight: 700;">Twitter</a> -
                     <a href="https://instagram.com/freesewing_org" target="_blank" style="color: #212121; font-weight: 700;">Instagram</a> -
                     <a href="https://github.com/freesewing" target="_blank" style="color: #212121; font-weight: 700;">GitHub</a>
