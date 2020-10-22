@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Create issues on our monorepo
+    url: https://github.com/freesewing/freesewing/issues/new/choose
+    about: We prefer if you create all FreeSewing issues on the freesewing monorepo. It's easier for us to keep track of things this way.
+  - name: Chat on Discord
+    url: https://chat.freesewing.org/
+    about: Reach out to us on Discord if you need help or have questions
