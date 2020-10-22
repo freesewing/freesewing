@@ -4,6 +4,7 @@ about: Add a new showcase on freesewing.org
 title: Create showcase from this content
 labels: "\U0001F44D good first issue, \U0001F4F8 showcase, \U0001F917 community"
 assignees: ''
+
 ---
 
 - Content:  Provide a link here to where we can find the content

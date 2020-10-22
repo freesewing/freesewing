@@ -2,8 +2,9 @@
 name: Bug report
 about: Report a problem, or something that went wrong
 title: Bug report
-labels: "\U0001F48E enhancement"
+labels: "\U0001F41B bug"
 assignees: ''
+
 ---
 
 **What seems to be the problem?**
