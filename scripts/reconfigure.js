@@ -428,7 +428,7 @@ function configurePatternExample(pkg, config) {
     yarn: true,
     language: 'en'
   }
-  for (let file of ['package.json', 'README.md']) {
+  for (let file of ['package.json', 'README.md', 'netlify.toml']) {
     let template = handlebars.compile(fs.readFileSync(path.join(source, file), 'utf-8'))
     fs.writeFileSync(path.join(dest, file), template(replace))
   }
