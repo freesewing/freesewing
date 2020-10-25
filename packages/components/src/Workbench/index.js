@@ -8,12 +8,27 @@ import { dark, light } from '@freesewing/mui-theme'
 import withLanguage from '../withLanguage'
 import LanguageIcon from '@material-ui/icons/Translate'
 import DarkModeIcon from '@material-ui/icons/Brightness3'
-import LanguageChooser from './LanguageChooser'
 import DraftPattern from './DraftPattern'
+import DraftConfig from './DraftConfig'
 import Json from './Json'
 import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
 import Measurements from './Measurements'
+import DraftIcon from '@material-ui/icons/Gesture'
+import TestIcon from '@material-ui/icons/DoneAll'
+import MeasurementsIcon from '@material-ui/icons/Height'
+import ExportIcon from '@material-ui/icons/ScreenShare'
+import { FormattedMessage } from 'react-intl'
+import { languages } from '@freesewing/i18n'
+import Button from '@material-ui/core/Button'
+import UnhideIcon from '@material-ui/icons/ChevronRight'
+
+const icons = {
+  draft: <DraftIcon />,
+  test: <TestIcon />,
+  measurements: <MeasurementsIcon />,
+  xport: <ExportIcon />
+}
 
 const Workbench = ({
   updateGist,
@@ -22,7 +37,6 @@ const Workbench = ({
   language = 'en',
   gist,
   importGist,
-  config,
   freesewing,
   Pattern,
   units = 'metric',
@@ -34,6 +48,38 @@ const Workbench = ({
   const [theme, setTheme] = useState('light')
   const [measurements, setMeasurements] = useState(null)
   const [svgExport, setSvgExport] = useState(false)
+  const [viewBox, setViewBox] = useState(false)
+  const [hideAside, setHideAside] = useState(false)
+  const [design, setDesign] = useState(true)
+  const [focus, setFocus] = useState(null)
+
+  const raiseEvent = (type, data) => {
+    if (type === 'clearFocusAll') {
+      updateGist(false, 'settings', 'only')
+      return setFocus(null)
+    }
+    let f = {}
+    if (focus !== null) f = { ...focus }
+    if (typeof f[data.part] === 'undefined') f[data.part] = { paths: [], points: [], coords: [] }
+    if (type === 'point') f[data.part].points.push(data.name)
+    else if (type === 'path') f[data.part].paths.push(data.name)
+    else if (type === 'coords') f[data.part].coords.push(data.coords)
+    else if (type === 'clearFocus') {
+      let i = focus[data.part][data.type].indexOf(data.name)
+      f[data.part][data.type].splice(i, 1)
+    } else if (type === 'part') updateGist(data, 'settings', 'only')
+
+    setFocus(f)
+  }
+
+  // Get config from pattern object
+  const config = Pattern.config
+  const links = {
+    draft: <FormattedMessage id="cfp.draftThing" values={{ thing: config.name }} />,
+    test: <FormattedMessage id="cfp.testThing" values={{ thing: config.name }} />,
+    measurements: <FormattedMessage id="app.measurements" />,
+    xport: <FormattedMessage id="app.export" />
+  }
 
   // Enable debug in Workbench
   defaultGist.settings.debug = true
@@ -42,19 +88,15 @@ const Workbench = ({
     let m = getMeasurements()
     setMeasurements(m)
     updateGist(m, 'settings', 'measurements')
-    setDisplay(getDisplay())
     setLanguage(userLanguage)
     if (translations) addTranslations(translations)
+    console.log('useEffect 1')
   }, [])
   useEffect(() => {
     if (language !== gist.settings.locale) updateGist(language, 'settings', 'locale')
+    console.log('useEffect 2')
   }, [language])
 
-  const getDisplay = () => storage.get(config.name + '-display')
-  const saveDisplay = (d) => {
-    setDisplay(d)
-    storage.set(config.name + '-display', d)
-  }
   const getMeasurements = () => storage.get(config.name + '-measurements')
   const saveMeasurements = (data) => {
     storage.set(config.name + '-measurements', data)
@@ -88,33 +130,33 @@ const Workbench = ({
     if (theme === 'light') setTheme('dark')
     else setTheme('light')
   }
-  const raiseEvent = (type = null, data = null) => {}
+  //const raiseEvent = (type = null, data = null) => {}
+
+  const MainMenu = () => (
+    <ul className="aside-main-menu">
+      {Object.keys(icons).map((link) => {
+        return (
+          <li key={link}>
+            <a
+              href={`#test`}
+              onClick={() => setDisplay(link)}
+              className={link === display ? 'active' : ''}
+            >
+              {icons[link]}
+              <span className="text">{links[link]}</span>
+            </a>
+          </li>
+        )
+      })}
+    </ul>
+  )
 
   const navs = {
     left: {
-      draft: {
-        type: 'button',
-        onClick: () => saveDisplay('draft'),
-        text: 'cfp.draftYourPattern',
-        active: display === 'draft' ? true : false
-      },
-      sample: {
-        type: 'button',
-        onClick: () => saveDisplay('sample'),
-        text: 'cfp.testYourPattern',
-        active: display === 'sample' ? true : false
-      },
-      measurements: {
-        type: 'button',
-        onClick: () => saveDisplay('measurements'),
-        text: 'app.measurements',
-        active: display === 'measurements' ? true : false
-      },
-      json: {
-        type: 'button',
-        onClick: () => saveDisplay('json'),
-        text: ['JSON'],
-        active: display === 'json' ? true : false
+      discord: {
+        type: 'link',
+        href: 'https://chat.freesewing.org/',
+        text: 'cfp.draftYourPattern'
       }
     },
     right: {
@@ -125,7 +167,7 @@ const Workbench = ({
       },
       language: {
         type: 'button',
-        onClick: () => saveDisplay('languages'),
+        onClick: () => setDisplay('languages'),
         text: <LanguageIcon className="nav-icon" />,
         title: 'Languages',
         active: display === 'languages' ? true : false
@@ -138,27 +180,71 @@ const Workbench = ({
       }
     }
   }
-  if (display === 'draft' && !measurementsMissing())
-    navs.left.svgExport = {
-      type: 'button',
-      onClick: () => setSvgExport(true),
-      text: 'app.export',
-      active: false
+
+  const languageButtons = () => (
+    <p>
+      {Object.keys(languages).map((lang) => {
+        return (
+          <Button
+            key={lang}
+            color="primary"
+            size="large"
+            variant="outlined"
+            onClick={() => setLanguage(lang)}
+            style={{ margin: '0 0.5rem 0.5rem 0' }}
+            disabled={lang === language ? true : false}
+          >
+            {languages[lang]}
+          </Button>
+        )
+      })}
+    </p>
+  )
+
+  const styles = {
+    unhide: {
+      position: 'absolute',
+      left: 0,
+      top: 0
     }
-  // FIXME:
-  navs.mleft = navs.left
-  navs.mright = navs.right
+  }
+
   let main = null
+  let context = null
   switch (display) {
     case 'languages':
-      main = <LanguageChooser setLanguage={setLanguage} setDisplay={saveDisplay} />
+      main = (
+        <>
+          <h1>
+            <FormattedMessage id="account.languageTitle" />
+          </h1>
+          {languageButtons()}
+        </>
+      )
+      context = (
+        <ul>
+          {Object.keys(languages).map((lang) => {
+            return (
+              <li key={lang}>
+                <a href="#" onClick={() => setLanguage(lang)}>
+                  {languages[lang]}
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+      )
       break
     case 'draft':
-      if (measurementsMissing()) saveDisplay('measurements')
+      if (measurementsMissing()) setDisplay('measurements')
+      let pattern = new Pattern(gist.settings)
+      pattern.draft()
+      let patternProps = pattern.getRenderProps()
       main = (
         <DraftPattern
           freesewing={freesewing}
           Pattern={Pattern}
+          patternProps={patternProps}
           config={config}
           gist={gist}
           updateGist={updateGist}
@@ -167,11 +253,37 @@ const Workbench = ({
           svgExport={svgExport}
           setSvgExport={setSvgExport}
           theme={theme}
+          viewBox={viewBox}
+          focus={focus}
+          design={design}
+        />
+      )
+      context = (
+        <DraftConfig
+          freesewing={freesewing}
+          Pattern={Pattern}
+          patternProps={patternProps}
+          config={config}
+          gist={gist}
+          updateGist={updateGist}
+          raiseEvent={raiseEvent}
+          units={units}
+          svgExport={svgExport}
+          setSvgExport={setSvgExport}
+          theme={theme}
+          viewBox={viewBox}
+          setViewBox={setViewBox}
+          setHideAside={setHideAside}
+          focus={focus}
+          setFocus={setFocus}
+          design={design}
+          setDesign={setDesign}
+          pattern={pattern}
         />
       )
       break
     case 'sample':
-      if (measurementsMissing()) saveDisplay('measurements')
+      if (measurementsMissing()) setDisplay('measurements')
       main = (
         <SamplePattern
           freesewing={freesewing}
@@ -199,23 +311,13 @@ const Workbench = ({
     case 'json':
       main = <Json gist={gist} />
       break
-    case 'inspect':
-      main = (
-        <InspectPattern
-          freesewing={freesewing}
-          Pattern={Pattern}
-          config={config}
-          gist={gist}
-          updateGist={updateGist}
-          raiseEvent={raiseEvent}
-          units={units}
-          svgExport={svgExport}
-          setSvgExport={setSvgExport}
-        />
-      )
-      break
     default:
-      main = <Welcome language={language} setDisplay={saveDisplay} />
+      main = (
+        <>
+          <Welcome language={language} setDisplay={setDisplay} />
+          <div style={{ margin: 'auto', textAlign: 'center' }}>{languageButtons()}</div>
+        </>
+      )
   }
 
   const themes = { dark, light }
@@ -227,8 +329,22 @@ const Workbench = ({
           theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'
         }
       >
-        {display !== 'welcome' ? <Navbar navs={navs} home={() => saveDisplay('welcome')} /> : null}
-        {main}
+        <Navbar navs={navs} home={() => setDisplay('welcome')} />
+        <div className="fs-sa" style={{ position: 'relative' }}>
+          {hideAside ? (
+            <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>
+              <UnhideIcon />
+            </a>
+          ) : (
+            <aside>
+              <div className="sticky">
+                <MainMenu />
+                <div className="aside-context">{context}</div>
+              </div>
+            </aside>
+          )}
+          <section>{main}</section>
+        </div>
       </div>
     </MuiThemeProvider>
   )

@@ -1,8 +1,10 @@
 ul.config {
-  @include title-font;
+  @include button-font;
   padding: 0;
 }
-ul.config.l1 { overflow-x: hidden;}
+ul.config.l1 {
+  overflow-x: hidden;
+}
 ul.config.l2,
 ul.config.l3,
 ul.config.l4 {
@@ -10,7 +12,9 @@ ul.config.l4 {
   padding: 0;
 }
 
-ul.config li { list-style-type: none; }
+ul.config li {
+  list-style-type: none;
+}
 
 /* level 1 */
 ul.config.l1 > li > span {
@@ -65,15 +69,18 @@ div.expanded div.MuiSlider-container {
   margin: 0;
   overflow: initial;
 }
-ul.config p { @include body-font;}
+ul.config p {
+  @include body-font;
+}
 
 /* level 4 */
 ul.config.l3 li span.subheading {
   padding-left: 2rem;
   font-weight: bold;
 }
-ul.config.l4 > li > div { padding-left: 2.5rem; }
-
+ul.config.l4 > li > div {
+  padding-left: 2.5rem;
+}
 
 span.dflt,
 span.p-dflt,
@@ -126,4 +133,3 @@ button.mini-icon-btn {
 .theme-wrapper.dark button.mini-icon-btn.pattern:enabled {
   color: $oc-green-6;
 }
-

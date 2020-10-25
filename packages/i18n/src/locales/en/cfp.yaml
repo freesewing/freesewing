@@ -11,6 +11,8 @@ devDocsAvailableAt: Developer documentation is available at
 talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
 draftYourPattern: Draft your pattern
 testYourPattern: Test your pattern
+draftThing: 'Draft {thing}'
+testThing: 'Test {thing}'
 renderInBrowser: Click below to render your pattern in the browser.
 weWillReRender: When you make changes, we will re-render for you.
 youCan: You can
