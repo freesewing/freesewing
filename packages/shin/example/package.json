@@ -1,7 +1,7 @@
 {
-  "name": "shin-example",
-  "homepage": "https://freesewing.github.io/shin",
-  "version": "0.0.0",
+  "name": "shin",
+  "homepage": "https://shin.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

@@ -1,7 +1,7 @@
 {
-  "name": "diana-example",
-  "homepage": "https://freesewing.github.io/diana",
-  "version": "0.0.0",
+  "name": "diana",
+  "homepage": "https://diana.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

@@ -1,7 +1,7 @@
 {
-  "name": "simone-example",
-  "homepage": "https://freesewing.github.io/simone",
-  "version": "0.0.0",
+  "name": "simone",
+  "homepage": "https://simone.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

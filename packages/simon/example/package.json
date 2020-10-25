@@ -1,7 +1,7 @@
 {
-  "name": "simon-example",
-  "homepage": "https://freesewing.github.io/simon",
-  "version": "0.0.0",
+  "name": "simon",
+  "homepage": "https://simon.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

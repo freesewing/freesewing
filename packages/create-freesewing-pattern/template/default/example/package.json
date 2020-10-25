@@ -1,7 +1,7 @@
 {
-  "name": "{{name}}-example",
-  "homepage": "https://{{author}}.github.io/{{name}}",
-  "version": "0.0.0",
+  "name": "{{name}}",
+  "homepage": "https://{{name}}.freesewing.dev/",
+  "version": "{{version}}",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

@@ -1,7 +1,7 @@
 {
-  "name": "bent-example",
-  "homepage": "https://freesewing.github.io/bent",
-  "version": "0.0.0",
+  "name": "bent",
+  "homepage": "https://bent.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

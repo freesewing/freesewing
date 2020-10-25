@@ -1,7 +1,7 @@
 {
-  "name": "sandy-example",
-  "homepage": "https://freesewing.github.io/sandy",
-  "version": "0.0.0",
+  "name": "sandy",
+  "homepage": "https://sandy.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

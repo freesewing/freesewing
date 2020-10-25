@@ -423,6 +423,7 @@ function configurePatternExample(pkg, config) {
   // Write templates
   let replace = {
     name: pkg,
+    version,
     author: 'freesewing',
     yarn: true,
     language: 'en'

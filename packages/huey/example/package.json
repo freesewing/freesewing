@@ -1,7 +1,7 @@
 {
-  "name": "huey-example",
-  "homepage": "https://freesewing.github.io/huey",
-  "version": "0.0.0",
+  "name": "huey",
+  "homepage": "https://huey.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

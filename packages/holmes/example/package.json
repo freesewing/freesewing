@@ -1,7 +1,7 @@
 {
-  "name": "holmes-example",
-  "homepage": "https://freesewing.github.io/holmes",
-  "version": "0.0.0",
+  "name": "holmes",
+  "homepage": "https://holmes.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

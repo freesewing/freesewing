@@ -1,7 +1,7 @@
 {
-  "name": "paco-example",
-  "homepage": "https://freesewing.github.io/paco",
-  "version": "0.0.0",
+  "name": "paco",
+  "homepage": "https://paco.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

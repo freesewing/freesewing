@@ -1,7 +1,7 @@
 {
-  "name": "trayvon-example",
-  "homepage": "https://freesewing.github.io/trayvon",
-  "version": "0.0.0",
+  "name": "trayvon",
+  "homepage": "https://trayvon.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

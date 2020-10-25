@@ -1,7 +1,7 @@
 {
-  "name": "florent-example",
-  "homepage": "https://freesewing.github.io/florent",
-  "version": "0.0.0",
+  "name": "florent",
+  "homepage": "https://florent.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

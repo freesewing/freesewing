@@ -1,7 +1,7 @@
 {
-  "name": "teagan-example",
-  "homepage": "https://freesewing.github.io/teagan",
-  "version": "0.0.0",
+  "name": "teagan",
+  "homepage": "https://teagan.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

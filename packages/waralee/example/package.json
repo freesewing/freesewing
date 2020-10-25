@@ -1,7 +1,7 @@
 {
-  "name": "waralee-example",
-  "homepage": "https://freesewing.github.io/waralee",
-  "version": "0.0.0",
+  "name": "waralee",
+  "homepage": "https://waralee.freesewing.dev/",
+  "version": "2.10.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",
