@@ -1,5 +1,5 @@
 [build]
-  base = "packages/theo/example
+  base = "packages/theo/example"
   publish = "build"
   command = "npm run build"
 

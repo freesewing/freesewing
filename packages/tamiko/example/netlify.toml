@@ -1,5 +1,5 @@
 [build]
-  base = "packages/tamiko/example
+  base = "packages/tamiko/example"
   publish = "build"
   command = "npm run build"
 

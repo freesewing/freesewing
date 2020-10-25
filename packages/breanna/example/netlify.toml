@@ -1,5 +1,5 @@
 [build]
-  base = "packages/breanna/example
+  base = "packages/breanna/example"
   publish = "build"
   command = "npm run build"
 

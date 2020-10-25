@@ -1,5 +1,5 @@
 [build]
-  base = "packages/wahid/example
+  base = "packages/wahid/example"
   publish = "build"
   command = "npm run build"
 

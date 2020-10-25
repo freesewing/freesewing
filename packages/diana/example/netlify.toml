@@ -1,5 +1,5 @@
 [build]
-  base = "packages/diana/example
+  base = "packages/diana/example"
   publish = "build"
   command = "npm run build"
 

@@ -1,5 +1,5 @@
 [build]
-  base = "packages/sandy/example
+  base = "packages/sandy/example"
   publish = "build"
   command = "npm run build"
 

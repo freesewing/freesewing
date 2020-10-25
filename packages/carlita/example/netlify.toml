@@ -1,5 +1,5 @@
 [build]
-  base = "packages/carlita/example
+  base = "packages/carlita/example"
   publish = "build"
   command = "npm run build"
 

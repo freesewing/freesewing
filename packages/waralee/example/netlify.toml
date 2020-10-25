@@ -1,5 +1,5 @@
 [build]
-  base = "packages/waralee/example
+  base = "packages/waralee/example"
   publish = "build"
   command = "npm run build"
 

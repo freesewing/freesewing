@@ -1,5 +1,5 @@
 [build]
-  base = "packages/florence/example
+  base = "packages/florence/example"
   publish = "build"
   command = "npm run build"
 

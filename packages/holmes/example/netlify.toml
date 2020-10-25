@@ -1,5 +1,5 @@
 [build]
-  base = "packages/holmes/example
+  base = "packages/holmes/example"
   publish = "build"
   command = "npm run build"
 

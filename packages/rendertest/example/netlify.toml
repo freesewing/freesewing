@@ -1,5 +1,5 @@
 [build]
-  base = "packages/rendertest/example
+  base = "packages/rendertest/example"
   publish = "build"
   command = "npm run build"
 

@@ -1,5 +1,5 @@
 [build]
-  base = "packages/shin/example
+  base = "packages/shin/example"
   publish = "build"
   command = "npm run build"
 

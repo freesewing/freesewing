@@ -1,5 +1,5 @@
 [build]
-  base = "packages/teagan/example
+  base = "packages/teagan/example"
   publish = "build"
   command = "npm run build"
 
