@@ -16,5 +16,5 @@ bibWidth:
   description: Steuert die Breite des Latzes
 strapWidth:
   title: Riemenbreite
-  description: Controls the width of the strap
+  description: Steuert die Riemenbreite
 
