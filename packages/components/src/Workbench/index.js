@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import withGist from '../withGist'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import Navbar from '../Navbar'
+import Navbar from './navbar'
 import defaultGist from '@freesewing/utils/defaultGist'
 import storage from '@freesewing/utils/storage'
 import { dark, light } from '@freesewing/mui-theme'
 import withLanguage from '../withLanguage'
-import LanguageIcon from '@material-ui/icons/Translate'
-import DarkModeIcon from '@material-ui/icons/Brightness3'
 import DraftPattern from './DraftPattern'
 import DraftConfig from './DraftConfig'
 import Json from './Json'
-import SamplePattern from './SamplePattern'
 import Welcome from './Welcome'
 import Measurements from './Measurements'
 import DraftIcon from '@material-ui/icons/Gesture'
@@ -22,10 +19,13 @@ import { FormattedMessage } from 'react-intl'
 import { languages } from '@freesewing/i18n'
 import Button from '@material-ui/core/Button'
 import UnhideIcon from '@material-ui/icons/ChevronRight'
+import SampleConfigurator from '../SampleConfigurator'
+import svgattrPlugin from '@freesewing/plugin-svgattr'
+import Xport from './Export'
 
 const icons = {
   draft: <DraftIcon />,
-  test: <TestIcon />,
+  sample: <TestIcon />,
   measurements: <MeasurementsIcon />,
   xport: <ExportIcon />
 }
@@ -44,7 +44,6 @@ const Workbench = ({
   addTranslations
 }) => {
   const [display, setDisplay] = useState(null)
-  const [pattern, setPattern] = useState(false)
   const [theme, setTheme] = useState('light')
   const [measurements, setMeasurements] = useState(null)
   const [svgExport, setSvgExport] = useState(false)
@@ -76,7 +75,7 @@ const Workbench = ({
   const config = Pattern.config
   const links = {
     draft: <FormattedMessage id="cfp.draftThing" values={{ thing: config.name }} />,
-    test: <FormattedMessage id="cfp.testThing" values={{ thing: config.name }} />,
+    sample: <FormattedMessage id="cfp.testThing" values={{ thing: config.name }} />,
     measurements: <FormattedMessage id="app.measurements" />,
     xport: <FormattedMessage id="app.export" />
   }
@@ -151,36 +150,6 @@ const Workbench = ({
     </ul>
   )
 
-  const navs = {
-    left: {
-      discord: {
-        type: 'link',
-        href: 'https://chat.freesewing.org/',
-        text: 'cfp.draftYourPattern'
-      }
-    },
-    right: {
-      version: {
-        type: 'link',
-        href: 'https://github.com/freesewing/freesewing/releases',
-        text: ['v' + freesewing.version]
-      },
-      language: {
-        type: 'button',
-        onClick: () => setDisplay('languages'),
-        text: <LanguageIcon className="nav-icon" />,
-        title: 'Languages',
-        active: display === 'languages' ? true : false
-      },
-      dark: {
-        type: 'button',
-        onClick: toggleDarkMode,
-        text: <DarkModeIcon className="nav-icon moon" />,
-        title: 'Toggle dark mode'
-      }
-    }
-  }
-
   const languageButtons = () => (
     <p>
       {Object.keys(languages).map((lang) => {
@@ -211,6 +180,7 @@ const Workbench = ({
 
   let main = null
   let context = null
+  let pattern
   switch (display) {
     case 'languages':
       main = (
@@ -237,7 +207,7 @@ const Workbench = ({
       break
     case 'draft':
       if (measurementsMissing()) setDisplay('measurements')
-      let pattern = new Pattern(gist.settings)
+      pattern = new Pattern(gist.settings)
       pattern.draft()
       let patternProps = pattern.getRenderProps()
       main = (
@@ -284,15 +254,23 @@ const Workbench = ({
       break
     case 'sample':
       if (measurementsMissing()) setDisplay('measurements')
-      main = (
-        <SamplePattern
-          freesewing={freesewing}
-          Pattern={Pattern}
+      pattern = new Pattern(gist.settings).use(svgattrPlugin, {
+        class: 'freesewing draft'
+      })
+      try {
+        pattern.sample()
+      } catch (err) {
+        console.log(err)
+      }
+      main = <div dangerouslySetInnerHTML={{ __html: pattern.render() }} />
+      context = (
+        <SampleConfigurator
           config={config}
           gist={gist}
           updateGist={updateGist}
           raiseEvent={raiseEvent}
-          units={units}
+          freesewing={freesewing}
+          units={units || 'metric'}
         />
       )
       break
@@ -305,6 +283,18 @@ const Workbench = ({
           updateMeasurement={updateMeasurement}
           preloadMeasurements={preloadMeasurements}
           language={language}
+        />
+      )
+      break
+    case 'xport':
+      main = (
+        <Xport
+          freesewing={freesewing}
+          Pattern={Pattern}
+          config={config}
+          gist={gist}
+          units={units}
+          theme={theme}
         />
       )
       break
@@ -329,7 +319,12 @@ const Workbench = ({
           theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'
         }
       >
-        <Navbar navs={navs} home={() => setDisplay('welcome')} />
+        <Navbar
+          display={display}
+          setDisplay={setDisplay}
+          toggleDarkMode={toggleDarkMode}
+          config={config}
+        />
         <div className="fs-sa" style={{ position: 'relative' }}>
           {hideAside ? (
             <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>

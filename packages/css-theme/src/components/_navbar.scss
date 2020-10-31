@@ -44,7 +44,7 @@ header.navbar {
   }
   a.nav,
   button {
-    @include title-font;
+    @include button-font;
     text-decoration: none !important;
     margin: 0;
     padding: 0 13px;

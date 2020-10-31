@@ -11,7 +11,7 @@ const OptionGroup = (props) => {
           // Subgroup
           for (let subGroup of Object.keys(name)) {
             output.push(
-              <h5 key={subGroup + '-title'} className="subheading">
+              <h5 key={subGroup + '-title'}>
                 <FormattedMessage id={'optiongroups.' + subGroup} />
               </h5>
             )
@@ -19,7 +19,11 @@ const OptionGroup = (props) => {
             for (let option of name[subGroup])
               children.push(
                 <li>
-                  <a href="#logo" onClick={() => props.sampleOption(option)}>
+                  <a
+                    href="#logo"
+                    onClick={() => props.sampleOption(option)}
+                    className={props.activeOption === option ? 'active' : ''}
+                  >
                     <FormattedMessage
                       id={'options.' + props.config.name + '.' + option + '.title'}
                     />
@@ -31,7 +35,11 @@ const OptionGroup = (props) => {
         } else
           output.push(
             <li>
-              <a href="#logo" onClick={() => props.sampleOption(name)}>
+              <a
+                href="#logo"
+                onClick={() => props.sampleOption(name)}
+                className={props.activeOption === name ? 'active' : ''}
+              >
                 <FormattedMessage id={'options.' + props.config.name + '.' + name + '.title'} />
               </a>
             </li>
