@@ -9,6 +9,7 @@ import i18n from '@freesewing/plugin-i18n'
 import Blockquote from '../../Blockquote'
 import Spinner from '../../Spinner'
 import Tiler from '@freesewing/utils/tiler'
+import Backend from '@freesewing/utils/backend'
 
 const Xport = (props) => {
   // State
@@ -59,7 +60,7 @@ const Xport = (props) => {
   }
   const exportGithubGist = (data) => {
     setLoading(true)
-    app.backend
+    new Backend('https://backend.freesewing.org/')
       .createGist({
         data: YAML.stringify(data),
         design: data.design
