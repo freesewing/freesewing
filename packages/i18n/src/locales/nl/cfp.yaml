@@ -12,6 +12,8 @@ devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
 talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chat room
 draftYourPattern: Teken je patroon
 testYourPattern: Test je patroon
+draftThing: 'Draft {thing}'
+testThing: 'Test {thing}'
 renderInBrowser: Klik hieronder om je patroon in de browser te tonen.
 weWillReRender: Wanneer je wijzigingen maakt, renderen we opnieuw.
 youCan: Je kan
