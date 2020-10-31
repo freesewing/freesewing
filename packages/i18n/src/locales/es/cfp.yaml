@@ -12,6 +12,8 @@ devDocsAvailableAt: Documentación para desarrolladores está disponible en
 talkToUs: Para preguntas, comentarios o sugerencias, contáctanos en nuestra sala de chat
 draftYourPattern: Traza tu patrón
 testYourPattern: Prueba tu patrón
+draftThing: 'Draft {thing}'
+testThing: 'Test {thing}'
 renderInBrowser: Haz clic abajo para mostrar el patrón en el navegador.
 weWillReRender: Cuando realices cambios, lo volveremos a trazar para ti.
 youCan: Puedes
