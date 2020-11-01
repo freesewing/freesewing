@@ -19,13 +19,13 @@ waistDartLength:
   description: La longueur de la pince de taille
 verticalEase:
   title: Aisance verticale
-  description: The amount of ease to distribute along the length of the garment
+  description: La quantité d'aisance à répartir sur la longueur du vêtement
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  title: Aisance à la taille
+  description: L'ampleur d'aisance à votre taille
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  title: Pince poitrine
+  description: Où placer la pince poitrine pour s'adapter à la poitrine
 primaryBustDartLength:
   title: Bust dart length
   description: The length of the bust dart
