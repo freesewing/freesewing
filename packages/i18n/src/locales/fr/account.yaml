@@ -53,5 +53,5 @@ usernameTitle: Veuillez choisir votre nom d'utilisateur
 username: Nom d'utilisateur
 accountIsInactive: Votre compte est inactif
 accountNeedsActivation: Avant de pouvoir vous connecter, vous devez activer votre compte. Veuillez vérifier votre boîte de réception et cliquez sur le lien que vous trouverez dans le mail d'enregistrement.
-reloadAccount: Reload account
-reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.
+reloadAccount: Recharger le compte
+reloadAccountDescription: Cela rechargera les données de votre compte en arrière-plan. Il a le même effet que la déconnexion, puis se reconnecter.
