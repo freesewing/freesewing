@@ -27,5 +27,5 @@ layout:
   title: Mis en page
   description: Contrôle comment les pièces individuelles du patron sont placées sur votre patron
 debug:
-  title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  title: Débug
+  description: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé
