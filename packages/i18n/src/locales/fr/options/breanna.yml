@@ -1,6 +1,6 @@
 ---
 shoulderDart:
-  title: Shoulder dart
+  title: Pince d'épaule
   description: Whether or not to inlude a dart at the shoulder to round the back
 shoulderDartSize:
   title: Shoulder dart size
