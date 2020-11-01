@@ -9,17 +9,17 @@ lengthBonus:
   title: Supplément de longueur
   description: Contrôle la longueur du pantalon
 crotchDrop:
-  title: Crotch drop
-  description: Lowers the crotch for a more relaxed fit
+  title: Hauteur d'enfourchure
+  description: Abaisse la fourche pour un tombé plus décontracté
 fitKnee:
-  title: Fit the knee
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  title: Ajuster au genou
+  description: Ajuste les jambes à partir de la circonférence du genou plutôt que de la circonférence du bassin
 legBalance:
-  title: Leg balance
-  description: Controls the ratio between front and back panel of the leg
+  title: Équilibre des jambes
+  description: Contrôle le ratio entre le panneau avant et arrière de la jambe
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Début de la courbe de l'enfourchure
+  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure
 crossSeamCurveBend:
   title: Cross seam bend
   description: Controls the curvature of the cross seam
