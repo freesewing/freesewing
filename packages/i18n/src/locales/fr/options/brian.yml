@@ -28,7 +28,7 @@ lengthBonus:
   description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
 shoulderEase:
   title: Aisance des épaules
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  description: La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires.
 shoulderSlopeReduction:
   title: Réduction de la pente d'épaule
   description: La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
