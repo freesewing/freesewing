@@ -12,8 +12,8 @@ necklineBend:
   title: Courbure de l'encolure
   description: Contrôle la courbure de l'encolure.
 necklineDepth:
-  title: Neckline depth
-  description: Controls how deep the neck opening plunges down.
+  title: Profondeur de l'encolure
+  description: Contrôle la profondeur de l'encolure.
 necklineWidth:
-  title: Neckline width
-  description: Controls the width of the neck opening.
+  title: Largeur d'encolure
+  description: Contrôle la largeur de l'encolure.
