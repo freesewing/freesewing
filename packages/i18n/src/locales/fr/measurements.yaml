@@ -3,35 +3,35 @@ ankle: Tour de cheville
 biceps: Tour de bras
 bustFront: Largeur de poitrine avant
 bustSpan: Écart de poitrine
-chest: Chest circumference
-crossSeam: Cross seam
-crossSeamFront: Cross seam front
-head: Head circumference
-heel: Heel circumference
+chest: Tour de poitrine
+crossSeam: Profondeur de fourche
+crossSeamFront: Enfourchure devant
+head: Tour de tête
+heel: Tour de talon
 highBustFront: Largeur de buste supérieur
 highBust: Tour de buste supérieur
-hips: Hips circumference
+hips: Tour des petites hanches
 hpsToBust: Longueur épaule-poitrine
 hpsToWaistBack: Longueur épaule-taille dos
 hpsToWaistFront: Longueur épaule-taille devant
 inseam: Longueur d'entrejambe
-knee: Knee circumference
-neck: Neck circumference
-seat: Seat circumference
-seatBack: Seat back
-crotchDepth: Crotch depth
+knee: Tour de genou
+neck: Tour de cou
+seat: Tour de bassin
+seatBack: Bassin arrière
+crotchDepth: Hauteur de fourche
 shoulderSlope: Pente d'épaule
 shoulderToElbow: Longueur épaule au coude
 shoulderToShoulder: Largeur d'épaules
 shoulderToWrist: Longueur de bras
 underbust: Tour sous poitrine
-upperLeg: Upper leg circumference
-waist: Waist circumference
-waistBack: Waist back
+upperLeg: Tour de cuisse
+waist: Tour de taille
+waistBack: Taille arrière
 waistToFloor: Hauteur de taille
 waistToHips: Hauteur taille hanche
 waistToKnee: Hauteur taille genou
 waistToSeat: Hauteur taille bassin
 waistToUnderbust: Hauteur taille sous-poitrine
 waistToUpperLeg: Hauteur taille bassin
-wrist: Wrist circumference
+wrist: Tour de poignet
