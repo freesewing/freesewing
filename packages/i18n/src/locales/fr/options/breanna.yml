@@ -1,24 +1,24 @@
 ---
 shoulderDart:
   title: Pince d'épaule
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  description: S'il faut ou non inclure une pince à l'épaule pour arrondir le dos
 shoulderDartSize:
-  title: Shoulder dart size
-  description: The size of the shoulder dart
+  title: Taille de la pince de l'épaule
+  description: La taille de la pince d'épaule
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Longueur de la pince de l'épaule
+  description: La longueur de la pince d'épaule
 waistDart:
-  title: Waist dart
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Pince de taille
+  description: S'il faut ou non inclure une pince à la taille pour arrondir le dos
 waistDartSize:
-  title: Waist dart size
-  description: The size of the waist dart
+  title: Taille de la pince de taille
+  description: La taille de la pince de taille
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Longueur de la pince de taille
+  description: La longueur de la pince de taille
 verticalEase:
-  title: Vertical ease
+  title: Aisance verticale
   description: The amount of ease to distribute along the length of the garment
 waistEase:
   title: Waist ease
