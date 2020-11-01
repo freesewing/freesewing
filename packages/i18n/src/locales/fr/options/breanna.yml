@@ -27,15 +27,15 @@ primaryBustDart:
   title: Pince poitrine
   description: Où placer la pince poitrine pour s'adapter à la poitrine
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Longueur des pinces poitrine
+  description: La longueur de la pince de poitrine
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  title: Pince poitrine secondaire
+  description: Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Longueur de la pince poitrine secondaire
+  description: La longueur de la pince poitrine secondaire
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Forme des pinces poitrine
+  description: Contrôle l'équilibre entre les pinces de buste principale et secondaire
 
