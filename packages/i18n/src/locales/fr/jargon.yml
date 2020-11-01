@@ -22,9 +22,9 @@ fabricGrain:
   description: "Voir <a href='/docs/sewing/fabric-grain/'>Droit fil</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 goodSidesTogether:
   term: endroit contre endroit
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  description: "Voir <a href='/docs/sewing/good-sides-together/'>Endroit contre endroit</a> dans la <a href='/docs/sewing/'>documentation de Couture</a>"
 onTheFold:
-  term: on the fold
+  term: au pli
   description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
 hemming:
   term: ourlet
