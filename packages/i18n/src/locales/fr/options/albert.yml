@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  title: Ouverture arrière
+  description: Contrôle l'ouverture à l'arrière du tablier
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  title: Longueur du lien
+  description: Contrôle la longueur des liens
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  title: Supplément de longueur
+  description: Contrôle la longueur du tablier
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  title: Longueur du plastron
+  description: Contrôle la longueur du plastron
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  title: Largeur du plastron
+  description: Contrôle la largeur du plastron
 strapWidth:
-  title: Strap width
-  description: Controls the width of the strap
+  title: Largeur du lien
+  description: Contrôle la largeur des liens
 
