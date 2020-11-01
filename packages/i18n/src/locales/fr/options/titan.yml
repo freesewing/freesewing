@@ -21,8 +21,8 @@ crossSeamCurveStart:
   title: Début de la courbe de l'enfourchure
   description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Courbure de l'enfourchure
+  description: Contrôle la courbure de la couture de fourche
 crotchSeamCurveStart:
   title: Start of the crotch seam curve
   description: Controls how far into the crotch seam we start to curve
