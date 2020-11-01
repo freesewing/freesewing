@@ -18,20 +18,20 @@ legBalance:
   title: Équilibre des jambes
   description: Contrôle le ratio entre le panneau avant et arrière de la jambe
 crossSeamCurveStart:
-  title: Début de la courbe de l'enfourchure
-  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure
+  title: Début de la courbe de l'enfourchure dos
+  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure dos
 crossSeamCurveBend:
-  title: Courbure de l'enfourchure
-  description: Contrôle la courbure de la couture de fourche
+  title: Courbure de l'enfourchure dos
+  description: Contrôle la courbure de la couture de fourche dos
 crotchSeamCurveStart:
-  title: Start of the crotch seam curve
-  description: Controls how far into the crotch seam we start to curve
+  title: Début de la courbe de l'enfourchure avant
+  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant
 crotchSeamCurveBend:
-  title: Crotch seam bend
-  description: Controls the curvature of the crotch seam
+  title: Courbure de la fourche avant
+  description: Contrôle la courbure de la couture de fourche avant
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  title: Équilibre de la taille
+  description: Contrôle la position horizontale de la taille par rapport au bassin
 grainlinePosition:
-  title: Grainline position
-  description: Controls the horizontal position of the leg relative to the seat
+  title: Position de la ligne de droit fil
+  description: Contrôle la position horizontale de la jambe par rapport au bassin
