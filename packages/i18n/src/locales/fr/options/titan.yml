@@ -1,13 +1,13 @@
 ---
 kneeEase:
-  title: Knee ease
-  description: Controls the amout of ease at the knee
+  title: Aisance du genou
+  description: Contrôle la quantité d'aisance au genou
 waistHeight:
-  title: Waist height
-  description: Controls the height of the waist, 100% = waist height, 0% = hip height
+  title: Hauteur de la taille
+  description: Contrôle la hauteur de la taille, 100% = hauteur de la taille, 0% = hauteur de la hanche
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the trousers
+  title: Supplément de longueur
+  description: Contrôle la longueur du pantalon
 crotchDrop:
   title: Crotch drop
   description: Lowers the crotch for a more relaxed fit
