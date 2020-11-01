@@ -1,19 +1,19 @@
 ---
 heelEase:
-  title: Heel ease
-  description: The amount of ease at your heel (when stepping into the leg)
+  title: Aisance de talon
+  description: La quantité d'aisance à votre talon (au passage la jambe de pantalon)
 frontPockets:
-  title: Front pockets
-  description: Whether or not to add front pockets on the side seam
+  title: Poches avant
+  description: Si oui ou non ajouter des poches avant sur la couture latérale
 backPockets:
-  title: Back pockets
-  description: Whether or not to add welt pockets to the back
+  title: Poches arrière
+  description: Si oui ou non ajouter des poches à l'arrière
 elasticatedHem:
-  title: Elasticated hem
-  description: Whether or not you want an elasticated hem
+  title: Ourlet élastiqué
+  description: Si vous voulez ou non un ourlet élastiqué
 waistElastic:
-  title: Waist elastic width
-  description: Width of the elastic at the waist
+  title: Largeur élastique de la taille
+  description: Largeur de l'élastique à la taille
 ankleElastic:
-  title: Ankle/Hem elastic width
-  description: Width of the (optional) elastic at the ankle/hem
+  title: Largeur élastique de cheville/ourlet
+  description: Largeur de l'élastique (optionnel) à la cheville/ourlet
