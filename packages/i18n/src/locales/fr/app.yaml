@@ -31,7 +31,7 @@ chest: Poitrine
 chestInfo: Les seins nécessitent des mesures supplémentaires. Si cette personne n'a pas de seins, les mesures non pertinentes seront masquées lors de la configuration du modèle. Cela n'a aucun impact sur la façon dont les patrons sont tracés.
 chooseASize: Choisir une taille
 chooseAPerson: Choisir une personne
-chooseADesign: Choose a design
+chooseADesign: Choisir un design
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
@@ -95,11 +95,11 @@ i18n: Internationalisation
 imperialUnits: Unités impériales (pouces)
 instagram: Instagram
 invalidTldMessage: '.{tld} n''est pas un TLD valide'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
+joinTheChatMsg: Nous avons une communauté sur Discord avec des amis avec lesquels vous pouvez discuter.
 justAMoment: Juste un instant
 layout: Mis en page
 logIn: Connexion
-loginWithProvider: 'Log in with {provider}'
+loginWithProvider: 'Connectez-vous avec {provider}'
 logOut: Déconnexion
 manual: Manuel
 markdownHelp: Aide de MarkDown
@@ -128,7 +128,7 @@ orPayPerYear: Ou payer par an
 other: Autre
 otherThing: 'Autres {thing}'
 ourPatrons: Nos mécènes
-ourRevenuePledge: Our revenue pledge
+ourRevenuePledge: Notre engagement de revenus
 patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
@@ -139,7 +139,7 @@ patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier d
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
 pattern: Patron
-sewingPatterns: Sewing patterns
+sewingPatterns: Patrons de couture
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
 perMonth: Par Mois
@@ -176,7 +176,7 @@ share: Partager
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
-signupWithProvider: 'Sign up with {provider}'
+signupWithProvider: 'S''inscrire avec {provider}'
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
@@ -192,7 +192,7 @@ thisFieldSupportsMarkdown: Ce champ prend en charge Markdown
 thisPageRequiresAuthentication: Cette page nécessite une authentification
 troubleLoggingIn: Un problème de connexion ?
 twitter: Twitter
-txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
+txt-footer: Freesewing est fait par une communauté de contributeurs<br />avec le soutien financier de nos Mécènes
 txt-tier2: Notre niveau le plus démocratiquement tarifé. C'est peut-être moins que le prix d'un latte, mais votre soutien compte beaucoup pour nous.
 txt-tier4: Abonnez-vous à ce niveau et nous vous enverrons une part de notre swag Freesewing tant convoité chez vous, partout dans le monde.
 txt-tier8: "Si vous ne voulez simplement pas nous soutenir, mais que vous voulez que le freesewing se développe, c'est le niveau qui vous convient. Aussi : swag supplémentaire !"
@@ -304,8 +304,8 @@ editThing: 'Modifier {thing}'
 editPattern-txt: Charger ce patron dans l'éditeur de patron
 featureRequiresAccount: Cette fonctionnalité nécessite un compte FreeSewing
 zoom: Zoom
-zoomIn: Zoom in
-zoomOut: Zoom out
+zoomIn: Zoom avant
+zoomOut: Zoom arrière
 zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
 savePattern-txt: Stocker ce patron sur votre compte FreeSewing
 comparePattern: Comparer les patrons
@@ -318,7 +318,7 @@ updateNotes-txt: Mettre à jour les notes concernant votre patron
 franceWarning: Attention, pour les utilisateurs français
 franceWarning-txt: Plusieurs fournisseurs d'accès français — dont free.fr, laposte.net, orange.fr et sfr.fr — rejettent systématiquement nos e-mails.
 emailNotReceived: Si vous ne recevez pas le mail d'activation, merci de nous contacter pour que nous puissions vous aider.
-error: Error
+error: Erreur
 info: Info
-warning: Warning
-debug: Debug
+warning: Avertissement
+debug: Débug
