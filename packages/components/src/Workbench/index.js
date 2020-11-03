@@ -89,11 +89,9 @@ const Workbench = ({
     updateGist(m, 'settings', 'measurements')
     setLanguage(userLanguage)
     if (translations) addTranslations(translations)
-    console.log('useEffect 1')
   }, [])
   useEffect(() => {
     if (language !== gist.settings.locale) updateGist(language, 'settings', 'locale')
-    console.log('useEffect 2')
   }, [language])
 
   const getMeasurements = () => storage.get(config.name + '-measurements')
@@ -120,8 +118,12 @@ const Workbench = ({
     if (required.length < 1) return false
     if (measurements === null) return true
     for (let m of required) {
-      if (typeof measurements[m] === 'undefined') return true
+      if (typeof measurements[m] === 'undefined') {
+        console.log('measurement missing', m.measurements)
+        return true
+      }
     }
+    console.log('measurements ok', measurements)
 
     return false
   }
@@ -206,7 +208,10 @@ const Workbench = ({
       )
       break
     case 'draft':
-      if (measurementsMissing()) setDisplay('measurements')
+      if (measurementsMissing()) {
+        setDisplay('measurements')
+        break
+      }
       pattern = new Pattern(gist.settings)
       pattern.draft()
       let patternProps = pattern.getRenderProps()
@@ -253,16 +258,10 @@ const Workbench = ({
       )
       break
     case 'sample':
-      if (measurementsMissing()) setDisplay('measurements')
-      pattern = new Pattern(gist.settings).use(svgattrPlugin, {
-        class: 'freesewing draft'
-      })
-      try {
-        pattern.sample()
-      } catch (err) {
-        console.log(err)
+      if (measurementsMissing()) {
+        setDisplay('measurements')
+        break
       }
-      main = <div dangerouslySetInnerHTML={{ __html: pattern.render() }} />
       context = (
         <SampleConfigurator
           config={config}
@@ -273,6 +272,18 @@ const Workbench = ({
           units={units || 'metric'}
         />
       )
+      if (!gist.settings.sample) main = null
+      else {
+        pattern = new Pattern(gist.settings).use(svgattrPlugin, {
+          class: 'freesewing draft'
+        })
+        try {
+          pattern.sample()
+        } catch (err) {
+          console.log(err)
+        }
+        main = <div dangerouslySetInnerHTML={{ __html: pattern.render() }} />
+      }
       break
     case 'measurements':
       main = (
