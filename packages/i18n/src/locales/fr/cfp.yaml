@@ -12,6 +12,8 @@ devDocsAvailableAt: La documentation pour développeur est disponible sur
 talkToUs: Pour des questions, des avis ou des suggestions, venez nous parler sur notre chat
 draftYourPattern: Dessiner votre patron
 testYourPattern: Tester votre patron
+draftThing: 'Ébauche de {thing}'
+testThing: 'Tester {thing}'
 renderInBrowser: Cliquer ci-dessous pour afficher votre patron dans votre navigateur.
 weWillReRender: Lorsque vous effectuez des modifications, nous mettons à jour le rendu pour vous.
 youCan: Vous pouvez

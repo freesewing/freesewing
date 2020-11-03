@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  title: Hintere Öffnung
+  description: Steuert die Öffnung an der Rückseite der Schürze
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  title: Riemenlänge
+  description: Steuert die Riemenlänge
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  title: Längenzugabe
+  description: Steuert die Länge der Schürze
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  title: Latzlänge
+  description: Steuert die Länge des Latzes
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  title: Latzbreite
+  description: Steuert die Breite des Latzes
 strapWidth:
-  title: Strap width
-  description: Controls the width of the strap
+  title: Riemenbreite
+  description: Steuert die Riemenbreite
 

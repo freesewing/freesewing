@@ -12,6 +12,8 @@ devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: Für Fragen, Feedback oder Anregungen, kommen Sie in unserem Chatraum
 draftYourPattern: Zeichnen Sie Ihr Schnittmuster
 testYourPattern: Testen Sie Ihr Schnittmuster
+draftThing: 'Draft {thing}'
+testThing: 'Test {thing}'
 renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
 weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
 youCan: Sie können
