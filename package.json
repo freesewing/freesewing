@@ -69,6 +69,7 @@
     "chalk": "^4.1.0",
     "codecov": "^3.7.2",
     "cross-env": "^7.0.2",
+    "deep-freeze": "^0.0.1",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
