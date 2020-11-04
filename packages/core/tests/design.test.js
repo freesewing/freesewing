@@ -155,7 +155,6 @@ it("Design constructor should handle Simon", () => {
     hide: ["base", "frontBase", "front", "backBase", "sleeveBase"]
   });
   let pattern = new design();
-  console.log(pattern.config);
   //expect(pattern.config.draftOrder[0]).to.equal("step3");
   //expect(pattern.config.draftOrder[1]).to.equal("step4");
   //expect(pattern.config.draftOrder[2]).to.equal("step5");
