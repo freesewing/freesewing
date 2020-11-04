@@ -1,7 +1,7 @@
 {
   "name": "paco",
   "homepage": "https://paco.freesewing.dev/",
-  "version": "2.10.0",
+  "version": "2.10.1-rc.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",
@@ -20,13 +20,14 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^v4.0.0-alpha.56",
     "pattern": "link:..",
-    "prismjs": "1.20.0",
+    "prismjs": "1.22.0",
     "react": "^16.13",
     "react-dom": "^16.13",
     "react-scripts": "^3.4.1",
     "file-saver": "^2.0.2",
     "react-markdown": "4.3.1",
-    "typeface-roboto-condensed": "latest"
+    "typeface-roboto-condensed": "latest",
+    "typeface-raleway": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

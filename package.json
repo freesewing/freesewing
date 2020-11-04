@@ -111,6 +111,7 @@
     "rollup-plugin-yaml": "^2.0.0",
     "standard": "^15.0.0",
     "tlds": "^1.207.0",
+    "typeface-raleway": "^1.1.13",
     "typeface-roboto-condensed": "^0.0.75",
     "uglifycss": "^0.0.29"
   },

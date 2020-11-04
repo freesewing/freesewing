@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### core
+
+#### Changed
+
+ - Now uses ES6 version of bezier-js
+
 
 ## 2.10.0 (2020-10-17)
 

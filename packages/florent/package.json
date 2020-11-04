@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/florent",
-  "version": "2.10.0",
+  "version": "2.10.1-rc.0",
   "description": "A FreeSewing pattern for a flat cap",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,8 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.10.0",
-    "@freesewing/plugin-bundle": "^2.10.0"
+    "@freesewing/core": "^2.10.1-rc.0",
+    "@freesewing/plugin-bundle": "^2.10.1-rc.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,24 +46,24 @@
     "eslint": "^7.6.0",
     "babel-jest": "^26.2.2",
     "jest": "26.2.2",
-    "@freesewing/components": "^2.10.0",
-    "@freesewing/css-theme": "^2.10.0",
-    "@freesewing/i18n": "^2.10.0",
-    "@freesewing/mui-theme": "^2.10.0",
-    "@freesewing/plugin-bust": "^2.10.0",
-    "@freesewing/plugin-buttons": "^2.10.0",
-    "@freesewing/plugin-flip": "^2.10.0",
-    "@freesewing/utils": "^2.10.0",
+    "@freesewing/components": "^2.10.1-rc.0",
+    "@freesewing/css-theme": "^2.10.1-rc.0",
+    "@freesewing/i18n": "^2.10.1-rc.0",
+    "@freesewing/mui-theme": "^2.10.1-rc.0",
+    "@freesewing/plugin-bust": "^2.10.1-rc.0",
+    "@freesewing/plugin-buttons": "^2.10.1-rc.0",
+    "@freesewing/plugin-flip": "^2.10.1-rc.0",
+    "@freesewing/utils": "^2.10.1-rc.0",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^7.0.2",
     "react-scripts": "^3.4.1",
-    "webpack": "^5.3.2",
+    "webpack": "^4.44.1",
     "rollup": "^2.23.0",
     "@rollup/plugin-babel": "^5.1.0",
     "rollup-plugin-terser": "^6.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "4.9.1",
@@ -82,7 +82,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",
