@@ -1,6 +1,6 @@
 import Path from './path'
 import Point from './point'
-import Bezier from 'bezier-js'
+import { Bezier } from 'bezier-js'
 
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
@@ -349,4 +349,4 @@ export function rad2deg(radians) {
 }
 
 // Export bezier-js so plugins can use it
-export { default as Bezier } from 'bezier-js'
+export { Bezier }

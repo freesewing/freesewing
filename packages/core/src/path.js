@@ -1,6 +1,6 @@
 import Attributes from './attributes'
 import Point from './point'
-import Bezier from 'bezier-js'
+import { Bezier } from 'bezier-js'
 import {
   linesIntersect,
   lineIntersectsCurve,
