@@ -1,12 +1,12 @@
 ---
 heelEase:
-  title: Heel ease
-  description: The amount of ease at your heel (when stepping into the leg)
+  title: Bequemlichekitszugabe Ferse
+  description: Grösse der Bequemlichkeitszugabe an der Ferse (wenn man in das Hosenbein hineinsteigt)
 frontPockets:
-  title: Front pockets
-  description: Whether or not to add front pockets on the side seam
+  title: Vordere Taschen
+  description: Hinzufügen von vorderen Taschen an der Seitennaht oder nicht
 backPockets:
-  title: Back pockets
+  title: Gesässtaschen
   description: Whether or not to add welt pockets to the back
 elasticatedHem:
   title: Elasticated hem
