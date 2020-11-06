@@ -88,6 +88,7 @@ components:
     'prismjs': '^1.20.0'
     'react-markdown': '^4.3.1'
     'file-saver': '^2.0.2'
+    'yaml': '^1.10.0'
 core:
   _:
     'bezier-js': '^2.6.1'
