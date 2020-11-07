@@ -4,12 +4,13 @@ const spawn = require('child_process').spawn
 
 const dir = path.join(__dirname, '..')
 
-const buildPatternWorkbenches = (patterns) => {
+const buildPatternWorkbenches = async (patterns) => {
   promises = []
   for (pattern of patterns) {
     let cwd = path.join(dir, 'packages', pattern, 'example')
-    promises.push(runScript(cwd, 'npm run build'))
-    promises.push(runScript(cwd, 'netlify deploy --prod'))
+    await runScript(cwd, 'yarn install')
+    await runScript(cwd, 'yarn build')
+    await runScript(cwd, 'netlify deploy --prod')
   }
 
   return Promise.all(promises)
