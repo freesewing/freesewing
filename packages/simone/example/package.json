@@ -1,7 +1,7 @@
 {
   "name": "simone",
   "homepage": "https://simone.freesewing.dev/",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

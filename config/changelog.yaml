@@ -2,8 +2,22 @@ Unreleased:
   date:
   Added:
   Changed:
+
+2.10.2:
+  date: 2020-11-07
+  Fixed:
     core:
-      - Now uses ES6 version of bezier-js
+      - Fixed bundled bezier-js version
+
+2.10.1:
+  date: 2020-11-07
+  Changed:
+    core:
+      - Switched to bezier-js v3
+    components:
+      - Changes to workbench
+    css-theme:
+      - Removed unused CSS code
 
 2.10.0:
   date: 2020-10-17
