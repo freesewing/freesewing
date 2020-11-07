@@ -91,7 +91,7 @@ components:
     'yaml': '^1.10.0'
 core:
   _:
-    'bezier-js': '^2.6.1'
+    'bezier-js': '^3.0.1'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
 create-freesewing-pattern:
