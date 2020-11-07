@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-export-dxf",
-  "version": "2.10.1-rc.0",
+  "version": "2.10.1",
   "description": "A FreeSewing plugin to export your pattern as DXF-ASTM",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.10.1-rc.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
