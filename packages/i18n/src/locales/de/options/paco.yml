@@ -7,7 +7,7 @@ frontPockets:
   description: Hinzufügen von vorderen Taschen an der Seitennaht oder nicht
 backPockets:
   title: Gesässtaschen
-  description: Whether or not to add welt pockets to the back
+  description: Hinzufügen einer Kedertasche zur Rückseite oder nicht
 elasticatedHem:
   title: Elastischer Saum
   description: Ob ein elastischer Saum gewünscht ist oder nicht
