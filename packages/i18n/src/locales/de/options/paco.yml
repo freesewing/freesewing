@@ -9,11 +9,11 @@ backPockets:
   title: Gesässtaschen
   description: Whether or not to add welt pockets to the back
 elasticatedHem:
-  title: Elasticated hem
-  description: Whether or not you want an elasticated hem
+  title: Elastischer Saum
+  description: Ob ein elastischer Saum gewünscht ist oder nicht
 waistElastic:
   title: Breite des Taillengummizugs
   description: Breite des Gummizugs an der Taille
 ankleElastic:
-  title: Ankle/Hem elastic width
-  description: Width of the (optional) elastic at the ankle/hem
+  title: Knöchel/Saum Gummizugbreite
+  description: Breite des (optionalen) Gummizugs am Knöchel/Saum
