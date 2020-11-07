@@ -1,8 +1,0 @@
-/*
- * This CSS file overrides some of verdaccio's styles for use by freesewing.
- *
- * It hides the login button and search form to avoid confusing users as
- * we spin up an ephemeral verdaccio, so there's no login or persistent storage.
- */
-header{background: #222!important}
-div.container form, button.header-button-login{display:none}
