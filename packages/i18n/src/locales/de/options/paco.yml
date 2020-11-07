@@ -12,8 +12,8 @@ elasticatedHem:
   title: Elasticated hem
   description: Whether or not you want an elasticated hem
 waistElastic:
-  title: Waist elastic width
-  description: Width of the elastic at the waist
+  title: Breite des Taillengummizugs
+  description: Breite des Gummizugs an der Taille
 ankleElastic:
   title: Ankle/Hem elastic width
   description: Width of the (optional) elastic at the ankle/hem
