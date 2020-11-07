@@ -107,6 +107,7 @@ pre[class*='language-'] {
 div.react-markdown pre,
 div.react-markdown pre code[class*='language-'] {
   margin: 0.5rem 0;
+  padding: 0 1rem;
 }
 div.react-markdown pre[class*='language-']:before {
   display: none;
