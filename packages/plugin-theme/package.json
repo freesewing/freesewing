@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-theme",
-  "version": "2.10.2",
+  "version": "2.10.3",
   "description": "A FreeSewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,8 +35,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.10.2"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

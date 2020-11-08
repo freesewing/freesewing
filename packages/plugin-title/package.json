@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-title",
-  "version": "2.10.2",
+  "version": "2.10.3",
   "description": "A FreeSewing plugin to add a title to your pattern parts",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.10.2"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
