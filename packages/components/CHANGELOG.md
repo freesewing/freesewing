@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.10.3 (2020-11-08)
+
+### Changed
+
+ - Draft component now supports snippets in the same way as the render method
+
 ## 2.10.1 (2020-11-07)
 
 ### Changed

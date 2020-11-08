@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.10.3 (2020-11-08)
+
+### Changed
+
+ - Renderprops now includes SVG with preRender hook applied
+
 ## 2.10.2 (2020-11-07)
 
 ### Fixed

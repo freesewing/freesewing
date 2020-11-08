@@ -1,7 +1,7 @@
 {
   "name": "sven",
   "homepage": "https://sven.freesewing.dev/",
-  "version": "2.10.2",
+  "version": "2.10.3",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",
