@@ -3,6 +3,14 @@ Unreleased:
   Added:
   Changed:
 
+2.10.3:
+  date: 2020-11-08
+  Changed:
+    components:
+      - Draft component now supports snippets in the same way as the render method
+    core:
+      - Renderprops now includes SVG with preRender hook applied
+
 2.10.2:
   date: 2020-11-07
   Fixed:
