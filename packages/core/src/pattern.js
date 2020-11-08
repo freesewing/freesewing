@@ -649,8 +649,13 @@ Pattern.prototype.wants = function (partName) {
  *  an external renderer (eg. a React component)
  */
 Pattern.prototype.getRenderProps = function () {
+  // Run pre-render hook
+  let svg = new Svg(this)
+  svg.hooks = this.hooks
+  svg.runHooks('preRender')
+
   this.pack()
-  let props = {}
+  let props = { svg }
   props.width = this.width
   props.height = this.height
   props.settings = this.settings

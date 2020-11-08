@@ -34,8 +34,8 @@ const createConfig = (component, module) => {
 
 const config = []
 // When developing, you can use this to only rebuild the components you're working on
-let dev = true
-let only = ['Workbench']
+let dev = false
+let only = ['Draft', 'Workbench']
 for (let component of components) {
   if (!dev || only.indexOf(component) !== -1) config.push(createConfig(component, false))
   // Webpack doesn't handle .mjs very well

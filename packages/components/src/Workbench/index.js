@@ -123,7 +123,6 @@ const Workbench = ({
         return true
       }
     }
-    console.log('measurements ok', measurements)
 
     return false
   }
