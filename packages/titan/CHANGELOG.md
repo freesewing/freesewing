@@ -1,6 +1,12 @@
 # Change log for: @freesewing/titan
 
 
+## 2.10.4 (2020-11-13)
+
+### Fixed
+
+ - Issue with incorrectly named point
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

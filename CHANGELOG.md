@@ -4,6 +4,15 @@
 ## Unreleased
 
 
+## 2.10.4 (2020-11-13)
+
+### titan
+
+#### Fixed
+
+ - Issue with incorrectly named point
+
+
 ## 2.10.3 (2020-11-08)
 
 ### components
