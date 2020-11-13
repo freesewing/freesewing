@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-measurements",
-  "version": "2.10.3",
+  "version": "2.10.4",
   "description": "A FreeSewing plugin that adds additional measurements that can be calculated from existing ones",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,6 @@
   "peerDependencies": {
     "@freesewing/core": "^2.10.3"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
