@@ -3,6 +3,12 @@ Unreleased:
   Added:
   Changed:
 
+2.10.4:
+  date: 2020-11-13
+  Fixed:
+    titan:
+      - Issue with incorrectly named point
+
 2.10.3:
   date: 2020-11-08
   Changed:
