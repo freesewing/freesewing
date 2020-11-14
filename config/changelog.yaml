@@ -3,6 +3,12 @@ Unreleased:
   Added:
   Changed:
 
+2.10.5:
+  date: 2020-11-14
+  Fixed:
+    i18n:
+      - Added missing `cty.` translations to non-English language files
+
 2.10.4:
   date: 2020-11-13
   Fixed:
