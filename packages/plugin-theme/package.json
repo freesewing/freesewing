@@ -33,8 +33,10 @@
     "prebuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.10.4"
+    "@freesewing/core": "^2.10.5"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

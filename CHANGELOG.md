@@ -4,6 +4,15 @@
 ## Unreleased
 
 
+## 2.10.5 (2020-11-14)
+
+### i18n
+
+#### Fixed
+
+ - Added missing `cty.` translations to non-English language files
+
+
 ## 2.10.4 (2020-11-13)
 
 ### titan

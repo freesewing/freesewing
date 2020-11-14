@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.10.5 (2020-11-14)
+
+### Fixed
+
+ - Added missing `cty.` translations to non-English language files
+
 ## 2.9.0 (2020-10-02)
 
 ### Added
