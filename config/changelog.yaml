@@ -3,6 +3,12 @@ Unreleased:
   Added:
   Changed:
 
+2.10.6:
+  date: 2020-11-15
+  Added:
+    components:
+      - Workbench now supports loading a pattern configuration from a (github) gist
+
 2.10.5:
   date: 2020-11-14
   Fixed:

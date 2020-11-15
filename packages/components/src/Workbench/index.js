@@ -22,6 +22,8 @@ import UnhideIcon from '@material-ui/icons/ChevronRight'
 import SampleConfigurator from '../SampleConfigurator'
 import svgattrPlugin from '@freesewing/plugin-svgattr'
 import Xport from './Export'
+import axios from 'axios'
+import yaml from 'yaml'
 
 const icons = {
   draft: <DraftIcon />,
@@ -41,7 +43,8 @@ const Workbench = ({
   Pattern,
   units = 'metric',
   translations = false,
-  addTranslations
+  addTranslations,
+  recreate = false
 }) => {
   const [display, setDisplay] = useState(null)
   const [theme, setTheme] = useState('light')
@@ -51,6 +54,7 @@ const Workbench = ({
   const [hideAside, setHideAside] = useState(false)
   const [design, setDesign] = useState(true)
   const [focus, setFocus] = useState(null)
+  const [error, setError] = useState(null)
 
   const raiseEvent = (type, data) => {
     if (type === 'clearFocusAll') {
@@ -84,10 +88,37 @@ const Workbench = ({
   defaultGist.settings.debug = true
 
   useEffect(() => {
-    let m = getMeasurements()
-    setMeasurements(m)
-    updateGist(m, 'settings', 'measurements')
-    setLanguage(userLanguage)
+    if (recreate) {
+      // Recreating from existing pattern config
+      axios
+        .get(`https://api.github.com/gists/${recreate.id}`)
+        .then((res) => {
+          if (res.data.files['pattern.yaml'].content) {
+            let g = yaml.parse(res.data.files['pattern.yaml'].content)
+            if (g.design !== Pattern.config.name) {
+              setError(
+                `You tried loading a configuration for ${g.design} into a ${Pattern.config.name} development environment`
+              )
+              setDisplay('error')
+            }
+            setMeasurements(g.settings.measurements)
+            updateGist(g.settings, 'settings')
+            setLanguage(g.settings.locale)
+          } else {
+            setError('This gist does not seem to be a valid pattern configuration')
+            setDisplay('error')
+          }
+        })
+        .catch((err) => {
+          setError(err)
+          setDisplay('error')
+        })
+    } else {
+      let m = getMeasurements()
+      setMeasurements(m)
+      updateGist(m, 'settings', 'measurements')
+      setLanguage(userLanguage)
+    }
     if (translations) addTranslations(translations)
   }, [])
   useEffect(() => {

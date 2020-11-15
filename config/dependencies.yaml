@@ -68,6 +68,7 @@ css-theme:
     'open-color': '^1.7.0'
 components:
   peer:
+    'axios': '^0.19.2'
     'react': '^16.13.1'
     '@freesewing/pattern-info': '^{{version}}'
     '@freesewing/mui-theme': '^{{version}}'
