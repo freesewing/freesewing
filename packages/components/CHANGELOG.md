@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.10.6 (2020-11-15)
+
+### Added
+
+ - Workbench now supports loading a pattern configuration from a (github) gist
+
 ## 2.10.3 (2020-11-08)
 
 ### Changed

@@ -18,8 +18,9 @@ const App = (props) => {
 
   // Adds support for loading an external pattern configuration
   let recreate
-  if (window) recreate = window.location.pathname.substr(1).split("/")
-  if (recreate.length === 3 && recreate[0] === 'from') recreate = { from: recreate[1], id: recreate[2] }
+  if (window) recreate = window.location.pathname.substr(1).split('/')
+  if (recreate.length === 3 && recreate[0] === 'from')
+    recreate = { from: recreate[1], id: recreate[2] }
   else recreate = false
 
   return (

@@ -4,6 +4,24 @@
 ## Unreleased
 
 
+## 2.10.7 (2020-11-18)
+
+### simon
+
+#### Fixed
+
+ - Yoke dart did not affect sleevecap length. See [#687](https://github.com/freesewing/freesewing/issues/687)
+
+
+## 2.10.6 (2020-11-15)
+
+### components
+
+#### Added
+
+ - Workbench now supports loading a pattern configuration from a (github) gist
+
+
 ## 2.10.5 (2020-11-14)
 
 ### i18n

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/prettier-config",
-  "version": "2.10.6",
+  "version": "2.10.7",
   "description": "FreeSewing's shared configuration for prettier",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -16,6 +16,9 @@
   "scripts": {
     "build": "echo \"prettier-config: No build required\" && exit 0"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "index.json",
     "package.json"

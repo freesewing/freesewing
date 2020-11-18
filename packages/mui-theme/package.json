@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/mui-theme",
-  "version": "2.10.6",
+  "version": "2.10.7",
   "description": "A Material-UI theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -31,6 +31,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

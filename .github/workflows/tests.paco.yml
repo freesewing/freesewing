@@ -23,7 +23,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/paco && npm install @freesewing/core@^2.10.5 @freesewing/plugin-bundle@^2.10.5 @freesewing/titan@^2.10.5 @freesewing/models@2.10.5 @freesewing/pattern-info@2.10.5 mocha chai"
+        run: "cd packages/paco && npm install @freesewing/core@^2.10.7 @freesewing/plugin-bundle@^2.10.7 @freesewing/titan@^2.10.7 @freesewing/models@2.10.7 @freesewing/pattern-info@2.10.7 mocha chai"
         env:
           CI: true
       - name: Build pattern
