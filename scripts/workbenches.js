@@ -10,7 +10,6 @@ const buildPatternWorkbenches = async (patterns) => {
     let cwd = path.join(dir, 'packages', pattern, 'example')
     await runScript(cwd, 'rm -rf node_modules yarn.lock')
     await runScript(cwd, 'yarn install')
-    await runScript(cwd, 'yarn install')
     await runScript(cwd, 'yarn build')
     await runScript(cwd, 'netlify deploy --prod')
   }
