@@ -4735,9 +4735,9 @@ before-after-hook@^2.0.0:
   integrity sha512-IWIbu7pMqyw3EAJHzzHbWa85b6oud/yfKYg5rqB5hNE8CeMi3nX+2C2sj0HswfblST86hpVEOAb9x34NZd6P7A==
 
 bezier-js@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-3.0.1.tgz#1f360189ef80cfe259c266170e5390a40090fd12"
-  integrity sha512-J2yxaj/roNjRzOT+sQzLFtRQsLgwM0+yYKok9PKvtCqscowiFODjQf8Bw8hTxu+H2Z7W3nFo7YAhM8YPTwo3Ng==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-3.1.0.tgz#bd9219bf15ecd8bd1bb15f57d85fb81b8db3fb0e"
+  integrity sha512-Mvx9eojw9MkFaDNGn4PoOQgxXGrur1jM/qHEcNwbyBwGnk3lTUS/2zcZxErnx4YsQtFejExBu7uuzdPw/iyJiQ==
 
 big.js@^5.2.2:
   version "5.2.2"
@@ -15252,9 +15252,9 @@ pretty-quick@^3.0.0:
     multimatch "^4.0.0"
 
 prismjs@^1.20.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
-  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.22.0.tgz#73c3400afc58a823dd7eed023f8e1ce9fd8977fa"
+  integrity sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
   optionalDependencies:
     clipboard "^2.0.0"
 
