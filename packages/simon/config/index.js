@@ -115,7 +115,7 @@ export default {
     'wrist'
   ],
   dependencies: {
-    sleeveBase: ['frontBase', 'backBase'],
+    sleeveBase: ['frontBase', 'backBase', 'back'],
     sleeve: ['sleeveBase', 'front', 'back']
   },
   inject: {

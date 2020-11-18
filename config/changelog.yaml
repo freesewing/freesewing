@@ -3,6 +3,12 @@ Unreleased:
   Added:
   Changed:
 
+2.10.7:
+  date: 2020-11-18
+  Fixed:
+    simon:
+      - [#687](https://github.com/freesewing/freesewing/issues/687) Yoke dart does not affect sleevecap length
+
 2.10.6:
   date: 2020-11-15
   Added:
