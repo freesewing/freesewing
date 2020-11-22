@@ -1,0 +1,50 @@
+{
+  "name": "bella",
+  "homepage": "https://bella.freesewing.dev/",
+  "version": "2.10.2",
+  "private": true,
+  "dependencies": {
+    "@freesewing/components": "latest",
+    "@freesewing/core": "latest",
+    "@freesewing/css-theme": "latest",
+    "@freesewing/i18n": "latest",
+    "@freesewing/models": "latest",
+    "@freesewing/mui-theme": "latest",
+    "@freesewing/pattern-info": "latest",
+    "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-theme": "latest",
+    "@freesewing/plugin-i18n": "latest",
+    "@freesewing/plugin-svgattr": "latest",
+    "@freesewing/utils": "latest",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^v4.0.0-alpha.56",
+    "pattern": "link:..",
+    "prismjs": "1.22.0",
+    "react": "^16.13",
+    "react-dom": "^16.13",
+    "react-scripts": "^3.4.1",
+    "file-saver": "^2.0.2",
+    "react-markdown": "4.3.1",
+    "typeface-roboto-condensed": "latest",
+    "typeface-raleway": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "2.0.1"
+  }
+}

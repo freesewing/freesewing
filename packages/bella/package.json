@@ -1,0 +1,94 @@
+{
+  "name": "@freesewing/bella",
+  "version": "2.10.2",
+  "description": "A FreeSewing pattern for a womenswear bodice block",
+  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "pattern",
+    "sewing",
+    "sewing pattern"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rollup -c",
+    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "pubforce": "npm publish",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "start": "rollup -c -w",
+    "netlify": "echo \"Not configured yet\"",
+    "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+  },
+  "peerDependencies": {
+    "@freesewing/core": "^2.10.2",
+    "@freesewing/plugin-bundle": "^2.10.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.6.0",
+    "babel-jest": "^26.2.2",
+    "jest": "26.2.2",
+    "@freesewing/components": "^2.10.2",
+    "@freesewing/css-theme": "^2.10.2",
+    "@freesewing/i18n": "^2.10.2",
+    "@freesewing/mui-theme": "^2.10.2",
+    "@freesewing/plugin-bust": "^2.10.2",
+    "@freesewing/plugin-buttons": "^2.10.2",
+    "@freesewing/plugin-flip": "^2.10.2",
+    "@freesewing/utils": "^2.10.2",
+    "@svgr/rollup": "^2.4.1",
+    "cross-env": "^7.0.2",
+    "react-scripts": "^3.4.1",
+    "webpack": "^4.44.1",
+    "rollup": "^2.23.0",
+    "@rollup/plugin-babel": "^5.1.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "^v4.0.0-alpha.56",
+    "react-intl": "^5.4.5",
+    "prop-types": "^15.7.2",
+    "mocha": "^8.1.0",
+    "chai": "^4.2.0",
+    "chai-string": "^1.5.0",
+    "@babel/register": "^7.10.5"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6"
+  },
+  "rollup": {
+    "exports": "default"
+  }
+}
