@@ -56,7 +56,7 @@
     "@freesewing/plugin-buttons": "^2.10.7",
     "@freesewing/plugin-flip": "^2.10.7",
     "@freesewing/utils": "^2.10.7",
-    "@svgr/rollup": "^2.4.1",
+    "@svgr/rollup": "^5.5.0",
     "cross-env": "^7.0.2",
     "react-scripts": "^3.4.1",
     "webpack": "^4.44.1",
