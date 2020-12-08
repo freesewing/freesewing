@@ -71,7 +71,7 @@
     "cross-env": "^7.0.2",
     "deep-freeze": "^0.0.1",
     "eslint": "^7.6.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-config-standard": "^15.0.1",
     "eslint-config-standard-react": "^10.0.0",
     "eslint-plugin-import": "^2.22.0",
