@@ -59,6 +59,8 @@ function useBackend(baseURL, timeout = 10000) {
   backend.adminSetRole = (data, token) => api.put('/admin/role', data, auth(token)) // Set role for a user
   backend.adminUnfreeze = (data, token) => api.put('/admin/unfreeze', data, auth(token)) // Unfreeze a user account
   backend.adminImpersonate = (data, token) => api.post('/admin/impersonate', data, auth(token)) // Impersonate a user
+  backend.adminPatronList = (token) => api.get('/admin/patrons', auth(token)) // Get patron list
+  backend.adminStats = (token) => api.get('/admin/stats', auth(token)) // Get stats
 
   return backend
 }
