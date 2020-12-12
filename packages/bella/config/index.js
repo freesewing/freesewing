@@ -21,7 +21,8 @@ export default {
       'frontShoulderWidth',
       'frontArmholePitchDepth',
       'backArmholePitchDepth',
-      'highBustWidth'
+      'highBustWidth',
+      'bustDartLength'
     ]
   },
   measurements: [
