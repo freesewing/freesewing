@@ -1,33 +1,79 @@
-<p align="center">
-  <a title="Go to freesewing.org" href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="center" width="150px" alt="Freesewing logo"/></a>
-</p>
-<h4 align="center"><em>&nbsp;<a title="Go to freesewing.org" href="https://freesewing.org/">freesewing</a></em>
-<br><sup>a library for made-to-measure sewing patterns</sup>
-</h4>
-<p align="center">
-  <a href="https://gitter.im/freesewing/freesewing"><img src="https://badgen.net/badge/chat/on%20Gitter/cyan" alt="Chat on Gitter"></a>
-  <a href="https://freesewing.org/patrons/join"><img src="https://badgen.net/badge/become/a%20Patron/FF5B77" alt="Become a Patron"></a>
-</p>
+![FreeSewing](https://freesewing.org/banner.jpg)
+<p align='center'><a
+  href="https://chat.freesewing.org"
+  title="Chat with us on Discord"
+  ><img src="https://img.shields.io/discord/698854858052075530?label=Chat%20on%20Discord"
+  alt="Chat with us on Discord"/>
+  </a><a
+  href="https://twitter.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a><a
+  href="https://instagram.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-E4405F.svg?logo=instagram&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a><a
+  href="https://freesewing.org/patrons/join"
+  title="Become a FreeSewing Patron"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Support%20us-blueviolet.svg?logo=cash-app&logoColor=white&logoWidth=15"
+  alt="Become a FreeSewing Patron"/>
+  </a></p>
 
-# Freesewing SVG to (tiled) PDF backend
+## What am I looking at? 🤔
 
-[Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing pattern.  
-
-This is a stand-alone backend API to turn SVG patterns into (tiled) PDFs.
+This repository holds a stand-alone backend API to turn SVG patterns into (tiled) PDFs.
 
 Our end-goal is to handle this client-side, and have freesewing render to PDF directly.
 However, given the complexities of the PDF format, this is non-trivial, so for the time
 being we handle this with this backend.
 
-## Links
+## About FreeSewing 💀
 
- - 💻 Website: [freesewing.org](https://freesewing.org)
- - 💬 Chat: [Gitter](https://gitter.im/freesewing/freesewing)
+Where the world of makers and developers collide, that's where you'll find FreeSewing.
+
+Our [core library](https://freesewing.dev/) is a *batteries-included* toolbox
+for parametric design of sewing patterns. It's a modular system (check our list
+of [plugins](https://freesewing.dev/plugins) and getting started is as simple as:
+
+```bash
+npm init freesewing-pattern
+```
+
+We also have [a template repository](https://github.com/freesewing/pattern) if you prefer to start that way.
+
+Developer documentation is maintained on [freesewing.dev](https://freesewing.dev/) and
+we also have a `#development-help` channel on [Discord](https://discord.freesewing.org/).
+
+If you're a maker, checkout [freesewing.org](https://freesewing.org/) where you can generate
+our sewing patterns adapted to your measurements.
+
+## Support FreeSewing: Become a patron 🥰
+
+FreeSewing is an open source project run by a community, 
+and financially supported by our patrons.
+
+If you feel what we do is worthwhile, you too 
+should [become a patron](https://freesewing.org/patrons/join).
+
+## Links 👩‍💻
+
+ - 💻 Makers website: [freesewing.org](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.org)
+ - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
- 
-## Getting started
 
-This is a REST API built with Express, and currently a work in progress.
+## License: MIT 🤓
 
-If you have questions, please join [our chatroom](https://gitter.im/freesewing/freesewing).
+© [Joost De Cock](https://github.com/joostdecock).  
+See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
+
+## Where to get help 🤯
+
+Our [chat rooms on Discord](https://discord.freesewing.org) are the best place to ask questions,
+share your feedback, or just hang out.
+
+If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+
