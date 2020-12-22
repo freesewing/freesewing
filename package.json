@@ -61,7 +61,7 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@svgr/rollup": "^5.4.0",
     "ava": "^3.11.0",
-    "axios": "0.21.0",
+    "axios": "0.21.1",
     "babel-loader": "^8.1.0",
     "bezier-js": "^3.0.1",
     "chai": "^4.2.0",
