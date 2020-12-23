@@ -1,8 +1,13 @@
+<div>
+
 ##### COVID-19: Facemask pattern
 
 If you’re looking for our facemask pattern, follow this link:
 
   - [Face mask pattern and instructions](/blog/facemask-frenzy)
+
+</div>
+<div>
 
 ##### Contributor calls
 
@@ -12,6 +17,9 @@ Anybody with an interest in FreeSewing is welcome to join.
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
 Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
 
+</div>
+<div>
+
 ##### We’ve moved to Discord
 
 We’ve moved our chat rooms from to Discord. 
@@ -19,3 +27,6 @@ Our legacy chat on Gitter is deprecated.
 
 You can join us at https://chat.freesewing.org, 
 or use this in-app Discord invite: https://discord.gg/YDV4GvU
+
+</div>
+
