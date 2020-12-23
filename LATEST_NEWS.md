@@ -14,7 +14,7 @@ Notes and todos are [available on Github](https://github.com/freesewing/freesewi
 
 ##### We’ve moved to Discord
 
-We’ve moved our chat rooms from to Discord. 
+We’ve moved our chat rooms to Discord. 
 Our legacy chat on Gitter is deprecated.
 
 You can join us at https://chat.freesewing.org, 
