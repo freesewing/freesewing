@@ -11,6 +11,9 @@ currentPassword: Mot de passe actuel
 email: Adresse mail
 emailInfo: L'adresse e-mail associée à votre compte est importante car elle sera utilisée pour retrouver l'accès à votre compte si vous oubliez votre mot de passe. Pour cette raison, la modification de votre adresse e-mail nécessite une confirmation.
 emailTitle: Entrez l'adresse e-mail que vous souhaitez associer à ce compte
+newsletter: Newsletter
+newsletterTitle: Subscribe to our newsletter
+newsletterInfo: Would you like to receive the FreeSewing newsletter?
 exportYourData: Exportez vos données
 exportYourDataInfo: Le Règlement Général sur la Protection des Donnée de l'UE (RGPD)  garantit votre <em>droit à la portabilité</em>  - le droit d'obtenir et de réutiliser vos données personnelles à des fins personnelles, ou sur pour d'autres services.
 exportYourDataTitle: Cliquez ci-dessous pour télécharger vos données personnelles
