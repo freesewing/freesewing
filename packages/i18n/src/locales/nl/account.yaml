@@ -11,6 +11,9 @@ currentPassword: Huidig wachtwoord
 email: Email adres
 emailInfo: Het e-mailadres dat aan uw account is gekoppeld, is belangrijk omdat het zal worden gebruikt om weer toegang te krijgen tot uw account als u uw wachtwoord bent vergeten. Daarom is voor het wijzigen van uw e-mailadres een bevestiging vereist.
 emailTitle: Voer het e-mailadres in dat u aan dit account wilt linken
+newsletter: Newsletter
+newsletterTitle: Subscribe to our newsletter
+newsletterInfo: Would you like to receive the FreeSewing newsletter?
 exportYourData: Exporteer je gegevens
 exportYourDataInfo: 'De algemene verordening gegevensbescherming van de EU (AVG) waarborgt uw zogenaamd <em>recht op gegevensportabiliteit</em>: het recht om uw persoonlijke gegevens te verkrijgen voor uw eigen doeleinden of voor andere diensten.'
 exportYourDataTitle: Klik hieronder om uw persoonlijke gegevens te downloaden
