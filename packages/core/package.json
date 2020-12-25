@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "2.10.7",
+  "version": "2.10.8-rc.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,13 +35,11 @@
     "report": "BABEL_ENV=production nyc report --reporter=html",
     "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },
-  "peerDependencies": {},
   "dependencies": {
     "bezier-js": "^3.0.1",
     "bin-pack": "^1.0.2",
     "hooks": "^0.3.2"
   },
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
