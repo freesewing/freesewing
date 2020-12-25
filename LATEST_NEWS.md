@@ -1,8 +1,14 @@
 ##### COVID-19: Facemask pattern
 
-If you’re looking for our facemask pattern, follow this link:
+Keep those mask on people, and make sure to make your own so we can
+leave the PPE for the frontline workers.
 
-  - [Face mask pattern and instructions](/blog/facemask-frenzy)
+Our [face mask pattern](/blog/facemask-frenzy) is recommended by 
+[the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html),
+[Forbes](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/),
+[Make Magazine](https://makezine.com/projects/sew-your-own-face-mask-from-scratch/),
+and countless of others.
+
 
 ##### New FreeSewing sub-Reddit and Facebook group
 
