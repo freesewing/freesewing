@@ -3,25 +3,6 @@
 
 ## Unreleased
 
-### css-theme
- 
-#### Changed
-
- - Footer styling
-
-### i18n
- 
-#### Changed
-
- - Strings for newsletter
-
-### utils
- 
-#### Added
-
- - Backend methods for newsletter subscription management
-
-
 
 ## 2.10.7 (2020-11-18)
 

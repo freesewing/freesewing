@@ -1,7 +1,7 @@
 {
   "name": "carlita",
   "homepage": "https://carlita.freesewing.dev/",
-  "version": "2.10.7",
+  "version": "2.10.8-rc.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",
