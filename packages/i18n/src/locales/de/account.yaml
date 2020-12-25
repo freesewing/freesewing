@@ -11,6 +11,9 @@ currentPassword: Derzeitiges Passwort
 email: E-mail-Addresse
 emailInfo: Die mit Ihrem Konto verknüpfte E-Mail-Adresse ist wichtig, da sie verwendet wird, um wieder Zugriff auf Ihr Konto zu erhalten, wenn Sie Ihr Passwort vergessen haben. Aus diesem Grund erfordert das Ändern Ihrer E-Mail-Adresse eine Bestätigung.
 emailTitle: Geben Sie die E-Mail-Adresse ein, die Sie mit diesem Konto verknüpfen möchten
+newsletter: Newsletter
+newsletterTitle: Subscribe to our newsletter
+newsletterInfo: Would you like to receive the FreeSewing newsletter?
 exportYourData: Exportieren Sie Ihre Daten
 exportYourDataInfo: Die Datenschutzgrundverordnung der EU (DSGVO) sichert Ihr sogenanntes Recht auf <em>Datenportabilität</em>. Dies ist das Recht dass Sie Ihre Daten an anderer Stelle verwenden können, wie Sie es möchten.
 exportYourDataTitle: Klicken Sie unten, um Ihre persönlichen Daten herunterzuladen
