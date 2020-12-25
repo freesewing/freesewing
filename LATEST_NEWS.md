@@ -1,4 +1,4 @@
-##### COVID-19: Facemask pattern
+##### COVID-19 face mask pattern
 
 Keep those mask on people, and make sure to make your own so we can
 leave the PPE for the frontline workers.
