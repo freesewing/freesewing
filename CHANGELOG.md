@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### shin
+
+#### Fixed
+
+ - Removed the unused `lengthBonus` options. Closes [#752](https://github.com/freesewing/freesewing/issues/752)
+
 
 ## 2.10.7 (2020-11-18)
 
