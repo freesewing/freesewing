@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/components",
-  "version": "2.10.8-rc.0",
+  "version": "2.10.8-rc.0a",
   "description": "A collection of React components for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
