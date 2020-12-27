@@ -15,8 +15,8 @@ but you knew that, right?
 
 ##### No contributor call until 2021
 
-The contributor call of 28 December is cancelled because of the holiday season.
-The next contributor call is on 11 January 2021
+The contributor call of 26 December is cancelled because of the holiday season.
+The next contributor call is on 9 January 2021
 
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
 Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
