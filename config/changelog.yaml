@@ -2,6 +2,11 @@ Unreleased:
   date:
   Added:
   Changed:
+  Fixed:
+    components:
+      - Include basic themeing in Example component
+    shin:
+      - Removed unused lengthBonus option
 
 2.10.7:
   date: 2020-11-18

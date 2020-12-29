@@ -7,6 +7,7 @@ import Design from '../Workbench/Design'
 import IconButton from '@material-ui/core/IconButton'
 import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
 import Switch from '@material-ui/core/Switch'
+import theme from './theme'
 
 const Example = ({
   pattern = 'examples',
@@ -56,7 +57,7 @@ const Example = ({
     ...settings
   }
   if (part !== '') settings.only = [part]
-  const patternInstance = new patterns[pattern](settings)
+  const patternInstance = new patterns[pattern](settings).use(theme)
 
   if (sample) patternInstance.sample()
   else patternInstance.draft()
