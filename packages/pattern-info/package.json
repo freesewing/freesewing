@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.10.8-rc.0",
+  "version": "2.10.8-rc.1",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -30,9 +30,6 @@
     "start": "rollup -c -w",
     "prebuild": "node src/prebuild.js"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
