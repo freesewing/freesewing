@@ -39,6 +39,7 @@ pre.language-js:before,
 pre.language-js-error:before,
 pre.language-js-trace:before,
 pre.language-jsx:before,
+pre.language-md:before,
 pre.language-mdx:before,
 pre.language-json:before,
 pre.language-svg:before,
@@ -76,6 +77,10 @@ pre.language-js-trace:before {
 pre.language-jsx:before {
   content: 'jsx';
   background: rgba(255, 255, 0, 0.9);
+}
+pre.language-md:before {
+  content: 'markdown';
+  background: rgba(130, 201, 30, 0.9);
 }
 pre.language-mdx:before {
   content: 'mdx';
@@ -128,6 +133,7 @@ pre.language-js-error {
   pre.language-yaml:before,
   pre.language-js:before,
   pre.language-jsx:before,
+  pre.language-md:before,
   pre.language-mdx:before,
   pre.language-json:before,
   pre.language-svg:before,

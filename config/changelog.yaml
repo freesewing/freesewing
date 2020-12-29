@@ -1,6 +1,8 @@
 Unreleased:
   date:
   Added:
+    css-theme:
+      - Proper formatting for markdown syntax highlighting
   Changed:
   Fixed:
     components:
