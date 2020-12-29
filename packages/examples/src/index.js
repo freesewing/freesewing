@@ -76,6 +76,13 @@ import draftSettings_sa from './settings_sa'
 import draftSnippet from './snippet'
 import draftSnippet_attr from './snippet_attr'
 import draftSnippet_clone from './snippet_clone'
+import draftSnippets_bnotch from './snippets_bnotch'
+import draftSnippets_notch from './snippets_notch'
+import draftSnippets_button from './snippets_button'
+import draftSnippets_buttonhole from './snippets_buttonhole'
+import draftSnippets_snapsocket from './snippets_snapsocket'
+import draftSnippets_snapstud from './snippets_snapstud'
+import draftSnippets_logo from './snippets_logo'
 // Docs illustrations
 import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
@@ -140,6 +147,13 @@ let methods = {
   draftSnippet,
   draftSnippet_attr,
   draftSnippet_clone,
+  draftSnippets_bnotch,
+  draftSnippets_notch,
+  draftSnippets_button,
+  draftSnippets_buttonhole,
+  draftSnippets_snapsocket,
+  draftSnippets_snapstud,
+  draftSnippets_logo,
   draftUtils_linesintersect,
   draftUtils_beamsintersect,
   draftUtils_beamintersectsx,

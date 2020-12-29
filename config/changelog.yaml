@@ -1,6 +1,8 @@
 Unreleased:
   date:
   Added:
+    components:
+      - Added some more examples to the Examples component
     css-theme:
       - Proper formatting for markdown syntax highlighting
   Changed:
