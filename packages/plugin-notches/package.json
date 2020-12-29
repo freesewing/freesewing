@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/plugin-buttons",
+  "name": "@freesewing/plugin-notches",
   "version": "2.10.8-rc.0",
-  "description": "A FreeSewing plugin that provides button, buttonhole, and snap snippets",
+  "description": "A FreeSewing plugin that provides front and back notch snippets",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -25,7 +25,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
-    "test": "echo \"plugin-buttons: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "test": "echo \"plugin-notches: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",

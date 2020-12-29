@@ -3,6 +3,7 @@ import cutonfold from '@freesewing/plugin-cutonfold'
 import dimension from '@freesewing/plugin-dimension'
 import grainline from '@freesewing/plugin-grainline'
 import logo from '@freesewing/plugin-logo'
+import notches from '@freesewing/plugin-notches'
 import title from '@freesewing/plugin-title'
 import scalebox from '@freesewing/plugin-scalebox'
 import round from '@freesewing/plugin-round'
@@ -10,7 +11,18 @@ import sprinkle from '@freesewing/plugin-sprinkle'
 import measurements from '@freesewing/plugin-measurements'
 import { version, name } from '../package.json'
 
-let bundle = [cutonfold, dimension, grainline, logo, title, scalebox, round, sprinkle, measurements]
+let bundle = [
+  cutonfold,
+  dimension,
+  grainline,
+  logo,
+  notches,
+  title,
+  scalebox,
+  round,
+  sprinkle,
+  measurements
+]
 
 function bundleHooks() {
   let hooks = {}

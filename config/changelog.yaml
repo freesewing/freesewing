@@ -5,6 +5,9 @@ Unreleased:
       - Added some more examples to the Examples component
     css-theme:
       - Proper formatting for markdown syntax highlighting
+    plugin-notches:
+      - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
+
   Changed:
   Fixed:
     components:

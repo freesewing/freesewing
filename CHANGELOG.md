@@ -3,11 +3,27 @@
 
 ## Unreleased
 
+### components
+
+#### Added
+
+ - Added some more examples to the Examples component
+
+#### Fixed
+
+ - Include basic themeing in Example component
+
+### css-theme
+
+#### Added
+
+ - Proper formatting for markdown syntax highlighting
+
 ### shin
 
 #### Fixed
 
- - Removed the unused `lengthBonus` options. Closes [#752](https://github.com/freesewing/freesewing/issues/752)
+ - Removed unused lengthBonus option
 
 
 ## 2.10.7 (2020-11-18)
