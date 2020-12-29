@@ -19,6 +19,12 @@
 
  - Proper formatting for markdown syntax highlighting
 
+### plugin-notches
+
+#### Added
+
+ - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
+
 ### shin
 
 #### Fixed
