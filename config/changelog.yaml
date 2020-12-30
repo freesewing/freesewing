@@ -12,8 +12,15 @@ Unreleased:
   Fixed:
     components:
       - Include basic themeing in Example component
+      - Updated the note and tip icons
     shin:
       - Removed unused lengthBonus option
+
+  Removed:
+    components:
+      - Removed the Emblem component
+      - Removed the Navbar component
+      - Removed the Ogol component
 
 2.10.7:
   date: 2020-11-18
