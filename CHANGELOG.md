@@ -9,9 +9,16 @@
 
  - Added some more examples to the Examples component
 
+#### Removed
+
+ - Removed the Emblem component
+ - Removed the Navbar component
+ - Removed the Ogol component
+
 #### Fixed
 
  - Include basic themeing in Example component
+ - Updated the note and tip icons
 
 ### css-theme
 

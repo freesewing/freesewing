@@ -1,7 +1,7 @@
 {
   "name": "florence",
   "homepage": "https://florence.freesewing.dev/",
-  "version": "2.10.8-rc.1",
+  "version": "2.11.0-rc.0",
   "private": true,
   "dependencies": {
     "@freesewing/components": "latest",

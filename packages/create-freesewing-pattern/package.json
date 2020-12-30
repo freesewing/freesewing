@@ -23,9 +23,8 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w"
   },
+  "peerDependencies": {},
   "dependencies": {
-    "@freesewing/i18n": "^2.11.0-rc.0",
-    "@freesewing/pattern-info": "^2.11.0-rc.0",
     "chalk": "^4.1.0",
     "commander": "^6.0.0",
     "conf": "^7.1.1",
@@ -41,8 +40,11 @@
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^2.0.2"
+    "which": "^2.0.2",
+    "@freesewing/i18n": "^2.11.0-rc.0",
+    "@freesewing/pattern-info": "^2.11.0-rc.0"
   },
+  "devDependencies": {},
   "files": [
     "lib",
     "template",
