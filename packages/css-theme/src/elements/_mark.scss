@@ -1,0 +1,10 @@
+mark {
+  background: $oc-green-2 + aa;
+  color: inherit;
+}
+.theme-wrapper.dark {
+  mark {
+    background: #176226;
+    color: inherit;
+  }
+}
