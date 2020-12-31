@@ -7,14 +7,6 @@ h6,
 button {
   @include title-font;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $oc-gray-7;
-}
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -55,6 +47,10 @@ h5 a.anchor,
 h6 a.anchor {
   margin-left: -20px;
   margin-right: 4px;
+}
+h5 + p,
+h6 + p {
+  margin-top: -0.5rem;
 }
 .theme-wrapper.light {
   h1,
