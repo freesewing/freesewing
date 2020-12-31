@@ -26,6 +26,10 @@
 
  - Proper formatting for markdown syntax highlighting
 
+#### Changed
+
+ - Plenty of changes for a new look
+
 ### plugin-notches
 
 #### Added
