@@ -9,6 +9,8 @@ Unreleased:
       - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
 
   Changed:
+    css-theme:
+      - Plenty of changes for a new look
   Fixed:
     components:
       - Include basic themeing in Example component
