@@ -48,6 +48,8 @@ countModelsLackingForPattern: '{count} of your people lack the required measurem
 created: Created
 custom: Custom
 customSeamAllowance: Custom seam allowance
+lightMode: Light mode
+data: Data
 darkMode: Dark mode
 default: Default
 demo: Demo
