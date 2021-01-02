@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Hintere Abnäher
+  title: Back darts
   description: Sollen Abnäher am Rücken eingefügt werden oder nicht
   options:
     auto: Automatisch
