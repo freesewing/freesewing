@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Pinzas traseras
+  title: Back darts
   description: Incluir o no pinzas traseras
   options:
     auto: Automático
