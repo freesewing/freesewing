@@ -49,6 +49,8 @@ countModelsLackingForPattern: '{count} van je mensen hebben niet de nodige maten
 created: Aangemaakt
 custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
+lightMode: Light mode
+data: Data
 darkMode: Donkere modus
 default: Standaard
 demo: Demo
