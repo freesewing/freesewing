@@ -3,6 +3,7 @@ Unreleased:
   Added:
     components:
       - Added some more examples to the Examples component
+      - Draft configurator now supports collapsing of subgroups
     css-theme:
       - Proper formatting for markdown syntax highlighting
     plugin-notches:
@@ -11,10 +12,13 @@ Unreleased:
   Changed:
     css-theme:
       - Plenty of changes for a new look
+      - Restyled the draft configurator
   Fixed:
     components:
       - Include basic themeing in Example component
       - Updated the note and tip icons
+    i18n:
+      - Type in Simon title
     shin:
       - Removed unused lengthBonus option
 
