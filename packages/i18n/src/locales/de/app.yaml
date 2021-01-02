@@ -49,6 +49,8 @@ countModelsLackingForPattern: '{count} ihrer Personen fehlen die erforderlichen 
 created: Erstellt
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
+lightMode: Light mode
+data: Data
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
