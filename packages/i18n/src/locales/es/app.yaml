@@ -49,6 +49,8 @@ countModelsLackingForPattern: 'Tiene {count} modelos que carecen de las medidas 
 created: Creado
 custom: personalizado
 customSeamAllowance: Margen de costura personalizada
+lightMode: Light mode
+data: Data
 darkMode: Modo oscuro
 default: Defecto
 demo: Demostración
