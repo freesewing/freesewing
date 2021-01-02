@@ -10,6 +10,7 @@ import optionDefault from '@freesewing/utils/optionDefault'
 import { FormattedMessage } from 'react-intl'
 import { injectIntl } from 'react-intl'
 import RightIcon from '@material-ui/icons/KeyboardArrowRight'
+import OptionSubGroup from '../OptionSubGroup'
 
 const OptionGroup = (props) => {
   const renderOption = (name, sub = false) => {
@@ -74,13 +75,11 @@ const OptionGroup = (props) => {
             let children = []
             for (let option of name[subGroup]) children.push(renderOption(option, true))
             output.push(
-              <li>
-                <span key={subGroup + '-title'} className="subheading">
-                  <RightIcon className="icon-col-exp expanded" />
-                  <FormattedMessage id={'optiongroups.' + subGroup} />
-                </span>
-                <ul className="config l4">{children}</ul>
-              </li>
+              <OptionSubGroup
+                title={<FormattedMessage id={'optiongroups.' + subGroup} />}
+                children={children}
+                key={subGroup}
+              />
             )
           }
         } else output.push(renderOption(name))

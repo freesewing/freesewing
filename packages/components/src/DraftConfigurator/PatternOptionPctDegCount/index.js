@@ -68,7 +68,7 @@ const PatternOptionPctDegCount = ({
   )
 
   return (
-    <li>
+    <li className={expanded ? 'expanded' : 'collapsed'}>
       <OptionPreamble
         dflt={dflt}
         designDflt={designDflt}

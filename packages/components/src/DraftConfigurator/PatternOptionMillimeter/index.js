@@ -57,7 +57,7 @@ const PatternOptionMillimeter = ({
   )
 
   return (
-    <li>
+    <li className={expanded ? 'expanded' : 'collapsed'}>
       <OptionPreamble
         dflt={dflt}
         value={val}

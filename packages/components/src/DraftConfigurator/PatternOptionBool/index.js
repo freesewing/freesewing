@@ -35,7 +35,7 @@ const PatternOptionBool = (props) => {
     />
   )
   return (
-    <li>
+    <li className={expanded ? 'expanded' : 'collapsed'}>
       <OptionPreamble
         dflt={props.dflt}
         designDflt={props.designDflt}
