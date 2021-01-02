@@ -49,6 +49,8 @@ countModelsLackingForPattern: '{count} de vos personnes manquent des mesures req
 created: Créé
 custom: Personnaliser
 customSeamAllowance: Marge de couture customisée
+lightMode: Light mode
+data: Data
 darkMode: Mode sombre
 default: Par défaut
 demo: Démo
