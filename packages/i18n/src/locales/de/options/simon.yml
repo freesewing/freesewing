@@ -1,6 +1,6 @@
 ---
 backDarts:
-  title: Back darts
+  title: Hintere Abnäher
   description: Sollen Abnäher am Rücken eingefügt werden oder nicht
   options:
     auto: Automatisch
@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Französischer Stil (nahtlos)
 buttonholePlacketWidth:
   title: Knopflochleiste Breite
-  description: Width of the buttonhole placket.
+  description: Breite der Knopflochleiste.
 buttons:
   title: Anzahl der Tasten
   description: Die Anzahl der Tasten am vorderen Verschluss.
@@ -109,10 +109,10 @@ hemStyle:
     slashed: Abgerundeter Saum
 seperateButtonholePlacket:
   title: Separate Knopflochleiste
-  description: Draft a separate buttonhole placket.
+  description: Eine separate Knopflochleiste entwerfen.
 seperateButtonPlacket:
   title: Separate Knopfleiste
-  description: Draft a separate button placket
+  description: Eine separate Knopfleiste entwerfen
 sleevePlacketLength:
   title: Ärmelknopflänge
   description: Die Länge der Ärmelleiste.
