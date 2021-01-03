@@ -50,7 +50,7 @@ created: Créé
 custom: Personnaliser
 customSeamAllowance: Marge de couture customisée
 lightMode: Light mode
-data: Data
+data: Données
 darkMode: Mode sombre
 default: Par défaut
 demo: Démo
@@ -324,6 +324,6 @@ error: Erreur
 info: Info
 warning: Avertissement
 debug: Débug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
+unsubscribe: Se désabonner
+slogan-come: Venez découvrir des patrons de couture
 slogan-stay: Stay for the community
