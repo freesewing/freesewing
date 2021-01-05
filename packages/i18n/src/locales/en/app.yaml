@@ -310,6 +310,7 @@ zoomOut: Zoom out
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
 savePattern-txt: Store this pattern in your FreeSewing account
 comparePattern: Compare pattern
+showPattern: Show pattern
 comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
 recreatePattern: Recreate pattern
 recreatePattern-txt: Choose a different person, then recreate this pattern for that person
