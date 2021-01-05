@@ -4,6 +4,7 @@ Unreleased:
     components:
       - Added some more examples to the Examples component
       - Draft configurator now supports collapsing of subgroups
+      - Draft configurator now supports actions atop the menu
     css-theme:
       - Proper formatting for markdown syntax highlighting
     plugin-notches:
@@ -13,6 +14,8 @@ Unreleased:
     css-theme:
       - Plenty of changes for a new look
       - Restyled the draft configurator
+    i18n:
+      - New strings for new features
   Fixed:
     components:
       - Include basic themeing in Example component
