@@ -8,6 +8,8 @@
 #### Added
 
  - Added some more examples to the Examples component
+ - Draft configurator now supports collapsing of subgroups
+ - Draft configurator now supports actions atop the menu
 
 #### Removed
 
@@ -29,6 +31,17 @@
 #### Changed
 
  - Plenty of changes for a new look
+ - Restyled the draft configurator
+
+### i18n
+
+#### Changed
+
+ - New strings for new features
+
+#### Fixed
+
+ - Type in Simon title
 
 ### plugin-notches
 
