@@ -4,6 +4,7 @@ import PatternOptions from './PatternOptions'
 import DraftSettings from './DraftSettings'
 import TuneIcon from '@material-ui/icons/Tune'
 import WrenchIcon from '@material-ui/icons/Build'
+import PlayIcon from '@material-ui/icons/PlayCircleOutline'
 
 const DraftConfigurator = ({
   noDocs = false,
@@ -12,7 +13,8 @@ const DraftConfigurator = ({
   data = {},
   pattern,
   updatePatternData,
-  raiseEvent
+  raiseEvent,
+  actions = false
 }) => {
   let childProps = {
     noDocs,
@@ -24,6 +26,15 @@ const DraftConfigurator = ({
   }
   return (
     <ul id="draft-config">
+      {actions && (
+        <li>
+          <span>
+            <PlayIcon />
+            <FormattedMessage id="app.actions" />
+          </span>
+          <ul className="config level-1">{actions}</ul>
+        </li>
+      )}
       <li>
         <span>
           <TuneIcon />
