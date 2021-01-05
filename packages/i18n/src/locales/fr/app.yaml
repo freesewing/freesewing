@@ -311,6 +311,7 @@ zoomOut: Zoom arrière
 zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
 savePattern-txt: Stocker ce patron sur votre compte FreeSewing
 comparePattern: Comparer les patrons
+showPattern: Show pattern
 comparePattern-txt: Comparez votre patron à une plage de tailles standard pour examiner les éventuels problèmes d'ajustement
 recreatePattern: Recréer le patron
 recreatePattern-txt: Choisissez une autre personne, puis recréez ce patron pour cette personne
