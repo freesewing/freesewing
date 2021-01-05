@@ -31,6 +31,9 @@ ul#draft-config {
   li {
     list-style-type: none;
   }
+  li.action > span svg {
+    margin-right: 0.5rem;
+  }
   > li {
     padding: 0.25rem 0;
     margin: 0;
@@ -48,7 +51,7 @@ ul#draft-config {
     font-size: 1.25rem;
     font-weight: normal;
     > div {
-      padding: 0.2rem 0.5rem 0.1rem 1rem;
+      padding: 0.2rem 0.5rem 0.1rem 0.5rem;
     }
     > span {
       padding: 0.2rem 0.5rem 0.1rem 1rem;
@@ -146,12 +149,16 @@ ul#draft-config {
   li.collapsed:hover,
   ul.config.level-1 > li > span:hover {
     background-color: $oc-gray-2;
+    cursor: pointer;
   }
   ul.config.level-3 > li {
     > div:first-of-type:hover,
     > span:hover {
       background-color: $oc-gray-2;
     }
+  }
+  li.action > span svg {
+    color: $oc-pink-5;
   }
 }
 .theme-wrapper.dark ul#draft-config {
@@ -183,5 +190,8 @@ ul#draft-config {
     > span:hover {
       background-color: $oc-gray-9;
     }
+  }
+  li.action > span svg {
+    color: $oc-pink-3;
   }
 }
