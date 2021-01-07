@@ -134,9 +134,9 @@ ourRevenuePledge: Notre engagement de revenus
 patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
-patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Mécène, veuillez contacter Joost.
+patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
 patron: Mécène
-patronPitch: Si vous pensez que ce que nous faisons en vaut la peine, et si vous pouvez consacrer quelques pièces chaque mois sans trop de difficulté, vous aussi pourriez devenir mécène de FreeSewing.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
@@ -175,6 +175,7 @@ settings: Paramètres
 sewingHelp: Aide de couture
 sewingPatternsForNonAveragePeople: Patrons de couture pour personnes non-standards
 share: Partager
+shareFreesewing: Share FreeSewing
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
