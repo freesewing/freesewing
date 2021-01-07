@@ -14,7 +14,7 @@ ul#main-menu {
     }
   }
   > li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     a {
       color: $oc-gray-7;
@@ -71,7 +71,7 @@ ul#main-menu {
   ul.level-1 > li {
     > a {
       padding: 0.1rem 0.5rem 0.1rem 1.5rem;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
     > a:before {
       width: 7px;
@@ -81,7 +81,7 @@ ul#main-menu {
   ul.level-2 > li {
     > a {
       padding: 0.3rem 0.5rem 0.3rem 3rem;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       line-height: 1;
     }
     > a:before {
@@ -92,7 +92,7 @@ ul#main-menu {
   ul.level-3 > li {
     > a {
       padding-left: 4rem;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
     > a:before {
       width: 6px;
@@ -102,7 +102,7 @@ ul#main-menu {
   ul.level-4 > li {
     > a {
       padding-left: 5rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     > a:before {
       width: 5px;
