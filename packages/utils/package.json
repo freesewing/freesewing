@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.11.0-rc.2",
+  "version": "2.11.0-rc.3",
   "description": "A collection of utilities shared across freesewing projects",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,11 +29,9 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "tlds": "^1.207.0",
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "tlds": "^1.207.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "backend/*",
     "camelCase/*",
