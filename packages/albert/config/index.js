@@ -3,8 +3,8 @@ import { version } from '../package.json'
 export default {
   name: 'albert',
   version,
-  design: 'WouterVdub',
-  code: 'WouterVdub',
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
   department: 'unisex',
   type: 'pattern',
   difficulty: 3,
