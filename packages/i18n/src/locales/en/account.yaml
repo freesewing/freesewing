@@ -10,9 +10,6 @@ currentPassword: Current password
 email: E-mail address
 emailInfo: The E-mail address linked to your account is important, as it will be used to regain access to your account if you forget your password. Because of this, changing your E-mail address requires confirmation.
 emailTitle: Enter the E-mail address you want to link to this account
-newsletter: Newsletter
-newsletterTitle: Subscribe to our newsletter
-newsletterInfo: Would you like to receive the FreeSewing newsletter?
 exportYourData: Export your data
 exportYourDataInfo: The EU's General Data Protection (GDPR) ensures your so-called <em>right to data portability</em> — the right to obtain and reuse your personal data for your own purposes, or across different services.
 exportYourDataTitle: Click below to download your personal data
@@ -26,6 +23,9 @@ languageInfo: This language choice determines in what language you will receive 
 language: Language
 languageTitle: Select the language of your choice
 newPassword: New password
+newsletter: Newsletter
+newsletterTitle: Would you like to receive the FreeSewing newsletter?
+newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
 passwordInfo: Changing your password requires your current password. Fill that in, then fill in your new password too.
 password: Password
 passwordTitle: Enter your current password, and your new password
