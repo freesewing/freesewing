@@ -11,9 +11,6 @@ currentPassword: Derzeitiges Passwort
 email: E-mail-Addresse
 emailInfo: Die mit Ihrem Konto verknüpfte E-Mail-Adresse ist wichtig, da sie verwendet wird, um wieder Zugriff auf Ihr Konto zu erhalten, wenn Sie Ihr Passwort vergessen haben. Aus diesem Grund erfordert das Ändern Ihrer E-Mail-Adresse eine Bestätigung.
 emailTitle: Geben Sie die E-Mail-Adresse ein, die Sie mit diesem Konto verknüpfen möchten
-newsletter: Newsletter
-newsletterTitle: Abonnieren Sie unseren Newsletter
-newsletterInfo: Möchten Sie den FreeSewing Newsletter erhalten?
 exportYourData: Exportieren Sie Ihre Daten
 exportYourDataInfo: Die Datenschutzgrundverordnung der EU (DSGVO) sichert Ihr sogenanntes Recht auf <em>Datenportabilität</em>. Dies ist das Recht dass Sie Ihre Daten an anderer Stelle verwenden können, wie Sie es möchten.
 exportYourDataTitle: Klicken Sie unten, um Ihre persönlichen Daten herunterzuladen
@@ -27,6 +24,9 @@ languageInfo: Diese Sprachauswahl bestimmt, in welcher Sprache Sie E-Mails vom F
 language: Sprache
 languageTitle: Wählen Sie die Sprache aus
 newPassword: Neues Passwort
+newsletter: Newsletter
+newsletterTitle: Would you like to receive the FreeSewing newsletter?
+newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
 passwordInfo: Das Ändern Ihres Passworts erfordert Ihr aktuelles Passwort. Füllen Sie das aus und geben Sie dann auch Ihr neues Passwort ein.
 password: Passwort
 passwordTitle: Geben Sie Ihr aktuelles Passwort und Ihr neues Passwort ein
