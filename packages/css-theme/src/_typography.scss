@@ -48,6 +48,12 @@ h6 a.anchor {
   margin-left: -20px;
   margin-right: 4px;
 }
+h5 + a,
+h6 + a,
+h5 + ol,
+h6 + ol,
+h5 + ul,
+h6 + ul,
 h5 + p,
 h6 + p {
   margin-top: -0.5rem;
