@@ -75,5 +75,5 @@ patrons:
   term: patrons
   description: 'Les mécènes soutiennent financièrement Freesewing. Ce sont des fidèles soutiens qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.'
 msf:
-  term: msf
-  description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"
+  term: MSF
+  description: "Médecins Sans Frontières/Doctors Sans Frontières - Voir <a href='https://msf.org/'>msf.org</a>"
