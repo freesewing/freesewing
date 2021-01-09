@@ -49,7 +49,7 @@ countModelsLackingForPattern: '{count} de vos personnes manquent des mesures req
 created: Créé
 custom: Personnaliser
 customSeamAllowance: Marge de couture customisée
-lightMode: Light mode
+lightMode: Mode Clair
 data: Données
 darkMode: Mode sombre
 default: Par défaut
@@ -134,7 +134,7 @@ ourRevenuePledge: Notre engagement de revenus
 patron-2: Matelot
 patron-4: Second
 patron-8: Capitaine
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
+patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Mécène, veuillez nous contacter
 patron: Mécène
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
