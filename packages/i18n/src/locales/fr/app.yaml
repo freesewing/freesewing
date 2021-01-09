@@ -136,7 +136,7 @@ patron-4: Second
 patron-8: Capitaine
 patronHelp: Si vous avez des questions ou souhaitez modifier votre statut de Mécène, veuillez nous contacter
 patron: Mécène
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
+patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous pouvez épargner quelques pièces chaque mois sans difficulté, veuillez soutenir notre travail
 patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
@@ -175,7 +175,7 @@ settings: Paramètres
 sewingHelp: Aide de couture
 sewingPatternsForNonAveragePeople: Patrons de couture pour personnes non-standards
 share: Partager
-shareFreesewing: Share FreeSewing
+shareFreesewing: Partager FreeSewing
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
@@ -312,7 +312,7 @@ zoomOut: Zoom arrière
 zoom-txt: Bascule entre la contrainte de la hauteur ou la largeur du patron pour s'adapter à votre écran
 savePattern-txt: Stocker ce patron sur votre compte FreeSewing
 comparePattern: Comparer les patrons
-showPattern: Show pattern
+showPattern: Afficher le patron
 comparePattern-txt: Comparez votre patron à une plage de tailles standard pour examiner les éventuels problèmes d'ajustement
 recreatePattern: Recréer le patron
 recreatePattern-txt: Choisissez une autre personne, puis recréez ce patron pour cette personne
@@ -328,4 +328,4 @@ warning: Avertissement
 debug: Débug
 unsubscribe: Se désabonner
 slogan-come: Venez découvrir des patrons de couture
-slogan-stay: Stay for the community
+slogan-stay: Rester pour la communauté
