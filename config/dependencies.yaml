@@ -68,8 +68,8 @@ css-theme:
     'open-color': '^1.7.0'
 components:
   peer:
-    'axios': '^0.19.2'
-    'react': '^16.13.1'
+    'axios': '^0.21.1'
+    'react': '^17.0.1'
     '@freesewing/pattern-info': '^{{version}}'
     '@freesewing/mui-theme': '^{{version}}'
     '@freesewing/css-theme': '^{{version}}'
@@ -79,16 +79,18 @@ components:
     '@freesewing/examples': '^{{version}}'
     '@freesewing/rendertest': '^{{version}}'
     '@freesewing/tutorial': '^{{version}}'
-    'typeface-roboto-condensed': 'latest'
+    "@fontsource/permanent-marker": "latest"
+    "@fontsource/roboto-mono": "latest"
+    "@fontsource/ubuntu": "latest"
     '@freesewing/i18n': '^{{version}}'
     '@freesewing/utils': '^{{version}}'
-    'react-intl': '^5.4.5'
-    '@material-ui/core': '^4.11.0'
-    '@material-ui/icons': '4.9.1'
-    '@material-ui/lab': '^v4.0.0-alpha.56'
-    'prismjs': '^1.20.0'
-    'react-markdown': '^4.3.1'
-    'file-saver': '^2.0.2'
+    'react-intl': '^5.10.9'
+    '@material-ui/core': '^4.11.2'
+    '@material-ui/icons': '4.11.2'
+    '@material-ui/lab': '^v4.0.0-alpha.57'
+    'prismjs': '^1.22.0'
+    'react-markdown': '^5.0.3'
+    'file-saver': '^2.0.5'
     'yaml': '^1.10.0'
 core:
   _:
