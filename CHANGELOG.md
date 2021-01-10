@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## Unreleased
+## 2.11.0 (2021-01-10)
 
 ### components
 

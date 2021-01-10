@@ -1,6 +1,25 @@
 # Change log for: @freesewing/components
 
 
+## 2.11.0 (2021-01-10)
+
+### Added
+
+ - Added some more examples to the Examples component
+ - Draft configurator now supports collapsing of subgroups
+ - Draft configurator now supports actions atop the menu
+
+### Removed
+
+ - Removed the Emblem component
+ - Removed the Navbar component
+ - Removed the Ogol component
+
+### Fixed
+
+ - Include basic themeing in Example component
+ - Updated the note and tip icons
+
 ## 2.10.6 (2020-11-15)
 
 ### Added

@@ -1,6 +1,16 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.11.0 (2021-01-10)
+
+### Changed
+
+ - New strings for new features
+
+### Fixed
+
+ - Type in Simon title
+
 ## 2.10.5 (2020-11-14)
 
 ### Fixed

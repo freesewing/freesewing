@@ -1,7 +1,7 @@
 {
   "name": "brian",
   "homepage": "https://brian.freesewing.dev/",
-  "version": "2.11.0-rc.4",
+  "version": "2.11.0",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "^4.1.0",

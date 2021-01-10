@@ -1,6 +1,12 @@
 # Change log for: @freesewing/shin
 
 
+## 2.11.0 (2021-01-10)
+
+### Fixed
+
+ - Removed unused lengthBonus option
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

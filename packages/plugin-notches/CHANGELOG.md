@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-notches
 
 
+## 2.11.0 (2021-01-10)
+
+### Added
+
+ - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
+
 
 This is the **initial release**, and the start of this change log.
 
