@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/css-theme",
-  "version": "2.11.0-rc.3",
+  "version": "2.11.0-rc.4",
   "description": "A CSS theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -27,11 +27,9 @@
     "start": "rollup -c -w",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
   },
-  "peerDependencies": {},
   "dependencies": {
     "open-color": "^1.7.0"
   },
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
