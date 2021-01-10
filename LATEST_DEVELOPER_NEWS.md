@@ -1,3 +1,11 @@
+##### Next contributor call: Saturday 23 January
+
+Note that the next contributor call is on Saturday the 23rd of January.
+
+For details and timing (including different time zones) 
+check [issue #744](https://github.com/freesewing/freesewing/issues/774).
+
+
 ##### New FreeSewing sub-Reddit and Facebook group
 
 Some news from the communtity team:
@@ -11,15 +19,6 @@ Less new but still relevant: We're also on
 [Twitter](https://twitter.com/freesewing_org), 
 and [Github](https://github.com/freesewing), 
 but you knew that, right?
-
-
-##### No contributor call until 2021
-
-The contributor call of 26 December is cancelled because of the holiday season.
-The next contributor call is on 9 January 2021
-
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
-Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
 
 ##### Updated developer documentation
 
