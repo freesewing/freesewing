@@ -1,5 +1,5 @@
-Unreleased:
-  date:
+2.11.0:
+  date: 2021-01-10
   Added:
     components:
       - Added some more examples to the Examples component
