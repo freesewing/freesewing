@@ -27,6 +27,7 @@
 #### Added
 
  - Proper formatting for markdown syntax highlighting
+ - Now includes the fonts so you don't have to
 
 #### Changed
 

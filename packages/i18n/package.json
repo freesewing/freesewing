@@ -28,8 +28,10 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.11.0-rc.3"
+    "@freesewing/pattern-info": "^2.11.0-rc.4"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

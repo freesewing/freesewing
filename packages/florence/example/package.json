@@ -1,7 +1,7 @@
 {
   "name": "florence",
   "homepage": "https://florence.freesewing.dev/",
-  "version": "2.11.0-rc.3",
+  "version": "2.11.0-rc.4",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "^4.1.0",
