@@ -1,9 +1,8 @@
 import React from 'react'
 import freesewing from '@freesewing/core'
 import Workbench from '@freesewing/components/Workbench'
-import 'typeface-roboto-condensed'
-import 'typeface-raleway'
 import '@freesewing/css-theme'
+import './layout.scss'
 
 import Pattern from 'pattern'
 
