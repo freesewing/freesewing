@@ -7,6 +7,7 @@ Unreleased:
       - Draft configurator now supports actions atop the menu
     css-theme:
       - Proper formatting for markdown syntax highlighting
+      - Now includes the fonts so you don't have to
     plugin-notches:
       - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
 

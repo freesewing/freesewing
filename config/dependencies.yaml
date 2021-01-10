@@ -33,6 +33,7 @@ _types:
       '@material-ui/core': '^4.11.0'
       '@material-ui/icons': '4.9.1'
       '@material-ui/lab': '^v4.0.0-alpha.56'
+      'axios': '0.21.1',
       'react-intl': '^5.4.5'
       'prop-types': '^15.7.2'
       'mocha': '^8.1.0'
@@ -66,6 +67,9 @@ carlton:
 css-theme:
   _:
     'open-color': '^1.7.0'
+    "@fontsource/permanent-marker": "^4.1.0"
+    "@fontsource/roboto-mono": "^4.1.0"
+    "@fontsource/ubuntu": "^4.1.0"
 components:
   peer:
     'axios': '^0.21.1'
