@@ -74,3 +74,6 @@ draftSettings:
 patrons:
   term: patrons
   description: 'Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community.'
+msf:
+  term: msf
+  description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"

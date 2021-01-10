@@ -25,13 +25,13 @@ butThatCouldChange: Das könnte sich aber ändern
 cancel: Stornieren
 changePerson: Person ändern
 changePattern: Muster ändern
-chatOnDiscord: Chat on Discord
+chatOnDiscord: Chat auf Discord
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
 chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
 chooseASize: Grösse wählen
 chooseAPerson: Person wählen
-chooseADesign: Choose a design
+chooseADesign: Design auswählen
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
@@ -49,6 +49,8 @@ countModelsLackingForPattern: '{count} ihrer Personen fehlen die erforderlichen 
 created: Erstellt
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
+lightMode: Heller Modus
+data: Daten
 darkMode: Dunkler Modus
 default: Standard
 demo: Vorschau
@@ -95,11 +97,11 @@ i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
+joinTheChatMsg: Wir haben eine Community auf Discord mit freundlichen Leuten, mit denen du dich austauschen kannst.
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
-loginWithProvider: 'Log in with {provider}'
+loginWithProvider: 'Mit {provider} anmelden'
 logOut: Abmelden
 manual: Manuell
 markdownHelp: Markdown-Hilfe
@@ -128,18 +130,18 @@ orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: 'Andere {thing}'
 ourPatrons: Unsere Gönner
-ourRevenuePledge: Our revenue pledge
+ourRevenuePledge: Unser Umsatzversprechen
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
-patronHelp: Wenn Sie Fragen haben oder Änderungen an Ihrem Schutzstatus vornehmen möchten, wenden Sie sich bitte an Joost.
+patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
 patron: Gönner
-patronPitch: Wenn Sie der Ansicht sind, dass das was wir tun, eine unterstützenswerte Sache ist, und wenn Sie am Ende des Monats etwas erübrigen können, sollten Sie auch in Erwägung ziehen, Gönner von FreeSewing zu werden.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
 patternOptions: Musteroptionen
 pattern: Schnittmuster
-sewingPatterns: Sewing patterns
+sewingPatterns: Schnittmuster
 patterns: Schnittmuster
 pendingConfirmation: Ausstehende Bestätigung
 perMonth: pro Monat
@@ -173,10 +175,11 @@ settings: Einstellungen
 sewingHelp: Nähhilfe
 sewingPatternsForNonAveragePeople: Schnittmuster für nicht-durchschnittliche Menschen
 share: Teilen
+shareFreesewing: Share FreeSewing
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
-signupWithProvider: 'Sign up with {provider}'
+signupWithProvider: 'Mit {provider} anmelden'
 sortByField: Nach {field} sortieren
 standardSeamAllowance: Standardnahtzugabe
 startOver: Von vorn anfangen
@@ -192,7 +195,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
+txt-footer: Freesewing wird von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Gönner gemacht
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
@@ -235,8 +238,8 @@ pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
 noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
 modelFirst: Beginne damit Masse hinzuzufügen
-noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
-noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
+noModel: Sie haben (noch) keine Masse hinzugefügt. FreeSewing kann massgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Masse.
+noModel2: Das erste, was Sie tun sollten, ist, eine Person hinzuzufügen und das Massband hervorzuholen.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
 usePatternMeasurements: 'Verwende dir Mass des Originalnähmusters'
@@ -304,11 +307,12 @@ editThing: '{thing} bearbeiten'
 editPattern-txt: Dieses Schnittmster im Muster-Editor laden
 featureRequiresAccount: Diese Funktion erfordert ein FreeSewing-Konto
 zoom: Zoom
-zoomIn: Zoom in
-zoomOut: Zoom out
+zoomIn: Vergrößern
+zoomOut: Verkleinern
 zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
 savePattern-txt: Dieses Muster in Ihrem FreeSewing-Konto speichern
 comparePattern: Schnittmuster vergleichen
+showPattern: Show pattern
 comparePattern-txt: Vergleichen Sie Ihr Muster mit einer Reihe von Standardgrößen, um mögliche Passungsprobleme zu prüfen
 recreatePattern: Schnittmuster neu erstellen
 recreatePattern-txt: Wähle eine andere Person und erstelle dann dieses Muster für diese Person neu
@@ -318,10 +322,10 @@ updateNotes-txt: Aktualisiere die Notizen, die du zu deinem Schnittmuster führs
 franceWarning: Vorsicht Nutzende in Frankreich
 franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu verwerfen.
 emailNotReceived: Wenn Sie die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
-error: Error
+error: Fehler
 info: Informationen
-warning: Warning
+warning: Warnung
 debug: Debug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
-slogan-stay: Stay for the community
+unsubscribe: Abmelden
+slogan-come: Komm für die Schnittmuster
+slogan-stay: Bleib für die Community
