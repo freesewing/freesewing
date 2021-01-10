@@ -16,7 +16,7 @@ fitKnee:
   description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesässumfangs fest
 legBalance:
   title: Bein-Balance
-  description: Controls the ratio between front and back panel of the leg
+  description: Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins
 crossSeamCurveStart:
   title: Start of the cross seam curve
   description: Controls how far into the cross seam we start to curve

@@ -49,6 +49,8 @@ countModelsLackingForPattern: 'Tiene {count} modelos que carecen de las medidas 
 created: Creado
 custom: personalizado
 customSeamAllowance: Margen de costura personalizada
+lightMode: Light mode
+data: Data
 darkMode: Modo oscuro
 default: Defecto
 demo: Demostración
@@ -132,9 +134,9 @@ ourRevenuePledge: Our revenue pledge
 patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
-patronHelp: Si tiene alguna pregunta o desea realizar cambios en su estado de mecenas, comuníquese con Joost.
+patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
 patron: Mecenas
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
 patternOptions: Opciones del patrón
@@ -173,6 +175,7 @@ settings: Ajustes
 sewingHelp: Ayuda de costura
 sewingPatternsForNonAveragePeople: Patrones de costura para personas no promedio
 share: Compartir
+shareFreesewing: Share FreeSewing
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
@@ -309,6 +312,7 @@ zoomOut: Zoom out
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
 savePattern-txt: Store this pattern in your FreeSewing account
 comparePattern: Compare pattern
+showPattern: Show pattern
 comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
 recreatePattern: Recreate pattern
 recreatePattern-txt: Choose a different person, then recreate this pattern for that person

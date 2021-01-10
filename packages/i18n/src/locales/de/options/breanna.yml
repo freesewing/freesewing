@@ -3,16 +3,16 @@ shoulderDart:
   title: Schulterabnäher
   description: Whether or not to inlude a dart at the shoulder to round the back
 shoulderDartSize:
-  title: Shoulder dart size
+  title: Grösse der Schulterabnäher
   description: The size of the shoulder dart
 shoulderDartLength:
   title: Shoulder dart length
   description: The length of the shoulder dart
 waistDart:
-  title: Waist dart
+  title: Hüftabnäher
   description: Whether or not to inlude a dart at the waist to round the back
 waistDartSize:
-  title: Waist dart size
+  title: Grösse der Hüftabnäher
   description: The size of the waist dart
 waistDartLength:
   title: Waist dart length
