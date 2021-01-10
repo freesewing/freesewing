@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
+import IconButton from '@material-ui/core/IconButton'
 import Logo from '../Logo'
 import { FormattedMessage } from 'react-intl'
 import Icon from '../Icon'
 import LanguageIcon from '@material-ui/icons/Translate'
+import LightModeIcon from '@material-ui/icons/WbSunny'
 import DarkModeIcon from '@material-ui/icons/Brightness3'
 
 export default function ButtonAppBar(props) {
@@ -20,7 +22,7 @@ export default function ButtonAppBar(props) {
       width: '100%',
       margin: 0,
       padding: 0,
-      background: props.theme === 'dark' ? colors.light : colors.dark,
+      background: '#1a1d21',
       zIndex: 15
     },
     logo: {
@@ -35,7 +37,6 @@ export default function ButtonAppBar(props) {
       padding: '0 18px'
     },
     iconButton: {
-      color: colors[props.theme]
     },
     icon: {
       maxWidth: '24px',
@@ -48,7 +49,8 @@ export default function ButtonAppBar(props) {
     darkModeIcon: {
       transform: 'rotate(26deg)',
       maxWidth: '24px',
-      maxHeight: '24px'
+      maxHeight: '24px',
+      color: '#ffe066'
     }
   }
 
@@ -61,16 +63,15 @@ export default function ButtonAppBar(props) {
 
   const iconStyle = {
     marginRight: '0.5rem',
-    color: props.theme === 'dark' ? '#b197fc' : '#845ef7'
   }
 
   return (
     <div style={style.wrapper}>
-      <AppBar position="static" color="secondary" elevation={0}>
+      <AppBar position="static" color="transparent" elevation={2}>
         <Toolbar disableGutters={true}>
           <Button {...buttonProps} href="#" onClick={() => props.setDisplay('null')}>
             <span>{props.config.name}</span>
-            <span style={{ color: '#845ef7', fontSize: '80%' }}>.FreeSewing.dev</span>
+            <span style={{ color: '#ced4da', fontSize: '80%' }}>.FreeSewing.dev</span>
           </Button>
 
           <Button {...buttonProps} href="https://chat.freesewing.org/">
@@ -93,9 +94,18 @@ export default function ButtonAppBar(props) {
             <LanguageIcon className="nav-icon" />
           </Button>
 
-          <Button onClick={props.toggleDarkMode} href="#">
-            <DarkModeIcon className="nav-icon moon" />
-          </Button>
+          <IconButton
+            style={style.darkModeButton}
+            aria-label="menu"
+            onClick={props.toggleDarkMode}
+            title={props.theme}
+          >
+            {props.theme === 'dark' ? (
+              <LightModeIcon style={style.icon} />
+            ) : (
+              <DarkModeIcon style={style.darkModeIcon} />
+            )}
+          </IconButton>
         </Toolbar>
       </AppBar>
     </div>

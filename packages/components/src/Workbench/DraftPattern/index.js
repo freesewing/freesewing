@@ -37,7 +37,7 @@ const DraftPattern = (props) => {
   }
 
   return (
-    <section>
+    <>
       <Draft
         {...props.patternProps}
         design={props.design}
@@ -47,7 +47,7 @@ const DraftPattern = (props) => {
         className="freesewing draft shadow"
       />
       <Events events={props.patternProps.events} />
-    </section>
+    </>
   )
 }
 

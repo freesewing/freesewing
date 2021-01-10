@@ -8,67 +8,46 @@ const Welcome = props => {
     container: {
       textAlign: "center",
       maxWidth: "500px",
-      margin: "2vh auto"
-    },
-    title: {
-      fontFamily: "Roboto Condensed"
-    },
-    button: {
-      margin: "0.5rem"
+      margin: "5vh auto",
+      minHeight: "65vh"
     },
     bigButton: {
       margin: "0.5rem",
-      width: "calc(100% - 1rem)"
+      width: "calc(100% - 3rem)"
     },
-    footer: {
-      fontFamily: "Roboto Condensed",
-      position: "fixed",
-      bottom: "10px",
-      left: 0,
-      width: "100%",
-      fontSize: "90%"
-    }
-  };
+  }
 
   return (
-    <React.Fragment>
-      <div />
-      <div className="fs-sa">
-        <section style={styles.container}>
-          <div>
-            <Logo size={250} />
-          </div>
-          <h1 style={styles.title}>
-            <FormattedMessage id="app.welcome" />
-          </h1>
-          <p>
-            <FormattedMessage id="cfp.renderInBrowser" />
-            <br />
-            <FormattedMessage id="cfp.weWillReRender" />
-          </p>
-          <Button
-            style={styles.bigButton}
-            variant="contained"
-            size="large"
-            color="primary"
-            onClick={() => props.setDisplay("draft")}
-          >
-            <FormattedMessage id="cfp.draftYourPattern" />
-          </Button>
-          <Button
-            style={styles.bigButton}
-            variant="contained"
-            size="large"
-            color="primary"
-            onClick={() => props.setDisplay("sample")}
-          >
-            <FormattedMessage id="cfp.testYourPattern" />
-          </Button>
-        </section>
-      </div>
-      <div />
-    </React.Fragment>
-  );
-};
+    <section style={styles.container}>
+      <Logo size={200} />
+      <h1>
+        <FormattedMessage id="app.welcome" />
+      </h1>
+      <p>
+        <FormattedMessage id="cfp.renderInBrowser" />
+        <br />
+        <FormattedMessage id="cfp.weWillReRender" />
+      </p>
+      <Button
+        style={styles.bigButton}
+        variant="contained"
+        size="large"
+        color="primary"
+        onClick={() => props.setDisplay("draft")}
+      >
+        <FormattedMessage id="cfp.draftYourPattern" />
+      </Button>
+      <Button
+        style={styles.bigButton}
+        variant="contained"
+        size="large"
+        color="primary"
+        onClick={() => props.setDisplay("sample")}
+      >
+        <FormattedMessage id="cfp.testYourPattern" />
+      </Button>
+    </section>
+  )
+}
 
 export default Welcome;

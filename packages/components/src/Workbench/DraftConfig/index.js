@@ -5,6 +5,7 @@ import Design from '../Design'
 import DraftConfigurator from '../../DraftConfigurator'
 import fileSaver from 'file-saver'
 import theme from '@freesewing/plugin-theme'
+import Icon from '../../Icon'
 import IconButton from '@material-ui/core/IconButton'
 import DesignIcon from '@material-ui/icons/Fingerprint'
 import DumpIcon from '@material-ui/icons/LocalSee'
@@ -12,8 +13,10 @@ import ClearIcon from '@material-ui/icons/HighlightOff'
 import AdvancedIcon from '@material-ui/icons/Policy'
 import PaperlessIcon from '@material-ui/icons/Nature'
 import CompleteIcon from '@material-ui/icons/Style'
-import HideIcon from '@material-ui/icons/ChevronLeft'
+import { FormattedMessage } from 'react-intl'
 import Events from './Events'
+import ActionsIcon from '@material-ui/icons/PlayCircleOutline'
+import Switch from '@material-ui/core/Switch';
 
 const DraftPattern = (props) => {
   const styles = {
@@ -48,65 +51,89 @@ const DraftPattern = (props) => {
   const color = (check) => (check ? '#40c057' : '#fa5252')
 
   return (
-    <div>
-      <div style={{ margin: '1rem auto 0', textAlign: 'center' }}>
-        <IconButton onClick={() => props.setHideAside(true)} title="Hide sidebar" {...iconProps}>
-          <HideIcon />
-        </IconButton>
-        <IconButton
-          onClick={() => props.setDesign(!props.design)}
-          title="Toggle design mode"
-          {...iconProps}
-        >
-          <span style={{ color: color(props.design) }}>
-            <DesignIcon />
-          </span>
-        </IconButton>
-        {props.design && (
-          <IconButton
-            onClick={() => props.raiseEvent('clearFocusAll', null)}
-            title="Clear design mode"
-            {...iconProps}
-          >
-            <ClearIcon color="primary" />
-          </IconButton>
-        )}
-        <IconButton
-          onClick={() => console.log(props.pattern)}
-          title="console.log(pattern)"
-          {...iconProps}
-        >
-          <DumpIcon color="primary" />
-        </IconButton>
-        |
-        <IconButton
-          onClick={() => props.updateGist(!props.gist.settings.advanced, 'settings', 'advanced')}
-          title="Toggle advanced settings"
-          {...iconProps}
-        >
-          <span style={{ color: color(props.gist.settings.advanced) }}>
-            <AdvancedIcon />
-          </span>
-        </IconButton>
-        <IconButton
-          onClick={() => props.updateGist(!props.gist.settings.paperless, 'settings', 'paperless')}
-          title="Toggle paperless"
-          {...iconProps}
-        >
-          <span style={{ color: color(props.gist.settings.paperless) }}>
-            <PaperlessIcon />
-          </span>
-        </IconButton>
-        <IconButton
-          onClick={() => props.updateGist(!props.gist.settings.complete, 'settings', 'complete')}
-          title="Toggle complete"
-          {...iconProps}
-        >
-          <span style={{ color: color(props.gist.settings.complete) }}>
-            <CompleteIcon />
-          </span>
-        </IconButton>
-      </div>
+    <ul id='draft-config'>
+      <li>
+        <span title='Actions'>
+          <ActionsIcon />
+          <FormattedMessage id="app.actions" />
+        </span>
+        <ul className="config level-1">
+          <li className={`action toggle ${props.design ? 'on' : 'off'}`}>
+            <span onClick={() => props.setDesign(!props.design)} title='Toggle design mode'>
+              <DesignIcon />
+              <FormattedMessage
+                id={ props.design ? 'cfp.thingIsEnabled' : 'cfp.thingIsDisabled' }
+                values={{ thing: <FormattedMessage id='cfp.designMode' /> }}
+              />
+              <Switch
+                color="primary"
+                name="design"
+                checked={props.design}
+                onChange={() => props.setDesign(!props.design)}
+              />
+            </span>
+          </li>
+          <li className={`action toggle ${props.gist.settings.advanced ? 'on' : 'off'}`}>
+            <span onClick={() => props.updateGist(!props.gist.settings.advanced, 'settings', 'advanced')} title='Toggle advanced settings'>
+              <AdvancedIcon />
+              <FormattedMessage
+                id={ props.gist.settings.advanced ? 'cfp.thingIsEnabled' : 'cfp.thingIsDisabled' }
+                values={{ thing: <FormattedMessage id='settings.advanced.title' /> }}
+              />
+              <Switch
+                color="primary"
+                name="advanced"
+                checked={props.gist.settings.advanced || false}
+                onClick={() => props.updateGist(!props.gist.settings.advanced, 'settings', 'advanced')}
+              />
+            </span>
+          </li>
+          <li className={`action toggle ${props.gist.settings.paperless ? 'on' : 'off'}`}>
+            <span onClick={() => props.updateGist(!props.gist.settings.paperless, 'settings', 'paperless')} title='Toggle paperless'>
+              <PaperlessIcon />
+              <FormattedMessage
+                id={ props.gist.settings.paperless ? 'cfp.thingIsEnabled' : 'cfp.thingIsDisabled' }
+                values={{ thing: <FormattedMessage id='settings.paperless.title' /> }}
+              />
+              <Switch
+                color="primary"
+                name="paperless"
+                checked={props.gist.settings.paperless}
+                onChange={() => props.updateGist(!props.gist.settings.paperless, 'settings', 'paperless')}
+              />
+            </span>
+          </li>
+          <li className={`action toggle ${props.gist.settings.complete ? 'on' : 'off'}`}>
+            <span onClick={() => props.updateGist(!props.gist.settings.complete, 'settings', 'complete')} title='Toggle complete'>
+              <CompleteIcon />
+              <FormattedMessage
+                id={ props.gist.settings.complete ? 'cfp.thingIsEnabled' : 'cfp.thingIsDisabled' }
+                values={{ thing: <FormattedMessage id='settings.complete.title' /> }}
+              />
+              <Switch
+                color="primary"
+                name="complete"
+                checked={props.gist.settings.complete}
+                onChange={() => props.updateGist(!props.gist.settings.complete, 'settings', 'complete')}
+              />
+            </span>
+          </li>
+          <li className="action">
+            <span onClick={() => console.log(props.pattern)} title='Log pattern object to console'>
+              <DumpIcon color="primary" />
+              console.log(pattern)
+            </span>
+          </li>
+          {props.design && (
+            <li className="action">
+              <span onClick={() => props.raiseEvent('clearFocusAll', null)} title='Clear design mode'>
+                <ClearIcon color="primary" />
+                <FormattedMessage id="cfp.clearDesignMode" />
+              </span>
+            </li>
+          )}
+        </ul>
+      </li>
       {props.design && (
         <Design
           focus={props.focus}
@@ -124,10 +151,10 @@ const DraftPattern = (props) => {
         freesewing={props.freesewing}
         units={props.units || 'metric'}
       />
-      <div style={{ padding: '5px', marginTop: '1rem' }}>
+      <li className='zoombox'>
         <Zoombox patternProps={props.patternProps} setViewBox={props.setViewBox} />
-      </div>
-    </div>
+      </li>
+    </ul>
   )
 }
 
