@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Logo'
+import { FormattedMessage } from 'react-intl'
 
 const Footer = (props) => {
 
@@ -9,37 +10,40 @@ const Footer = (props) => {
         <div>
           <ul>
             <li className="heading">
-              Wie ben jij?
+              <FormattedMessage id='app.docs'/>
             </li>
-            <li>Ik ben <a href="https://github.com/joostdecock">Joost</a></li>
+            <li><a href="https://freesewing.dev/reference/api/">Core API</a></li>
+            <li><a href="https://freesewing.dev/reference/macros/">Macros</a></li>
+            <li><a href="https://freesewing.dev/reference/plugins/">Plugins</a></li>
+            <li><a href="https://freesewing.dev/reference/snippets/">Snippets</a></li>
+            <li><a href="https://freesewing.dev/reference/config/">Pattern configuration</a></li>
+            <li><a href="https://freesewing.dev/reference/settings/">Pattern settings</a></li>
+            <li><a href="https://freesewing.dev/howtos/code/">Common code challenges</a></li>
+            <li><a href="https://freesewing.dev/howtos/code/">Common code challenges</a></li>
+            <li><a href="https://freesewing.dev/howtos/design/">Common design challenges</a></li>
           </ul>
         </div>
         <div>
           <ul>
             <li className="heading">
-              Wat is dit?
+              Links
             </li>
-            <li>Lessen informatica, maar dan zonder dat geouwehoer dat je in een school te horen krijgt</li>
+            <li><a href="https://freesewing.org/">FreeSewing.org</a></li>
+            <li><a href="https://freesewing.dev/">FreeSewing.dev</a></li>
+            <li><a href="https://discord.freesewing.org/">discord.freesewing.org</a></li>
           </ul>
         </div>
         <div>
           <ul>
             <li className="heading">
-              Voor wie is het?
+              Social Media
             </li>
-            <li>Origineel voor Katleen en Sorcha, maar voor iedereen mag meedoen</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li className="heading">
-              Klopt er iets niet?
-            </li>
-            <li>
-              Dan kan je dat gewoon <a href="https://github.com/joostdecock/cursus">
-                zelf aanpassen op Github
-              </a>
-            </li>
+            <li><a href="https://discord.gg/YDV4GvU" title="discord">Discord</a></li>
+            <li><a href="https://instagram.com/freesewing_org" title="instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/groups/627769821272714/" title="facebook">Facebook</a></li>
+            <li><a href="https://github.com/freesewing" title="github">Github</a></li>
+            <li><a href="https://www.reddit.com/r/freesewing/" title="reddit">Reddit</a></li>
+            <li><a href="https://twitter.com/freesewing_org" title="twitter">Twitter</a></li>
           </ul>
         </div>
         <div>
