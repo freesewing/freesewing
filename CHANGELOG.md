@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.11.1 (2021-01-11)
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fixed issue with node-sass, see [#778](https://github.com/freesewing/freesewing/issues/778) and [#779](https://github.com/freesewing/freesewing/issues/779)
+
+
 ## 2.11.0 (2021-01-10)
 
 ### components
