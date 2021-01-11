@@ -53,6 +53,10 @@ export default (part) => {
     })
     macro('title', { at: points.title, nr: 1, title: 'front' })
     snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
+    paths.waist = new Path()
+      .move(points.cfWaist)
+      .line(points.waist)
+      .attr('class', 'help')
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
@@ -73,8 +77,13 @@ export default (part) => {
     })
     macro('vd', {
       from: points.cfHips,
-      to: points.cfNeck,
+      to: points.cfWaist,
       x: points.cfHips.x - sa - 15
+    })
+    macro('vd', {
+      from: points.cfHips,
+      to: points.cfNeck,
+      x: points.cfHips.x - sa - 30
     })
     macro('hd', {
       from: points.cfNeck,
