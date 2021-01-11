@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.11.2 (NaN-NaN-NaN)
+
+### brian
+
+#### Added
+
+ - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
+
+### components
+
+#### Fixed
+
+ - Fixed links in Workbench footer
+
+
 ## 2.11.1 (2021-01-11)
 
 ### create-freesewing-pattern

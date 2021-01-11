@@ -1,6 +1,12 @@
 # Change log for: @freesewing/brian
 
 
+## 2.11.2 (NaN-NaN-NaN)
+
+### Added
+
+ - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

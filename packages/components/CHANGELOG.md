@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.11.2 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed links in Workbench footer
+
 ## 2.11.0 (2021-01-10)
 
 ### Added
