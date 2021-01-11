@@ -1,3 +1,11 @@
+2.11.1:
+  date: 2021-01-11
+  Fixed:
+    create-freesewing-pattern:
+      - Fixed issue with node-sass,
+        see [#778](https://github.com/freesewing/freesewing/issues/778)
+        and [#779](https://github.com/freesewing/freesewing/issues/779)
+
 2.11.0:
   date: 2021-01-10
   Added:
