@@ -1,7 +1,7 @@
 {
   "name": "{{name}}",
   "homepage": "https://{{name}}.freesewing.dev/",
-  "version": "{{version}}",
+  "version": "{{freesewing_version}}",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "^4.1.0",

@@ -5,6 +5,7 @@ const path = require('path')
 const chalk = require('chalk')
 const program = require('commander')
 const strings = require('@freesewing/i18n').strings
+const freesewing_version = require('@freesewing/pattern-info').versions.brian
 
 const getDefaultLibraryParams = require('./get-default-library-params')
 const createLibrary = require('./create-library')
@@ -12,8 +13,8 @@ const promptLibraryParams = require('./prompt-library-params')
 
 module.exports = async () => {
   // Check node version
-  const version = process.version.slice(1).split('.')[0]
-  if (parseInt(version) < 10 && process.argv.indexOf('--skip-version-check') === -1)
+  const node_version = process.version.slice(1).split('.')[0]
+  if (parseInt(node_version) < 10 && process.argv.indexOf('--skip-version-check') === -1)
     throw `
 ⚠️  FreeSewing requires Node v10 or newer.
 
@@ -29,7 +30,7 @@ module.exports = async () => {
 
   program
     .name('create-freesewing-pattern')
-    .version(version)
+    .version(node_version)
     .usage('[options] [package-name]')
     .option('-d, --desc <string>', 'package description')
     .option('-a, --author <string>', "author's github handle", defaults.author)
@@ -58,7 +59,7 @@ module.exports = async () => {
     templatePath: program.templatePath,
     skipPrompts: program.skipPrompts,
     git: program.git,
-    version
+    freesewing_version,
   }
 
   Object.keys(opts).forEach((key) => {
