@@ -1,3 +1,11 @@
+2.11.2:
+  Fixed:
+    components:
+      - Fixed links in Workbench footer
+  Added:
+    brian:
+      - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
+
 2.11.1:
   date: 2021-01-11
   Fixed:
