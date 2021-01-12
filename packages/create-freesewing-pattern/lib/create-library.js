@@ -4,6 +4,7 @@ const handlebars = require('handlebars')
 const execa = require('execa')
 const fs = require('fs')
 const globby = require('globby')
+const normalize = require('normalize-path')
 const mkdirp = require('make-dir')
 const ora = require('ora')
 const path = require('path')
@@ -28,7 +29,8 @@ module.exports = async (info) => {
     template === 'custom'
       ? path.join(process.cwd(), templatePath)
       : path.join(__dirname, '..', 'template', template)
-  const files = await globby(source, {
+
+  const files = await globby(normalize(source), {
     dot: true
   })
 
