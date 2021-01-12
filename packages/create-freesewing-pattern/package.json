@@ -25,6 +25,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
+    "@freesewing/i18n": "^2.11.2",
+    "@freesewing/pattern-info": "^2.11.2",
     "chalk": "^4.1.0",
     "commander": "^6.0.0",
     "conf": "^7.1.1",
@@ -36,13 +38,12 @@
     "handlebars": "^4.7.6",
     "inquirer": "^7.3.3",
     "make-dir": "^3.1.0",
+    "normalize-path": "^3.0.0",
     "ora": "^4.0.5",
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^2.0.2",
-    "@freesewing/i18n": "^2.11.2",
-    "@freesewing/pattern-info": "^2.11.2"
+    "which": "^2.0.2"
   },
   "devDependencies": {},
   "files": [
