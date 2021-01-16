@@ -33,8 +33,8 @@ export default function(so) {
   // Text anchor points
   this.points.__scaleboxLead = new this.Point(so.at.x - 45, so.at.y - 15)
   this.points.__scaleboxTitle = this.points.__scaleboxLead.shift(-90, 10)
-  this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 8)
-  this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 8)
+  this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 12)
+  this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 5)
   this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20)
   this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24)
   // Rotation
@@ -80,7 +80,7 @@ export default function(so) {
     .close()
   // Lead
   this.points.__scaleboxLead = this.points.__scaleboxLead
-    .attr('data-text', so.lead || 'freesewing')
+    .attr('data-text', so.lead || 'FreeSewing')
     .attr('data-text-class', 'text-sm')
   // Title
   if (so.title) this.points.__scaleboxTitle.attributes.set('data-text', so.title)
@@ -95,9 +95,7 @@ export default function(so) {
     this.points.__scaleboxText.attr('data-text', so.text)
   } else {
     this.points.__scaleboxText
-      .attr('data-text', 'freesewingIsMadeByJoostDeCockAndContributors')
-      .attr('data-text', '\n')
-      .attr('data-text', 'withTheFinancialSupportOfOurPatrons')
+      .attr('data-text', 'supportFreesewingBecomeAPatron')
     this.points.__scaleboxLink = this.points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
       .attr('data-text-class', 'text-xs fill-note')
