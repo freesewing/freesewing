@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Cleaned up notches
+
 ## 2.7.1 (2020-07-24)
 
 ### Fixed

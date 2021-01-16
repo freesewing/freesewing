@@ -1,6 +1,12 @@
 # Change log for: @freesewing/theo
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Cleaned up notches
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

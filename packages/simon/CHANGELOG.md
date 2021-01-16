@@ -1,6 +1,13 @@
 # Change log for: @freesewing/simon
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Cleaned up notches
+ - Marked where to match fabric on closure
+
 ## 2.10.7 (2020-11-18)
 
 ### Fixed

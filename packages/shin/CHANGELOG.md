@@ -1,6 +1,12 @@
 # Change log for: @freesewing/shin
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+
 ## 2.11.0 (2021-01-10)
 
 ### Fixed

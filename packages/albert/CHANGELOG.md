@@ -1,6 +1,12 @@
 # Change log for: @freesewing/albert
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+
 ## 2.10.0 (2020-10-17)
 
 ### Added

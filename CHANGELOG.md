@@ -1,7 +1,120 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.11.2 (NaN-NaN-NaN)
+## 2.11.3 (2021-01-16)
+
+### albert
+
+#### Fixed
+
+ - Added missing scalebox
+
+### bent
+
+#### Fixed
+
+ - Added missing scalebox
+
+### bruce
+
+#### Fixed
+
+ - Added missing scalebox
+
+### components
+
+#### Fixed
+
+ - Fixed links in Workbench footer
+
+### florence
+
+#### Fixed
+
+ - Added missing scalebox
+
+### florent
+
+#### Fixed
+
+ - Added missing scalebox
+
+### holmes
+
+#### Fixed
+
+ - Added missing scalebox
+
+### huey
+
+#### Fixed
+
+ - Added missing scalebox
+ - Added cut-on-fold indicator to pocket
+ - Removed lingering notch from pocket part
+
+### hugo
+
+#### Fixed
+
+ - Removed inherited notches
+
+### jaeger
+
+#### Fixed
+
+ - Added missing scalebox
+
+### plugin-scalebox
+
+#### Added
+
+ - Now includes the miniscale macro
+
+#### Changed
+
+ - Took my name off the patterns
+
+### shin
+
+#### Fixed
+
+ - Added missing scalebox
+
+### simon
+
+#### Fixed
+
+ - Cleaned up notches
+ - Marked where to match fabric on closure
+
+### simone
+
+#### Fixed
+
+ - Cleaned up notches
+
+### theo
+
+#### Fixed
+
+ - Cleaned up notches
+
+### wahid
+
+#### Fixed
+
+ - Added missing scalebox
+ - Proper styling for SA on front and back
+
+### waralee
+
+#### Fixed
+
+ - Added missing scalebox
+
+
+## 2.11.2 (2021-01-11)
 
 ### brian
 
