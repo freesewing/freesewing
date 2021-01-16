@@ -38,6 +38,7 @@ export default function (part) {
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.7)
     points.title = new Point(0.3 * points.bottom.x, 0.75 * points.bottom.y)
     macro('title', { at: points.title, nr: 3, title: 'ear', scale: 0.5 })
+    macro('miniscale', { at: new Point(0, points.bottom.y * 0.3) })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
