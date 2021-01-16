@@ -109,6 +109,7 @@ export default (part) => {
         .offset(sa)
         .join(paths.hemBase.offset(sa * 3))
         .close()
+        .attr('class', 'fabric sa')
     }
 
     if (paperless) {
