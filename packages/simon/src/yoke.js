@@ -63,11 +63,6 @@ export default part => {
       })
     }
 
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['neck', 'shoulder']
-    })
-
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
       if (options.splitYoke) {

@@ -113,8 +113,6 @@ export default (part) => {
       on: [
         'waist',
         'armholePitch',
-        'shoulder',
-        'neck',
         'hips',
         'cfHips',
         'cfWaist',
