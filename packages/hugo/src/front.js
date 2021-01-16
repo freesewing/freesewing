@@ -21,6 +21,9 @@ export default function (part) {
     macro
   } = part.shorthand()
 
+  // Remove notch inherited from Brian
+  delete snippets.armholePitchNotch
+
   // Fit the hips
   points.hem.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hemCp2 = new Point(points.hem.x, points.cfWaist.y)
