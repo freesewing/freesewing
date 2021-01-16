@@ -14,8 +14,9 @@ export default function(part) {
 
   if (!options.pocket) return part
 
-  // Clear paths, apart from the pocket
+  // Clear paths and snippets
   for (let p of Object.keys(paths)) delete paths[p]
+  for (let p of Object.keys(snippets)) delete snippets[p]
 
   // Paths
   paths.seam = new Path()
