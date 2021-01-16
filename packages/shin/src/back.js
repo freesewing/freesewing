@@ -114,6 +114,7 @@ export default function (part) {
       nr: 1,
       title: 'back'
     })
+    macro('scalebox', { at: new Point(points.legSide.x + 80, points.legSide.y - 40) })
     if (sa) {
       paths.sa = paths.hemBase
         .offset(3 * sa)
