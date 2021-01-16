@@ -38,6 +38,11 @@ export default function(part) {
       nr: 4,
       title: 'pocket'
     })
+    macro('cutonfold', {
+      from: points.pocketCfTop,
+      to: points.cfHem,
+      grainline: true
+    })
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
