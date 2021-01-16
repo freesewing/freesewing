@@ -103,6 +103,7 @@ export default (part) => {
   paths.dart.render = false
 
   if (complete) {
+    macro('scalebox', { at: new Point(points.logo.x, points.armholePitchCp2.y) })
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
