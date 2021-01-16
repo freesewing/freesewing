@@ -1,4 +1,52 @@
+2.11.4:
+  date: 2021-01-16
+  Added:
+    plugin-scalebox:
+      - Now includes the miniscale macro
+
+  Changed:
+    plugin-scalebox:
+      - Took my name off the patterns
+
+  Fixed:
+    albert:
+      - Added missing scalebox
+    bent:
+      - Added missing scalebox
+    bruce:
+      - Added missing scalebox
+    components:
+      - Fixed links in Workbench footer
+    florence:
+      - Added missing scalebox
+    florent:
+      - Added missing scalebox
+    holmes:
+      - Added missing scalebox
+    huey:
+      - Added missing scalebox
+      - Added cut-on-fold indicator to pocket
+      - Removed lingering notch from pocket part
+    hugo:
+      - Removed inherited notches
+    jaeger:
+      - Added missing scalebox
+    shin:
+      - Added missing scalebox
+    simon:
+      - Cleaned up notches
+    simone:
+      - Cleaned up notches
+    theo:
+      - Cleaned up notches
+    wahid:
+      - Added missing scalebox
+      - Proper styling for SA on front and back
+    waralee:
+      - Added missing scalebox
+
 2.11.2:
+  date: 2021-01-11
   Fixed:
     components:
       - Fixed links in Workbench footer
