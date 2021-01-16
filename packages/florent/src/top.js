@@ -150,6 +150,7 @@ export default function (part) {
       from: points.grainlineFrom,
       to: points.grainlineTo
     })
+    macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
