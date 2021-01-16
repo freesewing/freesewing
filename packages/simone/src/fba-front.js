@@ -289,8 +289,6 @@ export default (part) => {
       'hips',
       'waist',
       'bust_rot2',
-      'neck',
-      'shoulder'
     ]
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
