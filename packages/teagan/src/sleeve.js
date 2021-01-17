@@ -1,6 +1,5 @@
 export default function (part) {
   let {
-    store,
     sa,
     Point,
     points,
