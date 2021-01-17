@@ -9,7 +9,6 @@ import optionType from '@freesewing/utils/optionType'
 import optionDefault from '@freesewing/utils/optionDefault'
 import { FormattedMessage } from 'react-intl'
 import { injectIntl } from 'react-intl'
-import RightIcon from '@material-ui/icons/KeyboardArrowRight'
 import OptionSubGroup from '../OptionSubGroup'
 
 const OptionGroup = (props) => {

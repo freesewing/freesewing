@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
-import Logo from '../Logo'
 import { FormattedMessage } from 'react-intl'
 import Icon from '../Icon'
 import LanguageIcon from '@material-ui/icons/Translate'
@@ -11,10 +10,6 @@ import LightModeIcon from '@material-ui/icons/WbSunny'
 import DarkModeIcon from '@material-ui/icons/Brightness3'
 
 export default function ButtonAppBar(props) {
-  const colors = {
-    light: '#212529',
-    dark: '#f8f9fa'
-  }
 
   const style = {
     wrapper: {

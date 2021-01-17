@@ -28,14 +28,6 @@ const Design = (props) => {
     return val
   }
 
-  const idPathPoint = (part, a) => {
-    for (let p in props.parts[part].points) {
-      let b = props.parts[part].points[p]
-      if (a.x === b.x && a.y === b.y) return p
-    }
-    return false
-  }
-
   if (!props.design || props.focus === null || Object.keys(props.focus).length < 1) return null
   let info = []
   for (let part of Object.keys(props.focus)) {

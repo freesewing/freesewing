@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Draft from '../../Draft'
-import Zoombox from '../Zoombox'
-import Design from '../Design'
 import fileSaver from 'file-saver'
 import theme from '@freesewing/plugin-theme'
 import Events from './Events'
