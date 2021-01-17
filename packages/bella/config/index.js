@@ -10,19 +10,29 @@ export default {
   difficulty: 3,
   tags: ['block', 'top', 'basics'],
   optionGroups: {
-    fit: ['chestEase', 'waistEase'],
-    advanced: [
-      'backNeckCutout',
-      'backHemSlope',
+    fit: [
+      'chestEase',
+      'waistEase',
+      'bustSpanEase'
+    ],
+    darts: [
       'backDartHeight',
+      'bustDartLength',
+      'waistDartLength',
+      'bustDartCurve'
+    ],
+    armhole: [
       'armholeDepth',
       'backArmholeSlant',
       'backArmholeCurvature',
-      'frontShoulderWidth',
       'frontArmholePitchDepth',
       'backArmholePitchDepth',
+    ],
+    advanced: [
+      'backNeckCutout',
+      'backHemSlope',
+      'frontShoulderWidth',
       'highBustWidth',
-      'bustDartLength'
     ]
   },
   measurements: [
@@ -31,8 +41,6 @@ export default {
     'underbust',
     'waist',
     'waistBack',
-    //'waistToHips',
-    //'hips',
     'bustSpan',
     'neck',
     'hpsToBust',
@@ -65,19 +73,22 @@ export default {
 
     // Percentages
     backNeckCutout: { pct: 6, min: 3, max: 9 },
-    waistEase: { pct: 5, min: 1, max: 9 },
+    waistEase: { pct: 5, min: 1, max: 20 },
     chestEase: { pct: 11, min: 5, max: 20 },
+    bustSpanEase: { pct: 10, min: 0, max: 20 },
     backDartHeight: { pct: 46, min: 38, max: 54 },
-    armholeDepth: { pct: 44, min: 38, max: 50 },
+    armholeDepth: { pct: 44, min: 38, max: 46 },
     backHemSlope: { deg: 2.5, min: 0, max: 5 },
-    backArmholeSlant: { deg: 5, min: 2, max: 8 },
+    backArmholeSlant: { deg: 5, min: 1, max: 9 },
     backArmholeCurvature: { pct: 63, min: 50, max: 85 },
     frontArmholeCurvature: { pct: 63, min: 50, max: 85 },
     fullChestEaseReduction: { pct: 4, min: 0, max: 8 },
     frontShoulderWidth: { pct: 95, max: 98, min: 92 },
-    frontArmholePitchDepth: { pct: 29, max: 35, min: 24 },
+    frontArmholePitchDepth: { pct: 29, max: 31, min: 27 },
     backArmholePitchDepth: { pct: 35, max: 40, min: 30 },
     highBustWidth: { pct: 86, max: 92, min: 80 },
-    bustDartLength: { pct: 92, min: 85, max: 98 }
+    bustDartLength: { pct: 90, min: 75, max: 100 },
+    waistDartLength: { pct: 90, min: 75, max: 95 },
+    bustDartCurve: { pct: 100, min: 0, max: 100 },
   }
 }
