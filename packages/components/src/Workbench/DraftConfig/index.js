@@ -13,21 +13,7 @@ import ActionsIcon from '@material-ui/icons/PlayCircleOutline'
 import Switch from '@material-ui/core/Switch';
 
 const DraftPattern = (props) => {
-  const styles = {
-    icon: {
-      margin: '0 0.25rem'
-    },
-    unhide: {
-      position: 'absolute',
-      top: '76px',
-      right: 0,
-      background: props.theme === 'dark' ? '#f8f9fa' : '#212529',
-      borderTopLeftRadius: '50%',
-      borderBottomLeftRadius: '50%',
-      width: '26px',
-      height: '30px'
-    }
-  }
+
   let focusCount = 0
   if (props.focus !== null) {
     for (let p of Object.keys(props.focus)) {
