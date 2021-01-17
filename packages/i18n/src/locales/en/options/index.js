@@ -1,5 +1,6 @@
 import florence from './florence.yml'
 import brian from './brian.yml'
+import bella from './bella.yml'
 import breanna from './breanna.yml'
 import diana from './diana.yml'
 import aaron from './aaron.yml'
@@ -34,6 +35,7 @@ import shared from '../../../shared-options.yml'
 
 let patterns = {
   florence,
+  bella,
   brian,
   breanna,
   diana,
