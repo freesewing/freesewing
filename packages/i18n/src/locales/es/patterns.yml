@@ -5,6 +5,9 @@ aaron:
 albert:
   description: Albert is an apron.
   title: Albert apron
+bella:
+  description: Bella is a basic body block for womenswear.
+  title: Bella body block
 benjamin:
   description: Benjamin es un patrón de pajarita con cuatro estilos diferentes.
   title: Benjamin bow tie
