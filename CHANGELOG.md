@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.12.0 (2021-01-17)
+
+### bella
+
+#### Added
+
+ - Initial release of this body block for womenswear
+
+
 ## 2.11.3 (2021-01-16)
 
 ### albert

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bella
 
 
+## 2.12.0 (2021-01-17)
+
+### Added
+
+ - Initial release of this body block for womenswear
+
 
 This is the **initial release**, and the start of this change log.
 
