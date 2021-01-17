@@ -1,4 +1,6 @@
 export default function (part) {
+  return part
+  /*
   let {
     store,
     sa,
@@ -26,4 +28,5 @@ export default function (part) {
   paths.diag = new Path().move(points.a).line(points.b).attr('class', 'hidden')
 
   return part
+  */
 }

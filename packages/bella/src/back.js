@@ -11,10 +11,7 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    units,
     measurements,
-    Snippet,
-    snippets,
     raise
   } = part.shorthand()
 
