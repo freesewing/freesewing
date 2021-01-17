@@ -1,5 +1,3 @@
-import { dimensions } from './shared'
-
 export default function (part) {
   let {
     utils,
