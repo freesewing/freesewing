@@ -5,6 +5,9 @@ aaron:
 albert:
   description: Albert est un tablier.
   title: Tablier Albert
+bella:
+  description: Bella is a basic body block for womenswear.
+  title: Bella body block
 benjamin:
   description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
   title: Nœud papillon Benjamin
