@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.12.0 (2021-01-17)
+## 2.12.0 (2021-01-19)
 
 ### bella
 

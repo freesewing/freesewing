@@ -1,7 +1,7 @@
 # Change log for: @freesewing/bella
 
 
-## 2.12.0 (2021-01-17)
+## 2.12.0 (2021-01-19)
 
 ### Added
 
