@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.12.1 (2021-01-27)
+
+### Added
+
+ - Fixed missing dependency
+
 ## 2.11.1 (2021-01-11)
 
 ### Fixed

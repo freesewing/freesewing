@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.12.1 (2021-01-27)
+
+### create-freesewing-pattern
+
+#### Added
+
+ - Fixed missing dependency
+
+
 ## 2.12.0 (2021-01-19)
 
 ### bella

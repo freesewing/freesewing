@@ -27,12 +27,14 @@
     "start": "rollup -c -w",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
   },
+  "peerDependencies": {},
   "dependencies": {
+    "open-color": "^1.7.0",
     "@fontsource/permanent-marker": "^4.1.0",
     "@fontsource/roboto-mono": "^4.1.0",
-    "@fontsource/ubuntu": "^4.1.0",
-    "open-color": "^1.7.0"
+    "@fontsource/ubuntu": "^4.1.0"
   },
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
