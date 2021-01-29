@@ -1,5 +1,5 @@
 backDarts:
-  tile: Back darts
+  title: Back darts
   description: Whether or not to include back darts
   options:
     auto: Automatic

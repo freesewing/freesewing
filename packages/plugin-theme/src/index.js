@@ -1,5 +1,4 @@
 import { version, name } from '../package.json'
-import notch from './defs/notch'
 import gridMetric from './defs/grid-metric'
 import gridImperial from './defs/grid-imperial'
 import css from './bundle.css.js'
@@ -8,10 +7,9 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-theme') === false) {
         svg.attributes.set('class', 'freesewing')
-        svg.defs += notch
         svg.style += css
         if (svg.pattern.settings.paperless) {
           svg.pattern.settings.units === 'imperial'

@@ -1,19 +1,19 @@
 ---
 draftForHighBust:
-  title: Draft for high bust
-  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+  title: Tracé pour le buste supérieur
+  description: Tracer le patron pour la mesure de tour de poitrine supérieure (si disponible) plutôt que la poitrine (pleine). Il en résultera un vêtement plus ajusté pour les personnes qui ont des seins.
 sleeveEase:
-  title: Sleeve ease
-  description: Amount of ease of your sleeves
+  title: Aisance des manches
+  description: Quantité d'aisance de vos manches
 sleeveLength:
-  title: Sleeve length
-  description: Controls the length of your sleeves
+  title: Longueur des manches
+  description: Contrôle la longueur de vos manches
 necklineBend:
-  title: Neckline curvature
-  description: Controls the curvature of the neckline.
+  title: Courbure de l'encolure
+  description: Contrôle la courbure de l'encolure.
 necklineDepth:
-  title: Neckline depth
-  description: Controls how deep the neck opening plunges down.
+  title: Profondeur de l'encolure
+  description: Contrôle la profondeur de l'encolure.
 necklineWidth:
-  title: Neckline width
-  description: Controls the width of the neck opening.
+  title: Largeur d'encolure
+  description: Contrôle la largeur de l'encolure.

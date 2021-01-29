@@ -1,0 +1,1012 @@
+2.12.1:
+  date: 2021-01-27
+  Added:
+    create-freesewing-pattern:
+      - Fixed missing dependency
+
+2.12.0:
+  date: 2021-01-19
+  Added:
+    bella:
+      - Initial release of this body block for womenswear
+
+2.11.3:
+  date: 2021-01-16
+  Added:
+    plugin-scalebox:
+      - Now includes the miniscale macro
+
+  Changed:
+    plugin-scalebox:
+      - Took my name off the patterns
+
+  Fixed:
+    albert:
+      - Added missing scalebox
+    bent:
+      - Added missing scalebox
+    bruce:
+      - Added missing scalebox
+    components:
+      - Fixed links in Workbench footer
+    florence:
+      - Added missing scalebox
+    florent:
+      - Added missing scalebox
+    holmes:
+      - Added missing scalebox
+    huey:
+      - Added missing scalebox
+      - Added cut-on-fold indicator to pocket
+      - Removed lingering notch from pocket part
+    hugo:
+      - Removed inherited notches
+    jaeger:
+      - Added missing scalebox
+    shin:
+      - Added missing scalebox
+    simon:
+      - Cleaned up notches
+      - Marked where to match fabric on closure
+    simone:
+      - Cleaned up notches
+    theo:
+      - Cleaned up notches
+    wahid:
+      - Added missing scalebox
+      - Proper styling for SA on front and back
+    waralee:
+      - Added missing scalebox
+
+2.11.2:
+  date: 2021-01-11
+  Fixed:
+    components:
+      - Fixed links in Workbench footer
+  Added:
+    brian:
+      - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
+
+2.11.1:
+  date: 2021-01-11
+  Fixed:
+    create-freesewing-pattern:
+      - Fixed issue with node-sass,
+        see [#778](https://github.com/freesewing/freesewing/issues/778)
+        and [#779](https://github.com/freesewing/freesewing/issues/779)
+
+2.11.0:
+  date: 2021-01-10
+  Added:
+    components:
+      - Added some more examples to the Examples component
+      - Draft configurator now supports collapsing of subgroups
+      - Draft configurator now supports actions atop the menu
+    css-theme:
+      - Proper formatting for markdown syntax highlighting
+      - Now includes the fonts so you don't have to
+    plugin-notches:
+      - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
+
+  Changed:
+    css-theme:
+      - Plenty of changes for a new look
+      - Restyled the draft configurator
+    i18n:
+      - New strings for new features
+  Fixed:
+    components:
+      - Include basic themeing in Example component
+      - Updated the note and tip icons
+    i18n:
+      - Type in Simon title
+    shin:
+      - Removed unused lengthBonus option
+
+  Removed:
+    components:
+      - Removed the Emblem component
+      - Removed the Navbar component
+      - Removed the Ogol component
+
+2.10.7:
+  date: 2020-11-18
+  Fixed:
+    simon:
+      - Yoke dart did not affect sleevecap length. See [#687](https://github.com/freesewing/freesewing/issues/687)
+
+2.10.6:
+  date: 2020-11-15
+  Added:
+    components:
+      - Workbench now supports loading a pattern configuration from a (github) gist
+
+2.10.5:
+  date: 2020-11-14
+  Fixed:
+    i18n:
+      - Added missing `cty.` translations to non-English language files
+
+2.10.4:
+  date: 2020-11-13
+  Fixed:
+    titan:
+      - Issue with incorrectly named point
+
+2.10.3:
+  date: 2020-11-08
+  Changed:
+    components:
+      - Draft component now supports snippets in the same way as the render method
+    core:
+      - Renderprops now includes SVG with preRender hook applied
+
+2.10.2:
+  date: 2020-11-07
+  Fixed:
+    core:
+      - Fixed bundled bezier-js version
+
+2.10.1:
+  date: 2020-11-07
+  Changed:
+    core:
+      - Switched to bezier-js v3
+    components:
+      - Changes to workbench
+    css-theme:
+      - Removed unused CSS code
+
+2.10.0:
+  date: 2020-10-17
+  Added:
+    albert:
+      - Albert is an apron pattern
+
+2.9.0:
+  date: 2020-10-02
+  Added:
+    components:
+      - Added Teagan line drawing
+      - Added Discord icon in Icon component
+    core:
+      - Parts not get a `name` property set that hold their (own) name/id
+      - Added the `info` type to raised events
+      - Added support for conditional loading of plugins
+    css-theme:
+      - Changes to UI colors
+    i18n:
+      - Added translations for plugin-title
+      - Added translations for teagan
+      - Added some translations for the UI
+    pattern-info:
+      - Added teagan info
+    plugin-dimension:
+      - Added support for passing in the ID used to add paths to the part
+      - Added the `rmd` macro that removes dimensions
+    plugin-title:
+      - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
+    teagan:
+      - Teagan is a T-shirt pattern
+  Fixed:
+    create-freesewing-pattern:
+      - No longer instantiate a pattern, just to get the config
+    i18n:
+      - Replaced a few identical files with symlinks
+
+2.8.1:
+  date: 2020-08-16
+  Fixed:
+    benjamin:
+      - Fixed issue with (length of) band
+    create-freesewing-pattern:
+      - Fixed breaking change in execa upgrade in 2.8.0
+    paco:
+      - Added Titan as a peer dependency
+
+2.8.0:
+  date: 2020-08-10
+  Added:
+    paco:
+      - Initial release for Paco, a pattern for summer pants
+    components:
+      - Added Paco to LineDrawing component
+  Fixed:
+    benjamin:
+      - Fix for incorrect length of the ribbon
+    core:
+      - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
+  Removed:
+    components:
+      - Removed the `Footer` component
+
+2.7.2:
+  date: 2020-07-29
+  Fixed:
+    core:
+      - Fixed wrong return value in debug message from Path
+
+2.7.1:
+  date: 2020-07-24
+  Added:
+    core:
+      - Added new debug functionality through the use of the `raise.debug`
+      - Added a new `debug` setting
+      - Shorthand now proxies objects to allow debug and raise
+    components:
+      - Workbench now includes events debug output and enables debug by default
+    css-theme:
+      - Added themeing for events
+    utils:
+      - Added backend calls for creating gists/issues on Github
+    wahid:
+      - Added the `square` hem style. Fixes [#672](https://github.com/freesewing/freesewing.org/issues/672)
+  Changed:
+    wahid:
+      - Hem radius can no longer be zero. Use teh `square` hem style for that
+  Fixed:
+    aaron:
+      - Set missing option `brianFitCollar` to `false`
+    bruce:
+      - Fixed a check for an undefined value in the store
+    carlton:
+      - Removed unused `hipsEase` code
+    hugo:
+      - Set missing option `brianFitCollar` to `false`
+      - Adding missing control point to front neck opening
+    simon:
+      - Set missing option `brianFitCollar` to `false`
+      - Don't assume the `chHips-notch` is available because it's not in Simone. Fixes [#833](https://github.com/freesewing/freesewing.org/issues/833)
+    simone:
+      - Set missing option `brianFitCollar` to `false`
+    sven:
+      - Avoided loading unset ribbingHeight from store
+
+2.7.0:
+  date: 2020-07-12
+  Added:
+    components:
+      - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
+      - Changed `models` to `people` in `sampleConfigurator`
+      - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
+      - Added support for custom sample styles
+      - Added Titan linedrawing
+    core:
+      - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+      - Added support for custom sample styles
+      - Added support for raising events via `raise.[type]()` method
+    hugo:
+      - Added shaping of the side seam
+    legend:
+      - A pattern to document the markings on our patterns
+      - Initial release
+    plugin-mirror:
+      - A FreeSewing plugin for mirroring points or paths
+      - Initial release
+    titan:
+      - A FreeSewing block for pants/trousers
+      - Initial release
+    plugin-measurements:
+      - A FreeSewing plugin that adds measurements that can be calculated based on existing measurements
+    utils:
+      - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+      - '`neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)'
+
+  Changed:
+    aaron:
+      - Updated side seam shaping and tweaked options for better defaults
+      - Better handling of `armholeDrop` option
+      - Ported aaron to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+      - Report armhole and neck opening length through raised events
+    benjamin:
+      - Removed `Circumference` suffix from measurement names
+    bent:
+      - Increased default for the `cuffEase` option
+      - Decreased default for the `armholeDepth` option
+      - Better range for the `shoulderSlopeReduction` measurement
+      - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Set tip of undersleeve as anchor point for sampling
+      - Removed `Circumference` suffix from measurement names
+    breanna:
+      - Ported breanna to the new shoulderSlope measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+      - Ported breanna to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
+    brian:
+      - Ported brian to new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+      - Ported brian to the new (names for) other measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Set HPS as anchor point for sampling in front and back
+      - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
+    bruce:
+      - Ported bruce to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
+    carlton:
+      - Better range for the `shoulderSlopeReduction` measurement
+      - Ported carlton to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    carlita:
+      - Better range for the `shoulderSlopeReduction` measurement
+      - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Set a sample anchor point on the side part
+      - Removed `Circumference` suffix from measurement names
+    cathrin:
+      - Ported carlita to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Set sample anchor points on all panels
+      - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
+    components:
+      - Handle escaped quotes for React render. See [#437](https://github.com/freesewing/freesewing/issues/437)
+    css-theme:
+      - Updated the width of the SVG paths of a draft to match plugin-theme
+    diana:
+      - Made the `shoulderSlopeReduction` option static so it's not available in the UI
+      - Ported diana to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    florence:
+      - Removed `Circumference` suffix from measurement names
+    florent:
+      - Removed `Circumference` suffix from measurement names
+    holmes:
+      - Removed `Circumference` suffix from measurement names
+    huey:
+      - No longer use the `naturalWaist` measurement
+      - Changed some option to better defaults
+      - Ported huey to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Made the `shoulderSlopeReduction` option static so it's not available in the UI
+      - Removed `Circumference` suffix from measurement names
+    hugo:
+      - Changed some option to better defaults
+      - Ported hugo to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+      - Removed deprecated `debug()` statements
+    i18n:
+      - Added translations for Titan
+      - Removed `Circumference` suffix from measurement names
+    jaeger:
+      - Changed some option to better defaults
+      - Set an anchor on side part for sampling
+      - Ported jaeger to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    models:
+      - Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+      - Removed `Circumference` suffix from measurement names
+    penelope:
+      - Ported penelope to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    plugin-buttons:
+      - Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket`
+        Changing this to avoid needless use of gender related terminology.
+    plugin-bust:
+      - Removed `Circumference` suffix from measurement names
+    sandy:
+      - Ported sandy to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    shin:
+      - Ported shin to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    simon:
+      - Ported simon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    simone:
+      - Ported simone to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    sven:
+      - Improved the shaping of the side seam
+      - Changed some option to better defaults
+      - Ported sven to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    tamiko:
+      - Switch from `shoulderSlope` option to `shoulderSlope` measurement
+      - Ported tamiko to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    theo:
+      - Ported theo to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+      - Removed `Circumference` suffix from measurement names
+    trayvon:
+      - Ported trayvon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+    tutorial:
+      - Removed `Circumference` suffix from measurement names
+    utils:
+      - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+      - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+      - Removed `Circumference` suffix from measurement names
+      - Added the `isDegMeasurement` method
+    wahid:
+      - Ported wahid to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+      - Removed `Circumference` suffix from measurement names
+      - Removed `wrist` and `shoulderToWrist` as required measurements
+    waralee:
+      - Ported waralee to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+      - Removed `Circumference` suffix from measurement names
+    workbench:
+      - Added changes to support new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+
+  Fixed:
+    aaron:
+      - Fixed incorrect instruction for neck binding (the indicated length was only half)
+    bruce:
+      - Sampling some options would not work in Bruce because the code shared across patterns would only run once. That's fixed now.
+    cathrin:
+      - '[Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)'
+      - Fixed panels option being a list of numbers rather than strings
+    components:
+      - Fixed bug that broke millimeter sliders
+    core:
+      - '[Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)'
+    huey:
+      - '[Added seam allowance to the front closure](https://github.com/freesewing/freesewing/issues/420)'
+  Removed:
+    plugin-buttons:
+      - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
+    plugin-debug:
+      - This plugin is deprecated and removed from the repository
+    plugin-designer:
+      - This plugin is deprecated and removed from the repository
+
+2.6.0:
+  date: 2020-05-01
+  Added:
+    components:
+      - '[#368](https://github.com/freesewing/freesewing/issues/368):
+        Allow pan and zoom in the Workbench component.'
+      - '[#374](https://github.com/freesewing/freesewing/issues/374):
+        Allow (extra) translations to be added to the workbench component'
+      - New shortcut buttons and sidebar collapse support for Workbench
+      - Refactor to remove prop-types dependency
+      - Reworked the withLanguage component to allow adding translations at run-time
+    create-freesewing-pattern:
+      - '[#365](https://github.com/freesewing/freesewing/issues/365):
+        Check for node version and raise an error it is too old.'
+    css-theme:
+      - New styled for updated Workbench component
+    florence:
+      - Florence is a face mask pattern
+    plugin-export-dxf:
+      - This plugin can export your pattern as DXF-ASTM
+      - Initial release
+  Changed:
+    core:
+      - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
+      - We no longer set the plugin configuration/data object to fall in `pattern.use()`
+    i18n:
+      - Changes to support the renaming of @freesewing/fu to @freesewing/florence
+  Deprecated:
+    florence:
+      - '@freesewing/fu has been renamed to @freesewing/florence'
+  Fixed:
+    brian:
+      - The `saBase` path is no longer being rendered
+    hugo:
+      - Render fully-sized pattern parts when complete is falsy
+      - Do not render pocket outline when complete is falsy
+      - Do not render pocket facing hint when complete is falsy
+    wahid:
+      - Removed paths.test
+      - Do not draw the pocket outline unless complete is truthy
+      - Prevent rounded corners on pocket bag and lining to be drawn twice
+      - Closed the front seam path
+      - Draft the front lining/facing even when complete is falsy
+
+2.5.0:
+  date: 2020-04-05
+  Added:
+    diana:
+      - Diana is a top with a draped neck
+    i18n:
+      - title, description, and options for Dianna
+  Changed:
+    css-theme:
+      - The sidebar no longer has a different background
+  Fixed:
+    css-theme:
+      - Fixed incorrect border value on active sidebar link
+
+2.4.6:
+  date: 2020-03-23
+  Fixed:
+    i18n:
+      - Fixed an bug in the i18n package
+
+2.4.5:
+  date: 2020-03-19
+  Changed:
+    florence:
+      - Improved shape based on community feedback
+    utils:
+      - neckstimate() now returns values rounded to nearest mm
+  Fixed:
+    wahid:
+      - Check whether frontScyeDart option is zero prior to implementing it
+
+2.4.4:
+  date: 2020-03-15
+  Changed:
+    plugin-dimension:
+      - Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
+  Fixed:
+    core:
+      - New Svg.escapeText() method to escape text at render time, rather than at draft time
+        This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
+    huey:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+    simon:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+    simone:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+    sven:
+      - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
+
+2.4.3:
+  date: 2020-03-12
+  Added:
+    i18n:
+      - Added more translations
+
+2.4.2:
+  date: 2020-03-08
+  Added:
+    i18n:
+      - Added more strings
+  Changed:
+    components:
+      - Don't load docs in DraftConfigurator
+    plugin-title:
+      - Added *for* to title output
+
+2.4.1:
+  date: 2020-03-04
+  Fixed:
+    components:
+      - Fixed `updatePatternData` props issue in the Workbench component
+    utils:
+      - '[#542](https://github.com/freesewing/freesewing.org/issues/542):
+        Prevent neckstimate from throwing when getting an unexpected measurement '
+
+2.4.0:
+  date: 2020-02-29
+  Added:
+    florence:
+      - Florence is a face mask pattern
+      - Initial release
+
+2.3.0:
+  date: 2020-02-23
+  Added:
+    holmes:
+      - Homes is a pattern for a Sherlock Holmes hat
+      - Initial release
+    plugin-gore:
+      - A plugin to generate gores for semi-spheres or domes
+      - Initial release
+
+2.2.0:
+  date: 2020-02-22
+  Added:
+    breanna:
+      - Breanna is a body block for womenswear
+    css-theme:
+      - Added styling for table.data
+    components:
+      - Added LineDrawing for Breanna
+    core:
+      - Added the `Path.noop()` method
+      - Added the `Path.insop()` methods
+    i18n:
+      - Added translations for Breanna
+  Changed:
+    aaron:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    bent:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    breanna:
+      - Removed deprecated `centerBackNeckToWaist` and `hpsToWaistBack` measurements
+    brian:
+      - Reworked Brian to use the new shoulderslope measurement
+      - Removed deprecated `centerBackNeckToWaist` measurement
+      - The `neck` point has been renamed to `hps`
+    carlton:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    carlita:
+      - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    components:
+      - DraftConfigurator has been updated to reflect frontend naming changes
+      - Updated Workbench component to pass data rather than gist to DraftConfigurator
+      - Term `pattern` is now `design`
+      - Term `recipe` is now `pattern`
+      - Term `gist` is now `data`
+    css-theme:
+      - Added new styles for the frontend changes in 2.2
+      - Removed smaller fonts in ul.links
+    i18n:
+      - Added/Updated strings for the 2.2 frontend changes
+      - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+    models:
+      - Extended the menswear size range to have 10 different sizes, just like womenswear
+    mui-theme:
+      - Changed the light background to `#f8f9fa` rather than `#fff`
+      - Changed the navbar to be light/dark based on the theme, rather than always dark
+    huey:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    hugo:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    jaeger:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    simon:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    simone:
+      - Renamed `highPointShoulderToBust` measurement to `hpsToBust`
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    sven:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    utils:
+      - Neckstimate now uses proportions only
+    tamiko:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    trayvon:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+    wahid:
+      - Removed deprecated `centerBackNeckToWaist` measurement
+  Removed:
+    i18n:
+      - Removed the files for homepage translation, and moved that content to markdown
+      - Removed the files for editor translation, as it is no longer used
+  Fixed:
+    create-freesewing-pattern:
+      - '[#257](https://github.com/freesewing/freesewing/issues/257):
+        Explain that pattern names are bound by the constraints of NPM package names'
+    hugo:
+      - Made sure dimensions for hood center and waistband are always shown
+    florent:
+      - Fixed an SA issue in brim top and removed SA from interfacing
+    sandy:
+      - Fixed tags in pattern config file
+    theo:
+      - Fixed issue with side piece
+    penelope:
+      - Fixed tags in pattern config file
+    waralee:
+      - Fixed tags in pattern config file
+
+2.1.9:
+  date: 2020-01-18
+  Fixed:
+    simon:
+      - '[#253](https://github.com/freesewing/freesewing/issues/253):
+        Fixed type in simon sleeve causing incorrect cuff issue'
+    core:
+      - '[#19](https://github.com/freesewing/freesewing/issues/19):
+        Path offset issue is now fixed in upstream bezier-js@2.4.6'
+
+2.1.8:
+  date: 2019-12-16
+  Fixed:
+    simon:
+      - '[#416](https://github.com/freesewing/freesewing.org/issues/416):
+        Fixed bug in simon sleeve'
+
+2.1.7:
+  date: 2019-12-15
+  Fixed:
+    carlton:
+      - Added missing scalebox
+      - Re-numbered tail as part 5
+
+2.1.6:
+  date: 2019-11-24
+  Fixed:
+    utils:
+      - '[#317](https://github.com/freesewing/freesewing.org/issues/317):
+        Fixed bug where format was not passed to formatImperial'
+
+2.1.5:
+  date: 2019-11-19
+  Fixed:
+    plugin-dimension:
+      - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
+
+2.1.4:
+  date: 2019-11-01
+  Added:
+    - css-theme:
+        - Added styling for search results
+  Changed:
+    - components:
+        - Footer version number now links to Github release page
+    - example:
+        - Added the `snap-male` and `snap-female` snippets to the `plugin-buttons` example
+  Deprecated:
+    components:
+      - The Draft component has been renamed to Render. Draft still works, but will be removed in a future release.
+  Removed:
+    components:
+      - The Ogol component has been removed as it wasn't used
+  Fixed:
+  Security:
+
+2.1.3:
+  date: 2019-10-18
+  Added:
+    i18n:
+      - More translated strings
+  Changed:
+    utils:
+      - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
+  Fixed:
+    utils:
+      - "[#250](https://github.com/freesewing/freesewing.org/issues/250):
+        Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'"
+
+2.1.2:
+  date: 2019-10-14
+  Fixed:
+    i18n:
+      - Fixed issue where symlinks were causing all languages to export English strings
+
+2.1.1:
+  date: 2019-10-13
+  Added:
+    components:
+      - Added the fixme type Blockquote component
+    gatsby-remark-jargon:
+      - Added the gatsby-remark-jargon package, a gatbsy plugin wrapping remark-jargon
+      - Initial release
+    remark-jargon:
+      - Added the remark-jargon package, a remark plugin for jargon terms
+      - Initial release
+  Fixed:
+    css-theme:
+      - Fixed padding issue on mobile
+    utils:
+      - Fixed an issue with the formatMm method not adding units
+
+2.1.0:
+  date: 2019-10-06
+  Added:
+    components:
+      - Added support for restoring recipe and pattern defaults in DraftConfigurator
+    i18n:
+      - Added translations for Penelope, Waralee, and Simone
+    simone:
+      - Added the Simone shirt pattern
+      - Initial release
+    penelope:
+      - Added the Penelope Pencil Skirt pattern by @woutervdub
+      - Initial release
+    utils:
+      - Added backend methods for administration
+      - Added the resendActivationEmail method to backend
+    waralee:
+      - Added the Waralee wrap Pants pattern by @woutervdub
+      - Initial release
+  Changed:
+    css-theme:
+      - Made tweaks to the main/sidebar layout
+    core:
+      - The pattern super constructor now sets a `config` property that
+        holds the pattern configuration. This means that unlike before, there
+        is no need to instantiate a pattern to access its config. You can just
+        import the pattern, and it's config property will contain the pattern config.
+    components:
+      - Added Penelope and Waralee linedrawings
+      - Changed animation of the Spinner component
+    simon:
+      - '[#123](https://github.com/freesewing/freesewing/issues/123):
+        Added a box pleat option to Simon'
+      - Added the `backDarts` option to control the inclusion of back darts
+      - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+      - Changed the defaults to slightly reduce the ease and adapt the sleevecap
+
+  Deprecated:
+    patterns:
+      - The [@freesewing/patterns](https://www.npmjs.com/package/@freesewing/patterns)
+        package has been deprecated. Please import our patterns individually.
+  Fixed:
+    components:
+      - Fixed display of nested option in SampleConfigurator
+      - Fixed conflicting key values in React components
+      - Fixed issue with display of list options in Draftconfigurator
+    css-theme:
+      - Reduced the sidebar height by 64px to take navbar into account
+      - Fixed blockquote width on XS screens
+      - Made sidebar wider
+    simon:
+      - Fixed an issue where the store wasn't properly initialized causing hips and waist ease
+        to be set incorrectly
+      - Added a missing paperless dimension for the waist
+      - Fixed an issue where the split yoke option was not taken into account correctly
+    utils:
+      - Fixed an issue where optionDefault was not handling list options correctly
+
+2.0.4:
+  date: 2019-09-27
+  Added:
+    components:
+      - Advanced options and settings are now hidden by default in DraftConfigurator
+  Fixed:
+    carlton:
+      - '[#108](https://github.com/freesewing/freesewing/issues/108):
+        Fixed incorrect width of the Carlton tail'
+    components:
+      - '[#104](https://github.com/freesewing/freesewing/issues/104):
+        Fixed incorrect embed setting on Workbench pattern export'
+
+2.0.3:
+  date: 2019-09-15
+  Changed:
+    components:
+      - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
+  Fixed:
+    bruce:
+      - '[#106](https://github.com/freesewing/freesewing/issues/106):
+        Fix incorrect hem allowance'
+    create-freesewing-pattern:
+      - Updated example package.json to use latest tag rather than beta
+    utils:
+      - Fix measurementDiffers to pass breasts parameter to neckstimate
+
+2.0.2:
+  date: 2019-09-06
+  Added:
+    i18n:
+      - '[#90](https://github.com/freesewing/freesewing/issues/90):
+        Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo'
+  Changed:
+    create-freesewing-pattern:
+      - Updated dependencies
+  Fixed:
+    benjamin:
+      - Added bandLength option to fit optiongroup (it was missing)
+    css-theme:
+      - Updated styles for DraftConfigurator component for pattern options 3 levels deep
+    components:
+      - '[#104](https://github.com/freesewing/freesewing.org/issues/104):
+        Changed `onDragEnd` to `onChangeCommitted` in slider element
+        (change in material-ui API when slider came out of beta)'
+      - Workbench now also lets you preload a `withBreasts` set of measurements
+      - DraftConfigurator now properly styles pattern options 3 levels deep
+      - '[#105](https://github.com/freesewing/freesewing.org/issues/105):
+        Moved state change in render loop to useEffect'
+    create-freesewing-pattern:
+      - Added missing `file-saver` dependency
+    jaeger:
+      - '[#76](https://github.com/freesewing/freesewing.org/issues/76):
+        Fixed a typo in Jaeger that was causing the side vent length to be wrong'
+    simon:
+      - '[#100](https://github.com/freesewing/freesewing.org/issues/100):
+        Updated simon with more sensible defaults for ease options'
+      - "[#102](https://github.com/freesewing/freesewing.org/issues/102):
+        Fixed 'Snippets not defined' error when drafting a seperate button placket"
+      - "[#103](https://github.com/freesewing/freesewing.org/issues/103):
+        Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance"
+    utils:
+      - Removed lingering debug statement in formatImperial
+
+2.0.1:
+  date: 2019-09-01
+  Added:
+    utils:
+      - The `measurementDiffers` method is new.
+    models:
+      - Expanded the size ranges available.
+      - Added the `withBreasts` models which were missing in earlier releases.
+  Changed:
+    models:
+      - The models data is now based on the data from the `neckstimate` method in the utils package.
+  Fixed:
+    theo:
+      - '[#78](https://github.com/freesewing/freesewing/issues/78):
+        Removed inherited notches from fly shield and side piece.'
+    models:
+      - '[#86](https://github.com/freesewing/freesewing/issues/86):
+        The `seatCircumference` measurement was missing, thus making it unavailable on the website'
+
+2.0.0:
+  date: 2019-08-25
+  Added:
+    aaron:
+      - Initial release
+    benjamin:
+      - Initial release
+    bent:
+      - Initial release
+    brian:
+      - Initial release
+    bruce:
+      - Initial release
+    carlita:
+      - Initial release
+    carlton:
+      - Initial release
+    cathrin:
+      - Initial release
+    components:
+      - Initial release
+    core:
+      - Initial release
+    create-freesewing-pattern:
+      - Initial release
+    css-theme:
+      - Initial release
+    examples:
+      - Initial release
+    florent:
+      - Initial release
+    huey:
+      - Initial release
+    hugo:
+      - Initial release
+    i18n:
+      - Initial release
+    jaeger:
+      - Initial release
+    models:
+      - Initial release
+    mui-theme:
+      - Initial release
+    pattern-info:
+      - Initial release
+    plugin-banner:
+      - Initial release
+    plugin-bundle:
+      - Initial release
+    plugin-bust:
+      - Initial release
+    plugin-buttons:
+      - Initial release
+    plugin-cutonfold:
+      - Initial release
+    plugin-dimension:
+      - Initial release
+    plugin-flip:
+      - Initial release
+    plugin-grainline:
+      - Initial release
+    plugin-i18n:
+      - Initial release
+    plugin-logo:
+      - Initial release
+    plugin-round:
+      - Initial release
+    plugin-scalebox:
+      - Initial release
+    plugin-sprinkle:
+      - Initial release
+    plugin-svgattr:
+      - Initial release
+    plugin-theme:
+      - Initial release
+    plugin-title:
+      - Initial release
+    plugin-validate:
+      - Initial release
+    prettier-config:
+      - Initial release
+    rendertest:
+      - Initial release
+    sandy:
+      - Initial release
+    shin:
+      - Initial release
+    simon:
+      - Initial release
+    sven:
+      - Initial release
+    tamiko:
+      - Initial release
+    theo:
+      - Initial release
+    trayvon:
+      - Initial release
+    tutorial:
+      - Initial release
+    utils:
+      - Initial release
+    wahid:
+      - Initial release

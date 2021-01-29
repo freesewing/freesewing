@@ -44,7 +44,7 @@ const PatternOptionList = (props) => {
     />
   )
   return (
-    <li>
+    <li className={expanded ? 'expanded' : 'collapsed'}>
       <OptionPreamble
         dflt={props.dflt}
         value={value}

@@ -1,4 +1,6 @@
-export default part => {
+import { box } from './shared'
+
+export default (part) => {
   let { Point, points, macro } = part.shorthand()
 
   points.grainlineFrom = new Point(10, 10)
@@ -9,5 +11,5 @@ export default part => {
     to: points.grainlineTo
   })
 
-  return part
+  return box(part, 110, 15)
 }

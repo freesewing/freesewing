@@ -5,9 +5,12 @@ import { withBreasts, withoutBreasts } from '@freesewing/models'
 import neckstimate from '@freesewing/utils/neckstimate'
 
 const SampleConfigurator = (props) => {
-  const [expanded, setExpanded] = useState([])
+  const [type, setType] = useState()
+  const [instance, setInstance] = useState()
 
   const sampleOption = (option) => {
+    setType('option')
+    setInstance(option)
     props.updateGist(
       {
         type: 'option',
@@ -19,6 +22,8 @@ const SampleConfigurator = (props) => {
   }
 
   const sampleMeasurement = (measurement) => {
+    setType('measurement')
+    setInstance(measurement)
     props.updateGist(
       {
         type: 'measurement',
@@ -30,6 +35,7 @@ const SampleConfigurator = (props) => {
   }
 
   const sampleModels = (models) => {
+    setType('models')
     props.updateGist(
       {
         type: 'models',
@@ -57,49 +63,90 @@ const SampleConfigurator = (props) => {
   }
 
   return (
-    <ul className="links">
-      <li className="nodot">
-        <h4>
+    <ul>
+      <li>
+        <h5>
           <FormattedMessage id="app.patternOptions" />
-        </h4>
-        <PatternOptions config={props.config} gist={props.gist} sampleOption={sampleOption} />
+        </h5>
+        <PatternOptions
+          config={props.config}
+          gist={props.gist}
+          sampleOption={sampleOption}
+          activeOption={type === 'option' ? instance : null}
+        />
       </li>
-      <li className="nodot">
-        <h4>
+      <li>
+        <h5>
           <FormattedMessage id="app.measurements" />
-        </h4>
-        <ul style={{ paddingLeft: '1rem' }}>
+        </h5>
+        <ul>
           {props.config.measurements.map((m) => (
             <li key={m}>
-              <a href="#logo" onClick={() => sampleMeasurement(m)}>
+              <a
+                href="#logo"
+                onClick={() => sampleMeasurement(m)}
+                className={type === 'measurement' && instance === m ? 'active' : ''}
+              >
                 <FormattedMessage id={'measurements.' + m} />
               </a>
             </li>
           ))}
         </ul>
       </li>
-      <li className="nodot">
-        <h4>
+      <li>
+        <h5>
           <FormattedMessage id="app.people" />
-        </h4>
-        <ul style={{ paddingLeft: '1rem' }}>
+        </h5>
+        <ul>
           <li>
-            <a href="#logo" onClick={() => sampleModels(withBreasts)}>
+            <a
+              href="#logo"
+              onClick={() => {
+                sampleModels(withBreasts)
+                setType('models')
+                setInstance('withBreasts')
+              }}
+              className={type === 'models' && instance === 'withBreasts' ? 'active' : ''}
+            >
               <FormattedMessage id="app.withBreasts" />
             </a>
           </li>
           <li>
-            <a href="#logo" onClick={() => sampleModels(withoutBreasts)}>
+            <a
+              href="#logo"
+              onClick={() => {
+                sampleModels(withoutBreasts)
+                setType('models')
+                setInstance('withoutBreasts')
+              }}
+              className={type === 'models' && instance === 'withoutBreasts' ? 'active' : ''}
+            >
               <FormattedMessage id="app.withoutBreasts" />
             </a>
           </li>
           <li>
-            <a href="#logo" onClick={() => sampleModels(antWoman)}>
+            <a
+              href="#logo"
+              onClick={() => {
+                sampleModels(antWoman)
+                setType('models')
+                setInstance('antWoman')
+              }}
+              className={type === 'models' && instance === 'antWoman' ? 'active' : ''}
+            >
               Antwoman
             </a>
           </li>
           <li>
-            <a href="#logo" onClick={() => sampleModels(antMan)}>
+            <a
+              href="#logo"
+              onClick={() => {
+                sampleModels(antMan)
+                setType('models')
+                setInstance('antMan')
+              }}
+              className={type === 'models' && instance === 'antMan' ? 'active' : ''}
+            >
               Antman
             </a>
           </li>

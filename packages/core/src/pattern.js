@@ -464,7 +464,7 @@ Pattern.prototype.pack = function () {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
       let part = this.parts[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate (${bin.x}, ${bin.y})`)
+      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate(${bin.x}, ${bin.y})`)
     }
     this.width = size.width
     this.height = size.height
@@ -649,8 +649,13 @@ Pattern.prototype.wants = function (partName) {
  *  an external renderer (eg. a React component)
  */
 Pattern.prototype.getRenderProps = function () {
+  // Run pre-render hook
+  let svg = new Svg(this)
+  svg.hooks = this.hooks
+  svg.runHooks('preRender')
+
   this.pack()
-  let props = {}
+  let props = { svg }
   props.width = this.width
   props.height = this.height
   props.settings = this.settings

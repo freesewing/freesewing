@@ -24,12 +24,14 @@ export default part => {
       .line(points.cfHem)
       .attr('class', 'help')
     paths.placketFold1 = new Path()
-      .move(points.placketTopFold1)
-      .line(points.placketBottomFold1)
+      .move(points.placketBottomFold1)
+      .line(points.placketTopFold1)
       .attr('class', 'dotted')
+      .attr('data-text', 'matchHere')
+      .attr("data-text-class", "text-xs center")
     paths.placketFold2 = new Path()
-      .move(points.placketTopFold2)
-      .line(points.placketBottomFold2)
+      .move(points.placketBottomFold2)
+      .line(points.placketTopFold2)
       .attr('class', 'dotted')
     macro('sprinkle', {
       snippet: 'notch',

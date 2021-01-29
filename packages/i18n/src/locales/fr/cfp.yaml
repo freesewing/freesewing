@@ -12,6 +12,8 @@ devDocsAvailableAt: La documentation pour développeur est disponible sur
 talkToUs: Pour des questions, des avis ou des suggestions, venez nous parler sur notre chat
 draftYourPattern: Dessiner votre patron
 testYourPattern: Tester votre patron
+draftThing: 'Ébauche de {thing}'
+testThing: 'Tester {thing}'
 renderInBrowser: Cliquer ci-dessous pour afficher votre patron dans votre navigateur.
 weWillReRender: Lorsque vous effectuez des modifications, nous mettons à jour le rendu pour vous.
 youCan: Vous pouvez
@@ -21,8 +23,11 @@ size: Taille
 noRequiredMeasurements: Ce patron n'a pas de mesure requise
 howtoAddMeasurements: Pour rendre des mesures nécessaires, ajoutez-les à la section <b>measurements</b> du fichier de configuration du patron.
 seeDocsAt: La documentation à ce sujet est disponible sur
-designModeIsOn: Le mode Conception est activé
-designModeIsOff: Le mode Conception est désactivé
+clearDesignMode: Clear design mode
+designMode: Design mode
+exportMode: Export mode
+thingIsEnabled: '{thing} is enabled'
+thingIsDisabled: '{thing} is disabled'
 turnOn: Activer
 turnOff: Désactiver
 validNameWarning: "Veuillez choisir un nom différent car ce nom causerait des problèmes.\nNous (ré-)utilisons le nom du modèle comme nom de paquet NPM.\nLes noms de paquets doivent être en minuscule et ne peuvent pas contenir de caractères spéciaux.\nVeuillez donc nommer votre patron en conséquence, comme :"

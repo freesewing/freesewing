@@ -423,15 +423,16 @@ function configurePatternExample(pkg, config) {
   // Write templates
   let replace = {
     name: pkg,
+    version,
     author: 'freesewing',
     yarn: true,
     language: 'en'
   }
-  for (let file of ['package.json', 'README.md']) {
+  for (let file of ['package.json', 'README.md', 'netlify.toml']) {
     let template = handlebars.compile(fs.readFileSync(path.join(source, file), 'utf-8'))
     fs.writeFileSync(path.join(dest, file), template(replace))
   }
-  for (let file of ['index.html', 'manifest.json']) {
+  for (let file of ['index.html', 'manifest.json', 'layout.css']) {
     let template = handlebars.compile(fs.readFileSync(path.join(source, 'public', file), 'utf-8'))
     fs.writeFileSync(path.join(dest, 'public', file), template(replace))
   }

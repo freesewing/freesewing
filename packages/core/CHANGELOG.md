@@ -1,7 +1,25 @@
 # Change log for: @freesewing/core
 
 
-## 2.9.0 (2020-09-09)
+## 2.10.3 (2020-11-08)
+
+### Changed
+
+ - Renderprops now includes SVG with preRender hook applied
+
+## 2.10.2 (2020-11-07)
+
+### Fixed
+
+ - Fixed bundled bezier-js version
+
+## 2.10.1 (2020-11-07)
+
+### Changed
+
+ - Switched to bezier-js v3
+
+## 2.9.0 (2020-10-02)
 
 ### Added
 

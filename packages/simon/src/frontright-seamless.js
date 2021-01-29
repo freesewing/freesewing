@@ -10,6 +10,8 @@ export default part => {
   points.placketBottomFold1 = points.cfHem.shift(0, width / 2)
   points.placketBottomFold2 = points.cfHem.shift(0, width * 1.5)
   points.placketBottomEdge = points.cfHem.shift(0, width * 2.5)
+  points.placketBottomMatch = points.cfHem.shift(180, width / 2)
+  points.placketTopMatch = points.cfNeck.shift(180, width / 2)
   paths.seam
     .line(points.placketTopEdge)
     .line(points.placketBottomEdge)
@@ -31,6 +33,12 @@ export default part => {
       .move(points.placketTopFold2)
       .line(points.placketBottomFold2)
       .attr('class', 'dotted')
+    paths.placketMatch = new Path()
+      .move(points.placketBottomMatch)
+      .line(points.placketTopMatch)
+      .attr('class', 'stroke-sm help')
+      .attr('data-text', 'matchHere')
+      .attr("data-text-class", "text-xs center")
     macro('sprinkle', {
       snippet: 'notch',
       on: [

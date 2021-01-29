@@ -33,6 +33,7 @@ _types:
       '@material-ui/core': '^4.11.0'
       '@material-ui/icons': '4.9.1'
       '@material-ui/lab': '^v4.0.0-alpha.56'
+      'axios': '0.21.1'
       'react-intl': '^5.4.5'
       'prop-types': '^15.7.2'
       'mocha': '^8.1.0'
@@ -66,9 +67,13 @@ carlton:
 css-theme:
   _:
     'open-color': '^1.7.0'
+    "@fontsource/permanent-marker": "^4.1.0"
+    "@fontsource/roboto-mono": "^4.1.0"
+    "@fontsource/ubuntu": "^4.1.0"
 components:
   peer:
-    'react': '^16.13.1'
+    'axios': '^0.21.1'
+    'react': '^17.0.1'
     '@freesewing/pattern-info': '^{{version}}'
     '@freesewing/mui-theme': '^{{version}}'
     '@freesewing/css-theme': '^{{version}}'
@@ -78,19 +83,22 @@ components:
     '@freesewing/examples': '^{{version}}'
     '@freesewing/rendertest': '^{{version}}'
     '@freesewing/tutorial': '^{{version}}'
-    'typeface-roboto-condensed': 'latest'
+    "@fontsource/permanent-marker": "latest"
+    "@fontsource/roboto-mono": "latest"
+    "@fontsource/ubuntu": "latest"
     '@freesewing/i18n': '^{{version}}'
     '@freesewing/utils': '^{{version}}'
-    'react-intl': '^5.4.5'
-    '@material-ui/core': '^4.11.0'
-    '@material-ui/icons': '4.9.1'
-    '@material-ui/lab': '^v4.0.0-alpha.56'
-    'prismjs': '^1.20.0'
-    'react-markdown': '^4.3.1'
-    'file-saver': '^2.0.2'
+    'react-intl': '^5.10.9'
+    '@material-ui/core': '^4.11.2'
+    '@material-ui/icons': '4.11.2'
+    '@material-ui/lab': '^v4.0.0-alpha.57'
+    'prismjs': '^1.22.0'
+    'react-markdown': '^5.0.3'
+    'file-saver': '^2.0.5'
+    'yaml': '^1.10.0'
 core:
   _:
-    'bezier-js': '^2.6.1'
+    'bezier-js': '^3.0.1'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
 create-freesewing-pattern:
@@ -106,6 +114,7 @@ create-freesewing-pattern:
     'handlebars': '^4.7.6'
     'inquirer': '^7.3.3'
     'make-dir': '^3.1.0'
+    'normalize-path': '^3.0.0'
     'ora': '^4.0.5'
     'p-each-series': '^2.1.0'
     'parse-git-config': '^3.0.0'

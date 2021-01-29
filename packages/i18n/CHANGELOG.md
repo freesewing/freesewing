@@ -1,7 +1,23 @@
 # Change log for: @freesewing/i18n
 
 
-## 2.9.0 (2020-09-09)
+## 2.11.0 (2021-01-10)
+
+### Changed
+
+ - New strings for new features
+
+### Fixed
+
+ - Type in Simon title
+
+## 2.10.5 (2020-11-14)
+
+### Fixed
+
+ - Added missing `cty.` translations to non-English language files
+
+## 2.9.0 (2020-10-02)
 
 ### Added
 

@@ -66,6 +66,7 @@ export default (part) => {
       title: 'mask',
       scale: 0.5
     })
+    macro('miniscale', { at: points.logo.shift(-90, 20) })
 
     points.ribbon1TopLeft = points.topEdge.shift(-90, 2)
     points.ribbon1TopRight = points.ribbon1TopLeft.shift(0, 10)

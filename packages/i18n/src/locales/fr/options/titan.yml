@@ -1,37 +1,37 @@
 ---
 kneeEase:
-  title: Knee ease
-  description: Controls the amout of ease at the knee
+  title: Aisance du genou
+  description: Contrôle la quantité d'aisance au genou
 waistHeight:
-  title: Waist height
-  description: Controls the height of the waist, 100% = waist height, 0% = hip height
+  title: Hauteur de la taille
+  description: Contrôle la hauteur de la taille, 100% = hauteur de la taille, 0% = hauteur de la hanche
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the trousers
+  title: Supplément de longueur
+  description: Contrôle la longueur du pantalon
 crotchDrop:
-  title: Crotch drop
-  description: Lowers the crotch for a more relaxed fit
+  title: Hauteur d'enfourchure
+  description: Abaisse la fourche pour un tombé plus décontracté
 fitKnee:
-  title: Fit the knee
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  title: Ajuster au genou
+  description: Ajuste les jambes à partir de la circonférence du genou plutôt que de la circonférence du bassin
 legBalance:
-  title: Leg balance
-  description: Controls the ratio between front and back panel of the leg
+  title: Équilibre des jambes
+  description: Contrôle le ratio entre le panneau avant et arrière de la jambe
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Début de la courbe de l'enfourchure dos
+  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure dos
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Courbure de l'enfourchure dos
+  description: Contrôle la courbure de la couture de fourche dos
 crotchSeamCurveStart:
-  title: Start of the crotch seam curve
-  description: Controls how far into the crotch seam we start to curve
+  title: Début de la courbe de l'enfourchure avant
+  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant
 crotchSeamCurveBend:
-  title: Crotch seam bend
-  description: Controls the curvature of the crotch seam
+  title: Courbure de la fourche avant
+  description: Contrôle la courbure de la couture de fourche avant
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  title: Équilibre de la taille
+  description: Contrôle la position horizontale de la taille par rapport au bassin
 grainlinePosition:
-  title: Grainline position
-  description: Controls the horizontal position of the leg relative to the seat
+  title: Position de la ligne de droit fil
+  description: Contrôle la position horizontale de la jambe par rapport au bassin

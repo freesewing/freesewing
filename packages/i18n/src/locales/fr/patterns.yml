@@ -2,6 +2,12 @@
 aaron:
   description: Aaron est un débardeur ou marcel
   title: Débardeur Aaron (A-shirt)
+albert:
+  description: Albert est un tablier.
+  title: Tablier Albert
+bella:
+  description: Bella is a basic body block for womenswear.
+  title: Bella body block
 benjamin:
   description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
   title: Nœud papillon Benjamin
@@ -28,7 +34,7 @@ cathrin:
   title: Corset Cathrin
 diana:
   description: Diana est un top avec un col drapé.
-  title: Diana draped top
+  title: Haut drapé Diana
 florent:
   description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
   title: Casquette plate Florent
@@ -48,8 +54,8 @@ jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
 paco:
-  description: Paco are casual yet stylish summer pants
-  title: Paco pants
+  description: Paco est un pantalon d'été décontracté mais élégant
+  title: Pantalon Paco
 penelope:
   description: Penelope est une jupe crayon avec ou sans fente dans le dos.
   title: Jupe crayon Penelope
@@ -72,14 +78,14 @@ tamiko:
   description: Tamiko est un top zéro déchet.
   title: Top Tamiko
 teagan:
-  description: Teagan is a fitted T-shirt pattern
-  title: Teagan T-shirt
+  description: Teagan est un T-shirt ajusté
+  title: T-shirt Teagan
 theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo
 titan:
-  description: Titan is a dartless unisex trouser block
-  title: Titan trouser block
+  description: Titan est un bloc de pantalon unisexe sans pince
+  title: Bloc de pantalon Titan
 trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon

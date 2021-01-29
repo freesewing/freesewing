@@ -5,22 +5,12 @@ import { version } from '../package.json'
 export default {
   name: 'holmes',
   version,
-  design: 'AlfaLyr',
-  code: 'AlfaLyr',
+  design: 'Erica Alcusa Sáez',
+  code: 'Erica Alcusa Sáez',
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: [
-    'freesewing',
-    'design',
-    'diy',
-    'fashion',
-    'made to measure',
-    'parametric design',
-    'pattern',
-    'sewing',
-    'sewing pattern'
-  ],
+  tags: ['hat'],
   optionGroups: {
     style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth']
   },

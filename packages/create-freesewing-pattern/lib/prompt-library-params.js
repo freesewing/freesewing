@@ -141,7 +141,7 @@ module.exports = async opts => {
     return {
       ...info,
       git: opts.git,
-      version: opts.version
+      freesewing_version: opts.freesewing_version
     }
   }
 }

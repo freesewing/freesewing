@@ -28,4 +28,4 @@ layout:
   description: Legt fest wie die einzelnen Schnittmusterteile auf Ihrem Schnittmusterbogen angeordnet werden
 debug:
   title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  description: Debug aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde

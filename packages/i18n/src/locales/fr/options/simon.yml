@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Pinces dos
+  title: Pinces dos
   description: Inclure ou non des pinces au dos
   options:
     auto: Automatique
@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Style français (gorge simple, sans couture)
 buttonholePlacketWidth:
   title: Largeur de la gorge (patte de boutonnage - du côté boutonnières)
-  description: Width of the buttonhole placket.
+  description: Largeur de la gorge (patte de boutonnage, côté des boutonnières).
 buttons:
   title: Nombre de boutons
   description: Le nombre de boutons sur la fermeture avant.
@@ -109,10 +109,10 @@ hemStyle:
     slashed: Ourlet arrondi
 seperateButtonholePlacket:
   title: Gorge (Patte de boutonnières) séparée
-  description: Draft a separate buttonhole placket.
+  description: Dessinez une gorge (patte de boutonnières) séparée.
 seperateButtonPlacket:
   title: Patte de boutonnage séparée
-  description: Draft a separate button placket
+  description: Dessinez une patte de boutonnage séparée
 sleevePlacketLength:
   title: Longueur de la patte de manche
   description: La longueur de la patte de manche

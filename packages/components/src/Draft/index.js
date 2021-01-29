@@ -15,13 +15,7 @@ const Draft = (props) => (
     viewBox={props.viewBox}
     className={props.className || 'freesewing draft'}
   >
-    <Defs
-      units={props.settings.units}
-      parts={props.parts}
-      paperless={props.settings.paperless}
-      design={props.design || false}
-      extraDefs={props.extraDefs}
-    />
+    <Defs {...props} />
     <g>
       {Object.keys(props.parts).map((name) => (
         <Part

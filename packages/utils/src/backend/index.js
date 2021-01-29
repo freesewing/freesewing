@@ -27,7 +27,8 @@ function useBackend(baseURL, timeout = 10000) {
   backend.recoverAccount = (username) => api.post('/account/recover', { username: username }) // Ask for a password reset
   backend.loadPattern = (handle) => api.get('/pattern/' + handle) // Load pattern anonymously
   backend.loadPatrons = (handle) => api.get('/patrons') // Load patron list
-
+  backend.newsletterSubscribe = (email) => api.post('/newsletter/subscribe', { email }) // Subscribe email to newsletter
+  backend.newsletterUnsubscribe = (email) => api.post('/newsletter/unsubscribe', { email }) // Unsubscribe email from newsletter
   // Users
   backend.profile = (username, token) => api.get('/users/' + username, auth(token)) // Load user profile
   backend.account = (token) => api.get('/account', auth(token)) // Try to authenticate based on stored token
@@ -59,6 +60,9 @@ function useBackend(baseURL, timeout = 10000) {
   backend.adminSetRole = (data, token) => api.put('/admin/role', data, auth(token)) // Set role for a user
   backend.adminUnfreeze = (data, token) => api.put('/admin/unfreeze', data, auth(token)) // Unfreeze a user account
   backend.adminImpersonate = (data, token) => api.post('/admin/impersonate', data, auth(token)) // Impersonate a user
+  backend.adminPatronList = (token) => api.get('/admin/patrons', auth(token)) // Get patron list
+  backend.adminSubscriberList = (token) => api.get('/admin/subscribers', auth(token)) // Get patron list
+  backend.adminStats = (token) => api.get('/admin/stats', auth(token)) // Get stats
 
   return backend
 }

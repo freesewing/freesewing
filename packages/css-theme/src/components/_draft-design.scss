@@ -101,17 +101,31 @@ div.design {
   font-size: 115%;
   margin: 1rem 0;
   text-align: left;
-  h6.point.c0 {
-    border-bottom: 1px solid $oc-red-6;
+  .path,
+  .point {
+    border-left: 3px solid transparent;
+    padding-left: 5px;
+    margin-bottom: 3px;
+    font-size: 80%;
   }
-  h6.point.c1 {
-    border-bottom: 1px solid $oc-green-6;
+  .path {
+    border-left: 3px dashed transparent;
   }
-  h6.point.c2 {
-    border-bottom: 1px solid $oc-blue-6;
+  .path.c0,
+  .point.c0 {
+    border-color: $oc-red-6;
   }
-  h6.point.c3 {
-    border-bottom: 1px solid $oc-grape-6;
+  .path.c1,
+  .point.c1 {
+    border-color: $oc-green-6;
+  }
+  .path.c2,
+  .point.c2 {
+    border-color: $oc-blue-6;
+  }
+  .path.c3,
+  .point.c3 {
+    border-color: $oc-grape-6;
   }
 }
 
@@ -132,21 +146,6 @@ div.design {
   }
 }
 
-.theme-wrapper.light div.design {
-  h6.path.c0 {
-    background-color: rgba($oc-red-6, 0.3);
-  }
-  h6.path.c1 {
-    background-color: rgba($oc-green-6, 0.3);
-  }
-  h6.path.c2 {
-    background-color: rgba($oc-blue-6, 0.3);
-  }
-  h6.path.c3 {
-    background-color: rgba($oc-grape-6, 0.3);
-  }
-}
-
 .theme-wrapper.dark svg.freesewing.draft {
   g.design.point {
     circle {
@@ -164,20 +163,5 @@ div.design {
   }
   path.focus.path {
     stroke-opacity: 0.5;
-  }
-}
-
-.theme-wrapper.dark div.design {
-  h6.path.c0 {
-    background-color: rgba($oc-red-6, 0.5);
-  }
-  h6.path.c1 {
-    background-color: rgba($oc-green-6, 0.5);
-  }
-  h6.path.c2 {
-    background-color: rgba($oc-blue-6, 0.5);
-  }
-  h6.path.c3 {
-    background-color: rgba($oc-grape-6, 0.5);
   }
 }

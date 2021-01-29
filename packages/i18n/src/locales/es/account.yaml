@@ -24,6 +24,9 @@ languageInfo: Esta opción de idioma determina en qué idioma recibirá los corr
 language: Idioma
 languageTitle: Seleccione el idioma de su elección
 newPassword: Nueva contraseña
+newsletter: Newsletter
+newsletterTitle: Would you like to receive the FreeSewing newsletter?
+newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
 passwordInfo: Cambiar tu contraseña requiere tu contraseña actual. Rellene eso, luego complete su nueva contraseña también.
 password: Contraseña
 passwordTitle: Ingrese su contraseña actual y su nueva contraseña

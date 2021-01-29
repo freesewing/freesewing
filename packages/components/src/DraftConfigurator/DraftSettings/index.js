@@ -114,13 +114,13 @@ const DraftSettings = ({
 
   return (
     <>
-      <ul className="config l2 nogroups">
+      <ul className="config level-1 nogroups">
         <DraftSettingSa {...addProps('sa')} />
         <DraftSettingPaperless {...addProps('paperless')} />
         <DraftSettingAdvanced {...addProps('advanced')} />
       </ul>
       {data.settings.advanced && (
-        <ul className="config l2">
+        <ul className="config level-1">
           {Object.keys(groups).map((group) => {
             let open = true
             if (expanded.indexOf(group) === -1) open = false

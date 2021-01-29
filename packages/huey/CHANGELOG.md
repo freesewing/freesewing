@@ -1,6 +1,14 @@
 # Change log for: @freesewing/huey
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+ - Added cut-on-fold indicator to pocket
+ - Removed lingering notch from pocket part
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

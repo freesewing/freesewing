@@ -2,7 +2,7 @@ $fc-blue: '#74c0fc';
 $fc-text-light: $oc-gray-9;
 $fc-text-dark: $oc-gray-0;
 $fc-bg-light: $oc-gray-0;
-$fc-bg-dark: $oc-gray-9;
+$fc-bg-dark: darken($oc-gray-9, 3);
 $fc-altbg-light: $oc-gray-1;
 $fc-altbg-dark: $oc-gray-8;
 $fc-notice-light: $oc-yellow-7;

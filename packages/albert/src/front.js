@@ -14,7 +14,7 @@ export default function (part) {
     macro
   } = part.shorthand()
 
-  let chestWidth = measurements.chestCircumference / 4
+  let chestWidth = measurements.chest / 4
   let bibWidth = chestWidth * options.bibWidth
   let bibLength = measurements.hpsToWaistBack * options.bibLength
   let apronLength =
@@ -22,11 +22,11 @@ export default function (part) {
     measurements.waistToKnee * (1 + options.lengthBonus)
   /*
   let apronWidth =
-    Math.max(measurements.hipsCircumference, measurements.waistCircumference) *
+    Math.max(measurements.hips, measurements.waist) *
     (1 - options.backOpening)
   */
-  let apronWidth = measurements.waistCircumference * (1 - options.backOpening)
-  let strapWidth = options.strapWidth * sa
+  let apronWidth = measurements.waist * (1 - options.backOpening)
+  let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
   let hemWidth = 3 * sa
   let pocketSize = apronLength / 4
 
@@ -113,6 +113,9 @@ export default function (part) {
       at: points.title,
       title: 'Front'
     })
+
+    points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
+    macro('scalebox', { at: points.scaleboxAnchor })
 
     macro('crossBox', {
       from: points.topRightHem,

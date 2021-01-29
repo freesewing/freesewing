@@ -1,13 +1,12 @@
-@import "reset";
+@import 'reset';
 @import '../../../node_modules/open-color/open-color.scss';
-@import "variables";
-@import "mixins";
-@import "prism";
-@import "theme-wrapper";
-@import "typography";
-@import "layout";
-@import "scroll";
-@import "components";
-@import "elements";
-@import "utility";
-
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'prism';
+@import 'theme-wrapper';
+@import 'typography';
+@import 'scroll';
+@import 'components';
+@import 'elements';
+@import 'utility';

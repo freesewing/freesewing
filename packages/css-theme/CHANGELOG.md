@@ -1,7 +1,25 @@
 # Change log for: @freesewing/css-theme
 
 
-## 2.9.0 (2020-09-09)
+## 2.11.0 (2021-01-10)
+
+### Added
+
+ - Proper formatting for markdown syntax highlighting
+ - Now includes the fonts so you don't have to
+
+### Changed
+
+ - Plenty of changes for a new look
+ - Restyled the draft configurator
+
+## 2.10.1 (2020-11-07)
+
+### Changed
+
+ - Removed unused CSS code
+
+## 2.9.0 (2020-10-02)
 
 ### Added
 

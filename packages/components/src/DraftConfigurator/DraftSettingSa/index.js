@@ -102,7 +102,7 @@ const DraftSettingSa = (props) => {
       </React.Fragment>
     )
   return (
-    <li>
+    <li className={expanded ? 'expanded' : 'collapsed'}>
       <OptionPreamble
         dflt={saDfltToggle}
         designDflt={'dflt'}

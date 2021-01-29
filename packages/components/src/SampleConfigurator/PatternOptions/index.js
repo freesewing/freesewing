@@ -6,21 +6,22 @@ const PatternOptions = (props) => {
   const renderGroup = (group) => {
     let output = []
     let children = (
-      <ul className="links">
+      <ul>
         <OptionGroup
           key={group + '-group'}
           units={props.units}
           config={props.config}
           options={props.config.optionGroups[group]}
           sampleOption={props.sampleOption}
+          activeOption={props.activeOption}
         />
       </ul>
     )
     output.push(
-      <li key={group + '-ghead'} className="nodot">
-        <h3>
+      <li key={group + '-ghead'}>
+        <h6>
           <FormattedMessage id={'optiongroups.' + group} />
-        </h3>
+        </h6>
         {children}
       </li>
     )
@@ -28,11 +29,7 @@ const PatternOptions = (props) => {
     return output
   }
 
-  return (
-    <ul className="links">
-      {Object.keys(props.config.optionGroups).map((group) => renderGroup(group))}
-    </ul>
-  )
+  return <ul>{Object.keys(props.config.optionGroups).map((group) => renderGroup(group))}</ul>
 }
 
 export default PatternOptions

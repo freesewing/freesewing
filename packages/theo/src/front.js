@@ -11,10 +11,13 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    measurements
+    measurements,
+    snippets
   } = part.shorthand()
-  // Clean up paths from paperless dimensions
+
+  // Clean up inheritedpaths & snippets
   for (let id in paths) delete paths[id]
+  for (let id in snippets) delete snippets[id]
 
   points[1] = new Point(
     points[0].x,

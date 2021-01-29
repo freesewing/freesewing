@@ -11,8 +11,10 @@ export default function(part) {
     snippets,
     Snippet
   } = part.shorthand()
-  // Clean up paths from paperless dimensions
+
+  // Clean up inherited paths & snippets
   for (let id in paths) delete paths[id]
+  delete snippets['43-notch']
 
   // Additional points
   points[810] = new Point(points[60].x, points[-1102].y + 300)

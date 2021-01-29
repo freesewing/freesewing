@@ -4,6 +4,9 @@ nav.breadcrumbs {
     margin-left: 0;
     padding-left: 0;
     font-size: 95%;
+    font-weight: 500;
+    @include title-color-light;
+    line-height: 1.1;
     li {
       list-style-type: none;
       display: inline-block;
@@ -14,17 +17,12 @@ nav.breadcrumbs {
     }
     li:before {
       content: '»';
-      padding: 0 0.25rem;
+      padding: 0 0.5rem;
       font-size: 125%;
+      font-weight: 700;
     }
   }
 }
-
-.theme-wrapper.dark {
-  nav.breadcrumbs {
-    ul {
-      li {
-      }
-    }
-  }
+.theme-wrapper.dark nav.breadcrumbs ul {
+  @include title-color-dark;
 }

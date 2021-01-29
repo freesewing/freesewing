@@ -41,6 +41,7 @@ export default part => {
       rotation: -90
     })
     snippets.notch = new Snippet('notch', points.tip)
+    macro('miniscale', { at: points.gridAnchor })
 
     if (sa) seamAllowance(part, 'lining')
   }

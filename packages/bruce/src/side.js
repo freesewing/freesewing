@@ -68,6 +68,7 @@ export default function(part) {
       nr: 3,
       title: 'side'
     })
+    macro('scalebox', { at: points.title.shift(-90, 40) })
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa * -1)

@@ -11,6 +11,8 @@ devDocsAvailableAt: Developer documentation is available at
 talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
 draftYourPattern: Draft your pattern
 testYourPattern: Test your pattern
+draftThing: 'Draft {thing}'
+testThing: 'Test {thing}'
 renderInBrowser: Click below to render your pattern in the browser.
 weWillReRender: When you make changes, we will re-render for you.
 youCan: You can
@@ -20,8 +22,11 @@ size: Size
 noRequiredMeasurements: This pattern has no required measurements
 howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
 seeDocsAt: Documentation on this topic is available at
-designModeIsOn: Design mode is on
-designModeIsOff: Design mode is off
+clearDesignMode: Clear design mode
+designMode: Design mode
+exportMode: Export mode
+thingIsEnabled: '{thing} is enabled'
+thingIsDisabled: '{thing} is disabled'
 turnOn: Turn on
 turnOff: Turn off
 validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"

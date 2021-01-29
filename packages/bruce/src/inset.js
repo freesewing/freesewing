@@ -1,6 +1,6 @@
 import init from './init'
 
-export default function(part) {
+export default function (part) {
   let { store, sa, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   // Initialize
@@ -24,10 +24,7 @@ export default function(part) {
   // Store cuve length
   store.set(
     'curve',
-    new Path()
-      .move(points.tip)
-      .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
-      .length()
+    new Path().move(points.tip).curve(points.tipCpBottom, points.tipCpTop, points.topLeft).length()
   )
 
   // Path
@@ -36,13 +33,9 @@ export default function(part) {
     .line(points.tip)
     .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
     .line(points.bottomLeft)
-  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight)
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.seam = paths.saBase
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+    .setRender(false)
+  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).setRender(false)
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {

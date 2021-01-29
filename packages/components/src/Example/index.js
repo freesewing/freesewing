@@ -57,7 +57,6 @@ const Example = ({
   }
   if (part !== '') settings.only = [part]
   const patternInstance = new patterns[pattern](settings)
-
   if (sample) patternInstance.sample()
   else patternInstance.draft()
   const patternProps = patternInstance.getRenderProps()

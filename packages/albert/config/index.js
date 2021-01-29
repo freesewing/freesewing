@@ -1,37 +1,19 @@
 import { version } from '../package.json'
 
-// ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
-
 export default {
   name: 'albert',
   version,
-  design: 'WouterVdub',
-  code: 'WouterVdub',
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
   department: 'unisex',
   type: 'pattern',
   difficulty: 3,
-  tags: [
-    'freesewing',
-    'design',
-    'diy',
-    'fashion',
-    'made to measure',
-    'parametric design',
-    'pattern',
-    'sewing',
-    'sewing pattern'
-  ],
+  tags: ['accessories'],
   optionGroups: {
     fit: ['backOpening', 'chestDepth'],
     style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth']
   },
-  measurements: [
-    'chestCircumference',
-    'waistCircumference',
-    'hipsCircumference',
-    'hpsToWaistBack',
-    'waistToKnee'
-  ],
+  measurements: ['chest', 'waist', 'hips', 'hpsToWaistBack', 'waistToKnee'],
   dependencies: {},
   inject: {},
   hide: [],
@@ -42,6 +24,6 @@ export default {
     chestDepth: { pct: 22, min: 15, max: 90 },
     bibLength: { pct: 75, min: 0, max: 90 },
     bibWidth: { pct: 100, min: 50, max: 125 },
-    strapWidth: { pct: 750, min: 100, max: 1500 }
+    strapWidth: { pct: 60, min: 20, max: 100 }
   }
 }

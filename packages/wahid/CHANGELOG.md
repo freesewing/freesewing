@@ -1,6 +1,13 @@
 # Change log for: @freesewing/wahid
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+ - Proper styling for SA on front and back
+
 ## 2.7.1 (2020-07-24)
 
 ### Added

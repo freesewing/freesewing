@@ -2,6 +2,12 @@
 aaron:
   description: Aaron ist ein sportliches Shirt oder ein Tank Top.
   title: Shirt Aaron
+albert:
+  description: Albert ist eine Schürze.
+  title: Schürze Albert
+bella:
+  description: Bella is a basic body block for womenswear.
+  title: Bella body block
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
   title: Fliege Benjamin
@@ -9,10 +15,10 @@ bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Grundschnitt Bent
 breanna:
-  description: Breanna is a basic body block for womenswear.
-  title: Breanna body block
+  description: Breanna ist ein Grundschnitt für Frauen.
+  title: Grundschnitt Breanna
 brian:
-  description: Brian is a basic body block for menswear.
+  description: Brian ist ein Grundschnitt für Männer.
   title: Grundschnitt Brian
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
@@ -27,14 +33,14 @@ cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
   title: Korsett Cathrin
 diana:
-  description: Diana is a top with a draped neckline.
-  title: Diana draped top
+  description: Diana ist ein Oberteil mit einer drapierten Halslinie.
+  title: Drapiertes Oberteil Diana
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Schiebermütze Florent
 florence:
-  description: 'Florence is a face mask'
-  title: Florence face mask
+  description: 'Florence ist eine Gesichtsmaske'
+  title: Gesichtsmaske Florence
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
   title: Holmes Deerstalker-Mütze
@@ -48,8 +54,8 @@ jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Sakko Jaeger
 paco:
-  description: Paco are casual yet stylish summer pants
-  title: Paco pants
+  description: Paco sind lässige, aber stilvolle Sommerhosen
+  title: Hose Paco
 penelope:
   description: Penelope ist ein Bleistiftrock mit oder ohne Gehschlitz in rückwärtigen Teil.
   title: Penelope Bleistiftrock
@@ -72,14 +78,14 @@ tamiko:
   description: Tamiko ist ein Zero Waste Top.
   title: Top Tamiko
 teagan:
-  description: Teagan is a fitted T-shirt pattern
-  title: Teagan T-shirt
+  description: Teagan ist ein massgeschneidertes T-Shirt-Muster
+  title: T-Shirt Teagan
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Hose Theo
 titan:
-  description: Titan is a dartless unisex trouser block
-  title: Titan trouser block
+  description: Titan ist ein Unisex-Grundmuster für Hosen ohne Abnäher
+  title: Hosen-Grundmuster Titan
 trayvon:
   description: Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.
   title: Krawatte Trayvon
