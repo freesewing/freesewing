@@ -12,6 +12,12 @@ export default {
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
     style: ['waistHeight', 'fitKnee', 'lengthBonus', 'crotchDrop'],
+    pockets: [
+      'backPocketHorizontalPlacement',
+      'backPocketVerticalPlacement',
+      'backPocketWidth',
+      'backPocketDepth'
+    ],
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
@@ -54,7 +60,7 @@ export default {
     kneeEase: { pct: 15, min: 1, max: 25 },
 
     // Style (from Titan)
-    waistHeight: { pct: 25, min: 5, max: 45 },
+    waistHeight: { pct: 5, min: 0, max: 15 },
     lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
     fitKnee: { bool: false },
@@ -66,6 +72,15 @@ export default {
     crotchSeamCurveStart: { pct: 80, min: 60, max: 95 },
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
     waistBalance: { pct: 60, min: 30, max: 90 },
-    grainlinePosition: { pct: 45, min: 30, max: 60 }
+    grainlinePosition: { pct: 45, min: 30, max: 60 },
+
+    // Pockets
+    backPocketVerticalPlacement: { pct: 24, min: 18, max: 30 },
+    backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62 },
+    backPocketWidth: { pct: 55, min: 10, max: 90 },
+    backPocketDepth: { pct: 20, min: 10, max: 40 },
+
+    // Belt
+    waistbandWidth: { mm: 25, min: 5, max: 45 },
   }
 }

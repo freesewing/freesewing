@@ -18,6 +18,11 @@ export default (part) => {
     sa
   } = part.shorthand()
 
+  macro('ld', {
+    from: points.crotchSeamCurveStart,
+    to: points.styleWaistIn
+  })
+
   if (complete) {
     if (sa) {
     }
