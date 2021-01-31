@@ -31,19 +31,19 @@ backArmholeCurvature:
   description: Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos
 frontArmholePitchDepth:
   title: Profondeur du point de pivot de l'emmanchure avant
-  description: Tweaks the horizontal placement of the front armhole pitch point
+  description: Modifie la position horizontale du point de pivot de l'emmanchure avant
 backArmholePitchDepth:
-  title: Back armhole pitch depth
-  description: Tweaks the horizontal placement of the back armhole pitch point
+  title: Profondeur du point de pivot de l'emmanchure dos
+  description: Modifie la position horizontale du point de pivot de l'emmanchure dos
 backNeckCutout:
-  title: Back neck cutout
-  description: Controls how deep the neck opening is scooped out at at the back
+  title: Arrondi de l'encolure au dos
+  description: Contrôle la profondeur de l'encolure à l'arrière du cou
 backHemSlope:
-  title: Back hem slope
-  description: Controls the slope of the hem at the back
+  title: Pente de l'ourlet dos
+  description: Contrôle la pente de l'ourlet à l'arrière
 frontShoulderWidth:
-  title: Front shoulder width
-  description: Controls the narrowness of the front shoulders relative to the back
+  title: Largeur d'épaule devant
+  description: Contrôle l'étroitesse des longueurs d'épaules de devant par rapport au dos
 highBustWidth:
   title: High bust width
   description: Allows you to tweak the hight bust width at the front
