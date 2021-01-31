@@ -3,17 +3,17 @@ chestEase:
   title: Aisance de poitrine
   description: Contrôle la quantité d'aisance au niveau le plus large de votre buste
 waistEase:
-  title: Waist ease
-  description: Controls the amount of ease at your waist
+  title: Aisance à la taille
+  description: Contrôle la quantité d'aisance au niveau de la taille
 bustSpanEase:
-  title: Bust span ease
-  description: Controls the amount of (horizontal) ease added to your bust span when locating the bust point.
+  title: Aisance de l'écart poitrine
+  description: Contrôle la quantité d'aisance (horizontale) ajoutée à votre poitrine entre les 2 pointes de la poitrine.
 backDartHeight:
-  title: Back dart height
-  description: Controls the height of the back dart
+  title: Hauteur de pince dos
+  description: Contrôle la hauteur de pince dans le dos
 bustDartLength:
-  title: Bust dart lenght
-  description: Controls the length of the bust dart
+  title: Longueur de pince dos
+  description: Contrôle la longueur de la pince dos
 waistDartLength:
   title: Waist dart lenght
   description: Controls the length of the waist dart
