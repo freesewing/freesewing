@@ -1,13 +1,10 @@
 export default function (part) {
   let {
     store,
-    options,
     Point,
     Path,
     points,
     paths,
-    Snippet,
-    snippets,
     complete,
     sa,
     paperless,
