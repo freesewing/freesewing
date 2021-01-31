@@ -15,14 +15,14 @@ bustDartLength:
   title: Longueur de pince dos
   description: Contrôle la longueur de la pince dos
 waistDartLength:
-  title: Waist dart lenght
-  description: Controls the length of the waist dart
+  title: Longueur de la pince de taille
+  description: Contrôle la longueur de la pince de taille
 bustDartCurve:
-  title: Bust dart curve
-  description: Controls the curvature of the bust dart
+  title: Courbe de la pince poitrine
+  description: Contrôle la courbure de la pince poitrine
 armholeDepth:
-  title: Armhole depth
-  description: Controls the depth of the armhole
+  title: Profondeur d'emmanchure
+  description: Contrôle la profondeur de l'emmanchure
 backArmholeSlant:
   title: Back armhole slant
   description: Slightly rotates the armhole around its pitch point
