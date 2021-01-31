@@ -12,7 +12,7 @@ export default {
   difficulty: 3,
   tags: ['handbag', 'accessories'],
   optionGroups: {
-    options: ['size', 'zipperSize', 'strapLength', 'handleWidth']
+    style: ['size', 'zipperSize', 'strapLength', 'handleWidth']
   },
   measurements: [],
   dependencies: {
