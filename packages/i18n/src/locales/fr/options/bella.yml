@@ -24,13 +24,13 @@ armholeDepth:
   title: Profondeur d'emmanchure
   description: Contrôle la profondeur de l'emmanchure
 backArmholeSlant:
-  title: Back armhole slant
-  description: Slightly rotates the armhole around its pitch point
+  title: Inclinaison d'emmanchure dos
+  description: Modifie légèrement l'inclinaison de courbe de l'emmanchure autour de son point de pivot
 backArmholeCurvature:
-  title: Back armhole curvature
-  description: Controls how deep the armhole is scooped out at the back bottom
+  title: Courbure de l'emmanchure arrière
+  description: Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos
 frontArmholePitchDepth:
-  title: Front armhole pitch depth
+  title: Profondeur du point de pivot de l'emmanchure avant
   description: Tweaks the horizontal placement of the front armhole pitch point
 backArmholePitchDepth:
   title: Back armhole pitch depth
