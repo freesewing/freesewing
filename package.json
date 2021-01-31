@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "jsonlint": "yarn --silent jsonlint:files | xargs -n1 jsonlint -q -c && echo \"jsonlint: no lint errors\"",
     "jsonlint:files": "find . -name \"*.json\" | grep -v -f .eslintignore",
-    "prettier": "npx prettier --write 'packages/**/src/*.js'",
+    "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/**/example/src/*'",
     "reconfigure": "npx babel-node scripts/reconfigure.js",
     "dxf": "npx babel-node scripts/export-dxf.js",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run build",

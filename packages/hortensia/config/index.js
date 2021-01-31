@@ -1,21 +1,18 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
-// ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
+// 🤔 --> https://freesewing.dev/reference/config/
 
 export default {
-  name: "hortensia",
+  name: 'hortensia',
   version,
   design: ['Stoffsuchti', 'Wouter Van Wageningen'],
   code: 'Wouter Van Wageningen',
-  department: "accessories",
-  type: "pattern",
+  department: 'accessories',
+  type: 'pattern',
   difficulty: 3,
-  tags: [
-    "handbag",
-    "accessories",
-  ],
+  tags: ['handbag', 'accessories'],
   optionGroups: {
-    options: ["size", "zipperSize","strapLength","handleWidth"]
+    options: ['size', 'zipperSize', 'strapLength', 'handleWidth']
   },
   measurements: [],
   dependencies: {
@@ -23,7 +20,7 @@ export default {
     bottompanel: 'sidepanel',
     frontpanel: 'sidepanel',
     sidepanelreinforcement: 'sidepanel',
-    zipperpanel: 'sidepanel',
+    zipperpanel: 'sidepanel'
   },
   options: {
     width: 230,
@@ -35,6 +32,6 @@ export default {
     strapLength: { pct: 160, min: 75, max: 250 },
     handleWidth: { mm: 20, min: 7, max: 30 },
     size: { pct: 50, min: 20, max: 200 },
-    zipperSize: { dflt: '#5', list: ['#3','#4','#4.5','#5','#6','#8','#10','Invisible']}
+    zipperSize: { dflt: '#5', list: ['#3', '#4', '#4.5', '#5', '#6', '#8', '#10', 'Invisible'] }
   }
-};
+}
