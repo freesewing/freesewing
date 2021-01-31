@@ -25,10 +25,13 @@ export default {
     options: ["size", "zipperSize","strapLength","handleWidth"]
   },
   measurements: [],
-  dependencies: {},
-  inject: {},
-  hide: [],
-  parts: ["sidepanel","frontpanel","bottompanel","zipperpanel","sidepanelreinforcement","strap"],
+  dependencies: {
+    strap: 'sidepanel',
+    bottompanel: 'sidepanel',
+    frontpanel: 'sidepanel',
+    sidepanelreinforcement: 'sidepanel',
+    zipperpanel: 'sidepanel',
+  },
   options: {
     width: 230,
     height: 330,
@@ -39,6 +42,6 @@ export default {
     strapLength: { pct: 160, min: 75, max: 250 },
     handleWidth: { mm: 20, min: 7, max: 30 },
     size: { pct: 50, min: 20, max: 200 },
-    zipperSize: { dflt: '#5', list: ['#3','#4','#4.5','#5','#6','#8','#10','Invisible']} 
+    zipperSize: { dflt: '#5', list: ['#3','#4','#4.5','#5','#6','#8','#10','Invisible']}
   }
 };
