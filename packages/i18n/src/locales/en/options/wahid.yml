@@ -32,7 +32,7 @@ hemStyle:
 
 hemRadius:
   title: Hem radius
-  desciption: Radius by which the hem is rounded
+  description: Radius by which the hem is rounded
 
 backInset:
   title: Back inset
