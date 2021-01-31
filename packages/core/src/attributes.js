@@ -3,7 +3,7 @@ function Attributes() {
 }
 
 /** Adds an attribute */
-Attributes.prototype.add = function(name, value) {
+Attributes.prototype.add = function (name, value) {
   if (typeof this.list[name] === 'undefined') {
     this.list[name] = []
   }
@@ -13,33 +13,33 @@ Attributes.prototype.add = function(name, value) {
 }
 
 /** Sets an attribute, overwriting existing value */
-Attributes.prototype.set = function(name, value) {
+Attributes.prototype.set = function (name, value) {
   this.list[name] = [value]
 
   return this
 }
 
 /** Removes an attribute */
-Attributes.prototype.remove = function(name) {
+Attributes.prototype.remove = function (name) {
   delete this.list[name]
 
   return this
 }
 
 /** Retrieves an attribute */
-Attributes.prototype.get = function(name) {
+Attributes.prototype.get = function (name) {
   if (typeof this.list[name] === 'undefined') return false
   else return this.list[name].join(' ')
 }
 
 /** Retrieves an attribute as array*/
-Attributes.prototype.getAsArray = function(name) {
+Attributes.prototype.getAsArray = function (name) {
   if (typeof this.list[name] === 'undefined') return false
   else return this.list[name]
 }
 
 /** Returns SVG code for attributes */
-Attributes.prototype.render = function() {
+Attributes.prototype.render = function () {
   let svg = ''
   for (let key in this.list) {
     svg += ` ${key}="${this.list[key].join(' ')}"`
@@ -49,7 +49,7 @@ Attributes.prototype.render = function() {
 }
 
 /** Returns CSS code for attributes */
-Attributes.prototype.renderAsCss = function() {
+Attributes.prototype.renderAsCss = function () {
   let css = ''
   for (let key in this.list) {
     css += ` ${key}:${this.list[key].join(' ')};`
@@ -60,7 +60,7 @@ Attributes.prototype.renderAsCss = function() {
 
 /** Returns SVG code for attributes with a fiven prefix
  * typically used for data-text*/
-Attributes.prototype.renderIfPrefixIs = function(prefix = '') {
+Attributes.prototype.renderIfPrefixIs = function (prefix = '') {
   let svg = ''
   let prefixLen = prefix.length
   for (let key in this.list) {
@@ -74,7 +74,7 @@ Attributes.prototype.renderIfPrefixIs = function(prefix = '') {
 
 /** Returns a props object for attributes with a fiven prefix
  * typically used for data-text*/
-Attributes.prototype.asPropsIfPrefixIs = function(prefix = '') {
+Attributes.prototype.asPropsIfPrefixIs = function (prefix = '') {
   let props = {}
   let prefixLen = prefix.length
   for (let key in this.list) {
@@ -89,7 +89,7 @@ Attributes.prototype.asPropsIfPrefixIs = function(prefix = '') {
 }
 
 /** Returns a deep copy of this */
-Attributes.prototype.clone = function() {
+Attributes.prototype.clone = function () {
   let clone = new Attributes()
   clone.list = JSON.parse(JSON.stringify(this.list))
 

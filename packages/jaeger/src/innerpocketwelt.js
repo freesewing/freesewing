@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
 
   let width = store.get('innerPocketWidth')

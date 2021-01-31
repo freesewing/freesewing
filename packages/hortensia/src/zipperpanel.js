@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     options,
@@ -12,14 +12,14 @@ export default function(part) {
     sa,
     paperless,
     macro
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let z = store.get( 'zipperWidth' );
-  let w = (store.get( 'zipperPanelWidth' ) -z) /2;
-  let h = store.get( 'depth' );
-  console.log( z );
-  console.log( w );
-  console.log( h );
+  let z = store.get('zipperWidth')
+  let w = (store.get('zipperPanelWidth') - z) / 2
+  let h = store.get('depth')
+  console.log(z)
+  console.log(w)
+  console.log(h)
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(w, 0)

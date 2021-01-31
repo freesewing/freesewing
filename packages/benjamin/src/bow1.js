@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, points, Path, paths, complete, macro, sa, store, paperless } = part.shorthand()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(0, 0)
@@ -30,10 +30,7 @@ export default function(part) {
       })
     }
     if (sa) {
-      paths.sa = paths.seam
-        .offset(sa)
-        .attr('class', 'fabric sa')
-        .setRender(true)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
     }
     macro('title', {
       at: points.titleAnchor,

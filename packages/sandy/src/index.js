@@ -9,7 +9,7 @@ import draftWaistband from './waistband'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftSkirt = part => draftSkirt(part)
-Pattern.prototype.draftWaistband = part => draftWaistband(part)
+Pattern.prototype.draftSkirt = (part) => draftSkirt(part)
+Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
 
 export default Pattern

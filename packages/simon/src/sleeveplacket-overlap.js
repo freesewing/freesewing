@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     measurements,
     sa,

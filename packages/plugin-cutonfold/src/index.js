@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-cutonfold') === false) {
         svg.attributes.set('freesewing:plugin-cutonfold', version)
         svg.defs += markers
@@ -13,7 +13,7 @@ export default {
     }
   },
   macros: {
-    cutonfold: function(so) {
+    cutonfold: function (so) {
       if (so === false) {
         delete this.points.cutonfoldFrom
         delete this.points.cutonfoldTo

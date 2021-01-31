@@ -11,9 +11,9 @@ import draftInset from './inset'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBack = part => draftBack(part)
-Pattern.prototype.draftSide = part => draftSide(part)
-Pattern.prototype.draftInset = part => draftInset(part)
-Pattern.prototype.draftFront = part => draftFront(part)
+Pattern.prototype.draftBack = (part) => draftBack(part)
+Pattern.prototype.draftSide = (part) => draftSide(part)
+Pattern.prototype.draftInset = (part) => draftInset(part)
+Pattern.prototype.draftFront = (part) => draftFront(part)
 
 export default Pattern

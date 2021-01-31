@@ -39,10 +39,7 @@ export default (part) => {
 
     macro('title', { at: points.title, nr: 2, title: 'back' })
     snippets.armholePitchNotch = new Snippet('bnotch', points.armholePitch)
-    paths.waist = new Path()
-      .move(points.cbWaist)
-      .line(points.waist)
-      .attr('class', 'help')
+    paths.waist = new Path().move(points.cbWaist).line(points.waist).attr('class', 'help')
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)

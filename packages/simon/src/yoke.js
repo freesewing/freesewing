@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     sa,
     Point,
@@ -66,10 +66,7 @@ export default part => {
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
       if (options.splitYoke) {
-        paths.sa = paths.sa
-          .line(points.cbNeck)
-          .move(points.cbYoke)
-          .line(paths.sa.start())
+        paths.sa = paths.sa.line(points.cbNeck).move(points.cbYoke).line(paths.sa.start())
       }
     }
   }

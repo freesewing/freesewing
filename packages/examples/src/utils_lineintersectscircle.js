@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
 
   points.A = new Point(95, 45).attr('data-circle', 35).attr('data-circle-class', 'fabric')

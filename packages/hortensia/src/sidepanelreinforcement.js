@@ -1,4 +1,3 @@
-
 import bottomsidepanel from './bottomsidepanel'
 
 export default function (part) {
@@ -17,15 +16,15 @@ export default function (part) {
     macro
   } = part.shorthand()
 
-  const w = store.get('width');
-  const h = store.get('sidePanelReinforcementHeight');
-  const sizeRatio = store.get( 'sizeRatio' );
+  const w = store.get('width')
+  const h = store.get('sidePanelReinforcementHeight')
+  const sizeRatio = store.get('sizeRatio')
 
-  points.topMiddle = new Point(0, 0);
-  points.topLeft = points.topMiddle.shift(180, w / 2);
-  points.topRight = points.topMiddle.shift(0, w / 2);
+  points.topMiddle = new Point(0, 0)
+  points.topLeft = points.topMiddle.shift(180, w / 2)
+  points.topRight = points.topMiddle.shift(0, w / 2)
 
-  bottomsidepanel(points, points.topMiddle, w, h, sizeRatio);
+  bottomsidepanel(points, points.topMiddle, w, h, sizeRatio)
 
   paths.seam = new Path()
     .move(points.topMiddle)
@@ -41,17 +40,18 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    points.title = points.topLeft
+      .shiftFractionTowards(points.bottomRight, 0.5)
       .attr('data-text-class', 'center')
-    macro("title", {
+    macro('title', {
       at: points.title,
       nr: 4,
-      title: "SidePanelReinforcement",
+      title: 'SidePanelReinforcement',
       scale: 0.25
-    });
-    points.__titleNr.attr("data-text-class", "center");
-    points.__titleName.attr("data-text-class", "center");
-    points.__titlePattern.attr("data-text-class", "center");
+    })
+    points.__titleNr.attr('data-text-class', 'center')
+    points.__titleName.attr('data-text-class', 'center')
+    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

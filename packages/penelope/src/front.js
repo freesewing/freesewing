@@ -1,6 +1,6 @@
 import { BuildMainShape } from './shape'
 
-export default function(part) {
+export default function (part) {
   let {
     options,
     /*measurements,*/
@@ -52,12 +52,7 @@ export default function(part) {
     if (sa) {
       paths.sa = new Path()
         .move(points.lHem)
-        .join(
-          paths.bottom
-            .join(paths.sideSeam)
-            .join(paths.waistSA)
-            .offset(sa)
-        )
+        .join(paths.bottom.join(paths.sideSeam).join(paths.waistSA).offset(sa))
         .line(points.lWaist)
         .attr('class', 'fabric sa')
     }

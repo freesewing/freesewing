@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, macro } = part.shorthand()
 
   points.title = new Point(90, 45)

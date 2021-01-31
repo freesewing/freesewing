@@ -280,16 +280,7 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: [
-      'armhole',
-      'armholePitch',
-      'cfArmhole',
-      'cfWaist',
-      'cfHem',
-      'hips',
-      'waist',
-      'bust_rot2',
-    ]
+    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2']
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)

@@ -1,6 +1,6 @@
 import { calculateHelpers, draftTieShape, tieShapeDimensions, seamAllowance } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     Path,
     Snippet,

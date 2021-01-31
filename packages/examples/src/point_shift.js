@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, macro } = part.shorthand()
 
   points.A = new Point(90, 40).attr('data-text', 'Point A').attr('data-text-class', 'right')

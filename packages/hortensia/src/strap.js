@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     options,
@@ -12,16 +12,16 @@ export default function(part) {
     sa,
     paperless,
     macro
-  } = part.shorthand();
+  } = part.shorthand()
 
-  let w = options.handleWidth;
-  let h = store.get( 'depth' ) * options.strapLength;
-  if( sa > w *.80 ) {
-    sa = w *.80;
+  let w = options.handleWidth
+  let h = store.get('depth') * options.strapLength
+  if (sa > w * 0.8) {
+    sa = w * 0.8
   }
-  console.log( w );
-  console.log( h );
-  console.log( sa );
+  console.log(w)
+  console.log(h)
+  console.log(sa)
 
   points.topLeft = new Point(-w, 0)
   points.topMiddle = new Point(0, 0)
@@ -43,22 +43,22 @@ export default function(part) {
     .move(points.topMiddle)
     .line(points.bottomMiddle)
     .attr('data-text', 'FoldLine')
-    .attr("data-text-class", "center text-xs")
+    .attr('data-text-class', 'center text-xs')
     .attr('class', 'lining dashed')
 
   // Complete?
   if (complete) {
     points.title = points.topMiddle.shiftFractionTowards(points.bottomMiddle, 0.25)
-    macro("title", {
+    macro('title', {
       at: points.title,
       nr: 5,
-      title: "BottomPanel",
+      title: 'BottomPanel',
       rotation: 90,
       scale: 0.25
-    });
-    points.__titleNr.attr("data-text-class", "center");
-    points.__titleName.attr("data-text-class", "center");
-    points.__titlePattern.attr("data-text-class", "center");
+    })
+    points.__titleNr.attr('data-text-class', 'center')
+    points.__titleName.attr('data-text-class', 'center')
+    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

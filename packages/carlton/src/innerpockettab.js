@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -17,10 +17,7 @@ export default function(part) {
     .close()
     .attr('class', 'lining')
 
-  paths.hint = new Path()
-    .move(points.top)
-    .line(points.bottom)
-    .attr('class', 'lining dashed')
+  paths.hint = new Path().move(points.top).line(points.bottom).attr('class', 'lining dashed')
 
   if (complete) {
     points.title = points.top.shiftFractionTowards(points.bottom, 0.5)

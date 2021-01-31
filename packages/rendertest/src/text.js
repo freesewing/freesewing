@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, Path, points, paths, store } = part.shorthand()
 
   let y = store.get('y')
@@ -7,10 +7,7 @@ export default function(part) {
   y += 10
   points.tl = new Point(0, y)
   points.tr = new Point(w, y)
-  paths.text = new Path()
-    .move(points.tl)
-    .line(points.tr)
-    .attr('data-text', 'text')
+  paths.text = new Path().move(points.tl).line(points.tr).attr('data-text', 'text')
   y += 10
   points.tlc = new Point(0, y)
   points.trc = new Point(w, y)

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -27,10 +27,7 @@ export default function(part) {
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path()
-    .move(points.leftMid)
-    .line(points.rightMid)
-    .attr('class', 'dashed')
+  paths.fold = new Path().move(points.leftMid).line(points.rightMid).attr('class', 'dashed')
 
   paths.welt = new Path()
     .move(points.realTopLeft)

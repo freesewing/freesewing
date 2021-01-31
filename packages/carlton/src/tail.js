@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     units,
     paperless,
@@ -79,11 +79,7 @@ export default function(part) {
       to: points.fold2Top.shift(0, 10)
     })
 
-    if (sa)
-      paths.sa = paths.seam
-        .offset(sa)
-        .close()
-        .attr('class', 'fabric sa')
+    if (sa) paths.sa = paths.seam.offset(sa).close().attr('class', 'fabric sa')
     macro('vd', {
       from: points.fold4Bottom.shift(0, 15),
       to: points.fold4Top.shift(0, 15),
