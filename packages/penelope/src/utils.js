@@ -137,11 +137,7 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
     .curve(rightDartCP, curvePaths[1].ops[1].cp2, curvePaths[1].ops[1].to)
     .setRender(false)
 
-  let dart = new part.Path()
-    .move(dartLeft)
-    .line(dartBottom)
-    .line(dartRight)
-    .setRender(false)
+  let dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).setRender(false)
 
   let curveWithDart = {
     left: curveLeftOfDart,

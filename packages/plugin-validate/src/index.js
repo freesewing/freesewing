@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preDraft: function(pattern) {
+    preDraft: function (pattern) {
       if (typeof pattern.settings.measurements === 'undefined')
         return pattern.debug({
           type: 'error',
@@ -35,7 +35,7 @@ export default {
         }
       }
     },
-    postDraft: function(pattern) {
+    postDraft: function (pattern) {
       for (let partId in pattern.parts) {
         let part = pattern.parts[partId]
         let { debug } = part.shorthand()

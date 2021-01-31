@@ -1,4 +1,4 @@
-export default function(part, s) {
+export default function (part, s) {
   let { macro, points, sa } = part.shorthand()
 
   macro('ld', {

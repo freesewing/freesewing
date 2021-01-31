@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { macro, points, Path, paths, complete, sa, paperless } = part.shorthand()
 
   // Add points to make shift not impact curves

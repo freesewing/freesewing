@@ -1,6 +1,6 @@
 import draftRingSector from './shared'
 
-export default function(part) {
+export default function (part) {
   /**
    * The curved waistband is just a ring sector with external
    * and intenal radius and angle calculated from measurements

@@ -1,6 +1,6 @@
 import { backSideBoundary } from './shared'
 
-export default function(part) {
+export default function (part) {
   let { store, points, utils, options, Point, paths, Path } = part.shorthand()
 
   /**

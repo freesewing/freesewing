@@ -1,6 +1,6 @@
 import { addButtonHoles } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     sa,
     Point,
@@ -33,10 +33,7 @@ export default part => {
   points.placketTopEdge = points.placketTopOuterEdgeFold.shift(180, width)
   points.placketBottomEdge = points.placketBottomOuterEdgeFold.shift(180, width)
 
-  paths.seam
-    .line(points.placketTopEdge)
-    .line(points.placketBottomEdge)
-    .close()
+  paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
 
   // Complete pattern?
   if (complete) {
@@ -66,7 +63,7 @@ export default part => {
       .line(points.placketTopOuterEdgeOver)
       .attr('class', 'dotted')
       .attr('data-text', 'matchHere')
-      .attr("data-text-class", "text-xs center")
+      .attr('data-text-class', 'text-xs center')
     paths.placketOuterEdgeUnder = new Path()
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)

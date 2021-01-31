@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { macro, points, Path, paths, complete, sa, paperless } = part.shorthand()
 
   // Make bag 2cm longer

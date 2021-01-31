@@ -5,7 +5,7 @@ import straightFrenchCuff from './cuff-french-straight'
 import angledFrenchCuff from './cuff-french-angled'
 import roundedFrenchCuff from './cuff-french-rounded'
 
-export default part => {
+export default (part) => {
   let { options } = part.shorthand()
   switch (options.cuffStyle) {
     case 'roundedBarrelCuff':

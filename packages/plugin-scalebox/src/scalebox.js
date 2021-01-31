@@ -1,4 +1,4 @@
-export default function(so) {
+export default function (so) {
   // Passing `false` will remove the scalebox
   if (so === false) {
     for (let id of [
@@ -94,8 +94,7 @@ export default function(so) {
   if (typeof so.text === 'string') {
     this.points.__scaleboxText.attr('data-text', so.text)
   } else {
-    this.points.__scaleboxText
-      .attr('data-text', 'supportFreesewingBecomeAPatron')
+    this.points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
     this.points.__scaleboxLink = this.points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
       .attr('data-text-class', 'text-xs fill-note')

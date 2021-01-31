@@ -1,11 +1,11 @@
 import visit from 'unist-util-visit'
 
-export default options => {
+export default (options) => {
   if (!options || !options.jargon) {
     throw Error('Required "jargon" option is missing in remark-jargon configuration')
   }
 
-  const isJargon = node => {
+  const isJargon = (node) => {
     if (
       node.children.length === 1 &&
       node.children[0].type === 'text' &&
@@ -16,7 +16,7 @@ export default options => {
     return false
   }
 
-  const visitor = node => {
+  const visitor = (node) => {
     if (isJargon(node)) {
       let term = node.children[0].value
       let html = options.jargon[term.toLowerCase()]
@@ -35,7 +35,7 @@ export default options => {
     }
   }
 
-  const transform = tree => {
+  const transform = (tree) => {
     visit(tree, 'emphasis', visitor)
   }
 

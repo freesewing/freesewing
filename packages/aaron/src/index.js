@@ -10,11 +10,11 @@ import draftFront from './front'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function (part) {
   // Getting the base part from Brian
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFront = part => draftFront(part)
-Pattern.prototype.draftBack = part => draftBack(part)
+Pattern.prototype.draftFront = (part) => draftFront(part)
+Pattern.prototype.draftBack = (part) => draftBack(part)
 
 export default Pattern

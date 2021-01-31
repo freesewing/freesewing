@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, Path, points, paths, store } = part.shorthand()
 
   let y = store.get('y')
@@ -7,10 +7,7 @@ export default function(part) {
 
   points.crl = new Point(0, y)
   points.crr = new Point(w, y)
-  paths.circles = new Path()
-    .move(points.crl)
-    .line(points.crr)
-    .attr('data-text', 'circles')
+  paths.circles = new Path().move(points.crl).line(points.crr).attr('data-text', 'circles')
   y += w / 2
   for (let i = 1; i < 50; i++) {
     points['cr' + i] = new Point(w / 2, y)

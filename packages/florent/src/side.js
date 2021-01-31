@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } = part.shorthand()
 
   // Clean up
@@ -6,10 +6,7 @@ export default function(part) {
     if (i !== 'side') delete paths[i]
   }
 
-  paths.seam = paths.side
-    .clone()
-    .line(points.foldTop)
-    .attr('class', 'fabric')
+  paths.seam = paths.side.clone().line(points.foldTop).attr('class', 'fabric')
   paths.seam.render = true
 
   if (complete) {

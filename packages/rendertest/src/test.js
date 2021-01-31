@@ -4,7 +4,7 @@ import text from './text'
 import snippets from './snippets'
 import macros from './macros'
 
-export default function(part) {
+export default function (part) {
   let { macro, store, options, Path, paths, Point } = part.shorthand()
   store.set('y', 0)
   store.set('w', options.width)

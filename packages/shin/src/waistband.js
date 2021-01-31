@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     store,
     macro,

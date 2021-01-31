@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, macro } = part.shorthand()
 
   points.A = new Point(90, 70).attr('data-text', 'Point A')
@@ -9,10 +9,7 @@ export default part => {
     .attr('data-text', 'Point C is point A shifted 3cm\nbeyond point B')
     .attr('data-text-lineheight', 6)
 
-  paths.direction = new Path()
-    .move(points.A)
-    .line(points.C)
-    .attr('class', 'note dashed')
+  paths.direction = new Path().move(points.A).line(points.C).attr('class', 'note dashed')
 
   macro('ld', {
     from: points.C,

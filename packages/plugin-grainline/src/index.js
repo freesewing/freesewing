@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-grainline') === false) {
         svg.attributes.set('freesewing:plugin-grainline', version)
         svg.defs += markers
@@ -13,7 +13,7 @@ export default {
     }
   },
   macros: {
-    grainline: function(so) {
+    grainline: function (so) {
       if (so === false) {
         delete this.points.grainlineFrom
         delete this.points.grainlineTo

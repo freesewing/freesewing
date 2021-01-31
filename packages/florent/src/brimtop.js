@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
 
   paths.hint = new Path()
@@ -12,11 +12,7 @@ export default function(part) {
     .curve(points.innerMidCp2, points.tipLeftCp1, points.tipLeft)
     .line(paths.seam.start())
 
-  paths.seam = paths.hint
-    .offset(3)
-    .join(paths.rest)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.hint.offset(3).join(paths.rest).close().attr('class', 'fabric')
 
   if (complete) {
     points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)

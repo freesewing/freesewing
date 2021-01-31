@@ -1,6 +1,6 @@
 const validate = {}
 
-validate.point = function(point, partId, pointId, debug) {
+validate.point = function (point, partId, pointId, debug) {
   if (typeof point !== 'object') {
     debug({
       type: 'error',
@@ -47,7 +47,7 @@ validate.point = function(point, partId, pointId, debug) {
   return true
 }
 
-validate.text = function(type, item, partId, itemId, debug) {
+validate.text = function (type, item, partId, itemId, debug) {
   let text = item.attributes.getAsArray('data-text')
   if (text === false) return true
   else {
@@ -86,7 +86,7 @@ validate.text = function(type, item, partId, itemId, debug) {
   return true
 }
 
-validate.path = function(path, partId, pathId, debug) {
+validate.path = function (path, partId, pathId, debug) {
   if (typeof path !== 'object') {
     debug({
       type: 'error',
@@ -173,7 +173,7 @@ validate.path = function(path, partId, pathId, debug) {
   return true
 }
 
-validate.snippet = function(snippet, partId, snippetId, debug) {
+validate.snippet = function (snippet, partId, snippetId, debug) {
   if (typeof snippet !== 'object') return false
   if (!validate.point(snippet.anchor, partId, '_unknown_', debug)) return false
   if (typeof snippet.attributes !== 'object') return false

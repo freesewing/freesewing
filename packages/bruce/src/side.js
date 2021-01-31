@@ -1,6 +1,6 @@
 import init from './init'
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -52,10 +52,7 @@ export default function(part) {
   paths.hemBase = new Path().move(points.bottomRight).line(points.bottomLeft)
   paths.saBase.render = false
   paths.hemBase.render = false
-  paths.seam = paths.saBase
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Anchor point for sampling
   points.anchor = points.topLeft

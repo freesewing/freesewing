@@ -1,6 +1,6 @@
 import init from './init'
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
