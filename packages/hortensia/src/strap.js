@@ -6,8 +6,6 @@ export default function(part) {
     Path,
     points,
     paths,
-    Snippet,
-    snippets,
     complete,
     sa,
     paperless,
