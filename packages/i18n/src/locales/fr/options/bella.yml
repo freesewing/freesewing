@@ -45,5 +45,5 @@ frontShoulderWidth:
   title: Largeur d'épaule devant
   description: Contrôle l'étroitesse des longueurs d'épaules de devant par rapport au dos
 highBustWidth:
-  title: High bust width
-  description: Allows you to tweak the hight bust width at the front
+  title: Largeur de buste supérieur
+  description: Permet de modifier la largeur de buste supérieur à l'avant
