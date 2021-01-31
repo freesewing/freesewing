@@ -5,8 +5,8 @@ import { version } from "../package.json";
 export default {
   name: "hortensia",
   version,
-  design: "Stoffsuchti/WouterVdub",
-  code: "Stoffsuchti/WouterVdub",
+  design: ['Stoffsuchti', 'Wouter Van Wageningen'],
+  code: 'Wouter Van Wageningen',
   department: "accessories",
   type: "pattern",
   difficulty: 3,
