@@ -37,7 +37,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "bezier-js": "^3.0.1",
+    "bezier-js": "^4.0.3",
     "bin-pack": "^1.0.2",
     "hooks": "^0.3.2"
   },
