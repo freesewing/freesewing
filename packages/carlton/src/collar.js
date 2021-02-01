@@ -175,9 +175,12 @@ export default function (part) {
       title: 'collar'
     })
 
-    macro('grainline', {
-      from: points.standTop.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+    // Remove grainline from collarstand part
+    delete paths.grainline
+    macro('cutonfold', {
+      from: points.topLeft,
+      to: points.standTop,
+      grainline: true
     })
 
     if (sa) {
