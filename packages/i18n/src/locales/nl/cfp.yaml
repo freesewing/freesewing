@@ -23,11 +23,11 @@ size: Maat
 noRequiredMeasurements: Dit patroon heeft geen vereiste maten
 howtoAddMeasurements: Om maten te vereisen, voeg je ze toe aan de <b>measurements</b> sectie van het configuratiebestand van het patroon.
 seeDocsAt: Documentatie over dit onderwerp is beschikbaar op
-clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
+clearDesignMode: Ontwerp modus wissen
+designMode: Ontwerp modus
+exportMode: Export modus
+thingIsEnabled: '{thing} is ingeschakeld'
+thingIsDisabled: '{thing} is uitgeschakeld'
 turnOn: Inschakelen
 turnOff: Uitschakelen
 validNameWarning: "Kies een andere naam, deze zou voor problemen zorgen.\nWe (her)gebruiken de patroonnaam als naam voor het NPM-pakket.\nPakketnamen mogen geen hoofdletters of speciale tekens bevatten.\nDus geef je patroon een geschikte naam, zoals:"
