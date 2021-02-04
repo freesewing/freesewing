@@ -37,7 +37,7 @@
     "inquirer": "^7.3.3",
     "make-dir": "^3.1.0",
     "normalize-path": "^3.0.0",
-    "ora": "^4.0.5",
+    "ora": "^5.3.0",
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
