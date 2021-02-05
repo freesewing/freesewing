@@ -14,7 +14,7 @@ and countless of others.
 
 Some news from the communtity team:
 
- - Redittors: Head over to [r/freesewing](redditors) for a subreddit by the FreeSewing community.
+ - Redditors: Head over to [r/freesewing](https://www.reddit.com/r/freesewing/) for a subreddit by the FreeSewing community.
  - Facebook people: This [FreeSewing Facebook group](https://www.facebook.com/groups/627769821272714/) is for you.
 
 Less new but still relevant: We're also on 
@@ -25,10 +25,9 @@ and [Github](https://github.com/freesewing),
 but you knew that, right?
 
 
-##### No contributor call until 2021
+##### Next contributor call on 6 February
 
-The contributor call of 26 December is cancelled because of the holiday season.
-The next contributor call is on 9 January 2021
+The next contributor call is on [6 February 2021](https://github.com/freesewing/freesewing/issues/799).
 
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
 Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
