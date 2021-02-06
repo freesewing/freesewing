@@ -21,8 +21,8 @@
   alt="Open issues"/>
   </a><a
   href="https://todo.freesewing.org/"
-  title="Todo list/board"
-  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Todo%20board-9775fa.svg?logo=github&logoColor=white&logoWidth=15"
+  title="Project board"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Project%20board-9775fa.svg?logo=github&logoColor=white&logoWidth=15"
   alt="Todo list/board"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
