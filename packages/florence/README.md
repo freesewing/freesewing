@@ -48,7 +48,7 @@
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).
+This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 This folder holds **@freesewing/florence**
 
 A FreeSewing pattern for a face mask

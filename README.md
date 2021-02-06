@@ -1,4 +1,4 @@
-![FreeSewing](https://freesewing.org/banner.jpg)
+![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/core"
   title="@freesewing/core on NPM"

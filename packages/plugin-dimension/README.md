@@ -48,7 +48,7 @@
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).
+This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 This folder holds **@freesewing/plugin-dimension**
 
 A FreeSewing plugin to add dimensions to your (paperless) pattern
