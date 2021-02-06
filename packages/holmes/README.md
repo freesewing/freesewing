@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/holmes**
+# @freesewing/holmes
 
 A FreeSewing pattern for a Sherlock Holmes hat
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/holmes
 
 ## About FreeSewing 💀
 

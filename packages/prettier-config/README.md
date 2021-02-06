@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/prettier-config**
+# @freesewing/prettier-config
 
 FreeSewing&#39;s shared configuration for prettier
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/prettier-config
 
 ## About FreeSewing 💀
 

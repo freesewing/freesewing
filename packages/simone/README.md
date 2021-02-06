@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/simone**
+# @freesewing/simone
 
 A FreeSewing pattern for a button down shirt (Simone &#x3D; Simon for people with breasts)
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/simone
 
 ## About FreeSewing 💀
 

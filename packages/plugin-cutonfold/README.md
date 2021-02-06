@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/plugin-cutonfold**
+# @freesewing/plugin-cutonfold
 
 A FreeSewing plugin to add cut-on-fold indicators on your patterns
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/plugin-cutonfold
 
 ## About FreeSewing 💀
 

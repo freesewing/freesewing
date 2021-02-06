@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/core**
+# @freesewing/core
 
 A library for creating made-to-measure sewing patterns
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/core
 
 ## About FreeSewing 💀
 

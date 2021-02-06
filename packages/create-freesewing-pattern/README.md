@@ -46,14 +46,18 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **create-freesewing-pattern**
+# create-freesewing-pattern
 
 Initializer package for FreeSewing patterns: npm init FreeSewing-pattern
 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: create-freesewing-pattern
 
 ## About FreeSewing 💀
 

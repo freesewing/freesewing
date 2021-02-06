@@ -46,10 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/i18n**
+# @freesewing/i18n
 
 Translations for the FreeSewing project
 
@@ -106,6 +103,13 @@ For all details, please refer to
 We also use it in our [backend repository](https://github.com/freesewing/website)
 to translate the emails we send out to users.
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/i18n
 
 ## About FreeSewing 💀
 

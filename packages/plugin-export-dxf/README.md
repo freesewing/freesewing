@@ -46,10 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **@freesewing/plugin-export-dxf**
+# @freesewing/plugin-export-dxf
 
 A FreeSewing plugin to export your pattern as DXF-ASTM
 
@@ -136,6 +133,13 @@ This plugin does the minimum to allow export of FreeSewing patterns into
 
 That means, no seam allowance, or titles, no notches, and so on.
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/plugin-export-dxf
 
 ## About FreeSewing 💀
 

@@ -46,10 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-## What am I looking at? 🤔
-
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
-This folder holds **remark-jargon**
+# remark-jargon
 
 A Remark plugin for jargon terms
 
@@ -180,6 +177,13 @@ For help or feedback, please stop by [the FreeSewing chat room](https://gitter.i
 Please see [gatsby-remark-jargon](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon) for
 info and instructions on how to use this plugin with [Gatsby](https://www.gatsbyjs.org/). 
 
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: remark-jargon
 
 ## About FreeSewing 💀
 
