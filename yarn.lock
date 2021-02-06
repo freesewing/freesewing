@@ -1524,17 +1524,17 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@fontsource/permanent-marker@^4.1.0":
+"@fontsource/permanent-marker@latest":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@fontsource/permanent-marker/-/permanent-marker-4.1.0.tgz#516dee8b1bd2237aed2b8fbb0e4c92760106d8f7"
   integrity sha512-VktG5NTFg5pr/DTXQTKXwA5GSJgy7yXtX/5IelA9eXchTeEowuWP5m+Vx0MvYKOVvepjTN1kQrEFx/GCfOuLvw==
 
-"@fontsource/roboto-mono@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.1.0.tgz#83aac6cce6849d0d943861e21c1b31d7b6dfd724"
-  integrity sha512-KVq0xzjoNLd1EQHNPcL+j8EbPaZoYmXvwZt/0GzZPH578f8CcLvSNm8Yl0IVf6Clvhl3/Svb6sslkbkt+SCmtA==
+"@fontsource/roboto-mono@latest":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.1.1.tgz#85d1547db7f58ea096b4bd15d06fc7aa2c735883"
+  integrity sha512-eMz2LIZZRlq+2tZZ/kI+JeDBJQ1mtR3bV64K1xlb9diRURoLK6Nhj8L/TEuwna7YxWLW+Op4U70n63dTWMcGKA==
 
-"@fontsource/ubuntu@^4.1.0":
+"@fontsource/ubuntu@latest":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-4.1.0.tgz#e56656d11bfe915b3b475cbe60719db26615d1d2"
   integrity sha512-wwH+sY0IpV9ETVMSqIvmkW2LFXz1wIfwvOTSDpVDsukpb8/fnvnhjgTNRO15G5HNjmA+h45Yq0YUzWnieZ18LQ==

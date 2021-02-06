@@ -30,9 +30,9 @@
   "peerDependencies": {},
   "dependencies": {
     "open-color": "^1.7.0",
-    "@fontsource/permanent-marker": "^4.1.0",
-    "@fontsource/roboto-mono": "^4.1.0",
-    "@fontsource/ubuntu": "^4.1.0"
+    "@fontsource/permanent-marker": "latest",
+    "@fontsource/roboto-mono": "latest",
+    "@fontsource/ubuntu": "latest"
   },
   "devDependencies": {},
   "files": [

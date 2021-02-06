@@ -67,9 +67,9 @@ carlton:
 css-theme:
   _:
     'open-color': '^1.7.0'
-    "@fontsource/permanent-marker": "^4.1.0"
-    "@fontsource/roboto-mono": "^4.1.0"
-    "@fontsource/ubuntu": "^4.1.0"
+    '@fontsource/permanent-marker': 'latest'
+    '@fontsource/roboto-mono': 'latest'
+    '@fontsource/ubuntu': 'latest'
 components:
   peer:
     'axios': '^0.21.1'
@@ -83,9 +83,9 @@ components:
     '@freesewing/examples': '^{{version}}'
     '@freesewing/rendertest': '^{{version}}'
     '@freesewing/tutorial': '^{{version}}'
-    "@fontsource/permanent-marker": "latest"
-    "@fontsource/roboto-mono": "latest"
-    "@fontsource/ubuntu": "latest"
+    '@fontsource/permanent-marker': 'latest'
+    '@fontsource/roboto-mono': 'latest'
+    '@fontsource/ubuntu': 'latest'
     '@freesewing/i18n': '^{{version}}'
     '@freesewing/utils': '^{{version}}'
     'react-intl': '^5.10.9'
@@ -98,7 +98,7 @@ components:
     'yaml': '^1.10.0'
 core:
   _:
-    'bezier-js': '^3.0.1'
+    'bezier-js': '^4.0.3'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
 create-freesewing-pattern:
@@ -109,13 +109,13 @@ create-freesewing-pattern:
     'cp-file': '^9.0.0'
     'execa': '^4.0.3'
     'git-config-path': '^2.0.0'
-    'github-username': '^5.0.1'
+    'github-username': '^6.0.0'
     'globby': '^11.0.1'
     'handlebars': '^4.7.6'
     'inquirer': '^7.3.3'
     'make-dir': '^3.1.0'
     'normalize-path': '^3.0.0'
-    'ora': '^4.0.5'
+    'ora': '^5.3.0'
     'p-each-series': '^2.1.0'
     'parse-git-config': '^3.0.0'
     'validate-npm-package-name': '^3.0.0'
@@ -153,7 +153,7 @@ models:
 mui-theme:
   peer:
     '@material-ui/core': '^4.11.0'
-    'react': '^16.13.1'
+    'react': '^17.0.1'
     'react-dom': '^16.13.1'
 legend:
   peer:
