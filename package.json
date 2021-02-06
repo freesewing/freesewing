@@ -109,7 +109,7 @@
     "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-terser": "^7.0.0",
     "rollup-plugin-yaml": "^2.0.0",
-    "standard": "^15.0.0",
+    "standard": "^16.0.3",
     "tlds": "^1.207.0",
     "typeface-raleway": "^1.1.13",
     "typeface-roboto-condensed": "^1.1.13",
