@@ -49,7 +49,7 @@ countModelsLackingForPattern: '{count} van je mensen hebben niet de nodige maten
 created: Aangemaakt
 custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
-lightMode: Light mode
+lightMode: Lichte modus
 data: Data
 darkMode: Donkere modus
 default: Standaard
@@ -134,9 +134,9 @@ ourRevenuePledge: Our revenue pledge
 patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
+patronHelp: Neem contact op met ons als u vragen heeft of wijzigingen wilt aanbrengen in uw Patron-status
 patron: Mecenas
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
+patronPitch: Als je denkt dat wat wij doen de moeite is, en je kan elke maand een paar centen missen zonder al te veel problemen, steun dan alsjeblieft ons werk
 patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
@@ -175,7 +175,7 @@ settings: Instellingen
 sewingHelp: Naai hulp
 sewingPatternsForNonAveragePeople: Naaipatronen voor niet-gemiddelde mensen
 share: Delen
-shareFreesewing: Share FreeSewing
+shareFreesewing: Deel FreeSewing
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
@@ -312,7 +312,7 @@ zoomOut: Zoom out
 zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
 savePattern-txt: Bewaar dit patroon in je FreeSewing account
 comparePattern: Vergelijk patroon
-showPattern: Show pattern
+showPattern: Patroon tonen
 comparePattern-txt: Vergelijk je patroon met een aantal standaardmaten om mogelijke pasproblemen te vinden
 recreatePattern: Maak patroon opnieuw
 recreatePattern-txt: Kies een ander persoon en maak dit patroon opnieuw voor deze persoon
@@ -326,6 +326,6 @@ error: Error
 info: Info
 warning: Waarschuwing
 debug: Debug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
-slogan-stay: Stay for the community
+unsubscribe: Uitschrijven
+slogan-come: Kom voor de naaipatronen
+slogan-stay: Blijf voor het gezelschap
