@@ -117,6 +117,10 @@ export default function (part) {
     points['-6cp'],
     points[-6]
   )
+  // If we found mulitple points, that's not a great sign.
+  // But at least we need a point instead of an array things we break
+  if (Array.isArray(points.flyPretipX)) points.flyPretipX = points.flyPretipX.pop()
+
   points[43] = points.flyPretipX.clone()
   // Slant pocket
   points[60] = new Path().move(points[-1102])._curve(points[-1002], points[-100101]).shiftAlong(50)
