@@ -11,7 +11,9 @@ export default function (part) {
     complete,
     paperless,
     macro,
-    utils
+    utils,
+    snippets,
+    Snippet
   } = part.shorthand()
 
   // Initialize
@@ -77,6 +79,14 @@ export default function (part) {
       from: new Point(points.bottomRight.x / 2, points.bottomRight.y),
       to: new Point(points.bottomRight.x / 2, points.topRight.y)
     })
+    snippets.frontNotch = new Snippet(
+      'notch',
+      points.topRight.shiftTowards(points.bottomRight, store.get('frontNotch'))
+    )
+    snippets.backNotch = new Snippet(
+      'bnotch',
+      points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
+    )
   }
 
   // Paperless?
