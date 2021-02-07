@@ -25,9 +25,9 @@ and [Github](https://github.com/freesewing),
 but you knew that, right?
 
 
-##### Next contributor call on 6 February
+##### Next contributor call on 20 February
 
-The next contributor call is on [6 February 2021](https://github.com/freesewing/freesewing/issues/799).
+The next contributor call is on [20 February 2021](https://github.com/freesewing/freesewing/issues/846).
 
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
 Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
