@@ -115,6 +115,11 @@ export default (part) => {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
     points.lastButton = new Point(0, points.hem.y)
   }
+  // We use the roundEnd and roundStart points later on
+  // let's make sure they exist even if the hem is not rounded
+  // (essentially a rounded hem with radius zero
+  if (!points.roundStart) points.roundStart = points.closureBottom.clone()
+  if (!points.roundEnd) points.roundEnd = points.closureBottom.clone()
 
   // Add dart start and end point regardless of style or front or back
   points.dartStart = options.hemStyle === 'classic' ? points.splitDartHemLeft : points.dartHemLeft
