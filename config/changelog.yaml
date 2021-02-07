@@ -13,6 +13,8 @@ unreleased:
       - Define missing y variable in paperless branch
     bruce:
       - Added notches to facilitate seam matching
+    components:
+      - Check point attributes are present before using them
     hugo:
       - Fix style of the seam allowance paths
       - Fix sleeve dependencies
