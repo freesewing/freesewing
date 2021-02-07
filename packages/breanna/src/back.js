@@ -224,6 +224,7 @@ export default (part) => {
         x: points.waistDart2.x + 15
       })
     } else {
+      let y = points.waist.y + 15 + sa
       macro('hd', {
         from: points.cbWaist,
         to: points.waist,
