@@ -11,7 +11,7 @@ check [issue #744](https://github.com/freesewing/freesewing/issues/846).
 Did you know we have a project board that list all of our issues?
 It's a great place to see what we're working on, or what you could help with.
 
-Go to https://todo.freesewing.org/ to get there.
+Go to [todo.freesewing.org](https://todo.freesewing.org/) to get there.
 
 ##### Updated developer documentation
 
