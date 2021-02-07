@@ -1,3 +1,30 @@
+unreleased:
+  date: 2021-02-07
+
+  Added:
+    hortensia:
+      - Initial release of Hortensia, a handbag pattern
+
+  Fixed:
+    bella:
+      - Verify whether back dart passes armhole depth
+    breanna:
+      - Try harder to find the intersection point for the scyedart
+      - Define missing y variable in paperless branch
+    bruce:
+      - Added notches to facilitate seam matching
+    hugo:
+      - Fix style of the seam allowance paths
+      - Fix sleeve dependencies
+    simone:
+      - Force bust dart intersection if not found initially
+    theo:
+      - Check for intersection returning an array
+    titan:
+      - Always balance the waist
+    wahid:
+      - Make sure roudEnd and roundStart points are always available
+
 2.12.1:
   date: 2021-01-27
   Added:
