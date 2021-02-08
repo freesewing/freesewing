@@ -1,6 +1,71 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (2021-02-07)
+
+### bella
+
+#### Fixed
+
+ - Verify whether back dart passes armhole depth
+
+### breanna
+
+#### Fixed
+
+ - Try harder to find the intersection point for the scyedart
+ - Define missing y variable in paperless branch
+
+### bruce
+
+#### Fixed
+
+ - Added notches to facilitate seam matching
+
+### components
+
+#### Fixed
+
+ - Check point attributes are present before using them
+
+### hortensia
+
+#### Added
+
+ - Initial release of Hortensia, a handbag pattern
+
+### hugo
+
+#### Fixed
+
+ - Fix style of the seam allowance paths
+ - Fix sleeve dependencies
+
+### simone
+
+#### Fixed
+
+ - Force bust dart intersection if not found initially
+
+### theo
+
+#### Fixed
+
+ - Check for intersection returning an array
+
+### titan
+
+#### Fixed
+
+ - Always balance the waist
+
+### wahid
+
+#### Fixed
+
+ - Make sure roudEnd and roundStart points are always available
+
+
 ## 2.12.1 (2021-01-27)
 
 ### create-freesewing-pattern

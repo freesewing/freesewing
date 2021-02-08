@@ -1,6 +1,12 @@
 # Change log for: @freesewing/wahid
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Make sure roudEnd and roundStart points are always available
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

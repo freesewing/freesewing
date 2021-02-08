@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bella
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Verify whether back dart passes armhole depth
+
 ## 2.12.0 (2021-01-19)
 
 ### Added

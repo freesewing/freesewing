@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hortensia
 
 
+## unreleased (2021-02-07)
+
+### Added
+
+ - Initial release of Hortensia, a handbag pattern
+
 
 This is the **initial release**, and the start of this change log.
 

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Check point attributes are present before using them
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

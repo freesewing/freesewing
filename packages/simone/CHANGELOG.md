@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Force bust dart intersection if not found initially
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

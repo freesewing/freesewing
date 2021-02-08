@@ -1,6 +1,12 @@
 # Change log for: @freesewing/titan
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Always balance the waist
+
 ## 2.10.4 (2020-11-13)
 
 ### Fixed

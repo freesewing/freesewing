@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bruce
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Added notches to facilitate seam matching
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

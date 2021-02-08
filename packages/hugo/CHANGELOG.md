@@ -1,6 +1,13 @@
 # Change log for: @freesewing/hugo
 
 
+## unreleased (2021-02-07)
+
+### Fixed
+
+ - Fix style of the seam allowance paths
+ - Fix sleeve dependencies
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed
