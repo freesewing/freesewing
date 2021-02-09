@@ -43,9 +43,6 @@ function rotateDistance2(point, distance, center, origin) {
   let dCenter = point.dist(center);
   console.log( 'dCenter: ' +dCenter );
 
-  // startDistance = origin.dist( point );
-
-  //let aCenter = center.angle( point );
   let pDistance = 0;
   let direction = 1;
   
@@ -112,11 +109,11 @@ export default function (part) {
 
   let tempP = null;
 
-  points.tr = new Point( 150, -100 );
-  points.tl = new Point( -400, -100 );
-  points.br = new Point( 150, 800 );
-  points.bl = new Point( -400, 800 );
-  paths.box = new Path().move(points.tr).line(points.tl).line(points.bl).line(points.br).close().attr('class', 'lining dotted stroke-sm');
+  // points.tr = new Point( 150, -100 );
+  // points.tl = new Point( -400, -100 );
+  // points.br = new Point( 150, 800 );
+  // points.bl = new Point( -400, 800 );
+  // paths.box = new Path().move(points.tr).line(points.tl).line(points.bl).line(points.br).close().attr('class', 'lining dotted stroke-sm');
 
   frontPoints(part);
 
@@ -125,15 +122,15 @@ export default function (part) {
   let halfInch = store.get( 'halfInch' );
 
   points.p2 = points.pD.shift( 90, seat/12 +halfInch )
-  .attr("data-text", "2").attr("data-text-class", "center");
+    .attr("data-text", "2").attr("data-text-class", "center");
   points.p3 = rotateDistance( points.pR, halfInch *2, points.pK )
-  .attr("data-text", "3").attr("data-text-class", "center");
+    .attr("data-text", "3").attr("data-text-class", "center");
   
   console.log( 'Pu -> Pj: ' + points.pU.angle( points.pJ ));
   points.p4 = rotateDistance2( points.pU, -1*(waist/2 +halfInch), points.pJ, points.p2 )
-  .attr("data-text", "4").attr("data-text-class", "center");
+    .attr("data-text", "4").attr("data-text-class", "center");
   points.p2a = points.p2.shiftTowards( points.p4, halfInch )
-  .attr("data-text", "2a").attr("data-text-class", "center");
+    .attr("data-text", "2a").attr("data-text-class", "center");
   
   let pivotAngle = points.pJ.angle( points.p4 );
   let originalAngle = points.pJ.angle( points.pU );
@@ -142,14 +139,14 @@ export default function (part) {
   console.log( 'pivotAngle: ' +pivotAngle );
   console.log( 'originalAngle: ' +originalAngle );
   points.p6 = points.pJ.shift( points.pJ.angle( points.pT ) -angleChange, points.pJ.dist( points.pT) )
-  .attr("data-text", "6").attr("data-text-class", "center");
+    .attr("data-text", "6").attr("data-text-class", "center");
   points.p7 = points.pJ.shift( points.pJ.angle( points.pA ) -angleChange, points.pJ.dist( points.pA) )
-  .attr("data-text", "7").attr("data-text-class", "center");
+    .attr("data-text", "7").attr("data-text-class", "center");
 
   points.p10 = points.pK.shiftTowards( points.pH, -halfInch )
-  .attr("data-text", "10").attr("data-text-class", "center");
+    .attr("data-text", "10").attr("data-text-class", "center");
   points.p11 = points.pJ.shiftTowards( points.pH, -halfInch )
-  .attr("data-text", "11").attr("data-text-class", "center");
+    .attr("data-text", "11").attr("data-text-class", "center");
   
   tempP = points.p6.shiftTowards( points.pT, 1000 );
   console.log(tempP);
@@ -172,7 +169,6 @@ export default function (part) {
     .move(points.p2)
     .curve(points.p2cp5,points.p5cp2, points.p5)
     .curve(points.p5cp3,points.p3cp5, points.p3)
-    .attr('class', 'fabric')
 
 
   let aCPu = points.p7.dist( points.p4 ) *options.pctAtoO /100;
@@ -181,37 +177,34 @@ export default function (part) {
   let a4to11 = points.p4.angle( points.p11 );
 
   points.p7cp4 = points.p7.shift( a4to11 +180, aCPu )
-  .attr("data-text", "7cp4").attr("data-text-class", "center");
+    .attr("data-text", "7cp4").attr("data-text-class", "center");
   points.p7cp11 = points.p7.shift( a4to11, aCPj )
-  .attr("data-text", "7cp11").attr("data-text-class", "center");
-  
-  console.log('============');
+    .attr("data-text", "7cp11").attr("data-text-class", "center");
   
   points.p4cp7 = points.p4.shiftFractionTowards( points.p7cp4, options.pctUtoA /100)
-  .attr("data-text", "uCPa").attr("data-text-class", "center");
+    .attr("data-text", "uCPa").attr("data-text-class", "center");
   points.p11cp7 = points.p11.shiftFractionTowards( points.p7cp11, options.pctJtoA /100)
-  .attr("data-text", "jCPa").attr("data-text-class", "center");
+    .shift( 0, points.p11.dist( points.pH ) *options.fullness )
+    .attr("data-text", "jCPa").attr("data-text-class", "center");
   
 
   paths.sideSeam = new Path()
     .move(points.p11)
     .curve(points.p11cp7,points.p7cp11, points.p7)
     .curve(points.p7cp4,points.p4cp7, points.p4)
-    .attr('class', 'fabric')
 
 
 
   points.p3cp10 = points.p3.shiftFractionTowards( points.pF, options.pctRtoKin /200)
     .shiftFractionTowards( points.p10, options.pctRtoKdown /100)
     .attr("data-text", "rCPk").attr("data-text-class", "center");
-  points.p10cp3 = points.p10.shiftFractionTowards( points.pH, -1 * options.pctKtoRout /100)
+  points.p10cp3 = points.p10.shiftFractionTowards( points.pH, -1 * ((options.pctKtoRout /100) +options.fullness))
     .shiftFractionTowards( points.p3, options.pctKtoRup /100)
     .attr("data-text", "kCPr").attr("data-text-class", "center");
 
-  paths.frontSeam = new Path()
+  paths.insideSeam = new Path()
     .move(points.p3)
     .curve(points.p3cp10,points.p10cp3, points.p10)
-    .attr('class', 'fabric')
 
 
 
@@ -224,12 +217,23 @@ export default function (part) {
   paths.legSeam = new Path()
     .move(points.p10)
     .curve(points.p10cpH,points.p11cpH, points.p11)
-    .attr('class', 'fabric')
 
   paths.waistSeam = new Path()
-    .move(points.p2)
-    .line(points.p4)
+    .move(points.p4)
+    .line(points.p2)
+
+  paths.seam = paths.waistSeam
+    .join( paths.crotchSeam )
+    .join( paths.insideSeam )
+    .join( paths.legSeam )
+    .join( paths.sideSeam )
+    .close()
     .attr('class', 'fabric')
+
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    }
 
 
 

@@ -28,26 +28,27 @@ export default function (part) {
 
   
   points.pAextra = points.pA.shift( 0, halfInch)
-  .attr("data-text", "a").attr("data-text-class", "center");
+    .attr("data-text", "a").attr("data-text-class", "center");
 
   let aCPu = points.pA.dist( points.pO ) *options.pctAtoO /100;
   let aCPj = points.pA.dist( points.pC ) *options.pctAtoC /100;
 
   points.pAextraCPu = points.pAextra.shift(90, aCPu )
-  .attr("data-text", "aCPu").attr("data-text-class", "center");
+    .attr("data-text", "aCPu").attr("data-text-class", "center");
   points.pAextraCPj = points.pAextra.shift(270, aCPj )
-  .attr("data-text", "aCPj").attr("data-text-class", "center");
+    .attr("data-text", "aCPj").attr("data-text-class", "center");
 
   points.pUcpA = points.pU.shiftFractionTowards( points.pAextraCPu, options.pctUtoA /100)
-  .attr("data-text", "uCPa").attr("data-text-class", "center");
+    .attr("data-text", "uCPa").attr("data-text-class", "center");
   points.pJcpA = points.pJ.shiftFractionTowards( points.pAextraCPj, options.pctJtoA /100)
-  .attr("data-text", "jCPa").attr("data-text-class", "center");
+    .shift( 0, points.pJ.dist( points.pH ) *options.fullness )
+    .attr("data-text", "jCPa").attr("data-text-class", "center");
 
   paths.sideSeam = new Path()
-    .move(points.pU)
-    .curve(points.pUcpA,points.pAextraCPu, points.pAextra)
-    .curve(points.pAextraCPj,points.pJcpA, points.pJ)
-    .attr('class', 'fabric')
+    .move(points.pJ)
+    .curve(points.pJcpA,points.pAextraCPj, points.pAextra)
+    .curve(points.pAextraCPu,points.pUcpA, points.pU)
+  store.set( 'sideSeam', paths.sideSeam.length() );
 
   points.pZcpR = points.pZ.shiftFractionTowards( points.pX, options.pctZtoR /100)
     .attr("data-text", "zCPr").attr("data-text-class", "center");
@@ -59,19 +60,18 @@ export default function (part) {
     .move(points.pG)
     .line(points.pZ)
     .curve(points.pZcpR,points.pRcpZ, points.pR)
-    .attr('class', 'fabric')
 
   points.pRcpK = points.pR.shiftFractionTowards( points.pF, options.pctRtoKin /100)
     .shiftFractionTowards( points.pK, options.pctRtoKdown /100)
     .attr("data-text", "rCPk").attr("data-text-class", "center");
-  points.pKcpR = points.pK.shiftFractionTowards( points.pH, -1 * options.pctKtoRout /100)
+  points.pKcpR = points.pK.shiftFractionTowards( points.pH, -1 * ((options.pctKtoRout /100) +options.fullness))
     .shiftFractionTowards( points.pR, options.pctKtoRup /100)
     .attr("data-text", "kCPr").attr("data-text-class", "center");
 
-  paths.frontSeam = new Path()
+  paths.insideSeam = new Path()
     .move(points.pR)
     .curve(points.pRcpK,points.pKcpR, points.pK)
-    .attr('class', 'fabric')
+  store.set( 'insideSeam', paths.insideSeam.length() );
 
   let tempP = points.pH.shift(270, halfInch *1.5 )
   points.pKcpH = points.pK.shiftFractionTowards(tempP, options.pctKtoH /100 )
@@ -82,13 +82,42 @@ export default function (part) {
   paths.legSeam = new Path()
     .move(points.pK)
     .curve(points.pKcpH,points.pJcpH, points.pJ)
-    .attr('class', 'fabric')
+
+  points.pSlitBottom = paths.legSeam.shiftAlong( paths.legSeam.length() - (halfInch *4));
+  // points.pSlitBottomT1 = paths.legSeam.shiftAlong( paths.legSeam.length() - (halfInch *4)+1);
+  // points.pSlitBottomT2 = paths.legSeam.shiftAlong( paths.legSeam.length() - (halfInch *4)-1);
+  // points.pSlitTop = points.pSlitBottom.shift( points.pSlitBottomT2.angle(points.pSlitBottomT1) +90, halfInch *4 );
+  points.pSlitTop = points.pSlitBottom.shift( 90, halfInch *4 );
+
+  store.set( 'slitDistance', paths.legSeam.length() - (halfInch *4) );
+
+  macro('ld', {
+    from: points.pSlitBottom,
+    to: points.pSlitTop
+  })
+  macro('ld', {
+    from: points.pSlitBottom,
+    to: points.pJ
+  })
 
   paths.waistSeam = new Path()
-    .move(points.pG)
+    .move(points.pU)
     .line(points.pD)
-    .line(points.pU)
+    .line(points.pG)
+
+  paths.seam = paths.waistSeam
+    .join( paths.crotchSeam )
+    .join( paths.insideSeam )
+    .join( paths.legSeam )
+    .join( paths.sideSeam )
+    .close()
     .attr('class', 'fabric')
+
+    snippets.n1 = new Snippet( 'notch', points.pSlitBottom );
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    }
 
   /*
   let chestWidth = measurements.chest / 4

@@ -10,14 +10,14 @@ export default {
   difficulty: 6,
   tags: ['pants'],
   optionGroups: {
-    fit: ['backOpening', 'chestDepth'],
-    style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth']
+    fit: ['fullness'],
+    style: []
   },
   measurements: ['waist', 'hips', 'inseam', 'seat', 'waistToKnee', 'waistToFloor', 'knee'],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['front','back'],
+  parts: ['front','back', 'legband'],
   options: {
     pctAtoO: 50,
     pctAtoC: 25,
@@ -31,11 +31,6 @@ export default {
     pctKtoRout: 15,
     pctKtoRup: 25,
     pctKtoH: 70,
-    backOpening: { pct: 10, min: 0, max: 25 },
-    lengthBonus: { pct: 0, min: -20, max: 25 },
-    chestDepth: { pct: 22, min: 15, max: 90 },
-    bibLength: { pct: 75, min: 0, max: 90 },
-    bibWidth: { pct: 100, min: 50, max: 125 },
-    strapWidth: { pct: 60, min: 20, max: 100 }
+    fullness: { pct: 0, min: 0, max: 35 },
   }
 }
