@@ -10,7 +10,7 @@ export default function (part) {
     paths,
     Snippet,
     snippets,
-    complete,
+    complete, 
     sa,
     store,
     paperless,
@@ -57,7 +57,7 @@ export default function (part) {
     .attr("data-text", "rCPz").attr("data-text-class", "center");
   
   paths.crotchSeam = new Path()
-    .move(points.pG)
+    .move(points.pW)
     .line(points.pZ)
     .curve(points.pZcpR,points.pRcpZ, points.pR)
 
@@ -103,7 +103,7 @@ export default function (part) {
   paths.waistSeam = new Path()
     .move(points.pU)
     .line(points.pD)
-    .line(points.pG)
+    .line(points.pW)
 
   paths.seam = paths.waistSeam
     .join( paths.crotchSeam )
