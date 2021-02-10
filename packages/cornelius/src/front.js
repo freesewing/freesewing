@@ -91,14 +91,18 @@ export default function (part) {
 
   store.set( 'slitDistance', paths.legSeam.length() - (halfInch *4) );
 
-  macro('ld', {
-    from: points.pSlitBottom,
-    to: points.pSlitTop
-  })
-  macro('ld', {
-    from: points.pSlitBottom,
-    to: points.pJ
-  })
+  paths.slit = new Path()
+    .move( points.pSlitBottom )
+    .line( points.pSlitTop )
+    .attr('class', 'fabric')
+  // macro('ld', {
+  //   from: points.pSlitBottom,
+  //   to: points.pSlitTop
+  // })
+  // macro('ld', {
+  //   from: points.pSlitBottom,
+  //   to: points.pJ
+  // })
 
   paths.waistSeam = new Path()
     .move(points.pU)

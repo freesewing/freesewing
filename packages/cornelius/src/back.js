@@ -1,5 +1,4 @@
 import { rawListeners } from 'process';
-import frontPoints from './frontPoints'
 
 function rotateDistance(part, point, distance, center) {
   let {
@@ -233,7 +232,6 @@ export default function (part) {
   // points.bl = new Point( -400, 800 );
   // paths.box = new Path().move(points.tr).line(points.tl).line(points.bl).line(points.br).close().attr('class', 'lining dotted stroke-sm');
 
-  frontPoints(part);
 
   let waist = store.get( 'waist' );
   let seat = store.get( 'seat' );

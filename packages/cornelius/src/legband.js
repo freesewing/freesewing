@@ -1,3 +1,5 @@
+import { assertParenthesizedExpression } from "@babel/types";
+
 export default function (part) {
     let {
       options,
@@ -42,32 +44,49 @@ export default function (part) {
     points.pCout = points.pCcpF.shiftOutwards( points.pC, halfInch *2 );
     points.pHout = points.pHcpJ.shiftOutwards( points.pH, halfInch *2 );
 
-    paths.seam = new Path()
+    paths.top = new Path()
       .move( points.pA )
       .curve( points.pAcpE, points.pEcpA, points.pE )
       .line( points.pF )
       .curve( points.pFcpC, points.pCcpF, points.pC )
-      .line( points.pCout )
-      .line( points.pHout )
+      .line( points.pCout );
+
+    paths.left = new Path()
+      .move( points.pCout )
+      .line( points.pHout );
+
+    paths.bottom = new Path()
+      .move( points.pHout )
       .line( points.pH )
       .curve( points.pHcpJ, points.pJcpH, points.pJ )
-      .curve( points.pJcpG, points.pGcpJ, points.pG )
-      .line( points.pA )
+      .curve( points.pJcpG, points.pGcpJ, points.pG );
+
+    paths.right = new Path()
+      .move( points.pG )
+      .line( points.pA );
+
+    paths.seam = paths.top.join( paths.left )
+      .join( paths.bottom )
+      .join( paths.right )
       .close()
-      .attr('class', 'fabric')
+      .attr('class', 'fabric');
 
     paths.dart = new Path()
       .move( points.pF )
       .line( points.pJ )
       .line( points.pE )
+      .attr('class', 'fabric');
 
-    points.pBH1 = points.pO.shiftTowards( points.pD, points.pO.dist( points.pD ) *.20 )
-    points.pBH2 = points.pO.shiftTowards( points.pD, points.pO.dist( points.pD ) *.50 )
-    points.pBH3 = points.pO.shiftTowards( points.pD, points.pO.dist( points.pD ) *.80 )
+    points.buttonsTop = paths.top.shiftAlong( halfInch *1.5 );
+    points.buttonsBottom = paths.bottom.shiftAlong( paths.bottom.length() - halfInch * 1.5 );
+    
+    points.pBH1 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .20 );
+    points.pBH2 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .50 );
+    points.pBH3 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .80 );
 
-    points.pB1 = points.pC.shiftTowards( points.pH, points.pC.dist( points.pH ) *.20 )
-    points.pB2 = points.pC.shiftTowards( points.pH, points.pC.dist( points.pH ) *.50 )
-    points.pB3 = points.pC.shiftTowards( points.pH, points.pC.dist( points.pH ) *.80 )
+    points.pB1 = points.pC.shiftFractionTowards( points.pH, .20 );
+    points.pB2 = points.pC.shiftFractionTowards( points.pH, .50 );
+    points.pB3 = points.pC.shiftFractionTowards( points.pH, .80 );
 
     snippets.bh1 = new Snippet( 'buttonhole', points.pBH1 );
     snippets.bh2 = new Snippet( 'buttonhole', points.pBH2 );
@@ -77,13 +96,12 @@ export default function (part) {
     snippets.b2 = new Snippet( 'button', points.pB2 );
     snippets.b3 = new Snippet( 'button', points.pB3 );
 
-    snippets.n1 = new Snippet( 'notch', points.pC.shiftTowards( points.pCcpF, halfInch *1.5 ) );
+    snippets.n1 = new Snippet( 'notch', points.pA );
+    snippets.n2 = new Snippet( 'notch', points.pC.shiftTowards( points.pCcpF, halfInch *1.5 ) );
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   
     return part;
-    
-    
 }

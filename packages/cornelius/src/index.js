@@ -8,9 +8,11 @@ import draftLegband from './legband'
 // Create new design
 const Pattern = new freesewing.Design(config, plugins)
 
+// console.log( Pattern );
 // Attach the draft methods to the prototype
 Pattern.prototype.draftFront = draftFront
 Pattern.prototype.draftBack = draftBack
 Pattern.prototype.draftLegband = draftLegband
+// console.log( Pattern );
 
 export default Pattern

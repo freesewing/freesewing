@@ -13,11 +13,16 @@ export default {
     fit: ['fullness'],
     style: []
   },
+  parts: ['front','back','legband'],
+  inject: {
+    back: 'front'
+  },
   measurements: ['waist', 'hips', 'inseam', 'seat', 'waistToKnee', 'waistToFloor', 'knee'],
-  dependencies: {},
-  inject: {},
+  dependencies: {
+    back: 'front',
+    legband: 'front'
+  },
   hide: [],
-  parts: ['front','back', 'legband'],
   options: {
     pctAtoO: 50,
     pctAtoC: 25,
