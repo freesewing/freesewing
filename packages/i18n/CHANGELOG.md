@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## unreleased (2021-02-07)
+
+### Added
+
+ - Translation for Hortensia
+
 ## 2.11.0 (2021-01-10)
 
 ### Changed

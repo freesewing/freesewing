@@ -24,6 +24,10 @@
 
 ### components
 
+#### Added
+
+ - Linedrawing for hortensia
+
 #### Fixed
 
  - Check point attributes are present before using them
@@ -40,6 +44,12 @@
 
  - Fix style of the seam allowance paths
  - Fix sleeve dependencies
+
+### i18n
+
+#### Added
+
+ - Translation for Hortensia
 
 ### simone
 

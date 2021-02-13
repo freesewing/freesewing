@@ -3,6 +3,10 @@
 
 ## unreleased (2021-02-07)
 
+### Added
+
+ - Linedrawing for hortensia
+
 ### Fixed
 
  - Check point attributes are present before using them
