@@ -44,6 +44,9 @@ florence:
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat
+hortensia:
+  description: 'Hortensia is a handbag'
+  title: Hortensia handbag
 huey:
   description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
   title: Huey hoodie
