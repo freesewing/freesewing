@@ -2,8 +2,12 @@ unreleased:
   date: 2021-02-07
 
   Added:
+    components:
+      - Linedrawing for hortensia
     hortensia:
       - Initial release of Hortensia, a handbag pattern
+    i18n:
+      - Translation for Hortensia
 
   Fixed:
     bella:
