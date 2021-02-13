@@ -47,7 +47,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'BottomPanel',
+      title: 'Strap',
       rotation: 90,
       scale: 0.25
     })
