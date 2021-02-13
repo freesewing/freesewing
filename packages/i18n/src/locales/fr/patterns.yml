@@ -44,6 +44,9 @@ florence:
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau'
   title: Casquette de détective Holmes
+hortensia:
+  description: 'Hortensia is a handbag'
+  title: Hortensia handbag
 huey:
   description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
   title: Sweat zippé à capuche Huey
