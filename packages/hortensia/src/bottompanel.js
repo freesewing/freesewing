@@ -47,9 +47,6 @@ export default function (part) {
     points.__titlePattern.attr('data-text-class', 'center')
 
     let scaleBoxMove = 180 * options.size
-    console.log('scaleBoxMove: ' + scaleBoxMove)
-    console.log('w: ' + w)
-    console.log('h: ' + h)
 
     if (scaleBoxMove > 50 && w > 100) {
       points.scaleBox = points.logo.shift(90, scaleBoxMove)

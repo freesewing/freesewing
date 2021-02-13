@@ -61,9 +61,6 @@ export default function (part) {
   store.set('zipperWidth', zipperWidth)
   store.set('zipperPanelWidth', zipperPanelWidth)
 
-  console.log('zipperWidth: ' + zipperWidth)
-  console.log('zipperPanelWidth: ' + zipperPanelWidth)
-
   points.topCenter = new Point(0, 0)
   points.topCircleLeft = points.topCenter.shift(135, topRadius)
   points.topCircleRight = points.topCenter.shift(45, topRadius)
@@ -115,7 +112,6 @@ export default function (part) {
   points.topZipperPanelLeft = pTop.shiftAlong(topCircleLength / 2 + zipperPanelWidth / 2)
 
   store.set('bottomPanelLength', pBottomPanel.length())
-  console.log('bottomPanelLength: ' + pBottomPanel.length())
 
   let pSidesAndTop = new Path()
     .move(points.bottomSeamRight)
@@ -128,7 +124,6 @@ export default function (part) {
   let frontPanelLength = (pSidesAndTop.length() - zipperPanelWidth) / 2
 
   store.set('frontPanelLength', frontPanelLength)
-  console.log('frontPanelLength: ' + frontPanelLength)
 
   paths.seam = new Path()
     .move(points.bottomRightU)

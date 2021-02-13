@@ -17,9 +17,6 @@ export default function (part) {
   if (sa > w * 0.8) {
     sa = w * 0.8
   }
-  console.log(w)
-  console.log(h)
-  console.log(sa)
 
   points.topLeft = new Point(-w, 0)
   points.topMiddle = new Point(0, 0)
