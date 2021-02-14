@@ -1,5 +1,10 @@
 unreleased:
   date: 2021-02-07
+
+  Added:
+    utils:
+      - Pass pattern handle to tiler
+
   Fixed:
     hortensia:
       - Fix incorrectly named part
