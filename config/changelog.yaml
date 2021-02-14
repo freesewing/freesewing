@@ -1,3 +1,10 @@
+unreleased:
+  date: 2021-02-14
+
+  Fixed:
+    titan:
+      - Always ensure point waistIn is created in back part
+
 2.13.1:
   date: 2021-02-14
 
