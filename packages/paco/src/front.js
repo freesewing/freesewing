@@ -287,31 +287,33 @@ export default function (part) {
         to: points.fork,
         y: points.styleWaistIn.y - sa - 60
       })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.styleWaistOut,
-        d: -15
-      })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.pocketFlapBottomIn,
-        d: -15
-      })
-      macro('ld', {
-        from: points.pocketFlapTopOut,
-        to: points.pocketFlapTopIn,
-        d: 15
-      })
-      macro('ld', {
-        from: points.styleWaistOut,
-        to: points.topLeft,
-        d: 10 + sa
-      })
-      macro('ld', {
-        from: points.topLeft,
-        to: points.topRight,
-        d: 10 + sa
-      })
+      if (options.frontPockets) {
+        macro('ld', {
+          from: points.pocketFlapTopIn,
+          to: points.styleWaistOut,
+          d: -15
+        })
+        macro('ld', {
+          from: points.pocketFlapTopIn,
+          to: points.pocketFlapBottomIn,
+          d: -15
+        })
+        macro('ld', {
+          from: points.pocketFlapTopOut,
+          to: points.pocketFlapTopIn,
+          d: 15
+        })
+        macro('ld', {
+          from: points.styleWaistOut || points.waistOut,
+          to: points.topLeft,
+          d: 10 + sa
+        })
+        macro('ld', {
+          from: points.topLeft,
+          to: points.topRight,
+          d: 10 + sa
+        })
+      }
     }
   }
 
