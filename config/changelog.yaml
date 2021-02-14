@@ -1,6 +1,8 @@
 unreleased:
   date: 2021-02-07
   Fixed:
+    hortensia:
+      - Fix incorrectly named part
     simon:
       - Added missing sleeve notch on yoke
 
