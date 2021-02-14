@@ -63,10 +63,13 @@ app.post('/api', async (req, res) => {
     sizes.indexOf(req.body.size) === -1
   )
     return res.sendStatus(400)
+  let site = 'https://static.freesewing.org/'
   let storage = '/fs/storage/tmp/'
   let dir = createTempDir(storage)
   let svg = storage + dir + '/draft.svg'
   let cmd = ''
+  let url = req.body.url || 'https://freesewing.org/'
+  let title = req.body.design || 'FreeSewing Pattern'
   // Save svg to disk
   fs.writeFile(svg, req.body.svg, err => {
     if (err) {
@@ -80,15 +83,13 @@ app.post('/api', async (req, res) => {
         target += '.ps'
         cmd = '/usr/bin/inkscape --export-ps=' + target + ' ' + svg
         shellExec(cmd).then(() => {
-          return res.send({ link: process.env.TILER_DOWNLOAD + '/tmp/' + dir + '/pattern-full.ps' })
+          return res.send({ link: `${site}${dir}/pattern-full.ps` })
         })
       } else {
         target += '.pdf'
         cmd = '/usr/bin/inkscape --export-pdf=' + target + ' ' + svg
         shellExec(cmd).then(() => {
-          return res.send({
-            link: process.env.TILER_DOWNLOAD + '/tmp/' + dir + '/pattern-full.pdf'
-          })
+          return res.send({ link: `${site}tmp/${dir}/pattern-full.pdf` })
         })
       }
     } else {
@@ -100,15 +101,12 @@ app.post('/api', async (req, res) => {
       shellExec(cmd).then(() => {
         cmd = `/usr/local/bin/tile -a -m${
           req.body.size
-        } -s1 -t"freesewing.org" ${untiled} > ${tiled}`
+        } -s1 -u"${url}" -t"${title}" ${untiled} > ${tiled}`
         console.log('tile cmd', cmd)
         shellExec(cmd).then(() => {
           cmd = `/usr/bin/ps2pdf14 ${tiled} ${target}`
           shellExec(cmd).then(() => {
-            return res.send({
-              link:
-                process.env.TILER_DOWNLOAD + '/tmp/' + dir + '/pattern-' + req.body.size + '.pdf'
-            })
+            return res.send({ link: `${site}tmp/${dir}/pattern-${req.body.size}.pdf` })
           })
         })
       })
