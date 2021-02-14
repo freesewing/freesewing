@@ -14,6 +14,7 @@
     "prettier": "npx prettier --write 'src/**'",
     "lint": "eslint --fix \"src/*.js\"",
     "dev": "backpack",
+    "start": "backpack build && pm2 start build/main.js --name freesewing-tiler",
     "build": "backpack build"
   },
   "repository": {
