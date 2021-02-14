@@ -54,6 +54,7 @@ export default (part) => {
         to: points.cbYoke,
         grainline: true
       })
+      snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
     } else {
       points.grainlineFrom = points.cbYoke.shift(0, 20)
       points.grainlineTo = points.cbNeck.shift(0, 20)
@@ -61,6 +62,8 @@ export default (part) => {
         from: points.grainlineFrom,
         to: points.grainlineTo
       })
+      snippets.sleeveNotchA = new Snippet('bnotch', points.armholePitch)
+      snippets.sleeveNotchB = new Snippet('bnotch', points._armholePitch)
     }
 
     if (sa) {

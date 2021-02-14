@@ -1,5 +1,11 @@
 unreleased:
   date: 2021-02-07
+  Fixed:
+    simon:
+      - Added missing sleeve notch on yoke
+
+2.13.0:
+  date: 2021-02-13
 
   Added:
     components:
