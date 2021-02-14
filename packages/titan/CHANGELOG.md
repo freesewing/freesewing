@@ -1,7 +1,7 @@
 # Change log for: @freesewing/titan
 
 
-## unreleased (2021-02-07)
+## 2.13.0 (2021-02-13)
 
 ### Fixed
 

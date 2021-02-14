@@ -1,7 +1,13 @@
 # Change log for: @freesewing/hortensia
 
 
-## unreleased (2021-02-07)
+## 2.13.1 (2021-02-14)
+
+### Fixed
+
+ - Fix incorrectly named part
+
+## 2.13.0 (2021-02-13)
 
 ### Added
 

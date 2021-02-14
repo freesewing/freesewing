@@ -1,7 +1,28 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (2021-02-07)
+## 2.13.1 (2021-02-14)
+
+### hortensia
+
+#### Fixed
+
+ - Fix incorrectly named part
+
+### simon
+
+#### Fixed
+
+ - Added missing sleeve notch on yoke
+
+### utils
+
+#### Added
+
+ - Pass pattern handle to tiler
+
+
+## 2.13.0 (2021-02-13)
 
 ### bella
 
