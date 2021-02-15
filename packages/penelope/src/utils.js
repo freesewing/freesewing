@@ -34,7 +34,7 @@ function dartCalcBack(options, seatWaistDiff, nrOfDarts) {
   )
 }
 
-function dartCalc(options, seat, seatEase, waist, waistEase) {
+function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   seat += seatEase
   waist += waistEase
   let seatWaistDiff = Math.max(seat - waist, 0)
@@ -90,9 +90,9 @@ function dartCalc(options, seat, seatEase, waist, waistEase) {
   });
   */
 
-  options.frontDartSize = frontDartSize
-  options.backDartSize = backDartSize
-  options.nrOfDarts = nrOfDarts
+  store.set('frontDartSize', frontDartSize )
+  store.set('backDartSize', backDartSize )
+  store.set('nrOfDarts', nrOfDarts )
 }
 
 /**

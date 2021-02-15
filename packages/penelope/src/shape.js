@@ -26,12 +26,12 @@ function BuildMainShape(part, frontPart) {
   let waist = measurements.waist
   let seat = measurements.seat > waist ? measurements.seat : waist
 
-  dartCalc(options, seat, seatEase, waist, waistEase)
+  dartCalc(store, options, seat, seatEase, waist, waistEase)
 
-  let nrOfDarts = options.nrOfDarts
-  let dartSize = options.frontDartSize
+  let nrOfDarts = store.get('nrOfDarts')
+  let dartSize = store.get('frontDartSize')
   if (frontPart == false) {
-    dartSize = options.backDartSize
+    dartSize = store.get('backDartSize')
   }
 
   if (dartSize <= 0) {
