@@ -1,107 +1,175 @@
-import { assertParenthesizedExpression } from "@babel/types";
+function findR( height, arcLength ) {
+  let iter = 0;
+  let a = 0.5;
+  let diff = a*height/(1-Math.cos(a/2))-arcLength
+  
+  do{
+    if( diff < 0 ) {
+      a = a *(.995+diff/1000);
+    } else {
+      a = a *(1.002+diff/1000);
+    }
+    diff = a*height/(1-Math.cos(a/2))-arcLength
+    iter ++;
+    console.log( {iter, diff, a} );
+  } while( (diff < -0.1 || diff > 0.1) && iter < 1000 )
+  return( a * (180 / Math.PI) );
+}
+
 
 export default function (part) {
-    let {
-      options,
-      measurements,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      store,
-      paperless,
-      macro
-    } = part.shorthand()
+  let {
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    store,
+    paperless,
+    macro
+  } = part.shorthand()
+
+  const cc = 0.551915024494; // circle constant
+
+  let halfInch = store.get( 'halfInch' );
+  let cuffWidth = halfInch * 4 * (1+options.cuffWidth)
+  let flapLength = halfInch *3
+  let traditional = (options.cuffStyle == 'traditional');
+
+  let belowKnee = measurements.knee *(traditional ? options.kneeToBelow : 1)
+  let flapRatio = (flapLength) / (belowKnee/2)
+
+  console.log( 'knee: ' +measurements.knee )
+  console.log( 'belowKnee: ' +belowKnee )
   
-    let halfInch = store.get( 'halfInch' );
-    let slitDistance = store.get( 'slitDistance' );
+  let angle = findR( halfInch /4 *5, belowKnee /2)
+  let angleR = angle /(180 / Math.PI)
+  let radius = ( belowKnee /2) / angleR
+  console.log('angle: ' +angle );
+  console.log('radius: ' +radius );
 
-    points.pA = new Point( 0, 0 );
-    points.pD = points.pA.shift( 270, halfInch *8 );
-    points.pO = points.pA.shift( 180, halfInch *1.5 );
-    points.pB = points.pA.shift( 180, slitDistance );
-    points.pE = points.pB.shift( 270, halfInch );
-    points.pF = points.pE.shift( 180, halfInch );
-    points.pC = points.pA.shift( 180, measurements.knee + (halfInch *3) );
-    points.pG = points.pD.shift( 0, halfInch );
-    points.pH = points.pG.shift( 180, measurements.knee + (halfInch *5) );
-    points.pJ = points.pE.shift( 180, halfInch /2 ).shift( 270, points.pA.dist( points.pG ));
+  points.pA = new Point( 0, 0 );
+  points.pB = points.pA.shift( 270, belowKnee /2 );
+  points.pE = points.pB.shift( 0, cuffWidth );
+  points.pF = points.pA.shift( 0, cuffWidth );
 
-    points.pAcpE = points.pA.shift( points.pA.angle( points.pG ) -90, points.pA.dist( points.pE )  *.5);
-    points.pEcpA = points.pE.shift( 0, points.pE.dist( points.pA ) * 0.20);
-    points.pCcpF = points.pC.shift( points.pC.angle( points.pH ) +90, points.pC.dist( points.pF )  *.5);
-    points.pFcpC = points.pF.shift( 180, points.pF.dist( points.pC ) * 0.15 );
+  if( traditional ) {
+    points.pC = points.pB.shift( 270 -angle/2, 2 * radius * Math.sin(angleR/2) );
+    points.pBcpC = points.pB.shift( 270, radius *cc /2);
+    points.pCcpB = points.pC.shift( 90 -angle, radius *cc /2);
+    points.pD = points.pC.shift( 0 -angle, cuffWidth )
+    points.pDcpE = points.pD.shift( 90 -angle, (radius +cuffWidth) *cc /2);
+    points.pEcpD = points.pE.shift( 270, (radius +cuffWidth) *cc /2);
+    points.pAout = points.pA.shift( 90 +(angle/2) *flapRatio, (2 * radius * Math.sin(angleR/2)) *flapRatio );
+    points.pAcpAout = points.pA.shift( 90, radius *flapRatio *cc /2);
+    points.pAoutcpA = points.pAout.shift( 270 +(angle *flapRatio), (radius *cc /2) *flapRatio );
+    points.pFout = points.pAout.shift( 0 +angle *flapRatio, cuffWidth )
+    points.pFoutcpF = points.pFout.shift( 270 +(angle *flapRatio), (radius +cuffWidth) *cc /2 *flapRatio);
+    points.pFcpFout = points.pF.shift( 90, (radius +cuffWidth) *cc /2 *flapRatio);
+  } else {
+    points.pC = points.pB.shift( 270, belowKnee /2 );
+    points.pBcpC = points.pB.shift( 270, 10 );
+    points.pCcpB = points.pC.shift( 90, 10 );
+    points.pD = points.pC.shift( 0, cuffWidth )
+    points.pDcpE = points.pD.shift( 90, 10 );
+    points.pEcpD = points.pE.shift( 270, 10 );
+    points.pAout = points.pA.shift( 90, belowKnee /2 *flapRatio );
+    points.pAcpAout = points.pA.shift( 90, 1);
+    points.pAoutcpA = points.pAout.shift( 270, 1 );
+    points.pFout = points.pAout.shift( 0, cuffWidth )
+    points.pFoutcpF = points.pFout.shift( 270, 1);
+    points.pFcpFout = points.pF.shift( 90, 1);
+  }
+  points.pG = points.pAout.shift( points.pAout.angle( points.pFout ) +45, Math.sqrt( 2* (cuffWidth/2) *(cuffWidth/2)))
 
-    points.pGcpJ = points.pG.shift( points.pG.angle( points.pA ) +90, points.pG.dist( points.pJ )  *.5);
-    points.pJcpG = points.pJ.shift( 0, points.pJ.dist( points.pG ) * 0.25 );
-    points.pHcpJ = points.pH.shift( points.pH.angle( points.pC ) -90, points.pH.dist( points.pJ )  *.5);
-    points.pJcpH = points.pJ.shift( 180, points.pJ.dist( points.pH ) * 0.25 );
+  paths.seam = new Path()
+    .move( points.pA )
+    .line( points.pB )
+    .curve( points.pBcpC, points.pCcpB, points.pC )
+    .line( points.pD )
+    .curve( points.pDcpE, points.pEcpD, points.pE )
+    .line( points.pF )
+    .curve( points.pFcpFout, points.pFoutcpF, points.pFout )
+    .line( points.pG )
+    .line( points.pAout )
+    .curve( points.pAoutcpA, points.pAcpAout, points.pA )
+    .close()
+    .attr('class', 'fabric');
+  
+  paths.mark = new Path()
+    .move( points.pA )
+    .line( points.pF )
+    .attr('class', 'fabric');
 
-    points.pCout = points.pCcpF.shiftOutwards( points.pC, halfInch *2 );
-    points.pHout = points.pHcpJ.shiftOutwards( points.pH, halfInch *2 );
+  if( complete ) {
+    points.buttonHole = points.pAout.shiftFractionTowards( points.pFout, .50 );
+    points.button = points.pC
+      .shiftFractionTowards( points.pD, .50 )
+      .shift( points.pC.angle( points.pD ) +90, belowKnee /2 *flapRatio )
 
-    paths.top = new Path()
-      .move( points.pA )
-      .curve( points.pAcpE, points.pEcpA, points.pE )
-      .line( points.pF )
-      .curve( points.pFcpC, points.pCcpF, points.pC )
-      .line( points.pCout );
-
-    paths.left = new Path()
-      .move( points.pCout )
-      .line( points.pHout );
-
-    paths.bottom = new Path()
-      .move( points.pHout )
-      .line( points.pH )
-      .curve( points.pHcpJ, points.pJcpH, points.pJ )
-      .curve( points.pJcpG, points.pGcpJ, points.pG );
-
-    paths.right = new Path()
-      .move( points.pG )
-      .line( points.pA );
-
-    paths.seam = paths.top.join( paths.left )
-      .join( paths.bottom )
-      .join( paths.right )
-      .close()
-      .attr('class', 'fabric');
-
-    paths.dart = new Path()
-      .move( points.pF )
-      .line( points.pJ )
-      .line( points.pE )
-      .attr('class', 'fabric');
-
-    points.buttonsTop = paths.top.shiftAlong( halfInch *1.5 );
-    points.buttonsBottom = paths.bottom.shiftAlong( paths.bottom.length() - halfInch * 1.5 );
-    
-    points.pBH1 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .20 );
-    points.pBH2 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .50 );
-    points.pBH3 = points.buttonsTop.shiftFractionTowards( points.buttonsBottom, .80 );
-
-    points.pB1 = points.pC.shiftFractionTowards( points.pH, .20 );
-    points.pB2 = points.pC.shiftFractionTowards( points.pH, .50 );
-    points.pB3 = points.pC.shiftFractionTowards( points.pH, .80 );
-
-    snippets.bh1 = new Snippet( 'buttonhole', points.pBH1 );
-    snippets.bh2 = new Snippet( 'buttonhole', points.pBH2 );
-    snippets.bh3 = new Snippet( 'buttonhole', points.pBH3 );
-
-    snippets.b1 = new Snippet( 'button', points.pB1 );
-    snippets.b2 = new Snippet( 'button', points.pB2 );
-    snippets.b3 = new Snippet( 'button', points.pB3 );
+    snippets.bh = new Snippet( 'buttonhole', points.buttonHole );
+    snippets.b = new Snippet( 'button', points.button );
 
     snippets.n1 = new Snippet( 'notch', points.pA );
-    snippets.n2 = new Snippet( 'notch', points.pC.shiftTowards( points.pCcpF, halfInch *1.5 ) );
-
-    if (sa) {
+    snippets.n2 = new Snippet( 'notch', points.pB );
+    snippets.n3 = new Snippet( 'notch', points.pC );
+  
+    points.logo = points.pA.shiftFractionTowards( points.pE, .50 ) //.shift(180,70).shift(270,30);
+    console.log( points.logo );
+    snippets.logo = new Snippet( 'logo', points.logo );
+    points.title = points.logo.shift(270, 70)
+    macro('title', {
+      nr: 78,
+      at: points.title,
+      title: 'LegBand'
+    })
+    points.__titleNr.attr('data-text-class', 'center')
+    points.__titleName.attr('data-text-class', 'center')
+    points.__titlePattern.attr('data-text-class', 'center')
+    
+    if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
-  
-    return part;
+  }
+
+  // Paperless?
+  if (paperless) {
+    macro('hd', {
+      from: points.pA,
+      to: points.pF,
+      y: points.pA.y
+    })
+    macro('hd', {
+      from: points.pB,
+      to: points.pC,
+      y: points.pB.y
+    })
+    macro('ld', {
+      from: points.pD,
+      to: points.pC,
+      d: +sa +15
+    })
+    macro('ld', {
+      from: points.pA,
+      to: points.pAout,
+      d: +sa +15
+    })
+    macro('vd', {
+      from: points.pB,
+      to: points.pA,
+      x: points.pA.x -sa -15
+    })
+    macro('vd', {
+      from: points.pC,
+      to: points.pB,
+      x: points.pC.x
+    })
+  }
+
+  return part;
 }
