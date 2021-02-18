@@ -31,16 +31,16 @@ export default function (part) {
     waistAdjustment = (measurements.waist - measurements.seat) /4;
   }
 
-  console.log( 'measurements.waist: ' +measurements.waist);
-  console.log( 'measurements.seat: ' +measurements.seat);
-  console.log( 'measurements.waistToKnee: ' +(waistToKnee/2.54));
-  console.log( 'measurements.waistToFloor: ' +(waistToFloor/2.54));
-  console.log( 'measurements.floorToKnee: ' +((waistToFloor-waistToKnee)/2.54));
-  console.log( 'measurements.inseam: ' +(measurements.inseam/2.54));
-  console.log( 'inseam: ' +(inseam/2.54));
-  console.log( 'waist to inseam: ' +((waistToKnee -inseam)/2.54));
-  console.log( 'inseam*bandBelowKnee: ' +inseam*options.bandBelowKnee);
-  console.log( 'seat /4: ' +seat /4)
+  // console.log( 'measurements.waist: ' +measurements.waist);
+  // console.log( 'measurements.seat: ' +measurements.seat);
+  // console.log( 'measurements.waistToKnee: ' +(waistToKnee/2.54));
+  // console.log( 'measurements.waistToFloor: ' +(waistToFloor/2.54));
+  // console.log( 'measurements.floorToKnee: ' +((waistToFloor-waistToKnee)/2.54));
+  // console.log( 'measurements.inseam: ' +(measurements.inseam/2.54));
+  // console.log( 'inseam: ' +(inseam/2.54));
+  // console.log( 'waist to inseam: ' +((waistToKnee -inseam)/2.54));
+  // console.log( 'inseam*bandBelowKnee: ' +inseam*options.bandBelowKnee);
+  // console.log( 'seat /4: ' +seat /4)
 
   // points.tr = new Point( 30, -30 );
   // points.tl = new Point( -700, -30 );
