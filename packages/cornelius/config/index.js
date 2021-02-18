@@ -10,32 +10,44 @@ export default {
   difficulty: 6,
   tags: ['pants'],
   optionGroups: {
-    fit: ['fullness'],
-    style: []
+    fit: ['fullness','waistReduction'],
+    style: ['waistbandBelowWaist','cuffStyle','cuffWidth'],
+    advanced: ['bandBelowKnee', 'kneeToBelow']
   },
-  parts: ['front','back','legband'],
+  parts: ['frontpoints','back','front','waistband','legband','pocket','pocketfacing'],
   inject: {
-    back: 'front'
+    front: 'frontpoints',
+    back: 'frontpoints',
+    pocket: 'frontpoints',
+    pocketfacing: 'frontpoints'
   },
-  measurements: ['waist', 'hips', 'inseam', 'seat', 'waistToKnee', 'waistToFloor', 'knee'],
+  measurements: ['waist', 'hips', 'inseam', 'seat', 'waistToKnee', 'waistToHips', 'waistToFloor', 'knee'],
   dependencies: {
     back: 'front',
-    legband: 'front'
+    legband: 'front',
+    waistband: ['back', 'front']
   },
-  hide: [],
+  hide: ['frontpoints'],
   options: {
-    pctAtoO: 50,
-    pctAtoC: 25,
-    pctUtoA: 25,
-    pctJtoA: 25,
-    pctZtoR: 35,
-    pctRtoZin: 75,
-    pctRtoZup: 25,
-    pctRtoKin: 75,
-    pctRtoKdown: 25,
-    pctKtoRout: 15,
-    pctKtoRup: 25,
-    pctKtoH: 70,
-    fullness: { pct: 0, min: 0, max: 35 },
+    pctAtoO: 0.50,
+    pctAtoC: 0.25,
+    pctUtoA: 0.25,
+    pctJtoA: 0.25,
+    pctZtoR: 0.35,
+    pctRtoZin: 0.75,
+    pctRtoZup: 0.25,
+    pctRtoKin: 0.75,
+    pctRtoKdown: 0.25,
+    pctKtoRout: 0.15,
+    pctKtoRup: 0.25,
+    pctKtoH: 0.70,
+    pctSeatAdjustment: 0.50,  
+    kneeToBelow: { pct: 92, min: 85, max: 110 },
+    fullness: { pct: 0, min: 0, max: 55 },
+    waistbandBelowWaist: { pct: 5, min: 0, max: 15 },
+    waistReduction: { pct: 1, min: -2, max: 10 },
+    cuffWidth: { pct: 0, min: -50, max: 150 },
+    cuffStyle: { dflt: 'traditional', list: [ 'traditional', 'elegant' ]},
+    bandBelowKnee: {pct: 25, min: 15, max: 50 },
   }
 }
