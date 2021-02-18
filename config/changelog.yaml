@@ -2,6 +2,10 @@ unreleased:
   date: 2021-02-14
 
   Fixed:
+    paco:
+      - Only add paperless dimensions for pockets if we drafted pockets
+    pattern-info:
+      - Make pattern list alphabetic
     titan:
       - Always ensure point waistIn is created in back part
 
