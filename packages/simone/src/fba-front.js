@@ -74,7 +74,7 @@ export default (part) => {
       points.armhole
     )
   let bustSideCut1 = sideCut1()
-  if (!points.bustSideCut1) {
+  if (!bustSideCut1) {
     // No intersection found. Adapt dart direction to force intersection.
     points._dartDirection = new Path()
       .move(points.waist)
