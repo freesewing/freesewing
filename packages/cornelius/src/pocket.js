@@ -1,8 +1,5 @@
 export default function (part) {
     let {
-      options,
-      measurements,
-      Point,
       Path,
       points,
       paths,
@@ -15,12 +12,7 @@ export default function (part) {
       macro
     } = part.shorthand()
   
-    const cc = 0.551915024494; // circle constant
-  
     let halfInch = store.get( 'halfInch' );
-    let waist = store.get( 'waist' );
-
-    let tempP;
 
     paths.waistSeam = paths.waistSeam.split( points.pocketFacingTL )[0]
       .setRender( false )
@@ -28,12 +20,6 @@ export default function (part) {
     paths.sideSeam = paths.sideSeam.split( points.pocketFacingBR )[1]
       .setRender( false )
       
-    console.log('=============');
-    paths.sideSeam.ops.forEach(op => {
-      console.log( op );
-    });
-    console.log('=============');
-  
     points.brCPtl = points.pocketFacingBR.shift( points.pocketFacingBR.angle( points.pocketSide ) +90, halfInch *3 )
     points.tlCPbr = points.pocketFacingTL.shift( points.pocketFacingTL.angle( points.pocketWaist ) -90, halfInch *6 )
 
@@ -67,13 +53,10 @@ export default function (part) {
       .line( points.mpocketWaist )
       .line( points.mpocketSide )
       .join( paths.pocketBottom )
-      //.join( paths.facingInside )
       .join( paths.sideSeam )
       .close()
       .setRender( true )
       .attr('class', 'fabric')
-
-
 
     if( complete ) {
       snippets.n1 = new Snippet( 'notch', points.pocketWaist );
@@ -97,53 +80,68 @@ export default function (part) {
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }
     }
-  
+
     // Paperless?
     if (paperless) {
       macro('hd', {
-        from: points.pW,
-        to: points.pU,
-        y: points.pU.y +15
+        from: points.mpocketFacingBR,
+        to: points.mpocketWaist,
+        y: points.pU.y -sa -15
       })
       macro('hd', {
-        from: points.pAextra,
-        to: points.pR
+        from: points.mpocketWaist,
+        to: points.pocketTL,
+        y: points.pU.y -sa -15
       })
       macro('hd', {
-        from: points.pK,
-        to: points.pJ,
-        y: points.pJ.y -15
+        from: points.pocketTL,
+        to: points.pocketWaist,
+        y: points.pU.y -sa -15
       })
-      // Keystone original (see above):
-      // macro('hd', {
-      //   from: points.pSlitBottom,
-      //   to: points.pJ,
-      //   y: points.pJ.y -30
-      // })
-      // macro('vd', {
-      //   from: points.pSlitTop,
-      //   to: points.pSlitBottom,
-      //   x: points.pSlitTop.x +15
-      // })
-      macro('vd', {
-        from: points.pW,
-        to: points.pR,
-        x: points.pR.x
-      })
-      macro('vd', {
-        from: points.pR,
-        to: points.pK,
-        x: points.pR.x
-      })
-      macro('vd', {
-        from: points.pW,
-        to: points.pZ,
-        x: points.pW.x +15
-      })
-      macro('vd', {
-        from: points.pJ,
+      macro('hd', {
+        from: points.pocketWaist,
         to: points.pU,
-        x: points.pU.x -15
+        y: points.pU.y -sa -15
+      })
+      macro('hd', {
+        from: points.pU,
+        to: points.pocketFacingBR,
+        y: points.pU.y -sa -15
+      })
+      macro('hd', {
+        from: points.pocketWaist,
+        to: points.pocketFacingTL,
+        y: points.pU.y -sa -15
+      })
+      macro('vd', {
+        from: points.pU,
+        to: points.pocketSide,
+        x: points.pocketSide.x +sa +15
+      })
+      macro('vd', {
+        from: points.pocketTL,
+        to: points.pocketBL,
+        x: points.pocketTL.x +15
+      })
+      macro('vd', {
+        from: points.pocketSide,
+        to: points.mpocketWaist,
+        x: points.pocketSide.x +sa +15
+      })
+      macro('vd', {
+        from: points.pocketSide,
+        to: points.pocketFacingBR,
+        x: points.pocketSide.x +sa +15
+      })
+      macro('vd', {
+        from: points.mpocketWaist,
+        to: points.mpocketSide,
+        x: points.mpocketSide.x -sa -15
+      })
+      macro('vd', {
+        from: points.mpocketSide,
+        to: points.mpocketFacingBR,
+        x: points.mpocketSide.x -sa -15
       })
     }
   

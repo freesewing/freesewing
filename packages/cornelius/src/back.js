@@ -262,6 +262,8 @@ export default function (part) {
     .move(points.p10)
     .curve(points.p10cpH,points.p11cpH, points.p11)
 
+  store.set( 'backLegSeam', paths.legSeam.length() );
+  
   paths.waistSeam = new Path()
     .move(points.p4)
     .line(points.p2)

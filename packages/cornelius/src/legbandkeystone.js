@@ -15,8 +15,12 @@ export default function (part) {
     macro
   } = part.shorthand()
 
+  if( options.cuffStyle != 'keystone') {
+    return( part );
+  }
+
   let halfInch = store.get( 'halfInch' );
-  let slitDistance = 5//store.get( 'slitDistance' );
+  let slitDistance = store.get( 'slitDistance' );
 
   points.pA = new Point( 0, 0 );
   points.pD = points.pA.shift( 270, halfInch *8 );

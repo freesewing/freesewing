@@ -1,8 +1,5 @@
 export default function (part) {
     let {
-      options,
-      measurements,
-      Point,
       Path,
       points,
       paths,
@@ -15,20 +12,17 @@ export default function (part) {
       macro
     } = part.shorthand()
   
-    const cc = 0.551915024494; // circle constant
-  
     let halfInch = store.get( 'halfInch' );
     let waist = store.get( 'waist' );
-
-    let tempP;
 
     paths.waistSeam = paths.waistSeam.split( points.pocketFacingTL )[0]
       .setRender( false )
 
+    // Adding sa to this point so it allows for the pocket seam to be finished without the facing being included
+    points.pocketFacingBR = paths.sideSeam.shiftAlong( paths.sideSeam.length() -(waist /2 /4.5 *3.5) -(halfInch *3) +sa);
     paths.sideSeam = paths.sideSeam.split( points.pocketFacingBR )[1]
       .setRender( false )
       
-  
     points.brCPtl = points.pocketFacingBR.shift( points.pocketFacingBR.angle( points.pocketSide ) +90, halfInch *3 )
     points.tlCPbr = points.pocketFacingTL.shift( points.pocketFacingTL.angle( points.pocketWaist ) -90, halfInch *6 )
 
@@ -44,8 +38,6 @@ export default function (part) {
       .setRender( true )
       .attr('class', 'fabric')
 
-
-
     if( complete ) {
       snippets.n1 = new Snippet( 'notch', points.pocketWaist );
       snippets.n2 = new Snippet( 'notch', points.pocketSide );
@@ -58,10 +50,10 @@ export default function (part) {
         at: points.title,
         title: 'PocketFacing'
       })
-    //   points.__titleNr.attr('data-text-class', 'center')
-    //   points.__titleName.attr('data-text-class', 'center')
-    //   points.__titlePattern.attr('data-text-class', 'center')
-  
+      // points.__titleNr.attr('data-text-class', 'center')
+      // points.__titleName.attr('data-text-class', 'center')
+      // points.__titlePattern.attr('data-text-class', 'center')
+
       if( sa ) {
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }
@@ -70,49 +62,29 @@ export default function (part) {
     // Paperless?
     if (paperless) {
       macro('hd', {
-        from: points.pW,
-        to: points.pU,
-        y: points.pU.y +15
+        from: points.pU,
+        to: points.pocketSide,
+        y: points.pU.y -sa -15
       })
       macro('hd', {
-        from: points.pAextra,
-        to: points.pR
+        from: points.pU,
+        to: points.pocketWaist,
+        y: points.pU.y -sa -15
       })
       macro('hd', {
-        from: points.pK,
-        to: points.pJ,
-        y: points.pJ.y -15
-      })
-      // Keystone original (see above):
-      // macro('hd', {
-      //   from: points.pSlitBottom,
-      //   to: points.pJ,
-      //   y: points.pJ.y -30
-      // })
-      // macro('vd', {
-      //   from: points.pSlitTop,
-      //   to: points.pSlitBottom,
-      //   x: points.pSlitTop.x +15
-      // })
-      macro('vd', {
-        from: points.pW,
-        to: points.pR,
-        x: points.pR.x
+        from: points.pocketWaist,
+        to: points.pocketFacingTL,
+        y: points.pU.y -sa -15
       })
       macro('vd', {
-        from: points.pR,
-        to: points.pK,
-        x: points.pR.x
+        from: points.pU,
+        to: points.pocketSide,
+        x: points.pocketSide.x +sa +15
       })
       macro('vd', {
-        from: points.pW,
-        to: points.pZ,
-        x: points.pW.x +15
-      })
-      macro('vd', {
-        from: points.pJ,
-        to: points.pU,
-        x: points.pU.x -15
+        from: points.pocketSide,
+        to: points.pocketFacingBR,
+        x: points.pocketSide.x +sa +15
       })
     }
   

@@ -34,27 +34,36 @@ export default function (part) {
     macro
   } = part.shorthand()
 
+  if( options.cuffStyle == 'keystone') {
+    return( part );
+  }
+
   const cc = 0.551915024494; // circle constant
 
   let halfInch = store.get( 'halfInch' );
+  let backLeg = store.get( 'backLegSeam' );
+  let frontLeg = store.get( 'frontLegSeam' );
+
   let cuffWidth = halfInch * 4 * (1+options.cuffWidth)
   let flapLength = halfInch *3
   let traditional = (options.cuffStyle == 'traditional');
 
-  let belowKnee = measurements.knee *(traditional ? options.kneeToBelow : 1)
-  let flapRatio = (flapLength) / (belowKnee/2)
+  // let belowKnee = measurements.knee *(traditional ? options.kneeToBelow : 1)
+  backLeg = backLeg *(traditional ? options.kneeToBelow : 1)
+  frontLeg = frontLeg *(traditional ? options.kneeToBelow : 1)
+  let flapRatio = (flapLength) / (backLeg)
 
   console.log( 'knee: ' +measurements.knee )
-  console.log( 'belowKnee: ' +belowKnee )
+  //console.log( 'belowKnee: ' +belowKnee )
   
-  let angle = findR( halfInch /4 *5, belowKnee /2)
+  let angle = findR( halfInch /4 *5, backLeg /*belowKnee /2*/)
   let angleR = angle /(180 / Math.PI)
-  let radius = ( belowKnee /2) / angleR
+  let radius = ( backLeg /*belowKnee /2*/ ) / angleR
   console.log('angle: ' +angle );
   console.log('radius: ' +radius );
 
   points.pA = new Point( 0, 0 );
-  points.pB = points.pA.shift( 270, belowKnee /2 );
+  points.pB = points.pA.shift( 270, frontLeg /* belowKnee /2 */ );
   points.pE = points.pB.shift( 0, cuffWidth );
   points.pF = points.pA.shift( 0, cuffWidth );
 
@@ -72,13 +81,13 @@ export default function (part) {
     points.pFoutcpF = points.pFout.shift( 270 +(angle *flapRatio), (radius +cuffWidth) *cc /2 *flapRatio);
     points.pFcpFout = points.pF.shift( 90, (radius +cuffWidth) *cc /2 *flapRatio);
   } else {
-    points.pC = points.pB.shift( 270, belowKnee /2 );
+    points.pC = points.pB.shift( 270, backLeg );
     points.pBcpC = points.pB.shift( 270, 10 );
     points.pCcpB = points.pC.shift( 90, 10 );
     points.pD = points.pC.shift( 0, cuffWidth )
     points.pDcpE = points.pD.shift( 90, 10 );
     points.pEcpD = points.pE.shift( 270, 10 );
-    points.pAout = points.pA.shift( 90, belowKnee /2 *flapRatio );
+    points.pAout = points.pA.shift( 90, backLeg *flapRatio );
     points.pAcpAout = points.pA.shift( 90, 1);
     points.pAoutcpA = points.pAout.shift( 270, 1 );
     points.pFout = points.pAout.shift( 0, cuffWidth )
@@ -110,7 +119,7 @@ export default function (part) {
     points.buttonHole = points.pAout.shiftFractionTowards( points.pFout, .50 );
     points.button = points.pC
       .shiftFractionTowards( points.pD, .50 )
-      .shift( points.pC.angle( points.pD ) +90, belowKnee /2 *flapRatio )
+      .shift( points.pC.angle( points.pD ) +90, backLeg *flapRatio )
 
     snippets.bh = new Snippet( 'buttonhole', points.buttonHole );
     snippets.b = new Snippet( 'button', points.button );
@@ -131,7 +140,7 @@ export default function (part) {
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
     points.__titlePattern.attr('data-text-class', 'center')
-    
+
     if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
@@ -144,11 +153,13 @@ export default function (part) {
       to: points.pF,
       y: points.pA.y
     })
-    macro('hd', {
-      from: points.pB,
-      to: points.pC,
-      y: points.pB.y
-    })
+    if( traditional ) {
+      macro('hd', {
+        from: points.pB,
+        to: points.pC,
+        y: points.pB.y
+      })
+    }
     macro('ld', {
       from: points.pD,
       to: points.pC,
@@ -167,7 +178,7 @@ export default function (part) {
     macro('vd', {
       from: points.pC,
       to: points.pB,
-      x: points.pC.x
+      x: points.pC.x - (traditional ? 0 : sa + 15)
     })
   }
 

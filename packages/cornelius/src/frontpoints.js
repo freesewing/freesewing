@@ -24,7 +24,7 @@ export default function (part) {
   store.set( 'waist', waist );
   store.set( 'seat', seat );
   store.set( 'halfInch', halfInch );
-  store.set( 'ventLength', waistToKnee *options.bandBelowKnee );
+  store.set( 'ventLength', waistToKnee *options.bandBelowKnee *options.ventLength );
 
   let waistAdjustment = 0;
   if( measurements.waist > measurements.seat ) {

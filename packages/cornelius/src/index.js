@@ -5,6 +5,7 @@ import draftFrontpoints from './frontpoints'
 import draftFront from './front'
 import draftBack from './back'
 import draftLegband from './legband'
+import draftLegbandkeystone from './legbandkeystone'
 import draftWaistband from './waistband'
 import draftPocketfacing from './pocketfacing'
 import draftPocket from './pocket'
@@ -19,6 +20,7 @@ Pattern.prototype.draftFrontpoints = draftFrontpoints
 Pattern.prototype.draftFront = draftFront
 Pattern.prototype.draftBack = draftBack
 Pattern.prototype.draftLegband = draftLegband
+Pattern.prototype.draftLegbandkeystone = draftLegbandkeystone
 Pattern.prototype.draftWaistband = draftWaistband
 Pattern.prototype.draftPocketfacing = draftPocketfacing
 Pattern.prototype.draftPocket = draftPocket

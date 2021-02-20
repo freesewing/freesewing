@@ -11,10 +11,10 @@ export default {
   tags: ['pants'],
   optionGroups: {
     fit: ['fullness','waistReduction'],
-    style: ['waistbandBelowWaist','cuffStyle','cuffWidth'],
+    style: ['waistbandBelowWaist','cuffStyle','cuffWidth','ventLength'],
     advanced: ['bandBelowKnee', 'kneeToBelow']
   },
-  parts: ['frontpoints','back','front','waistband','legband','pocket','pocketfacing'],
+  parts: ['frontpoints','back','front','waistband','legband','legbandkeystone','pocket','pocketfacing'],
   inject: {
     front: 'frontpoints',
     back: 'frontpoints',
@@ -24,8 +24,9 @@ export default {
   measurements: ['waist', 'hips', 'inseam', 'seat', 'waistToKnee', 'waistToHips', 'waistToFloor', 'knee'],
   dependencies: {
     back: 'front',
-    legband: 'front',
-    waistband: ['back', 'front']
+    legband: ['back','front'],
+    legbandkeystone: ['back','front'],
+    waistband: ['back','front']
   },
   hide: ['frontpoints'],
   options: {
@@ -42,12 +43,13 @@ export default {
     pctKtoRup: 0.25,
     pctKtoH: 0.70,
     pctSeatAdjustment: 0.50,  
-    kneeToBelow: { pct: 92, min: 85, max: 110 },
+    kneeToBelow: { pct: 94, min: 85, max: 110 },
+    ventLength: { pct: 70, min: 50, max: 110 },
     fullness: { pct: 0, min: 0, max: 55 },
     waistbandBelowWaist: { pct: 5, min: 0, max: 15 },
     waistReduction: { pct: 1, min: -2, max: 10 },
     cuffWidth: { pct: 0, min: -50, max: 150 },
-    cuffStyle: { dflt: 'traditional', list: [ 'traditional', 'elegant' ]},
+    cuffStyle: { dflt: 'traditional', list: [ 'traditional', 'elegant', 'keystone' ]},
     bandBelowKnee: {pct: 25, min: 15, max: 50 },
   }
 }

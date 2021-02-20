@@ -73,7 +73,6 @@ export default function (part) {
         .join( paths.seam.offset(sa) )
         .line( points.pB )
         .attr('class', 'fabric sa')
-
     }
   }
 

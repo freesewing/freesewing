@@ -20,6 +20,7 @@ export default function (part) {
   let halfInch = store.get( 'halfInch' );
   let ventLength = store.get( 'ventLength' );
   let waist = store.get( 'waist' );
+  let keystone = (options.cuffStyle == 'keystone');
 
   let flyWidth = 3.5
 
@@ -56,6 +57,8 @@ export default function (part) {
     .line(points.pZ)
     .attr('class', 'fabric dashed')
 
+  store.set( 'frontWaistLength', paths.waistSeam.line( points.flyTop ).length() );
+
   paths.crotchSeam = new Path()
     .move(points.pZ)
     .curve(points.pZcpR,points.pRcpZ, points.pR)
@@ -81,20 +84,24 @@ export default function (part) {
     .curve(points.pKcpH,points.pJcpH, points.pJ)
     .setRender( false )
 
+  store.set( 'frontLegSeam', paths.legSeam.length() );
+
   // Keystone original:
   // The keystone design has the slit in the cuff to the front. I deviated from
   // this for comfort and ease of construction preferences. The 'slit' is now
   // part of the side seam.
-  // points.pSlitBottom = paths.legSeam.shiftAlong( paths.legSeam.length() - (halfInch *4));
-  // points.pSlitTop = points.pSlitBottom.shift( 90, halfInch *4 );
-  // store.set( 'slitDistance', paths.legSeam.length() - (halfInch *4) );
+  if( keystone ) {
+    points.pSlitBottom = paths.legSeam.shiftAlong( paths.legSeam.length() - (halfInch *4));
+    points.pSlitTop = points.pSlitBottom.shift( 90, halfInch *5 *options.ventLength );
+    store.set( 'slitDistance', paths.legSeam.length() - (halfInch *4) );
+  }
 
   // paths.waistSeam = new Path()
   //   .move(points.pU)
   //   .line(points.pD)
   //   .line(points.pW)
 
-  store.set( 'frontWaistLength', paths.waistSeam.length() );
+  // store.set( 'frontWaistLength', paths.waistSeam.length() );
 
   points.pocketWaist = paths.waistSeam.shiftAlong( waist /2 /4.5 );
   points.pocketSide = paths.sideSeam.shiftAlong( paths.sideSeam.length() -(waist /2 /4.5 *3.5) );
@@ -120,27 +127,28 @@ export default function (part) {
 
 
   if( complete ) {
-    // Keystone original (see above):
-    // paths.slit = new Path()
-    //   .move( points.pSlitBottom )
-    //   .line( points.pSlitTop )
-    //   .attr('class', 'fabric')
-    //   .attr("data-text", "slit")
-    //   .attr("data-text-class", "text-xs center");
-    // snippets.n1 = new Snippet( 'notch', points.pSlitBottom );
-
-    tempP = paths.sideSeam.shiftAlong( ventLength );
     snippets.n1 = new Snippet( 'notch', points.pK );
     snippets.n2 = new Snippet( 'notch', points.pJ );
-    snippets.n3 = new Snippet( 'notch', tempP );
-    snippets.n4 = new Snippet( 'notch', points.pocketWaist );
-    snippets.n5 = new Snippet( 'notch', points.pocketSide );
+    snippets.n3 = new Snippet( 'notch', points.pocketWaist );
+    snippets.n4 = new Snippet( 'notch', points.pocketSide );
 
-    paths.vent = paths.sideSeam.split( tempP )[0];
-    paths.vent.attr("data-text", "Vent").attr("data-text-class", "center").attr('class', 'fabric sa');
-
-    //snippets.n3 = new Snippet( 'notch', points.pB );
-    // snippets.n4 = new Snippet( 'notch', points.pL );
+    // Keystone original (see above):
+    if( keystone ) {
+      paths.slit = new Path()
+        .move( points.pSlitBottom )
+        .line( points.pSlitTop )
+        .attr('class', 'fabric')
+        .attr("data-text", "vent")
+        .attr("data-text-class", "text-xs center");
+      snippets.n6 = new Snippet( 'notch', points.pSlitBottom );
+      tempP = points.pSlitTop;
+    } else {
+      tempP = paths.sideSeam.shiftAlong( ventLength );
+      paths.vent = paths.sideSeam.split( tempP )[0]
+        .attr("data-text", "vent")
+        .attr("data-text-class", "text-xs center");
+    }
+    snippets.n5 = new Snippet( 'notch', tempP );
 
     points.logo = points.pE.clone();
     snippets.logo = new Snippet('logo', points.logo)
@@ -179,16 +187,18 @@ export default function (part) {
       y: points.pJ.y -15
     })
     // Keystone original (see above):
-    // macro('hd', {
-    //   from: points.pSlitBottom,
-    //   to: points.pJ,
-    //   y: points.pJ.y -30
-    // })
-    // macro('vd', {
-    //   from: points.pSlitTop,
-    //   to: points.pSlitBottom,
-    //   x: points.pSlitTop.x +15
-    // })
+    if( keystone ) {
+      macro('hd', {
+        from: points.pSlitBottom,
+        to: points.pJ,
+        y: points.pJ.y -30
+      })
+      macro('vd', {
+        from: points.pSlitTop,
+        to: points.pSlitBottom,
+        x: points.pSlitTop.x +15
+      })
+    }
     macro('vd', {
       from: points.pW,
       to: points.pR,
