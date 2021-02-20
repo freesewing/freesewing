@@ -1,11 +1,13 @@
-unreleased:
-  date: 2021-02-14
+2.13.2:
+  date: 2021-02-20
 
   Fixed:
     paco:
       - Only add paperless dimensions for pockets if we drafted pockets
     pattern-info:
       - Make pattern list alphabetic
+    simone:
+      - Fixed type in bustsidecode finder code
     titan:
       - Always ensure point waistIn is created in back part
 

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## 2.13.2 (2021-02-20)
+
+### Fixed
+
+ - Fixed type in bustsidecode finder code
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

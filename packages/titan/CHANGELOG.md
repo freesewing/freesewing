@@ -1,6 +1,12 @@
 # Change log for: @freesewing/titan
 
 
+## 2.13.2 (2021-02-20)
+
+### Fixed
+
+ - Always ensure point waistIn is created in back part
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

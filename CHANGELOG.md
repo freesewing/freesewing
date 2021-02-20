@@ -1,6 +1,33 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.13.2 (2021-02-20)
+
+### paco
+
+#### Fixed
+
+ - Only add paperless dimensions for pockets if we drafted pockets
+
+### pattern-info
+
+#### Fixed
+
+ - Make pattern list alphabetic
+
+### simone
+
+#### Fixed
+
+ - Fixed type in bustsidecode finder code
+
+### titan
+
+#### Fixed
+
+ - Always ensure point waistIn is created in back part
+
+
 ## 2.13.1 (2021-02-14)
 
 ### hortensia
