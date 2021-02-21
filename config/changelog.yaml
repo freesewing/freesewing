@@ -1,11 +1,17 @@
 2.13.2:
-  date: 2021-02-20
+  date: 2021-02-21
 
   Fixed:
+    bella:
+      - Fixed issue with out-of-order execution
+    create-freesewing-pattern:
+      - Updated chat link from gitter to discord
     paco:
       - Only add paperless dimensions for pockets if we drafted pockets
     pattern-info:
       - Make pattern list alphabetic
+    penelope:
+      - Fixed issue in shape part
     simone:
       - Fixed type in bustsidecode finder code
     titan:
