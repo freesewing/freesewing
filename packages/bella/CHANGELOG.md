@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bella
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Fixed issue with out-of-order execution
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

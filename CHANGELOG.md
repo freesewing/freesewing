@@ -1,7 +1,19 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.13.2 (2021-02-20)
+## 2.13.2 (2021-02-21)
+
+### bella
+
+#### Fixed
+
+ - Fixed issue with out-of-order execution
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated chat link from gitter to discord
 
 ### paco
 
@@ -14,6 +26,12 @@
 #### Fixed
 
  - Make pattern list alphabetic
+
+### penelope
+
+#### Fixed
+
+ - Fixed issue in shape part
 
 ### simone
 
