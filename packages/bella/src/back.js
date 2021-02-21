@@ -69,10 +69,6 @@ export default function (part) {
     armholeDepth
   )
   let extra = 0
-  if (dartArmholeDepth) {
-    points.dartLeftArmhole = dartArmholeDepth
-    extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
-  }
   points.cbArmhole = utils.curveIntersectsY(
     points.cbNeck,
     points.cbNeckCp2,
@@ -80,6 +76,10 @@ export default function (part) {
     points.waistCenter,
     armholeDepth
   )
+  if (dartArmholeDepth) {
+    points.dartLeftArmhole = dartArmholeDepth
+    extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
+  }
   points.armhole = new Point(
     (measurements.underbust / 4) * (1 + options.chestEase) + extra,
     armholeDepth
