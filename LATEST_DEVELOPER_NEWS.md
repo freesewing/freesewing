@@ -1,9 +1,9 @@
-##### Next contributor call: Saturday 20 February
+##### Next contributor call: Saturday 6 March
 
-Note that the next contributor call is on Saturday the 20th of January.
+Note that the next contributor call is on Saturday the 6th of March.
 
 For details and timing (including different time zones) 
-check [issue #744](https://github.com/freesewing/freesewing/issues/846).
+check [issue #878](https://github.com/freesewing/freesewing/issues/878).
 
 
 ##### Project board: Our overall todo list
