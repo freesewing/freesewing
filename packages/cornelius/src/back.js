@@ -202,13 +202,6 @@ export default function (part) {
 
   let tempP = null;
 
-  // points.tr = new Point( 150, -100 );
-  // points.tl = new Point( -400, -100 );
-  // points.br = new Point( 150, 800 );
-  // points.bl = new Point( -400, 800 );
-  // paths.box = new Path().move(points.tr).line(points.tl).line(points.bl).line(points.br).close().attr('class', 'lining dotted stroke-sm');
-
-
   let waist = store.get( 'waist' );
   let seat = store.get( 'seat' );
   let halfInch = store.get( 'halfInch' );
@@ -227,7 +220,6 @@ export default function (part) {
   points.p2a = points.p2.shiftTowards( points.p4, halfInch )
   
   tempP = points.p6.shiftTowards( points.pT, 1000 );
-  console.log(tempP);
   // let pathFto2a = new Path().move(points.pX).line(points.p2a);
   let pathFto2a = new Path().move(points.pF).line(points.p2a);
   // let pathFto2a = new Path().move(points.pV).line(points.p2a);
@@ -249,7 +241,6 @@ export default function (part) {
     .curve(points.p2cp5,points.p5cp2, points.p5)
     .curve(points.p5cp3,points.p3cp5, points.p3)
 
-  // tempP = points.pH.shift(90, halfInch *1.5 )
   if( traditional ) {
     tempP = points.pH.shift(90, halfInch *2)
   } else {
@@ -261,7 +252,6 @@ export default function (part) {
   paths.legSeam = new Path()
     .move(points.p10)
     .curve(points.p10cpH,points.p11cpH, points.p11)
-
   store.set( 'backLegSeam', paths.legSeam.length() );
   
   paths.waistSeam = new Path()

@@ -23,6 +23,7 @@ export default function (part) {
   let keystone = (options.cuffStyle == 'keystone');
 
   let flyWidth = 3.5
+  store.set( 'flyWidth', flyWidth );
 
   // paths.sideSeam = new Path()
   //   .move(points.pJ)

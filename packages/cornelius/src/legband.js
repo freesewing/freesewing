@@ -53,14 +53,9 @@ export default function (part) {
   frontLeg = frontLeg *(traditional ? options.kneeToBelow : 1)
   let flapRatio = (flapLength) / (backLeg)
 
-  console.log( 'knee: ' +measurements.knee )
-  //console.log( 'belowKnee: ' +belowKnee )
-  
   let angle = findR( halfInch /4 *5, backLeg /*belowKnee /2*/)
   let angleR = angle /(180 / Math.PI)
   let radius = ( backLeg /*belowKnee /2*/ ) / angleR
-  console.log('angle: ' +angle );
-  console.log('radius: ' +radius );
 
   points.pA = new Point( 0, 0 );
   points.pB = points.pA.shift( 270, frontLeg /* belowKnee /2 */ );
