@@ -9,7 +9,6 @@ function rotateDistanceForP3(part, point, distance, center) {
   } = part.shorthand();
 
   let length = store.get('insideSeam');
-  let traditional = (options.cuffStyle == 'traditional');
   
   let dCenter = point.dist(center);
   let angle = Math.atan( distance / dCenter ) * (180 /Math.PI);
@@ -118,9 +117,8 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
     //if( options.fullness > 0.30 ) {
       points.p6 = points.p6.shift( points.pJ.angle( points.pT ) -angleChange -90, halfInch *options.fullness*2)
       points.p7 = points.p7.shift( points.pJ.angle( points.pA ) -angleChange -90, halfInch *options.fullness*2)
-  
     //}
-    console.log( points.p7);
+    // console.log( points.p7);
 
     aCPu = points.p7.dist( points.p4 ) *options.pctAtoO;
     aCPj = points.p7.dist( points.p11 ) *options.pctAtoC;
@@ -214,7 +212,7 @@ export default function (part) {
     
   points.p11 = points.pJ.shiftTowards( points.pH, -halfInch )
 
-  console.log( 'Pu -> Pj: ' + points.pU.angle( points.pJ ));
+  // console.log( 'Pu -> Pj: ' + points.pU.angle( points.pJ ));
   rotateDistanceForP4( part, points.pU, -1*(waist/2 +halfInch), points.p11, points.p2 )
 
   points.p2a = points.p2.shiftTowards( points.p4, halfInch )
@@ -267,13 +265,14 @@ export default function (part) {
     .close()
     .attr('class', 'fabric')
 
+  points.topOfVent = paths.sideSeam.shiftAlong( ventLength );
+
   if( complete ) {
-    tempP = paths.sideSeam.shiftAlong( ventLength );
     snippets.n1 = new Snippet( 'notch', points.p10 );
     snippets.n2 = new Snippet( 'notch', points.p11 );
-    snippets.n3 = new Snippet( 'notch', tempP );
+    snippets.n3 = new Snippet( 'notch', points.topOfVent );
 
-    paths.vent = paths.sideSeam.split( tempP )[0];
+    paths.vent = paths.sideSeam.split( points.topOfVent )[0];
     paths.vent.attr("data-text", "Vent").attr("data-text-class", "center").attr('class', 'fabric sa');
 
     points.logo = points.pE.clone();
@@ -295,6 +294,10 @@ export default function (part) {
 
   // Paperless?
   if (paperless) {
+    macro('ld', {
+      from: points.topOfVent,
+      to: points.p11
+    })
     macro('ld', {
       from: points.p2,
       to: points.p4,

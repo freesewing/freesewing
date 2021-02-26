@@ -1,5 +1,3 @@
-import { loadOptions } from "@babel/core";
-
 export default function (part) {
   let {
     options,
@@ -117,7 +115,6 @@ export default function (part) {
 
   points.pocketSide = paths.sideSeam.shiftAlong( paths.sideSeam.length() -(waist /2 /4.5 *3.5) );
   points.pocketFacingBR = paths.sideSeam.shiftAlong( paths.sideSeam.length() -(waist /2 /4.5 *3.5) -(halfInch *3));
-
 
   return part;
 }

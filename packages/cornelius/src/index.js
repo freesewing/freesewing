@@ -14,7 +14,6 @@ import draftPocket from './pocket'
 // Create new design
 const Pattern = new freesewing.Design(config, plugins)
 
-// console.log( Pattern );
 // Attach the draft methods to the prototype
 Pattern.prototype.draftFrontpoints = draftFrontpoints
 Pattern.prototype.draftFront = draftFront
@@ -25,6 +24,5 @@ Pattern.prototype.draftWaistband = draftWaistband
 Pattern.prototype.draftPocketfacing = draftPocketfacing
 Pattern.prototype.draftPocket = draftPocket
 // Pattern.prototype.draftPlacket = draftPlacket
-// console.log( Pattern );
 
 export default Pattern

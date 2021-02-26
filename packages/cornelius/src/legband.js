@@ -11,8 +11,12 @@ function findR( height, arcLength ) {
     }
     diff = a*height/(1-Math.cos(a/2))-arcLength
     iter ++;
-    console.log( {iter, diff, a} );
-  } while( (diff < -0.1 || diff > 0.1) && iter < 1000 )
+    // console.log( {iter, diff, a} );
+  } while( (diff < -0.1 || diff > 0.1) && iter < 500 )
+  if( iter >= 500 ) {
+    raise.error( 'Could not find the radius for the legband within 500 iterations');
+  }
+
   return( a * (180 / Math.PI) );
 }
 
@@ -124,7 +128,6 @@ export default function (part) {
     snippets.n3 = new Snippet( 'notch', points.pC );
   
     points.logo = points.pA.shiftFractionTowards( points.pE, .50 ) //.shift(180,70).shift(270,30);
-    console.log( points.logo );
     snippets.logo = new Snippet( 'logo', points.logo );
     points.title = points.logo.shift(270, 70)
     macro('title', {

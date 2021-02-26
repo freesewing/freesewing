@@ -7,7 +7,7 @@ export default {
   code: 'Wouter Van Wageningen',
   department: 'unisex',
   type: 'pattern',
-  difficulty: 6,
+  difficulty: 3,
   tags: ['pants'],
   optionGroups: {
     fit: ['fullness','waistReduction'],

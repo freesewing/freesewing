@@ -25,10 +25,6 @@ export default function (part) {
   let flyWidth = 3.5
   store.set( 'flyWidth', flyWidth );
 
-  // paths.sideSeam = new Path()
-  //   .move(points.pJ)
-  //   .curve(points.pJcpA,points.pAextraCPj, points.pAextra)
-  //   .curve(points.pAextraCPu,points.pUcpA, points.pU)
   store.set( 'sideSeam', paths.sideSeam.length() );
 
   points.pZcpR = points.pZ.shiftFractionTowards( points.pX, options.pctZtoR)
@@ -97,13 +93,6 @@ export default function (part) {
     store.set( 'slitDistance', paths.legSeam.length() - (halfInch *4) );
   }
 
-  // paths.waistSeam = new Path()
-  //   .move(points.pU)
-  //   .line(points.pD)
-  //   .line(points.pW)
-
-  // store.set( 'frontWaistLength', paths.waistSeam.length() );
-
   points.pocketWaist = paths.waistSeam.shiftAlong( waist /2 /4.5 );
   points.pocketSide = paths.sideSeam.shiftAlong( paths.sideSeam.length() -(waist /2 /4.5 *3.5) );
 
@@ -125,7 +114,7 @@ export default function (part) {
     .close()
     .attr('class', 'fabric')
 
-
+  points.topOfVent = paths.sideSeam.shiftAlong( ventLength );
 
   if( complete ) {
     snippets.n1 = new Snippet( 'notch', points.pK );
@@ -149,7 +138,7 @@ export default function (part) {
         .attr("data-text", "vent")
         .attr("data-text-class", "text-xs center");
     }
-    snippets.n5 = new Snippet( 'notch', tempP );
+    snippets.n5 = new Snippet( 'notch', points.topOfVent );
 
     points.logo = points.pE.clone();
     snippets.logo = new Snippet('logo', points.logo)
@@ -173,10 +162,24 @@ export default function (part) {
 
   // Paperless?
   if (paperless) {
+    macro('ld', {
+      from: points.topOfVent,
+      to: points.pJ
+    })
+    macro('hd', {
+      from: points.pocketSide,
+      to: points.pocketWaist,
+      y: points.pocketWaist.y +15
+    })
     macro('hd', {
       from: points.pW,
-      to: points.pU,
-      y: points.pU.y +15
+      to: points.pocketWaist,
+      y: points.pocketWaist.y +15
+    })
+    macro('hd', {
+      from: points.pocketWaist,
+      to: points.flyTop,
+      y: points.pocketWaist.y +15
     })
     macro('hd', {
       from: points.pAextra,
@@ -201,6 +204,11 @@ export default function (part) {
       })
     }
     macro('vd', {
+      from: points.pocketSide,
+      to: points.pocketWaist,
+      x: points.pocketSide.x
+    })
+    macro('vd', {
       from: points.pW,
       to: points.pR,
       x: points.pR.x
@@ -217,8 +225,8 @@ export default function (part) {
     })
     macro('vd', {
       from: points.pJ,
-      to: points.pU,
-      x: points.pU.x -15
+      to: points.pocketWaist,
+      x: points.pocketWaist.x
     })
   }
 
