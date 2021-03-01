@@ -155,6 +155,12 @@ export default function (part) {
     points.scaleboxAnchor = points.pD.shift(270,60)
     macro('scalebox', { at: points.scaleboxAnchor })
 
+    macro('grainline', {
+      from: points.pocketBL.shiftFractionTowards( points.pocketTL, -0.90 ),
+      to: points.pocketTL
+    })
+
+
     if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

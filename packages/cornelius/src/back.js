@@ -287,6 +287,13 @@ export default function (part) {
     points.__titleName.attr('data-text-class', 'center')
     points.__titlePattern.attr('data-text-class', 'center')
 
+    let angle = points.p11.angle( points.p4 )
+    let dist = points.p11.dist( points.p4 )
+    macro('grainline', {
+      from: points.pA.shift( angle, dist * 0.35 ),
+      to: points.pA.shift( angle +180, dist * 0.35 ),
+    })
+
     if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

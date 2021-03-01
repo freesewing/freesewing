@@ -49,7 +49,7 @@ export default {
     waistbandBelowWaist: { pct: 5, min: 0, max: 15 },
     waistReduction: { pct: 1, min: -2, max: 10 },
     cuffWidth: { pct: 0, min: -50, max: 150 },
-    cuffStyle: { dflt: 'traditional', list: [ 'traditional', 'elegant', 'keystone' ]},
+    cuffStyle: { dflt: 'elegant', list: [ 'traditional', 'elegant', 'keystone' ]},
     bandBelowKnee: {pct: 25, min: 15, max: 50 },
   }
 }

@@ -1,4 +1,8 @@
-function findR( height, arcLength ) {
+function findR( part, height, arcLength ) {
+  let {
+    raise
+  } = part.shorthand()
+
   let iter = 0;
   let a = 0.5;
   let diff = a*height/(1-Math.cos(a/2))-arcLength
@@ -57,16 +61,15 @@ export default function (part) {
   frontLeg = frontLeg *(traditional ? options.kneeToBelow : 1)
   let flapRatio = (flapLength) / (backLeg)
 
-  let angle = findR( halfInch /4 *5, backLeg /*belowKnee /2*/)
-  let angleR = angle /(180 / Math.PI)
-  let radius = ( backLeg /*belowKnee /2*/ ) / angleR
-
   points.pA = new Point( 0, 0 );
   points.pB = points.pA.shift( 270, frontLeg /* belowKnee /2 */ );
   points.pE = points.pB.shift( 0, cuffWidth );
   points.pF = points.pA.shift( 0, cuffWidth );
 
   if( traditional ) {
+    let angle = findR( part, halfInch /4 *5, backLeg /*belowKnee /2*/)
+    let angleR = angle /(180 / Math.PI)
+    let radius = ( backLeg /*belowKnee /2*/ ) / angleR
     points.pC = points.pB.shift( 270 -angle/2, 2 * radius * Math.sin(angleR/2) );
     points.pBcpC = points.pB.shift( 270, radius *cc /2);
     points.pCcpB = points.pC.shift( 90 -angle, radius *cc /2);

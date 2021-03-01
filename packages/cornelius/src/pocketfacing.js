@@ -1,6 +1,7 @@
 export default function (part) {
   let {
     Path,
+    Point,
     points,
     paths,
     Snippet,
@@ -53,6 +54,10 @@ export default function (part) {
     // points.__titleNr.attr('data-text-class', 'center')
     // points.__titleName.attr('data-text-class', 'center')
     // points.__titlePattern.attr('data-text-class', 'center')
+    macro('grainline', {
+      from: points.pU,
+      to: new Point( points.pU.x, points.__titleNr.y ),
+    })
 
     if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
