@@ -16,13 +16,16 @@
   "scripts": {
     "build": "echo \"prettier-config: No build required\" && exit 0"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "index.json",
     "package.json"
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",
