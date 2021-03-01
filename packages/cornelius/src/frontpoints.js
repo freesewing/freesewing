@@ -29,23 +29,6 @@ export default function (part) {
     waistAdjustment = (measurements.waist - measurements.seat) /4;
   }
 
-  // console.log( 'measurements.waist: ' +measurements.waist);
-  // console.log( 'measurements.seat: ' +measurements.seat);
-  // console.log( 'measurements.waistToKnee: ' +(waistToKnee/2.54));
-  // console.log( 'measurements.waistToFloor: ' +(waistToFloor/2.54));
-  // console.log( 'measurements.floorToKnee: ' +((waistToFloor-waistToKnee)/2.54));
-  // console.log( 'measurements.inseam: ' +(measurements.inseam/2.54));
-  // console.log( 'inseam: ' +(inseam/2.54));
-  // console.log( 'waist to inseam: ' +((waistToKnee -inseam)/2.54));
-  // console.log( 'inseam*bandBelowKnee: ' +inseam*options.bandBelowKnee);
-  // console.log( 'seat /4: ' +seat /4)
-
-  // points.tr = new Point( 30, -30 );
-  // points.tl = new Point( -700, -30 );
-  // points.br = new Point( 30, 800 );
-  // points.bl = new Point( -700, 800 );
-  // paths.box = new Path().move(points.tr).line(points.tl).line(points.bl).line(points.br).close().attr('class', 'lining dotted stroke-sm');
-
   points.pO = new Point( 0, 0 )
   points.pB = points.pO.shift( 270, waistToKnee -waistDown)
   points.pA = points.pB.shift( 90, inseam)
