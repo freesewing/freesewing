@@ -11,6 +11,7 @@ carlton: 'A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long 
 cathrin: 'A FreeSewing pattern for a underbust corset / waist trainer'
 components: 'A collection of React components for FreeSewing web UIs'
 core: 'A library for creating made-to-measure sewing patterns'
+cornelius: 'A FreeSewing pattern for cycling breeches, based on the Keystone drafting system'
 create-freesewing-pattern: 'Initializer package for FreeSewing patterns: npm init FreeSewing-pattern'
 css-theme: 'A CSS theme for FreeSewing web UIs'
 diana: 'A FreeSewing pattern for a top with a draped neck'
