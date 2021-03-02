@@ -33,9 +33,10 @@ export default function (part) {
   // Complete pattern?
   if (complete) {
     paths.facing.render = true
-    macro('grainline', {
-      from: points.cfRibbing.shift(0, 15),
-      to: points.pocketCf.shift(0, 15)
+    macro('cutonfold', {
+      from: points.pocketCf,
+      to: points.cfRibbing,
+      grainline: true
     })
     points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
     macro('title', { at: points.title, nr: 4, title: 'pocket' })
