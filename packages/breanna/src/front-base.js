@@ -78,14 +78,20 @@ export default (part) => {
     // Angle from bustpoint towards armhole and armholePitch
     let angle1 = points.bustPoint.angle(points.armhole)
     let angle2 = points.bustPoint.angle(points.armholePitch)
+    let isectStart = points.bustPoint.shift(
+      angle1 + (angle2 - angle1) / 2,
+      measurements.highBustFront * 6.66
+    )
+    let isectEnd = isectStart.shiftFractionTowards(points.bustPoint, 2)
     points.scyeDart1 = utils.lineIntersectsCurve(
-      points.bustPoint,
-      points.bustPoint.shift(angle1 + (angle2 - angle1) / 2, measurements.highBustFront * 0.666),
+      isectStart,
+      isectEnd,
       points.armhole,
       points.armholeCp2,
       points.armholePitchCp1,
       points.armholePitch
     )
+
     // How much should this dart be?
     let scyeDartWidth =
       (measurements.bustFront - measurements.highBustFront) * options.frontScyeDart
@@ -103,7 +109,6 @@ export default (part) => {
       points.bustPoint
     )
   }
-
   // Store bust dart angle and armhole length
   store.set(
     'bustDartAngle',

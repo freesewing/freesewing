@@ -34,7 +34,7 @@ function dartCalcBack(options, seatWaistDiff, nrOfDarts) {
   )
 }
 
-function dartCalc(options, seat, seatEase, waist, waistEase) {
+function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   seat += seatEase
   waist += waistEase
   let seatWaistDiff = Math.max(seat - waist, 0)
@@ -90,9 +90,9 @@ function dartCalc(options, seat, seatEase, waist, waistEase) {
   });
   */
 
-  options.frontDartSize = frontDartSize
-  options.backDartSize = backDartSize
-  options.nrOfDarts = nrOfDarts
+  store.set('frontDartSize', frontDartSize )
+  store.set('backDartSize', backDartSize )
+  store.set('nrOfDarts', nrOfDarts )
 }
 
 /**
@@ -137,11 +137,7 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
     .curve(rightDartCP, curvePaths[1].ops[1].cp2, curvePaths[1].ops[1].to)
     .setRender(false)
 
-  let dart = new part.Path()
-    .move(dartLeft)
-    .line(dartBottom)
-    .line(dartRight)
-    .setRender(false)
+  let dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).setRender(false)
 
   let curveWithDart = {
     left: curveLeftOfDart,

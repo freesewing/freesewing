@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { options, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   let height = options.waistbandWidth + 30

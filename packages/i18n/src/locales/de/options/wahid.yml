@@ -25,7 +25,7 @@ hemStyle:
   description: Art des vorderen Saums
 hemRadius:
   title: Saumradius
-  desciption: Der Betrag, um den der Saum gerundet ist
+  description: Radius by which the hem is rounded
 backInset:
   title: Rückseite Ausschnitt
   description: Wie viel die Rückseite des Armlochs nach innen verschoben ist

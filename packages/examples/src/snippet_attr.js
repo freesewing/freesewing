@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, Snippet, snippets } = part.shorthand()
 
   points.anchor = new Point(50, 15)

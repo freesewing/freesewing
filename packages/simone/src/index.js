@@ -13,16 +13,16 @@ import draftFbaFront from './fba-front'
 const Pattern = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin, bustPlugin])
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function(part) {
+Pattern.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function(part) {
+Pattern.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function(part) {
+Pattern.prototype.draftSleeveBase = function (part) {
   let brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
@@ -45,7 +45,7 @@ let simonParts = [
 ]
 
 for (let Part of simonParts) {
-  Pattern.prototype[`draft${Part}`] = function(part) {
+  Pattern.prototype[`draft${Part}`] = function (part) {
     let simon = new Simon(this.settings)
     return simon[`draft${Part}`](part)
   }

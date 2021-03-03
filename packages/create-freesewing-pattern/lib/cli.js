@@ -59,7 +59,7 @@ module.exports = async () => {
     templatePath: program.templatePath,
     skipPrompts: program.skipPrompts,
     git: program.git,
-    freesewing_version,
+    freesewing_version
   }
 
   Object.keys(opts).forEach((key) => {
@@ -97,7 +97,7 @@ ${strings[params.language]['cfp.devDocsAvailableAt']}
   ${chalk.bold('https://freesewing.dev/')}
 
 ${strings[params.language]['cfp.talkToUs']}
-  ${chalk.bold('https://gitter.im/freesewing/development')}
+  ${chalk.bold('https://chat.freesewing.org/')}
 
 `)
 

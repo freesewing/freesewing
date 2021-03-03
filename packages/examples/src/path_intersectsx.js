@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
 
   points.A = new Point(95, 50)
@@ -12,10 +12,7 @@ export default part => {
   points.top = new Point(60, -10)
   points.bot = new Point(60, 140)
 
-  paths.line = new Path()
-    .move(points.top)
-    .line(points.bot)
-    .attr('class', 'lining dashed')
+  paths.line = new Path().move(points.top).line(points.bot).attr('class', 'lining dashed')
 
   paths.demo = new Path()
     .move(points.A)

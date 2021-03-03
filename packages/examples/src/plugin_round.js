@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, macro } = part.shorthand()
 
   points.topLeft = new Point(0, 0)

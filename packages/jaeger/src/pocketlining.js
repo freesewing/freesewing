@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand()
 
   // Adapt length

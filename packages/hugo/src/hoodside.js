@@ -75,7 +75,10 @@ export default function (part) {
   if (complete) {
     if (sa) {
       // Reversing this curve sidesteps a bezierjs edge case
-      paths.sa = paths.seam.reverse().offset(sa * -1)
+      paths.sa = paths.seam
+        .reverse()
+        .offset(sa * -1)
+        .attr('class', 'fabric sa')
     }
     points.title = points.hoodTop.shift(-90, 50)
     macro('title', { at: points.title, nr: 6, title: 'hoodSide' })

@@ -27,12 +27,12 @@ export default function (part) {
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr('class', 'fabric')
+    .attr('class', 'various')
 
   // Complete pattern?
   if (complete) {
     if (sa) {
-      paths.sa = paths.seam.offset(sa)
+      paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
     }
     points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
     macro('title', { at: points.title, nr: 9, title: 'cuff' })

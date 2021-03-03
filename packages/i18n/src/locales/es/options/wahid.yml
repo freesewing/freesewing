@@ -25,7 +25,7 @@ hemStyle:
   description: Estilo del dobladillo delantero
 hemRadius:
   title: Radio del dobladillo
-  desciption: Radio por el que el dobladillo es redondeado
+  description: Radius by which the hem is rounded
 backInset:
   title: Inserción trasera
   description: Cuánto de la parte de atrás de la sisa se corta hacia el interior

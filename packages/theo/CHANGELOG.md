@@ -1,6 +1,12 @@
 # Change log for: @freesewing/theo
 
 
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Check for intersection returning an array
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

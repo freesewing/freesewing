@@ -25,22 +25,22 @@ import draftUnderSleeve from './undersleeve'
 const Pattern = new freesewing.Design(config, [plugins, buttons])
 
 // Attach draft methods from Bent to prototype
-Pattern.prototype.draftBentBase = function(part) {
+Pattern.prototype.draftBentBase = function (part) {
   return new Bent(this.settings).draftBase(part)
 }
-Pattern.prototype.draftBentFront = function(part) {
+Pattern.prototype.draftBentFront = function (part) {
   return new Bent(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBentBack = function(part) {
+Pattern.prototype.draftBentBack = function (part) {
   return new Bent(this.settings).draftBack(part)
 }
-Pattern.prototype.draftBentSleeve = function(part) {
+Pattern.prototype.draftBentSleeve = function (part) {
   return new Bent(this.settings).draftSleeve(part)
 }
-Pattern.prototype.draftBentTopSleeve = function(part) {
+Pattern.prototype.draftBentTopSleeve = function (part) {
   return new Bent(this.settings).draftTopSleeve(part)
 }
-Pattern.prototype.draftBentUnderSleeve = function(part) {
+Pattern.prototype.draftBentUnderSleeve = function (part) {
   return new Bent(this.settings).draftUnderSleeve(part)
 }
 

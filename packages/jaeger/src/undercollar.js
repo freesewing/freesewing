@@ -5,7 +5,7 @@
  * experience, or more tailoring exprience.
  */
 
-export default function(part) {
+export default function (part) {
   let { paperless, sa, snippets, complete, points, macro, paths, Path } = part.shorthand()
 
   // Clean up
@@ -32,10 +32,7 @@ export default function(part) {
     })
 
     if (sa) {
-      paths.sa1 = new Path()
-        .move(points.collarstandCbTop)
-        .line(points.collarCbTop)
-        .offset(sa)
+      paths.sa1 = new Path().move(points.collarstandCbTop).line(points.collarCbTop).offset(sa)
       paths.sa2 = new Path()
         .move(points.collarstandTip)
         .line(points.notch)

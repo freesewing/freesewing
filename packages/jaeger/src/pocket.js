@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -66,10 +66,7 @@ export default function(part) {
       .close()
       .attr('class', 'fabric')
   }
-  paths.fold = new Path()
-    .move(points.topLeft)
-    .line(points.topRight)
-    .attr('class', 'fabric dashed')
+  paths.fold = new Path().move(points.topLeft).line(points.topRight).attr('class', 'fabric dashed')
 
   if (complete) {
     // Title

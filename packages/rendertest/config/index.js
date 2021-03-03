@@ -1,20 +1,20 @@
-import { version } from "../package.json";
+import { version } from '../package.json'
 
 export default {
-  name: "rendertest",
+  name: 'rendertest',
   version,
-  design: "Joost De Cock",
-  code: "Joost De Cock",
-  department: "womenswear",
-  type: "pattern",
+  design: 'Joost De Cock',
+  code: 'Joost De Cock',
+  department: 'womenswear',
+  type: 'pattern',
   difficulty: 1,
-  tags: ["example"],
+  tags: ['example'],
   optionGroups: {
-    size: ["width"],
-    content: ["colors", "circles", "text", "snippets", "macros"]
+    size: ['width'],
+    content: ['colors', 'circles', 'text', 'snippets', 'macros']
   },
   measurements: [],
-  parts: ["test"],
+  parts: ['test'],
   options: {
     width: { mm: 200, min: 50, max: 500 },
     colors: { bool: true },
@@ -24,4 +24,4 @@ export default {
     macros: { bool: true },
     widthHd: { bool: true }
   }
-};
+}

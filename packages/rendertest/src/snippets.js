@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, Path, points, paths, snippets, Snippet, store } = part.shorthand()
 
   let y = store.get('y')
@@ -14,10 +14,7 @@ export default function(part) {
   y += 10
   points.tl = new Point(0, y)
   points.tr = new Point(w, y)
-  paths.texts = new Path()
-    .move(points.tl)
-    .line(points.tr)
-    .attr('data-text', 'snippets')
+  paths.texts = new Path().move(points.tl).line(points.tr).attr('data-text', 'snippets')
   y += 10
   points['sl1'] = new Point(w * 0.25, y)
   points['sl2'] = new Point(w * 0.5, y)

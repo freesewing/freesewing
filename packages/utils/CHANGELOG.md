@@ -1,6 +1,12 @@
 # Change log for: @freesewing/utils
 
 
+## 2.13.1 (2021-02-14)
+
+### Added
+
+ - Pass pattern handle to tiler
+
 ## 2.7.1 (2020-07-24)
 
 ### Added

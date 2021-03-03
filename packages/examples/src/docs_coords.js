@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, points, paths, Path } = part.shorthand()
 
   points.origin = new Point(10, 10)

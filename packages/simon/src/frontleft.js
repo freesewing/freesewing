@@ -3,7 +3,7 @@ import frontLeftClassicSeperate from './frontleft-classic-seperate'
 import frontLeftClassicCuton from './frontleft-classic-cuton'
 import frontLeftSeamless from './frontleft-seamless'
 
-export default part => {
+export default (part) => {
   let { sa, options, complete, paperless, points, macro } = part.shorthand()
 
   if (complete && paperless) {

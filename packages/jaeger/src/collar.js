@@ -5,7 +5,7 @@
  * experience, or more tailoring exprience.
  */
 
-export default function(part) {
+export default function (part) {
   let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand()
 
   // Add extra fabric for collar roll

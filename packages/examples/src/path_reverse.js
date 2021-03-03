@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths } = part.shorthand()
 
   points.B = new Point(10, 30)

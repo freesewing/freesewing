@@ -15,19 +15,19 @@ import draftCuff from './cuff'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods from Brian to prototype
-Pattern.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function(part) {
+Pattern.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function(part) {
+Pattern.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleevecap = function(part) {
+Pattern.prototype.draftSleevecap = function (part) {
   return new Brian(this.settings).draftSleevecap(part)
 }
-Pattern.prototype.draftSleeveBase = function(part) {
+Pattern.prototype.draftSleeveBase = function (part) {
   return new Brian(this.settings).draftSleeve(part)
 }
 

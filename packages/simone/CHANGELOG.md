@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Fixed type in bustsidecode finder code
+
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Force bust dart intersection if not found initially
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

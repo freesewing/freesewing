@@ -39,13 +39,13 @@ export default function (part) {
       .line(points.bottomRight)
       .line(points.topRight)
       .line(points.topMidRight)
-      .attr('class', 'fabric')
+      .attr('class', 'various')
     paths.hint = new Path()
       .move(points.topMidLeft)
       .line(points.topMidRight)
       .move(points.bottomMidLeft)
       .line(points.bottomMidRight)
-      .attr('class', 'fabric dashed')
+      .attr('class', 'various dashed')
   } else {
     paths.seam = new Path()
       .move(points.topLeft)
@@ -53,14 +53,12 @@ export default function (part) {
       .line(points.bottomRight)
       .line(points.topRight)
       .close()
-      .attr('class', 'fabric')
+      .attr('class', 'various')
   }
 
   // Complete pattern?
   if (complete) {
-    if (sa) {
-      paths.sa = paths.seam.offset(sa)
-    }
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
     points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
     macro('title', { at: points.title, nr: 8, title: 'waistband' })
     macro('grainline', {

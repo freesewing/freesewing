@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths } = part.shorthand()
 
   points.sun = new Point(10, 5)
@@ -8,10 +8,7 @@ export default part => {
     .attr('data-text', points.sun.angle(points.moon) + '°')
     .attr('data-text-class', 'text-sm fill-note center')
 
-  paths.line = new Path()
-    .move(points.sun)
-    .line(points.moon)
-    .attr('class', 'dashed')
+  paths.line = new Path().move(points.sun).line(points.moon).attr('class', 'dashed')
 
   return part
 }

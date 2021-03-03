@@ -4,7 +4,7 @@
  * but gets complicated when doing it in code.
  */
 
-export default function(part) {
+export default function (part) {
   let { paperless, sa, complete, points, options, macro, paths, Path } = part.shorthand()
 
   // We're going to slash and spread this collar. Slashing first:
@@ -165,11 +165,7 @@ export default function(part) {
     .line(points.rot4bottomRight)
     .line(points.rot4topRight)
     ._curve(points.topLeftCp, points.topLeft)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.standTop)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
   if (complete) {
     points.title = points.standTopCp.clone()
@@ -179,9 +175,12 @@ export default function(part) {
       title: 'collar'
     })
 
-    macro('grainline', {
-      from: points.standTop.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+    // Remove grainline from collarstand part
+    delete paths.grainline
+    macro('cutonfold', {
+      from: points.topLeft,
+      to: points.standTop,
+      grainline: true
     })
 
     if (sa) {

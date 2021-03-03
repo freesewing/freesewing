@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     Point,
@@ -46,10 +46,7 @@ export default function(part) {
       })
     }
     if (sa) {
-      paths.sa = paths.seam
-        .offset(sa)
-        .attr('class', 'fabric sa')
-        .setRender(true)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
     }
     macro('title', {
       at: points.titleAnchor,

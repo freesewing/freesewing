@@ -1,6 +1,12 @@
 # Change log for: @freesewing/penelope
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Fixed issue in shape part
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

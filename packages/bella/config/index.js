@@ -10,30 +10,16 @@ export default {
   difficulty: 3,
   tags: ['block', 'top', 'basics'],
   optionGroups: {
-    fit: [
-      'chestEase',
-      'waistEase',
-      'bustSpanEase'
-    ],
-    darts: [
-      'backDartHeight',
-      'bustDartLength',
-      'waistDartLength',
-      'bustDartCurve'
-    ],
+    fit: ['chestEase', 'waistEase', 'bustSpanEase'],
+    darts: ['backDartHeight', 'bustDartLength', 'waistDartLength', 'bustDartCurve'],
     armhole: [
       'armholeDepth',
       'backArmholeSlant',
       'backArmholeCurvature',
       'frontArmholePitchDepth',
-      'backArmholePitchDepth',
+      'backArmholePitchDepth'
     ],
-    advanced: [
-      'backNeckCutout',
-      'backHemSlope',
-      'frontShoulderWidth',
-      'highBustWidth',
-    ]
+    advanced: ['backNeckCutout', 'backHemSlope', 'frontShoulderWidth', 'highBustWidth']
   },
   measurements: [
     'highBust',
@@ -89,6 +75,6 @@ export default {
     highBustWidth: { pct: 86, max: 92, min: 80 },
     bustDartLength: { pct: 90, min: 75, max: 100 },
     waistDartLength: { pct: 90, min: 75, max: 95 },
-    bustDartCurve: { pct: 100, min: 0, max: 100 },
+    bustDartCurve: { pct: 100, min: 0, max: 100 }
   }
 }

@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Snippet, snippets, utils } = part.shorthand()
 
   points.A = new Point(10, 10).attr('data-circle', 15).attr('data-circle-class', 'fabric')

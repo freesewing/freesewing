@@ -3,7 +3,7 @@ import frontRightClassicSeperate from './frontright-classic-seperate'
 import frontRightClassicCuton from './frontright-classic-cuton'
 import frontRightSeamless from './frontright-seamless'
 
-export default part => {
+export default (part) => {
   let { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
   macro('flip')
   if (complete) {

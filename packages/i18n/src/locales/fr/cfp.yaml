@@ -23,11 +23,11 @@ size: Taille
 noRequiredMeasurements: Ce patron n'a pas de mesure requise
 howtoAddMeasurements: Pour rendre des mesures nécessaires, ajoutez-les à la section <b>measurements</b> du fichier de configuration du patron.
 seeDocsAt: La documentation à ce sujet est disponible sur
-clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
+clearDesignMode: Vider le mode design
+designMode: Mode design
+exportMode: Mode d'export
+thingIsEnabled: '{thing} est activé'
+thingIsDisabled: '{thing} est désactivé'
 turnOn: Activer
 turnOff: Désactiver
 validNameWarning: "Veuillez choisir un nom différent car ce nom causerait des problèmes.\nNous (ré-)utilisons le nom du modèle comme nom de paquet NPM.\nLes noms de paquets doivent être en minuscule et ne peuvent pas contenir de caractères spéciaux.\nVeuillez donc nommer votre patron en conséquence, comme :"

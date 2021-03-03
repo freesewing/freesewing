@@ -1,6 +1,6 @@
 import { addButtons } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     utils,
     sa,
@@ -49,10 +49,7 @@ export default part => {
     .line(points.placketTopEdge)
     .line(points.placketBottomEdge)
 
-  paths.seam = paths.saBase
-    .clone()
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
 
   // Complete pattern?
   if (complete) {

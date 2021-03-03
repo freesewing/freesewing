@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     Path,
@@ -37,10 +37,7 @@ export default function(part) {
   paths.saBase.render = false
   paths.hemBase.render = false
 
-  paths.seam = paths.saBase
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Complete?
   if (complete) {

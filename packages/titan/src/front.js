@@ -218,13 +218,11 @@ export default (part) => {
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 
   // Balance the waist
-  if (points.cfSeat.x > points.waistX.x) {
-    let delta = points.waistX.dx(points.cfSeat)
-    let width = points.waistX.x
-    points.waistOut = new Point(delta * options.waistBalance, 0)
-    points.waistIn = points.waistOut.shift(0, width)
-    points.cfWaist = points.waistIn
-  }
+  let delta = points.waistX.dx(points.cfSeat)
+  let width = points.waistX.x
+  points.waistOut = new Point(delta * options.waistBalance, 0)
+  points.waistIn = points.waistOut.shift(0, width)
+  points.cfWaist = points.waistIn
 
   // Draw initial crotch seam
   drawCrotchSeam()
