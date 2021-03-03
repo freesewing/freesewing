@@ -105,7 +105,6 @@ export default function (part) {
     snippets.n2 = new Snippet( 'notch', points.pC.shiftTowards( points.pCcpF, halfInch *1.5 ) );
   
     points.logo = points.pA.shiftFractionTowards( points.pH, .50 ).shift(180,70).shift(270,30);
-    console.log( points.logo );
     snippets.logo = new Snippet( 'logo', points.logo );
     points.title = points.logo.shift(0, 70)
     macro('title', {
