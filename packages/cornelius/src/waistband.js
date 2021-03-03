@@ -17,10 +17,6 @@ export default function (part) {
   let waistLength = store.get('frontWaistLength') + store.get('backWaistLength')
   let flyWidth = store.get('flyWidth')
 
-  console.log('frontWaistLength:' + store.get('frontWaistLength'))
-  console.log('backWaistLength:' + store.get('backWaistLength'))
-  console.log('WaistLength:' + waistLength)
-
   points.pA = new Point(0, 0)
   points.pB = points.pA.shift(270, waistLength)
   points.pC = points.pB.shift(180, halfInch * 3.5)
@@ -49,7 +45,6 @@ export default function (part) {
     })
 
     points.logo = points.pA.shiftFractionTowards(points.pC, 0.5)
-    console.log(points.logo)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(90, 70)
     macro('title', {
