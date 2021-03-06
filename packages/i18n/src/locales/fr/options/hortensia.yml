@@ -4,10 +4,10 @@ size:
   description: Contrôle la taille globale du sac à main
 zipperSize:
   title: Taille du Zip
-  description: Which size of zipper to use
+  description: Quelle taille de zip utliser
 strapLength:
-  title: Strap length
-  description: Controls the length of the strap
+  title: Longueur de l'anse
+  description: Contrôle la longueur des anses
 handleWidth:
-  title: Handle width
-  description: Controls the width of the handle
+  title: Largeur d'anse
+  description: Contrôle la largeur de l'anse
