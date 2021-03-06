@@ -31,6 +31,7 @@ import titan from './titan.yml'
 import paco from './paco.yml'
 import albert from './albert.yml'
 import hortensia from './hortensia.yml'
+import cornelius from './cornelius.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -67,7 +68,8 @@ let patterns = {
   paco,
   teagan,
   albert,
-  hortensia
+  hortensia,
+  cornelius
 }
 
 let options = {}
