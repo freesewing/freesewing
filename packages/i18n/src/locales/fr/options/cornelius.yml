@@ -3,7 +3,7 @@ fullness:
   title: Ampleur
   description: Contrôle l'ampleur de la culotte
 waistbandBelowWaist:
-  title: Abaissement de la bande de taille
+  title: Abaissement de la ceinture
   description: Pourcentage pour déplacer la ceinture sous la taille réelle
 waistReduction:
   title: Réduction de la taille
