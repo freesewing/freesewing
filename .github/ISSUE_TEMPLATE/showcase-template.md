@@ -8,9 +8,9 @@ assignees: ''
 ---
 
 - Content:  Provide a link here to where we can find the content
- - Permission: 
+ - Permission:
    - [ ] I am the original author, and hereby grant permission to repost this content
    - [ ] I am not the original author, please ask permission from them
- - Username: Please enter the FreeSewing username of the orignal author (if you know it)
+ - Credit: Please enter the FreeSewing, Instagram, Twitter, or other username of the original author (if you know it and they want to be credited)
 
-Looking to tackle this issue? We have [a how-to that shows how to add a showcase to the site]( https://freesewing.dev/editors/showcase/).
+Looking to tackle this issue? We have [a how-to that shows how to add a showcase to the site](https://freesewing.dev/editors/howtos/showcase/).
