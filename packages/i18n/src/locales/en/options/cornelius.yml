@@ -2,7 +2,7 @@ fullness:
   title: Fullness
   description: Controls the fullness of the breeches
 waistbandBelowWaist:
-  title: Waistband below waist
+  title: Lower waistband
   description: Percentage to move the waistband below the actual waist
 waistReduction:
   title: Waist reduction
