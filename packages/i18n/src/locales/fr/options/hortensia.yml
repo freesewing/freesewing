@@ -1,9 +1,9 @@
 ---
 size:
-  title: Size
-  description: Controls the overall size of the handbag
+  title: Taille
+  description: Contrôle la taille globale du sac à main
 zipperSize:
-  title: Zipper size
+  title: Taille du Zip
   description: Which size of zipper to use
 strapLength:
   title: Strap length
