@@ -1,6 +1,34 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.14.0 (2021-03-06)
+
+### components
+
+#### Added
+
+ - Added Bella linedrawing
+ - Added Cornelius linedrawing
+
+### cornelius
+
+#### Added
+
+ - Cornelius is a FreeSewing pattern for cycling breeches
+
+### hugo
+
+#### Fixed
+
+ - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+### i18n
+
+#### Added
+
+ - Added translations for Cornelius
+
+
 ## 2.13.2 (2021-02-21)
 
 ### bella
