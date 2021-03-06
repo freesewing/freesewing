@@ -1,26 +1,26 @@
 ---
 fullness:
-  title: Fullness
-  description: Controls the fullness of the breeches
+  title: Ampleur
+  description: Contrôle l'ampleur de la culotte
 waistbandBelowWaist:
-  title: Lower waistband
-  description: Percentage to move the waistband below the actual waist
+  title: Abaissement de la bande de taille
+  description: Pourcentage pour déplacer la ceinture sous la taille réelle
 waistReduction:
-  title: Waist reduction
-  description: Percentage to reduce the waistband
+  title: Réduction de la taille
+  description: Pourcentage de réduction de la ceinture
 cuffWidth:
-  title: Cuff width
-  description: Width of the leg cuff
+  title: Largeur du bracelet
+  description: Largeur du bracelet de la jambe
 cuffStyle:
-  title: Cuff style
-  description: Style of the leg cuff
+  title: Style de bracelet
+  description: Style du bracelet de la jambe
 bandBelowKnee:
-  title: Cuff below knee
-  description: Controls the cuff distance from the knee
+  title: Bracelet sous le genou
+  description: Contrôle la distance du bracelet sous le genou
 kneeToBelow:
-  title: Cuff length
-  description: Controls the tightness of the cuff as compared to the knee
+  title: Longueur de bracelet
+  description: Contrôle l'épaisseur du bracelet par rapport au genou
 ventLength:
-  title: Vent length
-  description: Controls the length of the vent between knee and cuff
+  title: Longueur de la fente
+  description: Contrôle la longueur de la fente entre le genou et le bracelet
 
