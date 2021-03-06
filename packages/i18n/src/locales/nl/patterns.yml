@@ -44,6 +44,9 @@ florence:
 holmes:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt'
   title: Holmes deerstalker hat
+hortensia:
+  description: 'Hortensia is a handbag'
+  title: Hortensia handbag
 huey:
   description: Huey is een trui met kap met een rits, en optionele voorzakken.
   title: Huey hoodie
