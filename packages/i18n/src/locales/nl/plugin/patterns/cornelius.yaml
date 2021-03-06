@@ -1,11 +1,3 @@
 ---
-fullness: Fullness
-waistbandBelowWaist: Percentage to move the waistband below the actual waist
-waistReduction: Percentage to reduce the waistband
-cuffWidth: Width of the cuff (leg)
-cuffStyle: Cuff style
-bandBelowKnee: Cuff distance from the knee
-kneeToBelow: Percentage of the circumference below the knee as compared to the knee
 Vent: Vent
-ventLength: Length of the vent in percentage of knee to cuff
 PocketFacing: Pocket facing
