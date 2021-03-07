@@ -1,4 +1,3 @@
-
 ##### Subscribe to our newsletter (yes, we have one now)
 
 We have decided to start a newsletter, so you should subscribe to it.
@@ -8,12 +7,12 @@ We have decided to start a newsletter, so you should subscribe to it.
  - If not, you can still subscribe at [/community/newsletter/](https://freesewing.org/community/newsletter/).
 
 
-##### Next contributor call on 6 March
+##### Next contributor call on 20 March
 
-The next contributor call is on [6 March 2021](https://github.com/freesewing/freesewing/issues/878).
+The next contributor call is on [20 March 2021](https://github.com/freesewing/freesewing/issues/912).
 
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
-Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
+Notes and todos are [available on Github](https://todo.freesewing.org/).
 
 
 ##### COVID-19 face mask pattern
