@@ -26,7 +26,7 @@
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.0",
-    "commander": "^6.0.0",
+    "commander": "^7.1.0",
     "conf": "^7.1.1",
     "cp-file": "^9.0.0",
     "execa": "^4.0.3",
