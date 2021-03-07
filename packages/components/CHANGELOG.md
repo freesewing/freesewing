@@ -1,7 +1,7 @@
 # Change log for: @freesewing/components
 
 
-## 2.14.0 (2021-03-06)
+## 2.14.0 (2021-03-07)
 
 ### Added
 
