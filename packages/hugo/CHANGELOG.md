@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.14.0 (2021-03-07)
+
+### Fixed
+
+ - Replaced grainline indicator on pocket with cut-on-fold indicator
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

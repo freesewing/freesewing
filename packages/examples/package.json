@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/examples",
-  "version": "2.14.0-rc.0",
+  "version": "2.14.0",
   "description": "A FreeSewing pattern holding examples for our documentation",
   "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,8 +29,8 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.14.0-rc.0",
-    "@freesewing/plugin-bundle": "^2.14.0-rc.0"
+    "@freesewing/core": "^2.14.0",
+    "@freesewing/plugin-bundle": "^2.14.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -41,14 +41,14 @@
     "eslint": "^7.6.0",
     "babel-jest": "^26.2.2",
     "jest": "26.2.2",
-    "@freesewing/components": "^2.14.0-rc.0",
-    "@freesewing/css-theme": "^2.14.0-rc.0",
-    "@freesewing/i18n": "^2.14.0-rc.0",
-    "@freesewing/mui-theme": "^2.14.0-rc.0",
-    "@freesewing/plugin-bust": "^2.14.0-rc.0",
-    "@freesewing/plugin-buttons": "^2.14.0-rc.0",
-    "@freesewing/plugin-flip": "^2.14.0-rc.0",
-    "@freesewing/utils": "^2.14.0-rc.0",
+    "@freesewing/components": "^2.14.0",
+    "@freesewing/css-theme": "^2.14.0",
+    "@freesewing/i18n": "^2.14.0",
+    "@freesewing/mui-theme": "^2.14.0",
+    "@freesewing/plugin-bust": "^2.14.0",
+    "@freesewing/plugin-buttons": "^2.14.0",
+    "@freesewing/plugin-flip": "^2.14.0",
+    "@freesewing/utils": "^2.14.0",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^7.0.2",
     "react-scripts": "^3.4.1",
@@ -78,7 +78,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=12.0.0",

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.14.0 (2021-03-07)
+
+### Added
+
+ - Added translations for Cornelius
+
 ## 2.13.0 (2021-02-13)
 
 ### Added

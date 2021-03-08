@@ -1,3 +1,18 @@
+2.14.0:
+  date: 2021-03-07
+  Added:
+    cornelius:
+      - Cornelius is a FreeSewing pattern for cycling breeches
+    components:
+      - Added Bella linedrawing
+      - Added Cornelius linedrawing
+    i18n:
+      - Added translations for Cornelius
+
+  Fixed:
+    hugo:
+      - Replaced grainline indicator on pocket with cut-on-fold indicator
+
 2.13.2:
   date: 2021-02-21
 
