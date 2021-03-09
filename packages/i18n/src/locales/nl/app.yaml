@@ -12,7 +12,7 @@ applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
 askForHelp: Vraag om hulp
 automatic: Automatisch
-averagePeopleDoNotExist: "Gemiddelde mensen bestaan niet"
+averagePeopleDoNotExist: 'Gemiddelde mensen bestaan niet'
 awesome: Super
 back: Terug
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
@@ -49,7 +49,7 @@ countModelsLackingForPattern: '{count} van je mensen hebben niet de nodige maten
 created: Aangemaakt
 custom: Aangepast
 customSeamAllowance: Aangepaste naadtoeslag
-lightMode: Light mode
+lightMode: Lichte modus
 data: Data
 darkMode: Donkere modus
 default: Standaard
@@ -72,7 +72,7 @@ drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep hier een afbeelding naartoe, of selecteer er handmatig een met de onderstaande knop
 emailAddress: Email adres
-emailWorksToo: "Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook"
+emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 export: Exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
@@ -81,7 +81,7 @@ fieldRemoved: '{field} verwijderd'
 fieldSaved: '{field} opgeslagen'
 filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
-forgotLoginInstructions: "Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop"
+forgotLoginInstructions: 'Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
 freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
 github: GitHub
@@ -134,9 +134,9 @@ ourRevenuePledge: Our revenue pledge
 patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
+patronHelp: Neem contact op met ons als u vragen heeft of wijzigingen wilt aanbrengen in uw Patron-status
 patron: Mecenas
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
+patronPitch: Als je denkt dat wat wij doen de moeite is, en je kan elke maand een paar centen missen zonder al te veel problemen, steun dan alsjeblieft ons werk
 patronsKeepUsAfloat: FreeSewing wordt mogelijk gemaakt door de financiële steun van onze mecenassen. Ze houden dit schip drijvend.
 patternInstructions: Patroon instructies
 patternOptions: Patroon opties
@@ -156,7 +156,7 @@ remove: Verwijderen
 removeThing: '{thing} verwijderen'
 reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
-resendActivationEmailMessage: "Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen."
+resendActivationEmailMessage: 'Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen.'
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Herstel wachtwoord
 reset: Reset
@@ -175,7 +175,7 @@ settings: Instellingen
 sewingHelp: Naai hulp
 sewingPatternsForNonAveragePeople: Naaipatronen voor niet-gemiddelde mensen
 share: Delen
-shareFreesewing: Share FreeSewing
+shareFreesewing: Deel FreeSewing
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
@@ -198,7 +198,7 @@ twitter: Twitter
 txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
-txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
+txt-tier8: 'Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!'
 txt-tiers: 'FreeSewing draait op een vrijwillig subscriptiemodel'
 unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
@@ -240,8 +240,8 @@ noPattern: Je hebt (nog) geen patronen. Maak een nieuw patroon, en sla het op in
 modelFirst: Begin met maten toe te voegen
 noModel: Je hebt (nog) geen maten toegevoegd. FreeSewing can naaipatronen op maat genereren. Maar daarvoor hebben we maten nodig.
 noModel2: Dus het eerste dat je zou moeten doen is een persoon toevoegen, en je lintmeter bovenhalen.
-noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
-noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
+noUserBrowsingTitle: 'Je kan niet zomaar door alle gebruikers grasduinen'
+noUserBrowsingText: 'We hebben er duizenden. Je hebt toch wel wat beters te doen?'
 usePatternMeasurements: 'Gebruik de maten van het originele patroon'
 createReplica: Creëer een replica
 showDetails: Toon details
@@ -312,7 +312,7 @@ zoomOut: Zoom out
 zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
 savePattern-txt: Bewaar dit patroon in je FreeSewing account
 comparePattern: Vergelijk patroon
-showPattern: Show pattern
+showPattern: Patroon tonen
 comparePattern-txt: Vergelijk je patroon met een aantal standaardmaten om mogelijke pasproblemen te vinden
 recreatePattern: Maak patroon opnieuw
 recreatePattern-txt: Kies een ander persoon en maak dit patroon opnieuw voor deze persoon
@@ -326,6 +326,6 @@ error: Error
 info: Info
 warning: Waarschuwing
 debug: Debug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
-slogan-stay: Stay for the community
+unsubscribe: Uitschrijven
+slogan-come: Kom voor de naaipatronen
+slogan-stay: Blijf voor het gezelschap

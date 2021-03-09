@@ -33,7 +33,9 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro
+    macro,
+    snippets,
+    Snippet
   } = part.shorthand()
 
   // Initialize
@@ -173,6 +175,13 @@ export default function (part) {
       from: points.dartJoin,
       to: points.topMid
     })
+    snippets.sideNotch = new Snippet('notch', points.midRight)
+    points.curveNotch = new Path()
+      .move(points.midRight)
+      .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
+      .shiftFractionAlong(0.5)
+    snippets.curveNotch1 = new Snippet('notch', points.curveNotch)
+    snippets.curveNotch2 = new Snippet('notch', points.curveNotch.flipX())
   }
 
   // Paperless?

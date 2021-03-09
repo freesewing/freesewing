@@ -35,7 +35,7 @@ export default {
     back: 'backBase',
     sleevecap: 'front',
     sleeveBase: 'sleevecap',
-    sleeve: 'sleeveBase',
+    sleeve: ['sleeveBase', 'front', 'back'],
     pocket: 'front',
     pocketFacing: 'pocket',
     hoodCenter: 'hoodSide',

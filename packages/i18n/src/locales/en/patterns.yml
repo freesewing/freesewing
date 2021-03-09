@@ -31,6 +31,9 @@ carlton:
 cathrin:
   description: Cathrin is an underbust corset or waist trainer.
   title: Cathrin corset
+cornelius:
+  description: Cornelius are cycling breeches based on the Keystone drafting method.
+  title: Cornelius cycling breeches
 diana:
   description: Diana is a top with a draped neckline.
   title: Diana draped top
@@ -43,6 +46,9 @@ florence:
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat
+hortensia:
+  description: 'Hortensia is a handbag'
+  title: Hortensia handbag
 huey:
   description: Huey is a zip-up hoodie with optional front pockets.
   title: Huey hoodie

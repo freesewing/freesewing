@@ -46,7 +46,7 @@ export const getDartInsertionPoint = (points, utils, loc, angle) => {
 }
 
 // What points need to be rotated after cutting the primary bust dart
-export const getPrimaryDartRotationList = loc => {
+export const getPrimaryDartRotationList = (loc) => {
   let rotate = ['cfWaist']
   if (loc >= 1100) rotate.push('cfNeck')
   if (loc >= 1130) rotate.push('hpsCp2')
@@ -74,7 +74,7 @@ export const getSecondaryDartRotationList = (loc1, loc2) => {
   return rotate
 }
 
-export const getDartLocationsAsNumbers = options => {
+export const getDartLocationsAsNumbers = (options) => {
   let loc1 = options.primaryBustDart
   let loc2 = options.secondaryBustDart
   loc1 = Number(loc1.slice(0, 2) + loc1.slice(-2))

@@ -2,7 +2,7 @@
 // To keep you from printing it completely, you could print this part in paperless mode
 // and only have a single sheet with all the dimensions on it.
 
-export default function(part) {
+export default function (part) {
   let {
     options,
     /*measurements,

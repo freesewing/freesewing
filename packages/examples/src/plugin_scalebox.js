@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, macro } = part.shorthand()
 
   points.anchor1 = new Point(0, 0)

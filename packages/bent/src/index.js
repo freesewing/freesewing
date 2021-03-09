@@ -11,13 +11,13 @@ import draftUnderSleeve from './undersleeve'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods from Brian to prototype
-Pattern.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFront = function(part) {
+Pattern.prototype.draftFront = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBack = function(part) {
+Pattern.prototype.draftBack = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
 

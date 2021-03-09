@@ -1,6 +1,23 @@
 # Change log for: @freesewing/components
 
 
+## 2.14.0 (2021-03-07)
+
+### Added
+
+ - Added Bella linedrawing
+ - Added Cornelius linedrawing
+
+## 2.13.0 (2021-02-13)
+
+### Added
+
+ - Linedrawing for hortensia
+
+### Fixed
+
+ - Check point attributes are present before using them
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

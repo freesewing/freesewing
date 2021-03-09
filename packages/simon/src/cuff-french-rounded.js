@@ -1,6 +1,6 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
-export default part => {
+export default (part) => {
   let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
   draftFrenchCuff(part)
   let height = store.get('cuffHeight')
@@ -46,10 +46,7 @@ export default part => {
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path()
-    .move(points.midLeft)
-    .line(points.midRight)
-    .attr('class', 'dotted')
+  paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'dotted')
 
   // Complete pattern?
   if (complete) {

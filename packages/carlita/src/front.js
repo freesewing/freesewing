@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -253,21 +253,14 @@ export default function(part) {
     ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
     .line(points.hemEdge)
     .line(points.flbHem)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.psHem)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().line(points.psHem).close().attr('class', 'fabric')
 
   paths.rollLine = new Path()
     .move(points.rollLineStart)
     .line(points.rollLineEnd)
     .attr('class', 'lashed')
 
-  paths.flb = new Path()
-    .move(points.flbHem)
-    .line(points.flbTop)
-    .attr('class', 'lining lashed')
+  paths.flb = new Path().move(points.flbHem).line(points.flbTop).attr('class', 'lining lashed')
 
   paths.pocket = new Path()
     .move(

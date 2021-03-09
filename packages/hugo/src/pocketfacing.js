@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   // Remove clutter
   let facing = part.paths.facing
   part.paths = {}
@@ -26,10 +26,7 @@ export default function(part) {
         .line(points.facingEnd)
         .offset(sa * -1)
         .attr('class', 'fabric sa')
-      paths.sa
-        .line(points.facingEnd)
-        .move(points.saStart)
-        .line(paths.sa.start())
+      paths.sa.line(points.facingEnd).move(points.saStart).line(paths.sa.start())
     }
   }
 

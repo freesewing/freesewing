@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Updated chat link from gitter to discord
+
 ## 2.12.1 (2021-01-27)
 
 ### Added

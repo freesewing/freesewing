@@ -4,13 +4,13 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-gore') === false)
         svg.attributes.set('freesewing:plugin-gore', version)
     }
   },
   macros: {
-    gore: function(so) {
+    gore: function (so) {
       let from = so.from
       let goreNumber = so.goreNumber //number of gores for the complete sphere
       let radius = so.radius //radius of the sphere

@@ -1,6 +1,6 @@
 import { box } from './shared'
 
-export default part => {
+export default (part) => {
   let { Point, snippets, Snippet } = part.shorthand()
 
   snippets.logo = new Snippet('logo', new Point(50, 30))

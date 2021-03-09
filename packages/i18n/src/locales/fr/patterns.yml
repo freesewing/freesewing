@@ -6,8 +6,8 @@ albert:
   description: Albert est un tablier.
   title: Tablier Albert
 bella:
-  description: Bella is a basic body block for womenswear.
-  title: Bella body block
+  description: Bella est un patron de base de haut pour femme.
+  title: Buste de base Bella
 benjamin:
   description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
   title: Nœud papillon Benjamin
@@ -32,6 +32,9 @@ carlton:
 cathrin:
   description: Cathrin est un corset sous-poitrine ou un serre-taille.
   title: Corset Cathrin
+cornelius:
+  description: Cornelius est une culotte de cyclisme basé sur la méthode Keystone.
+  title: Culotte de cyclisme Cornelius
 diana:
   description: Diana est un top avec un col drapé.
   title: Haut drapé Diana
@@ -44,6 +47,9 @@ florence:
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau'
   title: Casquette de détective Holmes
+hortensia:
+  description: 'Hortensia est un sac à main'
+  title: Sac à main Hortensia
 huey:
   description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
   title: Sweat zippé à capuche Huey

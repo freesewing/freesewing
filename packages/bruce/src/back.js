@@ -1,6 +1,6 @@
 import init from './init'
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -105,6 +105,10 @@ export default function(part) {
       grainline: true
     })
     snippets.logo = new Snippet('logo', points.title.shift(90, 50))
+    snippets.backNotch = new Snippet(
+      'bnotch',
+      points.sideRight.shiftFractionTowards(points.legRight, 0.5)
+    )
   }
 
   // Paperless?

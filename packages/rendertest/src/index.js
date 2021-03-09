@@ -8,6 +8,6 @@ import draftTest from './test'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftTest = part => draftTest(part)
+Pattern.prototype.draftTest = (part) => draftTest(part)
 
 export default Pattern

@@ -60,13 +60,15 @@ export default function (part) {
   // Find out location of the armhole
   let armholeDepth = measurements.hpsToWaistBack * options.armholeDepth + points.shoulder.y
   points.cbNeckCp2 = new Point(0, armholeDepth)
-  points.dartLeftArmhole = utils.curveIntersectsY(
+  // Does dart pass armhole depth?
+  let dartArmholeDepth = utils.curveIntersectsY(
     points.dartBottomLeft,
     points.dartLeftCp,
     points.dartTip,
     points.dartTip,
     armholeDepth
   )
+  let extra = 0
   points.cbArmhole = utils.curveIntersectsY(
     points.cbNeck,
     points.cbNeckCp2,
@@ -74,7 +76,10 @@ export default function (part) {
     points.waistCenter,
     armholeDepth
   )
-  let extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
+  if (dartArmholeDepth) {
+    points.dartLeftArmhole = dartArmholeDepth
+    extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
+  }
   points.armhole = new Point(
     (measurements.underbust / 4) * (1 + options.chestEase) + extra,
     armholeDepth

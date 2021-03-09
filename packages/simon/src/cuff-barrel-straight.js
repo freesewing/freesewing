@@ -1,6 +1,6 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared'
 
-export default part => {
+export default (part) => {
   let { sa, points, Path, paths, complete, paperless } = part.shorthand()
 
   draftBarrelCuff(part)

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { macro, Point, Path, points, paths, store } = part.shorthand()
 
   let y = store.get('y')
@@ -6,10 +6,7 @@ export default function(part) {
   y += 10
   points.ml = new Point(0, y)
   points.mr = new Point(w, y)
-  paths.macros = new Path()
-    .move(points.ml)
-    .line(points.mr)
-    .attr('data-text', 'macros')
+  paths.macros = new Path().move(points.ml).line(points.mr).attr('data-text', 'macros')
 
   y += 40
   macro('title', {

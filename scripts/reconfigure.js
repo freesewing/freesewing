@@ -80,10 +80,10 @@ function readExampleFile(file, subdir = false) {
  */
 function readConfigFile(file, replace = false) {
   if (replace)
-    return yaml.safeLoad(
+    return yaml.load(
       Mustache.render(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'), replace)
     )
-  return yaml.safeLoad(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'))
+  return yaml.load(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'))
 }
 
 /**

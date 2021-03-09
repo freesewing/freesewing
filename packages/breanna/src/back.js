@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     sa,
     points,
@@ -91,10 +91,7 @@ export default part => {
 
   // Insert darts
   if (options.waistDart) {
-    let dart = new Path()
-      .line(points.waistDart1)
-      .line(points.waistDartTip)
-      .line(points.waistDart2)
+    let dart = new Path().line(points.waistDart1).line(points.waistDartTip).line(points.waistDart2)
     paths.seam = paths.seam.insop('waistDart', dart)
     let saDart = new Path()
       .line(points.waistDart1)
@@ -165,10 +162,7 @@ export default part => {
   store.set('backSideSeamLength', points.armhole.dist(points.waist))
   store.set(
     'backCollarLength',
-    new Path()
-      .move(points.cbNeck)
-      ._curve(points.hpsCp2, points.hps)
-      .length() * 2
+    new Path().move(points.cbNeck)._curve(points.hpsCp2, points.hps).length() * 2
   )
 
   // Anchor point
@@ -230,6 +224,7 @@ export default part => {
         x: points.waistDart2.x + 15
       })
     } else {
+      let y = points.waist.y + 15 + sa
       macro('hd', {
         from: points.cbWaist,
         to: points.waist,

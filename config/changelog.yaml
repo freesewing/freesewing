@@ -1,3 +1,83 @@
+2.14.0:
+  date: 2021-03-07
+  Added:
+    cornelius:
+      - Cornelius is a FreeSewing pattern for cycling breeches
+    components:
+      - Added Bella linedrawing
+      - Added Cornelius linedrawing
+    i18n:
+      - Added translations for Cornelius
+
+  Fixed:
+    hugo:
+      - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+2.13.2:
+  date: 2021-02-21
+
+  Fixed:
+    bella:
+      - Fixed issue with out-of-order execution
+    create-freesewing-pattern:
+      - Updated chat link from gitter to discord
+    paco:
+      - Only add paperless dimensions for pockets if we drafted pockets
+    pattern-info:
+      - Make pattern list alphabetic
+    penelope:
+      - Fixed issue in shape part
+    simone:
+      - Fixed type in bustsidecode finder code
+    titan:
+      - Always ensure point waistIn is created in back part
+
+2.13.1:
+  date: 2021-02-14
+
+  Added:
+    utils:
+      - Pass pattern handle to tiler
+
+  Fixed:
+    hortensia:
+      - Fix incorrectly named part
+    simon:
+      - Added missing sleeve notch on yoke
+
+2.13.0:
+  date: 2021-02-13
+
+  Added:
+    components:
+      - Linedrawing for hortensia
+    hortensia:
+      - Initial release of Hortensia, a handbag pattern
+    i18n:
+      - Translation for Hortensia
+
+  Fixed:
+    bella:
+      - Verify whether back dart passes armhole depth
+    breanna:
+      - Try harder to find the intersection point for the scyedart
+      - Define missing y variable in paperless branch
+    bruce:
+      - Added notches to facilitate seam matching
+    components:
+      - Check point attributes are present before using them
+    hugo:
+      - Fix style of the seam allowance paths
+      - Fix sleeve dependencies
+    simone:
+      - Force bust dart intersection if not found initially
+    theo:
+      - Check for intersection returning an array
+    titan:
+      - Always balance the waist
+    wahid:
+      - Make sure roudEnd and roundStart points are always available
+
 2.12.1:
   date: 2021-01-27
   Added:

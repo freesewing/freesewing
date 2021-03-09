@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     Point,
     points,
@@ -39,24 +39,15 @@ export default function(part) {
     .close()
     .attr('class', 'lining')
 
-  paths.flyEdge = new Path()
-    .move(points[-40])
-    .line(points[814])
-    .attr('class', 'lining lashed')
+  paths.flyEdge = new Path().move(points[-40]).line(points[814]).attr('class', 'lining lashed')
 
-  paths.pocket = new Path()
-    .move(points[60])
-    .line(points[61])
-    .attr('class', 'lining lashed')
+  paths.pocket = new Path().move(points[60]).line(points[61]).attr('class', 'lining lashed')
 
   // Complete pattern?
   if (complete) {
     if (sa) {
       paths.sa = paths.seam.offset(-1 * sa).attr('class', 'lining sa')
-      paths.flyEdeSa = new Path()
-        .move(points[816])
-        .line(points[818])
-        .attr('class', 'lining sa')
+      paths.flyEdeSa = new Path().move(points[816]).line(points[818]).attr('class', 'lining sa')
     }
     points.title = points.dartTip.clone()
     macro('title', { at: points.title, title: 'frontPocketBag', nr: 9 })

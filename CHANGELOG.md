@@ -1,6 +1,175 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.14.0 (2021-03-07)
+
+### components
+
+#### Added
+
+ - Added Bella linedrawing
+ - Added Cornelius linedrawing
+
+### cornelius
+
+#### Added
+
+ - Cornelius is a FreeSewing pattern for cycling breeches
+
+### hugo
+
+#### Fixed
+
+ - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+### i18n
+
+#### Added
+
+ - Added translations for Cornelius
+
+
+## 2.13.2 (2021-02-21)
+
+### bella
+
+#### Fixed
+
+ - Fixed issue with out-of-order execution
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated chat link from gitter to discord
+
+### paco
+
+#### Fixed
+
+ - Only add paperless dimensions for pockets if we drafted pockets
+
+### pattern-info
+
+#### Fixed
+
+ - Make pattern list alphabetic
+
+### penelope
+
+#### Fixed
+
+ - Fixed issue in shape part
+
+### simone
+
+#### Fixed
+
+ - Fixed type in bustsidecode finder code
+
+### titan
+
+#### Fixed
+
+ - Always ensure point waistIn is created in back part
+
+
+## 2.13.1 (2021-02-14)
+
+### hortensia
+
+#### Fixed
+
+ - Fix incorrectly named part
+
+### simon
+
+#### Fixed
+
+ - Added missing sleeve notch on yoke
+
+### utils
+
+#### Added
+
+ - Pass pattern handle to tiler
+
+
+## 2.13.0 (2021-02-13)
+
+### bella
+
+#### Fixed
+
+ - Verify whether back dart passes armhole depth
+
+### breanna
+
+#### Fixed
+
+ - Try harder to find the intersection point for the scyedart
+ - Define missing y variable in paperless branch
+
+### bruce
+
+#### Fixed
+
+ - Added notches to facilitate seam matching
+
+### components
+
+#### Added
+
+ - Linedrawing for hortensia
+
+#### Fixed
+
+ - Check point attributes are present before using them
+
+### hortensia
+
+#### Added
+
+ - Initial release of Hortensia, a handbag pattern
+
+### hugo
+
+#### Fixed
+
+ - Fix style of the seam allowance paths
+ - Fix sleeve dependencies
+
+### i18n
+
+#### Added
+
+ - Translation for Hortensia
+
+### simone
+
+#### Fixed
+
+ - Force bust dart intersection if not found initially
+
+### theo
+
+#### Fixed
+
+ - Check for intersection returning an array
+
+### titan
+
+#### Fixed
+
+ - Always balance the waist
+
+### wahid
+
+#### Fixed
+
+ - Make sure roudEnd and roundStart points are always available
+
+
 ## 2.12.1 (2021-01-27)
 
 ### create-freesewing-pattern

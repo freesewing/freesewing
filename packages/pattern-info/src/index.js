@@ -13,15 +13,17 @@ export const list = [
   'benjamin',
   'bent',
   'breanna',
-  'diana',
   'brian',
   'bruce',
   'carlita',
   'carlton',
   'cathrin',
+  'cornelius',
+  'diana',
   'florent',
   'florence',
   'holmes',
+  'hortensia',
   'huey',
   'hugo',
   'jaeger',
@@ -49,9 +51,11 @@ export const withoutBreasts = [
   'brian',
   'bruce',
   'carlton',
+  'cornelius',
   'florent',
   'florence',
   'holmes',
+  'hortensia',
   'huey',
   'hugo',
   'jaeger',
@@ -70,4 +74,4 @@ export const withoutBreasts = [
   'waralee'
 ]
 
-export const withBreasts = ['bella', 'breanna', 'diana', 'cathrin', 'carlita', 'simone']
+export const withBreasts = ['bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']

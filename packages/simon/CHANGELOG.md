@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 2.13.1 (2021-02-14)
+
+### Fixed
+
+ - Added missing sleeve notch on yoke
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

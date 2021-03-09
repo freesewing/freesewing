@@ -4,13 +4,13 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-banner') === false)
         svg.attributes.set('freesewing:plugin-banner', version)
     }
   },
   macros: {
-    banner: function(so) {
+    banner: function (so) {
       let defaults = { text: [], dy: -1, spaces: 8, repeat: 25 }
       so = { ...defaults, ...so }
       this.paths[so.path].attr('data-text-dy', so.dy).attr('data-text-class', 'center')

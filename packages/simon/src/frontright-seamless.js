@@ -1,6 +1,6 @@
 import { addButtons } from './shared'
 
-export default part => {
+export default (part) => {
   let { sa, Point, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
 
   let width = options.buttonPlacketWidth
@@ -12,19 +12,12 @@ export default part => {
   points.placketBottomEdge = points.cfHem.shift(0, width * 2.5)
   points.placketBottomMatch = points.cfHem.shift(180, width / 2)
   points.placketTopMatch = points.cfNeck.shift(180, width / 2)
-  paths.seam
-    .line(points.placketTopEdge)
-    .line(points.placketBottomEdge)
-    .line(points.cfHem)
-    .close()
+  paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
   if (complete) {
     // Placket help lines
-    paths.frontCenter = new Path()
-      .move(points.cfNeck)
-      .line(points.cfHem)
-      .attr('class', 'help')
+    paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     paths.placketFold1 = new Path()
       .move(points.placketTopFold1)
       .line(points.placketBottomFold1)
@@ -38,7 +31,7 @@ export default part => {
       .line(points.placketTopMatch)
       .attr('class', 'stroke-sm help')
       .attr('data-text', 'matchHere')
-      .attr("data-text-class", "text-xs center")
+      .attr('data-text-class', 'text-xs center')
     macro('sprinkle', {
       snippet: 'notch',
       on: [

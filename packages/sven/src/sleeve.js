@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { store, sa, points, paths, Path, complete, paperless, macro, options } = part.shorthand()
 
   if (options.ribbing) {
@@ -33,10 +33,7 @@ export default part => {
       paths.saBase.render = false
       paths.hemBase.render = false
       paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa * (options.ribbing ? 1 : 3)))
-      paths.sa
-        .line(paths.sa.start())
-        .close()
-        .attr('class', 'fabric sa')
+      paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }
   }
 

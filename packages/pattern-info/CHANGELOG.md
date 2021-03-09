@@ -1,6 +1,12 @@
 # Change log for: @freesewing/pattern-info
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Make pattern list alphabetic
+
 ## 2.9.0 (2020-10-02)
 
 ### Added

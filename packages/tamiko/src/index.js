@@ -8,6 +8,6 @@ import draftTop from './top'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Part draft method
-Pattern.prototype.draftTop = part => draftTop(part)
+Pattern.prototype.draftTop = (part) => draftTop(part)
 
 export default Pattern

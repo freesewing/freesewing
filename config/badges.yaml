@@ -15,6 +15,10 @@ _all:
     link: 'https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3A{{name}}'
     img: 'https://img.shields.io/github/issues/freesewing/freesewing/pkg:{{name}}.svg?label=Issues'
     alt: 'Open issues tagged pkg:{{name}}'
+  todo:
+    link: 'https://todo.freesewing.org/'
+    img: 'https://img.shields.io/badge/%F3%A0%80%A0-Project%20board-9775fa.svg?logo=github&logoColor=white&logoWidth=15'
+    alt: 'Project board'
 _social:
   twitter:
     link: 'https://twitter.com/freesewing_org'
