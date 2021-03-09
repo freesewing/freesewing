@@ -1,3 +1,9 @@
+2.14.1:
+  date:
+  Fixed:
+    titan:
+      - Adapt seat control point when waist is dropped below the hip line
+
 2.14.0:
   date: 2021-03-07
   Added:

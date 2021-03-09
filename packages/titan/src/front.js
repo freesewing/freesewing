@@ -214,7 +214,7 @@ export default (part) => {
   // Control points to shape the legs towards the seat
   points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
   points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
-  points.seatOutCp1 = points.seatOut.shift(90, points.seatOut.y / 2)
+  points.seatOutCp1 = points.seatOut.shift(90, measurements.waistToHips * options.waistHeight)
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 
   // Balance the waist
