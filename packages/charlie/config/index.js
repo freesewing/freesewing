@@ -90,7 +90,7 @@ export default {
     // Back pockets
     backPocketVerticalPlacement: { pct: 24, min: 18, max: 30 },
     backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62 },
-    backPocketWidth: { pct: 55, min: 10, max: 90 },
+    backPocketWidth: { pct: 55, min: 50, max: 60 },
     backPocketDepth: { pct: 20, min: 10, max: 40 },
 
     // Back pockets
