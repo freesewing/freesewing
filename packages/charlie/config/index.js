@@ -80,7 +80,7 @@ export default {
     fitCrossSeamBack: true,
 
     // Lock titan options
-    fitKnee: false,
+    fitKnee: true,
 
     // Charlie constants
     waistbandReduction: 0.3, // See src/index.js
