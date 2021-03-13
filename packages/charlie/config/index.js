@@ -92,7 +92,7 @@ export default {
     kneeEase: { pct: 15, min: 1, max: 25 },
 
     // Style (from Titan)
-    waistHeight: { pct: 0, min: 0, max: 25 },
+    waistHeight: { pct: 15, min: 0, max: 30 },
     lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
 
@@ -125,11 +125,11 @@ export default {
 
     // Fly
     flyCurve: { pct: 66, min: 50, max: 100 },
-    flyLength: { pct: 35, min: 0, max: 70 },
+    flyLength: { pct: 45, min: 30, max: 60 },
     flyWidth: { pct: 15, min: 10, max: 20 },
 
     // Waistband
     splitWaistband: { bool: true },
-    waistbandWidth: { pct: 50, min: 25, max: 75 }
+    waistbandWidth: { pct: 40, min: 25, max: 65 }
   }
 }
