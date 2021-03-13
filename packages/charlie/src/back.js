@@ -1,40 +1,25 @@
 export default (part) => {
-
-  /*
-   * Helper method to draw the inseam path
-   */
-  const drawInseam = () =>
-    options.fitKnee
-      ? new Path()
-          .move(points.fork)
-          .curve(points.forkCp2, points.kneeInCp1, points.kneeIn)
-          .line(points.floorIn)
-      : new Path().move(points.fork).curve(points.forkCp2, points.kneeInCp1, points.floorIn)
-  /*
-   * Helper method to draw the outseam path
-   */
+  // Helper method to draw the outseam path
   const drawOutseam = () => {
     let waistOut = points.styleWaistOut || points.waistOut
-    if (options.fitKnee) {
-      if (points.waistOut.x > points.seatOut.x)
-        return new Path()
-          .move(points.floorOut)
-          .line(points.kneeOut)
-          .curve(points.kneeOutCp2, points.seatOut, waistOut)
-      else
-        return new Path()
-          .move(points.floorOut)
-          .line(points.kneeOut)
-          .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, points.waistOut)
+    if (points.waistOut.x > points.seatOut.x) {
+      let outseam = new Path()
+        .move(points.styleWaistOut)
+        .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+      return new Path()
+        .move(points.slantOut)
+        .line(points.pocketOpeningTop)
+        .line(points.pocketOpeningTopIn)
+        .line(points.pocketOpeningBottomIn)
+        .line(points.pocketOpeningBottom)
+        .line(points.slantBottom)
+        .join(outseam.split(points.slantBottom).pop())
+        .reverse()
     } else {
-      if (points.waistOut.x > points.seatOut.x)
-        return new Path().move(points.floorOut).curve(points.kneeOutCp2, points.seatOut, waistOut)
-      else
-        return new Path()
-          .move(points.floorOut)
-          .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, waistOut)
+      return new Path()
+        .move(points.floorOut)
+        .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
+        .curve_(points.seatOutCp2, waistOut)
     }
   }
   /*
@@ -42,18 +27,15 @@ export default (part) => {
    */
   const drawPath = () => {
     let waistIn = points.styleWaistIn || points.waistIn
-    return drawInseam()
-      .line(points.floorOut)
-      .join(drawOutseam())
+    return drawOutseam()
       .line(points.backDartRight)
       .noop('dart')
       .line(points.backDartLeft)
       .line(waistIn)
       .line(points.crossSeamCurveStart)
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-      .close()
+      .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
   }
-
 
   // Shorthand
   let {
@@ -75,33 +57,68 @@ export default (part) => {
 
   // Mark back pocket
   let base = points.styleWaistIn.dist(points.styleWaistOut)
-  let v = base * options.backPocketVerticalPlacement
-  let h = base * options.backPocketHorizontalPlacement
-  let w = base * options.backPocketWidth
-  let d = base * options.backPocketDepth
-  let a = points.styleWaistIn.angle(points.styleWaistOut)
-  points.waistPocketCenter = points.styleWaistIn.shiftFractionTowards(points.styleWaistOut, options.backPocketHorizontalPlacement)
-  points.pocketCenter = points.waistPocketCenter.shift(a-90, v)
-  points.pocketRight = points.pocketCenter.shift(a, w/2)
-  points.pocketLeft = points.pocketCenter.shift(a, w/-2)
+  let angle = points.styleWaistIn.angle(points.styleWaistOut)
+  store.set('backPocketToWaistband', base * options.backPocketVerticalPlacement)
+  store.set('backPocketWidth', base * options.backPocketWidth)
+  store.set('backPocketDepth', base * options.backPocketDepth)
+  points.waistPocketCenter = points.styleWaistIn.shiftFractionTowards(
+    points.styleWaistOut,
+    options.backPocketHorizontalPlacement
+  )
+  points.pocketCenter = points.waistPocketCenter.shift(
+    angle - 90,
+    store.get('backPocketToWaistband')
+  )
+  points.pocketRight = points.pocketCenter.shift(angle, store.get('backPocketWidth') / 2)
+  points.pocketLeft = points.pocketCenter.shift(angle, store.get('backPocketWidth') / -2)
 
   // Back dart
   points.tmp1 = points.waistPocketCenter.rotate(6.66, points.pocketCenter)
   points.tmp2 = points.waistPocketCenter.rotate(-6.66, points.pocketCenter)
   points.backDartLeft = points.pocketCenter.shiftFractionTowards(points.tmp1, 1.05)
   points.backDartRight = points.pocketCenter.shiftFractionTowards(points.tmp2, 1.05)
-  let newBase = points.styleWaistIn.dist(points.backDartLeft)
-    + points.styleWaistOut.dist(points.backDartRight)
+  let newBase =
+    points.styleWaistIn.dist(points.backDartLeft) + points.styleWaistOut.dist(points.backDartRight)
   let delta = base - newBase
   // Adapt waist to new darted reality
   for (let p of ['styleWaistIn', 'crossSeamCurveStart', 'crossSeamCurveCp1']) {
-    points[p] = points[p].shift(a + 180, delta/2)
+    points[p] = points[p].shift(angle + 180, delta / 2)
   }
-  points.styleWaistOut = points.styleWaistOut.shift(a, delta/2)
+  points.styleWaistOut = points.styleWaistOut.shift(angle, delta / 2)
+
+  // Construct pocket tab
+  if (points.waistOut.x > points.seatOut.x) {
+    let outseam = new Path()
+      .move(points.styleWaistOut)
+      .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+    points.slantBottom = outseam.shiftAlong(store.get('slantLength'))
+  }
+  points.slantOut = points.styleWaistIn.shiftOutwards(points.styleWaistOut, store.get('slantWidth'))
+  points.pocketOpeningTop = points.slantOut.shiftTowards(
+    points.slantBottom,
+    store.get('pocketTabStart')
+  )
+  points.pocketOpeningBottom = points.pocketOpeningTop.shiftTowards(
+    points.slantBottom,
+    store.get('pocketTabInnerLength')
+  )
+  let slant = points.slantOut.angle(points.slantBottom)
+  points.pocketOpeningTopIn = points.pocketOpeningTop.shift(slant + 90, store.get('pocketTabWidth'))
+  points.pocketOpeningBottomIn = points.pocketOpeningTopIn.shift(
+    slant,
+    store.get('pocketTabOuterLength')
+  )
+
+  // Store waistband length
+  store.set(
+    'waistbandBack',
+    points.styleWaistIn.dist(points.backDartLeft) + points.backDartRight.dist(points.styleWaistOut)
+  )
 
   paths.saBase = drawPath()
   paths.seam = paths.saBase
     .insop('dart', new Path().line(points.pocketCenter))
+    .close()
     .attr('class', 'fabric')
   paths.saBase.setRender(false)
 
@@ -110,7 +127,33 @@ export default (part) => {
       .move(points.pocketLeft)
       .line(points.pocketRight)
       .attr('class', 'fabric dashed')
+    points.titleAnchor = new Point(points.knee.x, points.fork.y)
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 1,
+      title: 'back'
+    })
+    snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.5))
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: ['grainlineBottom', 'slantBottom', 'styleWaistOut']
+    })
+    paths.fold = new Path()
+      .move(points.pocketOpeningTop)
+      .line(points.pocketOpeningBottom)
+      .attr('class', 'help')
+
     if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .join(
+          new Path()
+            .move(points.floorIn)
+            .line(points.floorOut)
+            .offset(sa * 3)
+        )
+        .close()
+        .attr('class', 'fabric sa')
     }
 
     if (paperless) {
