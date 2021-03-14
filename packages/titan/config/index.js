@@ -15,6 +15,7 @@ export default {
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
+      'crossSeamCurveAngle',
       'crotchSeamCurveStart',
       'crotchSeamCurveBend',
       'crotchSeamCurveAngle',

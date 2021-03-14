@@ -77,7 +77,6 @@ export default (part) => {
     points.crotchSeamCurveCp1 = points.fork
       .shiftFractionTowards(points.crotchSeamCurveMax, options.crotchSeamCurveBend)
       .rotate(options.crotchSeamCurveAngle * -1, points.fork)
-    console.log(points.crotchSeamCurveCp1)
     points.crotchSeamCurveCp2 = points.crotchSeamCurveStart.shiftFractionTowards(
       points.crotchSeamCurveMax,
       options.crotchSeamCurveBend

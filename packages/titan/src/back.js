@@ -157,7 +157,6 @@ export default (part) => {
   if (points.cbSeat.x < points.waistX.x) {
     let delta = points.cbSeat.dx(points.waistX)
     points.waistIn = points.waistX.shift(180, delta * (1 - options.waistBalance))
-    console.log('balancing waist', points.waistIn)
   } else points.waistIn = points.waistX
   let width = points.waistX.x
   points.waistOut = points.waistIn.shift(180, width)
