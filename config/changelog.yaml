@@ -1,5 +1,17 @@
-2.14.1:
-  date:
+2.15.0:
+  date: unreleased
+
+  Added:
+    charlie:
+      - Inital release of the Charlie Chinos pattern
+    titan:
+      - Added the crossSeamCurveAngle option
+      - Added the crotchSeamCurveAngle option
+
+  Changed:
+    titan:
+      - Crotch- and Cross seam have been redrawn using the new angle options
+
   Fixed:
     titan:
       - Adapt seat control point when waist is dropped below the hip line

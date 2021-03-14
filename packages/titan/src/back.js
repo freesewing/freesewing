@@ -76,10 +76,9 @@ export default (part) => {
       points.crossSeamCurveMax,
       options.crossSeamCurveBend
     )
-    points.crossSeamCurveCp2 = points.fork.shiftFractionTowards(
-      points.crossSeamCurveMax,
-      options.crossSeamCurveBend
-    )
+    points.crossSeamCurveCp2 = points.fork
+      .shiftFractionTowards(points.crossSeamCurveMax, options.crossSeamCurveBend)
+      .rotate(options.crossSeamCurveAngle, points.fork)
   }
 
   // Shorthand

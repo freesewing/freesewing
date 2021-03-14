@@ -17,6 +17,7 @@ export default {
       'crossSeamCurveBend',
       'crotchSeamCurveStart',
       'crotchSeamCurveBend',
+      'crotchSeamCurveAngle',
       'grainlinePosition',
       'legBalance',
       'waistBalance'
@@ -59,8 +60,10 @@ export default {
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100 },
     crossSeamCurveBend: { pct: 65, min: 45, max: 85 },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20 },
     crotchSeamCurveStart: { pct: 80, min: 60, max: 95 },
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
     grainlinePosition: { pct: 45, min: 30, max: 60 }
   }
