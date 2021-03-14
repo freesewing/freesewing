@@ -9,6 +9,8 @@
       - Added the crotchSeamCurveAngle option
 
   Changed:
+    paco:
+      - Extended range and inreased default of the healEase option
     titan:
       - Crotch- and Cross seam have been redrawn using the new angle options
 
