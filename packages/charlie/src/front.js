@@ -2,13 +2,10 @@ export default (part) => {
   // Helper method to draw the outseam path
   const drawOutseam = () =>
     new Path()
-      .move(points.pocketSlantTop)
-      .line(points.pocketOpeningTop)
-      .line(points.pocketOpeningTopIn)
-      .line(points.pocketOpeningBottomIn)
-      .line(points.pocketOpeningBottom)
-      .line(points.pocketSlantBottom)
-      .join(sideSeam.split(points.pocketSlantBottom).pop())
+      .move(points.slantTop)
+      .line(points.slantCurveStart)
+      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+      .join(sideSeam.split(points.slantCurveEnd).pop())
 
   // Helper method to draw the outline path
   const drawPath = () => {
@@ -16,17 +13,9 @@ export default (part) => {
     return new Path()
       .move(points.floorIn)
       .curve(points.kneeInCp2, points.forkCp1, points.fork)
-      .join(
-        new Path()
-          .move(points.fork)
-          .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-          .split(points.flyBottom)
-          .shift()
-      )
-      .curve(points.flyCurveCp1, points.flyCurveCp2, points.flyCurveStart)
-      .line(points.flyTop)
+      .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
       .line(points.styleWaistIn)
-      .line(points.pocketSlantTop)
+      .line(points.slantTop)
       .join(outseam)
   }
 
@@ -48,26 +37,6 @@ export default (part) => {
     sa
   } = part.shorthand()
 
-  // Add fly extension
-  points.flyBottom = utils.curveIntersectsY(
-    points.crotchSeamCurveStart,
-    points.crotchSeamCurveCp2,
-    points.crotchSeamCurveCp1,
-    points.fork,
-    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
-  )
-  points.flyTop = points.styleWaistOut.shiftFractionTowards(
-    points.styleWaistIn,
-    1 + options.flyWidth
-  )
-  points.flyCorner = points.flyTop.shift(
-    points.styleWaistIn.angle(points.flyBottom),
-    points.styleWaistIn.dist(points.flyBottom)
-  )
-  points.flyCurveStart = points.flyBottom.rotate(-90, points.flyCorner)
-  points.flyCurveCp1 = points.flyBottom.shiftFractionTowards(points.flyCorner, options.flyCurve)
-  points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(points.flyCorner, options.flyCurve)
-
   // Helper object holding the Titan side seam path
   const sideSeam =
     points.waistOut.x < points.seatOut.x
@@ -79,79 +48,68 @@ export default (part) => {
           ._curve(points.seatOutCp1, points.seatOut)
           .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
 
+  // Draw fly J-seam
+  points.flyBottom = utils.curveIntersectsY(
+    points.crotchSeamCurveStart,
+    points.crotchSeamCurveCp2,
+    points.crotchSeamCurveCp1,
+    points.fork,
+    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
+  )
+  points.flyTop = points.styleWaistOut.shiftFractionTowards(
+    points.styleWaistIn,
+    1 - options.flyWidth
+  )
+  points.flyCorner = points.flyTop.shift(
+    points.styleWaistIn.angle(points.crotchSeamCurveStart),
+    points.styleWaistIn.dist(points.flyBottom)
+  )
+  points.flyCurveStart = points.flyBottom.rotate(90, points.flyCorner)
+  points.flyCurveCp1 = points.flyBottom.shiftFractionTowards(points.flyCorner, options.flyCurve)
+  points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(points.flyCorner, options.flyCurve)
+
   // Construct pocket slant
-  points.pocketSlantTop = points.styleWaistIn.shiftFractionTowards(
+  points.slantTop = points.styleWaistIn.shiftFractionTowards(
     points.styleWaistOut,
     1 - options.frontPocketSlantWidth
   )
-  points.pocketSlantLowest = sideSeam.intersectsY(points.fork.y).pop()
-  store.set('slantWidth', points.styleWaistOut.dist(points.pocketSlantTop))
+  points.slantLowest = sideSeam.intersectsY(points.fork.y).pop()
+  store.set('slantWidth', points.styleWaistOut.dist(points.slantTop))
   store.set(
     'slantLength',
-    sideSeam.split(points.pocketSlantLowest).shift().length() * options.frontPocketSlantDepth
+    sideSeam.split(points.slantLowest).shift().length() * options.frontPocketSlantDepth
   )
-  points.pocketSlantBottom = sideSeam.shiftAlong(store.get('slantLength'))
-
-  // Construct front pocket
-  let slant = points.pocketSlantTop.angle(points.pocketSlantBottom)
-  let base = points.pocketSlantTop.dist(points.pocketSlantBottom)
-  points.pocketOpeningTop = points.pocketSlantTop.shift(
-    slant,
-    (base * (1 - options.frontPocketOpening)) / 2
+  points.slantBottom = sideSeam.shiftAlong(store.get('slantLength'))
+  points.slantCurveStart = points.slantBottom.shiftFractionTowards(
+    points.slantTop,
+    options.frontPocketSlantRound
   )
-  points.pocketOpeningBottom = points.pocketSlantBottom.shift(
-    slant + 180,
-    (base * (1 - options.frontPocketOpening)) / 2
+  points.slantCurveEnd = sideSeam.shiftAlong(
+    points.slantBottom.dist(points.slantCurveStart) + store.get('slantLength')
   )
-  points.pocketOpeningTopIn = points.pocketOpeningTop.shift(
-    slant - 90,
-    base * options.frontPocketEntry
+  points.slantCurveCp1 = points.slantBottom.shiftFractionTowards(
+    points.slantCurveStart,
+    options.frontPocketSlantBend
   )
-  points.pocketOpeningBottomIn = utils.beamIntersectsY(
-    points.pocketOpeningTopIn,
-    points.pocketOpeningTopIn.shift(slant, 666),
-    points.pocketSlantBottom.y
+  points.slantCurveCp2 = sideSeam.shiftAlong(
+    points.slantBottom.dist(points.slantCurveCp1) + store.get('slantLength')
   )
-  macro('mirror', {
-    mirror: [points.pocketOpeningTop, points.pocketOpeningBottom],
-    points: [points.pocketOpeningTopIn, points.pocketOpeningBottomIn]
-  })
-  store.set('pocketTabWidth', base * options.frontPocketEntry)
-  store.set('pocketTabInnerLength', points.pocketOpeningTop.dist(points.pocketOpeningBottom))
-  store.set(
-    'pocketTabOuterLength',
-    points.mirroredPocketOpeningTopIn.dist(points.mirroredPocketOpeningBottomIn)
-  )
-  store.set('pocketTabStart', points.pocketSlantTop.dist(points.pocketOpeningTop))
 
   // Construct pocket bag
-  points.pocketbagTopLeft = utils.beamsIntersect(
-    points.mirroredPocketOpeningBottomIn,
-    points.mirroredPocketOpeningTopIn,
-    points.pocketSlantTop,
-    points.styleWaistIn
-  )
-  points.pocketbagTopRight = points.pocketbagTopLeft.shiftFractionTowards(
+  points.pocketbagTopRight = points.slantTop.shiftFractionTowards(
     points.styleWaistIn,
     options.frontPocketWidth
   )
   points.pocketbagBottomRight = points.pocketbagTopRight.shift(
-    points.pocketbagTopLeft.angle(points.pocketbagTopRight) - 90,
+    points.slantTop.angle(points.pocketbagTopRight) - 90,
     points.styleWaistIn.dy(points.fork) * options.frontPocketDepth * 1.5
   )
-  points.pocketbagBump = utils.beamIntersectsY(
-    points.mirroredPocketOpeningTopIn,
-    points.mirroredPocketOpeningBottomIn,
-    points.pocketSlantLowest.y
-  )
-  points.pocketbagBottomCp = new Point(
-    points.mirroredPocketOpeningBottomIn.x,
-    points.pocketbagBottomRight.y
-  )
+  points.pocketbagBottomCp2 = sideSeam.intersectsY(points.pocketbagBottomRight.y).pop()
   points.pocketbagBottom = points.pocketbagBottomRight.shiftFractionTowards(
-    points.pocketbagBottomCp,
+    points.pocketbagBottomCp2,
     0.5
   )
+  points.pocketbagBottomCp1 = points.slantCurveCp2.rotate(180, points.slantCurveEnd)
 
   // Draw path
   paths.seam = drawPath().close().attr('class', 'fabric')
@@ -174,41 +132,44 @@ export default (part) => {
       points.knee,
       points.grainlineBottom
     )
+    points.slantBottomNotch = new Path()
+      .move(points.slantCurveStart)
+      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+      .intersectsY(points.slantBottom.y)
+      .pop()
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['styleWaistIn', 'pocketSlantBottom', 'topPleat', 'grainlineBottom']
+      on: ['styleWaistIn', 'slantBottomNotch', 'topPleat', 'grainlineBottom']
     })
-    paths.flyHint = new Path()
-      .move(points.styleWaistIn)
-      .line(points.crotchSeamCurveStart)
-      .join(
-        new Path()
-          .move(points.crotchSeamCurveStart)
-          .curve(points.crotchSeamCurveCp2, points.crotchSeamCurveCp1, points.fork)
-          .split(points.flyBottom)
-          .shift()
-      )
-      .attr('class', 'fabric stoke-sm dashed')
-    paths.pocketEntry = new Path()
-      .move(points.pocketOpeningTop)
-      .line(points.mirroredPocketOpeningTopIn)
-      .line(points.mirroredPocketOpeningBottomIn)
-      .line(points.pocketOpeningBottom)
-      .attr('class', 'fabric dashed stroke-sm')
-    paths.pocketFold = new Path()
-      .move(points.pocketOpeningTop)
-      .line(points.pocketOpeningBottom)
-      .attr('class', 'help')
+    let Jseam = new Path()
+      .move(points.flyCurveStart)
+      .curve(points.flyCurveCp2, points.flyCurveCp1, points.flyBottom)
+    paths.Jseam = new Path()
+      .move(points.flyTop)
+      .join(Jseam)
+      .attr('class', 'dashed')
+      .attr('data-text', 'Left panel only')
+      .attr('data-text-class', 'center')
+    points.barTack1 = Jseam.reverse().shiftFractionAlong(0.1)
+    points.barTack2a = Jseam.shiftFractionAlong(0.2)
+    points.barTack2b = Jseam.shiftFractionAlong(0.35)
+    paths.barTack1 = paths.Jseam.split(points.barTack1).pop().attr('class', 'bartack')
+    paths.barTack2 = paths.Jseam.split(points.barTack2a)
+      .pop()
+      .split(points.barTack2b)
+      .shift()
+      .attr('class', 'bartack')
     paths.pocketBag = new Path()
-      .move(points.pocketbagTopRight)
+      .move(points.slantTop)
+      .line(points.slantCurveStart)
+      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+      .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
       .line(points.pocketbagBottomRight)
-      .line(points.pocketbagBottom)
-      .curve(points.pocketbagBottomCp, points.pocketbagBump, points.mirroredPocketOpeningBottomIn)
-      .line(points.pocketbagTopLeft)
+      .line(points.pocketbagTopRight)
       .attr('class', 'lining dashed')
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['pocketbagTopLeft', 'pocketbagTopRight']
+      on: ['slantTop', 'pocketbagTopRight']
     })
 
     if (sa) {

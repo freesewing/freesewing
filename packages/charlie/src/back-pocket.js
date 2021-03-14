@@ -17,24 +17,21 @@ export default (part) => {
     sa
   } = part.shorthand()
 
-  //store.set('backPocketToWaistband', base * options.backPocketVerticalPlacement)
-  //store.set('backPocketWidth', base * options.backPocketWidth)
-  //store.set('backPocketDepth', base * options.backPocketDepth)
-
   points.leftNotch = new Point(store.get('backPocketWidth') / -2, 0)
   points.rightNotch = points.leftNotch.flipX()
-  points.waistbandLeft = new Point(
-    points.leftNotch.x * 1.2,
-    store.get('backPocketToWaistband') * -1
-  )
+  points.waistbandLeft = new Point(points.leftNotch.x, store.get('backPocketToWaistband') * -1)
   points.waistbandRight = points.waistbandLeft.flipX()
+  points.curveStartLeft = new Point(points.leftNotch.x * 1.2, points.leftNotch.y)
+  points.curveStartRight = points.curveStartLeft.flipX()
+  points.cpLeft = points.curveStartLeft.shift(90, store.get('backPocketToWaistband') / 2)
+  points.cpRight = points.cpLeft.flipX()
   points.foldLeft = new Point(
-    points.waistbandLeft.x,
+    points.curveStartLeft.x,
     points.leftNotch.y + store.get('backPocketDepth')
   )
   points.foldRight = points.foldLeft.flipX()
   points.bottomLeft = new Point(
-    points.waistbandLeft.x,
+    points.curveStartLeft.x,
     points.foldLeft.y + store.get('backPocketDepth')
   )
   points.bottomRight = points.bottomLeft.flipX()
@@ -42,9 +39,11 @@ export default (part) => {
   paths.seam = new Path()
     .move(points.waistbandRight)
     .line(points.waistbandLeft)
+    ._curve(points.cpLeft, points.curveStartLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
-    .line(points.waistbandRight)
+    .line(points.curveStartRight)
+    .curve_(points.cpRight, points.waistbandRight)
     .close()
     .attr('class', 'lining')
 
@@ -57,8 +56,8 @@ export default (part) => {
     points.titleAnchor = points.rightNotch.shiftFractionTowards(points.foldLeft, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: 5,
-      title: 'pocketBag'
+      nr: 4,
+      title: 'backPocketBag'
     })
     points.logoAnchor = points.foldLeft.shiftFractionTowards(points.bottomRight, 0.5)
     snippets.logo = new Snippet('logo', points.logoAnchor)

@@ -17,54 +17,42 @@ export default (part) => {
     sa
   } = part.shorthand()
 
-  points.leftNotch = new Point(store.get('backPocketWidth') / -2, 0)
-  points.rightNotch = points.leftNotch.flipX()
-  points.topLeft = new Point(points.leftNotch.x * 1.2, store.get('backPocketToWaistband') * -1)
-  points.topRight = points.topLeft.flipX()
-  points.bottomLeft = new Point(points.leftNotch.x * 1.2, points.rightNotch.x * 0.6)
+  // Clean up
+  delete paths.fold
+  delete snippets.logo
+
+  points.bottomLeft = points.curveStartLeft.shift(-90, points.rightNotch.x / 1.75)
   points.bottomRight = points.bottomLeft.flipX()
 
   paths.saBase = new Path()
     .move(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
+    .line(points.curveStartRight)
+    .curve_(points.cpRight, points.waistbandRight)
+    .line(points.waistbandLeft)
+    ._curve(points.cpLeft, points.curveStartLeft)
     .line(points.bottomLeft)
     .setRender(false)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.bottomRight)
-    .close()
-    .setRender(true)
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.clone().close().setRender(true).attr('class', 'fabric')
 
   if (complete) {
     paths.opening = new Path()
       .move(points.leftNotch)
       .line(points.rightNotch)
       .attr('class', 'dashed')
-    points.titleAnchor = new Point(0, 0)
+    points.titleAnchor = points.rightNotch.shiftFractionTowards(points.leftNotch, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: '5b',
-      title: 'pocketFacing'
+      nr: 5,
+      title: 'backPocketBagFacing'
     })
-    points.grainlineTop = points.topLeft.shiftFractionTowards(points.topRight, 0.15)
-    points.grainlineBottom = points.bottomLeft.shiftFractionTowards(points.bottomRight, 0.15)
+    points.grainlineTop = points.waistbandLeft.shiftFractionTowards(points.waistbandRight, 0.15)
+    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom
     })
 
-    if (sa) {
-      let saBase = paths.saBase.offset(sa)
-      paths.sa = new Path()
-        .move(points.bottomRight)
-        .line(saBase.start())
-        .join(saBase)
-        .line(points.bottomLeft)
-        .attr('class', 'sa fabric')
-    }
-
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     if (paperless) {
     }
   }

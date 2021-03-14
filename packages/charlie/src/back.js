@@ -8,12 +8,9 @@ export default (part) => {
         .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
       return new Path()
         .move(points.slantOut)
-        .line(points.pocketOpeningTop)
-        .line(points.pocketOpeningTopIn)
-        .line(points.pocketOpeningBottomIn)
-        .line(points.pocketOpeningBottom)
-        .line(points.slantBottom)
-        .join(outseam.split(points.slantBottom).pop())
+        .line(points.slantCurveStart)
+        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+        .join(outseam.split(points.slantCurveEnd).pop())
         .reverse()
     } else {
       return new Path()
@@ -28,10 +25,10 @@ export default (part) => {
   const drawPath = () => {
     let waistIn = points.styleWaistIn || points.waistIn
     return drawOutseam()
-      .line(points.backDartRight)
+      ._curve(points.backDartRightCp, points.backDartRight)
       .noop('dart')
       .line(points.backDartLeft)
-      .line(waistIn)
+      .curve(points.backDartLeftCp, points.cbCp, waistIn)
       .line(points.crossSeamCurveStart)
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
       .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
@@ -73,8 +70,8 @@ export default (part) => {
   points.pocketLeft = points.pocketCenter.shift(angle, store.get('backPocketWidth') / -2)
 
   // Back dart
-  points.tmp1 = points.waistPocketCenter.rotate(6.66, points.pocketCenter)
-  points.tmp2 = points.waistPocketCenter.rotate(-6.66, points.pocketCenter)
+  points.tmp1 = points.waistPocketCenter.rotate(8.66, points.pocketCenter)
+  points.tmp2 = points.waistPocketCenter.rotate(-8.66, points.pocketCenter)
   points.backDartLeft = points.pocketCenter.shiftFractionTowards(points.tmp1, 1.05)
   points.backDartRight = points.pocketCenter.shiftFractionTowards(points.tmp2, 1.05)
   let newBase =
@@ -86,33 +83,53 @@ export default (part) => {
   }
   points.styleWaistOut = points.styleWaistOut.shift(angle, delta / 2)
 
-  // Construct pocket tab
+  // Helper object that holds the titan outseam path adapted for the dart
+  const titanOutseam = new Path()
+    .move(points.styleWaistOut)
+    .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+
+  // Construct pocket slant
   if (points.waistOut.x > points.seatOut.x) {
-    let outseam = new Path()
-      .move(points.styleWaistOut)
-      .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
-    points.slantBottom = outseam.shiftAlong(store.get('slantLength'))
+    points.slantBottom = titanOutseam.shiftAlong(store.get('slantLength'))
   }
   points.slantOut = points.styleWaistIn.shiftOutwards(points.styleWaistOut, store.get('slantWidth'))
-  points.pocketOpeningTop = points.slantOut.shiftTowards(
-    points.slantBottom,
-    store.get('pocketTabStart')
-  )
-  points.pocketOpeningBottom = points.pocketOpeningTop.shiftTowards(
-    points.slantBottom,
-    store.get('pocketTabInnerLength')
-  )
-  let slant = points.slantOut.angle(points.slantBottom)
-  points.pocketOpeningTopIn = points.pocketOpeningTop.shift(slant + 90, store.get('pocketTabWidth'))
-  points.pocketOpeningBottomIn = points.pocketOpeningTopIn.shift(
-    slant,
-    store.get('pocketTabOuterLength')
-  )
+
+  // Shape waist
+  let dist = points.styleWaistOut.dist(points.waistPocketCenter) / 3
+  points.cbCp = points.styleWaistIn
+    .shiftTowards(points.crossSeamCurveStart, dist)
+    .rotate(90, points.styleWaistIn)
+  points.backDartLeftCp = points.backDartLeft
+    .shiftTowards(points.pocketCenter, dist)
+    .rotate(-90, points.backDartLeft)
+  points.backDartRightCp = points.backDartRight
+    .shiftTowards(points.pocketCenter, dist)
+    .rotate(90, points.backDartRight)
 
   // Store waistband length
   store.set(
     'waistbandBack',
-    points.styleWaistIn.dist(points.backDartLeft) + points.backDartRight.dist(points.styleWaistOut)
+    new Path()
+      .move(points.styleWaistIn)
+      .curve(points.cbCp, points.backDartLeftCp, points.backDartLeft)
+      .length() +
+      new Path().move(points.backDartRight).curve_(points.backDartRightCp, points.slantOut).length()
+  )
+
+  // Round the slant
+  points.slantCurveStart = points.slantBottom.shiftFractionTowards(
+    points.slantOut,
+    options.frontPocketSlantRound
+  )
+  points.slantCurveEnd = titanOutseam.shiftAlong(
+    points.slantBottom.dist(points.slantCurveStart) + store.get('slantLength')
+  )
+  points.slantCurveCp1 = points.slantBottom.shiftFractionTowards(
+    points.slantCurveStart,
+    options.frontPocketSlantBend
+  )
+  points.slantCurveCp2 = titanOutseam.shiftAlong(
+    points.slantBottom.dist(points.slantCurveCp1) + store.get('slantLength')
   )
 
   paths.saBase = drawPath()
@@ -134,14 +151,15 @@ export default (part) => {
       title: 'back'
     })
     snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.5))
+    points.slantBottomNotch = new Path()
+      .move(points.slantCurveStart)
+      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+      .intersectsY(points.slantBottom.y)
+      .pop()
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['grainlineBottom', 'slantBottom', 'styleWaistOut']
+      on: ['grainlineBottom', 'slantBottomNotch']
     })
-    paths.fold = new Path()
-      .move(points.pocketOpeningTop)
-      .line(points.pocketOpeningBottom)
-      .attr('class', 'help')
 
     if (sa) {
       paths.sa = paths.saBase

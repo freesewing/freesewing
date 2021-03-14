@@ -2,6 +2,7 @@ import freesewing from '@freesewing/core'
 import Titan from '@freesewing/titan'
 import plugins from '@freesewing/plugin-bundle'
 import mirrorPlugin from '@freesewing/plugin-mirror'
+import buttonsPlugin from '@freesewing/plugin-buttons'
 import config from '../config'
 // Parts
 import draftBack from './back'
@@ -10,8 +11,13 @@ import draftWaistband from './waistband'
 import draftWaistbandButtonSide from './waistband-button-side'
 import draftWaistbandButtonholeSide from './waistband-buttonhole-side'
 import draftFrontPocket from './front-pocket'
+import draftFrontPocketFacing from './front-pocket-facing'
 import draftBackPocket from './back-pocket'
 import draftBackPocketFacing from './back-pocket-facing'
+import draftBackPocketJet from './back-pocket-jet'
+import draftFlyFacing from './fly-facing'
+import draftFlyExtention from './fly-extention'
+import draftBeltLoop from './beltloop'
 
 // Hack the waistHeight option to make room for waistband
 const waistbandPlugin = {
@@ -27,7 +33,12 @@ const waistbandPlugin = {
 }
 
 // Create design
-const Pattern = new freesewing.Design(config, [plugins, mirrorPlugin, waistbandPlugin])
+const Pattern = new freesewing.Design(config, [
+  plugins,
+  mirrorPlugin,
+  buttonsPlugin,
+  waistbandPlugin
+])
 
 // Attach titan draft methods to prototype
 for (let p of ['Front', 'Back']) {
@@ -43,7 +54,12 @@ Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
 Pattern.prototype.draftWaistbandButtonSide = (part) => draftWaistbandButtonSide(part)
 Pattern.prototype.draftWaistbandButtonholeSide = (part) => draftWaistbandButtonholeSide(part)
 Pattern.prototype.draftFrontPocket = (part) => draftFrontPocket(part)
+Pattern.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part)
 Pattern.prototype.draftBackPocket = (part) => draftBackPocket(part)
 Pattern.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
+Pattern.prototype.draftBackPocketJet = (part) => draftBackPocketJet(part)
+Pattern.prototype.draftFlyFacing = (part) => draftFlyFacing(part)
+Pattern.prototype.draftFlyExtention = (part) => draftFlyExtention(part)
+Pattern.prototype.draftBeltLoop = (part) => draftBeltLoop(part)
 
 export default Pattern

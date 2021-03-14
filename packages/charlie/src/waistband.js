@@ -29,6 +29,15 @@ export default (part) => {
   points.bottom = new Point(points.top.x, points.bottomLeft.y)
   points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
 
+  points.cfRight = points.topRight.shift(-90, store.get('waistbandFly'))
+  points.cfLeft = new Point(0, points.cfRight.y)
+  points.rsRight = points.cfRight.shift(-90, store.get('waistbandFront'))
+  points.rsLeft = new Point(0, points.rsRight.y)
+  points.cbRight = points.rsRight.shift(-90, store.get('waistbandBack'))
+  points.cbLeft = new Point(0, points.cbRight.y)
+  points.lsRight = points.cbRight.shift(-90, store.get('waistbandBack'))
+  points.lsLeft = new Point(0, points.lsRight.y)
+
   paths.saBase = new Path()
     .move(points.topLeft)
     .line(points.topRight)
@@ -38,43 +47,62 @@ export default (part) => {
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric').setRender(true)
 
   if (complete) {
-    points.flyNotchRight = points.topRight.shift(-90, store.get('waistbandFly'))
-    points.flyNotchLeft = new Point(0, points.flyNotchRight.y)
-    points.firstSideNotchRight = points.flyNotchRight.shift(-90, store.get('waistbandFront'))
-    points.firstSideNotchLeft = new Point(0, points.firstSideNotchRight.y)
-    points.cbNotchRight = points.firstSideNotchRight.shift(-90, store.get('waistbandBack'))
-    points.cbNotchLeft = new Point(0, points.cbNotchRight.y)
-    points.secondSideNotchRight = points.cbNotchRight.shift(-90, store.get('waistbandBack'))
-    points.secondSideNotchLeft = new Point(0, points.secondSideNotchRight.y)
     macro('sprinkle', {
       snippet: 'notch',
-      on: [
-        'flyNotchRight',
-        'flyNotchLeft',
-        'firstSideNotchRight',
-        'firstSideNotchLeft',
-        'cbNotchRight',
-        'cbNotchLeft',
-        'secondSideNotchRight',
-        'secondSideNotchLeft'
-      ]
+      on: ['cfRight', 'cfLeft', 'rsRight', 'rsLeft', 'cbRight', 'cbLeft', 'lsRight', 'lsLeft']
     })
-    points.titleAnchor = points.cbNotchLeft.shiftFractionTowards(points.cbNotchRight, 0.5)
-    points.logoAnchor = points.secondSideNotchLeft.shiftFractionTowards(
-      points.secondSideNotchRight,
-      0.5
-    )
+    points.titleAnchor = points.top.shiftFractionTowards(points.bottom, 0.4)
+    points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
     macro('title', {
       at: points.titleAnchor,
       nr: 3,
-      title: 'waistband'
+      title: 'waistband',
+      rotation: 90
     })
     macro('grainline', {
-      from: points.firstSideNotchLeft,
-      to: points.firstSideNotchRight
+      from: points.rsLeft.shift(90, 30),
+      to: points.rsRight.shift(90, 30)
     })
+    paths.cf = new Path()
+      .move(points.cfLeft)
+      .line(points.cfRight)
+      .attr('class', 'dashed')
+      .attr('data-text', 'centerFront')
+      .attr('data-text-class', 'center')
+    paths.cf2 = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .attr('class', 'hidden')
+      .attr('data-text', 'centerFront')
+      .attr('data-text-class', 'center')
+    paths.cb = new Path()
+      .move(points.cbLeft)
+      .line(points.cbRight)
+      .attr('class', 'dashed')
+      .attr('data-text', 'centerBack')
+      .attr('data-text-class', 'center')
+    paths.rs = new Path()
+      .move(points.rsLeft)
+      .line(points.rsRight)
+      .attr('class', 'dashed')
+      .attr('data-text', 'rightSide')
+      .attr('data-text-class', 'center')
+    paths.ls = new Path()
+      .move(points.lsLeft)
+      .line(points.lsRight)
+      .attr('class', 'dashed')
+      .attr('data-text', 'leftSide')
+      .attr('data-text-class', 'center')
     snippets.logo = new Snippet('logo', points.logoAnchor)
     paths.fold = new Path().move(points.top).line(points.bottom).attr('class', 'fabric help')
+    points.button = new Point(points.topRight.x * 0.7, points.cfRight.y * 0.6)
+    let buttonScale = points.top.x / 14
+    snippets.button = new Snippet('button', points.button).attr('data-scale', buttonScale)
+    points.buttonhole = new Point(points.button.x, points.bottom.y - points.cfRight.y * 0.4)
+    snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr(
+      'data-scale',
+      buttonScale
+    )
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa * -1)

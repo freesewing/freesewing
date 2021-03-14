@@ -25,38 +25,58 @@ export default (part) => {
   let slant = points.pocketbagBottomRight.angle(points.pocketbagTopRight)
   for (let id of [
     'topPleat',
-    'pocketbagTopLeft',
-    'mirroredPocketOpeningTopIn',
-    'mirroredPocketOpeningBottomIn',
-    'pocketbagBump',
-    'pocketbagBottomCp',
+    'slantTop',
+    'slantBottom',
+    'slantTop',
+    'pocketbagBottomCp2',
     'pocketbagBottom',
     'pocketbagBottomRight'
   ])
     points[id] = points[id].rotate(-1 * (slant - 90), points.pocketbagTopRight)
-  console.log(slant)
 
+  // Draw in facing boundary
+  points.facingTop = points.slantTop.shiftFractionTowards(points.pocketbagTopRight, 0.35)
+  points.facingDirection = points.slantCurveStart.shift(0, points.slantTop.dist(points.facingTop))
+  // YOLO
+  points.facingBottom = new Path()
+    .move(points.facingTop)
+    .line(points.facingTop.shiftFractionTowards(points.facingDirection, 4))
+    .intersects(
+      new Path()
+        .move(points.slantCurveStart)
+        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+        .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
+        .line(points.pocketbagBottomRight)
+    )
+    .pop()
+
+  // Paths
   paths.saBase = new Path()
     .move(points.pocketbagTopRight)
-    .line(points.pocketbagTopLeft)
-    .line(points.mirroredPocketOpeningBottomIn)
-    .curve(points.pocketbagBump, points.pocketbagBottomCp, points.pocketbagBottom)
+    .line(points.slantTop)
+    .line(points.slantCurveStart)
+    .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+    .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
     .line(points.pocketbagBottomRight)
   paths.seam = paths.saBase
     .clone()
     .line(points.pocketbagTopRight)
     .close()
-    .attr('class', 'lining', true)
+    .attr('class', 'fabric', true)
+  paths.facing = new Path()
+    .move(points.facingTop)
+    .line(points.facingBottom)
+    .attr('class', 'facing dashed')
 
   if (complete) {
     points.titleAnchor = points.pocketbagTopRight.shiftFractionTowards(
-      points.pocketbagBottomCp,
+      points.pocketbagBottomCp2,
       0.5
     )
     macro('title', {
       at: points.titleAnchor,
-      nr: 4,
-      title: 'pocketBag'
+      nr: 6,
+      title: 'frontPocketBag'
     })
     macro('cutonfold', {
       from: points.pocketbagBottomRight,
@@ -69,7 +89,7 @@ export default (part) => {
         .move(points.pocketbagTopRight)
         .join(paths.saBase.offset(sa))
         .line(points.pocketbagBottomRight)
-        .attr('class', 'lining sa')
+        .attr('class', 'fabric sa')
     }
 
     if (paperless) {
