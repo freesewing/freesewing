@@ -188,7 +188,17 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-dark;
   }
-
+  path.bartack {
+    stroke: $fc-draft-fabric-light;
+    stroke-width: 2;
+    stroke: #fd7e14;
+    stroke-opacity: 0.7;
+    stroke-linecap: butt;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #212529;
@@ -294,7 +304,17 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-light;
   }
-
+  path.bartack {
+    stroke: $fc-draft-fabric-light;
+    stroke-width: 2;
+    stroke: #ff922b;
+    stroke-opacity: 0.7;
+    stroke-linecap: butt;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #f8f9fa;
