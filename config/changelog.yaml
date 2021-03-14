@@ -4,6 +4,9 @@
   Added:
     charlie:
       - Inital release of the Charlie Chinos pattern
+    plugin-buttons:
+      - Added the buttonhole-end snippet
+      - Added the buttonhole-start snippet
     titan:
       - Added the crossSeamCurveAngle option
       - Added the crotchSeamCurveAngle option
@@ -17,6 +20,7 @@
   Fixed:
     titan:
       - Adapt seat control point when waist is dropped below the hip line
+      - Removed lingering console.log statements
 
 2.14.0:
   date: 2021-03-07
