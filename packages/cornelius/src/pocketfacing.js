@@ -22,7 +22,14 @@ export default function (part) {
   points.pocketFacingBR = paths.sideSeam.shiftAlong(
     paths.sideSeam.length() - (waist / 2 / 4.5) * 3.5 - halfInch * 3 + sa
   )
-  paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].setRender(false)
+  // If we split at the exact point where the curves join, things fall apart
+  // So let's work around that until this is handled in core
+  if (points.pocketFacingBR.sitsOn(points.pAextra))
+    paths.sideSeam = new Path()
+      .move(points.pAextra)
+      .curve(points.pAextraCPu, points.pUcpA, points.pU)
+      .setRender(false)
+  else paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].setRender(false)
 
   points.brCPtl = points.pocketFacingBR.shift(
     points.pocketFacingBR.angle(points.pocketSide) + 90,

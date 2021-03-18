@@ -24,6 +24,8 @@
       - Crotch- and Cross seam have been redrawn using the new angle options
 
   Fixed:
+    cornelius:
+      - Handle edge-case where splitting a path on and endpoint causes things to break
     titan:
       - Adapt seat control point when waist is dropped below the hip line
       - Removed lingering console.log statements
