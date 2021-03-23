@@ -66,6 +66,10 @@ export default function (part) {
     options.frontArmholeCurvature
   )
   points.armholePitchCp2 = points.armholePitchCp1.rotate(180, points.armholePitch)
+  // Dolls need clothes too
+  if (points.armholePitchCp2.y < points.shoulder.y) {
+    points.armholePitchCp2.y = points.shoulder.y + points.shoulder.dy(points.armholePitch) / 2
+  }
 
   // Draft body without breasts
   points.cfHem = new Point(0, measurements.hpsToWaistFront)

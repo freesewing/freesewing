@@ -106,6 +106,10 @@ export default function (part) {
     options.backArmholeCurvature
   )
   points.armholePitchCp2 = points.armholePitchCp1.rotate(180, points.armholePitch)
+  // Dolls need clothes too
+  if (points.armholePitchCp2.y < points.shoulder.y) {
+    points.armholePitchCp2.y = points.shoulder.y + points.shoulder.dy(points.armholePitch) / 2
+  }
 
   // Store the back width at bust level
   points.bustSide = utils.curveIntersectsY(
