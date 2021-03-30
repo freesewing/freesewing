@@ -96,9 +96,9 @@ export default {
     waistbandFactor: 0.1,
 
     // Fit (from Titan)
-    waistEase: { pct: 3, min: 0, max: 10 },
-    seatEase: { pct: 3, min: 0, max: 10 },
-    kneeEase: { pct: 15, min: 1, max: 25 },
+    waistEase: { pct: 1, min: 0, max: 5 },
+    seatEase: { pct: 5, min: 0, max: 10 },
+    kneeEase: { pct: 15, min: 10, max: 30 },
 
     // Style (from Titan)
     waistHeight: { pct: 15, min: 0, max: 30 },
@@ -124,8 +124,8 @@ export default {
     backPocketFacing: { bool: true },
 
     // Front pockets
-    frontPocketSlantDepth: { pct: 80, min: 60, max: 100 },
-    frontPocketSlantWidth: { pct: 15, min: 5, max: 25 },
+    frontPocketSlantDepth: { pct: 85, min: 70, max: 100 },
+    frontPocketSlantWidth: { pct: 25, min: 15, max: 35 },
     frontPocketSlantRound: { pct: 30, min: 0, max: 50 },
     frontPocketSlantBend: { pct: 25, min: 0, max: 50 },
     frontPocketOpening: { pct: 80, min: 60, max: 90 },
