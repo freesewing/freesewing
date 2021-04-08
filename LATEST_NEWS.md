@@ -7,9 +7,9 @@ We have decided to start a newsletter, so you should subscribe to it.
  - If not, you can still subscribe at [/community/newsletter/](https://freesewing.org/community/newsletter/).
 
 
-##### Next contributor call on 20 March
+##### Next contributor call on 17 April
 
-The next contributor call is on [20 March 2021](https://github.com/freesewing/freesewing/issues/912).
+The next contributor call is on 17 April 2021.
 
 All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
 Notes and todos are [available on Github](https://todo.freesewing.org/).
@@ -20,9 +20,8 @@ Notes and todos are [available on Github](https://todo.freesewing.org/).
 Keep those mask on people, and make sure to make your own so we can
 leave the PPE for the frontline workers.
 
-Our [face mask pattern](/blog/facemask-frenzy) is recommended by 
+Our [face mask pattern](/blog/facemask-frenzy) is recommended by
 [the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html),
 [Forbes](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/),
 [Make Magazine](https://makezine.com/projects/sew-your-own-face-mask-from-scratch/),
 and countless of others.
-
