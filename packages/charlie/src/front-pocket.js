@@ -34,7 +34,7 @@ export default (part) => {
   ])
     points[id] = points[id].rotate(-1 * (slant - 90), points.pocketbagTopRight)
 
-  // Draw in facing boundary
+  // Construct facing boundary
   points.facingTop = points.slantTop.shiftFractionTowards(points.pocketbagTopRight, 0.35)
   points.facingDirection = points.slantCurveStart.shift(0, points.slantTop.dist(points.facingTop))
   // YOLO
@@ -53,20 +53,22 @@ export default (part) => {
   // Paths
   paths.saBase = new Path()
     .move(points.pocketbagTopRight)
-    .line(points.slantTop)
-    .line(points.slantCurveStart)
-    .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-    .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
-    .line(points.pocketbagBottomRight)
+    .line(points.facingTop)
+    .line(points.facingBottom)
+    .join(
+      new Path()
+        .move(points.slantCurveStart)
+        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+        .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
+        .line(points.pocketbagBottomRight)
+        .split(points.facingBottom)
+        .pop()
+    )
   paths.seam = paths.saBase
     .clone()
     .line(points.pocketbagTopRight)
     .close()
-    .attr('class', 'fabric', true)
-  paths.facing = new Path()
-    .move(points.facingTop)
-    .line(points.facingBottom)
-    .attr('class', 'facing dashed')
+    .attr('class', 'lining', true)
 
   if (complete) {
     points.titleAnchor = points.pocketbagTopRight.shiftFractionTowards(
@@ -75,7 +77,7 @@ export default (part) => {
     )
     macro('title', {
       at: points.titleAnchor,
-      nr: 6,
+      nr: 3,
       title: 'frontPocketBag'
     })
     macro('cutonfold', {
@@ -83,13 +85,14 @@ export default (part) => {
       to: points.pocketbagTopRight,
       grainline: true
     })
+    snippets.notch = new Snippet('notch', points.facingDirection)
 
     if (sa) {
       paths.sa = new Path()
         .move(points.pocketbagTopRight)
         .join(paths.saBase.offset(sa))
         .line(points.pocketbagBottomRight)
-        .attr('class', 'fabric sa')
+        .attr('class', 'lining sa')
     }
 
     if (paperless) {

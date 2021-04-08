@@ -21,7 +21,7 @@ export default (part) => {
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]
 
-  paths.saBase = new Path()
+  paths.seam = new Path()
     .move(points.facingTop)
     .line(points.slantTop)
     .line(points.slantCurveStart)
@@ -33,24 +33,27 @@ export default (part) => {
         .split(points.facingBottom)
         .shift()
     )
-  paths.seam = paths.saBase.clone().line(points.facingTop).close().attr('class', 'fabric', true)
+    .line(points.facingTop)
+    .close()
+    .attr('class', 'fabric', true)
 
   if (complete) {
     points.titleAnchor = points.slantBottomNotch.shift(0, 10)
     macro('title', {
       at: points.titleAnchor,
-      nr: 7,
+      nr: 4,
       title: 'frontPocketBagFacing'
     })
     macro('grainline', {
       from: points.slantTop,
       to: new Point(points.slantTop.x, points.facingDirection.y)
     })
+    snippets.notch = new Snippet('notch', points.facingDirection)
 
     if (sa) {
-      paths.sa = paths.saBase.clone().offset(sa).line(points.facingBottom)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
       // Can't call start() if we don't store the result
-      paths.sa = paths.sa.move(paths.sa.start()).line(points.facingTop).attr('class', 'fabric sa')
+      //paths.sa = paths.sa.move(paths.sa.start()).line(points.facingTop).attr('class', 'fabric sa')
     }
 
     if (paperless) {
