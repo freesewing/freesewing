@@ -37,7 +37,7 @@ export default (part) => {
   if (complete) {
     macro('title', {
       at: new Point(width / 4, length / 4),
-      nr: 666,
+      nr: 11,
       title: 'beltLoop',
       scale: 0.3,
       rotation: 90

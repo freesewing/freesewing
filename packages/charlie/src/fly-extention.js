@@ -56,7 +56,7 @@ export default (part) => {
     points.titleAnchor = points.flyCurveStart
     macro('title', {
       at: points.titleAnchor,
-      nr: 5,
+      nr: 9,
       title: 'flyExtention'
     })
     if (sa)

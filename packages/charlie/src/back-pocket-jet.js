@@ -45,7 +45,7 @@ export default (part) => {
     points.titleAnchor = points.rightNotch.shiftFractionTowards(points.leftNotch, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: 666,
+      nr: 3,
       title: 'backPocketJet',
       scale: 0.5
     })

@@ -41,7 +41,7 @@ export default (part) => {
     points.titleAnchor = points.slantBottomNotch.shift(0, 10)
     macro('title', {
       at: points.titleAnchor,
-      nr: 4,
+      nr: 7,
       title: 'frontPocketBagFacing'
     })
     macro('grainline', {

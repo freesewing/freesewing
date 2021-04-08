@@ -55,7 +55,7 @@ export default (part) => {
     points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
     macro('title', {
       at: points.titleAnchor,
-      nr: 3,
+      nr: 10,
       title: 'waistband',
       rotation: 90
     })

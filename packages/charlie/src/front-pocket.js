@@ -77,7 +77,7 @@ export default (part) => {
     )
     macro('title', {
       at: points.titleAnchor,
-      nr: 3,
+      nr: 6,
       title: 'frontPocketBag'
     })
     macro('cutonfold', {

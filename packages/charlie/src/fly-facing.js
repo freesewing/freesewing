@@ -45,7 +45,7 @@ export default (part) => {
     points.titleAnchor = points.grainlineTop.shiftFractionTowards(points.grainlineBottom, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: 4,
+      nr: 8,
       title: 'flyFacing'
     })
     if (sa)
