@@ -56,6 +56,13 @@ export default (part) => {
     points.fork,
     points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
   )
+  points.flyExtensionBottom = utils.curveIntersectsY(
+    points.crotchSeamCurveStart,
+    points.crotchSeamCurveCp2,
+    points.crotchSeamCurveCp1,
+    points.fork,
+    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength * 1.25).y
+  )
   points.flyTop = points.styleWaistOut.shiftFractionTowards(
     points.styleWaistIn,
     1 - options.flyWidth
@@ -160,7 +167,14 @@ export default (part) => {
     store.set('slantTopNotchDistance', points.slantTop.dist(points.slantTopNotch))
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['slantBottomNotch', 'slantTopNotch', 'topPleat', 'grainlineBottom']
+      on: [
+        'slantBottomNotch',
+        'slantTopNotch',
+        'topPleat',
+        'grainlineBottom',
+        'flyBottom',
+        'flyExtensionBottom'
+      ]
     })
     let Jseam = new Path()
       .move(points.flyCurveStart)
