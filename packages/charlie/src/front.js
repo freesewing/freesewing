@@ -111,6 +111,25 @@ export default (part) => {
   )
   points.pocketbagBottomCp1 = points.slantCurveCp2.rotate(180, points.slantCurveEnd)
 
+  // Construct facing boundary
+  points.pocketFacingTop = points.slantTop.shiftFractionTowards(points.pocketbagTopRight, 0.35)
+  points.facingDirection = points.slantCurveStart.shift(
+    0,
+    points.slantTop.dist(points.pocketFacingTop)
+  )
+  // YOLO
+  points.pocketFacingBottom = new Path()
+    .move(points.pocketFacingTop)
+    .line(points.pocketFacingTop.shiftFractionTowards(points.facingDirection, 4))
+    .intersects(
+      new Path()
+        .move(points.slantCurveStart)
+        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+        .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
+        .line(points.pocketbagBottomRight)
+    )
+    .pop()
+
   // Draw path
   paths.seam = drawPath().close().attr('class', 'fabric')
 
@@ -137,9 +156,11 @@ export default (part) => {
       .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
       .intersectsY(points.slantBottom.y)
       .pop()
+    points.slantTopNotch = points.slantTop.shiftFractionTowards(points.slantCurveStart, 0.1)
+    store.set('slantTopNotchDistance', points.slantTop.dist(points.slantTopNotch))
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['styleWaistIn', 'slantBottomNotch', 'topPleat', 'grainlineBottom']
+      on: ['slantBottomNotch', 'slantTopNotch', 'topPleat', 'grainlineBottom']
     })
     let Jseam = new Path()
       .move(points.flyCurveStart)
@@ -166,11 +187,9 @@ export default (part) => {
       .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
       .line(points.pocketbagBottomRight)
       .line(points.pocketbagTopRight)
+      .move(points.pocketFacingTop)
+      .line(points.pocketFacingBottom)
       .attr('class', 'lining dashed')
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['slantTop', 'pocketbagTopRight']
-    })
 
     if (sa) {
       paths.sa = drawPath()

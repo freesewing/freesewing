@@ -34,34 +34,18 @@ export default (part) => {
   ])
     points[id] = points[id].rotate(-1 * (slant - 90), points.pocketbagTopRight)
 
-  // Construct facing boundary
-  points.facingTop = points.slantTop.shiftFractionTowards(points.pocketbagTopRight, 0.35)
-  points.facingDirection = points.slantCurveStart.shift(0, points.slantTop.dist(points.facingTop))
-  // YOLO
-  points.facingBottom = new Path()
-    .move(points.facingTop)
-    .line(points.facingTop.shiftFractionTowards(points.facingDirection, 4))
-    .intersects(
-      new Path()
-        .move(points.slantCurveStart)
-        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-        .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
-        .line(points.pocketbagBottomRight)
-    )
-    .pop()
-
   // Paths
   paths.saBase = new Path()
     .move(points.pocketbagTopRight)
-    .line(points.facingTop)
-    .line(points.facingBottom)
+    .line(points.pocketFacingTop)
+    .line(points.pocketFacingBottom)
     .join(
       new Path()
         .move(points.slantCurveStart)
         .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
         .curve(points.pocketbagBottomCp1, points.pocketbagBottomCp2, points.pocketbagBottom)
         .line(points.pocketbagBottomRight)
-        .split(points.facingBottom)
+        .split(points.pocketFacingBottom)
         .pop()
     )
   paths.seam = paths.saBase

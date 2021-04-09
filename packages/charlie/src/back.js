@@ -156,9 +156,13 @@ export default (part) => {
       .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
       .intersectsY(points.slantBottom.y)
       .pop()
+    points.slantTopNotch = points.slantOut.shiftTowards(
+      points.slantCurveStart,
+      store.get('slantTopNotchDistance')
+    )
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['grainlineBottom', 'slantBottomNotch']
+      on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch']
     })
 
     if (sa) {
