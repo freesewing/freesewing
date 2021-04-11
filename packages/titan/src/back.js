@@ -191,10 +191,10 @@ export default (part) => {
   store.set('outseamBack', drawOutseam().length())
 
   // Only now style the waist lower if requested
-  if (options.waistHeight < 1) {
+  if (options.waistHeight < 1 || options.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam()
       .reverse()
-      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight))
+      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight) + options.waistbandWidth)
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,
       points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),

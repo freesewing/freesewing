@@ -213,7 +213,10 @@ export default (part) => {
   // Control points to shape the legs towards the seat
   points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
   points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
-  points.seatOutCp1 = points.seatOut.shift(90, measurements.waistToHips * options.waistHeight)
+  points.seatOutCp1 = points.seatOut.shift(
+    90,
+    measurements.waistToHips * options.waistHeight + options.waistbandWidth
+  )
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 
   // Balance the waist
@@ -267,9 +270,9 @@ export default (part) => {
   adaptInseam()
 
   // Only now style the waist lower if requested
-  if (options.waistHeight < 1) {
+  if (options.waistHeight < 1 || options.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam().shiftAlong(
-      measurements.waistToHips * (1 - options.waistHeight)
+      measurements.waistToHips * (1 - options.waistHeight) + options.waistbandWidth
     )
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,

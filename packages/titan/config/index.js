@@ -21,7 +21,8 @@ export default {
       'crotchSeamCurveAngle',
       'grainlinePosition',
       'legBalance',
-      'waistBalance'
+      'waistBalance',
+      'waistbandWidth'
     ]
   },
   measurements: [
@@ -68,6 +69,7 @@ export default {
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
     crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
-    grainlinePosition: { pct: 45, min: 30, max: 60 }
+    grainlinePosition: { pct: 45, min: 30, max: 60 },
+    waistbandWidth: { mm: 0, min: 0, max: 60 }
   }
 }
