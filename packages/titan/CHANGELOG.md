@@ -1,6 +1,22 @@
 # Change log for: @freesewing/titan
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added the crossSeamCurveAngle option
+ - Added the crotchSeamCurveAngle option
+
+### Changed
+
+ - Crotch- and Cross seam have been redrawn using the new angle options
+
+### Fixed
+
+ - Adapt seat control point when waist is dropped below the hip line
+ - Removed lingering console.log statements
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

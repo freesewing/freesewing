@@ -38,7 +38,9 @@ export default {
     'waistToSeat',
     'waistToUpperLeg'
   ],
-  parts: ['back', 'front'],
+  dependencies: {
+    front: 'back'
+  },
   options: {
     // Constants
     titanPaperless: true,
