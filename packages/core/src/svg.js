@@ -1,5 +1,5 @@
 import Attributes from './attributes'
-
+import { round } from './utils'
 import { version } from '../package.json'
 
 function Svg(pattern) {
@@ -46,8 +46,8 @@ Svg.prototype.render = function (pattern) {
   this.idPrefix = pattern.settings.idPrefix
   this.runHooks('preRender')
   if (!pattern.settings.embed) {
-    this.attributes.add('width', pattern.width + 'mm')
-    this.attributes.add('height', pattern.height + 'mm')
+    this.attributes.add('width', round(pattern.width) + 'mm')
+    this.attributes.add('height', round(pattern.height) + 'mm')
   }
   this.attributes.add('viewBox', `0 0 ${pattern.width} ${pattern.height}`)
   this.head = this.renderHead()
@@ -197,8 +197,8 @@ Svg.prototype.renderText = function (point) {
     }
     this.text = this.insertText(joint)
   }
-  point.attributes.set('data-text-x', point.x)
-  point.attributes.set('data-text-y', point.y)
+  point.attributes.set('data-text-x', round(point.x))
+  point.attributes.set('data-text-y', round(point.y))
   let lineHeight = point.attributes.get('data-text-lineheight') || 12
   point.attributes.remove('data-text-lineheight')
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs('data-text-')}>`
@@ -208,7 +208,7 @@ Svg.prototype.renderText = function (point) {
     let lines = this.text.split('\n')
     svg += `<tspan>${lines.shift()}</tspan>`
     for (let line of lines) {
-      svg += `<tspan x="${point.x}" dy="${lineHeight}">${line}</tspan>`
+      svg += `<tspan x="${round(point.x)}" dy="${lineHeight}">${line}</tspan>`
     }
   } else {
     svg += `<tspan>${this.escapeText(this.text)}</tspan>`
@@ -224,15 +224,15 @@ Svg.prototype.escapeText = function (text) {
 }
 
 Svg.prototype.renderCircle = function (point) {
-  return `<circle cx="${point.x}" cy="${point.y}" r="${point.attributes.get(
+  return `<circle cx="${round(point.x)}" cy="${round(point.y)}" r="${point.attributes.get(
     'data-circle'
   )}" ${point.attributes.renderIfPrefixIs('data-circle-')}></circle>`
 }
 
 /** Returns SVG code for a snippet */
 Svg.prototype.renderSnippet = function (snippet, part) {
-  let x = snippet.anchor.x
-  let y = snippet.anchor.y
+  let x = round(snippet.anchor.x)
+  let y = round(snippet.anchor.y)
   let scale = snippet.attributes.get('data-scale')
   if (scale) {
     snippet.attributes.add('transform', `translate(${x}, ${y})`)

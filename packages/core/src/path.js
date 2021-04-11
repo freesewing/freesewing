@@ -7,7 +7,8 @@ import {
   curvesIntersect,
   pointOnLine,
   pointOnCurve,
-  curveEdge
+  curveEdge,
+  round
 } from './utils'
 
 function Path(debug = false) {
@@ -159,13 +160,15 @@ Path.prototype.asPathstring = function () {
   for (let op of this.ops) {
     switch (op.type) {
       case 'move':
-        d += `M ${op.to.x},${op.to.y}`
+        d += `M ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'line':
-        d += ` L ${op.to.x},${op.to.y}`
+        d += ` L ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'curve':
-        d += ` C ${op.cp1.x},${op.cp1.y} ${op.cp2.x},${op.cp2.y} ${op.to.x},${op.to.y}`
+        d += ` C ${round(op.cp1.x)},${round(op.cp1.y)} ${round(op.cp2.x)},${round(
+          op.cp2.y
+        )} ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'close':
         d += ' z'
