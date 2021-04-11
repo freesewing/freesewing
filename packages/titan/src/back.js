@@ -25,7 +25,7 @@ export default (part) => {
           .move(points.floorOut)
           .line(points.kneeOut)
           .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, points.waistOut)
+          .curve_(points.seatOutCp2, waistOut)
     } else {
       if (points.waistOut.x > points.seatOut.x)
         return new Path().move(points.floorOut).curve(points.kneeOutCp2, points.seatOut, waistOut)
