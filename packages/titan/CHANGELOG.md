@@ -5,6 +5,7 @@
 
 ### Added
 
+ - Added the waistbandHeight option
  - Added the crossSeamCurveAngle option
  - Added the crotchSeamCurveAngle option
 
@@ -16,6 +17,9 @@
 
  - Adapt seat control point when waist is dropped below the hip line
  - Removed lingering console.log statements
+ - Configure dependencies to guarantee draft order
+ - Always keep seat control point vertically between styled waist and seat
+ - Adapt the outseam to the dropped waist in all circumstances
 
 ## 2.13.2 (2021-02-21)
 

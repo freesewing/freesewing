@@ -2,7 +2,7 @@
   "name": "@freesewing/utils",
   "version": "2.15.0-rc.0",
   "description": "A collection of utilities shared across freesewing projects",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -29,9 +29,11 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "axios": "0.21.1",
-    "tlds": "^1.207.0"
+    "tlds": "^1.207.0",
+    "axios": "0.21.1"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "backend/*",
     "camelCase/*",
@@ -60,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

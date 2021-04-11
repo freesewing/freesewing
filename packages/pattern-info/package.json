@@ -2,7 +2,7 @@
   "name": "@freesewing/pattern-info",
   "version": "2.15.0-rc.0",
   "description": "Information about available freesewing patterns",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -30,6 +30,9 @@
     "start": "rollup -c -w",
     "prebuild": "node src/prebuild.js"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
@@ -37,7 +40,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

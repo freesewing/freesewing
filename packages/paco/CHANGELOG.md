@@ -6,6 +6,7 @@
 ### Changed
 
  - Extended range and inreased default of the healEase option
+ - Added the (disabled) waistbandHeight option from Titan
 
 ## 2.13.2 (2021-02-21)
 

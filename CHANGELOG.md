@@ -15,6 +15,12 @@
 
  - Inital release of the Charlie Chinos pattern
 
+### core
+
+#### Changed
+
+ - Don't round coordinates internally to avoid path.split misses
+
 ### cornelius
 
 #### Fixed
@@ -32,6 +38,7 @@
 #### Changed
 
  - Extended range and inreased default of the healEase option
+ - Added the (disabled) waistbandHeight option from Titan
 
 ### plugin-buttons
 
@@ -56,6 +63,7 @@
 
 #### Added
 
+ - Added the waistbandHeight option
  - Added the crossSeamCurveAngle option
  - Added the crotchSeamCurveAngle option
 
@@ -67,6 +75,9 @@
 
  - Adapt seat control point when waist is dropped below the hip line
  - Removed lingering console.log statements
+ - Configure dependencies to guarantee draft order
+ - Always keep seat control point vertically between styled waist and seat
+ - Adapt the outseam to the dropped waist in all circumstances
 
 
 ## 2.14.0 (2021-03-07)
