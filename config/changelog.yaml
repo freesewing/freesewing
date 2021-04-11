@@ -6,6 +6,10 @@
       - Added the path.bartack class
     charlie:
       - Inital release of the Charlie Chinos pattern
+    titan:
+      - Added the waistbandHeight option
+      - Added the crossSeamCurveAngle option
+      - Added the crotchSeamCurveAngle option
     plugin-buttons:
       - Added the buttonhole-end snippet
       - Added the buttonhole-start snippet
@@ -13,13 +17,13 @@
       - Render logo in currentColor to support dark mode
     plugin-theme:
       - Added the path.bartack class
-    titan:
-      - Added the crossSeamCurveAngle option
-      - Added the crotchSeamCurveAngle option
 
   Changed:
+    core:
+      - Don't round coordinates internally to avoid path.split misses
     paco:
       - Extended range and inreased default of the healEase option
+      - Added the (disabled) waistbandHeight option from Titan
     titan:
       - Crotch- and Cross seam have been redrawn using the new angle options
 
@@ -31,6 +35,9 @@
     titan:
       - Adapt seat control point when waist is dropped below the hip line
       - Removed lingering console.log statements
+      - Configure dependencies to guarantee draft order
+      - Always keep seat control point vertically between styled waist and seat
+      - Adapt the outseam to the dropped waist in all circumstances
 
 2.14.0:
   date: 2021-03-07

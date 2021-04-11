@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-theme
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added the path.bartack class
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

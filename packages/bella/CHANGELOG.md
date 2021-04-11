@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bella
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Shoulder point control point fix for doll-sized clothes
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

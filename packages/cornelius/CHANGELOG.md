@@ -1,6 +1,12 @@
 # Change log for: @freesewing/cornelius
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Handle edge-case where splitting a path on and endpoint causes things to break
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

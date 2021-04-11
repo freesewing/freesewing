@@ -1,6 +1,74 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### bella
+
+#### Fixed
+
+ - Shoulder point control point fix for doll-sized clothes
+
+### charlie
+
+#### Added
+
+ - Inital release of the Charlie Chinos pattern
+
+### cornelius
+
+#### Fixed
+
+ - Handle edge-case where splitting a path on and endpoint causes things to break
+
+### css-theme
+
+#### Added
+
+ - Added the path.bartack class
+
+### paco
+
+#### Changed
+
+ - Extended range and inreased default of the healEase option
+
+### plugin-buttons
+
+#### Added
+
+ - Added the buttonhole-end snippet
+ - Added the buttonhole-start snippet
+
+### plugin-logo
+
+#### Added
+
+ - Render logo in currentColor to support dark mode
+
+### plugin-theme
+
+#### Added
+
+ - Added the path.bartack class
+
+### titan
+
+#### Added
+
+ - Added the crossSeamCurveAngle option
+ - Added the crotchSeamCurveAngle option
+
+#### Changed
+
+ - Crotch- and Cross seam have been redrawn using the new angle options
+
+#### Fixed
+
+ - Adapt seat control point when waist is dropped below the hip line
+ - Removed lingering console.log statements
+
+
 ## 2.14.0 (2021-03-07)
 
 ### components

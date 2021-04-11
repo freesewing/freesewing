@@ -1,6 +1,12 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added the path.bartack class
+
 ## 2.11.0 (2021-01-10)
 
 ### Added

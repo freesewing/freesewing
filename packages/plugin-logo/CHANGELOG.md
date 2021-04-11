@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-logo
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Render logo in currentColor to support dark mode
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

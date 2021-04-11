@@ -1,6 +1,13 @@
 # Change log for: @freesewing/plugin-buttons
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added the buttonhole-end snippet
+ - Added the buttonhole-start snippet
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed
