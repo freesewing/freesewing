@@ -205,6 +205,8 @@ export default (part) => {
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()
   }
+  // Adapt the vertical placement of the seat control point to the lowered waist
+  points.seatOutCp2.y = points.seatOut.y - points.styleWaistOut.dy(points.seatOut) / 2
 
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
