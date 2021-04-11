@@ -7,8 +7,7 @@ import {
   curvesIntersect,
   pointOnLine,
   pointOnCurve,
-  curveEdge,
-  round
+  curveEdge
 } from './utils'
 
 function Path(debug = false) {
@@ -207,7 +206,7 @@ Path.prototype.length = function () {
     if (op.to) current = op.to
   }
 
-  return round(length)
+  return length
 }
 
 /** Returns the startpoint of the path */
