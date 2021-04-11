@@ -17,10 +17,8 @@ export default (part) => {
     sa
   } = part.shorthand()
 
-  if (options.splitWaistband) return part
-
   points.topLeft = new Point(0, 0)
-  points.top = new Point(measurements.waist * options.waistbandWidth * options.waistbandFactor, 0)
+  points.top = new Point(options.waistbandWidth, 0)
   points.topRight = new Point(points.top.x * 2, 0)
   points.bottomLeft = new Point(
     0,
@@ -55,7 +53,7 @@ export default (part) => {
     points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
     macro('title', {
       at: points.titleAnchor,
-      nr: 10,
+      nr: 11,
       title: 'waistband',
       rotation: 90
     })

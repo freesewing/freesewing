@@ -2,22 +2,15 @@ export default (part) => {
   // Helper method to draw the outseam path
   const drawOutseam = () => {
     let waistOut = points.styleWaistOut || points.waistOut
-    if (points.waistOut.x > points.seatOut.x) {
-      let outseam = new Path()
-        .move(points.styleWaistOut)
-        .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
-      return new Path()
-        .move(points.slantOut)
-        .line(points.slantCurveStart)
-        .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-        .join(outseam.split(points.slantCurveEnd).pop())
-        .reverse()
-    } else {
-      return new Path()
-        .move(points.floorOut)
-        .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-        .curve_(points.seatOutCp2, waistOut)
-    }
+    let outseam = new Path()
+      .move(points.styleWaistOut)
+      .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+    return new Path()
+      .move(points.slantOut)
+      .line(points.slantCurveStart)
+      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+      .join(outseam.split(points.slantCurveEnd).pop())
+      .reverse()
   }
   /*
    * Helper method to draw the outline path
@@ -88,10 +81,11 @@ export default (part) => {
     .move(points.styleWaistOut)
     .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
 
+  // Keep the seat control point vertically between the (lowered) waist and seat line
+  points.seatOutCp2.y = points.styleWaistOut.y + points.styleWaistOut.dy(points.seatOut) / 2
+
   // Construct pocket slant
-  if (points.waistOut.x > points.seatOut.x) {
-    points.slantBottom = titanOutseam.shiftAlong(store.get('slantLength'))
-  }
+  points.slantBottom = titanOutseam.shiftAlong(store.get('slantLength'))
   points.slantOut = points.styleWaistIn.shiftOutwards(points.styleWaistOut, store.get('slantWidth'))
 
   // Shape waist
@@ -163,6 +157,19 @@ export default (part) => {
     macro('sprinkle', {
       snippet: 'bnotch',
       on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch']
+    })
+
+    macro('bartack', {
+      anchor: points.slantTopNotch,
+      angle: points.slantTopNotch.angle(points.slantBottomNotch) - 90,
+      length: sa ? sa / 2 : 5,
+      suffix: 'slantTop'
+    })
+    macro('bartack', {
+      anchor: points.slantBottomNotch,
+      length: sa ? sa / 2 : 5,
+      angle: 180,
+      suffix: 'slantBottom'
     })
 
     if (sa) {

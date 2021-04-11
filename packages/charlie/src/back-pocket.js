@@ -56,7 +56,7 @@ export default (part) => {
     points.titleAnchor = points.rightNotch.shiftFractionTowards(points.foldLeft, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: 4,
+      nr: 5,
       title: 'backPocketBag'
     })
     points.logoAnchor = points.foldLeft.shiftFractionTowards(points.bottomRight, 0.5)

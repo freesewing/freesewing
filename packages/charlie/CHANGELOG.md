@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Inital release of the Charlie Chinos pattern
+
 
 This is the **initial release**, and the start of this change log.
 

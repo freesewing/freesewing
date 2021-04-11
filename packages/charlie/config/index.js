@@ -11,7 +11,7 @@ export default {
   tags: ['bottom', 'basics'],
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
-    style: ['waistHeight', 'lengthBonus', 'crotchDrop'],
+    style: ['waistHeight', 'waistbandWidth', 'lengthBonus', 'crotchDrop'],
     pockets: [
       {
         backPockets: [
@@ -43,6 +43,7 @@ export default {
       'grainlinePosition',
       'legBalance',
       'waistBalance',
+      'beltLoops',
       {
         fly: ['flyCurve', 'flyLength', 'flyWidth']
       }
@@ -69,17 +70,17 @@ export default {
     frontPocket: 'front',
     frontPocketFacing: 'frontPocket',
     backPocketFacing: 'backPocket',
+    backPocketInterfacing: 'backPocket',
     backPocketJet: 'backPocketFacing',
     flyFacing: 'front',
-    flyExtention: 'flyFacing'
+    flyExtension: 'flyFacing'
   },
-  parts: ['beltLoop'],
+  parts: ['beltLoops'],
   dependencies: {
     // The inheritance makes this a bit messy
+    titanFront: 'titanBack',
     back: ['titanBack', 'titanFront', 'front'],
-    waistband: ['titanBack', 'titanFront', 'front', 'back'],
-    waistbandButtonSide: 'waistband',
-    waistbandButtonholeSide: 'waistband'
+    waistband: ['titanBack', 'titanFront', 'front', 'back']
   },
   options: {
     // Constants (from Titan)
@@ -87,12 +88,11 @@ export default {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
-
     // Lock titan options
     fitKnee: true,
 
     // Charlie constants
-    waistbandReduction: 0.3, // See src/index.js
+    waistbandReduction: 0.25, // See src/index.js
     waistbandFactor: 0.1,
 
     // Fit (from Titan)
@@ -101,7 +101,8 @@ export default {
     kneeEase: { pct: 15, min: 10, max: 30 },
 
     // Style (from Titan)
-    waistHeight: { pct: 15, min: 0, max: 30 },
+    waistHeight: { pct: -4, min: -50, max: 30 },
+    waistbandWidth: { mm: 40, min: 20, max: 60 },
     lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
 
@@ -133,9 +134,6 @@ export default {
     frontPocketWidth: { pct: 55, min: 45, max: 65 },
     frontPocketDepth: { pct: 100, min: 85, max: 110 },
 
-    // Belt
-    waistbandWidth: { mm: 25, min: 5, max: 45 },
-
     // Fly
     flyCurve: { pct: 72, min: 50, max: 100 },
     flyLength: { pct: 45, min: 30, max: 60 },
@@ -143,6 +141,7 @@ export default {
 
     // Waistband
     splitWaistband: { bool: false },
-    waistbandWidth: { pct: 40, min: 25, max: 65 }
+    waistbandWidth: { mm: 40, min: 20, max: 60 },
+    beltLoops: { count: 8, min: 6, max: 12 }
   }
 }

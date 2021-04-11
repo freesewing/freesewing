@@ -28,9 +28,15 @@ export default (part) => {
     'slantTop',
     'slantBottom',
     'slantTop',
+    'pocketbagBottomCp1',
     'pocketbagBottomCp2',
     'pocketbagBottom',
-    'pocketbagBottomRight'
+    'pocketbagBottomRight',
+    'pocketFacingBottom',
+    'slantCurveStart',
+    'slantCurveCp1',
+    'slantCurveCp2',
+    'slantCurveEnd'
   ])
     points[id] = points[id].rotate(-1 * (slant - 90), points.pocketbagTopRight)
 
@@ -61,7 +67,7 @@ export default (part) => {
     )
     macro('title', {
       at: points.titleAnchor,
-      nr: 6,
+      nr: 7,
       title: 'frontPocketBag'
     })
     macro('cutonfold', {

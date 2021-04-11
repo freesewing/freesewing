@@ -67,11 +67,15 @@ export default (part) => {
     points.styleWaistIn,
     1 - options.flyWidth
   )
+
   points.flyCorner = points.flyTop.shift(
     points.styleWaistIn.angle(points.crotchSeamCurveStart),
     points.styleWaistIn.dist(points.flyBottom)
   )
-  points.flyCurveStart = points.flyBottom.rotate(90, points.flyCorner)
+  points.flyCurveStart = points.flyCorner.shiftTowards(
+    points.flyTop,
+    points.flyBottom.dist(points.flyCorner)
+  )
   points.flyCurveCp1 = points.flyBottom.shiftFractionTowards(points.flyCorner, options.flyCurve)
   points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(points.flyCorner, options.flyCurve)
 
@@ -185,15 +189,6 @@ export default (part) => {
       .attr('class', 'dashed')
       .attr('data-text', 'Left panel only')
       .attr('data-text-class', 'center')
-    points.barTack1 = Jseam.reverse().shiftFractionAlong(0.1)
-    points.barTack2a = Jseam.shiftFractionAlong(0.2)
-    points.barTack2b = Jseam.shiftFractionAlong(0.35)
-    paths.barTack1 = paths.Jseam.split(points.barTack1).pop().attr('class', 'bartack')
-    paths.barTack2 = paths.Jseam.split(points.barTack2a)
-      .pop()
-      .split(points.barTack2b)
-      .shift()
-      .attr('class', 'bartack')
     paths.pocketBag = new Path()
       .move(points.slantTop)
       .line(points.slantCurveStart)
@@ -204,6 +199,25 @@ export default (part) => {
       .move(points.pocketFacingTop)
       .line(points.pocketFacingBottom)
       .attr('class', 'lining dashed')
+
+    // Bartack
+    macro('bartack', {
+      anchor: points.slantTopNotch,
+      angle: points.slantTopNotch.angle(points.slantCurveStart) + 90,
+      length: sa ? sa / 1.5 : 7.5,
+      suffix: 'slantTop'
+    })
+    macro('bartack', {
+      anchor: points.slantBottomNotch,
+      length: sa ? sa / 2 : 5,
+      suffix: 'slantBottom'
+    })
+    macro('bartackFractionAlong', {
+      path: Jseam.reverse(),
+      start: 0,
+      end: 0.1,
+      suffix: 'stom'
+    })
 
     if (sa) {
       paths.sa = drawPath()

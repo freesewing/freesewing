@@ -3,42 +3,24 @@ import Titan from '@freesewing/titan'
 import plugins from '@freesewing/plugin-bundle'
 import mirrorPlugin from '@freesewing/plugin-mirror'
 import buttonsPlugin from '@freesewing/plugin-buttons'
+import bartackPlugin from '@freesewing/plugin-bartack'
 import config from '../config'
 // Parts
 import draftBack from './back'
 import draftFront from './front'
 import draftWaistband from './waistband'
-import draftWaistbandButtonSide from './waistband-button-side'
-import draftWaistbandButtonholeSide from './waistband-buttonhole-side'
 import draftFrontPocket from './front-pocket'
 import draftFrontPocketFacing from './front-pocket-facing'
 import draftBackPocket from './back-pocket'
 import draftBackPocketFacing from './back-pocket-facing'
+import draftBackPocketInterfacing from './back-pocket-interfacing'
 import draftBackPocketJet from './back-pocket-jet'
 import draftFlyFacing from './fly-facing'
-import draftFlyExtention from './fly-extention'
-import draftBeltLoop from './beltloop'
-
-// Hack the waistHeight option to make room for waistband
-const waistbandPlugin = {
-  name: 'charlieWaistbandPlugin',
-  version: config.version,
-  hooks: {
-    preDraft: function ({ settings }) {
-      // Reduce the waistHeight option by 25% to make room for the waistband
-      // We could also just use negative numbers, but that might confuse the user
-      settings.options.waistHeight -= settings.options.waistbandReduction
-    }
-  }
-}
+import draftFlyExtension from './fly-extension'
+import draftBeltLoops from './beltloops'
 
 // Create design
-const Pattern = new freesewing.Design(config, [
-  plugins,
-  mirrorPlugin,
-  buttonsPlugin,
-  waistbandPlugin
-])
+const Pattern = new freesewing.Design(config, [plugins, mirrorPlugin, buttonsPlugin, bartackPlugin])
 
 // Attach titan draft methods to prototype
 for (let p of ['Front', 'Back']) {
@@ -51,15 +33,14 @@ for (let p of ['Front', 'Back']) {
 Pattern.prototype.draftBack = (part) => draftBack(part)
 Pattern.prototype.draftFront = (part) => draftFront(part)
 Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
-Pattern.prototype.draftWaistbandButtonSide = (part) => draftWaistbandButtonSide(part)
-Pattern.prototype.draftWaistbandButtonholeSide = (part) => draftWaistbandButtonholeSide(part)
 Pattern.prototype.draftFrontPocket = (part) => draftFrontPocket(part)
 Pattern.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part)
 Pattern.prototype.draftBackPocket = (part) => draftBackPocket(part)
 Pattern.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
+Pattern.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
 Pattern.prototype.draftBackPocketJet = (part) => draftBackPocketJet(part)
 Pattern.prototype.draftFlyFacing = (part) => draftFlyFacing(part)
-Pattern.prototype.draftFlyExtention = (part) => draftFlyExtention(part)
-Pattern.prototype.draftBeltLoop = (part) => draftBeltLoop(part)
+Pattern.prototype.draftFlyExtension = (part) => draftFlyExtension(part)
+Pattern.prototype.draftBeltLoops = (part) => draftBeltLoops(part)
 
 export default Pattern

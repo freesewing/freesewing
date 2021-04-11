@@ -42,7 +42,7 @@ export default (part) => {
     points.titleAnchor = points.rightNotch.shiftFractionTowards(points.leftNotch, 0.5)
     macro('title', {
       at: points.titleAnchor,
-      nr: 5,
+      nr: 6,
       title: 'backPocketBagFacing'
     })
     points.grainlineTop = points.waistbandLeft.shiftFractionTowards(points.waistbandRight, 0.15)
