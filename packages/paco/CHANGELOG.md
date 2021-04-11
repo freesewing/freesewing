@@ -1,6 +1,12 @@
 # Change log for: @freesewing/paco
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Changed
+
+ - Extended range and inreased default of the healEase option
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

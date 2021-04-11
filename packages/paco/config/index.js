@@ -82,6 +82,9 @@ export default {
     backPocketWidthRatio: 0.37,
     weltFactor: 0.15,
 
+    // Disable this option from Titan
+    waistbandHeight: 0,
+
     // Fit
     waistEase: { pct: 2, min: 0, max: 10 },
     seatEase: { pct: 5, min: 0, max: 15 },
