@@ -145,8 +145,9 @@ export default (part) => {
   paths.seam = drawPath().close().attr('class', 'fabric')
 
   // Store waistband length
-  store.set('waistbandFront', points.styleWaistIn.dist(points.styleWaistOut))
+  store.set('waistbandFront', points.styleWaistIn.dist(points.slantTop))
   store.set('waistbandFly', points.styleWaistIn.dist(points.flyTop))
+  store.set('legWidthFront', points.floorIn.dist(points.floorOut))
 
   if (complete) {
     points.titleAnchor = new Point(points.knee.x, points.fork.y)

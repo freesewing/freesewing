@@ -42,7 +42,9 @@ export default (part) => {
     utils,
     snippets,
     Snippet,
-    sa
+    sa,
+    raise,
+    units
   } = part.shorthand()
 
   // Mark back pocket
@@ -109,6 +111,7 @@ export default (part) => {
       .length() +
       new Path().move(points.backDartRight).curve_(points.backDartRightCp, points.slantOut).length()
   )
+  store.set('legWidthBack', points.floorIn.dist(points.floorOut))
 
   // Round the slant
   points.slantCurveStart = points.slantBottom.shiftFractionTowards(
@@ -184,6 +187,11 @@ export default (part) => {
         .close()
         .attr('class', 'fabric sa')
     }
+    raise.info(
+      `Inseam height: ${units(points.fork.dy(points.floorIn))} | ` +
+        `Waist: ${units((store.get('waistbandBack') + store.get('waistbandFront')) * 2)} | ` +
+        `Bottom leg width: ${units((store.get('legWidthBack') + store.get('legWidthFront')) / 2)}`
+    )
 
     if (paperless) {
     }
