@@ -19,6 +19,8 @@
       - Added the path.bartack class
 
   Changed:
+    components:
+      - Show raised info above pattern in workbench
     core:
       - Don't round coordinates internally to avoid path.split misses
     paco:
