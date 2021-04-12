@@ -36,6 +36,7 @@ const DraftPattern = (props) => {
 
   return (
     <>
+      <Events events={props.patternProps.events} types={['info']} />
       <Draft
         {...props.patternProps}
         design={props.design}
