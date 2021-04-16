@@ -32,6 +32,8 @@ import draftPath_translate from './path_translate'
 import draftPath_trim from './path_trim'
 // Plugins
 import draftPlugin_bartack from './plugin_bartack'
+import draftPlugin_bartackalong from './plugin_bartackalong'
+import draftPlugin_bartackfractionalong from './plugin_bartackfractionalong'
 import draftPlugin_buttons from './plugin_buttons'
 import draftPlugin_cutonfold from './plugin_cutonfold'
 import draftPlugin_dimension from './plugin_dimension'
@@ -128,6 +130,8 @@ let methods = {
   draftPath_translate,
   draftPath_trim,
   draftPlugin_bartack,
+  draftPlugin_bartackalong,
+  draftPlugin_bartackfractionalong,
   draftPlugin_buttons,
   draftPlugin_cutonfold,
   draftPlugin_dimension,

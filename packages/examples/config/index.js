@@ -14,9 +14,10 @@ export default {
   },
   measurements: [],
   dependencies: {
-    point_attr: 'path_attr'
+    //point_attr: 'path_attr'
   },
   parts: [
+    /*
     'point_attr',
     'path_move',
     'path_line',
@@ -43,7 +44,11 @@ export default {
     'path_start',
     'path_translate',
     'path_trim',
+    */
     'plugin_bartack',
+    'plugin_bartackalong',
+    'plugin_bartackfractionalong'
+    /*
     'plugin_buttons',
     'plugin_cutonfold',
     'plugin_dimension',
@@ -99,6 +104,7 @@ export default {
     'utils_splitcurve',
     'docs_overview',
     'docs_coords'
+    */
   ],
   options: {
     focus: '',
