@@ -125,6 +125,11 @@ create-freesewing-pattern:
 diana:
   peer:
     '@freesewing/brian': *freesewing
+example:
+  peer:
+    '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-buttons': *freesewing
 gatsby-remark-jargon:
   _:
     'remark-jargon': *freesewing
