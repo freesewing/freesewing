@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Changed
+
+ - Show raised info above pattern in workbench
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

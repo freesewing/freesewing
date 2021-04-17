@@ -7,6 +7,23 @@ import Design from '../Workbench/Design'
 import IconButton from '@material-ui/core/IconButton'
 import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
 import Switch from '@material-ui/core/Switch'
+import { withStyles } from '@material-ui/core/styles'
+
+const PurpleSwitch = withStyles({
+  switchBase: {
+    color: '#868e96',
+    '&$checked': {
+      color: '#845ef7'
+    },
+    '&$checked + $track': {
+      backgroundColor: '#9775fa'
+    }
+  },
+  checked: {},
+  track: {
+    backgroundColor: '#868e96'
+  }
+})(Switch)
 
 const Example = ({
   pattern = 'examples',
@@ -63,20 +80,23 @@ const Example = ({
   return (
     <figure className={designMode ? 'design example' : 'example'}>
       <div className="example">
-        {designMode ? (
-          <div className="actions">
-            <IconButton color="primary" onClick={() => raiseEvent('clearFocusAll', null)}>
-              <ResetIcon />
-            </IconButton>
-            <Switch
-              checked={designMode}
-              onChange={() => setDesignMode(!designMode)}
-              value={designMode}
-              color="primary"
-            />
-          </div>
-        ) : null}
-        <Draft {...patternProps} design={design} focus={focus} raiseEvent={raiseEvent} />
+        <div className="actions">
+          <IconButton
+            disabled={!designMode}
+            color="primary"
+            onClick={() => raiseEvent('clearFocusAll', null)}
+          >
+            <ResetIcon />
+          </IconButton>
+          <PurpleSwitch
+            checked={designMode}
+            onChange={() => setDesignMode(!designMode)}
+            value={designMode}
+            color="primary"
+            className="switch-accent"
+          />
+        </div>
+        <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
       </div>
       <figcaption>{caption}</figcaption>
       {designMode && (
