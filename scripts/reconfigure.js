@@ -414,7 +414,7 @@ function configurePatternExample(pkg, config) {
   // Copy files
   for (let file of ['.babelrc', '.env'])
     fs.copyFileSync(path.join(source, file), path.join(dest, file))
-  for (let file of ['index.js', 'serviceWorker.js'])
+  for (let file of ['index.js', 'serviceWorker.js', 'layout.css'])
     fs.copyFileSync(path.join(source, 'src', file), path.join(dest, 'src', file))
   fs.copyFileSync(
     path.join(source, 'public', 'favicon.ico'),
