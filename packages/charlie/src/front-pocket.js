@@ -21,25 +21,6 @@ export default (part) => {
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]
 
-  // Straighten part
-  let slant = points.pocketbagBottomRight.angle(points.pocketbagTopRight)
-  for (let id of [
-    'topPleat',
-    'slantTop',
-    'slantBottom',
-    'slantTop',
-    'pocketbagBottomCp1',
-    'pocketbagBottomCp2',
-    'pocketbagBottom',
-    'pocketbagBottomRight',
-    'pocketFacingBottom',
-    'slantCurveStart',
-    'slantCurveCp1',
-    'slantCurveCp2',
-    'slantCurveEnd'
-  ])
-    points[id] = points[id].rotate(-1 * (slant - 90), points.pocketbagTopRight)
-
   // Paths
   paths.saBase = new Path()
     .move(points.pocketbagTopRight)
