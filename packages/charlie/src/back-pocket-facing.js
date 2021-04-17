@@ -54,6 +54,27 @@ export default (part) => {
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     if (paperless) {
+      macro('rmad')
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + 15
+      })
+      macro('hd', {
+        from: points.waistbandLeft,
+        to: points.waistbandRight,
+        y: points.waistbandLeft.y - sa - 15
+      })
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.rightNotch,
+        x: points.bottomRight.x + sa + 15
+      })
+      macro('vd', {
+        from: points.bottomRight,
+        to: points.waistbandRight,
+        x: points.bottomRight.x + sa + 30
+      })
     }
   }
 

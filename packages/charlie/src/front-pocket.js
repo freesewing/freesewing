@@ -67,6 +67,16 @@ export default (part) => {
     }
 
     if (paperless) {
+      macro('ld', {
+        from: points.pocketbagBottomRight,
+        to: points.topPleat,
+        d: -15
+      })
+      macro('hd', {
+        from: points.pocketFacingBottom,
+        to: points.pocketbagBottomRight,
+        y: points.pocketbagBottomRight.y + sa + 15
+      })
     }
   }
 
