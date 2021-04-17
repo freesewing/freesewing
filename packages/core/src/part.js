@@ -48,10 +48,10 @@ Part.prototype.runHooks = function (hookName, data = false) {
 }
 
 /** Returns an unused ID */
-Part.prototype.getId = function () {
+Part.prototype.getId = function (prefix = '') {
   this.freeId += 1
 
-  return '' + this.freeId
+  return prefix + this.freeId
 }
 
 /** Returns a value formatted for units provided in settings */
