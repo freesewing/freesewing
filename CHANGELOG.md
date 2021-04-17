@@ -15,6 +15,16 @@
 
  - Inital release of the Charlie Chinos pattern
 
+### components
+
+#### Changed
+
+ - Show raised info above pattern in workbench
+
+#### Fixed
+
+ - Always show design mode switch
+
 ### core
 
 #### Changed
@@ -32,6 +42,24 @@
 #### Added
 
  - Added the path.bartack class
+
+#### Changed
+
+ - Removed old bartack styling for new plugin
+ - Better example styling to prevent UI jumping
+
+### examples
+
+#### Added
+
+ - Added examples for bartack plugin
+ - Added examples for new buttonhole-start/end snippets
+
+### i18n
+
+#### Added
+
+ - Added translation for new Titan options
 
 ### paco
 

@@ -7,6 +7,11 @@
 
  - Added the path.bartack class
 
+### Changed
+
+ - Removed old bartack styling for new plugin
+ - Better example styling to prevent UI jumping
+
 ## 2.11.0 (2021-01-10)
 
 ### Added

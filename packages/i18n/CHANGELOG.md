@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added translation for new Titan options
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

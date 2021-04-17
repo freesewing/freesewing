@@ -7,6 +7,10 @@
 
  - Show raised info above pattern in workbench
 
+### Fixed
+
+ - Always show design mode switch
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

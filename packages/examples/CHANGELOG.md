@@ -1,6 +1,13 @@
 # Change log for: @freesewing/examples
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added examples for bartack plugin
+ - Added examples for new buttonhole-start/end snippets
+
 ## 2.0.0 (2019-08-25)
 
 ### Added
