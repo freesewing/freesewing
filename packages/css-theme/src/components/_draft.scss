@@ -189,11 +189,7 @@ svg.freesewing.draft text {
     fill: $fc-bg-dark;
   }
   path.bartack {
-    stroke: $fc-draft-fabric-light;
-    stroke-width: 2;
-    stroke: #fd7e14;
-    stroke-opacity: 0.7;
-    stroke-linecap: butt;
+    stroke: $fc-draft-mark-light;
   }
   path.logo {
     fill: currentColor;
@@ -305,11 +301,7 @@ svg.freesewing.draft text {
     fill: $fc-bg-light;
   }
   path.bartack {
-    stroke: $fc-draft-fabric-light;
-    stroke-width: 2;
-    stroke: #ff922b;
-    stroke-opacity: 0.7;
-    stroke-linecap: butt;
+    stroke: $fc-draft-mark-dark;
   }
   path.logo {
     fill: currentColor;

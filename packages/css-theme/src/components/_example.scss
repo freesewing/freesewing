@@ -1,4 +1,5 @@
 figure.example {
+  border: 1px solid transparent;
   div.example {
     position: relative;
     div.actions {
@@ -9,14 +10,11 @@ figure.example {
   }
 }
 figure.design.example {
-  border: 1px solid $oc-gray-4;
+  border-color: $oc-gray-4;
   svg.freesewing.draft.design {
     border-bottom: 1px solid $oc-gray-4;
   }
   figcaption {
     display: none;
   }
-}
-
-.theme-wrapper.dark figure.example div.example {
 }
