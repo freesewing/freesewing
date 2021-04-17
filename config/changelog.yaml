@@ -6,6 +6,11 @@
       - Added the path.bartack class
     charlie:
       - Inital release of the Charlie Chinos pattern
+    examples:
+      - Added examples for bartack plugin
+      - Added examples for new buttonhole-start/end snippets
+    i18n:
+      - Added translation for new Titan options
     titan:
       - Added the waistbandHeight option
       - Added the crossSeamCurveAngle option
@@ -19,6 +24,9 @@
       - Added the path.bartack class
 
   Changed:
+    css-theme:
+      - Removed old bartack styling for new plugin
+      - Better example styling to prevent UI jumping
     components:
       - Show raised info above pattern in workbench
     core:
@@ -32,6 +40,8 @@
   Fixed:
     bella:
       - Shoulder point control point fix for doll-sized clothes
+    components:
+      - Always show design mode switch
     cornelius:
       - Handle edge-case where splitting a path on and endpoint causes things to break
     titan:
