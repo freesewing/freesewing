@@ -3,6 +3,10 @@
 
 ## 2.15.0 (NaN-NaN-NaN)
 
+### Added
+
+ - The part.getId() method now takes an optional prefix argument
+
 ### Changed
 
  - Don't round coordinates internally to avoid path.split misses

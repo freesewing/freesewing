@@ -1,6 +1,12 @@
 # Change log for: @freesewing/pattern-info
 
 
+## 2.15.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added Charlie
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

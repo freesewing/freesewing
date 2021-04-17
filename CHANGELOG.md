@@ -20,12 +20,17 @@
 #### Changed
 
  - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
 
 #### Fixed
 
  - Always show design mode switch
 
 ### core
+
+#### Added
+
+ - The part.getId() method now takes an optional prefix argument
 
 #### Changed
 
@@ -60,6 +65,7 @@
 #### Added
 
  - Added translation for new Titan options
+ - Added translations for Charlie
 
 ### paco
 
@@ -68,12 +74,24 @@
  - Extended range and inreased default of the healEase option
  - Added the (disabled) waistbandHeight option from Titan
 
+### pattern-info
+
+#### Added
+
+ - Added Charlie
+
 ### plugin-buttons
 
 #### Added
 
  - Added the buttonhole-end snippet
  - Added the buttonhole-start snippet
+
+### plugin-dimension
+
+#### Added
+
+ - Added the `rmad` macro
 
 ### plugin-logo
 

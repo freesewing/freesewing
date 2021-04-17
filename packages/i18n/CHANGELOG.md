@@ -6,6 +6,7 @@
 ### Added
 
  - Added translation for new Titan options
+ - Added translations for Charlie
 
 ## 2.14.0 (2021-03-07)
 

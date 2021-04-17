@@ -6,6 +6,7 @@
 ### Changed
 
  - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
 
 ### Fixed
 
