@@ -28,7 +28,8 @@ export default {
           'frontPocketOpening',
           'frontPocketEntry',
           'frontPocketWidth',
-          'frontPocketDepth'
+          'frontPocketDepth',
+          'frontPocketFacing'
         ]
       }
     ],
@@ -133,6 +134,7 @@ export default {
     frontPocketEntry: { pct: 20, min: 10, max: 30 },
     frontPocketWidth: { pct: 55, min: 45, max: 65 },
     frontPocketDepth: { pct: 100, min: 85, max: 110 },
+    frontPocketFacing: { pct: 45, min: 25, max: 65 },
 
     // Fly
     flyCurve: { pct: 72, min: 50, max: 100 },

@@ -123,7 +123,10 @@ export default (part) => {
   points.pocketbagBottomCp1 = points.slantCurveCp2.rotate(180, points.slantCurveEnd)
 
   // Construct facing boundary
-  points.pocketFacingTop = points.slantTop.shiftFractionTowards(points.pocketbagTopRight, 0.35)
+  points.pocketFacingTop = points.slantTop.shiftFractionTowards(
+    points.pocketbagTopRight,
+    options.frontPocketFacing
+  )
   points.facingDirection = points.slantCurveStart.shift(
     0,
     points.slantTop.dist(points.pocketFacingTop)
