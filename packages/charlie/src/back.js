@@ -182,7 +182,7 @@ export default (part) => {
           new Path()
             .move(points.floorIn)
             .line(points.floorOut)
-            .offset(sa * 3)
+            .offset(sa * 6)
         )
         .close()
         .attr('class', 'fabric sa')

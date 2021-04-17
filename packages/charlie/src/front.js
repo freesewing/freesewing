@@ -230,7 +230,7 @@ export default (part) => {
           new Path()
             .move(points.floorOut)
             .line(points.floorIn)
-            .offset(sa * 3)
+            .offset(sa * 6)
         )
         .close()
         .trim()
