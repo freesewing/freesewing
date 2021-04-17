@@ -198,7 +198,6 @@ export default (part) => {
       macro('rmad')
       delete paths.hint
 
-      // Shared
       macro('hd', {
         from: points.floorIn,
         to: points.grainlineBottom,
