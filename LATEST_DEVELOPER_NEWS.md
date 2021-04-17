@@ -1,25 +1,25 @@
-##### Next contributor call: Saturday 6 March
+##### Next contributor call: Saturday 1 May
 
-Note that the next contributor call is on Saturday the 6th of March.
+Note that the next contributor call is on Saturday the 1sth of May.
 
 For details and timing (including different time zones) 
-check [issue #878](https://github.com/freesewing/freesewing/issues/878).
+check [issue #962](https://github.com/freesewing/freesewing/issues/962)
 
 
-##### Project board: Our overall todo list
+##### New bartack plugin
 
-Did you know we have a project board that list all of our issues?
-It's a great place to see what we're working on, or what you could help with.
+We have [a new plugin to add bartacks to your pattern](https://freesewing.dev/reference/plugins/bartack/).
 
-Go to [todo.freesewing.org](https://todo.freesewing.org/) to get there.
+##### New rmad macro
 
+The [dimensions plugin](/reference/plugins/dimensions/) now provides a new [rmad macro](https://freesewing.dev/reference/macros/rmad').
 
-##### Updated developer documentation
+##### New buttonhole-start and buttonhole-end snippets
 
-We've give [freesewing.dev](https://freesewing.dev/), our websites for
-developers, a bit of a face-lift to bring it in line with recent changes
-on [freesewing.org](https://freesewing.org/), our website for makers.
+The [buttons plugin](/reference/plugins/buttons/) has provides two new
+snippets to help you position your buttonholes so they match your buttons:
 
-If you find anything lacking or broken, please don't hesitate
-to [create an issue](https://github.com/freesewing/freesewing/issues/new).
+ - [buttonhole-start](https://freesewing.dev/reference/snippets/buttonhole-start)
+ - [buttonhole-end](https://freesewing.dev/reference/snippets/buttonhole-end)
+
 
