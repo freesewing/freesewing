@@ -141,7 +141,6 @@ export default {
 
     // Waistband
     splitWaistband: { bool: false },
-    waistbandWidth: { mm: 40, min: 20, max: 60 },
     beltLoops: { count: 8, min: 6, max: 12 }
   }
 }
