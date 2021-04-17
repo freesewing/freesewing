@@ -17,7 +17,6 @@ export default {
     //point_attr: 'path_attr'
   },
   parts: [
-    /*
     'point_attr',
     'path_move',
     'path_line',
@@ -44,11 +43,9 @@ export default {
     'path_start',
     'path_translate',
     'path_trim',
-    */
     'plugin_bartack',
     'plugin_bartackalong',
-    'plugin_bartackfractionalong'
-    /*
+    'plugin_bartackfractionalong',
     'plugin_buttons',
     'plugin_cutonfold',
     'plugin_dimension',
@@ -84,6 +81,8 @@ export default {
     'snippets_notch',
     'snippets_button',
     'snippets_buttonhole',
+    'snippets_buttonhole_start',
+    'snippets_buttonhole_end',
     'snippets_snapsocket',
     'snippets_snapstud',
     'snippets_logo',
@@ -104,7 +103,6 @@ export default {
     'utils_splitcurve',
     'docs_overview',
     'docs_coords'
-    */
   ],
   options: {
     focus: '',

@@ -87,6 +87,8 @@ import draftSnippets_bnotch from './snippets_bnotch'
 import draftSnippets_notch from './snippets_notch'
 import draftSnippets_button from './snippets_button'
 import draftSnippets_buttonhole from './snippets_buttonhole'
+import draftSnippets_buttonhole_start from './snippets_buttonhole-start'
+import draftSnippets_buttonhole_end from './snippets_buttonhole-end'
 import draftSnippets_snapsocket from './snippets_snapsocket'
 import draftSnippets_snapstud from './snippets_snapstud'
 import draftSnippets_logo from './snippets_logo'
@@ -167,6 +169,8 @@ let methods = {
   draftSnippets_notch,
   draftSnippets_button,
   draftSnippets_buttonhole,
+  draftSnippets_buttonhole_start,
+  draftSnippets_buttonhole_end,
   draftSnippets_snapsocket,
   draftSnippets_snapstud,
   draftSnippets_logo,
