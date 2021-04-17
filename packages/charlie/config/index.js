@@ -25,15 +25,13 @@ export default {
           'frontPocketSlantWidth',
           'frontPocketSlantRound',
           'frontPocketSlantBend',
-          'frontPocketOpening',
-          'frontPocketEntry',
           'frontPocketWidth',
           'frontPocketDepth',
           'frontPocketFacing'
         ]
       }
     ],
-    waistband: ['splitWaistband', 'waistbandWidth'],
+    waistband: ['waistbandWidth'],
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
@@ -130,8 +128,6 @@ export default {
     frontPocketSlantWidth: { pct: 25, min: 15, max: 35 },
     frontPocketSlantRound: { pct: 30, min: 0, max: 50 },
     frontPocketSlantBend: { pct: 25, min: 0, max: 50 },
-    frontPocketOpening: { pct: 80, min: 60, max: 90 },
-    frontPocketEntry: { pct: 20, min: 10, max: 30 },
     frontPocketWidth: { pct: 55, min: 45, max: 65 },
     frontPocketDepth: { pct: 100, min: 85, max: 110 },
     frontPocketFacing: { pct: 45, min: 25, max: 65 },
@@ -142,7 +138,6 @@ export default {
     flyWidth: { pct: 15, min: 10, max: 20 },
 
     // Waistband
-    splitWaistband: { bool: false },
     beltLoops: { count: 8, min: 6, max: 12 }
   }
 }
