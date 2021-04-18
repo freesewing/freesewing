@@ -35,7 +35,7 @@ beltLoops:
   title: Belt loops
   description: Controls the amount of belt loops
 flyCurve:
-  title: Fly surve
+  title: Fly curve
   description: Controls the curvature of the fly J-seam
 flyLength:
   title: Fly length
