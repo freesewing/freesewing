@@ -1,7 +1,7 @@
 import { box } from './shared'
 
 export default (part) => {
-  let { Point, Path, points, paths, macro } = part.shorthand()
+  let { Point, points, macro } = part.shorthand()
 
   points.a = new Point(15, 15)
 
