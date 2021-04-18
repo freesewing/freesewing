@@ -138,7 +138,8 @@ for (let pattern of Object.keys(patterns)) {
     department: patterns[pattern].department,
     type: patterns[pattern].type,
     difficulty: patterns[pattern].difficulty,
-    tags: patterns[pattern].tags
+    tags: patterns[pattern].tags,
+    deprecated: patterns[pattern].deprecated || false
   }
 }
 
