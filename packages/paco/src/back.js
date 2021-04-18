@@ -78,10 +78,10 @@ export default function (part) {
   points.seatOut = points.seatOut.shift(angle, delta)
 
   // Cut the top of our pants short to make room for the waistband/elastic
-  points.styleWaistOut = drawOutseam(true).reverse().shiftAlong(options.waistElastic)
+  points.styleWaistOut = drawOutseam(true).reverse().shiftAlong(options.waistbandWidth)
   points.styleWaistIn = points.styleWaistIn.shiftTowards(
     points.crossSeamCurveStart,
-    options.waistElastic
+    options.waistbandWidth
   )
 
   // Add the (optional) front pocket extention

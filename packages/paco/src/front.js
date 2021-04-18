@@ -90,10 +90,10 @@ export default function (part) {
   points.seatOut = points.seatOut.shift(angle, delta)
 
   // Cut the top of our pants short to make room for the waistband/elastic
-  points.styleWaistOut = drawOutseam(true).shiftAlong(options.waistElastic)
+  points.styleWaistOut = drawOutseam(true).shiftAlong(options.waistbandWidth)
   points.styleWaistIn = points.styleWaistIn.shiftTowards(
     points.crotchSeamCurveStart,
-    options.waistElastic
+    options.waistbandWidth
   )
 
   // Our style changes will have influenced the inseam & outseam a bit

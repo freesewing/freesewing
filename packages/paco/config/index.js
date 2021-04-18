@@ -12,7 +12,7 @@ export default {
   optionGroups: {
     fit: ['seatEase', 'waistEase', 'heelEase'],
     style: ['waistHeight', 'lengthBonus', 'crotchDrop', 'elasticatedHem'],
-    elastic: ['waistElastic', 'ankleElastic'],
+    elastic: ['waistbandWidth', 'ankleElastic'],
     pockets: ['frontPockets', 'backPockets'],
     advanced: [
       'crossSeamCurveStart',
@@ -96,7 +96,7 @@ export default {
     elasticatedHem: { bool: true },
 
     // Elastic
-    waistElastic: { mm: 35, min: 10, max: 60 },
+    waistbandWidth: { mm: 35, min: 10, max: 60 },
     ankleElastic: { mm: 70, min: 10, max: 130 },
     heelEase: { pct: 5, min: 0, max: 50 },
 
