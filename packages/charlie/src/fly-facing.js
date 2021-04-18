@@ -5,11 +5,9 @@ export default (part) => {
     Point,
     paths,
     Path,
-    measurements,
     options,
     complete,
     paperless,
-    store,
     macro,
     utils,
     snippets,
@@ -55,9 +53,6 @@ export default (part) => {
         .reverse()
         .line(points.flyBottom)
         .attr('class', 'sa fabric')
-
-    if (paperless) {
-    }
   }
 
   return part

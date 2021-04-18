@@ -1,21 +1,6 @@
 export default (part) => {
   // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa
-  } = part.shorthand()
+  let { points, Point, paths, Path, complete, paperless, macro, snippets, sa } = part.shorthand()
 
   // Clean up
   delete paths.fold

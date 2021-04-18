@@ -25,7 +25,6 @@ export default (part) => {
     Point,
     paths,
     Path,
-    measurements,
     options,
     complete,
     paperless,

@@ -1,21 +1,6 @@
 export default (part) => {
   // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa
-  } = part.shorthand()
+  let { points, paths, Path, complete, paperless, macro, sa } = part.shorthand()
 
   // Clean up
   for (let id in paths) delete paths[id]
@@ -66,9 +51,6 @@ export default (part) => {
         .reverse()
         .line(points.flyCorner)
         .attr('class', 'fabric sa')
-
-    if (paperless) {
-    }
   }
 
   return part

@@ -5,13 +5,10 @@ export default (part) => {
     Point,
     paths,
     Path,
-    measurements,
     options,
     complete,
     paperless,
-    store,
     macro,
-    utils,
     snippets,
     Snippet,
     sa
@@ -51,9 +48,6 @@ export default (part) => {
     snippets.notch = new Snippet('notch', points.facingDirection)
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
-
-    if (paperless) {
-    }
   }
 
   return part

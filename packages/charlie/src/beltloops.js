@@ -1,21 +1,6 @@
 export default (part) => {
   // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa
-  } = part.shorthand()
+  let { points, Point, paths, Path, options, complete, paperless, macro, sa } = part.shorthand()
 
   let count = options.beltLoops
   let length = options.waistbandWidth * 2.5 * count

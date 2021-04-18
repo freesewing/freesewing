@@ -5,13 +5,10 @@ export default (part) => {
     Point,
     paths,
     Path,
-    measurements,
-    options,
     complete,
     paperless,
     store,
     macro,
-    utils,
     snippets,
     Snippet,
     sa

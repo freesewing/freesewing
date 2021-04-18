@@ -1,7 +1,6 @@
 export default (part) => {
   // Helper method to draw the outseam path
   const drawOutseam = () => {
-    let waistOut = points.styleWaistOut || points.waistOut
     let outseam = new Path()
       .move(points.styleWaistOut)
       .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
@@ -33,13 +32,11 @@ export default (part) => {
     Point,
     paths,
     Path,
-    measurements,
     options,
     complete,
     paperless,
     store,
     macro,
-    utils,
     snippets,
     Snippet,
     sa,
