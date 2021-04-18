@@ -1,7 +1,7 @@
 # Change log for: @freesewing/titan
 
 
-## 2.15.0 (NaN-NaN-NaN)
+## 2.15.0 (2021-04-15)
 
 ### Added
 
@@ -12,6 +12,7 @@
 ### Changed
 
  - Crotch- and Cross seam have been redrawn using the new angle options
+ - Added waistbandWidth option
 
 ### Fixed
 

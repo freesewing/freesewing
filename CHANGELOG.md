@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.15.0 (NaN-NaN-NaN)
+## 2.15.0 (2021-04-15)
 
 ### bella
 
@@ -16,6 +16,10 @@
  - Inital release of the Charlie Chinos pattern
 
 ### components
+
+#### Added
+
+ - Added charlie LineDrawing
 
 #### Changed
 
@@ -73,12 +77,14 @@
 
  - Extended range and inreased default of the healEase option
  - Added the (disabled) waistbandHeight option from Titan
+ - Changed to Titan's waistbandWidth option
 
 ### pattern-info
 
 #### Added
 
  - Added Charlie
+ - Info now also contains deprecated status
 
 ### plugin-buttons
 
@@ -116,6 +122,7 @@
 #### Changed
 
  - Crotch- and Cross seam have been redrawn using the new angle options
+ - Added waistbandWidth option
 
 #### Fixed
 

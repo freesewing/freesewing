@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.15.0-rc.1",
+  "version": "2.15.0",
   "description": "A collection of utilities shared across freesewing projects",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -62,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=12.0.0",

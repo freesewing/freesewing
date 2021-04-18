@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-dimension
 
 
-## 2.15.0 (NaN-NaN-NaN)
+## 2.15.0 (2021-04-15)
 
 ### Added
 
