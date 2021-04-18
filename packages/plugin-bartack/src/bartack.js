@@ -72,7 +72,7 @@ export default function bartack(so, self) {
     let end = false
     if (so.bartackAlong) {
       if (so.start > 0) start = so.path.shiftAlong(so.start)
-      if (!end || end < so.path.length) end = so.path.shiftAlong(so.end)
+      end = so.path.shiftAlong(so.end)
     } else if (so.bartackFractionAlong) {
       if (so.start > 0) start = so.path.shiftFractionAlong(so.start)
       if (so.end < 1) end = so.path.shiftFractionAlong(so.end)
