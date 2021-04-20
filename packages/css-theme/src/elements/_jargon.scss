@@ -1,23 +1,17 @@
 .jargon-term {
-  text-decoration: underline dashed $fc-link-light;
+  background: $oc-cyan-0;
+  text-decoration: none;
 }
-.jargon-term::after {
-  content: "?";
-  font-weight: bold;
-  display: inline-block;
-  transform: translate(0, -0.5em);
-  font-size: 75%;
-  color: $fc-link-light;
-  margin-left: 3px;
+.jargon-term:after {
+  display: none;
 }
-
 .jargon-term:hover {
   position: relative;
   text-decoration: none;
   cursor: help;
 }
 .jargon-term .jargon-info {
-  display: none
+  display: none;
 }
 .jargon-term:hover .jargon-info {
   display: block;
@@ -26,7 +20,7 @@
   left: 0;
   background: $fc-bg-light;
   color: $fc-text-light;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   padding: 1rem;
   border-radius: 4px;
   font-size: 90%;
@@ -36,16 +30,12 @@
 }
 .theme-wrapper.dark {
   .jargon-term {
-    text-decoration: underline dashed $fc-link-dark;
-  }
-  .jargon-term::after {
-    color: $fc-link-dark;
+    background: $oc-cyan-9;
+    text-decoration: none;
   }
   .jargon-term:hover .jargon-info {
     background: $fc-bg-dark;
     color: $fc-text-dark;
-    border: 1px solid #5A5A5A;
+    border: 1px solid #5a5a5a;
   }
 }
-
-

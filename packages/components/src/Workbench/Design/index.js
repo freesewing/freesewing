@@ -28,13 +28,7 @@ const Design = (props) => {
     return val
   }
 
-  const idPathPoint = (part, a) => {
-    for (let p in props.parts[part].points) {
-      let b = props.parts[part].points[p]
-      if (a.x === b.x && a.y === b.y) return p
-    }
-    return false
-  }
+  const round = (val) => Math.round(val * 10) / 10
 
   if (!props.design || props.focus === null || Object.keys(props.focus).length < 1) return null
   let info = []
@@ -77,10 +71,10 @@ const Design = (props) => {
           </IconButton>
           <ul key={'pdata-' + name}>
             <li>
-              <b>x</b>: {point.x}
+              <b>x</b>: {round(point.x)}
             </li>
             <li>
-              <b>y</b>: {point.y}
+              <b>y</b>: {round(point.y)}
             </li>
             {point.attributes.length > 0 && (
               <li>

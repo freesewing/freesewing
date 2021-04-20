@@ -12,13 +12,15 @@ export default {
   optionGroups: {
     fit: ['seatEase', 'waistEase', 'heelEase'],
     style: ['waistHeight', 'lengthBonus', 'crotchDrop', 'elasticatedHem'],
-    elastic: ['waistElastic', 'ankleElastic'],
+    elastic: ['waistbandWidth', 'ankleElastic'],
     pockets: ['frontPockets', 'backPockets'],
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
+      'crossSeamCurveAngle',
       'crotchSeamCurveStart',
       'crotchSeamCurveBend',
+      'crotchSeamCurveAngle',
       'grainlinePosition',
       'legBalance',
       'waistBalance'
@@ -80,6 +82,9 @@ export default {
     backPocketWidthRatio: 0.37,
     weltFactor: 0.15,
 
+    // Disable this option from Titan
+    waistbandHeight: 0,
+
     // Fit
     waistEase: { pct: 2, min: 0, max: 10 },
     seatEase: { pct: 5, min: 0, max: 15 },
@@ -91,9 +96,9 @@ export default {
     elasticatedHem: { bool: true },
 
     // Elastic
-    waistElastic: { mm: 35, min: 10, max: 60 },
+    waistbandWidth: { mm: 35, min: 10, max: 60 },
     ankleElastic: { mm: 70, min: 10, max: 130 },
-    heelEase: { pct: 2.5, min: 0, max: 5 },
+    heelEase: { pct: 5, min: 0, max: 50 },
 
     // Pockets
     frontPockets: { bool: true },
@@ -103,8 +108,10 @@ export default {
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100 },
     crossSeamCurveBend: { pct: 65, min: 45, max: 85 },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20 },
     crotchSeamCurveStart: { pct: 80, min: 60, max: 95 },
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
     grainlinePosition: { pct: 45, min: 30, max: 60 }
   }

@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Draft from '../../Draft'
-import Zoombox from '../Zoombox'
-import Design from '../Design'
 import fileSaver from 'file-saver'
 import theme from '@freesewing/plugin-theme'
 import Events from './Events'
@@ -37,7 +35,8 @@ const DraftPattern = (props) => {
   }
 
   return (
-    <section>
+    <>
+      <Events events={props.patternProps.events} types={['info']} />
       <Draft
         {...props.patternProps}
         design={props.design}
@@ -47,7 +46,7 @@ const DraftPattern = (props) => {
         className="freesewing draft shadow"
       />
       <Events events={props.patternProps.events} />
-    </section>
+    </>
   )
 }
 

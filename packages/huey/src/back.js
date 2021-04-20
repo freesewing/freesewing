@@ -64,6 +64,7 @@ export default function (part) {
       to: points.cbHem,
       grainline: true
     })
+    macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {
       paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
       paths.sa

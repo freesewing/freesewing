@@ -464,7 +464,7 @@ Pattern.prototype.pack = function () {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
       let part = this.parts[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate (${bin.x}, ${bin.y})`)
+      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate(${bin.x}, ${bin.y})`)
     }
     this.width = size.width
     this.height = size.height

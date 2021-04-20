@@ -1,21 +1,27 @@
-##### COVID-19: Facemask pattern
+##### Subscribe to our newsletter (yes, we have one now)
 
-If you’re looking for our facemask pattern, follow this link:
+We have decided to start a newsletter, so you should subscribe to it.
 
-  - [Face mask pattern and instructions](/blog/facemask-frenzy)
+ - If you have an account on the site, head over to [/account/settings/newsletter](https://freesewing.org/account/settings/newsletter/).  
 
-##### Contributor calls
+ - If not, you can still subscribe at [/community/newsletter/](https://freesewing.org/community/newsletter/).
 
-Recently, we started organizing contributor calls. 
-Anybody with an interest in FreeSewing is welcome to join.
 
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
-Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
+##### Next contributor call on 1 May
 
-##### We’ve moved to Discord
+The next contributor call is on [1 May 2021](https://github.com/freesewing/freesewing/issues/962).
 
-We’ve moved our chat rooms from to Discord. 
-Our legacy chat on Gitter is deprecated.
+All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/).
+Notes and todos are [available on Github](https://todo.freesewing.org/).
 
-You can join us at https://chat.freesewing.org, 
-or use this in-app Discord invite: https://discord.gg/YDV4GvU
+
+##### COVID-19 face mask pattern
+
+Keep those mask on people, and make sure to make your own so we can
+leave the PPE for the frontline workers.
+
+Our [face mask pattern](/blog/facemask-frenzy) is recommended by
+[the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html),
+[Forbes](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/),
+[Make Magazine](https://makezine.com/projects/sew-your-own-face-mask-from-scratch/),
+and countless of others.

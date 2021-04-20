@@ -1,6 +1,20 @@
 # Change log for: @freesewing/paco
 
 
+## 2.15.0 (2021-04-15)
+
+### Changed
+
+ - Extended range and inreased default of the healEase option
+ - Added the (disabled) waistbandHeight option from Titan
+ - Changed to Titan's waistbandWidth option
+
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Only add paperless dimensions for pockets if we drafted pockets
+
 ## 2.8.1 (2020-08-16)
 
 ### Fixed

@@ -80,10 +80,10 @@ function readExampleFile(file, subdir = false) {
  */
 function readConfigFile(file, replace = false) {
   if (replace)
-    return yaml.safeLoad(
+    return yaml.load(
       Mustache.render(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'), replace)
     )
-  return yaml.safeLoad(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'))
+  return yaml.load(fs.readFileSync(path.join(repoPath, 'config', file), 'utf-8'))
 }
 
 /**
@@ -414,7 +414,7 @@ function configurePatternExample(pkg, config) {
   // Copy files
   for (let file of ['.babelrc', '.env'])
     fs.copyFileSync(path.join(source, file), path.join(dest, file))
-  for (let file of ['index.js', 'serviceWorker.js'])
+  for (let file of ['index.js', 'serviceWorker.js', 'layout.css'])
     fs.copyFileSync(path.join(source, 'src', file), path.join(dest, 'src', file))
   fs.copyFileSync(
     path.join(source, 'public', 'favicon.ico'),
@@ -432,7 +432,7 @@ function configurePatternExample(pkg, config) {
     let template = handlebars.compile(fs.readFileSync(path.join(source, file), 'utf-8'))
     fs.writeFileSync(path.join(dest, file), template(replace))
   }
-  for (let file of ['index.html', 'manifest.json']) {
+  for (let file of ['index.html', 'manifest.json', 'layout.css']) {
     let template = handlebars.compile(fs.readFileSync(path.join(source, 'public', file), 'utf-8'))
     fs.writeFileSync(path.join(dest, 'public', file), template(replace))
   }

@@ -18,20 +18,20 @@ inseam: Schrittlänge
 knee: Knieumfang
 neck: Halsumfang
 seat: Gesäßumfang
-seatBack: Seat back
-crotchDepth: Crotch depth
+seatBack: Gesässrückseite
+crotchDepth: Schritttiefe
 shoulderSlope: Schulterneigung
 shoulderToElbow: Schulter bis Ellenbogen
 shoulderToShoulder: Schulter bis Schulter
 shoulderToWrist: Shulter bis Handgelenk
 underbust: Unterbrustweite
-upperLeg: Upper leg circumference
+upperLeg: Oberer Beinumfang
 waist: Taillenumfang
-waistBack: Waist back
+waistBack: Taillenrückseite
 waistToFloor: Taille bis Boden
 waistToHips: Taille bis Hüfte
 waistToKnee: Taille bis Knie
 waistToSeat: Taille bis Gesäss
 waistToUnderbust: Taille bis Unterbrustweite
-waistToUpperLeg: Waist to upper leg
+waistToUpperLeg: Taille bis oberes Bein
 wrist: Handgelenkumfang

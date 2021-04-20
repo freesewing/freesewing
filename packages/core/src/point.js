@@ -1,9 +1,8 @@
 import Attributes from './attributes'
-import { round } from './utils'
 
 function Point(x, y, debug = false) {
-  this.x = round(x)
-  this.y = round(y)
+  this.x = x
+  this.y = y
   this.attributes = new Attributes()
   Object.defineProperty(this, 'debug', { value: debug, configurable: true })
 }
@@ -49,7 +48,7 @@ Point.prototype.dist = function (that) {
   let dx = this.x - that.x
   let dy = this.y - that.y
 
-  return round(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)))
+  return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
 }
 
 /** Returns slope of a line made by this point and that point */

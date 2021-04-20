@@ -11,7 +11,7 @@ export default {
   tags: ['swimwear', 'bottom'],
   optionGroups: {
     fit: ['bulge', 'backRise', 'legReduction', 'stretch'],
-    style: ['lengthBonus', 'rise']
+    style: ['rise']
   },
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
   parts: ['back', 'front', 'waistband'],
@@ -29,7 +29,6 @@ export default {
     stretch: { pct: 20, min: 10, max: 30 },
     bulge: { pct: 2.5, min: 0, max: 5 },
     legReduction: { pct: 5, min: 0, max: 10 },
-    lengthBonus: { pct: 0, min: 0, max: 50 },
     rise: { pct: 0, min: 0, max: 25 },
     backRise: { pct: 5, min: 0, max: 10 }
   }

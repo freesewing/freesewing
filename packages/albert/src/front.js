@@ -114,6 +114,9 @@ export default function (part) {
       title: 'Front'
     })
 
+    points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
+    macro('scalebox', { at: points.scaleboxAnchor })
+
     macro('crossBox', {
       from: points.topRightHem,
       to: points.crossBoxTo1

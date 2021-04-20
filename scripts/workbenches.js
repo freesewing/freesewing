@@ -6,7 +6,7 @@ const dir = path.join(__dirname, '..')
 const base = 'aaron'
 
 const buildPatternWorkbenches = async (patterns) => {
-  for (pattern of patterns) {
+  for (let pattern of patterns) {
     let cwd = path.join(dir, 'packages', pattern, 'example')
     await runScript(cwd, 'rm -rf node_modules yarn.lock')
     await runScript(cwd, 'yarn install')

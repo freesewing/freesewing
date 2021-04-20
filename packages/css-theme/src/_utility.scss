@@ -44,3 +44,27 @@
 .poh:hover {
   cursor: pointer;
 }
+.scribble {
+  font-family: 'Permanent marker';
+  color: $oc-pink-5;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+ul.inline {
+  list-style-type: none;
+  li:after {
+    content: ',';
+    margin-right: 0.5rem;
+  }
+  li {
+    display: inline;
+  }
+}

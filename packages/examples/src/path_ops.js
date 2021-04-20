@@ -1,7 +1,7 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, options } = part.shorthand()
 
-  const textClasses = label =>
+  const textClasses = (label) =>
     options.focus === label ? 'center text-xs fill-note' : 'center text-xs'
 
   points.A = new Point(10, 10)
@@ -46,11 +46,7 @@ export default part => {
     .attr('data-text', 'Path.close()')
     .attr('data-text-class', textClasses('close'))
 
-  paths.example = paths.line
-    .join(paths.curve)
-    .join(paths._curve)
-    .join(paths.curve_)
-    .close()
+  paths.example = paths.line.join(paths.curve).join(paths._curve).join(paths.curve_).close()
 
   return part
 }

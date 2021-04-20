@@ -110,17 +110,7 @@ export default (part) => {
     macro('title', { at: points.title, nr: 'X', title: 'front' })
     macro('sprinkle', {
       snippet: 'notch',
-      on: [
-        'waist',
-        'armholePitch',
-        'shoulder',
-        'neck',
-        'hips',
-        'cfHips',
-        'cfWaist',
-        'armhole',
-        'cfArmhole'
-      ]
+      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole']
     })
 
     if (sa) {

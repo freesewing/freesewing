@@ -16,7 +16,7 @@ let fromBent = ['Base', 'Front', 'Back', 'Sleeve', 'TopSleeve', 'UnderSleeve']
 
 // Attach draft methods from Bent to prototype
 for (let m of fromBent) {
-  Pattern.prototype['draftBent' + m] = function(part) {
+  Pattern.prototype['draftBent' + m] = function (part) {
     return new Bent(this.settings)['draft' + m](part)
   }
 }
@@ -40,12 +40,12 @@ for (let m of [
   'draftInnerPocketBag',
   'draftInnerPocketTab'
 ]) {
-  Pattern.prototype[m] = function(part) {
+  Pattern.prototype[m] = function (part) {
     return new Carlton(this.settings)[m](part)
   }
 }
 
-Pattern.prototype.draftCarltonFront = function(part) {
+Pattern.prototype.draftCarltonFront = function (part) {
   return new Carlton(this.settings).draftFront(part)
 }
 

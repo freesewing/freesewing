@@ -11,10 +11,20 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    measurements
+    measurements,
+    snippets,
+    raise
   } = part.shorthand()
-  // Clean up paths from paperless dimensions
+
+  // Let's warn about some common issues
+  if ((measurements.crotchDepth - measurements.waistToHips) / measurements.hips < 0.15)
+    raise.warning(
+      'There is little vertical space to draw the cross seam. Perhaps double-check the seath depth and waist to hips measurements'
+    )
+
+  // Clean up inheritedpaths & snippets
   for (let id in paths) delete paths[id]
+  for (let id in snippets) delete snippets[id]
 
   points[1] = new Point(
     points[0].x,
@@ -106,7 +116,7 @@ export default function (part) {
   points['-6cp'] = points[-100101].shiftOutwards(points[-6], points[-6].dist(points[-502]) / 2)
 
   // Make sure fly ends on curve
-  points.flyPretipX = utils.lineIntersectsCurve(
+  let pretipX = utils.lineIntersectsCurve(
     points[42],
     points['43beam'],
     points[-501],
@@ -114,6 +124,24 @@ export default function (part) {
     points['-6cp'],
     points[-6]
   )
+  // If we found mulitple points, that's not a great sign.
+  // But at least we need a point instead of an array things we break
+  if (Array.isArray(points.flyPretipX)) points.flyPretipX = pretipX.pop()
+  // If we found no points then we're screwed
+  if (points.flyPreTip) points.flyPretipX = pretipX
+  else {
+    raise.warning(`
+      Unable to determine fly end
+
+      We improvised to prevent the pattern from falling apart.
+      But this is almost certainly going to be a bad pattern since we're in uncharted territory.
+    `)
+    points.flyPretipX = new Path()
+      .move(points[-6])
+      .curve(points['-6cp'], points[-502], points[-501])
+      .shiftFractionAlong(0.75)
+  }
+
   points[43] = points.flyPretipX.clone()
   // Slant pocket
   points[60] = new Path().move(points[-1102])._curve(points[-1002], points[-100101]).shiftAlong(50)

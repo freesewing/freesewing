@@ -1,6 +1,6 @@
 ---
 backDarts:
-  tile: Nepen rug
+  title: Nepen rug
   description: Of je nepen wil toevoegen aan de rug of niet
   options:
     auto: Automatisch

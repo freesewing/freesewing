@@ -18,7 +18,7 @@ import {
   getSaDartPaths
 } from './dart-utils'
 
-export default part => {
+export default (part) => {
   let {
     options,
     store,

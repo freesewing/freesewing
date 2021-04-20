@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, points, Path, paths } = part.shorthand()
 
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)

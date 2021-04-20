@@ -25,7 +25,7 @@ hemStyle:
   description: Style de l'ourlet avant
 hemRadius:
   title: Arrondi d'ourlet
-  desciption: Rayon avec lequel l'ourlet est arrondi
+  description: Rayon avec lequel l'ourlet est arrondi
 backInset:
   title: Échancrure emmanchure arrière
   description: A quel point l'arrière de l'emmanchure est coupée vers l'intérieur

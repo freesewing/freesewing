@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
 
   paths.hint = paths.seam.clone().attr('class', 'dashed stroke-sm')
@@ -10,11 +10,7 @@ export default function(part) {
     .attr('class', 'lining')
   points.outsetStart = paths.outset.shiftAlong(5)
   points.outsetEnd = paths.outset.reverse().shiftAlong(5)
-  paths.outset = paths.outset
-    .split(points.outsetStart)
-    .pop()
-    .split(points.outsetEnd)
-    .shift()
+  paths.outset = paths.outset.split(points.outsetStart).pop().split(points.outsetEnd).shift()
 
   paths.inset = new Path()
     .move(points.tipLeft)
@@ -23,11 +19,7 @@ export default function(part) {
     .attr('class', 'various')
   points.insetStart = paths.inset.shiftAlong(5)
   points.insetEnd = paths.inset.reverse().shiftAlong(5)
-  paths.inset = paths.inset
-    .split(points.insetStart)
-    .pop()
-    .split(points.insetEnd)
-    .shift()
+  paths.inset = paths.inset.split(points.insetStart).pop().split(points.insetEnd).shift()
   paths.inset.render = false
   paths.outset.render = false
 

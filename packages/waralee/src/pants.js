@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     options,
     points,
@@ -32,6 +32,7 @@ export default function(part) {
       at: points.title,
       title: 'pants'
     })
+    macro('scalebox', { at: points.mHip.shift(-90, 70) })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }

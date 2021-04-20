@@ -1,6 +1,6 @@
 import { addButtons } from './shared'
 
-export default part => {
+export default (part) => {
   let {
     utils,
     sa,
@@ -29,23 +29,18 @@ export default part => {
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 
-  paths.seam
-    .line(points.placketTopEdge)
-    .line(points.placketBottomEdge)
-    .line(points.cfHem)
-    .close()
+  paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
   if (complete) {
     // Placket help lines
-    paths.frontCenter = new Path()
-      .move(points.cfNeck)
-      .line(points.cfHem)
-      .attr('class', 'help')
+    paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     paths.placketInnerFold = new Path()
-      .move(points.placketTopIn)
-      .line(points.placketBottomIn)
+      .move(points.placketBottomIn)
+      .line(points.placketTopIn)
       .attr('class', 'dotted')
+      .attr('data-text', 'matchHere')
+      .attr('data-text-class', 'text-xs center')
     paths.placketOuterFold = new Path()
       .move(points.placketTopOut)
       .line(points.placketBottomOut)

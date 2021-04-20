@@ -1,6 +1,29 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added the path.bartack class
+
+### Changed
+
+ - Removed old bartack styling for new plugin
+ - Better example styling to prevent UI jumping
+
+## 2.11.0 (2021-01-10)
+
+### Added
+
+ - Proper formatting for markdown syntax highlighting
+ - Now includes the fonts so you don't have to
+
+### Changed
+
+ - Plenty of changes for a new look
+ - Restyled the draft configurator
+
 ## 2.10.1 (2020-11-07)
 
 ### Changed

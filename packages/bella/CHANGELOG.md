@@ -1,6 +1,30 @@
 # Change log for: @freesewing/bella
 
 
+## 2.15.0 (2021-04-15)
+
+### Fixed
+
+ - Shoulder point control point fix for doll-sized clothes
+
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Fixed issue with out-of-order execution
+
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Verify whether back dart passes armhole depth
+
+## 2.12.0 (2021-01-19)
+
+### Added
+
+ - Initial release of this body block for womenswear
+
 
 This is the **initial release**, and the start of this change log.
 

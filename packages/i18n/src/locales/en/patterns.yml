@@ -4,6 +4,9 @@ aaron:
 albert:
   description: Albert is an apron.
   title: Albert apron
+bella:
+  description: Bella is a basic body block for womenswear.
+  title: Bella body block
 benjamin:
   description: Benjamin is a bow tie pattern with four different shape options.
   title: Benjamin bow tie
@@ -28,6 +31,12 @@ carlton:
 cathrin:
   description: Cathrin is an underbust corset or waist trainer.
   title: Cathrin corset
+charlie:
+  description: Charlie is a chino trouser pattern.
+  title: Charlie chinos
+cornelius:
+  description: Cornelius are cycling breeches based on the Keystone drafting method.
+  title: Cornelius cycling breeches
 diana:
   description: Diana is a top with a draped neckline.
   title: Diana draped top
@@ -40,6 +49,9 @@ florence:
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat'
   title: Holmes deerstalker hat
+hortensia:
+  description: 'Hortensia is a handbag'
+  title: Hortensia handbag
 huey:
   description: Huey is a zip-up hoodie with optional front pockets.
   title: Huey hoodie

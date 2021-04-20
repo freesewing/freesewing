@@ -1,6 +1,24 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.13.2 (2021-02-21)
+
+### Fixed
+
+ - Updated chat link from gitter to discord
+
+## 2.12.1 (2021-01-27)
+
+### Added
+
+ - Fixed missing dependency
+
+## 2.11.1 (2021-01-11)
+
+### Fixed
+
+ - Fixed issue with node-sass, see [#778](https://github.com/freesewing/freesewing/issues/778) and [#779](https://github.com/freesewing/freesewing/issues/779)
+
 ## 2.9.0 (2020-10-02)
 
 ### Fixed

@@ -1,6 +1,5 @@
 export default function (part) {
   let {
-    store,
     sa,
     Point,
     points,
@@ -10,7 +9,6 @@ export default function (part) {
     complete,
     paperless,
     macro,
-    units,
     measurements
   } = part.shorthand()
 
@@ -43,9 +41,6 @@ export default function (part) {
     .join(paths.saBase)
     .close()
     .attr('class', 'fabric')
-
-  let target = store.get('frontArmholeLength') + store.get('backArmholeLength')
-  let ist = paths.sleevecap.length()
 
   // Complete pattern?
   if (complete) {

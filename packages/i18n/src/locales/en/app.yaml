@@ -48,6 +48,8 @@ countModelsLackingForPattern: '{count} of your people lack the required measurem
 created: Created
 custom: Custom
 customSeamAllowance: Custom seam allowance
+lightMode: Light mode
+data: Data
 darkMode: Dark mode
 default: Default
 demo: Demo
@@ -131,9 +133,9 @@ ourRevenuePledge: Our revenue pledge
 patron-2: Powder monkey
 patron-4: First mate
 patron-8: Captain
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact Joost.
+patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
 patron: Patron
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, you too should become a patron of FreeSewing.
+patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
 patternOptions: Pattern options
@@ -172,6 +174,7 @@ settings: Settings
 sewingHelp: Sewing help
 sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
 share: Share
+shareFreesewing: Share FreeSewing
 showcase: Showcase
 signUpForAFreeAccount: Sign up for a free account
 signUp: Sign up
@@ -308,6 +311,7 @@ zoomOut: Zoom out
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
 savePattern-txt: Store this pattern in your FreeSewing account
 comparePattern: Compare pattern
+showPattern: Show pattern
 comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
 recreatePattern: Recreate pattern
 recreatePattern-txt: Choose a different person, then recreate this pattern for that person
@@ -321,3 +325,6 @@ error: Error
 info: Info
 warning: Warning
 debug: Debug
+unsubscribe: Unsubscribe
+slogan-come: Come for the sewing patterns
+slogan-stay: Stay for the community

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { points, Path, paths } = part.shorthand()
 
   points.rightCp2 = points.rightCp1.flipY()

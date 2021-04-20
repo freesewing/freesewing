@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, points, macro, paths, complete, sa, paperless } = part.shorthand()
 
   paths.seam.attributes.set('class', 'fabric')

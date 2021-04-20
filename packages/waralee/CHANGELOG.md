@@ -1,6 +1,12 @@
 # Change log for: @freesewing/waralee
 
 
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

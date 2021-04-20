@@ -25,7 +25,7 @@ hemStyle:
   description: De vorm van de zoom vooraan
 hemRadius:
   title: Ronding zoom
-  desciption: De straal van de ronding van de zoom
+  description: De straal van de ronding van de zoom
 backInset:
   title: Insnede rug
   description: Hoeveel het armsgat achteraan naar binnen gaat

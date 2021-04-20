@@ -3,22 +3,12 @@ import { version } from '../package.json'
 export default {
   name: 'albert',
   version,
-  design: 'WouterVdub',
-  code: 'WouterVdub',
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
   department: 'unisex',
   type: 'pattern',
   difficulty: 3,
-  tags: [
-    'freesewing',
-    'design',
-    'diy',
-    'fashion',
-    'made to measure',
-    'parametric design',
-    'pattern',
-    'sewing',
-    'sewing pattern'
-  ],
+  tags: ['accessories'],
   optionGroups: {
     fit: ['backOpening', 'chestDepth'],
     style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth']

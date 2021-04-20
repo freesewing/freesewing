@@ -11,16 +11,9 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    units,
     measurements,
-    Snippet,
-    snippets,
     raise
   } = part.shorthand()
-
-  // Add original outline
-  points.origin = new Point(0, 0)
-  snippets.base = new Snippet('bella-back', points.origin)
 
   // Get to work
   points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
@@ -67,13 +60,15 @@ export default function (part) {
   // Find out location of the armhole
   let armholeDepth = measurements.hpsToWaistBack * options.armholeDepth + points.shoulder.y
   points.cbNeckCp2 = new Point(0, armholeDepth)
-  points.dartLeftArmhole = utils.curveIntersectsY(
+  // Does dart pass armhole depth?
+  let dartArmholeDepth = utils.curveIntersectsY(
     points.dartBottomLeft,
     points.dartLeftCp,
     points.dartTip,
     points.dartTip,
     armholeDepth
   )
+  let extra = 0
   points.cbArmhole = utils.curveIntersectsY(
     points.cbNeck,
     points.cbNeckCp2,
@@ -81,7 +76,10 @@ export default function (part) {
     points.waistCenter,
     armholeDepth
   )
-  let extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
+  if (dartArmholeDepth) {
+    points.dartLeftArmhole = dartArmholeDepth
+    extra = points.dartLeftArmhole.dx(points.dartTip) * 2 + points.cbArmhole.x
+  }
   points.armhole = new Point(
     (measurements.underbust / 4) * (1 + options.chestEase) + extra,
     armholeDepth
@@ -108,6 +106,10 @@ export default function (part) {
     options.backArmholeCurvature
   )
   points.armholePitchCp2 = points.armholePitchCp1.rotate(180, points.armholePitch)
+  // Dolls need clothes too
+  if (points.armholePitchCp2.y < points.shoulder.y) {
+    points.armholePitchCp2.y = points.shoulder.y + points.shoulder.dy(points.armholePitch) / 2
+  }
 
   // Store the back width at bust level
   points.bustSide = utils.curveIntersectsY(
@@ -151,7 +153,7 @@ export default function (part) {
   )
   store.set('sideReduction', points.armhole.x - points.waistSide.x)
 
-  paths.saBase = new Path()
+  paths.seam = new Path()
     .move(points.cbNeck)
     .curve_(points.cbNeckCp2, points.waistCenter)
     .line(points.dartBottomLeft)
@@ -165,6 +167,131 @@ export default function (part) {
     ._curve(points.cbNeckCp1, points.cbNeck)
     .close()
     .attr('class', 'fabric')
+  paths.saBase = new Path()
+    .move(points.cbNeck)
+    .curve_(points.cbNeckCp2, points.waistCenter)
+    .line(points.dartBottomLeft)
+    .line(points.dartBottomRight)
+    .line(points.waistSide)
+    .curve_(points.waistSideCp2, points.armhole)
+    .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+    .curve_(points.armholePitchCp2, points.shoulder)
+    .line(points.hps)
+    ._curve(points.cbNeckCp1, points.cbNeck)
+    .close()
+    .setRender(false)
+
+  if (complete) {
+    points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)
+    macro('title', {
+      nr: 2,
+      title: 'back',
+      at: points.titleAnchor
+    })
+    macro('grainline', {
+      from: new Point(points.hps.x / 2, points.shoulder.y),
+      to: new Point(points.hps.x / 2, points.waistSide.y)
+    })
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: ['armholePitch', 'bustCenter']
+    })
+
+    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
+
+    if (paperless) {
+      macro('vd', {
+        from: points.waistCenter,
+        to: points.dartTip,
+        x: points.cbNeck.x - sa - 15
+      })
+      macro('vd', {
+        from: points.waistCenter,
+        to: points.cbNeck,
+        x: points.cbNeck.x - sa - 30
+      })
+      macro('vd', {
+        from: points.waistCenter,
+        to: points.hps,
+        x: points.cbNeck.x - sa - 45
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.waistCenter,
+        y: points.waistCenter.y + sa + 15
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.dartBottomLeft,
+        y: points.waistCenter.y + sa + 30
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.dartBottomRight,
+        y: points.waistCenter.y + sa + 45
+      })
+      macro('hd', {
+        from: points.dartBottomLeft,
+        to: points.dartBottomRight,
+        y: points.waistCenter.y + sa + 15
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.waistSide,
+        y: points.waistCenter.y + sa + 60
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.armhole,
+        y: points.waistCenter.y + sa + 75
+      })
+      macro('vd', {
+        from: points.waistSide,
+        to: points.armhole,
+        x: points.armhole.x + sa + 15
+      })
+      macro('vd', {
+        from: points.waistSide,
+        to: points.armholePitch,
+        x: points.armhole.x + sa + 30
+      })
+      macro('vd', {
+        from: points.waistSide,
+        to: points.shoulder,
+        x: points.armhole.x + sa + 45
+      })
+      macro('vd', {
+        from: points.waistSide,
+        to: points.hps,
+        x: points.armhole.x + sa + 60
+      })
+      macro('vd', {
+        from: points.waistCenter,
+        to: points.waistSide,
+        x: points.waistSide.x + sa + 15
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.hps,
+        y: points.hps.y - sa - 15
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.armholePitch,
+        y: points.hps.y - sa - 30
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.shoulder,
+        y: points.hps.y - sa - 45
+      })
+      macro('hd', {
+        from: points.cbNeck,
+        to: points.armhole,
+        y: points.hps.y - sa - 60
+      })
+    }
+  }
 
   return part
 }

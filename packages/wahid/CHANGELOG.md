@@ -1,6 +1,19 @@
 # Change log for: @freesewing/wahid
 
 
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Make sure roudEnd and roundStart points are always available
+
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+ - Proper styling for SA on front and back
+
 ## 2.7.1 (2020-07-24)
 
 ### Added

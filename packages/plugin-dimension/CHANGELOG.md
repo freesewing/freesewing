@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-dimension
 
 
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added the `rmad` macro
+
 ## 2.9.0 (2020-10-02)
 
 ### Added

@@ -1,6 +1,6 @@
 import init from './init'
 
-export default function(part) {
+export default function (part) {
   let {
     store,
     sa,
@@ -11,7 +11,9 @@ export default function(part) {
     complete,
     paperless,
     macro,
-    utils
+    utils,
+    snippets,
+    Snippet
   } = part.shorthand()
 
   // Initialize
@@ -52,10 +54,7 @@ export default function(part) {
   paths.hemBase = new Path().move(points.bottomRight).line(points.bottomLeft)
   paths.saBase.render = false
   paths.hemBase.render = false
-  paths.seam = paths.saBase
-    .join(paths.hemBase)
-    .close()
-    .attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Anchor point for sampling
   points.anchor = points.topLeft
@@ -68,6 +67,7 @@ export default function(part) {
       nr: 3,
       title: 'side'
     })
+    macro('scalebox', { at: points.title.shift(-90, 40) })
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa * -1)
@@ -79,6 +79,14 @@ export default function(part) {
       from: new Point(points.bottomRight.x / 2, points.bottomRight.y),
       to: new Point(points.bottomRight.x / 2, points.topRight.y)
     })
+    snippets.frontNotch = new Snippet(
+      'notch',
+      points.topRight.shiftTowards(points.bottomRight, store.get('frontNotch'))
+    )
+    snippets.backNotch = new Snippet(
+      'bnotch',
+      points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
+    )
   }
 
   // Paperless?

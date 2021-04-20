@@ -4,13 +4,13 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-round') === false)
         svg.attributes.set('freesewing:plugin-round', version)
     }
   },
   macros: {
-    round: function(so) {
+    round: function (so) {
       const C = 0.55191502449
       // Find angle between points
       let from = so.from

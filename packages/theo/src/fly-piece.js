@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { snippets, Point, macro, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Clean up paths from paperless dimensions
   for (let id in paths) delete paths[id]

@@ -2,6 +2,9 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import PatternOptions from './PatternOptions'
 import DraftSettings from './DraftSettings'
+import TuneIcon from '@material-ui/icons/Tune'
+import WrenchIcon from '@material-ui/icons/Build'
+import PlayIcon from '@material-ui/icons/PlayCircleOutline'
 
 const DraftConfigurator = ({
   noDocs = false,
@@ -10,7 +13,8 @@ const DraftConfigurator = ({
   data = {},
   pattern,
   updatePatternData,
-  raiseEvent
+  raiseEvent,
+  actions = false
 }) => {
   let childProps = {
     noDocs,
@@ -21,9 +25,19 @@ const DraftConfigurator = ({
     raiseEvent
   }
   return (
-    <ul className="config l1">
+    <ul id="draft-config">
+      {actions && (
+        <li>
+          <span>
+            <PlayIcon />
+            <FormattedMessage id="app.actions" />
+          </span>
+          <ul className="config level-1">{actions}</ul>
+        </li>
+      )}
       <li>
         <span>
+          <TuneIcon />
           <FormattedMessage id="app.designOptions" />
         </span>
         <PatternOptions
@@ -33,6 +47,7 @@ const DraftConfigurator = ({
       </li>
       <li>
         <span>
+          <WrenchIcon />
           <FormattedMessage id="app.patternOptions" />
         </span>
         <DraftSettings

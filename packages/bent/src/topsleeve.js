@@ -1,6 +1,6 @@
 import dimensions from './shared'
 
-export default function(part) {
+export default function (part) {
   let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa } = part.shorthand()
 
   // Extract seamline from sleeve
@@ -10,7 +10,8 @@ export default function(part) {
 
   // Complete?
   if (complete) {
-    snippets.logo = new Snippet('logo', points.elbowCenter)
+    macro('scalebox', { at: points.elbowCenter })
+    snippets.logo = new Snippet('logo', points.elbowCenter.shift(90, 50))
     macro('title', {
       at: points.armCenter,
       nr: 3,

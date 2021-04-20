@@ -10,16 +10,16 @@ import draftSleeve from './sleeve'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function(part) {
+Pattern.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function(part) {
+Pattern.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function(part) {
+Pattern.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function(part) {
+Pattern.prototype.draftSleeveBase = function (part) {
   let brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }

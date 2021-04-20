@@ -1,6 +1,25 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.14.0 (2021-03-07)
+
+### Fixed
+
+ - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Fix style of the seam allowance paths
+ - Fix sleeve dependencies
+
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Removed inherited notches
+
 ## 2.7.1 (2020-07-24)
 
 ### Fixed

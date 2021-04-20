@@ -1,6 +1,13 @@
 # Change log for: @freesewing/breanna
 
 
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Try harder to find the intersection point for the scyedart
+ - Define missing y variable in paperless branch
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

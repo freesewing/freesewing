@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/models",
-  "version": "2.10.7",
+  "version": "2.15.0",
   "description": "Body measurements data for a range of default sizes",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/utils": "^2.10.7"
+    "@freesewing/utils": "^2.15.0"
   },
   "dependencies": {},
   "devDependencies": {},

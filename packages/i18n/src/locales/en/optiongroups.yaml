@@ -1,8 +1,10 @@
 advanced: Advanced
+armhole: Armhole
 closure: Closure
 collar: Collar
 construction: Construction
 cuffs: Cuffs
+darts: Darts
 elastic: Elastic
 fit: Fit
 pockets: Pockets
@@ -10,3 +12,7 @@ preferences: Preferences
 sleevecap: Sleevecap
 sleeves: Sleeves
 style: Style
+backPockets: Back pockets
+frontPockets: Front pockets
+waistband: Waistband
+fly: Fly

@@ -1,7 +1,261 @@
-Unreleased:
-  date:
+2.15.0:
+  date: 2021-04-15
+
   Added:
+    bartack-plugin:
+      - Initial release of the bartack plugin
+    css-theme:
+      - Added the path.bartack class
+    charlie:
+      - Inital release of the Charlie Chinos pattern
+    components:
+      - Added charlie LineDrawing
+    core:
+      - The part.getId() method now takes an optional prefix argument
+    examples:
+      - Added examples for bartack plugin
+      - Added examples for new buttonhole-start/end snippets
+    i18n:
+      - Added translation for new Titan options
+      - Added translations for Charlie
+    titan:
+      - Added the waistbandHeight option
+      - Added the crossSeamCurveAngle option
+      - Added the crotchSeamCurveAngle option
+    pattern-info:
+      - Added Charlie
+      - Info now also contains deprecated status
+    plugin-buttons:
+      - Added the buttonhole-end snippet
+      - Added the buttonhole-start snippet
+    plugin-dimension:
+      - Added the `rmad` macro
+    plugin-logo:
+      - Render logo in currentColor to support dark mode
+    plugin-theme:
+      - Added the path.bartack class
+
   Changed:
+    css-theme:
+      - Removed old bartack styling for new plugin
+      - Better example styling to prevent UI jumping
+    components:
+      - Show raised info above pattern in workbench
+      - Round point coordinates in design UI now that they are no longer rounded in core
+    core:
+      - Don't round coordinates internally to avoid path.split misses
+    paco:
+      - Extended range and inreased default of the healEase option
+      - Added the (disabled) waistbandHeight option from Titan
+      - Changed to Titan's waistbandWidth option
+    titan:
+      - Crotch- and Cross seam have been redrawn using the new angle options
+      - Added waistbandWidth option
+
+  Fixed:
+    bella:
+      - Shoulder point control point fix for doll-sized clothes
+    components:
+      - Always show design mode switch
+    cornelius:
+      - Handle edge-case where splitting a path on and endpoint causes things to break
+    titan:
+      - Adapt seat control point when waist is dropped below the hip line
+      - Removed lingering console.log statements
+      - Configure dependencies to guarantee draft order
+      - Always keep seat control point vertically between styled waist and seat
+      - Adapt the outseam to the dropped waist in all circumstances
+
+2.14.0:
+  date: 2021-03-07
+  Added:
+    cornelius:
+      - Cornelius is a FreeSewing pattern for cycling breeches
+    components:
+      - Added Bella linedrawing
+      - Added Cornelius linedrawing
+    i18n:
+      - Added translations for Cornelius
+
+  Fixed:
+    hugo:
+      - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+2.13.2:
+  date: 2021-02-21
+
+  Fixed:
+    bella:
+      - Fixed issue with out-of-order execution
+    create-freesewing-pattern:
+      - Updated chat link from gitter to discord
+    paco:
+      - Only add paperless dimensions for pockets if we drafted pockets
+    pattern-info:
+      - Make pattern list alphabetic
+    penelope:
+      - Fixed issue in shape part
+    simone:
+      - Fixed type in bustsidecode finder code
+    titan:
+      - Always ensure point waistIn is created in back part
+
+2.13.1:
+  date: 2021-02-14
+
+  Added:
+    utils:
+      - Pass pattern handle to tiler
+
+  Fixed:
+    hortensia:
+      - Fix incorrectly named part
+    simon:
+      - Added missing sleeve notch on yoke
+
+2.13.0:
+  date: 2021-02-13
+
+  Added:
+    components:
+      - Linedrawing for hortensia
+    hortensia:
+      - Initial release of Hortensia, a handbag pattern
+    i18n:
+      - Translation for Hortensia
+
+  Fixed:
+    bella:
+      - Verify whether back dart passes armhole depth
+    breanna:
+      - Try harder to find the intersection point for the scyedart
+      - Define missing y variable in paperless branch
+    bruce:
+      - Added notches to facilitate seam matching
+    components:
+      - Check point attributes are present before using them
+    hugo:
+      - Fix style of the seam allowance paths
+      - Fix sleeve dependencies
+    simone:
+      - Force bust dart intersection if not found initially
+    theo:
+      - Check for intersection returning an array
+    titan:
+      - Always balance the waist
+    wahid:
+      - Make sure roudEnd and roundStart points are always available
+
+2.12.1:
+  date: 2021-01-27
+  Added:
+    create-freesewing-pattern:
+      - Fixed missing dependency
+
+2.12.0:
+  date: 2021-01-19
+  Added:
+    bella:
+      - Initial release of this body block for womenswear
+
+2.11.3:
+  date: 2021-01-16
+  Added:
+    plugin-scalebox:
+      - Now includes the miniscale macro
+
+  Changed:
+    plugin-scalebox:
+      - Took my name off the patterns
+
+  Fixed:
+    albert:
+      - Added missing scalebox
+    bent:
+      - Added missing scalebox
+    bruce:
+      - Added missing scalebox
+    components:
+      - Fixed links in Workbench footer
+    florence:
+      - Added missing scalebox
+    florent:
+      - Added missing scalebox
+    holmes:
+      - Added missing scalebox
+    huey:
+      - Added missing scalebox
+      - Added cut-on-fold indicator to pocket
+      - Removed lingering notch from pocket part
+    hugo:
+      - Removed inherited notches
+    jaeger:
+      - Added missing scalebox
+    shin:
+      - Added missing scalebox
+    simon:
+      - Cleaned up notches
+      - Marked where to match fabric on closure
+    simone:
+      - Cleaned up notches
+    theo:
+      - Cleaned up notches
+    wahid:
+      - Added missing scalebox
+      - Proper styling for SA on front and back
+    waralee:
+      - Added missing scalebox
+
+2.11.2:
+  date: 2021-01-11
+  Fixed:
+    components:
+      - Fixed links in Workbench footer
+  Added:
+    brian:
+      - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
+
+2.11.1:
+  date: 2021-01-11
+  Fixed:
+    create-freesewing-pattern:
+      - Fixed issue with node-sass,
+        see [#778](https://github.com/freesewing/freesewing/issues/778)
+        and [#779](https://github.com/freesewing/freesewing/issues/779)
+
+2.11.0:
+  date: 2021-01-10
+  Added:
+    components:
+      - Added some more examples to the Examples component
+      - Draft configurator now supports collapsing of subgroups
+      - Draft configurator now supports actions atop the menu
+    css-theme:
+      - Proper formatting for markdown syntax highlighting
+      - Now includes the fonts so you don't have to
+    plugin-notches:
+      - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
+
+  Changed:
+    css-theme:
+      - Plenty of changes for a new look
+      - Restyled the draft configurator
+    i18n:
+      - New strings for new features
+  Fixed:
+    components:
+      - Include basic themeing in Example component
+      - Updated the note and tip icons
+    i18n:
+      - Type in Simon title
+    shin:
+      - Removed unused lengthBonus option
+
+  Removed:
+    components:
+      - Removed the Emblem component
+      - Removed the Navbar component
+      - Removed the Ogol component
 
 2.10.7:
   date: 2020-11-18

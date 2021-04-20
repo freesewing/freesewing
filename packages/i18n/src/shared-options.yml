@@ -58,6 +58,11 @@ carlita:
     chestPocketHeight: carlton
     beltWidth: carlton
     buttonSpacingHorizontal: carlton
+charlie:
+  dflt: titan
+  other:
+    seatEase: penelope
+    waistEase: penelope
 diana:
   dflt: brian
   other:

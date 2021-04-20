@@ -1,6 +1,69 @@
 # Change log for: @freesewing/components
 
 
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added charlie LineDrawing
+
+### Changed
+
+ - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
+
+### Fixed
+
+ - Always show design mode switch
+
+## 2.14.0 (2021-03-07)
+
+### Added
+
+ - Added Bella linedrawing
+ - Added Cornelius linedrawing
+
+## 2.13.0 (2021-02-13)
+
+### Added
+
+ - Linedrawing for hortensia
+
+### Fixed
+
+ - Check point attributes are present before using them
+
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Fixed links in Workbench footer
+
+## 2.11.2 (2021-01-11)
+
+### Fixed
+
+ - Fixed links in Workbench footer
+
+## 2.11.0 (2021-01-10)
+
+### Added
+
+ - Added some more examples to the Examples component
+ - Draft configurator now supports collapsing of subgroups
+ - Draft configurator now supports actions atop the menu
+
+### Removed
+
+ - Removed the Emblem component
+ - Removed the Navbar component
+ - Removed the Ogol component
+
+### Fixed
+
+ - Include basic themeing in Example component
+ - Updated the note and tip icons
+
 ## 2.10.6 (2020-11-15)
 
 ### Added

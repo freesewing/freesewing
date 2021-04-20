@@ -20,7 +20,7 @@ const PatternOptions = (props) => {
     let children = null
     if (expanded.indexOf(group) !== -1)
       children = (
-        <ul className="config l3">
+        <ul className="config level-2">
           <OptionGroup
             noDocs={props.noDocs}
             key={group + '-group'}
@@ -54,7 +54,7 @@ const PatternOptions = (props) => {
     }
   }
 
-  return <ul className="config l2">{children}</ul>
+  return <ul className="config level-1">{children}</ul>
 }
 
 export default PatternOptions

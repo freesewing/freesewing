@@ -1,14 +1,4 @@
 export default (part) => {
-  part.paths = {} // This removed paperless dimensions from brian block
-  for (let pid of [
-    '__scaleboxLead',
-    '__scaleboxMetric',
-    '__scaleboxImperial',
-    '__scaleboxText',
-    '__scaleboxTitle',
-    '__scaleboxLink'
-  ])
-    delete part.points[pid]
   let {
     measurements,
     sa,
@@ -19,8 +9,15 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
+    snippets,
+    Snippet
   } = part.shorthand()
+
+  // Remove inherited paths, snippets, and scalebox
+  for (let p in paths) delete paths[p]
+  for (let s in snippets) delete snippets[s]
+  macro('scalebox', false)
 
   // Sleeve width depends on cuff style
   let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
@@ -115,6 +112,8 @@ export default (part) => {
 
   // Complete pattern?
   if (complete) {
+    snippets.backNotch = new Snippet('bnotch', points.backNotch)
+    snippets.frontNotch = new Snippet('notch', points.frontNotch)
     points.placketEnd = points.cuffLeftCusp.shift(
       90,
       options.sleevePlacketLength * measurements.shoulderToWrist

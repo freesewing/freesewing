@@ -12,7 +12,7 @@ devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: Für Fragen, Feedback oder Anregungen, kommen Sie in unserem Chatraum
 draftYourPattern: Zeichnen Sie Ihr Schnittmuster
 testYourPattern: Testen Sie Ihr Schnittmuster
-draftThing: 'Draft {thing}'
+draftThing: 'Entwurf {thing}'
 testThing: 'Test {thing}'
 renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
 weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
@@ -23,8 +23,11 @@ size: Größe
 noRequiredMeasurements: Dieses Muster hat keine erforderlichen Masse
 howtoAddMeasurements: Um Masse als Anforderung zu definieren, fügen Sie sie in den <b>Masse-</b>Abschnitt der Konfigurationsdatei des Schnittmusters ein.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter
-designModeIsOn: Design-Modus ist aktiv
-designModeIsOff: Dalton Modus ist aus
+clearDesignMode: Clear design mode
+designMode: Design mode
+exportMode: Export mode
+thingIsEnabled: '{thing} is enabled'
+thingIsDisabled: '{thing} is disabled'
 turnOn: Aktivieren
 turnOff: Deaktivieren
-validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschreiben sein und dürfen keine Sonderzeichen enhalten.\nBennen Sie ihr Name also entsprechend, wie in etwa:"
+validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benennen Sie ihr Muster also entsprechend, wie in etwa:"

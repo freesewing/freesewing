@@ -15,7 +15,7 @@ export default {
   },
   measurements: ['hips', 'upperLeg', 'waistToHips', 'waistToUpperLeg'],
   dependencies: {
-    side: 'back',
+    side: ['back', 'front'],
     front: 'inset',
     inset: 'back'
   },

@@ -59,7 +59,7 @@ svg.freesewing.draft {
     font-size: 6px;
     @include title-font;
     text-anchor: start;
-    font-weight: 200;
+    font-weight: 400;
     dominant-baseline: ideographic;
   }
   .text-xs {
@@ -93,7 +93,7 @@ svg.freesewing.draft {
   text.title-nr {
     font-size: 32px;
     @include title-font;
-    font-weight: bold;
+    font-weight: 700;
     stroke: none;
   }
   /* New style for sampled sizes */
@@ -188,7 +188,13 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-dark;
   }
-
+  path.bartack {
+    stroke: $fc-draft-mark-light;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #212529;
@@ -294,7 +300,13 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-light;
   }
-
+  path.bartack {
+    stroke: $fc-draft-mark-dark;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #f8f9fa;

@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let { Point, Path, points, paths, store } = part.shorthand()
 
   let y = store.get('y')
@@ -45,10 +45,7 @@ export default function(part) {
   y += 10
   points.ftl = new Point(0, y)
   points.ftr = new Point(w, y)
-  paths.snip = new Path()
-    .move(points.ftl)
-    .line(points.ftr)
-    .attr('data-text', 'fill')
+  paths.snip = new Path().move(points.ftl).line(points.ftr).attr('data-text', 'fill')
   y += 15
   for (let i of colors) {
     let h = 10

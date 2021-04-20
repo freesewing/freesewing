@@ -1,6 +1,35 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
+## 2.14.0 (2021-03-07)
+
+### Added
+
+ - Added translations for Cornelius
+
+## 2.13.0 (2021-02-13)
+
+### Added
+
+ - Translation for Hortensia
+
+## 2.11.0 (2021-01-10)
+
+### Changed
+
+ - New strings for new features
+
+### Fixed
+
+ - Type in Simon title
+
 ## 2.10.5 (2020-11-14)
 
 ### Fixed

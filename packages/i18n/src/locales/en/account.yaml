@@ -23,6 +23,9 @@ languageInfo: This language choice determines in what language you will receive 
 language: Language
 languageTitle: Select the language of your choice
 newPassword: New password
+newsletter: Newsletter
+newsletterTitle: Would you like to receive the FreeSewing newsletter?
+newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
 passwordInfo: Changing your password requires your current password. Fill that in, then fill in your new password too.
 password: Password
 passwordTitle: Enter your current password, and your new password

@@ -1,0 +1,51 @@
+{
+  "name": "hortensia",
+  "homepage": "https://hortensia.freesewing.dev/",
+  "version": "",
+  "private": true,
+  "dependencies": {
+    "@fontsource/permanent-marker": "^4.1.0",
+    "@fontsource/roboto-mono": "^4.1.0",
+    "@fontsource/ubuntu": "^4.1.0",
+    "@freesewing/components": "latest",
+    "@freesewing/core": "latest",
+    "@freesewing/css-theme": "latest",
+    "@freesewing/i18n": "latest",
+    "@freesewing/models": "latest",
+    "@freesewing/mui-theme": "latest",
+    "@freesewing/pattern-info": "latest",
+    "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-theme": "latest",
+    "@freesewing/plugin-i18n": "latest",
+    "@freesewing/plugin-svgattr": "latest",
+    "@freesewing/utils": "latest",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^v4.0.0-alpha.57",
+    "pattern": "link:..",
+    "prismjs": "1.22.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^3.4.4",
+    "file-saver": "^2.0.5",
+    "react-markdown": "5.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-prismjs": "2.0.1"
+  }
+}

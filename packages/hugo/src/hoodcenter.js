@@ -53,7 +53,7 @@ export default function (part) {
   // Complete pattern?
   if (complete) {
     if (sa) {
-      paths.sa = paths.seam.offset(sa)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
     points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
     macro('title', { at: points.title, nr: 7, title: 'hoodCenter' })

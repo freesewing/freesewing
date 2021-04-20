@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let {
     sa,
     Point,
@@ -54,6 +54,7 @@ export default part => {
         to: points.cbYoke,
         grainline: true
       })
+      snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
     } else {
       points.grainlineFrom = points.cbYoke.shift(0, 20)
       points.grainlineTo = points.cbNeck.shift(0, 20)
@@ -61,20 +62,14 @@ export default part => {
         from: points.grainlineFrom,
         to: points.grainlineTo
       })
+      snippets.sleeveNotchA = new Snippet('bnotch', points.armholePitch)
+      snippets.sleeveNotchB = new Snippet('bnotch', points._armholePitch)
     }
-
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['neck', 'shoulder']
-    })
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
       if (options.splitYoke) {
-        paths.sa = paths.sa
-          .line(points.cbNeck)
-          .move(points.cbYoke)
-          .line(paths.sa.start())
+        paths.sa = paths.sa.line(points.cbNeck).move(points.cbYoke).line(paths.sa.start())
       }
     }
   }

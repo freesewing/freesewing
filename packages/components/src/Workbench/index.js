@@ -24,6 +24,7 @@ import svgattrPlugin from '@freesewing/plugin-svgattr'
 import Xport from './Export'
 import axios from 'axios'
 import yaml from 'yaml'
+import Footer from './Footer'
 
 const icons = {
   draft: <DraftIcon />,
@@ -31,6 +32,8 @@ const icons = {
   measurements: <MeasurementsIcon />,
   xport: <ExportIcon />
 }
+
+const extraTranslations = {}
 
 const Workbench = ({
   updateGist,
@@ -44,8 +47,13 @@ const Workbench = ({
   units = 'metric',
   translations = false,
   addTranslations,
-  recreate = false
+  recreate = false,
 }) => {
+
+  if (translations) {
+    for (let key in translations) extraTranslations[key] = translations[key]
+  }
+
   const [display, setDisplay] = useState(null)
   const [theme, setTheme] = useState('light')
   const [measurements, setMeasurements] = useState(null)
@@ -164,7 +172,7 @@ const Workbench = ({
   //const raiseEvent = (type = null, data = null) => {}
 
   const MainMenu = () => (
-    <ul className="aside-main-menu">
+    <ul id="main-menu" className="aside-main-menu">
       {Object.keys(icons).map((link) => {
         return (
           <li key={link}>
@@ -211,7 +219,7 @@ const Workbench = ({
   }
 
   let main = null
-  let context = null
+  let preMenu = null
   let pattern
   switch (display) {
     case 'languages':
@@ -222,19 +230,6 @@ const Workbench = ({
           </h1>
           {languageButtons()}
         </>
-      )
-      context = (
-        <ul>
-          {Object.keys(languages).map((lang) => {
-            return (
-              <li key={lang}>
-                <a href="#" onClick={() => setLanguage(lang)}>
-                  {languages[lang]}
-                </a>
-              </li>
-            )
-          })}
-        </ul>
       )
       break
     case 'draft':
@@ -263,7 +258,7 @@ const Workbench = ({
           design={design}
         />
       )
-      context = (
+      preMenu = (
         <DraftConfig
           freesewing={freesewing}
           Pattern={Pattern}
@@ -292,7 +287,7 @@ const Workbench = ({
         setDisplay('measurements')
         break
       }
-      context = (
+      preMenu = (
         <SampleConfigurator
           config={config}
           gist={gist}
@@ -365,22 +360,26 @@ const Workbench = ({
           setDisplay={setDisplay}
           toggleDarkMode={toggleDarkMode}
           config={config}
+          theme={theme}
         />
-        <div className="fs-sa" style={{ position: 'relative' }}>
-          {hideAside ? (
-            <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>
-              <UnhideIcon />
-            </a>
-          ) : (
-            <aside>
-              <div className="sticky">
-                <MainMenu />
-                <div className="aside-context">{context}</div>
-              </div>
-            </aside>
-          )}
-          <section>{main}</section>
+        <div className="layout-wrapper">
+          <div className="layout">
+            {hideAside ? (
+              <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>
+                <UnhideIcon />
+              </a>
+            ) : (
+              <aside>
+                <div className="sticky">
+                  {preMenu}
+                  <MainMenu />
+                </div>
+              </aside>
+            )}
+            <section>{main}</section>
+          </div>
         </div>
+        <Footer />
       </div>
     </MuiThemeProvider>
   )
@@ -391,5 +390,5 @@ export default withLanguage(
     gist: defaultGist,
     store: true
   }),
-  'en'
+  'en', false, extraTranslations
 )

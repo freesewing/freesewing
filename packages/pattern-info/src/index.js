@@ -9,18 +9,22 @@ export { default as info } from './prebuild/info'
 export const list = [
   'aaron',
   'albert',
+  'bella',
   'benjamin',
   'bent',
   'breanna',
-  'diana',
   'brian',
   'bruce',
   'carlita',
   'carlton',
   'cathrin',
+  'charlie',
+  'cornelius',
+  'diana',
   'florent',
   'florence',
   'holmes',
+  'hortensia',
   'huey',
   'hugo',
   'jaeger',
@@ -48,9 +52,12 @@ export const withoutBreasts = [
   'brian',
   'bruce',
   'carlton',
+  'charlie',
+  'cornelius',
   'florent',
   'florence',
   'holmes',
+  'hortensia',
   'huey',
   'hugo',
   'jaeger',
@@ -69,4 +76,4 @@ export const withoutBreasts = [
   'waralee'
 ]
 
-export const withBreasts = ['breanna', 'diana', 'cathrin', 'carlita', 'simone']
+export const withBreasts = ['bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']

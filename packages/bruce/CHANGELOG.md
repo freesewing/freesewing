@@ -1,6 +1,18 @@
 # Change log for: @freesewing/bruce
 
 
+## 2.13.0 (2021-02-13)
+
+### Fixed
+
+ - Added notches to facilitate seam matching
+
+## 2.11.3 (2021-01-16)
+
+### Fixed
+
+ - Added missing scalebox
+
 ## 2.7.1 (2020-07-24)
 
 ### Fixed

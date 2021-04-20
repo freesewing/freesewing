@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths } = part.shorthand()
 
   points.top = new Point(50, 10)
@@ -39,10 +39,7 @@ export default part => {
     .line(points._out1)
     .close()
 
-  paths.mirror = new Path()
-    .move(points.top)
-    .line(points.bottom)
-    .attr('class', 'note dashed')
+  paths.mirror = new Path().move(points.top).line(points.bottom).attr('class', 'note dashed')
 
   return part
 }

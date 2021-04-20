@@ -3,6 +3,7 @@ import { version } from '../package.json'
 export default {
   name: 'theo',
   version,
+  deprecated: 'charlie',
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'menswear',

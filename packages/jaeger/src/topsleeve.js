@@ -102,6 +102,7 @@ export default function (part) {
     .attr('class', 'fabric lashed')
 
   if (complete) {
+    macro('scalebox', { at: points.elbowCenter })
     // Notches
     macro('sprinkle', {
       snippet: 'notch',

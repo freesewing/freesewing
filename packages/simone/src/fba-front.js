@@ -61,15 +61,28 @@ export default (part) => {
   //
   // Cut to the side seam
   //
-  points._dartDirection = points.bust.shift(options.bustDartAngle * -1, measurements.bust / 4)
-  points.bustSideCut1 = utils.lineIntersectsCurve(
-    points.bust,
-    points._dartDirection,
-    points.waist,
-    points.waistCp2,
-    points.armhole,
-    points.armhole
-  )
+  points._dartDirection = points.bust.shift(options.bustDartAngle * -1, measurements.bust / 3)
+
+  // Help method to find side cut
+  const sideCut1 = () =>
+    utils.lineIntersectsCurve(
+      points.bust,
+      points._dartDirection,
+      points.waist,
+      points.waistCp2,
+      points.armhole,
+      points.armhole
+    )
+  let bustSideCut1 = sideCut1()
+  if (!bustSideCut1) {
+    // No intersection found. Adapt dart direction to force intersection.
+    points._dartDirection = new Path()
+      .move(points.waist)
+      .curve_(points.waistCp2, points.armhole)
+      .shiftFractionAlong(0.5)
+    bustSideCut1 = sideCut1()
+  }
+  points.bustSideCut1 = bustSideCut1
 
   //
   // Mark bust at waist and hem level
@@ -280,18 +293,7 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: [
-      'armhole',
-      'armholePitch',
-      'cfArmhole',
-      'cfWaist',
-      'cfHem',
-      'hips',
-      'waist',
-      'bust_rot2',
-      'neck',
-      'shoulder'
-    ]
+    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2']
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)

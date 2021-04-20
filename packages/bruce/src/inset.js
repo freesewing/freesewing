@@ -1,7 +1,19 @@
 import init from './init'
 
 export default function (part) {
-  let { store, sa, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  let {
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    Snippet,
+    snippets
+  } = part.shorthand()
 
   // Initialize
   init(part)
@@ -56,6 +68,13 @@ export default function (part) {
       from: points.bottomLeft.shift(0, 15),
       to: points.topLeft.shift(0, 15)
     })
+    snippets.notch = new Snippet(
+      'notch',
+      new Path()
+        .move(points.tip)
+        .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
+        .shiftFractionAlong(0.5)
+    )
   }
 
   // Paperless?

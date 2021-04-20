@@ -15,12 +15,12 @@ const colors = {
   }
 }
 const asTitle = {
-  fontFamily: 'Roboto Condensed',
-  fontWeight: 'bold'
+  fontFamily: 'Ubuntu',
+  fontWeight: '700'
 }
 const important = '!important'
 
-const getTheme = mode => {
+const getTheme = (mode) => {
   let c = colors[mode]
   let forceColor = {
     root: {
@@ -62,6 +62,7 @@ const getTheme = mode => {
     },
     typography: {
       fontFamily: [
+        'Ubuntu',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths } = part.shorthand()
 
   points.A = new Point(45, 60)
@@ -16,11 +16,7 @@ export default part => {
 
   paths.offset = paths.example.offset(-10).attr('class', 'interfacing')
 
-  paths.lineOffset = new Path()
-    .move(points.A)
-    .line(points.B)
-    .offset(-5)
-    .attr('class', 'various')
+  paths.lineOffset = new Path().move(points.A).line(points.B).offset(-5).attr('class', 'various')
 
   paths.curveOffset = new Path()
     .move(points.B)

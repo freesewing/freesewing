@@ -4,13 +4,13 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function(svg) {
+    preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-flip') === false)
         svg.attributes.set('freesewing:plugin-flip', version)
     }
   },
   macros: {
-    flip: function() {
+    flip: function () {
       let flipped = null
       let ops = ['from', 'to', 'cp1', 'cp2']
       for (let id in this.points) {

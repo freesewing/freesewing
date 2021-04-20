@@ -1,25 +1,25 @@
-##### Updated developer documentation
+##### Next contributor call: Saturday 1 May
 
-We've give [freesewing.dev](https://freesewing.dev/), our websites for
-developers, a bit of a face-lift to bring it in line with recent changes
-on [freesewing.org](https://freesewing.org/), our website for makers.
+Note that the next contributor call is on Saturday the 1sth of May.
 
-If you find anything lacking or broken, please don't hesitate
-to [create an issue](https://github.com/freesewing/freesewing/issues/new).
+For details and timing (including different time zones) 
+check [issue #962](https://github.com/freesewing/freesewing/issues/962)
 
-##### Contributor calls
 
-Recently, we started organizing contributor calls. 
-Anybody with an interest in FreeSewing is welcome to join.
+##### New bartack plugin
 
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). 
-Notes and todos are [available on Github](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Afscc).
+We have [a new plugin to add bartacks to your pattern](https://freesewing.dev/reference/plugins/bartack/).
 
-##### We’ve moved to Discord
+##### New rmad macro
 
-We’ve moved our chat rooms from to Discord. 
-Our legacy chat on Gitter is deprecated.
+The [dimensions plugin](/reference/plugins/dimensions/) now provides a new [rmad macro](https://freesewing.dev/reference/macros/rmad').
 
-You can join us at https://chat.freesewing.org, 
-or use this in-app Discord invite: https://discord.gg/YDV4GvU
+##### New buttonhole-start and buttonhole-end snippets
+
+The [buttons plugin](/reference/plugins/buttons/) has provides two new
+snippets to help you position your buttonholes so they match your buttons:
+
+ - [buttonhole-start](https://freesewing.dev/reference/snippets/buttonhole-start)
+ - [buttonhole-end](https://freesewing.dev/reference/snippets/buttonhole-end)
+
 

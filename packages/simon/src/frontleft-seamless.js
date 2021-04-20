@@ -1,6 +1,6 @@
 import { addButtonHoles } from './shared'
 
-export default part => {
+export default (part) => {
   let { sa, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
   let width = options.buttonholePlacketWidth
   points.placketCfNeck = points.cfNeck
@@ -11,25 +11,21 @@ export default part => {
   points.placketBottomFold2 = points.cfHem.shift(180, width * 1.5)
   points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
 
-  paths.seam
-    .line(points.placketTopEdge)
-    .line(points.placketBottomEdge)
-    .close()
+  paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
 
   // Complete pattern?
   if (complete) {
     // Placket help lines
-    paths.frontCenter = new Path()
-      .move(points.cfNeck)
-      .line(points.cfHem)
-      .attr('class', 'help')
+    paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     paths.placketFold1 = new Path()
-      .move(points.placketTopFold1)
-      .line(points.placketBottomFold1)
+      .move(points.placketBottomFold1)
+      .line(points.placketTopFold1)
       .attr('class', 'dotted')
+      .attr('data-text', 'matchHere')
+      .attr('data-text-class', 'text-xs center')
     paths.placketFold2 = new Path()
-      .move(points.placketTopFold2)
-      .line(points.placketBottomFold2)
+      .move(points.placketBottomFold2)
+      .line(points.placketTopFold2)
       .attr('class', 'dotted')
     macro('sprinkle', {
       snippet: 'notch',

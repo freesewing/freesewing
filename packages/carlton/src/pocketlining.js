@@ -1,4 +1,4 @@
-export default function(part) {
+export default function (part) {
   let {
     paperless,
     sa,
@@ -37,17 +37,10 @@ export default function(part) {
       .line(points.roundRightStart)
       .curve(points.roundRightCp1, points.roundRightCp2, points.roundRightEnd)
   } else {
-    paths.seam = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeft)
-      .line(points.bottomRight)
+    paths.seam = new Path().move(points.topLeft).line(points.bottomLeft).line(points.bottomRight)
   }
 
-  paths.seam = paths.seam
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .attr('class', 'lining')
+  paths.seam = paths.seam.line(points.topRight).line(points.topLeft).close().attr('class', 'lining')
 
   delete paths.fold
 

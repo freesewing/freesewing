@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/plugin-banner",
-  "version": "2.10.7",
+  "version": "2.15.0",
   "description": "A FreeSewing plugin to repeat text on a path",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.10.7"
+    "@freesewing/core": "^2.15.0"
   },
   "dependencies": {},
   "devDependencies": {},

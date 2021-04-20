@@ -90,10 +90,10 @@ export default function (part) {
   points.seatOut = points.seatOut.shift(angle, delta)
 
   // Cut the top of our pants short to make room for the waistband/elastic
-  points.styleWaistOut = drawOutseam(true).shiftAlong(options.waistElastic)
+  points.styleWaistOut = drawOutseam(true).shiftAlong(options.waistbandWidth)
   points.styleWaistIn = points.styleWaistIn.shiftTowards(
     points.crotchSeamCurveStart,
-    options.waistElastic
+    options.waistbandWidth
   )
 
   // Our style changes will have influenced the inseam & outseam a bit
@@ -287,31 +287,33 @@ export default function (part) {
         to: points.fork,
         y: points.styleWaistIn.y - sa - 60
       })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.styleWaistOut,
-        d: -15
-      })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.pocketFlapBottomIn,
-        d: -15
-      })
-      macro('ld', {
-        from: points.pocketFlapTopOut,
-        to: points.pocketFlapTopIn,
-        d: 15
-      })
-      macro('ld', {
-        from: points.styleWaistOut,
-        to: points.topLeft,
-        d: 10 + sa
-      })
-      macro('ld', {
-        from: points.topLeft,
-        to: points.topRight,
-        d: 10 + sa
-      })
+      if (options.frontPockets) {
+        macro('ld', {
+          from: points.pocketFlapTopIn,
+          to: points.styleWaistOut,
+          d: -15
+        })
+        macro('ld', {
+          from: points.pocketFlapTopIn,
+          to: points.pocketFlapBottomIn,
+          d: -15
+        })
+        macro('ld', {
+          from: points.pocketFlapTopOut,
+          to: points.pocketFlapTopIn,
+          d: 15
+        })
+        macro('ld', {
+          from: points.styleWaistOut || points.waistOut,
+          to: points.topLeft,
+          d: 10 + sa
+        })
+        macro('ld', {
+          from: points.topLeft,
+          to: points.topRight,
+          d: 10 + sa
+        })
+      }
     }
   }
 

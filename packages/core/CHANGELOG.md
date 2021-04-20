@@ -1,6 +1,16 @@
 # Change log for: @freesewing/core
 
 
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - The part.getId() method now takes an optional prefix argument
+
+### Changed
+
+ - Don't round coordinates internally to avoid path.split misses
+
 ## 2.10.3 (2020-11-08)
 
 ### Changed

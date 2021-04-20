@@ -1,4 +1,4 @@
-export default part => {
+export default (part) => {
   let { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
 
   points.from1 = new Point(10, 10)
@@ -24,22 +24,10 @@ export default part => {
     } else snippet = 'bnotch'
     snippets[part.getId()] = new Snippet(snippet, point)
   }
-  paths.line1 = new Path()
-    .move(points.from1)
-    .line(points.to1)
-    .attr('class', 'fabric stroke-lg')
-  paths.lne1 = new Path()
-    .move(points.to1)
-    .line(points.b1)
-    .attr('class', 'fabric dashed')
-  paths.line2 = new Path()
-    .move(points.from2)
-    .line(points.to2)
-    .attr('class', 'fabric stroke-lg')
-  paths.lne2 = new Path()
-    .move(points.to2)
-    .line(points.b2)
-    .attr('class', 'fabric dashed')
+  paths.line1 = new Path().move(points.from1).line(points.to1).attr('class', 'fabric stroke-lg')
+  paths.lne1 = new Path().move(points.to1).line(points.b1).attr('class', 'fabric dashed')
+  paths.line2 = new Path().move(points.from2).line(points.to2).attr('class', 'fabric stroke-lg')
+  paths.lne2 = new Path().move(points.to2).line(points.b2).attr('class', 'fabric dashed')
 
   return part
 }
