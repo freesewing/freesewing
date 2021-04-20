@@ -15,6 +15,10 @@ export default (part) => {
     sa
   } = part.shorthand()
 
+  if (options.waistbandCurve > 0) {
+    return part;
+  }
+
   points.topLeft = new Point(0, 0)
   points.top = new Point(options.waistbandWidth, 0)
   points.topRight = new Point(points.top.x * 2, 0)
