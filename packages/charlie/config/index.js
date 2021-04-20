@@ -125,8 +125,8 @@ export default {
     // Front pockets
     frontPocketSlantDepth: { pct: 85, min: 70, max: 100 },
     frontPocketSlantWidth: { pct: 25, min: 15, max: 35 },
-    frontPocketSlantRound: { pct: 30, min: 0, max: 50 },
-    frontPocketSlantBend: { pct: 25, min: 0, max: 50 },
+    frontPocketSlantRound: { pct: 30, min: 5, max: 50 },
+    frontPocketSlantBend: { pct: 25, min: 5, max: 50 },
     frontPocketWidth: { pct: 55, min: 45, max: 65 },
     frontPocketDepth: { pct: 100, min: 85, max: 110 },
     frontPocketFacing: { pct: 45, min: 25, max: 65 },
