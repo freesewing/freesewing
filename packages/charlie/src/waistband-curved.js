@@ -74,6 +74,7 @@ export default (part) => {
         .line(points.edgeRightTop)
         .line(points.cfRightTop)
         .curve(points.cfRightTopCp, points.cfLeftTopCp, points.cfLeftTop)
+        .line(points.cfLeftBottom)
         .close()
         .setRender(false)
     paths.seam = paths.saBase.clone().attr('class', 'fabric').setRender(true)
@@ -118,8 +119,20 @@ export default (part) => {
             .attr('class', 'dashed')
             .attr('data-text', 'leftSide')
             .attr('data-text-class', 'center')
-        if (sa) {
 
+        let buttonScale = options.waistbandWidth / 14
+        points.button = points.edgeRightBottom.shiftFractionTowards(points.cfRightTop, 0.6)
+        snippets.button = new Snippet('button', points.button).attr('data-scale', buttonScale)
+        points.buttonhole = new Point(points.cfLeftTop.x + 0.4 * options.waistbandWidth, points.cfLeftTop.y - store.get('waistbandFly') * 0.4)
+        snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr(
+            'data-scale',
+            buttonScale
+        )
+        if (sa) {
+            paths.sa = paths.saBase
+                .offset(sa)
+                .close()
+                .attr('class', 'fabric sa')
         }
 
         if (paperless) {
