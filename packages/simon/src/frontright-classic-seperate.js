@@ -52,6 +52,11 @@ export default (part) => {
       to: points.placketTopIn,
       y: points.neck.y - sa - 30
     })
+    macro('hd', {
+      from: points.armhole,
+      to: points.placketTopIn,
+      y: points.neck.y - sa - 45
+    })
     macro('vd', {
       from: points.placketTopIn,
       to: points.neck,

@@ -71,6 +71,16 @@ export default (part) => {
       to: points.neck,
       y: points.neck.y - 15 - sa
     })
+    macro('hd', {
+      from: points.placketTopEdge,
+      to: points.shoulder,
+      y: points.neck.y - 30 - sa
+    })
+    macro('hd', {
+      from: points.placketTopEdge,
+      to: points.armhole,
+      y: points.neck.y - 45 - sa
+    })
     points.button0 = points.placketTopEdge
     let j
     for (let i = 0; i < options.buttons; i++) {

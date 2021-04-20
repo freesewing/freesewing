@@ -62,6 +62,31 @@ export default (part) => {
 
   // Paperless?
   if (paperless) {
+    macro('hd', {
+      from: points.hps,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 15
+    })
+    macro('hd', {
+      from: points.shoulder,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 30
+    })
+    macro('hd', {
+      from: points.armhole,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 45
+    })
+    macro('vd', {
+      from: points.placketTopEdge,
+      to: points.neck,
+      x: points.placketTopEdge.x + sa + 15
+    })
+    macro('vd', {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x + sa + 15
+    })
   }
 
   return part

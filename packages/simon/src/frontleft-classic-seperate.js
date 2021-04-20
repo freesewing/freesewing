@@ -65,6 +65,11 @@ export default (part) => {
       to: points.shoulder,
       y: points.neck.y - sa - 30
     })
+    macro('hd', {
+      from: points.neckEdge,
+      to: points.armhole,
+      y: points.neck.y - sa - 45
+    })
     macro('vd', {
       from: points.neckEdge,
       to: points.neck,
