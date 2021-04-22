@@ -1,6 +1,7 @@
-let expect = require("chai").expect;
-let freesewing = require("./dist");
-let utils = freesewing.utils;
+const expect = require("chai").expect;
+const freesewing = require("./dist");
+const utils = freesewing.utils;
+const round = utils.round;
 
 it("Should return the correct macro name", () => {
   expect(utils.macroName("test")).to.equal("_macro_test");
@@ -12,8 +13,8 @@ it("Should find the intersection of two endless line segments", () => {
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(19, 70);
   let X = freesewing.utils.beamsIntersect(a, b, c, d);
-  expect(X.x).to.equal(60.49);
-  expect(X.y).to.equal(40.2);
+  expect(round(X.x)).to.equal(60.49);
+  expect(round(X.y)).to.equal(40.2);
 });
 
 it("Should detect parallel lines", () => {
@@ -43,8 +44,8 @@ it("Should swap direction prior to finding beam intersection", () => {
   let c = new freesewing.Point(90, 40);
   let d = new freesewing.Point(19, 40);
   let X = freesewing.utils.beamsIntersect(a, b, c, d);
-  expect(X.x).to.equal(7.14);
-  expect(X.y).to.equal(40);
+  expect(round(X.x)).to.equal(7.14);
+  expect(round(X.y)).to.equal(40);
 });
 
 it("Should return false when two lines don't intersect", () => {
@@ -61,18 +62,8 @@ it("Should find the intersection of two line segments", () => {
   let c = new freesewing.Point(90, 19);
   let d = new freesewing.Point(11, 70);
   let X = freesewing.utils.linesIntersect(a, b, c, d);
-  expect(X.x).to.equal(51.95);
-  expect(X.y).to.equal(43.56);
-});
-
-it("Should find the intersection of two line segments - round() edge case", () => {
-  let a = new freesewing.Point(45, 60);
-  let b = new freesewing.Point(10, 30);
-  let c = new freesewing.Point(55, 40);
-  let d = new freesewing.Point(0, 55);
-  let X = freesewing.utils.linesIntersect(a, b, c, d);
-  expect(X.x).to.equal(29.71);
-  expect(X.y).to.equal(46.9);
+  expect(round(X.x)).to.equal(51.95);
+  expect(round(X.y)).to.equal(43.56);
 });
 
 it("Should find the intersection of an endles line and a give X-value", () => {
@@ -124,8 +115,8 @@ it("Should find 1 intersection between a curve and a line", () => {
   let D = new freesewing.Point(30, -85);
 
   let hit = freesewing.utils.lineIntersectsCurve(E, D, A, Acp, Bcp, B);
-  expect(hit.x).to.equal(20.85);
-  expect(hit.y).to.equal(11.11);
+  expect(round(hit.x)).to.equal(20.85);
+  expect(round(hit.y)).to.equal(11.11);
 });
 
 it("Should find 3 intersections between a curve and a line", () => {
@@ -165,8 +156,8 @@ it("Should find 1 intersection between two curves", () => {
   let Dcp = new freesewing.Point(-270, -220);
 
   let hit = freesewing.utils.curvesIntersect(A, Acp, Bcp, B, C, Ccp, Dcp, D);
-  expect(hit.x).to.equal(15.58);
-  expect(hit.y).to.equal(10.56);
+  expect(round(hit.x)).to.equal(15.58);
+  expect(round(hit.y)).to.equal(10.56);
 });
 
 it("Should find no intersection between two curves", () => {
@@ -229,10 +220,10 @@ it("Should find the intersections of a beam and circle", () => {
     "y"
   );
   expect(intersections.length).to.equal(2);
-  expect(intersections[0].x).to.equal(45);
-  expect(intersections[0].y).to.equal(10);
-  expect(intersections[1].x).to.equal(10);
-  expect(intersections[1].y).to.equal(45);
+  expect(round(intersections[0].x)).to.equal(45);
+  expect(round(intersections[0].y)).to.equal(10);
+  expect(round(intersections[1].x)).to.equal(10);
+  expect(round(intersections[1].y)).to.equal(45);
 });
 
 it("Should not find the intersections of this beam and circle", () => {
@@ -289,8 +280,8 @@ it("Should find one intersection between this line and circle", () => {
     C
   );
   expect(intersections.length).to.equal(1);
-  expect(intersections[0].x).to.equal(8.62);
-  expect(intersections[0].y).to.equal(8.45);
+  expect(round(intersections[0].x)).to.equal(8.62);
+  expect(round(intersections[0].y)).to.equal(8.45);
 });
 
 it("Should not find an intersections between this line and circle", () => {
@@ -338,10 +329,10 @@ it("Should find two intersections between this line and circle", () => {
   expect(intersections1[1].sitsOn(intersections2[0])).to.equal(true);
   expect(intersections1[0].sitsOn(intersections3[0])).to.equal(true);
   expect(intersections1[1].sitsOn(intersections3[1])).to.equal(true);
-  expect(intersections1[0].x).to.equal(7.7);
-  expect(intersections1[0].y).to.equal(2.3);
-  expect(intersections1[1].x).to.equal(1.3);
-  expect(intersections1[1].y).to.equal(8.7);
+  expect(round(intersections1[0].x)).to.equal(7.7);
+  expect(round(intersections1[0].y)).to.equal(2.3);
+  expect(round(intersections1[1].x)).to.equal(1.3);
+  expect(round(intersections1[1].y)).to.equal(8.7);
 });
 
 it("Should find the intersections of a line and circle", () => {
@@ -355,8 +346,8 @@ it("Should find the intersections of a line and circle", () => {
     C
   );
   expect(intersections.length).to.equal(1);
-  expect(intersections[0].x).to.equal(10);
-  expect(intersections[0].y).to.equal(45);
+  expect(round(intersections[0].x)).to.equal(10);
+  expect(round(intersections[0].y)).to.equal(45);
 });
 
 it("Should not find intersections of this line and circle", () => {
@@ -404,14 +395,14 @@ it("Should find intersections between circles", () => {
   );
   expect(intersections1.length).to.equal(2);
   expect(intersections2.length).to.equal(2);
-  expect(intersections1[0].x).to.equal(-2.81);
-  expect(intersections1[0].y).to.equal(17.8);
-  expect(intersections1[1].x).to.equal(17.8);
-  expect(intersections1[1].y).to.equal(-2.81);
-  expect(intersections2[0].x).to.equal(17.8);
-  expect(intersections2[0].y).to.equal(-2.81);
-  expect(intersections2[1].x).to.equal(-2.81);
-  expect(intersections2[1].y).to.equal(17.8);
+  expect(round(intersections1[0].x)).to.equal(-2.81);
+  expect(round(intersections1[0].y)).to.equal(17.81);
+  expect(round(intersections1[1].x)).to.equal(17.81);
+  expect(round(intersections1[1].y)).to.equal(-2.81);
+  expect(round(intersections2[0].x)).to.equal(17.81);
+  expect(round(intersections2[0].y)).to.equal(-2.81);
+  expect(round(intersections2[1].x)).to.equal(-2.81);
+  expect(round(intersections2[1].y)).to.equal(17.81);
 });
 
 it("Should not find intersections between non-overlapping circles", () => {
@@ -470,14 +461,14 @@ it("Should split a curve", () => {
   let d = new freesewing.Point(100, 100);
   let X = new freesewing.Point(50, 50);
   let [c1, c2] = utils.splitCurve(a, b, c, d, X);
-  expect(c1.cp1.x).to.equal(25);
-  expect(c1.cp1.y).to.equal(0);
-  expect(c1.cp2.x).to.equal(37.5);
-  expect(c1.cp2.y).to.equal(25);
-  expect(c2.cp1.x).to.equal(62.5);
-  expect(c2.cp1.y).to.equal(75);
-  expect(c2.cp2.x).to.equal(75);
-  expect(c2.cp2.y).to.equal(100);
+  expect(round(c1.cp1.x)).to.equal(25);
+  expect(round(c1.cp1.y)).to.equal(0);
+  expect(round(c1.cp2.x)).to.equal(37.5);
+  expect(round(c1.cp2.y)).to.equal(25);
+  expect(round(c2.cp1.x)).to.equal(62.5);
+  expect(round(c2.cp1.y)).to.equal(75);
+  expect(round(c2.cp2.x)).to.equal(75);
+  expect(round(c2.cp2.y)).to.equal(100);
 });
 
 it("Should find where a curve intersects a given X-value", () => {
@@ -486,8 +477,8 @@ it("Should find where a curve intersects a given X-value", () => {
   let c = new freesewing.Point(50, 100);
   let d = new freesewing.Point(100, 100);
   let i = utils.curveIntersectsX(a, b, c, d, 30);
-  expect(i.x).to.equal(30);
-  expect(i.y).to.equal(16);
+  expect(round(i.x)).to.equal(30);
+  expect(round(i.y)).to.equal(16);
 });
 
 it("Should find where a curve intersects a given Y-value", () => {
@@ -496,6 +487,6 @@ it("Should find where a curve intersects a given Y-value", () => {
   let c = new freesewing.Point(50, 100);
   let d = new freesewing.Point(100, 100);
   let i = utils.curveIntersectsY(a, b, c, d, 30);
-  expect(i.x).to.equal(39.49);
-  expect(i.y).to.equal(30);
+  expect(round(i.x)).to.equal(39.49);
+  expect(round(i.y)).to.equal(30);
 });
