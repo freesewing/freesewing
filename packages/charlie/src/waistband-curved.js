@@ -136,6 +136,134 @@ export default (part) => {
         }
 
         if (paperless) {
+            // Lower waistband measurements
+            macro('hd', {
+                from: points.edgeRightBottom,
+                to: points.cfLeftBottom,
+                y: points.edgeRightBottom.y - sa - 30
+            })
+            macro('vd', {
+                from: points.edgeRightBottom,
+                to: points.cfLeftBottom,
+                x: points.cfLeftBottom.x + sa + 30
+            })
+
+            macro('hd', {
+                from: points.edgeRightBottom,
+                to: points.ssRightBottom,
+                y: points.edgeRightBottom.y - sa - 15
+            })
+            macro('vd', {
+                from: points.edgeRightBottom,
+                to: points.ssRightBottom,
+                x: points.ssRightBottom.x + sa + 15
+            })
+
+            macro('hd', {
+                from: points.ssRightBottom,
+                to: points.cbBottom,
+                y: points.ssRightBottom.y - sa - 15
+            })
+            macro('vd', {
+                from: points.ssRightBottom,
+                to: points.cbBottom,
+                x: points.cbBottom.x + sa + 15
+            })
+
+            macro('hd', {
+                from: points.cbBottom,
+                to: points.ssLeftBottom,
+                y: points.cbBottom.y - sa - 15
+            })
+            macro('vd', {
+                from: points.cbBottom,
+                to: points.ssLeftBottom,
+                x: points.ssLeftBottom.x + sa + 15
+            })
+
+            macro('hd', {
+                from: points.ssLeftBottom,
+                to: points.cfLeftBottom,
+                y: points.ssLeftBottom.y - sa - 15
+            })
+            macro('vd', {
+                from: points.ssLeftBottom,
+                to: points.cfLeftBottom,
+                x: points.cfLeftBottom.x + sa + 15
+            })
+
+            macro('hd', {
+                from: points.cfLeftTop,
+                to: points.cfLeftBottom,
+                y: points.cfLeftTop.y + sa + 15
+            })
+
+            macro('hd', {
+                from: points.edgeRightBottom,
+                to: points.edgeRightTop,
+                y: points.edgeRightBottom.y - sa - 15
+            })
+            macro('vd', {
+                from: points.edgeRightBottom,
+                to: points.edgeRightTop,
+                x: points.edgeRightTop.x - sa - 15
+            })
+
+            // TOP OF WAISTBAND
+            macro('hd', {
+                from: points.edgeRightTop,
+                to: points.cfLeftTop,
+                y: points.edgeRightTop.y + sa + 30
+            })
+            macro('vd', {
+                from: points.edgeRightTop,
+                to: points.cfLeftTop,
+                x: points.edgeRightTop.x - sa - 30
+            })
+
+            macro('hd', {
+                from: points.edgeRightTop,
+                to: points.ssRightTop,
+                y: points.edgeRightTop.y + sa + 15
+            })
+            macro('vd', {
+                from: points.edgeRightTop,
+                to: points.ssRightTop,
+                x: points.edgeRightTop.x - sa - 15
+            })
+
+            macro('hd', {
+                from: points.ssRightTop,
+                to: points.cbTop,
+                y: points.ssRightTop.y + sa + 15
+            })
+            macro('vd', {
+                from: points.ssRightTop,
+                to: points.cbTop,
+                x: points.ssRightBottom.x - sa - 15
+            })
+
+            macro('hd', {
+                from: points.cbTop,
+                to: points.ssLeftTop,
+                y: points.cbTop.y + sa + 15
+            })
+            macro('vd', {
+                from: points.cbTop,
+                to: points.ssLeftTop,
+                x: points.cbTop.x - sa - 15
+            })
+
+            macro('hd', {
+                from: points.ssLeftTop,
+                to: points.cfLeftTop,
+                y: points.ssLeftTop.y + sa + 15
+            })
+            macro('vd', {
+                from: points.ssLeftTop,
+                to: points.cfLeftTop,
+                x: points.ssLeftTop.x - sa - 15
+            })
 
         }
     }
