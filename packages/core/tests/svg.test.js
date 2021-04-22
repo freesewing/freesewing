@@ -1,10 +1,10 @@
-let version = require("../package.json").version;
-let render = require("./fixtures/render.js");
-let expect = require("chai").expect;
-let chai = require("chai");
+const version = require("../package.json").version;
+const render = require("./fixtures/render.js");
+const expect = require("chai").expect;
+const chai = require("chai");
 chai.use(require("chai-string"));
-let freesewing = require("./dist");
-var round = freesewing.utils.round;
+const freesewing = require("./dist");
+const round = freesewing.utils.round;
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();

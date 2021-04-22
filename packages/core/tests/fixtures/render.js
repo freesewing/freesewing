@@ -1,4 +1,4 @@
-var version = require("../../package.json").version;
+var version = require('../../package.json').version
 
 var render = {
   boilerplate: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
@@ -91,7 +91,7 @@ var render = {
 <!-- end of group #fs-container -->
 </svg>`,
   path: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
 
@@ -110,7 +110,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform=" translate(2, 2)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <path  id="something" class="freesewing" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 </g>
 <!-- end of group #fs-part-test -->
@@ -233,7 +233,7 @@ var render = {
        <!-- end of group #fs-container -->
        </svg>`,
   textOnPath: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
 
@@ -252,7 +252,7 @@ var render = {
 <g id="fs-container">
 
 <!-- Start of group #fs-part-test -->
-<g id="fs-part-test"  transform=" translate(2, 2)">
+<g id="fs-part-test"  transform="translate(2, 2)">
 <path  data-text="This is another test" data-text-class="text-sm" class="freesewing" id="fs-1" d="M 0,0 L 40,20 C 12,34 56,78 21,32 z" />
 <text><textPath xlink:href="#fs-1" ><tspan  class="text-sm">This is another test</tspan></textPath>
 </text>
@@ -262,7 +262,7 @@ var render = {
 <!-- end of group #fs-container -->
 </svg>`,
   textOnPathCenter: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
 
@@ -291,7 +291,7 @@ var render = {
 <!-- end of group #fs-container -->
 </svg>`,
   textOnPathRight: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.45"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
 
@@ -346,6 +346,6 @@ var render = {
 </g>
 <!-- end of group #fs-container -->
 </svg>`
-};
+}
 
-module.exports = render;
+module.exports = render
