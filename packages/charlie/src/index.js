@@ -9,6 +9,7 @@ import config from '../config'
 import draftBack from './back'
 import draftFront from './front'
 import draftWaistband from './waistband'
+import draftWaistbandCurved from './waistband-curved'
 import draftFrontPocket from './front-pocket'
 import draftFrontPocketFacing from './front-pocket-facing'
 import draftBackPocket from './back-pocket'
@@ -33,6 +34,7 @@ for (let p of ['Front', 'Back']) {
 Pattern.prototype.draftBack = (part) => draftBack(part)
 Pattern.prototype.draftFront = (part) => draftFront(part)
 Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
+Pattern.prototype.draftWaistbandCurved = (part) => draftWaistbandCurved(part)
 Pattern.prototype.draftFrontPocket = (part) => draftFrontPocket(part)
 Pattern.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part)
 Pattern.prototype.draftBackPocket = (part) => draftBackPocket(part)

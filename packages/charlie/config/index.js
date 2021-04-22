@@ -10,7 +10,7 @@ export default {
   difficulty: 3,
   tags: ['bottom', 'basics', 'trousers'],
   optionGroups: {
-    fit: ['seatEase', 'kneeEase', 'waistEase'],
+    fit: ['seatEase', 'kneeEase', 'waistEase', 'waistbandCurve'],
     style: ['waistHeight', 'waistbandWidth', 'lengthBonus', 'crotchDrop'],
     pockets: [
       {
@@ -78,7 +78,8 @@ export default {
     // The inheritance makes this a bit messy
     titanFront: 'titanBack',
     back: ['titanBack', 'titanFront', 'front'],
-    waistband: ['titanBack', 'titanFront', 'front', 'back']
+    waistband: ['titanBack', 'titanFront', 'front', 'back'],
+    waistbandCurved: ['titanBack', 'titanFront', 'front', 'back']
   },
   options: {
     // Constants (from Titan)
@@ -92,6 +93,9 @@ export default {
     // Charlie constants
     waistbandReduction: 0.25, // See src/index.js
     waistbandFactor: 0.1,
+
+    // Fit (Charlie)
+    waistbandCurve: { pct: 0, min: 0, max: 35 },
 
     // Fit (from Titan)
     waistEase: { pct: 1, min: 0, max: 5 },
