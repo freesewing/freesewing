@@ -43,3 +43,6 @@ flyLength:
 flyWidth:
   title: Fly width
   description: Controls how far the J-seam of offset from the fly edge
+waistbandCurve:
+  title: Waistband Curve
+  description: Controls how curved the waistband is.
