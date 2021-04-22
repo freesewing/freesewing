@@ -1,7 +1,6 @@
 export default (part) => {
     // Shorthand
     let {
-        measurements,
         points,
         Point,
         paths,
