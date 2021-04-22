@@ -278,6 +278,80 @@ it("Should check whether a part is wanted", () => {
   expect(pattern.wants("side")).to.equal(true);
 });
 
+it("Should correctly resolve dependencies - string version", () => {
+  let config = {
+    name: "test",
+    dependencies: { front: "back", side: "back", hood: "front", stripe: "hood" },
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
+
+  let pattern = new Test();
+  expect(pattern.config.resolvedDependencies.front.length).to.equal(1);
+  expect(pattern.config.resolvedDependencies.front[0]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.side.length).to.equal(1);
+  expect(pattern.config.resolvedDependencies.side[0]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.hood.length).to.equal(2);
+  expect(pattern.config.resolvedDependencies.hood[0]).to.equal('front');
+  expect(pattern.config.resolvedDependencies.hood[1]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.stripe.length).to.equal(3);
+  expect(pattern.config.resolvedDependencies.stripe[0]).to.equal('hood');
+  expect(pattern.config.resolvedDependencies.stripe[1]).to.equal('front');
+  expect(pattern.config.resolvedDependencies.stripe[2]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.back.length).to.equal(0);
+  expect(pattern.config.draftOrder[0]).to.equal('back');
+  expect(pattern.config.draftOrder[1]).to.equal('front');
+  expect(pattern.config.draftOrder[2]).to.equal('side');
+  expect(pattern.config.draftOrder[3]).to.equal('hood');
+});
+
+it("Should correctly resolve dependencies - array version", () => {
+  let config = {
+    name: "test",
+    dependencies: { front: ["back"], side: ["back"], hood: ["front"], stripe: ["hood"]},
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
+
+  let pattern = new Test();
+  expect(pattern.config.resolvedDependencies.front.length).to.equal(1);
+  expect(pattern.config.resolvedDependencies.front[0]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.side.length).to.equal(1);
+  expect(pattern.config.resolvedDependencies.side[0]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.hood.length).to.equal(2);
+  expect(pattern.config.resolvedDependencies.hood[0]).to.equal('front');
+  expect(pattern.config.resolvedDependencies.hood[1]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.stripe.length).to.equal(3);
+  expect(pattern.config.resolvedDependencies.stripe[0]).to.equal('hood');
+  expect(pattern.config.resolvedDependencies.stripe[1]).to.equal('front');
+  expect(pattern.config.resolvedDependencies.stripe[2]).to.equal('back');
+  expect(pattern.config.resolvedDependencies.back.length).to.equal(0);
+  expect(pattern.config.draftOrder[0]).to.equal('back');
+  expect(pattern.config.draftOrder[1]).to.equal('front');
+  expect(pattern.config.draftOrder[2]).to.equal('side');
+  expect(pattern.config.draftOrder[3]).to.equal('hood');
+});
+
 it("Should check whether created parts get the pattern context", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
