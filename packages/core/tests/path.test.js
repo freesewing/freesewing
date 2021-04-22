@@ -1,6 +1,6 @@
-let expect = require("chai").expect;
-let freesewing = require("./dist");
-let round = freesewing.utils.round;
+const expect = require("chai").expect;
+const freesewing = require("./dist");
+const round = freesewing.utils.round;
 
 it("Should offset a line", () => {
   let pattern = new freesewing.Pattern();
