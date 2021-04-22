@@ -95,7 +95,7 @@ export default {
     waistbandFactor: 0.1,
 
     // Fit (Charlie)
-    waistbandCurve: { pct: 15, min: 0, max: 35 },
+    waistbandCurve: { pct: 0, min: 0, max: 35 },
 
     // Fit (from Titan)
     waistEase: { pct: 1, min: 0, max: 5 },
