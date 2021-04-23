@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.15.1 (2021-04-20)
+
+### charlie
+
+#### Fixed
+
+ - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options from being zero
+
+### simon
+
+#### Added
+
+ - Added some dimensions to clarify the X value of shoulder/armhole points
+
+
 ## 2.15.0 (2021-04-15)
 
 ### bella

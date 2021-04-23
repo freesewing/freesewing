@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/theo",
-  "version": "2.15.0",
+  "version": "2.15.1-rc.0",
   "description": "A FreeSewing pattern for classic trousers",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,8 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.15.0",
-    "@freesewing/plugin-bundle": "^2.15.0"
+    "@freesewing/core": "^2.15.1-rc.0",
+    "@freesewing/plugin-bundle": "^2.15.1-rc.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,14 +46,14 @@
     "eslint": "^7.6.0",
     "babel-jest": "^26.2.2",
     "jest": "26.2.2",
-    "@freesewing/components": "^2.15.0",
-    "@freesewing/css-theme": "^2.15.0",
-    "@freesewing/i18n": "^2.15.0",
-    "@freesewing/mui-theme": "^2.15.0",
-    "@freesewing/plugin-bust": "^2.15.0",
-    "@freesewing/plugin-buttons": "^2.15.0",
-    "@freesewing/plugin-flip": "^2.15.0",
-    "@freesewing/utils": "^2.15.0",
+    "@freesewing/components": "^2.15.1-rc.0",
+    "@freesewing/css-theme": "^2.15.1-rc.0",
+    "@freesewing/i18n": "^2.15.1-rc.0",
+    "@freesewing/mui-theme": "^2.15.1-rc.0",
+    "@freesewing/plugin-bust": "^2.15.1-rc.0",
+    "@freesewing/plugin-buttons": "^2.15.1-rc.0",
+    "@freesewing/plugin-flip": "^2.15.1-rc.0",
+    "@freesewing/utils": "^2.15.1-rc.0",
     "@svgr/rollup": "^2.4.1",
     "cross-env": "^7.0.2",
     "react-scripts": "^3.4.1",
@@ -83,7 +83,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 2.15.1 (2021-04-20)
+
+### Added
+
+ - Added some dimensions to clarify the X value of shoulder/armhole points
+
 ## 2.13.1 (2021-02-14)
 
 ### Fixed

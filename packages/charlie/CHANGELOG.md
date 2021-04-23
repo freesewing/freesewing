@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.15.1 (2021-04-20)
+
+### Fixed
+
+ - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options from being zero
+
 ## 2.15.0 (2021-04-15)
 
 ### Added
