@@ -352,6 +352,56 @@ it("Should correctly resolve dependencies - array version", () => {
   expect(pattern.config.draftOrder[3]).to.equal('hood');
 });
 
+it("Should correctly resolve dependencies - issue #971 - working version", () => {
+  let config = {
+    name: "test",
+    dependencies: {front:['back'],crotch:['front','back']},
+    parts: ['back','front','crotch'],
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
+
+  let pattern = new Test();
+  expect(pattern.config.draftOrder[0]).to.equal('back');
+  expect(pattern.config.draftOrder[1]).to.equal('front');
+  expect(pattern.config.draftOrder[2]).to.equal('crotch');
+});
+
+it("Should correctly resolve dependencies - issue #971 - broken version", () => {
+  let config = {
+    name: "test",
+    dependencies: {front:'back',crotch:['front','back']},
+    parts: ['back','front','crotch'],
+  };
+  const Test = function(settings = false) {
+    freesewing.Pattern.call(this, config);
+    return this;
+  };
+  Test.prototype = Object.create(freesewing.Pattern.prototype);
+  Test.prototype.constructor = Test;
+  Test.prototype.draftBack = function(part) {
+    return part;
+  };
+  Test.prototype.draftFront = function(part) {
+    return part;
+  };
+
+  let pattern = new Test();
+  expect(pattern.config.draftOrder[0]).to.equal('back');
+  expect(pattern.config.draftOrder[1]).to.equal('front');
+  expect(pattern.config.draftOrder[2]).to.equal('crotch');
+});
+
 it("Should check whether created parts get the pattern context", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
