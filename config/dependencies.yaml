@@ -101,6 +101,8 @@ core:
     'bezier-js': '^4.0.3'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
+  dev:
+    'nyc': '^15.1.0'
 create-freesewing-pattern:
   _:
     'chalk': '^4.1.0'
