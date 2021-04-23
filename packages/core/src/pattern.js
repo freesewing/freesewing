@@ -546,7 +546,7 @@ Pattern.prototype.resolveDependency = function (
   } else if (Array.isArray(graph[part])) {
     if (graph[part].length === 0) return []
     else {
-      if (deps.length === 0) deps = graph[part]
+      if (deps.indexOf(graph[part]) === -1) deps.push(...graph[part])
       for (let apart of graph[part]) deps.concat(this.resolveDependency(seen, apart, graph, deps))
     }
   }
