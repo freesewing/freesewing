@@ -540,10 +540,8 @@ Pattern.prototype.resolveDependency = function (
   deps = []
 ) {
   if (typeof seen[part] === 'undefined') seen[part] = true
-  if (typeof graph[part] === 'string') {
-    if (deps.indexOf(graph[part]) === -1) deps.push(graph[part])
-    return this.resolveDependency(seen, graph[part], graph, deps)
-  } else if (Array.isArray(graph[part])) {
+  if (typeof graph[part] === 'string') graph[part] = [graph[part]]
+  if (Array.isArray(graph[part])) {
     if (graph[part].length === 0) return []
     else {
       if (deps.indexOf(graph[part]) === -1) deps.push(...graph[part])
