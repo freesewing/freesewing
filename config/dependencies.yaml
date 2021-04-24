@@ -64,6 +64,9 @@ carlton:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+charlie:
+  peer:
+    '@freesewing/titan': *freesewing
 css-theme:
   _:
     'open-color': '^1.7.0'
