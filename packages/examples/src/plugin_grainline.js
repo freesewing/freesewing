@@ -8,7 +8,7 @@ export default (part) => {
 
   macro('grainline', {
     from: points.grainlineFrom,
-    to: points.grainlineTo
+    to: points.grainlineTo,
   })
 
   return box(part, 110, 15)

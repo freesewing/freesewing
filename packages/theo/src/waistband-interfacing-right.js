@@ -10,7 +10,7 @@ export default function (part) {
     measurements,
     macro,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   points[0] = new Point(0, 0)
@@ -35,7 +35,7 @@ export default function (part) {
       title: 'waistbandInterfacingRight',
       nr: '3b',
       scale: 0.5,
-      rotation: -90
+      rotation: -90,
     })
     points.logo = new Point(points[2].x / 2, 45)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.7)
@@ -46,12 +46,12 @@ export default function (part) {
     macro('hd', {
       from: points[3],
       to: points[2],
-      y: points[2].y + 15
+      y: points[2].y + 15,
     })
     macro('vd', {
       from: points[2],
       to: points[1],
-      x: points[2].x + 15
+      x: points[2].x + 15,
     })
   }
 

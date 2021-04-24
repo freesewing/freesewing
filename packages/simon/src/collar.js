@@ -10,7 +10,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   const draft = function (tweak = 1) {
@@ -94,7 +94,7 @@ export default (part) => {
     // Grainline
     macro('grainline', {
       from: points.bottomMidCp2.shift(90, 10),
-      to: points.bottomMidCp1.shift(90, 10)
+      to: points.bottomMidCp1.shift(90, 10),
     })
 
     // Title
@@ -104,7 +104,7 @@ export default (part) => {
       nr: '7 + 8',
       title: 'collarAndUndercollar',
       scale: 0.6,
-      append: true
+      append: true,
     })
 
     // Indicate collar stand side
@@ -121,7 +121,7 @@ export default (part) => {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['bottomMid', 'rightBottomEdge', 'leftBottomEdge', 'rightTopEdge', 'leftTopEdge']
+      on: ['bottomMid', 'rightBottomEdge', 'leftBottomEdge', 'rightTopEdge', 'leftTopEdge'],
     })
 
     if (sa) {
@@ -135,37 +135,37 @@ export default (part) => {
     macro('vd', {
       from: points.bottomMid,
       to: points.topMid,
-      x: points.rightTopEdge.x + 15 + sa
+      x: points.rightTopEdge.x + 15 + sa,
     })
     macro('vd', {
       from: points.bottomMid,
       to: points.rightTopEdge,
-      x: points.rightTopEdge.x + 30 + sa
+      x: points.rightTopEdge.x + 30 + sa,
     })
     macro('vd', {
       from: points.rightBottomEdge,
       to: points.topMid,
-      x: points.rightTopEdge.x + 45 + sa
+      x: points.rightTopEdge.x + 45 + sa,
     })
     macro('vd', {
       from: points.rightBottomEdge,
       to: points.rightTopEdge,
-      x: points.rightTopEdge.x + 60 + sa
+      x: points.rightTopEdge.x + 60 + sa,
     })
     macro('hd', {
       from: points.leftTopHinge,
       to: points.rightTopHinge,
-      y: points.leftTopEdge.y - 15 - sa
+      y: points.leftTopEdge.y - 15 - sa,
     })
     macro('hd', {
       from: points.leftTopEdge,
       to: points.rightTopEdge,
-      y: points.leftTopEdge.y - 30 - sa
+      y: points.leftTopEdge.y - 30 - sa,
     })
     macro('hd', {
       from: points.leftBottomEdge,
       to: points.rightBottomEdge,
-      y: points.leftBottomEdge.y + 15 + sa
+      y: points.leftBottomEdge.y + 15 + sa,
     })
   }
 

@@ -12,7 +12,7 @@ export default (part) => {
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'cuff'
+      title: 'cuff',
     })
     if (sa) {
       // FIXME: Don't we need SA here?

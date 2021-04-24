@@ -8,7 +8,7 @@ export default function (part) {
     paths,
     complete,
     sa,
-    paperless
+    paperless,
   } = part.shorthand()
 
   let width = measurements.hips * 0.16
@@ -26,14 +26,14 @@ export default function (part) {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: width / 12,
-    prefix: 'left'
+    prefix: 'left',
   })
   macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: width / 12,
-    prefix: 'right'
+    prefix: 'right',
   })
 
   paths.seam = new Path()
@@ -60,11 +60,11 @@ export default function (part) {
     points.grainlineBottom = new Point(width / -3, height)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['weltLeft', 'weltRight']
+      on: ['weltLeft', 'weltRight'],
     })
   }
 
@@ -73,17 +73,17 @@ export default function (part) {
     macro('hd', {
       from: points.weltLeft,
       to: points.weltRight,
-      y: points.weltLeft.y + 15
+      y: points.weltLeft.y + 15,
     })
     macro('hd', {
       from: points.leftStart,
       to: points.rightEnd,
-      y: points.leftEnd.y + sa + 15
+      y: points.leftEnd.y + sa + 15,
     })
     macro('vd', {
       from: points.rightStart,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

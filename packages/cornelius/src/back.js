@@ -184,7 +184,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let tempP = null
@@ -270,7 +270,7 @@ export default function (part) {
     macro('title', {
       nr: 77,
       at: points.title,
-      title: 'Back'
+      title: 'Back',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -280,7 +280,7 @@ export default function (part) {
     let dist = points.p11.dist(points.p4)
     macro('grainline', {
       from: points.pA.shift(angle, dist * 0.35),
-      to: points.pA.shift(angle + 180, dist * 0.35)
+      to: points.pA.shift(angle + 180, dist * 0.35),
     })
 
     if (sa) {
@@ -292,61 +292,61 @@ export default function (part) {
   if (paperless) {
     macro('ld', {
       from: points.topOfVent,
-      to: points.p11
+      to: points.p11,
     })
     macro('ld', {
       from: points.p2,
       to: points.p4,
-      d: 15
+      d: 15,
     })
     tempP = paths.sideSeam.intersectsY(points.p3.y)[0]
     macro('ld', {
       from: points.p5,
-      to: tempP
+      to: tempP,
     })
     macro('ld', {
       from: points.p3,
-      to: tempP
+      to: tempP,
     })
     macro('hd', {
       from: points.p2,
       to: points.p4,
-      y: points.p2.y
+      y: points.p2.y,
     })
     macro('hd', {
       from: points.p10,
       to: points.p11,
-      y: points.p10.y - 15
+      y: points.p10.y - 15,
     })
     macro('vd', {
       from: points.p2,
       to: points.p3,
-      x: points.p3.x
+      x: points.p3.x,
     })
     macro('vd', {
       from: points.p2,
       to: points.p4,
-      x: points.p2.x
+      x: points.p2.x,
     })
     macro('vd', {
       from: points.p3,
       to: points.p10,
-      x: points.p3.x
+      x: points.p3.x,
     })
     macro('ld', {
       from: points.p2,
       to: points.p5,
-      d: -15
+      d: -15,
     })
     macro('ld', {
       from: points.p4,
       to: points.p11,
-      d: -15
+      d: -15,
     })
     macro('ld', {
       from: tempP,
       to: points.p4,
-      d: 0
+      d: 0,
     })
   }
 

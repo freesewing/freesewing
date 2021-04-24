@@ -7,7 +7,7 @@ export default function (part) {
     via: points.bottomLeft,
     radius: points.bottomRight.x / 4,
     render: true,
-    prefix: 'bottomLeft'
+    prefix: 'bottomLeft',
   })
   macro('round', {
     from: points.bottomLeft,
@@ -15,7 +15,7 @@ export default function (part) {
     via: points.bottomRight,
     radius: points.bottomRight.x / 4,
     render: true,
-    prefix: 'bottomRight'
+    prefix: 'bottomRight',
   })
 
   paths.seam = new Path()

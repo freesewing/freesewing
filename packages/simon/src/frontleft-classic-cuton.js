@@ -11,7 +11,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let fold = options.buttonholePlacketFoldWidth
@@ -90,8 +90,8 @@ export default (part) => {
         'placketBottomInnerEdgeUnder',
         'placketBottomOuterEdgeFold',
         'placketBottomOuterEdgeOver',
-        'placketBottomOuterEdgeUnder'
-      ]
+        'placketBottomOuterEdgeUnder',
+      ],
     })
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
@@ -116,15 +116,15 @@ export default (part) => {
   if (paperless) {
     macro('hd', {
       from: points.placketEdgeArmhole,
-      to: points.armhole
+      to: points.armhole,
     })
     macro('hd', {
       from: points.placketEdgeWaist,
-      to: points.waist
+      to: points.waist,
     })
     macro('hd', {
       from: points.placketEdgeHips,
-      to: points.hips
+      to: points.hips,
     })
     let offset = 0
     for (let pid of [
@@ -134,29 +134,29 @@ export default (part) => {
       'placketCfNeck',
       'placketTopInnerEdgeOver',
       'placketTopInnerEdgeFold',
-      'placketTopInnerEdgeUnder'
+      'placketTopInnerEdgeUnder',
     ]) {
       offset += 15
       macro('hd', {
         from: points.placketTopEdge,
         to: points[pid],
-        y: points.placketTopEdge.y - offset - sa
+        y: points.placketTopEdge.y - offset - sa,
       })
     }
     macro('hd', {
       from: points.placketTopEdge,
       to: points.neck,
-      y: points.placketTopEdge.y - offset - sa - 15
+      y: points.placketTopEdge.y - offset - sa - 15,
     })
     macro('hd', {
       from: points.placketTopEdge,
       to: points.shoulder,
-      y: points.placketTopEdge.y - offset - sa - 30
+      y: points.placketTopEdge.y - offset - sa - 30,
     })
     macro('hd', {
       from: points.placketTopEdge,
       to: points.armhole,
-      y: points.placketTopEdge.y - offset - sa - 45
+      y: points.placketTopEdge.y - offset - sa - 45,
     })
     points.button0 = points.placketTopEdge
     let j
@@ -165,13 +165,13 @@ export default (part) => {
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
-        x: points.placketTopEdge.x - 15
+        x: points.placketTopEdge.x - 15,
       })
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30
+      x: points.placketTopEdge.x - 30,
     })
   }
   return part

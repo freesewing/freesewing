@@ -12,6 +12,6 @@ export default {
         svg.defs += notches
         svg.attributes.add('freesewing:plugin-notches', version)
       }
-    }
-  }
+    },
+  },
 }

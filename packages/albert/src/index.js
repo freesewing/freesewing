@@ -58,8 +58,8 @@ const crossBox = {
           .attr('data-text', so.text)
           .attr('data-text-class', 'center')
       }
-    }
-  }
+    },
+  },
 }
 
 // Create new design

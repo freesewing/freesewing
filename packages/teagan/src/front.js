@@ -15,7 +15,7 @@ export default function (part) {
     paperless,
     macro,
     raise,
-    units
+    units,
   } = part.shorthand()
 
   // Hide Brian paths
@@ -92,7 +92,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfHem,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.waist.x / 2, points.waist.y)
     macro('title', { at: points.title, nr: 1, title: 'front' })
@@ -115,37 +115,37 @@ export default function (part) {
     macro('hd', {
       from: points.cfHem,
       to: points.hem,
-      y: points.hem.y + sa * 2.5 + 15
+      y: points.hem.y + sa * 2.5 + 15,
     })
     macro('vd', {
       from: points.hem,
       to: points.armhole,
-      x: points.armhole.x + sa + 15
+      x: points.armhole.x + sa + 15,
     })
     macro('vd', {
       from: points.hem,
       to: points.shoulder,
-      x: points.armhole.x + sa + 30
+      x: points.armhole.x + sa + 30,
     })
     macro('vd', {
       from: points.hem,
       to: points.neck,
-      x: points.armhole.x + sa + 45
+      x: points.armhole.x + sa + 45,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.neck,
-      y: points.neck.y - sa - 15
+      y: points.neck.y - sa - 15,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.shoulder,
-      y: points.neck.y - sa - 30
+      y: points.neck.y - sa - 30,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.armhole,
-      y: points.neck.y - sa - 45
+      y: points.neck.y - sa - 45,
     })
     // These dimensions are only for the front
     let id = part.getId()
@@ -153,7 +153,7 @@ export default function (part) {
       id,
       from: points.cfHem,
       to: points.cfNeck,
-      x: points.cfHem.x - sa - 15
+      x: points.cfHem.x - sa - 15,
     })
     store.set('frontOnlyDimensions', [id])
   }

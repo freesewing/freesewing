@@ -20,7 +20,7 @@ export default {
       'sleeveLengthBonus',
       'waistEase',
       'hipsEase',
-      'yokeDart'
+      'yokeDart',
     ],
     style: [
       'splitYoke',
@@ -39,8 +39,8 @@ export default {
           'buttonPlacketWidth',
           'buttonholePlacketWidth',
           'buttonholePlacketFoldWidth',
-          'buttonFreeLength'
-        ]
+          'buttonFreeLength',
+        ],
       },
       {
         cuffs: [
@@ -50,8 +50,8 @@ export default {
           'sleevePlacketWidth',
           'sleevePlacketLength',
           'cuffDrape',
-          'cuffLength'
-        ]
+          'cuffLength',
+        ],
       },
       {
         collar: [
@@ -62,9 +62,9 @@ export default {
           'collarStandWidth',
           'collarBend',
           'collarGap',
-          'collarRoll'
-        ]
-      }
+          'collarRoll',
+        ],
+      },
     ],
     advanced: [
       'acrossBackFactor',
@@ -96,10 +96,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -112,11 +112,11 @@ export default {
     'shoulderToShoulder',
     'hips',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase', 'back'],
-    sleeve: ['sleeveBase', 'front', 'back']
+    sleeve: ['sleeveBase', 'front', 'back'],
   },
   inject: {
     frontBase: 'base',
@@ -129,7 +129,7 @@ export default {
     buttonholePlacket: 'front',
     yoke: 'backBase',
     sleeveBase: 'front',
-    sleeve: 'sleeveBase'
+    sleeve: 'sleeveBase',
   },
   parts: ['collarStand', 'collar', 'sleevePlacketUnderlap', 'sleevePlacketOverlap', 'cuff'],
   hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase'],
@@ -151,15 +151,15 @@ export default {
     // Lists
     hemStyle: {
       list: ['straight', 'baseball', 'slashed'],
-      dflt: 'straight'
+      dflt: 'straight',
     },
     buttonPlacketStyle: {
       list: ['classic', 'seamless'],
-      dflt: 'classic'
+      dflt: 'classic',
     },
     buttonholePlacketStyle: {
       list: ['classic', 'seamless'],
-      dflt: 'seamless'
+      dflt: 'seamless',
     },
     cuffStyle: {
       list: [
@@ -168,13 +168,13 @@ export default {
         'straightBarrelCuff',
         'roundedFrenchCuff',
         'angledFrenchCuff',
-        'straightFrenchCuff'
+        'straightFrenchCuff',
       ],
-      dflt: 'angledBarrelCuff'
+      dflt: 'angledBarrelCuff',
     },
     backDarts: {
       list: ['auto', 'never', 'always'],
-      dflt: 'auto'
+      dflt: 'auto',
     },
 
     // Bool
@@ -242,6 +242,6 @@ export default {
     sleevePlacketLength: { pct: 25, min: 15, max: 35 },
     waistEase: { pct: 15, min: 10, max: 35 },
     yokeDart: { pct: 0, min: 0, max: 15 },
-    backDartShaping: { pct: 25, min: 5, max: 75 }
-  }
+    backDartShaping: { pct: 25, min: 5, max: 75 },
+  },
 }

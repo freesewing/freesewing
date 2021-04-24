@@ -9,7 +9,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   let width = store.get('chestPocketWidth')
@@ -48,13 +48,13 @@ export default function (part) {
     macro('title', {
       at: points.top,
       nr: 11,
-      title: 'chestPocketWelt'
+      title: 'chestPocketWelt',
     })
 
     // Grainline
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10),
-      to: points.bottomLeft.shiftFractionTowards(points.topLeft, 2).shift(0, 10)
+      to: points.bottomLeft.shiftFractionTowards(points.topLeft, 2).shift(0, 10),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -63,12 +63,12 @@ export default function (part) {
       macro('hd', {
         from: points.foldLeft,
         to: points.foldRight,
-        y: points.foldLeft.y - sa - 15
+        y: points.foldLeft.y - sa - 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.foldRight,
-        x: points.bottomRight.x + sa + 15
+        x: points.bottomRight.x + sa + 15,
       })
     }
   }

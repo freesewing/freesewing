@@ -15,12 +15,12 @@ export default (part) => {
   macro('bartackFractionAlong', {
     path: paths.a,
     start: 0.2,
-    end: 0.8
+    end: 0.8,
   })
 
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['e', 'f']
+    on: ['e', 'f'],
   })
 
   return box(part, 60, 30)

@@ -17,7 +17,7 @@ export default {
       'collarEase',
       'shoulderEase',
       'hipsEase',
-      'ribbingStretch'
+      'ribbingStretch',
     ],
     style: [
       'lengthBonus',
@@ -31,7 +31,7 @@ export default {
       'hoodCutback',
       'hoodClosure',
       'hoodDepth',
-      'hoodAngle'
+      'hoodAngle',
     ],
     advanced: [
       'acrossBackFactor',
@@ -59,10 +59,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -75,7 +75,7 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     backBase: 'base',
@@ -85,7 +85,7 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
-    pocket: 'front'
+    pocket: 'front',
   },
   inject: {
     backBase: 'base',
@@ -94,7 +94,7 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
-    pocket: 'front'
+    pocket: 'front',
   },
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
   parts: ['hood', 'waistband', 'cuff'],
@@ -152,6 +152,6 @@ export default {
     hoodDepth: { pct: 8.5, min: 5, max: 12 },
     ribbingStretch: { pct: 15, min: 0, max: 30 },
 
-    hoodAngle: { deg: 5, min: 2, max: 8 }
-  }
+    hoodAngle: { deg: 5, min: 2, max: 8 },
+  },
 }

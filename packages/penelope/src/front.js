@@ -14,7 +14,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   BuildMainShape(part, true)
@@ -32,16 +32,16 @@ export default function (part) {
       from: points.lWaist,
       to: points.lLeg,
       margin: 5,
-      offset: 10
+      offset: 10,
     })
     macro('title', {
       nr: 1,
       at: points.titleAnchor,
-      title: 'front'
+      title: 'front',
     })
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
 
     points.scaleBox = points.logoAnchor.shift(270, 100)
@@ -61,7 +61,7 @@ export default function (part) {
       macro('hd', {
         from: points.lHem,
         to: points.rHem,
-        y: points.rHem.y - options.paperlessOffset
+        y: points.rHem.y - options.paperlessOffset,
       })
     }
   }

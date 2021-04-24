@@ -87,13 +87,13 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
   )
   let intersections = curve.intersects({
     p1: { x: check.x - 1, y: check.y },
-    p2: { x: check.x + 1, y: check.y }
+    p2: { x: check.x + 1, y: check.y },
   })
   if (intersections.length === 0) {
     // Handle edge case of a curve that's a perfect horizontal line
     intersections = curve.intersects({
       p1: { x: check.x, y: check.y - 1 },
-      p2: { x: check.x, y: check.y + 1 }
+      p2: { x: check.x, y: check.y + 1 },
     })
   }
 
@@ -110,14 +110,14 @@ export function splitCurve(start, cp1, cp2, end, split) {
       start: c1.ops[0].to,
       cp1: c1.ops[1].cp1,
       cp2: c1.ops[1].cp2,
-      end: c1.ops[1].to
+      end: c1.ops[1].to,
     },
     {
       start: c2.ops[0].to,
       cp1: c2.ops[1].cp1,
       cp2: c2.ops[1].cp2,
-      end: c2.ops[1].to
-    }
+      end: c2.ops[1].to,
+    },
   ]
 }
 
@@ -156,7 +156,7 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   )
   let line = {
     p1: { x: start.x, y: start.y },
-    p2: { x: end.x, y: end.y }
+    p2: { x: end.x, y: end.y },
   }
   for (let t of bz.intersects(line)) {
     let isect = bz.get(t)

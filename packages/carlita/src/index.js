@@ -38,7 +38,7 @@ for (let m of [
   'draftChestPocketBag',
   'draftInnerPocketWelt',
   'draftInnerPocketBag',
-  'draftInnerPocketTab'
+  'draftInnerPocketTab',
 ]) {
   Pattern.prototype[m] = function (part) {
     return new Carlton(this.settings)[m](part)

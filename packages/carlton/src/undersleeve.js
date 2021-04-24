@@ -10,7 +10,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Add cuff
@@ -24,7 +24,7 @@ export default function (part) {
     via: points.cuffBottomRight,
     radius: length / 3,
     render: true,
-    prefix: 'round'
+    prefix: 'round',
   })
   store.set('underCuffWidth', points.usWristLeft.dist(points.usWristRight))
 
@@ -51,7 +51,7 @@ export default function (part) {
   if (complete) {
     macro('grainline', {
       from: points.boxBottom,
-      to: new Point(points.top.x, points.usLeftEdge.y)
+      to: new Point(points.top.x, points.usLeftEdge.y),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -60,56 +60,56 @@ export default function (part) {
       macro('ld', {
         from: points.usWristLeft,
         to: points.usWristRight,
-        d: -15
+        d: -15,
       })
       macro('vd', {
         from: points.usWristLeft,
         to: points.usElbowLeft,
-        x: points.usLeftEdge.x - sa - 15
+        x: points.usLeftEdge.x - sa - 15,
       })
       macro('vd', {
         from: points.usWristLeft,
         to: points.usLeftEdge,
-        x: points.usLeftEdge.x - sa - 30
+        x: points.usLeftEdge.x - sa - 30,
       })
       macro('ld', {
         from: points.cuffBottomLeft,
         to: points.usWristLeft,
-        d: 15 + sa
+        d: 15 + sa,
       })
       macro('vd', {
         from: points.cuffBottomRight,
         to: points.usWristRight,
-        x: points.usWristRight.x + 15 + sa
+        x: points.usWristRight.x + 15 + sa,
       })
       macro('vd', {
         from: points.usWristRight,
         to: points.elbowRight,
-        x: points.elbowRight.x + 15 + sa
+        x: points.elbowRight.x + 15 + sa,
       })
       macro('vd', {
         from: points.usWristRight,
         to: points.usTip,
-        x: points.elbowRight.x + 30 + sa
+        x: points.elbowRight.x + 30 + sa,
       })
       macro('ld', {
         from: points.usElbowLeft,
-        to: points.elbowRight
+        to: points.elbowRight,
       })
       macro('ld', {
         from: points.usLeftEdge,
         to: points.usRightEdge,
-        d: -15
+        d: -15,
       })
       macro('hd', {
         from: points.usLeftEdge,
         to: points.usTip,
-        y: points.usTip.y - sa - 15
+        y: points.usTip.y - sa - 15,
       })
       macro('vd', {
         from: points.usLeftEdge,
         to: points.usTip,
-        x: points.usLeftEdge.x - sa - 15
+        x: points.usLeftEdge.x - sa - 15,
       })
     }
   }

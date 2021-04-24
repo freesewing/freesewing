@@ -9,7 +9,7 @@ export default function (part) {
     Path,
     complete,
     sa,
-    paperless
+    paperless,
   } = part.shorthand()
 
   points[0] = points[0].shift(180, 80)
@@ -33,7 +33,7 @@ export default function (part) {
       title: 'waistbandLiningRight',
       nr: '5b',
       scale: 0.5,
-      rotation: -90
+      rotation: -90,
     })
     points.logo = points.title.shift(90, 70)
     snippets.logo = new Snippet('logo', points.logo)
@@ -41,7 +41,7 @@ export default function (part) {
     points.grainlineBottom = new Point(points[2].x / 2, points[2].y, 0)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
   }
 
@@ -50,12 +50,12 @@ export default function (part) {
     macro('hd', {
       from: points[3],
       to: points[2],
-      y: points[2].y + sa + 15
+      y: points[2].y + sa + 15,
     })
     macro('vd', {
       from: points[2],
       to: points[1],
-      x: points[2].x + sa + 15
+      x: points[2].x + sa + 15,
     })
   }
 

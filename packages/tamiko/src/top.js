@@ -11,7 +11,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Width at shoulders
@@ -93,7 +93,7 @@ export default function (part) {
       to: points.bottomLeft,
       grainline: true,
       offset: points.armholeTop.dy(points.armholePitch) * 1.1,
-      margin: 3
+      margin: 3,
     })
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', { at: points.title, nr: 1, title: 'top' })
@@ -103,7 +103,7 @@ export default function (part) {
     macro('scalebox', { at: points.scalebox })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['armgapTop', 'armgapNeck', 'armgapBottom', 'armholeNeck', 'sideBottom']
+      on: ['armgapTop', 'armgapNeck', 'armgapBottom', 'armholeNeck', 'sideBottom'],
     })
 
     if (sa) {
@@ -121,62 +121,62 @@ export default function (part) {
     macro('hd', {
       from: points.topLeft,
       to: points.armgapBottom,
-      y: points.topLeft.y - 15
+      y: points.topLeft.y - 15,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.sideBottom,
-      y: points.topLeft.y - 30
+      y: points.topLeft.y - 30,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y - 45
+      y: points.topLeft.y - 45,
     })
     macro('vd', {
       from: points.sideBottom,
       to: points.topLeft,
-      x: points.sideBottom.x + 15
+      x: points.sideBottom.x + 15,
     })
     macro('vd', {
       from: points.armgapBottom,
       to: points.topLeft,
-      x: points.topLeft.x - 15
+      x: points.topLeft.x - 15,
     })
     macro('vd', {
       from: points.armgapTop,
       to: points.topLeft,
-      x: points.topLeft.x - 30
+      x: points.topLeft.x - 30,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - 45
+      x: points.topLeft.x - 45,
     })
     macro('vd', {
       from: points.armgapNeck,
       to: points.armgapTop,
-      x: points.armgapTop.x + 15
+      x: points.armgapTop.x + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.armholeNeck,
-      y: points.bottomLeft.y + 15
+      y: points.bottomLeft.y + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.armholeTop,
-      y: points.bottomLeft.y + 30
+      y: points.bottomLeft.y + 30,
     })
     macro('hd', {
       from: points.armholeTop,
       to: points.armholeBottom,
-      y: points.bottomLeft.y + 30
+      y: points.bottomLeft.y + 30,
     })
     macro('vd', {
       from: points.armholeTop,
       to: points.armholePitch,
-      x: points.armholePitch.x
+      x: points.armholePitch.x,
     })
   }
 

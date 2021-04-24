@@ -9,7 +9,7 @@ export default (part) => {
     macro,
     complete,
     paperless,
-    store
+    store,
   } = part.shorthand()
 
   let pw = measurements.hips * options.pocketWidth // Pocket width
@@ -28,7 +28,7 @@ export default (part) => {
     via: points.bottomLeft,
     radius: pw / 8,
     render: false,
-    prefix: 'roundLeft'
+    prefix: 'roundLeft',
   })
   macro('round', {
     from: points.bottomLeft,
@@ -36,7 +36,7 @@ export default (part) => {
     via: points.bottomRight,
     radius: pw / 8,
     render: false,
-    prefix: 'roundRight'
+    prefix: 'roundRight',
   })
 
   paths.seam = new Path()
@@ -55,11 +55,11 @@ export default (part) => {
     macro('title', {
       nr: 6,
       title: 'pocketFacing',
-      at: points.title
+      at: points.title,
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['notchLeft', 'notchRight']
+      on: ['notchLeft', 'notchRight'],
     })
     paths.cutline = new Path()
       .move(points.notchLeft)
@@ -71,12 +71,12 @@ export default (part) => {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + 15
+      y: points.bottomLeft.y + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
   }
 

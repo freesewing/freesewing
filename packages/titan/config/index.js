@@ -22,8 +22,8 @@ export default {
       'grainlinePosition',
       'legBalance',
       'waistBalance',
-      'waistbandWidth'
-    ]
+      'waistbandWidth',
+    ],
   },
   measurements: [
     'crossSeam',
@@ -37,10 +37,10 @@ export default {
     'waistToKnee',
     'waistToHips',
     'waistToSeat',
-    'waistToUpperLeg'
+    'waistToUpperLeg',
   ],
   dependencies: {
-    front: 'back'
+    front: 'back',
   },
   options: {
     // Constants
@@ -70,6 +70,6 @@ export default {
     crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
     grainlinePosition: { pct: 45, min: 30, max: 60 },
-    waistbandWidth: { mm: 0, min: 0, max: 60 }
-  }
+    waistbandWidth: { mm: 0, min: 0, max: 60 },
+  },
 }

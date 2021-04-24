@@ -12,19 +12,19 @@ export default function (part) {
   macro('title', {
     at: new Point(w / 2, y),
     nr: 5,
-    title: 'title'
+    title: 'title',
   })
 
   y += 40
   macro('grainline', {
     from: new Point(0, y),
-    to: new Point(w, y)
+    to: new Point(w, y),
   })
 
   y += 20
   macro('cutonfold', {
     from: new Point(w, y),
-    to: new Point(0, y)
+    to: new Point(0, y),
   })
 
   y += 70
@@ -36,28 +36,28 @@ export default function (part) {
     from: points.dimf,
     to: points.dimt,
     text: 'hd',
-    y: y - 15
+    y: y - 15,
   })
   macro('vd', {
     from: points.dimt,
     to: points.dimf,
     text: 'vd',
-    x: 0
+    x: 0,
   })
   macro('ld', {
     from: points.dimf,
     to: points.dimt,
-    text: 'ld'
+    text: 'ld',
   })
   macro('pd', {
     path: paths.dims,
     text: 'pd',
-    d: 10
+    d: 10,
   })
 
   y += 170
   macro('scalebox', {
-    at: new Point(w / 2, y)
+    at: new Point(w / 2, y),
   })
   store.set('y', y)
 

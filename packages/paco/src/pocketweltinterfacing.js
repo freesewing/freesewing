@@ -25,28 +25,28 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 8,
-      title: 'pocketWeltInterfacing'
+      title: 'pocketWeltInterfacing',
     })
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
+      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
     })
 
     if (paperless) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15
+        y: points.bottomLeft.y + 15,
       })
       macro('hd', {
         from: points.pocketLeft,
         to: points.pocketRight,
-        y: points.topLeft.y - 15
+        y: points.topLeft.y - 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15
+        x: points.topRight.x + 15,
       })
     }
   }

@@ -17,7 +17,7 @@ export default function (part) {
     snippets,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Remove notch inherited from Brian
@@ -57,7 +57,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbRibbing,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.armhole.x / 2, points.armhole.y)
     macro('title', { at: points.title, nr: 2, title: 'back' })
@@ -81,32 +81,32 @@ export default function (part) {
     macro('vd', {
       from: points.cbRibbing,
       to: points.cbNeck,
-      x: points.cbNeck.x - 15
+      x: points.cbNeck.x - 15,
     })
     macro('vd', {
       from: points.cbRibbing,
       to: points.raglanTipBack,
-      x: points.cbNeck.x - 30
+      x: points.cbNeck.x - 30,
     })
     macro('vd', {
       from: points.ribbing,
       to: points.armhole,
-      x: points.ribbing.x + 15 + sa
+      x: points.ribbing.x + 15 + sa,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.raglanTipBack,
-      y: points.raglanTipBack.y - 15 - sa
+      y: points.raglanTipBack.y - 15 - sa,
     })
     macro('hd', {
       from: points.raglanTipBack,
       to: points.armhole,
-      y: points.raglanTipBack.y - 15 - sa
+      y: points.raglanTipBack.y - 15 - sa,
     })
     macro('hd', {
       from: points.cbRibbing,
       to: points.ribbing,
-      y: points.cbRibbing.y + 15 + sa
+      y: points.cbRibbing.y + 15 + sa,
     })
   }
 

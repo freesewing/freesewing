@@ -11,6 +11,6 @@ export default {
       if (svg.attributes.get('freesewing:plugin-buttons') === false)
         svg.attributes.set('freesewing:plugin-buttons', version)
       svg.defs += button + buttonhole + snaps
-    }
-  }
+    },
+  },
 }

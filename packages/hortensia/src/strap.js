@@ -9,7 +9,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let w = options.handleWidth
@@ -49,7 +49,7 @@ export default function (part) {
       nr: 5,
       title: 'Strap',
       rotation: 90,
-      scale: 0.25
+      scale: 0.25,
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -65,12 +65,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

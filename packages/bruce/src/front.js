@@ -35,7 +35,7 @@ export default function (part) {
     paperless,
     macro,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   // Initialize
@@ -169,11 +169,11 @@ export default function (part) {
     macro('title', {
       at: points.midMid,
       nr: 2,
-      title: 'front'
+      title: 'front',
     })
     macro('grainline', {
       from: points.dartJoin,
-      to: points.topMid
+      to: points.topMid,
     })
     snippets.sideNotch = new Snippet('notch', points.midRight)
     points.curveNotch = new Path()
@@ -189,44 +189,44 @@ export default function (part) {
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y - 15 - sa
+      y: points.topLeft.y - 15 - sa,
     })
     macro('hd', {
       from: points.midLeft,
       to: points.midRight,
-      y: points.topLeft.y - 30 - sa
+      y: points.topLeft.y - 30 - sa,
     })
     macro('vd', {
       from: points.midLeft,
       to: points.topMid,
-      x: points.midLeft.x - 15 - sa
+      x: points.midLeft.x - 15 - sa,
     })
     macro('vd', {
       from: points.midLeft,
       to: points.topLeft,
-      x: points.midLeft.x - 30 - sa
+      x: points.midLeft.x - 30 - sa,
     })
     if (options.bulge === 0) {
       macro('hd', {
         from: points.leftTuskLeft,
         to: points.rightTuskRight,
-        y: points.leftTuskLeft.y + 15 + sa
+        y: points.leftTuskLeft.y + 15 + sa,
       })
       macro('vd', {
         from: points.leftTuskLeft,
         to: points.topLeft,
-        x: points.midLeft.x - 45 - sa
+        x: points.midLeft.x - 45 - sa,
       })
     } else {
       macro('vd', {
         from: points.leftTuskLeft,
         to: points.topLeft,
-        x: points.midLeft.x - 45 - sa
+        x: points.midLeft.x - 45 - sa,
       })
       macro('vd', {
         from: points.leftTuskRight,
         to: points.topLeft,
-        x: points.midLeft.x - 60 - sa
+        x: points.midLeft.x - 60 - sa,
       })
       points.narrowRight = new Path()
         .move(points.midRight)
@@ -240,32 +240,32 @@ export default function (part) {
       macro('hd', {
         from: points.narrowLeft,
         to: points.narrowRight,
-        y: points.narrowLeft.y
+        y: points.narrowLeft.y,
       })
       macro('hd', {
         from: points.leftTuskRight,
         to: points.rightTuskLeft,
-        y: points.rightTuskLeft.y + 15 + sa
+        y: points.rightTuskLeft.y + 15 + sa,
       })
       macro('hd', {
         from: points.leftTuskLeft,
         to: points.rightTuskRight,
-        y: points.rightTuskLeft.y + 30 + sa
+        y: points.rightTuskLeft.y + 30 + sa,
       })
       macro('ld', {
         from: points.rightTuskLeft,
         to: points.rightTuskRight,
-        d: -15 - sa
+        d: -15 - sa,
       })
       macro('vd', {
         from: points.narrowRight,
         to: points.topRight,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
       macro('vd', {
         from: points.dartJoin,
         to: points.topRight,
-        x: points.topRight.x + 30 + sa
+        x: points.topRight.x + 30 + sa,
       })
     }
   }

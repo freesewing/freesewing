@@ -9,7 +9,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let width = options.buttonPlacketWidth
@@ -45,32 +45,32 @@ export default (part) => {
     macro('hd', {
       from: points.neck,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 15
+      y: points.neck.y - sa - 15,
     })
     macro('hd', {
       from: points.shoulder,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 30
+      y: points.neck.y - sa - 30,
     })
     macro('hd', {
       from: points.armhole,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 45
+      y: points.neck.y - sa - 45,
     })
     macro('vd', {
       from: points.placketTopIn,
       to: points.neck,
-      x: points.placketTopIn.x + sa + 15
+      x: points.placketTopIn.x + sa + 15,
     })
     macro('vd', {
       from: points.placketBottomIn,
       to: points.placketTopIn,
-      x: points.placketTopIn.x + sa + 15
+      x: points.placketTopIn.x + sa + 15,
     })
     for (let pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
-        to: points[pid.toLowerCase()]
+        to: points[pid.toLowerCase()],
       })
     }
   }

@@ -10,7 +10,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   const cc = 0.551915024494 // circle constant
@@ -147,7 +147,7 @@ export default function (part) {
     macro('title', {
       nr: 76,
       at: points.title,
-      title: 'Front'
+      title: 'Front',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -158,7 +158,7 @@ export default function (part) {
 
     macro('grainline', {
       from: points.pocketBL.shiftFractionTowards(points.pocketTL, -0.9),
-      to: points.pocketTL
+      to: points.pocketTL,
     })
 
     if (sa) {
@@ -170,69 +170,69 @@ export default function (part) {
   if (paperless) {
     macro('ld', {
       from: points.topOfVent,
-      to: points.pJ
+      to: points.pJ,
     })
     macro('hd', {
       from: points.pocketSide,
       to: points.pocketWaist,
-      y: points.pocketWaist.y + 15
+      y: points.pocketWaist.y + 15,
     })
     macro('hd', {
       from: points.pW,
       to: points.pocketWaist,
-      y: points.pocketWaist.y + 15
+      y: points.pocketWaist.y + 15,
     })
     macro('hd', {
       from: points.pocketWaist,
       to: points.flyTop,
-      y: points.pocketWaist.y + 15
+      y: points.pocketWaist.y + 15,
     })
     macro('hd', {
       from: points.pAextra,
-      to: points.pR
+      to: points.pR,
     })
     macro('hd', {
       from: points.pK,
       to: points.pJ,
-      y: points.pJ.y - 15
+      y: points.pJ.y - 15,
     })
     // Keystone original (see above):
     if (keystone) {
       macro('hd', {
         from: points.pSlitBottom,
         to: points.pJ,
-        y: points.pJ.y - 30
+        y: points.pJ.y - 30,
       })
       macro('vd', {
         from: points.pSlitTop,
         to: points.pSlitBottom,
-        x: points.pSlitTop.x + 15
+        x: points.pSlitTop.x + 15,
       })
     }
     macro('vd', {
       from: points.pocketSide,
       to: points.pocketWaist,
-      x: points.pocketSide.x
+      x: points.pocketSide.x,
     })
     macro('vd', {
       from: points.pW,
       to: points.pR,
-      x: points.pR.x
+      x: points.pR.x,
     })
     macro('vd', {
       from: points.pR,
       to: points.pK,
-      x: points.pR.x
+      x: points.pR.x,
     })
     macro('vd', {
       from: points.pW,
       to: points.pZ,
-      x: points.pW.x + 15
+      x: points.pW.x + 15,
     })
     macro('vd', {
       from: points.pJ,
       to: points.pocketWaist,
-      x: points.pocketWaist.x
+      x: points.pocketWaist.x,
     })
   }
 

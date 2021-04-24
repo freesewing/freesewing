@@ -9,7 +9,7 @@ export default (part) => {
     snippets,
     Snippet,
     complete,
-    sa
+    sa,
   } = part.shorthand()
 
   // Cleanup from front part
@@ -47,7 +47,7 @@ export default (part) => {
     macro('title', {
       nr: 3,
       at: points.title,
-      title: 'frontFacing'
+      title: 'frontFacing',
     })
     points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
     snippets.logo = new Snippet('logo', points.logo)

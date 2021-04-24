@@ -92,7 +92,7 @@ export const getDartPaths = (Path, points) => [
   new Path()
     .line(points.secondaryBustDart1)
     .line(points.secondaryBustDartTip)
-    .line(points.secondaryBustDart2)
+    .line(points.secondaryBustDart2),
 ]
 
 export const getSaDartPaths = (Path, points) => [
@@ -103,7 +103,7 @@ export const getSaDartPaths = (Path, points) => [
   new Path()
     .line(points.secondaryBustDart1)
     .line(points.secondaryBustDartEdge)
-    .line(points.secondaryBustDart2)
+    .line(points.secondaryBustDart2),
 ]
 
 /*

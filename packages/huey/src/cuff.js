@@ -11,7 +11,7 @@ export default (part) => {
     macro('title', {
       at: points.title,
       nr: 7,
-      title: 'cuff'
+      title: 'cuff',
     })
   }
 

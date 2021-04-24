@@ -11,7 +11,7 @@ export default (part) => {
     paths,
     points,
     sa,
-    snippets
+    snippets,
   } = part.shorthand()
 
   calculateHelpers(part)
@@ -38,7 +38,7 @@ export default (part) => {
       at: points.title,
       nr: 5,
       title: 'liningTip',
-      rotation: -90
+      rotation: -90,
     })
     snippets.notch = new Snippet('notch', points.tip)
     macro('miniscale', { at: points.gridAnchor })

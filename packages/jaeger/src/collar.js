@@ -21,7 +21,7 @@ export default function (part) {
     'notchTip',
     'collarCbTopCp',
     'notchTipRoll',
-    'collarCbTopCpRoll'
+    'collarCbTopCpRoll',
   ]
   for (let i of mirror) points[i + 'Left'] = points[i].flipX(points.collarCbTop)
 
@@ -53,20 +53,20 @@ export default function (part) {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['collarstandCbTop', 'notchTip', 'notchTipLeft']
+      on: ['collarstandCbTop', 'notchTip', 'notchTipLeft'],
     })
     // Title
     points.title = points.collarstandCbTopCp.shiftFractionTowards(points.collarCbTopCpRoll, 0.5)
     macro('title', {
       at: points.title,
       nr: 7,
-      title: 'collar'
+      title: 'collar',
     })
 
     // Grainline
     macro('grainline', {
       from: points.collarCbTopRoll,
-      to: points.collarstandCbTop
+      to: points.collarstandCbTop,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -75,47 +75,47 @@ export default function (part) {
       macro('hd', {
         from: points.collarstandTipLeft,
         to: points.collarstandTip,
-        y: points.collarstandCbTop.y - sa - 15
+        y: points.collarstandCbTop.y - sa - 15,
       })
       macro('hd', {
         from: points.notchLeft,
         to: points.notch,
-        y: points.collarstandCbTop.y - sa - 30
+        y: points.collarstandCbTop.y - sa - 30,
       })
       macro('hd', {
         from: points.notchTipRollLeft,
         to: points.notchTipRoll,
-        y: points.notchTipRoll.y + sa + 15
+        y: points.notchTipRoll.y + sa + 15,
       })
       macro('hd', {
         from: points.notchTipLeft,
         to: points.notchTip,
-        y: points.notchTipRoll.y + sa + 30
+        y: points.notchTipRoll.y + sa + 30,
       })
       macro('vd', {
         from: points.collarCbTopRoll,
         to: points.collarstandCbTop,
-        x: points.collarCbTopRoll.x + 15
+        x: points.collarCbTopRoll.x + 15,
       })
       macro('ld', {
         from: points.collarstandTip,
         to: points.notch,
-        d: sa + 15
+        d: sa + 15,
       })
       macro('ld', {
         from: points.notchTip,
         to: points.notch,
-        d: -15 - sa
+        d: -15 - sa,
       })
       macro('ld', {
         from: points.notchTipRoll,
         to: points.notch,
-        d: -30 - sa
+        d: -30 - sa,
       })
       macro('vd', {
         from: points.notchTipRoll,
         to: points.collarstandCbTop,
-        x: points.notch.x + sa + 40
+        x: points.notch.x + sa + 40,
       })
     }
   }

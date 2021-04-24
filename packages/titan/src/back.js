@@ -96,7 +96,7 @@ export default (part) => {
     utils,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   // Let's get to work
@@ -215,7 +215,7 @@ export default (part) => {
     points.grainlineTop.y = points.styleWaistOut.y
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
     macro('scalebox', { at: points.knee })
     points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.crossSeamCurveStart.y)
@@ -224,7 +224,7 @@ export default (part) => {
     macro('title', {
       nr: 1,
       title: 'back',
-      at: points.titleAnchor
+      at: points.titleAnchor,
     })
 
     if (sa) {
@@ -257,17 +257,17 @@ export default (part) => {
       macro('hd', {
         from: points.floorIn,
         to: points.floorOut,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
       macro('hd', {
         from: points.floorIn,
         to: points.floor,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floor,
         to: points.floorOut,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('vd', {
         from: points.floorOut,
@@ -275,58 +275,58 @@ export default (part) => {
         x:
           (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
           sa +
-          15
+          15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.fork,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 30
+        x: points.fork.x - sa - 30,
       })
       macro('vd', {
         from: points.crossSeamCurveStart,
         to: points.styleWaistIn,
-        x: points.crossSeamCurveStart.x - sa - 15
+        x: points.crossSeamCurveStart.x - sa - 15,
       })
       macro('hd', {
         from: points.styleWaistIn,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       macro('hd', {
         from: points.crossSeamCurveStart,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 30
+        y: points.styleWaistIn.y - sa - 30,
       })
       macro('hd', {
         from: points.crossSeamCurveMax,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 45
+        y: points.styleWaistIn.y - sa - 45,
       })
       macro('hd', {
         from: points.fork,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 60
+        y: points.styleWaistIn.y - sa - 60,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.styleWaistOut,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       if (points.seatOut.x > points.styleWaistOut.x) {
         macro('hd', {
           from: points.grainlineTop,
           to: points.seatOut,
-          y: points.styleWaistIn.y - sa - 30
+          y: points.styleWaistIn.y - sa - 30,
         })
       }
     }

@@ -34,12 +34,12 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 7,
-      title: 'frontPocketBag'
+      title: 'frontPocketBag',
     })
     macro('cutonfold', {
       from: points.pocketbagBottomRight,
       to: points.pocketbagTopRight,
-      grainline: true
+      grainline: true,
     })
     snippets.notch = new Snippet('notch', points.facingDirection)
 
@@ -55,12 +55,12 @@ export default (part) => {
       macro('ld', {
         from: points.pocketbagBottomRight,
         to: points.topPleat,
-        d: -15
+        d: -15,
       })
       macro('hd', {
         from: points.pocketFacingBottom,
         to: points.pocketbagBottomRight,
-        y: points.pocketbagBottomRight.y + sa + 15
+        y: points.pocketbagBottomRight.y + sa + 15,
       })
     }
   }

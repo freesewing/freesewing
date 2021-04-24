@@ -13,7 +13,7 @@ export default function (part) {
     utils,
     measurements,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   const calculateSlashCorner = () => {
@@ -267,7 +267,7 @@ export default function (part) {
     points.grainlineBottom = points[2].clone()
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     points.title = new Point(0, points[-2301].y)
     macro('title', { at: points.title, title: 'back', nr: 1 })
@@ -277,7 +277,7 @@ export default function (part) {
     macro('scalebox', { at: points.scalebox })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['pocketEdgeLeft', 'pocketEdgeRight']
+      on: ['pocketEdgeLeft', 'pocketEdgeRight'],
     })
   }
 
@@ -286,77 +286,77 @@ export default function (part) {
     macro('ld', {
       from: points[66601],
       to: points.dartTopLeft,
-      d: sa + 15
+      d: sa + 15,
     })
     macro('ld', {
       from: points.dartTopLeft,
       to: points.dartTopRight,
-      d: sa + 15
+      d: sa + 15,
     })
     macro('ld', {
       from: points[66601],
       to: points[-2104],
-      d: sa + 30
+      d: sa + 30,
     })
     macro('ld', {
       from: points.pocketEdgeLeft,
       to: points.pocketCenterLeft,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.pocketCenterRight,
       to: points.pocketEdgeRight,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.dartTip,
       to: points.dartTop,
-      d: 30
+      d: 30,
     })
     macro('ld', {
       from: points.dartTip,
       to: points.pocketCenterRight,
-      d: -15
+      d: -15,
     })
     macro('hd', {
       from: points[-2301],
       to: points[66601],
-      y: points[66601].y - sa - 45
+      y: points[66601].y - sa - 45,
     })
     macro('hd', {
       from: points[66601],
       to: points[-2104],
-      y: points[66601].y - sa - 45
+      y: points[66601].y - sa - 45,
     })
     macro('hd', {
       from: points[-2301],
       to: points[-2104],
-      y: points[66601].y - sa - 60
+      y: points[66601].y - sa - 60,
     })
     macro('vd', {
       from: points[-2301],
       to: points[66601],
-      x: points[-2301].x - sa - 15
+      x: points[-2301].x - sa - 15,
     })
     macro('vd', {
       from: points[201],
       to: points[-2301],
-      x: points[-2301].x - sa - 15
+      x: points[-2301].x - sa - 15,
     })
     macro('vd', {
       from: points[201],
       to: points[66601],
-      x: points[-2301].x - sa - 30
+      x: points[-2301].x - sa - 30,
     })
     macro('hd', {
       from: points[-28],
       to: points[-27],
-      y: points[201].y + 3 * sa + 15
+      y: points[201].y + 3 * sa + 15,
     })
     macro('vd', {
       from: points[-27],
       to: points[-2104],
-      x: points[-2104].x + sa + 15
+      x: points[-2104].x + sa + 15,
     })
   }
 

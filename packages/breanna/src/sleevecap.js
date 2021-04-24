@@ -162,7 +162,7 @@ function redrawSleevecapFront(part, delta) {
     'capQ2Cp1',
     'capQ2',
     'capQ2Base',
-    'capQ2Cp2'
+    'capQ2Cp2',
   ]) {
     points[p].x += (points[p].x / factor) * delta * -1
   }

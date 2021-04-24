@@ -10,7 +10,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let fold = options.buttonholePlacketFoldWidth
@@ -41,7 +41,7 @@ export default (part) => {
     points.edgeHips = new Point(points.neckEdge.x, points.hips.y)
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['edgeArmhole', 'edgeWaist', 'edgeHips']
+      on: ['edgeArmhole', 'edgeWaist', 'edgeHips'],
     })
     if (sa) {
       paths.saFromArmhole.end().x = points.neckEdge.x - sa
@@ -58,32 +58,32 @@ export default (part) => {
     macro('hd', {
       from: points.neckEdge,
       to: points.neck,
-      y: points.neck.y - sa - 15
+      y: points.neck.y - sa - 15,
     })
     macro('hd', {
       from: points.neckEdge,
       to: points.shoulder,
-      y: points.neck.y - sa - 30
+      y: points.neck.y - sa - 30,
     })
     macro('hd', {
       from: points.neckEdge,
       to: points.armhole,
-      y: points.neck.y - sa - 45
+      y: points.neck.y - sa - 45,
     })
     macro('vd', {
       from: points.neckEdge,
       to: points.neck,
-      x: points.neckEdge.x - sa - 15
+      x: points.neckEdge.x - sa - 15,
     })
     macro('vd', {
       from: points.hemEdge,
       to: points.neck,
-      x: points.neckEdge.x - sa - 30
+      x: points.neckEdge.x - sa - 30,
     })
     for (let pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
-        to: points[pid.toLowerCase()]
+        to: points[pid.toLowerCase()],
       })
     }
   }

@@ -10,7 +10,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let halfInch = store.get('halfInch')
@@ -62,14 +62,14 @@ export default function (part) {
     macro('title', {
       nr: 3,
       at: points.title,
-      title: 'PocketFacing'
+      title: 'PocketFacing',
     })
     // points.__titleNr.attr('data-text-class', 'center')
     // points.__titleName.attr('data-text-class', 'center')
     // points.__titlePattern.attr('data-text-class', 'center')
     macro('grainline', {
       from: points.pU,
-      to: new Point(points.pU.x, points.__titleNr.y)
+      to: new Point(points.pU.x, points.__titleNr.y),
     })
 
     if (sa) {
@@ -82,27 +82,27 @@ export default function (part) {
     macro('hd', {
       from: points.pU,
       to: points.pocketSide,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pU,
       to: points.pocketWaist,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pocketWaist,
       to: points.pocketFacingTL,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('vd', {
       from: points.pU,
       to: points.pocketSide,
-      x: points.pocketSide.x + sa + 15
+      x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
       from: points.pocketSide,
       to: points.pocketFacingBR,
-      x: points.pocketSide.x + sa + 15
+      x: points.pocketSide.x + sa + 15,
     })
   }
 

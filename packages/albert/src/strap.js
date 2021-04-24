@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let chestWidth = measurements.chest / 4
@@ -89,7 +89,7 @@ export default function (part) {
     macro('title', {
       nr: 2,
       at: points.title,
-      title: 'Strap'
+      title: 'Strap',
     })
     macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
     macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
@@ -103,27 +103,27 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - sa - 15
+      x: points.topLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.topMiddle,
       to: points.topMiddleHem,
-      x: points.topMiddleHem.x + sa + 15
+      x: points.topMiddleHem.x + sa + 15,
     })
     macro('vd', {
       from: points.topMiddleHem,
       to: points.bottomMiddleHem,
-      x: points.topMiddleHem.x + sa + 15
+      x: points.topMiddleHem.x + sa + 15,
     })
     macro('vd', {
       from: points.bottomMiddleHem,
       to: points.bottomMiddle,
-      x: points.bottomMiddleHem.x + sa + 15
+      x: points.bottomMiddleHem.x + sa + 15,
     })
   }
 

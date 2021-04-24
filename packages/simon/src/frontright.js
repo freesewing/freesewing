@@ -14,7 +14,7 @@ export default (part) => {
       macro('ld', {
         from: points.shoulder,
         to: points.neck,
-        d: 15 + sa
+        d: 15 + sa,
       })
       if (sa) {
         paths.hemSa.attr('data-text-dy', 7, true)

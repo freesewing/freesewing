@@ -28,7 +28,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 6,
-      title: 'underCollar'
+      title: 'underCollar',
     })
 
     if (sa) {
@@ -56,37 +56,37 @@ export default function (part) {
       macro('hd', {
         from: points.collarstandCbTop,
         to: points.collarstandTip,
-        y: points.collarstandCbTop.y - 15
+        y: points.collarstandCbTop.y - 15,
       })
       macro('hd', {
         from: points.collarstandCbTop,
         to: points.notch,
-        y: points.collarstandCbTop.y - 30
+        y: points.collarstandCbTop.y - 30,
       })
       macro('hd', {
         from: points.collarCbTop,
         to: points.notchTip,
-        y: points.notchTip.y + 15
+        y: points.notchTip.y + 15,
       })
       macro('vd', {
         from: points.collarCbTop,
         to: points.collarstandCbTop,
-        x: points.collarCbTop.x - sa - 15
+        x: points.collarCbTop.x - sa - 15,
       })
       macro('ld', {
         from: points.collarstandTip,
         to: points.notch,
-        d: sa + 15
+        d: sa + 15,
       })
       macro('ld', {
         from: points.notchTip,
         to: points.notch,
-        d: -15 - sa
+        d: -15 - sa,
       })
       macro('vd', {
         from: points.notchTip,
         to: points.collarstandCbTop,
-        x: points.notch.x + sa + 40
+        x: points.notch.x + sa + 40,
       })
     }
   }

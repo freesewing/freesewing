@@ -37,7 +37,7 @@ const topics = {
   patterns,
   plugin,
   settings,
-  welcome
+  welcome,
 }
 
 const strings = {}
@@ -78,5 +78,5 @@ for (let entry in jargonFile) {
 export default {
   strings,
   plugin,
-  jargon
+  jargon,
 }

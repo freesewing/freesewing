@@ -43,12 +43,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 13,
-      title: 'innerPocketWelt'
+      title: 'innerPocketWelt',
     })
 
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+      to: points.topLeft.shift(0, 10),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -57,22 +57,22 @@ export default function (part) {
       macro('vd', {
         from: points.realBottomRight,
         to: points.realTopRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 30
+        x: points.topRight.x + sa + 30,
       })
       macro('hd', {
         from: points.realBottomLeft,
         to: points.realBottomRight,
-        y: points.bottomLeft.y + sa + 15
+        y: points.bottomLeft.y + sa + 15,
       })
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 30
+        y: points.bottomLeft.y + sa + 30,
       })
     }
   }

@@ -6,7 +6,7 @@ export default (part) => {
 
   macro('ld', {
     from: points.from,
-    to: points.to
+    to: points.to,
   })
 
   return part

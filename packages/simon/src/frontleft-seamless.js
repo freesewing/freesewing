@@ -35,8 +35,8 @@ export default (part) => {
         'placketTopFold1',
         'placketTopFold2',
         'placketBottomFold1',
-        'placketBottomFold2'
-      ]
+        'placketBottomFold2',
+      ],
     })
 
     // Buttons
@@ -63,23 +63,23 @@ export default (part) => {
       macro('hd', {
         from: points.placketBottomEdge,
         to: points[pid],
-        y: points.placketBottomEdge.y + offset + 3 * sa
+        y: points.placketBottomEdge.y + offset + 3 * sa,
       })
     }
     macro('hd', {
       from: points.placketTopEdge,
       to: points.neck,
-      y: points.neck.y - 15 - sa
+      y: points.neck.y - 15 - sa,
     })
     macro('hd', {
       from: points.placketTopEdge,
       to: points.shoulder,
-      y: points.neck.y - 30 - sa
+      y: points.neck.y - 30 - sa,
     })
     macro('hd', {
       from: points.placketTopEdge,
       to: points.armhole,
-      y: points.neck.y - 45 - sa
+      y: points.neck.y - 45 - sa,
     })
     points.button0 = points.placketTopEdge
     let j
@@ -88,13 +88,13 @@ export default (part) => {
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
-        x: points.placketTopEdge.x - 15
+        x: points.placketTopEdge.x - 15,
       })
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30
+      x: points.placketTopEdge.x - 30,
     })
   }
   return part

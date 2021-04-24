@@ -13,7 +13,7 @@ export default (part) => {
       at: points.title,
       nr: 1,
       title: 'interfacingTip',
-      rotation: -90
+      rotation: -90,
     })
   }
 

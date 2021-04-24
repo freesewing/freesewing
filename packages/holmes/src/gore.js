@@ -9,7 +9,7 @@ export default function (part) {
     macro,
     complete,
     sa,
-    paperless
+    paperless,
   } = part.shorthand()
 
   // Design pattern here
@@ -25,7 +25,7 @@ export default function (part) {
     goreNumber: options.goreNumber,
     extraLength: ((options.lengthRatio - 0.5) * measurements.head) / 2,
     prefix: 'gore_',
-    render: true
+    render: true,
   })
 
   // Complete?
@@ -37,7 +37,7 @@ export default function (part) {
       from: points.p0,
       to: points.gore_p1.shift(180, 20),
       offset: -points.gore_p2.y / 6,
-      grainline: true
+      grainline: true,
     })
 
     if (sa) {
@@ -62,12 +62,12 @@ export default function (part) {
       macro('hd', {
         from: points.p0,
         to: points.gore_p1,
-        y: -points.p0.x + 15
+        y: -points.p0.x + 15,
       })
       macro('vd', {
         from: points.p0,
         to: points.gore_p3,
-        x: points.p0.x - 15 - sa
+        x: points.p0.x - 15 - sa,
       })
     }
   }

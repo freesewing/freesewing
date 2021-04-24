@@ -71,7 +71,7 @@ const patterns = {
   titan,
   trayvon,
   wahid,
-  waralee
+  waralee,
 }
 const patternOptions = (config) => {
   let all = []
@@ -139,7 +139,7 @@ for (let pattern of Object.keys(patterns)) {
     type: patterns[pattern].type,
     difficulty: patterns[pattern].difficulty,
     tags: patterns[pattern].tags,
-    deprecated: patterns[pattern].deprecated || false
+    deprecated: patterns[pattern].deprecated || false,
   }
 }
 

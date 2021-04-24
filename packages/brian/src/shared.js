@@ -41,33 +41,33 @@ export function dimensions(macro, points, Path, sa) {
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-    d: sa + 15
+    d: sa + 15,
   })
   macro('pd', {
     path: new Path()
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-    d: -15
+    d: -15,
   })
   macro('vd', {
     from: points.hips,
     to: points.armhole,
-    x: points.hips.x + sa + 15
+    x: points.hips.x + sa + 15,
   })
   macro('vd', {
     from: points.hips,
     to: points.armholePitch,
-    x: points.hips.x + sa + 30
+    x: points.hips.x + sa + 30,
   })
   macro('vd', {
     from: points.hips,
     to: points.shoulder,
-    x: points.hips.x + sa + 45
+    x: points.hips.x + sa + 45,
   })
   macro('vd', {
     from: points.hips,
     to: points.neck,
-    x: points.hips.x + sa + 60
+    x: points.hips.x + sa + 60,
   })
   macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
 }

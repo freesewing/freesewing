@@ -9,28 +9,28 @@ export default (part) => {
     to: points.bottomLeft,
     via: points.topLeft,
     radius: height / 3,
-    prefix: 'topLeft'
+    prefix: 'topLeft',
   })
   macro('round', {
     from: points.topLeft,
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: height / 3,
-    prefix: 'bottomLeft'
+    prefix: 'bottomLeft',
   })
   macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: height / 3,
-    prefix: 'bottomRight'
+    prefix: 'bottomRight',
   })
   macro('round', {
     from: points.bottomRight,
     to: points.topLeft,
     via: points.topRight,
     radius: height / 3,
-    prefix: 'topRight'
+    prefix: 'topRight',
   })
 
   paths.seam = new Path()

@@ -27,11 +27,11 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 8,
-      title: 'frontPocketBagFacing'
+      title: 'frontPocketBagFacing',
     })
     macro('grainline', {
       from: points.slantTop,
-      to: new Point(points.slantTop.x, points.facingDirection.y)
+      to: new Point(points.slantTop.x, points.facingDirection.y),
     })
     snippets.notch = new Snippet('notch', points.facingDirection)
 

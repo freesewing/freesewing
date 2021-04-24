@@ -7,7 +7,7 @@ export default (part) => {
   macro('vd', {
     from: points.to,
     to: points.from,
-    x: 50
+    x: 50,
   })
 
   return part

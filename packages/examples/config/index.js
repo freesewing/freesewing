@@ -10,7 +10,7 @@ export default {
   difficulty: 1,
   tags: ['example'],
   optionGroups: {
-    fit: ['fixme']
+    fit: ['fixme'],
   },
   measurements: [],
   dependencies: {
@@ -102,7 +102,7 @@ export default {
     'utils_curveintersectsx',
     'utils_splitcurve',
     'docs_overview',
-    'docs_coords'
+    'docs_coords',
   ],
   options: {
     focus: '',
@@ -110,7 +110,7 @@ export default {
     fixme: {
       pct: 50,
       min: 0,
-      max: 100
-    }
-  }
+      max: 100,
+    },
+  },
 }

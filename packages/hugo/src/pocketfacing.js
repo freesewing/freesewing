@@ -35,7 +35,7 @@ export default function (part) {
     macro('hd', {
       from: points.saStart,
       to: points.pocketTop,
-      y: points.saStart.y - 15 - sa
+      y: points.saStart.y - 15 - sa,
     })
   }
 

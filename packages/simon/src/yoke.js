@@ -10,7 +10,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   for (let id of Object.keys(part.paths)) delete part.paths[id]
@@ -52,7 +52,7 @@ export default (part) => {
       macro('cutonfold', {
         from: points.cbNeck,
         to: points.cbYoke,
-        grainline: true
+        grainline: true,
       })
       snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
     } else {
@@ -60,7 +60,7 @@ export default (part) => {
       points.grainlineTo = points.cbNeck.shift(0, 20)
       macro('grainline', {
         from: points.grainlineFrom,
-        to: points.grainlineTo
+        to: points.grainlineTo,
       })
       snippets.sleeveNotchA = new Snippet('bnotch', points.armholePitch)
       snippets.sleeveNotchB = new Snippet('bnotch', points._armholePitch)
@@ -78,43 +78,43 @@ export default (part) => {
   if (paperless) {
     macro('pd', {
       path: new Path().move(points.cbNeck)._curve(points.neckCp2, points.neck),
-      d: 15
+      d: 15,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.neck,
-      y: points.neck.y - 15 - sa
+      y: points.neck.y - 15 - sa,
     })
     macro('ld', {
       from: points.neck,
       to: points.shoulder,
-      d: 15 + sa
+      d: 15 + sa,
     })
     macro('hd', {
       from: points.cbYoke,
       to: points.armholePitch,
-      y: points.cbYoke.y + 15 + sa
+      y: points.cbYoke.y + 15 + sa,
     })
     macro('hd', {
       from: points.cbYoke,
       to: points.shoulder,
-      y: points.cbYoke.y + 30 + sa
+      y: points.cbYoke.y + 30 + sa,
     })
     macro('vd', {
       from: points.cbYoke,
       to: points.cbNeck,
-      x: points.cbYoke.x - 15 - sa
+      x: points.cbYoke.x - 15 - sa,
     })
     macro('pd', {
       path: new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: 15 + sa
+      d: 15 + sa,
     })
     macro('vd', {
       from: points.armholePitch,
       to: points.shoulder,
-      x: points.shoulder.x + 30 + sa
+      x: points.shoulder.x + 30 + sa,
     })
   }
 

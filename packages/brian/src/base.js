@@ -12,7 +12,7 @@ export default (part) => {
     Path,
     paths,
     utils,
-    complete
+    complete,
   } = part.shorthand()
 
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)

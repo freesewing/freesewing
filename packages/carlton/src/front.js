@@ -15,7 +15,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   calculateRatios(part)
@@ -75,14 +75,14 @@ export default function (part) {
       to: points.pocketBottomRight,
       via: points.pocketBottomLeft,
       prefix: 'pocketRoundLeft',
-      radius
+      radius,
     })
     macro('round', {
       from: points.pocketBottomLeft,
       to: points.pocketTopRight,
       via: points.pocketBottomRight,
       prefix: 'pocketRoundRight',
-      radius
+      radius,
     })
     store.set('pocketRadius', radius)
   }
@@ -110,14 +110,14 @@ export default function (part) {
       to: points.pocketFlapBottomRight,
       via: points.pocketFlapBottomLeft,
       prefix: 'pocketFlapRoundLeft',
-      radius
+      radius,
     })
     macro('round', {
       from: points.pocketFlapBottomLeft,
       to: points.pocketFlapTopRight,
       via: points.pocketFlapBottomRight,
       prefix: 'pocketFlapRoundRight',
-      radius
+      radius,
     })
     store.set('pocketFlapRadius', radius)
   }
@@ -139,7 +139,7 @@ export default function (part) {
     'chestPocketTopLeft',
     'chestPocketBottomLeft',
     'chestPocketTopRight',
-    'chestPocketBottomRight'
+    'chestPocketBottomRight',
   ])
     points[i] = points[i].rotate(options.chestPocketAngle, points.chestPocketAnchor)
   store.set('chestPocketBagDepth', points.button3Left.dx(points.chestPocketBottomLeft))
@@ -306,7 +306,7 @@ export default function (part) {
 
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['shoulder', 'cfNeck', 'rollLineStart', 'waist', 'seat']
+      on: ['shoulder', 'cfNeck', 'rollLineStart', 'waist', 'seat'],
     })
 
     points.logo = new Point(points.chestPocketTopRight.x, points.armhole.y)
@@ -314,7 +314,7 @@ export default function (part) {
 
     macro('grainline', {
       from: points.cfHem,
-      to: points.cfNeck
+      to: points.cfNeck,
     })
 
     if (sa) {
@@ -329,142 +329,142 @@ export default function (part) {
       macro('ld', {
         from: points.hemEdge,
         to: points.flbHem,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.flbHem,
         to: points.hem,
-        d: 15
+        d: 15,
       })
       macro('hd', {
         from: points.hemEdge,
         to: points.hem,
-        y: points.hem.y + 15 + 3 * sa
+        y: points.hem.y + 15 + 3 * sa,
       })
       macro('hd', {
         from: points.rollLineStart,
         to: points.pocketTopLeft,
-        y: points.pocketFlapBottomLeft.y
+        y: points.pocketFlapBottomLeft.y,
       })
       macro('vd', {
         from: points.pocketFlapTopRight,
         to: points.waist,
-        x: points.pocketTopRight.x - 15
+        x: points.pocketTopRight.x - 15,
       })
       macro('vd', {
         from: points.pocketTopRight,
         to: points.waist,
-        x: points.pocketTopRight.x - 30
+        x: points.pocketTopRight.x - 30,
       })
       macro('vd', {
         from: points.chestPocketBottomLeft,
         to: points.waist,
-        x: points.chestPocketBottomLeft.x - 15
+        x: points.chestPocketBottomLeft.x - 15,
       })
       macro('hd', {
         from: points.rollLineStart,
         to: points.chestPocketBottomLeft,
-        y: points.chestPocketBottomLeft.y + 15
+        y: points.chestPocketBottomLeft.y + 15,
       })
       macro('hd', {
         from: points.rollLineStart,
         to: points.button3Left,
-        y: points.button3Left.y + 15
+        y: points.button3Left.y + 15,
       })
       macro('hd', {
         from: points.button3Left,
         to: points.button3Right,
-        y: points.button3Left.y + 15
+        y: points.button3Left.y + 15,
       })
       macro('vd', {
         from: points.hem,
         to: points.seat,
-        x: points.hem.x + sa + 15
+        x: points.hem.x + sa + 15,
       })
       macro('vd', {
         from: points.hem,
         to: points.waist,
-        x: points.hem.x + sa + 30
+        x: points.hem.x + sa + 30,
       })
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: points.hem.x + sa + 45
+        x: points.hem.x + sa + 45,
       })
       macro('vd', {
         from: points.armhole,
         to: points.armholePitch,
-        x: points.armhole.x + sa + 15
+        x: points.armhole.x + sa + 15,
       })
       macro('vd', {
         from: points.armhole,
         to: points.shoulder,
-        x: points.armhole.x + sa + 30
+        x: points.armhole.x + sa + 30,
       })
       macro('vd', {
         from: points.armhole,
         to: points.neck,
-        x: points.armhole.x + sa + 45
+        x: points.armhole.x + sa + 45,
       })
       macro('vd', {
         from: points.rollLineStart,
         to: points.collarTip,
-        x: points.rollLineStart.x - sa - 15
+        x: points.rollLineStart.x - sa - 15,
       })
       macro('vd', {
         from: points.button2Left,
         to: points.rollLineStart,
-        x: points.rollLineStart.x - sa - 15
+        x: points.rollLineStart.x - sa - 15,
       })
       macro('vd', {
         from: points.button1Left,
         to: points.button2Left,
-        x: points.rollLineStart.x - sa - 15
+        x: points.rollLineStart.x - sa - 15,
       })
       macro('vd', {
         from: points.hemEdge,
         to: points.collarTip,
-        x: points.rollLineStart.x - sa - 30
+        x: points.rollLineStart.x - sa - 30,
       })
       macro('vd', {
         from: points.hemEdge,
         to: points.neck,
-        x: points.rollLineStart.x - sa - 45
+        x: points.rollLineStart.x - sa - 45,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.collarTip,
-        y: points.collarTip.y - sa - 15
+        y: points.collarTip.y - sa - 15,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.cfNeck,
-        y: points.collarTip.y - sa - 30
+        y: points.collarTip.y - sa - 30,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.rollLineEnd,
-        y: points.collarTip.y - sa - 45
+        y: points.collarTip.y - sa - 45,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.neck,
-        y: points.neck.y - sa - 15
+        y: points.neck.y - sa - 15,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armholePitch,
-        y: points.neck.y - sa - 30
+        y: points.neck.y - sa - 30,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.shoulder,
-        y: points.neck.y - sa - 45
+        y: points.neck.y - sa - 45,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armhole,
-        y: points.neck.y - sa - 60
+        y: points.neck.y - sa - 60,
       })
     }
   }

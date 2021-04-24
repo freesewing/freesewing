@@ -9,7 +9,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -22,14 +22,14 @@ export default function (part) {
       to: points.bottomRight,
       via: points.bottomLeft,
       radius: store.get('pocketFlapRadius'),
-      prefix: 'roundLeft'
+      prefix: 'roundLeft',
     })
     macro('round', {
       from: points.bottomLeft,
       to: points.topRight,
       via: points.bottomRight,
       radius: store.get('pocketFlapRadius'),
-      prefix: 'roundRight'
+      prefix: 'roundRight',
     })
 
     paths.seam = new Path()
@@ -49,12 +49,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 11,
-      title: 'pocketFlap'
+      title: 'pocketFlap',
     })
 
     macro('grainline', {
       from: points.bottomLeft.shift(0, points.topRight.x / 5),
-      to: points.topLeft.shift(0, points.topRight.x / 5)
+      to: points.topLeft.shift(0, points.topRight.x / 5),
     })
 
     if (sa) {
@@ -65,24 +65,24 @@ export default function (part) {
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topLeft.y - sa - 15
+        y: points.topLeft.y - sa - 15,
       })
       if (options.pocketFlapRadius > 0) {
         macro('vd', {
           from: points.roundRightStart,
           to: points.roundRightEnd,
-          x: points.topRight.x + sa + 15
+          x: points.topRight.x + sa + 15,
         })
         macro('vd', {
           from: points.roundRightStart,
           to: points.topRight,
-          x: points.topRight.x + sa + 30
+          x: points.topRight.x + sa + 30,
         })
       } else {
         macro('vd', {
           from: points.bottomRight,
           to: points.topRight,
-          x: points.topRight.x + sa + 15
+          x: points.topRight.x + sa + 15,
         })
       }
     }

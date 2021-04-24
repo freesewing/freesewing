@@ -12,7 +12,7 @@ export default function (part) {
     Snippet,
     sa,
     options,
-    measurements
+    measurements,
   } = part.shorthand()
 
   let base = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
@@ -51,7 +51,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'hood'
+      title: 'hood',
     })
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
@@ -61,42 +61,42 @@ export default function (part) {
     macro('hd', {
       from: points.cfBottom,
       to: points.cbBottom,
-      y: points.cfBottom.y + sa + 15
+      y: points.cfBottom.y + sa + 15,
     })
     macro('hd', {
       from: points.cbBottom,
       to: points.backPitch,
-      y: points.cfBottom.y + sa + 15
+      y: points.cfBottom.y + sa + 15,
     })
     macro('hd', {
       from: points.cfTop,
       to: points.backPitch,
-      y: points.cfBottom.y + sa + 30
+      y: points.cfBottom.y + sa + 30,
     })
     macro('hd', {
       from: points.frontTop,
       to: points.backPitch,
-      y: points.frontTop.y - sa - 15
+      y: points.frontTop.y - sa - 15,
     })
     macro('ld', {
       from: points.cfBottom,
       to: points.cfTop,
-      d: -15
+      d: -15,
     })
     macro('ld', {
       from: points.cfBottom,
       to: points.cbBottom,
-      d: 15
+      d: 15,
     })
     macro('vd', {
       from: points.cfTop,
       to: points.frontTop,
-      x: points.cfBottom.x - sa - 15
+      x: points.cfBottom.x - sa - 15,
     })
     macro('vd', {
       from: points.cfBottom,
       to: points.frontTop,
-      x: points.cfBottom.x - sa - 30
+      x: points.cfBottom.x - sa - 30,
     })
   }
 

@@ -18,8 +18,8 @@ export default {
       'necklineDrop',
       'shoulderStrapWidth',
       'shoulderStrapPlacement',
-      'lengthBonus'
-    ]
+      'lengthBonus',
+    ],
   },
   measurements: [
     'biceps',
@@ -29,15 +29,15 @@ export default {
     'neck',
     'shoulderSlope',
     'shoulderToShoulder',
-    'hips'
+    'hips',
   ],
   dependencies: {
     front: 'base',
-    back: 'front'
+    back: 'front',
   },
   inject: {
     front: 'base',
-    back: 'front'
+    back: 'front',
   },
   hide: ['base'],
   options: {
@@ -63,6 +63,6 @@ export default {
     necklineDrop: { pct: 20, min: 10, max: 35 },
     stretchFactor: { pct: 5, min: 0, max: 15 },
     shoulderStrapWidth: { pct: 15, min: 10, max: 40 },
-    shoulderStrapPlacement: { pct: 40, min: 20, max: 80 }
-  }
+    shoulderStrapPlacement: { pct: 40, min: 20, max: 80 },
+  },
 }

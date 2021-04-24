@@ -25,13 +25,13 @@ export default function (part) {
       at: points.title,
       title: 'beltLoop',
       nr: 14,
-      scale: 0.4
+      scale: 0.4,
     })
     points.grainlineTop = points.topLeft.shiftFractionTowards(points.topRight, 0.5)
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
   }
 

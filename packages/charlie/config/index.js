@@ -18,7 +18,7 @@ export default {
           'backPocketHorizontalPlacement',
           'backPocketVerticalPlacement',
           'backPocketWidth',
-          'backPocketDepth'
+          'backPocketDepth',
         ],
         frontPockets: [
           'frontPocketSlantDepth',
@@ -27,9 +27,9 @@ export default {
           'frontPocketSlantBend',
           'frontPocketWidth',
           'frontPocketDepth',
-          'frontPocketFacing'
-        ]
-      }
+          'frontPocketFacing',
+        ],
+      },
     ],
     advanced: [
       'crossSeamCurveStart',
@@ -43,9 +43,9 @@ export default {
       'waistBalance',
       'beltLoops',
       {
-        fly: ['flyCurve', 'flyLength', 'flyWidth']
-      }
-    ]
+        fly: ['flyCurve', 'flyLength', 'flyWidth'],
+      },
+    ],
   },
   measurements: [
     'crossSeam',
@@ -59,7 +59,7 @@ export default {
     'waistToKnee',
     'waistToHips',
     'waistToSeat',
-    'waistToUpperLeg'
+    'waistToUpperLeg',
   ],
   hide: ['titanBack', 'titanFront'],
   inject: {
@@ -71,7 +71,7 @@ export default {
     backPocketInterfacing: 'backPocket',
     backPocketJet: 'backPocketFacing',
     flyFacing: 'front',
-    flyExtension: 'flyFacing'
+    flyExtension: 'flyFacing',
   },
   parts: ['beltLoops'],
   dependencies: {
@@ -79,7 +79,7 @@ export default {
     titanFront: 'titanBack',
     back: ['titanBack', 'titanFront', 'front'],
     waistband: ['titanBack', 'titanFront', 'front', 'back'],
-    waistbandCurved: ['titanBack', 'titanFront', 'front', 'back']
+    waistbandCurved: ['titanBack', 'titanFront', 'front', 'back'],
   },
   options: {
     // Constants (from Titan)
@@ -141,6 +141,6 @@ export default {
     flyWidth: { pct: 15, min: 10, max: 20 },
 
     // Waistband
-    beltLoops: { count: 8, min: 6, max: 12 }
-  }
+    beltLoops: { count: 8, min: 6, max: 12 },
+  },
 }

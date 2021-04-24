@@ -11,7 +11,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let width = options.sleevePlacketWidth > 20 ? 10 : options.sleevePlacketWidth / 4
@@ -54,7 +54,7 @@ export default (part) => {
       nr: 9,
       title: 'sleevePlacketUnderlap',
       scale: 0.6,
-      append: true
+      append: true,
     })
 
     // Button
@@ -76,22 +76,22 @@ export default (part) => {
     macro('vd', {
       from: points.fold2Right,
       to: points.fold1Right,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + 30
+      x: points.topRight.x + 30,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.button,
-      y: points.bottomRight.y + 15
+      y: points.bottomRight.y + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y + 30
+      y: points.bottomRight.y + 30,
     })
   }
 

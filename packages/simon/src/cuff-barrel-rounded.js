@@ -10,14 +10,14 @@ export default (part) => {
     to: points.bottomLeft,
     via: points.topLeft,
     radius: height / 3,
-    prefix: 'topLeftRound'
+    prefix: 'topLeftRound',
   })
   macro('round', {
     from: points.bottomRight,
     to: points.topLeft,
     via: points.topRight,
     radius: height / 3,
-    prefix: 'topRightRound'
+    prefix: 'topRightRound',
   })
   points.leftAngleBottom = points.topLeft.shift(-90, height / 3)
   points.rightAngleTop = points.topRight.shift(180, height / 3)
@@ -45,7 +45,7 @@ export default (part) => {
     macro('vd', {
       from: points.topRightRoundStart,
       to: points.topRightRoundEnd,
-      x: points.topRightRoundStart.x + 15 + sa
+      x: points.topRightRoundStart.x + 15 + sa,
     })
   }
 

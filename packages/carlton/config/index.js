@@ -20,7 +20,7 @@ export default {
       'sleeveBend',
       'sleeveLengthBonus',
       'waistEase',
-      'seatEase'
+      'seatEase',
     ],
     advanced: [
       'backNeckCutout',
@@ -29,7 +29,7 @@ export default {
       'lapelReduction',
       'shoulderSlopeReduction',
       'sleevecapHeight',
-      'sleevecapEase'
+      'sleevecapEase',
     ],
     pockets: [
       'pocketPlacementHorizontal',
@@ -45,10 +45,10 @@ export default {
       'innerPocketPlacement',
       'innerPocketWidth',
       'innerPocketDepth',
-      'innerPocketWeltHeight'
+      'innerPocketWeltHeight',
     ],
     style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length'],
-    collar: ['collarHeight', 'collarSpread', 'collarFlare']
+    collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [
     'biceps',
@@ -65,7 +65,7 @@ export default {
     'wrist',
     'waistToFloor',
     'waistToSeat',
-    'seat'
+    'seat',
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -88,7 +88,7 @@ export default {
     chestPocketBag: 'front',
     innerPocketWelt: 'front',
     innerPocketBag: 'front',
-    innerPocketTab: 'front'
+    innerPocketTab: 'front',
   },
   inject: {
     bentBack: 'bentBase',
@@ -100,7 +100,7 @@ export default {
     topSleeve: 'bentTopSleeve',
     underSleeve: 'bentUnderSleeve',
     collar: 'collarStand',
-    pocketLining: 'pocket'
+    pocketLining: 'pocket',
   },
   hide: ['bentBase', 'bentBack', 'bentFront', 'bentSleeve', 'bentTopSleeve', 'bentUnderSleeve'],
   options: {
@@ -155,6 +155,6 @@ export default {
     cuffLength: { pct: 15, min: 10, max: 20 },
     collarHeight: { pct: 9.6, min: 8, max: 11 },
     collarSpread: { deg: 4, min: 2, max: 6 },
-    collarFlare: { pct: 20, min: 0, max: 40 }
-  }
+    collarFlare: { pct: 20, min: 0, max: 40 },
+  },
 }

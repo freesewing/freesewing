@@ -71,7 +71,7 @@ let patterns = {
   albert,
   hortensia,
   cornelius,
-  charlie
+  charlie,
 }
 
 let options = {}

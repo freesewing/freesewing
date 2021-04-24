@@ -9,7 +9,7 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
@@ -37,11 +37,11 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 4,
-      title: 'cuff'
+      title: 'cuff',
     })
     macro('grainline', {
       from: points.topLeft.shift(0, 15),
-      to: points.bottomLeft.shift(0, 15)
+      to: points.bottomLeft.shift(0, 15),
     })
 
     if (sa) {
@@ -64,12 +64,12 @@ export default function (part) {
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomRight.y + 15 + sa
+        y: points.bottomRight.y + 15 + sa,
       })
     }
   }

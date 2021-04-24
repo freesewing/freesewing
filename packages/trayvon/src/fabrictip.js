@@ -11,7 +11,7 @@ export default (part) => {
     paperless,
     points,
     sa,
-    snippets
+    snippets,
   } = part.shorthand()
 
   calculateHelpers(part)
@@ -24,7 +24,7 @@ export default (part) => {
       at: points.title,
       nr: 3,
       title: 'fabricTip',
-      rotation: -90
+      rotation: -90,
     })
 
     points.logo = points.tip.shiftFractionTowards(points.mid, 0.4)
@@ -39,12 +39,12 @@ export default (part) => {
     macro('ld', {
       from: points.tip,
       to: points.notch1,
-      d: options.tipWidth / -2.5
+      d: options.tipWidth / -2.5,
     })
     macro('ld', {
       from: points.notch2,
       to: points.tip,
-      d: options.tipWidth / -2.5
+      d: options.tipWidth / -2.5,
     })
     paths.n45 = new Path()
       .move(points.midLeft)

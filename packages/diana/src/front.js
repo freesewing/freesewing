@@ -10,7 +10,7 @@ export default (part) => {
     macro,
     options,
     Snippet,
-    snippets
+    snippets,
   } = part.shorthand()
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
@@ -36,7 +36,7 @@ export default (part) => {
     'armholePitchCp2',
     'shoulderCp1',
     'shoulder',
-    'neck'
+    'neck',
   ]
   if (front)
     for (let p of rotateThese) points[p] = points[p].rotate(-options.drapeAngle, points.armhole)
@@ -87,7 +87,7 @@ export default (part) => {
     macro('cutonfold', {
       from: points.cNeck,
       to: points.cHem,
-      grainline: true
+      grainline: true,
     })
 
     if (sa) {
@@ -106,53 +106,53 @@ export default (part) => {
         .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
         .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: sa + 15
+      d: sa + 15,
     })
     macro('pd', {
       path: new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15
+      d: -15,
     })
     macro('vd', {
       from: points.hips,
       to: points.waist,
-      x: points.hips.x + sa + 15
+      x: points.hips.x + sa + 15,
     })
     macro('vd', {
       from: points.hips,
       to: points.armhole,
-      x: points.hips.x + sa + 30
+      x: points.hips.x + sa + 30,
     })
     macro('vd', {
       from: points.hips,
       to: points.armholePitch,
-      x: points.hips.x + sa + 45
+      x: points.hips.x + sa + 45,
     })
     macro('vd', {
       from: points.hips,
       to: points.shoulder,
-      x: points.hips.x + sa + 60
+      x: points.hips.x + sa + 60,
     })
     macro('vd', {
       from: points.hips,
       to: points.neck,
-      x: points.hips.x + sa + 75
+      x: points.hips.x + sa + 75,
     })
     macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
     macro('vd', {
       from: points.cHem,
       to: points.cNeck,
-      x: points.cHem.x - 15
+      x: points.cHem.x - 15,
     })
     macro('hd', {
       from: points.cHem,
       to: points.hem,
-      y: points.cHem.y + 3 * sa + 15
+      y: points.cHem.y + 3 * sa + 15,
     })
     macro('pd', {
       path: new Path().move(points.cNeck).curve(points.cfNeckCp1, points.neckCp2, points.neck),
-      d: -sa - 15
+      d: -sa - 15,
     })
   }
 

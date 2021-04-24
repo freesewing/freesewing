@@ -10,7 +10,7 @@ export default function (part) {
     complete,
     snippets,
     Snippet,
-    paperless
+    paperless,
   } = part.shorthand()
 
   // Construct the neck opening
@@ -73,13 +73,13 @@ export default function (part) {
     from: points.edgeTop,
     to: points.tipRight,
     via: points.tipRightTop,
-    prefix: 'tipRightTop'
+    prefix: 'tipRightTop',
   })
   macro('round', {
     from: points.tipRight,
     to: points.top,
     via: points.tipRightBottom,
-    prefix: 'tipRightBottom'
+    prefix: 'tipRightBottom',
   })
 
   // Rotate straps so they don't overlap
@@ -98,7 +98,7 @@ export default function (part) {
     'tipRightBottomEnd',
     'tipRightBottom',
     'top',
-    'topCp2'
+    'topCp2',
   ]
 
   while (points.tipRightBottomStart.x > -1) {
@@ -128,14 +128,14 @@ export default function (part) {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: points.bottomRight.x / 4,
-    prefix: 'bottomLeft'
+    prefix: 'bottomLeft',
   })
   macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: points.bottomRight.x / 4,
-    prefix: 'bottomRight'
+    prefix: 'bottomRight',
   })
 
   // Construct the path
@@ -177,7 +177,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'bib'
+      title: 'bib',
     })
 
     // Add the scalebox
@@ -194,32 +194,32 @@ export default function (part) {
       macro('hd', {
         from: points.bottomLeftStart,
         to: points.bottomRightEnd,
-        y: points.bottomLeft.y + 15
+        y: points.bottomLeft.y + 15,
       })
       macro('vd', {
         from: points.bottomRightStart,
         to: points.bottom,
-        x: points.bottomRight.x + 15
+        x: points.bottomRight.x + 15,
       })
       macro('vd', {
         from: points.bottomRightStart,
         to: points.right,
-        x: points.bottomRight.x + 30
+        x: points.bottomRight.x + 30,
       })
       macro('vd', {
         from: points.bottomRightStart,
         to: points.tipLeftTopStart,
-        x: points.bottomRight.x + 45
+        x: points.bottomRight.x + 45,
       })
       macro('hd', {
         from: points.left,
         to: points.right,
-        y: points.left.y + 25
+        y: points.left.y + 25,
       })
       macro('ld', {
         from: points.tipLeftBottomEnd,
         to: points.tipLeftTopStart,
-        d: -15
+        d: -15,
       })
     }
   }

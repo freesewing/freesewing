@@ -204,16 +204,16 @@ Dxf.prototype.render = function (pattern) {
     lineTypes: [
       {
         name: 'CONTINUOUS',
-        description: 'SOLIDLINE'
-      }
+        description: 'SOLIDLINE',
+      },
     ],
     layers: [
       {
         name: 1,
         color: 7,
-        lineType: 'CONTINIOUS'
-      }
-    ]
+        lineType: 'CONTINIOUS',
+      },
+    ],
   }
 
   let dxf = ''

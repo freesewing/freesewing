@@ -10,7 +10,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
@@ -69,38 +69,38 @@ export default (part) => {
         .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
         .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: sa + 15
+      d: sa + 15,
     })
     macro('pd', {
       path: new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15
+      d: -15,
     })
     macro('vd', {
       from: points.hips,
       to: points.waist,
-      x: points.hips.x + sa + 15
+      x: points.hips.x + sa + 15,
     })
     macro('vd', {
       from: points.hips,
       to: points.armhole,
-      x: points.hips.x + sa + 30
+      x: points.hips.x + sa + 30,
     })
     macro('vd', {
       from: points.hips,
       to: points.armholePitch,
-      x: points.hips.x + sa + 45
+      x: points.hips.x + sa + 45,
     })
     macro('vd', {
       from: points.hips,
       to: points.shoulder,
-      x: points.hips.x + sa + 60
+      x: points.hips.x + sa + 60,
     })
     macro('vd', {
       from: points.hips,
       to: points.neck,
-      x: points.hips.x + sa + 75
+      x: points.hips.x + sa + 75,
     })
     macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
   }

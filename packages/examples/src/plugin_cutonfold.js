@@ -16,7 +16,7 @@ export default (part) => {
   macro('cutonfold', {
     from: points.bottomLeft,
     to: points.bottomRight,
-    grainline: true
+    grainline: true,
   })
 
   return part

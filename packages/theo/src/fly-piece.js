@@ -35,13 +35,13 @@ export default function (part) {
       at: points.title,
       title: 'flyPiece',
       nr: 6,
-      scale: 0.7
+      scale: 0.7,
     })
     points.grainlineTop = points[-100101].shiftFractionTowards(points.splitWaist, 0.3)
     points.grainlineBottom = new Point(points.grainlineTop.x, points[41].y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     delete paths.pocket
     delete paths.lining
@@ -54,17 +54,17 @@ export default function (part) {
     macro('hd', {
       from: points[-100101],
       to: points.splitWaist,
-      y: points.splitWaist.y - sa - 15
+      y: points.splitWaist.y - sa - 15,
     })
     macro('hd', {
       from: points.flyPretipX,
       to: points.splitWaist,
-      y: points.splitWaist.y - sa - 30
+      y: points.splitWaist.y - sa - 30,
     })
     macro('vd', {
       from: points.flyPretipX,
       to: points.splitWaist,
-      x: points.splitWaist.x + sa + 15
+      x: points.splitWaist.x + sa + 15,
     })
   }
 

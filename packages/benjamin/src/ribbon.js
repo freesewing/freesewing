@@ -10,7 +10,7 @@ export default function (part) {
     points,
     paths,
     sa,
-    paperless
+    paperless,
   } = part.shorthand()
 
   if (options.adjustmentRibbon) {
@@ -44,19 +44,19 @@ export default function (part) {
       at: points.titleAnchor,
       nr: 2,
       title: 'ribbon',
-      scale: 0.3
+      scale: 0.3,
     })
 
     if (paperless) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15 + sa
+        y: points.bottomLeft.y + 15 + sa,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
     }
   }

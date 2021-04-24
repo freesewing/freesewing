@@ -10,7 +10,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let halfInch = store.get('halfInch')
@@ -41,7 +41,7 @@ export default function (part) {
 
     macro('cutonfold', {
       from: points.pC,
-      to: points.pB
+      to: points.pB,
     })
 
     points.logo = points.pA.shiftFractionTowards(points.pC, 0.5)
@@ -50,7 +50,7 @@ export default function (part) {
     macro('title', {
       nr: 1,
       at: points.title,
-      title: 'WaistBand'
+      title: 'WaistBand',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -71,12 +71,12 @@ export default function (part) {
     macro('hd', {
       from: points.pD,
       to: points.pA,
-      y: points.pA.y - sa - 15
+      y: points.pA.y - sa - 15,
     })
     macro('vd', {
       from: points.pD,
       to: points.pC,
-      x: points.pC.x - sa - 15
+      x: points.pC.x - sa - 15,
     })
   }
 

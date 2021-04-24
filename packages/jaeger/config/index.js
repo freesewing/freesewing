@@ -21,7 +21,7 @@ export default {
       'hipsEase',
       'lengthBonus',
       'shoulderEase',
-      'waistEase'
+      'waistEase',
     ],
     sleeves: ['sleeveBend', 'sleeveLengthBonus', 'sleeveVentLength', 'sleeveVentWidth'],
     advanced: [
@@ -33,7 +33,7 @@ export default {
       'sideFrontPlacement',
       'shoulderSlopeReduction',
       'sleevecapHeight',
-      'sleevecapEase'
+      'sleevecapEase',
     ],
     pockets: [
       'chestPocketDepth',
@@ -49,7 +49,7 @@ export default {
       'innerPocketWidth',
       'innerPocketDepth',
       'innerPocketWeltHeight',
-      'pocketFoldover'
+      'pocketFoldover',
     ],
     style: [
       'centerFrontHemDrop',
@@ -62,7 +62,7 @@ export default {
       'frontCutawayEnd',
       'hemRadius',
       'lapelStart',
-      'lapelReduction'
+      'lapelReduction',
     ],
     collar: [
       'collarSpread',
@@ -71,8 +71,8 @@ export default {
       'collarNotchAngle',
       'collarNotchReturn',
       'collarRoll',
-      'rollLineCollarHeight'
-    ]
+      'rollLineCollarHeight',
+    ],
   },
   measurements: [
     'biceps',
@@ -86,7 +86,7 @@ export default {
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -108,7 +108,7 @@ export default {
     innerPocketWelt: 'front',
     innerPocketBag: 'front',
     topSleeve: 'bentTopSleeve',
-    underSleeve: 'bentUnderSleeve'
+    underSleeve: 'bentUnderSleeve',
   },
   inject: {
     bentBack: 'bentBase',
@@ -125,7 +125,7 @@ export default {
     underCollar: 'collarStand',
     topSleeve: 'bentTopSleeve',
     underSleeve: 'bentUnderSleeve',
-    pocketLining: 'pocket'
+    pocketLining: 'pocket',
   },
   hide: [
     'bentBase',
@@ -135,7 +135,7 @@ export default {
     'bentTopSleeve',
     'bentUnderSleeve',
     'frontBase',
-    'backBase'
+    'backBase',
   ],
   options: {
     // Constants
@@ -231,6 +231,6 @@ export default {
     shoulderSlopeReduction: { pct: 30, min: 0, max: 50 },
 
     buttonLength: { pct: 30, min: 30, max: 60 },
-    buttons: { count: 2, min: 1, max: 3 }
-  }
+    buttons: { count: 2, min: 1, max: 3 },
+  },
 }

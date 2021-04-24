@@ -41,21 +41,21 @@ export default function (part) {
     macro('cutonfold', {
       to: points.bottomCF,
       from: points.topCF,
-      grainline: true
+      grainline: true,
     })
     macro('grainline', {
       to: points.topABsplit.translate(translation, 0),
       from: new Point(
         points.topABsplit.translate(translation, 0).x,
         points.hipsGap1.translate(translation, 0).y
-      )
+      ),
     })
     points.midwayAB = points.topABsplit.shiftFractionTowards(points.bottomABsplit, 0.5)
     points.titleA = points.underbustCF.shiftFractionTowards(points.midwayAB, 0.5)
     macro('title', {
       nr: '1a',
       prefix: 'panel1a',
-      at: points.titleA
+      at: points.titleA,
     })
     points.titleB = points.hipsGap1
       .translate(translation, 0)
@@ -63,7 +63,7 @@ export default function (part) {
     macro('title', {
       nr: '1b',
       prefix: 'panel1b',
-      at: points.titleB
+      at: points.titleB,
     })
   }
 
@@ -73,12 +73,12 @@ export default function (part) {
     macro('vd', {
       from: points.bottomCF,
       to: points.waistCF,
-      x: points.topCF.x - sa - 30
+      x: points.topCF.x - sa - 30,
     })
     macro('vd', {
       from: points.waistCF,
       to: points.topCF,
-      x: points.topCF.x - sa - 30
+      x: points.topCF.x - sa - 30,
     })
     points.waistAB = utils.beamsIntersect(
       points.topABsplit,
@@ -89,61 +89,61 @@ export default function (part) {
     macro('vd', {
       from: points.bottomABsplit,
       to: points.waistAB,
-      x: points.topCF.x - sa - 15
+      x: points.topCF.x - sa - 15,
     })
     macro('vd', {
       from: points.waistAB,
       to: points.topABsplit,
-      x: points.topCF.x - sa - 15
+      x: points.topCF.x - sa - 15,
     })
     macro('hd', {
       from: points.bottomCF,
       to: points.bottomABsplit,
-      y: points.bottomCF.y + sa + 15
+      y: points.bottomCF.y + sa + 15,
     })
     macro('ld', {
       from: points.waistCF,
-      to: points.waistAB
+      to: points.waistAB,
     })
     macro('hd', {
       from: points.topCF,
       to: points.topABsplit,
-      y: points.topCF.y - sa - 15
+      y: points.topCF.y - sa - 15,
     })
     // 1b
     macro('vd', {
       from: points.hipsGap1.translate(translation, 0),
       to: points.waistGap1Left.translate(translation, 0),
-      x: points.underbustGap1Left.translate(translation, 0).x + sa + 15
+      x: points.underbustGap1Left.translate(translation, 0).x + sa + 15,
     })
     macro('vd', {
       from: points.waistGap1Left.translate(translation, 0),
       to: points.underbustGap1Left.translate(translation, 0),
-      x: points.underbustGap1Left.translate(translation, 0).x + sa + 15
+      x: points.underbustGap1Left.translate(translation, 0).x + sa + 15,
     })
     macro('vd', {
       from: points.bottomABsplit.translate(translation, 0),
       to: points.waistAB.translate(translation, 0),
-      x: points.underbustGap1Left.translate(translation, 0).x + sa + 30
+      x: points.underbustGap1Left.translate(translation, 0).x + sa + 30,
     })
     macro('vd', {
       from: points.waistAB.translate(translation, 0),
       to: points.topABsplit.translate(translation, 0),
-      x: points.underbustGap1Left.translate(translation, 0).x + sa + 30
+      x: points.underbustGap1Left.translate(translation, 0).x + sa + 30,
     })
     macro('hd', {
       from: points.bottomABsplit.translate(translation, 0),
       to: points.hipsGap1.translate(translation, 0),
-      y: points.bottomABsplit.y + sa + 15
+      y: points.bottomABsplit.y + sa + 15,
     })
     macro('ld', {
       from: points.waistAB.translate(translation, 0),
-      to: points.waistGap1Left.translate(translation, 0)
+      to: points.waistGap1Left.translate(translation, 0),
     })
     macro('hd', {
       from: points.topABsplit.translate(translation, 0),
       to: points.underbustGap1Left.translate(translation, 0),
-      y: points.topABsplit.y - sa - 15
+      y: points.topABsplit.y - sa - 15,
     })
   }
 

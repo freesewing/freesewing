@@ -12,7 +12,7 @@ export default (part) => {
     macro,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   if (options.waistbandCurve > 0) {
@@ -49,7 +49,7 @@ export default (part) => {
   if (complete) {
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['cfRight', 'cfLeft', 'rsRight', 'rsLeft', 'cbRight', 'cbLeft', 'lsRight', 'lsLeft']
+      on: ['cfRight', 'cfLeft', 'rsRight', 'rsLeft', 'cbRight', 'cbLeft', 'lsRight', 'lsLeft'],
     })
     points.titleAnchor = points.top.shiftFractionTowards(points.bottom, 0.4)
     points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
@@ -57,11 +57,11 @@ export default (part) => {
       at: points.titleAnchor,
       nr: 11,
       title: 'waistband',
-      rotation: 90
+      rotation: 90,
     })
     macro('grainline', {
       from: points.rsLeft.shift(90, 30),
-      to: points.rsRight.shift(90, 30)
+      to: points.rsRight.shift(90, 30),
     })
     paths.cf = new Path()
       .move(points.cfLeft)
@@ -120,12 +120,12 @@ export default (part) => {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15
+        y: points.bottomLeft.y + sa + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.bottomRight.x + sa + 15
+        x: points.bottomRight.x + sa + 15,
       })
     }
   }

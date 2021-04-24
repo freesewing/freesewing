@@ -9,6 +9,6 @@ export default {
         for (let key of Object.keys(attributes)) svg.attributes.add(key, attributes[key])
         svg.attributes.add('freesewing:plugin-svgattr', version)
       }
-    }
-  }
+    },
+  },
 }

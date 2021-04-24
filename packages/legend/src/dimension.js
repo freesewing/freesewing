@@ -8,7 +8,7 @@ export default (part) => {
 
   macro('ld', {
     from: points.a,
-    to: points.b
+    to: points.b,
   })
 
   return box(part, 100, 25)

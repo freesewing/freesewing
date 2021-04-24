@@ -33,7 +33,7 @@ export default (part) => {
     macro('vd', {
       from: points.rightAngleBottom,
       to: points.rightAngleTop,
-      x: points.rightAngleBottom.x + 15 + sa
+      x: points.rightAngleBottom.x + 15 + sa,
     })
   }
 

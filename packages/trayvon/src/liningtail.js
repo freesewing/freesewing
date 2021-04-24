@@ -12,7 +12,7 @@ export default (part) => {
     paperless,
     sa,
     snippets,
-    store
+    store,
   } = part.shorthand()
 
   calculateHelpers(part)
@@ -39,7 +39,7 @@ export default (part) => {
       at: points.title,
       nr: 6,
       title: 'liningTip',
-      rotation: -90
+      rotation: -90,
     })
     snippets.notch = new Snippet('notch', points.tip)
 

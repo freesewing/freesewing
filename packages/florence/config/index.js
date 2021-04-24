@@ -10,13 +10,13 @@ export default {
   difficulty: 1,
   tags: [],
   optionGroups: {
-    fit: ['height', 'length', 'curve']
+    fit: ['height', 'length', 'curve'],
   },
   measurements: ['head'],
   parts: ['mask'],
   options: {
     length: { pct: 40, min: 35, max: 45 },
     height: { pct: 26, min: 23, max: 29 },
-    curve: { pct: 12.5, min: 10, max: 15 }
-  }
+    curve: { pct: 12.5, min: 10, max: 15 },
+  },
 }

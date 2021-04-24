@@ -12,11 +12,11 @@ export default {
   optionGroups: {
     fit: ['waistbandPosition', 'waistbandShape'],
     style: ['lengthBonus', 'circleRatio', 'waistbandWidth', 'waistbandOverlap', 'gathering'],
-    construction: ['seamlessFullCircle', 'hemWidth']
+    construction: ['seamlessFullCircle', 'hemWidth'],
   },
   measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
   dependencies: {
-    waistband: 'skirt'
+    waistband: 'skirt',
   },
   options: {
     // Constants
@@ -39,7 +39,7 @@ export default {
     // Lists
     waistbandShape: {
       list: ['straight', 'curved'],
-      dflt: 'straight'
-    }
-  }
+      dflt: 'straight',
+    },
+  },
 }

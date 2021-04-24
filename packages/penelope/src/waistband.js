@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   if (!options.waistBand) {
@@ -47,7 +47,7 @@ export default function (part) {
       to: points.TL,
       margin: 15,
       offset: 15,
-      grainline: true
+      grainline: true,
     })
 
     snippets.logo = new Snippet('logo', points.logoAnchor)
@@ -57,7 +57,7 @@ export default function (part) {
       at: points.titleAnchor,
       title: 'waistband',
       rotation: 90,
-      scale: 0.75
+      scale: 0.75,
     })
 
     if (sa) {
@@ -73,12 +73,12 @@ export default function (part) {
     macro('vd', {
       from: points.TL,
       to: points.BL,
-      x: points.TL.x + options.paperlessOffset
+      x: points.TL.x + options.paperlessOffset,
     })
     macro('hd', {
       from: points.BL,
       to: points.BR,
-      y: points.BR.y - options.paperlessOffset
+      y: points.BR.y - options.paperlessOffset,
     })
   }
 

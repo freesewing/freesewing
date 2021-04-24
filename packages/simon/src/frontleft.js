@@ -11,7 +11,7 @@ export default (part) => {
     macro('ld', {
       from: points.neck,
       to: points.shoulder,
-      d: 15 + sa
+      d: 15 + sa,
     })
   }
 

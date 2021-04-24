@@ -28,7 +28,7 @@ export default {
     'waistToKnee',
     'waistToSeat',
     'waistToUpperLeg',
-    'wrist'
+    'wrist',
   ],
   womenswear: [
     'ankle',
@@ -66,6 +66,6 @@ export default {
     'waistToSeat',
     'waistToUnderbust',
     'waistToUpperLeg',
-    'wrist'
-  ]
+    'wrist',
+  ],
 }

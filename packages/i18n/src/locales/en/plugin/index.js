@@ -21,7 +21,7 @@ let files = {
   cutonfold,
   grainline,
   scalebox,
-  title
+  title,
 }
 
 let messages = {}

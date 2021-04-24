@@ -34,19 +34,19 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 3,
-      title: 'backPocketInterfacing'
+      title: 'backPocketInterfacing',
     })
 
     if (paperless) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15
+        y: points.bottomLeft.y + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15
+        x: points.topRight.x + 15,
       })
     }
   }

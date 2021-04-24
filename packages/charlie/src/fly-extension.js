@@ -36,13 +36,13 @@ export default (part) => {
     macro('cutonfold', {
       from: points.flyTop,
       to: points.flyCorner,
-      grainline: true
+      grainline: true,
     })
     points.titleAnchor = points.flyCurveStart
     macro('title', {
       at: points.titleAnchor,
       nr: 10,
-      title: 'flyExtention'
+      title: 'flyExtention',
     })
     if (sa)
       paths.sa = paths.saBase

@@ -15,7 +15,7 @@ export default function (part) {
     macro('title', {
       at: points.armCenter,
       nr: 3,
-      title: 'topsleeve'
+      title: 'topsleeve',
     })
 
     if (sa) {
@@ -41,27 +41,27 @@ export default function (part) {
     macro('vd', {
       from: points.tsLeftEdge,
       to: points.top,
-      x: points.tsLeftEdge.x - sa - 15
+      x: points.tsLeftEdge.x - sa - 15,
     })
     macro('hd', {
       from: points.tsLeftEdge,
       to: points.top,
-      y: points.top.x - sa - 15
+      y: points.top.x - sa - 15,
     })
     macro('hd', {
       from: points.tsLeftEdge,
       to: points.backPitchPoint,
-      y: points.top.x - sa - 30
+      y: points.top.x - sa - 30,
     })
     macro('hd', {
       from: points.tsLeftEdge,
       to: points.tsRightEdge,
-      y: points.top.x - sa - 45
+      y: points.top.x - sa - 45,
     })
     macro('vd', {
       from: points.tsRightEdge,
       to: points.backPitchPoint,
-      x: points.tsRightEdge.x + sa + 15
+      x: points.tsRightEdge.x + sa + 15,
     })
   }
 

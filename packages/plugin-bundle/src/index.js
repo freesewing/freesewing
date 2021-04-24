@@ -21,7 +21,7 @@ let bundle = [
   scalebox,
   round,
   sprinkle,
-  measurements
+  measurements,
 ]
 
 function bundleHooks() {
@@ -53,5 +53,5 @@ export default {
   name: name,
   version: version,
   hooks: bundleHooks(),
-  macros: bundleMacros()
+  macros: bundleMacros(),
 }

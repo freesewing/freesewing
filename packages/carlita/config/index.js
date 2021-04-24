@@ -20,7 +20,7 @@ export default {
       'sleeveBend',
       'sleeveLengthBonus',
       'waistEase',
-      'seatEase'
+      'seatEase',
     ],
     advanced: [
       'backNeckCutout',
@@ -30,7 +30,7 @@ export default {
       'shoulderSlopeReduction',
       'sleevecapHeight',
       'sleevecapEase',
-      'contour'
+      'contour',
     ],
     pockets: [
       'pocketPlacementHorizontal',
@@ -46,10 +46,10 @@ export default {
       'innerPocketPlacement',
       'innerPocketWidth',
       'innerPocketDepth',
-      'innerPocketWeltHeight'
+      'innerPocketWeltHeight',
     ],
     style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length'],
-    collar: ['collarHeight', 'collarSpread', 'collarFlare']
+    collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [
     'biceps',
@@ -70,7 +70,7 @@ export default {
     // For breasts
     'highBust',
     'bustSpan',
-    'hpsToBust'
+    'hpsToBust',
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -95,7 +95,7 @@ export default {
     innerPocketBag: 'carltonFront',
     innerPocketTab: 'carltonFront',
     front: 'carltonFront',
-    side: 'front'
+    side: 'front',
   },
   inject: {
     bentBack: 'bentBase',
@@ -109,7 +109,7 @@ export default {
     collar: 'collarStand',
     pocketLining: 'pocket',
     front: 'carltonFront',
-    side: 'front'
+    side: 'front',
   },
   hide: [
     'bentBase',
@@ -118,7 +118,7 @@ export default {
     'bentSleeve',
     'bentTopSleeve',
     'bentUnderSleeve',
-    'carltonFront'
+    'carltonFront',
   ],
   parts: [
     'back',
@@ -136,7 +136,7 @@ export default {
     'chestPocketBag',
     'innerPocketWelt',
     'innerPocketBag',
-    'innerPocketTab'
+    'innerPocketTab',
   ],
   options: {
     // Constants
@@ -193,6 +193,6 @@ export default {
     collarFlare: { pct: 20, min: 0, max: 40 },
 
     // Carlita-specific options
-    contour: { pct: 50, min: 25, max: 75 }
-  }
+    contour: { pct: 50, min: 25, max: 75 },
+  },
 }

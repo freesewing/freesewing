@@ -11,7 +11,7 @@ export default (part) => {
     macro,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   points.leftNotch = new Point(store.get('backPocketWidth') / -2, 0)
@@ -54,7 +54,7 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 5,
-      title: 'backPocketBag'
+      title: 'backPocketBag',
     })
     points.logoAnchor = points.foldLeft.shiftFractionTowards(points.bottomRight, 0.5)
     snippets.logo = new Snippet('logo', points.logoAnchor)
@@ -62,7 +62,7 @@ export default (part) => {
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
@@ -71,27 +71,27 @@ export default (part) => {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15
+        y: points.bottomLeft.y + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.foldRight,
-        x: points.foldRight.x + 15
+        x: points.foldRight.x + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.rightNotch,
-        x: points.foldRight.x + 30
+        x: points.foldRight.x + 30,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.waistbandRight,
-        x: points.foldRight.x + 45
+        x: points.foldRight.x + 45,
       })
       macro('hd', {
         from: points.waistbandLeft,
         to: points.waistbandRight,
-        y: points.waistbandLeft.y - sa - 15
+        y: points.waistbandLeft.y - sa - 15,
       })
     }
   }

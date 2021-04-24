@@ -11,7 +11,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let neckOpening = store.get('neckOpeningLenFront') + store.get('neckOpeningLenBack')
@@ -86,7 +86,7 @@ export default function (part) {
     snippets.logo = new Snippet('logo', points.logo)
     macro('grainline', {
       from: points.shoulderNotch,
-      to: points.hoodTop
+      to: points.hoodTop,
     })
   }
 
@@ -107,41 +107,41 @@ export default function (part) {
 
     macro('pd', {
       path: neckSeam[0],
-      d: sa + 15
+      d: sa + 15,
     })
     macro('pd', {
       path: neckSeam[1],
-      d: sa + 15
+      d: sa + 15,
     })
     macro('pd', {
       path: centralSeam,
-      d: sa * -1 - 15
+      d: sa * -1 - 15,
     })
     macro('hd', {
       from: points.neckEdge,
       to: points.frontEdge,
-      y: points.frontEdge.y + sa + 30
+      y: points.frontEdge.y + sa + 30,
     })
     macro('hd', {
       from: centralSeam.edge('left'),
       to: points.frontEdge,
-      y: points.frontEdge.y + sa + 45
+      y: points.frontEdge.y + sa + 45,
     })
     let openingEdge = openingSeam.edge('left')
     macro('hd', {
       from: openingEdge,
       to: points.frontEdge,
-      y: openingEdge.y
+      y: openingEdge.y,
     })
     macro('vd', {
       from: points.frontEdge,
       to: points.hoodRim,
-      x: points.hoodRim.x + sa + 15
+      x: points.hoodRim.x + sa + 15,
     })
     macro('vd', {
       from: points.frontEdge,
       to: points.hoodTop,
-      x: points.hoodRim.x + sa + 30
+      x: points.hoodRim.x + sa + 30,
     })
   }
 

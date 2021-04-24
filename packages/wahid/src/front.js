@@ -15,7 +15,7 @@ export default (part) => {
     complete,
     sa,
     paperless,
-    store
+    store,
   } = part.shorthand()
 
   // Cleanup from Brian
@@ -108,7 +108,7 @@ export default (part) => {
       to: points.hem,
       via: points.closureBottom,
       radius,
-      prefix: 'round'
+      prefix: 'round',
     })
     points.lastButton = new Point(0, points.roundStart.y)
   } else {
@@ -197,7 +197,7 @@ export default (part) => {
       'pocketBottomMidRight',
       'pocketTopRight',
       'pocketBottomRight',
-      'dartEnd'
+      'dartEnd',
     ]
     for (let p of toRotate) {
       if (typeof points[p] !== 'undefined')
@@ -294,183 +294,183 @@ export default (part) => {
       macro('hd', {
         from: points.closureTop,
         to: points.neck,
-        y: points.neck.y - 15 - sa
+        y: points.neck.y - 15 - sa,
       })
       macro('hd', {
         from: points.closureTop,
         to: points.shoulder,
-        y: points.neck.y - 30 - sa
+        y: points.neck.y - 30 - sa,
       })
       macro('hd', {
         from: points.closureTop,
         to: points.armhole,
-        y: points.neck.y - 45 - sa
+        y: points.neck.y - 45 - sa,
       })
       macro('ld', {
         from: points.neck,
         to: points.shoulder,
-        d: 15 + sa
+        d: 15 + sa,
       })
       macro('ld', {
         from: points.neck,
         to: points.flbTop,
-        d: -15
+        d: -15,
       })
       macro('vd', {
         from: points.armhole,
         to: points.shoulder,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.armhole,
         to: points.neck,
-        x: points.armhole.x + 30 + sa
+        x: points.armhole.x + 30 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 15 + sa
+        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 15 + sa,
       })
       macro('vd', {
         from: options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight,
         to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 30 + sa
+        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 30 + sa,
       })
       macro('vd', {
         from: options.hemStyle === 'classic' ? points.splitDartHemLeft : points.dartHemLeft,
         to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 45 + sa
+        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 45 + sa,
       })
       macro('ld', {
         from: points.dartHemRight,
         to: points.hem,
-        d: 15
+        d: 15,
       })
       if (options.hemStyle === 'classic') {
         macro('hd', {
           from: points.closureBottom,
           to: points.hemTip,
-          y: points.hemTip.y + 15 + sa
+          y: points.hemTip.y + 15 + sa,
         })
         macro('hd', {
           from: points.closureBottom,
           to: points.splitDartHemLeft,
-          y: points.hemTip.y + 30 + sa
+          y: points.hemTip.y + 30 + sa,
         })
         macro('hd', {
           from: points.closureBottom,
           to: points.splitDartHemRight,
-          y: points.hemTip.y + 45 + sa
+          y: points.hemTip.y + 45 + sa,
         })
         macro('hd', {
           from: points.closureBottom,
           to: points.hem,
-          y: points.hemTip.y + 60 + sa
+          y: points.hemTip.y + 60 + sa,
         })
         macro('vd', {
           from: points.hemTip,
           to: points.closureBottom,
-          x: points.closureBottom.x - 15 - sa
+          x: points.closureBottom.x - 15 - sa,
         })
         macro('vd', {
           from: points.hemTip,
           to: points.pocketTopMidLeft,
-          x: points.closureBottom.x - 30 - sa
+          x: points.closureBottom.x - 30 - sa,
         })
         macro('vd', {
           from: points.hemTip,
           to: points.dartWaistLeft,
-          x: points.closureBottom.x - 45 - sa
+          x: points.closureBottom.x - 45 - sa,
         })
         macro('vd', {
           from: points.hemTip,
           to: points.closureTop,
-          x: points.closureBottom.x - 60 - sa
+          x: points.closureBottom.x - 60 - sa,
         })
       } else {
         macro('hd', {
           from: points.roundStart,
           to: points.roundEnd,
-          y: points.roundEnd.y + 15 + sa
+          y: points.roundEnd.y + 15 + sa,
         })
         macro('hd', {
           from: points.roundStart,
           to: points.dartHemLeft,
-          y: points.roundEnd.y + 30 + sa
+          y: points.roundEnd.y + 30 + sa,
         })
         macro('hd', {
           from: points.roundStart,
           to: points.dartHemRight,
-          y: points.roundEnd.y + 45 + sa
+          y: points.roundEnd.y + 45 + sa,
         })
         macro('hd', {
           from: points.roundStart,
           to: points.hem,
-          y: points.roundEnd.y + 60 + sa
+          y: points.roundEnd.y + 60 + sa,
         })
         macro('vd', {
           from: points.roundEnd,
           to: points.roundStart,
-          x: points.roundStart.x - 15 - sa
+          x: points.roundStart.x - 15 - sa,
         })
         macro('vd', {
           from: points.roundEnd,
           to: points.pocketTopMidLeft,
-          x: points.roundStart.x - 30 - sa
+          x: points.roundStart.x - 30 - sa,
         })
         macro('vd', {
           from: points.roundEnd,
           to: points.dartWaistLeft,
-          x: points.roundStart.x - 45 - sa
+          x: points.roundStart.x - 45 - sa,
         })
         macro('vd', {
           from: points.roundEnd,
           to: points.closureTop,
-          x: points.roundStart.x - 60 - sa
+          x: points.roundStart.x - 60 - sa,
         })
       }
       macro('vd', {
         from: points.closureTop,
         to: points.neck,
-        x: points.closureTop.x - 15 - sa
+        x: points.closureTop.x - 15 - sa,
       })
       macro('vd', {
         from: points.button2,
         to: points.button1,
-        x: points.button1.x + 15
+        x: points.button1.x + 15,
       })
       macro('hd', {
         from: points.closureTop,
         to: points.button2,
-        y: points.button2.y + 15
+        y: points.button2.y + 15,
       })
       macro('ld', {
         from: points.dartWaistLeft,
-        to: points.dartWaistRight
+        to: points.dartWaistRight,
       })
       macro('ld', {
         from: points.dartHipLeft,
-        to: points.dartHipRight
+        to: points.dartHipRight,
       })
       macro('ld', {
         from: points.pocketTopLeft,
         to: points.pocketTopMidLeft,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.pocketTopMidRight,
         to: points.pocketTopRight,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.pocketBottomRight,
         to: points.pocketTopRight,
-        d: -15
+        d: -15,
       })
       macro('vd', {
         from: points.pocketTopMidLeft,
         to: points.dartTop,
-        x: points.closureTop.x - 30 - sa
+        x: points.closureTop.x - 30 - sa,
       })
     }
   }

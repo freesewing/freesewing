@@ -13,7 +13,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   const c = 0.551915024494 // circle constant
@@ -27,7 +27,7 @@ export default function (part) {
     ['#5', 6.2],
     ['#6', 7],
     ['#8', 8],
-    ['#10', 10.6]
+    ['#10', 10.6],
   ])
 
   const w = options.width * options.size
@@ -146,7 +146,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'SidePanel'
+      title: 'SidePanel',
     })
 
     points.__titleNr.attr('data-text-class', 'center')
@@ -173,37 +173,37 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeftU,
       to: points.bottomRightU,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('hd', {
       from: points.topZipperPanelLeft,
       to: points.topZipperPanelRight,
-      y: points.topZipperPanelRight.y + 15
+      y: points.topZipperPanelRight.y + 15,
     })
     macro('vd', {
       from: points.bottomRightL,
       to: points.topMiddle,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
     macro('vd', {
       from: points.bottomRightL,
       to: points.shoulderRight,
-      x: points.bottomRightL.x
+      x: points.bottomRightL.x,
     })
     macro('ld', {
       from: points.topCenter,
       to: points.topCircleLeft,
-      noStartMarker: true
+      noStartMarker: true,
     })
     macro('ld', {
       from: points.topCenter,
       to: points.topCircleRight,
-      noStartMarker: true
+      noStartMarker: true,
     })
     macro('ld', {
       from: points.topCenter,
       to: points.topMiddle,
-      noStartMarker: true
+      noStartMarker: true,
     })
     // macro('pd', {
     //   path: pSidesAndTop,

@@ -33,7 +33,7 @@ export default (part) => {
     utils,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   // Helper object holding the Titan side seam path
@@ -156,7 +156,7 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 2,
-      title: 'front'
+      title: 'front',
     })
     snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.666))
     points.topPleat = utils.beamsIntersect(
@@ -180,8 +180,8 @@ export default (part) => {
         'topPleat',
         'grainlineBottom',
         'flyBottom',
-        'flyExtensionBottom'
-      ]
+        'flyExtensionBottom',
+      ],
     })
     let Jseam = new Path()
       .move(points.flyCurveStart)
@@ -208,18 +208,18 @@ export default (part) => {
       anchor: points.slantTopNotch,
       angle: points.slantTopNotch.angle(points.slantCurveStart) + 90,
       length: sa ? sa / 1.5 : 7.5,
-      suffix: 'slantTop'
+      suffix: 'slantTop',
     })
     macro('bartack', {
       anchor: points.slantBottomNotch,
       length: sa ? sa / 2 : 5,
-      suffix: 'slantBottom'
+      suffix: 'slantBottom',
     })
     macro('bartackFractionAlong', {
       path: Jseam.reverse(),
       start: 0,
       end: 0.1,
-      suffix: 'stom'
+      suffix: 'stom',
     })
 
     if (sa) {
@@ -244,87 +244,87 @@ export default (part) => {
       macro('hd', {
         from: points.grainlineBottom,
         to: points.floorIn,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floorOut,
         to: points.grainlineBottom,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floorOut,
         to: points.floorIn,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
 
       let y = points.styleWaistIn.y - sa
       macro('hd', {
         from: points.grainlineFrom,
         to: points.flyTop,
-        y: y - 15
+        y: y - 15,
       })
       macro('hd', {
         from: points.grainlineFrom,
         to: points.styleWaistIn,
-        y: y - 30
+        y: y - 30,
       })
       macro('hd', {
         from: points.grainlineFrom,
         to: points.flyBottom,
-        y: y - 45
+        y: y - 45,
       })
       macro('hd', {
         from: points.grainlineFrom,
         to: points.flyExtensionBottom,
-        y: y - 60
+        y: y - 60,
       })
       macro('hd', {
         from: points.grainlineFrom,
         to: points.fork,
-        y: y - 75
+        y: y - 75,
       })
 
       macro('hd', {
         from: points.pocketFacingTop,
         to: points.grainlineFrom,
-        y: y - 15
+        y: y - 15,
       })
       macro('hd', {
         from: points.slantTop,
         to: points.grainlineFrom,
-        y: y - 30
+        y: y - 30,
       })
       macro('hd', {
         from: points.slantBottomNotch,
         to: points.grainlineFrom,
-        y: y - 45
+        y: y - 45,
       })
 
       let x = points.fork.x + sa
       macro('vd', {
         from: points.floorIn,
         to: points.fork,
-        x: x + 15
+        x: x + 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.flyExtensionBottom,
-        x: x + 15
+        x: x + 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.flyBottom,
-        x: x + 30
+        x: x + 30,
       })
       macro('vd', {
         from: points.fork,
         to: points.slantTop,
-        x: x + 45
+        x: x + 45,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: x + 60
+        x: x + 60,
       })
     }
   }

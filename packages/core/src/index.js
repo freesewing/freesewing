@@ -15,5 +15,5 @@ export default {
   Snippet,
   utils,
   patterns: {},
-  plugins: {}
+  plugins: {},
 }

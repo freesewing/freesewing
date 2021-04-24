@@ -10,7 +10,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Give points their original names
@@ -39,7 +39,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: '1b',
-      title: 'side'
+      title: 'side',
     })
 
     points.logo = points.psHem.shiftFractionTowards(points.seat, 0.5)
@@ -49,7 +49,7 @@ export default function (part) {
     points.grainlineTo = new Point(points.grainlineFrom.x, points.armholePitchCp1.y)
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
     snippets.bust = new Snippet('notch', points.bustPoint)
 
@@ -66,56 +66,56 @@ export default function (part) {
       macro('vd', {
         from: points.psHem,
         to: points.psWaist,
-        x: points.psWaist.x - sa - 15
+        x: points.psWaist.x - sa - 15,
       })
       macro('vd', {
         from: points.psHem,
         to: points.bustPoint,
-        x: points.bustPoint.x - sa - 15
+        x: points.bustPoint.x - sa - 15,
       })
       macro('vd', {
         from: points.hem,
         to: points.seat,
-        x: points.hem.x + sa + 15
+        x: points.hem.x + sa + 15,
       })
       macro('vd', {
         from: points.hem,
         to: points.waist,
-        x: points.hem.x + sa + 30
+        x: points.hem.x + sa + 30,
       })
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: points.hem.x + sa + 45
+        x: points.hem.x + sa + 45,
       })
       macro('vd', {
         from: points.hem,
         to: points.armholePitch,
-        x: points.hem.x + sa + 60
+        x: points.hem.x + sa + 60,
       })
       macro('hd', {
         from: points.psWaist,
-        to: points.waist
+        to: points.waist,
       })
       macro('hd', {
         from: points.bustPoint,
         to: points.waist,
-        y: points.bustPoint.y
+        y: points.bustPoint.y,
       })
       macro('hd', {
         from: points.bustPoint,
         to: points.armholePitch,
-        y: points.armholePitch.y - sa - 15
+        y: points.armholePitch.y - sa - 15,
       })
       macro('hd', {
         from: points.bustPoint,
         to: points.armhole,
-        y: points.armholePitch.y - sa - 30
+        y: points.armholePitch.y - sa - 30,
       })
       macro('hd', {
         from: points.psHem,
         to: points.hem,
-        y: points.hem.y + 3 * sa + 15
+        y: points.hem.y + 3 * sa + 15,
       })
     }
   }

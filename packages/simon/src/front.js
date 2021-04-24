@@ -12,7 +12,7 @@ export default (part) => {
     paths,
     complete,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   // Populare store with data we need
@@ -77,7 +77,7 @@ export default (part) => {
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
@@ -105,12 +105,12 @@ export default (part) => {
     delete paths.cutonfold
     macro('grainline', {
       from: points.cfHem.shift(0, 45),
-      to: points.cfNeck.shift(0, 45)
+      to: points.cfNeck.shift(0, 45),
     })
     macro('title', { at: points.title, nr: 'X', title: 'front' })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole']
+      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
     })
 
     if (sa) {

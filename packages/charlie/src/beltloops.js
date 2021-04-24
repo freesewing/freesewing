@@ -40,13 +40,13 @@ export default (part) => {
       nr: 12,
       title: 'beltLoops',
       rotation: 90,
-      scale: 0.7
+      scale: 0.7,
     })
     points.grainlineTop = new Point(points.topRight.x / 2, 0)
     points.grainlineBottom = new Point(points.topRight.x / 2, length)
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
     for (let i = 1; i < count; i++) {
       paths[`cut${i}`] = new Path()
@@ -59,12 +59,12 @@ export default (part) => {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15
+        y: points.bottomLeft.y + sa + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.bottomRight.x + sa + 15
+        x: points.bottomRight.x + sa + 15,
       })
     }
   }

@@ -13,13 +13,13 @@ export default (part) => {
   macro('ld', {
     from: points.C,
     to: points.A,
-    d: -10
+    d: -10,
   })
 
   macro('ld', {
     from: points.B,
     to: points.A,
-    d: 20
+    d: 20,
   })
 
   return part

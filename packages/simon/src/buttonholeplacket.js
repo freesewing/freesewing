@@ -13,7 +13,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   if (!options.seperateButtonholePlacket || options.buttonholePlacketStyle !== 'classic') {
@@ -106,7 +106,7 @@ export default (part) => {
     points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
 
     // Title
@@ -116,7 +116,7 @@ export default (part) => {
       nr: '2b',
       title: 'buttonholePlacket',
       scale: 0.75,
-      rotation: -90
+      rotation: -90,
     })
 
     // Logo
@@ -147,13 +147,13 @@ export default (part) => {
       'placketCfHem',
       'placketBottomInnerEdgeOver',
       'placketBottomInnerEdgeFold',
-      'placketBottomInnerEdgeUnder'
+      'placketBottomInnerEdgeUnder',
     ]) {
       offset += 15
       macro('hd', {
         from: points.placketBottomEdge,
         to: points[pid],
-        y: points.placketBottomEdge.y + offset + 3 * sa
+        y: points.placketBottomEdge.y + offset + 3 * sa,
       })
     }
     points.button0 = points.placketTopEdge
@@ -163,13 +163,13 @@ export default (part) => {
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
-        x: points.placketTopEdge.x - 15
+        x: points.placketTopEdge.x - 15,
       })
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30
+      x: points.placketTopEdge.x - 30,
     })
   }
 

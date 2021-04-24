@@ -1,13 +1,19 @@
 2.15.1:
-  date: 2021-04-20
+  date: 2021-04-24
 
   Added:
+    charlie:
+      - Added a curved waistband option
     simon:
       - Added some dimensions to clarify the X value of shoulder/armhole points
+
   Fixed:
     charlie:
       - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options
         from being zero
+    core:
+      - Fixed bug in the dependency resolved when dependecies are passed as a string
+        See [#971](https://github.com/freesewing/freesewing/issues/971)
 
 2.15.0:
   date: 2021-04-15

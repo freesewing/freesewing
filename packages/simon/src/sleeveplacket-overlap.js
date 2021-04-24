@@ -11,7 +11,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let width = options.sleevePlacketWidth
@@ -81,7 +81,7 @@ export default (part) => {
       at: points.title,
       nr: 10,
       title: 'sleevePlacketOverlap',
-      scale: 0.6
+      scale: 0.6,
     })
 
     // Button
@@ -103,62 +103,62 @@ export default (part) => {
     macro('hd', {
       from: points.bottomLeft,
       to: points.cutBottom,
-      y: points.bottomLeft.y + 15
+      y: points.bottomLeft.y + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.zag,
-      y: points.bottomLeft.y + 30
+      y: points.bottomLeft.y + 30,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.zig,
-      y: points.bottomLeft.y + 45
+      y: points.bottomLeft.y + 45,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.cutRight,
-      y: points.bottomLeft.y + 60
+      y: points.bottomLeft.y + 60,
     })
     macro('vd', {
       from: points.fold1Right,
       to: points.topRight,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
     macro('vd', {
       from: points.boxTip,
       to: points.topRight,
-      x: points.topRight.x + 30
+      x: points.topRight.x + 30,
     })
     macro('vd', {
       from: points.fold2Right,
       to: points.topRight,
-      x: points.topRight.x + 45
+      x: points.topRight.x + 45,
     })
     macro('vd', {
       from: points.cutRight,
       to: points.topRight,
-      x: points.topRight.x + 60
+      x: points.topRight.x + 60,
     })
     macro('vd', {
       from: points.zag,
       to: points.topRight,
-      x: points.topRight.x + 75
+      x: points.topRight.x + 75,
     })
     macro('vd', {
       from: points.cutBottom,
       to: points.topRight,
-      x: points.topRight.x + 90
+      x: points.topRight.x + 90,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.boxTopLeft,
-      y: points.topLeft.y - 15
+      y: points.topLeft.y - 15,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.boxTopRight,
-      y: points.topLeft.y - 30
+      y: points.topLeft.y - 30,
     })
   }
 

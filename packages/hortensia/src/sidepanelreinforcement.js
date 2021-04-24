@@ -34,7 +34,7 @@ export default function (part) {
       at: points.title,
       nr: 4,
       title: 'SidePanelReinforcement',
-      scale: 0.25
+      scale: 0.25,
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -50,12 +50,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeftU,
       to: points.bottomRightU,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomRightL,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

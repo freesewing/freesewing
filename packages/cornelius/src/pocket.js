@@ -9,7 +9,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let halfInch = store.get('halfInch')
@@ -77,7 +77,7 @@ export default function (part) {
     macro('title', {
       nr: 2,
       at: points.title,
-      title: 'Pocket'
+      title: 'Pocket',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -93,62 +93,62 @@ export default function (part) {
     macro('hd', {
       from: points.mpocketFacingBR,
       to: points.mpocketWaist,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.mpocketWaist,
       to: points.pocketTL,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pocketTL,
       to: points.pocketWaist,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pocketWaist,
       to: points.pU,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pU,
       to: points.pocketFacingBR,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('hd', {
       from: points.pocketWaist,
       to: points.pocketFacingTL,
-      y: points.pU.y - sa - 15
+      y: points.pU.y - sa - 15,
     })
     macro('vd', {
       from: points.pU,
       to: points.pocketSide,
-      x: points.pocketSide.x + sa + 15
+      x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
       from: points.pocketTL,
       to: points.pocketBL,
-      x: points.pocketTL.x + 15
+      x: points.pocketTL.x + 15,
     })
     macro('vd', {
       from: points.pocketSide,
       to: points.mpocketWaist,
-      x: points.pocketSide.x + sa + 15
+      x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
       from: points.pocketSide,
       to: points.pocketFacingBR,
-      x: points.pocketSide.x + sa + 15
+      x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
       from: points.mpocketWaist,
       to: points.mpocketSide,
-      x: points.mpocketSide.x - sa - 15
+      x: points.mpocketSide.x - sa - 15,
     })
     macro('vd', {
       from: points.mpocketSide,
       to: points.mpocketFacingBR,
-      x: points.mpocketSide.x - sa - 15
+      x: points.mpocketSide.x - sa - 15,
     })
   }
 

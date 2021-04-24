@@ -142,7 +142,7 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
   let curveWithDart = {
     left: curveLeftOfDart,
     dart: dart,
-    right: curveRightOfDart
+    right: curveRightOfDart,
   }
 
   /*

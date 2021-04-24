@@ -14,12 +14,12 @@ export default (part) => {
   macro('mirror', {
     mirror: [points.b, points.d],
     points: [points.mid],
-    paths: [paths.a]
+    paths: [paths.a],
   })
 
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['mid', 'mirroredMid']
+    on: ['mid', 'mirroredMid'],
   })
 
   return box(part, 100, 40)

@@ -11,7 +11,7 @@ export default function (part) {
     snippets,
     Snippet,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Design pattern here
@@ -49,12 +49,12 @@ export default function (part) {
       macro('hd', {
         from: points.bottomFlipped,
         to: points.bottom,
-        y: points.bottom.y + 15 + sa
+        y: points.bottom.y + 15 + sa,
       })
       macro('vd', {
         from: points.bottomFlipped,
         to: points.top,
-        x: points.bottomFlipped.x - 15 - sa
+        x: points.bottomFlipped.x - 15 - sa,
       })
     }
   }

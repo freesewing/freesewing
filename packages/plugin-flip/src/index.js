@@ -7,7 +7,7 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-flip') === false)
         svg.attributes.set('freesewing:plugin-flip', version)
-    }
+    },
   },
   macros: {
     flip: function () {
@@ -46,6 +46,6 @@ export default {
         if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
         if (wasFlipped !== flipped) this.snippets[id].anchor.x = this.snippets[id].anchor.x * -1
       }
-    }
-  }
+    },
+  },
 }

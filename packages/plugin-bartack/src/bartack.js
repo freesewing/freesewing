@@ -26,7 +26,7 @@ const getPoints = (path, so) => {
 
   let points = {
     path1: [path1.start()],
-    path2: [path2.start()]
+    path2: [path2.start()],
   }
   let steps = Math.ceil((len / so.width) * so.density)
   for (let i = 1; i < steps; i++) {
@@ -54,7 +54,7 @@ export default function bartack(so, self) {
     start: 0,
     end: 1,
     bartackAlong: false,
-    bartackFractionAlong: false
+    bartackFractionAlong: false,
   }
   so = { ...defaults, ...so }
 

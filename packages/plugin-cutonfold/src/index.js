@@ -10,7 +10,7 @@ export default {
         svg.attributes.set('freesewing:plugin-cutonfold', version)
         svg.defs += markers
       }
-    }
+    },
   },
   macros: {
     cutonfold: function (so) {
@@ -27,7 +27,7 @@ export default {
         offset: 15,
         margin: 5,
         prefix: '',
-        ...so
+        ...so,
       }
       points['cutonfoldFrom' + so.prefix] = so.from.shiftFractionTowards(so.to, so.margin / 100)
       points['cutonfoldTo' + so.prefix] = so.to.shiftFractionTowards(so.from, so.margin / 100)
@@ -48,6 +48,6 @@ export default {
         .attr('marker-end', 'url(#cutonfoldTo)')
         .attr('data-text', text)
         .attr('data-text-class', 'center fill-note')
-    }
-  }
+    },
+  },
 }

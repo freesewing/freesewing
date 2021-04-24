@@ -12,7 +12,7 @@ export default function (part) {
     paperless,
     sa,
     options,
-    measurements
+    measurements,
   } = part.shorthand()
 
   // Clear paths from Brian

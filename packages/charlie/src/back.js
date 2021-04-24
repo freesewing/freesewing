@@ -41,7 +41,7 @@ export default (part) => {
     Snippet,
     sa,
     raise,
-    units
+    units,
   } = part.shorthand()
 
   // Mark back pocket
@@ -142,7 +142,7 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 1,
-      title: 'back'
+      title: 'back',
     })
     snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.5))
     points.slantBottomNotch = new Path()
@@ -156,20 +156,20 @@ export default (part) => {
     )
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch']
+      on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch'],
     })
 
     macro('bartack', {
       anchor: points.slantTopNotch,
       angle: points.slantTopNotch.angle(points.slantBottomNotch) - 90,
       length: sa ? sa / 2 : 5,
-      suffix: 'slantTop'
+      suffix: 'slantTop',
     })
     macro('bartack', {
       anchor: points.slantBottomNotch,
       length: sa ? sa / 2 : 5,
       angle: 180,
-      suffix: 'slantBottom'
+      suffix: 'slantBottom',
     })
 
     if (sa) {
@@ -198,101 +198,101 @@ export default (part) => {
       macro('hd', {
         from: points.floorIn,
         to: points.grainlineBottom,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.grainlineBottom,
         to: points.floorOut,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floorIn,
         to: points.floorOut,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
 
       let y = points.floorIn.y + sa * 6
       macro('hd', {
         from: points.fork,
         to: points.grainlineBottom,
-        y: y + 15
+        y: y + 15,
       })
       macro('hd', {
         from: points.grainlineBottom,
         to: points.slantBottomNotch,
-        y: y + 15
+        y: y + 15,
       })
       macro('hd', {
         from: points.grainlineBottom,
         to: points.slantOut,
-        y: y + 30
+        y: y + 30,
       })
 
       y = points.styleWaistIn.y - sa
       macro('hd', {
         from: points.styleWaistIn,
         to: points.grainlineTop,
-        y: y - 15
+        y: y - 15,
       })
       macro('hd', {
         from: points.fork,
         to: points.grainlineTop,
-        y: y - 30
+        y: y - 30,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.waistPocketCenter,
-        y: y - 15
+        y: y - 15,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.slantOut,
-        y: y - 30
+        y: y - 30,
       })
 
       macro('ld', {
         from: points.pocketLeft,
         to: points.pocketRight,
-        d: -15
+        d: -15,
       })
       macro('ld', {
         from: points.backDartLeft,
         to: points.backDartRight,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.pocketCenter,
         to: points.waistPocketCenter,
-        d: 25
+        d: 25,
       })
 
       let x = points.fork.x - sa
       macro('vd', {
         from: points.fork,
         to: points.pocketCenter,
-        x: x - 15
+        x: x - 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.waistPocketCenter,
-        x: x - 30
+        x: x - 30,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: x - 45
+        x: x - 45,
       })
 
       x = points.slantOut.x + sa
       macro('vd', {
         from: points.floorOut,
         to: points.slantBottomNotch,
-        x: x + 15
+        x: x + 15,
       })
       macro('vd', {
         from: points.floorOut,
         to: points.slantOut,
-        x: x + 30
+        x: x + 30,
       })
     }
   }

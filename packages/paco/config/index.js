@@ -23,8 +23,8 @@ export default {
       'crotchSeamCurveAngle',
       'grainlinePosition',
       'legBalance',
-      'waistBalance'
-    ]
+      'waistBalance',
+    ],
   },
   measurements: [
     'crossSeam',
@@ -39,7 +39,7 @@ export default {
     'waistToKnee',
     'waistToHips',
     'waistToSeat',
-    'waistToUpperLeg'
+    'waistToUpperLeg',
   ],
   parts: [
     'back',
@@ -49,7 +49,7 @@ export default {
     'pocketBagFront',
     'pocketBagBack',
     'pocketWelt',
-    'pocketWeltInterfacing'
+    'pocketWeltInterfacing',
   ],
   inject: {
     back: 'titanBack',
@@ -57,14 +57,14 @@ export default {
     pocketBagFront: 'front',
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
-    pocketWeltInterfacing: 'pocketWelt'
+    pocketWeltInterfacing: 'pocketWelt',
   },
   dependencies: {
     front: 'back',
     pocketBagFront: 'front',
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
-    pocketWeltInterfacing: 'pocketWelt'
+    pocketWeltInterfacing: 'pocketWelt',
   },
   hide: ['titanBack', 'titanFront'],
   options: {
@@ -113,6 +113,6 @@ export default {
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
     crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
-    grainlinePosition: { pct: 45, min: 30, max: 60 }
-  }
+    grainlinePosition: { pct: 45, min: 30, max: 60 },
+  },
 }

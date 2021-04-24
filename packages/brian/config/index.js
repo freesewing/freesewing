@@ -17,7 +17,7 @@ export default {
       'cuffEase',
       'shoulderEase',
       'lengthBonus',
-      'sleeveLengthBonus'
+      'sleeveLengthBonus',
     ],
     advanced: [
       'acrossBackFactor',
@@ -46,10 +46,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -60,18 +60,18 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     back: 'base',
     front: 'back',
     sleevecap: 'front',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   inject: {
     back: 'base',
     front: 'back',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   hide: ['base', 'sleevecap'],
   options: {
@@ -112,6 +112,6 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
-  }
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+  },
 }

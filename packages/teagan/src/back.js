@@ -11,7 +11,7 @@ export default function (part) {
     paperless,
     macro,
     utils,
-    measurements
+    measurements,
   } = part.shorthand()
 
   // Adjust neckline
@@ -57,7 +57,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfHem,
-      grainline: true
+      grainline: true,
     })
 
     macro('title', { at: points.title, nr: 2, title: 'back' })
@@ -82,7 +82,7 @@ export default function (part) {
     macro('vd', {
       from: points.cbHem,
       to: points.cbNeck,
-      x: points.cbHem.x - sa - 15
+      x: points.cbHem.x - sa - 15,
     })
   }
 

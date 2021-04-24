@@ -14,7 +14,7 @@ export default function (part) {
     macro,
     utils,
     units,
-    measurements
+    measurements,
   } = part.shorthand()
 
   // Lower back neck a bit
@@ -88,7 +88,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfHem,
-      grainline: true
+      grainline: true,
     })
 
     macro('title', { at: points.title, nr: 2, title: 'back' })
@@ -102,7 +102,7 @@ export default function (part) {
     macro('vd', {
       from: points.cbHem,
       to: points.cbNeck,
-      x: points.cbHem.x - sa - 15
+      x: points.cbHem.x - sa - 15,
     })
   }
 

@@ -16,7 +16,7 @@ export default function Pattern(config = { options: {} }) {
     info: [],
     warning: [],
     error: [],
-    debug: []
+    debug: [],
   }
   const events = this.events
   this.raise = {
@@ -31,7 +31,7 @@ export default function Pattern(config = { options: {} }) {
     },
     debug: function (data) {
       events.debug.push(data)
-    }
+    },
   }
   this.raise.debug(
     `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
@@ -60,7 +60,7 @@ export default function Pattern(config = { options: {} }) {
     margin: 2,
     layout: true,
     debug: true,
-    options: {}
+    options: {},
   }
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
@@ -100,7 +100,7 @@ export default function Pattern(config = { options: {} }) {
     store: this.store,
     macros: this.macros,
     events: this.events,
-    raise: this.raise
+    raise: this.raise,
   }
 
   // Part closure
@@ -130,7 +130,7 @@ Pattern.prototype.apply = function (settings) {
     } else if (typeof settings[key] === 'object') {
       this.settings[key] = {
         ...this.settings[key],
-        ...settings[key]
+        ...settings[key],
       }
     } else this.settings[key] = settings[key]
   }
@@ -172,7 +172,7 @@ Pattern.prototype.draft = function () {
       } catch (err) {
         this.raise.error([
           `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
-          err
+          err,
         ])
       }
     }
@@ -661,7 +661,7 @@ Pattern.prototype.getRenderProps = function () {
     debug: this.events.debug,
     info: this.events.info,
     warning: this.events.warning,
-    error: this.events.error
+    error: this.events.error,
   }
   props.parts = {}
   for (let p in this.parts) {
@@ -674,7 +674,7 @@ Pattern.prototype.getRenderProps = function () {
         height: this.parts[p].height,
         width: this.parts[p].width,
         bottomRight: this.parts[p].bottomRight,
-        topLeft: this.parts[p].topLeft
+        topLeft: this.parts[p].topLeft,
       }
     }
   }

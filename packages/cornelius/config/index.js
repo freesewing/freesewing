@@ -12,7 +12,7 @@ export default {
   optionGroups: {
     fit: ['fullness', 'waistReduction'],
     style: ['waistbandBelowWaist', 'cuffStyle', 'cuffWidth', 'ventLength'],
-    advanced: ['bandBelowKnee', 'kneeToBelow']
+    advanced: ['bandBelowKnee', 'kneeToBelow'],
   },
   parts: [
     'frontpoints',
@@ -22,13 +22,13 @@ export default {
     'legband',
     'legbandkeystone',
     'pocket',
-    'pocketfacing'
+    'pocketfacing',
   ],
   inject: {
     front: 'frontpoints',
     back: 'frontpoints',
     pocket: 'frontpoints',
-    pocketfacing: 'frontpoints'
+    pocketfacing: 'frontpoints',
   },
   measurements: [
     'waist',
@@ -38,13 +38,13 @@ export default {
     'waistToKnee',
     'waistToHips',
     'waistToFloor',
-    'knee'
+    'knee',
   ],
   dependencies: {
     back: 'front',
     legband: ['back', 'front'],
     legbandkeystone: ['back', 'front'],
-    waistband: ['back', 'front']
+    waistband: ['back', 'front'],
   },
   hide: ['frontpoints'],
   options: {
@@ -68,6 +68,6 @@ export default {
     waistReduction: { pct: 1, min: -2, max: 10 },
     cuffWidth: { pct: 0, min: -50, max: 150 },
     cuffStyle: { dflt: 'elegant', list: ['traditional', 'elegant', 'keystone'] },
-    bandBelowKnee: { pct: 25, min: 15, max: 50 }
-  }
+    bandBelowKnee: { pct: 25, min: 15, max: 50 },
+  },
 }

@@ -18,31 +18,31 @@ export default (part) => {
   macro('vd', {
     from: points.A,
     to: points.B,
-    x: points.A.x - 15
+    x: points.A.x - 15,
   })
 
   macro('hd', {
     from: points.B,
     to: points.C,
-    y: points.B.y + 15
+    y: points.B.y + 15,
   })
 
   macro('ld', {
     from: points.C,
     to: points.D,
-    d: -15
+    d: -15,
   })
 
   macro('ld', {
     from: points.C,
     to: points.D,
     d: -30,
-    text: 'Custom text'
+    text: 'Custom text',
   })
 
   macro('pd', {
     path: new Path().move(points.A).curve(points.A, points.DCp1, points.D),
-    d: -15
+    d: -15,
   })
 
   return part

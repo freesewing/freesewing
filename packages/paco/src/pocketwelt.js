@@ -9,7 +9,7 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Don't bother of we're not drafting back pockets
@@ -42,15 +42,15 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 7,
-      title: 'pocketWelt'
+      title: 'pocketWelt',
     })
     macro('grainline', {
       from: points.topLeft.shift(0, 15),
-      to: points.bottomLeft.shift(0, 15)
+      to: points.bottomLeft.shift(0, 15),
     })
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
+      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
     })
 
     if (sa) {
@@ -61,17 +61,17 @@ export default function (part) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15 + sa
+        y: points.bottomLeft.y + 15 + sa,
       })
       macro('hd', {
         from: points.pocketLeft,
         to: points.pocketRight,
-        y: points.topLeft.y - 15 - sa
+        y: points.topLeft.y - 15 - sa,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topLeft,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
     }
   }

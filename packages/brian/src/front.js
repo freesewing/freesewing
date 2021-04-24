@@ -14,7 +14,7 @@ export default (part) => {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Cut arm a bit deeper at the front
@@ -49,7 +49,7 @@ export default (part) => {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfHips,
-      grainline: true
+      grainline: true,
     })
     macro('title', { at: points.title, nr: 1, title: 'front' })
     snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
@@ -70,27 +70,27 @@ export default (part) => {
     macro('hd', {
       from: points.cfHips,
       to: points.hips,
-      y: points.hips.y + sa + 15
+      y: points.hips.y + sa + 15,
     })
     macro('vd', {
       from: points.cfHips,
       to: points.cfWaist,
-      x: points.cfHips.x - sa - 15
+      x: points.cfHips.x - sa - 15,
     })
     macro('vd', {
       from: points.cfHips,
       to: points.cfNeck,
-      x: points.cfHips.x - sa - 30
+      x: points.cfHips.x - sa - 30,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.neck,
-      y: points.neck.y - sa - 15
+      y: points.neck.y - sa - 15,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.shoulder,
-      y: points.neck.y - sa - 30
+      y: points.neck.y - sa - 30,
     })
   }
 

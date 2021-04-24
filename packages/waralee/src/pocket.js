@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let pocketDepth =
@@ -41,13 +41,13 @@ export default function (part) {
       from: points.topLeft,
       to: points.bottomLeft,
       margin: 5,
-      offset: 10
+      offset: 10,
     })
     points.title = points.topLeft.shift(270, 75).shift(0, 50)
     macro('title', {
       nr: 3,
       at: points.title,
-      title: 'pocket'
+      title: 'pocket',
     })
 
     points.logo = points.title.shift(270, 75)
@@ -78,27 +78,27 @@ export default function (part) {
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y + 15
+      y: points.topLeft.y + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y
+      y: points.bottomRight.y,
     })
     macro('vd', {
       from: points.topLeft,
       to: points.bottomLeft,
-      x: points.topLeft.x + 15
+      x: points.topLeft.x + 15,
     })
     macro('vd', {
       from: points.topRight,
       to: points.bottomRight,
-      x: points.bottomRight.x
+      x: points.bottomRight.x,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.bottomLeft,
-      x: points.bottomRight.x
+      x: points.bottomRight.x,
     })
   }
 

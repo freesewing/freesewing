@@ -15,7 +15,7 @@ export default function (so) {
       '__scaleboxText',
       '__scaleboxLink',
       '__scaleboxMetric',
-      '__scaleboxImperial'
+      '__scaleboxImperial',
     ])
       delete this.points[id]
     for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete this.paths[id]
@@ -53,7 +53,7 @@ export default function (so) {
       '__scaleboxText',
       '__scaleboxLink',
       '__scaleboxMetric',
-      '__scaleboxImperial'
+      '__scaleboxImperial',
     ]
     for (let pid of points) this.points[pid] = this.points[pid].rotate(so.rotate, so.at)
     for (let pid of points.slice(8)) {

@@ -11,7 +11,7 @@ export default (part) => {
     snippets,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   points.anchor = points.hps.clone()
@@ -34,7 +34,7 @@ export default (part) => {
     macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbHips,
-      grainline: true
+      grainline: true,
     })
 
     macro('title', { at: points.title, nr: 2, title: 'back' })
@@ -56,27 +56,27 @@ export default (part) => {
     macro('hd', {
       from: points.cbHips,
       to: points.hips,
-      y: points.hips.y + sa + 15
+      y: points.hips.y + sa + 15,
     })
     macro('vd', {
       from: points.cbHips,
       to: points.cbWaist,
-      x: points.cbHips.x - sa - 15
+      x: points.cbHips.x - sa - 15,
     })
     macro('vd', {
       from: points.cbHips,
       to: points.cbNeck,
-      x: points.cbHips.x - sa - 30
+      x: points.cbHips.x - sa - 30,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.neck,
-      y: points.neck.y - sa - 15
+      y: points.neck.y - sa - 15,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.shoulder,
-      y: points.neck.y - sa - 30
+      y: points.neck.y - sa - 30,
     })
   }
 

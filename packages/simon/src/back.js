@@ -16,7 +16,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   // Populare store with data we need
@@ -96,7 +96,7 @@ export default (part) => {
       'armholeHollow',
       'armholeHollowCp1',
       'armholeCp2',
-      'armhole'
+      'armhole',
     ])
       points[p] = points[p].shift(0, options.boxPleatFold * 2)
   }
@@ -165,7 +165,7 @@ export default (part) => {
         to: points.cbHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path()
         .move(points.hips)
@@ -200,7 +200,7 @@ export default (part) => {
     macro('cutonfold', {
       from: points.cbYoke,
       to: points.cbHem,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.armhole.x / 4, points.armhole.y)
     macro('title', { at: points.title, nr: 3, title: 'back' })
@@ -230,7 +230,7 @@ export default (part) => {
         .attr('class', 'fabric sa')
       macro('banner', {
         path: 'hemSa',
-        text: ['hem', ': 3x', 'seamAllowance']
+        text: ['hem', ': 3x', 'seamAllowance'],
       })
     }
   }
@@ -241,30 +241,30 @@ export default (part) => {
       macro('vd', {
         from: points.dartBottom,
         to: points.dartCenterIn,
-        x: points.dartCenterIn.x - 15
+        x: points.dartCenterIn.x - 15,
       })
       macro('vd', {
         from: points.dartCenterIn,
         to: points.dartTop,
-        x: points.dartCenterIn.x - 15
+        x: points.dartCenterIn.x - 15,
       })
       macro('hd', {
         from: points.dartCenterIn,
         to: points.dartCenterOut,
-        y: points.dartBottom.y + 15
+        y: points.dartBottom.y + 15,
       })
       macro('hd', {
         from: points.dartCenterOut,
-        to: points.waist
+        to: points.waist,
       })
       macro('hd', {
         from: points.cbWaist,
-        to: points.dartCenterIn
+        to: points.dartCenterIn,
       })
     } else {
       macro('hd', {
         from: points.cbWaist,
-        to: points.waist
+        to: points.waist,
       })
     }
     let bottomRight
@@ -272,84 +272,84 @@ export default (part) => {
       macro('hd', {
         from: points.cbHem,
         to: points.slashEnd,
-        y: points.cbHem.y + 15 + 3 * sa
+        y: points.cbHem.y + 15 + 3 * sa,
       })
       macro('vd', {
         from: points.slashEnd,
         to: points.slashStart,
-        x: points.slashStart.x + 15 + 3 * sa
+        x: points.slashStart.x + 15 + 3 * sa,
       })
       bottomRight = points.slashEnd
     } else if (typeof points.bballStart !== 'undefined') {
       macro('hd', {
         from: points.cbHem,
         to: points.bballStart,
-        y: points.cbHem.y + 15 + 3 * sa
+        y: points.cbHem.y + 15 + 3 * sa,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.bballEnd,
-        x: points.hips.x + 15 + sa
+        x: points.hips.x + 15 + sa,
       })
       bottomRight = points.bballStart
     } else bottomRight = points.hem
     macro('hd', {
       from: points.cbHem,
       to: points.hips,
-      y: points.cbHem.y + 30 + 3 * sa
+      y: points.cbHem.y + 30 + 3 * sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.hips,
-      x: points.hips.x + 30 + sa
+      x: points.hips.x + 30 + sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.waist,
-      x: points.hips.x + 45 + sa
+      x: points.hips.x + 45 + sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.armhole,
-      x: points.hips.x + 60 + sa
+      x: points.hips.x + 60 + sa,
     })
     if (options.yokeDart > 0) {
       macro('vd', {
         from: points.armhole,
         to: points.yokeDartEdge,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.armhole,
         to: points.yokeDartTip,
-        x: points.armhole.x + 30 + sa
+        x: points.armhole.x + 30 + sa,
       })
       macro('hd', {
         from: points.cbYoke,
         to: points.yokeDartTip,
-        y: points.cbYoke.y - 15 - sa
+        y: points.cbYoke.y - 15 - sa,
       })
       macro('hd', {
         from: points.cbYoke,
         to: points.yokeDartEdge,
-        y: points.cbYoke.y - 30 - sa
+        y: points.cbYoke.y - 30 - sa,
       })
     } else {
       macro('vd', {
         from: points.armhole,
         to: points.armholePitch,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('hd', {
         from: points.cbYoke,
         to: points.armholePitch,
-        y: points.cbYoke.y - 15 - sa
+        y: points.cbYoke.y - 15 - sa,
       })
     }
     macro('vd', {
       from: points.cbHem,
       to: points.cbYoke,
-      x: points.cbHem.x - 15
+      x: points.cbHem.x - 15,
     })
   }
 

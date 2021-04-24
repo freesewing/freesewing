@@ -10,7 +10,7 @@ export default {
         svg.attributes.set('freesewing:plugin-grainline', version)
         svg.defs += markers
       }
-    }
+    },
   },
   macros: {
     grainline: function (so) {
@@ -31,6 +31,6 @@ export default {
         .attr('marker-end', 'url(#grainlineTo)')
         .attr('data-text', 'grainline')
         .attr('data-text-class', 'center fill-note')
-    }
-  }
+    },
+  },
 }

@@ -36,7 +36,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.pocketCf,
       to: points.cfRibbing,
-      grainline: true
+      grainline: true,
     })
     points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
     macro('title', { at: points.title, nr: 4, title: 'pocket' })
@@ -50,22 +50,22 @@ export default function (part) {
     macro('hd', {
       from: points.cfRibbing,
       to: points.pocketTop,
-      y: points.cfRibbing.y + 15 + sa
+      y: points.cfRibbing.y + 15 + sa,
     })
     macro('hd', {
       from: points.cfRibbing,
       to: points.pocketTip,
-      y: points.cfRibbing.y + 30 + sa
+      y: points.cfRibbing.y + 30 + sa,
     })
     macro('vd', {
       from: points.pocketHem,
       to: points.pocketTip,
-      x: points.pocketTip.x + 15 + sa
+      x: points.pocketTip.x + 15 + sa,
     })
     macro('vd', {
       from: points.pocketHem,
       to: points.pocketTop,
-      x: points.cfRibbing.x - 15 - sa
+      x: points.cfRibbing.x - 15 - sa,
     })
   }
 

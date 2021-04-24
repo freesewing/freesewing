@@ -11,7 +11,7 @@ export default function (so) {
       '__miniscaleImperialBottomRight',
       '__miniscaleImperialBottomLeft',
       '__miniscaleMetric',
-      '__miniscaleImperial'
+      '__miniscaleImperial',
     ])
       delete this.points[id]
     for (let id of ['__miniscaleMetric', '__miniscaleImperial']) delete this.paths[id]
@@ -43,7 +43,7 @@ export default function (so) {
       '__miniscaleImperialBottomLeft',
       '__miniscaleImperialBottomRight',
       '__miniscaleMetric',
-      '__miniscaleImperial'
+      '__miniscaleImperial',
     ]
     for (let pid of points) this.points[pid] = this.points[pid].rotate(so.rotate, so.at)
     for (let pid of points.slice(8)) {

@@ -19,13 +19,13 @@ export default function (part) {
     points.grainlineBottom = new Point(points.grainlineTop.x, points.hipsGap3.y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     points.title = points.grainlineTop.shift(-90, points.grainlineTop.dy(points.waistGap3Left) / 2)
     macro('title', {
       nr: 3,
       title: '',
-      at: points.title
+      at: points.title,
     })
     if (sa) paths.sa = paths.panel3.offset(sa).attr('class', 'fabric sa')
   }
@@ -35,36 +35,36 @@ export default function (part) {
     macro('hd', {
       from: points.hipsGap2,
       to: points.hipsGap3,
-      y: points.hipsGap2.y + sa + 15
+      y: points.hipsGap2.y + sa + 15,
     })
     macro('ld', {
       from: points.waistGap2Right,
-      to: points.waistGap3Left
+      to: points.waistGap3Left,
     })
     macro('hd', {
       from: points.underbustGap2Right,
       to: points.underbustGap3Left,
-      y: points.underbustGap2Right.y - sa - 15
+      y: points.underbustGap2Right.y - sa - 15,
     })
     macro('vd', {
       from: points.hipsGap2,
       to: points.waistGap2Right,
-      x: points.hipsGap2.x - sa - 15
+      x: points.hipsGap2.x - sa - 15,
     })
     macro('vd', {
       from: points.waistGap2Right,
       to: points.underbustGap2Right,
-      x: points.hipsGap2.x - sa - 15
+      x: points.hipsGap2.x - sa - 15,
     })
     macro('vd', {
       from: points.hipsGap3,
       to: points.waistGap2Right,
-      x: points.hipsGap3.x + sa + 15
+      x: points.hipsGap3.x + sa + 15,
     })
     macro('vd', {
       from: points.waistGap2Right,
       to: points.underbustGap3Left,
-      x: points.hipsGap3.x + sa + 15
+      x: points.hipsGap3.x + sa + 15,
     })
   }
 

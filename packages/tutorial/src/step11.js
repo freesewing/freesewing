@@ -16,7 +16,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'bib'
+      title: 'bib',
     })
 
     points.scalebox = points.title.shift(-90, 55)

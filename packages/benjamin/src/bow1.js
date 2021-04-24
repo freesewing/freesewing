@@ -8,7 +8,7 @@ export default function (part) {
 
   macro('grainline', {
     from: points.grainlineStart,
-    to: points.tip.shift(180, 20)
+    to: points.tip.shift(180, 20),
   })
 
   paths.seam = new Path()
@@ -26,7 +26,7 @@ export default function (part) {
       macro('hd', {
         from: points.bandBottomLeft,
         to: points.tip2Bottom,
-        y: store.get('baseY')
+        y: store.get('baseY'),
       })
     }
     if (sa) {
@@ -36,7 +36,7 @@ export default function (part) {
       at: points.titleAnchor,
       nr: 1,
       title: 'bowTie',
-      scale: store.get('tipWidth') / 75
+      scale: store.get('tipWidth') / 75,
     })
     points.scaleboxAnchor = points.bandTopLeft.shift(30, 80)
     macro('scalebox', { at: points.scaleboxAnchor })

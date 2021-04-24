@@ -24,7 +24,7 @@ export default (part) => {
     'top',
     'left',
     'bottom',
-    'right'
+    'right',
   ])
     snippets[i] = new Snippet('notch', paths.demo.edge(i))
 

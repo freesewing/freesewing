@@ -15,7 +15,7 @@ export default (part) => {
 
   macro('sprinkle', {
     snippet: 'button',
-    on: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+    on: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'],
   })
 
   return box(part, 100, 25)

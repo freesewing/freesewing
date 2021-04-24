@@ -10,6 +10,6 @@ export default {
         svg.attributes.set('freesewing:plugin-logo', version)
         svg.defs += logo
       }
-    }
-  }
+    },
+  },
 }

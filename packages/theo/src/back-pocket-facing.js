@@ -32,11 +32,11 @@ export default function (part) {
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['weltLeft', 'weltRight']
+      on: ['weltLeft', 'weltRight'],
     })
   }
 
@@ -45,12 +45,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + 15
+      y: points.bottomLeft.y + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.bottomRight.x + 15
+      x: points.bottomRight.x + 15,
     })
   }
 

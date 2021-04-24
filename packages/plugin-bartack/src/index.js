@@ -9,7 +9,7 @@ export default {
       if (svg.attributes.get('freesewing:plugin-bartack') === false) {
         svg.attributes.set('freesewing:plugin-bartack', version)
       }
-    }
+    },
   },
   macros: {
     bartack: function (so) {
@@ -25,6 +25,6 @@ export default {
       let self = this
       so.bartackFractionAlong = true
       return bartack(so, self)
-    }
-  }
+    },
+  },
 }

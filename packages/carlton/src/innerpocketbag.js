@@ -10,7 +10,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -48,12 +48,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 14,
-      title: 'innerPocketBag'
+      title: 'innerPocketBag',
     })
 
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+      to: points.topLeft.shift(0, 10),
     })
 
     if (sa) {
@@ -62,14 +62,14 @@ export default function (part) {
     macro('ld', {
       from: points.bottomRight.shift(180, 15),
       to: points.topRight.shift(180, 15),
-      text: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2)
+      text: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2),
     })
 
     if (paperless) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15
+        y: points.bottomLeft.y + sa + 15,
       })
     }
   }

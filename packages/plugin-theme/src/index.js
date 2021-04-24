@@ -37,6 +37,6 @@ export default {
         }
         svg.attributes.add('freesewing:plugin-theme', version)
       }
-    }
-  }
+    },
+  },
 }

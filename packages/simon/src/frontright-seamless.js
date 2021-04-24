@@ -40,8 +40,8 @@ export default (part) => {
         'placketBottomFold1',
         'placketBottomFold2',
         'cfNeck',
-        'cfHem'
-      ]
+        'cfHem',
+      ],
     })
 
     // Buttons
@@ -65,27 +65,27 @@ export default (part) => {
     macro('hd', {
       from: points.hps,
       to: points.placketTopEdge,
-      y: points.hps.y - sa - 15
+      y: points.hps.y - sa - 15,
     })
     macro('hd', {
       from: points.shoulder,
       to: points.placketTopEdge,
-      y: points.hps.y - sa - 30
+      y: points.hps.y - sa - 30,
     })
     macro('hd', {
       from: points.armhole,
       to: points.placketTopEdge,
-      y: points.hps.y - sa - 45
+      y: points.hps.y - sa - 45,
     })
     macro('vd', {
       from: points.placketTopEdge,
       to: points.neck,
-      x: points.placketTopEdge.x + sa + 15
+      x: points.placketTopEdge.x + sa + 15,
     })
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x + sa + 15
+      x: points.placketTopEdge.x + sa + 15,
     })
   }
 

@@ -10,7 +10,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
@@ -27,7 +27,7 @@ export default function (part) {
     via: points.topLeft,
     prefix: 'roundTop',
     radius: width / 4,
-    render: true
+    render: true,
   })
   macro('round', {
     from: points.topLeft,
@@ -35,7 +35,7 @@ export default function (part) {
     via: points.bottomLeft,
     prefix: 'roundBottom',
     radius: width / 4,
-    render: true
+    render: true,
   })
 
   // Paths
@@ -56,7 +56,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 6,
-      title: 'belt'
+      title: 'belt',
     })
     points.logo = new Point(points.bottomRight.x * 0.75, points.bottomRight.y * 0.65)
     snippets.logo = new Snippet('logo', points.logo)
@@ -71,22 +71,22 @@ export default function (part) {
       macro('hd', {
         from: points.roundBottomStart,
         to: points.roundBottomEnd,
-        y: points.roundBottomEnd.y + sa + 15
+        y: points.roundBottomEnd.y + sa + 15,
       })
       macro('hd', {
         from: points.roundBottomStart,
         to: points.button,
-        y: points.roundBottomEnd.y + sa + 30
+        y: points.roundBottomEnd.y + sa + 30,
       })
       macro('hd', {
         from: points.roundBottomStart,
         to: points.bottomRight,
-        y: points.roundBottomEnd.y + sa + 45
+        y: points.roundBottomEnd.y + sa + 45,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
     }
   }

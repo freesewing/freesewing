@@ -11,7 +11,7 @@ export default (part) => {
     snippets,
     utils,
     sa,
-    complete
+    complete,
   } = part.shorthand()
 
   /*
@@ -109,7 +109,7 @@ export default (part) => {
     'armholeHollowCp1',
     'armholeHollow',
     'armholeHollowCp2',
-    'armholePitchCp1'
+    'armholePitchCp1',
   ]
   for (let p of rot1) points[`${p}_rot1`] = points[p].rotate(FBARot, points.armholePitch)
   //
@@ -174,7 +174,7 @@ export default (part) => {
     'armholeHollowCp2',
     'armholePitchCp1',
     'belowDartCpTop',
-    'belowDartCpBottom'
+    'belowDartCpBottom',
   ]
   for (let p of rot2)
     points[`${p}_rot2`] = points[`${p}_rot1`].rotate(FBARot * -1, points.bust_rot1)
@@ -262,7 +262,7 @@ export default (part) => {
     'armholeHollowCp1',
     'armholeHollow',
     'armholeHollowCp2',
-    'armholePitchCp1'
+    'armholePitchCp1',
   ]
   for (let p of clone1) points[p] = points[`${p}_rot1`].clone()
   let clone2 = ['hem', 'hips', 'hipsCp2', 'waistCp1', 'waist']
@@ -293,7 +293,7 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2']
+    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2'],
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)
@@ -338,7 +338,7 @@ export default (part) => {
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()

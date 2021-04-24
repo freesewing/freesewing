@@ -11,7 +11,7 @@ export const draftRibbing = function (part, length) {
     complete,
     paperless,
     macro,
-    units
+    units,
   } = part.shorthand()
 
   let height = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
@@ -69,12 +69,12 @@ export const draftRibbing = function (part, length) {
       from: points.bottomRight,
       to: points.topRight,
       x: points.topRight.x + sa + 15,
-      text: units(length)
+      text: units(length),
     })
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topRight.y - sa - 15
+      y: points.topRight.y - sa - 15,
     })
   }
 }

@@ -10,7 +10,7 @@ export default function (part) {
     paperless,
     sa,
     options,
-    utils
+    utils,
   } = part.shorthand()
 
   let height = options.elasticWidth * 2
@@ -46,7 +46,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'waistband'
+      title: 'waistband',
     })
     if (sa) {
       paths.sa = new Path()
@@ -63,7 +63,7 @@ export default function (part) {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: points.bottomLeft.y - 10,
-      text: utils.units(store.get('hips') * 2)
+      text: utils.units(store.get('hips') * 2),
     })
   }
 
@@ -72,7 +72,7 @@ export default function (part) {
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

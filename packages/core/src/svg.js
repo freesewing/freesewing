@@ -60,7 +60,7 @@ Svg.prototype.render = function (pattern) {
       let partSvg = this.renderPart(part)
       this.layout[partId] = {
         svg: partSvg,
-        transform: part.attributes.getAsArray('transform')
+        transform: part.attributes.getAsArray('transform'),
       }
       this.svg += this.openGroup(`${this.idPrefix}part-${partId}`, part.attributes)
       this.svg += partSvg

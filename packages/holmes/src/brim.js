@@ -9,7 +9,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let headRadius = measurements.head / 2 / Math.PI
@@ -62,17 +62,17 @@ export default function (part) {
       macro('hd', {
         from: points.in2Flipped,
         to: points.in2,
-        y: points.ex1.y + 15 + sa
+        y: points.ex1.y + 15 + sa,
       })
       macro('vd', {
         from: points.ex1,
         to: points.in1,
-        x: points.in2Flipped.x - 15 - sa
+        x: points.in2Flipped.x - 15 - sa,
       })
       macro('vd', {
         from: points.ex1,
         to: points.in2Flipped,
-        x: points.in2Flipped.x - 30 - sa
+        x: points.in2Flipped.x - 30 - sa,
       })
     }
   }

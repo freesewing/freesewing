@@ -7,7 +7,7 @@ export default (part) => {
   macro('hd', {
     from: points.from,
     to: points.to,
-    y: 25
+    y: 25,
   })
 
   return part

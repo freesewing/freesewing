@@ -7,7 +7,7 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-round') === false)
         svg.attributes.set('freesewing:plugin-round', version)
-    }
+    },
   },
   macros: {
     round: function (so) {
@@ -40,6 +40,6 @@ export default {
       if (typeof so.render !== 'undefined' && so.render)
         this.paths[prefix + 'Rounded'].render = true
       else this.paths[prefix + 'Rounded'].render = false
-    }
-  }
+    },
+  },
 }

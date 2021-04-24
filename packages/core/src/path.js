@@ -8,7 +8,7 @@ import {
   pointOnLine,
   pointOnCurve,
   curveEdge,
-  round
+  round,
 } from './utils'
 
 function Path(debug = false) {
@@ -514,18 +514,18 @@ function lineBoundingBox(line) {
     else
       return {
         topLeft: new Point(from.x, to.y),
-        bottomRight: new Point(to.x, from.y)
+        bottomRight: new Point(to.x, from.y),
       }
   } else if (from.x > to.x) {
     if (from.y < to.y)
       return {
         topLeft: new Point(to.x, from.y),
-        bottomRight: new Point(from.x, to.y)
+        bottomRight: new Point(from.x, to.y),
       }
     else
       return {
         topLeft: new Point(to.x, to.y),
-        bottomRight: new Point(from.x, from.y)
+        bottomRight: new Point(from.x, from.y),
       }
   }
 }
@@ -535,7 +535,7 @@ function curveBoundingBox(curve) {
 
   return {
     topLeft: new Point(bb.x.min, bb.y.min),
-    bottomRight: new Point(bb.x.max, bb.y.max)
+    bottomRight: new Point(bb.x.max, bb.y.max),
   }
 }
 

@@ -18,7 +18,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Remove notch inherited from Brian
@@ -105,7 +105,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfRibbing,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.armhole.x / 2, points.armhole.y)
     macro('title', { at: points.title, nr: 1, title: 'front' })
@@ -129,47 +129,47 @@ export default function (part) {
     macro('vd', {
       from: points.cfRibbing,
       to: points.cfNeck,
-      x: points.cfNeck.x - 15
+      x: points.cfNeck.x - 15,
     })
     macro('vd', {
       from: points.cfRibbing,
       to: points.raglanTipFront,
-      x: points.cfNeck.x - 30
+      x: points.cfNeck.x - 30,
     })
     macro('vd', {
       from: points.ribbing,
       to: points.armhole,
-      x: points.ribbing.x + 15 + sa
+      x: points.ribbing.x + 15 + sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.raglanTipFront,
-      y: points.raglanTipFront.y - 15 - sa
+      y: points.raglanTipFront.y - 15 - sa,
     })
     macro('hd', {
       from: points.raglanTipFront,
       to: points.armhole,
-      y: points.raglanTipFront.y - 15 - sa
+      y: points.raglanTipFront.y - 15 - sa,
     })
     macro('hd', {
       from: points.cfRibbing,
       to: points.pocketTop,
-      y: points.cfRibbing.y + 15 + sa
+      y: points.cfRibbing.y + 15 + sa,
     })
     macro('hd', {
       from: points.cfRibbing,
       to: points.pocketTip,
-      y: points.cfRibbing.y + 30 + sa
+      y: points.cfRibbing.y + 30 + sa,
     })
     macro('hd', {
       from: points.cfRibbing,
       to: points.ribbing,
-      y: points.cfRibbing.y + 45 + sa
+      y: points.cfRibbing.y + 45 + sa,
     })
     macro('vd', {
       from: points.pocketHem,
       to: points.pocketTop,
-      x: points.pocketTip.x + 15
+      x: points.pocketTip.x + 15,
     })
   }
 

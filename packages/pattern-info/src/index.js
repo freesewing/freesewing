@@ -41,7 +41,7 @@ export const list = [
   'titan',
   'trayvon',
   'wahid',
-  'waralee'
+  'waralee',
 ]
 
 export const withoutBreasts = [
@@ -73,7 +73,7 @@ export const withoutBreasts = [
   'titan',
   'trayvon',
   'wahid',
-  'waralee'
+  'waralee',
 ]
 
 export const withBreasts = ['bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']

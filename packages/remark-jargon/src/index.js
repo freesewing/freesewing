@@ -29,8 +29,8 @@ export default (options) => {
           type: 'html',
           value,
           position,
-          indent: node.children[0].indent
-        }
+          indent: node.children[0].indent,
+        },
       ]
     }
   }

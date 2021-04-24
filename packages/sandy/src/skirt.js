@@ -14,7 +14,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Circumference of the top of the waistband, calculated from the waistbandPosition option
@@ -102,13 +102,13 @@ export default function (part) {
     macro('cutonfold', {
       from: points.in2Flipped,
       to: points.ex2Flipped,
-      grainline: true
+      grainline: true,
     })
     if (options.seamlessFullCircle) {
       macro('cutonfold', {
         from: points.ex1Rotated,
         to: points.in1Rotated,
-        prefix: 'double'
+        prefix: 'double',
       })
     }
     points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.3)
@@ -122,7 +122,7 @@ export default function (part) {
 
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['in1Rotated', 'gridAnchor']
+      on: ['in1Rotated', 'gridAnchor'],
     })
 
     if (sa) {
@@ -170,33 +170,36 @@ export default function (part) {
     macro('vd', {
       from: points.ex2Flipped,
       to: points.in2Flipped,
-      x: points.ex2Flipped.x - sa - 15
+      x: points.ex2Flipped.x - sa - 15,
     })
     macro('vd', {
       from: points.in2Flipped,
       to: points.center,
-      x: points.ex2Flipped.x - sa - 15
+      x: points.ex2Flipped.x - sa - 15,
     })
     macro('vd', {
       from: points.ex2Flipped,
       to: points.center,
-      x: points.ex2Flipped.x - sa - 30
+      x: points.ex2Flipped.x - sa - 30,
     })
     if (options.circleRatio !== 0.5) {
       macro('vd', {
         from: points.ex1Rotated,
         to: points.in1Rotated,
-        x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15
+        x:
+          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
       })
       macro('vd', {
         from: points.in1Rotated,
         to: points.center,
-        x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15
+        x:
+          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
       })
       macro('vd', {
         from: points.ex1Rotated,
         to: points.center,
-        x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30
+        x:
+          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
       })
     }
     snippets.center = new Snippet('bnotch', points.center)

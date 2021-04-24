@@ -101,7 +101,7 @@ const Pattern = new freesewing.Design(config, [
   pluginBundle,
   buttonsPlugin,
   mirrorPlugin,
-  bartackPlugin
+  bartackPlugin,
 ])
 
 // Attach draft methods to prototype
@@ -190,7 +190,7 @@ let methods = {
   draftUtils_curveintersectsy,
   draftUtils_splitcurve,
   draftDocs_overview,
-  draftDocs_coords
+  draftDocs_coords,
 }
 
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]

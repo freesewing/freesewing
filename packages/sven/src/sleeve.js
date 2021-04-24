@@ -21,7 +21,7 @@ export default (part) => {
   if (complete) {
     macro('grainline', {
       from: points.centerWrist,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
     if (sa) {
       paths.saBase = new Path()
@@ -42,26 +42,26 @@ export default (part) => {
     macro('vd', {
       from: points.wristLeft,
       to: points.bicepsLeft,
-      x: points.bicepsLeft.x - sa - 15
+      x: points.bicepsLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.wristLeft,
       to: points.sleeveTip,
-      x: points.bicepsLeft.x - sa - 30
+      x: points.bicepsLeft.x - sa - 30,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - sa - 30
+      y: points.sleeveTip.y - sa - 30,
     })
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,
-      y: points.wristLeft.y + sa * (options.ribbing ? 1 : 3) + 15
+      y: points.wristLeft.y + sa * (options.ribbing ? 1 : 3) + 15,
     })
     macro('pd', {
       path: paths.sleevecap.reverse(),
-      d: -1 * sa - 15
+      d: -1 * sa - 15,
     })
   }
 

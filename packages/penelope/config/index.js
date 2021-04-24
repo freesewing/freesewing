@@ -22,15 +22,15 @@ export default {
       'waistBandWidth',
       'zipperLocation',
       'nrOfDarts',
-      'hemBonus'
+      'hemBonus',
     ],
     advanced: [
       'seatEase',
       'waistEase',
       'backDartDepthFactor',
       'frontDartDepthFactor',
-      'dartToSideSeamFactor'
-    ]
+      'dartToSideSeamFactor',
+    ],
   },
   measurements: ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee'],
   dependencies: {},
@@ -68,6 +68,6 @@ export default {
     waistEase: { mm: 5, min: 0, max: 15 },
     backDartDepthFactor: { pct: 50, min: 35, max: 70 },
     frontDartDepthFactor: { pct: 45, min: 30, max: 65 },
-    dartToSideSeamFactor: { pct: 50, min: 30, max: 70 }
-  }
+    dartToSideSeamFactor: { pct: 50, min: 30, max: 70 },
+  },
 }

@@ -10,7 +10,7 @@ export default function (part) {
     Point,
     paths,
     Path,
-    measurements
+    measurements,
   } = part.shorthand()
 
   let scale = 1
@@ -52,11 +52,11 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'brimBottom'
+      title: 'brimBottom',
     })
     macro('grainline', {
       from: points.outerMid,
-      to: points.innerMid
+      to: points.innerMid,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -65,22 +65,22 @@ export default function (part) {
       macro('hd', {
         from: points.tipLeft,
         to: points.tipRight,
-        y: points.tipLeft.y - sa - 15
+        y: points.tipLeft.y - sa - 15,
       })
       macro('hd', {
         from: paths.seam.edge('left'),
         to: paths.seam.edge('right'),
-        y: points.tipLeft.y - sa - 30
+        y: points.tipLeft.y - sa - 30,
       })
       macro('vd', {
         from: points.outerMid,
         to: points.innerMid,
-        x: points.innerMid.x - 15
+        x: points.innerMid.x - 15,
       })
       macro('vd', {
         from: points.outerMid,
         to: points.tipRight,
-        x: points.tipRight.x + sa + 18
+        x: points.tipRight.x + sa + 18,
       })
     }
   }

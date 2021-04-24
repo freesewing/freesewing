@@ -52,7 +52,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Adapt bottom leg width based on heel & heel ease
@@ -153,7 +153,7 @@ export default function (part) {
         .attr('class', 'lining lashed')
       macro('sprinkle', {
         snippet: 'bnotch',
-        on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
+        on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
       })
     }
 
@@ -186,17 +186,17 @@ export default function (part) {
       macro('hd', {
         from: points.floorIn,
         to: points.floorOut,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
       macro('hd', {
         from: points.floorIn,
         to: points.floor,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floor,
         to: points.floorOut,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('vd', {
         from: points.floorOut,
@@ -204,97 +204,97 @@ export default function (part) {
         x:
           (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
           sa +
-          15
+          15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.fork,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 30
+        x: points.fork.x - sa - 30,
       })
       macro('vd', {
         from: points.crossSeamCurveStart,
         to: points.styleWaistIn,
-        x: points.crossSeamCurveStart.x - sa - 15
+        x: points.crossSeamCurveStart.x - sa - 15,
       })
       macro('hd', {
         from: points.styleWaistIn,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       macro('hd', {
         from: points.crossSeamCurveStart,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 30
+        y: points.styleWaistIn.y - sa - 30,
       })
       macro('hd', {
         from: points.crossSeamCurveMax,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 45
+        y: points.styleWaistIn.y - sa - 45,
       })
       macro('hd', {
         from: points.fork,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 60
+        y: points.styleWaistIn.y - sa - 60,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.styleWaistOut,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       if (points.seatOut.x > points.styleWaistOut.x) {
         macro('hd', {
           from: points.grainlineTop,
           to: points.seatOut,
-          y: points.styleWaistIn.y - sa - 30
+          y: points.styleWaistIn.y - sa - 30,
         })
       }
       if (options.frontPockets) {
         macro('ld', {
           from: points.styleWaistOut,
           to: points.pocketFlapTopIn,
-          d: -15
+          d: -15,
         })
         macro('ld', {
           from: points.pocketFlapTopIn,
           to: points.pocketFlapBottomIn,
-          d: -15
+          d: -15,
         })
         macro('ld', {
           from: points.pocketFlapTopIn,
           to: points.pocketFlapTopOut,
-          d: -15
+          d: -15,
         })
       }
       if (options.backPockets) {
         macro('ld', {
           from: points.styleWaistIn,
           to: points.pocketBagWaistLeft,
-          d: -15 - sa
+          d: -15 - sa,
         })
         macro('ld', {
           from: points.styleWaistIn,
           to: points.pocketWaistCenter,
-          d: -30 - sa
+          d: -30 - sa,
         })
         macro('ld', {
           from: points.pocketCenter,
           to: points.pocketWaistCenter,
-          d: -15
+          d: -15,
         })
         macro('ld', {
           from: points.pocketBagBottomRight,
           to: points.pocketBagWaistRight,
-          d: -15
+          d: -15,
         })
       }
     }

@@ -9,7 +9,7 @@ export default function (part) {
     options,
     macro,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Vent
@@ -106,20 +106,20 @@ export default function (part) {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['top', 'tsElbowLeft', 'elbowRight']
+      on: ['top', 'tsElbowLeft', 'elbowRight'],
     })
     // Title
     points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
     macro('title', {
       at: points.title,
       nr: 4,
-      title: 'topSleeve'
+      title: 'topSleeve',
     })
 
     // Grainline
     macro('grainline', {
       from: points.boxBottom,
-      to: points.top
+      to: points.top,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -128,85 +128,85 @@ export default function (part) {
       macro('ld', {
         from: points.tsWristLeft,
         to: points.tsWristRight,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.tsWristLeft,
         to: points.ventFoldRight,
-        d: 30
+        d: 30,
       })
       macro('ld', {
         from: points.hemLeft,
         to: points.ventRight,
-        d: -15 - sa
+        d: -15 - sa,
       })
       macro('ld', {
         from: points.hemLeft,
         to: points.tsWristLeft,
-        d: 15 + sa
+        d: 15 + sa,
       })
       macro('ld', {
         from: points.tsWristRight,
         to: points.ventSlopeStart,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.ventFoldRight,
         to: points.ventSlopeEnd,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.tsWristRight,
         to: points.ventFoldRight,
-        d: -15
+        d: -15,
       })
       macro('vd', {
         from: points.ventRight,
         to: points.top,
-        x: points.ventSlopeEnd.x + sa + 15
+        x: points.ventSlopeEnd.x + sa + 15,
       })
       macro('vd', {
         from: points.tsWristLeft,
         to: points.tsElbowLeft,
-        x: points.tsLeftEdge.x - sa - 15
+        x: points.tsLeftEdge.x - sa - 15,
       })
       macro('vd', {
         from: points.tsWristLeft,
         to: points.tsLeftEdge,
-        x: points.tsLeftEdge.x - sa - 30
+        x: points.tsLeftEdge.x - sa - 30,
       })
       macro('vd', {
         from: points.tsLeftEdge,
         to: points.top,
-        x: points.tsLeftEdge.x - sa - 30
+        x: points.tsLeftEdge.x - sa - 30,
       })
       macro('vd', {
         from: points.tsWristLeft,
         to: points.top,
-        x: points.tsLeftEdge.x - sa - 45
+        x: points.tsLeftEdge.x - sa - 45,
       })
       macro('ld', {
         from: points.tsLeftEdge,
-        to: points.tsRightEdge
+        to: points.tsRightEdge,
       })
       macro('ld', {
         from: points.tsElbowLeft,
-        to: points.elbowRight
+        to: points.elbowRight,
       })
       macro('hd', {
         from: points.tsLeftEdge,
         to: points.top,
-        y: points.top.y - sa - 15
+        y: points.top.y - sa - 15,
       })
       macro('hd', {
         from: points.tsLeftEdge,
         to: points.backPitchPoint,
-        y: points.top.y - sa - 30
+        y: points.top.y - sa - 30,
       })
       macro('hd', {
         from: points.tsLeftEdge,
         to: points.tsRightEdge,
-        y: points.top.y - sa - 45
+        y: points.top.y - sa - 45,
       })
     }
   }

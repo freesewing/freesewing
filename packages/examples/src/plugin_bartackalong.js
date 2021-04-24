@@ -13,12 +13,12 @@ export default (part) => {
   paths.a = new Path().move(points.a).curve(points.b, points.c, points.d).setRender(false)
 
   macro('bartackAlong', {
-    path: paths.a
+    path: paths.a,
   })
 
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['e', 'f']
+    on: ['e', 'f'],
   })
 
   return box(part, 60, 30)

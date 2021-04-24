@@ -24,7 +24,7 @@ export default {
       'bicepsEase',
       'cuffEase',
       'shoulderEase',
-      'waistEase'
+      'waistEase',
     ],
     style: [
       'primaryBustDart',
@@ -32,7 +32,7 @@ export default {
       'secondaryBustDart',
       'secondaryBustDartLength',
       'primaryBustDartShaping',
-      'sleeveLengthBonus'
+      'sleeveLengthBonus',
     ],
     advanced: [
       'acrossBackFactor',
@@ -60,10 +60,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -80,19 +80,19 @@ export default {
     'shoulderToShoulder',
     'shoulderToWrist',
     'shoulderSlope',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     frontBase: 'back',
     front: ['back', 'frontBase'],
     sleevecap: ['front', 'frontBase', 'back'],
-    sleeve: ['sleevecap', 'front', 'frontBase', 'back']
+    sleeve: ['sleevecap', 'front', 'frontBase', 'back'],
   },
   inject: {
     back: 'base',
     frontBase: 'base',
     front: 'frontBase',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   hide: ['frontBase', 'sleevecap'],
   options: {
@@ -125,9 +125,9 @@ export default {
         '14:00',
         '15:00',
         '16:00',
-        '17:00'
+        '17:00',
       ],
-      dflt: '06:00'
+      dflt: '06:00',
     },
     secondaryBustDart: {
       list: [
@@ -146,9 +146,9 @@ export default {
         '14:00',
         '15:00',
         '16:00',
-        '17:00'
+        '17:00',
       ],
-      dflt: '13:30'
+      dflt: '13:30',
     },
 
     // Percentages
@@ -191,6 +191,6 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
-    frontScyeDart: { pct: 25, min: 0, max: 45 }
-  }
+    frontScyeDart: { pct: 25, min: 0, max: 45 },
+  },
 }

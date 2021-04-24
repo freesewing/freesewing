@@ -12,7 +12,7 @@ export default function (part) {
     paperless,
     sa,
     options,
-    measurements
+    measurements,
   } = part.shorthand()
 
   // Clear paths from Brian
@@ -62,7 +62,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbHem,
-      grainline: true
+      grainline: true,
     })
     macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {

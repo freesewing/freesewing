@@ -12,7 +12,7 @@ export default {
   tags: ['trousers', 'bottom'],
   optionGroups: {
     fit: ['backRise', 'wedge'],
-    style: ['waistbandWidth', 'lengthBonus', 'legWidth']
+    style: ['waistbandWidth', 'lengthBonus', 'legWidth'],
   },
   measurements: ['crotchDepth', 'hips', 'inseam', 'knee', 'seat', 'waistToHips'],
   dependencies: {},
@@ -27,7 +27,7 @@ export default {
     sidePiece: 'front',
     frontPocketBag: 'front',
     backOuterPocketBag: 'backInnerPocketBag',
-    backPocketInterfacing: 'backPocketFacing'
+    backPocketInterfacing: 'backPocketFacing',
   },
   hide: [],
   parts: ['waistbandInterfacingLeft', 'waistbandInterfacingRight', 'backPocketFacing', 'beltLoop'],
@@ -41,6 +41,6 @@ export default {
     legWidth: { pct: 10, min: 0, max: 30 },
     backRise: { pct: 3.5, min: 0.5, max: 8 },
     lengthBonus: { pct: 0, min: -10, max: 10 },
-    wedge: { pct: 0, min: -3, max: 3 }
-  }
+    wedge: { pct: 0, min: -3, max: 3 },
+  },
 }

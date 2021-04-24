@@ -32,25 +32,25 @@ export default (part) => {
       at: points.titleAnchor,
       nr: 4,
       title: 'backPocketJet',
-      scale: 0.5
+      scale: 0.5,
     })
     points.grainlineTop = points.topLeft.shiftFractionTowards(points.topRight, 0.15)
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
 
     if (paperless) {
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomLeft.y + 15
+        y: points.bottomLeft.y + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15
+        x: points.topRight.x + 15,
       })
     }
   }

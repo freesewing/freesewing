@@ -29,7 +29,7 @@ export default (part) => {
     macro('title', {
       nr: 4,
       at: points.title,
-      title: 'frontLining'
+      title: 'frontLining',
     })
     points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
     snippets.logo = new Snippet('logo', points.logo)

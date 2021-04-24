@@ -11,7 +11,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   let width = options.buttonPlacketWidth
@@ -53,8 +53,8 @@ export default (part) => {
         'cfNeck',
         'placketBottomIn',
         'placketBottomOut',
-        'cfHem'
-      ]
+        'cfHem',
+      ],
     })
 
     // Buttons
@@ -76,32 +76,32 @@ export default (part) => {
     macro('hd', {
       from: points.placketTopOut,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 15 - sa
+      y: points.placketTopEdge.y - 15 - sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 30 - sa
+      y: points.placketTopEdge.y - 30 - sa,
     })
     macro('hd', {
       from: points.placketTopIn,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 45 - sa
+      y: points.placketTopEdge.y - 45 - sa,
     })
     macro('hd', {
       from: points.neck,
       to: points.placketTopEdge,
-      y: points.neck.y - 15 - sa
+      y: points.neck.y - 15 - sa,
     })
     macro('hd', {
       from: points.shoulder,
       to: points.placketTopEdge,
-      y: points.neck.y - 30 - sa
+      y: points.neck.y - 30 - sa,
     })
     macro('hd', {
       from: points.armhole,
       to: points.placketTopEdge,
-      y: points.neck.y - 45 - sa
+      y: points.neck.y - 45 - sa,
     })
     points.button0 = points.placketTopEdge
     let j
@@ -110,13 +110,13 @@ export default (part) => {
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
-        x: points.placketTopEdge.x + 15 + sa
+        x: points.placketTopEdge.x + 15 + sa,
       })
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x + 30 + sa
+      x: points.placketTopEdge.x + 30 + sa,
     })
   }
 

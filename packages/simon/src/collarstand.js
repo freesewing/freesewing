@@ -11,7 +11,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   const draft = function (tweak = 1) {
@@ -117,7 +117,7 @@ export default (part) => {
     // Grainline
     macro('grainline', {
       from: points.leftCf,
-      to: points.rightCf
+      to: points.rightCf,
     })
 
     // Title
@@ -126,7 +126,7 @@ export default (part) => {
       at: points.title,
       nr: 6,
       title: 'collarStand',
-      scale: 0.6
+      scale: 0.6,
     })
 
     // Notches
@@ -138,8 +138,8 @@ export default (part) => {
         'leftBottomCf',
         'leftTopCf',
         'rightBottomEdge',
-        'leftBottomEdge'
-      ]
+        'leftBottomEdge',
+      ],
     })
 
     // Button and buttonhole
@@ -161,22 +161,22 @@ export default (part) => {
     macro('hd', {
       from: points.topMid,
       to: points.rightTopCf,
-      y: points.topMid.y - 15 - sa
+      y: points.topMid.y - 15 - sa,
     })
     macro('hd', {
       from: points.leftTopCf,
       to: points.topMid,
-      y: points.topMid.y - 15 - sa
+      y: points.topMid.y - 15 - sa,
     })
     macro('hd', {
       from: points.topMid,
       to: points.rightBottomEdge,
-      y: points.topMid.y - 30 - sa
+      y: points.topMid.y - 30 - sa,
     })
     macro('hd', {
       from: points.leftBottomEdge,
       to: points.topMid,
-      y: points.topMid.y - 30 - sa
+      y: points.topMid.y - 30 - sa,
     })
     macro('pd', {
       path: new Path()
@@ -185,27 +185,27 @@ export default (part) => {
         .curve(points.leftBottomHingeCp2, points.bottomMidCp1, points.bottomMid)
         .curve(points.bottomMidCp2, points.rightBottomHingeCp1, points.rightBottomHinge)
         .curve(points.rightBottomHingeCp2, points.rightBottomCfCp1, points.rightBottomCf),
-      d: 15 + sa
+      d: 15 + sa,
     })
     macro('ld', {
       from: points.leftBottomEdge,
       to: points.leftBottomCf,
-      d: -30 - sa
+      d: -30 - sa,
     })
     macro('ld', {
       from: points.rightBottomCf,
       to: points.rightBottomEdge,
-      d: -30 - sa
+      d: -30 - sa,
     })
     macro('ld', {
       from: points.rightBottomCf,
       to: points.rightTopCf,
-      d: -15 - sa - options.buttonholePlacketWidth / 2
+      d: -15 - sa - options.buttonholePlacketWidth / 2,
     })
     macro('vd', {
       from: points.rightBottomCf,
       to: points.topMid,
-      x: points.rightBottomEdge.x + 30 + sa
+      x: points.rightBottomEdge.x + 30 + sa,
     })
   }
 

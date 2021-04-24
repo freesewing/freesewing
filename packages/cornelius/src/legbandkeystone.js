@@ -12,7 +12,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   if (options.cuffStyle != 'keystone') {
@@ -107,7 +107,7 @@ export default function (part) {
     macro('title', {
       nr: 78,
       at: points.title,
-      title: 'LegBand'
+      title: 'LegBand',
     })
 
     if (sa) {
@@ -120,57 +120,57 @@ export default function (part) {
     macro('hd', {
       from: points.pCout,
       to: points.pF,
-      y: points.pA.y - sa - 15
+      y: points.pA.y - sa - 15,
     })
     macro('hd', {
       from: points.pF,
       to: points.pE,
-      y: points.pA.y - sa - 15
+      y: points.pA.y - sa - 15,
     })
     macro('hd', {
       from: points.pE,
       to: points.pA,
-      y: points.pA.y - sa - 15
+      y: points.pA.y - sa - 15,
     })
     macro('hd', {
       from: points.pHout,
       to: points.pG,
-      y: points.pG.y + sa + 15
+      y: points.pG.y + sa + 15,
     })
     macro('ld', {
       from: points.pC,
       to: points.pB1,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.pB1,
       to: points.pB2,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.pB2,
       to: points.pB3,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.pB3,
       to: points.pH,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.pA,
       to: points.pG,
-      d: 15 + sa
+      d: 15 + sa,
     })
     macro('vd', {
       from: points.pE,
       to: points.pJ,
-      x: points.pJ.x - 15
+      x: points.pJ.x - 15,
     })
     macro('vd', {
       from: points.pF,
       to: points.pA,
-      x: points.pF.x - 15
+      x: points.pF.x - 15,
     })
   }
 

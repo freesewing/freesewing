@@ -9,7 +9,7 @@ export default (part) => {
     at: points.title,
     nr: 4,
     title: 'sleeve',
-    prefix: 'test'
+    prefix: 'test',
   })
 
   return box(part, 200, 70)

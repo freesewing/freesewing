@@ -12,7 +12,7 @@ export default {
   optionGroups: {
     fit: ['bicepsEase', 'chestEase', 'cuffEase', 'hipsEase', 'ribbingStretch'],
     style: ['lengthBonus', 'sleeveLengthBonus', 'ribbingHeight'],
-    advanced: ['acrossBackFactor', 'backNeckCutout']
+    advanced: ['acrossBackFactor', 'backNeckCutout'],
   },
   measurements: [
     'biceps',
@@ -25,7 +25,7 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   parts: ['waistband', 'cuff'],
   dependencies: {
@@ -39,7 +39,7 @@ export default {
     pocket: 'front',
     pocketFacing: 'pocket',
     hoodCenter: 'hoodSide',
-    hoodSide: ['front', 'back']
+    hoodSide: ['front', 'back'],
   },
   inject: {
     frontBase: 'base',
@@ -49,7 +49,7 @@ export default {
     sleeveBase: 'sleevecap',
     sleeve: 'sleeveBase',
     pocket: 'front',
-    pocketFacing: 'pocket'
+    pocketFacing: 'pocket',
   },
   hide: ['base', 'frontBase', 'backBase', 'sleeveBase', 'sleevecap'],
   options: {
@@ -93,6 +93,6 @@ export default {
     lengthBonus: { pct: 10, min: 0, max: 20 },
     sleeveLengthBonus: { pct: 2, min: 0, max: 10 },
     ribbingStretch: { pct: 5, min: 0, max: 10 },
-    ribbingHeight: { pct: 10, min: 4, max: 20 }
-  }
+    ribbingHeight: { pct: 10, min: 4, max: 20 },
+  },
 }

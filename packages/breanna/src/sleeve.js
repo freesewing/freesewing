@@ -12,7 +12,7 @@ export default (part) => {
     snippets,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Wrist
@@ -88,26 +88,26 @@ export default (part) => {
     macro('vd', {
       from: points.wristLeft,
       to: points.bicepsLeft,
-      x: points.bicepsLeft.x - sa - 15
+      x: points.bicepsLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.wristLeft,
       to: points.sleeveTip,
-      x: points.bicepsLeft.x - sa - 30
+      x: points.bicepsLeft.x - sa - 30,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - sa - 30
+      y: points.sleeveTip.y - sa - 30,
     })
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,
-      y: points.wristLeft.y + sa + 30
+      y: points.wristLeft.y + sa + 30,
     })
     macro('pd', {
       path: paths.sleevecap.reverse(),
-      d: -1 * sa - 15
+      d: -1 * sa - 15,
     })
   }
   return part

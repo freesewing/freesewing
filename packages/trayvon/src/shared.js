@@ -36,7 +36,7 @@ export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
     points.notch2 = points.tip.shift(-135, options.tipWidth / 5)
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['notch1', 'notch2', 'mid']
+      on: ['notch1', 'notch2', 'mid'],
     })
   }
   paths.seam = new Path()
@@ -55,29 +55,29 @@ export const tieShapeDimensions = (part, lining = false) => {
   macro('hd', {
     from: points.tipLeft,
     to: points.tipRight,
-    y: points.tip.y - 15
+    y: points.tip.y - 15,
   })
   macro('vd', {
     from: points.tipRight,
     to: points.tip,
-    x: points.tipRight.x + 15
+    x: points.tipRight.x + 15,
   })
   if (lining) {
     macro('vd', {
       from: points.cutRight,
       to: points.tip,
-      x: points.cutRight.x + 30
+      x: points.cutRight.x + 30,
     })
   } else {
     macro('hd', {
       from: points._tmp3,
       to: points._tmp1,
-      y: points.midLeft.y + 15
+      y: points.midLeft.y + 15,
     })
     macro('vd', {
       from: points.mid,
       to: points.tip,
-      x: points.tipRight.x + 30
+      x: points.tipRight.x + 30,
     })
     paths.hint = new Path()
       .move(points._tmp3)

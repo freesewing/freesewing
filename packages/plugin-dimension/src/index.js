@@ -72,7 +72,7 @@ export default {
         svg.attributes.set('freesewing:plugin-dimension', version)
         svg.defs += markers
       }
-    }
+    },
   },
   macros: {
     // horizontal
@@ -130,6 +130,6 @@ export default {
           if (id.slice(0, prefix.length) === prefix) delete this[type][id]
         }
       }
-    }
-  }
+    },
+  },
 }

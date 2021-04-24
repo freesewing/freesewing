@@ -5,18 +5,18 @@ const colors = {
     primary: darkBg,
     secondary: lightBg,
     link: '#74c0fc',
-    paper: '#FFF'
+    paper: '#FFF',
   },
   dark: {
     primary: lightBg,
     secondary: darkBg,
     link: '#74c0fc',
-    paper: '#000'
-  }
+    paper: '#000',
+  },
 }
 const asTitle = {
   fontFamily: 'Ubuntu',
-  fontWeight: '700'
+  fontWeight: '700',
 }
 const important = '!important'
 
@@ -24,8 +24,8 @@ const getTheme = (mode) => {
   let c = colors[mode]
   let forceColor = {
     root: {
-      color: c.primary + important
-    }
+      color: c.primary + important,
+    },
   }
   return {
     overrides: {
@@ -37,28 +37,28 @@ const getTheme = (mode) => {
       MuiSlider: {
         container: { padding: '25px 0' },
         track: { height: '4px' },
-        thumb: { width: '16px', height: '16px' }
+        thumb: { width: '16px', height: '16px' },
       },
       MuiToolbar: {
         root: {
           maxWidth: '1600px',
           margin: 'auto',
-          width: '100%'
-        }
-      }
+          width: '100%',
+        },
+      },
     },
     palette: {
       primary: {
-        main: c.primary
+        main: c.primary,
       },
       secondary: {
-        main: c.secondary
+        main: c.secondary,
       },
       type: mode,
       background: {
         paper: c.paper,
-        default: c.secondary
-      }
+        default: c.secondary,
+      },
     },
     typography: {
       fontFamily: [
@@ -72,10 +72,10 @@ const getTheme = (mode) => {
         'sans-serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"'
-      ].join(',')
+        '"Segoe UI Symbol"',
+      ].join(','),
     },
-    themeName: mode
+    themeName: mode,
   }
 }
 

@@ -47,7 +47,7 @@ export const backSideBoundary = (part, flip = false) => {
       'bsHips',
       'bsHem',
       'bsArmholeHollowCp1',
-      'bsArmholeCp2'
+      'bsArmholeCp2',
     ]) {
       points[p] = points[p].flipX(points.armhole)
     }

@@ -9,7 +9,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Clear paths from Brian, but keep sleevecap
@@ -43,7 +43,7 @@ export default function (part) {
   if (complete) {
     macro('grainline', {
       from: new Point(0, points.wristLeft.y),
-      to: new Point(0, points.backPitch.y)
+      to: new Point(0, points.backPitch.y),
     })
     if (sa) {
       if (options.ribbing) paths.sa = paths.seam.offset(sa)
@@ -65,22 +65,22 @@ export default function (part) {
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,
-      y: points.wristLeft.y + hemSa + 15
+      y: points.wristLeft.y + hemSa + 15,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - sa - 15
+      y: points.sleeveTip.y - sa - 15,
     })
     macro('vd', {
       from: points.wristLeft,
       to: points.bicepsLeft,
-      x: points.bicepsLeft.x - sa - 15
+      x: points.bicepsLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.wristLeft,
       to: points.sleeveTip,
-      x: points.bicepsLeft.x - sa - 30
+      x: points.bicepsLeft.x - sa - 30,
     })
   }
 
