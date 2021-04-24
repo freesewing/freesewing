@@ -23,15 +23,24 @@ crossSeamCurveStart:
 crossSeamCurveBend:
   title: Cross seam bend
   description: Controls the curvature of the cross seam
+crossSeamCurveAngle:
+  title: Cross seam angle
+  description: Controls the angle of the cross seam
 crotchSeamCurveStart:
   title: Start of the crotch seam curve
   description: Controls how far into the crotch seam we start to curve
 crotchSeamCurveBend:
   title: Crotch seam bend
   description: Controls the curvature of the crotch seam
+crotchSeamCurveAngle:
+  title: Crotch seam angle
+  description: Controls the angle of the crotch seam
 waistBalance:
   title: Waist balance
   description: Controls the horizontal position of the waist relative to the seat
+waistbandWidth:
+  title: Waistband width
+  description: The width of the waistband
 grainlinePosition:
   title: Grainline position
   description: Controls the horizontal position of the leg relative to the seat
