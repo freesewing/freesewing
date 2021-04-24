@@ -17,7 +17,7 @@
     "lint": "eslint --fix 'src/*.js'",
     "kickstart": "npx lerna bootstrap && npx lerna run build --no-bail && npx lerna run build",
     "clean": "rimraf dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna run test",
     "jsonlint": "yarn --silent jsonlint:files | xargs -n1 jsonlint -q -c && echo \"jsonlint: no lint errors\"",
     "jsonlint:files": "find . -name \"*.json\" | grep -v -f .eslintignore",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/**/example/src/*'",
