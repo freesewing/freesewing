@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.15.1 (2021-04-24)
+
+### Fixed
+
+ - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

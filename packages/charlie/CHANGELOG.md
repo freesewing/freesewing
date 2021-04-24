@@ -1,7 +1,11 @@
 # Change log for: @freesewing/charlie
 
 
-## 2.15.1 (2021-04-20)
+## 2.15.1 (2021-04-24)
+
+### Added
+
+ - Added a curved waistband option
 
 ### Fixed
 

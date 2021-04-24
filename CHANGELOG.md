@@ -1,13 +1,23 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.15.1 (2021-04-20)
+## 2.15.1 (2021-04-24)
 
 ### charlie
+
+#### Added
+
+ - Added a curved waistband option
 
 #### Fixed
 
  - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options from being zero
+
+### core
+
+#### Fixed
+
+ - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
 
 ### simon
 
