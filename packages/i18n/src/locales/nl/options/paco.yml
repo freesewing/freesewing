@@ -11,9 +11,6 @@ backPockets:
 elasticatedHem:
   title: Elastische zoom
   description: Of je wel of niet elastiek aan de zoom wil
-waistElastic:
-  title: Breedte taille elastiek
-  description: Breedte van de elastiek aan de taille
 ankleElastic:
   title: Breedte enkel/zoom elastiek
   description: Breedte van de (optionele) elastiek aan de enkel/zoom
