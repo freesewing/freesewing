@@ -231,6 +231,9 @@ export default {
     shoulderSlopeReduction: { pct: 30, min: 0, max: 50 },
 
     buttonLength: { pct: 30, min: 30, max: 60 },
-    buttons: { count: 2, min: 1, max: 3 },
+    buttons: {
+      list: ['1', '2', '3'],
+      dflt: '2',
+    },
   },
 }
