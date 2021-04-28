@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.15.2 (2021-04-28)
+
+### core
+
+#### Fixed
+
+ - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
+
+### jaeger
+
+#### Fixed
+
+ - Draft a third button when it's requested See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+
 ## 2.15.1 (2021-04-24)
 
 ### charlie

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/jaeger
 
 
+## 2.15.2 (2021-04-28)
+
+### Fixed
+
+ - Draft a third button when it's requested See [#973](https://github.com/freesewing/freesewing/issues/973)
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed
