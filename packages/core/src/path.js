@@ -420,7 +420,7 @@ function joinPaths(paths, closed = false, raise = false) {
 }
 
 /** Returns a point that lies at distance along this */
-Path.prototype.shiftAlong = function (distance) {
+Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
   if (typeof distance !== 'number')
     this.raise.error('Called `Path.shiftAlong(distance)` but `distance` is not a number')
   let len = 0
@@ -439,7 +439,8 @@ Path.prototype.shiftAlong = function (distance) {
         { x: op.to.x, y: op.to.y }
       )
       let thisLen = bezier.length()
-      if (len + thisLen > distance) return shiftAlongBezier(distance - len, bezier)
+      if (len + thisLen > distance)
+        return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
       else len += thisLen
     }
     current = op.to
@@ -450,15 +451,14 @@ Path.prototype.shiftAlong = function (distance) {
 }
 
 /** Returns a point that lies at fraction along this */
-Path.prototype.shiftFractionAlong = function (fraction) {
+Path.prototype.shiftFractionAlong = function (fraction, stepsPerMm = 25) {
   if (typeof fraction !== 'number')
     this.raise.error('Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number')
-  return this.shiftAlong(this.length() * fraction)
+  return this.shiftAlong(this.length() * fraction, stepsPerMm)
 }
 
 /** Returns a point that lies at distance along bezier */
-function shiftAlongBezier(distance, bezier) {
-  let steps = 100
+function shiftAlongBezier(distance, bezier, steps = 100) {
   let previous, next, t, thisLen
   let len = 0
   for (let i = 0; i <= steps; i++) {

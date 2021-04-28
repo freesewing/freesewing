@@ -38,8 +38,8 @@ it("Should offset a curve where cp1 = start", () => {
     .curve(new a.Point(0, 0), new a.Point(123, 34), new a.Point(23, 4));
   a.paths.offset = a.paths.curve.offset(10);
   pattern.render();
-  expect(round(a.paths.offset.bottomRight.x)).to.equal(72.68);
-  expect(round(a.paths.offset.bottomRight.y)).to.equal(26.49);
+  expect(round(a.paths.offset.bottomRight.x)).to.equal(72.63);
+  expect(round(a.paths.offset.bottomRight.y)).to.equal(26.48);
 });
 
 it("Should offset a curve where cp2 = end", () => {
@@ -219,6 +219,30 @@ it("Should throw error when shifting along path further than it's long", () => {
     .line(new a.Point(0, 40))
     .line(new a.Point(200, 400));
   expect(() => a.paths.test.shiftAlong(500)).to.throw();
+});
+
+it("Should shift along with sufficient precision", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.paths.test = new a.Path()
+    .move(new a.Point(0, 0))
+    .curve(new a.Point(123, 123), new a.Point(-123, 456), new a.Point(456, -123))
+  a.points.a = a.paths.test.shiftAlong(100)
+  a.points.b = a.paths.test.reverse().shiftAlong(a.paths.test.length()-100)
+  expect(a.points.a.dist(a.points.b)).to.below(0.05);
+});
+
+it("Should shift fraction with sufficient precision", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+  a.paths.test = new a.Path()
+    .move(new a.Point(0, 0))
+    .curve(new a.Point(123, 123), new a.Point(-123, 456), new a.Point(456, -123))
+  a.points.a = a.paths.test.shiftFractionAlong(0.5)
+  a.points.b = a.paths.test.reverse().shiftFractionAlong(0.5)
+  expect(a.points.a.dist(a.points.b)).to.below(0.05);
 });
 
 it("Should shift a fraction along a line", () => {
@@ -600,12 +624,12 @@ it("Should split a path on a curve", () => {
   let halves = a.paths.test.split(a.points.split);
   let curve = halves[0].ops.pop();
   expect(curve.type).to.equal("curve");
-  expect(round(curve.cp1.x)).to.equal(35.2);
-  expect(round(curve.cp1.y)).to.equal(21.6);
-  expect(round(curve.cp2.x)).to.equal(46.29);
-  expect(round(curve.cp2.y)).to.equal(-15.02);
-  expect(round(curve.to.x)).to.equal(72.9);
-  expect(round(curve.to.y)).to.equal(9.03);
+  expect(round(curve.cp1.x)).to.equal(35.08);
+  expect(round(curve.cp1.y)).to.equal(21.64);
+  expect(round(curve.cp2.x)).to.equal(46.19);
+  expect(round(curve.cp2.y)).to.equal(-14.69);
+  expect(round(curve.to.x)).to.equal(72.53);
+  expect(round(curve.to.y)).to.equal(8.71);
 });
 
 it("Should split a path on a line", () => {
@@ -750,3 +774,4 @@ it("Should overwrite a path attribute", () => {
     .attr("class", "overwritten", true);
   expect(a.paths.line.attributes.get("class")).to.equal("overwritten");
 });
+
