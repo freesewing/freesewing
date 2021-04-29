@@ -1,0 +1,55 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: conf
+    versions:
+    - 10.0.0
+    - 9.0.2
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: husky
+    versions:
+    - 5.0.9
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.2.0
+  - dependency-name: rollup
+    versions:
+    - 2.41.2
+    - 2.41.5
+    - 2.42.3
+    - 2.44.0
+    - 2.45.1
+  - dependency-name: "@rollup/plugin-node-resolve"
+    versions:
+    - 11.2.0
+  - dependency-name: commander
+    versions:
+    - 7.1.0
+  - dependency-name: "@commitlint/cli"
+    versions:
+    - 12.0.1
+  - dependency-name: "@commitlint/config-conventional"
+    versions:
+    - 12.0.0
+    - 12.0.1
+  - dependency-name: "@fontsource/permanent-marker"
+    versions:
+    - 4.2.0
+    - 4.2.1
+  - dependency-name: react-intl
+    versions:
+    - 5.17.0
+  - dependency-name: eslint-config-standard
+    versions:
+    - 16.0.2
