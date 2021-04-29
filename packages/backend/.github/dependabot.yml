@@ -1,0 +1,81 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@freesewing/prettier-config"
+    versions:
+    - 2.12.1
+    - 2.13.1
+    - 2.13.2
+    - 2.14.0
+    - 2.15.0
+    - 2.15.1
+  - dependency-name: tlds
+    versions:
+    - 1.218.0
+    - 1.219.0
+    - 1.220.0
+    - 1.221.0
+  - dependency-name: "@freesewing/pattern-info"
+    versions:
+    - 2.12.1
+    - 2.13.1
+    - 2.13.2
+    - 2.14.0
+    - 2.15.0
+    - 2.15.1
+  - dependency-name: "@freesewing/utils"
+    versions:
+    - 2.12.1
+    - 2.13.1
+    - 2.13.2
+    - 2.14.0
+    - 2.15.0
+    - 2.15.1
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.10
+    - 7.13.13
+    - 7.13.14
+    - 7.13.15
+  - dependency-name: sharp
+    versions:
+    - 0.27.1
+    - 0.27.2
+    - 0.28.0
+  - dependency-name: dateformat
+    versions:
+    - 4.5.0
+  - dependency-name: query-string
+    versions:
+    - 6.13.8
+    - 6.14.0
+    - 6.14.1
+  - dependency-name: mongoose
+    versions:
+    - 5.11.14
+    - 5.11.15
+    - 5.11.16
+    - 5.11.17
+    - 5.11.18
+    - 5.11.19
+    - 5.12.0
+    - 5.12.1
+  - dependency-name: "@babel/node"
+    versions:
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.10
+  - dependency-name: "@babel/cli"
+    versions:
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
