@@ -11,8 +11,8 @@ We have decided to start a newsletter, so you should subscribe to it.
 
 The next contributor call is on [1 May 2021](https://github.com/freesewing/freesewing/issues/962).
 
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/).
-Notes and todos are [available on Github](https://todo.freesewing.org/).
+The call is on [discord.freesewing.org](https://discord.freesewing.org/).
+Check the meetings voice/video channel.
 
 
 ##### COVID-19 face mask pattern
