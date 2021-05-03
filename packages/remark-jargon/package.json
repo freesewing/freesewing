@@ -34,7 +34,7 @@
     "remark-html": "^12.0.0"
   },
   "dependencies": {
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^3.0.0"
   },
   "devDependencies": {},
   "files": [
