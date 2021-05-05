@@ -1,6 +1,12 @@
 # Change log for: @freesewing/shin
 
 
+## 2.15.3 (2021-05-05)
+
+### Fixed
+
+ - Fixed issue where a legReduction of zero broke the draft See [#997](https://github.com/freesewing/freesewing/issues/997)
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed
