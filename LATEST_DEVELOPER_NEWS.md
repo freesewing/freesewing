@@ -1,18 +1,14 @@
-##### Next contributor call: Saturday 1 May
+##### Next contributor call on 15 May
 
-Note that the next contributor call is on Saturday the 1sth of May.
+The next contributor call is on [15 May 2021](https://github.com/freesewing/freesewing/issues/998).
 
-For details and timing (including different time zones) 
-check [issue #962](https://github.com/freesewing/freesewing/issues/962)
+The call is on [discord.freesewing.org](https://discord.freesewing.org/).
+Check the meetings voice/video channel.
 
 
 ##### New bartack plugin
 
 We have [a new plugin to add bartacks to your pattern](https://freesewing.dev/reference/plugins/bartack/).
-
-##### New rmad macro
-
-The [dimensions plugin](/reference/plugins/dimensions/) now provides a new [rmad macro](https://freesewing.dev/reference/macros/rmad').
 
 ##### New buttonhole-start and buttonhole-end snippets
 
