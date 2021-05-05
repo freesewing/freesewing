@@ -1,3 +1,11 @@
+2.15.3:
+  date: 2021-05-05
+
+  Fixed:
+    shin:
+      - Fixed issue where a legReduction of zero broke the draft
+        See [#997](https://github.com/freesewing/freesewing/issues/997)
+
 2.15.2:
   date: 2021-04-28
 
