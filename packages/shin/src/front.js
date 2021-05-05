@@ -52,10 +52,13 @@ export default function (part) {
   points.midSideBulgeCpBottom = points.midSideCpBottom.shift(angle * -1, bulge * -1)
 
   // Now reduce the legs
-  points.reducedLegInner = new Path()
-    .move(points.legSide)
-    .curve_(points.legSideCp, points.legInner)
-    .shiftFractionAlong(1 - options.legReduction)
+  points.reducedLegInner =
+    options.legReduction === 0
+      ? points.legInner
+      : new Path()
+          .move(points.legSide)
+          .curve_(points.legSideCp, points.legInner)
+          .shiftFractionAlong(1 - options.legReduction)
   points.reducedLegInnerCp = points.legInner.rotate(90, points.reducedLegInner)
   points.reducedCrossSeam = new Path()
     .move(points.crossSeam)
