@@ -34,7 +34,7 @@
     "github-username": "^6.0.0",
     "globby": "^11.0.1",
     "handlebars": "^4.7.6",
-    "inquirer": "^7.3.3",
+    "inquirer": "^8.0.0",
     "make-dir": "^3.1.0",
     "normalize-path": "^3.0.0",
     "ora": "^5.3.0",
