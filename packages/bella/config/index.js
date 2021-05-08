@@ -37,7 +37,7 @@ export default {
     // FIXME: Measurement from waist up to armhole (for sleeveless)
   ],
   dependencies: {
-    back: 'frontSideDart',
+    frontSideDart: 'back',
   },
   inject: {},
   hide: [],
