@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bella
 
 
+## 2.15.4 (2021-05-08)
+
+### Fixed
+
+ - Fixed incorrect part dependencies See [#1002](https://github.com/freesewing/freesewing/issues/1002)
+
 ## 2.15.0 (2021-04-15)
 
 ### Fixed
