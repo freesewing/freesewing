@@ -136,7 +136,7 @@ patron-4: Steuermann
 patron-8: Kapitän
 patronHelp: Sollten Sie Fragen haben, oder Ihren Patron-Status ändern wollen, können Sie uns gerne kontaktieren
 patron: Gönner
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
+patronPitch: Wenn Sie unsere Arbeit für wertvoll halten und jeden Monat ein paar Münzen übrig haben, ohne in finanzielle Not zu geraten, unterstützen Sie bitte unsere Arbeit
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
 patternOptions: Musteroptionen
@@ -175,7 +175,7 @@ settings: Einstellungen
 sewingHelp: Nähhilfe
 sewingPatternsForNonAveragePeople: Schnittmuster für nicht-durchschnittliche Menschen
 share: Teilen
-shareFreesewing: Share FreeSewing
+shareFreesewing: Teile FreeSewing
 showcase: Galerie genähter Modelle
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signUp: Registrieren
@@ -312,7 +312,7 @@ zoomOut: Verkleinern
 zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
 savePattern-txt: Dieses Muster in Ihrem FreeSewing-Konto speichern
 comparePattern: Schnittmuster vergleichen
-showPattern: Show pattern
+showPattern: Schnittmuster anzeigen
 comparePattern-txt: Vergleichen Sie Ihr Muster mit einer Reihe von Standardgrößen, um mögliche Passungsprobleme zu prüfen
 recreatePattern: Schnittmuster neu erstellen
 recreatePattern-txt: Wähle eine andere Person und erstelle dann dieses Muster für diese Person neu
