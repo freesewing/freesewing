@@ -75,5 +75,5 @@ patrons:
   term: Gönner
   description: 'Gönner unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community.'
 msf:
-  term: msf
-  description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"
+  term: MSF
+  description: "Médecins Sans Frontières/Ärzte ohne Grenzen - Siehe <a href='https://msf.org/'>msf.org</a>"
