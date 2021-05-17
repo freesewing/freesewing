@@ -16972,9 +16972,9 @@ tiny-warning@^1.0.2:
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 tlds@^1.207.0:
-  version "1.218.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.218.0.tgz#f31804891c650c136f88cb8ec2f043577b5f5afd"
-  integrity sha512-JpD3eSrYaIFlU/OvtI5WTEK+v5qXZSeUifz4hT2bJsJKx5ykjZvg6i5yXVBJNjoN3XbTCtryc7H5v8B16yHfMg==
+  version "1.221.1"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.221.1.tgz#6cf6bff5eaf30c5618c5801c3f425a6dc61ca0ad"
+  integrity sha512-N1Afn/SLeOQRpxMwHBuNFJ3GvGrdtY4XPXKPFcx8he0U9Jg9ZkvTKE1k3jQDtCmlFn44UxjVtouF6PT4rEGd3Q==
 
 tmp@^0.0.33:
   version "0.0.33"
