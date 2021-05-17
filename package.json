@@ -76,7 +76,7 @@
     "lerna": "^3.22.1",
     "mocha": "^8.1.0",
     "mustache": "^4.0.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^6.0.0",
     "nyc": "^15.1.0",
     "open-color": "^1.7.0",
     "prettier": "^2.0.5",
