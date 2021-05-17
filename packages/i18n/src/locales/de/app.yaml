@@ -12,7 +12,7 @@ applyThisLayout: Wenden Sie dieses Layout an
 areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
 askForHelp: Nach Hilfe fragen
 automatic: Automatisch
-averagePeopleDoNotExist: 'Durchschnittliche Menschen existieren nicht'
+averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
 awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
@@ -72,7 +72,7 @@ drafts: Entwürfe
 draftSettings: Entwurfeinstellungen
 dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie es manuell mit der Schaltfläche unten aus
 emailAddress: Email Adresse
-emailWorksToo: 'Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch'
+emailWorksToo: "Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch"
 enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
@@ -81,7 +81,7 @@ fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
 filterByPattern: Nach Muster filtern
 filterPatterns: Filtern der Schnittmuster
-forgotLoginInstructions: 'Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken'
+forgotLoginInstructions: "Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
 github: GitHub
@@ -134,7 +134,7 @@ ourRevenuePledge: Unser Umsatzversprechen
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
+patronHelp: Sollten Sie Fragen haben, oder Ihren Patron-Status ändern wollen, können Sie uns gerne kontaktieren
 patron: Gönner
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
@@ -156,7 +156,7 @@ remove: Löschen
 removeThing: '{thing} entfernen'
 reportThisOnGithub: Dies auf GitHub melden
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: 'Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht.'
+resendActivationEmailMessage: "Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht."
 resendActivationEmail: Aktivierungs E-Mail erneut versenden
 resetPassword: Passwort zurücksetzen
 reset: Rücksetzen
@@ -198,7 +198,7 @@ twitter: Twitter
 txt-footer: Freesewing wird von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Gönner gemacht
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
-txt-tier8: 'Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!'
+txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
 txt-tiers: 'FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt'
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch die imperialen Einheiten. Wählen Sie einfach aus, welches Sie hier verwenden möchten. (Standardmäßig werden die in Ihrem Konto konfigurierten Einheiten verwendet).
 updated: Aktualisierte
@@ -240,8 +240,8 @@ noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster 
 modelFirst: Beginne damit Masse hinzuzufügen
 noModel: Sie haben (noch) keine Masse hinzugefügt. FreeSewing kann massgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Masse.
 noModel2: Das erste, was Sie tun sollten, ist, eine Person hinzuzufügen und das Massband hervorzuholen.
-noUserBrowsingTitle: 'Sie können nicht nur alle Benutzer durchsuchen'
-noUserBrowsingText: 'Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?'
+noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
+noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
 usePatternMeasurements: 'Verwende dir Mass des Originalnähmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
