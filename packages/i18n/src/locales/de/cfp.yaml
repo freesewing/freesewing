@@ -24,10 +24,10 @@ noRequiredMeasurements: Dieses Muster hat keine erforderlichen Masse
 howtoAddMeasurements: Um Masse als Anforderung zu definieren, fügen Sie sie in den <b>Masse-</b>Abschnitt der Konfigurationsdatei des Schnittmusters ein.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter
 clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
+designMode: Designmodus
+exportMode: Exportmodus
+thingIsEnabled: '{thing} ist aktiviert'
+thingIsDisabled: '{thing} ist deaktiviert'
 turnOn: Aktivieren
 turnOff: Deaktivieren
 validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benennen Sie ihr Muster also entsprechend, wie in etwa:"

@@ -6,8 +6,8 @@ albert:
   description: Albert ist eine Schürze.
   title: Schürze Albert
 bella:
-  description: Bella is a basic body block for womenswear.
-  title: Bella body block
+  description: Bella ist ein Grundschnitt für Frauen.
+  title: Grundschnitt Bella
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
   title: Fliege Benjamin
@@ -33,11 +33,11 @@ cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
   title: Korsett Cathrin
 charlie:
-  description: Charlie is a chino trouser pattern.
-  title: Charlie chinos
+  description: Charlie ist ein Schnittmuster für Chinohosen.
+  title: Chinohose Charlie
 cornelius:
-  description: Cornelius are cycling breeches based on the Keystone drafting method.
-  title: Cornelius cycling breeches
+  description: Cornelius ist eine Kniebundhose zum Fahrradfahren, basierend auf der Entwurfsmethode nach Keystone.
+  title: Kniebundhose zum Radfahren Cornelius
 diana:
   description: Diana ist ein Oberteil mit einer drapierten Halslinie.
   title: Drapiertes Oberteil Diana
@@ -51,8 +51,8 @@ holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
   title: Holmes Deerstalker-Mütze
 hortensia:
-  description: 'Hortensia is a handbag'
-  title: Hortensia handbag
+  description: 'Hortensia ist eine Handtasche'
+  title: Handtasche Hortensia
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
   title: Hoodie Huey

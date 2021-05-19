@@ -33,8 +33,8 @@ frontPocketFacing:
   title: Front pocket facing
   description: Controls how far the pocket facing extends into the pocket bag
 beltLoops:
-  title: Belt loops
-  description: Controls the amount of belt loops
+  title: Gürtelschlaufen
+  description: Steuert die Anzahl der Gürtelschlaufen
 flyCurve:
   title: Fly curve
   description: Controls the curvature of the fly J-seam
