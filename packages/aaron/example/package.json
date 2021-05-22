@@ -7,28 +7,28 @@
     "@fontsource/permanent-marker": "latest",
     "@fontsource/roboto-mono": "latest",
     "@fontsource/ubuntu": "latest",
-    "@freesewing/components": "next",
+    "@freesewing/components": "latest",
     "@freesewing/core": "latest",
     "@freesewing/css-theme": "latest",
     "@freesewing/i18n": "latest",
     "@freesewing/models": "latest",
-    "@freesewing/mui-theme": "next",
+    "@freesewing/mui-theme": "latest",
     "@freesewing/pattern-info": "latest",
     "@freesewing/plugin-bundle": "latest",
+    "@freesewing/plugin-theme": "latest",
     "@freesewing/plugin-i18n": "latest",
     "@freesewing/plugin-svgattr": "latest",
-    "@freesewing/plugin-theme": "latest",
     "@freesewing/utils": "latest",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^v4.0.0-alpha.57",
-    "file-saver": "^2.0.5",
     "pattern": "./..",
     "prismjs": "1.23.0",
-    "react": "./../../../node_modules/react",
-    "react-dom": "./../../../node_modules/react-dom",
-    "react-markdown": "6.0.2",
-    "react-scripts": "./../../../node_modules/react-scripts"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "file-saver": "^2.0.5",
+    "react-markdown": "6.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,7 +43,6 @@
     "defaults"
   ],
   "devDependencies": {
-    "babel-plugin-prismjs": "2.0.1",
-    "react-intl": "./../../../node_modules/react-intl"
+    "babel-plugin-prismjs": "2.0.1"
   }
 }
