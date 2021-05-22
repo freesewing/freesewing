@@ -405,7 +405,7 @@ function configurePatternExample(pkg, config) {
     'packages',
     'create-freesewing-pattern',
     'template',
-    'default',
+    'freesewing',
     'example'
   )
   let dest = path.join(config.repoPath, 'packages', pkg, 'example')
