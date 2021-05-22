@@ -64,6 +64,10 @@ node_modules
 dist
 build
 
+# yarn
+.yarn
+.yarnrc
+
 # Mock registry (verdaccio)
 .registry
 
