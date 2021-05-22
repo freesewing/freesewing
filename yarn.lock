@@ -1501,10 +1501,10 @@
     intl-messageformat "9.6.13"
     tslib "^2.1.0"
 
-"@freesewing/components@^2.15.4":
+"@freesewing/i18n@^2.15.4":
   version "2.15.4"
-  resolved "https://registry.yarnpkg.com/@freesewing/components/-/components-2.15.4.tgz#84f8eeecf74b4577704168dd7225410674a6370c"
-  integrity sha512-RH42UNtROE+IBg11vPo8PFqMCt47V6Mjz8ioMmlUPN87FcbKYLrBo6GetXbwh3NYcNpYkJNF71ocoX1isoUU6w==
+  resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.15.4.tgz#78d498d453aa68f57fc1d43474b1694082b60c62"
+  integrity sha512-xw5fq3KY2pLssaefuCR6PX1/Zy5wQPDcstfZNE9nb53lS4Zc/oHD59JaJCfy73j86c+fBcUcYQLN8oCYeHp8Fw==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -2421,7 +2421,7 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/lab@^4.0.0-alpha.6", "@material-ui/lab@^v4.0.0-alpha.6":
+"@material-ui/lab@^4.0.0-alpha.6", "@material-ui/lab@^v4.0.0-alpha.57":
   version "4.0.0-alpha.58"
   resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.58.tgz#c7ebb66f49863c5acbb20817163737caa299fafc"
   integrity sha512-GKHlJqLxUeHH3L3dGQ48ZavYrqGOTXkFkiEiuYMAnAvXAZP4rhMIqeHOPXSUQan4Bd8QnafDcpovOSLnadDmKw==
@@ -12069,15 +12069,10 @@ p-defer@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
   integrity sha1-n26xgvbJqozXQwBKfU+WsZaw+ww=
 
-p-each-series@^2.1.0:
+p-each-series@^2.1.0, p-each-series@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-each-series/-/p-each-series-2.2.0.tgz#105ab0357ce72b202a8a8b94933672657b5e2a9a"
   integrity sha512-ycIL2+1V32th+8scbpTvyHNaHe02z0sjgh91XXjAk+ZeXoPN4Z46DVUnzdso0aX4KckKw0FNNFHdjZ2UsZvxiA==
-
-p-each-series@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/p-each-series/-/p-each-series-3.0.0.tgz#d1aed5e96ef29864c897367a7d2a628fdc960806"
-  integrity sha512-lastgtAdoH9YaLyDa5i5z64q+kzOcQHsQ5SsZJD3q0VEyI8mq872S3geuNbRUQLVAE9siMfgKrpj7MloKFHruw==
 
 p-event@^4.1.0, p-event@^4.2.0:
   version "4.2.0"
