@@ -4,11 +4,11 @@ packageManager: Package manager
 patternName: Pattern name
 patternType: Pattern type
 patternCreated: Your pattern skeleton has been created at
-runTheseCommands: To get started, run these two commands
+runTheseCommands: To get started, run this command
 startRollup: In one terminal, start the rollup bundler in watch mode
-startWebpack: And in another terminal, run the webpack dev server
+startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Developer documentation is available at
-talkToUs: For questions, feedback or suggestions, come talk to us in our chat room
+talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Draft your pattern
 testYourPattern: Test your pattern
 draftThing: 'Draft {thing}'
