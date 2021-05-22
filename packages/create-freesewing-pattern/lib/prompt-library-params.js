@@ -134,9 +134,9 @@ module.exports = async opts => {
 
     config.set('author', info.author)
     config.set('manager', info.manager)
-    config.set('template', 'default')
+    config.set('template', 'freesewing')
     config.set('license', 'MIT')
-    info.template = 'default'
+    info.template = 'freesewing'
 
     return {
       ...info,

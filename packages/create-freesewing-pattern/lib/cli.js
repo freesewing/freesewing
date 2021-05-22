@@ -40,9 +40,9 @@ module.exports = async () => {
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
     .option('-v, --skip-version-check', 'proceed even with Node < v10')
     .option(
-      '-t, --template <default|custom>',
+      '-t, --template <freesewing|custom>',
       'package template to use',
-      /^(default|custom)$/,
+      /^(freesewing|custom)$/,
       defaults.template
     )
     .option('-p, --template-path <string>', 'custom package template path')
@@ -84,22 +84,18 @@ module.exports = async () => {
 
 ${strings[params.language]['cfp.runTheseCommands']}:
 
- - ${strings[params.language]['cfp.startRollup']}
-
-  👉  ${chalk.cyan(`cd ${params.shortName} && ${params.manager} start`)}
-
- - ${strings[params.language]['cfp.startWebpack']}
-
   👉  ${chalk.cyan(`cd ${path.join(params.shortName, 'example')} && ${params.manager} start`)}
 
+${strings[params.language]['cfp.startWebpack']}
 
 ${strings[params.language]['cfp.devDocsAvailableAt']}
   ${chalk.bold('https://freesewing.dev/')}
 
 ${strings[params.language]['cfp.talkToUs']}
-  ${chalk.bold('https://chat.freesewing.org/')}
+  ${chalk.bold('https://discord.freesewing.org/')}
 
-`)
+`
+  )
 
   return dest
 }

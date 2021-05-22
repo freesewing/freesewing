@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import postcss from 'rollup-plugin-postcss'
+//import postcss from 'rollup-plugin-postcss'
 import { name, version, description, author, license } from './package.json'
 
 import pkg from './package.json'
@@ -28,9 +28,9 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    postcss({
-      modules: true
-    }),
+    //postcss({
+    //  modules: true
+    //}),
     url({ exclude: ['**/*.svg'] }),
     babel({
       exclude: 'node_modules/**'
