@@ -5,10 +5,6 @@ import '@freesewing/css-theme'
 
 import Pattern from 'pattern'
 
-import rd from 'react-dom'
-
-console.log(window.React1 === React);
-
 const App = (props) => {
   // You can use this to add transations
   /*
