@@ -2,8 +2,17 @@ import React from 'react'
 import freesewing from '@freesewing/core'
 import Workbench from '@freesewing/components/Workbench'
 import '@freesewing/css-theme'
+import Pattern from './pattern/src/index.js'
+/*
+ * The following symlink is required to make this import work:
+ * `root_folder/example/src/pattern => `../../`
+ *
+ * Without it, we can't import the pattern as a local file
+ * since create-react-app does not allow imports outside ./src
+ * If it's imported as a dependency, webpack will cache the
+ * build and there will be no hot-relaoding of changes
+ */
 
-import Pattern from 'pattern'
 
 const App = (props) => {
   // You can use this to add transations
