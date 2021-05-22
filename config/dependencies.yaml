@@ -4,13 +4,13 @@ _types:
       '@freesewing/core': &freesewing '^{{version}}'
       '@freesewing/plugin-bundle': *freesewing
     dev:
-      'react': &react '^16.13.1'
-      'react-dom': &react-dom '^16.13.1'
-      '@babel/plugin-proposal-class-properties': '^7.10.4'
-      'babel-eslint': '^10.1.0'
-      'eslint': '^7.6.0'
-      'babel-jest': '^26.2.2'
-      'jest': '26.2.2'
+      'react': &react '^17.0.2'
+      'react-dom': &react-dom '^17.0.2'
+      '@babel/plugin-proposal-class-properties': '^7.13.0'
+      #'babel-eslint': '^10.1.0'
+      #'eslint': '^7.6.0'
+      #'babel-jest': '^26.2.2'
+      #'jest': '26.2.2'
       '@freesewing/components': *freesewing
       '@freesewing/css-theme': *freesewing
       '@freesewing/i18n': *freesewing
@@ -19,22 +19,22 @@ _types:
       '@freesewing/plugin-buttons': *freesewing
       '@freesewing/plugin-flip': *freesewing
       '@freesewing/utils': *freesewing
-      '@svgr/rollup': '^2.4.1'
-      'cross-env': '^7.0.2'
-      'react-scripts': '^3.4.1'
-      'webpack': '^4.44.1'
-      'rollup': '^2.23.0'
-      '@rollup/plugin-babel': '^5.1.0'
-      'rollup-plugin-terser': '^6.1.0'
-      '@rollup/plugin-commonjs': '^14.0.0'
+      #'@svgr/rollup': '^2.4.1'
+      #'cross-env': '^7.0.2'
+      'react-scripts': '^4.0.3'
+      'webpack': '^5.37.0'
+      'rollup': '^2.48.0'
+      '@rollup/plugin-babel': '^5.3.0'
+      'rollup-plugin-terser': '^7.0.2'
+      '@rollup/plugin-commonjs': '^19.0.0'
       '@rollup/plugin-json': '^4.1.0'
-      '@rollup/plugin-node-resolve': '^8.4.0'
-      'rollup-plugin-peer-deps-external': '^2.2.3'
-      '@material-ui/core': &matui-core '^4.11.0'
-      '@material-ui/icons': &matui-icons '4.9.1'
-      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.56'
+      '@rollup/plugin-node-resolve': '^13.0.0'
+      'rollup-plugin-peer-deps-external': '^2.2.4'
+      '@material-ui/core': &matui-core '^4.11.4'
+      '@material-ui/icons': &matui-icons '^4.11.2'
+      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.57'
       'axios': &axios '0.21.1'
-      'react-intl': &react-intl '^5.4.5'
+      'react-intl': &react-intl '^5.17.6'
       'prop-types': '^15.7.2'
       'mocha': '^8.1.0'
       'chai': '^4.2.0'
@@ -95,33 +95,33 @@ components:
     '@material-ui/core': *matui-core
     '@material-ui/icons': *matui-icons
     '@material-ui/lab': *matui-lab
-    'prismjs': '^1.22.0'
-    'react-markdown': '^5.0.3'
+    'prismjs': '^1.23.0'
+    'react-markdown': '^6.0.2'
     'file-saver': '^2.0.5'
-    'yaml': '^1.10.0'
+    'yaml': '^1.10.2'
 core:
   _:
-    'bezier-js': '^4.0.3'
+    'bezier-js': '^4.1.1'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
   dev:
     'nyc': '^15.1.0'
 create-freesewing-pattern:
   _:
-    'chalk': '^4.1.0'
-    'commander': '^6.0.0'
-    'conf': '^7.1.1'
+    'chalk': '^4.1.1'
+    'commander': '^7.2.0'
+    'conf': '^10.0.1'
     'cp-file': '^9.0.0'
-    'execa': '^4.0.3'
+    'execa': '^5.0.0'
     'git-config-path': '^2.0.0'
     'github-username': '^6.0.0'
-    'globby': '^11.0.1'
-    'handlebars': '^4.7.6'
-    'inquirer': '^7.3.3'
+    'globby': '^11.0.3'
+    'handlebars': '^4.7.7'
+    'inquirer': '^8.0.0'
     'make-dir': '^3.1.0'
     'normalize-path': '^3.0.0'
-    'ora': '^5.3.0'
-    'p-each-series': '^2.1.0'
+    'ora': '^5.4.0'
+    'p-each-series': '^3.0.0'
     'parse-git-config': '^3.0.0'
     'validate-npm-package-name': '^3.0.0'
     'which': '^2.0.2'
@@ -183,10 +183,10 @@ plugin-bundle:
     '@freesewing/plugin-sprinkle': *freesewing
 remark-jargon:
   _:
-    'unist-util-visit': '^2.0.3'
+    'unist-util-visit': '^3.1.0'
   peer:
-    'remark': '^12.0.1'
-    'remark-html': '^12.0.0'
+    'remark': '^13.0.0'
+    'remark-html': '^13.0.1'
 simon:
   peer:
     '@freesewing/brian': *freesewing
@@ -208,7 +208,7 @@ teagan:
     '@freesewing/plugin-bust': *freesewing
 utils:
   peer:
-    'tlds': '^1.207.0'
+    'tlds': '^1.221.1'
     'axios': *axios
 wahid:
   peer:
