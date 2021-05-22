@@ -23,18 +23,18 @@ const createConfig = (component, module) => {
       peerDepsExternal(),
       resolve({ modulesOnly: true }),
       json(),
-      terser({
-        output: {
-          preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-        }
-      })
+      //terser({
+      //  output: {
+      //    preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      //  }
+      //})
     ]
   }
 }
 
 const config = []
 // When developing, you can use this to only rebuild the components you're working on
-let dev = false
+let dev = true
 let only = ['Workbench']
 for (let component of components) {
   if (!dev || only.indexOf(component) !== -1) config.push(createConfig(component, false))

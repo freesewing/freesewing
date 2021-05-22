@@ -30,11 +30,11 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "remark": "^12.0.1",
-    "remark-html": "^12.0.0"
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "dependencies": {
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^3.1.0"
   },
   "devDependencies": {},
   "files": [
@@ -44,7 +44,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

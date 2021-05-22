@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
-import { FormattedMessage } from 'react-intl'
+//import { FormattedMessage } from 'react-intl'
 import Icon from '../Icon'
 import LanguageIcon from '@material-ui/icons/Translate'
 import LightModeIcon from '@material-ui/icons/WbSunny'
@@ -71,7 +71,7 @@ export default function ButtonAppBar(props) {
 
           <Button {...buttonProps} href="https://chat.freesewing.org/">
             <Icon style={{ ...iconStyle }} icon="discord" />
-            <FormattedMessage id="app.chatOnDiscord" />
+            {/*<FormattedMessage id="app.chatOnDiscord" />*/}
           </Button>
 
           <span style={style.spacer} />
