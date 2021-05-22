@@ -5,11 +5,11 @@ packageManager: Gestor de paquetes
 patternName: Nombre del patrón
 patternType: Tipo de patrón
 patternCreated: Tu esqueleto de patrón ha sido creado en
-runTheseCommands: Para empezar, ejecuta estos dos comandos
+runTheseCommands: To get started, run this command
 startRollup: En una terminal, inicia el paquete de rollup en modo reloj
-startWebpack: Y en otra terminal, ejecuta el servidor dev de webpack
+startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Documentación para desarrolladores está disponible en
-talkToUs: Para preguntas, comentarios o sugerencias, contáctanos en nuestra sala de chat
+talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Traza tu patrón
 testYourPattern: Prueba tu patrón
 draftThing: 'Draft {thing}'
