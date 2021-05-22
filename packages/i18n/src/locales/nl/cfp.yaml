@@ -5,11 +5,11 @@ packageManager: Pakketbeheerder
 patternName: Patroon naam
 patternType: Patroon type
 patternCreated: Het skelet van je patroon is aangemaakt in
-runTheseCommands: Om aan de slag te gaan, voer deze twee opdrachten uit
+runTheseCommands: To get started, run this command
 startRollup: In één terminal, start de rollup bundler in de volgmodus
-startWebpack: En in een andere terminal start je de webpack dev server
+startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
-talkToUs: Voor vragen, feedback of suggesties, kan je terecht in onze chat room
+talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Teken je patroon
 testYourPattern: Test je patroon
 draftThing: 'Draft {thing}'
