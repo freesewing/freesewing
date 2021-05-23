@@ -1,8 +1,6 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
 import { FormattedMessage } from 'react-intl'
 import Icon from '../Icon'
 import LanguageIcon from '@material-ui/icons/Translate'
@@ -83,7 +81,7 @@ export default function ButtonAppBar(props) {
           <span style={style.spacer} />
           {Object.keys(icons).map((link) => {
             return (
-              <a role="button" href={`#${link}`} className={`navlink ${props.display===link ? 'active' : ''}`} onClick={() => props.setDisplay(link)}>
+              <a key={link} role="button" href={`#${link}`} className={`navlink ${props.display===link ? 'active' : ''}`} onClick={() => props.setDisplay(link)}>
                 {icons[link]}
                 <br />
                 <span className="text">{links[link]}</span>

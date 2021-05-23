@@ -11,10 +11,6 @@ import DraftConfig from './DraftConfig'
 import Json from './Json'
 import Welcome from './Welcome'
 import Measurements from './Measurements'
-import DraftIcon from '@material-ui/icons/Gesture'
-import TestIcon from '@material-ui/icons/DoneAll'
-import MeasurementsIcon from '@material-ui/icons/Height'
-import ExportIcon from '@material-ui/icons/ScreenShare'
 import { FormattedMessage } from 'react-intl'
 import { languages } from '@freesewing/i18n'
 import Button from '@material-ui/core/Button'
@@ -26,13 +22,6 @@ import axios from 'axios'
 import yaml from 'yaml'
 import Footer from './Footer'
 import sass from './style.scss'
-
-const icons = {
-  draft: <DraftIcon />,
-  sample: <TestIcon />,
-  measurements: <MeasurementsIcon />,
-  xport: <ExportIcon />
-}
 
 const extraTranslations = {}
 
@@ -86,12 +75,6 @@ const Workbench = ({
 
   // Get config from pattern object
   const config = Pattern.config
-  const links = {
-    draft: <FormattedMessage id="cfp.draftThing" values={{ thing: config.name }} />,
-    sample: <FormattedMessage id="cfp.testThing" values={{ thing: config.name }} />,
-    measurements: <FormattedMessage id="app.measurements" />,
-    xport: <FormattedMessage id="app.export" />
-  }
 
   // Enable debug in Workbench
   defaultGist.settings.debug = true
