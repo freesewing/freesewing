@@ -10,6 +10,8 @@ export default function (part) {
   paths.seam.render = true
 
   if (complete) {
+    if (points.__miniscaleMetric) delete points.__miniscaleMetric
+    if (points.__miniscaleImperial) delete points.__miniscaleImperial
     for (let s in snippets) delete snippets[s]
     points.title = points.innerGuide.shiftFractionTowards(points.outerGuide, 0.5)
     macro('title', {
