@@ -16,6 +16,7 @@ const PatternOptionMillimeter = ({
   updateValue,
   name,
   dflt,
+  raiseEvent,
   noDocs
 }) => {
   const [val, setVal] = useState(dflt)

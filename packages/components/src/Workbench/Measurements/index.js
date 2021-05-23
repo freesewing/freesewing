@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
+import { FormattedMessage } from 'react-intl'
 import FormFieldMeasurement from '../../.form/FormFieldMeasurement'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
 import Icon from '../../Icon'
@@ -43,7 +43,7 @@ const Measurements = (props) => {
             <FormattedMessage id="cfp.noRequiredMeasurements" />
           </h3>
           <p>
-            <FormattedHTMLMessage id="cfp.howtoAddMeasurements" />
+            <FormattedMessage id="cfp.howtoAddMeasurements" />
           </p>
           <p>
             <FormattedMessage id="cfp.seeDocsAt" />

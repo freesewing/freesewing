@@ -25,6 +25,7 @@ import Xport from './Export'
 import axios from 'axios'
 import yaml from 'yaml'
 import Footer from './Footer'
+import './style.scss'
 
 const icons = {
   draft: <DraftIcon />,
@@ -171,25 +172,6 @@ const Workbench = ({
   }
   //const raiseEvent = (type = null, data = null) => {}
 
-  const MainMenu = () => (
-    <ul id="main-menu" className="aside-main-menu">
-      {Object.keys(icons).map((link) => {
-        return (
-          <li key={link}>
-            <a
-              href={`#test`}
-              onClick={() => setDisplay(link)}
-              className={link === display ? 'active' : ''}
-            >
-              {icons[link]}
-              <span className="text">{links[link]}</span>
-            </a>
-          </li>
-        )
-      })}
-    </ul>
-  )
-
   const languageButtons = () => (
     <p>
       {Object.keys(languages).map((lang) => {
@@ -224,12 +206,12 @@ const Workbench = ({
   switch (display) {
     case 'languages':
       main = (
-        <>
+        <div style={{textAlign: 'center'}}>
           <h1>
             <FormattedMessage id="account.languageTitle" />
           </h1>
           {languageButtons()}
-        </>
+        </div>
       )
       break
     case 'draft':
@@ -299,7 +281,10 @@ const Workbench = ({
       )
       if (!gist.settings.sample) main = null
       else {
-        pattern = new Pattern(gist.settings).use(svgattrPlugin, {
+        pattern = new Pattern({
+          ...gist.settings,
+          embed: true
+        }).use(svgattrPlugin, {
           class: 'freesewing draft'
         })
         try {
@@ -341,7 +326,7 @@ const Workbench = ({
       main = (
         <>
           <Welcome language={language} setDisplay={setDisplay} />
-          <div style={{ margin: 'auto', textAlign: 'center' }}>{languageButtons()}</div>
+          <div style={{textAlign: 'center'}}>{languageButtons()}</div>
         </>
       )
   }
@@ -361,24 +346,27 @@ const Workbench = ({
           toggleDarkMode={toggleDarkMode}
           config={config}
           theme={theme}
+          language={language}
         />
-        <div className="layout-wrapper">
-          <div className="layout">
-            {hideAside ? (
-              <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>
-                <UnhideIcon />
-              </a>
-            ) : (
-              <aside>
-                <div className="sticky">
-                  {preMenu}
-                  <MainMenu />
-                </div>
-              </aside>
-            )}
-            <section>{main}</section>
-          </div>
-        </div>
+        {(['draft', 'sample'].indexOf(display) !== -1)
+          ? (
+            <div className="layout-wrapper">
+              <div className="layout">
+                {hideAside ? (
+                  <a href="#" style={styles.unhide} onClick={() => setHideAside(false)}>
+                    <UnhideIcon />
+                  </a>
+                ) : (
+                  <aside>
+                    <div className="sticky">
+                      {preMenu}
+                    </div>
+                  </aside>
+                )}
+                <section>{main}</section>
+              </div>
+            </div>
+          ) : <div className='fill'><div className='inner'>{main}</div></div> }
         <Footer />
       </div>
     </MuiThemeProvider>
