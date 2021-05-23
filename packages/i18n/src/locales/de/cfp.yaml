@@ -5,11 +5,11 @@ packageManager: Paket-Manager
 patternName: Schnittmuster-Name
 patternType: Schnittmuster-Art
 patternCreated: Ihr Schnittmusterskelet werde erstellt auf
-runTheseCommands: Um zu beginnen, führen Sie diese beiden Befehle aus
+runTheseCommands: To get started, run this command
 startRollup: In einem Terminal starten Sie den Rollup-Bundle im Ansichtsmodus
-startWebpack: Und in einem anderen Terminal, starten Sie den webpack dev Server
+startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
-talkToUs: Für Fragen, Feedback oder Anregungen, kommen Sie in unserem Chatraum
+talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Zeichnen Sie Ihr Schnittmuster
 testYourPattern: Testen Sie Ihr Schnittmuster
 draftThing: 'Entwurf {thing}'
