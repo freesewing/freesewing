@@ -403,7 +403,7 @@ export default function (part) {
     if (options.buttons > 1) {
       points.button2 = new Point(points.cfWaist.x, points.cutawayPoint.y)
       buttons.push('button2')
-      if (options.buttons === 3) {
+      if (options.buttons == 3) {
         points.button3 = points.button1.shiftFractionTowards(points.button2, 0.5)
         buttons.push('button3')
       }
