@@ -23,8 +23,7 @@ pre[class*='language-'] {
 div.gatsby-highlight {
   position: relative;
 }
-div.react-markdown pre,
-div.gatsby-highlight pre {
+div.react-markdown pre {
   padding: 1.5rem 1rem;
   margin: 0;
 }
@@ -104,7 +103,7 @@ pre[class*='language-'] {
   white-space: pre-wrap;
   border-radius: 6px;
   margin: 2rem 0;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.5rem;
 }
 .theme-wrapper.dark pre[class*='language-'] {
   border: 1px solid $oc-gray-8;
