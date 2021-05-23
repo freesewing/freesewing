@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/prettier-config",
-  "version": "2.15.5-rc.1",
+  "version": "2.16.0-rc.0",
   "description": "FreeSewing's shared configuration for prettier",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
