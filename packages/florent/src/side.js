@@ -1,5 +1,5 @@
 export default function (part) {
-  let { paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } = part.shorthand()
+  let { store, paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } = part.shorthand()
 
   // Clean up
   for (let i of Object.keys(paths)) {
@@ -10,6 +10,7 @@ export default function (part) {
   paths.seam.render = true
 
   if (complete) {
+    for (let s in snippets) delete snippets[s]
     points.title = points.innerGuide.shiftFractionTowards(points.outerGuide, 0.5)
     macro('title', {
       at: points.title,
@@ -23,6 +24,19 @@ export default function (part) {
       to: points.foldTop,
       offset: 15,
       grainline: true,
+    })
+    points.notch1 = new Path()
+      .move(points.tip)
+      .curve(points.tipCp1, points.outerTopCp2, points.outerTop)
+      .shiftAlong(store.get('topDistanceToFirstNotch'))
+    points.notch2 = new Path()
+      .move(points.tip)
+      .curve(points.tipCp1, points.outerTopCp2, points.outerTop)
+      .curve(points.outerTopCp1, points.outerGuideCp2, points.outerGuide)
+      .shiftAlong(store.get('topDistanceToSecondNotch'))
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: [ 'notch1', 'notch2' ]
     })
 
     if (sa) {

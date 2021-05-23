@@ -58,6 +58,10 @@ export default function (part) {
       from: points.outerMid,
       to: points.innerMid,
     })
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: [ 'innerMid', 'outerMid' ]
+    })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 

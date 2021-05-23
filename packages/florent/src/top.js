@@ -10,6 +10,7 @@ export default function (part) {
     snippets,
     Snippet,
     complete,
+    store
   } = part.shorthand()
 
   const fitCap = (part, scale) => {
@@ -151,6 +152,22 @@ export default function (part) {
       to: points.grainlineTo,
     })
     macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: [ 'midMid', 'backHollow', 'midSide' ]
+    })
+    store.set('topDistanceToFirstNotch', new Path()
+      .move(points.backEdge)
+      .line(points.backSide)
+      .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
+      .length()
+    )
+    store.set('topDistanceToSecondNotch', new Path()
+      .move(points.backHollow)
+      .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
+      .length() + store.get('topDistanceToFirstNotch')
+    )
+
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
