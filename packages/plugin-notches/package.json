@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-notches",
-  "version": "2.16.0-rc.0",
+  "version": "2.16.0-rc.1",
   "description": "A FreeSewing plugin that provides front and back notch snippets",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.16.0-rc.0"
+    "@freesewing/core": "^2.16.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {},
