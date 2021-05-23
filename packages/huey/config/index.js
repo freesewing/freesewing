@@ -86,6 +86,7 @@ export default {
     front: 'frontBase',
     sleeve: 'sleeveBase',
     pocket: 'front',
+    hood: ['front', 'back'],
   },
   inject: {
     backBase: 'base',
