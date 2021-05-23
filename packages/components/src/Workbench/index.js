@@ -25,7 +25,7 @@ import Xport from './Export'
 import axios from 'axios'
 import yaml from 'yaml'
 import Footer from './Footer'
-import './style.scss'
+import sass from './style.scss'
 
 const icons = {
   draft: <DraftIcon />,
@@ -335,6 +335,7 @@ const Workbench = ({
 
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
+      <style>{sass}</style>
       <div
         className={
           theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'
