@@ -5,7 +5,6 @@ div.layout-wrapper {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: red;
   background: $oc-gray-0;
   background: linear-gradient(
     90deg,
@@ -64,33 +63,6 @@ div.layout-wrapper {
       }
     }
   }
-}
-header a svg {
-  color: $oc-gray-4;
-}
-header a:first-of-type svg {
-  color: $oc-gray-0;
-}
-header a:hover svg {
-  color: $oc-violet-3;
-}
-header a span,
-header button span {
-  color: $oc-gray-4;
-  svg {
-    color: $oc-gray-3;
-  }
-}
-header a:hover span,
-header button:hover span {
-  color: $oc-gray-0;
-  svg {
-    color: $oc-violet-3;
-  }
-}
-header a,
-header button {
-  padding: 0 1vw !important;
 }
 
 /* monitor */
