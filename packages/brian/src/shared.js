@@ -50,22 +50,22 @@ export function dimensions(macro, points, Path, sa) {
     d: -15,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.armhole,
     x: points.hips.x + sa + 15,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.armholePitch,
     x: points.hips.x + sa + 30,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.shoulder,
     x: points.hips.x + sa + 45,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.neck,
     x: points.hips.x + sa + 60,
   })

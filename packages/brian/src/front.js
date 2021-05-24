@@ -70,15 +70,15 @@ export default (part) => {
     macro('hd', {
       from: points.cfHips,
       to: points.hips,
-      y: points.hips.y + sa + 15,
+      y: points.hem.y + sa + 15,
     })
     macro('vd', {
-      from: points.cfHips,
+      from: points.cfHem,
       to: points.cfWaist,
       x: points.cfHips.x - sa - 15,
     })
     macro('vd', {
-      from: points.cfHips,
+      from: points.cfHem,
       to: points.cfNeck,
       x: points.cfHips.x - sa - 30,
     })
