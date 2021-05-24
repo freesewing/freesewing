@@ -1,6 +1,12 @@
 # Change log for: @freesewing/brian
 
 
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
+
 ## 2.11.2 (2021-01-11)
 
 ### Added

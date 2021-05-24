@@ -1,6 +1,17 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Add react-intl as dependency
+ - Renamed template `default` to `freesewing`
+ - Use defaults for browserlist
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

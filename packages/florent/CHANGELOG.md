@@ -1,6 +1,13 @@
 # Change log for: @freesewing/florent
 
 
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Add missing notches See [#1015](https://github.com/freesewing/freesewing/issues/1015)
+ - Removed inherited miniscale points
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Changes to cfp strings
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

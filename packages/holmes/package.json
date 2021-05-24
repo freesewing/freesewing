@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/holmes",
-  "version": "2.16.0-rc.1",
+  "version": "2.16.0",
   "description": "A FreeSewing pattern for a Sherlock Holmes hat",
   "author": "AlfaLyr (https://github.com/alfalyr)",
   "homepage": "https://freesewing.org/",
@@ -34,25 +34,25 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.16.0-rc.1",
-    "@freesewing/plugin-bundle": "^2.16.0-rc.1",
-    "@freesewing/plugin-bust": "^2.16.0-rc.1"
+    "@freesewing/core": "^2.16.0",
+    "@freesewing/plugin-bundle": "^2.16.0",
+    "@freesewing/plugin-bust": "^2.16.0"
   },
   "dependencies": {
-    "@freesewing/plugin-gore": "^2.16.0-rc.1"
+    "@freesewing/plugin-gore": "^2.16.0"
   },
   "devDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@freesewing/components": "^2.16.0-rc.1",
-    "@freesewing/css-theme": "^2.16.0-rc.1",
-    "@freesewing/i18n": "^2.16.0-rc.1",
-    "@freesewing/mui-theme": "^2.16.0-rc.1",
-    "@freesewing/plugin-bust": "^2.16.0-rc.1",
-    "@freesewing/plugin-buttons": "^2.16.0-rc.1",
-    "@freesewing/plugin-flip": "^2.16.0-rc.1",
-    "@freesewing/utils": "^2.16.0-rc.1",
+    "@freesewing/components": "^2.16.0",
+    "@freesewing/css-theme": "^2.16.0",
+    "@freesewing/i18n": "^2.16.0",
+    "@freesewing/mui-theme": "^2.16.0",
+    "@freesewing/plugin-bust": "^2.16.0",
+    "@freesewing/plugin-buttons": "^2.16.0",
+    "@freesewing/plugin-flip": "^2.16.0",
+    "@freesewing/utils": "^2.16.0",
     "react-scripts": "^4.0.3",
     "webpack": "^5.37.0",
     "rollup": "^2.48.0",
@@ -80,7 +80,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=12.0.0",

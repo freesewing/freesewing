@@ -1,6 +1,12 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Changes to code styling
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

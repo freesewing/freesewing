@@ -1,6 +1,12 @@
 # Change log for: @freesewing/huey
 
 
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

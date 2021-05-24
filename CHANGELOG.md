@@ -1,6 +1,68 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.16.0 (2021-05-24)
+
+### brian
+
+#### Fixed
+
+ - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
+
+### components
+
+#### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Changes to Workbench
+ - Added rollup sass plugin
+ - Updated for new major version of react-markdown
+
+### create-freesewing-pattern
+
+#### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Add react-intl as dependency
+ - Renamed template `default` to `freesewing`
+ - Use defaults for browserlist
+
+### css-theme
+
+#### Changed
+
+ - Changes to code styling
+
+### florent
+
+#### Fixed
+
+ - Add missing notches See [#1015](https://github.com/freesewing/freesewing/issues/1015)
+ - Removed inherited miniscale points
+
+### huey
+
+#### Fixed
+
+ - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
+
+### i18n
+
+#### Changed
+
+ - Changes to cfp strings
+
+### jaeger
+
+#### Fixed
+
+ - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+
 ## 2.15.4 (2021-05-08)
 
 ### bella

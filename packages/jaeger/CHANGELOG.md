@@ -1,6 +1,12 @@
 # Change log for: @freesewing/jaeger
 
 
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
 ## 2.15.2 (2021-04-28)
 
 ### Fixed

@@ -1,6 +1,17 @@
 # Change log for: @freesewing/components
 
 
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Changes to Workbench
+ - Added rollup sass plugin
+ - Updated for new major version of react-markdown
+
 ## 2.15.0 (2021-04-15)
 
 ### Added
