@@ -1501,11 +1501,6 @@
     intl-messageformat "9.6.13"
     tslib "^2.1.0"
 
-"@freesewing/i18n@^2.15.4":
-  version "2.15.4"
-  resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.15.4.tgz#78d498d453aa68f57fc1d43474b1694082b60c62"
-  integrity sha512-xw5fq3KY2pLssaefuCR6PX1/Zy5wQPDcstfZNE9nb53lS4Zc/oHD59JaJCfy73j86c+fBcUcYQLN8oCYeHp8Fw==
-
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"

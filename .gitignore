@@ -26,7 +26,6 @@ packages/components/withStorage
 packages/components/Workbench
 packages/core/coverage
 packages/workbench
-.netlify
 packages/utils/backend
 packages/utils/camelCase
 packages/utils/capitalize
