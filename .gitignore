@@ -87,3 +87,6 @@ packages/i18n/sort.sh
 .gitignore
 scripts/taskrunner.sh
 scripts/verdaccio.sh
+
+# Local Netlify folder
+.netlify
