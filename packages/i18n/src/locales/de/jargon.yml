@@ -22,10 +22,10 @@ fabricGrain:
   description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenluf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  description: "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
 onTheFold:
-  term: on the fold
-  description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  term: im Stoffbruch
+  description: "Siehe <a href='/docs/sewing/on-the-fold/'>Im Stoffbruch</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
 hemming:
   term: Säumen
   description: "Siehe <a href='/docs/sewing/hemming/'>Säumen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
