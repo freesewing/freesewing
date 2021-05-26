@@ -25,9 +25,9 @@ frontPocketSlantBend:
   description: Controls the radius by which we round the pocket slant into the outseam
 frontPocketWidth:
   title: Breite der Vordertasche
-  description: Controls the width of the front pocket bag
+  description: Steuert die Breite der Vordertasche
 frontPocketDepth:
-  title: Front pocket depth
+  title: Tiefe der Vordertasche
   description: Controls the depth of the front pocket bag
 frontPocketFacing:
   title: Front pocket facing
