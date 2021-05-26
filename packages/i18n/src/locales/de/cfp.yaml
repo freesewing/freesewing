@@ -12,8 +12,8 @@ devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Zeichnen Sie Ihr Schnittmuster
 testYourPattern: Testen Sie Ihr Schnittmuster
-draftThing: 'Entwurf {thing}'
-testThing: 'Test {thing}'
+draftThing: '{thing} erstellen'
+testThing: '{thing} testen'
 renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
 weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
 youCan: Sie können
@@ -30,4 +30,4 @@ thingIsEnabled: '{thing} ist aktiviert'
 thingIsDisabled: '{thing} ist deaktiviert'
 turnOn: Aktivieren
 turnOff: Deaktivieren
-validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benennen Sie ihr Muster also entsprechend, wie in etwa:"
+validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir (wieder-)verwenden den Namen des Schnittmusters als NPM-Paketname.\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benenne dein Muster also entsprechend, wie in etwa:"
