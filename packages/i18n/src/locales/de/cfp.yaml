@@ -9,7 +9,7 @@ runTheseCommands: Um loszulegen, führe diesen Befehl aus
 startRollup: In einem Terminal starten Sie den Rollup-Bundle im Ansichtsmodus
 startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
-talkToUs: For questions, feedback or suggestions, join our Discord server
+talkToUs: Für Fragen, Feedback oder Anregungen trete unserem Discord-Server bei
 draftYourPattern: Zeichnen Sie Ihr Schnittmuster
 testYourPattern: Testen Sie Ihr Schnittmuster
 draftThing: '{thing} erstellen'
@@ -23,7 +23,7 @@ size: Größe
 noRequiredMeasurements: Dieses Muster hat keine erforderlichen Masse
 howtoAddMeasurements: Um Masse als Anforderung zu definieren, fügen Sie sie in den <b>Masse-</b>Abschnitt der Konfigurationsdatei des Schnittmusters ein.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter
-clearDesignMode: Clear design mode
+clearDesignMode: Designmodus leeren
 designMode: Designmodus
 exportMode: Exportmodus
 thingIsEnabled: '{thing} ist aktiviert'
