@@ -5,7 +5,7 @@ packageManager: Paket-Manager
 patternName: Schnittmuster-Name
 patternType: Schnittmuster-Art
 patternCreated: Ihr Schnittmusterskelet werde erstellt auf
-runTheseCommands: To get started, run this command
+runTheseCommands: Um loszulegen, führe diesen Befehl aus
 startRollup: In einem Terminal starten Sie den Rollup-Bundle im Ansichtsmodus
 startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
