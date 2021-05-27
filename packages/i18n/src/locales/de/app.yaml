@@ -163,9 +163,9 @@ reset: Zurücksetzen
 restoreDefaults: Standardeinstellungen wiederherstellen
 restoreDesignDefaults: Designeinstellungen zurücksetzen
 restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
-saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
+saveDraftToYourAccount: Entwurf in deinem Account speichern
 save: Speichern
-searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
+searchLanguageMsg: Jede Sprache hat ihren eigenen Suchindex. Da nicht alle Inhalte übersetzt sind, findest du möglicherweise mehr Ergebnisse in der Suche auf Englisch.
 searchLanguageTitle: Können Sie nicht finden, wonach Sie suchen?
 search: Suche
 selectAPartToMoveMirrorOrRotate: Wählen Sie einen Bereich zum Verschieben, Spiegeln oder Drehen aus
