@@ -28,10 +28,10 @@ changePattern: Muster ändern
 chatOnDiscord: Chat auf Discord
 checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
 chest: Brust
-chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
-chooseASize: Grösse wählen
-chooseAPerson: Person wählen
-chooseADesign: Design auswählen
+chestInfo: Brüste erfordern zusätzliche Maße. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Maße ausgeblendet. Das hat keinen Einfluss darauf, wie Schnittmuster entworfen werden.
+chooseASize: Wähle eine Größe
+chooseAPerson: Wähle eine Person
+chooseADesign: Wähle ein Design
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
@@ -45,7 +45,7 @@ continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
 couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: '{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen.'
+countModelsLackingForPattern: '{count} deiner Personen fehlen die erforderlichen Maße, um {pattern} zu entwerfen'
 created: Erstellt
 custom: Angepasst
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
@@ -97,7 +97,7 @@ i18n: Internationalisierung
 imperialUnits: Imperiale Einheiten (cm)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
-joinTheChatMsg: Wir haben eine Community auf Discord mit freundlichen Leuten, mit denen du dich austauschen kannst.
+joinTheChatMsg: Wir haben auf Discord eine Community mit freundlichen Leuten, mit denen du dich austauschen kannst.
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
@@ -134,9 +134,9 @@ ourRevenuePledge: Unser Umsatzversprechen
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
-patronHelp: Sollten Sie Fragen haben, oder Ihren Patron-Status ändern wollen, können Sie uns gerne kontaktieren
+patronHelp: Solltest du Fragen haben oder deinen Förder/in-Status ändern wollen, kannst du uns gerne kontaktieren
 patron: Gönner
-patronPitch: Wenn Sie unsere Arbeit für wertvoll halten und jeden Monat ein paar Münzen übrig haben, ohne in finanzielle Not zu geraten, unterstützen Sie bitte unsere Arbeit
+patronPitch: Wenn du unsere Arbeit für wertvoll hältst und jeden Monat ein paar Münzen übrig hast, ohne in finanzielle Not zu geraten, unterstütze bitte unsere Arbeit
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Schnittmuster Instruktionen
 patternOptions: Musteroptionen
