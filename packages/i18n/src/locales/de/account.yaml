@@ -5,10 +5,10 @@ avatar: Profilbild
 avatarInfo: Dein Avatar oder Profilbild wird auf deiner Profilseite angezeigt.
 avatarTitle: Stell dein Profilbild ein
 bio: Über mich
-bioInfo: Hier können Sie anderen Freesewing-Benutzern etwas über sich erzählen. Dieses Feld unterstützt MarkDown, sodass Sie auch Links einfügen können. Wenn Sie einen Blog haben, können Sie ihn hierher verlinken, damit andere ihn entdecken können.
+bioInfo: Hier kannst du anderen Freesewing-Benutzern etwas über dich erzählen. Dieses Feld unterstützt MarkDown, sodass du auch Links einfügen kannst. Wenn du einen Blog hast, kannst du ihn hier verlinken, damit andere ihn entdecken können.
 bioTitle: Schreibe eine kurze Biographie
 currentPassword: Derzeitiges Passwort
-email: E-mail-Addresse
+email: E-Mail-Adresse
 emailInfo: Die mit Ihrem Konto verknüpfte E-Mail-Adresse ist wichtig, da sie verwendet wird, um wieder Zugriff auf Ihr Konto zu erhalten, wenn Sie Ihr Passwort vergessen haben. Aus diesem Grund erfordert das Ändern Ihrer E-Mail-Adresse eine Bestätigung.
 emailTitle: Geben Sie die E-Mail-Adresse ein, die Sie mit diesem Konto verknüpfen möchten
 exportYourData: Exportieren Sie Ihre Daten
