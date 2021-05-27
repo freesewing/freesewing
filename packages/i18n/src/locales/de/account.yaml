@@ -2,7 +2,7 @@
 accountRemoved: Konto entfernt
 accountRestricted: Konto eingeschränkt
 avatar: Profilbild
-avatarInfo: Ihr Avatar oder Ihr Profilbild wird auf Ihrer Profilseite angezeigt.
+avatarInfo: Dein Avatar oder Profilbild wird auf deiner Profilseite angezeigt.
 avatarTitle: Stell dein Profilbild ein
 bio: Über mich
 bioInfo: Hier können Sie anderen Freesewing-Benutzern etwas über sich erzählen. Dieses Feld unterstützt MarkDown, sodass Sie auch Links einfügen können. Wenn Sie einen Blog haben, können Sie ihn hierher verlinken, damit andere ihn entdecken können.
@@ -25,7 +25,7 @@ language: Sprache
 languageTitle: Wählen Sie die Sprache aus
 newPassword: Neues Passwort
 newsletter: Newsletter
-newsletterTitle: Würden Sie gerne den FreeSewing-Newsletter erhalten?
+newsletterTitle: Würdest du gerne den FreeSewing-Newsletter erhalten?
 newsletterInfo: Alle drei Monate versenden wir unseren Newsletter, gefüllt mit ehrlichen und wertvollen Inhalten. Kein Tracking, keine Werbung, kein Nonsens.
 passwordInfo: Das Ändern Ihres Passworts erfordert Ihr aktuelles Passwort. Füllen Sie das aus und geben Sie dann auch Ihr neues Passwort ein.
 password: Passwort
@@ -56,5 +56,5 @@ usernameTitle: Bitte wähle Deinen Benutzernamen
 username: Benutzername
 accountIsInactive: Ihr Benutzerkonto ist inaktiv
 accountNeedsActivation: Bevor Sie sich anmelden können, müssen Sie Ihr Konto aktivieren. Bitte überprüfen Sie Ihren Posteingang auf die Registrierungs-E-Mail und klicken Sie auf den Link in ihm.
-reloadAccount: Konto neu laden
-reloadAccountDescription: Dies lädt Ihre Kontodaten neu aus dem Backend. Das hat den gleichen Effekt wie sich einmal ausloggen und dann wieder einloggen.
+reloadAccount: Account neu laden
+reloadAccountDescription: Dies lädt deine Kontodaten neu aus dem Backend. Das hat den gleichen Effekt wie sich einmal ausloggen und dann wieder einloggen.
