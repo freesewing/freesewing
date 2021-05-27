@@ -30,12 +30,12 @@ newsletterInfo: Alle drei Monate versenden wir unseren Newsletter, gefüllt mit 
 passwordInfo: Das Ändern deines Passworts erfordert dein aktuelles Passwort. Gib dieses ein und gib danach auch dein neues Passwort ein.
 password: Passwort
 passwordTitle: Gib dein aktuelles Passwort und dein neues Passwort ein
-patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Muster und unsere Community.
-patron: Gönner
-removeYourAccountInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährt Ihnen das <em>Recht auf Datenlöschung</em>, dies bedeutet, dass Sie das Recht haben die Löschung Ihr persönlichen Daten zu verlangen.
-removeYourAccount: Entfernen Sie Ihr Konto
-removeYourAccountWarning: Dadurch werden Ihr Konto, Ihre Entwürfe, Ihre Modelle und alle Daten, die wir für Sie gespeichert haben, entfernt. Es gibt keinen Weg zurück.
-resetPasswordInfo: Geben Sie ein neues Passwort ein.
+patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.
+patron: Förderer/in
+removeYourAccountInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährt dir das <em>Recht auf Datenlöschung</em> — das Recht, die Löschung deiner persönlichen Daten zu verlangen.
+removeYourAccount: Entferne deinen Account
+removeYourAccountWarning: Dies wird deinen Account entfernen, mitsamt Entwürfen, Schnittmustern, Modellen und allen Daten, die wir für dich gespeichert haben. Es gibt keinen Weg zurück.
+resetPasswordInfo: Gib dein neues Passwort ein.
 resetPassword: Passwort zurücksetzen
 resetPasswordTitle: Geben Sie Ihr neues Passwort ein
 restrictProcessingOfYourDataInfo: Das Datenschutzgrubdverordnung (DSGVO) der EU gewährleistet, dass Ihr sogenanntes <em>Recht, die Verarbeitung zu beschränken</em> - das Recht, die Verarbeitung Ihrer Daten zu unterbinden.
