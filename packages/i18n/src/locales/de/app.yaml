@@ -129,38 +129,38 @@ options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: 'Andere {thing}'
-ourPatrons: Unsere Gönner
+ourPatrons: Unsere Förderer
 ourRevenuePledge: Unser Umsatzversprechen
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
 patronHelp: Solltest du Fragen haben oder deinen Förder/in-Status ändern wollen, kannst du uns gerne kontaktieren
-patron: Gönner
+patron: Förderer/in
 patronPitch: Wenn du unsere Arbeit für wertvoll hältst und jeden Monat ein paar Münzen übrig hast, ohne in finanzielle Not zu geraten, unterstütze bitte unsere Arbeit
-patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
-patternInstructions: Schnittmuster Instruktionen
-patternOptions: Musteroptionen
+patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Förderer ermöglicht. Sie halten dieses Schiff über Wasser.
+patternInstructions: Anleitungen für das Schnittmuster
+patternOptions: Schnittmusteroptionen
 pattern: Schnittmuster
 sewingPatterns: Schnittmuster
 patterns: Schnittmuster
-pendingConfirmation: Ausstehende Bestätigung
+pendingConfirmation: Bestätigung ausstehend
 perMonth: pro Monat
-pleaseEnterAValidEmailAddress: Bitte eine gueltige Email Adresse angeben
-pleaseIncludeTheInformationBelow: Bitte geben Sie die Informationen unten an
+pleaseEnterAValidEmailAddress: Bitte eine gültige E-Mail-Adresse angeben
+pleaseIncludeTheInformationBelow: Bitte gib die Informationen unten an
 preview: Vorschau
 privacyNotice: Datenschutzerklärung
-proceedWithCaution: Gehen Sie vorsichtig vor
+proceedWithCaution: Bitte mit Vorsicht fortfahren
 profile: Profil
 relatedLinks: Verwandte Links
-remove: Löschen
+remove: Entfernen
 removeThing: '{thing} entfernen'
-reportThisOnGithub: Dies auf GitHub melden
+reportThisOnGithub: Melde dies auf GitHub
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: "Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht."
-resendActivationEmail: Aktivierungs E-Mail erneut versenden
+resendActivationEmailMessage: "Trage die E-Mail-Adresse ein, mit der du dich angemeldet hast, und wir senden dir eine neue Bestätigungsnachricht."
+resendActivationEmail: Aktivierungs-E-Mail erneut senden
 resetPassword: Passwort zurücksetzen
-reset: Rücksetzen
-restoreDefaults: Wiederherstellen der Standardwerte
+reset: Zurücksetzen
+restoreDefaults: Standardeinstellungen wiederherstellen
 restoreDesignDefaults: Designeinstellungen zurücksetzen
 restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
 saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
