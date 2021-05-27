@@ -40,13 +40,13 @@ resetPassword: Passwort zurücksetzen
 resetPasswordTitle: Gib dein neues Passwort ein
 restrictProcessingOfYourDataInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährleistet dein sogenanntes <em>Recht auf Einschränkung der Verarbeitung</em> - das Recht, die Verarbeitung deiner Daten zu unterbinden.
 restrictProcessingOfYourData: Verarbeitung deiner Daten einschränken
-restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird Sie jedoch abmelden und Ihr Konto einfrieren. Sie können die nicht selbst rückgängig machen. Wenn Sie den Zugriff auf Ihr Konto reaktivieren möchten, nehmen Sie bitte Kontakt mit uns auf.
+restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird dich jedoch abmelden und deinen Account einfrieren. Du kannst dies nicht selber rückgängig machen. Wenn du den Zugriff auf deinen Account reaktivieren möchtest, musst du uns kontaktieren.
 reviewYourConsent: Überprüfe deine Einwilligungen
-socialInfo: Wenn Sie Ihren GitHub-, Twitter- oder Instagram-Benutzernamen angeben, enthält Ihre Profilseite Links zu Ihren Konten auf diesen Websites. Dadurch können kostenlose Benutzer Sie dort verfolgen.<br>Wir kontaktieren keine dieser Seiten in Ihrem Namen. Dies ist nur so, dass Leute die Punkte verbinden können und wissen, dass zum Beispiel Benutzer @joost bei freesewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
-social: Sozial
+socialInfo: Wenn du deinen GitHub-, Twitter- oder Instagram-Benutzernamen angibst, enthält deine Profilseite Links zu deinen Konten auf diesen Websites. Dadurch können dir Nutzer von FreeSewing dort folgen.<br>Wir kontaktieren keine dieser Seiten in deinem Namen. Dies ist nur dafür da, damit sich andere Leute ein richtiges Bild machen können und wissen, dass zum Beispiel Benutzer @joost bei FreeSewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
+social: Soziale Medien
 socialTitle: Lass die Leute dir anderswo folgen
-twitterInfo: Wenn Sie Ihren Twitter-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Twitter-Account, sodass Besucher Ihre Tweets entdecken und Ihnen folgen können.
-twitterTitle: Geben Sie Ihren Twitter-Benutzernamen ein
+twitterInfo: Wenn du uns deinen Twitter-Benutzernamen angibst, enthält deine Profilseite einen Link zu deinem Twitter-Account, sodass Besucher deine Tweets entdecken und dir folgen können.
+twitterTitle: Gib deinen Twitter-Benutzernamen ein
 twitter: Twitter
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Masseinheiten.
 unitsTitle: Bitte wählen Sie die Masseinheit aus, mit der Sie am besten vertraut sind
