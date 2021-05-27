@@ -16,17 +16,17 @@ averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
 awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
-becomeAPatron: Gönner werden
+becomeAPatron: Förderer/in werden
 blog: Blog
 browseBlogposts: Blogeinträge durchsuchen
 browsePatterns: Schnittmuster dursuchen
 browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
-cancel: Stornieren
+cancel: Abbrechen
 changePerson: Person ändern
-changePattern: Muster ändern
+changePattern: Schnittmuster ändern
 chatOnDiscord: Chat auf Discord
-checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
+checkInboxClickLinkInConfirmationEmail: Überprüfe nun deinen Posteingang und klicke auf den Link in der Bestätigungs-E-Mail, die wir dir gesendet haben.
 chest: Brust
 chestInfo: Brüste erfordern zusätzliche Maße. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Maße ausgeblendet. Das hat keinen Einfluss darauf, wie Schnittmuster entworfen werden.
 chooseASize: Wähle eine Größe
@@ -37,17 +37,17 @@ chooseYourOptions: Wähle deine Optionen
 close: Schließen
 community: Community
 configureLayout: Layout konfigurieren
-configureYourDraft: Konfigurieren Sie Ihren Entwurf
+configureYourDraft: Deinen Entwurf konfigurieren
 contactUs: Kontaktiere uns
-contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
+contentLocaleFallback: Deshalb wird dir stattdessen die englische Version angezeigt.
 contents: Inhalte
 continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
-couldYouTranslateThis: Könnten Sie das übersetzen?
+couldYouTranslateThis: Könntest du dies übersetzen?
 countModelsLackingForPattern: '{count} deiner Personen fehlen die erforderlichen Maße, um {pattern} zu entwerfen'
 created: Erstellt
-custom: Angepasst
+custom: Benutzerdefiniert
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
 lightMode: Heller Modus
 data: Daten
@@ -56,8 +56,8 @@ default: Standard
 demo: Vorschau
 designOptions: Designoptionen
 designs: Designs
-docs: Dokumente
-docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
+docs: Dokumentation
+docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle deine Fragen beantworten, aber wenn dies nicht der Fall war, ist immer Hilfe verfügbar.
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
 docsNotFoundTitle: Diese Dokumentation fehlt
 documentationForDevelopers: Dokumentation für Entwickler
@@ -65,7 +65,7 @@ documentationForEditors: Dokumentation für Redakteure
 documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
-draft: Entwürf
+draft: Entwurf
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
 drafts: Entwürfe
