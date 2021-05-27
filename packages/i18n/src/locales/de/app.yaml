@@ -195,7 +195,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing wird von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Gönner gemacht
+txt-footer: Freesewing wird erstellt von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Förderer
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
@@ -237,12 +237,12 @@ years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
 noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
-modelFirst: Beginne damit Masse hinzuzufügen
-noModel: Sie haben (noch) keine Masse hinzugefügt. FreeSewing kann massgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Masse.
-noModel2: Das erste, was Sie tun sollten, ist, eine Person hinzuzufügen und das Massband hervorzuholen.
+modelFirst: Beginne damit, Maße hinzuzufügen
+noModel: Du hast (noch) keine Maße hinzugefügt. FreeSewing kann maßgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Maße.
+noModel2: Das erste, was du tun solltest, ist, eine Person hinzuzufügen und das Maßband auszupacken.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-usePatternMeasurements: 'Verwende dir Mass des Originalnähmusters'
+usePatternMeasurements: 'Verwende die Maße des Originalschnittmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
 hideDetails: Details ausblenden
@@ -279,7 +279,7 @@ patternDocs: Schnittmuster-Dokumentation
 socialMedia: Soziale Medien
 create: Erstellen
 browse: Durchsuchen
-patrons: Patrons
+patrons: Förderer
 scrollToTop: Zum Seitenanfang
 sitemap: Seitenübersicht
 contributeToThing: An {thing} mitwirken
