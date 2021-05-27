@@ -81,20 +81,20 @@ fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
 filterByPattern: Filtern nach Schnittmuster
 filterPatterns: Schnittmuster filtern
-forgotLoginInstructions: "Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken"
+forgotLoginInstructions: "Wenn du dein Passwort nicht mehr weißt: Benutzername oder E-Mail-Adresse eingeben und den <b>Passwort zurücksetzen</b> Knopf drücken"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
-goodToSeeYouAgain: Schön dich wieder zu sehen {user}
+goodToSeeYouAgain: Schön, dich wieder zu sehen, {user}
 handle: Referenz
-helpUsTranslate: Helfen Sie uns beim Übersetzen
+helpUsTranslate: Hilf uns beim Übersetzen
 home: Startseite
-howCanWeHelpYou: Wie können wir Dir helfen
-howToTakeMeasurements: Richtiges Maß nehmen
+howCanWeHelpYou: Wie können wir dir helfen?
+howToTakeMeasurements: Richtig Maßnehmen
 i18n: Internationalisierung
-imperialUnits: Imperiale Einheiten (cm)
+imperialUnits: Imperiale Einheiten (inch)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben auf Discord eine Community mit freundlichen Leuten, mit denen du dich austauschen kannst.
@@ -111,7 +111,7 @@ metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
 person: Person
 people: Personen
-nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
+nameInfo: Ein Name hilft dabei, die Dinge auseinander zu halten. Du kannst einen beliebigen Namen auswählen.
 name: Name
 addThing: '{thing} hinzufügen'
 newThing: Neues {thing}
@@ -121,9 +121,9 @@ no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
 noSeamAllowance: Keine Nahtzugabe
 notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch verfügbar
-notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
-notes: Anmerkungen
-ohNo: Oh Nein!
+notesInfo: Dies sind deine Notizen. Du kannst hier alles schreiben, was du möchtest.
+notes: Notizen
+ohNo: Oh nein!
 oneMoreThing: Und zum Schluss
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
