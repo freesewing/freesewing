@@ -1,22 +1,22 @@
 ---
 shoulderDart:
   title: Schulterabnäher
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  description: Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 shoulderDartSize:
   title: Grösse der Schulterabnäher
-  description: The size of the shoulder dart
+  description: Größe des Schulterabnähers
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Länge des Schulterabnähers
+  description: Die Länge des Abnähers an der Schulter
 waistDart:
-  title: Hüftabnäher
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Taillenabnäher
+  description: Ob ein Abnäher an der Taille zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 waistDartSize:
-  title: Grösse der Hüftabnäher
-  description: The size of the waist dart
+  title: Größe des Taillenabnähers
+  description: Die Größe des Abnähers an der Taille
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Länge des Taillenabnähers
+  description: Die Länge des Abnähers an der Taille
 verticalEase:
   title: Vertical ease
   description: The amount of ease to distribute along the length of the garment

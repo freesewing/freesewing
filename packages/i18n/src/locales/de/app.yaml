@@ -1,53 +1,53 @@
 ---
 100PercentCommunity: 100% Community
 100PercentFree: 100% kostenlos
-100PercentOpenSource: 100% Open Source DONE
+100PercentOpenSource: 100% Open Source
 aboutFreesewing: Über Freesewing
-account: Konto
+account: Account
 accountCreated: Account erstellt
-actions: Aktions
+actions: Aktionen
 allDocumentation: Alle Dokumentationen
 andThatIsAwesome: Und das ist großartig
-applyThisLayout: Wenden Sie dieses Layout an
-areYouSureYouWantToContinue: Sind Sie sicher, dass Sie fortfahren möchten?
+applyThisLayout: Dieses Layout anwenden
+areYouSureYouWantToContinue: Bist du sicher, dass du fortfahren möchtest?
 askForHelp: Nach Hilfe fragen
 automatic: Automatisch
 averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
 awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
-becomeAPatron: Gönner werden
+becomeAPatron: Förderer/in werden
 blog: Blog
 browseBlogposts: Blogeinträge durchsuchen
 browsePatterns: Schnittmuster dursuchen
 browseShowcases: Showcases dursuchen
 butThatCouldChange: Das könnte sich aber ändern
-cancel: Stornieren
+cancel: Abbrechen
 changePerson: Person ändern
-changePattern: Muster ändern
+changePattern: Schnittmuster ändern
 chatOnDiscord: Chat auf Discord
-checkInboxClickLinkInConfirmationEmail: Überprüfen Sie jetzt Ihren Posteingang und klicken Sie auf den Link in der Bestätigungs-E-Mail, die wir Ihnen gesendet haben.
+checkInboxClickLinkInConfirmationEmail: Überprüfe nun deinen Posteingang und klicke auf den Link in der Bestätigungs-E-Mail, die wir dir gesendet haben.
 chest: Brust
-chestInfo: Brüste erfordern zusätzliche Masse. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Masse ausgeblendet. Das hat keinen Einfluss darauf, wie die Masse entworfen werden.
-chooseASize: Grösse wählen
-chooseAPerson: Person wählen
-chooseADesign: Design auswählen
+chestInfo: Brüste erfordern zusätzliche Maße. Falls diese Person keine Brüste hat, werden beim Konfigurieren irrelevante Maße ausgeblendet. Das hat keinen Einfluss darauf, wie Schnittmuster entworfen werden.
+chooseASize: Wähle eine Größe
+chooseAPerson: Wähle eine Person
+chooseADesign: Wähle ein Design
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
 community: Community
 configureLayout: Layout konfigurieren
-configureYourDraft: Konfigurieren Sie Ihren Entwurf
+configureYourDraft: Deinen Entwurf konfigurieren
 contactUs: Kontaktiere uns
-contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
+contentLocaleFallback: Deshalb wird dir stattdessen die englische Version angezeigt.
 contents: Inhalte
 continue: Fortsetzen
 copiedToClipboard: In die Zwischenablage kopiert
 copy: Kopieren
-couldYouTranslateThis: Könnten Sie das übersetzen?
-countModelsLackingForPattern: '{count} ihrer Personen fehlen die erforderlichen Masse, um {pattern} zu entwerfen.'
+couldYouTranslateThis: Könntest du dies übersetzen?
+countModelsLackingForPattern: '{count} deiner Personen fehlen die erforderlichen Maße, um {pattern} zu entwerfen'
 created: Erstellt
-custom: Angepasst
+custom: Benutzerdefiniert
 customSeamAllowance: Benutzerdefinierte Nahtzugabe
 lightMode: Heller Modus
 data: Daten
@@ -56,8 +56,8 @@ default: Standard
 demo: Vorschau
 designOptions: Designoptionen
 designs: Designs
-docs: Dokumente
-docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle Ihre Fragen beantworten, aber wenn dies nicht der Fall ist, ist Hilfe verfügbar.
+docs: Dokumentation
+docsFooterMsg: Die Dokumentation ist nie fertig. Hoffentlich konnten wir alle deine Fragen beantworten, aber wenn dies nicht der Fall war, ist immer Hilfe verfügbar.
 docsNotFoundMsg: Wir konnten diese Dokumentation nicht finden, was normalerweise bedeutet, dass sie noch nicht geschrieben wurde.
 docsNotFoundTitle: Diese Dokumentation fehlt
 documentationForDevelopers: Dokumentation für Entwickler
@@ -65,39 +65,39 @@ documentationForEditors: Dokumentation für Redakteure
 documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
-draft: Entwürf
+draft: Entwurf
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
 drafts: Entwürfe
-draftSettings: Entwurfeinstellungen
+draftSettings: Entwurfseinstellungen
 dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie es manuell mit der Schaltfläche unten aus
-emailAddress: Email Adresse
-emailWorksToo: "Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch"
-enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
+emailAddress: E-Mail-Adresse
+emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail Addresse funktioniert auch"
+enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
-filterByPattern: Nach Muster filtern
-filterPatterns: Filtern der Schnittmuster
-forgotLoginInstructions: "Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken"
+filterByPattern: Filtern nach Schnittmuster
+filterPatterns: Schnittmuster filtern
+forgotLoginInstructions: "Wenn du dein Passwort nicht mehr weißt: Benutzername oder E-Mail-Adresse eingeben und den <b>Passwort zurücksetzen</b> Knopf drücken"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
-goodToSeeYouAgain: Schön dich wieder zu sehen {user}
+goodToSeeYouAgain: Schön, dich wieder zu sehen, {user}
 handle: Referenz
-helpUsTranslate: Helfen Sie uns beim Übersetzen
+helpUsTranslate: Hilf uns beim Übersetzen
 home: Startseite
-howCanWeHelpYou: Wie können wir Dir helfen
-howToTakeMeasurements: Richtiges Maß nehmen
+howCanWeHelpYou: Wie können wir dir helfen?
+howToTakeMeasurements: Richtig Maßnehmen
 i18n: Internationalisierung
-imperialUnits: Imperiale Einheiten (cm)
+imperialUnits: Imperiale Einheiten (inch)
 instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
-joinTheChatMsg: Wir haben eine Community auf Discord mit freundlichen Leuten, mit denen du dich austauschen kannst.
+joinTheChatMsg: Wir haben auf Discord eine Community mit freundlichen Leuten, mit denen du dich austauschen kannst.
 justAMoment: Einen Moment bitte
 layout: Darstellung
 logIn: Anmelden
@@ -111,7 +111,7 @@ metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
 person: Person
 people: Personen
-nameInfo: Ein Name hilft, die Dinge auseinander zu halten. Sie können einen beliebigen Namen auswählen.
+nameInfo: Ein Name hilft dabei, die Dinge auseinander zu halten. Du kannst einen beliebigen Namen auswählen.
 name: Name
 addThing: '{thing} hinzufügen'
 newThing: Neues {thing}
@@ -121,51 +121,51 @@ no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
 noSeamAllowance: Keine Nahtzugabe
 notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch verfügbar
-notesInfo: Dies sind Ihre Notizen. Sie können hier alles schreiben, was Sie möchten.
-notes: Anmerkungen
-ohNo: Oh Nein!
+notesInfo: Dies sind deine Notizen. Du kannst hier alles schreiben, was du möchtest.
+notes: Notizen
+ohNo: Oh nein!
 oneMoreThing: Und zum Schluss
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
 otherThing: 'Andere {thing}'
-ourPatrons: Unsere Gönner
+ourPatrons: Unsere Förderer
 ourRevenuePledge: Unser Umsatzversprechen
 patron-2: Pulveraffe
 patron-4: Steuermann
 patron-8: Kapitän
-patronHelp: Sollten Sie Fragen haben, oder Ihren Patron-Status ändern wollen, können Sie uns gerne kontaktieren
-patron: Gönner
-patronPitch: Wenn Sie unsere Arbeit für wertvoll halten und jeden Monat ein paar Münzen übrig haben, ohne in finanzielle Not zu geraten, unterstützen Sie bitte unsere Arbeit
-patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Gönner ermöglicht. Sie halten dieses Schiff über Wasser.
-patternInstructions: Schnittmuster Instruktionen
-patternOptions: Musteroptionen
+patronHelp: Solltest du Fragen haben oder deinen Förder/in-Status ändern wollen, kannst du uns gerne kontaktieren
+patron: Förderer/in
+patronPitch: Wenn du unsere Arbeit für wertvoll hältst und jeden Monat ein paar Münzen übrig hast, ohne in finanzielle Not zu geraten, unterstütze bitte unsere Arbeit
+patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Förderer ermöglicht. Sie halten dieses Schiff über Wasser.
+patternInstructions: Anleitungen für das Schnittmuster
+patternOptions: Schnittmusteroptionen
 pattern: Schnittmuster
 sewingPatterns: Schnittmuster
 patterns: Schnittmuster
-pendingConfirmation: Ausstehende Bestätigung
+pendingConfirmation: Bestätigung ausstehend
 perMonth: pro Monat
-pleaseEnterAValidEmailAddress: Bitte eine gueltige Email Adresse angeben
-pleaseIncludeTheInformationBelow: Bitte geben Sie die Informationen unten an
+pleaseEnterAValidEmailAddress: Bitte eine gültige E-Mail-Adresse angeben
+pleaseIncludeTheInformationBelow: Bitte gib die Informationen unten an
 preview: Vorschau
 privacyNotice: Datenschutzerklärung
-proceedWithCaution: Gehen Sie vorsichtig vor
+proceedWithCaution: Bitte mit Vorsicht fortfahren
 profile: Profil
 relatedLinks: Verwandte Links
-remove: Löschen
+remove: Entfernen
 removeThing: '{thing} entfernen'
-reportThisOnGithub: Dies auf GitHub melden
+reportThisOnGithub: Melde dies auf GitHub
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: "Fügen Sie die E-Mail-Adresse ein, mit der Sie sich angemeldet haben, und wir senden Ihnen eine neue Bestätigungsnachricht."
-resendActivationEmail: Aktivierungs E-Mail erneut versenden
+resendActivationEmailMessage: "Trage die E-Mail-Adresse ein, mit der du dich angemeldet hast, und wir senden dir eine neue Bestätigungsnachricht."
+resendActivationEmail: Aktivierungs-E-Mail erneut senden
 resetPassword: Passwort zurücksetzen
-reset: Rücksetzen
-restoreDefaults: Wiederherstellen der Standardwerte
+reset: Zurücksetzen
+restoreDefaults: Standardeinstellungen wiederherstellen
 restoreDesignDefaults: Designeinstellungen zurücksetzen
 restorePatternDefaults: Standardwerte für Schnittmuster wiederherstellen
-saveDraftToYourAccount: Speichern Sie den Entwurf in Ihrem Konto
+saveDraftToYourAccount: Entwurf in deinem Account speichern
 save: Speichern
-searchLanguageMsg: Jede Sprache hat einen eigenen Suchindex. Da nicht alle Inhalte übersetzt werden, finden Sie möglicherweise weitere Ergebnisse in der englischen Suche.
+searchLanguageMsg: Jede Sprache hat ihren eigenen Suchindex. Da nicht alle Inhalte übersetzt sind, findest du möglicherweise mehr Ergebnisse in der Suche auf Englisch.
 searchLanguageTitle: Können Sie nicht finden, wonach Sie suchen?
 search: Suche
 selectAPartToMoveMirrorOrRotate: Wählen Sie einen Bereich zum Verschieben, Spiegeln oder Drehen aus
@@ -195,7 +195,7 @@ thisFieldSupportsMarkdown: Dieses Feld unterstützt das Markdown
 thisPageRequiresAuthentication: Diese Seite erfordert eine Authentifizierung
 troubleLoggingIn: Mühe dich einzuloggen?
 twitter: Twitter
-txt-footer: Freesewing wird von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Gönner gemacht
+txt-footer: Freesewing wird erstellt von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Förderer
 txt-tier2: Unsere am teuersten abgestufte Kategorie. Es kann weniger sein als der Preis einer Latte, aber Ihre Unterstützung bedeutet uns sehr viel.
 txt-tier4: Abonnieren Sie diese Stufe, und wir senden Ihnen einige unserer begehrten, freischneidenden Beute in die Welt.
 txt-tier8: "Wenn Sie uns nicht nur unterstützen möchten, sondern sich das Gedeihen von Freierwäschen ansehen wollen, ist dies die Stufe für Sie. Außerdem: extra Beute!"
@@ -237,12 +237,12 @@ years: Jahre
 pricing: Preisgestaltung
 createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
 noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
-modelFirst: Beginne damit Masse hinzuzufügen
-noModel: Sie haben (noch) keine Masse hinzugefügt. FreeSewing kann massgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Masse.
-noModel2: Das erste, was Sie tun sollten, ist, eine Person hinzuzufügen und das Massband hervorzuholen.
+modelFirst: Beginne damit, Maße hinzuzufügen
+noModel: Du hast (noch) keine Maße hinzugefügt. FreeSewing kann maßgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Maße.
+noModel2: Das erste, was du tun solltest, ist, eine Person hinzuzufügen und das Maßband auszupacken.
 noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
 noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
-usePatternMeasurements: 'Verwende dir Mass des Originalnähmusters'
+usePatternMeasurements: 'Verwende die Maße des Originalschnittmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
 hideDetails: Details ausblenden
@@ -279,11 +279,11 @@ patternDocs: Schnittmuster-Dokumentation
 socialMedia: Soziale Medien
 create: Erstellen
 browse: Durchsuchen
-patrons: Patrons
+patrons: Förderer
 scrollToTop: Zum Seitenanfang
 sitemap: Seitenübersicht
 contributeToThing: An {thing} mitwirken
-mtmIsOurJam: Maßgeschneiderte Nähmuster sind unser Spezialgebiet
+mtmIsOurJam: Maßgeschneiderte Schnittmuster sind unser Spezialgebiet
 fitYouDeserve: Du verpasst wirklich etwas, wenn du standardisierte Größen suchst.<br />Also melde dich heute an und erhalte die Passform, die du verdienst.
 supportNag: <b>Free</b>Sewing ist kosten<b>frei</b>, aber wir würden es sehr schätzen, wenn du in Betracht ziehen würdest <a href='/patrons/join/'>uns zu unterstützen</a>.
 madeToMeasure: Maßgeschneidert
@@ -310,7 +310,7 @@ zoom: Zoom
 zoomIn: Vergrößern
 zoomOut: Verkleinern
 zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
-savePattern-txt: Dieses Muster in Ihrem FreeSewing-Konto speichern
+savePattern-txt: Dieses Schnittmuster in deinem FreeSewing-Account speichern
 comparePattern: Schnittmuster vergleichen
 showPattern: Schnittmuster anzeigen
 comparePattern-txt: Vergleichen Sie Ihr Muster mit einer Reihe von Standardgrößen, um mögliche Passungsprobleme zu prüfen

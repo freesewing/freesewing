@@ -1,16 +1,16 @@
 ---
 backPocketHorizontalPlacement:
-  title: Back pocket horizontal placement
-  description: Controls the horizontal placement of the back pocket
+  title: Horizontale Platzierung der hinteren Tasche
+  description: Steuert die horizontale Platzierung der hinteren Tasche
 backPocketVerticalPlacement:
-  title: Back pocket vertical placement
-  description: Controls the vertical placement of the back pocket
+  title: Vertikale Platzierung der hinteren Tasche
+  description: Steuert die vertikale Platzierung der hinteren Tasche
 backPocketWidth:
-  title: Back pocket width
-  description: Controls the width of the back pocket
+  title: Breite der hinteren Tasche
+  description: Steuert die Breite der hinteren Tasche
 backPocketDepth:
-  title: Back pocket depth
-  description: Controls the depth of the back pocket
+  title: Tiefe der hinteren Tasche
+  description: Steuert die Tiefe der hinteren Tasche
 frontPocketSlantDepth:
   title: Front pocket slant depth
   description: Controls the depth of the (front) pocket slant
@@ -24,10 +24,10 @@ frontPocketSlantBend:
   title: Front pocket slant bend
   description: Controls the radius by which we round the pocket slant into the outseam
 frontPocketWidth:
-  title: Front pocket width
-  description: Controls the width of the front pocket bag
+  title: Breite der Vordertasche
+  description: Steuert die Breite der Vordertasche
 frontPocketDepth:
-  title: Front pocket depth
+  title: Tiefe der Vordertasche
   description: Controls the depth of the front pocket bag
 frontPocketFacing:
   title: Front pocket facing
