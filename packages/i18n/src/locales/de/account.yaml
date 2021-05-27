@@ -48,13 +48,13 @@ socialTitle: Lass die Leute dir anderswo folgen
 twitterInfo: Wenn du uns deinen Twitter-Benutzernamen angibst, enthält deine Profilseite einen Link zu deinem Twitter-Account, sodass Besucher deine Tweets entdecken und dir folgen können.
 twitterTitle: Gib deinen Twitter-Benutzernamen ein
 twitter: Twitter
-unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Masseinheiten.
-unitsTitle: Bitte wählen Sie die Masseinheit aus, mit der Sie am besten vertraut sind
-units: Masseinheiten
-usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Name oder oder <em>queenoffarts</em> oder was auch immer dir gefällt. Geben Sie einfach den gewünschten Benutzernamen ein.
-usernameTitle: Bitte wähle Deinen Benutzernamen
+unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Maßeinheiten.
+unitsTitle: Bitte wähle die Maßeinheit aus, mit der du am besten vertraut bist
+units: Maßeinheiten
+usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Namen, oder <em>queenoffarts</em>, oder was auch immer dir gefällt.
+usernameTitle: Bitte wähle deinen Benutzernamen
 username: Benutzername
-accountIsInactive: Ihr Benutzerkonto ist inaktiv
-accountNeedsActivation: Bevor Sie sich anmelden können, müssen Sie Ihr Konto aktivieren. Bitte überprüfen Sie Ihren Posteingang auf die Registrierungs-E-Mail und klicken Sie auf den Link in ihm.
+accountIsInactive: Dein Account ist inaktiv
+accountNeedsActivation: Bevor du dch anmelden kannst, musst du deinen Account aktivieren. Bitte überprüfe deinen Posteingang auf die Registrierungs-E-Mail und klicke auf den enthaltenen Link.
 reloadAccount: Account neu laden
 reloadAccountDescription: Dies lädt deine Kontodaten neu aus dem Backend. Das hat den gleichen Effekt wie sich einmal ausloggen und dann wieder einloggen.
