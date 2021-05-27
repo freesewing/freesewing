@@ -69,18 +69,18 @@ draft: Entwurf
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
 drafts: Entwürfe
-draftSettings: Entwurfeinstellungen
+draftSettings: Entwurfseinstellungen
 dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie es manuell mit der Schaltfläche unten aus
-emailAddress: Email Adresse
-emailWorksToo: "Wenn Du Deinen Benutzername nicht weißt: Deine E-mail Addresse funktioniert auch"
-enterEmailPickPassword: Gib Deine E-Mail Adresse ein und wähle ein Passwort
+emailAddress: E-Mail-Adresse
+emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail Addresse funktioniert auch"
+enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
 exportTiledPDF: Exportieren von paginiertem PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
-filterByPattern: Nach Muster filtern
-filterPatterns: Filtern der Schnittmuster
+filterByPattern: Filtern nach Schnittmuster
+filterPatterns: Schnittmuster filtern
 forgotLoginInstructions: "Benutzername oder Emailadresse eingeben und den <b>Passwort zurücksetzen</b> Knopf druecken"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
