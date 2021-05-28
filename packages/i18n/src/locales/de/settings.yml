@@ -7,13 +7,13 @@ paperless:
   description: Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass du es direkt auf den Stoff oder ein anderes Medium transferieren kannst, ohne es ausdrucken zu müssen
 sa:
   title: Nahtzugabe
-  description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
+  description: Steuert die Größe an Nahtzugabe, die in deinem Schnittmuster enthalten ist
 locale:
   title: Sprache
-  description: Legt die für Ihre Schnittmuster verwendete Sprache fest
+  description: Legt die für deine Schnittmuster verwendete Sprache fest
 only:
-  title: Inhalt
-  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Schnittmuster enthalten sind
+  title: Inhalte
+  description: Damit kannst du genau festlegen, welche Teile des Schnittmusters in deinem Schnittmuster enthalten sind
 units:
   title: Maßeinheiten
   description: Legt die in deinem Schnittmuster verwendete Maßeinheit fest
@@ -22,7 +22,7 @@ margin:
   description: Legt den freien Rand um die einzelnen Teile des Schnittmusters fest
 complete:
   title: Detail
-  description: Legt fest wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
+  description: Legt fest, wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
 layout:
   title: Layout
   description: Legt fest, wie die einzelnen Schnittmusterteile auf deinem Schnittmusterbogen angeordnet werden
