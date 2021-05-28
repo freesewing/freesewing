@@ -7,17 +7,17 @@ consentGiven: Zustimmung erteilt
 consentNotGiven: Zustimmung nicht erteilt
 consentWhyAnswer: Die Verarbeitung deiner personenbezogenen Daten benötigt im Rahmen der DSGVO deine Zustimmung, also deine Erlaubnis.
 createMyAccount: Meinen Account erstellen
-furtherReading: Weiter lesen
-modelQuestion: Geben Sie Ihre Zustimmung zur Verarbeitung Ihrer Modelldaten?
-modelWarning: Wenn Sie diese Einwilligung widerrufen, werden Sie von Ihren Modelldaten ausgeschlossen und es werden alle Funktionen, die diesen abhängen, deaktiviert.
+furtherReading: Weiterführende Informationen
+modelQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Modelldaten?
+modelWarning: Wenn du diese Einwilligung widerrufst, wirst du keinen Zugriff mehr auf deine Modelldaten haben und es werden alle Funktionen deaktiviert, die von diesen abhängen.
 modelWhatAnswer: Für jedes Modell deren <b>Maße</b> und <b>Brusteinstellungen</b>.
-modelWhatAnswerOptional: 'Optional: Ein Modell-<b>Bild</b> und ein <b>Name</b>, die du deinem Modell gibst.'
+modelWhatAnswerOptional: 'Optional: Ein Modell-<b>Bild</b> und der <b>Name</b>, den du deinem Modell gibst.'
 modelWhatQuestion: Was sind Modelldaten?
 modelWhyAnswer: 'Zum Erstellen von <b>maßgeschneiderten Schnittmustern</b> benötigen wir <b>Körpermaße</b>.'
 noConsentNoAccount: Ohne diese Zustimmung können wir deinen Account nicht erstellen
 noConsentNoPatterns: Ohne diese Zustimmung kannst du keine Schnittmuster erstellen
 noIDoNot: 'Nein, mache ich nicht'
-openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, können Sie dem widersprechen.
+openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
 profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
