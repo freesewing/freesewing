@@ -1,31 +1,31 @@
 ---
 aaron:
   description: Aaron ist ein sportliches Shirt oder ein Tank Top.
-  title: Shirt Aaron
+  title: Aaron, das Shirt
 albert:
   description: Albert ist eine Schürze.
-  title: Schürze Albert
+  title: Albert, die Schürze
 bella:
-  description: Bella ist ein Grundschnitt für Frauen.
-  title: Grundschnitt Bella
+  description: Bella ist ein Grundschnitt für weibliche Kleidung.
+  title: Bella, ein Grundschnitt
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
-  title: Fliege Benjamin
+  title: Benjamin, die Fliege
 bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
-  title: Grundschnitt Bent
+  title: Bent, ein Grundschnitt
 breanna:
-  description: Breanna ist ein Grundschnitt für Frauen.
-  title: Grundschnitt Breanna
+  description: Breanna ist ein Grundschnitt für weibliche Kleidung.
+  title: Breanna, ein Grundschnitt
 brian:
-  description: Brian ist ein Grundschnitt für Männer.
-  title: Grundschnitt Brian
+  description: Brian ist ein Grundschnitt für männliche Kleidung.
+  title: Brian, ein Grundschnitt
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
-  title: Retroshorts Bruce
+  title: Bruce, die Retroshorts
 carlita:
-  description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
-  title: Mantel Carlita
+  description: 'Die mit-Brüste Version unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+  title: Carlita, der Mantel
 carlton:
   description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
   title: Mantel Carlton
@@ -87,7 +87,7 @@ tamiko:
   description: Tamiko ist ein Zero Waste Top.
   title: Top Tamiko
 teagan:
-  description: Teagan ist ein massgeschneidertes T-Shirt-Muster
+  description: Teagan ist ein Schnittmuster für ein passgenaues T-Shirt
   title: T-Shirt Teagan
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
