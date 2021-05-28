@@ -19,20 +19,20 @@ noConsentNoPatterns: Ohne diese Zustimmung kannst du keine Schnittmuster erstell
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
-profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildaten?
+profileQuestion: Gibst du deine Einwilligung zum Verarbeiten deiner Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
-profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, <b>Beschreibung über Sie</b>, und <b>Socialmediaaccounts</b>'
-profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
+profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, eine <b>Beschreibung über dich</b>, und <b>Accounts bei sozialen Medien</b>'
+profileWhatAnswer: 'Deine <b>E-Mail-Adresse</b>, <b>Benutzername</b> und <b>Passwort</b>.'
 profileWhatQuestion: Was sind Profildaten?
-profileWhyAnswer: 'Um sich <b> zu authentifizieren </b>, kontaktieren Sie <b> Sie </b>, wenn Sie benötigt werden, und bauen eine <b> Community </b> auf.'
-readMore: Weitere Informationen finden Sie in unserer Datenschutzerklärung.
-readRights: Für weitere Informationen lesen Sie bitte mehr über Ihre Rechte.
-revokeConsent: Zustimmung widerrufen
+profileWhyAnswer: 'Um dich <b>zu authentifizieren</b>, dich zu <b>kontaktieren</b> wenn nötig, und um eine <b>Community</b> aufzubauen.'
+readMore: Weitere Informationen findest du in unserer Datenschutzerklärung.
+readRights: Lies mehr über deine Rechte für weitere Informationen.
+revokeConsent: Einwilligung widerrufen
 shareQuestion: Teilen wir sie mit anderen?
 timingQuestion: Für wie lange behalten wir sie?
-whatYouNeedToKnow: Was Sie wissen müssen
+whatYouNeedToKnow: Was du wissen musst
 whyQuestion: Worum brauchen wir sie?
 yesIDoObject: 'Ja, ich widerspreche'
 yesIDo: 'Ja, das mache ich'
