@@ -27,7 +27,7 @@ carlita:
   description: 'Die mit-Brüste Version unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
   title: Carlita, der Mantel
 carlton:
-  description: 'Für Sherlock Holmes Cosplay, oder nur als wirklich netter Mantel.'
+  description: 'Für Sherlock Holmes-Cosplay, oder nur als wirklich netter Mantel.'
   title: Carlton, der Mantel
 cathrin:
   description: Cathrin ist ein Unterbüstenkorsett oder Taillentrainer.
@@ -39,16 +39,16 @@ cornelius:
   description: Cornelius ist eine Kniebundhose zum Fahrradfahren, basierend auf der Entwurfsmethode nach Keystone.
   title: Cornelius, die Kniebundhose zum Radfahren
 diana:
-  description: Diana ist ein Oberteil mit einer drapierten Halslinie.
+  description: Diana ist ein Oberteil mit einem drapierten Halsausschnitt.
   title: Diana, das drapierte Oberteil
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Florent, die Schiebermütze
 florence:
-  description: 'Florence ist eine Gesichtsmaske'
-  title: Florence, die Gesichtsmaske
+  description: 'Florence ist ein Mundschutz'
+  title: Florence, der Mundschutz
 holmes:
-  description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
+  description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut'
   title: Holmes Deerstalker-Hut
 hortensia:
   description: 'Hortensia ist eine Handtasche'
@@ -96,7 +96,7 @@ titan:
   description: Titan ist ein Unisex-Grundschnitt für Hosen ohne Abnäher
   title: Titan, ein Hosen-Grundschnitt
 trayvon:
-  description: Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.
+  description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
   title: Trayvon, die Krawatte
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
