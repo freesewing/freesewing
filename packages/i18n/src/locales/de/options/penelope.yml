@@ -13,7 +13,7 @@ dartToSideSeamFactor:
   description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
   title: Vorderer Abnäherinhälttiefenfaktor
-  description: Wie weit nach unten geht der vordere Abnäher von der Taillenlinie. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesässumfang.
+  description: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesässumfang.
 hem:
   title: Höhe des Saumes
   description: Breite des Saumes. Maß in absoluten Werten angeben.
