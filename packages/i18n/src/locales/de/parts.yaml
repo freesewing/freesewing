@@ -11,8 +11,8 @@ bentUnderSleeve: Unterarmel Bent
 buttonholePlacket: Knopflochleiste
 buttonPlacket: Knopfleiste
 collar: Kragen
-collarStand: Kragenstand
-cuff: Manschetten
+collarStand: Kragensteg
+cuff: Manschette
 fabricTail: Stoffschwanz
 fabricTip: Stoffspitze
 frontBase: Vorderseite Basis
@@ -21,9 +21,9 @@ front: Vorderseite
 frontLeft: Vorne links
 frontLining: Futter vorderseite
 frontRight: Vorne rechts
-hoodCenter: Haubenmitte
-hood: Haube
-hoodSide: Haube Seite
+hoodCenter: Mitte der Kapuze
+hood: Kapuze
+hoodSide: Kapuzenseite
 inset: Einsatz
 interfacingTail: Einlageschwanz
 interfacingTip: Einlagespitze
