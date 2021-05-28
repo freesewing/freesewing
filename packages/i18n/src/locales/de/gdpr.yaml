@@ -22,7 +22,7 @@ openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
 profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
-profileWarning: Durch den Widerruf dieser Einwilligung werden alle Ihre Daten entfernt. Es hat den gleichen Effekt wie das Entfernen Ihres Kontos.
+profileWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
 profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, <b>Beschreibung über Sie</b>, und <b>Socialmediaaccounts</b>'
 profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
 profileWhatQuestion: Was sind Profildaten?
