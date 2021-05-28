@@ -18,10 +18,10 @@ noConsentNoAccount: Ohne diese Zustimmung können wir deinen Account nicht erste
 noConsentNoPatterns: Ohne diese Zustimmung kannst du keine Schnittmuster erstellen
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, können Sie dem widersprechen.
-openDataQuestion: Teile anonymisierte Maße als freie (open-source) Daten
+openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
 profileQuestion: Geben Sie Ihr Einverständnis zur Verarbeitung Ihrer Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
-profileTimingAnswer: '<b>12 Monate</b> nach Ihrem letzten Login oder bis Sie <b> Ihr Konto entfernen oder <b> diese Einwilligung widerrufen.'
+profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle Ihre Daten entfernt. Es hat den gleichen Effekt wie das Entfernen Ihres Kontos.
 profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, <b>Beschreibung über Sie</b>, und <b>Socialmediaaccounts</b>'
 profileWhatAnswer: 'Ihre <b> E-Mail-Adresse </b>, <b> Benutzername </b> und <b> Passwort </b>.'
@@ -30,10 +30,10 @@ profileWhyAnswer: 'Um sich <b> zu authentifizieren </b>, kontaktieren Sie <b> Si
 readMore: Weitere Informationen finden Sie in unserer Datenschutzerklärung.
 readRights: Für weitere Informationen lesen Sie bitte mehr über Ihre Rechte.
 revokeConsent: Zustimmung widerrufen
-shareQuestion: Teilen wir es mit anderen?
-timingQuestion: Wie lange halten wir es?
+shareQuestion: Teilen wir sie mit anderen?
+timingQuestion: Für wie lange behalten wir sie?
 whatYouNeedToKnow: Was Sie wissen müssen
-whyQuestion: Warum brauchen wir es?
+whyQuestion: Worum brauchen wir sie?
 yesIDoObject: 'Ja, ich widerspreche'
 yesIDo: 'Ja, das mache ich'
-openData: 'Hinweis: Freesewing veröffentlicht anonymisierte Messungen als offene Daten für wissenschaftliche Forschung. Du hast das Recht, dies zu verwehren'
+openData: 'Hinweis: Freesewing veröffentlicht anonymisierte Maße als freie Daten (open data) für wissenschaftliche Forschung. Du hast das Recht, dem zu widersprechen'
