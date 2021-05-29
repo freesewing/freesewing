@@ -1,10 +1,10 @@
 ---
 backDartDepthFactor:
   title: Zurück zum Abnäherinhalttiefenfaktor
-  description: Wie weit geht der rückwärtige Abnäher von dem Taillenbund nach unten. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesässumfang.
+  description: Wie weit der rückwärtige Abnäher vom Taillenbund nach unten geht. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesäßumfang.
 backVent:
   title: Hinterer Gehschlitz
-  description: "Fügen Sie einen Bewegungschlitz hinten am\nRock hinzu."
+  description: Füge einen Bewegungschlitz hinten am Rock hinzu.
 backVentLength:
   title: Hinterer Gehschlitz Länge
   description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
@@ -13,13 +13,13 @@ dartToSideSeamFactor:
   description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
   title: Vorderer Abnäherinhälttiefenfaktor
-  description: Wie weit geht der vordere Abnäher von der Taillenlinie. Dies ist ein Faktor des Masses von der natürlichen Taille zum Gesässumfang.
+  description: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesässumfang.
 hem:
   title: Höhe des Saumes
-  description: Breite des Saums. Mass in absoluten Werten angeben.
+  description: Breite des Saumes. Maß in absoluten Werten angeben.
 hemBonus:
   title: Saumzugabe
-  description: Diese Option reduziert die Saumweite. Sie ist ein Prozentsatz des Gesässumfangs.
+  description: Diese Option reduziert die Saumweite. Sie ist ein prozentualer Anteil des Gesäßumfangs.
 lengthBonus:
   title: Längenzugabe
   description: Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert.

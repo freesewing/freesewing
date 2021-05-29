@@ -1,106 +1,106 @@
 ---
 aaron:
-  description: Aaron ist ein sportliches Shirt oder ein Tank Top.
-  title: Shirt Aaron
+  description: Aaron ist ein sportliches Shirt oder Tank Top.
+  title: Aaron, das Shirt
 albert:
   description: Albert ist eine Schürze.
-  title: Schürze Albert
+  title: Albert, die Schürze
 bella:
-  description: Bella ist ein Grundschnitt für Frauen.
-  title: Grundschnitt Bella
+  description: Bella ist ein Grundschnitt für weibliche Kleidung.
+  title: Bella, ein Grundschnitt
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
-  title: Fliege Benjamin
+  title: Benjamin, die Fliege
 bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
-  title: Grundschnitt Bent
+  title: Bent, ein Grundschnitt
 breanna:
-  description: Breanna ist ein Grundschnitt für Frauen.
-  title: Grundschnitt Breanna
+  description: Breanna ist ein Grundschnitt für weibliche Kleidung.
+  title: Breanna, ein Grundschnitt
 brian:
-  description: Brian ist ein Grundschnitt für Männer.
-  title: Grundschnitt Brian
+  description: Brian ist ein Grundschnitt für männliche Kleidung.
+  title: Brian, ein Grundschnitt
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
-  title: Retroshorts Bruce
+  title: Bruce, die Retroshorts
 carlita:
-  description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
-  title: Mantel Carlita
+  description: 'Die mit-Brüste Version unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+  title: Carlita, der Mantel
 carlton:
-  description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
-  title: Mantel Carlton
+  description: 'Für Sherlock Holmes-Cosplay, oder nur als wirklich netter Mantel.'
+  title: Carlton, der Mantel
 cathrin:
   description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
-  title: Korsett Cathrin
+  title: Cathrin, das Korsett
 charlie:
-  description: Charlie ist ein Schnittmuster für Chinohosen.
-  title: Chinohose Charlie
+  description: Charlie ist ein Schnittmuster für Chinos.
+  title: Charlie, die Chinos
 cornelius:
   description: Cornelius ist eine Kniebundhose zum Fahrradfahren, basierend auf der Entwurfsmethode nach Keystone.
-  title: Kniebundhose zum Radfahren Cornelius
+  title: Cornelius, die Kniebundhose zum Radfahren
 diana:
-  description: Diana ist ein Oberteil mit einer drapierten Halslinie.
-  title: Drapiertes Oberteil Diana
+  description: Diana ist ein Oberteil mit einem drapierten Halsausschnitt.
+  title: Diana, das drapierte Oberteil
 florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
-  title: Schiebermütze Florent
+  title: Florent, die Schiebermütze
 florence:
-  description: 'Florence ist eine Gesichtsmaske'
-  title: Gesichtsmaske Florence
+  description: 'Florence ist ein Mundschutz'
+  title: Florence, der Mundschutz
 holmes:
-  description: 'Für Sherlock Holmes-Cosplay oder einfach nur ein niedlicher Hut'
-  title: Holmes Deerstalker-Mütze
+  description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut'
+  title: Holmes Deerstalker-Hut
 hortensia:
   description: 'Hortensia ist eine Handtasche'
-  title: Handtasche Hortensia
+  title: Hortensia, die Handtasche
 huey:
-  description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
-  title: Hoodie Huey
+  description: Huey ist ein Hoodie mit Reißverschluss und optionalen Taschen auf der Vorderseite.
+  title: Huey, der Hoodie
 hugo:
   description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
-  title: Hoodie Hugo
+  title: Hugo, der Hoodie
 jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
-  title: Sakko Jaeger
+  title: Jaeger, das Sakko
 paco:
-  description: Paco sind lässige, aber stilvolle Sommerhosen
-  title: Hose Paco
+  description: Paco ist eine lässige, aber stilvolle Sommerhose
+  title: Paco, die Hose
 penelope:
   description: Penelope ist ein Bleistiftrock mit oder ohne Gehschlitz in rückwärtigen Teil.
-  title: Penelope Bleistiftrock
+  title: Penelope, der Bleistiftrock
 sandy:
   description: Sandy ist ein anpassungsfähiges Tellerrockschnittmuster
-  title: Sandy Tellerrock
+  title: Sandy, der Tellerrock
 shin:
-  description: Shin sind sportliche Badehosen für Männer
-  title: Shin Badehose
+  description: Shin ist eine sportliche Badehose für Männer
+  title: Shin, die Badehose
 simon:
   description: Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.
-  title: Hemd Simon
+  title: Simon, das Hemd
 simone:
-  description: Simone ist der Schnitt Simon, angepasst für Menschen mit Brüsten
-  title: Bluse Simone
+  description: Simone ist Simon, angepasst für Menschen mit Brüsten
+  title: Simone, das Hemd
 sven:
-  description: Sven ist ein geradliniges Sweatshirt.
-  title: Sweatshirt Sven
+  description: Sven ist ein einfacher Pullover.
+  title: Sven, der Pullover
 tamiko:
-  description: Tamiko ist ein Zero Waste Top.
-  title: Top Tamiko
+  description: Tamiko ist ein Zero-Waste Top.
+  title: Tamiko, das Top
 teagan:
-  description: Teagan ist ein massgeschneidertes T-Shirt-Muster
-  title: T-Shirt Teagan
+  description: Teagan ist ein Schnittmuster für ein passgenaues T-Shirt
+  title: Teagan, das T-Shirt
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
-  title: Hose Theo
+  title: Theo, die Hose
 titan:
-  description: Titan ist ein Unisex-Grundmuster für Hosen ohne Abnäher
-  title: Hosen-Grundmuster Titan
+  description: Titan ist ein Unisex-Grundschnitt für Hosen ohne Abnäher
+  title: Titan, ein Hosen-Grundschnitt
 trayvon:
-  description: Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.
-  title: Krawatte Trayvon
+  description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
+  title: Trayvon, die Krawatte
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
-  title: Weste Wahid
+  title: Wahid, die Weste
 waralee:
   description: Waralee ist eine Wickelhose
-  title: Wickelhose Wickelhose
+  title: Waralee, die Wickelhose

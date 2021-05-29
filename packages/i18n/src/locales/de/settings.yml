@@ -1,31 +1,31 @@
 ---
 advanced:
   title: Expertenmodus
-  description: Legen Sie fest, ob erweiterte Einstellungen und Schnittmusteroptionen angezeigt werden sollen oder nicht
+  description: Legt fest, ob erweiterte Einstellungen und Schnittmusteroptionen angezeigt werden sollen oder nicht
 paperless:
   title: Papierlos
-  description: Zeichnen Sie ein Schnittmuster mit allen benötigten Dimensionen drin, so dass Sie es direkt auf den Stoff oder ein anderes Medium transferieren können ohne es Ausdrucken zu müssen
+  description: Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass du es direkt auf den Stoff oder ein anderes Medium transferieren kannst, ohne es ausdrucken zu müssen
 sa:
   title: Nahtzugabe
-  description: Steuert die Menge an Nahtzugabe, die in Ihrem Muster enthalten ist
+  description: Steuert die Größe an Nahtzugabe, die in deinem Schnittmuster enthalten ist
 locale:
   title: Sprache
-  description: Legt die für Ihre Schnittmuster verwendete Sprache fest
+  description: Legt die für deine Schnittmuster verwendete Sprache fest
 only:
-  title: Inhalt
-  description: Damit können Sie genau steuern, welche Musterteile in Ihrem Schnittmuster enthalten sind
+  title: Inhalte
+  description: Damit kannst du genau festlegen, welche Teile des Schnittmusters in deinem Schnittmuster enthalten sind
 units:
-  title: Masseinheit
-  description: Legt die Masseinheit in Ihrem Schnittmuster fest
+  title: Maßeinheiten
+  description: Legt die in deinem Schnittmuster verwendete Maßeinheit fest
 margin:
-  title: Marge
-  description: Steuert den Rand um Musterteile
+  title: Randabstand
+  description: Legt den freien Rand um die einzelnen Teile des Schnittmusters fest
 complete:
   title: Detail
-  description: Legt fest wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
+  description: Legt fest, wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
 layout:
-  title: Darstellung
-  description: Legt fest wie die einzelnen Schnittmusterteile auf Ihrem Schnittmusterbogen angeordnet werden
+  title: Layout
+  description: Legt fest, wie die einzelnen Schnittmusterteile auf deinem Schnittmusterbogen angeordnet werden
 debug:
   title: Debug
-  description: Debug aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde
+  description: Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde

@@ -17,11 +17,11 @@ testThing: '{thing} testen'
 renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
 weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
 youCan: Sie können
-enterMeasurements: Masse von Hand eingeben
-preloadMeasurements: Einen bestehenden Mustersatz einlesen
+enterMeasurements: Maße von Hand eingeben
+preloadMeasurements: Einen bestehenden Satz an Maßen einlesen
 size: Größe
-noRequiredMeasurements: Dieses Muster hat keine erforderlichen Masse
-howtoAddMeasurements: Um Masse als Anforderung zu definieren, fügen Sie sie in den <b>Masse-</b>Abschnitt der Konfigurationsdatei des Schnittmusters ein.
+noRequiredMeasurements: Dieses Schnittmuster hat keine benötigten Maße
+howtoAddMeasurements: Um Maße als Anforderung zu definieren, füge sie der Sektion <b>measurements</b> in der Konfigurationsdatei des Schnittmusters hinzu.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter
 clearDesignMode: Designmodus leeren
 designMode: Designmodus
