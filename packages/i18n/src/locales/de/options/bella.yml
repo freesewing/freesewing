@@ -12,10 +12,10 @@ backDartHeight:
   title: Back dart height
   description: Controls the height of the back dart
 bustDartLength:
-  title: Bust dart length
+  title: Länge des Brustabnähers
   description: Controls the length of the bust dart
 waistDartLength:
-  title: Waist dart length
+  title: Länge des Taillenabnähers
   description: Controls the length of the waist dart
 bustDartCurve:
   title: Bust dart curve
