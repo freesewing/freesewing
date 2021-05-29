@@ -88,7 +88,7 @@ github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
 goodToSeeYouAgain: Schön, dich wieder zu sehen, {user}
-handle: Referenz
+handle: Identifikator
 helpUsTranslate: Hilf uns beim Übersetzen
 home: Startseite
 howCanWeHelpYou: Wie können wir dir helfen?
@@ -111,11 +111,11 @@ metadata: Metadaten
 metricUnits: Metrische Einheiten (cm)
 person: Person
 people: Personen
-nameInfo: Ein Name hilft dabei, die Dinge auseinander zu halten. Du kannst einen beliebigen Namen auswählen.
+nameInfo: Ein Name hilft dabei, Dinge auseinanderzuhalten. Du kannst einen beliebigen Namen auswählen.
 name: Name
 addThing: '{thing} hinzufügen'
-newThing: Neues {thing}
-newPatternForModel: 'Neues {pattern} für {model}'
+newThing: '{thing} neu erstellen'
+newPatternForModel: '{pattern} für {model} neu erstellen'
 noChanges: Keine Änderungen
 no: false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
