@@ -6,20 +6,20 @@ backlineBend:
   title: Armlochform hinten
   description: Bestimmt die Form / Biegung der Rückseite der Armlöcher.
 hipsEase:
-  title: Bequemlichkeitszugabe Hüfte
-  description: Die Leichtigkeit an Ihren Hüften.
+  title: Zugabe Hüfte
+  description: Die Menge an Bequemlichkeitszugabe an deinen Hüften.
 necklineBend:
-  title: Ausschnittform
+  title: Ausschnittsform
   description: Bestimmt die Form / Biegung des Halsausschnitts vorne.
 necklineDrop:
   title: Ausschnitt Tiefe
-  description: Die Tiefe des vorderen Halsausschnitts
+  description: Wie tief der Ausschnitt vorne geht.
 shoulderStrapPlacement:
-  title: Schultergurtplatzierung
-  description: Bestimmt, ob der Schultergurt näher am Hals (niedrigere Zahlen) oder an der Schulter (höhere Zahlen) liegt.
+  title: Platzierung der Schulterträger
+  description: Bestimmt, ob der Schulterträger näher am Hals (niedrigere Zahlen), oder näher an der Schulter (höhere Zahlen) liegt.
 shoulderStrapWidth:
-  title: Schultergurt Breite
-  description: Die Breite der Schultergurte.
+  title: Breite der Schulterträger
+  description: Die Breite der Schulterträger.
 stretchFactor:
-  description: Bestimmt die horizontale negative Leichtigkeit
+  description: Bestimmt die horizontale negative Bewegungszugabe.
   title: Dehn
