@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.16.1 (2021-05-29)
+
+### Added
+
+ - Added a new `designs` icon
+
 ## 2.16.0 (2021-05-24)
 
 ### Changed

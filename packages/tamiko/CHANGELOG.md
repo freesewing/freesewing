@@ -1,6 +1,12 @@
 # Change log for: @freesewing/tamiko
 
 
+## 2.16.1 (2021-05-29)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

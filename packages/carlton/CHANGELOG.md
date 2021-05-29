@@ -1,6 +1,12 @@
 # Change log for: @freesewing/carlton
 
 
+## 2.16.1 (2021-05-29)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.7.1 (2020-07-24)
 
 ### Fixed

@@ -1,6 +1,225 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.16.1 (2021-05-29)
+
+### aaron
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### albert
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bella
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### benjamin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bent
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### breanna
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### brian
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bruce
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### carlita
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### carlton
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### cathrin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### charlie
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### components
+
+#### Added
+
+ - Added a new `designs` icon
+
+### cornelius
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### diana
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### florence
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### florent
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### holmes
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### hortensia
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### huey
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### hugo
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### jaeger
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### paco
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### penelope
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### sandy
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### shin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### simon
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### simone
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### sven
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### tamiko
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### teagan
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### theo
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### titan
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### trayvon
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### wahid
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### waralee
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+
 ## 2.16.0 (2021-05-24)
 
 ### brian

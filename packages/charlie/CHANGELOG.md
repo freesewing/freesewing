@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.16.1 (2021-05-29)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.15.1 (2021-04-24)
 
 ### Added
