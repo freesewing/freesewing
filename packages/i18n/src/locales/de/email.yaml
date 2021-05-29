@@ -6,12 +6,12 @@ emailchangeHeaderOpeningLine: 'Wir stellen nur sicher, dass wir dich bei Bedarf 
 emailchangeHiddenIntro: "Bestätige deine neue E-Mail-Adresse"
 emailchangeSubject: 'Bitte bestätige deine neue E-Mail-Adresse'
 emailchangeTitle: 'Bitte bestätige deine neue E-Mail-Adresse'
-emailchangeWhy: 'Sie haben diese E-Mail erhalten, weil Sie die mit dem Konto auf freesewing.org verknüpfte E-Mail-Adresse geändert haben'
-footerCredits: 'Kreiert von Joost & Mitwirkenden, mit der finanziellen Unterstützung unserer Gönner ❤️ '
-footerSlogan: 'Freesewing ist eine Open Source Plattform für Schnittmuster nach Maß'
-goodbyeCopy1: "Wenn Sie mitteilen möchten, warum Sie abreisen, können Sie auf diese Nachricht antworten. <br> Wir werden Sie nicht mehr belästigen."
-goodbyeHeaderOpeningLine: 'Wisse einfach, dass du immer wiederkommen kannst'
-goodbyeHiddenIntro: 'Vielen Dank, dass Sie freesewing eine Chance gegeben haben'
+emailchangeWhy: 'Du hast diese E-Mail erhalten, weil du die mit deinem Konto auf freesewing.org verknüpfte E-Mail-Adresse geändert hast'
+footerCredits: 'Kreiert von Joost & Mitwirkenden, mit der finanziellen Unterstützung unserer Förderer ❤️ '
+footerSlogan: 'Freesewing ist eine Open-Source Plattform für Schnittmuster nach Maß'
+goodbyeCopy1: "Wenn du uns mitteilen möchtest, warum du uns verlässt, kannst du gerne auf diese Nachricht antworten. <br>Von unserer Seite aus werden wir dich nicht weiter stören."
+goodbyeHeaderOpeningLine: 'Sei dir nur bewusst, dass du jederzeit wiederkommen kannst'
+goodbyeHiddenIntro: 'Vielen Dank, dass du Freesewing eine Chance gegeben hast'
 goodbyeSubject: 'Abschied 👋'
 goodbyeTitle: 'Vielen Dank, dass Sie freesewing eine Chance gegeben haben'
 goodbyeWhy: 'Sie haben diese E-Mail als endgültige Benachrichtigung erhalten, nachdem Sie Ihr Konto auf freesewing.org gelöscht haben'
