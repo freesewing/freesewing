@@ -1,3 +1,82 @@
+2.16.1:
+  date: 2021-05-29
+
+  Added:
+    components:
+      - Added a new `designs` icon
+
+  Changed:
+    aaron:
+      - &newDepartment Changed `department` setting in config in line with new grouping
+    albert:
+      - *newDepartment
+    bella:
+      - *newDepartment
+    benjamin:
+      - *newDepartment
+    bent:
+      - *newDepartment
+    breanna:
+      - *newDepartment
+    brian:
+      - *newDepartment
+    bruce:
+      - *newDepartment
+    carlita:
+      - *newDepartment
+    carlton:
+      - *newDepartment
+    cathrin:
+      - *newDepartment
+    charlie:
+      - *newDepartment
+    cornelius:
+      - *newDepartment
+    diana:
+      - *newDepartment
+    florence:
+      - *newDepartment
+    florent:
+      - *newDepartment
+    holmes:
+      - *newDepartment
+    hortensia:
+      - *newDepartment
+    huey:
+      - *newDepartment
+    hugo:
+      - *newDepartment
+    jaeger:
+      - *newDepartment
+    paco:
+      - *newDepartment
+    penelope:
+      - *newDepartment
+    sandy:
+      - *newDepartment
+    shin:
+      - *newDepartment
+    simon:
+      - *newDepartment
+    simone:
+      - *newDepartment
+    sven:
+      - *newDepartment
+    tamiko:
+      - *newDepartment
+    teagan:
+      - *newDepartment
+    theo:
+      - *newDepartment
+    titan:
+      - *newDepartment
+    trayvon:
+      - *newDepartment
+    wahid:
+      - *newDepartment
+    waralee:
+      - *newDepartment
+
 2.16.0:
   date: 2021-05-24
 
