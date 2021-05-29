@@ -58,27 +58,27 @@ sleevecapFrontFactorY:
   description: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
 sleevecapQ1Offset:
   title: Offset der Armkugel Q1
-  description: Steuert die Krümmung der Armkugel im ersten Viertelkreis (vorderes Armloch)
+  description: Steuert die Krümmung der Armkugel im ersten Quadranten (vorderes Armloch)
 sleevecapQ2Offset:
   title: Offset der Armkugel Q2
-  description: Steuert die Krümmung der Armkugel im zweite Viertelkreis (vorderes Schulter)
+  description: Steuert die Krümmung der Armkugel im zweiten Quadranten (vordere Schulter)
 sleevecapQ3Offset:
   title: Offset der Armkugel Q3
-  description: Steuert die Krümmung der Armkugel im dritte Viertelkreis (hintere Schulter)
+  description: Steuert die Krümmung der Armkugel im dritten Quadranten (hintere Schulter)
 sleevecapQ4Offset:
   title: Offset der Armkugel Q4
-  description: Steuert die Krümmung der Armkugel im vierte Viertelkreis (hintere Armloch)
+  description: Steuert die Krümmung der Armkugel im vierten Quadranten (hinteres Armloch)
 sleevecapQ1Spread1:
-  title: Armkugel Q1 nach unten gespreizt
-  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Armkugel in Richtung des Armlochs
+  title: Armkugel Q1 Spreizung nach unten
+  description: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung des Armlochs
 sleevecapQ1Spread2:
-  title: Armkugel Q1 nach oben gespreizt
-  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Armkugel in Richtung des Schulter
+  title: Armkugel Q1 Spreizung nach oben
+  description: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung der Schulter
 sleevecapQ2Spread1:
-  title: Armkugel Q2 nach unten gespreizt
-  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Armkugel in Richtung des Armlochs
+  title: Armkugel Q2 Spreizung nach unten
+  description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung des Armlochs
 sleevecapQ2Spread2:
-  title: Armkugel Q2 nach oben gespreizt
+  title: Armkugel Q2 Spreizung nach oben
   description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Armkugel in Richtung des Schulter
 sleevecapQ3Spread1:
   title: Armkugel Q3 nach oben gespreizt
