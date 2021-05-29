@@ -66,8 +66,8 @@ documentationForTranslators: Dokumentation für Übersetzer
 documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
 draft: Entwurf
-draftPattern: 'Entwurf {pattern}'
-draftPatternForModel: 'Entwurf {pattern} für {model}'
+draftPattern: '{pattern} erstellen'
+draftPatternForModel: 'Entwerfe {pattern} für {model}'
 drafts: Entwürfe
 draftSettings: Entwurfseinstellungen
 dragAndDropImageHere: Ziehen Sie und legen Sie ein Bild hier ab oder wählen Sie es manuell mit der Schaltfläche unten aus
