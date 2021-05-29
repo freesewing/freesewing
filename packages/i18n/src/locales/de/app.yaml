@@ -197,11 +197,11 @@ troubleLoggingIn: Probleme beim Einloggen?
 twitter: Twitter
 txt-footer: Freesewing wird erstellt von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Förderer
 txt-tier2: Unsere Kategorie mit dem demokratischsten Preis. Es ist vielleicht weniger als der Preis eines Lattes, aber deine Unterstützung bedeutet uns sehr viel.
-txt-tier4: Wähle diese Stufe, und wir senden dir etwas von unserem heißbegehrten Freesewing-Swag nach Hause. Egal, wo in der Welt das ist.
+txt-tier4: Wähle diese Stufe, und wir senden dir etwas von unserem heißbegehrten Freesewing-Swag nach Hause. Egal, wo in der Welt das auch sein mag.
 txt-tier8: "Wenn du uns nicht nur unterstützen möchtest, sondern Freesewing zum Gedeihen bringen willst, ist das die Stufe für dich. Außerdem: extra Swag!"
 txt-tiers: 'FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt'
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Einheiten. Wähle einfach aus, was von beiden du hier verwenden möchtest. (Standardmäßig werden die in deinem Account konfigurierten Einheiten verwendet).
-updated: Aktualisierte
+updated: Aktualisiert
 update: Aktualisieren
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 users: Benutzer
@@ -228,20 +228,20 @@ getStarted: Jetzt loslegen
 apiReference: API-Referenz
 tutorial: Anleitung
 editThisPage: Diese Seite bearbeiten
-loginRequiredRedirect: 'Sie wurden auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
+loginRequiredRedirect: 'Du wurdest auf die Login-Seite weitergeleitet, da {page} eine Authentifizierung benötigt'
 various: Verschiedenes
 sewing: Nähen
 examples: Beispiele
 by: von
 years: Jahre
 pricing: Preisgestaltung
-createFirst: Beginnen Sie mit dem Erstellen eines neuen Musters
-noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Konto.
+createFirst: Beginne mit dem Erstellen eines neuen Schnittmusters
+noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster und speichere es dann in deinem Account.
 modelFirst: Beginne damit, Maße hinzuzufügen
 noModel: Du hast (noch) keine Maße hinzugefügt. FreeSewing kann maßgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Maße.
 noModel2: Das erste, was du tun solltest, ist, eine Person hinzuzufügen und das Maßband auszupacken.
-noUserBrowsingTitle: "Sie können nicht nur alle Benutzer durchsuchen"
-noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessantes auf unserer Seite zu tun?"
+noUserBrowsingTitle: "Du kannst nicht einfach alle Benutzer durchsuchen"
+noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessanteres auf unserer Seite zu tun?"
 usePatternMeasurements: 'Verwende die Maße des Originalschnittmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
