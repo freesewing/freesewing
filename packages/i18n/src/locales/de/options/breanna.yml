@@ -3,7 +3,7 @@ shoulderDart:
   title: Schulterabnäher
   description: Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 shoulderDartSize:
-  title: Grösse der Schulterabnäher
+  title: Größe der Schulterabnäher
   description: Größe des Schulterabnähers
 shoulderDartLength:
   title: Länge des Schulterabnähers
