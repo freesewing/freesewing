@@ -19,7 +19,7 @@ ease:
   description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
   term: Fadenlauf
-  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenluf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
   description: "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
