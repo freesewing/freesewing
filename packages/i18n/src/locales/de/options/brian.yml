@@ -37,61 +37,61 @@ sleeveLengthBonus:
   description: Der Betrag, um den der Ärmel verlängert wird. Ein negativer Wert verkürzt ihn.
 sleevecapEase:
   title: Armkugel Zugabe
-  description: Der Betrag, um den die Ärmelkappennaht länger ist als die Armlochnaht.
+  description: Der Betrag, um den die Armkugelnaht länger ist als die Armlochnaht.
 sleevecapTopFactorX:
-  title: Ärmelkappe Oberteil X
-  description: Steuert die horizontale Position der Ärmelkappe
+  title: Armkugel Oben X
+  description: Steuert die horizontale Position der Armkugel oben.
 sleevecapTopFactorY:
-  title: Ärmelkappe Oberteil Y
-  description: Steuert die Höhe der Ärmelkappe. Ein höherer Wert führt zu einer höheren und schmaleren Ärmelkappe.
+  title: Armkugel Oben Y
+  description: Steuert die Höhe der Armkugel. Ein höherer Wert führt zu einer höheren und schmaleren Armkugel.
 sleevecapBackFactorX:
-  title: Ärmelkappe Rückseite X
-  description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe Rückseite auf der X-Achse (horizontal)
+  title: Armkugel Hinten X
+  description: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der X-Achse (horizontal)
 sleevecapBackFactorY:
-  title: Ärmelkappe Rückseite Y
-  description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe Rückseite auf der Y-Achse (vertikal)
+  title: Armkugel Hinten Y
+  description: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
 sleevecapFrontFactorX:
-  title: Ärmelkappe vorne X
-  description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe vorne auf der X-Achse (horizontal)
+  title: Armkugel Vorne X
+  description: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der X-Achse (horizontal)
 sleevecapFrontFactorY:
-  title: Ärmelkappe vorne Y
-  description: Steuert die Platzierung des Neigungspunkts der Ärmelkappe vorne auf der Y-Achse (vertikal)
+  title: Armkugel Vorne Y
+  description: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
 sleevecapQ1Offset:
-  title: Offset der Ärmelkappe Q1
-  description: Steuert die Krümmung der Ärmelkappe im ersten Viertelkreis (vorderes Armloch)
+  title: Offset der Armkugel Q1
+  description: Steuert die Krümmung der Armkugel im ersten Viertelkreis (vorderes Armloch)
 sleevecapQ2Offset:
-  title: Offset der Ärmelkappe Q2
-  description: Steuert die Krümmung der Ärmelkappe im zweite Viertelkreis (vorderes Schulter)
+  title: Offset der Armkugel Q2
+  description: Steuert die Krümmung der Armkugel im zweite Viertelkreis (vorderes Schulter)
 sleevecapQ3Offset:
-  title: Offset der Ärmelkappe Q3
-  description: Steuert die Krümmung der Ärmelkappe im dritte Viertelkreis (hintere Schulter)
+  title: Offset der Armkugel Q3
+  description: Steuert die Krümmung der Armkugel im dritte Viertelkreis (hintere Schulter)
 sleevecapQ4Offset:
-  title: Offset der Ärmelkappe Q4
-  description: Steuert die Krümmung der Ärmelkappe im vierte Viertelkreis (hintere Armloch)
+  title: Offset der Armkugel Q4
+  description: Steuert die Krümmung der Armkugel im vierte Viertelkreis (hintere Armloch)
 sleevecapQ1Spread1:
-  title: Ärmelkappe Q1 nach unten gespreizt
-  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Armkugel Q1 nach unten gespreizt
+  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Armkugel in Richtung des Armlochs
 sleevecapQ1Spread2:
-  title: Ärmelkappe Q1 nach oben gespreizt
-  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
+  title: Armkugel Q1 nach oben gespreizt
+  description: Steuert die Ausbreitung der ersten Quadrantenkrümmung der Armkugel in Richtung des Schulter
 sleevecapQ2Spread1:
-  title: Ärmelkappe Q2 nach unten gespreizt
-  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Armkugel Q2 nach unten gespreizt
+  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Armkugel in Richtung des Armlochs
 sleevecapQ2Spread2:
-  title: Ärmelkappe Q2 nach oben gespreizt
-  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
+  title: Armkugel Q2 nach oben gespreizt
+  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Armkugel in Richtung des Schulter
 sleevecapQ3Spread1:
-  title: Ärmelkappe Q3 nach oben gespreizt
-  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
+  title: Armkugel Q3 nach oben gespreizt
+  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Armkugel in Richtung des Schulter
 sleevecapQ3Spread2:
-  title: Ärmelkappe Q3 nach unten gespreizt
-  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Armkugel Q3 nach unten gespreizt
+  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Armkugel in Richtung des Armlochs
 sleevecapQ4Spread1:
-  title: Ärmelkappe Q4 nach oben gespreizt
-  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Ärmelkappe in Richtung des Schulter
+  title: Armkugel Q4 nach oben gespreizt
+  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Armkugel in Richtung des Schulter
 sleevecapQ4Spread2:
-  title: Ärmelkappe Q4 nach unten gespreizt
-  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Ärmelkappe in Richtung des Armlochs
+  title: Armkugel Q4 nach unten gespreizt
+  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Armkugel in Richtung des Armlochs
 sleeveWidthGuarantee:
   title: Garantie der Ärmelbreite
   description: Steuert, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, um wie viel wir die Ärmelbreite verändern können, um die Ärmel in das Armloch einzupassen.
