@@ -75,7 +75,7 @@ emailAddress: E-Mail-Adresse
 emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail-Adresse funktioniert auch"
 enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
-exportTiledPDF: Exportieren von paginiertem PDF
+exportTiledPDF: Exportieren als paginiertes PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
@@ -99,7 +99,7 @@ instagram: Instagram
 invalidTldMessage: '.{tld} ist keine gültige TLD'
 joinTheChatMsg: Wir haben auf Discord eine Community mit freundlichen Leuten, mit denen du dich austauschen kannst.
 justAMoment: Einen Moment bitte
-layout: Darstellung
+layout: Layout
 logIn: Anmelden
 loginWithProvider: 'Mit {provider} anmelden'
 logOut: Abmelden
