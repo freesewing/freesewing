@@ -22,13 +22,13 @@ passwordresetHeaderOpeningLine: "Keine Sorge, solche Dinge passieren uns allen"
 passwordresetHiddenIntro: 'Erhalte erneut Zugang zu deinem Account'
 passwordresetSubject: 'Erhalte erneut Zugang zu deinem Account auf freesewing.org'
 passwordresetTitle: 'Setze dein Passwort zurück und erhalte erneut Zugang zu deinem Account'
-passwordresetWhy: 'Sie haben diese E-Mail erhalten, weil Sie auf freesewing.org aufgefordert haben, Ihr Passwort zurückzusetzen'
-questionsJustReply: "Wenn Sie Fragen haben, antworten Sie einfach auf diese E-Mail. Ich bin immer gerne bereit zu helfen. 🙂"
-signature: 'mit Liebe,'
-signupActionText: 'Bestätigen Sie Ihre E-Mail-Adresse'
-signupCopy1: 'Danke, dass Sie sich bei <b>freesewing.org</b> angemeldet haben.<br><br>Bevor wir beginnen, müssen Sie Ihre E-Mail-Adresse bestätigen. Bitte klicken Sie auf den folgenden Link, um das zu tun:'
-signupHeaderOpeningLine: "Wir freuen uns sehr, dass Sie der Freesewing Community beitreten."
-signupHiddenIntro: "Lassen Sie uns Ihre E-Mail-Adresse bestätigen"
+passwordresetWhy: 'Du hast diese E-Mail erhalten, weil du die Anfrage gestellt hast, dein Passwort von freesewing.org zurückzusetzen'
+questionsJustReply: "Wenn du Fragen hast, antworte einfach auf diese E-Mail. Ich bin immer gerne bereit zu helfen. 🙂"
+signature: 'Liebe Grüße'
+signupActionText: 'Bestätige deine E-Mail-Adresse'
+signupCopy1: 'Danke, dass du dich bei <b>freesewing.org</b> angemeldet hast.<br><br>Bevor wir beginnen, musst du deine E-Mail-Adresse bestätigen. Bitte klicke auf den folgenden Link, um das zu tun:'
+signupHeaderOpeningLine: "Wir freuen uns sehr darüber, dass du ein Teil der Freesewing-Community wirst."
+signupHiddenIntro: "Lass' uns deine E-Mail-Adresse bestätigen"
 signupSubject: 'Willkommen bei freesewing.org'
 signupTitle: 'Willkommen an Bord'
 signupWhy: 'Du hast diese E-Mail erhalten, weil du dich gerade auf freesewing.org angemeldet hast'
