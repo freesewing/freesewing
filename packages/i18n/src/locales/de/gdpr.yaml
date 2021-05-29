@@ -1,11 +1,11 @@
 ---
 compliant: Freesewing.org respektiert deine Privatsphäre und deine Rechte. Wir wenden die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
-consent: Zustimmung
-consentForModelData: Zustimmung für Modelldaten
-consentForProfileData: Zustimmung für Profildaten
-consentGiven: Zustimmung erteilt
-consentNotGiven: Zustimmung nicht erteilt
-consentWhyAnswer: Die Verarbeitung deiner personenbezogenen Daten benötigt im Rahmen der DSGVO deine Zustimmung, also deine Erlaubnis.
+consent: Einwilligung
+consentForModelData: Einwilligung für Modelldaten
+consentForProfileData: Einwilligung für Profildaten
+consentGiven: Einwilligung erteilt
+consentNotGiven: Einwilligung nicht erteilt
+consentWhyAnswer: Die Verarbeitung deiner personenbezogenen Daten benötigt im Rahmen der DSGVO deine Einwilligung, also deine Erlaubnis.
 createMyAccount: Meinen Account erstellen
 furtherReading: Weiterführende Informationen
 modelQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Modelldaten?
@@ -14,8 +14,8 @@ modelWhatAnswer: Für jedes Modell deren <b>Maße</b> und <b>Brusteinstellungen<
 modelWhatAnswerOptional: 'Optional: Ein Modell-<b>Bild</b> und der <b>Name</b>, den du deinem Modell gibst.'
 modelWhatQuestion: Was sind Modelldaten?
 modelWhyAnswer: 'Zum Erstellen von <b>maßgeschneiderten Schnittmustern</b> benötigen wir <b>Körpermaße</b>.'
-noConsentNoAccount: Ohne diese Zustimmung können wir deinen Account nicht erstellen
-noConsentNoPatterns: Ohne diese Zustimmung kannst du keine Schnittmuster erstellen
+noConsentNoAccount: Ohne diese Einwilligung können wir deinen Account nicht erstellen
+noConsentNoPatterns: Ohne diese Einwilligung kannst du keine Schnittmuster erstellen
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
