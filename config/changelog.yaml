@@ -4,6 +4,7 @@
   Added:
     components:
       - Added a new `designs` icon
+      - We now publish .mjs files again for the different components
 
   Changed:
     aaron:
