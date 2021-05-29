@@ -1,11 +1,11 @@
 ---
 chatWithUs: 'Chatte mit uns'
-emailchangeActionText: 'Bestätigen Sie Ihre neue E-Mail-Adresse'
-emailchangeCopy1: 'Sie haben um die Änderung der E-Mail-Adresse gebeten, die mit Ihrem Konto unter <b>freesewing.org</b> verknüpft ist.<br><br>Bevor Sie dies tun, müssen Sie Ihre neue E-Mail-Adresse bestätigen. Bitte klicken Sie auf den Link unten, um dies zu tun:'
-emailchangeHeaderOpeningLine: 'Stellen Sie nur sicher, dass wir Sie bei Bedarf erreichen können'
-emailchangeHiddenIntro: "Bestätigen Sie Ihre neue E-Mail-Adresse"
-emailchangeSubject: 'Bitte bestätigen Sie Ihre neue E-Mail-Adresse'
-emailchangeTitle: 'Bitte bestätigen Sie Ihre neue E-Mail-Adresse'
+emailchangeActionText: 'Bestätige deine neue E-Mail-Adresse'
+emailchangeCopy1: 'Du hast um die Änderung der E-Mail-Adresse gebeten, die mit deinem Account unter <b>freesewing.org</b> verknüpft ist.<br><br>Bevor du dies tust, musst du deine neue E-Mail-Adresse bestätigen. Bitte klicke auf den untenstehenden Link, um dies zu tun:'
+emailchangeHeaderOpeningLine: 'Wir stellen nur sicher, dass wir dich bei Bedarf erreichen können'
+emailchangeHiddenIntro: "Bestätige deine neue E-Mail-Adresse"
+emailchangeSubject: 'Bitte bestätige deine neue E-Mail-Adresse'
+emailchangeTitle: 'Bitte bestätige deine neue E-Mail-Adresse'
 emailchangeWhy: 'Sie haben diese E-Mail erhalten, weil Sie die mit dem Konto auf freesewing.org verknüpfte E-Mail-Adresse geändert haben'
 footerCredits: 'Kreiert von Joost & Mitwirkenden, mit der finanziellen Unterstützung unserer Gönner ❤️ '
 footerSlogan: 'Freesewing ist eine Open Source Plattform für Schnittmuster nach Maß'
