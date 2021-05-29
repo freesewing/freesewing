@@ -16,27 +16,27 @@ collarEase:
   description: Die Menge an Bequemlichkeits-/Bewegungszugabe um deinen Hals herum
 chestEase:
   title: Brust Zugabe
-  description: Die Menge an Leichtigkeit an Ihrer Brust
+  description: Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.
 cuffEase:
-  title: Manschette Leichtigkeit
-  description: Die Leichtigkeit am Handgelenk
+  title: Manschette Zugabe
+  description: Die Bequemlichkeits-/Bewegungszugabe am Handgelenk.
 frontArmholeDeeper:
   title: Zusätzlicher Ausschnitt am vorderen Armloch
-  description: Wie viel soll das vordere Armloch tiefer ausgeschnitten werden als der Rücken.
+  description: Um wie viel das vordere Armloch tiefer ausgeschnitten ist als im Rücken.
 lengthBonus:
-  title: Längenbonus
-  description: Der Betrag, um das Kleidungsstück zu verlängern. Ein negativer Wert verkürzt ihn.
+  title: Längenzugabe
+  description: Der Betrag, um den das Kleidungsstück verlängert wird. Ein negativer Wert verkürzt es.
 shoulderEase:
-  title: Schulter Leichtigkeit
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  title: Schulter Zugabe
+  description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Schulter. Dies erhöht den Schulterabstand, um zusätzliche Lagen oder die Dicke des Stoffes zu beherbergen.
 shoulderSlopeReduction:
-  title: Reduktion der Schulterneigung
-  description: Der Betrag, um den die Schulterneigung reduziert wird, um die Schulterpolsterung zu ermöglichen.
+  title: Verringerung der Schulterneigung
+  description: Der Betrag, um den die Schulterneigung reduziert wird, um eine Schulterpolsterung zu ermöglichen.
 sleeveLengthBonus:
-  title: Hülsenlängen-Bonus
-  description: Der Betrag, um die Hülse zu verlängern. Ein negativer Wert verkürzt ihn.
+  title: Ärmel Längenzugabe
+  description: Der Betrag, um den der Ärmel verlängert wird. Ein negativer Wert verkürzt ihn.
 sleevecapEase:
-  title: Ärmelkappe Leichtigkeit
+  title: Armkugel Zugabe
   description: Der Betrag, um den die Ärmelkappennaht länger ist als die Armlochnaht.
 sleevecapTopFactorX:
   title: Ärmelkappe Oberteil X
