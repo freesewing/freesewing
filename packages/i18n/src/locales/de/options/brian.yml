@@ -3,19 +3,19 @@ acrossBackFactor:
   title: Rückenweitenverhältnis
   description: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement.
 armholeDepthFactor:
-  title: Tiefenfaktor des Ärmelansatze
-  description: Beeinflusst die Tiefe des Ärmelansatze nach innen zur Brust.
+  title: Tiefenfaktor des Armloches
+  description: Steuert die Tiefe des Armloches. Höhere Werte ergeben ein tieferes Armloch.
 backNeckCutout:
   title: Ausschnitt im Nacken
-  description: Wie tief ist der Hals im Rücken ausgeschnitten?
+  description: Wie tief der Hals am Rücken ausgeschnitten ist
 bicepsEase:
-  title: Bizeps Leichtigkeit
-  description: 'Die Leichtigkeit am Oberarm. Während wir versuchen, dies zu respektieren, hat das Anbringen der Manschette am Armloch Vorrang vor der Einhaltung des genauen Maßes an Leichtigkeit.'
+  title: Bizeps Zugabe
+  description: 'Die Menge an Bewegungszugabe am Oberarm. Während wir versuchen, dies zu respektieren, hat das genaue Anbringen des Ärmels am Armloch Vorrang vor der Einhaltung der genauen Zugabe.'
 collarEase:
-  title: Kragen Leichtigkeit
-  description: Die Menge an Leichtigkeit um den Hals.
+  title: Kragen Zugabe
+  description: Die Menge an Bequemlichkeits-/Bewegungszugabe um deinen Hals herum
 chestEase:
-  title: Entlastung der Brust
+  title: Brust Zugabe
   description: Die Menge an Leichtigkeit an Ihrer Brust
 cuffEase:
   title: Manschette Leichtigkeit
