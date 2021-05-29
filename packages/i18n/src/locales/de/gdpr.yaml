@@ -19,7 +19,7 @@ noConsentNoPatterns: Ohne diese Einwilligung kannst du keine Schnittmuster erste
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
-profileQuestion: Gibst du deine Einwilligung zum Verarbeiten deiner Profildaten?
+profileQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Profildaten?
 profileShareAnswer: '<b>Nein</b>, niemals.'
 profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
 profileWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
@@ -33,7 +33,7 @@ revokeConsent: Einwilligung widerrufen
 shareQuestion: Teilen wir sie mit anderen?
 timingQuestion: Für wie lange behalten wir sie?
 whatYouNeedToKnow: Was du wissen musst
-whyQuestion: Worum brauchen wir sie?
+whyQuestion: Warum brauchen wir sie?
 yesIDoObject: 'Ja, ich widerspreche'
 yesIDo: 'Ja, das mache ich'
 openData: 'Hinweis: Freesewing veröffentlicht anonymisierte Maße als freie Daten (open data) für wissenschaftliche Forschung. Du hast das Recht, dem zu widersprechen'
