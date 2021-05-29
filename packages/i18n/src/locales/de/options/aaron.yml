@@ -22,4 +22,4 @@ shoulderStrapWidth:
   description: Die Breite der Schulterträger.
 stretchFactor:
   description: Bestimmt die horizontale negative Bewegungszugabe.
-  title: Dehn
+  title: Dehnung
