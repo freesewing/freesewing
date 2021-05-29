@@ -313,17 +313,17 @@ zoom-txt: Wechselt zwischen der Anpassung an ihren Bildschirm nach der Höhe ode
 savePattern-txt: Dieses Schnittmuster in deinem FreeSewing-Account speichern
 comparePattern: Schnittmuster vergleichen
 showPattern: Schnittmuster anzeigen
-comparePattern-txt: Vergleichen Sie Ihr Muster mit einer Reihe von Standardgrößen, um mögliche Passungsprobleme zu prüfen
+comparePattern-txt: Vergleiche dein Schnittmuster mit einer Reihe von Standardgrößen, um mögliche Probleme mit der Passform zu prüfen
 recreatePattern: Schnittmuster neu erstellen
-recreatePattern-txt: Wähle eine andere Person und erstelle dann dieses Muster für diese Person neu
+recreatePattern-txt: Wähle eine andere Person und erstelle dann diesen Schnitt neu für diese Person
 editOwnPatternsOnly: Du kannst nur deine eigenen Schnittmuster bearbeiten
 editOwnPatternsOnly-txt: Du kannst dieses Schnittmuster nicht bearbeiten, weil es nicht dir gehört. Aber du kannst es als Grundlage verwenden, um dein eigenes Schnittmuster zu erstellen.
 updateNotes-txt: Aktualisiere die Notizen, die du zu deinem Schnittmuster führst
-franceWarning: Vorsicht Nutzende in Frankreich
-franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu verwerfen.
-emailNotReceived: Wenn Sie die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
+franceWarning: Warnung für Benutzer/innen in Frankreich
+franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu entsorgen.
+emailNotReceived: Wenn du die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
 error: Fehler
-info: Informationen
+info: Info
 warning: Warnung
 debug: Debug
 unsubscribe: Abmelden
