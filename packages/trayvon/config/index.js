@@ -8,7 +8,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 2,
-  tags: ['top', 'basics'],
   optionGroups: {
     style: ['tipWidth', 'knotWidth', 'lengthBonus'],
   },

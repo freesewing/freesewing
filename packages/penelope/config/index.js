@@ -8,10 +8,9 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'womenswear',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 3,
-  tags: ['skirt', 'bottom', 'basics'],
   optionGroups: {
     fit: [
       'lengthBonus',

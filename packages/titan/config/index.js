@@ -5,10 +5,9 @@ export default {
   version,
   design: ['Debra Bean', 'Joost De Cock'],
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'bottoms',
   type: 'block',
   difficulty: 2,
-  tags: ['bottom', 'basics'],
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
     style: ['waistHeight', 'fitKnee', 'lengthBonus', 'crotchDrop'],

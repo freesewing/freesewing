@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'unisex',
+  department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['accessories'],
   optionGroups: {
     fit: ['backOpening', 'chestDepth'],
     style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth'],

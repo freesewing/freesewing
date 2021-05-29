@@ -10,7 +10,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['handbag', 'accessories'],
   optionGroups: {
     style: ['size', 'zipperSize', 'strapLength', 'handleWidth'],
   },

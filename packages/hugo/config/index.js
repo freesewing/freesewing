@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: ['bicepsEase', 'chestEase', 'cuffEase', 'hipsEase', 'ribbingStretch'],
     style: ['lengthBonus', 'sleeveLengthBonus', 'ribbingHeight'],

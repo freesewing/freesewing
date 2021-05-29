@@ -6,10 +6,9 @@ export default {
   beta: true,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 4,
-  tags: ['top'],
   optionGroups: {
     fit: [
       'chestEase',

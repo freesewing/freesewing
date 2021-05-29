@@ -10,7 +10,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['hat'],
   optionGroups: {
     style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth'],
   },

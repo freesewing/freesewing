@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'coats',
   type: 'pattern',
   difficulty: 5,
-  tags: ['top', 'jacket'],
   optionGroups: {
     fit: [
       'acrossBackFactor',

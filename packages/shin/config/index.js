@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'swimwear',
   type: 'pattern',
   difficulty: 2,
-  tags: ['swimwear', 'bottom'],
   optionGroups: {
     fit: ['bulge', 'backRise', 'legReduction', 'stretch'],
     style: ['rise'],

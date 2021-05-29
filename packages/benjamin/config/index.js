@@ -8,7 +8,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: ['collarEase', 'adjustmentRibbon'],
     style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle'],

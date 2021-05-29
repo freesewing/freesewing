@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 4,
-  tags: ['top', 'formal'],
   optionGroups: {
     fit: [
       'chestEase',

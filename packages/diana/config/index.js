@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Erica Alcusa Sáez',
   code: 'Erica Alcusa Sáez',
-  department: 'womenswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 2,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: [
       'chestEase',

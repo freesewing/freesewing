@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'underwear',
   type: 'pattern',
   difficulty: 3,
-  tags: ['underwear', 'bottom', 'basics'],
   optionGroups: {
     fit: ['bulge', 'stretch', 'legStretch', 'backRise'],
     style: ['rise', 'legBonus'],

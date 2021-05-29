@@ -8,10 +8,9 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'unisex',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 3,
-  tags: ['trousers', 'bottom', 'basics'],
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
     style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],

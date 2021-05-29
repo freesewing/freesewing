@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'tops',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   cut: {
     front: [2, 'onFold'],
     back: [2, 'onFold'],

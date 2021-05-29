@@ -8,7 +8,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 1,
-  tags: [],
   optionGroups: {
     fit: ['height', 'length', 'curve'],
   },

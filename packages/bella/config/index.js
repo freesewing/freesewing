@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Bella Incognito',
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'tops',
   type: 'block',
   difficulty: 3,
-  tags: ['block', 'top', 'basics'],
   optionGroups: {
     fit: ['chestEase', 'waistEase', 'bustSpanEase'],
     darts: ['backDartHeight', 'bustDartLength', 'waistDartLength', 'bustDartCurve'],

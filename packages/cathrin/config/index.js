@@ -5,10 +5,9 @@ export default {
   version,
   design: ['Cathrin Åhlén', 'Joost De Cock'],
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'underwear',
   type: 'pattern',
   difficulty: 4,
-  tags: ['underwear', 'top'],
   optionGroups: {
     fit: ['waistReduction', 'panels'],
     style: ['backOpening', 'backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise'],

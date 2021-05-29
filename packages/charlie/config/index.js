@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'bottoms',
   type: 'block',
   difficulty: 3,
-  tags: ['bottom', 'basics', 'trousers'],
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase', 'waistbandCurve'],
     style: ['waistHeight', 'waistbandWidth', 'lengthBonus', 'crotchDrop'],

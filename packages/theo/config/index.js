@@ -6,10 +6,9 @@ export default {
   deprecated: 'charlie',
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 4,
-  tags: ['trousers', 'bottom'],
   optionGroups: {
     fit: ['backRise', 'wedge'],
     style: ['waistbandWidth', 'lengthBonus', 'legWidth'],

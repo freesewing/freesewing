@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'tops',
   type: 'pattern',
   difficulty: 1,
-  tags: ['top'],
   optionGroups: {
     fit: ['armholeDepthFactor', 'chestEase'],
     style: ['flare', 'lengthBonus', 'shoulderseamLength'],

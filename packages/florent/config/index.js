@@ -8,7 +8,6 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 2,
-  tags: ['headwear', 'cap'],
   optionGroups: {
     fit: ['headEase'],
   },
