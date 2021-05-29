@@ -12,16 +12,16 @@ footerSlogan: 'Freesewing ist eine Open-Source Plattform für Schnittmuster nach
 goodbyeCopy1: "Wenn du uns mitteilen möchtest, warum du uns verlässt, kannst du gerne auf diese Nachricht antworten. <br>Von unserer Seite aus werden wir dich nicht weiter stören."
 goodbyeHeaderOpeningLine: 'Sei dir nur bewusst, dass du jederzeit wiederkommen kannst'
 goodbyeHiddenIntro: 'Vielen Dank, dass du Freesewing eine Chance gegeben hast'
-goodbyeSubject: 'Abschied 👋'
-goodbyeTitle: 'Vielen Dank, dass Sie freesewing eine Chance gegeben haben'
-goodbyeWhy: 'Sie haben diese E-Mail als endgültige Benachrichtigung erhalten, nachdem Sie Ihr Konto auf freesewing.org gelöscht haben'
+goodbyeSubject: 'Mach''s gut! 👋'
+goodbyeTitle: 'Vielen Dank, dass du Freesewing eine Chance gegeben hast'
+goodbyeWhy: 'Du hast diese E-Mail als endgültiges Lebewohl erhalten, nachdem du deinen Account auf freesewing.org entfernt hast'
 joostFromFreesewing: 'Joost von Freesewing'
-passwordresetActionText: 'Erhalten Sie erneut Zugang zu Ihrem Konto'
-passwordresetCopy1: 'Sie haben Ihr Passwort für Ihr Konto unter <b> freesewing.org </b> vergessen.<br><br>Klicken Sie auf den Link, um das Passwort zurückzusetzen:'
-passwordresetHeaderOpeningLine: "Keine Sorge, diese Dinge passieren uns allen"
-passwordresetHiddenIntro: 'Erhalten Sie erneut Zugang zu Ihrem Konto'
-passwordresetSubject: 'Erhalten Sie erneut Zugang zu Ihrem Konto auf freesewing.org'
-passwordresetTitle: 'Setzen Sie Ihr Passwort zurück und erhalten Sie erneut Zugang zu Ihrem Konto'
+passwordresetActionText: 'Erhalte erneut Zugang zu deinem Account'
+passwordresetCopy1: 'Du hast dein Passwort für deinen Account bei <b>freesewing.org</b> vergessen.<br><br>Klicke auf den untenstehenden Link, um das Passwort zurückzusetzen:'
+passwordresetHeaderOpeningLine: "Keine Sorge, solche Dinge passieren uns allen"
+passwordresetHiddenIntro: 'Erhalte erneut Zugang zu deinem Account'
+passwordresetSubject: 'Erhalte erneut Zugang zu deinem Account auf freesewing.org'
+passwordresetTitle: 'Setze dein Passwort zurück und erhalte erneut Zugang zu deinem Account'
 passwordresetWhy: 'Sie haben diese E-Mail erhalten, weil Sie auf freesewing.org aufgefordert haben, Ihr Passwort zurückzusetzen'
 questionsJustReply: "Wenn Sie Fragen haben, antworten Sie einfach auf diese E-Mail. Ich bin immer gerne bereit zu helfen. 🙂"
 signature: 'mit Liebe,'
