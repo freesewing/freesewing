@@ -79,19 +79,19 @@ sleevecapQ2Spread1:
   description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung des Armlochs
 sleevecapQ2Spread2:
   title: Armkugel Q2 Spreizung nach oben
-  description: Steuert die Ausbreitung der zweite Quadrantenkrümmung der Armkugel in Richtung des Schulter
+  description: Steuert die Spreizung der Amkugel im zweiten Quadranten in Richtung der Schulter
 sleevecapQ3Spread1:
-  title: Armkugel Q3 nach oben gespreizt
-  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Armkugel in Richtung des Schulter
+  title: Armkugel Q3 Spreizung nach oben
+  description: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung der Schulter
 sleevecapQ3Spread2:
-  title: Armkugel Q3 nach unten gespreizt
-  description: Steuert die Ausbreitung der dritte Quadrantenkrümmung der Armkugel in Richtung des Armlochs
+  title: Armkugel Q3 Spreizung nach unten
+  description: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung des Armlochs
 sleevecapQ4Spread1:
-  title: Armkugel Q4 nach oben gespreizt
-  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Armkugel in Richtung des Schulter
+  title: Armkugel Q4 Spreizung nach oben
+  description: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung der Schulter
 sleevecapQ4Spread2:
-  title: Armkugel Q4 nach unten gespreizt
-  description: Steuert die Ausbreitung der vierte Quadrantenkrümmung der Armkugel in Richtung des Armlochs
+  title: Armkugel Q4 Spreizung nach unten
+  description: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung des Armlochs
 sleeveWidthGuarantee:
   title: Garantie der Ärmelbreite
   description: Steuert, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, um wie viel wir die Ärmelbreite verändern können, um die Ärmel in das Armloch einzupassen.
