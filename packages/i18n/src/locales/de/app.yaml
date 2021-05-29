@@ -267,7 +267,7 @@ oneMomentPlease: Einen Moment bitte
 loadingMagic: Wir sind dabei, die Magie zu laden
 estimate: Schätzung
 actual: Aktuell
-weEstimateYM2B: 'Wir schätzen, dein {measurement} auf etwa:'
+weEstimateYM2B: 'Wir schätzen {measurement} von dir auf etwa:'
 exportAsData: Als Daten exportieren
 availablePatterns: Verfügbare Schnittmuster
 browseCollection: Sammlung durchsuchen
@@ -284,32 +284,32 @@ scrollToTop: Zum Seitenanfang
 sitemap: Seitenübersicht
 contributeToThing: An {thing} mitwirken
 mtmIsOurJam: Maßgeschneiderte Schnittmuster sind unser Spezialgebiet
-fitYouDeserve: Du verpasst wirklich etwas, wenn du standardisierte Größen suchst.<br />Also melde dich heute an und erhalte die Passform, die du verdienst.
-supportNag: <b>Free</b>Sewing ist kosten<b>frei</b>, aber wir würden es sehr schätzen, wenn du in Betracht ziehen würdest <a href='/patrons/join/'>uns zu unterstützen</a>.
+fitYouDeserve: Du verpasst wirklich etwas, wenn du standardisierte Größen verwendest.<br />Also melde dich heute an und erhalte die Passform, die du verdienst.
+supportNag: <b>Free</b>Sewing ist kosten<b>frei</b>, aber wir würden es sehr schätzen, wenn du in Betracht ziehen würdest, <a href='/patrons/join/'>uns zu unterstützen</a>.
 madeToMeasure: Maßgeschneidert
-sizes: Grössen
+sizes: Größen
 standardSizes: Standardgrößen
-accountRequired: Diese Funktion erfordert ein FreeSewing-Konto
-size: Grösse
+accountRequired: Diese Funktion erfordert einen FreeSewing-Account
+size: Größe
 switchToThing: 'Zu {thing} wechseln'
 saveThing: '{thing} speichern'
 shareThing: '{thing} teilen'
 link: Link
 cloneThing: '{thing} klonen'
-cloneDescription: Erstelle eine exakte Kopie mit den Massen des Originalschnittmusters.
+cloneDescription: Erstelle eine exakte Kopie mit den Maßen des Originalschnittmusters.
 furtherReading: Weiterlesen
 saveAsNewPattern: Als neues Schnittmuster speichern
-saveAsNewPattern-txt: (Eine Kopie) des Musters in deinem FreeSewing-Konto speichern
+saveAsNewPattern-txt: (Eine Kopie von diesem) Schnittmuster in deinem FreeSewing-Account speichern
 exportPattern: Schnittmuster exportieren
 printPattern: Schnittmuster drucken
 exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder das Schnittmuster in verschiedenen Formaten herunterladen
 editThing: '{thing} bearbeiten'
-editPattern-txt: Dieses Schnittmster im Muster-Editor laden
-featureRequiresAccount: Diese Funktion erfordert ein FreeSewing-Konto
+editPattern-txt: Dieses Schnittmster im Schnittmuster-Editor laden
+featureRequiresAccount: Diese Funktion erfordert einen FreeSewing-Account
 zoom: Zoom
 zoomIn: Vergrößern
 zoomOut: Verkleinern
-zoom-txt: Wechselt zwischen Passung der Höhe oder der Breite des Schnittmusters an ihren Bildschirm
+zoom-txt: Wechselt zwischen der Anpassung an ihren Bildschirm nach der Höhe oder der Breite des Schnittmusters
 savePattern-txt: Dieses Schnittmuster in deinem FreeSewing-Account speichern
 comparePattern: Schnittmuster vergleichen
 showPattern: Schnittmuster anzeigen
