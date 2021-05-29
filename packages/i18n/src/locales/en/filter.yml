@@ -6,23 +6,14 @@ code: Code
 design: Design
 difficulty: Difficulty
 resetFilter: Reset filter
-menswear: Menswear
-womenswear: Womenswear
 accessories: Accessories
 block: Block
 pattern: Pattern
 byPattern: Filter by pattern
 underwear: Underwear
 top: Top
-basics: Basics
+tops: Tops
 bottom: Bottom
-coat: Coat
-cosplay: Cosplay
-headwear: Headwear
-jacket: Jacket
-cap: Cap
-skirt: Skirt
+bottoms: Bottoms
+coats: Coats & jackets
 swimwear: Swimwear
-trousers: Trousers
-formal: Formal
-unisex: Unisex
