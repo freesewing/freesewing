@@ -246,25 +246,25 @@ usePatternMeasurements: 'Verwende die Maße des Originalschnittmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
 hideDetails: Details ausblenden
-clickBelowToLogOut: Klicken Sie unten sich abzumelden
+clickBelowToLogOut: Klicke unten, um dich abzumelden
 compare: Vergleichen
 savePattern: Schnittmuster speichern
-recreate: Wiederherstellen
+recreate: Neu erstellen
 recreateThing: '{thing} neu erstellen'
 recreateThingForPerson: '{thing} für {person} neu erstellen'
-seeYouLaterUser: Auf Wiedersehen {user}
-exportForPrinting: Exportieren für den Druck
-exportForEditing: Exportieren für Bearbeitung
-startWithNeckTitle: Beginnen Sie mit dem Hals-Umfang
-startWithNeckDescription: Auf Basis Ihres Hals-Umfangs können wir Ihnen helfen, Fehler in Ihren Messungen zu erkennen.
-whatYouNeed: Was Sie benötigen
+seeYouLaterUser: Bis später, {user}
+exportForPrinting: Für den Druck exportieren
+exportForEditing: Für die Bearbeitung exportieren
+startWithNeckTitle: Beginne mit dem Hals-Umfang
+startWithNeckDescription: Auf Basis deines Hals-Umfangs können wir dir helfen, Fehler in deinen Maßen zu erkennen.
+whatYouNeed: Was du brauchst
 fabricOptions: Stoffauswahl
 cutting: Zuschnitt
-instructions: Anleitung
+instructions: Anleitungen
 hide: Verbergen
 show: Anzeigen
 oneMomentPlease: Einen Moment bitte
-loadingMagic: Wir laden die Magie
+loadingMagic: Wir sind dabei, die Magie zu laden
 estimate: Schätzung
 actual: Aktuell
 weEstimateYM2B: 'Wir schätzen, dein {measurement} auf etwa:'
