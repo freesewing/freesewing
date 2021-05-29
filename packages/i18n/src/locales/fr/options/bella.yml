@@ -12,10 +12,10 @@ backDartHeight:
   title: Hauteur de pince dos
   description: Contrôle la hauteur de pince dans le dos
 bustDartLength:
-  title: Longueur de pince dos
+  title: Bust dart length
   description: Contrôle la longueur de la pince dos
 waistDartLength:
-  title: Longueur de la pince de taille
+  title: Waist dart length
   description: Contrôle la longueur de la pince de taille
 bustDartCurve:
   title: Courbe de la pince poitrine
