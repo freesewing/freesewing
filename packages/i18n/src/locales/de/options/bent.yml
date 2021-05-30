@@ -1,8 +1,8 @@
 ---
 sleeveBend:
   title: Ärmelbiegung
-  description: Steuert die Biegung der Schulter am Ellbogen
+  description: Steuert die Biegung des Ärmels am Ellbogen.
 sleevecapHeight:
-  title: Sleevecap Höhe
-  description: Steuert die Höhe der Ärmelkappe.
+  title: Armkugel Höhe
+  description: Steuert die Höhe der Armkugel.
 

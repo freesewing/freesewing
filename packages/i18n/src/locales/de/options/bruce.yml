@@ -1,19 +1,19 @@
 ---
 bulge:
   title: Wölbung
-  description: Vergrößern Sie den Winkel, um mehr Platz in der vorderen Tasche zu schaffen.
+  description: Vergrößert den Winkel, um mehr Platz in der vorderen Tasche zu schaffen.
 legBonus:
   title: Beinlängen-Bonus
   description: Zusätzliche Länge für die Beine.
 rise:
   title: Anstieg
-  description: Betrag, um die Taille anzuheben. Ein negativer Wert verringert den Wert.
+  description: Betrag, um den die Taille angehoben wird. Ein negativer Wert senkt sie ab.
 stretch:
-  title: Dehn
-  description: Bestimmt die negative Leichtigkeit
+  title: Dehnung
+  description: Die Menge an negativer Bewegungszugabe.
 legStretch:
-  title: Bein Dehn
-  description: 'Die besten Ergebnisse erzielen Sie, wenn Sie die Beine eng aneinander anbringen.'
+  title: Bein Dehnung
+  description: 'Das beste Ergebnis erzielst du, wenn du den Sitz der Beine etwas enger machst — Sag Nein zu klaffenden Lücken.'
 backRise:
   title: Anstieg hinten
   description: Prozentsatz, um den die Taille am Rücken angehoben wird.

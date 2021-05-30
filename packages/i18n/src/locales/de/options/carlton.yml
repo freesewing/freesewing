@@ -1,7 +1,7 @@
 ---
 seatEase:
-  title: Leichtigkeit Hintern
-  description: Leichtigkeit um Ihren Hintern
+  title: Zugabe Gesäß
+  description: Menge an Bequemlichkeits-/Bewegungszugabe an deinem Hintern
 pocketPlacementHorizontal:
   title: Horizontale Taschenplatzierung
   description: Die (horizontale) Position der Taschen
@@ -15,11 +15,11 @@ length:
   title: Länge
   description: Gesamtlänge
 pocketFlapRadius:
-  title: Taschenklappenradius
-  description: Der Betrag, um den die Taschenklappe gerundet ist
+  title: Taschenlaschenradius
+  description: Der Betrag, um den die Taschenlasche abgerundet ist
 pocketRadius:
   title: Taschenradius
-  description: Der Betrag, um den die Tasche gerundet wird
+  description: Der Betrag, um den die Tasche abgerundet ist
 chestPocketHeight:
   title: Brusttaschenhöhe
   description: Höhe der Brusttasche
@@ -27,5 +27,5 @@ beltWidth:
   title: Gürteilbreite
   description: Breite des Gürtels
 buttonSpacingHorizontal:
-  title: Horizontaler Tastenabstand
-  description: Der horizontale Abstand der Knöpfe bestimmt auch die Überlappung des vorderen Verschlusses
+  title: Horizontaler Knopfabstand
+  description: Horizontaler Abstand der Knöpfe, bestimmt auch den Übertritt des vorderen Verschlusses
