@@ -70,7 +70,7 @@ draftPattern: '{pattern} erstellen'
 draftPatternForModel: 'Entwerfe {pattern} für {model}'
 drafts: Entwürfe
 draftSettings: Entwurfseinstellungen
-dragAndDropImageHere: Du kannst das Bild hier per Drag-and-Drop ablegen oder es unten manuell auswählen
+dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
 emailAddress: E-Mail-Adresse
 emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail-Adresse funktioniert auch"
 enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
