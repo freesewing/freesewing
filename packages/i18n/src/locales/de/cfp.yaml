@@ -4,19 +4,19 @@ githubRepo: GitHub-Repository
 packageManager: Paket-Manager
 patternName: Schnittmuster-Name
 patternType: Schnittmuster-Art
-patternCreated: Ihr Schnittmusterskelet werde erstellt auf
+patternCreated: Dein Schnittmusterskelet wurde erstellt auf
 runTheseCommands: Um loszulegen, führe diesen Befehl aus
-startRollup: In einem Terminal starten Sie den Rollup-Bundle im Ansichtsmodus
+startRollup: In einem Terminal startest du den Rollup-Bundler im Ansichtsmodus
 startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: Für Fragen, Feedback oder Anregungen trete unserem Discord-Server bei
-draftYourPattern: Zeichnen Sie Ihr Schnittmuster
-testYourPattern: Testen Sie Ihr Schnittmuster
+draftYourPattern: Zeichne dein Schnittmuster
+testYourPattern: Teste dein Schnittmuster
 draftThing: '{thing} erstellen'
 testThing: '{thing} testen'
-renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
-weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
-youCan: Sie können
+renderInBrowser: Klicke unten, um dein Schnittmuster im Browser zu rendern.
+weWillReRender: Wenn du Änderungen vornimmst, werden wir wir es erneut für dich rendern.
+youCan: Du kannst
 enterMeasurements: Maße von Hand eingeben
 preloadMeasurements: Einen bestehenden Satz an Maßen einlesen
 size: Größe
@@ -30,4 +30,4 @@ thingIsEnabled: '{thing} ist aktiviert'
 thingIsDisabled: '{thing} ist deaktiviert'
 turnOn: Aktivieren
 turnOff: Deaktivieren
-validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir (wieder-)verwenden den Namen des Schnittmusters als NPM-Paketname.\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benenne dein Muster also entsprechend, wie in etwa:"
+validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir (wieder-)verwenden den Namen des Schnittmusters als NPM-Paketname.\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enthalten.\nBitte benenne dein Muster also entsprechend, wie in etwa:"

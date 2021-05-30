@@ -1,13 +1,13 @@
 ---
 panels:
-  title: Anzahl der Teile
-  description: Die Anzahl der zu erstellenden Teile. Mehr Teile passen besser zu kurvenreicheren Modellen.
+  title: Anzahl der Schnittteile
+  description: Die Anzahl der zu erstellenden Schnittteile. Mehr Schnittteile passen kurvenreicheren Modellen besser.
   options:
-    '11': 11 Teile
-    '13': 13 Teile
+    '11': 11 Schnittteile
+    '13': 13 Schnittteile
 waistReduction:
   title: Taillenreduzierung
-  description: Der Betrag, um den das Korsett Ihre Taille klemmen soll.
+  description: Der Betrag, um den das Korsett deine Taille einschnüren soll.
 backOpening:
   title: Hintere Öffnung
   description: Öffnung in der hinteren Mitte

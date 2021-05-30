@@ -69,7 +69,7 @@ draftPattern: 'Draft {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
 draftSettings: Draft settings
-dragAndDropImageHere: Drag and drop and image here, or select one manually with the button below
+dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
 emailAddress: E-mail address
 emailWorksToo: "If you don't know your username, you can also use your E-mail address to login"
 enterEmailPickPassword: Enter your E-mail address, and pick a password

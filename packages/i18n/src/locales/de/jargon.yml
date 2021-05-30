@@ -19,7 +19,7 @@ ease:
   description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
   term: Fadenlauf
-  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenluf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
   description: "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
@@ -61,19 +61,19 @@ twinNeedle:
   description: "Siehe <a href='/docs/sewing/twin-neelde/'>Zwillingsnadel</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 zigZag:
   term: Zickzackstich
-  description: "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzacksticj</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  description: "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzackstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 freesewing:
   term: FreeSewing
-  description: '<b>FreeSewing</b> ist eine Open Source Plattform für Schnittmuster nach Maß'
+  description: '<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß'
 patternOptions:
   term: Schnittmusteroptionen
-  description: 'Die <b>Schnittmusteroptionen</b> erlauben es Ihnen, das Design des Schnittmusters anzupassen'
+  description: 'Die <b>Schnittmusteroptionen</b> erlauben es dir, das Design des Schnittmusters anzupassen'
 draftSettings:
   term: Entwurfseinstellungen
-  description: 'Mit den <b>Entwurfseinstellungen</b> legen Sie fest, wie ein Muster erzeugt wird'
+  description: 'Mit den <b>Entwurfseinstellungen</b> legst du fest, wie ein Schnittmuster erzeugt wird'
 patrons:
-  term: Gönner
-  description: 'Gönner unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community.'
+  term: Förderer
+  description: 'Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.'
 msf:
   term: MSF
   description: "Médecins Sans Frontières/Ärzte ohne Grenzen - Siehe <a href='https://msf.org/'>msf.org</a>"
