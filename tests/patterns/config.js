@@ -18,7 +18,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
     expect(typeof pattern.config.version).to.equal('string')
     expect(pattern.config.version.length > 1).to.be.true
   })
-  for (let key of ['design', 'code', 'tags']) {
+  for (let key of ['design', 'code']) {
     it(`  - '${key}' should be a string or array of strings`, () => {
       if (typeof pattern.config[key] === 'string') {
         expect(pattern.config[key].length > 1).to.be.true
