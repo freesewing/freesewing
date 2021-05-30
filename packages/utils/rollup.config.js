@@ -23,11 +23,11 @@ const createConfig = (util, module) => {
       peerDepsExternal(),
       resolve({ modulesOnly: true }),
       json(),
-      terser({
-        output: {
-          preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-        }
-      })
+      //terser({
+      //  output: {
+      //    preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+      //  }
+      //})
     ]
   }
 }
@@ -36,6 +36,6 @@ const config = []
 for (let util of utils) {
   config.push(createConfig(util, false))
   // Webpack doesn't handle .mjs very well
-  //config.push(createConfig(util, true));
+  config.push(createConfig(util, true));
 }
 export default config

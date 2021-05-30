@@ -3,7 +3,7 @@ import withoutBreasts from './without-breasts'
 import ratio from './ratio'
 
 // This estimates a measurement based on the neck
-const neckstimate = (neck = false, measurement = false, breasts = false) => {
+const neckstimate = (neck = false, measurement = false, breasts = false, noRound=false) => {
   let data = breasts ? withBreasts : withoutBreasts
 
   // Shoulder slope is in degrees now. Always return de default.
@@ -37,7 +37,9 @@ const neckstimate = (neck = false, measurement = false, breasts = false) => {
   // This is what should happen
   let delta = (neck / data.neck) * data[measurement] - data[measurement]
 
-  return Math.round(data[measurement] + delta * ratio[measurement])
+  return noRound
+    ? data[measurement] + delta * ratio[measurement]
+    : Math.round(data[measurement] + delta * ratio[measurement])
 }
 
 export default neckstimate
