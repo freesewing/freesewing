@@ -1,7 +1,7 @@
 # Change log for: @freesewing/sandy
 
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Changed
 

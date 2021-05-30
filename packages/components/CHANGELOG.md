@@ -1,11 +1,12 @@
 # Change log for: @freesewing/components
 
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Added
 
  - Added a new `designs` icon
+ - We now publish .mjs files again for the different components
 
 ## 2.16.0 (2021-05-24)
 

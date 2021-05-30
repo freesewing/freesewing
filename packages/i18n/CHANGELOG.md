@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.16.1 (2021-05-30)
+
+### Added
+
+ - New translations for pattern filter
+
 ## 2.16.0 (2021-05-24)
 
 ### Changed

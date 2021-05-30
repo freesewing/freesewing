@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.16.1 (2021-05-30)
+
+### Fixed
+
+ - Don't list pattern as dependency in the example package.json
+
 ## 2.16.0 (2021-05-24)
 
 ### Changed

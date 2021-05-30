@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### aaron
 
@@ -80,12 +80,19 @@
 #### Added
 
  - Added a new `designs` icon
+ - We now publish .mjs files again for the different components
 
 ### cornelius
 
 #### Changed
 
  - Changed `department` setting in config in line with new grouping
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Don't list pattern as dependency in the example package.json
 
 ### diana
 
@@ -128,6 +135,12 @@
 #### Changed
 
  - Changed `department` setting in config in line with new grouping
+
+### i18n
+
+#### Added
+
+ - New translations for pattern filter
 
 ### jaeger
 
@@ -206,6 +219,13 @@
 #### Changed
 
  - Changed `department` setting in config in line with new grouping
+
+### utils
+
+#### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
 
 ### wahid
 
