@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'accessories',
   type: 'pattern',
   difficulty: 1,
-  tags: ['example'],
   optionGroups: {
     size: ['width'],
     content: ['colors', 'circles', 'text', 'snippets', 'macros'],
