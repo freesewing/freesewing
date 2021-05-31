@@ -10,7 +10,7 @@ hoodHeight:
   description: Steuert die Höhe der Kapuze
 hoodCutback:
   title: Kapuzenausschnitt
-  description: Leg fest wie weit der Ausschnitt der Kapuze zurückgeschnitten wird
+  description: Leg fest, wie weit die Öffnung der Kapuze zurückgeschnitten wird
 hoodClosure:
   title: Kapuzenverschluss
   description: Legt fest, wie viel von der der Kapuze zum vorderen Verschluss gehört
@@ -19,4 +19,4 @@ hoodDepth:
   description: Steuert die Tiefe der Kapuze
 hoodAngle:
   title: Winkel der Kapuze
-  description: Steuert den Winkel mit welchem die Kapuze angebracht wird
+  description: Steuert den Winkel, mit welchem die Kapuze angebracht wird
