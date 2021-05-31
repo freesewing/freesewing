@@ -33,9 +33,9 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   it(`  - 'type' should be 'pattern' or 'block'`, () => {
     expect(['pattern', 'block'].indexOf(pattern.config.type)).to.not.equal(-1)
   })
-  it(`  - 'department' should be one of menswear, womenswear, unisex, or accessories`, () => {
+  it(`  - 'department' should be one of tops, bottoms, coats, swimwear, underwear, or accessories`, () => {
     expect(
-      ['menswear', 'womenswear', 'unisex', 'accessories'].indexOf(pattern.config.department)
+      ['tops', 'bottoms', 'coats', 'swimwear', 'underwear', 'accessories'].indexOf(pattern.config.department)
     ).to.not.equal(-1)
   })
   it(`  - 'difficulty' should be a number between 1 and 5`, () => {
