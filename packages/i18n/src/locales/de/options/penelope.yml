@@ -4,7 +4,7 @@ backDartDepthFactor:
   description: Wie weit der rückwärtige Abnäher vom Taillenbund nach unten geht. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesäßumfang.
 backVent:
   title: Hinterer Gehschlitz
-  description: Füge einen Bewegungschlitz hinten am Rock hinzu.
+  description: Fügt einen Bewegungschlitz hinten am Rock hinzu.
 backVentLength:
   title: Hinterer Gehschlitz Länge
   description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
@@ -13,7 +13,7 @@ dartToSideSeamFactor:
   description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
   title: Vorderer Abnäherinhälttiefenfaktor
-  description: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesässumfang.
+  description: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesäßumfang.
 hem:
   title: Höhe des Saumes
   description: Breite des Saumes. Maß in absoluten Werten angeben.
@@ -39,8 +39,8 @@ waistEase:
   title: Taillenzugabe
   description: Zugegebene Weite auf Taillenhöhe.
 zipperLocation:
-  title: Platzierung des Reissverschlusses
-  description: Platzierung des Reissverschlusses.
+  title: Platzierung Reißverschluss
+  description: Platzierung des Reißverschlusses.
   options:
     backSeam: An der hinteren Mittelnaht
     sideSeam: In der Seitennaht
