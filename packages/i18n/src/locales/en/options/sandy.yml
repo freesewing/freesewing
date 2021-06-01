@@ -28,6 +28,6 @@ seamlessFullCircle:
   description: Enables a seamless full circle skirt.
 
 hemWidth:
-  title: Hem widt
+  title: Hem width
   description: Width of the hem
 
