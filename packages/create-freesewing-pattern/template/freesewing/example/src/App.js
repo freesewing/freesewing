@@ -10,12 +10,11 @@ import Pattern from './pattern/src/index.js'
  * Without it, we can't import the pattern as a local file
  * since create-react-app does not allow imports outside ./src
  * If it's imported as a dependency, webpack will cache the
- * build and there will be no hot-relaoding of changes
+ * build and there will be no hot-reloading of changes
  */
 
-
 const App = (props) => {
-  // You can use this to add transations
+  // You can use this to add translations
   /*
   let translations = {
     JSON: 'JSON',
@@ -26,17 +25,19 @@ const App = (props) => {
   // Adds support for loading an external pattern configuration
   let recreate = false
   if (window) recreate = window.location.pathname.substr(1).split('/')
-  if (recreate.length === 3 && recreate[0] === 'recreate')
+  if (recreate.length === 3 && recreate[0] === 'recreate') {
     recreate = { from: recreate[1], id: recreate[2] }
-  else recreate = false
+  } else {
+    recreate = false
+  }
 
   return (
     <Workbench
       freesewing={freesewing}
       Pattern={Pattern}
-      userLanguage="{{language}}"
+      userLanguage="en"
       recreate={recreate}
-      //translations={translations}
+      // translations={translations}
     />
   )
 }
