@@ -21,6 +21,6 @@ seamlessFullCircle:
   title: Círculo completo sin costura
   description: Permite una falda de círculo completo sin costuras.
 hemWidth:
-  title: Anchura del dobladillo
+  title: Hem width
   description: Anchura del dobladillo
 

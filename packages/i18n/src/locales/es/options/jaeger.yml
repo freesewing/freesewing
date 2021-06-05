@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Pinza en el centro de la espalda
-  description: Pinza en la parte central posterior de su cuello para acomodar una espalda redondeada
+  description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Longitud de la vista de la manga
   description: Longitud de la vista de la manga
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Ancho de la vista de la manga
 chestShaping:
   title: Forma del pecho
-  description: Cantidad de forma para acomodar la curva de pecho
+  description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
   title: Colocación de la pinza delantera
   description: Ubicación de las pinzas delanteras

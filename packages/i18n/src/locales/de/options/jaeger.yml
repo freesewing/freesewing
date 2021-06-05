@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Abnäher in der hinteren Mitte
-  description: Abnäher in der hinteren Mitte, um einen abgerundeten Rücken unterzubringen
+  description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Ärmellüftungslänge
   description: Länge der Ärmelöffnung
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Breite der Ärmelöffnung
 chestShaping:
   title: Brustformung
-  description: Menge an Formung für die Brustkurve
+  description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
   title: Platzierung des vorderen Abnähers
   description: Position der vorderen Abnäher

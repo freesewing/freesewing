@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Pinces milieu dos
-  description: Espacement des pinces au niveau de la nuque pour s'ajuster à l'arrondi du haut du dos
+  description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Longueur de la fente des manches
   description: Longueur de la fente des manches
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Largeur de la fente des manches
 chestShaping:
   title: Courbe du col poitrine
-  description: Quantité d'ajustement de la courbe au niveau de la poitrine
+  description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
   title: Emplacement des pinces devant
   description: Emplacement des pinces devant
