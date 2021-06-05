@@ -21,6 +21,6 @@ seamlessFullCircle:
   title: Nahtloser Vollkreis
   description: Aktiviert einen nahtlosen Vollkreis für das Rockteil.
 hemWidth:
-  title: Saumbreite
+  title: Hem width
   description: Breite des Saumes
 

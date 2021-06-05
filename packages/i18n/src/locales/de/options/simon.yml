@@ -1,7 +1,7 @@
 ---
 backDarts:
   title: Hintere Abnäher
-  description: Sollen Abnäher am Rücken eingefügt werden oder nicht
+  description: Ob Abnäher am Rücken eingefügt werden sollen oder nicht
   options:
     auto: Automatisch
     always: Immer

@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Nek neep
-  description: Neep aan de achterkant van de nek om de kromming van de rug op te vangen
+  description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Lengte mouwvent
   description: De lengte van de mouwvent
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: De breedte van de mouwvent
 chestShaping:
   title: Borstvorming
-  description: De vorming van de borstcurve
+  description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
   title: Plaatsing neep vooran
   description: Locatie van de nepen vooraan

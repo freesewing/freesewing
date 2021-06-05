@@ -49,6 +49,11 @@
     "axios": "0.21.1",
     "react-intl": "5.17.6",
     "prop-types": "15.7.2",
-    "file-saver": "^2.0.5"
+    "file-saver": "^2.0.5",
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
   }
 }

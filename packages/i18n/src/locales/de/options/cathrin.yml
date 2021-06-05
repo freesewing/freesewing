@@ -13,10 +13,10 @@ backOpening:
   description: Öffnung in der hinteren Mitte
 backRise:
   title: Hintere Anstieg
-  description: Wie stark sich die Rückteile von den Armen bis zum hinteren Rücken erstrecken.
+  description: Wie stark sich die hinteren Schnittteile von den Armen bis zur hinteren Mitte erstrecken.
 backDrop:
   title: Rückenabsenkung
-  description: Wie weit sich die Rückteile von den Hüften in Richtung Rückenmitte absenken. Negative Werte heben den Rücken an.
+  description: Wie weit sich die hinteren Schnittteile von den Hüften in Richtung Rückenmitte absenken. Negative Werte heben den Rücken an.
 frontRise:
   title: Frontanstieg
   description: 'Aufstieg der Frontteile in der Mitte zwischen den Brüsten. Negative Werte verringern sie.'
