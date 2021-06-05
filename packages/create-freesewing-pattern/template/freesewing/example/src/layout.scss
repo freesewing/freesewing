@@ -1,5 +1,13 @@
 @import '../../../../../../node_modules/open-color/open-color.scss';
 
+// Global style overrides
+* {
+  box-sizing: border-box;
+}
+.MuiToolbar-root {
+  overflow-y: auto;
+}
+
 // Main page content layout
 div.layout-wrapper {
   width: 100%;
