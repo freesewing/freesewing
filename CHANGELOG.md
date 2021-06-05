@@ -1,6 +1,28 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.16.2 (2021-05-05)
+
+### components
+
+#### Fixed
+
+ - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
+
+### create-freesewing-pattern
+
+#### Changed
+
+ - Added .gitignore file to the template
+ - Added eslint for linting
+
+### i18n
+
+#### Changed
+
+ - String updates
+
+
 ## 2.16.1 (2021-05-30)
 
 ### aaron

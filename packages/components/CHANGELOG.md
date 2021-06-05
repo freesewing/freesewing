@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.16.2 (2021-05-05)
+
+### Fixed
+
+ - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
+
 ## 2.16.1 (2021-05-30)
 
 ### Added

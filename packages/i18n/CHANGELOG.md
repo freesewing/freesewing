@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.16.2 (2021-05-05)
+
+### Changed
+
+ - String updates
+
 ## 2.16.1 (2021-05-30)
 
 ### Added

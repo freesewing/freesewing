@@ -1,6 +1,13 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.16.2 (2021-05-05)
+
+### Changed
+
+ - Added .gitignore file to the template
+ - Added eslint for linting
+
 ## 2.16.1 (2021-05-30)
 
 ### Fixed
