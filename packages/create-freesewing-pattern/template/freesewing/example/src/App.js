@@ -35,7 +35,7 @@ const App = (props) => {
     <Workbench
       freesewing={freesewing}
       Pattern={Pattern}
-      userLanguage="en"
+      userLanguage="{{language}}"
       recreate={recreate}
       // translations={translations}
     />
