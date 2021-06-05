@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     options,
     Point,
     Path,
@@ -10,10 +10,10 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro,
+    macro
   } = part.shorthand()
 
-  let w = 500 * options.size
+  const w = 500 * options.size
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(w, 0)
   points.bottomLeft = new Point(0, w / 2)
@@ -47,12 +47,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      y: points.bottomLeft.y + sa + 15
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      x: points.topRight.x + sa + 15
     })
   }
 
