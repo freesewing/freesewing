@@ -40,7 +40,7 @@ let dev = false
 let only = ['Workbench']
 for (let component of components) {
   if (!dev || only.indexOf(component) !== -1) config.push(createConfig(component, false))
-  // Webpack doesn't handle .mjs very well
-  config.push(createConfig(component, true));
+  // Webpack doesn't handle .mjs very well. See #1079
+  //config.push(createConfig(component, true));
 }
 export default config
