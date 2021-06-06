@@ -29,6 +29,7 @@ const Example = ({
   pattern = 'examples',
   design = true,
   caption = '',
+  children=null,
   options = {},
   settings,
   part = '',
@@ -36,6 +37,8 @@ const Example = ({
 }) => {
   const [designMode, setDesignMode] = useState(false)
   const [focus, setFocus] = useState(null)
+
+  if (caption) console.log('Passing the caption prop to @freesewing/components/Legend is deprecated. See: https://github.com/freesewing/freesewing/issues/1043')
 
   const raiseEvent = (type, data) => {
     if (type === 'clearFocusAll') return setFocus(null)
@@ -98,7 +101,7 @@ const Example = ({
         </div>
         <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
       </div>
-      <figcaption>{caption}</figcaption>
+      <figcaption>{caption || children}</figcaption>
       {designMode && (
         <div className="design">
           <Design

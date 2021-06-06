@@ -1,6 +1,11 @@
 2.16.3:
   date: Unreleased
 
+  Changed:
+    components:
+      - Caption should not be passed as children to Legend and Example components
+      See https://github.com/freesewing/freesewing/issues/1043
+
   Fixed:
     charlie:
       - Add `@freesewing/plugin-mirror` as peer dependency
