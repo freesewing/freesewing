@@ -16,11 +16,11 @@ boxPleat:
   title: Kellerfalte
   description: Ob eine Kellerfalte am Rückenteil eingefügt wird oder nicht
 boxPleatWidth:
-  title: Quetschfaltenweite
+  title: Kellerfaltenweite
   description: Gesamtbreite der Kellerfalte
 boxPleatFold:
   title: Kellerfalte Falz
-  description: Der Betrag, um welchen die Kellerfalte nach innen gefaltet wird
+  description: Der Betrag, um den die Kellerfalte nach innen gefaltet wird
 buttonPlacketStyle:
   title: Knopfleiste Stil
   description: Stil der Knopfleiste.
@@ -31,11 +31,11 @@ buttonPlacketWidth:
   title: Knopfleiste Breite
   description: Breite der Knopfleiste.
 buttonFreeLength:
-  title: Knopf freie länge
-  description: Wie viel soll am unteren Ende der Verschlussleiste knopffrei bleiben.
+  title: Freie Länge Knopf
+  description: Wie viel am unteren Ende der Verschlussleiste knopf-frei bleiben soll.
 buttonholePlacketFoldWidth:
-  title: Knopflochleiste Faltenbreite
-  description: Knopflochleiste Faltenbreite
+  title: Knopflochleiste Falzbreite
+  description: Breite der Falz der Knopflochleiste.
 buttonholePlacketStyle:
   title: Knopflochleiste Stil
   description: Stil der Knoplochfleiste.
@@ -46,13 +46,13 @@ buttonholePlacketWidth:
   title: Knopflochleiste Breite
   description: Breite der Knopflochleiste.
 buttons:
-  title: Anzahl der Tasten
-  description: Die Anzahl der Tasten am vorderen Verschluss.
+  title: Anzahl der Knöpfe
+  description: Die Anzahl der Knöpfe am vorderen Verschluss.
 collarAngle:
   title: Kragenwinkel
   description: Der Winkel der Kragenspitzen.
 collarBend:
-  title: Kragenbiegung
+  title: Kragenkrümmung
   description: Die Krümmung des Kragens.
 collarFlare:
   title: Kragenausstellung
