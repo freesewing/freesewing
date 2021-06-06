@@ -91,18 +91,18 @@ cuffStyle:
     roundedBarrelCuff: Abgerundete Einfachmanschette
     angledBarrelCuff: Angewinkelte Einfachmanschette
     straightBarrelCuff: Gerade Einfachmanschette
-    roundedFrenchCuff: Abgerundete Umschlaganschette
-    angledFrenchCuff: Abgewinkelte französische Manschette
-    straightFrenchCuff: Gerade französische Manschette
+    roundedFrenchCuff: Abgerundete Umschlagmanschette
+    angledFrenchCuff: Angewinkelte Umschlagmanschette
+    straightFrenchCuff: Gerade Umschlagmanschette
 extraTopButton:
-  title: Extra oberer Knopf
+  title: Zusätzlicher oberer Knopf
   description: Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll.
 hemCurve:
   title: Saumkurve
   description: Die Höhe der Kurve an einem abgerundeten Saum.
 hemStyle:
-  title: Saumart
-  description: Der stil des hemdsaumes.
+  title: Saumstil
+  description: Der Stil des Hemdsaumes.
   options:
     straight: Gerader Saum
     baseball: Baseball-Saum
@@ -114,17 +114,17 @@ seperateButtonPlacket:
   title: Separate Knopfleiste
   description: Eine separate Knopfleiste entwerfen
 sleevePlacketLength:
-  title: Ärmelknopflänge
+  title: Ärmelleistenlänge
   description: Die Länge der Ärmelleiste.
 sleevePlacketWidth:
   title: Ärmelleiste Breite
   description: Die Breite der Ärmelleiste.
 splitYoke:
-  title: Split Joch
-  description: Ob ein Split-Joch erstellt werden soll.
+  title: Geteilte Passe
+  description: Ob eine geteilte oder normale Passe erstellt werden soll.
 waistEase:
-  title: Taille erleichtert
-  description: Der Betrag, der an Ihrer (natürlichen) Taille zugegeben wird.
+  title: Taillenzugabe
+  description: Der Betrag, der an deiner (natürlichen) Taille als Bequemlichkeits-/Bewegslichkeitszugabe zugegeben wird.
 yokeDart:
-  title: Jochabnäher
-  description: Gibt an, ob ein Abnäher an den Seiten des Jochs angebracht werden soll, um an einen runderen Rücken zu passen.
+  title: Passenabnäher
+  description: Gibt an, ob ein Abnäher an den Seiten der Passe angebracht werden soll, um an einen runderen Rücken zu passen.
