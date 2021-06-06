@@ -6,7 +6,7 @@ albert:
   description: Albert is an apron.
   title: Albert apron
 bella:
-  description: Bella is a basic body block for womenswear.
+  description: Bella is a basic body block for people with breasts.
   title: Bella body block
 benjamin:
   description: Benjamin is een vlinderdas met vier verschillende mogelijke vormen.
@@ -15,16 +15,16 @@ bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
 breanna:
-  description: Breanna is een basispatroon voor dameskleding.
+  description: Breanna is a basic body block for people with breasts.
   title: Breanna basispatroon
 brian:
-  description: Brian is een basispatroon voor mannenkleding.
+  description: Brian is a basic body block for people without breasts.
   title: Brian Basisvorm
 bruce:
   description: Bruce is een boxershort die zowel comfortabel als stylish is.
   title: Bruce Boxershort
 carlita:
-  description: 'De vrouwenversie van onze Carlton jas, ofwel de Sherlock Holmes jas.'
+  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
   title: Carlita jas
 carlton:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een heel mooie jas zoekt.'
@@ -72,13 +72,13 @@ sandy:
   description: Sandy is een veelzijdig patroon voor een cirkelrok
   title: Sandy cirkelrok
 shin:
-  description: Shin is een atletische zwembroek voor mannen
+  description: Shin are athletic swim trunks
   title: Shin zwembroek
 simon:
-  description: Simon is een enorm veelzijdig patroon voor een herenhemd.
+  description: Simon is a highly adaptable shirt pattern for people without breasts.
   title: Simon hemd
 simone:
-  description: Simone is simon, aangepast aan borsten
+  description: Simone is simon, adapted for breasts.
   title: Simone hemd
 sven:
   description: Sven is een no-nonsense basic trui.
