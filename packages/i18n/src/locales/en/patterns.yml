@@ -5,7 +5,7 @@ albert:
   description: Albert is an apron.
   title: Albert apron
 bella:
-  description: Bella is a basic body block for womenswear.
+  description: Bella is a basic body block for people with breasts.
   title: Bella body block
 benjamin:
   description: Benjamin is a bow tie pattern with four different shape options.
@@ -14,16 +14,16 @@ bent:
   description: This two-part sleeve block is the basis of our coat and jacket patterns.
   title: Bent body Block
 breanna:
-  description: Breanna is a basic body block for womenswear.
+  description: Breanna is a basic body block for people with breasts.
   title: Breanna body block
 brian:
-  description: Brian is a basic body block for menswear.
+  description: Brian is a basic body block for people without breasts.
   title: Brian body block
 bruce:
   description: Bruce are comfortable yet stylish boxer briefs.
   title: Bruce boxer briefs
 carlita:
-  description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
   title: Carlita coat
 carlton:
   description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
@@ -71,13 +71,13 @@ sandy:
   description: Sandy is an adaptable circle skirt pattern
   title: Sandy circle skirt
 shin:
-  description: Shin are atheltic swim trunks for men
+  description: Shin are atheltic swim trunks
   title: Shin swim trunks
 simon:
-  description: Simon is a highly adaptable shirt pattern for men.
+  description: Simon is a highly adaptable shirt pattern for people without breasts.
   title: Simon shirt
 simone:
-  description: Simone is simon, adapted for breasts
+  description: Simone is simon, adapted for breasts.
   title: Simone shirt
 sven:
   description: Sven is a straightforward sweater.
