@@ -1,6 +1,12 @@
 # Change log for: @freesewing/tutorial
 
 
+## 2.16.3 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Set department in the config to one of the newly accepted values
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

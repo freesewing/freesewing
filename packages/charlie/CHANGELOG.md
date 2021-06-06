@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.16.3 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Add `@freesewing/plugin-mirror` as peer dependency
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.16.3 (NaN-NaN-NaN)
+
+### charlie
+
+#### Fixed
+
+ - Add `@freesewing/plugin-mirror` as peer dependency
+
+### tutorial
+
+#### Fixed
+
+ - Set department in the config to one of the newly accepted values
+
+
 ## 2.16.2 (2021-05-05)
 
 ### components
