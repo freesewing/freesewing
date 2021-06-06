@@ -1,10 +1,10 @@
 ---
 flare:
   title: Ausstellen
-  description: Die Menge, um die sich das Kleidungsstück von der Brust nach unten erweitert
+  description: Die Menge, um die sich das Kleidungsstück von der Brust nach unten ausgestellt wird
 shoulderseamLength:
   title: Schulternaht Länge
-  description: Die Länge der Schulternaht als Faktor Ihrer Schulter-zu-Schulter-Messung
+  description: Die Länge der Schulternaht als Faktor deines Schulter-zu-Schulter-Maßes
 shoulderSlope:
-  title: Schulterabhang
-  description: Steuert den Winkel der Schulternägel
+  title: Schulterneigung
+  description: Steuert den Winkel der Schulternähte
