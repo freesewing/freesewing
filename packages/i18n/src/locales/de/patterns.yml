@@ -6,7 +6,7 @@ albert:
   description: Albert ist eine Schürze.
   title: Albert, die Schürze
 bella:
-  description: Bella is a basic body block for people with breasts.
+  description: Bella ist ein Grundschnitt für Personen mit Brüsten.
   title: Bella, ein Grundschnitt
 benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
@@ -15,16 +15,16 @@ bent:
   description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Bent, ein Grundschnitt
 breanna:
-  description: Breanna is a basic body block for people with breasts.
+  description: Breanna ist ein Grundschnitt für Personen mit Brüsten.
   title: Breanna, ein Grundschnitt
 brian:
-  description: Brian is a basic body block for people without breasts.
+  description: Brian ist ein Grundschnitt für Personen ohne Brüste.
   title: Brian, ein Grundschnitt
 bruce:
   description: Bruce sind bequeme und stylische Retroshorts.
   title: Bruce, die Retroshorts
 carlita:
-  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'Die Version für Brüste unseres Carlton-Mantel, aka Sherlock Holmes-Mantel.'
   title: Carlita, der Mantel
 carlton:
   description: 'Für Sherlock Holmes-Cosplay, oder nur als wirklich netter Mantel.'
@@ -72,7 +72,7 @@ sandy:
   description: Sandy ist ein anpassungsfähiges Tellerrockschnittmuster
   title: Sandy, der Tellerrock
 shin:
-  description: Shin are athletic swim trunks
+  description: Shin ist eine sportliche Badehose
   title: Shin, die Badehose
 simon:
   description: Simon is a highly adaptable shirt pattern for people without breasts.
