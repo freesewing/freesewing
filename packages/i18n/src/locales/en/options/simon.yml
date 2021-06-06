@@ -90,7 +90,7 @@ collarStandCurve:
 
 collarStandWidth:
   title: Collar stand width
-  description: Widht of the collar stand.
+  description: Width of the collar stand.
 
 cuffButtonRows:
   title: Cuff button rows
