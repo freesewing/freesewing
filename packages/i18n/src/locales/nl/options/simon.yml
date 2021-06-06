@@ -71,7 +71,7 @@ collarStandCurve:
   description: De curve van de uiteindes van de staander.
 collarStandWidth:
   title: Breedte staander
-  description: De breedte van de staander.
+  description: Width of the collar stand.
 cuffButtonRows:
   title: Rijen knopen op manchet
   description: Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten.

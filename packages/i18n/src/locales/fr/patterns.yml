@@ -6,7 +6,7 @@ albert:
   description: Albert est un tablier.
   title: Tablier Albert
 bella:
-  description: Bella est un patron de base de haut pour femme.
+  description: Bella is a basic body block for people with breasts.
   title: Buste de base Bella
 benjamin:
   description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
@@ -15,16 +15,16 @@ bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
 breanna:
-  description: Breanna est un patron de base de haut pour femme.
+  description: Breanna is a basic body block for people with breasts.
   title: Haut Breanna
 brian:
-  description: Brian est un patron de base de haut pour homme.
+  description: Brian is a basic body block for people without breasts.
   title: Patron de base Brian
 bruce:
   description: Bruce est un boxer confortable et élégant.
   title: Boxer Bruce
 carlita:
-  description: 'La version femme de notre manteau Carlton, aka manteau Sherlock Holmes.'
+  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
   title: Manteau Carlita
 carlton:
   description: 'Pour le cosplay de Sherlock Holmes, ou juste un très beau manteau.'
@@ -72,13 +72,13 @@ sandy:
   description: Sandy est un patron de jupe cercle adaptable
   title: Jupe cercle Sandy
 shin:
-  description: Shin est un boxer de bain pour hommes
+  description: Shin are athletic swim trunks
   title: Boxer de bain Shin
 simon:
-  description: Simon est un patron de chemise pour homme avec de nombreuses options.
+  description: Simon is a highly adaptable shirt pattern for people without breasts.
   title: Chemise Simon
 simone:
-  description: Simone est Simon, adapté pour les poitrines avec seins
+  description: Simone is simon, adapted for breasts.
   title: Chemise Simone
 sven:
   description: Sven est un sweat simple.
