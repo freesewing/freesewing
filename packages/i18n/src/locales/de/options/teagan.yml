@@ -4,16 +4,16 @@ draftForHighBust:
   description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 sleeveEase:
   title: Bequemlichkeitszugabe Ärmel
-  description: Grösse der Bequemlichkeitszugabe der Ärmel
+  description: Größe der Bequemlichkeitszugabe an den Ärmeln
 sleeveLength:
   title: Ärmellänge
-  description: Steuert die Länge Ihrer Ärmel
+  description: Steuert die Länge deiner Ärmel
 necklineBend:
   title: Krümmung Halsausschnitt
   description: Steuert die Krümmung des Halsausschnitts.
 necklineDepth:
   title: Ausschnitttiefe
-  description: Steuert wie tief der Halsausschnitt fällt.
+  description: Steuert, wie tief der Halsausschnitt fällt.
 necklineWidth:
   title: Ausschnittbreite
   description: Steuert die Breite des Halsausschnitts.
