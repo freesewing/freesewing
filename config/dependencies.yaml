@@ -69,6 +69,7 @@ carlton:
     '@freesewing/plugin-buttons': *freesewing
 charlie:
   peer:
+    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
 css-theme:
   _:
