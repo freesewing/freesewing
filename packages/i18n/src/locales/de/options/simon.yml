@@ -56,13 +56,13 @@ collarBend:
   description: Die Krümmung des Kragens.
 collarFlare:
   title: Kragenausstellung
-  description: Die Ausstellung der Kragenspitzen.
+  description: Wie weit die Kragenspitzen ausgestellt sind.
 collarGap:
   title: Kragenlücke
   description: Der Spalt zwischen den beiden Kragenenden.
 collarRoll:
   title: Kragenrolle
-  description: Der Betrag, um den der Oberragen größer ist als der Unterkragen.
+  description: Der Betrag, um den der Oberkragen größer ist als der Unterkragen.
 collarStandBend:
   title: Kragenstegbiegung
   description: Die Biegung des Kragensstegs.
@@ -71,10 +71,10 @@ collarStandCurve:
   description: Die Krümmung des Kragensstegs.
 collarStandWidth:
   title: Kragenstegbreite
-  description: Breite des Kragenständers.
+  description: Breite des Kragenstegs.
 cuffButtonRows:
   title: Manschettenknopfreihen
-  description: Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen gezeichnet werden soll. Diese Option ist nur für Fassmanschetten relevant.
+  description: Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen erstellt werden soll. Diese Option ist nur für Einfachmanschetten relevant.
   options:
     '1': Einzelne Manschettenknopfreihe
     '2': Doppelte Manschettenknopfreihe
@@ -83,15 +83,15 @@ cuffDrape:
   description: Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden.
 cuffLength:
   title: Manschettenlänge
-  description: die Länge der Manschetten
+  description: Die Länge der Manschetten.
 cuffStyle:
-  title: Manschettentyp
-  description: der Stil der Manschetten.
+  title: Manschettenstil
+  description: Der Stil der Manschetten.
   options:
-    roundedBarrelCuff: Abgerundete Faßmanschette
-    angledBarrelCuff: Abgewinkelte Fassmanschette
-    straightBarrelCuff: Gerade fassmanschette
-    roundedFrenchCuff: Abgerundete französische Manschette
+    roundedBarrelCuff: Abgerundete Einfachmanschette
+    angledBarrelCuff: Angewinkelte Einfachmanschette
+    straightBarrelCuff: Gerade Einfachmanschette
+    roundedFrenchCuff: Abgerundete Umschlaganschette
     angledFrenchCuff: Abgewinkelte französische Manschette
     straightFrenchCuff: Gerade französische Manschette
 extraTopButton:
