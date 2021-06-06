@@ -71,7 +71,7 @@ collarStandCurve:
   description: La curvatura de la base del cuello.
 collarStandWidth:
   title: Anchura de la base del cuello
-  description: La anchura de la base del cuello.
+  description: Width of the collar stand.
 cuffButtonRows:
   title: Hileras de botones en los puños
   description: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
