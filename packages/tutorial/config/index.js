@@ -7,7 +7,7 @@ export default {
   version,
   design: 'joostdecock',
   code: 'joostdecock',
-  department: 'womenswear',
+  department: 'accessorties',
   type: 'pattern',
   difficulty: 1,
   tags: ['example'],
