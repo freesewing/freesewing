@@ -11,10 +11,10 @@ backDartShaping:
   description: Wie stark die hinteren Abnäher die Figur betonen
 barrelCuffNarrowButton:
   title: Manschette schmaler Knopf
-  description: Gibt an, ob Sie einen Knopf hinzufügen, um die Manschetten enger zu binden. Diese Option ist nur für Fassmanschetten relevant.
+  description: Gibt an, ob ein Knopf hinzugefügt wird, um die Manschetten enger zu binden. Diese Option ist nur für Einfachmanschetten relevant.
 boxPleat:
   title: Kellerfalte
-  description: Eine Kellerfalte am Rückenteil einfügen oder nicht
+  description: Ob eine Kellerfalte am Rückenteil eingefügt wird oder nicht
 boxPleatWidth:
   title: Quetschfaltenweite
   description: Gesamtbreite der Kellerfalte
