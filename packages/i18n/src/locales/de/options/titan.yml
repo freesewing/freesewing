@@ -4,16 +4,16 @@ kneeEase:
   description: Kontrolliert die Zugabe am Knie
 waistHeight:
   title: Taillenhöhe
-  description: Steuert die Höhe des Taillenbund, 100% = Taillenhöhe, 0% = Hüfthöhe
+  description: Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe
 lengthBonus:
   title: Längenzugabe
   description: Steuert die Längenzugabe an der Hose
 crotchDrop:
   title: Schritt-Tiefe
-  description: Senke die Schrittiefe für mehr Tragekomfort
+  description: Senkt die Schrittiefe für mehr Tragekomfort
 fitKnee:
   title: Am Knie anliegend
-  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesässumfangs fest
+  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesäßumfangs fest
 legBalance:
   title: Bein-Balance
   description: Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins
@@ -42,5 +42,5 @@ waistbandWidth:
   title: Waistband width
   description: The width of the waistband
 grainlinePosition:
-  title: Grainline position
+  title: Position Fadenlauf
   description: Controls the horizontal position of the leg relative to the seat
