@@ -71,7 +71,7 @@ collarStandCurve:
   description: Die Krümmung des Kragensstegs.
 collarStandWidth:
   title: Kragenstegbreite
-  description: Width of the collar stand.
+  description: Breite des Kragenstegs.
 cuffButtonRows:
   title: Manschettenknopfreihen
   description: Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen erstellt werden soll. Diese Option ist nur für Einfachmanschetten relevant.

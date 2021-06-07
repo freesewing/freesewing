@@ -79,7 +79,7 @@ sleevecapQ2Spread1:
   description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung des Armlochs
 sleevecapQ2Spread2:
   title: Armkugel Q2 Spreizung nach oben
-  description: Steuert die Spreizung der Amkugel im zweiten Quadranten in Richtung der Schulter
+  description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung der Schulter
 sleevecapQ3Spread1:
   title: Armkugel Q3 Spreizung nach oben
   description: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung der Schulter
