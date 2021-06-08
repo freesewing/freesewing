@@ -309,7 +309,7 @@ featureRequiresAccount: Diese Funktion erfordert einen FreeSewing-Account
 zoom: Zoom
 zoomIn: Vergrößern
 zoomOut: Verkleinern
-zoom-txt: Wechselt zwischen der Anpassung an deinem Bildschirm nach der Höhe oder der Breite des Schnittmusters
+zoom-txt: Wechselt zwischen Beschränkung der Höhe und der Breite deines Schnittmusters, um es passend auf deinem Bildschirm anzuzeigen
 savePattern-txt: Dieses Schnittmuster in deinem FreeSewing-Account speichern
 comparePattern: Schnittmuster vergleichen
 showPattern: Schnittmuster anzeigen
