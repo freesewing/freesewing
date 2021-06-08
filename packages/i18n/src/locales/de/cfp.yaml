@@ -4,9 +4,9 @@ githubRepo: GitHub-Repository
 packageManager: Paket-Manager
 patternName: Schnittmuster-Name
 patternType: Schnittmuster-Art
-patternCreated: Dein Schnittmusterskelet wurde erstellt auf
+patternCreated: Dein Schnittmusterskelett wurde erstellt in
 runTheseCommands: Um loszulegen, führe diesen Befehl aus
-startRollup: In einem Terminal startest du den Rollup-Bundler im Ansichtsmodus
+startRollup: In einem Terminal startest du den Rollup-Bundler im Beobachtungsmodus
 startWebpack: "It will enter the 'example' folder, and start the development environment."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: Für Fragen, Feedback oder Anregungen trete unserem Discord-Server bei
@@ -15,7 +15,7 @@ testYourPattern: Teste dein Schnittmuster
 draftThing: '{thing} erstellen'
 testThing: '{thing} testen'
 renderInBrowser: Klicke unten, um dein Schnittmuster im Browser zu rendern.
-weWillReRender: Wenn du Änderungen vornimmst, werden wir wir es erneut für dich rendern.
+weWillReRender: Wenn du Änderungen vornimmst, werden wir es erneut für dich rendern.
 youCan: Du kannst
 enterMeasurements: Maße von Hand eingeben
 preloadMeasurements: Einen bestehenden Satz an Maßen einlesen
