@@ -5,6 +5,10 @@
     components:
       - Caption should not be passed as children to Legend and Example components
       See https://github.com/freesewing/freesewing/issues/1043
+      - Changed antman references to antperson
+
+    i18n:
+      - Changed antman references to antperson
 
   Fixed:
     charlie:
