@@ -7,7 +7,7 @@ patternType: Schnittmuster-Art
 patternCreated: Dein Schnittmusterskelett wurde erstellt in
 runTheseCommands: Um loszulegen, führe diesen Befehl aus
 startRollup: In einem Terminal startest du den Rollup-Bundler im Beobachtungsmodus
-startWebpack: "It will enter the 'example' folder, and start the development environment."
+startWebpack: "Dadurch wird der 'example'-Ordner betreten und die Entwicklungsumgebung gestartet."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
 talkToUs: Für Fragen, Feedback oder Anregungen trete unserem Discord-Server bei
 draftYourPattern: Zeichne dein Schnittmuster
