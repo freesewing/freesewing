@@ -134,7 +134,7 @@ const SampleConfigurator = (props) => {
               }}
               className={type === 'models' && instance === 'antWoman' ? 'active' : ''}
             >
-              Antwoman
+              Antperson (with breasts)
             </a>
           </li>
           <li>
@@ -147,7 +147,7 @@ const SampleConfigurator = (props) => {
               }}
               className={type === 'models' && instance === 'antMan' ? 'active' : ''}
             >
-              Antman
+              Antperson (without breasts)
             </a>
           </li>
         </ul>
