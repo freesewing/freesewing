@@ -28,7 +28,7 @@ nrOfDarts:
   description: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
 seatEase:
   title: Hüftzugabe
-  description: Zugegebene Weite auf Höhe des Gesäss.
+  description: Zugegebene Weite auf Höhe des Gesäßs.
 waistBand:
   title: Taillenbund
   description: Füge einen Taillenbund zum Schnittmuster hinzu.
