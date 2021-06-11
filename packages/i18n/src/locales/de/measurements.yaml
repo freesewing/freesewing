@@ -1,22 +1,22 @@
 ---
 ankle: Knöchelumfang
-biceps: Bizepsumfang
-bustFront: Bust front
-bustSpan: Brustweite
-chest: Brustumfang
-crossSeam: Cross seam
-crossSeamFront: Cross seam front
+biceps: Oberarmweite
+bustFront: Oberweite vorne
+bustSpan: Brustpunkte Abstand
+chest: Oberweite
+crossSeam: Taille-Schritt-Taille
+crossSeamFront: Taille-Schritt
 head: Kopfumfang
 heel: Fersenumfang
-highBustFront: High bust front
+highBustFront: Oberbrustweite vorne
 highBust: Oberbrustweite
-hips: Hüftumfang
+hips: Hüftweite
 hpsToBust: HPS to bust
 hpsToWaistBack: HPS to waist back
 hpsToWaistFront: HPS to waist front
-inseam: Schrittlänge
+inseam: Innere Beinlänge
 knee: Knieumfang
-neck: Halsumfang
+neck: Halsweite
 seat: Gesäßumfang
 seatBack: Gesäßrückseite
 crotchDepth: Schritttiefe
