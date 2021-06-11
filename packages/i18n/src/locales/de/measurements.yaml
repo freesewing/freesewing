@@ -17,17 +17,17 @@ hpsToWaistFront: HPS to waist front
 inseam: Innere Beinlänge
 knee: Knieumfang
 neck: Halsweite
-seat: Gesäßumfang
-seatBack: Gesäßrückseite
-crotchDepth: Schritttiefe
+seat: Gesäßweite
+seatBack: Gesäßweite hinten
+crotchDepth: Schritthöhe
 shoulderSlope: Schulterneigung
 shoulderToElbow: Schulter bis Ellenbogen
 shoulderToShoulder: Schulter zu Schulter
 shoulderToWrist: Schulter bis Handgelenk
 underbust: Unterbrustweite
-upperLeg: Oberschenkelumfang
-waist: Taillenumfang
-waistBack: Taillenrückseite
+upperLeg: Oberschenkelweite
+waist: Taillenweite
+waistBack: Taillenweite hinten
 waistToFloor: Taille bis Boden
 waistToHips: Taille bis Hüfte
 waistToKnee: Taille bis Knie
