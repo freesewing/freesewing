@@ -26,6 +26,12 @@ frontArmholeDeeper:
 lengthBonus:
   title: Supplément de longueur
   description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
+s3Collar:
+  title: 'Shoulder seam shift: collar side'
+  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+s3Armhole:
+  title: 'Shoulder seam shift: armhole side'
+  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
   title: Aisance des épaules
   description: La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires.
