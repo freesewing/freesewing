@@ -18,6 +18,7 @@ export default {
       'lengthBonus',
       'sleeveLengthBonus',
     ],
+    style: [ 's3Collar', 's3Armhole' ],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
@@ -91,6 +92,9 @@ export default {
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
