@@ -26,6 +26,12 @@ frontArmholeDeeper:
 lengthBonus:
   title: Extra de longitud
   description: La cantidad a elongar. Valores negativos lo acortan.
+s3Collar:
+  title: 'Shoulder seam shift: collar side'
+  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+s3Armhole:
+  title: 'Shoulder seam shift: armhole side'
+  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
   title: Holgura de hombro
   description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
