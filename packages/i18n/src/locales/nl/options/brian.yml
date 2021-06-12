@@ -26,6 +26,12 @@ frontArmholeDeeper:
 lengthBonus:
   title: Bonus lengte
   description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
+s3Collar:
+  title: 'Shoulder seam shift: collar side'
+  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+s3Armhole:
+  title: 'Shoulder seam shift: armhole side'
+  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
   title: Overwijdte schouder
   description: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
