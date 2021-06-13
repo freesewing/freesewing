@@ -7,7 +7,7 @@ import { name, version, description, author, license, main, module, rollup } fro
 const banner = `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
 const output = [
   {
-    banner
+    banner,
     file: main,
     format: 'cjs',
     sourcemap: true,
@@ -16,7 +16,7 @@ const output = [
 ]
 if (typeof module !== 'undefined')
   output.push({
-    banner
+    banner,
     file: module,
     format: 'es',
     sourcemap: true
