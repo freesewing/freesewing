@@ -1,7 +1,7 @@
 ---
 adjustmentRibbon:
-  title: Einstellungsband
-  description: Einstellungsband verwenden oder nicht
+  title: Einstellband
+  description: Einstellband verwenden oder nicht
 bandLength:
   title: Bandlänge
   description: Lände des Bandes
