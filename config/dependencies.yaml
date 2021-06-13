@@ -179,11 +179,13 @@ paco:
   peer:
     '@freesewing/titan': *freesewing
 plugin-bundle:
-  _:
+  dev:
+    '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-cutonfold': *freesewing
     '@freesewing/plugin-dimension': *freesewing
     '@freesewing/plugin-grainline': *freesewing
     '@freesewing/plugin-logo': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-title': *freesewing
     '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-round': *freesewing
