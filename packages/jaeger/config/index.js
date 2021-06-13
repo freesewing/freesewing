@@ -142,6 +142,9 @@ export default {
     brianFitCollar: true,
     collarFactor: 4.8,
     chestShapingMax: 5,
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: 0,
+    s3Armhole: 0,
 
     // How the reduction of waist and hips is divided
     // Waist:
