@@ -31,13 +31,14 @@ export default function (part) {
   points.bustPointCp1 = points.bustPoint.shift(90, points.armholePitch.dy(points.bustPoint) / 2)
 
   // Paths
+  /*
   paths.seam = new Path()
     .move(points.psHem)
     .line(points.bustPoint)
     .curve_(points.bustPointCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
     .line(points.collarTip)
     ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
     .line(points.hemEdge)
@@ -57,6 +58,7 @@ export default function (part) {
     .line(points.chestPocketTopLeft)
     .close()
     .attr('class', 'fabric help')
+  */
 
   /////////////////////////////////////////
 
@@ -238,7 +240,9 @@ export default function (part) {
   */
 
   // Clean up
-  for (let i in paths) delete paths[i]
+  for (let i in paths) {
+    if (['frontArmhole','frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
   for (let i in snippets) delete snippets[i]
 
   // Paths
@@ -246,9 +250,9 @@ export default function (part) {
     .move(points.psHem)
     .line(points.bustPoint)
     .curve_(points.bustPointCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
     .line(points.collarTip)
     ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
     .line(points.hemEdge)

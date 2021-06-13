@@ -17,7 +17,9 @@ export default function (part) {
   for (let i of store.get('side')) points[i] = points[i + 'Rot2'].clone()
 
   // Clean up
-  for (let i in paths) delete paths[i]
+  for (let i in paths) {
+    if (['frontArmhole','frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
   for (let i in snippets) delete snippets[i]
 
   points.anchor = points.armholePitchRot2.clone()

@@ -47,7 +47,7 @@ export default {
       'innerPocketDepth',
       'innerPocketWeltHeight',
     ],
-    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length'],
+    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length', 's3Collar', 's3Armhole'],
     collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [
@@ -161,6 +161,9 @@ export default {
     shoulderSlopeReduction: { pct: 12, min: 0, max: 80 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
 
     // Carlton options
     waistEase: { pct: 14, min: 8, max: 25 },

@@ -1,6 +1,5 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
-import buttons from '@freesewing/plugin-buttons'
 import bust from '@freesewing/plugin-bust'
 import Bent from '@freesewing/bent'
 import Carlton from '@freesewing/carlton'
@@ -10,7 +9,7 @@ import draftFront from './front'
 import draftSide from './side'
 
 // Create new design
-const Pattern = new freesewing.Design(config, [plugins, buttons, bust])
+const Pattern = new freesewing.Design(config, [plugins, bust])
 
 let fromBent = ['Base', 'Front', 'Back', 'Sleeve', 'TopSleeve', 'UnderSleeve']
 
