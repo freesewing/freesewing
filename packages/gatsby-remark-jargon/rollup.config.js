@@ -6,8 +6,11 @@ import { terser } from 'rollup-plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { main, module, name, version, description, author, license } from './package.json'
 
+const banner = `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
+
 const output = [
   {
+    banner,
     file: main,
     format: 'cjs',
     sourcemap: true,
@@ -16,6 +19,7 @@ const output = [
 ]
 if (typeof module !== 'undefined')
   output.push({
+    banner,
     file: module,
     format: 'es',
     sourcemap: true,
@@ -35,10 +39,5 @@ export default {
     resolve(),
     commonjs(),
     json(),
-    terser({
-      output: {
-        preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-      }
-    })
   ]
 }

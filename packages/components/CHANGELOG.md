@@ -1,6 +1,13 @@
 # Change log for: @freesewing/components
 
 
+## 2.16.3 (NaN-NaN-NaN)
+
+### Changed
+
+ - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
+ - Changed antman references to antperson
+
 ## 2.16.2 (2021-05-05)
 
 ### Fixed

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.16.3 (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed antman references to antperson
+
 ## 2.16.2 (2021-05-05)
 
 ### Changed

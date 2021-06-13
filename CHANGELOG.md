@@ -3,11 +3,30 @@
 
 ## 2.16.3 (NaN-NaN-NaN)
 
+### brian
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
 ### charlie
 
 #### Fixed
 
  - Add `@freesewing/plugin-mirror` as peer dependency
+
+### components
+
+#### Changed
+
+ - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
+ - Changed antman references to antperson
+
+### i18n
+
+#### Changed
+
+ - Changed antman references to antperson
 
 ### tutorial
 
