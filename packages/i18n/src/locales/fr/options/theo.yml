@@ -1,7 +1,7 @@
 ---
 wedge:
   title: Fourche
-  description: Contrôle la longueur de la fourche
+  description: Controls the length of the cross seam
 legWidth:
   title: Largeur de jambe
   description: Contrôle la largeur des jambes

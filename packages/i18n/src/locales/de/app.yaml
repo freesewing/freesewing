@@ -197,7 +197,7 @@ troubleLoggingIn: Probleme beim Einloggen?
 twitter: Twitter
 txt-footer: Freesewing wird erstellt von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Förderer
 txt-tier2: Unsere Kategorie mit dem demokratischsten Preis. Es ist vielleicht weniger als der Preis eines Lattes, aber deine Unterstützung bedeutet uns sehr viel.
-txt-tier4: Wähle diese Stufe, und wir senden dir etwas von unserem heißbegehrten Freesewing-Swag nach Hause. Egal, wo in der Welt das auch sein mag.
+txt-tier4: Wähle diese Stufe, und wir senden dir etwas von unserem heiß begehrten Freesewing-Swag nach Hause. Egal, wo in der Welt das auch sein mag.
 txt-tier8: "Wenn du uns nicht nur unterstützen möchtest, sondern Freesewing zum Gedeihen bringen willst, ist das die Stufe für dich. Außerdem: extra Swag!"
 txt-tiers: 'FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt'
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Einheiten. Wähle einfach aus, was von beiden du hier verwenden möchtest. (Standardmäßig werden die in deinem Account konfigurierten Einheiten verwendet).
@@ -206,7 +206,7 @@ update: Aktualisieren
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 users: Benutzer
 weAreValidatingYourConfirmationCode: Wir prüfen deinen Bestätigungs-Code.
-weCouldNotValidateYourConfirmationCode: Wir konnten deinen Bestätigungscode nicht bestätigen
+weCouldNotValidateYourConfirmationCode: Wir konnten deinen Bestätigungscode nicht validieren
 weEncounteredAProblem: Wir sind auf ein Problem gestoßen
 weEncourageYouToReportThis: Wir empfehlen dir, dies zu melden
 welcomeAboard: Willkommen an Bord
@@ -266,7 +266,7 @@ show: Anzeigen
 oneMomentPlease: Einen Moment bitte
 loadingMagic: Wir sind dabei, die Magie zu laden
 estimate: Schätzung
-actual: Aktuell
+actual: Tatsächlich
 weEstimateYM2B: 'Wir schätzen {measurement} von dir auf etwa:'
 exportAsData: Als Daten exportieren
 availablePatterns: Verfügbare Schnittmuster
@@ -297,19 +297,19 @@ shareThing: '{thing} teilen'
 link: Link
 cloneThing: '{thing} klonen'
 cloneDescription: Erstelle eine exakte Kopie mit den Maßen des Originalschnittmusters.
-furtherReading: Weiterlesen
+furtherReading: Weiterführende Informationen
 saveAsNewPattern: Als neues Schnittmuster speichern
 saveAsNewPattern-txt: (Eine Kopie von diesem) Schnittmuster in deinem FreeSewing-Account speichern
 exportPattern: Schnittmuster exportieren
 printPattern: Schnittmuster drucken
 exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder das Schnittmuster in verschiedenen Formaten herunterladen
 editThing: '{thing} bearbeiten'
-editPattern-txt: Dieses Schnittmster im Schnittmuster-Editor laden
+editPattern-txt: Dieses Schnittmuster im Schnittmuster-Editor laden
 featureRequiresAccount: Diese Funktion erfordert einen FreeSewing-Account
 zoom: Zoom
 zoomIn: Vergrößern
 zoomOut: Verkleinern
-zoom-txt: Wechselt zwischen der Anpassung an deinem Bildschirm nach der Höhe oder der Breite des Schnittmusters
+zoom-txt: Wechselt zwischen Beschränkung der Höhe und der Breite deines Schnittmusters, um es passend auf deinem Bildschirm anzuzeigen
 savePattern-txt: Dieses Schnittmuster in deinem FreeSewing-Account speichern
 comparePattern: Schnittmuster vergleichen
 showPattern: Schnittmuster anzeigen
