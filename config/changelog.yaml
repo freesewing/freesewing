@@ -2,6 +2,9 @@
   date: Unreleased
 
   Added:
+    bent:
+      - The `s3collar and `s3armhole` options now allow shifting the shoulder seam
+        (`s3` is short for *Shift Shoulder Seam*)
     brian:
       - The `s3collar and `s3armhole` options now allow shifting the shoulder seam
         (`s3` is short for *Shift Shoulder Seam*)

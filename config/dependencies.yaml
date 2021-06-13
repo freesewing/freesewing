@@ -51,6 +51,7 @@ aaron:
 bent:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 breanna:
   peer:
     '@freesewing/brian': *freesewing

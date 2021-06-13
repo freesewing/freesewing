@@ -1,5 +1,6 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
+import mirrorPlugin from '@freesewing/plugin-mirror'
 import Brian from '@freesewing/brian'
 import config from '../config'
 // Parts
@@ -8,7 +9,7 @@ import draftTopSleeve from './topsleeve'
 import draftUnderSleeve from './undersleeve'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Pattern = new freesewing.Design(config, [plugins, mirrorPlugin])
 
 // Attach draft methods from Brian to prototype
 Pattern.prototype.draftBase = function (part) {
