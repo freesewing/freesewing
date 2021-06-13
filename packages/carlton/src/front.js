@@ -201,7 +201,9 @@ export default function (part) {
   )
 
   // Clean up
-  for (let i in paths) delete paths[i]
+  for (let i in paths) {
+    if (['frontArmhole','frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
   for (let i in snippets) delete snippets[i]
 
   // Paths
@@ -212,9 +214,9 @@ export default function (part) {
     .curve_(points.waistCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
     .line(points.collarTip)
     ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
     .line(points.hemEdge)
@@ -398,12 +400,12 @@ export default function (part) {
       })
       macro('vd', {
         from: points.armhole,
-        to: points.shoulder,
+        to: points.s3ArmholeSplit,
         x: points.armhole.x + sa + 30,
       })
       macro('vd', {
         from: points.armhole,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.armhole.x + sa + 45,
       })
       macro('vd', {
@@ -428,7 +430,7 @@ export default function (part) {
       })
       macro('vd', {
         from: points.hemEdge,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.rollLineStart.x - sa - 45,
       })
       macro('hd', {
@@ -449,22 +451,22 @@ export default function (part) {
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.neck,
-        y: points.neck.y - sa - 15,
+        y: points.s3CollarSplit.y - sa - 15,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armholePitch,
-        y: points.neck.y - sa - 30,
+        y: points.s3CollarSplit.y - sa - 30,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
-        to: points.shoulder,
-        y: points.neck.y - sa - 45,
+        to: points.s3ArmholeSplit,
+        y: points.s3CollarSplit.y - sa - 45,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armhole,
-        y: points.neck.y - sa - 60,
+        y: points.s3CollarSplit.y - sa - 60,
       })
     }
   }

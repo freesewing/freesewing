@@ -46,7 +46,7 @@ export default {
       'innerPocketDepth',
       'innerPocketWeltHeight',
     ],
-    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length'],
+    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length', 's3Collar', 's3Armhole'],
     collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [
@@ -155,5 +155,8 @@ export default {
     collarHeight: { pct: 9.6, min: 8, max: 11 },
     collarSpread: { deg: 4, min: 2, max: 6 },
     collarFlare: { pct: 20, min: 0, max: 40 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
   },
 }

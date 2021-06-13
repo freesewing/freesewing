@@ -59,7 +59,9 @@ export default function (part) {
   )
 
   // Clean up
-  for (let i in paths) delete paths[i]
+  for (let i in paths) {
+    if (['backArmhole','backCollar'].indexOf(i) === -1) delete paths[i]
+  }
   for (let i in snippets) delete snippets[i]
 
   // Paths
@@ -77,9 +79,9 @@ export default function (part) {
     .curve_(points.waistCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve_(points.neckCp2, points.cbNeck)
+    .join(paths.backArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.backCollar)
   paths.seam = paths.seam1.join(paths.dart).join(paths.seam2).close().attr('class', 'fabric')
 
   paths.backStay = new Path()
@@ -161,12 +163,12 @@ export default function (part) {
       })
       macro('vd', {
         from: points.armhole,
-        to: points.shoulder,
+        to: points.s3ArmholeSplit,
         x: points.armhole.x + 30 + sa,
       })
       macro('vd', {
         from: points.waist,
-        to: points.shoulder,
+        to: points.s3ArmholeSplit,
         x: points.armhole.x + 45 + sa,
       })
       macro('vd', {
@@ -186,7 +188,7 @@ export default function (part) {
       })
       macro('vd', {
         from: points.bpBottom,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.bpTop.x - 30 - sa,
       })
       macro('vd', {
@@ -201,23 +203,23 @@ export default function (part) {
       })
       macro('hd', {
         from: points.cbNeck,
-        to: points.neck,
-        y: points.neck.y - 15 - sa,
+        to: points.s3CollarSplit,
+        y: points.s3CollarSplit.y - 15 - sa,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.armholePitch,
-        y: points.neck.y - 30 - sa,
+        y: points.s3CollarSplit.y - 30 - sa,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.shoulder,
-        y: points.neck.y - 45 - sa,
+        y: points.s3CollarSplit.y - 45 - sa,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.armhole,
-        y: points.neck.y - 60 - sa,
+        y: points.s3CollarSplit.y - 60 - sa,
       })
     }
   }
