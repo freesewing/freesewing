@@ -85,6 +85,8 @@ export default {
     collarEase: 0,
     backNeckCutout: 0.05,
     shoulderSlopeReduction: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
 
     // Angles
     drapeAngle: { deg: 20, min: 10, max: 30 },
