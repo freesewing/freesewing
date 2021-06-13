@@ -26,6 +26,7 @@ export default (part) => {
 
   // Adapt the shoulder line according to the relevant options
   if (options.s3Collar === 0) {
+    points.s3CollarSplit = points.hps
     paths.frontCollar = new Path()
       .move(points.hps)
       .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
@@ -61,6 +62,7 @@ export default (part) => {
       .setRender(false)
   }
   if (options.s3Armhole === 0) {
+    points.s3ArmholeSplit = points.shoulder
     paths.frontArmhole = new Path()
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
