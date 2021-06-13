@@ -1,7 +1,5 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
-import mirrorPlugin from '@freesewing/plugin-mirror'
-import buttonsPlugin from '@freesewing/plugin-buttons'
 import Bent from '@freesewing/bent'
 import config from '../config'
 // Parts
@@ -24,7 +22,7 @@ import draftInnerPocketBag from './innerpocketbag'
 import draftInnerPocketTab from './innerpockettab'
 
 // Create new design
-const Pattern = new freesewing.Design(config, [plugins, mirrorPlugin, buttonsPlugin])
+const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods from Bent to prototype
 Pattern.prototype.draftBentBase = function (part) {
