@@ -36,10 +36,12 @@
     "@freesewing/core": "^2.16.2"
   },
   "dependencies": {
+    "@freesewing/plugin-buttons": "^2.16.2",
     "@freesewing/plugin-cutonfold": "^2.16.2",
     "@freesewing/plugin-dimension": "^2.16.2",
     "@freesewing/plugin-grainline": "^2.16.2",
     "@freesewing/plugin-logo": "^2.16.2",
+    "@freesewing/plugin-mirror": "^2.16.2",
     "@freesewing/plugin-title": "^2.16.2",
     "@freesewing/plugin-scalebox": "^2.16.2",
     "@freesewing/plugin-round": "^2.16.2",

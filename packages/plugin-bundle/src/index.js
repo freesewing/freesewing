@@ -1,8 +1,10 @@
 /* eslint no-unused-expressions: "warn" */
+import buttons from '@freesewing/plugin-buttons'
 import cutonfold from '@freesewing/plugin-cutonfold'
 import dimension from '@freesewing/plugin-dimension'
 import grainline from '@freesewing/plugin-grainline'
 import logo from '@freesewing/plugin-logo'
+import mirror from '@freesewing/plugin-mirror'
 import notches from '@freesewing/plugin-notches'
 import title from '@freesewing/plugin-title'
 import scalebox from '@freesewing/plugin-scalebox'
@@ -12,10 +14,12 @@ import measurements from '@freesewing/plugin-measurements'
 import { version, name } from '../package.json'
 
 let bundle = [
+  buttons,
   cutonfold,
   dimension,
   grainline,
   logo,
+  mirror,
   notches,
   title,
   scalebox,
