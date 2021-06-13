@@ -81,6 +81,8 @@ export default {
     sleevecapQ4Spread1: 0.05,
     sleevecapQ4Spread2: 0.05,
     sleeveWidthGuarantee: 1,
+    s3Collar: 0,
+    s3Armhole: 0,
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
