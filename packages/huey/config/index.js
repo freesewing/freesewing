@@ -31,6 +31,8 @@ export default {
       'hoodClosure',
       'hoodDepth',
       'hoodAngle',
+      's3Collar',
+      's3Armhole',
     ],
     advanced: [
       'acrossBackFactor',
@@ -116,6 +118,9 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 10, min: 5, max: 15 },
     shoulderEase: { pct: 0.5, min: -2, max: 6 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
