@@ -427,13 +427,13 @@ export default function (part) {
       })
       macro('vd', {
         from: points.armholePitch,
-        to: points.shoulder,
-        x: points.shoulder.x + sa + 15,
+        to: points.s3ArmholeSplit,
+        x: points.s3ArmholeSplit.x + sa + 15,
       })
       macro('vd', {
         from: points.armholePitch,
-        to: points.neck,
-        x: points.shoulder.x + sa + 30,
+        to: points.s3CollarSplit,
+        x: points.s3ArmholeSplit.x + sa + 30,
       })
       macro('vd', {
         from: points.rollLineStart,
@@ -472,23 +472,23 @@ export default function (part) {
       })
       macro('hd', {
         from: points.lapelStraightEnd,
-        to: points.neck,
-        y: points.neck.y - sa - 15,
+        to: points.s3CollarSplit,
+        y: points.s3CollarSplit.y - sa - 15,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armholePitch,
-        y: points.neck.y - sa - 30,
+        y: points.s3ArmholeSplit.y - sa - 30,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
-        to: points.shoulder,
-        y: points.neck.y - sa - 45,
+        to: points.s3ArmholeSplit,
+        y: points.s3CollarSplit.y - sa - 45,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
-        to: points.armhole,
-        y: points.neck.y - sa - 60,
+        to: points.s3ArmholeSplit,
+        y: points.s3CollarSplit.y - sa - 60,
       })
     }
   }
