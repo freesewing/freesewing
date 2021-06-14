@@ -7,7 +7,7 @@ export default {
   code: 'Joost De Cock',
   department: 'bottoms',
   type: 'block',
-  difficulty: 2,
+  difficulty: 3,
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase'],
     style: ['waistHeight', 'fitKnee', 'lengthBonus', 'crotchDrop'],

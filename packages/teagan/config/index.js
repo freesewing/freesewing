@@ -7,7 +7,7 @@ export default {
   code: 'Joost De Cock',
   department: 'tops',
   type: 'pattern',
-  difficulty: 3,
+  difficulty: 2,
   cut: {
     front: [2, 'onFold'],
     back: [2, 'onFold'],
