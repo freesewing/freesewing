@@ -255,8 +255,8 @@ recreateThingForPerson: '{thing} für {person} neu erstellen'
 seeYouLaterUser: Bis später, {user}
 exportForPrinting: Für den Druck exportieren
 exportForEditing: Für die Bearbeitung exportieren
-startWithNeckTitle: Beginne mit dem Hals-Umfang
-startWithNeckDescription: Auf Basis deines Hals-Umfangs können wir dir helfen, Fehler in deinen Maßen zu erkennen.
+startWithNeckTitle: Beginne mit dem Halsumfang
+startWithNeckDescription: Auf Basis deines Halsumfangs können wir dir helfen, Fehler in deinen Maßen zu erkennen.
 whatYouNeed: Was du brauchst
 fabricOptions: Stoffauswahl
 cutting: Zuschnitt
