@@ -7,7 +7,7 @@ export default {
   code: 'Wouter Van Wageningen',
   department: 'accessories',
   type: 'pattern',
-  difficulty: 3,
+  difficulty: 2,
   optionGroups: {
     fit: ['backOpening', 'chestDepth'],
     style: ['lengthBonus', 'bibLength', 'bibWidth', 'strapWidth'],
