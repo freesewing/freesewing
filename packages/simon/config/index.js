@@ -23,6 +23,8 @@ export default {
     ],
     style: [
       'splitYoke',
+      's3Collar',
+      's3Armhole',
       'hemStyle',
       'hemCurve',
       'boxPleat',
@@ -217,6 +219,9 @@ export default {
     lengthBonus: { pct: 25, min: -4, max: 60 },
     shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleevecapEase: { pct: 0, min: 0, max: 3 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },

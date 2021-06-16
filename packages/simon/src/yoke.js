@@ -13,7 +13,9 @@ export default (part) => {
     options,
   } = part.shorthand()
 
-  for (let id of Object.keys(part.paths)) delete part.paths[id]
+  for (let id in paths) {
+    if (['backCollar', 'backArmhole'].indexOf(id) === -1) delete part.paths[id]
+  }
 
   // Cut off at yoke
   points.cbYoke = new Point(0, points.armholePitch.y)
@@ -22,19 +24,18 @@ export default (part) => {
   paths.saBase = new Path()
     .move(points.cbYoke)
     .line(points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve_(points.neckCp2, points.cbNeck)
+    .join(paths.backArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.backCollar)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()
   else {
-    for (let p of ['neckCp2', 'neck', 'shoulder', 'shoulderCp1', 'armholePitchCp2', 'armholePitch'])
-      points['_' + p] = points[p].flipX()
-    paths.saBase
-      ._curve(points._neckCp2, points._neck)
-      .line(points._shoulder)
-      .curve(points._shoulderCp1, points._armholePitchCp2, points._armholePitch)
-      .line(points.cbYoke)
-      .close()
+    macro('mirror', {
+      mirror: [points.cbNeck,points.cbYoke],
+      paths: [paths.saBase],
+      clone: true
+    })
+    paths.saBase = paths.saBase.join(paths.mirroredSaBase.reverse())
+    paths.mirroredSaBase.setRender(false)
   }
   paths.seam = paths.saBase.clone()
   paths.saBase.render = false
@@ -62,8 +63,6 @@ export default (part) => {
         from: points.grainlineFrom,
         to: points.grainlineTo,
       })
-      snippets.sleeveNotchA = new Snippet('bnotch', points.armholePitch)
-      snippets.sleeveNotchB = new Snippet('bnotch', points._armholePitch)
     }
 
     if (sa) {

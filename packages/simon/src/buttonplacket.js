@@ -23,7 +23,7 @@ export default (part) => {
     return part
   }
 
-  for (let id of Object.keys(part.paths)) {
+  for (let id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
   macro('flip')

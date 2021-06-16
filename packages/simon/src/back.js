@@ -1,7 +1,6 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  part.paths = {} // Removes paperless dimensions from brian
   let {
     store,
     measurements,
@@ -237,6 +236,7 @@ export default (part) => {
 
   // Paperless?
   if (paperless) {
+    macro('rmad') // Removes paperless dimensions from brian
     if (store.get('backDarts')) {
       macro('vd', {
         from: points.dartBottom,
