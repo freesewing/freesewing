@@ -145,12 +145,12 @@ export default (part) => {
     }
     macro('hd', {
       from: points.placketTopEdge,
-      to: points.neck,
+      to: points.s3CollarSplit,
       y: points.placketTopEdge.y - offset - sa - 15,
     })
     macro('hd', {
       from: points.placketTopEdge,
-      to: points.shoulder,
+      to: points.s3ArmholeSplit,
       y: points.placketTopEdge.y - offset - sa - 30,
     })
     macro('hd', {

@@ -43,23 +43,23 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.neck,
+      from: points.s3CollarSplit,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 15,
+      y: points.s3CollarSplit.y - sa - 15,
     })
     macro('hd', {
-      from: points.shoulder,
+      from: points.s3ArmholeSplit,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 30,
+      y: points.s3CollarSplit.y - sa - 30,
     })
     macro('hd', {
       from: points.armhole,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 45,
+      y: points.s3CollarSplit.y - sa - 45,
     })
     macro('vd', {
       from: points.placketTopIn,
-      to: points.neck,
+      to: points.s3CollarSplit,
       x: points.placketTopIn.x + sa + 15,
     })
     macro('vd', {

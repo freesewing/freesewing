@@ -1,7 +1,6 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  part.paths = {}
   let {
     store,
     measurements,
@@ -12,8 +11,17 @@ export default (part) => {
     paths,
     complete,
     macro,
+    snippets,
     options,
   } = part.shorthand()
+
+  // Clean up
+  for (let i in paths) {
+    if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
+  for (let i in snippets) {
+    if (i.indexOf('otch')) delete snippets[i]
+  }
 
   // Populare store with data we need
   calculateReduction(part)
@@ -23,7 +31,7 @@ export default (part) => {
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .join(paths.frontArmhole)
       .length()
   )
 
@@ -56,9 +64,9 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
   switch (options.hemStyle) {
     case 'baseball':
       points.bballStart = points.cfHem.shiftFractionTowards(points.hem, 0.5)

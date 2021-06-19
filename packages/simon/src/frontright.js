@@ -12,8 +12,8 @@ export default (part) => {
     if (paperless) {
       frontDimensions(part, 'right')
       macro('ld', {
-        from: points.shoulder,
-        to: points.neck,
+        from: points.s3ArmholeSplit,
+        to: points.s3CollarSplit,
         d: 15 + sa,
       })
       if (sa) {

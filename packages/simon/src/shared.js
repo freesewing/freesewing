@@ -213,12 +213,6 @@ export const frontDimensions = (part, side = 'left') => {
     text: ['frenchSeam', ': 2x', 'seamAllowance'],
   })
   if (paperless) {
-    macro('pd', {
-      path: new Path()
-        .move(points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15 * factor,
-    })
     macro('vd', {
       from: points.armhole,
       to: points.armholePitch,
@@ -226,12 +220,12 @@ export const frontDimensions = (part, side = 'left') => {
     })
     macro('vd', {
       from: points.armhole,
-      to: points.shoulder,
+      to: points.s3ArmholeSplit,
       x: points.armhole.x + (30 + sa * 2) * factor,
     })
     macro('vd', {
       from: points.armhole,
-      to: points.neck,
+      to: points.s3CollarSplit,
       x: points.armhole.x + (45 + sa * 2) * factor,
     })
     macro('vd', {
@@ -266,7 +260,7 @@ export const frontDimensions = (part, side = 'left') => {
       })
       macro('vd', {
         from: points.bballStart,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.hips.x + (60 + 2 * sa) * factor,
       })
       macro('hd', {
@@ -292,7 +286,7 @@ export const frontDimensions = (part, side = 'left') => {
       })
       macro('vd', {
         from: points.slashEnd,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.hips.x + (60 + 3 * sa) * factor,
       })
     } else {
@@ -303,7 +297,7 @@ export const frontDimensions = (part, side = 'left') => {
       })
       macro('vd', {
         from: points.hem,
-        to: points.neck,
+        to: points.s3CollarSplit,
         x: points.armhole.x + (60 + 2 * sa) * factor,
       })
     }

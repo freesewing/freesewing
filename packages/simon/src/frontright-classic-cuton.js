@@ -89,19 +89,19 @@ export default (part) => {
       y: points.placketTopEdge.y - 45 - sa,
     })
     macro('hd', {
-      from: points.neck,
+      from: points.s3CollarSplit,
       to: points.placketTopEdge,
-      y: points.neck.y - 15 - sa,
+      y: points.s3CollarSplit.y - 15 - sa,
     })
     macro('hd', {
-      from: points.shoulder,
+      from: points.s3ArmholeSplit,
       to: points.placketTopEdge,
-      y: points.neck.y - 30 - sa,
+      y: points.s3CollarSplit.y - 30 - sa,
     })
     macro('hd', {
       from: points.armhole,
       to: points.placketTopEdge,
-      y: points.neck.y - 45 - sa,
+      y: points.s3CollarSplit.y - 45 - sa,
     })
     points.button0 = points.placketTopEdge
     let j

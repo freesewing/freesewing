@@ -44,6 +44,8 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     delete snippets.armholePitchNotch
+    delete snippets.collarNotch
+    delete snippets.shoulderNotch
     points.title = new Point(points.neck.x, points.cbYoke.y / 3)
     macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
     points.logo = points.title.shift(-90, 50)
@@ -75,18 +77,14 @@ export default (part) => {
 
   // Paperless?
   if (paperless) {
-    macro('pd', {
-      path: new Path().move(points.cbNeck)._curve(points.neckCp2, points.neck),
-      d: 15,
-    })
     macro('hd', {
       from: points.cbNeck,
-      to: points.neck,
-      y: points.neck.y - 15 - sa,
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - 15 - sa,
     })
     macro('ld', {
-      from: points.neck,
-      to: points.shoulder,
+      from: points.s3CollarSplit,
+      to: points.s3ArmholeSplit,
       d: 15 + sa,
     })
     macro('hd', {
@@ -96,7 +94,7 @@ export default (part) => {
     })
     macro('hd', {
       from: points.cbYoke,
-      to: points.shoulder,
+      to: points.s3ArmholeSplit,
       y: points.cbYoke.y + 30 + sa,
     })
     macro('vd', {
@@ -104,16 +102,10 @@ export default (part) => {
       to: points.cbNeck,
       x: points.cbYoke.x - 15 - sa,
     })
-    macro('pd', {
-      path: new Path()
-        .move(points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: 15 + sa,
-    })
     macro('vd', {
       from: points.armholePitch,
-      to: points.shoulder,
-      x: points.shoulder.x + 30 + sa,
+      to: points.s3ArmholeSplit,
+      x: points.s3ArmholeSplit.x + 30 + sa,
     })
   }
 

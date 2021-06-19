@@ -68,7 +68,7 @@ export default (part) => {
       y: points.hps.y - sa - 15,
     })
     macro('hd', {
-      from: points.shoulder,
+      from: points.s3ArmholeSplit,
       to: points.placketTopEdge,
       y: points.hps.y - sa - 30,
     })
@@ -79,7 +79,7 @@ export default (part) => {
     })
     macro('vd', {
       from: points.placketTopEdge,
-      to: points.neck,
+      to: points.s3CollarSplit,
       x: points.placketTopEdge.x + sa + 15,
     })
     macro('vd', {

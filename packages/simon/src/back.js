@@ -26,10 +26,9 @@ export default (part) => {
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .join(paths.backArmhole)
       .length()
   )
-
   // Hip shaping
   points.hips = points.hips.shift(180, store.get('hipsReduction') / 4)
   points.hem = points.hem.shift(180, store.get('hipsReduction') / 4)

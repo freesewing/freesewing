@@ -57,27 +57,27 @@ export default (part) => {
   if (paperless) {
     macro('hd', {
       from: points.neckEdge,
-      to: points.neck,
-      y: points.neck.y - sa - 15,
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - sa - 15,
     })
     macro('hd', {
       from: points.neckEdge,
-      to: points.shoulder,
-      y: points.neck.y - sa - 30,
+      to: points.s3ArmholeSplit,
+      y: points.s3CollarSplit.y - sa - 30,
     })
     macro('hd', {
       from: points.neckEdge,
       to: points.armhole,
-      y: points.neck.y - sa - 45,
+      y: points.s3CollarSplit.y - sa - 45,
     })
     macro('vd', {
       from: points.neckEdge,
-      to: points.neck,
+      to: points.s3CollarSplit,
       x: points.neckEdge.x - sa - 15,
     })
     macro('vd', {
       from: points.hemEdge,
-      to: points.neck,
+      to: points.s3CollarSplit,
       x: points.neckEdge.x - sa - 30,
     })
     for (let pid of ['Armhole', 'Waist', 'Hips']) {
