@@ -107,6 +107,9 @@ hemStyle:
     straight: Rechte zoom
     baseball: Ronde zoom
     slashed: Zoom met zijsplit
+roundBack:
+  title: Round back
+  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
   title: Apart knoopsgatenpat
   description: Teken een apart knoopsgatenpat.
@@ -125,6 +128,6 @@ splitYoke:
 waistEase:
   title: Overwijdte taille
   description: De hoeveelheid extra ruimte aan je (natuurlijke) taille.
-yokeDart:
-  title: Neep schouderpas
-  description: Of je een neep aan de zijkanten van de schouderpas wil om beter te passen voor een ronde rug.
+yokeHeight:
+  title: Yoke height
+  description: Controls the height of the yoke
