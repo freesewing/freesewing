@@ -161,3 +161,7 @@ waistEase:
 yokeDart:
   title: Yoke dart
   description: Whether to include a dart at the sides of the yoke to fit a rounder back.
+
+yokeHeight:
+  title: Yoke height
+  description: Controls the height of the yoke

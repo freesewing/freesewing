@@ -22,13 +22,14 @@ export default {
       'yokeDart',
     ],
     style: [
-      'splitYoke',
-      's3Collar',
-      's3Armhole',
       'hemStyle',
       'hemCurve',
       'boxPleat',
       'backDarts',
+      'splitYoke',
+      'yokeHeight',
+      's3Collar',
+      's3Armhole',
       {
         closure: [
           'extraTopButton',
@@ -128,7 +129,7 @@ export default {
     frontLeft: 'front',
     buttonPlacket: 'front',
     buttonholePlacket: 'front',
-    yoke: 'backBase',
+    yoke: 'back',
     sleeveBase: 'front',
     sleeve: 'sleeveBase',
   },
@@ -219,6 +220,7 @@ export default {
     lengthBonus: { pct: 25, min: -4, max: 60 },
     shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    yokeHeight: { pct: 55, min: 10, max: 100 },
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },

@@ -2,12 +2,19 @@
   date: Unreleased
 
   Added:
-    bent:
+    bent: &s3optsAdded
       - The `s3collar and `s3armhole` options now allow shifting the shoulder seam
         (`s3` is short for *Shift Shoulder Seam*)
-    brian:
+    brian: *s3optsAdded
+    carlita: *s3optsAdded
+    carlton: *s3optsAdded
+    huey: *s3optsAdded
+    simon:
+      - Added support for configuring the height of the Yoke.
+        See [#642](https://github.com/freesewing/freesewing/issues/642)
       - The `s3collar and `s3armhole` options now allow shifting the shoulder seam
         (`s3` is short for *Shift Shoulder Seam*)
+    sven: *s3optsAdded
 
   Changed:
     components:
@@ -15,8 +22,20 @@
         See https://github.com/freesewing/freesewing/issues/1043
       - Changed antman references to antperson
 
+    diana: *s3optsConst
+      - Set brian `s3` options as constants
+    hugo: *s3optsConst
+    jaeger: *s3optsConst
     i18n:
       - Changed antman references to antperson
+    plugin-bundle:
+      - Include plugin-buttons
+      - Include plugin-mirror
+    plugin-buttons:
+      - Is now included in plugin-bundle
+    plugin-mirror:
+      - Is now included in plugin-bundle
+
 
   Fixed:
     charlie:

@@ -14,17 +14,15 @@ export default (part) => {
   } = part.shorthand()
 
   for (let id in paths) {
-    if (['backCollar', 'backArmhole'].indexOf(id) === -1) delete part.paths[id]
+    if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
-
-  // Cut off at yoke
-  points.cbYoke = new Point(0, points.armholePitch.y)
 
   // Paths
   paths.saBase = new Path()
     .move(points.cbYoke)
-    .line(points.armholePitch)
-    .join(paths.backArmhole)
+    .line(points.armholeYokeSplit)
+  if (options.yokeHeight > 0) paths.saBase = paths.saBase.join(paths.backArmholeYoke)
+  paths.saBase = paths.saBase
     .line(points.s3CollarSplit)
     .join(paths.backCollar)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()

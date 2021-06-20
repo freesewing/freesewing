@@ -77,7 +77,27 @@ export default (part) => {
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
   // Cut off at yoke
-  points.cbYoke = new Point(0, points.armholePitch.y)
+  const neverAboveCbNeck = () => (points.cbNeck.dy(points.cbYoke) < 10) ? (points.cbYoke.y = points.cbNeck.y + 10) : null
+  if (options.yokeHeight === 1) {
+    points.cbYoke = new Point(0, points.armholePitch.y)
+    neverAboveCbNeck()
+    points.armholeYokeSplit = points.armholePitch.clone()
+    paths.backArmholeYoke = paths.backArmhole
+  }
+  else if (options.yokeHeight === 0) {
+    points.cbYoke = new Point(0, points.s3ArmholeSplit.y)
+    neverAboveCbNeck()
+    points.armholeYokeSplit = points.s3ArmholeSplit.clone()
+    paths.backArmholeBack = paths.backArmhole
+  } else {
+    points.cbYoke = new Point(0, points.s3ArmholeSplit.y + (points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight))
+    neverAboveCbNeck()
+    points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
+    const [back,yoke] = paths.backArmhole.split(points.armholeYokeSplit)
+    paths.backArmholeYoke = yoke.setRender(false)
+    paths.backArmholeBack = back.setRender(false)
+  }
+
 
   // Box pleat
   if (options.boxPleat) {
@@ -104,6 +124,10 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+  if (options.yokeHeight < 1 && options.yokeHeight > 0) paths.armhole = paths.armhole.join(paths.backArmholeBack)
+  else if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+
+  /*
   paths.armhole.render = false
   if (options.yokeDart > 0) {
     points.tmp1 = points.armholePitch.shift(
@@ -130,7 +154,7 @@ export default (part) => {
       store.get('backArmholeLength') - points.yokeDartEdge.dist(points.armholePitch)
     )
   }
-
+  */
   // Never make the hips more narrow than the waist because that looks silly
   //if (points.hem.x < points.waist.x) {
   //  points.hem.x = points.waist.x
