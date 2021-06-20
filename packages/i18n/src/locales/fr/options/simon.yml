@@ -107,6 +107,9 @@ hemStyle:
     straight: Ourlet droit
     baseball: Ourlet liquette
     slashed: Ourlet arrondi
+roundBack:
+  title: Round back
+  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
   title: Gorge (Patte de boutonnières) séparée
   description: Dessinez une gorge (patte de boutonnières) séparée.
@@ -125,6 +128,6 @@ splitYoke:
 waistEase:
   title: Aisance à la taille
   description: La quantité d'aisance à votre taille (naturelle).
-yokeDart:
-  title: Pinces empiècement
-  description: S'il faut inclure des pinces sur l'empiècement pour un dos plus rond.
+yokeHeight:
+  title: Yoke height
+  description: Controls the height of the yoke

@@ -107,6 +107,9 @@ hemStyle:
     straight: Recto
     baseball: Baseball
     slashed: Recortado
+roundBack:
+  title: Round back
+  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
   title: Tapeta de ojal separada
   description: Draft a separate buttonhole placket.
@@ -125,6 +128,6 @@ splitYoke:
 waistEase:
   title: Holgura de cintura
   description: La cantidad de holgura en la cintura.
-yokeDart:
-  title: Pinza del canesú
-  description: Si se incluye una pinza en los lados del canesú para ajustar una espalda más redondeada.
+yokeHeight:
+  title: Yoke height
+  description: Controls the height of the yoke
