@@ -7,9 +7,9 @@ We have decided to start a newsletter, so you should subscribe to it.
  - If not, you can still subscribe at [/community/newsletter/](https://freesewing.org/community/newsletter/).
 
 
-##### Next contributor call on 12 June
+##### Next contributor call on 26 June
 
-The next contributor call is on [12 June 2021](https://github.com/freesewing/freesewing/issues/1061).
+The next contributor call is on [26 June 2021](https://github.com/freesewing/freesewing/issues/1138).
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
