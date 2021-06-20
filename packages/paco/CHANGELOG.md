@@ -1,6 +1,13 @@
 # Change log for: @freesewing/paco
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Fixed
+
+ - The waistband was incorrectly using the cuff widht See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+ - Only draft the cuff part when it's needed See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

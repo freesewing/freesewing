@@ -3,10 +3,22 @@
 
 ## 2.17.0 (NaN-NaN-NaN)
 
+### Added
+
+ - Added Reddit icon to Icon component
+
 ### Changed
 
  - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
  - Changed antman references to antperson
+
+### Removed
+
+ - Removed Gitter icon from Icon component
+
+### Fixed
+
+ - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
 
 ## 2.16.2 (2021-05-05)
 

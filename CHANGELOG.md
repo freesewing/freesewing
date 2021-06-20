@@ -35,10 +35,22 @@
 
 ### components
 
+#### Added
+
+ - Added Reddit icon to Icon component
+
 #### Changed
 
  - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
  - Changed antman references to antperson
+
+#### Removed
+
+ - Removed Gitter icon from Icon component
+
+#### Fixed
+
+ - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
 
 ### diana
 
@@ -69,6 +81,13 @@
 #### Changed
 
  - Set brian `s3` options as constants
+
+### paco
+
+#### Fixed
+
+ - The waistband was incorrectly using the cuff widht See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+ - Only draft the cuff part when it's needed See [#1113](https://github.com/freesewing/freesewing/issues/1113)
 
 ### plugin-bundle
 
