@@ -312,9 +312,9 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
 
   switch (options.hemStyle) {
     case 'baseball':
