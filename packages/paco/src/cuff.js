@@ -11,6 +11,10 @@ export default function (part) {
     paperless,
     macro,
   } = part.shorthand()
+  if (!options.elasticatedHem) {
+    part.render = false
+    return part
+  }
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
   points.topLeft = new Point(0, 0)
