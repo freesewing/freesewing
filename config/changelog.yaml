@@ -9,12 +9,13 @@
     carlita: *s3optsAdded
     carlton: *s3optsAdded
     huey: *s3optsAdded
-    simon:
+    simon: &s3AndYokeSimon
       - Added support for configuring the height of the Yoke.
         See [#642](https://github.com/freesewing/freesewing/issues/642)
       - The `s3collar and `s3armhole` options now allow shifting the shoulder seam
         (`s3` is short for *Shift Shoulder Seam*)
       - Added the `roundBack` option to replace the `yokeDart` option
+    simone: *s3AndYokeSimon
     sven: *s3optsAdded
 
   Changed:
@@ -46,6 +47,8 @@
 
   Removed:
     simon:
+      - The `yokeDart` option is replaced by the `roundBack` option
+    simone:
       - The `yokeDart` option is replaced by the `roundBack` option
 
 2.16.2:
