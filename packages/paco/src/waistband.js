@@ -14,9 +14,9 @@ export default function (part) {
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
-  points.midLeft = new Point(0, options.ankleElastic + 1)
-  points.bottomLeft = new Point(0, options.ankleElastic * 2 + 2)
-  points.eyeletLeft = new Point(20, options.ankleElastic / 2)
+  points.midLeft = new Point(0, options.waistbandWidth)
+  points.bottomLeft = new Point(0, options.waistbandWidth * 2)
+  points.eyeletLeft = new Point(20, options.waistbandWidth / 2)
   points.eyeletRight = points.eyeletLeft.shift(0, 120)
 
   points.midTopLeft = points.topLeft.shift(0, 60)
