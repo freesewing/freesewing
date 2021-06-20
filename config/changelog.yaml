@@ -24,7 +24,7 @@
         See https://github.com/freesewing/freesewing/issues/1043
       - Changed antman references to antperson
 
-    diana: *s3optsConst
+    diana: &s3optsConst
       - Set brian `s3` options as constants
     hugo: *s3optsConst
     jaeger: *s3optsConst

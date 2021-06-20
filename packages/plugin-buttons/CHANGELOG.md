@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-buttons
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Changed
+
+ - Is now included in plugin-bundle
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-mirror
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Changed
+
+ - Is now included in plugin-bundle
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

@@ -1,9 +1,27 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.16.3 (NaN-NaN-NaN)
+## 2.17.0 (NaN-NaN-NaN)
+
+### bent
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
 
 ### brian
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### carlita
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### carlton
 
 #### Added
 
@@ -22,11 +40,84 @@
  - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
  - Changed antman references to antperson
 
+### diana
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
+### huey
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### hugo
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
 ### i18n
 
 #### Changed
 
  - Changed antman references to antperson
+
+### jaeger
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
+### plugin-bundle
+
+#### Changed
+
+ - Include plugin-buttons
+ - Include plugin-mirror
+
+### plugin-buttons
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### plugin-mirror
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### simon
+
+#### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+#### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
+### simone
+
+#### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+#### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
+### sven
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
 
 ### tutorial
 

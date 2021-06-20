@@ -1,7 +1,7 @@
 # Change log for: @freesewing/components
 
 
-## 2.16.3 (NaN-NaN-NaN)
+## 2.17.0 (NaN-NaN-NaN)
 
 ### Changed
 

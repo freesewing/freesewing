@@ -1,6 +1,12 @@
 # Change log for: @freesewing/huey
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simon
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed
