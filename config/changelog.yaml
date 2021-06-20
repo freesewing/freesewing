@@ -8,6 +8,8 @@
     brian: *s3optsAdded
     carlita: *s3optsAdded
     carlton: *s3optsAdded
+    components:
+      - Added Reddit icon to Icon component
     huey: *s3optsAdded
     simon: &s3AndYokeSimon
       - Added support for configuring the height of the Yoke.
@@ -38,14 +40,20 @@
     plugin-mirror:
       - Is now included in plugin-bundle
 
-
   Fixed:
     charlie:
       - Add `@freesewing/plugin-mirror` as peer dependency
+    paco:
+      - The waistband was incorrectly using the cuff widht
+        See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+      - Only draft the cuff part when it's needed
+        See [#1113](https://github.com/freesewing/freesewing/issues/1113)
     tutorial:
       - Set department in the config to one of the newly accepted values
 
   Removed:
+    components:
+      - Removed Gitter icon from Icon component
     simon:
       - The `yokeDart` option is replaced by the `roundBack` option
     simone:
