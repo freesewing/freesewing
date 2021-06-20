@@ -7,7 +7,7 @@ waistHeight:
   description: Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe
 lengthBonus:
   title: Längenzugabe
-  description: Steuert die Längenzugabe an der Hose
+  description: Steuert die Länge der Hose
 crotchDrop:
   title: Schritt-Tiefe
   description: Senkt die Schrittiefe für mehr Tragekomfort

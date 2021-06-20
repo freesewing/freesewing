@@ -1,7 +1,7 @@
 ---
 adjustmentRibbon:
-  title: Einstellungsband
-  description: Einstellungsband verwenden oder nicht
+  title: Einstellband
+  description: Einstellband verwenden oder nicht
 bandLength:
   title: Bandlänge
   description: Lände des Bandes
@@ -18,6 +18,6 @@ bowStyle:
   title: Fliegen-Stil
   description: Stil der Fliege
 endStyle:
-  title: Endenstil
+  title: Enden-Stil
   description: Stil für die Enden der Fliege
 

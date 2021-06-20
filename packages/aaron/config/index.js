@@ -7,7 +7,7 @@ export default {
   code: 'Joost De Cock',
   department: 'tops',
   type: 'pattern',
-  difficulty: 3,
+  difficulty: 2,
   optionGroups: {
     fit: ['chestEase', 'hipsEase', 'stretchFactor'],
     style: [

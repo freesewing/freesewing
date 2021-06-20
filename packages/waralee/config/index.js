@@ -10,7 +10,7 @@ export default {
   code: 'Wouter Van Wageningen',
   department: 'bottoms',
   type: 'pattern',
-  difficulty: 3,
+  difficulty: 2,
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
     style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],

@@ -7,7 +7,7 @@ export default {
   code: ['Quentin Felix', 'Joost De Cock'],
   department: 'accessories',
   type: 'pattern',
-  difficulty: 2,
+  difficulty: 3,
   optionGroups: {
     fit: ['headEase'],
   },

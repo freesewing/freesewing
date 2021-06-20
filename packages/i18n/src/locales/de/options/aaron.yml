@@ -4,13 +4,13 @@ armholeDrop:
   description: Senkt das Armloch um diesen Wert. Negative Werte erhöhen es.
 backlineBend:
   title: Armlochform hinten
-  description: Bestimmt die Form / Biegung der Rückseite der Armlöcher.
+  description: Bestimmt die Form / Krümmung der Rückseite der Armlöcher.
 hipsEase:
   title: Zugabe Hüfte
   description: Die Menge an Bequemlichkeitszugabe an deinen Hüften.
 necklineBend:
   title: Ausschnittsform
-  description: Bestimmt die Form / Biegung des Halsausschnitts vorne.
+  description: Bestimmt die Form / Krümmung des Halsausschnitts vorne.
 necklineDrop:
   title: Ausschnitt Tiefe
   description: Wie tief der Ausschnitt vorne geht.
