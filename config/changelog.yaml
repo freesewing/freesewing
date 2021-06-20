@@ -43,6 +43,9 @@
   Fixed:
     charlie:
       - Add `@freesewing/plugin-mirror` as peer dependency
+    components:
+      - Correctly load saved value for mm options
+        See [#1136](https://github.com/freesewing/freesewing/issues/1136)
     paco:
       - The waistband was incorrectly using the cuff widht
         See [#1113](https://github.com/freesewing/freesewing/issues/1113)
