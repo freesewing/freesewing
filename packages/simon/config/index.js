@@ -19,7 +19,7 @@ export default {
       'sleeveLengthBonus',
       'waistEase',
       'hipsEase',
-      'yokeDart',
+      'roundBack',
     ],
     style: [
       'hemStyle',
@@ -218,9 +218,10 @@ export default {
     hemCurve: { pct: 50, min: 25, max: 100 },
     hipsEase: { pct: 15, min: 10, max: 35 },
     lengthBonus: { pct: 25, min: -4, max: 60 },
+    roundBack: { pct: 0, min: 0, max: 10 },
     shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
-    yokeHeight: { pct: 55, min: 10, max: 100 },
+    yokeHeight: { pct: 55, min: 10, max: 90 },
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
@@ -247,7 +248,6 @@ export default {
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
     sleevePlacketLength: { pct: 25, min: 15, max: 35 },
     waistEase: { pct: 15, min: 10, max: 35 },
-    yokeDart: { pct: 0, min: 0, max: 15 },
     backDartShaping: { pct: 25, min: 5, max: 75 },
   },
 }

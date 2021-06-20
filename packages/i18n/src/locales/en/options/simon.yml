@@ -134,6 +134,10 @@ hemStyle:
     baseball: Baseball hem
     slashed: Slashed hem
 
+roundBack:
+  title: Round back
+  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+
 seperateButtonholePlacket:
   title: Seperate buttonhole placket
   description: Draft a separate buttonhole placket.
@@ -157,10 +161,6 @@ splitYoke:
 waistEase:
   title: Waist ease
   description: The amount of ease at your (natural) waist.
-
-yokeDart:
-  title: Yoke dart
-  description: Whether to include a dart at the sides of the yoke to fit a rounder back.
 
 yokeHeight:
   title: Yoke height
