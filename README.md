@@ -30,7 +30,7 @@
   ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
   alt="Follow @freesewing_org on Twitter"/>
   </a><a
-  href="https://chat.freesewing.org"
+  href="https://discord.freesewing.org"
   title="Chat with us on Discord"
   ><img src="https://img.shields.io/discord/698854858052075530?label=Chat%20on%20Discord"
   alt="Chat with us on Discord"/>
@@ -102,7 +102,7 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
 
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
  - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
- - 💬 Chat: On Discord via [chat.freesewing.org](https://chat.freesewing.org/)
+ - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
  - ✅ Todo list/Kanban board: On Github via [todo.freesewing.org](https://todo.freesewing.org/)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
@@ -114,7 +114,7 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to ask questions,
+Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
