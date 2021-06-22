@@ -22,7 +22,7 @@ bustDartCurve:
   description: Controls the curvature of the bust dart
 armholeDepth:
   title: Armlochtiefe
-  description: Controls the depth of the armhole
+  description: Steuert die Tiefe des Armloches
 backArmholeSlant:
   title: Back armhole slant
   description: Slightly rotates the armhole around its pitch point
@@ -42,7 +42,7 @@ backHemSlope:
   title: Back hem slope
   description: Controls the slope of the hem at the back
 frontShoulderWidth:
-  title: Front shoulder width
+  title: Vordere Schulterbreite
   description: Controls the narrowness of the front shoulders relative to the back
 highBustWidth:
   title: High bust width
