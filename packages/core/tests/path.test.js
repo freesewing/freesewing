@@ -793,5 +793,4 @@ it("Should move along a path even if it lands just on a joint", () => {
     )
   a.points.test = a.paths.curve.shiftAlong(121.36690836797631)
   expect(a.points.test).to.be.instanceOf(a.Point)
-  console.log({test: a.points.test})
 })
