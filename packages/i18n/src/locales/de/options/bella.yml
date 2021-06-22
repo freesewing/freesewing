@@ -1,9 +1,9 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Brustzugabe
   description: Controls the amount of ease at the fullest part of your chest
 waistEase:
-  title: Waist ease
+  title: Taillenzugabe
   description: Controls the amount of ease at your waist
 bustSpanEase:
   title: Bust span ease
@@ -21,7 +21,7 @@ bustDartCurve:
   title: Bust dart curve
   description: Controls the curvature of the bust dart
 armholeDepth:
-  title: Armhole depth
+  title: Armlochtiefe
   description: Controls the depth of the armhole
 backArmholeSlant:
   title: Back armhole slant
