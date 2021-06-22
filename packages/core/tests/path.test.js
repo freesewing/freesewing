@@ -775,3 +775,23 @@ it("Should overwrite a path attribute", () => {
   expect(a.paths.line.attributes.get("class")).to.equal("overwritten");
 });
 
+it("Should move along a path even if it lands just on a joint", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+
+  a.paths.curve = new a.Path()
+    .move(new a.Point(20.979322245694167, -219.8547313525503))
+    ._curve(
+      new a.Point(35.33122482627704, -153.54225517257478),
+      new a.Point(61.99376179214562, -105.99242252587702)
+    )
+    .curve(
+      new a.Point(88.85254026593002, -58.092613773317105),
+      new a.Point(136.13264764576948, -11.692646171119936),
+      new a.Point(170.69593749999996, -4.180844669736632e-14)
+    )
+  a.points.test = a.paths.curve.shiftAlong(121.36690836797631)
+  expect(a.points.test).to.be.instanceOf(a.Point)
+  console.log({test: a.points.test})
+})

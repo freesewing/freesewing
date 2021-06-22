@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.17.0 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
+
 ## 2.15.2 (2021-04-28)
 
 ### Fixed
