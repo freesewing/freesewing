@@ -1,9 +1,9 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Brustzugabe
   description: Controls the amount of ease at the fullest part of your chest
 waistEase:
-  title: Waist ease
+  title: Taillenzugabe
   description: Controls the amount of ease at your waist
 bustSpanEase:
   title: Bust span ease
@@ -21,8 +21,8 @@ bustDartCurve:
   title: Bust dart curve
   description: Controls the curvature of the bust dart
 armholeDepth:
-  title: Armhole depth
-  description: Controls the depth of the armhole
+  title: Armlochtiefe
+  description: Steuert die Tiefe des Armloches
 backArmholeSlant:
   title: Back armhole slant
   description: Slightly rotates the armhole around its pitch point
@@ -42,7 +42,7 @@ backHemSlope:
   title: Back hem slope
   description: Controls the slope of the hem at the back
 frontShoulderWidth:
-  title: Front shoulder width
+  title: Vordere Schulterbreite
   description: Controls the narrowness of the front shoulders relative to the back
 highBustWidth:
   title: High bust width

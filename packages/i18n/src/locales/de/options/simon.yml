@@ -108,7 +108,7 @@ hemStyle:
     baseball: Baseball-Saum
     slashed: Abgerundeter Saum
 roundBack:
-  title: Round back
+  title: Runder Rücken
   description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
   title: Separate Knopflochleiste
@@ -129,5 +129,5 @@ waistEase:
   title: Taillenzugabe
   description: Der Betrag, der an deiner (natürlichen) Taille als Bequemlichkeits-/Bewegslichkeitszugabe zugegeben wird.
 yokeHeight:
-  title: Yoke height
-  description: Controls the height of the yoke
+  title: Passenhöhe
+  description: Steuert die Höhe der Passe
