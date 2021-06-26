@@ -33,6 +33,7 @@ import albert from './albert.yml'
 import hortensia from './hortensia.yml'
 import cornelius from './cornelius.yml'
 import charlie from './charlie.yml'
+import ursula from './ursula.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -72,6 +73,7 @@ let patterns = {
   hortensia,
   cornelius,
   charlie,
+  ursula,
 }
 
 let options = {}

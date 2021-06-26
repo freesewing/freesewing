@@ -33,6 +33,7 @@ const teagan = require('@freesewing/teagan').config
 const theo = require('@freesewing/theo').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
+const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
 
@@ -70,6 +71,7 @@ const patterns = {
   theo,
   titan,
   trayvon,
+  ursula,
   wahid,
   waralee,
 }

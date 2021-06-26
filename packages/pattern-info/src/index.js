@@ -39,6 +39,7 @@ export const list = [
   'teagan',
   'theo',
   'titan',
+  'ursula',
   'trayvon',
   'wahid',
   'waralee',
@@ -72,6 +73,7 @@ export const withoutBreasts = [
   'theo',
   'titan',
   'trayvon',
+  'ursula',
   'wahid',
   'waralee',
 ]

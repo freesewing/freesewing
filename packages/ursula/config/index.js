@@ -7,7 +7,7 @@ export default {
   version,
   design: 'natalia',
   code: 'natalia',
-  department: 'womenswear',
+  department: 'underwear',
   type: 'pattern',
   difficulty: 1,
   tags: [
