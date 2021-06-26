@@ -1,5 +1,5 @@
 2.17.0:
-  date: Unreleased
+  date: 2021-06-26
 
   Added:
     bent: &s3optsAdded
@@ -19,6 +19,8 @@
       - Added the `roundBack` option to replace the `yokeDart` option
     simone: *s3AndYokeSimon
     sven: *s3optsAdded
+    ursula:
+      - Initial release of Ursula, a basic, highly-customizable underwear pattern
 
   Changed:
     components:

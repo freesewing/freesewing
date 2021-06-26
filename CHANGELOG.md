@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.17.0 (NaN-NaN-NaN)
+## 2.17.0 (2021-06-26)
 
 ### bent
 
@@ -149,6 +149,12 @@
 #### Fixed
 
  - Set department in the config to one of the newly accepted values
+
+### ursula
+
+#### Added
+
+ - Initial release of Ursula, a basic, highly-customizable underwear pattern
 
 
 ## 2.16.2 (2021-05-05)
