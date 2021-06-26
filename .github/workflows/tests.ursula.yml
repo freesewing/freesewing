@@ -1,0 +1,32 @@
+name: Unit tests - Ursula
+
+on: [pull_request]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: cd packages/ursula && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies
+        run: "cd packages/ursula && npm install @freesewing/core@^2.16.2 @freesewing/plugin-bundle@^2.16.2 @freesewing/models@2.16.2 @freesewing/pattern-info@2.16.2 mocha chai"
+        env:
+          CI: true
+      - name: Build pattern
+        run: cd packages/ursula && npm run build
+      - name: Run pattern unit tests
+        run: cd packages/ursula && npm run testci
