@@ -38,6 +38,7 @@
 #### Added
 
  - Added Reddit icon to Icon component
+ - Added Ursula linedrawing to Linedrawings
 
 #### Changed
 
