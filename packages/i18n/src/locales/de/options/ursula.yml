@@ -1,6 +1,6 @@
 ---
 fabricStretch:
-  title: Fabric stretch
+  title: Stoffdehnbarkeit
   description: Adjust this for more or less stretchy fabrics
 gussetWidth:
   title: Gusset width
@@ -15,7 +15,7 @@ rise:
   title: Rise
   description: Controls the height of the waist
 legOpening:
-  title: Leg opening
+  title: Beinöffnung
   description: Controls how high the leg is cut out
 frontDip:
   title: Front waist dip
