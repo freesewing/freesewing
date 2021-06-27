@@ -10,6 +10,7 @@
     carlton: *s3optsAdded
     components:
       - Added Reddit icon to Icon component
+      - Added Ursula linedrawing to Linedrawings
     huey: *s3optsAdded
     simon: &s3AndYokeSimon
       - Added support for configuring the height of the Yoke.
