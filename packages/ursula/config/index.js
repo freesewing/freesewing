@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'ursula',
   version,
-  design: 'natalia',
-  code: 'natalia',
+  design: 'Natalia Sayang',
+  code: 'Natalia Sayang',
   department: 'underwear',
   type: 'pattern',
   difficulty: 1,
