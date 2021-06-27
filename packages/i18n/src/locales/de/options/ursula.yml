@@ -24,11 +24,11 @@ backDip:
   title: Back waist dip
   description: Controls how much the back waist curves (revealing more or less skin)
 taperToGusset:
-  title: Front exposure
-  description: Controls the amount of exposed skin on the front
+  title: Vordere Freilegung
+  description: Steuert die Menge an freigelegter Haut auf der vorderen Seite
 backExposure:
-  title: Back exposure
-  description: Controls the amount of exposed skin on the back
+  title: Hintere Freilegung
+  description: Steuert die Menge an freigelegter Haut auf der hinteren Seite
 
 
 
