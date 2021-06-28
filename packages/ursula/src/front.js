@@ -125,11 +125,18 @@ export default function (part) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
+
   macro('title', {
     at: points.frontMidMid,
     nr: 1,
     title: 'front',
   })
+
+  macro("grainline", {
+    from: points.frontGussetMid,
+    to: points.frontGussetMid.shiftFractionTowards(points.frontWaistBandMid, 0.5),
+  })
+
   // Paperless?
   if (paperless) {
     macro('hd', {
