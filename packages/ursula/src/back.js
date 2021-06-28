@@ -193,6 +193,11 @@ export default function (part) {
       title: 'back',
     })
 
+    macro("grainline", {
+      from: points.backGussetMid,
+      to: points.backGussetMid.shiftFractionTowards(points.backWaistBandMid, 0.4),
+    })
+
     points.scaleboxAnchor = points.scalebox = points.backMidMid.shift(90, -50)
     macro('miniscale', { at: points.scalebox })
 
