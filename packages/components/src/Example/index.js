@@ -38,7 +38,7 @@ const Example = ({
   const [designMode, setDesignMode] = useState(false)
   const [focus, setFocus] = useState(null)
 
-  if (caption) console.log('Passing the caption prop to @freesewing/components/Legend is deprecated. See: https://github.com/freesewing/freesewing/issues/1043')
+  if (caption) console.log('Passing the caption prop to @freesewing/components/Example is deprecated. See: https://github.com/freesewing/freesewing/issues/1043')
 
   const raiseEvent = (type, data) => {
     if (type === 'clearFocusAll') return setFocus(null)
