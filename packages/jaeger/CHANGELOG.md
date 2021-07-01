@@ -1,7 +1,7 @@
 # Change log for: @freesewing/jaeger
 
 
-## 2.17.0 (2021-06-26)
+## 2.17.0 (2021-07-01)
 
 ### Changed
 

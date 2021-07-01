@@ -1,7 +1,7 @@
 # Change log for: @freesewing/sven
 
 
-## 2.17.0 (2021-06-26)
+## 2.17.0 (2021-07-01)
 
 ### Added
 
