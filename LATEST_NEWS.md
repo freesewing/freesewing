@@ -1,15 +1,12 @@
-##### Subscribe to our newsletter (yes, we have one now)
+##### New pattern: The Ursula Undies
 
-We have decided to start a newsletter, so you should subscribe to it.
+Check out the latest addition to our catalog: [the Ursula undies pattern](/designs/ursula/).
 
- - If you have an account on the site, head over to [/account/settings/newsletter](https://freesewing.org/account/settings/newsletter/).  
+It's a basic, highly-customizable underwear pattern. A quick make, and ideal as a stash buster.
 
- - If not, you can still subscribe at [/community/newsletter/](https://freesewing.org/community/newsletter/).
+##### Next contributor call on 10 July
 
-
-##### Next contributor call on 26 June
-
-The next contributor call is on [26 June 2021](https://github.com/freesewing/freesewing/issues/1138).
+The next contributor call is on **10 July 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.

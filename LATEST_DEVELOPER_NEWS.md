@@ -4,9 +4,9 @@ Version 2.16 of FreeSewing brings some important changes for developers.
 Read [our blog post on version 2.16](https://freesewing.org/blog/react-17/) for more info.
 
 
-##### Next contributor call on 26 June
+##### Next contributor call on 10 July
 
-The next contributor call is on [26 June 2021](https://github.com/freesewing/freesewing/issues/1138).
+The next contributor call is on **10 July 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
