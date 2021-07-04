@@ -488,22 +488,28 @@ function configurePatternUnitTests(pkg, config) {
 function reconfigure(pkgs, config) {
   for (let pkg of pkgs) {
     console.log(chalk.blueBright(`Reconfiguring ${pkg}`))
-    let pkgConfig = packageConfig(pkg, config)
-    fs.writeFileSync(
-      path.join(config.repoPath, 'packages', pkg, 'package.json'),
-      JSON.stringify(pkgConfig, null, 2) + '\n'
-    )
+    if (config.exceptions.customPackageJson.indexOf(pkg) === -1) {
+      let pkgConfig = packageConfig(pkg, config)
+      fs.writeFileSync(
+        path.join(config.repoPath, 'packages', pkg, 'package.json'),
+        JSON.stringify(pkgConfig, null, 2) + '\n'
+      )
+    }
     if (config.exceptions.customRollup.indexOf(pkg) === -1) {
       fs.writeFileSync(
         path.join(config.repoPath, 'packages', pkg, 'rollup.config.js'),
         config.templates.rollup
       )
     }
-    fs.writeFileSync(path.join(config.repoPath, 'packages', pkg, 'README.md'), readme(pkg, config))
-    fs.writeFileSync(
-      path.join(config.repoPath, 'packages', pkg, 'CHANGELOG.md'),
-      changelog(pkg, config)
-    )
+    if (config.exceptions.customReadme.indexOf(pkg) === -1) {
+      fs.writeFileSync(path.join(config.repoPath, 'packages', pkg, 'README.md'), readme(pkg, config))
+    }
+    if (config.exceptions.customChangelog.indexOf(pkg) === -1) {
+      fs.writeFileSync(
+        path.join(config.repoPath, 'packages', pkg, 'CHANGELOG.md'),
+        changelog(pkg, config)
+      )
+    }
     if (packageType(pkg, config) === 'pattern') {
       configurePatternExample(pkg, config)
       configurePatternUnitTests(pkg, config)

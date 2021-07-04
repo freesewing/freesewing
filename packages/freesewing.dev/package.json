@@ -1,0 +1,31 @@
+{
+  "name": "with-tailwindcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/runtime": "^1.6.22",
+    "@tailwindcss/typography": "^0.4.1",
+    "daisyui": "^1.6.1",
+    "dotenv": "^10.0.0",
+    "gray-matter": "^4.0.3",
+    "lodash.set": "^4.3.2",
+    "lodash.sortby": "^4.7.0",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "recursive-readdir": "^2.2.2",
+    "remove-markdown": "^0.3.0",
+    "theme-change": "^2.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}

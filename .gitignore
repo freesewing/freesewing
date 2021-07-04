@@ -63,6 +63,9 @@ node_modules
 dist
 build
 
+#next
+.next
+
 # yarn
 .yarn
 .yarnrc

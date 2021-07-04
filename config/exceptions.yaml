@@ -2,15 +2,28 @@ noNamespace:
   - create-freesewing-pattern
   - remark-jargon
   - gatsby-remark-jargon
+  - freesewing.dev
+  - shared
+customChangelog:
+  - freesewing.dev
+  - shared
+customPackageJson:
+  - freesewing.dev
+  - shared
+customReadme:
+  - freesewing.dev
+  - shared
 customRollup:
   - components
   - core
   - css-theme
   - gatsby-remark-jargon
   - i18n
+  - freesewing.dev
   - remark-jargon
   - utils
   - prettier-config
+  - shared
 namedExports:
   - css-theme
   - models
