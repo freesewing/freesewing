@@ -8,13 +8,14 @@ const Highlight = ({ tag='code', className='', children=null }) => {
     return children
 
   const lang = (className === '') ? 'js' : className.split('-').pop()
+  const file = Prism.languages[lang] ? Prism.languages[lang] : Prism.languages.markup
 
   return (
-    <pre lassName="mb-12">
+    <pre>
       <code
         className={`${className} static`}
         dangerouslySetInnerHTML={{
-          __html: Prism.highlight(children, Prism.languages[lang], lang),
+          __html: Prism.highlight(children, file, lang),
         }}
       />
       <div className={`absolute block px-4 py-1 mt-5 text-neutral-content uppercase font-bold text-base rounded-b-lg bg-neutral`}>
