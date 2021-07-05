@@ -17,6 +17,7 @@
     "lodash.set": "^4.3.2",
     "lodash.sortby": "^4.7.0",
     "next": "latest",
+    "prism": "^4.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "recursive-readdir": "^2.2.2",

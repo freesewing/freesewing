@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import 'shared/css/style.css'
+import 'shared/css/prism.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

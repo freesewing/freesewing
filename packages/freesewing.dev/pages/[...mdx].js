@@ -1,14 +1,13 @@
-//import { MDXProvider } from "@mdx-js/react";
-import MDX from "@mdx-js/runtime";
 import { getMdxStaticProps, getMdxPaths } from 'shared/utils/mdx'
 import AppWrapper from 'shared/components/wrappers/app'
+import MdxWrapper from 'shared/components/wrappers/mdx'
 import config from '../freesewing.config'
 
 const Post = (props) => {
   return (
     <AppWrapper {...props}>
       <article className="mdx prose lg:prose-xl">
-        <MDX>{props.mdx}</MDX>
+        <MdxWrapper>{props.mdx}</MdxWrapper>
       </article>
     </AppWrapper>
   );
