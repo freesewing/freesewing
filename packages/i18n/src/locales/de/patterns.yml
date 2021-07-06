@@ -45,13 +45,13 @@ florent:
   description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
   title: Florent, die Schiebermütze
 florence:
-  description: 'Florence is a face mask.'
+  description: 'Florence ist ein Mundschutz.'
   title: Florence, der Mundschutz
 holmes:
-  description: 'For Sherlock Holmes cosplay or just a cute hat.'
+  description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut.'
   title: Holmes Deerstalker-Hut
 hortensia:
-  description: 'Hortensia is a handbag.'
+  description: 'Hortensia ist eine Handtasche.'
   title: Hortensia, die Handtasche
 huey:
   description: Huey ist ein Hoodie mit Reißverschluss und optionalen Taschen auf der Vorderseite.
@@ -63,16 +63,16 @@ jaeger:
   description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Jaeger, das Sakko
 paco:
-  description: Paco are casual yet stylish summer pants.
+  description: Paco ist eine lässige, aber stilvolle Sommerhose.
   title: Paco, die Hose
 penelope:
   description: Penelope ist ein Bleistiftrock mit oder ohne Gehschlitz in rückwärtigen Teil.
   title: Penelope, der Bleistiftrock
 sandy:
-  description: Sandy is an adaptable circle skirt pattern.
+  description: Sandy ist ein anpassungsfähiges Tellerrockschnittmuster.
   title: Sandy, der Tellerrock
 shin:
-  description: Shin are athletic swim trunks.
+  description: Shin ist eine sportliche Badehose.
   title: Shin, die Badehose
 simon:
   description: Simon ist ein sehr anpassbares Hemdenschnittmuster für Personen ohne Brüste.
@@ -87,23 +87,23 @@ tamiko:
   description: Tamiko ist ein Zero-Waste Top.
   title: Tamiko, das Top
 teagan:
-  description: Teagan is a fitted T-shirt pattern.
+  description: Teagan ist ein Schnittmuster für ein passgenaues T-Shirt.
   title: Teagan, das T-Shirt
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Theo, die Hose
 titan:
-  description: Titan is a dartless unisex trouser block.
+  description: Titan ist ein Unisex-Grundschnitt für Hosen ohne Abnäher.
   title: Titan, ein Hosen-Grundschnitt
 trayvon:
   description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
   title: Trayvon, die Krawatte
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern.
+  description: Ursula ist ein elementares, stark anpassbares Schnittmuster für Unterwäsche.
   title: Ursula, die Unterwäsche
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
   title: Wahid, die Weste
 waralee:
-  description: Waralee are wrap pants.
+  description: Waralee ist eine Wickelhose.
   title: Waralee, die Wickelhose
