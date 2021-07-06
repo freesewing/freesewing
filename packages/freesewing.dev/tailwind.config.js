@@ -11,11 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: require('daisyui/colors'),
+      zIndex: {
+        '-10': '-10',
+      }
     },
   },
   variants: {
     extend: {
-       borderColor: ['active'],
+      borderColor: ['active'],
     },
   },
   plugins: [

@@ -27,7 +27,7 @@ const Breadcrumbs = ({crumbs=false, pages, href, home=defaultHome, title=false})
         <>
           <li key={`${crumb.href}-link`} className="inline">
             <Link href={crumb.href}>
-              <a className="font-semibold text-info">
+              <a className="font-semibold text-secondary hover:text-secondary-focus">
                 {crumb.title}
               </a>
             </Link>

@@ -1,0 +1,19 @@
+{
+  "name": "@freesewing/shared",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@freesewing/components": "^2.17.0",
+    "@freesewing/examples": "^2.17.0",
+    "@freesewing/i18n": "^2.17.0",
+    "@freesewing/pattern-info": "^2.17.0",
+    "@freesewing/rendertest": "^2.17.0",
+    "@freesewing/tutorial": "^2.17.0"
+  },
+  "devDependencies": {}
+}

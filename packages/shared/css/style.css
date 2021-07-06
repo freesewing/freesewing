@@ -2,43 +2,13 @@
  * We use TailwindCSS
  *
  * Try to style everything with utility classes.
- * When that doesn't work, here's an escape hatch.
+ * When that doesn't work, this is an escape hatch.
  */
 
-/* Force the links in MDX content to be styled as we like */
-article.mdx a {
-  text-decoration: none;
+div.popout-content > * {
+  margin-top: 0;
 }
-article.mdx a:hover {
-  text-decoration: underline;
-}
-
-/* Light theme overrides */
-html[data-theme="light"] article.mdx a {
-  color: #7C3AED;
-}
-
-/* Dark theme overrides */
-html[data-theme="dark"] article.mdx a {
-  color: #A78BFA;
-}
-
-/* Bureaucrats theme overrides */
-html[data-theme="bureaucrats"] article.mdx a {
-  color: #3b83f6;
-  text-decoration: underline;
-}
-
-/* Kindergarten theme overrides */
-html[data-theme="kindergarten"] article.mdx a {
-  color: #16a34a;
-  font-weight: bold;
-}
-
-/* Hax0r theme overrides */
-html[data-theme="hax0r"] article.mdx a {
-  color: #83cc16;
-  text-decoration: underline;
-  font-weight: bold;
+div.popout-content :last-child {
+  margin-bottom: 0;
 }
 

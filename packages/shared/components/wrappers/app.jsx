@@ -13,11 +13,11 @@ const AppWrapper= props => {
   }, []);
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col min-h-screen'>
       {!props.noNavbar && <Navbar />}
       {props.noLayout
         ? props.children
-        : <Layout {...props}>{props.children}</Layout>
+        : <div className="flex-grow"><Layout {...props}>{props.children}</Layout></div>
       }
       {!props.noFooter && <Footer />}
     </div>

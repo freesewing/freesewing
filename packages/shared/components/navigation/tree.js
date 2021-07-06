@@ -66,9 +66,9 @@ const isActive = (leaf, href=false) => {
   return false
 }
 
-const sharedClasses = "hover:bg-base-200 px-1 py-0.5 block border-l-4 border-transparent hover:border-info w-full"
+const sharedClasses = "hover:bg-base-200 px-1 py-0.5 block border-l-4 border-transparent hover:border-secondary w-full"
 const smallestClasses = `${sharedClasses} text-sm`
-const activeClasses = "border-info"
+const activeClasses = "border-secondary"
 const classes = [
   null,
   `px-1 py-0.5 text-xl font-semibold w-full block`,
@@ -91,7 +91,7 @@ const Level1Row = props => (
     <div className="flex flex-row gap-2">
       <div className="flex-grow">
         <Link href={props.sub.href}>
-          <a className={`${classes[props.level]} ${(isActive(props.sub, props.href) || props.active === props.sub.href) ? 'opacity-100' : 'opacity-70'}`}>
+          <a className={`${classes[props.level]} ${(isActive(props.sub, props.href) || props.active === props.sub.href) ? 'opacity-100' : 'opacity-70 hover:opacity-100'}`}>
             {props.sub.title}
           </a>
         </Link>
