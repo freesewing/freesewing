@@ -109,7 +109,7 @@ hemStyle:
     slashed: Abgerundeter Saum
 roundBack:
   title: Runder Rücken
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  description: Damit die Passform für einen runde(re)n Rücken besser ist, fügt diese Option etwas Länge in der hinteren Mitte (an der Passe) hinzu, die sich zu den Seiten hin verjüngt.
 seperateButtonholePlacket:
   title: Separate Knopflochleiste
   description: Eine separate Knopflochleiste entwerfen.
