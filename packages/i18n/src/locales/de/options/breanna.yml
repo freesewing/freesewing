@@ -18,24 +18,24 @@ waistDartLength:
   title: Länge des Taillenabnähers
   description: Die Länge des Abnähers an der Taille
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  title: Vertikale Zugabe
+  description: Die Menge an Zugabe, die über die Länge des Kleidungsstückes verteilt wird
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  title: Taillenzugabe
+  description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Taille
 primaryBustDart:
-  title: Bust dart
+  title: Brustabnäher
   description: Where to place the bust dart to shape the chest
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Länge des Brustabnähers
+  description: Die Länge des Abnähers an der Brust
 secondaryBustDart:
-  title: Secondary bust dart
+  title: Sekundärer Brustabnäher
   description: Optionally include a secondary bust dart to distribute the shaping of the chest
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Länge des sekundären Brustabnähers
+  description: Die Länge des sekundären Abnähers an der Brust
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Formgebung der Brustabnäher
+  description: Steuert die Balance zwischen den sekundären und den Hauptbrustabnähern
 
