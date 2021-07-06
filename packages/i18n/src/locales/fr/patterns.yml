@@ -45,13 +45,13 @@ florent:
   description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
   title: Casquette plate Florent
 florence:
-  description: 'Florence est un masque facial'
+  description: 'Florence is a face mask.'
   title: Masque Florence
 holmes:
-  description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau'
+  description: 'For Sherlock Holmes cosplay or just a cute hat.'
   title: Casquette de détective Holmes
 hortensia:
-  description: 'Hortensia est un sac à main'
+  description: 'Hortensia is a handbag.'
   title: Sac à main Hortensia
 huey:
   description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
@@ -63,16 +63,16 @@ jaeger:
   description: Jaeger est une veste de style sport avec deux boutons et des poches plaquées.
   title: Veste Jaeger
 paco:
-  description: Paco est un pantalon d'été décontracté mais élégant
+  description: Paco are casual yet stylish summer pants.
   title: Pantalon Paco
 penelope:
   description: Penelope est une jupe crayon avec ou sans fente dans le dos.
   title: Jupe crayon Penelope
 sandy:
-  description: Sandy est un patron de jupe cercle adaptable
+  description: Sandy is an adaptable circle skirt pattern.
   title: Jupe cercle Sandy
 shin:
-  description: Shin are athletic swim trunks
+  description: Shin are athletic swim trunks.
   title: Boxer de bain Shin
 simon:
   description: Simon is a highly adaptable shirt pattern for people without breasts.
@@ -87,23 +87,23 @@ tamiko:
   description: Tamiko est un top zéro déchet.
   title: Top Tamiko
 teagan:
-  description: Teagan est un T-shirt ajusté
+  description: Teagan is a fitted T-shirt pattern.
   title: T-shirt Teagan
 theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo
 titan:
-  description: Titan est un bloc de pantalon unisexe sans pince
+  description: Titan is a dartless unisex trouser block.
   title: Bloc de pantalon Titan
 trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern
+  description: Ursula is a basic, highly-customizable underwear pattern.
   title: Ursula undies
 wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
 waralee:
-  description: Waralee est un pantalon portefeuille (thaï)
+  description: Waralee are wrap pants.
   title: Pantalon portefeuille Waralee
