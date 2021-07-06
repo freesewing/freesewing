@@ -61,7 +61,6 @@ export const getPageList = (paths, folder='dev', language='en', preHook=false, p
         list[up].offspring.push(path)
         list[path].up = up
       }
-      else console.log('WARNING: No parent page found for', path, up)
     }
   }
 
