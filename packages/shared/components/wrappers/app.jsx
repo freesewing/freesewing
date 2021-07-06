@@ -17,7 +17,7 @@ const AppWrapper= props => {
       {!props.noNavbar && <Navbar />}
       {props.noLayout
         ? props.children
-        : <div className="flex-grow"><Layout {...props}>{props.children}</Layout></div>
+        : <div className="flex-auto mt-24"><Layout {...props}>{props.children}</Layout></div>
       }
       {!props.noFooter && <Footer />}
     </div>

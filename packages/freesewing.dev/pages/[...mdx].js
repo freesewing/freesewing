@@ -6,7 +6,7 @@ import config from '../freesewing.config'
 const Post = (props) => {
   return (
     <AppWrapper {...props}>
-      <article className="mdx prose lg:prose-xl">
+      <article className="mdx prose lg:prose-lg mb-12">
         <MdxWrapper>{props.mdx}</MdxWrapper>
       </article>
     </AppWrapper>

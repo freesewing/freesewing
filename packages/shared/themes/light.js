@@ -41,15 +41,15 @@ module.exports = {
   'base-100': colors.trueGray['100'],
   // base-200: A slightly different background color, used for hovers and so on
   'base-200': colors.trueGray['200'],
-  // base-300: Another slightly different background color, used for another level of distinction
-  'base-300': '#f3e7f5',
+  // base-300: A shade midway between dark and light
+  'base-300': colors.trueGray['400'],
   // base-content: The default text color
   'base-content': colors.trueGray['700'],
 
   // primary: The main brand color and color of the primary button
-  'primary': colors.violet['800'],
+  'primary': colors.violet['700'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.violet['700'],
+  'primary-focus': colors.violet['600'],
   // primary-content: The text color for the primary button
   'primary-content': colors.violet['100'],
 
@@ -71,13 +71,14 @@ module.exports = {
   // neutral: Used as the background for code blocks.
   // Should always be dark(ish) because of prism syntax highlighting
   'neutral': colors.trueGray['800'],
-  // FIXME
+  // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.trueGray['700'],
-  // FIXME
+  // neutral-content: The text color on neutral backgrounds
   'neutral-content': colors.trueGray['200'],
 
-  // FIXME
-  'info': colors.violet['600'],
+  // info: Used rarely, can be another color best somewhat neutral looking
+  // and should work with the default text color
+  'info': colors.amber['300'],
   // success: Used rarely, but if it is it's in notifications indicating success
   // Typically some shade of green
   'success': colors.green['500'],
@@ -87,7 +88,7 @@ module.exports = {
   // error: Used rarely, but if it is it's in notifications indicating success
   // or the danger button
   // Typically some shade of red
-  'error': colors.red['500'],
+  'error': colors.red['600'],
 
   /* VARIOUS
    *

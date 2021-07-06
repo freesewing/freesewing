@@ -3,7 +3,7 @@ import { themes } from './config'
 
 const ThemeChooser = props => (
   <div className="dropdown dropdown-end">
-    <div tabIndex="0" className="m-1 btn btn-ghost">
+    <div tabIndex="0" className="btn btn-ghost">
       <Icon icon='colors' size={32}/>
       <span className='px-2'>Theme</span>
     </div>

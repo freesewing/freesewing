@@ -16,16 +16,15 @@ const Sample = ({color}) => (color.slice(0,1) === '#')
 
 const Page = props => (
   <AppWrapper {...props} title='Theme overview' noCrumbs>
-    <div className="prose lg:prose-xl">
+    <div className="prose lg:prose-lg">
       <h2>Elements</h2>
       <h3>Buttons</h3>
       <div className="flex flex-row flex-wrap gap-2">
-        <Button>Unstyled button</Button>
         <Button primary>Primary button</Button>
         <Button secondary>Secondary button</Button>
-        <Button accent>Accent button</Button>
         <Button danger>Danger button</Button>
         <Button link>Link button</Button>
+        <Button>Unstyled button</Button>
       </div>
       <h3>Components</h3>
       <h4>Note</h4>
@@ -60,7 +59,7 @@ const Page = props => (
       <h3>Dropdown</h3>
     </div>
     <ThemeChooser />
-    <div className="prose lg:prose-xl mt-8">
+    <div className="prose lg:prose-lg mt-8">
       <h2>Themes</h2>
       <table>
         <tbody>

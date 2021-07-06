@@ -135,7 +135,7 @@ const SiteBranch = props => {
   }
 
   return  (
-    <ul className="">
+    <ul>
       {sortBy(props.leaf.subnav, ['order', 'title']).map(sub => props.level === 1
         ? <Level1Row {...props} sub={sub} />
         : <OtherRow {...props} sub={sub} />

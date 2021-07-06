@@ -15,21 +15,21 @@ module.exports = {
   'accent-focus': colors.yellow['400'],
   'accent-content': gray['900'],
 
-  'neutral': colors.blue['100'],
-  'neutral-focus': gray['200'],
-  'neutral-content': gray['700'],
+  'neutral': colors.blue['900'],
+  'neutral-focus': colors.blue['800'],
+  'neutral-content': colors.blue['100'],
 
   'base-100': '#ffffff',
   'base-200': gray['200'],
-  'base-300': gray['200'],
+  'base-300': gray['400'],
   'base-content': gray['700'],
 
-  'info': colors.gray['500'],
+  'info': colors.blue['400'],
   'success': colors.green['600'],
-  'warning': colors.amber['600'],
+  'warning': colors.amber['500'],
   'error': colors.red['600'],
 
-  '--rounded-box': '5px',
-  '--rounded-btn': '5px',
+  '--rounded-box': '2px',
+  '--rounded-btn': '2px',
 }
 

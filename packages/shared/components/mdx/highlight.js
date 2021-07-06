@@ -13,19 +13,21 @@ const Highlight = ({ tag='code', className='', children=null, noLabel=false, pre
   const file = Prism.languages[language] ? Prism.languages[language] : Prism.languages.markup
 
   return (
-    <pre className={`${preClasses} static`}>
-      <code
-        className={className}
-        dangerouslySetInnerHTML={{
-          __html: Prism.highlight(children, file, language),
-        }}
-      />
+    <div className="relative">
       {!noLabel && !dense && (
-        <div className={`absolute block px-4 py-0.5 pt-3 lg:pt-5 text-neutral uppercase font-bold text-base rounded-b-lg bg-warning -z-10`}>
+        <div className={`absolute left-4 -top-6 block px-4 py-1 text-xs uppercase font-bold text-base-content rounded-t-lg bg-info`}>
           {language}
         </div>
       )}
-    </pre>
+      <pre className={preClasses}>
+        <code
+          className={className + 'bg-accent'}
+          dangerouslySetInnerHTML={{
+            __html: Prism.highlight(children, file, language),
+          }}
+        />
+      </pre>
+    </div>
   )
 }
 

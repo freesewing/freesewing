@@ -5,10 +5,10 @@ module.exports = {
   'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
   'primary': colors.lime['600'],
   'primary-focus': colors.lime['700'],
-  'primary-content': '#fff',
+  'primary-content': colors.lime['100'],
 
   'secondary': colors.lime['600'],
-  'secondary-focus': gray['900'],
+  'secondary-focus': colors.lime['500'],
   'secondary-content': colors.lime['100'],
 
   'accent': colors.yellow['400'],
@@ -24,10 +24,10 @@ module.exports = {
   'base-300': colors.lime['900'],
   'base-content': colors.lime['500'],
 
-  'info': colors.lime['300'],
+  'info': colors.lime['700'],
   'success': colors.green['600'],
-  'warning': colors.amber['600'],
-  'error': colors.red['600'],
+  'warning': colors.amber['400'],
+  'error': colors.red['400'],
 
   '--rounded-btn': '0',
 }
