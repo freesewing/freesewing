@@ -12,7 +12,10 @@ The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
 
 
-##### New bartack plugin
+##### Summertime: Things are a bit slower
 
-We have [a new plugin to add bartacks to your pattern](https://freesewing.dev/reference/plugins/bartack/).
+Things are [a bit slower during the summertime](https://github.com/freesewing/freesewing/discussions/1139) but
+on the plus side, we're looking into playing DnD together. 
+
+Join [discord.freesewing.org](https://discord.freesewing.org/) for more info.
 
