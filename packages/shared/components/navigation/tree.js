@@ -30,7 +30,7 @@ const anchorLeaf = (leaf, path, tree) => {
   return tree
 }
 
-const getSiteTree = pages => {
+export const getSiteTree = pages => {
 
   // Get children per page
   const leaves = {}

@@ -22,4 +22,6 @@ also won't watch for changes there.
 So, we use the experimental feature flag to load files from outside the app root.
 See: https://github.com/vercel/next.js/pull/22867
 
+## ToDo
 
+ - Remove Hashtag components & docs

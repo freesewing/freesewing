@@ -3,7 +3,6 @@ import MDX from "@mdx-js/runtime";
 import YouTube from "../mdx/youtube"
 import Highlight from "../mdx/highlight"
 import Popout from '../popout'
-import ReadMore from '../mdx/readmore'
 import Tree from '../navigation/tree'
 
 const components = {

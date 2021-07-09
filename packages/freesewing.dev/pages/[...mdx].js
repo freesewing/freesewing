@@ -2,12 +2,13 @@ import { getMdxStaticProps, getMdxPaths } from 'shared/utils/mdx'
 import AppWrapper from 'shared/components/wrappers/app'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import config from '../freesewing.config'
-
+import PrevNext from 'shared/components/mdx/prevnext'
 const MdxPage = (props) => {
   return (
     <AppWrapper {...props}>
       <article className="mdx prose lg:prose-lg mb-12">
         <MdxWrapper pages={props.pages} href={props.href}>{props.mdx}</MdxWrapper>
+        <PrevNext pages={props.pages} href={props.href} />
       </article>
     </AppWrapper>
   );
