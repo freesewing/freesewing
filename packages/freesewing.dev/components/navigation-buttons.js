@@ -7,11 +7,14 @@ const ExtraNavs = props => {
     theme: <ThemeChooser block={props.menu} />,
     search: (
       <button
-        className={`btn btn-ghost ${props.menu ? 'btn-block my-2' : 'px-8'}`}
+        className={`btn btn-ghost btn-block lg:w-auto`}
         onClick={props.toggleSearch}
       >
         <Icon icon='search' size={props.iconSize}/>
-        <span className='px-2'>Search for answers</span> [Ctrl-k]
+        <span className='px-2'>
+          Search
+          <span className="hidden lg:inline"> for answers [Ctrl-k]</span>
+        </span>
       </button>
     ),
     discord: (
@@ -20,7 +23,11 @@ const ExtraNavs = props => {
         title="Or ask on Discord" href="https://discord.freesewing.org/"
       >
         <Icon icon='discord' size={props.iconSize}/>
-        <span className='px-2'>Or ask on Discord</span>
+        <span className='px-2'>
+          <span className="hidden lg:inline">Or ask </span>
+          <span className="inline lg:hidden">Chat </span>
+          on Discord
+        </span>
       </a>
     ),
     github: (
@@ -40,6 +47,7 @@ const ExtraNavs = props => {
         title="Open menu"
         onClick={props.toggleMenu}
       >
+        {!props.menu && <Icon icon='menu' size={props.iconSize}/>}
         <span className='px-2'>{props.menu && 'Close '} Menu</span>
       </button>
     ),
@@ -49,15 +57,16 @@ const ExtraNavs = props => {
   return props.menu
     ? props.navbar
       ? navs.menu
-      : [navs.theme, navs.search, navs.discord, navs.github]
+      : [navs.theme, navs.discord, navs.github]
     : (
       <>
         <div className="lg:block hidden">
           {navs.search}
           {navs.discord}
         </div>
-        <div className="lg:hidden flex flex-row flex-grow justify-around">
-          {navs.menu}
+        <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300">
+          <div className="w-1/2 px-1">{navs.search}</div>
+          <div className="w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>
           {navs.theme}

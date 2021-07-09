@@ -107,42 +107,59 @@ const SearchBox = props => {
   const { currentRefinement, isSearchStalled, refine, setSearch, setActive } = props
 
   return (
-    <form noValidate action="" role="search" onSubmit={(evt) => evt.preventDefault()}>
-      <div className="form-control">
-        <label className="label hidden lg:block">
-          <span className="label-text">
-            <b> Escape</b> to exit
-            <span className="px-4">|</span>
-            <b> Up</b> or <b>Down</b> to select
-            <span className="px-4">|</span>
-            <b> Enter</b> to navigate
-            <span className="px-4">|</span>
-            <b> Ctrl+c</b> to clear
-          </span>
-        </label>
-        <div className="relative">
-          <input
-            ref={input}
-            type="search"
-            autoFocus={true}
-            value={currentRefinement}
-            onChange={event => refine(event.currentTarget.value)}
-            onKeyDown={(evt) => handleInputKeydown(evt, setSearch, setActive, props.active, router)}
-            className="input input-lg input-borderd input-primary w-full pr-16"
-            placeholder='Type to search'
-          />
+    <>
+      <form noValidate action="" role="search" onSubmit={(evt) => evt.preventDefault()}>
+        <div className="form-control">
+          <label className="label hidden lg:block">
+            <span className="label-text">
+              <b> Escape</b> to exit
+              <span className="px-4">|</span>
+              <b> Up</b> or <b>Down</b> to select
+              <span className="px-4">|</span>
+              <b> Enter</b> to navigate
+              <span className="px-4">|</span>
+              <b> Ctrl+c</b> to clear
+            </span>
+          </label>
+          <div className="relative">
+            <input
+              ref={input}
+              type="search"
+              autoFocus={true}
+              value={currentRefinement}
+              onChange={event => refine(event.currentTarget.value)}
+              onKeyDown={(evt) => handleInputKeydown(evt, setSearch, setActive, props.active, router)}
+              className="input input-lg input-borderd input-primary w-full pr-16"
+              placeholder='Type to search'
+            />
+            <button
+              className="absolute right-0 top-0 rounded-l-none btn btn-primary btn-lg"
+              onClick={() => props.setSearch(false)}
+            >X</button>
+          </div>
+        </div>
+        {
+          input.current
+          && input.current.value.length > 0
+          && <CustomHits hitComponent={Hit} {...props} input={input}/>
+        }
+      </form>
+      <div className={`
+        z-20 bg-base-100 border-base-200 w-full mx-auto
+        fixed bottom-0 left-0 border-t-2
+        lg:hidden
+      `}>
+        <div className='px-4 py-2 flex flex-row w-full'>
           <button
-            className="absolute right-0 top-0 rounded-l-none btn btn-primary btn-lg"
+            className={`btn btn-ghost btn-block`}
             onClick={() => props.setSearch(false)}
-          >X</button>
+          >
+            <span className='px-2'>Close Search</span>
+          </button>
         </div>
       </div>
-      {
-        input.current
-        && input.current.value.length > 0
-        && <CustomHits hitComponent={Hit} {...props} input={input}/>
-      }
-    </form>
+
+    </>
   )
 }
 
@@ -164,6 +181,7 @@ const Search = props => {
 
   const stateProps = {
     setSearch: props.setSearch,
+    setMenu: props.setMenu,
     active, setActive
   }
 
