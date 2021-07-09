@@ -10,13 +10,24 @@ const classNames = {
 }
 
 const Button = props => {
-  const { className='' } = props
+  const { extraClasses='' } = props
   let type = 'ghost'
   for (const t in classNames) {
     if (props[t]) type = t
   }
 
-  return <button className={`${classNames[type]} ${className}`} {...props}>{props.children}</button>
+  return (
+    <button
+      className={`
+        ${classNames[type]}
+        ${extraClasses}
+        ${props.block ? ' btn-block' : ''}
+      `}
+      {...props}
+    >
+      {props.children}
+    </button>
+  )
 }
 
 export default Button

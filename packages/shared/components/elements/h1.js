@@ -1,5 +1,11 @@
 const H1 = props => (
-  <h1 className="text-6xl py-4 font-bold" style={{letterSpacing: '-0.2rem'}}>
+  <h1
+    className={`
+      text-4xl py-4 font-bold
+      lg:text-6xl
+    `}
+    style={{letterSpacing: '-0.15rem'}}
+  >
     {props.children}
   </h1>
 )

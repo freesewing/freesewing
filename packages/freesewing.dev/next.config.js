@@ -12,6 +12,8 @@ module.exports = {
     }
     // Alias shared for easy access
     config.resolve.alias.shared = path.resolve(__dirname, '../shared')
+    // Alias dev for easy access from shared
+    config.resolve.alias.site = path.resolve(__dirname)
 
     return config;
   },

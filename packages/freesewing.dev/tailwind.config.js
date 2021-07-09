@@ -1,4 +1,7 @@
-const themes = require('../shared/themes')
+// Handle themes
+const allThemes = require('../shared/themes')
+const themes = {}
+for (const theme in allThemes) themes[theme] = allThemes[theme].config
 
 module.exports = {
   mode: 'jit',

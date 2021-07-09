@@ -1,23 +1,42 @@
-import React, { useEffect } from 'react'
-import useScrolledDown from '../../hooks/useScrolledDown'
+import React, { useState, useEffect } from 'react'
 import {themeChange} from "theme-change"
-import Navbar from '../sections/navbar'
-import Footer from '../sections/footer'
 import Head from 'next/head'
-import Layout from '../layouts/default'
+import { useHotkeys } from 'react-hotkeys-hook'
+import themes from 'shared/themes'
+// Shared components
+import ProgressBar from 'shared/components/progress-bar'
+import Navbar from 'shared/components/sections/navbar'
+import Footer from 'shared/components/sections/footer'
+import Layout from 'shared/components/layouts/default'
 
 /* This component should wrap all page content */
 const AppWrapper= props => {
+
+  // Trigger search with Ctrl+k
+  useHotkeys('ctrl+k', (evt) => {
+    evt.preventDefault()
+    setSearch(true)
+  })
+
+  const [menu, setMenu] = useState(false)
+  const [search, setSearch] = useState(false)
+
   useEffect(() => {
     themeChange(false)
-  }, []);
+  }, [menu])
+
+  const stateProps = {
+    menu, setMenu, toggleMenu: () => setMenu(!menu),
+    search, setSearch, toggleSearch: () => setSearch(!search),
+  }
 
   return (
     <div className='flex flex-col min-h-screen'>
-      {!props.noNavbar && <Navbar />}
+      <ProgressBar />
+      {!props.noNavbar && <Navbar {...stateProps}/>}
       {props.noLayout
         ? props.children
-        : <div className="flex-auto mt-24"><Layout {...props}>{props.children}</Layout></div>
+        : <Layout {...props} {...stateProps}>{props.children}</Layout>
       }
       {!props.noFooter && <Footer />}
     </div>

@@ -1,24 +1,52 @@
-//import BreadCrumbs from '../breadcrumbs'
 //import PrevNext from '../prev-next'
 //import EditIcon from '@material-ui/icons/Edit'
-//import IconButton from '@material-ui/core/IconButton'
-//import './default.scss'
-import Navigation from '../navigation/tree'
-import Breadcrumbs from '../navigation/breadcrumbs'
-import H1 from '../elements/h1'
+// Shared components
+import Navigation from 'shared/components/navigation/tree'
+import Breadcrumbs from 'shared/components/navigation/breadcrumbs'
+import H1 from 'shared/components/elements/h1'
+import Icon from 'shared/components/icon'
+import ThemeChooser from 'shared/components/theme-chooser'
+import Button from 'shared/components/elements/button'
+// Site components
+import NavigationButtons from 'site/components/navigation-buttons'
+import Search from 'site/components/search'
+
+const iconSize= 32
 
 const DefaultLayout = props => (
-  <div className="flex flex-row lg:max-w-screen-xl w-full mx-auto gap-12 lg:flex-nowrap sm:flex-wrap">
-    <main className="w-2/3 px-8 md:px-4 sm:px-4">
+  <div className={`
+  flex flex-row flex-nowrap justify-center
+  mt-4 max-w-screen-xl w-full mx-auto min-h-screen
+  lg:mt-0 lg:gap-12
+  ${props.menu ? 'mt-24': ''}
+  `}>
+    <main className={`
+      ${props.menu ? 'hidden' : 'block'}
+      px-4 pb-12 max-w-full mx-auto lg:w-2/3 lg:px-8
+    `}>
       {!props.noCrumbs && <Breadcrumbs pages={props.pages} href={props.href}/>}
       <H1>{props.title || props.pages[props.href.slice(1)].frontmatter.title}</H1>
       {props.children}
     </main>
-    <aside className="w-1/3 relative">
-      <div className="sticky top-24">
-        <Navigation pages={props.pages} href={props.href}/>
+    <aside className={`
+      ${props.menu ? 'block' : 'hidden'}
+      w-full max-w-prose mx-auto px-4
+      lg:w-1/3 lg:block`
+    }>
+      <div className="lg:sticky lg:top-24">
+        <Navigation {...props} />
+        {props.menu && (
+          <div className="mt-4 mb-32">
+            <NavigationButtons {...props} />
+          </div>
+        )}
       </div>
     </aside>
+    {props.search && (
+      <div className={`fixed w-full min-h-screen bg-base-200 px-4 py-24 top-0 z-20`}>
+        <Search {...props}/>
+      </div>
+    )}
   </div>
 )
 

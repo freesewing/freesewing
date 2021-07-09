@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Icon from '../icon'
+import Icon from 'shared/components/icon'
 
 const getCrumbs = (pages, href) => {
   if (typeof pages[href.slice(1)] === 'undefined') return []

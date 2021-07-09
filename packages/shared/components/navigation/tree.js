@@ -2,7 +2,7 @@ import { useState } from 'react'
 import set from 'lodash.set'
 import sortBy from 'lodash.sortby'
 import Link from 'next/link'
-import Icon from '../icon'
+import Icon from 'shared/components/icon'
 
 const getChildren = (path, pages, subnav={}) => {
   if (pages[path].offspring.length > 0) {
@@ -11,7 +11,7 @@ const getChildren = (path, pages, subnav={}) => {
     }
   }
 
-  return (Object.keys(subnav).length > 0)
+  return (Object.keys(subnav).length > -1)
     ? subnav
     : false
 }
@@ -113,7 +113,13 @@ const Level1Row = props => (
 const OtherRow = props => (
   <li key={props.sub.href}>
     <Link href={props.sub.href}>
-      <a className={`${classes[props.level]} ${isActive(props.sub, props.href) ? activeClasses : ''}`}>
+      <a
+        className={`
+          ${classes[props.level]}
+          ${isActive(props.sub, props.href) ? activeClasses : ''}
+        `}
+        onClick={() => props.setMenu(false)}
+      >
         {props.sub.title}
       </a>
     </Link>
@@ -122,6 +128,10 @@ const OtherRow = props => (
     )}
   </li>
 )
+
+const activeBranch = (active, href) => ('/' + href.split('/')[1] === active)
+  ? true
+  : false
 
 const SiteBranch = props => {
   const on = onPath(props.leaf, props.href, props.tree)
@@ -134,12 +144,13 @@ const SiteBranch = props => {
     if (props.active && props.level === 2 && props.active !== props.leaf.href) return null
   }
 
-  return  (
+  return (
     <ul>
-      {sortBy(props.leaf.subnav, ['order', 'title']).map(sub => props.level === 1
-        ? <Level1Row {...props} sub={sub} />
-        : <OtherRow {...props} sub={sub} />
-      )}
+      {sortBy(props.leaf.subnav, ['order', 'title']).map(sub => {
+        if (props.level === 1) return <Level1Row {...props} sub={sub} />
+        else if (props.level === 2 && (props.href || activeBranch(props.active, sub.href))) return <OtherRow {...props} sub={sub} />
+        else if (props.href) return <OtherRow {...props} sub={sub} />
+      })}
     </ul>
   )
 }
@@ -148,11 +159,36 @@ const SiteTree = props => {
 
   const [active, setActive] = useState(null)
 
-  const { pages, href, expanded=false} = props
+  const { pages, href=false, expanded=false} = props
   if (!pages) return null
   const tree = getSiteTree(pages)
+  const list = <SiteBranch
+    leaf={{subnav: tree}}
+    tree={tree}
+    href={href}
+    expanded={expanded}
+    level={1}
+    active={active}
+    setActive={setActive}
+    menu={props.menu}
+    setMenu={props.setMenu}
+  />
 
-  return <SiteBranch leaf={{subnav: tree}} tree={tree} href={href} expanded={expanded} level={1} active={active} setActive={setActive}/>
+  if (props.noLogo) return list
+  else return (
+    <>
+      <div className="flex flex-row mb-4 justify-between pr-4">
+        <Link href="/">
+          <a href="/" onClick={() => props.setMenu(false)}>
+          <h3 className="text-2xl font-bold hover:pointer">FreeSewing.dev</h3>
+          </a>
+        </Link>
+        <Icon icon="freesewing" size={36} />
+      </div>
+      {list}
+    </>
+  )
+
 }
 
 
