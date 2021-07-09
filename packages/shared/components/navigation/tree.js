@@ -48,6 +48,14 @@ const getSiteTree = pages => {
   return tree
 }
 
+const getSiteBranch = (tree, href) => {
+  const path = href.slice(1).split('/').join('/subnav/').split('/')
+  let branch = tree
+  for (const fork of path) branch = branch[fork]
+
+  return branch.subnav
+}
+
 const onPath = (leaf, href=false, tree) => {
   if (!href || !leaf.href) return true
   if (href === leaf.href) return true
@@ -66,20 +74,27 @@ const isActive = (leaf, href=false) => {
   return false
 }
 
-const sharedClasses = "hover:bg-base-200 px-1 py-0.5 block border-l-4 border-transparent hover:border-secondary w-full"
-const smallestClasses = `${sharedClasses} text-sm`
+const plainClasses = "px-1 py-0.5"
+const nonPlainClasses = `${plainClasses} hover:bg-base-200 block border-l-4 border-transparent hover:border-secondary w-full`
 const activeClasses = "border-secondary"
-const classes = [
-  null,
-  `px-1 py-0.5 text-xl font-semibold w-full block`,
-  `${sharedClasses} text-lg font-medium pl-3`,
-  `${sharedClasses} text-base pl-6`,
-  `${smallestClasses} text-base pl-9`,
-  `${smallestClasses} text-base pl-12`,
-  `${smallestClasses} text-base pl-15`,
-  `${smallestClasses} text-base pl-18`,
-  `${smallestClasses} text-base pl-21`,
-]
+const classes = (level, plain) => {
+  const base = plain ? plainClasses : nonPlainClasses
+  const classList = [
+    null,
+    `px-1 py-0.5 text-xl font-semibold w-full block`,
+    `${base} text-lg font-medium pl-3`,
+    `${base} text-base pl-6`,
+    `${base} text-sm text-base pl-9`,
+    `${base} text-sm text-base pl-12`,
+    `${base} text-sm text-base pl-16`,
+    `${base} text-sm text-base pl-20`,
+    `${base} text-sm text-base pl-28`,
+    `${base} text-sm text-base pl-28`,
+    `${base} text-sm text-base pl-32`,
+  ]
+
+  return classList[level]
+}
 
 const toggleActive = props => {
   if (!props.active || props.active !== props.sub.href) props.setActive(props.sub.href)
@@ -91,11 +106,11 @@ const Level1Row = props => (
     <div className="flex flex-row gap-2">
       <div className="flex-grow">
         <Link href={props.sub.href}>
-          <a className={`${classes[props.level]} ${(isActive(props.sub, props.href) || props.active === props.sub.href) ? 'opacity-100' : 'opacity-70 hover:opacity-100'}`}>
+          <a className={`${classes(props.level, props.plain)} ${(isActive(props.sub, props.href) || props.active === props.sub.href) ? 'opacity-100' : 'opacity-70 hover:opacity-100'}`}>
             {props.sub.title}
           </a>
         </Link>
-      {((props.active === props.sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
+      {(props.recurse || (props.active === props.sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
         <SiteBranch {...props} leaf={props.sub} level={2} expand={2}/>
       )}
       </div>
@@ -115,7 +130,7 @@ const OtherRow = props => (
     <Link href={props.sub.href}>
       <a
         className={`
-          ${classes[props.level]}
+          ${classes(props.level, props.plain)}
           ${isActive(props.sub, props.href) ? activeClasses : ''}
         `}
         onClick={() => props.setMenu(false)}
@@ -123,7 +138,7 @@ const OtherRow = props => (
         {props.sub.title}
       </a>
     </Link>
-    {((props.level === 1 && props.active === sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
+    {(props.recurse || (props.level === 1 && props.active === sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
       <SiteBranch {...props} leaf={props.sub} level={props.level+1}/>
     )}
   </li>
@@ -134,14 +149,15 @@ const activeBranch = (active, href) => ('/' + href.split('/')[1] === active)
   : false
 
 const SiteBranch = props => {
-  const on = onPath(props.leaf, props.href, props.tree)
-
-  if (!props.leaf.subnav) return null
-  if (!on) {
-    if (props.level > 2) return null
-    if (!props.expanded && props.level !== props.expand) return null
-  } else {
-    if (props.active && props.level === 2 && props.active !== props.leaf.href) return null
+  if (!props.recurse) {
+    const on = onPath(props.leaf, props.href, props.tree)
+    if (!props.leaf.subnav) return null
+    if (!on) {
+      if (props.level > 2) return null
+      if (!props.expanded && props.level !== props.expand) return null
+    } else {
+      if (props.active && props.level === 2 && props.active !== props.leaf.href) return null
+    }
   }
 
   return (
@@ -155,26 +171,48 @@ const SiteBranch = props => {
   )
 }
 
-const SiteTree = props => {
+const WithTitle = ({list, title}) => (
+  <div className="border-2 border-primary rounded-lg border-opacity-25 my-4">
+    <div className="bg-primary p-4 rounded-t-lg text-xl font-bold bg-opacity-25">
+      {title ? title : 'Read more'}
+    </div>
+    <div className="px-4">
+      <ul>{list}</ul>
+    </div>
+  </div>
+)
+
+
+const PageTree = props => {
 
   const [active, setActive] = useState(null)
 
-  const { pages, href=false, expanded=false} = props
+  const { pages, href=false, expanded=false, recurse=false, plain=false} = props
   if (!pages) return null
-  const tree = getSiteTree(pages)
+  const fullTree = getSiteTree(pages)
+
+  const tree = (props.offspring && props.href)
+    ? getSiteBranch(fullTree, props.href)
+    : fullTree
+
   const list = <SiteBranch
     leaf={{subnav: tree}}
-    tree={tree}
+    tree={fullTree}
     href={href}
     expanded={expanded}
-    level={1}
+    recurse={recurse}
+    plain={plain}
+    level={props.offspring ? 2 : 1}
     active={active}
     setActive={setActive}
     menu={props.menu}
     setMenu={props.setMenu}
   />
 
-  if (props.noLogo) return list
+
+  if (props.noLogo || props.offspring) return props.list
+    ? list
+    : <WithTitle list={list} title={props.title} />
   else return (
     <>
       <div className="flex flex-row mb-4 justify-between pr-4">
@@ -194,4 +232,4 @@ const SiteTree = props => {
 
 
 
-export default SiteTree
+export default PageTree

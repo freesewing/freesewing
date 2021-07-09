@@ -22,7 +22,8 @@ const DefaultLayout = props => (
   `}>
     <main className={`
       ${props.menu ? 'hidden' : 'block'}
-      px-4 pb-12 max-w-full mx-auto lg:w-2/3 lg:px-8
+      px-4 pb-12 max-w-full mx-auto
+      lg:w-2/3 lg:px-8 lg:mt-8
     `}>
       {!props.noCrumbs && <Breadcrumbs pages={props.pages} href={props.href}/>}
       <H1>{props.title || props.pages[props.href.slice(1)].frontmatter.title}</H1>
@@ -31,7 +32,7 @@ const DefaultLayout = props => (
     <aside className={`
       ${props.menu ? 'block' : 'hidden'}
       w-full max-w-prose mx-auto px-4
-      lg:w-1/3 lg:block`
+      lg:w-1/3 lg:block lg:mt-12`
     }>
       <div className="lg:sticky lg:top-24">
         <Navigation {...props} />

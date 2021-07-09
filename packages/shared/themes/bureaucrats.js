@@ -33,5 +33,14 @@ module.exports = {
 
     '--rounded-box': '2px',
     '--rounded-btn': '2px',
+
+    ".mdx.prose a" : {
+      color: colors.blue['600'],
+      'text-decoration': 'underline',
+    },
+    ".mdx.prose a:hover" : {
+      color: colors.blue['500'],
+      'text-decoration': 'underline',
+    },
   }
 }

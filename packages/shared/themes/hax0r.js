@@ -32,5 +32,13 @@ module.exports = {
     'error': colors.red['400'],
 
     '--rounded-btn': '0',
+
+    ".mdx.prose a" : {
+      color: colors.lime['600'],
+      'text-decoration': 'underline',
+    },
+    ".mdx.prose a:hover" : {
+      color: colors.lime['500'],
+    },
   }
 }

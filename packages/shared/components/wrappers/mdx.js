@@ -3,6 +3,8 @@ import MDX from "@mdx-js/runtime";
 import YouTube from "../mdx/youtube"
 import Highlight from "../mdx/highlight"
 import Popout from '../popout'
+import ReadMore from '../mdx/readmore'
+import Tree from '../navigation/tree'
 
 const components = {
   Fixme: props => <Popout {...props} fixme />,
@@ -18,6 +20,7 @@ const components = {
 }
 
 const MdxWrapper = props => {
+  components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
   return (
     <MDXProvider components={components} >
       <MDX>{props.children}</MDX>

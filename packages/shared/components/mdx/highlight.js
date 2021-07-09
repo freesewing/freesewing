@@ -13,7 +13,7 @@ const Highlight = ({ tag='code', className='', children=null, noLabel=false, pre
   const file = Prism.languages[language] ? Prism.languages[language] : Prism.languages.markup
 
   return (
-    <div className="relative">
+    <div className="relative mt-8">
       {!noLabel && !dense && (
         <div className={`absolute left-4 -top-6 block px-4 py-1 text-xs uppercase font-bold text-base-content rounded-t-lg bg-info`}>
           {language}

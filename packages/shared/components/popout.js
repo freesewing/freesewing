@@ -30,7 +30,7 @@ const Popout = (props) => {
   }
 
   return (
-    <div className="relative pt-4">
+    <div className="relative pt-4 mt-6">
       {(type !== 'none') && (
         <div className={`absolute left-4 -top-1 block px-4 py-1 text-sm uppercase font-bold rounded-t-lg ${classNames[type].label}`}>
           <Icon icon={type} size="16" className="inline-block mr-2"/>

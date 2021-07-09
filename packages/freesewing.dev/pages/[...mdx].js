@@ -3,11 +3,11 @@ import AppWrapper from 'shared/components/wrappers/app'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import config from '../freesewing.config'
 
-const Post = (props) => {
+const MdxPage = (props) => {
   return (
     <AppWrapper {...props}>
       <article className="mdx prose lg:prose-lg mb-12">
-        <MdxWrapper>{props.mdx}</MdxWrapper>
+        <MdxWrapper pages={props.pages} href={props.href}>{props.mdx}</MdxWrapper>
       </article>
     </AppWrapper>
   );
@@ -30,4 +30,4 @@ export const getStaticPaths = async () => {
   return re
 }
 
-export default Post;
+export default MdxPage

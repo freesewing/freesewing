@@ -32,5 +32,14 @@ module.exports = {
     'error': colors.red['600'],
 
     '--rounded-btn': '10rem',
+
+    ".mdx.prose a" : {
+      color: colors.fuchsia['600'],
+      'text-decoration': 'none',
+    },
+    ".mdx.prose a:hover" : {
+      color: colors.fuchsia['500'],
+      'text-decoration': 'underline',
+    },
   }
 }
