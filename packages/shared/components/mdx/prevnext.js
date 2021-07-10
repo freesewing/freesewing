@@ -104,12 +104,32 @@ const Prev = ({title, href}) => (
 )
 const Next = ({title, href}) => (
   <Link href={href}>
-    <a href={href} title={title}>
-      <span className={spanClasses}>{title}</span>
-      <Icon icon='down' className="-rotate-90 inline"/>
+    <a href={href} title={title} className="text-right w-1/2">
+      <div className='flex flex-row items-center'>
+        <span className={spanClasses}>{title}</span>
+        <Icon icon='down' className="-rotate-90 inline"/>
+      </div>
     </a>
   </Link>
 )
+
+const Render = ({page, prev=false}) => page ? (
+  <Link href={page?.href || `/${page?.path}`}>
+    <a
+      href={page?.href || `/${page?.path}`}
+      title={page?.title || page?.frontmatter?.title}
+      className={`w-1/2 ${prev ? '' : "text-right"}`}
+    >
+      <div className={`flex items-center flex-row justify-${prev ? 'start' : 'end'}`}>
+        {prev && <Icon icon='down' className="rotate-90 inline"/>}
+        <span className={spanClasses}>
+          {page?.title || page?.frontmatter?.title}
+        </span>
+        {!prev && <Icon icon='down' className="-rotate-90 inline"/>}
+      </div>
+    </a>
+  </Link>
+) : null
 
 const PrevNext = props => {
   const tree = getSiteTree(props.pages)
@@ -118,11 +138,12 @@ const PrevNext = props => {
 
   return (
     <div className="flex flex-row justify-between my-12 border-t-2 border-base-200 pt-4">
-      {prev && <Prev href={prev.href || `/${prev.path}`} title={prev?.frontmatter?.title || prev?.title} />}
-      {next && <Next href={next.href || `/${next.path}`} title={next?.frontmatter?.title || next?.title} />}
+      <Render page={prev} prev />
+      <Render page={next} />
     </div>
   )
 }
 
+        //href={prev.href || `/${prev.path}`} title={prev?.frontmatter?.title || prev?.title} />}
 export default PrevNext
 

@@ -3,6 +3,10 @@ import AppWrapper from 'shared/components/wrappers/app'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import config from '../freesewing.config'
 import PrevNext from 'shared/components/mdx/prevnext'
+
+// TEST
+import freesewing from '@freesewing/core'
+
 const MdxPage = (props) => {
   return (
     <AppWrapper {...props}>
@@ -21,6 +25,7 @@ export const getStaticProps = async (props) => {
 }
 
 export const getStaticPaths = async () => {
+  console.log(freesewing)
   const paths = await getMdxPaths(config.site, config.language)
 
   const re = {

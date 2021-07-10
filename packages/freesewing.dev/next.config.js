@@ -14,7 +14,15 @@ module.exports = {
     config.resolve.alias.shared = path.resolve(__dirname, '../shared')
     // Alias dev for easy access from shared
     config.resolve.alias.site = path.resolve(__dirname)
+    // Fix for nextjs bug #17806
+    config.module.rules.push({
+      test: /index.mjs$/,
+      type: "javascript/auto",
+      resolve: {
+        fullySpecified: false
+      }
+    })
 
-    return config;
-  },
+    return config
+  }
 }
