@@ -10,9 +10,13 @@ import Popout from 'shared/components/popout'
 const list = Object.keys(themes)
 const heading = <tr><th>Key</th><th>Value</th><th>Sample</th></tr>
 
-const Sample = ({color}) => (color.slice(0,1) === '#')
+const Sample = ({color}) => {
+  if (!color) return null
+
+  return (color.slice(0,1) === '#')
   ? <div style={{background: color}} className="rounded-full py-3 px-6 drop-shadow"></div>
   : null
+}
 
 const Page = props => (
   <AppWrapper {...props} title='Theme overview' noCrumbs>
@@ -67,7 +71,7 @@ const Page = props => (
             <>
               <tr><td colspan="3"><h3>{theme}</h3></td></tr>
               {heading}
-              {Object.keys(themes[theme]).map(key => (
+              {Object.keys(themes[theme].config).map(key => (
                 <tr key={`${theme}-${key}`}>
                   <td className="w-1/3">{key}</td>
                   <td className="w-1/3">

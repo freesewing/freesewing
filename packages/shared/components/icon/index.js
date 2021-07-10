@@ -5,6 +5,7 @@ const Icon = ({
   icon = 'github',
   color = false,
   className = '',
+  embed = false
 }) => {
 
   const svgProps = {
@@ -13,7 +14,7 @@ const Icon = ({
     className: className,
   }
 
-  if (size) {
+  if (size && !embed) {
     svgProps.width = size
     svgProps.height = size
   }

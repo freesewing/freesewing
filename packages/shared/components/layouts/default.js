@@ -1,5 +1,3 @@
-//import PrevNext from '../prev-next'
-//import EditIcon from '@material-ui/icons/Edit'
 // Shared components
 import Navigation from 'shared/components/navigation/tree'
 import Breadcrumbs from 'shared/components/navigation/breadcrumbs'

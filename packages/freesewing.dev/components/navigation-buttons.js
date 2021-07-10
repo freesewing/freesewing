@@ -10,7 +10,7 @@ const ExtraNavs = props => {
         className={`btn btn-ghost btn-block lg:w-auto`}
         onClick={props.toggleSearch}
       >
-        <Icon icon='search' size={props.iconSize}/>
+        <Icon icon='search' size={props.iconSize} className="hidden lg:inline"/>
         <span className='px-2'>
           Search
           <span className="hidden lg:inline"> for answers [Ctrl-k]</span>
@@ -47,7 +47,7 @@ const ExtraNavs = props => {
         title="Open menu"
         onClick={props.toggleMenu}
       >
-        {!props.menu && <Icon icon='menu' size={props.iconSize}/>}
+        {!props.menu && <Icon icon='menu' size={props.iconSize} className="hidden lg:inline"/>}
         <span className='px-2'>{props.menu && 'Close '} Menu</span>
       </button>
     ),

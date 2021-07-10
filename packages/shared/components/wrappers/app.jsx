@@ -6,7 +6,7 @@ import themes from 'shared/themes'
 // Shared components
 import ProgressBar from 'shared/components/progress-bar'
 import Navbar from 'shared/components/sections/navbar'
-import Footer from 'shared/components/sections/footer'
+import Footer from 'site/components/footer'
 import Layout from 'shared/components/layouts/default'
 
 /* This component should wrap all page content */
