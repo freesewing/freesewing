@@ -33,6 +33,15 @@ module.exports = {
 
     '--rounded-btn': '0',
 
+    '--pattern-fabric': colors.trueGray['700'],
+    '--pattern-lining': colors.emerald['500'],
+    '--pattern-interfacing': colors.trueGray['400'],
+    '--pattern-canvas': colors.amber['600'],
+    '--pattern-various': colors.red['500'],
+    '--pattern-mark': colors.blue['500'],
+    '--pattern-contrast': colors.pink['500'],
+    '--pattern-note': colors.violet['500'],
+
     ".mdx.prose a" : {
       color: colors.lime['600'],
       'text-decoration': 'underline',

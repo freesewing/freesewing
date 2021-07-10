@@ -120,6 +120,28 @@ module.exports = {
     // focus ring offset size for button and inputs
     '--focus-ring-offset': '2px',
 
+    /* FREESEWING PATTERN COLORS
+    *
+    * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
+    */
+
+    // Color for the main fabric
+    '--pattern-fabric': colors.trueGray['700'],
+    // Color for lining fabric
+    '--pattern-lining': colors.emerald['500'],
+    // Color for interfacing
+    '--pattern-interfacing': colors.trueGray['400'],
+    // Color for canvas
+    '--pattern-canvas': colors.amber['600'],
+    // Color for various fabric types
+    '--pattern-various': colors.red['500'],
+    // Color for marking things on a pattern
+    '--pattern-mark': colors.blue['500'],
+    // Color to provide contrast on a pattern
+    '--pattern-contrast': colors.pink['500'],
+    // Color for noting things on a pattern
+    '--pattern-note': colors.violet['500'],
+
     /* ADVANCED
     *
     * You can override CSS this way, but ask yourself: why?

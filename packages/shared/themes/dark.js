@@ -30,5 +30,14 @@ module.exports = {
     'success': colors.green['500'],
     'warning': colors.amber['500'],
     'error': colors.red['500'],
+
+    '--pattern-fabric': colors.trueGray['300'],
+    '--pattern-lining': colors.emerald['700'],
+    '--pattern-interfacing': colors.trueGray['500'],
+    '--pattern-canvas': colors.amber['700'],
+    '--pattern-various': colors.red['700'],
+    '--pattern-mark': colors.blue['700'],
+    '--pattern-contrast': colors.pink['600'],
+    '--pattern-note': colors.violet['600'],
   }
 }
