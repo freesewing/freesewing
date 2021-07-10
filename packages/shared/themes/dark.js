@@ -5,9 +5,9 @@ module.exports = {
   displayName: "🌚 Dark",
   config: {
     'fontFamily': 'Ubuntu',
-    'primary': colors.violet['400'],
+    'primary': gray['300'],
     'primary-focus': colors.violet['300'],
-    'primary-content': colors.violet['900'],
+    'primary-content': gray['900'],
 
     'secondary': colors.violet['500'],
     'secondary-focus': colors.violet['400'],
@@ -29,7 +29,7 @@ module.exports = {
     'info': colors.emerald['700'],
     'success': colors.green['500'],
     'warning': colors.amber['500'],
-    'error': colors.red['500'],
+    'error': colors.red['400'],
 
     '--pattern-fabric': colors.trueGray['300'],
     '--pattern-lining': colors.emerald['700'],

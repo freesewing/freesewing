@@ -49,11 +49,11 @@ module.exports = {
     'base-content': colors.trueGray['700'],
 
     // primary: The main brand color and color of the primary button
-    'primary': colors.violet['700'],
+    'primary': colors.trueGray['900'],
     // primary-focus: The :hover color for the primary button
     'primary-focus': colors.violet['600'],
     // primary-content: The text color for the primary button
-    'primary-content': colors.violet['100'],
+    'primary-content': colors.trueGray['200'],
 
     // secondary: The link color
     'secondary': colors.violet['500'],
@@ -70,7 +70,7 @@ module.exports = {
     // accent-content: The text color for the accent button
     'accent-content': colors.trueGray['900'],
 
-    // neutral: Used as the background for code blocks.
+    // neutral: Used as the background for the footer and code blocks.
     // Should always be dark(ish) because of prism syntax highlighting
     'neutral': colors.trueGray['800'],
     // neutral-focus: Typically a shade lighter than neutral

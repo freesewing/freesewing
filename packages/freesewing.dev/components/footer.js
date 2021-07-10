@@ -8,7 +8,7 @@ const classes = {
 }
 
 const Footer = props => (
-  <footer className="border-t-2 p-12 border-base-300 bg-primary text-primary-content mt-8 pb-24 lg:pb-4">
+  <footer className="border-t-2 p-12 border-neutral-focus bg-neutral text-neutral-content mt-8 pb-24 lg:pb-4">
     <div className={`${classes.row} justify-between flex-auto`}>
       <div className="w-full lg:w-1/3 my-2 text-center lg:text-left">
         <h4 className={classes.h4}>What is this?</h4>
