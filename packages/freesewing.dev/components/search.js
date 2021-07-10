@@ -167,7 +167,7 @@ const CustomSearchBox = connectSearchBox(SearchBox);
 
 const Search = props => {
 
-  const [active, setActive] = useState(-1)
+  const [active, setActive] = useState(0)
   useHotkeys('esc', () => props.setSearch(false))
   useHotkeys('up', () => {
     if (active) setActive(act => act - 1)
