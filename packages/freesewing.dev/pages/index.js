@@ -2,6 +2,7 @@ import AppWrapper from 'shared/components/wrappers/app'
 import config from 'site/freesewing.config'
 import { getMdxStaticProps } from 'shared/content/mdx'
 import MdxWrapper from 'shared/components/wrappers/mdx'
+import Markdown from 'react-markdown'
 
 const body = `
 ### About
@@ -48,7 +49,7 @@ const Page = props => {
   return (
     <AppWrapper {...props} title='Project 2022' noCrumbs>
       <div className="prose lg:prose-xl">
-        <MdxWrapper>{body}</MdxWrapper>
+        <Markdown>{body}</Markdown>
       </div>
     </AppWrapper>
   )

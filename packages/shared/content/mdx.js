@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
 import matter from "gray-matter"
+import { serialize } from 'next-mdx-remote/serialize'
 
 const mdxPath = folder => path.resolve(__dirname, `../../../../../markdown/${folder}/`)
 
@@ -26,7 +27,8 @@ const filesAbsToRel = (files, folder, language) => {
     }
   }
 
-  return relFiles
+  // Keep ui files out of it
+  return relFiles.filter(slug => slug.slice(0,3) !== 'ui/')
 }
 
 export const getMdxPaths = async (folder='dev', language='en') => {
@@ -79,7 +81,7 @@ export const getMdxStaticProps = async (folder, language, path=false) => {
     const rawMdx = loadMdxFile(path)
     const { content, data } = matter(rawMdx)
     props.href = `/${path}`
-    props.mdx = content
+    props.mdx = await serialize(content)
     props.frontmatter = data
   }
 

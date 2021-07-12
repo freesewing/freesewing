@@ -1,3 +1,4 @@
+import { MDXRemote } from 'next-mdx-remote'
 import { MDXProvider } from "@mdx-js/react";
 import MDX from "@mdx-js/runtime";
 import YouTube from "../mdx/youtube"
@@ -5,8 +6,12 @@ import Highlight from "../mdx/highlight"
 import Popout from '../popout'
 import Tree from '../navigation/tree'
 import Example from '../core/example'
-import PatternIterator from '../iterators/pattern'
-import { list as designs } from '@freesewing/pattern-info'
+import { list } from '@freesewing/pattern-info'
+
+const DesignIterator = props => {
+  const Component = props.component
+  return list.map(design => <Component design={design} />)
+}
 
 const components = {
   Example,
@@ -21,17 +26,20 @@ const components = {
   h6: props => <h6 className="font-bold my-2 text-sm">{props.children}</h6>,
   pre: props => <Highlight {...props} tag='pre'/>,
   code: props => <Highlight {...props} tag='code'/>,
+  DesignIterator,
 }
+
+
+
+
 
 const MdxWrapper = props => {
   components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
   return (
-    <MDXProvider
+    <MDXRemote
       components={{...components, ...props.components}}
-      scope={{ designs }}
-    >
-      <MDX>{props.children}</MDX>
-    </MDXProvider>
+      compiledSource={props.mdx.compiledSource}
+    />
   )
 }
 

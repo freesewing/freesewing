@@ -14,7 +14,8 @@ const MdxPage = (props) => {
           pages={props.pages}
           href={props.href}
           components={{Pattern, Plugin}}
-        >{props.mdx}</MdxWrapper>
+          mdx={props.mdx}
+        />
         <PrevNext pages={props.pages} href={props.href} />
       </article>
     </AppWrapper>

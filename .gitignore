@@ -2,6 +2,7 @@
 
 # Specifics
 export
+packages/freesewing.dev/out
 packages/plugin-theme/src/bundle.css.js
 packages/plugin-theme/css
 packages/components/Blockquote

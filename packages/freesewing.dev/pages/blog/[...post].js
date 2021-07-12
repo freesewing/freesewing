@@ -3,7 +3,7 @@ import AppWrapper from 'shared/components/wrappers/app'
 import config from 'site/freesewing.config'
 import Author from 'shared/components/strapi/author'
 import BlogMenu from 'site/components/blog-menu'
-import MdxWrapper from 'shared/components/wrappers/mdx'
+import Markdown from 'react-markdown'
 
 const PostPage = (props) => {
   const post = props.posts[props.slug]
@@ -36,7 +36,7 @@ const PostPage = (props) => {
           <figcaption className="text-center mb-8">{post.caption}</figcaption>
         </figure>
         <div className="strapi prose lg:prose-lg mb-12">
-          <MdxWrapper>{post.body}</MdxWrapper>
+          <Markdown>{post.body}</Markdown>
         </div>
       </article>
       <Author author={post.author} />
