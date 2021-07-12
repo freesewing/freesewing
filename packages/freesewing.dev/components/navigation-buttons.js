@@ -30,6 +30,18 @@ const ExtraNavs = props => {
         </span>
       </a>
     ),
+    blog: (
+      <Link href="/blog">
+        <button
+          className={`btn btn-ghost ${props.menu ? 'btn-block my-2' : ''}`}
+          title="Dev blog"
+        >
+          <Icon icon='blog' size={props.iconSize}/>
+          {!props.menu && <span className='px-2'>Blog</span>}
+          {props.menu && <span className='px-2'>Developer Blog</span>}
+        </button>
+      </Link>
+    ),
     github: (
       <Link href="https://github.com/freesewing/freesewing/">
         <button
@@ -69,6 +81,7 @@ const ExtraNavs = props => {
           <div className="w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>
+          {navs.blog}
           {navs.theme}
           {navs.github}
         </div>

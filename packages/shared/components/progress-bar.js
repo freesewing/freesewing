@@ -9,10 +9,7 @@ const ProgressBar= props => {
     theme = localStorage.getItem("theme")
     theme = themes?.[theme]
   }
-  catch (err) {
-    console.log('No theme set in localstorage')
-    console.log('Using default color for progress bar')
-  }
+  catch (err) {}
 
   return <NextNprogress
     color={theme?.secondary || themes.light.config.secondary}

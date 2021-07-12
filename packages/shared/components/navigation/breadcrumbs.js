@@ -19,7 +19,7 @@ const defaultHome = <Icon icon='freesewing' size={24} className="inline" />
 const Breadcrumbs = ({crumbs=false, pages, href, home=defaultHome, title=false}) => {
   if (!crumbs) crumbs = getCrumbs(pages, href)
 
-  crumbs.unshift({ title: home, href: '/' })
+  if (crumbs && crumbs[0] && crumbs[0].href !== '/') crumbs.unshift({ title: home, href: '/' })
 
   return (
     <ul>

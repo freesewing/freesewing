@@ -53,7 +53,7 @@ const Hit = props => (
       mt-4 border-2 border-base-300 px-6 py-3 rounded-lg
       hover:bg-base-100 hover:text-base-content
       ${props.index === props.active
-        ? 'bg-primary text-primary-content'
+        ? 'bg-base-300 text-base-content bg-opacity-30'
         : ''
         }
     `}

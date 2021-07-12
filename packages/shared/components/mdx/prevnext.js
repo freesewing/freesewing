@@ -93,25 +93,7 @@ const getNext = (href, pages, tree) => {
   return next
 }
 
-const spanClasses = "px-2 text-xl text-secondary font-bold hover:text-secondary-focus"
-const Prev = ({title, href}) => (
-  <Link href={href}>
-    <a href={href} title={title}>
-      <Icon icon='down' className="rotate-90 inline"/>
-      <span className={spanClasses}>{title}</span>
-    </a>
-  </Link>
-)
-const Next = ({title, href}) => (
-  <Link href={href}>
-    <a href={href} title={title} className="text-right w-1/2">
-      <div className='flex flex-row items-center'>
-        <span className={spanClasses}>{title}</span>
-        <Icon icon='down' className="-rotate-90 inline"/>
-      </div>
-    </a>
-  </Link>
-)
+const spanClasses = "px-2 text-xl text-secondary hover:text-secondary-focus"
 
 const Render = ({page, prev=false}) => page ? (
   <Link href={page?.href || `/${page?.path}`}>

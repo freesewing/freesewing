@@ -23,7 +23,7 @@ const DefaultLayout = props => (
       px-4 pb-12 max-w-full mx-auto
       lg:w-2/3 lg:px-8 lg:mt-8
     `}>
-      {!props.noCrumbs && <Breadcrumbs pages={props.pages} href={props.href}/>}
+      {!props.noCrumbs && <Breadcrumbs {...props} />}
       <H1>{props.title || props.pages[props.href.slice(1)].frontmatter.title}</H1>
       {props.children}
     </main>
@@ -33,11 +33,15 @@ const DefaultLayout = props => (
       lg:w-1/3 lg:block lg:mt-12`
     }>
       <div className="lg:sticky lg:top-24">
-        <Navigation {...props} />
-        {props.menu && (
-          <div className="mt-4 mb-32">
-            <NavigationButtons {...props} />
-          </div>
+        {props.sidebar ? props.sidebar : (
+          <>
+            <Navigation {...props} />
+            {props.menu && (
+              <div className="mt-4 mb-32">
+                <NavigationButtons {...props} />
+              </div>
+            )}
+          </>
         )}
       </div>
     </aside>

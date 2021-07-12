@@ -1,6 +1,6 @@
 import AppWrapper from 'shared/components/wrappers/app'
 import config from '../freesewing.config'
-import { getMdxStaticProps } from 'shared/utils/mdx'
+import { getMdxStaticProps } from 'shared/content/mdx'
 import themes from 'shared/themes'
 import Button from 'shared/components/elements/button'
 import Highlight from 'shared/components/mdx/highlight'

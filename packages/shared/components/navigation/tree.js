@@ -3,6 +3,7 @@ import set from 'lodash.set'
 import sortBy from 'lodash.sortby'
 import Link from 'next/link'
 import Icon from 'shared/components/icon'
+import SidebarWrap from 'site/components/wrap-sidebar'
 
 const getChildren = (path, pages, subnav={}) => {
   if (pages[path].offspring.length > 0) {
@@ -182,12 +183,12 @@ const WithTitle = ({list, title}) => (
   </div>
 )
 
+const noop = () => null
 
 const PageTree = props => {
 
   const [active, setActive] = useState(null)
-
-  const { pages, href=false, expanded=false, recurse=false, plain=false} = props
+  const { pages, href=false, expanded=false, recurse=false, plain=false, setMenu=noop} = props
   if (!pages) return null
   const fullTree = getSiteTree(pages)
 
@@ -206,26 +207,14 @@ const PageTree = props => {
     active={active}
     setActive={setActive}
     menu={props.menu}
-    setMenu={props.setMenu}
+    setMenu={setMenu}
   />
 
 
   if (props.noLogo || props.offspring) return props.list
     ? list
     : <WithTitle list={list} title={props.title} />
-  else return (
-    <>
-      <div className="flex flex-row mb-4 justify-between pr-4">
-        <Link href="/">
-          <a href="/" onClick={() => props.setMenu(false)}>
-          <h3 className="text-2xl font-bold hover:pointer">FreeSewing.dev</h3>
-          </a>
-        </Link>
-        <Icon icon="freesewing" size={36} />
-      </div>
-      {list}
-    </>
-  )
+  else return <SidebarWrap>{list}</SidebarWrap>
 
 }
 

@@ -5,6 +5,8 @@ import Highlight from "../mdx/highlight"
 import Popout from '../popout'
 import Tree from '../navigation/tree'
 import Example from '../core/example'
+import PatternIterator from '../iterators/pattern'
+import { list as designs } from '@freesewing/pattern-info'
 
 const components = {
   Example,
@@ -24,7 +26,10 @@ const components = {
 const MdxWrapper = props => {
   components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
   return (
-    <MDXProvider components={components} >
+    <MDXProvider
+      components={{...components, ...props.components}}
+      scope={{ designs }}
+    >
       <MDX>{props.children}</MDX>
     </MDXProvider>
   )

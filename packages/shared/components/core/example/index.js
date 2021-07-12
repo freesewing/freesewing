@@ -1,6 +1,6 @@
 import examples from '@freesewing/examples'
 import rendertest from '@freesewing/rendertest'
-//import tutorial from '@freesewing/tutorial'
+import tutorial from '@freesewing/tutorial'
 import Draft from '@freesewing/components/Draft'
 
 const Example = ({
@@ -18,7 +18,7 @@ const Example = ({
   const patterns = {
     examples,
     rendertest,
-    //tutorial
+    tutorial
   }
   settings = {
     options: { ...options },
