@@ -13,7 +13,8 @@
     "@freesewing/i18n": "^2.17.0",
     "@freesewing/pattern-info": "^2.17.0",
     "@freesewing/rendertest": "^2.17.0",
-    "@freesewing/tutorial": "^2.17.0"
+    "@freesewing/tutorial": "^2.17.0",
+    "next-mdx-remote": "^3.0.2"
   },
   "devDependencies": {}
 }
