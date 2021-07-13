@@ -50,7 +50,9 @@ const CustomHighlight = connectHighlight(Highlight);
 const Hit = props => (
   <div
     className={`
-      mt-4 border-2 border-base-300 px-6 py-3 rounded-lg
+      border-base-300
+      border px-3 py-1 rounded mt-1
+      lg:px-6 lg:py-3 lg:border-2 lg:mt-4 lg:rounded-lg
       hover:bg-base-100 hover:text-base-content
       ${props.index === props.active
         ? 'bg-base-300 text-base-content bg-opacity-30'
@@ -60,15 +62,15 @@ const Hit = props => (
   >
     <Link href={props.hit.path}>
       <a href={props.hit.path}>
-        <h4 className="text-2xl">
+        <h4 className="text-lg lg:text-2xl">
           {props.hit?._highlightResult?.title
             ? <CustomHighlight hit={props.hit} attribute='title' />
             : props.hit.title
           }
         </h4>
-        <p className="tet-lg">
+        <p className="text-sm lg:text-lg">
           /
-          <b className="font-bold px-1 text-lg">
+          <b className="font-bold px-1 lg:text-lg">
             {props.hit.path.split('/')[1]}
           </b>
           /
@@ -129,29 +131,33 @@ const SearchBox = props => {
               value={currentRefinement}
               onChange={event => refine(event.currentTarget.value)}
               onKeyDown={(evt) => handleInputKeydown(evt, setSearch, setActive, props.active, router)}
-              className="input input-lg input-borderd input-primary w-full pr-16"
+              className="input lg:input-lg input-bordered input-primary w-full pr-16"
               placeholder='Type to search'
             />
             <button
-              className="absolute right-0 top-0 rounded-l-none btn btn-primary btn-lg"
+              className="absolute right-0 top-0 rounded-l-none btn btn-primary lg:btn-lg"
               onClick={() => props.setSearch(false)}
             >X</button>
           </div>
         </div>
+        <div className="overscroll-auto">
         {
           input.current
           && input.current.value.length > 0
           && <CustomHits hitComponent={Hit} {...props} input={input}/>
         }
+        </div>
       </form>
       <div className={`
-        z-20 bg-base-100 border-base-200 w-full mx-auto
+        bg-neutral text-neutral-content
+        z-20 w-full mx-auto
+        lg:bg-base-100 lg:border-base-200
         fixed bottom-0 left-0 border-t-2
         lg:hidden
       `}>
-        <div className='px-4 py-2 flex flex-row w-full'>
+        <div className='px-4 py-0 flex flex-row w-full lg:py-2'>
           <button
-            className={`btn btn-ghost btn-block`}
+            className={`btn btn-ghost btn-block h-8 min-h-8 lg:h-12 lg:min-h-12`}
             onClick={() => props.setSearch(false)}
           >
             <span className='px-2'>Close Search</span>

@@ -38,7 +38,7 @@ const AppWrapper= props => {
         ? props.children
         : <Layout {...props} {...stateProps}>{props.children}</Layout>
       }
-      {!props.noFooter && <Footer />}
+      {!props.noFooter && !menu && <Footer />}
     </div>
   )
 }

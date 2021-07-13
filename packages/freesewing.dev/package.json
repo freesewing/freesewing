@@ -20,6 +20,7 @@
     "gray-matter": "^4.0.3",
     "lodash.set": "^4.3.2",
     "lodash.sortby": "^4.7.0",
+    "netlify-cli": "^4.2.0",
     "next": "latest",
     "next-mdx-remote": "^3.0.2",
     "nextjs-progressbar": "^0.0.11",

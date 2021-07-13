@@ -2,12 +2,14 @@ import Link from 'next/link'
 import Icon from 'shared/components/icon'
 import ThemeChooser from 'shared/components/theme-chooser'
 
+const btnClasses= 'btn btn-ghost btn-block h-8 min-h-8 lg:h-12 lg:min-h-12'
+
 const ExtraNavs = props => {
   const navs = {
     theme: <ThemeChooser block={props.menu} />,
     search: (
       <button
-        className={`btn btn-ghost btn-block lg:w-auto`}
+        className={`${btnClasses} lg:w-auto`}
         onClick={props.toggleSearch}
       >
         <Icon icon='search' size={props.iconSize} className="hidden lg:inline"/>
@@ -55,7 +57,7 @@ const ExtraNavs = props => {
     ),
     menu: (
       <button
-        className="btn btn-ghost btn-block"
+        className={`${btnClasses} lg:w-auto`}
         title="Open menu"
         onClick={props.toggleMenu}
       >

@@ -46,7 +46,7 @@ const DefaultLayout = props => (
       </div>
     </aside>
     {props.search && (
-      <div className={`fixed w-full min-h-screen bg-base-200 px-4 py-24 top-0 z-20`}>
+      <div className={`fixed w-full min-h-screen bg-base-200 px-4 lg:py-24 top-0 z-20`}>
         <Search {...props}/>
       </div>
     )}
