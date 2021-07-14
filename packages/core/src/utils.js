@@ -22,12 +22,15 @@ export function macroName(name) {
 export function beamsIntersect(a1, a2, b1, b2) {
   let slopeA = a1.slope(a2)
   let slopeB = b1.slope(b2)
+  console.log({a1, a2, slopeA})
   if (slopeA === slopeB) return false // Parallel lines
 
-  if (a1.x === a2.x) return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
-  // Vertical line A
-  else if (b1.x === b2.x) return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
-  // Vertical line B
+  // Check for vertical line A
+  if (Math.round(a1.x*10000) === Math.round(a2.x*10000))
+    return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
+  // Check for vertical line B
+  else if (Math.round(b1.x*10000) === Math.round(b2.x*10000))
+    return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
   else {
     // Swap points if line A or B goes from right to left
     if (a1.x > a2.x) a1 = a2.copy()

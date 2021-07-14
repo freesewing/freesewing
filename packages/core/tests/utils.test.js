@@ -490,3 +490,12 @@ it("Should find where a curve intersects a given Y-value", () => {
   expect(round(i.x)).to.equal(39.49);
   expect(round(i.y)).to.equal(30);
 });
+
+// Recreate issue #1206
+it("Should find intersecting beams when a line is almost vertical", () => {
+  let a = new freesewing.Point(225.72, 241);
+  let b = new freesewing.Point(225.71999999999997, 600);
+  let i = utils.beamIntersectsY(a, b, 400);
+  expect(round(i.y)).to.equal(400);
+});
+
