@@ -71,11 +71,8 @@ export default function (part) {
   points.hem.x = points.hips.x
 
   // Armhole
-  points.armhole = utils.beamIntersectsY(
-    points.armhole,
-    points.hips,
-    points.armhole.y * (1 + options.armholeDrop)
-  )
+  points.armhole = points.armhole.shiftFractionTowards(points.hips, options.armholeDrop);
+
   points.armholeCorner = utils.beamsIntersect(
     points.armhole,
     points.armhole.shift(180, 10),
