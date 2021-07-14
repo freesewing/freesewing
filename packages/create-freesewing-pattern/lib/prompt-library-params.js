@@ -97,19 +97,19 @@ module.exports = async opts => {
         message: info => strings[info.language]['filter.department.title'],
         choices: info => [
           {
-            name: strings[info.language]['filter.department.menswear'],
-            value: 'menswear'
+            name: strings[info.language]['filter.department.tops'],
+            value: 'tops'
           },
           {
-            name: strings[info.language]['filter.department.womenswear'],
-            value: 'womenswear'
+            name: strings[info.language]['filter.department.bottoms'],
+            value: 'bottoms'
           },
           {
             name: strings[info.language]['filter.department.accessories'],
             value: 'accessories'
           }
         ],
-        default: 'womenswear'
+        default: 'tops'
       },
       {
         type: 'input',
