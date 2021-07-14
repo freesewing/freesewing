@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.17.1 (2021-07-14)
+
+### core
+
+#### Fixed
+
+ - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
+
+
 ## 2.17.0 (2021-07-01)
 
 ### bent

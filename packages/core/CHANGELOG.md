@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.17.1 (2021-07-14)
+
+### Fixed
+
+ - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
+
 ## 2.17.0 (2021-07-01)
 
 ### Fixed

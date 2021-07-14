@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.17.1 (2021-07-14)
+
+### Fixed
+
+ - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
+
 ## 2.16.2 (2021-05-05)
 
 ### Changed
