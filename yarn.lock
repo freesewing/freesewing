@@ -1461,9 +1461,9 @@
   integrity sha512-y9fbKH1eCCkcqtRGhevFlmR5schCRz1GiTT/VYz6z8Ij0WHW0tS26BhMyXhmSgEIiFt+254yS8teqP+cc7Xq0w==
 
 "@fontsource/ubuntu@latest":
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-4.4.5.tgz#4d386755a4f3f88bfbc6a9d517f33dcdf263f992"
-  integrity sha512-dK/WdBncYJAZrwhANBGYN7wKrB2+NsYX/QomNBkJuze9kel9uijz7cNQPYdUDogink/X8D4MF2PeLEhF565fSA==
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-4.5.0.tgz#13700f2e34b8dead9c935850e5ef26add9e70cc9"
+  integrity sha512-PytR+FgXPPK+UNrLNhYucrNXewS9b4YOJpS2oYw4dfJq+5iyG8iV6CfwToy2UOVSOmBSBhCQ6mJa5Z6BqrGqMw==
 
 "@formatjs/ecma402-abstract@1.9.4":
   version "1.9.4"
