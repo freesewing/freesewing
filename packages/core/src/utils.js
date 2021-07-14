@@ -22,7 +22,6 @@ export function macroName(name) {
 export function beamsIntersect(a1, a2, b1, b2) {
   let slopeA = a1.slope(a2)
   let slopeB = b1.slope(b2)
-  console.log({a1, a2, slopeA})
   if (slopeA === slopeB) return false // Parallel lines
 
   // Check for vertical line A
