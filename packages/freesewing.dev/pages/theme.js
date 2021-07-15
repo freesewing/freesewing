@@ -56,12 +56,6 @@ const Page = props => (
       <Highlight lang="js">
         {`const myMethod = (param, more) => {\n  if (param) return more\n\n  return false\n}`}
       </Highlight>
-      <Highlight lang="yaml">
-        {`key: value`}
-      </Highlight>
-      <Highlight lang="json">
-        {`{\n  "key": "value"\n}`}
-      </Highlight>
       <h4>Dense</h4>
       <Highlight lang="bash" dense>
         npx create-freesewing-pattern
@@ -82,13 +76,13 @@ const Page = props => (
                   <td className="w-1/3">{key}</td>
                   <td className="w-1/3">
                     {
-                      typeof themes[theme][key] === 'object'
-                        ? JSON.stringify(themes[theme][key], null, 2)
-                        : themes[theme][key]
+                      typeof themes[theme].config[key] === 'object'
+                        ? JSON.stringify(themes[theme].config[key], null, 2)
+                        : themes[theme].config[key]
                     }
                   </td>
                   <td className="w-1/3">
-                    {typeof themes[theme][key] !== 'object' &&  <Sample color={themes[theme][key]}/>}
+                    {typeof themes[theme].config[key] !== 'object' &&  <Sample color={themes[theme].config[key]}/>}
                   </td>
                 </tr>
               ))}
@@ -96,8 +90,17 @@ const Page = props => (
           ))}
         </tbody>
       </table>
-    </div>
-  </AppWrapper>
+        <h2>These are here to prevent them from getting pruned</h2>
+        {['warning', 'info', 'error', 'success', 'primary', 'secondary', 'accent', 'base', 'neutral'].map(color => (
+          <p
+            key={color}
+            className={`bg-${color} border-l-8 p-2 border-${color} bg-opacity-10 capitalize`}
+          >
+            {color}
+          </p>
+        ))}
+      </div>
+    </AppWrapper>
 )
 
 export const getStaticProps = async (props) => {
