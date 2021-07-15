@@ -56,6 +56,12 @@ const Page = props => (
       <Highlight lang="js">
         {`const myMethod = (param, more) => {\n  if (param) return more\n\n  return false\n}`}
       </Highlight>
+      <Highlight lang="yaml">
+        {`key: value`}
+      </Highlight>
+      <Highlight lang="json">
+        {`{\n  "key": "value"\n}`}
+      </Highlight>
       <h4>Dense</h4>
       <Highlight lang="bash" dense>
         npx create-freesewing-pattern
