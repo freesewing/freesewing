@@ -1,7 +1,7 @@
 import Icon from 'shared/components/icon'
 
 const classes = {
-  row: "flex flex-row flex-wrap max-w-screen-xl m-auto",
+  row: "flex flex-row flex-wrap max-w-screen-2xl m-auto",
   h4: "font-bold py-2",
   link: "hover:text-secondary capitalize",
   col: "flex flex-col items-center px-4 w-full mt-4 lg:w-40 lg:mt-2"

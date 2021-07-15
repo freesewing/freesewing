@@ -9,7 +9,7 @@ const Navbar = props => (
   `}>
     <div className={`
       flex flex-row justify-between
-      max-w-screen-xl mx-auto w-full
+      max-w-screen-2xl mx-auto w-full
       lg:px-4 lg:py-2 lg:gap-x-8
     `}>
       <NavigationButtons {...props} iconSize={32} navbar />

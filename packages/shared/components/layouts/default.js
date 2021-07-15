@@ -14,7 +14,7 @@ const iconSize= 32
 const DefaultLayout = props => (
   <div className={`
   flex flex-row flex-nowrap justify-center
-  mt-4 max-w-screen-xl w-full mx-auto min-h-screen
+  mt-4 max-w-screen-2xl w-full mx-auto min-h-screen
   lg:mt-0 lg:gap-12
   ${props.menu ? 'mt-24': ''}
   `}>

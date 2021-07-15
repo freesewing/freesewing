@@ -78,7 +78,7 @@ const ExtraNavs = props => {
           {navs.search}
           {navs.discord}
         </div>
-        <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300">
+        <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300 py-1">
           <div className="w-1/2 px-1">{navs.search}</div>
           <div className="w-1/2 px-1">{navs.menu}</div>
         </div>
