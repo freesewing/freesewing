@@ -19,3 +19,5 @@ on the plus side, we're looking into playing DnD together.
 
 Join [discord.freesewing.org](https://discord.freesewing.org/) for more info.
 
+There's also a `project-2022` channel there with info on some future stuff we're working on.
+
