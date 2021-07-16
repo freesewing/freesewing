@@ -3,15 +3,18 @@ noNamespace:
   - remark-jargon
   - gatsby-remark-jargon
   - freesewing.dev
+  - freesewing.org
   - shared
 customChangelog:
   - freesewing.dev
+  - freesewing.org
   - shared
 customPackageJson:
   - freesewing.dev
+  - freesewing.org
   - shared
 customReadme:
-  - freesewing.dev
+  - freesewing.org
   - shared
 customRollup:
   - components
@@ -20,6 +23,7 @@ customRollup:
   - gatsby-remark-jargon
   - i18n
   - freesewing.dev
+  - freesewing.org
   - remark-jargon
   - utils
   - prettier-config
