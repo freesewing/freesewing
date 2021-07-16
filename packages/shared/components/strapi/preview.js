@@ -12,7 +12,7 @@ const Preview = ({ post }) => (
               h-60 w-full bg-cover bg-center block rounded-t-lg
               lg:h-40 lg:w-full
             `}
-            style={{backgroundImage: `url(${config.strapi.host}${post.image.formats.small.url}`}}
+            style={{backgroundImage: `url(${config.strapi.host}${post?.image?.formats?.small?.url}`}}
           ></div>
           <div className="pt-4 px-4">
             <h2 className="text-xl mb-4">

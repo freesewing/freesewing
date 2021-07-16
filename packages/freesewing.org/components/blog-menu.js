@@ -5,7 +5,7 @@ const BlogMenu = ({ posts, current=false }) => (
   <SidebarWrap>
     <ul>
       <li>
-        <h4 className="text-xl mb-2">Developer blog posts:</h4>
+        <h4 className="text-xl mb-2">Maker blog posts:</h4>
         <ul className="pl-2">
           {Object.values(posts).reverse().map(post => (
             <li>

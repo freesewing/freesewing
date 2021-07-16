@@ -34,7 +34,7 @@ const components = {
 
 
 const MdxWrapper = props => {
-  components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
+  if (props.pages) components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
   return (
     <MDXRemote
       components={{...components, ...props.components}}

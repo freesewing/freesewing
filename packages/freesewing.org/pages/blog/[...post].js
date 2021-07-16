@@ -3,7 +3,8 @@ import AppWrapper from 'shared/components/wrappers/app'
 import config from 'site/freesewing.config'
 import Author from 'shared/components/strapi/author'
 import BlogMenu from 'site/components/blog-menu'
-import Markdown from 'react-markdown'
+import MdxWrapper from 'shared/components/wrappers/mdx'
+import { serialize } from 'next-mdx-remote/serialize'
 
 const PostPage = (props) => {
   const post = props.posts[props.slug]
@@ -29,14 +30,19 @@ const PostPage = (props) => {
         </div>
         <figure>
           <img
-            src={`${config.strapi.host}${post.image.url}`}
+            src={`${config.strapi.host}${post?.image?.url}`}
             alt={post.caption}
             className="shadow"
           />
-          <figcaption className="text-center mb-8">{post.caption}</figcaption>
+          <figcaption
+            className="text-center mb-8 prose m-auto"
+            dangerouslySetInnerHTML={{__html: post.caption}}
+          />
         </figure>
-        <div className="strapi prose lg:prose-lg mb-12">
-          <Markdown>{post.body}</Markdown>
+        <div className="strapi prose lg:prose-lg mb-12 m-auto">
+          <MdxWrapper
+            mdx={post.mdx}
+          />
         </div>
       </article>
       <Author author={post.author} />
@@ -46,6 +52,9 @@ const PostPage = (props) => {
 
 export const getStaticProps = async (props) => {
   const posts = await getStrapiStaticProps('blog', config.site, config.language)
+  if (posts.posts[props.params.post]) {
+    posts.posts[props.params.post].mdx = await serialize(posts.posts[props.params.post].body)
+  }
 
   return { props: { ...posts, slug: props.params.post } }
 }
