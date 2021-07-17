@@ -1,4 +1,4 @@
-import Icon from 'shared/components/icon'
+import Icon from '@/shared/components/icon'
 
 const classes = {
   row: "flex flex-row flex-wrap max-w-screen-2xl m-auto",

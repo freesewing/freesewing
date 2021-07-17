@@ -1,4 +1,4 @@
-import config from 'site/freesewing.config'
+import config from '@/site/freesewing.config'
 import MDX from "@mdx-js/runtime";
 
 const Author = ({author}) => (

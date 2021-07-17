@@ -16,7 +16,10 @@ export const getStrapiStaticProps = async (type='blogposts', site='dev', lang=fa
   const posts = await getPosts(url(type, site, lang))
   const props = { posts: {} }
   for (const post of posts.data) {
-    props.posts[post.slug] = post
+    props.posts[post.slug] = {
+      ...post,
+      date: `${post.date}` // converts date object to string
+    }
   }
 
   return props

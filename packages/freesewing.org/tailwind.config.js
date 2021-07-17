@@ -1,14 +1,15 @@
 // Handle themes
-const allThemes = require('../shared/themes')
+const allThemes = require('../freesewing.shared/themes')
 const themes = {}
 for (const theme in allThemes) themes[theme] = allThemes[theme].config
 
 module.exports = {
-  mode: 'jit',
+  // jit compilations causes weird issues
+  //mode: 'jit',
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    '../shared/components/**/*.{js,ts,jsx,tsx}',
+    '../freesewing.shared/components/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

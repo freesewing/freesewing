@@ -1,9 +1,9 @@
-import { getStrapiStaticProps, getStrapiPaths } from 'shared/content/strapi'
-import AppWrapper from 'shared/components/wrappers/app'
-import config from 'site/freesewing.config'
-import Author from 'shared/components/strapi/author'
-import BlogMenu from 'site/components/blog-menu'
-import MdxWrapper from 'shared/components/wrappers/mdx'
+import { getStrapiStaticProps, getStrapiPaths } from '@/shared/content/strapi'
+import AppWrapper from '@/shared/components/wrappers/app'
+import config from '@/site/freesewing.config'
+import Author from '@/shared/components/strapi/author'
+import BlogMenu from '@/site/components/blog-menu'
+import MdxWrapper from '@/shared/components/wrappers/mdx'
 import { serialize } from 'next-mdx-remote/serialize'
 
 const PostPage = (props) => {

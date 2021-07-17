@@ -1,5 +1,5 @@
 import NextNprogress from 'nextjs-progressbar';
-import themes from 'shared/themes'
+import themes from '@/shared/themes'
 
 const ProgressBar= props => {
 

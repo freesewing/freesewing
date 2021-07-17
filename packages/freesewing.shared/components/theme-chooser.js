@@ -1,5 +1,5 @@
-import Icon from 'shared/components/icon'
-import themes from 'shared/themes'
+import Icon from '@/shared/components/icon'
+import themes from '@/shared/themes'
 
 const ThemeChooser = props => (
   <div className={`dropdown dropdown-end ${props.block ? 'w-full' : ''}`}>

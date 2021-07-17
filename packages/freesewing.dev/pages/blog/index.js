@@ -1,8 +1,8 @@
-import AppWrapper from 'shared/components/wrappers/app'
-import config from 'site/freesewing.config'
-import { getStrapiStaticProps } from 'shared/content/strapi'
-import Preview from 'shared/components/strapi/preview'
-import BlogMenu from 'site/components/blog-menu'
+import AppWrapper from '@/shared/components/wrappers/app'
+import config from '@/site/freesewing.config'
+import { getStrapiStaticProps } from '@/shared/content/strapi'
+import Preview from '@/shared/components/strapi/preview'
+import BlogMenu from '@/site/components/blog-menu'
 
 const Page = props => {
   return (
@@ -20,9 +20,9 @@ const Page = props => {
 }
 
 export const getStaticProps = async (props) => {
-  const staticProps = await getStrapiStaticProps(config.site)
+  const posts = await getStrapiStaticProps('blog', config.site)
 
-  return { props: { ...staticProps } }
+  return { props: { ...posts } }
 }
 
 export default Page

@@ -1,4 +1,4 @@
-import config from 'site/freesewing.config'
+import config from '@/site/freesewing.config'
 import Link from 'next/link'
 import TimeAgo from 'react-timeago'
 

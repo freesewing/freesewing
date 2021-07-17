@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Icon from 'shared/components/icon'
-import ThemeChooser from 'shared/components/theme-chooser'
+import Icon from '@/shared/components/icon'
+import ThemeChooser from '@/shared/components/theme-chooser'
 
 const btnClasses= 'btn btn-ghost btn-block h-8 min-h-8 lg:h-12 lg:min-h-12'
 

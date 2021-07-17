@@ -1,16 +1,20 @@
 {
-  "name": "with-tailwindcss",
+  "name": "freesewing.org",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "develop": "next dev",
+    "dev": "next dev -p 3001",
+    "develop": "next dev -p 3001",
+    "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.js",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start"
+    "start": "next start -p 3001"
+  },
+  "browser": {
+    "child_process": false
   },
   "dependencies": {
-    "@freesewing/pattern-info": "^2.17.0",
+    "@freesewing/pattern-info": "^2.17.1",
     "@mdx-js/react": "^1.6.22",
     "@mdx-js/runtime": "^1.6.22",
     "@tailwindcss/typography": "^0.4.1",

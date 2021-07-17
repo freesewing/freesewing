@@ -2,8 +2,8 @@ import { useState } from 'react'
 import set from 'lodash.set'
 import sortBy from 'lodash.sortby'
 import Link from 'next/link'
-import Icon from 'shared/components/icon'
-import SidebarWrap from 'site/components/wrap-sidebar'
+import Icon from '@/shared/components/icon'
+import SidebarWrap from '@/site/components/wrap-sidebar'
 
 const getChildren = (path, pages, subnav={}) => {
   if (pages[path].offspring.length > 0) {

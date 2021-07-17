@@ -1,6 +1,7 @@
-const config = {
+module.exports = {
   site: 'dev',
-  langauge: 'en',
+  language: 'en',
+  languages: ['en'],
   home: 'Home',
   search: {
     id: 'MA0Y5A2PF0',
@@ -13,4 +14,3 @@ const config = {
   },
 }
 
-export default config

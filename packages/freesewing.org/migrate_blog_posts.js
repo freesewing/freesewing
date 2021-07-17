@@ -9,7 +9,7 @@ const strapi = 'https://posts.freesewing.org'
 const bot = 'bot@freesewing.org'
 
 const mdxPath = folder => path.resolve(__dirname, `../../markdown/${folder}/`)
-const loadMdxFile = (slug, folder='dev', language='en') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
+const loadMdxFile = (slug, folder='dev', language='de') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
 
 
 const getFiles = async (path) => {
@@ -37,7 +37,7 @@ const filesAbsToRel = (files, folder, language) => {
   return relFiles.filter(slug => slug.slice(0,3) !== 'ui/')
 }
 
-const getMdxPaths = async (folder='dev', language='en') => {
+const getMdxPaths = async (folder='dev', language='de') => {
   const absFiles = await getFiles(mdxPath(folder))
   const relFiles = filesAbsToRel(absFiles, folder, language)
 
@@ -49,7 +49,7 @@ const getFrontmatter = slug => {
 
 }
 
-const getPageList = (paths, folder='dev', language='en', preHook=false, postHook=false) => {
+const getPageList = (paths, folder='dev', language='de', preHook=false, postHook=false) => {
   const allPaths = preHook
     ? preHook(paths)
     : [...paths]
@@ -79,7 +79,7 @@ const getPageList = (paths, folder='dev', language='en', preHook=false, postHook
 
 const publishPost = async (post, token) => {
   try {
-    await axios.post(
+    const res = await axios.post(
       `${strapi}/blogposts`,
       {
         title: post.title,
@@ -89,8 +89,6 @@ const publishPost = async (post, token) => {
         slug: post.slug,
         image: post.image,
         caption: post.caption || post.image,
-        site: '60ead4d970e8d35a6d089f9c',
-        author: '60eae49cdb32b45d5c4d6d93',
       },
       {
         headers: {
@@ -100,6 +98,7 @@ const publishPost = async (post, token) => {
     )
   }
   catch (err) {
+    console.log(err)
     console.log(err.response.data.data.errors)
   }
   finally {
@@ -156,11 +155,8 @@ const migratePosts = async (folder, language, token) => {
 //  migratePosts('org/blog', 'en', token)
 //})
 //
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjE2YTZmMmY4MWMwMzIzOTM2NjVlZiIsImlhdCI6MTYyNjQzNDk1NiwiZXhwIjoxNjI5MDI2OTU2fQ.7eEXH4-uW9KKXBu3d-vOMiDYIlu7aPO8pP-FhyowbyQ'
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWFjNTVjODQ0OGJmNTFkMGMyYWMyNCIsImlhdCI6MTYyNjUzOTc1OCwiZXhwIjoxNjI5MTMxNzU4fQ.QrcQsBb-NcNze8iNU3uQ7OJQj1E-zB-sSGpOFg-YIW8"
 
-const author = {
-  _id: "60eae49cdb32b45d5c4d6d93",
-}
-migratePosts('org/blog', 'en', token)
+migratePosts('org/blog', 'nl', token)
 
 

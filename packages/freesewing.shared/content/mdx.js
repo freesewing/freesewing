@@ -86,6 +86,5 @@ export const getMdxStaticProps = async (folder, language, path=false) => {
   }
 
   return props
-
 }
 

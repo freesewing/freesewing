@@ -1,8 +1,8 @@
-import AppWrapper from 'shared/components/wrappers/app'
-import config from 'site/freesewing.config'
-import { getStrapiStaticProps } from 'shared/content/strapi'
-import Preview from 'shared/components/strapi/preview'
-import BlogMenu from 'site/components/blog-menu'
+import AppWrapper from '@/shared/components/wrappers/app'
+import config from '@/site/freesewing.config'
+import { getStrapiStaticProps } from '@/shared/content/strapi'
+import Preview from '@/shared/components/strapi/preview'
+import BlogMenu from '@/site/components/blog-menu'
 
 const Page = props => {
   return (

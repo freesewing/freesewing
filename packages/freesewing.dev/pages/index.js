@@ -1,7 +1,5 @@
-import AppWrapper from 'shared/components/wrappers/app'
-import config from 'site/freesewing.config'
-import { getMdxStaticProps } from 'shared/content/mdx'
-import MdxWrapper from 'shared/components/wrappers/mdx'
+import AppWrapper from '@/shared/components/wrappers/app'
+import config from '@/site/freesewing.config'
 import Markdown from 'react-markdown'
 
 const body = `
@@ -53,12 +51,6 @@ const Page = props => {
       </div>
     </AppWrapper>
   )
-}
-
-export const getStaticProps = async (props) => {
-  const mdx = await getMdxStaticProps(config.site, config.language)
-
-  return { props: { ...mdx } }
 }
 
 export default Page

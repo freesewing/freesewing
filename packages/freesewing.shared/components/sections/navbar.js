@@ -1,5 +1,5 @@
-import Icon from 'shared/components/icon'
-import NavigationButtons from 'site/components/navigation-buttons'
+import Icon from '@/shared/components/icon'
+import NavigationButtons from '@/site/components/navigation-buttons'
 
 const Navbar = props => (
   <header className={`

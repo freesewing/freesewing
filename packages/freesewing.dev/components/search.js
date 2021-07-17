@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 import algoliasearch from 'algoliasearch/lite';
 import { useHotkeys } from 'react-hotkeys-hook'
 import { InstantSearch, connectHits, connectHighlight, connectSearchBox } from 'react-instantsearch-dom'
-import config from 'site/freesewing.config'
-import H1 from 'shared/components/elements/h1'
-import Button from 'shared/components/elements/button'
+import config from '@/site/freesewing.config'
+import H1 from '@/shared/components/elements/h1'
+import Button from '@/shared/components/elements/button'
 
 const searchClient = algoliasearch(config.search.id, config.search.key)
 

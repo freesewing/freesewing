@@ -1,13 +1,14 @@
 {
-  "name": "with-tailwindcss",
+  "name": "freesewing.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "develop": "next dev",
+    "dev": "next dev -p 3002",
+    "develop": "next dev -p 3002",
+    "prebuild": "SITE=dev node ../freesewing.shared/prebuild/index.js",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start"
+    "start": "next start -p 3002"
   },
   "dependencies": {
     "@freesewing/pattern-info": "^2.17.0",

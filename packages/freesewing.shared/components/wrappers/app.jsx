@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import {themeChange} from "theme-change"
 import Head from 'next/head'
 import { useHotkeys } from 'react-hotkeys-hook'
-import themes from 'shared/themes'
+import themes from '@/shared/themes'
 // Shared components
-import ProgressBar from 'shared/components/progress-bar'
-import Navbar from 'shared/components/sections/navbar'
-import Footer from 'site/components/footer'
-import Layout from 'shared/components/layouts/default'
+import ProgressBar from '@/shared/components/progress-bar'
+import Navbar from '@/shared/components/sections/navbar'
+import Footer from '@/site/components/footer'
+import Layout from '@/shared/components/layouts/default'
 
 /* This component should wrap all page content */
 const AppWrapper= props => {

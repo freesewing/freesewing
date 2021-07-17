@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import SidebarWrap from 'site/components/wrap-sidebar'
+import SidebarWrap from '@/site/components/wrap-sidebar'
 
 const BlogMenu = ({ posts, current=false }) => (
   <SidebarWrap>

@@ -1,5 +1,5 @@
-import Icon from 'shared/components/icon'
 import Link from 'next/link'
+import Icon from '@/shared/components/icon'
 
 const SidebarWrap = props => (
   <>
