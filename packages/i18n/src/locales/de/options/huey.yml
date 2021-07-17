@@ -1,22 +1,22 @@
 ---
 pocket:
-  title: Tasche
-  description: Ob eine Fronttasche hinzugefügt werden soll oder nicht
+  t: Tasche
+  d: Ob eine Fronttasche hinzugefügt werden soll oder nicht
 pocketHeight:
-  title: Taschenhöhe
-  description: Steuert die Höhe der Tasche
+  t: Taschenhöhe
+  d: Steuert die Höhe der Tasche
 hoodHeight:
-  title: Kapuzenhöhe
-  description: Steuert die Höhe der Kapuze
+  t: Kapuzenhöhe
+  d: Steuert die Höhe der Kapuze
 hoodCutback:
-  title: Kapuzenausschnitt
-  description: Leg fest, wie weit die Öffnung der Kapuze zurückgeschnitten wird
+  t: Kapuzenausschnitt
+  d: Leg fest, wie weit die Öffnung der Kapuze zurückgeschnitten wird
 hoodClosure:
-  title: Kapuzenverschluss
-  description: Legt fest, wie viel von der der Kapuze zum vorderen Verschluss gehört
+  t: Kapuzenverschluss
+  d: Legt fest, wie viel von der der Kapuze zum vorderen Verschluss gehört
 hoodDepth:
-  title: Kapuzentiefe
-  description: Steuert die Tiefe der Kapuze
+  t: Kapuzentiefe
+  d: Steuert die Tiefe der Kapuze
 hoodAngle:
-  title: Winkel der Kapuze
-  description: Steuert den Winkel, mit welchem die Kapuze angebracht wird
+  t: Winkel der Kapuze
+  d: Steuert den Winkel, mit welchem die Kapuze angebracht wird

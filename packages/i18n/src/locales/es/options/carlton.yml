@@ -1,31 +1,31 @@
 ---
 seatEase:
-  title: Facilidad de asiento
-  description: Cantidad de facilidad alrededor de tu trasero
+  t: Facilidad de asiento
+  d: Cantidad de facilidad alrededor de tu trasero
 pocketPlacementHorizontal:
-  title: Colocación horizontal del bolsillo
-  description: La ubicación (horizontal) de los bolsillos
+  t: Colocación horizontal del bolsillo
+  d: La ubicación (horizontal) de los bolsillos
 pocketPlacementVertical:
-  title: Colocación vertical del bolsillo
-  description: La ubicación (vertical) de los bolsillos
+  t: Colocación vertical del bolsillo
+  d: La ubicación (vertical) de los bolsillos
 collarHeight:
-  title: Altura del collar
-  description: Altura del cuello
+  t: Altura del collar
+  d: Altura del cuello
 length:
-  title: Longitud
-  description: Largo total
+  t: Longitud
+  d: Largo total
 pocketFlapRadius:
-  title: Radio de la tapa del bolsillo
-  description: La cantidad por la cual se redondea la solapa del bolsillo
+  t: Radio de la tapa del bolsillo
+  d: La cantidad por la cual se redondea la solapa del bolsillo
 pocketRadius:
-  title: Radio de bolsillo
-  description: La cantidad por la cual se redondea el bolsillo
+  t: Radio de bolsillo
+  d: La cantidad por la cual se redondea el bolsillo
 chestPocketHeight:
-  title: Altura del bolsillo pecho
-  description: Altura del bolsillo del pecho
+  t: Altura del bolsillo pecho
+  d: Altura del bolsillo del pecho
 beltWidth:
-  title: Ancho del cinturón
-  description: Ancho del cinturón
+  t: Ancho del cinturón
+  d: Ancho del cinturón
 buttonSpacingHorizontal:
-  title: Espaciado horizontal de los botones
-  description: El espaciado horizontal de los botones, también determina la superposición del cierre frontal
+  t: Espaciado horizontal de los botones
+  d: El espaciado horizontal de los botones, también determina la superposición del cierre frontal

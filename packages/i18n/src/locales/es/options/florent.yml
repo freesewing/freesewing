@@ -1,4 +1,4 @@
 ---
 headEase:
-  title: Holgura de cabeza
-  description: La cantidad de holgura alrededor de la cabeza
+  t: Holgura de cabeza
+  d: La cantidad de holgura alrededor de la cabeza

@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Ouverture arrière
-  description: Contrôle l'ouverture à l'arrière du tablier
+  t: Ouverture arrière
+  d: Contrôle l'ouverture à l'arrière du tablier
 chestDepth:
-  title: Longueur du lien
-  description: Contrôle la longueur des liens
+  t: Longueur du lien
+  d: Contrôle la longueur des liens
 lengthBonus:
-  title: Supplément de longueur
-  description: Contrôle la longueur du tablier
+  t: Supplément de longueur
+  d: Contrôle la longueur du tablier
 bibLength:
-  title: Longueur du plastron
-  description: Contrôle la longueur du plastron
+  t: Longueur du plastron
+  d: Contrôle la longueur du plastron
 bibWidth:
-  title: Largeur du plastron
-  description: Contrôle la largeur du plastron
+  t: Largeur du plastron
+  d: Contrôle la largeur du plastron
 strapWidth:
-  title: Largeur du lien
-  description: Contrôle la largeur des liens
+  t: Largeur du lien
+  d: Contrôle la largeur des liens
 

@@ -1,39 +1,39 @@
 seatEase:
-  title: Seat ease
-  description: Amount of ease around your bum
+  t: Seat ease
+  d: Amount of ease around your bum
 
 pocketPlacementHorizontal:
-  title: Horizontal pocket placement
-  description: The (horizontal) location of the pockets
+  t: Horizontal pocket placement
+  d: The (horizontal) location of the pockets
 
 pocketPlacementVertical:
-  title: Vertical pocket placement
-  description: The (vertical) location of the pockets
+  t: Vertical pocket placement
+  d: The (vertical) location of the pockets
 
 collarHeight:
-  title: Collar height
-  description: Height of the collar
+  t: Collar height
+  d: Height of the collar
 
 length:
-  title: Length
-  description: Total length
+  t: Length
+  d: Total length
 
 pocketFlapRadius:
-  title: Pocket flap radius
-  description: The amount by which the pocket flap is rounded
+  t: Pocket flap radius
+  d: The amount by which the pocket flap is rounded
 
 pocketRadius:
-  title: Pocket radius
-  description: The amount by which the pocket is rounded
+  t: Pocket radius
+  d: The amount by which the pocket is rounded
 
 chestPocketHeight:
-  title: Chest pocket height
-  description: Height of the chest pocket
+  t: Chest pocket height
+  d: Height of the chest pocket
 
 beltWidth:
-  title: Belt width
-  description: Width of the belt
+  t: Belt width
+  d: Width of the belt
 
 buttonSpacingHorizontal:
-  title: Horizontal button spacing
-  description: Horizontal spacing of the buttons, also determines the front closure overlap
+  t: Horizontal button spacing
+  d: Horizontal spacing of the buttons, also determines the front closure overlap

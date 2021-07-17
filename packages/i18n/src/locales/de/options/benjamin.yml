@@ -1,23 +1,23 @@
 ---
 adjustmentRibbon:
-  title: Einstellband
-  description: Einstellband verwenden oder nicht
+  t: Einstellband
+  d: Einstellband verwenden oder nicht
 bandLength:
-  title: Bandlänge
-  description: Lände des Bandes
+  t: Bandlänge
+  d: Lände des Bandes
 tipWidth:
-  title: Spitzenbreite
-  description: Breite der Spitzen
+  t: Spitzenbreite
+  d: Breite der Spitzen
 knotWidth:
-  title: Knotenbreite
-  description: Breite des Knotens
+  t: Knotenbreite
+  d: Breite des Knotens
 bowLength:
-  title: Fliegenlänge
-  description: Länge der Fliege (wenn geknotet)
+  t: Fliegenlänge
+  d: Länge der Fliege (wenn geknotet)
 bowStyle:
-  title: Fliegen-Stil
-  description: Stil der Fliege
+  t: Fliegen-Stil
+  d: Stil der Fliege
 endStyle:
-  title: Enden-Stil
-  description: Stil für die Enden der Fliege
+  t: Enden-Stil
+  d: Stil für die Enden der Fliege
 

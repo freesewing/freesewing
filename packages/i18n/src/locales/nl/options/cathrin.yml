@@ -1,28 +1,28 @@
 ---
 panels:
-  title: Aantal panelen
-  description: Het aantal panelen. Meer panelen werken beter voor een ronder figuur.
+  t: Aantal panelen
+  d: Het aantal panelen. Meer panelen werken beter voor een ronder figuur.
   options:
     '11': 11 panelen
     '13': 13 panelen
 waistReduction:
-  title: Reductie taille
-  description: Hoeveel smaller je wil dat het korset je taille maakt.
+  t: Reductie taille
+  d: Hoeveel smaller je wil dat het korset je taille maakt.
 backOpening:
-  title: Rugopening
-  description: Opening aan de sluiting op de middenrug. 
+  t: Rugopening
+  d: Opening aan de sluiting op de middenrug. 
 backRise:
-  title: Hoogte achter
-  description: Hoe ver de rugpanden stijgen van je armen tot je middenrug. 
+  t: Hoogte achter
+  d: Hoe ver de rugpanden stijgen van je armen tot je middenrug. 
 backDrop:
-  title: Verlaging rug
-  description: Hoeveel lager de rugpanden worden vanaf de heupen tot de middenrug. Een negatieve waarde maakt ze hoger.
+  t: Verlaging rug
+  d: Hoeveel lager de rugpanden worden vanaf de heupen tot de middenrug. Een negatieve waarde maakt ze hoger.
 frontRise:
-  title: Hoogte voorpand
-  description: 'De hoogte van de panelen middenvoor, tussen je borsten. Een negatieve waarde maakte ze lager.'
+  t: Hoogte voorpand
+  d: 'De hoogte van de panelen middenvoor, tussen je borsten. Een negatieve waarde maakte ze lager.'
 frontDrop:
-  title: Verlaging voorpand
-  description: Hoeveel de voorpanden verlagen van je heupen tot middenvoor.
+  t: Verlaging voorpand
+  d: Hoeveel de voorpanden verlagen van je heupen tot middenvoor.
 hipRise:
-  title: Hoogte heup
-  description: Hoe hoog de zijpanelen vallen op je heupen.
+  t: Hoogte heup
+  d: Hoe hoog de zijpanelen vallen op je heupen.

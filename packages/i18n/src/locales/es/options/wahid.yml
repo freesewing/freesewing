@@ -1,43 +1,43 @@
 ---
 backScyeDart:
-  title: Pinza posterior de la sisa
-  description: La cantidad a reducir en una pinza en la parte posterior de la sisa.
+  t: Pinza posterior de la sisa
+  d: La cantidad a reducir en una pinza en la parte posterior de la sisa.
 frontScyeDart:
-  title: Pinza frontal de la sisa
-  description: La cantidad a reducir en una pinza en el frente de la sisa.
+  t: Pinza frontal de la sisa
+  d: La cantidad a reducir en una pinza en el frente de la sisa.
 pocketLocation:
-  title: Ubicación de bolsillo
-  description: Determina la colocación del bolsillo
+  t: Ubicación de bolsillo
+  d: Determina la colocación del bolsillo
 pocketWidth:
-  title: Anchura de bolsillo
-  description: La anchura del bolsillo
+  t: Anchura de bolsillo
+  d: La anchura del bolsillo
 weltHeight:
-  title: Altura de verdugón del bolsillo
-  description: La altura de verdugón del bolsillo.
+  t: Altura de verdugón del bolsillo
+  d: La altura de verdugón del bolsillo.
 necklineDrop:
-  title: Caída del escote
-  description: Determina lo bajo que cae la línea de cuello en la parte delantera
+  t: Caída del escote
+  d: Determina lo bajo que cae la línea de cuello en la parte delantera
 frontStyle:
-  title: Estilo de la apertura del cuello
-  description: Estilo de apertura del cuello
+  t: Estilo de la apertura del cuello
+  d: Estilo de apertura del cuello
 hemStyle:
-  title: Estilo del dobladillo
-  description: Estilo del dobladillo delantero
+  t: Estilo del dobladillo
+  d: Estilo del dobladillo delantero
 hemRadius:
-  title: Radio del dobladillo
-  description: Radius by which the hem is rounded
+  t: Radio del dobladillo
+  d: Radius by which the hem is rounded
 backInset:
-  title: Inserción trasera
-  description: Cuánto de la parte de atrás de la sisa se corta hacia el interior
+  t: Inserción trasera
+  d: Cuánto de la parte de atrás de la sisa se corta hacia el interior
 frontInset:
-  title: Inserción delantera
-  description: Cuánto de la parte de delante de la sisa se corta hacia el interior
+  t: Inserción delantera
+  d: Cuánto de la parte de delante de la sisa se corta hacia el interior
 shoulderInset:
-  title: Inserción de hombro
-  description: Cuánto la costura del hombro se recorta hacia el interior en el hombro
+  t: Inserción de hombro
+  d: Cuánto la costura del hombro se recorta hacia el interior en el hombro
 neckInset:
-  title: Inserción de cuello
-  description: Cuánto de la costura del hombro se corta hacia el interior en el cuello
+  t: Inserción de cuello
+  d: Cuánto de la costura del hombro se corta hacia el interior en el cuello
 pocketAngle:
-  title: Ángulo del bolsillo
-  description: Ángulo del forro del bolsillo
+  t: Ángulo del bolsillo
+  d: Ángulo del forro del bolsillo

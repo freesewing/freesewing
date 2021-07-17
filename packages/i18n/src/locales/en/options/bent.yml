@@ -1,8 +1,8 @@
 sleeveBend:
-  title: Sleeve bend
-  description: Controls the bend of the sleeve at the elbow.
+  t: Sleeve bend
+  d: Controls the bend of the sleeve at the elbow.
 
 sleevecapHeight:
-  title: Sleevecap height
-  description: Controls the height of the sleevecap.
+  t: Sleevecap height
+  d: Controls the height of the sleevecap.
 

@@ -1,16 +1,16 @@
 ---
 bustDartAngle:
-  title: Angle des pinces poitrine
-  description: Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas
+  t: Angle des pinces poitrine
+  d: Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas
 bustDartLength:
-  title: Longueur des pinces poitrine
-  description: Contrôle à quel point la pince poitrine sera proche de l'apex du buste (la pointe des seins)
+  t: Longueur des pinces poitrine
+  d: Contrôle à quel point la pince poitrine sera proche de l'apex du buste (la pointe des seins)
 contour:
-  title: Contour
-  description: Contrôle à quel point le volume sera réduit sous les seins
+  t: Contour
+  d: Contrôle à quel point le volume sera réduit sous les seins
 frontDarts:
-  title: Pinces de taille
-  description: Inclure ou non des pinces de taille
+  t: Pinces de taille
+  d: Inclure ou non des pinces de taille
 frontDartLength:
-  title: Longueur des pinces de taille
-  description: Contrôle à quel point la pince de taille sera proche de l'apex du buste (la pointe des seins)
+  t: Longueur des pinces de taille
+  d: Contrôle à quel point la pince de taille sera proche de l'apex du buste (la pointe des seins)

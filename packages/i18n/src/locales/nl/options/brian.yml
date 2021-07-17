@@ -1,103 +1,103 @@
 ---
 acrossBackFactor:
-  title: Rugwijdte
-  description: Geeft controle over de breedte van je rug als een factor van je schouder tot schouder maat.
+  t: Rugwijdte
+  d: Geeft controle over de breedte van je rug als een factor van je schouder tot schouder maat.
 armholeDepthFactor:
-  title: Diepte armsgat factor
-  description: Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.
+  t: Diepte armsgat factor
+  d: Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.
 backNeckCutout:
-  title: Hals uitsnijding achteraan
-  description: Hoe diep de nek wordt uitgesneden aan de rug
+  t: Hals uitsnijding achteraan
+  d: Hoe diep de nek wordt uitgesneden aan de rug
 bicepsEase:
-  title: Overwijdte biceps
-  description: 'De hoeveelheid overwijdte aan je bovenarm. Let op dat we proberen dit te respecteren, maar dat de mouw in het armsgat laten passen voorrang krijgt op de hoeveelheid overwijdte. '
+  t: Overwijdte biceps
+  d: 'De hoeveelheid overwijdte aan je bovenarm. Let op dat we proberen dit te respecteren, maar dat de mouw in het armsgat laten passen voorrang krijgt op de hoeveelheid overwijdte. '
 collarEase:
-  title: Overwijdte kraag
-  description: De hoeveelheid overwijdte rond je nek.
+  t: Overwijdte kraag
+  d: De hoeveelheid overwijdte rond je nek.
 chestEase:
-  title: Overwijdte borst
-  description: De hoeveelheid overwijdte aan je borst.
+  t: Overwijdte borst
+  d: De hoeveelheid overwijdte aan je borst.
 cuffEase:
-  title: Overwijdte manchet
-  description: De hoeveelheid overwijdte aan je pols.
+  t: Overwijdte manchet
+  d: De hoeveelheid overwijdte aan je pols.
 frontArmholeDeeper:
-  title: Extra uitsnijding armsgat vooraan
-  description: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
+  t: Extra uitsnijding armsgat vooraan
+  d: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
 lengthBonus:
-  title: Bonus lengte
-  description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
+  t: Bonus lengte
+  d: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: collar side'
+  d: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: armhole side'
+  d: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
-  title: Overwijdte schouder
-  description: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
+  t: Overwijdte schouder
+  d: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
 shoulderSlopeReduction:
-  title: Reductie helling schouder
-  description: De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
+  t: Reductie helling schouder
+  d: De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
 sleeveLengthBonus:
-  title: Bonus mouwlengte
-  description: De hoeveelheid waarmee de mouw verlengd wordt. Een negatieve waarde zal ze korter maken.
+  t: Bonus mouwlengte
+  d: De hoeveelheid waarmee de mouw verlengd wordt. Een negatieve waarde zal ze korter maken.
 sleevecapEase:
-  title: Extra ruimte mouwkop
-  description: Hoeveel langer de naad van de mouwkop is dan de naad van het armsgat.
+  t: Extra ruimte mouwkop
+  d: Hoeveel langer de naad van de mouwkop is dan de naad van het armsgat.
 sleevecapTopFactorX:
-  title: Mouwkop top X
-  description: Bepaalt de horizontale locatie van de top van de mouwkop
+  t: Mouwkop top X
+  d: Bepaalt de horizontale locatie van de top van de mouwkop
 sleevecapTopFactorY:
-  title: Mouwkop top X
-  description: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
+  t: Mouwkop top X
+  d: Controleert de hoogte van de mouwkop. Een hogere waarde heeft als resultaat een hogere en smallere mouwkop.
 sleevecapBackFactorX:
-  title: Mouwkop X achteraan
-  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het achterste deel van de mouwkop
+  t: Mouwkop X achteraan
+  d: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het achterste deel van de mouwkop
 sleevecapBackFactorY:
-  title: Mouwkop Y achteraan
-  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het achterste deel van de mouwkop
+  t: Mouwkop Y achteraan
+  d: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het achterste deel van de mouwkop
 sleevecapFrontFactorX:
-  title: Mouwkop X vooraan
-  description: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het voorste deel van de mouwkop
+  t: Mouwkop X vooraan
+  d: Bepaalt de plaatsing op de X-as (horizontaal) van het ankerpunt van het voorste deel van de mouwkop
 sleevecapFrontFactorY:
-  title: Mouwkop Y vooraan
-  description: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het voorste deel van de mouwkop
+  t: Mouwkop Y vooraan
+  d: Bepaalt de plaatsing op de Y-as (verticaal) van het ankerpunt van het voorste deel van de mouwkop
 sleevecapQ1Offset:
-  title: Mouwkop Q1 offset
-  description: Bepaalt de kromming van de mouwkop in het eerste quadrant (armsgat vooraan)
+  t: Mouwkop Q1 offset
+  d: Bepaalt de kromming van de mouwkop in het eerste quadrant (armsgat vooraan)
 sleevecapQ2Offset:
-  title: Mouwkop Q2 offset
-  description: Bepaalt de kromming van de mouwkop in het tweede quadrant (schouder vooraan)
+  t: Mouwkop Q2 offset
+  d: Bepaalt de kromming van de mouwkop in het tweede quadrant (schouder vooraan)
 sleevecapQ3Offset:
-  title: Mouwkop Q3 offset
-  description: Bepaalt de kromming van de mouwkop in het derde quadrant (schouder achteraan)
+  t: Mouwkop Q3 offset
+  d: Bepaalt de kromming van de mouwkop in het derde quadrant (schouder achteraan)
 sleevecapQ4Offset:
-  title: Mouwkop Q4 offset
-  description: Bepaalt de kromming van de mouwkop in het vierde quadrant (armsgat vooraan)
+  t: Mouwkop Q4 offset
+  d: Bepaalt de kromming van de mouwkop in het vierde quadrant (armsgat vooraan)
 sleevecapQ1Spread1:
-  title: Mouwkop Q1 neerwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van het armsgat
+  t: Mouwkop Q1 neerwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van het armsgat
 sleevecapQ1Spread2:
-  title: Mouwkop Q1 opwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van de shouder
+  t: Mouwkop Q1 opwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het eerste quadrant van de mouwkop, in de richting van de shouder
 sleevecapQ2Spread1:
-  title: Mouwkop Q2 neerwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van het armsgat
+  t: Mouwkop Q2 neerwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van het armsgat
 sleevecapQ2Spread2:
-  title: Mouwkop Q2 opwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van de shouder
+  t: Mouwkop Q2 opwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het tweede quadrant van de mouwkop, in de richting van de shouder
 sleevecapQ3Spread1:
-  title: Mouwkop Q3 opwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van de shouder
+  t: Mouwkop Q3 opwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van de shouder
 sleevecapQ3Spread2:
-  title: Mouwkop Q3 neerwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van het armsgat
+  t: Mouwkop Q3 neerwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het derde quadrant van de mouwkop, in de richting van het armsgat
 sleevecapQ4Spread1:
-  title: Mouwkop Q4 opwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van de shouder
+  t: Mouwkop Q4 opwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van de shouder
 sleevecapQ4Spread2:
-  title: Mouwkop Q4 neerwaardse spreiding
-  description: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van het armsgat
+  t: Mouwkop Q4 neerwaardse spreiding
+  d: Bepaalt de spreiding van de kromming in het vierde quadrant van de mouwkop, in de richting van het armsgat
 sleeveWidthGuarantee:
-  title: Gegarandeerde mouw breedte
-  description: Bepaalt hoeveel van de mouwbreedte we garanderen wanneer we de mouw aan het armsgat aanpassen.
+  t: Gegarandeerde mouw breedte
+  d: Bepaalt hoeveel van de mouwbreedte we garanderen wanneer we de mouw aan het armsgat aanpassen.

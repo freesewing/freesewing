@@ -27,11 +27,12 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w"
   },
-  "peerDependencies": {
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "yaml": "^1.10.2",
     "@freesewing/pattern-info": "^2.17.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",
@@ -46,6 +47,6 @@
     "npm": ">=6"
   },
   "rollup": {
-    "exports": "default"
+    "exports": "named"
   }
 }

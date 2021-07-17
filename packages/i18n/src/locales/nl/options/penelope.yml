@@ -1,46 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Factor lengte neep rug
-  description: Hoe ver de neep achteraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
+  t: Factor lengte neep rug
+  d: Hoe ver de neep achteraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 backVent:
-  title: Split achter
-  description: Voeg een split toe aan de achterkant van de rok.
+  t: Split achter
+  d: Voeg een split toe aan de achterkant van de rok.
 backVentLength:
-  title: Lengte split achter
-  description: Lengte van het loopsplit als een percentage van de lengte van de rok.
+  t: Lengte split achter
+  d: Lengte van het loopsplit als een percentage van de lengte van de rok.
 dartToSideSeamFactor:
-  title: Factor neep tot zijnaad
-  description: Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
+  t: Factor neep tot zijnaad
+  d: Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
 frontDartDepthFactor:
-  title: Factor lengte neep vooraan
-  description: Hoe ver de neep vooraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
+  t: Factor lengte neep vooraan
+  d: Hoe ver de neep vooraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 hem:
-  title: Afmeting van de zoom
-  description: De afmeting van de zoom. Een maat in absolute waarden.
+  t: Afmeting van de zoom
+  d: De afmeting van de zoom. Een maat in absolute waarden.
 hemBonus:
-  title: Bonus zoom
-  description: Deze optie maakt de omtrek van de rok aan de zoom kleiner. Percentage van de Omtrek Zitvlak-maat.
+  t: Bonus zoom
+  d: Deze optie maakt de omtrek van de rok aan de zoom kleiner. Percentage van de Omtrek Zitvlak-maat.
 lengthBonus:
-  title: Bonus lengte
-  description: Dit bepaalt de lengte van de rok. Een percentage van de Taille tot Knie-maat.
+  t: Bonus lengte
+  d: Dit bepaalt de lengte van de rok. Een percentage van de Taille tot Knie-maat.
 nrOfDarts:
-  title: Aantal nepen
-  description: Het aantal nepen in het patroon. Het maximum is 2. Deze optie kan aangepast worden door het patroon als de berekeningen te kleine nepen als resultaat hebben.
+  t: Aantal nepen
+  d: Het aantal nepen in het patroon. Het maximum is 2. Deze optie kan aangepast worden door het patroon als de berekeningen te kleine nepen als resultaat hebben.
 seatEase:
-  title: Overwijdte zitvlak
-  description: Hoeveelheid overwijdte aan het zitvlak.
+  t: Overwijdte zitvlak
+  d: Hoeveelheid overwijdte aan het zitvlak.
 waistBand:
-  title: Tailleband
-  description: Voeg een tailleband toe aan het patroon.
+  t: Tailleband
+  d: Voeg een tailleband toe aan het patroon.
 waistBandWidth:
-  title: Breedte tailleband
-  description: De breedte van de tailleband.
+  t: Breedte tailleband
+  d: De breedte van de tailleband.
 waistEase:
-  title: Overwijdte taille
-  description: Hoeveelheid overwijdte aan de taille.
+  t: Overwijdte taille
+  d: Hoeveelheid overwijdte aan de taille.
 zipperLocation:
-  title: Locatie rits
-  description: De locatie van de rits.
+  t: Locatie rits
+  d: De locatie van de rits.
   options:
     backSeam: In de rugnaad
     sideSeam: In de zijnaad

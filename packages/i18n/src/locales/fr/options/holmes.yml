@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Profondeur de tête
-  description: fixme
+  t: Profondeur de tête
+  d: fixme
 goreNumber:
-  title: Nombre de pans
-  description: Le nombre de pans utilisés pour construire la semi-sphère
+  t: Nombre de pans
+  d: Le nombre de pans utilisés pour construire la semi-sphère
 brimAngle:
-  title: Angle des visières
-  description: Contrôle l'angle de courbure des visières
+  t: Angle des visières
+  d: Contrôle l'angle de courbure des visières
 brimWidth:
-  title: Largeur des visières
-  description: Contrôle la largeur des visières
+  t: Largeur des visières
+  d: Contrôle la largeur des visières
 

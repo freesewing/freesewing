@@ -1,55 +1,55 @@
 backScyeDart:
-  title: Back scye dart
-  description: The amount to take out in a dart at the back of the armhole.
+  t: Back scye dart
+  d: The amount to take out in a dart at the back of the armhole.
 
 frontScyeDart:
-  title: Front scye dart
-  description: The amount to take out in a dart at the front of the armhole.
+  t: Front scye dart
+  d: The amount to take out in a dart at the front of the armhole.
 
 pocketLocation:
-  title: Pocket location
-  description: Determines the placement of the pocket
+  t: Pocket location
+  d: Determines the placement of the pocket
 
 pocketWidth:
-  title: Pocket width
-  description: Determines the width of the pocket
+  t: Pocket width
+  d: Determines the width of the pocket
 
 weltHeight:
-  title: Welt height
-  description: Determines the height of the welt
+  t: Welt height
+  d: Determines the height of the welt
 
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  t: Neckline drop
+  d: Determines how low the neckline drops at the front
 
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  t: Neck opening style
+  d: Style of the neck opening
 
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  t: Hem style
+  d: Style of the front hem
 
 hemRadius:
-  title: Hem radius
-  description: Radius by which the hem is rounded
+  t: Hem radius
+  d: Radius by which the hem is rounded
 
 backInset:
-  title: Back inset
-  description: How much the back of the armhole is cut inwards
+  t: Back inset
+  d: How much the back of the armhole is cut inwards
 
 frontInset:
-  title: Front inset
-  description: How much the front of the armhole is cut inwards
+  t: Front inset
+  d: How much the front of the armhole is cut inwards
 
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  t: Shoulder inset
+  d: How much the shoulder seam is cut inwards at the shoulder
 
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  t: Neck inset
+  d: How much the shoulder seam is cut inwards at the neck
 
 pocketAngle:
-  title: Pocket angle
-  description: Angle of the pocket slant
+  t: Pocket angle
+  d: Angle of the pocket slant

@@ -1,7 +1,7 @@
 ---
 wedge:
-  title: Cuña
-  description: Controls the length of the cross seam
+  t: Cuña
+  d: Controls the length of the cross seam
 legWidth:
-  title: Ancho de la pierna
-  description: Controla la anchura de la pernera
+  t: Ancho de la pierna
+  d: Controla la anchura de la pernera

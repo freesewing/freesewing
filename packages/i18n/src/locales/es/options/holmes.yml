@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Ratio de longitud
-  description: fixme
+  t: Ratio de longitud
+  d: fixme
 goreNumber:
-  title: Número de paneles
-  description: El número de paneles usado para construir la semiesfera
+  t: Número de paneles
+  d: El número de paneles usado para construir la semiesfera
 brimAngle:
-  title: Ángulo de la visera
-  description: Controla la curvatura de la visera
+  t: Ángulo de la visera
+  d: Controla la curvatura de la visera
 brimWidth:
-  title: Ancho de la visera
-  description: Controla la anchura de la visera
+  t: Ancho de la visera
+  d: Controla la anchura de la visera
 

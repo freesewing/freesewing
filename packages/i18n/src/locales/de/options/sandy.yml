@@ -1,26 +1,26 @@
 ---
 waistbandWidth:
-  title: Taillenbundweite
-  description: Kontrolliert die Weite des Taillenbundes.
+  t: Taillenbundweite
+  d: Kontrolliert die Weite des Taillenbundes.
 waistbandPosition:
-  title: Position des Taillenbundes
-  description: Legt die Position des Taillenbundes fest.
+  t: Position des Taillenbundes
+  d: Legt die Position des Taillenbundes fest.
 waistbandShape:
-  title: Taillenbundform
-  description: Hier stellen Sie ein, on sie einen geraden oder einen körpergeformten Bund wollen.
+  t: Taillenbundform
+  d: Hier stellen Sie ein, on sie einen geraden oder einen körpergeformten Bund wollen.
 circleRatio:
-  title: Kreisverhältnis
-  description: Die Prozente eines Kreises aus dem Sie den Rock erstellen möchten.
+  t: Kreisverhältnis
+  d: Die Prozente eines Kreises aus dem Sie den Rock erstellen möchten.
 waistbandOverlap:
-  title: Überlappung des Taillenbundes
-  description: Der Betrag, mit dem sich der Taillenbund überlappt.
+  t: Überlappung des Taillenbundes
+  d: Der Betrag, mit dem sich der Taillenbund überlappt.
 gathering:
-  title: Kräuseln
-  description: Der Prozentsatz um welcher die Oberkante des Rockteils länger ist als die Unterkante des Bundes.
+  t: Kräuseln
+  d: Der Prozentsatz um welcher die Oberkante des Rockteils länger ist als die Unterkante des Bundes.
 seamlessFullCircle:
-  title: Nahtloser Vollkreis
-  description: Aktiviert einen nahtlosen Vollkreis für das Rockteil.
+  t: Nahtloser Vollkreis
+  d: Aktiviert einen nahtlosen Vollkreis für das Rockteil.
 hemWidth:
-  title: Saumbreite
-  description: Breite des Saumes
+  t: Saumbreite
+  d: Breite des Saumes
 

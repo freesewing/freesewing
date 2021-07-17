@@ -1,43 +1,43 @@
 ---
 backScyeDart:
-  title: Pince de carrure
-  description: La valeur à retirer dans une pince de carrure (à l'emmanchure arrière).
+  t: Pince de carrure
+  d: La valeur à retirer dans une pince de carrure (à l'emmanchure arrière).
 frontScyeDart:
-  title: Pince d'emmanchure
-  description: La quantité à retirer de la pince à l'avant de l'emmanchure.
+  t: Pince d'emmanchure
+  d: La quantité à retirer de la pince à l'avant de l'emmanchure.
 pocketLocation:
-  title: Emplacement de poche
-  description: Détermine l'emplacement de la poche
+  t: Emplacement de poche
+  d: Détermine l'emplacement de la poche
 pocketWidth:
-  title: Largeur de poche
-  description: Détermine la largeur de la poche
+  t: Largeur de poche
+  d: Détermine la largeur de la poche
 weltHeight:
-  title: Hauteur du revers de poche
-  description: Détermine la hauteur du revers de poche
+  t: Hauteur du revers de poche
+  d: Détermine la hauteur du revers de poche
 necklineDrop:
-  title: Profondeur d'encolure
-  description: Détermine la profondeur d'encolure sur le devant
+  t: Profondeur d'encolure
+  d: Détermine la profondeur d'encolure sur le devant
 frontStyle:
-  title: Style d'encolure
-  description: Style de l'encolure
+  t: Style d'encolure
+  d: Style de l'encolure
 hemStyle:
-  title: Style d'ourlet
-  description: Style de l'ourlet avant
+  t: Style d'ourlet
+  d: Style de l'ourlet avant
 hemRadius:
-  title: Arrondi d'ourlet
-  description: Rayon avec lequel l'ourlet est arrondi
+  t: Arrondi d'ourlet
+  d: Rayon avec lequel l'ourlet est arrondi
 backInset:
-  title: Échancrure emmanchure arrière
-  description: A quel point l'arrière de l'emmanchure est coupée vers l'intérieur
+  t: Échancrure emmanchure arrière
+  d: A quel point l'arrière de l'emmanchure est coupée vers l'intérieur
 frontInset:
-  title: Échancrure emmanchure avant
-  description: A quel point l'avant de l'emmanchure est coupée vers l'intérieur
+  t: Échancrure emmanchure avant
+  d: A quel point l'avant de l'emmanchure est coupée vers l'intérieur
 shoulderInset:
-  title: Réduction d'épaule
-  description: A quel point la couture d'épaule est éloignée des épaules
+  t: Réduction d'épaule
+  d: A quel point la couture d'épaule est éloignée des épaules
 neckInset:
-  title: Échancrure cou
-  description: A quel point la couture d'épaule est éloignée du cou
+  t: Échancrure cou
+  d: A quel point la couture d'épaule est éloignée du cou
 pocketAngle:
-  title: Angle de poche
-  description: Angle de l'ouverture de poche
+  t: Angle de poche
+  d: Angle de l'ouverture de poche

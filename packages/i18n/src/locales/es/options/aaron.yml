@@ -1,25 +1,25 @@
 ---
 armholeDrop:
-  title: Caída de la sisa
-  description: Baja la sisa esta cantidad. Valores negativos la elevan.
+  t: Caída de la sisa
+  d: Baja la sisa esta cantidad. Valores negativos la elevan.
 backlineBend:
-  title: Forma posterior de la sisa
-  description: Determina la forma/curva de la parte posterior de la sisa.
+  t: Forma posterior de la sisa
+  d: Determina la forma/curva de la parte posterior de la sisa.
 hipsEase:
-  title: Holgura de cadera
-  description: La cantidad de holgura en la cadera.
+  t: Holgura de cadera
+  d: La cantidad de holgura en la cadera.
 necklineBend:
-  title: Forma del cuello
-  description: Determina la forma/curva del cuello en el frente.
+  t: Forma del cuello
+  d: Determina la forma/curva del cuello en el frente.
 necklineDrop:
-  title: Caída del cuello
-  description: La cantidad de cuello que se corta en el frente.
+  t: Caída del cuello
+  d: La cantidad de cuello que se corta en el frente.
 shoulderStrapPlacement:
-  title: Posición de los tirantes
-  description: Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos).
+  t: Posición de los tirantes
+  d: Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos).
 shoulderStrapWidth:
-  title: Anchura de los tirantes
-  description: La anchura de los tirantes.
+  t: Anchura de los tirantes
+  d: La anchura de los tirantes.
 stretchFactor:
-  description: Determina la holgura negativa horizontal.
-  title: Extensión
+  d: Determina la holgura negativa horizontal.
+  t: Extensión

@@ -1,10 +1,10 @@
 ---
 height:
-  title: Hauteur
-  description: Contrôle la hauteur du masque
+  t: Hauteur
+  d: Contrôle la hauteur du masque
 length:
-  title: Longueur
-  description: Contrôle la longueur du masque
+  t: Longueur
+  d: Contrôle la longueur du masque
 curve:
-  title: Courbe
-  description: Contrôle la courbe du bord supérieur du masque
+  t: Courbe
+  d: Contrôle la courbe du bord supérieur du masque

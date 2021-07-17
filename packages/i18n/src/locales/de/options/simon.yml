@@ -1,92 +1,92 @@
 ---
 backDarts:
-  title: Hintere Abnäher
-  description: Ob Abnäher am Rücken eingefügt werden sollen oder nicht
+  t: Hintere Abnäher
+  d: Ob Abnäher am Rücken eingefügt werden sollen oder nicht
   options:
     auto: Automatisch
     always: Immer
     never: Niemals
 backDartShaping:
-  title: Formgebung der hinteren Abnäher
-  description: Wie stark die hinteren Abnäher die Figur betonen
+  t: Formgebung der hinteren Abnäher
+  d: Wie stark die hinteren Abnäher die Figur betonen
 barrelCuffNarrowButton:
-  title: Manschette schmaler Knopf
-  description: Gibt an, ob ein Knopf hinzugefügt wird, um die Manschetten enger zu binden. Diese Option ist nur für Einfachmanschetten relevant.
+  t: Manschette schmaler Knopf
+  d: Gibt an, ob ein Knopf hinzugefügt wird, um die Manschetten enger zu binden. Diese Option ist nur für Einfachmanschetten relevant.
 boxPleat:
-  title: Kellerfalte
-  description: Ob eine Kellerfalte am Rückenteil eingefügt wird oder nicht
+  t: Kellerfalte
+  d: Ob eine Kellerfalte am Rückenteil eingefügt wird oder nicht
 boxPleatWidth:
-  title: Kellerfaltenweite
-  description: Gesamtbreite der Kellerfalte
+  t: Kellerfaltenweite
+  d: Gesamtbreite der Kellerfalte
 boxPleatFold:
-  title: Kellerfalte Falz
-  description: Der Betrag, um den die Kellerfalte nach innen gefaltet wird
+  t: Kellerfalte Falz
+  d: Der Betrag, um den die Kellerfalte nach innen gefaltet wird
 buttonPlacketStyle:
-  title: Knopfleiste Stil
-  description: Stil der Knopfleiste.
+  t: Knopfleiste Stil
+  d: Stil der Knopfleiste.
   options:
     classic: Klassischer Stil
     seamless: Französischer Stil (nahtlos)
 buttonPlacketWidth:
-  title: Knopfleiste Breite
-  description: Breite der Knopfleiste.
+  t: Knopfleiste Breite
+  d: Breite der Knopfleiste.
 buttonFreeLength:
-  title: Freie Länge Knopf
-  description: Wie viel am unteren Ende der Verschlussleiste knopf-frei bleiben soll.
+  t: Freie Länge Knopf
+  d: Wie viel am unteren Ende der Verschlussleiste knopf-frei bleiben soll.
 buttonholePlacketFoldWidth:
-  title: Knopflochleiste Falzbreite
-  description: Breite der Falz der Knopflochleiste.
+  t: Knopflochleiste Falzbreite
+  d: Breite der Falz der Knopflochleiste.
 buttonholePlacketStyle:
-  title: Knopflochleiste Stil
-  description: Stil der Knoplochfleiste.
+  t: Knopflochleiste Stil
+  d: Stil der Knoplochfleiste.
   options:
     classic: Klassischer Stil
     seamless: Französischer Stil (nahtlos)
 buttonholePlacketWidth:
-  title: Knopflochleiste Breite
-  description: Breite der Knopflochleiste.
+  t: Knopflochleiste Breite
+  d: Breite der Knopflochleiste.
 buttons:
-  title: Anzahl der Knöpfe
-  description: Die Anzahl der Knöpfe am vorderen Verschluss.
+  t: Anzahl der Knöpfe
+  d: Die Anzahl der Knöpfe am vorderen Verschluss.
 collarAngle:
-  title: Kragenwinkel
-  description: Der Winkel der Kragenspitzen.
+  t: Kragenwinkel
+  d: Der Winkel der Kragenspitzen.
 collarBend:
-  title: Kragenkrümmung
-  description: Die Krümmung des Kragens.
+  t: Kragenkrümmung
+  d: Die Krümmung des Kragens.
 collarFlare:
-  title: Kragenausstellung
-  description: Wie weit die Kragenspitzen ausgestellt sind.
+  t: Kragenausstellung
+  d: Wie weit die Kragenspitzen ausgestellt sind.
 collarGap:
-  title: Kragenlücke
-  description: Der Spalt zwischen den beiden Kragenenden.
+  t: Kragenlücke
+  d: Der Spalt zwischen den beiden Kragenenden.
 collarRoll:
-  title: Kragenrolle
-  description: Der Betrag, um den der Oberkragen größer ist als der Unterkragen.
+  t: Kragenrolle
+  d: Der Betrag, um den der Oberkragen größer ist als der Unterkragen.
 collarStandBend:
-  title: Kragenstegbiegung
-  description: Die Biegung des Kragensstegs.
+  t: Kragenstegbiegung
+  d: Die Biegung des Kragensstegs.
 collarStandCurve:
-  title: Kragenstegkrümmung
-  description: Die Krümmung des Kragensstegs.
+  t: Kragenstegkrümmung
+  d: Die Krümmung des Kragensstegs.
 collarStandWidth:
-  title: Kragenstegbreite
-  description: Breite des Kragenstegs.
+  t: Kragenstegbreite
+  d: Breite des Kragenstegs.
 cuffButtonRows:
-  title: Manschettenknopfreihen
-  description: Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen erstellt werden soll. Diese Option ist nur für Einfachmanschetten relevant.
+  t: Manschettenknopfreihen
+  d: Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen erstellt werden soll. Diese Option ist nur für Einfachmanschetten relevant.
   options:
     '1': Einzelne Manschettenknopfreihe
     '2': Doppelte Manschettenknopfreihe
 cuffDrape:
-  title: Manschette drapieren
-  description: Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden.
+  t: Manschette drapieren
+  d: Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden.
 cuffLength:
-  title: Manschettenlänge
-  description: Die Länge der Manschetten.
+  t: Manschettenlänge
+  d: Die Länge der Manschetten.
 cuffStyle:
-  title: Manschettenstil
-  description: Der Stil der Manschetten.
+  t: Manschettenstil
+  d: Der Stil der Manschetten.
   options:
     roundedBarrelCuff: Abgerundete Einfachmanschette
     angledBarrelCuff: Angewinkelte Einfachmanschette
@@ -95,39 +95,39 @@ cuffStyle:
     angledFrenchCuff: Angewinkelte Umschlagmanschette
     straightFrenchCuff: Gerade Umschlagmanschette
 extraTopButton:
-  title: Zusätzlicher oberer Knopf
-  description: Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll.
+  t: Zusätzlicher oberer Knopf
+  d: Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll.
 hemCurve:
-  title: Saumkurve
-  description: Die Höhe der Kurve an einem abgerundeten Saum.
+  t: Saumkurve
+  d: Die Höhe der Kurve an einem abgerundeten Saum.
 hemStyle:
-  title: Saumstil
-  description: Der Stil des Hemdsaumes.
+  t: Saumstil
+  d: Der Stil des Hemdsaumes.
   options:
     straight: Gerader Saum
     baseball: Baseball-Saum
     slashed: Abgerundeter Saum
 roundBack:
-  title: Runder Rücken
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  t: Runder Rücken
+  d: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
-  title: Separate Knopflochleiste
-  description: Eine separate Knopflochleiste entwerfen.
+  t: Separate Knopflochleiste
+  d: Eine separate Knopflochleiste entwerfen.
 seperateButtonPlacket:
-  title: Separate Knopfleiste
-  description: Eine separate Knopfleiste entwerfen
+  t: Separate Knopfleiste
+  d: Eine separate Knopfleiste entwerfen
 sleevePlacketLength:
-  title: Ärmelleistenlänge
-  description: Die Länge der Ärmelleiste.
+  t: Ärmelleistenlänge
+  d: Die Länge der Ärmelleiste.
 sleevePlacketWidth:
-  title: Ärmelleiste Breite
-  description: Die Breite der Ärmelleiste.
+  t: Ärmelleiste Breite
+  d: Die Breite der Ärmelleiste.
 splitYoke:
-  title: Geteilte Passe
-  description: Ob eine geteilte oder normale Passe erstellt werden soll.
+  t: Geteilte Passe
+  d: Ob eine geteilte oder normale Passe erstellt werden soll.
 waistEase:
-  title: Taillenzugabe
-  description: Der Betrag, der an deiner (natürlichen) Taille als Bequemlichkeits-/Bewegslichkeitszugabe zugegeben wird.
+  t: Taillenzugabe
+  d: Der Betrag, der an deiner (natürlichen) Taille als Bequemlichkeits-/Bewegslichkeitszugabe zugegeben wird.
 yokeHeight:
-  title: Passenhöhe
-  description: Steuert die Höhe der Passe
+  t: Passenhöhe
+  d: Steuert die Höhe der Passe

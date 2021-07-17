@@ -1,103 +1,103 @@
 ---
 acrossBackFactor:
-  title: Largeur du dos
-  description: Contrôle la largeur de votre dos en jouant sur la mesure d'une épaule à l'autre.
+  t: Largeur du dos
+  d: Contrôle la largeur de votre dos en jouant sur la mesure d'une épaule à l'autre.
 armholeDepthFactor:
-  title: Hauteur de l'emmanchure
-  description: Contrôle la hauteur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde/basse.
+  t: Hauteur de l'emmanchure
+  d: Contrôle la hauteur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde/basse.
 backNeckCutout:
-  title: Arrondi de l'encolure au dos
-  description: Quelle est la profondeur de l'encolure dans le dos
+  t: Arrondi de l'encolure au dos
+  d: Quelle est la profondeur de l'encolure dans le dos
 bicepsEase:
-  title: Aisance au niveau des biceps
-  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
+  t: Aisance au niveau des biceps
+  d: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
 collarEase:
-  title: Aisance du cou
-  description: L'ampleur d'aisance au niveau du cou.
+  t: Aisance du cou
+  d: L'ampleur d'aisance au niveau du cou.
 chestEase:
-  title: Aisance de poitrine
-  description: L'ampleur d'aisance au niveau de votre poitrine.
+  t: Aisance de poitrine
+  d: L'ampleur d'aisance au niveau de votre poitrine.
 cuffEase:
-  title: Aisance de poignet
-  description: L'ampleur d'aisance à votre poignet.
+  t: Aisance de poignet
+  d: L'ampleur d'aisance à votre poignet.
 frontArmholeDeeper:
-  title: Supplément de découpe sur l'emmanchure avant
-  description: Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos.
+  t: Supplément de découpe sur l'emmanchure avant
+  d: Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos.
 lengthBonus:
-  title: Supplément de longueur
-  description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
+  t: Supplément de longueur
+  d: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: collar side'
+  d: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: armhole side'
+  d: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
-  title: Aisance des épaules
-  description: La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires.
+  t: Aisance des épaules
+  d: La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires.
 shoulderSlopeReduction:
-  title: Réduction de la pente d'épaule
-  description: La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
+  t: Réduction de la pente d'épaule
+  d: La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
 sleeveLengthBonus:
-  title: Bonus de longueur de manche
-  description: Le montant pour rallonger la manche. Une valeur négative le raccourcira.
+  t: Bonus de longueur de manche
+  d: Le montant pour rallonger la manche. Une valeur négative le raccourcira.
 sleevecapEase:
-  title: Aisance tête de manche
-  description: Le montant par lequel la couture du tête de manche est plus longue que celle des emmanchures.
+  t: Aisance tête de manche
+  d: Le montant par lequel la couture du tête de manche est plus longue que celle des emmanchures.
 sleevecapTopFactorX:
-  title: Tête de manche top X
-  description: Contrôle l'emplacement horizontal du tête de manche.
+  t: Tête de manche top X
+  d: Contrôle l'emplacement horizontal du tête de manche.
 sleevecapTopFactorY:
-  title: Tête de manche top Y
-  description: Contrôle la hauteur du tête de manche. Plus la valeur est élevée, plus la tête de manche est haute et étroite.
+  t: Tête de manche top Y
+  d: Contrôle la hauteur du tête de manche. Plus la valeur est élevée, plus la tête de manche est haute et étroite.
 sleevecapBackFactorX:
-  title: Tête de manche arrière X
-  description: Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des X (horizontal)
+  t: Tête de manche arrière X
+  d: Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des X (horizontal)
 sleevecapBackFactorY:
-  title: Tête de manche arrière Y
-  description: Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des Y (vertical)
+  t: Tête de manche arrière Y
+  d: Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des Y (vertical)
 sleevecapFrontFactorX:
-  title: Tête de manche devant X
-  description: Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des X (horizontal)
+  t: Tête de manche devant X
+  d: Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des X (horizontal)
 sleevecapFrontFactorY:
-  title: Tête de manche devant Y
-  description: Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des Y (vertical)
+  t: Tête de manche devant Y
+  d: Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des Y (vertical)
 sleevecapQ1Offset:
-  title: Tête de manche décalage Q1
-  description: Contrôle la courbure du tête de manche dans le premier quadrant (emmanchure devant).
+  t: Tête de manche décalage Q1
+  d: Contrôle la courbure du tête de manche dans le premier quadrant (emmanchure devant).
 sleevecapQ2Offset:
-  title: Tête de manche décalage Q2
-  description: Contrôle la courbure du tête de manche dans le deuxième quadrant (épaule avant).
+  t: Tête de manche décalage Q2
+  d: Contrôle la courbure du tête de manche dans le deuxième quadrant (épaule avant).
 sleevecapQ3Offset:
-  title: Tête de manche décalage Q3
-  description: Contrôle la courbure du tête de manche dans le troisième quadrant (épaule arrière).
+  t: Tête de manche décalage Q3
+  d: Contrôle la courbure du tête de manche dans le troisième quadrant (épaule arrière).
 sleevecapQ4Offset:
-  title: Tête de manche décalage Q4
-  description: Contrôle la courbure du tête de manche dans le quatrième quadrant (emmanchure au dos).
+  t: Tête de manche décalage Q4
+  d: Contrôle la courbure du tête de manche dans le quatrième quadrant (emmanchure au dos).
 sleevecapQ1Spread1:
-  title: Tête de manche abaissement Q1
-  description: Contrôle l'abaissement de la courbure du premier quadrant de la tête de manche vers l'emmanchure
+  t: Tête de manche abaissement Q1
+  d: Contrôle l'abaissement de la courbure du premier quadrant de la tête de manche vers l'emmanchure
 sleevecapQ1Spread2:
-  title: Tête de manche élévation Q1
-  description: Contrôle l'élévation de la courbure du premier quadrant de la tête de manche vers l'épaule
+  t: Tête de manche élévation Q1
+  d: Contrôle l'élévation de la courbure du premier quadrant de la tête de manche vers l'épaule
 sleevecapQ2Spread1:
-  title: Tête de manche abaissement Q2
-  description: Contrôle l'abaissement de la courbure du second quadrant de la tête de manche vers l'emmanchure
+  t: Tête de manche abaissement Q2
+  d: Contrôle l'abaissement de la courbure du second quadrant de la tête de manche vers l'emmanchure
 sleevecapQ2Spread2:
-  title: Tête de manche élévation Q2
-  description: Contrôle l'élévation de la courbure du second quadrant de la tête de manche vers l'épaule
+  t: Tête de manche élévation Q2
+  d: Contrôle l'élévation de la courbure du second quadrant de la tête de manche vers l'épaule
 sleevecapQ3Spread1:
-  title: Tête de manche élévation Q3
-  description: Contrôle l'élévation de la courbure du troisième quadrant de la tête de manche vers l'épaule
+  t: Tête de manche élévation Q3
+  d: Contrôle l'élévation de la courbure du troisième quadrant de la tête de manche vers l'épaule
 sleevecapQ3Spread2:
-  title: Tête de manche abaissement Q3
-  description: Contrôle l'abaissement de la courbure du troisième quadrant de la tête de manche vers l'emmanchure
+  t: Tête de manche abaissement Q3
+  d: Contrôle l'abaissement de la courbure du troisième quadrant de la tête de manche vers l'emmanchure
 sleevecapQ4Spread1:
-  title: Tête de manche élévation Q4
-  description: Contrôle l'élévation de la courbure du quatrième quadrant de la tête de manche vers l'épaule
+  t: Tête de manche élévation Q4
+  d: Contrôle l'élévation de la courbure du quatrième quadrant de la tête de manche vers l'épaule
 sleevecapQ4Spread2:
-  title: Tête de manche abaissement Q4
-  description: Contrôle l'abaissement de la courbure du quatrième quadrant de la tête de manche vers l'emmanchure
+  t: Tête de manche abaissement Q4
+  d: Contrôle l'abaissement de la courbure du quatrième quadrant de la tête de manche vers l'emmanchure
 sleeveWidthGuarantee:
-  title: Largeur des manches garantie
-  description: Contrôle la largeur de manche garantie. Cela détermine à quel point nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure.
+  t: Largeur des manches garantie
+  d: Contrôle la largeur de manche garantie. Cela détermine à quel point nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure.

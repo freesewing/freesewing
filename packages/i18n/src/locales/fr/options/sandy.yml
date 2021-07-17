@@ -1,26 +1,26 @@
 ---
 waistbandWidth:
-  title: Largeur de ceinture
-  description: Contrôle la largeur de la ceinture.
+  t: Largeur de ceinture
+  d: Contrôle la largeur de la ceinture.
 waistbandPosition:
-  title: Position de ceinture
-  description: Contrôle la position de la ceinture.
+  t: Position de ceinture
+  d: Contrôle la position de la ceinture.
 waistbandShape:
-  title: Forme de ceinture
-  description: Si vous voulez une ceinture droite ou bien de forme particulière.
+  t: Forme de ceinture
+  d: Si vous voulez une ceinture droite ou bien de forme particulière.
 circleRatio:
-  title: Ratio circulaire
-  description: Le pourcentage d'un cercle auquel vous souhaitez que la jupe corresponde.
+  t: Ratio circulaire
+  d: Le pourcentage d'un cercle auquel vous souhaitez que la jupe corresponde.
 waistbandOverlap:
-  title: Chevauchement de la ceinture
-  description: Le montant par lequel la taille se chevauche.
+  t: Chevauchement de la ceinture
+  d: Le montant par lequel la taille se chevauche.
 gathering:
-  title: Fronçage
-  description: Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du bas de la ceinture.
+  t: Fronçage
+  d: Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du bas de la ceinture.
 seamlessFullCircle:
-  title: Cercle entier sans couture
-  description: Permet une jupe totalement circulaire sans couture.
+  t: Cercle entier sans couture
+  d: Permet une jupe totalement circulaire sans couture.
 hemWidth:
-  title: Hem width
-  description: Largeur de l'ourlet
+  t: Hem width
+  d: Largeur de l'ourlet
 

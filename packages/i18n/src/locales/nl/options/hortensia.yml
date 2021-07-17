@@ -1,13 +1,13 @@
 ---
 size:
-  title: Size
-  description: Controls the overall size of the handbag
+  t: Size
+  d: Controls the overall size of the handbag
 zipperSize:
-  title: Zipper size
-  description: Which size of zipper to use
+  t: Zipper size
+  d: Which size of zipper to use
 strapLength:
-  title: Strap length
-  description: Controls the length of the strap
+  t: Strap length
+  d: Controls the length of the strap
 handleWidth:
-  title: Handle width
-  description: Controls the width of the handle
+  t: Handle width
+  d: Controls the width of the handle

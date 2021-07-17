@@ -1,4 +1,4 @@
 ---
 contour:
-  title: Kontur
-  description: Legt fest, wie stark figurbetont die Wiener Nähte sind.
+  t: Kontur
+  d: Legt fest, wie stark figurbetont die Wiener Nähte sind.

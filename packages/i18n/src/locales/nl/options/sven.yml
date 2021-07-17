@@ -1,10 +1,10 @@
 ---
 ribbing:
-  title: Boordstof
-  description: Of we boordstof plaatsen aan de zoom en manchetten of niet.
+  t: Boordstof
+  d: Of we boordstof plaatsen aan de zoom en manchetten of niet.
 ribbingHeight:
-  title: Hoogte boordstof
-  description: De hoogte van de boordstof aan zoom en manchetten.
+  t: Hoogte boordstof
+  d: De hoogte van de boordstof aan zoom en manchetten.
 ribbingStretch:
-  title: Stretch boordstof
-  description: De hoeveelheid stretch in de boordstof voor zoom en manchetten.
+  t: Stretch boordstof
+  d: De hoeveelheid stretch in de boordstof voor zoom en manchetten.

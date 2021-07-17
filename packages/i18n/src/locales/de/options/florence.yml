@@ -1,10 +1,10 @@
 ---
 height:
-  title: Höhe
-  description: Steuert die Höhe der Gesichtsmaske
+  t: Höhe
+  d: Steuert die Höhe der Gesichtsmaske
 length:
-  title: Länge
-  description: Steuert die Länge der Gesichtsmaske
+  t: Länge
+  d: Steuert die Länge der Gesichtsmaske
 curve:
-  title: Krümmung
-  description: Steuert die Krümmung der oberen Kante der Gesichtsmaske
+  t: Krümmung
+  d: Steuert die Krümmung der oberen Kante der Gesichtsmaske

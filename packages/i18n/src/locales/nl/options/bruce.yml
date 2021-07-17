@@ -1,19 +1,19 @@
 ---
 bulge:
-  title: Kruisstuk
-  description: Maak de hoek groter voor meer ruimte in het kruisstuk.
+  t: Kruisstuk
+  d: Maak de hoek groter voor meer ruimte in het kruisstuk.
 legBonus:
-  title: Bonus beenlengte
-  description: Extra lengte om aan de benen toe te voegen.
+  t: Bonus beenlengte
+  d: Extra lengte om aan de benen toe te voegen.
 rise:
-  title: Hoogte
-  description: Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen.
+  t: Hoogte
+  d: Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen.
 stretch:
-  title: Rek
-  description: Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.
+  t: Rek
+  d: Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.
 legStretch:
-  title: Stretch pijp
-  description: 'Voor het beste resultaat wil je de pijp wat strakker om je been.'
+  t: Stretch pijp
+  d: 'Voor het beste resultaat wil je de pijp wat strakker om je been.'
 backRise:
-  title: Hoogte achter
-  description: Het percentage waarmee de taille verhoogd wordt aan de rug.
+  t: Hoogte achter
+  d: Het percentage waarmee de taille verhoogd wordt aan de rug.

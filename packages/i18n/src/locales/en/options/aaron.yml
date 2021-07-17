@@ -1,31 +1,31 @@
 armholeDrop:
-  title: Armhole drop
-  description: Lower the armhole by this amount. Negative values will raise it.
+  t: Armhole drop
+  d: Lower the armhole by this amount. Negative values will raise it.
 
 backlineBend:
-  title: Back armhole shape
-  description: Determines the shape/bend of the back of the armholes.
+  t: Back armhole shape
+  d: Determines the shape/bend of the back of the armholes.
 
 hipsEase:
-  title: Hips ease
-  description: The amount of ease at your hips.
+  t: Hips ease
+  d: The amount of ease at your hips.
 
 necklineBend:
-  title: Neckline shape
-  description: Determines the shape/bend of the neckline at the front.
+  t: Neckline shape
+  d: Determines the shape/bend of the neckline at the front.
 
 necklineDrop:
-  title: Neckline drop
-  description: The amount the neck is cutout at the front.
+  t: Neckline drop
+  d: The amount the neck is cutout at the front.
 
 shoulderStrapPlacement:
-  title: Shoulderstrap placement
-  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).
+  t: Shoulderstrap placement
+  d: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).
 
 shoulderStrapWidth:
-  title: Shoulderstrap width
-  description: The width of the shoulder straps.
+  t: Shoulderstrap width
+  d: The width of the shoulder straps.
 
 stretchFactor:
-  description: Determines the horizontal negative ease.
-  title: Stretch
+  d: Determines the horizontal negative ease.
+  t: Stretch

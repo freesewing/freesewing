@@ -1,19 +1,19 @@
 ---
 bulge:
-  title: Bulto
-  description: Incrementar el ángulo para crear más espacio en el bolsillo delantero.
+  t: Bulto
+  d: Incrementar el ángulo para crear más espacio en el bolsillo delantero.
 legBonus:
-  title: Extra de longitud de pierna
-  description: La longitud extra a añadir a las perneras.
+  t: Extra de longitud de pierna
+  d: La longitud extra a añadir a las perneras.
 rise:
-  title: Elevación de la cintura
-  description: La cantidad a elevar la cintura. Valores negativos la bajan.
+  t: Elevación de la cintura
+  d: La cantidad a elevar la cintura. Valores negativos la bajan.
 stretch:
-  title: Extensión
-  description: La cantidad de holgura negativa.
+  t: Extensión
+  d: La cantidad de holgura negativa.
 legStretch:
-  title: Estiramiento de la pernera
-  description: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
+  t: Estiramiento de la pernera
+  d: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
 backRise:
-  title: Elevación de la espalda
-  description: Porcentaje en el que la cintura se elevará en la espalda.
+  t: Elevación de la espalda
+  d: Porcentaje en el que la cintura se elevará en la espalda.

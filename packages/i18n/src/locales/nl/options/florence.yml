@@ -1,10 +1,10 @@
 ---
 height:
-  title: Hoogte
-  description: Bepaalt de hoogte van het mondmasker
+  t: Hoogte
+  d: Bepaalt de hoogte van het mondmasker
 length:
-  title: Lengte
-  description: Bepaalt de lengte van het mondmasker
+  t: Lengte
+  d: Bepaalt de lengte van het mondmasker
 curve:
-  title: Curve
-  description: Bepaalt de curve van de bovenrand van het mondmasker
+  t: Curve
+  d: Bepaalt de curve van de bovenrand van het mondmasker

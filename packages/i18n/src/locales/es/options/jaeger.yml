@@ -1,112 +1,112 @@
 ---
 centerBackDart:
-  title: Pinza en el centro de la espalda
-  description: Dart at the center back of your neck to accommodate a rounded back
+  t: Pinza en el centro de la espalda
+  d: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
-  title: Longitud de la vista de la manga
-  description: Longitud de la vista de la manga
+  t: Longitud de la vista de la manga
+  d: Longitud de la vista de la manga
 sleeveVentWidth:
-  title: Ancho de la vista de la manga
-  description: Ancho de la vista de la manga
+  t: Ancho de la vista de la manga
+  d: Ancho de la vista de la manga
 chestShaping:
-  title: Forma del pecho
-  description: Amount of shaping to accommodate for the chest curve
+  t: Forma del pecho
+  d: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
-  title: Colocación de la pinza delantera
-  description: Ubicación de las pinzas delanteras
+  t: Colocación de la pinza delantera
+  d: Ubicación de las pinzas delanteras
 frontOverlap:
-  title: Superposición frontal
-  description: Cuánto se extiende la tela más allá de los botones de cierre
+  t: Superposición frontal
+  d: Cuánto se extiende la tela más allá de los botones de cierre
 sideFrontPlacement:
-  title: Colocación lateral / frontal
-  description: La ubicación del borde lateral / frontal
+  t: Colocación lateral / frontal
+  d: La ubicación del borde lateral / frontal
 chestPocketDepth:
-  title: Profundidad del bolsillo del pecho
-  description: La profundidad del bolsillo del pecho
+  t: Profundidad del bolsillo del pecho
+  d: La profundidad del bolsillo del pecho
 chestPocketWidth:
-  title: Ancho bolsillo del pecho
-  description: El ancho del bolsillo del pecho
+  t: Ancho bolsillo del pecho
+  d: El ancho del bolsillo del pecho
 chestPocketPlacement:
-  title: Colocación de bolsillo en el pecho
-  description: La ubicación del bolsillo del pecho
+  t: Colocación de bolsillo en el pecho
+  d: La ubicación del bolsillo del pecho
 chestPocketAngle:
-  title: Ángulo de bolsillo del pecho
-  description: El ángulo bajo el cual se coloca el bolsillo del pecho
+  t: Ángulo de bolsillo del pecho
+  d: El ángulo bajo el cual se coloca el bolsillo del pecho
 chestPocketWeltSize:
-  title: Talla de bolsillo de bolsillo
-  description: El tamaño de la bolsa de pecho
+  t: Talla de bolsillo de bolsillo
+  d: El tamaño de la bolsa de pecho
 frontPocketPlacement:
-  title: Colocación frontal del bolsillo
-  description: Colocación frontal del bolsillo
+  t: Colocación frontal del bolsillo
+  d: Colocación frontal del bolsillo
 frontPocketWidth:
-  title: Ancho bolsillo frontal
-  description: El ancho del bolsillo delantero
+  t: Ancho bolsillo frontal
+  d: El ancho del bolsillo delantero
 frontPocketDepth:
-  title: Profundidad de bolsillo frontal
-  description: La profundidad del bolsillo frontal
+  t: Profundidad de bolsillo frontal
+  d: La profundidad del bolsillo frontal
 frontPocketRadius:
-  title: Radio de bolsillo delantero
-  description: El radio por el cual se redondea el bolsillo delantero
+  t: Radio de bolsillo delantero
+  d: El radio por el cual se redondea el bolsillo delantero
 innerPocketPlacement:
-  title: Colocación del bolsillo interior
-  description: La ubicación del bolsillo interior
+  t: Colocación del bolsillo interior
+  d: La ubicación del bolsillo interior
 innerPocketWidth:
-  title: Ancho bolsillo interior
-  description: El ancho del bolsillo interior
+  t: Ancho bolsillo interior
+  d: El ancho del bolsillo interior
 innerPocketDepth:
-  title: Profundidad del bolsillo interior
-  description: La profundidad del bolsillo interior
+  t: Profundidad del bolsillo interior
+  d: La profundidad del bolsillo interior
 innerPocketWeltHeight:
-  title: Altura interior de los bolsillos
-  description: La altura de la bolsa interior
+  t: Altura interior de los bolsillos
+  d: La altura de la bolsa interior
 pocketFoldover:
-  title: Bolsillo plegable
-  description: La cantidad por la cual el tejido principal es la carpeta sobre el bolsillo
+  t: Bolsillo plegable
+  d: La cantidad por la cual el tejido principal es la carpeta sobre el bolsillo
 centerFrontHemDrop:
-  title: Dobladillo delantero central
-  description: La cantidad por la que se baja el dobladillo hacia el centro delantero
+  t: Dobladillo delantero central
+  d: La cantidad por la que se baja el dobladillo hacia el centro delantero
 backVent:
-  title: Ventilación posterior
-  description: La cantidad de respiraderos traseros
+  t: Ventilación posterior
+  d: La cantidad de respiraderos traseros
 backVentLength:
-  title: Longitud de ventilación posterior
-  description: La longitud de la (s) ventilación (es) posterior (es)
+  t: Longitud de ventilación posterior
+  d: La longitud de la (s) ventilación (es) posterior (es)
 buttonLength:
-  title: Longitud del botón
-  description: La distancia sobre la cual los botones se extienden
+  t: Longitud del botón
+  d: La distancia sobre la cual los botones se extienden
 frontCutawayAngle:
-  title: Ángulo de corte frontal
-  description: El ángulo bajo el cual se corta el frente hacia el dobladillo
+  t: Ángulo de corte frontal
+  d: El ángulo bajo el cual se corta el frente hacia el dobladillo
 frontCutawayStart:
-  title: Estrella de corte frontal
-  description: La ubicación en la que el frente comienza a abrirse hacia el dobladillo.
+  t: Estrella de corte frontal
+  d: La ubicación en la que el frente comienza a abrirse hacia el dobladillo.
 frontCutawayEnd:
-  title: Extremo frontal cortado
-  description: Aumentar esto hará que el corte frontal permanezca más cerca del centro delantero
+  t: Extremo frontal cortado
+  d: Aumentar esto hará que el corte frontal permanezca más cerca del centro delantero
 collarSpread:
-  title: Cuello extendido
-  description: La extensión del collar controla cómo el collar cubre los hombros
+  t: Cuello extendido
+  d: La extensión del collar controla cómo el collar cubre los hombros
 lapelStart:
-  title: Inicio de la solapa
-  description: Lugar donde el frente central pasa por las solapas
+  t: Inicio de la solapa
+  d: Lugar donde el frente central pasa por las solapas
 lapelReduction:
-  title: Reducción de la solapa
-  description: Cuánto gira hacia adentro la punta de las solapas
+  t: Reducción de la solapa
+  d: Cuánto gira hacia adentro la punta de las solapas
 collarHeight:
-  title: Altura del cuello
-  description: Altura del cuello
+  t: Altura del cuello
+  d: Altura del cuello
 collarNotchDepth:
-  title: Profundidad de la muesca del cuello
-  description: Profundidad de la muesca del cuello
+  t: Profundidad de la muesca del cuello
+  d: Profundidad de la muesca del cuello
 collarNotchAngle:
-  title: Ángulo de la muesca del cuello
-  description: Ángulo de la muesca del cuello
+  t: Ángulo de la muesca del cuello
+  d: Ángulo de la muesca del cuello
 collarNotchReturn:
-  title: Cuello muesca retorno
-  description: Cuánto retorna el cuello de la muesca, en comparación con la solapa
+  t: Cuello muesca retorno
+  d: Cuánto retorna el cuello de la muesca, en comparación con la solapa
 rollLineCollarHeight:
-  title: Altura de cuello de línea de rodadura
-  description: '¿Qué tanto la línea de balanceo abraza el cuello?'
+  t: Altura de cuello de línea de rodadura
+  d: '¿Qué tanto la línea de balanceo abraza el cuello?'
 hemRadius:
-  title: Radio del dobladillo
-  description: La cantidad por la cual se redondea el dobladillo
+  t: Radio del dobladillo
+  d: La cantidad por la cual se redondea el dobladillo

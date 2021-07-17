@@ -1,46 +1,46 @@
 ---
 kneeEase:
-  title: Overwijdte knie
-  description: Bepaalt de hoeveelheid overwijdte aan de knie
+  t: Overwijdte knie
+  d: Bepaalt de hoeveelheid overwijdte aan de knie
 waistHeight:
-  title: Taillehoogte
-  description: Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte
+  t: Taillehoogte
+  d: Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte
 lengthBonus:
-  title: Lengtebonus
-  description: Bepaalt de lengte van de broek
+  t: Lengtebonus
+  d: Bepaalt de lengte van de broek
 crotchDrop:
-  title: Diepte kruis
-  description: Verlaagt het kruis voor een lossere pasvorm
+  t: Diepte kruis
+  d: Verlaagt het kruis voor een lossere pasvorm
 fitKnee:
-  title: Pas de knie aan
-  description: Past de broekspijpen aan gebaseerd op de omtrek van de knie in plaats van de omtrek van het zitvlak
+  t: Pas de knie aan
+  d: Past de broekspijpen aan gebaseerd op de omtrek van de knie in plaats van de omtrek van het zitvlak
 legBalance:
-  title: Balans been
-  description: Bepaalt de verhouding tussen de voor-en achterkant van de broekspijp
+  t: Balans been
+  d: Bepaalt de verhouding tussen de voor-en achterkant van de broekspijp
 crossSeamCurveStart:
-  title: Begin van de curve van de binnenbeennaad
-  description: Bepaalt hoe ver in de binnenbeennaad de curve start
+  t: Begin van de curve van de binnenbeennaad
+  d: Bepaalt hoe ver in de binnenbeennaad de curve start
 crossSeamCurveBend:
-  title: Buiging binnenbeennaad
-  description: Bepaalt de curve van de binnenbeennaad
+  t: Buiging binnenbeennaad
+  d: Bepaalt de curve van de binnenbeennaad
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  t: Cross seam angle
+  d: Controls the angle of the cross seam
 crotchSeamCurveStart:
-  title: Begin van de curve van de kruisnaad
-  description: Bepaalt hoe ver in de kruisnaad de curve start
+  t: Begin van de curve van de kruisnaad
+  d: Bepaalt hoe ver in de kruisnaad de curve start
 crotchSeamCurveBend:
-  title: Buiging kruisnaad
-  description: Bepaalt de curve van de kruisnaad
+  t: Buiging kruisnaad
+  d: Bepaalt de curve van de kruisnaad
 crotchSeamCurveAngle:
-  title: Crotch seam angle
-  description: Controls the angle of the crotch seam
+  t: Crotch seam angle
+  d: Controls the angle of the crotch seam
 waistBalance:
-  title: Balans taille
-  description: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak
+  t: Balans taille
+  d: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  t: Waistband width
+  d: The width of the waistband
 grainlinePosition:
-  title: Positie draadrichting
-  description: Bepaalt de horizontale positie van het been in relatie tot het zitvlak
+  t: Positie draadrichting
+  d: Bepaalt de horizontale positie van het been in relatie tot het zitvlak

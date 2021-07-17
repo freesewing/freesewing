@@ -1,41 +1,41 @@
 ---
 shoulderDart:
-  title: Schulterabnäher
-  description: Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht
+  t: Schulterabnäher
+  d: Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 shoulderDartSize:
-  title: Größe der Schulterabnäher
-  description: Größe des Schulterabnähers
+  t: Größe der Schulterabnäher
+  d: Größe des Schulterabnähers
 shoulderDartLength:
-  title: Länge des Schulterabnähers
-  description: Die Länge des Abnähers an der Schulter
+  t: Länge des Schulterabnähers
+  d: Die Länge des Abnähers an der Schulter
 waistDart:
-  title: Taillenabnäher
-  description: Ob ein Abnäher an der Taille zur Abrundung des Rückens hinzugefügt werden soll oder nicht
+  t: Taillenabnäher
+  d: Ob ein Abnäher an der Taille zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 waistDartSize:
-  title: Größe des Taillenabnähers
-  description: Die Größe des Abnähers an der Taille
+  t: Größe des Taillenabnähers
+  d: Die Größe des Abnähers an der Taille
 waistDartLength:
-  title: Länge des Taillenabnähers
-  description: Die Länge des Abnähers an der Taille
+  t: Länge des Taillenabnähers
+  d: Die Länge des Abnähers an der Taille
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  t: Vertical ease
+  d: The amount of ease to distribute along the length of the garment
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  t: Waist ease
+  d: The amount of ease at the waist
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  t: Bust dart
+  d: Where to place the bust dart to shape the chest
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  t: Bust dart length
+  d: The length of the bust dart
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  t: Secondary bust dart
+  d: Optionally include a secondary bust dart to distribute the shaping of the chest
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  t: Secondary bust dart length
+  d: The length of the secondary bust dart
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  t: Bust darts shaping
+  d: Controls the balance between the main and secondary bust darts
 

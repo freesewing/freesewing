@@ -1,46 +1,46 @@
 ---
 kneeEase:
-  title: Knie-Zugabe
-  description: Kontrolliert die Zugabe am Knie
+  t: Knie-Zugabe
+  d: Kontrolliert die Zugabe am Knie
 waistHeight:
-  title: Taillenhöhe
-  description: Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe
+  t: Taillenhöhe
+  d: Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe
 lengthBonus:
-  title: Längenzugabe
-  description: Steuert die Länge der Hose
+  t: Längenzugabe
+  d: Steuert die Länge der Hose
 crotchDrop:
-  title: Schritt-Tiefe
-  description: Senkt die Schrittiefe für mehr Tragekomfort
+  t: Schritt-Tiefe
+  d: Senkt die Schrittiefe für mehr Tragekomfort
 fitKnee:
-  title: Am Knie anliegend
-  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesäßumfangs fest
+  t: Am Knie anliegend
+  d: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesäßumfangs fest
 legBalance:
-  title: Bein-Balance
-  description: Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins
+  t: Bein-Balance
+  d: Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  t: Start of the cross seam curve
+  d: Controls how far into the cross seam we start to curve
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  t: Cross seam bend
+  d: Controls the curvature of the cross seam
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  t: Cross seam angle
+  d: Controls the angle of the cross seam
 crotchSeamCurveStart:
-  title: Start of the crotch seam curve
-  description: Controls how far into the crotch seam we start to curve
+  t: Start of the crotch seam curve
+  d: Controls how far into the crotch seam we start to curve
 crotchSeamCurveBend:
-  title: Crotch seam bend
-  description: Controls the curvature of the crotch seam
+  t: Crotch seam bend
+  d: Controls the curvature of the crotch seam
 crotchSeamCurveAngle:
-  title: Crotch seam angle
-  description: Controls the angle of the crotch seam
+  t: Crotch seam angle
+  d: Controls the angle of the crotch seam
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  t: Waist balance
+  d: Controls the horizontal position of the waist relative to the seat
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  t: Waistband width
+  d: The width of the waistband
 grainlinePosition:
-  title: Position Fadenlauf
-  description: Controls the horizontal position of the leg relative to the seat
+  t: Position Fadenlauf
+  d: Controls the horizontal position of the leg relative to the seat

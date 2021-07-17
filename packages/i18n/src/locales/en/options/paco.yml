@@ -1,15 +1,15 @@
 heelEase:
-  title: Heel ease
-  description: The amount of ease at your heel (when stepping into the leg)
+  t: Heel ease
+  d: The amount of ease at your heel (when stepping into the leg)
 frontPockets:
-  title: Front pockets
-  description: Whether or not to add front pockets on the side seam
+  t: Front pockets
+  d: Whether or not to add front pockets on the side seam
 backPockets:
-  title: Back pockets
-  description: Whether or not to add welt pockets to the back
+  t: Back pockets
+  d: Whether or not to add welt pockets to the back
 elasticatedHem:
-  title: Elasticated hem
-  description: Whether or not you want an elasticated hem
+  t: Elasticated hem
+  d: Whether or not you want an elasticated hem
 ankleElastic:
-  title: Ankle/Hem elastic width
-  description: Width of the (optional) elastic at the ankle/hem
+  t: Ankle/Hem elastic width
+  d: Width of the (optional) elastic at the ankle/hem

@@ -1,39 +1,39 @@
 advanced:
-  title: Expert mode
-  description: Controls whether or not to display advanced settings and pattern options
+  t: Expert mode
+  d: Controls whether or not to display advanced settings and pattern options
 
 paperless:
-  title: Paperless
-  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
+  t: Paperless
+  d: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 
 sa:
-  title: Seam allowance
-  description: Controls the amount of seam allowance included in your pattern
+  t: Seam allowance
+  d: Controls the amount of seam allowance included in your pattern
 
 locale:
-  title: Language
-  description: Determines the language used on your pattern
+  t: Language
+  d: Determines the language used on your pattern
 
 only:
-  title: Contents
-  description: Allows you to control which pattern parts will be included in your pattern
+  t: Contents
+  d: Allows you to control which pattern parts will be included in your pattern
 
 units:
-  title: Units
-  description: Controls the units used on your pattern
+  t: Units
+  d: Controls the units used on your pattern
 
 margin:
-  title: Margin
-  description: Controls the margin around pattern parts
+  t: Margin
+  d: Controls the margin around pattern parts
 
 complete:
-  title: Detail
-  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+  t: Detail
+  d: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 
 layout:
-  title: Layout
-  description: Controls how the individual pattern parts are placed on your pattern
+  t: Layout
+  d: Controls how the individual pattern parts are placed on your pattern
 
 debug:
-  title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  t: Debug
+  d: Enable debug to gain additional info about how your pattern was created

@@ -1,16 +1,16 @@
 ---
 bustDartAngle:
-  title: Hoek busteneep
-  description: Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst
+  t: Hoek busteneep
+  d: Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst
 bustDartLength:
-  title: Lengte busteneep
-  description: Bepaalt hoe dicht de punt van de busteneep bij het bustepunt komt
+  t: Lengte busteneep
+  d: Bepaalt hoe dicht de punt van de busteneep bij het bustepunt komt
 contour:
-  title: Contour
-  description: Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt
+  t: Contour
+  d: Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt
 frontDarts:
-  title: Nepen voor
-  description: Of je vooraan nepen wil of niet
+  t: Nepen voor
+  d: Of je vooraan nepen wil of niet
 frontDartLength:
-  title: Lengte nepen voor
-  description: Bepaalt hoe dicht de punt van de voorste neep bij het bustepunt komt
+  t: Lengte nepen voor
+  d: Bepaalt hoe dicht de punt van de voorste neep bij het bustepunt komt

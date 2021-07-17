@@ -1,24 +1,24 @@
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  t: Back opening
+  d: Controls the opening at the back of the apron
 
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  t: Strap length
+  d: Controls the length of the straps
 
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  t: Length bonus
+  d: Controls the length of the apron
 
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  t: Bib length
+  d: Controls the length of the bib
 
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  t: Bib width
+  d: Controls the width of the bib
 
 strapWidth:
-  title: Strap width
-  description: Controls the width of the strap
+  t: Strap width
+  d: Controls the width of the strap
 

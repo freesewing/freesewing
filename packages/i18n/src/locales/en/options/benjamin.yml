@@ -1,29 +1,29 @@
 ---
 adjustmentRibbon:
-  title: Adjustment ribbon
-  description: Whether or not to include an adjustment ribbon
+  t: Adjustment ribbon
+  d: Whether or not to include an adjustment ribbon
 
 bandLength:
-  title: Band length
-  description: Length of the band
+  t: Band length
+  d: Length of the band
 
 tipWidth:
-  title: Tip width
-  description: Width of the tips
+  t: Tip width
+  d: Width of the tips
 
 knotWidth:
-  title: Knot width
-  description: Width of the knot
+  t: Knot width
+  d: Width of the knot
 
 bowLength:
-  title: Bow length
-  description: Length of the bow (when knotted)
+  t: Bow length
+  d: Length of the bow (when knotted)
 
 bowStyle:
-  title: Bow style
-  description: Style of the bow
+  t: Bow style
+  d: Style of the bow
 
 endStyle:
-  title: End style
-  description: Style of the bow ends
+  t: End style
+  d: Style of the bow ends
 

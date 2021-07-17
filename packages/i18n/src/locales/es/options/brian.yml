@@ -1,103 +1,103 @@
 ---
 acrossBackFactor:
-  title: Factor de ancho de espalda
-  description: Controla el ancho de espalda como un factor de la medida de hombro a hombro.
+  t: Factor de ancho de espalda
+  d: Controla el ancho de espalda como un factor de la medida de hombro a hombro.
 armholeDepthFactor:
-  title: Factor de profundidad de la sisa
-  description: Controla la profundidad de la sisa. Valores más altos producen sisas más profundas.
+  t: Factor de profundidad de la sisa
+  d: Controla la profundidad de la sisa. Valores más altos producen sisas más profundas.
 backNeckCutout:
-  title: Corte trasero del cuello
-  description: Cómo de profundo es el cuello por detrás
+  t: Corte trasero del cuello
+  d: Cómo de profundo es el cuello por detrás
 bicepsEase:
-  title: Holgura del bíceps
-  description: 'La cantidad de holgura en la parte superior del brazo. Ten en cuenta que, aunque intentamos repetar esto, ajustar la manga a la sisa toma preferencia sobre respetar la cantidad exacta de holgura.'
+  t: Holgura del bíceps
+  d: 'La cantidad de holgura en la parte superior del brazo. Ten en cuenta que, aunque intentamos repetar esto, ajustar la manga a la sisa toma preferencia sobre respetar la cantidad exacta de holgura.'
 collarEase:
-  title: Facilidad de cuello
-  description: La cantidad de facilidad alrededor de tu cuello.
+  t: Facilidad de cuello
+  d: La cantidad de facilidad alrededor de tu cuello.
 chestEase:
-  title: Holgura de pecho
-  description: La cantidad de holgura en el pecho
+  t: Holgura de pecho
+  d: La cantidad de holgura en el pecho
 cuffEase:
-  title: Holgura de muñeca
-  description: La cantidad de holgura en la muñeca.
+  t: Holgura de muñeca
+  d: La cantidad de holgura en la muñeca.
 frontArmholeDeeper:
-  title: Sujetador delantero extra recorte
-  description: '¿Cuánto quieres que se corte la sisa delantera más allá de la espalda?'
+  t: Sujetador delantero extra recorte
+  d: '¿Cuánto quieres que se corte la sisa delantera más allá de la espalda?'
 lengthBonus:
-  title: Extra de longitud
-  description: La cantidad a elongar. Valores negativos lo acortan.
+  t: Extra de longitud
+  d: La cantidad a elongar. Valores negativos lo acortan.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: collar side'
+  d: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  t: 'Shoulder seam shift: armhole side'
+  d: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
-  title: Holgura de hombro
-  description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
+  t: Holgura de hombro
+  d: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
 shoulderSlopeReduction:
-  title: Reducción de caída del hombro
-  description: La cantidad en la que la caída del hombro se reduce para añadir hombreras.
+  t: Reducción de caída del hombro
+  d: La cantidad en la que la caída del hombro se reduce para añadir hombreras.
 sleeveLengthBonus:
-  title: Longitud extra de manga
-  description: La cantidad a alargar la manga. Un valor negativo la acorta.
+  t: Longitud extra de manga
+  d: La cantidad a alargar la manga. Un valor negativo la acorta.
 sleevecapEase:
-  title: Holgura de la parte superior de la manga
-  description: La cantidad en la que la parte superior de la manga es más larga que la sisa
+  t: Holgura de la parte superior de la manga
+  d: La cantidad en la que la parte superior de la manga es más larga que la sisa
 sleevecapTopFactorX:
-  title: Funda tapa X
-  description: Controla la ubicación horizontal de la parte superior de la funda
+  t: Funda tapa X
+  d: Controla la ubicación horizontal de la parte superior de la funda
 sleevecapTopFactorY:
-  title: Funda tapa Y
-  description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
+  t: Funda tapa Y
+  d: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
 sleevecapBackFactorX:
-  title: Funda atrás X
-  description: Controla la colocación del punto de inflexión posterior de la funda en el eje X (horizontal)
+  t: Funda atrás X
+  d: Controla la colocación del punto de inflexión posterior de la funda en el eje X (horizontal)
 sleevecapBackFactorY:
-  title: Funda atrás X
-  description: Controla la colocación del punto de inflexión posterior de la funda en el eje Y (vertical)
+  t: Funda atrás X
+  d: Controla la colocación del punto de inflexión posterior de la funda en el eje Y (vertical)
 sleevecapFrontFactorX:
-  title: Funda frontal X
-  description: Controla la colocación del punto de inflexión frontal de la funda en el eje X (horizontal)
+  t: Funda frontal X
+  d: Controla la colocación del punto de inflexión frontal de la funda en el eje X (horizontal)
 sleevecapFrontFactorY:
-  title: Funda frontal Y
-  description: Controla la colocación del punto de inflexión frontal de la funda en el eje Y (vertical)
+  t: Funda frontal Y
+  d: Controla la colocación del punto de inflexión frontal de la funda en el eje Y (vertical)
 sleevecapQ1Offset:
-  title: Funda Q1 offset
-  description: Controla la curvatura de la funda en el primer cuadrante (sisa frontal)
+  t: Funda Q1 offset
+  d: Controla la curvatura de la funda en el primer cuadrante (sisa frontal)
 sleevecapQ2Offset:
-  title: Funda Q2 offset
-  description: Controla la curvatura de la funda en el segundo cuadrante (hombro delantero)
+  t: Funda Q2 offset
+  d: Controla la curvatura de la funda en el segundo cuadrante (hombro delantero)
 sleevecapQ3Offset:
-  title: Funda Q3 offset
-  description: Controla la curvatura de la funda en el tercer cuadrante (hombro posterior)
+  t: Funda Q3 offset
+  d: Controla la curvatura de la funda en el tercer cuadrante (hombro posterior)
 sleevecapQ4Offset:
-  title: Funda Q4 offset
-  description: Controla la curvatura de la funda en el cuarto cuadrante (sisa trasera)
+  t: Funda Q4 offset
+  d: Controla la curvatura de la funda en el cuarto cuadrante (sisa trasera)
 sleevecapQ1Spread1:
-  title: Funda Q1 propagación a la baja
-  description: Controla la propagación de la curvatura del primer cuadrante de la manga hacia la sisa.
+  t: Funda Q1 propagación a la baja
+  d: Controla la propagación de la curvatura del primer cuadrante de la manga hacia la sisa.
 sleevecapQ1Spread2:
-  title: Funda Q1 propagación hacia arriba
-  description: Controla la propagación de la curvatura del primer cuadrante de manga hacia el hombro
+  t: Funda Q1 propagación hacia arriba
+  d: Controla la propagación de la curvatura del primer cuadrante de manga hacia el hombro
 sleevecapQ2Spread1:
-  title: Funda Q2 propagación a la baja
-  description: Controla la propagación de la curvatura del segundo cuadrante del manguito hacia la sisa.
+  t: Funda Q2 propagación a la baja
+  d: Controla la propagación de la curvatura del segundo cuadrante del manguito hacia la sisa.
 sleevecapQ2Spread2:
-  title: Funda Q2 extendido hacia arriba
-  description: Controla la propagación de la curvatura del segundo cuadrante de manga hacia el hombro
+  t: Funda Q2 extendido hacia arriba
+  d: Controla la propagación de la curvatura del segundo cuadrante de manga hacia el hombro
 sleevecapQ3Spread1:
-  title: Funda Q3 extendido hacia arriba
-  description: Controla la propagación de la curvatura del tercer cuadrante de manga hacia el hombro
+  t: Funda Q3 extendido hacia arriba
+  d: Controla la propagación de la curvatura del tercer cuadrante de manga hacia el hombro
 sleevecapQ3Spread2:
-  title: Funda Q3 propagación a la baja
-  description: Controla la propagación de la curvatura del tercer cuadrante de la manga hacia la sisa.
+  t: Funda Q3 propagación a la baja
+  d: Controla la propagación de la curvatura del tercer cuadrante de la manga hacia la sisa.
 sleevecapQ4Spread1:
-  title: Funda Q4 extendido hacia arriba
-  description: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia el hombro
+  t: Funda Q4 extendido hacia arriba
+  d: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia el hombro
 sleevecapQ4Spread2:
-  title: Funda Q4 propagación a la baja
-  description: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia la sisa.
+  t: Funda Q4 propagación a la baja
+  d: Controla la propagación de la curvatura del cuarto cuadrante de manga hacia la sisa.
 sleeveWidthGuarantee:
-  title: Garantía de anchura de la manga
-  description: Controla cuánto del ancho de la manga se garantizará. Esto determina cuánto podemos alterar el ancho de la manga para que se ajuste a la manga en la sisa.
+  t: Garantía de anchura de la manga
+  d: Controla cuánto del ancho de la manga se garantizará. Esto determina cuánto podemos alterar el ancho de la manga para que se ajuste a la manga en la sisa.
