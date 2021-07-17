@@ -48,7 +48,7 @@
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "@freesewing/components": "^2.17.1",
     "@freesewing/css-theme": "^2.17.1",
     "@freesewing/i18n": "^2.17.1",
