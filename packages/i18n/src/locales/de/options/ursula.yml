@@ -3,17 +3,17 @@ fabricStretch:
   title: Stoffdehnbarkeit
   description: Adjust this for more or less stretchy fabrics
 gussetWidth:
-  title: Gusset width
-  description: Controls the width of the gusset
+  title: Zwickelbreite
+  description: Steuert die Breite des Zwickels
 gussetLength:
-  title: Gusset length
-  description: Controls the length of the gusset
+  title: Zwickellänge
+  description: Steuert die Länge des Zwickels
 elasticStretch:
   title: Elastic stretch
   description: Adjust this for more or less stretchy elastic
 rise:
   title: Rise
-  description: Controls the height of the waist
+  description: Steuert die Höhe der Taille
 legOpening:
   title: Beinöffnung
   description: Controls how high the leg is cut out

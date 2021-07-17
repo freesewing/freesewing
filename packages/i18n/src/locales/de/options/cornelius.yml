@@ -1,7 +1,7 @@
 ---
 fullness:
-  title: Fullness
-  description: Controls the fullness of the breeches
+  title: Fülle
+  description: Steuert die Fülle der Hosen
 waistbandBelowWaist:
   title: Lower waistband
   description: Percentage to move the waistband below the actual waist
