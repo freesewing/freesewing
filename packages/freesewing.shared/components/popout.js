@@ -1,10 +1,10 @@
 import Icon from "@/shared/components/icon"
 
 const colors = {
-  note: 'secondary',
-  tip: 'warning',
+  note: 'accent',
+  tip: 'secondary',
   warning: 'error',
-  fixme: 'accent',
+  fixme: 'warning',
   none: '',
 }
 

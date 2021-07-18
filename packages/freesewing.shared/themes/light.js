@@ -63,10 +63,11 @@ module.exports = {
     // Typically a light shade of the secondary color
     'secondary-content': colors.violet['300'],
 
-    // accent: The main accent color and color of the accent button
-    'accent': colors.fuchsia['500'],
+    // accent: The accent color is used to highlight active things
+    // Should be something is positive/neutral. Avoid red or orange.
+    'accent': colors.emerald['500'],
     // accent-focus: The :hover color for the accent button
-    'accent-focus': colors.fuchsia['400'],
+    'accent-focus': colors.emerald['400'],
     // accent-content: The text color for the accent button
     'accent-content': colors.trueGray['900'],
 
