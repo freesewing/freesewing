@@ -33,15 +33,11 @@ const toggleActive = (props) => {
   else props.setActive(steps)
 }
 
+const hasTitle = branch => (branch._title) ? true : false
 
-const onPath = (path, branch) => {
-  return true
-}
-
-const subBranch = (branch, key) => branch[key]
 const hasChildren = branch => {
   for (const key in branch) {
-    if (key[0] === '_') return true
+    if (key[0] !== '_') return true
   }
 
   return false
@@ -50,6 +46,7 @@ const hasChildren = branch => {
 const isActive = (current, path) => (current.slice(0,path.length) === path) ? true : false
 const isExpanded = props => {
   if (props.recurse || props.expanded) return true
+  if (props.current.slice(0, props.branch._path.length) === props.branch._path) return true
   const steps = props.branch._path.slice(1).split('/')
   let i = 0
   for (const step of steps) {
@@ -60,7 +57,7 @@ const isExpanded = props => {
 }
 
 const Row = props => {
-  if (!hasChildren(props.branch)) return null
+  if (!hasTitle(props.branch)) return null
   const active = isActive(props.current, props.branch._path)
   const expanded = isExpanded(props)
   const currentPage = (props.current === props.branch._path)
@@ -68,7 +65,7 @@ const Row = props => {
   let iconClasses = 'transform transition'
   linkClasses += ' '
   linkClasses += active
-    ? 'opacity-100 text-secondary'
+    ? 'opacity-100 font-bold'
     : 'opacity-70 hover:opacity-100'
   if (currentPage) {
     linkClasses += ' border-secondary'
@@ -83,7 +80,7 @@ const Row = props => {
         onClick={() => toggleActive(props)}
         className={`cursor-pointer w-6`}
       >
-        {props.level < 5 && Object.keys(props.branch).length > 3 && (
+        {props.level < 5 && hasChildren(props.branch) && (
           <button className="mt-1" onClick={() => toggleActive(props)}>
             <Icon
               icon='down'

@@ -5,10 +5,7 @@ import PageTemplate from '@/shared/pages/blog/post'
 import config from '@/site/freesewing.config'
 
 const PostPage = (props) => (
-  <AppWrapper
-    crumbs={[ { title: 'Blog', href: '/blog' } ]}
-    title={props.post.title}
-  >
+  <AppWrapper title={props.post.title}>
     <PageTemplate {...props} config={config} post={props.post} />
   </AppWrapper>
 )
