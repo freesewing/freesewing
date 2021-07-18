@@ -1,10 +1,10 @@
-import { getMdxStaticProps, getMdxPaths } from 'shared/content/mdx'
-import AppWrapper from 'shared/components/wrappers/app'
-import MdxWrapper from 'shared/components/wrappers/mdx'
-import config from 'site/freesewing.config'
-import PrevNext from 'shared/components/mdx/prevnext'
-import Plugin from 'site/components/mdx/plugin'
-import Pattern from 'site/components/mdx/pattern'
+import { getMdxStaticProps, getMdxPaths } from '@/shared/content/mdx'
+import AppWrapper from '@/shared/components/wrappers/app'
+import MdxWrapper from '@/shared/components/wrappers/mdx'
+import config from '@/site/freesewing.config'
+import PrevNext from '@/shared/components/mdx/prevnext'
+import Plugin from '@/site/components/mdx/plugin'
+import Pattern from '@/site/components/mdx/pattern'
 
 const MdxPage = (props) => {
   return (
