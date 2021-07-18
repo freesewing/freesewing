@@ -18,7 +18,7 @@ const Popout = (props) => {
   return (
     <div className="relative my-2">
       <div className={`
-        border-l-4 px-4 py-2 prose lg:prose-lg bg-opacity-5 shadow border-${color} bg-${color}`}>
+        border-l-4 px-8 py-2 prose lg:prose-lg bg-opacity-5 shadow border-${color} bg-${color}`}>
         <div className={`font-bold opacity-50`}>{type.toUpperCase()}</div>
         <div className="py-1 first:mt-0 popout-content">{props.children}</div>
       </div>

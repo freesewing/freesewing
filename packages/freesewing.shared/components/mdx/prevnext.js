@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import sortBy from 'lodash.sortby'
-import Icon from 'shared/components/icon'
-import Button from 'shared/components/elements/button'
-import { getSiteTree } from 'shared/components/navigation/tree'
+import Icon from '@/shared/components/icon'
+import Button from '@/shared/components/elements/button'
+import { getSiteTree } from '@/shared/components/navigation/tree'
 
 const pageFromHref = (href, pages) => pages?.[href.slice(1)]
 const hrefAsPath = href => href.slice(1).split('/').join('/subnav/').split('/').slice(0,-1)

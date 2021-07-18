@@ -40,7 +40,11 @@ const PostPage = (props) => {
           />
         </figure>
         <div className="strapi prose lg:prose-lg mb-12 m-auto">
-          <Markdown>{post.body}</Markdown>
+          <MdxWrapper
+            pages={props.pages}
+            href={props.href}
+            mdx={post.mdx}
+          />
         </div>
       </article>
       <Author author={post.author} />
@@ -58,7 +62,7 @@ export const getStaticProps = async (props) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await getStrapiPaths(config.site)
+  const paths = await getStrapiPaths('blog', config.site)
 
   const re = {
     paths,
