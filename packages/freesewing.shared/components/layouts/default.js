@@ -5,7 +5,6 @@ import H1 from '@/shared/components/elements/h1'
 import Icon from '@/shared/components/icon'
 import ThemeChooser from '@/shared/components/theme-chooser'
 import Button from '@/shared/components/elements/button'
-import PrevNext from '@/shared/components/navigation/prevnext'
 // Site components
 import NavigationButtons from '@/site/components/navigation-buttons'
 import Search from '@/site/components/search'
@@ -27,7 +26,6 @@ const DefaultLayout = props => (
       {!props.noCrumbs && <Breadcrumbs {...props} />}
       <H1>{props.title}</H1>
       {props.children}
-      <PrevNext tree={props.tree} path={props.path} />
     </main>
     <aside className={`
       ${props.menu ? 'block' : 'hidden'}

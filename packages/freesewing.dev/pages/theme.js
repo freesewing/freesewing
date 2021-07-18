@@ -1,11 +1,13 @@
-import AppWrapper from 'shared/components/wrappers/app'
-import config from '../freesewing.config'
-import { getMdxStaticProps } from 'shared/content/mdx'
-import themes from 'shared/themes'
-import Button from 'shared/components/elements/button'
-import Highlight from 'shared/components/mdx/highlight'
-import ThemeChooser from 'shared/components/theme-chooser'
-import Popout from 'shared/components/popout'
+import AppWrapper from '@/shared/components/wrappers/app'
+import config from '@/site/freesewing.config'
+
+import themes from '@/shared/themes'
+import Button from '@/shared/components/elements/button'
+import Highlight from '@/shared/components/mdx/highlight'
+import ThemeChooser from '@/shared/components/theme-chooser'
+import Popout from '@/shared/components/popout'
+
+
 
 const list = Object.keys(themes)
 const heading = <tr><th>Key</th><th>Value</th><th>Sample</th></tr>
@@ -69,7 +71,7 @@ const Page = props => (
         <tbody>
           {list.map( theme => (
             <>
-              <tr><td colspan="3"><h3>{theme}</h3></td></tr>
+              <tr><td colSpan="3"><h3>{theme}</h3></td></tr>
               {heading}
               {Object.keys(themes[theme].config).map(key => (
                 <tr key={`${theme}-${key}`}>
@@ -102,11 +104,5 @@ const Page = props => (
       </div>
     </AppWrapper>
 )
-
-export const getStaticProps = async (props) => {
-  const mdx = await getMdxStaticProps(config.site, config.language)
-
-  return { props: { ...mdx } }
-}
 
 export default Page

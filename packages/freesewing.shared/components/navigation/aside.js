@@ -5,58 +5,6 @@ import Link from 'next/link'
 import Icon from '@/shared/components/icon'
 import SidebarWrap from '@/site/components/wrap-sidebar'
 
-const getChildren = (path, pages, subnav={}) => {
-  if (pages[path].offspring.length > 0) {
-    for (const page of pages[path].offspring) {
-      subnav[page.split('/').pop()] = pageToNav(page, pages)
-    }
-  }
-
-  return (Object.keys(subnav).length > -1)
-    ? subnav
-    : false
-}
-
-const pageToNav = (page, pages) => ({
-  href: '/' + pages[page].path,
-  title: pages[page].frontmatter.title || page,
-  subnav: getChildren(page, pages),
-  order:pages[page].order
-})
-
-const anchorLeaf = (leaf, path, tree) => {
-  path = path.split('/').join('.subnav.')
-  set(tree, path, leaf)
-
-  return tree
-}
-
-const getSiteBranch = (tree, href) => {
-  const path = href.slice(1).split('/').join('/subnav/').split('/')
-  let branch = tree
-  for (const fork of path) branch = branch[fork]
-
-  return branch.subnav
-}
-
-const onPath = (leaf, href=false, tree) => {
-  if (!href || !leaf.href) return true
-  if (href === leaf.href) return true
-  const here = leaf.href.split('/')
-  const target = href.split('/')
-
-  for (const step in here) {
-    if (here[step] !== target[step]) return false
-  }
-
-  return true
-}
-
-const isActive = (leaf, href=false) => {
-  if (href === leaf.href) return true
-  return false
-}
-
 const plainClasses = "px-1 py-0.5"
 const nonPlainClasses = `${plainClasses} hover:bg-base-200 block border-l-4 border-transparent hover:border-secondary w-full`
 const activeClasses = "border-secondary"
@@ -80,79 +28,83 @@ const classes = (level, plain) => {
 }
 
 const toggleActive = props => {
-  if (!props.active || props.active !== props.sub.href) props.setActive(props.sub.href)
+  if (!props.active || props.active !== props.branch._path) props.setActive(props.branch._path)
   else props.setActive(null)
 }
 
-const Level1Row = props => (
-  <li key={props.sub.href}>
+const isActive = (leaf, path=false) => {
+  if (path === leaf.path) return true
+  return false
+}
+
+const onPath = (path, branch) => {
+  return true
+}
+
+const subBranch = (branch, key) => branch[key]
+const hasChildren = branch => {
+  for (const key in branch) {
+    if (key[0] === '_') return true
+  }
+
+  return false
+}
+
+const Row = props => {
+  if (!hasChildren(props.branch)) return null
+  let linkClasses = classes(props.level, props.plain)
+  linkClasses += ' '
+  linkClasses += (
+    isActive(props.branch, props._path) ||
+    props.active === props.branch._path
+  )
+    ? 'opacity-100'
+    : 'opacity-70 hover:opacity-100'
+  const expanded = (
+    props.recurse ||
+    (props.active === props.branch._path) ||
+    props.expanded ||
+    onPath(props.branch, props.path, props.tree)
+  )
+
+  return (
+  <li key={props.branch._path}>
     <div className="flex flex-row gap-2">
       <div className="flex-grow">
-        <Link href={props.sub.href}>
-          <a className={`${classes(props.level, props.plain)} ${(isActive(props.sub, props.href) || props.active === props.sub.href) ? 'opacity-100' : 'opacity-70 hover:opacity-100'}`}>
-            {props.sub.title}
+        <Link href={props.branch._path || '/'}>
+          <a className={linkClasses}>
+            {props.branch._title}
           </a>
         </Link>
-      {(props.recurse || (props.active === props.sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
-        <SiteBranch {...props} leaf={props.sub} level={2} expand={2}/>
-      )}
+        {expanded && Object.keys(props.branch) && <Branch {...props} branch={props.branch} level={props.level+1}/>}
       </div>
       <div onClick={() => toggleActive(props)} className="cursor-pointer px-4 hover:animate-pulse">
         {props.level === 1 && (
           <button className="block" onClick={() => toggleActive(props)}>
-            <Icon icon='down' size={20} className={(props.active === props.sub.href) ? 'rotate-180 transition-transform' : 'transition-transform'}/>
+            <Icon
+              icon='down'
+              size={20}
+              className={(props.active === props.branch._path)
+                ? 'rotate-180 transition-transform'
+                : 'transition-transform'
+              }/>
           </button>
         )}
       </div>
     </div>
   </li>
 )
-
-const OtherRow = props => (
-  <li key={props.sub.href}>
-    <Link href={props.sub.href}>
-      <a
-        className={`
-          ${classes(props.level, props.plain)}
-          ${isActive(props.sub, props.href) ? activeClasses : ''}
-        `}
-        onClick={() => props.setMenu(false)}
-      >
-        {props.sub.title}
-      </a>
-    </Link>
-    {(props.recurse || (props.level === 1 && props.active === sub.href) || props.expanded || onPath(props.sub, props.href, props.tree)) && (
-      <SiteBranch {...props} leaf={props.sub} level={props.level+1}/>
-    )}
-  </li>
-)
+}
 
 const activeBranch = (active, href) => ('/' + href.split('/')[1] === active)
   ? true
   : false
 
-const SiteBranch = props => {
-  if (!props.recurse) {
-    const on = onPath(props.leaf, props.href, props.tree)
-    if (!props.leaf.subnav) return null
-    if (!on) {
-      if (props.level > 2) return null
-      if (!props.expanded && props.level !== props.expand) return null
-    } else {
-      if (props.active && props.level === 2 && props.active !== props.leaf.href) return null
-    }
-  }
-
-  return (
-    <ul>
-      {sortBy(props.leaf.subnav, ['order', 'title']).map(sub => {
-        if (props.level === 1) return <Level1Row {...props} sub={sub} />
-        else if (props.level === 2 && (props.href || activeBranch(props.active, sub.href))) return <OtherRow {...props} sub={sub} />
-        else if (props.href) return <OtherRow {...props} sub={sub} />
-      })}
-    </ul>
-  )
-}
+const Branch = props => (
+  <ul>
+    {sortBy(props.branch, ['_order', '_title']).map(branch => <Row {...props} branch={branch} />)}
+  </ul>
+)
 
 const WithTitle = ({list, title}) => (
   <div className="border-2 border-primary rounded-lg border-opacity-25 my-4">
@@ -170,15 +122,12 @@ const noop = () => null
 const MainNavigation = props => {
   const [active, setActive] = useState(null)
   const { tree=false, path=false, expanded=false, recurse=false, plain=false, setMenu=noop} = props
-  if (!tree) <p>No tree in props</p>
-  const subTree = (props.offspring && props.href)
-    ? getSiteBranch(tree, props.href)
-    : tree
+  if (!tree) return null
 
-  const list = <SiteBranch
-    leaf={{subnav: subTree}}
+  const list = <Branch
+    branch={tree}
     tree={tree}
-    href={path}
+    path={path}
     expanded={expanded}
     recurse={recurse}
     plain={plain}
@@ -195,8 +144,5 @@ const MainNavigation = props => {
   else return <SidebarWrap>{list}</SidebarWrap>
 
 }
-
-
-
 
 export default MainNavigation

@@ -51,6 +51,7 @@ const AppWrapper= props => {
     </div>
   )
 }
+      //<pre>{JSON.stringify(tree, null ,2)}</pre>
 
 export default AppWrapper
 
