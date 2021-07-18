@@ -31,24 +31,6 @@ const anchorLeaf = (leaf, path, tree) => {
   return tree
 }
 
-export const getSiteTree = pages => {
-
-  // Get children per page
-  const leaves = {}
-  for (const [path, page] of Object.entries(pages)) {
-    leaves[path] = pageToNav(path, pages)
-  }
-
-  // Build tree
-  const tree = {}
-  for (const [path, leaf] of Object.entries(leaves)) anchorLeaf(leaf, path, tree)
-
-  // Keep ui out of the tree
-  delete tree.ui
-
-  return tree
-}
-
 const getSiteBranch = (tree, href) => {
   const path = href.slice(1).split('/').join('/subnav/').split('/')
   let branch = tree
@@ -185,21 +167,18 @@ const WithTitle = ({list, title}) => (
 
 const noop = () => null
 
-const PageTree = props => {
-
+const MainNavigation = props => {
   const [active, setActive] = useState(null)
-  const { pages, href=false, expanded=false, recurse=false, plain=false, setMenu=noop} = props
-  if (!pages) return null
-  const fullTree = getSiteTree(pages)
-
-  const tree = (props.offspring && props.href)
-    ? getSiteBranch(fullTree, props.href)
-    : fullTree
+  const { tree=false, path=false, expanded=false, recurse=false, plain=false, setMenu=noop} = props
+  if (!tree) <p>No tree in props</p>
+  const subTree = (props.offspring && props.href)
+    ? getSiteBranch(tree, props.href)
+    : tree
 
   const list = <SiteBranch
-    leaf={{subnav: tree}}
-    tree={fullTree}
-    href={href}
+    leaf={{subnav: subTree}}
+    tree={tree}
+    href={path}
     expanded={expanded}
     recurse={recurse}
     plain={plain}
@@ -209,7 +188,6 @@ const PageTree = props => {
     menu={props.menu}
     setMenu={setMenu}
   />
-
 
   if (props.noLogo || props.offspring) return props.list
     ? list
@@ -221,4 +199,4 @@ const PageTree = props => {
 
 
 
-export default PageTree
+export default MainNavigation

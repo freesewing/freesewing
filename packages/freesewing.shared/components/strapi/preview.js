@@ -12,7 +12,7 @@ const Preview = ({ post }) => (
               h-60 w-full bg-cover bg-center block rounded-t-lg
               lg:h-40 lg:w-full
             `}
-            style={{backgroundImage: `url(${config.strapi.host}${post?.image?.formats?.small?.url}`}}
+            style={{backgroundImage: `url(${config.strapi.host}${post.image}`}}
           ></div>
           <div className="pt-4 px-4">
             <h2 className="text-xl mb-4">
@@ -20,7 +20,7 @@ const Preview = ({ post }) => (
             </h2>
             <div className="flex flex-row justify-between text-sm text-base-300 pb-2">
               <TimeAgo date={post.date} />
-              <span>{post.author.displayname}</span>
+              <span>{post.author}</span>
             </div>
           </div>
         </a>

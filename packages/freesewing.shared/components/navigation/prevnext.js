@@ -2,7 +2,6 @@ import Link from 'next/link'
 import sortBy from 'lodash.sortby'
 import Icon from '@/shared/components/icon'
 import Button from '@/shared/components/elements/button'
-import { getSiteTree } from '@/shared/components/navigation/tree'
 
 const pageFromHref = (href, pages) => pages?.[href.slice(1)]
 const hrefAsPath = href => href.slice(1).split('/').join('/subnav/').split('/').slice(0,-1)
@@ -21,8 +20,8 @@ const getPrevParent = (href, pages, tree) => {
 
   return getBranch(hrefUp, tree).pop()
 }
-const getNextParent = (href, pages, tree) => {
-  const hrefUp = '/' + href.slice(1).split('/').slice(0,-1).join('/')
+const getNextParent = (path, tree) => {
+  const hrefUp = '/' + path.slice(1).split('/').slice(0,-1).join('/')
   const page = pageFromHref(hrefUp, pages)
   let next = getNextSibling(hrefUp, tree)
   if (!next) next = getNextParent(hrefUp, pages, tree)
@@ -114,18 +113,17 @@ const Render = ({page, prev=false}) => page ? (
 ) : null
 
 const PrevNext = props => {
-  const tree = getSiteTree(props.pages)
-  const next = getNext(props.href, props.pages, tree)
-  const prev = getPrev(props.href, props.pages, tree)
-
-  return (
+  console.log(props.path)
+  const next = getNext(props.path, props.tree)
+  const prev = getPrev(props.href, props.pages, props.tree)
+  return <pre>{JSON.stringify({next, prev}, null ,2)}</pre>
+  return (next || prev) ? (
     <div className="flex flex-row justify-between my-12 border-t-2 border-base-200 pt-4">
       <Render page={prev} prev />
       <Render page={next} />
     </div>
-  )
+  ) : null
 }
 
-        //href={prev.href || `/${prev.path}`} title={prev?.frontmatter?.title || prev?.title} />}
 export default PrevNext
 

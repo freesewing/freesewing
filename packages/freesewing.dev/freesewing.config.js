@@ -11,6 +11,7 @@ module.exports = {
   strapi: {
     host: 'https://posts.freesewing.org',
     sizes: [ 'thumbnail', 'small', 'medium', 'large' ],
+    blogpost: ['caption', 'slug', 'date', 'title', 'linktitle', 'author', 'image']
   },
 }
 

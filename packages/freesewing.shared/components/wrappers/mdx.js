@@ -4,7 +4,7 @@ import MDX from "@mdx-js/runtime";
 import YouTube from "../mdx/youtube"
 import Highlight from "../mdx/highlight"
 import Popout from '../popout'
-import Tree from '../navigation/tree'
+import Tree from '../navigation/aside'
 import Example from '../core/example'
 // Site config
 import config from '@/site/freesewing.config'

@@ -1,10 +1,11 @@
 // Shared components
-import Navigation from '@/shared/components/navigation/tree'
+import Navigation from '@/shared/components/navigation/aside'
 import Breadcrumbs from '@/shared/components/navigation/breadcrumbs'
 import H1 from '@/shared/components/elements/h1'
 import Icon from '@/shared/components/icon'
 import ThemeChooser from '@/shared/components/theme-chooser'
 import Button from '@/shared/components/elements/button'
+import PrevNext from '@/shared/components/navigation/prevnext'
 // Site components
 import NavigationButtons from '@/site/components/navigation-buttons'
 import Search from '@/site/components/search'
@@ -24,8 +25,9 @@ const DefaultLayout = props => (
       lg:w-2/3 lg:px-8 lg:mt-8
     `}>
       {!props.noCrumbs && <Breadcrumbs {...props} />}
-      <H1>{props.title || props.pages[props.href.slice(1)].frontmatter.title}</H1>
+      <H1>{props.title}</H1>
       {props.children}
+      <PrevNext tree={props.tree} path={props.path} />
     </main>
     <aside className={`
       ${props.menu ? 'block' : 'hidden'}
