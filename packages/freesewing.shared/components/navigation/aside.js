@@ -46,7 +46,9 @@ const hasChildren = branch => {
 const isActive = (current, path) => (current.slice(0,path.length) === path) ? true : false
 const isExpanded = props => {
   if (props.recurse || props.expanded) return true
-  if (props.current.slice(0, props.branch._path.length) === props.branch._path) return true
+  if (props.current.slice(0, props.branch._path.length) === props.branch._path) {
+    if (props.active.length === 0) return true
+  }
   const steps = props.branch._path.slice(1).split('/')
   let i = 0
   for (const step of steps) {
