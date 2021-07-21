@@ -3,26 +3,21 @@ import config from '@/site/freesewing.config'
 import { getStrapiStaticProps } from '@/shared/content/strapi'
 import Preview from '@/shared/components/strapi/preview'
 import BlogMenu from '@/site/components/blog-menu'
+import PageTemplate from '@/shared/pages/blog/index'
+import useBlogposts from '@/shared/hooks/useBlogposts'
 
 const Page = props => {
+  const posts = useBlogposts(config.language, false)
   return (
     <AppWrapper
       {...props}
       title='FreeSewing Maker Blog'
       crumbs={[]}
-      sidebar={<BlogMenu posts={props.posts}/>}
+      sidebar={<BlogMenu posts={posts}/>}
     >
-      <div className="flex flex-row flex-wrap">
-        {Object.values(props.posts).reverse().map(post => <Preview post={post}/>)}
-      </div>
+      <PageTemplate {...props} posts={posts} />
     </AppWrapper>
   )
-}
-
-export const getStaticProps = async (props) => {
-  const posts = await getStrapiStaticProps('blog', config.site, config.language)
-
-  return { props: { ...posts } }
 }
 
 export default Page

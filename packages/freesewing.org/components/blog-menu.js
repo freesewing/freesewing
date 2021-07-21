@@ -8,7 +8,7 @@ const BlogMenu = ({ posts, current=false }) => (
         <h4 className="text-xl mb-2">Maker blog posts:</h4>
         <ul className="pl-2">
           {Object.values(posts).reverse().map(post => (
-            <li>
+            <li key={post.slug}>
               {current && current === post.slug
                 ? <span className="font-bold">{post.linktitle}</span>
                 : (

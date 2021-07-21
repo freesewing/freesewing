@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@/site/*": ["./*"],
-      "@/shared/*": ["../freesewing.shared/*"]
+      "@/shared/*": ["../freesewing.shared/*"],
+      "@/markdown/*": ["../../markdown/*"]
     }
   }
 }

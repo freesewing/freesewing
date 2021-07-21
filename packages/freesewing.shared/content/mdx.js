@@ -3,8 +3,9 @@ import path from 'path'
 import rdir from 'recursive-readdir'
 import matter from "gray-matter"
 import { serialize } from 'next-mdx-remote/serialize'
+import config from '@/site/freesewing.config'
 
-const mdxPath = folder => path.resolve(__dirname, `../../../../../markdown/${folder}/`)
+const mdxPath = (folder) => path.resolve(config.monorepo, 'markdown', folder ? folder : config.site)
 
 const getFiles = async (path) => {
   let files
@@ -31,7 +32,7 @@ const filesAbsToRel = (files, folder, language) => {
   return relFiles.filter(slug => slug.slice(0,3) !== 'ui/')
 }
 
-export const getMdxPaths = async (folder='dev', language='en') => {
+export const getMdxPaths = async (folder, language='en') => {
   const absFiles = await getFiles(mdxPath(folder))
   const relFiles = filesAbsToRel(absFiles, folder, language)
 
@@ -40,10 +41,9 @@ export const getMdxPaths = async (folder='dev', language='en') => {
 
 const getFrontmatter = slug => {
   const { content, data } = matter(rawMdx)
-
 }
 
-export const getPageList = (paths, folder='dev', language='en', preHook=false, postHook=false) => {
+export const getPageList = (paths, folder, language='en', preHook=false, postHook=false) => {
   const allPaths = preHook
     ? preHook(paths)
     : [...paths]
@@ -71,7 +71,7 @@ export const getPageList = (paths, folder='dev', language='en', preHook=false, p
     : list
 }
 
-export const loadMdxFile = (slug, folder='dev', language='en') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
+export const loadMdxFile = (slug, folder, language='en') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
 
 export const getMdxStaticProps = async (folder, language, path=false) => {
   const props = {}
