@@ -1722,6 +1722,11 @@
     intl-messageformat "9.7.1"
     tslib "^2.1.0"
 
+"@freesewing/pattern-info@^2.17.1":
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/@freesewing/pattern-info/-/pattern-info-2.17.1.tgz#f0607f1ac0c4dbaa4511a3611c4625366dfb543c"
+  integrity sha512-eG/tI4DEXD4zscNp9KRVqkLBcDEYG/eeJ2RBBGcHtlIWKhA800uCOBGh3W9PhpJjBmkTDGEmc1TLepuxWqlGlQ==
+
 "@fullhuman/postcss-purgecss@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-4.0.3.tgz#55d71712ec1c7a88e0d1ba5f10ce7fb6aa05beb4"

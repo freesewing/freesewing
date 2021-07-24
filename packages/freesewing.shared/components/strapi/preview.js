@@ -8,10 +8,7 @@ const Preview = ({ post }) => (
       <Link href={`/blog/${post.slug}`}>
         <a href={`/blog/${post.slug}`} title={post.title}>
           <div
-            className={`
-              h-60 w-full bg-cover bg-center block rounded-t-lg
-              lg:h-40 lg:w-full
-            `}
+            className={`h-60 w-full bg-cover bg-center block rounded-t-lg`}
             style={{backgroundImage: `url(${config.strapi.host}${post.image}`}}
           ></div>
           <div className="pt-4 px-4">

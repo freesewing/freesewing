@@ -13,13 +13,13 @@ const PostPage = (props) => (
 export const getStaticProps = async (props) => {
   const posts = await getStrapiStaticProps('blog', config.site)
   const post = {}
-  if (posts.posts[props.params.slug]) {
-    const p = posts.posts[props.params.slug]
-    post.mdx =  await serialize(posts.posts[props.params.slug].body)
-    for (const field of config.strapi.blogpost) post[field] = posts.posts[props.params.slug][field]
+  if (posts.posts[props.params.post]) {
+    const p = posts.posts[props.params.post]
+    post.mdx =  await serialize(posts.posts[props.params.post].body)
+    for (const field of config.strapi.blogpost) post[field] = posts.posts[props.params.post][field]
   }
 
-  return { props: { post, slug: props.params.slug } }
+  return { props: { post, slug: props.params.post } }
 }
 
 export const getStaticPaths = async () => {

@@ -13,7 +13,7 @@ const PostPage = (props) => {
               href="#author"
               className="text-secondary hover:text-secondary-focus"
             >
-              {props.post.author.displayname}
+              {props?.post?.author?.displayname || 'FIXME: No displayname'}
             </a>
           </span>
         </div>

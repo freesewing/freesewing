@@ -10,6 +10,8 @@ module.exports = {
       config.resolve.fallback.fs = false
       config.resolve.fallback.child_process = false
     }
+    // Prevent symlink loops
+    config.resolve.symlinks = false
     // Fix for nextjs bug #17806
     config.module.rules.push({
       test: /index.mjs$/,

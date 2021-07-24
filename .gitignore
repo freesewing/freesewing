@@ -2,7 +2,7 @@
 
 # Specifics
 export
-packages/i18n/prebuild
+packages/*/prebuild
 packages/freesewing.dev/out
 packages/freesewing.org/out
 packages/plugin-theme/src/bundle.css.js
