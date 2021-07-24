@@ -9,7 +9,7 @@ import Button from '@/shared/components/elements/button'
 import NavigationButtons from '@/site/components/navigation-buttons'
 import Search from '@/site/components/search'
 
-const iconSize= 32
+const iconSize= 48
 
 const DefaultLayout = props => (
   <div className={`

@@ -5,7 +5,7 @@ const Navbar = props => (
   <header className={`
     z-20 bg-neutral text-neutral-content w-full mx-auto
     fixed bottom-0 border-t-2 border-base-300
-    lg:relative lg:border-0 lg:border-b-2 lg:border-base-200 lg:mb-8 lg:border-top-2 lg:bg-base-100 lg:text-base-content
+    lg:relative lg:border-0 lg:mb-8
   `}>
     <div className={`
       flex flex-row justify-between
