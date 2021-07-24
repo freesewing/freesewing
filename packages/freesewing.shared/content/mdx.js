@@ -1,85 +1,14 @@
-import fs from 'fs'
-import path from 'path'
-import rdir from 'recursive-readdir'
-import matter from "gray-matter"
 import { serialize } from 'next-mdx-remote/serialize'
-import config from '@/site/freesewing.config'
+import mdx from '../lib/mdx'
 
-const mdxPath = (folder) => path.resolve(config.monorepo, 'markdown', folder ? folder : config.site)
+export const getMdxPaths = mdx.getPaths
 
-const getFiles = async (path) => {
-  let files
-  try {
-    files = await rdir(path)
-  }
-  catch (err) {
-    console.log(err)
-    return false
-  }
-
-  return files
-}
-
-const filesAbsToRel = (files, folder, language) => {
-  const relFiles = []
-  for (const file of files) {
-    if (file.slice(-6) === `/${language}.md`) {
-      relFiles.push(file.split(`markdown/${folder}`).pop().slice(1, -6))
-    }
-  }
-
-  // Keep ui files out of it
-  return relFiles.filter(slug => slug.slice(0,3) !== 'ui/')
-}
-
-export const getMdxPaths = async (folder, language='en') => {
-  const absFiles = await getFiles(mdxPath(folder))
-  const relFiles = filesAbsToRel(absFiles, folder, language)
-
-  return relFiles
-}
-
-const getFrontmatter = slug => {
-  const { content, data } = matter(rawMdx)
-}
-
-export const getPageList = (paths, folder, language='en', preHook=false, postHook=false) => {
-  const allPaths = preHook
-    ? preHook(paths)
-    : [...paths]
-  const list = {}
-  allPaths.sort()
-  for (const path of allPaths) {
-    const { content, data } = matter(loadMdxFile(path, folder, language))
-    list[path] = {
-      path,
-      frontmatter: data,
-      order: `${data?.order || ''}${data.title || path}`,
-      offspring: []
-    }
-    if (path.indexOf('/') !== -1) {
-      const up = path.split('/').slice(0, -1).join('/')
-      if (list[up]) {
-        list[up].offspring.push(path)
-        list[path].up = up
-      }
-    }
-  }
-
-  return postHook
-    ? postHook(list)
-    : list
-}
-
-export const loadMdxFile = (slug, folder, language='en') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
-
-export const getMdxStaticProps = async (folder, language, path=false) => {
-  const props = {}
-  props.paths = await getMdxPaths(folder, language)
-  props.pages = getPageList(props.paths, folder, language)
+export const getMdxStaticProps = async (folder, lang='en', path=false) => {
+  const [paths, pages] = await mdx.get(folder, lang)
+  const props = { paths, pages }
   if (path) {
-    const rawMdx = loadMdxFile(path)
-    const { content, data } = matter(rawMdx)
+    const rawMdx = mdx.loadFile(path)
+    const { content, data } = mdx.matter(rawMdx)
     props.href = `/${path}`
     props.mdx = await serialize(content)
     props.frontmatter = data
