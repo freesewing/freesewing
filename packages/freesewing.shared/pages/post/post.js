@@ -10,7 +10,7 @@ const PostPage = (props) => {
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <span><Timeago date={props.post.date} /> [{props.post.date}]</span>
           <span>
-            {props.t('by')}&nbsp;
+            {props.t ? props.t('by') : 'By'}&nbsp;
             <a
               href="#author"
               className="text-secondary hover:text-secondary-focus"
@@ -38,7 +38,7 @@ const PostPage = (props) => {
           />
         </div>
       </article>
-      <Author author={author} t={props.t} type={props.type}/>
+      <Author author={author} type={props.type}/>
     </>
   )
 }

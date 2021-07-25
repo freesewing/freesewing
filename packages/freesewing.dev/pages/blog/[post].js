@@ -1,12 +1,12 @@
 import { getStrapiStaticProps, getStrapiPaths } from '@/shared/content/strapi'
 import { serialize } from 'next-mdx-remote/serialize'
 import AppWrapper from '@/shared/components/wrappers/app'
-import PageTemplate from '@/shared/pages/blog/post'
+import PageTemplate from '@/shared/pages/post/post'
 import config from '@/site/freesewing.config'
 
 const PostPage = (props) => (
   <AppWrapper title={props.post.title}>
-    <PageTemplate {...props} config={config} post={props.post} />
+    <PageTemplate {...props} config={config} post={props.post} type='blog'/>
   </AppWrapper>
 )
 

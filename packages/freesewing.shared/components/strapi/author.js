@@ -1,7 +1,7 @@
 import config from '@/site/freesewing.config'
 import MDX from "@mdx-js/runtime";
 
-const Author = ({author, type, t}) => (
+const Author = ({author, type, t=false}) => (
   <div id="author" className="shadow flex flex-col lg:flex-row rounded-xl border border-base-300 max-w-prose py-4 mx-auto lg:p-0">
     <div
       className={`
@@ -29,7 +29,10 @@ const Author = ({author, type, t}) => (
       <p className="text-xl mb-2">
         <span className="font-semibold"> {author.displayname}</span>
         <span className="text-base-300 text-sm pl-2">
-          {t('xThis', {x: t(type === 'blog' ? 'wrote' : 'made')})}
+          {t
+            ? t('xThis', {x: t(type === 'blog' ? 'wrote' : 'made')})
+            : 'Wrote this'
+          }
         </span>
       </p>
       <div className="prose">

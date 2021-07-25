@@ -3,18 +3,32 @@ import Icon from '@/shared/components/icon'
 import ThemeChooser from '@/shared/components/theme-chooser'
 import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation/navlink'
 
+const l = (to, title, subtitle, icon) => (
+  <NavLink href={to} title={title} subtitle={subtitle} icon={icon}/>
+)
+
 const ExtraNavs = props => {
   const navs = {
     theme: <ThemeChooser
       block={props.menu}
       iconSize={iconSize}
       classes={classes}
-      mini={<Mini>colors</Mini>}
+      mini={<Mini>Your colors</Mini>}
     />,
-    home: <NavLink href='/' title='Home' subtitle='freesewing.dev' icon='freesewing' />,
-    blog: <NavLink href='/blog' title='Blog' subtitle='for/by developers' icon='blog' />,
-    discord: <NavLink href='https://discord.freesewing.org/' title='Chat' subtitle='on Discord' icon='discord' />,
-    github: <NavLink href='https://github.com/freesewing/freesewing' title='Code' subtitle='on Github' icon='github' />,
+    home: l('/', 'home', 'freesewing.dev', 'freesewing'),
+    blog: l('/blog', 'blog', 'For/By Developers', 'blog'),
+    join: l('/patrons/join', 'supportUs', 'becomeAPatron', 'community'),
+    discord: l(
+      'https://discord.freesewing.org/',
+      'Or ask on Discord',
+      'Come say hi',
+      'discord'
+    ),
+    github: l(
+      'https://github.com/freesewing/freesewing', 'code',
+      'On Github',
+      'github'
+    ),
     search: (
       <button
         className={`${classes.btn} lg:w-auto`}
@@ -23,7 +37,7 @@ const ExtraNavs = props => {
         <div className={classes.btnWrap}>
           <Icon icon='search' size={iconSize} className="hidden lg:inline"/>
           <span className={classes.btnSpan}>
-            Search
+            Search for answers
             <Mini>[Ctrlk-k]</Mini>
           </span>
         </div>
@@ -47,10 +61,11 @@ const ExtraNavs = props => {
       : [navs.theme, navs.discord, navs.github]
     : (
       <>
-        <div className="hidden lg:flex lg:flex-row lg:gap-4 items-start">
+        <div className="hidden lg:flex lg:flex-row lg:gap-2 items-start">
           {navs.home}
           {navs.blog}
           {navs.search}
+          {navs.discord}
         </div>
         <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300 py-1">
           <div className="w-1/2 px-1">{navs.search}</div>
@@ -58,7 +73,6 @@ const ExtraNavs = props => {
         </div>
         <div className='hidden lg:flex lg:flex-row'>
           {navs.theme}
-          {navs.discord}
           {navs.github}
         </div>
       </>

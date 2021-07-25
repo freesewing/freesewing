@@ -19,7 +19,7 @@ const getCrumbs = (pages, href) => {
 const defaultHome = <Icon icon='freesewing' size={24} className="inline" />
 
 const Breadcrumbs = (props) => {
-  const {path=false, tree, t, title='FIXME: No title'} = props
+  const {path=false, tree, t=(x)=>x, title='FIXME: No title'} = props
   console.log(props)
   if (!path) return null
   const crumbs = []
