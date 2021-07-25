@@ -39,8 +39,8 @@ export default function (part) {
   points.button = new Point(points.s3CollarSplit.x - 2 / 3 * measurements.shoulderToShoulder, points.s3CollarSplit.y + measurements.hpsToBust * 1.17)
   // end Yuri points
 
-  snippets.buttonhole = new Snippet('buttonhole', points.button.shift(0, 25))
-  snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30))
+  snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25)).attr('data-rotate', '90').attr('data-scale', '2.5')
+  snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30)).attr('data-scale', '3.3')
 
   // Store length of the neck seam
   store.set(
