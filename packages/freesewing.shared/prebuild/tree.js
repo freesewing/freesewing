@@ -45,7 +45,7 @@ const addPosts = (tree, posts) => {
 
 const prebuild = async (folder, mdx, strapi) => {
   for (const lang of config.languages) {
-    const tree = addPosts(buildMdxTree(mdx.pages[lang]), strapi.posts[lang])
+    const tree = addPosts(buildMdxTree(mdx.pages[lang]), strapi.blog.posts[lang])
     fs.writeFileSync(
       path.join(...folder, `${lang}.tree.js`),
       `export const tree = ${JSON.stringify(tree)}\n`

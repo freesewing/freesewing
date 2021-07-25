@@ -36,7 +36,7 @@ const AppWrapper= props => {
     search, setSearch, toggleSearch: () => setSearch(!search),
     path, tree,
     title: props.title,
-
+    t: props.t,
   }
 
   return (

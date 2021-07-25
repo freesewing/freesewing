@@ -6,22 +6,20 @@ import { getStrapiStaticProps } from '@/shared/content/strapi'
 import Preview from '@/shared/components/strapi/preview'
 import BlogMenu from '@/site/components/blog-menu'
 import PageTemplate from '@/shared/pages/post/index'
-import useBlogposts from '@/shared/hooks/useBlogposts'
-import Popout from '@/shared/components/popout'
+import useShowcaseposts from '@/shared/hooks/useShowcaseposts'
 
 const Page = props => {
   const { t } = useTranslation('common')
-  const posts = useBlogposts(config.language, false)
+  const posts = useShowcaseposts(config.language, false)
   return (
-    <AppWrapper t={t} title={'FreeSewing '+t('makerBlog')} {...props}>
-      <Popout related t={t}>
-        FreeSewing&nbsp;
-        {t('developerBlog')}:
-        <a href="https://freesewing.dev/blog" className='px-2'>
-          freesewing.dev/blog
-        </a>
-      </Popout>
-      <PageTemplate {...props} posts={posts} type='blog' />
+    <AppWrapper
+      {...props}
+      title={'FreeSewing ' + t('showcase')}
+      crumbs={[]}
+      sidebar={<BlogMenu posts={posts}/>}
+      t={t}
+    >
+      <PageTemplate {...props} posts={posts} type='showcase'/>
     </AppWrapper>
   )
 }

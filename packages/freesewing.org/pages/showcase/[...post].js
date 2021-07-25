@@ -11,13 +11,13 @@ const PostPage = (props) => {
   const post = props.posts[props.slug]
   return (
     <AppWrapper t={t} title={post.title} {...props}>
-      <PageTemplate {...props} config={config} post={post} t={t} type='blog'/>
+      <PageTemplate {...props} config={config} post={post} t={t} type='showcase'/>
     </AppWrapper>
   );
 };
 
 export const getStaticProps = async ({params, locale}) => {
-  const posts = await getStrapiStaticProps('blog', config.site, config.language)
+  const posts = await getStrapiStaticProps('showcase', config.site, config.language)
   if (posts.posts[params.post]) {
     posts.posts[params.post].mdx = await serialize(posts.posts[params.post].body)
   }
@@ -32,7 +32,7 @@ export const getStaticProps = async ({params, locale}) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await getStrapiPaths('blog', config.site, config.language)
+  const paths = await getStrapiPaths('showcase', config.site, config.language)
 
   const re = {
     paths,

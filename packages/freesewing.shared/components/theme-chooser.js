@@ -2,7 +2,7 @@ import Icon from '@/shared/components/icon'
 import themes from '@/shared/themes'
 
 const ThemeChooser = props => (
-  <div className={`dropdown dropdown-end ${props.block ? 'w-full' : props.classes.btn}`}>
+  <div className={`dropdown dropdown-end ${props.block ? 'w-full' : props.classes.btn} cursor-pointer`}>
     <div tabIndex="0" className={`${props.block ? 'btn btn-ghost btn-block' : ''}`}>
       <div className={`${props.block ? '' : props.classes.btnWrap}`}>
         <Icon icon='colors' size={props.iconSize || 32}/>

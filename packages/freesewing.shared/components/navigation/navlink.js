@@ -4,10 +4,10 @@ import Icon from '@/shared/components/icon'
 export const classes = {
   btn: 'py-4 px-4 pb-0 font-bold text-uppercase transition-colors duration-200 hover:text-secondary-content',
   btnWrap: 'flex flex-col items-center text-center',
-  btnSpan: 'p-2 uppercase'
+  btnSpan: 'p-2 uppercase text-xs xl:text-base'
 }
 
-export const Mini = props => <span className="hidden lg:inline lg:text-xs lg:opacity-60"><br />{props.children}</span>
+export const Mini = props => <span className={`hidden xl:inline lg:text-xs ${props.noOpacity ? '' : 'lg:opacity-60'}`}><br />{props.children}</span>
 
 export const iconSize = 52
 

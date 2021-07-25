@@ -1,14 +1,7 @@
 const config = require('../freesewing.shared/config/next.config')
-const fs = require('./freesewing.config')
+const i18n = require('./next-i18next.config')
+console.log(i18n)
 
-//config.i18n = {
-//  locales: fs.languages,
-//  defaultLocale: fs.language,
-//  domains: fs.languages.map(lang => ({
-//    domain: `${(lang === fs.language) ? '' : lang+'.'}freesewing.org`,
-//    defaultLocale: lang,
-//    locales: [lang],
-//  })),
-//}
+config.i18n = i18n.i18n
 
 module.exports = config

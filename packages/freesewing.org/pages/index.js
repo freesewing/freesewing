@@ -1,3 +1,5 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 import AppWrapper from '@/shared/components/wrappers/app'
 import config from '@/site/freesewing.config'
 import Markdown from 'react-markdown'
@@ -44,13 +46,20 @@ head over to the \`#project-2022\` channel.
 
 
 const Page = props => {
+  const { t } = useTranslation('common')
   return (
-    <AppWrapper {...props} title='Project 2022' noCrumbs>
+    <AppWrapper {...props} title='Project 2022' noCrumbs t={t}>
       <div className="prose lg:prose-xl">
         <Markdown>{body}</Markdown>
       </div>
     </AppWrapper>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common']))
+  },
+})
 
 export default Page

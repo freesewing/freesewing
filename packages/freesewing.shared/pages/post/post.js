@@ -1,19 +1,21 @@
 import Author from '@/shared/components/strapi/author'
 import MdxWrapper from '@/shared/components/wrappers/mdx'
+import Timeago from 'react-timeago'
 
 const PostPage = (props) => {
+  const author = props.post.author || props.post.maker
   return (
     <>
       <article className="strapi mb-12">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
-          <span>{props.post.date}</span>
+          <span><Timeago date={props.post.date} /> [{props.post.date}]</span>
           <span>
-            By&nbsp;
+            {props.t('by')}&nbsp;
             <a
               href="#author"
               className="text-secondary hover:text-secondary-focus"
             >
-              {props?.post?.author?.displayname || 'FIXME: No displayname'}
+              {author?.displayname || 'FIXME: No displayname'}
             </a>
           </span>
         </div>
@@ -36,7 +38,7 @@ const PostPage = (props) => {
           />
         </div>
       </article>
-      <Author author={props.post.author} />
+      <Author author={author} t={props.t} type={props.type}/>
     </>
   )
 }

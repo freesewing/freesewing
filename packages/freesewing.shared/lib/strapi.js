@@ -5,8 +5,9 @@ const config = {
   languages: ['en','de','es','fr','nl'],
 }
 
-const buildUrl = (type, site, lang) =>
-    `${config.host}/${type}posts?_locale=${lang}&_sort=date:ASC&dev_${site === 'dev' ? 'eq' : 'ne'}=true`
+const buildUrl = (type, site, lang) => (type === 'blog')
+  ?  `${config.host}/blogposts?_locale=${lang}&_sort=date:ASC&dev_${site === 'dev' ? 'eq' : 'ne'}=true`
+  :  `${config.host}/showcaseposts?_locale=${lang}&_sort=date:ASC`
 
 module.exports = {
   languages: config.languages,

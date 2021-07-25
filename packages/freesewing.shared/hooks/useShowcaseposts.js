@@ -1,13 +1,12 @@
-import all from '@/site/prebuild/blogposts'
+import all from '@/site/prebuild/showcaseposts'
 
-const useBlogposts = (lang='en', post=false) => {
+const useShowcaseposts = (lang='en', post=false) => {
   const posts = {}
   for (const [slug, post] of Object.entries(all[lang].posts)) {
     posts[slug] = {
       slug,
       title: post.title,
-      linktitle: post.linktitle,
-      author: post.author.displayname,
+      maker: post?.maker?.displayname,
       date: post.date,
       image: post?.image?.formats?.medium?.url,
     }
@@ -18,4 +17,4 @@ const useBlogposts = (lang='en', post=false) => {
     : posts
 }
 
-export default useBlogposts
+export default useShowcaseposts

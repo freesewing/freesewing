@@ -18,12 +18,22 @@ const getCrumbs = (pages, href) => {
 
 const defaultHome = <Icon icon='freesewing' size={24} className="inline" />
 
-const Breadcrumbs = ({crumbs=false, path='/', lang='en', home=defaultHome, title=false}) => {
-  return null
-  const nav = useNavigation(lang, path)
-  if (!crumbs) crumbs = getCrumbs(pages, href)
+const Breadcrumbs = (props) => {
+  const {path=false, tree, t, title='FIXME: No title'} = props
+  console.log(props)
+  if (!path) return null
+  const crumbs = []
+  const steps = path.slice(1).split('/').slice(0, -1)
+  let href = ''
+  for (const step of steps) {
+    href += '/' + step
+    crumbs.push({
+      href,
+      title: step
+    })
+  }
 
-  if (crumbs && crumbs[0] && crumbs[0].href !== '/') crumbs.unshift({ title: home, href: '/' })
+  crumbs.unshift({ title: t('home'), href: '/' })
 
   return (
     <ul>
@@ -36,12 +46,12 @@ const Breadcrumbs = ({crumbs=false, path='/', lang='en', home=defaultHome, title
               </a>
             </Link>
           </li>
-          <li key={`${crumb.href}-spacer`} className="inline font-semibold p-3">
+          <li key={`${crumb.href}-spacer`} className="inline font-semibold px-2">
             &raquo;
           </li>
         </React.Fragment>
       ))}
-      <li className="inline">{title || pages[href.slice(1)].frontmatter.title}</li>
+      <li className="inline">{title}</li>
     </ul>
   )
 }
