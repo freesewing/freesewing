@@ -55,15 +55,26 @@ export default function (part) {
 
   // Paperless?
   if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+    macro('vd', {
+      from: points.top,
+      to: points.bottom,
+      x: points.top.x - sa - 15
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15
+      from: new Point(0, points.right.y),
+      to: points.bottom,
+      x: 20
+    })
+
+    macro('ld', {
+      from: points.top,
+      to: points.right,
+      d: sa + 15
+    })
+    macro('hd', {
+      from: new Point(0, points.right),
+      to: points.right,
+      y: points.right.y
     })
   }
 
