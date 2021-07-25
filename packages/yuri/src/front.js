@@ -12,7 +12,9 @@ export default function (part) {
     sa,
     options,
     measurements,
-    macro
+    macro,
+    snippets,
+    Snippet
   } = part.shorthand()
 
   // Clear paths from Brian
@@ -36,6 +38,9 @@ export default function (part) {
   points.bottomCp2 = new Point(points.bottom.x, points.cfWaist.y)
   points.button = new Point(points.s3CollarSplit.x - 2 / 3 * measurements.shoulderToShoulder, points.s3CollarSplit.y + measurements.hpsToBust * 1.17)
   // end Yuri points
+
+  snippets.buttonhole = new Snippet('buttonhole', points.button.shift(0, 25))
+  snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30))
 
   // Store length of the neck seam
   store.set(
