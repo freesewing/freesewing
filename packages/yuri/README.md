@@ -1,6 +1,8 @@
 # yuri
 Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies #freesewing #freesewingHuey #freesewingHugo
 
+Try it here : https://yuri-pattern.netlify.app/
+
 
 >
 
