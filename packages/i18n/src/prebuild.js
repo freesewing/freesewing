@@ -36,7 +36,7 @@ const parseYaml = (lang, topic, ext, subfolder=false) => {
       )
     )
   } catch (err) {
-    console.log(err)
+    console.log(err, topic, ext, lang)
     result = false
   }
 
@@ -49,7 +49,10 @@ const loadYaml = (lang, topic, ext, subfolder=false) => {
   const result = parseYaml(lang, topic , ext, subfolder)
   if (result) {
     for ([key, val] of Object.entries(result)) {
-      if (ext === 'yaml') data[`${topic}.${key}`] = val
+      if (ext === 'yaml') {
+        if (topic === 'v3') data[key] = val
+        else data[`${topic}.${key}`] = val
+      }
       else if (ext === 'yml') {
         data[`${topic}.${key}.d`] = val.d
         if (topic === 'jargon') data[`${topic}.${key}.term`] = val.term

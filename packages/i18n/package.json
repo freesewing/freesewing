@@ -20,6 +20,7 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
+    "prebuild": "node src/prebuild.js",
     "build": "rollup -c",
     "test": "echo \"i18n: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",

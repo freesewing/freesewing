@@ -15,8 +15,6 @@ averagePeopleDoNotExist: "Average people don't exist"
 awesome: Awesome
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
-becomeAPatron: Become a patron
-blog: Blog
 browseBlogposts: Browse blogposts
 browsePatterns: Browse patterns
 browseShowcases: Browse showcases
@@ -34,7 +32,6 @@ chooseADesign: Choose a design
 chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
-community: Community
 configureLayout: Configure layout
 configureYourDraft: Configure your draft
 contactUs: Contact us
@@ -89,7 +86,6 @@ goodJob: Good job
 goodToSeeYouAgain: Good to see you again {user}
 handle: Handle
 helpUsTranslate: Help us translate
-home: Home
 howCanWeHelpYou: How can we help you?
 howToTakeMeasurements: How to take measurements
 i18n: Internationalization
