@@ -22,11 +22,6 @@ export default function (part) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
   }
 
-  // Shorten body to take ribbing into account
-  if (options.ribbing) {
-    for (const p of ['hem', 'cfHem']) points[p] = points[p].shift(90, store.get('ribbingHeight'))
-  }
-
   // Shape side seam
   points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
@@ -83,7 +78,7 @@ export default function (part) {
     snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30)).attr('data-scale', '3.3')
 
     if (sa) {
-      paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa)).join(paths.buttonBase.offset(3 * sa))
+      paths.sa = paths.hemBase.offset(3 * sa).join(paths.saBase.offset(sa)).join(paths.buttonBase.offset(3 * sa))
       paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }
   }

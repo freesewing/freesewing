@@ -20,13 +20,6 @@ export default function (part) {
     if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
   }
 
-  // Shorten body to take ribbing into account
-  if (options.ribbing) {
-    const rh = options.ribbingHeight * (measurements.hpsToWaistBack + measurements.waistToHips)
-    for (const p of ['hem', 'cbHem']) points[p] = points[p].shift(90, rh)
-    store.set('ribbingHeight', rh)
-  }
-
   // Shape side seam
   points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
@@ -81,7 +74,7 @@ export default function (part) {
     })
     macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {
-      paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
+      paths.sa = paths.hemBase.offset(3 * sa).join(paths.saBase.offset(sa))
       paths.sa
         .move(paths.sa.end())
         .line(points.cbNeck)

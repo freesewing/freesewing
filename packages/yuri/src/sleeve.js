@@ -17,12 +17,6 @@ export default function (part) {
     if (p !== 'sleevecap') delete paths[p]
   }
 
-  // Shorten sleeve to take ribbing into account
-  if (options.ribbing) {
-    for (let p of ['wristLeft', 'wristRight'])
-      points[p] = points[p].shift(90, store.get('ribbingHeight'))
-  }
-
   // Paths
   paths.saBase = new Path()
     .move(points.wristRight)
@@ -46,22 +40,18 @@ export default function (part) {
       to: new Point(0, points.backPitch.y),
     })
     if (sa) {
-      if (options.ribbing) paths.sa = paths.seam.offset(sa)
-      else {
-        paths.sa = paths.saBase
-          .clone()
-          .offset(sa)
-          .join(paths.hemBase.offset(3 * sa))
-          .close()
-      }
+      paths.sa = paths.saBase
+        .clone()
+        .offset(sa)
+        .join(paths.hemBase.offset(3 * sa))
+        .close()
       paths.sa.attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
-    let hemSa = sa
-    if (!options.ribbing) hemSa = 3 * sa
+    const hemSa = 3 * sa
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,

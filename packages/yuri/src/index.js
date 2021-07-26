@@ -6,7 +6,6 @@ import config from '../config'
 import draftBack from './back'
 import draftFront from './front'
 import draftSleeve from './sleeve'
-import draftCuff from './cuff'
 import draftGusset from './gusset'
 import draftHoodSide from './hoodside'
 import draftHoodCenter from './hoodcenter'
@@ -35,7 +34,6 @@ Pattern.prototype.draftSleeveBase = function (part) {
 Pattern.prototype.draftBack = draftBack
 Pattern.prototype.draftFront = draftFront
 Pattern.prototype.draftSleeve = draftSleeve
-Pattern.prototype.draftCuff = draftCuff
 Pattern.prototype.draftGusset = draftGusset
 Pattern.prototype.draftHoodSide = draftHoodSide
 Pattern.prototype.draftHoodCenter = draftHoodCenter

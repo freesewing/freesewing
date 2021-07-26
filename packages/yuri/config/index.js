@@ -16,13 +16,10 @@ export default {
       'collarEase',
       'shoulderEase',
       'hipsEase',
-      'ribbingStretch',
     ],
     style: [
       'lengthBonus',
       'sleeveLengthBonus',
-      'ribbing',
-      'ribbingHeight',
       's3Collar',
       's3Armhole',
     ],
@@ -91,7 +88,7 @@ export default {
     sleeve: 'sleeveBase',
   },
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
-  parts: ['cuff', 'gusset', 'hoodSide', 'hoodCenter'],
+  parts: ['gusset', 'hoodSide', 'hoodCenter'],
   options: {
     // Constants
     brianFitSleeve: true,
@@ -106,7 +103,7 @@ export default {
     bicepsEase: { pct: 8, min: 0, max: 20 },
     chestEase: { pct: 8, min: -4, max: 20 },
     collarEase: { pct: 20, min: 10, max: 30 },
-    cuffEase: { pct: 20, min: 10, max: 60 },
+    cuffEase: { pct: 30, min: 20, max: 60 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 10, min: 5, max: 15 },
     shoulderEase: { pct: 0.5, min: -2, max: 6 },
@@ -136,10 +133,6 @@ export default {
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
 
     // Options specific to Yuri
-    ribbing: { bool: false },
-
-    ribbingHeight: { pct: 10, min: 5, max: 15 },
     hipsEase: { pct: 0, min: 0, max: 10 },
-    ribbingStretch: { pct: 15, min: 0, max: 30 },
   },
 }
