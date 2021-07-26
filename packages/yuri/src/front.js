@@ -39,9 +39,6 @@ export default function (part) {
   points.button = new Point(points.s3CollarSplit.x - 2 / 3 * measurements.shoulderToShoulder, points.s3CollarSplit.y + measurements.hpsToBust * 1.17)
   // end Yuri points
 
-  snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25)).attr('data-rotate', '90').attr('data-scale', '2.5')
-  snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30)).attr('data-scale', '3.3')
-
   // Store length of the neck seam
   store.set(
     'frontNeckSeamLength',
@@ -82,6 +79,9 @@ export default function (part) {
       from: points.s3CollarSplit,
       to: new Point(points.s3CollarSplit.x, points.bottom.y)
     })
+    snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25)).attr('data-rotate', '90').attr('data-scale', '2.5')
+    snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30)).attr('data-scale', '3.3')
+
     if (sa) {
       paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa)).join(paths.buttonBase.offset(3 * sa))
       paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
