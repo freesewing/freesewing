@@ -64,7 +64,7 @@ const Page = props => (
       </Highlight>
       <h3>Dropdown</h3>
     </div>
-    <ThemeChooser />
+    <ThemeChooser classes={{btn:''}}/>
     <div className="prose lg:prose-lg mt-8">
       <h2>Themes</h2>
       <table>

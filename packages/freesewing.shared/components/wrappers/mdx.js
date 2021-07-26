@@ -6,12 +6,13 @@ import Highlight from "../mdx/highlight"
 import Popout from '../popout'
 import Tree from '../navigation/aside'
 import Example from '../core/example'
+import { list as designs } from '@freesewing/pattern-info'
 // Site config
 import config from '@/site/freesewing.config'
 
 const DesignIterator = props => {
   const Component = props.component
-  return config.designs.map(design => <Component design={design} />)
+  return designs.map(design => <Component design={design} />)
 }
 
 const components = {
