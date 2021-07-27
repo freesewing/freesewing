@@ -16,7 +16,7 @@ export default function (part) {
   const w = store.get('gussetLength')
   points.top = new Point(0, 0)
   points.bottom = new Point(0, w)
-  points.right = points.bottom.rotate(33.0, points.top)
+  points.right = points.bottom.rotate(36.0, points.top)
   points.cp1 = new Point(0, w * 6 / 5).rotate(90, points.bottom)
   points.cp2 = new Point(points.right.x, points.right.y * 6 / 5).rotate(-60, points.right)
   points.title = new Point(0, 2 * w / 3).rotate(15, points.top)
