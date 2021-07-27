@@ -16,64 +16,140 @@ npm install --save yuri
 
 ## What you need
 - Sweater fabric
-- 2 buttons (2,5cm or 1inch diameter)
+- 2 buttons (2,5cm or 1 inch diameter)
 
 ## Instructions / how to
 
-### Step 1 :  Sew the shoulders
-Match the good sides together and sew the one front piece with the back between the neck and the shoulder.
-Repeat with the other front part and the other shoulder of the back.
+This pattern can be sewn with or with out a overlocker/serger. To ***Finish*** seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+#### Finishing Method 1
+- Press open the seam allowances. 
+- Then on the good side, ***Edgestitch*** 1/8" (3mm) away or closer to both sides of the seam catching the seam allowances underneath.
+- On the wrong side trim the seam allowances close to the edgestitching. 
 
-### Step 2 : Attach the sleeves
+#### Finishing Method 2
+- Sew the seam allowances together with either a ziz-zag, overcast or straight stitch and press to one side.
+- Trim to 1cm (3/8inch) seam allowance if needed.
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece. It is also marked by a double notch on the pattern.
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam. Do this for both sleeve pieces.
-- To finish the seam, you can use one of these methods:
-  - Use a serger to sew and finish the seam in one step. This is fast and convenient, but produces a less-refined look.
-  - If you do not have a serger, or would like a more refined look, sew a seam with a straight stitch on your conventional machine. Press the seam allowances apart on the wrong side. Then, edgestitch along both sides of the seam from the right side. Finally, trim the excess seam allowance. This produces a refined look, but takes longer.
-  - Another serger-free option is to sew the seam with a straight stitch. Then stitch together the seam allowances with an additional line of zig-zag alongside the straight stitch. Finally, trim the excess seam allowance. This simulates what a serger would do.
+<Note>
 
-### Step 3 : Hem the cuffs
-As this pattern does not use ribbing, make a hem on the end of the sleeves to end it nicely.
+If using a overlocker/serger you can sew seams which need fininshing in one go rather than sewing the seam conventionally and finishing it. 
+  
+</Note>
+
+### Step 1 : Attaching the Gussets.
+- With the good sides together, sew the gussets to the front panels along the side seams.
+- ***Finish*** seams.
+
+### Step 2 :  Sew the Shoulder Seams
+- With good sides together, sew the front pieces to the back along the shoulder seams.
+- ***Finish*** seams.
+
+### Step 3 : Attach the Sleeves
+
+- With good sides together, matching back notch to back notch and front notch to front notch, sew the sleeves to the body.
+- ***Finish*** seams.
+
+<Note>
+
+On the pattern the back notch is marked as a cross-notch. It is recommended to make this a double notch when cutting out your pieces to make the back notch easier to differentiate from the front.
+  
+</Note>
 
 ### Step 4: Close the Sides
-- Match the good sides together along sides and sleeves.
-- Stitch the sleeves together in one seam, starting at the underarm and going all the way through to the end of the sleeve.
-- Stitch the sides with the gusset in two seams, starting both from the underarm. Repeat on the other sides
+- With good sides together, matching shoulder seams, start at the sleeve edge and sew the sleeve together than sew the gusset and back together.
+- ***Finish*** seams.
+- Repeat for remaining sleeve and side opening.
 
-### Step 5 : Hem the borders
-Fold and sew the hem on all the borders except around the neck , starting from the top of one front panel, to the bottom of the panel, then on the bottom of the gusset, then the bottom of the back, the bottom of the other gusset, and go up to the neck of the other front panel.
+### Step 5 : Hem the Sleeves
+- (Optional) Overcast the raw edge of the sleeve.
+- Press the hem allowance to the wrong side of the fabric and baste in place close to the raw edge.
+- On the outside, stitch away from the folded edge, catching the hem allowance underneath using the basting as guide to where the raw edge is.
+- (Optional) On the outside, stitch 1/4" (6mm) parallel to original stich along the hem allowance.
+- Remove basting.
 
-### Step 6: Prepare Inside and Outside Hood
-Follow this set of steps twice, once for the outer hood and again for the inside hood.
+<Note>
 
-- Run a Center Panel piece around one outer edge of the Hood Side, good sides together, and pin in place. Stitch.
-- Pin the Center Panel piece around the remaining outer edge of the hood, good sides together. Stitch.
-- Press the seam allowances.
+You can skip the overcasting if using a twin needle, coverstitch machine or if you wish to leave the edge raw when hemming. 
+Also this is just one hemming method. If you prefer another way go for it.
+  
+</Note>
 
-### Step 7: Join Inside and Outside Hood
-* With both hoods inside out, put them on top of each other, good sides together.
-* Align the center panel seams and pin.
-* Stitch along the outer edge of the hood with a 1cm seam allowance. Do not trim the seam allowance.
-* Flip the hood pieces right side out, then press the outer edge flat.
-* Topstitch along the edge of the hood, about 1.5-2 cm from the edge. Ensure that you go beyond the seam allowance, and that it is not caught in this line of stitching. This creates a decorative rim. The enclosed seam allowance helps make the rim a bit poofy.
-* To close the hood, serge together the bottom layers along the neckline. If you do not have a serger, use a zig-zag stitch.
+### Step 6 : Hem the Raw Edges
+- Fold under and sew the hem on all the raw edges except around the neck edge.
+- Sew the hem from the top of one front, to the bottom of the front, then along the bottom of the gusset, then along the bottom of the back, then along bottom of the other gusset, and then up to the neck of the other front.
 
-### Step 8: Attach the Hood
-* Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
-* Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
-* Working around to the front, pin the hood to the neckline.
-* Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
-* Serge or zig-zag all layers together with 1cm seam allowance. Check around the neckline to make sure all layers were caught by the stitching.
-* From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding with a straight stitch.
-* Trim excess binding from the inside.
+### Step 7: Prepare Lining and Outside Hood
+Follow this step twice, once for the outer hood and once for the lining hood.
 
+- With good sides together, sew the long edge of the Hood Centre to the outer edge of one of the Hood Sides.
+- With good sides together, sew the remaining long edge of the Hood Centre to the outer edge of the other Hood Side.
+- Press the seam allowances open.
+- ***Finish*** seams.
 
-### Step 9 : Add buttons and button holes
-* Sew button holes on 2,5cm (1 inch) on the pattern marks on the front panel
-* Try your Yuri and see where the buttons fits the best, or follow the placement of the buttons on the pattern.
+<Note>
 
-### Step 10 : Ta-daaa
+It is recommended to use **Finishing Method 1** for this step regardless of whether you are using a overlocker/serger.
+  
+</Note>
+
+### Step 8: Join Inside and Outside Hood
+- With good sides together, pin the Outside and Lining Hoods together matching the seams.
+- Sew the pinned edge together.
+- Trim the seam allowance to 1cm (3/8inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise *do not* trim the seam.
+- Turn the hood good sides out and press the outer edge flat.
+- On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4inch) from the edge. Ensure that your topstiching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
+- With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a ziz-zag or overcast stitch on a regular machine.
+ 
+<Note>
+  
+When pressing you want to make sure that the outer fabric folds a little bit to the inside. This will help prevent the lining from peaking out of the hood when topstitched.
+If you do not wish to have the decorative rim, you may still want to understitch the lining so it does not peak to the outside.
+  
+</Note>
+
+### Step 9: Prepping a Neckband for the Hood (Optional)
+- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm long and triple your neck seam allowance wide.
+- With good sides together sew the strip in to a circular band with a 1cm seam allowance.
+- Press open the seams.
+- On the good sides, ***Edgestitch*** close to both sides of the seam catching the seam allowance underneath.
+- (Optional) Trim the excess seam allowance.
+
+<Note>
+  
+Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+  
+</Note>  
+  
+### Step 10: Attach the Hood
+- With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching the neckband seam with centre back.
+- If using an overlocker/serger, serge the neck and hood together through all layers.
+- If using a sewing machine, use a zig-zag stich to sew all the neck and hood layers together.
+- On the outside check around the neckline to make sure all the layers are caught.
+- Press seam allowances towards the body.
+- On the good side, topstitch with a straight sitch approximately 1cm(3/8inch) away from the neck edge towards the body to catch and secure the neckband underneath.
+- Trim the excess binding from the inside.
+
+<Warning>
+  
+If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch suchs as the front as an overlocker/serger may have trouble sewing these parts.
+  
+</Warning>
+<Note>
+  
+If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 0.6cm (1/4inch) instead of 1cm (3/8inch). 
+  
+</Note>
+
+### Step 11 : Buttons and Buttonholes
+- At the buttonhole marks on the front panels, sew button holes for 2.5cm (1 inch) buttons or button size of your choosing.
+- For button placement you may want to try your Yuri on and see where the buttons fit the best for you.
+- Alternatively you can use the button markings on the pattern for placement.
+- Attach the buttons.
+ 
+### Step 12 : Ta-daaa
 Enjoy your Yuri!
 
 ## License
