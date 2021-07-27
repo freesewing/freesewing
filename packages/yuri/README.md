@@ -158,5 +158,6 @@ Enjoy your Yuri!
 
 [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/)
 Code by [biou](https://github.com/biou) & Pattern design by [hellgy](https://github.com/hellgy)
+Instruction review/proofreading/improvements by [bobgeorgethe3rd](https://github.com/bobgeorgethe3rd)
 
 
