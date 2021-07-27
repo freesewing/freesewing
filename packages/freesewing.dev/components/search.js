@@ -109,7 +109,7 @@ const SearchBox = props => {
   const { currentRefinement, isSearchStalled, refine, setSearch, setActive } = props
 
   return (
-    <>
+    <div>
       <form noValidate action="" role="search" onSubmit={(evt) => evt.preventDefault()}>
         <div className="form-control">
           <label className="label hidden lg:block">
@@ -140,7 +140,10 @@ const SearchBox = props => {
             >X</button>
           </div>
         </div>
-        <div className="overscroll-auto">
+        <div
+          className="overscroll-auto overflow-y-auto"
+          style={{maxHeight: 'calc(100vh - 10rem)'}}
+        >
         {
           input.current
           && input.current.value.length > 0
@@ -164,8 +167,7 @@ const SearchBox = props => {
           </button>
         </div>
       </div>
-
-    </>
+    </div>
   )
 }
 
