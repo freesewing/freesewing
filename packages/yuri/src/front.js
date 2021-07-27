@@ -75,7 +75,7 @@ export default function (part) {
       to: new Point(points.s3CollarSplit.x, points.bottom.y)
     })
     snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25)).attr('data-rotate', '90').attr('data-scale', '2.5')
-    snippets.button = new Snippet('button', points.cutonfoldVia1.shift(-70, 30)).attr('data-scale', '3.3')
+    snippets.button = new Snippet('button', paths.buttonBase.shiftFractionAlong(0.146).shift(0, 30)).attr('data-scale', '3.3')
 
     if (sa) {
       paths.sa = paths.hemBase.offset(3 * sa).join(paths.saBase.offset(sa)).join(paths.buttonBase.offset(3 * sa))
