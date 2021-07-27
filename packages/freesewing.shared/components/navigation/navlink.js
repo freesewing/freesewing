@@ -2,7 +2,10 @@ import Link from 'next/link'
 import Icon from '@/shared/components/icon'
 
 export const classes = {
-  btn: 'py-4 px-4 pb-0 font-bold text-uppercase transition-colors duration-200 hover:text-secondary-content',
+  btn: `
+  font-bold text-uppercase transition-colors duration-200 hover:text-secondary-content
+  px-2 pb-0 w-full
+  lg:w-auto lg:p-4`,
   btnWrap: 'flex flex-col items-center text-center',
   btnSpan: 'p-2 uppercase text-xs xl:text-base'
 }

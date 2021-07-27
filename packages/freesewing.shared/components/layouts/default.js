@@ -16,7 +16,6 @@ const DefaultLayout = props => (
   flex flex-row flex-nowrap justify-center
   mt-4 max-w-screen-2xl w-full mx-auto min-h-screen
   lg:mt-0 lg:gap-12
-  ${props.menu ? 'mt-24': ''}
   `}>
     <main className={`
       ${props.menu ? 'hidden' : 'block'}
@@ -32,7 +31,7 @@ const DefaultLayout = props => (
       w-full max-w-prose mx-auto px-4
       lg:w-1/3 lg:block lg:mt-12`
     }>
-      <div className="lg:sticky lg:top-24">
+      <div className="lg:sticky lg:top-4">
         {props.sidebar ? props.sidebar : (
           <>
             <Navigation {...props} />
