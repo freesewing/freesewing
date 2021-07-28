@@ -24,7 +24,7 @@ const MdxPage = (props) => {
 export const getStaticProps = async (context) => ({
   props: {
     ...(await getMdxStaticProps(config.site, config.language, context.params.mdx.join('/'))),
-    ...(await serverSideTranslations(locale, ['common']))
+    ...(await serverSideTranslations(context.locale || config.language, ['common'])),
   }
 })
 
