@@ -23,7 +23,7 @@ const PostPage = (props) => {
           <img
             src={`${props.config.strapi.host}${props.post.image.url}`}
             alt={props.post.caption}
-            className="shadow"
+            className="shadow m-auto"
           />
           <figcaption
             className="text-center mb-8 prose m-auto"
