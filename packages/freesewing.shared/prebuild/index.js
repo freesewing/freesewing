@@ -8,8 +8,8 @@ const folder = [__dirname, '..', '..', `freesewing.${process.env.SITE}`, 'prebui
 const prebuild = async () => {
   const mdx = await mdxPrebuild(folder)
   const strapi = await strapiPrebuild(folder)
-  const tree = await treePrebuild(folder, mdx, strapi)
-  if (process.env.SITE === 'org') i18nPrebuild(folder)
+  const i18n = (process.env.SITE === 'org') ? i18nPrebuild(folder) : false
+  const tree = await treePrebuild(folder, mdx, strapi, i18n)
 }
 
 prebuild()
