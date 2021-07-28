@@ -33,6 +33,10 @@ const toggleActive = (props) => {
   else props.setActive(steps)
 }
 
+const forceCollapse = (props) => {
+  props.setActive(props.path.split('/'))
+}
+
 const hasTitle = branch => (branch._title) ? true : false
 
 const hasChildren = branch => {
@@ -79,7 +83,10 @@ const Row = props => {
   <li key={props.branch._path}>
     <div className='flex flex-row'>
       <div
-        onClick={() => toggleActive(props)}
+        onClick={() => (active && expanded)
+          ? forceCollapse(props)
+          : toggleActive(props)
+        }
         className={`cursor-pointer w-6`}
       >
         {props.level < 5 && hasChildren(props.branch) && (
@@ -135,7 +142,7 @@ const WithTitle = ({list, title}) => (
 const noop = () => null
 
 const MainNavigation = props => {
-  const [active, setActive] = useState([])
+  const [active, setActive] = useState(props.path.split('/'))
   const { tree=false, path=false, expanded=false, recurse=false, plain=false, setMenu=noop} = props
   if (!tree) return null
 
