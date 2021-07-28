@@ -13,7 +13,7 @@ const l = (t, to, title, subtitle, icon) => (
 )
 
 const ExtraNavs = props => {
-  const { t } = props
+  const t = props.t ? props.t : (x) => x
   const navs = {
     theme: <ThemeChooser
       block={props.menu}
