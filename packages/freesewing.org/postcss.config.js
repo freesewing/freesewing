@@ -1,1 +1,1 @@
-module.exports = require('../freesewing.shared/config/postcss.config')
+module.exports = require('../freesewing.shared/config/postcss')

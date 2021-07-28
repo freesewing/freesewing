@@ -1,7 +1,7 @@
 import config from '@/site/freesewing.config'
 import MDX from "@mdx-js/runtime";
 
-const Author = ({author, type, t=false}) => (
+const Author = ({author=config.strapi.author, type, t=false}) => (
   <div id="author" className="shadow flex flex-col lg:flex-row rounded-xl border border-base-300 max-w-prose py-4 mx-auto lg:p-0">
     <div
       className={`
