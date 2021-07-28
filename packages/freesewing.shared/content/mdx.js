@@ -7,7 +7,7 @@ export const getMdxStaticProps = async (folder, lang='en', path=false) => {
   const [paths, pages] = await mdx.get(folder, lang)
   const props = { paths, pages }
   if (path) {
-    const rawMdx = mdx.loadFile(path)
+    const rawMdx = mdx.loadFile(path, folder, lang)
     const { content, data } = mdx.matter(rawMdx)
     props.href = `/${path}`
     props.mdx = await serialize(content)
