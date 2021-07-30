@@ -1456,9 +1456,9 @@
     strip-json-comments "^3.1.1"
 
 "@fontsource/permanent-marker@latest":
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/permanent-marker/-/permanent-marker-4.4.5.tgz#74a6d8a745b281ede12e430cc3e7bc21f236f828"
-  integrity sha512-OA2Xg1R9Rfc6op6NQ4L9d70oaeF0WIV40uTcFrf5F/9PIHaBJAY5HSD6JegN8W8KJxa29xVmCba5h5xvBDvzwQ==
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/permanent-marker/-/permanent-marker-4.5.0.tgz#b8cd62e60efaf76c5ed049cd1e1f2a453b5ce927"
+  integrity sha512-pQD7//FSAXNShAa8AfY5B9SKP3CiLLepx8iQlBfp3QdUNbQ4q8vVMrx8le7y6nrhr3+5peeNPYf9bin9+ZYkow==
 
 "@fontsource/roboto-mono@latest":
   version "4.5.0"
