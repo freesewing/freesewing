@@ -2,7 +2,8 @@
 
 # Specifics
 export
-packages/*/prebuild
+packages/freesewing.dev/prebuild
+packages/freesewing.org/prebuild
 packages/freesewing.dev/out
 packages/freesewing.org/out
 packages/freesewing.org/public/locales

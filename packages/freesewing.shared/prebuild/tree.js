@@ -60,7 +60,12 @@ const addShowcasePosts = (tree, posts, lang, i18n) => {
 }
 
 const prebuild = async (folder, mdx, strapi, i18n) => {
+  let indexImport = ''
+  let indexExport = 'export default { '
+
   for (const lang of config.languages) {
+    indexImport += `import { tree as ${lang} } from './${lang}.tree.js'\n`
+    indexExport += `${lang}, `
     let tree = addBlogPosts(buildMdxTree(mdx.pages[lang]), strapi.blog.posts[lang], lang, i18n)
     if (process.env.SITE === 'org') tree = addShowcasePosts(tree, strapi.showcase.posts[lang], lang, i18n)
     fs.writeFileSync(
@@ -68,6 +73,10 @@ const prebuild = async (folder, mdx, strapi, i18n) => {
       `export const tree = ${JSON.stringify(tree)}\n`
     )
   }
+  fs.writeFileSync(
+    path.join(...folder, `tree.js`),
+    `${indexImport}\n${indexExport.slice(0,-2)} }\n\n`
+  )
 }
 
 module.exports = prebuild
