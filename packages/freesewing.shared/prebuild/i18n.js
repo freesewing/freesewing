@@ -4,6 +4,10 @@ const i18n = require('../../i18n/dist')
 
 const prebuild = (folder) => {
   for (const lang in i18n.languages) {
+    fs.mkdirSync(
+      path.join(...folder, '..', 'public', 'locales', lang),
+      { recursive: true }
+    )
     fs.writeFileSync(
       path.join(...folder, '..', 'public', 'locales', lang, 'common.json'),
       JSON.stringify(i18n.strings[lang])
