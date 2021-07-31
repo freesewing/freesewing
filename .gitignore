@@ -5,6 +5,7 @@ export
 packages/*/prebuild
 packages/freesewing.dev/out
 packages/freesewing.org/out
+packages/freesewing.org/public/locales
 packages/plugin-theme/src/bundle.css.js
 packages/plugin-theme/css
 packages/components/Blockquote
