@@ -1,8 +1,8 @@
 ---
 shoulderSeamLength:
-  title: Schulternahtlänge
-  description: Steuert die Länge der Schulternaht
+  t: Schulternahtlänge
+  d: Steuert die Länge der Schulternaht
 drapeAngle:
-  title: Fallwinkel
-  description: Steuert die Stärke des Fallwinkels
+  t: Fallwinkel
+  d: Steuert die Stärke des Fallwinkels
 

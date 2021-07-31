@@ -1,0 +1,49 @@
+{
+  "name": "freesewing.org",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "develop": "next dev -p 3001",
+    "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.js",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start -p 3001"
+  },
+  "browser": {
+    "child_process": false
+  },
+  "dependencies": {
+    "@freesewing/pattern-info": "^2.17.1",
+    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/runtime": "^1.6.22",
+    "@tailwindcss/typography": "^0.4.1",
+    "algoliasearch": "^4.10.3",
+    "daisyui": "^1.6.1",
+    "dotenv": "^10.0.0",
+    "form-data": "^4.0.0",
+    "gray-matter": "^4.0.3",
+    "lodash.set": "^4.3.2",
+    "lodash.sortby": "^4.7.0",
+    "netlify-cli": "^4.2.0",
+    "next": "latest",
+    "next-i18next": "^8.5.5",
+    "next-mdx-remote": "^3.0.2",
+    "nextjs-progressbar": "^0.0.11",
+    "prism": "^4.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hotkeys-hook": "^3.3.2",
+    "react-instantsearch-dom": "^6.12.0",
+    "react-markdown": "^6.0.2",
+    "react-timeago": "^6.2.1",
+    "recursive-readdir": "^2.2.2",
+    "remove-markdown": "^0.3.0",
+    "theme-change": "^2.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}

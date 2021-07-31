@@ -1,44 +1,44 @@
 ---
 backPocket:
-  title: Poche arrière
-  description: S'il faut inclure une poche arrière ou non
+  t: Poche arrière
+  d: S'il faut inclure une poche arrière ou non
 frontPocket:
-  title: Poche avant
-  description: S'il faut inclure une poche avant ou non
+  t: Poche avant
+  d: S'il faut inclure une poche avant ou non
 hem:
-  title: Taille de l'ourlet
-  description: Taille de l'ourlet au bas du pantalon
+  t: Taille de l'ourlet
+  d: Taille de l'ourlet au bas du pantalon
 waistBand:
-  title: Bande de taille
-  description: Taille de la bande de taille
+  t: Bande de taille
+  d: Taille de la bande de taille
 waistRaise:
-  title: Hauteur de taille
-  description: Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe.
+  t: Hauteur de taille
+  d: Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe.
 crotchBack:
-  title: Fourche arrière
-  description: Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos.
+  t: Fourche arrière
+  d: Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos.
 crotchFront:
-  title: Fourche avant
-  description: Le pourcentage de la circonférence d'assise à l'avant. Cela crée plus ou moins d'espace entre la couture latérale et le devant.
+  t: Fourche avant
+  d: Le pourcentage de la circonférence d'assise à l'avant. Cela crée plus ou moins d'espace entre la couture latérale et le devant.
 crotchFactorBackHor:
-  title: Reculer la fourche arrière
-  description: Utilisé pour déplacer la courbe de la fourche arrière horizontalement
+  t: Reculer la fourche arrière
+  d: Utilisé pour déplacer la courbe de la fourche arrière horizontalement
 crotchFactorBackVer:
-  title: Remonter la fourche arrière
-  description: Utilisé pour déplacer la courbe de la fourche arrière verticalement
+  t: Remonter la fourche arrière
+  d: Utilisé pour déplacer la courbe de la fourche arrière verticalement
 crotchFactorFrontHor:
-  title: Avancer la fourche avant
-  description: Utilisé pour déplacer la courbe de la fourche avant horizontalement
+  t: Avancer la fourche avant
+  d: Utilisé pour déplacer la courbe de la fourche avant horizontalement
 crotchFactorFrontVer:
-  title: Remonter la fourche avant
-  description: Utilisé pour déplacer la courbe de la fourche avant verticalement
+  t: Remonter la fourche avant
+  d: Utilisé pour déplacer la courbe de la fourche avant verticalement
 waistOverlap:
-  title: Chevauchement de la ceinture
-  description: Cela indique combien vous voulez que les pans de la jambe se chevauchent à la taille. Un réglage de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière.
+  t: Chevauchement de la ceinture
+  d: Cela indique combien vous voulez que les pans de la jambe se chevauchent à la taille. Un réglage de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière.
 legShortening:
-  title: Réduction des jambes
-  description: Cela indique la longueur du pantalon. C'est un facteur de la mesure de l'entrejambe. Plus la valeur est grande, plus elle sera retirée de la longueur.
+  t: Réduction des jambes
+  d: Cela indique la longueur du pantalon. C'est un facteur de la mesure de l'entrejambe. Plus la valeur est grande, plus elle sera retirée de la longueur.
 backRaise:
-  title: Élévation arrière
-  description: Ce réglage lève la taille dans le dos, la taille ne se pose pas horizontalement, mais est inclinée à l'arrière. Ce réglage vous permet de la relever dans le dos si vous en avez besoin pour un bon ajustement.
+  t: Élévation arrière
+  d: Ce réglage lève la taille dans le dos, la taille ne se pose pas horizontalement, mais est inclinée à l'arrière. Ce réglage vous permet de la relever dans le dos si vous en avez besoin pour un bon ajustement.
 

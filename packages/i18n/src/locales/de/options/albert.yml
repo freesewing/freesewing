@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Hintere Öffnung
-  description: Steuert die Öffnung an der Rückseite der Schürze
+  t: Hintere Öffnung
+  d: Steuert die Öffnung an der Rückseite der Schürze
 chestDepth:
-  title: Riemenlänge
-  description: Steuert die Länge der Riemen
+  t: Riemenlänge
+  d: Steuert die Länge der Riemen
 lengthBonus:
-  title: Längenzugabe
-  description: Steuert die Länge der Schürze
+  t: Längenzugabe
+  d: Steuert die Länge der Schürze
 bibLength:
-  title: Latzlänge
-  description: Steuert die Länge des Latzes
+  t: Latzlänge
+  d: Steuert die Länge des Latzes
 bibWidth:
-  title: Latzbreite
-  description: Steuert die Breite des Latzes
+  t: Latzbreite
+  d: Steuert die Breite des Latzes
 strapWidth:
-  title: Riemenbreite
-  description: Steuert die Breite des Riemens
+  t: Riemenbreite
+  d: Steuert die Breite des Riemens
 

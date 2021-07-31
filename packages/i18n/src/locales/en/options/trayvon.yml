@@ -1,7 +1,7 @@
 tipWidth:
-  title: Tip width
-  description: The width of your tie at the tip
+  t: Tip width
+  d: The width of your tie at the tip
 
 knotWidth:
-  title: Knot width
-  description: The width of your tie at the knot
+  t: Knot width
+  d: The width of your tie at the knot

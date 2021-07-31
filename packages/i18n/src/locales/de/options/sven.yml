@@ -1,10 +1,10 @@
 ---
 ribbing:
-  title: Bündchen
-  description: Ob Saum und Manschetten mit Bündchen abschließen oder nicht.
+  t: Bündchen
+  d: Ob Saum und Manschetten mit Bündchen abschließen oder nicht.
 ribbingHeight:
-  title: Bündchen-Höhe
-  description: Die Höhe der Bündchen
+  t: Bündchen-Höhe
+  d: Die Höhe der Bündchen
 ribbingStretch:
-  title: Bündchen-Elastizität
-  description: Die Menge an negativer Zugabe für die an Manschetten und Saum verwendeten Bündchen.
+  t: Bündchen-Elastizität
+  d: Die Menge an negativer Zugabe für die an Manschetten und Saum verwendeten Bündchen.

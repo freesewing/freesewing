@@ -1,31 +1,31 @@
 ---
 advanced:
-  title: Mode expert
-  description: Permet d'afficher ou non les paramètres avancés et les options de patron
+  t: Mode expert
+  d: Permet d'afficher ou non les paramètres avancés et les options de patron
 paperless:
-  title: Sans papier
-  description: Trace un patron comportant toutes les dimensions incluses de façon à ce que vous puissiez le transférer sur du tissu ou un autre médium sans avoir à l'imprimer
+  t: Sans papier
+  d: Trace un patron comportant toutes les dimensions incluses de façon à ce que vous puissiez le transférer sur du tissu ou un autre médium sans avoir à l'imprimer
 sa:
-  title: Marge de couture
-  description: Contrôle la valeur de la marge de couture incluse dans votre patron
+  t: Marge de couture
+  d: Contrôle la valeur de la marge de couture incluse dans votre patron
 locale:
-  title: Langue
-  description: Détermine la langue utilisée sur votre patron
+  t: Langue
+  d: Détermine la langue utilisée sur votre patron
 only:
-  title: Contenu
-  description: Vous permet de contrôler quelles parties seront incluses dans votre patron
+  t: Contenu
+  d: Vous permet de contrôler quelles parties seront incluses dans votre patron
 units:
-  title: Unités
-  description: Contrôle les unités utilisées sur votre patron
+  t: Unités
+  d: Contrôle les unités utilisées sur votre patron
 margin:
-  title: Marge
-  description: Contrôle la marge autour des pièces du patron
+  t: Marge
+  d: Contrôle la marge autour des pièces du patron
 complete:
-  title: Détail
-  description: Contrôle à quel point votre patron est détaillé ; soit un patron complet avec tous les détails, ou simplement les contours des parties du patron
+  t: Détail
+  d: Contrôle à quel point votre patron est détaillé ; soit un patron complet avec tous les détails, ou simplement les contours des parties du patron
 layout:
-  title: Mis en page
-  description: Contrôle comment les pièces individuelles du patron sont placées sur votre patron
+  t: Mis en page
+  d: Contrôle comment les pièces individuelles du patron sont placées sur votre patron
 debug:
-  title: Débug
-  description: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé
+  t: Débug
+  d: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé

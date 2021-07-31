@@ -1,11 +1,11 @@
 ribbing:
-  title: Ribbing
-  description: Whether to finish the hem and cuffs with ribbing or not.
+  t: Ribbing
+  d: Whether to finish the hem and cuffs with ribbing or not.
 
 ribbingHeight:
-  title: Ribbing height
-  description: The height of the ribbing on cuffs and hem.
+  t: Ribbing height
+  d: The height of the ribbing on cuffs and hem.
 
 ribbingStretch:
-  title: Ribbing stretch
-  description: The amount of negative ease to apply to the ribbing used for cuffs and hem.
+  t: Ribbing stretch
+  d: The amount of negative ease to apply to the ribbing used for cuffs and hem.

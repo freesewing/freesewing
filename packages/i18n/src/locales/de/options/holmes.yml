@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Längenverhältnis
-  description: fixme
+  t: Längenverhältnis
+  d: fixme
 goreNumber:
-  title: Anzahl Keile
-  description: Die Anzahl der zur Konstruktion der Halbkugel verwendeten Keile
+  t: Anzahl Keile
+  d: Die Anzahl der zur Konstruktion der Halbkugel verwendeten Keile
 brimAngle:
-  title: Winkel der Krempe
-  description: Steuert die Krümmung der Krempe
+  t: Winkel der Krempe
+  d: Steuert die Krümmung der Krempe
 brimWidth:
-  title: Breite der Krempe
-  description: Steuert die Breite der Krempe
+  t: Breite der Krempe
+  d: Steuert die Breite der Krempe
 

@@ -1,23 +1,23 @@
 ---
 adjustmentRibbon:
-  title: Ruban d'ajustement
-  description: Si vous souhaitez inclure ou non un ruban d'ajustement
+  t: Ruban d'ajustement
+  d: Si vous souhaitez inclure ou non un ruban d'ajustement
 bandLength:
-  title: Longueur de bande
-  description: Longueur de la bande
+  t: Longueur de bande
+  d: Longueur de la bande
 tipWidth:
-  title: Largeur de la pointe
-  description: Largeur des pointes
+  t: Largeur de la pointe
+  d: Largeur des pointes
 knotWidth:
-  title: Largeur du noeud
-  description: Largeur du nœud
+  t: Largeur du noeud
+  d: Largeur du nœud
 bowLength:
-  title: Longueur de nœud
-  description: Longueur du nœud (lorsqu'il est noué)
+  t: Longueur de nœud
+  d: Longueur du nœud (lorsqu'il est noué)
 bowStyle:
-  title: Style de nœud
-  description: Style du nœud
+  t: Style de nœud
+  d: Style du nœud
 endStyle:
-  title: Style de l'extrémité
-  description: Style des extrémités du noeud
+  t: Style de l'extrémité
+  d: Style des extrémités du noeud
 

@@ -1,112 +1,112 @@
 ---
 centerBackDart:
-  title: Nek neep
-  description: Dart at the center back of your neck to accommodate a rounded back
+  t: Nek neep
+  d: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
-  title: Lengte mouwvent
-  description: De lengte van de mouwvent
+  t: Lengte mouwvent
+  d: De lengte van de mouwvent
 sleeveVentWidth:
-  title: Breedte mouwvent
-  description: De breedte van de mouwvent
+  t: Breedte mouwvent
+  d: De breedte van de mouwvent
 chestShaping:
-  title: Borstvorming
-  description: Amount of shaping to accommodate for the chest curve
+  t: Borstvorming
+  d: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
-  title: Plaatsing neep vooran
-  description: Locatie van de nepen vooraan
+  t: Plaatsing neep vooran
+  d: Locatie van de nepen vooraan
 frontOverlap:
-  title: Overlap voorzijde
-  description: De mate waaarin de stof verder reikt dat de sluitingsknopen
+  t: Overlap voorzijde
+  d: De mate waaarin de stof verder reikt dat de sluitingsknopen
 sideFrontPlacement:
-  title: Voor/Zijkant plaatsing
-  description: De grens tussen het voor en zij paneel
+  t: Voor/Zijkant plaatsing
+  d: De grens tussen het voor en zij paneel
 chestPocketDepth:
-  title: Borstzakdiepte
-  description: De diepte van de borstzak
+  t: Borstzakdiepte
+  d: De diepte van de borstzak
 chestPocketWidth:
-  title: Borstzakbreedte
-  description: De breedte van de borstzak
+  t: Borstzakbreedte
+  d: De breedte van de borstzak
 chestPocketPlacement:
-  title: Plaatsing borstzak
-  description: De locatie van de borszak
+  t: Plaatsing borstzak
+  d: De locatie van de borszak
 chestPocketAngle:
-  title: Hoek borstzak
-  description: De hoek waaronder de borstzak geplaatst wordt
+  t: Hoek borstzak
+  d: De hoek waaronder de borstzak geplaatst wordt
 chestPocketWeltSize:
-  title: Paspel borstzak
-  description: Grootte van de paspel van de borstzak
+  t: Paspel borstzak
+  d: Grootte van de paspel van de borstzak
 frontPocketPlacement:
-  title: Plaatsing zak
-  description: Plaatsing van de zakken
+  t: Plaatsing zak
+  d: Plaatsing van de zakken
 frontPocketWidth:
-  title: Breedte zak
-  description: Breedte van de zakken
+  t: Breedte zak
+  d: Breedte van de zakken
 frontPocketDepth:
-  title: Diepte zak
-  description: Diepte van de zakken
+  t: Diepte zak
+  d: Diepte van de zakken
 frontPocketRadius:
-  title: Ronding zak
-  description: De mate waarin de zakken zijn afgerond
+  t: Ronding zak
+  d: De mate waarin de zakken zijn afgerond
 innerPocketPlacement:
-  title: Plaatsing binnenzak
-  description: De locatie van de binnenzakken
+  t: Plaatsing binnenzak
+  d: De locatie van de binnenzakken
 innerPocketWidth:
-  title: Breedte binnenzak
-  description: De breedte van de binnenzakken
+  t: Breedte binnenzak
+  d: De breedte van de binnenzakken
 innerPocketDepth:
-  title: Diepte binnenzak
-  description: De diepte van de binnenzakken
+  t: Diepte binnenzak
+  d: De diepte van de binnenzakken
 innerPocketWeltHeight:
-  title: Paspel binnenzak
-  description: de maat van de paspel van de binnenzakken
+  t: Paspel binnenzak
+  d: de maat van de paspel van de binnenzakken
 pocketFoldover:
-  title: Zak overvouw
-  description: De mate waarin de hoofstof doorloopt binnenin de zakken
+  t: Zak overvouw
+  d: De mate waarin de hoofstof doorloopt binnenin de zakken
 centerFrontHemDrop:
-  title: Verlaging zoom vooraan
-  description: De mate waarin de zoom vooraan verlaagd is
+  t: Verlaging zoom vooraan
+  d: De mate waarin de zoom vooraan verlaagd is
 backVent:
-  title: Vent achteraan
-  description: Het aantal vents achteraan
+  t: Vent achteraan
+  d: Het aantal vents achteraan
 backVentLength:
-  title: Lengte vent achteraan
-  description: De lengte van de vent(s) achteraan
+  t: Lengte vent achteraan
+  d: De lengte van de vent(s) achteraan
 buttonLength:
-  title: Lengte knopen
-  description: De lengte waarover de knopen zijn gespreid
+  t: Lengte knopen
+  d: De lengte waarover de knopen zijn gespreid
 frontCutawayAngle:
-  title: Snijhoek vooraan
-  description: De hoek waaronder de voorzijde wordt weggesneden naar de zoom toe
+  t: Snijhoek vooraan
+  d: De hoek waaronder de voorzijde wordt weggesneden naar de zoom toe
 frontCutawayStart:
-  title: Start uitsnijding vooraan
-  description: De plaats waar de voorzijde begint te verlopen naar de zoom toe
+  t: Start uitsnijding vooraan
+  d: De plaats waar de voorzijde begint te verlopen naar de zoom toe
 frontCutawayEnd:
-  title: Einde uitsnijding vooraan
-  description: Door dit te verhogen blijft de verloping vooraan bij het midden
+  t: Einde uitsnijding vooraan
+  d: Door dit te verhogen blijft de verloping vooraan bij het midden
 collarSpread:
-  title: Spreiding kraag
-  description: De kraagspreiding bepaalt hoe de kraag over de schouders valt
+  t: Spreiding kraag
+  d: De kraagspreiding bepaalt hoe de kraag over de schouders valt
 lapelStart:
-  title: Revers start
-  description: Start van de revers
+  t: Revers start
+  d: Start van de revers
 lapelReduction:
-  title: Reductie revers
-  description: Mate waarin het einde van de revers weer inwaards keren
+  t: Reductie revers
+  d: Mate waarin het einde van de revers weer inwaards keren
 collarHeight:
-  title: Hoogte kraag
-  description: De hoogte van de kraag
+  t: Hoogte kraag
+  d: De hoogte van de kraag
 collarNotchDepth:
-  title: Diepte inkeping kraag
-  description: Diepte van de kraaginkeping
+  t: Diepte inkeping kraag
+  d: Diepte van de kraaginkeping
 collarNotchAngle:
-  title: Hoek inkeping kraag
-  description: Hoek waaronder de kraag is ingekeept
+  t: Hoek inkeping kraag
+  d: Hoek waaronder de kraag is ingekeept
 collarNotchReturn:
-  title: Kraag inkeping terugloop
-  description: De mate waarin de kraag terugkomt na de inkeping, in vergelijking met de revers
+  t: Kraag inkeping terugloop
+  d: De mate waarin de kraag terugkomt na de inkeping, in vergelijking met de revers
 rollLineCollarHeight:
-  title: Rollijn kraaghoogte
-  description: Hoeveel de kraag de nek omhelst
+  t: Rollijn kraaghoogte
+  d: Hoeveel de kraag de nek omhelst
 hemRadius:
-  title: Ronding zoom
-  description: De mate waarin de zoom is afgerond
+  t: Ronding zoom
+  d: De mate waarin de zoom is afgerond

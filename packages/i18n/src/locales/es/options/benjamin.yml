@@ -1,23 +1,23 @@
 ---
 adjustmentRibbon:
-  title: Cinta de ajuste
-  description: Incluir o no una cinta de ajuste
+  t: Cinta de ajuste
+  d: Incluir o no una cinta de ajuste
 bandLength:
-  title: Longitud de la banda
-  description: Longitud de la banda
+  t: Longitud de la banda
+  d: Longitud de la banda
 tipWidth:
-  title: Ancho de la punta
-  description: Ancho de las puntas
+  t: Ancho de la punta
+  d: Ancho de las puntas
 knotWidth:
-  title: Ancho de nudo
-  description: Ancho del nudo
+  t: Ancho de nudo
+  d: Ancho del nudo
 bowLength:
-  title: Longitud del lazo
-  description: Longitud del lazo (cuando está anudado)
+  t: Longitud del lazo
+  d: Longitud del lazo (cuando está anudado)
 bowStyle:
-  title: Estilo del lazo
-  description: Estilo del lazo
+  t: Estilo del lazo
+  d: Estilo del lazo
 endStyle:
-  title: Estilo de las puntas
-  description: Estilo de las puntas del lazo
+  t: Estilo de las puntas
+  d: Estilo de las puntas del lazo
 

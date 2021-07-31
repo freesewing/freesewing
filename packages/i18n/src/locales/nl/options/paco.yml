@@ -1,16 +1,16 @@
 ---
 heelEase:
-  title: Overwijdte hiel
-  description: De hoeveelheid overwijdte aan de hiel (wanneer je je been door de broekspijp steekt)
+  t: Overwijdte hiel
+  d: De hoeveelheid overwijdte aan de hiel (wanneer je je been door de broekspijp steekt)
 frontPockets:
-  title: Voorzakken
-  description: Of je al dan niet zakken in de zijnaad wil
+  t: Voorzakken
+  d: Of je al dan niet zakken in de zijnaad wil
 backPockets:
-  title: Achterzakken
-  description: Of je al dan niet paspelzakken op de achterkant wil
+  t: Achterzakken
+  d: Of je al dan niet paspelzakken op de achterkant wil
 elasticatedHem:
-  title: Elastische zoom
-  description: Of je wel of niet elastiek aan de zoom wil
+  t: Elastische zoom
+  d: Of je wel of niet elastiek aan de zoom wil
 ankleElastic:
-  title: Breedte enkel/zoom elastiek
-  description: Breedte van de (optionele) elastiek aan de enkel/zoom
+  t: Breedte enkel/zoom elastiek
+  d: Breedte van de (optionele) elastiek aan de enkel/zoom

@@ -1,46 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Factor de la pinza trasera
-  description: Hasta dónde llega la pinza trasera desde la cintura. Es proporción de la medida cintura natural a asiento.
+  t: Factor de la pinza trasera
+  d: Hasta dónde llega la pinza trasera desde la cintura. Es proporción de la medida cintura natural a asiento.
 backVent:
-  title: Abertura trasera
-  description: Añade una avertura en la parte trasera de la falda.
+  t: Abertura trasera
+  d: Añade una avertura en la parte trasera de la falda.
 backVentLength:
-  title: Longitud de la abertura trasera
-  description: Longitud de la abertura trasera como porcentaje de la longitud de la falda.
+  t: Longitud de la abertura trasera
+  d: Longitud de la abertura trasera como porcentaje de la longitud de la falda.
 dartToSideSeamFactor:
-  title: Factor pinza a costura lateral
-  description: Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales.
+  t: Factor pinza a costura lateral
+  d: Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales.
 frontDartDepthFactor:
-  title: Factor de la pinza delantera
-  description: Hasta dónde llega la pinza delantera desde la cintura. Es proporción de la medida cintura natural a asiento.
+  t: Factor de la pinza delantera
+  d: Hasta dónde llega la pinza delantera desde la cintura. Es proporción de la medida cintura natural a asiento.
 hem:
-  title: Anchura del dobladillo
-  description: El tamaño del dobladillo. Medida en valores absolutos.
+  t: Anchura del dobladillo
+  d: El tamaño del dobladillo. Medida en valores absolutos.
 hemBonus:
-  title: Bonus del dobladillo
-  description: Esta opción reduce la circunferencia de la falda en el dobladillo. Porcentaje de la medida de asiento.
+  t: Bonus del dobladillo
+  d: Esta opción reduce la circunferencia de la falda en el dobladillo. Porcentaje de la medida de asiento.
 lengthBonus:
-  title: Bonus de longitud
-  description: Esto ajusta la longitud de la falda. Porcentaje de la medida de cintura natural a rodilla.
+  t: Bonus de longitud
+  d: Esto ajusta la longitud de la falda. Porcentaje de la medida de cintura natural a rodilla.
 nrOfDarts:
-  title: Número de pinzas
-  description: El número de pinzas usadas en el patrón. El máximo es 2. Esta opción puede ser reducida por el patrón si los cálculos crean pinzas demasiado pequeñas.
+  t: Número de pinzas
+  d: El número de pinzas usadas en el patrón. El máximo es 2. Esta opción puede ser reducida por el patrón si los cálculos crean pinzas demasiado pequeñas.
 seatEase:
-  title: Holgura de asiento
-  description: La holgura al nivel del asiento.
+  t: Holgura de asiento
+  d: La holgura al nivel del asiento.
 waistBand:
-  title: Cinturilla
-  description: Añade una cinturilla al patrón.
+  t: Cinturilla
+  d: Añade una cinturilla al patrón.
 waistBandWidth:
-  title: Anchura de la cinturilla
-  description: La anchura de la cinturilla.
+  t: Anchura de la cinturilla
+  d: La anchura de la cinturilla.
 waistEase:
-  title: Holgura de cintura
-  description: La holgura al nivel de la cintura.
+  t: Holgura de cintura
+  d: La holgura al nivel de la cintura.
 zipperLocation:
-  title: Ubicación de la cremallera
-  description: La ubicación de la cremallera.
+  t: Ubicación de la cremallera
+  d: La ubicación de la cremallera.
   options:
     backSeam: En la costura trasera
     sideSeam: En la costura lateral

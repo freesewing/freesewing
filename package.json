@@ -102,10 +102,17 @@
     "uglifycss": "^0.0.29"
   },
   "workspaces": {
-    "packages": [ "packages/*" ]
+    "packages": [
+      "packages/*"
+    ]
   },
   "version": "0.0.0",
   "dependencies": {
-    "jsonfile": "^6.1.0"
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
+    "fast-glob": "^3.2.6",
+    "jsonfile": "^6.1.0",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }

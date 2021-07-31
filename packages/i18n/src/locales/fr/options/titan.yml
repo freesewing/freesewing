@@ -1,46 +1,46 @@
 ---
 kneeEase:
-  title: Aisance du genou
-  description: Contrôle la quantité d'aisance au genou
+  t: Aisance du genou
+  d: Contrôle la quantité d'aisance au genou
 waistHeight:
-  title: Hauteur de la taille
-  description: Contrôle la hauteur de la taille, 100% = hauteur de la taille, 0% = hauteur de la hanche
+  t: Hauteur de la taille
+  d: Contrôle la hauteur de la taille, 100% = hauteur de la taille, 0% = hauteur de la hanche
 lengthBonus:
-  title: Supplément de longueur
-  description: Contrôle la longueur du pantalon
+  t: Supplément de longueur
+  d: Contrôle la longueur du pantalon
 crotchDrop:
-  title: Hauteur d'enfourchure
-  description: Abaisse la fourche pour un tombé plus décontracté
+  t: Hauteur d'enfourchure
+  d: Abaisse la fourche pour un tombé plus décontracté
 fitKnee:
-  title: Ajuster au genou
-  description: Ajuste les jambes à partir de la circonférence du genou plutôt que de la circonférence du bassin
+  t: Ajuster au genou
+  d: Ajuste les jambes à partir de la circonférence du genou plutôt que de la circonférence du bassin
 legBalance:
-  title: Équilibre des jambes
-  description: Contrôle le ratio entre le panneau avant et arrière de la jambe
+  t: Équilibre des jambes
+  d: Contrôle le ratio entre le panneau avant et arrière de la jambe
 crossSeamCurveStart:
-  title: Début de la courbe de l'enfourchure dos
-  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure dos
+  t: Début de la courbe de l'enfourchure dos
+  d: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure dos
 crossSeamCurveBend:
-  title: Courbure de l'enfourchure dos
-  description: Contrôle la courbure de la couture de fourche dos
+  t: Courbure de l'enfourchure dos
+  d: Contrôle la courbure de la couture de fourche dos
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  t: Cross seam angle
+  d: Controls the angle of the cross seam
 crotchSeamCurveStart:
-  title: Début de la courbe de l'enfourchure avant
-  description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant
+  t: Début de la courbe de l'enfourchure avant
+  d: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant
 crotchSeamCurveBend:
-  title: Courbure de la fourche avant
-  description: Contrôle la courbure de la couture de fourche avant
+  t: Courbure de la fourche avant
+  d: Contrôle la courbure de la couture de fourche avant
 crotchSeamCurveAngle:
-  title: Crotch seam angle
-  description: Controls the angle of the crotch seam
+  t: Crotch seam angle
+  d: Controls the angle of the crotch seam
 waistBalance:
-  title: Équilibre de la taille
-  description: Contrôle la position horizontale de la taille par rapport au bassin
+  t: Équilibre de la taille
+  d: Contrôle la position horizontale de la taille par rapport au bassin
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  t: Waistband width
+  d: The width of the waistband
 grainlinePosition:
-  title: Position de la ligne de droit fil
-  description: Contrôle la position horizontale de la jambe par rapport au bassin
+  t: Position de la ligne de droit fil
+  d: Contrôle la position horizontale de la jambe par rapport au bassin

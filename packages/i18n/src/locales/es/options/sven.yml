@@ -1,10 +1,10 @@
 ---
 ribbing:
-  title: Tejido acanalado
-  description: Ya sea para terminar el dobladillo y los puños con tejido acanalado.
+  t: Tejido acanalado
+  d: Ya sea para terminar el dobladillo y los puños con tejido acanalado.
 ribbingHeight:
-  title: Altura de tejido acanalado
-  description: La altura del tejido acanalado en los puños y el dobladillo.
+  t: Altura de tejido acanalado
+  d: La altura del tejido acanalado en los puños y el dobladillo.
 ribbingStretch:
-  title: Extensión de tejido acanalado
-  description: La cantidad de holgura negativa de tejido acanalado.
+  t: Extensión de tejido acanalado
+  d: La cantidad de holgura negativa de tejido acanalado.

@@ -1,4 +1,4 @@
 ---
 contour:
-  title: Angle des découpes princesses
-  description: Contrôle à quel point la courbe de la découpe princesse sera saillante ou adoucie.
+  t: Angle des découpes princesses
+  d: Contrôle à quel point la courbe de la découpe princesse sera saillante ou adoucie.

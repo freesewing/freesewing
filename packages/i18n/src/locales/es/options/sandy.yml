@@ -1,26 +1,26 @@
 ---
 waistbandWidth:
-  title: Anchura de la cinturilla
-  description: Controla la anchura de la cinturilla.
+  t: Anchura de la cinturilla
+  d: Controla la anchura de la cinturilla.
 waistbandPosition:
-  title: Posición de la cinturilla
-  description: Controla la posición de la cinturilla.
+  t: Posición de la cinturilla
+  d: Controla la posición de la cinturilla.
 waistbandShape:
-  title: Forma de la cinturilla
-  description: Si quieres una cinturilla recta o curvada.
+  t: Forma de la cinturilla
+  d: Si quieres una cinturilla recta o curvada.
 circleRatio:
-  title: Porcentaje de círculo
-  description: El porcentaje de círculo que quieres que tenga la falda.
+  t: Porcentaje de círculo
+  d: El porcentaje de círculo que quieres que tenga la falda.
 waistbandOverlap:
-  title: Superposición de la cinturilla
-  description: La cantidad en la que los extremos de la cinturilla se superponen.
+  t: Superposición de la cinturilla
+  d: La cantidad en la que los extremos de la cinturilla se superponen.
 gathering:
-  title: Fruncido
-  description: El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla.
+  t: Fruncido
+  d: El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla.
 seamlessFullCircle:
-  title: Círculo completo sin costura
-  description: Permite una falda de círculo completo sin costuras.
+  t: Círculo completo sin costura
+  d: Permite una falda de círculo completo sin costuras.
 hemWidth:
-  title: Hem width
-  description: Anchura del dobladillo
+  t: Hem width
+  d: Anchura del dobladillo
 

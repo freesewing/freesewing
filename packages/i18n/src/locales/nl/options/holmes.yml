@@ -1,14 +1,14 @@
 ---
 lengthRatio:
-  title: Lengteratio
-  description: fixme
+  t: Lengteratio
+  d: fixme
 goreNumber:
-  title: Aantal panden
-  description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
+  t: Aantal panden
+  d: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
 brimAngle:
-  title: Hoek klep
-  description: Bepaalt de kromming van de klep
+  t: Hoek klep
+  d: Bepaalt de kromming van de klep
 brimWidth:
-  title: Breedte klep
-  description: Bepaalt de breedte van de klep
+  t: Breedte klep
+  d: Bepaalt de breedte van de klep
 

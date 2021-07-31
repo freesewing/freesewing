@@ -1,103 +1,103 @@
 ---
 acrossBackFactor:
-  title: Rückenweitenverhältnis
-  description: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement.
+  t: Rückenweitenverhältnis
+  d: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement.
 armholeDepthFactor:
-  title: Tiefenfaktor des Armloches
-  description: Steuert die Tiefe des Armloches. Höhere Werte ergeben ein tieferes Armloch.
+  t: Tiefenfaktor des Armloches
+  d: Steuert die Tiefe des Armloches. Höhere Werte ergeben ein tieferes Armloch.
 backNeckCutout:
-  title: Ausschnitt im Nacken
-  description: Wie tief der Hals am Rücken ausgeschnitten ist
+  t: Ausschnitt im Nacken
+  d: Wie tief der Hals am Rücken ausgeschnitten ist
 bicepsEase:
-  title: Bizeps Zugabe
-  description: 'Die Menge an Bewegungszugabe am Oberarm. Während wir versuchen, dies zu respektieren, hat das genaue Anbringen des Ärmels am Armloch Vorrang vor der Einhaltung der genauen Zugabe.'
+  t: Bizeps Zugabe
+  d: 'Die Menge an Bewegungszugabe am Oberarm. Während wir versuchen, dies zu respektieren, hat das genaue Anbringen des Ärmels am Armloch Vorrang vor der Einhaltung der genauen Zugabe.'
 collarEase:
-  title: Kragen Zugabe
-  description: Die Menge an Bequemlichkeits-/Bewegungszugabe um deinen Hals herum
+  t: Kragen Zugabe
+  d: Die Menge an Bequemlichkeits-/Bewegungszugabe um deinen Hals herum
 chestEase:
-  title: Brust Zugabe
-  description: Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.
+  t: Brust Zugabe
+  d: Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.
 cuffEase:
-  title: Manschette Zugabe
-  description: Die Bequemlichkeits-/Bewegungszugabe am Handgelenk.
+  t: Manschette Zugabe
+  d: Die Bequemlichkeits-/Bewegungszugabe am Handgelenk.
 frontArmholeDeeper:
-  title: Zusätzlicher Ausschnitt am vorderen Armloch
-  description: Um wie viel das vordere Armloch tiefer ausgeschnitten ist als im Rücken.
+  t: Zusätzlicher Ausschnitt am vorderen Armloch
+  d: Um wie viel das vordere Armloch tiefer ausgeschnitten ist als im Rücken.
 lengthBonus:
-  title: Längenzugabe
-  description: Der Betrag, um den das Kleidungsstück verlängert wird. Ein negativer Wert verkürzt es.
+  t: Längenzugabe
+  d: Der Betrag, um den das Kleidungsstück verlängert wird. Ein negativer Wert verkürzt es.
 s3Collar:
-  title: 'Schulternahtverschiebung: Kragenseite'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  t: 'Schulternahtverschiebung: Kragenseite'
+  d: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
 s3Armhole:
-  title: 'Schulternahtverschiebung: Armlochseite'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  t: 'Schulternahtverschiebung: Armlochseite'
+  d: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
 shoulderEase:
-  title: Schulter Zugabe
-  description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Schulter. Dies erhöht den Schulterabstand, um zusätzliche Lagen oder die Dicke des Stoffes zu beherbergen.
+  t: Schulter Zugabe
+  d: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Schulter. Dies erhöht den Schulterabstand, um zusätzliche Lagen oder die Dicke des Stoffes zu beherbergen.
 shoulderSlopeReduction:
-  title: Verringerung der Schulterneigung
-  description: Der Betrag, um den die Schulterneigung reduziert wird, um eine Schulterpolsterung zu ermöglichen.
+  t: Verringerung der Schulterneigung
+  d: Der Betrag, um den die Schulterneigung reduziert wird, um eine Schulterpolsterung zu ermöglichen.
 sleeveLengthBonus:
-  title: Ärmel Längenzugabe
-  description: Der Betrag, um den der Ärmel verlängert wird. Ein negativer Wert verkürzt ihn.
+  t: Ärmel Längenzugabe
+  d: Der Betrag, um den der Ärmel verlängert wird. Ein negativer Wert verkürzt ihn.
 sleevecapEase:
-  title: Armkugel Zugabe
-  description: Der Betrag, um den die Armkugelnaht länger ist als die Armlochnaht.
+  t: Armkugel Zugabe
+  d: Der Betrag, um den die Armkugelnaht länger ist als die Armlochnaht.
 sleevecapTopFactorX:
-  title: Armkugel Oben X
-  description: Steuert die horizontale Position der Armkugel oben.
+  t: Armkugel Oben X
+  d: Steuert die horizontale Position der Armkugel oben.
 sleevecapTopFactorY:
-  title: Armkugel Oben Y
-  description: Steuert die Höhe der Armkugel. Ein höherer Wert führt zu einer höheren und schmaleren Armkugel.
+  t: Armkugel Oben Y
+  d: Steuert die Höhe der Armkugel. Ein höherer Wert führt zu einer höheren und schmaleren Armkugel.
 sleevecapBackFactorX:
-  title: Armkugel Hinten X
-  description: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der X-Achse (horizontal)
+  t: Armkugel Hinten X
+  d: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der X-Achse (horizontal)
 sleevecapBackFactorY:
-  title: Armkugel Hinten Y
-  description: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
+  t: Armkugel Hinten Y
+  d: Steuert die Platzierung des hinteren Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
 sleevecapFrontFactorX:
-  title: Armkugel Vorne X
-  description: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der X-Achse (horizontal)
+  t: Armkugel Vorne X
+  d: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der X-Achse (horizontal)
 sleevecapFrontFactorY:
-  title: Armkugel Vorne Y
-  description: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
+  t: Armkugel Vorne Y
+  d: Steuert die Platzierung des vorderen Neigungspunkts der Armkugel auf der Y-Achse (vertikal)
 sleevecapQ1Offset:
-  title: Offset der Armkugel Q1
-  description: Steuert die Krümmung der Armkugel im ersten Quadranten (vorderes Armloch)
+  t: Offset der Armkugel Q1
+  d: Steuert die Krümmung der Armkugel im ersten Quadranten (vorderes Armloch)
 sleevecapQ2Offset:
-  title: Offset der Armkugel Q2
-  description: Steuert die Krümmung der Armkugel im zweiten Quadranten (vordere Schulter)
+  t: Offset der Armkugel Q2
+  d: Steuert die Krümmung der Armkugel im zweiten Quadranten (vordere Schulter)
 sleevecapQ3Offset:
-  title: Offset der Armkugel Q3
-  description: Steuert die Krümmung der Armkugel im dritten Quadranten (hintere Schulter)
+  t: Offset der Armkugel Q3
+  d: Steuert die Krümmung der Armkugel im dritten Quadranten (hintere Schulter)
 sleevecapQ4Offset:
-  title: Offset der Armkugel Q4
-  description: Steuert die Krümmung der Armkugel im vierten Quadranten (hinteres Armloch)
+  t: Offset der Armkugel Q4
+  d: Steuert die Krümmung der Armkugel im vierten Quadranten (hinteres Armloch)
 sleevecapQ1Spread1:
-  title: Armkugel Q1 Spreizung nach unten
-  description: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung des Armlochs
+  t: Armkugel Q1 Spreizung nach unten
+  d: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung des Armlochs
 sleevecapQ1Spread2:
-  title: Armkugel Q1 Spreizung nach oben
-  description: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung der Schulter
+  t: Armkugel Q1 Spreizung nach oben
+  d: Steuert die Spreizung der Armkugel im ersten Quadranten in Richtung der Schulter
 sleevecapQ2Spread1:
-  title: Armkugel Q2 Spreizung nach unten
-  description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung des Armlochs
+  t: Armkugel Q2 Spreizung nach unten
+  d: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung des Armlochs
 sleevecapQ2Spread2:
-  title: Armkugel Q2 Spreizung nach oben
-  description: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung der Schulter
+  t: Armkugel Q2 Spreizung nach oben
+  d: Steuert die Spreizung der Armkugel im zweiten Quadranten in Richtung der Schulter
 sleevecapQ3Spread1:
-  title: Armkugel Q3 Spreizung nach oben
-  description: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung der Schulter
+  t: Armkugel Q3 Spreizung nach oben
+  d: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung der Schulter
 sleevecapQ3Spread2:
-  title: Armkugel Q3 Spreizung nach unten
-  description: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung des Armlochs
+  t: Armkugel Q3 Spreizung nach unten
+  d: Steuert die Spreizung der Armkugel im dritten Quadranten in Richtung des Armlochs
 sleevecapQ4Spread1:
-  title: Armkugel Q4 Spreizung nach oben
-  description: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung der Schulter
+  t: Armkugel Q4 Spreizung nach oben
+  d: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung der Schulter
 sleevecapQ4Spread2:
-  title: Armkugel Q4 Spreizung nach unten
-  description: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung des Armlochs
+  t: Armkugel Q4 Spreizung nach unten
+  d: Steuert die Spreizung der Armkugel im vierten Quadranten in Richtung des Armlochs
 sleeveWidthGuarantee:
-  title: Garantie der Ärmelbreite
-  description: Steuert, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, um wie viel wir die Ärmelbreite verändern können, um die Ärmel in das Armloch einzupassen.
+  t: Garantie der Ärmelbreite
+  d: Steuert, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, um wie viel wir die Ärmelbreite verändern können, um die Ärmel in das Armloch einzupassen.

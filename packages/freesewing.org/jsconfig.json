@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/site/*": ["./*"],
+      "@/shared/*": ["../freesewing.shared/*"],
+      "@/markdown/*": ["../../markdown/*"]
+    }
+  }
+}

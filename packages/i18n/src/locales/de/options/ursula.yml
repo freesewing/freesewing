@@ -1,34 +1,34 @@
 ---
 fabricStretch:
-  title: Stoffdehnbarkeit
-  description: Adjust this for more or less stretchy fabrics
+  t: Stoffdehnbarkeit
+  d: Adjust this for more or less stretchy fabrics
 gussetWidth:
-  title: Zwickelbreite
-  description: Steuert die Breite des Zwickels
+  t: Zwickelbreite
+  d: Steuert die Breite des Zwickels
 gussetLength:
-  title: Zwickellänge
-  description: Steuert die Länge des Zwickels
+  t: Zwickellänge
+  d: Steuert die Länge des Zwickels
 elasticStretch:
-  title: Elastic stretch
-  description: Adjust this for more or less stretchy elastic
+  t: Elastic stretch
+  d: Adjust this for more or less stretchy elastic
 rise:
   title: Rise
-  description: Steuert die Höhe der Taille
+  d: Steuert die Höhe der Taille
 legOpening:
-  title: Beinöffnung
-  description: Controls how high the leg is cut out
+  t: Beinöffnung
+  d: Controls how high the leg is cut out
 frontDip:
-  title: Front waist dip
-  description: Controls how much the front waist curves (revealing more or less skin)
+  t: Front waist dip
+  d: Controls how much the front waist curves (revealing more or less skin)
 backDip:
-  title: Back waist dip
-  description: Controls how much the back waist curves (revealing more or less skin)
+  t: Back waist dip
+  d: Controls how much the back waist curves (revealing more or less skin)
 taperToGusset:
-  title: Vordere Freilegung
-  description: Steuert die Menge an freigelegter Haut auf der vorderen Seite
+  t: Vordere Freilegung
+  d: Steuert die Menge an freigelegter Haut auf der vorderen Seite
 backExposure:
-  title: Hintere Freilegung
-  description: Steuert die Menge an freigelegter Haut auf der hinteren Seite
+  t: Hintere Freilegung
+  d: Steuert die Menge an freigelegter Haut auf der hinteren Seite
 
 
 

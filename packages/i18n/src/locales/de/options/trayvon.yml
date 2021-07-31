@@ -1,7 +1,7 @@
 ---
 tipWidth:
-  title: Spitzenbreite
-  description: Die Breite deiner Krawatte an der Spitze
+  t: Spitzenbreite
+  d: Die Breite deiner Krawatte an der Spitze
 knotWidth:
-  title: Knotenbreite
-  description: Die Breite deiner Krawatte am Knoten
+  t: Knotenbreite
+  d: Die Breite deiner Krawatte am Knoten

@@ -1,41 +1,41 @@
 ---
 shoulderDart:
-  title: Pince d'épaule
-  description: S'il faut ou non inclure une pince à l'épaule pour arrondir le dos
+  t: Pince d'épaule
+  d: S'il faut ou non inclure une pince à l'épaule pour arrondir le dos
 shoulderDartSize:
-  title: Taille de la pince de l'épaule
-  description: La taille de la pince d'épaule
+  t: Taille de la pince de l'épaule
+  d: La taille de la pince d'épaule
 shoulderDartLength:
-  title: Longueur de la pince de l'épaule
-  description: La longueur de la pince d'épaule
+  t: Longueur de la pince de l'épaule
+  d: La longueur de la pince d'épaule
 waistDart:
-  title: Pince de taille
-  description: S'il faut ou non inclure une pince à la taille pour arrondir le dos
+  t: Pince de taille
+  d: S'il faut ou non inclure une pince à la taille pour arrondir le dos
 waistDartSize:
-  title: Taille de la pince de taille
-  description: La taille de la pince de taille
+  t: Taille de la pince de taille
+  d: La taille de la pince de taille
 waistDartLength:
-  title: Longueur de la pince de taille
-  description: La longueur de la pince de taille
+  t: Longueur de la pince de taille
+  d: La longueur de la pince de taille
 verticalEase:
-  title: Aisance verticale
-  description: La quantité d'aisance à répartir sur la longueur du vêtement
+  t: Aisance verticale
+  d: La quantité d'aisance à répartir sur la longueur du vêtement
 waistEase:
-  title: Aisance à la taille
-  description: L'ampleur d'aisance à votre taille
+  t: Aisance à la taille
+  d: L'ampleur d'aisance à votre taille
 primaryBustDart:
-  title: Pince poitrine
-  description: Où placer la pince poitrine pour s'adapter à la poitrine
+  t: Pince poitrine
+  d: Où placer la pince poitrine pour s'adapter à la poitrine
 primaryBustDartLength:
-  title: Longueur des pinces poitrine
-  description: La longueur de la pince de poitrine
+  t: Longueur des pinces poitrine
+  d: La longueur de la pince de poitrine
 secondaryBustDart:
-  title: Pince poitrine secondaire
-  description: Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine
+  t: Pince poitrine secondaire
+  d: Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine
 secondaryBustDartLength:
-  title: Longueur de la pince poitrine secondaire
-  description: La longueur de la pince poitrine secondaire
+  t: Longueur de la pince poitrine secondaire
+  d: La longueur de la pince poitrine secondaire
 primaryBustDartShaping:
-  title: Forme des pinces poitrine
-  description: Contrôle l'équilibre entre les pinces de buste principale et secondaire
+  t: Forme des pinces poitrine
+  d: Contrôle l'équilibre entre les pinces de buste principale et secondaire
 

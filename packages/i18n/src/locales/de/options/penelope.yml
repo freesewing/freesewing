@@ -1,46 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Zurück zum Abnäherinhalttiefenfaktor
-  description: Wie weit der rückwärtige Abnäher vom Taillenbund nach unten geht. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesäßumfang.
+  t: Zurück zum Abnäherinhalttiefenfaktor
+  d: Wie weit der rückwärtige Abnäher vom Taillenbund nach unten geht. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesäßumfang.
 backVent:
-  title: Hinterer Gehschlitz
-  description: Fügt einen Bewegungschlitz hinten am Rock hinzu.
+  t: Hinterer Gehschlitz
+  d: Fügt einen Bewegungschlitz hinten am Rock hinzu.
 backVentLength:
-  title: Hinterer Gehschlitz Länge
-  description: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
+  t: Hinterer Gehschlitz Länge
+  d: Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge.
 dartToSideSeamFactor:
-  title: Abnäher zu Seitennaht Faktor
-  description: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
+  t: Abnäher zu Seitennaht Faktor
+  d: Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 frontDartDepthFactor:
-  title: Vorderer Abnäherinhälttiefenfaktor
-  description: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesäßumfang.
+  t: Vorderer Abnäherinhälttiefenfaktor
+  d: Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesäßumfang.
 hem:
-  title: Höhe des Saumes
-  description: Breite des Saumes. Maß in absoluten Werten angeben.
+  t: Höhe des Saumes
+  d: Breite des Saumes. Maß in absoluten Werten angeben.
 hemBonus:
-  title: Saumzugabe
-  description: Diese Option reduziert die Saumweite. Sie ist ein prozentualer Anteil des Gesäßumfangs.
+  t: Saumzugabe
+  d: Diese Option reduziert die Saumweite. Sie ist ein prozentualer Anteil des Gesäßumfangs.
 lengthBonus:
-  title: Längenzugabe
-  description: Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert.
+  t: Längenzugabe
+  d: Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert.
 nrOfDarts:
-  title: Anzahl Abnäher
-  description: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
+  t: Anzahl Abnäher
+  d: Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt.
 seatEase:
-  title: Hüftzugabe
-  description: Zugegebene Weite auf Höhe des Gesäßs.
+  t: Hüftzugabe
+  d: Zugegebene Weite auf Höhe des Gesäßs.
 waistBand:
-  title: Taillenbund
-  description: Füge einen Taillenbund zum Schnittmuster hinzu.
+  t: Taillenbund
+  d: Füge einen Taillenbund zum Schnittmuster hinzu.
 waistBandWidth:
-  title: Breite des Taillenbundes
-  description: Die Breite des Taillenbundes.
+  t: Breite des Taillenbundes
+  d: Die Breite des Taillenbundes.
 waistEase:
-  title: Taillenzugabe
-  description: Zugegebene Weite auf Taillenhöhe.
+  t: Taillenzugabe
+  d: Zugegebene Weite auf Taillenhöhe.
 zipperLocation:
-  title: Platzierung Reißverschluss
-  description: Platzierung des Reißverschlusses.
+  t: Platzierung Reißverschluss
+  d: Platzierung des Reißverschlusses.
   options:
     backSeam: An der hinteren Mittelnaht
     sideSeam: In der Seitennaht

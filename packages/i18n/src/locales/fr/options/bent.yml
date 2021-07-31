@@ -1,8 +1,8 @@
 ---
 sleeveBend:
-  title: Courbe de manche
-  description: Contrôle la courbure de la manche au niveau du coude.
+  t: Courbe de manche
+  d: Contrôle la courbure de la manche au niveau du coude.
 sleevecapHeight:
-  title: Hauteur du tête de manche
-  description: Contrôle la hauteur du tête de manche
+  t: Hauteur du tête de manche
+  d: Contrôle la hauteur du tête de manche
 

@@ -1,92 +1,92 @@
 ---
 backDarts:
-  title: Back darts
-  description: Incluir o no pinzas traseras
+  t: Back darts
+  d: Incluir o no pinzas traseras
   options:
     auto: Automático
     always: Siempre
     never: Nunca
 backDartShaping:
-  title: Forma de las pinzas traseras
-  description: La cantidad de forma que añaden las pinzas traseras
+  t: Forma de las pinzas traseras
+  d: La cantidad de forma que añaden las pinzas traseras
 barrelCuffNarrowButton:
-  title: Botón de ajuste del puño
-  description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
+  t: Botón de ajuste del puño
+  d: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
 boxPleat:
-  title: Pliegue en caja
-  description: Si incluir un pliegue en caja en la parte trasera o no
+  t: Pliegue en caja
+  d: Si incluir un pliegue en caja en la parte trasera o no
 boxPleatWidth:
-  title: Anchura del pliegue en caja
-  description: El ancho total del pliegue en caja
+  t: Anchura del pliegue en caja
+  d: El ancho total del pliegue en caja
 boxPleatFold:
-  title: Doblado del pliegue en caja
-  description: La cantidad por la que el piegue en caja se dobla hacia adentro
+  t: Doblado del pliegue en caja
+  d: La cantidad por la que el piegue en caja se dobla hacia adentro
 buttonPlacketStyle:
-  title: Estilo de la vista de los botones
-  description: Estilo de la visto de los botones
+  t: Estilo de la vista de los botones
+  d: Estilo de la visto de los botones
   options:
     classic: Estilo clásico
     seamless: Estilo francés (sin costuras)
 buttonPlacketWidth:
-  title: Anchura de la vista de los botones
-  description: Anchura de la vista de los botones
+  t: Anchura de la vista de los botones
+  d: Anchura de la vista de los botones
 buttonFreeLength:
-  title: Longitud sin botones
-  description: Qué longitud se deja entre el último botón y el bajo.
+  t: Longitud sin botones
+  d: Qué longitud se deja entre el último botón y el bajo.
 buttonholePlacketFoldWidth:
-  title: Anchura del pliegue de la vista de los ojales
-  description: Anchura del pliegue de la vista de los ojales.
+  t: Anchura del pliegue de la vista de los ojales
+  d: Anchura del pliegue de la vista de los ojales.
 buttonholePlacketStyle:
-  title: Estilo de la vista de los ojales
-  description: Estilo de la vista de los ojales.
+  t: Estilo de la vista de los ojales
+  d: Estilo de la vista de los ojales.
   options:
     classic: Estilo clásico
     seamless: Estilo francés (sin costuras)
 buttonholePlacketWidth:
-  title: Anchura de la vista de los ojales
-  description: Width of the buttonhole placket.
+  t: Anchura de la vista de los ojales
+  d: Width of the buttonhole placket.
 buttons:
-  title: Número de botones
-  description: Número de botones delanteros
+  t: Número de botones
+  d: Número de botones delanteros
 collarAngle:
-  title: Ángulo del pico del cuello
-  description: El ángulo de los picos del cuello
+  t: Ángulo del pico del cuello
+  d: El ángulo de los picos del cuello
 collarBend:
-  title: Inclinación del cuello
-  description: La inclinación del cuello hacia atrás.
+  t: Inclinación del cuello
+  d: La inclinación del cuello hacia atrás.
 collarFlare:
-  title: Forma de los picos del cuello
-  description: Cuánto más ancho es el cuello en los picos con respecto al centro.
+  t: Forma de los picos del cuello
+  d: Cuánto más ancho es el cuello en los picos con respecto al centro.
 collarGap:
-  title: Espaciado del cuello
-  description: La separación entre los dos extremos del cuello
+  t: Espaciado del cuello
+  d: La separación entre los dos extremos del cuello
 collarRoll:
-  title: Vuelta del cuello
-  description: La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás.
+  t: Vuelta del cuello
+  d: La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás.
 collarStandBend:
-  title: Doblado de la base del cuello
-  description: La cantidad en la que el cuello superior es mayor que el inferior.
+  t: Doblado de la base del cuello
+  d: La cantidad en la que el cuello superior es mayor que el inferior.
 collarStandCurve:
-  title: Curvatura de la base del cuello
-  description: La curvatura de la base del cuello.
+  t: Curvatura de la base del cuello
+  d: La curvatura de la base del cuello.
 collarStandWidth:
-  title: Anchura de la base del cuello
-  description: Width of the collar stand.
+  t: Anchura de la base del cuello
+  d: Width of the collar stand.
 cuffButtonRows:
-  title: Hileras de botones en los puños
-  description: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
+  t: Hileras de botones en los puños
+  d: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
   options:
     '1': Hilera de botones sencilla
     '2': Hilera de botones doble
 cuffDrape:
-  title: Plisado del puño
-  description: La cantidad en la que la manga es más ancha que el puño en el lugar donde se unen.
+  t: Plisado del puño
+  d: La cantidad en la que la manga es más ancha que el puño en el lugar donde se unen.
 cuffLength:
-  title: Longitud del puño
-  description: La longitud de los puños.
+  t: Longitud del puño
+  d: La longitud de los puños.
 cuffStyle:
-  title: Estilo del puño
-  description: El estilo de los puños.
+  t: Estilo del puño
+  d: El estilo de los puños.
   options:
     roundedBarrelCuff: Puño de barril redondeado
     angledBarrelCuff: Puño de barril en ángulo
@@ -95,39 +95,39 @@ cuffStyle:
     angledFrenchCuff: Puño francés en ángulo
     straightFrenchCuff: Puño francés recto
 extraTopButton:
-  title: Botón extra superior
-  description: Incluír o no un botón extra en el cierre frontal.
+  t: Botón extra superior
+  d: Incluír o no un botón extra en el cierre frontal.
 hemCurve:
-  title: Curva del dobladillo
-  description: La altura de la curva en un dobladillo redondeado.
+  t: Curva del dobladillo
+  d: La altura de la curva en un dobladillo redondeado.
 hemStyle:
-  title: Estilo del dobladillo
-  description: El estilo del dobladillo.
+  t: Estilo del dobladillo
+  d: El estilo del dobladillo.
   options:
     straight: Recto
     baseball: Baseball
     slashed: Recortado
 roundBack:
-  title: Round back
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  t: Round back
+  d: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 seperateButtonholePlacket:
-  title: Tapeta de ojal separada
-  description: Draft a separate buttonhole placket.
+  t: Tapeta de ojal separada
+  d: Draft a separate buttonhole placket.
 seperateButtonPlacket:
-  title: Tapeta de botones separada
-  description: Draft a separate button placket
+  t: Tapeta de botones separada
+  d: Draft a separate button placket
 sleevePlacketLength:
-  title: Longitud de la vista de la manga
-  description: La longitud de la vista de la manga.
+  t: Longitud de la vista de la manga
+  d: La longitud de la vista de la manga.
 sleevePlacketWidth:
-  title: Anchura de la vista de la manga
-  description: La anchura de la vista de la manga.
+  t: Anchura de la vista de la manga
+  d: La anchura de la vista de la manga.
 splitYoke:
-  title: Canesú partido
-  description: Si se traza el canesú normal o partido.
+  t: Canesú partido
+  d: Si se traza el canesú normal o partido.
 waistEase:
-  title: Holgura de cintura
-  description: La cantidad de holgura en la cintura.
+  t: Holgura de cintura
+  d: La cantidad de holgura en la cintura.
 yokeHeight:
-  title: Yoke height
-  description: Controls the height of the yoke
+  t: Yoke height
+  d: Controls the height of the yoke

@@ -1,7 +1,7 @@
 ---
 tipWidth:
-  title: Tip breedte
-  description: De breedte van je stropdas aan het uiteinde
+  t: Tip breedte
+  d: De breedte van je stropdas aan het uiteinde
 knotWidth:
-  title: Knoop breedte
-  description: De breedte van je stropdas aan de knoop
+  t: Knoop breedte
+  d: De breedte van je stropdas aan de knoop

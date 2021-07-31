@@ -1,10 +1,10 @@
 ---
 flare:
-  title: Ensanchamiento
-  description: La cantidad por la cual la prenda se ensancha desde tu pecho hacia abajo.
+  t: Ensanchamiento
+  d: La cantidad por la cual la prenda se ensancha desde tu pecho hacia abajo.
 shoulderseamLength:
-  title: Shoulder seam length
-  description: La longitud de la costura del hombro, como un factor de la medida de su hombro a hombro.
+  t: Shoulder seam length
+  d: La longitud de la costura del hombro, como un factor de la medida de su hombro a hombro.
 shoulderSlope:
-  title: Pendiente del hombro
-  description: Controls the angle of the shoulder seams
+  t: Pendiente del hombro
+  d: Controls the angle of the shoulder seams

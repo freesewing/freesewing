@@ -1,0 +1,37 @@
+---
+# This file is used for the v3 codebase (aka project 2022)
+
+# Navigation
+becomeAPatron: Become a patron
+blog: Blog
+colors: Colors
+community: Community
+docs: Documentation
+forByMakers: For/By makers
+home: Home
+search: Search
+showcase: Showcase
+supportUs: Support us
+makes: makes # As in: Your makes
+
+# Placeholders
+onX: On {{x}}
+ourX: Our {{x}}
+xThis: "{{x}} this" # As in: Wrote this
+yourX: Your {{x}}
+
+# popout
+note: Note
+tip: Tip
+warning: Warning
+fixme: Fixme
+link: Link
+related: Related
+
+# Strapi
+by: By
+developerBlog: Developer blog
+made: Made # As in: Made this
+makerBlog: Maker blog
+wrote: Wrote # As in: Wrote this
+#

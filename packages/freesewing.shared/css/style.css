@@ -1,0 +1,14 @@
+/*
+ * We use TailwindCSS
+ *
+ * Try to style everything with utility classes.
+ * When that doesn't work, this is an escape hatch.
+ */
+
+div.popout-content > * {
+  margin-top: 0;
+}
+div.popout-content :last-child {
+  margin-bottom: 0;
+}
+

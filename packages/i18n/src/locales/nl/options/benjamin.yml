@@ -1,23 +1,23 @@
 ---
 adjustmentRibbon:
-  title: Aanpaslintje
-  description: Of je wel of geen aanpaslintje wil
+  t: Aanpaslintje
+  d: Of je wel of geen aanpaslintje wil
 bandLength:
-  title: Lengte band
-  description: Lengte van de band
+  t: Lengte band
+  d: Lengte van de band
 tipWidth:
-  title: Breedte punten
-  description: Breedte van de punten
+  t: Breedte punten
+  d: Breedte van de punten
 knotWidth:
-  title: Breedte knoop
-  description: Breedte van de knoop
+  t: Breedte knoop
+  d: Breedte van de knoop
 bowLength:
-  title: Lengte strik
-  description: Lengte van de strik (wanneer geknoopt)
+  t: Lengte strik
+  d: Lengte van de strik (wanneer geknoopt)
 bowStyle:
-  title: Stijl strik
-  description: Stijl van de strik
+  t: Stijl strik
+  d: Stijl van de strik
 endStyle:
-  title: Stijl punt
-  description: Stijl van de puntjes van de strik
+  t: Stijl punt
+  d: Stijl van de puntjes van de strik
 

@@ -1,31 +1,31 @@
 ---
 advanced:
-  title: Modo experto
-  description: Controla si mostrar o no la configuración avanzada y las opciones de patrón
+  t: Modo experto
+  d: Controla si mostrar o no la configuración avanzada y las opciones de patrón
 paperless:
-  title: Sin papel
-  description: Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir
+  t: Sin papel
+  d: Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir
 sa:
-  title: Margen de costura
-  description: Controla la cantidad de margen de costura incluido en tu patrón
+  t: Margen de costura
+  d: Controla la cantidad de margen de costura incluido en tu patrón
 locale:
-  title: Idioma
-  description: Determina el lenguaje utilizado en tu patrón
+  t: Idioma
+  d: Determina el lenguaje utilizado en tu patrón
 only:
-  title: Contenido
-  description: Le permite controlar qué partes del patrón se incluirán en su patrón
+  t: Contenido
+  d: Le permite controlar qué partes del patrón se incluirán en su patrón
 units:
-  title: Unidades
-  description: Controla las unidades utilizadas en tu patrón
+  t: Unidades
+  d: Controla las unidades utilizadas en tu patrón
 margin:
-  title: Margen
-  description: Controla el margen alrededor de las partes del patrón
+  t: Margen
+  d: Controla el margen alrededor de las partes del patrón
 complete:
-  title: Detalle
-  description: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón
+  t: Detalle
+  d: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón
 layout:
-  title: Diseño
-  description: Controla cómo se colocan las partes individuales del patrón en tu patrón
+  t: Diseño
+  d: Controla cómo se colocan las partes individuales del patrón en tu patrón
 debug:
-  title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  t: Debug
+  d: Enable debug to gain additional info about how your pattern was created

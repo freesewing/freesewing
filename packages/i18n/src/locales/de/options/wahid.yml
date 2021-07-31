@@ -1,43 +1,43 @@
 ---
 backScyeDart:
-  title: Rückwärtige Armlochabnäher
-  description: Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss.
+  t: Rückwärtige Armlochabnäher
+  d: Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss.
 frontScyeDart:
-  title: Vorderer Armlochabnäher
-  description: Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss.
+  t: Vorderer Armlochabnäher
+  d: Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss.
 pocketLocation:
-  title: Taschenplatzierung
-  description: Bestimmt die Platzierung der Tasche
+  t: Taschenplatzierung
+  d: Bestimmt die Platzierung der Tasche
 pocketWidth:
-  title: Taschenbreite
-  description: Bestimmt die Breite der Tasche
+  t: Taschenbreite
+  d: Bestimmt die Breite der Tasche
 weltHeight:
-  title: Paspelhöhe
-  description: Bestimmt die Höhe der Paspel
+  t: Paspelhöhe
+  d: Bestimmt die Höhe der Paspel
 necklineDrop:
-  title: Ausschnitt Tiefe
-  description: Legt fest, wie tief der Ausschnitt vorne ausgeschnitten ist
+  t: Ausschnitt Tiefe
+  d: Legt fest, wie tief der Ausschnitt vorne ausgeschnitten ist
 frontStyle:
-  title: Ausschnittstil
-  description: Stil des Ausschnitts
+  t: Ausschnittstil
+  d: Stil des Ausschnitts
 hemStyle:
-  title: Saumart
-  description: Art des vorderen Saums
+  t: Saumart
+  d: Art des vorderen Saums
 hemRadius:
-  title: Saumradius
-  description: Rundungsradius des Saumes
+  t: Saumradius
+  d: Rundungsradius des Saumes
 backInset:
-  title: Rückseite Ausschnitt
-  description: Wie viel die Rückseite des Armlochs nach innen verschoben ist
+  t: Rückseite Ausschnitt
+  d: Wie viel die Rückseite des Armlochs nach innen verschoben ist
 frontInset:
-  title: Vorderseite Ausschnitt
-  description: Wieviel das Armloch an der Vorderseite nach innen verschoben wird
+  t: Vorderseite Ausschnitt
+  d: Wieviel das Armloch an der Vorderseite nach innen verschoben wird
 shoulderInset:
-  title: Schulterversatz nach innen
-  description: Wieviel die Schulternaht nach innen Richtung Schulter versetzt wird
+  t: Schulterversatz nach innen
+  d: Wieviel die Schulternaht nach innen Richtung Schulter versetzt wird
 neckInset:
-  title: Nackenauschnitt
-  description: Wieviel die Schulternaht am Nacken nach innen versetzt wird
+  t: Nackenauschnitt
+  d: Wieviel die Schulternaht am Nacken nach innen versetzt wird
 pocketAngle:
-  title: Winkel der Tasche
-  description: Winkel der Taschenneigung
+  t: Winkel der Tasche
+  d: Winkel der Taschenneigung
