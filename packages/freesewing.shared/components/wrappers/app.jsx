@@ -15,7 +15,7 @@ import useNavigation from '@/shared/hooks/useNavigation'
 const AppWrapper= props => {
   const router = useRouter()
   const path = router.asPath
-  const locale = router.locale || 'en'
+  const locale = router.locale || config.language
   const tree = useNavigation(locale, path)
 
   // Trigger search with Ctrl+k

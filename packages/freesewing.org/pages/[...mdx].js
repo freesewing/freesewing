@@ -10,7 +10,7 @@ import Pattern from '@/site/components/mdx/pattern'
 const MdxPage = (props) => {
   const { t } = useTranslation('common')
   return (
-    <AppWrapper title={props.frontmatter.title}>
+    <AppWrapper title={props.frontmatter.title} t={t}>
       <article className="mdx prose lg:prose-lg mb-12 m-auto">
         <MdxWrapper
           components={{Pattern, Plugin}}

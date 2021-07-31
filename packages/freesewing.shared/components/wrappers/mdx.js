@@ -4,9 +4,11 @@ import MDX from "@mdx-js/runtime";
 import YouTube from "../mdx/youtube"
 import Highlight from "../mdx/highlight"
 import Popout from '../popout'
-import Tree from '../navigation/aside'
+import ReadMore from '../navigation/readmore'
 import Example from '../core/example'
 import { list as designs } from '@freesewing/pattern-info'
+import { useRouter } from 'next/router'
+import useNavigation from '@/shared/hooks/useNavigation'
 // Site config
 import config from '@/site/freesewing.config'
 
@@ -36,7 +38,15 @@ const components = {
 
 
 const MdxWrapper = props => {
-  if (props.pages) components.ReadMore = mdxProps => <Tree {...props} {...mdxProps} pages={props.pages} offspring plain />
+  const router = useRouter()
+  const path = router.asPath
+  const locale = router.locale || config.language
+  const tree = useNavigation(locale, path)
+  const steps = path.slice(1).split('/')
+  let branch = {...tree}
+  for (const step of steps) branch = tree[step]
+
+  components.ReadMore = mdxProps => <ReadMore {...props} {...mdxProps} path={path} tree={branch}/>
   return (
     <MDXRemote
       components={{...components, ...props.components}}
