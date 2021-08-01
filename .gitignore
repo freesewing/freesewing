@@ -7,6 +7,7 @@ packages/freesewing.org/prebuild
 packages/freesewing.dev/out
 packages/freesewing.org/out
 packages/freesewing.org/public/locales
+packages/i18n/prebuild
 packages/plugin-theme/src/bundle.css.js
 packages/plugin-theme/css
 packages/components/Blockquote
