@@ -1,2 +1,42 @@
 ---
-# These are used in the v3 codebase (aka project 2022)
+# This file is used for the v3 codebase (aka project 2022)
+
+# Navigation
+becomeAPatron: Word mecenas
+blog: Blog
+collection: Collectie
+colors: Kleuren
+community: Gemeenschap
+designs: Ontwerpen
+docs: Documentatie
+forByMakers: Voor/Door makers
+home: Start
+inspiration: Inspiratie
+language: Taal
+search: Zoeken
+showcase: Voorbeelden
+support: Ondersteuning
+supportUs: Steun ons
+theme: Pallet
+makes: projecten # As in: Your makes
+
+# Placeholders
+onX: Op {{x}}
+ourX: Onze {{x}}
+xThis: "{{x}} dit" # As in: Wrote this
+yourX: Jouw {{x}}
+
+# popout
+note: Noteer
+tip: Tip
+warning: Waarschuwing
+fixme: Fixme
+link: Link
+related: Gerelateerd
+
+# Strapi
+by: Door
+developerBlog: Blog voor ontwikkelaars
+made: Maakte # As in: Made this
+makerBlog: Maker blog
+wrote: Schreef # As in: Wrote this
