@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Icon from '@/shared/components/icon'
 import ThemeChooser from '@/shared/components/theme-chooser'
+import LanguageChooser from '@/shared/components/language-chooser'
 import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation/navlink'
+import config from '@/site/freesewing.config'
+import { languages } from '@freesewing/i18n'
 
 const l = (t, to, title, subtitle, icon) => (
   <NavLink
@@ -19,21 +22,31 @@ const ExtraNavs = props => {
       block={props.menu}
       iconSize={iconSize}
       classes={classes}
-      mini={<Mini>{t('yourX', {x: t('colors')})}
+      t={props.t}
+      mini={<Mini>{t('colors')}</Mini>}
+    />,
+    language: <LanguageChooser
+      block={props.menu}
+      iconSize={iconSize}
+      classes={classes}
+      locale={props.locale}
+      languages={props.languages}
+      path={props.path}
+      t={props.t}
+      mini={<Mini>{languages[props.locale]}
       </Mini>}
     />,
     home: l(t, '/', 'home', 'freesewing.org', 'freesewing'),
     blog: l(t, '/blog', 'blog', 'forByMakers', 'blog'),
-    docs: l(t, '/docs', 'support', 'docs', 'docs'),
     join: l(t, '/patrons/join', 'supportUs', 'becomeAPatron', 'community'),
     docs: <NavLink
       href='/docs'
-      title={t('support')}
-      subtitle={`& ${t('docs')}`}
+      title={t('docs')}
+      subtitle={`& ${t('support')}`}
       icon='support'
     />,
     designs: l(t,
-      '/designs', 'designs',
+      '/designs', t('designs'),
       ['ourX', {x: t('collection')}],
       'designs'
     ),
@@ -47,10 +60,12 @@ const ExtraNavs = props => {
       ['onX', {x:'Github'}],
       'github'
     ),
-    showcase: l(t, '/showcase', 'Showcase',
-      ['yourX', {x: t('makes')}],
-      'showcase'
-    ),
+    showcase: <NavLink
+      href='/showcase'
+      title={t('showcase')}
+      subtitle={`& ${t('inspiration')}`}
+      icon='showcase'
+    />,
     search: (
       <button
         className={`${classes.btn} lg:w-auto`}
@@ -80,24 +95,24 @@ const ExtraNavs = props => {
   return props.menu
     ? props.navbar
       ? navs.menu
-      : [navs.theme, navs.discord, navs.github]
+      : [navs.language, navs.theme, navs.discord, navs.github]
     : (
       <>
         <div className="hidden lg:flex lg:flex-row lg:gap-2 items-start">
-          {navs.home}
           {navs.designs}
           {navs.showcase}
           {navs.blog}
-          {navs.docs}
         </div>
-        <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300 py-1">
-          <div className="w-1/2 px-1">{navs.search}</div>
-          <div className="w-1/2 px-1">{navs.menu}</div>
+        <div className="flex flex-row flex-1 divide-x divide-base-300 py-1 lg:divide-none lg:justify-center">
+          <div className="w-1/2 px-1 lg:w-auto">{navs.search}</div>
+          <div className="w-1/2 px-1 lg:w-auto">{navs.docs}</div>
+          <div className="w-1/2 px-1 lg:w-auto">{navs.discord}</div>
+
+          <div className="lg:hidden w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>
-          {navs.search}
-          {navs.discord}
           {navs.theme}
+          {navs.language}
         </div>
       </>
     )

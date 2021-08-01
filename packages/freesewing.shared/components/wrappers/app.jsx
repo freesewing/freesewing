@@ -38,6 +38,7 @@ const AppWrapper= props => {
     path, tree,
     title: props.title,
     t: props.t,
+    locale, languages: config.languages,
   }
 
   return (

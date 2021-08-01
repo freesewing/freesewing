@@ -23,6 +23,8 @@ const components = {
   Fixme: props => <Popout {...props} fixme />,
   Note: props => <Popout {...props} note />,
   Tip: props => <Popout {...props} tip />,
+  Related: props => <Popout {...props} related />,
+  Link: props => <Popout {...props} link />,
   Warning: props => <Popout {...props} warning />,
   YouTube,
   // Tailwind typography plugin overrides
