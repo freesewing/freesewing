@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { useHotkeys } from 'react-hotkeys-hook'
 import themes from '@/shared/themes'
 import { useRouter } from 'next/router'
+import config from '@/site/freesewing.config.js'
 // Shared components
 import ProgressBar from '@/shared/components/progress-bar'
 import Navbar from '@/shared/components/sections/navbar'
