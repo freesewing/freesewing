@@ -16,18 +16,32 @@ export const iconSize = 52
 
 const NavLink = props => (
   <Link href={props.href}>
-    <button
-      className={`${classes.btn} ${props.menu ? 'btn-block my-2' : ''}`}
-      title={props.title + ' ' + props.subtitle}
-    >
-      <div className={classes.btnWrap}>
-        <Icon icon={props.icon} size={iconSize}/>
-        <span className={classes.btnSpan}>
-          {props.title}
-          <Mini>{props.subtitle}</Mini>
-        </span>
-      </div>
-    </button>
+    {props.mobile ? (
+      <button
+        className="btn-block btn-ghost"
+        title={props.title + ' | ' + props.subtitle}
+      >
+        <div className="flex flex-row w-full">
+          <Icon icon={props.icon} size={24}/>
+          <span className="px-4 text-xl font-semibold opacity-70">
+            {props.title}
+          </span>
+        </div>
+      </button>
+    ) : (
+      <button
+        className={classes.btn || ''}
+        title={props.title + ' | ' + props.subtitle}
+      >
+        <div className={classes.btnWrap}>
+          <Icon icon={props.icon} size={iconSize}/>
+          <span className={classes.btnSpan}>
+            {props.title}
+            <Mini>{props.subtitle}</Mini>
+          </span>
+        </div>
+      </button>
+    )}
   </Link>
 )
 

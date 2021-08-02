@@ -56,7 +56,7 @@ const Picker = props => {
     <div className={`dropdown dropdown-start w-full cursor-pointer`}>
       <div tabIndex="0" className="flex flex-row w-full">
         <Icon icon={icons[mode]} size={24}/>
-        <span className="px-4 text-xl font-semibold opacity-70">
+        <span className="px-4 text-xl font-semibold opacity-70 capitalize">
           {t(mode)}
         </span>
       </div>

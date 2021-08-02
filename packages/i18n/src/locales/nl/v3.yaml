@@ -40,3 +40,11 @@ developerBlog: Blog voor ontwikkelaars
 made: Maakte # As in: Made this
 makerBlog: Maker blog
 wrote: Schreef # As in: Wrote this
+
+# Themes
+theme.light: Helder
+theme.dark: Donker
+theme.bureaucrats: Bureaucraten
+theme.hax0r: Computerclub
+theme.kindergarten: Kleuterschool
+

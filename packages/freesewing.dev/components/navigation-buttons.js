@@ -3,8 +3,8 @@ import Icon from '@/shared/components/icon'
 import ThemeChooser from '@/shared/components/navigation/pickers/theme'
 import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation/navlink'
 
-const l = (to, title, subtitle, icon) => (
-  <NavLink href={to} title={title} subtitle={subtitle} icon={icon}/>
+const l = (to, title, subtitle, icon, mobile) => (
+  <NavLink href={to} title={title} subtitle={subtitle} icon={icon} mobile={mobile}/>
 )
 
 const ExtraNavs = props => {
@@ -17,19 +17,22 @@ const ExtraNavs = props => {
       mini={<Mini>Colors</Mini>}
       t={t}
     />,
-    home: l('/', 'home', 'freesewing.dev', 'freesewing'),
-    blog: l('/blog', 'blog', 'For/By Developers', 'blog'),
-    join: l('/patrons/join', 'supportUs', 'becomeAPatron', 'community'),
+    home: l('/', 'home', 'freesewing.dev', 'freesewing', props.menu),
+    blog: l('/blog', 'blog', 'For/By Developers', 'blog', props.menu),
+    join: l('/patrons/join', 'supportUs', 'becomeAPatron', 'community', props.menu),
     discord: l(
       'https://discord.freesewing.org/',
-      'Or ask on Discord',
+      props.menu ? 'FreeSewing on Discord' : 'Or ask on Discord',
       'Come say hi',
-      'discord'
+      'discord',
+      props.menu
     ),
     github: l(
-      'https://github.com/freesewing/freesewing', 'code',
+      'https://github.com/freesewing/freesewing',
+      props.menu ? 'FreeSewing on Github' : 'code',
       'On Github',
-      'github'
+      'github',
+      props.menu
     ),
     search: (
       <button
@@ -39,7 +42,7 @@ const ExtraNavs = props => {
         <div className={classes.btnWrap}>
           <Icon icon='search' size={iconSize} className="hidden lg:inline"/>
           <span className={classes.btnSpan}>
-            Search for answers
+            Search<span className="hidden lg:inline"> for answers</span>
             <Mini>[Ctrlk-k]</Mini>
           </span>
         </div>
@@ -65,14 +68,12 @@ const ExtraNavs = props => {
     : (
       <>
         <div className="hidden lg:flex lg:flex-row lg:gap-2 items-start">
-          {navs.home}
           {navs.blog}
-          {navs.search}
-          {navs.discord}
         </div>
-        <div className="lg:hidden flex flex-row flex-1 divide-x divide-base-300 py-2">
-          <div className="w-1/2 px-1">{navs.search}</div>
-          <div className="w-1/2 px-1">{navs.menu}</div>
+        <div className="flex flex-row flex-1 divide-x divide-base-300 py-0 lg:divide-none lg:justify-center">
+          <div className="w-1/2 px-1 lg:w-auto">{navs.search}</div>
+          <div className="hidden w-1/2 px-1 lg:block">{navs.discord}</div>
+          <div className="lg:hidden w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>
           {navs.theme}

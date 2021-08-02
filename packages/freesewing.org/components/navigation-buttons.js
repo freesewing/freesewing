@@ -6,12 +6,13 @@ import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation
 import config from '@/site/freesewing.config'
 import { languages } from '@freesewing/i18n'
 
-const l = (t, to, title, subtitle, icon) => (
+const l = (t, to, title, subtitle, icon, mobile) => (
   <NavLink
     href={to}
     title={typeof title === 'string' ? t(title) : t(...title)}
     subtitle={typeof subtitle === 'string' ? t(subtitle) : t(...subtitle)}
     icon={icon}
+    mobile={mobile}
   />
 )
 
@@ -36,29 +37,30 @@ const ExtraNavs = props => {
       mini={<Mini>{languages[props.locale]}
       </Mini>}
     />,
-    home: l(t, '/', 'home', 'freesewing.org', 'freesewing'),
-    blog: l(t, '/blog', 'blog', 'forByMakers', 'blog'),
-    join: l(t, '/patrons/join', 'supportUs', 'becomeAPatron', 'community'),
+    home: l(t, '/', 'home', 'freesewing.org', 'freesewing', props.menu),
+    blog: l(t, '/blog', 'blog', 'forByMakers', 'blog', props.menu),
+    join: l(t, '/patrons/join', 'supportUs', 'becomeAPatron', 'community', props.menu),
     docs: <NavLink
       href='/docs'
       title={t('docs')}
       subtitle={`& ${t('support')}`}
       icon='support'
+      mobile={props.menu}
     />,
     designs: l(t,
       '/designs', t('designs'),
       ['ourX', {x: t('collection')}],
-      'designs'
+      'designs', props.menu
     ),
     discord: l(t,
       'https://discord.freesewing.org/', 'community',
       ['onX', {x:'Discord'}],
-      'discord'
+      'discord', props.menu
     ),
     github: l(t,
       'https://github.com/freesewing/freesewing', 'code',
       ['onX', {x:'Github'}],
-      'github'
+      'github', props.menu
     ),
     showcase: <NavLink
       href='/showcase'
@@ -97,7 +99,7 @@ const ExtraNavs = props => {
   return props.menu
     ? props.navbar
       ? navs.menu
-      : [navs.language, navs.theme, navs.discord, navs.github]
+      : [navs.designs, navs.language, navs.theme, navs.discord]
     : (
       <>
         <div className="hidden lg:flex lg:flex-row lg:gap-2 items-start">
@@ -106,9 +108,9 @@ const ExtraNavs = props => {
           {navs.blog}
         </div>
         <div className="flex flex-row flex-1 divide-x divide-base-300 py-0 lg:divide-none lg:justify-center">
+          <div className="hidden w-1/2 px-1 lg:block lg:w-auto">{navs.docs}</div>
           <div className="w-1/2 px-1 lg:w-auto">{navs.search}</div>
-          <div className="hidden w-1/2 px-1 lg:w-auto">{navs.docs}</div>
-          <div className="hidden w-1/2 px-1 lg:w-auto">{navs.discord}</div>
+          <div className="hidden w-1/2 px-1 lg:block lg:w-auto">{navs.discord}</div>
           <div className="lg:hidden w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>

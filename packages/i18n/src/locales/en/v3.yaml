@@ -41,3 +41,10 @@ made: Made # As in: Made this
 makerBlog: Maker blog
 wrote: Wrote # As in: Wrote this
 #
+
+# Themes
+theme.light: Light
+theme.dark: Dark
+theme.bureaucrats: Bureaucrats
+theme.hax0r: Hax0r
+theme.kindergarten: Kindergarten
