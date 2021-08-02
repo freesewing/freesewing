@@ -17,7 +17,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  displayName: "🌞 Light",
+  icon: "🌞",
   config: {
 
     /* FONTS

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Icon from '@/shared/components/icon'
-import ThemeChooser from '@/shared/components/theme-chooser'
-import LanguageChooser from '@/shared/components/language-chooser'
+import ThemeChooser from '@/shared/components/navigation/pickers/theme'
+import LanguageChooser from '@/shared/components/navigation/pickers/language'
 import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation/navlink'
 import config from '@/site/freesewing.config'
 import { languages } from '@freesewing/i18n'
@@ -19,15 +19,15 @@ const ExtraNavs = props => {
   const t = props.t ? props.t : (x) => x
   const navs = {
     theme: <ThemeChooser
-      block={props.menu}
-      iconSize={iconSize}
+      mobile={props.menu}
+      iconSize={props.menu ? 24 : iconSize}
       classes={classes}
       t={props.t}
       mini={<Mini>{t('colors')}</Mini>}
     />,
     language: <LanguageChooser
-      block={props.menu}
-      iconSize={iconSize}
+      mobile={props.menu}
+      iconSize={props.menu ? 24 : iconSize}
       classes={classes}
       locale={props.locale}
       languages={props.languages}

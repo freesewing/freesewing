@@ -3,7 +3,6 @@ import Navigation from '@/shared/components/navigation/aside'
 import Breadcrumbs from '@/shared/components/navigation/breadcrumbs'
 import H1 from '@/shared/components/elements/h1'
 import Icon from '@/shared/components/icon'
-import ThemeChooser from '@/shared/components/theme-chooser'
 import Button from '@/shared/components/elements/button'
 // Site components
 import NavigationButtons from '@/site/components/navigation-buttons'

@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 const gray = colors.trueGray
 
 module.exports = {
-  displayName: "🐕 Kindergarten",
+  icon: "🐕",
   config: {
     'fontFamily': "Chalkboard,comic sans ms,\"sanssecondaryerif\"",
     'primary': colors.emerald['600'],

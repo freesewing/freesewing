@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 const gray = colors.trueGray
 
 module.exports = {
-  displayName: "👨‍💼 Bureaucrats",
+  icon: "👨‍💼",
   config: {
     'fontFamily': 'Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
     'primary': colors.blue['600'],

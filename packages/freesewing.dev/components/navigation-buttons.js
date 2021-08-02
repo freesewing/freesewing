@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Icon from '@/shared/components/icon'
-import ThemeChooser from '@/shared/components/theme-chooser'
+import ThemeChooser from '@/shared/components/navigation/pickers/theme'
 import NavLink, { classes, iconSize, Mini } from '@/shared/components/navigation/navlink'
 
 const l = (to, title, subtitle, icon) => (
@@ -8,12 +8,14 @@ const l = (to, title, subtitle, icon) => (
 )
 
 const ExtraNavs = props => {
+  const t = props.t ? props.t : (x) => x.slice(0,6) === 'theme.' ? x.slice(6) : x
   const navs = {
     theme: <ThemeChooser
-      block={props.menu}
+      mobile={props.menu}
       iconSize={iconSize}
       classes={classes}
-      mini={<Mini>Your colors</Mini>}
+      mini={<Mini>Colors</Mini>}
+      t={t}
     />,
     home: l('/', 'home', 'freesewing.dev', 'freesewing'),
     blog: l('/blog', 'blog', 'For/By Developers', 'blog'),

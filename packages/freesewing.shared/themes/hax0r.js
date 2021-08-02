@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 const gray = colors.trueGray
 
 module.exports = {
-  displayName: "👩‍💻 Hax0r",
+  icon: "👩‍💻",
   config: {
     'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
     'primary': colors.lime['600'],

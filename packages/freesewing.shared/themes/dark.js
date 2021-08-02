@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 const gray = colors.trueGray
 
 module.exports = {
-  displayName: "🌚 Dark",
+  icon: "🌚",
   config: {
     'fontFamily': 'Ubuntu',
     'primary': gray['300'],
