@@ -8,7 +8,8 @@
     "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.js",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start -p 3001"
+    "start": "next start -p 3001",
+    "serve": "pm2 start npm --name 'freesewing.org' -- run start"
   },
   "browser": {
     "child_process": false

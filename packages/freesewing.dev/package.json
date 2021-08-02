@@ -8,7 +8,8 @@
     "prebuild": "SITE=dev node ../freesewing.shared/prebuild/index.js",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start -p 3002"
+    "start": "next start -p 3002",
+    "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
   },
   "dependencies": {
     "@freesewing/pattern-info": "^2.17.0",
