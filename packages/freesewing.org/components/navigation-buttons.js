@@ -86,8 +86,10 @@ const ExtraNavs = props => {
         title="Open menu"
         onClick={props.toggleMenu}
       >
-        {!props.menu && <Icon icon='menu' size={iconSize} className="hidden lg:inline"/>}
-        <span className={classes.btnSpan}>{props.menu && 'Close '} Menu</span>
+        <div className={classes.btnWrap}>
+          {!props.menu && <Icon icon='menu' size={iconSize} className="hidden lg:inline"/>}
+          <span className={classes.btnSpan}>{props.menu && 'Close '} Menu</span>
+        </div>
       </button>
     ),
   }
@@ -103,11 +105,10 @@ const ExtraNavs = props => {
           {navs.showcase}
           {navs.blog}
         </div>
-        <div className="flex flex-row flex-1 divide-x divide-base-300 py-1 lg:divide-none lg:justify-center">
+        <div className="flex flex-row flex-1 divide-x divide-base-300 py-0 lg:divide-none lg:justify-center">
           <div className="w-1/2 px-1 lg:w-auto">{navs.search}</div>
-          <div className="w-1/2 px-1 lg:w-auto">{navs.docs}</div>
-          <div className="w-1/2 px-1 lg:w-auto">{navs.discord}</div>
-
+          <div className="hidden w-1/2 px-1 lg:w-auto">{navs.docs}</div>
+          <div className="hidden w-1/2 px-1 lg:w-auto">{navs.discord}</div>
           <div className="lg:hidden w-1/2 px-1">{navs.menu}</div>
         </div>
         <div className='hidden lg:flex lg:flex-row'>

@@ -4,7 +4,7 @@ import Icon from '@/shared/components/icon'
 export const classes = {
   btn: `
   font-bold text-uppercase transition-colors duration-200 hover:text-secondary-content
-  px-2 pb-0 w-full
+  p-1  w-full
   lg:w-auto lg:p-4`,
   btnWrap: 'flex flex-col items-center text-center',
   btnSpan: 'p-2 uppercase text-xs xl:text-base'
