@@ -4,8 +4,7 @@ const themes = {}
 for (const theme in allThemes) themes[theme] = allThemes[theme].config
 
 module.exports = {
-  // jit compilations causes weird issues
-  //mode: 'jit',
+  mode: 'jit',
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
