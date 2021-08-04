@@ -5,10 +5,74 @@
  * When that doesn't work, this is an escape hatch.
  */
 
+/*
+ * fix margins in popout
+ */
 div.popout-content > * {
   margin-top: 0;
 }
 div.popout-content :last-child {
   margin-bottom: 0;
+}
+
+
+
+/*
+ * styles for remark-jargon
+ */
+
+/* Add a dashed line under jargon terms */
+.jargon-term {
+  text-decoration: underline dashed currentColor;
+  padding: 0 0.1em;
+}
+/* Add a question mark behind/above jargon terms */
+.jargon-term::after {
+  content: "?";
+  font-weight: bold;
+  display: inline-block;
+  transform: translate(0, -0.4em);
+  font-size: 85%;
+  color: currentColor;
+  margin-left: 0.2em;
+}
+/* Hover behavior for the term itself */
+.jargon-term:hover {
+  position: relative;
+  text-decoration: none;
+  cursor: help;
+}
+/* Hide info by default */
+.jargon-term .jargon-info {
+  display: none
+}
+/* Show info on hover */
+.jargon-term:hover .jargon-info {
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  background: theme('colors.base-100');
+  border: 1px solid theme('colors.base-200');
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 90%;
+  min-width: 350px;
+  max-width: 50vw;
+  z-index: 1;
+}
+
+/*
+ * styles for remark-autolink-headers
+ */
+h2 > a > span.icon.icon-link:after,
+h3 > a > span.icon.icon-link:after,
+h4 > a > span.icon.icon-link:after {
+  content: "🔗";
+  font-size: 50%;
+  padding-left: 0.5em;
+  transform: translateY(-0.25em);
+  display: inline-block
 }
 

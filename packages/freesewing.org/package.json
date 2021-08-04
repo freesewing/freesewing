@@ -15,6 +15,7 @@
     "child_process": false
   },
   "dependencies": {
+    "@fec/remark-images": "^0.5.0-alpha",
     "@freesewing/pattern-info": "^2.17.1",
     "@mdx-js/react": "^1.6.22",
     "@mdx-js/runtime": "^1.6.22",
@@ -39,6 +40,9 @@
     "react-markdown": "^6.0.2",
     "react-timeago": "^6.2.1",
     "recursive-readdir": "^2.2.2",
+    "remark-autolink-headings": "^6.1.0",
+    "remark-jargon": "^2.17.1",
+    "remark-slug": "^6.1.0",
     "remove-markdown": "^0.3.0",
     "theme-change": "^2.0.2"
   },
