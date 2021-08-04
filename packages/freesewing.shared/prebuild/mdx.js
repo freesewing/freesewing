@@ -42,13 +42,13 @@ const addPatternPages = (pages, lang) => {
     for (const page of designPages) {
       const key = `docs/patterns/${design}/${page}`
       if (typeof pages[key] === 'undefined') {
-        console.log(`No ${page} page for ${design}`)
+        console.log(`[${lang}] No ${page} page for ${design}`)
       } else pages[key].frontmatter.title = t(translations[page], lang)
     }
     for (const option of patternInfo.options[design]) {
       const key = `docs/patterns/${design}/options/${option.toLowerCase()}`
       if (typeof pages[key] === 'undefined') {
-        console.log(`No page for ${design}'s ${option} option`)
+        console.log(`[${lang}] No page for ${design}'s ${option} option`)
       } else pages[key].frontmatter.title = t(`options.${design}.${option}.t`, lang)
     }
   }
