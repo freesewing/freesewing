@@ -3,6 +3,7 @@ import { jargon_en, jargon_es, jargon_nl, jargon_de, jargon_fr } from '@freesewi
 import remarkJargon from 'remark-jargon'
 import remarkSlug from 'remark-slug'
 import remarkAutolinkHeadings from 'remark-autolink-headings'
+import remarkGfm from 'remark-gfm'
 import mdx from '../lib/mdx'
 
 export const getMdxPaths = mdx.getPaths
@@ -26,9 +27,13 @@ export const getMdxStaticProps = async (folder, lang='en', path=false) => {
       scope: { folder, lang, path, frontmatter: data },
       mdxOptions: {
         remarkPlugins: [
+          // Our very own jargon plugin
           [ remarkJargon, { jargon: jargon[lang] } ],
+          // Add anchor links to headings
           remarkSlug,
           [ remarkAutolinkHeadings, { behavior: 'append' }],
+          // Github-flavored markdown
+          remarkGfm,
         ]
       },
       target: ['esnext'],
