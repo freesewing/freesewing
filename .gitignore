@@ -6,7 +6,10 @@ packages/freesewing.dev/prebuild
 packages/freesewing.org/prebuild
 packages/freesewing.dev/out
 packages/freesewing.org/out
+packages/freesewing.dev/public/locales
+packages/freesewing.dev/public/mdx_files
 packages/freesewing.org/public/locales
+packages/freesewing.org/public/mdx_files
 packages/i18n/prebuild
 packages/plugin-theme/src/bundle.css.js
 packages/plugin-theme/css
