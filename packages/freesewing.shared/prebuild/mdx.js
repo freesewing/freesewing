@@ -11,7 +11,7 @@ const prebuild = async (folder) => {
   const allPaths = {}
   const allPages = {}
   for (const lang of config.languages) {
-    let [paths, pages] = await mdx.get(site, lang)
+    let [paths, pages] = await mdx.get(config)
     if (hooks?.[site]?.paths) paths = hooks[site].paths(paths, lang)
     if (hooks?.[site]?.pages) pages = hooks[site].pages(pages, lang)
     allPaths[lang] = paths

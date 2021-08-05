@@ -15,7 +15,24 @@ div.popout-content :last-child {
   margin-bottom: 0;
 }
 
-
+/*
+ * Add a leading list-style dot
+ */
+span.lidot {
+  display: inline-block;
+  content: ' ';
+  width: 0.25em;
+  height: 0.25em;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 0 -0.75em -0.1em 0.75em;
+  opacity: 0.5;
+}
+span.lidot.active {
+  width: 0.35em;
+  height: 0.35em;
+  opacity: 1;
+}
 
 /*
  * styles for remark-jargon

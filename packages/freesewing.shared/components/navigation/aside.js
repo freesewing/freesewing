@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Icon from '@/shared/components/icon'
 import SidebarWrap from '@/site/components/wrap-sidebar'
 
-const plainClasses = "px-1 py-0.5"
+const plainClasses = "px-1 py-1 leading-6 lidot"
 const nonPlainClasses = `${plainClasses} hover:bg-base-200 block border-r-4 border-transparent hover:border-secondary w-full`
 const activeClasses = "border-secondary"
 const classes = (level, plain) => {
@@ -89,15 +89,15 @@ const Row = props => {
         }
         className={`cursor-pointer w-6`}
       >
-        {props.level < 5 && hasChildren(props.branch) && (
-          <button className="mt-1" onClick={() => toggleActive(props)}>
+        {(props.level < 5 && hasChildren(props.branch)) ? (
+          <button className="mt-1 mx-1" onClick={() => toggleActive(props)}>
             <Icon
               icon='down'
               size={(24 - props.level*2)}
               className={iconClasses}
             />
           </button>
-        )}
+        ) : <span className={`lidot ${active ? 'active' : ''}`}></span>}
       </div>
       <div className="flex-grow">
         <Link href={props.branch._path || '/'}>
