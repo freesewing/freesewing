@@ -19,7 +19,7 @@ const MdxPage = (props) => {
 };
 
 export const getStaticProps = async (context) => {
-  const mdx = await getMdxStaticProps(config.site, config.language, context.params.mdx.join('/'))
+  const mdx = await getMdxStaticProps(config, context.params.mdx.join('/'))
 
   return { props: { ...mdx } }
 }

@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const rdir = require('recursive-readdir')
 const matter = require('gray-matter')
-
 const mdxPath = folder => path.resolve(`../../markdown/${folder}/`)
 
 const getFiles = async (path) => {
@@ -56,7 +55,10 @@ const getPageList = (paths, folder='dev', language='en', preHook=false, postHook
     : list
 }
 
-const loadFile = (slug, folder='dev', language='en') => fs.readFileSync(`${mdxPath(folder)}/${slug}/${language}.md`)
+const loadFile = (slug, folder='dev', language='en') => {
+  const noLangSlug = (slug.slice(2,3) === '/') ? slug.slice(3) : slug
+  return fs.readFileSync(`${mdxPath(folder)}/${noLangSlug}/${language}.md`)
+}
 
 // Extract for 10 lines for markdown excerpt
 const first10 = (file, options) => {
@@ -64,17 +66,22 @@ const first10 = (file, options) => {
 }
 
 // Gets paths for getStaticPaths
-const getPaths = async (folder, language='en') => {
-  const absFiles = await getFiles(mdxPath(folder))
-  const relFiles = filesAbsToRel(absFiles, folder, language)
+const getPaths = async (config) => {
+  const absFiles = await getFiles(mdxPath(config.site))
+  const relFiles = filesAbsToRel(absFiles, config.site, 'en')
+  let paths = [...relFiles]
 
-  return relFiles
+  //for (const lang of config.languages) {
+  //  if (lang !== config.language) paths = [...paths, ...relFiles.map(path => `${lang}/${path}`)]
+  //}
+
+  return paths
 }
 
 // Gets paths and pages for getStaticProps
-const get = async (folder='dev', language='en', path=false) => {
-  const paths = await getPaths(folder, language)
-  const pages = getPageList(paths, folder, language)
+const get = async (config) => {
+  const paths = await getPaths(config)
+  const pages = getPageList(paths, config.site, config.language)
 
   return [paths, pages]
 }

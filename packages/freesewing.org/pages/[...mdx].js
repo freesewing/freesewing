@@ -15,6 +15,7 @@ const MdxPage = (props) => {
         <MdxWrapper
           components={{Pattern, Plugin}}
           mdx={props.mdx}
+          t={t}
         />
       </article>
     </AppWrapper>
@@ -23,20 +24,21 @@ const MdxPage = (props) => {
 
 export const getStaticProps = async (context) => ({
   props: {
-    ...(await getMdxStaticProps(config.site, config.language, context.params.mdx.join('/'))),
+    ...(await getMdxStaticProps(config, context.locale || config.language, context.params.mdx.join('/'))),
     ...(await serverSideTranslations(context.locale || config.language, ['common'])),
   }
 })
 
-export const getStaticPaths = async () => {
-  const paths = await getMdxPaths(config.site, config.language)
-
-  const re = {
-    paths: paths.map(mdx => ({ params: { mdx: mdx.split('/') } })),
-    fallback: false,
+export const getStaticPaths = async (context) => {
+  const basePaths = await getMdxPaths(config)
+  const paths = []
+  for (const path of basePaths) {
+    for (const locale of context.locales) {
+      paths.push({params: {mdx: path.split('/')} , locale})
+    }
   }
 
-  return re
+  return { paths, fallback: false }
 }
 
 export default MdxPage

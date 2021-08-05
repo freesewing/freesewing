@@ -17,29 +17,8 @@ const DesignIterator = props => {
   return designs.map(design => <Component design={design} />)
 }
 
-const components = {
-  Example,
-  Hashtag: props => <span className="font-bold bg-neutral px-4 py-1 rounded-full text-accent animate-pulse">#{props.tag}</span>,
-  Fixme: props => <Popout {...props} fixme />,
-  Note: props => <Popout {...props} note />,
-  Tip: props => <Popout {...props} tip />,
-  Related: props => <Popout {...props} related />,
-  Link: props => <Popout {...props} link />,
-  Warning: props => <Popout {...props} warning />,
-  YouTube,
-  // Tailwind typography plugin overrides
-  h5: props => <h5 className="font-bold my-2">{props.children}</h5>,
-  h6: props => <h6 className="font-bold my-2 text-sm">{props.children}</h6>,
-  pre: props => <Highlight {...props} tag='pre'/>,
-  code: props => <Highlight {...props} tag='code'/>,
-  DesignIterator,
-}
-
-
-
-
-
 const MdxWrapper = props => {
+  /*
   const router = useRouter()
   const path = router.asPath
   const locale = router.locale || config.language
@@ -47,8 +26,33 @@ const MdxWrapper = props => {
   const steps = path.slice(1).split('/')
   let branch = {...tree}
   for (const step of steps) branch = tree[step]
+  */
+  const { t=x=>x } = props
+  const { site, page, lang } = props.mdx.scope
+  const tree = useNavigation(lang, '/'+page)
+  const steps = page.split('/')
+  let branch = {...tree}
+  for (const step of steps) branch = tree[step]
 
-  components.ReadMore = mdxProps => <ReadMore {...props} {...mdxProps} path={path} tree={branch}/>
+  const components = {
+    Example,
+    Hashtag: props => <span className="font-bold bg-neutral px-4 py-1 rounded-full text-accent animate-pulse">#{props.tag}</span>,
+    Fixme: props => <Popout {...props} t={t} lang={lang} fixme />,
+    Note: props => <Popout {...props} t={t} lang={lang} note />,
+    Tip: props => <Popout {...props} t={t} lang={lang} tip />,
+    Related: props => <Popout {...props} t={t} lang={lang} related />,
+    Link: props => <Popout {...props} t={t} lang={lang} link />,
+    Warning: props => <Popout {...props} t={t} lang={lang} warning />,
+    YouTube,
+    // Tailwind typography plugin overrides
+    h5: props => <h5 className="font-bold my-2">{props.children}</h5>,
+    h6: props => <h6 className="font-bold my-2 text-sm">{props.children}</h6>,
+    pre: props => <Highlight {...props} tag='pre'/>,
+    code: props => <Highlight {...props} tag='code'/>,
+    DesignIterator,
+    ReadMore: mdxProps => <ReadMore {...props} {...mdxProps} path={'/'+page} tree={branch}/>,
+  }
+
   return (
     <MDXRemote
       components={{...components, ...props.components}}

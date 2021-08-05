@@ -4,7 +4,11 @@ import remarkJargon from 'remark-jargon'
 import remarkSlug from 'remark-slug'
 import remarkAutolinkHeadings from 'remark-autolink-headings'
 import remarkGfm from 'remark-gfm'
+import remarkCopyLinkedFiles from 'remark-copy-linked-files'
+import remarkImages from '@fec/remark-images'
+import remarkA11yEmoji from '@fec/remark-a11y-emoji'
 import mdx from '../lib/mdx'
+import path from 'path'
 
 export const getMdxPaths = mdx.getPaths
 
@@ -16,15 +20,19 @@ const jargon = {
   nl: jargon_nl,
 }
 
-export const getMdxStaticProps = async (folder, lang='en', path=false) => {
-  const [paths, pages] = await mdx.get(folder, lang)
+export const getMdxStaticProps = async (config, lang, page=false) => {
+  const {monorepo, site} = config
+  const staticPath = 'mdx_files'
+  const destinationDir = path.join(monorepo, 'packages', `freesewing.${site}`, 'public')
+  const [paths, pages] = await mdx.get(config)
   const props = { paths, pages }
-  if (path) {
-    const rawMdx = mdx.loadFile(path, folder, lang)
+  if (page) {
+    const rawMdx = mdx.loadFile(page, site, lang)
     const { content, data } = mdx.matter(rawMdx)
-    props.href = `/${path}`
+    const filepath = path.join(...[monorepo, 'markdown', site, ...page.split('/'), `${lang}.md`])
+    props.href = `/${page}`
     props.mdx = await serialize(content, {
-      scope: { folder, lang, path, frontmatter: data },
+      scope: { site, lang, page, frontmatter: data },
       mdxOptions: {
         remarkPlugins: [
           // Our very own jargon plugin
@@ -34,7 +42,20 @@ export const getMdxStaticProps = async (folder, lang='en', path=false) => {
           [ remarkAutolinkHeadings, { behavior: 'append' }],
           // Github-flavored markdown
           remarkGfm,
-        ]
+          // Make emojis accessible
+          remarkA11yEmoji,
+          // Optimize images
+          [remarkImages, {
+            loadingPolicy: 'lazy',
+            srcDir: path.join(...[monorepo, 'markdown', site, ...page.split('/')]),
+            targetDir: destinationDir,
+            staticPrefix: '/mdx_files/',
+            blurredBackground: false,
+          }],
+          // Copy linked files
+          [ remarkCopyLinkedFiles, { destinationDir, staticPath }],
+        ],
+        filepath,
       },
       target: ['esnext'],
     })
