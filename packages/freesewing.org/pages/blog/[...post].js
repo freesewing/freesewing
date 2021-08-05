@@ -17,7 +17,7 @@ const PostPage = (props) => {
 };
 
 export const getStaticProps = async ({params, locale}) => {
-  const posts = await getStrapiStaticProps('blog', config.site, config.language)
+  const posts = await getStrapiStaticProps('blog', config.site, locale || config.language)
   if (posts.posts[params.post]) {
     posts.posts[params.post].mdx = await serialize(posts.posts[params.post].body)
     posts.posts[params.post].page = params.post
