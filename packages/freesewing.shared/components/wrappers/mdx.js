@@ -27,13 +27,9 @@ const MdxWrapper = props => {
   let branch = {...tree}
   for (const step of steps) branch = tree[step]
   */
-  const { t=x=>x } = props
-  const { site, page, lang } = props.mdx.scope
-  const tree = useNavigation(lang, '/'+page)
-  const steps = page.split('/')
-  let branch = {...tree}
-  for (const step of steps) branch = tree[step]
-
+  const { page=false, t=x=>x } = props
+  const { site, lang } = props.mdx.scope
+  const tree = useNavigation(lang)
   const components = {
     Example,
     Hashtag: props => <span className="font-bold bg-neutral px-4 py-1 rounded-full text-accent animate-pulse">#{props.tag}</span>,
@@ -50,7 +46,12 @@ const MdxWrapper = props => {
     pre: props => <Highlight {...props} tag='pre'/>,
     code: props => <Highlight {...props} tag='code'/>,
     DesignIterator,
-    ReadMore: mdxProps => <ReadMore {...props} {...mdxProps} path={'/'+page} tree={branch}/>,
+  }
+  if (page) {
+    const steps = page.split('/')
+    let branch = {...tree}
+    for (const step of steps) branch = tree[step]
+    components.ReadMore = mdxProps => <ReadMore {...props} {...mdxProps} path={'/'+page} tree={branch}/>
   }
 
   return (

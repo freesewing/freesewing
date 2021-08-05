@@ -4,6 +4,7 @@ import Timeago from 'react-timeago'
 
 const PostPage = (props) => {
   const author = props.post.author || props.post.maker
+
   return (
     <>
       <article className="strapi mb-12">
@@ -31,11 +32,7 @@ const PostPage = (props) => {
           />
         </figure>
         <div className="strapi prose lg:prose-lg mb-12 m-auto">
-          <MdxWrapper
-            pages={props.pages}
-            href={props.href}
-            mdx={props.post.mdx}
-          />
+          <MdxWrapper mdx={props.post.mdx} />
         </div>
       </article>
       <Author author={author} type={props.type}/>

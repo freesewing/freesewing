@@ -16,6 +16,7 @@ const MdxPage = (props) => {
           components={{Pattern, Plugin}}
           mdx={props.mdx}
           t={t}
+          page={props.mdx.scope.page}
         />
       </article>
     </AppWrapper>

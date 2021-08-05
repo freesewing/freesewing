@@ -20,6 +20,7 @@ export const getStaticProps = async ({params, locale}) => {
   const posts = await getStrapiStaticProps('blog', config.site, config.language)
   if (posts.posts[params.post]) {
     posts.posts[params.post].mdx = await serialize(posts.posts[params.post].body)
+    posts.posts[params.post].page = params.post
   }
 
   return {
@@ -31,15 +32,16 @@ export const getStaticProps = async ({params, locale}) => {
   }
 }
 
-export const getStaticPaths = async () => {
-  const paths = await getStrapiPaths('blog', config.site, config.language)
-
-  const re = {
-    paths,
-    fallback: false,
+export const getStaticPaths = async (context) => {
+  const basePaths = await getStrapiPaths('blog', config.site, config.language)
+  const paths = []
+  for (const path of basePaths) {
+    for (const locale of context.locales) {
+      paths.push({params: {post: path.split('/').slice(2)} , locale})
+    }
   }
 
-  return re
+  return { paths, fallback: false }
 }
 
 export default PostPage
