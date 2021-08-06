@@ -49,7 +49,7 @@ const addPatternPages = (pages, lang) => {
       const key = `docs/patterns/${design}/options/${option.toLowerCase()}`
       if (typeof pages[key] === 'undefined') {
         console.log(`[${lang}] No page for ${design}'s ${option} option`)
-      } else pages[key].frontmatter.title = t(`options.${design}.${option}.t`, lang)
+      } else pages[key].frontmatter.title = t(`${design}.${option}.t`, lang)
     }
   }
 

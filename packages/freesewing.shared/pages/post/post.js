@@ -35,7 +35,7 @@ const PostPage = (props) => {
           <MdxWrapper mdx={props.post.mdx} />
         </div>
       </article>
-      <Author author={author} type={props.type}/>
+      <Author author={author} type={props.type} t={props.t}/>
     </>
   )
 }
