@@ -12,3 +12,7 @@ This option tapers the fabric inwards at the back of your neck. It does so by 0.
 Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")

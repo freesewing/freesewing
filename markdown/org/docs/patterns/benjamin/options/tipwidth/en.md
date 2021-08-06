@@ -10,3 +10,7 @@ them larger to be more flamboyant, or small for a more subdued style.
 This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")

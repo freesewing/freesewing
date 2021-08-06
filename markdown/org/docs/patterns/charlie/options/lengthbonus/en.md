@@ -9,3 +9,7 @@ This does not mean that the trousers will hit the floor, since due to the curves
 the trousers will need to be longer than this to actually hit the floor.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_lengthbonus_sample.svg "Effect of this option on the pattern")

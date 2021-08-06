@@ -12,3 +12,7 @@ and this there will be less fabric pooling at the bum.
 People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_crossseamcurvestart_sample.svg "Effect of this option on the pattern")

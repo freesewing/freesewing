@@ -11,3 +11,7 @@ If you're not sure what to pick, best is to take the ribbing you are going to us
 you need to stretch out to get to 10 cm with a *good* stretch.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")

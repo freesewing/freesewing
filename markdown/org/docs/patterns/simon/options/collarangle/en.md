@@ -13,3 +13,7 @@ Higher values mean a more cut-away style.
 In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
