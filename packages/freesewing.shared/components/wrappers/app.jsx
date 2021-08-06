@@ -37,7 +37,7 @@ const AppWrapper= props => {
     search, setSearch, toggleSearch: () => setSearch(!search),
     path, tree,
     title: props.title,
-    t: props.t,
+    t: props.t ? props.t : (x) => x,
     locale, languages: config.languages,
   }
 
@@ -53,7 +53,6 @@ const AppWrapper= props => {
     </div>
   )
 }
-      //<pre>{JSON.stringify(tree, null ,2)}</pre>
 
 export default AppWrapper
 

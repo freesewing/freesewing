@@ -7,6 +7,7 @@ const config = require(`../../freesewing.${process.env.SITE}/freesewing.config`)
 const mdxToTree = (path, page, pages) => ({
   _path: page.path,
   _title: page.frontmatter.title,
+  _linktitle: page.frontmatter.linktitle,
   _order: page.order,
 })
 
@@ -34,7 +35,8 @@ const addBlogPosts = (tree, posts, lang, i18n) => {
   for (const [slug, post] of Object.entries(posts)) {
     set(tree, ['blog', slug], {
       _path: `/blog/${slug}`,
-      _title: post.linktitle,
+      _linktitle: post.linktitle,
+      _title: post.title,
       _order: future - new Date(post.date).getTime(),
     })
   }

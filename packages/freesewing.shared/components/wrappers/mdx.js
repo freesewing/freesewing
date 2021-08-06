@@ -8,7 +8,6 @@ import ReadMore from '../navigation/readmore'
 import Example from '../core/example'
 import { list as designs } from '@freesewing/pattern-info'
 import { useRouter } from 'next/router'
-import useNavigation from '@/shared/hooks/useNavigation'
 // Site config
 import config from '@/site/freesewing.config'
 
@@ -27,7 +26,6 @@ const Figure = props => (
 const MdxWrapper = props => {
   const { page=false, t=x=>x } = props
   const { site, lang } = props.mdx.scope
-  const tree = useNavigation(lang)
   const components = {
     Example,
     Hashtag: props => <span className="font-bold bg-neutral px-4 py-1 rounded-full text-accent animate-pulse">#{props.tag}</span>,
@@ -48,8 +46,8 @@ const MdxWrapper = props => {
   }
   if (page) {
     const steps = page.split('/')
-    let branch = {...tree}
-    for (const step of steps) branch = tree[step]
+    let branch = {...props.tree}
+    for (const step of steps) branch = props.tree[step]
     components.ReadMore = mdxProps => <ReadMore {...props} {...mdxProps} path={'/'+page} tree={branch}/>
   }
 

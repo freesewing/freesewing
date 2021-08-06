@@ -102,7 +102,7 @@ const Row = props => {
       <div className="flex-grow">
         <Link href={props.branch._path || '/'}>
           <a className={linkClasses}>
-            {props.branch._title}
+            {props.branch._linktitle || props.branch._title}
           </a>
         </Link>
         {
