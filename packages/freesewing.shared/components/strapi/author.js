@@ -31,7 +31,7 @@ const Author = props => {
       >
         <p className="text-xl mb-2">
           <span className="font-semibold"> {author?.displayname}</span>
-          <span className="text-base-300 text-sm pl-2">
+          <span className="text-sm pl-2 opacity-70">
             {props.t
               ? props.t('xThis', {x: props.t(props.type === 'blog' ? 'wrote' : 'made')})
               : 'Wrote this'

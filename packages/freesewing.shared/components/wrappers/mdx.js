@@ -17,16 +17,14 @@ const DesignIterator = props => {
   return designs.map(design => <Component design={design} />)
 }
 
+const Figure = props => (
+  <figure>
+    <img src={props.src} alt={props?.alt || ''} title={props?.title || ''} className="shadow-md"/>
+    <figcaption className="text-center italic">{props.title || 'FIXME: No title property set on this image'}</figcaption>
+  </figure>
+)
+
 const MdxWrapper = props => {
-  /*
-  const router = useRouter()
-  const path = router.asPath
-  const locale = router.locale || config.language
-  const tree = useNavigation(locale, path)
-  const steps = path.slice(1).split('/')
-  let branch = {...tree}
-  for (const step of steps) branch = tree[step]
-  */
   const { page=false, t=x=>x } = props
   const { site, lang } = props.mdx.scope
   const tree = useNavigation(lang)
@@ -45,6 +43,7 @@ const MdxWrapper = props => {
     h6: props => <h6 className="font-bold my-2 text-sm">{props.children}</h6>,
     pre: props => <Highlight {...props} tag='pre'/>,
     code: props => <Highlight {...props} tag='code'/>,
+    img: props => <Figure {...props}/>,
     DesignIterator,
   }
   if (page) {
