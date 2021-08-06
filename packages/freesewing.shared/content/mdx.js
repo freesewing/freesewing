@@ -53,7 +53,7 @@ export const getMdxStaticProps = async (config, lang, page=false) => {
             blurredBackground: false,
           }],
           // Copy linked files
-          [ remarkCopyLinkedFiles, { destinationDir, staticPath }],
+          [ remarkCopyLinkedFiles, { destinationDir: `${destinationDir}/${staticPath}`, staticPath }],
         ],
         filepath,
       },
