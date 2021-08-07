@@ -25,6 +25,7 @@
     "dotenv": "^10.0.0",
     "form-data": "^4.0.0",
     "gray-matter": "^4.0.3",
+    "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2",
     "lodash.sortby": "^4.7.0",
     "netlify-cli": "^4.2.0",
