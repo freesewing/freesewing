@@ -33,12 +33,13 @@ export const getStaticProps = async ({params, locale}) => {
 }
 
 export const getStaticPaths = async (context) => {
-  const basePaths = await getStrapiPaths('blog', config.site, config.language)
-  const paths = []
-  for (const path of basePaths) {
-    for (const locale of context.locales) {
-      paths.push({params: {post: path.split('/').slice(2)} , locale})
-    }
+  let paths = []
+  for (const locale of config.languages) {
+    const these = await getStrapiPaths('blog', config.site, locale)
+    paths = paths.concat(these.map( p => {
+      if (typeof p !== 'string') console.log({p, locale})
+      return ({params: {post: p.split('/').slice(2), here: true} , locale})
+    }))
   }
 
   return { paths, fallback: false }
