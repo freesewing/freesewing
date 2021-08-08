@@ -16,7 +16,7 @@ const MdxPage = (props) => {
 
   return (
     <AppWrapper title={props.frontmatter.title || title } t={t}>
-      <article className="mdx prose lg:prose-lg mb-12 m-auto">
+      <article className="mdx prose lg:prose-lg mb-12">
         <MdxWrapper
           components={{Pattern, Plugin}}
           mdx={props.mdx}
