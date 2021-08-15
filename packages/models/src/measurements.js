@@ -34,6 +34,7 @@ export default {
     'ankle',
     'biceps',
     'bustFront',
+    'bustPointToUnderbust',
     'bustSpan',
     'chest',
     'crossSeam',
