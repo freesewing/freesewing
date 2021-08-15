@@ -122,6 +122,10 @@ extraTopButton:
   title: Extra top button
   description: Whether or not to include an extra top button on the front closure.
 
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
+
 hemCurve:
   title: Hem curve
   description: The height of the curve on a curved hem.
