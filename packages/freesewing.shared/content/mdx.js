@@ -51,6 +51,8 @@ export const getMdxStaticProps = async (config, lang, page=false) => {
             targetDir: destinationDir,
             staticPrefix: '/mdx_files/',
             blurredBackground: false,
+            imageSizes: [250, 500, 1000, 2000],
+            resolutions: [1,2,3],
           }],
           // Copy linked files
           [ remarkCopyLinkedFiles, { destinationDir: `${destinationDir}/${staticPath}`, staticPath }],

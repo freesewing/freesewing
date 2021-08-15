@@ -124,7 +124,7 @@ const Branch = props => (
   <ul
     className={`border-l-2 border-${(props.level > 2 && props.withBorder === props.level) ? 'base-200' : 'transparent'}`}
   >
-    {sortBy(props.branch, ['_order', '_title']).map(branch => <Row {...props} branch={branch} />)}
+    {sortBy(props.branch, ['_order', '_title']).map(branch => <Row {...props} branch={branch} key={branch._path}/>)}
   </ul>
 )
 
