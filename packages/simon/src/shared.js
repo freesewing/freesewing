@@ -216,27 +216,27 @@ export const frontDimensions = (part, side = 'left') => {
     macro('vd', {
       from: points.armhole,
       to: points.armholePitch,
-      x: points.armhole.x + (15 + sa * 2) * factor,
+      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.armhole,
       to: points.s3ArmholeSplit,
-      x: points.armhole.x + (30 + sa * 2) * factor,
+      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.armhole,
       to: points.s3CollarSplit,
-      x: points.armhole.x + (45 + sa * 2) * factor,
+      x: points.armhole.x + (45 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.waist,
       to: points.armhole,
-      x: points.armhole.x + (15 + sa * 2) * factor,
+      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.hips,
       to: points.armhole,
-      x: points.armhole.x + (30 + sa * 2) * factor,
+      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
     })
     macro('ld', {
       from: points.cfWaist,
@@ -246,22 +246,22 @@ export const frontDimensions = (part, side = 'left') => {
       macro('vd', {
         from: points.bballStart,
         to: points.bballEnd,
-        x: points.hips.x + (15 + 2 * sa) * factor,
+        x: points.hips.x + (15 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.hips,
-        x: points.hips.x + (30 + 2 * sa) * factor,
+        x: points.hips.x + (30 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.armhole,
-        x: points.hips.x + (45 + 2 * sa) * factor,
+        x: points.hips.x + (45 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.s3CollarSplit,
-        x: points.hips.x + (60 + 2 * sa) * factor,
+        x: points.hips.x + (60 + options.ffsa * sa) * factor,
       })
       macro('hd', {
         from: points.bballStart,
@@ -293,12 +293,12 @@ export const frontDimensions = (part, side = 'left') => {
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: points.armhole.x + (45 + 2 * sa) * factor,
+        x: points.armhole.x + (45 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.hem,
         to: points.s3CollarSplit,
-        x: points.armhole.x + (60 + 2 * sa) * factor,
+        x: points.armhole.x + (60 + options.ffsa * sa) * factor,
       })
     }
   }

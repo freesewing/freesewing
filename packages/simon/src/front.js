@@ -122,7 +122,7 @@ export default (part) => {
     })
 
     if (sa) {
-      paths.saFrench = paths.saBase.offset(sa * 2).attr('class', 'fabric sa')
+      paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
       paths.saConnect = new Path()

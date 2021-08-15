@@ -145,7 +145,7 @@ export default (part) => {
     macro('grainline', { from: points.cuffMid, to: points.sleeveTip })
 
     if (sa) {
-      paths.sa = paths.frenchBase.offset(sa * 2)
+      paths.sa = paths.frenchBase.offset(sa * options.ffsa)
       paths.frenchSa = paths.sa.clone()
       paths.sa = paths.sa
         .join(paths.saBase.offset(sa))
@@ -164,27 +164,27 @@ export default (part) => {
     macro('hd', {
       from: points.backNotch,
       to: points.sleeveTip,
-      y: points.sleeveTip.y - 15 - sa * 2,
+      y: points.sleeveTip.y - 15 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.sleeveTip,
       to: points.frontNotch,
-      y: points.sleeveTip.y - 15 - sa * 2,
+      y: points.sleeveTip.y - 15 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.sleeveTip,
-      y: points.sleeveTip.y - 30 - sa * 2,
+      y: points.sleeveTip.y - 30 - sa * opions.ffsa,
     })
     macro('hd', {
       from: points.sleeveTip,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - 30 - sa * 2,
+      y: points.sleeveTip.y - 30 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - 45 - sa * 2,
+      y: points.sleeveTip.y - 45 - sa * options.ffsa,
     })
     macro('pd', {
       path: new Path()
@@ -200,17 +200,17 @@ export default (part) => {
     macro('vd', {
       from: points.wristRight,
       to: points.bicepsRight,
-      x: points.bicepsRight.x + 15 + sa * 2,
+      x: points.bicepsRight.x + 15 + sa * options.ffsa,
     })
     macro('vd', {
       from: points.bicepsRight,
       to: points.frontNotch,
-      x: points.bicepsRight.x + 15 + sa * 2,
+      x: points.bicepsRight.x + 15 + sa * options.ffsa,
     })
     macro('vd', {
       from: points.bicepsRight,
       to: points.sleeveTip,
-      x: points.bicepsRight.x + 30 + sa * 2,
+      x: points.bicepsRight.x + 30 + sa * options.ffsa,
     })
     macro('vd', {
       from: points.bicepsLeft,

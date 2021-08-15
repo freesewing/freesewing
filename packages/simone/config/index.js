@@ -83,6 +83,7 @@ export default {
       'bustDartAngle',
       'bustDartLength',
       'frontDartLength',
+      'ffsa',
       {
         sleevecap: [
           'sleevecapEase',
@@ -234,6 +235,7 @@ export default {
     shoulderEase: { pct: 2, min: 0, max: 15 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
     yokeHeight: { pct: 55, min: 10, max: 90 },
+    ffsa: {pct: 150, min: 100, max:200 },
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
