@@ -97,6 +97,9 @@ cuffStyle:
 extraTopButton:
   title: Zusätzlicher oberer Knopf
   description: Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll.
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
   title: Saumkurve
   description: Die Höhe der Kurve an einem abgerundeten Saum.
