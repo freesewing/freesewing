@@ -97,6 +97,9 @@ cuffStyle:
 extraTopButton:
   title: Extra knoop bovenaan
   description: Of je al dan niet een extra knoop bovenaan de sluiting wil.
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
   title: Curve zoom
   description: De hoogte van de curve op een afgeronde zoom.
