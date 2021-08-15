@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## 2.17.2 (2021-08-15)
+
+### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
 ## 2.17.0 (2021-07-01)
 
 ### Added

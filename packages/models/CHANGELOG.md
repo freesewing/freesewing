@@ -1,6 +1,12 @@
 # Change log for: @freesewing/models
 
 
+## 2.17.2 (2021-08-15)
+
+### Added
+
+ - Added the new `bustPointToUnderbust` measurement for future bikini pattern
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

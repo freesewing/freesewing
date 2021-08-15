@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.17.2 (2021-08-15)
+
+### Added
+
+ - Added new ffsa option for simon & simone
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

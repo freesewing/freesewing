@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "2.17.1",
+  "version": "2.17.2",
   "description": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,20 +33,20 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.17.1"
+    "@freesewing/core": "^2.17.2"
   },
   "dependencies": {},
   "devDependencies": {
-    "@freesewing/plugin-buttons": "^2.17.1",
-    "@freesewing/plugin-cutonfold": "^2.17.1",
-    "@freesewing/plugin-dimension": "^2.17.1",
-    "@freesewing/plugin-grainline": "^2.17.1",
-    "@freesewing/plugin-logo": "^2.17.1",
-    "@freesewing/plugin-mirror": "^2.17.1",
-    "@freesewing/plugin-title": "^2.17.1",
-    "@freesewing/plugin-scalebox": "^2.17.1",
-    "@freesewing/plugin-round": "^2.17.1",
-    "@freesewing/plugin-sprinkle": "^2.17.1"
+    "@freesewing/plugin-buttons": "^2.17.2",
+    "@freesewing/plugin-cutonfold": "^2.17.2",
+    "@freesewing/plugin-dimension": "^2.17.2",
+    "@freesewing/plugin-grainline": "^2.17.2",
+    "@freesewing/plugin-logo": "^2.17.2",
+    "@freesewing/plugin-mirror": "^2.17.2",
+    "@freesewing/plugin-title": "^2.17.2",
+    "@freesewing/plugin-scalebox": "^2.17.2",
+    "@freesewing/plugin-round": "^2.17.2",
+    "@freesewing/plugin-sprinkle": "^2.17.2"
   },
   "files": [
     "dist/*",

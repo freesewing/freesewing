@@ -1,6 +1,33 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.17.2 (2021-08-15)
+
+### i18n
+
+#### Added
+
+ - Added new ffsa option for simon & simone
+
+### models
+
+#### Added
+
+ - Added the new `bustPointToUnderbust` measurement for future bikini pattern
+
+### simon
+
+#### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+### simone
+
+#### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+
 ## 2.17.1 (2021-07-14)
 
 ### core
