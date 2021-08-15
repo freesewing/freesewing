@@ -97,6 +97,9 @@ cuffStyle:
 extraTopButton:
   title: Bouton supérieur supplémentaire
   description: Inclure ou non un bouton supplémentaire en haut de fermeture avant.
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
   title: Courbe de l'ourlet
   description: La hauteur de l'arrondi sur un ourlet arrondi.

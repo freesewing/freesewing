@@ -97,6 +97,9 @@ cuffStyle:
 extraTopButton:
   title: Botón extra superior
   description: Incluír o no un botón extra en el cierre frontal.
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
   title: Curva del dobladillo
   description: La altura de la curva en un dobladillo redondeado.
