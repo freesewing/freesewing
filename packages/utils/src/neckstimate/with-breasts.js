@@ -12,6 +12,7 @@ export default complete({
   ankle: 245,
   biceps: 270,
   bustFront: 480,
+  bustPointToUnderbust: 100,
   bustSpan: 160,
   chest: 925,
   crossSeam: 740,
