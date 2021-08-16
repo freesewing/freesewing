@@ -10,7 +10,7 @@ let v = 0.65 // vertical
 export default {
   // Arc measurements
   bustFront: a,
-  bustPointToUnderbust: a
+  bustPointToUnderbust: a,
   bustSpan: a,
   highBustFront: a,
   // Circumference measurements

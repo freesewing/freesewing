@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.17.3 (2021-08-16)
+
+### Added
+
+ - New translations
+
 ## 2.17.2 (2021-08-15)
 
 ### Added
