@@ -174,7 +174,7 @@ export default (part) => {
     macro('hd', {
       from: points.bicepsLeft,
       to: points.sleeveTip,
-      y: points.sleeveTip.y - 30 - sa * opions.ffsa,
+      y: points.sleeveTip.y - 30 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.sleeveTip,
