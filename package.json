@@ -20,7 +20,7 @@
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/**/example/src/*' 'packages/i18n/src/locales/**/*.*'",
     "reconfigure": "node scripts/reconfigure.js",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run build",
-    "buildall": "lerna exec -- npm run build",
+    "buildall": "lerna run build",
     "release": "lerna exec -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "bump": "git add . && git commit -m 'chore: Reconfigure packages'"
@@ -73,7 +73,7 @@
     "husky": "^6.0.0",
     "js-yaml": "^4.0.0",
     "lerna": "^4.0.0",
-    "mocha": "^8.1.0",
+    "mocha": "^9.1.0",
     "mustache": "^4.0.1",
     "node-sass": "^5.0.0",
     "nyc": "^15.1.0",

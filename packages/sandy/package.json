@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sandy",
-  "version": "2.17.2",
+  "version": "2.17.4",
   "description": "A FreeSewing pattern for a circle skirt",
   "author": "AlfaLyr (https://github.com/alfalyr)",
   "homepage": "https://freesewing.org/",
@@ -34,8 +34,8 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.17.2",
-    "@freesewing/plugin-bundle": "^2.17.2"
+    "@freesewing/core": "^2.17.4",
+    "@freesewing/plugin-bundle": "^2.17.4"
   },
   "dependencies": {},
   "devDependencies": {
@@ -47,14 +47,14 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^1.1.0",
-    "@freesewing/components": "^2.17.2",
-    "@freesewing/css-theme": "^2.17.2",
-    "@freesewing/i18n": "^2.17.2",
-    "@freesewing/mui-theme": "^2.17.2",
-    "@freesewing/plugin-bust": "^2.17.2",
-    "@freesewing/plugin-buttons": "^2.17.2",
-    "@freesewing/plugin-flip": "^2.17.2",
-    "@freesewing/utils": "^2.17.2",
+    "@freesewing/components": "^2.17.4",
+    "@freesewing/css-theme": "^2.17.4",
+    "@freesewing/i18n": "^2.17.4",
+    "@freesewing/mui-theme": "^2.17.4",
+    "@freesewing/plugin-bust": "^2.17.4",
+    "@freesewing/plugin-buttons": "^2.17.4",
+    "@freesewing/plugin-flip": "^2.17.4",
+    "@freesewing/utils": "^2.17.4",
     "react-scripts": "^4.0.3",
     "webpack": "^5.37.0",
     "rollup": "^2.50.6",
@@ -69,7 +69,7 @@
     "axios": "0.21.1",
     "react-intl": "^5.17.6",
     "prop-types": "^15.7.2",
-    "mocha": "^8.1.0",
+    "mocha": "^9.1.0",
     "chai": "^4.2.0",
     "chai-string": "^1.5.0",
     "@babel/register": "^7.10.5"
