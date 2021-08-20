@@ -23,7 +23,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/tamiko && npm install @freesewing/core@^2.17.3 @freesewing/plugin-bundle@^2.17.3 @freesewing/models@2.17.3 @freesewing/pattern-info@2.17.3 mocha chai"
+        run: "cd packages/tamiko && npm install @freesewing/core@^2.17.4 @freesewing/plugin-bundle@^2.17.4 @freesewing/models@2.17.4 @freesewing/pattern-info@2.17.4 mocha chai"
         env:
           CI: true
       - name: Build pattern

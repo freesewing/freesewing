@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-gore",
-  "version": "2.17.3",
+  "version": "2.17.4",
   "description": "A FreeSewing plugin to generate gores for a semi-sphere or dome",
   "author": "AlfaLyr (https://github.com/alfalyr)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.17.3"
+    "@freesewing/core": "^2.17.4"
   },
   "dependencies": {},
   "devDependencies": {},

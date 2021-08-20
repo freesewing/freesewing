@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 2.17.4 (2021-08-20)
+
+### Fixed
+
+ - Fixed typo that caused paperless to error
+
 ## 2.17.2 (2021-08-15)
 
 ### Added
