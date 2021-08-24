@@ -14,17 +14,17 @@ export default function (part) {
 
   let headCircumference = measurements.head + options.headEase
   let headRadius = headCircumference / 2 / Math.PI
-  let billRadius = (headRadius / Math.sin((options.billAngle * Math.PI) / 180))
-  let sectorAngle = (Math.PI / 3)*options.billLength
-  let billSectorAngle = (sectorAngle * headRadius) / billRadius
+  let visorRadius = (headRadius / Math.sin((options.visorAngle * Math.PI) / 180))
+  let sectorAngle = (Math.PI / 3)*options.visorLength
+  let visorSectorAngle = (sectorAngle * headRadius) / visorRadius
   let cpDistance =
-    ((4 / 3) * billRadius * (1 - Math.cos(billSectorAngle / 2))) / Math.sin(billSectorAngle / 2)	
+    ((4 / 3) * visorRadius * (1 - Math.cos(visorSectorAngle / 2))) / Math.sin(visorSectorAngle / 2)	
 
   points.origin = new Point(0, 0)
   points.in1 = new Point(0, 0)
   points.in2 = points.in1.shift(
-    ((90 / Math.PI) * billSectorAngle),
-    2 * billRadius * Math.sin(billSectorAngle / 2)
+    ((90 / Math.PI) * visorSectorAngle),
+    2 * visorRadius * Math.sin(visorSectorAngle / 2)
   )
   //test circle
   //points.circleCentre = points.in1.shift(90,headRadius)
@@ -32,16 +32,16 @@ export default function (part) {
   //points.circle60 = points.circleCentre.shift(-30,headRadius)
   //
   points.in1C = points.in1.shift(0, cpDistance)
-  points.in2C = points.in2.shift(180 + (180 / Math.PI) * billSectorAngle, cpDistance)
+  points.in2C = points.in2.shift(180 + (180 / Math.PI) * visorSectorAngle, cpDistance)
   points.in1CFlipped = points.in1C.flipX()
   points.in2Flipped = points.in2.flipX()
   points.in2CFlipped = points.in2C.flipX()
 
-  points.ex1 = points.in1.shift(-90, options.billWidth)
+  points.ex1 = points.in1.shift(-90, options.visorWidth)
   points.ex1C = points.ex1.shift(0, 0.5 * points.in2.x)
   points.ex2C = points.in2.shift(
     -90,
-    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-options.billWidth / 15)) - 1)
+    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-options.visorWidth / 15)) - 1)
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
@@ -56,7 +56,7 @@ export default function (part) {
   // Complete?
   if (complete) {
     macro('grainline', { from: points.in1, to: points.ex1 })
-    macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'bill', scale: 0.4 })
+    macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'visor', scale: 0.4 })
 
     if (sa) {
       paths.saInner = new Path ()
