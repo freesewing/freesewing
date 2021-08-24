@@ -11,7 +11,7 @@ export default {
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-	fit: ['head_ease'],
+	fit: ['headEase'],
     style: ['lengthRatio', 'goreNumber', 'billAngle', 'billWidth','earLength','earWidth','buttonhole'],
 	advanced:['billLength'],
   },
@@ -21,7 +21,7 @@ export default {
   hide: [],
   parts: ['gore', 'bill', 'ear'],
   options: {
-	head_ease: { mm: 19, min: 0, max: 50 },
+	headEase: { mm: 19, min: 0, max: 50 },
     lengthRatio: { pct: 55, min: 40, max: 60 },
     goreNumber: { count: 6, min: 4, max: 20 },
     billAngle: { deg: 45, min: 10, max: 90 },

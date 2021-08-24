@@ -12,7 +12,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let headCircumference = measurements.head + options.head_ease
+  let headCircumference = measurements.head + options.headEase
   let headRadius = headCircumference / 2 / Math.PI
   let billRadius = (headRadius / Math.sin((options.billAngle * Math.PI) / 180))
   let sectorAngle = (Math.PI / 3)*options.billLength
