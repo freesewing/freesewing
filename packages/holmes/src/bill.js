@@ -15,7 +15,7 @@ export default function (part) {
   let headCircumference = measurements.head + options.head_ease
   let headRadius = headCircumference / 2 / Math.PI
   let billRadius = (headRadius / Math.sin((options.billAngle * Math.PI) / 180))
-  let sectorAngle = (Math.PI / 3)*options.bill_length
+  let sectorAngle = (Math.PI / 3)*options.billLength
   let billSectorAngle = (sectorAngle * headRadius) / billRadius
   let cpDistance =
     ((4 / 3) * billRadius * (1 - Math.cos(billSectorAngle / 2))) / Math.sin(billSectorAngle / 2)	

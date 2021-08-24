@@ -16,8 +16,8 @@ export default function (part) {
 
   // Design pattern here
 let headCircumference = measurements.head + options.head_ease
-let earFlapLength = ((options.lengthRatio * headCircumference) / 2)*options.ear_length
-let earFlapWidth = (headCircumference / 12)*options.ear_width
+let earFlapLength = ((options.lengthRatio * headCircumference) / 2)*options.earLength
+let earFlapWidth = (headCircumference / 12)*options.earWidth
   points.top = new Point(0, 0)
   points.bottom = new Point(earFlapWidth, earFlapLength)
   points.topC = points.top.shift(0, points.bottom.x)
