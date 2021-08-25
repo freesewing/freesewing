@@ -1,2 +1,2 @@
 
-Deze factor bepaalt de hoogte van de mouwkop.
+This factor controls the height of the sleevecap.
