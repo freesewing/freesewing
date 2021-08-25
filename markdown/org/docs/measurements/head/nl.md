@@ -1,7 +1,7 @@
 ---
-title: Hoofdomtrek
+title: Head circumference
 ---
 
 The **head circumference** measurement wraps around the fullest part of your head.
 
-Om je hoofdomtrek te meten wikkel je de lintmeter rond je hoofd, ter hoogte van je voorhoofd.
+To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
