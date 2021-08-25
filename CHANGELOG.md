@@ -1,6 +1,30 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.17.4 (2021-08-20)
+
+### simon
+
+#### Fixed
+
+ - Fixed typo that caused paperless to error
+
+
+## 2.17.3 (2021-08-16)
+
+### i18n
+
+#### Added
+
+ - New translations
+
+### utils
+
+#### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
+
+
 ## 2.17.2 (2021-08-15)
 
 ### i18n

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/utils
 
 
+## 2.17.3 (2021-08-16)
+
+### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed
