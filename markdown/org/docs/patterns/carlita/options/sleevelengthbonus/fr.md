@@ -11,4 +11,3 @@ which is certainly too short for a coat.
 Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour allonger ou raccourcir la manche.
 
 </Note>
-
