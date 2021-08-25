@@ -1,7 +1,7 @@
 ---
-title: Omtrek Hiel
+title: Heel circumference
 ---
 
 The **heel circumference** measurement is the narrowest measurement a trouser leg can be so you can still get in to it.
 
-Om de omtrek van je hiel te meten strek je je voet, en meet je rond het breedste deel van je hiel.
+To measure your heel circumference, stretch your foot forward, and run the tape measure around your foot at the widest part of your heel.
