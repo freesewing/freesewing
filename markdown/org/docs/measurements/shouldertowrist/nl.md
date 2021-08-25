@@ -1,5 +1,5 @@
 ---
-title: Schouder tot pols
+title: Shoulder to wrist
 ---
 
 The **shoulder to wrist** measurement determines your sleeve length, and runs from the shoulder point along the arm to your wrist.
