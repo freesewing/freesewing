@@ -1,2 +1,2 @@
 
-Dit geeft controle over de helling van de schoudernaad.
+This controls the slope of the shoulder seam.
