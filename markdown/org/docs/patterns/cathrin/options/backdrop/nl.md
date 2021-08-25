@@ -1,3 +1,3 @@
-![De optie voor verlaging rug bij Cathrin](./backdrop.svg)
+![The back drop option on Cathrin](./backdrop.svg)
 
-Deze optie bepaalt hoe ver het midden van de rug verlaagd zal worden aan de onderkant van je korset.
+This option determines how far the center back will be lowered at the bottom of your corset.
