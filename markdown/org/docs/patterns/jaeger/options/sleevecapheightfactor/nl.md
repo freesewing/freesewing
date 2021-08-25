@@ -1,4 +1,4 @@
 
-![Factor hoogte mouwkop](sleevecapheightfactor.svg)
+![Sleevecap height factor](sleevecapheightfactor.svg)
 
-Deze factor bepaalt de hoogte van de mouwkop.
+This factor controls the height of the sleevecap.
