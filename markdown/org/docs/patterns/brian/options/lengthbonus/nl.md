@@ -1,5 +1,5 @@
-![De optie voor bonus lengte bij Brian](./lengthbonus.svg)
+![The length bonus option on Brian](./lengthbonus.svg)
 
-Deze optie bepaalt hoeveel lager dan je heuplijn het basispatroon komt.
+This option controls how far the block extend below your hips.
 
-> Dit basispatroon komt standaard tot aan je heuplijn, wat bijna gegarandeerd te kort zal zijn voor het uiteindelijke kledingstuk.
+> Note that by default this block is as long as your hip line, which is almost certainly too short for the final garment.
