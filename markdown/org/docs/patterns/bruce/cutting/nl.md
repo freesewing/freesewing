@@ -1,6 +1,6 @@
 Bruce consists of a back, and two sides, insets and fronts.
 
- - **Buitenstof**
+ - **Main fabric**
    - Cut **1 back** on the fold
    - Cut **2 fronts**
    - Cut **2 insets**
@@ -14,8 +14,5 @@ Bruce consists of a back, and two sides, insets and fronts.
 - **front**: Cut this **twice**
 
 </Warning>
-
-
-
 
 
