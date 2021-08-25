@@ -25,6 +25,8 @@
 
 ##### A dash of color perhaps?
 
+##### A dash of color perhaps?
+
 You can cut part 4 from a different color for a little contrasting detail at the back pockets
 
 </Tip>
