@@ -1,9 +1,9 @@
 ---
-title: Je rechten
+title: Your rights
 ---
 
-Freesewing past de algemene verordening inzake gegevensbescherming (GDPR) van de Europese Unie (EU) toe.
+Freesewing applies the General Data Protection Regulation (GDPR) of the European Union (EU).
 
-EU-burger of niet, voor ons zijn dit je rechten:
+EU citizen or not, for us these are your rights:
 
 <ReadMore list />
