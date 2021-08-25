@@ -1,4 +1,4 @@
 
-![Overwijdte kraag](./collarease.svg)
+![Collar ease](./collarease.svg)
 
 Controls the amount of ease at your collar/neck.
