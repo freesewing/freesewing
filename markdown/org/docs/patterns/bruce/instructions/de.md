@@ -81,6 +81,8 @@ Serge the sides of the tusks to close the fronts dart. For best results, start a
 
 ###### Keep that seam away from my ...
 
+###### Keep that seam away from my ...
+
 Alternatively, sew the darts on each piece individually so that both seams are folded inside.
 Arguably, not having an exposed seam in this area is more comfortable for the wearer.
 
