@@ -1,2 +1,2 @@
 
-De hoeveelheid overwijdte aan je taille.
+The amount of ease at your waist.
