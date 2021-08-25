@@ -1,5 +1,5 @@
 ---
-title: Wat doen jullie met mijn persoonlijke gegevens?
+title: What are you doing with my personal data?
 ---
 
 How we handle your personal data is documented in [our privacy notice][1].
