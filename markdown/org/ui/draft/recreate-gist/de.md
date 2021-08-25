@@ -2,7 +2,7 @@
 title: How to recreate a pattern from a Github gist
 ---
 
-Auf dieser Seite kannst du ein Schnittmuster aus einem [Github Gist](https://gist.github.com/) nachbilden.
+This page allows you to recreate a pattern from a [Github gist](https://gist.github.com/).
 
-Um dies zu tun, einfach entweder die vollständige URL zum Gist, oder die Gist-ID (der letzte Teil der URL) einfügen.
+To do so, simply past either the full URL to the gist, or the gist's ID (the last part of the URL).
 
