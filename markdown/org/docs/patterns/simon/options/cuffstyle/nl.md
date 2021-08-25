@@ -2,9 +2,9 @@
 
 What style of cuff do you want?
 
- - Afgeronde klassieke manchet
+ - Rounded barrel cuff
  - Chamfer barrel cuff
- - Rechte klassieke manchet
- - Afgeronde Franse manchet
+ - Straight barrel cuff
+ - Rounded French cuff
  - Chamfer French cuff
- - Rechte Franse manchet
+ - Straight French cuff
