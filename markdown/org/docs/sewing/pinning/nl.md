@@ -1,21 +1,21 @@
 ---
-title: Spelden
+title: Pinning
 ---
 
-![Kopspelden maken deel uit van de basisbenodigdheden](sewing-pins.jpg)
+![Sewing pins are part of the basic sewing supplies](sewing-pins.jpg)
 
-![Stof wordt op zijn plaats gespeld](fabric-pinning.jpg)
+![Fabric being pinned into place](fabric-pinning.jpg)
 
-Spelden wordt gebruikt wanneer je kopspelden gebruikt om dingen op hun plek te houden.
+Pinning is used whenever you use sewing pins to hold things in place.
 
-Voorbeelden van het gebruik van spelden:
+Examples of where pinning is commonly used are:
 
- - Een naad vastspelden voor ze te naaien
- - Een decoratie, zak of ander element op zijn plek spelden voor het te bevestigen
- - Nepen of andere patroonaanpassingen spelden terwijl je het kledingstuk past op een model
+ - Pinning a seam in place before sewing it
+ - Pinning an ornament, pocket, or other part in place before attaching it
+ - Pinning darts or other pattern changes while fitting the garment on a model
 
-Spelden is nooit permanent, maar een tijdelijke manier om dingen op hun plek te houden.
+Pinning is never permanent, but merely a temporary measure to hold things in place.
 
-> Spelden en driegen zijn verschillende technieken voor gelijkaardige situaties
+> Pinning and basting are different techniques for similar situations
 
-> Foto's door [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) en [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)
+> Pictures by [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) and [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)
