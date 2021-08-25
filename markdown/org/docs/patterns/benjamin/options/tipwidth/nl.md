@@ -1,6 +1,6 @@
 ![Bow ties Wide and Narrow](tipwidth.svg)
 
-Je kan GROTE vlinderdassen maken, of kleine. Deze optie staat je toe de verticale grootte van de strik aan te passen. Maak de strik groter en flamboyanter, of kleiner voor een subtieler effect. (voor zover een vlinderdas subtiel is)
+You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
 
 <Note>
 
@@ -9,4 +9,3 @@ Je kan GROTE vlinderdassen maken, of kleine. Deze optie staat je toe de vertical
 This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
-
