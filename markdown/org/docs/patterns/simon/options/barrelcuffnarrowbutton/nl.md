@@ -1,13 +1,12 @@
-![Klassieke manchet smalle knoop](./barrelcuffnarrowbutton.svg)
+![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
 
 
-Wil je een extra knoop om je manchet iets strakker vast te knopen?
+Do you want an extra button to button up your cuff more tightly?
 
-Als je je hemd onder een strakke (of toch aan de pols) trui of cardigan wil dragen kan je met deze knoop je manchet smaller maken, zodat die niet opfrommelt in je mouw.
+If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
 
 <Note>
 
-Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manchet gekozen hebt wordt dit genegeerd.
+This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
 
 </Note>
-
