@@ -2,15 +2,15 @@
 - Cut **4 fronts** 2 x 2 with good sides together
 - Cut **1 waistband**
 
-## Opmerkingen
-- Om minder papier te verbruiken wordt de tailleband niet helemaal geprint, aangezien het gewoon een lange rechthoek is. Dus kijk uit voor de aangegeven lengte en knip een rechthoek van dat formaat.
-- De zoomwaarde is twee keer de standaard naadwaarde.
+## Caveats
+- To save paper, the waistband is not completely printed on the pattern since it's just a long rectangle. So look for the length indicator, and cut out a rectangle of that size.
+- The hem allowance is double the standard seam allowance.
 
-Shin is een heel eenvoudig patroon, en bestaat uit twee hoofddelen plus een tailleband.
+Shin is a very simply pattern, and consists of two main parts plus the waistband.
 
-Hier is een typische layout:
+Below is a typical draft layout:
 
-![Een typisch Shin patroon](layout.svg)
+![A typical Shin draft](layout.svg)
 
 <Tip>
 
