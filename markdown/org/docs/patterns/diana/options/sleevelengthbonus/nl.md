@@ -1,3 +1,3 @@
-![De optie voor bonus mouwlengte bij Diana](./sleevelengthbonus.svg)
+![The sleeve length bonus option on Diana](./sleevelengthbonus.svg)
 
-Deze optie bepaalt de lengte van de mouwen.
+This option determines the length of the sleeves.
