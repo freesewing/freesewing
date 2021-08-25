@@ -1,5 +1,5 @@
-![De optie voor hoogte bij Bruce](./rise.svg)
+![The rise option on Bruce](./rise.svg)
 
-Deze optie bepaalt de algemene hoogte van de taille.
+This option controls the overal height of the waist.
 
-> Hoe hoger de hoogte, hoe hoger je taille.
+> The higher the rise, the higher your waist.
