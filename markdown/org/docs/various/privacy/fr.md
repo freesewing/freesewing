@@ -40,6 +40,9 @@ Un aperçu plus complet de l'historique de ce document est [disponible sur GitHu
 
 ##### Voir aussi
 
- - [Vos droits](/docs/various/right/)
- - [Votre consentement](/account/actions/consent/)
+ - [Vos droits][2]
+ - [Votre consentement][3]
+
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
 
