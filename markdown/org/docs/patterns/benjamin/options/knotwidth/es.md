@@ -9,4 +9,3 @@ How wide your bow tie is in the middle will influence the tie knot. Bigger works
 With the Square type bow tie, this value also dictates the width of the tips
 
 </Note>
-
