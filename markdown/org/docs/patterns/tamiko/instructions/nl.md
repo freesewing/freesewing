@@ -1,10 +1,10 @@
-### Stap 1: werk het armsgat af
+### Step 1: Finish the armhole seam
 
 ![Finsh the armhole seam](step03.png)
 
 Finish the armhole seam with a narrow hem.
 
-### Stap 2: Maak de top af
+### Step 2: Finish the top
 
 ![Sew the three seamlines that are marked on your draft](step04.png)
 
