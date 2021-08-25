@@ -3,7 +3,7 @@ title: The right to data portability
 order: 60
 ---
 
-Je hebt het recht om je persoonlijke gegevens te verkrijgen en opnieuw te gebruiken, voor eigen gebruik of bij verschillende diensten.
+You have the right to obtain and reuse your personal data for your own purposes or across different services.
 
 Go to [/account/actions/export][1] to export your data.
 
