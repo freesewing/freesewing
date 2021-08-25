@@ -1,6 +1,6 @@
-Om Simon te maken heb je het volgende nodig:
+To make Simon, you will need the following:
 
  - About two meters of a suitable fabric (see [Fabric options](/docs/patterns/simon/fabric/))
- - Knopen
- - Kleefbare tussenvoering voor de kraag en manchetten (en mogelijk voor het knopenpat)
+ - Buttons
+ - Fusible interfacing for collar and cuffs (and possibly for the front placket)
 
