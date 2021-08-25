@@ -1,9 +1,9 @@
-![De optie voor rughoogte bij Cathrin](./backrise.svg)
+![The back rise option on Cathrin](./backrise.svg)
 
-Hoe hoog wil je dat het korset komt in de rug, in vergelijking met de hoogte van de onderbuste?
+How high do you want the corset to rise at the back, relative to the underbust height?
 
-Nul houdt in dat de ruglijn horizontaal blijft, op hetzelfde niveau als de onderbuste. Met andere woorden, de rug komt ongeveer op dezelfde hoogte als je bh-band.
+Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
 
-Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
+If you increase the back rise, your corset will rise upwards at the back.
 
-> Aangezien dit een korset is dat onder de buste zit is de hoogte van de rug een esthetische keuze en heeft dit geen invloed op de pasvorm
+> As this is an underbust corset, the back rise is a style choice and wonâ€™t affect the fit
