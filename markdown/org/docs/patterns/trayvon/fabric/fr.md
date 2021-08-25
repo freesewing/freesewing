@@ -32,4 +32,3 @@ As long as you keep your tie away from scissors and bondage fanatics, your tie i
 As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
-
