@@ -1,14 +1,13 @@
-![Tweedelige schouderpas](splityoke.svg)
+![Split yoke](splityoke.svg)
 
-Wil je een tweedelige schouderpas?
+Do you want a split yoke?
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Bij een tweedelige schouderpas staat maar de helft van de schouderpas op het patroon, en zal je 4 delen moeten knippen in plaats van 2, en deze aan elkaar naaien.
+With a split yoke, only half the yoke is included on the pattern, and you'll have to cut 4 parts instead of 2, and sew them together.
 
-Het is een beetje meer werk, maar zo kan je de draadrichting aan beide kanten anders leggen, een effect dat sommige mensen mooi vinden.
+It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
 
 </Note>
-
