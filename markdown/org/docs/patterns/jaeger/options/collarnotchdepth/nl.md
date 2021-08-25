@@ -1,4 +1,4 @@
 
-![Diepte inkeping kraag](collarnotchdepth.svg)
+![Collar notch depth](collarnotchdepth.svg)
 
 Depth of the collar notch.
