@@ -1,3 +1,3 @@
-![Mouw kromming](./sleevebend.svg)
+![Sleeve bend](./sleevebend.svg)
 
-De curve van de mouw aan de elleboog.
+The angle of the sleeve at the elbow.
