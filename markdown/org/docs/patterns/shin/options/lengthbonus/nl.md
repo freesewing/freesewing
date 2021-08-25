@@ -1,2 +1,2 @@
 
-Hoeveel langer wil je de benen maken?
+How much do you want to lengthen the legs?
