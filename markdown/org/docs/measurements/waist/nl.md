@@ -1,7 +1,7 @@
 ---
-title: Omtrek taille
+title: Waist circumference
 ---
 
-De maat van je **omtrek taille** is de omtrek van je taille onder je ribbenkast.
+The **waist circumference** measurement is the circumference of your waist below your ribcage.
 
 To measure your **waist circumference**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal.
