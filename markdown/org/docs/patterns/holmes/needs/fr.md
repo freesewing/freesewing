@@ -20,4 +20,3 @@ Depending on style the ties and buttons are optional.
 - You can also use different width and type ribbons for the ties if you prefer.
 
 </Note>
-
