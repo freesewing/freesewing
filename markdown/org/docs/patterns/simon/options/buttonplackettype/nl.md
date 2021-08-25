@@ -1,14 +1,14 @@
 
-Wil je dat het knoopsgatenpat deel is van het rechtervoorpand (aangeknipt), of liever een individueel stuk dat je kan aannaaien (apart)?
+Do you want the button placket to be part of the right front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
 
-> #### Waarom apart?
+> #### Why pick seperate?
 > 
-> Een reden om een aangestikt knopenpat te kiezen is dat je een andere stof of draadrichting kan gebruiken. Zelfs als je dezelfde stof gebruikt zien sommige mensen toch liever een apart knopenpat.
+> One reason to pick a sewn on button placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a sewn on button placket.
 > 
-> Als je het soort persoon bent die het risico loopt dat hem de kleren van het lijf gescheurd wordt staat een apart knopenpat je ook toe het knopenpat te vervangen als het scheurt aan een knoop, gewoon omdat iemand niet kon wachten om je uit je kleren te krijgen.
+> If you are the type of person who is at risk of having your clothes ripped off, a seperate placket also allows to replace the placket if it rips at a button because somebody just could not wait to get you out of your clothes.
 > 
-> Waarom aangeknipt?
+> #### Why pick grown on?
 > 
-> Het is minder werk, en je kan voor die naadloze look gaan.
+> It's less work, and you can go for that seamless look.
 
-> Denk er ook aan dat in tegenstelling tot het knoopsgatenpat je het knopenpat niet kan zien wanneer je hemd dichtgeknoopt is.
+> It's worth pointing out that unlike the buttonhole placket, you cannot see the button placket when your shirt is closed all the way up.
