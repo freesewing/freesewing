@@ -12,4 +12,3 @@ Nobody needs to know about that Justin Bieber tattoo on your lower back.
 If you want a more casual shirt to wear over your trousers, you will want to lower this.
 
 </Note>
-
