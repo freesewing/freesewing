@@ -15,6 +15,6 @@ FreeSewing patterns often have so many options that one pattern can yield a vari
 
 #### A community of helpful people
 
-Questions about a pattern? Stuck on one of the steps when making your garment? No worries, help is available.
+Questions about a pattern? Questions about a pattern? Stuck on one of the steps when making your garment? No worries, help is available.
 
 [Join us on Discord](https://discord.freesewing.org/) and discover what makes the FreeSewing community so great.
