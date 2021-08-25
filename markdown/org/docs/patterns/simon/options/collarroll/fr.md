@@ -11,4 +11,3 @@ The collar starts upwards from the collar stand and then rolls over downwards. B
 Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
 
 </Note>
-
