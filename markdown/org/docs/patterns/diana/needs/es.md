@@ -14,4 +14,3 @@ Si no tienes una no te desesperes. Realmente no la necesitas.
 Debido a que las costuras laterales y costuras de hombro no se estiran, puedes coser con una puntada recta normal.
 
 </Note>
-
