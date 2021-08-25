@@ -1,7 +1,7 @@
 ---
-title: Mag ik FreeSewing-patronen gebruiken voor commerciële doeleinden?
+title: Can I use FreeSewing patterns for commercial purposes?
 ---
 
-Ja, dat mag. Open Source is een developmentmodel, geen bedrijfsmodel.
+Yes you can. Open Source is a development model, not a business model.
 
-Als ons werk jou kan helpen om de boterhammen te betalen, ga dan zeker je gang.
+If our work can help you put food on the table, by all means go ahead.
