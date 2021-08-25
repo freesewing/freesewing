@@ -1,4 +1,4 @@
 
-![Extra ruimte mouwkop](sleevecapease.svg)
+![Sleevecap ease](sleevecapease.svg)
 
 The ease on the sleevecap.
