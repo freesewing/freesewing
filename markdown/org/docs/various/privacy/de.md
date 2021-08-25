@@ -40,6 +40,9 @@ Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments i
 
 ##### Siehe auch
 
- - [Deine Rechte](/docs/various/right/)
- - [Deine Einwilligungen](/account/actions/consent/)
+ - [Deine Rechte][2]
+ - [Deine Einwilligungen][3]
+
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
 
