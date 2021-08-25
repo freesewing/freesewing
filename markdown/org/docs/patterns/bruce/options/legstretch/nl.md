@@ -1,3 +1,3 @@
-![De optie voor stretch pijp bij Bruce](./legstretch.svg)
+![The leg stretch option on Bruce](./legstretch.svg)
 
-De hoeveelheid stretch aan het (boven)been.
+The amount of stretch at the (upper) legs.
