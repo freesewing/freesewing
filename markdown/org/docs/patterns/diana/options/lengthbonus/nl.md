@@ -1,3 +1,3 @@
-![De optie voor bonus lengte bij Diana](./lengthbonus.svg)
+![The length bonus option on Diana](./lengthbonus.svg)
 
-Deze optie bepaalt de lengte van je top.
+This option controls the length of your top.
