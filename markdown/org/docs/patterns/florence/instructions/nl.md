@@ -1,9 +1,11 @@
 
-### Stap 1: Sluit de midden naad
+### Step 1: Join center seam
 
-Sluit de (meest) gebogen naad die het midden van ons masker vormt door beide helften van het masker op elkaar te plaatsen met de goede kant van de stof tegen elkaar.
+Join the curved seam that is center of our mask by placing the *good sides together* and sewing them in place.
 
-![Bevestig de middennaad](step1.svg)<Note>Herhaal deze stap voor zowel de (buiten) stof als voor de voering.</Note>
+![Join the center seam](step1.svg)
+
+<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
 
 ### Step 2 (optional): Press the center seam
 
@@ -14,9 +16,11 @@ So if you're not too bothered about that, feel free to skip it.
 
 </Note>
 
-Strijk de naadwaarde aan de middennaad open zodat de naad plat ligt.
+Press the seam allowance on the center seam open so the seam lies nice and flat.
 
-As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.<Note>Herhaal deze stap voor zowel de (buiten) stof als voor de voering.</Note>
+As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
+
+<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
 
 ### Step 3: Sew the outer to the inner fabric and attach ribbons
 
@@ -47,7 +51,7 @@ the masks of your layer to keep them out of the way.
 
 </Warning>
 
-### Step 4: Draai het masker binnenstebuiten
+### Step 4: Turn the mask inside-out
 
 Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
 
