@@ -1,13 +1,13 @@
 ---
-title: Gebreide stof
+title: Knit fabric
 ---
 
-![Een stuk grijze (French Terry) jersey, een gebreide stof](fabric.jpg)
+![A piece of grey (French Terry) jersey, a knit fabric](fabric.jpg)
 
-Gebreide stof is stof die gebreid is in plaats van geweven. Gebreide stof heeft meestal wat stretch.
+Knit fabric is fabric that is knitted, rather than woven. Knit fabric typically stretches to some extent.
 
-Hoewel de stof gebreid is ziet ze er niet uit als breiwerk, maar als stof.
+While the fabric is knitted, it does not look like knitwear, but like fabric.
 
-Gebreide stof wordt gebruikt voor kledingstukken waar stretch nodig is. Ze worden vaak met een overlock genaaid om de stretch in de naden te behouden.
+Knit fabric is used in garments where stretch is required. Sewing them is often done with a serger to maintain the stretch in the seams.
 
-> Wikipedia heeft meer te zeggen over breisel: [Knitted fabric in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
+> Wikipedia has more to say about knits: [Knitted fabric in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
