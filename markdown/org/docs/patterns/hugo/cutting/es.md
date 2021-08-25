@@ -22,4 +22,3 @@ Because Hugo's raglan sleeve also covers a portion of the back and front,
 the sleeve is the dominant feature of your draft.
 
 </Warning>
-
