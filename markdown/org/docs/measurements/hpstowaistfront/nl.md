@@ -1,5 +1,5 @@
 ---
-title: HPS tot taille voor
+title: HPS to waist front
 ---
 
 <Note>
@@ -11,7 +11,7 @@ Refer to [the hps documentation](/docs/measurements/hps/) for information on how
 
 </Note>
 
-De maat **hoog punt schouder (HPS) tot taille voor** loopt van je HPS tot aan je taille, langs de voorkant van je lichaam.
+The **high point shoulder (HPS) to waist front** measurement runs from your HPS down to your waist line across the front of your body.
 
-Om je HPS tot taille voor te meten, [bepaal eerst waar je HPS ligt](/docs/measurements/hps/). Meet dan van daar recht naar je taille.
+To measure your HPS to waist front, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to your waist line.
 
