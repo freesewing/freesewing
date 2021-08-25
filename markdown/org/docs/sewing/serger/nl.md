@@ -1,17 +1,17 @@
 ---
-title: Serger/overlock
+title: Serger
 ---
 
-![De afgewerkte achterkant van een gelockte naad](serged-seam.jpg)
+![The finished backside of a serged seam](serged-seam.jpg)
 
-![Mijn serger, een Bernina 700D](serger.jpg)
+![My serger, a Bernina 700D](serger.jpg)
 
-Een serger of overlock is een type naaimachine dat stof tegelijk kan bijknippen en met een elastische naad bevestigen.
+A serger or overlock is a type of sewing machine that can both cut fabric and make a stretch lockstitch.
 
-Overlockmachines gebruiken meerdere draden en naden om niet enkel de naad de naaien, maar ook de stof af te werken. Ze worden vaak gebruikt voor gebreide of andere elastische stoffen.
+Sergers use multiple threads and needles to not only make the seam, but also lock the fabric. They are very often used with knit or other stretchy fabrics.
 
-> In Europa wordt de term overlock meestal gebruikt voor deze machine. Ik geef echter de voorkeur aan serger om zo verwarring met een coverlock machine te vermijden.
+> The term overlock is more common in Europe for a serger. However, I prefer to use serger as it avoids confusion between the very similar named overlock and coverlock machines.
 > 
-> Verdere verwarring wordt veroorzaakt door het feit dat sommige naaimachines een overlocksteek hebben die een serger imiteert.
+> Further confusion is added by the fact that some sewing machines have an overlock stitch that mimics the role of a serger.
 > 
-> Om dit soort verwarring te vermijden gebruik ik 'serger' om naar deze specifieke machine te verwijzen. 
+> To steer clear of all this, I use serger to refer to the dedicated machine. 
