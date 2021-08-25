@@ -1,2 +1,2 @@
 
-De hoeveelheid algemene (horizontale) stretch.
+The amount of overal (horizontal) stretch.
