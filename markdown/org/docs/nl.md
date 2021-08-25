@@ -1,4 +1,4 @@
 ---
-title: Documentatie
+title: Documentation
 ---
 
