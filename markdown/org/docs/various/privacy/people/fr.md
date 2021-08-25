@@ -24,6 +24,7 @@ order: 40
 - Nous ne partageons jamais les données du modèle personnel
 - Nous publions un ensemble de données ouvertes contenant des données entièrement anonymes.
 
+
 <Note>
 Ces données sont stockées pour toute personne possédant un compte sur notre site web et qui possède un ou plusieurs modèles.
 </Note>
