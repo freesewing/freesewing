@@ -1,14 +1,14 @@
 ---
-title: Aan de stofvouw
+title: On the fold
 ---
 
-Wanneer je een symmetrisch patroondeel hebt kan het dat de instructies zeggen dat je het *aan de stofvouw* moet knippen.
+When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut *on the fold*.
 
 This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
 
-De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
+The fold line is indicated with a double arrow like in this example:
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" />
+<Legend part="cutonfold" caption="A cut-on-fold indicator" >
 
 <Tip>
 
