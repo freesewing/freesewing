@@ -1,7 +1,7 @@
 ![How much ease do you use for your collar?](collarease.svg)
 
-De halsomtrek gebruiken is één stap naar een goed passende vlinderdas. De tweede stap is kijken naar hoeveel overwijdte je hemdskragen gewoonlijk hebben. Samen bepalen ze hoe lang je vlinderdas wordt.
+Using the neck circumference is one part of getting a well-fitting bow tie. The other is how much collar ease you normally use for your shirts. Together they dictate how long the bow tie becomes.
 
-> #### Niet gebruikt met het aanpaslintje
+> #### Not used with the adjustment ribbon option
 > 
-> Deze optie wordt gebruikt om een precies passende vlinderdas te maken. Als je voor het aanpaslintje kiest wordt deze optie niet gebruikt.
+> This option is used to make a precise fitting bow tie. When you use the adjustment ribbon, this option is not used.
