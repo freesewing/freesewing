@@ -1,16 +1,16 @@
-### Stap 1: Sluit de schoudernaden
+### Step 1: Close shoulder seams
 
- - Leg het voorpand op het rugpand met de juiste kanten tegen elkaar.
- - Leg de schoudernaad gelijk, en stik/lock de naad op de standaard naadwaarde.
- - Herhaal voor de tweede schoudernaad.
+ - Place the back and front on top of each other with the good sides toghether.
+ - Align the shoulder seam, and sew/serge it at the standard seam allowance.
+ - Repeat for the other shoulder seam.
 
 
-### Stap 2: Zet de mouwen in
+### Step 2: Set in the sleeves
 
- - Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
- - Leg een mouw bovenop met de goede kant naar beneden
- - Leg de bovenkant van de mouwkop gelijk met de schoudernaad. De mouw ligt over het voor-en achterpand heen, tot aan de andere schoudernaad
- - Speld de mouw op z'n plaats langs het hele armsgat. Er zit een beetje extra stof in de mouwkop, wat wil zeggen dat de mouwkop een beetje groter is dan het armsgat. Verdeel dit verschil over het bovenste deel van de mouwkop terwijl je speldt.
+ - Place your now attached front and back with the good side up.
+ - Place a sleeve on top if it with the good side down
+ - Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
+ - Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
  - Sew/serge your pinned sleeve in place
  - Repeat for the other sleeve
 
