@@ -17,7 +17,7 @@ Du kannst so viele Schnittmuster erstellen wie du möchtest.
 Wenn du auf der Suche nach *Schnittmustern* auf diese Seite gestoßen bist, hast du sie womöglich unter *Designs* gefunden.
 Es ist keine super wichtige Unterscheidung, aber es hilft dem Verständnis:
 
-- **Design**: Einer der Styles, die wir anbieten. Wir haben Dutzende von Designs, und du kannst sie alle ausprobieren
- -**Schnittmuster**: Das Ergebnis, wenn du aus einem dieser Styles ein Schnittmuster generierst. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
+- **Design**: Einer der Styles, die wir anbieten. We've got dozens of designs, and you can try them all
+ - **Pattern**: The result of generating one of those styles into a pattern. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
 
 </Tip>
