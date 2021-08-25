@@ -32,9 +32,9 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 ## Step 5: Place eyelets for the draw string
 
-Markeer het midden van de lengte van je tailleband. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
+Mark the middle of your waistband length. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-Installeer twee vetergaten links en rechts van deze markering. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+A bit to the left and right of this, you can add two eyelets to pass a drawstring through. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### It's best to add some reinforcement
 > 
@@ -44,11 +44,11 @@ Installeer twee vetergaten links en rechts van deze markering. This will avoid a
 
 There's no magic formula for the length of your elastic. So you wrap it around your waist and pull it tight until you get a good fit.
 
-Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar.
+Mark this length, cut the elastic, and join the two ends together.
 
 ## Step 7: Join the waistband
 
-Fold the waistband in half with good sides together and line of the (short) edges. Stik.
+Fold the waistband in half with good sides together and line of the (short) edges. Sew them together.
 
 ## Step 8: Attach the waistband
 
@@ -70,7 +70,7 @@ It's fine to not sew too close the first time around, and once your elastic is a
 
 ## Step 9: Hem the legs
 
-Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Indien niet, gebruik een tweelingnaald of een zigzagsteek zodat de zoom elastisch blijft.
+Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
 
 > ### Fold only once, to avoid bulk
 > 
@@ -80,4 +80,4 @@ Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock h
 
 Thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
-Dat is het, je bent klaar!
+That's it, you're done 👍
