@@ -1,18 +1,19 @@
 
-Deze werkt het best in een lichtere stof die redelijk goed doorvalt.
+These work best in a lighter fabric with relatively good drape.
 
-Een lichte katoen of chambray zijn zeer geschikt.  
-Geweven viscose of jersey werken ook, maar zijn een beetje meer casual.
+A light cotton, or chambray are particularly well-suited.  
+Rayon or jersey will work too, but will give it a more casual-look.
 
-Voor het omgekeerde effect, minder casual en meer stijlvol, kan je kiezen voor een zijdemengeling of lichte wol.
+For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
 
 <Tip>
 
-###### Dingen die te vermijden zijn
+###### Some things to avoid
 
-Weersta aan de verleiding om deze broek in linnen te maken. 
-Hoewel linnen perfect is voor hete zomerdagen zou ik het niet aanraden voor deze broek. De elastische taille en zoom betekenen een hel van rimpels en kreuken. 
-Gebruik één van onze andere patronen met een aansluitende taille als je een linnen broek wil.
+Resist the temptation to make these in linen. 
+While linen is the go-to for hot summer days, I would not recommend it for these pants
+as they come with an elasticated waist/cuffs, which means wrinkle hell. 
+Use one of out other designs with a fitted waist if you want linen pants.
 
-Probeer ook stoffen met veel stretch te vermijden, dit maakt het alleen maar moeilijker om de elastiek te bevestigen.
+Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
 </Tip>
