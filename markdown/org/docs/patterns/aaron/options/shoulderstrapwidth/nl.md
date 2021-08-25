@@ -1,3 +1,3 @@
-![De optie voor de breedte van de schouderband bij Aaron](./shoulderstrapwidth.svg)
+![The shoulder strap width option on Aaron](./shoulderstrapwidth.svg)
 
-Bepaalt de breedte van de schouderbanden.
+Determines the width of the shoulder straps.
