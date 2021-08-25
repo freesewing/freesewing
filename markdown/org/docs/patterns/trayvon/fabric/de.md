@@ -1,5 +1,5 @@
 ## Tie fabric
-The ties you find in the store are typically made out of silk or some imitation silk poly. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
+Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
 
 In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
 

@@ -9,7 +9,7 @@ For example, you may store the length of the armhole in your front and back part
 and then read that value when drafting the sleeve so you can verify the sleeve fits the armhole.
 
 For this, you should use the [Store](/reference/api/store/), which is available via 
-the [shorthand](/howtos/core/shorthand/) call:
+the [shorthand](/howtos/code/shorthand/) call:
 
 ```js
 export default function(part) {

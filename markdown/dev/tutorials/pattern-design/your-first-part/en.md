@@ -24,6 +24,14 @@ Update the **parts** array with `bib`, rather than `box`:
 ```js
 parts: ["bib"],
 ```
+<Note>
+
+  ##### Don't worry about the big red error
+  
+  This will (temporarily) cause en error to appear in your development environment, because the rest of the code is still expecting to find a part named `box`, but we will fix this in the next steps.
+  
+</Note>
+
 
 When that's done, rename the `src/box.js` file into `src/bib.js`.
 
@@ -31,20 +39,20 @@ Then, in the `src/index.js` file, change the import accordingly:
 
 ```js
 // Change this line
-//import draftBox from "./box";
+//import draftBox from "./box"
 
 // Into this
-import draftBib from "./bib";
+import draftBib from "./bib"
 ```
 
 Finally, still in the `src/index.js` file, update the draftmethod:
 
 ```js
 // Change this line
-//Pattern.prototype.draftBox = draftBox;
+//Pattern.prototype.draftBox = draftBox
 
 // Into this
-Pattern.prototype.draftBib = draftBib;
+Pattern.prototype.draftBib = draftBib
 ```
 
 <Tip>

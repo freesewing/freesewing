@@ -75,7 +75,7 @@ Das Einzige was jetzt noch zu tun ist, ist die kleine Öffnung zu schließen, di
 
 Bügel die Fliege nun ein letztes Mal und bewundere deine Arbeit.
 
-### Mit Einstellband
+### With adjustment ribbon
 
 #### Schritt 2: Das Band anfügen
 

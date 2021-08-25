@@ -7,7 +7,7 @@ about: Shows you how to access user options from inside your pattern
 Options are stored in `pattern.settings.options`.
 
 You can pull them out of there with 
-the [shorthand](/howtos/core/shorthand/) call:
+the [shorthand](/howtos/code/shorthand/) call:
 
 
 ```js

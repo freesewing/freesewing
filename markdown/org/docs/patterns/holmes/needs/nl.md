@@ -1,11 +1,23 @@
 ---
-title: Wat je nodig hebt
+title: Holmes What you need
 ---
 
 To make Holmes, you will need the following:
 
 - Basis naaimateriaal
-- About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/holmes/fabric/))
-- Ongeveer 0.5 meter voering
-- Een vel plastic of iets anders plat en stevig voor de klep (1 mm dik of minder)
+- About 0.5 metres of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- About 0.5 metres of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- (Optional) About 1.0 metre of 1" (2.5cm) crossgrain ribbon or petersham.
+- (Optional) 1 covered button about 3/4" (2cm) - 7/8" (2.2cm)
+
+<Note>
+
+Depending on style the ties and buttons are optional.  
+- If you are making Buttonhole Ear Flaps you can omit the ties.  
+- If you are making Tie Ear Flaps you can omit the button.  
+- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))  
+- You can also use different width and type ribbons for the ties if you prefer.
+
+</Note>
 

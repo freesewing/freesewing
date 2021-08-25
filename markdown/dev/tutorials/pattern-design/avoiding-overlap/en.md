@@ -27,24 +27,24 @@ let rotateThese = [
   "tipRightBottom",
   "top",
   "topCp2"
-];
+]
 ```
 
 Now you can rotate them. How far? Until the strap no longer overlaps:
 
 ```js
 while (points.tipRightBottomStart.x > -1) {
-  for (let p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft);
+  for (let p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
 }
 ```
 
 We're rotating all the points in the `rotateThese` array around the `edgeLeft` points.
 We're using increments of 1 degree until the `tipRightBottomStart` point is 1mm passed the center of our bib.
 
-While we're add it, let's add a point where the closure's snap should go:
+While we're at it, let's add a point where the closure's snap should go:
 
 ```js
-points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5);
+points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 ```
 
 <Example pattern="tutorial" part="step8" caption="The right part looks a bit wonky now, but we'll get to that" />

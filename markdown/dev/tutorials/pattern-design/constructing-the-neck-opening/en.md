@@ -20,22 +20,25 @@ let {
   points,
   Path,
   paths,
+  complete,
+  sa,
+  paperless,
   measurements,
   options
-} = part.shorthand();
+} = part.shorthand()
 ```
 
 Great. Now let's get to work:
 
 ```js
 // Design pattern here
-points.right = new Point(measurements.head / 10, 0);
-points.bottom = new Point(0, measurements.head / 12);
+points.right = new Point(measurements.head / 10, 0)
+points.bottom = new Point(0, measurements.head / 12)
 
 points.rightCp1 = points.right
-  .shift(90, points.bottom.dy(points.right)/2);
+  .shift(90, points.bottom.dy(points.right)/2)
 points.bottomCp2 = points.bottom
-  .shift(0, points.bottom.dx(points.right)/2);
+  .shift(0, points.bottom.dx(points.right)/2)
 
 paths.neck = new Path()
   .move(points.right)
@@ -45,11 +48,11 @@ paths.neck = new Path()
 You've added some points to your part, and drawn your first path. Let's look at each line in detail:
 
 ```js
-points.right = new Point(measurements.head / 10, 0);
+points.right = new Point(measurements.head / 10, 0)
 ```
 
  - We're adding a point named `right` to `points` which holds our part's points
- - We're using the Point constructor, which takes two arguments: The points X and Y values
+ - We're using the Point constructor, which takes two arguments: The point's X and Y values
  - The X value is `measurements.head / 10`
  - The Y value is `0`
 
@@ -57,7 +60,7 @@ The `bottom` part is very similar, so let's skip to the next line:
 
 ```js
 points.rightCp1 = points.right
-  .shift(90, points.bottom.dy(points.right)/2);
+  .shift(90, points.bottom.dy(points.right)/2)
 ```
 
  - We're adding a point named `rightCp1`, which will become the *control point* of the right part

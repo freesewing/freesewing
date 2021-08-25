@@ -2,6 +2,6 @@
 title: Fersenumfang
 ---
 
-The **heel circumference** measurement is the narrowest measurement a trouser leg can be so you can still get in to it.
+Das Maß für den **Fersenumfang** ist die kleinste Weite, die ein Hosenbein haben kann und du immer noch hineinkommst.
 
-To measure your heel circumference, stretch your foot forward, and run the tape measure around your foot at the widest part of your heel.
+Um deinen Fersenumfang zu messen, strecke deinen Fuß nach vorne und wickel das Maßband an der breitesten Stelle deiner Ferse um den Fuß.

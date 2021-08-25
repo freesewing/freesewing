@@ -6,16 +6,16 @@ order: 190
 With our neck opening in place, let's draw the basic outline of our bib:
 
 ```js
-let width = measurements.head * options.widthRatio;
-let length = measurements.head * options.lengthRatio;
+let width = measurements.head * options.widthRatio
+let length = measurements.head * options.lengthRatio
 
 points.topLeft = new Point(
   width / -2,
   points.top.y - (width / 2 - points.right.x)
 );
-points.topRight = points.topLeft.shift(0, width);
-points.bottomLeft = points.topLeft.shift(-90, length);
-points.bottomRight = points.topRight.shift(-90, length);
+points.topRight = points.topLeft.shift(0, width)
+points.bottomLeft = points.topLeft.shift(-90, length)
+points.bottomRight = points.topRight.shift(-90, length)
 
 paths.rect = new Path()
   .move(points.topLeft)
@@ -23,15 +23,15 @@ paths.rect = new Path()
   .line(points.bottomRight)
   .line(points.topRight)
   .line(points.topLeft)
-  .close();
+  .close()
 ```
 
 First thing we did was create the `width` and `length` variables to
 save ourselves some typing:
 
 ```js
-let width = measurements.head * options.widthRatio;
-let length = measurements.head * options.lengthRatio;
+let width = measurements.head * options.widthRatio
+let length = measurements.head * options.lengthRatio
 ```
 
 Both the length and width of your bib are a factor of the head circumference.
@@ -44,10 +44,10 @@ Once we have our variables, we're adding some new points, and a second path call
 points.topLeft = new Point(
   width / -2,
   points.top.y - (width / 2 - points.right.x)
-);
-points.topRight = points.topLeft.shift(0, width);
-points.bottomLeft = points.topLeft.shift(-90, length);
-points.bottomRight = points.topRight.shift(-90, length);
+)
+points.topRight = points.topLeft.shift(0, width)
+points.bottomLeft = points.topLeft.shift(-90, length)
+points.bottomRight = points.topRight.shift(-90, length)
 
 paths.rect = new Path()
   .move(points.topLeft)
@@ -55,7 +55,7 @@ paths.rect = new Path()
   .line(points.bottomRight)
   .line(points.topRight)
   .line(points.topLeft)
-  .close();
+  .close()
 ```
 
 We're calculating the `topLeft` point so that the top edge of our bib

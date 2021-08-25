@@ -21,7 +21,7 @@ Only a few of these are mandatory.
  - **Pattern name**: This will be the name of your pattern, but also the name of the folder we'll setup for you. If you're just kicking the tires, something like `test` will do you fine.                      
  - **description**: A description of your pattern. It's not mandatory.
  - **Pattern type**: Use the arrow keys to chose either `block` or `pattern`. Choose `pattern` if you're not sure what to pick                   
- - **department**: Use the arrow keys to pick a department like `menswear`, `womenswear` or `accessories`. This is is only relevant if you decide to publish your pattern later. But by that time you will have learned how to change this.
+ - **department**: Use the arrow keys to pick a department like `tops`, `bottoms` or `accessories`. This is is only relevant if you decide to publish your pattern later. But by that time you will have learned how to change this.
  - **Author**: You can enter your name, or leave this blank for now
  - **GitHub repository**: You can leave this blank for now
  - **Package manager**: Choose either `npm` or `yarn` as your package manager. If you're not sure, pick `npm`.                    

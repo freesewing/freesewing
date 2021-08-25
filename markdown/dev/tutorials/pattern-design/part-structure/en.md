@@ -8,7 +8,7 @@ Open `src/bib.js` and make sure it looks like this:
 
 ```js
 export default function(part) {
-  let { Point, points, Path, paths } = part.shorthand();
+  let { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Design pattern here
 
   // Complete?
@@ -19,7 +19,7 @@ export default function(part) {
     if (paperless) {
     }
   }
-  return part;
+  return part
 }
 ```
 
@@ -36,7 +36,7 @@ export default function(part) {
 
   // ...
   
-  return part;
+  return part
 }
 
 ```
@@ -57,7 +57,7 @@ let {
   points,
   Path,
   paths,
-} = part.shorthand();
+} = part.shorthand()
 ```
 
 This is FreeSewing's **shorthand** method. It returns an object with a bunch of handy helpers
@@ -70,10 +70,21 @@ The example above makes the following variables available:
  - `Path`: The Path constructor
  - `paths`: A reference to the part's paths
 
+These will make it possible for you to draw points and paths easily.
+
+The following three variables are also needed to create a full-fledged FreeSewing pattern; their function and usage will
+be covered in detail [later on in this tutorial](/tutorials/pattern-design/completing-your-pattern/):
+
+- `complete`: create a *complete* pattern (or not)
+- `sa`: include *seam allowance* (or not)
+- `paperless`: allow the pattern to be *paperless*
+
+For now, we only need these so that the pattern skeleton compiles properly.
+
 <Note>
 
 This will all become clear, but if you're curious, the API docs have all the details 
-on [the Part.shorthand() method](/reference/api/part/#shorthand)
+on [the Part.shorthand() method](/reference/api/part/#shorthand).
 
 </Note>
 

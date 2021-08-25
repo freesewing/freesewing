@@ -32,7 +32,7 @@ A more extensive how-to on knit binding can be found in the [Aaron Instuctions](
 
 </Tip>
 
-- We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There’s a difference, and it’s explained [here](/docs/sewing/knit-binding)).
+- We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Es gibt einen Unterschied, und der wird [hier](/docs/sewing/knit-binding) erklärt).
 
 <Note>
 This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.

@@ -13,18 +13,18 @@ macro("round", {
   via: points.bottomLeft,
   radius: points.bottomRight.x / 4,
   prefix: "bottomLeft"
-});
+})
 macro("round", {
   from: points.bottomLeft,
   to: points.topRight,
   via: points.bottomRight,
   radius: points.bottomRight.x / 4,
   prefix: "bottomRight"
-});
+})
 ```
 
 But there's still something to be learned here. If you look at our earlier use of the `round` macro,
-you'll notice that we used this line:
+you'll notice that we used this line in the beginning:
 
 ```js
   render: true,
@@ -37,7 +37,13 @@ Typically, your rounded corner will be part of a larger path and so you don't wa
 to draw it. That's why the `round` macro's `render` property defaults to `false`.
 
 We've left it out here, and you should also remove it from your earlier use of the `round` macro.
-We merely set `render` to `true` at that time so you could see what the macro was doing.
+We merely set `render` to `true` and then `false` at that time so you could see what the macro was doing.
+
+<Note>
+  
+  There is no need to explicitly specify a default value. While writing `render: false,` also works, it clutters up your code a bit. 
+  
+  </Note>
 
 With our corners rounded, we should update our path.
 Fortunately, we merely have to update the start of it. Replace this:

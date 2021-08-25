@@ -6,24 +6,24 @@ order: 170
 Here's how we'll make sure the neck opening is *just right*:
 
 ```js
-let tweak = 1;
-let target = (measurements.head * options.neckRatio) /4;
-let delta;
+let tweak = 1
+let target = (measurements.head * options.neckRatio) /4
+let delta
 do {
-	points.right = new Point(tweak * measurements.head / 10, 0);
-	points.bottom = new Point(0, tweak * measurements.head / 12);
+	points.right = new Point(tweak * measurements.head / 10, 0)
+	points.bottom = new Point(0, tweak * measurements.head / 12)
 
-	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2);
-	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2);
+	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
+	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
 
 	paths.neck = new Path()
 	  .move(points.right)
-	  .curve(points.rightCp1, points.bottomCp2, points.bottom);
+	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
 
-	delta = paths.neck.length() - target;
-  if (delta > 0) tweak = tweak * 0.99;
-  else tweak = tweak * 1.02;
-} while (Math.abs(delta) > 1);
+	delta = paths.neck.length() - target
+  if (delta > 0) tweak = tweak * 0.99
+  else tweak = tweak * 1.02
+} while (Math.abs(delta) > 1)
 ```
 
 We've added a few new variables:
@@ -41,7 +41,7 @@ length of our neck path.
 If the delta is positive, our path is too long and we reduce the tweak factor.  
 If the delta is negative, our path is too short and we increase the tweak factor.
 
-We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we are withing 1mm or our target value.
+We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we are within 1mm of our target value.
 
 <Example pattern="tutorial" part="step2" caption="It might look the same as before, but now it's just right" />
 

@@ -1,4 +1,4 @@
-Benjamin ist ein eher einfaches Schnittmsuter, aber die von dir gewählten Optionen beeinflussen, was ausgeschnitten werden muss. Hier sind zwei typische Layouts:
+Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optionen beeinflussen, was ausgeschnitten werden muss. Hier sind zwei typische Layouts:
 
 ## Ohne Einstellband
 
@@ -9,7 +9,7 @@ Benjamin ist ein eher einfaches Schnittmsuter, aber die von dir gewählten Optio
    - Schneide **4 Einlagen-Knoten**
    - Schneide **2 Einlagen-Kragenbänder**
 
-## Mit Einstellband
+## With adjustment ribbon
 
  - **Oberstoff**
    - Schneide **1 Knoten 1**

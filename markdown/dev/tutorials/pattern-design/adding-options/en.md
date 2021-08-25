@@ -51,12 +51,12 @@ Let's do something similar for the width and length of our bib:
 options: {
   neckRatio: { pct: 80, min: 70, max: 90 }, 
   widthRatio: { pct: 45, min: 35, max: 55 }, 
-  lengthRatio: { pct: 50, min: 40, max: 65 }, 
+  lengthRatio: { pct: 75, min: 55, max: 85 }, 
 }
 ```
 
  - You've added `widthRatio` and `lengthRatio` options
- - You've given all options sensible defauls 
+ - You've given all options sensible defaults 
  - You've given all options sensible maximum and minimum boundaries
 
 <Note>
