@@ -1,5 +1,5 @@
 
-Controls the width of the legs. 
+Controls the width of the legs.
 
 <Note>
 
