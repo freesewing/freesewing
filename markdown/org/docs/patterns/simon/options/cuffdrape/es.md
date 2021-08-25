@@ -10,4 +10,3 @@ More drape makes the sleeve wider and gives you a more *blousy* effect, whereas 
 The drape will be worked into the cuff with pleats.
 
 </Note>
-
