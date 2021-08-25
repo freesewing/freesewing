@@ -1,6 +1,6 @@
 Ursula consists of a front, a back, and a lined gusset.
 
- - **Buitenstof**
+ - **Main fabric**
    - Cut **1 front**
    - Cut **1 back**
    - Cut **2 gusset**
