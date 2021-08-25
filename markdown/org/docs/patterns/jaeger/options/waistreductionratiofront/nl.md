@@ -1,4 +1,4 @@
 
-![Ratio reductie taille voorpand](waistreductionratiofront.svg)
+![Waist reduction ratio front](waistreductionratiofront.svg)
 
-Proportion of the waist to be reduced in the front dart. Dit heeft ook invloed op de vorm van het zijpand.
+Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping.
