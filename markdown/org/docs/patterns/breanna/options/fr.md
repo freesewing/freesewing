@@ -15,7 +15,7 @@ La *bounding box* de la tête de manche est un rectangle de la largeur de la man
 
 ![The Breanna sleevecap](sleevecap.svg)
 
-L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2. 
+L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 
 <Note>
 
@@ -23,7 +23,8 @@ L'image ci-dessus montre une tête de manche, commençant au point 1, puis monta
 
 Dans notre exemple, le devant de la manche est à droite. Mais comment le sait-on ? 
 
-Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. La partie de la tête de manche qui sera placée à l'arrière est de forme plus aplatie. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
+Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. The backside of the
+sleevecap will also be curved, but it's a flatter curve. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
 
 </Note>
 
