@@ -1,4 +1,4 @@
-![Diepte armsgat factor](./armholedepthfactor.svg)
+![Armhole depth factor](./armholedepthfactor.svg)
 
 
-Deze optie bepaalt de diepte van het armsgat.
+This option controls the depth of the armhole.
