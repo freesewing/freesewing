@@ -3,7 +3,7 @@
 
 ## Latest updates
 
-##### COVID-19: Mondmasker patroon
+##### COVID-19: Facemask pattern
 
 If you're looking for our facemask pattern, follow this link:
 
