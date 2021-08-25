@@ -1,5 +1,5 @@
 ---
-title: Papierloos
+title: Paperless
 ---
 
 Paperless patterns have extra markings to use them without a printer.
