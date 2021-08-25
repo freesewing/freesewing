@@ -1,5 +1,5 @@
 
-Deze top werkt het best in één van deze scenario's:
+This top works best in one of these two scenarios:
 
- - Gebruik een elastische stof, en kies de minimale hoeveelheid overwijdte
- - Of gebruik een niet elastische stof die goed *doorvalt*. In dit geval wil je meer overwijdte. Soepele stoffen kunnen schuin van draad geknipt worden om beter rond het lichaam te vallen
+ - Use a stretch fabric, and chose minimal ease
+ - Or use a non-stretch fabric with good *drape*, in which case you'll want to add more ease. Flowy fabrics can be cut on the bias for a body-hugging effect
