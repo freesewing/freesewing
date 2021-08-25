@@ -12,11 +12,11 @@ site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboo
 
 </Tip>
 
-### Stap 1: Bevestig tussenvoering
+### Step 1: Fuse interfacing
 
 ![Fuse cuff interfacing](1a.png) ![Fuse coller interfacing](1b.png)
 
-#### Kleef tussenvoering aan manchetten
+#### Press interfacing to cuffs
 To make two cuffs, you have cut out your cuff piece four times in fabric, and twice in interfacing.
 
 For each cuff, press the interfacing piece to the bad side of the cuff piece.
@@ -31,14 +31,14 @@ For each cuff, press the interfacing piece to the bad side of the cuff piece.
 > 
 > Going forward, the round barrel cuff will be used in the illustrations, but the process is the same for the other cuffs.
 
-#### Kleef tussenvoering aan kraag en onderkraag, en kraagstaander
+#### Press interfacing to collar and undercollar, and collar stand
 To make your collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
 
 For each piece, press the interfacing piece to the bad side.
 
 ### Step 2: Prepare the cuffs
 
-#### Stik de manchet aan elkaar
+#### Sew cuff together
 
 ![Sew the cuffs together](2a.png)
 
@@ -49,21 +49,21 @@ Place both parts of your cuff (one with interfacing, one without) together with 
 > - Do not sew together the side that we will attach to the sleeve later
 > - Stop at the seam allowance distance from the edge on the sleeve side
 
-#### Knip naadwaarde bij
+#### Trim seam allowance
 
 ![Trim the seam allowance](2b.png)
 
 Before we are going to flip your cuff over, we need to trim back the seam allowance to remove bulk.
 
-#### Strijk de naadwaarde terug
+#### Press back seam allowance
 
-![Strijk de naadwaarde terug](2c.png)
+![Press back seam allowance](2c.png)
 
 Fold back the seam allowance on the sleeve side, and press it down.
 
 > If you sewed too far along the edge earlier, you will have to unpick a few stitches.
 
-#### Keer manchet en strijk
+#### Turn cuff around and press
 
 ![Turn the cuff around and press](2d.png)
 
@@ -75,19 +75,19 @@ You can now put your cuffs aside, we'll attach them later.
 
 ### Step 3: Prepare the collar
 
-#### Stik de kraag en onderkraag samen
+#### Sew collar and undercollar together
 
 ![Sew collarand undercollar together](3a.png)
 
 Place both collar parts together with the good sides, and sew them together at the standard seam allowance.
 
-#### Knip naadwaarde bij
+#### Trim seam allowance
 
 ![Trim the seam allowance](3b.png)
 
 Before we are going to flip your collar over, we need to trim back the seam allowance to remove bulk.
 
-#### Keer kraag en strijk
+#### Turn collar and press
 
 ![Turn the collar and press](3c.png)
 
@@ -97,7 +97,7 @@ Flip your collar with the good sides out, get those tips as pointy as possible, 
 > 
 > When you align the non-sewn sides, this will cause the seam to roll towards the backside of the collar to guarantee that the inner fabric of the collar is not visible.
 
-#### Stik de kraag door
+#### Top-stitch collar
 
 ![Top-stitch the collar](3d.png)
 
@@ -107,9 +107,9 @@ Top-stitch along the edge of the collar. This locks down the seam allowance and 
 
 ### Step 4: Join collar and collar stand
 
-#### Leg de kraag tussen de kraagstaanders en drieg vast
+#### Place collar between collar stands and baste in place
 
-![Leg de kraag tussen de kraagstaanders en drieg vast](4a.png)
+![Place collar between collar stands and baste in place](4a.png)
 
 Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
 
@@ -129,15 +129,15 @@ When you reach the corner of your collar, keep going and baste the end of both c
 
 When you've done one side, start from your pin in the middle again and do this other side. When you're done basting, you can take out the pin.
 
-#### Stik je kraag aan de kraagstaanders
+#### Sew your collar to the collar stands
 
-![Stik je kraag aan de kraagstaanders](4b.png)
+![Sew your collar to the collar stands](4b.png)
 
 Sew along the edge of your collar stand, respecting the standard seam allowance.
 
 > Make sure to stop 2cm before the edge (twice the standard seam allowance) as we'll be folding the seam allowance over in the next step, and we need to leave the collar stands separated enough to slide the shirt in between them later.
 
-#### Plooi en strijk de naadwaarde van de kraagstaander
+#### Fold back and press the collar stand seam allowance
 
 Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
 
@@ -145,9 +145,9 @@ Fold back the seam allowance of your collar stand on the non-sewn side and press
 > 
 > Press is as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
 
-#### Keer de kraagstaander en strijk
+#### Turn collar stand and press
 
-![Keer kraag en strijk](4c.png)
+![Turn collar and press](4c.png)
 
 Flip your collar stand with the good sides out, and give it a good press. Make sure to keep the seam allowance on the collar stand folded inwards.
 
@@ -211,9 +211,9 @@ When you're done, don't forget to give it a good press. Press the extra fabric o
 
 > If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to [Fold the button placket](#fold-the-button-placket).
 
-#### Stik het knopenpat vast
+#### Sew on the button placket
 
-![Stik het knopenpat vast](9a.png)
+![Sew on the button placket](9a.png)
 
 If you have chosen a separate button placket, sew it to the Front Right piece.
 
@@ -221,12 +221,12 @@ Place the Front Right (piece 1) down with the good side up, and place the Button
 
 Sew it in place with the default seam allowance.
 
-#### Strijk de naadwaarde in de richting van het knopenpat
+#### Press seam allowance to placket side
 Place your front with the good side down, and press the seam allowance to the button placket side.
 
-#### Plooi het knopenpat
+#### Fold the button placket
 
-![Plooi het knopenpat](9b.png)
+![Fold the button placket](9b.png)
 
 Now, fold over the button placket on the first fold line, and press this fold in place.
 
@@ -234,9 +234,9 @@ Then, fold the placket over again, making sure to have the fabric extend just be
 
 When you're happy, press the folded placket.
 
-#### Stik het geplooide knopenpat
+#### Sew down the folded placket
 
-![Stik het geplooide knopenpat](9c.png)
+![Sew down the folded placket](9c.png)
 
 > This is the classic approach. If you have chosen the seamless Button placket style, you don't have to do this.
 > 
@@ -251,7 +251,7 @@ To do so, sew exactly on top of your earlier seam. Since you folded the fabric o
 
 > If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket.
 
-#### Stik het knoopsgatenpat vast
+#### Sew on the buttonhole placket
 
 ![Sew on the butonhole placket](10a.png)
 
@@ -263,16 +263,16 @@ Sew it in place with the default seam allowance.
 
 When you're done, don't forget to give it a good press. Press the seam allowance towards the placket side.
 
-#### Strijk de naadwaarde in de richting van het knoopsgatenpat
+#### Press seam allowance to the placket side
 Place your front with the good side down, and press the seam allowance to the buttonhole placket side.
 
-#### Hoe werkt een klassiek knopenpat
+#### Understanding a classic buttonhole placket
 
 > If you have chosen a seamless placket, you should follow the steps of the button placket, as the construction is identical.
 > 
 > The steps below are for a classic buttonhole placket.
 
-![Hoe werkt een klassiek knopenpat](10b.png)
+![Understanding a classic buttonhole placket](10b.png)
 
 Your placket has a bunch of lines on it, so let's first clarify what they are:
 
@@ -280,19 +280,19 @@ Your placket has a bunch of lines on it, so let's first clarify what they are:
  - The two fold lines have long dashes and sit at an equal distance right and left of the buttonhole line
  - The two+two sew lines are dotted lines that sit at an equal distance of each fold line
 
-#### Knip naadwaarde bij
+#### Trim back seam allowance
 
 > If you have chosen a grown-on placket, this does not apply.
 
-![Knip naadwaarde bij](10c.png)
+![Trim back seam allowance](10c.png)
 
 The seam allowance of where you sewed your buttonhole placket to your front should fit inside your folded placket.
 
 For that, trim back the seam allowance so that it doesn't extend beyond the first fold line on the placket.
 
-#### Plooi het knoopsgatenpat
+#### Fold the buttonhole placket
 
-![Plooi het knoopsgatenpat](10d.png) ![Fold the buttonhole placket again](10e.png)
+![Fold the buttonhole placket](10d.png) ![Fold the buttonhole placket again](10e.png)
 
 Fold the placket on the first fold line. Press the fold in place.
 
@@ -300,7 +300,7 @@ Then, fold the part you just folded again, this time on the second fold line. Pr
 
 > When your placket is folded and pressed, place a few pins along the length of your placket to keep things from shifting around
 
-#### Stik het geplooide knoopsgatenpat
+#### Sew the buttonhole placket
 
 ![Sew on the first line](10f.png) ![Sew on the second line](10g.png)
 
@@ -310,9 +310,9 @@ Then, flip your shirt over so that the good side is up, and your placket is up t
 
 > These two lines of top-stitching will always be visible, so make sure to keep it neat
 
-#### Strijk het knoopsgatenpat
+#### Press the buttonhole placket
 
-![Strijk het knoopsgatenpat](10h.png)
+![Press the buttonhole placket](10h.png)
 
 Congratulations, you made a classic buttonhole placket.
 
@@ -326,15 +326,15 @@ Now press that baby. You know you want to.
 > 
 > If you are familiar with the burrito method, you already know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
 
-#### Speld de voorpanden aan de buitenste schouderpas
+#### Pin the fronts to the outside yoke
 
-![Speld de voorpanden aan de buitenste schouderpas](11a.png) ![Speld de voorpanden aan de buitenste schouderpas](11b.png)
+![Pin the fronts to the outside yoke](11a.png) ![Pin the fronts to the outside yoke](11b.png)
 
 Place your back down with the good side up, but be careful to fold the inner yoke downward (as illustrated by the dotted line.
 
 Place your fronts on your back, with the good sides down. Pin fronts to the yoke at the shoulder seam, good sides together.
 
-#### Rol hemden, geen zakken
+#### Roll, roll, roll your shirt, pin down and sew your seam
 
 ![Roll your shift up between the yokes](11c.png)
 
@@ -350,12 +350,12 @@ Pin them in place, and then sew the shoulder seams, making sure to keep your sau
 > 
 > However, the seamlines are the same lenght, so make sure to match them carfully using the notches.
 
-#### Keer het binnenstebuiten door de halsopening
+#### Flip it inside out through the neck opening
 When you've sewn both shoulder seams, reach in through the neck opening, and pull out the back and front parts to inside-out your burrito.
 
-#### Strijk de schoudernaden
+#### Press the shoulder seams
 
-![Strijk de schoudernaden](11d.png)
+![Press the shoulder seams](11d.png)
 
 You did all this work, so now make sure you make it look super sharp by giving it a good press. Make sure that the seam allowance between your yokes lies nice and flat for that.
 
@@ -371,9 +371,9 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 
 ### Step 13: Construct the sleeve placket
 
-#### Stik de mouwsplitreep
+#### Sew in the cuff guard
 
-![Stik de mouwsplitreep](13a.png) ![Press the cuff guard](13b.png) ![Edge-stitch the cuff guard in place](13c.png)
+![Sew in the cuff guard](13a.png) ![Press the cuff guard](13b.png) ![Edge-stitch the cuff guard in place](13c.png)
 
  - Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
  - Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
@@ -387,9 +387,9 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
  - Make your folds so that the upper folds sits ever so slightly further than the seam you already made.
  - Press everything down, and then edge-stitch the cuff guard in place.
 
-#### Plooi en strijk de mouwsplitbies
+#### Fold and press the placket
 
-![Plooi en strijk de mouwsplitbies](13d.png)
+![Fold and press the placket](13d.png)
 
 Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
@@ -398,11 +398,12 @@ Origami time! We're going to fold the sleeve placket overlap using the marked fo
  - Then, fold down both tips into a nice pointy shape.
  - Now give it a final good press.
 
-Here's a very short YouTube video of me folding the placket: <YouTube id='kgd5eubxShM' />
+Here's a very short YouTube video of me folding the placket:
+<YouTube id='kgd5eubxShM' />
 
-#### Speld de mouwsplitbies
+#### Pin placket in place
 
-![Slide placket in position](13e.png) ![Speld de mouwsplitbies](13f.png)
+![Slide placket in position](13e.png) ![Pin placket in place](13f.png)
 
 Place your sleeve down with the good side up. The guard we have sewn in earlier sits against the other unfinished fabric edge of where you cut into your sleeve.
 
@@ -414,9 +415,9 @@ The idea is that the placket closes up the unfinished edge, but also covers the 
 
 When you've got it where you want it, pin the placket down.
 
-#### Stik de mouwsplitbies
+#### Sew the sleeve placket
 
-![Stik de mouwsplitbies](13g.png)
+![Sew the sleeve placket](13g.png)
 
 Start at the edge of the sleeve (the bottom of the sleeve placket) and edge-stitch along the edge upwards.
 
@@ -428,7 +429,7 @@ Then, sew horizontal to the other side of the placket to finish.
 
 ### Step 14: Set in sleeves
 
-#### Belangrijk! Dit is een platte naad
+#### Remember, this is a flat-felled seam
 
 ![Aligning the fabric for a flat-felled seam](14c.png)
 
@@ -437,9 +438,9 @@ Then, sew horizontal to the other side of the placket to finish.
 > 
 > As such, be careful to not align the fabric edge, but align the seam so that the sleeve sits out 1cm.
 
-#### Speld het hemd op z'n plek
+#### Pin shirt in place
 
-![Speld het hemd op z'n plek](14a.png)
+![Pin shirt in place](14a.png)
 
 Spread your shirt open so that both fronts and back lie flat with their good sides up.
 
@@ -455,7 +456,7 @@ You now need to pin the sleeve to the armhole. To do so, make sure to:
  - Match the notches on the sleevehead to the notches on the back and fronts
  - Distribute the sleevecap ease between the notches as shown
 
-#### Verdeel extra stof in de mouwkop
+#### Distribute sleavecap ease
 
 ![Distribute the sleevecap ease](14b.png)
 
@@ -463,14 +464,14 @@ The default sleevecap ease for this pattern is 0.5cm. If you have sleevecap ease
 
 > If you are unsure what sleevecap ease is, have a look at the [documentation for the sleevecap ease pattern option](/en/docs/patterns/simon/options#sleevecapEase).
 
-#### Stik mouw in armsgat
+#### Sew sleeve in armhole
 When you've got your sleeve neatly pinned in your armhole, sew it in place. Be careful to avoid any pleats in the part between the notches where you need to ease in the sleevecap ease.
 
 > Needless to say, but I'll say it anyway: Repeat this step for the other sleeve.
 
 ### Step 15: Flat-fell armhole seam
 
-#### Strijk naadwaarde naar één kant
+#### Press seam allowance to one side
 
 ![Press seam allowance to once side](15a.png)
 
@@ -482,9 +483,9 @@ The longer seam allowance needs to lie on top of the shorter (standard seam allo
 
 Once you have verified that, press down the seam allowance.
 
-#### Plooi de extra naadwaarde weg
+#### Fold under extra seam allowance
 
-![Plooi de extra naadwaarde weg](15b.png)
+![Fold under extra seam allowance](15b.png)
 
 Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
 
@@ -492,14 +493,14 @@ You can use pins to hold this in place, but it's simpler to just press it.
 
 > This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
 
-#### Stik de platte naad
+#### Sew the flat-felled seam
 Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
 
 Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
 > It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
 
-#### Strijk de platte naad
+#### Press the flat-felled seam
 When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
 
 ### Step 16: Close the side/sleeve seams
@@ -512,7 +513,7 @@ Place your shirt with the good sides together, and sew the side and sleeve seams
 
 ### Step 17: Flat-fell the side/sleeve seams
 
-#### Strijk naadwaarde naar één kant
+#### Press seam allowance to one side
 
 ![Press the seam allowance to one side](15a.png)
 
@@ -522,9 +523,9 @@ The longer seam allowance needs to lie on top of the shorter (standard seam allo
 
 Once you have verified that, press down the seam allowance.
 
-#### Plooi de extra naadwaarde weg
+#### Fold under extra seam allowance
 
-![Plooi de extra naadwaarde weg](15b.png)
+![Fold under extra seam allowance](15b.png)
 
 Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
 
@@ -532,21 +533,21 @@ You can use pins to hold this in place, but it's simpler to just press it.
 
 > This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
 
-#### Stik de platte naad
+#### Sew the flat-felled seam
 Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
 
 Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
 > It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
 
-#### Strijk de platte naad
+#### Press the flat-felled seam
 When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
 
 ### Step 18: Attach cuffs to sleeves
 
-#### Speld de manchet op z'n plaats
+#### Pin cuff in place
 
-![Speld de manchet op z'n plaats](18a.png)
+![Pin cuff in place](18a.png)
 
 You need to insert the sleeve between the two layers of your cuff, making sure that that good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
 
@@ -558,9 +559,9 @@ Also note that your sleeve edge will be longer than your cuff (how much longer d
 
 > Take your time to pin everything carefully in place. We are going to edge-stitch this later, so it's important that front and back of your cuff align nicely.
 
-#### Stik de manchetten smal door
+#### Edge-stitch cuffs to sleeves
 
-![Stik de manchetten smal door](18b.png)
+![Edge-stitch cuffs to sleeves](18b.png)
 
 Once everything is pinned in place, edge stitch along the edge of your cuff to attach it to your sleeve.
 
@@ -570,9 +571,9 @@ It's important to catch both outer and inner layer of your cuff on the edge.
 
 When you're done, give your cuffs a good press.
 
-#### Sierstiksel op de manchetten
+#### Top-stitch the cuffs
 
-![Sierstiksel op de manchetten](18c.png)
+![Top-stitch the cuffs](18c.png)
 
 > Make sure to press your cuffs before you do this.
 
@@ -580,9 +581,9 @@ Top-stitch around your cuff at a distance from the edge that is a bit less than 
 
 ### Step 19: Attach the collar
 
-#### Drieg de kraag vast
+#### Baste collar in place
 
-![Drieg de kraag vast](19a.png)
+![Baste collar in place](19a.png)
 
 This is an important seam, so we are going to baste this in place to make sure it sits exactly right before we sew it.
 
@@ -594,17 +595,17 @@ Make sure to respect the standard seam allowance and - important - avoid any wri
 > 
 > That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
 
-#### Stik de kraag smal door
+#### Edge-stitch collar in place
 
-![Stik de kraag smal door](19b.png) ![Stik de kraag smal door](19c.png)
+![Edge-stitch collar in place](19b.png) ![Edge-stitch collar in place](19c.png)
 
 When you're happy with how you've basted your collar in place, it's time to sew that thing down.
 
 We're going to start at center-back and sew all the way around the collar stand.
 
-#### Stik langs de rand van de kraag
+#### Sew along the collar edge
 
-![Stik langs de rand van de kraag](19d.png)
+![Sew along the collar edge](19d.png)
 
 To give more body to your collar, and firmly secure it in place we're going to sew along the top edge of the collar stand.
 
@@ -612,9 +613,9 @@ Sew about half the seam allowance from your earlier edge-stitching. Make sure to
 
 > You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down.
 
-#### Strijk de kraag
+#### Press the collar
 
-![Strijk de kraag](19.png)
+![Press the collar](19.png)
 
 Now that your collar is attached, give it a good press.
 
