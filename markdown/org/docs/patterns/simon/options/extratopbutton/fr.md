@@ -16,4 +16,3 @@ Do not include the top button if you want a more casual look.
 This extra button is added to the number of buttons on the front. It does not replace another button.
 
 </Note>
-
