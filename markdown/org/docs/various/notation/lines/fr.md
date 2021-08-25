@@ -11,4 +11,4 @@ Certains patrons peuvent contenir d'autres lignes, il y a 4 styles supplémentai
 
 Elles peuvent être utilisées par les concepteurs de patrons pour ajouter des informations supplémentaires, selon le contexte.
 
-<Legend part="otherLines" caption="Other line styles" />
+<Legend part="otherLines" caption="Other line styles" >
