@@ -1,10 +1,10 @@
 
-## Bent is een basis, geen patroon
+## Bent is a block, not a pattern
 
-Een basisvorm is een basispatroon waar andere patronen op gebaseerd worden. Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
+A block is a basic shape on which other patterns are based. They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Het punt is dat het geen nut heeft om instructies te schrijven over hoe Bent gemaakt wordt.
+Point is, there is no point in providing instructions on how to make Bent.
 
-Dat is omdat Bent niet bedoeld is om zo gemaakt te worden, maar als basis kan dienen voor je eigen ontwerpen.
+That's because Bent is not supposed to be made as-is, but rather can serve as the basis for your own pattern designs.
 
-> Hier zijn een aantal patronen die gebaseerd zijn op Bent:   [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
+> Some of the patterns based on Bent include [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
