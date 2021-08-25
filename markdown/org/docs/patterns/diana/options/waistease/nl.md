@@ -1,3 +1,3 @@
-![De optie voor overwijdte aan de taille bij Diana](./waistease.svg)
+![The waist ease option on Diana](./waistease.svg)
 
-Deze optie bepaalt de hoeveelheid overwijdte aan de taille.
+This option controls the amount of ease at the waist.
