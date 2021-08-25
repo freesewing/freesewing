@@ -1,4 +1,4 @@
 
-![Overwijdte heup](hipsease.svg)
+![Hips ease](hipsease.svg)
 
-De hoeveelheid overwijdte aan je heupen.
+The amount of ease at your hips.
