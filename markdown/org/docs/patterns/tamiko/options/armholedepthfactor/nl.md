@@ -1,2 +1,2 @@
 
-Geeft controle over de diepte van je armsgat, als een factor van je schouder tot schouder maat.
+Controls the depth of your armhole, as a factor of your shoulder to shoulder measurement.
