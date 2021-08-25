@@ -1,4 +1,4 @@
 
-![Plaatsing voorzak](frontpocketplacement.svg)
+![Front pocket placement](frontpocketplacement.svg)
 
-Location of the front pocket as a proportion a quarter of your chest circumference. Een hoger nummer schuift de zak naar opzij.
+Location of the front pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
