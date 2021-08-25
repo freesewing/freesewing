@@ -12,4 +12,3 @@ Look no further than your umbrella for an example. Chances are it's more from a 
 but only with substantial effort, which would not work for our face mask.
 
 </Note>
-
