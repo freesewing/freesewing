@@ -1,6 +1,6 @@
 
-Hoeveel extra hoogte wil je achteraan?
+How much extra rise do you want at the back?
 
-Deze factor zal de taille enkel aan de achterkant van je zwembroek verhogen.
+This factor will raise the waist at the back of your swim trunks only.
 
 > If you want to raise the waist overall, that's what the **rise** option does
