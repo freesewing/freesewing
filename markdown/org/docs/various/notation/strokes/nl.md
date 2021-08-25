@@ -2,13 +2,13 @@
 title: Line widths and strokes
 ---
 
-Ontwerpers kunnen, als ze willen, een andere lijndikte of vorm van lijn kiezen dan de standaard. Dit kunnen ze doen om extra info toe te voegen (zoals waar je een patroon moet plooien, of waar een zak gestikt zou worden).
+Designers can, if they so choose, override the default line widths or set a specific stroke. They might do that to add additional info, like where to fold a pattern, or the outline of where a pocket would go.
 
-Ter referentie zijn hier de verschillende beschikbare lijndiktes:
+For reference, here are the different available line widths:
 
-<Legend part="lineWidths" caption="The different line widths" />
+<Legend part="lineWidths" caption="The different line widths" >
 
-En dit zijn de verschillende types lijnen:
+And these are the different stroke styles:
 
-<Legend part="lineStrokes" caption="The different line strokes" />
+<Legend part="lineStrokes" caption="The different line strokes" >
 
