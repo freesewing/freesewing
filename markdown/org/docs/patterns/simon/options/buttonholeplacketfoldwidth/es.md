@@ -10,4 +10,3 @@ This way, your pattern will match perfectly.
 This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
 
 </Note>
-
