@@ -21,7 +21,7 @@ When in doubt, go for imitation silk. Do make sure to pick something that is a n
 ## Tie interfacing
 Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+Tie interfacing can be notoriously hard to get. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
 
 While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
 
@@ -32,4 +32,3 @@ As long as you keep your tie away from scissors and bondage fanatics, your tie i
 As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
-
