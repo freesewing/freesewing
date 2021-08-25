@@ -1,3 +1,3 @@
-![Overwijdte manchet](cuffease.svg)
+![Cuff ease](cuffease.svg)
 
 How much room do you want at your wrist?
