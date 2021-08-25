@@ -1,4 +1,4 @@
 
-![Hoogte kraag](collarheight.svg)
+![Collar height](collarheight.svg)
 
 Controls the height of the collar.
