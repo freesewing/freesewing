@@ -1,12 +1,12 @@
 ---
-title: Wat je nodig hebt
+title: What you need
 ---
 
 To make Florent, you will need the following:
 
-- Basis naaimateriaal
+- Basic sewing supplies
 - About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/florent/fabric/))
-- Ongeveer 0.5 meter voering
+- About 0.5 meter of lining fabric
 - Tape, a bit more than **head circumference** + **ease** that you used for the pattern
-- Een vel plastic of iets anders plat en stevig voor de klep (1 mm dik of minder)
+- A sheet of plastic or something rigid for the brim (1 mm thick or less)
 
