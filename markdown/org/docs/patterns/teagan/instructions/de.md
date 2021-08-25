@@ -15,7 +15,7 @@ Optional: In a drapier knit, you may choose to reinforce the shoulder seams by s
 ![Set in sleeves](step02.svg)
 
 - Place your now attached front and back with the good side up.
-- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the left.
+- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the left.
 - Place a sleeve on top of the front and back, with the good side down.
 - Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
 - Pin sleeve in place along the entire armhole. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
