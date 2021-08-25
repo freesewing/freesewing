@@ -6,9 +6,9 @@ Designers can, if they so choose, override the default line widths or set a spec
 
 For reference, here are the different available line widths:
 
-<Legend part="lineWidths" caption="The different line widths" />
+<Legend part="lineWidths" caption="The different line widths" >
 
 And these are the different stroke styles:
 
-<Legend part="lineStrokes" caption="The different line strokes" />
+<Legend part="lineStrokes" caption="The different line strokes" >
 
