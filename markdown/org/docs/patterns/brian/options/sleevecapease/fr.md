@@ -9,4 +9,3 @@ Plus l'aisance de tête de manche est grande, plus la manche débordera de la co
 Pour les tissus légers ou la maille, on n'ajoute pas d'aisance de tête de manche. Pour les tissus plus lourds, l'aisance de tête de manche est nécessaire.
 
 </Note>
-
