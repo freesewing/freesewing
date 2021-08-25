@@ -1,7 +1,7 @@
-![Vorm zoom](hemstyle.svg)
+![Hem style](hemstyle.svg)
 
-Wat voor zoom wil je?
+What style of hem line do you want?
 
- - Recht
+ - Straight
  - Baseball
  - Slashed
