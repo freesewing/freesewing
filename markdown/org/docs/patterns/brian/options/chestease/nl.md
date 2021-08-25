@@ -1,3 +1,3 @@
-![De factor voor overwijdte borst bij Brian](./chestease.svg)
+![The chest ease factor on Brian](./chestease.svg)
 
-Deze optie bepaalt hoeveel overwijdte je hebt aan je borst.
+This option controls the ease at your chest.
