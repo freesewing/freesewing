@@ -1,5 +1,5 @@
 ---
-title: Dieses Schnittmuster mit anderen teilen
+title: Share this pattern with others
 ---
 
-Über den Link oben kann jede Person exakt dieses Schnittmuster mit den eigenen Maßen neu erstellen.
+With the link above, anyone can re-create this exact same pattern adjusted to their own measurements.
