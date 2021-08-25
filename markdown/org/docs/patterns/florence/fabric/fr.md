@@ -12,4 +12,3 @@ Ne cherchez pas à utiliser votre parapluie par exemple. C'est probablement un t
 mais seulement avec un effort substantiel, ce qui ne conviendrait pas pour notre masque facial.
 
 </Note>
-
