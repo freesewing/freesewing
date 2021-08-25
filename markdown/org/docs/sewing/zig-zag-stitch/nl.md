@@ -1,13 +1,13 @@
 ---
-title: Zigzagsteek
+title: Zig-zag stitch
 ---
 
-![Een zigzagsteek wordt gebruikt om te voorkomen dat de NT van de jeansstof uitrafelt](zig-zag.jpg)
+![A zig-zag stitch is used to prevent the SA of the denim from fraying](zig-zag.jpg)
 
-Een zigzagsteek is nuttig wanneer je een elastische naar moet naaien (bijvoorbeeld bij het naaien van jersey). Je kan de steek ook decoratief gebruiken, of om de rand van je stof af te werken.
+A zig-zag stitch is useful for when you need to sew a stretchable seam (like when using knits). You can also use it for a decorative effect, or to lock the edge of your fabric.
 
-Aangezien de meeste naaimachines een zigzagsteek kunnen naaien is het een populair alternatief voor wanneer meer gespecialiseerde steken niet beschikbaar zijn.
+As most, if not all, sewing machines can sew a zig-zag stitch, it's a popular alternative for when more specialised stitches are not available.
 
-> Meer info over de zigzagsteek van de favoriete encyclopedie van iedereen: [Zigzag stitch on Wikipedia](http://en.wikipedia.org/wiki/Zigzag_stitch)
+> Everyone's favourite encyclopedia has more on the zig-zag stitch: [Zigzag stitch on Wikipedia](http://en.wikipedia.org/wiki/Zigzag_stitch)
 
-> Foto door [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
