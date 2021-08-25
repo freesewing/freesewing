@@ -13,5 +13,3 @@ Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour 
 
 </Note>
 
-
-
