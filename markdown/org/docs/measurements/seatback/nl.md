@@ -1,9 +1,9 @@
 ---
-title: Zitvlak achterkant
+title: Seat back
 ---
 
-**Zitvlak achter** is het achterste deel van de omtrek van je zitvlak.
+The **seat back** is the back portion of your seat circumference.
 
-Om je **zitvlak achter** te meten hou je de lintmeter rond het volste deel van je kont, en check je de lengte van de achterkant.
+To measure your **seat back**, run the tape measure around your bum at the fullest part, and check the length of the back part.
 
-Zorg dat de lintmeter horizontaal blijft. Met andere woorden, parallel met de vloer.
+Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
