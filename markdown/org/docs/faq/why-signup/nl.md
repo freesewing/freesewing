@@ -1,18 +1,19 @@
 ---
-title: Waarom heb ik een account nodig om een patroon op maat te downloaden?
+title: Why do I need to create an account to download a made-to-measure pattern?
 ---
 
-Om praktische redenen. Om naaipatronen op maat te maken, hebben we je maten nodig.
+For practical reasons. To generate made-to-measure sewing patterns, we need your measurements.
 
-Het zou vervelend zijn om je die elke keer opnieuw te vragen, dus willen we die informatie opslaan. Daar dient je account voor.
+Asking for them every time would be rather tedious, so we need to store this information. And your account is where we do that.
 
-Als we geen manier hadden om je maten op te slaan, zou het hopeloos onpraktisch zijn om patronen op maat te genereren.
+Without a way to store your measurements, generating made-to-measure patterns would be hopelessly inpractical.
 
 <Note>
 
-##### Vraag je ernaar omdat je ons niet vertrouwt?
+##### Are you asking because you don't trust us?
 
-Deze vraag wijst vaak op wantrouwen bij de aanmaak van een account. As such, the following links may also be relevant:
+This question often hints at an underlying distrust towards
+creating an account. As such, the following links may also be relevant:
 
  - Read [our privacy notice][1]
  - Learn more about [your rights][2]
