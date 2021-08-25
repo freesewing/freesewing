@@ -1,4 +1,4 @@
 ![Bow length](bowlength.svg)
 
-Je kan brede strikken maken, of voor smaller gaan. Deze optie laat toe de horizontale maat van de strik aan de passen. Maak de strik groter en flamboyanter, of kleiner voor een subtieler effect. (voor zover een vlinderdas subtiel is)
+You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
 
