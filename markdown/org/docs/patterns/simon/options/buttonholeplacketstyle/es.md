@@ -13,4 +13,3 @@ Seamless is less work, and it looks great.
 As seamless is only possible on a *cut-on* placket, this option is ignored if you choose a seperate buttonhole placket.
 
 </Note>
-
