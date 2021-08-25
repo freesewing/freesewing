@@ -1,7 +1,7 @@
 ---
-title: Dit is een verouderd patroon
+title: This is a legacy pattern
 ---
 
-Dit patroon werd gemaakt met een oudere versie van FreeSewing en is niet compatibel met de huidige versie.
+This pattern was made with an older version of FreeSewing and is not compatible with the current version.
 
-Klik op de knop hieronder op dit patroon opnieuw te creëren in de huidige versie. Als het opnieuw uit elkaar valt zullen we de stukjes oprapen en aanbieden om een bug te rapporteren.
+Click the button below to try and re-create this pattern in the current version. If it falls apart again, we'll pick up the pieces and offer to submit a bug report.
