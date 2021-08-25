@@ -14,10 +14,9 @@ To make Holmes, you will need the following:
 <Note>
 
 Depending on style the ties and buttons are optional.  
-- If you are making Buttonhole Ear Flaps you can omit the ties.  
-- If you are making Tie Ear Flaps you can omit the button.  
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))  
+If you are making Buttonhole Ear Flaps you can omit the ties.  
+If you are making Tie Ear Flaps you can omit the button.  
+Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))  
 - You can also use different width and type ribbons for the ties if you prefer.
 
 </Note>
-
