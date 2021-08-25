@@ -16,4 +16,3 @@ Sven is a very simply pattern, and consists of two main parts plus some strips f
 The ribbing parts are not included on the pattern because they're just rectangular.
 
 </Warning>
-
