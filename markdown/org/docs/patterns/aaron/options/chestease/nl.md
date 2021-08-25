@@ -1,11 +1,11 @@
-![De optie voor overwijdte aan de borst bij Aaron](./chestease.svg)
+![The chest ease option on Aaron](./chestease.svg)
 
-Hoeveel ruimte wil je rond je borstkas?
+How much room do you want at the chest?
 
-De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen van het patroon.
+Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
 
-> Aangezien het hemdje geen mouwen heeft heb je niet veel extra ruimte nodig. Als je te veel toevoegt riskeer je te eindigen met gapende armsgaten.
+> Given that an undershirt has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
 
-> ##### Deze optie laat ook negatieve waarden toe
+> ##### This option also allows negative values
 > 
-> Pas alleen negatieve waarden toe als je elastisch materiaal gebruikt en wil dat het aansluitend past. Algemene stretch zou moeten aangepast worden met de **stretch** optie.
+> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the **stretch** option.
