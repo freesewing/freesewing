@@ -77,6 +77,7 @@ Align them with _good sides together_ (\*) and sew the facing in place.
 
 Do you want the good side to be what you feel when you put your hand in your pocket?
 Or do you want it to be what you see when your trousers lie on the floor with their insides showing.
+Or do you want it to be what you see when your trousers lie on the floor with their insides showing.
 
 There's no right or wrong answer here. You do you.
 
