@@ -12,4 +12,3 @@ This option allows you to mitigate that, without dramatic changes to the pattern
 It allows you to simply raise the back of the trousers.
 
 </Note>
-
