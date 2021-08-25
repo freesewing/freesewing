@@ -1,0 +1,4 @@
+---
+title: Number of gores
+---
+
