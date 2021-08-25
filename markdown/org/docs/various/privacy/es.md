@@ -40,6 +40,9 @@ A more comprehensive overview of this document's history is [available on GitHub
 
 ##### See also
 
- - [Your rights](/docs/various/right/)
- - [Your consent](/account/actions/consent/)
+ - [Your rights][2]
+ - [Your consent][3]
+
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
 
