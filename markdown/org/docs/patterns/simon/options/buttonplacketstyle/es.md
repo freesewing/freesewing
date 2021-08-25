@@ -14,5 +14,3 @@ As seamless is only possible on a *cut-on* placket, this option is ignored if yo
 
 </Note>
 
-
-
