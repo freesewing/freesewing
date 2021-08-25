@@ -1,5 +1,5 @@
 ---
-title: Naadtoeslag
+title: Seam allowance
 ---
 
 This controls whether you want _seam allowance_ or not. And, if you want it, how much you want.
