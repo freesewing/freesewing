@@ -1,2 +1,2 @@
 
-De lengte van de schoudernaad, als een factor van je schouder tot schouder maat.
+The length of the shoulder seam, as a factor of your shoulder to shoulder measurement.
