@@ -1,11 +1,11 @@
 ---
-title: Naadtoeslag
+title: Seam allowance
 ---
 
-Naadwaarde wordt aangegeven door een stippellijn, met dezelfde dikte en kleur als de naad die erbij hoort:
+Seam allowance is indicated by a dashed line, that has the same width and color as the seam they belong to:
 
-<Legend part="saLines" caption="Seam allowance for different fabric types" />
+<Legend part="saLines" caption="Seam allowance for different fabric types" >
 
-Merk op dat de hoeken van de naadwaarde bijgesneden zijn, en niet doorlopen:
+Note that the corners of the seam allowance are trimmed, and not extended:
 
-<Legend part="sa" caption="A trimmed seam allowance corner" />
+<Legend part="sa" caption="A trimmed seam allowance corner" >
