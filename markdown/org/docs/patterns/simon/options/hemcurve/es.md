@@ -9,4 +9,3 @@ How much do you want the hem to curve upwards?
  - If you set this to zero, you'll get a straight hem regardless of what hem style you pick.
 
 </Note>
-
