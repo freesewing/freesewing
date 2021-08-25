@@ -13,4 +13,3 @@ And in the middle between these will be the little cut-out pattern piece.
 Make sure you measure this correctly, and you have the fabric squared before you start cutting.
 
 </Tip>
-
