@@ -1,6 +1,6 @@
-## Tips en opmerkingen
+## Notes and tips
 
-### Voering
+### Lining
 
 Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
 
@@ -20,11 +20,11 @@ Traditionally, an invisible zipper is used in a pencil skirt. Lately there has b
 
 A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
 
-### Nepen
+### Darts
 
 Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
 
-## Constructie
+## Construction
 
 We're not going into a full explanation here on how to create all the individual details that make up a pencil skirt. We assume that you know how to sew a dart, insert an invisible zipper, make a vent, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
 
