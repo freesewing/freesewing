@@ -1,3 +1,3 @@
-![Bonus mouwlengte](sleevelengthbonus.svg)
+![Sleeve length bonus](sleevelengthbonus.svg)
 
-Hoeveel extra lengte wil je aan je mouwen?
+How much extra length do you want for your sleeves?
