@@ -2,12 +2,10 @@
 title: Was sind diese Symbole neben meinen Maßen?
 ---
 
-import Gauge from '../../../../../src/components/measurements/gauge.js'
-
-Dir sind vielleicht diese Art von Symbolen neben deinen Maßen aufgefallen:
+You might have noticed these kind of icons next to your measurements:
 <Gauge val={0} theme='light' />
 
-Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Proportionen abweichen, mit denen wir unsere Designs testen:
+The value they represent shows how far the measurement deviates from the proportions we test our designs with:
 
 <table spaces-before="0">
   <tr>
@@ -102,7 +100,7 @@ Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Propor
 </table>
 
 
-Diese Indikatoren dienen einem doppelten Zweck:
+These indicators serve a dual purpose:
 
  - Es soll dir dabei helfen, Messfehler in deinen Maßen zu finden (du weißt sicher selber am besten, wo deine Ausreißer sind)
  - Es soll dir dabei helfen, im Voraus abzuschätzen, wo unsere Software vielleicht Probleme haben könnte, ein gutes Ergebnis zu liefern
