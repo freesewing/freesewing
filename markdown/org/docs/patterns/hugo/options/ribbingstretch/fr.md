@@ -10,4 +10,3 @@ Si vous n'êtes pas sûr de ce qu'il faut choisir, le mieux est de prendre le ru
 vous devez vous étirer pour atteindre 10 cm avec une *bonne* élasticité.
 
 </Note>
-
