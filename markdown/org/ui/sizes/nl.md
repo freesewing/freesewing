@@ -1,6 +1,6 @@
 ---
-title: Maak een account aan om naaipatronen op maat te genereren
+title: Create an account to generate made-to-measure sewing patterns
 ---
 
-Als je het meeste uit ons platform wil halen maak je best [een account](/signup/) aan zodat je naaipatronen op maat kan genereren. 
+To get the most out of our platform, you should [sign up](/signup/) so you can generate made-to-measure sewing patterns. 
 
