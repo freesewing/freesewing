@@ -26,7 +26,7 @@ Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Propor
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">signifikant niedriger</strong>
+      Der Wert ist <strong x-id="1">ein bisschen niedriger</strong>
     </td>
   </tr>
   
@@ -46,7 +46,7 @@ Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Propor
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">ein bisschen niedriger</strong>
+      Der Wert ist <strong x-id="1">ein bisschen höher</strong>
     </td>
   </tr>
   
@@ -76,7 +76,7 @@ Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Propor
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">ein bisschen höher</strong>
+      Der Wert ist <strong x-id="1">signifikant niedriger</strong>
     </td>
   </tr>
   
