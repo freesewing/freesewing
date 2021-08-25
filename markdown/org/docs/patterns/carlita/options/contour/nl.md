@@ -1,4 +1,4 @@
 
-Bepaalt hoe scherp de prinsessennaad naar binnen keert zodra ze voorbij het volste punt van de borst komt.
+Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
 
-Een hoge factor maakt de curve zachter, met als resultaat een minder aansluitende naad en een jas die makkelijker te naaien is. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
