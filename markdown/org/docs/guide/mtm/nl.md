@@ -5,7 +5,7 @@ order: 200
 
 All of our sewing patterns are **made to measure**.
 
-We don’t scale or grade patterns. In plaats daarvan maken we het patroon volgens jouw maten. Dat gebeurt in real-time, in je browser.
+We don’t scale or grade patterns. Instead, we draft the pattern to your measurements. That happens in real-time, in your browser.
 
 <Note>
 
