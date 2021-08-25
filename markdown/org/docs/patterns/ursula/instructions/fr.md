@@ -42,7 +42,7 @@ Turn the undies right side out. All gusset seams should be enclosed.
 
 Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
 
-![Sew the side seams](etape 7)
+![![Sew the side seams](etape 7)](step07.png)
 
 <Note>
 
