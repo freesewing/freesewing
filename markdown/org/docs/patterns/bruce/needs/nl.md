@@ -1,7 +1,7 @@
-Om Bruce te maken heb je het volgende nodig:
+To make Bruce, you will need the following:
 
-- Basis naaimateriaal
+- Basic sewing supplies
 - About 1 meter of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
-- Genoeg brede (3 cm of breder) elastiek om rond je taille te kunnen
-- Een overlock, alhoewel je kan overleven zonder
+- Enough wide (3cm or wider) elastic to fit around your waist
+- A serger, although you can survive without one
 
