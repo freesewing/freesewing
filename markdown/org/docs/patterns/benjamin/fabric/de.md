@@ -6,7 +6,7 @@ Seide und Seidenimitat sind rutschig und schwierig zu verarbeiten. Das kann mit 
 
 ## Einlage
 
-Je nach gewähltem Oberstoff für die Fliege wirst du wahrscheinlich etwas Einlage brauchen. Einlage gibt es meistens in zwei Varianten: Bügeleinlage und Einlage zum Einnähen.
+Depending on the fabric you chose for your bow tie, you will probably need interfacing. Interfacing comes in two main types: fusible and sew-in.
 
 Bügeleinlage hat eine Art Kleber auf einer Seite, der durch die Hitze deines Bügeleisens aktiviert wird. Dies befestigt die Einlage am Stoff und die beiden können zusammen verwendet werden, als wären sie nur eine Lage. Bügeleinlage kann eine gute Option sein, wenn dein Stoff der Hitze widerstehen kann und du eine Einlage guter Qualität verwendest. Bei einigen Bügeleinlagen geringerer Qualität kann es vorkommen, dass sich der Kleber löst, was sich dann später im Leben deiner Fliege als Blasen auf der Oberfläche des Oberstoffes bemerkbar macht. Bei Verwendung von Bügeleinlage guter Qualität und bei korrekter Anbringung werden diese Probleme nicht auftreten.
 
