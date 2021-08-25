@@ -1,8 +1,8 @@
-Om Sven te maken heb je het volgende nodig:
+To make Sven, you will need the following:
 
-- Basis naaimateriaal
-- Ongeveer 1.75 meter geschikte stof ([zie Optionele stoffen](#fabric-options))
-- Boordstof voor de manchetten en halsopening
+- Basic sewing supplies
+- About 1.75 meter of a suitable fabric ([see Fabric options](#fabric-options))
+- Ribbing fabric for the cuffs and neck opening
 
 <Note>
 
@@ -10,8 +10,7 @@ Om Sven te maken heb je het volgende nodig:
 
 As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
 
-Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. 
-Omdat deze zij- en schoudernaden niet echt uitgerokken worden kan je ze gewoon stikken met een rechte steek of een smalle zigzagsteek.
+If you do not have one of those, don't despair. You don't really need it. 
+Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
 
 </Note>
-
