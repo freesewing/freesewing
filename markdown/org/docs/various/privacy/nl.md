@@ -1,19 +1,19 @@
 ---
-title: Privacy melding
+title: Privacy notice
 ---
 
 **Last update**: 8 January 2021
 
-Deze privacy melding beschrijft de persoonlijke gegevens die we opslaan. We geven aan waarom we de gegevens nodig hebben, hoe lang we ze bijhouden en of ze met derden gedeeld worden.
+This privacy notice describes the personal data we store. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties.
 
-We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden.
+We are confident it will demonstrate our commitment to privacy.
 
 For clarity, we've broken this up in four different types of roles:
 
- - For **visitors of our website**, we store **[visitor data](/docs/various/privacy/visitor/)**
- - For **subscribers to our newsletter**, we store **[subscriber data](/docs/various/privacy/subscriber/)**
- - For **users with an account** on our website, we store **[account data](/docs/various/privacy/account/)**
- - For **users with an account that contains people**, we store **[people data](/docs/various/privacy/people/)**
+ - For **visitors of our website**, we store **[visitor data][v]**
+ - For **subscribers to our newsletter**, we store **[subscriber data][s]**
+ - For **users with an account** on our website, we store **[account data][a]**
+ - For **users with an account that contains people**, we store **[people data][p]**
 
 Here are the relevant sections:
 
@@ -24,7 +24,7 @@ Here are the relevant sections:
 ##### These roles are typically cumulative
 
 If you are a newsletter subscriber, you are also a visitor.
-En als je een gebruiker bent met één of meer modellen ben je ook een gebruiker, en een bezoeker.
+And if you are a user with one or more models, you are also a user, and also a visitor.
 
 </Tip>
 
@@ -36,10 +36,18 @@ For questions about this privacy notice, you can contact Joost De Cock at joost@
 
 This policy may be updated occasionally. We will indicate this in the **Last update** data at the top of this document.
 
-A more comprehensive overview of this document's history is [available on GitHub](https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy)
+A more comprehensive overview of this document's history is [available on GitHub][1]
 
 ##### See also
 
- - [Je rechten](/docs/various/right/)
- - [Your consent](/account/actions/consent/)
+ - [Your rights][2]
+ - [Your consent][3]
+
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
+[v]: /docs/various/privacy/visitor/
+[s]: /docs/various/privacy/subscriber/
+[a]: /docs/various/privacy/account/
+[p]: /docs/various/privacy/people/
 
