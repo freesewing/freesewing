@@ -1,3 +1,3 @@
-![Breedte mouwsplit](sleeveplacketwidth.svg)
+![Sleeve placket width](sleeveplacketwidth.svg)
 
-Hoe breed wil je dat het mouwsplit is?
+How wide do you want the sleeve placket to be?
