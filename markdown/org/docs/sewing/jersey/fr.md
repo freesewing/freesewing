@@ -2,7 +2,7 @@
 title: Jersey
 ---
 
-![Un morceau de jersey gris](tricot-fabric.jpg)
+![Un morceau de jersey gris](knit-fabric.jpg)
 
 Le Jersey est une sorte de tissu maille (tricoté). Le Jersey a un côté avec les mailles en V (l'endroit) et un côté avec les mailles empilées en petits U (l'envers), et est souvent utilisé pour les T-shirts.
 
