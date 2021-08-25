@@ -19,7 +19,7 @@ Our [developer documentation](https://freesewing.dev) is available on [freesewin
 
 #### Want to help out?
 
-Geweldig ❤️   
-Onze [documentatie voor bijdragers](https://freesewing.dev/contributors/) is een goed vertrekpunt. We hebben ook specifieke handleidingen voor [vertalers](https://freesewing.dev/translators/) en [editors](https://freesewing.dev/editors/).
+Awesome ❤️   
+Our [contributor documentation](https://freesewing.dev/contributors/) is a good starting point. We also have dedicated guides for [translators](https://freesewing.dev/translators/) and [editors](https://freesewing.dev/editors/).
 
 Last but not least, [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
