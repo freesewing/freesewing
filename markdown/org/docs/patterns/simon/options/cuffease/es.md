@@ -12,5 +12,3 @@ Those wanting to wear their shirt under a sweater should also have a look at the
 
 </Note>
 
-
-
