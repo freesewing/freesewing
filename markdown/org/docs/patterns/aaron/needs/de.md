@@ -14,4 +14,3 @@ If you do not have one of those, don't despair. You don't really need it.
 Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
 
 </Note>
-
