@@ -10,4 +10,3 @@ Hay muchas telas llamadas transpirables impermeables, que se usan para ropa de e
 Mira por ejemplo un paraguas. Lo más probable es que sea una tela a través de la que puedas respirar, pero con bastante esfuerzo, lo que no funcionaría para nuestra mascarilla.
 
 </Note>
-
