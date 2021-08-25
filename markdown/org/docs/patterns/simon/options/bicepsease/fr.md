@@ -19,6 +19,3 @@ Nous nous efforcerons de respecter votre choix ici, mais la priorité est d'ajus
 </Warning>
 
 
-
-
-
