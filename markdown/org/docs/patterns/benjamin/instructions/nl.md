@@ -1,14 +1,14 @@
-## Tips en opmerkingen
+## Notes and tips
 
-### Precisie
+### Precision
 
 Since a bow tie is a rather small item, precission with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
-### Strijk wijs
+### Press wisely
 
-Tijdens de constructie zal gevraagd worden je stof te strijken. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-Het is een goed idee om een paar restjes stof te strijken voor je begint. This will allow you to figure out what is a good heat setting for the fabric you are using.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 ### Choosing your grain
 
@@ -27,22 +27,22 @@ This pattern allows you to make a bow tie that is the right length for a certain
 
 These ribbons can be found in the better haberdasheries or can be ordered online.
 
-### Naadtoeslag
+### Seam allowance
 
 Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
 
-## Constructie
+## Construction
 
 ### Step 1: Apply interfacing
 
 Apply interfacing to all parts where you feel it's needed.
 
-### Zonder aanpaslintje
+### Without adjustment ribbon
 
-#### Stap 2: Naai de knoop aan de kraagband
+#### Step 2: Sew the knot to the collar band
 
-Put the collar band part on the bow tie knot part, right sides together. Leg de uiteindes van beide delen gelijk. Now sew across the end to join the parts.
+Put the collar band part on the bow tie knot part, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
 
 ![Sew the collar band to the knot](step12.png)
 
@@ -52,13 +52,13 @@ Press open all the seams.
 
 You now have two identical single sided bow ties.
 
-#### Stap 3: Bevestig twee kanten
+#### Step 3: Join both sides
 
 ![Sew both sides together](step13.png)
 
 Lay both the sides you made on top of each other, right sides together. Sew all along, but leaving an area of 5cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
-#### Stap 4: Keren
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -68,7 +68,7 @@ Then use the back of a large crochet hook, or some other appropriately long skin
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
-#### Stap 5: Sluiten
+#### Step 5: Closing
 
 ![Closing the bow tie](step15.png)
 
@@ -76,9 +76,9 @@ Now all that is left is closing the litle hole we used to turn the bow tie right
 
 Now give it one last press and admire your work.
 
-### Met aanpaslintje
+### With adjustment ribbon
 
-#### Stap 2: Lintje bevestigen
+#### Step 2: Attaching the ribbon
 
 ![Sew the ribbon to part 1](step22.png)
 
@@ -88,7 +88,7 @@ Put right sides of the short bow piece and the ribbon together.
 
 Now sew across the end to join the parts.
 
-#### Stap 3: Bevestig twee kanten
+#### Step 3: Join both sides
 
 ![Sew both sides together](step23.png)
 
@@ -96,7 +96,7 @@ Lay both the parts of the medium bow on top of each other, right sides together.
 
 Sew all along, but leave the short ends open. Through these openings we will turn the bow tie parts right side out.
 
-#### Stap 4: Keren
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -108,7 +108,7 @@ Once you have the part right side out, make sure you push all the corners and si
 
 Do this with both parts.
 
-#### Stap 5: Voeg hardware toe
+#### Step 5: Add hardware
 
 Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval looking piece will be attached to the part without the adjustment ribbon. And the piece with the T shaped attachment will go on the part with the ribbon.
 
