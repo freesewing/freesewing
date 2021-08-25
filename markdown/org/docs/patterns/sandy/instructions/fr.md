@@ -5,4 +5,3 @@
 The documentation for this pattern is yet to be written.
 
 </Note>
-
