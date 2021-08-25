@@ -11,5 +11,3 @@ This influences the style of the waistcoat.
 
 </Note>
 
-
-
