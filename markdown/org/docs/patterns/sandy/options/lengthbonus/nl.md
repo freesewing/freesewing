@@ -1,4 +1,4 @@
 
-![Bonus lengte](lengthbonus.svg)
+![Length bonus](lengthbonus.svg)
 
-De lengte van de rok.
+The length of the skirt.
