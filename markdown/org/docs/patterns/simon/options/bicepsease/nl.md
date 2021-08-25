@@ -1,24 +1,21 @@
-![Overwijdte biceps](./bicepsease.svg)
+![Biceps ease](./bicepsease.svg)
 
-Hoeveel wijder dan je bovenarmomtrek wil je dat de mouw is?
+How much do you want the sleeve to be wider than your upperarm circumference?
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Het zijn juist mannen met grote armen die liever een aansluitende pasvorm, en dus minder overwijdte willen. Dit is omdat een strakke mouw de aandacht vestigt op hun sterke bovenarmen.
+It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
 
-Als je bovenarmen wat mager zijn wil je hier misschien een beetje extra stof om alles wat te balanceren.
+If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
 
 </Note>
 
 <Warning>
 
-We proberen je keuze hier te respecteren, maar onze prioriteit is zorgen dat de mouw in het armsgat past.
+We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
 
 </Warning>
-
-
-
 
 
