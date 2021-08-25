@@ -1,3 +1,3 @@
-![De factor voor overwijdte pols bij Brian](./cuffease.svg)
+![The cuff ease factor on Brian](./cuffease.svg)
 
-Deze optie bepaalt de hoeveelheid overwijdte aan je pols.
+This option controls the ease at your wrist.
