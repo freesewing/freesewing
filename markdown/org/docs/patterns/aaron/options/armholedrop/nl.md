@@ -1,5 +1,5 @@
-![De diepte van het armsgat bij Aaron](./armholedrop.svg)
+![The armhole drop option on Aaron](./armholedrop.svg)
 
-Hoeveel lager het armsgat wordt dan de standaard.
+How much to lower the armhole below the default amount.
 
-> Deze optie laat negatieve waarden toe. Deze zullen, logischerwijze, het armsgat met die waarde verhogen.
+> This option also allows negative values. They will, obviously, raise the armhole by said amount.
