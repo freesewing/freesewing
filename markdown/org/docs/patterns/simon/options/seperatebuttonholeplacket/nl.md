@@ -1,3 +1,3 @@
-![Apart knoopsgatenpat](seperatebuttonholeplacket.svg)
+![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
 
-Kies of je het knoopsgatenpat als apart patroondeel wil.
+Whether or not you want the buttonhole placket to be a seperate pattern part.
