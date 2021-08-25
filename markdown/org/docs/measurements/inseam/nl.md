@@ -1,5 +1,5 @@
 ---
-title: Binnenbeennaad
+title: Inseam
 ---
 
 The **inseam** is the measurement from your crotch down to the floor.
