@@ -1,10 +1,10 @@
 
-Hoeveel extra ruimte wil je in de mouwkop?
+How much sleevecap ease do you want?
 
-> #### Waarom?
+> #### What's the point?
 > 
 > The amount of sleevecap ease determines how the sleeves rolls from the shoulder.
 > 
-> Meer ruimte zorgt voor een ronde mouwkop, zoals je zou zien op een jas. Minder ruimte geeft de mouw een platter aanzicht.
+> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
 
-> Hoe lichter je stof, hoe minder extra ruimte je wil toevoegen.
+> The lighter your fabric, the less sleevecap ease you want.
