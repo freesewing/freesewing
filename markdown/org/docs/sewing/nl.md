@@ -1,5 +1,5 @@
 ---
-title: Naaien
+title: Sewing
 order: 300
 ---
 
