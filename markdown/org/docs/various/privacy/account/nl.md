@@ -25,6 +25,6 @@ order: 30
 - No, never.
 
 <Note>
-Deze gegevens worden opgeslagen voor iedereen met een account op onze website.
+This data is stored for anybody with an account on our website.
 </Note>
 
