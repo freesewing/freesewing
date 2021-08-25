@@ -1,78 +1,78 @@
-Elke stoffenwinkel die je tijd waard is zou een afdeling hemdstoffen moeten hebben. Je kan binnenwandelen, vragen waar de hemdstoffen zijn, en iets kiezen dat je mooi vindt.
+Any fabric shop that is worth your business should have a shirting section. You can just walk in, ask where you can find the shirting, and pick out something you like.
 
-Meestal zullen dit katoenen stoffen zijn, of een mengeling van katoen en iets anders. Maar ga gerust voor een andere vezel.
+Most of what you'll find there will be cotton, or a blend of cotton. But you're free to go for another fiber too.
 
-Als je online winkelt is het soms moeilijker om te weten wat je juist koopt. Als je de stoffen niet kan aanraken helpt het om iets te weten over verschillende weefsels. Het weefsel slaat of hoe de stof geweven is, en dit bepaalt niet alleen hoe ze eruit ziet, maar ook hoe ze zal voelen en vallen.
+When shopping online, it can be harder to get a good idea of what you're looking at. In the absence of touch, it's good to know a thing or two about the different weaves of fabrics. The weave is how the fabric was woven, and this determines not only how the fabric looks, but also how it will feel and drape.
 
-Ik heb niet meteen de ambitie om hier een stoffenencyclopedie te starten, maar hier zijn een aantal termen die je kan tegenkomen als je online hemdstoffen koopt.
+Without wanting to start an encyclopedia of fabrics here, here are some terms you may come across when shopping for shirt fabric online.
 
-## Laken of popeline
+## Broadcloth or poplin
 
-Laken is dé keuze voor dat ene witte hemd voor je sollicitatiegesprek, of huwelijk.
+Broadcloth is the way to go for that white shirt for your job interview or wedding.
 
-Laken (soms ook popeline genoemd) is een eenvoudig weefsel dat een gladde effen stof produceert, wat voor die kraaknette formele look zorgt.
+Broadcloth (frequently referred to as poplin) is a simple weave and results in a flat plain fabric that will give you that crisp formal look.
 
-Het is vaak een lichtere stof en kan een beetje transparant zijn, vooral als het een lichte kleur is.
-
-
-## Keper
-
-Je herkent keperstoffen aan hun typische diagonale textuur.
-
-Het valt een beetje soepeler dan laken, kreukt minder en is makkelijker te strijken.
-
-Het nadeel is wel dat het er nooit zo glad en gesteven zal uitzien als laken.
+It's typically a lighter fabric and in light colours can tend to be a bit transparent.
 
 
-## Oxford
+## Twill
 
-Oxford is een echte muilezel onder de hemdstoffen. De stof is meestal iets zwaarder en dikker, en dus ook duurzamer.
+You can recognize twill fabrics by their characteristic diagonal texture from the weave.
 
-Oxford is minder formeel dan laken of keper. Dit, samen met de duurzaamheid, maken het een goede keuze voor je dagelijkse werkhemden.
+It drapes more easily than broadcloth, wrinkles less and when it does, is easier to iron.
+
+The flip side of the coin is that it won't give you that starchy crisp vibe that broadcloth can.
+
+
+## Pinpoint
+
+Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
+
+Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
 
 
 ## Chambray
 
-Chambray heeft een eenvoudige platbinding, gelijkaardig aan laken. Het verschilt omdat het een veel zwaarder garen gebruikt, en meestal verschillende kleuren voor de schering en inslag.
+Chambray is simple weave, similar to broadcloth. It is different because it uses a much heavier yarn, and typically different colours for the weft and width.
 
-Het resultaat is een stof met veel meer textuur, zowel qua aanvoelen als het tweekleurige effect van het weefsel.
+The result is a much more textured fabric, both in touch as appearance where the different colours create a densely speckled two-coloured fabric.
 
 
 ## Denim
 
-Denim heeft geen introductie nodig. Het is het spul waar je jeans van gemaakt is.
+Denim needs no introduction. It's the stuff your jeans are made from.
 
-Gewoonlijk een keperstof (kijk uit voor de typische diagonale textuur) die soms ook in een veel lichtere versie dan die van je jeans gemaakt wordt. Dat zijn de soorten die je voor een hemd kan gebruiken.
-
-
-## Flanel
-
-Van Kurt Cobain tot de hipsters in je lokale koffiebar, ze zweren allemaal bij (geruite) flanellen hemden.
-
-Dit is de warmste van alle opties hier, en wordt meestal gemaakt van opgeruwd katoen. Soms vind je ook wollen versies.
+Technically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weights than the ones your jeans are made from. Those are the ones you can use for a shirt.
 
 
-## Linnen
+## Flannel
 
-Linnen kreukt als je ernaar wijst, maar het is een perfecte kandidaat voor safari looks.
+From Curt Cobain to the hipsters at your local coffee shop, they all swear by flannel shirts.
 
-De reden waarom je deze stof associeert met avonturen in de tropen is dat linnen ongelooflijk goed ademt en je huidje koel zal houden.
-
-
-## Draaddichtheid
-
-Een hogere draaddichtheid betekent een gladdere (en duurdere) stof.
-
-Draaddichtheid wordt in nummers uitgedrukt, zoals 60, 80, 100 enzovoort tot 300 en meer.
-
-Er zit wel een addertje onder het gras. Draaddichtheid boven de 100 wordt meestal verkregen door twee garens samen te twijnen. Bijvoorbeeld: een draaddichtheid van 160 betekent dat twee garens van 80 samen verwerkt werden tot één garen.
+Warmer than any other option here, flannel comes typically in brushed cotton though you might find it with added wool for extra warmth.
 
 
-## Eendraads of tweedraads
+## Linen
 
-Als een draad gemaakt is van twee garens (zie Draaddichtheid hierboven) noemen we dat tweedraads.
+Linen wrinkles like a mofo, but you can't beat it for safari looks.
 
-Als de draad gemaakt is van een enkel garen wordt dat eendraads genoemd.
+The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
 
-Zoals te verwachten is tweedraads duurzamer, en duurder.
+
+## Thread count
+
+A higher thread count means a smoother (and more expensive) fabric.
+
+Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and more.
+
+There's a catch though. Numbers above 100s are typically made by twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
+
+
+## Single ply or Two ply
+
+If a thread is made up of two yarns (see thread count above) we call that Two ply.
+
+If the yarn is made up of a single thread, it's call Single ply.
+
+You can expect two ply to last longer, and be more expensive.
 
