@@ -100,7 +100,7 @@ Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretc
 
 ### Step 7: Finish edge inside front pocket
 
-![Finish the edge inside the front pocket](etape 7)
+![![Finish the edge inside the front pocket](etape 7)](step07.png)
 
 Fold away the main part of the front piece, so you can place the lining, pocket bag and folded edge of the front piece flat.
 
