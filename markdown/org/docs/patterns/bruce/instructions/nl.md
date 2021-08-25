@@ -87,11 +87,11 @@ Arguably, not having an exposed seam in this area is more comfortable for the we
 </Tip>
 
 ### Step 6: Optional: Topstitch
-![Boxershort met (links) en zonder sierstiksel](step06.jpg)
+![Boxers with (left) and without topstitching](step06.jpg)
 
 <Note>
 
-Deze stap is optioneel. Topstitching adds a visual effect that emphasizes the individual pattern pieces.
+This step is optional. Topstitching adds a visual effect that emphasizes the individual pattern pieces.
 It's nice to visually break up a solid fabric, but if you're using a print, or when you're colour-blocking, you might want to not topstitch.
 
 </Note>
@@ -119,7 +119,7 @@ Align the side edge of the first side with the edge made up of the fronts+inset 
 Do the same for the second side.
 
 ### Step 9: Optional: Topstitch
-![Boxershort met (links) en zonder sierstiksel](step06.jpg)
+![Boxers with (left) and without topstitching](step06.jpg)
 
 If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
 
