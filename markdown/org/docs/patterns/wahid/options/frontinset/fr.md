@@ -10,4 +10,3 @@ The armhole of your waistcoat can curve further inward, given that there is no s
 This influences the style of the waistcoat.
 
 </Note>
-
