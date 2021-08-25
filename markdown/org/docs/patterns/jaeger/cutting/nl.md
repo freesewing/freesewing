@@ -1,4 +1,4 @@
- - **Buitenstof**
+ - **Main fabric**
    - Cut **2 fronts** (part 1)
    - Cut **2 front facings** (look for the facing/lining boundary on the front part)
    - Cut **2 backs** (part 2)
@@ -9,7 +9,7 @@
    - Cut **1 collarstand** (part 8)
    - Cut **2 pockets** (part 9)
    - Cut **1 chest pocket welt** (part 10)
- - **Voering**
+ - **lining fabric**
    - Cut **2 fronts** (part 1)
    - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
    - Cut **2 backs** (part 2)
@@ -19,10 +19,10 @@
    - Cut **2 chest pocket bags** )(part 11)
    - Cut **2 inner pocket welts**
    - Cut **2 inner pocket bags** (part 13)
- - **Haardoek**
+ - **Canvas**
    - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
-   - Cut **2 chest pieces** on bias. Kijk naar de markering op het voorpand. Opmerking: voeg geen naadwaarde toe
- - **Stof voor de onderkraag**
+   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
+ - **Undercollar fabric**
    - Cut **1 undercollar** (part 7)
 
 <Note>
@@ -30,9 +30,9 @@
 ###### Good sides together, or precise pattern matching?
 
 When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-Als ik echter een stof met een patroon gebruik knip ik ze liever apart zodat ik meer controle heb over de plaatsing van het patroon.
+However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
 
-Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus draai of je patroondeel of je stof om als je een tweede deel knips.
+When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
 
 </Note>
 
@@ -42,9 +42,8 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
  - The chest piece is marked on the front.
  - Don't include seam allowance when cutting out canvas, and cut it on bias.
- - The front facing and lining is marked on the front piece. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ - The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
 
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
-
