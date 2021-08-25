@@ -1,7 +1,7 @@
 
 <Note>
 
-Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
+Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
 In this particular case, there's a lot of video material available, but it was originally recorded for a previous version of this pattern. Still, good stuff.
 
@@ -35,7 +35,7 @@ Close the dart by sewing from the waistband down to the end of the dart.
 
 Use a small stitch length, and let your stitch run completely to the end (and of) the dart, then backtrack making sure to veer into the seam allowance.
 
-#### Strijk de nepen naar de zijkant
+#### Press back darts to the side
 
 ![Press the back darts to the side](step02.png)
 
@@ -126,7 +126,7 @@ Sew a zig-zag stitch along the edge of the side piece to finish it and attach it
 
 ### Step 10: Close the pocket bag
 
-![Sluit het zakdeel](step10.png)
+![Close the pocket bag](step10.png)
 
 Place the front piece, lining and pocket bag with the pocket bag up.
 
@@ -178,7 +178,7 @@ Sew the seam, starting from the waistband along the entire side of your trousers
 
 ### Step 15: Press open seam allowance
 
-![Strijk de naadwaarde open](step14.png)
+![Press open seam allowance](step14.png)
 
 Press open the seam allowance along the side seams. Do so from the back, and repeat from the good side of the fabric.
 
