@@ -1,3 +1,3 @@
-![Overwijdte taille](./waistease.svg)
+![Waist ease](./waistease.svg)
 
-De hoeveelheid overwijdte aan je taille.
+The amount of ease at your waist.
