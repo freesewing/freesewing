@@ -13,4 +13,3 @@ Higher values mean a more cut-away style.
 In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
 
 </Note>
-
