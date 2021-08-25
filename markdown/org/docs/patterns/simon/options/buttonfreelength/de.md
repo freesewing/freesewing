@@ -16,4 +16,3 @@ If you want to have buttons below your waistband, you can. You should enter a ne
 making sure it's within the length bonus you have available.
 
 </Note>
-
