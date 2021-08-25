@@ -9,7 +9,7 @@ order: 10
 
 ##### Why do we need it?
 
-- Your IP address is logged on our backend systems. We gebruiken deze logs en de informatie erin enkel om problemen te bepalen.
+- Your IP address is logged on our backend systems. We use these logs and the information in them only to diagnose problems.
 
 ##### How long do we keep it?
 
@@ -20,5 +20,5 @@ order: 10
 - No, never.
 
 <Note>
-Deze data wordt opgeslagen voor iedereen die onze website bezoekt of verbinding maakt met onze backend API's.
+This data is stored for anybody who visits our website or connects to our backend APIs.
 </Note>
