@@ -19,6 +19,3 @@ We will try to respect your choice here, but out priority is to fit the sleeve i
 </Warning>
 
 
-
-
-
