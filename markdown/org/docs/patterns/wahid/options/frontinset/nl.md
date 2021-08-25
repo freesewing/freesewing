@@ -4,10 +4,9 @@ How far do you want your waistcoat armhole to curve inwards on the front?
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Het armsgat van je gilet kan verder naar binnen buigen, aangezien er geen mouw ingezet wordt.
-Dit heeft invloed op de stijl van je gilet.
+The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
+This influences the style of the waistcoat.
 
 </Note>
-
