@@ -11,4 +11,3 @@ You don't have to use sweatshirt fabric. Other options are available, from fashi
 Or if you have given up on class, you could go for fleece.
 
 </Note>
-
