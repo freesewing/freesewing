@@ -1,17 +1,18 @@
-![Lengte knooploos stuk](./buttonfreelength.svg)
+![Button free length](./buttonfreelength.svg)
 
-Hoe ver voor je tailleband wil je dat je laatste knoop zit?
+How much before your waistband do you want your last button to sit?
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Knopen voorbij je tailleband wordt door velen als vervelend ervaren.
-Ze zitten vast in je riem, en maken toiletpauzes onnodig lastig.
+Having buttons below your waistband is considered by many to be an annoyance.
+They get caught up in your belt, and complicate bathroom breaks.
 
-De laatste knoop zit standaard 1 cm boven je tailleband, maar deze optie staat je toe de knoop verder naar boven te schuiven voor hemden die je met hogere broeken wil dragen.
+By default, the last button sits 1cm above your waistband, 
+but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
 
-Als je knopen onder je tailleband wil kan dat ook. Dan moet je hier een negatieve waarde invoeren, zolang ze binnen de beschikbare lengtebonus valt.
+If you want to have buttons below your waistband, you can. You should enter a negative value here, 
+making sure it's within the length bonus you have available.
 
 </Note>
-
