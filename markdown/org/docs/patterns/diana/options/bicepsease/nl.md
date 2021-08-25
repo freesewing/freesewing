@@ -1,3 +1,3 @@
-![De optie voor overwijdte biceps bij Diana](./bicepsease.svg)
+![The biceps ease option on Diana](./bicepsease.svg)
 
-Deze optie geeft controle over de pasvorm aan de bovenarm, en beïnvloedt de diepte van het armsgat.
+This option controls the fit at your upper arm, and influences the depth of the armhole.
