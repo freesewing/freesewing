@@ -1,3 +1,3 @@
-![Overwijdte borst](chestease.svg)
+![Chest ease](chestease.svg)
 
-Hoeveel ruimte wil je rond je borstkas?
+How much room do you want at the chest?
