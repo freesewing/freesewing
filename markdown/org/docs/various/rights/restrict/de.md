@@ -5,7 +5,7 @@ order: 50
 
 You have the right to request a restriction on the processing of your personal data.
 
-Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.  
+Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
 
 <Warning>
 
