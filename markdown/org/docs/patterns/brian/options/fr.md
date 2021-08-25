@@ -15,7 +15,7 @@ La *bounding box* de la tête de manche est un rectangle de la largeur de la man
 
 ![La tête de manche Brian](sleevecap.svg)
 
-L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2. 
+L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 
 <Note>
 
@@ -23,7 +23,8 @@ L'image ci-dessus montre une tête de manche, commençant au point 1, puis monta
 
 Dans notre exemple, le devant de la manche est à droite. Mais comment le sait-on ? 
 
-Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. La partie de la tête de manche qui sera placée à l'arrière est de forme plus aplatie. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
+Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. The backside of the
+sleevecap will also be curved, but it's a flatter curve. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
 
 </Note>
 
@@ -85,14 +86,14 @@ Nous avons maintenant tous les points de départ et d'arrivée pour dessiner les
 
 Pour chacun des points d'ancrage (ceux marqués en orange, pas les points 1 et 2), une option permet de contrôler la répartition vers le haut, et vers le bas :
 
- - [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant
+ - [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant
+ - [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant
+ - [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant
+ - [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant
+ - [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant
+ - [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant
+ - [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant
 
 <Note>
 
@@ -100,7 +101,7 @@ Les lecteurs attentifs auront remarqué que le point 4 n'est pas un point d'ancr
 
 </Note>
 
-### En résumé
+### Takeaways
 
 Comme la tête de manche de Brian (et de tous les patrons dérivés) a énormément d'options, comprendre la construction de la tête de manche vous aidera à concevoir la tête de manche que vous voulez précisément. Pour cela :
 
