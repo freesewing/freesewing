@@ -1,15 +1,14 @@
-![Neep armsgat achter](backscyedart.svg)
+![Back scye dart](backscyedart.svg)
 
-Dit patroon komt met een standaard neepje van 0.5 cm in het armsgat aan de rug. Je kan deze neep groter of kleiner maken om het armsgat te beïnvloeden.
+This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Het punt van deze neep is te zorgen dat het armsgat plat tegen je lichaam ligt, en niet openstaat.
-Aangezien er geen mouw is valt het extra op als je armsgat niet mooi aanpast.
+The point of this dart is to make sure the armhole lies flat against your body, rather than gape.
+Given that there is no sleeve, a gaping armhole is particularly unsightly.
 
-Deze naad wordt gebruikt om het patroon vorm te geven maar je moet hem niet stikken, aangezien hij verwerkt zit in de schoudernaad.
+While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
 
 </Note>
-
