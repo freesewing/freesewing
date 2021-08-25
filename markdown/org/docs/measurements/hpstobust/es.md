@@ -34,6 +34,3 @@ For best results, get a second person to take your measurements (if possible).
 </Tip>
 
   
-
-
-  
