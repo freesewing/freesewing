@@ -1,14 +1,14 @@
 ---
-title: Andere lijnen
+title: Other lines
 ---
 
-Sommige patronen kunnen andere lijnen hebben, er zijn 4 andere mogelijke soorten:
+Some patterns may have other lines on them, there are 4 additional styles:
 
- - Let op
- - Markeer
+ - Note
+ - Mark
  - Contrast
  - Help
 
-Deze kunnen gebruikt worden door patroonontwerpers om extra info toe te voegen, afhankelijk van de context.
+They might be used by patterns designers to add additional info, depending on the context.
 
-<Legend part="otherLines" caption="Other line styles" />
+<Legend part="otherLines" caption="Other line styles" >
