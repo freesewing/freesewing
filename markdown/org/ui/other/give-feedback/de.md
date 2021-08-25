@@ -1,14 +1,14 @@
 ---
-title: Feedback geben
+title: Give feedback
 ---
 
 <Note>
 
-##### Gib uns dein Feedback
+##### Give us your feedback
 
-Wir würden uns freuen zu hören, was du an FreeSewing liebst (oder hasst).
+We'd love to hear your thoughts on what you love (or hate) about FreeSewing.
 
-[Trete unserem Chatroom bei](https://discord.freesewing.org/) und sag uns, was du denkst.
+Please [join our chat room](https://discord.freesewing.org/) and share your thoughts.
 
 </Note>
 
