@@ -1,5 +1,5 @@
-![De vorm van het armsgat op de rug van Aaron](./backlinebend.svg)
+![The back armhole shape option on Aaron](./backlinebend.svg)
 
-Bepaalt de curve can het armsgat op de rug. Met andere woorden, hoe ver het armsgat uit de rug uitgesneden is.
+Determines the bend of the armhole at the back. In other words, the amount the arm opening is cut-out on your back.
 
-> Hoge waarden maken een diepere boog, wat een racerback als resultaat heeft.
+> Higher values bend the armhole more, resulting in a more raceback-style top.
