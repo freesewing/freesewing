@@ -15,8 +15,6 @@ In Frankreich haben einige E-Mail Provider dieselben Filtereinstellungen:
  - free.fr
  - laposte.net
  - organge.fr
- - sfr.fr
-
-Diese Provider sind bekannt dafür, Probleme beim Zustellen der Aktivierungsemail zu verursachen.
+ -
 
 </Note>
