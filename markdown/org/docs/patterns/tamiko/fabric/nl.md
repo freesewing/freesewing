@@ -1,4 +1,4 @@
-Dit patroon heeft veel onafgewerkte randen, dus je hebt iets nodig dat niet uitrafelt. Je kiest ook best iets dat soepel valt.
+This pattern has a lot of unfinished edges, so you need something that does not ravel. And you want to go for something with a nice drape.
 
-Om een lang verhaal kort te maken: kies voor een jersey, of een lichte scuba of zo. Geen geweven stoffen.
+Long story short, go for a knitted fabric, or some light scuba or something. No wovens.
 
