@@ -2,28 +2,28 @@
 
 ###### Cut out only what you need
 Depending on the choices you made in your pattern, you may not need all parts.
-Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
+If a pattern part is not printed, it means you don't need it.
 
 </Tip>
 
-  - Uit je buitenstof:
-    - 2x **deel 1**: Dit is het achterpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
-    - 2x **deel 2**: Dit is het voorpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
-    - 2x **deel 3**: Dit is de tailleband. Knip dit uit je **buitenstof**
-    - 2x **deel 4**: Dit is de enkelboord. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
-    - 2x **deel 7**: Dit is de paspel voor de achterzak. Knip 2 van deze uit je **buitenstof** met _goede kanten op elkaar_
-  - Uit je voeringsstof:
+  - From your main fabric:
+    - 2x **part 1**: This is the back panel. Cut these from your **main fabric** with _good sides together_
+    - 2x **part 2**: This is the front panel. Cut these from your **main fabric** with _good sides together_
+    - 2x **part 3**: This is the waistband. Cut it from your **main fabric**
+    - 2x **part 4**: This is the ankle cuff. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
+    - 2x **part 7**: This is the back pocket welt. Cut 2 of these from your **main fabric** with _good sides together_
+  - From your lining fabric:
     - 2x **part 5**: This is the front pocket bag. Cut these, from your **lining fabric** _on the fold_ (not needed if you chose to not have front pockets)
-    - 2x **deel 6**: Dit is het achterste zakdeel. Knip 2 van deze uit je **voeringsstof** _aan de stofvouw_
-  - Uit tussenvoering:
-    - 2x **deel 8**: Dit is de versteviging van de paspel voor de achterzak. Knip 2 van deze uit **tussenvoering**
+    - 2x **part 6**: This is the back pocket bag. Cut 2 of these from your **lining fabric** _on the fold_
+  - From interfacing:
+    - 2x **part 8**: This is the back pocket welt interfacing. Cut 2 of these from **interfacing**
 
 <Warning>
 
-#### Opgelet
+#### Caveats
 
-- Er is geen naadwaarde aan de tussenvoering
-- Er is extra naadwaarde aan de tailleband en zoom
-- De tailleband is een rechthoek, en wordt dus niet volledig geprint om papier te besparen
+ - There is no seam allowance on the interfacing 
+ - There is extra seam allowance on the waist band and hem
+ - The waistband is a mere rectangle, so it's not fully printed to save paper
 
 </Warning>
