@@ -1,35 +1,34 @@
-## Stof voor een das
-The ties you find in the store are typically made out of silk or some imitation silk poly. Het is dus niet verrassend dat dit goede opties zijn.
+## Tie fabric
+The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
 
-In general, you want something with good drape so that your tie hangs nicely. Je das schuin van draad knippen kan ook helpen.
+In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
 
-Ik gebruik zelf graag verschillende stoffen voor dassen. Dingen als denim of ribfluweel maken geweldige dassen, en zijn ook een beetje anders dan de gemiddelde das uit de winkel.
+Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
 
-Daarbij is zijde en imitatiezijde glad en lastig om mee te werken. Als dit je eerste das ooit is, overweeg dan een alternatieve stof die zich beter gedraagt.
+Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
 
-Zorg vooral dat je een stof kiest die niet snel uitrekt of z'n vorm verliest. Je wil dat je das er scherp uitziet, niet slapjes.
+Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
 
-## Voering van een das
-De voering van de das is het stukje dat aan de punt gebruikt wordt om de achterkant te bedekken. Als je niet zeker weet wat ik bedoel, kijk dan naar de achterkant van de punt van een bestaande das. Zie je dat rechthoekige stukje stof daar? Dat is de voering van de das.
+## Tie lining
+The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
 
-De voering van je das voegt een extra stof toe aan een deel van de das. Het is dus belangrijk dat dit niet te dik wordt. Kies iets duns, ook als je een zwaardere stof gebruikt.
+Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
 
-Zorg dat je voering minstens even goed valt als de stof van je das, zodat ze geen invloed heeft op hoe de das valt.
+Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
 
-Bij twijfel, ga dan voor imitatie zijde. Let wel op dat je iets kiest dat ofwel bij je buitenstof past, of er mooi mee contrasteert.
+When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
 
-## De tussenvoering
-De tussenvoering is het skelet van je das. Het is het deel dat in het midden zit en alleen zichtbaar is terwijl je je das maakt.
+## Tie interfacing
+Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
 
-Tussenvoering voor dassen is onwaarschijnlijk lastig te vinden. De beste optie is een zachte, pluizige geweven lamswol, maar ik moet nog een stoffenwinkel tegenkomen die dat verkoopt.
+Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
 
-Hoewel je een alternatief kan zoeken, zoals een wollen stof of flanel, recycleer ik meestal de tussenvoering van een oude das.
+While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
 
 <Note>
 
-Zolang je je das weghoudt van scharen en bondage fanatici zal de tussenvoering met gemak de das overleven. Dus kijk eens in je kleerkast (of een kringwinkel) of je geen oude das met een vlek op vindt, en haal ze uit elkaar om de tussenvoering een tweede leven te geven.
+As long as you keep your tie away from scissors and bondage fanatics, your tie interfacing will effortlessly outlast your tie. So look in your wardrobe (or the charity shop/thrift store) for that old tie with the stain on it, and take it apart to salvage the tie interfacing.
 
-Zolang de das die je wil maken niet langer of breder is dan degene die je gaat recycleren, heb je daar je tussenvoering.
+As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
-
