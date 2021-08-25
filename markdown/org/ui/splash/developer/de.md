@@ -1,6 +1,6 @@
 - - -
 - - -
 
-### Für Entwickler
+### For developers
 
-FreeSewing ist in JavaScript geschrieben. Wir haben Anleitungen und Dokumentationen sowohl für Anfänger als auch Experten
+FreeSewing is written in JavaScript. We have guides and docs for beginners and experts alike
