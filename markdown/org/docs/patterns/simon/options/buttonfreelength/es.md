@@ -6,6 +6,8 @@ How much before your waistband do you want your last button to sit?
 
 ###### What's the point?
 
+###### What's the point?
+
 Having buttons below your waistband is considered by many to be an annoyance.
 They get caught up in your belt, and complicate bathroom breaks.
 
@@ -16,4 +18,3 @@ If you want to have buttons below your waistband, you can. You should enter a ne
 making sure it's within the length bonus you have available.
 
 </Note>
-
