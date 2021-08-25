@@ -164,6 +164,7 @@ Sew both ends of your elastic together with good sides together.
 <Note>
 
 ###### Not sure how much elastic you need?
+###### Not sure how much elastic you need?
 Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
 Make a mark of where the edge joins, add 2cm seam allowance, and that's your length.
 
@@ -190,6 +191,6 @@ While sewing, stretch elastic and fabric together between each set of pins, remo
 </Tip>
 
 ### Step 15: Trim and clean up
-![Yay! You've made it](step15.png)
+![Yay! Yay! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.
