@@ -1,5 +1,5 @@
 ---
-title: Overwijdte taille
+title: Waist ease
 ---
 
 ![The effect of the waist ease option on the pattern](sample.png)
