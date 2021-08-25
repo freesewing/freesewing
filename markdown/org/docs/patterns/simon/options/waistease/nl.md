@@ -1,3 +1,3 @@
-![Overwijdte taille](waistease.svg)
+![Waist ease](waistease.svg)
 
-Hoeveel ruimte wil je aan je taille?
+How much room do you want at the waist?
