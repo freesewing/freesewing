@@ -1,12 +1,12 @@
 ---
-title: Geef feedback
+title: Give feedback
 ---
 
 <Note>
 
-##### Geef ons je feedback
+##### Give us your feedback
 
-We horen graag wat je geweldig (of verschrikkelijk) vindt aan FreeSewing.
+We'd love to hear your thoughts on what you love (or hate) about FreeSewing.
 
 Please [join our chat room](https://discord.freesewing.org/) and share your thoughts.
 
