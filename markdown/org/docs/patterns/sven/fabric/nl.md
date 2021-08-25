@@ -1,4 +1,4 @@
-Sven kan de gedaante van eender welke sweater aannemen. Van geweven stoffen tot jersey of zelfs scuba, je kan niet missen zolang je iets kiest dat een beetje gewicht heeft.
+Sven can be any sweatshirt you want it to be. From wovens to knit or even scuba, you can't really go wrong as long as you stick with something that has a bit of weight to it.
 
-Kijk eens naar [de Sven showcases](/showcase/pattern/sven) voor inspiratie.
+Have a look at [the Sven showcases](/showcase/pattern/sven) for inspiration.
 
