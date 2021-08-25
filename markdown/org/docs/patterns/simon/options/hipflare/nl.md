@@ -1,8 +1,8 @@
 
-Dit voegt extra ruimte toe onder je heupen.
+This adds extra room below your hips.
 
-> Deze optie bestaat op een buikvenstertje te voorkomen.
+> This option exists to prevent belly fluff.
 > 
-> Wat is een buikvenstertje? Dat krijg je als je je hemd in je broek steekt, en het stukje onder de laatste knoop gaat wat openstaan, waardoor je een stuk buik ziet.
+> What's belly fluff? It's when you tuck your shirt in your trousers, and the part below the last button tend to creep open a bit, exposing part of your belly.
 
 > If you're on a mission against belly fluff, you might also look into the <strong>button free length</strong> option.
