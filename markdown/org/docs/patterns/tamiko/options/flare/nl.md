@@ -1,2 +1,2 @@
 
-De mate waarin het kledingstuk van je borst naar beneden uitwaaiert.
+The angle by which the garment flares out from your chest downwards.
