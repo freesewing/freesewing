@@ -1,3 +1,3 @@
-![Overwijdte borst](chestease.svg)
+![Chest ease](chestease.svg)
 
-Hoeveel ruimte wil je rond je borstkas? De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen van het patroon.
+How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
