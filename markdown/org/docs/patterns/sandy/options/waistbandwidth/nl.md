@@ -1,4 +1,4 @@
 
-![Breedte tailleband](waistbandwidth.svg)
+![Waistband width](waistbandwidth.svg)
 
 The width of the waistband
