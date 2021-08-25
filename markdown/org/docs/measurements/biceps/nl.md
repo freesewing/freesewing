@@ -1,5 +1,5 @@
 ---
-title: Omtrek Biceps
+title: Biceps circumference
 ---
 
 The **biceps circumference** measurement goes around the fullest part of your upper arm.
