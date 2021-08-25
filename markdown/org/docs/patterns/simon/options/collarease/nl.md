@@ -1,4 +1,4 @@
-![Overwijdte kraag](collarease.svg)
+![Collar ease](collarease.svg)
 
 How much ease do you want for your collar?
 
