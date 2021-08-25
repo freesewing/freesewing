@@ -33,5 +33,3 @@ If you know of any other place that carries this stuff, please let us know.
 
 </Note>
 
-
-
