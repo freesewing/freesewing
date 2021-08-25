@@ -1,5 +1,5 @@
 ---
-title: Vaak gestelde vragen
+title: Frequently asked questions
 order: 150
 ---
 
