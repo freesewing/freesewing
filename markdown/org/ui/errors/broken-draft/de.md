@@ -1,11 +1,11 @@
 ---
-title: Etwas ist schiefgelaufen
+title: Something went wrong
 ---
 
-##### Hilf uns, FreeSewing zu verbessern, indem du diesen Absturz meldest
+##### Help us make FreeSewing better by reporting this crash
 
-Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können was schiefgegangen ist.
+We'd like to gather diagnostics and [create an issue on Github](https://github.com/freesewing/freesewing/issues/new) to investigate what exactly went wrong.
 
-Dein (Benutzer-)Name ist nicht in den Diagnostikdaten enthalten, aber wir bitten dich trotzdem um deine Einwilligung bevor wir diese Daten sammeln und auf Github hochladen.
+We'll keep your (user)name out of the diagnostics data, but we'd still like your consent prior to gathering this data and putting it on Github.
 
-Wenn das für dich in Ordnung ist, klicke auf den untenstehenden Knopf. Falls nicht, kannst du [dies manuell melden](https://github.com/freesewing/freesewing/issues/new).
+If you are on board, click the button below. If not, you can always [report this manually](https://github.com/freesewing/freesewing/issues/new).
