@@ -1,10 +1,10 @@
-![De opties voor panelen bij Cathrin](./panels.svg)
+![The panels option on Cathrin](./panels.svg)
 
-Deze optie bepaalt uit hoeveel panelen het korset zal bestaan. Je kan kiezen tussen:
+This options determines how many panels will be used to make up the corset. You have the choice between:
 
- - 11 panelen
- - 13 panelen
+ - 11 panels
+ - 13 panels
 
-Meer panelen is een beetje meer werk, maar laat je ook toe het verschil tussen buste/taille/heupen over meer naden te verdelen, wat een beter resultaat kan opleveren.
+More panels is a bit more work, but also allows the difference between bust/waist/hips to be evened out over more darts, which may yield to better results.
 
-> Meer rondingen = meer panelen
+> More curves = more panels
