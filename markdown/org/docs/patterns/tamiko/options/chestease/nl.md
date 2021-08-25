@@ -1,2 +1,2 @@
 
-De hoeveelheid overwijdte aan je borst.
+The amount of ease at your chest.
