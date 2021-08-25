@@ -20,4 +20,3 @@ It won't show up for casual garments, and for formal wear, it's better to add
 asymmetric shoulder padding, rather than create an asymmetric pattern.
 
 </Note>
-
