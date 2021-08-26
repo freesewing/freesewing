@@ -1,3 +1,3 @@
-![The shoulder ease option on Diana](./shoulderease.svg)
+![De optie voor overwijdte schouders bij Diana](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Deze optie bepaalt de positie van je schoudernaad.
