@@ -1,18 +1,18 @@
 ---
-title: Basis naaimateriaal
+title: Basic sewing supplies
 ---
 
-> Over wat je exact kan verstaan onder 'basismateriaal' wordt wel eens gedebatteerd. Sommige mensen hebben graag meer spullen, anderen zeggen dat zelfs een naaimachine optioneel is als je met de hand kan naaien.
+> What exactly constitutes the bare necessities for sewing is subject to debate. Some people like more tools, others say that even a sewing machine is optional as you can sew by hand.
 
-Voor alle duidelijkheid, als ik op deze site refereer naar basismateriaal bedoel ik het volgende:
+For the sake of clarity, when I refer to basic sewing supplies on this website, I mean the following:
 
- - Lintmeter
- - Naaimachine
-   - Naalden voor naaimachine
-   - Spoeltjes
- - Naaigaren
- - Stofschaar
- - Tornmesje
- - Spelden en naalden voor handnaaiwerk
- - Stofkrijt/potloden
- - Strijkijzer
+ - Tape measure
+ - Sewing machine
+   - Sewing machine needles
+   - Bobbins
+ - Sewing thread
+ - Fabric scissors
+ - Seam ripper
+ - Pins and hand sewing needles
+ - Fabric marker/Pencils
+ - An iron
