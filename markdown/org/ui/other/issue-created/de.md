@@ -1,8 +1,8 @@
 ---
-title: We created a Github issue for this
+title: Wir haben hierfür ein Github-Issue erstellt
 ---
 
-You can subscribe to this issue, or comment on it if you'd like to share more information.  
-Doing so requires a Github account, but they are free.
+Du kannst dieses Issue abonnieren oder kommentieren, um uns mehr über das Problem wissen zu lassen.  
+Dafür brauchst du aber einen (kostenlosen) GitHub-Account.
 
-**Tip:** An active issue — one that has subscribers or comments — gets more attention.
+**Tip:** Ein aktives Issue -- eines mit Abonnenten oder Kommentaren -- bekommt mehr Aufmerksamkeit.
