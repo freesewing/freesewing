@@ -1,3 +1,3 @@
-![Biceps ease](./bicepsease.svg)
+![Overwijdte biceps](./bicepsease.svg)
 
-The amount of ease at your upper arm.
+De hoeveelheid overwijdte aan je bovenarm.
