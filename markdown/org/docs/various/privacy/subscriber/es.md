@@ -7,11 +7,11 @@ order: 20
 
 - Your E-mail address
 
-##### Why do we need it?
+##### ¿Por qué la necesitamos?
 
 - To send you our newsletter
 
-##### How long do we keep it?
+##### ¿Cuánto tiempo lo mantenemos?
 
 - As long as you remain subscribed
 
