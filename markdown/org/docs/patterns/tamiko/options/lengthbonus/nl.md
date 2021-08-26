@@ -1,3 +1,3 @@
-![Length bonus](lengthbonus.svg)
+![Bonus lengte](lengthbonus.svg)
 
-How much longer than the default length to make your top.
+Hoeveel langer dan de standaard wil je je top?
