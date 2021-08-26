@@ -1,19 +1,19 @@
 ---
-title: Draadrichting
+title: Fabric grain
 ---
 
-![De draadrichting loopt parallel met de zelfkant](fabric-grain.jpg)
+![The grainline runs parallel to the selvedge](fabric-grain.jpg)
 
-De draadrichting van een stof wordt bepaald door de richting van de garens in een geweven stof. Beter gezegd, de draadrichting wordt bepaald door de richting van de scheringdraden.
+The grain of a fabric is determined by the alignment of the yarns in a woven fabric. More precisely, the grain line is determined by how the warp yarns run.
 
-Geweven stoffen worden gemaakt door ze zogenaamde inslagdraden tussen de scheringdraden te weven. De scheringdraden lopen over de lengte van een rol stof, parallel met de zelfkant, terwijl de inslagdraden heen en weer gaan langs de breedte.
+Woven fabric are produced by weaving the so-called weft between the warp threads. The warp threads run along the length of a fabric roll, parallel to the selvedge, while the weft runs back and forth across its width.
 
-Draadrichting wordt op een patroon aangeduid met een lange pijl. Wanneer je je patroon uitknipt is het belangrijk om de pijl op je patroondeel gelijk te leggen met de draadrichting van je stof.
+Grain is indicated on a pattern by the grain line. When cutting out your pattern, it's important to align the grain line of the pattern to the grain of your fabric.
 
-> Voor meer details over schering en inslag: [Weven op Wikipedia](https://nl.wikipedia.org/wiki/Weven)
+> For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
 
-> ##### Verwarrend? Denk aan hout
+> ##### Confused? Think wood
 > 
-> Hout is niet geweven, maar groeit in verschillende lagen, gebaseerd op de seizoenen (groeiringen). De richting van deze lagen is belangrijk voor houtbewerkers. Dit heeft een invloed op hoe hard het hout zal vervormen nadat het gesneden is en hoe het kan plooien, alsook een aantal andere parameters.
+> Wood is not woven, but grows in different layers based on the seasons (growth rings). The way these layers are aligned are important for woodworkers. They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
 > 
-> Net zoals een houtbewerker hieraan zal denken voor hij zijn hout snijdt, moet jij aan de draadrichting denken voor je je stof uitknipt.
+> Just like a woodworker will take this into account before cutting the wood, you should take grain into account before cutting out your fabric.
