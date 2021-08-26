@@ -7,15 +7,15 @@
 
 ## Comprendre la tête de manche
 
-In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. As a result, the sleevecap alone now has 20 options to control its shape. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
+Dans la version 2 de FreeSewing, la tête de manche de Brian a été redessinée, pour mieux s'adapter à différents types de manches et de vêtements. La tête de manche dispose maintenant de 20 options de forme. Bien que cela puisse paraître un peu assommant de prime abord, comprendre la conception de la tête de manche facilite la compréhension des différentes options.
 
 ### La bounding box (boîte englobante)
 
-The *bounding box* of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Inside this box, we will construct our sleevecap later.
+La *bounding box* de la tête de manche est un rectangle de la largeur de la manche et de la hauteur de la tête de manche. La tête de manche va être construite dans ce rectangle.
 
-![The Brian sleevecap](sleevecap.svg)
+![La tête de manche Brian](sleevecap.svg)
 
-The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
+L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 
 <Note>
 
@@ -23,27 +23,26 @@ The image above shows a sleevecap, starting at point 1, then going up until poin
 
 Dans notre exemple, le devant de la manche est à droite. Mais comment le sait-on ? 
 
-Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. The backside of the
-sleevecap will also be curved, but it's a flatter curve. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
+Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. La partie de la tête de manche qui sera placée à l'arrière est de forme plus aplatie. C'est en raison de la forme de l'épaule humaine, qui est plus arrondie sur le devant du corps. La tête de manche sera donc elle aussi plus courbe sur le devant, pour s'adapter à l'épaule.
 
 </Note>
 
-The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
+La largeur de la tête de manche (et donc la largeur de la manche à la base de l'emmanchure) est égale à la distance entre les points 1 et 2. Cette distance dépend des mesures du modèle, de l'aisance choisie, de la coupe du vêtement, etc. Pour notre tête de manche, la seule chose à savoir est qu'on commence avec une largeur donnée. Et bien que cette largeur puisse être influencée par d'autres facteurs, nous ne pouvons pas la modifier par les options de la tête de manche.
 
-![Controlling the top of the sleevecap](sleevecaptop.svg)
+![Contrôle du haut de la tête de manche](sleevecaptop.svg)
 
-The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
+La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. La hauteur exacte est un compromis entre les mesures du modèle, les options, l'aisance, l'aisance de la tête de manche, et le fait que la manche devra finalement s'ajuster à l'emmanchure. Cette hauteur peut donc varier, et on ne peut choisir sa valeur exacte. Mais deux options permettent de contrôler la forme de notre tête de manche :
 
  - [Haut de tête de manche X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
  - [Haut de tête de manche Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+En d'autres termes, le point 4 peut être placé plus haut ou plus bas, et, ce qui est peut-être moins intuitif, peut aussi être déplacé plus à droite ou plus à gauche, plutôt que rester en plein milieu comme dans notre exemple.
 
 ### Les points d'inflexion
 
-![Controlling the inflection points](sleevecapinflection.svg)
+![Contrôle des points d'inflexion](sleevecapinflection.svg)
 
-With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to map out our *inflection points*. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
+Avec les points 1, 2, 3 et 4 en place, nous avons un rectangle pour dessiner notre tête de manche. Maintenant, il est temps de placer nos *points d'inflexion*. Ce sont les points 5 et 6 de notre dessin, et leur position est déterminée par les 4 options suivantes :
 
  - [Haut de tête de manche arrière X](/docs/patterns/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
  - [Haut de tête de manche arrière Y](/docs/patterns/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
@@ -58,11 +57,11 @@ Comme vous le voyez dans notre exemple, ces points ne se trouvent pas toujours s
 
 ### Les points d'ancrage
 
-![Controlling the anchor points](sleevecapanchor.svg)
+![Contrôle des points d'ancrage](sleevecapanchor.svg)
 
-Ultimately, our sleevecap will be the combination of 5 curves. In addition to points 1 and 2, the four *anchor points* that are marked in orange in our example will be the start/finish of those curves.
+En fin de compte, notre tête de manche sera la combinaison de 5 courbes. En plus des points 1 et 2, les quatre *points d'ancrage* (en orange dans notre exemple) seront placés au début et à la fin de ces courbes.
 
-The points are *offset* perpendicular from the middle of a line between the two anchor points surrounding them. The offset for each point is controlled by these 4 options:
+Les points sont *décalés * perpendiculairement à partir du milieu d'une ligne située entre les deux points d'ancrage qui les entourent. Le décalage pour chaque point est contrôlé par ces 4 options :
 
  - [Décalage de tête de manche Q1](/docs/patterns/brian/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
  - [Décalage de tête de manche Q2](/docs/patterns/brian/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
@@ -80,20 +79,20 @@ Comme pour l'option décalage, les dernières options pour déterminer la forme 
 
 ### La répartition
 
-![Controlling the anchor points](sleevecapspread.svg)
+![Contrôle des points d'ancrage](sleevecapspread.svg)
 
-We now have all the start and end points to draw the 5 curves that will make up our sleevecaps. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). These are determined by the so-called *spread*.
+Nous avons maintenant tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos têtes de manche. Il nous manque les points de contrôle (voir [nos informations sur les courbes de Bézier ](https://freesewing.dev/concepts/beziercurves) pour en savoir plus sur la façon dont les courbes sont construites). Celles-ci sont déterminées par ce que l'on appelle *répartition*.
 
-For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
+Pour chacun des points d'ancrage (ceux marqués en orange, pas les points 1 et 2), une option permet de contrôler la répartition vers le haut, et vers le bas :
 
- - [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant
- - [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant
- - [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant
- - [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant
- - [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant
- - [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant
- - [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant
- - [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant
+ - [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
 
 <Note>
 
@@ -101,14 +100,14 @@ Les lecteurs attentifs auront remarqué que le point 4 n'est pas un point d'ancr
 
 </Note>
 
-### Takeaways
+### En résumé
 
-While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. To do so:
+Comme la tête de manche de Brian (et de tous les patrons dérivés) a énormément d'options, comprendre la construction de la tête de manche vous aidera à concevoir la tête de manche que vous voulez précisément. Pour cela :
 
  - Commencez par positionner le haut de votre tête de manche
  - Déterminer ensuite les points d'inflexion
  - Ensuite, utilisez le décalage pour contrôler la pente de la courbe
  - Enfin, utilisez la répartition pour homogénéiser le tout
 
-What's important to remember is that you're only ever controlling the shape of the sleevecap. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. However, the shape you design will always be respected.
+Il faut comprendre qu'on ne peut contrôler que la forme de la tête de manche. Quelle que soit la forme que vous voulez, elle devra s'ajuster à l'emmanchure, ce qui signifie que sa taille peut et devra s'adapter. Cependant, la forme sera toujours respectée.
 
