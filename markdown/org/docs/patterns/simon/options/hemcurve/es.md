@@ -1,4 +1,4 @@
-![Hem curve](hemcurve.svg)
+![Curva del dobladillo](hemcurve.svg)
 
 How much do you want the hem to curve upwards?
 
