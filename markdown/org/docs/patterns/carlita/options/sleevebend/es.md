@@ -1,3 +1,3 @@
-![Sleeve bend](./sleevebend.svg)
+![Manga doblada](./sleevebend.svg)
 
 The angle of the sleeve at the elbow.
