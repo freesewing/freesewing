@@ -9,7 +9,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
    - Cut the amount of **gores** you selected in the pattern options
    - Cut **4 ear** parts or Cut **2 ear** from main and lining.
    - Cut **4 bill** parts
- - **Lining fabric**
+ - **Tissu de doublure**
    - Cut the amount of **gores** you selected in the pattern options
  - **Bill Insert Material**
    - Cut **2 bill inserts**. Use your bill pattern piece with no seam allowance.
