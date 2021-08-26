@@ -14,7 +14,7 @@ The value they represent shows how far the measurement deviates from the proport
     </th>
     
     <th>
-      Description
+      Beschrijving
     </th>
   </tr>
   
