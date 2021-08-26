@@ -1,3 +1,3 @@
-![Hood depth](./hooddepth.svg)
+![Profundidad de capucha](./hooddepth.svg)
 
-Controls the depth of the hood.
+Controla la profundidad del capucha.
