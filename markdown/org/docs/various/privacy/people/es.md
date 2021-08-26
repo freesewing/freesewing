@@ -9,13 +9,13 @@ order: 40
 - Whether the model has breasts or not
 - Optional: An avatar for the model
 
-##### Why do we need it?
+##### ¿Por qué la necesitamos?
 
 - We need the body measurements to draft made-to-measure sewing patterns
 - We use the information about whether a model has breasts to only show relevant measurements when configuring the model
 - The model avatar only serves to help you differentiate between your different models
 
-##### How long do we keep it?
+##### ¿Cuánto tiempo lo mantenemos?
 
 - We keep model data up to 12 months after your last login, or until you remove it.
 
