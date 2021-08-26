@@ -1,7 +1,7 @@
 ---
-title: Seams
+title: Naden
 ---
 
-Seams (the lines on which you sew) are indicated by a solid line. The color of the line indicates the fabric type of the pattern piece:
+Naden (de lijnen waarlangs je stikt) worden aangegeven door een ononderbroken lijn. De kleur van de lijn geeft het type stof aan waaruit je het patroondeel knipt:
 
 <Legend part="fabricLines" caption="Seamlines for different fabric types" >
