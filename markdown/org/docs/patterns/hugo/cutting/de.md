@@ -7,7 +7,7 @@
    - Cut **4 Hood side(s)**, 2x2 good sides together
    - Cut **2 hood center(s)**, good sides together
    - Cut **1 neck binding**
- - **Ribbing**
+ - **Bündchen**
    - Cut **2 cuff(s)**
    - Cut **1 waistband**
 
