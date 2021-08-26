@@ -3,26 +3,26 @@ title: How we use your people data
 order: 40
 ---
 
-##### What personal data do we store?
+##### Welke persoonlijke gegevens bewaren we?
 
-- Body measurements
-- Whether the model has breasts or not
-- Optional: An avatar for the model
+- Lichaamsmaten
+- Of het model borsten heeft of niet
+- Optioneel: een avatar voor het model
 
-##### Why do we need it?
+##### Waarom hebben we ze nodig?
 
-- We need the body measurements to draft made-to-measure sewing patterns
-- We use the information about whether a model has breasts to only show relevant measurements when configuring the model
-- The model avatar only serves to help you differentiate between your different models
+- We hebben de lichaamsmaten nodig om naaipatronen op maat te maken
+- We gebruiken de informatie over het al dan niet borsten hebben van een model enkel om relevante maten te tonen bij het configureren van het model
+- De avatar van het model dient enkel om je te helpen het onderscheid te maken tussen verschillende modellen
 
-##### How long do we keep it?
+##### Hoe lang houden we ze?
 
-- We keep model data up to 12 months after your last login, or until you remove it.
+- We houden modelgegevens bij tot 12 maanden na je laatste login, of tot je ze zelf verwijdert.
 
-##### Do we share it?
+##### Wordt dit gedeeld?
 
-- We never share personal model data
-- We publish an open data set of measurements, containing fully anonymized data.
+- We delen nooit persoonlijke modelgegevens
+- We publiceren een open gegevensset van afmetingen, met volledig anonieme gegevens.
 
 
 <Note>
