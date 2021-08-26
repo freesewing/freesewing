@@ -7,7 +7,7 @@ consentGiven: Consentement donné
 consentNotGiven: Consentement non donné
 consentWhyAnswer: En vertu du RGPD, le traitement de vos données personnelles nécessite votre consentement, autrement dit votre permission.
 createMyAccount: Créer mon compte
-furtherReading: Lire plus
+furtherReading: En lire plus
 modelQuestion: Donnez-vous votre consentement pour traiter vos données de modèle ?
 modelWarning: Révoquer ce consentement exclura toutes vos données de modèle, ainsi que des fonctionnalités qui en dépendent.
 modelWhatAnswer: Pour chaque modèle, leurs <b>mesures</ b> et <b>paramètres de poitrine</ b>.
