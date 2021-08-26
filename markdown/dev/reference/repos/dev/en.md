@@ -2,7 +2,7 @@
 title: freesewing.dev
 ---
 
-import RepoPage from "../../../../../src/components/repo-page";
+ 
 
 <RepoPage repo="freesewing.dev" />
 
