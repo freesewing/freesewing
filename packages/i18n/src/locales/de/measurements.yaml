@@ -1,8 +1,8 @@
 ---
-ankle: Fesselumfang
+ankle: Knöchelumfang
 biceps: Bizepsumfang
 bustFront: Oberweite vorne
-bustPointToUnderbust: Bust point to underbust
+bustPointToUnderbust: Brustpunkt zu Unterbrust
 bustSpan: Brustpunkte Abstand
 chest: Brustumfang
 crossSeam: Taille-Schritt-Taille
@@ -35,4 +35,4 @@ waistToKnee: Taille bis Knie
 waistToSeat: Taille bis Gesäß
 waistToUnderbust: Taille bis Unterbrustweite
 waistToUpperLeg: Taille bis Oberschenkel
-wrist: Umfang des Handgelenks
+wrist: Handgelenksumfang
