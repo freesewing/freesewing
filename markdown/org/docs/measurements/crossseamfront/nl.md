@@ -1,13 +1,13 @@
 ---
-title: Cross seam front
+title: Kruisnaad vooraan
 ---
 
-The **cross seam front** is the front part of the [cross seam](/docs/measurements/crossseam/) measurement.
+De **kruisnaad vooraan** is het voorste deel van de [kruisnaad](/docs/measurements/crossseam/) maat.
 
-To measure your **cross seam front** tie a string around your waist. Then, measure down from the center front of your waist until the spot that is:
+Om je **kruisnaad vooraan** te meten knoop je een koordje rond je taille. Then, measure down from the center front of your waist until the spot that is:
 
- - Where the fork of a tight-fitting pair of trousers would sit
- - At the base of your scrotum
- - Somewhere towards the front of your perineum
+ - Waar de naden van een strakke broek elkaar zouden kruisen
+ - Aan de basis van je scrotum
+ - Ergens vooraan je perineum
 
 
