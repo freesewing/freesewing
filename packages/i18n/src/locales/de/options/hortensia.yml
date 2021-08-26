@@ -1,12 +1,12 @@
 ---
 size:
-  title: Größe
+  title: Grösse
   description: Steuert die Gesamtgröße der Handtasche
 zipperSize:
   title: Größe des Reißverschlusses
   description: Welche Reißverschlussgröße verwendet werden soll
 strapLength:
-  title: Länge des Riemens
+  title: Riemenlänge
   description: Steuert die Riemenlänge
 handleWidth:
   title: Breite des Griffes
