@@ -1,5 +1,5 @@
 ---
-title: Front shoulder width
+title: Vordere Schulterbreite
 ---
 
 ![The effect of the front shoulder width option on the pattern](sample.png)
