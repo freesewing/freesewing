@@ -1,4 +1,4 @@
-![Hem curve](hemcurve.svg)
+![Courbe de l'ourlet](hemcurve.svg)
 
 How much do you want the hem to curve upwards?
 
