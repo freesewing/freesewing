@@ -1,4 +1,4 @@
 
-![Chest ease](chestease.svg)
+![Overwijdte borst](chestease.svg)
 
-The amount of ease at your chest.
+De hoeveelheid overwijdte aan je borst.
