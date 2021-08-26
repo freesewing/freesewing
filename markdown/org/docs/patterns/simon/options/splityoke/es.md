@@ -1,4 +1,4 @@
-![Split yoke](splityoke.svg)
+![Canesú partido](splityoke.svg)
 
 Do you want a split yoke?
 
