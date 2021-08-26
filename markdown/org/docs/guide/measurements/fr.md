@@ -7,8 +7,8 @@ Il est essentiel de prendre des mesures précises pour obtenir de bons résultat
 
 Nous avons ajouté quelques indicateurs pour vous aider à repérer des erreurs ou des problèmes dans vos mesures.
 
- - We include [estimates for your different measurements][1], and highlight those measurements where a person differs significantly from the estimate
- - Your models show [a graph of their body measurements][2] in comparison to our standard sizes
+ - Nous incluons des[estimations pour vos différentes mesures][1], et mettons en évidence les mesures où votre modèle diffère considérablement de l'estimation
+ - Vos modèles montrent [un graphique de leurs mesures corporelles][2] par rapport à nos tailles standards
 
 [1]: /docs/guide/measurements/estimates/
 [2]: /docs/guide/measurements/graph/
