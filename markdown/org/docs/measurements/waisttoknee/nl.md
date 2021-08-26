@@ -1,7 +1,7 @@
 ---
-title: Waist to knee
+title: Taille tot knie
 ---
 
-The **waist to knee** is the measurement from your waist down towards your knee, measured on the side of your body.
+De maat **taille tot knie** is de afstand van je taille tot aan je knie, gemeten langs de zijkant van je lichaam.
 
-To measure your **waist to knee**, locate the height of both your waist and your knee, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Om de **taille tot knie** te meten bepaal je de hoogte van zowel je taille als je knie en meet de de verticale afstand tussen de twee. Neem deze maat aan de zijkant van je lichaam.
