@@ -1,7 +1,7 @@
 ---
-title: Bust span
+title: Bustewijdte
 ---
 
-The **bust span** is the horizontal distance between the two apex points of your bust.
+De **bustewijdte** is de horizontale afstand tussen de toppen van de buste.
 
-To measure your bust span, run the tape measure horizontally in a straight line from the tip of your one breast to the tip of the other.
+Om de bustewijdte te bepalen meet je horizontaal en in een rechte lijn de afstand van de ene top van de borst naar de andere.
