@@ -4,10 +4,8 @@ title: Longueur épaule-taille devant
 
 <Note>
 
-###### Sommet de l'épaule (ou PHE)
-
-Le *Sommet de l'épaule* ou *PHE* est un point utilisé comme base pour plusieurs mesures verticales.
-Reportez-vous à la [documentation du sommet d'épaule](/docs/measurements/hps/) pour savoir comment localiser ce point.
+###### Le Point Haut de l’Épaule ou PHE est utilisé comme base pour plusieurs mesures verticales.
+Reportez-vous à la [documentation PHE](/docs/measurements/hps/) pour savoir comment localiser ce point.
 
 </Note>
 
