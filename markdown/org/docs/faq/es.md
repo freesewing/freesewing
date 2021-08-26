@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions
+title: Preguntas frecuentes
 order: 150
 ---
 
