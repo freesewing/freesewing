@@ -1,1 +1,1 @@
-Controls the width of the neck opening.
+Contrôle la largeur de l'encolure.
