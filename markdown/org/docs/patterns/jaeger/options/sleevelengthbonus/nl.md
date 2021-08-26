@@ -1,7 +1,7 @@
 
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Bonus mouwlengte](sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Hoeveel langer de mouw moet worden dan de mouw van de basisvorm.
 
 <Note>
 
@@ -9,7 +9,7 @@ The amount to extend the sleeve beyond the length of the sleeve in the base bloc
 
 Setting this to zero will make the sleeve length the same as the base length of the Bent block,
 which is certainly too short for a coat.
-Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
+Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer te maken.
 
 </Note>
 
