@@ -1,3 +1,3 @@
-![Buttonhole placket width](buttonholeplacketwidth.svg)
+![Breedte knoopsgatenpat](buttonholeplacketwidth.svg)
 
-The width of your buttonhole placket.
+De breedte van het knoopsgatenpat.
