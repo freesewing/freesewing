@@ -1,5 +1,5 @@
 
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Bonus de longueur de manche](sleevelengthbonus.svg)
 
 La quantité pour allonger la manche au-delà de la longueur de la manche dans le bloc de base.
 
