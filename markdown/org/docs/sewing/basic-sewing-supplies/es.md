@@ -1,5 +1,5 @@
 ---
-title: Basic sewing supplies
+title: Suministros básicos de costura
 ---
 
 > What exactly constitutes the bare necessities for sewing is subject to debate. Some people like more tools, others say that even a sewing machine is optional as you can sew by hand.
