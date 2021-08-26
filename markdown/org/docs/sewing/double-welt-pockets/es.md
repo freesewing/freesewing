@@ -19,7 +19,7 @@ David is a friend of the site, and by all measures much better at explaining thi
 
 To make double welt pockets, you will need:
 
- - Basic sewing supplies
+ - Suministros básicos de costura
  - The fabric or pattern piece you want to make the pocket in
  - Two fabric strips for the welts
  - A strip of interfacing
@@ -35,7 +35,7 @@ Two values determine the size of your double welt pocket. Estas son:
 
 > In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
 
-## Cutting
+## Corte
 
 ### Pocket welts
 
@@ -53,7 +53,7 @@ They will form the two narrow strips of fabric that form your double welt pocket
 
 > Make sure to respect the grainline when cutting the two welts
 
-### Pocket interfacing
+### Entretela de bolsillo
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
@@ -87,7 +87,7 @@ The facing is what you'll see when you peer through the opening of your pocket.
 
 The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
 
-### Pocket bag
+### Bolsa de bolsillo
 
 The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
 
