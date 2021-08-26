@@ -1,5 +1,5 @@
 ---
-title: Back armhole curvature
+title: Courbure de l'emmanchure arrière
 ---
 
 ![The effect of the back armhole curvature option on the pattern](sample.png)
