@@ -1,9 +1,9 @@
-![Traditional or adjustable](adjustmentribbon.svg)
+![Traditioneel of aanpasbaar](adjustmentribbon.svg)
 
-With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
+With Benjamin, you can make a traditional fixed size bow tie. Of je kan er één maken met een aanpaslintje. Dit zijn lintjes en hardware die je toelaten de halsomtrek van de vlinderdas aan te passen. Heel handig als je hemden hebt met verschillende halsmaten, of als sommige hemden een grotere halsopening hebben.
 
 <Tip>
 
-This is a great option if you decide to make a bow tie for someone else as a gift.
+Dit is een geweldige optie als je een vlinderdas aan iemand cadeau wil doen.
 
 </Tip>
