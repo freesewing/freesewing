@@ -1,4 +1,4 @@
 ---
-title: Brim width
+title: Breite der Krempe
 ---
 
