@@ -1,4 +1,4 @@
-![Collar angle](collarangle.svg)
+![Kragenwinkel](collarangle.svg)
 
 The number of degrees between the collar edge and the grainline.
 
