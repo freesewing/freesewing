@@ -1,4 +1,4 @@
 
-![Chest ease](chestease.svg)
+![Holgura de pecho](chestease.svg)
 
-The amount of ease at your chest.
+La cantidad de holgura en el pecho
