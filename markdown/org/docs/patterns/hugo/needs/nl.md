@@ -1,6 +1,6 @@
-To make Hugo, you will need the following:
+Om Hugo te maken heb je het volgende nodig:
 
-- Basic sewing supplies
-- About 2 meter of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
-- Ribbing fabric for the hem and cuffs
+- Basis naaimateriaal
+- Ongeveer 2 m geschikte stof ([zie Optionele stoffen](/docs/patterns/hugo/fabric))
+- Boordstof voor de zoom en manchetten
 
