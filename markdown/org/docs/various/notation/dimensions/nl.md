@@ -1,8 +1,8 @@
 ---
-title: Dimensions
+title: Afmetingen
 ---
 
-When you opt for a *paperless* pattern, your pattern will come with dimensions:
+Wanneer je een *papierloos* patroon kiest, komt je patroon in de vorm van een set afmetingen:
 
 <Legend part="dimension" caption="An example of a dimension on a pattern" >
 
