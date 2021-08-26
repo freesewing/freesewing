@@ -1,4 +1,4 @@
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Anchura del pliegue de la vista de los ojales](buttonholeplacketfoldwidth.svg)
 
 The width of the fold on a classic style buttonhole placket.
 
