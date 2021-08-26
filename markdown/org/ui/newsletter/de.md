@@ -1,7 +1,7 @@
 - - -
 - - -
 
-##### Subscribe to our newsletter
+##### Abonniere unseren Newsletter
 
-Subscribe below and **once every 3 months** you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense. 
+Abonniere hier unten und erhalte **alle 3 Monate** eine Email von uns mit ehrlichen und gehaltvollen Inhalten. Kein Tracking, keine Werbung, kein Nonsens. 
     
