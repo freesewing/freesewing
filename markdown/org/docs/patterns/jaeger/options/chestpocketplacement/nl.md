@@ -1,4 +1,4 @@
 
-![Chest pocket placement](chestpocketplacement.svg)
+![Plaatsting borstzak](chestpocketplacement.svg)
 
-Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
+Plaats van de borstzak in verhouding met een kwart van je borstomtrek. Een hoger nummer schuift de zak naar opzij.
