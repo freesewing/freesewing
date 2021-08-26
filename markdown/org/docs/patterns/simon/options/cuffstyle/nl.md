@@ -1,10 +1,10 @@
-![Cuff style](cuffstyle.svg)
+![Stijl manchet](cuffstyle.svg)
 
-What style of cuff do you want?
+Wat voor manchet wil je?
 
- - Rounded barrel cuff
+ - Afgeronde klassieke manchet
  - Chamfer barrel cuff
- - Straight barrel cuff
- - Rounded French cuff
+ - Rechte klassieke manchet
+ - Afgeronde Franse manchet
  - Chamfer French cuff
- - Straight French cuff
+ - Rechte Franse manchet
