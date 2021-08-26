@@ -1,4 +1,4 @@
 
-![Gathering](gathering.svg)
+![Fronsen](gathering.svg)
 
-The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
+Met hoeveel procent de bovenrand van de rok langer is dan de onderrand van de tailleband. Geef een waarde hoger dan 0 om plooien in de rok te maken.
