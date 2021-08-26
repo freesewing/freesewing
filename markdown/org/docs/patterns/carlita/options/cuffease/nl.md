@@ -1,3 +1,3 @@
-![Cuff ease](./cuffease.svg)
+![Overwijdte manchet](./cuffease.svg)
 
-The amount of ease at your cuff/wrist.
+De hoeveelheid overwijdte aan je manchet/pols.
