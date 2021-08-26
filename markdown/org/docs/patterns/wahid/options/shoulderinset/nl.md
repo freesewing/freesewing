@@ -1,11 +1,11 @@
-![Shoulder inset](shoulderinset.svg)
+![Insnede schouder](shoulderinset.svg)
 
-How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
+Hoe ver wil je dat je gilet aan de schoudernaad weg zit van je schouder? De standaard is 2 cm.
 
 <Note>
 
-###### What's the point?
+###### Waarom?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
+De schoudernaad van een gilet is gewoonlijk smaller dan die van je hemd. Deze optie controleert hoe smal de naad wordt (aan de kant van de schouder).
 
 </Note>
