@@ -1,2 +1,2 @@
 
-The amount of ease around your head.
+De hoeveelheid overwijdte rond je hoofd.
