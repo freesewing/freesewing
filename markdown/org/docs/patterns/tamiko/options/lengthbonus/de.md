@@ -1,3 +1,3 @@
-![Length bonus](lengthbonus.svg)
+![Längenzugabe](lengthbonus.svg)
 
 How much longer than the default length to make your top.
