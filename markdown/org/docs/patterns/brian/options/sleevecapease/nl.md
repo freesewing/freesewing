@@ -3,8 +3,8 @@ Determines the amount of sleevecap ease.
 
 <Note>
 
-The amount of sleevecap ease determines how the sleeves rolls from the shouder.
-More ease makes the sleeve curl into the seam as you see on suit jackets. Less ease makes the sleeve lie flat.
+De hoeveelheid extra ruimte in de mouwkop bepaalt hoe de mouw over de schouder valt.
+Meer ruimte zorgt voor een ronde mouwkop, zoals je zou zien op een jas. Minder ruimte geeft de mouw een platter aanzicht.
 
 For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
 
