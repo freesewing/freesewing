@@ -1,7 +1,7 @@
-To make Benjamin, you will need the following:
+Om Benjamin te maken heb je het volgende nodig:
 
-  - Basic sewing supplies
-  - About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/benjamin/fabric/)). Left over pieces of a recent project could work too.
-  - About the same amount of interfacing
-  - Optionally: Bow tie adjustment ribbon and hardware
+  - Basis naaimateriaal
+  - Ongeveer 0.5 meter geschikte stof ([zie Optionele stoffen](/docs/patterns/benjamin/fabric/)). Restjes van een recent project kunnen ook dienen.
+  - Ongeveer even veel tussenvoering
+  - Optioneel: een lintje en hardware om de vlinderdas aanpasbaar te maken
 
