@@ -1,11 +1,11 @@
 ---
-title: Scale box
+title: Schaal controlevlak
 ---
 
-The scale box allows you to verify that your pattern was printed to the correct scale:
+Het schaal controle vlak helpt je om te controleren of je patroon op de juiste schaal afgeprint is:
 
 <Legend part="scalebox" caption="The scale box" >
 
 <Tip>
-To verify the printed size, you can first only print the page that has the scale box on it.
+Om de printmaat te controleren kan je eerst enkel de pagina printen dat het schaal controle vlak bevat.
 </Tip>
