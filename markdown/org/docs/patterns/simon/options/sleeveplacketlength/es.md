@@ -1,4 +1,4 @@
-![Sleeve placket length](sleeveplacketlength.svg)
+![Longitud de la vista de la manga](sleeveplacketlength.svg)
 
 How long do you want the sleeve placket to be?
 
