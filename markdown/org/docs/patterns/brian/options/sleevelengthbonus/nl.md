@@ -1,3 +1,3 @@
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
+![De optie voor mouwlengte bij Brian](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+Deze optie bepaalt hoe de mouwen verlengd worden.
