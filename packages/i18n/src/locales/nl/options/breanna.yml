@@ -21,13 +21,13 @@ verticalEase:
   title: Vertical ease
   description: The amount of ease to distribute along the length of the garment
 waistEase:
-  title: Waist ease
+  title: Overwijdte taille
   description: The amount of ease at the waist
 primaryBustDart:
   title: Bust dart
   description: Where to place the bust dart to shape the chest
 primaryBustDartLength:
-  title: Bust dart length
+  title: Lengte busteneep
   description: The length of the bust dart
 secondaryBustDart:
   title: Secondary bust dart
