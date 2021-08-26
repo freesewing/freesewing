@@ -1,21 +1,21 @@
 ---
-title: Shoulder slope
+title: Schouderhelling
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+De **schouderhelling** maat geeft aan hoe scherp je schouders naar beneden hellen.
 
-To measure your shoulder slope, you need to determine the angle at which your shoulder line slopes downward.
+Om je schouderhelling te meten moet je bepalen in welke hoek je schouderlijn naar beneden loopt.
 
-A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
+Een goede manier om je schouderhelling te meten is een selfie nemen en die te roteren tot je schouderlijn horizontaal is.
 
-The angle you had to rotate is your shoulder slope.
+De hoek waaronder je de foto hebt moeten roteren is je schouderhelling.
 
 <Note>
 
-Almost all people have a slightly different shoulder slope on both sides.
-That's because your dominant arm is more pronounced.
+Bijna iedereen heeft aan beide kanten een licht verschillende schouderhelling.
+Dit is omdat je dominante arm meer uitgesproken is.
 
-Unless the different is huge, best not to worry about it.
+Tenzij het verschil heel groot is, maak je je er best geen zorgen over.
 It won't show up for casual garments, and for formal wear, it's better to add
 asymmetric shoulder padding, rather than create an asymmetric pattern.
 
