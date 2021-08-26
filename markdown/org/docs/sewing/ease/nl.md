@@ -1,20 +1,20 @@
 ---
-title: Ease
+title: Overwijdte
 ---
 
-![Without ease, you would not be able to raise your arm](ease-plus.jpg)
+![Zonder overwijdte zou je je arm niet kunnen optillen](ease-plus.jpg)
 
-![Negative ease is what makes your tights fit](ease-min.jpg)
+![Negatieve overwijdte zorgt dat je panty's passen](ease-min.jpg)
 
-Ease is the amount of fabric that is added to a garment in addition to what is strictly required to make the garment fit.
+Overwijdte is de hoeveelheid stof die aan een kledingstuk wordt toegevoegd, bovenop het minimum dat nodig is om het te doen passen.
 
-Without ease, a garment would fit you so precisely that you might not be able to get in to it, or would have problems moving in it.
+Zonder overwijdte zou een kledingstuk je zo exact passen dat je het misschien niet eens kan aantrekken, of zou je niet kunnen bewegen.
 
-Ease that is added to allow you to move inside a garment is called wearing ease. Extra ease can be added beyond what is functionally needed. This is called design ease and is used to achieve a certain visual effect.
+Overwijdte die je toelaat te bewegen in een kledingstuk noemt men draagtoegifte. Extra overwijdte kan toegevoegd worden, meer dan wat functioneel nodig is. Dit noemt men designtoegifte en wordt gebruikt om een visueel effect te bereiken.
 
-Ease can work the other way too. When the fabric stretches, we can choose to use less fabric than what is needed to make the garment fit. This is called **negative ease**.
+Overwijdte kan ook in de andere richting werken. Wanneer de stof rekt kunnen we kiezen om minder stof te gebruiken dan wat nodig is om het kledingstuf te doen passen. Dit heet **negatieve overwijdte**.
 
-Negative easy is used for stretchy materials where the garment must fit tightly. For example, in swimwear, tights, underwear, or sportswear.
+Negatieve overwijdte wordt gebruikt voor elastische stoffen waarbij het kledingstuk strak moet zitten. Bijvoorbeeld: badkleding, leggings, ondergoed of sportkledij.
 
 
-> Pictures by [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) and [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 
+> Foto's door [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) en [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 
