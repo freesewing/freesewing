@@ -1,5 +1,5 @@
 ---
-title: On the fold
+title: Im Stoffbruch
 ---
 
 When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut *on the fold*.
