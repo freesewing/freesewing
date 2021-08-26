@@ -1,4 +1,4 @@
-![Hood angle](./hoodangle.svg)
+![Angulo de capucha](./hoodangle.svg)
 
-Controls the angle at which the hood is attached
+Controla el ángulo en el que la capucha es unida
 
