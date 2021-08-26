@@ -1,20 +1,20 @@
-The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. With some thicker fabrics, this will be a difficult proposition.
+De vlinderdasjes die je in de winkel vindt zijn meestal gemaakt uit zijde of imitatiezijde (vaak polyester). Het is dus niet verrassend dat dit goede opties zijn. Eender welke stof waarvan je het patroon of de textuur mooi vindt kan een potentiële vlinderdas zijn. De enige echte limiet is dat de vlinderdas door een opening van slechts 2 cm gekeerd moet worden. Met sommige zwaardere stoffen kan dit een probleem vormen.
 
-Bow ties are more whimsical than normal ties, so having a fun pattern or loud colour is not as much of a problem as it would be with a regular tie.
+Vlinderdasjes zijn speelser dan stropdassen, dus een leuke print of een felle kleur is niet zo vreemd als bij een gewone das.
 
-Silk and silk imitation is slippery and tricky to work with. This can be compensated for with a fusible interfacing.
+Zijde en imitatiezijde is glad en lastig om mee te werken. Dit kan je compenseren met een kleefbare tussenvoering.
 
-## Interfacing
+## Tussenvoering
 
-Depending on the fabric you chose for your bow tie, you will probably need interfacing. Interfacing comes in two main types: fusible and sew-in.
+Afhankelijk van de stof die je kiest voor je vlinderdas ga je waarschijnlijk tussenvoering nodig hebben. Interfacing comes in two main types: fusible and sew-in.
 
-The fusible variety has some adhesive attached to one side that is activated with the heat of your iron. This attaches the interfacing to the fabric and the two can then be used as one. Fusible interfacing can be a great option if your fabric allows the heat required, and you use a quality interfacing. Some lesser quality interfacings can have the adhesive detach, and this shows as bubbles on the fabric surface later on in the life of your bow tie. Good quality interfacings and correctly following the guidelines for adhering the interfacing will not present these problems.
+De kleefbare variant heeft een lijmlaag aan één kant die geactiveerd wordt met de hitte van je strijkijzer. Dit bevestigt de tussenvoering aan de stof, en vanaf dan worden de twee als één stuk behandeld. Kleefbare tussenvoering kan een geweldige optie zijn als je stof de nodige hitte kan verdragen, en je goede kwaliteit gebruikt. Sommige tussenvoeringen zijn van mindere kwaliteit waardoor de lijm loslaat, wat zichtbaar wordt als bubbels op het oppervlak van je vlinderdas. Kwalitatieve tussenvoering en een correcte applicatie zou niet tot deze problemen mogen leiden.
 
-Sew-in interfacing is sew into place before the fabric pieces are used. You attach the interfacing to the fabric by sewing the two together inside the seam allowance. If you use a seam allowance of 6mm, you will sew the interfacing at 3mm. Anything may work as a sew-in interfacing, including an extra layer of the same fabric.
+Tussenvoering om in te naaien wordt op zijn plek genaaid voor de stof gebruikt wordt. Je bevestigt de tussenvoering aan de stof door de twee binnen de naadtoeslag aan elkaar te naaien. Als je een naadtoeslag van 6 mm gebruikt naai je de tussenvoering op 3 mm vast. Eender wat kan dienen als tussenvoering om in te naaien, alsook een extra laag van je stof.
 
-The key part of the interfacing is to give your bow tie the structure you like. You can have a bow tie that stands proud and crisp. Or one that droops a bit at the tips. This is all about your preference.
+Het doel van de tussenvoering is je vlinderdas de structuur te geven die je wil. Je kan kiezen voor een das met veel volume en schwung. Of een die de boel wat meer laat hangen. Dit hangt allemaal af van je persoonlijke voorkeur.
 
-It is good to experiment with the interfacing on a scrap piece of your fabric, specially with the fusible kind. You want to make sure you get the structure you like before committing it to your pattern pieces.
+Het is goed om met de tussenvoering te experimenteren op een restje stof, vooral met de kleefbare soort. You want to make sure you get the structure you like before committing it to your pattern pieces.
 
-Although the pattern calls for applying interfacing to all parts, if you have thick or stiff fabric, you may be able to only do one side, or no sides at all.
+Hoewel het patroon zegt tussenvoering op alle delen te gebruiken kan je kiezen om dit maar aan één kant (of zelfs geen kant) te doen, afhankelijk van de dikte en structuur van je stof.
 
