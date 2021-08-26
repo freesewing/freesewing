@@ -1,4 +1,4 @@
 ---
-title: Brim angle
+title: Angle des visières
 ---
 
