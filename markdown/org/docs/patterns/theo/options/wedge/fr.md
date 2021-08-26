@@ -1,2 +1,2 @@
 
-Controls the length of the crossseam.
+Contrôle la longueur de la fourche.
