@@ -1,2 +1,2 @@
 
-Controls the length of the crossseam.
+Legt die Länge der Kreuznaht fest.
