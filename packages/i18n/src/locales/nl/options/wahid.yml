@@ -1,6 +1,6 @@
 ---
 backScyeDart:
-  title: Neep armsgat achter
+  title: Achterste armsgat neep
   description: De hoeveelheid die verwijderd wordt met een neep aan de achterkant van het armsgat.
 frontScyeDart:
   title: Neep armsgat voor
@@ -15,7 +15,7 @@ weltHeight:
   title: Hoogte paspel zak
   description: De hoogte van de paspel van de zak
 necklineDrop:
-  title: Diepte halslijn
+  title: Hoogte halslijn
   description: Bepaalt hoe laag de halslijn vooraan wordt
 frontStyle:
   title: Stijl halsopening
