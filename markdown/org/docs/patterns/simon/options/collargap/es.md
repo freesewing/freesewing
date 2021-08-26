@@ -1,4 +1,4 @@
-![Collar gap](collargap.svg)
+![Espaciado del cuello](collargap.svg)
 
 Distance the collar sits apart when closed.
 
