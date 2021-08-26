@@ -1,4 +1,4 @@
 
-![Waistband width](waistbandwidth.svg)
+![Taillenbundweite](waistbandwidth.svg)
 
-The width of the waistband
+Die Breite des Taillenbundes
