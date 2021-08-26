@@ -1,5 +1,5 @@
 
-![Afmeting paspel borstzak](chestpocketweltsize.svg)
+![Chest pocket welt size](chestpocketweltsize.svg)
 
 The height of the chest pocket welt.
 
