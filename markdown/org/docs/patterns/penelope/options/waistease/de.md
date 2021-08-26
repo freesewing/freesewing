@@ -1,2 +1,2 @@
-The amount of ease at the waist.
+Die Menge an Bequemlichkeits-/Bewegungszugabe an der Taille.
 
