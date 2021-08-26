@@ -1,12 +1,12 @@
 ---
-title: Privacy notice
+title: Privacy melding
 ---
 
 **Last update**: 8 January 2021
 
-This privacy notice describes the personal data we store. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties.
+Deze privacy melding beschrijft de persoonlijke gegevens die we opslaan. We geven aan waarom we de gegevens nodig hebben, hoe lang we ze bijhouden en of ze met derden gedeeld worden.
 
-We are confident it will demonstrate our commitment to privacy.
+We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden.
 
 For clarity, we've broken this up in four different types of roles:
 
@@ -24,24 +24,24 @@ Here are the relevant sections:
 ##### These roles are typically cumulative
 
 If you are a newsletter subscriber, you are also a visitor.
-And if you are a user with one or more models, you are also a user, and also a visitor.
+En als je een gebruiker bent met één of meer modellen ben je ook een gebruiker, en een bezoeker.
 
 </Tip>
 
-##### Data Controller and Contact information
+##### Data Controller en contactinformatie
 
-For questions about this privacy notice, you can contact Joost De Cock at joost@joost.at.
+Voor vragen over de privacy melding kan je Joost De Cock contacteren via joost@joost.at.
 
-##### Changes and Updates to this Policy
+##### Wijzigingen en Updates aan dit Beleid
 
-This policy may be updated occasionally. We will indicate this in the **Last update** data at the top of this document.
+Dit beleid kan af en toe een update krijgen. Dit zal aangegeven worden in de **Laatste update** gegevens bovenaan dit document.
 
 A more comprehensive overview of this document's history is [available on GitHub][1]
 
-##### See also
+##### Zie ook
 
- - [Your rights][2]
- - [Your consent][3]
+ - [Je rechten][2]
+ - [Je toestemming][3]
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 [2]: /docs/various/right/
