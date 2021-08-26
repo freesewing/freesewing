@@ -1,3 +1,3 @@
-![The hips ease option on Diana](./hipsease.svg)
+![De optie voor overwijdte heupen van Diana](./hipsease.svg)
 
-This option controls the amount of ease at the hips.
+Deze optie bepaalt de hoeveelheid overwijdte aan de heupen.
