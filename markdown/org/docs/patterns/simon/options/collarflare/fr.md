@@ -1,4 +1,4 @@
-![Collar flare](collarflare.svg)
+![Évasement du col](collarflare.svg)
 
 How much the collar flares out (at the collar edge side), rather than being straight.
 
