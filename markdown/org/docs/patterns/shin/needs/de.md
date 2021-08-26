@@ -1,7 +1,7 @@
 To make Shin, you will need the following:
 
 - Grundlegendes Nähzubehör
-- About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
+- Etwa 0.75 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/shin/fabric))
 - two eyelets and a drawstring
 
 > ## A serger/overlock is nice, but optional
