@@ -1,3 +1,3 @@
-![The leg bonus option on Bruce](./legbonus.svg)
+![De optie voor bonus beenlengte bij Bruce](./legbonus.svg)
 
-How much do you want to lengthen the legs?
+Hoeveel langer wil je de benen maken?
