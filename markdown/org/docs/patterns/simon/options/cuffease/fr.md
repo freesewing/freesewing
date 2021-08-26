@@ -1,4 +1,4 @@
-![Cuff ease](cuffease.svg)
+![Aisance de poignet](cuffease.svg)
 
 Determines how much the cuff is larger than your wrist.
 
