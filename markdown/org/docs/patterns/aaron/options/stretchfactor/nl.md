@@ -1,7 +1,7 @@
-![The stretch factor option on Aaron](./stretchfactor.svg)
+![De optie voor de stretch factor van Aaron](./stretchfactor.svg)
 
-How much does your fabric stretch?  Choose 0% if your fabric does not stretch.
+Hoe ver rekt je stof uit?  Kies 0% als je stof geen stretch heeft.
 
-> ##### This option does only impact stretch one-way (horizontal).
+> ##### Deze optie heeft alleen impact op de horizontale richting van de stretch.
 > 
-> Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
+> Bi-stretch is niet echt van belang voor deze top, maar als je wil kan je met de [lengte bonus](../lengthbonus) optie spelen.
