@@ -1,10 +1,10 @@
 Bruce consists of a back, and two sides, insets and fronts.
 
- - **Main fabric**
-   - Cut **1 back** on the fold
+ - **Buitenstof**
+   - Knip **1 rugpand** aan de stofvouw
    - Cut **2 fronts**
-   - Cut **2 insets**
-   - Cut **2 sides**
+   - Knip **2 inzetstukken**
+   - Knip **2 zijkanten**
 
 <Warning>
 
