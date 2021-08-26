@@ -166,7 +166,7 @@ Before we are going to sew the side seams, finish the side edges by serging or r
 
 ### Step 14: Sew the side seams
 
-![Sew the side seams](step14.png)
+![![Sew the side seams](etape 7)](step14.png)
 
 Place the front and back of each leg on top of each other, with the good sides together.
 
