@@ -1,5 +1,5 @@
 
-Controls the width of the legs.
+Legt die Weite des Hosenbeins fest.
 
 <Note>
 
