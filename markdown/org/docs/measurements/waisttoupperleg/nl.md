@@ -1,5 +1,5 @@
 ---
-title: Waist to upper leg
+title: Taille tot bovenbeen
 ---
 
-The **waist to upper leg** is measured from your waist down to the top of your leg. Measure it a the side of your body.
+De afmeting **taille tot bovenbeen ** is de afstand van je natuurlijke taille tot aan je bovenbeen. Neem deze maat aan de zijkant van je lichaam.
