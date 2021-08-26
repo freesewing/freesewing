@@ -1,13 +1,13 @@
-![Back inset](backinset.svg)
+![Insnede rug](backinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the back side?
+Hoe ver wil je dat het armsgat van je gilet op de rug naar binnen gaat?
 
 <Note>
 
-###### What's the point?
+###### Waarom?
 
-The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Het armsgat van je gilet kan verder naar binnen buigen, aangezien er geen mouw ingezet wordt.
+Dit heeft invloed op de stijl van je gilet.
 
 </Note>
 
