@@ -1,5 +1,5 @@
 
-![Center front hem drop](centerfronthemdrop.svg)
+![Verlaging zoom vooraan](centerfronthemdrop.svg)
 
-How much do you want the front of your jacket to be longer/lower than the back?
+Hoeveel langer/lager wil je dat de voorkant van je jasje is dan de achterkant?
 
