@@ -1,5 +1,5 @@
 ---
-title: Front armhole pitch depth
+title: Profondeur du point de pivot de l'emmanchure avant
 ---
 
 ![The effect of the front armhole pitch depth option on the pattern](sample.png)
