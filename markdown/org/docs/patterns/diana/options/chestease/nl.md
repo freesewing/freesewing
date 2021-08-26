@@ -1,3 +1,3 @@
-![The chest ease option on Diana](./chestease.svg)
+![De optie voor overwijdte borst bij Diana](./chestease.svg)
 
-This option controls the ease at your chest.
+Deze optie bepaalt hoeveel overwijdte je hebt aan je borst.
