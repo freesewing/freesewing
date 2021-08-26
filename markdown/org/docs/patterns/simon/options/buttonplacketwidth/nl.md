@@ -1,3 +1,3 @@
-![Button placket width](buttonplacketwidth.svg)
+![Breedte knopenpat](buttonplacketwidth.svg)
 
-The width of your button placket.
+De breedte van het knopenpat.
