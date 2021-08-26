@@ -2,10 +2,10 @@
 title: Was sind diese Symbole neben meinen Maßen?
 ---
 
-You might have noticed these kind of icons next to your measurements:
+Dir sind vielleicht diese Art von Symbolen neben deinen Maßen aufgefallen:
 <Gauge val={0} theme='light' />
 
-The value they represent shows how far the measurement deviates from the proportions we test our designs with:
+Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Proportionen abweichen, mit denen wir unsere Designs testen:
 
 <table spaces-before="0">
   <tr>
@@ -24,7 +24,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">ein bisschen niedriger</strong>
+      Der Wert ist <strong x-id="1">signifikant niedriger</strong>
     </td>
   </tr>
   
@@ -44,7 +44,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">ein bisschen höher</strong>
+      Der Wert ist <strong x-id="1">ein bisschen niedriger</strong>
     </td>
   </tr>
   
@@ -74,7 +74,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      Der Wert ist <strong x-id="1">signifikant niedriger</strong>
+      Der Wert ist <strong x-id="1">ein bisschen höher</strong>
     </td>
   </tr>
   
@@ -100,7 +100,7 @@ The value they represent shows how far the measurement deviates from the proport
 </table>
 
 
-These indicators serve a dual purpose:
+Diese Indikatoren dienen einem doppelten Zweck:
 
  - Es soll dir dabei helfen, Messfehler in deinen Maßen zu finden (du weißt sicher selber am besten, wo deine Ausreißer sind)
  - Es soll dir dabei helfen, im Voraus abzuschätzen, wo unsere Software vielleicht Probleme haben könnte, ein gutes Ergebnis zu liefern
