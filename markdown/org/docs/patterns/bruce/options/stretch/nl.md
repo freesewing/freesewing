@@ -1,3 +1,3 @@
-![The stretch option on Bruce](./stretch.svg)
+![De optie voor stretch bij Bruce](./stretch.svg)
 
 The amount of overall (horizontal) stretch.
