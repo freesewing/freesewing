@@ -1,4 +1,4 @@
 
-![Diepte armsgat factor](armholedepthfactor.svg)
+![Armhole depth factor](armholedepthfactor.svg)
 
-Dit controleert de diepte van het armsgat, wat vervolgens de breedte van de mouwkop beïnvloedt.
+This controls the depth of the armhole, which in turn influences the sleevecap width.
