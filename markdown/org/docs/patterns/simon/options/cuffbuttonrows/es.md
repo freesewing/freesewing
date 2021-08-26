@@ -1,4 +1,4 @@
-![Cuff button rows](cuffbuttonrows.svg)
+![Hileras de botones en los puños](cuffbuttonrows.svg)
 
 Do you want a single button on your barrelcuff, or two?
 
