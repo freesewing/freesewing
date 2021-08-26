@@ -1,4 +1,4 @@
-![Cuff drape](cuffdrape.svg)
+![Plisado del puño](cuffdrape.svg)
 
 How much the end of the sleeve is wider than the wrist.
 
