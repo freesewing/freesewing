@@ -10,10 +10,10 @@ Nous sommes convaincus que ça prouve notre engagement en faveur de la protectio
 
 Pour plus de clarté, nous avons divisé ceci en quatre types de rôles différents :
 
- - Pour **les visiteurs de notre site**, nous stockons **[les données des visiteurs](/docs/various/privacy/visitor/)**
- - Pour **les abonnés à notre newsletter**, nous stockons **[les données d'abonné](/docs/various/privacy/subscriber/)**
- - Pour **utilisateurs ayant un compte** sur notre site web, nous stockons **[données de compte](/docs/various/privacy/account/)**
- - Pour **utilisateurs avec un compte qui contient des personnes**, nous stockons **[données de personnes](/docs/various/privacy/people/)**
+ - Pour **les visiteurs de notre site**, nous stockons **[les données des visiteurs][v]**
+ - Pour **les abonnés à notre newsletter**, nous stockons **[les données d'abonné][s]**
+ - Pour **utilisateurs ayant un compte** sur notre site web, nous stockons **[données de compte][a]**
+ - Pour **utilisateurs avec un compte qui contient des personnes**, nous stockons **[données de personnes][p]**
 
 Voici les sections pertinentes :
 
@@ -36,13 +36,18 @@ Pour toute question concernant cette politique de confidentialité, vous pouvez 
 
 Cette politique peut être mise à jour occasionnellement. Nous l'indiquerons dans la date de **Dernière mise à jour** en haut de ce document.
 
-Un aperçu plus complet de l'historique de ce document est [disponible sur GitHub](https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy)
+Un aperçu plus complet de l'historique de ce document est [disponible sur GitHub][1]
 
 ##### Voir aussi
 
  - [Vos droits][2]
  - [Votre consentement][3]
 
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 [2]: /docs/various/right/
 [3]: /account/actions/consent/
+[v]: /docs/various/privacy/visitor/
+[s]: /docs/various/privacy/subscriber/
+[a]: /docs/various/privacy/account/
+[p]: /docs/various/privacy/people/
 
