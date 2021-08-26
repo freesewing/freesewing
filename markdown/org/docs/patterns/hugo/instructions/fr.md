@@ -23,7 +23,7 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
  - Placez les parmentures de poche aux bords de la pièce de poche, endroit contre endroit.
  - Cousez les parmentures à la poche avec une marge de 1 cm.  Cousez à la fois le bord long et le bord court sur le bas de la poche.
  - Dégarnissez soigneusement la marge de couture sur les pièces de parmenture.
- - Flip and turn the facing pieces good sides out.  Then hand-roll and press the seams.
+ - Retournez les pièces de parmenture sur l'endroit.  Aplatissez bien la couture en faisant rouler pour bien mettre en place la couture, puis pressez au fer.
  - Faites une surpiqûre à ½ cm le long des côtés long et bas de chaque coté de la poche afin de maintenir la parmenture et la marge de couture.
  - Surpiquez une autre ligne à ½ cm du bord intérieur de la parmenture de chaque côté de la poche.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
  - Dégarnissez l'excès de matière de la parmenture à l'intérieur de la poche.
@@ -70,8 +70,8 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
 
 > Suivez ces étapes deux fois, une fois pour la capuche extérieure et à nouveau pour la capuche intérieure.
 
- - Épingler la pièce du panneau central autour du bord extérieur restant de la capuche, endroit contre endroit.  Cousez.
- - Placez le pan central tout le long du bord d'un côté de la capuche, endroit contre endroit, et épinglez. Cousez.
+ - Placez le pan central tout le long du bord d'un côté de la capuche, endroit contre endroit, et épinglez.  Cousez.
+ - Épingler la pièce du panneau central autour du bord extérieur restant de la capuche, endroit contre endroit. Cousez.
  - Pressez les marges de couture et finissez-les comme à l'étape 2.  Dégarnir les marges de couture.
 
 ### Étape 7 : Assembler l'intérieur et l'extérieur de la capuche
