@@ -1,5 +1,5 @@
 ---
-title: Patronen
+title: Patterns
 order: 300
 ---
 
