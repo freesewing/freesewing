@@ -1,4 +1,4 @@
 ---
-title: Number of gores
+title: Aantal panden
 ---
 
