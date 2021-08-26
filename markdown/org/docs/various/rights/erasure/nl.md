@@ -3,6 +3,6 @@ title: The right to erasure
 order: 40
 ---
 
-You have the right to have your personal data erased.
+Je hebt het recht om je persoonlijke gegevens te wissen.
 
-Go to [/account/remove](/account/remove/) to remove all your data.  
+Ga naar [account/remove](/account/remove/) om al je gegevens te verwijderen.  
