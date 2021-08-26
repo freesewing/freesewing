@@ -6,7 +6,7 @@ waistHeight:
   title: Taillehoogte
   description: Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte
 lengthBonus:
-  title: Lengtebonus
+  title: Bonus lengte
   description: Bepaalt de lengte van de broek
 crotchDrop:
   title: Diepte kruis
@@ -39,8 +39,8 @@ waistBalance:
   title: Balans taille
   description: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  title: Breedte tailleband
+  description: De breedte van de tailleband
 grainlinePosition:
   title: Positie draadrichting
   description: Bepaalt de horizontale positie van het been in relatie tot het zitvlak
