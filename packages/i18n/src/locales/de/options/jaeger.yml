@@ -66,10 +66,10 @@ centerFrontHemDrop:
   title: Saumabfall in der Mitte
   description: Der Betrag, um den der Saum zur vorderen Mitte hin abgesenkt wird
 backVent:
-  title: Hinterlüftung
+  title: Hinterer Gehschlitz
   description: Die Anzahl der hinteren Öffnungen
 backVentLength:
-  title: Rückenlüftungslänge
+  title: Hinterer Gehschlitz Länge
   description: Die Länge der Hinterlüftung(en)
 buttonLength:
   title: Knopflänge
