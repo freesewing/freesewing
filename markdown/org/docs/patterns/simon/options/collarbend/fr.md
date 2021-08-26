@@ -1,4 +1,4 @@
-![Collar bend](collarbend.svg)
+![Courbure du col](collarbend.svg)
 
 How much the collar bends (on the collar stand side), rather than being straight.
 
