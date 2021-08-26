@@ -1,4 +1,4 @@
- - **Main fabric**
+ - **Buitenstof**
    - Cut **2 front** with _good sides together_
    - Cut **2 back** with _good sides together_
 
