@@ -1,13 +1,13 @@
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven is een heel simpel patroon, en bestaat uit drie hoofddelen plus een aantal stroken voor de hals, manchetten en zoom.
 
- - **Main fabric**
-   - Cut **1 back** on the fold
-   - Cut **1 front** on the fold
-   - Cut **2 sleeves** with good sides together
- - **Ribbing fabric**
-   - Cut **1 strip** for the neck opening binding
-   - Cut **2 strips**  for the cuffs
-   - Cut **1 strip**  for the hem
+ - **Buitenstof**
+   - Knip **1 rugpand** aan de stofvouw
+   - Knip **1 voorpand** aan de stofvouw
+   - Knip **2 mouwen** met goede kanten op elkaar
+ - **Boordstof**
+   - Knip **1 strook** voor de bies aan de halsopening
+   - Knip **2 stroken** voor de manchetten
+   - Knip **1 strook** voor de zoom
 
 <Warning>
 
