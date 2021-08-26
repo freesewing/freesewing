@@ -1,13 +1,13 @@
 ---
-title: Topstitching
+title: Sierstiksel
 ---
 
-![I used plenty of topstitching in a contrasting red thread on these jeans for my godson Akki](topstitching.jpg)
+![Ik gebruikte een hoop contrasterend rood sierstiksel op deze jeans voor mijn petekind Akki](topstitching.jpg)
 
-![Topstitching needles from Schmetz](topstitch-needles.jpg)
+![Sierstikselnaalden van Schmetz](topstitch-needles.jpg)
 
-Topstitching is when you sew with the good side of the fabric up and your stitches are visible on the finished garments.
+Sierstiksel wordt met de goede kant van de stof bovenaan gedaan, en houdt in dat je steken zichtbaar zijn op het afgewerkte kledingstuk.
 
-While a decorative feature, topstitching can also play a role in garment construction.
+Het kan zowel decoratief zijn als functioneel bij de constructie van een kledingstuk.
 
-> You can buy specific sewing needles that are optimised for topstitching
+> Je kan speciale naaimachinenaalden kopen die bedoeld zijn voor sierstiksel
