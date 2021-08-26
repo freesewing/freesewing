@@ -1,5 +1,5 @@
 
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Longitud extra de manga](sleevelengthbonus.svg)
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
