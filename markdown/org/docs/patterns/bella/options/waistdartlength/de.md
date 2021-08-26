@@ -1,5 +1,5 @@
 ---
-title: Waist dart length
+title: Länge des Taillenabnähers
 ---
 
 ![The effect of the waist dart length option on the pattern](sample.png)
