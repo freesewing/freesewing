@@ -1,17 +1,17 @@
 ---
-title: Seam allowance
+title: Naadtoeslag
 ---
 
-![The inside of the leg on a pair of jeans. The SA is the dark narrow stretch of fabric next to the seam. It has been zig-zagged to keep it from fraying](zig-zag.jpg)
+![De binnenkant van de pijp van een jeansbroek. De NT is het smalle stukje donkere stof naast de naad. Het is met een zigzagsteek afgewerkt zodat het niet uitrafelt](zig-zag.jpg)
 
-Seam allowance, often shortened to SA, is the extra fabric at the seam that allows you to sew a garment together.
+Naadtoeslag (afgekort tot NT) is de extra stof aan de naad die zorgt dat je een kledingstuk in elkaar kan naaien.
 
-If, instead of sewing, you could magically join seams together, there would be no need for seam allowance.
+Als je de randen van je stof met magie aan elkaar kon hangen in plaats van met een naaimachine was naadtoeslag niet nodig.
 
-Since we can't do magic, we need a bit of seam allowance so that the minor fraying of the fabric will not undo the seam.
+Aangezien we niet kunnen toveren hebben we een beetje naadtoeslag nodig zodat de naad niet loskomt als de stof een beetje rafelt.
 
-Seam allowance can differ. 1cm is common for some patterns, but in the US 5/8" or 15mm is standard. Make sure to always check the pattern for the default SA.
+Naadtoeslag varieert. 1 cm is gebruikelijk voor sommige patronen, maar in de VS is 5/8" of 15 mm de standaard. Let op dat je altijd nakijkt wat de naadtoeslag van je patroon is.
 
-Extra SA can be required for specific finished (like french seams) or for hemming.
+Soms heb je extra naadtoeslag nodig voor specifieke afwerkingen (zoals Franse naden) of voor een zoom.
 
-> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Foto door [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
