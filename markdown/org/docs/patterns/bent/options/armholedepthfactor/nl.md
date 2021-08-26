@@ -1,2 +1,2 @@
 
-This controls the depth of the armhole, which in turn influences the sleevecap width.
+Dit controleert de diepte van het armsgat, wat vervolgens de breedte van de mouwkop beïnvloedt.
