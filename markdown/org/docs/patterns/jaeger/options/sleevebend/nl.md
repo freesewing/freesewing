@@ -1,5 +1,5 @@
 
-![Sleeve bend](sleevebend.svg)
+![Mouw kromming](sleevebend.svg)
 
-The bend at the elbow of your sleeve.
+De buiging aan de elleboog van je mouw.
 
