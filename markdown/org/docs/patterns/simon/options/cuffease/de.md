@@ -1,4 +1,4 @@
-![Cuff ease](cuffease.svg)
+![Manschette Zugabe](cuffease.svg)
 
 Determines how much the cuff is larger than your wrist.
 
