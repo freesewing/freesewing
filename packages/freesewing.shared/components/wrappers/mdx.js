@@ -16,6 +16,13 @@ const DesignIterator = props => {
   return designs.map(design => <Component design={design} />)
 }
 
+const Figure = props => (
+  <figure>
+    <img src={props?.src} alt={props?.alt || ''} title={props?.title || ''} className="shadow-md"/>
+    <figcaption className="text-center italic">{props.title || 'FIXME: No title property set on this image'}</figcaption>
+  </figure>
+)
+
 const MdxWrapper = props => {
   const { page=false, t=x=>x } = props
   const { site, lang } = props.mdx.scope
