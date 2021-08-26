@@ -1,2 +1,2 @@
-Size of the waist band
+Grootte van de tailleband
 
