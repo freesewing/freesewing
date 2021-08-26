@@ -1,9 +1,9 @@
 ---
-title: Waist to floor
+title: Taille tot vloer
 ---
 
-The **waist to floor** is the measurement from your waist down to the floor.
+De afmeting **taille tot vloer ** is de afstand van je natuurlijke taille tot aan de vloer.
 
-To measure your waist to floor measurement, locate the height of your waist, and measure how high it is from the floor.
+Om de maat te nemen van je taille tot de vloer bepaal je de hoogte van je taille, en meet je hoe ver dit punt van de vloer is.
 
-It is often easiest to measure at the side of your body.
+Het is vaak het makkelijkst om dit aan de zijkant van je lichaam te meten.
