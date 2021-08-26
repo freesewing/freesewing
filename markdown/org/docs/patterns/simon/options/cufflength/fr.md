@@ -1,4 +1,4 @@
-![Cuff length](cufflength.svg)
+![Longueur de poignet](cufflength.svg)
 
 The length of your cuffs.
 
