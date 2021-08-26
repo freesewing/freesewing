@@ -1,4 +1,4 @@
-![Tip width](topwidth.svg)
+![Largeur de la pointe](topwidth.svg)
 
 The tip width is the width at the tip of the tie.
 
