@@ -1,5 +1,5 @@
 ---
-title: FreeSewing revenue pledge
+title: Belofte over de FreeSewing inkomsten
 ---
 
 The **FreeSewing revenue pledge** states that:
