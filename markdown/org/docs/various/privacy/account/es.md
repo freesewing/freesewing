@@ -10,13 +10,13 @@ order: 30
 - Your username and password
 - Optional: A profile picture, bio, and your social media accounts
 
-##### Why do we need it?
+##### ¿Por qué la necesitamos?
 
 - To authenticate you
 - To be able to contact you when required
 - Optional: We don't need a picture or your social media accounts, but they help to build an on-line community
 
-##### How long do we keep it?
+##### ¿Cuánto tiempo lo mantenemos?
 
 - We keep profile data up to 12 months after your last login, or until you remove it.
 
