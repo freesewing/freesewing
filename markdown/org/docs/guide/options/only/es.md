@@ -1,5 +1,5 @@
 ---
-title: Contents
+title: Contenidos
 ---
 
 This setting allows you to manually pick which parts you want to include in your pattern.
