@@ -4,7 +4,7 @@ title: Holmes What you need
 
 To make Holmes, you will need the following:
 
-- Basic sewing supplies
+- Basis naaimateriaal
 - About 0.5 metres of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - About 0.5 metres of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - A rigid material for the visor insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
