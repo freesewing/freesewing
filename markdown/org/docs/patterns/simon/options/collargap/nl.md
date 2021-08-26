@@ -1,6 +1,6 @@
-![Collar gap](collargap.svg)
+![Afstand kraag](collargap.svg)
 
-Distance the collar sits apart when closed.
+Hoe ver de kraag uit elkaar zit als hij gesloten is.
 
 <Note>
 
