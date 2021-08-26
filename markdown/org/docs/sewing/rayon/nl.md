@@ -2,12 +2,12 @@
 title: Rayon
 ---
 
-![I use rayon for my underwear](rayon.jpg)
+![Ik gebruik rayon voor mijn ondergoed](rayon.jpg)
 
-Rayon, sometimes referred to as viscose, is a synthetic fiber. It originates from wood pulp, but there's a lot of chemical hoops to jump through before it becomes fabric.
+Rayon, sometimes referred to as viscose, is a synthetic fiber. De vezel wordt gemaakt uit houtpulp, maar er is een heel chemisch proces nodig om er stof van te maken.
 
-As rayon is a fiber (like cotton is) the resulting fabric will depend on how it is woven. However, in general rayon is a versatile fabric that is smooth to the touch, drapes, and is somewhat slippery.
+Aangezien rayon een vezel is (zoals katoen) hangt het type van de stof af van de manier waarop de vezel verwerkt en geweven wordt. Over het algemeen is rayon echter een veelzijdige stof die glad aanvoelt, soepel valt en een beetje glibberig verwerkt.
 
-Rayon is not a good insulator of body heat. That makes it a poor choice for a winter coat, but a good choice for your summer dresses or underwear.
+Rayon houdt slecht lichaamswarmte vast. Hierdoor is het geen goede keuze voor een winterjas, maar perfect voor zomerjurken of ondergoed.
 
-> Wikipedia has a lot to say about rayon: [Rayon on Wikipedia](http://en.wikipedia.org/wiki/Rayon)
+> Wikipedia heeft veel te zeggen over rayon: [Rayon on Wikipedia](http://en.wikipedia.org/wiki/Rayon)
