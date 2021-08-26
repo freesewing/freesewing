@@ -1,4 +1,4 @@
-![Hood closure](./hoodclosure.svg)
+![Capuchon sluiting](./hoodclosure.svg)
 
-Controls how much of the hood is part of the front closure.
+Bepaalt hoeveel van de capuchon deel uitmaakt van de sluiting vooraan.
 
