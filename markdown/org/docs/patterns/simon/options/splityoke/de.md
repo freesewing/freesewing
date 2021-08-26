@@ -1,4 +1,4 @@
-![Split yoke](splityoke.svg)
+![Geteilte Passe](splityoke.svg)
 
 Do you want a split yoke?
 
