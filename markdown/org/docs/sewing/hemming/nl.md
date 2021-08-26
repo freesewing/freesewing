@@ -1,11 +1,11 @@
 ---
-title: Hemming
+title: Zomen
 ---
 
-![The hem at the bottom of a T-shirt](coverlock-hem.jpg)
+![De zoom aan de onderrand van een t-shirt](coverlock-hem.jpg)
 
-Hemming, or a hem, is a type of finish that is done on the bottom of a garment.
+Zomen, of een zoom, is een soort afwerking die gebruikt wordt aan de onderrand van een kledingstuk.
 
-The hem of your trousers is where they meet your shoes. The hem of a dress is the bottom edge of the dress.
+De zoom van je broek is waar je broek je schoenen tegenkomt. De zoom van een jurk is de onderrand van de jurk.
 
-The hem is not a seam in the sense that it does not join two parts together. Rather hemming is used to finish the fabric edge and prevent it from fraying.
+De zoom is geen naad, omdat er geen twee stukken stof aan elkaar gezet worden. Zomen wordt gebruikt om de rand van de stof af te werken en te voorkomen dat ze uitrafelt.
