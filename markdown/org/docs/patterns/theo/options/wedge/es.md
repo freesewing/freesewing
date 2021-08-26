@@ -1,2 +1,2 @@
 
-Controls the length of the crossseam.
+Controla la longitud de la costura transversal.
