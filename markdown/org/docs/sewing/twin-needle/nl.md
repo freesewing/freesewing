@@ -1,13 +1,13 @@
 ---
-title: Twin needle
+title: Tweelingnaald
 ---
 
-![A twin needle from Schmetz](twin-needle.jpg)
+![Een tweelingnaald van Schmetz](twin-needle.jpg)
 
-![A twin needle stitch is flexible because of the zig-zag at the back.](twin-needle.gif)
+![Stiksel met een tweelingnaald is elastisch vanwege de zigzag acheraan.](twin-needle.gif)
 
-A twin needle is useful for when you need to sew stretchable topstitching (like when hemming a knit). You can also use it for a decorative effect.
+Een tweelingnaald is nuttig als je elastisch sierstiksel nodig hebt (bijvoorbeeld aan de zoom van een jersey kledingstuk). Je kan het ook gebruiken voor een decoratief effect.
 
-While a coverlock machine is purpose-built to produce a stretchable topstitch, not everybody has such a machine. A twin needle uses two upper threads and a single under thread. This causes a zig-zag effect on the back, making the stitch stretchable. Meanwhile, you get two parallel lines of stitching at the front.
+Een coverlock machine is speciaal gemaakt om dit soort elastisch sierstiksel te maken, maar niet iedereen heeft dit thuis staan. Een tweelingnaald gebruikt twee bovendraden en een enkele onderdraad. Dit zorgt voor een zigzageffect aan de achterkant, wat de steek elastisch maakt. Aan de voorkant heb je twee parallelle rijen stiksel.
 
-> Animated GIF by [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
+> GIF door [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
