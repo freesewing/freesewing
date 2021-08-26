@@ -1,8 +1,8 @@
-Four different bow tie styles!
+Vier verschillende stijlen van vlinderdas!
 
 Benjamin allows you to make four different bow ties.
 
- - Contemporary Diamond
- - Traditional Butterfly
- - Classic Square
- - Whimsical Wide Square
+ - Hedendaagse diamant
+ - Traditionele vinder
+ - Klassiek vierkant
+ - Speels wijd vierkant
