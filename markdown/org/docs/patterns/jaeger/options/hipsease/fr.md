@@ -1,4 +1,4 @@
 
-![Hips ease](hipsease.svg)
+![Aisance des hanches](hipsease.svg)
 
-The amount of ease at your hips.
+La marge d'aisance aux hanches.
