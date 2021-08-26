@@ -1,2 +1,2 @@
-Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
 
