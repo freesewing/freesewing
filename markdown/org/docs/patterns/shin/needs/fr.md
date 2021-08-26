@@ -1,7 +1,7 @@
 To make Shin, you will need the following:
 
 - Fourniture de base pour la couture
-- About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
+- Environ 75 cm d'un tissu adapté ([voir Options de tissu](/docs/patterns/shin/fabric))
 - two eyelets and a drawstring
 
 > ## A serger/overlock is nice, but optional
