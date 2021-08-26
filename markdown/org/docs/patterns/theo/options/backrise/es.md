@@ -1,4 +1,4 @@
-![Back rise](backrise.svg)
+![Elevación de la espalda](backrise.svg)
 
 This raises the waist of your trousers at the back.
 
