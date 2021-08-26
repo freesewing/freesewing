@@ -12,7 +12,7 @@ necklineBend:
   title: Forme de l'encolure
   description: Détermine la forme/courbure du devant de l'encolure.
 necklineDrop:
-  title: Décolleté
+  title: Profondeur d'encolure
   description: Détermine de combien abaisser l’encolure l'avant.
 shoulderStrapPlacement:
   title: Position de la bretelle
