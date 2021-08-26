@@ -1,4 +1,4 @@
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Knopflochleiste Falzbreite](buttonholeplacketfoldwidth.svg)
 
 The width of the fold on a classic style buttonhole placket.
 
