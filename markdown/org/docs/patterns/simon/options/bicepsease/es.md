@@ -1,4 +1,4 @@
-![Biceps ease](./bicepsease.svg)
+![Holgura del bíceps](./bicepsease.svg)
 
 How much do you want the sleeve to be wider than your upperarm circumference?
 
