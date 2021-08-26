@@ -1,12 +1,12 @@
 ---
 backOpening:
-  title: Back opening
+  title: Rugopening
   description: Controls the opening at the back of the apron
 chestDepth:
   title: Strap length
   description: Controls the length of the straps
 lengthBonus:
-  title: Length bonus
+  title: Lengtebonus
   description: Controls the length of the apron
 bibLength:
   title: Bib length
