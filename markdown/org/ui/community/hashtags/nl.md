@@ -2,7 +2,7 @@
 title: Use of hashtags
 ---
 
-On social media, use the pattern-specific tags when posting about our pattern.
+Mocht je hashtags gebruiken op social media, gebruik dan de specifieke voor onze patronen.
 
 For example, for Simon use `#FreeSewingSimon`:
 
