@@ -13,7 +13,7 @@ Your back darts should be of equal length. Make sure to sew them precisely.
 
 </Note>
 
-## Step 2: Construct the back pockets
+## Stap 2: Maak de achterzakken
 
 Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
 
