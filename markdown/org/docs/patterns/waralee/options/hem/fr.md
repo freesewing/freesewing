@@ -1,2 +1,2 @@
-Size of the hem at the bottom of the pants
+Taille de l'ourlet au bas du pantalon
 
