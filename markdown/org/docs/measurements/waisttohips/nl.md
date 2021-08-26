@@ -1,5 +1,5 @@
 ---
-title: Waist to hips
+title: Taille tot heupen
 ---
 
-The **waist to hips** measurement is measured from your waist down to the top if your hip bone (where your trousers sit). Measure it a the side of your body.
+De **taille tot heup** wordt gemeten van je taille tot de top van je heupbeenderen (waar je broekriem zit). Neem deze maat aan de zijkant van je lichaam.
