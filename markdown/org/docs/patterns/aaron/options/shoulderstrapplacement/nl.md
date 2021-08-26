@@ -1,5 +1,5 @@
-![The shoulder strap placement option on Aaron](./shoulderstrapplacement.svg)
+![De optie voor de locatie van de schouderband bij Aaron](./shoulderstrapplacement.svg)
 
-Determines the position of the shoulder strap on the shoulder.
+Bepaalt de positie van de schouderband op de schouder.
 
-> Lower values place the strap closer to the neck, whereas higher values place it closer to the shoulder.
+> Lagere waarden plaatsen de schouderbanden dichter bij de nek, hogere waarden plaatsen ze dichter bij de schouder.
