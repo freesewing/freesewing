@@ -1,3 +1,3 @@
-![Length bonus](lengthbonus.svg)
+![Bonus lengte](lengthbonus.svg)
 
-This option allows you to lengthen (or shorten) your waistcoat.
+Deze optie staat je toe je gilet te verlengen of verkorten.
