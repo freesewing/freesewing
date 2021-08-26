@@ -1,11 +1,11 @@
-![Tip width](topwidth.svg)
+![Breedte punt](topwidth.svg)
 
-The tip width is the width at the tip of the tie.
+De breedte van de punt is de breedte aan de punt van de das.
 
-How wide your tie is at the tip is a style choice.
+Hoe breed je das is aan de punt is een stijlkeuze.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+Maak de breedte van de punt niet smaller dan de breedte van de knoop
 
 </Note>
