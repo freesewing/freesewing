@@ -1,3 +1,3 @@
-![The back opening option on Cathrin](./backopening.svg)
+![De optie voor rugopening bij Cathrin](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Deze optie bepaalt hoe breed de rugopening van je korset zal zijn. De rugopening is waar je korset dichtgeregen wordt.
