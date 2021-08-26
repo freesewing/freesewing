@@ -1,5 +1,5 @@
 
-## Step 1: Close the shoulder seams
+## Etape 1: Assemblez les coutures d'épaule
 
 ![Close the shoulder seams](step01.svg)
 
@@ -32,7 +32,7 @@ A more extensive how-to on knit binding can be found in the [Aaron Instuctions](
 
 </Tip>
 
-- We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There’s a difference, and it’s explained [here](/docs/sewing/knit-binding)).
+- Nous finirons par le trou du bras et du cou avec un [biais de jersey](/docs/sewing/knit-binding) (Remarque : pas une bande de jersey. There’s a difference, and it’s explained [here](/docs/sewing/knit-binding)).
 
 <Note>
 This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
@@ -80,7 +80,7 @@ This is the most complex step in making the Teagan T-shirt, but it just requires
 - Now you’ll sew the binding down. Sur l'endroit de votre tissu, cousez le long du bord de votre biais (le plus loin du bord du pli), en s'assurant de bien prendre le biais de l'arrière dans la couture.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Si vous avez une recouvreuse, ce sera parfait pour cette couture.
 </Note>
 
 - You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
