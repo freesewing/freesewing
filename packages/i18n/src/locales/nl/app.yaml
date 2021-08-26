@@ -14,7 +14,7 @@ askForHelp: Vraag om hulp
 automatic: Automatisch
 averagePeopleDoNotExist: "Gemiddelde mensen bestaan niet"
 awesome: Super
-back: Terug
+back: Achterzijde
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
 blog: Blog
@@ -86,7 +86,7 @@ freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
-goodJob: Goed gedaan
+goodJob: Mooi werk
 goodToSeeYouAgain: Leuk je weer te zien {user}
 handle: Referentie
 helpUsTranslate: Help ons met vertalen
@@ -105,7 +105,7 @@ loginWithProvider: 'Log in with {provider}'
 logOut: Afmelden
 manual: Manueel
 markdownHelp: MarkDown hulp
-measurements: Maten
+measurements: Afmetingen
 menu: Menu
 metadata: Metadata
 metricUnits: Metrische eenheden (cm)
@@ -158,7 +158,7 @@ reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
 resendActivationEmailMessage: "Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen."
 resendActivationEmail: Stuur een nieuwe activatie email
-resetPassword: Herstel wachtwoord
+resetPassword: Wachtwoord opnieuw instellen
 reset: Reset
 restoreDefaults: Standaardwaarden herstellen
 restoreDesignDefaults: Standaardwaarden ontwerp herstellen
@@ -220,12 +220,12 @@ yes: true
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
-yourRights: Jouw rechten
+yourRights: Je rechten
 makerDocs: Maker documentatie
 devDocs: Documentatie voor ontwikkelaars
 slogan: Een JavaScript bibliotheek voor naaipatronen op maat
 getStarted: Aan de slag
-apiReference: API Referentie
+apiReference: API Reference
 tutorial: Handleiding
 editThisPage: Deze pagina bewerken
 loginRequiredRedirect: 'U bent doorgestuurd naar de inlogpagina omdat {page} authenticatie vereist'
@@ -286,7 +286,7 @@ contributeToThing: Draag bij aan {thing}
 mtmIsOurJam: Naaipatronen op maat is onze specialiteit
 fitYouDeserve: Je mist heel wat als je voor standaard maten gaat. <br /> Dus schrijf je vandaag in, en krijg de pasvorm die je verdient.
 supportNag: <b>Free</b>Sewing is <b>gratis</b>, maar we zouden het appreciëren mocht je overwegen <a href='/patrons/join/'>ons te steunen</a>.
-madeToMeasure: Op maat gemaakt
+madeToMeasure: Op maat gemaakte
 sizes: Maten
 standardSizes: Standaardmaten
 accountRequired: Deze functie vereist een FreeSewing account
@@ -297,7 +297,7 @@ shareThing: 'Deel {thing}'
 link: Link
 cloneThing: 'Kopieer {thing}'
 cloneDescription: Maak een exacte kopie die de maten van het originele patroon gebruikt.
-furtherReading: Further reading
+furtherReading: Meer lezen
 saveAsNewPattern: Bewaar Als Nieuw Patroon
 saveAsNewPattern-txt: Sla (een kopie van) dit patroon op in je FreeSewing account
 exportPattern: Patroon exporteren
