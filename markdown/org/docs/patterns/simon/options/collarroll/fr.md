@@ -1,4 +1,4 @@
-![Collar roll](collarroll.svg)
+![Repli du col](collarroll.svg)
 
 How much the collar is taller than the collar stand at center back.
 
