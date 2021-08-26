@@ -1,7 +1,7 @@
 ---
-title: Seam allowance
+title: Naadtoeslag
 ---
 
-This controls whether you want _seam allowance_ or not. And, if you want it, how much you want.
+This controls whether you want _seam allowance_ or not. En als je naadwaarde wil, hoeveel.
 
-This will probably be self-explanatory if you know what seam allowance is. In case you don't, check out [the seam allowance documentation](/docs/sewing/seam-allowance).
+Dit is vanzelfsprekend als je weet wat naadwaarde is. Als je dat niet weet, kijk dan even naar de [documentatie over naadwaarde](/docs/sewing/seam-allowance).
