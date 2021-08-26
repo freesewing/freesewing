@@ -1,9 +1,9 @@
-![The hips ease option on Aaron](./hipsease.svg)
+![De optie voor overwijdte aan de heupen bij Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+Hoeveel ruimte wil je aan je heupen?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+De waarde die je hier geeft wordt toegevoegd aan je heupomtrek bij het tekenen van het patroon.
 
-> ##### This option also allows negative values.
+> ##### Deze optie laat negatieve waarden toe.
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the stretch option.
+> Pas alleen negatieve waarden toe als je elastisch materiaal gebruikt en wil dat het aansluitend past. Overall stretch should be configured with the stretch option.
