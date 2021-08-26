@@ -1,7 +1,7 @@
 ---
-title: Neck circumference
+title: Halsomtrek
 ---
 
-The **neck circumference** is the measurement around your neck, at the level you would wear your shirt collar, or tie.
+De **halsomtrek** is de omtrek van je hals, op de plek waar je hemdskraag of das zouden zitten.
 
-To measure your **neck circumference**, wrap the tape measure around your neck where your shirt collar would sit.
+Om je **halsomtrek** te meten wikkel je de lintmeter rond je hals op de plek war normaal je hemdskraag zou zitten.
