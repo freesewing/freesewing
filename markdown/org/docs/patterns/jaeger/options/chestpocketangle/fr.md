@@ -1,5 +1,5 @@
 
-![Chest pocket angle](chestpocketangle.svg)
+![Angle de poche de poitrine](chestpocketangle.svg)
 
-The angle under which the chest pocket is placed.
+Angle d'inclinaison de la poche de poitrine.
 
