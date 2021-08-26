@@ -1,4 +1,4 @@
 
-![Collar notch angle](collarnotchangle.svg)
+![Angle du col cranté](collarnotchangle.svg)
 
-Angle of the collar notch.
+Angle du col cranté.
