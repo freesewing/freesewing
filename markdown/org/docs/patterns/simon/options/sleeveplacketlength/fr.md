@@ -1,4 +1,4 @@
-![Sleeve placket length](sleeveplacketlength.svg)
+![Longueur de la patte de manche](sleeveplacketlength.svg)
 
 How long do you want the sleeve placket to be?
 
