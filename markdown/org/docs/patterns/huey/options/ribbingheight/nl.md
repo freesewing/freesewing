@@ -1,4 +1,4 @@
 
-![Ribbing height](ribbingheight.svg)
+![Hoogte boord](ribbingheight.svg)
 
 The height of the ribbing at the hem and cuffs.
