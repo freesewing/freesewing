@@ -1,4 +1,4 @@
 
-![Front cutaway start](frontcutawaystart.svg)
+![Start uitsnijding vooraan](frontcutawaystart.svg)
 
-How far below the lower button does the front start to open.
+Hoe ver onder de onderste knoop begint het voorpand te openen.
