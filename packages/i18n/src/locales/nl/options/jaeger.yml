@@ -1,6 +1,6 @@
 ---
 centerBackDart:
-  title: Nek neep
+  title: Middenrug neep
   description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Lengte mouwvent
@@ -12,7 +12,7 @@ chestShaping:
   title: Borstvorming
   description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
-  title: Plaatsing neep vooran
+  title: Plaatsing neep vooraan
   description: Locatie van de nepen vooraan
 frontOverlap:
   title: Overlap voorzijde
@@ -27,19 +27,19 @@ chestPocketWidth:
   title: Borstzakbreedte
   description: De breedte van de borstzak
 chestPocketPlacement:
-  title: Plaatsing borstzak
+  title: Plaatsting borstzak
   description: De locatie van de borszak
 chestPocketAngle:
   title: Hoek borstzak
-  description: De hoek waaronder de borstzak geplaatst wordt
+  description: De hoek van de borstzak
 chestPocketWeltSize:
-  title: Paspel borstzak
+  title: Afmeting paspel borstzak
   description: Grootte van de paspel van de borstzak
 frontPocketPlacement:
-  title: Plaatsing zak
+  title: Plaatsing voorzak
   description: Plaatsing van de zakken
 frontPocketWidth:
-  title: Breedte zak
+  title: Breedte voorzak
   description: Breedte van de zakken
 frontPocketDepth:
   title: Diepte zak
@@ -66,16 +66,16 @@ centerFrontHemDrop:
   title: Verlaging zoom vooraan
   description: De mate waarin de zoom vooraan verlaagd is
 backVent:
-  title: Vent achteraan
+  title: Split achter
   description: Het aantal vents achteraan
 backVentLength:
-  title: Lengte vent achteraan
+  title: Lengte split achter
   description: De lengte van de vent(s) achteraan
 buttonLength:
   title: Lengte knopen
   description: De lengte waarover de knopen zijn gespreid
 frontCutawayAngle:
-  title: Snijhoek vooraan
+  title: Hoek uitsnijding vooraan
   description: De hoek waaronder de voorzijde wordt weggesneden naar de zoom toe
 frontCutawayStart:
   title: Start uitsnijding vooraan
@@ -87,7 +87,7 @@ collarSpread:
   title: Spreiding kraag
   description: De kraagspreiding bepaalt hoe de kraag over de schouders valt
 lapelStart:
-  title: Revers start
+  title: Start revers
   description: Start van de revers
 lapelReduction:
   title: Reductie revers
@@ -97,10 +97,10 @@ collarHeight:
   description: De hoogte van de kraag
 collarNotchDepth:
   title: Diepte inkeping kraag
-  description: Diepte van de kraaginkeping
+  description: Diepte van de inkeping van de kraag
 collarNotchAngle:
   title: Hoek inkeping kraag
-  description: Hoek waaronder de kraag is ingekeept
+  description: Hoek van de inkeping van de kraag
 collarNotchReturn:
   title: Kraag inkeping terugloop
   description: De mate waarin de kraag terugkomt na de inkeping, in vergelijking met de revers
@@ -108,5 +108,5 @@ rollLineCollarHeight:
   title: Rollijn kraaghoogte
   description: Hoeveel de kraag de nek omhelst
 hemRadius:
-  title: Ronding zoom
+  title: Straal zoom
   description: De mate waarin de zoom is afgerond
