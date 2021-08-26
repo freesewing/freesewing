@@ -1,4 +1,4 @@
 
-![Back neck cutout](./backneckcutout.svg)
+![Hals uitsnijding achteraan](./backneckcutout.svg)
 
 Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
