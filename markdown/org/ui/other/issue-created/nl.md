@@ -1,8 +1,8 @@
 ---
-title: We created a Github issue for this
+title: We hebben hier een Githun issue voor aangemaakt
 ---
 
-You can subscribe to this issue, or comment on it if you'd like to share more information.  
-Doing so requires a Github account, but they are free.
+Je kan je abonneren op dit issue, of een comment achterlaten als je meer informatie wil delen.   
+Hiervoor heb je een Github account nodig, maar dat is gratis.
 
-**Tip:** An active issue — one that has subscribers or comments — gets more attention.
+**Tip:**Een actief issue - een dat abonnees of comments krijgt - krijgt ook meer aandacht.
