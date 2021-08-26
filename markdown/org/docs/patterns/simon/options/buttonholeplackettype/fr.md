@@ -7,7 +7,7 @@ La valeur par défaut est augmentée.
 > 
 > Une des raisons de choisir une patte de boutonnière séparée est que vous pouvez choisir un tissu différent pour la patte. Et même si l'on utilise le même tissu, certains préfèrent l'apparence d'une patte à boutonnière séparée.
 > 
-> Having a sewn on placket also gives you more flexibility for pattern matching when using a non-plain fabric. However, you can keep a cut-on placket and instead change the buttonhole placket fold width to match your pattern.
+> Une patte de boutonnière séparée vous donne également plus de souplesse pour ajuster cette patte au devant de la chemise, si vous utilisez un tissu à motif (cependant, vous pouvez aussi dans ce cas choisir une patte intégrée, et jouer alors sur la largeur du pli de la patte de boutonnière pour avoir de beaux raccords).
 > 
 > #### Pourquoi choisir une boutonnière intégrée?
 > 
