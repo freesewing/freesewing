@@ -1,7 +1,7 @@
 ---
-title: Seat circumference
+title: Omtrek zitvlak
 ---
 
-The **seat circumference** is the measurement around the fullest part of your bum.
+De **omtrek zitvlak** is de maat rondom het volste deel van je kont.
 
-To measure your **seat circumference**, run the tape measure around your bum at the fullest part. Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+Om de **omtrek zitvlak** te meten wikkel je de lintmeter rond het volste deel van je kont. Zorg dat de lintmeter horizontaal blijft. Met andere woorden, parallel met de vloer.
