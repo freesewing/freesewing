@@ -1,5 +1,5 @@
 ---
-title: Back dart height
+title: Hauteur de pince dos
 ---
 
 ![The effect of the back dart height option on the pattern](sample.png)
