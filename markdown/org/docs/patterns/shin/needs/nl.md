@@ -1,11 +1,11 @@
-To make Shin, you will need the following:
+Om Shin te maken heb je het volgende nodig:
 
-- Basic sewing supplies
-- About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
-- two eyelets and a drawstring
+- Basis naaimateriaal
+- Ongeveer 0,75 meter geschikte stof (zie [optionele stoffen](/docs/patterns/shin/fabric))
+- Twee vetergaatjes en een koordje
 
-> ## A serger/overlock is nice, but optional
+> ## Een overlockmachine is handig, maar optioneel
 > 
-> As with all stretch fabrics, a serger/overlock will make your life easier.
+> Zoals met alle gebreide en elastische stoffen maakt een overlock het leven eenvoudiger.
 > 
-> If you do not have one of those, don't despair. You don't really need it. You can use another technique for stretch seams, such as a zig-zag stich, twin needle, or elastic thread.
+> Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. Je kan een andere techniek gebruiken voor het naaien van elastische naden, zoals een zigzagsteek, tweelingnaald of elastisch garen.
