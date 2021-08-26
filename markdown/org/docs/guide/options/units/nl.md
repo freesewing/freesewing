@@ -1,13 +1,13 @@
 ---
-title: Units
+title: Eenheden
 ---
 
-This controls the units used (by the text) on the pattern.
+Dit controleert de eenheden die door de tekst op het patroon gebruikt worden.
 
-Freesewing supports two types of units:
+Freesewing ondersteunt twee soorten eenheden:
 
- - Metric units (cm)
- - Imperial units (inch)
+ - Metrische eenheden (cm)
+ - Imperiale (Engelse) eenheden (duim)
 
 You can configure your default units in your account settings.  
 In addition, you can set the units individually for each model.  
