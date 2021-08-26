@@ -192,6 +192,6 @@ While sewing, stretch elastic and fabric together between each set of pins, remo
 </Tip>
 
 ### Step 15: Trim and clean up
-![Yay! You've made it](step15.png)
+![Juhuu! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.
