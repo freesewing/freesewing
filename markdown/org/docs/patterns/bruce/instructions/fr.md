@@ -109,7 +109,7 @@ La couture s’arrête à mi-chemin (là où se termine la pince), mais votre su
 </Tip>
 
 ### Étape 7 : Assembler le premier côté et les devants
-![Join the first side to the fronts](step07.png)
+![Assemblez le premier côté et les devants](step07.png)
 
 Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
 
