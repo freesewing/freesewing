@@ -1,3 +1,3 @@
-![This option controls whether or not to include the front pouch pocket](./pocket.svg)
+![Deze optie bepaalt of de voorzak al dan niet toegevoegd is](./pocket.svg)
 
-Do you want front (pouch) pocket or not?
+Wil je een zak (vooraan) of niet?
