@@ -1,4 +1,4 @@
-![Back scye dart](backscyedart.svg)
+![Pince de carrure](backscyedart.svg)
 
 This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
 
