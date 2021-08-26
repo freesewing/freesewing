@@ -1,4 +1,4 @@
-![Yoke dart](yokedart.svg)
+![Pinza del canesú](yokedart.svg)
 
 Controls the dart at the bottom side of the yoke.
 
