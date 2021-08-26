@@ -1,4 +1,4 @@
-![Collar angle](collarangle.svg)
+![Angle du col](collarangle.svg)
 
 The number of degrees between the collar edge and the grainline.
 
