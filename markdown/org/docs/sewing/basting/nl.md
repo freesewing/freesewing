@@ -1,20 +1,20 @@
 ---
 layout: onecol
-title: Basting
+title: Driegen
 ---
 
-![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)
+![De vorm van deze achterzak is gedriegd voor de zak op de jeansbroek gestikt wordt](basting.jpg)
 
-Basting is temporary sewing to hold things in place.
+Driegen is tijdelijk naaien om dingen op hun plek te houden.
 
-It is typically done by hand, but you can also machine baste.
+Het wordt meestal met de hand gedaan, maar kan ook met de machine.
 
-Examples of where basting is commonly used are:
+Voorbeelden van wanneer driegen gebruikt wordt:
 
- - Basting a seam in place before sewing it
- - Basting an ornament, pocket, or other part in place before attaching it
- - Basting darts or other pattern changes while fitting the garment on a model
+ - Een naad op zijn plek driegen voor je definitief stikt
+ - Een versiering, zak of ander deel op de juiste plaats houden voor je definitief stikt
+ - Nepen of veranderingen aan het patroon driegen terwijl je het kledingstuk past op een model
 
-Basting is never permanent, but merely a temporary measure to hold things in place.
+Driegen is nooit permanent, maar een tijdelijke manier om dingen op hun plek te houden.
 
-> Basting and pinning are different techniques for similar situations
+> Driegen en spelden zijn verschillende technieken voor gelijkaardige situaties
