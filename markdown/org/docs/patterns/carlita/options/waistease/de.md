@@ -1,3 +1,3 @@
-![Waist ease](./waistease.svg)
+![Taillenzugabe](./waistease.svg)
 
 The amount of ease at your waist.
