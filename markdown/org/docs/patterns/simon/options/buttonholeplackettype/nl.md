@@ -1,14 +1,14 @@
 
-Do you want the buttonhole placket to be part of the left front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+Wil je dat het knoopsgatenpat deel is van het linkervoorpand (aangeknipt), of liever een individueel stuk dat je kan aannaaien (apart)?
 
-The default is grown on.
+De standaard is aangeknipt.
 
-> #### Why pick seperate?
+> #### Waarom apart?
 > 
-> One reason to pick a sewn on buttonhole placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a seperate buttonhole placket.
+> Een reden om een aangestikt knoopsgatenpat te kiezen is dat je een andere stof of draadrichting kan gebruiken. Zelfs als je dezelfde stof gebruikt zien sommige mensen toch liever een apart knoopsgatenpat.
 > 
-> Having a sewn on placket also gives you more flexibility for pattern matching when using a non-plain fabric. However, you can keep a cut-on placket and instead change the buttonhole placket fold width to match your pattern.
+> Een apart knoopsgatenpat geeft je ook meer flexibiliteit om patronen te doen doorlopen als je een stof gebruikt die niet effen is. Je kan ook een aangeknipt knoopsgatenpat houden en de breedte van de vouw aanpassen om je patroon te doen doorlopen.
 > 
-> #### Why pick cut-on?
+> #### Waarom aangeknipt?
 > 
-> It's less work, and you can go for that seamless look.
+> Het is minder werk, en je kan voor die naadloze look gaan.
