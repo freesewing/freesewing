@@ -31,13 +31,13 @@ passwordInfo: Cambiar tu contraseña requiere tu contraseña actual. Rellene eso
 password: Contraseña
 passwordTitle: Ingrese su contraseña actual y su nueva contraseña
 patronInfo: Los patrocinadores apoyan a Freesewing financieramente. Son partidarios leales que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.
-patron: Patrocinador
+patron: Mecenas
 removeYourAccountInfo: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que tenemos almacenados para usted. No hay vuelta atrás, así que proceda con precaución.
 removeYourAccount: Elimina tu cuenta
 removeYourAccountWarning: Esto eliminará su cuenta, sus borradores, sus modelos y todos los datos que hemos almacenado para usted. No hay vuelta atrás de esto.
-resetPasswordInfo: Ingrese una nueva contraseña.
+resetPasswordInfo: Ingrese su nueva contraseña.
 resetPassword: Restablecer contraseña
-resetPasswordTitle: Ingrese su nueva contraseña
+resetPasswordTitle: Ingrese una nueva contraseña
 restrictProcessingOfYourDataInfo: 'La Protección de datos general (GDPR) de la UE garantiza su llamado <em> derecho a restringir el procesamiento </em>: el derecho a detener el procesamiento de sus datos.'
 restrictProcessingOfYourData: Restringir el procesamiento de sus datos
 restrictProcessingWarning: Si bien no se eliminarán los datos, esto lo desconectará y congelará su cuenta. Además, puede interesarle su propio negocio, pero deberá comunicarse con nosotros cuando desee restaurar el acceso a su cuenta.
