@@ -1,7 +1,7 @@
 ---
-title: Chest circumference
+title: Borstomtrek
 ---
 
-The **chest circumference** measurement wraps around the fullest part of your chest.
+De **borstomtrek** maat gaat rond het volste deel van je borst.
 
-To measure your chest circumference, wrap the tape measure around your chest at the fullest part. Make sure to keep the tape measure horizontal (parallel to the floor).
+Om je borstomtrek te meten wikkel je de lintmeter rond het volste deel van je borst. Zorg dat de lintmeter horizontaal is (parallel met de vloer).
