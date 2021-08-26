@@ -1,3 +1,3 @@
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Bonus mouwlengte](sleevelengthbonus.svg)
 
-This option will lengthen the sleeves of your sweatshirt.
+Deze optie zal de mouwen van je sweater verlengen.
