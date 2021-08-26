@@ -1,3 +1,3 @@
-![Hood height](./hoodheight.svg)
+![Altura de capucha](./hoodheight.svg)
 
-Controls the height of the hood.
+Controla la altura del capucha.
