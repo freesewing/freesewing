@@ -1,5 +1,5 @@
 ---
-title: Box pleat
+title: Pli plat
 ---
 
 Adds a box pleat to the back.
