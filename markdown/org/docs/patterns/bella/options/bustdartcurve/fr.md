@@ -1,5 +1,5 @@
 ---
-title: Bust dart curve
+title: Courbe de la pince poitrine
 ---
 
 ![The effect of the bust dart curve option on the pattern](sample.png)
