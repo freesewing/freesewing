@@ -9,45 +9,45 @@ his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
 
 </Note>
 
-You probably assume that we ask for money to keep the servers running. But that's not exactly true.
+Je veronderstelt waarschijnlijk dat we om geld vragen om de servers te laten draaien. Maar dat is niet echt waar.
 
-I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
+Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat privilege ook verantwoordelijkheid inhoudt.
 
-I am privileged, and thus I have responsibilities. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
+Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
 
-Could I use the money? Yes I could.  
-Do I need the money? No I don't.
+Zou ik het geld kunnen gebruiken? Ja, dat zou wel kunnen.  
+Heb ik het geld nodig? Nee, eigenlijk niet.
 
-##### The value of your support
+##### De waarde van jullie steun
 
-The main risk to FreeSewing is the same as any open source project out there: maintainer burnout.
+Het grootste gevaar voor FreeSewing is hetzelfde als bij elk open source project: burnout bij de maker.
 
-While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
+Hoewel ik niet meer alleen aan FreeSewing werk - en ik kan niet lovend genoeg zijn over de waarde van het werk van alle medewerkers - ben ik toch niet immuun voor gevoelens als **Waarom doe ik dit in godsnaam?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Keep up the good work**.
+When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. En die boodschap is: **Hey, wat je doet is de moeite. Blijf vooral doorgaan.'**
 
-##### The value of your money
+##### De waarde van jullie geld
 
-It is not *just* about the money. But that doesn't mean the money is not important. Much to the contrary.
+Het gaat niet *enkel* om het geld. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
 
-Raising money by doing something I love and then passing it on to charity allows me to sleep at night.
+Geld inzamelen door iets te doen wat ik graag doe, en het dan doorgeven aan een goed doel, is wat mij op twee oren doet slapen.
 
-I could volunteer at a soup kitchen, or teach underprivileged children how to code. But instead I’m working on FreeSewing.
+I could volunteer at a soup kitchen, or teach underprivileged children how to code. Maar in de plaats werk ik aan FreeSewing.
 
-Which is why all the money raised through FreeSewing goes to charity. It makes this project not only fun to do, but also socially responsible. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+En daarom gaat al het geld dat FreeSewing binnenbrengt naar een goed doel. Het maakt dit project niet alleen leuk, maar ook maatschappelijk verantwoord. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
 
-##### Charity is not sexy
-Here's the tricky part: People give less once they know the money goes to charity. I wish it wasn't the case, but it is.
+##### Goede doelen zijn niet sexy
+Here's the tricky part: People give less once they know the money goes to charity. Ik wou dat het niet zo was, maar ja.
 
-So we're presenting [our subscription options](/community/join) like you would see on a for-profit site. It seems more intuitive this way, and also just works better.
+Daarom presenteren we onze [abonnementsopties](/community/join) zoals je op een winstmakende site zou zien. Deze manier lijkt intuïtiever, en werkt ook beter.
 
-Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
+Ja, alles is gratis, en het geld gaat niet echt naar de rekening van de server (omdat ik die uit eigen zak betaal, om bovenstaande redenen). Maar dat betekent niet dat deze bijdragen niet cruciaal zijn voor het welzijn van het project, of tenminste de man achter de schermen (ik dus).
 
 ##### Why MSF is my charity of choice
 
-There's a lot of misery in the world. As I watch the news, I often feel my faith in humanity slipping. Some of the most vulnerable people on this planet seem largely abandoned by rich countries and supra-national organisations.
+Er is veel miserie in de wereld. Als ik naar het nieuws kijk voel ik soms hoe mijn geloof in de mensheid verloren geraakt. Sommige van de meest kwetsbare mensen op deze planeet lijken grotendeels in de steek gelaten door rijke landen en supranationale organisaties.
 
-Yet somehow, wherever crisis strikes, there is a familiar banner flying that provides hope, and help. It's not the flag of the United Nations, nor is it the star spangled banner, or the blue and gold of the European Union.
+Yet somehow, wherever crisis strikes, there is a familiar banner flying that provides hope, and help. Het is niet de vlag van de Verenigde Naties, of de stars and stripes, of het blauw en goud van de Europese Unie.
 
 The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of M&eacute;decins Sans Fronti&egrave;res/Doctors Without Borders fly. Sometimes precariously, among the rubble of their bombed hospitals, but always there.
 
