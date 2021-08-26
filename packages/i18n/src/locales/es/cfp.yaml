@@ -12,7 +12,7 @@ devDocsAvailableAt: Documentación para desarrolladores está disponible en
 talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Traza tu patrón
 testYourPattern: Prueba tu patrón
-draftThing: 'Draft {thing}'
+draftThing: 'Trazar {thing} '
 testThing: 'Test {thing}'
 renderInBrowser: Haz clic abajo para mostrar el patrón en el navegador.
 weWillReRender: Cuando realices cambios, lo volveremos a trazar para ti.
