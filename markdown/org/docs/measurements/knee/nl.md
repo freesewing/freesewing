@@ -1,7 +1,7 @@
 ---
-title: Knee circumference
+title: Knieomtrek
 ---
 
-The **knee circumference** is the measurement around your knee.
+De **knieomtrek** wordt rond je knie gemeten.
 
-To measure your **knee circumference**, wrap the tape measure around your knee. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your knee.
+Om je **knieomtrek** knieomtrek te meten wikkel je de lintmeter rond je knie. Zorg dat de lintmeter parallel is met de vloer terwijl je de omtrek van je knie meet.
