@@ -1,4 +1,4 @@
-![Knot width](knotwidth.svg)
+![Ancho de nudo](knotwidth.svg)
 
 The knot width is the width in the middle of the bow tie, where you make the knot.
 
