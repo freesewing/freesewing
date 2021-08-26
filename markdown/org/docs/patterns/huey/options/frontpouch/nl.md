@@ -1,4 +1,4 @@
 
 ![Front pouch](frontpouch.svg)
 
-This option controls whether or not to include the front pouch pocket
+Deze optie bepaalt of de voorzak al dan niet toegevoegd is
