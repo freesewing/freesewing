@@ -1,4 +1,4 @@
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Knopflochleiste Stil](buttonholeplacketstyle.svg)
 
 Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
 
