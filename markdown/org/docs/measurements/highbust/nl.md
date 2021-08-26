@@ -1,9 +1,9 @@
 ---
-title: High bust
+title: Hoge buste
 ---
 
-The **high bust** measurement is your chest circumference measured just under your arms, above the fullest part of your bust.
+De **hoge buste** afmeting is je borstomtrek net onder je armen, boven het breedste deel van je borst.
 
-The point of the high bust measurement is to get an idea of the chest circumference without taking breasts into account. As such, this measurement is only relevant for models with breasts.
+Het doel van de hoge bustemaat is een idee te krijgen van de borstomtrek zonder rekening te houden met de borsten. As such, this measurement is only relevant for models with breasts.
 
-To measure your high bust, wrap the tape measure around your chest just under your arms. You might not be able to keep it horizontal (parallel to the floor), but that's ok.
+Om je hoge buste te meten wikkel je de lintmeter om je borst, net onder je armen. Het is misschien niet mogelijk om de lintmeterhorizontaal (parallel met de vloer) te houden, maar dat is ok.
