@@ -647,5 +647,5 @@ When you've marked where buttons should go, sew them on.
 > 
 > This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
 
-![That's it, you're done](finished.gif)
+![Das war's, du bist fertig](finished.gif)
 
