@@ -1,10 +1,10 @@
-![Cuff style](cuffstyle.svg)
+![Estilo del puño](cuffstyle.svg)
 
 What style of cuff do you want?
 
- - Rounded barrel cuff
+ - Puño de barril redondeado
  - Chamfer barrel cuff
- - Straight barrel cuff
- - Rounded French cuff
+ - Puño de barril recto
+ - Puño francés redondeado
  - Chamfer French cuff
- - Straight French cuff
+ - Puño francés recto
