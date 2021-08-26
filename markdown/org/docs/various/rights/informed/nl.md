@@ -3,6 +3,6 @@ title: The right to be informed
 order: 10
 ---
 
-You have the right to be informed about the collection and use of your personal data.
+Je hebt het recht om geïnformeerd te worden over het verzamelen en gebruik van je persoonlijke gegevens.
 
-Read [our privacy notice](/docs/various/privacy/) to inform yourself.
+Lees [onze privacy melding](/docs/various/privacy/) om jezelf te informeren.
