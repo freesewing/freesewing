@@ -1,3 +1,3 @@
-![Seat ease](./seatease.svg)
+![Overwijdte zitvlak](./seatease.svg)
 
-The amount of ease at your seat.
+De hoeveelheid overwijdte aan je zitvlak.
