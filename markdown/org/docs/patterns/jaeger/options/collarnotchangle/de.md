@@ -1,4 +1,4 @@
 
-![Collar notch angle](collarnotchangle.svg)
+![Kragenwinkel](collarnotchangle.svg)
 
-Angle of the collar notch.
+Winkel der Kragenkerbe.
