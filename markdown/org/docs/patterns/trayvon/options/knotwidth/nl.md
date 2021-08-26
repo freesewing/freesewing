@@ -1,11 +1,11 @@
-![Knot width](knotwidth.svg)
+![Breedte knoop](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+De breedte van de knoop is de breedte in het midden van de das, waar je de knoop maakt.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+De breedte van je das in het midden heeft invloed op de knoop van de das. Ga breed voor grote en dikke knopen, ga smal voor kleinere knopen.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+Maak de breedte van de knoop niet groter dan de breedte van de punt
 
 </Note>
