@@ -1,4 +1,4 @@
 
-![Collar notch depth](collarnotchdepth.svg)
+![Profundidad de la muesca del cuello](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Profundidad de la muesca del cuello.
