@@ -1,4 +1,4 @@
-![Collar roll](collarroll.svg)
+![Vuelta del cuello](collarroll.svg)
 
 How much the collar is taller than the collar stand at center back.
 
