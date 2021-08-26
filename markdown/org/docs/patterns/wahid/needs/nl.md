@@ -1,8 +1,8 @@
-To make Wahid, you will need the following:
+Om Wahid te maken heb je het volgende nodig:
 
- - Basic sewing supplies
- - One meter of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
- - One meter of lining fabric
- - Fusable interfacing
- - Buttons
+ - Basis naaimateriaal
+ - Een meter geschikte stof ([zie Stofkeuzes](/docs/patterns/wahid/fabric))
+ - Een meter voering
+ - Kleefbare tussenvoering
+ - Knopen
 
