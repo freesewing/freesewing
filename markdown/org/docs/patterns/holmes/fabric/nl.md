@@ -13,7 +13,7 @@ A fun thing to try is printed cotton. Just double up the main fabric so each pie
 ### Lining Fabric
 Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but really you can make it from any fabric you deem appropriate for lining. Just remember it needs to protect the facing and the main fabric from your head.
 
-### Interfacing
+### Tussenvoering
 Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly ***Baste*** your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again ***Baste*** the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary ***Pad Stitches***.
 
 <Note>
