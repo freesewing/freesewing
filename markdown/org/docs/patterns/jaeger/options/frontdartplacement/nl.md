@@ -1,4 +1,4 @@
 
-![Front dart placement](frontdartplacement.svg)
+![Plaatsing neep vooraan](frontdartplacement.svg)
 
-Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
+Plaatsing van de voorste neep in verhouding met je borstomtrek. Een hoger nummer schuift de zak naar opzij.
