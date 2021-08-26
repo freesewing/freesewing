@@ -1,5 +1,5 @@
 ---
-title: Chest ease
+title: Aisance de poitrine
 ---
 
 ![The effect of the chest ease option on the pattern](sample.png)
