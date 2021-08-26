@@ -1,4 +1,4 @@
-![Front inset](frontinset.svg)
+![Vorderseite Ausschnitt](frontinset.svg)
 
 How far do you want your waistcoat armhole to curve inwards on the front?
 
