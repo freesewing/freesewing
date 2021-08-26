@@ -1,4 +1,4 @@
-![Back inset](backinset.svg)
+![Inserción trasera](backinset.svg)
 
 How far do you want your waistcoat armhole to curve inwards on the back side?
 
