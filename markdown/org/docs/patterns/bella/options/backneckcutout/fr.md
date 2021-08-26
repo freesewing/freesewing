@@ -1,5 +1,5 @@
 ---
-title: Arrondi de l'encolure dos
+title: Arrondi de l'encolure au dos
 ---
 
 ![The effect of the back neck cutout option on the pattern](sample.png)
