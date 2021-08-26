@@ -1,3 +1,3 @@
-![The biceps ease factor on Brian](./bicepsease.svg)
+![De factor voor biceps overwijdte bij Brian](./bicepsease.svg)
 
-The amount of ease at your upper arm.
+De hoeveelheid overwijdte aan je bovenarm.
