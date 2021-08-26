@@ -1,12 +1,12 @@
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Breedte vouw knoopsgatenpat](buttonholeplacketfoldwidth.svg)
 
-The width of the fold on a classic style buttonhole placket.
+De breedte van de vouw op een klassiek knoopsgatenpat.
 
 <Note>
 
-If you have a fabric with a pattern (striped or checkers for example) you can set the fold to half the width of your repeating pattern. 
-This way, your pattern will match perfectly.
+Als je een stof hebt met een patroon (strepen of ruiten bijvoorbeeld) kan je de breedte op de helft van de breedte van je patroonherhaling zetten. 
+Op deze manier zal je patroon perfect doorlopen.
 
-This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
+Dit is alleen van toepassing op een klassiek knopenpat. Dus als je voor het naadloze knopenpat koos wordt dit genegeerd.
 
 </Note>
