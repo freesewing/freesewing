@@ -1,5 +1,5 @@
 ---
-title: Dubbele paspelzak
+title: Double welt pockets
 ---
 
 ## Video
@@ -15,71 +15,71 @@ David is a friend of the site, and by all measures much better at explaining thi
 
 ## Before you start
 
-### Wat je nodig hebt
+### What you need
 
 To make double welt pockets, you will need:
 
- - Basis naaimateriaal
- - De stof of het patroondeel waar je de zak in wil maken
- - Twee stroken stof voor de paspels
- - Een strookje tussenvoering
- - Voering of een andere geschikte stof voor de binnenzak (Zie stof- en kleuropties)
- - Een beleg voor de binnenzak, afhankelijk van je stof- en kleuropties
+ - Basic sewing supplies
+ - The fabric or pattern piece you want to make the pocket in
+ - Two fabric strips for the welts
+ - A strip of interfacing
+ - Lining or other suitable fabric for the pocket bag (See fabric and colour options)
+ - Facing for the pocket bag, depending on your fabric and colour options
 
 ### Parameters
 
-Two values determine the size of your double welt pocket. Dit zijn:
+Two values determine the size of your double welt pocket. They are:
 
- - Breedte van de zak: dit is de breedte van de opening van de afgewerkte dubbele paspelzak
- - Hoogte van de paspel: dit is de hoogte van één paspel, en dus de helft van de hoogte van een dubbele paspelzak
+ - The pocket width: This is the width of the opening of the finalized double welt pocket
+ - The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
 
 > In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
 
-## Knippen
+## Cutting
 
-### Paspels
+### Pocket welts
 
 The welts are two rectangular strips of fabric with the following measurements:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+ - Length: Pocket width + 4cm
+ - Width: Welt height x2 + 5cm
 
 For our example:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13+4 = 17cm
+ - Width: (0.5x2)+5 = 6cm
 
 They will form the two narrow strips of fabric that form your double welt pocket.
 
 > Make sure to respect the grainline when cutting the two welts
 
-### Tussenvoering zak
+### Pocket interfacing
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+ - Length: Pocket widht + 4cm
+ - Width: Welt height x2 + 5cm
 
 For our example:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13+4 = 17cm
+ - Width: (0.5x2)+5 = 6cm
 
 > You may have noticed that the interfacing is the same size as a welt
 
 The interfacing is used to stabalize the pocket, and will be fused to the fabric with your iron.
 
-### Optioneel: zakbeleg
+### Optional: Pocket facing
 
 The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+ - Length: Pocket width + 4cm
+ - Width: Welt height x2 + 5cm
 
 For our example:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13+4 = 17cm
+ - Width: (0.5x2)+5 = 6cm
 
 > You may have noticed that the facing is the same size as a welt
 
@@ -87,15 +87,15 @@ The facing is what you'll see when you peer through the opening of your pocket.
 
 The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
 
-### Binnenzak
+### Pocket bag
 
 The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
 
 > There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
 
-## Constructie
+## Construction
 
-### Stap 1: kleef de tussenvoering op z'n plek
+### Step 1: Fuse interfacing in place
 
 ![Fuse interfacing in place](step01.png)
 
@@ -103,19 +103,19 @@ Fuse the pocket interfacing to the bad side of your garment, so that it covers t
 
 > Patterns typically have notches that help you determine the placement of a welt pocket
 
-### Stap 2: Markeer de paspelzak op de juiste kant van de stof
+### Step 2: Mark the welt pocket on the good side of the fabric
 
 ![Mark the welt pocket on the good side of the fabric](step02.png)
 
 Mark the welt pocket as follows:
 
- - Markeer de zakbreedte met verticale lijnen. Laat deze lijnen iets verder doorlopen, dit helpt later om de paspels op de juiste plek te leggen
- - Markeer het midden van de zakopening met een horizontale lijn. Laat ook deze lijn iets verder doorlopen om het je later makkelijker te maken
- - Markeer twee horizontale lijnen, parallel aan de middenlijn, op dezelfde afstand als de paspelhoogte (in ons voorbeeld is dit 0.5 cm)
+ - Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
+ - Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
+ - Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
 
 The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
 
-### Stap 3: Vouw en strijk de paspels
+### Step 3: Fold and press the welts
 
 ![Fold and press the welts](step03.png)
 
@@ -127,7 +127,7 @@ Press the fold so that it becomes a sharp crease.
 
 > By offsetting the edges, the welt edge tapers off, which reduces bulk and visibility on the outside of the garment.
 
-### Stap 4: Stik de paspels op hun plaats
+### Step 4: Sew welts in place
 
 ![Sew welts in place](step04.png)
 
@@ -145,7 +145,7 @@ Make sure to start and stop precisely on the vertical lines that indicate the po
 
 When you're done, sew the second welt in place. Note that this will be a bit more tricky as you'll have to fold back the first welt, and lay part of your second welt over it.
 
-### Stap 5: Knip je zak open
+### Step 5: Cut open your pocket
 
 ![Cut open your pocket](step05.png)
 
@@ -156,7 +156,7 @@ Cut open your welt pocket by cutting along the center horizontal line. Stop shor
 
 > Make sure to not cut into your stitches or cut too far. Make it precise.
 
-### Stap 6: draai de paspels naar de andere kant en strijk
+### Step 6: Flip the welts to the other side and press
 
 ![Flip the welts to the other side and press](step06.png)
 
@@ -168,7 +168,7 @@ Flip the welts to the back, and press them flat. Take your time to work the fabr
 
 > You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
 
-### Stap 7: Stik de zijkant van de zakopening aan de paspels
+### Step 7: Sew the pocket opening sides to the welts
 
 ![Sew the pocket opening side to the welt on one side](step07a.png) ![And repeat on the other side](step07b.png)
 
@@ -178,7 +178,7 @@ Sew the triangular piece of fabric from the pocket opening to the welts.
 
 > Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
 
-### Stap 8: Stik het onderste zakdeel aan de onderste paspel
+### Step 8: Sew the bottom pocket bag to the bottom welt
 
 ![Sew the bottom pocket bag to the botom welt](step08.png)
 
@@ -188,13 +188,13 @@ Also finish the edge of the welt with a zig-zag stitch so the welt stays flat in
 
 > The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
 
-### Stap 9: Optioneel: Stik het beleg aan het bovenste zakdeel
+### Step 9: Optional: Sew facing to top pocket bag
 
 ![Sew the facing to the top pocket bag](step09.png)
 
-> Deze stap is optioneel. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
+> This step is optional. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
 
-### Stap 10: Stik het bovenste zakdeel aan de bovenste paspel
+### Step 10: Sew the top pocket bag to the top welt
 
 ![Sew the top pocket bag to the top welt](step10.png)
 
@@ -202,7 +202,7 @@ Fold your garment out the way so you can sew the pocket bag to the top welt.
 
 > If you applied facing to your pocket bag, make sure to place it with the facing towards the welts.
 
-### Stap 11: Bevestig de paspels aan het zakdeel
+### Step 11: Attach the welts to the pocket bag
 
 ![Sew one side](step11a.png) ![Sew the other side](step11b.png) ![And sew the top](step11c.png)
 
@@ -214,7 +214,7 @@ Fold back your garment at the top of the welt pocket.
 
 Now, sew the top of the pocket opening to the pocket bag.
 
-### Stap 12: Binnenzak afwerken
+### Step 12: Finish the pocket bag
 
 ![Now finish the pocket bag](step12.png)
 
