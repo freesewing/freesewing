@@ -9,7 +9,7 @@
    - Cut **1 collarstand** (part 8)
    - Cut **2 pockets** (part 9)
    - Cut **1 chest pocket welt** (part 10)
- - **lining fabric**
+ - **tissu de doublure**
    - Cut **2 fronts** (part 1)
    - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
    - Cut **2 backs** (part 2)
@@ -30,9 +30,9 @@
 ###### Good sides together, or precise pattern matching?
 
 Lorsqu'une pièce doit être coupée en deux exemplaires, vous pouvez les découper sur un tissu plié en deux [endroit contre endroit](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Cependant, lorsque je travaille avec un tissu à motifs, je préfère couper les pièces individuellement pour mieux contrôler les raccords des motifs.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l'image l'une de l'autre dans un miroir . Donc retournez votre patron ou votre tissu lorsque vous coupez la deuxième pièce.
 
 </Note>
 
