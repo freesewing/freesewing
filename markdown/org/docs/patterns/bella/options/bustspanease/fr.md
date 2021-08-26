@@ -1,5 +1,5 @@
 ---
-title: Bust span ease
+title: Aisance de l'écart poitrine
 ---
 
 ![The effect of the bust span ease option on the pattern](sample.png)
