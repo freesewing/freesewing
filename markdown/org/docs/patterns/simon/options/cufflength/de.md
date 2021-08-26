@@ -1,4 +1,4 @@
-![Cuff length](cufflength.svg)
+![Manschettenlänge](cufflength.svg)
 
 The length of your cuffs.
 
