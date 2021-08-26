@@ -1,12 +1,12 @@
 ---
 layout: onecol
-title: Knippen
+title: Cutting
 ---
 
-![Ik, druk t-shirts aan het uitknippen](cutting.jpg)
+![Me cutting out some T-shirts](cutting.jpg)
 
-Knippen slaat op het uit de stof knippen van de verschillende patroondelen.
+Cutting is the act of cutting out the different pattern pieces out of your fabric.
 
-Knippen wordt meestal met een schaar of rolmes gedaan.
+Cutting is typically done with scissors or a rotary cutter.
 
-> The **cut of a garment**, the way it looks, refers to how it was cut out. Bijvoorbeeld, een laag uitgesneden top.
+> The **cut of a garment**, the way it looks, refers to how it was cut out. For example, high-cut jeans and a low-cut top.
