@@ -1,2 +1,2 @@
-Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde.
 
