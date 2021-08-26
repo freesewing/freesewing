@@ -1,5 +1,5 @@
 ---
-title: Measurements
+title: Afmetingen
 order: 300
 ---
 
