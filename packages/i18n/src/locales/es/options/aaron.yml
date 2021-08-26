@@ -12,7 +12,7 @@ necklineBend:
   title: Forma del cuello
   description: Determina la forma/curva del cuello en el frente.
 necklineDrop:
-  title: Caída del cuello
+  title: Caída del escote
   description: La cantidad de cuello que se corta en el frente.
 shoulderStrapPlacement:
   title: Posición de los tirantes
