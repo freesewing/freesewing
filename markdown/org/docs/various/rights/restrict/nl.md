@@ -3,7 +3,7 @@ title: The right to restrict processing
 order: 50
 ---
 
-You have the right to request a restriction on the processing of your personal data.
+Je hebt het recht een restrictie aan te vragen voor het verwerken van je persoonlijke gegevens.
 
 Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
 
