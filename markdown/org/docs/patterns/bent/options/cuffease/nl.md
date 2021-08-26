@@ -1,2 +1,2 @@
 
-The amount of ease at your cuff/wrist.
+De hoeveelheid overwijdte aan je manchet/pols.
