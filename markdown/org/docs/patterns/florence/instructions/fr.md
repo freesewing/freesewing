@@ -1,7 +1,7 @@
 
 ### Étape 1 : Coudre la couture centrale
 
-Placer les deux pièces du tissu destiné à l'extérieur du masque endroit contre endroit, et les coudre ensemble sur le côté courbe, qui sera au milieu de notre masque *endroit contre endroit/0>.
+Placer les deux pièces du tissu destiné à l'extérieur du masque endroit contre endroit, et les coudre ensemble sur le côté courbe, qui sera au milieu de notre masque *endroit contre endroit/0>.</p>
 
 ![Coudre la couture centrale](step1.svg)
 
@@ -11,7 +11,7 @@ Placer les deux pièces du tissu destiné à l'extérieur du masque endroit cont
 
 <Note>
 
-Cette étape n'a pas de valeur fonctionnelle, elle améliore seulement l'aspect de votre masque.
+Cette étape n'a aucune valeur fonctionnelle, elle améliore seulement l'aspect de votre masque.
 Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sauter.
 
 </Note>
@@ -31,7 +31,7 @@ Maintenant nous allons coudre ensemble le tissu intérieur (doublure) et le tiss
  - Placez votre doublure sur l'envers.
  - Ensuite, placez deux liens aux coins d'un des côtés (à droite dans notre exemple) afin qu'ils sortent juste un peu du masque, le reste des liens étant maintenu à l'intérieur.
  - Maintenant, placez dessus le tissu extérieur, sur l'endroit. Vous devriez maintenant avoir les deux épaisseurs de votre masque l'une sur l'autre *endroit contre endroit* avec deux liens pris en sandwich
- - Pin through ribbons and layers to keep them in place
+ - Épingler les liens et les épaisseurs de tissu ensemble
  - Maintenant, faites la même chose de l'autre côté
 
 <Tip>
@@ -59,7 +59,7 @@ Il suffit de retourner le masque en passant par le côté laissé ouvert et en t
 
 <Note>
 
-Cette étape n'a aucune valeur fonctionnelle, elle améliore seulement l'aspect de votre masque.
+Cette étape n'a pas de valeur fonctionnelle, elle améliore seulement l'aspect de votre masque.
 Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sauter.
 
 </Note>
