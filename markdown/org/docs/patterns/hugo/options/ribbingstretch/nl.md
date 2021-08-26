@@ -1,8 +1,8 @@
 ![Ribbing stretch on Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Met deze optie kan je de stretch van je boord aanpassen.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Als je (bijvoorbeeld) 90% kiest, tekenen we voor elke 10 cm boord maar 9 cm. This way, 9cm of ribbing will be stretched to 10cm.
 
 <Note>
 
