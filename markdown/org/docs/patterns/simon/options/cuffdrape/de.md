@@ -1,4 +1,4 @@
-![Cuff drape](cuffdrape.svg)
+![Manschette drapieren](cuffdrape.svg)
 
 How much the end of the sleeve is wider than the wrist.
 
