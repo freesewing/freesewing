@@ -1,4 +1,4 @@
 ---
-title: Brim width
+title: Largeur des visières
 ---
 
