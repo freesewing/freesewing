@@ -6,19 +6,19 @@ waistbandBelowWaist:
   title: Lower waistband
   description: Percentage to move the waistband below the actual waist
 waistReduction:
-  title: Waist reduction
+  title: Reductie taille
   description: Percentage to reduce the waistband
 cuffWidth:
   title: Cuff width
   description: Width of the leg cuff
 cuffStyle:
-  title: Cuff style
+  title: Stijl manchet
   description: Style of the leg cuff
 bandBelowKnee:
   title: Cuff below knee
   description: Controls the cuff distance from the knee
 kneeToBelow:
-  title: Cuff length
+  title: Lengte manchet
   description: Controls the tightness of the cuff as compared to the knee
 ventLength:
   title: Vent length
