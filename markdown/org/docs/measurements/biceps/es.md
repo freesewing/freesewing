@@ -1,5 +1,5 @@
 ---
-title: Biceps circumference
+title: Contorno del brazo
 ---
 
 The **biceps circumference** measurement goes around the fullest part of your upper arm.
