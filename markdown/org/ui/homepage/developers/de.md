@@ -1,9 +1,9 @@
 - - -
 - - -
 
-#### Curious how this works?
+#### Neugierig, wie das hier funktioniert?
 
-FreeSewing is written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
+FreeSewing ist in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) geschrieben. Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
 
 Our websites are built with [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) and kindly hosted by [Netlify](https://www.netlify.com/).
 
@@ -13,11 +13,11 @@ Our code and markdown content is hosted by [Github](https://github.com/freesewin
 
 We are appreciative of these and other projects/companies that allow us to stand on their shoulders.
 
-#### Learn more
+#### Erfahre mehr
 
-Our [developer documentation](https://freesewing.dev) is available on [freesewing.dev](https://freesewing.dev). You'll find links to all our repositories there, as well as in-depth documentation, tutorials, and examples.
+Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.dev](https://freesewing.dev) verfügbar. Dort findest du Links zu all unseren Repositories sowie ausführliche Dokumentation, Tutorials und Beispiele.
 
-#### Want to help out?
+#### Willst du mithelfen?
 
 Awesome ❤️   
 Our [contributor documentation](https://freesewing.dev/contributors/) is a good starting point. We also have dedicated guides for [translators](https://freesewing.dev/translators/) and [editors](https://freesewing.dev/editors/).
