@@ -1,4 +1,4 @@
-![Hood angle](./hoodangle.svg)
+![Capuchon hoek](./hoodangle.svg)
 
-Controls the angle at which the hood is attached
+Bepaalt de hoek waaronder de capuchon is geplaatst
 
