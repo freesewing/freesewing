@@ -1,7 +1,7 @@
 ---
-title: This is a legacy pattern
+title: Dies ist ein veraltetes Schnittmuster
 ---
 
-This pattern was made with an older version of FreeSewing and is not compatible with the current version.
+Dieses Schnittmuster wurde mit einer älteren Version von FreeSewing erstellt und ist mit der aktuellen Version nicht kompatibel.
 
-Click the button below to try and re-create this pattern in the current version. If it falls apart again, we'll pick up the pieces and offer to submit a bug report.
+Klicke auf den Knopf unten um zu versuchen, das Schnittmuster in der aktuellen Version neu zu erstellen. Falls es wieder auseinanderfällt werden wir die Bruchstücke einsammeln und dir anbieten, einen Bug-Report zu versenden.
