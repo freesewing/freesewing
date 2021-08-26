@@ -3,13 +3,13 @@ title: The right to object
 order: 70
 ---
 
-You have the right to object to your personal data being used for scientific research.
+Je hebt het recht bezwaar te hebben op het gebruik van je gegevens voor wetenschappelijk onderzoek.
 
-Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
+Ga naar [account/consent](/account/consent/) en geef je bezwaar aan bij de **modelgegevens**.
 
 <Note>
 
-The right to object is broader, but this is how it applies to freesewing.
+Het recht op bezwaar is breder, maar dit is hoe het van toepassing is bij FreeSewing.
 
 </Note>
 
