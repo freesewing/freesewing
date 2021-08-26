@@ -1,4 +1,4 @@
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Estilo de la vista de los ojales](buttonholeplacketstyle.svg)
 
 Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
 
