@@ -4,7 +4,7 @@
    - Cut **2 front facing(s)** with good sides together
    - Cut **2 pocket welt(s)** with good sides together
    - Cut **2 pocket facing(s)** with good sides together
- - **Lining fabric**
+ - **Tissu de doublure**
    - Cut **2 front lining(s)** with good sides together
    - Cut **2 back(s)** with good sides together
    - Cut **2 pocket bag(s)** with good sides together
