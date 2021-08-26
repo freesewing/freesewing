@@ -9,7 +9,7 @@
    - Cut **1 collarstand** (part 8)
    - Cut **2 pockets** (part 9)
    - Cut **1 chest pocket welt** (part 10)
- - **lining fabric**
+ - **futterstoff**
    - Cut **2 fronts** (part 1)
    - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
    - Cut **2 backs** (part 2)
