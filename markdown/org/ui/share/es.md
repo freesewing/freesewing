@@ -2,16 +2,16 @@
 title: Sharing links
 ---
 
-Let the world know about FreeSewing. You can link to any specific page, or to the homepage: https://freesewing.org/
+Let the world know about FreeSewing. Puedes enlazar a cualquier página específica, o a la página de inicio: https://freesewing.org/
 
 You can use the images below, and make sure to [use the relevant hashtags](/community/hashtags/).
 
-<img src="/share/en.wide.png" alt="We Are FreeSewing" style="max-height: 25vh;" class="shadow" />
+<img src="/share/en.wide.png" alt="Somos FreeSewing" style="max-height: 25vh;" class="shadow" />
 
 
 For Instagram, you can use this square image:
 
-<img src="/share/en.square.png" alt="We Are FreeSewing" style="max-height: 25vh;" class="shadow" />
+<img src="/share/en.square.png" alt="Somos FreeSewing" style="max-height: 25vh;" class="shadow" />
 
 The images above are also available in other langauges:
 
