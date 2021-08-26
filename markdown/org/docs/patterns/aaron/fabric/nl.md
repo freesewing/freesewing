@@ -1,10 +1,10 @@
 
-An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+Dit mouwloze hemdje is in essentie ondergoed. Zodoende wil je hiervoor iets dat comfortabel is, aangenaam tegen je huid zit en ademt.
 
-Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
+Katoen met een hint van elasthaan, misschien viscose, of een fijn breisel. Ik stel voor dat je naar de stoffenwinkel gaat en een beetje rondvoelt.
 
 <Note>
 
-While stretch is not required, it does make sense for underwear. That being said, you can make this in a non-stretch, just make sure pick loose or casual fit.
+Stretch is niet vereist, maar wel logisch in het geval van ondergoed. Desondanks kan je dit in een stof zonder stretch maken, kies dan wel voor de losse of casual pasvorm.
 
 </Note>
