@@ -1,11 +1,11 @@
 ---
-title: Grainline and cut-on-fold indicator
+title: Draadrichting en aanduiding van de stofvouw
 ---
 
-Grainlines — a line that indicates the *fabric grain* — look like this:
+Draadrichting - een lijn die de *draadrichting van de stof* aangeeft - ziet er zo uit:
 
 <Legend part="grainline" caption="A grainline indicator" >
 
-Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+Markeringen voor de stofvouw zien er gelijkaardig uit, maar wijzen naar de lijn waarlangs de stof gevouwen moet worden:
 
 <Legend part="cutonfold" caption="A cut-on-fold indicator" >
