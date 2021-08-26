@@ -3,6 +3,6 @@ title: The right of access
 order: 20
 ---
 
-You have the right to access your personal data.
+Je hebt het recht om toegang te krijgen tot je persoonlijke gegevens.
 
-Go to [/account](/account/) to do so.
+Ga naar [account](/account/) om dit te doen.
