@@ -1,5 +1,5 @@
-To make Trayvon, you will need the following:
+Om Trayvon te maken heb je het volgende nodig:
 
-- Basic sewing supplies
-- Between 0.5 meter and 1.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/trayvon/fabric)), depending on whether you're cutting on bias, on grain, or cross-grain. 
+- Basis naaimateriaal
+- Tussen 0.5 en 1.5 meter geschikte stof ([zie Stofkeuze](/docs/patterns/trayvon/fabric)), afhankelijk van hoe je knipt: schuin van draad, recht van draad of haaks op de draadrichting. 
 
