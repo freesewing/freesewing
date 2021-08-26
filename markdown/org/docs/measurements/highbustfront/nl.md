@@ -1,5 +1,5 @@
 ---
-title: High bust front
+title: Hoge buste vooraan
 ---
 
 The **high bust front** measurement is the front part of your **high bust** measurement: your chest circumference measured just under your arms, above the fullest part of your bust.
