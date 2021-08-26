@@ -23,7 +23,7 @@ Pour chaque poignet, repassez l'entoilage sur l'envers du poignet.
 
 > Si l'envers et l'endroit de votre poignet sont coupés dans le même tissu, peu importe le côté sur lequel vous collez l'entoilage.
 > 
-> Cependant, un détail prisé consiste à utiliser un tissu différent pour l'intérieur du poignet. Dans ce cas, assurez-vous de thermocoller l'entoilage sur la pièce du poignet qui sera côté extérieur.
+> Cependant, un détail prisé consiste à utiliser un tissu différent pour l'intérieur du poignet. Dans ce cas, assurez vous de thermocoller l'entoilage sur la pièce qui se trouvera à l'extérieur du poignet. Dans ce cas, assurez-vous de thermocoller l'entoilage sur la pièce du poignet qui sera côté extérieur.
 
 > Selon le poignet que vous avez choisi, la forme du poignet sera différente.
 > 
@@ -149,7 +149,7 @@ Repliez la marge de couture du côté non cousu de votre pied de col et repassez
 
 ![Retourner le col et repasser](4c.png)
 
-Flip your collar stand with the good sides out, and give it a good press. Assurez vous de laisser les marges de couture du pied de col repliées à l'intérieur.
+Retournez votre pied de col sur l'endroit, et donnez un bon coup de fer. Assurez vous de laisser les marges de couture du pied de col repliées à l'intérieur. Voys pouvez maintenant mettre votre col de côté, nous l'attacherons plus tard.
 
 Vous pouvez maintenant mettre votre col de côté, nous l'attacherons plus tard.
 
@@ -296,7 +296,7 @@ Pour cela, coupez l'excédent de marge de couture afin qu'elle ne dépasse pas l
 
 Repliez la patte sur le premier pointillé long. Repassez le pli.
 
-Ensuite, pliez à nouveau, cette fois sur le deuxième pointillé long. Repassez le pli. Press this fold in place too.
+Ensuite, pliez à nouveau, cette fois sur le deuxième pointillé long. Repassez le pli.
 
 > Lorsque votre patte est pliée et repassée, mettez quelques épingles sur toute la longueur pour maintenir en place
 
@@ -316,7 +316,7 @@ Ensuite, retournez votre chemise endroit sur le dessus. Coudre alors sur la deux
 
 Félicitations, vous venez de réaliser une patte de boutonnière classique.
 
-Now press that baby. You know you want to.
+Maintenant repassez-moi tout ça mon ami. Avouez qu'on en a envie.
 
 ### Etape 11: Assemblez les coutures d'épaule
 
@@ -446,7 +446,7 @@ Ensuite, coudre horizontalement jusqu'à l'autre côté de la patte pour finir.
 
 Placez maintenant votre manche dessus, endroit contre endroit, en faisant correspondre le repère du haut de la manche avec la couture d'épaule.
 
-> Attention, votre manche n'est pas symétrique, alors assurez-vous d'avoir les deux repères (et la patte de boutonnage du poignet) à l'arrière.
+> Attention, votre manche n'est pas symétrique, alors assurez-vous d'avoir les deux repères (et la patte de boutonnage du poignet) à l'arrière. et le repère simple à l'avant.
 > 
 > Notez également que les repères doubles au dos de votre manche n'ont pas de repères correspondant sur le dos. C'est parce que sur le dos, le repère est constitué par la couture assemblant l'empiècement dos et le dos.
 
