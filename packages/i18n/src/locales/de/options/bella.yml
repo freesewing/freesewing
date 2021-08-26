@@ -1,6 +1,6 @@
 ---
 chestEase:
-  title: Brustzugabe
+  title: Brust Zugabe
   description: Controls the amount of ease at the fullest part of your chest
 waistEase:
   title: Taillenzugabe
@@ -36,7 +36,7 @@ backArmholePitchDepth:
   title: Back armhole pitch depth
   description: Tweaks the horizontal placement of the back armhole pitch point
 backNeckCutout:
-  title: Back neck cutout
+  title: Ausschnitt im Nacken
   description: Controls how deep the neck opening is scooped out at at the back
 backHemSlope:
   title: Back hem slope
