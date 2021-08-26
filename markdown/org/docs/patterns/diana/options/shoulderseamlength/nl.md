@@ -1,3 +1,3 @@
-![The shoulder seam length option on Diana](./shoulderseamlength.svg)
+![De optie voor de lengte van de schoudernaad bij Diana](./shoulderseamlength.svg)
 
-This option determines how wide the neck opening is, by controllign the length of the shoulder seam.
+Deze optie bepaalt hoe breed de halsopening is, door de lengte van de schoudernaad te bepalen.
