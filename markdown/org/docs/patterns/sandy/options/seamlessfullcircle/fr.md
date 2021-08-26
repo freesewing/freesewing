@@ -1,5 +1,5 @@
 
-![Seamless full circle](seamlessfullcircle.svg)
+![Cercle entier sans couture](seamlessfullcircle.svg)
 
 Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
 
