@@ -1,9 +1,9 @@
-![Collarstand curve](collarstandcurve.svg)
+![Curve staander](collarstandcurve.svg)
 
-How much the collar stand curves up at the edges.
+Hoeveel de kraagstaander omhoogbuigt aan de randen.
 
 <Note>
 
-You can tweak this to make sure the edges of your collar stand at the front or nicely horizontal.
+Je kan dit aanpassen zodat de randen van je kraagstaander vooraan iets hoger staan of horizontaal.
 
 </Note>
