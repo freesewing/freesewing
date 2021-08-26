@@ -3,7 +3,7 @@ backOpening:
   title: Ouverture arrière
   description: Contrôle l'ouverture à l'arrière du tablier
 chestDepth:
-  title: Longueur du lien
+  title: Longueur de l'anse
   description: Contrôle la longueur des liens
 lengthBonus:
   title: Supplément de longueur
