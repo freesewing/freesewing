@@ -2,7 +2,7 @@
 title: Construction
 ---
 
-### Step 1: Fuse interfacing
+### Étape 1 : Thermocoller l'entoilage
 
 Depending on your fabric weight you might want to fuse all your main fabric parts No matter the thickness of your fabric, you should consider reinforcing the sides of your brim parts (where the notch mark is). This will help prevent the pointy ends of the plastic part to poke outside of the cap on this area
 
