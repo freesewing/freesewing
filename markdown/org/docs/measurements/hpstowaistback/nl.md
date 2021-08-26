@@ -1,5 +1,5 @@
 ---
-title: HPS to waist back
+title: HPS tot taille achter
 ---
 
 <Note>
@@ -11,7 +11,7 @@ Refer to [the hps documentation](/docs/measurements/hps/) for information on how
 
 </Note>
 
-The **high point shoulder (HPS) to waist back** measurement runs from your HPS down to your waist line.
+De maat **hoog punt schouder (HPS) tot taille achter** loopt van je HPS tot aan je taille.
 
-To measure your HPS to waist back, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to your waist line.
+Om je HPS tot taille achter te meten, [bepaal dan eerst waar je HPS is](/docs/measurements/hps/). Meet dan van daar recht naar je taille.
 
