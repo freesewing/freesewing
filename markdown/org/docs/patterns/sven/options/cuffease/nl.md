@@ -1,3 +1,3 @@
-![Cuff ease](cuffease.svg)
+![Overwijdte manchet](cuffease.svg)
 
-How much room do you want at your wrist?
+Hoeveel ruimte wil je aan je pols?
