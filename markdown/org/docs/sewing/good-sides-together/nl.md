@@ -1,29 +1,29 @@
 ---
-title: Good sides together
+title: Goede kanten op elkaar
 ---
 
-When I refer to good sides together that can refer to either cutting or sewing:
+Als ik het heb over 'goede kanten op elkaar' kan dat zowel naar knippen als naar naaien verwijzen:
 
-## Cutting with good sides together
+## Knippen met de goede kanten op elkaar
 
-![A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.](cutting-good-sides-together.jpg)
+![Een zak is gemarkeerd op de verkeerde kant van een stuk dubbelgeplooide denim, klaar om met de goede kanten op elkaar geknipt te worden. Na het knippen van de twee lagen eindig je met twee zakken zie een spiegelbeeld van elkaar zijn.](cutting-good-sides-together.jpg)
 
-Cutting with good sides together is a technique that is used when two identical, or mirrored pieces need to be cut.
+Knippen met de goede kanten op elkaar is een techniek die gebruikt wordt als twee identieke of gespiegelde stukken geknipt moeten worden.
 
-When a pattern asks to cut a piece with good sides together, fold your fabric double with the good side/right side of the fabric to the inside, and the bad side/wrong side outside.
+Wanneer een patroon zegt een stuk met de goede kanten op elkaar te knippen, vouw je stof dubbel met de goede kant/juiste kant van de stof aan de binnenkant, en de verkeerde kant aan de buitenkant.
 
-Now mark the pattern piece on the bad side of the fabric, and cut both layers in one go.
+Markeer nu het patroon op de verkeerde kant van de stof, en knip beide lagen in één keer.
 
-This gives you two pieces that are mirror images of each other.
+Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
-> When cutting good sides together, make sure both sides are on grain.
+> Let op dat beide kanten recht van draad liggen wanneer je met goede kanten samen knipt.
 
-## Sewing with good sides together
+## Stikken met goede kanten op elkaar
 
-![A piece of denim is sewn with good sides together.](sewing-good-sides-together.jpg)
+![Een stuk denim wordt gestikt met de goede kanten op elkaar.](sewing-good-sides-together.jpg)
 
-Sewing with good sides together is the standard approach to making a seam.
+Stikken met de goede kanten op elkaar is de standaard manier om een naad te maken.
 
-By placing the good sides of the fabric together, both pieces will be joined with the seam allowance to the inside of the garment. This is what's done for the vast majority of seams.
+Door de goede kanten van het kledingstuk op elkaar te leggen worden de twee stukken aan elkaar bevestigd met de naadwaarde aan de binnenkant van het kledingstuk. Dit wordt voor de overgrote meerderheid van naden gedaan.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Wanneer er geen specifieke instructies zijn voor het stikken van een naad is het met de goede kanten op elkaar.
