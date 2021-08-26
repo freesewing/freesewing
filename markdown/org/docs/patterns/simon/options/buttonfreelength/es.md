@@ -1,4 +1,4 @@
-![Button free length](./buttonfreelength.svg)
+![Longitud sin botones](./buttonfreelength.svg)
 
 How much before your waistband do you want your last button to sit?
 
