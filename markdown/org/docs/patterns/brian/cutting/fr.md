@@ -1,15 +1,15 @@
 Pour le haut Brian, vous aurez besoin de :
 
  - 1 devant
- - 1 Back
+ - 1 dos
  - 2 manches
 
 <Note>
 
-###### Brian is a block, not a pattern
+###### Brian est un patron de base.
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un patron de base est une forme basique de laquelle on part pour créer d'autres patrons.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
