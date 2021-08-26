@@ -2,9 +2,9 @@
 title: Titles
 ---
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name:
+Elk patroondeel heeft een titel dat je het nummer en de naam van het deel geeft, en de naam van het patroon:
 <Legend part="title" caption="Example of a title" >
 
 <Note>
-When you generate a pattern on freesewing.org, the title will also include the name of the person the pattern was made for.
+Wanneer je een patroon genereert op freesewing.org bevat de titel ook de naam van de persoon waar je het patroon voor gemaakt hebt.
 </Note>
