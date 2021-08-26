@@ -3,21 +3,21 @@ title: How we use your subscriber data
 order: 20
 ---
 
-##### What personal data do we store?
+##### Welke persoonlijke gegevens bewaren we?
 
-- Your E-mail address
+- Je e-mailadres
 
-##### Why do we need it?
+##### Waarom hebben we ze nodig?
 
 - To send you our newsletter
 
-##### How long do we keep it?
+##### Hoe lang houden we ze?
 
 - As long as you remain subscribed
 
-##### Do we share it?
+##### Wordt dit gedeeld?
 
-- No, never
+- Nee, nooit
 
 <Note> 
 
