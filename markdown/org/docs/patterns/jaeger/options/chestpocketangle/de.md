@@ -1,5 +1,5 @@
 
-![Chest pocket angle](chestpocketangle.svg)
+![Brusttaschenwinkel](chestpocketangle.svg)
 
-The angle under which the chest pocket is placed.
+Der Winkel, unter dem die Brusttasche platziert wird.
 
