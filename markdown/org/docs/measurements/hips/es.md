@@ -1,5 +1,5 @@
 ---
-title: Hips circumference
+title: Contorno de caderas
 ---
 
 The **hips circumference** is measured at the top of your hip bones.
