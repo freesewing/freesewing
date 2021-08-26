@@ -1,3 +1,3 @@
 
-Increasing this will make the front cutaway stay closer to the center front
+En augmentant cette valeur, l'arrondi du pan se terminera plus proche du milieu devant
 
