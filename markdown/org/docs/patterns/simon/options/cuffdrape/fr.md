@@ -1,4 +1,4 @@
-![Cuff drape](cuffdrape.svg)
+![Drapé du bas de manche](cuffdrape.svg)
 
 How much the end of the sleeve is wider than the wrist.
 
