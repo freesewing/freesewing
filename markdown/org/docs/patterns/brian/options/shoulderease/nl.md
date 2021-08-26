@@ -1,5 +1,5 @@
 
-![Shoulder ease](./shoulderease.svg)
+![Overwijdte schouder](./shoulderease.svg)
 
 Controls the amount of ease on the shoulder to shoulder measurement.
 
