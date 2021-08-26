@@ -1,4 +1,4 @@
-![Extra top button](extratopbutton.svg)
+![Bouton supérieur supplémentaire](extratopbutton.svg)
 
 Do you want an extra button between the top front button and collar stand button?
 
