@@ -1,6 +1,6 @@
 - - -
 - - -
 
-### For makers
+### Für Macher
 
-All our sewing patterns are made-to-measure & free to use, courtesy of our community
+Alle unsere Schnittmuster sind maßgeschneidert & dürfen dank unserer Community kostenlos verwendet werden
