@@ -1,4 +1,4 @@
-![Cuff ease](cuffease.svg)
+![Holgura de muñeca](cuffease.svg)
 
 Determines how much the cuff is larger than your wrist.
 
