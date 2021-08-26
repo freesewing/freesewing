@@ -1,7 +1,7 @@
-![The back rise option on Bruce](./backrise.svg)
+![De optie voor hoogte achter bij Bruce](./backrise.svg)
 
-How much extra rise do you want at the back?
+Hoeveel extra hoogte wil je achteraan?
 
-This factor will raise the waist at the back of your boxers only.
+Deze factor zal alleen de hoogte aan de achterkant van je boxershort aanpassen.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Als je de taille in het algemeen wil verhogen, dat is wat de **hoogte** optie doet
