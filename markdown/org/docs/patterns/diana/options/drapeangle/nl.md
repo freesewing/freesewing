@@ -1,3 +1,3 @@
-![The drape angle option on Diana](./drapeangle.svg)
+![De optie voor de hoek van de drapage van Diana](./drapeangle.svg)
 
-This option controls the amount of drape of your top.
+Deze optie bepaalt de hoeveelheid drapage van je top.
