@@ -1,10 +1,10 @@
 ---
-title: How can I sign up? I never received the E-mail to activate my account!
+title: Hoe kan ik een account maken? Ik heb nooit een e-mail ontvangen om mijn account te activeren!
 ---
 
-If you did not receive the email, check your spam/junk folder. If you can't find it there either, it is most likely that your E-mail provider blocked it outright.
+Als je geen e-mail hebt ontvangen, kijk dan in je spam- of junkmap. Als je het daar ook niet terugvindt, is de kans groot dat je e-mailprovider het bericht geblokkeerd heeft.
 
-Either try using a different E-mail address, or [reach out to us](https://discord.freesewing.org/) so we can help you activate your account.
+Probeer het ofwel met een ander e-mailadres, of [geef ons een seintje](https://discord.freesewing.org/) zodat we je kunnen helpen je account te activeren.
 
 <Note>
 
