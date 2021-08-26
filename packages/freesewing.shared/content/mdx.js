@@ -20,23 +20,23 @@ const jargon = {
   nl: jargon_nl,
 }
 
-export const getMdxStaticProps = async (config, lang, page=false) => {
-  const {monorepo, site} = config
+export const getMdxStaticProps = async (config, page=false) => {
+  const {monorepo, site, language} = config
   const staticPath = 'mdx_files'
   const destinationDir = path.join(monorepo, 'packages', `freesewing.${site}`, 'public')
   const [paths, pages] = await mdx.get(config)
   const props = { paths, pages }
   if (page) {
-    const rawMdx = mdx.loadFile(page, site, lang)
+    const rawMdx = mdx.loadFile(page, site, language)
     const { content, data } = mdx.matter(rawMdx)
-    const filepath = path.join(...[monorepo, 'markdown', site, ...page.split('/'), `${lang}.md`])
+    const filepath = path.join(...[monorepo, 'markdown', site, ...page.split('/'), `${language}.md`])
     props.href = `/${page}`
     props.mdx = await serialize(content, {
-      scope: { site, lang, page, frontmatter: data },
+      scope: { site, language, page, frontmatter: data },
       mdxOptions: {
         remarkPlugins: [
           // Our very own jargon plugin
-          [ remarkJargon, { jargon: jargon[lang] } ],
+          [ remarkJargon, { jargon: jargon[language] } ],
           // Add anchor links to headings
           remarkSlug,
           [ remarkAutolinkHeadings, { behavior: 'append' }],

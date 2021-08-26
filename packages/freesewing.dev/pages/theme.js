@@ -4,7 +4,7 @@ import config from '@/site/freesewing.config'
 import themes from '@/shared/themes'
 import Button from '@/shared/components/elements/button'
 import Highlight from '@/shared/components/mdx/highlight'
-import ThemeChooser from '@/shared/components/theme-chooser'
+import ThemeChooser from '@/shared/components/navigation/pickers/theme'
 import Popout from '@/shared/components/popout'
 
 

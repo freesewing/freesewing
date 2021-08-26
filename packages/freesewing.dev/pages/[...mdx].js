@@ -25,7 +25,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await getMdxPaths(config.site, config.language)
+  const paths = await getMdxPaths(config)
 
   const re = {
     paths: paths.map(mdx => ({ params: { mdx: mdx.split('/') } })),
