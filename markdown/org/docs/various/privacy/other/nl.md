@@ -2,28 +2,28 @@
 title: Other privacy-related topics
 ---
 
-##### Full disclosure
+##### Voor de duidelijkheid
 
-If we learn of a security systems breach, we will inform both you and the authorities.
+Als we op de hoogte zijn van een inbreuk op ons beveiligingssysteem, zullen zowel jij als de autoriteiten op de hoogte gebracht worden.
 
-If you believe your personal data has been compromised, please contact joost@joost.at.
+Als je denkt dat je persoonlijke gegevens niet langer veilig zijn, contacteer dan joost@joost.at.
 
 
-##### Service Providers
+##### Diensten/service
 
-Our hosting provider manages our backend systems for us. This includes hosting, storage, and backup.
+Onze hostingprovider beheert onze backend systemen voor ons. Dit omvat hosting, opslag en back-up.
 
-While this means they process your data (in the strict sense of the word), they do not require access to information about you. Furthermore, as we encrypt profile data at rest, it is non-trivial for them to access it even if they wanted to.
+Alhoewel dit betekent dat ze je gegevens verwerken (in de strikte zin van het woord), wil het niet zeggen dat ze toegang nodig hebben tot informatie over jou. Aangezien we profielgegevens versleutelen is het voor hen bovendien niet interessant toegang te krijgen tot deze gegevens, ook al zouden ze dat willen.
 
-##### Law enforcement
+##### De letter van de wet
 
-While we have no intention of sharing any of your personal data, we are not above the law.
+Ook al hebben we niet de intentie je persoonlijke gegevens op eender welke manier te delen, staan we niet boven de wet.
 
-If we are required to do so by law, or if we feel that doing so would be the lesser evil, we will disclose personal data.
+Als we wettelijk verplicht zijn, of als we vinden dat het de minst erge optie is, zullen we persoonlijke gegevens vrijgeven.
 
-So far, we have not received any request from law enforcement to disclose information about one of our users. We have also not disclosed any personal information for any other reason.
+Tot nu toe hebben we nog nooit een verzoek gekregen van eender welke wetshandhaving om informatie over een gebruiker vrij te geven. We hebben ook geen enkele persoonlijke informatie vrijgegeven voor eender welke andere reden.
 
-##### Use by minors under the age of 16
+##### Gebruik door minderjarigen jonger dan 16
 
 For legal reasons, you need to be at least 16 years old to use freesewing.
 
