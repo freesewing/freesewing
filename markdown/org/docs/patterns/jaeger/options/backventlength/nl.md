@@ -1,5 +1,5 @@
 
-![Lengte rugsplit](backventlength.svg)
+![Back vent length](backventlength.svg)
 
-Bepaalt de lengte van het rugsplit. Een lager cijfer leidt tot een korter split.
+Controls the length of the back vent. Lower numbers result in a shorter vent.
 
