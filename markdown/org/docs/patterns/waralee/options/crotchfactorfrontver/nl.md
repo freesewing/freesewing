@@ -1,2 +1,2 @@
-Used to move the curve of the crotch in the front vertically
+Wordt gebruikt om de curve van het kruis vooraan verticaal te verplaatsen
 
