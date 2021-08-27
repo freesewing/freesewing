@@ -7,3 +7,7 @@ Quelle que soit la valeur que vous choisissez, la valeur sera simplement ajouté
 > ##### Cette option permet également des valeurs négatives.
 > 
 > Vous ne devriez utiliser d'aisance négative que si vous utilisez un tissu très extensible que vous voulez bien ajuster. Le taux d'élasticité général doit être configuré avec l'option du taux d'élasticité.
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_hipsease_sample.svg "Effect of this option on the pattern")
