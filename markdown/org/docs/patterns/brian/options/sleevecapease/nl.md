@@ -9,3 +9,6 @@ Meer ruimte zorgt voor een ronde mouwkop, zoals je zou zien op een jas. Minder r
 For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapease_sample.svg "Effect of this option on the pattern")
