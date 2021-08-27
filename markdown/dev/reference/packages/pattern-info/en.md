@@ -6,7 +6,6 @@ title: "@freesewing/pattern-info"
   <a
     href='https://www.npmjs.com/package/@freesewing/pattern-info'
     title='@freesewing/pattern-info on NPM'
-    style="margin-right: 0.5rem"
   >
     <img
       src='https://img.shields.io/npm/v/@freesewing/pattern-info.svg'
@@ -16,7 +15,6 @@ title: "@freesewing/pattern-info"
   <a 
     href="https://opensource.org/licenses/MIT" 
     title="License: MIT" 
-    style="margin-right: 0.5rem"
   >
     <img
       src='https://img.shields.io/npm/l/@freesewing/pattern-info.svg?label=License'
@@ -26,7 +24,6 @@ title: "@freesewing/pattern-info"
   <a
     href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
     title="Code quality on DeepScan"
-    style={styles.badge}
   >
     <img
       src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
@@ -36,7 +33,6 @@ title: "@freesewing/pattern-info"
   <a
     href='https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Apattern-info'
     title='Open issues tagged pkg:pattern-info'
-    style="margin-right: 0.5rem"
   >
     <img
       src='https://img.shields.io/github/issues/freesewing/freesewing/pkg:pattern-info.svg?label=Issues'
