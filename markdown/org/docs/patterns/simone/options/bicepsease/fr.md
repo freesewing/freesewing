@@ -1,4 +1,4 @@
-![Biceps ease](./bicepsease.svg)
+![Aisance au niveau des biceps](./bicepsease.svg)
 
 Combien voulez-vous d'aisance pour la manche, par rapport à votre tour de bras (haut du bras) ?
 
@@ -18,7 +18,5 @@ Nous nous efforcerons de respecter votre choix ici, mais la priorité est d'ajus
 
 </Warning>
 
-
-
-
-
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bicepsease_sample.svg "Effect of this option on the pattern")
