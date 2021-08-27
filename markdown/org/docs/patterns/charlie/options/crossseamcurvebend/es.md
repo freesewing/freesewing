@@ -1,6 +1,7 @@
 
 Controls the curvature of the cross seam curve.
 
+
 <Note>
 
 This curve has an influence on the amount of fabric at your bum.
@@ -11,3 +12,6 @@ and this there will be less fabric pooling at the bum.
 People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurvebend_sample.svg "Effect of this option on the pattern")
