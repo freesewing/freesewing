@@ -1,2 +1,2 @@
 
-The amount of ease at your hips.
+La marge d'aisance aux hanches.
