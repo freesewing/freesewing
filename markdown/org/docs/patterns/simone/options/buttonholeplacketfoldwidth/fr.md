@@ -11,3 +11,5 @@ Ceci s'applique uniquement à une patte classique. N'en tenez donc pas compte si
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_buttonholeplacketfoldwidth_sample.svg "Effect of this option on the pattern")
