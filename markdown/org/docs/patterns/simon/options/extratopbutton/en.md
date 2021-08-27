@@ -16,3 +16,7 @@ Do not include the top button if you want a more casual look.
 This extra button is added to the number of buttons on the front. It does not replace another button.
 
 </Note>
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
