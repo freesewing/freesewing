@@ -9,3 +9,6 @@ Du kannst GROSSE Fliegen machen, oder kleine. Diese Option erlaubt es dir, die v
 Diese Option wird ignoriert beim rechteckigem Fliegen-Stil. Rechteckige Fliegen sind so breit wie die Knotenbreite.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
