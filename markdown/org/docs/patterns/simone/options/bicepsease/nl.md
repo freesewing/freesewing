@@ -18,7 +18,5 @@ We proberen je keuze hier te respecteren, maar onze prioriteit is zorgen dat de 
 
 </Warning>
 
-
-
-
-
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bicepsease_sample.svg "Effect of this option on the pattern")
