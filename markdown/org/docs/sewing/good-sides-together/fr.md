@@ -16,7 +16,14 @@ Tracez maintenant le patron sur l'envers du tissu, et coupez les deux épaisseur
 
 Cela vous donne deux pièces en miroir les unes des autres.
 
-> Lorsque vous coupez endroit contre endroit, assurez-vous que les deux côtés sont sur le droit fil.
+<Note> 
+
+##### What if there is not obvious good side?
+
+When cutting out something without an obvious *good* side (like interfacing), 
+what matters is that you cut two mirrored pieces, rather than two identical ones.
+
+</Note>
 
 ## Coudre endroit contre endroit
 
@@ -26,4 +33,4 @@ Coudre endroit contre endroit est la façon commune de coudre.
 
 En plaçant les tissus endroit contre endroit, les deux pièces seront assemblées avec la marge de couture à l'intérieur du vêtement. C'est ce qui est fait pour la grande majorité des coutures.
 
-> Quand il n'y a pas d'instructions spécifiques sur la façon d'assembler une couture, c'est endroit contre endroit.
+> When there's no specific instructions on how to construct a seam, it's good sides together.
