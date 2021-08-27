@@ -1,4 +1,4 @@
-![Hem curve](hemcurve.svg)
+![Curva del dobladillo](hemcurve.svg)
 
 How much do you want the hem to curve upwards?
 
@@ -10,3 +10,5 @@ How much do you want the hem to curve upwards?
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_hemcurve_sample.svg "Effect of this option on the pattern")
