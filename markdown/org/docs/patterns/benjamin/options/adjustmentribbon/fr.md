@@ -7,3 +7,6 @@ With Benjamin, you can make a traditional fixed size bow tie. Et vous pouvez en 
 C'est une excellente option si vous décidez de faire un nœud papillon pour quelqu'un d'autre en cadeau.
 
 </Tip>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")
