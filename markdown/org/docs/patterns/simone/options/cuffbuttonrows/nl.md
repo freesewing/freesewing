@@ -1,6 +1,6 @@
-![Cuff button rows](cuffbuttonrows.svg)
+![Rijen knopen op manchet](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Wil je een enkele knoop op je manchet, of twee?
 
 <Note>
 
@@ -8,3 +8,5 @@ Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manch
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
