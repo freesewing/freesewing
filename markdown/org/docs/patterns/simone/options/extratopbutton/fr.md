@@ -1,4 +1,4 @@
-![Extra top button](extratopbutton.svg)
+![Bouton supérieur supplémentaire](extratopbutton.svg)
 
 Do you want an extra button between the top front button and collar stand button?
 
@@ -17,3 +17,5 @@ This extra button is added to the number of buttons on the front. It does not re
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_extratopbutton_sample.svg "Effect of this option on the pattern")
