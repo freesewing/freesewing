@@ -15,7 +15,14 @@ Now mark the pattern piece on the bad side of the fabric, and cut both layers in
 
 This gives you two pieces that are mirror images of each other.
 
-> When cutting good sides together, make sure both sides are on grain.
+<Note> 
+
+##### What if there is not obvious good side?
+
+When cutting out something without an obvious *good* side (like interfacing), 
+what matters is that you cut two mirrored pieces, rather than two identical ones.
+
+</Note>
 
 ## Sewing with good sides together
 
