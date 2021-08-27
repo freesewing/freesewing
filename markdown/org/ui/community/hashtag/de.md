@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ##### Verwenden Sie diese Hashtags, um mit der Community zu interagieren
 

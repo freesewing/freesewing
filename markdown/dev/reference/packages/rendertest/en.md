@@ -2,7 +2,7 @@
 title: "@freesewing/rendertest"
 ---
 
-import PatternPage from "../../../../../src/components/pattern-page";
+ 
 
 <PatternPage pattern="rendertest" />
 

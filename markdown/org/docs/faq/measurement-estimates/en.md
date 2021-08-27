@@ -2,8 +2,6 @@
 title: What are those symbols next to my measurements?
 ---
 
-import Gauge from '../../../../../src/components/measurements/gauge.js'
-
 You might have noticed these kind of icons next to your measurements:
 <Gauge val={0} theme='light' />
 

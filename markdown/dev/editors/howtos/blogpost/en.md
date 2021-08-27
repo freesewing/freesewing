@@ -1,15 +1,11 @@
 ---
-title: Adding a blog post on freesewing.org
+title: Adding a blog post
 for: editors
 ---
 
-These are the steps required to add a new [blog post](https://freesewing.org/showcase/) to the website:
+Blog posts have been migrated to [Strapi](https://strapi.io/), a headless CMS system.
 
-<ReadMore list />
+Our strapi instance can be accessed at [posts.freesewing.org](https://posts.freesewing.org/).
 
-- Create a new folder in the `org/blog` directory of [our markdown repository](https://github.com/freesewing/markdown/) 
- - Add an `en.md` markdown file to this folder
- - Add one of more images to the folder
- - Add the frontmatter to the file
- - Add the body of the file
+If you don't have a Strapi account (yet), [reach out to us on Discord](https://discord.freesewing.org).
 
