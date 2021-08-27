@@ -1,4 +1,4 @@
-![Collar angle](collarangle.svg)
+![Angle du col](collarangle.svg)
 
 The number of degrees between the collar edge and the grainline.
 
@@ -14,3 +14,5 @@ In the example image, the top is 80 degrees (the default) and the bottom is 110 
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarangle_sample.svg "Effect of this option on the pattern")
