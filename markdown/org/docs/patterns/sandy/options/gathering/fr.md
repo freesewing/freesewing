@@ -1,4 +1,4 @@
 
-![Gathering](gathering.svg)
+![Fronçage](gathering.svg)
 
-The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
+Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du bas de la ceinture. Give a value higher than 0 to pleat the skirt.

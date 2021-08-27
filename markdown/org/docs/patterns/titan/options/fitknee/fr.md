@@ -1,5 +1,5 @@
 
-Controls the width of the legs. 
+Contrôle la largeur des jambes.
 
 <Note>
 

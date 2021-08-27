@@ -1,5 +1,5 @@
 
- - Cut **1 back** on the fold
- - Cut **1 front** on the fold
+ - Knip **1 rugpand** aan de stofvouw
+ - Knip **1 voorpand** aan de stofvouw
  - Knip **2 mouwen** met *goede kanten op elkaar*
 

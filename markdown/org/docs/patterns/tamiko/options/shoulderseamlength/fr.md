@@ -1,2 +1,2 @@
 
-The length of the shoulder seam, as a factor of your shoulder to shoulder measurement.
+La longueur de la couture d'épaule, en tant que facteur de la mesure d'épaule à épaule.

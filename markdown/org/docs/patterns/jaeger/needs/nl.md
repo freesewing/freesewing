@@ -33,5 +33,3 @@ Als je weet hebt van andere plekken die zoiets doen, laat het dan weten.
 
 </Note>
 
-
-

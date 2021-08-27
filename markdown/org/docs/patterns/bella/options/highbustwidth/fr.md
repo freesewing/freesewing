@@ -1,5 +1,5 @@
 ---
-title: High bust width
+title: Largeur de buste supérieur
 ---
 
 ![The effect of the high bust width option on the pattern](sample.png)

@@ -38,7 +38,7 @@ Dans les deux cas, moins vous avez d'arrondi "serré", plus il sera facile de le
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
+Nous finirons par le trou du bras et du cou avec un [biais de jersey](/docs/sewing/knit-binding) (Remarque : pas une bande de jersey. Il y a une différence, et elle est expliquée [ici](/docs/sewing/knit-binding)).
 
 <Note>
 
@@ -89,7 +89,7 @@ Cousez votre biais bien placé tout en étirant délicatement le biais, mais pas
 
 Vous aurez peut-être besoin de vous entraîner un peu pour y arriver.
 
-> Veillez à étirer votre biais davantage lorsque vous prenez une courbe plus nette. Read my notes on [knit binding](/docs/sewing/knit-binding) for more info.
+> Veillez à étirer votre biais davantage lorsque vous prenez une courbe plus nette. Lisez mes notes sur le [biais de jersey](/docs/sewing/knit-binding) pour plus d'informations.
 
 ### Marquer les extrémités du biais
 

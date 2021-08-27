@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-buttons"
 ---
 
-<Plugin plugin="buttons" />
+ 
+
+<PluginPage plugin="buttons" />

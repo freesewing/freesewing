@@ -22,4 +22,3 @@ Parce que la manche raglan d'Hugo couvre également une partie du dos et de l'av
 la manche est la pièce dominante de votre patron.
 
 </Warning>
-

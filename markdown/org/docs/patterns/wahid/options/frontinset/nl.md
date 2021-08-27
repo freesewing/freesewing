@@ -1,6 +1,6 @@
-![Front inset](frontinset.svg)
+![Insnede voorpand](frontinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the front?
+Hoe ver wil je dat het armsgat van je gilet op het voorpand naar binnen gaat?
 
 <Note>
 
@@ -10,4 +10,3 @@ Het armsgat van je gilet kan verder naar binnen buigen, aangezien er geen mouw i
 Dit heeft invloed op de stijl van je gilet.
 
 </Note>
-

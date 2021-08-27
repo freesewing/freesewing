@@ -1,2 +1,2 @@
-Size of the waist band
+Taille de la bande de taille
 

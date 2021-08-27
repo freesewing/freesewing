@@ -1,21 +1,21 @@
-- - -
-- - -
+---
+---
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
 
-<PatternOptions pattern='brian' />
+
+<PatternOptions pattern='breanna' />
 
 ## Comprendre la tête de manche
 
-Dans la version 2 de FreeSewing, la tête de manche de Brian a été redessinée, pour mieux s'adapter à différents types de manches et de vêtements. La tête de manche dispose maintenant de 20 options de forme. Bien que cela puisse paraître un peu assommant de prime abord, comprendre la conception de la tête de manche facilite la compréhension des différentes options.
+The Breanna sleevecap was designed to be adaptable into different types of sleeves and garments. As a result, the sleevecap alone has 20 options to control its shape. Bien que cela puisse paraître un peu assommant de prime abord, comprendre la conception de la tête de manche facilite la compréhension des différentes options.
 
 ### La bounding box (boîte englobante)
 
 La *bounding box* de la tête de manche est un rectangle de la largeur de la manche et de la hauteur de la tête de manche. La tête de manche va être construite dans ce rectangle.
 
-![La tête de manche Brian](sleevecap.svg)
+![The Breanna sleevecap](sleevecap.svg)
 
-L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2. 
+L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 
 <Note>
 
@@ -33,8 +33,8 @@ La largeur de la tête de manche (et donc la largeur de la manche à la base de 
 
 La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. La hauteur exacte est un compromis entre les mesures du modèle, les options, l'aisance, l'aisance de la tête de manche, et le fait que la manche devra finalement s'ajuster à l'emmanchure. Cette hauteur peut donc varier, et on ne peut choisir sa valeur exacte. Mais deux options permettent de contrôler la forme de notre tête de manche :
 
- - [Haut de tête de manche X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
- - [Haut de tête de manche Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
+ - [Haut de tête de manche X](/docs/patterns/breanna/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
+ - [Haut de tête de manche Y](/docs/patterns/breanna/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
 
 En d'autres termes, le point 4 peut être placé plus haut ou plus bas, et, ce qui est peut-être moins intuitif, peut aussi être déplacé plus à droite ou plus à gauche, plutôt que rester en plein milieu comme dans notre exemple.
 
@@ -44,10 +44,10 @@ En d'autres termes, le point 4 peut être placé plus haut ou plus bas, et, ce q
 
 Avec les points 1, 2, 3 et 4 en place, nous avons un rectangle pour dessiner notre tête de manche. Maintenant, il est temps de placer nos *points d'inflexion*. Ce sont les points 5 et 6 de notre dessin, et leur position est déterminée par les 4 options suivantes :
 
- - [Haut de tête de manche arrière X](/docs/patterns/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
- - [Haut de tête de manche arrière Y](/docs/patterns/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
- - [Haut de tête de manche avant X](/docs/patterns/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 6
- - [Haut de tête de manche avant Y](/docs/patterns/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 6
+ - [Haut de tête de manche arrière X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
+ - [Haut de tête de manche arrière Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
+ - [Haut de tête de manche avant X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 6
+ - [Haut de tête de manche avant Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Contrôle la position verticale du point 6
 
 <Note>
 
@@ -63,10 +63,10 @@ En fin de compte, notre tête de manche sera la combinaison de 5 courbes. En plu
 
 Les points sont *décalés * perpendiculairement à partir du milieu d'une ligne située entre les deux points d'ancrage qui les entourent. Le décalage pour chaque point est contrôlé par ces 4 options :
 
- - [Décalage de tête de manche Q1](/docs/patterns/brian/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
- - [Décalage de tête de manche Q2](/docs/patterns/brian/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
- - [Décalage de tête de manche Q3](/docs/patterns/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 4 et 5
- - [Décalage de tête de manche Q4](/docs/patterns/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 5 et 1
+ - [Décalage de tête de manche Q1](/docs/patterns/breanna/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
+ - [Décalage de tête de manche Q2](/docs/patterns/breanna/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
+ - [Décalage de tête de manche Q3](/docs/patterns/breanna/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 4 et 5
+ - [Décalage de tête de manche Q4](/docs/patterns/breanna/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 5 et 1
 
 <Note>
 
@@ -85,14 +85,14 @@ Nous avons maintenant tous les points de départ et d'arrivée pour dessiner les
 
 Pour chacun des points d'ancrage (ceux marqués en orange, pas les points 1 et 2), une option permet de contrôler la répartition vers le haut, et vers le bas :
 
- - [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
- - [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
- - [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q1](/docs/patterns/breanna/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q1](/docs/patterns/breanna/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q2](/docs/patterns/breanna/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q2](/docs/patterns/breanna/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q3](/docs/patterns/breanna/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q3](/docs/patterns/breanna/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
+ - [Répartition de tête de manche vers le haut Q4](/docs/patterns/breanna/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
+ - [Répartition de tête de manche vers le bas Q4](/docs/patterns/breanna/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
 
 <Note>
 
@@ -102,7 +102,7 @@ Les lecteurs attentifs auront remarqué que le point 4 n'est pas un point d'ancr
 
 ### En résumé
 
-Comme la tête de manche de Brian (et de tous les patrons dérivés) a énormément d'options, comprendre la construction de la tête de manche vous aidera à concevoir la tête de manche que vous voulez précisément. Pour cela :
+While the sleevecap in Breanna (and all patterns that extend Breanna) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. Pour cela :
 
  - Commencez par positionner le haut de votre tête de manche
  - Déterminer ensuite les points d'inflexion

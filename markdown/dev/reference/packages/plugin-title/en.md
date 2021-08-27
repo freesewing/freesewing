@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-title"
 ---
 
-<Plugin plugin="title" />
+ 
+
+<PluginPage plugin="title" />

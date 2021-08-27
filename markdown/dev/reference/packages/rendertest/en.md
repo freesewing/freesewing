@@ -2,7 +2,9 @@
 title: "@freesewing/rendertest"
 ---
 
-<Pattern pattern="rendertest" />
+ 
+
+<PatternPage pattern="rendertest" />
 
 This pattern is used to test (y)our FreeSewing renderer/themes with.
 Below is sample output for this pattern:

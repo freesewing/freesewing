@@ -1,3 +1,3 @@
 
-Increasing this will make the front cutaway stay closer to the center front
+Door dit te verhogen blijft de verloping vooraan bij het midden
 

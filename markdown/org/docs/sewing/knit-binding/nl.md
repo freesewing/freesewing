@@ -87,7 +87,7 @@ Ik zeg niet dat het theoretisch onmogelijk is. Maar ik zeg wel dat het praktisch
 De lengte van je bies hangt af van hoeveel die uitgerokken moet worden. Dit hangt af van de curves die je moet volgen, de breedte van de bies, en daarbovenop hoe elastisch je stof is. Er zijn gewoon te veel parameters in het spel om de lengte accuraat te kunnen berekenen.
 
 ### Doe dit niet
-Er zijn een hoop tutorials op het internet die je tonen hoe je biezen naait. Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
+Er zijn een hoop tutorials op het internet die je tonen hoe je biezen naait. Veel daarvan suggereren dingen als _maak de halsbies 90% van de omtrek van de halsopening_ (het percentage varieert).
 
 Het idee is dat je je bies knipt, de uiteindes aan elkaar bevestigt, en alles dan in de opening naait. That is (in my opinion) no good.
 
@@ -106,4 +106,4 @@ Dit houdt dan in dat de schoudernaad ook door de bies loopt, wat onaanvaardbaar 
 
 Op deze manier is er geen gegok naar de lengte van je bies, en zit de naad van de bies waar je hem wil.
 
-> For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
+> Voor gedetailleerde instructies, kijk eens bij [Aaron](/docs/patterns/aaron/)

@@ -2,8 +2,6 @@
 title: Was sind diese Symbole neben meinen Maßen?
 ---
 
-import Gauge from '../../../../../src/components/measurements/gauge.js'
-
 Dir sind vielleicht diese Art von Symbolen neben deinen Maßen aufgefallen:
 <Gauge val={0} theme='light' />
 

@@ -9,4 +9,3 @@ How wide your tie is in the middle will influence the tie knot. Go wide for big 
 Do not make the knot width larger than the tip width
 
 </Note>
-

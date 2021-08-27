@@ -1,3 +1,3 @@
-![Waistband width](waistbandwidth.svg)
+![Largeur de ceinture](waistbandwidth.svg)
 
 The width of the waistband you want on the trousers.

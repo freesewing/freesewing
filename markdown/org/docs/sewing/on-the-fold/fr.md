@@ -8,13 +8,10 @@ Cela signifie que la moitié seulement de la pièce de patron est imprimée, et 
 
 La ligne de pli est indiquée avec une double flèche, comme dans cet exemple :
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" />
+<Legend part="cutonfold" caption="A cut-on-fold indicator" >
 
 <Tip>
 
 For an overview of all indicators on your pattern, refer to the [pattern notation guide][1]
 
 </Tip>
-
-[1]:/docs/various/notation/
-

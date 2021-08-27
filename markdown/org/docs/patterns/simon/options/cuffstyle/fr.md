@@ -1,10 +1,10 @@
-![Cuff style](cuffstyle.svg)
+![Style de bracelet](cuffstyle.svg)
 
 What style of cuff do you want?
 
- - Rounded barrel cuff
+ - Poignet classique rond
  - Chamfer barrel cuff
- - Straight barrel cuff
- - Rounded French cuff
+ - Poignet classique carré
+ - Poignet mousquetaire rond
  - Chamfer French cuff
- - Straight French cuff
+ - Poignet mousquetaire carré

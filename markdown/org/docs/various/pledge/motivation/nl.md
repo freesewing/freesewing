@@ -11,24 +11,24 @@ his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
 
 Je veronderstelt waarschijnlijk dat we om geld vragen om de servers te laten draaien. Maar dat is niet echt waar.
 
-I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
+Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat privilege ook verantwoordelijkheid inhoudt.
 
 Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
 
-Zou ik het geld kunnen gebruiken? Yes I could.  
-Do I need the money? Nee, eigenlijk niet.
+Zou ik het geld kunnen gebruiken? Ja, dat zou wel kunnen.  
+Heb ik het geld nodig? Nee, eigenlijk niet.
 
 ##### De waarde van jullie steun
 
 Het grootste gevaar voor FreeSewing is hetzelfde als bij elk open source project: burnout bij de maker.
 
-While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
+Hoewel ik niet meer alleen aan FreeSewing werk - en ik kan niet lovend genoeg zijn over de waarde van het werk van alle medewerkers - ben ik toch niet immuun voor gevoelens als **Waarom doe ik dit in godsnaam?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Keep up the good work**.
+When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. En die boodschap is: **Hey, wat je doet is de moeite. Blijf vooral doorgaan.'**
 
 ##### De waarde van jullie geld
 
-It is not *just* about the money. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
+Het gaat niet *enkel* om het geld. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
 
 Geld inzamelen door iets te doen wat ik graag doe, en het dan doorgeven aan een goed doel, is wat mij op twee oren doet slapen.
 
@@ -39,7 +39,7 @@ En daarom gaat al het geld dat FreeSewing binnenbrengt naar een goed doel. Het m
 ##### Goede doelen zijn niet sexy
 Here's the tricky part: People give less once they know the money goes to charity. Ik wou dat het niet zo was, maar ja.
 
-So we're presenting [our subscription options](/community/join) like you would see on a for-profit site. Deze manier lijkt intuïtiever, en werkt ook beter.
+Daarom presenteren we onze [abonnementsopties](/community/join) zoals je op een winstmakende site zou zien. Deze manier lijkt intuïtiever, en werkt ook beter.
 
 Ja, alles is gratis, en het geld gaat niet echt naar de rekening van de server (omdat ik die uit eigen zak betaal, om bovenstaande redenen). Maar dat betekent niet dat deze bijdragen niet cruciaal zijn voor het welzijn van het project, of tenminste de man achter de schermen (ik dus).
 

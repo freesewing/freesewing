@@ -1,5 +1,5 @@
 ---
-title: Darts
+title: Abnäher
 ---
 
 ![Bust darts on a blouse](dart.jpg)

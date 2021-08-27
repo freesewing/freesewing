@@ -4,7 +4,7 @@ title: Dimensions
 
 When you opt for a *paperless* pattern, your pattern will come with dimensions:
 
-<Legend part="dimension" caption="An example of a dimension on a pattern" />
+<Legend part="dimension" caption="An example of a dimension on a pattern" >
 
 <Tip>
 

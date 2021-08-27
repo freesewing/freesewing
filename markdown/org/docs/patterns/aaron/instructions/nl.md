@@ -38,7 +38,7 @@ Hoe dan ook, hoe minder scherp de curves zijn, hoe makkelijker. Start dus met ee
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
+We gaan de armsgaten en nekopening afwerken met een [jersey bies](/docs/sewing/knit-binding) (Pas op: geen jersey band. Er is een verschil, en dat wordt [hier](/docs/sewing/knit-binding) uitgelegd).
 
 <Note>
 
@@ -73,9 +73,9 @@ We gaan op 1,5 cm van de rand naaien. Opletten dus, want dit is niet de standaar
 
 <Tip>
 
-The easy way to keep this 1.5cm distance is by using a seam gauge. 
+Als je naaimachine geen markeringen heeft om de afstand van de naald tot de rand van de stof aan te geven kan je een zoommaatje gebruiken. 
 Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle. 
-Then all you need to do is keep the edge of your fabric aligned with that line.
+Dan moet je alleen maar de rand van je stof gelijk houden met die lijn.
 
 </Tip>
 
@@ -89,7 +89,7 @@ Stik de bies vast, rek terwijl de bies lichtjes uit. Let op dat je de stof niet 
 
 Misschien moet je een beetje oefenen om dit beet te krijgen.
 
-> Make sure to stretch your binding more when you're taking a sharper bend. Read my notes on [knit binding](/docs/sewing/knit-binding) for more info.
+> Zorg dat je je bies een beetje meer uitrekt als je bij een scherpere curve komt. Lees mijn opmerkingen over [jersey biezen](/docs/sewing/knit-binding) voor meer info.
 
 ### Markeer het einde van je biezen
 
@@ -109,7 +109,7 @@ Mark the binding where it reaches the start point. Doe hetzelfde voor het andere
 
 Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Naai de uiteindes aan elkaar op de markering.
 
-> 6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them togther.
+> 6 cm is niet veel, maar zou genoeg moeten zijn om de twee uiteindes makkelijk onder je naaimachine te leggen en aan elkaar te naaien.
 
 ### Stik de laatste 6 cm van de bies vast
 
@@ -126,7 +126,7 @@ Nu de uiteindes van je biezen aan elkaar hangen is het tijd om de laatste 6 cm v
 
 Plooi je bies rond de stof van je hemdje naar de verkeerde kant. Zo gaan we de bies vaststikken.
 
-> While the fabric is folded double at the front (hiding the fabric edge in the process) there's no need for that at the back. We will merely trim back the edge later, given that knit doesn't ravel. If we were to fold back the fabric at the back too, it would only add bulk.
+> Vooraan is de bies twee keer geplooid (en wordt de rand van de stof meteen verborgen), maar aan de verkeerde kant is dit niet nodig. Later kunnen we gewoon het randje wat bijknippen, aangezien jersey niet rafelt. Als we de bies aan de achterkant ook zouden plooien zou dit alleen maar bulk toevoegen.
 
 ### Stik de bies vast
 

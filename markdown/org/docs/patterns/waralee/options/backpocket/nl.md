@@ -1,2 +1,2 @@
-Whether to include a back pocket or not
+Of een achterzak moet worden toegevoegd of niet
 

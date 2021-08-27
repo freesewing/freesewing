@@ -9,4 +9,3 @@ l'article contient également des instructions, donc vous pouvez vouloir le cons
 <Warning>
 La documentation pour ce patron n'est pas encore écrite.
 </Warning>
-

@@ -2,5 +2,6 @@
 title: "@freesewing/plugin-logo"
 ---
 
-<Plugin plugin="logo" />
+ 
 
+<PluginPage plugin="logo" />

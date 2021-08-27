@@ -2,7 +2,7 @@
 title: Schouderhelling
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+De **schouderhelling** maat geeft aan hoe scherp je schouders naar beneden hellen.
 
 Om je schouderhelling te meten moet je bepalen in welke hoek je schouderlijn naar beneden loopt.
 
@@ -20,4 +20,3 @@ It won't show up for casual garments, and for formal wear, it's better to add
 asymmetric shoulder padding, rather than create an asymmetric pattern.
 
 </Note>
-

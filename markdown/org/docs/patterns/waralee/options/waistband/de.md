@@ -1,2 +1,2 @@
-Size of the waist band
+Größe des Taillenbundes
 

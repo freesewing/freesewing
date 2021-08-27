@@ -2,11 +2,11 @@
 title: Wat je nodig hebt
 ---
 
-To make Florent, you will need the following:
+Om Florent te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/florent/fabric/))
+- Ongeveer 0.5 meter geschikte stof ([zie Optionele stoffen](/docs/patterns/florent/fabric/))
 - Ongeveer 0.5 meter voering
-- Tape, a bit more than **head circumference** + **ease** that you used for the pattern
+- Band, een beetje meer dan de afmeting van de **hoofdomtrek** + **overwijdte** die je voor het patroon gebruikt hebt
 - Een vel plastic of iets anders plat en stevig voor de klep (1 mm dik of minder)
 

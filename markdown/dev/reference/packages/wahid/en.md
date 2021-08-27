@@ -2,4 +2,6 @@
 title: "@freesewing/wahid"
 ---
 
-<Pattern pattern="wahid" />
+ 
+
+<PatternPage pattern="wahid" />

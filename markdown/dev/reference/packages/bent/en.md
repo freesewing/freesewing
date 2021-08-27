@@ -2,4 +2,6 @@
 title: "@freesewing/bent"
 ---
 
-<Pattern pattern="bent" />
+ 
+
+<PatternPage pattern="bent" />

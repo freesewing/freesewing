@@ -1,7 +1,7 @@
-- - -
-- - -
+---
+---
 
-import PatternDocs from '../../../../../src/components/docs/pattern'
+ 
 
 <Tip>
 
@@ -15,5 +15,6 @@ You can find all the material's on Kelly's
 site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
+
 
 <PatternDocs pattern='simon' />

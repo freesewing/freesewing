@@ -1,4 +1,4 @@
-![Cuff ease](cuffease.svg)
+![Holgura de muñeca](cuffease.svg)
 
 Determines how much the cuff is larger than your wrist.
 
@@ -11,6 +11,4 @@ You might want more if you want the shirt cuff to fit over a bulky watch. Less r
 Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
 
 </Note>
-
-
 

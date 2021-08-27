@@ -1,7 +1,7 @@
 
 Controls the spread of the collar.
 
-> FIXME: Explain what this means exactly.
+<Fixme> Explain what this means exactly. </Fixme>
 
 
 ## Effect of this option on the pattern

@@ -1,5 +1,5 @@
 ---
-title: Back armhole slant
+title: Inclinaison d'emmanchure dos
 ---
 
 ![The effect of the back armhole slant option on the pattern](sample.png)

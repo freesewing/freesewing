@@ -12,4 +12,3 @@
  - There is extra hem allowance at the hem
 
 </Warning>
-

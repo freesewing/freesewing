@@ -1,5 +1,5 @@
 ---
-title: Seat circumference
+title: Contorno de asiento
 ---
 
 The **seat circumference** is the measurement around the fullest part of your bum.

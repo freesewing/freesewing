@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-gore"
 ---
 
-<Plugin plugin="gore" />
+ 
+
+<PluginPage plugin="gore" />

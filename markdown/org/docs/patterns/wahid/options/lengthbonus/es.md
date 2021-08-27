@@ -1,3 +1,3 @@
-![Length bonus](lengthbonus.svg)
+![Bonus de longitud](lengthbonus.svg)
 
 This option allows you to lengthen (or shorten) your waistcoat.

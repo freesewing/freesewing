@@ -24,6 +24,7 @@ order: 40
 - Wir teilen niemals persönliche Modelldaten
 - Wir veröffentlichen einen offenen Messdatensatz (open data) mit vollständig anonymisierten Daten.
 
+
 <Note>
 Diese Daten werden für jede Person mit einem Account auf unserer Website gespeichert, der eine oder mehrere Personen enthält.
 </Note>

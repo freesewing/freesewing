@@ -1,2 +1,2 @@
-The amount of ease at the waist.
+L'ampleur d'aisance à votre taille.
 

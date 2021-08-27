@@ -10,4 +10,3 @@ De cette façon, les raccords seront parfaits.
 Ceci s'applique uniquement à une patte classique. N'en tenez donc pas compte si vous avez opté pour une patte de boutonnière sans couture.
 
 </Note>
-

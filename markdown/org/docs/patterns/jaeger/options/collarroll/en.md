@@ -1,5 +1,5 @@
 
-Controls the amound of roll in the collar; How mmuch the topcollar is higher than the undercollar.
+Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
 
 
 ## Effect of this option on the pattern

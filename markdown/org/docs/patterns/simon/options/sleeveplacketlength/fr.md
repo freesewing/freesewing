@@ -1,4 +1,4 @@
-![Sleeve placket length](sleeveplacketlength.svg)
+![Longueur de la patte de manche](sleeveplacketlength.svg)
 
 How long do you want the sleeve placket to be?
 
@@ -8,4 +8,3 @@ The longer your sleeve placket is, the easier it is to get out of your shirt sle
 It also influences what things will look like when you roll up your sleeves
 
 </Note>
-

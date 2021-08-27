@@ -1,2 +1,2 @@
-The width of the waist band.
+La anchura de la cinturilla.
 

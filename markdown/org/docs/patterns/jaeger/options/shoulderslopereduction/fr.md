@@ -1,4 +1,4 @@
 
 ![Réduction de la pente d'épaule](shoulderslopereduction.svg)
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.

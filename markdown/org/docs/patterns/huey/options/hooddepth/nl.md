@@ -1,3 +1,3 @@
-![Hood depth](./hooddepth.svg)
+![Capuchon diepte](./hooddepth.svg)
 
-Controls the depth of the hood.
+Bepaalt de diepte van de capuchon.

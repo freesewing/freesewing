@@ -1,5 +1,5 @@
 ---
-title: Back dart shaping
+title: Forma de las pinzas traseras
 ---
 
 Controls how much of the waist shaping will happing in the backdarts.

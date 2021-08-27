@@ -80,4 +80,4 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, 
 
 Thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
-That's it, you're done 👍
+Das war's, du bist fertig 👍

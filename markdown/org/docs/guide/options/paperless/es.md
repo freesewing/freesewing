@@ -1,5 +1,5 @@
 ---
-title: Paperless
+title: Sin papel
 ---
 
 Paperless patterns have extra markings to use them without a printer.

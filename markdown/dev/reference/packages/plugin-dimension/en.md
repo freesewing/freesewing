@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-dimension"
 ---
 
-<Plugin plugin="dimension" />
+ 
+
+<PluginPage plugin="dimension" />

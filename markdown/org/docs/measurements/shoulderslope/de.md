@@ -4,20 +4,18 @@ title: Schulterneigung
 
 The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
 
-To measure your shoulder slope, you need to determine the angle at which your shoulder line slopes downward.
+Um deine Schulterneigung zu messen, musst du den Winkel bestimmen, unter dem sich deine Schulterlinie nach unten neigt.
 
-A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
+Ein guter Weg, um deine Schulterneigung zu messen, ist ein Selfie aufzunehmen und es solange zu drehen, bis deine Schulterlinie horizontal ist.
 
-The angle you had to rotate is your shoulder slope.
+Der Winkel, um den du das Bild drehen musstest, ist deine Schulterneigung.
 
 <Note>
 
-Almost all people have a slightly different shoulder slope on both sides.
-That's because your dominant arm is more pronounced.
+Fast alle Menschen haben eine etwas unterschiedliche Schulterneigung auf beiden Seiten.
+Das liegt daran, dass dein dominanter Arm ausgeprägter ist.
 
-Unless the different is huge, best not to worry about it.
-It won't show up for casual garments, and for formal wear, it's better to add
-asymmetric shoulder padding, rather than create an asymmetric pattern.
+Solange der Unterschied nicht sehr groß ist, musst du dir keine Gedanken darum machen.
+Bei lockerer Kleidung wird es nicht auffallen, und bei formeller Kleidung ist es besser, asymmetrische Schulterpolster zu verwenden als ein asymmetrisches Schnittmuster zu erstellen.
 
 </Note>
-

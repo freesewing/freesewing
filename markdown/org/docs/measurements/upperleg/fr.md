@@ -13,4 +13,3 @@ Vous devez le mesurer un peu en dessous de votre entrejambe, reportez-vous à l'
 Cette mesure est également utilisées comme **une référence verticale** pour déterminer l'espace vertical dans lequel tracer le l'assise/entrejambe du pantalon. À ce titre, l'emplacement vertical de cette mesure est important.
 
 </Tip>
-

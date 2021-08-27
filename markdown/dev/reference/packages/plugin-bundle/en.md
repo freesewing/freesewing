@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-bundle"
 ---
 
-<Plugin plugin="bundle" />
+ 
+
+<PluginPage plugin="bundle" />

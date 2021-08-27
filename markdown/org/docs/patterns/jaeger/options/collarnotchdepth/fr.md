@@ -1,4 +1,4 @@
 
-![Collar notch depth](collarnotchdepth.svg)
+![Profondeur du col cranté](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Profondeur du col cranté.

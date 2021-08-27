@@ -1,4 +1,4 @@
-![Cuff drape](cuffdrape.svg)
+![Drapé du bas de manche](cuffdrape.svg)
 
 How much the end of the sleeve is wider than the wrist.
 
@@ -10,4 +10,3 @@ More drape makes the sleeve wider and gives you a more *blousy* effect, whereas 
 The drape will be worked into the cuff with pleats.
 
 </Note>
-

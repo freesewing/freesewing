@@ -4,4 +4,4 @@ Hoeveel ruimte wil je in het kruis vooraan?
 
 Deze optie maakt de voorste neep meer uitgesproken, en creëert zo meer ruimte vooraan.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Als je verticaal meer ruimte nodig hebt, dan moet je naar de **hoogte** optie kijken

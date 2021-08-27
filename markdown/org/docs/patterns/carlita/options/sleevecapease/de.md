@@ -1,4 +1,4 @@
-![Sleevecap ease](./sleevecapease.svg)
+![Armkugel Zugabe](./sleevecapease.svg)
 
 How much sleevecap ease do you want?
 

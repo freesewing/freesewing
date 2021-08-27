@@ -1,5 +1,5 @@
 ---
-title: Cuff style
+title: Manschettenstil
 ---
 
 This pattern supports three different cuff styles:

@@ -1,5 +1,5 @@
 ---
-title: Detail
+title: Detalle
 ---
 
 Turn this setting off to only draft a basic outline of the pattern.

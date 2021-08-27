@@ -1,4 +1,4 @@
-![Button free length](./buttonfreelength.svg)
+![Freie Länge Knopf](./buttonfreelength.svg)
 
 How much before your waistband do you want your last button to sit?
 
@@ -16,4 +16,3 @@ If you want to have buttons below your waistband, you can. You should enter a ne
 making sure it's within the length bonus you have available.
 
 </Note>
-

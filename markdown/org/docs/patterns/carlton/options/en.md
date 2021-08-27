@@ -1,7 +1,5 @@
 ---
 ---
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
-
-<PatternOptions pattern='carlita' />
+<PatternOptions pattern='carlon' />
 

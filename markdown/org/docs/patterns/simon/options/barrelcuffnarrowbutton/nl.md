@@ -10,4 +10,3 @@ Als je je hemd onder een strakke (of toch aan de pols) trui of cardigan wil drag
 Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manchet gekozen hebt wordt dit genegeerd.
 
 </Note>
-

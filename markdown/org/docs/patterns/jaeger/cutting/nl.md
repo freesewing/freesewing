@@ -1,29 +1,29 @@
  - **Buitenstof**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front facings** (look for the facing/lining boundary on the front part)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4)
-   - Cut **2 undersleeves** (part 5)
-   - Cut **1 collar** (part 6)
-   - Cut **1 collarstand** (part 8)
-   - Cut **2 pockets** (part 9)
-   - Cut **1 chest pocket welt** (part 10)
+   - Knip **2 voorpanden** (deel 1)
+   - Knip **2 belegdelen voor** (kijk naar de lijn die het voorpand verdeelt in beleg/voering)
+   - Knip **2 rugpanden** (deel 2)
+   - Knip **2 zijpanden** (deel 3)
+   - Knip **2 bovenmouwen** (deel 4)
+   - Knip **2 ondermouwen** (deel 5)
+   - Knip **1 kraag** (deel 6)
+   - Knip **1 kraagstaander** (deel 8)
+   - Knip **2 zakken** (deel 9)
+   - Knip **1 bies borstzak** (deel 10)
  - **Voering**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4) Note: Some people like to use different lining for the sleeves
-   - Cut **2 undersleeves** (part 5) Note: Some people like to use different lining for the sleeves
-   - Cut **2 chest pocket bags** )(part 11)
-   - Cut **2 inner pocket welts**
-   - Cut **2 inner pocket bags** (part 13)
+   - Knip **2 voorpanden** (deel 1)
+   - Knip **2 voorpanden voering** (kijk naar de lijn die het voorpand verdeelt in beleg/voering, en vergeet niet de belegextensie voor de binnenzak toe te voegen)
+   - Knip **2 rugpanden** (deel 2)
+   - Knip **2 zijpanden** (deel 3)
+   - Knip **2 bovenmouwen** (deel 4) Opmerking: sommige mensen gebruiken graag een aparte voering voor de mouwen
+   - Knip **2 ondermouwen** (deel 5) Opmerking: sommige mensen gebruiken graag een aparte voering voor de mouwen
+   - Knip **2 zakdelen borstzak** (deel 11)
+   - Knip **2 biezen binnenzak**
+   - Knip **2 zakdelen binnenzak** (deel 13)
  - **Haardoek**
-   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
-   - Cut **2 chest pieces** on bias. Kijk naar de markering op het voorpand. Opmerking: voeg geen naadwaarde toe
+   - Knip **2 voorpanden** schuin van draad (deel 1) Opmerking: voeg geen naadwaarde toe
+   - Knip **2 borststukken** schuin van draad. Kijk naar de markering op het voorpand. Opmerking: voeg geen naadwaarde toe
  - **Stof voor de onderkraag**
-   - Cut **1 undercollar** (part 7)
+   - Knip **1 onderkraag** (deel 7)
 
 <Note>
 
@@ -41,10 +41,9 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 ###### Cutting caveats
 
  - The chest piece is marked on the front.
- - Don't include seam allowance when cutting out canvas, and cut it on bias.
- - The front facing and lining is marked on the front piece. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ - Voeg geen naadwaarde toe als je haardoek uitknipt, en knip schuin van draad.
+ - Het beleg vooraan en de voering van het voorpand zijn aangegeven op het patroondeel van het voorpand. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
 
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
-

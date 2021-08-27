@@ -6,7 +6,7 @@ Il y a deux types de repères. Le repère par défaut est un point dans un cercl
 
 Un style alternatif montre une croix dans un cercle. Ce style est utilisé pour indiquer le dos d'un vêtement. Par exemple, sur une tête de manche vous pouvez voir un point et une croix. De cette façon, vous savez quel côté de la tête de manche est le devant (celui avec le repère en croix).
 
-<Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" />
+<Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" >
 
 <Tip>
 

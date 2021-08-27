@@ -1,4 +1,4 @@
 
-![Length bonus](lengthbonus.svg)
+![Längenzugabe](lengthbonus.svg)
 
 The length of the skirt.

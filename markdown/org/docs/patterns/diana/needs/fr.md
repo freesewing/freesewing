@@ -14,4 +14,3 @@ Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin.
 Parce que ces coutures latérales et les coutures d'épaule ne seront pas étirées, vous pouvez simplement les coudre avec une couture droite normale.
 
 </Note>
-

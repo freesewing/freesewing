@@ -14,5 +14,3 @@ Aangezien naadloos enkel mogelijk is bij een aangeknipt knopenpat wordt deze opt
 
 </Note>
 
-
-

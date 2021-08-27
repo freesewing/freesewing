@@ -8,6 +8,7 @@ object Part.shorthand();
 
 This method returns a plain object with the following properties:
 
+  - `complete` = `pattern.settings.complete`
   - `events` : An object holding the raised events (see `raise`)
   - `final` : `true` is this is a full draft, or `false` if this is a sample.
   - `macro` : The macro runner

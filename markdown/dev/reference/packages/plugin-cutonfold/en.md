@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-cutonfold"
 ---
 
-<Plugin plugin="cutonfold" />
+ 
+
+<PluginPage plugin="cutonfold" />

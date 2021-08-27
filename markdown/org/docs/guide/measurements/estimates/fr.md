@@ -26,4 +26,3 @@ Enfin et surtout, alors que nous essayons de fournir des conseils sur les mesure
 Peu importe ce que vous nous envoyez, nous élaborerons un patron qui fonctionne pour vous, ou nous (ou plutôt notre logiciel) nous tuerons à la tâche à essayer.
 
 </Note>
-

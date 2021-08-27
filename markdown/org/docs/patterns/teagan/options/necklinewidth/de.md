@@ -1,1 +1,1 @@
-Controls the width of the neck opening.
+Steuert die Breite des Halsausschnitts.

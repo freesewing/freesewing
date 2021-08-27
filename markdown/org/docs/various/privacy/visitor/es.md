@@ -7,11 +7,11 @@ order: 10
 
 - Your IP address
 
-##### Why do we need it?
+##### ¿Por qué la necesitamos?
 
 - Your IP address is logged on our backend systems. We use these logs and the information in them only to diagnose problems.
 
-##### How long do we keep it?
+##### ¿Cuánto tiempo lo mantenemos?
 
 - We keep these logs no longer than 6 months.
 

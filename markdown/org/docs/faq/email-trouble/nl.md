@@ -4,7 +4,7 @@ title: Hoe kan ik een account maken? Ik heb nooit een e-mail ontvangen om mijn a
 
 Als je geen e-mail hebt ontvangen, kijk dan in je spam- of junkmap. Als je het daar ook niet terugvindt, is de kans groot dat je e-mailprovider het bericht geblokkeerd heeft.
 
-Either try using a different E-mail address, or [reach out to us](https://discord.freesewing.org/) so we can help you activate your account.
+Probeer het ofwel met een ander e-mailadres, of [geef ons een seintje](https://discord.freesewing.org/) zodat we je kunnen helpen je account te activeren.
 
 <Note>
 

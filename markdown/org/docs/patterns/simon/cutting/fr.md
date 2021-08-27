@@ -38,6 +38,3 @@ Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l
 </Warning>
 
 
-
-
-

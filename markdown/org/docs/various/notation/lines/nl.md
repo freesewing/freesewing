@@ -11,4 +11,4 @@ Sommige patronen kunnen andere lijnen hebben, er zijn 4 andere mogelijke soorten
 
 Deze kunnen gebruikt worden door patroonontwerpers om extra info toe te voegen, afhankelijk van de context.
 
-<Legend part="otherLines" caption="Other line styles" />
+<Legend part="otherLines" caption="Other line styles" >

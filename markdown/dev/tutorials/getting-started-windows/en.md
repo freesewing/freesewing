@@ -25,6 +25,7 @@ Installing and using an IDE is optional, you can skip that step or use a differe
 <Warning>
 This guide uses WSL version 2, which requires installing the Hyper-V virtualisation system. If you have another virtualisation system installed (such as VirtualBox or VMWare) you may run into conflicts which require either updating that system to a version which can use the HyperV backend or porting your existing machines to use HyperV.
 </Warning>
+
 Follow the [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-gb/windows/wsl/install-win10) (requires a recent version of Windows 10).
 
 #### Install NVM
@@ -112,12 +113,10 @@ This script will prompt you for certain options. Only "Pattern name" is mandator
  - **Pattern name**: This will be the name of your pattern, but also the name of the folder we'll setup for you. If you're just kicking the tires, something like `test` will do you fine.
  - **description**: A description of your pattern. It's not mandatory.
  - **Pattern type**: Use the arrow keys to chose either `block` or `pattern`. Choose `pattern` if you're not sure what to pick.
- - **department**: Use the arrow keys to pick a department like `menswear`, `womenswear` or `accessories`. This is is only relevant if you decide to publish your pattern later. But by that time you will have learned how to change this.
+ - **department**: Use the arrow keys to pick a department like `tops`, `bottoms` or `accessories`. This is is only relevant if you decide to publish your pattern later. But by that time you will have learned how to change this.
  - **Author**: You can enter your name, or leave this blank for now.
  - **GitHub repository**: You can leave this blank for now.
  - **Package manager**: Choose either `npm` or `yarn` as your package manager. If you're not sure, pick `npm`.
 
 ### Start the development environment
-After this process completes you will be ready to run the development environment. In the current terminal (or a new window if you prefer) you will need to build the package. Navigate to the folder you created during the previous step (whatever you provided for the "Pattern name" option) and run `npm start` or `yarn start` depending on the build system you chose. This will build the pattern package which is used by the development instance.
-
-Next, open a new terminal window and navigate to the `example` folder inside this folder. Run `npm start`/`yarn start` again to build the example application and start a local web server instance so you can test your changes.
+After this process completes you will be ready to run the development environment. In the current terminal (or a new window if you prefer) you will need to build the package. Navigate to the folder you created during the previous step (whatever you provided for the "Pattern name" option) and then to the `example` folder inside this folder, then run `npm start` or `yarn start` depending on the build system you chose. This will build the pattern package which is used by the development instance, build the example application, and start a local web server instance so you can test your changes.

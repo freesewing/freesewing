@@ -21,10 +21,13 @@ let {
   points,
   Path,
   paths,
+  complete,
+  sa,
+  paperless,
   measurements,
   options,
   macro
-} = part.shorthand();
+} = part.shorthand()
 ```
 
 We need a half circle here, but the `round` macro works on 90° angles, so you'll use it twice.
@@ -32,11 +35,11 @@ We need a half circle here, but the `round` macro works on 90° angles, so you'l
 As such, let's add some points to guide the macro, and then put it to work:
 
 ```js
-let strap = points.edgeTop.dy(points.top);
+let strap = points.edgeTop.dy(points.top)
 
-points.tipRight = points.edgeTop.translate(strap / 2, strap / 2);
-points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y);
-points.tipRightBottom = new Point(points.tipRight.x, points.top.y);
+points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
+points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
+points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
 macro("round", {
   from: points.edgeTop,
@@ -44,17 +47,17 @@ macro("round", {
   via: points.tipRightTop,
   prefix: "tipRightTop",
   render: true
-});
+})
 macro("round", {
   from: points.tipRight,
   to: points.top,
   via: points.tipRightBottom,
   prefix: "tipRightBottom",
   render: true
-});
+})
 ```
 
-<Fixme> Add link to macro/extend docs </Fixme>
+<Note> You can find more information on the `round` macro in [the macros docs](/reference/macros/round/).</Note>
 
 <Example pattern="tutorial" part="step7" caption="Pretty good, but how are we going to fit it over the baby's head?" />
 

@@ -16,17 +16,17 @@ As always, [the API docs](/reference/api/point/) have all the details.
 </Note>
 
 ```js
-points.edgeLeft = new Point(points.topLeft.x, points.left.y);
-points.edgeRight = new Point(points.topRight.x, points.right.y);
-points.edgeTop = new Point(0, points.topLeft.y);
+points.edgeLeft = new Point(points.topLeft.x, points.left.y)
+points.edgeRight = new Point(points.topRight.x, points.right.y)
+points.edgeTop = new Point(0, points.topLeft.y)
 
-points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5);
-points.edgeRightCp = points.edgeLeftCp.flipX();
+points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
+points.edgeRightCp = points.edgeLeftCp.flipX()
 points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
   points.topLeft,
   0.5
-);
-points.edgeTopRightCp = points.edgeTopLeftCp.flipX();
+)
+points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
 ```
 
 Now, adapt our `rect` path so it's no longer a rectangle:
@@ -39,7 +39,7 @@ paths.rect = new Path()
   .line(points.bottomRight)
   .line(points.edgeRight)
   .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
-  .close();
+  .close()
 ```
 
 All of a sudden, things are starting to look like a bib:

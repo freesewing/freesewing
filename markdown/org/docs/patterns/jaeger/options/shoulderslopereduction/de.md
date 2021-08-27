@@ -1,4 +1,4 @@
 
-![Shoulder slope reduction](shoulderslopereduction.svg)
+![Verringerung der Schulterneigung](shoulderslopereduction.svg)
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+Der Betrag, um den die Schulterneigung reduziert wird, um eine Schulterpolsterung zu ermöglichen.

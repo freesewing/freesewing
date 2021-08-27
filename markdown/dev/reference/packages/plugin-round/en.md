@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-round"
 ---
 
-<Plugin plugin="round" />
+ 
+
+<PluginPage plugin="round" />

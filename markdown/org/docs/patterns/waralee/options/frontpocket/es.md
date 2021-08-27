@@ -1,2 +1,2 @@
-Whether to include a front pocket or not
+Si se añade un bolsillo delantero o no
 

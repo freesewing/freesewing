@@ -1,2 +1,2 @@
 
-The collar spread controls how the collar drapes over the shoulders
+La extensión del collar controla cómo el collar cubre los hombros

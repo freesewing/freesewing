@@ -1,4 +1,4 @@
-![Split yoke](splityoke.svg)
+![Geteilte Passe](splityoke.svg)
 
 Do you want a split yoke?
 
@@ -11,4 +11,3 @@ With a split yoke, only half the yoke is included on the pattern, and you'll hav
 It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
 
 </Note>
-

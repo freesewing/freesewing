@@ -4,25 +4,25 @@ order: 30
 ---
 
 
-##### What personal data do we store?
+##### Welke persoonlijke gegevens bewaren we?
 
-- Your E-mail address
-- Your username and password
-- Optional: A profile picture, bio, and your social media accounts
+- Je e-mailadres
+- Je gebruikersnaam en wachtwoord
+- Optioneel: een profielfoto, bio en je social media accounts
 
-##### Why do we need it?
+##### Waarom hebben we ze nodig?
 
-- To authenticate you
-- To be able to contact you when required
-- Optional: We don't need a picture or your social media accounts, but they help to build an on-line community
+- Om je te verifiëren
+- Om je te kunnen contacteren indien nodig
+- Optioneel: we hebben geen foto of social media accounts nodig, maar deze helpen een online gemeenschap op te bouwen
 
-##### How long do we keep it?
+##### Hoe lang houden we ze?
 
-- We keep profile data up to 12 months after your last login, or until you remove it.
+- We houden profielgegevens bij tot 12 maanden na je laatste login, of tot je ze zelf verwijdert.
 
-##### Do we share it?
+##### Wordt dit gedeeld?
 
-- No, never.
+- Nee, nooit.
 
 <Note>
 Deze gegevens worden opgeslagen voor iedereen met een account op onze website.

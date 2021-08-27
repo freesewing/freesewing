@@ -1,4 +1,4 @@
-![Front inset](frontinset.svg)
+![Échancrure emmanchure avant](frontinset.svg)
 
 How far do you want your waistcoat armhole to curve inwards on the front?
 
@@ -10,4 +10,3 @@ The armhole of your waistcoat can curve further inward, given that there is no s
 This influences the style of the waistcoat.
 
 </Note>
-

@@ -1,4 +1,4 @@
 
-![Hem width](hemwidth.svg)
+![Saumbreite](hemwidth.svg)
 
 The width of the hem.

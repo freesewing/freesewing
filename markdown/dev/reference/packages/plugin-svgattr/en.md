@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-svgattr"
 ---
 
-<Plugin plugin="svgattr" />
+ 
+
+<PluginPage plugin="svgattr" />

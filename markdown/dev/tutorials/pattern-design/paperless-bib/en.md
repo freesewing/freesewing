@@ -6,7 +6,7 @@ order:  270
 Users can request paperless patterns by setting the `paperless` setting to `true`.
 
 We can get that value of the setting from the `part.shorthand()` method.
-It will be the last shorthand we need:
+It will be the last shorthand we will put to use:
 
 ```js
 let {
@@ -14,14 +14,15 @@ let {
   points,
   Path,
   paths,
+  complete,
+  sa,
+  paperless, // <- this one here
   measurements,
   options,
   macro,
-  complete,
   snippets,
-  Snippet,
-  paperless
-} = part.shorthand();
+  Snippet
+} = part.shorthand()
 ```
 
 The idea behind *paperless patterns* is that users don't need to print your
@@ -30,7 +31,7 @@ Instead, we include dimensions on the pattern that allows them to transfer
 the pattern directly onto fabric, or onto an intermediate medium such as tracing paper.
 
 In addition, FreeSewing will automatically render a grid for each pattern part with metric or imperial
-marcations, depending on the units requested by the user.
+markings, depending on the units requested by the user.
 
 While the grid gets added automatically, the dimensions you have to add yourself.
 Thankfully, there's macros that can help you with that, specifically:
@@ -40,7 +41,7 @@ Thankfully, there's macros that can help you with that, specifically:
  - The `ld` macro adds a linear dimension
  - The `pd` macro adds a path dimension that follows a given path
 
-<Fixme> Add links to macro docs </Fixme>
+<Note> The documentation, as always, holds [all the information about the macros](/reference/macros/). </Note>
 
 Let's look at the code:
 
@@ -51,36 +52,36 @@ if (paperless) {
     from: points.bottomLeftStart,
     to: points.bottomRightEnd,
     y: points.bottomLeft.y + 15
-  });
+  })
   macro("vd", {
     from: points.bottomRightStart,
     to: points.bottom,
     x: points.bottomRight.x + 15
-  });
+  })
   macro("vd", {
     from: points.bottomRightStart,
     to: points.right,
     x: points.bottomRight.x + 30
-  });
+  })
   macro("vd", {
     from: points.bottomRightStart,
     to: points.tipLeftTopStart,
     x: points.bottomRight.x + 45
-  });
+  })
   macro("hd", {
     from: points.left,
     to: points.right,
     y: points.left.y + 25
-  });
+  })
   macro("ld", {
     from: points.tipLeftBottomEnd,
     to: points.tipLeftTopStart,
     d: 15
-  });
+  })
 }
 ```
 
-There's a lot going on, but it's mostly repetition. Let's look at the end result, and discuss:
+There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable *paperless mode* in your developing environment; you can find the option under *Pattern options* on the right. Let's look at the end result, and discuss:
 
 <Example pattern="tutorial" part="bib" caption="Your paperless bib" settings={{paperless: true}} />
 

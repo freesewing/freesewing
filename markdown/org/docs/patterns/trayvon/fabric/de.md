@@ -1,5 +1,5 @@
 ## Tie fabric
-The ties you find in the store are typically made out of silk or some imitation silk poly. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
+Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
 
 In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
 
@@ -21,7 +21,7 @@ When in doubt, go for imitation silk. Do make sure to pick something that is a n
 ## Tie interfacing
 Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+Tie interfacing can be notoriously hard to get. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
 
 While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
 
@@ -32,4 +32,3 @@ As long as you keep your tie away from scissors and bondage fanatics, your tie i
 As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
-

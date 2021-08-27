@@ -1,50 +1,50 @@
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
-### Step 1: Join back to first side
+### Stap 1: Bevestig rugpand aan eerste zijkant
 
-![Join back to first side](step01.png)
+![Bevestig rugpand aan eerste zijkant](step01.png)
 
-Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
+Leg de zijkant (stuk 3) op de rug (stuk 1) aan de zijrand, met de goede kanten op elkaar. Aangezien de zijkant (stuk 3) symmetrisch is kan dit niet fout lopen.
 
-Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
+Lock de naad, met een naadwaarde van 1 cm. Mik dus met de buitenste naald van je lockmachine op 1 cm naast de rand van je stof.
 
-> If metric is not your bag, 1 cm is 3/8 inch.
+> Als het metrieke stelsel niet je ding is, 1 cm is 3/8 inch.
 
-> Some sergers have a lever to choose between flat seams, or bundled up seams. If you plan to topstitch later (see Step 6), make sure to choose flat seams.
+> Some sergers have a lever to choose between flat seams, or bundled up seams. Als je van plan bent om sierstiksels te gebruiken (zie stap 6), kies dan zeker voor platte naden.
 
-### Step 2: Join back to second side
+### Stap 2: Bevestig rugpand aan tweede zijkant
 
-![Join back to second side](step02.png)
+![Bevestig rugpand aan tweede zijkant](step02.png)
 
-Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
+Leg de tweede zijkant (stuk 3) op de rug (stuk 1) aan de zijrand, met de goede kanten op elkaar. Aangezien de zijkant (stuk 3) symmetrisch is kan dit niet fout lopen.
 
-Serge them together, as you did on the other side.
+Lock de naad samen, zoals je aan de andere kant al deed.
 
-> The back and sides are now joined together. Put them aside for a moment as we turn our attention to the other pieces.
+> Het rugpand en de zijkanten zijn nu aan elkaar bevestigd. Leg ze even opzij terwijl we ons focussen op de andere stukken.
 
-### Step 3: Join first inset and fronts
+### Stap 3: Bevestig inzetstukken aan voorkanten
 
-![Start at one end](step03-a.png) ![Continue to align the pieces as you move on](step03-b.png) ![Until you reach the other end](step03-c.png)
+![Begin aan één kant](step03-a.png) ![Leg de stukken samen terwijl je voortgaat](step03-b.png) ![Until you reach the other end](step03-c.png)
 
-Joining the inset (piece 4) with the fronts (piece 2) requires you to serge them together across their curvy edges.
+Om het inzetstuk (stuk 4) aan de voorkant (stuk 2) te bevestigen moet je langs de gebogen randen locken.
 
-> Remember that you have two fronts. You have to put them on top of each other and treat it as one double-layered front.
+> Onthou dat je twee voorpanden hebt. Je moet deze bovenop elkaar leggen en als één dubbel gelaagd voorpand verwerken.
 
-Faced with a tricky seam like this, you might reach for your pins or basting thread, but don't. Pinning or basting this will make it harder to sew.
+Een lastige naad als deze geeft je zin om naar spelden of driegdraad te grijpen, maar laat dat. Spelden of driegen maakt dit moeilijker.
 
-Instead, start at the top of the curved seam, aligning the pieces as shown, and slowly serge them together a few cm.
+Begin aan de top van de gebogen naad, de stukken samenleggend zoals getoond, en lock ze langzaam een paar cm samen.
 
-As you move along, manipulate the fabric to make sure both edges stay on top of each other as you feed them through your serger.
+Terwijl je voortgaat manipuleer je de stof zodat de lagen gelijk blijven liggen terwijl je ze door de overlock haalt.
 
-As you manipulate the fabric to get it aligned properly, it's easy to stretch one part more than the other. The notch in the curved edge can help you make sure you're keeping things even.
+Als je de stof zo manipuleert is het makkelijk om één stuk meer uit te rekken dan de andere. Het merkteken op de gebogen rand kan je helpen om te controleren of alles gelijk blijft.
 
-Once you've passed the notch, things will get easier. This would also be a good time to compare the remaining length of the curved seams. If one is a bit longer than the other, simply stretch the shorter one until they match up.
+Zodra je voorbij dit merkteken bent wordt alles makkelijker. This would also be a good time to compare the remaining length of the curved seams. Als één stuk een beetje langer is dan het andere, rek het korte stuk dan een beetje tot ze even lang zijn.
 
-If the difference is too big however, just leave it. It will get get cut off when we do the crotchseam.
+Als het verschil te groot is, laat het dan gewoon. Het zal afgeknipt worden bij het naaien van de kruisnaad.
 
 <Note>
 
-This is probably the hardest seam in the pattern. Take it slow, and you'll be fine.
+Dit is zo ongeveer de moeilijkste naad in het patroon. Doe rustig aan, en alles komt goed.
 
 </Note>
 
@@ -55,141 +55,141 @@ This is probably the hardest seam in the pattern. Take it slow, and you'll be fi
 While it's a bit more work, you can enclose this seam if you baste the insets to a single one of the front pieces first,
 and then sew your front pieces together with the insets sandwiched inside.
 
-Sew the front darts separately and turn the whole thing inside out, and you have a nice seamless package area in front.
+Naai de nepen vooraan apart en keer alles binnenstebuiten, en je hebt een mooi naadloos pakketje vooraan.
 
 </Tip>
 
-### Step 4: Join second inset and fronts
-![Join second inset and fronts](step03-d.png)
+### Stap 4: Bevestig tweede inzetstuk en voorkanten
+![Bevestig tweede inzetstuk aan voorpanden](step03-d.png)
 
-After you have joined the first inset and the fronts, continue with the second one.
+Nadat je het eerste inzetstuk aan de voorpanden bevestigd hebt, doe je hetzelfde met het tweede.
 
-With the fronts and insets joined together, you are left with 3 parts:
+Als de voorpanden en inzetstukken aan elkaar hangen heb je nog maar drie stukken:
 
- - The joined insets and fronts
- - The joined sides and back
- - The elastic
+ - De inzetstukken en voorpanden, aan elkaar bevestigd
+ - De zijkanten en rugpand, aan elkaar bevestigd
+ - De elastiek
 
-### Step 5: Close the fronts dart
-![Close the fronts dart](step05.png)
+### Stap 5: Sluit de neep in de voorpanden
+![Sluit de voorste neep](step05.png)
 
-Fold the fronts double along the center fronts line, so that the tusks at the bottom line up.
+Vouw de voorpanden in twee langs de middenvoorlijn, zodat de gebogen stukken onderaan gelijk liggen.
 
-Serge the sides of the tusks to close the fronts dart. For best results, start at the top of the seam (where the fabric is folded) and work your way to the bottom.
+Lock de zijkanten van de gebogen delen om de voorste neep te sluiten. Voor het beste resultaat start je bovenaan de naad (waar de stof geplooid is) en ga je zo naar beneden.
 
 <Tip>
 
 ###### Keep that seam away from my ...
 
-Alternatively, sew the darts on each piece individually so that both seams are folded inside.
-Arguably, not having an exposed seam in this area is more comfortable for the wearer.
+Een andere optie is op de neep aan elk voorpand apart te naaien zodat de naden aan de binnenkant zitten.
+Het is iets meer werk, maar het is het extra comfort meer dan waard.
 
 </Tip>
 
-### Step 6: Optional: Topstitch
+### Stap 6: Optioneel: Sierstiksel
 ![Boxershort met (links) en zonder sierstiksel](step06.jpg)
 
 <Note>
 
-Deze stap is optioneel. Topstitching adds a visual effect that emphasizes the individual pattern pieces.
-It's nice to visually break up a solid fabric, but if you're using a print, or when you're colour-blocking, you might want to not topstitch.
+Deze stap is optioneel. Sierstiksel voegt een visueel effect toe dat de individuele patroondelen benadrukt.
+Het is een leuke manier om een effen stof visueel op te breken, maar als je een print gebruikt of verschillende kleuren, laat je het misschien beter.
 
 </Note>
 
-If you want to topstitch your serged seams for visual effect, you should do so now.
+Als je je gelockte naden wil doorstikken voor visueel effect is het nu het moment.
 
-If you topstitch, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
+Als je een sierstiksel geeft, die dit dan gewoon langs elke naad, steeds met een elastische steek. Je kan een zigzagsteek gebruiken of een tweelingnaald als je geen coverlock of specifieke stretchsteek hebt.
 
 <Tip>
 
 When topstitching the seam that closed the fronts dart, start from the bottom,
 and let the topstitching run all the way to the top, where the waistband will come.
-The seam stops halfway through (where the dart ends) but your topstitching should continue.
+De naad stopt halverwege (waar de neep eindigt), maar je stiksel moet doorlopen.
 
 </Tip>
 
-### Step 7: Join the first side to the fronts
-![Join the first side to the fronts](step07.png)
+### Stap 7: Bevestig de eerste zijkant aan de voorpanden
+![Bevestig eerste zijkant aan voorpanden](step07.png)
 
 Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
 
-### Step 8: Join the second side to the fronts
-![Join the second side to the fronts](step08.png)
+### Stap 8: Bevestig de tweede zijkant aan de voorpanden
+![Bevestig tweede zijkant aan voorpanden](step08.png)
 
-Do the same for the second side.
+Doe hetzelfde voor de tweede zijkant.
 
-### Step 9: Optional: Topstitch
+### Stap 9: Optioneel: Sierstiksel
 ![Boxershort met (links) en zonder sierstiksel](step06.jpg)
 
-If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
+Als je eerder al een sierstiksel gaf, doe dan nu hetzelfde voor de naden die je gemaakt hebt in stap 7 en 8.
 
-### Step 10: Finish the crotchseam
-![Finish the crotchseam](step10.png)
+### Stap 10: Werk de kruisnaad af
+![Werk de kruisnaad af](step10.png)
 
-We will now serge the arched opening in the back part to the front parts of the boxers, made up of the fronts and insets.
+We gaan nu de gebogen opening aan de achterkant bevestigen aan de voorkant van de boxershort, bestaande uit de voorpanden en inzetstukken.
 
-The notches on the back piece will help you. There's the center notch, and the other two notches should match up with where the fronts and inset pieces are joined.
+De merktekens op het rugpand zullen je helpen. Er is een merkteken in het midden, en de twee andere merktekens zouden moeten overeenkomen met waar de voorpanden en inzetstukken samenkomen.
 
 <Tip>
 
-It's easier to start in the middle point and work your way to one side. Then start from the middle again to do the other side.
+Het is makkelijker om in het midden te beginnen en één kant af te werken. Begin dan opnieuw in het midden om de andere kant af te werken.
 
 Take it slow, and be **very aware** of where your serger blade is cutting into.
 
 </Tip>
 
-### Step 11: Hem the first leg
-![Hem the first leg](step11.png)
+### Stap 11: Zoom de eerste pijp
+![Zoom de eerste pijp](step11.png)
 
-Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
+Tijd om de pijpen om te zomen. Zoom ze op dezelfde manier als je elke andere elastische gebreide stof zou zomen. Ga voor een elastische steek. Je kan een zigzaksteek of tweelingnaald gebruiken als je geen coverlock of specifieke stretchsteek hebt.
 
 <Note>
 
-I feel that hemming is much easier when you pin things in place first.
-So fold back your hem, and pin it in place.
-Even better: pin both legs in place and only sew when you're happy with how it looks.
+Ik vind zomen veel eenvoudiger als je de dingen eerst op de juiste plek speldt.
+Dus plooi je zoom om, en speld alles op z'n plaats.
+Nog beter: speld beide pijpen vast en naai pas als je vindt dat het er goed uitziet.
 
 </Note>
 
-### Step 12: Hem the second leg
-![Hem the second leg](step12.png)
+### Stap 12: Zoom de tweede pijp
+![Zoom de tweede pijp](step12.png)
 
-You know it makes sense.
+Niet meer dan logisch.
 
-### Step 13: Make your elastic into a loop
-![Make your elastic into a loop](step13.png)
+### Stap 13: Maak een lus van je elastiek
+![Maak een lus van je elastiek](step13.png)
 
-Sew both ends of your elastic together with good sides together.
+Naai de uiteindes van je elastiek samen met de goede kanten op elkaar.
 
 <Note>
 
 ###### Not sure how much elastic you need?
 Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
-Make a mark of where the edge joins, add 2cm seam allowance, and that's your length.
+Duid aan waar dat punt is, voeg 2 cm naadwaarde toe, en daar is je lengte.
 
 </Note>
 
-### Step 14: Attach elastic to waist
-![Attach elastic to waist](step14.png)
+### Stap 14: Bevestig elastiek aan de taille
+![Bevestig elastiek aan de taille](step14.png)
 
-Attach the elastic to the waist.
+Bevestig de elastiek aan de taille.
 
-Do so good sides together if you're using a flexible stitch or twin needle on a conventional sewing machine.
+Doe dit met de juiste kanten op elkaar als je een stretchsteek of tweelingnaald gebruikt op een gewone naaimachine.
 
-If you're using a coverlock, put the elastic on top of the good side of the fabric.
+Als je een coverlock gebruikt, leg de elastiek bovenop de goede kant van de stof.
 
 <Tip>
 
-The length of your elastic will probably difffer from the fabric length, as they stretch differently.
-Pinning will help you achieve an even stretch.
+De lengte van je elastiek is waarschijnlijk niet hetzelfde als de lengte van je stof, aangezien de twee op een andere manier uitrekken.
+Een paar spelden helpen om alles gelijk te krijgen.
 
-Divide both your elastic and boxer waistline into 4 (or 8) parts. Pin elastic and fabric together at these points.
+Verdeel zowel je elastiek als de taille van je boxershort in 4 (of 8) gelijke delen. Pin elastic and fabric together at these points.
 
 While sewing, stretch elastic and fabric together between each set of pins, removing the pins as you move on.
 
 </Tip>
 
-### Step 15: Trim and clean up
-![Yay! You've made it](step15.png)
+### Stap 15: Knip bij en kuis op
+![Joehoew! Je hebt het gehaald](step15.png)
 
-Trim any excess fabric you might have at elastic or hem, and any loose threads.
+Knip eventuele overtollige stukken stof aan de tailleband of zoom bij, en eventuele losse draadjes.

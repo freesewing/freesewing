@@ -24,7 +24,7 @@ The main risk to FreeSewing is the same as any open source project out there: ma
 
 While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Keep up the good work**.
+When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Macht weiter mit der guten Arbeit**.
 
 ##### Der Wert Ihres Geldes
 

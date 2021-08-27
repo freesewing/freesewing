@@ -1,6 +1,6 @@
-![Extra top button](extratopbutton.svg)
+![Extra knoop bovenaan](extratopbutton.svg)
 
-Do you want an extra button between the top front button and collar stand button?
+Wil je een extra knoop tussen de bovenste knoop vooraan en de knoop aan de kraagstaander?
 
 <Note>
 
@@ -16,4 +16,3 @@ Laat deze knoop weg als je een eerder casual uitzicht wil.
 Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt geen andere knoop.
 
 </Note>
-

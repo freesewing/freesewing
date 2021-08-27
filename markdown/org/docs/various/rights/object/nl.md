@@ -5,7 +5,7 @@ order: 70
 
 Je hebt het recht bezwaar te hebben op het gebruik van je gegevens voor wetenschappelijk onderzoek.
 
-Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
+Ga naar [account/consent](/account/consent/) en geef je bezwaar aan bij de **modelgegevens**.
 
 <Note>
 

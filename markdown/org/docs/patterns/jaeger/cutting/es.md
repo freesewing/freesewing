@@ -47,4 +47,3 @@ When you cut them individually, remember that they need to be mirror images of e
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
-

@@ -1,7 +1,7 @@
 
 ![Rugsplit](backvent.svg)
 
-How do you like your back vents?
+Hoe wil je je rugsplit?
 
  - Twee rugsplitten (zoals links)
  - Eén rugsplit in het midden (zoals in het midden)

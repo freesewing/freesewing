@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-bust"
 ---
 
-<Plugin plugin="bust" />
+ 
+
+<PluginPage plugin="bust" />

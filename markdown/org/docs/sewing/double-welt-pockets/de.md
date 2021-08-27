@@ -53,7 +53,7 @@ They will form the two narrow strips of fabric that form your double welt pocket
 
 > Make sure to respect the grainline when cutting the two welts
 
-### Pocket interfacing
+### Tascheneinlage
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
@@ -87,7 +87,7 @@ The facing is what you'll see when you peer through the opening of your pocket.
 
 The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
 
-### Pocket bag
+### Taschenbeutel
 
 The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
 

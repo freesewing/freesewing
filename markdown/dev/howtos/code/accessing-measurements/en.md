@@ -7,7 +7,7 @@ about: Shows you how to access user measurements from inside your pattern
 Measurements are stored in `pattern.settings.measurements`.
 
 You can pull them out of there with 
-the [shorthand](/howtos/core/shorthand/) call:
+the [shorthand](/howtos/code/shorthand/) call:
 
 
 ```js

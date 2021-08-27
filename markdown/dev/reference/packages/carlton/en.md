@@ -2,4 +2,6 @@
 title: "@freesewing/carlton"
 ---
 
-<Pattern pattern="carlton" />
+ 
+
+<PatternPage pattern="carlton" />

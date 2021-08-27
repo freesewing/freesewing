@@ -1,1 +1,1 @@
-Controls the width of the neck opening.
+Bepaalt hoe breed de halsopening is.

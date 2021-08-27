@@ -4,7 +4,7 @@ order: 130
 ---
 
 FreeSewing is all about *made-to-measure* sewing patterns; 
-We are going to draft our pattern according to the measurements provided to us.
+we are going to draft our pattern according to the measurements provided to us.
 
 Which begs the question, which measurements?
 
@@ -35,10 +35,10 @@ This change will also get picked up by the development environment, and you'll n
 
 ![This screen tells you you are missing some required measurements](./required-measurements.png)
 
-Since it's just one measurements, let's simply enter a value by hand. 
+Since it's just one measurement, let's simply enter a value by hand. 
 For example `38` as 38cm is a realistic head circumference measurement for a baby.
 
-Enter `38` in the box, and click on **Draft your pattern** in the top navigation bar to get back to your draft
+Enter `38` in the box, and click on **Draft your pattern** in the top navigation bar to get back to your draft,
 which for now still looks like this:
 
 <Example pattern="tutorial" part="step1" caption="Nothing has changed, yet" />

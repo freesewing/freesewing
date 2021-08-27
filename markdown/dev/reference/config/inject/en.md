@@ -15,6 +15,6 @@ has the points, paths, and snippets of the `value` part.
 
 <Tip>
 
-See [the Howto on Part inheritance](/howtos/core/inject) for an example.
+See [the Howto on Part inheritance](/howtos/code/inject) for an example.
 
 </Tip>

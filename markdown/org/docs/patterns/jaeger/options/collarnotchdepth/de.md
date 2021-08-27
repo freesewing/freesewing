@@ -1,4 +1,4 @@
 
-![Collar notch depth](collarnotchdepth.svg)
+![Kragentiefe](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Tiefe der Kragenkerbe.

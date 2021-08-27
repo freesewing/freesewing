@@ -1,5 +1,5 @@
 
-Controls the length of the entire trousers, which essentially means the length of the legs. 
+Controls the length of the entire trousers, which essentially means the length of the legs.
 
 <Note>
 

@@ -1,2 +1,2 @@
 
-The amount of ease at your hips.
+Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften.

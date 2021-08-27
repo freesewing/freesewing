@@ -2,6 +2,6 @@
 title: Wat doen jullie met mijn persoonlijke gegevens?
 ---
 
-How we handle your personal data is documented in [our privacy notice][1].
+Hoe we met je persoonlijke gegevens omgaan, is gedocumenteerd in [ons privacybeleid][1].
 
 [1]: /docs/various/privacy/

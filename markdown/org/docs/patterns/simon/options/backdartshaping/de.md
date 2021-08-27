@@ -1,5 +1,5 @@
 ---
-title: Back dart shaping
+title: Formgebung der hinteren Abnäher
 ---
 
 Controls how much of the waist shaping will happing in the backdarts.

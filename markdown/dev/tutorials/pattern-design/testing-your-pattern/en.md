@@ -19,7 +19,7 @@ for different measurements and options to see how well it adapts.
 
 If testing your pattern sounds like a lot of work, you're in luck. FreeSewing can do it
 for you. Click the **Test your pattern** button in the top navigation bar of your 
-development environment, and you'll see a number of choices at the right:
+development environment, and you'll see a number of choices on the right:
 
  - Test pattern options
  - Test measurements
@@ -81,7 +81,7 @@ For a the same `head` measurement, varying this option should result in increasi
 
 If we test it, we can see that it works as intended. But there's one thing that perhaps requires your attention.
 Making the bib wider shortens the length from the bottom of the neck opening to the bottom of the bib. 
-Thereby making the bib shortern when its worn.
+Thereby making the bib shorter when it's worn.
 
 Even if the *total length* of the bib stays the same, the *useable length* shortens when the bib is made wider.
 Users will not expect this, so it's something that we should fix in our pattern. 
@@ -136,7 +136,7 @@ only uses one measurement. So testing that one measurement ends up being the sam
 set of measurements.
 
 But most patterns use multiple measurements, and you'll find this test gives you insight into how your
-pattern will adapt to differently sizes bodies.
+pattern will adapt to differently sized bodies.
 
 <Example 
   sample 
@@ -175,7 +175,7 @@ that will not properly scale.
 Many drafting books will tell you to *add 3cm there* or *measure 2 inch to the right*. Those instructions
 don't scale, and you should avoid them. 
 
-The best patterns will pass the antperson test with 2 exact pattern. One will simply be 1/10th the scale of the other.
+The best patterns will pass the antperson test with 2 patterns exactly the same, where one will simply be 1/10th the scale of the other.
 
 <Example 
   sample 

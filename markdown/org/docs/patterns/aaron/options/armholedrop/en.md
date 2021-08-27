@@ -1,11 +1,8 @@
-This option controls the depth of the armhole on Aaron.  
-Given that Aaron is an A-shirt pattern, this is predominently a style choice.
+![The armhole drop option on Aaron](./armholedrop.svg)
 
-<Note>
+How much to lower the armhole below the default amount.
 
-This option also allows negative values. Negative values will raise the armhole.
-
-</Note>
+> This option also allows negative values. They will, obviously, raise the armhole by said amount.
 
 
 ## Effect of this option on the pattern

@@ -1,2 +1,2 @@
-The width of the waist band.
+Die Breite des Taillenbundes.
 

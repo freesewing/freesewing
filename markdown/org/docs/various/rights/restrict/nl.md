@@ -5,7 +5,7 @@ order: 50
 
 Je hebt het recht een restrictie aan te vragen voor het verwerken van je persoonlijke gegevens.
 
-Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.  
+Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
 
 <Warning>
 

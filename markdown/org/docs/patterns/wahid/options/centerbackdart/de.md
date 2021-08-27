@@ -12,4 +12,3 @@ This option tapers the fabric inwards at the back of your neck. It does so by 0.
 Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
 
 </Note>
-

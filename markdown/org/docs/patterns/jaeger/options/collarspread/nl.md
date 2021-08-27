@@ -1,2 +1,2 @@
 
-The collar spread controls how the collar drapes over the shoulders
+De kraagspreiding bepaalt hoe de kraag over de schouders valt

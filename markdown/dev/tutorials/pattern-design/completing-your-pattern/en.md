@@ -7,7 +7,7 @@ When we started out, we said a good part boilerplate looks like this:
 
 ```js
 export default function(part) {
-  let { Point, points, Path, paths } = part.shorthand();
+  let { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Design pattern here
 
   // Complete?
@@ -18,7 +18,7 @@ export default function(part) {
     if (paperless) {
     }
   }
-  return part;
+  return part
 }
 ```
 
@@ -30,7 +30,7 @@ the area under *// Complete?*
 ###### The point of (non) complete patterns
 
 Users can set the `complete` setting to `false`. When that's the case, you
-should draft a base outline of the pattern, rather than a fully detailed pattern.i
+should draft a base outline of the pattern, rather than a fully detailed pattern.
 
 This has different uses, such as generating patterns to be cut out with a laser cutter.
 
@@ -47,13 +47,16 @@ let {
   points,
   Path,
   paths,
+  complete,
+  sa,
+  paperless,
   measurements,
   options,
   macro,
   complete,
   snippets,
   Snippet
-} = part.shorthand();
+} = part.shorthand()
 ```
 
 ## Adding snippets
@@ -64,9 +67,9 @@ Things like buttons or buttonholes, a logo, or snaps:
 ```js
 // Complete?
 if (complete) {
-  snippets.snapMale = new Snippet("snap-male", points.snapLeft);
-  snippets.snapFemale = new Snippet("snap-female", points.snapRight)
-    .attr("opacity", 0.5);
+  snippets.snapStud = new Snippet("snap-stud", points.snapLeft)
+  snippets.snapSocket = new Snippet("snap-socket", points.snapRight)
+    .attr("opacity", 0.5)
 
   if (sa) {
   }
@@ -76,9 +79,9 @@ if (complete) {
 }
 ```
 
-We've added a `snap-male` and `snap-female` snippet to the points we had foreseen for that.
+We've added a `snap-stud` and `snap-socket` snippet to the points we had foreseen for that.
 
-Because the female snippet is at the back of the fabric, we've made it semi-transparent by
+Because the socket snippet is at the back of the fabric, we've made it semi-transparent by
 setting the `opacity` attribute to `0.5`. Yes, you can do that.
 
 <Tip>
@@ -90,9 +93,15 @@ Any attributes you set will be added to the SVG output.
 Since we're adding snippets, let's throw a logo on there too:
 
 ```js
-points.logo = new Point(0, 0);
-snippets.logo = new Snippet("logo", points.logo);
+points.logo = new Point(0, 0)
+snippets.logo = new Snippet("logo", points.logo)
 ```
+
+<Note>
+
+  You can find all possible snippets in [our documentation](/reference/snippets/).
+  
+</Note>
 
 ## Seam allowance
 
@@ -110,7 +119,7 @@ Our bib does not use seam allowance. Instead we'll finish it with bias tape.
 So you can simply remove that condition.
 
 However, for future refefence, `sa` is a variable that you can get from `part.shorthand()`
-just like `complete`. But instead of `true` or `false` it will hold the amount if seam allowance
+just like `complete`. But instead of `true` or `false` it will hold the amount of seam allowance
 in mm. 
 
 Note that you can still do `if (sa)` because zero is *falsy*.
@@ -124,11 +133,11 @@ paths.bias = paths.seam
   .offset(-5)
   .attr("class", "various dashed")
   .attr("data-text", "finishWithBiasTape")
-  .attr("data-text-class", "center fill-various");
+  .attr("data-text-class", "center fill-various")
 ```
 
 The `path.offset()` method makes it trivial to add seam allowance, since it will contruct
-a path parallel at the distance you pass it. 9 times out of 10, you'll be using it as `path.offset(sa)`.
+a path parallel to the given path at the distance you pass it. 9 times out of 10, you'll be using it as `path.offset(sa)`.
 
 Note that we're also using the attributes again, to change the look of the line, and add text to it,
 as explained in [Adding text](/concepts/adding-text).
@@ -145,25 +154,25 @@ That's why you should number your parts and give them a name.
 The `title` macro can help you with that:
 
 ```js
-points.title = points.bottom.shift(-90, 45);
+points.title = points.bottom.shift(-90, 45)
 macro("title", {
   at: points.title,
   nr: 1,
   title: "bib"
-});
+})
 ```
 
 The `scalebox` macro prints a box of an exact size.
 It is used by people who print the pattern to make sure their print is correctly scaled.
 
 ```js
-points.scalebox = points.title.shift(-90, 55);
-macro("scalebox", { at: points.scalebox });
+points.scalebox = points.title.shift(-90, 55)
+macro("scalebox", { at: points.scalebox })
 ```
 
 And with that, our pattern is now *complete*:
 
-<Example pattern="tutorial" part="step11" caption="We used attributed to add color, dashes, text on a path and even opacity" />
+<Example pattern="tutorial" part="step11" caption="We used attributes to add color, dashes, text on a path and even opacity" />
 
 We're not done yet though. There's one more thing the user can ask for: a *paperless* pattern.
 

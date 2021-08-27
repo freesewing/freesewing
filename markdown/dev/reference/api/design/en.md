@@ -33,6 +33,6 @@ const Sorcha = new freesewing.Design(config, plugins)
 This method is a *super-constructor*. It will return a constructor 
 method that should be called to instantiate your pattern. 
 
-See [creating a new pattern design](/howtos/core/new-design/) for an example.
+See [creating a new pattern design](/howtos/code/create-new-design) for an example.
 
 </Tip>

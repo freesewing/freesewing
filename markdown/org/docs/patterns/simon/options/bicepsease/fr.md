@@ -1,4 +1,4 @@
-![Biceps ease](./bicepsease.svg)
+![Aisance au niveau des biceps](./bicepsease.svg)
 
 Combien voulez-vous d'aisance pour la manche, par rapport à votre tour de bras (haut du bras) ?
 
@@ -17,8 +17,5 @@ Si vos bras sont moins musclés, vous préférerez sans doute plus d'aisance.
 Nous nous efforcerons de respecter votre choix ici, mais la priorité est d'ajuster la manche à l'emmanchure.
 
 </Warning>
-
-
-
 
 

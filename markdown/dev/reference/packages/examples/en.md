@@ -2,7 +2,9 @@
 title: "@freesewing/examples"
 ---
 
-<Pattern pattern="examples" />
+ 
+
+<PatternPage pattern="examples" />
 
 This pattern holds examples used throughout the documentation.  
 Examples like this one:

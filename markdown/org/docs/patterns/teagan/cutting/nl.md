@@ -4,5 +4,5 @@
   - If you cut sleeves separately, remember that one has to be a mirror image of the other.
 - Cut 1 strip for neck opening. It should be 6 cm wide and the length of your neck opening.
 ## Opmerkingen
-- There is no seam allowance on the neck opening.
+- Er is geen naadwaarde aan de halsopening.
 - There is extra hem allowance at the hem and armholes.

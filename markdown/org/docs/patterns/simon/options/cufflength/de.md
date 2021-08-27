@@ -1,4 +1,4 @@
-![Cuff length](cufflength.svg)
+![Manschettenlänge](cufflength.svg)
 
 The length of your cuffs.
 
@@ -7,4 +7,3 @@ The length of your cuffs.
 This will not influence the total length of your sleeve.
 
 </Note>
-

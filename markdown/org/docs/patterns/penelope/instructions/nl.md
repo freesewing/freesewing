@@ -6,7 +6,7 @@ Pencil skirts are tight. This limits your movement quite a bit. More so, when yo
 
 Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
 
-### Waistband
+### Tailleband
 
 A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
 

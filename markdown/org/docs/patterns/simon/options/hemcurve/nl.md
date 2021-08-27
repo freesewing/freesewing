@@ -9,4 +9,3 @@ Hoeveel wil je dat de zoom naar boven buigt?
  - Als je dit op nul zet krijg je een rechte zoom, onafhankelijk van welke stijl van zoom je kiest.
 
 </Note>
-

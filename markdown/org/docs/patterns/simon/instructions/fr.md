@@ -398,7 +398,8 @@ C'est le moment Origami ! Nous allons plier la patte de manche en utilisant les 
  - Puis faites deux plis à l'extrémité pour obtenir une belle forme pointue.
  - Maintenant donnez un bon coup de fer.
 
-Voici une très courte vidéo YouTube de moi pliant la patte de boutonnage: <YouTube id='kgd5eubxShM' />
+Voici une très courte vidéo YouTube de moi pliant la patte de boutonnage:
+<YouTube id='kgd5eubxShM' />
 
 #### Épingler la patte en place
 

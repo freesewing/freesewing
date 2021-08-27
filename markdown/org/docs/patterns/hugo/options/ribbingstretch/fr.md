@@ -1,8 +1,8 @@
 ![Ribbing stretch on Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Cette option vous permet d'adapter élasticité de votre bord côte.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Si vous choisissez 90% (par exemple), pour une longueur de 10 cm de tissu, la dimension sur le patron ne sera que de 9 cm. De cette façon, 9 cm de bord côte seront étirés jusqu'à 10 cm.
 
 <Note>
 
@@ -10,4 +10,3 @@ Si vous n'êtes pas sûr de ce qu'il faut choisir, le mieux est de prendre le ru
 vous devez vous étirer pour atteindre 10 cm avec une *bonne* élasticité.
 
 </Note>
-

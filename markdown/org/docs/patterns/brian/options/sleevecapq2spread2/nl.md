@@ -8,4 +8,3 @@ See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the
 look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
-

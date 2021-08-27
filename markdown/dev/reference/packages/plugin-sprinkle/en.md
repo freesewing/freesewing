@@ -2,4 +2,6 @@
 title: "@freesewing/plugin-sprinkle"
 ---
 
-<Plugin plugin="sprinkle" />
+ 
+
+<PluginPage plugin="sprinkle" />

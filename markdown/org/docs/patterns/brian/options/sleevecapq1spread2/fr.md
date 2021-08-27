@@ -7,4 +7,3 @@ Cette option contrôle le décalage ascendant dans le premier quadrant de la tê
 Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-the-sleevecap) pour une explication détaillée de la construction de la tête de manche et de l'influence des différentes options sur sa forme.
 
 </Tip>
-

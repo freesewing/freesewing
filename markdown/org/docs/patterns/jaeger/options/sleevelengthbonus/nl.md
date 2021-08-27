@@ -13,5 +13,3 @@ Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer t
 
 </Note>
 
-
-

@@ -1,3 +1,3 @@
-![Ribbing stretch](ribbingstretch.svg)
+![Stretch boordstof](ribbingstretch.svg)
 
-The amount of stretch we should foresee for the ribbing at the hem/cuffs.
+De hoeveelheid stretch die we zouden moeten voorzien voor de boordstof aan de zoom/manchetten.

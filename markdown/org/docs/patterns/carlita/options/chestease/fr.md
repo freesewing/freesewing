@@ -1,3 +1,3 @@
-![Chest ease](./chestease.svg)
+![Aisance de poitrine](./chestease.svg)
 
-La quantité d'aisance à votre poitrine.
+L'ampleur d'aisance au niveau de votre poitrine.

@@ -7,4 +7,3 @@ With Benjamin, you can make a traditional fixed size bow tie. Et vous pouvez en 
 C'est une excellente option si vous décidez de faire un nœud papillon pour quelqu'un d'autre en cadeau.
 
 </Tip>
-

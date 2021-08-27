@@ -13,4 +13,3 @@ La patte de boutonnage à gorge cachée est plus facile, et a un très beau rend
 Une patte à gorge cachée n'étant pas réalisable sur une patte de boutonnière séparée, cette option est ignorée si vous choisissezce ce type de patte de boutonnière.
 
 </Note>
-

@@ -1,6 +1,6 @@
-- Cut **2 backs** with good sides together
-- Cut **4 fronts** 2 x 2 with good sides together
-- Cut **1 waistband**
+- Knip **2 rugpanden** met de goede kanten op elkaar
+- Knip **4 voorpanden** 2 x 2 met de goede kanten op elkaar
+- Knip **1 tailleband**
 
 ## Opmerkingen
 - Om minder papier te verbruiken wordt de tailleband niet helemaal geprint, aangezien het gewoon een lange rechthoek is. Dus kijk uit voor de aangegeven lengte en knip een rechthoek van dat formaat.

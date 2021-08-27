@@ -2,6 +2,6 @@
 title: Que faites-vous de mes données personnelles ?
 ---
 
-How we handle your personal data is documented in [our privacy notice][1].
+La manière dont nous traitons vos données personnelles est documentée dans [notre politique de confidentialité][1].
 
 [1]: /docs/various/privacy/

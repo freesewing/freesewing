@@ -1,5 +1,5 @@
 ---
-title: Cuff style
+title: Stijl Manchet
 ---
 
 This pattern supports three different cuff styles:

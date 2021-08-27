@@ -1,5 +1,5 @@
 ---
-title: Back neck cutout
+title: Ausschnitt im Nacken
 ---
 
 ![The effect of the back neck cutout option on the pattern](sample.png)

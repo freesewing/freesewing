@@ -1,5 +1,5 @@
 
-Controls the width of the legs. 
+Controla la anchura de la pernera.
 
 <Note>
 

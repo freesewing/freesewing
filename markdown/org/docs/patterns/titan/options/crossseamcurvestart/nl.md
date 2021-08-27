@@ -1,6 +1,7 @@
 
 Controls the start of the cross seam curve.
 
+
 <Note>
 
 This curve has an influence on the amount of fabric at your bum.

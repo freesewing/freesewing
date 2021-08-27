@@ -2,4 +2,6 @@
 title: "@freesewing/penelope"
 ---
 
-<Pattern pattern="penelope" />
+ 
+
+<PatternPage pattern="penelope" />

@@ -9,16 +9,16 @@ on the other side. You can just flip them over, so to speak. And that's exactly 
 First create some new points:
 
 ```js
-points.rightCp2 = points.rightCp1.flipY();
-points.bottomCp1 = points.bottomCp2.flipX();
+points.rightCp2 = points.rightCp1.flipY()
+points.bottomCp1 = points.bottomCp2.flipX()
 
-points.left = points.right.flipX();
-points.leftCp1 = points.rightCp2.flipX();
-points.leftCp2 = points.rightCp1.flipX();
+points.left = points.right.flipX()
+points.leftCp1 = points.rightCp2.flipX()
+points.leftCp2 = points.rightCp1.flipX()
 
-points.top = points.bottom.flipY();
-points.topCp1 = points.bottomCp2.flipY();
-points.topCp2 = points.bottomCp1.flipY();
+points.top = points.bottom.flipY()
+points.topCp1 = points.bottomCp2.flipY()
+points.topCp2 = points.bottomCp1.flipY()
 ```
 
 <Note>
@@ -37,7 +37,7 @@ paths.neck = new Path()
   .curve(points.leftCp2, points.bottomCp1, points.bottom)
   .curve(points.bottomCp2, points.rightCp1, points.right)
   .curve(points.rightCp2, points.topCp1, points.top)
-  .close();
+  .close()
 ```
 
 <Example pattern="tutorial" part="step4" caption="And now you have a complete neck opening" />

@@ -2,4 +2,6 @@
 title: "@freesewing/shin"
 ---
 
-<Pattern pattern="shin" />
+ 
+
+<PatternPage pattern="shin" />

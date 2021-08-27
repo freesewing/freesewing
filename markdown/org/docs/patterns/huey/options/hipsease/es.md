@@ -1,3 +1,3 @@
-![Hips ease](./hipsease.svg)
+![Holgura de cadera](./hipsease.svg)
 
-The amount of ease at your hips.
+La cantidad de holgura en la cadera.

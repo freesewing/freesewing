@@ -1,4 +1,4 @@
-![Sleevecap ease](./sleevecapease.svg)
+![Holgura de la parte superior de la manga](./sleevecapease.svg)
 
 How much sleevecap ease do you want?
 

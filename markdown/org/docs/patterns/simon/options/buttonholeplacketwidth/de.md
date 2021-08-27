@@ -1,3 +1,3 @@
-![Buttonhole placket width](buttonholeplacketwidth.svg)
+![Knopflochleiste Breite](buttonholeplacketwidth.svg)
 
 The width of your buttonhole placket.

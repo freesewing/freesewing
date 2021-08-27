@@ -3,7 +3,7 @@
 
 Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
 
-In this particular case, there's a lot of video material available, but it was originally recorded for a previous version of this pattern. Still, good stuff.
+In dit geval is er een hoop videomateriaal beschikbaar, maar dit is origineel opgenomen voor een eerdere versie van dit patroon. Nog steeds relevant wel.
 
 </Note>
 
@@ -11,620 +11,620 @@ In this particular case, there's a lot of video material available, but it was o
 
 <Note>
 
-Many of the steps below are to be repeated for both trouser legs. 
+Veel van de stappen hieronder worden herhaald voor beide broekspijpen. 
 
 That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
 
 </Note>
 
-### Step 1: Baste the pleat lines
+### Stap 1: Drieg de plooilijnen
 
-![Baste the pleat lines](step00.png)
+![Drieg de plooilijnen](step00.png)
 
-First thing to do is to  baste over the pleat line of your trouser legs. Do it on both front and back pieces for both legs.
+Het eerst dat je doet is over de plooilijn van je broekspijpen driegen. Doe dit op zowel voor- als achterpanden van beide broekspijpen.
 
-### Step 2: Close the back darts and press
+### Stap 2: Sluit de nepen achteraan en strijk
 
-### Close the back darts
+### Sluit de achterste nepen
 
-![Close the back darts](step01.png)
+![Sluit de achterste nepen](step01.png)
 
-Fold piece 1 (back) double so that the notches of the dart on the waistband are aligned, and a sharp crease runs to the notch at the dart end. Feel free to briefly iron the crease, this will make it easier to sew the dart accurately.
+Plooi deel 1 (achterpand) dubbel zodat de merktekens van de neep aan de tailleband gelijk liggen, en een scherpe plooi naar het merkteken aan het einde van de neep loopt. Strijk deze plooi gerust lichtjes, dit maakt het makkelijker om de neep accuraat te stikken.
 
-Close the dart by sewing from the waistband down to the end of the dart.
+Sluit de neep door van de taillerand naar het einde van de neep te stikken.
 
-Use a small stitch length, and let your stitch run completely to the end (and of) the dart, then backtrack making sure to veer into the seam allowance.
+Gebruik een kleine steeklengte, en laat je stiksel helemaal tot het einde van de neep (en eraf) lopen. Stik daarna een eindje terug, let op dat je enkel in de naadwaarde stikt.
 
 #### Strijk de nepen naar de zijkant
 
-![Press the back darts to the side](step02.png)
+![Strijk de achterste nepen naar de zijkant](step02.png)
 
-Press your back darts flat, folding the seam allowance to the side of your trousers.
+Strijk de nepen plat, en leg de naadwaarde naar de zijkant van je broek.
 
-### Step 3: Construct the back pockets
+### Stap 3: Maak de achterzakken
 
-Construct the double welt pockets at the back of your trousers, including the pocket bag.
+Maak de dubbele paspelzakken aan de achterkant van je broek, inclusief de broekzak.
 
 <Tip>
 
 ###### Double welt pockets
 
 Constructing a double welt pocket is a technique that is used is different garments. 
-That is why I have branched it off into its own documentation page.
+Daarom heb ik er een aparte pagina met documentatie voor gemaakt.
 
-There's both written documentation and a video series that shows you how to do it, so even if you've never made welt pockets before, you'll be fine.
+Er is zowel geschreven documentatie en een reeks video's die je tonen hoe dit werkt, dus zelfs als je nog nooit paspelzakken gemaakt hebt komt het wel in orde.
 
 [To the welt pockets documentation](/docs/sewing/double-welt-pockets)
 
 </Tip>
 
-### Step 4: Optional: Trim your lining with pinking shears
+### Stap 4: Optioneel: Knip je voering bij met een kartelschaar
 
-![Trim your lining with pinking shears](step04.png)
+![Knip je voering bij met een kartelschaat](step04.png)
 
-If you are going to line your trousers (it's optional), you'll need to finish the edge of your lining. To do so, trim the edge of the lining with pinking shears.
+Als je je broek gaat voeren (dit is optioneel), moet je de rand van je voering afwerken. Om dit te doen knip je de rand van de voering bij met een kartelschaar.
 
-Note that you only need to do this for those edges of your lining that are not caught in a seam. In other words, only the bottom edge of your lining.
+Let op dat je dit alleen doet voor de delen van je voering die niet vastzitten in een naad. In andere woorden, enkel de onderrand van je voering.
 
-> If you don't have pinking shears, you can apply another finish like a zig-zag stitch, or use a serger. However, pinking shears are best for this scenario because they don't add any bulk, which is important because we want to avoid the edge of the lining making a bump in your trousers.
+> Als je geen kartelschaar hebt kan je een andere methode gebruiken, zoals een zigzag- of overlocksteek. Kartelscharen zijn hier echter de beste optie omdat ze geen extra bulk toevoegen, wat belangrijk is als we willen vermijden dat de onderrand van de voering zichtbaar is door de stof van je broek.
 
-### Step 5: Trim pieces for front pocket slant
+### Stap 5: Knip delen voor voorste steekzakken bij
 
-![Trim pieces for front pocket slant](step05.png)
+![Knip delen voor voorste steekzakken bij](step05.png)
 
-Align your front, lining and pocket bag on top of each other. Front and pocket back with their good side down, lining with the good side up.
+Leg je voorpand, voering en zakdeel bovenop elkaar. Voorpand en zakdeel met de goede kanten naar beneden, voering met de goede kant omhoog.
 
-Pin them together to make sure they don't move. Do so away from the pocket slant to not hinder yourself later.
+Speld ze samen om te zorgen dat niets verschuift. Doe dit weg van de schuine rand van de zak zodat de spelden niet in de weg zitten.
 
-Trim back the pocket bag (it should lie on top) exactly on the pocket slant line (marked on the pattern).
+Knip het zakdeel (dat bovenaan ligt) exact op de lijn van de steekzak (aangegeven op het patroon) bij.
 
-Now trim back the front piece (it should lie on the bottom) 3cm outwards from the slant line, parallel to it.
+Knip nu het voorpand (ligt onderaan) 3 cm voorbij en parallel met de schuine lijn bij.
 
-Finally, trim back your lining so that it stops 0.5 cm short of reaching the edge of your front.
+Knip als laatste je voering bij zodat ze 0.5 cm korter is dan re rand van het voorpand.
 
-> The lining is trimmed a bit shorter so that when it is folded back, it does not show. But it's really not all that important to get it exactly 0.5 cm shorter.
+> De voering wordt een beetje korter geknipt zodat ze niet zichtbaar is als ze teruggeplooid wordt. Maar het is niet zo belangrijk om ze exact 0.5 cm korter te krijgen.
 
-### Step 6: Fold back and sew front pocket slant
+### Stap 6: Plooi de voorste zakopening en stik
 
-![Fold back and sew front pocket slant](step06.png)
+![Plooi de voorste zakopening en stik](step06.png)
 
-Fold back your lining and front piece along the pocket slant line (and thus along the trimmed edge of the pocket bag. Pin this down and press.
+Plooi de voering en het voorpand om langs de lijn van de steekzak (en dus langs de bijgeknipte rand van het zakdeel). Speld dit vast en strijk.
 
-You are going to sew along the pocket slant, but make sure to flip everything over first so you can sew from the good side.
+Je gaat langs de zakopening stikken, maar keer alles eerst om zodat je van de goede kant kan stikken.
 
-Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretch your fabric.
+Stik door op 0.5 cm van de plooi. Hou het parallel en rek je stof niet uit.
 
-> This topstitching will always be on show, so make sure to match the thread color and make it pretty.
+> Dit stiksel is altijd zichtbaar, dus zorg dat de draadkleur bij je stof past en maak het mooi.
 
-> To prevent your pockets from bagging out, you can place a piece of non-stretching ribbon in between the fold. When stitching, you will also catch this ribbon, preventing the pocket to bag out.
+> Om te voorkomen dat je zakken uitrekken kan je een stuk niet-elastisch lint tussen de vouw stoppen. Wanneer je stikt wordt dit lint mee vastgemaakt, en zorgt het dat de zak niet uitrekt.
 
-### Step 7: Finish edge inside front pocket
+### Stap 7: werk de rand aan de binnenkant van de voorzak af
 
-![Finish the edge inside the front pocket](step07.png)
+![Werk de rand binnenin de voorzak af](step07.png)
 
-Fold away the main part of the front piece, so you can place the lining, pocket bag and folded edge of the front piece flat.
+Plooi het grootste deel van het voorpand weg, zodat je de voering, zakdeel en geplooide rand van het voorpand plat kan leggen.
 
-Zig-zag the edge of the folded-back front piece to finish it and secure it to the pocket back and lining.
+Zigzag de rand van het weggeplooide deel van het voorpand om het af te werken en vast te maken aan het zakdeel en de voering.
 
-### Step 8: Press side pocket
+### Stap 8: Strijk de steekzak
 
-![Press side pocket](step08.png)
+![Strijk de steekzak](step08.png)
 
-When you're done, place front piece, lining and pocket bag flat, and give it a good press.
+Wanneer je klaar bent leg je het voorpand, de voering en het zakdeel plat, en strijk je het eens grondig.
 
-> This might be a good time to remind you that every step up to this point had to be done for both legs.
+> Dit is misschien een goed moment om je nog eens te vertellen dat alle stappen tot nu toe gelden voor de twee broekspijpen.
 > 
-> It's just a friendly reminder, the next steps need to be done for both legs too.
+> Gewoon zodat je eraan denkt, de volgende stappen moeten trouwens ook twee keer gedaan worden.
 
-### Step 9: Attach side piece to pocket bag
+### Stap 9: Bevestig belegdeel voorzak aan zakdeel
 
-![Attach side piece to pocket bag](step09.png)
+![Bevestig belegdeel steekzak aan zakdeel](step09.png)
 
-Place the other half of the pocket bag with the good side down, and align the side piece on it with the good side up.
+Leg de andere helft van het zakdeel met de goede kant naar beneden, en leg het belegdeel voorzak bovenop met de goede kant omhoog.
 
-Sew a zig-zag stitch along the edge of the side piece to finish it and attach it to the pocket bag.
+Zigzag langs de rand van het belegdeel voorzak om het af te werken en tegelijk aan het zakdeel te bevestigen.
 
-### Step 10: Close the pocket bag
+### Stap 10: Sluit het zakdeel
 
 ![Sluit het zakdeel](step10.png)
 
-Place the front piece, lining and pocket bag with the pocket bag up.
+Leg het voorpand, de voering en het zakdeel met het zakdeel naar boven.
 
-Align the second pocket bag with the attached side piece facing down.
+Leg het tweede zakdeel met het bevestigde beleg bovenop, met het beleg naar beneden.
 
-Pin all pieces together making sure to stay about the bottom curve of the pocket bag.
+Speld alle delen samen, en let op dat de onderrand van het zakdeel gelijk ligt.
 
-When everything is pinned together, fold away the front piece and lining, and close the bottom curve of the pocket bag.
+Plooi wanneer alles samengespeld is het voorpand en de voering opzij en sluit de onderrand van het zakdeel.
 
-> Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+> Stik de onderrand van het zakdeel tot aan het punt waar het belegdeel begint
 
-> You can finish the pocket bag in a number of ways, including:
+> Je kan het zakdeel op verschillende manieren afwerken, zoals:
 > 
-> - Serge the sides together
-> - Finish the edge with bias tape
-> - Sew the sides together and finish the edge with a zig-zag stitch
+> - Lock de randen samen
+> - Werk de randen af met biaislint
+> - Stik samen en werk de rand af met een zigzagsteek
 
-### Step 11: Press the front pocket
+### Stap 11: Strijk de steekzak
 
-![Press the front pocket](step11.png)
+![Strijk de steekzak](step11.png)
 
-Put everything flat with the front piece at the bottom, and give it a good press.
+Leg alles plat met het voorpand onderaan, en strijk het grondig.
 
-### Step 12: Pin front pocket in place
+### Stap 12: Speld de voorzak vast
 
-![Pin the front pocket in place](step12.png)
+![Speld de steekzak vast](step12.png)
 
-Pin the pocket down to the front piece along the slant and the edges of the pocket bag. This will prevent it from shifting around while we continue to work on our trousers.
+Speld de zak aan het voorpand langs de zakopening en de randen van het zakdeel. Dit voorkomt dat dingen verschuiven terwijl we aan de rest van onze broek werken.
 
-### Step 13: Finish the side edges
+### Stap 13: Werk de zijranden af
 
-![Finish the side edges](step13.png)
+![Werk de zijranden af](step13.png)
 
-Before we are going to sew the side seams, finish the side edges by serging or running a zig-zag stitch along the sides of your front and back pieces, making sure to stay within the foreseen seam allowance.
+Voor we de zijnaden stikken, werken we de randen af met een zigzagsteek langs de rand van je voor- en zijpanden. Let op dat je binnen de naadwaarde blijft.
 
-> Make sure to include the lining and pocket bag edges, as this will prevent things from shifting around when we sew the side seams.
+> Zorg dat je de voering en randen van het zakdeel mee vastmaakt, dit zorgt ervoor dat niets verschuift terwijl we de zijnaden stikken.
 
-### Step 14: Sew the side seams
+### Stap 14: Stik de zijnaden
 
-![Sew the side seams](step14.png)
+![Stik de zijnaden](step14.png)
 
-Place the front and back of each leg on top of each other, with the good sides together.
+Leg het voor- en achterpand van elke broekspijp op elkaar, met de goede kanten op elkaar.
 
-Align the side seam, more precisely the side seam on the outside, where there is no crotch curve.
+Leg de zijnaad gelijk, de zijnaad aan de buitenkant om precies te zijn, waar er geen kruiscurve is.
 
-> You can pin the pieces together to make sure things stay in place while sewing this lengthy seam
+> Je kan de delen samenspelden om te zorgen dat alles op z'n plaats blijft bij het stikken van deze lange naad
 
-Sew the seam, starting from the waistband along the entire side of your trousers.
+Stik de naad, van de tailleband tot onderaan de broekspijp.
 
-### Step 15: Press open seam allowance
+### Stap 15: Strijk de naadwaarde open
 
 ![Strijk de naadwaarde open](step14.png)
 
-Press open the seam allowance along the side seams. Do so from the back, and repeat from the good side of the fabric.
+Strijk de naadwaarde langs de zijnaad open. Doe dit langs de verkeerde kant, en herhaal nog eens langs de goede kant van de stof.
 
-Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
+Neem je tijd, en gebruik genoeg hitte, maar niet te veel. Gebruik stoom of sproei wat water voor het beste effect.
 
-> A nice flat side seam looks great, so take your time to get it right.
+> Een mooi platte zijnaad ziet er geweldig uit, dus neem je tijd om het goed te krijgen.
 
-### Step 16: Sew fly shield to fly piece
+### Stap 16: stik het gulpbeleg aan het gulpdeel
 
-![Sew fly shield to fly piece](step16.png)
+![Stik het gulpbeleg aan het gulpdeel](step16.png)
 
-Place your fly piece on the fly shield with the good sides together, and align the edge with the biggest curve.
+Leg het gulpdeel op het gulpbeleg met de goede kanten op elkaar, en leg de rand gelijk met de grootste curve.
 
-Sew along the curved edge, taking account the standard 1cm seam allowance, to join the two pieces together.
+Stik langs de gebogen rand op de standaard naadwaarde van 1 cm om de twee stukken aan elkaar te bevestigen.
 
-> If your lining has any stretch in it at all, try to stretch it out a bit while you sew the curve. This will make it easier to get the lining to lie flat without wrinkles later on.
+> Als je voering een beetje stretch heeft, rek de voering dan wat uit terwijl je de curve stikt. Dit maakt het makkelijker om de voering plat te laten liggen zonder plooien.
 
-### Step 17: Press the fly shield
+### Stap 17: Strijk het gulpbeleg
 
-![Press the fly shield](step17.png)
+![Strijk het gulpbeleg](step17.png)
 
-> Before pressing down your fly piece, make sure to roll the seam a little bit so that your trouser lining fabric sits a bit further, and the lining starts only about 2mm from the edge. This will prevent the lining from peeking out at the edge.
+> Voor je dit deel platstrijkt rol je de naad een beetje naar binnen zodat de voering naar de onderkant gekeerd wordt, en ongeveer 2 mm van de rand ligt. Dit voorkomt dat de voering aan de rand zichtbaar is.
 
-After you have sewed fly piece and fly shield together, turn them inside out and press the seam you just made.
+Als je het gulpdeel en gulpbeleg vastgestikt hebt keer je alles naar de goede kant en strijk je de naad plat.
 
-### Step 18: Pin zip to right front piece
+### Stap 18: Speld de rits aan het rechtervoorpand
 
-![Pin zip to right front piece](step18.png)
+![Speld de rits aan het rechtervoorpand](step18.png)
 
-> Steps 18 to 21 all lead up to a single row of stitching that will sew your zip to the front, while attaching the fly piece and fly shield in one go.
+> Stap 18 tot 21 leiden allemaal naar een enkel stiksel dat de rits aan het voorpand bevestigt, en tegelijk het gulpdeel en gulpbeleg vastmaakt.
 > 
-> This is the hardest seam to do in the entire construction process, so I'm taking my time to explain and illustrate this before you start sewing.
+> Dit is de moeilijkste naad in het hele proces, dus ik ga mijn tijd nemen om alles uit te leggen en te illustreren voor je begint te naaien.
 
-Place your front piece for the right leg with the good side up. So that lining and front pocket bag sit underneath and lie flat.
+Leg het voorpand van de rechterbroekspijp met de goede kant omhoog. Zorg dat de voering en het zakdeel onderaan liggen, en mooi plat.
 
-Take your zip and open it (unzip it). Now turn it over so that it sits with the good side down. In other words, with the zipper puller down.
+Neem je rits en open ze. Keer ze nu om zodat ze met de goede kant naar beneden ligt. In andere woorden, met de trekker naar beneden.
 
-Align your zip with the crotch seam as shown in the illustration. Take the following into account:
+Leg je rits gelijk met de kruisnaad zoals in de illustratie. Hou het volgende in gedachten:
 
- - The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
- - Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
+ - Het einde van je rits zou aan de bovenrand van je broek moeten zitten, waar je tailleband begint. Denk er wel aan dat daar nog naadwaarde zit, dus leg het einde niet exact samen met de rand, maar 1 cm lager.
+ - Leg de rits gelijk met de kruisnaad. Let niet op de rand van de rits, aangezien deze in verschillende breedtes bestaan. Zorg in de plaats dat je naast de tandjes van de rits kan stikken en binnen de naadwaarde van het voorpand blijven.
 
-Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
+Speld de rits vast met een paar spelden haaks op de rits (zoals getoond). In andere woorden, speld niet langs de rits, maar door de rits.
 
-> If you're unsure about the placement of your zip, put it as close to the edge as possible. Doing so will only mean your zip is tucked away a bit further under the fly, so that it certainly is not on show.
+> Als je niet zeker bent over de plaatsing van je rits, leg ze dan zo dicht mogelijk tegen de rand. Dit zorgt dat je rits iets verder in de gulp zit, zodat ze zeker niet zichtbaar is.
 
-### Step 19: Pin fly shield to zip
+### Stap 19: Speld gulpbeleg aan rits
 
-![Pin zip to right front piece](step19.png)
+![Speld de rits aan het rechtervoorpand](step19.png)
 
-Take the fly shield/fly piece that you assembled in step 16 & 17, and place it with the fabric facing downward, and the lining upward.
+Neem het gulpbeleg/gulpdeel dat je in stap 16 en 17 samengestikt hebt en leg het neer met de stof naar beneden en de voering naar boven.
 
-Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the lining) with the edge of the fabric of your front piece.
+Leg de bovenste laag voering opzij, en leg de rand van de stof met de lichte curve (waar het niet aan de voering bevestigd is) gelijk met de rand van de stof van het voorpand.
 
-> For clarity, what side of the fly shield that should be facing up is shown in the top part of the illustration, at a smaller scale.
+> Voor de duidelijkheid, de kant van het gulpbeleg die omhoog moet liggen is getoond in het bovenste deel van de illustratie, op een kleinere schaal.
 
-Pin this layer in place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
+Speld deze laag vast met een paar spelden haaks op de rits (zoals getoond in het rood). Zorg dat je alle lagen mee vastspeldt, ook de rits. Zo kan je de spelden van de vorige stap (getoond in het groen) verwijderen als je klaar bent.
 
-> If you're comfortable holding all this in place, you can let the lining fall back and pin everything together as shown in the next step. That's somewhat faster, but more prone to errors as things can shift around easier.
+> Als je zeker genoeg bent dat je alles op z'n plaats kan houden kan je de voering terug laten vallen en alles samenspelden zoals in de volgende stap. Dit is een beetje sneller, maar je maakt sneller fouten omdat dingen snel kunnen verschuiven.
 
-### Step 20: Pin fly shield in place along zip
+### Stap 20: Speld het gulpbeleg vast langs de rits
 
-![Pin fly shield in place along zip](step20.png)
+![Speld het gulpbeleg vast langs de rits](step20.png)
 
-Let the lining fall back in place, and now pin all layers together along the zip.
+Leg de voering weer op z'n plek, en speld nu alle lagen samen langs de rits.
 
-When you are done, remove your earlier perpendicular pins.
+Wanneer je dit gedaan hebt kan je je eerdere spelden verwijderen.
 
-### Step 21: Fold over fly shield and pin down
+### Stap 21: Plooi het gulpbeleg om en speld het neer
 
-![FOld over fly shield and pin down](step21a.png) {.fs-row2} ![FOld over fly shield and pin down](step21b.png) {.fs-row2}
+![Plooi het gulpbeleg om en speld het neer](step21a.png) {.fs-row2} ![Plooi het gulpbeleg om en speld het neer](step21b.png) {.fs-row2}
 
-Flip everything over so that your fly shield lies at the bottom.
+Draai alles om zodat het gulpbeleg onderaan ligt.
 
-Fold the lining of the fly shield around the fly, front piece and fly piece, making sure to double-fold it so the raw edge is hidden inside.
+Plooi de voering van het gulpbeleg rond de gulp, het voorpand en het gulpdeel, zodat de onafgewerkte rand aan de binnenkant zit.
 
-Pin this down, and remove your previous pins.
+Speld dit vast, en verwijder je eerdere spelden.
 
-### Step 22: Sew fly in place along zip
+### Stap 22: Stik de gulp vast langs de rits
 
-![Sew fly in place along zip](step22.png)
+![Stik de gulp vast langs de rits](step22.png)
 
-Now you can sew along the double folded fly piece. This will fix the front, zip, fly shield and fly piece all in place.
+Nu kan je langs het geplooide gulpdeel stikken. Dit zet het voorpand, de rits, het gulpbeleg en het gulpdeel in één keer vast.
 
-> You will be sewing along your zip, so make sure to install your zipper foot for this.
+> Je stikt langs je rits, dus gebruik je ritsvoet hiervoor.
 
-### Step 23: Fold back fly and press
+### Stap 23: Plooi de gulp om en strijk
 
-![Fold back fly and press](step23.png)
+![Plooi de gulp om en strijk](step23.png)
 
-When you're done, fold back the fly so that it extends from the front piece, and give it a thorough press from the back. And a gentle press from the front.
+Wanneer je klaar bent, plooi de gulp dan om zodat ze van het voorpand wegligt, en strijk grondig van de verkeerde kant. En strijk nog eens zachtjes van de voorkant.
 
-### Step 24: Apply bias tape to second fly piece and press
+### Stap 24: Stik biaislint aan het tweede gulpdeel en strijk
 
-![Apply bias tape to the edge with the large curve of your second fly piece](step24.png)
+![Stik bieslint aan de rand met de grootste curve van je tweede gulpdeel](step24.png)
 
-Apply bias tape to the edge with the large curve of your second fly piece.
+Stik bieslint aan de rand met de grootste curve van je tweede gulpdeel.
 
-Press the finished edge flat when you're done.
+Strijk de afgewerkte rand plat wanneer je klaar bent.
 
-> Bias tape is a way to finish a seam. If you are not sure what it is or how to apply it, let me know.
+> Biaislint is een manier om een rand af te werken. Als je niet zeker bent wat het is of hoe je het gebruikt, laat het me dan weten.
 
-### Step 25: Pin and sew fly piece to crotch seam
+### Stap 25: Speld en stik het gulpdeel aan de kruisnaad
 
-![Pin and sew fly piece to crotch seam](step25.png)
+![Speld en stik het gulpdeel aan de kruisnaad](step25.png)
 
-Place the left leg with the good side up. Place the second fly piece on top with the good side down, aligning the unfinished seam with the crotch seam.
+Leg de linkerbroekpijp met de goede kant omhoog. Leg het tweede gulpdeel bovenop met de goede kant naar beneden, en leg de onafgewerkte rand samen met de kruisnaad.
 
-Pin the fly piece in place, then sew it in place along the crotch seam.
+Speld het gulpdeel vast, en stik het dan vast langs de kruisnaad.
 
-> When you sew this in place, make sure to catch the front lining.
+> Let op dat je de voering mee vaststikt bij het stikken van deze naad.
 
-Press the finished edge flat when you're done.
+Strijk de afgewerkte rand plat wanneer je klaar bent.
 
-### Step 26: Roll the fly piece to the back, and press the seam
+### Stap 26: Keer het gulpdeel naar achter en strijk de naad
 
-![Roll the fly piece to the back, and press the seam](step26.png)
+![Keer het gulpdeel naar achter en strijk de naad](step26.png)
 
-Fold the fly piece to the back. Before you press, make sure to roll the seam a bit backwards so that the front of the trousers sits a little further than the fly piece.
+Plooi het gulpdeel naar de verkeerde kant. Rol de naad een beetje verder naar achter voor je dit strijkt zodat deze niet meer zichtbaar is langs de goede kant.
 
-This way, the seam or fly piece will not show from the front.
+Op deze manier zal de naad of het gulpbeleg onzichtbaar zijn aan de voorkant.
 
-Give it a good press from the back.
+Strijk eens goed langs de achterkant.
 
-### Step 27: Pin and sew zip to fly piece
+### Stap 27: Speld en stik de rits aan het gulpdeel
 
-![Place both legs on top of eachother](step27a.png) {.fs-row3} ![Pin the zip along the edge](step27b.png) {.fs-row3} ![Sew in place](step27c.png) {.fs-row3}
+![Leg beide voorpanden op elkaar](step27a.png) {.fs-row3} ![Speld de rits langs de rand](step27b.png) {.fs-row3} ![Stik vast](step27c.png) {.fs-row3}
 
-Place the right leg down with the good side up. Place the leg on top of it with the good side down.
+Leg de rechterbroekspijp neer met de goede kant omhoog. Leg de linkerbroekspijp bovenop met de goede kant naar beneden.
 
-With the crotch seams aligned, pin the zip along the edge of the fly piece with the good side of the zip down.
+Leg de kruisnaden gelijk en speld de rits langs de rand van het gulpdeel met de goede kant van de rits naar beneden.
 
-Make sure to pin the fly only to the fly piece. Not to any other layers underneath.
+Zorg dat je de rits enkel aan het gulpdeel speldt. Vermijd alle andere lagen.
 
-> I find it's easier to pin the zip through all layers, and then when it's secure in place add extra pins that pin it to the fly piece only. When that's done, you can remove the pins that go through all layers.
+> Ik vind het makkelijker om de rits door alle lagen te spelden, en wanneer ze stevig vastzit extra spelden toe te voegen om ze enkel aan het gulpdeel te spelden. Als dat gebeurd is kan je de spelden die door alle lagen gaan verwijderen.
 
-Last but not least, sew along the zip with your zipper foot to attach it to the fly piece.
+Stik uiteindelijk langs de rits met je ritsvoet om ze vast te maken aan het gulpdeel.
 
-> When aligning the zip, make sure to take the following into account:
+> Let op het volgende terwijl je de rits goedlegt:
 > 
-> - The zip should be placed with the good side down
-> - The zip should sit a bit back from the edge of your fly piece
-> - Make sure to align the top of the zip with the other zip half on the right leg
+> - De rits ligt met de goede kant naar beneden
+> - De rits ligt een beetje verder dan de rand van je gulpdeel
+> - Leg de bovenkant van de rits gelijk met de andere helft van de rits aan de rechterbroekspijp
 
-### Step 28: Zig-zag the zip edge to the fly piece
+### Stap 28: Zigzag de rand van de rits aan het gulpdeel
 
-![Zig-zag the zip edge to the fly piece](step28.png)
+![Zigzag de rand van de rits aan het gulpdeel](step28.png)
 
-With the fly in place, run a zig-zag stitch along the edge of the zip to secure it to the fly piece.
+Zigzag langs de rand van de rits om ze vast te maken aan het gulpdeel.
 
-### Step 29: Bar-tack both fly pieces together
+### Stap 29: Bevestig de gulpdelen met een trens
 
-![Bar-tack both fly pieces together](step29.png)
+![Bevestig de gulpdelen met een trens](step29.png)
 
-Place both fly pieces together, and move the front pieces out of the way.
+Leg de twee gulpdelen samen, en leg de voorpanden uit de weg.
 
-Use a bar-tack to join them together at the bottom of the zip. Sew on both edges of the zip, and get as close to the zip as you can.
+Gebruik een trens om ze aan elkaar te bevestigen, aan de onderkant van de rits. Stik aan beide kanten van de rits, en zo dicht bij de rits als je kan.
 
-> If your zip is too long, you can trim it below the bar-tacks.
+> Als je rits te lang is kan je ze onder de trensen bijknippen.
 
-### Step 30: Join crotch seam
+### Stap 30: Sluit de kruisnaad
 
-![Join crotch seam](step30a.png) {.fs-row2} ![Join crotch seam](step30b.png) {.fs-row2}
+![Sluit de kruisnaad](step30a.png) {.fs-row2} ![Sluit de kruisnaad](step30b.png) {.fs-row2}
 
-Place both fronts with the good sides up. They are now joined by the fly.
+Leg beide voorpanden met goede kanten naar boven. Ze zijn nu verbonden met de gulp.
 
-Make sure the fly is neatly tucked under, and pin together both fronts at the bottom of the fly, where you bar-tacked earlier. Make sure the pin is aligned to the fold of your front.
+Zorg dat de gulp netjes weggeplooid is, en speld beide voorpanden samen onder de rits, waar je eerder trensen maakte. Zorg dat de speld samenligt met de plooi van je voorpand.
 
-Fold the fronts with the good sides together, and pin them together along the crotch.
+Plooi de voorpanden met goede kanten samen, en speld de kruisnaad dicht.
 
-You'll need to get the fly shields out of the way, so if you've pinned through all layers before, remove that pin now, making sure to replace it with a horizontal pin. This will tell you how far to sew.
+Je zal de gulpdelen uit de weg moeten leggen, dus als je eerder door alle lagen heen hebt gespeld, verwijder deze speld dan en vervang ze door een horizontale speld. Dit zal aangeven hoe ver je moet naaien.
 
-Sew the crotch seam, starting at the cross-seam point, and going up to your horizontal pin.
+Stik de kruisnaad, beginnend aan het punt waar de zijnaden kruisen, en tot aan je horizontale speld.
 
-> I find this step hard to explain, and hard to illustrate. I hope it will make sense when you're looking at your fly. If not, check the video instructions.
+> Deze stap is moeilijk uit te leggen, en lastig te illustreren. Ik hoop dat het duidelijk is als je naar je gulp kijkt. Indien niet, kijk naar de videoinstructies.
 
-### Step 31: Pin fly closed and baste fly curve
+### Stap 31: Speld de gulp dicht en drieg de curve
 
-![Pin fly closed and baste fly curve](step31.png)
+![Speld de gulp dicht en drieg de curve](step31.png)
 
-Close the fly, and pin the fronts together making sure the fly is neatly tucked away.
+Sluit de gulp, en speld de voorpanden zo neer dat de gulp netjes opzij ligt.
 
-We will be topstitching the fly curve next, and it's a good idea to baste it first.
+We gaan nu de curve van de gulp doorstikken, en het is een goed idee om dit eerst te driegen.
 
-You should start a bit above your earlier bar tack, and make sure you catch only the fly shield of the left leg.
+Je start een stukje boven je eerdere trens, en zorgt dat je enkel het gulpbeleg aan het linkervoorpand vaststikt.
 
-Curve upwards toward the edge of the fly shield, and then proceed in parallel with the zip.
+Ga in een curve naar boven tot aan de rand van het gulpbeleg, en ga dan parallel met de rits verder.
 
-### Step 32: Topstitch the fly curve
+### Stap 32: Stik de curve van de gulp door
 
-![Topstitch your fly curve](step32.png)
+![Stik door de curve van de gulp](step32.png)
 
-Now topstitch your fly curve, using your basting as a guide.
+Stik nu de gulp door, en gebruik je driegsteek als een gids.
 
-When doing so, you will be locking your front, fly piece, pocket bag and lining all together.
+Wanneer je dit doet stik je het voorpand, het gulpdeel, het zakdeel en de voering allemaal samen vast.
 
-### Step 33: Pin together the inner leg seam
+### Stap 33: Speld de binnenbeennaad samen
 
-![Pin together the inner leg seam](step33.png)
+![Speld de binnenbeennaad samen](step33.png)
 
-Close the legs with the good sides together, and pin together the inner leg seam. Start at the cross seam point and work your way to the bottom of the legs.
+Sluit de broekspijpen met de goede kanten samen, en speld de binnenbeennaad samen. Start aan de kruisnaad en ga van daar naar beneden langs elke pijp.
 
-Make sure to do this for both legs.
+Doe dit voor beide broekspijpen.
 
-### Step 34: Sew the inner leg seams
+### Stap 34: Stik de binnenbeennaden
 
-![Sew the inner leg seams](step34.png)
+![Stik de binnenbeennaden](step34.png)
 
-On both legs, sew the inner leg seams that you just pinned. Make sure to respect the seam allowance.
+Stik de binnenbeennaden die je net gespeld hebt aan beide broekspijpen. Zorg dat je de naadwaarde respecteert.
 
-### Step 35: Press open seam allowance of the inner leg seam
+### Stap 35: Strijk de naadwaarde van de binnenbeennaad open
 
-![Press open seam allowance of the inner leg seam](step35.png)
+![Strijk de naadwaarde van de binnenbeennaad open](step35.png)
 
-Place your leg inside-out on your ironing board, and press open the seam allowance of the inner leg seam.
+Leg je broekspijp binnenstebuiten op je strijkplank, en strijk de naadwaarde van de binnenbeennaad open.
 
-### Step 36: Close the cross-seam
+### Stap 36: Stik de kruisnaad
 
-![Close the cross-seam](step36.png)
+![Stik de kruisnaad](step36.png)
 
-We are now going to close the cross-seam, from the bottom of your fly between your legs, up your bum to the center back of where you'll add the waistband later.
+We gaan nu de kruisnaad sluiten, van de onderkant van de gulp tussen je benen, langs je kont tot aan de middenrug waar later de tailleband komt.
 
-To do so, turn on of the legs inside out, so that that good side of the fabric is turned inside, and the bad side and lining sits on the outside.
+Om dit te doen keer je één van de benen binnenstebuiten, zodat de goede kant van de stof naar binnen zit, en de slechte kant en voering aan de buitenkant.
 
-The other leg should not be turned inside-out, but should just have its good side on the outside.
+Het andere been mag niet binnenstebuiten zitten, maar gewoon met de goede kant naar buiten.
 
-Now, put the leg that has the good side out (the normal leg) into the leg that has the bad side out (the inside-out leg).
+Stop nu de gewone broekspijp (met de goede kant naar buiten) in de andere broekspijp (die binnenstebuiten zit).
 
-This way, the good sides of both legs will sit against each other, and this is how you should sew the cross seam.
+Op deze manier zitten de goede kanten van de broekspijpen tegen elkaar, en op deze manier zou je de kruisnaad moeten stikken.
 
-> Be careful that your leg is not twisted inside the other leg. When in doubt, turn the inside-out leg outside-out again after you've pinned the cross-seam to make sure it's all ok.
+> Let op dat je ene broekspijp niet gedraaid zit in de andere. Als je twijfelt, keer het binnenstebuiten been dan terug naar de buitenkant nadat je de naad gespeld hebt om zeker te zijn dat alles ok is.
 
-Pin the cross-seam in place, and then sew it close, starting at the side of the fly, and making sure to respect the seam allowance.
+Speld de kruisnaad vast en stik hem dan dicht, beginnend aan de kant van de gulp, en met de standaard naadwaarde.
 
-When done, press the seam allowance open.
+Als dit gedaan is strijk je de naadwaarde open.
 
-### Step 37: Press the leg crease in place
+### Stap 37: Strijk de plooi in de broekspijp
 
-![Press the leg crease in place](step37.png)
+![Strijk de plooi in de broekspijp](step37.png)
 
-Turn your trousers good side out, and carefully place one leg on your ironing board so that it lies flat and folds exactly on the crease line your basted earlier.
+Keer je broek naar de goede kant, en leg voorzichtig één broekspijp op de strijkplank zodat ze plat ligt en gevouwen op de plooilijn die je eerder gedriegd hebt.
 
-When it's looking good, press the crease lines in your leg, front a back. Repeat for the other leg.
+Als dit er goed uit ziet, strijk je de plooien in je broekspijp, aan de voor- en achterkant. Herhaal voor de andere broekspijp.
 
-Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
-> In the industry, chemicals are applied along the crease line before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
+Strijk het grondig, je wil namelijk dat deze plooien zichtbaar blijven na het wassen (zodat je ze er weer in kan strijken).
+> In de kledingindustrie gebruikt men chemische stoffen langs de vouwlijn voor ze gestreken wordt. Sommige kleermakers gebruiken een houten hamer en aambeeld om de vezels in een permanente plooi te timmeren.
 
-Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
+Afhankelijk van je stof kan je plooi langer blijven, maar uiteindelijk kan je niet verwachten dat een plooi langer dan een paar wasbeurten meegaat.
 
-> Maybe this goes without saying, but there's also another option: Do not press the crease. This give your trousers a more informal look.
+> Misschien is dit extreem logisch, maar er is nog een andere optie: laat de plooi gewoon weg. Dit geeft je broek een minder formele look.
 
-### Step 38: Fuse interfacing to waistband
+### Stap 38: Strijk tussenvoering aan tailleband
 
-![Fuse interfacing to waistband](step38.png)
+![Strijk tussenvoering aan tailleband](step38.png)
 
-Fuse the waistband interfacing (Piece 3) to the waistband (Piece 4).
+Strijk de tussenvoering voor de tailleband (deel 3) aan de tailleband (deel 4).
 
-Align the interfacing in the middle of the waistband, and make sure to keep it nicely aligned as you fuse it in place with your iron.
+Leg de tussenvoering in het midden van de tailleband, en let op dat ze netjes recht blijft liggen terwijl je ze vaststrijkt.
 
-### Step 39: Close waistband and waistband lining
+### Stap 9: Sluit de tailleband en de voering van de tailleband
 
-![Close waistband and waistband lining](step39.png)
+![Sluit de tailleband en de voering van de tailleband](step39.png)
 
-Join the waistband (Pieces 4a and 4b) by sewing both pieces good sides together.
+Maak de tailleband (delen 4a en 4b) door beide delen met de goede kanten op elkaar te stikken.
 
-Join the waistband lining (Pieces 5a and 5b) by sewing both pieces good sides together.
+Maak de voering van de tailleband (delen 5a en 5b) door beide delen met de goede kanten op elkaar te stikken.
 
-### Step 40: Sew waistband to waistband lining
+### Stap 40: Stik de tailleband aan de voering van de tailleband
 
-![Sew waistband to waistband lining](step40.png)
+![Stik de tailleband aan de voering van de tailleband](step40.png)
 
-Place your waistband on the waistband lining, good sides together, so that the waistband interfacing is facing upwards.
+Leg je tailleband op de voering van de tailleband, met de goede kanten op elkaar, zodat de tussenvoering van de tailleband naar boven ligt.
 
-Align the edge, and pin them together.
+Leg de rand gelijk, en speld ze samen.
 
-> We are going to sew along the edge of the interfacing, but we will sew about 3mm or 1/8 inch from the actual interfacing edge. This will prevent the lining from being visible from the front later.
+> We gaan langs de rand van de tussenvoering stikken, maar ongeveer 3 mm of 1/8 inch van de eigenlijke rand. Dit voorkomt dat de voering aan de voorkant zichtbaar is.
 
-On one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
+Aan één kant van de tailleband eindig je met een curve en ga je dan verticaal naar beneden langs de rand van de tussenvoering. Kijk naar de illustratie om zeker te zijn dat je dit aan de juiste kant doet.
 
-### Step 41: Roll fabric around interfacing edge and press waistband
+### Stap 41: Rol de stof rond de rand van de tussenvoering en strijk de tailleband
 
-![Roll fabric around interfacing edge and press waistband](step41.png)
+![Rol de stof rond de rand van de tussenvoering en strijk de tailleband](step41.png)
 
-Before pressing the waistband, make sure to roll over the fabric around the edge of the interfacing.
+Zorg voor je de tailleband strijkt dat de stof over de rand van de tussenvoering rolt.
 
-Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
+Weet je nog dat je in de vorige stap 3 mm van de rand van de tussenvoering stikte? Je moet de stof rond de rand van de tussenvoering plooien zodat de eigenlijke naad 3 mm verder naar binnen zit.
 
-This will make sure that our lining fabric is never on display from the front of your trousers.
+Dit zorgt dat onze voeringstof nooit zichtbaar is aan de voorkant van je broek.
 
-### Step 42: Pin waistband to trousers
+### Stap 42: Speld de tailleband aan de broek
 
-![Pin waistband to trousers](step42.png)
+![Speld de tailleband aan de broek](step42.png)
 
-Pin the edge of your waistband (the side you did not sew the lining to) to the top of your trousers, good sides together.
+Speld de rand van je tailleband (de kant waar je de voering niet aan stikte) aan de bovenrand van je broek, met de goede kanten samen.
 
-Tuck the edge of your fly into the end of the waistband with the curved corner. On the other end of the waistband, it will be longer. In other words, your waistband will overlap here.
+Stop de rand van de gulp in de kant van de tailleband met de afgeronde hoek. Aan de andere kant van de tailleband zal dit langer zijn. In andere woorden, hier zal je tailleband overlappen.
 
-> Be careful to match the vertical alignment of the waistband at the zip. With the zip closed, both sides of the waistband should sit at an equal height. This is easy to miss if you don't check it.
+> Let op dat de rits en de tailleband verticaal doorlopen. Beide kanten van de tailleband zouden even hoog moeten komen met de rits gesloten. Dit is makkelijk over het hoofd gezien als je het niet nakijkt.
 
-### Step 43: Sew waistband to trousers
+### Stap 43: Stik de tailleband aan de broek
 
-![Sew waistband to trousers](step43.png)
+![Stik de tailleband aan de broek](step43.png)
 
-Now that the waistband is pinned to top of your trousers, sew it in place.
+Nu de tailleband aan de bovenrand van de broek gespeld is, kan je deze vaststikken.
 
-On the side with the curved corner, get as close to the edge as possible. On the other side, stop when you reach the edge of your fly.
+Stik zo dicht mogelijk bij de rand aan de kant met de afgeronde hoek. Aan de andere kant stop je bij de rand van je gulp.
 
-### Step 44: Press waistband
+### Stap 44: Strijk de tailleband
 
-![Press waistband](step44.png)
+![Strijk de tailleband](step44.png)
 
-Give your newly sewn seam a good press. Do not press the seam open, instead press it towards the top (put both trousers and waistband seam allowance in the waistband).
+Strijk deze nieuwe naad eens goed. Strijk de naad niet open, maar naar boven, zodat de hele naadwaarde in de tailleband zit.
 
-### Step 45: Prepare the belt loops
+### Stap 45: Bereid de riemlusjes voor
 
-![Prepare the belt loops](step45.png)
+![Bereid de riemlusjes voor](step45.png)
 
-The belt loops are a part of your trousers where you can let your creativity run free. There's load of different ways to make and shape belt loops, not to mention that where you place them is also up to you.
+De riemlusjes zijn een deel van je broek waar je creatief mee kan omspringen. Er zijn een hoop manieren op riemlusjes te maken, om nog maar te zwijgen van waar je ze plaatst.
 
-That being said, here's what to do to make a standard belt loop:
+Los daarvan is dit de standaard manier om een riemlusje te maken:
 
-Find the belt loop pattern part, a small rectangular piece of fabric. There should be 8 of them, and these will become your belt loops. For each of them, take these steps:
+Vind het patroondeel voor de riemlus, een klein rechthoekig stuk stof. Hiervan zou je er 8 moeten hebben, en dit worden je riemlusjes. Voor elke lus volg je deze stappen:
 
- - Zig-zag (or serge) along the longest edges of the rectangle
- - Fold one side back along the length, and press
- - Fold the other side back, along the length, and press
- - Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
- - Give it a final good press when you're done
+ - Zigzag (of lock) langs de lange randen van de rechthoek
+ - Plooi één kant terug in de lengte, en strijk
+ - Plooi de andere kant terug, in de lengte, en strijk
+ - Naai met de hand langs de achterkant van het lusje zodat de geplooide randen op hun plek blijven, maar de steken vooraan niet zichtbaar zijn
+ - Strijk nog eens goed als je klaar bent
 
-> While the width of your belt loops is not all that important, it does matter to make sure they are all the same width.
+> De exacte breedte van je lusjes is niet zo belangrijk, maar het is wel belangrijk dat ze allemaal even breed zijn.
 > 
-> To make it easier to have a consistent width, you can fold your belt loops around a strip of cardboard, thick paper, or plastic of the desired belt loop width.
+> Om het makkelijker te maken de breedte consequent te houden kan je het lusje rond een strook karton of dik papier van de gewenste breedte plooien.
 > 
-> This strip can also help you with the hand sewing. Keep it in your belt loop and it will prevent your needle from piercing through all layers and your thread won't show at the front.
+> Deze strook kan je ook helpen bij het naaien. Houd het strookje in je riemlus, dit helpt voorkomen dat je naald door de voorste stoflaag gaat en de steken zichtbaar worden.
 
-### Step 46: Attach the belt loops: Bottom
+### Stap 46: Bevestig de riemlussen: Onderkant
 
-![Attach the bottom of the belt loops](step46.png)
+![Bevestig de onderkant van de riemlusjes](step46.png)
 
-Attach the bottom of the belt loops to your trousers. Place them about 1.5 cm below your waistband, depending on your waistband width.
+Bevestig de onderkant van de riemlussen aan je broek. Leg ze ongeveer 1.5 cm onder je tailleband, afhankelijk van hoe breed de tailleband is.
 
-Place the good side of the belt loop down on the good side of the trousers (good sides together) and secure with a bar tack or narrow zig-zag.
+Leg de goede kant van de riemlus op de goede kant van de broek (goede kanten samen) en stik vast met een trens of smalle zigzag.
 
-Then, zig zag the edge of the belt loop to the trousers.
+Zigzag dan de rand van de riemlus aan de broek.
 
-> It is important to get the waistband lining out of the way while doing this. Make sure to attach the belt loops only to your trousers, and not to the waistband lining.
+> Het is belangrijk dat je de voering van de tailleband uit de weg houdt terwijl je dit doet. Zorg dat je de riemlusjes enkel aan je broek vastmaakt, en niet aan de voering van de tailleband.
 
-> You have 8 belt loops, so you need to distribute them around your waistband. Have a look at an existing pair if you are uncertain how to do this.
+> Je hebt 8 riemlusjes, dus die moet je verdelen rond je tailleband. Kijk naar een bestaande broek als je niet zeker bent van waar ze moeten komen.
 > 
-> Make sure to place belt hoops close to the center back, and not too close to each other at the front (for belt buckles).
+> Zorg dat er zeker lusjes aan de middenrug zitten, en niet te dicht bij elkaar aan middenboor (zodat er ruimte is voor een gesp).
 
-### Step 47: Waistband facing
+### Stap 47: Beleg tailleband
 
-![Waistband facing](step47.png)
+![Beleg tailleband](step47.png)
 
-The waistband facing needs to be cut out and attached to your waistband.
+Het beleg van de tailleband moet uitgeknipt worden en aan je tailleband vastgemaakt.
 
-This will be a lot simpler to understand if you have a look at the relevant video:
+Dit is een stuk makkelijker te begrijpen als je naar de video hierover kijkt:
 
 @[youtube](https://www.youtube.com/embed/8dLOuOtb18U?list=PL1gv5yv3DoZOcmOJf6f0YWi522VXXv-mM)
 
-### Step 48: Trim waistband seam allowance
+### Stap 48: Knip naadwaarde tailleband bij
 
-![Trim waistband seam allowance](step48.png)
+![Knip naadwaarde tailleband bij](step48.png)
 
-Before we finalize the waistband, we're going to trim back some of its seam allowance.
+Voor we de tailleband afwerken gaan we de naadwaarde wat bijknippen.
 
-> **About seam allowance grading** When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+> **Over het bijknippen van naden** Als je verschillende lagen naadwaarde bijknipt, probeer de lagen dan op verschillende lengtes te knippen zodat de bulk geleidelijk aan vermindert.
 > 
-> The layer that lies closest to the good side of the garment should be the longest, so trim back from there.
+> De laag die het dichtst bij de goede kant van het kledingstuk ligt moet het langst zijn, dus begin daar.
 > 
-> Doing so will make it less likely that the outline of the seam allowance is visible from the good side.
+> Dit maakt het minder waarschijnlijk dat de rand van de naadwaarde zichtbaar is langs de goede kant.
 
-### Step 49: Press and baste the waistband lining
+### Stap 49: Strijk en drieg de voering van de tailleband
 
-![Press and baste the waistband lining](step49.png)
+![Strijk en drieg de voering van de tailleband](step49.png)
 
-The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called _stitch in the ditch_).
+De voering van de tailleband wordt langs de voorkant van de broek vastgestikt, bovenop de naad tussen de tailleband en de broek (zogenaamd _door de naad stikken_).
 
-Doing so will catch the lining and secure it in place. However, since we'll be sewing this from the good side, the lining will lie beneath all other layers, and we won't see what we're doing.
+Dit stikt de voering vast. Maar, omdat we dit langs de goede kant stikken ligt de voering onder alle andere lagen en zien we niet wat we doen.
 
-That is why, to make sure it all lies clean and flat, we will first press and baste the lining.
+Daarom moeten we de voering eerst strijken en driegen zodat alles netjes plat ligt.
 
-The lining will extend downward from the top, and it needs to be folded back up under itself, so that it will get caught by the seam when we sew it in place later.
+De voering komt naar beneden van bovenaan, en moet terug onder zichzelf geplooid worden zodat het vastzit in de naad als we die later stikken.
 
-To make sure things look pretty, the distance between the top of our waistband and the (folded back) bottom edge of our lining should be constant. You can mark an even distance from the top of your trousers, and then pin back the lining at this line. Last but not least, press that fold in your lining.
+Om te zorgen dat alles er mooi uitziet moet de afstand tussen de bovenrand van de tailleband en de (omgeplooide) onderrand van de voering evenwijdig zijn. Je kan een gelijke afstand van de bovenrand markeren, en dan de voering op deze lijn terugspelden. Strijk dan deze plooi in je voering.
 
-When you're happy with how it looks, baste the lining in place just next to the seam joining the waistband and trousers.
+Als je blij bent met hoe het eruitziet, drieg de voering dan vast naast de naar die de tailleband en broek verbindt.
 
-> It's best to baste next to the seam, and not actually in the seam. This will make it a lot easier to remove your basting when after we've sewn in the last step.
+> Het is best om naast de naad te driegen, en niet echt in de naad. Dit maakt het makkelijker om je driegsteken te verwijderen nadat we de naad doorgestikt hebben.
 
-### Step 50: Sew the waistband lining in place
+### Stap 50: Stik de voering van de tailleband vast
 
-![Sew the waistband lining in place](step50.png)
+![Stik de voering van de tailleband vast](step50.png)
 
-After you basted the waistband lining, sew it in place from the good side, exactly in the seam between the waistband and trousers.
+Nadat je de voering van de tailleband gedriegd hebt, stik ze dan vast langs de goede kant, exact in de naad tussen de tailleband en de broek.
 
-### Step 51: Attach the belt loops: Top
+### Stap 51: Bevestig de riemlusjes: Bovenaan
 
-![Attach the top of the belt loops](step51.png)
+![Bevestig de bovenkant van de riemlusjes](step51.png)
 
-With your waistband and lining properly secured, it's time to attach the top of the belt loops.
+Nu je tailleband en voering echt vastzitten is het tijd om de bovenkant van de riemlusjes vast te maken.
 
-Sew them in place just as you did at the bottom. That is, use a bar tack or close zig-zag to attach them, then zig-zag over the end to secure it.
+Stik ze vast zoals je aan de onderkant deed. Dat wil zeggen, zet ze vast met een trens of smalle zigzag, en zigzag dan over het uiteinde om ze af te werken.
 
-> Don't sew through the top of the belt loops. You'll have to work the foot of your sewing machine under the belt loop so you only sew the piece that is folded back.
+> Stik niet door de bovenkant van de riemlusjes. Je zal de voet van je naaimachine onder het riemlusje moeten krijgen zodat je alleen door het teruggeplooide stuk stikt.
 
-> Feel free to trim back the length of your belt loops after you bar tack and before you zig-zag the end of them, as they might be too long.
+> Knip de lengte van je riemlusjes gerust bij nadat je ze bevestigt, ze kunnen namelijk wat te lang zijn.
 
-### Step 52: Finish the edge of the legs
+### Stap 52: Werk de onderrand van de broekspijpen af
 
-![Finish the edge of the legs](step52.png)
+![Werk de onderrand van de broekspijpen af](step52.png)
 
-Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
+Werk de onafgewerkte rand van de broekspijpen af met een zigzagsteek of overlock voor we de broek omzomen.
 
-> This would also be a good time to try on your trousers and mark exactly how long you want them to be after they are hemmed.
+> Dit is ook een goed moment om je broek te passen en te markeren hoe lang je wil dat ze is na het omzomen.
 
-### Step 53: (Optional) Sew in a hem ribbon
+### Stap 53: (Optioneel) Naai een broekstootband
 
-![Optionally sew in a hem ribbon](step53.png)
+![Naai een optionele broekstootband](step53.png)
 
-> The hem ribbon is a ribbon that sits on the inside of your trouser hem. At the place your hem folds back, the fabric has to take a lot of abuse from bumping into shoes and other things.
+> Een broekstootbandje is een lint dat aan de binnenkant van je broekzoom zit. Op de plek waar je zoom omgeplooid is krijgt de stof heel wat te verduren door tegen schoenen en andere dingen aan te schuren.
 > 
-> Placing a ribbon inside the hem protects your fabric to some extent, and it is a neat finish.
+> Een broekstootband beschermt je stof in zekere mate, en is een nette afwerking.
 
-Mark the hemline on your trousers (good side out).
+Markeer de zoomlijn op je broek (met de goede kant naar buiten).
 
-Place the ribbon as shown in the illustration making sure that it extends a few mm above the hemline. Sew it in place all the way around the leg, making sure to sew close but not on the hemline.
+Leg de broekstootband zoals getoond in de illustratie, en let op dat ze een paar mm boven de zoomrand ligt. Stik vast rondom de broekspijp, en let op dat je dichtbij maar niet op de zoomlijn stikt.
 
-### Step 54: Press the hem
+### Stap 54: Strijk de zoom
 
-![Press the hem](step54.png)
+![Strijk de zoom](step54.png)
 
-Fold back the trouser legs at the hemline, and press the hem.
+Plooi de broekspijpen om aan de zoomlijn, en strijk de zoom.
 
-> If you've sewn in a hem ribbon, the ribbon will extend a few mm below the hem line, thereby protecting the fabric at the hem.
+> Als je een broekstootband gebruikt hebt zal het lint een paar mm voorbij de zoomlijn liggen, en zo de stof aan de zoom beschermen.
 
-### Step 55: Hem the legs
+### Stap 55: Zoom de broekspijpen
 
-![Hem the legs](step55.png)
+![Zoom de broekspijpen](step55.png)
 
-With the hem neatly pressed, simply hand-sew the folded back part to the inside of your trousers.
+Als de zoom netjes gestreken is, naai het teruggeplooide deel dan vast aan de binnenkant van je broek.
 
-> Hemming is done by hand because it's important that the stitches don't show on the front. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+> Omzomen wordt met de hand gedaan omdat het belangrijk is dat de steken niet zichtbaar zijn aan de goede kant. Dus duw je naald niet door de stof wanneer je de zoom naait, maar pik een paar draadjes van de stof op zodat je steken niet zichtbaar zijn aan de goede kant
 > 
-> While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+> Er bestaan manieren om dit met de naaimachine te dien, maar deze zijn niet zo netjes (blindzoomsteek), of niet toegankelijk voor gewone stervelingen (industriele blindzoommachine).
 
-### Step 56: Trim, clean up, and press
-Trim any loose threads or basting that remains, and give your trousers a good final press.
+### Stap 56: Knip bij, ruim op en strijk
+Knip alle losse draadjes of driegdraadjes die overblijven bij, en strijk je broek nog eens grondig.

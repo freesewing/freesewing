@@ -5,7 +5,7 @@ order: 50
 
 Vous avez le droit de demander une limitation au traitement de vos données personnelles.
 
-Allez dans [Mon compte/Paramètres/Actions/Restreindre le traitement de vos données][1] pour demander que nous limitions le traitement de vos données personnelles.  
+Allez dans [Mon compte/Paramètres/Actions/Restreindre le traitement de vos données][1] pour demander que nous limitions le traitement de vos données personnelles.
 
 <Warning>
 
