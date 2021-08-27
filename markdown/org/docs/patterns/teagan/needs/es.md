@@ -1,6 +1,6 @@
 
 To make Teagan, you will need the following:
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
 - About 1 meter of a suitable fabric ([see Fabric options](/docs/patterns/teagan/fabric))
 
 <!--- This link isn't a thing yet, but it follows the site nomenclature, so it should work when everything's up? --->

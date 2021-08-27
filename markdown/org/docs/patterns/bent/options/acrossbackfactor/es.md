@@ -1,2 +1,2 @@
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Controla el ancho de espalda como un factor de la medida de hombro a hombro

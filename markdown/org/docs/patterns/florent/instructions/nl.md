@@ -1,98 +1,98 @@
-- - -
-title: Construction
-- - -
+---
+title: Constructie
+---
 
 ### Stap 1: Bevestig tussenvoering
 
-Depending on your fabric weight you might want to fuse all your main fabric parts No matter the thickness of your fabric, you should consider reinforcing the sides of your brim parts (where the notch mark is). This will help prevent the pointy ends of the plastic part to poke outside of the cap on this area
+Afhankelijk van hoe zwaar je stof is kan het aan te raden zijn al je buitenste stofdelen te verstevigen. Onafhankelijk van de dikte van je stof is het een goed idee om de zijkanten van je klepdelen (waar de markering is) te verstevigen. Dit zal voorkomen dat de hoeken van het plastic deel hier uit de pet gaan steken
 
-![Protect this area from being pocked through by the plastic brim](step16.svg)
+![Bescherm dit stuk tegen de hoeken van de plastic klep](step16.svg)
 
 ### Stap 2: Achterste neep sluiten
 
 #### Versie met bovenkant aan de stofvouw geknipt
 
-You should mark the top of the back dart on the wrong side of the fabric so that you know where to end your seam
+Markeer het eindpunt van de achterste neep op de verkeerde kant van de stof zodat je weet waar je moet stoppen
 
-![Marking the end of the dart](step01.jpg)
+![Markeer het einde van de neep](step01.jpg)
 
-There is several tricks to sewing darts, here is how I do it (I think it is called "balancing the dart"): prepare a bias cut rectangle of the same fabric you are going to stitch and place it underneath the point of your future dart. Stitch the dart starting from the bottom and keep stitching a few stitching after the top dart. Leave a good length of thread to make a knot by hand.
+Er zijn verschillende trucjes om nepen te naaien, hier is het mijne (ik denk dat ze dit "een neep balanceren" noemen): knip een rechthoek van je buitenstof schuin van draad en plaats deze onder de punt van je neep. Stik de neep, van beneden tot de punt, en stik een paar steken voorbij de punt van de neep. Laat een paar lange draadjes hangen om ze te kunnen knopen.
 
-![Balanced dart](step02.jpg)
+![Gebalanceerde neep](step02.jpg)
 
-Where the rectangle of fabric starts, cut the seam allowance that is against this rectangle, up to the seam so that the seam can be ironed flat open before the rectangle. On the area where the dart is stitched with the rectangle, iron both seam allowances on one side, and the folded rectangle on the other side. Layer the edges of the rectangle. The edge against the main fabric is wider, the one above is smaller
+Knip de naadwaarde die tegen het rechthoekige stukje stof ligt open tot aan de naad zodat de naad voor het rechthoekige stukje stof opengestreken kan worden. Op de plek waar de neep samen met het rechthoekige stukje stof gestikt is strijk je de naadwaarde naar 1 kant, en het geplooide rechthoekige stukje stof naar de andere kant. Knip de randen van het rechthoekige stukje stof bij. De rand aan de buitenstof is breder, die daarbovenop smaller
 
 #### Versie met bovenkant in twee delen
-This dart is more straight forward since the seam is continuous. Simply stitch the seam all the way
+Deze neep is eenvoudiger aangezien de naad doorloopt. Stik de naad gewoon van begin tot einde
 
 #### De naad strijken
-You might have to notch the seam allowance to press it flat. Use a tailoring Ham or something rounded underneath to help you press the seam open whilst keeping the nice shape you just created.
+Het kan helpen om knipjes in de naadwaarde te geven zodat ze plat ligt. Gebruik een perskussen of iets rond onder je stof om de naad open te strijken en toch de vorm die je net gemaakt hebt te behouden.
 
 #### Sierstiksel
-Depending on the style you want to achieve, you can top stitch all your seams (by machine of by hand). However, the front brim seam will be a bit tricky to do with the machine (but not impossible). Anyway, I put this here and won't remind you about it after each step, but basically, the process would be: Stitch, Iron, Top stitch, Repeat on the next step.
+Afhankelijk van de look die je wil kan je een sierstiksel langs je naden geven (met de machine of zelfs met de hand). De voorste klepnaad zal een beetje lastig zijn met de machine, maar niet onmogelijk. In elk geval zeg ik dit hier en zal ik het niet blijven herhalen, maar als je kiest voor een sierstiksel is dit het proces: Stik, Strijk, Sierstiksel, Herhaal.
 
 ### Stap 3: Optioneel: Bevestig zijpanden aan elkaar.
-This applies only if you cut two parts for the side part. It is a straight seam. nothing much to say about that. Iron the seam flat, with the seam allowances open.
+Dit is enkel relevant als je de zijpanden in twee delen geknipt hebt. Het is een rechte naad. Niet veel over te zeggen. Strijk de naadwaarde open.
 
 ### Stap 4: Bevestig de bovenkant aan de zijkant
 
-Warning: There will be quite a few pins involved Align the notches and pin the parts together so that this rounded part is held well in place.
+Opgelet: hier komen een hoop spelden bij kijken.
 
-![Pins](step03.jpg) ![More pins](step04.jpg)
+![Spelden](step03.jpg) ![Meer spelden](step04.jpg)
 
-For the stitching, I tend to start from the center front, do one half, and then start again, back from the center front to do the other half (the **side part** is on top for both stitches). So that, if my machine shifts the lower fabric, it would be a "symmetrical shift" on both sides. Clip the seam allowances where needed, on the curve, you might want to trim the seam allowance of the side part, and notch it, to help the ironing process.
+Om dit te stikken start ik liefst aan het midden van de voorkant, doe dan één helft, en begin opnieuw aan het midden van de voorkant om de andere helft te doen (de **zijkant** ligt telkens bovenaan). Als mijn machine dan de lagen stof toch een beetje verschuift is het tenminste "symmetrisch verschoven". Geef knipjes in de naadwaarde waar nodig, en knip ze eventueel bij, om het strijken makkelijker te maken.
 
-![The seam allowances are trimmed, clipped and pressed flat open](step05.jpg)
+![De naadwaarden zijn bijgeknipt, ingeknipt en opengestreken](step05.jpg)
 
 ### Stap 5: Buitenste naad van de klep.
 
-Align the notches and pin the top and bottom parts. Technically, the lower part has a shorter seam length, so you might have to stretch it so that the seam allowances meet. In practice, fabric is usually stretchy enough so that the length difference can be eased. Iron both seam allowance against the **Bottom part**
+Leg de markeringen op elkaar en speld de boven- en onderkant samen. De onderkant heeft een iets kortere naadlengte, dus misschien moet je het een beetje uitrekken zodat de naadwaardes samen liggen. In de praktijk is de meeste stof soepel genoeg om het verschil te verwerken. Stik en strijk de naadwaarde naar de **onderkant** toe
 
 ### Stap 6: het plastic deel toevoegen
 
-The plastic part is then inserted inside the brim, being careful to keep the seam allowance flat on the **Bottom part**. You then hand stitch the brim closed, keeping the parts in place and well tensioned.
+Het plastic deel wordt dan in de klep geschoven. Let op dat de naadwaarde plat op de **onderkant** van de klep blijft. Daarna naai je de klep dicht met de hand. Let goed op dat alles op zijn plek blijft zitten en mooi opgespannen is.
 
-![The brim is prepared](step06.jpg)
+![De klep is voorbereid](step06.jpg)
 
 ### Stap 7: Stik de klep aan de pet
 
-Align the notches and stitch the brim to the cap. Be careful not to stitch onto the plastic. It might be easier if you "free" the arm of your machine
+Leg de markeringen samen en stik de klep vast aan de pet. Let op dat je niet door het plastic stikt. Hier kan het helpen om de "vrije arm" van je machine te gebruiken
 
 ### Stap 8: Bereid de voering voor
 
-Basically, repeat the steps 2, 3 and 4 with the lining **top** and **side parts**. This would also be a good time to stitch a label on the **top part** of the lining if you are into this kind of things.
+Herhaal stap 2, 3 en 4 met de **bovenkant** en **zijpanden** van de voering. Als je een label op de **bovenkant** van de voering wil is dit ook een goed moment om dat te doen.
 
 ### Stap 9: Bevestig de voering aan de buitenstof.
 
-Turn the lining outside out and place the main fabric in it (good side against good side). Pin and stitch from one end of the brim to the other end of the brim (leaving the brim seam open).
+Keer de goede kant van de voering naar binnen en plaats de buitenstof in de voering (met goede kanten op elkaar). Speld en stik van één kant van de klep naar de andere (laat het stuk aan de klepnaad open).
 
-![Preparation for stitching the lining to the cap](step07.jpg)
+![Voorbereiding om de voering aan de pet te stikken](step07.jpg)
 
-Don't forget to back tack this stitch quite well since it will get some stretch when we will turn the cap "outside out". Turn the cap outside out, so that the good side is outside. On the Brim area, baste the lining in place and hand stitch it to the brim in a way to hide the other stitches that are already on the seam allowance. ![Joining the lining, finishing by hand](step08.jpg)
+Vergeet niet hier een beetje terug te stikken om het stiksel vast te zetten aangezien hier wel wat aa getrokken wordt bij het keren van de pet. Keer de pet naar de goede kant. Drieg de voering op zijn plek aan de klep en naai ze met de hand vast. Verberg zo meteen ook de andere stiksels die al in de naadwaarde zaten. ![Voering bevestigen, met de hand afwerken](step08.jpg)
 
 ### Stap 10: Sierstiksel aan de onderkant
 
-It is a good idea to top stitch the bottom seam of the cap so that the lining stays inside. To have a better control I usually baste it first, so that the edge is sharp. ![A nice crisp basted edge](step09.jpg)
+Het is een goed idee om de onderrand van de pet door te stikken zodat de voering aan de binnenkant blijft. Om meer controle te hebben drieg ik dit meestal eerst, zodat de rand netjes is. ![Een mooie gedriegde rand](step09.jpg)
 
 ### Stap 11: De band
 
-Form a loop with the tape so that the circumference of the loop matches the measured head circumference of the wearer of the cap. The best result is achieved when you pin the tape while you are wrapping it around the head of the future owner of the cap. Once the loop is closed, you can even double check it and ask if this fit is OK for the wearer.
+Maak een lus van de band zodat de omtrek overeenkomt met de hoofdomtrek van de drager van de pet. Je krijgt het beste resultaat door de band te spelden terwijl je hem rond het hoofd van de drager wikkelt. Zodra je de lus gestikt hebt kan je ook nog eens controleren of hij goed rond het hoofd zit.
 
-![This tape will keep the cap from stretching](step10.jpg)
+![Deze band voorkomt dat de pet uitrekt](step10.jpg)
 
-Trim the ends of the tape in an arrow shape to keep it from poking out. ![It's all in the smallest details](step11.jpg)
+Knip de uiteindes van de band schuin bij zodat ze niet zichtbaar zijn. ![Het zit hem in de details](step11.jpg)
 
-Divide the tape in two with two pins
+Verdeel de band in twee met spelden
 
-![Obviously, the cap is symmetrical, so we might as well distribute the tape evenly on both sides](step12.jpg)
+![De pet is overduidelijk symmetrisch, dus we zullen de band ook maar gelijk verdelen](step12.jpg)
 
-Pin the tape in place: The two pins are used to distribute the tape equally on both sides. Place one pin at the back, and the other at the front. Since the brim is held in place it can't be much stretched, so pin the tape in this area "normally" For the remaining part you might need to ease the fabric along the tape. I recommend to hand stitch the tape in place, on both edges of the tape
+Speld de band op de juiste plek: de twee spelden worden gebruikt om de band gelijk te verdelen. Plaats een speld aan de achterkant, en één aan de voorkant. Aangezien de klep verstevigd is kan je deze niet echt meer manipuleren, dus speld de band hier "gewoon" recht vast. Voor de rest kan het zijn dat je wat overtollige buitenstof in de band moet verdelen. Ik raad je aan de band met de hand vast te naaien, aan beide randen
 
-![Both edges of the tape are slip stitched, and the edge of the cap is top stitched](step13.jpg)
+![Beide randen van de band worden onzichtbaar vastgenaaid, en de rand van de pet heeft een sierstiksel](step13.jpg)
 
 ### Stap 12: Stik de zijkant aan de klep
-We are almost done, and the last step will be to attach the brim top to the front of the body of the cap. Pin the two part in position from the outside, turn the cap on the lining side and stitch both parts together several times.
+We zijn bijna klaar, en de laatste stap is de bovenkant van de klep vastmaken aan de pet zelf. Speld de twee delen langs de buitenkant op de juiste plaats, keer de pet naar de binnenkant en stik beide kanten een paar keer door.
 
-![Pin it in place](step14.jpg) ![Stitch it in place, from the lining side](step15.jpg)
+![Speld het op z'n plek](step14.jpg) ![Stik het op z'n plaats, vanuit de binnenkant](step15.jpg)
 
-![All done!](finished.gif)
+![Klaar!](finished.gif)

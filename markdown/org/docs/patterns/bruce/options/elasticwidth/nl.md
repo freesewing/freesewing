@@ -2,6 +2,6 @@
 
 > #### Waarom?
 > 
-> This option is closely linked to the **rise** option that determines how high your boxers will rise on your waist.
+> Deze optie hangt nauw samen met de **hoogte** optie die bepaalt hoe hoog je boxershort zit in je taille.
 > 
 > De breedte van je elastiek heeft hier echter ook invloed op, en daarom is deze optie van belang.

@@ -1,2 +1,2 @@
-The width of the waist band.
+La largeur de la ceinture.
 

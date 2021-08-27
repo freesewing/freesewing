@@ -1,2 +1,2 @@
-Used to move the curve of the crotch in the front vertically
+Utilisé pour déplacer la courbe de la fourche avant verticalement
 

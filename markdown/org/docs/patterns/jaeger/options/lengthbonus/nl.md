@@ -1,5 +1,5 @@
 
 ![Bonus lengte](lengthbonus.svg)
 
-The amount to lengthen the body of your jacket.
+Hoeveel je je jasje wil verlengen.
 

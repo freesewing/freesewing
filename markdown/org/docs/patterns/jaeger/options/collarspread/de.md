@@ -1,2 +1,2 @@
 
-The collar spread controls how the collar drapes over the shoulders
+Der Kragenausschnitt steuert, wie der Kragen über die Schultern drapiert

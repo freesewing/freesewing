@@ -26,4 +26,3 @@ Zu guter Letzt: Obwohl wir versuchen, Ratschläge bei den Maßen zu geben, um Fe
 Egal, was du uns zum Verarbeiten gibst, wir werden ein Schnittmuster für dich erstellen, oder (unsere Software wird) bei dem Versuch sterben.
 
 </Note>
-

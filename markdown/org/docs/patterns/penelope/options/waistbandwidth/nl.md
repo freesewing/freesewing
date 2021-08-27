@@ -1,2 +1,2 @@
-The width of the waist band.
+De breedte van de tailleband.
 

@@ -1,5 +1,5 @@
 ---
-title: Waist ease
+title: Holgura de cintura
 ---
 
 ![The effect of the waist ease option on the pattern](sample.png)

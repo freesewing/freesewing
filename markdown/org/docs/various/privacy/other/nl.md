@@ -6,7 +6,7 @@ title: Other privacy-related topics
 
 Als we op de hoogte zijn van een inbreuk op ons beveiligingssysteem, zullen zowel jij als de autoriteiten op de hoogte gebracht worden.
 
-If you believe your personal data has been compromised, please contact joost@joost.at.
+Als je denkt dat je persoonlijke gegevens niet langer veilig zijn, contacteer dan joost@joost.at.
 
 
 ##### Diensten/service

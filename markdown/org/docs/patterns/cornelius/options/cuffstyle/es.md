@@ -1,5 +1,5 @@
 ---
-title: Cuff style
+title: Estilo del puño
 ---
 
 This pattern supports three different cuff styles:

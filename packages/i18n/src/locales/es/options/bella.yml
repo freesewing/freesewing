@@ -1,9 +1,9 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Holgura de pecho
   description: Controls the amount of ease at the fullest part of your chest
 waistEase:
-  title: Waist ease
+  title: Holgura de cintura
   description: Controls the amount of ease at your waist
 bustSpanEase:
   title: Bust span ease
@@ -36,7 +36,7 @@ backArmholePitchDepth:
   title: Back armhole pitch depth
   description: Tweaks the horizontal placement of the back armhole pitch point
 backNeckCutout:
-  title: Back neck cutout
+  title: Corte trasero del cuello
   description: Controls how deep the neck opening is scooped out at at the back
 backHemSlope:
   title: Back hem slope

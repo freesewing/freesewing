@@ -8,6 +8,7 @@ Depuis la version 2.2 cependant, nous fournissons *tailles standards*. Chaque ta
 
 Ce n'est pas une science exacte. Nous fournissons ces tailles comme un moyen rapide et facile de commencer à utiliser nos patrons. Mais nous espérons que vous prendrez le temps de prendre vos propres mesures, ou de les faire prendre. Cela donnera toujours de meilleurs résultats.
 
+
 <Tip>
 
 ##### Ouvrir en vue élargie
@@ -16,8 +17,5 @@ Ces tables prennent beaucoup de place et plus que contient l'écran, c'est pourq
  [montrons les tailles dans une vue élargie](/sizes/).
 
 </Tip>
-
-
-
 
 

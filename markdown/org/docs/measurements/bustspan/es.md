@@ -1,5 +1,5 @@
 ---
-title: Bust span
+title: Distancia entre pechos
 ---
 
 The **bust span** is the horizontal distance between the two apex points of your bust.

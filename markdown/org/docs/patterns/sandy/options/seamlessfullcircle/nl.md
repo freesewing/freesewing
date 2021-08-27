@@ -1,11 +1,10 @@
 
 ![Naadloze volledige cirkel](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband. 
+Kies 'ja' voor een naadloze cirkel, die aan een dubbele stofvouw geknipt wordt. Aangezien er geen opening is voor een rits heb je een elastische tailleband nodig.
 
 <Note>
 
 This produces a full circle ignoring the *Circle percent* option.
 
 </Note>
-

@@ -32,12 +32,9 @@ When you cut them individually, remember that they need to be mirror images of e
 ###### Caveats
 
  - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. As such, they have extra seam allowance on those seams. When cutting out these pieces, you **must** include this extra seam allowance.
- - The cuff guard and cuff placket have no seam allowance. That is normal, just cut them out as they are drawn on the pattern.
- - Do not cut out the darts in the **back** piece. You should mark them, but not cut them out.
+ The cuff guard and cuff placket have no seam allowance. That is normal, just cut them out as they are drawn on the pattern.
+ Do not cut out the darts in the **back** piece. You should mark them, but not cut them out.
 
 </Warning>
-
-
-
 
 

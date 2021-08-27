@@ -167,4 +167,4 @@ Be careful not to cut a hole in your A-shirt. Seriously, this happened to me on 
 
 </Note>
 
-![That's it, you're done 👍](finished.gif)
+![Das war's, du bist fertig 👍](finished.gif)

@@ -9,4 +9,3 @@ Wie breit deine Fliege in der Mitte ist, wird den Fliegenknoten beeinflussen. Gr
 Beim Fliegen-Stil "Rechteck" legt dieser Wert auch die Breite der Spitzen fest
 
 </Note>
-

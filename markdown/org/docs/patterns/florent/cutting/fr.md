@@ -11,7 +11,7 @@ The brim bottom part is inset, while the brim top part is offset so that the sea
    - Cut **1 side** on the fold, or **2 side**.
    - Cut **1 brim top**.
    - Cut **1 brim bottom**.
- - **Lining fabric**
+ - **Tissu de doublure**
    - Cut **1 top** on the fold but don't include the seam allowance, or **2 top** with the center seam allowance.
    - Cut **1 side** on the fold, or **2 side**.
  - **Plastic**

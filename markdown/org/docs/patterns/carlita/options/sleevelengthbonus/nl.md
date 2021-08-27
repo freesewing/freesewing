@@ -11,4 +11,3 @@ which is certainly too short for a coat.
 Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer te maken.
 
 </Note>
-

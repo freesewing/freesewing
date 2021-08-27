@@ -1,7 +1,7 @@
  - **Tissu principal**
    - Cut **1 tip**
    - Cut **1 tail**
- - **Lining fabric**
+ - **Tissu de doublure**
    - Cut **1 lining tip**
    - Cut **1 lining tail**
    - Cut **1 loop**
@@ -31,11 +31,8 @@ For a tie, how you do this is not so much a rule as it is a personal choice. As 
 
 That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
 
-If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
+Si tout cela semble très confus, puis-je suggérer de lire la page d'aide sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 
 </Tip>
-
-
-
 
 

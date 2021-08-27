@@ -10,4 +10,3 @@ If you are wearing your shirt under a tight-fitting (at the wrist) sweater or ca
 This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
 
 </Note>
-

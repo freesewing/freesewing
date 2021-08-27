@@ -10,4 +10,3 @@ Si vous portez votre chemise sous un pull ou un sweat serré aux poignets, ce bo
 Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poignet mousquetaire, ceci ne s'applique pas.
 
 </Note>
-

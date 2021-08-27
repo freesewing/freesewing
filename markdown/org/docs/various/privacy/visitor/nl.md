@@ -3,21 +3,21 @@ title: How we use your visitor data
 order: 10
 ---
 
-##### What personal data do we store?
+##### Welke persoonlijke gegevens bewaren we?
 
-- Your IP address
+- Je IP adres
 
-##### Why do we need it?
+##### Waarom hebben we ze nodig?
 
-- Your IP address is logged on our backend systems. We gebruiken deze logs en de informatie erin enkel om problemen te bepalen.
+- Je IP adres wordt gelogd op onze backend systemen. We gebruiken deze logs en de informatie erin enkel om problemen te bepalen.
 
-##### How long do we keep it?
+##### Hoe lang houden we ze?
 
 - We keep these logs no longer than 6 months.
 
-##### Do we share it?
+##### Wordt dit gedeeld?
 
-- No, never.
+- Nee, nooit.
 
 <Note>
 Deze data wordt opgeslagen voor iedereen die onze website bezoekt of verbinding maakt met onze backend API's.

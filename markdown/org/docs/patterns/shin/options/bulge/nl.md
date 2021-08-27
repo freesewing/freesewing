@@ -3,4 +3,4 @@ Hoeveel ruimte wil je vooraan?
 
 Dit vergroten zal meer ruimte maken aan de voorkant.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Als je verticaal meer ruimte nodig hebt, dan moet je naar de **hoogte** optie kijken

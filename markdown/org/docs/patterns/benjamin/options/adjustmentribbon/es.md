@@ -7,4 +7,3 @@ With Benjamin, you can make a traditional fixed size bow tie. And you can make o
 This is a great option if you decide to make a bow tie for someone else as a gift.
 
 </Tip>
-

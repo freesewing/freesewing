@@ -1,3 +1,3 @@
-![Seat ease](./seatease.svg)
+![Zugabe Gesäß](./seatease.svg)
 
 The amount of ease at your seat.

@@ -1,4 +1,4 @@
-![Collar gap](collargap.svg)
+![Écart du col](collargap.svg)
 
 Distance the collar sits apart when closed.
 
@@ -7,4 +7,3 @@ Distance the collar sits apart when closed.
 This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accomodate a wider tie (knot).
 
 </Note>
-

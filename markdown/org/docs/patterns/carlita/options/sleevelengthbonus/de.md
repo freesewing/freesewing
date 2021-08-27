@@ -11,4 +11,3 @@ which is certainly too short for a coat.
 Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
 
 </Note>
-

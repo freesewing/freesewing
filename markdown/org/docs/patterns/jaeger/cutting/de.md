@@ -9,7 +9,7 @@
    - Cut **1 collarstand** (part 8)
    - Cut **2 pockets** (part 9)
    - Cut **1 chest pocket welt** (part 10)
- - **lining fabric**
+ - **futterstoff**
    - Cut **2 fronts** (part 1)
    - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
    - Cut **2 backs** (part 2)
@@ -41,10 +41,9 @@ When you cut them individually, remember that they need to be mirror images of e
 ###### Cutting caveats
 
  - The chest piece is marked on the front.
- - Don't include seam allowance when cutting out canvas, and cut it on bias.
- - The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ Don't include seam allowance when cutting out canvas, and cut it on bias.
+ The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
 
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
-

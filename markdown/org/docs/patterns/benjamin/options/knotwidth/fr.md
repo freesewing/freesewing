@@ -9,4 +9,3 @@ La largeur de votre nœud papillon au milieu influencera la taille du nœud. Une
 Avec le type carré de nœud papillon, cette valeur déterminera également la largeur des pointes
 
 </Note>
-

@@ -12,4 +12,3 @@
  - Il y a une marge supplémentaire sur le bord de l'ourlet
 
 </Warning>
-

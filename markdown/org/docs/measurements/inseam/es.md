@@ -1,5 +1,5 @@
 ---
-title: Inseam
+title: Tiro
 ---
 
 The **inseam** is the measurement from your crotch down to the floor.

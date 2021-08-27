@@ -1,5 +1,5 @@
 
-Controls the width of the legs. 
+Bepaalt de breedte van de broekspijpen.
 
 <Note>
 

@@ -14,7 +14,7 @@ askForHelp: Nach Hilfe fragen
 automatic: Automatisch
 averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
 awesome: Großartig
-back: Zurück
+back: Rückseite
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Förderer/in werden
 blog: Blog
@@ -88,7 +88,7 @@ github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
 goodToSeeYouAgain: Schön, dich wieder zu sehen, {user}
-handle: Identifikator
+handle: Griff
 helpUsTranslate: Hilf uns beim Übersetzen
 home: Startseite
 howCanWeHelpYou: Wie können wir dir helfen?
@@ -114,7 +114,7 @@ people: Personen
 nameInfo: Ein Name hilft dabei, Dinge auseinanderzuhalten. Du kannst einen beliebigen Namen auswählen.
 name: Name
 addThing: '{thing} hinzufügen'
-newThing: '{thing} neu erstellen'
+newThing: Neu {thing}
 newPatternForModel: '{pattern} für {model} neu erstellen'
 noChanges: Keine Änderungen
 no: false
@@ -140,7 +140,7 @@ patronPitch: Wenn du unsere Arbeit für wertvoll hältst und jeden Monat ein paa
 patronsKeepUsAfloat: Freesewing wird durch die finanzielle Unterstützung unserer Förderer ermöglicht. Sie halten dieses Schiff über Wasser.
 patternInstructions: Anleitungen für das Schnittmuster
 patternOptions: Schnittmusteroptionen
-pattern: Schnittmuster
+pattern: muster
 sewingPatterns: Schnittmuster
 patterns: Schnittmuster
 pendingConfirmation: Bestätigung ausstehend
@@ -186,7 +186,7 @@ startOver: Von vorn anfangen
 startTranslatingNowOrRead: '{startTranslatingNow}, oder lies zuerst die {documentationForTranslators}.'
 startTranslatingNow: Beginne jetzt mit dem Übersetzen
 subscribe: Abonnieren
-support: Unterstützung
+support: Support
 supportFreesewing: Unterstütze Freesewing
 tellMeMore: Erzähl mir mehr
 thanksForYourSupport: Danke für deine Unterstützung
@@ -286,7 +286,7 @@ contributeToThing: An {thing} mitwirken
 mtmIsOurJam: Maßgeschneiderte Schnittmuster sind unser Spezialgebiet
 fitYouDeserve: Du verpasst wirklich etwas, wenn du standardisierte Größen verwendest.<br />Also melde dich heute an und erhalte die Passform, die du verdienst.
 supportNag: <b>Free</b>Sewing ist kosten<b>frei</b>, aber wir würden es sehr schätzen, wenn du in Betracht ziehen würdest, <a href='/patrons/join/'>uns zu unterstützen</a>.
-madeToMeasure: Maßgeschneidert
+madeToMeasure: Hergestellt nach Maß
 sizes: Größen
 standardSizes: Standardgrößen
 accountRequired: Diese Funktion erfordert einen FreeSewing-Account

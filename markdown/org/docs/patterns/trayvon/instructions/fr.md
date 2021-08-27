@@ -14,9 +14,9 @@ To practice tip-making, execute constructions steps 1 through 4 a couple of time
 
 ###### Press wisely
 
-Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Later in the construction steps, you will be asked to press your fabric. Faites attention à que vous n'utilisez pas trop de chaleur sur un tissu délicat qui pourrait ne pas le supporter.
 
-C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. This will allow you to figure out what is a good heat setting for the fabric you are using.
+C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. Cela vous permettra de déterminer le bon réglage de chaleur pour le tissu que vous utilisez.
 
 </Tip>
 
@@ -210,7 +210,7 @@ Make sure to sew only the bottom layer of the loop, so the stitches don't show o
 
 And, once again, be careful not to run your stitches through your tie. Be shallow.
 
-### Step 17: Trim and clean up
+### Étape 17 : Dégarnir et nettoyer
 
 ![Trim and clean up](step17.png)
 

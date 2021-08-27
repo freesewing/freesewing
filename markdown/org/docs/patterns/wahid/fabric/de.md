@@ -9,6 +9,3 @@ You do need a bit of weight though. Denim is fine, some light cotton is not.
 </Note>
 
 
-
-
-

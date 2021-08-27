@@ -1,4 +1,4 @@
-## Notes and tips
+## Notes et conseils
 
 ### Lining
 
@@ -6,7 +6,7 @@ Pencil skirts are tight. This limits your movement quite a bit. More so, when yo
 
 Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
 
-### Waistband
+### Ceinture
 
 A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
 
@@ -16,15 +16,15 @@ Without the zipper it will be impossible to get in and out of the skirt. So it s
 
 Traditionally, an invisible zipper is used in a pencil skirt. Lately there has been a trend to use zippers that are right in the open. Sometimes even from contrasting fabric. Choose what works for you in the style you're going for. Be creative (or not)! You might want to opt for an alternative option if your fabric is on the heavier side.
 
-### Vent
+### Fente
 
 A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
 
-### Darts
+### Pinces
 
 Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
 
-## Construction
+## Montage
 
 We're not going into a full explanation here on how to create all the individual details that make up a pencil skirt. We assume that you know how to sew a dart, insert an invisible zipper, make a vent, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
 

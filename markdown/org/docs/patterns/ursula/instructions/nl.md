@@ -38,11 +38,11 @@ Turn the undies right side out. All gusset seams should be enclosed.
 
 ![Turn right side out](step06.png)
 
-### Step 7: Sew the side seams
+### Stap 7: Stik de zijnaden
 
 Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
 
-![Sew the side seams](step07.png)
+![Stik de zijnaden](step07.png)
 
 <Note>
 

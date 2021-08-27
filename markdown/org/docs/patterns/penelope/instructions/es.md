@@ -6,7 +6,7 @@ Pencil skirts are tight. This limits your movement quite a bit. More so, when yo
 
 Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
 
-### Waistband
+### Pretina
 
 A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
 
@@ -14,7 +14,7 @@ A waistband is optional on Penelope. If you omit it, there will be quite some st
 
 Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionally, an invisible zipper is used in a pencil skirt. Lately there has been a trend to use zippers that are right in the open. Sometimes even from contrasting fabric. Choose what works for you in the style you're going for. Be creative (or not)! You might want to opt for an alternative option if your fabric is on the heavier side.
+Traditionally, an invisible zipper is used in a pencil skirt. Lately there has been a trend to use zippers that are right in the open. Sometimes even from contrasting fabric. Choose what works for you in the style you're going for. Be creative (or not)! Be creative (or not)! You might want to opt for an alternative option if your fabric is on the heavier side.
 
 ### Vent
 

@@ -13,4 +13,3 @@ Naadloos is minder werk, en ziet er geweldig uit.
 Aangezien naadloos enkel mogelijk is bij een aangeknipt knoopsgatenpat wordt deze optie genegeerd and je voor een apart knoopsgatenpat gekozen hebt.
 
 </Note>
-

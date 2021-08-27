@@ -248,7 +248,7 @@ Now fold back your lining a bit before the edge of the armhole and pin it down.
 Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
 
 ### Step 11: Finish the hem
-Remember that gap we didn't close in step 9? Time to close it.
+Remember that gap we didn't close in step 9? Time to close it. Time to close it.
 
 Use a slipstitch to hand-sew the lining to the fabric and close the hem.
 

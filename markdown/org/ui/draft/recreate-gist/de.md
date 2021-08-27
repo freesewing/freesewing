@@ -1,5 +1,5 @@
 ---
-title: How to recreate a pattern from a Github gist
+title: Wie ein Schnittmuster aus einem Github Gist nachgebildet wird
 ---
 
 Auf dieser Seite kannst du ein Schnittmuster aus einem [Github Gist](https://gist.github.com/) nachbilden.

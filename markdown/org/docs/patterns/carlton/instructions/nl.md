@@ -1,2 +1,2 @@
 
-These instructions are missing, although we have [preliminary instructions for Carlita](/docs/patterns/carlita) which is an almost identical pattern.
+Deze instructies ontbreken, maar we hebben [voorlopige instructies voor Carlita](/docs/patterns/carlita), en dat patroon is bijna identiek.

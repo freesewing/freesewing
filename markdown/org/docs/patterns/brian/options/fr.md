@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
+
 
 <PatternOptions pattern='brian' />
 
@@ -15,7 +15,7 @@ La *bounding box* de la tête de manche est un rectangle de la largeur de la man
 
 ![La tête de manche Brian](sleevecap.svg)
 
-L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2. 
+L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 
 <Note>
 

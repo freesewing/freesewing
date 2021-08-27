@@ -1,3 +1,3 @@
-![Chest ease](./chestease.svg)
+![Brustzugabe](./chestease.svg)
 
-The amount of ease at your chest.
+Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.

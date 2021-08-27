@@ -7,9 +7,9 @@ FreeSewing ist in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/Java
 
 Our websites are built with [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) and kindly hosted by [Netlify](https://www.netlify.com/).
 
-Everything runs in the browser except user data and conversion to PDF. For that, we have built a backend with [Express](https://expressjs.com/) exposing a REST API.
+Alles läuft im Browser, außer Benutzerdaten und die Konvertierung zu PDF. For that, we have built a backend with [Express](https://expressjs.com/) exposing a REST API.
 
-Our code and markdown content is hosted by [Github](https://github.com/freesewing/). We use [Crowdin](https://crowdin.com/) for translations, search is handled by [Algolia](https://www.algolia.com/) and [Bugsnag](https://www.bugsnag.com/) does error handling for us.
+Unser Code und Markdown-Inhalt wird von [Github](https://github.com/freesewing/) gehostet. We use [Crowdin](https://crowdin.com/) for translations, search is handled by [Algolia](https://www.algolia.com/) and [Bugsnag](https://www.bugsnag.com/) does error handling for us.
 
 We are appreciative of these and other projects/companies that allow us to stand on their shoulders.
 

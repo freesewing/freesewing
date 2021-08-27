@@ -6,7 +6,7 @@ bustDartLength:
   title: Bust dart length
   description: Controls how close the bust dart approaches the bust point
 contour:
-  title: Contour
+  title: Contorno
   description: Controls how sharply the extra room for breasts is removed again below the chest
 frontDarts:
   title: Front darts

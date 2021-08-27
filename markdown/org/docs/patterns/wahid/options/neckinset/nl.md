@@ -1,12 +1,11 @@
-![Neck inset](neckinset.svg)
+![Insnede nek](neckinset.svg)
 
-How far do you want your waistcoat to sit away from your collar on your shoulder seam? De standaard is 2 cm.
+Hoe ver wil je dat je gilet aan de schoudernaad weg zit van je kraag? De standaard is 2 cm.
 
 <Note>
 
 ###### Waarom?
 
-De schoudernaad van een gilet is gewoonlijk smaller dan die van je hemd. This option controls how narrow it gets (on the collar side).
+De schoudernaad van een gilet is gewoonlijk smaller dan die van je hemd. Deze optie controleert hoe smal de naad wordt (aan de kant van de kraag).
 
 </Note>
-

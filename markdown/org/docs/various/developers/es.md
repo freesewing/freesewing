@@ -1,5 +1,5 @@
 ---
-title: Developer documentation
+title: Documentación para desarrolladores
 ---
 
 Freesewing.org only hosts documentation for makers.

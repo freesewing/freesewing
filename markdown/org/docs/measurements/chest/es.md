@@ -1,5 +1,5 @@
 ---
-title: Chest circumference
+title: Contorno de pecho
 ---
 
 The **chest circumference** measurement wraps around the fullest part of your chest.

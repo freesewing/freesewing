@@ -9,4 +9,3 @@ Hoe breed je das is aan de punt is een stijlkeuze.
 Maak de breedte van de punt niet smaller dan de breedte van de knoop
 
 </Note>
-

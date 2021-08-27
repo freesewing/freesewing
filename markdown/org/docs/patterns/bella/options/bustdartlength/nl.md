@@ -1,5 +1,5 @@
 ---
-title: Bust dart length
+title: Lengte busteneep
 ---
 
 ![The effect of the bust dart length option on the pattern](sample.png)

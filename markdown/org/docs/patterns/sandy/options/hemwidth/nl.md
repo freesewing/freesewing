@@ -1,4 +1,4 @@
 
 ![Breedte zoom](hemwidth.svg)
 
-The width of the hem.
+De breedte van de zoom.

@@ -1,2 +1,2 @@
-Size of the hem at the bottom of the pants
+Höhe des Saums am unteren Rand der Hose
 

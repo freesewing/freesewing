@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
+
 
 <PatternOptions pattern='breanna' />
 
@@ -15,7 +15,7 @@ The *bounding box* of the sleevecap is a rectangle that is as wide as the sleeve
 
 ![The Breanna sleevecap](sleevecap.svg)
 
-The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2. 
+The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
 
 <Note>
 

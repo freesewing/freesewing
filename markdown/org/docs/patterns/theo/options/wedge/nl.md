@@ -1,2 +1,2 @@
 
-Controls the length of the crossseam.
+Bepaalt de lengte van de kruisnaad.

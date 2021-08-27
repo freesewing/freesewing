@@ -11,4 +11,3 @@ Vous n'avez pas à utiliser du tissu sweat. D'autres options sont disponibles, d
 Ou si vous avez renoncé à l'élégance, vous pouvez opter pour le molleton ou la polaire.
 
 </Note>
-

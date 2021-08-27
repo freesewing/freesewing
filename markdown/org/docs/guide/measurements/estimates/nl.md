@@ -27,4 +27,3 @@ we never exclude anyone based on size or measurement.
 No matter what you throw at us, we will draft a pattern for you, or (our software will) die trying.
 
 </Note>
-

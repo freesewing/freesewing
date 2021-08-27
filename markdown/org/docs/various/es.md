@@ -1,5 +1,5 @@
 ---
-title: Various
+title: Varios
 order: 999
 ---
 

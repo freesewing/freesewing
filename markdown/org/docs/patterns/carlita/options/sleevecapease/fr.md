@@ -1,4 +1,4 @@
-![Sleevecap ease](./sleevecapease.svg)
+![Aisance tête de manche](./sleevecapease.svg)
 
 Combien d'aisance aux têtes de manches voulez-vous ?
 

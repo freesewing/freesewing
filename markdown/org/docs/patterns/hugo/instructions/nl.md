@@ -2,9 +2,9 @@
 
 ###### Documentation under construction
 First the good news: There's a video series that shows how to make Hugo from start to finish.
-Scroll down, it's embedded in this page.
+Scroll wat naar beneden, het staat op deze pagina.
 
-Now the bad news: The written instructions for Hugo are not complete yet.
+Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.
 
 </Note>
 
@@ -18,93 +18,93 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 ## Constructie
 
 
-### Step 1: Prepare the Pocket
+### Stap 1: Bereid de zak voor
 
- - Place the Pocket Facing pieces together with the edges of the Pocket piece, good sides together.
- - Stitch the facing pieces to the pocket with a 1cm seam allowance.  Stitch both the long edge, and the shorter edge at the bottom of the pocket.
- - Carefully trim the seam allowance on the facing pieces.
- - Flip and turn the facing pieces good sides out.  Then hand-roll and press the seams.
- - Topstitch or edge-stitch ½ cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
- - Topstitch another line ½ from the inside upper edge of the facing on each side of the pocket.  This topstitch line will end at the lower edge stitch line.
- - Trim away the excess facing on the inside of the pocket.
- - Press the edges.
+ - Leg het Zakbeleg op de randen van de Zak, met goede kanten op elkaar.
+ - Stik de belegdelen aan de zak met 1 cm naadwaarde.  Stik zowel de lange rand als het kortere randje onderaan de zak.
+ - Knip voorzichtig de naadwaarde bij aan de belegdelen.
+ - Keer de belegdelen naar de goede kant.  Rol de naden op hun plaats en strijk ze plat.
+ - Stik de zakopening op 1/2 cm van de rand door, zowel langs de boven- en de onderrand, om het beleg en de naadwaarde vast te zetten.
+ - Stik de bovenrand nog een keer door, 1/2 cm van het eerste stiksel.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
+ - Knip het overtollige beleg aan de binnenkant van de zak weg.
+ - Strijk de randen.
 
-### Step 2: Attach the Pocket
+### Stap 2: Bevestig de zak
 
- - Match the Pocket to the front, good sides together.
- - The upper pocket seam line is marked by notches on the pattern.  The pocket bottom edge should point towards the neckline.  Align the pocket edges horizontally with the notches on the pattern. Overlap the top of the pocket over the seam line by a little less than 1 cm seam allowance.
- - Stitch the top seam of the Pocket to the Shirt Front.
- - Flip the pocket over the seam line so the bottom now lines up with the edge at the waist.
- - Using a long basting stitch (4mm or longer), baste the pocket into place at the waist, with a ½ cm seam allowance.  This is optional, but keeps the pocket in place while you work on the rest of the shirt.
+ - Leg de zak op het voorpand, met goede kanten op elkaar.
+ - De bovenste naadlijn is aangegeven met merktekens op het patroon.  De onderrand van de zak ligt naar de halslijn gericht.  Leg de randen van de zak gelijk met de merktekens op het patroon. Leg de bovenrand van de zak iets minder dan 1 cm over de naadlijn heen.
+ - Stik de bovenste naad van het zakdeel aan het voorpand.
+ - Leg het zakdeel over de naad heen zodat de onderrand nu gelijk ligt met de onderrand van het voorpand.
+ - Gebruik een lange steeklengte (minstens 4 mm) en een smalle naadwaarde (1/2 cm) om de onderrand van de zak op z'n plaats te houden.  Dit is optioneel, maar houdt de zak op de juiste plek terwijl je de rest van de trui in elkaar zet.
 
-### Step 3: Attach the Sleeves
+### Stap 3: Bevestig de mouwen
 
- - The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
- - Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
- - To finish the seam, you can use one of these methods:
+ - De kant van de mouw met de scherpe punt bovenaan is de achterkant van de mouw.  Dit is ook aangegeven met een dubbel merkteken op het patroon.
+ - Leg de goede kanten van de mouw op de goede kant van het voorpand. Let op dat het merkteken op het voorpand overeenkomt met het merkteken op de mouw. Stik deze naad.  Herhaal voor de andere mouw.
+ - Om de naad af te werken kan je één van deze methodes gebruiken:
 
-   - Use a serger to sew and finish the seam in one step.  This is fast and convenient, but produces a less-refined look.
-   - If you do not have a serger, or would like a more refined look, sew a seam with a straight stitch on your conventional machine. Press the seam allowances apart on the wrong side.  Then, edgestitch along both sides of the seam from the right side.  Finally, trim the excess seam allowance.  This produces a refined look, but takes longer.
-   - Another serger-free option is to sew the seam with a straight stitch. Then stitch together the seam allowances with an additional line of zig-zag alongside the straight stitch.  Finally, trim the excess seam allowance.  This simulates what a serger would do, and is quicker than option (2).
+   - Gebruik een overlock op de naad in één keer te stikken en af te werken.  Dit is snel en makkelijk, maar ziet er minder verfijnd uit.
+   - Als je geen overlock wil, of een iets luxueuzere finish, stik de naad dan met een rechte steek op je gewone naaimachine. Strijk de naadwaarde open aan de verkeerde kant.  Stik dan aan de juiste kant net naast de naad, aan beide kanten.  Knip de extra naadwaarde voorzichtig weg.  Dit ziet er heel netjes uit, maar duurt wat langer.
+   - Een andere optie zonder overlock is de naad met een rechte steek naaien. Daarna werk je de naadwaarde samen af met een zigzagsteek naast de rechte steek.  Knip de extra naadwaarde voorzichtig weg.  Dit imiteert een overlock, en is sneller dan optie (2).
 
- - Match the good sides of the sleeve to the good sides of the back, matching the double notch on back to the double notch on the sleeve seam.  Stitch the seam, then finish the seams as you did for the front.
+ - Leg de goede kanten van de mouw op de goede kant van het achterpand. Let op dat het dubbele merkteken op het achterpand overeenkomt met het dubbele merkteken op de mouw.  Stik de naad, en werk op dezelfde manier af als op het voorpand.
 
-### Step 4: Close the Sides
+### Stap 4: Sluit de zijnaad
 
- - Match the good sides together along sides and sleeves.
- - Stitch the side seam and the sleeves together in one long seam, starting at the waist and going all the way through to the end of the sleeve.  You can stop at the underarm point to change colors for the sleeve, if your design calls for it.
- - Finish the seam allowances as you did in step 2.  If you finish the sleeves with the edgestitch method, you will need to go slow for finishing the sleeve seam, as you will be .sewing in the tunnel..
+ - Leg de randen van de mouwen en het voor- en achterpand met goede kanten op elkaar.
+ - Stik de zijnaad en de mouwen aan elkaar met één lange naad. Begin aan de taille en ga in één keer door tot aan de pols.  Je kan aan de onderarm stoppen om van kleur te veranderen voor de mouw, mocht dat nodig zijn voor je design.
+ - Werk de naadwaarde af zoals in stap 2.  Als je de mouwen met een sierstiksel afwerkt zal je rustig aan moeten doen, aangezien je in een tunnel aan het naaien bent..
 
-### Step 5: Add a Drawstring to the Hood (Optional)
+### Stap 5: Voeg een koordje toe aan je kap (Optioneel)
 
- - Take one matching set of the Hood Side pieces, that you intend to feature on the outside of the finished hoodie.
- - Mark the place for a hole on each side hood piece, along the rim.
- - The hole should be located about 1.5-2cm from the edge of the fabric.  This is to allow for the seam allowance, as well as for the hood
- - The hole should be located above the notch on the hood rim.  The notch shows where the sides of the hood overlap at center front , so the cord should exit above that point.
- - You can consider using the buttonhole feature of your sewing machine, if it has one, to sew a buttonhole at this point.
- - Cut open a hole at the points you marked.
- - After the hood is prepared, you can run a cord around the front edge of the hood.  Sneaker shoelaces work well for this.
+ - Neem een set van de zijkanten van de kap, de twee die je aan de buitenkant van je hoodie wil.
+ - Markeer op elke kant een plek voor een gat, langs de rand van de kap.
+ - Het gat komt op 1.5 à 2 cm van de rand van de stof.  Dit is om genoeg ruimte te laten voor de naadwaarde en de kap zelf
+ - Het gat zit boven het merkteken op de rand van de kap.  Het merkteken toont waar de kap vooraan overlapt, dus het koord zou daarboven moeten zitten.
+ - Als je naaimachine knoopsgaten naait kan je dit gebruiken om een klein knoopsgat te maken op de markering.
+ - Knip het gat open op de markering die je gemaakt hebt.
+ - Als je de kap verder hebt afgewerkt kan je een koordje door de rand van de kap halen.  Sneakerveters werken hier goed voor.
 
 
-### Step 6: Prepare Inside and Outside Hood
+### Stap 6: Bereid binnen-en buitenkant kap voor
 
-> Follow this set of steps twice, once for the outer hood and again for the inside hood.
+> Volg deze stappen twee keer, een keer voor de binnenste en een keer voor de buitenste kap.
 
- - Run a Center Panel piece around one outer edge of the Hood Side, good sides together, and pin in place.  Stitch.
- - Pin the Center Panel piece around the remaining outer edge of the hood, good sides together. Stitch.
- - Press the seam allowances, and finish them as in Step 2.  Trim the seam allowances.
+ - Leg een middendeel van de kap langs de buitenste rand van een zijkant, met goede kanten op elkaar, en speld vast.  Stitch.
+ - Speld het middendeel op de buitenste rand van de andere zijkant, met goede kanten op elkaar. Stitch.
+ - Strijk de naden, en werk ze af op dezelfde manier als in stap 2.  Knip de naadwaarde bij.
 
-### Step 7: Join Inside and Outside Hood
+### Stap 7: Bevestig de binnenste kap aan de buitenste kap
 
- - With both hoods inside out, put them on top of each other, good sides together.
- - Align the center panel seams and pin.
- - Stitch along the outer edge of the hood with a 1cm seam allowance.  Do not trim the seam allowance.
- - Flip the hood pieces right side out, then press the outer edge flat.
- - Topstitch along the edge of the hood, about 1.5-2 cm from the edge.  Ensure that you go beyond the seam allowance, and that it is not caught in this line of stitching. This creates a decorative rim.  The enclosed seam allowance helps make the rim a bit poofy.
- - To close the hood, serge together the bottom layers along the neckline.  If you do not have a serger, use a zig-zag stitch.
- - (Optional) If you added holes for a drawstring, you can thread the drawstring now.
+ - Leg de ene kap over de andere heen, met goede kanten op elkaar.
+ - Leg de naden van de middenste panelen op elkaar en speld vast.
+ - Stik langs de buitenrand van de kap met 1 cm naadwaarde.  Knip de naadwaarde niet bij.
+ - Keer de kap naar de goede kant en strijk de buitenrand plat.
+ - Stik langs de rand van de kap, ongeveer 1,5 à 2 cm van de rand.  Zorg dat je zeker naast de naadwaarde stikt, en dat die niet mee vastgestikt wordt. Dit zorge voor een decoratieve rand.  De naadwaarde in de rand geeft alles wat extra volume.
+ - Om de kap te sluiten lock je de lagen samen langs de halslijn.  Als je geen overlock hebt, gebruik dan een zigzagsteek.
+ - (Optioneel) Als je gaten hebt gemaakt voor een koordje kan je dit er nu doorheen halen.
 
-### Step 8: Attach the Hood
+### Stap 8: Bevestig de kap
 
- - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
- - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
- - Working around to the front, pin the hood to the neckline.
- - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
- - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
- - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
- - Fold the binding over the raw edge of the neckline, and pin.
- - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
- - Trim excess binding from the inside.
+ - Leg de uiteindes van de halsbies met goede kanten op elkaar en stik vast met 1 cm naadwaarde om een ronde band te vormen.
+ - Begin aan de achterkant, en leg de goede kant van de kap op de goede kant van de halslijn. Leg het middendeel gelijk met de achterkant van de halslijn.
+ - Speld de kap aan de halslijn, van achter naar voor.
+ - Leg de goede kant van de halsbies tegen de buitenste halslijn (dit wordt de binnenkant van de kap). Speld de bies aan de kap.
+ - Lock of zigzag alle lagen samen met 1 cm naadwaarde.  Controleer of je overal alle lagen meegestikt hebt.
+ - Verstevig de punten waar de halslijn de mouwnaden kruist.  Gebruik een rechte steek op de naaimachine om deze naden te stabiliseren.
+ - Vouw de bies over de onafgewerkte rand van de halslijn en speld vast.
+ - Stik de halslijn langs de goede kant op 1 cm van de naad door om de bies vast te zetten.  Dit zou moeten lukken met een rechte steek zolang de halsopening redelijk los is als je de trui past.  Als de opening klein is, gebruik dan een zigzagsteek.
+ - Knip de overtollige bies weg aan de binnenkant.
 
-### Step 9: Attach the Cuffs and Waistband
+### Stap 9: Bevestig de manchetten en tailleband
 
- - If the ribbing is light or thin, you can cut the cuff and waistband pieces twice as high, then double-fold them.
- - Place good sides together on the cuffs and waistband pieces, then sew a 1cm seam allowance along the short side to make them into circular bands.
- - Fold along the long side to make cuffs and waistband into double-thick tubes. Sew or serge along the open edges to close.
- - Align the seam on the cuff to the seam on the sleeve.  Pin, good sides together.
- - Pin the opposite side.
- - Serge (or zig-zag stitch) the ribbing to the cuff, stretching gently until the ribbing and cuff are the same length.  Remove pins before they enter the serger.
- - Trim the bottom edge of the pocket if it extends past the waistband edge.
- - Ensure the ribbing is gathered as uniformly as possible around the waistband.
- - Serge or zig-zag the waistband, again gently stretching untill the ribbing and waistband are the same length.  Stitch with the hoodie on top so you can see it gets caught in the seam.
- - Topstitch the lower pocket edges to the body of the shirt to anchor the bottom of the pocket.
+ - Als je boordstof licht of dun is kan je de manchetten en tailleband twee keer zo hoog knippen en dan dubbel plooien.
+ - Leg de manchetten en tailleband met de goede kanten op elkaar en stik dan op 1 cm van de korte rand om er gesloten cirkels van te maken.
+ - Plooi dubbel langs de lange rand om de manchetten en tailleband te vormen. Stik of lock langs de open randen om ze te sluiten.
+ - Leg de naad van de manchet gelijk met de naad van de mouw.  Speld, met de goede kanten samen.
+ - Speld de andere kant.
+ - Lock (of zigzag) de boordstof aan de mouw. Rek de boordstof zachtjes uit tot de manchet en mouwopening even lang zijn.  Verwijder spelden voor ze in de overlock terechtkomen.
+ - Knip de onderrand van de zak bij als die langer is dan de onderrand van de trui.
+ - Let op dat de tailleband gelijkmatig verdeeld is over de onderrand van de trui.
+ - Lock of zigzag de tailleband, en rek deze ook zachtjes uit zodat de boord en trui even lang zijn.  Stik met de hoodie bovenaan zodat je kan zien of alle lagen mee in de naad zitten.
+ - Stik de onderste randen van de zak aan het voorpand om ze definitief te bevestigen.

@@ -1,4 +1,4 @@
-![Collar ease](collarease.svg)
+![Facilidad de cuello](collarease.svg)
 
 How much ease do you want for your collar?
 

@@ -1,10 +1,9 @@
-![Collar bend](collarbend.svg)
+![Kromming kraag](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+In hoeverre de kraag (aan de kant van de kraagstaander) gebogen is in plaats van recht.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Dit beïnvloedt hoe de kraag tegen de kraagstaander ligt.
 
 </Note>
-

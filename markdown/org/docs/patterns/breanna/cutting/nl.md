@@ -14,4 +14,3 @@ Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee
 Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
-

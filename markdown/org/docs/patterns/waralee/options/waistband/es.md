@@ -1,2 +1,2 @@
-Size of the waist band
+Tamaño de la banda de cintura
 

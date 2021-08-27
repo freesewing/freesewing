@@ -1,4 +1,4 @@
 
-![Hips ease](hipsease.svg)
+![Zugabe Hüfte](hipsease.svg)
 
-The amount of ease at your hips.
+Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften.

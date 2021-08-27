@@ -1,4 +1,4 @@
-### Step 1: Fuse interfacing
+### Étape 1 : Thermocoller l'entoilage
 
 #### Press interfacing to pocket welts
 

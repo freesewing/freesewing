@@ -38,6 +38,3 @@ When you cut them individually, remember that they need to be mirror images of e
 </Warning>
 
 
-
-
-

@@ -8,4 +8,3 @@ Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest
 While stretch is not required, it does make sense for underwear. That being said, you can make this in a non-stretch, just make sure pick loose or casual fit.
 
 </Note>
-

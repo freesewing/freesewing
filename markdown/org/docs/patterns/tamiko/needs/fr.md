@@ -1,5 +1,5 @@
 To make Tamiko, you will need the following:
 
 - Fourniture de base pour la couture
-- About 1 meter of a suitable fabric ([see Fabric options](/docs/patterns/tamiko/fabric))
+- Environ 1 m d'un tissu adapté ([voir Options de tissu](/docs/patterns/tamiko/fabric))
 

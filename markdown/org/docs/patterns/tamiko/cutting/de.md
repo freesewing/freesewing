@@ -9,5 +9,3 @@ Cut out the armhole, but leave seam allowance
 
 </Note>
 
-
-

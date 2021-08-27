@@ -1,5 +1,5 @@
 ---
-title: Shoulder slope
+title: Inclinación de hombro
 ---
 
 The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
@@ -20,4 +20,3 @@ It won't show up for casual garments, and for formal wear, it's better to add
 asymmetric shoulder padding, rather than create an asymmetric pattern.
 
 </Note>
-

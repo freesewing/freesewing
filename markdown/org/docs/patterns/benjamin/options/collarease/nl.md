@@ -1,4 +1,4 @@
-![How much ease do you use for your collar?](collarease.svg)
+![Hoeveel overwijdte heeft je kraag?](collarease.svg)
 
 De halsomtrek gebruiken is één stap naar een goed passende vlinderdas. De tweede stap is kijken naar hoeveel overwijdte je hemdskragen gewoonlijk hebben. Samen bepalen ze hoe lang je vlinderdas wordt.
 

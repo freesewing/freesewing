@@ -1,5 +1,5 @@
 
-## Step 1: Close the shoulder seams
+## Stap 1: Sluit de schoudernaden
 
 ![Sluit de schoudernaden](step01.svg)
 
@@ -19,8 +19,8 @@ Optional: In a drapier knit, you may choose to reinforce the shoulder seams by s
 - Place a sleeve on top of the front and back, with the good side down.
 - Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
 - Speld de mouw op z'n plaats langs het hele armsgat. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
-- Sew/serge your pinned sleeve in place.
-- Repeat for the other sleeve.
+- Stik/lock de gespelde mouw op z'n plaats.
+- Herhaal voor de andere mouw.
 
 ## Step 3: Sew knit binding to the neck opening.
 
@@ -32,7 +32,7 @@ A more extensive how-to on knit binding can be found in the [Aaron Instuctions](
 
 </Tip>
 
-- We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There’s a difference, and it’s explained [here](/docs/sewing/knit-binding)).
+- We gaan de armsgaten en nekopening afwerken met een [jersey bies](/docs/sewing/knit-binding)(Pas op: geen jersey band. There’s a difference, and it’s explained [here](/docs/sewing/knit-binding)).
 
 <Note>
 This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
@@ -76,11 +76,11 @@ This is the most complex step in making the Teagan T-shirt, but it just requires
 ![Sew down binding](step03e.svg)
 
 - Fold your binding fabric around the fabric of your T-shirt to the back. This is how we’ll sew it down.
-- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. If we were to fold back the fabric at the back too, it would only add bulk.
+- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. Als we de bies aan de achterkant ook zouden plooien zou dit alleen maar bulk toevoegen.
 - Now you’ll sew the binding down. Stik langs de goede kant van de stof langs je bies, langs de aanzetnaad (en zo ver mogelijk van de rand), zorg zeker dat je het stuk bies dat je naar achter geplooid hebt mee vaststikt.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Als je een coverlock hebt is dit ook een perfect moment om die te gebruiken.
 </Note>
 
 - You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
@@ -97,14 +97,14 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 
 </Note>
 
-## Step 4: Close the side seams and sleeves
+## Stap 4: Sluit de zijnaden en mouwen
 
 ![Close the side seams and sleeves](step04.svg)
 
 - Fold your Teagan T-shirt double at the shoulder seams with good sides together.
-- Align the side seams and sleeves and pin them together.
+- Leg de zijnaden en mouwen gelijk en speld ze samen.
 - Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
-- Repeat on the other side.
+- Herhaal aan de andere kant.
 
 ## Step 5: Finish hem and sleeves
 

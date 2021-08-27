@@ -1,5 +1,5 @@
 ---
-title: Bust front
+title: Buste voor
 ---
 
 The **bust front** is the front part of your chest circumference.

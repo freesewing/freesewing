@@ -10,4 +10,3 @@ Op deze manier zal je patroon perfect doorlopen.
 Dit is alleen van toepassing op een klassiek knopenpat. Dus als je voor het naadloze knopenpat koos wordt dit genegeerd.
 
 </Note>
-

@@ -1,13 +1,13 @@
  - **Buitenstof**
-   - Cut **1 tip**
-   - Cut **1 tail**
+   - Knip **1 punt**
+   - Knip **1 staart**
  - **Voering**
-   - Cut **1 lining tip**
-   - Cut **1 lining tail**
-   - Cut **1 loop**
+   - Knip **1 voering punt**
+   - Knip **1 voering staart**
+   - Knip **1 lus**
  - **Tussenvoering**
-   - Cut **1 interfacing tip**
-   - Cut **1 interfacing tail**
+   - Knip **1 tussenvoering punt**
+   - Knip **1 tussenvoering staart**
 
 <Warning>
 
@@ -34,8 +34,5 @@ Dit gezegd zijnde zijn veel dassen schuin van draad geknipt, aangezien dit het m
 Als dit allemaal erg verwarrend vindt kan ik je aanraden onze pagina over <a href="/en/docs/sewing/fabric-grain">Draadrichting</a> eens te bekijken).
 
 </Tip>
-
-
-
 
 

@@ -11,5 +11,3 @@ Dit heeft invloed op de stijl van je gilet.
 
 </Note>
 
-
-

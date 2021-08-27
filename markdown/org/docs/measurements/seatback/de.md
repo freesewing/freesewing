@@ -1,5 +1,5 @@
 ---
-title: Seat back
+title: Gesäßweite hinten
 ---
 
 The **seat back** is the back portion of your seat circumference.

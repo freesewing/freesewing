@@ -9,4 +9,3 @@ You can make BIG bow ties, or small ones. This option allows you to change the v
 This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
-

@@ -2,7 +2,7 @@
 title: Onderbuste
 ---
 
-The **underbust** measurement is the circumference of your chest without taking your breasts into account.
+De **onderbuste** maat is de omtrek van je borstkas zonder rekening te houden met je borsten.
 
 To measure your **underbust**, wrap the tape measure around your chest just below your breasts, where your bra band sits.
 

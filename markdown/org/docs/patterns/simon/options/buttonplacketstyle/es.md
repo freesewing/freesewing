@@ -1,4 +1,4 @@
-![Button placket style](buttonplacketstyle.svg)
+![Estilo de la vista de los botones](buttonplacketstyle.svg)
 
 Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
 
@@ -13,6 +13,4 @@ Seamless is less work, and it looks great.
 As seamless is only possible on a *cut-on* placket, this option is ignored if you choose a seperate button placket.
 
 </Note>
-
-
 

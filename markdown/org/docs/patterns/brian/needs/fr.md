@@ -9,5 +9,3 @@ Les patrons de base ne sont donc généralement pas utilisés tels quels, mais p
 
 </Note>
 
-
-

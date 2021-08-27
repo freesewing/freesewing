@@ -1,7 +1,7 @@
 ---
-title: Language
+title: Taal
 ---
 
-This determines the language used on your pattern.
+Dit bepaalt de taal die op je patroon gebruikt wordt.
 
-By default, we use the same language as you're using on the website, but if for some reason you want a pattern in a different language, this is where to configure that.
+De standaardttaal is de taal die je op de website gebruikt, maar als je om één of andere reden je patroon in een andere taal wil kan je dat hier aanpassen.

@@ -1,22 +1,22 @@
  - **Buitenstof**
-   - Cut **1 front left**
-   - Cut **1 button placket** (only if you opted for a separate button placket)
-   - Cut **1 front right**
-   - Cut **1 buttonhole placket** (only if you opted for a separate buttonhole placket)
-   - Cut **1 back**
-   - Cut **1 collar**
-   - Cut **1 undercollar**
-   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
-   - Cut **2 sleeve(s)**
-   - Cut **2 collar stand(s)**
-   - Cut **2 sleeve placket underlap(s)**
-   - Cut **2 sleeve placket overlap(s)**
-   - Cut **4 cuff(s)**
+   - Knip **1 linkervoorpand**
+   - Knip **1 knopenpat** (enkel als je voor een apart knopenpat koos)
+   - Knip **1 rechtervoorpand**
+   - Knip **1 knoopsgatenpat** (enkel als je voor een apart knoopsgatenpat koos)
+   - Knip **1 rugpand**
+   - Knip **1 kraag**
+   - Knip **1 onderkraag**
+   - Knip **2 schouderpassen** of **4 schouderpassen** als je voor een gesplitste schouderpas koos
+   - Knip **2 mouwen**
+   - Knip**2 kraagstaanders**
+   - Knip **2 onderkant mouwsplit**
+   - Knip **2 overlap mouwsplit**
+   - Knip **4 manchetten**
  - **Kleefbare tussenvoering**
-   - Cut **1 collar**
-   - Cut **1 undercollar**
-   - Cut **2 collar stand(s)**
-   - Cut **2 cuff(s)**
+   - Knip **1 kraag**
+   - Knip **1 onderkraag**
+   - Knip**2 kraagstaanders**
+   - Knip **2 manchetten**
 
 <Note>
 
@@ -32,12 +32,9 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 ###### Caveats
 
  - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Zodoende hebben deze naden extra naadwaarde. When cutting out these pieces, you **must** include this extra seam allowance.
- - The cuff guard and cuff placket have no seam allowance. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
+ - De mouwsplitreep en mouwsplitbies hebben geen naadwaarde. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
  - Do not cut out the darts in the **back** piece. Je moet ze markeren, maar niet uitknippen.
 
 </Warning>
-
-
-
 
 

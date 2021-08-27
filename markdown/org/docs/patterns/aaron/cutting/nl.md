@@ -1,7 +1,7 @@
 
- - Cut **1 back** on the fold
- - Cut **1 front** on the fold
- - Cut **3 strips** for neck opening and armhole binding
+ - Knip **1 rugpand** aan de stofvouw
+ - Knip **1 voorpand** aan de stofvouw
+ - Knip **3 stroken** voor de biezen aan de halsopening en armsgaten
 
 <Warning>
 
@@ -12,4 +12,3 @@
  - There is extra hem allowance at the hem
 
 </Warning>
-

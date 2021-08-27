@@ -10,7 +10,7 @@ If you're looking for our facemask pattern, follow this link:
  - [Face mask pattern and instructions](/blog/facemask-frenzy)
 
 
-##### Contributor calls
+##### Gesprekken met bijdragers
 
 Recently, we started organizing contributor calls. Anybody with an interest in FreeSewing is welcome to join.
 

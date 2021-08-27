@@ -14,4 +14,3 @@ Par défaut, le dernier bouton est placé 1 cm au dessus de votre ceinture, mais
 Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez. Vous devez entrer ici une valeur négative, en vous assurant qu'elle est dans le bonus de longueur disponible.
 
 </Note>
-

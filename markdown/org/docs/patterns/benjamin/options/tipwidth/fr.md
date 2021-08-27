@@ -9,4 +9,3 @@ Vous pouvez faire des nœud papillon hauts ou fins. Cette option vous permet de 
 This option is ignored with the Square bow tie option. Les nœud papillon carrés sont aussi larges que la largeur du nœud.
 
 </Note>
-

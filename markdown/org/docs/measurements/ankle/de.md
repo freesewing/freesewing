@@ -1,5 +1,5 @@
 ---
-title: Knöchelumfang
+title: Fesselumfang
 ---
 
 Der **Knöchelumfang** ist der Umfang deines Knöchels.

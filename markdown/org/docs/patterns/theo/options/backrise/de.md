@@ -1,4 +1,4 @@
-![Back rise](backrise.svg)
+![Hintere Anstieg](backrise.svg)
 
 This raises the waist of your trousers at the back.
 
@@ -12,4 +12,3 @@ This option allows you to mitigate that, without dramatic changes to the pattern
 It allows you to simply raise the back of the trousers.
 
 </Note>
-

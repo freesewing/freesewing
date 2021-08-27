@@ -3,7 +3,9 @@
 
 Une la costura curvada en el centro de nuestra mascarilla colocando los *derechos juntos* y cosiéndolos.
 
-![Une la costura central](step1.svg)<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
+![Une la costura central](step1.svg)
+
+<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
 
 ### Paso 2 (opcional): Plancha la costura central
 
@@ -16,7 +18,9 @@ Así que si te da igual, siéntete libre de saltártelo.
 
 Plancha la costura en la costura central abierta para que quede bonita y plana.
 
-Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la plancha desde al lado, y después hacer la segunda mitad desde el otro. Alternatively, you can use a tailor's ham or cushion to press.<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
+Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la plancha desde al lado, y después hacer la segunda mitad desde el otro. Alternatively, you can use a tailor's ham or cushion to press.
+
+<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
 
 ### Paso 3: Cosa la tela exterior al forro y una las cintas
 

@@ -1,5 +1,5 @@
 ---
-title: Waist reduction
+title: Taillenreduzierung
 ---
 
 Reduces the waist for a more snug fit.

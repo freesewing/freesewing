@@ -1,10 +1,9 @@
-![Cuff button rows](cuffbuttonrows.svg)
+![Rijen knopen op manchet](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Wil je een enkele knoop op je manchet, of twee?
 
 <Note>
 
 Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manchet gekozen hebt wordt dit genegeerd.
 
 </Note>
-

@@ -1,5 +1,5 @@
 ---
-title: Mag ik FreeSewing-patronen gebruiken voor commerciële doeleinden?
+title: Mag ik FreeSewing patronen voor commerciële doeleinden gebruiken?
 ---
 
 Ja, dat mag. Open Source is een developmentmodel, geen bedrijfsmodel.

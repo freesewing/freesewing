@@ -1,4 +1,4 @@
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Anchura del pliegue de la vista de los ojales](buttonholeplacketfoldwidth.svg)
 
 The width of the fold on a classic style buttonhole placket.
 
@@ -10,4 +10,3 @@ This way, your pattern will match perfectly.
 This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
 
 </Note>
-

@@ -1,8 +1,10 @@
-![Biceps ease](./bicepsease.svg)
+![Holgura del bíceps](./bicepsease.svg)
 
 How much do you want the sleeve to be wider than your upperarm circumference?
 
 <Note>
+
+###### What's the point?
 
 ###### What's the point?
 
@@ -17,8 +19,5 @@ If your upper arms are more skinny, you'll want some more ease here to smooth th
 We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
 
 </Warning>
-
-
-
 
 

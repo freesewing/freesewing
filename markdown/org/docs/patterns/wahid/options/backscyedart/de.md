@@ -1,4 +1,4 @@
-![Back scye dart](backscyedart.svg)
+![Rückwärtige Armlochabnäher](backscyedart.svg)
 
 This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
 
@@ -12,4 +12,3 @@ Given that there is no sleeve, a gaping armhole is particularly unsightly.
 While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
 
 </Note>
-

@@ -2,7 +2,7 @@
 
 How much room do you want at the chest?
 
-Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
 
 > Given that an undershirt has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
 

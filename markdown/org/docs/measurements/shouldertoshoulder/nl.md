@@ -2,6 +2,6 @@
 title: Schouder tot schouder
 ---
 
-The **shoulder to shoulder** measurement runs from the tip of your shoulder on one side across your back to the tip of your other shoulder.
+De afmeting **schouder tot schouder** loopt van de tip van je ene schouder, langs je rug, naar de top van de andere.
 
-To measure your **shoulder to shoulder** find the edge of your shoulder where on a good fitting shirt the shoulder seam would sit. Daarna meet je vanaf dat punt over je rug heen tot aan hetzelfde punt aan de andere kant.
+Om je **schouder tot schouder** te meten zoek je het punt op je schouder waar de schoudernaad zou zitten op een goed passend hemd. Daarna meet je vanaf dat punt over je rug heen tot aan hetzelfde punt aan de andere kant.

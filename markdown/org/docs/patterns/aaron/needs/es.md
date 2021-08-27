@@ -1,17 +1,16 @@
 
 To make Aaron, you will need the following:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
 - About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Una remalladora es interesante, pero opcional
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+Como con todas las telas elásticas, una remalladora te hará la vida más fácil.
 
-If you do not have one of those, don't despair. You don't really need it. 
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Si no tienes una no te desesperes. Realmente no la necesitas. 
+Debido a que las costuras laterales y costuras de hombro no se estiran, puedes coser con una puntada recta normal.
 
 </Note>
-

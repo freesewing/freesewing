@@ -1,4 +1,4 @@
-![Back inset](backinset.svg)
+![Rückseite Ausschnitt](backinset.svg)
 
 How far do you want your waistcoat armhole to curve inwards on the back side?
 
@@ -10,6 +10,4 @@ The armhole of your waistcoat can curve further inward, given that there is no s
 This influences the style of the waistcoat.
 
 </Note>
-
-
 

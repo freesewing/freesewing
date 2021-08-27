@@ -1,5 +1,5 @@
 ---
-title: Language
+title: Idioma
 ---
 
 This determines the language used on your pattern.

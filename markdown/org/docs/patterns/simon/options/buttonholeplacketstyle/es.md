@@ -1,4 +1,4 @@
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Estilo de la vista de los ojales](buttonholeplacketstyle.svg)
 
 Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
 
@@ -13,4 +13,3 @@ Seamless is less work, and it looks great.
 As seamless is only possible on a *cut-on* placket, this option is ignored if you choose a seperate buttonhole placket.
 
 </Note>
-

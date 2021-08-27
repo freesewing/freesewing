@@ -1,5 +1,5 @@
 
- - Cut **1 front** on the fold
- - Cut **1 pocket** on the fold
+ - Knip **1 voorpand** aan de stofvouw
+ - Knip **1 zakdeel** aan de stofvouw
  - Cut **2 straps** 
 

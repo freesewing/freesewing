@@ -1,6 +1,6 @@
 
- - Cut **1 back** on the fold
- - Cut **1 front** on the fold
+ - Corta **1 trasero** al lomo
+ - Corta **1 delantero** al lomo
  - Cut **3 strips** for neck opening and armhole binding
 
 <Warning>
@@ -12,4 +12,3 @@
  - There is extra hem allowance at the hem
 
 </Warning>
-

@@ -1,7 +1,7 @@
 Pour le haut Brian, vous aurez besoin de :
 
  - 1 devant
- - 1 Back
+ - 1 dos
  - 2 manches
 
 <Note>
@@ -14,4 +14,3 @@ Ils sont parfois aussi appelés patrons de base, bien que les puristes soutienne
 Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>
-

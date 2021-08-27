@@ -9,4 +9,3 @@ Du kannst GROSSE Fliegen machen, oder kleine. Diese Option erlaubt es dir, die v
 Diese Option wird ignoriert beim rechteckigem Fliegen-Stil. Rechteckige Fliegen sind so breit wie die Knotenbreite.
 
 </Note>
-

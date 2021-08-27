@@ -1,4 +1,4 @@
 
-![Pocket radius](pocketradius.svg)
+![Radio de bolsillo](pocketradius.svg)
 
 Controls the radius with which the pockets are rounded at the bottom.

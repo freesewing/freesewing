@@ -1,5 +1,5 @@
 ---
-title: Upper leg circumference
+title: Contorno de alto de pierna
 ---
 
 The **upper leg circumference** is the measurement around your leg, near the top of your leg.
@@ -13,4 +13,3 @@ You should measure this a bit below your crotch, refer to the illustration for g
 This measurements is also used as **a vertical reference** to determine the vertical space in which to draft the seat/crotch of trousers. As such, the vertical location of this measurement is important.
 
 </Tip>
-

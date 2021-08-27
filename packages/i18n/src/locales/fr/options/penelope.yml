@@ -3,10 +3,10 @@ backDartDepthFactor:
   title: Profondeur de la pince dos
   description: Jusqu'où va la pince arrière depuis la ceinture, facteur de la mensuration "Hauteur taille bassin".
 backVent:
-  title: Fente dos
+  title: Fentes arrière
   description: Ajouter une fente au dos de la jupe.
 backVentLength:
-  title: Longueur de la fente arrière
+  title: Longueur de fente arrière
   description: Longueur de la fente dos par rapport à la longueur de la jupe.
 dartToSideSeamFactor:
   title: Pince de côté

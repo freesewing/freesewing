@@ -10,4 +10,3 @@ If you're not sure what to pick, best is to take the ribbing you are going to us
 you need to stretch out to get to 10 cm with a *good* stretch.
 
 </Note>
-

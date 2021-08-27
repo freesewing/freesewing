@@ -1,5 +1,5 @@
 ---
-title: Wrist circumference
+title: Contorno de muñeca
 ---
 
 The **wrist circumference** measurement is the circumference of your wrist.

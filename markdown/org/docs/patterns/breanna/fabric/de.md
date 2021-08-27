@@ -9,5 +9,3 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 </Note>
 
-
-

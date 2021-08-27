@@ -1,3 +1,3 @@
 
-Increasing this will make the front cutaway stay closer to the center front
+Aumentar esto hará que el corte frontal permanezca más cerca del centro delantero
 

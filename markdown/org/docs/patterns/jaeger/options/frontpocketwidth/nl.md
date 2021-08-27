@@ -1,4 +1,4 @@
 
 ![Breedte voorzak](frontpocketwidth.svg)
 
-The front of the chest pocket, as a factor of your chest circumference.
+De breedte van de voorzak, als een factor van je borstomtrek.

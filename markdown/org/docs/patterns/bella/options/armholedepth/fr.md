@@ -1,5 +1,5 @@
 ---
-title: Armhole depth
+title: Profondeur d'emmanchure
 ---
 
 ![The effect of the armhole depth option on the pattern](sample.png)

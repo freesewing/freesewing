@@ -1,2 +1,2 @@
-Whether to include a front pocket or not
+S'il faut inclure une poche avant ou non
 

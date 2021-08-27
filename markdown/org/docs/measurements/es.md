@@ -1,5 +1,5 @@
 ---
-title: Measurements
+title: Medidas
 order: 300
 ---
 

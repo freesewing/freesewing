@@ -89,7 +89,7 @@ Fold the seam allowance of both pieces inward so that the seam allowance is hidd
 
 Topstitch another seam next to the edgestitched seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
-![First channel on the back](etape 7)
+![![First channel on the back](etape 7)](step07.png)
 
 Mark the locations of your grommets. (Don’t insert them yet. Just mark the fabric where you’ll place them, and make sure you’re creating a strip suited to the width of your grommets.)
 

@@ -6,7 +6,7 @@ coverlock:
   term: coverlock
   description: "See <a href='/docs/sewing/coverlock/'>Coverlock</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 cutting:
-  term: cutting
+  term: corte
   description: "See <a href='/docs/sewing/cutting/'>Cutting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 darts:
   term: darts
@@ -45,7 +45,7 @@ rayon:
   term: rayon
   description: "See <a href='/docs/sewing/rayon/'>Rayon</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 sa:
-  term: seam allowance
+  term: margen de costura
   description: "See <a href='/docs/sewing/seam-allowance/'>Seam allowance</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 serger:
   term: serger
@@ -66,14 +66,14 @@ freesewing:
   term: freesewing
   description: '<b>FreeSewing</b> is an open source platform for made-to-measure sewing patterns'
 patternOptions:
-  term: pattern options
+  term: opciones del patrón
   description: 'The <b>pattern options</b> allow you to customize the design of the pattern'
 draftSettings:
-  term: draft settings
+  term: ajustes del boceto
   description: 'The <b>draft settings</b> give you control of how a pattern is generated'
 patrons:
   term: patrons
-  description: 'Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community.'
+  description: 'Los patrocinadores apoyan a Freesewing financieramente. Son partidarios leales que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.'
 msf:
   term: msf
   description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"

@@ -11,4 +11,3 @@ Je moet geen sweaterstof gebruiken. Er zijn andere opties, van überhip neopreen
 Of ga voor fleece als je alle pretentie opgegeven hebt.
 
 </Note>
-

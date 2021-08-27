@@ -1,2 +1,2 @@
-Size of the hem at the bottom of the pants
+De afmeting van de zoom onderaan de broek
 

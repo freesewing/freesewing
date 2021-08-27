@@ -10,10 +10,10 @@ Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Bewe
 
 Der Übersicht wegen haben wir dies in vier verschiedene Rollen aufgeteilt:
 
- - Für **Besucher unserer Website**speichern wir **[Besucherdaten](/docs/various/privacy/visitor/)**
- - Für **Abonnenten unseres Newsletters**speichern wir **[Abonnentendaten](/docs/various/privacy/subscriber/)**
- - Für **Benutzer mit einem Account** auf unserer Website speichern wir **[Accountdaten](/docs/various/privacy/account/)**
- - Für **Benutzer mit einem Account, der Personen enthält**, speichern wir **[Personendaten](/docs/various/privacy/people/)**
+ - Für **Besucher unserer Website**speichern wir **[Besucherdaten][v]**
+ - Für **Abonnenten unseres Newsletters**speichern wir **[Abonnentendaten][s]**
+ - Für **Benutzer mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
+ - Für **Benutzer mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
 
 Hier sind die relevanten Abschnitte:
 
@@ -36,10 +36,18 @@ Bei Fragen zu dieser Datenschutzerklärung kannst du dich an Joost De Cock unter
 
 Diese Erklärung kann gelegentlich aktualisiert werden. Wir werden dies bei **Letztes Update** am oberen Rand dieses Dokuments angeben.
 
-Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments ist [auf GitHub](https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy) verfügbar
+Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments ist [auf GitHub][1] verfügbar
 
 ##### Siehe auch
 
- - [Deine Rechte](/docs/various/right/)
- - [Deine Einwilligungen](/account/actions/consent/)
+ - [Deine Rechte][2]
+ - [Deine Einwilligungen][3]
+
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
+[v]: /docs/various/privacy/visitor/
+[s]: /docs/various/privacy/subscriber/
+[a]: /docs/various/privacy/account/
+[p]: /docs/various/privacy/people/
 

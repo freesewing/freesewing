@@ -1,2 +1,2 @@
-Whether to include a front pocket or not
+Of een voorzak moet worden toegevoegd of niet
 

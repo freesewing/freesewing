@@ -1,5 +1,5 @@
 ---
-title: Your patterns
+title: Jouw patronen
 order: 400
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Privacy notice
+title: Aviso de Privacidad
 ---
 
 **Last update**: 8 January 2021
@@ -40,6 +40,9 @@ A more comprehensive overview of this document's history is [available on GitHub
 
 ##### See also
 
- - [Your rights](/docs/various/right/)
- - [Your consent](/account/actions/consent/)
+ - [Tus derechos][2]
+ - [Your consent][3]
+
+[2]: /docs/various/right/
+[3]: /account/actions/consent/
 

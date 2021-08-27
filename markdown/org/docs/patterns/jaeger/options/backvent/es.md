@@ -1,5 +1,5 @@
 
-![Back vent](backvent.svg)
+![Abertura trasera](backvent.svg)
 
 How do you like your back vents?
 

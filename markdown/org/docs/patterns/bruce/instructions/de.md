@@ -81,6 +81,8 @@ Serge the sides of the tusks to close the fronts dart. For best results, start a
 
 ###### Keep that seam away from my ...
 
+###### Keep that seam away from my ...
+
 Alternatively, sew the darts on each piece individually so that both seams are folded inside.
 Arguably, not having an exposed seam in this area is more comfortable for the wearer.
 
@@ -190,6 +192,6 @@ While sewing, stretch elastic and fabric together between each set of pins, remo
 </Tip>
 
 ### Step 15: Trim and clean up
-![Yay! You've made it](step15.png)
+![Juhuu! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.

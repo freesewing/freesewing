@@ -2,7 +2,7 @@ Ursula consists of a front, a back, and a lined gusset.
 
  - **Buitenstof**
    - Cut **1 front**
-   - Cut **1 back**
+   - Knip **1 rugpand**
    - Cut **2 gusset**
 
 <Note>

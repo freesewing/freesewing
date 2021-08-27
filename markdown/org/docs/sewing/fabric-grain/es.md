@@ -12,7 +12,7 @@ Grain is indicated on a pattern by the grain line. When cutting out your pattern
 
 > For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
 
-> ##### Confused? Think wood
+> ##### Confused? Confused? Think wood
 > 
 > Wood is not woven, but grows in different layers based on the seasons (growth rings). The way these layers are aligned are important for woodworkers. They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
 > 

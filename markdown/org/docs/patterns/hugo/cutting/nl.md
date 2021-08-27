@@ -1,15 +1,15 @@
  - **Buitenstof**
-   - Cut **1 front** on the fold
-   - Cut **1 back** on the fold
-   - Cut **2 sleeves**, good sides together
-   - Cut **1 pocket** on the fold
-   - Cut **2 pocket facing(s)**, good sides together
-   - Cut **4 Hood side(s)**, 2x2 good sides together
-   - Cut **2 hood center(s)**, good sides together
-   - Cut **1 neck binding**
+   - Knip **1 voorpand** aan de stofvouw
+   - Knip **1 rugpand** aan de stofvouw
+   - Knip **2 mouwen**, goede kanten op elkaar
+   - Knip **1 zakdeel** aan de stofvouw
+   - Knip **2 belegdelen zak**, goede kanten op elkaar
+   - Knip **4 zijkanten kap**, goede kanten op elkaar
+   - Knip **2 midden kap**, goede kanten op elkaar
+   - Knip **1 halsbies**
  - **Boordstof**
-   - Cut **2 cuff(s)**
-   - Cut **1 waistband**
+   - Knip **2 manchetten**
+   - Knip **1 tailleband**
 
 <Warning>
 
@@ -22,4 +22,3 @@ Because Hugo's raglan sleeve also covers a portion of the back and front,
 the sleeve is the dominant feature of your draft.
 
 </Warning>
-

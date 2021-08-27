@@ -4,7 +4,7 @@ title: Holmes What you need
 
 To make Holmes, you will need the following:
 
-- Basic sewing supplies
+- Suministros básicos de costura
 - About 0.5 metres of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - About 0.5 metres of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
@@ -20,4 +20,3 @@ Depending on style the ties and buttons are optional.
 - You can also use different width and type ribbons for the ties if you prefer.
 
 </Note>
-

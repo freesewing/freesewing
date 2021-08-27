@@ -1,5 +1,5 @@
 ---
-title: Cuff length
+title: Manschettenlänge
 ---
 
 Controls the length of the cuff.

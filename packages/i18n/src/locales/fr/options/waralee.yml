@@ -4,7 +4,7 @@ backPocket:
   description: S'il faut inclure une poche arrière ou non
 frontPocket:
   title: Poche avant
-  description: S'il faut inclure une poche avant ou non
+  description: Inclure ou non des poches avant
 hem:
   title: Taille de l'ourlet
   description: Taille de l'ourlet au bas du pantalon

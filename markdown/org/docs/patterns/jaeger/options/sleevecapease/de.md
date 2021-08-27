@@ -1,4 +1,4 @@
 
-![Sleevecap ease](sleevecapease.svg)
+![Armkugel Zugabe](sleevecapease.svg)
 
 The ease on the sleevecap.

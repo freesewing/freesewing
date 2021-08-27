@@ -1,6 +1,6 @@
 
 > #### Waarom?
 > 
-> This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.
+> Deze optie hangt samen met de **hoogte** optie die bepaalt hoe hoog je zwembroek in je taille zit.
 > 
 > De breedte van je elastiek heeft hier echter ook invloed op, en daarom is deze optie van belang.

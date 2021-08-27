@@ -1,2 +1,2 @@
-Whether to include a back pocket or not
+S'il faut inclure une poche arrière ou non
 

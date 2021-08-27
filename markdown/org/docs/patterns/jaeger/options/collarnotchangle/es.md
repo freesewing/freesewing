@@ -1,4 +1,4 @@
 
-![Collar notch angle](collarnotchangle.svg)
+![Ángulo de la muesca del cuello](collarnotchangle.svg)
 
-Angle of the collar notch.
+Ángulo de la muesca del cuello.

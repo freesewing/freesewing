@@ -15,7 +15,7 @@ collarEase:
   title: Kragen Zugabe
   description: Die Menge an Bequemlichkeits-/Bewegungszugabe um deinen Hals herum
 chestEase:
-  title: Brust Zugabe
+  title: Brustzugabe
   description: Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.
 cuffEase:
   title: Manschette Zugabe

@@ -12,7 +12,7 @@ collarHeight:
   title: Hauteur du col
   description: Hauteur du col
 length:
-  title: Longeur
+  title: Longueur
   description: Longueur totale
 pocketFlapRadius:
   title: Angle de rabat de poche

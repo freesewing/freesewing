@@ -1,4 +1,4 @@
 
-![Shoulder slope reduction](shoulderslopereduction.svg)
+![Reducción de caída del hombro](shoulderslopereduction.svg)
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+La cantidad en la que la caída del hombro se reduce para añadir hombreras.

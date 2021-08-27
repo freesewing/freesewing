@@ -25,19 +25,19 @@ language: Langue
 languageTitle: Sélectionnez la langue de votre choix
 newPassword: Nouveau mot de passe
 newsletter: Newsletter
-newsletterTitle: Voulez-vous recevoir la newsletter de FreeSewing ?
+newsletterTitle: Voulez vous recevoir la newsletter de FreeSewing ?
 newsletterInfo: Une fois tous les 3 mois, nous envoyons notre newsletter avec un contenu honnête et soigneusement défini. Aucun suivi, aucune pub, aucun contenu inutile.
 passwordInfo: Changer votre mot de passe nécessite votre mot de passe actuel. Remplissez-le, puis entrez votre nouveau mot de passe.
 password: Mot de passe
 passwordTitle: Entrez votre mot de passe actuel et votre nouveau mot de passe
-patronInfo: Les mécènes soutiennent financièrement Freesewing. Ce sont des partisans fidèles qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.
+patronInfo: Les mécènes soutiennent financièrement Freesewing. Ce sont des fidèles soutiens qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.
 patron: Mécène
 removeYourAccountInfo: Le Règlement Général sur la Protection des Donnée de l'UE (RGPD) vous assure le <em>droit à l'effacement</em> - il s'agit de votre droit à pouvoir faire supprimer toutes vos données personnelles.
 removeYourAccount: Supprimer votre compte
 removeYourAccountWarning: Cela supprimera votre compte, vos Ébauches, vos modèles et toutes les données que nous avons stockées pour vous. Il n'y a pas de retour en arrière.
-resetPasswordInfo: Saisissez un nouveau mot de passe.
-resetPassword: Réinitialiser le mot de passe
-resetPasswordTitle: Entrez votre nouveau mot de passe
+resetPasswordInfo: Entrez votre nouveau mot de passe.
+resetPassword: Réintialiser le mot de passe
+resetPasswordTitle: Saisissez un nouveau mot de passe
 restrictProcessingOfYourDataInfo: Le Règlement Général sur la Protection des Donnée de l'UE (RGPD)  garantit votre <em>droit de restreindre le traitement</em> - le droit de suspendre le traitement de vos données.
 restrictProcessingOfYourData: Restreindre le traitement de vos données
 restrictProcessingWarning: Bien qu'aucune donnée ne soit supprimée, ceci se déconnectera et gèlera votre compte. De plus, vous ne pouvez pas annuler cela vous-même, mais vous devrez nous contacter lorsque vous souhaitez restaurer l'accès à votre compte.

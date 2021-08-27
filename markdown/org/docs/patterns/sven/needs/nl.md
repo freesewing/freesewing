@@ -14,4 +14,3 @@ Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig.
 Omdat deze zij- en schoudernaden niet echt uitgerokken worden kan je ze gewoon stikken met een rechte steek of een smalle zigzagsteek.
 
 </Note>
-

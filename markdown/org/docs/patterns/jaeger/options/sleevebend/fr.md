@@ -1,5 +1,5 @@
 
-![Sleeve bend](sleevebend.svg)
+![Courbe de manche](sleevebend.svg)
 
 The bend at the elbow of your sleeve.
 

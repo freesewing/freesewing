@@ -1,5 +1,5 @@
 ---
-title: Back dart shaping
+title: Forme de la pince dos
 ---
 
 Controls how much of the waist shaping will happing in the backdarts.
