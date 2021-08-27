@@ -1,4 +1,4 @@
-![Cuff drape](cuffdrape.svg)
+![Plisado del puño](cuffdrape.svg)
 
 How much the end of the sleeve is wider than the wrist.
 
@@ -11,3 +11,5 @@ The drape will be worked into the cuff with pleats.
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_cuffdrape_sample.svg "Effect of this option on the pattern")
