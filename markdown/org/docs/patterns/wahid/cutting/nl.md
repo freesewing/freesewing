@@ -1,15 +1,15 @@
  - **Buitenstof**
-   - Knip **2 voorpanden** met de goede kanten op elkaar
-   - Knip **2 achterpanden** met de goede kanten op elkaar
-   - Knip **2 beleg voor** met de goede kanten op elkaar
-   - Knip **2 paspels zak** met de goede kanten op elkaar
-   - Knip **2 beleg zak** met de goede kanten op elkaar
+   - Cut **2 front(s)** with _good sides together_
+   - Cut **2 back(s)** with _good sides together_
+   - Cut **2 front facing(s)** with _good sides together_
+   - Cut **2 pocket welt(s)** with _good sides together_
+   - Cut **2 pocket facing(s)** with _good sides together_
  - **Voering**
-   - Knip **2 voering voorpand** met de goede kanten op elkaar
-   - Knip **2 achterpanden** met de goede kanten op elkaar
-   - Knip **2 zakdelen** met de goede kanten op elkaar
+   - Cut **2 front lining(s)** with _good sides together_
+   - Cut **2 back(s)** with _good sides together_
+   - Cut **2 pocket bag(s)** with _good sides together_
  - **Tussenvoering**
-   - Knip **2 voorpanden** met de goede kanten op elkaar
+   - Cut **2 front(s)** with _good sides together_
    - Knip **2 tussenvoering zak**
 
 <Warning>
