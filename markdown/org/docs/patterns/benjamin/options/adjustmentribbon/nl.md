@@ -7,3 +7,6 @@ With Benjamin, you can make a traditional fixed size bow tie. Of je kan er één
 Dit is een geweldige optie als je een vlinderdas aan iemand cadeau wil doen.
 
 </Tip>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")
