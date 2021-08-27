@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Controls the shoulder seam location on the armhole side.
 
