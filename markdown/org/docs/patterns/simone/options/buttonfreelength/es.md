@@ -1,8 +1,10 @@
-![Button free length](./buttonfreelength.svg)
+![Longitud sin botones](./buttonfreelength.svg)
 
 How much before your waistband do you want your last button to sit?
 
 <Note>
+
+###### What's the point?
 
 ###### What's the point?
 
@@ -17,3 +19,5 @@ making sure it's within the length bonus you have available.
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")
