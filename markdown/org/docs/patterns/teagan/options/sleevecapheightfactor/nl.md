@@ -1,3 +1,3 @@
-![De factor voor hoogte mouwkop bij Brian](./sleevecapheightfactor.svg)
+![The sleevecap height factor option on Brian](./sleevecapheightfactor.svg)
 
-Deze factor bepaalt de hoogte van de mouwkop.
+This factor controls the height of the sleevecap.
