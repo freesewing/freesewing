@@ -1,0 +1,9 @@
+---
+---
+
+Controls the shoulder seam location on the armhole side.
+
+- Increase this option to shift the shoulder seam forward on the armhole side
+- Decrease this option to shift the shoulder seam backward on the armhole side
+
+
