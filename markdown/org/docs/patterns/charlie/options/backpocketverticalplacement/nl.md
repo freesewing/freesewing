@@ -1,4 +1,4 @@
 
-Controls the vertical placement of the back pockets.
+Bepaalt de verticale plaatsing van de achterzakken.
 
-Either closer to the waistband, or higher. Or further from the waistband, or lower.
+Of dichter bij de tailleband, of hoger. Of verder van de tailleband, of lager.
