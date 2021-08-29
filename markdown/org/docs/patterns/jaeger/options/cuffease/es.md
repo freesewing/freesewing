@@ -1,4 +1,4 @@
 
 ![Holgura de muñeca](cuffease.svg)
 
-The amount of ease at your cuff/wrist.
+La cantidad de facilidad en su taza/muñeca.
