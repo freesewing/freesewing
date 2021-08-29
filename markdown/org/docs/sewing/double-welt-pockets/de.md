@@ -1,225 +1,225 @@
 ---
-title: Double welt pockets
+title: Doppelwelt-Taschen
 ---
 
 ## Video
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Learn welts with David Page Coffin
+## Erfahren Sie mit David Page Coffin Welts
 
 The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
 
 David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
 
-David is a friend of the site, and by all measures much better at explaining this than I am.
+David ist ein Freund der Website, und durch alle Maßnahmen viel besser zu erklären, als ich bin.
 
-## Before you start
+## Bevor Sie beginnen
 
 ### Was du brauchst
 
-To make double welt pockets, you will need:
+Um doppelte Welttaschen herzustellen, benötigst du:
 
  - Grundlegendes Nähzubehör
- - The fabric or pattern piece you want to make the pocket in
- - Two fabric strips for the welts
- - A strip of interfacing
- - Lining or other suitable fabric for the pocket bag (See fabric and colour options)
- - Facing for the pocket bag, depending on your fabric and colour options
+ - Der Stoff oder das Musterstück, in das du die Tasche machen möchtest
+ - Zwei Stoffstreifen für die Schweißnähte
+ - Ein Streifen Schnittstellen
+ - Lining oder andere geeignete Stoff für die Tasche (Siehe Stoff- und Farboptionen)
+ - Deckung für die Taschentasche je nach Stoff- und Farboptionen
 
-### Parameters
+### Parameter
 
-Two values determine the size of your double welt pocket. Das sind:
+Zwei Werte bestimmen die Größe Ihrer doppelten Tasche. Das sind:
 
- - The pocket width: This is the width of the opening of the finalized double welt pocket
- - The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+ - Die Taschenbreite: Dies ist die Breite der Öffnung der finalisierten Doppelwelttasche
+ - Die Welthöhe: Dies ist die Höhe einer einzigen Welle und diese Hälfte der Höhe unserer doppelten Welttasche
 
-> In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
+> Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Welthöhe von 0,5 cm
 
 ## Zuschnitt
 
-### Pocket welts
+### Taschenwelten
 
-The welts are two rectangular strips of fabric with the following measurements:
+Die Schweissnähte sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
 
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
+ - Länge: Taschenbreite + 4cm
+ - Breite: Welthöhe x2 + 5cm
 
-For our example:
+Zum Beispiel:
 
  - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Breite: (0.5x2)+5 = 6cm
 
-They will form the two narrow strips of fabric that form your double welt pocket.
+Sie bilden die beiden schmalen Stoffstreifen, die Ihre doppelte Welttasche bilden.
 
-> Make sure to respect the grainline when cutting the two welts
+> Achten Sie darauf, die Kornlinie zu respektieren, wenn Sie die beiden Schweissen schneiden
 
 ### Tascheneinlage
 
-The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
+Die Taschenschnittstelle ist ein einziger rechteckiger Streifen verstellbarer Schnittstellen mit den folgenden Maßen:
 
- - Length: Pocket widht + 4cm
- - Width: Welt height x2 + 5cm
+ - Länge: Taschenwidht + 4cm
+ - Breite: Welthöhe x2 + 5cm
 
-For our example:
-
- - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
-
-> You may have noticed that the interfacing is the same size as a welt
-
-The interfacing is used to stabalize the pocket, and will be fused to the fabric with your iron.
-
-### Optional: Pocket facing
-
-The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
-
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
-
-For our example:
+Zum Beispiel:
 
  - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Breite: (0.5x2)+5 = 6cm
 
-> You may have noticed that the facing is the same size as a welt
+> Möglicherweise haben Sie bemerkt, dass die Schnittstelle die gleiche Größe wie eine Welt hat
 
-The facing is what you'll see when you peer through the opening of your pocket.
+Die Schnittstelle wird verwendet, um die Tasche zu stabilisieren und wird mit dem Stoff mit Ihrem Eisen verschmolzen.
 
-The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
+### Optional: Taschenbezug
+
+Die (optionale) Tasche ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
+
+ - Länge: Taschenbreite + 4cm
+ - Breite: Welthöhe x2 + 5cm
+
+Zum Beispiel:
+
+ - Length: 13+4 = 17cm
+ - Breite: (0.5x2)+5 = 6cm
+
+> Du hast vielleicht bemerkt, dass das Gesicht die gleiche Größe wie eine Welt hat
+
+Das Gesicht ist, was Sie sehen, wenn Sie durch die Öffnung Ihrer Tasche.
+
+Das Gesicht ist optional, wenn Sie es nicht verwenden, wird es durch die Tasche aufgedeckt, aus welchem Material die Tasche hergestellt wird.
 
 ### Taschenbeutel
 
-The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
+Die Form der Tasche hängt vom Muster ab. Für die Einfachheit werde ich eine rechteckige Tasche mit abgerundeten Ecken am unteren Rand verwenden, wie man sie auf den hinteren Hosentaschen finden kann.
 
-> There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
+> Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
 
 ## Konstruktion
 
-### Step 1: Fuse interfacing in place
+### Schritt 1: Sicherungsschnittstelle vor Ort
 
-![Fuse interfacing in place](step01.png)
+![Sicherungsschnittstelle an Ort](step01.png)
 
-Fuse the pocket interfacing to the bad side of your garment, so that it covers the place where you will make the welt pocket.
+Verschmelzen Sie die Taschenschnittstelle mit der schlechten Seite Ihres Kleidungsstücks, so dass es den Ort überdeckt, an dem Sie die Welttasche herstellen.
 
-> Patterns typically have notches that help you determine the placement of a welt pocket
+> Muster haben normalerweise Noten, die Ihnen helfen, die Platzierung einer Welttasche zu bestimmen
 
-### Step 2: Mark the welt pocket on the good side of the fabric
+### Schritt 2: Markiere die Tasche auf der guten Seite des Stoffes
 
-![Mark the welt pocket on the good side of the fabric](step02.png)
+![Markiere die Tasche auf der guten Seite des Stoffes](step02.png)
 
-Mark the welt pocket as follows:
+Markiere die Tasche wie folgt:
 
- - Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
- - Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
- - Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+ - Markieren Sie die Taschenbreite mit den vertikalen Linien. Lassen Sie diese Linien ausdehnen, damit Sie die Schweißnähte später ausrichten können
+ - Die mittlere Öffnung der Tasche mit einer horizontalen Linie ausrichten. Lasse es sich erweitern um dir zu helfen, die Schweissen später auszurichten
+ - Markiere zwei horizontale Linien parallel zur Mittelzeile, bei einem Versatz in Höhe der Welthöhe (0,5cm in unserem Beispiel)
 
-The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
+Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
 
-### Step 3: Fold and press the welts
+### Schritt 3: Falten und drücken Sie die Schwellungen
 
-![Fold and press the welts](step03.png)
+![Falten und die Schweissen drücken](step03.png)
 
-Fold the welts parallel with the long side, with the good side out.
+Falten Sie die Schweißnähte parallel mit der langen Seite, mit der guten Seite.
 
-Don't fold them in half. Instead make one side 1cm longer than the other.
+Falten Sie sie nicht in die Hälfte. Stattdessen machen Sie die eine Seite 1cm länger als die andere.
 
-Press the fold so that it becomes a sharp crease.
+Drücken Sie die Falte so dass es zu einer scharfen Falte wird.
 
-> By offsetting the edges, the welt edge tapers off, which reduces bulk and visibility on the outside of the garment.
+> Durch das Aussetzen der Kanten wird der Weltenrand ausgeschaltet, was die Schüttelmasse und die Sichtbarkeit auf der Außenseite des Kleidungsstücks verringert.
 
-### Step 4: Sew welts in place
+### Schritt 4: Nähwelten vor Ort
 
-![Sew welts in place](step04.png)
+![Nähwelten an Ort](step04.png)
 
-> In the images above, the dashed black line is the center of the welt. The red line shows where to sew, and the green line is a seam that has already been sewn.
+> In den obigen Bildern ist die gestrichelte schwarze Linie das Zentrum der Erde. Die rote Linie zeigt, wo man nähen soll, und die grüne Linie ist eine Naht, die bereits genäht wurde.
 
-Place the welt on the good side of your garment with the shorter folded side down, and center it horizontally.
+Legen Sie die Welt auf die gute Seite Ihres Kleidungsstücks mit der kürzeren gefalteten Seite nach unten und zentrieren Sie sie horizontal.
 
-Align the folded side with the center of the welt pocket, and now shift it twice the Welt Height (WH) outwards.
+Die gefaltete Seite mit der Mitte der Welttasche ausrichten und nun zweimal die Welthöhe nach außen verschieben.
 
-In our example with a Welt Height of 0.5cm, the fold of your welt lies 1cm from the welt pocket center.
+In unserem Beispiel mit einer Welthöhe von 0,5cm liegt die Falte Ihrer Welt 1cm vom Welttaschenmittel.
 
-Sew your welt in place 0.5cm (WH) from the fold, or in other words, precisely on the line you marked on your garment.
+Nähen Sie Ihre Welt in Platz 0,5 cm (WH) aus der Falte, oder mit anderen Worten, genau auf der Linie, die Sie auf Ihrem Kleidungsstück markiert.
 
-Make sure to start and stop precisely on the vertical lines that indicate the pocket width.
+Stellen Sie sicher, dass Sie genau auf den vertikalen Linien starten und stoppen, die die Taschenbreite angeben.
 
-When you're done, sew the second welt in place. Note that this will be a bit more tricky as you'll have to fold back the first welt, and lay part of your second welt over it.
+Wenn du fertig bist, nähe die zweite Welt vor Ort. Beachte, dass dies ein bisschen komplizierter sein wird, da du die erste Welle zurückklappen musst, und legen Sie einen Teil Ihrer zweiten Welt darüber.
 
-### Step 5: Cut open your pocket
+### Schritt 5: Schneiden Sie Ihre Tasche
 
-![Cut open your pocket](step05.png)
+![Schneiden Sie Ihre Tasche](step05.png)
 
-> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams.
+> Im Bild markiert die rote Linie wie und wo man die Tasche öffnet, und die grüne Linie zeigt die Nähte.
 
-Cut open your welt pocket by cutting along the center horizontal line. Stop short of the vertical lines that mark the sides of the pocket and cut under 45 degrees to the edge of your line of stitching that holds the welts down.
+Schneiden Sie Ihre Welttasche durch Schneide entlang der Mitte horizontale Linie. Stoppen Sie die vertikalen Linien, die die Seiten der Tasche markieren, und schneiden Sie unter 45 Grad an den Rand Ihrer Heftlinie, die die Schweißnähte hält.
 
 
-> Make sure to not cut into your stitches or cut too far. Make it precise.
+> Achten Sie darauf, dass Sie nicht in Ihre Nähte schneiden oder zu weit schneiden. Richten Sie es genau.
 
-### Step 6: Flip the welts to the other side and press
+### Schritt 6: Die Schweissen auf die andere Seite drehen und drücken
 
-![Flip the welts to the other side and press](step06.png)
+![Die Schweissen auf die andere Seite drehen und drücken](step06.png)
 
-You have been sewing your welts to the good side of the fabric. Now, we are going to flip them to the back side, through the opening we just cut in the fabric.
+Sie haben Ihre Schweißnähte auf die gute Seite des Stoffes. Jetzt werden wir sie auf die Rückseite drehen, durch die Öffnung, die wir gerade im Gewebe geschnitten.
 
-Flip the welts to the back, and press them flat. Take your time to work the fabric into a neat rectangle before you press it down.
+Drehen Sie die Schweissen auf den Rücken und drücken Sie sie flach. Nehmen Sie sich Zeit, den Stoff in ein sauberes Rechteck zu bearbeiten, bevor Sie ihn nach unten drücken.
 
-> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side
+> Achte darauf, die dreieckigen Stoffstücke (am kurzen Rand deiner Öffnung) auf die Seite zu drücken
 
-> You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
+> Du drückst mehrere Stoffschichten. Überlegen Sie, ob Sie die Ebenen einzeln drücken (oder öffnen) bevor Sie sie zusammen drücken. Dies wird eine schärfere Kreise und eine bessere Welttasche hervorrufen.
 
-### Step 7: Sew the pocket opening sides to the welts
+### Schritt 7: Nähen Sie die Tasche öffnende Seiten zu den Schweissen
 
-![Sew the pocket opening side to the welt on one side](step07a.png) ![And repeat on the other side](step07b.png)
+![Nähe die Taschenöffnungsseite der Welt auf einer Seite](step07a.png) ![Und wiederhole auf der anderen Seite](step07b.png)
 
-Put your garment down with the good side up, and fold it back on the side of your welt pocket, making sure to keep your welts lying flat.
+Lege deine Kleidung mit der guten Seite nach oben und falten Sie sie auf der Seite Ihrer Welttasche und sorgen Sie dafür, dass Ihre Schwellungen flach liegen.
 
-Sew the triangular piece of fabric from the pocket opening to the welts.
+Nähen Sie das dreieckige Stück Gewebe aus der Tasche Öffnung zu den Schweißen.
 
-> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
+> Vergewissern Sie sich, dass Sie nicht in die Taschenöffnung nähen, da dies die Nähte auf der Vorderseite zeigt
 
-### Step 8: Sew the bottom pocket bag to the bottom welt
+### Schritt 8: Nähe die untere Tasche in die untere Welt
 
-![Sew the bottom pocket bag to the botom welt](step08.png)
+![Nähe die untere Tasche in die Bottomwelt](step08.png)
 
-Fold your garment out of the way so you can sew the pocket bag to the lower welt.
+Falten Sie Ihr Kleidungsstück aus dem Weg, damit Sie die Tasche in die untere Schweiß nähen können.
 
-Also finish the edge of the welt with a zig-zag stitch so the welt stays flat inside the pocket.
+Auch mit einer Zick-Zack-Nähte den Weltrand fertig zu stellen, so dass die Welt im Inneren der Tasche bleibt.
 
-> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
+> Die Taschentasche zeigt sich hier (grün) viel Klarheit. Sie können Ihre Taschen auch aus anderen Stoffen herstellen.
 
-### Step 9: Optional: Sew facing to top pocket bag
+### Schritt 9: Optional: Nähen nach oben Tasche
 
-![Sew the facing to the top pocket bag](step09.png)
+![Nähen Sie die Vorderseite in die oberste Tasche](step09.png)
 
-> This step is optional. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
+> Dieser Schritt ist optional. Befestigen Sie die Vorderseite der Tasche an der oberen Tasche wenn Sie wollen, dass Sie durch die Öffnung der Tasche zeigen.
 
-### Step 10: Sew the top pocket bag to the top welt
+### Schritt 10: Nähe die oberste Tasche in die oberste Welt
 
-![Sew the top pocket bag to the top welt](step10.png)
+![Nähe die oberste Tasche in die Top-Welt](step10.png)
 
-Fold your garment out the way so you can sew the pocket bag to the top welt.
+Falte dein Kleidungsstück so dass du die Tasche nach oben nähen kannst.
 
-> If you applied facing to your pocket bag, make sure to place it with the facing towards the welts.
+> Wenn Sie die Vorderseite auf Ihre Tasche aufgetragen haben, stellen Sie sie mit der Vorderseite in Richtung der Schwefel.
 
-### Step 11: Attach the welts to the pocket bag
+### Schritt 11: Befestigen Sie die Schweissen an die Tasche
 
-![Sew one side](step11a.png) ![Sew the other side](step11b.png) ![And sew the top](step11c.png)
+![Nähen Sie eine Seite](step11a.png) ![Nähen Sie die andere Seite](step11b.png) ![Und Nähen Sie die Oberseite](step11c.png)
 
-Place your garment with the good side up, and fold it back at the side of the welt pocket.
+Legen Sie Ihr Kleidungsstück mit der guten Seite nach oben und falten Sie es an die Seite der Welttasche zurück.
 
-Sew the triangular piece of fabric from the pocket opening to the pocket bags, much like you've sewn it to the welts earlier.
+Nähen Sie das dreieckige Stoffstück aus der Tasche und öffnen Sie die Taschen zu den Taschen so wie Sie es früher genäht haben.
 
-Fold back your garment at the top of the welt pocket.
+Falte dein Kleidungsstück an der Spitze der Welttasche zurück.
 
-Now, sew the top of the pocket opening to the pocket bag.
+Nähen Sie jetzt die Oberseite der Tasche öffnen, um die Tasche zu öffnen.
 
-### Step 12: Finish the pocket bag
+### Schritt 12: Beende die Tasche
 
-![Now finish the pocket bag](step12.png)
+![Beende jetzt die Tasche](step12.png)
 
-Now finish the pocket back by closing all the edges (the top edge is optional).
+Beenden Sie nun die Tasche zurück, indem Sie alle Kanten schließen (die obere Kante ist optional).
 
-To do so, you can apply bias tape, use a serger, or sew some other finishing stitch.
+Um dies zu tun, können Sie ein bias Band, einen Serger oder nähen Sie einen anderen Finishstitch.
 
-After that, you're done!
+Danach bist du fertig!
