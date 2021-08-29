@@ -1,11 +1,11 @@
 
-To make Paco, you will need the following:
+Pour faire Paco, vous aurez besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meter (depending on your height) of a suitable fabric ([see Fabric options](/docs/patterns/paco/fabric))
-- 30cm of lining for the pocket bags
-- A little bit of interfacing for the pocket welts (only needed if you opted for back pockets)
-- A drawstring and two eyelets (optional)
-- Enough wide flat elastic for your waist and cuffs
+- Environ 1,25 mètre (selon votre hauteur) d'un tissu approprié ([voir Options de tissu](/docs/patterns/paco/fabric))
+- 30cm de doublure pour les sacs de poche
+- Un peu d'interfaçage pour les douilles de poche (uniquement nécessaire si vous avez choisi les poches arrières)
+- Un cordon et deux oeillets (facultatif)
+- Élastique plate assez large pour votre tour de taille et vos poignets
 
 
