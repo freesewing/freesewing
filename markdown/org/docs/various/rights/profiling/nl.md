@@ -1,5 +1,5 @@
 ---
-title: Rights in relation to automated decision making and profiling
+title: Rechten met betrekking tot geautomatiseerde besluitvorming en profilering
 order: 80
 ---
 
