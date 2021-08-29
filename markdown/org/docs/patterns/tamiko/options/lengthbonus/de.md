@@ -1,3 +1,3 @@
 ![Längenzugabe](lengthbonus.svg)
 
-How much longer than the default length to make your top.
+Wie viel länger als die Standardlänge, um Ihr Top zu bilden.
