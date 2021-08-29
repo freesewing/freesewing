@@ -1,4 +1,4 @@
 
-Controls the amount of main fabric that's folded over at the top of the path pockets.
+Bepaalt de hoeveelheid hoofdstof die aan de bovenkant van het patroonvakje geplooid is.
 
 
