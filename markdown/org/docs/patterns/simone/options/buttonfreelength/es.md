@@ -1,23 +1,23 @@
 ![Longitud sin botones](./buttonfreelength.svg)
 
-How much before your waistband do you want your last button to sit?
+¿Cuánto antes de que su cintura quiere que su último botón se siente?
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 Having buttons below your waistband is considered by many to be an annoyance.
-They get caught up in your belt, and complicate bathroom breaks.
+Se quedan atrapados en el cinturón y complican las pausas del baño.
 
-By default, the last button sits 1cm above your waistband, 
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+De forma predeterminada, el último botón se encuentra a 1 cm sobre tu cinturón, 
+pero esta opción te permite moverla hacia arriba para esa camisa que vas a llevar con esos pantalones de alta cintura.
 
-If you want to have buttons below your waistband, you can. You should enter a negative value here, 
-making sure it's within the length bonus you have available.
+Si quieres tener botones debajo de tu cintura, puedes hacerlo. Debes introducir un valor negativo aquí, 
+asegurándote de que está dentro de la bonificación de longitud que tienes disponible.
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonfreelength_sample.svg "Efecto de esta opción en el patrón")
