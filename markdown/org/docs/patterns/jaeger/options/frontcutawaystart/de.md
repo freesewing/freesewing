@@ -1,4 +1,4 @@
 
 ![Stern vorne](frontcutawaystart.svg)
 
-How far below the lower button does the front start to open.
+Wie weit unter der unteren Taste beginnt die Vorderseite zu öffnen.
