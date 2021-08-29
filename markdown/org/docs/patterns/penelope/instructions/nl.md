@@ -2,45 +2,45 @@
 
 ### Voering
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
+Potlood rokken zijn klein. Dit beperkt je beweging een beetje. Meer nog, wanneer je probeert te gaan zitten, zal de rok zich misschien van je taille proberen te trekken, of, als je een back-up hebt, blijf redelijk hoog op je bum. Door de rok te drinken kan het een stuk makkelijker rond je curves bewegen, waardoor je makkelijker kunt bewegen.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
+Het toevoegen van de voering kan worden gedaan door een wat korter voor- en achterpand te maken, dat wat extra stof in het midden heeft. De extra stof maakt het makkelijker voor de voering om te bewegen. Eén centimeter voor elk van de voor- en achterpand is genoeg. Je kunt een kuisplooi maken voor- en achterpand, of de extra stof toevoegen waar de nepen zijn. Je hoeft geen nepen in de voering te stikken. Alleen een plooi op de neep positie zal goed zijn.
 
 ### Tailleband
 
-A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
+Een tailleband is optioneel op Penelope. Als je het weggaat, zal er behoorlijk wat stress zijn aan de bovenkant van de rits. Zorg ervoor dat uw rits tegen de taak is. Een onzichtbare rits is misschien niet de beste optie dan, omdat ze niet altijd zoveel druk kunnen nemen.
 
-### Zipper
+### Rits
 
-Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
+Zonder de rits zal het onmogelijk zijn om in en uit de rok te geraken. Dus het zou minstens moeten zijn de lengte van je taille tot het grootste deel van je kont. Langer zal het makkelijker maken om de rok aan en uit te zetten. Gebruik er geen een die te lang is, omdat het deel van de naad waar de rits zich anders gedragen heeft dan het deel zonder het deel en u wilt het ook onzichtbaar maken in beweging.
 
-Traditionally, an invisible zipper is used in a pencil skirt. Lately there has been a trend to use zippers that are right in the open. Sometimes even from contrasting fabric. Choose what works for you in the style you're going for. Be creative (or not)! You might want to opt for an alternative option if your fabric is on the heavier side.
+Traditioneel wordt een onzichtbare rits gebruikt in een potloodrok. De laatste tijd is er een trend geweest om ritsmakers te gebruiken die juist in het open zijn. Soms zelfs van contrasterende stof. Kies wat voor jou werkt in de stijl die je gaat gebruiken. Wees creatief (of niet)! Je kiest misschien voor een alternatieve optie als je stof aan de zwaardere kant staat.
 
-### Vent
+### Vuur
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
+Een split achter is optioneel met Peneloptie. Het stelt je in staat om veel makkelijker te lopen dan als je de rok zonder de rok maakt. De vent heeft ook invloed op waar de rits zich zal bevinden. Als je kiest voor geen split staat de standaard ritslocatie op de zijkant naad, en de achterkant wordt aangevouwen. Met de vent, moet er een naad zitten in het rugpand en de rits zit aan die naad.
 
 ### Nepen
 
-Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
+Nepen worden gebruikt om het verschil tussen je taille en zitvlak te compenseren. Afhankelijk van dit verschil kunnen er twee nepen zijn, één neep of helemaal geen nepen. Meer nepen zorgen voor een potentieel betere pasvorm. Maar als de hoeveelheid stof die de neep krijgt te klein wordt, zal het aantal nepen afnemen. Anders zou het erg moeilijk zijn om de nepen te stikken, en ze zouden waarschijnlijk nogal onzichtbaar worden. Sommige van het verschil zal worden genomen door de zijnaad en als het verschil klein is, worden er geen nepen aan de voor- en achterkant toegevoegd.
 
 ## Constructie
 
-We're not going into a full explanation here on how to create all the individual details that make up a pencil skirt. We assume that you know how to sew a dart, insert an invisible zipper, make a vent, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+We gaan hier geen volledige uitleg geven over hoe je alle individuele details kunt maken die samen een potlood-rok vormen. We gaan ervan uit dat je weet hoe je een neep stikt, een onzichtbare rits, maak een vent, enz. Zo niet, dan zijn er talloze uitstekende artikelen beschikbaar op het -web, zowel schriftelijk als op video. Als je vastzit, kun je altijd naar [andere FreeSewers](https://discord.freesewing.org/) gaan.
 
-First, sew all the darts. You want to press them towards the back. So for the back piece, that means you press boths sides towards eachother. For the front piece, just the opposite.
+Stik eerst alle nepen. Je wilt ze op de rug duwen. Dus voor het rugpand, betekent dit dat je beide kanten op elkaar strijkt. Voor het eerste stuk, precies het tegenovergestelde.
 
-The next thing you want to do is sew the seam that has the zipper, and insert the zipper into it. Follow the procedure that is appropriate for the type of zipper you're using.
+Het volgende wat je wilt doen is de naad die de rits heeft vaststikken, en de rits erin plakken. Volg de procedure die geschikt is voor het type rpper dat je gebruikt.
 
-Sew up both the side seams.
+Stik beide zijnaden vast.
 
-Your next step depends on whether you have a vent and lining. If you're including a lining, now is the time to make it. The lining is made the same way that the rest of the skirt is made, with two exceptions; the darts are just pleats, and they have more 'ease' included. How you distribute this 'ease' is up to you. You can add it to the dart pleats, add another dart pleat, or make a box pleat in the middle.
+Je volgende stap hangt ervan af of je een vent en voering hebt. Als je een voering toevoegt, is nu het moment om die te maken. De voering is op dezelfde manier gemaakt als de rest van de rok is gemaakt, met twee uitzonderingen; de nepen zijn slechts pleidooien en ze hebben ook meer 'eenvoudigheid'. Hoe je dit 'makkelijk' verdeelt, ligt bij jou. Je kunt het aan de neep pleats toevoegen, nog neep pleat toevoegen, of een doosje pleat doen in het midden.
 
-Of course, if you include a lining, you have to include this in the way you've finished your zipper. And connect it to the vent, if your skirt has one of those.
+Natuurlijk, als je een voering toevoegt, moet je dit opnemen op de manier waarop je klaar bent met je rits. En verbind het met de split als je rok er een heeft.
 
-Next is attaching the waistband if your version has one. First fold it double along the long side and press. Add your interfacing. Sew it to the right side of the fabric. Then turn it over and press the seam into the waistband. Now use the stitch-in-the-ditch technique to finish the waistband. Add your choice of closure.
+Vervolgens wordt de tailleband bevestigd als je versie er een heeft. Plooi het eerst dubbel langs de lange kant en strijk. Voeg je interface toe. Stik aan de rechterkant van de stof. Draai dan om en strijk de naad in de tailleband. Gebruik nu de stetch-in-the-ditch techniek om de tailleband af te werken. Voeg uw keuze voor sluiting toe.
 
-All that is left now is to hem the skirt.
+Het enige wat nu overblijft is om de rok te zoeden.
 
 
 
