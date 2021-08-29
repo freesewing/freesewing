@@ -1,13 +1,13 @@
-Cut 1 core fabric and 1 outer fabric of the center panel, making sure to cut on the fold.
+Cortar 1 tela del núcleo y 1 tela exterior del panel central, asegurándose de cortar sobre el plegado.
 
-Cut 2 core and 2 outer of each side panel with _good sides together_.
+Corta 2 núcleos y 2 exteriores de cada panel lateral con _buenos lados juntos_.
 
-For example, for the 11-panel version of Cathrin:
-* Panel 1 - Cut 1 core and 1 outer
-* Panel 2 - Cut 2 core and 2 outer
-* Panel 3 - Cut 2 core and 2 outer
-* Panel 4 - Cut 2 core and 2 outer
-* Panel 5 - Cut 2 core and 2 outer
-* Panel 6 - Cut 2 core and 2 outer
+Por ejemplo, para la versión de 11 paneles de la Catedral:
+* Panel 1 - Cortar 1 núcleo y 1 exterior
+* Panel 2 - Cortar 2 núcleos y 2 exteriores
+* Panel 3 - Cortar 2 núcleos y 2 externos
+* Panel 4 - Cortar 2 núcleos y 2 exteriores
+* Panel 5 - Cortar 2 núcleos y 2 exteriores
+* Panel 6 - Cortar 2 núcleos y 2 externos
 
-![Pattern pieces](cathrin_cutting.png)
+![Piezas de patrón](cathrin_cutting.png)
