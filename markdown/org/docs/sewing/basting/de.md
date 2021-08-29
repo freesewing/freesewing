@@ -1,20 +1,20 @@
 ---
 layout: onecol
-title: Basting
+title: Beutel
 ---
 
-![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)
+![Die Form dieser Denim-Rückentasche wird geschlagen, bevor die Tasche in die Tasche geheftet wird](basting.jpg)
 
-Basting is temporary sewing to hold things in place.
+Bast ist vorübergehend Nähen, um die Dinge in Ordnung zu halten.
 
-It is typically done by hand, but you can also machine baste.
+Es wird üblicherweise von Hand gemacht, aber Sie können auch Maschinenbasis.
 
-Examples of where basting is commonly used are:
+Beispiele für die häufige Verwendung von Bast:
 
- - Basting a seam in place before sewing it
- - Basting an ornament, pocket, or other part in place before attaching it
- - Basting darts or other pattern changes while fitting the garment on a model
+ - Vor dem Nähen eine Naht blasen
+ - Vor dem Anbringen einer Ornament, Tasche oder eines anderen Teils an Ort
+ - Das Bissen von Dellen oder anderen Mustern ändert sich, während das Kleidungsstück auf ein Modell passt
 
-Basting is never permanent, but merely a temporary measure to hold things in place.
+Bastern ist niemals dauerhaft, sondern lediglich eine vorübergehende Maßnahme, um die Dinge in Ordnung zu bringen.
 
-> Basting and pinning are different techniques for similar situations
+> Bast und Fixieren sind verschiedene Techniken für ähnliche Situationen
