@@ -1,16 +1,16 @@
-To make Brian, you'll need:
+Om Brian te maken, moet je:
 
- - 1 Front
- - 1 Back
- - 2 Sleeves
+ - 1 voorzijde
+ - 1 Achterzijde
+ - 2 mouwen
 
 <Note>
 
-###### Brian is a block, not a pattern
+###### Brian is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
