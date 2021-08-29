@@ -1,5 +1,5 @@
 
 ![Angle de coupe avant](frontcutawayangle.svg)
 
-The angle by which the front opens up below the lower button.
+L'angle par lequel l'avant s'ouvre sous le bouton inférieur.
 
