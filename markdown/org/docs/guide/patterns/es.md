@@ -1,5 +1,5 @@
 ---
-title: Your patterns
+title: Tus patrones
 order: 400
 ---
 
@@ -8,16 +8,16 @@ But it remains ephemeral until you save it to your account, so it becomes one of
 
 Saving your pattern is optional, but it allows you to re-visit the pattern later, make further tweaks to it or simply download the PDF again.
 
-You can save as many patterns as you like.
+Puedes guardar tantos patrones como quieras.
 
 <Tip>
 
-##### Patterns vs Designs
+##### Patrones vs Deseo
 
-If you came to this site looking for *patterns* you might have found them under *designs*.
-It's not a super important distinction, but it helps to understand that:
+Si viniste a este sitio buscando *patrones* puede haberlos encontrado bajo *diseños*.
+No es una distinción super importante, pero ayuda a entender que:
 
- - **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
- - **Pattern**: The result of generating one of those styles into a pattern. We've got thousands of patterns stored for our users, and some might be yours
+ - **Diseño**: Uno de los estilos que ofrecemos. Tenemos docenas de diseños y puedes probarlos todos
+ - **Patrón**: El resultado de generar uno de esos estilos en un patrón. Tenemos miles de patrones almacenados para nuestros usuarios, y algunos pueden ser tuyos
 
 </Tip>
