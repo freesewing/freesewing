@@ -1,6 +1,6 @@
 - - -
 - - -
 
-import PatternDocs from '../../../../../src/components/docs/pattern'
+importeer PatternDocs uit '../../../../src/components/docs/pattern'
 
 <PatternDocs pattern='titan' />
