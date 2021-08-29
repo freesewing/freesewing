@@ -1,11 +1,11 @@
 ![Nackenauschnitt](neckinset.svg)
 
-How far do you want your waistcoat to sit away from your collar on your shoulder seam? The default is 2cm.
+Wie weit soll sich Ihre Weste auf der SchulterNaht von Ihrem Kragen absetzen? Die Standardeinstellung ist 2cm.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the collar side).
+Die Schulternaht einer Weste ist typischerweise enger als Ihr Hemd. Diese Option legt fest, wie eng sie wird (auf der Kragenseite).
 
 </Note>
