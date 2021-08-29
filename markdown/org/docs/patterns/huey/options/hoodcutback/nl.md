@@ -1,3 +1,3 @@
 ![Capuchon inkorting](./hoodcutback.svg)
 
-Controls how much the hood opening is cut back, making the hood less deep.
+Bepaalt hoeveel de opening van de capuchon wordt verminderd, waardoor de capuchon minder diep wordt.
