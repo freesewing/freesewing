@@ -1,3 +1,3 @@
 ![Bündchen-Elastizität](ribbingstretch.svg)
 
-The amount of stretch we should foresee for the ribbing at the hem/cuffs.
+Die Menge an Dehnung, die wir für das Band an den Ärmeln voraussehen sollten.
