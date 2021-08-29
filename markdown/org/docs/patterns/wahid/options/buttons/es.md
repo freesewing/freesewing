@@ -1,3 +1,3 @@
-![Buttons](buttons.svg)
+![Botones](buttons.svg)
 
-How many buttons do you want?
+¿Cuántos botones quieres?
