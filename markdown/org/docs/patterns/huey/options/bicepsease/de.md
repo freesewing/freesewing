@@ -1,7 +1,7 @@
-![The biceps ease factor on Brian](./bicepsease.svg)
+![Der Beizeps-Leichtigkeitsfaktor auf Brian](./bicepsease.svg)
 
-The amount of ease at your upper arm.
+Die Menge an Leichtigkeit an Ihrem Oberarm.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_bicepsease_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_bicepsease_sample.svg "Effekt dieser Option auf das Muster")
