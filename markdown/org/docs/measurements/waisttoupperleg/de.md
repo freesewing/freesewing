@@ -2,4 +2,4 @@
 title: Taille bis Oberschenkel
 ---
 
-The **waist to upper leg** is measured from your waist down to the top of your leg. Measure it a the side of your body.
+Die **Taille zum oberen Bein** wird von der Taille bis zur Oberseite deines Beines gemessen. Messen Sie es an der Seite Ihres Körpers.
