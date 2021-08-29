@@ -1,7 +1,7 @@
 ---
-title: A FreeSewing user account is required to access this page
+title: Een FreeSewing gebruikersaccount is vereist voor toegang tot deze pagina
 ---
 
-The page you tried to access is only available to FreeSewing users.
+De pagina die u probeerde te openen is alleen beschikbaar voor FreeSewing gebruikers.
 
-You should either [log in](/login/) or [sign up](/signup/) before you can access this page.
+U dient [in te loggen](/login/) of [zich aan te melden](/signup/) voordat u toegang hebt tot deze pagina.
