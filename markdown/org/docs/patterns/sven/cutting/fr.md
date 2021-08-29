@@ -1,18 +1,18 @@
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven est un motif très simple et se compose de deux parties principales et de quelques bandes pour le cou et le blindage.
 
  - **Tissu principal**
    - Couper **1 dos** au pli
    - Couper **1 devant** au pli
    - Couper **2 manches** endroit contre endroit
- - **Ribbing fabric**
-   - Cut **1 strip** for the neck opening binding
-   - Cut **2 strips**  for the cuffs
-   - Cut **1 strip**  for the hem
+ - **Tissu de bobine**
+   - Coupez **1 bande** pour la liaison de l'encolure
+   - Coupez **2 bandes**  pour les poignets
+   - Coupez **1 bande**  pour l'ourlet
 
 <Warning>
 
-######  Caveats
+###### Mise en garde
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+Les parties de corniche ne sont pas incluses sur le patron parce qu'elles sont simplement rectangulaires.
 
 </Warning>
