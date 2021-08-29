@@ -2,6 +2,6 @@
 title: Schulter zu Schulter
 ---
 
-The **shoulder to shoulder** measurement runs from the tip of your shoulder on one side across your back to the tip of your other shoulder.
+Die **Schulter an Schulter** misst von der Schulterspitze auf der einen Seite auf den Rücken bis zur Spitze der anderen Schulter.
 
-To measure your **shoulder to shoulder** find the edge of your shoulder where on a good fitting shirt the shoulder seam would sit. Then, measure from there across your back to the same point at the other side.
+Um deine **Schulter an Schulter** zu messen, findest du den Rand deiner Schulter, wo sich auf einem guten Hemd die SchulterNaht befindet. Messen Sie dann von dort aus über den Rücken bis zum gleichen Punkt auf der anderen Seite.
