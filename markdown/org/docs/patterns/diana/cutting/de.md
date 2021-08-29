@@ -1,5 +1,5 @@
 
- - Cut **1 back** on the fold
- - Cut **1 front** on the fold
- - Cut **2 sleeves** with *good sides together*
+ - **1 zurück** auf die Falte schneiden
+ - **1 Front** auf die Falte schneiden
+ - **2 Ärmel** mit *guten Seiten schneiden*
 
