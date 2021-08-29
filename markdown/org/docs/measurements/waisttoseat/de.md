@@ -2,6 +2,6 @@
 title: Taille bis Gesäß
 ---
 
-The **waist to seat** is the measurement from your waist down towards the fullest part of your bum, measured on the side of your body.
+Die **Taille zum Sitz** ist die Messung von deiner Taille nach unten in Richtung des vollsten Teils deines Bums, auf der Seite Ihres Körpers gemessen.
 
-To measure your **waist to seat**, locate the height of both your waist and seat circumference, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Um Ihre **Taille zu messen**, die Höhe der Taille und des Sitzumfangs zu bestimmen und den vertikalen Abstand zwischen ihnen zu messen. Achten Sie darauf, an der Seite Ihres Körpers zu messen.
