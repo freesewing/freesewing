@@ -1,1 +1,1 @@
-Controls the curvature of the neck opening.
+Contrôle la courbure de l'ouverture du cou.
