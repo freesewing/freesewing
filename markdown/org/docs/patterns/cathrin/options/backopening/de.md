@@ -1,3 +1,3 @@
-![The back opening option on Cathrin](./backopening.svg)
+![Die Back-Öffnungs-Option auf Kathrin](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Diese Option legt fest, wie weit die Rückenöffnung Ihres Korsetts sein wird. Die Rückenöffnung ist, wo Sie das Korsett zusammensetzen.
