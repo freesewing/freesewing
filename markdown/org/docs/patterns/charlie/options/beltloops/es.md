@@ -1,2 +1,2 @@
 
-Constrol how many beltloops we'll generate.
+Construir cuántos bucles de cinturón vamos a generar.
