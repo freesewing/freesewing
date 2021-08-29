@@ -1,2 +1,2 @@
-Used to move the curve of the crotch in the front horizontally
+Utilizado para mover la curva del cromo en la parte frontal horizontalmente
 
