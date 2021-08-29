@@ -1,14 +1,14 @@
 ![Hintere Anstieg](backrise.svg)
 
-This raises the waist of your trousers at the back.
+Dies erhöht die Taille Ihrer Hose auf die Rückseite.
 
 <Note>
 
-This trouser pattern is based on the drafting method of Winifred Aldrich. 
-One complain I often get is that the back of the trousers is too low. 
-It's a valid complaint too, it is low.
+Dieses Hosenmuster basiert auf der Zeichnungsmethode von Winifred Aldrich. 
+Eine Beschwerde bekomme ich oft, dass der Rücken der Hose zu niedrig ist. 
+Es ist auch eine gültige Beschwerde, es ist niedrig.
 
-This option allows you to mitigate that, without dramatic changes to the pattern. 
-It allows you to simply raise the back of the trousers.
+Diese Option erlaubt Ihnen, das zu mildern, ohne dramatische Änderungen am Muster. 
+Es erlaubt es Ihnen, einfach die Hosen zu heben.
 
 </Note>
