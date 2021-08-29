@@ -1,4 +1,4 @@
 
-This option controls the overal height of the waist.
+Esta opción controla la altura general de la cintura.
 
-> The higher the rise, the higher your waist.
+> Cuanto mayor sea el ascenso, mayor será la cintura.
