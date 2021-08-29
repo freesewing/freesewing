@@ -1,98 +1,98 @@
 ---
-title: Construction
+title: Construcción
 ---
 
-### Step 1: Fuse interfacing
+### Paso 1: Fusionar interfaz
 
-Depending on your fabric weight you might want to fuse all your main fabric parts No matter the thickness of your fabric, you should consider reinforcing the sides of your brim parts (where the notch mark is). This will help prevent the pointy ends of the plastic part to poke outside of the cap on this area
+Dependiendo del peso de tu tela es posible que quieras fusionar todas tus partes principales de tela Sin importar el espesor de tu tejido, debería considerar reforzar los lados de las partes de su brillo (donde está la marca de tamaño). Esto ayudará a prevenir los extremos puntiagudos de la pieza de plástico para pegar fuera de la gorra en esta zona
 
-![Protect this area from being pocked through by the plastic brim](step16.svg)
+![Proteger esta zona de ser atravesada por el brillo de plástico](step16.svg)
 
-### Step 2: Closing the back dart
+### Paso 2: Cerrando el dardo trasero
 
-#### Version with top part cut on fold
+#### Versión con parte superior cortada al doblar
 
-You should mark the top of the back dart on the wrong side of the fabric so that you know where to end your seam
+Debes marcar la parte superior del dardo de la espalda en el lado equivocado de la tela para que sepas dónde terminar tu costura
 
-![Marking the end of the dart](step01.jpg)
+![Marcando el final del dart](step01.jpg)
 
-There is several tricks to sewing darts, here is how I do it (I think it is called "balancing the dart"): prepare a bias cut rectangle of the same fabric you are going to stitch and place it underneath the point of your future dart. Stitch the dart starting from the bottom and keep stitching a few stitching after the top dart. Leave a good length of thread to make a knot by hand.
+Hay varios trucos para coser oscuros, Aquí es cómo lo hago (creo que se llama "equilibrar la oscura"): prepara un rectángulo de corte sesgado del mismo tejido que va a meter y colocarlo debajo del punto de su futuro dart. Une el dardo, comenzando por la parte inferior y sigue pegando unos pocos tras el dardo. Deja una buena longitud de hilo para hacer un nudo a mano.
 
-![Balanced dart](step02.jpg)
+![Dardo equilibrado](step02.jpg)
 
-Where the rectangle of fabric starts, cut the seam allowance that is against this rectangle, up to the seam so that the seam can be ironed flat open before the rectangle. On the area where the dart is stitched with the rectangle, iron both seam allowances on one side, and the folded rectangle on the other side. Layer the edges of the rectangle. The edge against the main fabric is wider, the one above is smaller
+Donde comienza el rectángulo de la tela, cortar la costura que está en contra de este rectángulo, hasta la costura para que la costura pueda ser planchada abierta antes del rectángulo. En el área donde el dart está unido al rectángulo, ambos permisos de costura en un lado, y el rectángulo doblado en el otro lado. Capa los bordes del rectángulo. El borde contra el tejido principal es más amplio, el anterior es más pequeño
 
-#### Version with the top part cut twice
-This dart is more straight forward since the seam is continuous. Simply stitch the seam all the way
+#### Versión con la parte superior cortada dos veces
+Este dardo es más directo hacia adelante, ya que la costura es continua. Simplemente tira la costura hasta el final
 
-#### Ironing the seam
-You might have to notch the seam allowance to press it flat. Use a tailoring Ham or something rounded underneath to help you press the seam open whilst keeping the nice shape you just created.
+#### planchar la costura
+Es posible que tenga que marcar la franquicia de costura para presionarla plana. Utiliza un Jamón a la medida o algo redondeado debajo para ayudarte a pulsar la costura abierta manteniendo la forma agradable que acabas de crear.
 
-#### Top Stitching
-Depending on the style you want to achieve, you can top stitch all your seams (by machine of by hand). However, the front brim seam will be a bit tricky to do with the machine (but not impossible). Anyway, I put this here and won't remind you about it after each step, but basically, the process would be: Stitch, Iron, Top stitch, Repeat on the next step.
+#### Más empalmado
+Dependiendo del estilo que quieras lograr, puedes juntar todas tus costuras (por máquina a mano). Sin embargo, la costura delantera será un poco complicada para la máquina (pero no imposible). De todos modos, lo pongo aquí y no te lo recordaré después de cada paso, pero básicamente, el proceso sería: empantanado, hierro, cúspide superior, Repetir en el siguiente paso.
 
-### Step 3: Optional: Join both side parts.
-This applies only if you cut two parts for the side part. It is a straight seam. nothing much to say about that. Iron the seam flat, with the seam allowances open.
+### Paso 3: Opcional: Únete a ambas partes laterales.
+Esto sólo se aplica si cortas dos partes para la parte lateral. Es una costura recta. nada que decir al respecto. Hierre la costura plana, con las costuras abiertas.
 
-### Step 4: Join the top to the side
+### Paso 4: Únete a la parte superior
 
-Warning: There will be quite a few pins involved Align the notches and pin the parts together so that this rounded part is held well in place.
+ADVERTENCIA: Habrá unos cuantos pines involucrados Alinear las escaleras y fijar las partes juntas para que esta parte redondeada se mantenga bien en su lugar.
 
-![Pins](step03.jpg) ![More pins](step04.jpg)
+![Pins](step03.jpg) ![Más pines](step04.jpg)
 
-For the stitching, I tend to start from the center front, do one half, and then start again, back from the center front to do the other half (the **side part** is on top for both stitches). So that, if my machine shifts the lower fabric, it would be a "symmetrical shift" on both sides. Clip the seam allowances where needed, on the curve, you might want to trim the seam allowance of the side part, and notch it, to help the ironing process.
+Para el stitching, tiende a empezar desde el frente central, hacer una mitad, y luego empezar de nuevo, parte trasera del frente central para hacer la otra mitad (la parte lateral **** está en la parte superior para ambas unidades). Así que, si mi máquina desplaza el tejido inferior, sería un "desplazamiento simétrico" en ambos lados. Recorta las franquicias de costura cuando sea necesario, en la curva, tal vez desee recortar el permiso de costura de la parte lateral, y mejorarlo, para ayudar al proceso de planchado.
 
-![The seam allowances are trimmed, clipped and pressed flat open](step05.jpg)
+![Las franquicias de costura son recortadas, recortadas y presionadas abiertas](step05.jpg)
 
-### Step 5: The brim outer seam.
+### Paso 5: La costura exterior del borde.
 
-Align the notches and pin the top and bottom parts. Technically, the lower part has a shorter seam length, so you might have to stretch it so that the seam allowances meet. In practice, fabric is usually stretchy enough so that the length difference can be eased. Iron both seam allowance against the **Bottom part**
+Alinear las muñecas y fijar las partes superior e inferior. Técnicamente, la parte inferior tiene una longitud de costura más corta, así que puede que tengas que estirarla para que la costura se meta. En la práctica, el tejido suele ser suficientemente estirado para que la diferencia de longitud pueda ser más fácil. Ambas posibilidades de costura contra la **parte inferior**
 
-### Step 6: Inserting the plastic part
+### Paso 6: Insertando la parte de plástico
 
-The plastic part is then inserted inside the brim, being careful to keep the seam allowance flat on the **Bottom part**. You then hand stitch the brim closed, keeping the parts in place and well tensioned.
+La parte de plástico se inserta dentro de la cerámica, teniendo cuidado de mantener la franquicia de costura plana en la **parte superior**. A continuación, la mano se apaga el brillo cerrado, manteniendo las piezas en su lugar y bien tensadas.
 
-![The brim is prepared](step06.jpg)
+![El brillo está preparado](step06.jpg)
 
-### Step 7: Stitching the brim to the cap
+### Paso 7: Uniendo el brillo al tope
 
-Align the notches and stitch the brim to the cap. Be careful not to stitch onto the plastic. It might be easier if you "free" the arm of your machine
+Alinear las muñecas y unir el brillo al tapón. Tenga cuidado de no meterse en el plástico. Podría ser más fácil si "libres" el brazo de su máquina
 
-### Step 8: Prepare the lining
+### Paso 8: Prepara el revestimiento
 
-Basically, repeat the steps 2, 3 and 4 with the lining **top** and **side parts**. This would also be a good time to stitch a label on the **top part** of the lining if you are into this kind of things.
+Básicamente, repite los pasos 2, 3 y 4 con la forja **top** y **partes laterales**. Esto también sería un buen momento para unir una etiqueta en la **parte superior** del forro si estás en este tipo de cosas.
 
-### Step 9: Join lining to main fabric.
+### Paso 9: Únete el revestimiento a la tela principal.
 
-Turn the lining outside out and place the main fabric in it (good side against good side). Pin and stitch from one end of the brim to the other end of the brim (leaving the brim seam open).
+Da la vuelta al revestimiento y coloca el tejido principal en él (lado bueno contra el lado bueno). Pin y se tira de un extremo del brillo al otro extremo del brillo (dejando la costura del brillo abierta).
 
-![Preparation for stitching the lining to the cap](step07.jpg)
+![Preparación para unir el revestimiento a la tapa](step07.jpg)
 
-Don't forget to back tack this stitch quite well since it will get some stretch when we will turn the cap "outside out". Turn the cap outside out, so that the good side is outside. On the Brim area, baste the lining in place and hand stitch it to the brim in a way to hide the other stitches that are already on the seam allowance. ![Joining the lining, finishing by hand](step08.jpg)
+No te olvides de volver a tocar esta stitch bastante bien, ya que conseguirá algo de estiramiento cuando giraremos el tapón "afuera". Deja la tapa afuera, para que el lado bueno esté fuera. En la zona de Brim funda el revestimiento en su lugar y la mano lo tira al brillo de una manera de ocultar las otras cositas que ya están en la costura permitida. ![Uniéndose al forraje, acabando a mano](step08.jpg)
 
-### Step 10: Top stitching the bottom of the cap
+### Paso 10: Encender la parte inferior de la tapa
 
-It is a good idea to top stitch the bottom seam of the cap so that the lining stays inside. To have a better control I usually baste it first, so that the edge is sharp. ![A nice crisp basted edge](step09.jpg)
+Es una buena idea juntar la costura inferior de la gorra para que el revestimiento permanezca dentro. Para tener un mejor control lo suelo bastar primero, para que el borde sea nítido. ![Un bonito borde bastado](step09.jpg)
 
-### Step 11: The tape
+### Paso 11: La cinta
 
-Form a loop with the tape so that the circumference of the loop matches the measured head circumference of the wearer of the cap. The best result is achieved when you pin the tape while you are wrapping it around the head of the future owner of the cap. Once the loop is closed, you can even double check it and ask if this fit is OK for the wearer.
+Formar un bucle con la cinta para que la circunstancia del bucle coincida con la circunstancia medida de la cabeza del portador de la gorra. El mejor resultado se consigue al fijar la cinta mientras la envuelve alrededor de la cabeza del futuro propietario de la gorra. Una vez que el bucle está cerrado, puede incluso comprobarlo doble y preguntar si este ajuste es correcto para el portador.
 
-![This tape will keep the cap from stretching](step10.jpg)
+![Esta cinta evitará que la tapa se estire](step10.jpg)
 
-Trim the ends of the tape in an arrow shape to keep it from poking out. ![It's all in the smallest details](step11.jpg)
+Recorta los extremos de la cinta en forma de flecha para evitar que se agote. ![Es todo en los detalles más pequeños](step11.jpg)
 
-Divide the tape in two with two pins
+Dividir la cinta en dos con dos pines
 
-![Obviously, the cap is symmetrical, so we might as well distribute the tape evenly on both sides](step12.jpg)
+![Obviamente, el tope es simétrico, así que también podríamos distribuir la cinta uniformemente por ambos lados.](step12.jpg)
 
-Pin the tape in place: The two pins are used to distribute the tape equally on both sides. Place one pin at the back, and the other at the front. Since the brim is held in place it can't be much stretched, so pin the tape in this area "normally" For the remaining part you might need to ease the fabric along the tape. I recommend to hand stitch the tape in place, on both edges of the tape
+Pin la cinta en su lugar: Los dos pines se utilizan para distribuir la cinta por igual en ambos lados. Coloque un pin en la parte trasera y el otro en la parte delantera. Dado que el brillo está en su lugar no puede ser muy estirado, así que fije la cinta en esta área "normalmente" Para la parte restante puede que necesite aliviar la tela a lo largo de la cinta. Recomiendo que la mano tire la cinta en su lugar, en ambos bordes de la cinta
 
-![Both edges of the tape are slip stitched, and the edge of the cap is top stitched](step13.jpg)
+![Ambos bordes de la cinta están deslizados y el borde de la tapa está empalmado](step13.jpg)
 
-### Step 12: Stitch the side to the brim
-We are almost done, and the last step will be to attach the brim top to the front of the body of the cap. Pin the two part in position from the outside, turn the cap on the lining side and stitch both parts together several times.
+### Paso 12: Unir el lado al brillo
+Casi hemos terminado, y el último paso será sujetar el brillo al frente del cuerpo de la gorra. Anclar las dos partes en posición desde el exterior, girar la gorra en el lado del forro y juntar ambas partes varias veces.
 
-![Pin it in place](step14.jpg) ![Stitch it in place, from the lining side](step15.jpg)
+![Anclarlo en su lugar](step14.jpg) ![Unirlo en su lugar, desde el lado del revestimiento](step15.jpg)
 
-![All done!](finished.gif)
+![¡Todo listo!](finished.gif)
