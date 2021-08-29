@@ -1,4 +1,4 @@
 
 ![Courbe du col poitrine](chestshaping.svg)
 
-The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
+La quantité verticale de découpage & de la face supérieure pour former le coffre, en tant que facteur de circonférence de la poitrine.
