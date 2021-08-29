@@ -1,3 +1,3 @@
 ![Tejido acanalado](./ribbing.svg)
 
-Whether to include ribbing or not.
+Si incluir la costilla o no.
