@@ -1,4 +1,4 @@
 
 ![Aisance tête de manche](sleevecapease.svg)
 
-The ease on the sleevecap.
+La facilité sur le capuchon de manche.
