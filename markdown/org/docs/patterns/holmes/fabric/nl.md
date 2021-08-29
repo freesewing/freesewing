@@ -1,33 +1,33 @@
 ---
-title: Holmes Fabric options
+title: Holmes Stoffen opties
 ---
 
-### Main Fabric
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+### Hoofd stof
+Voor de buitenstof van je hoed, een dikke stof werkt het beste om de vorm vast te houden, maar als je wilt gaan voor een lichtere stof, kan je hem ook gebruiken om hem meer lichaam te geven. Over het algemeen wil je **Wools** gebruiken van coating gewicht, maar je kunt experimenteren met verschillende gewichten en stoffen met de relevante interfacing.
 <Note>
  
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a __Medium Firm Interfacing__.
+Een leuk ding om te proberen is katoen bedrukt. Gewoon de hoofdstof verdubbelen, zodat elk stuk een dubbele dikte is. Neem vervolgens contact op met een __Medium Firm Interfacing__.
 
 </Note>
 
-### Lining Fabric
-Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but really you can make it from any fabric you deem appropriate for lining. Just remember it needs to protect the facing and the main fabric from your head.
+### Voetstof
+Over het algemeen wil je een lichtgewicht stof zoals **zijpanden** of **Cotton Lawn** maar echt dat je het van elke stof kan maken die je geschikt acht voor de voering. Denk er gewoon aan dat het het beleg en de belangrijkste stof moet beschermen tegen je hoofd.
 
 ### Tussenvoering
-Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly ***Baste*** your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again ***Baste*** the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary ***Pad Stitches***.
+Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je nodig hebt om je stof te integreren. Als je onzeker bent of je stof tussenvoering vereist, snel ***Drieg*** je kroondelen samen en kijk of de kroon rechts blijft staan wanneer hij op een ondergrond geplaatst is. Als het geen tussenvoering nodig heeft. Als vuistregel heb je over het algemeen een **Medium Firm Interfacing** nodig, maar als je stof vrij dun is, heb je misschien een steviger tussenvoering nodig. Als je nog steeds onzeker bent, kun je je kroondelen tegemoet zien en weer ***Drieg*** de kroondelen samen en kijk hoe het eruitziet op je hoofd. Je kunt ofwel fusibele of niet-fusibele tussenvoering gebruiken. Als je een niet-fusibele tussenvoering gebruikt, wil je de tussenvoering plat leggen aan je stukken tijdelijke ***Pad Stitches***.
 
 <Note>
  
-If you are trying to make a more Historical Holmes you can use __Tarlatan__ which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+Als je probeert om een hogere Historische Holmes te maken kun je __Tarlatan__ gebruiken, wat een lichtgewicht stijlvolle spiraal is. Zorg ervoor dat u natuurlijke vezels gebruikt.
 
 </Note>
 
 ### Visor Insert
 
-For the visor insert you want a firm but thin material. You may want to try either, **Millinery Buckram**, **Plastic Canvas**, **Plastic Sheets** or **EVA Foam**. You can use **Leather** just know that depending on depth this may create a thicker visor and may make the visor harder to close.
+Voor de bezoeker wil je een firma maar weinig materiaal. Je kunt het ook proberen, **Millinery Buckram**, **Plastic Canvas**, **Plastic platen** or **EVA Foam**. U kunt **leren** gebruiken om te weten dat dit afhankelijk van de diepte een bezoeker kan maken en de bezoeker moeilijker te sluiten kan maken.
 
 <Note>
  
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Vergeet het niet. Dit zijn allemaal aanbevelingen. Als je iets anders wilt gebruiken, ga dan ervoor!
 
 </Note>
