@@ -1,1 +1,1 @@
-This options controls the height of the waist.
+Esta opción controla la altura de la cintura.
