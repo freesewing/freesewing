@@ -11,8 +11,8 @@ Sven is een heel simpel patroon, en bestaat uit drie hoofddelen plus een aantal 
 
 <Warning>
 
-######  Caveats
+###### Caveats
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+De boordonderdelen zijn niet op het patroon inbegrepen omdat ze gewoon rechthoekig zijn.
 
 </Warning>
