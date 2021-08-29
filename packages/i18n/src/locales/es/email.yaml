@@ -6,8 +6,8 @@ emailchangeHeaderOpeningLine: 'Solo asegurándonos de que podamos contactarlo cu
 emailchangeHiddenIntro: "Confirmemos tu nueva dirección de correo electrónico"
 emailchangeSubject: 'Por favor confirme su nueva dirección de correo electrónico'
 emailchangeTitle: 'Por favor confirme su nueva dirección de correo electrónico'
-emailchangeWhy: 'You received this E-mail because you changed the E-mail address linked to your account on freesewing.org'
-footerCredits: 'Made by joost & contributors with the financial support of our patrons ❤️ '
+emailchangeWhy: 'Ha recibido este correo electrónico porque ha cambiado la dirección de correo electrónico vinculada a su cuenta en freesewing.org'
+footerCredits: 'Hecho por joost & contributors con el apoyo financiero de nuestros clientes ❤️ '
 footerSlogan: 'Freesewing es una plataforma open source para patrones de costura a medida'
 goodbyeCopy1: "Si desea compartir por qué se va, puede responder a este mensaje. <br> Por nuestra parte, no volveremos a molestarlo."
 goodbyeHeaderOpeningLine: 'Solo se sabe que siempre se puede volver.'
