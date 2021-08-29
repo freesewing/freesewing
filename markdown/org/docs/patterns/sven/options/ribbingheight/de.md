@@ -1,3 +1,3 @@
 ![Bündchen-Höhe](ribbingheight.svg)
 
-The height of the ribbing at the hem/cuffs.
+Die Höhe des Balles an der Hämmer/Manschette.
