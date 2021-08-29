@@ -4,11 +4,11 @@ Je kan GROTE vlinderdassen maken, of kleine. Deze optie staat je toe de vertical
 
 <Note>
 
-###### Not used with the Square bow tie type
+###### Niet gebruikt met het vierkante vlinderdas
 
-This option is ignored with the Square bow tie option. Vierkante vlinderdassen zijn even breed and de breedte van de knoop.
+Deze optie wordt genegeerd met de optie voor de vierkante vlinders. Vierkante vlinderdassen zijn even breed and de breedte van de knoop.
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_tipwidth_sample.svg "Effect van deze optie op het patroon")
