@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
+importiere PatternOptions von '../../../../../../../src/components/docs/pattern-options'
 
 <PatternOptions pattern='hugo' />
 
