@@ -1,10 +1,10 @@
 
-This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
+Este patrón viene con un dart de guinda predeterminado de 1 cm (piense en la oscuridad del orificio) en el frente.
 
-You can increase or decrease the dart to influence the armhole.
+Puedes aumentar o disminuir el dardo para influir en el agujero de armadura.
 
-> #### What's the point?
+> #### ¿Cuál es la cuestión?
 > 
-> ###### What's the point? The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Given that there is no sleeve, a gaping armhole is particularly unsightly.
+> ###### What's the point? The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Dado que no hay manga, un enorme agujero de brazo es particularmente desconcertante.
 
-> While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the front dart.
+> Mientras que este dardo se utiliza para dar forma al patrón, no es necesario coser el dardo porque está incorporado en el dardo.
