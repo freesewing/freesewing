@@ -1,2 +1,2 @@
 
-Controls the location of the pockets.
+Bepaalt de locatie van de zakken.
