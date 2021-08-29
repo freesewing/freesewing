@@ -1,11 +1,11 @@
 ![Knotenbreite](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+Die Knotenbreite ist die Breite in der Mitte der Krawatte, wo Sie den Knoten machen.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+Wie weit Ihr Krawatte in der Mitte ist, wird den Krawatten beeinflussen. Gehen Sie weit für große und sperrige Knoten, gehen Sie schmal für kleine Knoten.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+Knotenbreite nicht größer als die Breite der Spitze machen
 
 </Note>
