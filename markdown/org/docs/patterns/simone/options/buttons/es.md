@@ -1,7 +1,7 @@
-![Buttons](buttons.svg)
+![Botones](buttons.svg)
 
-The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
+El número de botones de tu camisa. Excluyendo los botones de corte, y el botón opcional extra superior.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_buttons_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttons_sample.svg "Efecto de esta opción en el patrón")
