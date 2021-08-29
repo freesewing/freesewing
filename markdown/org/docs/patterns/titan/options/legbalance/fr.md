@@ -1,14 +1,14 @@
 
-Controls the proportion between the front and back part of the legs.
+Contrôle la proportion entre la partie avant et arrière des jambes.
 
-The back of the trouser legs are always wider than the front. This controls by how much.
+Le dos des pattes du pantalon est toujours plus large que le devant. Cela contrôle par comment.
 
 <Note>
 
-Increasing this will make the front leg panel narrower.  
-This makes the wearer look more skinny.
+Augmenter ceci rendra le panneau de la jambe avant plus étroit.  
+Cela rend le porteur plus habillé.
 
-This trick is often used in womenswear jeans 
-(now you know why you can't find womenswear jeans with functional front pockets).
+Cette astuce est souvent utilisée dans les jeans de vêtements féminins 
+(maintenant vous savez pourquoi vous ne pouvez pas trouver de jeans de vêtements féminins avec des poches avant fonctionnelles).
 
 </Note>
