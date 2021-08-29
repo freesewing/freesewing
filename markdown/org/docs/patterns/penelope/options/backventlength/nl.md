@@ -1,2 +1,2 @@
-This controls the length of the back vent as a percentage of the skirt length.
+Dit bepaalt de lengte van de rugsplit als percentage van de lengte van de rok.
 
