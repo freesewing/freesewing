@@ -1,2 +1,2 @@
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Controla la curvatura de la costura de la costra, que influye en el encaje de su cosecha.
