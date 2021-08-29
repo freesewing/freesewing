@@ -1,8 +1,8 @@
 ---
-title: The right to rectification
+title: Das Recht auf Berichtigung
 order: 30
 ---
 
-You have the right to rectify your personal data, or complete it if it is incomplete.
+Sie haben das Recht, Ihre persönlichen Daten zu korrigieren oder zu vervollständigen, wenn sie unvollständig sind.
 
-Go to [/account](/account/) to do so.
+Gehe zu [/account](/account/) um dies zu tun.
