@@ -1,7 +1,7 @@
 ---
-title: Ankle circumference
+title: circunstancia del tobillo
 ---
 
-The **ankle circumference** measurement goes around your ankle.
+La medición del ancla del **** gira por tu ancla.
 
-To measure your ankle circumference, run the tape measure around your leg, just above your ankle.
+Para medir la circunstancia del pezón, ejecute la medida de la cinta alrededor de la pierna, justo por encima de su ancla.
