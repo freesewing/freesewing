@@ -1,2 +1,2 @@
 
-Controls the width of the sleeve vent.
+Bepaalt de breedte van de mouw teken.
