@@ -1,18 +1,18 @@
 ---
-title: Pattern notation guide
+title: Patroon notatie gids
 order: 800
 ---
 
-Hopefully our patterns are easy enough to understand, but if you come across something that confuses you, below is a reference of all our pattern notation:
+Hopelijk zijn onze patronen makkelijk genoeg om te begrijpen, maar als je iets tegenkomt dat je verwart hieronder is een referentie van al onze patroon notatie:
 
 <ReadMore list />
 
 <Tip>
 
-##### Might vary slightly between preview and final result
+##### De kans varieert lichtjes tussen preview en het eindresultaat
 
-For reason that are surprisingly complex, there might be slight
-differences in fonts and colors between how a pattern looks online 
-and how it looks as a downloaded PDF or SVG.
+Om de reden die verrassend ingewikkeld zijn, er kunnen kleine
+verschillen zijn in lettertypen en kleuren tussen hoe een patroon er online uitziet 
+en hoe het eruit ziet als een gedownloade PDF of SVG.
 
 </Tip>
