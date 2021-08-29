@@ -1,2 +1,2 @@
 
-Controls the depth of the front pocket bag.
+Bepaalt de diepte van het voorste zakdeel.
