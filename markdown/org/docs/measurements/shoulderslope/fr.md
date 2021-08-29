@@ -16,7 +16,7 @@ Presque toutes les personnes ont une pente légèrement différente des deux cô
 C'est parce que votre bras dominant est plus prononcé.
 
 À moins que la différence ne soit énorme, mieux vaut ne pas s'en inquiéter.
-It won't show up for casual garments, and for formal wear, it's better to add
-asymmetric shoulder padding, rather than create an asymmetric pattern.
+Il ne se montrera pas pour les vêtements occasionnels, et pour l'usure formelle, il vaut mieux ajouter
+un remplissage asymétrique des épaules plutôt que de créer un motif asymétrique.
 
 </Note>
