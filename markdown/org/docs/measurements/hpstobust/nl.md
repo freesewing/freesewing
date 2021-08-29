@@ -4,14 +4,14 @@ title: HPS tot buste
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: hoogste punt schouder
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Het *hoogste punten* of *HPS* punt wordt gebruikt als basis voor verschillende verticale metingen.
+Raadpleeg [de hps documentatie](/docs/measurements/hps/) voor informatie over hoe je dit punt kunt vinden.
 
 </Note>
 
-The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
+De **hoog schouder punt (HPS) tot buste** afmeting loopt van je HPS tot aan de lijn die je bustewijdte vormt.
 
 Om je HPS tot buste te meten, [bepaal eerst waar je HPS ligt](/docs/measurements/hps/). Meet dan verticaal naar beneden tot aan de lijn die je borstomtrek of bustewijdte bepaalt.
 
@@ -19,17 +19,17 @@ Het punt van deze afmeting is bepalen op welke hoogte het volste deel van je bus
 
 <Tip>
 
-##### Think about which hand you're using
+##### Denk na over welke hand je gebruikt
 
-If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on 
-the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of 
-the tape up to your right shoulder with your right hand, while your left hand is holding the end. 
-But that means you distort the length you are trying to measure by raising your arm on the same side. 
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+Als je jezelf meet probeer je meetband aan je schouder vast te houden met de hand aan 
+dezelfde kant van je lichaam als de schouder die je meet. Dus, je zou bijvoorbeeld de bovenkant van 
+de band tot aan je rechter schouder kunnen houden met je rechterhand. terwijl je linkerhand het einde houdt. 
+Maar dat betekent dat je de lengte die je probeert te meten verdraait door je arm aan dezelfde kant op te tillen. 
+Je denkt misschien niet dat er een verschil is, maar alles is verbonden in de wereld van fysiologie, en
+dit doen kunnen leiden tot een fout van ~2. cm (~1 inch) in je maat.  
+Verander gewoon je handen rond, dan krijg je een nauwkeurigere meting.
 
-For best results, get a second person to take your measurements (if possible).
+Neem voor het beste resultaat een tweede persoon om uw metingen te nemen (indien mogelijk).
   
 </Tip>
 
