@@ -1,11 +1,11 @@
 ---
-title: Bust dart curve
+title: Curve buisneep
 ---
 
-![The effect of the bust dart curve option on the pattern](sample.png)
+![Het effect van de busteelcurve optie op het patroon](sample.png)
 
-The **bust dart curve** option controls the curvature of the bust dart. From straight to slightly curved.
+De **buste-neep curve** optie bepaalt de curve van de bustenneep. Van recht naar licht gebogen.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustdartcurve_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_bustdartcurve_sample.svg "Effect van deze optie op het patroon")
