@@ -1,13 +1,13 @@
-You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
+In Ihrem Stoffgeschäft finden Sie eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn Sie das nicht tun, schauen Sie einfach nach der Strickwarensektion und suchen Sie nach einem dickeren und bequemen Strickstoff.
 
-As far as fibers go, you can go all cotton, or opt for a poly or acryl cotton blend.
+Bis zu den Fasern können Sie alle Baumwolle gehen oder sich für eine Poly-oder Acryl-Baumwolle entscheiden.
 
-Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come in loopback and brushed back. If you want that OMG-it-feels-so-soft-on-my-skin feeling, go for brushed.
+Achten Sie auf das Innere des Stoffes. Sweatshirt-Stoffe kommen in Schleife und gebürstet. Wenn Sie wollen, dass OMG-it-Feels-soft-on-my-Haut-Gefühl, gehen Sie nach gebürstet.
 
 <Note>
 
-You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
+Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
  
-Or if you have given up on class, you could go for fleece.
+Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
 
 </Note>
