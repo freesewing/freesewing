@@ -1,2 +1,2 @@
-Adjust this option for more or less stretchy fabrics.
+Ajuste esta opción para tejidos más o menos estirados.
 
