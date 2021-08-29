@@ -1,2 +1,2 @@
 
-The length of the shoulder seam, as a factor of your shoulder to shoulder measurement.
+La longitud de la costura del hombro, como factor del hombro a la medida del hombro.
