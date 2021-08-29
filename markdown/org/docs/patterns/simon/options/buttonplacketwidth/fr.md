@@ -1,3 +1,3 @@
 ![Largeur de patte de boutonnage - côté boutons](buttonplacketwidth.svg)
 
-The width of your button placket.
+La largeur de votre patte de bouton.
