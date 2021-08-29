@@ -2,10 +2,10 @@
 title: Hemming
 ---
 
-![The hem at the bottom of a T-shirt](coverlock-hem.jpg)
+![La lluvia en la parte inferior de una camisa](coverlock-hem.jpg)
 
-Hemming, or a hem, is a type of finish that is done on the bottom of a garment.
+El hemming, o un hem, es un tipo de acabado que se realiza en el fondo de una prenda.
 
-The hem of your trousers is where they meet your shoes. The hem of a dress is the bottom edge of the dress.
+La gota de sus pantalones es donde se encuentran con sus zapatos. La cortina de un vestido es el borde inferior de la vestimenta.
 
-The hem is not a seam in the sense that it does not join two parts together. Rather hemming is used to finish the fabric edge and prevent it from fraying.
+El hem no es una costura en el sentido de que no se une a dos partes. Más bien el césped se utiliza para terminar el borde de la tela y evitar que se deshilache.
