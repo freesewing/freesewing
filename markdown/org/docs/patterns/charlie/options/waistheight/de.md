@@ -1,9 +1,9 @@
 
-Controls the height of the waist, where:
+Steuert die Höhe der Taille, wo:
 
- - 100% : The waist of the trousers sits at the waist line
- - 0% : The waist of the trousers sits at the hip line
+ - 100% : Die Taille der Hose sitzt an der Taillenlinie
+ - 0% : Die Taille der Hose sitzt an der Hüftlinie
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistheight_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_waistheight_sample.svg "Effekt dieser Option auf das Muster")
