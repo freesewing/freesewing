@@ -1,19 +1,19 @@
 
-These work best in a lighter fabric with relatively good drape.
+Ils travaillent le mieux dans un tissu plus léger avec un draps relativement bon.
 
-A light cotton, or chambray are particularly well-suited.  
-Rayon or jersey will work too, but will give it a more casual-look.
+Un coton léger, ou chambray sont particulièrement bien adaptés.  
+La Rayon ou le maillot fonctionneront également, mais lui donneront un look plus décontracté.
 
-For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
+Pour l'effet inverse, moins décontracté et plus de style, vous pouvez envisager un mélange de soie ou de laine légère.
 
 <Tip>
 
-###### Some things to avoid
+###### Certaines choses à éviter
 
-Resist the temptation to make these in linen. 
-While linen is the go-to for hot summer days, I would not recommend it for these pants
-as they come with an elasticated waist/cuffs, which means wrinkle hell. 
-Use one of out other designs with a fitted waist if you want linen pants.
+Résistez à la tentation de les faire dans le lin. 
+Tant que le lin est le point de départ pour les chauds jours d'été, Je ne le recommanderais pas pour ces pantalons
+car ils sont livrés avec une taille/poignets élastiques, ce qui signifie un enfer ride. 
+Utilisez un autre design avec une taille ajustée si vous voulez un pantalon de linge.
 
-Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
+Évitez également de ramasser un tissu avec beaucoup d'extension, car cela compliquera les choses lorsque vous installez l'élastique.
 </Tip>
