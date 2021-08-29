@@ -1,24 +1,24 @@
  - **Oberstoff**
-   - Cut **1 front** on the fold
-   - Cut **1 back** on the fold
-   - Cut **2 sleeves**, good sides together
-   - Cut **1 pocket** on the fold
-   - Cut **2 pocket facing(s)**, good sides together
-   - Cut **4 Hood side(s)**, 2x2 good sides together
-   - Cut **2 hood center(s)**, good sides together
-   - Cut **1 neck binding**
+   - **1 Front** auf die Falte schneiden
+   - **1 zurück** auf die Falte schneiden
+   - **2 Ärmel schneiden**, gute Seiten zusammen
+   - **1 Tasche** auf die Falte schneiden
+   - **2 Taschenverkleidung(en) schneiden**, gute Seiten zusammen
+   - Schneiden Sie **4 Kapuzenseite(n)**, 2x2 gute Seiten zusammen
+   - **2 Haubenzentren(n) schneiden**, gute Seiten zusammen
+   - **1 Halsband schneiden**
  - **Bündchen**
-   - Cut **2 cuff(s)**
-   - Cut **1 waistband**
+   - **2 Manschetten(e) schneiden**
+   - **1 Taillenband schneiden**
 
 <Warning>
 
-###### Caveats
+###### Vorsichten
 
- - **sleeve**: There's a single notch at the front, and a double notch at the back. These notches match on the front and back parts respectively.
- - **pocket facing** and **hood**: Watch out for the grainlines on these parts
+ - **Ärmel**: An der Vorderseite gibt es eine Einzelstube und eine Doppelstube auf der Rückseite. Diese Noten passen auf die Vorder- bzw. Rückenteile zusammen.
+ - **Taschenverkleidung** und **hood**: Achte auf die Körnungen an diesen Teilen
 
-Because Hugo's raglan sleeve also covers a portion of the back and front,
-the sleeve is the dominant feature of your draft.
+da Hugos Kanalhülse auch einen Teil der Vorder- und Rückseite abdeckt,
+der Ärmel ist das dominante Merkmal Ihres Entwurfs.
 
 </Warning>
