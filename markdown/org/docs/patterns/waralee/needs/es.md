@@ -1,6 +1,6 @@
 
-To make Waralee, you will need the following:
+Para hacer Waralee, necesitarás lo siguiente:
 
   - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-  - About 2 meters of a suitable fabric
-  - Some interfacing for the waistband
+  - Alrededor de 2 metros de una tela adecuada
+  - Interfaz para la cintura
