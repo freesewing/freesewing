@@ -1,3 +1,3 @@
 ![Estilo del dobladillo](hemstyle.svg)
 
-Do you want a classic hemline, or a rounded hemline?
+¿Quieres un hemline clásico, o un hemin redondeado?
