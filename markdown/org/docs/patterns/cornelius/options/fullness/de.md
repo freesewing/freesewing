@@ -2,4 +2,4 @@
 title: Fülle
 ---
 
-Influences the ease on the legs for a looser style.
+Beeinflusst die Leichtigkeit auf den Beinen für einen lockereren Stil.
