@@ -1,2 +1,2 @@
 
-Controls the depth of your armhole, as a factor of your shoulder to shoulder measurement.
+Steuert die Tiefe deines Armlochs als Faktor der Schultermessung.
