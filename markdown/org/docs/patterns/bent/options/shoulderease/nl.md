@@ -1,6 +1,6 @@
 
-The amount of ease across the shoulders. When making a coat or jacket, you want to foresee more ease so one can wear layers under the coat/jacket.
+De hoeveelheid overwijdte aan de schouders. Bij het maken van een jas of jas wil je meer overwijdte voorzien zodat één lagen onder de jas of jas kan dragen.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderease_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_shoulderease_sample.svg "Effect van deze optie op het patroon")
