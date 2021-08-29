@@ -2,7 +2,7 @@
 title: Hombro a codo
 ---
 
-The **shoulder to elbow** measurement runs from the edge of your shoulder down to your elbow.
+La medición del hombro **al codo** va desde el borde del hombro hasta el coco.
 
-To measure your **shoulder to elbow**, start at the edge of your shoulder, where your sleeve starts at a well-fitting shirt. Follow your arm down to your elbow.
+Para medir tu hombro **a codo**, empieza en el borde del hombro, donde la manga comienza en una camisa bien adaptada. Sigue tu brazo hasta tu coco.
 
