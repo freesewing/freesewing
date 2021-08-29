@@ -1,11 +1,11 @@
 ---
-title: Back dart height
+title: Altura del dart trasero
 ---
 
-![The effect of the back dart height option on the pattern](sample.png)
+![El efecto de la altura del dardo posterior en el patrón](sample.png)
 
-The **back dart height** option controls the height (lenght if you will) of the back dart.
+La opción **altura del dardo trasero** controla la altura (longitud) del dart trasero.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backdartheight_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_backdartheight_sample.svg "Efecto de esta opción en el patrón")
