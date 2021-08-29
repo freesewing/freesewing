@@ -1,5 +1,5 @@
-To make Titan, you will need the following:
+Um Titan zu machen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1.5 meter of suitable fabric ([see Fabric options](/docs/patterns/titan/fabric))
+- Etwa 1,5 Meter geeigneter Stoff ([siehe Stoffoptionen](/docs/patterns/titan/fabric))
 
