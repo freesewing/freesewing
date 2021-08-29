@@ -1,4 +1,4 @@
 
-This controls the amount of ease at the instep, or heel.
+Dies steuert die Menge der Leichtigkeit statt an der Stelle oder Ferse.
 
-Increase this to make it easier to get in and out of your pants.
+Vergrößern Sie dies, um es einfacher zu machen, in und aus Ihrer Hose zu kommen.
