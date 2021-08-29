@@ -1,2 +1,2 @@
 
-Controls the depth of the back pocket bag.
+Bepaalt de diepte van het achterzakdeel.
