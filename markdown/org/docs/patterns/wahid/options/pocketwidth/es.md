@@ -1,2 +1,2 @@
 
-Controls the width of the pockets.
+Controla el ancho de los bolsillos.
