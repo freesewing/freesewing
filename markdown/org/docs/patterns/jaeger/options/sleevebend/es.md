@@ -1,5 +1,5 @@
 
 ![Manga doblada](sleevebend.svg)
 
-The bend at the elbow of your sleeve.
+La curva en el codo de la manga.
 
