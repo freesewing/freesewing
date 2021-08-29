@@ -1,4 +1,4 @@
 
 ![Hauteur du col](collarheight.svg)
 
-This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+Il s'agit de la hauteur du col à l'arrière du cou et ne peut jamais être inférieur à deux fois la hauteur du collier de la ligne de roulement.
