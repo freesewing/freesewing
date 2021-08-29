@@ -1,7 +1,7 @@
 ---
 backOpening:
   title: Rugopening
-  description: Controls the opening at the back of the apron
+  description: Bepaalt de opening aan de achterkant van de schort
 chestDepth:
   title: Strap length
   description: Controls the length of the straps
