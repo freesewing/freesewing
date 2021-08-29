@@ -5,6 +5,6 @@ Kies 'ja' voor een naadloze cirkel, die aan een dubbele stofvouw geknipt wordt. 
 
 <Note>
 
-This produces a full circle ignoring the *Circle percent* option.
+Dit maakt een volledige cirkel en negeert de optie *Cirkelpercentage*
 
 </Note>
