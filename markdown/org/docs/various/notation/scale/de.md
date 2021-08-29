@@ -1,11 +1,11 @@
 ---
-title: Scale box
+title: Skalierungsbox
 ---
 
-The scale box allows you to verify that your pattern was printed to the correct scale:
+Die Skalierungsbox erlaubt Ihnen zu überprüfen, ob Ihr Muster in der richtigen Skalierung gedruckt wurde:
 
 <Legend part="scalebox" caption="The scale box" >
 
 <Tip>
-To verify the printed size, you can first only print the page that has the scale box on it.
+Um die gedruckte Größe zu verifizieren, können Sie zuerst nur die Seite ausdrucken, die die Skalierungsbox auf ihr hat.
 </Tip>
