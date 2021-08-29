@@ -1,13 +1,13 @@
 
-Controls the distribution of fabric between front and back parts at the waist.
+Bepaalt de verdeling van de stof tussen de voor- en achterkant aan de taille.
 
-It is somewhat in vogue to draft a larger back panel these days. Doing so shifts the side seam forward which gives the illusion of being slimmer.
+Het is een beetje schoorvoetend om tegenwoordig een groter achterpaneel te ontwerpen. Dit verschuift de zijnaad vooruit, wat de illusie geeft slanker te zijn.
 
-The side effect of shifting the side seam forward is that it's easy to get into the pockets that are located on the side seam.
+Het zijeffect van het verschuiven van de zijnaad is dat het gemakkelijk is om in de zakken te komen die zich aan de zijnaad bevinden.
 
-This option allows you to control this balance.
+Met deze optie kunt u dit saldo beheren.
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbalance_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_waistbalance_sample.svg "Effect van deze optie op het patroon")
