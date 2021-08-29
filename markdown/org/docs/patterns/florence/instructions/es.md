@@ -18,7 +18,7 @@ Así que si te da igual, siéntete libre de saltártelo.
 
 Plancha la costura en la costura central abierta para que quede bonita y plana.
 
-Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la plancha desde al lado, y después hacer la segunda mitad desde el otro. Alternatively, you can use a tailor's ham or cushion to press.
+Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la plancha desde al lado, y después hacer la segunda mitad desde el otro. Alternativamente, puede utilizar un jamón o cojín para prensa.
 
 <Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
 
