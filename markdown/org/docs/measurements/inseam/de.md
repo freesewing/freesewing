@@ -2,6 +2,6 @@
 title: Schrittlänge
 ---
 
-The **inseam** is the measurement from your crotch down to the floor.
+Die **InNaht** ist die Messung von Ihrem Schneider bis zum Boden.
 
-To measure your **inseam**, measure down vertically from the point your legs join (at the crotch) down to the floor.
+Um Ihre **Inseam**zu messen, setzen Sie sich vertikal ab dem Punkt in den Boden hinunter.
