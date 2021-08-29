@@ -1,14 +1,14 @@
 
 <Tip>
 
-##### Follow the sew-along with Kelly and Julian
+##### Volg de naad met Kelly en Julian
 
-Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
-all the steps.
-If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
+Kelly Hogaboom en Julian Collins deden een Simon(e) naadong, en ze hebben video's van
+alle stappen.
+Als je dit patroon wilt maken, kan Kelly en Julian je begeleiden om te beginnen.
 
-You can find all the material's on Kelly's 
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Je kunt al het materiaal vinden op 
+-site: [#simonsayssew met kelly hogaboom-& juliaanse collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
@@ -398,7 +398,7 @@ Tijd voor origami! We gaan de mouwsplitbies plooien, met de aangegeven vouwlijne
  - Plooi daarna de twee hoekjes tot een mooie punt.
  - Strijk alles nog eens grondig.
 
-Here's a very short YouTube video of me folding the placket:
+Hier is een heel korte YouTube-video van mij het knopenpat vouwen:
 <YouTube id='kgd5eubxShM' />
 
 #### Speld de mouwsplitbies
