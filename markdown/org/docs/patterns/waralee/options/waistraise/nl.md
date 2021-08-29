@@ -1,2 +1,2 @@
-How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+Hoeveel hoger de taille dan de maat voor de diepte van de zitplaats. Dit beïnvloedt de diepte van de kruissnijding.
 
