@@ -1,5 +1,5 @@
 
-Controls by how much the crotch is lowered.
+Bepaalt hoeveel het kruis verlaagd is.
 
-Lowering the crotch makes for a more casual fit.  
-A signigicantly lowered crotched can also be a style choice.
+Het kruis verlagen zorgt voor een meer casual pasvorm.  
+Een betekenisvol verlaagde kruis kan ook een keus zijn.
