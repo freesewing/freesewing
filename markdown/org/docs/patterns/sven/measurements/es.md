@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternMeasurements from '../../../../../../src/components/docs/pattern-measurements'
+importar medidas de patrón de '../../../../../../../components/docs/pattern-measurements'
 
 <PatternMeasurements pattern='sven' />
 
