@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your chest
+Controla la cantidad de facilidad en tu pecho
