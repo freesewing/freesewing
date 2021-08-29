@@ -12,7 +12,7 @@ locale:
   title: Idioma
   description: Determina el lenguaje utilizado en tu patrón
 only:
-  title: Contenido
+  title: Contenidos
   description: Le permite controlar qué partes del patrón se incluirán en su patrón
 units:
   title: Unidades

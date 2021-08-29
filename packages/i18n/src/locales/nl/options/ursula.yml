@@ -12,8 +12,8 @@ elasticStretch:
   title: Elastic stretch
   description: Adjust this for more or less stretchy elastic
 rise:
-  title: Rise
-  description: Controls the height of the waist
+  title: Hoogte
+  description: Bepaalt de hoogte van de taille
 legOpening:
   title: Leg opening
   description: Controls how high the leg is cut out

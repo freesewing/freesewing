@@ -24,7 +24,7 @@ frontArmholeDeeper:
   title: Sujetador delantero extra recorte
   description: '¿Cuánto quieres que se corte la sisa delantera más allá de la espalda?'
 lengthBonus:
-  title: Extra de longitud
+  title: Bonus de longitud
   description: La cantidad a elongar. Valores negativos lo acortan.
 s3Collar:
   title: 'Shoulder seam shift: collar side'

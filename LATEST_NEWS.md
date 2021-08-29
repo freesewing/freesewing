@@ -4,9 +4,9 @@ Check out the latest addition to our catalog: [the Ursula undies pattern](/desig
 
 It's a basic, highly-customizable underwear pattern. A quick make, and ideal as a stash buster.
 
-##### Next contributor call on 21 August
+##### Next contributor call on 04 September
 
-The next contributor call is on **21 August 2021**, Lucian and Karen will host it.
+The next contributor call is on **04 September 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.

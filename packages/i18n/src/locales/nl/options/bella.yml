@@ -1,9 +1,9 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Overwijdte borst
   description: Controls the amount of ease at the fullest part of your chest
 waistEase:
-  title: Waist ease
+  title: Overwijdte taille
   description: Controls the amount of ease at your waist
 bustSpanEase:
   title: Bust span ease
@@ -12,7 +12,7 @@ backDartHeight:
   title: Back dart height
   description: Controls the height of the back dart
 bustDartLength:
-  title: Bust dart length
+  title: Lengte busteneep
   description: Controls the length of the bust dart
 waistDartLength:
   title: Waist dart length
@@ -36,7 +36,7 @@ backArmholePitchDepth:
   title: Back armhole pitch depth
   description: Tweaks the horizontal placement of the back armhole pitch point
 backNeckCutout:
-  title: Back neck cutout
+  title: Hals uitsnijding achteraan
   description: Controls how deep the neck opening is scooped out at at the back
 backHemSlope:
   title: Back hem slope

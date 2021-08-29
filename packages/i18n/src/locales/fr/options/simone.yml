@@ -6,7 +6,7 @@ bustDartLength:
   title: Longueur des pinces poitrine
   description: Contrôle à quel point la pince poitrine sera proche de l'apex du buste (la pointe des seins)
 contour:
-  title: Contour
+  title: Angle des découpes princesses
   description: Contrôle à quel point le volume sera réduit sous les seins
 frontDarts:
   title: Pinces de taille

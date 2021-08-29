@@ -6,7 +6,7 @@ bandLength:
   title: Longueur de bande
   description: Longueur de la bande
 tipWidth:
-  title: Largeur de la pointe
+  title: Largeur de pointe
   description: Largeur des pointes
 knotWidth:
   title: Largeur du noeud

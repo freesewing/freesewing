@@ -24,10 +24,10 @@ frontPocketSlantBend:
   title: Front pocket slant bend
   description: Controls the radius by which we round the pocket slant into the outseam
 frontPocketWidth:
-  title: Front pocket width
+  title: Breedte zak
   description: Controls the width of the front pocket bag
 frontPocketDepth:
-  title: Front pocket depth
+  title: Diepte zak
   description: Controls the depth of the front pocket bag
 frontPocketFacing:
   title: Front pocket facing

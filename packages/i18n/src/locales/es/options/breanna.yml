@@ -21,7 +21,7 @@ verticalEase:
   title: Vertical ease
   description: The amount of ease to distribute along the length of the garment
 waistEase:
-  title: Waist ease
+  title: Holgura de cintura
   description: The amount of ease at the waist
 primaryBustDart:
   title: Bust dart

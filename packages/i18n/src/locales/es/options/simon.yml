@@ -1,6 +1,6 @@
 ---
 backDarts:
-  title: Back darts
+  title: Pinzas traseras
   description: Incluir o no pinzas traseras
   options:
     auto: Automático

@@ -66,10 +66,10 @@ centerFrontHemDrop:
   title: Décalage de la longueur à l'avant
   description: La valeur par laquelle la longueur de l'avant est abaissée
 backVent:
-  title: Fentes arrière
+  title: Fente dos
   description: Nombre de fentes à l'arrière
 backVentLength:
-  title: Longueur de fente arrière
+  title: Longueur de la fente arrière
   description: La longueur du ou des fente(s) arrière(s)
 buttonLength:
   title: Longueur de boutonnage
@@ -108,5 +108,5 @@ rollLineCollarHeight:
   title: Hauteur de la ligne de cassure du col
   description: Combien la ligne de cassure épouse le cou
 hemRadius:
-  title: Arrondi d'ourlet
+  title: Rayon d'ourlet
   description: Le montant par lequel l'ourlet est arrondi

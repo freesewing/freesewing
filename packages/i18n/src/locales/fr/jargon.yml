@@ -1,6 +1,6 @@
 ---
 basting:
-  term: bâti
+  term: bâtir
   description: "Voir <a href='/docs/sewing/basting/'>Bâtir</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 coverlock:
   term: recouvreuse
@@ -30,7 +30,7 @@ hemming:
   term: ourlet
   description: "Voir <a href='/docs/sewing/hemming/'>Ourlet</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 jersey:
-  term: Jersey
+  term: jersey
   description: "Voir <a href='/docs/sewing/jersey/'>Jersey</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 knitBinding:
   term: biais de jersey
@@ -48,7 +48,7 @@ sa:
   term: marge de couture
   description: "Voir <a href='/docs/sewing/seam-allowance/'>Marge de couture</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 serger:
-  term: sergeur
+  term: surjeteuse
   description: "Voir <a href='/docs/sewing/serger/'>Surgeteuse</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
 topstitching:
   term: surpiqûre
@@ -69,11 +69,11 @@ patternOptions:
   term: options du patron
   description: 'Les <b>options de patron</b> vous permettent de personnaliser le design du patron'
 draftSettings:
-  term: Paramètres de patrons générés
+  term: réglages de l'ébauche
   description: 'Les <b>paramètres de patrons générés</b> vous donnent le contrôle de la manière dont un patron est généré'
 patrons:
-  term: patrons
-  description: 'Les mécènes soutiennent financièrement Freesewing. Ce sont des fidèles soutiens qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.'
+  term: mécènes
+  description: 'Les mécènes soutiennent financièrement Freesewing. Ce sont des partisans fidèles qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté.'
 msf:
   term: MSF
   description: "Médecins Sans Frontières/Doctors Sans Frontières - Voir <a href='https://msf.org/'>msf.org</a>"

@@ -3,10 +3,10 @@ backDartDepthFactor:
   title: Factor lengte neep rug
   description: Hoe ver de neep achteraan naar beneden komt vanaf de tailleband. Dit is een factor van de Natuurlijke Taille Tot Zitvlak-maat.
 backVent:
-  title: Split achter
+  title: Vent achteraan
   description: Voeg een split toe aan de achterkant van de rok.
 backVentLength:
-  title: Lengte split achter
+  title: Lengte vent achteraan
   description: Lengte van het loopsplit als een percentage van de lengte van de rok.
 dartToSideSeamFactor:
   title: Factor neep tot zijnaad
@@ -21,7 +21,7 @@ hemBonus:
   title: Bonus zoom
   description: Deze optie maakt de omtrek van de rok aan de zoom kleiner. Percentage van de Omtrek Zitvlak-maat.
 lengthBonus:
-  title: Bonus lengte
+  title: Lengtebonus
   description: Dit bepaalt de lengte van de rok. Een percentage van de Taille tot Knie-maat.
 nrOfDarts:
   title: Aantal nepen

@@ -12,7 +12,7 @@ heel: Tour de talon
 highBustFront: Largeur de buste supérieur
 highBust: Tour de buste supérieur
 hips: Tour des petites hanches
-hpsToBust: Longueur épaule-poitrine
+hpsToBust: Hauteur de poitrine
 hpsToWaistBack: Longueur épaule-taille dos
 hpsToWaistFront: Longueur épaule-taille devant
 inseam: Longueur d'entrejambe
@@ -21,7 +21,7 @@ neck: Tour de cou
 seat: Tour de bassin
 seatBack: Bassin arrière
 crotchDepth: Hauteur de fourche
-shoulderSlope: Pente d'épaule
+shoulderSlope: Pente des épaules
 shoulderToElbow: Longueur épaule au coude
 shoulderToShoulder: Largeur d'épaules
 shoulderToWrist: Longueur de bras
@@ -30,9 +30,9 @@ upperLeg: Tour de cuisse
 waist: Tour de taille
 waistBack: Taille arrière
 waistToFloor: Hauteur de taille
-waistToHips: Hauteur taille hanche
+waistToHips: Hauteur taille hanches
 waistToKnee: Hauteur taille genou
 waistToSeat: Hauteur taille bassin
 waistToUnderbust: Hauteur taille sous-poitrine
-waistToUpperLeg: Hauteur taille bassin
+waistToUpperLeg: Hauteur taille cuisse
 wrist: Tour de poignet

@@ -39,7 +39,7 @@ waistBalance:
   title: Équilibre de la taille
   description: Contrôle la position horizontale de la taille par rapport au bassin
 waistbandWidth:
-  title: Waistband width
+  title: Largeur de ceinture
   description: The width of the waistband
 grainlinePosition:
   title: Position de la ligne de droit fil

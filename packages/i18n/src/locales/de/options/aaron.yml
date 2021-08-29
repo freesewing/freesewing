@@ -6,8 +6,8 @@ backlineBend:
   title: Armlochform hinten
   description: Bestimmt die Form / Krümmung der Rückseite der Armlöcher.
 hipsEase:
-  title: Zugabe Hüfte
-  description: Die Menge an Bequemlichkeitszugabe an deinen Hüften.
+  title: Bequemlichkeitszugabe Hüfte
+  description: Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften.
 necklineBend:
   title: Ausschnittsform
   description: Bestimmt die Form / Krümmung des Halsausschnitts vorne.

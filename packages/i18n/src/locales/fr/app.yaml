@@ -14,7 +14,7 @@ askForHelp: Demander de l'aide
 automatic: Automatique
 averagePeopleDoNotExist: "Les personnes standards n'existent pas"
 awesome: Incroyable
-back: Retour
+back: Dos
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
 blog: Blog
@@ -40,7 +40,7 @@ configureLayout: Configurer la mise en page
 configureYourDraft: Configurez votre propre patron
 contactUs: Nous contacter
 contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
-contents: Contenus
+contents: Contenu
 continue: Continuer
 copiedToClipboard: Copié dans le presse-papier
 copy: Copier
@@ -52,7 +52,7 @@ customSeamAllowance: Marge de couture customisée
 lightMode: Mode Clair
 data: Données
 darkMode: Mode sombre
-default: Par défaut
+default: Défaut
 demo: Démo
 designOptions: Options de design
 designs: Designs
@@ -88,7 +88,7 @@ github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
 goodToSeeYouAgain: Content de te revoir {user}
-handle: Référence
+handle: Anse
 helpUsTranslate: Aidez-nous à traduire
 home: Page d'accueil
 howCanWeHelpYou: Comment pouvons-nous vous aider ?
@@ -140,7 +140,7 @@ patronPitch: Si vous pensez que ce que nous faisons vaut la peine, et si vous po
 patronsKeepUsAfloat: Freesewing est rendu possible grâce au soutien financier de nos mécènes. Ils gardent ce navire à flot.
 patternInstructions: Documentation du patron
 patternOptions: Options du patron
-pattern: Patron
+pattern: patron
 sewingPatterns: Patrons de couture
 patterns: Patrons
 pendingConfirmation: En attente de confirmation
@@ -186,7 +186,7 @@ startOver: Recommencer
 startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
 startTranslatingNow: Commencez à traduire maintenant
 subscribe: Souscrire
-support: Soutien
+support: Support
 supportFreesewing: Soutenir freesewing
 tellMeMore: En savoir plus
 thanksForYourSupport: Merci pour votre soutien
@@ -215,7 +215,7 @@ weNeverShareYourEmail: Nous ne partagerons jamais votre adresse email avec quico
 whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
-yay: Yahou !
+yay: Yeh !
 yes: true
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
@@ -286,7 +286,7 @@ contributeToThing: Contribuer à {thing}
 mtmIsOurJam: Les patrons de couture sur mesure sont notre spécialité
 fitYouDeserve: Vous passez vraiment à côté de quelque chose si vous utilisez des tailles standardisées.<br />Alors inscrivez-vous dès aujourd'hui et obtenez le rendu que vous méritez.
 supportNag: <b>Free</b>Sewing est <b>gratuit</b>, mais nous apprécierions si vous envisagiez de <a href='/patrons/join/'>nous soutenir</a>.
-madeToMeasure: Sur-mesure
+madeToMeasure: sur mesure
 sizes: Tailles
 standardSizes: Tailles standard
 accountRequired: Cette fonctionnalité nécessite un compte FreeSewing
@@ -297,7 +297,7 @@ shareThing: 'Partager {thing}'
 link: Lien
 cloneThing: 'Dupliquer {thing}'
 cloneDescription: Recréer une copie exacte, en utilisant les mesures du patron d'origine.
-furtherReading: En lire plus
+furtherReading: Lire plus
 saveAsNewPattern: Enregistrer en tant que nouveau patron
 saveAsNewPattern-txt: Stocker (une copie de) ce patron sur votre compte FreeSewing
 exportPattern: Exporter le patron

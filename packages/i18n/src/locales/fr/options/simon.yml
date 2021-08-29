@@ -25,8 +25,8 @@ buttonPlacketStyle:
   title: Style de patte de boutonnage
   description: Style de la patte de boutonnage
   options:
-    classic: Style classique
-    seamless: Style français (sans couture)
+    classic: Style classique (gorge américaine, bande avec surpiqûres)
+    seamless: Style français (gorge simple, sans couture)
 buttonPlacketWidth:
   title: Largeur de patte de boutonnage - côté boutons
   description: Largeur de la patte de boutonnage sur le côté des boutons.
@@ -34,16 +34,16 @@ buttonFreeLength:
   title: Longueur sans bouton
   description: Quelle distance laisser sans bouton à partir du bas devant de la chemise .
 buttonholePlacketFoldWidth:
-  title: Largeur de repli de la gorge (patte de boutonnage - du côté boutonnières)
+  title: Largeur du pli de la patte de boutonnage (côté boutonnières)
   description: Largeur du pli de la gorge (patte de boutonnage, du côté des boutonnières).
 buttonholePlacketStyle:
-  title: Style de gorge (patte de boutonnage - du côté boutonnières)
+  title: Style de patte de boutonnage (côté boutonnières)
   description: Style de la gorge (patte de boutonnage, côté boutonnières).
   options:
-    classic: Style classique (gorge américaine, bande avec surpiqûres)
-    seamless: Style français (gorge simple, sans couture)
+    classic: Style classique
+    seamless: Style français (sans couture)
 buttonholePlacketWidth:
-  title: Largeur de la gorge (patte de boutonnage - du côté boutonnières)
+  title: Largeur de patte de boutonnage (côté boutonnières)
   description: Largeur de la gorge (patte de boutonnage, côté des boutonnières).
 buttons:
   title: Nombre de boutons
@@ -82,10 +82,10 @@ cuffDrape:
   title: Drapé du bas de manche
   description: Il s'agit de la largeur supplémentaire de tissu de la manche par rapport au poignet, à l'endroit où ils sont joints.
 cuffLength:
-  title: Longueur de poignet
+  title: Longueur de bracelet
   description: La longueur des poignets.
 cuffStyle:
-  title: Style de poignet
+  title: Style de bracelet
   description: Style de poignets.
   options:
     roundedBarrelCuff: Poignet classique rond
@@ -104,7 +104,7 @@ hemCurve:
   title: Courbe de l'ourlet
   description: La hauteur de l'arrondi sur un ourlet arrondi.
 hemStyle:
-  title: Type d'ourlet
+  title: Style d'ourlet
   description: Le style de l'ourlet de la chemise.
   options:
     straight: Ourlet droit
@@ -126,7 +126,7 @@ sleevePlacketWidth:
   title: Largeur de la patte de manche
   description: La largeur de la patte de manche
 splitYoke:
-  title: Empiècement divisé
+  title: Empiècement dos à couture médiane ("split yoke")
   description: Dessiner un empiècement divisé ou classique (une seule pièce).
 waistEase:
   title: Aisance à la taille

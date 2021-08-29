@@ -12,7 +12,7 @@ devDocsAvailableAt: Documentatie voor ontwikkelaars is beschikbaar op
 talkToUs: For questions, feedback or suggestions, join our Discord server
 draftYourPattern: Teken je patroon
 testYourPattern: Test je patroon
-draftThing: 'Draft {thing}'
+draftThing: 'Teken {thing}'
 testThing: 'Test {thing}'
 renderInBrowser: Klik hieronder om je patroon in de browser te tonen.
 weWillReRender: Wanneer je wijzigingen maakt, renderen we opnieuw.

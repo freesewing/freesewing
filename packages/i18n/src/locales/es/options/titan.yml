@@ -6,7 +6,7 @@ waistHeight:
   title: Waist height
   description: Controls the height of the waist, 100% = waist height, 0% = hip height
 lengthBonus:
-  title: Length bonus
+  title: Bonus de longitud
   description: Controls the length of the trousers
 crotchDrop:
   title: Crotch drop
@@ -39,7 +39,7 @@ waistBalance:
   title: Waist balance
   description: Controls the horizontal position of the waist relative to the seat
 waistbandWidth:
-  title: Waistband width
+  title: Anchura de la cinturilla
   description: The width of the waistband
 grainlinePosition:
   title: Grainline position

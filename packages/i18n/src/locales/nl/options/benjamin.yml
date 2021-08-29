@@ -6,18 +6,18 @@ bandLength:
   title: Lengte band
   description: Lengte van de band
 tipWidth:
-  title: Breedte punten
+  title: Tip breedte
   description: Breedte van de punten
 knotWidth:
-  title: Breedte knoop
+  title: Knoop breedte
   description: Breedte van de knoop
 bowLength:
   title: Lengte strik
-  description: Lengte van de strik (wanneer geknoopt)
+  description: De lengte van gestrikt (gestrikt)
 bowStyle:
   title: Stijl strik
   description: Stijl van de strik
 endStyle:
-  title: Stijl punt
+  title: Puntvorm
   description: Stijl van de puntjes van de strik
 

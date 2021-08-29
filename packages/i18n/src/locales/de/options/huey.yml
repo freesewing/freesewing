@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Tasche
-  description: Ob eine Fronttasche hinzugefügt werden soll oder nicht
+  description: Legt fest, ob vordere Taschen integriert werden oder nicht
 pocketHeight:
   title: Taschenhöhe
   description: Steuert die Höhe der Tasche

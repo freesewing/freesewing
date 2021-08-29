@@ -49,7 +49,7 @@ buttons:
   title: Aantal knopen
   description: Het aantal knopen op de sluiting vooraan.
 collarAngle:
-  title: Hoekjes kraag
+  title: Hoek kraag
   description: De hoek van de punten van de kraag. 
 collarBend:
   title: Kromming kraag
@@ -85,7 +85,7 @@ cuffLength:
   title: Lengte manchet
   description: De lengte van de manchetten.
 cuffStyle:
-  title: Stijl manchet
+  title: Stijl Manchet
   description: De stijl van de manchetten.
   options:
     roundedBarrelCuff: Afgeronde klassieke manchet

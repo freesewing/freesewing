@@ -14,7 +14,7 @@ askForHelp: Pide ayuda
 automatic: Automático
 averagePeopleDoNotExist: "La gente promedio no existe"
 awesome: Genial
-back: atras
+back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
 blog: Blog
@@ -40,7 +40,7 @@ configureLayout: Configurar diseño
 configureYourDraft: Configurar su boceto
 contactUs: Contactáctanos
 contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
-contents: Contenidos
+contents: Contenido
 continue: Continuar
 copiedToClipboard: Copiado al portapapeles
 copy: Dupdo
@@ -135,12 +135,12 @@ patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
 patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
-patron: Mecenas
+patron: Patrocinador
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
 patternOptions: Opciones del patrón
-pattern: Patrón
+pattern: patrón
 sewingPatterns: Sewing patterns
 patterns: Patrones
 pendingConfirmation: Confirmación pendiente
@@ -259,7 +259,7 @@ startWithNeckTitle: Start with the neck circumference
 startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
 whatYouNeed: What you need
 fabricOptions: Fabric options
-cutting: Cutting
+cutting: Corte
 instructions: Instructions
 hide: Hide
 show: Show
@@ -286,18 +286,18 @@ contributeToThing: Contribute to {thing}
 mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
 fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
 supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
-madeToMeasure: Made-to-measure
+madeToMeasure: a medida
 sizes: Sizes
 standardSizes: Standard sizes
 accountRequired: This feature requires a FreeSewing account
-size: Size
+size: Tamaño
 switchToThing: 'Switch to {thing}'
 saveThing: 'Save {thing}'
 shareThing: 'Share {thing}'
 link: Link
 cloneThing: 'Clone {thing}'
 cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
-furtherReading: Further reading
+furtherReading: Lectura adicional
 saveAsNewPattern: Save As New Pattern
 saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
 exportPattern: Export pattern

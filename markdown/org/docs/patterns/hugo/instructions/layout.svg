@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+      __                           _           
+     / _|_ _ ___ ___ ________ __ _(_)_ _  __ _ 
+    |  _| '_/ -_) -_|_-< -_) V  V / | ' \/ _` |
+    |_| |_| \___\___/__|___|\_/\_/|_|_||_\__, |
+                  freesewing.org         |___/ 
+     
+    This pattern is available under a 
+    Creative Commons Attribution license (CC-BY)
+    https://creativecommons.org/licenses/by/3.0/
+    See: https://docs.freesewing.org/license 
+
+  -->
+
+<svg
+    width ="6303.2740217712"
+    height ="3752.7059090977"
+    viewbox ="0 0 6303.2740217712 3752.7059090977" class="freesewing"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+>
+
+<style type="text/css">
+    <![CDATA[
+    path,circle,rect{fill:none;stroke:none}path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}path.fabric{stroke-width:.6;stroke:#653f95}path.lining{stroke-width:.6;stroke:#0275d8}path.interfacing{stroke-width:.6;stroke:#d9534f}path.canvas{stroke-width:.6;stroke:#5cb85c}path.various{stroke-width:.6;stroke:#5bc0de}path.sa{stroke-dasharray:0.4,0.8}path.help{stroke-width:.2;stroke-dasharray:15,1.5,1,1.5}path.hint{stroke-width:.2;stroke-dasharray:0.4,0.8}path.note{stroke:#0275d8;stroke-width:.6;marker-start:url(#noteArrow)}text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:200}text.part-nr{font-size:28px;text-anchor:middle;fill:#000;font-weight:100}text.part-nr.horizontal{text-anchor:start}text.part-title{font-size:18px;text-anchor:middle;fill:#000}text.part-title.horizontal{text-anchor:start}text.part-msg{font-size:10px;text-anchor:middle}text.part-msg.horizontal,text.part-title.vertical,text.part-msg.vertical{text-anchor:start}text.part-nr.small{font-size:14px}text.part-title.small{font-size:9px}text.part-msg.small{font-size:5px}text.note,text.dimension-label{fill:#0275d8}text.note tspan{alignment-baseline:middle}text.note-5,text.note-6,text.note-7,text.note-11,text.note-12,text.note-0,text.note-1,text.dimension-label{text-anchor:middle}text.note-8,text.note-9,text.note-10{text-anchor:end}text.dimension-label{font-size:7px}text.grainline{fill:#999}path.arrow{stroke:#0275d8}path.grainline{stroke:#999;stroke-width:.6;marker-start:url(#grainlineStart);marker-end:url(#grainlineEnd)}path.dimension{stroke:#0275d8;stroke-width:.6;marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}path.dimension.dimension-sm{stroke-width:.3}path.dimension-leader{stroke:#0275d8;stroke-width:.3}path.single-arrow{marker-start:url(#dimensionStart)}path.double-arrow{marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}.text-xs{font-size:3px}.text-sm{font-size:4px}.text-lg{font-size:7px}.text-xl{font-size:9px}.text-center{text-anchor:middle}.stroke-xs{stroke-width:.1}.stroke-sm{stroke-width:.2}.stroke-lg{stroke-width:.6}.stroke-xl{stroke-width:1}.stroke-xxl{stroke-width:2}.dashed{stroke-dasharray:1,1.5}.dotted{stroke-dasharray:0.4,0.8}.hidden{stroke:none;file:none}.stroke-fabric{stroke:#653f95}.stroke-lining{stroke:#0275d8}.stroke-interfacing{stroke:#d9534f}.stroke-canvas{stroke:#5cb85c}.stroke-note{stroke:#0275d8}.stroke-mark{stroke:#f0ad4e}.stroke-hint{stroke:#86739c}.stroke-gray{stroke:#999}.fill-fabric{fill:#653f95}.fill-lining{fill:#0275d8}.fill-interfacing{fill:#d9534f}.fill-canvas{fill:#5cb85c}.fill-note{fill:#0275d8}.fill-mark{fill:#f0ad4e}.fill-hint{fill:#86739c}.fill-gray{fill:#999}]]>
+</style>
+
+<defs id="defs">
+    <marker orient="auto" refY="0.0" refX="0.0" id="noteArrow" style="overflow:visible;" > <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 9,-3 C 8,-2 8,2  9, 3 z" /> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="dimensionStart" style="overflow:visible;" > <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" /> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="dimensionEnd" style="overflow:visible;" > <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z" /> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="grainlineStart" style="overflow:visible;" > <path style="stroke: #999999; fill: #999999;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" /> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="grainlineEnd" style="overflow:visible;" > <path style="stroke: #999999; fill: #999999;" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z" /> </marker>
+    <g id="notch"> <circle cy="0" cx="0" r="1.4" class="fill-mark" /> <circle cy="0" cx="0" r="2.8" class="stroke-mark stroke-xl" /> </g>
+    <g id="scalebox"> <rect y="0" x="-50.8" height="50.8" width="101.6" style="fill:#333333;fill-opacity:1;stroke:none" /> <rect style="fill:#ffffff;fill-opacity:1;stroke:none" width="100" height="50" x="-49.6" y="0.4" /> <text x="-40" y="10" class="text-sm"> <tspan x="-40" dy="4" class="text-xs">freesewing.org</tspan> <tspan x="-40" dy="8" class="text-xl">Hugo Hoodie </tspan> <tspan x="-40" dy="8" class="fill-brand">freesewing.org/drafts/__REFERENCE__</tspan> </text> <text y="0" x="0" class="text-xs text-center"> <tspan x="0" y="42">The (white) inside of this box should measure 10 by 5 cm</tspan> <tspan x="0" dy="5">The (black) outside of this box should measure 4 by 2 inch</tspan> </text> </g>
+    <g id="logo-sm" transform="scale(0.4)"> <use xlink:href = "#logo"/> </g>
+    <g id="logo-lg" transform="scale(2)"> <use xlink:href = "#logo"/> </g>
+    <g id="logo" transform="translate(-23 -36)"> 
+    <path style="fill:#000;fill-opacity:1;stroke:none;" d="M 23.6,48 C 22.2,47.9 20.9,47.7 19.6,47.4 17.8,46.9 16.9,46.6 15.2,45.8 12.5,44.5 10.6,43 9,40.6 8.6,40 8.5,39.9 8.1,39.1 7.7,38.4 7.6,38.3 7.2,37.2 6.8,36.2 6.5,35.1 6.2,34 6,33.2 6,32.4 5.9,31.6 5.9,31.6 5.8,31.6 5.6,31.5 5.2,31.4 4.81,31.2 4.59,30.8 4.84,30.3 5.4,30.1 5.9,30 6.2,30 6.2,29.9 6.2,29.5 6.2,28.4 6,27.4 5.3,26.6 4.44,25.8 3.09,26.1 2.4,27 2.26,27.1 2.11,27.4 2.03,27.5 1.96,27.5 2,27.1 2.34,26.6 3.71,24.8 5.5,25.3 6.4,27.1 6.7,27.8 6.8,28.4 6.9,29.4 6.9,29.6 6.9,29.8 6.9,29.8 7,29.9 7.1,29.9 7.5,30 9.8,30.4 9.8,30.4 12.5,30.4 14.4,30.4 15.1,30.4 16.5,30.3 16.9,30.3 16.9,30.3 16.9,30.2 17,30.1 16.9,29.8 16.7,29.1 16.5,28 16.3,27.3 16,26.7 15.8,26.5 15.8,26.4 15.7,26.3 15.6,26.2 15.5,26.2 15.4,26.2 15.2,26.1 14.9,25.9 14.8,25.6 14.7,25.5 14.6,24.9 14.7,24.6 14.7,24.4 14.8,24.1 15,23.8 15.2,23.4 15.3,23.2 15.3,23.1 15.3,22.9 15.3,22.5 15.1,21.8 15,21.2 14.9,20.6 14.9,20 14.9,19.8 14.9,19.4 15,19.2 15,19 15,19 14.9,19.1 14.7,19.4 14.6,19.9 14.6,20.5 14.6,20.8 14.7,21 14.9,21.7 15,22.1 15,22.5 14.9,22.7 14.8,22.9 14.6,23.3 14.5,23.3 14.5,23.3 14.5,23.3 14.5,23.2 14.3,22.9 14.1,22.5 14,22.2 14,22 13.8,21.3 13.7,20.5 13.6,19.7 13.4,18.8 13.2,18.1 13,17.1 12.8,15.6 12.7,15 12.7,14.5 12.7,13.5 12.7,13.2 12.7,12.8 13,11.7 13.3,11.1 13.5,10.5 14.1,9.39 14.6,8.74 14.7,8.62 14.8,8.45 14.9,8.36 15.4,7.65 16.1,6.89 17.3,5.93 17.8,5.52 19.1,4.54 19.1,4.54 19.1,4.54 19.1,4.52 19.2,4.49 19.3,4.36 19.9,3.99 20.3,3.81 20.4,3.76 20.6,3.67 20.7,3.61 20.9,3.55 21.1,3.45 21.3,3.38 21.6,3.25 21.6,3.28 21.8,2.88 22.7,1.81 23.8,1.2 25.1,0.775 26.2,0.433 27.2,0.271 28.3,0.264 30.5,0.274 31.8,1.27 34.1,0.69 34.4,0.563 34.9,0.295 35.1,0.099 35.2,0.036 35.3,-0.008 35.3,0.001 35.3,0.029 34.9,0.43 34.6,0.6 33.9,1.14 33.4,1.32 32.5,1.4 32.3,1.43 32.1,1.45 32,1.46 31.9,1.48 32,1.51 32.5,1.55 34.1,1.68 35.7,2.15 37.1,2.82 37.9,3.19 38.6,3.76 39.3,4.57 39.9,5.14 40.3,5.81 40.8,6.48 41.2,7.11 41.6,8.16 41.9,8.92 42.4,10.6 42.6,12.3 42.7,15.8 42.7,16.4 42.8,17 42.8,17.6 42.9,19.3 43,19.9 43.8,22 44,22.6 44,22.7 44.2,23 44.4,23.4 44.6,23.7 44.8,23.9 44.9,24 44.9,24.1 44.9,24.1 44.9,24.2 44.4,23.7 44.1,23.3 43.9,23 43.4,22.1 43.1,21.7 42.9,21.1 42.4,19.5 42.3,18.9 42.2,18.4 42.1,17 42,16.2 41.9,14.5 41.7,13.1 41.5,12 41.1,10.6 40.6,9.32 39.8,8.14 39.4,7.53 38.7,6.56 38.3,6.1 37.6,5.31 36.8,4.61 36,4 35,3.27 33.8,2.85 32.5,2.56 31.2,2.3 30.5,2.23 29.1,2.25 27.4,2.27 26,2.5 24.9,2.91 24.2,3.19 23.8,3.37 23.3,3.71 22.9,4 22.3,4.49 22.3,4.53 22.4,4.54 22.4,4.49 22.6,4.42 25,2.86 26.9,2.4 29.7,2.41 30.4,2.43 31.4,2.51 31.8,2.57 33.5,2.76 34.9,3.42 36.3,4.44 36.6,4.72 37.5,5.58 37.8,5.94 38.8,7.07 39.7,8.38 40.4,9.74 41,10.8 41.3,11.9 41.5,13.1 41.6,13.8 41.6,14 41.6,14.4 41.6,14.8 41.6,14.8 41.5,14.3 41.3,13.8 41.1,13.3 41,12.8 40.7,12.1 40.3,11.1 40,10.6 39.3,9.19 38.3,7.96 37.2,6.85 37.1,6.68 36.7,6.41 36.5,6.25 35.6,5.57 34.7,4.98 33.7,4.5 32.6,4.03 31.5,3.83 30.3,3.67 28.7,3.56 27.2,3.68 25.6,4 24.7,4.22 23.7,4.6 22.9,5.14 22.5,5.41 22.4,5.51 22.5,5.47 22.5,5.46 22.7,5.33 23,5.19 23.9,4.58 25,4.31 26,4.1 27.1,3.94 28.3,3.91 29.4,4.01 32.4,4.19 33.8,4.68 36.2,6.37 37.2,7.12 38,8.06 38.7,9.04 39,9.52 39.4,10.2 40.2,11.6 40.5,12.1 40.8,12.9 41,13.3 41.2,14 41.6,15.2 41.6,15.5 41.8,16.6 41.8,17.7 42,18.8 42,19 42.1,19.5 42.2,19.9 42.2,20.4 42.3,20.9 42.4,21.2 42.5,22 42.7,23.1 42.8,23.6 43,24.7 43.2,25.6 43.6,27.1 43.8,28.1 44.1,29 44.2,29.5 44.3,30.5 44.4,30.6 44.4,31.4 44.4,31.9 44.4,32.1 44.4,32.1 44.3,32.1 44.3,32 44.2,31.8 44.1,31.2 43.8,30.3 43.7,30 43.4,29.3 43.2,28.9 43.1,28.5 42.7,27.4 42.3,26.2 42.1,25.1 41.8,24 41.7,23.2 41.4,21.4 41.1,19 40.9,17.9 40.6,16.7 40.1,14.7 39.6,13.4 39,12.3 38.4,11.3 37.8,10.3 37.1,9.4 36.4,8.5 35,7.25 34.2,6.78 33.5,6.39 32.8,6.11 31.6,5.79 30.6,5.54 29.6,5.33 28.6,5.32 27.2,5.32 26.1,5.46 24.8,5.81 24.1,5.99 23.2,6.34 23.2,6.43 23.1,6.47 23.2,6.46 23.6,6.33 25.4,5.7 27.3,5.36 29.2,5.57 31.2,5.9 33.2,6.65 34.9,7.72 35.8,8.34 36.6,9.08 37.3,9.96 37.9,10.9 38.5,11.8 38.9,12.8 39.6,14.4 40.1,16.1 40.4,17.9 40.6,19.1 40.8,20.2 41,21.4 41.2,22.6 41.3,23.3 41.5,24.1 41.7,25.4 42.1,26.6 42.5,27.8 42.8,28.7 42.9,29.1 43.3,29.9 43.6,30.5 43.8,31.1 44,31.6 44.3,32.3 44.5,33 44.5,33.7 44.4,34.7 44.3,35.5 44,36.9 43.8,37.5 43.6,38.1 43.4,38.7 43.3,39.1 43.1,39.4 43.1,39.4 43,39.4 43.1,39.4 43.2,38.8 43.4,37.9 43.5,37.2 43.6,36.4 43.7,35.9 43.7,34.9 43.7,34.6 43.6,34.3 43.4,33 43.3,32.7 43.2,32.3 42.9,31.4 42.4,30.3 41.9,29.2 41.4,28 41.1,26.8 41.1,26.4 40.9,25.4 40.8,24.6 40.7,24.2 40.6,23.6 40.5,23.1 40.3,21.9 40.3,21.8 40,19.9 39.5,17.2 39.2,15.6 38.7,14 38.3,12.6 37.7,11.5 36.6,10.3 36.1,9.72 35.6,9.26 34.8,8.78 34.5,8.53 33.5,8.04 32.9,7.81 32,7.48 30.4,7.11 29.4,7.01 28.8,6.95 26.9,6.94 26.5,7 25.8,7.08 24.4,7.36 24.3,7.44 24.3,7.48 24.4,7.47 24.5,7.43 24.5,7.41 24.6,7.39 24.7,7.38 24.8,7.37 25,7.34 25.2,7.31 27.1,7 28.2,6.96 29.5,7.15 30.8,7.39 32.2,7.63 33.4,8.15 34.3,8.57 34.9,8.98 35.5,9.5 36,9.94 36.3,10.2 36.7,10.8 37,11.2 37.1,11.5 37.3,11.9 37.7,12.6 37.8,12.9 38.2,13.9 38.2,14.1 38.3,14.4 38.4,14.6 38.6,15 38.8,15.9 38.9,16.2 39,16.8 39.2,17.7 39.3,18.4 39.3,18.7 39.4,19.2 39.4,19.4 39.5,20.1 39.7,21.7 39.8,21.9 40,22.9 40.4,23.9 40.6,25 40.6,25.2 40.8,25.7 40.8,26.1 41,26.9 41.1,27.2 41.1,27.3 41.1,27.3 41.1,27.3 41,27.2 41,27.1 40.8,26.7 40.6,26.3 40,25.1 39.5,23.8 39,22.5 38.8,21.9 38.5,20.7 38.3,19.9 38.1,19.1 38.1,19 38.1,17.9 38.1,17.3 38.1,16.8 38.1,16.7 38,15.5 37.6,14.1 37.3,13.2 36.8,12.2 36.3,11.5 35.5,10.7 35,10.1 34.3,9.59 33.5,9.28 32.2,8.75 30.7,8.58 29.2,8.59 27.9,8.61 27.4,8.67 26.3,8.91 25.5,9.08 24.9,9.26 24.7,9.39 24.6,9.45 24.6,9.44 25,9.34 25.4,9.26 26,9.14 26.6,9.03 27.5,8.88 29.2,8.76 30.1,8.8 31.3,8.84 32.4,9.02 33,9.28 33.7,9.55 34.4,9.87 34.9,10.3 35.9,11.2 36.6,12 37,12.9 37.3,13.4 37.5,14.1 37.6,15 37.7,15.9 37.7,16.1 37.7,16.7 37.7,17.5 37.4,18.3 37.2,19.2 36.9,19.8 36.8,20.5 36.6,21.2 36.4,22 36.4,22.2 36.4,22.9 36.4,23.6 36.5,24.3 36.7,25.1 36.7,25.2 36.7,25.4 36.7,25.4 36.8,25.5 36.8,25.5 36.7,25.4 36.6,25.3 36.2,24.6 36,24.3 35.6,23.3 35.3,22.1 35.6,21 35.7,20.6 35.9,20.2 36.3,18.8 36.6,17.9 36.7,17.7 36.8,17 36.8,16.6 36.8,15.6 36.7,15.1 36.6,14.3 36.3,13.6 35.9,12.9 35.7,12.6 35.1,11.9 34.8,11.6 34.5,11.3 34.1,11 33.7,10.8 33.3,10.6 33.3,10.6 33.4,10.9 33.6,11.1 33.9,11.9 33.9,12.3 34.3,13.9 34.4,15 34.2,16.5 34.2,17.3 34,18.1 33.8,18.9 33.6,19.8 33.5,20.7 33.2,21.5 32.9,22.3 32.6,23 32,23.6 32,23.6 31.8,23.4 31.8,23.2 31.7,23.1 31.7,23 31.7,22.9 31.7,22.9 31.7,22.5 31.8,22.2 32,21.4 32,21.3 31.9,20.8 31.9,20.4 31.9,20.3 31.7,19.8 31.5,19.2 31.4,18.9 31.3,18.8 31.2,18.8 31.2,18.8 31.3,18.9 31.3,19 31.5,19.4 31.5,19.6 31.6,20.1 31.6,20.6 31.4,21.6 31.3,22.8 31.3,23 31.5,23.3 31.5,23.4 31.7,23.6 31.8,23.8 32.2,24.3 32.4,25 32.2,25.6 32,26 31.6,26.4 31.2,26.5 L 31,26.6 C 30.8,27 30.6,27.5 30.4,28 30.1,28.8 29.6,30.2 29.7,30.3 29.7,30.4 29.7,30.4 29.7,30.4 29.8,30.4 30.7,30.4 31.8,30.5 35.7,30.5 36.7,30.5 38.8,30.7 39.6,30.7 39.9,30.8 39.8,30.8 39.8,30.8 39.7,30.8 39.6,30.8 38.9,30.9 36.8,31 36.3,31 35.8,31 35.2,31 33.8,31.1 33.4,31.1 32.6,31.1 31.9,31.1 30.9,31.2 29.4,31.2 29.3,31.3 29.3,31.3 29.3,31.4 29.2,31.6 29.1,32.1 29,32.4 28.9,32.7 28.8,32.9 28.8,33 28.5,33.2 27.8,33.9 26.2,35.2 25.3,35.7 L 25.1,35.8 24.8,35.8 C 24,35.8 21.9,35.7 21.8,35.7 21.6,35.8 21.5,35.7 21.1,35.5 20.4,35.2 19.7,34.8 19.2,34.4 18.2,33.6 17.7,33.2 17.6,32.9 17.6,32.8 17.5,32.4 17.4,32.1 17.3,31.7 17.2,31.4 17.2,31.3 17.1,31.3 17,31.3 15.1,31.3 12.8,31.3 11.9,31.3 10.7,31.5 10.6,31.5 10.4,31.5 10.2,31.5 10.1,31.5 9.7,31.6 9.4,31.6 8.7,31.7 7.2,31.9 6.8,31.9 6.7,31.9 6.7,32.5 6.8,33.1 7,34.3 7.3,35.4 7.8,36.5 8.3,37.9 9.1,39.1 10,40.3 10.6,41.2 11.6,42.3 12.4,43 13.9,44.3 15.8,45.2 17.7,45.8 19.3,46.3 21,46.6 22.7,46.8 24.4,47.1 26.3,47.1 28,46.8 29.8,46.6 31.5,46 33.1,45.3 34.1,44.9 35.4,44.2 36.2,43.6 37.7,42.5 38.8,41.1 39.8,39.5 40.8,38.1 41.2,36.3 41.7,34.7 41.9,33.8 42,32.8 42,31.9 42,30.9 42,30.5 41.7,29.5 41.7,29.4 41.7,29.2 41.6,29.1 41.6,28.9 41.6,28.9 41.7,28.9 41.7,29 41.7,29 41.7,29.1 41.7,29.2 41.8,29.5 42.3,30.5 42.7,31.3 42.8,31.5 42.8,31.8 43.1,32.6 43.2,33.4 43.2,34.3 43.3,35.3 42.9,36.4 42.4,37.3 42,38.2 41.8,38.6 41.1,39.7 40.6,40.5 39.8,41.6 39.3,42.2 39,42.5 38.2,43.4 37.8,43.7 36.6,44.7 35.8,45.3 34.4,45.9 33,46.6 32.3,46.9 30.4,47.4 29.4,47.7 28,47.9 26.9,48 26.4,48 24.4,48 23.6,48 z M 24.2,31.8 C 24.4,31.5 24.5,31.3 24.4,31.2 24.4,31.2 24.3,31.2 24.1,31.2 23.7,31.2 23.6,31.2 23.6,31.4 23.6,31.6 23.8,31.9 23.9,32 23.9,32.1 23.9,32.1 24,32.1 24.1,32.1 24.1,32 24.2,31.8 z M 23.4,32 C 23.4,31.8 23.5,31.3 23.5,31.3 23.5,31.3 23.3,31.3 23.2,31.3 L 22.9,31.3 22.9,31.4 C 22.9,31.5 23,31.7 23.1,31.9 23.2,32.1 23.3,32.1 23.4,32 z M 22,31.8 C 22,31.7 22,31.6 21.9,31.4 21.9,31.4 21.9,31.3 21.9,31.3 21.8,31.2 21.4,31.3 21.4,31.3 21.3,31.3 21.5,31.6 21.6,31.7 21.8,31.8 21.8,31.8 21.9,31.8 21.9,31.8 22,31.8 22,31.8 z M 24.9,31.7 C 25,31.6 25.1,31.2 25.1,31.2 25.1,31.1 25,31.1 24.9,31.1 24.7,31.1 24.7,31.1 24.7,31.5 24.7,31.7 24.7,31.8 24.7,31.8 24.8,31.8 24.8,31.7 24.9,31.7 z M 22.5,31.7 C 22.6,31.7 22.6,31.5 22.6,31.4 22.6,31.3 22.6,31.3 22.3,31.3 22,31.3 22,31.3 22.3,31.6 22.4,31.8 22.4,31.8 22.5,31.7 z M 25.5,31.6 C 25.6,31.5 25.8,31.2 25.8,31.1 25.8,31.1 25.7,31.1 25.5,31 25.3,31 25.3,31 25.2,31.2 25.2,31.5 25.2,31.7 25.4,31.7 25.4,31.7 25.5,31.7 25.5,31.6 z M 21.1,31.4 C 21.1,31.4 21.1,31.3 21.1,31.2 21.1,31.2 21.1,31.2 20.9,31.2 20.8,31.2 20.7,31.2 20.7,31.2 20.7,31.2 20.8,31.3 20.9,31.4 21,31.4 21,31.4 21.1,31.4 z M 26.2,31.4 C 26.4,31.3 26.4,31.1 26.3,31.1 26.1,31 26,31.1 25.9,31.2 25.9,31.3 25.9,31.3 26,31.4 26,31.4 26.1,31.4 26.2,31.4 z M 7.9,30.9 C 8,30.8 8,30.8 7.9,30.7 7.8,30.6 7.8,30.6 7.5,30.5 7.3,30.5 7,30.5 7,30.5 7,30.6 6.9,30.8 7,30.8 7,30.9 7.7,31 7.9,30.9 z M 6.1,30.7 6.1,30.6 6,30.6 C 5.8,30.6 5.8,30.7 5.8,30.7 5.8,30.7 5.9,30.8 6,30.8 6.1,30.8 6.1,30.8 6.1,30.7 z M 26.3,30.3 C 26.3,30.2 26.3,30.1 26.4,29.7 26.4,29.3 26.3,29 26.2,29 26.1,29 26,29.1 26,29.2 25.8,29.5 25.8,29.6 25.8,29.9 25.7,30.1 25.7,30.1 25.8,30.2 25.9,30.3 26.2,30.4 26.3,30.3 z M 23.3,30.2 C 23.3,30.2 23.4,30.2 23.4,30.2 23.5,30.1 23.4,29.4 23.4,29.3 23.4,29.2 23.3,29.1 23.1,29.1 23,29 22.9,29 22.9,29.1 22.8,29.2 22.6,30.1 22.6,30.2 22.6,30.2 22.9,30.3 23.3,30.2 z M 21.3,30.2 C 21.4,30.1 21.4,30.1 21.4,29.8 L 21.4,29.4 21.3,29.3 C 21.2,29.1 21,29 20.9,29 20.7,29 20.7,29 20.7,29.5 20.7,29.9 20.7,30.1 20.8,30.2 20.9,30.2 20.9,30.2 21.1,30.2 21.2,30.2 21.3,30.2 21.3,30.2 z M 24.5,30.1 C 24.6,30.1 24.6,30.1 24.5,29.7 24.5,29.5 24.4,29.2 24.3,29.1 24.3,29.1 24.3,29.1 24.2,29.1 24.1,29.1 24,29.1 24,29.1 24,29.2 23.8,29.6 23.8,29.9 23.7,30.2 23.8,30.2 24.1,30.2 24.2,30.2 24.4,30.2 24.5,30.1 z M 25.3,30.1 C 25.4,30.1 25.4,30.1 25.5,30 25.5,30 25.5,29.9 25.5,29.7 25.5,29.4 25.5,29.4 25.4,29.3 25.3,29 25.2,29 25,29.2 25,29.4 24.8,29.8 24.8,30 L 24.8,30.1 24.9,30.1 C 25,30.1 25,30.1 25,30.1 25.1,30.2 25.1,30.2 25.3,30.1 z M 22.2,30.1 C 22.2,30.1 22.3,29.9 22.4,29.7 L 22.4,29.4 22.4,29.3 C 22.3,29.2 22.3,29.1 22.2,29 22.1,28.9 22,28.9 21.9,29 21.8,29.1 21.7,29.2 21.7,29.6 L 21.6,29.9 21.7,30 C 21.7,30.1 21.8,30.1 22,30.1 22.1,30.1 22.2,30.1 22.2,30.1 z M 26.9,30.1 C 26.9,30.1 27,30 27,29.9 L 27.1,29.9 27.2,29.5 C 27.2,29.2 27.2,29.1 27.1,28.9 27,28.9 27,28.9 27,28.9 26.9,29 26.7,29.4 26.7,29.5 26.6,29.7 26.6,30 26.6,30.1 26.6,30.1 26.7,30.1 26.9,30.1 z M 20.5,30.1 C 20.5,30 20.5,29.9 20.5,29.7 L 20.5,29.3 20.3,29.2 C 20.2,29 20,28.9 19.9,28.9 19.8,29 19.8,29.2 19.9,29.7 19.9,29.8 19.9,29.9 20,30 L 20.1,30.1 20.3,30.1 C 20.5,30.1 20.5,30.1 20.5,30.1 z M 19.6,29.9 C 19.7,29.8 19.6,29.1 19.5,29 19.4,28.9 19.2,28.8 19.1,28.8 19,28.8 19,28.8 19,29 19,29.1 19.1,29.7 19.2,29.8 19.2,30 19.5,30 19.6,29.9 z M 27.7,29.8 C 27.8,29.8 27.9,29.7 27.9,29.3 28,29 28,28.8 27.9,28.8 27.8,28.7 27.8,28.7 27.7,28.9 27.5,29.2 27.4,29.4 27.4,29.6 L 27.4,29.9 27.5,29.9 C 27.6,29.9 27.7,29.9 27.7,29.8 z M 18.8,29.7 C 18.8,29.5 18.7,28.9 18.7,28.9 18.6,28.8 18.4,28.8 18.4,28.8 18.3,28.9 18.3,29.2 18.5,29.6 18.6,29.8 18.7,29.8 18.8,29.8 18.8,29.8 18.8,29.8 18.8,29.7 z M 28.3,29.6 C 28.4,29.6 28.4,29.4 28.5,29 28.5,28.6 28.5,28.6 28.4,28.6 28.3,28.6 28.3,28.7 28.2,28.7 28.2,28.8 28.2,29.6 28.2,29.6 28.2,29.6 28.3,29.6 28.3,29.6 z M 18.1,28.7 C 18.2,28.6 18.2,28.2 18.2,28.1 18.2,27.9 18,27.3 17.9,27.2 17.8,27 17.2,26.6 17,26.6 16.9,26.6 16.9,26.7 17.2,27.2 17.5,27.8 18,28.7 18,28.8 18.1,28.8 18.1,28.8 18.1,28.7 z M 28.9,28.6 C 29,28.4 29,28.3 29.1,28 29.4,27.1 29.4,26.9 29.3,26.9 29.3,26.8 29.1,26.9 28.9,27.1 L 28.6,27.2 28.6,27.4 C 28.5,27.6 28.5,27.9 28.6,28.2 28.7,28.6 28.7,28.6 28.8,28.6 28.8,28.6 28.9,28.6 28.9,28.6 z M 23,25.7 C 23.1,25.6 23.2,25.5 23.3,25.4 23.3,25.3 23.4,25.2 23.4,25.2 23.4,25.2 23.5,25.3 23.7,25.6 23.9,25.8 24,25.8 24.4,25.9 24.7,25.9 24.9,25.8 25.1,25.6 25.5,25.3 25.5,25.2 25.2,24.7 25,24.4 25,24.3 24.9,23.8 24.8,23.5 24.7,23.1 24.6,22.9 24.5,22.4 24.4,21.9 24.3,21.6 24.2,21.3 24.1,21.2 24,21.2 24,21.2 23.8,21.4 23.7,21.6 23.7,21.7 23.7,21.7 23.6,21.7 23.6,21.7 23.5,21.6 23.4,21.4 23.4,21.3 23.3,21.2 23.3,21.2 L 23.2,21.1 23.2,21.2 C 23,21.4 22.9,21.6 22.7,22.3 22.4,23 22.4,23.2 22,24.1 21.7,24.8 21.6,25 21.6,25.4 21.6,25.7 21.6,25.7 21.7,25.7 21.8,25.7 21.9,25.7 21.9,25.8 22,25.8 22.6,25.9 22.7,25.8 22.9,25.8 22.9,25.8 23,25.7 z M 18.6,24 C 19.2,24 19.4,23.9 19.7,23.7 20.3,23.5 20.6,23 20.9,22.5 21.2,21.8 21.4,21.2 21.4,20.5 21.4,20.1 21.4,19.8 21.2,19.5 21.1,19.3 20.9,19.2 20.5,18.9 20,18.5 18.6,18.6 18,18.7 17.4,18.8 17.2,18.9 17,19 16.9,19 16.7,19.2 16.5,19.3 16.1,19.5 15.9,19.6 15.8,19.7 15.8,19.8 15.7,19.9 15.7,20 15.6,20.2 15.6,20.3 15.6,20.8 15.6,21.3 15.8,21.8 15.8,22.3 15.9,22.6 16,22.9 16,23.1 16,23.2 16.1,23.3 16.1,23.3 16.2,23.7 16.6,24 16.9,24.1 17,24.1 18.2,24 18.6,24 z M 29.7,23.8 C 30,23.7 30.5,23.2 30.6,22.7 30.6,22.6 30.7,22.5 30.7,22.4 30.7,22.3 30.7,22 30.8,21.9 30.9,21.3 30.9,20.9 30.8,20.5 30.7,19.7 30.6,19.4 30.4,19.2 30.3,19.1 30.3,19.1 30.3,19.1 30.3,19 30,18.8 29.8,18.7 28.7,18.4 27.5,18.5 26.3,18.8 25.8,18.9 25.6,19.2 25.5,19.8 25.3,20.5 25.5,21.3 25.8,22.1 26,22.5 26.4,23.3 26.5,23.4 26.9,23.8 27.3,24 27.8,24 28.4,23.9 29.1,23.9 29.7,23.8 z M 23.2,2.67 C 23.8,2.34 25.2,1.79 25.9,1.61 26.5,1.44 28,1.34 29.5,1.35 29.9,1.36 30.2,1.35 30.2,1.34 30.2,1.33 30,1.3 29.8,1.27 29.5,1.23 29.3,1.22 28.7,1.22 27.3,1.22 26.4,1.32 25.5,1.56 24.9,1.74 23.4,2.45 23,2.73 22.9,2.83 22.9,2.83 23.2,2.67 z" />
+    </g>
+    <g id="button" > <circle id="button-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#000000;fill:none;stroke-width:1;" /> <circle id="button-circle-hole1" cx="-1" cy="-1" r="0.5" style="stroke:none;fill:#000000;" /> <circle id="button-circle-hole2" cx="1" cy="-1" r="0.5" style="stroke:none;fill:#000000;" /> <circle id="button-circle-hole3" cx="1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /> <circle id="button-circle-hole4" cx="-1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /> </g>
+    <g id="button-lg" > 
+    <circle id="button-lg-circle-edge" cx="0" cy="0" r="7.5" style="stroke:#000000;fill:#000; fill-opacity:0.3;stroke-width:1;" /> <circle id="button-lg-circle-hole1" cx="-1.2" cy="-1.2" r="0.7" style="stroke:none;fill:#000000;" /> <circle id="button-lg-circle-hole2" cx="1.2" cy="-1.2" r="0.7" style="stroke:none;fill:#000000;" /> <circle id="button-lg-circle-hole3" cx="1.2" cy="1.2" r="0.7" style="stroke:none;fill:#000000;" /> <circle id="button-lg-circle-hole4" cx="-1.2" cy="1.2" r="0.7" style="stroke:none;fill:#000000;" /> </g>
+    <g id="buttonhole" > <path style="fill:none;stroke:#000000;" d="M -1,-5 L 1,-5 L 1,5 L -1,5 z" id="buttonhole-outer" /> <path style="fill:#000000;stroke:none;" d="M -1,-5 L 1,-5 L 1,-4 L -1,-4 z M -1,5 L 1,5 L 1,4 L -1,4 z" id="buttonhole-bartack" /> </g>
+    <radialGradient id="snap-male-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"> <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1" /> <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" /> </radialGradient>
+    <g id="snap-male" > <circle id="snap-male-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#dddddd;stroke-width:0.3;" /> <circle id="snap-male-circle-middle" cx="0" cy="0" r="1.8" style="stroke:none;fill:url(#snap-male-grad);" /> <path style="fill:none;stroke:#666; stroke-width:0.2;" d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1" id="snap-male-lines" /> </g>
+    <g id="snap-female" > <circle id="snap-female-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;" /> <circle id="snap-female-circle-middle" cx="0" cy="0" r="2" style="stroke:#666;fill:#dddddd; stroke-width:0.4;" /> <path style="fill:none;stroke:#666; stroke-width:0.5;" d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-female-lines" /> </g> 
+</defs>
+
+
+<!-- Start of group #patternScaleContainer -->
+<g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
+    
+    <!-- Start of group #front -->
+    <g id="front"  transform=" translate(5 -44.954)  translate(852.76 0) " >
+        <path class="fabric" id="2"  d=" M  -0,109  L  0,298.5  L  0,500  L  -0,750  L  285,750  L  285,298.5  C  270,298.5  260.791,292.359  245.966,277.534  C  231.141,262.709  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  -0,109  z " />
+        <path class="help fabric" id="3"  d=" M  160.25,750  L  185.25,700  C  185.25,700  160.25,672.437  160.25,589.75  L  0,589.75 " />
+        <path class="sa fabric" id="4"  d=" M  -0,750  L  -0,760  M  -0,109  L  -0,99  M  -0,760  L  285,760  L  295,750  L  295,298.5  L  285,288.5  C  273.029,288.5  267.161,284.587  253.037,270.463  L  253.037,270.463  C  238.868,256.294  97.404,49.953  97.404,49.954  L  80.334,50.899  C  71.742,66.995  59.735,81.595  40.091,90.76  L  40.091,90.76  C  35.099,93.089  30.146,94.847  24.232,96.271  L  24.233,96.271  C  16.772,98.067  9.111,99  -0,99 " />
+        <path class="grainline" id="5"  d=" M  40,730  L  40,129 " />
+        <text id="6" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#5" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <path class="grainline" id="7"  d=" M  0,710  L  20,710  L  20,149  L  0,149 " />
+        <text id="8" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#7" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Cut on fold</tspan></textPath></text>
+        <text x="142.5" y="399.25" id="9" class="part-nr default" transform="translate(0, -20)" ><tspan >1</tspan></text>
+        <text x="142.5" y="399.25" id="10" class="part-title default" ><tspan >Front</tspan></text>
+        <text x="142.5" y="399.25" id="11" class="part-msg default" transform="translate(0, 15)" ><tspan >1x from main fabric</tspan><tspan x="142.5" dy="11">Cut on fold</tspan></text>
+        <use x="166.49" y="167.453" xlink:href="#notch" id="12" ></use>
+        <use x="185.25" y="700" xlink:href="#notch" id="13" ></use>
+        <use x="160.25" y="589.75" xlink:href="#notch" id="14" ></use>
+        <use x="142.5" y="489.25" xlink:href="#logo-sm" id="15" ></use>
+    </g>
+    <!-- End of group #front -->
+    
+    <!-- Start of group #back -->
+    <g id="back"  transform=" translate(5 -13.25)  translate(547.76 0) " >
+        <path class="fabric" id="16"  d=" M  -0,30  L  0,298.5  L  0,500  L  -0,750  L  285,750  L  285,298.5  C  270,298.5  260.791,292.359  245.966,277.534  C  231.141,262.709  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  -0,30  z " />
+        <path class="sa fabric" id="17"  d=" M  -0,750  L  -0,760  M  -0,30  L  -0,20  M  -0,760  L  285,760  L  295,750  L  295,298.5  L  285,288.5  C  273.029,288.5  267.161,284.587  253.037,270.463  L  253.037,270.463  C  238.746,256.172  66.509,22.282  66.509,22.283  L  57.589,18.25  C  43.809,19.45  25.01,20  -0,20 " />
+        <path class="grainline" id="18"  d=" M  40,730  L  40,50 " />
+        <text id="19" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#18" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <path class="grainline" id="20"  d=" M  0,710  L  20,710  L  20,70  L  0,70 " />
+        <text id="21" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#20" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Cut on fold</tspan></textPath></text>
+        <text x="142.5" y="399.25" id="22" class="part-nr default" transform="translate(0, -20)" ><tspan >2</tspan></text>
+        <text x="142.5" y="399.25" id="23" class="part-title default" ><tspan >Back</tspan></text>
+        <text x="142.5" y="399.25" id="24" class="part-msg default" transform="translate(0, 15)" ><tspan >1x from main fabric</tspan><tspan x="142.5" dy="11">Cut on fold</tspan></text>
+        <use x="142.5" y="429.25" xlink:href="#scalebox" id="25" ></use>
+        <use x="142.5" y="539.25" xlink:href="#logo" id="26" ></use>
+        <use x="152.873" y="155.666" xlink:href="#notch" id="27" ></use>
+        <use x="149.896" y="151.67" xlink:href="#notch" id="28" ></use>
+    </g>
+    <!-- End of group #back -->
+    
+    <!-- Start of group #sleeve -->
+    <g id="sleeve"  transform=" translate(275.38 185.212)  translate(0 0) " >
+        <path class="fabric" id="29"  d=" M  -142.5,668.635  L  -260.591,102.885  C  -224.893,102.885  -153.591,-41.945  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  164.752,-24.806  225.904,102.885  257.581,102.885  L  142.5,668.635  z " />
+        <path class="sa fabric" id="30"  d=" M  -152.289,670.678  L  -270.38,104.928  L  -260.591,92.885  C  -257.488,92.885  -254.094,90.985  -247.319,84.945  L  -247.32,84.946  C  -236.571,75.362  -223.658,59.145  -207.847,37.576  L  -207.847,37.576  C  -168.178,-16.536  -113.242,-100.701  -40.273,-180.212  L  -23.268,-176.12  C  -18.744,-159.788  -15.024,-151.091  -10.858,-145.778  L  -10.859,-145.78  C  -9.923,-144.587  -9.375,-144.016  -8.474,-143.262  L  -8.473,-143.261  C  -5.883,-141.092  -4.486,-140.753  0,-140.753  L  0,-140.753  C  8.79,-140.753  29.054,-140.773  51.219,-147.801  L  61.405,-145.246  C  150.708,-53.558  207.526,46.317  242.039,81.716  L  242.039,81.716  C  247.31,87.122  251.1,90.221  254.673,91.972  L  254.673,91.972  C  255.479,92.367  255.799,92.494  256.454,92.686  L  256.453,92.686  C  257.18,92.899  257.088,92.885  257.581,92.885  L  267.38,104.878  L  152.299,670.628  L  142.5,678.635  L  -142.5,678.635  L  -152.289,670.678  z " />
+        <path class="grainline" id="31"  d=" M  0,648.635  L  0,-110.753 " />
+        <text id="32" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#31" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="93.75" y="184.25" id="33" class="part-nr default" transform="translate(0, -20)" ><tspan >3</tspan></text>
+        <text x="93.75" y="184.25" id="34" class="part-title default" ><tspan >Sleeve</tspan></text>
+        <text x="93.75" y="184.25" id="35" class="part-msg default" transform="translate(0, 15)" ><tspan >2x from main fabric</tspan><tspan x="93.75" dy="11">Good sides together</tspan></text>
+        <use x="142.148" y="-34.506" xlink:href="#notch" id="36" ></use>
+        <use x="-129.666" y="-54.267" xlink:href="#notch" id="37" ></use>
+        <use x="-132.684" y="-50.155" xlink:href="#notch" id="38" ></use>
+        <use x="93.75" y="274.25" xlink:href="#logo-sm" id="39" ></use>
+    </g>
+    <!-- End of group #sleeve -->
+    
+    <!-- Start of group #pocket -->
+    <g id="pocket"  transform=" translate(5 -574.75)  translate(0 868.847) " >
+        <path class="fabric" id="40"  d=" M  0,589.75  L  160.25,589.75  C  160.25,672.437  185.25,700  185.25,700  L  160.25,750  L  -0,750  z " />
+        <path class="sa fabric" id="41"  d=" M  -0,750  L  -0,760  M  0,589.75  L  0,579.75  M  0,579.75  L  160.25,579.75  L  170.25,589.75  C  170.25,637.884  178.631,665.604  185.557,680.876  L  185.557,680.876  C  189.71,690.033  192.967,693.624  192.967,693.64  L  194.194,704.472  L  169.194,754.472  L  160.25,760  L  -0,760 " />
+        <path class="grainline" id="42"  d=" M  35,740  L  35,599.75 " />
+        <text id="43" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#42" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <path class="grainline" id="44"  d=" M  0,740  L  20,740  L  20,599.75  L  0,599.75 " />
+        <text id="45" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#44" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Cut on fold</tspan></textPath></text>
+        <text x="97.625" y="669.875" id="46" class="part-nr default" transform="translate(0, -20)" ><tspan >4</tspan></text>
+        <text x="97.625" y="669.875" id="47" class="part-title default" ><tspan >Pocket</tspan></text>
+        <text x="97.625" y="669.875" id="48" class="part-msg default" transform="translate(0, 15)" ><tspan >1x from main fabric</tspan><tspan x="97.625" dy="11">Cut on fold</tspan></text>
+        <use x="97.625" y="719.875" xlink:href="#logo-sm" id="49" ></use>
+    </g>
+    <!-- End of group #pocket -->
+    
+    <!-- Start of group #pocketFacing -->
+    <g id="pocketFacing"  transform=" translate(-120.25 -574.75)  translate(1617.76 462.25) " >
+        <path class="fabric" id="50"  d=" M  135.25,589.75  C  135.25,694.798  174.07,722.361  174.07,722.361  L  185.25,700  C  185.25,700  160.25,672.437  160.25,589.75  z " />
+        <path class="sa fabric" id="51"  d=" M  125.25,589.75  C  125.25,632.805  131.822,664.149  139.521,685.239  L  139.521,685.239  C  144.255,698.208  149.772,708.234  154.329,714.937  L  154.329,714.937  C  161.781,725.9  167.869,730.222  167.869,730.207  L  183.014,726.833  L  194.194,704.472  L  192.971,693.645  C  192.971,693.628  170.25,668.578  170.25,589.75  L  160.25,579.75  L  135.25,579.75  L  125.25,589.75  z " />
+        <path class="grainline" id="52"  d=" M  153.911,686.032  L  153.911,603.345 " />
+        <text id="53" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#52" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="147.75" y="624.75" id="54" class="part-nr vertical small" ><tspan >5</tspan></text>
+        <text x="147.75" y="624.75" id="55" class="part-title vertical small" transform="translate(5, 10)" writing-mode="tb-rl" ><tspan >Pocket facing</tspan></text>
+        <text x="147.75" y="624.75" id="56" class="part-msg vertical small" transform="translate(-5, 10)" writing-mode="tb-rl" ><tspan >2x from main fabric</tspan><tspan dx="-6" y="624.75">Good sides together</tspan></text>
+    </g>
+    <!-- End of group #pocketFacing -->
+    
+    <!-- Start of group #hoodSide -->
+    <g id="hoodSide"  transform=" translate(4.493 368.25)  translate(1427.76 0) " >
+        <path class="fabric" id="57"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+        <path class="sa fabric" id="58"  d=" M  20.236,2.162  C  20.236,2.16  -12.976,-144.492  6.783,-250.698  L  6.783,-250.698  C  11.764,-277.473  20.569,-303.018  34.069,-322.256  L  34.069,-322.256  C  51.123,-346.561  78.324,-363.25  113.935,-363.25  L  113.935,-363.25  C  225.914,-363.25  337.275,-286.533  337.275,-286.532  L  339.946,-272.635  C  291.176,-200.766  266.316,-148.332  254.751,-108.969  L  254.752,-108.969  C  247.177,-83.185  245.582,-64.404  246.913,-49.237  L  246.913,-49.237  C  247.772,-39.438  249.717,-32.271  252.354,-25.842  L  252.354,-25.841  C  256.114,-16.671  260.715,-10.938  264.47,-6.259  L  264.47,-6.259  C  273.517,5.015  300.92,23.297  320.387,42.292  L  320.387,42.292  C  325.31,47.096  330.057,52.347  333.545,57.293  L  333.545,57.293  C  338.044,63.673  341.671,71.892  341.671,79  L  331.671,89  C  253.981,89  206.187,75.809  170.946,60.349  L  170.946,60.349  C  117.202,36.771  92.163,10  30,10  L  20.236,2.162  z " />
+        <path class="grainline" id="59"  d=" M  113.935,14.922  L  113.935,-348.25 " />
+        <text id="60" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#59" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="148.137" y="-259.281" id="61" class="part-nr default" transform="translate(0, -20)" ><tspan >6</tspan></text>
+        <text x="148.137" y="-259.281" id="62" class="part-title default" ><tspan >Hood side</tspan></text>
+        <text x="148.137" y="-259.281" id="63" class="part-msg default" transform="translate(0, 15)" ><tspan >4x from main fabric (2x2)</tspan><tspan x="148.137" dy="11">Good sides together</tspan></text>
+        <use x="113.935" y="19.922" xlink:href="#notch" id="64" ></use>
+        <use x="148.137" y="-109.281" xlink:href="#logo-sm" id="65" ></use>
+    </g>
+    <!-- End of group #hoodSide -->
+    
+    <!-- Start of group #hoodCenter -->
+    <g id="hoodCenter"  transform=" translate(15 15)  translate(1157.76 0) " >
+        <path class="fabric" id="66"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+        <path class="sa fabric" id="67"  d=" M  0,-10  L  160,-10  L  170,0  L  170,640.766  L  160,650.766  L  -0,650.766  L  -10,640.766  L  -10,-0  L  0,-10  z " />
+        <path class="grainline" id="68"  d=" M  5,427.177  L  155,427.177 " />
+        <text id="69" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#68" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="80" y="160.192" id="70" class="part-nr " transform="translate(0, -20)" ><tspan >7</tspan></text>
+        <text x="80" y="160.192" id="71" class="part-title " ><tspan >Hood center</tspan></text>
+        <text x="80" y="160.192" id="72" class="part-msg " transform="translate(0, 15)" ><tspan >2x from main fabric</tspan><tspan x="80" dy="11">Good sides together</tspan></text>
+        <use x="80" y="310.192" xlink:href="#logo-sm" id="73" ></use>
+    </g>
+    <!-- End of group #hoodCenter -->
+    
+    <!-- Start of group #cuff -->
+    <g id="cuff"  transform=" translate(15 15)  translate(1427.76 720.25) " >
+        <path class="fabric" id="74"  d=" M  0,0  L  160,0  L  160,57  L  0,57  z " />
+        <path class="sa fabric" id="75"  d=" M  0,-10  L  160,-10  L  170,0  L  170,57  L  160,67  L  -0,67  L  -10,57  L  -10,-0  L  0,-10  z " />
+        <path class="grainline" id="76"  d=" M  5,38  L  155,38 " />
+        <text id="77" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#76" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="80" y="14.25" id="78" class="part-nr " transform="translate(0, -20)" ><tspan >8</tspan></text>
+        <text x="80" y="14.25" id="79" class="part-title " ><tspan >Cuff</tspan></text>
+        <text x="80" y="14.25" id="80" class="part-msg " transform="translate(0, 15)" ><tspan >2x from ribbing</tspan><tspan x="80" dy="11">Good sides together</tspan></text>
+        <use x="80" y="64.25" xlink:href="#logo-sm" id="81" ></use>
+    </g>
+    <!-- End of group #cuff -->
+    
+    <!-- Start of group #waistband -->
+    <g id="waistband"  transform=" translate(15 15)  translate(1427.76 462.25) " >
+        <path class="fabric" id="82"  d=" M  0,0  L  160,0  L  160,228  L  0,228  z " />
+        <path class="sa fabric" id="83"  d=" M  0,-10  L  160,-10  L  170,0  L  170,228  L  160,238  L  -0,238  L  -10,228  L  -10,-0  L  0,-10  z " />
+        <path class="grainline" id="84"  d=" M  5,152  L  155,152 " />
+        <text id="85" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#84" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="80" y="57" id="86" class="part-nr " transform="translate(0, -20)" ><tspan >9</tspan></text>
+        <text x="80" y="57" id="87" class="part-title " ><tspan >Waistband</tspan></text>
+        <text x="80" y="57" id="88" class="part-msg " transform="translate(0, 15)" ><tspan >1x from ribbing</tspan></text>
+    </g>
+    <!-- End of group #waistband -->
+    
+    <!-- Start of group #neckBinding -->
+    <g id="neckBinding"  transform=" translate(15 15)  translate(1347.76 0) " >
+        <path class="fabric" id="89"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+        <path class="sa fabric" id="90"  d=" M  0,-10  L  50,-10  L  60,0  L  60,563.343  L  50,573.343  L  -0,573.343  L  -10,563.343  L  -10,-0  L  0,-10  z " />
+        <path class="grainline" id="91"  d=" M  5,375.562  L  45,375.562 " />
+        <text id="92" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#91" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="25" y="140.836" id="93" class="part-nr vertical" ><tspan >10</tspan></text>
+        <text x="25" y="140.836" id="94" class="part-title vertical" transform="translate(10, 10)" writing-mode="tb-rl" ><tspan >Neck binding</tspan></text>
+        <text x="25" y="140.836" id="95" class="part-msg vertical" transform="translate(-5, 10)" writing-mode="tb-rl" ><tspan >1x from main fabric</tspan></text>
+    </g>
+    <!-- End of group #neckBinding -->
+</g>
+<!-- End of group #patternScaleContainer -->
+
+</svg>
+
+
+<!--
+
+    	DEBUG OUTPUT
+    Iteration 1, front sleevecap delta is 4.3317371946702
+    Iteration 2, front sleevecap delta is 0.98146326780238
+     head circ is 590
+     backNeckLen  =  116.97707710124  frontNeckLen = 164.69432687278 hh is 79 and ho is 796.5 
+
+  -->

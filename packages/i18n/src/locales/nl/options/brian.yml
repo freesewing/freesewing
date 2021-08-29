@@ -24,7 +24,7 @@ frontArmholeDeeper:
   title: Extra uitsnijding armsgat vooraan
   description: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
 lengthBonus:
-  title: Bonus lengte
+  title: Lengtebonus
   description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
 s3Collar:
   title: 'Shoulder seam shift: collar side'
@@ -36,8 +36,8 @@ shoulderEase:
   title: Overwijdte schouder
   description: De hoeveelheid overwijdte aan je schouder. Dit vergroot de afstand van schouder tot schouder om ruimte te maken voor wat je onder je jas draagt.
 shoulderSlopeReduction:
-  title: Reductie helling schouder
-  description: De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
+  title: Reductie schouderhelling
+  description: Hoeveel de schouderhelling verminderd wordt om ruimte te maken voor epauletten.
 sleeveLengthBonus:
   title: Bonus mouwlengte
   description: De hoeveelheid waarmee de mouw verlengd wordt. Een negatieve waarde zal ze korter maken.

@@ -1,6 +1,6 @@
 ---
 seatEase:
-  title: Facilidad de asiento
+  title: Holgura de asiento
   description: Cantidad de facilidad alrededor de tu trasero
 pocketPlacementHorizontal:
   title: Colocación horizontal del bolsillo
@@ -9,7 +9,7 @@ pocketPlacementVertical:
   title: Colocación vertical del bolsillo
   description: La ubicación (vertical) de los bolsillos
 collarHeight:
-  title: Altura del collar
+  title: Altura del cuello
   description: Altura del cuello
 length:
   title: Longitud

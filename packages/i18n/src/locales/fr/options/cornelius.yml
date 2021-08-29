@@ -12,13 +12,13 @@ cuffWidth:
   title: Largeur du bracelet
   description: Largeur du bracelet de la jambe
 cuffStyle:
-  title: Style de bracelet
+  title: Style de poignet
   description: Style du bracelet de la jambe
 bandBelowKnee:
   title: Bracelet sous le genou
   description: Contrôle la distance du bracelet sous le genou
 kneeToBelow:
-  title: Longueur de bracelet
+  title: Longueur de poignet
   description: Contrôle l'épaisseur du bracelet par rapport au genou
 ventLength:
   title: Longueur de la fente

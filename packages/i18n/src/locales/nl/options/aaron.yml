@@ -1,9 +1,9 @@
 ---
 armholeDrop:
-  title: Armsgat verlagen/verhogen
+  title: Diepte armsgat
   description: Verlaag het armsgat met deze hoeveelheid. Een negatieve waarde maakt het hoger.
 backlineBend:
-  title: Vorm armsgat achter
+  title: Vorm armsgat achteraan
   description: Bepaalt de vorm/curve van de achterkant van het armsgat. 
 hipsEase:
   title: Overwijdte heup
@@ -12,13 +12,13 @@ necklineBend:
   title: Vorm halslijn
   description: Bepaalt de vorm/kromming van de halslijn aan het middenvoor.
 necklineDrop:
-  title: Hoogte halslijn
+  title: Diepte halslijn
   description: De hoeveelheid waarmee de halslijn vooraan weggesneden wordt.
 shoulderStrapPlacement:
   title: Plaatsing schouderbandjes
   description: Bepaalt of de schouderbandjes dichter bij de nek (lager cijfer) of dichter bij de schouder (hoger cijfer) geplaatst worden.
 shoulderStrapWidth:
-  title: Breedte schouderbandjes
+  title: Breedte schouderband
   description: De breedte van de schouderbandjes.
 stretchFactor:
   description: Bepaalt hoeveel kleiner de horizontale omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.

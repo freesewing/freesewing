@@ -12,7 +12,7 @@ elasticStretch:
   title: Elastic stretch
   description: Adjust this for more or less stretchy elastic
 rise:
-  title: Rise
+  title: Élévation de ceinture
   description: Controls the height of the waist
 legOpening:
   title: Leg opening

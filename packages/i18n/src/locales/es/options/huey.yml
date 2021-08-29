@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Bolsillo
-  description: Si se añado un bolsillo frontal o no
+  description: Si se añade un bolsillo delantero o no
 pocketHeight:
   title: Altura de bolsillo
   description: Controla la altura del bolsillo

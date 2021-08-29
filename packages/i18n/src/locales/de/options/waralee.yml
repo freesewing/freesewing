@@ -4,7 +4,7 @@ backPocket:
   description: Definiert ob rückwärtige Taschen integriert werden
 frontPocket:
   title: Vordere Taschen
-  description: Legt fest, ob vordere Taschen integriert werden oder nicht
+  description: Ob eine Fronttasche hinzugefügt werden soll oder nicht
 hem:
   title: Größe des Saums
   description: Höhe des Saums am unteren Rand der Hose

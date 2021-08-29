@@ -66,10 +66,10 @@ centerFrontHemDrop:
   title: Dobladillo delantero central
   description: La cantidad por la que se baja el dobladillo hacia el centro delantero
 backVent:
-  title: Ventilación posterior
+  title: Abertura trasera
   description: La cantidad de respiraderos traseros
 backVentLength:
-  title: Longitud de ventilación posterior
+  title: Longitud de la abertura trasera
   description: La longitud de la (s) ventilación (es) posterior (es)
 buttonLength:
   title: Longitud del botón
@@ -93,7 +93,7 @@ lapelReduction:
   title: Reducción de la solapa
   description: Cuánto gira hacia adentro la punta de las solapas
 collarHeight:
-  title: Altura del cuello
+  title: Altura del collar
   description: Altura del cuello
 collarNotchDepth:
   title: Profundidad de la muesca del cuello

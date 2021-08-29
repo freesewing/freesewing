@@ -15,13 +15,13 @@ weltHeight:
   title: Hauteur du revers de poche
   description: Détermine la hauteur du revers de poche
 necklineDrop:
-  title: Profondeur d'encolure
+  title: Décolleté
   description: Détermine la profondeur d'encolure sur le devant
 frontStyle:
   title: Style d'encolure
   description: Style de l'encolure
 hemStyle:
-  title: Style d'ourlet
+  title: Type d'ourlet
   description: Style de l'ourlet avant
 hemRadius:
   title: Arrondi d'ourlet
