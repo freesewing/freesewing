@@ -4,4 +4,4 @@ title: Schritthöhe
 
 Die **Schritthöhe** (auch bekannt als Sitzhöhe, Leibhöhe) ist das Maß dafür, wie weit deine Taille über der Oberfläche ist, auf der du sitzt.
 
-To measure your crotch depth, sit straight on a flat chair or table, and measure from waist line down to the chair/table.
+Um die Tiefe zu messen, setzen Sie sich direkt auf einen flachen Stuhl oder einen Tisch und messen Sie von der Taille hinunter zum Stuhl/Tisch.
