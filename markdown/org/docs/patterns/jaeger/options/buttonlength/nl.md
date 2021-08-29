@@ -1,2 +1,2 @@
 
-Controls the length over which the buttons are spaced. In other words, the length from the top to bottom buttons.
+Bepaalt de lengte van de spatie van de knopen. Met andere woorden, de lengte van de knoppen boven naar beneden.
