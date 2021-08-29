@@ -1,3 +1,3 @@
 ![Stretch boordstof](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Bepaalt de hoeveelheid stretch die te voorzien is in de boord
