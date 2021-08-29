@@ -1,10 +1,10 @@
 
-This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
+Ce motif est livré avec un dart scye par défaut de 1 cm (fléchette d'emmanchement) à l'avant.
 
-You can increase or decrease the dart to influence the armhole.
+Vous pouvez augmenter ou diminuer la fléchette pour influencer le blindage.
 
 > #### ###### Pour quoi faire ?
 > 
-> The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Given that there is no sleeve, a gaping armhole is particularly unsightly.
+> Le but de ce treillis est de s'assurer que le blindage est à plat contre votre corps, plutôt que de la grignoter. Etant donné qu’il n’y a pas de manche, une brèche béante est particulièrement malvoyante.
 
-> While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the front dart.
+> Bien que ce dart soit utilisé pour façonner le motif, vous n'avez pas à coudre le dart parce qu'il est incorporé dans la fléchette avant.
