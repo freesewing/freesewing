@@ -1,29 +1,29 @@
 
-### Step 1: Join the outseam
+### Stap 1: Bevestig de buitennaad
 
-Join the outseam (the seam that runs along the side of your leg) of the front and back.
+Stik de buitennaad aan (de naad die langs de zijkant van je been loopt) van het voor- en achterpand.
 
-Repeat the step for the other leg, but **make sure they are the mirror image of each other**.
+Herhaal de stap voor de andere broekspijp, maar **zorg ervoor dat ze de spiegelafbeelding van elkaar** zijn.
 
-### Step 2: Join the inseam
+### Stap 2: Bevestig de binnennaad
 
-Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+Bevestig de binnennaad (de naad die langs de binnenkant van je broekspijp) van de voor- en achterpand.
 
-You now have a leg. Repeat this step for the other legs, once again making certain they are mirror images of each other.
+Je hebt nu een been. Herhaal deze stap voor de andere benen, waarbij ze er nogmaals voor zorgen dat ze spiegelbeelden van elkaar zijn.
 
-### Step 3: Join the cross seam
+### Stap 3: Bevestig de kruisnaad
 
-Turn one leg with the good side in, and the other with the good side out.
+Keer de ene broekspijp met de goede kant in, en de andere met de goede kant naar buiten.
 
-Now tuch the *good side out* into the *good side in* leg, so that they have their _good sides together_.
+Grijp nu de *goede kant uit* in de *goede kant in* broekspijp, zodat ze hun _goede kanten samen_ hebben.
 
-You can now align and sew the cross seam.
+Je kan nu de kruisnaad uitlijnen en stikken.
 
 <Note>
 
-###### You probably want to insert a zipper
+###### Je wilt waarschijnlijk een rits
 
-You should insert a zipper or leave the last part of the cross seam open (so you can pin it).  
-If you don't you wont be able to put on Titan to check the fit.
+plaatsen of het laatste deel van de kruisnaad laten open (zodat je hem kan spelen).  
+Als je niet in staat bent Titan op de juiste plek te zetten.
 
 </Note>
