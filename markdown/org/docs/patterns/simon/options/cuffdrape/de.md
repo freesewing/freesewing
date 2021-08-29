@@ -1,12 +1,12 @@
 ![Manschette drapieren](cuffdrape.svg)
 
-How much the end of the sleeve is wider than the wrist.
+Wie sehr das Ende des Ärmels ist größer als der Handgelenk.
 
 <Note>
 
-This changes the look of the sleeve a bit. 
-More drape makes the sleeve wider and gives you a more *blousy* effect, whereas less drape makes the sleeve more narrow.
+Dies ändert das Aussehen der Ärmel ein wenig. 
+Mehr Drape macht den Ärmel breiter und gibt einen *blusen* Effekt, während weniger Drape den Ärmel verengt.
 
-The drape will be worked into the cuff with pleats.
+Das Drape wird mit Falten in die Manschette gearbeitet.
 
 </Note>
