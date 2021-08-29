@@ -1,5 +1,5 @@
 ---
-title: Fullness
+title: Volle
 ---
 
-Influences the ease on the legs for a looser style.
+Beïnvloedt het gemak op de benen voor een losser stijl.
