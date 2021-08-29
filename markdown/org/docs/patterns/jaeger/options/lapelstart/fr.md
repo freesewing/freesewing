@@ -1,5 +1,5 @@
 
 ![Début des revers](lapelstart.svg)
 
-Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.
+Emplacement du point de rupture du tour (où commence l'ouverture avant). Les valeurs inférieures sont plus proches de la ceinture, les valeurs plus élevées sont plus proches de la chaîne de taille.
 
