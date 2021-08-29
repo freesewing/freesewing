@@ -1,4 +1,4 @@
 
-Controls the start of the crossseam at the back fork point.
+Contrôle le début de la couture au point de fourche arrière.
 
-This will influence how the trousers fit around your bum.
+Cela influencera la façon dont le pantalon s’ajuste autour de votre bum.
