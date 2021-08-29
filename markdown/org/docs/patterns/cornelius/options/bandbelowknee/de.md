@@ -1,6 +1,6 @@
 ---
-title: Cuff below knee
+title: Kuff unter dem Knie
 ---
 
-Controls how far the cuff will sit below your knee.
+Steuert wie weit die Manschette unter dem Knie sitzt.
 
