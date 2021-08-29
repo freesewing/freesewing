@@ -28,4 +28,4 @@ layout:
   description: Controla cómo se colocan las partes individuales del patrón en tu patrón
 debug:
   title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  description: Habilita la depuración para obtener información adicional sobre cómo se creó tu patrón
