@@ -1,3 +1,3 @@
-![Front style](frontstyle.svg)
+![Style frontal](frontstyle.svg)
 
-Do you want a classic straight neckline, or a curved neckline?
+Vous voulez un collier droit classique ou un collier courbé ?
