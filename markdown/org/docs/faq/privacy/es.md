@@ -1,7 +1,7 @@
 ---
-title: What are you doing with my personal data?
+title: '¿Qué estás haciendo con mis datos personales?'
 ---
 
-How we handle your personal data is documented in [our privacy notice][1].
+La forma en que manejamos sus datos personales se documenta en [nuestra notificación de privacidad][1].
 
 [1]: /docs/various/privacy/
