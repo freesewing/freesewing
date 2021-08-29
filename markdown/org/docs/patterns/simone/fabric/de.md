@@ -1,7 +1,7 @@
 <Note>
 
-Simone is our [Simon pattern](/patterns/simon/) adapted for breasts.
+Simone ist unser [Simon Pattern](/patterns/simon/) angepasst für Brüste.
 
-Please refer to [the Simon documentation](/docs/patterns/simon/).
+Bitte schau dir die [Simon-Dokumentation](/docs/patterns/simon/) an.
 
 </Note>
