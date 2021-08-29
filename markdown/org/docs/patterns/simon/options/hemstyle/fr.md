@@ -1,7 +1,7 @@
 ![Style d'ourlet](hemstyle.svg)
 
-What style of hem line do you want?
+Quel style de ligne d'ourlet voulez-vous ?
 
  - Droit
  - Baseball
- - Slashed
+ - Taillé
