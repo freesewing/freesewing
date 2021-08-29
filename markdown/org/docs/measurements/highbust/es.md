@@ -2,8 +2,8 @@
 title: Contorno de alto pecho
 ---
 
-The **high bust** measurement is your chest circumference measured just under your arms, above the fullest part of your bust.
+La medición del **alto busto** es la circunstancia de tu pecho medida justo debajo de tus brazos, por encima de la parte más completa de tu busto.
 
-The point of the high bust measurement is to get an idea of the chest circumference without taking breasts into account. As such, this measurement is only relevant for models with breasts.
+El objetivo de la medición alta de la caída es hacerse una idea de la circunstancia del pecho sin tener en cuenta los pechos. Como tal, esta medida sólo es relevante para los modelos con mamas.
 
-To measure your high bust, wrap the tape measure around your chest just under your arms. You might not be able to keep it horizontal (parallel to the floor), but that's ok.
+Para medir tu alto busto, envuelve la medida de cinta alrededor de tu pecho justo debajo de tus brazos. Es posible que no sea capaz de mantenerlo horizontal (paralelo al suelo), pero está bien.
