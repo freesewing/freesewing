@@ -1,6 +1,6 @@
 
-> #### What's the point?
+> #### ¿Cuál es la cuestión?
 > 
-> This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.
+> Esta opción está estrechamente vinculada a la opción **rise** que determina la altura de tus troncos de natación que se levantarán en la cintura.
 > 
-> However, the width of your elastic is also a factor to take into account, so that's where this option comes in.
+> Sin embargo, el ancho de su elástico es también un factor a tener en cuenta, por lo que es ahí donde entra esta opción.
