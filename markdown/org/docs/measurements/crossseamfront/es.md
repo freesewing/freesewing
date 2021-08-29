@@ -1,13 +1,13 @@
 ---
-title: Cross seam front
+title: Costura cruzada frontal
 ---
 
-The **cross seam front** is the front part of the [cross seam](/docs/measurements/crossseam/) measurement.
+El frente **de la costura cruzada** es la parte frontal de la medición [de la costura cruzada](/docs/measurements/crossseam/).
 
-To measure your **cross seam front** tie a string around your waist. Then, measure down from the center front of your waist until the spot that is:
+Para medir tu **frente a la costura cruzada** empata una cuerda alrededor de la cintura. Then, measure down from the center front of your waist until the spot that is:
 
- - Where the fork of a tight-fitting pair of trousers would sit
- - At the base of your scrotum
- - Somewhere towards the front of your perineum
+ - Donde se sentaría la horquilla de un par de pantalones aptos para apretarse
+ - En la base de tu scrotum
+ - En algún lugar hacia el frente de tu perinercia
 
 
