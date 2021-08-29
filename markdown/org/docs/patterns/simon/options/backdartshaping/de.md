@@ -2,6 +2,6 @@
 title: Formgebung der hinteren Abnäher
 ---
 
-Controls how much of the waist shaping will happing in the backdarts.
+Legt fest, wie viel der Taillenformung in den Hinterdarten passieren wird.
 
 You can tweak this setting to balance the waist reduction across side seams, back darts and (optional) front darts.
