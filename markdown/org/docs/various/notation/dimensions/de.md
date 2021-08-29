@@ -1,17 +1,17 @@
 ---
-title: Dimensions
+title: Abmessungen
 ---
 
-When you opt for a *paperless* pattern, your pattern will come with dimensions:
+Wenn Sie ein *-papierloses* Muster wählen, wird Ihr Muster mit Dimensionen geliefert:
 
 <Legend part="dimension" caption="An example of a dimension on a pattern" >
 
 <Tip>
 
-###### Pay close attention to dimensions on non-paperless patterns
+###### Achten Sie sehr auf die Dimensionen der nicht-papierlosen Muster
 
-Some patterns use dimension to indicate the full size of a pattern piece.
-This typically happens when a part is a mere rectangle.
+Einige Muster verwenden Dimensionen, um die volle Größe eines Musterstücks anzugeben.
+Dies geschieht in der Regel, wenn ein Teil ein bloßes Rechteck ist.
 
-So when a pattern includes a dimension, make sure to pay attention to it before you cut into your fabric.
+Wenn also ein Muster eine Dimension enthält, achten Sie darauf, dass Sie darauf achten, bevor Sie in Ihr Gewebe schneiden.
 </Tip>
