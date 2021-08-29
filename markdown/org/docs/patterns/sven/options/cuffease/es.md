@@ -1,3 +1,3 @@
 ![Holgura de muñeca](cuffease.svg)
 
-How much room do you want at your wrist?
+¿Cuánto espacio quieres en tu muñeca?
