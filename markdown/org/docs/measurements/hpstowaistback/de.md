@@ -1,17 +1,17 @@
 ---
-title: HPS to waist back
+title: HPS zum Taillen
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: Hochpunktschulter
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
+Weitere Informationen zum Auffinden dieses Punktes finden Sie in der [Hps-Dokumentation](/docs/measurements/hps/).
 
 </Note>
 
-The **high point shoulder (HPS) to waist back** measurement runs from your HPS down to your waist line.
+Die **Hochpunktschulter (HPS) zum Taillenrücken** läuft von der HPS bis zur Taillenlinie.
 
-To measure your HPS to waist back, first [localize your HPS point](/docs/measurements/hps/). Dann miss geradeaus runter zur Linie, die deine Taille bildet.
+Um Ihre HPS zurück zu messen, setzen Sie zuerst [Ihren HPS Punkt](/docs/measurements/hps/) lokalisieren. Dann miss geradeaus runter zur Linie, die deine Taille bildet.
 
