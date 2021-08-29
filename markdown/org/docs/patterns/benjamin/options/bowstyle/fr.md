@@ -1,6 +1,6 @@
 Quatre styles de nœud papillon différents !
 
-Benjamin allows you to make four different bow ties.
+Benjamin vous permet de faire quatre liens d'arc différents.
 
  - Diamant contemporain
  - Papillon classique
@@ -8,5 +8,5 @@ Benjamin allows you to make four different bow ties.
  - Trapèze
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_bowstyle_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_bowstyle_sample.svg "Effet de cette option sur le motif")
