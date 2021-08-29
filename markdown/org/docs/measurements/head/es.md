@@ -2,6 +2,6 @@
 title: Contorno de cabeza
 ---
 
-The **head circumference** measurement wraps around the fullest part of your head.
+La medición del **** de circunstancia principal envuelve la parte más completa de tu cabeza.
 
-To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
+Para medir la circunstancia de su cabeza, envuelva la medida de la cinta alrededor de su cabeza en la altura de su frente.
