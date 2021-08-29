@@ -1,4 +1,4 @@
 
-Controls the amount of main fabric that's folded over at the top of the path pockets.
+Steuert die Menge der Stoffe, die oben an der Pfadentasche gefaltet sind.
 
 
