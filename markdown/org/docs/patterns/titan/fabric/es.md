@@ -1,2 +1,2 @@
-This is a block, and as such is typically made in muslin to verify the fit.
+Este es un bloque, y como tal se hace típicamente en muslin para verificar el ajuste.
 
