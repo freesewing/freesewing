@@ -1,6 +1,6 @@
-To make Simon, you will need the following:
+Para hacer Simon, necesitarás lo siguiente:
 
- - About two meters of a suitable fabric (see [Fabric options](/docs/patterns/simon/fabric/))
- - Buttons
- - Fusible interfacing for collar and cuffs (and possibly for the front placket)
+ - Aproximadamente dos metros de un tejido adecuado (ver [opciones de tela](/docs/patterns/simon/fabric/))
+ - Botones
+ - Interfaz fusible para cuello y cortes (y posiblemente para la placa delantera)
 
