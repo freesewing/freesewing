@@ -1,23 +1,23 @@
 - - -
 - - -
 
-#### What is parametric design?
+#### Wat is parametrisch ontwerp?
 
-Parametric design refers to the use of parameters or variables to manipulate the outcome of a given design within its rules.
+Parametrisch ontwerp verwijst naar het gebruik van parameters of variabelen om het resultaat van een bepaald ontwerp binnen de regels te manipuleren.
 
-In sewing patterns, the *parameters* are what is provided by the user: Their measurements and options that they have selected.  
-The *rules* of the design are what you, the designer, make them.
+In naaipatronen, de *parameters* zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.  
+De *regels* van het ontwerp zijn wat jij als ontwerper maakt.
 
-#### What does that mean for designers?
+#### Wat betekent dat voor de ontwerpers?
 
-When drafting or designing patterns or garments, it is common practice to start with a *fit model* (or *dress form*). The measurements of the fit model are used as input in the initial design.
+Bij het tekenen of tekenen van patronen het is gebruikelijk om te beginnen met een *fit model* (of *ress form*). De metingen van het fit model worden gebruikt als input in het oorspronkelijke ontwerp.
 
-Adapting the pattern for a different model is a tedious task, which is why patterns are graded up and down to cover different sizes.
+Het aanpassen van het patroon voor een ander model is een vervelende taak, daarom worden patronen omhoog en omlaag beoordeeld om verschillende maten te dekken.
 
-But in a parametric sewing pattern, adapting to different sizes or models *just works*.
+Maar in een parametrisch naaipatroon, aanpassing aan verschillende maten of modellen *werkt gewoon*.
 
-#### What can FreeSewing do for me?
+#### Wat kan FreeSewing voor mij doen?
 
-FreeSewing provides everything you need to create your own parametric sewing patterns with very little effort.
+FreeSewing biedt alles wat je nodig hebt om je eigen parametrische naaipatronen te maken met heel weinig inspanning.
 
-You are free to sell patterns you create, or contribute them to our growing collection.
+U bent vrij om patronen te verkopen die u maakt of bij te dragen aan onze groeiende collectie.
