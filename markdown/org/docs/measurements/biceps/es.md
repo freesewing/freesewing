@@ -2,6 +2,6 @@
 title: Contorno del brazo
 ---
 
-The **biceps circumference** measurement goes around the fullest part of your upper arm.
+La medición de biceps **** gira la parte más completa de tu brazo alto.
 
-To measure your **biceps circumference**, run the tape measure around the fullest part of your upper arm.
+Para medir tu **circunstancia de biceps**, ejecuta la medida de cintas alrededor de la parte más completa de tu brazo alto.
