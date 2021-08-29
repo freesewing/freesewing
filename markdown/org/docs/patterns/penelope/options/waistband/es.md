@@ -1,2 +1,2 @@
-Adds a waistband to the pattern.
+Añade una cintura al patrón.
 
