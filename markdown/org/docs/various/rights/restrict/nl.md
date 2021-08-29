@@ -1,15 +1,15 @@
 ---
-title: The right to restrict processing
+title: Het recht om de verwerking te beperken
 order: 50
 ---
 
 Je hebt het recht een restrictie aan te vragen voor het verwerken van je persoonlijke gegevens.
 
-Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
+Ga naar [/account/acties/beperken][1] om de verwerking van uw persoonlijke gegevens te beperken.
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting us][2] to lift the restriction.
+Uw verzoek wordt onmiddellijk ingewilligd en kan alleen ongedaan worden gemaakt door [contact met ons opnemen][2] om de beperking op te heffen.
 
 </Warning>
 [1]: /account/actions/restrict/
