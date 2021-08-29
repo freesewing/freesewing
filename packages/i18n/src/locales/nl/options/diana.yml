@@ -4,5 +4,5 @@ shoulderSeamLength:
   description: Bepaalt de lengte van de schoudernaad
 drapeAngle:
   title: Drape angle
-  description: Controls the amount of drape
+  description: Bepaalt het aantal drape
 
