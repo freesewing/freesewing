@@ -1,2 +1,2 @@
 
-Controls how much longer than the default you want your T-shirt to be.
+Legt fest, wie viel länger das T-Shirt sein soll.
