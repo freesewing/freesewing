@@ -1,4 +1,4 @@
-![Collarstand bend](collarstandbend.svg)
+![Kollarstand Biegen](collarstandbend.svg)
 
-How much the collar stand bends in the middle, rather than being straight. This influences how your collar will sit around your neck.
+Wie sehr der Kragen in der Mitte steht, anstatt gerade zu sein. Dies beeinflusst die Halseinstellung um den Hals.
 
