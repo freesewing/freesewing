@@ -1,2 +1,2 @@
 
-Controls the width of the front pocket bag. In other words, how far the pocket bag extends towards the center front of the trousers.
+Contrôle la largeur du sac de poche avant. En d'autres termes, jusqu'où le sac de poche s'étend vers le centre devant du pantalon.
