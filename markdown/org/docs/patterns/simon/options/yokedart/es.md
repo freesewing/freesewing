@@ -1,9 +1,9 @@
 ![Pinza del canesú](yokedart.svg)
 
-Controls the dart at the bottom side of the yoke.
+Controla el dardo en la parte inferior del yugo.
 
 <Note>
 
-Note that this dart is to compensate for a rounded back, not for sloping shoulders.
+Tenga en cuenta que este dardo es para compensar un redondeado hacia atrás, no para los hombros pendientes.
 
 </Note>
