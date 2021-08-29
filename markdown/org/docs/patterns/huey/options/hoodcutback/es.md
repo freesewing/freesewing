@@ -1,3 +1,3 @@
 ![Recorta capucha](./hoodcutback.svg)
 
-Controls how much the hood opening is cut back, making the hood less deep.
+Controla cuánto se corta la abertura de la capa, haciendo que la capilla sea menos profunda.
