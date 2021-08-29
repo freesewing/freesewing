@@ -1,7 +1,7 @@
 ![Anchura de la vista de los ojales](buttonholeplacketwidth.svg)
 
-The width of your buttonhole placket.
+El ancho de la placa del orificio del botón.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_buttonholeplacketwidth_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonholeplacketwidth_sample.svg "Efecto de esta opción en el patrón")
