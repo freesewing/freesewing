@@ -1,2 +1,2 @@
 
-This controls the slope of the shoulder seam.
+Esto controla la pendiente de la costura del hombro.
