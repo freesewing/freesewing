@@ -1,13 +1,13 @@
 ---
-title: Knit fabric
+title: Strickstoff
 ---
 
-![A piece of grey (French Terry) jersey, a knit fabric](fabric.jpg)
+![Ein Stück graues (Französisch Terry) Trikot, ein Strickstoff](fabric.jpg)
 
-Knit fabric is fabric that is knitted, rather than woven. Knit fabric typically stretches to some extent.
+Strickstoff ist Stoff, der strickt ist, und nicht gewebt. Das Strickgewebe streckt sich typischerweise bis zu einem gewissen Grad.
 
-While the fabric is knitted, it does not look like knitwear, but like fabric.
+Während das Stoff strickt ist, sieht es nicht wie Strickwaren aus, sondern wie Stoff.
 
-Knit fabric is used in garments where stretch is required. Sewing them is often done with a serger to maintain the stretch in the seams.
+Strickstoff wird in Kleidungsstücken verwendet, wo Dehnung erforderlich ist. Das Nähen erfolgt oft mit einem Serger, um die Streckung in den Nähten zu erhalten.
 
-> Wikipedia has more to say about knits: [Knitted fabric in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
+> Wikipedia hat mehr über Strickereien zu sagen: [Stoff in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
