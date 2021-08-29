@@ -1,5 +1,5 @@
 ---
-title: Line widths and strokes
+title: Lijnbreedtes en beroertes
 ---
 
 Ontwerpers kunnen, als ze willen, een andere lijndikte of vorm van lijn kiezen dan de standaard. Dit kunnen ze doen om extra info toe te voegen (zoals waar je een patroon moet plooien, of waar een zak gestikt zou worden).
