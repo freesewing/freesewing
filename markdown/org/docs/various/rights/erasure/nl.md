@@ -1,5 +1,5 @@
 ---
-title: The right to erasure
+title: Het recht om te wissen
 order: 40
 ---
 
