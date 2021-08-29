@@ -1,3 +1,3 @@
-![The back drop option on Cathrin](./backdrop.svg)
+![Die Rückwärtsdrop-Option auf Cathrin](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Diese Option legt fest, wie weit die Mitte zurück unten am Korsett gesenkt wird.
