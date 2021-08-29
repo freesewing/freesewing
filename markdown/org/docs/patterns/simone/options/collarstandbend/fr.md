@@ -1,8 +1,8 @@
-![Collarstand bend](collarstandbend.svg)
+![courbure de la courbe de la Collarstand](collarstandbend.svg)
 
-How much the collar stand bends in the middle, rather than being straight. This influences how your collar will sit around your neck.
+Combien le collier se plie au milieu, plutôt que d'être droit. Cela influence la façon dont votre collier s'assied autour de votre cou.
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarstandbend_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarstandbend_sample.svg "Effet de cette option sur le motif")
