@@ -1,7 +1,7 @@
-![The front rise option on Cathrin](./frontrise.svg)
+![Die Front-Up-Option auf Cathrin](./frontrise.svg)
 
-How high do you want the corset to rise up at the center front.
+Wie hoch soll das Korsett an der Vorderseite aufsteigen.
 
-> This rise occurs center front between your breasts. Don't overdo it or the edge of your corset will push into your breasts.
+> Dieser Aufstieg tritt in der Mitte zwischen den Brüsten auf. Übertreiben Sie es nicht oder der Rand Ihres Korsetts schiebt in Ihre Brüste.
 
-> This option also allows negative values. They will cause the center front to be lowered.
+> Diese Option erlaubt auch negative Werte. Sie werden dazu führen, dass die Vorderseite des Zentrums gesenkt wird.
