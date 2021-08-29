@@ -1,7 +1,7 @@
 ---
-title: Waist to underbust
+title: Espera a bajo busto
 ---
 
-The **waist to underbust** is the measurement from your waist up towards your underbust link (where your bra band sits).
+La cintura **para subbust** es la medición desde tu cintura hacia tu enlace de subbust (donde se encuentra tu banda de sujetas).
 
-To measure your **waist to underbust**, locate the height of both your waist and underbust, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Para medir tu cintura **para que la subyace**, localiza la altura tanto de tu cintura como de la bajada, y mide la distancia vertical entre ellos. Asegúrese de medir al lado de su cuerpo.
