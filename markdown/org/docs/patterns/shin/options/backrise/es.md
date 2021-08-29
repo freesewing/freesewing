@@ -1,6 +1,6 @@
 
-How much extra rise do you want at the back?
+¿Cuánto aumento adicional quieres a la espalda?
 
-This factor will raise the waist at the back of your swim trunks only.
+Este factor sólo aumentará la cintura en la parte posterior de tus troncos de natación.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Si quieres levantar la cintura en general, eso es lo que hace la opción **rise**
