@@ -2,21 +2,21 @@
 title: Inclinación de hombro
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+La medición de **pendiente del hombro** es un indicador de la cantidad con la que tu hombro tiene pendiente descendente.
 
-To measure your shoulder slope, you need to determine the angle at which your shoulder line slopes downward.
+Para medir la pendiente del hombro, es necesario determinar el ángulo en el que la línea del hombro tiene pendiente hacia abajo.
 
 A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
 
-The angle you had to rotate is your shoulder slope.
+El ángulo que tenías que girar es la pendiente de tu hombro.
 
 <Note>
 
-Almost all people have a slightly different shoulder slope on both sides.
-That's because your dominant arm is more pronounced.
+Casi todas las personas tienen una pendiente de hombro ligeramente diferente en ambos lados.
+Esto se debe a que su brazo dominante es más pronunciado.
 
-Unless the different is huge, best not to worry about it.
-It won't show up for casual garments, and for formal wear, it's better to add
-asymmetric shoulder padding, rather than create an asymmetric pattern.
+A menos que lo diferente sea alto, lo mejor es no preocuparse por ello.
+No se mostrará para prendas casuales, y para el uso formal, es mejor añadir
+de relleno asimétrico, en lugar de crear un patrón asimétrico.
 
 </Note>
