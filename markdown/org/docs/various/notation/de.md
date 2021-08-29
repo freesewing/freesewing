@@ -9,10 +9,10 @@ Hopefully our patterns are easy enough to understand, but if you come across som
 
 <Tip>
 
-##### Might vary slightly between preview and final result
+##### Möglicherweise zwischen Vorschau und Endergebnis etwas variieren
 
-For reason that are surprisingly complex, there might be slight
-differences in fonts and colors between how a pattern looks online 
-and how it looks as a downloaded PDF or SVG.
+Aus dem Grund das überraschend komplex ist, es könnte leichte
+Unterschiede in Schriftarten und Farben geben, wie ein Muster online aussieht 
+und wie es als heruntergeladene PDF oder SVG aussieht.
 
 </Tip>
