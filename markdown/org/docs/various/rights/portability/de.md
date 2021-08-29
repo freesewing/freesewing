@@ -1,10 +1,10 @@
 ---
-title: The right to data portability
+title: Das Recht auf Datenübertragbarkeit
 order: 60
 ---
 
-You have the right to obtain and reuse your personal data for your own purposes or across different services.
+Sie haben das Recht, Ihre persönlichen Daten für eigene Zwecke oder über verschiedene Dienstleistungen zu erhalten und zu verarbeiten.
 
-Go to [/account/actions/export][1] to export your data.
+Gehen Sie zu [/account/actions/export][1] um Ihre Daten zu exportieren.
 
 [1]: /account/actions/export/
