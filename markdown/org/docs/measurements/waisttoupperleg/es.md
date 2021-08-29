@@ -1,5 +1,5 @@
 ---
-title: Waist to upper leg
+title: Ira a la pierna superior
 ---
 
-The **waist to upper leg** is measured from your waist down to the top of your leg. Measure it a the side of your body.
+La cintura **a la pierna superior** se mide desde la cintura hasta la parte superior de la pierna. Medirlo a un lado de su cuerpo.
