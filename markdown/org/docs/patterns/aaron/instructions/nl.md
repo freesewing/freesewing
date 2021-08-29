@@ -3,18 +3,18 @@
 
 ![Sluit de zij-en schoudernaden](step01.png)
 
-Put front and back on top of each other with _good sides together_. Overlock de zijnaden, en de korte naden aan de schouderbandjes.
+Leg de voor- en achterpand op elkaar met _goede kanten op elkaar_. Overlock de zijnaden, en de korte naden aan de schouderbandjes.
 
 ## Stap 2: Werk de zoom af
 
 ![Werk de zoom af](step02.png)
 
-Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Zo niet, gebruik een _tweelingnaald_ of _zigzagsteek_ om de naad elastisch te houden.
 
 <Note>
 
-##### Fold only once, to avoid bulk
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+##### Enkel een keer vouw om massa
+Knitwear te vermijden ravel, niet dus je kan dit gewoon een keer omplooien en vaststikken, en dan de stof netjes bijknippen.
 
 </Note>
 
@@ -22,17 +22,17 @@ Knitwear doesn't ravel, so you can simply fold this over once and sew it down, t
 
 <Note>
 
-##### About knit binding
+##### Over jersey bies
 
-If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
+Als je nieuw bent met [jersey biezen](/docs/naai/naai/knit-binding), kan je [deze pagina over het onderwerp lezen](/docs/naai/breit-binding).
 
-###### Repeat steps 3 and 4 for both armholes and the neck opening
+###### Herhaal stap 3 en 4 voor zowel armsgaten als de halsopening
 
-The procedure outlined below applies to both of the armholes as well as the neck opening. Met andere woorden, je zal dit drie keer moeten doen.
+De onderstaande procedure is zowel van toepassing op de armsgaten als op de halsopening. Met andere woorden, je zal dit drie keer moeten doen.
 
-###### Start with the simplest opening
+###### Begin met de eenvoudigste opening
 
-I would advise you to start with whatever opening has the most uniform curvature. Meestal zijn dit de armsgaten, maar als je de patroonopties aangepast hebt (denk aan een racerback) is dat misschien niet het geval.
+Ik raad je aan om te beginnen met elke opening die de meest uniforme curve heeft. Meestal zijn dit de armsgaten, maar als je de patroonopties aangepast hebt (denk aan een racerback) is dat misschien niet het geval.
 
 Hoe dan ook, hoe minder scherp de curves zijn, hoe makkelijker. Start dus met een makkelijker opwarmertje voor je aan de lastigere stukken begint.
 
@@ -53,7 +53,7 @@ Dit is het enige onderdeel van dit hemdje waar wat oefening voor vereist is. Gee
 Het eerste dat we moeten doen is beslissen waar de bies gaat starten en stoppen. Dit zou ik suggereren:
 
   - Voor de armsgaten: aan de zijnaad. Zo zit de naad verstopt onder je arm
-  - Voor de halsopening: middenachter aan je nek. You might want to mark this with a pin
+  - Voor de halsopening: middenachter aan je nek. Misschien wil je dit markeren met een pin
 
 ### Positioneer (het begin van) je bies
 
@@ -74,7 +74,7 @@ We gaan op 1,5 cm van de rand naaien. Opletten dus, want dit is niet de standaar
 <Tip>
 
 Als je naaimachine geen markeringen heeft om de afstand van de naald tot de rand van de stof aan te geven kan je een zoommaatje gebruiken. 
-Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle. 
+Of doe wat ik doe, plak een stukje plakband op je naaimachine en markeer er een lijn op 1,5 cm van je naald. 
 Dan moet je alleen maar de rand van je stof gelijk houden met die lijn.
 
 </Tip>
@@ -101,13 +101,13 @@ Met nog een zestal cm te gaan voor de een complete cirkel gemaakt hebben is het 
 
 Neem een van de uiteindes, en rek het lichtjes uit langs de 3 cm tot aan het startpunt, zoals je zou doen als je aan het naaien was.
 
-Mark the binding where it reaches the start point. Doe hetzelfde voor het andere uiteinde.
+Markeer de bies waar het beginpunt wordt bereikt. Doe hetzelfde voor het andere uiteinde.
 
 ### Stik de uiteindes van de biezen aan elkaar
 
 ![Zet de uiteindes van de bies aan elkaar](step03g.png)
 
-Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Naai de uiteindes aan elkaar op de markering.
+Plooi je hemdje op welke manier dan ook om beide uiteindes van de bies met de goede kanten op elkaar te leggen en de markeringen gelijk te leggen. Naai de uiteindes aan elkaar op de markering.
 
 > 6 cm is niet veel, maar zou genoeg moeten zijn om de twee uiteindes makkelijk onder je naaimachine te leggen en aan elkaar te naaien.
 
@@ -144,14 +144,14 @@ Wederom moet je de bies een beetje uitrekken terwijl je dit doet. Maar nu is er 
 
 <Note>
 
-##### Beware of the uneven feed
-As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward. 
+##### Pas op voor de oneven feed
+Als je je bies via je naaimachine voert, de feed honden trekken de onderste laag (achterkant van je binding) vooruit. 
 
 In een ideale wereld zouden alle lagen gelijkmatig volgen. 
 Maar meestal blijft de bovenste laag (de voorkant van je bies) wat achter. 
 Dit zorgt dat je bies niet helemaal recht rond de randjes geplooid ligt, en lelijke rimpels maakt.
 
-So watch out for this, and if you see it happening, stretch the under-layer a bit extra to compensate.
+Dus let op, en als je het ziet gebeuren, rek dan de onderlaag een beetje extra uit om te compenseren.
 
 </Note>
 
@@ -159,7 +159,7 @@ So watch out for this, and if you see it happening, stretch the under-layer a bi
 
 ![Knip de bies langs de binnenkant bij](step05.png)
 
-On the inside of your A-shirt, trim back the knit binding against your seam to finish up.
+Knip de bies bij aan de binnenkant van je hemdje bij om het af te werken.
 
 <Note>
 
