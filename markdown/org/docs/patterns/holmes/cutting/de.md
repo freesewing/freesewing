@@ -1,29 +1,29 @@
 ---
-title: Holmes Cutting
+title: Holmschneiden
 ---
 
 The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
-### Materials
+### Materialien
  - **Oberstoff**
    - Cut the amount of **gores** you selected in the pattern options
-   - Cut **4 ear** parts or Cut **2 ear** from main and lining.
+   - Schneiden Sie **4 Ohrteile** oder schneiden Sie **2 Ohr** von Haupt und Lining.
    - Cut **4 bill** parts
  - **Futterstoff**
    - Cut the amount of **gores** you selected in the pattern options
  - **Bill Insert Material**
    - Cut **2 bill inserts**. Use your bill pattern piece with no seam allowance.
 
-### Optional Fabric Ties
-If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can ***Edgestitch*** or ***Topstitch*** the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
+### Optionale Stoffbinden
+Wenn du kein Band für deine Verbindungen verwenden möchtest, kannst du sie aus dem Stoff herstellen. Schneiden Sie einfach 4 Crosskornstreifen von einem 1" (2. cm) oder Breite Ihrer Wahl + Nahtzustände breit und nähen zwei Röhren, so dass eine der kurzen Seiten offen zum Drehen ist. Clicken Sie die Ecken und schneiden Sie Nähte. Stelle einen Druck aus. Wenn gewünscht, können Sie ***Edgestitch*** oder ***Topstich*** die Röhren, um den Stoff vom Umschalten zu stoppen. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden.
 
 <Note>
 
-It is recommended to draft the pattern nett and use the pattern to trace the seam lines onto fabric and add the seam allowance on the fabric rather than the pattern. This to allow for a more precise sew which is needed for a hat. Recommended seam allowance 1/4" (6mm) on the sides of the gores, ear flaps and outer curve of the bills. 1/2" (1.3cm) for the bottom of the gores, ear flaps and inner curve of the bills. With these seam allowances you will not have to trim the allowances if you do not want to.  
+Es wird empfohlen, das Musternetz zu entwerfen und das Muster zu verwenden, um die Nahtlinien auf Stoff zu verfolgen und die Nahtzuweisung auf den Stoff statt auf das Muster zu setzen. Dies ermöglicht eine präzisere Nähung, die für einen Hut benötigt wird. Recommended seam allowance 1/4" (6mm) on the sides of the gores, ear flaps and outer curve of the bills. 1/2" (1.3cm) for the bottom of the gores, ear flaps and inner curve of the bills. Mit diesen Nahtzuweisungen müssen Sie die Zulagen nicht abschneiden, wenn Sie es nicht wollen.  
 
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Make sure to cut off the bottom seam allowance before trying it on. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Once re-drafted make another mock-up to check whether you are satified with the changes or not. Repeat again if you are not satisfied.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Stellen Sie sicher, dass Sie den unteren Nahtzuschlag abschneiden, bevor Sie es versuchen. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Wenn Sie einmal neu entworfen, machen Sie einen weiteren Spruch, um zu überprüfen, ob Sie mit den Änderungen gesättigt sind oder nicht. Wiederholen Sie, wenn Sie nicht zufrieden sind.
 
 </Warning>
