@@ -1,11 +1,11 @@
 ![Largeur de la pointe](topwidth.svg)
 
-The tip width is the width at the tip of the tie.
+La largeur de la pointe est la largeur à la pointe de la cravate.
 
-How wide your tie is at the tip is a style choice.
+La largeur de votre cravate à la pointe est un choix de style.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+Ne pas rendre la largeur de la pointe plus petite que la largeur du nœud
 
 </Note>
