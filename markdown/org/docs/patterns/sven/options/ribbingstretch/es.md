@@ -1,3 +1,3 @@
 ![Extensión de tejido acanalado](ribbingstretch.svg)
 
-The amount of stretch we should foresee for the ribbing at the hem/cuffs.
+La cantidad de estiramiento que debemos predecir para la costilla en el sepulcro.
