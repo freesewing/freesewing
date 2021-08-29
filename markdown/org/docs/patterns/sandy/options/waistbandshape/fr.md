@@ -1,4 +1,4 @@
 
 ![Forme de ceinture](waistbandshape.svg)
 
-The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences.
+La forme de la ceinture. Droit facilite les choses, mais une ceinture arrondie s’adapte à votre corps si vous avez une juste différence entre la taille et les circonférences.
