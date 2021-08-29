@@ -1,4 +1,4 @@
 
-![Waist reduction ratio back](waistreductionratioback.svg)
+![Relación de reducción de cera atrás](waistreductionratioback.svg)
 
-Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping.
+La parte de la cintura se reducirá en la forma del panel trasero. También afectará a la configuración del panel lateral.
