@@ -2,4 +2,4 @@
 title: Kellerfalte Falz
 ---
 
-Controls how much the box pleat at the back is folded/pleated.
+Legt fest, wieviel die Box auf der Rückseite gefaltet ist/gefaltet.
