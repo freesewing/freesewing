@@ -1,3 +1,3 @@
 ![Saumradius](hemradius.svg)
 
-Determines the radius of the hem if you opted for a rounded hem.
+Bestimmt den Radius des Säures, wenn du dich für einen abgerundeten Saum entschieden hast.
