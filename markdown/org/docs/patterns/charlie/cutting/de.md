@@ -1,30 +1,30 @@
 
-##### From main fabric
+##### Von Hauptstoff
 
-- Part **1**: **2 x** _with good sides together_.
-- Part **2**: **2 x** _with good sides together_.
-- Part **4**: **4 x**
-- Part **6**: **2 x**
-- Part **8**: **2 x** 2 _with good sides together_
-- Part **9**: **2 x** _with good sides together_
-- Part **10**: **1 x** on the fold
-- Part **11**: **1 x** if making a straight waistband
-- Part **11**: **2 x** _with good sides together_ if making a curved waistband
-- Part **12**: **1 x**
+- Teil **1**: **2 x** _mit guten Seiten zusammen_.
+- Teil **2**: **2 x** _mit guten Seiten zusammen_.
+- Teil **4**: **4 x**
+- Teil **6**: **2 x**
+- Teil **8**: **2 x** 2 _mit guten Seiten zusammen_
+- Teil **9**: **2 x** _mit guten Seiten zusammen_
+- Teil **10**: **1 x** auf der Falte
+- Teil **11**: **1 x** wenn eine geradlinige Taille hergestellt wird
+- Teil **11**: **2 x** _mit guten Seiten zusammen_ wenn eine geschwungene Taille hergestellt wird
+- Teil **12**: **1 x**
 
-##### From lining (or any material suitable for pocket bags)
+##### Aus Futter (oder jedem Material, das für Taschen geeignet ist)
 
-- Part **5**: **2 x**
-- Part **7**: **2 x**
+- Teil **5**: **2 x**
+- Teil **7**: **2 x**
 
-##### From fusible interfacing
+##### Von flüchtiger Schnittstelle
 
-- Part **3**: **2 x**
+- Teil **3**: **2 x**
 
 <Tip>
 
-##### A dash of color perhaps?
+##### Ein Farbton vielleicht?
 
-You can cut part 4 from a different color for a little contrasting detail at the back pockets
+Du kannst Teil 4 aus einer anderen Farbe für ein wenig kontrastierendes Detail in den hinteren Taschen schneiden
 
 </Tip>
