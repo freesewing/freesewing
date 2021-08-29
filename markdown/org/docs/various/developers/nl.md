@@ -2,8 +2,8 @@
 title: Documentatie voor ontwikkelaars
 ---
 
-Freesewing.org only hosts documentation for makers.
+Freesewing.org organiseert alleen documentatie voor makers.
 
-Our documentation for developers, contributors, editors, and translators alike is available on [freesewing.dev][1]
+Onze documentatie voor ontwikkelaars, medewerkers, tekstverwerkers en vertalers is beschikbaar op [freesewing.dev][1]
 
 [1]: https://freesewing.dev/
