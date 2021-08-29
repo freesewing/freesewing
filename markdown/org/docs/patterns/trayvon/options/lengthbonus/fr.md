@@ -1,2 +1,2 @@
 
-Adds extra length to the tie.
+Ajoute une longueur supplémentaire à la cravate.
