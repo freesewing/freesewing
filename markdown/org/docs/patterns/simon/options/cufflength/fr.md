@@ -1,9 +1,9 @@
 ![Longueur de poignet](cufflength.svg)
 
-The length of your cuffs.
+La longueur de vos poignets.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Cela n'influencera pas la durée totale de votre manche.
 
 </Note>
