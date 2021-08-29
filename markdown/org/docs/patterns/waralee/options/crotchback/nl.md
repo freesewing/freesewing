@@ -1,2 +1,2 @@
-The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.
+Het percentage van de omtrek zitvlak dat het kruis achteraan moet bezetten. Dit creëert min of meer ruimte tussen de zijnaad en de achterkant.
 
