@@ -1,3 +1,3 @@
 ![Aisance à la taille](waistease.svg)
 
-How much room do you want at the waist?
+Combien de place voulez-vous à la taille?
