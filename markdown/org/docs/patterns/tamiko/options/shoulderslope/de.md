@@ -1,2 +1,2 @@
 
-This controls the slope of the shoulder seam.
+Diese steuert den Hang der Schulternaht.
