@@ -1,1 +1,1 @@
-Adjust this option for more or less stretchy elastic.
+Passen Sie diese Option für mehr oder weniger dehnbare Elastik an.
