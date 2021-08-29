@@ -1,8 +1,8 @@
-To make Sven, you will need the following:
+Pour fabriquer Sven, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
 - Environ 1.75 m d'un tissu adapté ([voir Options de tissu](#fabric-options))
-- Ribbing fabric for the cuffs and neck opening
+- Tissu de bordure pour les poignets et l'encolure
 
 <Note>
 
