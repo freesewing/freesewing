@@ -1,4 +1,4 @@
 
-![Roll line collar height](rolllinecollarheight.svg)
+![Altura del collar de la línea de rollo](rolllinecollarheight.svg)
 
-The amount by which the roll line hugs the neck.
+La cantidad por la cual la línea de rollo agarra el cuello.
