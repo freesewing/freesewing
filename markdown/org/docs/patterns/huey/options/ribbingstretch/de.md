@@ -1,3 +1,3 @@
 ![Bündchen-Elastizität](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Kontrolliert die Menge der Strecke, die im Band vorauszusehen ist.
