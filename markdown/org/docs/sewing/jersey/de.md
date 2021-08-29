@@ -1,11 +1,11 @@
 ---
-title: Jersey
+title: Trikot
 ---
 
-![A piece of grey jersey](knit-fabric.jpg)
+![Ein Stück grauem Trikot](knit-fabric.jpg)
 
-Jersey is a type of knit fabric. Jersey has a flat and a piled side, and is often used for T-shirts.
+Jersey ist eine Art Strickstoff. Jersey hat eine flache und eine stapelbare Seite und wird oft für T-Shirts verwendet.
 
-Jersey can also be double-knitted (sometimes called interlock jersey). This produces a thicker fabric with the flat sides on the outside and the piled sides locked in the middle.
+Jersey kann auch doppelt gestrickt werden (manchmal auch Interlock Trikot). Dadurch entsteht ein dickeres Gewebe mit den flachen Seiten an der Außenseite und den in der Mitte verriegelten Seiten.
 
-Jersey has good drape which makes it a popular choice for tops and dresses.
+Jersey hat eine gute Drape, die es zu einer beliebten Wahl für Tops und Kleider.
