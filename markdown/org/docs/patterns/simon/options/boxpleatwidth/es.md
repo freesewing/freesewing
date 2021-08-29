@@ -2,4 +2,4 @@
 title: Anchura del pliegue en caja
 ---
 
-Controls the width of the (optional) box pleat at the back.
+Controla el ancho del pliegue (opcional) del recuadro en la parte trasera.
