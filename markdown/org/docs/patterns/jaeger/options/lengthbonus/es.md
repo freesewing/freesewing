@@ -1,5 +1,5 @@
 
 ![Bonus de longitud](lengthbonus.svg)
 
-The amount to lengthen the body of your jacket.
+La cantidad para alargar el cuerpo de su jacket.
 
