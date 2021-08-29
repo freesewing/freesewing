@@ -1,15 +1,15 @@
 ---
-title: The right to object
+title: El derecho al objeto
 order: 70
 ---
 
-You have the right to object to your personal data being used for scientific research.
+Usted tiene derecho a oponerse a que sus datos personales sean utilizados para la investigación científica.
 
-Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
+Vaya a [/account/consent](/account/consent/) y al objeto en la sección **datos del modelo** para hacerlo.
 
 <Note>
 
-The right to object is broader, but this is how it applies to freesewing.
+El derecho a objetar es más amplio, pero así es como se aplica a la libertad de expresión.
 
 </Note>
 
