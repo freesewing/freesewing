@@ -18,7 +18,7 @@ Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sa
 
 Repassez la couture centrale ouverte pour qu'elle soit bien plate.
 
-Comme il s'agit d'une couture courbe, elle ne sera pas complètement plate. Mais vous pouvez vous en approcher en repassant d'abord la moitié d'un côté, puis la seconde moitié de l'autre côté. Alternatively, you can use a tailor's ham or cushion to press.
+Comme il s'agit d'une couture courbe, elle ne sera pas complètement plate. Mais vous pouvez vous en approcher en repassant d'abord la moitié d'un côté, puis la seconde moitié de l'autre côté. Vous pouvez également utiliser un jambon de tailleur ou un coussin pour presser.
 
 <Note>Répétez cette étape pour le tissu destiné à l'intérieur du masque (doublure).</Note>
 
