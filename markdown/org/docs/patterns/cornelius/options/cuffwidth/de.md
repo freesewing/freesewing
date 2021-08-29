@@ -2,5 +2,5 @@
 title: Cuff width
 ---
 
-Controls the width of the cuff.
+Steuert die Breite der Manschette.
 
