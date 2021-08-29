@@ -1,29 +1,29 @@
 <Tip>
 
-###### Cut out only what you need
-Depending on the choices you made in your pattern, you may not need all parts.
-If a pattern part is not printed, it means you don't need it.
+###### Ne coupez que ce dont vous avez besoin
+En fonction des choix que vous faites dans votre patron, vous n'avez peut-être pas besoin de toutes les pièces.
+Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas besoin.
 
 </Tip>
 
-  - From your main fabric:
-    - 2x **part 1**: This is the back panel. Cut these from your **main fabric** with _good sides together_
-    - 2x **part 2**: This is the front panel. Cut these from your **main fabric** with _good sides together_
-    - 2x **part 3**: This is the waistband. Cut it from your **main fabric**
-    - 2x **part 4**: This is the ankle cuff. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
-    - 2x **part 7**: This is the back pocket welt. Cut 2 of these from your **main fabric** with _good sides together_
-  - From your lining fabric:
-    - 2x **part 5**: This is the front pocket bag. Cut these, from your **lining fabric** _on the fold_ (not needed if you chose to not have front pockets)
-    - 2x **part 6**: This is the back pocket bag. Cut 2 of these from your **lining fabric** _on the fold_
-  - From interfacing:
-    - 2x **part 8**: This is the back pocket welt interfacing. Cut 2 of these from **interfacing**
+  - De votre tissu principal :
+    - 2x **partie 1**: Ceci est le panneau arrière. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
+    - 2x **partie 2**: Ceci est le panneau avant. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
+    - 2x **partie 3**: Ceci est la ceinture. Coupez-le de votre **tissu principal**
+    - 2x **part 4**: C'est le manchon de la cheville. Coupez ceci, de votre **tissu principal** avec _bons côtés ensemble_ (inutile si vous avez choisi de ne pas avoir d'ourlet élastique)
+    - 2x **partie 7**: Il s'agit de la poche arrière. Coupez 2 de vos **tissus principaux** avec _bons côtés ensemble_
+  - À partir de votre tissu de doublure :
+    - 2x **part 5**: Ceci est le sac de poche avant. Coupez ceci, de votre tissu **doublure** _sur le pli_ (non nécessaire si vous avez choisi de ne pas avoir de poches avant)
+    - 2x **part 6**: Ceci est le sac de poche arrière. Coupez 2 de ces éléments de votre tissu **doublure** _sur le pli_
+  - À partir de l'interface :
+    - 2x **part 8**: Il s'agit de l'interface de la poche arrière. Coupez 2 d'entre eux de **l'interface**
 
 <Warning>
 
-#### Caveats
+#### Avertissements
 
- - There is no seam allowance on the interfacing 
- - There is extra seam allowance on the waist band and hem
- - The waistband is a mere rectangle, so it's not fully printed to save paper
+ - Il n'y a pas de marge de couture sur l'interfaçage 
+ - Il y a une marge de couture supplémentaire sur la bande de taille et l'ourlet
+ - La ceinture est un simple rectangle, donc il n'est pas entièrement imprimé pour enregistrer du papier
 
 </Warning>
