@@ -1,2 +1,2 @@
 
-The amount of overal (horizontal) stretch.
+La cantidad de estiramiento total (horizontal).
