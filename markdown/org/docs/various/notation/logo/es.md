@@ -2,6 +2,6 @@
 title: Logo
 ---
 
-Some (or all) pattern pieces may also include the FreeSewing logo. The logo has no special meaning, it's just branding.
+Algunas (o todas) piezas de patrones también pueden incluir el logotipo de FreeSewing. El logotipo no tiene ningún significado especial, es sólo de marca.
 
 <Legend part="logo" caption="The FreeSewing logo" >
