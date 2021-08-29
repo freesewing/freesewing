@@ -1,3 +1,3 @@
-![The biceps ease option on Diana](./bicepsease.svg)
+![Die Beizeps-Leicht-Option auf Diana](./bicepsease.svg)
 
-This option controls the fit at your upper arm, and influences the depth of the armhole.
+Diese Option steuert die Passung an deinem oberen Arm und beeinflusst die Tiefe des Armlochs.
