@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternOptions from '../../../../../../src/components/docs/pattern-options'
+importeer patternOptions van '../../../../src/components/docs/pattern-options'
 
 <PatternOptions pattern='teagan' />
 
