@@ -1,4 +1,4 @@
 
 ![Forma del pecho](chestshaping.svg)
 
-The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
+La cantidad vertical para tazar & diseminar el panel frontal superior para dar forma al cofre, como factor de la circunstancia de tu cofre.
