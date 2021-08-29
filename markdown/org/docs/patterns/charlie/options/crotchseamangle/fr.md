@@ -1,4 +1,4 @@
 
-Controls the start of the crotchseam at the front fork point.
+Contrôle le début du crotchseam au point de fourche avant.
 
-This will influence how the trousers fit at the crotch.
+Cela influencera la façon dont le pantalon s'adapte à la récolte.
