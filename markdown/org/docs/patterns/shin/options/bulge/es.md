@@ -1,6 +1,6 @@
 
-How much room do you want in the front?
+¿Cuánto espacio quieres en la parte delantera?
 
-Increasing this will creating more room in the front.
+Incrementar esto creará más espacio en el frente.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Si está buscando una habitación vertical, eso es lo que hace la opción **rise**
