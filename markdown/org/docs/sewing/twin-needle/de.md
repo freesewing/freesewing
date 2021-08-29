@@ -4,10 +4,10 @@ title: Zwillingsnadel
 
 ![Eine Zwillingsnadel von Schmetz](twin-needle.jpg)
 
-![A twin needle stitch is flexible because of the zig-zag at the back.](twin-needle.gif)
+![Durch den Zick-Zick-Zick-Zack an der Rückseite ist ein Zick-Zick-Nadelstich flexibel.](twin-needle.gif)
 
-A twin needle is useful for when you need to sew stretchable topstitching (like when hemming a knit). You can also use it for a decorative effect.
+Eine Zwillingsnadel ist nützlich, wenn man ein streckbares Stapeln nähen muss (wie beim Einbauen eines Stricks). Sie können es auch für einen dekorativen Effekt verwenden.
 
-While a coverlock machine is purpose-built to produce a stretchable topstitch, not everybody has such a machine. A twin needle uses two upper threads and a single under thread. This causes a zig-zag effect on the back, making the stitch stretchable. Meanwhile, you get two parallel lines of stitching at the front.
+Während eine Deckschlosmaschine für die Herstellung einer dehnbaren Deckstich bestimmt ist, hat nicht jeder eine solche Maschine. Eine Zwillingsnadel verwendet zwei Oberfäden und einen Einfaden unter dem Faden. Dies verursacht einen Zickzack-Effekt auf der Rückseite und macht den Stich dehnbar. Mittlerweile gibt es zwei parallele Heftlinien an der Front.
 
-> Animated GIF by [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
+> GIF-Animiert von [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
