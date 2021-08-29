@@ -1,5 +1,5 @@
 
 ![Pinces milieu dos](centerbackdart.svg)
 
-The reduction at the center back from shoulders to neck, which accomodates for a curved upper back.
+La réduction au centre du dos des épaules au cou, qui accueille pour une courbure supérieure du dos.
 
