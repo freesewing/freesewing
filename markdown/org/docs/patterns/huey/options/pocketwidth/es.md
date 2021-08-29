@@ -1,3 +1,3 @@
 ![Anchura de bolsillo](./pocketwidth.svg)
 
-Controls the width of the front pocket.
+Controla el ancho del bolsillo frontal.
