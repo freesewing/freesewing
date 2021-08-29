@@ -1,3 +1,3 @@
-![This option controls whether or not to include the front pouch pocket](./pocket.svg)
+![Esta opción controla si incluir o no el bolsillo frontal](./pocket.svg)
 
-Do you want front (pouch) pocket or not?
+¿Quieres bolsillo frontal (bolsa) o no?
