@@ -1,11 +1,11 @@
 ![Spitzenbreite](topwidth.svg)
 
-The tip width is the width at the tip of the tie.
+Die Breite der Spitze ist die Breite an der Spitze der Krawatte.
 
-How wide your tie is at the tip is a style choice.
+Wie weit Ihr Krawatte an der Spitze ist, ist eine Wahl im Stil.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+Die Breite der Spitze nicht kleiner als die Knotenbreite
 
 </Note>
