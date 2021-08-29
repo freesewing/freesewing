@@ -1,5 +1,5 @@
 ---
-title: How we use your visitor data
+title: Hoe we uw bezoekersgegevens gebruiken
 order: 10
 ---
 
@@ -13,7 +13,7 @@ order: 10
 
 ##### Hoe lang houden we ze?
 
-- We keep these logs no longer than 6 months.
+- We houden deze logs niet langer dan 6 maanden.
 
 ##### Wordt dit gedeeld?
 
