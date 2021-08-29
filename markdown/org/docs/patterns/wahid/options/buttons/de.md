@@ -1,3 +1,3 @@
 ![Knöpfe](buttons.svg)
 
-How many buttons do you want?
+Wie viele Tasten möchtest du?
