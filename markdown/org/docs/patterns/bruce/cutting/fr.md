@@ -1,8 +1,8 @@
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce se compose d'un dos, et de deux côtés, des intestins et des devants.
 
  - **Tissu principal**
    - Couper **1 dos** au pli
-   - Cut **2 fronts**
+   - Couper **2 faces**
    - Couper **2 inserts**
    - Couper **2 côtés**
 
