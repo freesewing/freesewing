@@ -2,21 +2,21 @@
 title: Coupe
 ---
 
-Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself. Warning: The pattern includes the seam allowances on the top part so if you cut it on fold, don't include them!
+Selon la quantité de tissu disponible, il est possible de couper deux parties supérieures ou latérales, d'où les instructions sur le patron lui-même. Attention : Le motif inclut les limites de couture sur la partie supérieure donc si vous le coupez sur pli, ne les incluez pas !
 
-The brim bottom part is inset, while the brim top part is offset so that the seam falls "underneath the brim edge". Keep that in mind when cutting the parts, and mark them accordingly, so that you don't end up with the seam on top of the brim (I don't want to force you into this design choice, I simply want to point out the difference between the parts so that you are aware of it and act accordingly).
+La partie inférieure du bord est insérée, tandis que la partie supérieure du bord est décalée de sorte que la couture tombe « sous le bord du bord ». Gardez cela à l'esprit lorsque vous coupez les pièces et marquez-les en conséquence, afin que vous ne finissiez pas avec la couture au-dessus du bord (je ne veux pas vous forcer à ce choix de conception, Je voudrais simplement souligner la différence entre les parties afin que vous en soyez conscient et que vous agissiez en conséquence).
 
  - **Tissu principal**
-   - Cut **1 top** on the fold but don't include the center seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
-   - Cut **1 brim top**.
-   - Cut **1 brim bottom**.
+   - Coupez **1 haut** sur le pli mais n'incluez pas la marge de couture du centre, ou **2 haut** avec la marge de couture du centre.
+   - Coupez **1 côté** sur le pli ou **2 côté**.
+   - Couper **1 bord dessus**.
+   - Coupez **1 bord au bas**.
  - **Tissu de doublure**
-   - Cut **1 top** on the fold but don't include the seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
- - **Plastic**
-   - Cut **1 brim interfacing**. Tape the pattern part to the plastic, don't cut the notches in the plastic, but you can mark it (engrave it, or with permanent marker maybe). You don't really want any sharp edge, so make sure everything is smooth and rounded a bit (especially on the pointy sides).
+   - Coupez **1 haut** sur le pli mais n'incluez pas la marge de couture, ou **2 haut** avec la marge de couture au centre.
+   - Coupez **1 côté** sur le pli ou **2 côté**.
+ - **Plastique**
+   - Coupez **1 bord en interface**. Collez la partie du motif en plastique, ne coupez pas les entailles dans le plastique, mais vous pouvez le marquer (graver, ou avec un marqueur permanent peut-être). Vous ne voulez pas vraiment de tranchant tranchant, alors assurez-vous que tout est lisse et arrondi un peu (surtout sur les côtés pointus).
 
-A typical Florent layout looks like this:
+Une disposition typique de Florent ressemble à ceci:
 
-![A typical Florent layout](layout.svg)
+![Une disposition typique de Florent](layout.svg)
