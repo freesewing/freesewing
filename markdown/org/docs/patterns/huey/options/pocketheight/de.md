@@ -1,3 +1,3 @@
 ![Taschenhöhe](./pocketheight.svg)
 
-Controls the height of the front pocket.
+Steuert die Höhe der Vordertasche.
