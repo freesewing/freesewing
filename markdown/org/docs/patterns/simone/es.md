@@ -1,6 +1,6 @@
 - - -
 - - -
 
-import PatternDocs from '../../../../../src/components/docs/pattern'
+importar Patrones de '../../../../../src/components/docs/pattern'
 
 <PatternDocs pattern='simone' />
