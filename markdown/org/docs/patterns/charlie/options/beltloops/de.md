@@ -1,2 +1,2 @@
 
-Constrol how many beltloops we'll generate.
+Überzeugen Sie, wie viele Beltloops wir generieren.
