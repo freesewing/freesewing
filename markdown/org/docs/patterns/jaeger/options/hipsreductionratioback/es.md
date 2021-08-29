@@ -1,4 +1,4 @@
 
-![Hips reduction ratio back](hipsreductionratioback.svg)
+![Ratio de reducción de Hips atrás](hipsreductionratioback.svg)
 
-Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping.
+La porción de las caderas se reducirá en la forma del panel trasero. También afectará a la configuración del panel lateral.
