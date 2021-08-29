@@ -1,7 +1,7 @@
 <Note>
 
-###### Sandy documentation is missing
+###### Sandy-Dokumentation fehlt
 
-The documentation for this pattern is yet to be written.
+Die Dokumentation für dieses Muster muss noch geschrieben werden.
 
 </Note>
