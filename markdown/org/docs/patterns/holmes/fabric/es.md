@@ -1,33 +1,33 @@
 ---
-title: Holmes Fabric options
+title: Opciones de tela de Holmes
 ---
 
-### Main Fabric
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+### Tela principal
+Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Generalmente quieres usar **Lanas** de peso de recubrimiento, pero puedes experimentar con diferentes pesos y tejidos con la interfaz relevante.
 <Note>
  
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. Then interface it with a **Medium Firm Interfacing**.
 
 </Note>
 
-### Lining Fabric
-Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but really you can make it from any fabric you deem appropriate for lining. Just remember it needs to protect the facing and the main fabric from your head.
+### Tela fina
+Generalmente quieres una tela ligera como **seda** o **alambre de algodón** pero realmente puedes hacerlo desde cualquier tela que consideres apropiada para el forraje. Simplemente recuerde que necesita para proteger el rostro y el tejido principal de su cabeza.
 
-### Interfacing
-Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly ***Baste*** your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again ***Baste*** the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary ***Pad Stitches***.
+### Interfaz
+Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma puede que necesite para interconectar su tejido. Si no estás seguro de si tu tela requiere interfaces, rápidamente ***Baste*** sus coronas juntas y compruebe si la corona se mantiene arriba cuando se coloca sobre una superficie. Si no necesita interfaz. Como regla general, generalmente necesitarás una interfaz de **empresa media** pero si tu tejido es bastante delgado, puede que necesites una interfaz más firme. Si aún no estás seguro, puedes enfrentarte a tus piezas de corona y volver a ***Bastar*** las piezas de la corona juntas y comprobar cómo se ve en tu cabeza. Usted puede usar interfaces fusibles o no fusibles. Si usas una interfaz no fusible querrás planificar la interfaz con tus piezas por medio de un tiempo ***Pad Stitches***.
 
 <Note>
  
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Simplemente asegúrese de usar fibras naturales.
 
 </Note>
 
 ### Bill Insert
 
-For the bill insert you want a firm but thin material. You may want to try either, **Millinery Buckram**, **Plastic Canvas**, **Plastic Sheets** or **EVA Foam**. You can use **Leather** just know that depending on depth this may create a thicker bill and may make the bill harder to close.
+For the bill insert you want a firm but thin material. Puede que quieras probar, **Buckram de Milinería**, **Lona de plástico**, **Hojas de plástico** o **Espuma EVA**. You can use **Leather** just know that depending on depth this may create a thicker bill and may make the bill harder to close.
 
 <Note>
  
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Recuerden. Todas ellas son recomendaciones. Si quieres usar algo diferente, ¡ve por ello!
 
 </Note>
