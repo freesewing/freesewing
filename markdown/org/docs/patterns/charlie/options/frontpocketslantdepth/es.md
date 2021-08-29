@@ -1,2 +1,2 @@
 
-Controls the depth of the front pocket slant. In other words, it determines how wide the pocket opening is.
+Controla la profundidad de la franja delantera del bolsillo. En otras palabras, determina la amplitud de la apertura del bolsillo.
