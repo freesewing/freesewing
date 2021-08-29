@@ -1,12 +1,12 @@
 ---
-layout: onecol
+layout: en ecol
 title: Corte
 ---
 
-![Me cutting out some T-shirts](cutting.jpg)
+![Cortando camisetas](cutting.jpg)
 
-Cutting is the act of cutting out the different pattern pieces out of your fabric.
+El corte es el acto de cortar las diferentes piezas de patrón de su tejido.
 
-Cutting is typically done with scissors or a rotary cutter.
+El corte se realiza típicamente con tijeras o con una cortadora rotativa.
 
-> The **cut of a garment**, the way it looks, refers to how it was cut out. For example, high-cut jeans and a low-cut top.
+> El **cortado de una prenda**, como parece, se refiere a cómo fue cortada. Por ejemplo, vaqueros de corte alto y una parte superior de corte bajo.
