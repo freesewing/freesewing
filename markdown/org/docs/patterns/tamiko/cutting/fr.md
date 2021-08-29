@@ -1,11 +1,11 @@
  - **Tissu principal**
-   - Cut **1 Tamiko top** on the fold
+   - Couper **1 Tamiko dessus** sur le pli
 
-Tamiko is a zero-waste pattern. It's a rectangle that's cut out on the fold. Not more than that. There's only one part to this top, we will simply refer to it at the **Tamiko top**. It needs to be cut on the fold along the bottom.
+Le Tamiko est un modèle zéro déchets. C'est un rectangle découpé sur le pli. Pas plus que cela. Il n'y a qu'une seule partie de ce sommet, nous y référerons simplement au **Tamiko top**. Elle doit être coupée sur le pli le long du fond.
 
 <Note>
 
-Cut out the armhole, but leave seam allowance
+Couper le blindage, mais laisser la marge de couture
 
 </Note>
 
