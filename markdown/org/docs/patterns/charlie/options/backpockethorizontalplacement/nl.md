@@ -1,4 +1,4 @@
 
-Controls the horizontal placement of the back pockets.
+Bepaalt de horizontale plaatsing van de achterzakken.
 
-In other words, more towards the outseam, and this wider apart. Or more towards the center back and thus closer together.
+Met andere woorden, meer naar buiten toe, en verder uit elkaar. Of meer richting het midden achter en dus dichter bij elkaar.
