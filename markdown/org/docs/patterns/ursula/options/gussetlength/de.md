@@ -1,1 +1,1 @@
-This option controls the length of the gusset.
+Diese Option steuert die Länge des Gussets.
