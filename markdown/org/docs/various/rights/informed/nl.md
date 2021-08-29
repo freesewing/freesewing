@@ -1,5 +1,5 @@
 ---
-title: The right to be informed
+title: Het recht om geïnformeerd te worden
 order: 10
 ---
 
