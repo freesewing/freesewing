@@ -1,15 +1,15 @@
 Ursula besteht aus einem vorderen Teil, einem hinteren Teil und einem gefütterten Zwickel.
 
  - **Oberstoff**
-   - Cut **1 front**
-   - Cut **1 back**
+   - **1 Front schneiden**
+   - **1 zurück schneiden**
    - Schneide **2 Zwickel**
 
 <Note>
 
-##### Notes
+##### Notizen
   
-- Ursula is a great scrap buster. If you have fabric scraps from making a [Teagan t-shirt](/designs/teagan/) or anything from a jersey fabric that has good stretch, this is a good way to use those up.
-- You can use the same fabric for the whole garment, including the gusset lining. Some people prefer to use a cotton jersey instead to line the gusset. If you want to do that, cut **1 gusset** from your main fabric and **1 gusset** from your lining fabric.
+- Ursula ist ein großartiger Schrottkäufer. Wenn du Stoffschrott hast, ein [Teagan T-Shirt](/designs/teagan/) oder irgendetwas aus einem Trikot mit guter Strecke, Dies ist eine gute Möglichkeit, diese zu nutzen.
+- Sie können den gleichen Stoff für das gesamte Kleidungsstück, einschließlich der Gusset Futter, verwenden. Einige Leute lieber ein Baumwoll-Trikot verwenden, um stattdessen die Gusset Linie. Wenn du das möchtest, schneide **1 Gusset** aus deinem Hauptstoff und **1 Gusset** aus deinem Futter-Stoff.
 
 </Note>
