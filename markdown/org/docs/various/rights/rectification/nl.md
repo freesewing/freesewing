@@ -1,5 +1,5 @@
 ---
-title: The right to rectification
+title: Het recht op rectificatie
 order: 30
 ---
 
