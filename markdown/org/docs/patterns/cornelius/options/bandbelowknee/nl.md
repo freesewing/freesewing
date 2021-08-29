@@ -1,6 +1,6 @@
 ---
-title: Cuff below knee
+title: Manchet onder knie
 ---
 
-Controls how far the cuff will sit below your knee.
+Bepaalt hoe ver de manchet onder je knie zal zitten.
 
