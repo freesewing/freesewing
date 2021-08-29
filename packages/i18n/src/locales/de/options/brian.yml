@@ -28,10 +28,10 @@ lengthBonus:
   description: Der Betrag, um den das Kleidungsstück verlängert wird. Ein negativer Wert verkürzt es.
 s3Collar:
   title: 'Schulternahtverschiebung: Kragenseite'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  description: Vergrößern Sie diese Option, um die SchulterNaht auf der Kragenseite nach vorne zu verschieben. Verringert sie sie rückwärts.
 s3Armhole:
   title: 'Schulternahtverschiebung: Armlochseite'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  description: Erhöhe diese Option, um die SchulterNaht auf der Armlochseite nach vorne zu verschieben. Verringert sie sie rückwärts.
 shoulderEase:
   title: Schulter Zugabe
   description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Schulter. Dies erhöht den Schulterabstand, um zusätzliche Lagen oder die Dicke des Stoffes zu beherbergen.
