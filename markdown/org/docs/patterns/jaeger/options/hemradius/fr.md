@@ -1,2 +1,2 @@
 
-Controls the amount by which the hem is rounded at the front bottom.
+Contrôle la quantité par laquelle l'ourlet est arrondi au fond avant.
