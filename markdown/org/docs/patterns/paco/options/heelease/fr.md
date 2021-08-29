@@ -1,4 +1,4 @@
 
-This controls the amount of ease at the instep, or heel.
+Cela contrôle la quantité d'aisance au instep, ou talon.
 
-Increase this to make it easier to get in and out of your pants.
+Augmentez ceci pour qu'il soit plus facile d'entrer et de sortir de votre pantalon.
