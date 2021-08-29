@@ -1,5 +1,5 @@
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Bepaalt de breedte waarmee de voorste steekzak in het voorpand snijdt.
 
-Increasing this will give a more slanted pocket.
+Door dit te verhogen krijgen we een schuchtere zak.
 
