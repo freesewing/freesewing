@@ -1,5 +1,5 @@
 
 ![Longitud de la abertura trasera](backventlength.svg)
 
-Controls the length of the back vent. Lower numbers result in a shorter vent.
+Controla la longitud de la ventanilla trasera. Los números más bajos dan como resultado una ventanilla más corta.
 
