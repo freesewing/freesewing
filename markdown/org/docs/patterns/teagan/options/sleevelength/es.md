@@ -1,1 +1,1 @@
-Controls the length of the sleeves.
+Controla la longitud de las mangas.
