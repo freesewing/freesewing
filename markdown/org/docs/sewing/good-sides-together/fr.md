@@ -18,10 +18,10 @@ Cela vous donne deux pièces en miroir les unes des autres.
 
 <Note> 
 
-##### What if there is not obvious good side?
+##### Que se passe-t-il s'il n'y a pas de bon côté évident ?
 
-When cutting out something without an obvious *good* side (like interfacing), 
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Lorsque vous coupez quelque chose sans un côté *bon* évident (comme l'interface), 
+ce qui importe, c'est que vous coupez deux pièces miroir plutôt que deux pièces identiques.
 
 </Note>
 
@@ -33,4 +33,4 @@ Coudre endroit contre endroit est la façon commune de coudre.
 
 En plaçant les tissus endroit contre endroit, les deux pièces seront assemblées avec la marge de couture à l'intérieur du vêtement. C'est ce qui est fait pour la grande majorité des coutures.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Quand il n'y a pas d'instructions spécifiques sur la façon de construire une couture, c'est de bons côtés ensemble.
