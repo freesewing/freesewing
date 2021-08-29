@@ -1,18 +1,18 @@
 ![Zusätzlicher oberer Knopf](extratopbutton.svg)
 
-Do you want an extra button between the top front button and collar stand button?
+Möchten Sie eine zusätzliche Taste zwischen der obersten Taste und dem Kragenständerknopf?
 
 <Note>
 
-###### Why an extra button?
+###### Warum einen Extra-Knopf?
 
-This extra button allows you to undo your collar button with your shirt staying relatively closed.
+Mit dieser zusätzlichen Schaltfläche können Sie Ihren Kragenknopf rückgängig machen, wenn Ihr Hemd relativ geschlossen bleibt.
 
-It's an extra button you'll want if you plan to still look good in the bar after your work day with your top button undone and your tie somewhat loose. 
-The extra button is also great if you are wearing your shirt under an overgarment with the top button undone. For example, under a sweater.
+Es ist ein zusätzlicher Knopf, den Sie wollen, wenn Sie planen, nach Ihrem Arbeitstag noch gut in der Bar mit der obersten Taste rückgängig zu machen und Ihre Krawatte etwas locker. 
+Der zusätzliche Knopf ist auch schön, wenn Sie Ihr Hemd unter einem Übergepäck mit der obersten Taste rückgängig machen. Zum Beispiel unter einem Pullover.
 
-Do not include the top button if you want a more casual look.
+Fügen Sie die obere Taste nicht ein, wenn Sie ein entspannteres Aussehen wünschen.
 
-This extra button is added to the number of buttons on the front. It does not replace another button.
+Diese zusätzliche Taste wird zur Anzahl der Tasten auf der Vorderseite hinzugefügt. Es ersetzt keinen anderen Knopf.
 
 </Note>
