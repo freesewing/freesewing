@@ -1,14 +1,14 @@
 ---
-title: Give feedback
+title: Dar comentarios
 ---
 
 <Note>
 
-##### Give us your feedback
+##### Danos tus comentarios
 
-We'd love to hear your thoughts on what you love (or hate) about FreeSewing.
+Nos encantaría escuchar tus pensamientos sobre lo que te gusta (o sobre FreeSewing.
 
-Please [join our chat room](https://discord.freesewing.org/) and share your thoughts.
+Por favor [únete a nuestra sala de chat](https://discord.freesewing.org/) y comparte tus pensamientos.
 
 </Note>
 
