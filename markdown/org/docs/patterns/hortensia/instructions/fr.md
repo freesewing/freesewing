@@ -1,5 +1,5 @@
 <Fixme>
 
-Complete documentation for Hortensia
+Documentation complète pour Hortensia
 
 </Fixme>
