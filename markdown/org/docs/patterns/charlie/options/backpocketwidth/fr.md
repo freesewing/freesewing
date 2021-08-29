@@ -1,2 +1,2 @@
 
-Constrols the width of the back pockets.
+Contre la largeur des poches arrières.
