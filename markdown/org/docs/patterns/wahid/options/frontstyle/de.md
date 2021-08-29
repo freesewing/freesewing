@@ -1,3 +1,3 @@
-![Front style](frontstyle.svg)
+![Frontstil](frontstyle.svg)
 
-Do you want a classic straight neckline, or a curved neckline?
+Wollen Sie eine klassische geradlinige Halslinie oder eine geschwungene Halslinie?
