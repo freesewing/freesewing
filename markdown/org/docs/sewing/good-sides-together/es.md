@@ -1,36 +1,36 @@
 ---
-title: Good sides together
+title: Buenas partes juntas
 ---
 
-When I refer to good sides together that can refer to either cutting or sewing:
+Cuando me refiero a las buenas partes juntas puede referirse al corte o a la cobertura:
 
-## Cutting with good sides together
+## Cortar juntos con buenos lados
 
-![A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.](cutting-good-sides-together.jpg)
+![Un bolsillo está marcado en el lado malo de un pedazo de denim doblado, listo para cortar los buenos lados juntos. Después de cortar ambas capas, esto producirá dos bolsillos que son imágenes espejo unos de otros.](cutting-good-sides-together.jpg)
 
-Cutting with good sides together is a technique that is used when two identical, or mirrored pieces need to be cut.
+Cortar juntos con buenos lados es una técnica que se utiliza cuando dos piezas idénticas o espejadas deben ser cortadas.
 
-When a pattern asks to cut a piece with good sides together, fold your fabric double with the good side/right side of the fabric to the inside, and the bad side/wrong side outside.
+Cuando un patrón pide cortar una pieza con buenos lados juntos, doblar la tela con el lado derecho o lado bueno de la tela hacia dentro, y el lado malo hacia fuera.
 
-Now mark the pattern piece on the bad side of the fabric, and cut both layers in one go.
+Ahora marca el patrón en el lado malo de la tela y corta ambas capas de una vez.
 
-This gives you two pieces that are mirror images of each other.
+Esto te da dos piezas que son imágenes espejo unas de otras.
 
 <Note> 
 
-##### What if there is not obvious good side?
+##### ¿Qué pasa si no hay un lado bueno obvio?
 
-When cutting out something without an obvious *good* side (like interfacing), 
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Cuando se corta algo sin un lado obvio *bueno* (como la interfaz), 
+lo que importa es que cortes dos piezas espejadas, en lugar de dos idénticas.
 
 </Note>
 
-## Sewing with good sides together
+## Coser juntos con buenos lados
 
-![A piece of denim is sewn with good sides together.](sewing-good-sides-together.jpg)
+![Un trozo de denim se coser con buenos lados juntos.](sewing-good-sides-together.jpg)
 
-Sewing with good sides together is the standard approach to making a seam.
+La costura junto con buenos lados es el enfoque estándar para hacer una costura.
 
-By placing the good sides of the fabric together, both pieces will be joined with the seam allowance to the inside of the garment. This is what's done for the vast majority of seams.
+Colocando juntos los buenos lados de la tela, ambas piezas se unirán a la costura del interior de la prenda. Esto es lo que se hace para la gran mayoría de las costuras.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Cuando no hay instrucciones específicas sobre cómo construir una costura, son buenos lados juntos.
