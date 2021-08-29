@@ -2,6 +2,6 @@
 title: Codo a muñeca
 ---
 
-The **shoulder to wrist** measurement determines your sleeve length, and runs from the shoulder point along the arm to your wrist.
+El hombro **para envolver** determina la longitud de la manga y corre desde el punto de hombro a lo largo del brazo hasta la muñeca.
 
-To measure your **shoulder to wrist** measurement, place your tape measure at your shoulder point. Let your arm hang naturally in a slight bend, and measure along your slightly bent arm up to your wrist.
+Para medir su hombro **para envolver la medida** , coloque la medida de la cinta en el punto de hombro. Deja que tu brazo colgar naturalmente en una ligera curvatura, y medir a lo largo de tu brazo ligeramente doblado hasta tu muñeca.
