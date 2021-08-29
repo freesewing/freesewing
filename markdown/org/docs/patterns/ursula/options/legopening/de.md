@@ -1,1 +1,1 @@
-This option controls how high the leg is cut-out.
+Diese Option legt fest, wie hoch das Bein ausgeschnitten ist.
