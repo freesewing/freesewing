@@ -2,11 +2,11 @@
 title: Manschettenstil
 ---
 
-This pattern supports three different cuff styles:
+Dieses Muster unterstützt drei verschiedene Manschettenstile:
 
- - Traditional
+ - Traditionell
  - Elegant
- - Keystone
+ - Schlüsselstein
 
-<Fixme>Describe the different styles</Fixme>
+<Fixme>Beschreiben Sie die verschiedenen Stile</Fixme>
 
