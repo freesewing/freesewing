@@ -1,14 +1,14 @@
 
-Do you want the buttonhole placket to be part of the left front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+¿Quiere que la placket del orificio sea parte de la parte frontal izquierda (corte), o mejor dicho, una parte individual en la que coser (separar)?
 
-The default is grown on.
+El valor por defecto está crecido.
 
-> #### Why pick seperate?
+> #### ¿Por qué separar?
 > 
-> One reason to pick a sewn on buttonhole placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a seperate buttonhole placket.
+> Una de las razones para elegir una coser en la placa del agujero del botón es que le permite usar un tejido o grainline diferentes. Incluso cuando se usa el mismo tejido, algunas personas también prefieren el aspecto de una placa separada del agujero del botón.
 > 
-> Having a sewn on placket also gives you more flexibility for pattern matching when using a non-plain fabric. However, you can keep a cut-on placket and instead change the buttonhole placket fold width to match your pattern.
+> Tener una cosida en placket también le da más flexibilidad para la concordancia de patrones cuando se utiliza una tela no plana. Sin embargo, usted puede mantener un placket cortado y en su lugar cambiar el ancho del pliegue del orificio del orificio para que coincida con su patrón.
 > 
-> #### Why pick cut-on?
+> #### ¿Por qué elegir el corte?
 > 
-> It's less work, and you can go for that seamless look.
+> Es menos trabajo y se puede ir por ese aspecto sin fisuras.
