@@ -1,10 +1,10 @@
 
-This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
+Dieses Muster kommt mit einem Standardscye Dart 1 cm (denken Sie an Armlochdart) an der Vorderseite.
 
-You can increase or decrease the dart to influence the armhole.
+Du kannst den Dart erhöhen oder verringern, um die Rüstung zu beeinflussen.
 
-> #### What's the point?
+> #### Was ist der Punkt?
 > 
-> The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Given that there is no sleeve, a gaping armhole is particularly unsightly.
+> Der Sinn dieses Darts ist es, sicherzustellen, dass das Armloch flach gegen deinen Körper liegt und nicht gegen deinen Gang. Angesichts der Tatsache, dass es keine Ärmel gibt, ist ein klaffendes Rüstungsloch besonders unschön.
 
-> While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the front dart.
+> Während dieser Dart benutzt wird, um das Muster zu formen, müssen Sie den Dart nicht nähen, da er in den Vorderdart eingebunden ist.
