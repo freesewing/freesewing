@@ -1,6 +1,6 @@
 ---
-title: Vent length
+title: Longitud del ventilador
 ---
 
-Controls the length of vent between cuff and knee.
+Controla la longitud de la furgoneta entre el corte y la rodilla.
 
