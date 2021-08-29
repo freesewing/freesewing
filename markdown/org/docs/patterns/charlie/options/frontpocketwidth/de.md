@@ -1,2 +1,2 @@
 
-Steuert die Breite der Vordertasche. In other words, how far the pocket bag extends towards the center front of the trousers.
+Steuert die Breite der Vordertasche. Mit anderen Worten, wie weit sich die Taschentasche zur Vorderseite der Hose erstreckt.
