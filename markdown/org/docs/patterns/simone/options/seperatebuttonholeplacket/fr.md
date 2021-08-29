@@ -1,7 +1,7 @@
 ![Gorge (Patte de boutonnières) séparée](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Si vous voulez ou non que la patte de boutonnière soit une partie séparée.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_seperatebuttonholeplacket_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_seperatebuttonholeplacket_sample.svg "Effet de cette option sur le motif")
