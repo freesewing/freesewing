@@ -1,9 +1,9 @@
 ![Manschettenlänge](cufflength.svg)
 
-The length of your cuffs.
+Die Länge der Manschetten.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Dies wird die Gesamtlänge des Ärmels nicht beeinflussen.
 
 </Note>
