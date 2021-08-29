@@ -2,21 +2,21 @@
 title: Zuschnitt
 ---
 
-Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself. Warning: The pattern includes the seam allowances on the top part so if you cut it on fold, don't include them!
+Je nachdem, wie viel Stoff verfügbar ist, können Sie zwei Ober- und Seitenteile schneiden, daher die Anweisungen zum Muster selbst. Warnung: Das Muster enthält die Nahtzustände im oberen Teil. Wenn Sie es also auf Falte schneiden, fügen Sie diese nicht ein!
 
-The brim bottom part is inset, while the brim top part is offset so that the seam falls "underneath the brim edge". Keep that in mind when cutting the parts, and mark them accordingly, so that you don't end up with the seam on top of the brim (I don't want to force you into this design choice, I simply want to point out the difference between the parts so that you are aware of it and act accordingly).
+Der Unterteil ist eingerückt, während der Oberteil versetzt wird, so dass die Naht "unter den Schwemmkanten" fällt. Denken Sie daran, wenn Sie die Teile schneiden, und markieren Sie sie entsprechend, damit Sie nicht mit der Naht oben auf der Stirn landen (ich möchte Sie nicht zu dieser Designwahl zwingen, Ich möchte lediglich auf den Unterschied zwischen den Teilen hinweisen, damit Sie das kennen und entsprechend handeln).
 
  - **Oberstoff**
-   - Cut **1 top** on the fold but don't include the center seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
-   - Cut **1 brim top**.
-   - Cut **1 brim bottom**.
+   - Schneiden Sie **1 oben** auf der Falte, aber nicht die Mittennahterlaubnis oder **2 Top** mit der Mittennahterlaubnis.
+   - Schneiden Sie **1 Seite** auf der Folge, oder **2 Seite**.
+   - **1 Brim Top** schneiden.
+   - **1 Brim unten** schneiden.
  - **Futterstoff**
-   - Cut **1 top** on the fold but don't include the seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
+   - Schneiden Sie **1 oben** auf der Falte, aber nicht die Naht oder **2 Top** mit der mittleren Nahtzugabe.
+   - Schneiden Sie **1 Seite** auf der Folge, oder **2 Seite**.
  - **Kunststoff**
-   - Cut **1 brim interfacing**. Tape the pattern part to the plastic, don't cut the notches in the plastic, but you can mark it (engrave it, or with permanent marker maybe). You don't really want any sharp edge, so make sure everything is smooth and rounded a bit (especially on the pointy sides).
+   - **1 Brim Schnittstelle schneiden**. Bleibe das Musterteil auf den Kunststoff, schneide die Nocken nicht in den Kunststoff, aber Sie können es markieren (gravieren oder mit permanenter Markierung vielleicht). Sie wollen keine scharfen Kanten, also stellen Sie sicher, dass alles glatt und ein bisschen abgerundet ist (besonders auf den Punktseiten).
 
-A typical Florent layout looks like this:
+Ein typisches Florent Layout sieht folgendermaßen aus:
 
-![A typical Florent layout](layout.svg)
+![Ein typisches Florent Layout](layout.svg)
