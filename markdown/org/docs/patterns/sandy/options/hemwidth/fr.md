@@ -1,4 +1,4 @@
 
 ![Hem width](hemwidth.svg)
 
-The width of the hem.
+La largeur de l'ourlet.
