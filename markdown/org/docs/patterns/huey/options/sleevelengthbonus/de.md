@@ -1,7 +1,7 @@
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
+![Die Hülsen-Bonusoption auf Brian](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+Diese Option legt fest, wie die Ärmel verlängert werden.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Muster")
