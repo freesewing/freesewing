@@ -2,11 +2,11 @@
 title: Was du brauchst
 ---
 
-To make Florent, you will need the following:
+Um Florenz zu machen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 0.5 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/florent/fabric/))
-- About 0.5 meter of lining fabric
-- Tape, a bit more than **head circumference** + **ease** that you used for the pattern
-- A sheet of plastic or something rigid for the brim (1 mm thick or less)
+- Etwa 0,5 Meter Futter
+- Tape, etwas mehr als **Kopfumfang** + **erleichtert** , das Sie für das Muster verwendet haben
+- Ein Kunststoffblech oder etwas starres für den Schweif (1 mm dick oder weniger)
 
