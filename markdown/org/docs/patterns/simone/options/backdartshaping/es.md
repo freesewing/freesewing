@@ -2,10 +2,10 @@
 title: Forma de las pinzas traseras
 ---
 
-Controls how much of the waist shaping will happing in the backdarts.
+Controla cuánto de la formación de la cintura se producirá en la parte trasera.
 
 You can tweak this setting to balance the waist reduction across side seams, back darts and (optional) front darts.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_backdartshaping_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_backdartshaping_sample.svg "Efecto de esta opción en el patrón")
