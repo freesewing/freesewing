@@ -1,3 +1,3 @@
 ![Manschette Zugabe](cuffease.svg)
 
-How much room do you want at your wrist?
+Wie viel Platz möchtest du an deinem Handgelenk haben?
