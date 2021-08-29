@@ -1,3 +1,3 @@
 ![Caída del escote](necklinedrop.svg)
 
-This options allows you to lower your neckline below the default.
+Esta opción le permite bajar su línea de cuello debajo del valor predeterminado.
