@@ -1,2 +1,2 @@
-This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length.
+Dit bepaalt hoe lang de broek zal zijn. Het is een factor van de binnenste meting. Hoe groter de waarde, des te meer zal de lengte worden afgenomen.
 
