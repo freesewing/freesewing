@@ -1,1 +1,1 @@
-This option controls how much the front waist curves (revealing more or less skin).
+Diese Option bestimmt, wie sehr die Vordertaillenkurven (mehr oder weniger Haut) sind.
