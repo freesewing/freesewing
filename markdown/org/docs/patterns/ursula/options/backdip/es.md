@@ -1,2 +1,2 @@
-This option controls how much the back waist curves (revealing more or less skin).
+Esta opción controla hasta qué punto las curvas de la cintura trasera (revelando más o menos la piel).
 
