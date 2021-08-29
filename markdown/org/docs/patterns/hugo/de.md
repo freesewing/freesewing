@@ -1,7 +1,7 @@
 - - -
 - - -
 
-import PatternDocs from '../../../../../src/components/docs/pattern'
+importiere PatternDocs von '../../../../../src/components/docs/pattern'
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
