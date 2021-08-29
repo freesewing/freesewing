@@ -1,13 +1,13 @@
-![Sleevelength bonus](./sleevelengthbonus.svg)
+![Sleevelength Bonus](./sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Der Betrag, um den Ärmel über die Länge des Ärmels im Basisblock hinaus zu verlängern.
 
 <Note>
 
-###### This is not supposed to be zero
+###### Dies soll nicht Null sein
 
-Setting this to zero will make the sleeve length the same as the base length of the Bent block,
-which is certainly too short for a coat.
-Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
+Wenn diese Einstellung auf Null gesetzt wird, wird die Hülsenlänge gleich der Basislänge des Schloßblocks sein,
+ist für einen Mantel sicher zu kurz.
+Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den Ärmel zu verlängern oder zu verkürzen.
 
 </Note>
