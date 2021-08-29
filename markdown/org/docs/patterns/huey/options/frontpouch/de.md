@@ -1,4 +1,4 @@
 
-![Front pouch](frontpouch.svg)
+![Front-Beutel](frontpouch.svg)
 
-This option controls whether or not to include the front pouch pocket
+Diese Option bestimmt, ob die Tasche vorne eingeschlossen werden soll oder nicht
