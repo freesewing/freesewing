@@ -2,4 +2,4 @@
 title: Stolpplooi
 ---
 
-Adds a box pleat to the back.
+Voegt een doosje aan de rug toe.
