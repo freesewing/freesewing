@@ -1,19 +1,19 @@
 
 
-- sew back pieces together along the back seam
-- sew the front seam to SA distance from where the fly pieces start.
-- sew parallel to the fly pieces in a basting stitch
-- press front open along the basting line
-- lay down the fronts with good side down
-- lay the zipper on the right front, aligning the left side with the basted seam
-- pin down the zipper and sew the right side to the fly piece
-- fold the zipper over to the left front and sew the left side to the left fly piece
-- make a zipper guard and attach to the right fly piece
-- undo the basting stitches and finish the fly
-- attach the pocket facings to the pocket fabric
-- attach the other sides of the pockets to the fronts
-- fold the pockets back, sew the bottom seam (french seams?) and baste the facings to the front
-- sew the side seams and inner leg seam
-- attach the cuff pieces together along three sides, right sides together
-- attach the cuffs to the bottom of the legs
-- attach the waistband in the usual way
+- Stik de rugpanden langs de achternaad
+- Stik de voornaad aan de Z-afstand vanaf waar de gulpdelen beginnen.
+- stik de parallel aan de gulpdelen in een driegnaad
+- strijk aan de voorkant open langs de drieglijn
+- leg de voorpanden neer met de goede kant naar beneden
+- leg de rits op het rechtervoorpand, leg de linkerkant gelijk met de vastgemaakte naad
+- Speld de rits neer en stik de rechterkant aan het gulpdeel
+- plooi de rits aan het voorpand en stik de linkerkant aan het linkergulpdeel
+- maak een rits guard en bevestig het rechtergulpdeel
+- de driegsteken ongedaan maken en de gulp afwerken
+- Leg de belanden van de zak vast aan de stof van de zak
+- Bevestig de andere kanten van de zakken aan de voorpanden
+- Plooi de zakken omhoog, stik de onderste naad (kruisnaad?) en drieg de gelanden naar het voorpand.
+- Stik de zijnaden en de binnenbeennaad
+- Stik de manchet delen langs drie zijden, met de rechterkanten op elkaar
+- leg de manchetten vast aan de onderkant van de broekspijpen
+- bevestig de tailleband op de gebruikelijke manier
