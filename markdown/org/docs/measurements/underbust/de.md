@@ -2,8 +2,8 @@
 title: Unterbrustweite
 ---
 
-The **underbust** measurement is the circumference of your chest without taking your breasts into account.
+Die **-Unterbrust** Messung ist der Umfang deiner Truhe, ohne deine Brüste zu berücksichtigen.
 
-To measure your **underbust**, wrap the tape measure around your chest just below your breasts, where your bra band sits.
+Um deine **-Unterbrust**zu messen, wickele das Bandmaß um deine Brust unterhalb deiner Brüste, wo deine BH-Band sitzt.
 
-If you don’t have breasts, this measurement does not apply to you. Just use your chest circumference.
+Wenn Sie keine Brüste haben, gilt diese Messung nicht für Sie. Benutzen Sie einfach Ihre Brustumfang.
