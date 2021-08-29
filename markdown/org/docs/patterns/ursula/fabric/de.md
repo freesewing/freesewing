@@ -1,3 +1,3 @@
-You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.
+Für dieses Muster braucht man einen Stoff mit vielen horizontalen und vertikalen Strecken (manchmal auch „Vierwegstrecken“). Bevorzugt etwas komfortabel, weich und atmungsaktiv.
 
-Recommended fabrics include stretch jerseys, stretch mesh, stretch knits, or most fabrics with at least 5% spandex. For example, modal (rayon) jersey with spandex.
+Zu den empfohlenen Stoffen gehören Stretchjerseys, Stretchgitter, Stretchstriche oder die meisten Stoffe mit mindestens 5% Spandex. Zum Beispiel, modal (rayon) Trikot mit Spandex.
