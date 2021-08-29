@@ -2,11 +2,11 @@
 title: Estilo del puño
 ---
 
-This pattern supports three different cuff styles:
+Este patrón soporta tres estilos de corte diferentes:
 
- - Traditional
+ - Tradicional
  - Elegant
- - Keystone
+ - Piedra angular
 
-<Fixme>Describe the different styles</Fixme>
+<Fixme>Describe los diferentes estilos</Fixme>
 
