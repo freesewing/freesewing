@@ -1,35 +1,35 @@
-To make Jaeger, you will need the following:
+Um Jaeger zu machen, benötigst du Folgendes:
 
- - About two and a half meters of a suitable fabric (see [Fabric options](#fabric-options))
- - Lining fabric, optionally different sleeve lining fabric
- - Two larger buttons for the front, and 8 buttons for the sleeves
- - A bit of lightweight fusible interfacing for local enforcement
- - Canvas for the fronts and collar
- - Tailor's tape for the front edges
- - Some domette for interlining
- - Shoulder pads
- - Sleevehead wadding, with canvas if possible
- - Undercollar fabric
+ - Etwa zweieinhalb Meter eines geeigneten Stoffes (siehe [Stoffoptionen](#fabric-options))
+ - Lining Stoff, optional unterschiedliche Ärmelfutter
+ - Zwei größere Tasten für die Vorderseite und 8 Tasten für die Ärmel
+ - Ein bisschen leichtgewichtige Schnittstellen für lokale Durchsetzung
+ - Leinwand für Fronten und Kragen
+ - Klebeband für die Vorderkanten
+ - Einige Domette zum Einbinden
+ - Schulterpads
+ - Sleevehead Wadding, mit Leinwand wenn möglich
+ - Unterkragen Stoff
 
 <Note>
 
-####### Where to get all this stuff
+##### Wo all diese Sachen zu bekommen
  
-Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
+Jaeger zu machen ist ein lustiges und warnung Projekt. aber alle benötigten Teile und Teile zu bekommen, kann eine Herausforderung sein.
 
-That is because this kind of project is somewhat more ambitious than the typical home sewing project,
-and as a result, your local haberdashery is unlikely to stock all of these things.
+Das liegt daran, dass ein solches Projekt etwas ehrgeiziger ist als das typische Heim Nähprojekt.
+und als Ergebnis ist es unwahrscheinlich, dass deine lokale Haberdashery all diese Dinge lagern wird.
 
-If you know where to get them, great. If not, you can get a **Jacket trim pack** from 
-[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in London, they ship to international customers.
+Wenn Sie wissen, wo sie zu bekommen, großartig. Wenn nicht, erhältst du ein **Jacket Trim** von 
+[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in London, sie versenden an internationale Kunden.
 
-It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business 
-to place an order.
+Es ist ein Geschäft für Profis (sie sind nicht einmal samstags geöffnet), aber sie verlangen nicht, dass du ein Geschäft 
+bist, um eine Bestellung zu tätigen.
 
-I have no afiliation with these guys, but it's the only place I know of that will sell you a kit of
-professional trimmings to make a jacket.
+Ich habe keine Lust mit diesen Jungs aber es ist der einzige Ort, den ich kenne, dass dir ein Kit aus
+professionellen Trimmings verkaufen wird, um eine Jacke herzustellen.
 
-If you know of any other place that carries this stuff, please let us know.
+Wenn Sie einen anderen Ort kennen, der dieses Zeug trägt, lassen Sie es uns bitte wissen.
 
 </Note>
 
