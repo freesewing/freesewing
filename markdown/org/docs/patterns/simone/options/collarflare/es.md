@@ -1,12 +1,12 @@
 ![Forma de los picos del cuello](collarflare.svg)
 
-How much the collar flares out (at the collar edge side), rather than being straight.
+Cuánto bengala el cuello (en el borde del cuello), en lugar de ser recto.
 
 <Note>
 
-This influences the length of your collar tips.
+Esto influye en la longitud de tus consejos de cuello.
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarflare_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_collarflare_sample.svg "Efecto de esta opción en el patrón")
