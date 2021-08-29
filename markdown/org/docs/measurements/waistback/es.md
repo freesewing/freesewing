@@ -1,7 +1,7 @@
 ---
-title: Waist back
+title: Volver
 ---
 
-The **waist back** measurement is the back part of your waist circumference.
+La medición de la cintura **** es la parte trasera de tu circunstancia de cintura.
 
-To measure your **waist back**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal. Then, measure the length from one side over your back to the other.
+Para medir tu cintura **atrás**, envuelve la medida de cintura alrededor de la parte más estrecha de la cintura, asegurándote de mantenerla horizontal. Luego, mide la longitud de un lado sobre la espalda al otro.
