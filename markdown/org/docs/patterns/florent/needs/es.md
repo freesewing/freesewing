@@ -1,12 +1,12 @@
 ---
-title: What you need
+title: Lo que necesitas
 ---
 
-To make Florent, you will need the following:
+Para hacer Florente, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/florent/fabric/))
-- About 0.5 meter of lining fabric
-- Tape, a bit more than **head circumference** + **ease** that you used for the pattern
-- A sheet of plastic or something rigid for the brim (1 mm thick or less)
+- Alrededor de 0.5 metros de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/florent/fabric/))
+- Alrededor de 0,5 metros de tela de revestimiento
+- Impresión, un poco más de **circunstancia principal** + **facilidad** que usaste para el patrón
+- Una hoja de plástico o algo rígido para el brillo (1 mm de grosor o menos)
 
