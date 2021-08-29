@@ -75,7 +75,7 @@ Das Einzige was jetzt noch zu tun ist, ist die kleine Öffnung zu schließen, di
 
 Bügel die Fliege nun ein letztes Mal und bewundere deine Arbeit.
 
-### With adjustment ribbon
+### Mit Anpassungsband
 
 #### Schritt 2: Das Band anfügen
 
@@ -119,7 +119,7 @@ Um die Enden zu versäubern, falten wir den Stoff in drei Schritten:
 
 Zuerst falten wir die Seiten unter einem Winkel nach innen. Dann falten wir das Ende darüber, mit einer kleinen Nahtzugabe, etwa 5mm. Dann falten wir es nochmal, für ca. 1cm. Als letztes klemmen wir den ovalen Ring unter diese letzte Falte und nähen die Stofflagen fest.
 
-Now feed the ribbon piece through the oval part and finish it the same way.
+Nun füttern Sie das Band durch das ovale Teil und beenden es auf die gleiche Weise.
 
 Hake das T in einer der Verstelllöcher fest und deine Fliege ist fertig!
 
