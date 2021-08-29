@@ -1,7 +1,7 @@
-![The leg bonus option on Bruce](./legbonus.svg)
+![Die Bein Bonus Option auf Bruce](./legbonus.svg)
 
-How much do you want to lengthen the legs?
+Wie viel möchtest du die Beine verlängern?
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_legbonus_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bruce_legbonus_sample.svg "Effekt dieser Option auf das Muster")
