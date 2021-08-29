@@ -1,3 +1,3 @@
 
-Controls where the crotch seam starts to curve, which influences the fit at your crotch.
+Bepaalt waar de kruisnaad begint te draaien, wat de pasvorm aan het kruisje beïnvloedt.
 
