@@ -1,4 +1,4 @@
 
 ![Largeur de ceinture](waistbandwidth.svg)
 
-The width of the waistband
+La largeur de la ceinture
