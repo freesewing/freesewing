@@ -1,4 +1,4 @@
 
 ![Brusttaschenbreite](chestpocketwidth.svg)
 
-The width of the chest pocket, as a factor of your chest circumference.
+Die Breite der Brusttasche als Faktor des Brustumfangs.
