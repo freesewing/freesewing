@@ -1,57 +1,57 @@
-### Step 1: Close shoulder seams
+### Paso 1: Cerrar costuras del hombro
 
- - Place the back and front on top of each other with the good sides toghether.
- - Align the shoulder seam, and sew/serge it at the standard seam allowance.
- - Repeat for the other shoulder seam.
+ - Coloque la parte trasera y la parte delantera sobre la otra con los buenos lados toghether.
+ - Alinear la costura del hombro y coser o sergarla en la costura estándar.
+ - Repetir para la costura del hombro.
 
 
-### Step 2: Set in the sleeves
+### Paso 2: Establecer en mangas
 
- - Place your now attached front and back with the good side up.
- - Place a sleeve on top if it with the good side down
- - Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
- - Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
- - Sew/serge your pinned sleeve in place
- - Repeat for the other sleeve
+ - Coloca tu ahora unido frente y atrás con el lado bueno arriba.
+ - Coloca una manga encima si con el lado bueno hacia abajo
+ - Alínea la parte superior de la manga con la costura del hombro, tu manga debe tumbarse sobre la parte delantera/trasera que se extiende hasta la otra costura del hombro
+ - Pin manga en su lugar a lo largo de todo el orificio. Hay un poco de facilidad de mangas, lo que significa que la cabeza de manga es un poco más larga que el orificio. Habilite esto en la parte superior de la cabeza de manga mientras se pincha.
+ - Costura/sierra tu manga anclada en su lugar
+ - Repetir para la otra manga
 
-### Step 3: Finish the neck binding
+### Paso 3: Termina la unión del cuello
 
- - Measure the length of the neck opening
- - Cut a piece of ribbing that is this length and 6cm/2.5inch wide
- - Fold the ribbing double with the good side outward, and pin it to your neckopening starting from the back
- - The cut off side of your ribbing should align with the edge of your neck opening, while the ribbing extends over your sweatshirt
- - Pin the ribbing in place around the neck opening, starting at the back and stretching it gently as you do so
- - First, join the ribbing at center back, with good sides together. As you've been stretching the ribbing as you were pinning it, it will be too long. Simply cut that away
- - Then, sew the ribbing to the neck opening
+ - Medir la longitud de la apertura del cuello
+ - Cortar un pedazo de costilla de esta longitud y 6 cm/2,5 pulgadas de ancho
+ - Doblar el doble con el lado bueno hacia afuera, y anclarlo en tu apertura de cuello comenzando por la espalda
+ - El lado cortado de la costilla debe alinearse con el borde de la apertura del cuello, mientras que la costilla se extiende sobre la suda
+ - Anclar la costilla alrededor del cuello abriendo, comenzando por la espalda y estirándola suavemente mientras lo haces
+ - Primero, únase a la costilla en el centro de la espalda, con buenos lados juntos. Mientras estabas estirando la costilla mientras lo anclabas, será demasiado largo. Basta con cortar eso
+ - Luego, coser la costilla hasta la apertura del cuello
 
-### Step 4: Close the side seams and sleeves
+### Paso 4: Cierre las costuras y mangas laterales
 
- - Fold Sven double at the shoulder seams with good sides together
- - Align the side seams and sleeves and pin them together
- - Now, sew the side seam and continue sewing to close the arms all the way to the cuff
- - Repeat on the other side
+ - Plegar el doble de Sven en la costura del hombro con buenos lados juntos
+ - Alinear las costuras y mangas laterales y fijarlas juntas
+ - Ahora, coser la costura del lado y seguir cosiendo para cerrar los brazos hasta el corte
+ - Repetir en el otro lado
 
-### Step 5: Attach the cuffs
+### Paso 5: Adjuntar los cortes
 
- - Measure the width of the sleeve at the cuff
- - Cut a piece of ribbing that is (twice this length - 2cm/1inch) and 7cm/3inch wide
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven sleeve
- - Align the cut off side of the ribbing with the edge of the sleeve and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the sleeve.
- - Now, sew/serge the ribbing to the sleeve
- - Repeat for the other cuff
+ - Medir el ancho de la manga en el corte
+ - Corta un pedazo de costilla que es (dos veces esta longitud - 2cm/1pulgada) y 7cm/3pulgadas de ancho
+ - Doblar la costilla doble por el lado más largo, y coser juntos el borde para que tengas un anillo continuo
+ - Vuelve tu Sven en el interior
+ - Doblar el anillo de costillas con el lado bueno hacia afuera, y deslizar el lado plegado en la manga interior / exterior
+ - Alinear el corte del lado de la costilla con el borde de la manga y fijarlo en su lugar. La costilla es un poco más corta, así que estirarla un poco mientras se apilan para trabajar esto en la manga.
+ - Ahora, coser la cosecha hasta la manga
+ - Repetir para el otro corte
 
-### Step 6: Attach the hem
+### Paso 6: Adjuntar el hem
 
- - Do for the hem as your did for the cuffs
- - Measure the width of Sven at the hem
- - Cut a piece of ribbing that 1.9 times this length and 7cm/3inch wide
- - You may need to attach different pieces if your ribbing fabric isn't wide enough
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven body
- - Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.
- - Now, sew/serge the ribbing to the body
+ - Haz para el sombrero como lo hiciste para las tazas
+ - Medir el ancho de Sven en la sombra
+ - Corta un pedazo de costilla que 1,9 veces esta longitud y 7cm/3pulgadas de ancho
+ - Puede que necesites colocar diferentes piezas si tu tela de costilla no es lo suficientemente amplia
+ - Doblar la costilla doble por el lado más largo, y coser juntos el borde para que tengas un anillo continuo
+ - Vuelve tu Sven en el interior
+ - Doble el anillo de costillas con el lado bueno hacia afuera, y desliza el lado plegado en tu cuerpo dentro/afuera Sven
+ - Alinear el corte del lado de la costilla con el borde del cuerpo y fijarlo en su lugar. La costilla es un poco más corta, así que estirarla un poco mientras se apilan para trabajar esto en el cuerpo.
+ - Ahora, coser o sergar la costilla al cuerpo
 
 
