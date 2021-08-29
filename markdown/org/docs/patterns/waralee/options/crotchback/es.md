@@ -1,2 +1,2 @@
-The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.
+El porcentaje de la circunstancia del asiento que el cráneo de la espalda tiene que ocupar. Esto crea más o menos espacio entre la costura lateral y la espalda.
 
