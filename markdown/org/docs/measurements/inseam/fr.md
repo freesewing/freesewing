@@ -2,6 +2,6 @@
 title: Longueur d'entrejambe
 ---
 
-The **inseam** is the measurement from your crotch down to the floor.
+Le **joint** est la mesure de votre crotch vers le sol.
 
-To measure your **inseam**, measure down vertically from the point your legs join (at the crotch) down to the floor.
+Pour mesurer votre **couture**, mesurez verticalement à partir du point où vos jambes se joignent (à la crochete) jusqu'au sol.
