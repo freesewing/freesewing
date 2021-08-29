@@ -1,6 +1,6 @@
 ---
-title: Vent length
+title: Vent lengte
 ---
 
-Controls the length of vent between cuff and knee.
+Bepaalt de lengte van het split tussen manchet en knie.
 
