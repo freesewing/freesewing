@@ -1,2 +1,2 @@
-Controls the depth of the neck opening.
+Steuert die Tiefe des Halsöffnens.
 
