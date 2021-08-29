@@ -2,6 +2,6 @@
 title: Contorno de muñeca
 ---
 
-The **wrist circumference** measurement is the circumference of your wrist.
+La medición de **circunstancia de la muñeca** es la circunstancia de su muñeca.
 
-To measure your **wrist circumference**, run the tape measure around your wrist, where your arm joins your hand.
+Para medir tu **circunstancia de la muñeca**, ejecuta la medida de la cinta alrededor de tu muñeca, donde tu brazo se une a la mano.
