@@ -1,3 +1,3 @@
 ![Saumstil](hemstyle.svg)
 
-Do you want a classic hemline, or a rounded hemline?
+Wollen Sie eine klassische Halblinie oder eine abgerundete Halblinie?
