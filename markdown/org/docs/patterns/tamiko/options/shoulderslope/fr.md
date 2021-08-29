@@ -1,2 +1,2 @@
 
-This controls the slope of the shoulder seam.
+Ceci contrôle la pente de la couture des épaules.
