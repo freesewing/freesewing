@@ -1,7 +1,7 @@
-To make Benjamin, you will need the following:
+Para hacer Benjamin, necesitarás lo siguiente:
 
   - Suministros básicos de costura
-  - About 0.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/benjamin/fabric/)). Left over pieces of a recent project could work too.
-  - About the same amount of interfacing
-  - Optionally: Bow tie adjustment ribbon and hardware
+  - Alrededor de 0.5 metros de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/benjamin/fabric/)). Left over pieces of a recent project could work too.
+  - Acerca de la misma cantidad de interfaz
+  - Opcionalmente: Cinta y hardware de ajuste de atadura de Bow
 
