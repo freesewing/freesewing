@@ -1,24 +1,24 @@
 - - -
 - - -
 
-## Latest updates
+## Nieuwste updates
 
 ##### COVID-19: Mondmasker patroon
 
-If you're looking for our facemask pattern, follow this link:
+Als je op zoek bent naar ons facemask patroon, volg dan deze link:
 
- - [Face mask pattern and instructions](/blog/facemask-frenzy)
+ - [Gezicht masker patroon en instructies](/blog/facemask-frenzy)
 
 
 ##### Gesprekken met bijdragers
 
-Recently, we started organizing contributor calls. Anybody with an interest in FreeSewing is welcome to join.
+Onlangs zijn we begonnen met het organiseren van bijdragers oproepen. Iedereen die geïnteresseerd is in FreeSewing is welkom om toe te treden.
 
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/). Check [the calls schedule](/community/calls/) for details on the upcoming calls.
+Bij alle oproepen hoort [meet.freesewing.org](https://meet.freesewing.org/). Bekijk [het aanroepschema](/community/calls/) voor meer informatie over de komende gesprekken.
 
-##### We've moved to Discord
+##### We zijn verplaatst naar Discord
 
-We've moved our chat rooms from to Discord. Our legacy chat on Gitter is deprecated.
+We hebben onze chatruimtes verplaatst van Discord naar Discord. Ons legacy chat op Gitter wordt niet meer ondersteund.
 
-You can join us at https://discord.freesewing.org, or use this in-app Discord invite: https://discord.gg/YDV4GvU
+Je kunt je bij ons voegen op https://discord.freesewing.org, of deze in-app Discord-uitnodiging gebruiken: https://discord.gg/YDV4GvU
 
