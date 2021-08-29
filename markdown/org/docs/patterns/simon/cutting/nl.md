@@ -20,7 +20,7 @@
 
 <Note>
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
+Als je twee knipt, kun je ze [goede kanten samen](/docs/naaien/goed-zijden-samen-knippen).
 Als ik echter een stof met een patroon gebruik knip ik ze liever apart zodat ik meer controle heb over de plaatsing van het patroon.
 
 Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus draai of je patroondeel of je stof om als je een tweede deel knips.
@@ -31,9 +31,9 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
 ###### Caveats
 
- - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Zodoende hebben deze naden extra naadwaarde. When cutting out these pieces, you **must** include this extra seam allowance.
+ - De **rechtervoorkant**, **linkervoorkant** en **mouw** hebben naden die tot platte naad gemaakt moeten worden. Zodoende hebben deze naden extra naadwaarde. Als je deze stukken uitknipt, moet je deze extra naadwaarde **optellen**.
  - De mouwsplitreep en mouwsplitbies hebben geen naadwaarde. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
- - Do not cut out the darts in the **back** piece. Je moet ze markeren, maar niet uitknippen.
+ - Knip de nepen in het **achterkant** stuk niet uit. Je moet ze markeren, maar niet uitknippen.
 
 </Warning>
 
