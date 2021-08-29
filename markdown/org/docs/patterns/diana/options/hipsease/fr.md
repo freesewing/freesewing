@@ -1,3 +1,3 @@
-![The hips ease option on Diana](./hipsease.svg)
+![L'option de facilité des hanches sur Diana](./hipsease.svg)
 
-This option controls the amount of ease at the hips.
+Cette option permet de contrôler la quantité d'aisance des hanches.
