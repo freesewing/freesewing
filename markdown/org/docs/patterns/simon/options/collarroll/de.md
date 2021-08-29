@@ -1,13 +1,13 @@
 ![Kragenrolle](collarroll.svg)
 
-How much the collar is taller than the collar stand at center back.
+Wie hoch der Kragen ist höher als der Kragen im Zentrum hinten.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
+Der Kragen beginnt vom Kragenstand nach oben und rollt dann nach unten. Aber es muss noch die Kragenständer abdecken. Dafür muss es etwas länger sein.
 
-Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
+Dies erhöht den Kragen nicht (verwenden Sie dafür die Kragenhöhe), sondern führt zu einem weiteren Abstieg nach unten.
 
 </Note>
