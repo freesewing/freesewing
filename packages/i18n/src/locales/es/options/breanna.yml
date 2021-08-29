@@ -1,41 +1,41 @@
 ---
 shoulderDart:
-  title: Shoulder dart
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  title: Dardo de hombro
+  description: Incluir o no un dardo en el hombro para redondear la espalda
 shoulderDartSize:
-  title: Shoulder dart size
-  description: The size of the shoulder dart
+  title: Tamaño dart de hombro
+  description: El tamaño del dart del hombro
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Longitud del dart del hombro
+  description: La longitud del dart del hombro
 waistDart:
-  title: Waist dart
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Dardo de Waist
+  description: Incluir o no un dardo en la cintura para redondear la espalda
 waistDartSize:
-  title: Waist dart size
-  description: The size of the waist dart
+  title: Tamaño dart de Waist
+  description: El tamaño del dardo de la cintura
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Longitud del dart de Waist
+  description: La longitud del dardo de la cintura
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  title: Fácil vertical
+  description: La cantidad de facilidad para distribuir a lo largo de la ropa
 waistEase:
   title: Holgura de cintura
-  description: The amount of ease at the waist
+  description: La cantidad de facilidad en la cintura
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  title: Dardo de busto
+  description: Donde colocar el polvo para dar forma al cofre
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Longitud del dart del polvo
+  description: La longitud del polvo
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  title: Armadura de polvo secundaria
+  description: Opcionalmente incluye un polvo secundario para distribuir la forma del cofre
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Longitud del polvo secundario
+  description: La longitud del polvo secundario
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Dardos de busto que conforman
+  description: Controla el equilibrio entre los dardos principales y secundarios
 
