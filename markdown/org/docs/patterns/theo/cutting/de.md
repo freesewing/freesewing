@@ -1,35 +1,35 @@
  - **Oberstoff**
    - Cut **2 back(s)** with good sides together
-   - Cut **2 front(s)** with good sides together
-   - Cut **1 waistband left**
-   - Cut **1 waistband right**
-   - Cut **2 fly piece(s)** with good sides together
+   - **2 Front(s)** mit guten Seiten schneiden
+   - **1 Taillenband schneiden**
+   - **1 Taille rechts schneiden**
+   - **2 Fliegenteil(e) schneiden** mit guten Seiten zusammen
    - Cut **2 side piece(s)** with good sides together
-   - Cut **4 back pocket facing(s)**
-   - Cut **8 belt loop(s)**
+   - **4 verdeckte Tasche(n) schneiden**
+   - **8 Bandschleifen(e) schneiden**
  - **Lining**
    - Cut **2 front lining(s)** with good sides together
-   - Cut **1 waistband lining left**
-   - Cut **1 waistband lining right**
-   - Cut **1 fly shield**
-   - Cut **4 front pocket bag(s)** 2x2 with good sides together (**see caveats below**)
-   - Cut **2 back inner pocket bag(s)**
-   - Cut **2 back outer pocket bag(s)**
+   - **1 Taillenband links schneiden**
+   - **1 Taillenband rechts schneiden**
+   - **1 Fliegenschild schneiden**
+   - **4 Taschen vor der Tasche(n) schneiden** 2x2 mit guten Seiten zusammen (**siehe Vorbehalte unter**)
+   - **2 innere Tasche(n) zurückschneiden**
+   - **2 äußere Tasche(n) zurückschneiden**
  - **Einlage**
-   - Cut **1 waistband interfacing left**
-   - Cut **1 waistband interfacing right**
-   - Cut **4 back pocket interfacing(s)**
+   - **1 Bund schneiden**
+   - **1 Bund nach rechts schneiden,**
+   - **4 Back-Taschen-Schnittstelle(n) schneiden**
 
 <Warning>
 
-###### Caveats
+###### Vorsichten
  
- - The **front lining** is cut from the **front** part on your draft, down to the line just below the knee
- - Pay attention to the grainline on the **fly piece**, **fly shield**, and **side piece**
- - There are two variations of the front pocket bag. You need to cut out two of each:
-    - Cut two of the complete piece
-    - Cut two with only extending up to the dashed line at the left
- - The **back inner pocket bag** and **back outer pocket bag** are very similar. Make sure to mark them correctly so you don't confuse them.
+ - Die **Vorderseite** wird vom **Front** Teil deines Entwurfs abgeschnitten, bis zur Linie unterhalb des Knie
+ - Achte auf die Körnlinie im **Fliegenteil**, **fly shield** und **side piece**
+ - Es gibt zwei Variationen der vorderen Tasche. Sie müssen jeweils zwei davon ausschneiden:
+    - Zwei des kompletten Stücks schneiden
+    - Zwei schneiden, die sich nur bis zur gestrichelten Linie links erstrecken
+ - Die **hintere innere Tasche Tasche** und die **hintere äußere Tasche** sind sehr ähnlich. Stellen Sie sicher, dass Sie sie korrekt markieren, damit Sie sie nicht verwirren.
 
 </Warning>
 
