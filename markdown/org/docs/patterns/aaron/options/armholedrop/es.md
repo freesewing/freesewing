@@ -1,9 +1,9 @@
-![The armhole drop option on Aaron](./armholedrop.svg)
+![La opción de soltar el acorazado en Aaron](./armholedrop.svg)
 
-How much to lower the armhole below the default amount.
+Cuánto bajar la armadura por debajo de la cantidad predeterminada.
 
-> This option also allows negative values. They will, obviously, raise the armhole by said amount.
+> Esta opción también permite valores negativos. Evidentemente, levantarán el agujero en dicha cantidad.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_armholedrop_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](aaron_armholedrop_sample.svg "Efecto de esta opción en el patrón")
