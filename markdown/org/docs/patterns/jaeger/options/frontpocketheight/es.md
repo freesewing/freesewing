@@ -1,4 +1,4 @@
 
-![Front pocket height](frontpocketheight.svg)
+![Altura del bolsillo frontal](frontpocketheight.svg)
 
-The height where the front pocket starts, as a factor of your natural waist to hip measurement.
+La altura donde comienza el bolsillo delantero, como factor de su cintura natural para la medición de cadera.
