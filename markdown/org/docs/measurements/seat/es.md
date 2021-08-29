@@ -2,6 +2,6 @@
 title: Contorno de asiento
 ---
 
-The **seat circumference** is the measurement around the fullest part of your bum.
+La circunstancia de **asiento** es la medida alrededor de la parte más completa de tu bum.
 
-To measure your **seat circumference**, run the tape measure around your bum at the fullest part. Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+To measure your **seat circumference**, run the tape measure around your bum at the fullest part. Asegúrate de mantener la medida horizontal de cinta mientras lo haces. En otras palabras, paralelo al uso de la palabra.
