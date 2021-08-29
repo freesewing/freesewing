@@ -2,16 +2,16 @@
 title: Margen de costura
 ---
 
-![The inside of the leg on a pair of jeans. The SA is the dark narrow stretch of fabric next to the seam. It has been zig-zagged to keep it from fraying](zig-zag.jpg)
+![El interior de la pierna en un par de vaqueros. La SA es el estrecho oscuro canal de tela junto a la costura. Ha sido zig-zagged para evitar que se fríe](zig-zag.jpg)
 
-Seam allowance, often shortened to SA, is the extra fabric at the seam that allows you to sew a garment together.
+Costura de costura, a menudo acortada a SA, es la tela extra en la costura que le permite coser una prenda juntos.
 
-If, instead of sewing, you could magically join seams together, there would be no need for seam allowance.
+Si, en lugar de coser, usted pudiera unirse mágicamente a las costuras, no habría necesidad de permitir costuras.
 
-Since we can't do magic, we need a bit of seam allowance so that the minor fraying of the fabric will not undo the seam.
+Como no podemos hacer la magia, necesitamos un poco de franquicia de costura para que la fracción menor de la tela no deshaga la costura.
 
-Seam allowance can differ. 1cm is common for some patterns, but in the US 5/8" or 15mm is standard. Make sure to always check the pattern for the default SA.
+La franquicia de costura puede diferir. 1cm es común para algunos patrones, pero en los US 5/8" o 15mm es estándar. Asegúrese de comprobar siempre el patrón del SA por defecto.
 
-Extra SA can be required for specific finished (like french seams) or for hemming.
+SA extra puede ser requerida para la finalización específica (como costuras francesas) o para el hemming.
 
-> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Imagen de [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
