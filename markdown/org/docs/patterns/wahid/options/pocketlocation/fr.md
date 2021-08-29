@@ -1,2 +1,2 @@
 
-Controls the location of the pockets.
+Contrôle l'emplacement des poches.
