@@ -1,3 +1,3 @@
-![The shoulder seam length option on Diana](./shoulderseamlength.svg)
+![L'option de longueur de la couture d'épaule sur Diana](./shoulderseamlength.svg)
 
-This option determines how wide the neck opening is, by controllign the length of the shoulder seam.
+Cette option détermine la largeur de l'encolure en contrôlant la longueur de la couture de l'épaule.
