@@ -1,4 +1,4 @@
 
 ![Kragenhöhe](collarheight.svg)
 
-This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+Dies ist die Kragenhöhe am Hals und kann nie weniger als doppelt so hoch wie die Rollenkragenhöhe sein.
