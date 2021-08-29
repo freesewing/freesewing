@@ -1,19 +1,19 @@
 ---
-title: Fabric grain
+title: Grano de tela
 ---
 
-![The grainline runs parallel to the selvedge](fabric-grain.jpg)
+![La graína corre paralela a la vanguardia](fabric-grain.jpg)
 
-The grain of a fabric is determined by the alignment of the yarns in a woven fabric. More precisely, the grain line is determined by how the warp yarns run.
+El grano de una tela está determinado por el alineamiento de los hilos en una tela tejida. Más precisamente, la línea de grano está determinada por la forma en que funcionan los hilos warp.
 
-Woven fabric are produced by weaving the so-called weft between the warp threads. The warp threads run along the length of a fabric roll, parallel to the selvedge, while the weft runs back and forth across its width.
+La tela tejida se produce tejiendo la llamada trama entre los hilos de la torsión. Los hilos de la warp corren a lo largo de un rollo de tejido, paralelo al borde de la tela, mientras que la trama corre hacia atrás y adelante a lo largo de su ancho.
 
-Grain is indicated on a pattern by the grain line. When cutting out your pattern, it's important to align the grain line of the pattern to the grain of your fabric.
+El genio se indica en un patrón por la línea de grano. Al cortar el patrón, es importante alinear la línea de grano del patrón al grano de tu tejido.
 
-> For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
+> Para más detalles de warp y trampa: [Tejido en Wikipedia](http://en.wikipedia.org/wiki/Weaving)
 
-> ##### Confused? Confused? Think wood
+> ##### ¿Confundido? Confused? Think wood
 > 
-> Wood is not woven, but grows in different layers based on the seasons (growth rings). The way these layers are aligned are important for woodworkers. They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
+> La madera no está tejida, pero crece en diferentes capas según las estaciones (anillos de crecimiento). La forma en que estas capas están alineadas son importantes para los madereros. Influyen en qué medida la madera se deformará después de cortarla y cómo se doblará, así como otros parámetros.
 > 
-> Just like a woodworker will take this into account before cutting the wood, you should take grain into account before cutting out your fabric.
+> Al igual que un maderero lo tendrá en cuenta antes de cortar la madera, debe tener en cuenta el grano antes de cortar su tejido.
