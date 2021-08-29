@@ -1,2 +1,2 @@
 
-The amount of ease around your head.
+Die Menge an Leichtigkeit um den Kopf.
