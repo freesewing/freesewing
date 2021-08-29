@@ -1,14 +1,14 @@
 
-Do you want the buttonhole placket to be part of the left front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+Soll das Buttonlochplacket Teil des linken Musterteils sein (cut-on), oder eher ein individueller Teil, auf den Sie nähen (seperat)?
 
-The default is grown on.
+Der Standard ist auf angewachsen.
 
-> #### Why pick seperate?
+> #### Warum trennen Sie?
 > 
-> One reason to pick a sewn on buttonhole placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a seperate buttonhole placket.
+> Ein Grund für die Auswahl eines Buttonloch-Platzes ist, dass es Ihnen erlaubt, einen anderen Stoff oder eine andere Kornlinie zu verwenden. Auch bei Verwendung des gleichen Stoffes bevorzugen einige Leute das Aussehen eines separaten Buttonlochplatzes.
 > 
-> Having a sewn on placket also gives you more flexibility for pattern matching when using a non-plain fabric. However, you can keep a cut-on placket and instead change the buttonhole placket fold width to match your pattern.
+> Auch bei Verwendung eines nicht einfachen Stoffes bietet Ihnen das Nähen auf Platte mehr Flexibilität bei der Musteranpassung. Sie können jedoch eine Cut-on-Platte behalten und stattdessen die Knöpfenfaltenbreite entsprechend Ihrem Muster ändern.
 > 
-> #### Why pick cut-on?
+> #### Warum sollte man sich dafür entscheiden?
 > 
-> It's less work, and you can go for that seamless look.
+> Es ist weniger Arbeit, und Sie können für diesen nahtlosen Look.
