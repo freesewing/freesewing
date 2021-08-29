@@ -1,7 +1,7 @@
-Swim trunks should be made out of a material with stretch that is suitable for being in the water.
+Swim Stämme sollten aus einem Material mit Dehnung, die geeignet ist, im Wasser zu sein.
 
-Typically, this falls apart in a few categories:
+Normalerweise fällt dies in ein paar Kategorien auseinander:
 
-- Nylon mixed with elastene, spandex, or lycra is soft and stretchy. This is what most casual swimwear is made from.
-- Polyester mixed with PBT (polybutylene terephthalate) is less soft to the touch, but resistant to chlorine and salt water. This is what a lot of competitive swimwear is made from.
-- Neoprene, also known as scuba, is heavier and less tretchy. It's the stuff scuba suits are made from.
+- Nylon gemischt mit Elastomer, Spandex oder Lycra ist weich und dehnbar. Das ist es, aus dem die meisten lässigen Bademoden hergestellt werden.
+- Polyester gemischt mit PBT (Polybutylen terephthalat) ist weniger weich, aber resistent gegen Chlor und Salzwasser. Das ist es, aus dem eine Menge konkurrenzfähiger Badebekleidung hergestellt wird.
+- Neoprene, auch bekannt als Scuba, ist schwerer und weniger treu. Es ist das Zeug Tuba Anzüge hergestellt werden.
