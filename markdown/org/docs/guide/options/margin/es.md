@@ -2,4 +2,4 @@
 title: Margen
 ---
 
-This controls the margin around pattern parts. The default margin is 2mm, but you can change it.
+Esto controla el margen alrededor de los patrones. El margen por defecto es de 2mm, pero puede cambiarlo.
