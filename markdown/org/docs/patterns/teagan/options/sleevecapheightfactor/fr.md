@@ -1,3 +1,3 @@
-![The sleevecap height factor option on Brian](./sleevecapheightfactor.svg)
+![Le facteur de hauteur du tête de manche sur Brian](./sleevecapheightfactor.svg)
 
-This factor controls the height of the sleevecap.
+Ce facteur contrôle la hauteur de la tête de manche.
