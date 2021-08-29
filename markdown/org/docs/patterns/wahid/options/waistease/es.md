@@ -1,3 +1,3 @@
 ![Holgura de cintura](waistease.svg)
 
-How much room do you want at the waist?
+¿Cuánto espacio quieres en la cintura?
