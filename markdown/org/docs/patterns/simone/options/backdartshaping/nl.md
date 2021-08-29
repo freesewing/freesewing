@@ -2,10 +2,10 @@
 title: Vorm nepen rug
 ---
 
-Controls how much of the waist shaping will happing in the backdarts.
+Bepaalt hoeveel van de vorming van de taille in de achterkanten zal blijken.
 
-You can tweak this setting to balance the waist reduction across side seams, back darts and (optional) front darts.
+Je kunt deze instelling aanpassen om de reductie van taille over de zijnaden te balanceren, achterste nepen en (optioneel) nepen vooraan.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_backdartshaping_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_backdartshaping_sample.svg "Effect van deze optie op het patroon")
