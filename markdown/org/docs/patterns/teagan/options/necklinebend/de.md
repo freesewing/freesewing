@@ -1,1 +1,1 @@
-Controls the curvature of the neck opening.
+Steuert die Krümmung der Halsöffnung.
