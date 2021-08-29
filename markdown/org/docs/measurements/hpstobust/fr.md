@@ -9,7 +9,7 @@ Reportez-vous à la [documentation PHE](/docs/measurements/hps/) pour savoir com
 
 </Note>
 
-The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
+La mesure **de l'épaule haute (HPS) à la courbe** va de votre HPS à la ligne qui forme votre tension de poitrine.
 
 Pour mesurer votre hauteur de poitrine, il faut d'abord [localiser le point de votre sommet d'épaule](/docs/measurements/hps/). Mesurez alors de façon verticale la ligne qui va jusqu'à la ligne de votre tour de poitrine.
 
@@ -17,17 +17,17 @@ L'objectif de cette mensuration est de déterminer la part la plus importante ve
 
 <Tip>
 
-##### Think about which hand you're using
+##### Pensez à quelle main vous utilisez
 
-If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on 
-the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of 
-the tape up to your right shoulder with your right hand, while your left hand is holding the end. 
-But that means you distort the length you are trying to measure by raising your arm on the same side. 
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+Si vous vous mesurez, vous pouvez essayer de tenir votre ruban de mesure jusqu'à votre épaule avec la main sur 
+le même côté de votre corps que l'épaule que vous mesurez. Ainsi, par exemple, vous pourriez tenir le haut de 
+le ruban jusqu'à votre épaule droite avec votre main droite, pendant que votre main gauche tient la fin. 
+Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté. 
+Vous ne pensez peut-être pas qu'il y a une différence, mais tout est connecté dans le monde de la physiologie, et
+faire cela pourrait conduire à une erreur de ~2. cm (~1 pouce) dans votre mesure.  
+Il vous suffit de basculer vos mains et vous obtenez une mesure plus précise.
 
-For best results, get a second person to take your measurements (if possible).
+Pour de meilleurs résultats, demandez à une seconde personne de prendre vos mesures (si possible).
   
 </Tip>
 
