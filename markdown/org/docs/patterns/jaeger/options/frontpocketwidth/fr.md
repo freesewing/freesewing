@@ -1,4 +1,4 @@
 
 ![Largeur des poches avant](frontpocketwidth.svg)
 
-The front of the chest pocket, as a factor of your chest circumference.
+L'avant de la poche de la poitrine, en tant que facteur de la circonférence de votre poitrine.
