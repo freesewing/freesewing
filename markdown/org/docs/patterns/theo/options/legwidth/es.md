@@ -3,10 +3,10 @@ Controla la anchura de la pernera.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Este patrón solía venir en dos variaciones. Teodoro y Theo, estos últimos tienen
+un corte más delgado.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Como FreeSewing v2.0 los hemos combinado en un único patrón y esta opción
+le permite modificar el ancho de la pierna.
 
 </Note>
