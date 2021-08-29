@@ -1,3 +1,3 @@
 ![Kapuzenausschnitt](./hoodcutback.svg)
 
-Controls how much the hood opening is cut back, making the hood less deep.
+Steuert wie viel die Haubenöffnung zurückgeschnitten wird, was die Haube weniger tief macht.
