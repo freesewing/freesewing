@@ -1,49 +1,49 @@
 ---
 chestEase:
   title: Holgura de pecho
-  description: Controls the amount of ease at the fullest part of your chest
+  description: Controla la cantidad de facilidad en la parte más completa de tu cofre
 waistEase:
   title: Holgura de cintura
-  description: Controls the amount of ease at your waist
+  description: Controla la cantidad de facilidad en tu cintura
 bustSpanEase:
-  title: Bust span ease
-  description: Controls the amount of (horizontal) ease added to your bust span when locating the bust point.
+  title: Facilidad de la expansión del polvo
+  description: Controla la cantidad de facilidad (horizontal) que se agrega a tu superficie de busto al ubicar el punto de busto.
 backDartHeight:
-  title: Back dart height
-  description: Controls the height of the back dart
+  title: Altura del dart trasero
+  description: Controla la altura del dart posterior
 bustDartLength:
-  title: Bust dart length
-  description: Controls the length of the bust dart
+  title: Longitud del dart del polvo
+  description: Controla la longitud del polvo
 waistDartLength:
-  title: Waist dart length
-  description: Controls the length of the waist dart
+  title: Longitud del dart de Waist
+  description: Controla la longitud del dardo de la cintura
 bustDartCurve:
-  title: Bust dart curve
-  description: Controls the curvature of the bust dart
+  title: Curva darda de busto
+  description: Controla la curvatura del polvo
 armholeDepth:
-  title: Armhole depth
-  description: Controls the depth of the armhole
+  title: Profundidad del orificio
+  description: Controla la profundidad del orificio
 backArmholeSlant:
-  title: Back armhole slant
-  description: Slightly rotates the armhole around its pitch point
+  title: Slant del orificio trasero
+  description: Rota ligeramente el orificio alrededor de su punto de zanja
 backArmholeCurvature:
-  title: Back armhole curvature
-  description: Controls how deep the armhole is scooped out at the back bottom
+  title: Curvatura del orificio trasero
+  description: Controla la profundidad del agujero de armadura en la parte trasera
 frontArmholePitchDepth:
-  title: Front armhole pitch depth
-  description: Tweaks the horizontal placement of the front armhole pitch point
+  title: Profundidad del tono del orificio delantero
+  description: Modifica la posición horizontal del punto de giro del blindaje frontal
 backArmholePitchDepth:
-  title: Back armhole pitch depth
-  description: Tweaks the horizontal placement of the back armhole pitch point
+  title: Profundidad del tono del orificio trasero
+  description: Modifica la posición horizontal del punto de giro del orificio trasero
 backNeckCutout:
   title: Corte trasero del cuello
-  description: Controls how deep the neck opening is scooped out at at the back
+  description: Controla la profundidad de la apertura del cuello en la espalda
 backHemSlope:
-  title: Back hem slope
-  description: Controls the slope of the hem at the back
+  title: Pendiente trasera
+  description: Controla la pendiente del hem en la espalda
 frontShoulderWidth:
-  title: Front shoulder width
-  description: Controls the narrowness of the front shoulders relative to the back
+  title: Ancho del hombro frontal
+  description: Controla la estrechez de los hombros delanteros relativos a la parte trasera
 highBustWidth:
-  title: High bust width
-  description: Allows you to tweak the hight bust width at the front
+  title: Ancho de bust alto
+  description: Le permite ajustar el ancho del polvo alto en la parte frontal
