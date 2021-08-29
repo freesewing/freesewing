@@ -1,8 +1,8 @@
 ---
-- title:Fabric options
+- title:Options de tissu
 ---
 
-For the main fabric of your cap, a thick fabric will shape better, but if you go for a lighter fabric, you can interface it to give it more body.
+Pour le tissu principal de votre capuche, un tissu épais se formera mieux. mais si vous optez pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps.
 
-The lining can be anything, but it is usually something light and nice.
+La doublure peut être n'importe quoi, mais il est généralement quelque chose de léger et de agréable.
 
