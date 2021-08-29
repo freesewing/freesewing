@@ -1,10 +1,10 @@
 
-## Bent is a block, not a pattern
+## El doblado es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based. They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloque es una forma básica en la que se basan otros patrones. A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Point is, there is no point in providing instructions on how to make Bent.
+El punto es, no tiene sentido dar instrucciones sobre cómo hacer Bent.
 
-That's because Bent is not supposed to be made as-is, but rather can serve as the basis for your own pattern designs.
+Esto se debe a que Bent no se supone que se haga como -is, sino que más bien puede servir como base para sus propios diseños de patrones.
 
 > Some of the patterns based on Bent include [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
