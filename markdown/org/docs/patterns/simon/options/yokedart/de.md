@@ -1,9 +1,9 @@
 ![Passenabnäher](yokedart.svg)
 
-Controls the dart at the bottom side of the yoke.
+Steuert den Dart auf der Unterseite des Jenkes.
 
 <Note>
 
-Note that this dart is to compensate for a rounded back, not for sloping shoulders.
+Beachten Sie, dass dieser Dart einen gerundeten Rücken kompensieren soll, nicht für schräge Schultern.
 
 </Note>
