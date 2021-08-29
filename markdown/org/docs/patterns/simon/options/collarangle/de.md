@@ -1,15 +1,15 @@
 ![Kragenwinkel](collarangle.svg)
 
-The number of degrees between the collar edge and the grainline.
+Die Anzahl der Grad zwischen dem Kragenrand und der Körnung.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-Together with the collar height, this is the most important factor for the style of your collar.
+Zusammen mit der Kragenhöhe ist dies der wichtigste Faktor für den Kragenstil.
 
-Higher values mean a more cut-away style.
+Höhere Werte bedeuten einen kürzeren Stil.
 
-In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
+Im Beispielbild liegt der obere Wert bei 80 Grad (Standard) und der untere Wert bei 110 Grad.
 
 </Note>
