@@ -1,4 +1,4 @@
 
 ![Armkugel Zugabe](sleevecapease.svg)
 
-The ease on the sleevecap.
+Die Leichtigkeit auf der Ärmel.
