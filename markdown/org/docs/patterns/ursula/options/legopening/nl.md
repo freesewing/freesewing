@@ -1,1 +1,1 @@
-This option controls how high the leg is cut-out.
+Deze optie bepaalt hoe hoog de broekspijp is.
