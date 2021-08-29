@@ -1,3 +1,3 @@
 ![Supplément de longueur](lengthbonus.svg)
 
-This option allows you to lengthen (or shorten) your waistcoat.
+Cette option vous permet d'allonger (ou de raccourcir) votre manteau de taille.
