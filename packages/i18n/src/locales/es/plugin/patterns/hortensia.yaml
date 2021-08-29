@@ -1,10 +1,10 @@
 ---
-SidePanel: Side Panel
-FrontBackPanel: Front and Back Panel
-BottomPanel: Bottom Panel
-ZipperPanel: Zipper Panel
+SidePanel: Panel lateral
+FrontBackPanel: Panel frontal y trasero
+BottomPanel: Panel Principal
+ZipperPanel: Panel de Caparazón
 Strap: Referencia
-strapLength: Length of the Handles
-handleWidth: Width of the handles
-zipperSize: Standard zipper size
-SidePanelReinforcement: Side Reinforcement Panel
+strapLength: Longitud de los Manejos
+handleWidth: Ancho de las asas
+zipperSize: Tamaño estándar de zipper
+SidePanelReinforcement: Ocultar Panel de Refuerzos
