@@ -4,4 +4,4 @@ title: Omtrek Biceps
 
 De **omtrek van de biceps** gaat om je biceps heen.
 
-To measure your **biceps circumference**, run the tape measure around the fullest part of your upper arm.
+Om je **biceps omtrek**te meten wikkel je de lintmeter rond het breedste deel van je bovenarm.
