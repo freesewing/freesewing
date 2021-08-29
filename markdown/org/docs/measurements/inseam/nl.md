@@ -2,6 +2,6 @@
 title: Binnenbeennaad
 ---
 
-The **inseam** is the measurement from your crotch down to the floor.
+De binnennaad van **** is de afmeting van je kruis tot aan de vloer.
 
-To measure your **inseam**, measure down vertically from the point your legs join (at the crotch) down to the floor.
+Om je **binnenbeennaad**te meten meet je verticaal vanaf het punt waarop je benen zich aansluiten (aan het kruis) tot aan de vloer.
