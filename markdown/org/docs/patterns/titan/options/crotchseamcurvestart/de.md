@@ -1,3 +1,3 @@
 
-Controls where the crotch seam starts to curve, which influences the fit at your crotch.
+Legt fest, wo die Schneidnaht kurvent, was die Passform an Ihrem Crotch beeinflusst.
 
