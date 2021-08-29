@@ -1,11 +1,11 @@
 ---
-title: Scale box
+title: Caja de escala
 ---
 
-The scale box allows you to verify that your pattern was printed to the correct scale:
+La casilla de escala le permite verificar que su patrón fue impreso a la escala correcta:
 
 <Legend part="scalebox" caption="The scale box" >
 
 <Tip>
-To verify the printed size, you can first only print the page that has the scale box on it.
+Para verificar el tamaño de la impresión, sólo puede imprimir la página que tiene la casilla de escala en ella.
 </Tip>
