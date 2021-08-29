@@ -1,22 +1,22 @@
 ---
-title: Holmes What you need
+title: Houdt wat je nodig hebt
 ---
 
-To make Holmes, you will need the following:
+Om Holmes te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 0.5 metres of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- About 0.5 metres of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- A rigid material for the visor insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) About 1.0 metre of 1" (2.5cm) crossgrain ribbon or petersham.
-- (Optional) 1 covered button about 3/4" (2cm) - 7/8" (2.2cm)
+- Ongeveer 0,5 meter geschikte stof ([zie de opties voor Holmes Stof](/docs/patterns/holmes/fabric/))
+- Ongeveer 0,5 meter voering stof ([zie Holmes Fabriek opties](/docs/patterns/holmes/fabric/))
+- Een star materiaal voor de bezoeker invoegen ([zie Holmes Fabrick-opties](/docs/patterns/holmes/fabric/))
+- (Optioneel) Ongeveer 1.0 meter van 1" (2,5cm) crossgrain lint of petersham.
+- (Optioneel) 1 bedekte knop over 3/4" (2cm) - 7/8" (2,2cm)
 
 <Note>
 
-Depending on style the ties and buttons are optional.  
-- If you are making Buttonhole Ear Flaps you can omit the ties.  
-- If you are making Tie Ear Flaps you can omit the button.  
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))  
-- You can also use different width and type ribbons for the ties if you prefer.
+Afhankelijk van de stijl zijn de knoppen en elementen optioneel.  
+- Als je Buttonhole Ear Flaps maakt, kun je de stropdassen weglaten.  
+- Als je Tie Ear Flaps maakt, kun je de knop weglaten.  
+- Ties kunnen ook gemaakt worden van stof als je liever hebt ([zie Holmes snijden](/docs/patronen/holmes/cutting/))  
+- Je kunt ook verschillende breedte gebruiken en linten typen voor de stropdassen als je dat wilt.
 
 </Note>
