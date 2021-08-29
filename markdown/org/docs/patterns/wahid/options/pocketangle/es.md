@@ -1,2 +1,2 @@
 
-Controls the angle of the pocket slant.
+Controla el ángulo de la franja de bolsillo.
