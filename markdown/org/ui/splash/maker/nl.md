@@ -1,6 +1,6 @@
 - - -
 - - -
 
-### For makers
+### Voor makers
 
-All our sewing patterns are made-to-measure & free to use, courtesy of our community
+Al onze naaipatronen zijn op maat gemaakt & gratis te gebruiken, vervangend door onze gemeenschap
