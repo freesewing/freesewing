@@ -1,2 +1,2 @@
 
-The amount of overal (horizontal) stretch.
+Die Menge an Overal (horizontal) Strecke.
