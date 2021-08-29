@@ -1,8 +1,8 @@
 
-To make Aaron, you will need the following:
+Para hacer Aarón necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- Alrededor de 0.75 metros de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/aaron/fabric))
 
 <Note>
 
