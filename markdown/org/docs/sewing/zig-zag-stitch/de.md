@@ -2,12 +2,12 @@
 title: Zig-zag stitch
 ---
 
-![A zig-zag stitch is used to prevent the SA of the denim from fraying](zig-zag.jpg)
+![Eine Zick-Zack-Sticke wird verwendet, um zu verhindern, dass die SA des Denim ausfällt](zig-zag.jpg)
 
-A zig-zag stitch is useful for when you need to sew a stretchable seam (like when using knits). You can also use it for a decorative effect, or to lock the edge of your fabric.
+Ein Zickzackstich ist nützlich, wenn man eine dehnbare Naht nähen muss (wie beim Stricken). Sie können es auch für einen dekorativen Effekt verwenden oder um den Rand Ihres Stoffes zu sperren.
 
 As most, if not all, sewing machines can sew a zig-zag stitch, it's a popular alternative for when more specialised stitches are not available.
 
 > Everyone's favourite encyclopedia has more on the zig-zag stitch: [Zigzag stitch on Wikipedia](http://en.wikipedia.org/wiki/Zigzag_stitch)
 
-> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Bild von [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
