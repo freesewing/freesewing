@@ -1,2 +1,2 @@
 
-Controls the width of the sleeve vent.
+Contrôle la largeur de l'évasion de la manche.
