@@ -1,57 +1,57 @@
-### Step 1: Close shoulder seams
+### Schritt 1: Schulternähte schließen
 
- - Place the back and front on top of each other with the good sides toghether.
- - Align the shoulder seam, and sew/serge it at the standard seam allowance.
- - Repeat for the other shoulder seam.
+ - Legen Sie den Rücken und die Vorderseite auf einander mit den guten Seiten toghether.
+ - Legen Sie die Schulternaht an und nähen Sie sie mit der Standardnaht ab.
+ - Wiederholen für die andere Schulternaht.
 
 
-### Step 2: Set in the sleeves
+### Schritt 2: In den Ärmeln setzen
 
- - Place your now attached front and back with the good side up.
- - Place a sleeve on top if it with the good side down
- - Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
- - Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
- - Sew/serge your pinned sleeve in place
- - Repeat for the other sleeve
+ - Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
+ - Platziere einen Ärmel oben wenn er die gute Seite unten hat
+ - Legen Sie die Oberseite der Ärmel mit der Schulternaht an, der Ärmel sollte über der Vorder/Rückseite liegen und sich bis zur anderen SchulterNaht erstrecken
+ - Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Dies während der Pinningzeit im oberen Teil des Ärmelkopfes.
+ - Nähen/Serge deinen angehefteten Ärmel an Ort
+ - Wiederholen für den anderen Ärmel
 
-### Step 3: Finish the neck binding
+### Schritt 3: Beende die Halsbindung
 
- - Measure the length of the neck opening
- - Cut a piece of ribbing that is this length and 6cm/2.5inch wide
- - Fold the ribbing double with the good side outward, and pin it to your neckopening starting from the back
- - The cut off side of your ribbing should align with the edge of your neck opening, while the ribbing extends over your sweatshirt
- - Pin the ribbing in place around the neck opening, starting at the back and stretching it gently as you do so
- - First, join the ribbing at center back, with good sides together. As you've been stretching the ribbing as you were pinning it, it will be too long. Simply cut that away
- - Then, sew the ribbing to the neck opening
+ - Messen Sie die Länge der Halsöffnung
+ - Schneiden Sie ein Band mit dieser Länge und 6cm/2,5inch Breite
+ - Falte das Band doppelt mit der guten Seite nach außen und fixiere es an deiner Halsöffnung, beginnend von hinten
+ - Die abgeschnittene Seite des Balles sollte sich an den Rand des Halsöffnens angleichen, während sich das Band über das Sweatshirt erstreckt
+ - Nähen Sie das Band um den Hals zu öffnen, beginnend am Rücken und strecken Sie es sanft an
+ - Zuerst das Band in der Mitte hinten, mit guten Seiten zusammen. Da du das Band während deiner Fixierung gedehnt hast, wird es zu lang sein. Lediglich abgeschnitten
+ - Dann nähen Sie das Band zum Halsöffner
 
-### Step 4: Close the side seams and sleeves
+### Schritt 4: Schließe die Seitennaht und Ärmel
 
- - Fold Sven double at the shoulder seams with good sides together
- - Align the side seams and sleeves and pin them together
- - Now, sew the side seam and continue sewing to close the arms all the way to the cuff
- - Repeat on the other side
+ - Sven doppelt an den Schulternähten mit guten Seiten zusammen falten
+ - Nähte die Seitennaht und die Ärmel an und fixiere sie zusammen
+ - Nähen Sie nun die Seitennaht und nähen Sie weiter um die Arme bis zur Manschette zu schließen
+ - Wiederholen auf der anderen Seite
 
-### Step 5: Attach the cuffs
+### Schritt 5: Die Manschetten anhängen
 
- - Measure the width of the sleeve at the cuff
- - Cut a piece of ribbing that is (twice this length - 2cm/1inch) and 7cm/3inch wide
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven sleeve
- - Align the cut off side of the ribbing with the edge of the sleeve and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the sleeve.
- - Now, sew/serge the ribbing to the sleeve
- - Repeat for the other cuff
+ - Messen Sie die Breite der Ärmel an der Manschette
+ - Schneiden Sie ein Stück Bänder, das doppelt so lang ist - 2cm/1inch und 7cm/3inch breit
+ - Falte das Band doppelt entlang der längsten Seite und nähe den Rand zusammen, so dass du einen kontinuierlichen Ring hast
+ - Drehe deinen Sven inside-out
+ - Falte den Ribbelring mit der guten Seite nach außen, und rutsche die gefaltete Seite in deinen Innen/Out-Sven-Ärmel
+ - Legen Sie die abgeschnittene Seite des Balles mit der Kante des Ärmels an und befestigen Sie sie an der Stelle. Das Band ist etwas kürzer, also strecken Sie es ein bisschen während Sie es anpinnen, um es in den Ärmel zu bearbeiten.
+ - Nähen/Serge das Band an den Ärmel
+ - Wiederholen für die andere Manschette
 
-### Step 6: Attach the hem
+### Schritt 6: Befestige den Saum
 
- - Do for the hem as your did for the cuffs
- - Measure the width of Sven at the hem
- - Cut a piece of ribbing that 1.9 times this length and 7cm/3inch wide
- - You may need to attach different pieces if your ribbing fabric isn't wide enough
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven body
- - Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.
- - Now, sew/serge the ribbing to the body
+ - Tue für den Saum wie du es für die Manschetten getan hast
+ - Messen Sie die Breite von Sven am Saum
+ - Schneiden Sie ein Stück Bänder, das 1,9-mal so lang und 7cm/3inch breit ist
+ - Möglicherweise musst du verschiedene Teile anhängen, wenn dein Bindegewebe nicht breit genug ist
+ - Falte das Band doppelt entlang der längsten Seite und nähe den Rand zusammen, so dass du einen kontinuierlichen Ring hast
+ - Drehe deinen Sven inside-out
+ - Falte den Ribbelring mit der guten Seite nach außen und rutsche die gefaltete Seite in deinen Innen-/Out-Sven-Körper
+ - Legen Sie die abgeschnittene Seite des Balles mit dem Rand des Körpers an und befestigen Sie es an der Stelle. Das Band ist etwas kürzer, also strecken Sie es ein bisschen während Sie es anpinnen, um es in den Körper zu bringen.
+ - Nähen/Serge das Band an den Körper
 
 
