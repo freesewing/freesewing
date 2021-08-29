@@ -2,4 +2,4 @@
 title: Doblado del pliegue en caja
 ---
 
-Controls how much the box pleat at the back is folded/pleated.
+Controla cuánto el pliegue de la caja en la parte trasera está plegado/plegado.
