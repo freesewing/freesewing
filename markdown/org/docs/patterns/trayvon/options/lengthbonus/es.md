@@ -1,2 +1,2 @@
 
-Adds extra length to the tie.
+Añade una longitud extra al empate.
