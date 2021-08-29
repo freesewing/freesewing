@@ -6,7 +6,7 @@ albert:
   description: Albert est un tablier.
   title: Tablier Albert
 bella:
-  description: Bella is a basic body block for people with breasts.
+  description: Bella est un bloc corporel de base pour les personnes qui ont le sein.
   title: Buste de base Bella
 benjamin:
   description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
@@ -15,16 +15,16 @@ bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
 breanna:
-  description: Breanna is a basic body block for people with breasts.
+  description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
   title: Haut Breanna
 brian:
-  description: Brian is a basic body block for people without breasts.
+  description: Brian est un bloc corporel de base pour les personnes sans sein.
   title: Patron de base Brian
 bruce:
   description: Bruce est un boxer confortable et élégant.
   title: Boxer Bruce
 carlita:
-  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'La version pour les seins de notre manteau Carlton, aka manteau Sherlock Holmes.'
   title: Manteau Carlita
 carlton:
   description: 'Pour le cosplay de Sherlock Holmes, ou juste un très beau manteau.'
@@ -33,7 +33,7 @@ cathrin:
   description: Cathrin est un corset sous-poitrine ou un serre-taille.
   title: Corset Cathrin
 charlie:
-  description: Charlie is a chino trouser pattern.
+  description: Charlie est un modèle de pantalon en chino.
   title: Charlie chinos
 cornelius:
   description: Cornelius est une culotte de cyclisme basé sur la méthode Keystone.
@@ -72,10 +72,10 @@ sandy:
   description: Sandy est un patron de jupe cercle adaptable.
   title: Jupe cercle Sandy
 shin:
-  description: Shin are athletic swim trunks.
+  description: Les tiges sont des maillots de bain athlétiques.
   title: Boxer de bain Shin
 simon:
-  description: Simon is a highly adaptable shirt pattern for people without breasts.
+  description: Simon est un modèle de chemise très adaptable pour les personnes sans sein.
   title: Chemise Simon
 simone:
   description: Simone est Simon, adapté pour les poitrines avec seins.
@@ -99,11 +99,11 @@ trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern.
-  title: Ursula undies
+  description: Ursula est un motif basique et hautement personnalisable.
+  title: Unités d'Ursula
 wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
 waralee:
-  description: Waralee are wrap pants.
+  description: Waralee sont des pantalons enveloppés.
   title: Pantalon portefeuille Waralee
