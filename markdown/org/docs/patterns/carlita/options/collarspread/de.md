@@ -1,8 +1,8 @@
 
-Controls the spread of the collar.
+Steuert die Ausbreitung des Kragens.
 
-<Fixme> Explain what this means exactly. </Fixme>
+<Fixme> Erklären Sie, was das genau bedeutet. </Fixme>
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarspread_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_collarspread_sample.svg "Effekt dieser Option auf das Muster")
