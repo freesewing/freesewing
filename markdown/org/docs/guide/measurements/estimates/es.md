@@ -1,29 +1,29 @@
 ---
-title: Measurements estimates
+title: Estimaciones de mediciones
 ---
 
-To help you spot measuring mistakes, we show an estimate of your different measurements next to the actual value. When the difference gets large, we'll draw your attention to that.
+Para ayudarle a detectar errores de medición, le mostramos una estimación de sus diferentes mediciones junto al valor real. Cuando la diferencia se agrande, llamaremos su atención sobre eso.
 
 <Tip>
 
-This estimate is based on your neck circumference, so this won't show up until you've measured your neck.
+Esta estimación se basa en la circunstancia del cuello, por lo que no aparecerá hasta que hayas medido el cuello.
 
 </Tip>
 
 <Note>
 
-##### This is a difficult area for us to work in
-We want to help you get the best results, and that includes helping you spot issues with your measurements. 
-On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.  
+##### Esta es una área difícil de trabajar en
+Queremos ayudarte a obtener los mejores resultados. y eso incluye ayudarte a detectar problemas con tus mediciones. 
+Por otra parte, no queremos en modo alguno dar a entender que las mediciones de alguien están *equivocadas* de algún modo.  
 
-We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets. 
-So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. 
-But you know your body. You know which of your measurements deviate from the average. 
-And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
-On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
+Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas. 
+Así que, por un lado, podría parecer que nos estamos configurando para fallar comparando mediciones con un conjunto de mediciones más o menos *estándar*. 
+Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media. 
+Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente.
+Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes, 
-we never exclude anyone based on size or measurement. 
-No matter what you throw at us, we will draft a pattern for you, or (our software will) die trying.
+Por último, pero no menos importante, mientras intentamos proporcionar orientación sobre las mediciones para ayudar a detectar errores, 
+nunca excluimos a nadie basado en el tamaño o medición. 
+Independientemente de lo que nos lance, elaboraremos un patrón para usted o (nuestro software morirá) intentando.
 
 </Note>
