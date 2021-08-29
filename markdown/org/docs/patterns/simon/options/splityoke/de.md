@@ -1,13 +1,13 @@
 ![Geteilte Passe](splityoke.svg)
 
-Do you want a split yoke?
+Wollen Sie ein Split-Joke?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-With a split yoke, only half the yoke is included on the pattern, and you'll have to cut 4 parts instead of 2, and sew them together.
+Bei einem gespaltenen Joch ist nur die Hälfte des Joch auf dem Muster enthalten, und Sie müssen 4 Teile statt 2 schneiden, und sie zusammen nähen.
 
-It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
+Es ist ein bisschen mehr Arbeit, aber es erlaubt es Ihnen, die Kornlinie unterschiedlich auf beiden Hälften des Joch auszurichten ein Effekt, den einige Leute mögen.
 
 </Note>
