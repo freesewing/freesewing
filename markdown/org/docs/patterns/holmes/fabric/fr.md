@@ -1,33 +1,33 @@
 ---
-title: Holmes Fabric options
+title: Options de l'étoffe des Holmes
 ---
 
-### Main Fabric
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+### Tissu principal
+Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. Généralement, vous voulez utiliser **laines** de poids de revêtement mais vous pouvez expérimenter avec différents poids et tissus avec l'interface pertinente.
 <Note>
  
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Then interface it with a **Medium Firm Interfacing**.
 
 </Note>
 
-### Lining Fabric
-Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but really you can make it from any fabric you deem appropriate for lining. Just remember it needs to protect the facing and the main fabric from your head.
+### Tissu de rangement
+Généralement, vous voulez un tissu léger tel que **Soies** ou **Plaine de Coton** mais vous pouvez vraiment le faire à partir de n'importe quel tissu que vous jugez approprié pour le revêtement. Rappelez-vous qu'il a besoin de protéger le visage et le tissu principal de votre tête.
 
 ### Entoilage
-Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly ***Baste*** your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again ***Baste*** the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary ***Pad Stitches***.
+Selon l'épaisseur de votre tissu principal et la façon dont il conserve sa forme, vous devrez peut-être interfacer votre tissu. Si vous n'êtes pas certain que votre tissu nécessite une interfacation, rapidement ***Baste*** vos pièces de couronne ensemble et voyez si la couronne reste debout lorsqu'elle est placée sur une surface. Si elle ne le fait pas, elle a besoin d'une interface. En règle générale, vous aurez besoin d'une **Interface-entreprise moyenne** mais si votre tissu est assez mince, vous aurez peut-être besoin d'une interface plus ferme. Si vous n'êtes toujours pas certain, vous pouvez faire face à vos pièces de couronne et une fois de plus ***Baste*** les pièces de la couronne ensemble et vérifier son apparence sur votre tête. Vous pouvez utiliser une interface fusible ou non fusibles. Si vous utilisez une interfaçage non fusible vous voudrez aplanir la ligne de l'interfaçage à vos pièces wih temporaire ***Pad Stitches***.
 
 <Note>
  
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Assurez-vous d'utiliser des fibres naturelles.
 
 </Note>
 
 ### Bill Insert
 
-For the bill insert you want a firm but thin material. You may want to try either, **Millinery Buckram**, **Plastic Canvas**, **Plastic Sheets** or **EVA Foam**. You can use **Leather** just know that depending on depth this may create a thicker bill and may make the bill harder to close.
+For the bill insert you want a firm but thin material. Vous pouvez essayer aussi **Millinery Buckram**, **Plastic Canvas**, **Feuilles plastiques** ou **Mousse EVA**. You can use **Leather** just know that depending on depth this may create a thicker bill and may make the bill harder to close.
 
 <Note>
  
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Rappelez-vous. Toutes ces recommandations sont des recommandations. Si vous voulez utiliser quelque chose de différent, allez !
 
 </Note>
