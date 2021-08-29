@@ -1,10 +1,10 @@
 ---
-title: Titles
+title: Titulos
 ---
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name:
+Cada pieza de patrón tiene un título que le indica el número y el nombre de la pieza, así como el nombre del patrón:
 <Legend part="title" caption="Example of a title" >
 
 <Note>
-When you generate a pattern on freesewing.org, the title will also include the name of the person the pattern was made for.
+Cuando genere un patrón en freesewing.org, el título también incluirá el nombre de la persona para la que se hizo el patrón.
 </Note>
