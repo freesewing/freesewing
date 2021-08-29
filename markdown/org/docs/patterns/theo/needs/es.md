@@ -1,8 +1,8 @@
-To make Theodore, you will need the following:
+Para hacer Theodore, necesitarás lo siguiente:
 
  - Suministros básicos de costura
- - About 2 meter of a suitable fabric ([see Fabric options](/docs/patterns/theo/fabric))
- - About a meter of lining fabric
- - Fusible interfacing for back pockets and waistband
- - A zipper, button and hook for the fly
+ - Aproximadamente 2 metros de un tejido adecuado ([ver opciones de tela](/docs/patterns/theo/fabric))
+ - Acerca de un metro de tela de forro
+ - Interfaz Fusible para bolsillos traseros y banda de cintura
+ - Un zipper, botón y gancho para el vuelo
 
