@@ -9,7 +9,7 @@ Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optio
    - Schneide **4 Einlagen-Knoten**
    - Schneide **2 Einlagen-Kragenbänder**
 
-## With adjustment ribbon
+## Mit Anpassungsband
 
  - **Oberstoff**
    - Schneide **1 Knoten 1**
