@@ -1,5 +1,5 @@
 
-This top works best in one of these two scenarios:
+Dies funktioniert am besten in einem dieser beiden Szenarien:
 
- - Use a stretch fabric, and chose minimal ease
- - Or use a non-stretch fabric with good *drape*, in which case you'll want to add more ease. Flowy fabrics can be cut on the bias for a body-hugging effect
+ - Benutzen Sie einen Stretch-Stoff und wählen Sie minimale Leichtigkeit
+ - Oder verwenden Sie einen nicht dehnbaren Stoff mit gutem *Drape*, in diesem Fall möchten Sie noch mehr Leichtigkeit hinzufügen. Flowy Stoffe können auf die Voreinstellung für einen Körper-Umarmungseffekt geschnitten werden
