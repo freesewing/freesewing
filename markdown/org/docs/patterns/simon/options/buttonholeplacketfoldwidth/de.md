@@ -1,12 +1,12 @@
 ![Knopflochleiste Falzbreite](buttonholeplacketfoldwidth.svg)
 
-The width of the fold on a classic style buttonhole placket.
+Die Breite der Falte auf einem klassischen Buttonlochplatz.
 
 <Note>
 
-If you have a fabric with a pattern (striped or checkers for example) you can set the fold to half the width of your repeating pattern. 
-This way, your pattern will match perfectly.
+Wenn Sie einen Stoff mit einem Muster haben (gestreift oder Schachteln) können Sie die Falte auf die Hälfte der Breite Ihres Wiederholungsmusters einstellen. 
+Auf diese Weise wird Ihr Muster perfekt passen.
 
-This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
+Dies gilt nur für einen klassischen Platzhalter. So wird es ignoriert, wenn Sie sich für einen nahtlosen Buttonloch-Stil entscheiden.
 
 </Note>
