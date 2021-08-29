@@ -1,2 +1,2 @@
 
-Constrol how many beltloops we'll generate.
+Stallen hoeveel bellussen we gaan genereren.
