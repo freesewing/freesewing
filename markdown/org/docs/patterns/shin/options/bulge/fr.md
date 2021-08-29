@@ -1,6 +1,6 @@
 
-How much room do you want in the front?
+Combien de place voulez-vous à l'avant ?
 
-Increasing this will creating more room in the front.
+Augmenter ceci créera plus de place sur le devant.
 
 > Si c'est de l'aisance verticale que vous voulez, voir l'option **hauteur**
