@@ -1,14 +1,14 @@
 ![Inserción delantera](frontinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the front?
+¿Hasta dónde quieres que tu armadura de cintura se curva hacia adentro en el frente?
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Esto influye en el estilo de la cintura.
 
 </Note>
