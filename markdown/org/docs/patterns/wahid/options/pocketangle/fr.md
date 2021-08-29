@@ -1,2 +1,2 @@
 
-Controls the angle of the pocket slant.
+Contrôle l'angle de la poche.
