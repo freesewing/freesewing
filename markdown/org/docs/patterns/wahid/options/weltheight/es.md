@@ -1,2 +1,2 @@
 
-Controls the height of the pocket welts.
+Controla la altura de las soldaduras del bolsillo.
