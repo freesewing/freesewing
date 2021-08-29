@@ -7,9 +7,9 @@ title: Dubbele paspelzak
 
 ## Leer paspelzakken met David Page Coffin
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+De editie van [Seamwork Magazine](https://www.seamwork.com/) van november 2015 heeft een sectie genaamd [Verovering de Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) waar David Page Coffin je door de bouw van paspelzakken loopt.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+David heeft verschillende boeken geschreven over broek en hemdbouw, leert online naailessen en hosts workshops in de VS, en daarbuiten.
 
 David is een vriend van deze site, en vooral veel beter geschikt om dit uit te leggen dan ik.
 
