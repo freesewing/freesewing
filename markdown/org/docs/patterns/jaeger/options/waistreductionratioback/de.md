@@ -1,4 +1,4 @@
 
-![Waist reduction ratio back](waistreductionratioback.svg)
+![Taillenreduzierungsverhältnis zurück](waistreductionratioback.svg)
 
-Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping.
+Verhältnis der Taille, die in der Rückenplattenform reduziert werden soll. Beeinflusst auch Seitenpaneele Formung.
