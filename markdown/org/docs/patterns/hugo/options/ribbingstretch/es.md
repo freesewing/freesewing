@@ -1,12 +1,12 @@
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Ribbing en Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Esta opción le permite ajustar el estiramiento de su ribbing.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Si usted elige el 90% (por ejemplo) por cada 10 cm de ribbing, sólo borraremos 9 cm. De esta manera, 9cm de ribbing se estirará a 10cm.
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it 
-you need to stretch out to get to 10 cm with a *good* stretch.
+Si no estás seguro de qué escoger, lo mejor es tomar la costilla que vas a usar ver cuánto de ella 
+necesitas estirar para llegar a 10 cm con un estiramiento *bueno*.
 
 </Note>
