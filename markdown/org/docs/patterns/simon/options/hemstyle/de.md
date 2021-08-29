@@ -1,7 +1,7 @@
 ![Saumstil](hemstyle.svg)
 
-What style of hem line do you want?
+Welcher Stil der Saum Linie möchtest du?
 
  - Gerade
  - Baseball
- - Slashed
+ - Schräg
