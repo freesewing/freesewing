@@ -1,3 +1,3 @@
 ![Longitud extra de manga](sleevelengthbonus.svg)
 
-This option will lengthen the sleeves of your sweatshirt.
+Esta opción alargará las mangas de su sudadera.
