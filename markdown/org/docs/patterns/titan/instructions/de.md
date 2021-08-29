@@ -1,29 +1,29 @@
 
-### Step 1: Join the outseam
+### Schritt 1: Nehmen Sie an der Ausbreitung teil
 
-Join the outseam (the seam that runs along the side of your leg) of the front and back.
+Schließen Sie sich dem Aussennaht (die Naht, die entlang der Seite des Beines läuft) der Vorder- und Rückseite ab.
 
-Repeat the step for the other leg, but **make sure they are the mirror image of each other**.
+Wiederholen Sie den Schritt für das andere Bein, aber **stellen Sie sicher, dass sie das Spiegelbild von einander** sind.
 
-### Step 2: Join the inseam
+### Schritt 2: Trete der Inseam bei
 
-Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+Schließen Sie sich dem Inseam (die Naht der Pisten entlang der Innenseite Ihrer Beine) der Vorder- und Rückseite an.
 
-You now have a leg. Repeat this step for the other legs, once again making certain they are mirror images of each other.
+Du hast jetzt ein Bein. Wiederholen Sie diesen Schritt für die anderen Beine und stellen Sie wieder sicher, dass sie Spiegelbilder voneinander sind.
 
-### Step 3: Join the cross seam
+### Schritt 3: Trete der Quernaht bei
 
-Turn one leg with the good side in, and the other with the good side out.
+Drehen Sie ein Bein mit der guten Seite, die andere mit der guten Seite.
 
-Now tuch the *good side out* into the *good side in* leg, so that they have their _good sides together_.
+Jetzt die *gute Seite* in die *gute Seite in* Bein schnüren, damit sie ihre _guten Seiten zusammen haben_.
 
-You can now align and sew the cross seam.
+Nun können Sie die Kreuznaht ausrichten und nähen.
 
 <Note>
 
-###### You probably want to insert a zipper
+###### Du möchtest wahrscheinlich einen Reißverschluss
 
-You should insert a zipper or leave the last part of the cross seam open (so you can pin it).  
-If you don't you wont be able to put on Titan to check the fit.
+einfügen. Du solltest einen Reißverschluss einfügen oder den letzten Teil der Quernaht offen lassen (damit du ihn anpingst).  
+Wenn Sie nicht in der Lage sind, Titan zu setzen, um die Passform zu überprüfen.
 
 </Note>
