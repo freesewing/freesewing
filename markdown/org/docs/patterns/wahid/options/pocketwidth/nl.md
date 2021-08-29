@@ -1,2 +1,2 @@
 
-Controls the width of the pockets.
+Bepaalt de breedte van de zakken.
