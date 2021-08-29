@@ -1,9 +1,9 @@
-![The back rise option on Cathrin](./backrise.svg)
+![L'option de montée arrière sur Cathrin](./backrise.svg)
 
-How high do you want the corset to rise at the back, relative to the underbust height?
+À quelle hauteur voulez-vous que le corset s'élève à l'arrière, par rapport à la hauteur inférieure du buste ?
 
-Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
+Zéro signifie que la ligne de fond restera horizontale au niveau de votre sous-estimé. En d'autres termes, le dos sera quelque peu la même hauteur que votre sangle.
 
-If you increase the back rise, your corset will rise upwards at the back.
+Si vous augmentez le dos, votre corset se lèvera vers le haut à l'arrière.
 
-> As this is an underbust corset, the back rise is a style choice and wonâ€™t affect the fit
+> Etant donné qu'il s'agit d'un corset sous-buste, l'ascension arrière est un choix de style et n'affectera pas l'ajustement
