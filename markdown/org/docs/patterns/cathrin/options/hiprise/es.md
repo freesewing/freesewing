@@ -1,3 +1,3 @@
-![The hip rise option on Cathrin](./hiprise.svg)
+![La opción de ascenso de cadera en la Catedral](./hiprise.svg)
 
-How high do you want to corset to rise on your hips, in comparison to the center front and center back.
+Qué tan alto quieres que el corsé se levante en tus caderas, en comparación con el frente central y la parte trasera del centro.
