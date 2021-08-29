@@ -1,8 +1,8 @@
 - - -
 - - -
 
-[The `freesewing` organisation on Github](https://github.com/freesewing/) holds all our repositories and source code.
+[De `freesewing` organisatie op Github](https://github.com/freesewing/) bevat al onze repositories en broncode.
 
-We don't only use Github for development, but also use Github issues for (lightweight) project management and discussion of feature request and bugs.
+We gebruiken niet alleen Github voor ontwikkeling, maar gebruiken ook Github problemen voor (lichtgewicht) projectbeheer en discussie over functie verzoek en bugs.
 
-It's also where you'll find the notes and agenda of our [contributor calls](/community/calls/).
+Hier vind je ook de notities en agenda van onze [bijdrageroproepen](/community/calls/).
