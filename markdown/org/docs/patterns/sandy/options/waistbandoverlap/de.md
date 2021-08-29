@@ -1,4 +1,4 @@
 
 ![Überlappung des Taillenbundes](waistbandoverlap.svg)
 
-The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband.
+Die Länge der Überlappung zwischen den Enden der Taille, um eine Taste zu ermöglichen. 0 bedeutet keine Überlappung, zum Beispiel einen Reißverschluss, der den ganzen Weg an die Spitze der Taille geht.
