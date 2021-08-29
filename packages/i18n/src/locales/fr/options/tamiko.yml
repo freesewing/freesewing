@@ -7,4 +7,4 @@ shoulderseamLength:
   description: La longueur de la couture d'épaule, en tant que facteur de la mesure d'épaule à épaule
 shoulderSlope:
   title: Pente d'épaule
-  description: Controls the angle of the shoulder seams
+  description: Contrôle l'angle des coutures d'épaule
