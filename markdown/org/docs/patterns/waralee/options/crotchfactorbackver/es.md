@@ -1,2 +1,2 @@
-Used to move the curve of the crotch in the back vertically
+Utilizado para mover verticalmente la curva de la parte trasera
 
