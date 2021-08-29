@@ -13,7 +13,7 @@ In dit geval is er een hoop videomateriaal beschikbaar, maar dit is origineel op
 
 Veel van de stappen hieronder worden herhaald voor beide broekspijpen. 
 
-That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
+Dat wordt niet altijd vermeld omdat het leven kort is en het continu schrijven van _Do niet vergeet om dit voor beide broekspijpen_ te doen, snel genoeg wordt.
 
 </Note>
 
@@ -47,14 +47,14 @@ Maak de dubbele paspelzakken aan de achterkant van je broek, inclusief de broekz
 
 <Tip>
 
-###### Double welt pockets
+###### Dubbele paspelzakken
 
-Constructing a double welt pocket is a technique that is used is different garments. 
+Het maken van een dubbele paspelzak is een techniek die wordt gebruikt zijn verschillende kledingstukken. 
 Daarom heb ik er een aparte pagina met documentatie voor gemaakt.
 
 Er is zowel geschreven documentatie en een reeks video's die je tonen hoe dit werkt, dus zelfs als je nog nooit paspelzakken gemaakt hebt komt het wel in orde.
 
-[To the welt pockets documentation](/docs/sewing/double-welt-pockets)
+[Naar de documentatie over de paspelzakken](/docs/naaien/dubbel-zakjes)
 
 </Tip>
 
