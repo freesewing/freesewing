@@ -1,4 +1,4 @@
 
-Controls the start of the crotchseam at the front fork point.
+Bepaalt het begin van de kruisnaad op het vorkpunt.
 
-This will influence how the trousers fit at the crotch.
+Dit zal beïnvloeden hoe de broek past aan het kruis.
