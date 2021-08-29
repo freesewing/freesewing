@@ -1,11 +1,11 @@
 ![Réduction d'épaule](shoulderinset.svg)
 
-How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
+Jusqu'où voulez-vous que votre manteau de taille s'assied de votre épaule sur la couture de l'épaule? La valeur par défaut est 2cm.
 
 <Note>
 
 ###### Pour quoi faire ?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
+La couture de l'épaule d'un manteau de taille est généralement plus étroite que votre chemise. Cette option permet de contrôler l'étroitesse (sur le côté de l'épaule).
 
 </Note>
