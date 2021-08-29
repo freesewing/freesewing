@@ -1,4 +1,4 @@
 
-Controls the start of the crossseam at the back fork point.
+Bepaalt het begin van de kruisnaad aan de achterste vorkpunt.
 
-This will influence how the trousers fit around your bum.
+Dit zal beïnvloeden hoe de broek zich rond je bum passeert.
