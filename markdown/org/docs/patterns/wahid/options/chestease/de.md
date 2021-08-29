@@ -1,9 +1,9 @@
 ![Brustzugabe](chestease.svg)
 
-How much room do you want at the chest?
+Wie viel Platz möchtest du an der Brust haben?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+Da eine Weste keine Arme hat, geht eine kleine Brustpflege sehr weit. Fügen Sie zu viel hinzu, und Sie werden am Ende klaffende Rüstungen haben.
 
 </Note>
