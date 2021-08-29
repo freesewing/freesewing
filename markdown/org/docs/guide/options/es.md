@@ -1,11 +1,11 @@
 ---
-title: Configuring your pattern
+title: Configurando tu patrón
 order: 998
 ---
 
-When you [create a pattern](/create/) there are two important groups of things you can tweak:
+Cuando [creas un patrón](/create/) hay dos grupos importantes de cosas que puedes modificar:
 
- - The **design options** are options the designer added to the pattern. Typically style and fit choices.
- - The **pattern options** are a set of options that come with the platform, and are available for all patterns. Below is a complete list:
+ - Las **opciones de diseño** son opciones que el diseñador agregó al patrón. Estilo típico y ajuste a sus opciones.
+ - Las opciones de patrón **** son un conjunto de opciones que vienen con la plataforma, y están disponibles para todos los patrones. Debajo hay una lista completa:
 
 <ReadMore list />
