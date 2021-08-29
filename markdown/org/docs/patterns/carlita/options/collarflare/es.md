@@ -1,8 +1,8 @@
 
-Controls the flare of the collar.
+Controla la bengala del cuello.
 
-<Fixme> Explain what this means exactly. </Fixme>
+<Fixme> Explicar qué significa exactamente. </Fixme>
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarflare_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlita_collarflare_sample.svg "Efecto de esta opción en el patrón")
