@@ -1,2 +1,2 @@
 
-Controls the depth of the front pocket slant. In other words, it determines how wide the pocket opening is.
+Contrôle la profondeur de la poignée de poche avant. En d'autres termes, il détermine la largeur de l'ouverture de la poche.
