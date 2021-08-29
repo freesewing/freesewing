@@ -27,11 +27,11 @@ lengthBonus:
   title: Bonus de longitud
   description: La cantidad a elongar. Valores negativos lo acortan.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  title: 'Mayo de costura de hombro: lado de cuello'
+  description: Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello. Disminuye su desplazamiento hacia atrás.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  title: 'Mayo de costura de hombro: lado del orificio'
+  description: Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del blindaje. Disminuye su desplazamiento hacia atrás.
 shoulderEase:
   title: Holgura de hombro
   description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
