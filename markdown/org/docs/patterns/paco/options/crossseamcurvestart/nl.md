@@ -1,17 +1,17 @@
 
-Controls the start of the cross seam curve.
+Bepaalt het begin van de kruisnaadcurve.
 
 
 <Note>
 
-This curve has an influence on the amount of fabric at your bum.
+Deze curve heeft een invloed op de hoeveelheid stof aan je bum.
 
-People with a flatter bum will get a better fit by increasing this, as the curve will start later,
-and this there will be less fabric pooling at the bum.
+Mensen met een bloemmantel zullen zich beter aanpassen door dit te verhogen. aangezien de curve later zal beginnen,
+en dit zal minder stoffenpooling bij de bum zijn.
 
-People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
+Mensen met een ronde bum willen dit misschien verlagen om wat meer (horizontaal) ruimte te creëren voor hun achter.
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crossseamcurvestart_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](paco_crossseamcurvestart_sample.svg "Effect van deze optie op het patroon")
