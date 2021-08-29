@@ -1,5 +1,5 @@
 
 ![Revers Beginn](lapelstart.svg)
 
-Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.
+Die Lage des Hotels ist ideal für eine Städtereise oder für eine Städtereise. Niedrigere Werte sind näher an der Taille, höhere Werte näher an der Brustlinie.
 
