@@ -1,4 +1,4 @@
-Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
+Benjamin is een vrij eenvoudig patroon, maar je opties bepalen wat uitgesneden moet worden. Hieronder zijn twee typische lay-outs.
 
 ## Zonder aanpaslintje
 
