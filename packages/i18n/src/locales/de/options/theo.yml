@@ -1,7 +1,7 @@
 ---
 wedge:
   title: Keil
-  description: Controls the length of the cross seam
+  description: Steuert die Länge der Kreuznaht
 legWidth:
   title: Beinweite
   description: Legt die Weite des Hosenbeins fest
