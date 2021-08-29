@@ -1,2 +1,2 @@
-This option will reduce the circumference of the skirt at the hem. Percentage of the seat measurement.
+Cette option réduira la circonférence de la jupe à l'ourlet. Pourcentage de la mesure du siège.
 
