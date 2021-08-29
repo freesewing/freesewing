@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your knees, which also determines the width of the trouser legs.
+Contrôle la quantité d'aisance à vos genoux, qui détermine également la largeur des jambes du pantalon.
