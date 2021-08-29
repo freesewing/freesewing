@@ -2,6 +2,6 @@
 title: Margen de costura
 ---
 
-This controls whether you want _seam allowance_ or not. And, if you want it, how much you want.
+Esto controla si quieres _permisos de costura_ o no. Y, si lo desean, cuánto quieren.
 
-This will probably be self-explanatory if you know what seam allowance is. In case you don't, check out [the seam allowance documentation](/docs/sewing/seam-allowance).
+Probablemente esto sea autoexplicativo si se sabe qué es el permiso de costura. En caso de que no lo haga, revisa [la documentación de permisos de costura](/docs/sewing/seam-allowance).
