@@ -1,21 +1,21 @@
 <Tip>
 
-##### A note on seam finishes
+##### Een notitie op de afwerkingen van de naad
 
-Before you get started, you'll want to decide on your method of seam finishing, or how you tidy
-up the raw seams along the legs of your pants to keep them from fraying. There are a lot of
-options for this. Common choices are serging the raw edges, or using French seams to encase
-the raw edges.
+voordat je begint, zal je beslissen over je manier van naad, afwerking, of hoe je de onbewerkte naden
+langs de benen van je broek opschont om te voorkomen dat ze rafelen. Er zijn hiervoor veel
+opties. Gemeenschappelijke keuzes naaien de onbewerkte randen of gebruiken Franse naden om
+de rauwe randen te omhelzen.
 
-For these instructions, we'll assume that you are using a serger for seam finishes, but we'll
-also provide alternatives. Other options for finishing seams include trimming them with pinking
-shears, stitching a zig-zag along the edge of the seam to keep it from fraying, or binding with
+Voor deze instructies, gaan we ervan uit dat je een overlock gebruikt voor naadafstand, maar we
+ook alternatieven aanbieden. Andere opties voor het afwerken van de naden zijn onder meer het knippen met een knijpende
+schaar, stik een zigzag langs de rand van de naad om te voorkomen dat het uitrafelt, of koppel met
 bias tape.
  </Tip>
 
 ## Stap 1: Maak de achterzakken
 
-Ga je paspelzakken gebruiken op de achterkant van je Paco-broek? Top! Dit is misschien wel het lastige stuk van de constructie, en we gaan het als eerste aanpakken. If not, you can skip ahead to the next step, preparing the front pockets.
+Ga je paspelzakken gebruiken op de achterkant van je Paco-broek? Top! Dit is misschien wel het lastige stuk van de constructie, en we gaan het als eerste aanpakken. Zo niet, kan je overslaan naar de volgende stap, de voorzakken voorbereiden.
 
 Maak de paspelzakken aan de achterkant van de broekdelen, inclusief de broekzak.
 
@@ -23,11 +23,11 @@ Maak de paspelzakken aan de achterkant van de broekdelen, inclusief de broekzak.
 
 ##### Paspelzakken
 
-Paspelzakken worden in verschillende kledingstukken gebruikt. That is why it's
-branched it off into its own documentation page.
+Paspelzakken worden in verschillende kledingstukken gebruikt. Daarom is het
+in zijn eigen documentatiepagina verdisconteerd.
 
-There’s both written documentation and a video series that shows you how to do it, so even if
-you’ve never made welt pockets before, you’ll be fine.
+Er is zowel geschreven documentatie als een videoserie die je laat zien hoe je het moet doen, dus zelfs als
+je nog nooit paspelzakken hebt gemaakt, ben je in orde.
 
 [Naar de documentatie voor paspelzakken (in het Engels)](https://freesewing.org/docs/sewing/double-welt-pockets/)
 
@@ -37,19 +37,19 @@ you’ve never made welt pockets before, you’ll be fine.
 Does it need a note to that effect? --->
 
 ## Stap 2: Maak de voorzakken
-Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. Daarvoor dient de flap bovenaan de buitennaad van de broekspijp.
+Jouw zakken worden geknipt van een voering materiaal, dat kan sparen op gewicht en bulk, maar betekent ook dat je ze een beetje in de zijnaad wilt verbergen, zodat de voering niet zichtbaar is. Daarvoor dient de flap bovenaan de buitennaad van de broekspijp.
 
-Als je een overlocker gebruikt, werk dan nu de gebogen randen van je zakstukken af. Then, serge along the long edges of the pocket flaps.
+Als je een overlocker gebruikt, werk dan nu de gebogen randen van je zakstukken af. Verstop vervolgens langs de lange randen van de zakvlakken.
 
 ![Voorzakken met overlockranden](step02.svg)
 
 ## Stap 3: Bevestig de zakken aan de broekspijpen
 
-With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Stik ze aan elkaar. Herhaal dit voor de andere pijp.
+Met [goede kanten op elkaar](https://freesewing.org/docs/sewing/good-sides-together/), leg de markeringen op de rand van het zakdeel met de uiteinden van de flap langs de buitenste naad van het voorpand. Stik ze aan elkaar. Herhaal dit voor de andere pijp.
 
 ![De zakken aan het voorpand vastgestikt](step03.svg)
 
-Doe nu hetzelfde met de achterpanden. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Stik ze aan elkaar.
+Doe nu hetzelfde met de achterpanden. Met de goede kanten op elkaar leg de markeringen op de rand van het zakdeel met de uiteindes van de flap langs de buitenste naad van het rugpand. Voordat je gaat naaien, zorg dat je linker beendeel en rugpand aan één zak zijn bevestigd, en je rechterbeen voorpand en achterkant zijn aan de ander bevestigd. Stik ze aan elkaar.
 
 Pers de naadwaarde van de steekzak en de broekspijp weg van de zak, tegen de broekspijp.
 
@@ -57,8 +57,8 @@ Pers de naadwaarde van de steekzak en de broekspijp weg van de zak, tegen de bro
 
 <Note>
 
-Optional: You can understitch here, a millimeter or two in from the seam on each side of the pocket
-bag, to secure the flaps and pocket bag all together the way you pressed them.
+Optioneel: Vanaf elke kant van de zak kun je hier een millimeter of twee tussendoorstikken,
+zak, onderstikken om de kleppen en het zakdeel helemaal samen te bevestigen op de manier waarop je ze hebt gedrukt.
 
 </Note>
 
@@ -68,7 +68,7 @@ bag, to secure the flaps and pocket bag all together the way you pressed them.
 
 Je hebt nu twee grote delen voor elke pijp, elk met een voor- en achterpand die aan elkaar vasthangen met een zak.
 
-Neem één van de pijpen en leg het voor- en achterpand op elkaar met de goede kant naar binnen. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
+Neem één van de pijpen en leg het voor- en achterpand op elkaar met de goede kant naar binnen. Leg de buitenste zijnaad, zodat de zijnaad van de broekspijpen overeenkomen, en de randen van het zakdeel staan op één lijn, met de goede kanten op elkaar.
 
 ## Stap 5: Stik de zijnaden
 
@@ -76,7 +76,7 @@ Stik twee afzonderlijke naden: eentje boven de zak en eentje eronder. Op die man
 
 Begin aan de bovenkant van de broekspijpen. Stik langs de zijnaad. Om te draaien aan de steekzak, stop je met de naald in de stof. Hef de persvoet op en draai het werk. Hier kan je eventueel een kortere steeklengte gebruiken om de hoek van de zakopening te verstevigen. Volg de zijnaad, draai opnieuw en stop aan de bovenkant van de zak.
 
-Nu ga je de onderkant van de steekzak sluiten en de rest van de zijnaad stikken. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Stik de hele zijkant van de broekspijp naar beneden.
+Nu ga je de onderkant van de steekzak sluiten en de rest van de zijnaad stikken. Begin aan de onderrand van het zakdeel en stik langs de onderkant van de zak, en beugel wanneer je de zijnaad van de broek bereikt. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Stik de hele zijkant van de broekspijp naar beneden.
 
 Herhaal dit voor de andere pijp.
 
@@ -86,255 +86,255 @@ Herhaal dit voor de andere pijp.
 
 De afwerking van deze naden vraagt een beetje extra aandacht, vooral rond de bovenkant van de zakken.
 
-It would be difficult to finish the top part of the side seam with a serger, so we'll use a zig-zag stitch. Starting at the top of the side seam, zig-zag stitch along the raw edge of the seam allowance, pivoting around the pocket opening. Continue the zig-zag stitch up the side of the pocket, unless you've serged your pockets already (in which case you can stop when you reach the pocket).
+Het is moeilijk om het bovenste deel van de zijnaad af te werken met een serger, dus we gebruiken een zigzagsteek. Te beginnen aan de bovenkant van de zijnaad, zigzagsteek langs de onbewerkte rand van de naad allowance, draai rond de zakopening. Doorgaan met de zigzagsteek langs de zijkant van de zak, tenzij je al je zakken hebt vastgezet (in dat geval kan je stoppen wanneer je de zak bereikt).
 
-De onderste opening van de steekzak is een lastig hoekje. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
+De onderste opening van de steekzak is een lastig hoekje. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. Je kan doorgaan met het afwerken van de zijnaad met een zigzagsteek helemaal naar beneden. Als alternatief kan je de zijnaad verstikken. Let op dat je de lijn van de zandstiksel een beetje langs de zak stopt.
 
 <Note>
 
-Maak de overlockstiksels zeker goed vast. They won't be caught in any other seams, so they risk
-unravelling if left unsecured.
+Maak de overlockstiksels zeker goed vast. Ze zullen niet worden betrapt in andere naden, dus ze riskeren
+onveilig te worden gelaten.
 
 </Note>
 
 Herhaal dit voor de andere pijp.
 
-![Zig-zag stitched side seams](step06.svg)
+![Zigzag gestikte zijnaden](step06.svg)
 
 Pers de zijnaden naar het voorpand.
 
 <Note>
 
 Dat lijkt misschien geen logische manier van werken. Veel naaipatronen voor broeken laten je de zijnaden naar het achterpand persen.
-Maar in dit geval heb je steekzakken in de naad verwerkt, en die moeten natuurlijk aan de voorkant van de broek zitten. Your
-pockets will be fighting your side seam if you press the seam to the back, so we'll press it all
-to the front. Het resultaat zal er mooier uitzien.
+Maar in dit geval heb je steekzakken in de naad verwerkt, en die moeten natuurlijk aan de voorkant van de broek zitten. Je
+zakken gaan met je zijnaad strijden als je de naad aan de achterkant strijkt. dus strijken we alles
+naar het voorpand. Het resultaat zal er mooier uitzien.
 
 </Note>
 
 <Note>
 
-The corners of a pocket opening are one of the most likely places to wear out or tear, especially
-if you use your pockets a lot. If you're worried about tearing at the corners of your pockets, or
-if your fabric is more delicate, you can reinforce the pocket openings with bar tacks along the seam
-line, just outside the pocket openings.
+De hoeken van een opening van de zak zijn een van de meest waarschijnlijke plekken om uit te dragen of tranen, vooral
+als je je zakken veel gebruikt. Als je je zorgen maakt over het scheuren aan de hoeken van je zakken, of
+als je stof gevoeliger is, je kan de zakopeningen versterken met staven langs de naad
+lijn, net buiten de zakopeningen.
 
 </Note>
 
-## Step 7: Anchor pocket bag to waist
+## Stap 7: Ankerzakdeel naar taille
 
-The pockets in Paco are anchored at the waist. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
+De zakken in het Paco zijn geankerd aan de taille. Dit betekent dat je dingen in je zakken kan stoppen zonder dat ze onzichtbaar worden wat aan je broekspijp hangt.
 
-To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Sew a line of basting stitches inside your seam allowance to hold the pocket in place.
+Om elke zak te verankeren, leg je de bovenkant van de zak gelijk met het markering langs de taillelijn van je patroon. Stik een rand van driegsteek binnen je naadwaarde om de zak vast te houden.
 
-![Anchored pocket bags showing basted seam](step07.svg)
+![Verankerde zakdelen met gebakken naad](step07.svg)
 
-## Step 8: Sew and finish the inseams
+## Stap 8: Stik en werk de innaden af
 
-Align the inseams with good sides together, then sew up the inseams. Finish the seams the same way you finished the side seams. Press inseams to the back.
+Leg de innaden gelijk met de goede kanten op elkaar, en stik de innaden dan op. Werk de naden op dezelfde manier af je hebt de zijnaden afgemaakt. Strijk de binnenste naar de achterkant.
 
-![Sewn up inseam](step08.svg)
+![Naai de binnennaad aan](step08.svg)
 
-## Step 9: Sew and finish crotch seam
+## Stap 9: Stik en voltooi de kruisnaad
 
-To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Sew and finish the crotch seam.
+Om de individuele broekspijpen te bevestigen, draai een goede kant om (het maakt niet uit welke broekspijppen) dan plaats het in de andere broekspijp, met de goede kanten op elkaar. Je zou nu moeten laten zien hoe er maar één broekspijp is, met verkeerde kanten zichtbaar. Leg de middenvoorpand, de achterste en de naden van elke broekspijp gelijk en speld dan langs de lengte van de kruisnaad. Stik en werk de kruisnaad af.
 
 <Note>
 
-If you sew from center front to center back, it's easier to keep your inseam seam allowances
-pressed to the back as they feed through the machine.
+Als je van het midden naar het midden naait Het is makkelijker om je binnennaadwaarde
+aan de achterkant te houden terwijl ze via de machine stromen.
 
 </Note>
 
-![Crotch seam](step09.svg)
+![Kruisnaad](step09.svg)
 
-## Step 10: Place eyelets for the draw string (optional)
-Markeer het midden van de lengte van je tailleband. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
+## Stap 10: Plaats veterzakken voor de tekenreeks (optioneel)
+Markeer het midden van de lengte van je tailleband. Plooi één van je tailleband stukken dubbel, en markeer het midden van de breedte (neem de naadwaarde niet in de rekening).
 
-Installeer twee vetergaten links en rechts van deze markering. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
+Installeer twee vetergaten links en rechts van deze markering. Omdat je Paco pants hebben elastiek in de tailleband, ook is dit een mooi detail, maar niet nodig.
 
 <Tip>
 
-##### It’s best to add some reinforcement
+##### Het is het beste om wat versterking toe te voegen
 
-If you've chosen a fabric that is slippery, drapey, or thin, you might want to add some reinforcement
-behind these eyelets. A bit of interfacing or a leftover piece of denim will do just fine.
+Als je een stof gekozen hebt die glad is, droog, of dun, je wilt misschien wat versterking
+toevoegen achter deze wenkels. Een beetje tussenvoering of een overblijfsel van denim doet het goed.
 
 </Tip>
 
-![Waistband with eyelets](step10.svg)
+![Tailleband met vetergaatjes](step10.svg)
 
-## Step 11: Prepare the waist elastic
-There’s no magic formula for the length of your elastic. Dus wikkel het rond je taille en trek het aan tot je vindt dat het goed past. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
+## Stap 11: Bereid de taille elastiek voor
+Er is geen magische formule voor de lengte van je elastiek. Dus wikkel het rond je taille en trek het aan tot je vindt dat het goed past. Paco is geknipt om aan de hoge heupen te zitten, dus zorg ervoor dat je elastiek lang genoeg is om comfortabel aan de hoge heupen te zitten.
 
 Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar.
 
-![Elastic joined with a series of zig-zag stitches](step11.svg)
+![Elastiek samengevoegd met een reeks zigzagstekkers](step11.svg)
 
 ## Stap 12: Naai de tailleband
-Place the two waistband pieces good sides together, and align the short edges. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Leg de twee goede kanten van de tailleband op elkaar en leg de korte randen samen. Stik de korte randen samen, en strijk dan open. Deze zitten in de tailleband, Dus je hoeft de randen van deze naden niet af te werken tenzij je stof bijzonder waarschijnlijk frams wordt.
 
-![Joined waistband pieces](step12.svg)
+![Deelgenomen tailleband stukjes](step12.svg)
 
-Vouw de tailleband dubbel in de lengte met de goede kanten naar buiten. Pers. This fold will be the top of your waistband.
+Vouw de tailleband dubbel in de lengte met de goede kanten naar buiten. Pers. Deze vouw is de bovenkant van je tailleband.
 
 ## Stap 13: Bevestig de tailleband
 
-Je kan de tailleband op twee manieren vastmaken. One is a bit simpler, but leaves an exposed seam on the inside. De andere is wat lastiger, maar verbergt wel alle rafelranden aan de binnenkant van de tailleband.
+Je kan de tailleband op twee manieren vastmaken. Eén is een beetje eenvoudiger, maar laat een blootgestelde naad aan de binnenkant achter. De andere is wat lastiger, maar verbergt wel alle rafelranden aan de binnenkant van de tailleband.
 
 ### De eenvoudige methode
-Houd je tailleband dubbelgevouwen en schuif de elastiek erin. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
+Houd je tailleband dubbelgevouwen en schuif de elastiek erin. Leg de plek waar het elastiek zit aan de achterkant van de tailleband (tegenover de ooglid).
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Speld vast.
-
-<Tip>
-
-##### Mind your eyelets
-
-If you’ve made eyelets in your waistband, double check that they are placed towards the outside,
-not the inside of your waistband.
-
-</Tip>
-
-Next, align the center backs and pin in place, adding additional pins around the waistband as needed.
-
-Sew the waistband to the pants, as close to the the elastic as you can, but don’t sew into the elastic.
-
-![Waistband sewn with simple method](step13.svg)
-
-It’s fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
-
-Remove any basting stitches from the tops of the pocket bags.
-
-Finish the seam with a serger or other method.
-
-### The enclosed seam method
-
-Open the waistband. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
-
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Speld vast.
+Vind het midden van de voorkant van je tailleband (makkelijk als er oogdieren zijn, zo niet dubbel plooien), en leg dat gelijk met de middennaad van je broek. Zorg ervoor dat je tailleband buiten van je broek ligt, met de goede kanten op elkaar. Speld vast.
 
 <Tip>
 
-##### Mind your eyelets
-To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
-waistband, above the fold, for now.
+##### Knip je wandelaars
+
+Als je vetergaatjes in je tailleband hebt gemaakt, dubbele controle of ze naar buiten worden geplaatst,
+niet de binnenkant van je tailleband.
 
 </Tip>
 
-![Open waistband sewn to pants](step13b.svg)
+Leg vervolgens de middenruggen en speld samen en voeg extra pinnen om de tailleband toe indien nodig.
 
-Next, align the center back of your waistband with the center back seam. Speld vast. Then, add additional pins around the waistband as needed.
+Stik de tailleband aan de spelers, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
 
-Sew the waistband to the pants.
+![Besteed tailleband met eenvoudige methode](step13.svg)
 
-Press the waistband up. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
+Het is prima om de eerste keer niet te dicht te naaien, en zodra je elastiek is bevestigd en ingesloten maak een tweede ronde om wat strakker te naaien.
 
-Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
+Verwijder alle driegsteek aan de bovenkant van de zakdelen.
+
+Werk de naad af met een overlock of een andere methode.
+
+### De naadmethode in de kast
+
+Open de tailleband. Je kunt nog steeds de lengte van de vouw zien, maar je werkt met elke kant van de tailleband individueel.
+
+Vind het midden van de voorkant van je tailleband (makkelijk als er oogdieren zijn, zo niet dubbel plooien), en leg dat gelijk aan de middennaad van je broek. Zorg ervoor dat je tailleband zich buiten je broekzak bevindt, met de goede kanten op elkaar. Speld vast.
+
+<Tip>
+
+##### Breng je veters
+Om er zeker van te zijn dat je oogdieren aan de buitenkant zullen verschijnen, zorg ervoor dat ze voor dit moment dichter bij de bovenkant van je
+tailleband staan, boven de vouw.
+
+</Tip>
+
+![Open het stikken van de tailleband aan broeken](step13b.svg)
+
+Leg vervolgens de middenrug van de tailleband gelijk met de middenmiddenachternaad. Speld vast. Voeg vervolgens extra spelden rond de tailleband toe indien nodig.
+
+Stik de tailleband aan de broek.
+
+Strijk de tailleband omhoog. Strijk de naadwaarde aan de andere kant van de tailleband in, met de vouw langs het midden van de tailleband.
+
+Kort de tailleband, draai de helft van de tailleband naar binnen. Speld zodat de naadwaarde van de aan de binnenkant net onder de naad ligt die de tailleband aan de broekspijpen verbindt en vast speld rond de tailleband. Stik van buitenaf in de sloot door, terwijl je de tailleband van de binnenste vat.
 
 <!--- Probably put a note here about stitching in the ditch? --->
 
-![Waistband sewn with enclosed seams](step13c.svg)
+![Naagtje tailleband met naden](step13c.svg)
 
-## Step 14: Prepare the cuff elastic
+## Stap 14: Bereid de manchet elastisch voor
 
-As you did with the waistband elastic, wrap the elastic for your cuff around your ankle and pull it tight until you get a good fit.
+Zoals je deed met de tailleband elastiek, pak het elastiek voor je manchet rond en pak hem op totdat je een goede pasvorm hebt.
 
-Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar. Repeat for the other cuff elastic.
+Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar. Herhaal voor de andere manchet elastisch.
 
-![Elastic joined with zig-zag stitching](step14.svg)
+![Elastiek meegerekend met zigzagsteek](step14.svg)
 
-## Step 15: Join the cuffs
-Fold each cuff with good sides together, aligning the short edges. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+## Stap 15: Bevestig de manchetten
+Plooi elke manchet met de goede kanten op elkaar, leg de korte randen samen. Stik voor elke manchet de korte randen samen, en strijk dan open. Deze komen in de manchet, Dus je hoeft de randen van van deze naden niet af te werken, tenzij je stof bijzonder waarschijnlijk frams wordt.
 
-![Joined cuffs](step15.svg)
+![Gekoppelde manchetten](step15.svg)
 
-Fold each cuff double along the length, with good sides out, and press. This fold will be the bottom of your cuffs.
+Plooi elke manchet dubbel langs de lengte, met de goede kanten naar buiten, en strijk. Deze vouw is de onderste van je manchetten.
 
 ## Stap 16: Bevestig de manchetten
 
-You will attach your cuffs the same way that you attached the waistband. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
+Je zal je manchetten op dezelfde manier bevestigen als je de tailleband bevestigd hebt. Zoals met de tailleband, zijn er twee opties - een eenvoudigere keuze en een keuze zonder blootgestelde naden aan de binnenzijde.
 
 <Note>
 
- If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
- sleeve cuffs), this will make sewing the cuffs easier.
+ Als je naaimachine een afneembaar bed heeft (meestal verwijderd om de "gratis arm" te tonen voor het naaien van
+ mouw manchets), Dit maakt het naaien van de manchetten eenvoudiger.
 
  </Note>
 
 ### De eenvoudige methode
 
-Keep your cuffs folded double, and place the elastic inside.
+Houd je manchetten dubbel, en plaats het elastiek erin.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Leg de naad in de manchet gelijk met de innaad van de broek. Zorg ervoor dat je manchet buiten zit met de goede kanten op elkaar. Speld de rest van de weg rond de manchet vast.
 
 <Tip>
 
-##### Pinning the cuffs
+##### De manchetten spelden
 
-The elastic will make the cuffs more difficult to pin. To make sure that your cuffs are pinned evenly
-to the pants, place your second pin on the opposite side of the leg opening from the first. You can
-stretch the elastic to make sure that everything is lined up smoothly, then place your next pins halfway
-between the first two. Continue this way, pinning halfway between other pins, until you feel confident
-there are enough.
+De elastiek zal de manchetten moeilijker vastmaken. Om zeker te zijn dat je manchetten gelijk vastzitten
+aan de pants, plaats je tweede speld vanaf de eerste kant van de opening van de broekspijp. Je kunt
+het elastiek rekken om ervoor te zorgen dat alles soepel opgaat Plaats dan je volgende spelden halverwege
+tussen de eerste twee. Ga zo door! Speld halverwege andere spullen, totdat je er vertrouwen in hebt
+er genoeg zijn.
 
 </Tip>
 
-Sew the cuff to the pants opening, as close to the the elastic as you can, but don’t sew into the elastic.
+Stik de manchet aan de broek opening, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
 
-![Cuffs sewn with simple method](step16.svg)
+![Snaai manchetten met eenvoudige methode](step16.svg)
 
-Finish the seam with a serger or other method.
+Werk de naad af met een overlock of een andere methode.
 
-### The enclosed seam method
+### De naadmethode in de kast
 
-Open the cuff. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
+Open de manchet. Je kunt nog steeds de lengte van de vouw zien, maar je werkt met elke kant van de manchet individueel.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Leg de naad in de manchet gelijk met de innaad van de broek. Zorg dat je manchet buiten je broekzak zit, met de goede kanten op elkaar. Speld de rest van de weg rond de manchet vast.
 
-Sew the cuff to the pants.
+Stik de manchet aan de broek.
 
-![Sewing the open cuffs to the pants](step16b.svg)
+![Stik de open manchetten aan de broek](step16b.svg)
 
-Press the cuff away from the pants. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
+Strijk de manchet van de broek weg. Strijk de naadwaarde op de andere kant van de manchet in en houd de plooi langs het midden van de manchet.
 
-Refold the cuff, turning half the cuff to the inside. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
+Kort de manchet, draai de helft van de manchet naar binnen. Speld de naadwaarde aan de binnenkant net voorbij de naad aan de manchet aan de broekspijpen en speld vast rond de manchet. Van buitenaf, stik in de sloot door, pak de binnenmanchet terwijl je onderweg bent.
 
-![Cuffs sewn with enclosed seams](step16c.svg)
+![Manchetten naad met naden in de kast](step16c.svg)
 
-## Step 17: Stitching the cuffs and waistband (optional)
+## Stap 17: Stik de manchetten en tailleband (optioneel)
 
-If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
+Als je een breder manchet hebt, wil je misschien een horizontale lijn halverwege de manchet stikken. Dit zorgt ervoor dat je elastiek op zijn plaats blijft en voorkomt dat je vouwt of draait. Zorg ervoor dat je het elastische gelijkmatig uitrekt terwijl je naait, zodat het de stof gelijk verzamelt. (Als je stikt zonder de elastiek uit te rekken, riskeer je forse gathers en een been opening te smal om je voet door te krijgen.)
 
 <!--- You could also do a zig-zag stitch here, but I think straight probably looks nicer? --->
 
-If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
+Als je het uiterlijk leuk vindt, kun je ook meer dan één lijn stikken, Evenwichtig tussen de bovenkant en de onderkant van de manchet.
 
-You can do the same for the waistband.
+Je kunt hetzelfde doen voor de tailleband.
 
-![Waistband and cuffs with decorative stitching](step17.svg)
-
-<Note>
-
-If you put in eyelets for a drawstring, sew a line of stitches above the eyelets and a separate line
-below the eyelets, leaving a channel wide enough for your drawstring.
-
-</Note>
-
-## Step 18: Thread a draw string around the waist (optional)
-If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
+![Waistband en manchetten met decoratieve stiksel](step17.svg)
 
 <Note>
 
-There are tools to make this task easier, but one that almost everyone has is a simple safety pin.
-Pin the safety pin to one end of your drawstring, then push it through the channel. The safety pin
-will be easier to maneuver through the fabric, and it will pull the drawstring along with it.
+Als je wenkbrauwen voor een koordje vaststikt, stik je een stiksel van stiksels boven de wandelgangen en een aparte lijn
+onder de ogen verlaat een kanaal breed genoeg voor je tekenreeks.
 
 </Note>
 
-![Paco threaded with drawstring](step18.svg)
+## Stap 18: Thread een tekenreeks rond de taille (optioneel)
+Als je vezels in je tailleband stopt, draag dan een trekkoord door één wenkelet, rond de tailleband en uit het andere oogsel.
 
-## Step 19: Enjoy your Paco pants!
-You did it! Way to go!
+<Note>
+
+Er zijn middelen om deze taak te vergemakkelijken, maar een die bijna iedereen heeft, is een eenvoudige veiligheidspanne.
+Speld de veiligheidspeld vast aan één einde van je tekenreeks, en duwt deze vervolgens door het kanaal. De veiligheidspeld
+is makkelijker te maneuveren door de stof, en het trekt de tekenreeks ermee op.
+
+</Note>
+
+![Paco draad met tekenreeks](step18.svg)
+
+## Stap 19: Geniet van je Pacotaarns!
+Het is je gelukt! Hoe gaat het!
 
 <!--- Maybe we want to put a fun gif here? --->
