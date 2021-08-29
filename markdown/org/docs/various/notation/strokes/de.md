@@ -1,14 +1,14 @@
 ---
-title: Line widths and strokes
+title: Linienbreite und Striche
 ---
 
-Designers can, if they so choose, override the default line widths or set a specific stroke. They might do that to add additional info, like where to fold a pattern, or the outline of where a pocket would go.
+Die Designer können, wenn sie dies wünschen, die Standardlinienbreite überschreiben oder einen bestimmten Strich setzen. Sie könnten dies tun, um zusätzliche Informationen hinzuzufügen, wie zum Beispiel wo ein Muster geklappt werden soll, oder die Umrisse, wohin eine Tasche gehen würde.
 
-For reference, here are the different available line widths:
+Hier sind die verschiedenen verfügbaren Linienbreiten:
 
 <Legend part="lineWidths" caption="The different line widths" >
 
-And these are the different stroke styles:
+Und das sind die verschiedenen Strichstile:
 
 <Legend part="lineStrokes" caption="The different line strokes" >
 
