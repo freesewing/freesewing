@@ -1,5 +1,5 @@
 ---
-title: Other privacy-related topics
+title: Andere privacy-gerelateerde onderwerpen
 ---
 
 ##### Voor de duidelijkheid
@@ -25,5 +25,5 @@ Tot nu toe hebben we nog nooit een verzoek gekregen van eender welke wetshandhav
 
 ##### Gebruik door minderjarigen jonger dan 16
 
-For legal reasons, you need to be at least 16 years old to use freesewing.
+Om juridische redenen moet je ten minste 16 jaar oud zijn om freesewing te gebruiken.
 
