@@ -1,7 +1,7 @@
-![The across back option on Brian](./acrossbackfactor.svg)
+![De optie voor de rug over Brian](./acrossbackfactor.svg)
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Geeft controle over de breedte van je rug als een factor van je schouder tot schouder maat
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_acrossbackfactor_sample.svg "Effect van deze optie op het patroon")
