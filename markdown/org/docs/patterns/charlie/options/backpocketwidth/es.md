@@ -1,2 +1,2 @@
 
-Constrols the width of the back pockets.
+Construye la anchura de los bolsillos traseros.
