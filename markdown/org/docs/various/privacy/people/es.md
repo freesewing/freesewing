@@ -1,31 +1,31 @@
 ---
-title: How we use your people data
+title: Cómo usamos los datos de tus personas
 order: 40
 ---
 
-##### What personal data do we store?
+##### ¿Qué datos personales almacenamos?
 
-- Body measurements
-- Whether the model has breasts or not
-- Optional: An avatar for the model
+- Mediciones del cuerpo
+- Si el modelo tiene senos o no
+- Opcional: un avatar para el modelo
 
 ##### ¿Por qué la necesitamos?
 
-- We need the body measurements to draft made-to-measure sewing patterns
-- We use the information about whether a model has breasts to only show relevant measurements when configuring the model
-- The model avatar only serves to help you differentiate between your different models
+- Necesitamos las mediciones del cuerpo para elaborar patrones de costura hechos a medida
+- Utilizamos la información sobre si un modelo tiene pechos para mostrar sólo mediciones relevantes al configurar el modelo
+- El avatar del modelo sólo sirve para ayudarte a diferenciar entre tus diferentes modelos
 
 ##### ¿Cuánto tiempo lo mantenemos?
 
-- We keep model data up to 12 months after your last login, or until you remove it.
+- Mantenemos los datos del modelo hasta 12 meses después de su último inicio de sesión, o hasta que lo elimine.
 
-##### Do we share it?
+##### ¿Lo compartimos?
 
-- We never share personal model data
-- We publish an open data set of measurements, containing fully anonymized data.
+- Nunca compartimos datos personales del modelo
+- Publicamos un conjunto abierto de mediciones, que contiene datos totalmente anónimos.
 
 
 <Note>
-This data is stored for anybody with an account on our website which contains one or more people.
+Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio web que contenga una o más personas.
 </Note>
 
