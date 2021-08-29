@@ -1,10 +1,10 @@
 ![Style de bracelet](cuffstyle.svg)
 
-What style of cuff do you want?
+Quel style de manche voulez-vous ?
 
  - Poignet classique rond
- - Chamfer barrel cuff
+ - Emmanchure de tonneau de chambre
  - Poignet classique carré
  - Poignet mousquetaire rond
- - Chamfer French cuff
+ - Emmanchure française de Chamfer
  - Poignet mousquetaire carré
