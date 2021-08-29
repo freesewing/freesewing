@@ -1,49 +1,49 @@
 ---
 backPocketHorizontalPlacement:
-  title: Back pocket horizontal placement
-  description: Controls the horizontal placement of the back pocket
+  title: Colocación horizontal del bolsillo trasero
+  description: Controla la posición horizontal del bolsillo trasero
 backPocketVerticalPlacement:
-  title: Back pocket vertical placement
-  description: Controls the vertical placement of the back pocket
+  title: Colocación vertical del bolsillo trasero
+  description: Controla la posición vertical del bolsillo trasero
 backPocketWidth:
-  title: Back pocket width
-  description: Controls the width of the back pocket
+  title: Ancho del bolsillo trasero
+  description: Controla el ancho del bolsillo trasero
 backPocketDepth:
-  title: Back pocket depth
-  description: Controls the depth of the back pocket
+  title: Profundidad del bolsillo trasero
+  description: Controla la profundidad del bolsillo trasero
 frontPocketSlantDepth:
-  title: Front pocket slant depth
-  description: Controls the depth of the (front) pocket slant
+  title: Profundidad delantera de bolsillo
+  description: Controla la profundidad de la capa delantera del bolsillo
 frontPocketSlantWidth:
-  title: Front pocket slant width
-  description: Controls the width of the (front) pocket slant
+  title: Anchura del bolsillo delantero
+  description: Controla el ancho de la franja del bolsillo (delante)
 frontPocketSlantRound:
-  title: Front pocket slant round
-  description: Controls how far from the end of the slant we start rounding into the outseam
+  title: Pócket delantero slant round
+  description: Controla qué tan lejos del final del esclavizado empezamos a redondear hacia el exterior
 frontPocketSlantBend:
-  title: Front pocket slant bend
-  description: Controls the radius by which we round the pocket slant into the outseam
+  title: Pócket delantero inclinado
+  description: Controla el radio por el cual redondeamos el bolsillo hacia el exterior
 frontPocketWidth:
   title: Ancho bolsillo frontal
-  description: Controls the width of the front pocket bag
+  description: Controla el ancho de la bolsa de bolsillo frontal
 frontPocketDepth:
   title: Profundidad de bolsillo frontal
-  description: Controls the depth of the front pocket bag
+  description: Controla la profundidad de la bolsa de bolsillo frontal
 frontPocketFacing:
-  title: Front pocket facing
-  description: Controls how far the pocket facing extends into the pocket bag
+  title: Pócket frontal
+  description: Controla hasta qué punto la cara del bolsillo se extiende a la bolsa de bolsillo
 beltLoops:
-  title: Belt loops
-  description: Controls the amount of belt loops
+  title: Bucles de cinturón
+  description: Controla la cantidad de bucles de cinta
 flyCurve:
-  title: Fly curve
-  description: Controls the curvature of the fly J-seam
+  title: Curva de vuelo
+  description: Controla la curvatura de la mosca J-costura
 flyLength:
-  title: Fly length
-  description: Controls the length of the fly
+  title: Longitud del vuelo
+  description: Controla la longitud de la mosca
 flyWidth:
   title: Fly width
-  description: Controls how far the J-seam of offset from the fly edge
+  description: Controla hasta qué punto la costura J del desplazamiento del borde de la mosca
 waistbandCurve:
-  title: Waistband Curve
-  description: Controls how curved the waistband is.
+  title: Curva de Waistband
+  description: Controla lo curvada que es la banda de cintura.
