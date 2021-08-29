@@ -22,17 +22,17 @@ Le tricot ne s'effiloche pas, vous pouvez donc simplement le plier une fois et l
 
 <Note>
 
-##### About knit binding
+##### A propos de la liaison knit
 
-If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
+Si vous êtes nouveau sur [knit binding](/docs/sewing/knit-binding), vous pouvez lire [cette page sur le sujet](/docs/sewing/knit-binding).
 
-###### Repeat steps 3 and 4 for both armholes and the neck opening
+###### Répéter les étapes 3 et 4 pour les armures et l'ouverture du cou
 
-The procedure outlined below applies to both of the armholes as well as the neck opening. En d'autres termes, vous devrez le faire trois fois.
+La procédure décrite ci-dessous s'applique à la fois aux armures et à l'encolure. En d'autres termes, vous devrez le faire trois fois.
 
-###### Start with the simplest opening
+###### Commencez par l'ouverture la plus simple
 
-I would advise you to start with whatever opening has the most uniform curvature. Par défaut, ce sont les trous de bras, mais si vous avez changé les options de patron (pensez au dos nageur) alors cela pourrait ne pas être le cas.
+Je vous conseille de commencer par n'importe quelle ouverture ayant la courbure la plus uniforme. Par défaut, ce sont les trous de bras, mais si vous avez changé les options de patron (pensez au dos nageur) alors cela pourrait ne pas être le cas.
 
 Dans les deux cas, moins vous avez d'arrondi "serré", plus il sera facile de le faire. Alors commencez avec cela pour vous échauffer avant de faire les arrondis plus délicats.
 
@@ -53,7 +53,7 @@ C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de p
 La première chose à faire est de décider où nous allons démarrer/arrêter notre biais. Voici ce que je suggère :
 
   - Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
-  - Pour l'encolure : à l'arrière, au milieu. You might want to mark this with a pin
+  - Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
 
 ### Placer (démarrer) votre biais
 
@@ -74,7 +74,7 @@ Nous allons coudre à 1,5 cm du bord. Soyez donc prudent car ce n'est pas la mar
 <Tip>
 
 Le moyen facile de garder cette distance de 1,5 cm est d'utiliser une jauge de couture. 
-Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle. 
+Ou faites ce que je fais, placez un ruban de marquage sur votre machine à coudre et marquez une ligne sur lui à 1,5 cm de votre aiguille. 
 Ensuite, il vous suffit de garder le bord de votre tissu aligné sur cette ligne.
 
 </Tip>
@@ -101,13 +101,13 @@ Avec environ 6cm de marge avant de terminer notre cercle, il est temps de coudre
 
 Prenez l'un des bords et étirez-le le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture.
 
-Mark the binding where it reaches the start point. Faites la même chose pour l'autre extrémité.
+Marquer la liaison où elle atteint le point de départ. Faites la même chose pour l'autre extrémité.
 
 ### Assembler les extrémités du biais
 
 ![Assembler les extrémités du biais](step03g.png)
 
-Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Coudre les extrémités sur les repères.
+Pliez votre t-shirt de quelque manière que ce soit, il vous sera plus facile de placer les deux extrémités de reliure avec de bons côtés, alignant les marques. Coudre les extrémités sur les repères.
 
 > 6 cm n'est pas beaucoup, mais ça devrait suffire pour placer les deux bords confortablement sous votre machine pour les coudre.
 
@@ -144,14 +144,14 @@ Une fois de plus, vous devrez étirer un peu votre biais en faisant cela. Mais c
 
 <Note>
 
-##### Beware of the uneven feed
-As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward. 
+##### Méfiez-vous du flux inégal
+Lorsque vous alimentez votre liaison à travers votre machine à coudre, les chiens d'alimentation tirent la couche inférieure (arrière de votre liaison) vers l'avant. 
 
 Dans un monde parfait, toutes les épaisseurs suivent sans problème. 
 Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu. 
 Cela fait que votre biais ne se plie pas bien autour du bord du tissu, mais fait des plis disgracieux.
 
-So watch out for this, and if you see it happening, stretch the under-layer a bit extra to compensate.
+Veillez donc à ce que cela se produise, et si vous le voyez, étirez un peu plus la sous-couche pour compenser.
 
 </Note>
 
@@ -159,7 +159,7 @@ So watch out for this, and if you see it happening, stretch the under-layer a bi
 
 ![Couper l'excédent de biais tout le long de la couture à l'intérieur](step05.png)
 
-On the inside of your A-shirt, trim back the knit binding against your seam to finish up.
+À l'intérieur de votre chemise A, coupez le tricot contre votre couture pour finir.
 
 <Note>
 
