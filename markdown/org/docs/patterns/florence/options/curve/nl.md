@@ -1,3 +1,3 @@
-![Curve option](./curve.svg)
+![Kromme optie](./curve.svg)
 
-Controls the curve of the upper edge of your face mask.
+Bepaalt de curve van de bovenrand van je gezichtsmasker.
