@@ -1,16 +1,16 @@
 ---
-title: What are those symbols next to my measurements?
+title: Quels sont ces symboles à côté de mes mesures?
 ---
 
-You might have noticed these kind of icons next to your measurements:
+Vous avez peut-être remarqué ce type d'icônes à côté de vos mesures :
 <Gauge val={0} theme='light' />
 
-The value they represent shows how far the measurement deviates from the proportions we test our designs with:
+La valeur qu'ils représentent montre à quel point la mesure s'écarte des proportions avec lesquelles nous testons nos conceptions :
 
 <table spaces-before="0">
   <tr>
     <th>
-      Icon
+      Icône
     </th>
     
     <th>
@@ -24,7 +24,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">significantly lower</strong>
+      La valeur est <strong x-id="1">significativement inférieure à</strong>
     </td>
   </tr>
   
@@ -34,7 +34,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a good bit lower</strong>
+      La valeur est <strong x-id="1">un peu inférieure à</strong>
     </td>
   </tr>
   
@@ -44,7 +44,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a bit lower</strong>
+      La valeur est <strong x-id="1">un peu inférieure à</strong>
     </td>
   </tr>
   
@@ -54,7 +54,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">very close</strong>
+      La valeur est <strong x-id="1">très proche</strong>
     </td>
   </tr>
   
@@ -64,7 +64,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">very close</strong>
+      La valeur est <strong x-id="1">très proche</strong>
     </td>
   </tr>
   
@@ -74,7 +74,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a bit higher</strong>
+      La valeur est <strong x-id="1">un peu plus élevée</strong>
     </td>
   </tr>
   
@@ -84,7 +84,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a good bit higher</strong>
+      La valeur est <strong x-id="1">un peu plus élevée</strong>
     </td>
   </tr>
   
@@ -94,26 +94,26 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">significantly higher</strong>
+      La valeur est <strong x-id="1">considérablement supérieure</strong>
     </td>
   </tr>
 </table>
 
 
-These indicators serve a dual purpose:
+Ces indicateurs ont un double objectif :
 
- - Help you spot mistakes in your measurements (you know best where your outliers are)
- - Help you anticipate where our software might struggle to come up with good results
+ - Aidez vous à repérer des erreurs dans vos mesures (vous savez mieux où se trouvent vos aberrants)
+ - Aidez vous à anticiper où notre logiciel pourrait avoir du mal à trouver de bons résultats
 
 <Note>
 
-##### There are no good or bad measurements
+##### Il n'y a pas de bonnes ou de mauvaises mesures
 
-Designing patterns for a variety of shapes is hard work.
+La conception de patrons pour une variété de formes est un travail difficile.
 
-Unlike other pattern companies, we don't limit ourselves to a particular size range.
-All people and all bodies are welcome here.
+Contrairement aux autres sociétés de patron, nous ne nous limitons pas à une gamme de tailles particulières.
+Toutes les personnes et tous les organes sont les bienvenus ici.
 
-If it turns out it doesn't work for you, please [let us know](https://discord.freesewing.org/) and we'll try to do better.
+S'il s'avère que cela ne fonctionne pas pour vous, veuillez [nous le faire savoir](https://discord.freesewing.org/) et nous essaierons de faire mieux.
 
 </Note>
