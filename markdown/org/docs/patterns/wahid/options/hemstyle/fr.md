@@ -1,3 +1,3 @@
 ![Style d'ourlet](hemstyle.svg)
 
-Do you want a classic hemline, or a rounded hemline?
+Vous voulez un ourlet classique ou un ourlet arrondi ?
