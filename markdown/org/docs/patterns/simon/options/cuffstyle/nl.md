@@ -3,8 +3,8 @@
 Wat voor manchet wil je?
 
  - Afgeronde klassieke manchet
- - Chamfer barrel cuff
+ - Afschuining klassieke manchet
  - Rechte klassieke manchet
  - Afgeronde Franse manchet
- - Chamfer French cuff
+ - Afschuining Franse manchet
  - Rechte Franse manchet
