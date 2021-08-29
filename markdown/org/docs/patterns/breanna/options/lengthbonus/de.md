@@ -1,5 +1,5 @@
-![The length bonus option on Brian](./lengthbonus.svg)
+![Die Längen-Bonus-Option auf Brian](./lengthbonus.svg)
 
-This option controls how far the block extend below your hips.
+Diese Option bestimmt, wie weit sich der Block unterhalb der Hüfte erstreckt.
 
-> Note that by default this block is as long as your hip line, which is almost certainly too short for the final garment.
+> Beachten Sie, dass dieser Block standardmäßig so lange ist, wie Ihre Hüftlinie, die fast sicher zu kurz für das letzte Kleidungsstück ist.
