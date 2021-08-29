@@ -1,29 +1,29 @@
 ---
-title: Holmes Cutting
+title: Holmes Knippen
 ---
 
-The **crown** pattern piece needs to be cut on the fold to create a whole piece.
+Het **kroon** patroonstuk moet geknipt worden aan de stofvouw om een heel stuk te maken.
 
-### Materials
+### Materialen
  - **Buitenstof**
-   - Cut the amount of **crowns** you selected in the pattern options
-   - Cut **4 ear** parts or Cut **2 ear** from main and lining.
-   - Cut **4 visor** parts
+   - Knip het aantal **kronen** dat je geselecteerd hebt in de patroonopties
+   - Knip **4 oor** delen of knip **2 oor** van het hoofdstuk en de voering.
+   - Knip **4 bezoeker** onderdelen
  - **Voering**
-   - Cut the amount of **crowns** you selected in the pattern options
+   - Knip het aantal **kronen** dat je geselecteerd hebt in de patroonopties
  - **Visor Insert Material**
-   - Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
+   - Knip **2 bezoekersinvoegingen**. Gebruik je patroondeel zonder naadwaarde.
 
-### Optional Fabric Ties
-If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can ***Edgestitch*** or ***Topstitch*** the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
+### Optionele Stoffen
+Als je geen lint wilt gebruiken voor je dassen kan je ze uit stof maken. Knip 4 kruisgraan strips van een 1" (2. cm) of breedte van jouw keuze + naadwaarde breed en stik twee buizen die één van de korte kanten open laten om te draaien. Knip de hoeken en naad bij. Draai een pers uit. Indien gewenst kan je ***Sektch*** of ***Sierstiksel*** de buizen om te voorkomen dat de stof verschuift. De rauwe rand van de buizen kan dan verborgen worden in de oordnaad bij het maken van de oorflakken.
 
 <Note>
 
-It is recommended to draft the pattern nett and use the pattern to trace the seam lines onto fabric and add the seam allowance on the fabric rather than the pattern. This to allow for a more precise sew which is needed for a hat. Recommended seam allowance 1/4" (6mm) on the sides of the crowns, ear flaps and outer curve of the visors. 1/2" (1.3cm) for the bottom of the crowns, ear flaps and inner curve of the visors. With these seam allowances you will not have to trim the allowances if you do not want to.  
+Het wordt aangeraden om het patroondeel nett te tekenen en het patroon te gebruiken om de naadlijnen op de stof te traceren en de naadwaarde aan de stof toe te voegen in plaats van het patroon. Dit om een nauwkeurigere naad mogelijk te maken die nodig is voor een hoed. Aanbevolen naadwaarde 1/4" (6 mm) aan de zijkanten van de kroonen, oorvlakken en buitenste curve van de bezoekers. 1/2" (1,3cm) voor de onderkant van de kroon, oorvlakken en de binnenste curve van de bezoekers. Met deze naadtoeslagen hoef je de vergoedingen niet te verlagen als je dat niet wil.  
 
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your crown pattern first before cutting your fabrics. This is to test the length and ease of the crown piece. Make sure to cut off the bottom seam allowance before trying it on. If it is too tight who will need to re-draft the pattern with more head ease just remember the ease is split across each crown. If the peak is too high you may want to re-draft the pattern with the crown length reduced. Once re-drafted make another mock-up to check whether you are satified with the changes or not. Repeat again if you are not satisfied.
+Het is aan te raden om eerst een nep met je kroon patroon te maken voordat je je stof knipt. Dit is om de lengte en de draagwijdte van het kroon te testen. Knip de naadwaarde aan de onderkant, voordat je het probeert. Als het te klein is, wie het patroon moet herschikken met meer gemak, denk er dan aan dat het gemak over elke kroon wordt gesplitst. Als de piek te hoog is, wil je misschien het patroon herschikken en de kroon lengte verkleinen. Eenmaal geherformuleerd maak een andere gelegenheid om te controleren of je al dan niet verzadigd bent met de wijzigingen. Herhaal opnieuw als je niet tevreden bent.
 
 </Warning>
