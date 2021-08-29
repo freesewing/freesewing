@@ -1,15 +1,15 @@
 ---
-title: The right to object
+title: Das Recht auf Widerspruch
 order: 70
 ---
 
-You have the right to object to your personal data being used for scientific research.
+Sie haben das Recht, der Verwendung Ihrer persönlichen Daten für wissenschaftliche Forschung Einspruch zu erheben.
 
 Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
 
 <Note>
 
-The right to object is broader, but this is how it applies to freesewing.
+Das Widerspruchsrecht ist breiter, aber so gilt es für Freesewing.
 
 </Note>
 
