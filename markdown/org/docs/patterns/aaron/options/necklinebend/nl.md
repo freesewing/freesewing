@@ -5,5 +5,5 @@ Bepaalt de curve van de voorkant van de halsopening.
 > Hogere waarden buigen de halslijn meer, wat resulteert in een eerder vierkante opening.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_necklinebend_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_necklinebend_sample.svg "Effect van deze optie op het patroon")
