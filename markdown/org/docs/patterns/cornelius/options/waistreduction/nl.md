@@ -2,4 +2,4 @@
 title: Reductie taille
 ---
 
-Reduces the waist for a more snug fit.
+Vermindert de taille voor een meer snug pas.
