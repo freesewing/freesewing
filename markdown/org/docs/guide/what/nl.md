@@ -1,12 +1,12 @@
 ---
-title: What is FreeSewing?
+title: Wat is FreeSewing?
 order: 100
 ---
 
-[FreeSewing is an open source software project](https://github.com/freesewing/) with the aim of becoming the Wikipedia of sewing patterns.
+[FreeSewing is een open source software project](https://github.com/freesewing/) met als doel om de Wikipedia van naaipatronen te worden.
 
-We provide a [core library](https://www.npmjs.com/package/@freesewing/core) for parametric pattern design, an ever-growing [library of designs](/designs/) implemented in code, as well as a bunch of adjacent tools for building modern interfaces on top of our platform.
+We bieden een [core library](https://www.npmjs.com/package/@freesewing/core) voor parametrisch patroon ontwerp, een steeds groeiende [bibliotheek met ontwerpen](/designs/) geïmplementeerd in code, en een heleboel aangrenzende gereedschappen voor het bouwen van moderne interfaces bovenop ons platform.
 
-Wij zijn niet geïnteresseerd in mode, trends of het hippe nieuwe patroon van het seizoen. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
+Wij zijn niet geïnteresseerd in mode, trends of het hippe nieuwe patroon van het seizoen. In plaats daarvan willen we makers ondersteunen door de kennis van de naaigemeenschap te bundelen in parametrische ontwerpen + documentatie, en die informatie vrij beschikbaar maken.
 
-FreeSewing is built by [contributors](/community/who/contributors/) who are all volunteers, and financially supported by [our Patrons](/community/who/patrons/).
+FreeSewing is gebouwd door [bijdragers](/community/who/contributors/) die alle vrijwilligers zijn, en financieel ondersteund door [onze Patrons](/community/who/patrons/).
