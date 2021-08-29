@@ -1,13 +1,13 @@
 ---
-title: Twin needle
+title: Aguja gemela
 ---
 
-![A twin needle from Schmetz](twin-needle.jpg)
+![Una aguja gemela de Schmetz](twin-needle.jpg)
 
-![A twin needle stitch is flexible because of the zig-zag at the back.](twin-needle.gif)
+![Una aguja doble es flexible debido al zig-zag en la espalda.](twin-needle.gif)
 
-A twin needle is useful for when you need to sew stretchable topstitching (like when hemming a knit). You can also use it for a decorative effect.
+Una aguja gemela es útil para cuando se necesita coser la parte superior estirable (como cuando se emite un tejido). También puedes usarlo para un efecto decorativo.
 
-While a coverlock machine is purpose-built to produce a stretchable topstitch, not everybody has such a machine. A twin needle uses two upper threads and a single under thread. This causes a zig-zag effect on the back, making the stitch stretchable. Meanwhile, you get two parallel lines of stitching at the front.
+Mientras que una máquina de cerradura está construida con el propósito de producir un pico estirable, no todo el mundo tiene tal máquina. Una aguja gemela utiliza dos hilos superiores y una sola debajo del hilo. Esto causa un efecto zig-zag en la espalda, haciendo que la stitch se pueda estirar. Mientras tanto, se obtienen dos líneas paralelas de empate en el frente.
 
-> Animated GIF by [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
+> GIF animado por [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
