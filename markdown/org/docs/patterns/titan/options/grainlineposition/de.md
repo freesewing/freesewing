@@ -1,4 +1,4 @@
 
-Controls the position of the grainline.
+Steuert die Position der Körnlinie.
 
-You can use this to shift the grainline inward or outward if that works better for your body.
+Hiermit können Sie die Kornlinie nach innen oder nach außen verschieben, wenn das besser für Ihren Körper funktioniert.
