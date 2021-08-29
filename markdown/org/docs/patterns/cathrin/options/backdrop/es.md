@@ -1,3 +1,3 @@
-![The back drop option on Cathrin](./backdrop.svg)
+![La opción de retroceso en la Catedral](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Esta opción determina hasta qué punto la parte trasera del centro será bajada en la parte inferior de su corsete.
