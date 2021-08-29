@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your seat/bum.
+Bepaalt de hoeveelheid overwijdte aan je zitplaatsen/bum.
