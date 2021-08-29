@@ -2,5 +2,5 @@
 title: Manschettenlänge
 ---
 
-Controls the length of the cuff.
+Steuert die Länge der Manschappe.
 
