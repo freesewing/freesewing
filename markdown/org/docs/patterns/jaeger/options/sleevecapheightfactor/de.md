@@ -1,4 +1,4 @@
 
-![Sleevecap height factor](sleevecapheightfactor.svg)
+![Sleevecap Höhenfaktor](sleevecapheightfactor.svg)
 
-This factor controls the height of the sleevecap.
+Dieser Faktor steuert die Höhe der Ärmel.
