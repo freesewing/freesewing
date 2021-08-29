@@ -1,4 +1,4 @@
 
-![Waist reduction ratio back](waistreductionratioback.svg)
+![Ratio de réduction de la taille arrière](waistreductionratioback.svg)
 
-Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping.
+Proportion de la taille à réduire en forme de panneau arrière. Affecte également la mise en forme du panneau latéral.
