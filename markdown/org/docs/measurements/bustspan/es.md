@@ -2,6 +2,6 @@
 title: Distancia entre pechos
 ---
 
-The **bust span** is the horizontal distance between the two apex points of your bust.
+El **rango de polvo** es la distancia horizontal entre los dos puntos apex de tu busto.
 
-To measure your bust span, run the tape measure horizontally in a straight line from the tip of your one breast to the tip of the other.
+Para medir tu periodo de busto, ejecutar la medida de cinta horizontalmente en una línea recta desde la punta de su pecho hasta la punta del otro.
