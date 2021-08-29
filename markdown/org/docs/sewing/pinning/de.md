@@ -2,20 +2,20 @@
 title: Pinning
 ---
 
-![Sewing pins are part of the basic sewing supplies](sewing-pins.jpg)
+![Nähstifte sind Teil der Grundversorgung des Nähens](sewing-pins.jpg)
 
-![Fabric being pinned into place](fabric-pinning.jpg)
+![Stoff wird platziert](fabric-pinning.jpg)
 
-Pinning is used whenever you use sewing pins to hold things in place.
+Pinning wird immer dann verwendet, wenn Sie Nähstifte verwenden, um die Dinge an der Stelle zu halten.
 
-Examples of where pinning is commonly used are:
+Beispiele für die häufige Verwendung von Pinning sind:
 
- - Pinning a seam in place before sewing it
- - Pinning an ornament, pocket, or other part in place before attaching it
- - Pinning darts or other pattern changes while fitting the garment on a model
+ - Nähen einer Naht vor dem Nähen
+ - Einen Ornament, eine Tasche oder einen anderen Teil vor dem Anhängen anlegen
+ - Das Pinnen von Darts oder anderen Mustern ändert sich, während das Kleidungsstück auf ein Modell passt
 
-Pinning is never permanent, but merely a temporary measure to hold things in place.
+Pinning ist niemals dauerhaft, sondern lediglich eine vorübergehende Maßnahme, um die Dinge in Ordnung zu bringen.
 
-> Pinning and basting are different techniques for similar situations
+> Pinn- und Bastverfahren sind verschiedene Techniken für ähnliche Situationen
 
-> Pictures by [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) and [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)
+> Bilder von [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) und [Ed Platte](https://www.flickr.com/photos/philentropist/313403963)
