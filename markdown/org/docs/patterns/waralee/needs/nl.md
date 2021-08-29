@@ -1,6 +1,6 @@
 
-To make Waralee, you will need the following:
+Om Waralee te maken heb je het volgende nodig:
 
   - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-  - About 2 meters of a suitable fabric
-  - Some interfacing for the waistband
+  - Ongeveer 2 meter geschikte stof
+  - Een tussenvoering voor de tailleband
