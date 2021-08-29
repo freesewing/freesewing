@@ -1,7 +1,7 @@
 - - -
 - - -
 
-##### Subscribe to our newsletter
+##### Op onze nieuwsbrief abonneren
 
-Subscribe below and **once every 3 months** you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense. 
+Abonneer je hieronder en **eenmaal elke 3 maanden** ontvang je een e-mail van ons met fatsoenlijke inhoud. Geen tracking, geen advertenties, geen nonsens. 
     
