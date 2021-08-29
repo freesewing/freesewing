@@ -2,6 +2,6 @@
 title: Contorno de caderas
 ---
 
-The **hips circumference** is measured at the top of your hip bones.
+La circunstancia de la cadera **** se mide en la parte superior de tus huesos de cadera.
 
 To measure your **hips circumference** put a tape measure around your body at the height of your hip bone.
