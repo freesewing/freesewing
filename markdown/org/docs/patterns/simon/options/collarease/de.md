@@ -1,6 +1,6 @@
 ![Kragen Zugabe](collarease.svg)
 
-How much ease do you want for your collar?
+Wie viel Leichtigkeit möchtest du für deinen Kragen haben?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Wenn du das Gefühl hast, dass ein Kragen erstickt, kannst du dir etwas mehr Leichtigkeit geben und er sitzt locker um den Hals herum. Man könnte auch die Leichtigkeit für eine engere Passform verringern.
 
