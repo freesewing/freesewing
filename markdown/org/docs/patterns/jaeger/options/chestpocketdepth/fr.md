@@ -1,2 +1,2 @@
 
-Controls the depth of the chest pocket.
+Contrôle la profondeur de la poche de la poitrine.
