@@ -2,6 +2,6 @@
 title: Höchster Schulterpunkt (HPS)
 ---
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
+Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
 
-The HPS is where your shoulder seam would meet your neck. The point is situated where your neck meets your shoulder. If you put a marble there, it should not roll forward or backward, but roll towards your shoulder (as in, it should sit in the middle)
+Die HPS ist dort, wo Ihre SchulterNaht würde Ihren Nacken. Der Punkt liegt dort, wo der Hals auf die Schulter trifft. Wenn du einen Marmor dort legst, sollte er nicht vorwärts oder rückwärts rollen, aber würfeln Sie auf Ihre Schulter (wie in der sollte sie in der Mitte sitzen)
