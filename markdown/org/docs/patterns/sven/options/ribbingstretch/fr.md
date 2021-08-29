@@ -1,3 +1,3 @@
 ![Élasticité du bord côte](ribbingstretch.svg)
 
-The amount of stretch we should foresee for the ribbing at the hem/cuffs.
+La quantité d'élasticité que nous devrions prévoir pour le ruban à l'ourlet ou aux poignets.
