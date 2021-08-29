@@ -13,21 +13,21 @@ Om Jaeger te maken heb je het volgende nodig:
 
 <Note>
 
-####### Where to get all this stuff
+####### Waar je al dit spul
  
-Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
+Het maken van Jaeger is een leuk project en een herwaarschuwing. maar het kan uitdagend zijn om alle vereiste bits en stukken te krijgen.
 
-That is because this kind of project is somewhat more ambitious than the typical home sewing project,
-and as a result, your local haberdashery is unlikely to stock all of these things.
+Dat komt doordat dit soort projecten iets ambitieuzer is dan het typische naaiproject.
+en als gevolg daarvan is het onwaarschijnlijk dat je lokale haberdashery al deze dingen gaat produceren.
 
-Als je weet waar dit te vinden, super. If not, you can get a **Jacket trim pack** from 
-[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in London, they ship to international customers.
+Als je weet waar dit te vinden, super. Zo niet, dan kan je een **Jas trim pakket** krijgen van 
+[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in Londen, ze verzenden naar internationale klanten.
 
-It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business 
-to place an order.
+Het is een winkel voor professionals (ze zijn zelfs niet open op zaterdagen) maar ze vereisen niet dat u een bedrijf bent 
+om een bestelling te plaatsen.
 
-I have no afiliation with these guys, but it's the only place I know of that will sell you a kit of
-professional trimmings to make a jacket.
+Ik heb geen afkomst met deze jongens, maar het is de enige plek waar ik weet dat je een kit van
+professionele trimmers zult verkopen om een jas te maken.
 
 Als je weet hebt van andere plekken die zoiets doen, laat het dan weten.
 
