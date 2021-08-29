@@ -1,5 +1,5 @@
-![The front drop option on Cathrin](./frontdrop.svg)
+![Die Front-Drop-Option auf Cathrin](./frontdrop.svg)
 
-This option determines how far the center front will be lowered at the bottom of your corset.
+Diese Option legt fest, wie weit die Vorderseite am unteren Rand Ihres Korsetts gesenkt wird.
 
-> If you lower this too much, sitting might become an issue.
+> Wenn Sie dies zu viel senken, könnte die Sitzung zu einem Thema werden.
