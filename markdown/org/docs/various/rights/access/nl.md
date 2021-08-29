@@ -1,5 +1,5 @@
 ---
-title: The right of access
+title: Het recht op toegang
 order: 20
 ---
 
