@@ -1,8 +1,8 @@
 
-This adds extra room below your hips.
+Das ist ein zusätzlicher Raum unter den Hüften.
 
-> This option exists to prevent belly fluff.
+> Diese Option ist vorhanden, um Bauchflüssigkeiten zu verhindern.
 > 
-> What's belly fluff? It's when you tuck your shirt in your trousers, and the part below the last button tend to creep open a bit, exposing part of your belly.
+> Was ist Bauchfluss? It's when you tuck your shirt in your trousers, and the part below the last button tend to creep open a bit, exposing part of your belly.
 
-> If you're on a mission against belly fluff, you might also look into the <strong>button free length</strong> option.
+> Wenn Sie auf einer Mission gegen Bauchflöte sind, können Sie sich auch die Option <strong>kostenlose Länge</strong> ansehen.
