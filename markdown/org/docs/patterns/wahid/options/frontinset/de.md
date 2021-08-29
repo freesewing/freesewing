@@ -1,12 +1,12 @@
 ![Vorderseite Ausschnitt](frontinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the front?
+Wie weit soll sich die Weste an der Vorderseite nach innen bewegen?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Das Armloch deiner Weste kann weiter nach innen gebogen werden, da keine Ärmel an ihr befestigt ist.
+Dies beeinflusst den Stil der Weste.
 
 </Note>
