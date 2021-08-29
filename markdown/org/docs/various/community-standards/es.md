@@ -1,23 +1,23 @@
 ---
-title: Community standards
+title: Normas comunitarias
 ---
 
-Thank you for being part of the freesewing community. When you engage with us, or when you engage with others, please remember the following simple rules:
+Gracias por ser parte de la comunidad freesewing. Cuando se comprometa con nosotros, o cuando se involucre con otros, por favor recuerde las siguientes reglas simples:
 
-##### Be nice
-We cannot accept comments that are either offensive in themselves or clearly offensive to others.
+##### Sé bueno
+No podemos aceptar comentarios que sean ofensivos en sí mismos o claramente ofensivos para los demás.
 
 We ask you to avoid obscenities and other insulting language, to show respect for fellow users, public figures and the fundamental principles we hopefully all share.
 
 Without wanting to be exhaustive, that means no racism, xenophobia, calls to violence, discrimination based on religion, ethnic origin, gender, age, body shape, language, &hellip;.
 
-##### Don't spam
+##### No enviar spam
 We encourage you to post comments that stick to the subject and would appreciate it if you refrain from posting advertisements (for your businesses, blogs or websites, etc).
 
-It is fine to post links to relevant information on other websites, but Spam and other off-topic items will be removed.
+Está bien publicar enlaces a información relevante en otros sitios web, pero el correo no deseado y otros elementos fuera de tema serán eliminados.
 
-##### Don't get us in trouble
-Comments that are defamatory, unlawful or include copyright infringements are also against the rules. Impersonating other people or using fake accounts is also not done.
+##### No nos molestes
+Los comentarios que son difamatorios, ilegales o que incluyen infracciones de los derechos de autor también van en contra de las normas. La suplantación de otras personas o el uso de cuentas falsas tampoco se hace.
 
-We will delete these types of comments and may ban users who keep on disregarding these rules.
+Eliminaremos este tipo de comentarios y podremos prohibir a los usuarios que sigan ignorando estas normas.
 
