@@ -1,2 +1,2 @@
 
-Controls the amount of ease at the hips. In other words, this controls the ease at the bottom of your T-shirt
+Contrôle la quantité d'aisance aux hanches. En d'autres termes, cela contrôle la facilité au bas de votre T-shirt
