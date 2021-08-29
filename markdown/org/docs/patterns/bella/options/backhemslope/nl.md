@@ -1,11 +1,11 @@
 ---
-title: Back hem slope
+title: Lope zoom achter
 ---
 
-![The effect of the back hem slope option on the pattern](sample.png)
+![Het effect van de helling van de zoom op het patroon](sample.png)
 
-The **back hem slope** option controls the slope of the hem at the back.
+De **omhelzing** optie bepaalt de richtingscoëfficiënt van de zoom achteraan.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backhemslope_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_backhemslope_sample.svg "Effect van deze optie op het patroon")
