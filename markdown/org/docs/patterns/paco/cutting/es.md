@@ -1,29 +1,29 @@
 <Tip>
 
-###### Cut out only what you need
-Depending on the choices you made in your pattern, you may not need all parts.
-If a pattern part is not printed, it means you don't need it.
+###### Corta solo lo que necesitas
+Dependiendo de las opciones que hiciste en tu patrón, puede que no necesites todas las partes.
+Si no se imprime una parte de patrón, significa que no la necesita.
 
 </Tip>
 
-  - From your main fabric:
-    - 2x **part 1**: This is the back panel. Cut these from your **main fabric** with _good sides together_
-    - 2x **part 2**: This is the front panel. Cut these from your **main fabric** with _good sides together_
-    - 2x **part 3**: This is the waistband. Cut it from your **main fabric**
-    - 2x **part 4**: This is the ankle cuff. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
-    - 2x **part 7**: This is the back pocket welt. Cut 2 of these from your **main fabric** with _good sides together_
-  - From your lining fabric:
-    - 2x **part 5**: This is the front pocket bag. Cut these, from your **lining fabric** _on the fold_ (not needed if you chose to not have front pockets)
-    - 2x **part 6**: This is the back pocket bag. Cut 2 of these from your **lining fabric** _on the fold_
-  - From interfacing:
-    - 2x **part 8**: This is the back pocket welt interfacing. Cut 2 of these from **interfacing**
+  - De tu tela principal:
+    - 2x **parte 1**: Este es el panel trasero. Corta estos de tu **tela principal** con _lados buenos juntos_
+    - 2x **parte 2**: Este es el panel frontal. Corta estos de tu **tela principal** con _lados buenos juntos_
+    - 2x **parte 3**: Esta es la cintura. Cortarlo de tu **tela principal**
+    - 2x **parte 4**: Este es el cubo de pegatina. Corta estos, desde tu **tela principal** con _lados buenos juntos_ (no es necesario si eliges no tener un héroe elasticado)
+    - 2x **parte 7**: Este es el bolsillo trasero. Corta 2 de estas de tu **tela principal** con _lados buenos juntos_
+  - De su tela de forraje:
+    - 2x **parte 5**: Esta es la bolsa de bolsillo delantera. Corta estas, desde tu **tela de forraje** _en el plegado_ (no es necesario si eligiste no tener bolsillos frontales)
+    - 2x **parte 6**: Esta es la bolsa de bolsillo trasera. Corta 2 de estas de tu **tela de forraje** _sobre el plegado_
+  - De interfaz:
+    - 2x **parte 8**: Esta es la interfaz de soldadura del bolsillo trasero. Corta 2 de estas desde **interfaz**
 
 <Warning>
 
-#### Caveats
+#### Adorcios
 
- - There is no seam allowance on the interfacing 
- - There is extra seam allowance on the waist band and hem
- - The waistband is a mere rectangle, so it's not fully printed to save paper
+ - No hay permisos de costura en la interfaz 
+ - Hay permisos extra de costura en la banda de la cintura y en el sombreado
+ - La cintura es un simple rectángulo, por lo que no está completamente impreso para guardar papel
 
 </Warning>
