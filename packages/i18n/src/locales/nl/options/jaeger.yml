@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Middenrug neep
-  description: Dart at the center back of your neck to accommodate a rounded back
+  description: Neep midden in het midden van je nek om een afgeronde rug op te vangen
 sleeveVentLength:
   title: Lengte mouwvent
   description: De lengte van de mouwvent
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: De breedte van de mouwvent
 chestShaping:
   title: Borstvorming
-  description: Amount of shaping to accommodate for the chest curve
+  description: Hoeveelheid vormgeving voor de borstcurve
 frontDartPlacement:
   title: Plaatsing neep vooraan
   description: Locatie van de nepen vooraan
