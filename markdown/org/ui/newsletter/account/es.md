@@ -1,5 +1,5 @@
 ---
-title: Manage your subscription in your account
+title: Administra tu suscripción en tu cuenta
 ---
 
 As a registered user, you can [manage your newsletter settings in your account][1].
