@@ -120,7 +120,7 @@ Pour terminer les extrémités, nous allons plier le tissu en trois étapes :
 
 Tout d'abord, on plie le côté sous un angle. Puis nous plions la fin par juste une petite marge de couture, quelque chose comme 5mm. Puis nous le plions à nouveau, pour environ 1cm. Enfin on place l'anneau ovale sous ce dernier pli et on coud.
 
-Now feed the ribbon piece through the oval part and finish it the same way.
+Maintenant, nourrissez la pièce de ruban à travers la partie ovale et finissez-la de la même manière.
 
 Accrochez le T dans une des boucles d'ajustement et votre nœud papillon est terminé !
 
