@@ -1,3 +1,3 @@
 ![Bündchen](./ribbing.svg)
 
-Whether to include ribbing or not.
+Ob das Band enthalten soll oder nicht.
