@@ -1,3 +1,3 @@
 ![Hauteur de bord côte](ribbingheight.svg)
 
-The height of the ribbing at the hem/cuffs.
+La hauteur du ruban à l'ourlet ou aux poignets.
