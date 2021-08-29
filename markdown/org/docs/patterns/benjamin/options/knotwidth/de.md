@@ -10,5 +10,5 @@ Beim Fliegen-Stil "Rechteck" legt dieser Wert auch die Breite der Spitzen fest
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_knotwidth_sample.svg "Effekt dieser Option auf das Muster")
