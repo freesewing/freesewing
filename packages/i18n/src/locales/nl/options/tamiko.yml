@@ -7,4 +7,4 @@ shoulderseamLength:
   description: De lengte van de schoudernaad, als een factor van je schouder tot schouder maat
 shoulderSlope:
   title: Schouderhelling
-  description: Controls the angle of the shoulder seams
+  description: Bepaalt de hoek van de schoudernaden
