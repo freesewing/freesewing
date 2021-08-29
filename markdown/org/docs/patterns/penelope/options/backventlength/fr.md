@@ -1,2 +1,2 @@
-This controls the length of the back vent as a percentage of the skirt length.
+Ceci contrôle la longueur du ventilateur arrière en pourcentage de la longueur de la jupe.
 
