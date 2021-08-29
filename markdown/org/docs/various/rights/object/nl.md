@@ -1,5 +1,5 @@
 ---
-title: The right to object
+title: Het recht op bezwaar
 order: 70
 ---
 
