@@ -1,2 +1,2 @@
-This option controls the amount of exposed skin on the back.
+Deze optie bepaalt de hoeveelheid blootgestelde huid op de achterkant.
 
