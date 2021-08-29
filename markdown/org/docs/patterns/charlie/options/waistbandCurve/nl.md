@@ -1,4 +1,4 @@
 
-Controls how curved the waistband is.
+Bepaalt hoe gebogen de tailleband is.
 
-Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+Als je dit verhoogt krijg je een kromme tailleband, waardoor het kleiner aan de bovenrand van de tailleband.
