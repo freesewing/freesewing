@@ -1,14 +1,14 @@
 ![Élévation arrière](backrise.svg)
 
-This raises the waist of your trousers at the back.
+Cela relève la taille de votre pantalon au dos.
 
 <Note>
 
-This trouser pattern is based on the drafting method of Winifred Aldrich. 
-One complain I often get is that the back of the trousers is too low. 
-It's a valid complaint too, it is low.
+Ce modèle de pantalon est basé sur la méthode de dessin de Winifred Aldrich. 
+Une plainte que j'obtiens souvent est que le dos du pantalon est trop bas. 
+C'est également une plainte valable, elle est faible.
 
-This option allows you to mitigate that, without dramatic changes to the pattern. 
-It allows you to simply raise the back of the trousers.
+Cette option vous permet d'atténuer cela, sans modifications spectaculaires du modèle. 
+Il vous permet de simplement lever le dos du pantalon.
 
 </Note>
