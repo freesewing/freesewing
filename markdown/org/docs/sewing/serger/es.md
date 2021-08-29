@@ -1,17 +1,17 @@
 ---
-title: Serger
+title: Sargento
 ---
 
-![The finished backside of a serged seam](serged-seam.jpg)
+![La parte trasera acabada de una costura sergada](serged-seam.jpg)
 
-![My serger, a Bernina 700D](serger.jpg)
+![Mi serger, un Bernina 700D](serger.jpg)
 
-A serger or overlock is a type of sewing machine that can both cut fabric and make a stretch lockstitch.
+Un serger o un overlock es un tipo de máquina de coser que puede cortar la tela y hacer una cerradura estirada.
 
-Sergers use multiple threads and needles to not only make the seam, but also lock the fabric. They are very often used with knit or other stretchy fabrics.
+Los sargentos utilizan múltiples hilos y agujas para no sólo hacer la costura, sino también bloquear el tejido. Se utilizan muy a menudo con tejidos de tejidos u otros tejidos estirados.
 
-> The term overlock is more common in Europe for a serger. However, I prefer to use serger as it avoids confusion between the very similar named overlock and coverlock machines.
+> El término atasco es más común en Europa para un serger. Sin embargo, prefiero usar serger ya que evita la confusión entre las máquinas de overlock y coverlock, muy similares.
 > 
-> Further confusion is added by the fact that some sewing machines have an overlock stitch that mimics the role of a serger.
+> Se añade más confusión por el hecho de que algunas máquinas de coser tienen un desbordamiento que imita el papel de un serger.
 > 
-> To steer clear of all this, I use serger to refer to the dedicated machine. 
+> Para evitar todo esto, utilizo serger para referirse a la máquina dedicada. 
