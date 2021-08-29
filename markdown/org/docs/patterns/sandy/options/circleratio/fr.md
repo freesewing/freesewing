@@ -1,4 +1,4 @@
 
 ![Ratio circulaire](circleratio.svg)
 
-The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt.
+Le pourcentage d'une jupe circulaire. 100% fait une jupe pleine circulaire, 50% fait une jupe demi-cercle.
