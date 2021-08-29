@@ -1,14 +1,14 @@
 
- - Cut **1 back** on the fold
- - Cut **1 front** on the fold
- - Cut **3 strips** for neck opening and armhole binding
+ - **1 zurück** auf die Falte schneiden
+ - **1 Front** auf die Falte schneiden
+ - **3 Streifen** für Halsöffnung und Armlochbindung schneiden
 
 <Warning>
 
-#### Caveats
+#### Vorsichten
 
- - There is no seam allowance on the armholes 
- - There is no seam allowance on the neck opening
- - There is extra hem allowance at the hem
+ - Es gibt keine Naht an den Armlöchern 
+ - Es gibt keine Naht beim Öffnen des Hals
+ - Es gibt einen zusätzlichen Saum zulässig am Saum
 
 </Warning>
