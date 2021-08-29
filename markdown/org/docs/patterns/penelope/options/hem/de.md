@@ -1,2 +1,2 @@
-The size of the hem. 
+Die Größe des Saum. 
 
