@@ -1,3 +1,3 @@
 ![Bizeps Zugabe](bicepsease.svg)
 
-How much room do you want at your upper arm?
+Wie viel Platz möchtest du am oberen Arm haben?
