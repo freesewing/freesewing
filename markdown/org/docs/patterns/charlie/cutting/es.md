@@ -1,29 +1,29 @@
 
-##### From main fabric
+##### De tela principal
 
-- Part **1**: **2 x** _with good sides together_.
-- Part **2**: **2 x** _with good sides together_.
-- Part **4**: **4 x**
-- Part **6**: **2 x**
-- Part **8**: **2 x** 2 _with good sides together_
-- Part **9**: **2 x** _with good sides together_
-- Part **10**: **1 x** on the fold
-- Part **11**: **1 x** if making a straight waistband
-- Part **11**: **2 x** _with good sides together_ if making a curved waistband
-- Part **12**: **1 x**
+- Parte **1**: **2 x** _con buenos lados juntos_.
+- Parte **2**: **2 x** _con buenos lados juntos_.
+- Parte **4**: **4 x**
+- Parte **6**: **2 x**
+- Parte **8**: **2 x** 2 _con buenos lados juntos_
+- Parte **9**: **2 x** _con buenos lados juntos_
+- Parte **10**: **1 x** en plegado
+- Parte **11**: **1 x** si hace una pulsera recta
+- Parte **11**: **2 x** _con buenos lados juntos_ si hace una cintura curvada
+- Parte **12**: **1 x**
 
-##### From lining (or any material suitable for pocket bags)
+##### Desde el revestimiento (o cualquier material adecuado para bolsas de bolsa)
 
-- Part **5**: **2 x**
-- Part **7**: **2 x**
+- Parte **5**: **2 x**
+- Parte **7**: **2 x**
 
-##### From fusible interfacing
+##### Desde interfaz fusible
 
-- Part **3**: **2 x**
+- Parte **3**: **2 x**
 
 <Tip>
 
-##### A dash of color perhaps?
+##### ¿Un guión de color tal vez?
 
 ##### A dash of color perhaps?
 
