@@ -1,8 +1,8 @@
 - - -
 - - -
 
-Controls the shoulder seam location on the collar side.
+Bepaalt de locatie van de schoudernaad aan de kant van de kraag.
 
-- Increase this option to shift the shoulder seam forward on the collar side
-- Decrease this option to shift the shoulder seam backward on the collar side
+- Verhoog deze optie om de schoudernaad naar voren aan de kraag te verschuiven
+- Verminder deze optie om de schoudernaad achterwaarts op de kraagzijde te bewegen
 
