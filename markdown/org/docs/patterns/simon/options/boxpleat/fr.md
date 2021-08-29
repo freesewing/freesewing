@@ -2,4 +2,4 @@
 title: Pli plat
 ---
 
-Adds a box pleat to the back.
+Ajoute un pli en boîte au dos.
