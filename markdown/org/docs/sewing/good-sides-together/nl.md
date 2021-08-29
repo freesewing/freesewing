@@ -18,10 +18,10 @@ Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
 <Note> 
 
-##### What if there is not obvious good side?
+##### Wat als er niet voor de hand ligt?
 
-When cutting out something without an obvious *good* side (like interfacing), 
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Bij het uitknippen van iets zonder een evidente *goed* kant (zoals tussenvoering), 
+wat belangrijk is, is dat je twee gespiegeld stukken knipt, in plaats van twee identieke stukken.
 
 </Note>
 
@@ -33,4 +33,4 @@ Stikken met de goede kanten op elkaar is de standaard manier om een naad te make
 
 Door de goede kanten van het kledingstuk op elkaar te leggen worden de twee stukken aan elkaar bevestigd met de naadwaarde aan de binnenkant van het kledingstuk. Dit wordt voor de overgrote meerderheid van naden gedaan.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Als er geen specifieke instructies zijn om een naad te maken, is het de goede kanten op elkaar.
