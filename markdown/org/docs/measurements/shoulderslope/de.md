@@ -2,7 +2,7 @@
 title: Schulterneigung
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+Die **-Schulterhang-** Messung ist ein Indikator für die Höhe mit der Ihre Schulter nach unten abfällt.
 
 Um deine Schulterneigung zu messen, musst du den Winkel bestimmen, unter dem sich deine Schulterlinie nach unten neigt.
 
