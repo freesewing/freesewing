@@ -1,2 +1,2 @@
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Diese steuert die Länge des Rocks. Prozentsatz der natürlichen Taille zum Kniemessen.
 
