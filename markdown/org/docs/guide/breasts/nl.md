@@ -1,24 +1,24 @@
 ---
-title: With or without breasts?
+title: Met of zonder borsten?
 order: 250
 ---
 
-Some people get confused by the terms **with breasts** and **without breasts**.
+Sommige mensen raken verward met de termen **met borsten** en **zonder borsten**.
 
-We use these terms as a gender-inclusive way to ask whether or not a person has breasts.
+We gebruiken deze termen als een genderomvattende manier om ons af te vragen of iemand wel of geen borsten heeft.
 
 <Tip>
 
-Check [our FAQ on the matter](/docs/faq/breasts/) for more info.
+Bekijk [onze FAQ over de kwestie](/docs/faq/borsten/) voor meer info.
 
 </Tip>
 
 <Note>
 
-##### Why we ask in the first place
+##### Waarom we het vragen op de eerste plaats
 
-Fitting a chest with breasts is more complex than fitting a chest without breasts. 
-There are extra measurements and options required, and we want to display these
-only when it's relevant.
+Een kist vullen met borsten is complexer dan een borst past zonder borsten. 
+Er zijn extra metingen en opties vereist, en we willen deze
+alleen weergeven als het relevant is.
 
 </Note>
