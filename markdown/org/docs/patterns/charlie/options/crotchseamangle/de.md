@@ -1,4 +1,4 @@
 
-Controls the start of the crotchseam at the front fork point.
+Steuert den Start der Crotchseam am vorderen Gabelpunkt.
 
-This will influence how the trousers fit at the crotch.
+Dies beeinflusst die Passform der Hose im Schritt.
