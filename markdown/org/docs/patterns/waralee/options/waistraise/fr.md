@@ -1,2 +1,2 @@
-How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+Combien pour lever la taille de la taille de la mesure de la profondeur du siège. Cela influence la profondeur du découpage de la crochette.
 
