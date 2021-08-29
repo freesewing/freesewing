@@ -1,6 +1,6 @@
 
-To make Albert, you will need the following:
+Om Albert te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meter (depending on the length of your apron) of a suitable fabric ([see Fabric options](/docs/patterns/albert/fabric))
+- Ongeveer 1.25 meter (afhankelijk van de lengte van je schors) van een geschikte stof ([zie Stoffen opties](/docs/patterns/albert/fabric))
 
