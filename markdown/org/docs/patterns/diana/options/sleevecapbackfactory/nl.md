@@ -1,13 +1,13 @@
-![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
+![De verticale locatie van het omslagpunt](./sleevecapbackfactory.svg)
 
-This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.
+Deze optie bepaalt de verticale plaatsing van het tussenpunt aan de achterkant van de mouw.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Zie [begrijp de mouwkop](/docs/patterns/brian/options#understanding-the-sleevecap) voor een diepgaande
+kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties op de vorm eruit ziet.
 
 </Tip>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_sleevecapbackfactory_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevecapbackfactory_sample.svg "Effect van deze optie op het patroon")
