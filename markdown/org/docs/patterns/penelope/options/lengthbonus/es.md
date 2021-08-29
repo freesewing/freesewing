@@ -1,2 +1,2 @@
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Controla la longitud de la cabeza. Porcentaje de la cintura natural a medida de rodilla.
 
