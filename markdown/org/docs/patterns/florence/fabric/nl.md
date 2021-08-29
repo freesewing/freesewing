@@ -1,14 +1,14 @@
 
-The goal of our mask is to stop droplets. So you want to go for something that filters those out. Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
+Het doel van ons masker is om droplets te stoppen. Dus u wilt iets doen dat de mensen wegjaagt. En nogmaals, je moet door je masker kunnen ademen, zodat we stof willen die adem ademt, zonder droplets door te laten gaan.
 
-In addition, we want the inside to be comfortable on our skin. So here I'd suggest a tightly woven cotton or viscose/rayon. For the outter fabric, cotton again, or a tightly woven wool.
+Bovendien willen we dat het binnenste zich comfortabel op onze huid bevindt. Dus hier zou ik een sterk geweven katoen of viscose/rayon voorstellen. Voor de buitenstof, katoen opnieuw, of een stevig geweven wol.
 
 <Note>
 
-Note that fabric that is *breathable* is not the same as fabric your can breath through.
-There's many so-called waterproof breathable fabrics — or MBFs — that are used for outdoor gear because they 
-repel water and are *breathable* but would make a poor choice for a face mask. 
-Look no further than your umbrella for an example. Chances are it's more from a fabric you can breath through,
-but only with substantial effort, which would not work for our face mask.
+Merk op dat stof die *adembaar* is niet hetzelfde is als stof waarmee je kunt ademen.
+Er zijn veel zogenoemde waterdichte adembare stoffen - of MBF's - die worden gebruikt voor buiten uitrusting omdat ze 
+repelwater afstoten en *adembaar* zijn, maar een slechte keuze voor een gezichtsmasker. 
+Kijk alleen maar naar je paraplu voor een voorbeeld. Kansen zijn meer van een stof die je kunt doorademen,
+maar alleen met substantiële inspanningen, die niet zouden werken voor ons gezichtsmasker.
 
 </Note>
