@@ -1,9 +1,9 @@
 ![Holgura de pecho](chestease.svg)
 
-How much room do you want at the chest?
+¿Cuánto espacio quieres en el cofre?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+Dado que un abrigo no tiene armas, una pequeña facilidad de pecho va muy lejos. Agrega demasiado, y terminarás con agujeros de armadura.
 
 </Note>
