@@ -1,16 +1,16 @@
 ---
 bustDartAngle:
-  title: Bust dart angle
-  description: Controls the angle by which the (side) bust dart slopes downward
+  title: Ángulo de dardos de polvo
+  description: Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente
 bustDartLength:
-  title: Bust dart length
-  description: Controls how close the bust dart approaches the bust point
+  title: Longitud del dart del polvo
+  description: Controla cómo se acerca el polvo al punto de busto
 contour:
   title: Contorno
-  description: Controls how sharply the extra room for breasts is removed again below the chest
+  description: Controla cómo se elimina de nuevo el espacio extra para los senos debajo del cofre
 frontDarts:
-  title: Front darts
-  description: Whether to include front darts or not
+  title: Dardos delanteros
+  description: Incluya o no las artes frontales
 frontDartLength:
-  title: Front dart length
-  description: Controls how close the front dart approaches the bust point
+  title: Longitud del dart frontal
+  description: Controla cómo se acerca el dardo frontal al punto de polvo
