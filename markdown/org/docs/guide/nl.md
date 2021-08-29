@@ -1,29 +1,29 @@
 ---
-title: Getting started
+title: Aan de slag
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂  
-Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
+Hallo daar 👋 en welkom bij freesewing. rg 🙂  
+Het lezen van deze handleiding duurt ongeveer 10 minuten van je tijd. om je later een aantal vragen op te slaan, en zorg ervoor dat je het meeste uit onze website haalt.
 
-##### What we'll explain
+##### Wat zullen we uitleggen
 
- - We'll tell you [what FreeSewing is][1] and [what freesewing.org is][2]
- - We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [*with breasts* vs *without breasts*][4]
- - We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
- - We'll go over [how you can configure your patterns][9] with design and pattern options
- - Finally, we'll tell you [where you can get help][10] if you get stuck.
+ - We vertellen je [wat FreeSewing is][1] en [wat freesewing.org is][2]
+ - We vertellen je over onze [naaipatronen op maat van][3] en wat we bedoelen met [*met borsten* vs *zonder borsten*][4]
+ - We behandelen [waarom u een account nodig heeft][5] wat we bedoelen met [uw mensen][6] of [uw patronen][7], en we hebben het over metingen [][8]
+ - We zullen gaan over [hoe u uw patronen kunt configureren][9] met ontwerp en patroonopties
+ - Tot slot zullen we je vertellen [waar je hulp kan krijgen][10] als je vastzit.
 
-Sounds good? Then let's dive right in:
+Klinkt goed? Laten we dan direct gaan duiken in:
 
 <ReadMore list />
 
 <Tip>
 
-##### You don't have to read everything
+##### Je hoeft niet alles te lezen
 
-Feel free to click around to the parts that are most relevant to you. 
-This guide is more reference than story.
+Voel je vrij om te klikken op de onderdelen die het meest relevant voor jou zijn. 
+Deze handleiding verwijst meer dan het verhaal.
 
 </Tip>
 [1]: /docs/guide/what/
@@ -33,6 +33,7 @@ This guide is more reference than story.
 [5]: /docs/guide/account/
 [6]: /docs/guide/people/
 [7]: /docs/guide/patterns/
+[8]: /docs/guide/measurements/
 [8]: /docs/guide/measurements/
 [9]: /docs/guide/options/
 [10]: /docs/guide/help/
