@@ -1,5 +1,5 @@
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Controla el ancho por el cual el bolsillo delantero se corta en el panel frontal.
 
-Increasing this will give a more slanted pocket.
+Incrementar esto dará un bolsillo más inclinado.
 
