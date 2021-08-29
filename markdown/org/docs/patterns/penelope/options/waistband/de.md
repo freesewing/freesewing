@@ -1,2 +1,2 @@
-Adds a waistband to the pattern.
+Fügt ein Taillenband dem Muster hinzu.
 
