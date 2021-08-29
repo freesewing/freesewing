@@ -2,17 +2,17 @@
 title: Abnäher
 ---
 
-![Bust darts on a blouse](dart.jpg)
+![Dart auf eine Bluse zerbrechen](dart.jpg)
 
-Darts are crucial in pattern design as they turn a flat, two-dimensional piece of fabric, into a three-dimensional shape.
+Die Darts sind für die Mustergestaltung von entscheidender Bedeutung, da sie ein flaches, zweidimensionales Gewebe in eine dreidimensionale Form verwandeln.
 
-A dart is created by two lines that form a wedge, and meet each other in the dart point. When the lines are sewn together they create a permanent fold, preventing the fabric from laying flat, thereby creating a three-dimensional shape.
+Ein Dart wird von zwei Linien, die einen Keil, und treffen sich in der Dart-Punkt. Wenn die Linien zusammengenäht werden, erzeugen sie eine permanente Faltung, wodurch der Stoff nicht flach gelegt werden kann, wodurch eine dreidimensionale Form entsteht.
 
-Darts are used where fabric needs to cover curves in more than one direction. You don't need a dart for your legs because your fabric can follow the curvature of your legs and wrap around it. Your bum does not only curve horizontally, but also vertically. So bums and boobs are typically places where you'll find darts.
+Darts werden dort eingesetzt, wo der Stoff die Kurven in mehr als eine Richtung abdecken muss. Du brauchst keinen Dart für deine Beine, weil dein Stoff der Krümmung deiner Beine folgen und ihn umwickeln kann. Ihr Bum kurbelt nicht nur horizontal sondern auch vertikal. So sind Bums und Boobs in der Regel Orte, wo Sie Darts finden.
 
-> Wikipedia has a bit more to say on this subject: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_(sewing))
+> Wikipedia hat zu diesem Thema noch etwas mehr zu sagen: [Dart (näht) auf Wikipedia](http://en.wikipedia.org/wiki/Dart_(sewing))
 > 
-> Entire chapters in books on sewing and pattern design are dedicated to darts. Knowing how and where to use them is not so simple. But for this website, knowing what they are is sufficient.
+> Ganze Kapitel in Büchern zum Nähen und Musterdesign sind den Darts gewidmet. Es ist nicht so einfach, zu wissen, wie und wo sie verwendet werden sollen. Aber für diese Website zu wissen, was sie sind ausreichend.
 
 
-> Picture by [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) 
+> Bild von [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) 
