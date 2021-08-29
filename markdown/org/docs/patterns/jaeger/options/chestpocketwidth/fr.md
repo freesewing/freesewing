@@ -1,4 +1,4 @@
 
 ![Largeur de la poche poitrine](chestpocketwidth.svg)
 
-The width of the chest pocket, as a factor of your chest circumference.
+La largeur de la poche de la poitrine, en tant que facteur de la circonférence de votre poitrine.
