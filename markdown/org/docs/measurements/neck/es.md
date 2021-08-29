@@ -2,6 +2,6 @@
 title: Contorno de cuello
 ---
 
-The **neck circumference** is the measurement around your neck, at the level you would wear your shirt collar, or tie.
+La circunstancia del cuello **** es la medición alrededor del cuello, al nivel que llevarías el collar de la camisa o la corbata.
 
-To measure your **neck circumference**, wrap the tape measure around your neck where your shirt collar would sit.
+Para medir tu **circunstancia del cuello**, envuelve la medida de cintura alrededor del cuello donde se sentaría tu collar.
