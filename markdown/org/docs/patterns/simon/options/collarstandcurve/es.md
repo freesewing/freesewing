@@ -1,9 +1,9 @@
-![Collarstand curve](collarstandcurve.svg)
+![Curva de Collarstand](collarstandcurve.svg)
 
-How much the collar stand curves up at the edges.
+Cuánto se sitúan las curvas de cuello en los bordes.
 
 <Note>
 
-You can tweak this to make sure the edges of your collar stand at the front or nicely horizontal.
+Puede ajustar esto para asegurarse de que los bordes de su cuello se sitúan en la parte delantera o bien horizontal.
 
 </Note>
