@@ -1,16 +1,16 @@
-To make Sven, you will need the following:
+Um Sven zu machen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 1.75 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](#fabric-options))
-- Ribbing fabric for the cuffs and neck opening
+- Ribbing Stoff für die Manschetten und Nackenöffnung
 
 <Note>
 
-###### A serger/overlock is nice, but optional
+###### Ein Serger/Overlock ist schön, aber optional
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-If you do not have one of those, don't despair. You don't really need it. 
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich. 
+Da diese Seitennaht und Schulternähte nicht ausgedehnt werden, können Sie sie einfach mit einer regelmässigen geraden Nähte nähen.
 
 </Note>
