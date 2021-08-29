@@ -1,2 +1,2 @@
 
-Adds extra length to the tie.
+Voegt extra lengte toe aan de das.
