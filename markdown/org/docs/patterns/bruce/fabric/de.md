@@ -1,7 +1,7 @@
-You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
+Du benötigst für dieses Muster einen Stretchy-Stoff. Bevorzugtes Bequemes und sanftes Berühren, während die Haut atmen kann.
 
-I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
+Ich persönlich denke, dass nichts kann rayon für dieses Muster, auch wenn man mit anderen Stricken wie Trikot tun kann.
 
-When in doubt, go for rayon.
+Wenn Sie Zweifel haben, gehen Sie nach Roggen.
 
 
