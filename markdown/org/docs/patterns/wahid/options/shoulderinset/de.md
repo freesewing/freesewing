@@ -1,11 +1,11 @@
 ![Schulterversatz nach innen](shoulderinset.svg)
 
-How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
+Wie weit soll sich die Weste auf der SchulterNaht von der Schulter absetzen? Die Standardeinstellung ist 2cm.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
+Die Schulternaht einer Weste ist typischerweise enger als Ihr Hemd. Diese Option bestimmt, wie eng sie wird (auf der Schulterseite).
 
 </Note>
