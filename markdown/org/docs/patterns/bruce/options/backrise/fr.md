@@ -7,5 +7,5 @@ Ce facteur augmentera la hauteur à l'arrière de votre boxer seulement.
 > Si vous voulez augmenter la hauteur partout, voir l'option **hauteur**
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_backrise_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_backrise_sample.svg "Effet de cette option sur le motif")
