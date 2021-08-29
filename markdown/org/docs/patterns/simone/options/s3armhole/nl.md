@@ -1,12 +1,12 @@
 - - -
 - - -
 
-Controls the shoulder seam location on the armhole side.
+Bepaalt de locatie van de schoudernaad op het armsgat.
 
-- Increase this option to shift the shoulder seam forward on the armhole side
-- Decrease this option to shift the shoulder seam backward on the armhole side
+- Verhoog deze optie om de schoudernaad vooruit aan de zijkant van het armsgat te verplaatsen
+- Verminder deze optie om de schoudernaad langs de zijkant van het armsgat te verplaatsen
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_s3armhole_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_s3armhole_sample.svg "Effect van deze optie op het patroon")
