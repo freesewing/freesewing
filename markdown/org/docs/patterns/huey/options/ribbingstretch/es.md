@@ -1,3 +1,3 @@
 ![Extensión de tejido acanalado](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Controla la cantidad de estiramiento a preesee en la cinta.
