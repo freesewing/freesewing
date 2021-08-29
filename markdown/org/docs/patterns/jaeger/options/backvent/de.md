@@ -1,9 +1,9 @@
 
 ![Hinterer Gehschlitz](backvent.svg)
 
-How do you like your back vents?
+Wie gefällt Ihnen Ihre Rückenventilierung?
 
- - Two back vents (shown on the left)
- - One central back vent (shown in the middle)
- - No back vents (shown on the right)
+ - Zwei hintere Schlote (links angezeigt)
+ - Ein zentraler hinterer Schlot (in der Mitte angezeigt)
+ - Keine Rückenschlitze (rechts angezeigt)
 
