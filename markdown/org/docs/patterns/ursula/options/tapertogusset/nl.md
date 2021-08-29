@@ -1,1 +1,1 @@
-This option controls the amount of exposed skin on the front.
+Deze optie bepaalt het aantal blootgestelde huid op de voorkant.
