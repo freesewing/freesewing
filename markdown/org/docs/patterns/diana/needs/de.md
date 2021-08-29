@@ -1,16 +1,16 @@
 
-To make Diana, you will need the following:
+Um Diana zu machen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 1.5 meter (or half of that if it's wide enough to fit the sleeves next tot he body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- Über 1. Meter (oder die Hälfte, wenn es breit genug ist, um die Ärmel als Nächstes den Körper zu passen) aus einem geeigneten Stoff ([siehe Stoffoptionen](/docs/patterns/diana/fabric))
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Ein Serger/Overlock ist schön, aber optional
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+Wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-If you do not have one of those, don't despair. You don't really need it. 
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich. 
+Da diese Seitennaht und Schulternähte nicht ausgedehnt werden, können Sie sie einfach mit einer regelmässigen geraden Nähte nähen.
 
 </Note>
