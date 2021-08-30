@@ -71,7 +71,7 @@
     "axios": "0.21.1",
     "react-intl": "^5.17.6",
     "prop-types": "^15.7.2",
-    "mocha": "^8.1.0",
+    "mocha": "^9.1.1",
     "chai": "^4.2.0",
     "chai-string": "^1.5.0",
     "@babel/register": "^7.10.5"
