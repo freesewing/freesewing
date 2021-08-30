@@ -2,21 +2,21 @@
 title: Corte
 ---
 
-Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself. Warning: The pattern includes the seam allowances on the top part so if you cut it on fold, don't include them!
+Dependiendo de la cantidad de tejido disponible, puede que desee cortar dos partes superiores o laterales, de ahí las instrucciones sobre el propio patrón. Advertencia: El patrón incluye los permisos de costura en la parte superior, así que si lo cortas en el pliegue, ¡no los incluyas!
 
-The brim bottom part is inset, while the brim top part is offset so that the seam falls "underneath the brim edge". Keep that in mind when cutting the parts, and mark them accordingly, so that you don't end up with the seam on top of the brim (I don't want to force you into this design choice, I simply want to point out the difference between the parts so that you are aware of it and act accordingly).
+La parte inferior del pórtico es insetada, mientras que la parte superior del pórtico es compensada para que la costura caiga "debajo del borde del pórtico". Téngalo en cuenta al cortar las piezas, y marcarlas como corresponda, para que no termines con la costura encima del brillo (no quiero forzarte a entrar en esta elección de diseño, Simplemente quiero señalar la diferencia entre las partes para que sean conscientes de ello y actúen en consecuencia).
 
- - **Main fabric**
-   - Cut **1 top** on the fold but don't include the center seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
-   - Cut **1 brim top**.
-   - Cut **1 brim bottom**.
- - **Lining fabric**
-   - Cut **1 top** on the fold but don't include the seam allowance, or **2 top** with the center seam allowance.
-   - Cut **1 side** on the fold, or **2 side**.
- - **Plastic**
-   - Cut **1 brim interfacing**. Tape the pattern part to the plastic, don't cut the notches in the plastic, but you can mark it (engrave it, or with permanent marker maybe). You don't really want any sharp edge, so make sure everything is smooth and rounded a bit (especially on the pointy sides).
+ - **Tela principal**
+   - Corta **1 parte superior** en el pliegue, pero no incluya la asignación de costura central, o **2 top** con la asignación de costura central.
+   - Corta **1 lado** en el plegado, o **2 lados**.
+   - Corta **1 brillo superior**.
+   - Corta **1 borde inferior**.
+ - **Tela fina**
+   - Corta **1 parte superior** en el pliegue, pero no incluya la franquicia de costura, o **2 top** con la franquicia de costura central.
+   - Corta **1 lado** en el plegado, o **2 lados**.
+ - **Plástico**
+   - Corta **1 interfaz**. Toca la parte del patrón al plástico, no cortes las notches en el plástico, pero puede marcarlo (grabarlo, o con un marcador permanente). Realmente no quieres ningún borde afilado, así que asegúrate de que todo esté un poco suave y redondeado (especialmente en los lados punticos).
 
-A typical Florent layout looks like this:
+Un diseño típico de Florent se ve así:
 
-![A typical Florent layout](layout.svg)
+![Una disposición típica de Florencia](layout.svg)

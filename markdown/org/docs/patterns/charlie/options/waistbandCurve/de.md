@@ -1,4 +1,4 @@
 
-Controls how curved the waistband is.
+Steuert die Kurven der Taille.
 
-Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+Dies zu erhöhen wird eine kurvenförmige Weste geben, die sie am oberen Rand der Weste kleiner macht.

@@ -1,9 +1,9 @@
 ![Pinces empiècement](yokedart.svg)
 
-Controls the dart at the bottom side of the yoke.
+Contrôle la fléchette en bas du jouet.
 
 <Note>
 
-Note that this dart is to compensate for a rounded back, not for sloping shoulders.
+Notez que ce dart est de compenser un dos arrondi, pas pour les épaules inclinées.
 
 </Note>

@@ -171,10 +171,10 @@ __6.__ (Optional) Machine-***Baste*** the visor to the crown along seam lines.
 __7.__ Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.  
 __8.__ Construct lining the same way as the crown ommitting ***Edgestitching*** and leaving a gap in the centre lining seam large enough to turn the hat.  
 __9.__ With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
-__10.__ Turn hat inside out, pressing lining to inside.  
-__11.__ ***Slipstitch*** lining opening closed.  
-__12.__ ***Understitch*** lining.  
-__13.__ Alternatively ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__10.__ Turn hat inside out, pressing lining to inside.   
+__11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed. 
+__13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
 __14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
@@ -241,7 +241,7 @@ That's it! You're all done. Now enjoy the world in your wonderful new hat whilst
 <Note>
 
 Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube tutorial that inspired this pattern:
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 

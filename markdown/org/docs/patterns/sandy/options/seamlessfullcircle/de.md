@@ -1,10 +1,10 @@
 
 ![Nahtloser Vollkreis](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
+Wählen Sie 'Ja' für einen nahtlosen Kreis, der auf ein doppeltes Falten zugeschnitten wird. Da es keine Öffnungen hat, brauchen Sie ein elastisches Band.
 
 <Note>
 
-This produces a full circle ignoring the *Circle percent* option.
+Dadurch wird ein vollständiger Kreis erzeugt, der die *Circle Prozent* Option ignoriert.
 
 </Note>

@@ -1,4 +1,4 @@
 
-Controls the vertical placement of the back pockets.
+Steuert die vertikale Platzierung der hinteren Taschen.
 
-Either closer to the waistband, or higher. Or further from the waistband, or lower.
+Entweder näher an die Weste oder höher. Oder weiter von der Weste oder niedriger.

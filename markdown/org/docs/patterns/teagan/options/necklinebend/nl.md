@@ -1,1 +1,1 @@
-Controls the curvature of the neck opening.
+Bepaalt de kromming van de halsopening.

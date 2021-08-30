@@ -24,9 +24,9 @@ languageInfo: Esta opción de idioma determina en qué idioma recibirá los corr
 language: Idioma
 languageTitle: Seleccione el idioma de su elección
 newPassword: Nueva contraseña
-newsletter: Newsletter
-newsletterTitle: Would you like to receive the FreeSewing newsletter?
-newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
+newsletter: Boletín
+newsletterTitle: '¿Le gustaría recibir el boletín de noticias FreeSewing?'
+newsletterInfo: Una vez cada 3 meses, enviamos nuestro boletín de noticias con contenido sano y honesto. Sin seguimiento, sin anuncios, sin sentido.
 passwordInfo: Cambiar tu contraseña requiere tu contraseña actual. Rellene eso, luego complete su nueva contraseña también.
 password: Contraseña
 passwordTitle: Ingrese su contraseña actual y su nueva contraseña
@@ -56,5 +56,5 @@ usernameTitle: Por favor, elija su nombre de usuario
 username: Nombre de usuario
 accountIsInactive: Tu cuenta está inactiva
 accountNeedsActivation: Antes de poder iniciar sesión, necesitas activar tu cuenta. Por favor, revisa tu bandeja de entrada para ver el correo electrónico de registro y haz clic en el enlace en él.
-reloadAccount: Reload account
-reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.
+reloadAccount: Recargar cuenta
+reloadAccountDescription: Esto recargará los datos de su cuenta desde el backend. Tiene el mismo efecto que cerrar sesión, y luego iniciar sesión de nuevo.

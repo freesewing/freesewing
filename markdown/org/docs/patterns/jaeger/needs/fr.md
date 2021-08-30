@@ -1,35 +1,35 @@
-To make Jaeger, you will need the following:
+Pour fabriquer Jaeger, vous aurez besoin des éléments suivants:
 
- - About two and a half meters of a suitable fabric (see [Fabric options](#fabric-options))
- - Lining fabric, optionally different sleeve lining fabric
- - Two larger buttons for the front, and 8 buttons for the sleeves
- - A bit of lightweight fusible interfacing for local enforcement
- - Canvas for the fronts and collar
- - Tailor's tape for the front edges
- - Some domette for interlining
- - Shoulder pads
- - Sleevehead wadding, with canvas if possible
- - Undercollar fabric
+ - Environ deux mètres et demi d'un tissu approprié (voir [Options de tissu](#fabric-options))
+ - Tissu doublé, tissu de doublure à manches différent
+ - Deux boutons plus gros pour le devant et 8 boutons pour les manches
+ - Un peu d'interface légère et fusible pour l'application locale
+ - Toile pour les devants et le col
+ - Ruban de tailleur pour les bords avant
+ - Quelques domettes pour l'intersection
+ - Tapis d'épaule
+ - Remontage de la tête de manche avec toile si possible
+ - Tissu de sous-col
 
 <Note>
 
-####### Where to get all this stuff
+####### Où obtenir toutes ces choses
  
-Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
+Faire de Jaeger un projet amusant et réalertant, mais obtenir toutes les pièces et les bits requis peut être un défi.
 
-That is because this kind of project is somewhat more ambitious than the typical home sewing project,
-and as a result, your local haberdashery is unlikely to stock all of these things.
+En effet, ce type de projet est un peu plus ambitieux que le projet typique de couture de maison.
+et en conséquence, votre haberdashery local ne va probablement pas stocker toutes ces choses.
 
-If you know where to get them, great. If not, you can get a **Jacket trim pack** from 
-[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in London, they ship to international customers.
+Si vous savez où les obtenir, génial. Si ce n'est pas le cas, vous pouvez obtenir un **pack de vestes** de 
+[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) à Londres, ils livrent à des clients internationaux.
 
-It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business 
-to place an order.
+C'est une boutique de professionnels (ils ne sont même pas ouverts le samedi), mais ils ne vous demandent pas d'être une entreprise 
+pour passer une commande.
 
-I have no afiliation with these guys, but it's the only place I know of that will sell you a kit of
-professional trimmings to make a jacket.
+Je n'ai pas de filiation avec ces gars, mais c'est le seul endroit que je connaisse qui vous vendra un kit de
+garnitures professionnelles pour faire une veste.
 
-If you know of any other place that carries this stuff, please let us know.
+Si vous connaissez un autre endroit qui porte cette chose, faites-le nous savoir.
 
 </Note>
 

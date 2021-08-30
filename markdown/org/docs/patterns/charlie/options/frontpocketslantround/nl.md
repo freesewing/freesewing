@@ -1,2 +1,2 @@
 
-Controls how far from the end of the slant we start rounding into the outseam.
+Bepaalt hoe ver van het einde van de schuine lijn we beginnen met afronden in de outseam.

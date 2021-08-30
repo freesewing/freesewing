@@ -2,6 +2,10 @@
 title: Longueur des pinces poitrine
 ---
 
-![The effect of the bust dart length option on the pattern](sample.png)
+![L'effet de l'option de la longueur de la poitrine sur le motif](sample.png)
 
-The **bust dart length** option controls the length of the bust dart. The maximum length brings the dart all the way to the bust apex.
+L'option **longueur de la dart de poitrine** contrôle la longueur de la fléchette. La longueur maximale amène le dart jusqu'au sommet de la poitrine.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_bustdartlength_sample.svg "Effet de cette option sur le motif")

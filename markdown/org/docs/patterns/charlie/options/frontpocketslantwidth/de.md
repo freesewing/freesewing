@@ -1,5 +1,5 @@
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Steuert die Breite, mit der die Vordertaschenschicht in die Vordertafel geschnitten wird.
 
-Increasing this will give a more slanted pocket.
+Dies zu erhöhen wird eine schlankere Tasche.
 

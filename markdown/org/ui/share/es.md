@@ -1,21 +1,21 @@
 ---
-title: Sharing links
+title: Enlaces compartidos
 ---
 
-Let the world know about FreeSewing. Puedes enlazar a cualquier página específica, o a la página de inicio: https://freesewing.org/
+Haga saber al mundo sobre FreeSewing. Puedes enlazar a cualquier página específica, o a la página de inicio: https://freesewing.org/
 
 You can use the images below, and make sure to [use the relevant hashtags](/community/hashtags/).
 
 <img src="/share/en.wide.png" alt="Somos FreeSewing" style="max-height: 25vh;" class="shadow" />
 
 
-For Instagram, you can use this square image:
+Para Instagram, puede utilizar esta imagen cuadrada:
 
 <img src="/share/en.square.png" alt="Somos FreeSewing" style="max-height: 25vh;" class="shadow" />
 
-The images above are also available in other langauges:
+Las imágenes de arriba también están disponibles en otros ángulos:
 
- - German: [wide](/share/de.wide.jpg) or [square](/share/de.square.jpg)
- - Spanish: [wide](/share/es.wide.jpg) or [square](/share/es.square.jpg)
- - French: [wide](/share/fr.wide.jpg) or [square](/share/fr.square.jpg)
- - Dutch: [wide](/share/nl.wide.jpg) or [square](/share/nl.square.jpg)
+ - Alemán: [ancho](/share/de.wide.jpg) o [cuadrado](/share/de.square.jpg)
+ - Español: [ancho](/share/es.wide.jpg) o [cuadrado](/share/es.square.jpg)
+ - Francés: [ancho](/share/fr.wide.jpg) o [cuadrado](/share/fr.square.jpg)
+ - Dueño: [ancho](/share/nl.wide.jpg) o [cuadrado](/share/nl.square.jpg)

@@ -2,6 +2,6 @@
 title: Distancia entre hombros
 ---
 
-The **shoulder to shoulder** measurement runs from the tip of your shoulder on one side across your back to the tip of your other shoulder.
+La medición del hombro **al hombro** corre desde la punta del hombro en un lado a través de la espalda hasta la punta del otro hombro.
 
-To measure your **shoulder to shoulder** find the edge of your shoulder where on a good fitting shirt the shoulder seam would sit. Then, measure from there across your back to the same point at the other side.
+Para medir tu hombro **a hombro** encuentra el borde de tu hombro donde en una buena camisa se sentaría la costura del hombro. Luego, medir de ahí a través de la espalda hasta el mismo punto en el otro lado.

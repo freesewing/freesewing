@@ -1,11 +1,11 @@
 ---
-title: Grainline and cut-on-fold indicator
+title: Getreide- und Faltenanzeige
 ---
 
-Grainlines — a line that indicates the *fabric grain* — look like this:
+Körnlinien – eine Linie, die das *Stoffkorn* anzeigt – sehen folgendermaßen aus:
 
 <Legend part="grainline" caption="A grainline indicator" >
 
-Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+Schneiden Sie die Indikatoren ähnlich aus, weisen Sie aber auf die Linie, auf der das Gewebe geklappt werden sollte:
 
 <Legend part="cutonfold" caption="A cut-on-fold indicator" >

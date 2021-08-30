@@ -1,21 +1,21 @@
 ---
-title: Sharing links
+title: Links delen
 ---
 
-Let the world know about FreeSewing. You can link to any specific page, or to the homepage: https://freesewing.org/
+Laat de wereld weten over FreeSewing. U kunt linken naar een specifieke pagina of naar de homepage: https://freesewing.org/
 
-You can use the images below, and make sure to [use the relevant hashtags](/community/hashtags/).
+Je kunt onderstaande afbeeldingen gebruiken en zorg ervoor dat [de relevante hashtags](/community/hashtags/) gebruikt.
 
-<img src="/share/en.wide.png" alt="We Are FreeSewing" style="max-height: 25vh;" class="shadow" />
+<img src="/share/en.wide.png" alt="Wij zijn FreeSewing" style="max-height: 25vh;" class="shadow" />
 
 
-For Instagram, you can use this square image:
+Voor Instagram kun je deze vierkante afbeelding gebruiken:
 
-<img src="/share/en.square.png" alt="We Are FreeSewing" style="max-height: 25vh;" class="shadow" />
+<img src="/share/en.square.png" alt="Wij zijn FreeSewing" style="max-height: 25vh;" class="shadow" />
 
-The images above are also available in other langauges:
+De bovenstaande afbeeldingen zijn ook in andere talen beschikbaar:
 
- - German: [wide](/share/de.wide.jpg) or [square](/share/de.square.jpg)
- - Spanish: [wide](/share/es.wide.jpg) or [square](/share/es.square.jpg)
- - French: [wide](/share/fr.wide.jpg) or [square](/share/fr.square.jpg)
- - Dutch: [wide](/share/nl.wide.jpg) or [square](/share/nl.square.jpg)
+ - Duits: [wide](/share/de.wide.jpg) of [vierkant](/share/de.square.jpg)
+ - Spaans: [wide](/share/es.wide.jpg) of [vierkant](/share/es.square.jpg)
+ - Frans: [wide](/share/fr.wide.jpg) of [vierkant](/share/fr.square.jpg)
+ - Nederlands: [wide](/share/nl.wide.jpg) of [vierkant](/share/nl.square.jpg)

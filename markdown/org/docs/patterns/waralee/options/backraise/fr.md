@@ -1,2 +1,2 @@
-This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+Ce réglage lève la taille dans le dos. Notre tour de taille ne s'assied pas horizontalement, mais est incliné à l'arrière. Ce réglage vous permet de le relever dans le dos si vous en avez besoin pour un bon ajustement.
 

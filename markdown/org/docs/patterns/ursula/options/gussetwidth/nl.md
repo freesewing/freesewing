@@ -1,1 +1,1 @@
-This options controls the width of the gusset.
+Deze optie bepaalt de breedte van de gusset.

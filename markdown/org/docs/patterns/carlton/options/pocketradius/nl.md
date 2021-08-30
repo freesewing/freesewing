@@ -1,4 +1,8 @@
 
-![Pocket radius](pocketradius.svg)
+![Ronding zak](pocketradius.svg)
 
-Controls the radius with which the pockets are rounded at the bottom.
+Bepaalt de straal waarmee de zakken aan de onderkant worden afgerond.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_pocketradius_sample.svg "Effect van deze optie op het patroon")

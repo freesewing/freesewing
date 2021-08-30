@@ -2,7 +2,7 @@
 title: Knopen, knoopsgaten en en drukknopen
 ---
 
-Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
+Knoppen en knoopsgaten kunnen in verschillende maten komen, maar hebben altijd dezelfde vorm die geeft hoe ze er in het echte leven uitzien:
 
 <Legend part="buttons" caption="A button is shown on the left, and a buttonhole on the right" >
 

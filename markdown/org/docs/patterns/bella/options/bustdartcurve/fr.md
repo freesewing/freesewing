@@ -2,6 +2,10 @@
 title: Courbe de la pince poitrine
 ---
 
-![The effect of the bust dart curve option on the pattern](sample.png)
+![L'effet de l'option courbe de la courbe de la poitrine sur le motif](sample.png)
 
-The **bust dart curve** option controls the curvature of the bust dart. From straight to slightly curved.
+L'option **courbe de fléchette** contrôle la courbure de la flèche de buste. De droite à légèrement courbé.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_bustdartcurve_sample.svg "Effet de cette option sur le motif")

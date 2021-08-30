@@ -1,10 +1,12 @@
-![Collar gap](collargap.svg)
+![Kragenlücke](collargap.svg)
 
-Distance the collar sits apart when closed.
+Distanz beim Schließen des Kragens.
 
 <Note>
 
-This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accomodate a wider tie (knot).
+Dies ist eigentlich eine Stilwahl, aber eine breitere Kragenspalte (zusammen mit dem Kragenwinkel) kann eine breitere Krawatte (Knoten) aufnehmen.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collargap_sample.svg "Effekt dieser Option auf das Muster")

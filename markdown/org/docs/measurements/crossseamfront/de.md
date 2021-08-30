@@ -2,12 +2,12 @@
 title: Taille-Schritt
 ---
 
-The **cross seam front** is the front part of the [cross seam](/docs/measurements/crossseam/) measurement.
+Die **Kreuznaht vorne** ist der vordere Teil der [Kreuznaht](/docs/measurements/crossseam/) Messung.
 
-To measure your **cross seam front** tie a string around your waist. Then, measure down from the center front of your waist until the spot that is:
+Um Ihre **Quernaht vorne** zu messen, binden Sie einen String um Ihre Taille. Then, measure down from the center front of your waist until the spot that is:
 
- - Where the fork of a tight-fitting pair of trousers would sit
- - At the base of your scrotum
- - Somewhere towards the front of your perineum
+ - Wo die Gabelung eines eng angebrachten Paares von Hosen sitzen würde
+ - An der Basis deines Hodensacks
+ - Irgendwo in Richtung Vorderseite deines Perineums
 
 

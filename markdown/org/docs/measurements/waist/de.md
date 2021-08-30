@@ -2,6 +2,6 @@
 title: Taillenweite
 ---
 
-The **waist circumference** measurement is the circumference of your waist below your ribcage.
+Der **Taillenumfang** ist der Umfang der Taille unter dem Brustkorb.
 
-To measure your **waist circumference**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal.
+Um deinen **Taillenumfang**zu messen, wickele das Klebeband um den engsten Teil deiner Taille herum und achte darauf, es horizontal zu halten.

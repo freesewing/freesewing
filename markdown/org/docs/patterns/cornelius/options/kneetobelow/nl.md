@@ -2,5 +2,5 @@
 title: Lengte manchet
 ---
 
-Controls the length of the cuff.
+Bepaalt de lengte van de manchet.
 

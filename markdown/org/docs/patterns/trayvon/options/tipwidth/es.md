@@ -1,11 +1,11 @@
 ![Ancho de la punta](topwidth.svg)
 
-The tip width is the width at the tip of the tie.
+El ancho de la punta es el ancho en la punta del empate.
 
-How wide your tie is at the tip is a style choice.
+Cuán ancho es su corbata en la punta es una elección de estilo.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+No hacer que el ancho de la punta sea menor que el ancho del nudo
 
 </Note>

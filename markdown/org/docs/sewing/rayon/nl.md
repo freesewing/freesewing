@@ -4,7 +4,7 @@ title: Rayon
 
 ![Ik gebruik rayon voor mijn ondergoed](rayon.jpg)
 
-Rayon, sometimes referred to as viscose, is a synthetic fiber. De vezel wordt gemaakt uit houtpulp, maar er is een heel chemisch proces nodig om er stof van te maken.
+Rayon, soms viscose, is een synthetische vezel. De vezel wordt gemaakt uit houtpulp, maar er is een heel chemisch proces nodig om er stof van te maken.
 
 Aangezien rayon een vezel is (zoals katoen) hangt het type van de stof af van de manier waarop de vezel verwerkt en geweven wordt. Over het algemeen is rayon echter een veelzijdige stof die glad aanvoelt, soepel valt en een beetje glibberig verwerkt.
 

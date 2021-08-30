@@ -1,2 +1,2 @@
-This option will reduce the circumference of the skirt at the hem. Percentage of the seat measurement.
+Esta opción reducirá la circunstancia de la travesía en el sombrero. Porcentaje de la medida del asiento.
 

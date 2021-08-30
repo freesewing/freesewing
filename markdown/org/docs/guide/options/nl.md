@@ -1,11 +1,11 @@
 ---
-title: Configuring your pattern
+title: Je patroon configureren
 order: 998
 ---
 
-When you [create a pattern](/create/) there are two important groups of things you can tweak:
+Wanneer je [een patroon](/create/) maakt, zijn er twee belangrijke groepen dingen die je kunt aanpassen:
 
- - The **design options** are options the designer added to the pattern. Typically style and fit choices.
- - The **pattern options** are a set of options that come with the platform, and are available for all patterns. Below is a complete list:
+ - De **ontwerpopties** zijn opties die de designer aan het patroon heeft toegevoegd. Meestal stijl en juiste keuzes.
+ - De **patroonopties** zijn een set van opties die bij het platform komen en zijn beschikbaar voor alle patronen. Hieronder is een volledige lijst:
 
 <ReadMore list />

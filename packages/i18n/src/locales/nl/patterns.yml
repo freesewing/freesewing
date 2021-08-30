@@ -3,11 +3,11 @@ aaron:
   description: Aaron is een sportief mouwloos hemdje of onderhemd.
   title: Aaron Onderhemd
 albert:
-  description: Albert is an apron.
-  title: Albert apron
+  description: Albert is een vork.
+  title: Albert schort
 bella:
-  description: Bella is a basic body block for people with breasts.
-  title: Bella body block
+  description: Bella is een basisorgaan voor mensen met borsten.
+  title: Bella lichaam blok
 benjamin:
   description: Benjamin is een vlinderdas met vier verschillende mogelijke vormen.
   title: Benjamin vlinderdas
@@ -15,16 +15,16 @@ bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
 breanna:
-  description: Breanna is a basic body block for people with breasts.
+  description: Breanna is een basislichaam voor mensen met borsten.
   title: Breanna basispatroon
 brian:
-  description: Brian is a basic body block for people without breasts.
+  description: Brian is een basislichaam voor mensen zonder borsten.
   title: Brian Basisvorm
 bruce:
   description: Bruce is een boxershort die zowel comfortabel als stylish is.
   title: Bruce boxershort
 carlita:
-  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'De versie voor borsten van onze Carlton jas, aka Sherlock Holmes jas.'
   title: Carlita jas
 carlton:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een heel mooie jas zoekt.'
@@ -33,11 +33,11 @@ cathrin:
   description: Cathrin is een underbust korset of waist trainer.
   title: Cathrin korset
 charlie:
-  description: Charlie is a chino trouser pattern.
+  description: Charlie is een chino broekpatroon.
   title: Charlie chinos
 cornelius:
-  description: Cornelius are cycling breeches based on the Keystone drafting method.
-  title: Cornelius cycling breeches
+  description: Cornelius zijn broeders aan het fietsen op basis van de methode van Sleutelsteen.
+  title: Cornelius fietsen boren
 diana:
   description: Diana is een top met een gedrapeerde halslijn.
   title: Diana top met drapage
@@ -49,10 +49,10 @@ florence:
   title: Florence mondmasker
 holmes:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt.'
-  title: Holmes deerstalker hat
+  title: Holmes deerstanker hoed
 hortensia:
-  description: 'Hortensia is a handbag.'
-  title: Hortensia handbag
+  description: 'Hortensie is een handzak.'
+  title: Hortensia handtas
 huey:
   description: Huey is een trui met kap met een rits, en optionele voorzakken.
   title: Huey Hoodie
@@ -72,10 +72,10 @@ sandy:
   description: Sandy is een veelzijdig patroon voor een cirkelrok.
   title: Sandy cirkelrok
 shin:
-  description: Shin are athletic swim trunks.
+  description: Shin is atletische zwembroek.
   title: Shin zwembroek
 simon:
-  description: Simon is a highly adaptable shirt pattern for people without breasts.
+  description: Simon is een zeer flexibel hemdpatroon voor mensen zonder borsten.
   title: Simon hemd
 simone:
   description: Simone is simon, aangepast aan borsten.
@@ -99,7 +99,7 @@ trayvon:
   description: Trayvon is een das zoals het hoort, voor een professioneel resultaat.
   title: Trayvon das
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern.
+  description: Ursula is een fundamenteel, zeer aanpasbaar ondergoed patroon.
   title: Ursula undies
 wahid:
   description: Wahid is een klassiek aansluitend gilet.

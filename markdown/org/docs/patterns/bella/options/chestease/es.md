@@ -2,6 +2,10 @@
 title: Holgura de pecho
 ---
 
-![The effect of the chest ease option on the pattern](sample.png)
+![El efecto de la opción de facilidad del cofre sobre el patrón](sample.png)
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+La opción de **facilidad de cofre** controla la cantidad de facilidad en la parte más completa del cofre.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_chestease_sample.svg "Efecto de esta opción en el patrón")

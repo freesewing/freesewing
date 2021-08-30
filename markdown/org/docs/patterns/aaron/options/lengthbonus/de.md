@@ -1,5 +1,9 @@
-![The length bonus option on Aaron](./lengthbonus.svg)
+![Die Längen-Bonus-Option für Aaron](./lengthbonus.svg)
 
-How much longer than the default length to make your top.
+Wie viel länger als die Standardlänge, um Ihr Top zu bilden.
 
-> This option allows negative values, which will shorten/crop the top.
+> Diese Option erlaubt negative Werte, die die Oberseite verkürzen/zuschneiden.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_lengthbonus_sample.svg "Effekt dieser Option auf das Muster")

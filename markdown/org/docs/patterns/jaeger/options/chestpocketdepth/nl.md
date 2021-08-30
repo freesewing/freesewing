@@ -1,2 +1,2 @@
 
-Controls the depth of the chest pocket.
+Bepaalt de diepte van de borstzak.

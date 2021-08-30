@@ -1,17 +1,17 @@
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce se compone de una espalda y dos lados, insets y frontales.
 
- - **Main fabric**
+ - **Tela principal**
    - Corta **1 trasero** al lomo
-   - Cut **2 fronts**
-   - Cut **2 insets**
-   - Cut **2 sides**
+   - Cortar **2 frentes**
+   - Corta **2 insets**
+   - Cortar **2 lados**
 
 <Warning>
 
-###### Caveats
+###### Cuerdas
 
-- **back**: Extra hem allowance at the leg
-- **front**: Cut this **twice**
+- **atrás**: Permiso extra para la pierna
+- **frontal**: Corta esto **dos veces**
 
 </Warning>
 

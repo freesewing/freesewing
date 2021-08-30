@@ -1,8 +1,8 @@
 ---
-- title:Fabric options
+- 'título: Opciones de tela'
 ---
 
-For the main fabric of your cap, a thick fabric will shape better, but if you go for a lighter fabric, you can interface it to give it more body.
+Para la tela principal de tu tapón, un tejido grueso se formará mejor, pero si vas por un tejido más ligero, puedes interactuar para darle más cuerpo.
 
-The lining can be anything, but it is usually something light and nice.
+El revestimiento puede ser cualquier cosa, pero suele ser algo ligero y agradable.
 

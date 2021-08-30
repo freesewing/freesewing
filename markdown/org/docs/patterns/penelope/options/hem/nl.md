@@ -1,2 +1,2 @@
-The size of the hem. 
+De grootte van de zoom. 
 

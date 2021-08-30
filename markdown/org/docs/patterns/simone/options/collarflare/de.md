@@ -1,10 +1,12 @@
-![Collar flare](collarflare.svg)
+![Kragenausstellung](collarflare.svg)
 
-How much the collar flares out (at the collar edge side), rather than being straight.
+Wie sehr der Kragen ausbricht (am Rand des Kragens), anstatt gerade zu sein.
 
 <Note>
 
-This influences the length of your collar tips.
+Dies beeinflusst die Länge Ihrer Kragenspitzen.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collarflare_sample.svg "Effekt dieser Option auf das Muster")

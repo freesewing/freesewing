@@ -1,5 +1,9 @@
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+La cantidad para extender la manga más allá de la longitud de la manga en el bloque base.
 
-> #### This is not supposed to be zero<
+> #### Esto no debe ser cero<
 > 
-> Setting this to zero will make the sleeve length the same as the base length of the Bent block, which is certainly too short for a coat. Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
+> Setting this to zero will make the sleeve length the same as the base length of the Bent block, which is certainly too short for a coat. Tenga en cuenta el valor por defecto y utilice esto como base para alargar o acortar la manga.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bent_sleevelengthbonus_sample.svg "Efecto de esta opción en el patrón")

@@ -1,35 +1,35 @@
  - **Tissu principal**
-   - Cut **1 tip**
-   - Cut **1 tail**
+   - Couper **1 pourboire**
+   - Couper **1 queue**
  - **Tissu de doublure**
-   - Cut **1 lining tip**
-   - Cut **1 lining tail**
-   - Cut **1 loop**
+   - Couper **1 pourboire**
+   - Couper **1 queue de doublure**
+   - Couper **1 boucle**
  - **Entoilage**
-   - Cut **1 interfacing tip**
-   - Cut **1 interfacing tail**
+   - Couper **1 fond d'interfaçage**
+   - Couper **1 queue interfacée**
 
 <Warning>
 
-###### Caveat
+###### Avertissement
 
- - There is no seam allowance on the **interfacing** parts and the **loop**
- - The **lining** **tip** and **tail** have only seam allowance at the tip
- - The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+ - Il n'y a pas de marge de couture sur les pièces **interface** et sur la **boucle**
+ - Le **lining** **tip** et **tail** ont seulement une marge de couture à la pointe
+ - Le **tissu** **tip** et **tail** n'ont qu'une marge de couture à la pointe et au centre
 
 </Warning>
 
 <Tip>
 
-###### Choosing your tie grain
+###### Choisir votre grain de cravate
 
-![One fabric, different grains, different ties. Don't worry about rules, make what you like](tie-grain.png)
+![Un tissu, différents grains, différents liens. Ne vous inquiétez pas des règles, faites ce que vous aimez](tie-grain.png)
 
-This pattern does not include a grain line. The grain line is typically printed on the pattern to show you how to place your pattern on your fabric, relative to the fabric's grain.
+Ce modèle n'inclut pas de ligne de grain. La ligne de grain est généralement imprimée sur le motif pour vous montrer comment placer votre patron sur votre tissu, par rapport au grain du tissu.
 
-For a tie, how you do this is not so much a rule as it is a personal choice. As such, there is no grain line printed on the pattern. You can do what you want.
+Pour une égalité, la façon dont vous faites cela n'est pas tant une règle que c'est un choix personnel. À ce titre, il n'y a pas de ligne de grain imprimée sur le modèle. Vous pouvez faire ce que vous voulez.
 
-That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
+Cela étant dit, beaucoup de liens sont coupés, car cela donne le meilleur résultat. Si vous ne savez pas quoi faire, pensez à couper votre cravate sur un parti.
 
 Si tout cela semble très confus, puis-je suggérer de lire la page d'aide sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 

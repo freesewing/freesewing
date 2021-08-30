@@ -1,4 +1,4 @@
 
-If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.
+Als je een elastische zoom aan de enkel gebruikt, gebruik dit om de breedte van het elastiek die je gebruikt in te stellen.
 
-In other words, this will control the height of the cuff.
+Met andere woorden, dit bepaalt de hoogte van de manchet.

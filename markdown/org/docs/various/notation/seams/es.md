@@ -1,7 +1,7 @@
 ---
-title: Seams
+title: Costuras
 ---
 
-Seams (the lines on which you sew) are indicated by a solid line. The color of the line indicates the fabric type of the pattern piece:
+Las costuras (las líneas sobre las que coser ) son indicadas por una línea sólida. El color de la línea indica el tipo de tela de la pieza de patrón:
 
 <Legend part="fabricLines" caption="Seamlines for different fabric types" >

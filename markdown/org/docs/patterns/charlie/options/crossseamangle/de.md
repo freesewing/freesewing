@@ -1,4 +1,4 @@
 
-Controls the start of the crossseam at the back fork point.
+Steuert den Start der Kreuzung am hinteren Gabelpunkt.
 
-This will influence how the trousers fit around your bum.
+Das beeinflusst die Passform der Hose um das Bum.

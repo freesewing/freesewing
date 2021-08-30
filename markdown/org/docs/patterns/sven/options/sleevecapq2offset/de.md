@@ -1,6 +1,6 @@
-![The offset in the second quarter of the sleevecap](./sleevecapq2offset.svg)
+![Der Versatz im zweiten Quartal der Ärmel](./sleevecapq2offset.svg)
 
-This option controls the offset in the second quadrant of the sleevecap.
+Diese Option steuert den Versatz im zweiten Quadranten der Ärmel.
 
 <Tip>
 
@@ -9,3 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sven_sleevecapq2offset_sample.svg "Effekt dieser Option auf das Muster")

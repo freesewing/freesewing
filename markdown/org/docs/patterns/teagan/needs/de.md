@@ -1,5 +1,5 @@
 
-To make Teagan, you will need the following:
+Um Teagan zu machen, benötigst du Folgendes:
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - Etwa 1 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/teagan/fabric))
 
@@ -7,8 +7,8 @@ To make Teagan, you will need the following:
 
 <Note>
 
-##### A serger/overlock is nice, but optional
-<p>As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.</p>
-<p>If you do not have one of those, don’t despair. You don’t really need it. All serged seams on the Teagan T-shirt can also be sewn with a narrow zigzag stitch (~2 mm wide) on a standard sewing machine.</p>
+##### Ein Serger/Overlock ist schön, aber optional
+<p>Wie bei allen Strickwaren und Stretchgeweben wird Ihnen ein Serger/Overlock das Leben erleichtern.</p>
+<p>Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich. Alle Nähte auf dem Teagan T-Shirt können auch mit einem schmalen Zickzackstich (~2 mm breit) auf einer Standardnähmaschine genäht werden.</p>
 
 </Note>

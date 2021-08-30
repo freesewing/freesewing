@@ -1,8 +1,12 @@
----
----
+- - -
+- - -
 
-Controls the shoulder seam location on the armhole side.
+Controla la ubicación de la costura del hombro en el lado del orificio.
 
-- Increase this option to shift the shoulder seam forward on the armhole side
-- Decrease this option to shift the shoulder seam backward on the armhole side
+- Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del blindaje
+- Disminuye esta opción para desplazar la costura del hombro hacia atrás en el lado del blindaje
 
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_s3armhole_sample.svg "Efecto de esta opción en el patrón")

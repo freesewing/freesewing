@@ -1,10 +1,10 @@
-All suiting fabrics are a great choice for your waistcoats. Any fabric shop that's worth your business should have a suiting section. You can just walk in, ask where you can find the fabric for suits, and pick out something you like.
+Tous les tissus s’adaptent parfaitement à vos coussins de taille. Toute boutique en tissu qui vaut la peine à votre entreprise devrait avoir une section qui s'adapte à vos besoins. Vous pouvez simplement entrer, demander où vous pouvez trouver le tissu pour des costumes, et choisir quelque chose que vous aimez.
 
-These fabrics are typically wool, but you can also be a bit more creative and go for something else.
+Ces tissus sont généralement lainés, mais vous pouvez aussi être un peu plus créatif et aller pour autre chose.
 
 <Note>
 
-You do need a bit of weight though. Denim is fine, some light cotton is not.
+Vous avez cependant besoin d'un peu de poids. Le Denim est très bien, pas du coton léger.
 
 </Note>
 

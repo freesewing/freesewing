@@ -2,28 +2,28 @@
 title: Privacy melding
 ---
 
-**Last update**: 8 January 2021
+**Laatste update**: 8 januari 2021
 
 Deze privacy melding beschrijft de persoonlijke gegevens die we opslaan. We geven aan waarom we de gegevens nodig hebben, hoe lang we ze bijhouden en of ze met derden gedeeld worden.
 
 We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden.
 
-For clarity, we've broken this up in four different types of roles:
+Voor de duidelijkheid hebben we dit in vier verschillende rollen opgesplitst:
 
- - For **visitors of our website**, we store **[visitor data][v]**
- - For **subscribers to our newsletter**, we store **[subscriber data][s]**
- - For **users with an account** on our website, we store **[account data][a]**
- - For **users with an account that contains people**, we store **[people data][p]**
+ - Voor **bezoekers van onze website**slaan we **[bezoekersgegevens op][v]**
+ - Voor **abonnees op onze nieuwsbrief**slaan we **[ontvangersgegevens op][s]**
+ - Voor **gebruikers met een account** op onze website slaan we **[account gegevens op][a]**
+ - Voor **gebruikers met een account met mensen**slaan we **[personen gegevens op][p]**
 
-Here are the relevant sections:
+Hier zijn de relevante secties:
 
 <ReadMore list />
 
 <Tip>
 
-##### These roles are typically cumulative
+##### Deze rollen zijn meestal cumulatief
 
-If you are a newsletter subscriber, you are also a visitor.
+Als je een nieuwsbriefabonnee bent, ben je ook bezoeker.
 En als je een gebruiker bent met één of meer modellen ben je ook een gebruiker, en een bezoeker.
 
 </Tip>
@@ -36,7 +36,7 @@ Voor vragen over de privacy melding kan je Joost De Cock contacteren via joost@j
 
 Dit beleid kan af en toe een update krijgen. Dit zal aangegeven worden in de **Laatste update** gegevens bovenaan dit document.
 
-A more comprehensive overview of this document's history is [available on GitHub][1]
+Een completer overzicht van de geschiedenis van dit document is [beschikbaar op GitHub][1]
 
 ##### Zie ook
 

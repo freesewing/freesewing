@@ -1,225 +1,225 @@
 ---
-title: Double welt pockets
+title: Bolsillos de doble soldadura
 ---
 
-## Video
+## Vídeo
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Learn welts with David Page Coffin
+## Aprender soldaduras con David Page Coffin
 
 The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
 
 David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
 
-David is a friend of the site, and by all measures much better at explaining this than I am.
+David es un amigo del sitio, y por todas las medidas mucho mejores para explicarlo que yo.
 
-## Before you start
+## Antes de empezar
 
-### What you need
+### Lo que necesitas
 
-To make double welt pockets, you will need:
+Para hacer bolsillos de doble soldadura, necesitarás:
 
  - Suministros básicos de costura
- - The fabric or pattern piece you want to make the pocket in
- - Two fabric strips for the welts
- - A strip of interfacing
- - Lining or other suitable fabric for the pocket bag (See fabric and colour options)
- - Facing for the pocket bag, depending on your fabric and colour options
+ - El tejido o patrón en el que quieres hacer el bolsillo
+ - Dos tiras de tela para las soldaduras
+ - Una tira de interfaz
+ - Tejido o de otro tipo adecuado para la bolsa de bolsillo (Ver tela y opciones de color)
+ - Encara para la bolsa de bolsillo, dependiendo de las opciones de tejido y color
 
-### Parameters
+### Parámetros
 
-Two values determine the size of your double welt pocket. Estas son:
+Dos valores determinan el tamaño de su bolsillo de doble soldadura. Estas son:
 
- - The pocket width: This is the width of the opening of the finalized double welt pocket
- - The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+ - Ancho del bolsillo: Este es el ancho de la apertura del bolsillo de doble soldadura finalizado
+ - La altura de la soldadura: Esta es la altura de una soldadura, y esta mitad de la altura de nuestro bolsillo de doble soldadura
 
-> In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
+> En el ejemplo de abajo, uso un ancho de bolsillo de 13 cm y una altura de soldadura de 0,5 cm
 
 ## Corte
 
-### Pocket welts
+### Soldaduras de bolsillo
 
-The welts are two rectangular strips of fabric with the following measurements:
+Las soldaduras son dos bandas rectangulares de tejido con las siguientes medidas:
 
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
+ - Longitud: Ancho de bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
 
-For our example:
+Por ejemplo:
 
  - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Ancho: (0,5x2)+5 = 6cm
 
-They will form the two narrow strips of fabric that form your double welt pocket.
+Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldadura.
 
-> Make sure to respect the grainline when cutting the two welts
+> Asegúrate de respetar la línea de grano al cortar las dos soldaduras
 
 ### Entretela de bolsillo
 
-The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
+La interfaz del bolsillo es una sola tira rectangular de interfaz fusible con las siguientes medidas:
 
- - Length: Pocket widht + 4cm
- - Width: Welt height x2 + 5cm
+ - Longitud: Ancho bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
 
-For our example:
-
- - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
-
-> You may have noticed that the interfacing is the same size as a welt
-
-The interfacing is used to stabalize the pocket, and will be fused to the fabric with your iron.
-
-### Optional: Pocket facing
-
-The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
-
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
-
-For our example:
+Por ejemplo:
 
  - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Ancho: (0,5x2)+5 = 6cm
 
-> You may have noticed that the facing is the same size as a welt
+> Puede haber notado que la interfaz es del mismo tamaño que una soldadura
 
-The facing is what you'll see when you peer through the opening of your pocket.
+La interfaz se utiliza para apuñalar el bolsillo y se fusionará con la tela con tu hierro.
 
-The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
+### Opcional: Pocket hacia
+
+La cara (opcional) del bolsillo es una sola tira rectangular de tela con las siguientes medidas:
+
+ - Longitud: Ancho de bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
+
+Por ejemplo:
+
+ - Length: 13+4 = 17cm
+ - Ancho: (0,5x2)+5 = 6cm
+
+> Puede que hayas notado que la cara es del mismo tamaño que una soldadura
+
+El rostro es lo que verás cuando pares a través de la apertura de tu bolsillo.
+
+El revestimiento es opcional, si no lo usas, con el bolsillo mostrará cualquier material del que esté hecho la bolsa.
 
 ### Bolsa de bolsillo
 
-The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
+La forma de la bolsa de bolsa depende del patrón. Para la simplicidad, voy a usar una bolsa rectangular de bolsillo con esquinas redondeadas en la parte inferior como se puede encontrar en los bolsillos traseros de pantalones.
 
-> There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
+> Normalmente hay una versión más larga y corta de la bolsa de bolsillo. Esto se debe a que un lado está unido a la soldadura superior, mientras que el otro se une a la soldadura inferior.
 
-## Construction
+## Construcción
 
-### Step 1: Fuse interfacing in place
+### Paso 1: Fusionar interfaz en su lugar
 
-![Fuse interfacing in place](step01.png)
+![Fusionar interfaz en su lugar](step01.png)
 
-Fuse the pocket interfacing to the bad side of your garment, so that it covers the place where you will make the welt pocket.
+Fusionar el bolsillo con el lado malo de su ropa, para que cubra el lugar donde usted hará el bolsillo de soldadura.
 
-> Patterns typically have notches that help you determine the placement of a welt pocket
+> Los patrones típicamente tienen notches que le ayudan a determinar la colocación de un bolsillo de soldado
 
-### Step 2: Mark the welt pocket on the good side of the fabric
+### Paso 2: Marca el bolsillo de la soldadura en el buen lado de la tela
 
-![Mark the welt pocket on the good side of the fabric](step02.png)
+![Marca el bolsillo de soldadura en el buen lado de la tela](step02.png)
 
-Mark the welt pocket as follows:
+Marca el pocket de la siguiente forma:
 
- - Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
- - Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
- - Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+ - Marca el ancho del bolsillo con las líneas verticales. Dejar que estas líneas se extiendan para ayudarte a alinear las soldaduras más tarde
+ - Alinear la apertura central del bolsillo con una línea horizontal. Deja que se extienda para ayudarte a alinear las soldaduras más tarde
+ - Marca dos líneas horizontales paralelas a la línea central, en un desplazamiento igual a la altura de la soldadura (0,5 cm en nuestro ejemplo)
 
-The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
+La parte de las líneas horizontales paralelas a la línea central que caen entre las líneas de vértices es donde cosecharemos nuestras soldaduras en su lugar. Esto se ve reflejado en las líneas rojas.
 
-### Step 3: Fold and press the welts
+### Paso 3: Plegar y pulsar las soldaduras
 
-![Fold and press the welts](step03.png)
+![Plegar y pulsar las soldaduras](step03.png)
 
-Fold the welts parallel with the long side, with the good side out.
+Doblar las soldaduras paralelas con el lado largo, con el lado bueno.
 
-Don't fold them in half. Instead make one side 1cm longer than the other.
+No los dobléis a la mitad. En lugar de ello, hace que un lado sea más largo que el otro.
 
-Press the fold so that it becomes a sharp crease.
+Presione el pliegue para que se convierta en un pliegue afilado.
 
-> By offsetting the edges, the welt edge tapers off, which reduces bulk and visibility on the outside of the garment.
+> Al contraponer los bordes, el borde de la soldadura se atenúa, lo que reduce la visibilidad en el exterior de la prenda.
 
-### Step 4: Sew welts in place
+### Paso 4: Soldaduras de Súper
 
-![Sew welts in place](step04.png)
+![Soldadura en su lugar](step04.png)
 
-> In the images above, the dashed black line is the center of the welt. The red line shows where to sew, and the green line is a seam that has already been sewn.
+> En las imágenes de arriba, la línea negra de guiones es el centro de la soldadura. La línea roja muestra dónde coser y la línea verde es una costura que ya ha sido cocida.
 
-Place the welt on the good side of your garment with the shorter folded side down, and center it horizontally.
+Coloque la soldadura en el lado bueno de su prenda con el lado inferior doblado hacia abajo, y centémosla horizontalmente.
 
-Align the folded side with the center of the welt pocket, and now shift it twice the Welt Height (WH) outwards.
+Alinear el lado plegado con el centro del bolsillo de la soldadura, y ahora desplazarlo el doble de la Altura del Mundo (WH) hacia afuera.
 
-In our example with a Welt Height of 0.5cm, the fold of your welt lies 1cm from the welt pocket center.
+En nuestro ejemplo con una Altura del Mundo de 0.5cm, el pliegue de su soldadura se encuentra a 1cm del centro del bolsillo soldado.
 
-Sew your welt in place 0.5cm (WH) from the fold, or in other words, precisely on the line you marked on your garment.
+Mantenga su soldadura en su lugar 0,5 cm (WH) del pliegue o, en otras palabras, exactamente en la línea que marcó en su prenda.
 
-Make sure to start and stop precisely on the vertical lines that indicate the pocket width.
+Asegúrate de comenzar y detenerte con precisión en las líneas verticales que indican la anchura del bolsillo.
 
-When you're done, sew the second welt in place. Note that this will be a bit more tricky as you'll have to fold back the first welt, and lay part of your second welt over it.
+Cuando hayas terminado, coser la segunda soldadura en su lugar. Ten en cuenta que esto será un poco más complicado ya que tendrás que doblar la primera soldadura, y poner parte de su segunda soldadura sobre ella.
 
-### Step 5: Cut open your pocket
+### Paso 5: Corta tu pocket
 
-![Cut open your pocket](step05.png)
+![Corta tu pocket](step05.png)
 
-> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams.
+> En la imagen, la línea roja marca cómo cortar el bolsillo y la línea verde muestra las costuras.
 
-Cut open your welt pocket by cutting along the center horizontal line. Stop short of the vertical lines that mark the sides of the pocket and cut under 45 degrees to the edge of your line of stitching that holds the welts down.
+Corta tu bolsillo de soldadura cortando a lo largo de la línea horizontal central. Parar a corto de las líneas verticales que marcan los lados del bolsillo y cortan menos de 45 grados hasta el borde de su línea de unión que mantiene las soldaduras hacia abajo.
 
 
-> Make sure to not cut into your stitches or cut too far. Make it precise.
+> Asegúrate de no cortar en tus cintas ni cortar demasiado lejos. Hagamos que sea precisa.
 
-### Step 6: Flip the welts to the other side and press
+### Paso 6: Invierte las soldaduras al otro lado y presiona
 
-![Flip the welts to the other side and press](step06.png)
+![Invierte las soldaduras al otro lado y presiona](step06.png)
 
-You have been sewing your welts to the good side of the fabric. Now, we are going to flip them to the back side, through the opening we just cut in the fabric.
+Has estado cosiendo tus soldaduras a la buena cara del tejido. Ahora vamos a volcarlos a la parte trasera, a través de la apertura que acabamos de cortar en el tejido.
 
-Flip the welts to the back, and press them flat. Take your time to work the fabric into a neat rectangle before you press it down.
+Girar las soldaduras hacia la espalda y presionarlas en plano. Tómese su tiempo para trabajar la tela en un buen rectángulo antes de presionarla.
 
-> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side
+> Asegúrate de pulsar las piezas triangulares de la tela (en el borde corto de tu abertura) hacia el lado
 
-> You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
+> Estás presionando varias capas de tela. Considere presionar (o abrir) las capas individualmente antes de presionarlas juntos. Esto dará un pliegue más afilado, y un bolsillo de soldadura más limpio.
 
-### Step 7: Sew the pocket opening sides to the welts
+### Paso 7: Pase los lados de apertura del bolsillo a las soldaduras
 
-![Sew the pocket opening side to the welt on one side](step07a.png) ![And repeat on the other side](step07b.png)
+![Difunde el lado de apertura del bolsillo a la soldadura en un lado](step07a.png) ![Y repetir en el otro lado](step07b.png)
 
-Put your garment down with the good side up, and fold it back on the side of your welt pocket, making sure to keep your welts lying flat.
+Pon tu ropa abajo con el lado bueno, y llévalo de nuevo en el lado de su bolsillo de soldadura, asegurándose de mantener sus soldaduras llanas.
 
-Sew the triangular piece of fabric from the pocket opening to the welts.
+Difunde la pieza triangular de tela desde la apertura del bolsillo a las soldaduras.
 
-> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
+> Asegúrate de no coser en la apertura del bolsillo, ya que esto mostrará las stitches en la parte frontal
 
-### Step 8: Sew the bottom pocket bag to the bottom welt
+### Paso 8: Pase la bolsa de bolsillo inferior a la soldadura inferior
 
-![Sew the bottom pocket bag to the botom welt](step08.png)
+![Difunde la bolsa de bolsillo inferior en la soldadura de los arsenales](step08.png)
 
-Fold your garment out of the way so you can sew the pocket bag to the lower welt.
+Ponga su ropa fuera del camino para que pueda coser la bolsa de bolsa a la parte inferior.
 
-Also finish the edge of the welt with a zig-zag stitch so the welt stays flat inside the pocket.
+También acabe el borde de la soldadura con un zig-zag stitch para que la soldadura se quede plana dentro del bolsillo.
 
-> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
+> La bolsa de bolsa se muestra en tela de revestimiento aquí (verde) mucha claridad. También puedes hacer tus bolsas de bolsillo desde otras telas.
 
-### Step 9: Optional: Sew facing to top pocket bag
+### Paso 9: Opcional: Empuje mirando a la bolsa de bolsillo superior
 
-![Sew the facing to the top pocket bag](step09.png)
+![Difunde la cara a la bolsa de bolsillo superior](step09.png)
 
-> This step is optional. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
+> Este paso es opcional. Adjunte hacia la bolsa de bolsillo si desea que se muestre a través de la apertura del bolsillo.
 
-### Step 10: Sew the top pocket bag to the top welt
+### Paso 10: Empuja la bolsa de bolsillo superior a la soldadura superior
 
-![Sew the top pocket bag to the top welt](step10.png)
+![Lleva la bolsa de bolsillo superior a la mejor soldadura](step10.png)
 
-Fold your garment out the way so you can sew the pocket bag to the top welt.
+Doblar la ropa para que puedas coser la bolsa de bolsa hasta la soldadura superior.
 
-> If you applied facing to your pocket bag, make sure to place it with the facing towards the welts.
+> Si aplicó frente a su bolsa de bolsillo, asegúrese de colocarla con la cara hacia las soldaduras.
 
-### Step 11: Attach the welts to the pocket bag
+### Paso 11: Adjuntar las soldaduras a la bolsa de bolsillo
 
-![Sew one side](step11a.png) ![Sew the other side](step11b.png) ![And sew the top](step11c.png)
+![Marcar un lado](step11a.png) ![Difundir el otro lado](step11b.png) ![Y coser la parte superior](step11c.png)
 
-Place your garment with the good side up, and fold it back at the side of the welt pocket.
+Coloque su prenda con el buen costado arriba, y llévala de nuevo en el lateral del bolsillo de soldadura.
 
-Sew the triangular piece of fabric from the pocket opening to the pocket bags, much like you've sewn it to the welts earlier.
+Divierte la pieza triangular de tela desde la abertura del bolsillo hasta las bolsas de bolsillo, de la misma manera que lo has cosido hasta las soldaduras antes.
 
-Fold back your garment at the top of the welt pocket.
+Doble su prenda en la parte superior de la bolsa de soldadura.
 
-Now, sew the top of the pocket opening to the pocket bag.
+Ahora, coser la parte superior del bolsillo abriendo a la bolsa de bolsillo.
 
-### Step 12: Finish the pocket bag
+### Paso 12: Termina la bolsa de bolsillo
 
-![Now finish the pocket bag](step12.png)
+![Ahora termina la bolsa de bolsillo](step12.png)
 
-Now finish the pocket back by closing all the edges (the top edge is optional).
+Ahora termina el bolsillo cerrando todos los bordes (el borde superior es opcional).
 
-To do so, you can apply bias tape, use a serger, or sew some other finishing stitch.
+Para ello, puede aplicar cinta de sesgo, usar un sergador o coser algún otro pedazo de acabado.
 
-After that, you're done!
+¡Después de eso, has terminado!

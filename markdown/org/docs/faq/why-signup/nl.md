@@ -12,9 +12,9 @@ Als we geen manier hadden om je maten op te slaan, zou het hopeloos onpraktisch 
 
 ##### Vraag je dit omdat je ons niet vertrouwt?
 
-Deze vraag wijst vaak op een onderliggend wantrouwen tegenover het aanmaken van een account. As such, the following links may also be relevant:
+Deze vraag wijst vaak op een onderliggend wantrouwen tegenover het aanmaken van een account. Daarom kunnen de volgende links ook relevant zijn:
 
- - Read [our privacy notice][1]
- - Learn more about [your rights][2]
+ - Lees [onze privacymededeling][1]
+ - Leer meer over [uw rechten][2]
 
 </Note>

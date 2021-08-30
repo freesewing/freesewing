@@ -1,3 +1,3 @@
 ![Knöpfe](buttons.svg)
 
-The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
+Die Anzahl der Buttons auf Ihrem Hemd. Ohne Manschettenknöpfe und die optionale Extra-Taste.

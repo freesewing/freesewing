@@ -5,8 +5,8 @@ title: Zuschnitt
 
 ![Ich, wie ich ein paar T-Shirts ausschneide](cutting.jpg)
 
-Cutting is the act of cutting out the different pattern pieces out of your fabric.
+Schneiden ist der Akt des Ausschneiden der verschiedenen Musterstücke aus Ihrem Stoff.
 
-Cutting is typically done with scissors or a rotary cutter.
+Das Schneiden erfolgt typischerweise mit Schere oder einem Rotationsschneider.
 
-> The **cut of a garment**, the way it looks, refers to how it was cut out. For example, high-cut jeans and a low-cut top.
+> Der **Schnitt eines Kleidungsstücks**, so wie es aussieht, bezieht sich darauf, wie es ausgeschnitten wurde. Zum Beispiel Highcut Jeans und eine niedrig geschnittene Decke.

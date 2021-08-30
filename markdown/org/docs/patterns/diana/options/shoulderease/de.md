@@ -1,3 +1,3 @@
-![The shoulder ease option on Diana](./shoulderease.svg)
+![Die Schulterleicht-Option auf Diana](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Diese Option steuert die Position Ihrer Schulternaht.

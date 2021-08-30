@@ -1,3 +1,7 @@
-![Seperate button placket](seperatebuttonplacket.svg)
+![Patte de boutonnage séparée](seperatebuttonplacket.svg)
 
-Whether or not you want the button placket to be a seperate pattern part.
+Si vous voulez ou non que la patte de bouton soit une partie séparée.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_seperatebuttonplacket_sample.svg "Effet de cette option sur le motif")

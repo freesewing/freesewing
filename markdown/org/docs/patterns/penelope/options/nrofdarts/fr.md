@@ -1,2 +1,2 @@
-The number of darts used in the pattern. The maximum is 2, but this option can be reduced by the pattern if the calculations create darts that are too small.
+Le nombre de fléchettes utilisées dans le patron. Le maximum est de 2, mais cette option peut être réduite par le motif si les calculs créent des fléchettes trop petites.
 

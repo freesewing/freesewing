@@ -1,24 +1,24 @@
  - **Oberstoff**
-   - Cut **2 front(s)** with good sides together
-   - Cut **2 back(s)** with good sides together
-   - Cut **2 front facing(s)** with good sides together
-   - Cut **2 pocket welt(s)** with good sides together
-   - Cut **2 pocket facing(s)** with good sides together
+   - Schneiden Sie **2 Front(e)** mit _guten Seiten zusammen_
+   - **2 rücke(n)** mit _guten Seiten zusammen schneiden_
+   - **2 Frontverfassung(en)** mit _guten Seiten schneiden_
+   - **2 Taschenwelt(en)** mit _guten Seiten zusammenschneiden_
+   - **2 Taschenverkleidung(en)** mit _guten Seiten schneiden_
  - **Futterstoff**
-   - Cut **2 front lining(s)** with good sides together
-   - Cut **2 back(s)** with good sides together
-   - Cut **2 pocket bag(s)** with good sides together
+   - **2 Frontlinie(s)** mit _guten Seiten zusammenschneiden_
+   - **2 rücke(n)** mit _guten Seiten zusammen schneiden_
+   - **2 Taschenbeutel** mit _guten Seiten schneiden_
  - **Einlage**
-   - Cut **2 front(s)** with good sides together
-   - Cut **2 pocket interfacing(s)**
+   - Schneiden Sie **2 Front(e)** mit _guten Seiten zusammen_
+   - **2 Taschenschnittstelle(n) schneiden**
 
 <Warning>
 
-###### Caveats
+###### Vorsichtsmaßnahmen
 
- - Do not cut out the **front** dart
- - Do not cut out the **back** dart
- - Watch out for the grainline on the **pocket welt** and **pocket facing**
+ - Schneiden Sie den **Front** Dart
+ nicht aus - schneiden Sie den **back** Dart
+ nicht aus - achten Sie auf die Körnlinie auf der **Taschenwelt** und **Taschenverfassung**
 
 </Warning>
 

@@ -1,2 +1,2 @@
 
-Whether you want to include an elasticated cuff at the ankle, or rather prefer a classic hemmed leg.
+Of je nu een elastische manchet aan de enkel, wilt toevoegen, of liever een klassiek zoombeen.

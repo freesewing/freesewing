@@ -1,3 +1,3 @@
 ![Holgura de pecho](chestease.svg)
 
-How much room do you want at the chest? How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+¿Cuánto espacio quieres en el cofre? How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.

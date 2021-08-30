@@ -1,29 +1,29 @@
 
-### Step 1: Join the outseam
+### Paso 1: Únete al exterior
 
-Join the outseam (the seam that runs along the side of your leg) of the front and back.
+Únete a la costura exterior (la costura que corre a lo largo del lado de la pierna) de la parte frontal y trasera.
 
-Repeat the step for the other leg, but **make sure they are the mirror image of each other**.
+Repita el paso de la otra pierna, pero **asegúrese de que son la imagen espejo de la otra**.
 
-### Step 2: Join the inseam
+### Paso 2: Únete al Inseam
 
-Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+Únete a la costura (la costura corre a lo largo del interior de tus piernas) de la parte frontal y trasera.
 
-You now have a leg. Repeat this step for the other legs, once again making certain they are mirror images of each other.
+Ahora tienes una pierna. Repita este paso para las otras piernas, asegurándose una vez más de que son imágenes espejo unas de otras.
 
-### Step 3: Join the cross seam
+### Paso 3: Únete a la costura cruzada
 
-Turn one leg with the good side in, and the other with the good side out.
+Gire una pierna con el lado bueno y la otra con el lado bueno fuera.
 
-Now tuch the *good side out* into the *good side in* leg, so that they have their _good sides together_.
+Ahora toca el *lado bueno* en el *lado bueno en la pierna* , para que tengan sus _lados buenos juntos_.
 
-You can now align and sew the cross seam.
+Ahora puedes alinear y coser la costura cruzada.
 
 <Note>
 
-###### You probably want to insert a zipper
+###### Probablemente quieras insertar un zipper
 
-You should insert a zipper or leave the last part of the cross seam open (so you can pin it).  
-If you don't you wont be able to put on Titan to check the fit.
+Deberías insertar un zipper o dejar la última parte de la costura cruzada abierta (para que puedas anclarlo).  
+Si no lo haces, no podrás ponerte Titan para comprobar el ajuste.
 
 </Note>

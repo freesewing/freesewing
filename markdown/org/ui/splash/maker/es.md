@@ -1,6 +1,6 @@
----
----
+- - -
+- - -
 
-### For makers
+### Para creadores
 
-All our sewing patterns are made-to-measure & free to use, courtesy of our community
+Todos nuestros patrones de costura están hechos a medida & libre de usar, cortesía de nuestra comunidad

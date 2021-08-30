@@ -1,4 +1,4 @@
 
 ![Colocación de bolsillo en el pecho](chestpocketplacement.svg)
 
-Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
+Ubicación del bolsillo en proporción a una cuarta parte de la circunstancia del pecho. Los números más altos lo mueven más al lado.

@@ -1,2 +1,2 @@
-This option will reduce the circumference of the skirt at the hem. Percentage of the seat measurement.
+Deze optie vermindert de omtrek van de rok aan de zoom. Percentage van de zitvlakmeting.
 

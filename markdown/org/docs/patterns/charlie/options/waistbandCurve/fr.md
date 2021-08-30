@@ -1,4 +1,4 @@
 
-Controls how curved the waistband is.
+Contrôle la courbure de la ceinture.
 
-Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+L'augmentation de la ceinture donnera une bande de taille de courbure la rendant plus petite au bord supérieur de la ceinture.

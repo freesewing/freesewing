@@ -1,4 +1,4 @@
 
 ![Position des Taillenbundes](waistbandposition.svg)
 
-Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips.
+Wo die Taille sitzt. 0% macht es sitzt auf der natürlichen Taille, 100% macht es sitzt auf den Hüften.

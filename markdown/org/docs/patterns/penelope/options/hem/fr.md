@@ -1,2 +1,2 @@
-The size of the hem. 
+La taille de l'ourlet. 
 

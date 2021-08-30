@@ -1,16 +1,16 @@
----
----
+- - -
+- - -
 
 <Note>
 
-##### There's more to the picture than meets the eye
+##### Er is meer aan de foto dan aan het oog
 
-This list of FreeSewing contributors is not exhaustive.
-It only lists contributors who opted-in to having their name disclosed on our website.
+Deze lijst van FreeSewing bijdragers is niet volledig.
+Er worden alleen bijdragers genoemd die ervoor hebben gekozen hun naam openbaar te maken op onze website.
 
-###### Are you missing?
-Please [let us know on Discord]("https://discord.freesewing.org/") or
-[create an issue]("https://github.com/freesewing/freesewing/issues/new").
+###### Mis je wel?
+Laat ons weten op Discord]("https://discord.freesewing.org/") of
+[creëer een probleem]("https://github.com/freesewing/issues/new").
 
 </Note>
 

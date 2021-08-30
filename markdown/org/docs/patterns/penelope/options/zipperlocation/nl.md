@@ -1,2 +1,2 @@
-Controls the location of the zipper. Either at the back seam, or at the side seam
+Bepaalt de locatie van de rits. Aan de achternaad, of aan de zijnaad
 

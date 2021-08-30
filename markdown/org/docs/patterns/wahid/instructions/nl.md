@@ -41,7 +41,7 @@ Strijk de naadwaarde tussen beleg en voering open.
 
 ![Sluit alle nepen](03a.png)
 
-#### Close back darts
+#### Sluit nepen achter
 
 Plooi je rugpand met de goede kanten op elkaar, en stik de achterste neep.
 
@@ -209,7 +209,7 @@ Leg je voering in je gilet, met de goede kanten op elkaar. In andere woorden, je
 
 Leg de voering gelijk met de rand van de stof, en speld vast.
 
-Begin aan de middenrug, en volg de halslijn tot aan de sluiting vooraan. Work your way around the hem, but leave about a 15cm gap at the center back.
+Begin aan de middenrug, en volg de halslijn tot aan de sluiting vooraan. Werk je weg rond de zoom, maar laat ongeveer een gat van 15 cm achter aan de middenrug.
 
 #### Stik voering aan de stof
 
@@ -276,9 +276,9 @@ Naai de knopen aan.
 
 Als je wil kan je een doorpitsteek rond de randen van je gilet gebruiken.
 
-Een doorpitsteek wordt met de hand gemaakt. You run a simple stitch a few mm from the edges of your waistcoat, but only let your stitches surface for a few threads. Je hebt dit sowieso al gezien als een afwerking aan kostuumjasjes.
+Een doorpitsteek wordt met de hand gemaakt. Je maakt een simpele steek een paar mm van de randen van je gilde, maar laat je steken enkel voor een paar draadjes hangen! Je hebt dit sowieso al gezien als een afwerking aan kostuumjasjes.
 
-> You can pick-stitch with thread of the same colour, or use a contrasting colour if you're feeling bold.
+> Je kunt een doorpitsteek maken met thread van dezelfde kleur, of een contrasterende kleur gebruiken als je je moedig voelt.
 
 > Een doorpitsteek geeft een bepaald uitzicht, maar bevestigt ook de stof aan de voering en beleg zodat dingen minder gaan rondschuiven.
 

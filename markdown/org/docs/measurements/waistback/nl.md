@@ -4,4 +4,4 @@ title: Taille achter
 
 De **taille achter** maat is het achterste deel van je tailleomtrek.
 
-To measure your **waist back**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal. Meet dan de lengte van één zijkant van je rug naar de andere.
+Om je **taille terug**te meten wikkel je de lintmeter rond het kortste deel van je taille. Let op dat deze horizontaal blijft. Meet dan de lengte van één zijkant van je rug naar de andere.

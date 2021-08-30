@@ -1,2 +1,2 @@
 
-Controls the radius by which we round the pocket slant into the outseam.
+Steuert den Radius, mit dem wir den Taschenschieber nach außen drehen.

@@ -1,5 +1,5 @@
 
-Controls the height of the waist, where:
+Contrôle la hauteur de la taille, où:
 
- - 100% : The waist of the trousers sits at the waist line
- - 0% : The waist of the trousers sits at the hip line
+ - 100% : La taille du pantalon est assis à la taille
+ - 0% : La taille du pantalon est assise à la hanche

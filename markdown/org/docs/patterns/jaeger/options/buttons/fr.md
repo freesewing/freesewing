@@ -1,2 +1,2 @@
 
-Controls the amount of buttons.
+Contrôle la quantité de boutons.

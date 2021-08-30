@@ -1,2 +1,2 @@
-Amount of ease around the fullest part of your bum.
+Hoeveelheid overwijdte rond het breedste deel van je bum.
 

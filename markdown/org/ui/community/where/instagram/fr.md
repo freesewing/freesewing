@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Notre compte Instagram est [@freesewing_org](https://instagram.com/freesewing_org).  
 Suivez-nous pour des mises à jour sur les nouveaux patrons, les réalisations de la communauté, et d'autres nouvelles.

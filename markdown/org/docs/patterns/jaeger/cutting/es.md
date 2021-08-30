@@ -1,49 +1,49 @@
- - **Main fabric**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front facings** (look for the facing/lining boundary on the front part)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4)
-   - Cut **2 undersleeves** (part 5)
-   - Cut **1 collar** (part 6)
-   - Cut **1 collarstand** (part 8)
-   - Cut **2 pockets** (part 9)
-   - Cut **1 chest pocket welt** (part 10)
- - **lining fabric**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4) Note: Some people like to use different lining for the sleeves
-   - Cut **2 undersleeves** (part 5) Note: Some people like to use different lining for the sleeves
-   - Cut **2 chest pocket bags** )(part 11)
-   - Cut **2 inner pocket welts**
-   - Cut **2 inner pocket bags** (part 13)
- - **Canvas**
-   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
-   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
- - **Undercollar fabric**
-   - Cut **1 undercollar** (part 7)
+ - **Tela principal**
+   - Cortar **2 frentes** (parte 1)
+   - Corta **2 fachadas frontales** (busca el límite de fachada/revestimiento en la parte delantera)
+   - Corta **2 backs** (parte 2)
+   - Corta **2 lados** (parte 3)
+   - Corta **2 mangas superiores** (parte 4)
+   - Corta **2 mangas bajas** (parte 5)
+   - Cortar **1 collar** (parte 6)
+   - Cortar **1 collarstand** (parte 8)
+   - Corta **2 bolsillos** (parte 9)
+   - Corta **1 soldado de bolsillo de cofre** (parte 10)
+ - **tela de revestimiento**
+   - Cortar **2 frentes** (parte 1)
+   - Corta **2 forrajes frontales** (busca el límite de fachada/forro en la parte frontal y no te olvides de conectar la extensión interior de cara al bolsillo)
+   - Corta **2 backs** (parte 2)
+   - Corta **2 lados** (parte 3)
+   - Corta **2 mangas** (parte 4) Nota: A algunas personas les gusta usar un revestimiento diferente para las mangas
+   - Corta **2 mangas bajas** (parte 5) Nota: A algunas personas les gusta usar un revestimiento diferente para las mangas
+   - Corta **2 bolsas de bolsillo** (parte 11)
+   - Corta **2 soldaduras internas de bolsillo**
+   - Corta **2 bolsas de bolsillos interiores** (parte 13)
+ - **Lona**
+   - Cortar **2 frentes** en el sesgo (parte 1) Nota: No incluir el permiso de costura
+   - Corta **2 piezas de cofre** con parcialidad. Busque la indicación en la parte delantera. Nota: No incluir permisos de costura
+ - **Tejido bajo cuello**
+   - Cortar **1 bajo cuello** (parte 7)
 
 <Note>
 
-###### Good sides together, or precise pattern matching?
+###### ¿Los lados buenos juntos, o coinciden con patrones precisos?
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Cuando cortas dos, puedes cortarlos [buenos lados juntos](/docs/cowing/good-sides-juntos).
+Sin embargo, al trabajar con tejido con un patrón, prefiero cortarlos individualmente para controlar finamente la coincidencia de patrones.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Cuando los cortes individualmente, recuerda que necesitan ser imágenes espejo unos de otros. Así que voltee su patrón o su tela al cortar el segundo.
 
 </Note>
 
 <Warning>
 
-###### Cutting caveats
+###### Cuavadas de corte
 
- - The chest piece is marked on the front.
- - Don't include seam allowance when cutting out canvas, and cut it on bias.
- - The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ - La pieza del cofre está marcada en el frente.
+ - No incluir la franquicia de costura al cortar el lienzo y cortarlo en el prejuicio.
+ - El frontal y el revestimiento están marcados en la parte delantera. Dividieron la parte frontal en dos a lo largo de la línea límite. Puede cortar la parte delantera a lo largo de esa línea después de cortar la parte delantera de la tela principal. La extensión interior del bolsillo para el recubrimiento se imprime por separado y se puede volver a grabar en su lugar después de cortar el pedazo de paterna. **No olvide añadir permisos de costura tanto para el rostro como para el revestimiento de esta costura límite**.
 
-![Trace the front facing and lining from the front part](cuttingCaveat.svg)
+![Rastrea el frente y el revestimiento desde la parte delantera](cuttingCaveat.svg)
 
 </Warning>

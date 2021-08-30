@@ -1,2 +1,2 @@
 
-Controls the width of the front pocket bag. In other words, how far the pocket bag extends towards the center front of the trousers.
+Bepaalt de breedte van het voorste zakdeel. Met andere woorden, hoe ver het zakdeel zich uitstrekt tot het midden van de broek.

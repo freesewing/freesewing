@@ -1,13 +1,13 @@
 ---
 size:
   title: Maat
-  description: Controls the overall size of the handbag
+  description: Bepaalt de totale grootte van de handtas
 zipperSize:
-  title: Zipper size
-  description: Which size of zipper to use
+  title: Rits grootte
+  description: Welke afmeting van de rits te gebruiken
 strapLength:
-  title: Strap length
-  description: Controls the length of the strap
+  title: Rep lengte
+  description: Bepaalt de lengte van de band
 handleWidth:
-  title: Handle width
-  description: Controls the width of the handle
+  title: Afhandeling breedte
+  description: Bepaalt de breedte van het handvat

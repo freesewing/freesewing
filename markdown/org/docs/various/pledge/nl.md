@@ -2,27 +2,27 @@
 title: Belofte over de FreeSewing inkomsten
 ---
 
-The **FreeSewing revenue pledge** states that:
+De **FreeSewing revenue commitment** verklaart dat:
 
-> ##### All FreeSewing revenue will be donated to [Doctors Without Borders (MSF)](http://www.msf.org/)
+> ##### Alle FreeSewing inkomsten zullen worden gedoneerd aan [artsen zonder grenzen (MSF)](http://www.msf.org/)
 
-The pledge is made and enforced by the FreeSewing maintainer (joost). You can read about [his motivations for doing so on this page](/docs/various/pledge/motivation/).
+De onderhouder van FreeSewing (joost) heeft de belofte gedaan en deze belofte ook gestand gedaan. Je kunt lezen over [zijn motivaties om dit te doen op deze pagina](/docs/various/pledge/motivation/).
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [join us here](/community/join/)
+Als je FreeSewing wilt steunen, kun je [hier lid worden](/community/join/)
 
 </Tip>
 
-##### History
+##### Geschiedenis
 
-|      Year |        Amount |          |
-| ---------:| -------------:| -------- |
-|      2015 |        256,65 |          |
-|      2016 |        473,50 |          |
-|      2017 |        673,14 |          |
-|      2018 |      3.162,14 |          |
-|      2019 |      4.109,38 |          |
-|      2020 |     10.736,82 |          |
-| **Total** | **19.418,63** | **Euro** |
+|       jaar |   Hoeveelheid |          |
+| ----------:| -------------:| -------- |
+|       2015 |        256,65 |          |
+|       2016 |        473,50 |          |
+|       2017 |        673,14 |          |
+|       2018 |      3.162,14 |          |
+|       2019 |      4.109,38 |          |
+|       2020 |     10.736,82 |          |
+| **Totaal** | **19.418,63** | **euro** |
 

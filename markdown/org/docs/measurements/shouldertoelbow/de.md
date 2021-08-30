@@ -2,7 +2,7 @@
 title: Schulter bis Ellenbogen
 ---
 
-The **shoulder to elbow** measurement runs from the edge of your shoulder down to your elbow.
+Die **Schulter an Ellenbogen** Messung läuft vom Schulterrand bis zum Ellenbogen.
 
-To measure your **shoulder to elbow**, start at the edge of your shoulder, where your sleeve starts at a well-fitting shirt. Follow your arm down to your elbow.
+Um die **Schulter mit Ellenbogen**zu messen, beginnen Sie am Schulterrand, wo der Ärmel bei einem passenden Hemd beginnt. Folge deinem Arm zu deinem Ellenbogen.
 

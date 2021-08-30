@@ -1,2 +1,2 @@
 
-Controls the amount by which the hem is rounded at the front bottom.
+Steuert den Wert der den Saum am unteren Rand abgerundet wird.

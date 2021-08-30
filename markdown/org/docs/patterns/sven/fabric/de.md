@@ -1,4 +1,4 @@
-Sven can be any sweatshirt you want it to be. From wovens to knit or even scuba, you can't really go wrong as long as you stick with something that has a bit of weight to it.
+Sven kann jedes Sweatshirt sein, das du willst. Von Geweben zu Stricken oder sogar Scuba, Sie können nicht wirklich schief gehen, solange Sie mit etwas festhalten, das ein bisschen Gewicht darauf hat.
 
-Have a look at [the Sven showcases](/showcase/pattern/sven) for inspiration.
+Werfen Sie einen Blick auf [die Sven Showcases](/showcase/pattern/sven) für Inspiration.
 

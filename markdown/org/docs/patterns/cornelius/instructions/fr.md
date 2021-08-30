@@ -1,19 +1,19 @@
 
 
-- sew back pieces together along the back seam
-- sew the front seam to SA distance from where the fly pieces start.
-- sew parallel to the fly pieces in a basting stitch
-- press front open along the basting line
-- lay down the fronts with good side down
-- lay the zipper on the right front, aligning the left side with the basted seam
-- pin down the zipper and sew the right side to the fly piece
-- fold the zipper over to the left front and sew the left side to the left fly piece
-- make a zipper guard and attach to the right fly piece
-- undo the basting stitches and finish the fly
-- attach the pocket facings to the pocket fabric
-- attach the other sides of the pockets to the fronts
-- fold the pockets back, sew the bottom seam (french seams?) and baste the facings to the front
-- sew the side seams and inner leg seam
-- attach the cuff pieces together along three sides, right sides together
-- attach the cuffs to the bottom of the legs
-- attach the waistband in the usual way
+- coudre ensemble les pièces arrière le long de la couture arrière
+- coudre la couture avant à la distance de SA de l'endroit où commencent les pièces de mouche.
+- coudre parallèlement aux mouches dans un point de bâton
+- appuyez sur l'avant ouvert le long de la ligne de bastage
+- poser les devants avec un bon côté vers le bas
+- poser la fermeture éclair sur le devant droit, en alignant le côté gauche avec la couture basculée
+- Épingler la fermeture à glissière et coudre le côté droit à la pièce de mouche
+- plier la fermeture éclair vers l'avant gauche et coudre le côté gauche vers la pièce de la mouche gauche
+- faire une garde à fermeture éclair et attacher à la pièce de la mouche droite
+- annuler les points de bâtage et terminer la mouche
+- attacher les faces de poche au tissu de poche
+- attacher les autres côtés des poches sur les devants
+- plier les poches en arrière, coudre la couture du fond (coutures françaises?) et basculer les faces vers l'avant
+- coudre les coutures latérales et la couture intérieure des jambes
+- attacher les morceaux de manche le long de trois côtés, les côtés droit ensemble
+- attacher les poignets au bas des jambes
+- attacher la ceinture à la manière habituelle

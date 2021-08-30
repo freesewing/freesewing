@@ -1,7 +1,11 @@
 ---
-title: Back dart shaping
+title: Forme de la pince dos
 ---
 
-Controls how much of the waist shaping will happing in the backdarts.
+Contrôle la quantité de formage de la taille dans les fléchettes.
 
 You can tweak this setting to balance the waist reduction across side seams, back darts and (optional) front darts.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_backdartshaping_sample.svg "Effet de cette option sur le motif")

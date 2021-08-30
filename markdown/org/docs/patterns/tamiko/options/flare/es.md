@@ -1,2 +1,2 @@
 
-The angle by which the garment flares out from your chest downwards.
+El ángulo por el cual la prenda se arrastra desde el pecho hacia abajo.

@@ -1,5 +1,5 @@
-![The front drop option on Cathrin](./frontdrop.svg)
+![La opción de gota frontal en la Catedral](./frontdrop.svg)
 
-This option determines how far the center front will be lowered at the bottom of your corset.
+Esta opción determina hasta qué punto la parte central se reducirá en la parte inferior de su corsete.
 
-> If you lower this too much, sitting might become an issue.
+> Si se rebaja demasiado, la sesión podría convertirse en un problema.

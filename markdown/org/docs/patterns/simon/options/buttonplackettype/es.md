@@ -1,14 +1,14 @@
 
-Do you want the button placket to be part of the right front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+¿Quiere que la placket de botón sea parte de la parte frontal derecha (corte-on), o mejor dicho, una parte individual en la que coser (separar)?
 
 > Why pick seperate?
 > 
-> One reason to pick a sewn on button placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a sewn on button placket.
+> Una de las razones para elegir una coser en la placa de los botones es que permite utilizar un tejido o grain diferente. Incluso cuando se usa el mismo tejido, algunas personas también prefieren el aspecto de una coser en la placa de botones.
 > 
-> If you are the type of person who is at risk of having your clothes ripped off, a seperate placket also allows to replace the placket if it rips at a button because somebody just could not wait to get you out of your clothes.
+> Si usted es el tipo de persona que corre el riesgo de que se rasquen su ropa, un placket separado también permite reemplazar el placket si se raspa un botón porque alguien simplemente no podía esperar para sacarte de tu ropa.
 > 
 > Why pick grown on?
 > 
-> It's less work, and you can go for that seamless look.
+> Es menos trabajo y se puede ir por ese aspecto sin fisuras.
 
-> It's worth pointing out that unlike the buttonhole placket, you cannot see the button placket when your shirt is closed all the way up.
+> Vale la pena señalar que, a diferencia de la placa del botón, no se puede ver la placket del botón cuando la camisa está cerrada hasta arriba.

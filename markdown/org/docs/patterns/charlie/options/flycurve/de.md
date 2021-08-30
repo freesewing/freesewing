@@ -1,2 +1,2 @@
 
-This controls the curvature of the fly's J-seam.
+Diese steuert die Krümmung der J-Naht der Fly.

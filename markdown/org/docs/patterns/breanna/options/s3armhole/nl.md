@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-Controls the shoulder seam location on the armhole side.
+Bepaalt de locatie van de schoudernaad op het armsgat.
 
-- Increase this option to shift the shoulder seam forward on the armhole side
-- Decrease this option to shift the shoulder seam backward on the armhole side
+- Verhoog deze optie om de schoudernaad vooruit aan de zijkant van het armsgat te verplaatsen
+- Verminder deze optie om de schoudernaad langs de zijkant van het armsgat te verplaatsen
 

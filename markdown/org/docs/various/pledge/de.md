@@ -1,20 +1,20 @@
 ---
-title: FreeSewing revenue pledge
+title: Einnahmenversprechen
 ---
 
-The **FreeSewing revenue pledge** states that:
+Die **FreeSewing Einnahmen Zusage** besagt, dass:
 
-> ##### All FreeSewing revenue will be donated to [Doctors Without Borders (MSF)](http://www.msf.org/)
+> ##### Alle FreeSewing Einnahmen werden an [Ärzte ohne Grenzen (MSF) gespendet](http://www.msf.org/)
 
-The pledge is made and enforced by the FreeSewing maintainer (joost). You can read about [his motivations for doing so on this page](/docs/various/pledge/motivation/).
+Das Versprechen wird vom FreeSewing-Betreuer (joost) übernommen und umgesetzt. Sie können über [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [join us here](/community/join/)
+Wenn du FreeSewing unterstützen möchtest, kannst du [hier beitreten](/community/join/)
 
 </Tip>
 
-##### History
+##### Verlauf
 
 |      Jahr |        Betrag |          |
 | ---------:| -------------:| -------- |

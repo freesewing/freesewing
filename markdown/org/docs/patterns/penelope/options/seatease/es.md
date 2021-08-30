@@ -1,2 +1,2 @@
-Amount of ease around the fullest part of your bum.
+Cantidad de facilidad alrededor de la parte más completa de su búfer.
 

@@ -1,17 +1,17 @@
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce besteht aus einem Rücken und zwei Seiten, Insets und Fronten.
 
  - **Oberstoff**
-   - Cut **1 back** on the fold
-   - Cut **2 fronts**
-   - Cut **2 insets**
-   - Cut **2 sides**
+   - **1 zurück** auf die Falte schneiden
+   - **2 Fronten schneiden**
+   - **2 Einfügungen schneiden**
+   - **2 Seiten schneiden**
 
 <Warning>
 
-###### Caveats
+###### Vorsichtsmaßnahmen
 
-- **back**: Extra hem allowance at the leg
-- **front**: Cut this **twice**
+- **back**: Extra Saum im Bein
+- **front**: Schneiden **zweimal**
 
 </Warning>
 

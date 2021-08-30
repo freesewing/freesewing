@@ -1,3 +1,3 @@
 ![Diepte halslijn](necklinedrop.svg)
 
-This options allows you to lower your neckline below the default.
+Met deze optie kun je je halslijn verlagen onder de standaard.

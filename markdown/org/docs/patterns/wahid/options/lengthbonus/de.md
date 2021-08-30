@@ -1,3 +1,3 @@
 ![Längenzugabe](lengthbonus.svg)
 
-This option allows you to lengthen (or shorten) your waistcoat.
+Mit dieser Option können Sie Ihre Weste verlängern (oder verkürzen).

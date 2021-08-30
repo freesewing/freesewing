@@ -2,4 +2,4 @@
 title: Taillenreduzierung
 ---
 
-Reduces the waist for a more snug fit.
+Reduziert die Taille für eine leichte Passform.

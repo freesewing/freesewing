@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your chest
+Bepaalt de hoeveelheid overwijdte aan je kist

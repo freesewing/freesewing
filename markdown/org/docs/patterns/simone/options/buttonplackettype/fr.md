@@ -1,14 +1,14 @@
 
-Do you want the button placket to be part of the right front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+Voulez-vous que la patte de boutons fasse partie de la partie avant droite (coupée), ou plutôt une partie individuelle sur laquelle vous coudez (séparé)?
 
-> #### Why pick seperate?
+> Why pick seperate?
 > 
-> One reason to pick a sewn on button placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a sewn on button placket.
+> Une des raisons de choisir une patte cousue sur une patte est qu'elle vous permet d'utiliser un tissu ou un fil de grains différents. Même en utilisant le même tissu, certaines personnes préfèrent aussi l'aspect d'une patte cousue sur la patte bouton.
 > 
-> If you are the type of person who is at risk of having your clothes ripped off, a seperate placket also allows to replace the placket if it rips at a button because somebody just could not wait to get you out of your clothes.
+> Si vous êtes le type de personne qui risque de vous faire arracher vos vêtements, une patte séparée permet également de remplacer la patte si elle déchirait à un bouton parce que quelqu'un ne pouvait pas attendre pour vous sortir de vos vêtements.
 > 
-> #### Why pick grown on?
+> Why pick grown on?
 > 
 > C'est moins de travail, et vous pouvez faire une gorge cachée.
 
-> It's worth pointing out that unlike the buttonhole placket, you cannot see the button placket when your shirt is closed all the way up.
+> Il est intéressant de noter que contrairement à la patte boutonnière, vous ne pouvez pas voir la patte de boutonnage lorsque votre chemise est fermée tout au long de la ligne.

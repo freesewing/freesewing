@@ -6,4 +6,8 @@ De waarde die je hier geeft wordt toegevoegd aan je heupomtrek bij het tekenen v
 
 > ##### Deze optie laat negatieve waarden toe.
 > 
-> Pas alleen negatieve waarden toe als je elastisch materiaal gebruikt en wil dat het aansluitend past. Overall stretch should be configured with the stretch option.
+> Pas alleen negatieve waarden toe als je elastisch materiaal gebruikt en wil dat het aansluitend past. Algemene stretch moet worden geconfigureerd met de optie stretch.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_hipsease_sample.svg "Effect van deze optie op het patroon")

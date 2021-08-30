@@ -2,97 +2,97 @@
 title: Konstruktion
 ---
 
-### Step 1: Fuse interfacing
+### Schritt 1: Sicherungsschnittstelle
 
-Depending on your fabric weight you might want to fuse all your main fabric parts No matter the thickness of your fabric, you should consider reinforcing the sides of your brim parts (where the notch mark is). This will help prevent the pointy ends of the plastic part to poke outside of the cap on this area
+Abhängig von deinem Stoffgewicht solltest du alle deine wichtigsten Stoffteile verschmelzen Unabhängig von der Stoffdicke deines Stoffes, Sie sollten erwägen, die Seiten Ihrer Brimteile zu verstärken (wo die Nockenmarke ist). Dadurch wird verhindert, dass die spitzenden Enden des Kunststoffteils außerhalb der Deckel auf diesem Bereich stecken
 
-![Protect this area from being pocked through by the plastic brim](step16.svg)
+![Schütze diese Gegend vor dem Durchdringen durch den Kunststoffstamm](step16.svg)
 
-### Step 2: Closing the back dart
+### Schritt 2: Schließen des Rückendarts
 
-#### Version with top part cut on fold
+#### Version mit Oberteil geschnitten auf Falte
 
-You should mark the top of the back dart on the wrong side of the fabric so that you know where to end your seam
+Sie sollten den oberen Rand des Rückens auf der falschen Seite des Stoffes markieren, damit Sie wissen, wo Sie Ihre Naht beenden sollen
 
-![Marking the end of the dart](step01.jpg)
+![Markiere das Ende des Darts](step01.jpg)
 
-There is several tricks to sewing darts, here is how I do it (I think it is called "balancing the dart"): prepare a bias cut rectangle of the same fabric you are going to stitch and place it underneath the point of your future dart. Stitch the dart starting from the bottom and keep stitching a few stitching after the top dart. Leave a good length of thread to make a knot by hand.
+Es gibt mehrere Tricks zum Nähen von Darts, hier ist, wie ich es mache (ich denke, es wird als "Balancing the dart" bezeichnet): bereiten Sie ein zweigeteiltes Rechteck des Stoffes vor, den Sie nähen und platzieren Sie es unter den Punkt Ihrer zukünftigen Dart. Nähen Sie den Dart von unten ab und nähen Sie nach dem oberen Dart weiter ein paar Nähte. Hinterlassen Sie einen guten Faden um einen Knoten von Hand herzustellen.
 
-![Balanced dart](step02.jpg)
+![Balancierter Dart](step02.jpg)
 
-Where the rectangle of fabric starts, cut the seam allowance that is against this rectangle, up to the seam so that the seam can be ironed flat open before the rectangle. On the area where the dart is stitched with the rectangle, iron both seam allowances on one side, and the folded rectangle on the other side. Layer the edges of the rectangle. The edge against the main fabric is wider, the one above is smaller
+Wo das Rechteck des Stoffes beginnt, schneiden Sie die Nahtzugabe, die gegen dieses Rechteck ist, bis zur Naht, so dass die Naht vor dem Rechteck geöffnet werden kann. Auf dem Gebiet, in dem der Dart mit dem Rechteck genäht ist, Eisen beide Nahtzustände auf der einen Seite und das gefaltete Rechteck auf der anderen Seite. Schichten Sie die Kanten des Rechtecks ein. Der Rand gegen den Hauptstoff ist breiter, der oben ist kleiner
 
-#### Version with the top part cut twice
-This dart is more straight forward since the seam is continuous. Simply stitch the seam all the way
+#### Version mit dem oberen Teil zweimal geschnitten
+Dieser Dart ist geradliniger vorwärts, da die Naht kontinuierlich ist. Nähen Sie die Naht ganz einfach
 
-#### Ironing the seam
-You might have to notch the seam allowance to press it flat. Use a tailoring Ham or something rounded underneath to help you press the seam open whilst keeping the nice shape you just created.
+#### Die Naht Bügeln
+Möglicherweise müssen Sie die Nahtzuweisung streichen, um sie flach zu drücken. Benutzen Sie einen Schneider oder etwas unten abgerundet, um Ihnen zu helfen, die Naht offen zu drücken, während Sie die schöne Form, die Sie gerade erstellt haben, behalten.
 
-#### Top Stitching
-Depending on the style you want to achieve, you can top stitch all your seams (by machine of by hand). However, the front brim seam will be a bit tricky to do with the machine (but not impossible). Anyway, I put this here and won't remind you about it after each step, but basically, the process would be: Stitch, Iron, Top stitch, Repeat on the next step.
+#### Obere Nähung
+Je nach dem gewünschten Stil können Sie alle Nähte (per Maschine per Hand) aufnähen. Allerdings wird die vordere Brim Naht ein wenig kompliziert mit der Maschine zu tun (aber nicht unmöglich). Jedenfalls habe ich das hier gestellt und werde Sie nach jedem Schritt nicht daran erinnern, aber im Grunde genommen der Prozess wäre: Stitch, Eisen, Topstitch, Wiederholen im nächsten Schritt.
 
-### Step 3: Optional: Join both side parts.
-This applies only if you cut two parts for the side part. It is a straight seam. nothing much to say about that. Iron the seam flat, with the seam allowances open.
+### Schritt 3: Optional: Beide Seitenteile verbinden.
+Dies gilt nur, wenn Sie zwei Teile für das Seitenteil schneiden. Es ist eine geradlinige Naht. nicht viel darüber zu sagen. Eisen Sie die Nahtflache, mit den Nahtzugaben geöffnet.
 
-### Step 4: Join the top to the side
+### Schritt 4: Schließe dich oben an die Seite
 
-Warning: There will be quite a few pins involved Align the notches and pin the parts together so that this rounded part is held well in place.
+Warnung: Es werden mehrere Pins involviert sein. Lege die Noten fest und fixiere die Teile zusammen, damit dieses abgerundete Teil gut befestigt ist.
 
-![Pins](step03.jpg) ![More pins](step04.jpg)
+![Pins](step03.jpg) ![Mehr Pins](step04.jpg)
 
-For the stitching, I tend to start from the center front, do one half, and then start again, back from the center front to do the other half (the **side part** is on top for both stitches). So that, if my machine shifts the lower fabric, it would be a "symmetrical shift" on both sides. Clip the seam allowances where needed, on the curve, you might want to trim the seam allowance of the side part, and notch it, to help the ironing process.
+Für die Nähung, ich neige dazu, von der Mitte vorne, eine Hälfte, und dann wieder starten zurück von der Mitte vorne, um die andere Hälfte zu tun (der **Seitenteil** ist oben für beide Sticke). So dass, wenn meine Maschine das untere Gewebe verschiebt, es wäre eine "symmetrische Schicht" auf beiden Seiten. Bewegen Sie die Nahtzugeständnisse bei Bedarf auf die Kurve, Vielleicht möchten Sie die Nahtzuweisung des Seitenteils abschneiden und einknicken, um den Bügelprozess zu unterstützen.
 
-![The seam allowances are trimmed, clipped and pressed flat open](step05.jpg)
+![Die Nahtzustände werden beschnitten, geklemmt und flach gedrückt](step05.jpg)
 
-### Step 5: The brim outer seam.
+### Schritt 5: Die glänzende äußere Naht.
 
-Align the notches and pin the top and bottom parts. Technically, the lower part has a shorter seam length, so you might have to stretch it so that the seam allowances meet. In practice, fabric is usually stretchy enough so that the length difference can be eased. Iron both seam allowance against the **Bottom part**
+Die Nocken ausrichten und den oberen und unteren Teil anpinnen. Technisch gesehen hat der untere Teil eine kürzere Nahtlänge, daher müssen Sie ihn vielleicht so ausdehnen, dass die Nahtzuschläge erfüllt werden. In der Praxis ist der Stoff in der Regel so dehnbar, dass der Längenunterschied erleichtert werden kann. Eisen beides Nahtmenge gegen **Unterer Teil**
 
-### Step 6: Inserting the plastic part
+### Schritt 6: Einfügen des Kunststoffteils
 
-The plastic part is then inserted inside the brim, being careful to keep the seam allowance flat on the **Bottom part**. You then hand stitch the brim closed, keeping the parts in place and well tensioned.
+Das Kunststoffteil wird dann in den Schweif eingefügt, wobei darauf geachtet wird, dass die Naht flach am **unteren Teil** bleibt. Sie nähen dann den Stirn geschlossen, halten die Teile fest und gut gespannt.
 
-![The brim is prepared](step06.jpg)
+![Die Brim ist vorbereitet](step06.jpg)
 
-### Step 7: Stitching the brim to the cap
+### Schritt 7: Das Stichen der Brille zur Kappe nähen
 
-Align the notches and stitch the brim to the cap. Be careful not to stitch onto the plastic. It might be easier if you "free" the arm of your machine
+Legen Sie die Stirn und nähen Sie den Stiel an die Kappe. Achten Sie darauf, nicht auf den Kunststoff zu nähen. Es könnte einfacher sein, wenn Sie den Arm Ihrer Maschine "frei"
 
-### Step 8: Prepare the lining
+### Schritt 8: Bereiten Sie das Futter vor
 
-Basically, repeat the steps 2, 3 and 4 with the lining **top** and **side parts**. This would also be a good time to stitch a label on the **top part** of the lining if you are into this kind of things.
+Im Grunde genommen wiederholen Sie die Schritte 2, 3 und 4 mit der Verkleidung **oben** und **Seitenteile**. Dies wäre auch ein guter Zeitpunkt, um ein Etikett auf dem **oberen Teil** des Futters zu sticken, wenn Sie in diese Art von Dingen stecken.
 
-### Step 9: Join lining to main fabric.
+### Schritt 9: Join Futter zu Hauptstoff.
 
-Turn the lining outside out and place the main fabric in it (good side against good side). Pin and stitch from one end of the brim to the other end of the brim (leaving the brim seam open).
+Drehen Sie das Futter nach draußen und platzieren Sie das Hauptgewebe darin (gute Seite gegen gute Seite). Pin und Stich von einem Ende des Schwefels bis zum anderen Ende des Schwefels (wobei die Schweißnaht offen bleibt).
 
-![Preparation for stitching the lining to the cap](step07.jpg)
+![Vorbereitung zum Nähen des Futters auf die Obergrenze](step07.jpg)
 
-Don't forget to back tack this stitch quite well since it will get some stretch when we will turn the cap "outside out". Turn the cap outside out, so that the good side is outside. On the Brim area, baste the lining in place and hand stitch it to the brim in a way to hide the other stitches that are already on the seam allowance. ![Joining the lining, finishing by hand](step08.jpg)
+Vergessen Sie nicht, diesen Stich gut zu tacken, da er ein wenig strecken wird, wenn wir die Kappe "draußen" drehen. Drehen Sie die Kappe nach draußen, so dass die gute Seite draußen ist. Auf dem Felsen das Futter an der Stelle kleben und mit der Hand nähen, um die anderen Nähte zu verbergen, die bereits auf der Naht sind. ![Füllen Sie das Futter, fertig mit der Hand](step08.jpg)
 
-### Step 10: Top stitching the bottom of the cap
+### Schritt 10: Obere Nähung am unteren Rand der Kappe
 
-It is a good idea to top stitch the bottom seam of the cap so that the lining stays inside. To have a better control I usually baste it first, so that the edge is sharp. ![A nice crisp basted edge](step09.jpg)
+Es ist eine gute Idee, die untere Naht der Kappe nach oben zu sticken, damit das Futter innen bleibt. Um eine bessere Kontrolle zu haben, brauche ich es normalerweise zuerst, so dass die Kante scharf ist. ![Ein netter knuspriger basted Rand](step09.jpg)
 
-### Step 11: The tape
+### Schritt 11: Das Band
 
-Form a loop with the tape so that the circumference of the loop matches the measured head circumference of the wearer of the cap. The best result is achieved when you pin the tape while you are wrapping it around the head of the future owner of the cap. Once the loop is closed, you can even double check it and ask if this fit is OK for the wearer.
+Form einer Schleife mit dem Klebeband so dass der Umfang der Schleife mit dem gemessenen Kopfumfang des Trägers der Kappe übereinstimmt. Das beste Ergebnis wird erzielt, wenn Sie das Klebeband während Sie es umwickeln um den Kopf des zukünftigen Besitzers der Kappe. Sobald die Schleife geschlossen ist, können Sie sie sogar noch einmal überprüfen und fragen, ob diese Passform für den Träger in Ordnung ist.
 
-![This tape will keep the cap from stretching](step10.jpg)
+![Dieses Klebeband hält die Obergrenze vom Dehnen ab](step10.jpg)
 
-Trim the ends of the tape in an arrow shape to keep it from poking out. ![It's all in the smallest details](step11.jpg)
+Schneiden Sie die Enden des Bandes in einer Pfeil-Form ab, um zu verhindern, dass es ausweicht. ![Es ist alles in den kleinsten Details](step11.jpg)
 
-Divide the tape in two with two pins
+Das Band mit zwei Pins teilen
 
-![Obviously, the cap is symmetrical, so we might as well distribute the tape evenly on both sides](step12.jpg)
+![Offensichtlich ist die Obergrenze symmetrisch und daher können wir das Klebeband gleichmäßig auf beiden Seiten verteilen](step12.jpg)
 
-Pin the tape in place: The two pins are used to distribute the tape equally on both sides. Place one pin at the back, and the other at the front. Since the brim is held in place it can't be much stretched, so pin the tape in this area "normally" For the remaining part you might need to ease the fabric along the tape. I recommend to hand stitch the tape in place, on both edges of the tape
+Klebeband anheben: Die beiden Pins werden verwendet, um das Klebeband gleichmäßig auf beiden Seiten zu verteilen. Platzieren Sie einen Pin auf der Rückseite und den anderen auf der Vorderseite. Da die Strümpfe an Ort gehalten wird, kann sie nicht viel gestreckt werden, so dass das Klebeband in diesem Bereich "normal" für den restlichen Teil musst du den Stoff entlang des Bands erleichtern. Ich empfehle, das Klebeband auf beiden Kanten des Klebebandes zu nähen
 
-![Both edges of the tape are slip stitched, and the edge of the cap is top stitched](step13.jpg)
+![Beide Kanten des Bandes sind rutschfest genäht und der Rand der Kappe ist oben genäht](step13.jpg)
 
-### Step 12: Stitch the side to the brim
-We are almost done, and the last step will be to attach the brim top to the front of the body of the cap. Pin the two part in position from the outside, turn the cap on the lining side and stitch both parts together several times.
+### Schritt 12: Nähen Sie die Seite zum Schweif
+Wir sind fast fertig, und der letzte Schritt wird sein, die Brillenspitze an die Vorderseite der Kappe zu befestigen. Nähen Sie den beiden Teil von außen in Position, drehen Sie die Kappe auf der Außenseite und nähen Sie beide Teile mehrmals zusammen.
 
-![Pin it in place](step14.jpg) ![Stitch it in place, from the lining side](step15.jpg)
+![An Ort anheften](step14.jpg) ![Nähen Sie es von der Verkleidungsseite](step15.jpg)
 
-![All done!](finished.gif)
+![Fertig!](finished.gif)

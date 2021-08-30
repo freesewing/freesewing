@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-Controls the shoulder seam location on the collar side.
+Steuert die Position der Schulternaht auf der Kragenseite.
 
-- Increase this option to shift the shoulder seam forward on the collar side
-- Decrease this option to shift the shoulder seam backward on the collar side
+- Erhöhe diese Option, um die Schulternaht auf der Kragenseite vorwärts zu verschieben
+- Verringere diese Option, um die Schulternaht auf der Kragenseite nach hinten zu verschieben
 

@@ -1,4 +1,4 @@
 
 ![Revers du col cranté](collarnotchreturn.svg)
 
-Controls the length of the upper notch side. 100% = same as notch depth.
+Contrôle la longueur du côté supérieur de l'encoche. 100% = même que la profondeur de l'encoche.

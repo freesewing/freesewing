@@ -1,6 +1,10 @@
 
-How much the armhole is cut out deeper at the front, than the back.
+Hoeveel het armsgat dieper uitgesneden aan het voorpand, dan de achterkant.
 
-Because a shoulder is more rounded at the front of the body than the back, the front of the armhole cuts deeper into the chest than the back cuts into the back part.
+Want een schouder is eerder aan de voorkant van het lichaam afgerond dan achteraan. de voorkant van het armsgat snijdt dieper in de kist dan de achterkant in het achterdeel.
 
-This options controls by how much.
+Hoe hoog is dit mogelijkheid?
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_frontarmholedeeper_sample.svg "Effect van deze optie op het patroon")

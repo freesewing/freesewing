@@ -1,8 +1,12 @@
 
-We first draft the arm opening, then we draft a sleeve to fit it.
+We maken eerst een arm opening en vervolgens leggen we een mouw op om die te passen.
 
-When all goes well, the sleeve fits perfectly, and this option is not relevant. However, if/when the sleeve does not perfectly fit the arm opening, we need to adapt it.
+Als alles goed gaat, past de mouw perfect, en deze optie is niet relevant. Maar als de mouw niet helemaal bij de armopening past, moeten we hem aanpassen.
 
-Since the shape and height of the sleevecap are more important than the width, we tend to prefer adjusting the width to fit the sleevecap.
+Aangezien de vorm en hoogte van de mouwkop belangrijker is dan de breedte, we hebben de neiging om de breedte aan te passen aan de mouwkop.
 
-To avoid the sleeve getting too narrow, we only adapt a portion of the sleeve width. This option allows you to control how much of the sleeve width is guaranteed. Increasing this option will allow us less of the width to play with to fit the sleeve. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
+Om te voorkomen dat de mouw te smal wordt, passen we alleen een deel van de mouw aan. Met deze optie kunt u bepalen hoeveel mouw breedte gegarandeerd is. Door deze optie uit te breiden kunnen we minder breedte spelen om aan de mouw te voldoen. Op deze manier zal de resulterende mouw dichter bij de breedte van de theoretische mouw staan, en we zullen in plaats daarvan de (meer) mouwkop hoogte aanpassen om te passen aan de mouw.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevewidthguarantee_sample.svg "Effect van deze optie op het patroon")

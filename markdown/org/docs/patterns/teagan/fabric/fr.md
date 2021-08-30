@@ -1,5 +1,5 @@
-The Teagan T-shirt is designed as a close-fitting tee and is best suited to knit fabrics with some stretch, such as jersey. Cotton knits are often an easy-to-sew option for those new to knits. Rayon knits generally will have a bit more drape and are more slippery to sew.
+Le T-shirt Teagan est conçu comme un tee ajusté et est le mieux adapté pour tricoter des tissus avec quelques étirements, comme le jersey. Les tricots en coton sont souvent une option facile à coudre pour les nouveaux tricots. Les tricots de Rayon ont généralement un peu plus de draps et sont plus glissants à coudre.
 
 <Tip>
-If you're new to sewing, look for a knit with a few percent spandex for stretch and recovery (snapping back after stretching). Fabric weights can also help you make your choice. T-shirts are typically made in lightweight fabric. A weight of 130-200 grams per square meter (or 4-6 ounces per square yard) is likely to be about right.
+Si vous êtes nouveau à coudre, cherchez un tricot avec quelques pourcents de spandex pour étirer et récupérer (après étirage). Les poids des tissus peuvent également vous aider à faire votre choix. Les T-shirts sont généralement fabriqués en tissu léger. Un poids de 130 à 200 grammes par mètre carré (ou de 4 à 6 onces par mètre carré) est susceptible d'avoir raison.
 </Tip>

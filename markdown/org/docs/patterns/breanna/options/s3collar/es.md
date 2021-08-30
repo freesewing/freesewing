@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-Controls the shoulder seam location on the collar side.
+Controla la ubicación de la costura del hombro en el lado del cuello.
 
-- Increase this option to shift the shoulder seam forward on the collar side
-- Decrease this option to shift the shoulder seam backward on the collar side
+- Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello
+- Disminuye esta opción para desplazar la costura del hombro hacia atrás en el lado del cuello
 

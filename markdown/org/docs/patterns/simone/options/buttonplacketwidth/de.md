@@ -1,3 +1,7 @@
-![Button placket width](buttonplacketwidth.svg)
+![Knopfleiste Breite](buttonplacketwidth.svg)
 
-The width of your button placket.
+Die Breite Ihres Tastenplatzes.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_buttonplacketwidth_sample.svg "Effekt dieser Option auf das Muster")

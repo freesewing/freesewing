@@ -1,1 +1,1 @@
-Controls the length of the sleeves.
+Contrôle la longueur des manches.

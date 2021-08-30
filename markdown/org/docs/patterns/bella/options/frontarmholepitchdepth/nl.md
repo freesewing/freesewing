@@ -1,7 +1,11 @@
 ---
-title: Front armhole pitch depth
+title: Diepte armsgat vooraan
 ---
 
-![The effect of the front armhole pitch depth option on the pattern](sample.png)
+![Het effect van de diepte van het voorste armsgat op het patroon](sample.png)
 
-The **front armhole pitch depth** option controls the vertical position of the armhole pitch point at the front.
+De optie **armsgat hoogte** van de hoogte bepaalt de verticale positie van het armsgat aan het voorpand.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_frontarmholepitchdepth_sample.svg "Effect van deze optie op het patroon")

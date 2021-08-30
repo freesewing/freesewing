@@ -1,16 +1,16 @@
----
----
+- - -
+- - -
 
 <Note>
 
 ##### Hay más de lo que parece
 
 Esta lista de colaboradores de FreeSewing no es exhaustiva.
-It only lists contributors who opted-in to having their name disclosed on our website.
+Sólo enumera a los colaboradores que optaron por revelar su nombre en nuestro sitio web.
 
-###### Are you missing?
-Please [let us know on Discord]("https://discord.freesewing.org/") or
-[create an issue]("https://github.com/freesewing/freesewing/issues/new").
+###### ¿Te falta?
+Por favor [haznos saber en Discord]("https://discord.freesewing.org/") o
+[crea un problema]("https://github.com/freesewing/freesewing/issues/new").
 
 </Note>
 

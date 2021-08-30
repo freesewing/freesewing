@@ -1,1 +1,1 @@
-Controls the length of the sleeves.
+Bepaalt de lengte van de mouwen.

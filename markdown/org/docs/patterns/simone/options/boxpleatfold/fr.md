@@ -1,5 +1,9 @@
 ---
-title: Box pleat fold
+title: Repli du pli plat
 ---
 
-Controls how much the box pleat at the back is folded/pleated.
+Contrôle combien le pli de la boîte à l'arrière est plié/plissé.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_boxpleatfold_sample.svg "Effet de cette option sur le motif")

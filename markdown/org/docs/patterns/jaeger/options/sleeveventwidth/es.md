@@ -1,2 +1,2 @@
 
-Controls the width of the sleeve vent.
+Controla el ancho de la válvula de manga.

@@ -1,2 +1,2 @@
-This adds a vent to the back of the skirt.
+Esto añade un respiro a la parte posterior de la sombra.
 

@@ -1,7 +1,11 @@
-![The bulge option on Bruce](./bulge.svg)
+![Opción de balanza en Bruce](./bulge.svg)
 
-How much room do you want in the front pouch?
+¿Cuánto espacio quieres en la bolsa delantera?
 
-This option will increase the front dart, thereby creating more room in the front.
+Esta opción aumentará el arte delantero, creando así más espacio en el frente.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Si está buscando una habitación vertical, eso es lo que hace la opción **rise**
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bruce_bulge_sample.svg "Efecto de esta opción en el patrón")

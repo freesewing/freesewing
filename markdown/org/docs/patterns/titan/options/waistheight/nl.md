@@ -1,5 +1,5 @@
 
-Controls the height of the waist, where:
+Bepaalt de hoogte van de taille, waarbij:
 
- - 100% : The waist of the trousers sits at the waist line
- - 0% : The waist of the trousers sits at the hip line
+ - 100% : De taille van de broek zit aan de taillelijn
+ - 0% : De taille van de broek zit in de heuplijn

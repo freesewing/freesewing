@@ -1,3 +1,3 @@
 ![Gorge (Patte de boutonnières) séparée](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Si vous voulez ou non que la patte de boutonnière soit une partie séparée.

@@ -1,1 +1,1 @@
-Controls the amount of ease at the sleeve/your arm.
+Contrôle la quantité d'aisance à la manche/à votre bras.

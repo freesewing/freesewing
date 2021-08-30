@@ -1,18 +1,18 @@
-### Step 1: Finish the armhole seam
+### Étape 1 : Terminer la couture des armoiries
 
-![Finsh the armhole seam](step03.png)
+![Rincez la couture de l'armures](step03.png)
 
-Finish the armhole seam with a narrow hem.
+Terminez la couture du manche avec un ourlet étroit.
 
-### Step 2: Finish the top
+### Étape 2 : Terminer le haut
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Coudre les trois lignes de couture marquées sur votre brouillon](step04.png)
 
 <Note>
 
-As your top is folded, it's a good idea to pin both halves together.
-This way, your top can't shift around while we finish it.
+Comme votre dessus est plié, c'est une bonne idée de relier les deux moitiés.
+De cette façon, votre top ne peut pas se déplacer pendant que nous le finissons.
 
 </Note>
 
-Sew the three seamlines that are marked on your draft.
+Coudre les trois lignes de couture qui sont marquées sur votre brouillon.

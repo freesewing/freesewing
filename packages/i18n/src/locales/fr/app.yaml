@@ -70,7 +70,7 @@ draftPattern: 'Ébauche de {pattern}'
 draftPatternForModel: 'Ébauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
-dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
+dragAndDropImageHere: Glissez et déposez une image ici, ou sélectionnez-en une manuellement avec le bouton ci-dessous
 emailAddress: Adresse mail
 emailWorksToo: "Si vous ne connaissez pas votre nom d'utilisateur, votre adresse mail fonctionne également"
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe

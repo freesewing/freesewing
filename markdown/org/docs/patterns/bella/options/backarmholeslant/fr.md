@@ -2,6 +2,10 @@
 title: Inclinaison d'emmanchure dos
 ---
 
-![The effect of the back armhole slant option on the pattern](sample.png)
+![L'effet de l'option de fixation du blindage arrière sur le motif](sample.png)
 
-The **back armhole slant** slightly rotates the armhole around the back pitch point.
+Le blindage **de l'arrière** tourne légèrement l'armure autour du point d'inclinaison arrière.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backarmholeslant_sample.svg "Effet de cette option sur le motif")

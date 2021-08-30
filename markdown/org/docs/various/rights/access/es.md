@@ -1,8 +1,8 @@
 ---
-title: The right of access
+title: El derecho de acceso
 order: 20
 ---
 
-You have the right to access your personal data.
+Usted tiene derecho a acceder a sus datos personales.
 
-Go to [/account](/account/) to do so.
+Ve a [/account](/account/) para hacerlo.

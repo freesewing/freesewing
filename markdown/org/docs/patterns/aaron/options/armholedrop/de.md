@@ -1,5 +1,9 @@
-![The armhole drop option on Aaron](./armholedrop.svg)
+![Die Armloch-Drop-Option auf Aaron](./armholedrop.svg)
 
-How much to lower the armhole below the default amount.
+Wie viel das Rüstungsloch unter den Standardwert senken soll.
 
-> This option also allows negative values. They will, obviously, raise the armhole by said amount.
+> Diese Option erlaubt auch negative Werte. Sie werden das Rüstungsloch natürlich um diesen Betrag erhöhen.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_armholedrop_sample.svg "Effekt dieser Option auf das Muster")

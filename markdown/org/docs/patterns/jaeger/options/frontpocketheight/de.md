@@ -1,4 +1,4 @@
 
-![Front pocket height](frontpocketheight.svg)
+![Vordertaschenhöhe](frontpocketheight.svg)
 
-The height where the front pocket starts, as a factor of your natural waist to hip measurement.
+Die Höhe, in der die Vordertasche beginnt, als Faktor Ihrer natürlichen Taille zur Hüftmessung.

@@ -1,18 +1,18 @@
----
----
+- - -
+- - -
 
- 
+importiere PatternDocs von '../../../../../src/components/docs/pattern'
 
 <Tip>
 
-##### Follow the sew-along with Kelly and Julian
+##### Folgen Sie dem Nähen mit Kelly und Julian
 
-Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
-all the steps.
-If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
+Kelly Hogaboom und Julian Collins haben eine Simon(e) mitnäht, und sie haben Videos von
+alle Schritte.
+Wenn Sie dieses Muster herstellen wollen, können Kelly und Julian Ihnen den Weg zum Ende weisen.
 
-You can find all the material's on Kelly's 
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Du findest alle Materialien auf der 
+-Seite von Kelly: [#simonsayssew mit kelly hogaboom-and-julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 

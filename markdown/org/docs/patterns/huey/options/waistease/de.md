@@ -1,2 +1,2 @@
 
-The amount of ease at your waist.
+Die Menge an Leichtigkeit in Ihrer Taille.

@@ -14,6 +14,6 @@ Hier is een typische layout:
 
 <Tip>
 
-The [pattern notation guide][1] explains all the different markings and lines on your draft.
+De [patroonnotatie handleiding][1] legt alle verschillende markeringen en lijnen op je patroon uit.
 
 </Tip>

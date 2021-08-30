@@ -1,4 +1,8 @@
 
-![Back neck cutout](./backneckcutout.svg)
+![Hals uitsnijding achteraan](./backneckcutout.svg)
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Bepaalt hoe diep de halsopening wordt uitgeknipt in de achterkant van het kledingstuk. Met andere woorden, door dit te verhogen wordt de halsopening naar de rug geschoven.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_backneckcutout_sample.svg "Effect van deze optie op het patroon")

@@ -1,2 +1,2 @@
 
-Controls the length of the sleeve vent.
+Steuert die Länge des Schloßes.

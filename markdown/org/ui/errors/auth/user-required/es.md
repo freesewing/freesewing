@@ -1,7 +1,7 @@
 ---
-title: A FreeSewing user account is required to access this page
+title: Se requiere una cuenta de usuario de FreeSewing para acceder a esta página
 ---
 
-The page you tried to access is only available to FreeSewing users.
+La página a la que intentó acceder sólo está disponible para los usuarios de FreeSewing.
 
-You should either [log in](/login/) or [sign up](/signup/) before you can access this page.
+Deberías [iniciar sesión](/login/) o [registrarte](/signup/) antes de acceder a esta página.

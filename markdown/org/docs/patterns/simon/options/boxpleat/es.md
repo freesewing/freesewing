@@ -2,4 +2,4 @@
 title: Pliegue en caja
 ---
 
-Adds a box pleat to the back.
+Añade un pliegue de caja a la espalda.

@@ -1,2 +1,2 @@
-Controls the depth of the neck opening.
+Bepaalt de diepte van de halsopening.
 

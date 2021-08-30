@@ -1,5 +1,5 @@
 ---
-title: How we use your people data
+title: Hoe we uw personage gegevens gebruiken
 order: 40
 ---
 
@@ -26,6 +26,6 @@ order: 40
 
 
 <Note>
-This data is stored for anybody with an account on our website which contains one or more people.
+Deze gegevens worden opgeslagen voor iedereen met een account op onze website die een of meer mensen bevat.
 </Note>
 

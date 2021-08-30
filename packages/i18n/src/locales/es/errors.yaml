@@ -8,4 +8,4 @@ requestFailedWithStatusCode400: Solicitud fallida
 requestFailedWithStatusCode401: Autenticación fallida
 requestFailedWithStatusCode403: Prohibido
 requestFailedWithStatusCode500: Hubo un problema inesperado. Por favor informe de esto.
-something: Something went wrong
+something: Algo salió mal

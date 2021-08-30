@@ -1,10 +1,10 @@
 ![Estilo del puño](cuffstyle.svg)
 
-What style of cuff do you want?
+¿Qué estilo de corte quieres?
 
  - Puño de barril redondeado
- - Chamfer barrel cuff
+ - Cañón de champú
  - Puño de barril recto
  - Puño francés redondeado
- - Chamfer French cuff
+ - Chamfer taza francesa
  - Puño francés recto

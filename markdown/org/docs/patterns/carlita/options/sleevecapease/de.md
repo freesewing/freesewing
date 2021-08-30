@@ -1,11 +1,11 @@
 ![Armkugel Zugabe](./sleevecapease.svg)
 
-How much sleevecap ease do you want?
+Wie viel Ärmel-Leichtigkeit möchtest du?
 
-> #### What's the point?
+> #### Was ist der Punkt?
 > 
-> The amount of sleevecap ease determines how the sleeves rolls from the shouder.
+> Die Menge an Sleevecap Leichtigkeit bestimmt, wie die Ärmel vom Shouder rollen.
 > 
-> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
+> Mehr Leichtigkeit macht die Ärmelkurve in die Naht, wie man es von einem Fell erwarten würde. Weniger Leichtigkeit macht die Ärmel flacher.
 
-> The lighter your fabric, the less sleevecap ease you want.
+> Je leichter Ihr Stoff, desto weniger Ärmel Sie wollen.

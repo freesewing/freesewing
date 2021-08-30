@@ -1,9 +1,9 @@
 ![Kragenkrümmung](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Wie viel die Kragenkurven (auf der Kragenseite) statt gerade zu sein.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Dies beeinflusst den Kragen gegen den Kragenständer.
 
 </Note>

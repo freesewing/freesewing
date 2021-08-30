@@ -1,29 +1,36 @@
 ---
-title: Good sides together
+title: Gute Seiten zusammen
 ---
 
-When I refer to good sides together that can refer to either cutting or sewing:
+Wenn ich von guten Seiten spreche, dann kann man sich entweder auf Schnitt oder Nähen beziehen:
 
-## Cutting with good sides together
+## Schneiden mit guten Seiten zusammen
 
-![A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.](cutting-good-sides-together.jpg)
+![Eine Tasche ist auf der schlechten Seite eines Stücks doppelklappbaren Denims gekennzeichnet, bereit für gute Seiten zusammen geschnitten werden. Nach dem Schneiden beider Schichten ergeben sich zwei Taschen die Spiegelbilder voneinander sind.](cutting-good-sides-together.jpg)
 
-Cutting with good sides together is a technique that is used when two identical, or mirrored pieces need to be cut.
+Das Schneiden mit guten Seiten ist eine Technik, die benutzt wird, wenn zwei identische oder gespiegelte Teile geschnitten werden müssen.
 
-When a pattern asks to cut a piece with good sides together, fold your fabric double with the good side/right side of the fabric to the inside, and the bad side/wrong side outside.
+Wenn ein Muster fordert, ein Stück mit guten Seiten zusammenzuschneiden falten Sie Ihren Stoff doppelt mit der guten Seite/rechte Seite des Stoffes nach innen, und die schlechte Seite/falsche Seite draußen.
 
-Now mark the pattern piece on the bad side of the fabric, and cut both layers in one go.
+Markieren Sie nun das Musterstück auf der schlechten Seite des Stoffes und schneiden Sie beide Schichten in einem Schritt.
 
-This gives you two pieces that are mirror images of each other.
+Dies gibt Ihnen zwei Teile, die Spiegelbilder voneinander sind.
 
-> When cutting good sides together, make sure both sides are on grain.
+<Note> 
 
-## Sewing with good sides together
+##### Was passiert, wenn es keine offensichtliche gute Seite gibt?
 
-![A piece of denim is sewn with good sides together.](sewing-good-sides-together.jpg)
+Beim Ausschneiden von etwas ohne offensichtliche *gut* Seite (wie Schnittstellen), 
+Wichtig ist, dass du zwei gespiegelte Teile geschnitten hast und nicht zwei identische.
 
-Sewing with good sides together is the standard approach to making a seam.
+</Note>
 
-By placing the good sides of the fabric together, both pieces will be joined with the seam allowance to the inside of the garment. This is what's done for the vast majority of seams.
+## Nähen mit guten Seiten zusammen
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+![Ein Stück Denim wird zusammen mit guten Seiten genäht.](sewing-good-sides-together.jpg)
+
+Nähen mit guten Seiten zusammen ist der übliche Ansatz zur Herstellung einer Naht.
+
+Durch das Zusammenlegen der guten Seiten des Stoffes werden beide Teile mit der Nahtzuordnung an die Innenseite des Stoffes verbunden. Das ist für die überwiegende Mehrheit der Nähte getan.
+
+> Wenn es keine speziellen Anweisungen gibt, wie man eine Naht konstruieren kann, dann ist es eine gute Seite zusammen.

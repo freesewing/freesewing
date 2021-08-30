@@ -2,6 +2,10 @@
 title: Länge des Taillenabnähers
 ---
 
-![The effect of the waist dart length option on the pattern](sample.png)
+![Der Effekt der Taillenlänge auf das Muster](sample.png)
 
-The **waist dart length** option controls the length of the waist dart towards the bust.
+Die Option **Taillenlänge Dart** steuert die Länge des Taillendarts in Richtung Büste.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_waistdartlength_sample.svg "Effekt dieser Option auf das Muster")

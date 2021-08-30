@@ -1,2 +1,2 @@
 
-Controls the depth of the front pocket slant. In other words, it determines how wide the pocket opening is.
+Bepaalt de diepte van de voorste steekzak. Met andere woorden, het bepaalt hoe breed de zakopening is.

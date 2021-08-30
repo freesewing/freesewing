@@ -1,4 +1,4 @@
 
 ![Taillenbundform](waistbandshape.svg)
 
-The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences.
+Die Form der Taille. Geradlinig macht die Sache leichter, aber ein abgerundetes Taillenband passt sich an den Körper an, wenn ein fairer Unterschied zwischen Taillenumfang und Hüftumfang besteht.

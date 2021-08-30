@@ -1,5 +1,5 @@
 ---
-title: Share this pattern with others
+title: Dit patroon delen met anderen
 ---
 
-With the link above, anyone can re-create this exact same pattern adjusted to their own measurements.
+Met de bovenstaande link kan iedereen dit exact hetzelfde patroon opnieuw maken dat is aangepast aan zijn eigen metingen.

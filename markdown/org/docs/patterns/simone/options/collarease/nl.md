@@ -1,6 +1,10 @@
 ![Overwijdte kraag](collarease.svg)
 
-How much ease do you want for your collar?
+Hoeveel overwijdte heeft je kraag?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Als je het gevoel krijgt dat een kraag je verstikt kan je jezelf een beetje meer ruimte geven, en zal de kraag losser rond je nek zitten. Je kan de hoeveelheid overwijdte ook verkleinen voor een strakkere kraag.
 
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarease_sample.svg "Effect van deze optie op het patroon")

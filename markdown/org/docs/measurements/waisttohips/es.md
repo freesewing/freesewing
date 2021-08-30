@@ -1,5 +1,5 @@
 ---
-title: Waist to hips
+title: Espera a caderas
 ---
 
-The **waist to hips** measurement is measured from your waist down to the top if your hip bone (where your trousers sit). Measure it a the side of your body.
+La medición de **cintura a caderas** se mide de la cintura a la parte superior si tu hueso de cadera (donde se sientan tus pantalones). Medirlo a un lado de su cuerpo.

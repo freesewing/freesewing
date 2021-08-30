@@ -1,9 +1,9 @@
-Penelope consists of a front and a back piece. The front piece is always cut-on-fold. For the back piece, this depends on whether you wanted a vent, or moved the zipper to the back seam. Either of those options will have you cut out two individual pieces for the back.
+Penelope bestaat uit een voorpand en een rugpand. Het voorpand is altijd inklapbaar. Voor het rugpand hangt dit af van de vraag of je een split wilde, of de rits naar de achternaad verplaatst. Met deze opties knip je twee afzonderlijke stukken op de achterkant.
 
 <Tip>
 
-When you cut out a piece on the fold, remember that the fold does not need to be in the middle of the fabric. 
-Choosing the placement of your pieces wisely can greatly reduce the amount of fabric you need for your skirt.
+Als je een stuk aan de plooi knipt, vergeet dan niet dat de vouw niet in het midden van de stof hoeft te zitten. 
+Het verstandig kiezen van de plaatsing van je stukken kan de hoeveelheid stof die je nodig hebt voor je rok aanzienlijk verminderen.
 
 </Tip>
 

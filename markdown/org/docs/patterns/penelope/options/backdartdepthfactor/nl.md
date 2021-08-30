@@ -1,2 +1,2 @@
-How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+Hoe ver de neep achteraan van de tailleband gaat. Dit is een factor van de Natuurlijke taille to Seat-maat.
 

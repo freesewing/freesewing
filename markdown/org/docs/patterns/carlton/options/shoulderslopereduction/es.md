@@ -1,4 +1,8 @@
 
-![Shoulder slope reduction](./shoulderslopereduction.svg)
+![Reducción de caída del hombro](./shoulderslopereduction.svg)
 
-Reduces the shoulder slope to create extra room for shoulder padding.
+Reduce la pendiente del hombro para crear espacio extra para el relleno del hombro.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlton_shoulderslopereduction_sample.svg "Efecto de esta opción en el patrón")

@@ -1,13 +1,13 @@
 ![Inserción de hombro](shoulderinset.svg)
 
-How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
+¿Hasta dónde quieres que tu cinturón se sienta lejos de tu hombro en la costura del hombro? El valor por defecto es 2cm.
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
+The shoulder seam of a waistcoat is typically more narrow than your shirt. Esta opción controla lo estrecho que se pone (en el lado del hombro).
 
 </Note>

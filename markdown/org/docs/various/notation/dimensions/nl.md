@@ -8,10 +8,10 @@ Wanneer je een *papierloos* patroon kiest, komt je patroon in de vorm van een se
 
 <Tip>
 
-###### Pay close attention to dimensions on non-paperless patterns
+###### Let op afmetingen op niet-papierloze patronen
 
-Some patterns use dimension to indicate the full size of a pattern piece.
-This typically happens when a part is a mere rectangle.
+Sommige patronen gebruiken de dimensie om de volledige grootte van een patroondeel aan te geven.
+Dit gebeurt meestal als een onderdeel slechts een rechthoek is.
 
-So when a pattern includes a dimension, make sure to pay attention to it before you cut into your fabric.
+Dus als een patroon een afmeting bevat, zorg er dan voor dat je er aandacht aan schenkt voordat je in je stof knipt.
 </Tip>

@@ -1,23 +1,23 @@
 ---
-title: Use of hashtags
+title: Gebruik van hashtags
 ---
 
 Mocht je hashtags gebruiken op social media, gebruik dan de specifieke voor onze patronen.
 
-For example, for Simon use `#FreeSewingSimon`:
+Bijvoorbeeld voor Simon gebruik `#FreeSewingSimon`:
 
 <Hashtag tag='FreeSewingSimon' />
 
-For questions or help, use `#AskFreeSewing`:
+Voor vragen of hulp, gebruik `#AskFreeSewing`:
 
 <Hashtag tag='AskFreeSewing' />
 
-To show your support, or interact with the FreeSewing community in general, use `#WeAreFreeSewing`:
+Gebruik `#WeAreFreeSewing` om ondersteuning te tonen, of te communiceren met de FreeSewing gemeenschap:
 
 <Hashtag tag='WeAreFreeSewing' />
 
 <Tip>
 
-For extra impact, consider [including these images](/community/share/)
+Voor extra impact, overweeg [inclusief deze afbeeldingen](/community/share/)
 
 </Tip>

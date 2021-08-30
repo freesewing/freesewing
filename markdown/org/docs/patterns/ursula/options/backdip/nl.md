@@ -1,2 +1,2 @@
-This option controls how much the back waist curves (revealing more or less skin).
+Deze optie bepaalt hoeveel de omgekeerde golfcurves (min of meer skin) onthullen.
 

@@ -1,10 +1,12 @@
-![Collar flare](collarflare.svg)
+![Évasement du col](collarflare.svg)
 
-How much the collar flares out (at the collar edge side), rather than being straight.
+Combien le col s'éclair (au bord du col) plutôt que d'être droit.
 
 <Note>
 
-This influences the length of your collar tips.
+Cela influence la longueur de vos conseils de col.
 
 </Note>
 
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarflare_sample.svg "Effet de cette option sur le motif")

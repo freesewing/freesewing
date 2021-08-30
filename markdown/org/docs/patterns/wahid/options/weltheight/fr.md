@@ -1,2 +1,2 @@
 
-Controls the height of the pocket welts.
+Contrôle la hauteur des douilles de poche.

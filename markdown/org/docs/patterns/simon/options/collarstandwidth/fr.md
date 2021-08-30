@@ -1,9 +1,9 @@
-![Collarstand width](collarstandwidth.svg)
+![Largeur de la surface de la surface](collarstandwidth.svg)
 
-The height of your collar stand.
+La hauteur du pied de votre col.
 
 <Note>
 
-This is the main parameter to change the overall height of your collar. This defaults to a modern relatively slim collar, but you can crank it up all the way to Karl Lagerfeld style.
+C'est le paramètre principal pour modifier la hauteur globale de votre collier. Cela passe par un col moderne relativement mince, mais vous pouvez le manier jusqu'au style Karl Lagerfeld.
 
 </Note>

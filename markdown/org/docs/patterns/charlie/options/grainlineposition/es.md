@@ -1,4 +1,8 @@
 
-Controls the position of the grainline.
+Controla la posición del grainline.
 
-You can use this to shift the grainline inward or outward if that works better for your body.
+Puede utilizar esto para desplazar la línea de grain hacia adentro o hacia afuera si funciona mejor para su cuerpo.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_grainlineposition_sample.svg "Efecto de esta opción en el patrón")

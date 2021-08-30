@@ -1,3 +1,3 @@
 
-Controls where the crotch seam starts to curve, which influences the fit at your crotch.
+Controla donde la costura del cromo comienza a curvar, lo que influye en el cabello de la cosecha.
 

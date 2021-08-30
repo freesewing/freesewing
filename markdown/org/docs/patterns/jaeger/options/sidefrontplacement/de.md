@@ -1,4 +1,4 @@
 
-![Side-front placement](sidefrontplacement.svg)
+![Seitenfront Platzierung](sidefrontplacement.svg)
 
-Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel.
+Position der Front/Seitengrenze im Verhältnis zum Brustumfang. Höhere Zahlen machen eine breitere Seitenleiste.

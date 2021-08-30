@@ -1,5 +1,5 @@
 
 ![Longueur de la fente arrière](backventlength.svg)
 
-Controls the length of the back vent. Lower numbers result in a shorter vent.
+Contrôle la longueur de la fente arrière. Les nombres inférieurs se traduisent par un puits plus court.
 

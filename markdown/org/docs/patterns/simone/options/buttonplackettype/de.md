@@ -1,14 +1,14 @@
 
-Do you want the button placket to be part of the right front pattern part (cut-on), or rather an individual part that you sew on (seperate)?
+Möchten Sie, dass der Tastenplatzsatz Teil des rechten Frontmusters ist (cut-on), oder eher ein individueller Teil, auf den Sie nähen (seperat)?
 
-> #### Why pick seperate?
+> Why pick seperate?
 > 
-> One reason to pick a sewn on button placket is that it allows you to use a different fabric or grainline. Even when using the same fabric, some people also prefer the look of a sewn on button placket.
+> Ein Grund für eine Nähte auf Knopf-Platte ist, dass man einen anderen Stoff oder eine andere Körnlinie verwenden kann. Auch bei der Verwendung des gleichen Stoffes bevorzugen einige Leute das Aussehen einer Nähte auf Knopf-Platte.
 > 
-> If you are the type of person who is at risk of having your clothes ripped off, a seperate placket also allows to replace the placket if it rips at a button because somebody just could not wait to get you out of your clothes.
+> Wenn du die Art der Person bist, die Gefahr läuft, dass deine Kleidung weggenommen wird Ein separater Platzhalter erlaubt es auch, das Platzhalter zu ersetzen, wenn es an einer Taste gerippt wird, da jemand einfach nicht warten konnte, um Sie aus Ihrer Kleidung zu holen.
 > 
-> #### Why pick grown on?
+> Why pick grown on?
 > 
-> It's less work, and you can go for that seamless look.
+> Es ist weniger Arbeit, und Sie können für diesen nahtlosen Look.
 
-> It's worth pointing out that unlike the buttonhole placket, you cannot see the button placket when your shirt is closed all the way up.
+> Es lohnt sich, darauf hinzuweisen, dass Sie im Gegensatz zum Buttonlochplatz nicht den Button-Platzhalter sehen können, wenn Ihr Hemd ganz oben geschlossen ist.

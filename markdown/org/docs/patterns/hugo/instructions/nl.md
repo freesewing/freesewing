@@ -1,7 +1,7 @@
 <Note>
 
-###### Documentation under construction
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+###### Documentatie onder constructie
+Eerst het goede nieuws: er is een video serie die laat zien hoe je Hugo van begin tot einde maakt.
 Scroll wat naar beneden, het staat op deze pagina.
 
 Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.

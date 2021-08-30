@@ -1,1 +1,1 @@
-This option controls how much the front waist curves (revealing more or less skin).
+Deze optie bepaalt hoeveel de golfcurves vooraan tonen (min of meer skin).

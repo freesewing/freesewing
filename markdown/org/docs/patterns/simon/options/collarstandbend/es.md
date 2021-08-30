@@ -1,4 +1,4 @@
-![Collarstand bend](collarstandbend.svg)
+![Collarstand doblado](collarstandbend.svg)
 
-How much the collar stand bends in the middle, rather than being straight. This influences how your collar will sit around your neck.
+Cuánto el soporte de cuello se inclina en el medio, en lugar de ser recto. Esto influye en cómo tu cuello se sentará alrededor del cuello.
 

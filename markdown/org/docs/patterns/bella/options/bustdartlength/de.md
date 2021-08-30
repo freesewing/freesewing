@@ -2,6 +2,10 @@
 title: Länge des Brustabnähers
 ---
 
-![The effect of the bust dart length option on the pattern](sample.png)
+![Der Effekt der Option "Bust-Dart-Länge" auf das Muster](sample.png)
 
-The **bust dart length** option controls the length of the bust dart. The maximum length brings the dart all the way to the bust apex.
+Die Option **Büstenlänge** steuert die Länge des Büstendarts. Die maximale Länge führt den Dart bis zur Büstenspitze hindurch.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_bustdartlength_sample.svg "Effekt dieser Option auf das Muster")

@@ -1,5 +1,9 @@
-![The rise option on Bruce](./rise.svg)
+![Opción de ascenso en Bruce](./rise.svg)
 
-This option controls the overal height of the waist.
+Esta opción controla la altura general de la cintura.
 
-> The higher the rise, the higher your waist.
+> Cuanto mayor sea el ascenso, mayor será la cintura.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bruce_rise_sample.svg "Efecto de esta opción en el patrón")

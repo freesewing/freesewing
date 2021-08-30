@@ -1,9 +1,13 @@
-![The hips ease option on Aaron](./hipsease.svg)
+![La opción de facilidad de caderas en Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+¿Cuánto espacio quieres en la cadera?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+Cualquiera que sea el valor que usted proporcione aquí se añadirá simplemente a su medición de circunstancia de cadera al redactar la prenda.
 
-> ##### This option also allows negative values.
+> ##### Esta opción también permite valores negativos.
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. El estiramiento total ha de configurarse con la opción de estiramiento.
+> Sólo debe utilizar la facilidad negativa si está utilizando un material estirado que desea encajar con fuerza. El estiramiento total ha de configurarse con la opción de estiramiento.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](aaron_hipsease_sample.svg "Efecto de esta opción en el patrón")

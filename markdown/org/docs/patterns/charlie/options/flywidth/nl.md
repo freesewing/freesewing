@@ -1,2 +1,2 @@
 
-Controls how far the fly's J-seam is offset from the fly edge.
+Bepaalt hoe ver de J-naad van de vlieg van de gulp ligt.

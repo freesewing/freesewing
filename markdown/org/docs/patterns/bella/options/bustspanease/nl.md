@@ -1,11 +1,15 @@
 ---
-title: Bust span ease
+title: Overwijdte bustenwijdte
 ---
 
-![The effect of the bust span ease option on the pattern](sample.png)
+![Het effect van de optionele bustewijdte optie op het patroon](sample.png)
 
-The **bust span ease** option controls how much ease is applied to the bust span.
+De **bustewijdte overwijdte** optie bepaalt hoeveel overwijdte wordt toegepast op de bustewijdte.
 
-<Note>This will not add ease to the garment, but merely influence the bust point</Note>
+<Note>Dit maakt het kledingstuk niet gemakkelijker, maar beïnvloedt alleen het bustepunt</Note>
 
 
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_bustspanease_sample.svg "Effect van deze optie op het patroon")

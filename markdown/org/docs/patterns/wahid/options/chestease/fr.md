@@ -4,6 +4,6 @@ Combien d'aisance voulez-vous pour le buste ?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Ajoutez-en trop, et vous finirez avec des emmanchures béantes.
+Etant donné qu'un manteau de taille n'a pas de bras, une petite facilité de poitrine va très loin. Ajoutez-en trop, et vous finirez avec des emmanchures béantes.
 
 </Note>

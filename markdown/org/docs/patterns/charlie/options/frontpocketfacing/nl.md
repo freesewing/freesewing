@@ -1,4 +1,4 @@
 
-Controls the boundary between the front pocket facing and pocket bag.
+Bepaalt de grens tussen het beleg van de voorzak en het zakdeel.
 
-Increase this to use more facing, which means you'll have to look deeper into the pocket to start seeing the pocket bag material.
+Verhoog dit om meer gezicht te gebruiken, wat betekent dat je dieper in de zak moet kijken om het materiaal van het zakdeel te zien.

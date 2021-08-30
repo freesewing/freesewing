@@ -1,2 +1,2 @@
-This adds a vent to the back of the skirt.
+Cela ajoute un vent à l'arrière de la jupe.
 

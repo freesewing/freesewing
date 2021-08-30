@@ -1,2 +1,2 @@
-FIXME: Add fabric guidelines
+FIXME: Stoffrichtlinien hinzufügen
 

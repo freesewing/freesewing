@@ -1,7 +1,11 @@
 ---
-title: Bust dart length
+title: Longitud del dart del polvo
 ---
 
-![The effect of the bust dart length option on the pattern](sample.png)
+![El efecto de la opción de longitud de polvo en el patrón](sample.png)
 
-The **bust dart length** option controls the length of the bust dart. The maximum length brings the dart all the way to the bust apex.
+La opción de **longitud de polvo** controla la longitud del polvo La longitud máxima trae el dardo hasta la apex de busto.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_bustdartlength_sample.svg "Efecto de esta opción en el patrón")

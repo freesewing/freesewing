@@ -1,2 +1,2 @@
-This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
+Dit maakt uit hoeveel je wilt dat de broekkleppen overlappen aan de taille. Een instelling van 0 zorgt ervoor dat ze elkaar ontmoeten aan de zijnaad, en een instelling van 100 zorgt ervoor dat ze elkaar ontmoeten aan de voor/achterkant.
 

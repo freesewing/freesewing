@@ -1,7 +1,11 @@
 ---
-title: Back dart height
+title: Hoogte neep rug
 ---
 
-![The effect of the back dart height option on the pattern](sample.png)
+![Het effect van de optie voor de hoogte achterste neep op het patroon](sample.png)
 
-The **back dart height** option controls the height (lenght if you will) of the back dart.
+De **hoogte van de achterste neep** optie bepaalt de hoogte (zwaarder als je dat wilt) van de achterste neep.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_backdartheight_sample.svg "Effect van deze optie op het patroon")

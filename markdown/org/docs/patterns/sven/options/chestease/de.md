@@ -1,3 +1,3 @@
 ![Brustzugabe](chestease.svg)
 
-How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+Wie viel Platz möchtest du an der Brust haben? Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Brustumfangsmessung hinzugefügt.

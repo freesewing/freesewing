@@ -1,6 +1,6 @@
----
----
+- - -
+- - -
 
-You can turn to [r/freesewing](https://www.reddit.com/r/freesewing/) on Reddit were you'll find people from the community hanging out.
+Je kunt overgaan naar [r/freesewing](https://www.reddit.com/r/freesewing/) op Reddit als je mensen van de community die ophangen vindt.
 
-It's not as active as our Discord community, but if Reddit is your thing, you might prefer it.
+Het is niet zo actief als onze Discord community, maar als Reddit je is, kun je het misschien verkiezen.
