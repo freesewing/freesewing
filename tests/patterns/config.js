@@ -4,7 +4,7 @@ const notGarments = [
   'examples',
   'legend',
 ]
-const isGarment = design => (notGarments.indexOf(design) === -1) true : false
+const isGarment = design => (notGarments.indexOf(design) === -1) ? true : false
 
 
 /*
