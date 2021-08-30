@@ -1,10 +1,10 @@
 ![Kragen Zugabe](collarease.svg)
 
-How much ease do you want for your collar?
+Wie viel Leichtigkeit möchtest du für deinen Kragen haben?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Wenn du das Gefühl hast, dass ein Kragen erstickt, kannst du dir etwas mehr Leichtigkeit geben und er sitzt locker um den Hals herum. Man könnte auch die Leichtigkeit für eine engere Passform verringern.
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarease_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collarease_sample.svg "Effekt dieser Option auf das Muster")
