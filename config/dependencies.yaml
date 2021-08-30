@@ -65,13 +65,16 @@ carlita:
     '@freesewing/carlton': *freesewing
     '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 carlton:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 charlie:
   peer:
+    '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
 css-theme:
@@ -137,7 +140,7 @@ create-freesewing-pattern:
 diana:
   peer:
     '@freesewing/brian': *freesewing
-example:
+examples:
   peer:
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-bartack': *freesewing
