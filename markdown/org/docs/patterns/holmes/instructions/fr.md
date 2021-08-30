@@ -147,7 +147,10 @@ __5.__ Main -***Baste *** la visière à la couronne correspondant aux lignes de
 __6.__ (Facultatif) Machine-***Baste*** la visière à la couronne le long des lignes de couture.  
 __7.__ Répétez les étapes 4 à 6 pour la visière restante du côté opposé de la couture de couronne centrale.  
 ____ Construire la doublure de la même manière que la couronne ommise ***Edgestitching*** et laisser un écart dans la doublure centrale suffisamment grand pour tourner le chapeau.  
-__9.__ Avec des côtés droit ensemble, coutures de couronne au centre, coutures de panneau et lignes de couture. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures. __10.__ Turn hat inside out, pressing lining to inside. __11.__ ***Slipstitch*** lining opening closed. __12.__ ***Understitch*** lining. __13.__ Alternatively ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew. __14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. Il s'agit de contribuer à éviter que la doublure ne s'effondre.
+__9.__ Avec des côtés droit ensemble, coutures de couronne au centre, coutures de panneau et lignes de couture. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures. __10.__ Turn hat inside out, pressing lining to inside.   
+__11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed. __13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 
@@ -206,7 +209,7 @@ Voilà! « Vous avez fini. » Maintenant profitez du monde dans votre nouveau ch
 <Note>
 
 Rappelez-vous que ces instructions ne sont que des lignes directrices, donc ne vous inquiétez pas si vous voulez construire le chapeau différemment.  
-Les diagrammes doivent encore être faits pour ce modèle, donc en attendant, si vous avez besoin d'une aide visuelle, regarder le tutoriel YouTube qui a inspiré ce modèle :
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 
