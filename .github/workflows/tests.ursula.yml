@@ -1,6 +1,14 @@
 name: Unit tests - Ursula
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
 
 jobs:
   test:
