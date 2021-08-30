@@ -30,7 +30,10 @@
   },
   "peerDependencies": {
     "@freesewing/core": "^2.17.4",
-    "@freesewing/plugin-bundle": "^2.17.4"
+    "@freesewing/plugin-bundle": "^2.17.4",
+    "@freesewing/plugin-mirror": "^2.17.4",
+    "@freesewing/plugin-bartack": "^2.17.4",
+    "@freesewing/plugin-buttons": "^2.17.4"
   },
   "dependencies": {},
   "devDependencies": {
