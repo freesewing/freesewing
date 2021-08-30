@@ -13,7 +13,7 @@ export default (part) => {
     paths,
     utils,
     complete,
-    macro
+    macro,
   } = part.shorthand()
 
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
@@ -129,7 +129,7 @@ export default (part) => {
    */
   // Front armhole is a bit deeper, add those points
   let deeper = measurements.chest * options.frontArmholeDeeper
-  for (const p of ['','Cp1','Cp2']) {
+  for (const p of ['', 'Cp1', 'Cp2']) {
     points[`frontArmholePitch${p}`] = points[`armholePitch${p}`].shift(180, deeper)
   }
   // Add points needed for the mirrored front&back neck/armhole path
@@ -145,14 +145,14 @@ export default (part) => {
       points.frontArmholePitchCp2,
       points.shoulderCp1,
     ],
-    clone: true
+    clone: true,
   })
 
   // How much space do we have to work with here?
   // s3 = ShoulderSeamShift
-  store.set('s3CollarMaxFront', points.hps.dy(points.cfNeck)/2)
-  store.set('s3CollarMaxBack', points.hps.dy(points.cbNeck)/2)
-  store.set('s3ArmholeMax', points.shoulder.dy(points.frontArmholePitch)/4)
+  store.set('s3CollarMaxFront', points.hps.dy(points.cfNeck) / 2)
+  store.set('s3CollarMaxBack', points.hps.dy(points.cbNeck) / 2)
+  store.set('s3ArmholeMax', points.shoulder.dy(points.frontArmholePitch) / 4)
   // Let's leave the actual splitting the curves for the front/back parts
 
   // Complete pattern?

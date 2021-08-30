@@ -15,7 +15,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    utils
+    utils,
   } = part.shorthand()
 
   // Re-use points for deeper armhole at the front
@@ -31,11 +31,13 @@ export default (part) => {
       .move(points.hps)
       .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
       .setRender(false)
-  }
-  else if (options.s3Collar > 0) {
+  } else if (options.s3Collar > 0) {
     // Shift shoulder seam forward on the collar side
     points.s3CollarSplit = utils.curveIntersectsY(
-      points.hps, points.neckCp2Front, points.cfNeckCp1, points.cfNeck,
+      points.hps,
+      points.neckCp2Front,
+      points.cfNeckCp1,
+      points.cfNeck,
       store.get('s3CollarMaxFront') * options.s3Collar
     )
     paths.frontCollar = new Path()
@@ -43,11 +45,13 @@ export default (part) => {
       .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
       .split(points.s3CollarSplit)[1]
       .setRender(false)
-  }
-  else if (options.s3Collar < 0) {
+  } else if (options.s3Collar < 0) {
     // Shift shoulder seam backward on the collar side
     points.s3CollarSplit = utils.curveIntersectsY(
-      points.mirroredCbNeck, points.mirroredCbNeck, points.mirroredNeckCp2, points.hps,
+      points.mirroredCbNeck,
+      points.mirroredCbNeck,
+      points.mirroredNeckCp2,
+      points.hps,
       store.get('s3CollarMaxBack') * options.s3Collar
     )
     paths.frontCollar = new Path()
@@ -55,10 +59,7 @@ export default (part) => {
       .curve_(points.mirroredNeckCp2, points.mirroredCbNeck)
       .split(points.s3CollarSplit)[0]
       .reverse()
-      .join(new Path()
-        .move(points.hps)
-        .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
-      )
+      .join(new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck))
       .setRender(false)
   }
   if (options.s3Armhole === 0) {
@@ -67,8 +68,7 @@ export default (part) => {
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .setRender(false)
-  }
-  else if (options.s3Armhole > 0) {
+  } else if (options.s3Armhole > 0) {
     // Shift shoulder seam forward on the armhole side
     points.s3ArmholeSplit = utils.curveIntersectsY(
       points.shoulder,
@@ -82,8 +82,7 @@ export default (part) => {
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .split(points.s3ArmholeSplit)[0]
       .setRender(false)
-  }
-  else if (options.s3Armhole < 0) {
+  } else if (options.s3Armhole < 0) {
     // Shift shoulder seam forward on the armhole side
     points.s3ArmholeSplit = utils.curveIntersectsY(
       points.shoulder,
@@ -95,10 +94,15 @@ export default (part) => {
     paths.frontArmhole = new Path()
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-      .join(new Path()
-        .move(points.shoulder)
-        .curve(points.mirroredShoulderCp1, points.mirroredFrontArmholePitchCp2, points.mirroredFrontArmholePitch)
-        .split(points.s3ArmholeSplit)[0]
+      .join(
+        new Path()
+          .move(points.shoulder)
+          .curve(
+            points.mirroredShoulderCp1,
+            points.mirroredFrontArmholePitchCp2,
+            points.mirroredFrontArmholePitch
+          )
+          .split(points.s3ArmholeSplit)[0]
       )
       .setRender(false)
   }

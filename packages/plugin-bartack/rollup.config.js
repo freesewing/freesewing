@@ -12,23 +12,18 @@ const output = [
     format: 'cjs',
     sourcemap: true,
     exports: rollup.exports,
-  }
+  },
 ]
 if (typeof module !== 'undefined')
   output.push({
     banner,
     file: module,
     format: 'es',
-    sourcemap: true
+    sourcemap: true,
   })
 
 export default {
   input: 'src/index.js',
   output,
-  plugins: [
-    peerDepsExternal(),
-    resolve({ modulesOnly: true }),
-    commonjs(),
-    json(),
-  ]
+  plugins: [peerDepsExternal(), resolve({ modulesOnly: true }), commonjs(), json()],
 }

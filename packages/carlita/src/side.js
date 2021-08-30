@@ -1,24 +1,13 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    store,
-    complete,
-    points,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { paperless, sa, snippets, Snippet, store, complete, points, macro, Point, paths, Path } =
+    part.shorthand()
 
   // Give points their original names
   for (let i of store.get('side')) points[i] = points[i + 'Rot2'].clone()
 
   // Clean up
   for (let i in paths) {
-    if (['frontArmhole','frontCollar'].indexOf(i) === -1) delete paths[i]
+    if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
   }
   for (let i in snippets) delete snippets[i]
 

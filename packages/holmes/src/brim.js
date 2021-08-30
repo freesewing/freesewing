@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { Point, points, Path, paths, measurements, options, complete, sa, paperless, macro } =
+    part.shorthand()
 
   let headRadius = measurements.head / 2 / Math.PI
   let brimRadius = headRadius / Math.sin((options.brimAngle * Math.PI) / 180)

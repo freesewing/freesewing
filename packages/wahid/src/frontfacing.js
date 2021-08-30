@@ -1,16 +1,6 @@
 export default (part) => {
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    macro,
-    snippets,
-    Snippet,
-    complete,
-    sa,
-  } = part.shorthand()
+  let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
+    part.shorthand()
 
   // Cleanup from front part
   for (let i of Object.keys(paths)) delete paths[i]

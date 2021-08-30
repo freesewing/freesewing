@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    snippets,
-    Snippet,
-    macro,
-    points,
-    paths,
-    Path,
-    complete,
-    sa,
-    paperless,
-  } = part.shorthand()
+  let { Point, snippets, Snippet, macro, points, paths, Path, complete, sa, paperless } =
+    part.shorthand()
 
   points[0] = points[0].shift(180, 80)
   points[3] = points[3].shift(180, 80)

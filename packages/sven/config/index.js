@@ -18,7 +18,7 @@ export default {
       'lengthBonus',
       'sleeveLengthBonus',
     ],
-    style: ['ribbing', 'ribbingHeight', 's3Collar', 's3Armhole' ],
+    style: ['ribbing', 'ribbingHeight', 's3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',

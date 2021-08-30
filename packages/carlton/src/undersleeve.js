@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength

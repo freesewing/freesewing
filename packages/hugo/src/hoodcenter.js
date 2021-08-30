@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    units,
-  } = part.shorthand()
+  let { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
+    part.shorthand()
 
   let width = store.get('hoodCenterWidth')
   let length = complete ? width * 2.5 : store.get('hoodCenterLength')

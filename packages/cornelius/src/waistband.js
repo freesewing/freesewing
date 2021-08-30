@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
+    part.shorthand()
 
   let halfInch = store.get('halfInch')
   let waistLength = store.get('frontWaistLength') + store.get('backWaistLength')

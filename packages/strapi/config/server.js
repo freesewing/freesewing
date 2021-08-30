@@ -6,4 +6,4 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET', 'you could hardcode a fallback here'),
     },
   },
-});
+})

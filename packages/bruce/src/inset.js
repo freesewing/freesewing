@@ -1,19 +1,8 @@
 import init from './init'
 
 export default function (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    Snippet,
-    snippets,
-  } = part.shorthand()
+  let { store, sa, Point, points, Path, paths, complete, paperless, macro, Snippet, snippets } =
+    part.shorthand()
 
   // Initialize
   init(part)

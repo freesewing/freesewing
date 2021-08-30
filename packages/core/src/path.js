@@ -429,7 +429,7 @@ Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
     let op = this.ops[i]
     if (op.type === 'line') {
       let thisLen = op.to.dist(current)
-      if (Math.abs((len + thisLen) - distance) < 0.1) return op.to
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
       if (len + thisLen > distance) return current.shiftTowards(op.to, distance - len)
       len += thisLen
     } else if (op.type === 'curve') {
@@ -440,8 +440,9 @@ Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
         { x: op.to.x, y: op.to.y }
       )
       let thisLen = bezier.length()
-      if (Math.abs((len + thisLen) - distance) < 0.1) return op.to
-      if (len + thisLen > distance) return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
+      if (len + thisLen > distance)
+        return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
       len += thisLen
     }
     current = op.to

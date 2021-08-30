@@ -6,8 +6,8 @@ export default function (part) {
     points,
     paths,
     measurements,
-//    Snippet,
-//    snippets,
+    //    Snippet,
+    //    snippets,
     store,
     utils,
     units,
@@ -23,10 +23,13 @@ export default function (part) {
 
   // Design pattern here
 
-  let legOpeningLength = store.get('frontLegOpeningLength') + store.get('backLegOpeningLength') + store.get('gussetSideLength')
+  let legOpeningLength =
+    store.get('frontLegOpeningLength') +
+    store.get('backLegOpeningLength') +
+    store.get('gussetSideLength')
   let waistBandLength = store.get('frontWaistBandLength') + store.get('backWaistBandLength')
 
-  points.elasticInfo = new Point(0,0)
+  points.elasticInfo = new Point(0, 0)
     .attr('data-text', 'cutTwoPiecesOfElasticToFinishTheLegOpenings')
     .attr('data-text', ':')
     .attr('data-text', units(legOpeningLength * store.get('elasticScale') + 2 * sa))
@@ -37,7 +40,6 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-
     // if (sa) {
     //   paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     // }

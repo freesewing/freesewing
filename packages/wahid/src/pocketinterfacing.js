@@ -1,15 +1,6 @@
 export default (part) => {
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    macro,
-    complete,
-    paperless,
-  } = part.shorthand()
+  let { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
+    part.shorthand()
 
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height

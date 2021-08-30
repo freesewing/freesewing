@@ -1,5 +1,6 @@
 export default function (part) {
-  let { store, paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } = part.shorthand()
+  let { store, paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } =
+    part.shorthand()
 
   // Clean up
   for (let i of Object.keys(paths)) {
@@ -38,7 +39,7 @@ export default function (part) {
       .shiftAlong(store.get('topDistanceToSecondNotch'))
     macro('sprinkle', {
       snippet: 'notch',
-      on: [ 'notch1', 'notch2' ]
+      on: ['notch1', 'notch2'],
     })
 
     if (sa) {

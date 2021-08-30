@@ -1,17 +1,6 @@
 export default (part) => {
-  let {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { utils, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+    part.shorthand()
 
   let fold = options.buttonholePlacketFoldWidth
   points.neckEdge = utils.lineIntersectsCurve(

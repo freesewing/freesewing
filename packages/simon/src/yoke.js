@@ -1,36 +1,21 @@
 export default (part) => {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
+    part.shorthand()
 
   for (let id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
 
   // Paths
-  paths.saBase = new Path()
-    .move(points.cbYoke)
-    .line(points.armholeYokeSplit)
+  paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplit)
   if (options.yokeHeight > 0) paths.saBase = paths.saBase.join(paths.backArmholeYoke)
-  paths.saBase = paths.saBase
-    .line(points.s3CollarSplit)
-    .join(paths.backCollar)
+  paths.saBase = paths.saBase.line(points.s3CollarSplit).join(paths.backCollar)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()
   else {
     macro('mirror', {
-      mirror: [points.cbNeck,points.cbYoke],
+      mirror: [points.cbNeck, points.cbYoke],
       paths: [paths.saBase],
-      clone: true
+      clone: true,
     })
     paths.saBase = paths.saBase.join(paths.mirroredSaBase.reverse())
     paths.mirroredSaBase.setRender(false)

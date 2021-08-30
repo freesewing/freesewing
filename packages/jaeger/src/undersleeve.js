@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    utils,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } =
+    part.shorthand()
 
   // Vent
   let slope = 15

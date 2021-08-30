@@ -6,8 +6,8 @@ export default function (part) {
     points,
     paths,
     measurements,
-//    Snippet,
-//    snippets,
+    //    Snippet,
+    //    snippets,
     store,
     utils,
     complete,
@@ -25,9 +25,18 @@ export default function (part) {
   // Create points
 
   points.frontWaistMid = new Point(measurements.seat / 4, 0)
-  points.frontWaistLeft = new Point(measurements.seat / 4 - measurements.waist / 4 * store.get('xScale'), 0)
-  points.frontHipLeft = new Point(measurements.seat / 4 - measurements.seat / 4 * store.get('xScale'), measurements.waistToSeat) // Consider renaming from "hip" to "seat"
-  points.frontGussetLeft = new Point((measurements.seat / 4) - (measurements.waist * options.gussetWidth) * store.get('xScale') / 1.2, measurements.waistToUpperLeg)
+  points.frontWaistLeft = new Point(
+    measurements.seat / 4 - (measurements.waist / 4) * store.get('xScale'),
+    0
+  )
+  points.frontHipLeft = new Point(
+    measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'),
+    measurements.waistToSeat
+  ) // Consider renaming from "hip" to "seat"
+  points.frontGussetLeft = new Point(
+    measurements.seat / 4 - (measurements.waist * options.gussetWidth * store.get('xScale')) / 1.2,
+    measurements.waistToUpperLeg
+  )
   points.frontGussetMid = new Point(measurements.seat / 4, measurements.waistToUpperLeg)
 
   /* Flip points to right side */
@@ -36,37 +45,52 @@ export default function (part) {
   points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
 
   /* Waist band is based on waist at top, hip at bottom */
-  points.frontWaistBandLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistLeft, options.rise)
+  points.frontWaistBandLeft = points.frontHipLeft.shiftFractionTowards(
+    points.frontWaistLeft,
+    options.rise
+  )
   points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
-  points.frontWaistBandMid = points.frontWaistBandLeft.shiftFractionTowards(points.frontWaistBandRight, 0.5)
-    .shift(270,measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
+  points.frontWaistBandMid = points.frontWaistBandLeft
+    .shiftFractionTowards(points.frontWaistBandRight, 0.5)
+    .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
 
   /* Leg opening is based on waist band and hip */
-//  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band side point
-//  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band side point
+  //  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band side point
+  //  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band side point
 
-///////////// Replace the point it's shifting towards with a beamsIntersect() of the
-///////////// side (frontWaistLeft and frontHipLeft) and the lowest point of the waistband (backWaistBandMid
-///////////// and backWaistBandLeftCp1 should work)
-///////////// or maybe beamIntersectsY() of backWaistBandMid.y  ??
+  ///////////// Replace the point it's shifting towards with a beamsIntersect() of the
+  ///////////// side (frontWaistLeft and frontHipLeft) and the lowest point of the waistband (backWaistBandMid
+  ///////////// and backWaistBandLeftCp1 should work)
+  ///////////// or maybe beamIntersectsY() of backWaistBandMid.y  ??
 
-  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band low point
+  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(
+    points.frontWaistBandLeft,
+    options.legOpening
+  ) // Waist band low point
   points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
 
   /* Middle point for label */
-  points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(points.frontLegOpeningRight, 0.5)
+  points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
+    points.frontLegOpeningRight,
+    0.5
+  )
 
   // Create control points
 
   /* Control points for leg opening curves */
-  points.frontLegOpeningLeftCp1 = points.frontLegOpeningLeft
-    .shift(180, points.frontGussetLeft.dy(points.frontLegOpeningLeft)/3);
+  points.frontLegOpeningLeftCp1 = points.frontLegOpeningLeft.shift(
+    180,
+    points.frontGussetLeft.dy(points.frontLegOpeningLeft) / 3
+  )
   points.frontGussetLeftCp1 = points.frontGussetLeft
-//    .shift(270, points.frontGussetLeft.dy(points.frontHipLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
-    .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset);
+    //    .shift(270, points.frontGussetLeft.dy(points.frontHipLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
+    .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
 
   /* Control point for waistband dip */
-  points.frontWaistBandLeftCp1 = new Point(points.frontWaistBandRight.x / 3, points.frontWaistBandMid.y)
+  points.frontWaistBandLeftCp1 = new Point(
+    points.frontWaistBandRight.x / 3,
+    points.frontWaistBandMid.y
+  )
 
   /* Flip control points to right side */
   points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)
@@ -107,7 +131,11 @@ export default function (part) {
     'frontLegOpeningLength',
     new Path()
       .move(points.frontGussetRight)
-      .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight)
+      .curve(
+        points.frontGussetRightCp1,
+        points.frontLegOpeningRightCp1,
+        points.frontLegOpeningRight
+      )
       .length()
   )
   store.set(
@@ -120,7 +148,6 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
@@ -132,7 +159,7 @@ export default function (part) {
     title: 'front',
   })
 
-  macro("grainline", {
+  macro('grainline', {
     from: points.frontGussetMid,
     to: points.frontGussetMid.shiftFractionTowards(points.frontWaistBandMid, 0.5),
   })
@@ -162,15 +189,19 @@ export default function (part) {
     macro('ld', {
       from: points.frontWaistBandLeft,
       to: points.frontLegOpeningLeft,
-      d: points.frontWaistBandLeft.y + sa - 15
+      d: points.frontWaistBandLeft.y + sa - 15,
     })
     macro('pd', {
       path: new Path()
         .move(points.frontGussetRight)
-        .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight),
-      d:  15
+        .curve(
+          points.frontGussetRightCp1,
+          points.frontLegOpeningRightCp1,
+          points.frontLegOpeningRight
+        ),
+      d: 15,
     })
-/*    macro('vd', {
+    /*    macro('vd', {
       from: points.frontWaistBandLeft,
       to: points.frontWaistBandMid,
       x: points.frontWaistBandMid.x + sa + 15,

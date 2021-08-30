@@ -6,8 +6,8 @@ export default function (part) {
     points,
     paths,
     measurements,
-//    Snippet,
-//    snippets,
+    //    Snippet,
+    //    snippets,
     store,
     utils,
     complete,
@@ -21,29 +21,46 @@ export default function (part) {
   // Create points
 
   points.backWaistMid = new Point(measurements.seat / 4, 0)
-  points.backWaistBandLeft = new Point(store.get('sideSeamWaist').x / options.backToFrontWidth, store.get('sideSeamWaist').y)
-  points.backLegOpeningLeft = new Point(store.get('sideSeamHip').x / options.backToFrontWidth, store.get('sideSeamHip').y)
+  points.backWaistBandLeft = new Point(
+    store.get('sideSeamWaist').x / options.backToFrontWidth,
+    store.get('sideSeamWaist').y
+  )
+  points.backLegOpeningLeft = new Point(
+    store.get('sideSeamHip').x / options.backToFrontWidth,
+    store.get('sideSeamHip').y
+  )
   points.backGussetLeft = new Point(
-    (measurements.seat / 4) - (measurements.waist * options.gussetWidth) * store.get('xScale') / options.gussetRatio * options.backToFrontWidth,
+    measurements.seat / 4 -
+      ((measurements.waist * options.gussetWidth * store.get('xScale')) / options.gussetRatio) *
+        options.backToFrontWidth,
     measurements.waistToUpperLeg * options.backToFrontLength
   )
-  points.backGussetMid = new Point(measurements.seat / 4, measurements.waistToUpperLeg * options.backToFrontLength)
+  points.backGussetMid = new Point(
+    measurements.seat / 4,
+    measurements.waistToUpperLeg * options.backToFrontLength
+  )
 
   points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
   points.backLegOpeningRight = points.backLegOpeningLeft.flipX(points.backWaistMid)
   points.backWaistBandRight = points.backWaistBandLeft.flipX(points.backWaistMid)
 
-  points.backWaistBandMid = points.backWaistBandLeft.shiftFractionTowards(points.backWaistBandRight, 0.5)
-    .shift(270,measurements.waistToUpperLeg * options.backDip)
+  points.backWaistBandMid = points.backWaistBandLeft
+    .shiftFractionTowards(points.backWaistBandRight, 0.5)
+    .shift(270, measurements.waistToUpperLeg * options.backDip)
 
   /* Middle point for label */
-  points.backMidMid = points.backLegOpeningLeft.shiftFractionTowards(points.backLegOpeningRight, 0.5)
-
+  points.backMidMid = points.backLegOpeningLeft.shiftFractionTowards(
+    points.backLegOpeningRight,
+    0.5
+  )
 
   // Create control points
 
   /* Control point for waistband dip */
-  points.backWaistBandLeftCp1 = new Point(points.backWaistBandRight.x / 3, points.backWaistBandMid.y)
+  points.backWaistBandLeftCp1 = new Point(
+    points.backWaistBandRight.x / 3,
+    points.backWaistBandMid.y
+  )
 
   /* Flip points to right side */
   points.backWaistBandRightCp1 = points.backWaistBandLeftCp1.flipX(points.backWaistMid)
@@ -60,48 +77,45 @@ export default function (part) {
 
   if (options.backExposure >= 0) {
     /* If back exposure is high, like a thong style */
-      /* This controls the hip bit */
+    /* This controls the hip bit */
     points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shiftFractionTowards(
       points.backLegOpeningCorner,
       options.backExposure
     )
-      /* This controls the center bit */
+    /* This controls the center bit */
     points.backGussetLeftCp1 = points.backGussetLeft.shiftFractionTowards(
       points.backWaistBandMid,
       options.backExposure
     )
-    points.backGussetLeft = points.backGussetLeft.shiftFractionTowards(points.backGussetMid, options.backExposure) // This narrows the back of the gusset
+    points.backGussetLeft = points.backGussetLeft.shiftFractionTowards(
+      points.backGussetMid,
+      options.backExposure
+    ) // This narrows the back of the gusset
     points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
   } else {
     /* If back exposure is low and flares out to cover more */
-      /* This controls the hip bit */
+    /* This controls the hip bit */
     points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shift(
       -45,
       points.backWaistBandMid.x / 8
     )
     /* This controls the taper to gusset */
-    points.backGussetLeftCp1 = points.backGussetLeft.shift(
-      115,
-      points.backWaistBandMid.x / 8
-    )
+    points.backGussetLeftCp1 = points.backGussetLeft.shift(115, points.backWaistBandMid.x / 8)
     /* This adds a new point in the middle of the back coverage */
-    points.backFlare = points.backGussetLeft.shiftFractionTowards(
-      points.backLegOpeningLeft,
-      0.5
-    )
+    points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
     points.backFlareLeft = points.backFlare.shift(
       215,
-      -points.backWaistBandMid.x / 2 * options.backExposure
+      (-points.backWaistBandMid.x / 2) * options.backExposure
     )
     points.backFlareRight = points.backFlareLeft.flipX(points.backWaistBandMid)
     /* This controls the flare */
     points.backFlareLeftCp1 = points.backFlareLeft.shift(
       115,
-      points.backWaistBandMid.x / 5//-150*options.backExposure
+      points.backWaistBandMid.x / 5 //-150*options.backExposure
     )
     points.backFlareLeftCp2 = points.backFlareLeft.shift(
       295,
-      points.backWaistBandMid.x / 5//-150*options.backExposure
+      points.backWaistBandMid.x / 5 //-150*options.backExposure
     )
     points.backFlareRightCp1 = points.backFlareLeftCp1.flipX(points.backWaistMid)
     points.backFlareRightCp2 = points.backFlareLeftCp2.flipX(points.backWaistMid)
@@ -144,62 +158,61 @@ export default function (part) {
       .attr('class', 'fabric')
   }
 
-    // Store points for use in other parts
+  // Store points for use in other parts
 
-    /* Store gusset points for use in gusset */
+  /* Store gusset points for use in gusset */
 
-    store.set('backGussetLeft', points.backGussetLeft)
-    store.set('backGussetRight', points.backGussetRight)
+  store.set('backGussetLeft', points.backGussetLeft)
+  store.set('backGussetRight', points.backGussetRight)
 
-    /* Store lengths for use in elastic */
+  /* Store lengths for use in elastic */
 
-    if (options.backExposure >= 0 ) {
-      store.set(
-        'backLegOpeningLength',
-        new Path()
-          .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-          .length()
-      )
-    } else {
-      store.set(
-        'backLegOpeningLength',
-        new Path()
-          .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-          .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight),
-      )
-    }
-
+  if (options.backExposure >= 0) {
     store.set(
-      'backWaistBandLength',
+      'backLegOpeningLength',
       new Path()
-        .move(points.backWaistBandRight)
-        .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
+        .move(points.backGussetRight)
+        .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
         .length()
     )
+  } else {
+    store.set(
+      'backLegOpeningLength',
+      new Path()
+        .move(points.backGussetRight)
+        .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
+        .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
+    )
+  }
+
+  store.set(
+    'backWaistBandLength',
+    new Path()
+      .move(points.backWaistBandRight)
+      .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
+      .length()
+  )
 
   // Complete?
   if (complete) {
-
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
 
-    macro('title', {
-      at: points.backMidMid,
-      nr: 2,
-      title: 'back',
-    })
+  macro('title', {
+    at: points.backMidMid,
+    nr: 2,
+    title: 'back',
+  })
 
-    macro("grainline", {
-      from: points.backGussetMid,
-      to: points.backGussetMid.shiftFractionTowards(points.backWaistBandMid, 0.4),
-    })
+  macro('grainline', {
+    from: points.backGussetMid,
+    to: points.backGussetMid.shiftFractionTowards(points.backWaistBandMid, 0.4),
+  })
 
-    points.scaleboxAnchor = points.scalebox = points.backMidMid.shift(90, -50)
-    macro('miniscale', { at: points.scalebox })
+  points.scaleboxAnchor = points.scalebox = points.backMidMid.shift(90, -50)
+  macro('miniscale', { at: points.scalebox })
 
   // Paperless?
   if (paperless) {
@@ -223,20 +236,28 @@ export default function (part) {
       to: points.backGussetMid,
       x: points.backWaistBandMid.x + sa + 15,
     })
-    if (options.backExposure >= 0 ) {
+    if (options.backExposure >= 0) {
       macro('pd', {
         path: new Path()
           .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight),
-        d: 15
+          .curve(
+            points.backGussetRightCp1,
+            points.backLegOpeningRightCp1,
+            points.backLegOpeningRight
+          ),
+        d: 15,
       })
     } else {
       macro('pd', {
         path: new Path()
           .move(points.backGussetRight)
           .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-          .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight),
-        d: 15
+          .curve(
+            points.backFlareRightCp1,
+            points.backLegOpeningRightCp1,
+            points.backLegOpeningRight
+          ),
+        d: 15,
       })
     }
   }
