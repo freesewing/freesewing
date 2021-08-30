@@ -12,7 +12,7 @@ applyThisLayout: Aplicar este diseño
 areYouSureYouWantToContinue: Estás seguro de que quieres continuar?
 askForHelp: Pide ayuda
 automatic: Automático
-averagePeopleDoNotExist: "La gente promedio no existe"
+averagePeopleDoNotExist: 'La gente promedio no existe'
 awesome: Genial
 back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
@@ -72,7 +72,7 @@ drafts: Bocetos
 draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastra y suelta una imagen aquí, o selecciona una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
-emailWorksToo: "Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará"
+emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 export: Exportar
 exportTiledPDF: Exportar PDF paginado
@@ -81,7 +81,7 @@ fieldRemoved: '{field} eliminado'
 fieldSaved: '{field} guardado'
 filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
-forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña"
+forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
 github: GitHub
@@ -117,7 +117,7 @@ addThing: Añadir {thing}
 newThing: Nuevo {thing}
 newPatternForModel: 'Nuevo {pattern} para {model}'
 noChanges: No hay cambios
-no: false
+no: "no"
 noPasswordPolicy: No aplicamos una política de contraseña
 noSeamAllowance: Sin margen de costura
 notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponible en español.
@@ -216,7 +216,7 @@ whatIsThis: Que es esto
 withBreasts: Con pechos
 withoutBreasts: Sin pechos
 yay: '¡Hurra!'
-yes: true
+yes: si
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn: No has iniciado sesión

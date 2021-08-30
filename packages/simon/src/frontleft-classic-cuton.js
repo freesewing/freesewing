@@ -1,18 +1,8 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+    part.shorthand()
 
   let fold = options.buttonholePlacketFoldWidth
   let width = options.buttonholePlacketWidth

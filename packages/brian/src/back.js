@@ -14,7 +14,7 @@ export default (part) => {
     macro,
     options,
     Point,
-    utils
+    utils,
   } = part.shorthand()
 
   points.anchor = points.hps.clone()
@@ -27,8 +27,7 @@ export default (part) => {
       .move(points.hps)
       .curve_(points.neckCp2, points.cbNeck)
       .setRender(false)
-  }
-  else if (options.s3Collar > 0) {
+  } else if (options.s3Collar > 0) {
     // Shift shoulder seam forward on the collar side
     points.s3CollarSplit = utils.curveIntersectsY(
       points.hps,
@@ -42,16 +41,15 @@ export default (part) => {
       ._curve(points.mirroredNeckCp2Front, points.mirroredCfNeckCp1, points.mirroredCfNeck)
       .split(points.s3CollarSplit)[0]
       .reverse()
-      .join(new Path()
-        .move(points.hps)
-        .curve_(points.neckCp2, points.cbNeck)
-      )
+      .join(new Path().move(points.hps).curve_(points.neckCp2, points.cbNeck))
       .setRender(false)
-  }
-  else if (options.s3Collar < 0) {
+  } else if (options.s3Collar < 0) {
     // Shift shoulder seam backward on the collar side
     points.s3CollarSplit = utils.curveIntersectsY(
-      points.hps, points.neckCp2, points.cbNeck, points.cbNeck,
+      points.hps,
+      points.neckCp2,
+      points.cbNeck,
+      points.cbNeck,
       store.get('s3CollarMaxBack') * -1 * options.s3Collar
     )
     paths.backCollar = new Path()
@@ -67,8 +65,7 @@ export default (part) => {
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
       .setRender(false)
-  }
-  else if (options.s3Armhole > 0) {
+  } else if (options.s3Armhole > 0) {
     // Shift shoulder seam forward on the armhole side
     points.s3ArmholeSplit = utils.curveIntersectsY(
       points.shoulder,
@@ -80,14 +77,18 @@ export default (part) => {
     paths.backArmhole = new Path()
       .move(points.armholePitch)
       .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-      .join(new Path()
-        .move(points.shoulder)
-        .curve(points.mirroredShoulderCp1, points.mirroredFrontArmholePitchCp2, points.mirroredFrontArmholePitch)
-        .split(points.s3ArmholeSplit)[0]
+      .join(
+        new Path()
+          .move(points.shoulder)
+          .curve(
+            points.mirroredShoulderCp1,
+            points.mirroredFrontArmholePitchCp2,
+            points.mirroredFrontArmholePitch
+          )
+          .split(points.s3ArmholeSplit)[0]
       )
       .setRender(false)
-  }
-  else if (options.s3Armhole < 0) {
+  } else if (options.s3Armhole < 0) {
     // Shift shoulder seam backward on the armhole side
     points.s3ArmholeSplit = utils.curveIntersectsY(
       points.shoulder,

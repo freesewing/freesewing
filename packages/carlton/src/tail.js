@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    units,
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } =
+    part.shorthand()
 
   let length = store.get('waistToHem') - store.get('beltWidth') / 2
 

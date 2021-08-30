@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    store,
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { store, options, Point, Path, points, paths, complete, sa, paperless, macro } =
+    part.shorthand()
 
   let w = options.handleWidth
   let h = store.get('depth') * options.strapLength

@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    Path,
-    Point,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { Path, Point, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
+    part.shorthand()
 
   let halfInch = store.get('halfInch')
   let waist = store.get('waist')

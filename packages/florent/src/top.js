@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    points,
-    macro,
-    Point,
-    Path,
-    paths,
-    snippets,
-    Snippet,
-    complete,
-    store
-  } = part.shorthand()
+  let { paperless, sa, points, macro, Point, Path, paths, snippets, Snippet, complete, store } =
+    part.shorthand()
 
   const fitCap = (part, scale) => {
     let { points, options, Point, Path, measurements } = part.shorthand()
@@ -154,20 +143,23 @@ export default function (part) {
     macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
     macro('sprinkle', {
       snippet: 'notch',
-      on: [ 'midMid', 'backHollow', 'midSide' ]
+      on: ['midMid', 'backHollow', 'midSide'],
     })
-    store.set('topDistanceToFirstNotch', new Path()
-      .move(points.backEdge)
-      .line(points.backSide)
-      .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
-      .length()
+    store.set(
+      'topDistanceToFirstNotch',
+      new Path()
+        .move(points.backEdge)
+        .line(points.backSide)
+        .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
+        .length()
     )
-    store.set('topDistanceToSecondNotch', new Path()
-      .move(points.backHollow)
-      .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
-      .length() + store.get('topDistanceToFirstNotch')
+    store.set(
+      'topDistanceToSecondNotch',
+      new Path()
+        .move(points.backHollow)
+        .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
+        .length() + store.get('topDistanceToFirstNotch')
     )
-
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 

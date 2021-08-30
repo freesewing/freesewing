@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
+  let { Point, points, Path, paths, complete, sa, paperless, macro, snippets, Snippet } =
+    part.shorthand()
 
   // Clean up inherited paths & snippets
   for (let id in paths) delete paths[id]

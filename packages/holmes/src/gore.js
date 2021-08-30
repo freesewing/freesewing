@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    sa,
-    paperless,
-  } = part.shorthand()
+  let { Point, points, Path, paths, measurements, options, macro, complete, sa, paperless } =
+    part.shorthand()
 
   // Design pattern here
 

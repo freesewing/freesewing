@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')

@@ -173,19 +173,8 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
 }
 
 export default function (part) {
-  let {
-    options,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
+    part.shorthand()
 
   let tempP = null
 

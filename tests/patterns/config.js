@@ -1,3 +1,12 @@
+const notGarments = [
+  'rendertest',
+  'tutorial',
+  'examples',
+  'legend',
+]
+const isGarment = design => (notGarments.indexOf(design) === -1) ? true : false
+
+
 /*
  * This runs unit tests for the pattern configuration
  * It expects the following:
@@ -30,44 +39,45 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       }
     })
   }
-  it(`  - 'type' should be 'pattern' or 'block'`, () => {
-    expect(['pattern', 'block'].indexOf(pattern.config.type)).to.not.equal(-1)
-  })
-  it(`  - 'department' should be one of tops, bottoms, coats, swimwear, underwear, or accessories`, () => {
-    expect(
-      ['tops', 'bottoms', 'coats', 'swimwear', 'underwear', 'accessories'].indexOf(pattern.config.department)
-    ).to.not.equal(-1)
-  })
-  it(`  - 'difficulty' should be a number between 1 and 5`, () => {
-    expect(typeof pattern.config.difficulty).to.equal('number')
-    expect(pattern.config.difficulty > 0).to.be.true
-    expect(pattern.config.difficulty < 6).to.be.true
-  })
+  // Config tests for garments only
+  if (isGarment(design)) {
+    it(`  - 'type' should be 'pattern' or 'block'`, () => {
+      expect(['pattern', 'block'].indexOf(pattern.config.type)).to.not.equal(-1)
+    })
+    it(`  - 'department' should be one of tops, bottoms, coats, swimwear, underwear, or accessories`, () => {
+      expect(
+        ['tops', 'bottoms', 'coats', 'swimwear', 'underwear', 'accessories'].indexOf(pattern.config.department)
+      ).to.not.equal(-1)
+    })
+    it(`  - 'difficulty' should be a number between 1 and 5`, () => {
+      expect(typeof pattern.config.difficulty).to.equal('number')
+      expect(pattern.config.difficulty > 0).to.be.true
+      expect(pattern.config.difficulty < 6).to.be.true
+    })
 
-  /*
-   *  Ensure optiongroup structure and content
-   */
-  it('Option groups:', () => true)
-  for (let group in pattern.config.optionGroups) {
-    for (let option of pattern.config.optionGroups[group]) {
-      if (typeof option === 'string') {
-        it(`  - '${option}' should be a valid option`, () => {
-          expect(pattern.config.options[option]).to.exist
-        })
-      } else {
-        for (let subgroup in option) {
-          it(`  Subgroup: ${subgroup}`, () => true)
-          for (let suboption of option[subgroup]) {
-            it(`    - '${suboption}' should be a valid option`, () => {
-              expect(pattern.config.options[suboption]).to.exist
-            })
+    /*
+     *  Ensure optiongroup structure and content
+     */
+    it('Option groups:', () => true)
+    for (let group in pattern.config.optionGroups) {
+      for (let option of pattern.config.optionGroups[group]) {
+        if (typeof option === 'string') {
+          it(`  - '${option}' should be a valid option`, () => {
+            expect(pattern.config.options[option]).to.exist
+          })
+        } else {
+          for (let subgroup in option) {
+            it(`  Subgroup: ${subgroup}`, () => true)
+            for (let suboption of option[subgroup]) {
+              it(`    - '${suboption}' should be a valid option`, () => {
+                expect(pattern.config.options[suboption]).to.exist
+              })
+            }
           }
         }
       }
     }
-  }
 
-  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1) {
     /*
      *  Ensure pattern is listed as being for breasts or not
      */

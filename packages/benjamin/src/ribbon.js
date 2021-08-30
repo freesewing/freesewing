@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    Path,
-    measurements,
-    store,
-    options,
-    complete,
-    macro,
-    points,
-    paths,
-    sa,
-    paperless,
-  } = part.shorthand()
+  let { Point, Path, measurements, store, options, complete, macro, points, paths, sa, paperless } =
+    part.shorthand()
 
   if (options.adjustmentRibbon) {
     part.render = false

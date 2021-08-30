@@ -1,18 +1,8 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
   let width = options.buttonPlacketWidth
   points.placketTopIn = utils.lineIntersectsCurve(

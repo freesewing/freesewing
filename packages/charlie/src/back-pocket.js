@@ -1,18 +1,7 @@
 export default (part) => {
   // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    complete,
-    paperless,
-    store,
-    macro,
-    snippets,
-    Snippet,
-    sa,
-  } = part.shorthand()
+  let { points, Point, paths, Path, complete, paperless, store, macro, snippets, Snippet, sa } =
+    part.shorthand()
 
   points.leftNotch = new Point(store.get('backPocketWidth') / -2, 0)
   points.rightNotch = points.leftNotch.flipX()

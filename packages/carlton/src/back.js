@@ -60,7 +60,7 @@ export default function (part) {
 
   // Clean up
   for (let i in paths) {
-    if (['backArmhole','backCollar'].indexOf(i) === -1) delete paths[i]
+    if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
   }
   for (let i in snippets) delete snippets[i]
 

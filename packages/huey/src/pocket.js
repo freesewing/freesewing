@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    macro,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa,
-    options,
-  } = part.shorthand()
+  let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa, options } =
+    part.shorthand()
 
   if (!options.pocket) return part
 

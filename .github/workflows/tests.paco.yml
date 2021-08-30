@@ -1,6 +1,14 @@
 name: Unit tests - Paco
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
 
 jobs:
   test:
@@ -9,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - name: Checkout repository

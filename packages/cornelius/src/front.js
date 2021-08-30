@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    options,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
+    part.shorthand()
 
   const cc = 0.551915024494 // circle constant
 

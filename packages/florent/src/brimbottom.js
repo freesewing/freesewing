@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-    measurements,
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path, measurements } =
+    part.shorthand()
 
   let scale = 1
   let base = scale * measurements.head * (1 + options.headEase)
@@ -60,7 +49,7 @@ export default function (part) {
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: [ 'innerMid', 'outerMid' ]
+      on: ['innerMid', 'outerMid'],
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
