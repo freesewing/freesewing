@@ -1,4 +1,4 @@
-Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
+Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Ci-dessous sont deux mises en page typiques.
 
 ## Sans ruban d'ajustement
 

@@ -1,2 +1,2 @@
-This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
+Cela dicte combien vous voulez que les flacons de la jambe se chevauchent à la taille. Un cadre de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière.
 

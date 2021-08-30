@@ -1,6 +1,6 @@
-![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)
+![Die vertikale Position der Ärmelhaube](./sleevecaptopfactory.svg)
 
-This option controls the vertical placement of the sleevecap top.
+Diese Option steuert die vertikale Platzierung der Ärmel oben.
 
 <Tip>
 
@@ -8,3 +8,6 @@ See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the
 look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecaptopfactory_sample.svg "Effekt dieser Option auf das Muster")

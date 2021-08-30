@@ -2,6 +2,10 @@
 title: Overwijdte borst
 ---
 
-![The effect of the chest ease option on the pattern](sample.png)
+![Het effect van de optie voor overwijdte aan de borst op het patroon](sample.png)
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+De optie **borst overwijdte** bepaalt de hoeveelheid overwijdte aan het grootste deel van je borst.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_chestease_sample.svg "Effect van deze optie op het patroon")

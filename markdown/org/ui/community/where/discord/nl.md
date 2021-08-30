@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-We use [Discord](https://discord.freesewing.org/) as our main platform for discussion and cooperation.
+We gebruiken [Discord](https://discord.freesewing.org/) als ons belangrijkste platform voor discussie en samenwerking.
 
-You can join us at [discord.freesewing.org](https://discord.freesewing.org).
+Je kunt je bij ons voegen op [discord.freesewing.org](https://discord.freesewing.org).
 
-They also have an excellent mobile apps as well as clients for Windows, Mac, and Linux. Head over to [the Discord download page](https://discord.com/download) for those.
+Ze hebben ook uitstekende mobiele apps en clients voor Windows, Mac en Linux. Ga naar [de Discord-downloadpagina](https://discord.com/download) voor deze.

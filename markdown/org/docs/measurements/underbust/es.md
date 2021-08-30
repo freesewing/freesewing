@@ -2,8 +2,8 @@
 title: Bajo pecho
 ---
 
-The **underbust** measurement is the circumference of your chest without taking your breasts into account.
+La medición del **bajo el pulso** es la circunstancia de tu pecho sin tener en cuenta tus pechos.
 
-To measure your **underbust**, wrap the tape measure around your chest just below your breasts, where your bra band sits.
+Para medir tu **subbust**, envuelve la medida de cinta alrededor de tu pecho justo debajo de tus senos, donde se encuentra tu cinta.
 
-If you don’t have breasts, this measurement does not apply to you. Just use your chest circumference.
+Si usted no tiene mamas, esta medida no se aplica a usted. Simplemente utilice la circunstancia de su pecho.

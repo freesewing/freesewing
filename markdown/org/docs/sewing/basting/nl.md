@@ -1,5 +1,5 @@
 ---
-layout: onecol
+layout: opecol
 title: Driegen
 ---
 

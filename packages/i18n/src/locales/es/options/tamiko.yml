@@ -7,4 +7,4 @@ shoulderseamLength:
   description: La longitud de la costura del hombro, como un factor de la medida de su hombro a hombro.
 shoulderSlope:
   title: Inclinación de hombro
-  description: Controls the angle of the shoulder seams
+  description: Controla el ángulo de las costuras del hombro

@@ -1,3 +1,3 @@
 ![Separate Knopflochleiste](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Ob der Buttonlochplatz ein separates Musterteil sein soll oder nicht.

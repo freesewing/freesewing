@@ -1,2 +1,2 @@
-The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.
+El porcentaje de la circunstancia del asiento que el cráneo delantero debe ocupar. Esto crea más o menos espacio entre la costura lateral y la parte delantera.
 

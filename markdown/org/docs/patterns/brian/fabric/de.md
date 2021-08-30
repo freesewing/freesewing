@@ -1,11 +1,11 @@
 <Note>
 
-###### Brian is a block, not a pattern
+###### Brian ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ein Block ist eine Grundform, auf der andere Muster basieren.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blöcke werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Muster.
 
 </Note>
 

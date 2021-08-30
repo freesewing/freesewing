@@ -1,81 +1,81 @@
-### Step 1: Sew the front to the first gusset piece
+### Schritt 1: Nähen Sie die Vorderseite zum ersten Gusset Stück
 
-Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
+Platzieren Sie eines der Gussetstücke auf das vordere Stück, _gute Seiten zusammen_, so dass die Crotch Nähte ausgerichtet sind. Pin oder Baste an der Nahtzugabe.
 
-![Sew the front to the first gusset piece](step01.png)
+![Nähe die Vorderseite zum ersten Gusset Stück](step01.png)
 
-### Step 2: Open flat
+### Schritt 2: Flatrate öffnen
 
-Open flat. You can press if you want to, but who presses underwear?
+Öffne flach. Sie können drücken, wenn Sie wollen, aber wer presst Unterwäsche?
 
-![Open flat](step02.png)
+![Öffne flach](step02.png)
 
-### Step 3: Sew the back to the first gusset piece
+### Schritt 3: Nähen Sie die Rückseite zum ersten Gusset Stück
 
-Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
+Legen Sie das hintere Stück auf den Gusset, gute Seiten zusammen. Pin oder Baste an der Nahtzugabe.
 
-![Sew the back to the first gusset piece](step03.png)
+![Nähe den Rücken zum ersten Gusset Stück](step03.png)
 
-### Step 4: Open flat
+### Schritt 4: Wohnung öffnen
 
-Open flat.
+Öffne flach.
 
-![Open flat](step04.png)
+![Öffne flach](step04.png)
 
-## Step 5: Attach the second gusset piece
+## Schritt 5: Füge das zweite Gusset Stück hinzu
 
-Get the front and back pieces out of the way by rolling them to the center.
+Bringen Sie die Vorder- und Rückenstücke aus dem Weg, indem Sie sie in die Mitte rollen.
 
-Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
+Platzieren Sie das zweite Gusset-Stück gute Seiten auf der Vorderseite, so dass es sich mit dem ersten Gusset-Stück anpasst. Die gerollten Vorder- und Rückenteile sollten zwischen Ihren Gusset Stücken abgemischt werden.
 
-Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
+Nähen Sie die Nähte vorne und hinten mit einem Zickzackstich an Ihrer Naht.
 
-![Attach the second gusset piece](step05.png)
+![Das zweite Gusset Stück anhängen](step05.png)
 
-## Step 6: Turn right side out
+## Schritt 6: Rechtsseite ausschalten
 
-Turn the undies right side out. All gusset seams should be enclosed.
+Drehen Sie die Undichten nach rechts aus. Alle Gusset-Nähte sollten eingeschlossen sein.
 
-![Turn right side out](step06.png)
+![Rechts ausschalten](step06.png)
 
-### Step 7: Sew the side seams
+### Schritt 7: Nähte die Seitennaht
 
-Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
+Näht die Seite gut an den Seiten an. Nähen Sie die Seitennaht mit einem Serger oder einer Zickzack-Nähte.
 
-![Sew the side seams](step07.png)
+![Nähte die Seitennaht](step07.png)
 
 <Note>
 
-Good work! Technically you could leave the edges raw since knit fabrics do not fray, but to help your undies stay up, you should probably add elastic to the legs and waist. Keep going.
+Gute Arbeit! Technisch könnte man die Kanten roh belassen, da Strickstoffe nicht zerfallen lassen aber damit Ihre Unsterblichkeit aufrecht bleibt, sollten Sie den Beinen und der Taille wahrscheinlich elastisch hinzufügen. Weiter fahren.
 
 </Note>
 
-### Step 8: Prepare elastic
+### Schritt 8: elastisch vorbereiten
 
-Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
+Überlappen Sie die Kanten jedes elastischen Teiles durch Ihre Naht und Näht zusammen. Sie sollten drei elastische Stücke haben: eines für die Taille und zwei für die Beine.
 
-To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
+Um die Elastik gleichmäßig zu dehnen, teilen Sie die Elastik in vier Viertel und markieren Sie die Punkte mit Pins oder Kreide. Gleiches gilt für die Taille und die Beinöffnungen, wobei die Viertelpunkte markiert werden.
 
-![Prepare elastic](step08.png)
+![Elastisch vorbereiten](step08.png)
 
-![Quarter the openings](step08b.png)
+![Quartal der Öffnungen](step08b.png)
 
-### Step 9: Sew elastic to the outside of the garment
+### Schritt 9: elastisch nach außen nähen
 
-Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
+Nähen Sie die elastische Taille und die Beinöffnungen auf der guten Seite des Stoffes und sorgen Sie dafür, dass Sie die Viertelmarkierungen anbringen. Wenn dein Elastisch einen dekorativen Rand hat, Vergewissern Sie sich, dass Sie die schlichte Kante (nicht die dekorative Kante) des elastischen an den Rand des Stoffes anbringen. Die dekorative Kante sollte auf das Kleidungsstück zeigen, nicht weg davon.
 
-Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
+Nähen Sie das elastische Kleidungsstück mit einem Zickzackstich. Die elastische Nähte müssen Sie leicht dehnen, um sie flach gegen den Stoff zu verlegen. Vermeiden Sie das Strecken des Stoffes selbst.
 
-![Sew elastic to the outside of the garment](step09.png)
+![Elastisch nach außen nähen](step09.png)
 
-Trim away any excess fabric that causes bulk or sticks out from the elastic.
+Schneiden Sie alle überschüssigen Stoffe, die Massen- oder Stöcke aus der Elastik verursachen.
 
-### Step 10: Fold the elastic in and sew it down again
+### Schritt 10: Füge den Gummizug ein und nähe ihn wieder nach unten
 
-Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
+Das elastische und das Gewebe nach innen einklappen und die rohe Kante des Stoffes unter dem elastischen Stoff einschließen. Du solltest auf die Außenseite des Geräts schauen, eine gefaltete Kante mit ein bisschen elastischem Blick aus. Nähen mit einem Zickzack-Nähen.
 
-![Fold the elastic in and sew it down again](step10.png)
+![Füge den Gummi ein und nähe ihn wieder nach unten](step10.png)
 
-Repeat these steps for each of the waist and leg openings.
+Wiederholen Sie diese Schritte für jede der Taillen- und Beinöffnungen.
 
-You did it!
+Du hast es getan!

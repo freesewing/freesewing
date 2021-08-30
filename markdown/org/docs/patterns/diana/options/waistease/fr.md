@@ -1,3 +1,3 @@
-![The waist ease option on Diana](./waistease.svg)
+![L'option d'assouplissement de la taille sur Diana](./waistease.svg)
 
-This option controls the amount of ease at the waist.
+Cette option permet de contrôler la quantité d'aisance à la taille.

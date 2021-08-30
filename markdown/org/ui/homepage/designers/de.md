@@ -1,23 +1,23 @@
----
----
+- - -
+- - -
 
 #### Was ist parametrisches Design?
 
-Parametric design refers to the use of parameters or variables to manipulate the outcome of a given design within its rules.
+Das Parametrische Design bezieht sich auf die Verwendung von Parametern oder Variablen zur Manipulation des Ergebnisses eines bestimmten Designs innerhalb seiner Regeln.
 
-In sewing patterns, the *parameters* are what is provided by the user: Their measurements and options that they have selected.  
-The *rules* of the design are what you, the designer, make them.
+In Nähmustern die *Parameter* sind die vom Benutzer zur Verfügung gestellten Parameter: Ihre Messungen und Optionen, die er ausgewählt hat.  
+Die *Regeln* des Designs sind das, was Sie, der Designer, machen.
 
 #### Was bedeutet das für Designer/innen?
 
-When drafting or designing patterns or garments, it is common practice to start with a *fit model* (or *dress form*). The measurements of the fit model are used as input in the initial design.
+Beim Entwurf oder Design von Mustern oder Kleidungsstücken ist es üblich, mit einem *fit Model* (oder *Kleiderformular* ) zu beginnen. Die Messungen des Passmodells werden als Input in der ersten Konstruktion eingesetzt.
 
-Adapting the pattern for a different model is a tedious task, which is why patterns are graded up and down to cover different sizes.
+Die Anpassung des Musters an ein anderes Modell ist eine mühsame Aufgabe. Deshalb werden die Muster nach oben und unten gestuft, um verschiedene Größen abzudecken.
 
-But in a parametric sewing pattern, adapting to different sizes or models *just works*.
+Aber in einem parametrischen Nähmuster funktioniert die Anpassung an verschiedene Größen oder Modelle *nur*.
 
 #### Was kann FreeSewing für mich tun?
 
-FreeSewing provides everything you need to create your own parametric sewing patterns with very little effort.
+FreeSewing bietet alles, was du brauchst, um deine eigenen Nähmuster zu erstellen mit sehr geringem Aufwand.
 
-You are free to sell patterns you create, or contribute them to our growing collection.
+Sie können Muster verkaufen, die Sie erstellen, oder sie zu unserer wachsenden Sammlung beitragen.

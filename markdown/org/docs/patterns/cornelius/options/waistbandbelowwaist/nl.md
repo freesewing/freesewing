@@ -1,5 +1,5 @@
 ---
-title: Lower waistband
+title: Onderste tailleband
 ---
 
-This option allows you to lower the waistband below your (natural) waist.
+Met deze optie kun je de tailleband onder je (natuurlijke) taille verlagen.

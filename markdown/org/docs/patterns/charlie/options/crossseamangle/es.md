@@ -1,4 +1,4 @@
 
-Controls the start of the crossseam at the back fork point.
+Controla el inicio de la costura cruzada en el punto de la horquilla trasera.
 
-This will influence how the trousers fit around your bum.
+Esto influirá en la forma en que los pantalones caben alrededor de tu pelota.

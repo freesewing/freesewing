@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your chest
+Steuert die Menge an Leichtigkeit an der Brust

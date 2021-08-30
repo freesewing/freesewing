@@ -1,3 +1,3 @@
-![The biceps ease option on Diana](./bicepsease.svg)
+![L'option de facilité biceps sur Diana](./bicepsease.svg)
 
-This option controls the fit at your upper arm, and influences the depth of the armhole.
+Cette option permet de contrôler l'ajustement à votre bras supérieur et influence la profondeur de votre armure.

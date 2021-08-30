@@ -1,13 +1,17 @@
 
-Controls the curvature of the cross seam curve.
+Steuert die Krümmung der Quernahtkurve.
+
 
 <Note>
 
-This curve has an influence on the amount of fabric at your bum.
+Diese Kurve hat einen Einfluss auf die Stoffmenge an Ihrem Bum.
 
-People with a flatter bum will get a better fit by increasing this, as the curve will start later,
-and this there will be less fabric pooling at the bum.
+Menschen mit einem geschmeidigeren Bum werden sich besser einstellen, indem sie dies erhöhen da die Kurve später beginnen wird,
+und dies wird weniger Stoffpooling am Bum.
 
-People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
+Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (horizontale) Raum für ihre Rückseite zu schaffen.
 
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_crossseamcurvebend_sample.svg "Effekt dieser Option auf das Muster")

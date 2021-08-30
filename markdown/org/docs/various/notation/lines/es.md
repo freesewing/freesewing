@@ -1,14 +1,14 @@
 ---
-title: Other lines
+title: Otras líneas
 ---
 
-Some patterns may have other lines on them, there are 4 additional styles:
+Algunos patrones pueden tener otras líneas, hay 4 estilos adicionales:
 
- - Note
- - Mark
+ - Nota
+ - Marca
  - Contrast
- - Help
+ - Ayuda
 
-They might be used by patterns designers to add additional info, depending on the context.
+Pueden ser usados por los diseñadores de patrones para agregar información adicional, dependiendo del contexto.
 
 <Legend part="otherLines" caption="Other line styles" >

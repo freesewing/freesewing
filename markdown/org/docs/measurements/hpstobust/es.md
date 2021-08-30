@@ -1,35 +1,35 @@
 ---
-title: HPS to bust
+title: HPS para quebrar
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: hombro de punto alto
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+El *hombro de punto alto* o *HPS* se utiliza como base para varias mediciones verticales.
+Consulte [la documentación de hps](/docs/measurements/hps/) para obtener información sobre cómo localizar este punto.
 
 </Note>
 
-The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
+El hombro de **de punto alto (HPS) para descomprimir la medición de** se ejecuta desde el HPS hasta la línea que forma el lapso de bush.
 
-To measure your HPS to bust, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to the line that forms your chest circumference/bust span.
+Para medir tu HPS a colapsar, primero [localiza tu punto HPS](/docs/measurements/hps/). A continuación, cuide directamente hacia la línea que forma su rango de circunstancia/caída del pecho.
 
-The point of this measurement is to locate the fullest part of your bust vertically on your torso.
+El punto de esta medida es localizar la parte más completa de su busto verticalmente sobre su torso.
 
 <Tip>
 
-##### Think about which hand you're using
+##### Piensa en qué mano estás usando
 
-If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on 
-the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of 
-the tape up to your right shoulder with your right hand, while your left hand is holding the end. 
-But that means you distort the length you are trying to measure by raising your arm on the same side. 
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+Si te mides, podrías tratar de mantener tu cinta de medición hasta el hombro con la mano en 
+el mismo lado de tu cuerpo que el hombro que estás cometiendo. Así que, por ejemplo, podrías mantener la parte superior de 
+cinta hasta tu hombro derecho con la mano derecha. mientras que la mano izquierda mantiene el final. 
+Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado. 
+Tal vez no creas que haya una diferencia, pero todo está conectado en el mundo de la siología, y
+hacer esto podría llevar a un error de ~2. cm (~1 pulgada) en su medición.  
+Simplemente cambie las manos y obtenga una medición más precisa.
 
-For best results, get a second person to take your measurements (if possible).
+Para obtener mejores resultados, consiga que una segunda persona tome sus mediciones (si es posible).
   
 </Tip>
 

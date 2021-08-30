@@ -1,11 +1,11 @@
 ![Largeur du nœud](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+La largeur du nœud est la largeur au milieu de la cravate, où vous faites le nœud.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+La largeur de votre cravate au milieu influencera le nœud de cravate. Allez large pour les grands et encombrants noeuds, resserrez pour les petits nœuds.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+Ne pas rendre la largeur du nœud plus grande que la largeur de la pointe
 
 </Note>

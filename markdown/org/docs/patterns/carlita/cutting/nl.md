@@ -1,1 +1,1 @@
-FIXME: Add cutting instructions
+FIXME: snijdende instructies toevoegen

@@ -1,10 +1,10 @@
-![The panels option on Cathrin](./panels.svg)
+![Die Panel-Option auf Kathrin](./panels.svg)
 
-This options determines how many panels will be used to make up the corset. You have the choice between:
+Diese Option legt fest, wie viele Panels verwendet werden sollen, um das Korsett zu bilden. Sie haben die Wahl unter:
 
  - 11 Schnittteile
  - 13 Schnittteile
 
-More panels is a bit more work, but also allows the difference between bust/waist/hips to be evened out over more darts, which may yield to better results.
+Mehr Panels sind ein bisschen mehr Arbeit, lassen aber auch den Unterschied zwischen Hektik/Taillen/Hüfte über mehr Darts ausgleichen, was zu besseren Ergebnissen führen kann.
 
-> More curves = more panels
+> Mehr Kurven = mehr Panels

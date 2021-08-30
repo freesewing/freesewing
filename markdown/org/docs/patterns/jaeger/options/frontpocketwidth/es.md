@@ -1,4 +1,4 @@
 
 ![Ancho bolsillo frontal](frontpocketwidth.svg)
 
-The front of the chest pocket, as a factor of your chest circumference.
+La parte delantera del bolsillo como factor de la circunstancia del pecho.

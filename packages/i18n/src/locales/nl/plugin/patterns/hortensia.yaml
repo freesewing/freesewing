@@ -1,10 +1,10 @@
 ---
-SidePanel: Side Panel
-FrontBackPanel: Front and Back Panel
-BottomPanel: Bottom Panel
-ZipperPanel: Zipper Panel
+SidePanel: Zijkant paneel
+FrontBackPanel: Voor- en achterpaneel
+BottomPanel: Onderste paneel
+ZipperPanel: Rits Paneel
 Strap: Referentie
-strapLength: Length of the Handles
-handleWidth: Width of the handles
-zipperSize: Standard zipper size
-SidePanelReinforcement: Side Reinforcement Panel
+strapLength: Lengte van de hengsels
+handleWidth: Breedte van de handvatten
+zipperSize: Standaard ritsgrootte
+SidePanelReinforcement: Zijkant Versterking Paneel

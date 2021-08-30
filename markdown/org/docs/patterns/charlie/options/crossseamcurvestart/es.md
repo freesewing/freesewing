@@ -1,13 +1,17 @@
 
-Controls the start of the cross seam curve.
+Controla el inicio de la curva de costura cruzada.
+
 
 <Note>
 
-This curve has an influence on the amount of fabric at your bum.
+Esta curva tiene una influencia en la cantidad de tejido en su bum.
 
-People with a flatter bum will get a better fit by increasing this, as the curve will start later,
-and this there will be less fabric pooling at the bum.
+Las personas con un álbum más plano se ajustarán mejor al aumentar esto, como la curva comenzará más tarde,
+y esto habrá menos recolección de tejido en la bola.
 
-People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
+La gente con un álbum redondo puede querer bajar esto para crear un poco más (horizontal) espacio para su detrás.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_crossseamcurvestart_sample.svg "Efecto de esta opción en el patrón")

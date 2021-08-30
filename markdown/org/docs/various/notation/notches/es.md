@@ -1,21 +1,21 @@
 ---
-title: Notches
+title: Notas
 ---
 
-There are two types of notches. The default notch is a dot in a circle.
+Hay dos tipos de cuchillas. El muelle por defecto es un punto en un círculo.
 
-An alternative style shows a cross in a circle. This style is used to indicate the back of a garment. For example, on a sleevecap you may see a dot and a cross notch. This way you know which side of the sleevecap is the back (the one with the cross notch).
+Un estilo alternativo muestra una cruz en un círculo. Este estilo se utiliza para indicar la parte posterior de la prenda. Por ejemplo, en una manga se puede ver un punto y una cruz. De esta manera usted sabe qué lado de la manga es la espalda (el que tiene la cruz de la colilla).
 
 <Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" >
 
 <Tip>
 
-##### Why we chose these notches
+##### Por qué elegimos estas notas
 
-In electromagnetism, a ⊙ symbol is used to indicate a flow of current coming towards you (to the front),
-whereas ⊗ is used for a current moving away from you (to the back).
+en el electromagnetismo, se utiliza un símbolo para indicar un flujo de corriente hacia usted (hacia el frente),
+mientras que en el caso de que la corriente se aleje de ti (en la parte trasera).
 
-You can also think of an arrow. When an arrow flies towards you, you see its tip (⊙).
-When an arrow flies away from you, you see its fletches (⊗).
+También se puede pensar en una flecha. Cuando una flecha vuela hacia ti, verás su punta (mañana).
+Cuando una flecha vuela lejos de usted, usted ve sus fletes (mañana).
 
 </Tip>

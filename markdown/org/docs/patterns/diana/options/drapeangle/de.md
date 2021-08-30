@@ -1,3 +1,3 @@
-![The drape angle option on Diana](./drapeangle.svg)
+![Die Option Drape Winkel auf Diana](./drapeangle.svg)
 
-This option controls the amount of drape of your top.
+Diese Option steuert die Höhe der Wand Ihres Oberes.

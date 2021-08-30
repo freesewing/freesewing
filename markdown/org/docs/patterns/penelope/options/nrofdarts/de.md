@@ -1,2 +1,2 @@
-The number of darts used in the pattern. The maximum is 2, but this option can be reduced by the pattern if the calculations create darts that are too small.
+Die Anzahl der Darts im Muster. Das Maximum ist 2, aber diese Option kann durch das Muster reduziert werden, wenn die Berechnungen zu kleine Darts erzeugen.
 

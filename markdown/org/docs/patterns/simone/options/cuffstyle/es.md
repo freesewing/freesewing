@@ -1,10 +1,14 @@
-![Cuff style](cuffstyle.svg)
+![Estilo del puño](cuffstyle.svg)
 
-What style of cuff do you want?
+¿Qué estilo de corte quieres?
 
- - Rounded barrel cuff
- - Chamfer barrel cuff
- - Straight barrel cuff
- - Rounded French cuff
- - Chamfer French cuff
- - Straight French cuff
+ - Puño de barril redondeado
+ - Cañón de champú
+ - Puño de barril recto
+ - Puño francés redondeado
+ - Chamfer taza francesa
+ - Puño francés recto
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_cuffstyle_sample.svg "Efecto de esta opción en el patrón")

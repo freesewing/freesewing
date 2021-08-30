@@ -1,10 +1,14 @@
-![Cuff style](cuffstyle.svg)
+![Manschettenstil](cuffstyle.svg)
 
-What style of cuff do you want?
+Welchen Manschettenstil möchtest du?
 
- - Rounded barrel cuff
- - Chamfer barrel cuff
- - Straight barrel cuff
- - Rounded French cuff
- - Chamfer French cuff
- - Straight French cuff
+ - Abgerundete Einfachmanschette
+ - Kammerfass Manschette
+ - Gerade Einfachmanschette
+ - Abgerundete Umschlagmanschette
+ - Chamfer Französische Manschette
+ - Gerade Umschlagmanschette
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_cuffstyle_sample.svg "Effekt dieser Option auf das Muster")

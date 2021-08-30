@@ -1,12 +1,12 @@
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Ribbing-Strecken auf Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Mit dieser Option können Sie die Streckung Ihres Bandes optimieren.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Wenn Sie zum Beispiel 90% für jedes 10cm Band auswählen, werden wir nur 9 cm aufnehmen. Auf diese Weise werden 9 cm Bänder auf 10 cm gestreckt.
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it 
-you need to stretch out to get to 10 cm with a *good* stretch.
+Wenn du dir nicht sicher bist, was zu wählen ist, Am besten ist es, das Band zu nehmen, das du verwenden wirst, um zu sehen, wie viel davon 
+du mit einer *guten* Streckung auf 10 cm strecken musst.
 
 </Note>

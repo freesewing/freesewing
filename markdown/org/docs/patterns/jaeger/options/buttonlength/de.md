@@ -1,2 +1,2 @@
 
-Controls the length over which the buttons are spaced. In other words, the length from the top to bottom buttons.
+Bestimmt die Länge über die die Tasten abgelegt werden. Mit anderen Worten, die Länge von oben bis unten Buttons.

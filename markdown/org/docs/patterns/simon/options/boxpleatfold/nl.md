@@ -2,4 +2,4 @@
 title: Vouw stolpplooi
 ---
 
-Controls how much the box pleat at the back is folded/pleated.
+Bepaalt hoeveel de plooi aan de achterkant geplooid of gepleit.

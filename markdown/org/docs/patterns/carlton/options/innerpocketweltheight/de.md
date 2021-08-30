@@ -1,2 +1,6 @@
 
-Controls the size of the welts on the inner pocket.
+Steuert die Größe der Schweissen auf der Innentasche.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_innerpocketweltheight_sample.svg "Effekt dieser Option auf das Muster")

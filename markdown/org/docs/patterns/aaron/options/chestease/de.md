@@ -1,11 +1,15 @@
-![The chest ease option on Aaron](./chestease.svg)
+![Die Brustpflegeoption bei Aaron](./chestease.svg)
 
-How much room do you want at the chest?
+Wie viel Platz möchtest du an der Brust haben?
 
-Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Brustumfangsmessung hinzugefügt.
 
-> Given that an undershirt has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+> Da ein Unterhemd keine Arme hat, geht eine kleine Brustpflege sehr weit. Fügen Sie zu viel hinzu, und Sie werden am Ende klaffende Rüstungen haben.
 
-> ##### This option also allows negative values
+> ##### Diese Option erlaubt auch negative Werte
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the **stretch** option.
+> Sie sollten die negative Leichtigkeit nur dann nutzen, wenn Sie ein Stretchmaterial verwenden, das Sie eng passen möchten. Gesamtstrecke sollte mit der Option **Stretch** konfiguriert werden.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_chestease_sample.svg "Effekt dieser Option auf das Muster")

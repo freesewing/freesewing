@@ -1,4 +1,4 @@
 
 ![Fronttaschenplatzierung](frontpocketplacement.svg)
 
-Location of the front pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
+Position der Vordertasche im Verhältnis ein Viertel des Brustumfangs. Höhere Zahlen bewegen es mehr an die Seite.

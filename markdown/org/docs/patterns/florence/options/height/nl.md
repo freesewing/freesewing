@@ -1,3 +1,3 @@
-![Height option](./height.svg)
+![Hoogte optie](./height.svg)
 
-Controls the height of your face mask.
+Bepaalt de hoogte van je gezicht masker.

@@ -1,9 +1,9 @@
-Penelope consists of a front and a back piece. The front piece is always cut-on-fold. For the back piece, this depends on whether you wanted a vent, or moved the zipper to the back seam. Either of those options will have you cut out two individual pieces for the back.
+Penelope besteht aus einer Vorderseite und einem hinteren Stück. Das Vorderteil ist immer geschnitten. Für das hintere Stück hängt dies davon ab, ob Sie einen Schlot haben oder den Reißverschluss auf die hintere Naht verschoben haben. Jede dieser Optionen lässt Sie zwei Einzelteile für die Rückseite ausschneiden.
 
 <Tip>
 
-When you cut out a piece on the fold, remember that the fold does not need to be in the middle of the fabric. 
-Choosing the placement of your pieces wisely can greatly reduce the amount of fabric you need for your skirt.
+Wenn Sie ein Stück auf der Falte ausgeschnitten haben, müssen Sie bedenken, dass die Falte nicht in der Mitte des Stoffes sein muss. 
+Die Wahl der Platzierung Ihrer Stücke kann die Menge an Stoff für Ihren Rock erheblich reduzieren.
 
 </Tip>
 

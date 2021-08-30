@@ -1,7 +1,7 @@
 ---
-title: Knee circumference
+title: circunstancia de rodilla
 ---
 
-The **knee circumference** is the measurement around your knee.
+La **circunstancia de rodilla** es la medida alrededor de la rodilla.
 
-To measure your **knee circumference**, wrap the tape measure around your knee. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your knee.
+Para medir tu **circunstancia de rodilla**, envuelve la medida de cinta alrededor de la rodilla. Asegúrese de mantener la medida horizontal de la cinta mientras mide la circunstancia de la rodilla.

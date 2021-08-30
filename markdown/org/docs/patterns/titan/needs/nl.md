@@ -1,5 +1,5 @@
-To make Titan, you will need the following:
+Om Titaan te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1.5 meter of suitable fabric ([see Fabric options](/docs/patterns/titan/fabric))
+- Ongeveer 1,5 meter geschikte stof ([zie Stoffen opties](/docs/patterns/titan/fabric))
 

@@ -2,6 +2,10 @@
 title: Aisance à la taille
 ---
 
-![The effect of the waist ease option on the pattern](sample.png)
+![L'effet de l'option de facilité de taille sur le patron](sample.png)
 
-The **waist ease** option controls the amount of ease at your waist.
+L'option **facilitant la taille** contrôle la quantité d'aisance à votre taille.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_waistease_sample.svg "Effet de cette option sur le motif")

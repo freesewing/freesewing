@@ -1,14 +1,14 @@
 ---
-title: Line widths and strokes
+title: Anchura de línea y trazos
 ---
 
-Designers can, if they so choose, override the default line widths or set a specific stroke. They might do that to add additional info, like where to fold a pattern, or the outline of where a pocket would go.
+Los diseñadores pueden, si lo eligen, sobreescribir el ancho de línea por defecto o establecer un trazo específico. Podrían hacer eso para agregar información adicional, como dónde doblar un patrón, o el contorno de hacia dónde iría un bolsillo.
 
-For reference, here are the different available line widths:
+Para referencia, aquí están los diferentes anchos de línea disponibles:
 
 <Legend part="lineWidths" caption="The different line widths" >
 
-And these are the different stroke styles:
+Y estos son los diferentes estilos de trazo:
 
 <Legend part="lineStrokes" caption="The different line strokes" >
 

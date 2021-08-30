@@ -1,3 +1,7 @@
-![Hips ease](hipsease.svg)
+![Zugabe Hüfte](hipsease.svg)
 
-How much room do you want at the hips?
+Wie viel Platz möchten Sie an den Hüften?
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hugo_hipsease_sample.svg "Effekt dieser Option auf das Muster")

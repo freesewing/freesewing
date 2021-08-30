@@ -1,24 +1,22 @@
-![Biceps ease](./bicepsease.svg)
+![Bizeps Zugabe](./bicepsease.svg)
 
-How much do you want the sleeve to be wider than your upperarm circumference?
+Wie viel soll der Ärmel größer sein als der Oberarmumfang?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
+Es sind eigentlich Männer mit großen Armen, die eine engere Passform bevorzugen und damit weniger Leichtigkeit hier. Das liegt daran, dass es die Aufmerksamkeit auf ihre starken Oberarme lenkt.
 
-If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
+Wenn deine Oberarme eher dünn sind, solltest du hier etwas mehr Leichtigkeit haben um die Dinge ein wenig zu glätten.
 
 </Note>
 
 <Warning>
 
-We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
+Wir werden versuchen, Ihre Wahl hier zu respektieren, aber die Priorität ist es, den Ärmel im Armband zu passen.
 
 </Warning>
 
-
-
-
-
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_bicepsease_sample.svg "Effekt dieser Option auf das Muster")

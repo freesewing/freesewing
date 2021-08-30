@@ -1,11 +1,11 @@
----
----
+- - -
+- - -
 
 <Note>
 
-##### There's more to the picture than meets the eye
+##### Es gibt mehr auf dem Bild als das Auge
 
-This list of FreeSewing contributors is not exhaustive.
+Diese Liste der FreeSewing Mitwirkenden ist nicht erschöpfend.
 Sie listet nur Mitwirkende auf, die sich dafür entschieden haben, ihren Namen auf unserer Website bekannt zu geben.
 
 ###### Fehlst du?

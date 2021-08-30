@@ -1,2 +1,6 @@
 
-Controls how much the right and left front of the garment overlap at the center front.
+Bepaalt hoeveel de rechter- en voorkant van het kledingstuk overlappen aan de middenvoor.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlita_frontoverlap_sample.svg "Effect van deze optie op het patroon")

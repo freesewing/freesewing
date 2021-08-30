@@ -1,4 +1,4 @@
 
 ![Cuello muesca retorno](collarnotchreturn.svg)
 
-Controls the length of the upper notch side. 100% = same as notch depth.
+Controla la longitud del lado superior del muelle. 100% = igual a profundidad de tamiz.

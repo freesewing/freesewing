@@ -1,4 +1,4 @@
 
-This controls the amount of ease at the instep, or heel.
+Dit controleert de hoeveelheid overwijdte aan de plaats of heel.
 
-Increase this to make it easier to get in and out of your pants.
+Verhoog dit om het gemakkelijker te maken om binnen en uit je broek te komen.

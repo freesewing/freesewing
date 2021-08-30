@@ -1,3 +1,7 @@
-![The chest ease factor on Brian](./chestease.svg)
+![Der Brust Leichtigkeit Faktor auf Brian](./chestease.svg)
 
-This option controls the ease at your chest.
+Diese Option steuert die Leichtigkeit an deiner Truhe.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hugo_chestease_sample.svg "Effekt dieser Option auf das Muster")

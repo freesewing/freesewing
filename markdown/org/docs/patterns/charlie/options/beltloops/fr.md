@@ -1,2 +1,2 @@
 
-Constrol how many beltloops we'll generate.
+Constrol le nombre de convoyeurs que nous allons générer.

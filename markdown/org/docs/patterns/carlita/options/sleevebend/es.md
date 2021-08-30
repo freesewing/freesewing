@@ -1,3 +1,3 @@
 ![Manga doblada](./sleevebend.svg)
 
-The angle of the sleeve at the elbow.
+El ángulo de la manga en el coco.

@@ -1,21 +1,21 @@
 ---
-title: Pinning
+title: Fijar
 ---
 
-![Sewing pins are part of the basic sewing supplies](sewing-pins.jpg)
+![Los alfileres de coser son parte de los suministros básicos de coser](sewing-pins.jpg)
 
-![Fabric being pinned into place](fabric-pinning.jpg)
+![Tela fijada en su lugar](fabric-pinning.jpg)
 
-Pinning is used whenever you use sewing pins to hold things in place.
+La fijación se utiliza siempre que se utilizan pines de costura para mantener las cosas en su lugar.
 
-Examples of where pinning is commonly used are:
+Ejemplos de donde se utiliza comúnmente la fijación son:
 
- - Pinning a seam in place before sewing it
- - Pinning an ornament, pocket, or other part in place before attaching it
- - Pinning darts or other pattern changes while fitting the garment on a model
+ - Fijar una costura en su lugar antes de coser
+ - Fijar un ornamento, bolsillo u otra parte en su lugar antes de unirlo
+ - Fijar dardos u otros cambios de patrón al encajar la ropa en un modelo
 
-Pinning is never permanent, but merely a temporary measure to hold things in place.
+Fijar nunca es permanente, sino simplemente una medida temporal para mantener las cosas.
 
-> Pinning and basting are different techniques for similar situations
+> Fijar y bastar son técnicas diferentes para situaciones similares
 
-> Pictures by [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) and [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)
+> Fotos de [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) y [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)

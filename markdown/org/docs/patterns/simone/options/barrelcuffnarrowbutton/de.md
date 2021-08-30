@@ -1,13 +1,15 @@
-![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
+![Schalenmanschette schmal Taste](./barrelcuffnarrowbutton.svg)
 
 
-Do you want an extra button to button up your cuff more tightly?
+Möchtest du mit einem zusätzlichen Knopf die Manschette fester hochdrücken?
 
-If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
+Wenn Sie Ihr Hemd unter einem Strumpfverschluss (Handgelenk) Pullover oder Cardigan, Mit dieser Schaltfläche kannst du deine Manschette verkleinern, so dass sie nicht alles hässlich aufwirft.
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Dies gilt nur für Fässer. Wenn Sie also eine französische Manschette als Manschette wählen, wird dies ignoriert.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_barrelcuffnarrowbutton_sample.svg "Effekt dieser Option auf das Muster")

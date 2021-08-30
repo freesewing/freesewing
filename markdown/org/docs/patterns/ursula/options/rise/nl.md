@@ -1,1 +1,1 @@
-This options controls the height of the waist.
+Deze optie bepaalt de hoogte van de taille.

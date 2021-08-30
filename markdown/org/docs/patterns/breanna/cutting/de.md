@@ -1,16 +1,16 @@
-To make Breanna, you'll need:
+Um Breanna zu machen, brauchst du:
 
  - 1 Front
- - 2 Back
- - 2 Sleeves
+ - 2 Zurück
+ - 2 Ärmel
 
 <Note>
 
-###### Breanna is a block, not a pattern
+###### Breanna ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ein Block ist eine Grundform, auf der andere Muster basieren.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blöcke werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Muster.
 
 </Note>

@@ -9,3 +9,6 @@ La largeur de votre nœud papillon au milieu influencera la taille du nœud. Une
 Avec le type carré de nœud papillon, cette valeur déterminera également la largeur des pointes
 
 </Note>
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_knotwidth_sample.svg "Effet de cette option sur le motif")

@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your chest
+Contrôle la quantité d'aisance de votre coffre

@@ -1,10 +1,10 @@
 
-## Bent is a block, not a pattern
+## Bent ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based. They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ein Block ist eine Grundform, auf der andere Muster basieren. Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Point is, there is no point in providing instructions on how to make Bent.
+Punkt ist, es hat keinen Sinn, Anweisungen zu geben, wie man Bent zu machen.
 
-That's because Bent is not supposed to be made as-is, but rather can serve as the basis for your own pattern designs.
+Das liegt daran, dass Bent nicht so gemacht werden soll, wie es ist, sondern als Grundlage für Ihre eigenen Muster-Designs dienen kann.
 
 > Some of the patterns based on Bent include [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).

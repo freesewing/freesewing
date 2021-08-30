@@ -1,2 +1,2 @@
-The amount of ease at the waist.
+De hoeveelheid overwijdte aan de taille.
 

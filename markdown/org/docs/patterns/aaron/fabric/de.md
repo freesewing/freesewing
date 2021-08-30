@@ -1,10 +1,10 @@
 
-An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+Ein A-Shirt ist im Wesentlichen Unterwäsche. Und in dieser Eigenschaft wollen Sie etwas Komfortes, fühlt sich gut an Ihrer Haut und Atem.
 
-Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
+Baumwolle mit einem Hauch von etwas Stretchy, vielleicht Strahlen oder einem feinen Strick. Ich schlage vor, Sie gehen in den Stoffladen und fühlen sich um ein wenig.
 
 <Note>
 
-While stretch is not required, it does make sense for underwear. That being said, you can make this in a non-stretch, just make sure pick loose or casual fit.
+Dehnungen sind zwar nicht erforderlich, aber für Unterwäsche ist es sinnvoll. Allerdings können Sie dies in einem non-stretch machen und stellen Sie sicher, dass Sie sich locker oder lässig passen.
 
 </Note>

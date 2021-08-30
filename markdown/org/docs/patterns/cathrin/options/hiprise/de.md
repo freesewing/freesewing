@@ -1,3 +1,3 @@
-![The hip rise option on Cathrin](./hiprise.svg)
+![Die Hüftaufstiegsoption auf Cathrin](./hiprise.svg)
 
-How high do you want to corset to rise on your hips, in comparison to the center front and center back.
+Wie hoch soll man an den Hüften korsettieren, im Vergleich zur Vorder- und Rückseite.

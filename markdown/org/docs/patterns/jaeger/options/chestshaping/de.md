@@ -1,4 +1,4 @@
 
 ![Brustformung](chestshaping.svg)
 
-The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
+Der vertikale Betrag für den Schrägstrich & verteilt die obere Frontplatte, um die Truhe zu formen, als Faktor deines Brustumfangs.

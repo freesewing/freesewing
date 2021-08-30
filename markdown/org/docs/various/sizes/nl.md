@@ -1,20 +1,20 @@
 ---
-title: Sizing tables
+title: Sizing tabellen
 ---
 
-FreeSewing does not use sizes. All our patterns are drafted to a set of measurements.
+FreeSewing gebruikt geen groottes. Al onze patronen zijn opgesteld in een reeks metingen.
 
-Since version 2.2 however, we do provide *standard sizes*. Each size is a set of measurements that is an estimation of what a person with a given neck circumference could have as measurements.
+Sinds versie 2.2 bieden we *standaard formaten* aan. Elke grootte is een set van afmetingen die een persoon met een bepaalde halsomtrek kan hebben als maat.
 
-This is not an exact science. We provide these sizes as a fast and easy way to get started with our patterns. But we do hope that you will take the time to take your own measurements, or have them taken. This will always yield better results.
+Dat is geen exacte wetenschap. Wij bieden deze maten als een snelle en makkelijke manier om aan de slag te gaan met onze patronen. Maar we hopen wel dat u de tijd neemt om uw eigen maten te nemen of ze te laten nemen. Dat zal altijd betere resultaten opleveren.
 
 
 <Tip>
 
-##### Open in a wide view
+##### Open in een brede weergave
 
-These tables take up a lot or screen real-estate, which is why we
- [show sizes in a wide view](/sizes/).
+Deze tabellen nemen veel of het scherm onroerend goed in, dit is waarom we
+ [laten zien groottes zien in een brede weergave](/sizes/).
 
 </Tip>
 

@@ -1,17 +1,17 @@
 ![Ángulo del pico del cuello](collarangle.svg)
 
-The number of degrees between the collar edge and the grainline.
+El número de grados entre el borde del cuello y el grainline.
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 Together with the collar height, this is the most important factor for the style of your collar.
 
-Higher values mean a more cut-away style.
+Valores más altos significan un estilo más cortado.
 
-In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
+En la imagen de ejemplo, la parte superior es de 80 grados (el valor por defecto) y la parte inferior es de 110 grados.
 
 </Note>

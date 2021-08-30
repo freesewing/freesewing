@@ -2,4 +2,4 @@
 title: Pinces dos
 ---
 
-By default, the pattern will add back darts when they are needed. But you can also choose to always, or never, have back darts.
+Par défaut, le motif ajoutera des fléchettes quand elles sont nécessaires. Mais vous pouvez aussi choisir de toujours, ou jamais, avoir des fléchettes arrière.

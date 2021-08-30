@@ -1,7 +1,7 @@
-Wrap pants are a bit casual and perfect for warm weather. You can't go wrong with linen, cotton is a good option too.
+Les pantalons enveloppants sont un peu décontractés et parfaits pour un temps chaud. Vous ne pouvez pas vous tromper avec le lin, le coton est également une bonne option.
 
 ## Notes et conseils
 
-### Fabric
+### Tissu
 
-This is a type of wrap pants, which leaves the sides of your legs exposed at times. And as such, it is mostly worn in warmer weather, or inside. To get a good effect of the flowing of the legs, don't use very heavy materials. Good types of fabric are linen, and linen blends. These mostly have a nice drape and are cool. Heavy materials like denim are less useful.
+Il s'agit d'un type de pantalon d'enveloppe qui laisse les côtés de vos jambes exposés parfois. Et en tant que tel, il est principalement porté par temps plus chaud, ou à l'intérieur. Pour obtenir un bon effet de l'écoulement des jambes, n'utilisez pas de matériaux très lourds. Les bons types de tissu sont le linge et les mélanges de linge. Celles-ci ont pour la plupart un beau drapé et sont fraîches. Les matériaux lourds comme le denim sont moins utiles.

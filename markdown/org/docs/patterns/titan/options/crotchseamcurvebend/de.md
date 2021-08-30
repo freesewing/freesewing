@@ -1,2 +1,2 @@
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Steuert die Krümmung der Kräuternaht, die die Passform an Ihrem Wurf beeinflusst.

@@ -1,35 +1,35 @@
 ---
-title: HPS to bust
+title: HPS zum Busten
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: Hochpunktschulter
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
+Weitere Informationen zum Auffinden dieses Punktes finden Sie in der [Hps-Dokumentation](/docs/measurements/hps/).
 
 </Note>
 
-The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
+Die **Hochpunktschulter (HPS) zum Busten** läuft von der HPS bis zur Linie, die deinen Bustumpfbereich bildet.
 
-To measure your HPS to bust, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to the line that forms your chest circumference/bust span.
+Um Ihren HPS zu messen, lokalisieren Sie zuerst [Ihren HPS-Punkt](/docs/measurements/hps/). Dann messen Sie direkt nach unten bis zur Linie, die Ihren Brustumfang bildet.
 
-The point of this measurement is to locate the fullest part of your bust vertically on your torso.
+Der Punkt dieser Messung ist, den vollsten Teil Ihrer Büste vertikal an Ihrem Torso zu lokalisieren.
 
 <Tip>
 
 ##### Think about which hand you're using
 
 If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on 
-the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of 
-the tape up to your right shoulder with your right hand, while your left hand is holding the end. 
-But that means you distort the length you are trying to measure by raising your arm on the same side. 
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+the same side of your body as the shoulder you're measuring. So könnten Sie zum Beispiel die Oberseite von 
+mit der rechten Hand bis zur rechten Schulter halten während die linke Hand das Ende hält. 
+Aber das bedeutet, dass Sie die Länge verzerren wollen, indem Sie den Arm auf der gleichen Seite anheben. 
+Du denkst vielleicht nicht, dass es einen Unterschied gibt, aber alles ist in der Welt der Physiologie verbunden und
+kann zu einem Fehler von ~2 führen. cm (~1 Zoll) in Ihrer Messung.  
+Schalten Sie einfach die Hände um, und Sie erhalten eine genauere Messung.
 
-For best results, get a second person to take your measurements (if possible).
+Erhalten Sie für die besten Ergebnisse eine zweite Person, um Ihre Messungen zu machen (falls möglich).
   
 </Tip>
 

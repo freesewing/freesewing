@@ -1,6 +1,6 @@
----
----
+- - -
+- - -
 
-We have [a FreeSewing Facebook group](https://www.facebook.com/groups/627769821272714) that you should join.
+We hebben [een FreeSewing Facebook groep](https://www.facebook.com/groups/627769821272714) die je zou moeten aansluiten.
 
-Note that the group is private, so you should request access, but that's merely to keep the bots and trolls at bay.
+Let op dat de groep privé is, dus u moet toegang vragen, maar dat is alleen om de bots en trollen op afstand te houden.

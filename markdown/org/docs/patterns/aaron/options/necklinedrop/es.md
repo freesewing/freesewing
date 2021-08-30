@@ -1,5 +1,9 @@
-![The neckline drop option on Aaron](./necklinedrop.svg)
+![La opción de soltar línea de cuello en Aaron](./necklinedrop.svg)
 
-Determines how much to lower the neckline of the top beyond the default.
+Determina cuánto bajar la línea de cuello de la parte superior más allá del valor predeterminado.
 
-> Higher values lower the neckline further, resulting in more exposed skin.
+> Los valores más altos reducen aún más la línea del cuello, lo que resulta en una piel más expuesta.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](aaron_necklinedrop_sample.svg "Efecto de esta opción en el patrón")

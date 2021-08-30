@@ -1,11 +1,14 @@
-![Bow ties Wide and Narrow](tipwidth.svg)
+![Bow vínculos anchos y flecha](tipwidth.svg)
 
-You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+Usted puede hacer corbatas de arco BIG o pequeñas. Esta opción le permite cambiar el tamaño vertical de los arcos. Make them larger to be more flamboyant, or small for a more subdued style.
 
 <Note>
 
-###### Not used with the Square bow tie type
+###### No se usa con el tipo de empatado cuadrado
 
-This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
+Esta opción se ignora con la opción de empatado cuadrado. Los lazos cuadrados de arco son tan anchos como el ancho del nudo.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_tipwidth_sample.svg "Efecto de esta opción en el patrón")

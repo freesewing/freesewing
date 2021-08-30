@@ -1,38 +1,38 @@
  - **Oberstoff**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front facings** (look for the facing/lining boundary on the front part)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4)
-   - Cut **2 undersleeves** (part 5)
-   - Cut **1 collar** (part 6)
-   - Cut **1 collarstand** (part 8)
-   - Cut **2 pockets** (part 9)
-   - Cut **1 chest pocket welt** (part 10)
+   - **2 Fronten schneiden** (Teil 1)
+   - Schneiden Sie **2 Frontverkleidungen** (schauen Sie nach der Verkleidung/Außengrenze auf dem vorderen Teil)
+   - **2 zurück** (Teil 2) schneiden
+   - **2 Seiten schneiden** (Teil 3)
+   - **2 Topsleeves schneiden** (Teil 4)
+   - **2 Unterärmel schneiden** (Teil 5)
+   - **1 Kragen schneiden** (Teil 6)
+   - **1 Kragenstand schneiden** (Teil 8)
+   - **2 Taschen schneiden** (Teil 9)
+   - **1 Truhe Taschenwelt schneiden** (Teil 10)
  - **futterstoff**
-   - Cut **2 fronts** (part 1)
-   - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
-   - Cut **2 backs** (part 2)
-   - Cut **2 sides** (part 3)
-   - Cut **2 topsleeves** (part 4) Note: Some people like to use different lining for the sleeves
-   - Cut **2 undersleeves** (part 5) Note: Some people like to use different lining for the sleeves
-   - Cut **2 chest pocket bags** )(part 11)
-   - Cut **2 inner pocket welts**
-   - Cut **2 inner pocket bags** (part 13)
- - **Canvas**
-   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
-   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
- - **Undercollar fabric**
-   - Cut **1 undercollar** (part 7)
+   - **2 Fronten schneiden** (Teil 1)
+   - Schneiden Sie **2 Frontverkleidung** (achten Sie auf die Verkleidung/Verkleidungsgrenze auf dem vorderen Teil, und vergessen Sie nicht, die Innentasche nach der Erweiterung zu befestigen)
+   - **2 zurück** (Teil 2) schneiden
+   - **2 Seiten schneiden** (Teil 3)
+   - **2 Oberärmeln schneiden** (Teil 4) Hinweis: Einige Leute verwenden gerne andere Futter für die Ärmel
+   - **2 Unterärmel schneiden** (Teil 5) Hinweis: Einige Leute verwenden gerne andere Futter für die Ärmel
+   - **2 Brusttaschen schneiden** )(Teil 11)
+   - **2 innere Hosentaschen schneiden**
+   - **2 innere Taschen schneiden** (Teil 13)
+ - **Leinwand**
+   - **2 Fronten** bei Voreinstellung (Teil 1) schneiden: Nicht Naht einschließen
+   - **2 Brustteile** auf Voreinstellung schneiden. Suchen Sie nach der Anzeige auf dem vorderen Teil. Hinweis: Nahtzuweisung nicht einschließen
+ - **Unterkragen Stoff**
+   - **1 Undercollar** (Teil 7) schneiden
 
 <Note>
 
-###### Good sides together, or precise pattern matching?
+###### Gute Seiten zusammen, oder genaue Muster übereinstimmen?
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Wenn du zwei ausschnitst, kannst du sie [gute Seiten zusammen schneiden](/docs/sewing/good-sides-together).
+Bei der Arbeit mit Stoff mit einem Muster ziehe ich es jedoch vor, sie individuell zu schneiden, um das Muster passend zu steuern.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneinander sein müssen. Wenden Sie also entweder Ihr Muster oder Ihren Stoff, wenn Sie das zweite schneiden.
 
 </Note>
 
@@ -40,10 +40,10 @@ When you cut them individually, remember that they need to be mirror images of e
 
 ###### Cutting caveats
 
- - The chest piece is marked on the front.
+ - Das Bruststück ist auf der Vorderseite markiert.
  Don't include seam allowance when cutting out canvas, and cut it on bias.
- The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ The front facing and lining is marked on the front piece. Sie teilten den vorderen Teil in zwei entlang der Grenzlinie. Sie können den vorderen Teil entlang dieser Linie schneiden, nachdem Sie die Vorderseite aus dem Hauptgewebe ausgeschnitten haben. Die Innentasche für die Fassade wird separat bedruckt und Sie können sie nach dem Schneiden wieder an der Stelle befestigen. **Vergessen Sie nicht, die Nahtzuweisung sowohl an das Gestell als auch an das Futter für diese Randnaht**.
 
-![Trace the front facing and lining from the front part](cuttingCaveat.svg)
+![Tracke die Vorderseite und Futter vom Vorderteil](cuttingCaveat.svg)
 
 </Warning>

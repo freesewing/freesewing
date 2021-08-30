@@ -1,9 +1,9 @@
 ---
-title: Why don't you use double notches to mark the back of the pattern?
+title: '¿Por qué no usas balizas dobles para marcar la parte trasera del patrón?'
 ---
 
-A double-notch is a common way to mark the back of the pattern. Common, but not universal.
+Una doble toma es una manera común de marcar la parte trasera del patrón. Commón, pero no universal.
 
-Different parts of the world have different conventions or traditions on how to notch patterns. To avoid confusion, we use a differently styled notch to indicate the back, as detailed in [our pattern notation guide][1].
+Diferentes partes del mundo tienen diferentes convenciones o tradiciones sobre cómo calibrar patrones. To avoid confusion, we use a differently styled notch to indicate the back, as detailed in [our pattern notation guide][1].
 
 [1]: /docs/various/notation/

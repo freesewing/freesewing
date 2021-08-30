@@ -1,2 +1,2 @@
 
-Whether to include back pockets, yes or no.
+Opnemen van achterzakken, ja of nee.

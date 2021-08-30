@@ -1,3 +1,3 @@
-![The length bonus option on Diana](./lengthbonus.svg)
+![Die Längen-Bonus-Option auf Diana](./lengthbonus.svg)
 
-This option controls the length of your top.
+Diese Option steuert die Länge Ihres Tops.

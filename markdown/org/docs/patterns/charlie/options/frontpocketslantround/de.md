@@ -1,2 +1,2 @@
 
-Controls how far from the end of the slant we start rounding into the outseam.
+Stellt fest, wie weit wir vom Ende der Schrägheit entfernt anfangen zu runden.

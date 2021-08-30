@@ -1,3 +1,3 @@
 ![Ausschnitt Tiefe](necklinedrop.svg)
 
-This options allows you to lower your neckline below the default.
+Mit diesen Optionen können Sie Ihre Halslinie unter die Standardwerte senken.

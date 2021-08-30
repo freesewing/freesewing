@@ -2,12 +2,12 @@
 title: Rayon
 ---
 
-![I use rayon for my underwear](rayon.jpg)
+![Uso rayón para mi ropa interior](rayon.jpg)
 
-Rayon, sometimes referred to as viscose, is a synthetic fiber. It originates from wood pulp, but there's a lot of chemical hoops to jump through before it becomes fabric.
+Rayon, a veces llamado viscosa, es una fibra sintética. Se origina de la pulpa de madera, pero hay muchos aros químicos a los que saltar antes de que se convierta en tejido.
 
-As rayon is a fiber (like cotton is) the resulting fabric will depend on how it is woven. However, in general rayon is a versatile fabric that is smooth to the touch, drapes, and is somewhat slippery.
+Como el rayón es una fibra (como el algodón) el tejido resultante dependerá de cómo se teja. Sin embargo, en general el rayon es un tejido versátil que es suave al tacto, tapones, y es un poco deslizante.
 
-Rayon is not a good insulator of body heat. That makes it a poor choice for a winter coat, but a good choice for your summer dresses or underwear.
+Rayon no es un buen aislante del calor corporal. Eso hace que sea una mala elección para un abrigo de invierno, pero una buena opción para sus vestidos de verano o ropa interior.
 
-> Wikipedia has a lot to say about rayon: [Rayon on Wikipedia](http://en.wikipedia.org/wiki/Rayon)
+> Wikipedia tiene mucho que decir sobre el rayo: [Rayon on Wikipedia](http://en.wikipedia.org/wiki/Rayon)

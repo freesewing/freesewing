@@ -1,5 +1,5 @@
 ---
-title: How we use your subscriber data
+title: Hoe we uw abonnee gegevens gebruiken
 order: 20
 ---
 
@@ -9,11 +9,11 @@ order: 20
 
 ##### Waarom hebben we ze nodig?
 
-- To send you our newsletter
+- Om je onze nieuwsbrief te sturen
 
 ##### Hoe lang houden we ze?
 
-- As long as you remain subscribed
+- Zolang je geabonneerd blijft
 
 ##### Wordt dit gedeeld?
 
@@ -21,8 +21,8 @@ order: 20
 
 <Note> 
 
-This data is stored for anybody who subscribes to our newsletter.
+Deze gegevens worden opgeslagen voor iedereen die zich abonneert op onze nieuwsbrief.
 
-For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their [account data][1].
+Voor mensen met een account op de website die het abonnement van de nieuwsbrief inschakelen in hun account-instellingen, we slaan geen extra persoonlijke gegevens op omdat we hun e-mailadres al in hun [accountgegevens][1] hebben.
 
 </Note>

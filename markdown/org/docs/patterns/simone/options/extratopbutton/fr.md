@@ -1,19 +1,21 @@
-![Extra top button](extratopbutton.svg)
+![Bouton supérieur supplémentaire](extratopbutton.svg)
 
-Do you want an extra button between the top front button and collar stand button?
+Voulez-vous un bouton supplémentaire entre le bouton supérieur avant et le bouton de fixation du col?
 
 <Note>
 
-###### Why an extra button?
+###### Pourquoi un bouton supplémentaire ?
 
-This extra button allows you to undo your collar button with your shirt staying relatively closed.
+Ce bouton supplémentaire vous permet d'annuler le bouton de votre collier lorsque votre chemise reste relativement fermée.
 
-It's an extra button you'll want if you plan to still look good in the bar after your work day with your top button undone and your tie somewhat loose. 
-The extra button is also great if you are wearing your shirt under an overgarment with the top button undone. For example, under a sweater.
+Il s'agit d'un bouton supplémentaire que vous voudrez si vous avez l'intention de continuer à avoir de beaux airs dans la barre après votre journée de travail avec votre bouton du haut défait et votre cravate quelque peu lâche. 
+Le bouton supplémentaire est également idéal si vous portez votre chemise sous un survêtement avec le bouton du haut annulé. Par exemple, sous un chandail.
 
-Do not include the top button if you want a more casual look.
+Ne pas inclure le bouton du haut si vous voulez un look plus décontracté.
 
-This extra button is added to the number of buttons on the front. It does not replace another button.
+Ce bouton supplémentaire est ajouté au nombre de boutons sur le devant. Il ne remplace pas un autre bouton.
 
 </Note>
 
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_extratopbutton_sample.svg "Effet de cette option sur le motif")

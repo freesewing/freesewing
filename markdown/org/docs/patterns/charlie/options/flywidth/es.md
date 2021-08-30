@@ -1,2 +1,2 @@
 
-Controls how far the fly's J-seam is offset from the fly edge.
+Controla hasta qué punto la costura J de la mosca se distingue del borde de la mosca.

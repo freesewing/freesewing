@@ -1,5 +1,9 @@
 ---
-title: Box pleat width
+title: Anchura del pliegue en caja
 ---
 
-Controls the width of the (optional) box pleat at the back.
+Controla el ancho del pliegue (opcional) del recuadro en la parte trasera.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_boxpleatwidth_sample.svg "Efecto de esta opción en el patrón")

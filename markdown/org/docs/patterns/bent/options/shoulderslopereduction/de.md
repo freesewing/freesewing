@@ -1,4 +1,8 @@
 
-This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.
+Dieses Muster passt sich an die schräge Schulter an, indem die Schulterschräge Messung berücksichtigt werden.
 
-However, for jackets or coats, you may want to create more room at the shoulders to allow for shoulder pads. This option lets you create extra room at the shoulders by reducing the amount the shoulders are sloped.
+Für Jacken oder Mantel kann es jedoch sein, dass man mehr Platz an den Schultern schaffen möchte, um Schulterpolster zu ermöglichen. Mit dieser Option können Sie zusätzlichen Platz an den Schultern erstellen, indem Sie die Menge der Schultern verkleinern.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bent_shoulderslopereduction_sample.svg "Effekt dieser Option auf das Muster")

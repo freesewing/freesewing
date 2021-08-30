@@ -1,6 +1,6 @@
-![Extra top button](extratopbutton.svg)
+![Extra knoop bovenaan](extratopbutton.svg)
 
-Do you want an extra button between the top front button and collar stand button?
+Wil je een extra knoop tussen de bovenste knoop vooraan en de knoop aan de kraagstaander?
 
 <Note>
 
@@ -17,3 +17,5 @@ Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt ge
 
 </Note>
 
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_extratopbutton_sample.svg "Effect van deze optie op het patroon")

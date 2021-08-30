@@ -1,3 +1,3 @@
 ![Bonus de longitud](lengthbonus.svg)
 
-This option will lengthen the legs of your trousers.
+Esta opción alargará las piernas de sus pantalones.

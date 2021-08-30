@@ -1,30 +1,30 @@
 
-##### From main fabric
+##### Van buitenste stof
 
-- Part **1**: **2 x** _with good sides together_.
-- Part **2**: **2 x** _with good sides together_.
-- Part **4**: **4 x**
-- Part **6**: **2 x**
-- Part **8**: **2 x** 2 _with good sides together_
-- Part **9**: **2 x** _with good sides together_
-- Part **10**: **1 x** on the fold
-- Part **11**: **1 x** if making a straight waistband
-- Part **11**: **2 x** _with good sides together_ if making a curved waistband
-- Part **12**: **1 x**
+- Deel **1**: **2 x** _met de goede kanten op elkaar_.
+- Deel **2**: **2 x** _met de goede kanten op elkaar_.
+- Deel **4**: **4 x**
+- Deel **6**: **2 x**
+- Deel **8**: **2 x** 2 _met de goede kanten op elkaar_
+- Deel **9**: **2 x** _met de goede kanten op elkaar_
+- Deel **10**: **1 x** aan de stofvouw
+- Deel **11**: **1 x** als je een rechte tailleband maakt
+- Deel **11**: **2 x** _met goede kanten op elkaar_ als je een gebogen tailleband maakt
+- Deel **12**: **1 x**
 
-##### From lining (or any material suitable for pocket bags)
+##### Vanuit de voering (of elk materiaal geschikt voor de zakzaken)
 
-- Part **5**: **2 x**
-- Part **7**: **2 x**
+- Deel **5**: **2 x**
+- Deel **7**: **2 x**
 
-##### From fusible interfacing
+##### Van fusibele tussenvoering
 
-- Part **3**: **2 x**
+- Deel **3**: **2 x**
 
 <Tip>
 
-##### A dash of color perhaps?
+##### Een sprint van kleuren misschien?
 
-You can cut part 4 from a different color for a little contrasting detail at the back pockets
+Je kunt deel 4 uit een andere kleur knippen voor een beetje contrasterende details aan de achterzakken
 
 </Tip>

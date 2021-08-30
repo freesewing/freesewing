@@ -1,2 +1,2 @@
-Controls the location of the zipper. Either at the back seam, or at the side seam
+Contrôle l'emplacement du zipper. Soit à la couture arrière, soit à la couture latérale
 

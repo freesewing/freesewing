@@ -1,6 +1,10 @@
-![Collar ease](collarease.svg)
+![Facilidad de cuello](collarease.svg)
 
-How much ease do you want for your collar?
+¿Cuánta facilidad quieres para tu cuello?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Si sientes que un cuello está sufriendo, puedes darte un poco más de facilidad y te sentarás más suelto alrededor del cuello. También puede bajar la facilidad para un ajuste ajustado.
 
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_collarease_sample.svg "Efecto de esta opción en el patrón")

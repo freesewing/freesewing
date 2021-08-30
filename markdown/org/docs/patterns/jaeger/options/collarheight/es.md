@@ -1,4 +1,4 @@
 
 ![Altura del cuello](collarheight.svg)
 
-This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+Esta es la altura del cuello en la parte trasera del cuello y nunca puede ser inferior al doble de la altura del collar del rollo.

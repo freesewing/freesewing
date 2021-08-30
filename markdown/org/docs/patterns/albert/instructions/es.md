@@ -1,2 +1,2 @@
 
-<Fixme>Write instructions for Albert</Fixme>
+<Fixme>Escribe instrucciones para Albert</Fixme>

@@ -1,18 +1,18 @@
-### Step 1: Finish the armhole seam
+### Schritt 1: Beende die Rüstungsnaht
 
-![Finsh the armhole seam](step03.png)
+![Finsche die Rüstungsnaht](step03.png)
 
-Finish the armhole seam with a narrow hem.
+Beenden Sie die Armlochnaht mit einem schmalen Saum.
 
-### Step 2: Finish the top
+### Schritt 2: Beende die Spitze
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Nähen Sie die drei auf Ihrem Entwurf markierten Nahtlinien](step04.png)
 
 <Note>
 
-As your top is folded, it's a good idea to pin both halves together.
-This way, your top can't shift around while we finish it.
+Da Ihr Oberteil gefaltet ist, ist es eine gute Idee, beide Hälften zusammenzupinnen.
+Auf diese Weise kann sich dein Oberteil nicht umdrehen, während wir es beenden.
 
 </Note>
 
-Sew the three seamlines that are marked on your draft.
+Nähen Sie die drei Nähte, die auf Ihrem Entwurf markiert sind.

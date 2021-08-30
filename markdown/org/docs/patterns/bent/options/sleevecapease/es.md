@@ -1,10 +1,14 @@
 
-How much sleevecap ease do you want?
+¿Cuánta facilidad de manga quieres?
 
-> #### What's the point?
+> #### ¿Cuál es la cuestión?
 > 
-> The amount of sleevecap ease determines how the sleeves rolls from the shoulder.
+> La cantidad de manga fácil determina cómo rodar las mangas del hombro.
 > 
-> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
+> Más facilidad hace que la manga se cuelgue en la costura como esperarías de un abrigo. Menos facilidad hace que la manga sea más lisa.
 
-> The lighter your fabric, the less sleevecap ease you want.
+> Cuanto más ligero sea tu tejido, menos mangas te guste fácilmente.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bent_sleevecapease_sample.svg "Efecto de esta opción en el patrón")

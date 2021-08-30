@@ -1,3 +1,3 @@
 ![Aisance au niveau des biceps](bicepsease.svg)
 
-How much room do you want at your upper arm?
+Combien de place voulez-vous dans votre bras supérieur?

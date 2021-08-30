@@ -1,13 +1,13 @@
 ![Inserción de cuello](neckinset.svg)
 
-How far do you want your waistcoat to sit away from your collar on your shoulder seam? The default is 2cm.
+¿Hasta dónde quieres que tu cinturón se sienta lejos de tu cuello en la costura del hombro? El valor por defecto es 2cm.
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the collar side).
+The shoulder seam of a waistcoat is typically more narrow than your shirt. Esta opción controla lo estrecho que es (en el lado del collar).
 
 </Note>

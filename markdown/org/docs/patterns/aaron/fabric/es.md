@@ -1,10 +1,10 @@
 
-An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+Una camisa A es esencialmente ropa interior. Y en esa capacidad, usted quiere algo que es confortable, se siente bien en su piel y respira.
 
-Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
+Algodón con un toque de algo estirado, tal vez rayon, o un buen tejido. Le sugiero que vaya a la tienda de tejidos y se sienta un poco.
 
 <Note>
 
-While stretch is not required, it does make sense for underwear. That being said, you can make this in a non-stretch, just make sure pick loose or casual fit.
+Si bien el estiramiento no es necesario, tiene sentido para la ropa interior. Dicho esto, usted puede hacer esto en un no-estiramiento, simplemente asegúrese de que se ajusta a lo normal o a lo normal.
 
 </Note>

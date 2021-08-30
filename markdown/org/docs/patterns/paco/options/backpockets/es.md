@@ -1,2 +1,2 @@
 
-Whether to include back pockets, yes or no.
+Si incluir bolsillos de espalda, sí o no.

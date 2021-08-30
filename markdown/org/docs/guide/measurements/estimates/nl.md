@@ -1,29 +1,29 @@
 ---
-title: Measurements estimates
+title: Geschatte metingen
 ---
 
-To help you spot measuring mistakes, we show an estimate of your different measurements next to the actual value. When the difference gets large, we'll draw your attention to that.
+Om je te helpen fouten te meten tonen we een schatting van je verschillende maten naast de werkelijke waarde. Als het verschil groot wordt, zullen we daar je aandacht op vestigen.
 
 <Tip>
 
-This estimate is based on your neck circumference, so this won't show up until you've measured your neck.
+Deze schatting is gebaseerd op je nekomtrek, dus dit zal niet worden weergegeven totdat je je nek hebt gemeten.
 
 </Tip>
 
 <Note>
 
-##### This is a difficult area for us to work in
-We want to help you get the best results, and that includes helping you spot issues with your measurements. 
-On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.  
+##### Dit is een moeilijk gebied voor ons om te werken in
+We willen je helpen om de beste resultaten te behalen. en dat betekent ook dat u problemen kunt vinden met uw metingen. 
+Aan de andere kant willen we op geen enkele manier impliceren dat iemands metingen op de een of andere manier *verkeerd* zijn.  
 
-We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets. 
-So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. 
-But you know your body. You know which of your measurements deviate from the average. 
-And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
-On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
+Wij zijn een zeer omvangrijk model en een onevenredig groot deel van onze gebruikers zijn mensen die moeite hebben om kleding of patronen te vinden uit andere buitentjes. 
+Dus aan de ene kant het lijkt erop dat we onszelf voor een mislukking opzetten door de metingen te vergelijken met een set meer of minder *standaard* metingen. 
+Maar je kent je lichaam. U weet welke van uw metingen afwijken van het gemiddelde. 
+En we wijzen erop dat ze dat wel doen, is slechts een bevestiging dat je het goed hebt gemeten.
+Aan de andere kant weet je dat als er iets springt waar je een redelijk gemiddelde maat hebt, je die metingen nog eens dubbel moet controleren.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes, 
-we never exclude anyone based on size or measurement. 
-No matter what you throw at us, we will draft a pattern for you, or (our software will) die trying.
+Last but not least, terwijl we begeleiding proberen te geven bij metingen om fouten te helpen spoelen, 
+we sluiten nooit iemand uit op basis van grootte of maat. 
+Ongeacht wat je naar ons gooit, zullen we een patroon voor je tekenen, of (onze software zal dat proberen) die uitproberen.
 
 </Note>

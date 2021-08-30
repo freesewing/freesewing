@@ -1,7 +1,7 @@
 ## Stof voor een das
-The ties you find in the store are typically made out of silk or some imitation silk poly. Het is dus niet verrassend dat dit goede opties zijn.
+De dassen die je in de winkel vindt worden meestal gemaakt van zijde of imitatiezijde geplakt. Het is dus niet verrassend dat dit goede opties zijn.
 
-In general, you want something with good drape so that your tie hangs nicely. Je das schuin van draad knippen kan ook helpen.
+Over het algemeen wil je iets dat goed valt zodat je das mooi hangt. Je das schuin van draad knippen kan ook helpen.
 
 Ik gebruik zelf graag verschillende stoffen voor dassen. Dingen als denim of ribfluweel maken geweldige dassen, en zijn ook een beetje anders dan de gemiddelde das uit de winkel.
 

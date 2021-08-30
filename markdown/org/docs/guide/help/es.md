@@ -1,5 +1,5 @@
 ---
-title: Getting help
+title: Obteniendo ayuda
 order: 999
 ---
 

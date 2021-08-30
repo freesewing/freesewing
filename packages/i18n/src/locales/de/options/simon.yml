@@ -98,8 +98,8 @@ extraTopButton:
   title: Zusätzlicher oberer Knopf
   description: Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll.
 ffsa:
-  title: Flat-felled seam allowace
-  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
+  title: Flachgeplagte Naht erlaubt
+  description: Die Anzahl der Nahtzuschüsse für geflochtene Nähte im Verhältnis zum regulären Nahtzuschuss
 hemCurve:
   title: Saumkurve
   description: Die Höhe der Kurve an einem abgerundeten Saum.

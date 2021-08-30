@@ -1,2 +1,2 @@
-The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.
+Der Prozentsatz des Sitzumfangs, den der Rückenschlag besetzen muss. Dadurch entsteht mehr oder weniger Platz zwischen der Seitennaht und der Rückseite.
 

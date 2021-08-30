@@ -1,10 +1,12 @@
-![Cuff length](cufflength.svg)
+![Longitud del puño](cufflength.svg)
 
-The length of your cuffs.
+La longitud de sus cuffs.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Esto no influirá en la longitud total de la manga.
 
 </Note>
 
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_cufflength_sample.svg "Efecto de esta opción en el patrón")

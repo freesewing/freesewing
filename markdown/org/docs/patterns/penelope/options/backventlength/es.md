@@ -1,2 +1,2 @@
-This controls the length of the back vent as a percentage of the skirt length.
+Controla la longitud de la válvula trasera como un porcentaje de la longitud de la cabina.
 

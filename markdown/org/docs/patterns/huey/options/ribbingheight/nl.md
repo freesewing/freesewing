@@ -1,4 +1,4 @@
 
 ![Hoogte boord](ribbingheight.svg)
 
-The height of the ribbing at the hem and cuffs.
+De hoogte van de boordstof aan de zoom en manchetten.

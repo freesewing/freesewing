@@ -1,18 +1,18 @@
 ![Freie Länge Knopf](./buttonfreelength.svg)
 
-How much before your waistband do you want your last button to sit?
+Wie viel vor deinem Taillenband möchtest du mit deinem letzten Button sitzen?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-Having buttons below your waistband is considered by many to be an annoyance.
-They get caught up in your belt, and complicate bathroom breaks.
+Knöpfe unter dem Taillenband werden von vielen als Ärger angesehen.
+Sie werden in Ihrem Gürtel aufgefangen und verkomplizieren Badeinbrüche.
 
-By default, the last button sits 1cm above your waistband, 
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+Standardmäßig sitzt die letzte Taste 1cm über dem Bund, 
+, aber mit dieser Option kannst du es für das Hemd, das du mit den hohen Taillenhosen tragen willst, weiter nach oben bewegen.
 
-If you want to have buttons below your waistband, you can. You should enter a negative value here, 
-making sure it's within the length bonus you have available.
+Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das. Du solltest hier einen negativen Wert eingeben, 
+, um sicherzustellen, dass er innerhalb der Länge Bonus verfügbar ist.
 
 </Note>

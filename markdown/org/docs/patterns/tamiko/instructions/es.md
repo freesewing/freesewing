@@ -1,18 +1,18 @@
-### Step 1: Finish the armhole seam
+### Paso 1: Termina la costura del orificio
 
-![Finsh the armhole seam](step03.png)
+![Encender la costura del orificio](step03.png)
 
-Finish the armhole seam with a narrow hem.
+Termina la costura del orificio con un tubo estrecho.
 
-### Step 2: Finish the top
+### Paso 2: Termina la parte superior
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Marca las tres líneas de costura que están marcadas en tu borrador](step04.png)
 
 <Note>
 
-As your top is folded, it's a good idea to pin both halves together.
-This way, your top can't shift around while we finish it.
+A medida que tu parte superior está doblada, es una buena idea fijar ambas mitades.
+De esta manera, tu parte superior no puede desplazarse mientras lo terminamos.
 
 </Note>
 
-Sew the three seamlines that are marked on your draft.
+Define las tres líneas de costura que están marcadas en tu borrador.

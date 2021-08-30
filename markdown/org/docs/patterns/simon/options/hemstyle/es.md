@@ -1,7 +1,7 @@
 ![Estilo del dobladillo](hemstyle.svg)
 
-What style of hem line do you want?
+¿Qué estilo de la línea de hem quieres?
 
  - Straight
- - Baseball
- - Slashed
+ - Béisbol
+ - Cortado

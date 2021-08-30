@@ -1,6 +1,10 @@
 
-![Front armhole extra cutout](./frontarmholedeeper.svg)
+![Extra uitsnijding armsgat vooraan](./frontarmholedeeper.svg)
 
-Controls how much the front of the armhole is cut deeper into the garment than the back.
+Bepaalt hoeveel het armsgat vooraan dieper in het kledingstuk wordt gesneden, dan de achterkant.
 
-Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. This option controls how much deeper.
+Aangezien de menselijke schouder meer aan de voorkant van het lichaam is afgerond, is de mouw(cap) ook daar meer afgerond en het armsgat wordt meestal dieper geknipt in de voorkant van het kledingstuk dan de achterkant. Deze optie bepaalt hoeveel dieper.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_frontarmholedeeper_sample.svg "Effect van deze optie op het patroon")

@@ -2,15 +2,15 @@
 title: Knieomtrek
 ---
 
-The **upper leg circumference** is the measurement around your leg, near the top of your leg.
+De omtrek van **bovenbeendeel** is de maat rond je broekspijp, in de buurt van de bovenrand van je been.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance.  
-Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+Je zou dit een beetje onder je crotch moeten meten, verwijs naar de illustratie voor begeleiding.  
+Zorg dat de lintmeter horizontaal blijft voor de vloer terwijl je de omtrek van je poot meet.
 
 <Tip>
 
-##### Be mindful of the vertical location of this measurement
+##### Houd rekening met de verticale locatie van deze meting
 
-This measurements is also used as **a vertical reference** to determine the vertical space in which to draft the seat/crotch of trousers. As such, the vertical location of this measurement is important.
+Deze metingen worden ook gebruikt als **een verticale referentie** om de verticale ruimte te bepalen waarin de zit/kruis van een broek geklaard wordt. Daarom is de verticale locatie van deze meting belangrijk.
 
 </Tip>

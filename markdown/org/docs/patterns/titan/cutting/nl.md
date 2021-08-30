@@ -1,5 +1,5 @@
  - **Buitenstof**
-   - Cut **2 front** with _good sides together_
-   - Cut **2 back** with _good sides together_
+   - Knip **2 voorpand** met _goede kanten op elkaar_
+   - Knip **2 rug** met _goede kanten op elkaar_
 
-Titan is a trouser block. There's only the front and back of each leg.
+Titan is een broekspijp. Er is alleen de voor- en achterkant van elk been.

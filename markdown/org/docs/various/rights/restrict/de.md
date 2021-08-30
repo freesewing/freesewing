@@ -1,15 +1,15 @@
 ---
-title: The right to restrict processing
+title: Das Recht, die Verarbeitung einzuschränken
 order: 50
 ---
 
-You have the right to request a restriction on the processing of your personal data.
+Sie haben das Recht, eine Einschränkung der Verarbeitung Ihrer persönlichen Daten zu beantragen.
 
 Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting us][2] to lift the restriction.
+Ihre Anfrage wird sofort bewilligt und kann nur rückgängig gemacht werden durch [Kontaktieren][2] , um die Einschränkung aufzuheben.
 
 </Warning>
 [1]: /account/actions/restrict/

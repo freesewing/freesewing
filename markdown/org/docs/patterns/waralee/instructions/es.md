@@ -1,100 +1,100 @@
 
 <Tip>
 
-##### The key to Waralee is the waist band
+##### La clave de Waralee es la banda de cintura
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+de alguna manera, Waralee es sólo una banda de cintura con un largo trozo de tejido adjunto. La banda de cintura debe continuar de la tela a dos cuerdas de tela que se utilizan para atar los pantalones en la parte delantera y dos en la espalda. Estas cadenas no están incluidas en el patrón. Tradicionalmente, tienen una longitud similar. Puedes hacer más largas para el panel frontal (el lado que es un poco más corto que el otro, en la izquierda en las ilustraciones de abajo), para permitirle atar ambos conjuntos en el frente. Prefiero esto ya que es más fácil de atar, y usted no tiene la mayor parte del nudo en la espalda.
 
 </Tip>
 
-## Step 1: Sew the pockets
+## Paso 1: Ahorra los bolsillos
 
 <Note>
 
-##### Pockets are optional
-Traditionally, these types of pants do not have pockets. But I want to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
+##### Los bolsillos son opcionales
+Tradicionalmente, estos tipos de pantalones no tienen bolsillos. Pero quiero poner mi teléfono, llaves y monedero en algún lugar. Así que he incluido bolsillos en el patrón. Usted puede decidir por sí mismo si lo desea en sus pantalones.
 
-The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
+Las ilustraciones en los siguientes pasos muestran los pantalones de Waralee sin bolsillos. Sólo se muestran las colocaciones de los bolsillos del patrón, para ayudarte a orientarte a ti mismo.
 
-##### If you do want pockets, make them first
-If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
+##### Si quieres bolsillos, hazlos primero
+Si vas a hacer los bolsillos, fabricarlos antes de poner una pieza de tejido en la otra. Es más fácil trabajar con las piezas aún separadas.
 
 </Note>
 
-If desired, sew the pockets.
+Si lo desea, coser los bolsillos.
 
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
+Incluí colocaciones para los bolsillos delanteros que se ocultarán por las aletas en el frente. Pero seguirán siendo fácilmente accesibles para poner su teléfono o llaves. Se trata de maletas soldadas. Los que se encuentran en la parte delantera están en ángulo y los que se encuentran en la parte trasera están orientados horizontalmente. Las plantillas de bolsillo deben permitir que la tela sea suficiente para sujetar el bolsillo a la cintura. Si desea bolsas particularmente profundas, por favor ajuste en consecuencia.
 
-## Step 2: Hem the sides and bottom
+## Paso 2: Hem los lados y la parte inferior
 
-![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
+![Hem los lados y la parte inferior](waralee-hem-sides-and-bottom.png)
 
-Hem the sides and bottom.
+Hem los lados y la parte inferior.
 
-You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+Puede utilizar cualquier método que mejor le funcione. En la versión que primero hice que acababa de sermonear los lados, los dobló de vuelta y la parte superior los stitched y, a continuación, hizo lo mismo para la parte inferior. Lo hice para reducir al mínimo la masa de la tela y permitir un mejor borrón. Lo que hagas debería depender del tipo de tela que estés usando.
 
-## Step 3: Sew the two parts together at the crotch
+## Paso 3: Realizar las dos partes juntas en el crucero
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+![Coloque las dos partes encima de la otra con buenos lados juntos. Difundir la costura del cromo](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two parts together. Lay them with _good sides together_ and sew the seam along the cutout. Finish this seam and press it.
+Ahora puedes coser las dos partes juntos. Escríbelos con _lados buenos_ juntos y coser la costura a lo largo del corte. Termina esta costura y presiona.
 
-## Step 4: Prepare the four strings
+## Paso 4: Prepara las cuatro cadenas
 
-The strings are just long tubes of fabric.
+Las cuerdas son sólo tubos largos de tejido.
 
-Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. That is the length of each string. Cut out four strips of fabric that are that long and 5cm (2”) wide.
+Tome una cuarta parte de su medida de cintura. Añadir ese número a 40cm (17”). Añade tu franquicia de costura. Esa es la longitud de cada cadena. Cortar cuatro tiras de tela que son de tan largo y 5 cm (2”) de largo.
 
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+Por ejemplo, si mi circunstancia de cintura es 84.6cm: 84.6cm dividido por 4 es 21.2cm. 21,2cm más 40cm es 61,2cm. 61,2 cm más mi franquicia de costura de 1 cm es 62,2cm. Cortaré cuatro tiras de tela de 62,2 cm en 5cm.
 
 <Note>
 
-##### You can lengthen the front ties
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+##### Puedes alargar los lazos frontales
+Opcionalmente, para hacer los lazos frontales más largos, agrandarlos con la medida de cintura de tu cuarto.
 
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+Al generar tu patrón, una de las opciones de estilo se llama “Waist Band”. Las cadenas, cuando se doblan, deben tener el mismo ancho que ha especificado para esa opción, 2,5cm (1") por defecto.
 
-The extra 40cm (17") of length is to make the knot.
+El extra de 40cm (17") de longitud es hacer el nudo.
 
-If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+Si su material es delicado o endeble, puede añadir alguna interfaz para darle fuerza.
 
 </Note>
 
-Fold them in half along the long side, _good sides together_. Stitch the long side and one of the short sides, and turn the tie right side out.
+Doble a la mitad a lo largo del lado largo, _lados buenos juntos_. Unir el lado largo y uno de los lados cortos, y girar el lado derecho de la corbata.
 
 <Tip>
 
-##### Turning tubes of fabric right side out can be difficult
+##### Voltear tubos de tela hacia afuera puede ser difícil
 
-This can be made easier by taking a piece of twine longer than the strips. Lay that between the right sides, along the fold. Make sure you catch this while sewing the short side. You can use this to pull the end through the tube you've created. When you're done, you can cut it off. Having a long, skinny stick or a loop turner can help too with this.
+Esto se puede hacer más fácil tomando una pieza de twine más larga que las cajas. Diga esto entre los lados derecho, a lo largo del pliegue. Asegúrese de capturar esto mientras coser el lado corto. Puedes usar esto para tirar el extremo a través del tubo que has creado. Cuando hayas terminado, puedes cortarlo. Tener un palo largo o un volteador de bucle puede ayudar también con esto.
 
 </Tip>
 
-## Step 5: Sew the waist band
+## Paso 5: Aplasta la banda de cintura
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
+![Coloque las dos partes encima de la otra con buenos lados juntos. Difundir la costura del cromo](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band. Think about adding interfacing if your fabric is delicate.
+Ahora es el momento de coser la banda de cintura. Piense en añadir una interfaz si su tejido es delicado.
 
-Fold the seam allowance in, and then fold along the waist band line. (red)
+Doblar la franquicia de costura y luego doblar a lo largo de la línea de banda de cintura. (rojo)
 
-Insert one of the strings you made in the previous step on each side. Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+Inserte una de las cadenas que hizo en el paso anterior de cada lado. Se sienta a lo largo de la línea de banda de la cintura y añada un poco de unión adicional para asegurarse de que esas cuerdas están bien sujetadas. (azul)
 
 <Tip>
 
-##### Secure the strings well
+##### Asegure bien las cuerdas
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+Las cuerdas mantienen tus pantalones arriba, por lo que tener esa falla resultará en momentos incómodos.
 
 </Tip>
 
-## Step 6: Wear your pants
+## Paso 6: Usa tus pantalones
 
-Press your pants, and try them on!
+¡Presiona tus pantalones y pruébalos!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Mantenga la parte frontal contra su vientre y envuelva ambas cuerdas a su alrededor y empate en la espalda (o, si tiene largas cuerdas, envuelva todo el camino a su alrededor y empate en la parte delantera). Luego, mano la parte posterior a través de las piernas a ti mismo y atar las otras cuerdas en la parte delantera.
 
-Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
+Aquí hay un artículo que muestra cómo atar pantalones de envoltorio: [Cómo envolver pantalones](https://www.wikihow.com/Tie-Wrap-Pants)
 
-If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+Si te quedas atascado, o tienes preguntas adicionales, siempre puedes contactar con [otros Sewers libres](https://discord.freesewing.org/).
 

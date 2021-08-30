@@ -1,8 +1,8 @@
 ---
-title: How to recreate a pattern from a Github gist
+title: Hoe een patroon te maken vanuit een Github lijst
 ---
 
-This page allows you to recreate a pattern from a [Github gist](https://gist.github.com/).
+Op deze pagina kun je een patroon aanmaken vanuit een [Github vuist](https://gist.github.com/).
 
-To do so, simply past either the full URL to the gist, or the gist's ID (the last part of the URL).
+Om dit te doen, gaat u gewoon voorbij ofwel de volledige URL naar het gist, ofwel het gist-ID (het laatste deel van de URL).
 

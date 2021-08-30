@@ -1,6 +1,6 @@
 ---
-title: Rights in relation to automated decision making and profiling
+title: Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung
 order: 80
 ---
 
-This right does not apply to FreeSewing as we do not use automated decision making or profiling.
+Dieses Recht gilt nicht für FreeSewing, da wir keine automatisierte Entscheidungsfindung oder Profilerstellung verwenden.

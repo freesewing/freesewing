@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your seat/bum.
+Steuert die Menge der Leichtigkeit an Ihrem Sitz/Bum.

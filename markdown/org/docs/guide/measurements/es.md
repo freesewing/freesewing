@@ -3,12 +3,12 @@ title: Medidas
 order: 420
 ---
 
-Taking accurate measurements is crucial for good results with our designs, yet not as trivial as you would think.
+Tomar mediciones precisas es crucial para obtener buenos resultados con nuestros diseños, pero no tan trivial como usted pensaría.
 
-We've added a few indicators to help you spot mistakes or problems in your measurements.
+Hemos añadido algunos indicadores para ayudarle a detectar errores o problemas en sus mediciones.
 
- - We include [estimates for your different measurements][1], and highlight those measurements where a person differs significantly from the estimate
- - Your models show [a graph of their body measurements][2] in comparison to our standard sizes
+ - Incluimos [estimaciones para sus diferentes mediciones][1]y destacamos aquellas medidas en las que una persona difiere significativamente de la estimación
+ - Sus modelos muestran [una gráfica de sus mediciones corporales][2] en comparación con nuestros tamaños estándar
 
 [1]: /docs/guide/measurements/estimates/
 [2]: /docs/guide/measurements/graph/

@@ -1,16 +1,18 @@
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Estilo de la vista de los ojales](buttonholeplacketstyle.svg)
 
-Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
+¿Quiere una placeta clásica de agujero de botón o una sin costura (a veces llamada estilo francés)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Sin fisuras es menos trabajo y se ve genial.
 
 </Tip>
 
 <Note>
 
-As seamless is only possible on a *cut-on* placket, this option is ignored if you choose a seperate buttonhole placket.
+Ya que sólo es posible en una placket *corta-on*, esta opción se ignora si elige una placa separada del orificio del botón.
 
 </Note>
 
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonholeplacketstyle_sample.svg "Efecto de esta opción en el patrón")

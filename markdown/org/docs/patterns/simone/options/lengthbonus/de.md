@@ -1,15 +1,17 @@
-![Length bonus](lengthbonus.svg)
+![Längenzugabe](lengthbonus.svg)
 
-How much shirt do you want to be able to tuck in your trousers?
+Wie viel Hemd möchtest du in der Lage sein, in deiner Hose zu klecken?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-Keeping your shirt tucked neatly in your trousers is why you need this extra length. 
-Nobody needs to know about that Justin Bieber tattoo on your lower back.
+Das Shirt sauber in der Hose zu halten, ist der Grund, warum Sie diese zusätzliche Länge brauchen. 
+Niemand muss wissen, dass Justin Bieber Tätowierung auf deinem unteren Rücken hat.
 
-If you want a more casual shirt to wear over your trousers, you will want to lower this.
+Wenn Sie möchten, dass ein lässigeres Hemd über Ihre Hose getragen wird, wollen Sie dies senken.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_lengthbonus_sample.svg "Effekt dieser Option auf das Muster")

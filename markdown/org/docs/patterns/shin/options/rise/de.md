@@ -1,4 +1,4 @@
 
-This option controls the overal height of the waist.
+Diese Option steuert die Überhöhe der Taille.
 
-> The higher the rise, the higher your waist.
+> Je höher der Aufstieg, desto höher deine Taille.

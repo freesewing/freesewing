@@ -2,6 +2,10 @@
 title: Largeur d'épaule devant
 ---
 
-![The effect of the front shoulder width option on the pattern](sample.png)
+![L'effet de l'option de largeur de l'épaule avant sur le motif](sample.png)
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+L'option **de largeur d'épaule avant** contrôle la largeur des épaules à l'avant par rapport à l'arrière.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_frontshoulderwidth_sample.svg "Effet de cette option sur le motif")

@@ -1,3 +1,3 @@
-![The waist reduction option on Cathrin](./waistreduction.svg)
+![Option de réduction de la taille sur Cathrin](./waistreduction.svg)
 
-The amount you want the corset to be smaller than your natural waist. In other words, how much do you want it to squeeze you.
+La quantité que vous voulez que le corset soit plus petit que votre taille naturelle. En d'autres termes, combien voulez-vous qu'il vous presse.

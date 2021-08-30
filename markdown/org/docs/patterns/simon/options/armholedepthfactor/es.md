@@ -1,4 +1,4 @@
 ![Factor de profundidad de la sisa](./armholedepthfactor.svg)
 
 
-This option controls the depth of the armhole.
+Esta opción controla la profundidad del agujero de armadura.

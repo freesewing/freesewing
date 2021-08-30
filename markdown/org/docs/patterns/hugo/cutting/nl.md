@@ -15,10 +15,10 @@
 
 ###### Caveats
 
- - **sleeve**: There's a single notch at the front, and a double notch at the back. Deze merktekens komen overeen met het voor-en achterpand.
- - **pocket facing** and **hood**: Watch out for the grainlines on these parts
+ - **mouwen**: Er zit een enkel merkteken vooraan, en een dubbel merkteken achteraan. Deze merktekens komen overeen met het voor-en achterpand.
+ -**zakbeleg** en **capuchon**: Let op de draadrichting van deze onderdelen
 
-Because Hugo's raglan sleeve also covers a portion of the back and front,
-the sleeve is the dominant feature of your draft.
+Omdat Hugo's raglan mouw ook een deel van de achterkant en voorkant afdekt,
+de mouw is het dominante kenmerk van je concept.
 
 </Warning>

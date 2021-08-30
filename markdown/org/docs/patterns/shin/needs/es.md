@@ -1,11 +1,11 @@
-To make Shin, you will need the following:
+Para hacer Shin, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.75 meter of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
-- two eyelets and a drawstring
+- Alrededor de 0.75 metros de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/shin/fabric))
+- dos eyelets y una cadena de dibujo
 
-> ## A serger/overlock is nice, but optional
+> ## Un serger/overlock es bueno, pero opcional
 > 
-> As with all stretch fabrics, a serger/overlock will make your life easier.
+> Al igual que con todas las telas estiradas, un serpiente o un overlock le hará la vida más fácil.
 > 
-> Si no tienes una no te desesperes. Realmente no la necesitas. You can use another technique for stretch seams, such as a zig-zag stich, twin needle, or elastic thread.
+> Si no tienes una no te desesperes. Realmente no la necesitas. Puede utilizar otra técnica para las costuras de estiramiento, como un punto zig-zag, una aguja gemela o un hilo elástico.

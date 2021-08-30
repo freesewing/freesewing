@@ -2,6 +2,10 @@
 title: Aisance de poitrine
 ---
 
-![The effect of the chest ease option on the pattern](sample.png)
+![L'effet de l'option de facilité de poitrine sur le patron](sample.png)
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+L'option **facilité de poitrine** contrôle la quantité d'aisance à la partie la plus complète de votre poitrine.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_chestease_sample.svg "Effet de cette option sur le motif")

@@ -1,2 +1,2 @@
-Controls the location of the zipper. Either at the back seam, or at the side seam
+Steuert den Standort des Reißverschlusses. Entweder an der RückenNaht oder an der Seitennaht
 

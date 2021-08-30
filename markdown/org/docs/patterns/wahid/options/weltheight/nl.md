@@ -1,2 +1,2 @@
 
-Controls the height of the pocket welts.
+Bepaalt de hoogte van de paspels.

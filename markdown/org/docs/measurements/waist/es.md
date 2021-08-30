@@ -1,7 +1,7 @@
 ---
-title: Waist circumference
+title: Circunferencia de Waist
 ---
 
-The **waist circumference** measurement is the circumference of your waist below your ribcage.
+La medición de **circunstancia de cintura** es la circunstancia de la cintura debajo de la cinta.
 
-To measure your **waist circumference**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal.
+Para medir tu **circunstancia de cintura**, envuelve la medida de cintura alrededor de la parte más estrecha de la cintura, asegurándote de mantenerla horizontal.

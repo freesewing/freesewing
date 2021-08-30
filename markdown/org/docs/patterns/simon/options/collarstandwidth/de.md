@@ -1,9 +1,9 @@
-![Collarstand width](collarstandwidth.svg)
+![Breite der Collarstand](collarstandwidth.svg)
 
-The height of your collar stand.
+Die Höhe Ihres Kragenständers.
 
 <Note>
 
-This is the main parameter to change the overall height of your collar. This defaults to a modern relatively slim collar, but you can crank it up all the way to Karl Lagerfeld style.
+Dies ist der Hauptparameter um die Gesamthöhe des Kragens zu ändern. Dies wird auf einen modernen relativ schlanken Kragen abgestellt, aber man kann ihn bis zum Stil von Karl Lagerfeld hinaufschrauben.
 
 </Note>

@@ -1,109 +1,109 @@
 ---
-title: Knit binding
+title: Strickbindung
 ---
 
-## What is knit binding anyway?
+## Was ist sowieso Strickbindung?
 
-Knit binding is a general term for a type of finish (typically) found on the neck or arm opening of T-shirts and other knitwear.
+Knit binden ist ein allgemeiner Begriff für eine Art von Oberfläche (typischerweise) am Hals oder Arm Öffnung von T-Shirts und anderen Strickwaren.
 
-There's two varieties of this finish, a knit band, and actual knit binding.
+Es gibt zwei Varianten dieser Oberfläche, ein Strickband und tatsächlich Strickverbindung.
 
-## Knit band
+## Strickband
 
-![Like most T-shirts, the one this girl is wearing has a knit band at the neck opening.](knit_band.jpg)
+![Wie bei den meisten T-Shirts hat auch dieses Mädchen eine Strickband an der Halsöffnung.](knit_band.jpg)
 
-Knit band is what you typically find at the neck opening of your T-shirt. It's a strip of fabric that is folded double and attached to the edge of the garment.
+Knit Band ist das, was Sie normalerweise an der Halsöffnung Ihres T-Shirts finden. Es ist ein Stoffstreifen, der doppelt gefaltet und am Rand des Kleidungsstückes befestigt ist.
 
-This leaves an unfinished edge on the inside that is often sewn down by edge-stitching around the knit band.
+Dies hinterlässt einen unvollendeten Rand an der Innenseite, der oft mit Kantenstich um das Strickband genäht wird.
 
-### Knit binding
-![This girl's grey undershirt and white T-shirt both have a knit binding at the neckline.](knit_binding.jpg)
+### Strickbindung
+![Das graue Unterhemd und das weiße T-Shirt dieses Mädchens haben beide eine Strickbindung an der Halslinie.](knit_binding.jpg)
 
-Real knit binding acts more like classic bias binding, in that it is wrapped around the fabric, rather than extend from it.
+Echte Strickbindungen wirken eher wie klassische Bindungen, da sie um den Stoff gewickelt sind als sich von ihm zu erstrecken.
 
-The raw edge of the garment is inserted between the folded knit binding, which is edge-stitched down. This is often done with a coverlock machine, thereby neatly finishing the inside.
+Die rohe Kante des Kleidungsstückes wird zwischen der gefalteten Strickbindung, die nach unten gestickt ist, eingelegt. Oft erfolgt dies mit einer Coverlock Maschine, wodurch das Innere ordentlich vervollständigt wird.
 
 > Pictures by [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) and [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
 
-### Style vs function
-A knit band is more common, and is what you typically find on T-shirt necklines. It's the more decorative option.
+### Stil vs Funktion
+Ein Strickband ist häufiger und ist das, was man normalerweise an T-Shirt-Halslinien findet. Es ist die eher dekorative Option.
 
-A knit binding is less common, but often used on undershirts (as in, underwear). It's the more functional option.
+Eine Strickbindung ist weniger üblich, wird aber oft auf Unterhemden verwendet (wie in Unterwäsche). Es ist die funktionalere Option.
 
-> ##### Still confused?
+> ##### Noch verwirrt?
 > 
-> Another way to distinguish them is this: Think about what happens when you decide to widen the knit binding/band.
+> Eine weitere Möglichkeit, sie zu unterscheiden, ist Folgendes: Denken Sie daran, was passiert, wenn Sie die Strickbindung/Band erweitern.
 > 
-> On a T-shirt, widening the band at the neck will make the neck opening smaller. If you want a wider band, you will have to cut a larger hole in your T-shirt.
+> Auf einem T-Shirt wird die Erweiterung der Band am Hals die Öffnung des Hals verkleinern. Wenn Sie eine breitere Band wollen, müssen Sie ein größeres Loch in Ihr T-Shirt schneiden.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Instead, the binding will simply lay further over the undershirt main fabric.
+> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Stattdessen wird die Bindung einfach weiter über das Unterhemdengewebe gelegt.
 
-## Why knitwear binding requires stretch
+## Warum Strickbekleidungsbindung Dehnungen erfordert
 
-Whether you're using a knit band or a knit binding finish, you are going to have to stretch your binding fabric for good results. That is, assuming you're not sewing a straight seam. Here's why:
+Egal ob Strickband oder Strickverbindungsoberfläche, Sie müssen Ihr Bindegewebe ausdehnen, um gute Ergebnisse zu erzielen. Das heißt, wenn Sie nicht eine geradlinige Naht nähen. Hier ist warum:
 
-### Straight: life on easy mode
+### Straight: Leben im einfachen Modus
 
-![No stretch required when going straight](knitbinding1.png)
+![Keine Streckung erforderlich, wenn Sie gerade gehen](knitbinding1.png)
 
-On a straight seam, you can simply attach your binding/band. Your fabric and binding have the same length, so everything will be fine.
+Auf einer geraden Naht können Sie einfach Ihre Bindung/Band anbringen. Ihr Stoff und Ihre Bindung haben die gleiche Länge, also wird alles in Ordnung sein.
 
-The most likely scenario where you will encounter this is on the (short) sleeves of a T-shirt. Although the knit band wraps around your arm, from a pattern perspective (as in, when the fabric is still flat) it's a straight seam.
+Das wahrscheinlichste Szenario, in dem Sie dies begegnen werden, ist die (kurz) Ärmel eines T-Shirts. Obwohl das Strickband um deinen Arm umwickelt, aus einer Musterperspektive (wie in, wenn der Stoff noch flach ist) ist es eine geradlinige Naht.
 
 
-### Uniformly curved: uniform stretch
+### Einheitlich gekrümmt: einheitliches Strecken
 
-![Curved seams require stretch](knitbinding2.png)
+![Kurvige Nähte erfordern Dehnung](knitbinding2.png)
 
-On a curved seam, like an neck opening, things get a little more complicated. That is because the outer edge and the inner edge of your binding will have a different length.
+Auf einer geschwungenen Naht, wie eine Halsöffnung, wird die Sache etwas komplizierter. Das liegt daran, dass der äußere Rand und der innere Rand des Bindemittels eine andere Länge haben.
 
-**No stretch, and things won't lie flat (aka gape)**
+**Keine Streckung und die Dinge werden nicht flach liegen (aka gape)**
 
-If you simply sew the binding to the fabric, things will be fine at the outer edge of your binding. But the inner edge is shorter, and your binding fabric will be pushed together. The tension that this creates will make it rise, and your binding will not lie flat against your skin.
+Wenn Sie einfach die Bindung an den Stoff nähen, werden die Dinge am äußeren Rand Ihrer Bindung gut sein. Aber die Innenkante ist kürzer und Ihr Bindegewebe wird zusammengedrückt. Die dadurch entstehende Spannung steigt, und Ihre Bindung wird nicht flach gegen Ihre Haut liegen.
 
-**Stretch it just right, and it will look great**
+**Strecke es genau richtig, und es wird großartig aussehen**
 
-To fix this issue, you need to stretch your knit binding (and not the fabric) while attaching your binding. If you do it right, the outer edge will be stretched open a bit, while the inner edge will nicely fill out your curve and everything will lie flat.
+Um dieses Problem zu beheben, müssen Sie Ihre Strickbindung (und nicht das Stoff) strecken, während Sie Ihre Bindung anhängen. Wenn Sie es richtig machen, wird die äußere Kante ein wenig geöffnet Während die Innenkante Ihre Kurve schön ausfüllt und alles wird flach liegen.
 
-**If you stretch too much, things will wrinkle**
+**Wenn du zu viel streckst, werden die Dinge falten**
 
-Stretch your binding too much, and it will spring back too far, causing the main fabric to wrinkle.
+Strecken Sie Ihre Bindung zu viel und sie wird zu weit zurückweichen, was das Hauptgewebe zum Falten macht.
 
-### Real life: variable stretch
+### Reales Leben: variable Streckung
 
-![As the curve changes, so should the stretch](knitbinding3.png)
+![Da sich die Kurve ändert, sollte auch die Streckung](knitbinding3.png)
 
-Straight seams exist, and although I've never come across one, maybe uniformly curved seams exist too. But more often than not, the curvature of your seam will vary.
+Es gibt gerade Nähte, und obwohl ich nie auf eine gestochen bin, gibt es vielleicht auch gleichmäßig gebogene Nähte. Aber in den meisten Fällen wird die Krümmung der Naht variieren.
 
-On a typical T-shirt neckline, the curve at the back of your neck is different from the front, and there's probably a somewhat tighter bend behind your shoulder seam.
+Auf einer typischen T-Shirt-Halslinie unterscheidet sich die Kurve am Hals von der Vorderseite, und es gibt wahrscheinlich eine etwas engere Biegung hinter Ihrer Schulternaht.
 
-On a slight curve, the difference between the inner and outer edge is not so big, and a little bit of stretch is all you need. But on a tighter curve, the difference between the inner and outer edge of your binding will be more significant. And you'll need more stretch to accommodate for that.
+Bei einer leichten Kurve ist der Unterschied zwischen Innen- und Außenkante nicht so groß, und ein bisschen Stretch ist alles, was Sie brauchen. Aber bei einer engeren Kurve wird der Unterschied zwischen Innen- und Außenkante der Bindung noch deutlicher. Und Sie brauchen mehr Strecke, um dafür zu unterkommen.
 
-So as you follow your seam, and it curves around necklines, or shoulders, or design features, you will have to adapt the amount of stretch to the situation.
+So wie du deiner Naht folgst und es kursiert um Halslinien, oder Schultern, oder Designfunktionen, müssen Sie die Menge der Stretch an die Situation anpassen.
 
-## You cannot calculate the length of your knit binding
-I am not saying it is theoretically impossible. But I am saying that it is practically impossible.
+## Sie können die Länge Ihrer Strickbindung nicht berechnen
+Ich sage nicht, dass dies theoretisch unmöglich ist. Aber ich sage, das ist praktisch unmöglich.
 
-The length of your knit binding depends on the amount it needs to be stretched. This depends on the curves you have to follow, and the width of the binding, not to mention the strength of its stretchiness. There's just too many parameters to take into account to calculate your binding length accurately.
+Die Länge Ihres Strickbindes hängt davon ab, wie viel Sie strecken müssen. Dies hängt von den Kurven ab, denen Sie folgen müssen, und von der Breite der Bindung, ganz zu schweigen von der Stärke ihrer Dehnung. Es gibt einfach zu viele Parameter, die man berücksichtigen kann, um die Länge der Bindung genau zu berechnen.
 
-### Do not do this
-There are a bunch of tutorials out on the internet that show you how to sew on knit binding. Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
+### Dies nicht tun
+Es gibt eine Reihe von Tutorials im Internet, die Ihnen zeigen, wie man auf Strickbinden näht. Viele von ihnen schlagen so etwas wie _vor, dass der Hals 90 % der Länge der Naht bindet, die Sie an_ befestigen (prozentual variiert).
 
-This idea is that you cut your binding, join its edges, and then sew it in the opening. Das ist (meiner Meinung nach) nicht gut.
+Diese Idee ist, dass Sie Ihre Bindung geschnitten, fügen Sie ihre Kanten zusammen und nähen Sie sie dann in der Öffnung. Das ist (meiner Meinung nach) nicht gut.
 
-An alternative approach to sidestep the length issue is to attach the binding before you close the opening your binding goes in. For example, on a T-shirt you close one shoulder seam, attach the binding, then close the second shoulder seam.
+Ein alternativer Ansatz, die Längenproblematik zu umgehen, besteht darin, die Bindung vor dem Schließen der Öffnung, in der Ihre Bindung eintritt. Zum Beispiel schließen Sie auf einem T-Shirt eine Schulternaht, befestigen die Bindung, dann schließen Sie die zweite Schulternaht.
 
-Obviously, that means your shoulder seam will cut through your binding which is a big no no in my book.
+Das bedeutet natürlich, dass Ihre Schulternaht durch Ihre Bindung geschnitten wird, was ein großes Nein in meinem Buch ist.
 
-### Instead, do this
+### Stattdessen tun
 
- - Cut your binding as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
- - Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1cm beyond this point.
- - Start sewing your binding about 3cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There's no tricks for this, you'll have to practice until it comes naturally to you.
- - When you make your way around and get close to the point you marked, stop about 3cm before that.
- - Now your entire binding is attached, apart from a 6cm or so stretch at the back. Pin both edges of your binding good sides together, making is exactly as long as needed and sew them together.
- - Sew the remaining 6cm of your binding.
+ - Schneiden Sie Ihre Bindung so lange, wie die Naht, in die sie genäht werden muss. Nicht 90 %, sondern 100 %. Auf diese Weise wissen Sie, dass es zu lange dauern wird, und das ist, was wir wollen.
+ - Markieren Sie den Ort, an dem Sie Ihre Bindung verbinden möchten (sagen Sie die Mitte der Halslinie) und legen Sie Ihre Bindung 1cm über diesen Punkt hinaus.
+ - Nähen Sie Ihre Bindung ungefähr 3 cm und gehen Sie den ganzen Weg. Dabei sollten Sie die Streckung an die gewünschte Kurve anpassen. Dafür gibt es keine Tricks, du musst üben, bis es zu dir kommt.
+ - Wenn Sie sich umdrehen und näher an den von Ihnen markierten Punkt kommen, stoppen Sie vorher etwa 3cm lang.
+ - Jetzt ist Ihr ganzes Bindegewebe befestigt, abgesehen von etwa 6 cm auf der Rückseite. Nähen Sie beide Kanten Ihrer guten Seiten zusammen und machen Sie so lange wie nötig und nähen Sie sie zusammen.
+ - Nähen Sie die restlichen 6 cm Ihrer Bindung.
 
-This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
+Auf diese Weise erraten wir nicht, wie lange Ihre Bindung sein sollte, und die bindenden Naht sitzt dort, wo Sie sie haben wollen.
 
-> For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
+> Für detaillierte Anweisungen, schaue dir [die Aaron-Dokumentation](/docs/patterns/aaron/)

@@ -1,3 +1,3 @@
 ![Taillenbundweite](waistbandwidth.svg)
 
-The width of the waistband you want on the trousers.
+Die Breite des Taillenbandes, die Sie auf der Hose wünschen.

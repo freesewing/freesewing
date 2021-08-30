@@ -1,13 +1,13 @@
 ---
-title: Knit fabric
+title: Tela de tejidos
 ---
 
-![A piece of grey (French Terry) jersey, a knit fabric](fabric.jpg)
+![Un pedazo de jerea gris (Terry Francés), un tejido de tejidos](fabric.jpg)
 
-Knit fabric is fabric that is knitted, rather than woven. Knit fabric typically stretches to some extent.
+El tejido de tejidos es una tela tejida en lugar de tejida. Tejido de tejidos típicamente se estira hasta cierto punto.
 
-While the fabric is knitted, it does not look like knitwear, but like fabric.
+Mientras que el tejido está tejido, no se parece a la ropa de tejido, sino a la tela.
 
-Knit fabric is used in garments where stretch is required. Sewing them is often done with a serger to maintain the stretch in the seams.
+El tejido de tejidos se utiliza en prendas en las que se requiere estiramiento. Cosarlos a menudo se hace con una serpiente para mantener el estiramiento en las costuras.
 
-> Wikipedia has more to say about knits: [Knitted fabric in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
+> Wikipedia tiene más que decir sobre los tejidos: [Tela nitted en Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)

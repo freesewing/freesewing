@@ -1,13 +1,15 @@
-![Cuff drape](cuffdrape.svg)
+![Verschil mouw/manchet](cuffdrape.svg)
 
-How much the end of the sleeve is wider than the wrist.
+Hoeveel breder het uiteinde van de mouw is dan de polsomtrek.
 
 <Note>
 
-This changes the look of the sleeve a bit. 
-More drape makes the sleeve wider and gives you a more *blousy* effect, whereas less drape makes the sleeve more narrow.
+Dit verandert het uitzicht van de mouw een beetje. 
+Meer aftrek maakt de mouw breder en geeft je een meer *blousy* effect, terwijl minder de mouw smal wordt.
 
-The drape will be worked into the cuff with pleats.
+Dit verschil wordt in de manchet verwerkt met plooien.
 
 </Note>
 
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_cuffdrape_sample.svg "Effect van deze optie op het patroon")

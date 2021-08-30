@@ -2,6 +2,6 @@
 title: Handgelenksumfang
 ---
 
-The **wrist circumference** measurement is the circumference of your wrist.
+Der **Handgelenkumfang** ist der Umfang deines Handgelenks.
 
-To measure your **wrist circumference**, run the tape measure around your wrist, where your arm joins your hand.
+Um deinen **Handgelenkumfang**zu messen, führe das Bandmaß um deinen Handgelenk herum aus, wo dein Arm deine Hand verbindet.

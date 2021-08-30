@@ -1,2 +1,2 @@
 
-Controls the amount by which the hem is rounded at the front bottom.
+Bepaalt de mate waarin de zoom aan de onderkant wordt afgerond.

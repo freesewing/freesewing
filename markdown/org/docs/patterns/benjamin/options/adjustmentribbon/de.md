@@ -7,3 +7,6 @@ Mit Benjamin kannst du eine traditionelle Fliege mit fester Größe erstellen. U
 Dies ist eine ausgezeichnete Option, wenn du jemanden eine selbst genähte Fliege schenken willst.
 
 </Tip>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_adjustmentribbon_sample.svg "Effekt dieser Option auf das Muster")

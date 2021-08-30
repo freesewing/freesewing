@@ -2,6 +2,10 @@
 title: Hals uitsnijding achteraan
 ---
 
-![The effect of the back neck cutout option on the pattern](sample.png)
+![Het effect van de optie voor de zijkant uitknippen op het patroon](sample.png)
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+De **terughalsknip** optie bepaalt hoe ver de halsopening achteraan wordt uitgesneden.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_backneckcutout_sample.svg "Effect van deze optie op het patroon")

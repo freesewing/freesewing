@@ -1,5 +1,5 @@
 
 ![Taille du revers de la poche poitrine](chestpocketweltsize.svg)
 
-The height of the chest pocket welt.
+La hauteur de la poche thoracique.
 

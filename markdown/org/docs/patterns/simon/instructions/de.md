@@ -1,651 +1,651 @@
 
 <Tip>
 
-##### Follow the sew-along with Kelly and Julian
+##### Folgen Sie dem Nähen mit Kelly und Julian
 
-Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
-all the steps.
-If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
+Kelly Hogaboom und Julian Collins haben eine Simon(e) mitnäht, und sie haben Videos von
+alle Schritte.
+Wenn Sie dieses Muster herstellen wollen, können Kelly und Julian Ihnen den Weg zum Ende weisen.
 
-You can find all the material's on Kelly's 
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Du findest alle Materialien auf der 
+-Seite von Kelly: [#simonsayssew mit kelly hogaboom-and-julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
-### Step 1: Fuse interfacing
+### Schritt 1: Sicherungsschnittstelle
 
-![Fuse cuff interfacing](1a.png) ![Fuse coller interfacing](1b.png)
+![Fuse Manschettenschnittstelle](1a.png) ![Sicherungskoller-Schnittstelle](1b.png)
 
-#### Press interfacing to cuffs
-To make two cuffs, you have cut out your cuff piece four times in fabric, and twice in interfacing.
+#### Drücken Sie die Schnittstelle zu Manschetten
+Um zwei Manschetten herzustellen, haben Sie Ihr Manschettenstück viermal im Gewebe und zweimal in der Schnittstelle ausgeschnitten.
 
-For each cuff, press the interfacing piece to the bad side of the cuff piece.
+Drücken Sie für jede Manschette das Schnittstück auf die schlechte Seite des Manschettenstücks.
 
-> If the inside and outside of your cuff are the same fabric, it does not matter what cuff piece you press it to.
+> Wenn die Innen- und Außenseite der Manschette der gleiche Stoff sind, spielt es keine Rolle, auf welche Manschette du sie drückst.
 > 
-> However, a popular style detail is to have a different fabric for the inside of the cuff. In this case, make sure to press the interfacing to the piece that you want to be the outside of your cuff.
+> Ein beliebtes Detail im Stil ist jedoch, ein anderes Stoff für die Innenseite der Manschette zu haben. Achten Sie in diesem Fall darauf, die Schnittstelle zu dem Stück zu drücken, das Sie sein wollen, die Außenseite Ihrer Manschette zu sein.
 
-> Depending on what cuff you have chosen, the shape of the cuff will be different.
+> Je nachdem, welche Manschette Sie ausgewählt haben, ist die Form der Manschette unterschiedlich.
 > 
-> In the first illustration, you can see both a round barrel cuff and a French cuff as example.
+> In der ersten Abbildung sehen Sie sowohl eine runde Barrel Manschette als auch eine französische Manschette als Beispiel.
 > 
-> Going forward, the round barrel cuff will be used in the illustrations, but the process is the same for the other cuffs.
+> In den Illustrationen wird die runde Barrel Manschette nach vorn verwendet, aber der Prozess ist der gleiche für die anderen Manschetten.
 
-#### Press interfacing to collar and undercollar, and collar stand
-To make your collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
+#### Druckschnittstelle zu Kragen und Unterkragen und Kragenständer
+Um Ihren Kragen herzustellen, müssen Sie einen Unterkragen, einen Kragen und zwei Kragenständer schneiden. All dies sowohl im Gewebe als auch in der Schnittstelle.
 
-For each piece, press the interfacing piece to the bad side.
+Drücken Sie für jedes Stück auf die schlechte Seite.
 
-### Step 2: Prepare the cuffs
+### Schritt 2: Bereiten Sie die Manschetten vor
 
-#### Sew cuff together
+#### Nähschicht zusammen
 
-![Sew the cuffs together](2a.png)
+![Nähe die Manschetten zusammen](2a.png)
 
-Place both parts of your cuff (one with interfacing, one without) together with the good sides, and sew them together at the standard seam allowance.
+Platzieren Sie beide Teile Ihrer Manschette (eine mit Schnittstelle, eine ohne Schnittstelle) zusammen mit den guten Seiten und nähen Sie sie an der Standardnaht zusammen.
 
-> **Make sure to**
+> **Achten Sie auf**
 > 
-> - Do not sew together the side that we will attach to the sleeve later
-> - Stop at the seam allowance distance from the edge on the sleeve side
+> - Nähen Sie nicht die Seite, die wir später an den Ärmel befestigen werden
+> - Stoppe am Abstand der Naht von der Kante auf der Ärmelseite
 
-#### Trim seam allowance
+#### Nahtzuweisung kürzen
 
-![Trim the seam allowance](2b.png)
+![Nahtzuweisung kürzen](2b.png)
 
-Before we are going to flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Bevor wir Ihre Manschette umdrehen wollen, müssen wir die Nahtzuweisung kürzen, um die Menge zu entfernen.
 
-#### Press back seam allowance
+#### Drücken Sie die Naht zurück
 
-![Press back seam allowance](2c.png)
+![Drücken Sie die Naht zurück](2c.png)
 
-Fold back the seam allowance on the sleeve side, and press it down.
+Falten Sie die Nahtzuweisung auf der Ärmelseite zurück und drücken Sie sie nach unten.
 
-> If you sewed too far along the edge earlier, you will have to unpick a few stitches.
+> Wenn man früher zu weit am Rand genäht ist, muss man ein paar Nähte aufnehmen.
 
-#### Turn cuff around and press
+#### Schalte Manschette um und drücke
 
-![Turn the cuff around and press](2d.png)
+![Drehe die Manschette um und drücke](2d.png)
 
-Flip your cuff with the good sides out, and give it a good press.
+Drehen Sie Ihre Manschette mit den guten Seiten aus, und geben Sie ihr eine gute Presse.
 
-> When pressing your cuffs, make sure to role the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> Beim Drücken der Manschetten Achten Sie darauf, die Naht ein bisschen auf die Rückseite der Manschette zu spielen, um zu gewährleisten, dass das innere Gewebe der Manschette nicht sichtbar ist.
 
-You can now put your cuffs aside, we'll attach them later.
+Du kannst nun deine Manschetten beiseite, wir werden sie später anhängen.
 
-### Step 3: Prepare the collar
+### Schritt 3: Bereiten Sie den Kragen vor
 
-#### Sew collar and undercollar together
+#### Nähen Kragen und Unterkragen zusammen
 
-![Sew collarand undercollar together](3a.png)
+![Nähen Kragen Unterkragen zusammen](3a.png)
 
-Place both collar parts together with the good sides, and sew them together at the standard seam allowance.
+Legen Sie beide Kragenteile mit den guten Seiten zusammen und nähen Sie sie an der Standardnahtzugabe.
 
-#### Trim seam allowance
+#### Nahtzuweisung kürzen
 
-![Trim the seam allowance](3b.png)
+![Nahtzuweisung kürzen](3b.png)
 
-Before we are going to flip your collar over, we need to trim back the seam allowance to remove bulk.
+Bevor wir Ihren Kragen umdrehen wollen, müssen wir die Nahtzuweisung kürzen, um die Menge zu entfernen.
 
-#### Turn collar and press
+#### Kragen drehen und drücken
 
-![Turn the collar and press](3c.png)
+![Kragen drehen und drücken](3c.png)
 
-Flip your collar with the good sides out, get those tips as pointy as possible, and give it a good press.
+Drehen Sie Ihren Kragen mit den guten Seiten aus, erhalten Sie diese Tipps so Pointy wie möglich, und geben Sie ihm eine gute Presse.
 
-> When pressing your collar, remember that the undercollar is a bit more narrow.
+> Wenn Sie den Kragen drücken, denken Sie daran, dass der Unterkragen etwas enger ist.
 > 
-> When you align the non-sewn sides, this will cause the seam to roll towards the backside of the collar to guarantee that the inner fabric of the collar is not visible.
+> Wenn du die nicht genähten Seiten ausrichtest, Dies führt dazu, dass die Naht nach der Rückseite des Kragens rollt, um zu gewährleisten, dass die Innenstruktur des Kragens nicht sichtbar ist.
 
-#### Top-stitch collar
+#### Obere Stickkragen
 
-![Top-stitch the collar](3d.png)
+![Oberer Stich den Kragen](3d.png)
 
-Top-stitch along the edge of the collar. This locks down the seam allowance and makes for a crisp look.
+Obere Naht am Rand des Kragens. Dadurch wird die Nahtzulage versperrt und ein knuspriges Aussehen erreicht.
 
-> How far you top-stitch from the edge is a style choice. It's often a bit less than the standard seam allowance. Have a look at some existing shirts to get an idea.
+> Wie weit Sie von der Kante oben sticken, ist eine Stilauswahl. Es ist oft ein bisschen weniger als die Standard Nahtzugabe. Werfen Sie einen Blick auf einige bestehende Hemden, um sich eine Idee zu machen.
 
-### Step 4: Join collar and collar stand
+### Schritt 4: Kragen- und Kragenstand verbinden
 
-#### Place collar between collar stands and baste in place
+#### Platziere Kragen zwischen Kragen und Baste an Ort
 
-![Place collar between collar stands and baste in place](4a.png)
+![Platziere Kragen zwischen Kragen und Baste an Ort](4a.png)
 
-Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
+Markieren Sie den Mittelpunkt des Kragens und der Kragen steht mit einem Pin. Der mittlere Punkt jedes Kragenständers ist eigentlich etwas außerhalb der Mitte, da das eine Ende länger als das andere ist. Stattdessen finden Sie den mittleren Punkt zwischen den beiden Noten.
 
-First place a collar stand with the good side up, then your collar with the undercollar facing up (and the non-sewn side at the top), and finally the second collar stand with the good side down.
+Platziere zuerst einen Kragen mit der guten Seite nach oben, dann deinen Kragen mit dem nach oben gerichteten Unterkragen (und die nicht genähte Seite oben), und schließlich der zweite Kragen stehen mit der guten Seite.
 
-You collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
+Ihr Kragen sollte zwischen Ihren beiden Kragenständern sitzen, und die Mitten (wo Sie Ihren Steg platziert haben) sollten ausgerichtet sein.
 
-> The way things look will depend a little bit on your collar choices, but in general your collar is going to bend downward, and your collar stand will bend upward.
+> Die Art und Weise, wie die Dinge aussehen, hängt ein wenig von Ihrer Kragenauswahl ab, aber im Allgemeinen wird Ihr Kragen nach unten gebogen, und Ihr Kragenstand wird nach oben gebogen.
 > 
-> To align this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
+> Um das alles in Einklang zu bringen, werden wir das zusammenfügen und nicht anpinnen. Ihr Kragen ist ein wichtiger Teil Ihres Hemdes, daher lohnt es sich, diese zu backen.
 
-First, replace the pins marking the middle with a pin that pins all parts together.
+Ersetzen Sie zunächst die Pins mit der Markierung der Mitte durch einen Pin, der alle Teile zusammenpinnt.
 
-Now, start basting from this pin and work your way to the corner of the collar, making sure to align both edges of the fabric.
+Nun beginnen Sie mit dem Basten von diesem Pin und arbeiten Sie Ihren Weg in die Ecke des Kragens, um sicherzustellen, dass beide Kanten des Stoffes.
 
-When you reach the corner of your collar, keep going and baste the end of both collar stands together.
+Wenn Sie die Ecke des Kragens erreichen, gehen Sie weiter und ziehen Sie das Ende der beiden Kragen zusammen.
 
-When you've done one side, start from your pin in the middle again and do this other side. When you're done basting, you can take out the pin.
+Wenn Sie eine Seite gemacht haben, beginnen Sie wieder von Ihrem Pin in der Mitte und tun Sie diese andere Seite. Wenn Sie mit dem Basten fertig sind, können Sie den Pin herausnehmen.
 
-#### Sew your collar to the collar stands
+#### Nähen Sie Ihren Kragen an den Kragenständern
 
-![Sew your collar to the collar stands](4b.png)
+![Nähen Sie Ihren Kragen an den Kragenständern](4b.png)
 
-Sew along the edge of your collar stand, respecting the standard seam allowance.
+Nähen Sie am Rand Ihres Kragenständers unter Einhaltung der üblichen Nahtzugabe.
 
-> Make sure to stop 2cm before the edge (twice the standard seam allowance) as we'll be folding the seam allowance over in the next step, and we need to leave the collar stands separated enough to slide the shirt in between them later.
+> Achten Sie darauf, 2 cm vor der Kante zu stoppen (doppelt so viel wie die Standardnahterlaubnisse), da wir im nächsten Schritt die Naht überklappen. und wir müssen die Kragenständer ausreichend voneinander getrennt lassen, um das Hemd später zwischen ihnen hineinzurutschen.
 
-#### Fold back and press the collar stand seam allowance
+#### Kantennahterlaubnis nach hinten drücken und den Kragen drücken
 
-Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
+Falten Sie die Naht des Kragenständers auf der nicht genähten Seite zurück und drücken Sie sie nach unten.
 
-> In the center part, pressing down the seam allowance will be easy. But towards the tips of your collar, doing so will be tricky without pressing folds in your collar.
+> Im mittleren Teil wird das Drücken des Nahtzuges leicht sein. Aber in Richtung der Spitzen Ihres Kragens, wird dies ohne Drücken von Falten in Ihrem Kragen schwierig sein.
 > 
-> Press is as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
+> Drücken ist so gut wie möglich, ohne Falten in Ihrem Kragen. Wir drücken dies erneut, nachdem wir den Kragen raus geworfen haben.
 
-#### Turn collar stand and press
+#### Kragenstand drehen und drücken
 
-![Turn collar and press](4c.png)
+![Kragen drehen und drücken](4c.png)
 
-Flip your collar stand with the good sides out, and give it a good press. Make sure to keep the seam allowance on the collar stand folded inwards.
+Drehen Sie Ihren Kragen mit den guten Seiten aus, und geben Sie ihm eine gute Presse. Achten Sie darauf, dass die Naht auf dem Kragenständer nach innen gefaltet bleibt.
 
-You can now put your collar aside, we'll attach it later.
+Sie können jetzt Ihren Kragen beiseite, wir befestigen ihn später.
 
-### Step 5: Optional: Sew in your label
+### Schritt 5: Optional: Nähen in Ihrem Label
 
-![Sew in your label](5.png)
+![Nähen in Ihrem Label](5.png)
 
-Our next step is to attach the yoke. But the yoke is a great place to put your label. So if you'd like to do that, we might as well start with that.
+Unser nächster Schritt ist, das Joch zu befestigen. Aber das Joch ist ein großartiger Ort, um Ihr Label zu setzen. Wenn Sie das also tun möchten, können wir damit anfangen.
 
-Pick one yoke, and you can sew your label on it in the center (on the good side).
+Wählen Sie ein Joch und Sie können Ihr Etikett in der Mitte (auf der guten Seite) nähen.
 
-### Step 6: Join the yokes to the back
+### Schritt 6: Trete den Yokes auf die Rückseite ein
 
-![Join the yokes to the back](6a.png) ![Press the yoke](6a.png)
+![Betritt die Yokes auf die Rückseite](6a.png) ![Drücke das Joch](6a.png)
 
-Place one yoke with the good side up. On top of that, place your back with the good side up, aligning the seam where it needs to be attached to the yoke.
+Platziere ein Joch mit der guten Seite. Darüber hinaus legen Sie den Rücken mit der guten Seite nach oben, indem Sie die Naht dort ausrichten, wo sie am Joch angebracht werden muss.
 
-Finally, place your second yoke on top of the back, but with the good side down.
+Schließlich, platzieren Sie Ihr zweites Joch auf den Rücken, aber mit der guten Seite.
 
-You back should now be sandwiched between the good sides of your two yokes.
+Du solltest jetzt zwischen den guten Seiten deiner beiden Yokes gefickt werden.
 
-If that's the case, sew them in place along the back/yoke seam, making sure to respect the seam allowance.
+Wenn dies der Fall ist, nähen Sie sie entlang der Rückennähte und achten Sie darauf, dass die Nahtzuweisung eingehalten wird.
 
-> If you added a label in step 1, make sure to put the yoke with your label at the bad side of your back.
+> Wenn Sie ein Label in Schritt 1 hinzugefügt haben, stellen Sie sicher, dass das Joch mit Ihrem Label auf die schlechte Seite des Rückens gesetzt wird.
 
-When you're done, don't forget to give it a good press to make the seam lie flat.
+Wenn Sie fertig sind, vergessen Sie nicht, ihm eine gute Presse zu geben, um die Naht flach zu machen.
 
-### Step 7: Edge-stitch the yoke
+### Schritt 7: Kantenstich das Joch
 
-![Edge-stitch the yoke](7.png)
+![Kantenstich das Joch](7.png)
 
-With your yokes attached to the back, we are going to edge-stitch along the seam we just made, on the yoke side.
+Mit Ihren Jokes auf der Rückseite werden wir Kantenstich entlang der Naht, die wir gerade gemacht haben, auf der Joch Seite.
 
-> Fold the inner yoke out of the way. Our edge stitching will catch outer yoke, back and all the seam allowances, but not the inner yoke.
+> Falte den inneren Joch aus dem Weg. Unsere Kantenheftungen fangen äußeren Jumps, Rücken und alle Nahtzustände, aber nicht das innere Joch an.
 
-Just sew right next to the seam joining the outer yoke to the back.
+Nähen Sie einfach direkt neben der Naht und verbinden Sie das äußere Joch zur Rückseite.
 
-> Edge-stitching is like top-stitching, but right next to the seam
+> Kantenstich ist wie oben geheftet, aber direkt neben der Naht
 
-### Step 8: Close the back darts
+### Schritt 8: Hintergrunddarts schließen
 
-![Fold the back with good sides together to close the darts](8a.png) ![Sew the darts](8b.png) ![Press darts towards the side seams](8c.png)
+![Falte den Rücken mit guten Seiten zusammen, um die Darts zu schließen](8a.png) ![Nähen Sie die Darts](8b.png) ![Drücken Sie Dämpfe in Richtung Seitennaht](8c.png)
 
-> Depending on your measurements, your pattern might not have back darts at all. In that case, proceed to the next step.
+> Abhängig von Ihren Messungen kann es sein, dass Ihr Muster überhaupt keine Rückendarts hat. In diesem Fall fahren Sie mit dem nächsten Schritt fort.
 
-Your pattern may or may not have back darts. If it has them, you should close them now.
+Ihr Muster kann Rückendart haben oder nicht. Wenn er sie hat, sollten Sie sie jetzt schließen.
 
-Place your back down with the good side up, and fold it back from the side seam so the fold runs from the top to the bottom of your dart.
+Platziere deinen Rücken mit der guten Seite nach oben und falten Sie es von der Seitennaht zurück, so dass die Falte von oben bis unten läuft.
 
-Do the same for the other dart, so that both sides are folded back.
+Machen Sie das gleiche für den anderen Dart, so dass beide Seiten geklappt werden.
 
-Feel free to gently press in this crease, it will help you to neatly sew the darts.
+Fühlen Sie sich frei zu drücken in dieser Kreise, es wird Ihnen helfen, sauber nähen die Darts.
 
-Sew across the line marking the dart to close the darts. Be careful to make sure the top and bottom of your darts are precisely where they need to be. If one dart sits higher than the other, it will look bad.
+Nähen Sie über die Linie, die den Dart markiert, um die Darts zu schließen. Achten Sie darauf, dass die Darts oben und unten genau dort sind, wo sie sein müssen. Wenn der eine Dart höher sitzt als der andere, wird er schlecht aussehen.
 
-When you're done, don't forget to give it a good press. Press the extra fabric of the dart towards the side seams.
+Wenn du fertig bist, vergiss nicht, ihm eine gute Presse zu geben. Drücken Sie den zusätzlichen Stoff des Darts in Richtung der Seitennaht.
 
-### Step 9: Prepare the button placket
+### Schritt 9: Bereiten Sie den Tastenplatz vor
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to [Fold the button placket](#fold-the-button-placket).
+> Wenn du einen Platz gewählt hast, kannst du die ersten beiden Unterschritte überspringen und zum [Button-Platzhalter](#fold-the-button-placket) Falten gehen.
 
-#### Sew on the button placket
+#### Nähen auf Knopf-Platzhalter
 
-![Sew on the button placket](9a.png)
+![Nähen auf Knopf-Platzhalter](9a.png)
 
-If you have chosen a separate button placket, sew it to the Front Right piece.
+Wenn Sie eine separate Schaltflächenplatzierung gewählt haben, nähen Sie sie auf das Stück vorne rechts.
 
-Place the Front Right (piece 1) down with the good side up, and place the Button Placket (piece 1b) on top of it with the good side down, making sure to align the seam.
+Platziere die Vorderseite rechts (Teil 1) mit der guten Seite nach oben und platzieren Sie den Button Placket (Teil 1b) mit der guten Seite nach unten, um die Naht auszurichten.
 
-Sew it in place with the default seam allowance.
+Nähen Sie es mit der standardmäßigen Nahtzugabe.
 
-#### Press seam allowance to placket side
-Place your front with the good side down, and press the seam allowance to the button placket side.
+#### Drücken Sie Nahtzugriff auf die Platzierungsseite
+Platzieren Sie Ihre Vorderseite mit der guten Seite nach unten und drücken Sie die Nahtmenge auf die Tastenseite.
 
-#### Fold the button placket
+#### Tastenplatzierung falten
 
-![Fold the button placket](9b.png)
+![Tastenplatzierung falten](9b.png)
 
-Now, fold over the button placket on the first fold line, and press this fold in place.
+Nun falten Sie über die Tastenplatzierung auf der ersten Faltlinie, und drücken Sie diese Falte an der Stelle.
 
-Then, fold the placket over again, making sure to have the fabric extend just beyond the seam that joins your placket to the front.
+Dann falten Sie die Platte noch einmal und sorgen Sie dafür, dass der Stoff sich über die Naht hinaus ausdehnt, die Ihr Platz an der Vorderseite verbindet.
 
-When you're happy, press the folded placket.
+Wenn Sie zufrieden sind, drücken Sie die gefaltete Platte.
 
-#### Sew down the folded placket
+#### Nähen Sie den gefalteten Platzhalter
 
-![Sew down the folded placket](9c.png)
+![Nähen Sie den gefalteten Platzhalter](9c.png)
 
-> This is the classic approach. If you have chosen the seamless Button placket style, you don't have to do this.
+> Das ist der klassische Ansatz. Wenn Sie den nahtlosen Schaltflächen-Stil gewählt haben, müssen Sie das nicht tun.
 > 
-> Rather than sew the placket down, simply leave it folded. The folds will be secured in place when we attach the buttons later.
+> Anstatt die Platte zu nähen, lassen Sie sie einfach falten. Wenn wir die Tasten später befestigen, werden die Falten gesichert.
 
-From the good side of your shirt, sew down the folded placket by stitching in the ditch.
+Von der guten Seite Ihres Hemdes nähen Sie das gefaltete Plakat durch Nähen im Graben.
 
-To do so, sew exactly on top of your earlier seam. Since you folded the fabric of your placket a bit passed this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+Um dies zu tun, nähen Sie genau auf Ihrer früheren Naht. Da Sie den Stoff Ihres Platzes ein bisschen an dieser Naht gefaltet haben, wird er auf der Rückseite gefangen fixieren Sie Ihren gefalteten Platzhalter und verschließen Sie die Naht innerhalb des Platzes.
 
 
-### Step 10: Prepare the buttonhole placket
+### Schritt 10: Bereiten Sie das Buttonhole Placket vor
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket.
+> Wenn Sie einen ausgewachsenen Platz gewählt haben, können Sie die ersten beiden Unterschritte überspringen und einen klassischen Knopflochplatz verstehen.
 
-#### Sew on the buttonhole placket
+#### Nähen auf dem Knopflochplatz
 
-![Sew on the butonhole placket](10a.png)
+![Nähen auf dem Butonlochplatz](10a.png)
 
-If you have chosen a separate buttonhole placket, sew it to the Front Left piece.
+Wenn Sie einen separaten Knopflochplatz gewählt haben, nähen Sie ihn in das Stück vorne links.
 
-Place the Front Left (piece 2) down with the good side up, and place the Buttonhole Placket (piece 2b) on top of it with the good side down, making sure to align the seam.
+Platziere die Vorderseite links (Teil 2) mit der guten Seite nach oben und platzieren Sie das Buttonhole Placket (Teil 2b) mit der guten Seite, um die Naht auszurichten.
 
-Sew it in place with the default seam allowance.
+Nähen Sie es mit der standardmäßigen Nahtzugabe.
 
-When you're done, don't forget to give it a good press. Press the seam allowance towards the placket side.
+Wenn du fertig bist, vergiss nicht, ihm eine gute Presse zu geben. Drücken Sie die Nahtmenge auf die Seitenseite.
 
-#### Press seam allowance to the placket side
-Place your front with the good side down, and press the seam allowance to the buttonhole placket side.
+#### Drücken Sie die Naht Erlaubnis auf die Platzhalterseite
+Platzieren Sie Ihre Vorderseite mit der guten Seite nach unten und drücken Sie die Nahtzuweisung auf die Seite des Buttonlochs.
 
-#### Understanding a classic buttonhole placket
+#### Ein klassisches Knopflochplacket verstehen
 
-> If you have chosen a seamless placket, you should follow the steps of the button placket, as the construction is identical.
+> Wenn Sie ein nahtloses Platzieren gewählt haben, sollten Sie die Schritte der Tastenplatzierung befolgen, da die Konstruktion identisch ist.
 > 
-> The steps below are for a classic buttonhole placket.
+> Die folgenden Schritte sind für einen klassischen Knopflochplatz vorgesehen.
 
-![Understanding a classic buttonhole placket](10b.png)
+![Ein klassisches Knopflochplacket verstehen](10b.png)
 
-Your placket has a bunch of lines on it, so let's first clarify what they are:
+Ihr Platzhalter hat einen Haufen Zeilen, also lassen Sie uns zuerst klarstellen, was sie sind:
 
- - The buttonhole line has long dashes with buttonholes on it. It marks where the buttonholes should go
- - The two fold lines have long dashes and sit at an equal distance right and left of the buttonhole line
- - The two+two sew lines are dotted lines that sit at an equal distance of each fold line
+ - Die Knopflochlinie hat lange Bindestriche mit Knöpfen. Es markiert, wohin die Buttonlöcher gehen sollen
+ - Die beiden Faltlinien haben lange Bindestriche und sitzen in gleicher Entfernung rechts und links von der Tastenlochlinie
+ - Die zwei+zwei Nählinien sind gepunktete Linien, die in gleicher Entfernung jeder Faltlinie sitzen
 
-#### Trim back seam allowance
+#### Rückennahterlaubnis kürzen
 
-> If you have chosen a grown-on placket, this does not apply.
+> Wenn Sie einen ausgewachsenen Platz gewählt haben, gilt dies nicht.
 
-![Trim back seam allowance](10c.png)
+![Rückennahterlaubnis kürzen](10c.png)
 
-The seam allowance of where you sewed your buttonhole placket to your front should fit inside your folded placket.
+Die Nahtzugabe, wo Sie Ihren Knopflochplatz auf der Vorderseite genäht haben, sollte in Ihren gefalteten Platz passen.
 
-For that, trim back the seam allowance so that it doesn't extend beyond the first fold line on the placket.
+Dazu die Nahtzuweisung zurückdrehen, so dass sie nicht über die erste Faltlinie auf dem Platzhalter hinausgeht.
 
-#### Fold the buttonhole placket
+#### Knöpfchen-Platzhalter falten
 
-![Fold the buttonhole placket](10d.png) ![Fold the buttonhole placket again](10e.png)
+![Knöpfchen-Platzhalter falten](10d.png) ![Knöpfchen erneut einklappen](10e.png)
 
-Fold the placket on the first fold line. Press the fold in place.
+Falten Sie die Platte auf der ersten Faltlinie. Drücken Sie die Falte an der Stelle.
 
-Then, fold the part you just folded again, this time on the second fold line. Press this fold in place too.
+Dann falten Sie das Teil, das Sie gerade wieder gefaltet haben, dieses Mal auf der zweiten Faltlinie. Drücken Sie auch diese Falte.
 
-> When your placket is folded and pressed, place a few pins along the length of your placket to keep things from shifting around
+> Wenn Ihr Platzhalter gefaltet und gedrückt wird, platzieren Sie ein paar Pins entlang der Länge Ihres Platzhalters, um zu verhindern, dass sich die Dinge umdrehen
 
-#### Sew the buttonhole placket
+#### Nähen Sie den Knopflochplatz
 
-![Sew on the first line](10f.png) ![Sew on the second line](10g.png)
+![Nähen in der ersten Zeile](10f.png) ![Nähen in der zweiten Zeile](10g.png)
 
-Sew on the first sew line, closest to the edge.
+Nähen Sie die erste Nählinie, die der Kante am nächsten ist.
 
-Then, flip your shirt over so that the good side is up, and your placket is up too. Then sew on the second sew line.
+Dann drehen Sie Ihr Shirt um, damit die gute Seite aufwärts ist, und Ihr Stick ist auch hoch. Dann nähen Sie an der zweiten Nählinie.
 
-> These two lines of top-stitching will always be visible, so make sure to keep it neat
+> Diese beiden Linien werden immer sichtbar sein, also achten Sie darauf, dass sie sauber bleiben
 
-#### Press the buttonhole placket
+#### Drücken Sie den Knopflochplatz
 
-![Press the buttonhole placket](10h.png)
+![Drücken Sie den Knopflochplatz](10h.png)
 
-Congratulations, you made a classic buttonhole placket.
+Herzlichen Glückwunsch, Sie haben einen klassischen Knopflochplatz gemacht.
 
-Now press that baby. You know you want to.
+Drücke nun das Baby. Sie wissen, dass Sie es wollen.
 
-### Step 11: Close the shoulder seams
+### Schritt 11: Die Schulternähte schließen
 
-> **Let's stuff a burrito**
+> **Lass uns ein Burrito erschaffen**
 > 
-> We are going to close the shoulder seams with a technique that is commonly know as the **burrito method**.
+> Wir werden die Schulternähte mit einer Technik schließen, die allgemein als **Burrito Methode** bekannt ist.
 > 
-> If you are familiar with the burrito method, you already know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
+> Wenn Sie mit der Burrito-Methode vertraut sind, wissen Sie bereits, was zu tun ist. Wenn nicht, lesen Sie weiter für einen geschickten Weg, um die Schulternähte Ihres Hemdes sauber zu schließen und alle unvollendeten Kanten aus dem Blick zu sperren.
 
-#### Pin the fronts to the outside yoke
+#### Pin die Fronten nach außen
 
-![Pin the fronts to the outside yoke](11a.png) ![Pin the fronts to the outside yoke](11b.png)
+![Pin die Fronten nach außen](11a.png) ![Pin die Fronten nach außen](11b.png)
 
-Place your back down with the good side up, but be careful to fold the inner yoke downward (as illustrated by the dotted line.
+Platzieren Sie Ihren Rücken mit der guten Seite nach oben, aber achten Sie darauf, das innere Joch nach unten zu falten (wie die gepunktete Linie veranschaulicht.
 
-Place your fronts on your back, with the good sides down. Pin fronts to the yoke at the shoulder seam, good sides together.
+Legen Sie Ihre Fronten auf den Rücken mit den guten Seiten nach unten. Pin vorne an der Schulternaht, gute Seiten zusammen.
 
-#### Roll, roll, roll your shirt, pin down and sew your seam
+#### Rollen, rollen, Hemd rollen, Nähen und Nähen
 
-![Roll your shift up between the yokes](11c.png)
+![Roll deinen Shift nach oben zwischen den Yokes](11c.png)
 
-Roll up your back and fronts starting at the hem. Roll them into a neat sausage upwards until you can see the entire turned down yoke.
+Roll den Rücken hoch und die Fronten beginnen am Sam. Bringe sie in eine saubere Wurst nach oben, bis du das gesamte abgewiesene Joch sehen kannst.
 
-Now, you can flip the inner yoke over your rolled sausage to align the shoulder seams with the other yoke and fronts.
+Jetzt können Sie das innere Joch über Ihre Walzwurst ziehen, um die Schulternähte mit dem anderen Joch und den anderen Fronten auszurichten.
 
-Pin them in place, and then sew the shoulder seams, making sure to keep your sausage (or burrito stuffing) out of the way so it doesn't get caught in the seam.
+Nähen Sie sie an Ort und nähen Sie dann die Schulternähte, Achten Sie darauf, Ihre Wurst (oder Burrito-Füllung) aus dem Weg zu räumen, damit sie nicht in der Naht gefangen wird.
 
-![Match the notches](11e.png)
+![Passen Sie die Noten](11e.png)
 
-> Made sure to align the actual seam line. Due to the uneven angles at the neck opening, the fabric edge is often longer on one side than on the other.
+> Hergestellt um die aktuelle Nahtlinie auszurichten. Durch die ungleichen Winkel an der Halsöffnung ist der Stoffrand oft länger als auf der anderen Seite.
 > 
-> However, the seamlines are the same lenght, so make sure to match them carfully using the notches.
+> Allerdings sind die Nahtlinien gleich lang, also achten Sie darauf, dass sie mit den Noten sorgfältig aufeinander abgestimmt werden.
 
-#### Flip it inside out through the neck opening
-When you've sewn both shoulder seams, reach in through the neck opening, and pull out the back and front parts to inside-out your burrito.
+#### Innen durch den Nackenöffner drehen
+Wenn Sie beide Schulternaht nähen, erreichen Sie durch die Nackenöffnung und ziehen Sie die Rücken- und Frontteile nach innen aus.
 
-#### Press the shoulder seams
+#### Drücke die Schulternähte
 
-![Press the shoulder seams](11d.png)
+![Drücke die Schulternähte](11d.png)
 
-You did all this work, so now make sure you make it look super sharp by giving it a good press. Make sure that the seam allowance between your yokes lies nice and flat for that.
+Du hast all diese Arbeit gemacht, so jetzt stelle sicher, dass du es super scharf aussiehst, indem du ihm eine gute Presse gibt. Achten Sie darauf, dass die Naht zwischen Ihren Yokes schön und flach ist.
 
-### Step 12: Edge-stitch the shoulder seams of the yoke
+### Schritt 12: Kantenstich die Schulternähte des Joch
 
-![Edge-stitch the shoulder seams of the yoke](12.png)
+![Kantenstich die Schulternähte des Joch](12.png)
 
-Just as we've edge-stitched the bottom seam of the yoke in Step 3, we're going to edge-stitch the yoke at the shoulder seams too.
+So wie wir in Schritt 3 die untere Naht des Joch mit Kanten geheftet haben, werden wir das Joch auch an den Schulternähten einnähen.
 
-Since you've just pressed these shoulder seams, everything should lie nice and flat, and you just need to run a stitch right next to the seam.
+Da Sie gerade diese Schulternaht gedrückt haben, sollte alles schön und flach liegen, und Sie müssen nur einen Stitch direkt neben der Naht betreiben.
 
-> Make sure to edge-stitch on the yoke part, where you will catch all the seam allowance, and not on the front part.
+> Vergewissern Sie sich, dass Sie die Naht nicht auf dem vorderen Teil, sondern auf dem Jokerteil einstichten.
 
-### Step 13: Construct the sleeve placket
+### Schritt 13: Bauen Sie den Ärmelplatz
 
-#### Sew in the cuff guard
+#### Nähen im Manschettenwächter
 
-![Sew in the cuff guard](13a.png) ![Press the cuff guard](13b.png) ![Edge-stitch the cuff guard in place](13c.png)
+![Nähen im Manschettenwächter](13a.png) ![Drücke die Manschette](13b.png) ![Kantenstich den Manschettenwächter](13c.png)
 
- - Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
- - Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
- - Now sew along the fold line marked on the cuff guard, closest to the edge.
+ - Platzieren Sie Ihren Ärmel mit der guten Seite nach unten, und Ihre Manschettenwächter nach oben, auch mit der guten Seite.
+ - Legen Sie den Rand Ihres Manschettenwächters (alias Sleeve Placket Unterklappen) mit dem Schnitt in Ihrem Ärmel, auf der Seite kürzer zur Seitennaht.
+ - Nähen Sie nun entlang der Faltlinie, die auf der Manschettenwand markiert ist, näher an der Kante.
 
-> If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
+> Wenn du beim Ausschnitt deiner Musterstücke nicht in den Ärmel geschnitten hast, an dem der Ärmel eingefügt werden muss Sie müssen das zuerst tun.
 
- - Fold over the cuff guard, and press down this seam.
- - Turn your sleeve over with the good side up, and bring your cuff guard through the slit in your sleeve.
- - Fold it twice on the lines so that the unfinished seam is tucked inwards.
- - Make your folds so that the upper folds sits ever so slightly further than the seam you already made.
- - Press everything down, and then edge-stitch the cuff guard in place.
+ - Falte über die Manschettenwache und drücke diese Naht.
+ - Drehen Sie Ihren Ärmel mit der guten Seite nach oben und bringen Sie Ihre Manschettenwächter durch den Schlitz in den Ärmel.
+ - Falten Sie es zweimal auf die Linien, so dass die unfertige Naht nach innen geklebt ist.
+ - Machen Sie Ihre Falten, so dass die oberen Falten immer so leicht über der Naht sitzen, die Sie bereits gemacht haben.
+ - Drücken Sie alles nach unten und dann Kantenstich die Manschettenwache.
 
-#### Fold and press the placket
+#### Falten und platzieren drücken
 
-![Fold and press the placket](13d.png)
+![Falten und platzieren drücken](13d.png)
 
-Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
+Origami Zeit! Die Überlappung der Ärmel erfolgt mit den markierten Faltlinien als Anleitung. Dies wird viel einfacher sein, wenn Sie zwischen den beiden Seiten drücken.
 
- - First, fold the outer edges of the placket inwards.
- - Next, fold the entire thing double.
- - Then, fold down both tips into a nice pointy shape.
- - Now give it a final good press.
+ - Zuerst die äußeren Kanten des Platzes nach innen falten.
+ - Dann falten Sie das ganze Ding doppelt.
+ - Dann falten Sie beide Spitzen in eine schöne spitzige Form.
+ - Jetzt geben Sie ihr eine letzte gute Presse.
 
 Here's a very short YouTube video of me folding the placket:
 <YouTube id='kgd5eubxShM' />
 
-#### Pin placket in place
+#### Platzhalter an Stelle anheften
 
-![Slide placket in position](13e.png) ![Pin placket in place](13f.png)
+![Folienplatz an Position](13e.png) ![Platzhalter an Stelle anheften](13f.png)
 
-Place your sleeve down with the good side up. The guard we have sewn in earlier sits against the other unfinished fabric edge of where you cut into your sleeve.
+Legen Sie den Ärmel nach unten mit der guten Seite. Die Wache, die wir früher genäht haben, sitzt gegen den anderen unfertigen Stoffrand, wo du in deinen Ärmel geschnitten hast.
 
-Place your placket around that edge, one side above it, one underneath.
+Platzieren Sie Ihr Plakat um diese Kante, eine Seite über ihr, einen darunter.
 
-You need to slide the placket onto your sleeve until the middle of it (the tip) aligns with the cut in your sleeve.
+Sie müssen den Platzhalter auf den Ärmel schieben, bis sich die Mitte des Platzes an den Schnitt im Ärmel orientiert.
 
-The idea is that the placket closes up the unfinished edge, but also covers the guard of the other edge.
+Die Idee ist, dass die Platte die unfertige Kante schließt, aber auch die Wache der anderen Kante bedeckt.
 
-When you've got it where you want it, pin the placket down.
+Wenn Sie es dort haben, wo Sie es wollen, kleben Sie die Platzierung nach unten.
 
-#### Sew the sleeve placket
+#### Nähen Sie den Ärmel Placket
 
-![Sew the sleeve placket](13g.png)
+![Nähen Sie den Ärmel Placket](13g.png)
 
-Start at the edge of the sleeve (the bottom of the sleeve placket) and edge-stitch along the edge upwards.
+Beginnen Sie am Rand des Ärmels (die Unterseite des Ärmelpflasters) und den Kantenstich nach oben.
 
-Go around the tip, and come down again on the other side (the fold side) until you have passed the point where your guard ends.
+Gehen Sie um die Spitze und fahren Sie auf der anderen Seite (die Faltseite), bis Sie den Punkt erreicht haben, an dem Ihre Wache endet.
 
-Then, sew horizontal to the other side of the placket to finish.
+Nähen Sie dann horizontal auf die andere Seite des Platzes zum Beenden.
 
-> I have included an extra illustration here that only shows the outline of the placket. You can see that the end of the guard is caught in our stitching of the placket, and is thus neatly tucked away.
+> Ich habe hier eine zusätzliche Illustration hinzugefügt, die nur die Umrisse des Platzhalters anzeigt. Sie können sehen, dass das Ende der Wache in unserem Heften des Platzes gefangen ist und somit sauber verklebt ist.
 
-### Step 14: Set in sleeves
+### Schritt 14: In Ärmeln setzen
 
-#### Remember, this is a flat-felled seam
+#### Denken Sie daran, dies ist eine flachgelockte Naht
 
-![Aligning the fabric for a flat-felled seam](14c.png)
+![Den Stoff für eine flache Naht ausrichten](14c.png)
 
 
 > **Careful with the extra seam allowance for the flat-felled seam** There is extra seam allowance on the sleeve to allow for the creation of the flat-felled seam.
 > 
-> As such, be careful to not align the fabric edge, but align the seam so that the sleeve sits out 1cm.
+> Seien Sie also darauf bedacht, nicht den Stoffrand auszurichten, sondern die Naht so auszurichten, dass der Ärmel 1 cm aussetzt.
 
-#### Pin shirt in place
+#### Shirt an Ort anheften
 
-![Pin shirt in place](14a.png)
+![Shirt an Ort anheften](14a.png)
 
-Spread your shirt open so that both fronts and back lie flat with their good sides up.
+Verteilen Sie Ihr Shirt offen, so dass sowohl Vorder- als auch Rückseite flach mit ihren guten Seiten nach oben liegen.
 
-Now place your sleeve on top with the good side down, matching the notch at the top of the sleeve with the shoulder seam.
+Legen Sie nun Ihren Ärmel oben mit der guten Seite nach unten, passend zur Oberseite der Ärmel mit der Schulternaht.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the double notch (and cuff guard) on the back side, and the single notch on the front side.
+> Seien Sie vorsichtig, Ihr Ärmel ist nicht symmetrisch, also stellen Sie sicher, die doppelte Noch (und Manschetten) auf der Rückseite zu haben und die einzelne Note auf der Vorderseite.
 > 
-> Also note that the double notches on the back of your sleeve do not have corresponding notches on the back. That's because it should match op with the seam where your yoke joins the back.
+> Beachten Sie auch, dass die doppelten Noten auf der Rückseite des Ärmels keine entsprechenden Noten auf der Rückseite haben. Das liegt daran, dass es Op mit der Naht übereinstimmen sollte, wo Ihr Joch den Rücken verbindet.
 
-You now need to pin the sleeve to the armhole. To do so, make sure to:
+Jetzt musst du den Ärmel an das Armloch anbringen. Um dies zu tun, achten Sie auf:
 
- - Match the start and end of the sleevehead to the start and end of the armhole
- - Match the notches on the sleevehead to the notches on the back and fronts
- - Distribute the sleevecap ease between the notches as shown
+ - Stelle den Anfang und das Ende des Ärmelkopfes an den Anfang und das Ende des Armlochs fest
+ - Passen Sie die Noten auf dem Ärmelkopf an die Noten auf der Rückseite und auf der Vorderseite an
+ - Verteilen Sie die Ärmel Leichtigkeit auf die Noten wie gezeigt
 
-#### Distribute sleavecap ease
+#### Leichtigkeit der Sleavecap verteilen
 
-![Distribute the sleevecap ease](14b.png)
+![Die Ärmel-Leichtigkeit verteilen](14b.png)
 
-The default sleevecap ease for this pattern is 0.5cm. If you have sleevecap ease, you need to distribute that extra length evenly between the notches as shown.
+Die Standard-Ärmel-Leichtigkeit für dieses Muster ist 0,5cm. Wenn Sie die Ärmel bequem haben, müssen Sie diese zusätzliche Länge gleichmäßig auf die Noten verteilen, wie sie gezeigt werden.
 
-> If you are unsure what sleevecap ease is, have a look at the [documentation for the sleevecap ease pattern option](/en/docs/patterns/simon/options#sleevecapEase).
+> Wenn Sie sich nicht sicher sind, welche Leichtigkeit die Ärmel ist, werfen Sie einen Blick in die [-Dokumentation für die Option „Sleevecap ease“-Muster](/en/docs/patterns/simon/options#sleevecapEase).
 
-#### Sew sleeve in armhole
-When you've got your sleeve neatly pinned in your armhole, sew it in place. Be careful to avoid any pleats in the part between the notches where you need to ease in the sleevecap ease.
+#### Ärmel in Armloch nähen
+Wenn du deinen Ärmel ordentlich in dein Armband gesteckt hast, nähe ihn an Platz. Seien Sie vorsichtig und vermeiden Sie Falten im Teil zwischen den Noten, wo Sie in der Ärmel Leichtigkeit erleichtert werden müssen.
 
-> Needless to say, but I'll say it anyway: Repeat this step for the other sleeve.
+> Selbstredend zu sagen, aber ich sage es trotzdem: Wiederholen Sie diesen Schritt für den anderen Ärmel.
 
-### Step 15: Flat-fell armhole seam
+### Schritt 15: Flach fallende Rüstungsnaht
 
-#### Press seam allowance to one side
+#### Drücken Sie die Naht Erlaubnis auf eine Seite
 
-![Press seam allowance to once side](15a.png)
+![Drücken Sie Nahtzuweisung auf einmal](15a.png)
 
-Lay down your freshly sewn sleeve seam with the good side down
+Lege deine frisch genähte Ärmelnaht mit der guten Seite nach unten
 
-We are going to press the seam allowance to one side. To do so, identify the seam allowance that is wider (for the flat-felled seam).
+Wir werden die Nahtzuweisung beiseite schieben. Um dies zu tun, identifizieren Sie die Nahtzugabe, die breiter ist (für die flache Nahtnaht).
 
-The longer seam allowance needs to lie on top of the shorter (standard seam allowance).
+Die längere Nahtmenge muss zusätzlich zu den kürzeren (Standard Nahtzustand) liegen.
 
-Once you have verified that, press down the seam allowance.
+Sobald Sie das überprüft haben, drücken Sie die Nahtzugabe.
 
-#### Fold under extra seam allowance
+#### Unter zusätzlichem Nahtzuwachs falten
 
-![Fold under extra seam allowance](15b.png)
+![Unter zusätzlichem Nahtzuwachs falten](15b.png)
 
-Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
+Nun falten Sie die zusätzliche Nahtzuweisung für die flache Naht unter der üblichen Nahtzugabe.
 
-You can use pins to hold this in place, but it's simpler to just press it.
+Du kannst die Pins verwenden, um sie an der Stelle zu halten, aber es ist einfacher, sie einfach zu drücken.
 
-> This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
+> Das wird relativ einfach an den geraden Teilen der Naht sein, aber etwas komplizierter an den gebogenen Abschnitten. Nehmen Sie sich Zeit, und bei Bedarf können Sie in die zusätzliche Nahtmenge schneiden, um es zu ermöglichen, offen oder biegen.
 
-#### Sew the flat-felled seam
-Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
+#### Nähen Sie die flachgeschlagene Naht
+Von der schlechten Seite des Stoffes aus nähen Sie die Nahtzufuhr an der Kante, wo sie unter die andere Nahtzulage gefaltet ist.
 
-Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
+Wichtig ist hier, um eine gleichmäßige Distanz von der Naht Ihres Ärmels zu halten. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
 
-> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> Es ist wichtiger, die Ärmelnaht zu halten und sogar zu entfernen, als genau am Fadenrand zu nähen. Im Idealfall sitzt die Falte ohnehin in gleichmäßiger Entfernung, aber wenn nicht, vergewissern Sie sich, dass sie parallel zur Ärmelnaht näht. Auch wenn das bedeutet, dass Sie ein bisschen von der gefalteten Kante abweichen.
 
-#### Press the flat-felled seam
-When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
+#### Drücke die flache Naht
+Wenn alles erledigt ist, drücken Sie die flachgeschliffene Naht von der guten Seite, so dass sie schön und flach liegt.
 
-### Step 16: Close the side/sleeve seams
+### Schritt 16: Schließen Sie die Seiten/Ärmel Nähte
 
-![Close the side/sleeve seams](16a.png) ![Remember, this is a flat-felles seam](16b.png)
+![Seite/Ärmel Nähte schließen](16a.png) ![Denken Sie daran, dies ist eine Flat-Felles Naht](16b.png)
 
-Place your shirt with the good sides together, and sew the side and sleeve seams to close the shirt.
+Platzieren Sie Ihr Shirt mit den guten Seiten zusammen, und nähen Sie die Seite und die Ärmel Nähte, um das Hemd zu schließen.
 
-> There is extra seam allowance on the sleeve and front sides to allow for the creation of the flat-felled seam. As such, be careful to not align the fabric edge, but align the seam so that the extra seam allowance sits out 1cm.
+> Auf den Ärmeln und den Vorderseiten wird ein zusätzlicher Nahtzuschlag gewährt, um die flache Naht herzustellen. Achten Sie daher darauf, den Stoffrand nicht auszurichten, sondern die Naht so auszurichten, dass die zusätzliche Nahtmenge 1 cm beträgt.
 
-### Step 17: Flat-fell the side/sleeve seams
+### Schritt 17: Flach fiel die Seite/Ärmel Nähte
 
-#### Press seam allowance to one side
+#### Drücken Sie die Naht Erlaubnis auf eine Seite
 
-![Press the seam allowance to one side](15a.png)
+![Drücken Sie die Nahterlaubnis auf eine Seite](15a.png)
 
-We are going to press the seam allowance to one side. To do so, identify the seam allowance that is wider (for the flat-felled seam).
+Wir werden die Nahtzuweisung beiseite schieben. Um dies zu tun, identifizieren Sie die Nahtzugabe, die breiter ist (für die flache Nahtnaht).
 
-The longer seam allowance needs to lie on top of the shorter (standard seam allowance).
+Die längere Nahtmenge muss zusätzlich zu den kürzeren (Standard Nahtzustand) liegen.
 
-Once you have verified that, press down the seam allowance.
+Sobald Sie das überprüft haben, drücken Sie die Nahtzugabe.
 
-#### Fold under extra seam allowance
+#### Unter zusätzlichem Nahtzuwachs falten
 
-![Fold under extra seam allowance](15b.png)
+![Unter zusätzlichem Nahtzuwachs falten](15b.png)
 
-Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
+Nun falten Sie die zusätzliche Nahtzuweisung für die flache Naht unter der üblichen Nahtzugabe.
 
-You can use pins to hold this in place, but it's simpler to just press it.
+Du kannst die Pins verwenden, um sie an der Stelle zu halten, aber es ist einfacher, sie einfach zu drücken.
 
-> This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
+> Das wird relativ einfach an den geraden Teilen der Naht sein, aber etwas komplizierter an den gebogenen Abschnitten. Nehmen Sie sich Zeit, und bei Bedarf können Sie in die zusätzliche Nahtmenge schneiden, um es zu ermöglichen, offen oder biegen.
 
-#### Sew the flat-felled seam
-Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
+#### Nähen Sie die flachgeschlagene Naht
+Von der schlechten Seite des Stoffes aus nähen Sie die Nahtzufuhr an der Kante, wo sie unter die andere Nahtzulage gefaltet ist.
 
-Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
+Wichtig ist hier, um eine gleichmäßige Distanz von der Naht Ihres Ärmels zu halten. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
 
-> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> Es ist wichtiger, die Ärmelnaht zu halten und sogar zu entfernen, als genau am Fadenrand zu nähen. Im Idealfall sitzt die Falte ohnehin in gleichmäßiger Entfernung, aber wenn nicht, vergewissern Sie sich, dass sie parallel zur Ärmelnaht näht. Auch wenn das bedeutet, dass Sie ein bisschen von der gefalteten Kante abweichen.
 
-#### Press the flat-felled seam
-When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
+#### Drücke die flache Naht
+Wenn alles erledigt ist, drücken Sie die flachgeschliffene Naht von der guten Seite, so dass sie schön und flach liegt.
 
-### Step 18: Attach cuffs to sleeves
+### Schritt 18: Befestige Manschetten an Ärmel
 
-#### Pin cuff in place
+#### Pin Manschette an Stelle
 
-![Pin cuff in place](18a.png)
+![Pin Manschette an Stelle](18a.png)
 
-You need to insert the sleeve between the two layers of your cuff, making sure that that good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
+Sie müssen den Ärmel zwischen den beiden Ebenen Ihrer Manschette einfügen, stellen Sie sicher, dass diese gute Seite des Stoffes gegen die Seite Ihrer Manschette sitzt, die die Schnittstelle auf sie angewendet wird.
 
-You will need to pin this in place, because depending on how long your sleeve placket is, it might be hard or even impossible to get this to lie flat.
+Sie müssen diesen Platz anpinnen, denn je nachdem, wie lange Ihr Sleeve-Placket ist, Es könnte schwierig oder gar unmöglich sein, diese zu flachen.
 
-Also note that your sleeve edge will be longer than your cuff (how much longer depends on the sleeve drape). You need to make one or a few folds in your sleeve to accommodate for this.
+Beachten Sie auch, dass Ihre Ärmelkante länger als Ihre Manschette ist (wie viel länger hängt von der Ärmel Drape). Du musst ein oder ein paar Falten in deinem Ärmel herstellen, um dafür zu passen.
 
-> Your pattern contains helplines on the sleeve to help you place to folds.
+> Ihr Muster enthält Helplines auf dem Ärmel, die Ihnen helfen zu falten.
 
-> Take your time to pin everything carefully in place. We are going to edge-stitch this later, so it's important that front and back of your cuff align nicely.
+> Nehmen Sie sich Zeit, alles sorgfältig zu fixieren. Wir werden das später noch einsticken, so dass es wichtig ist, dass Vorder- und Rückseite deiner Manschette gut aufeinander abgestimmt sind.
 
-#### Edge-stitch cuffs to sleeves
+#### Kantenstich Manschetten an Ärmel
 
-![Edge-stitch cuffs to sleeves](18b.png)
+![Kantenstich Manschetten an Ärmel](18b.png)
 
-Once everything is pinned in place, edge stitch along the edge of your cuff to attach it to your sleeve.
+Sobald alles fixiert ist, wird der Rand am Rand der Manschette geheftet, um sie an der Ärmel zu befestigen.
 
-It's important to catch both outer and inner layer of your cuff on the edge.
+Es ist wichtig, sowohl die äußere als auch die innere Schicht deiner Manschette an der Kante zu fangen.
 
-> Make sure to edge-stitch from the outer layer side (the good side of your sleeve) and keep it parallel with your cuff edge.
+> Vergewissern Sie sich, dass die Kantenstich von der Außenseite (die gute Seite des Ärmels) und halten Sie sie parallel zur Manschettenkante.
 
-When you're done, give your cuffs a good press.
+Wenn du fertig bist, gib deinen Manschetten eine gute Presse.
 
-#### Top-stitch the cuffs
+#### Obere Stich die Manschetten
 
-![Top-stitch the cuffs](18c.png)
+![Obere Stich die Manschetten](18c.png)
 
-> Make sure to press your cuffs before you do this.
+> Drücken Sie Ihre Manschetten bevor Sie dies tun.
 
-Top-stitch around your cuff at a distance from the edge that is a bit less than your seam allowance. Go all the way around your cuff.
+Hochsticheln um die Manschette in einem Abstand vom Kantenrand, das etwas geringer ist als die Nahtzugabe. Gehen Sie den ganzen Weg um Ihre Manschette.
 
-### Step 19: Attach the collar
+### Schritt 19: Den Kragen anhängen
 
-#### Baste collar in place
+#### Kragen an Ort einfügen
 
-![Baste collar in place](19a.png)
+![Kragen an Ort einfügen](19a.png)
 
-This is an important seam, so we are going to baste this in place to make sure it sits exactly right before we sew it.
+Dies ist eine wichtige Naht, daher werden wir diese an der richtigen Stelle platzieren, um sicherzustellen, dass sie genau richtig sitzt, bevor wir sie nähen.
 
-Start at the center back, and place the seam allowance of your back part between your two collar stands. Work your way around one side, and then do the other.
+Beginnen Sie mit der Mitte zurück und legen Sie die Naht des Rückenteils zwischen Ihren beiden Kragenständern. Bearbeite dich um die eine Seite herum und dann die andere.
 
-Make sure to respect the standard seam allowance and - important - avoid any wrinkles.
+Achten Sie darauf, dass Sie die reguläre Nahtzuweisung respektieren und - wichtig - jegliche Falten vermeiden.
 
-> While your collar stand is relatively straight, we are going to sew it to what is essentially a hole in your shirt.
+> Während Ihr Kragenständer relativ geradlinig ist, werden wir es zu einem im Grunde genommen Loch in Ihrem Hemd nähen.
 > 
-> That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
+> Das ist ein bisschen kompliziert, also achten Sie besonders auf die Teile, die am meisten gekrümmt sind: wo der Rücken verbindet die Fronten.
 
-#### Edge-stitch collar in place
+#### Kantenstichkragen an Stelle
 
-![Edge-stitch collar in place](19b.png) ![Edge-stitch collar in place](19c.png)
+![Kantenstichkragen an Stelle](19b.png) ![Kantenstichkragen an Stelle](19c.png)
 
-When you're happy with how you've basted your collar in place, it's time to sew that thing down.
+Wenn du zufrieden bist mit der Art und Weise, wie du deinen Kragen an Ort und Stelle verankert hast, ist es an der Zeit, diese Sache nach unten zu nähen.
 
-We're going to start at center-back and sew all the way around the collar stand.
+Wir beginnen am Mitte-zurück-Stand und nähen den ganzen Weg um den Kragenstand.
 
-#### Sew along the collar edge
+#### Nähen am Kragenrand
 
-![Sew along the collar edge](19d.png)
+![Nähen am Kragenrand](19d.png)
 
-To give more body to your collar, and firmly secure it in place we're going to sew along the top edge of the collar stand.
+Um Ihrem Kragen mehr Körper zu geben und ihn fest zu sichern, werden wir am oberen Rand des Kragenständers nähen.
 
-Sew about half the seam allowance from your earlier edge-stitching. Make sure to stop a few cm before the end of the collar.
+Nähen Sie etwa die Hälfte der Naht von Ihrer früheren Kantenstichung. Achten Sie darauf, ein paar cm vor dem Ende des Kragens zu stoppen.
 
-> You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down.
+> Sie müssen ein paar cm vor dem Ende des Kragens stoppen (beachte: das Ende des Kragens, so dass diese Naht vollständig bedeckt ist, wenn der Kragen heruntergeklappt wird.
 
-#### Press the collar
+#### Drücke den Kragen
 
-![Press the collar](19.png)
+![Drücke den Kragen](19.png)
 
-Now that your collar is attached, give it a good press.
+Jetzt da der Kragen angehängt ist, geben Sie ihm eine gute Presse.
 
-### Step 20: Hem your shirt
+### Schritt 20: Hem dein Hemd
 
-![Fold over and press](20a.png) ![FOld over again, and press again](20b.png) ![Sew the hem](20c.png)
+![Falten und drücken](20a.png) ![Wiederholen und erneut drücken](20b.png) ![Nähen Sie den Saum](20c.png)
 
-Time to finish the hem (that's the part you tuck in your trousers).
+Zeit, den Saum zu beenden (das ist das Teil, das du in deiner Hose steckst).
 
-Fold up half of the hem allowance and press down. Then, fold up again and press again.
+Schließen Sie die Hälfte der Saummenge ab und drücken Sie nach unten. Dann klappen Sie wieder und drücken Sie erneut.
 
-Now, sew along upper edge to finish the hem.
+Nähen Sie jetzt entlang der Oberkante, um den Saum zu beenden.
 
-### Step 21: Create buttonholes
+### Schritt 21: Tastenlöcher erstellen
 
-If you haven't done so initially, mark all the places you should have buttonholes.
+Wenn Sie dies nicht zuerst getan haben, markieren Sie alle Orte, an denen Sie Buttonlöcher haben sollten.
 
-They sit along the front closure and at your cuffs.
+Sie sitzen entlang der Frontschließung und an Ihren Manschetten.
 
-When you've marked them, make buttonholes there.
+Wenn Sie sie markiert haben, machen Sie dort Schaltflächen.
 
-### Step 22: Attach buttons
+### Schritt 22: Buttons anhängen
 
-Pin your shirt closed to transfer the place of the buttonholes to the button sides.
+Schließen Sie Ihr Shirt ab, um den Platz der Buttonlöcher auf die Tastenseiten zu übertragen.
 
-When you've marked where buttons should go, sew them on.
+Wenn Sie markiert haben, wo Buttons gehen sollen, nähen Sie sie ein.
 
-> Rather than mark the location of the buttons from the pattern, I prefer to transfer the location of the created buttonholes.
+> Anstatt die Position der Tasten aus dem Muster zu markieren, ziehe ich es vor, die Position der erzeugten Tasten zu übertragen.
 > 
-> This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
+> Auf diese Weise, wenn ein Knopfloch ein bisschen an der Stelle sitzt, wird der Knopf einfach folgen.
 
 ![Das war's, du bist fertig](finished.gif)
 

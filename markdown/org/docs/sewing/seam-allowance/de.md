@@ -2,16 +2,16 @@
 title: Nahtzugabe
 ---
 
-![The inside of the leg on a pair of jeans. The SA is the dark narrow stretch of fabric next to the seam. It has been zig-zagged to keep it from fraying](zig-zag.jpg)
+![Die Innenseite des Beins auf ein Paar Jeans. Die SA ist die dunkle schmale Streckung des Stoffes neben der Naht. Es wurde Zick-Zick-Zack-Zacken um es vor Zerfall zu bewahren](zig-zag.jpg)
 
-Seam allowance, often shortened to SA, is the extra fabric at the seam that allows you to sew a garment together.
+Die Nahtgenehmigung, die oft auf SA verkürzt wird, ist der zusätzliche Stoff an der Naht, mit dem Sie ein Kleidungsstück zusammen nähen können.
 
-If, instead of sewing, you could magically join seams together, there would be no need for seam allowance.
+Wenn man anstelle der Nähte die Nähte auf magische Weise zusammenschließen könnte, wäre es nicht nötig, die Naht zu vergüten.
 
-Since we can't do magic, we need a bit of seam allowance so that the minor fraying of the fabric will not undo the seam.
+Da wir keine Magie machen können, brauchen wir ein wenig Nahtzugabe, damit das kleine Zerkleinern des Stoffes die Naht nicht rückgängig macht.
 
-Seam allowance can differ. 1cm is common for some patterns, but in the US 5/8" or 15mm is standard. Make sure to always check the pattern for the default SA.
+Die Zulage für Seam kann unterschiedlich sein. 1cm ist bei manchen Mustern üblich, aber in den USA 5/8" oder 15mm Standard. Überprüfen Sie immer das Muster für die Standard-SA.
 
-Extra SA can be required for specific finished (like french seams) or for hemming.
+Zusätzliche SA kann für bestimmte Fertigteile (wie französische Nähte) oder für die Hämaturgie benötigt werden.
 
-> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Bild von [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)

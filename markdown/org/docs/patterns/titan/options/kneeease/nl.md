@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your knees, which also determines the width of the trouser legs.
+Bepaalt de hoeveelheid overwijdte aan je knies, wat ook de breedte van de broekspijpen bepaalt.

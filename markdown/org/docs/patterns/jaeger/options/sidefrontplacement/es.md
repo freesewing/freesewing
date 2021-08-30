@@ -1,4 +1,4 @@
 
-![Side-front placement](sidefrontplacement.svg)
+![Posición lateral frontal](sidefrontplacement.svg)
 
-Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel.
+Ubicación del límite delantero/lateral como proporción de la circunstancia del pecho. Los números más altos hacen un panel lateral más ancho.

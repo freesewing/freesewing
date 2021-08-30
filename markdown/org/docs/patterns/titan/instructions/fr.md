@@ -1,29 +1,29 @@
 
-### Step 1: Join the outseam
+### Étape 1 : Rejoignez le plein air
 
-Join the outseam (the seam that runs along the side of your leg) of the front and back.
+Rejoignez la couture extérieure (la couture qui coule le long du côté de votre jambe) de l'avant et de l'arrière.
 
-Repeat the step for the other leg, but **make sure they are the mirror image of each other**.
+Répétez l'étape pour l'autre jambe, mais **assurez-vous qu'ils sont l'image miroir les uns des autres**.
 
-### Step 2: Join the inseam
+### Étape 2 : Rejoignez la couture
 
-Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+Rejoignez la couture (la couture la couture le long de l'intérieur de vos jambes) de l'avant et de l'arrière.
 
-You now have a leg. Repeat this step for the other legs, once again making certain they are mirror images of each other.
+Vous avez maintenant une jambe. Répétez cette étape pour les autres jambes, une fois de plus en s'assurant qu'ils sont des images miroir les uns des autres.
 
-### Step 3: Join the cross seam
+### Étape 3 : Joignez la couture de croix
 
-Turn one leg with the good side in, and the other with the good side out.
+Tournez une jambe avec le bon côté dedans et l'autre avec le bon côté.
 
-Now tuch the *good side out* into the *good side in* leg, so that they have their _good sides together_.
+Maintenant enfoncez le *bon côté* dans le *bon côté en* jambe, afin qu'ils aient leurs _bons côtés ensemble_.
 
-You can now align and sew the cross seam.
+Vous pouvez maintenant aligner et coudre la couture de croix.
 
 <Note>
 
-###### You probably want to insert a zipper
+###### Vous voulez probablement insérer une fermeture à glissière
 
-You should insert a zipper or leave the last part of the cross seam open (so you can pin it).  
-If you don't you wont be able to put on Titan to check the fit.
+Vous devez insérer une fermeture à glissière ou laisser la dernière partie de la couture de croix ouverte (pour que vous puissiez la fixer).  
+Si vous ne le voulez pas, vous ne serez pas en mesure de mettre sur Titan pour vérifier l'ajustement.
 
 </Note>

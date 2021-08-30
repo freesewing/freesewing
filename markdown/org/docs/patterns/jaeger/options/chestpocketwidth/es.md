@@ -1,4 +1,4 @@
 
 ![Ancho bolsillo del pecho](chestpocketwidth.svg)
 
-The width of the chest pocket, as a factor of your chest circumference.
+La anchura de la bolsa de pecho, como factor de la circunstancia del pecho.

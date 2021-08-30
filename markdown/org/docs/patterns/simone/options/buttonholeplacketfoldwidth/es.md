@@ -1,13 +1,15 @@
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Anchura del pliegue de la vista de los ojales](buttonholeplacketfoldwidth.svg)
 
-The width of the fold on a classic style buttonhole placket.
+El ancho del plegado en una placa de agujero de botón de estilo clásico.
 
 <Note>
 
-If you have a fabric with a pattern (striped or checkers for example) you can set the fold to half the width of your repeating pattern. 
-This way, your pattern will match perfectly.
+Si tienes un tejido con un patrón (rayado o fichas por ejemplo) puedes ajustar el plegado a la mitad del ancho de tu patrón repetitivo. 
+De esta manera, tu patrón coincidirá perfectamente.
 
-This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
+Esto sólo se aplica a un placket clásico. Así que será ignorado si optó por un estilo de placket de agujero de botón sin costuras.
 
 </Note>
 
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonholeplacketfoldwidth_sample.svg "Efecto de esta opción en el patrón")

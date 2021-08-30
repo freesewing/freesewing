@@ -1,7 +1,11 @@
 ---
-title: Front shoulder width
+title: Ancho del hombro frontal
 ---
 
-![The effect of the front shoulder width option on the pattern](sample.png)
+![El efecto de la opción de ancho del hombro frontal en el patrón](sample.png)
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+La opción **de ancho del hombro frontal** controla el ancho de los hombros en el frente, relativo a la espalda.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_frontshoulderwidth_sample.svg "Efecto de esta opción en el patrón")

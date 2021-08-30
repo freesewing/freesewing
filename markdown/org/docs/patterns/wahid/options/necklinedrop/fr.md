@@ -1,3 +1,3 @@
 ![Profondeur d'encolure](necklinedrop.svg)
 
-This options allows you to lower your neckline below the default.
+Cette option vous permet de réduire votre encolure sous la valeur par défaut.

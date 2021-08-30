@@ -1,3 +1,7 @@
-![The chest ease factor on Brian](./chestease.svg)
+![El factor de facilidad del cofre en Brian](./chestease.svg)
 
-This option controls the ease at your chest.
+Esta opción controla la holgura en el pecho.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_chestease_sample.svg "Efecto de esta opción en el patrón")

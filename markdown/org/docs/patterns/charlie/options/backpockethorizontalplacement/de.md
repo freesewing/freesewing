@@ -1,4 +1,4 @@
 
-Controls the horizontal placement of the back pockets.
+Steuert die horizontale Platzierung der hinteren Taschen.
 
-In other words, more towards the outseam, and this wider apart. Or more towards the center back and thus closer together.
+Mit anderen Worten, mehr gegen die Außenseite, und diese weiter auseinander. Oder mehr in Richtung der Mitte hinten und damit näher zusammen.

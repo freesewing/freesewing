@@ -1,3 +1,3 @@
 ![Ärmelleiste Breite](sleeveplacketwidth.svg)
 
-How wide do you want the sleeve placket to be?
+Wie breit soll der Ärmelplatz sein?

@@ -1,40 +1,40 @@
 
-## Step 1: Close seams
+## Schritt 1: Naht schließen
 
-![Close the side and shoulder seams](step01.png)
+![Seiten- und Schulternähte schließen](step01.png)
 
-Put front and back on top of each other with _good sides together_. Serge the side seams, and the short seams at the shoulder straps.
+Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Servieren Sie die Seitennaht und die kurzen Nähte am Schultergurt.
 
-## Step 2: Finish hem
+## Schritt 2: Saum beenden
 
-![Finish the hem](step02.png)
+![Beende den Saum](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Falte den Saum nach oben und nähe ihn nach unten. Wenn du einen Coverlock hast, benutze es. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_ , um die Naht dehnbar zu halten.
 
 <Note>
 
-##### Fold only once, to avoid bulk
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+##### Nur einmal falten, um zu vermeiden, dass
+Knitwear nicht schwenkt, so können Sie diese einfach einmal falten und nach unten nähen, dann sauber den Stoff zurückschneiden.
 
 </Note>
 
-## Step 3: Sew knit binding to the front
+## Schritt 3: Nähen Strickbindung an die Vorderseite
 
 <Note>
 
-##### About knit binding
+##### Über Strickbindungen
 
-If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
+Wenn du neu bist [binden](/docs/sewing/knit-binding), kannst du [diese Seite auf dem Betreff lesen](/docs/sewing/knit-binding) lesen.
 
-###### Repeat steps 3 and 4 for both armholes and the neck opening
+###### Wiederholen Sie die Schritte 3 und 4 für die Armlöcher und die Halsöffnung
 
-The procedure outlined below applies to both of the armholes as well as the neck opening. In other words, you'll have to do this three times.
+und das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für die Halsöffnung. Mit anderen Worten: Sie müssen das dreimal tun.
 
-###### Start with the simplest opening
+###### Beginnen Sie mit der einfachsten Öffnung
 
-I would advise you to start with whatever opening has the most uniform curvature. By default, those are the arm holes, but if you changed the pattern options (think racerback) that might not be the case.
+Ich würde Ihnen raten, mit jeder Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn Sie die Musteroptionen (denken Sie an Rennen) geändert haben, ist dies möglicherweise nicht der Fall.
 
-Either way, the less sharp bends you have, the easier it will be. So start with that to warm up before you do the trickier bends.
+So oder so, je weniger scharfe Kurven Sie haben, desto einfacher wird es sein. Also beginnen Sie mit dem Aufwärmen, bevor Sie die dreckigen Kurven machen.
 
 </Note>
 
@@ -42,128 +42,128 @@ We are going to finish the arm and neck hole with [knit binding](/docs/sewing/kn
 
 <Note>
 
-This is the only part of making this A-shirt that requires a bit of practice. Don't worry, all you need to do is make a couple of these and you'll be a pro in no time.
+Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis erfordert. Keine Sorge, alles was du tun musst, ist ein paar davon zu machen und du wirst in kürzester Zeit ein Profi sein.
 
 </Note>
 
-### Pick your spot
+### Wähle deinen Platz
 
-![Applying knit binding](step03a.png)
+![Strickbindung anwenden](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
+Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unsere Bindung ansetzen bzw. stoppen wollen. Hier ist, was ich vorschlage,
 
-  - For the armholes: at the side seam. This will hide our seam under the arm
-  - For the neck opening: the center back of the neck. You might want to mark this with a pin
+  - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
+  - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
 
-### Place (the start of) your binding
+### Platzieren Sie den Beginn Ihrer Bindung
 
-![Place (the start of) your binding](step03b.png)
+![Platzieren Sie den Beginn Ihrer Bindung](step03b.png)
 
-Put your A-shirt down with the good side up, and place your binding strip on top of it with the good side down (as in, good sides together).
+Lege dein A-shirt mit der guten Seite nach oben und platzieren Sie Ihren Bindestreifen mit der guten Seite nach unten (wie in guten Seiten gemeinsam).
 
-Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
+Legen Sie den langen Rand Ihres Streifens mit dem Rand Ihres Stoffes aus, so dass der Streifen oben auf dem Stoff liegt (nicht in der Öffnung). Platzieren Sie die Ecke am Startpunkt.
 
-Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+Schalten Sie nun den Bindeband 1cm über den Startpunkt hinaus. Dieses kleine Extras wird garantieren, dass wir die beiden Enden später beitreten können.
 
-### Make sure you know where to sew
+### Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen
 
-![Make sure you know where to sew](step03c.png)
+![Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen](step03c.png)
 
-We are going to sew 1.5cm from the edge. So be careful because this is not the standard seam allowance.
+Wir werden 1,5 cm von der Kante nähen. Seien Sie also vorsichtig, denn dies ist nicht die reguläre Zulassung.
 
 <Tip>
 
-The easy way to keep this 1.5cm distance is by using a seam gauge. 
-Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle. 
-Then all you need to do is keep the edge of your fabric aligned with that line.
+Der einfache Weg, diese 1,5 cm Distanz zu halten, ist mit einer Nahtspur. 
+Oder machen Sie, was ich tue, platzieren Sie ein Stück Markierungsband auf Ihrer Nähmaschine und markieren Sie eine Linie auf 1,5 cm aus Ihrer Nadel. 
+Dann musst du nur den Rand deines Stoffes an dieser Linie angleichen.
 
 </Tip>
 
-Also, we are not starting at our start point, but we skip the first 3cm. We'll need this wiggle room later to join the ends of our binding.
+Außerdem beginnen wir nicht bei unserem Start, aber wir überspringen die ersten 3cm. Dieser Wiggle Raum wird später benötigt, um den Enden unserer Bindung beizutreten.
 
-### Sew binding in place
+### Näh-Bindung
 
-![Sew binding in place](step03d.png)
+![Näh-Bindung](step03d.png)
 
-Sew your binding in place while gently stretching the binding, but not the fabric. Make sure not to sew the last 3cm but leave them, just as you did at the start.
+Nähen Sie Ihre Bindung an und strecken Sie die Bindung, aber nicht das Gewebe. Vergewissern Sie sich, nicht die letzten 3cm zu nähen, sondern lassen Sie sie, so wie Sie es zu Beginn getan haben.
 
-You might need to practice a bit to get the hang of it.
+Möglicherweise muss man etwas üben, um den Hang davon zu bekommen.
 
-> Make sure to stretch your binding more when you're taking a sharper bend. Read my notes on [knit binding](/docs/sewing/knit-binding) for more info.
+> Achten Sie darauf, Ihre Bindung mehr zu strecken, wenn Sie eine schärfere Kurve nehmen. Lesen Sie meine Notizen auf [Strickbindung](/docs/sewing/knit-binding) für weitere Informationen.
 
-### Mark binding ends
+### Bindungsende markieren
 
-![Joining the binding ends](step03e.png)
+![Verbinden mit der Bindung endet](step03e.png)
 
-With about 6cm left to go before we complete our circle, it's time to sew the ends of the binding together.
+Es ist an der Zeit, die Enden der Bindung zusammen zu nähen, bevor wir unseren Kreis vollenden.
 
-![Mark binding ends](step03f.png)
+![Bindungsende markieren](step03f.png)
 
-Take one of the edges, and stretch it along the 3cm seperating it from the start point as you would while sewing.
+Nimm eine der Kanten und strecke sie von Anfang an entlang der 3cm Trennung, wie du beim Nähen würdest.
 
-Mark the binding where it reaches the start point. Do the same for the other end.
+Markieren Sie die Bindung, wo sie den Startpunkt erreicht. Tun Sie das Gleiche für das andere Ende.
 
-### Sew binding ends together
+### Nähbindung endet zusammen
 
-![Join the ends of the binding](step03g.png)
+![Am Ende der Bindung teilnehmen](step03g.png)
 
-Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Sew them together on the mark.
+Das A-Shirt in beliebiger Weise falten macht es Ihnen leichter, beide Enden mit guten Seiten miteinander zu verbinden, indem Sie die Markierungen angleichen. Nähen Sie sie auf der Mark.
 
-> 6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them togther.
+> 6 cm ist nicht viel, aber sollte ausreichen, um beide Kanten bequem unter Ihrer Nähmaschine zu nähen.
 
-### Finish last 6cm of binding
+### Beende die letzten 6 cm Bindung
 
-![Sew binding ends together](step03h.png)
+![Nähbindung endet zusammen](step03h.png)
 
-Now that your binding ends are joined together, it's time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
+Nun, da Ihre Bindungsenden miteinander verbunden sind, ist es an der Zeit, die letzten 6 cm Bindung zu beenden. Nähen Sie es nach unten, bleiben Sie 1,5 cm von der Kante wie zuvor.
 
-## Step 4: Fold knit binding to the back and sew down
+## Schritt 4: Strickbinder an den Rücken falten und nach unten nähen
 
-### Fold your binding over the fabric edge to the back
+### Falte deine Bindung über die Stoffkante auf die Rückseite
 
-![Fold knit binding to the back](step04a.png)
+![Strickverknüpfung auf die Rückseite falten](step04a.png)
 
 
-Fold your binding fabric around the fabric of your A-shirt to the back. This is how we'll sew it down.
+Falten Sie Ihren Bindegewebe um den Stoff Ihres A-shirts auf die Rückseite. So werden wir es nach unten nähen.
 
-> While the fabric is folded double at the front (hiding the fabric edge in the process) there's no need for that at the back. We will merely trim back the edge later, given that knit doesn't ravel. If we were to fold back the fabric at the back too, it would only add bulk.
+> Während der Stoff doppelt geklappt ist (Verstecke den Stoffrand im Prozess), ist das auf der Rückseite nicht nötig. Wir werden später nur noch den Rand zurückschneiden, da der Strick nicht schwenkt. Wenn wir den Stoff auch auf der Rückseite zurückklappen würden, würde er nur noch mehr massieren.
 
-### Sew your binding down
+### Nähen Sie Ihre Bindung
 
-![Sew the knit binding down](step04b.png)
+![Strickbinder nach unten nähen](step04b.png)
 
-From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
+Von der rechten Seite des Stoffes nähen Sie entlang der Innenkante Ihrer Bindung (am weitesten von der Kante), Achten Sie darauf, die Bindung auf der Rückseite im Prozess zu fangen.
 
 <Note>
 
-If you have a coverlock machine, that would be perfect for this seam
+Wenn Sie eine Coverlock Maschine haben, wäre das perfekt für diese Naht
 
 </Note>
 
-You'll have to, once again, stretch your binding a bit while doing this. But this time, there's an extra caveat to look out for.
+Du musst deine Bindung noch einmal etwas ausdehnen, während du dies tust. Aber dieses Mal gibt es einen zusätzlichen Vorbehalt zu suchen.
 
 <Note>
 
-##### Beware of the uneven feed
-As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward. 
+##### Vorsicht vor dem ungleichen Feed
+während du deine Bindung durch deine Nähmaschine fütterst, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts. 
 
-In a perfect world, all layers will follow smoothly. 
-But more often than not, the top layer (front of your binding) tends to lag behind a bit. 
-This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
+In einer perfekten Welt folgen alle Ebenen reibungslos. 
+In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher. 
+Dadurch wird Ihre Bindung nicht sauber am Stoffrand gefaltet, sondern hässliche Falten erzeugt.
 
-So watch out for this, and if you see it happening, stretch the under-layer a bit extra to compensate.
+Also achte darauf, und wenn du das siehst, strecke die Unterschicht ein bisschen extra um sie zu kompensieren.
 
 </Note>
 
-## Step 5: Trim back knit binding on the inside
+## Schritt 5: Strickbindung nach innen trimmen
 
-![Trim back knit binding on the inside](step05.png)
+![Strickbinder an der Innenseite kürzen](step05.png)
 
-On the inside of your A-shirt, trim back the knit binding against your seam to finish up.
+Auf der Innenseite Ihres A-shirts die Strickbinde gegen die Naht zurückdrehen, um zu Ende zu kommen.
 
 <Note>
 
-Be careful not to cut a hole in your A-shirt. Seriously, this happened to me on more than one occasion.
+Achten Sie darauf, nicht ein Loch in Ihr A-Shirt zu schneiden. Im Ernst, das ist mir mehr als einmal passiert.
 
 </Note>
 

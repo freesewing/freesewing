@@ -1,2 +1,2 @@
 
-Controls the angle of the pocket slant.
+Steuert den Winkel der Taschenschlange.

@@ -1,2 +1,2 @@
 
-How much do you want to lengthen the legs?
+Wie viel möchtest du die Beine verlängern?

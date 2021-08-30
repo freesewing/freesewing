@@ -1,3 +1,3 @@
 ![Supplément de longueur](lengthbonus.svg)
 
-This option will lengthen the body of your sweatshirt.
+Cette option allongera le corps de votre sweatshirt.

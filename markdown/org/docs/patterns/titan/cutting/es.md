@@ -1,5 +1,5 @@
- - **Main fabric**
-   - Cut **2 front** with _good sides together_
-   - Cut **2 back** with _good sides together_
+ - **Tela principal**
+   - Corta **2 frente** con _lados buenos juntos_
+   - Corta **2 atrás** con _lados buenos juntos_
 
-Titan is a trouser block. There's only the front and back of each leg.
+Titan es un bloque de pantalones. Sólo hay la parte frontal y trasera de cada pierna.

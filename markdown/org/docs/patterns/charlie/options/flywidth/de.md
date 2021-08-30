@@ -1,2 +1,2 @@
 
-Controls how far the fly's J-seam is offset from the fly edge.
+Steuert, wie weit die J-Naht vom Fliegenrand versetzt wird.

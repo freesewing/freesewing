@@ -1,2 +1,2 @@
 
-Controls the radius by which we round the pocket slant into the outseam.
+Controla el radio por el cual redondeamos el bolsillo en el exterior.

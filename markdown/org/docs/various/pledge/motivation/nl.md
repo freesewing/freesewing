@@ -1,11 +1,11 @@
 ---
-title: Motivation
+title: Motivatie
 ---
 
 <Note>
 
-This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
+Dit is een persoonlijke opmerking van Joost De Cock -- de FreeSewing onderhouder -- over
+zijn motivaties voor [de FreeSewing revenue pledge](//docs/various/pledge/)
 
 </Note>
 
@@ -13,7 +13,7 @@ Je veronderstelt waarschijnlijk dat we om geld vragen om de servers te laten dra
 
 Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat privilege ook verantwoordelijkheid inhoudt.
 
-Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
+Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. Ik ben zeer gelukkig dat ik in West-Europa ben geboren, dat ik goed werk heb en een dak boven mijn hoofd.
 
 Zou ik het geld kunnen gebruiken? Ja, dat zou wel kunnen.  
 Heb ik het geld nodig? Nee, eigenlijk niet.
@@ -24,7 +24,7 @@ Het grootste gevaar voor FreeSewing is hetzelfde als bij elk open source project
 
 Hoewel ik niet meer alleen aan FreeSewing werk - en ik kan niet lovend genoeg zijn over de waarde van het werk van alle medewerkers - ben ik toch niet immuun voor gevoelens als **Waarom doe ik dit in godsnaam?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. En die boodschap is: **Hey, wat je doet is de moeite. Blijf vooral doorgaan.'**
+Wanneer je een FreeSewing Patroon wordt, geef je meer dan geld. Voor mij is de hoofdwaarde het bericht dat u aan mij en andere mensen die zich hiermee bezig houden, aan mij stuurt. En die boodschap is: **Hey, wat je doet is de moeite. Blijf vooral doorgaan.'**
 
 ##### De waarde van jullie geld
 
@@ -32,30 +32,30 @@ Het gaat niet *enkel* om het geld. Maar dat wil niet zeggen dat geld niet belang
 
 Geld inzamelen door iets te doen wat ik graag doe, en het dan doorgeven aan een goed doel, is wat mij op twee oren doet slapen.
 
-I could volunteer at a soup kitchen, or teach underprivileged children how to code. Maar in de plaats werk ik aan FreeSewing.
+Ik zou vrijwilliger kunnen zijn in een soep keuken, of minder bevoorrechte kinderen leren hoe ze moeten coderen. Maar in de plaats werk ik aan FreeSewing.
 
-En daarom gaat al het geld dat FreeSewing binnenbrengt naar een goed doel. Het maakt dit project niet alleen leuk, maar ook maatschappelijk verantwoord. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+En daarom gaat al het geld dat FreeSewing binnenbrengt naar een goed doel. Het maakt dit project niet alleen leuk, maar ook maatschappelijk verantwoord. En ik heb dat nodig om mezelf ervan te overtuigen dat het goed is om al mijn tijd hieraan te besteden omdat FreeSewing voorgoed een kracht is.
 
 ##### Goede doelen zijn niet sexy
-Here's the tricky part: People give less once they know the money goes to charity. Ik wou dat het niet zo was, maar ja.
+Hier is het lastige deel: mensen geven minder wanneer ze weten dat het geld naar een goed doel gaat. Ik wou dat het niet zo was, maar ja.
 
 Daarom presenteren we onze [abonnementsopties](/community/join) zoals je op een winstmakende site zou zien. Deze manier lijkt intuïtiever, en werkt ook beter.
 
 Ja, alles is gratis, en het geld gaat niet echt naar de rekening van de server (omdat ik die uit eigen zak betaal, om bovenstaande redenen). Maar dat betekent niet dat deze bijdragen niet cruciaal zijn voor het welzijn van het project, of tenminste de man achter de schermen (ik dus).
 
-##### Why MSF is my charity of choice
+##### Waarom MSF mijn liefdadigheid van keuze is
 
 Er is veel miserie in de wereld. Als ik naar het nieuws kijk voel ik soms hoe mijn geloof in de mensheid verloren geraakt. Sommige van de meest kwetsbare mensen op deze planeet lijken grotendeels in de steek gelaten door rijke landen en supranationale organisaties.
 
-Yet somehow, wherever crisis strikes, there is a familiar banner flying that provides hope, and help. Het is niet de vlag van de Verenigde Naties, of de stars and stripes, of het blauw en goud van de Europese Unie.
+Op een of andere manier is er echter een bekende vlag die hoop en hulp biedt, waar een crisis toeslaat. Het is niet de vlag van de Verenigde Naties, of de stars and stripes, of het blauw en goud van de Europese Unie.
 
-The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of M&eacute;decins Sans Fronti&egrave;res/Doctors Without Borders fly. Sometimes precariously, among the rubble of their bombed hospitals, but always there.
+Het enige wat me altijd herinnert dat de mensheid deze mensen niet volledig heeft vergeven, is het zien van de banier van M&eacute;decins Sans Fronti&egrave;res/Doctors zonder grenzen vliegen. Soms is dat gevaarlijk, soms onder het puin van hun gebombardeerde ziekenhuizen, maar altijd altijd.
 
-I can't think of a single symbol that reminds us that not everything is lost, and there's still good people out there.
+Ik kan geen enkel symbool bedenken dat ons eraan herinnert dat niet alles verloren is en dat er nog steeds goede mensen zijn.
 
-It is also one of the few organisations that has the global reach to go and help there where it's needed most. We're used to them working in poverty-stricken regions, but when the COVID-19 pandemic ripped our healthcare systems to shreds, _MSF_ stepped up to the plate, deploying their teams in Western Europe, in the US, and anywhere where the need was most acute.
+Het is ook een van de weinige organisaties die het wereldwijde bereik hebben om daarheen te gaan waar het het hardst nodig is. We zijn eraan gewend dat ze werkten in door armoede getroffen regio's, maar toen de COVID-19 pandemie onze gezondheidszorgstelsels aan het afbrokkelen was, _MSF_ stapte op het bord, zet hun teams in West-Europa in in de VS en waar de behoefte het hardst was.
 
-I hope that this explains the choice of M&eacute;decins Sans Fronti&egrave;res/Doctors Without Borders as FreeSewing's charity of choice. And I hope you will join us in making the world a little bit better.
+Ik hoop dat dit de keuze van M&eacute;decins Sans Fronti&egrave;res/Doctors Zonder Grenzen uitlegt als liefdadigheid van FreeSewing. En ik hoop dat u samen met ons de wereld wat beter zult maken.
 
-So I am happy to make [this pledge](/docs/various/pledge/).
+Dus ik ben blij om [deze belofte](/docs/various/pledge/) te doen.
 

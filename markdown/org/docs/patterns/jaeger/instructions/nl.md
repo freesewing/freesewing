@@ -1,8 +1,8 @@
 <Note>
 
-###### Jaeger documentation is under construction
+###### Jaeger documentatie is in constructie
 
-This documentation is not yet finished.
+Deze documentatie is nog niet klaar.
 
 </Note>
 
@@ -35,7 +35,7 @@ Kleef een rechthoekig stukje tussenvoering aan de verkeerde kant van de plek waa
 
 > ##### We plakken niet het hele voorpand vol
 > 
-> Sportieve jasjes worden meestal gemaakt van iets zwaardere stoffen. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
+> Sportieve jasjes worden meestal gemaakt van iets zwaardere stoffen. Dat, en het feit dat ik liever canvas gebruik in plaats van fusibele tussenvoering, betekent dat ik de voorkant niet met nutteloos draait.
 
 #### Drieg de omtrek van de bies, markeer de eindpunten van de bovenrand
 
@@ -98,7 +98,7 @@ Breng nu enkel de paspel naar de voorkant en leg hem mooi plat. Strijk opnieuw l
 
 ![Werk de borstzak af](finishChestPocket.svg)
 
-On the backside, fold the pocket bag double and sew it to the pocket welt below the existing seamline of the welt.
+Plooi het zakdeel dubbel en stik het aan de zak paspel onder de bestaande naadlijn van de paspel.
 
 Neem naald en draad en werk de borstzak met de hand af door de zijkanten van de paspel onzichtbaar aan het voorpand vast te naaien.
 
@@ -132,9 +132,9 @@ Drieg nu de voorpanden in haardoek en het borststuk aan je voorpand. Denk eraan 
 
 Tijd om je een echte kleermaker te voelen, en die revers te pikeren zoals ze nog nooit gepikeerd zijn.
 
-Make sure to make the stitches a bit smaller towards the lapel tip, to make sure it lies flat against the chest, curling a bit inward instead of outward.
+Zorg dat de steken een beetje kleiner zijn tegen de tip van de revers om ervoor te zorgen dat het plat tegen de kist ligt te knippen een beetje naar binnen in plaats van naar buiten.
 
-> If you're not sure how to pad-stitch the lapels, [let us know](https://discord.freesewing.org/) and we'll make an attempt to document it.
+> Als je niet zeker weet hoe je de kippen stikt, [laat het ons weten](https://discord.freesewing.org/) en we doen een poging om het te documenteren.
 
 #### Revers contouren en breuklijn
 
@@ -150,7 +150,7 @@ Onthoud:
 > 
 > Probeer je naald niet helemaal door de stof te duwen als je het lint vastnaait, zo vermijd je dat je steken zichtbaar zijn aan de buitenkant.
 > 
-> Het is echter niet de bedoeling dat je het lint enkel aan het haardoek vastnaait. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
+> Het is echter niet de bedoeling dat je het lint enkel aan het haardoek vastnaait. In plaats daarvan moet je proberen om elke steek een paar draadjes van je stof te halen. zodat de band vastzit en de steken niet zichtbaar zijn aan de voorkant.
 > 
 > Dit is minder problematisch boven het breekpunt van de revers, waar de stof aan de achterkant komt te liggen.
 
@@ -182,9 +182,9 @@ Leg de twee halve jasjes met de goede kanten op elkaar en stik de middenachterna
 
 <Note>
 
-##### Note for sewing vents
+##### Let op voor het naaien van vents
 
-If you have a single vent, this seam will contain the vent.
+Als je een enkele split hebt, zit deze naad in de vent.
 
 Stik het deel van de achternaad tot aan de split en het stukje naar opzij dat de split vormt.
 Stik niet verder naar beneden.
@@ -201,12 +201,12 @@ Let op dat het haardoek niet mee vastgestikt wordt.
 
 <Note>
 
-##### Align the shoulder notches
+##### Leg de schoudermerktekens uit
 
-Make sure to carefully align the shoulders based on the notches.
-Because of the different shape of the back and front panels on the neck side,
-the fabric edge looks different. So aligning those edges will not give you
-what you need.
+Zorg ervoor dat de schouders op basis van de merktekens goed op elkaar worden afgestemd.
+Vanwege de verschillende vorm van de achter- en voorpanden aan de nekzijde,
+ziet de rand van de stof er anders uit. Dus het aanpassen van deze randen geeft je niet
+wat je nodig hebt.
 
 Dus zorg dat je op de merktekens afgaat. Daar dienen ze voor.
 

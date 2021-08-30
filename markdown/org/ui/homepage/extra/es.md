@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-##### [New here?][1]
-[Check our getting started guide][1]
+##### [¿Nuevo aquí?][1]
+[Revisa nuestra guía de inicio][1]
 
 [1]: /docs/guide/
 

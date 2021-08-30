@@ -2,11 +2,11 @@
 title: Stijl Manchet
 ---
 
-This pattern supports three different cuff styles:
+Dit patroon ondersteunt drie verschillende manchet stijlen:
 
- - Traditional
+ - Traditioneel
  - Elegant
- - Keystone
+ - Sleutelsteen
 
-<Fixme>Describe the different styles</Fixme>
+<Fixme>Beschrijf de verschillende stijlen</Fixme>
 

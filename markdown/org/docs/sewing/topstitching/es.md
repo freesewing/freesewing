@@ -2,12 +2,12 @@
 title: Topstitching
 ---
 
-![I used plenty of topstitching in a contrasting red thread on these jeans for my godson Akki](topstitching.jpg)
+![He usado un montón de cantos en un hilo rojo contraste en estos vaqueros para mi dios Akki](topstitching.jpg)
 
-![Topstitching needles from Schmetz](topstitch-needles.jpg)
+![Pulsando agujas de Schmetz](topstitch-needles.jpg)
 
-Topstitching is when you sew with the good side of the fabric up and your stitches are visible on the finished garments.
+Topstitching is when you cow with the good side of the fabric up and your stitches are visible on the finished clothes.
 
-While a decorative feature, topstitching can also play a role in garment construction.
+Mientras que una característica decorativa, la parte superior también puede desempeñar un papel en la construcción de prendas de vestir.
 
-> You can buy specific sewing needles that are optimised for topstitching
+> Puedes comprar unas agujas de costura específicas que son optimizadas para la descarga superior

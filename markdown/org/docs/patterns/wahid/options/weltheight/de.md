@@ -1,2 +1,2 @@
 
-Controls the height of the pocket welts.
+Steuert die Höhe der Taschenschweißen.

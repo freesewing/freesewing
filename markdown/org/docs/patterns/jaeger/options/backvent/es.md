@@ -1,9 +1,9 @@
 
 ![Abertura trasera](backvent.svg)
 
-How do you like your back vents?
+¿Cómo te gustan las ventanillas traseras?
 
- - Two back vents (shown on the left)
- - One central back vent (shown in the middle)
- - No back vents (shown on the right)
+ - Dos ventiladores traseros (mostrados a la izquierda)
+ - Un ventilador trasero central (mostrado en el medio)
+ - No hay resguardos (se muestra a la derecha)
 

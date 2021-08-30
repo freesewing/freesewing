@@ -1,4 +1,4 @@
 
-![Sleevecap height factor](sleevecapheightfactor.svg)
+![Factor de altura del durmiente](sleevecapheightfactor.svg)
 
-This factor controls the height of the sleevecap.
+Este factor controla la altura de la manga.

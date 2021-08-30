@@ -1,1 +1,1 @@
-This options controls the width of the gusset.
+Esta opción controla el ancho del set de ráfagas.

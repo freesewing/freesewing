@@ -1,2 +1,2 @@
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Bepaalt de curve van de kruisnaad, die de pasvorm aan je kruis beïnvloedt.

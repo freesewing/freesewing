@@ -1,10 +1,10 @@
 ![Longueur de la patte de manche](sleeveplacketlength.svg)
 
-How long do you want the sleeve placket to be?
+Combien de temps voulez-vous que la patte de manche soit ?
 
 <Note>
 
-The longer your sleeve placket is, the easier it is to get out of your shirt sleeve. 
-It also influences what things will look like when you roll up your sleeves
+Plus votre patte de manche est longue, plus il est facile de sortir de votre manche. 
+Cela influence également ce à quoi les choses ressembleront quand vous roulez vos manches
 
 </Note>

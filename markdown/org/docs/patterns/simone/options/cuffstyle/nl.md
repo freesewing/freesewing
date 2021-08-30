@@ -1,10 +1,14 @@
-![Cuff style](cuffstyle.svg)
+![Stijl manchet](cuffstyle.svg)
 
-What style of cuff do you want?
+Wat voor manchet wil je?
 
  - Afgeronde klassieke manchet
- - Chamfer barrel cuff
+ - Afschuining klassieke manchet
  - Rechte klassieke manchet
  - Afgeronde Franse manchet
- - Chamfer French cuff
+ - Afschuining Franse manchet
  - Rechte Franse manchet
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_cuffstyle_sample.svg "Effect van deze optie op het patroon")

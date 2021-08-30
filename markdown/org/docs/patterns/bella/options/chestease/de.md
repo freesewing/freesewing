@@ -2,6 +2,10 @@
 title: Brustzugabe
 ---
 
-![The effect of the chest ease option on the pattern](sample.png)
+![Der Effekt der Brustpflegeoption auf das Muster](sample.png)
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+Die Option **Brustschmerz** steuert die Menge an Leichtigkeit im vollen Teil deiner Truhe.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_chestease_sample.svg "Effekt dieser Option auf das Muster")

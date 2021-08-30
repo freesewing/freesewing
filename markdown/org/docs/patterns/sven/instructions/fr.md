@@ -1,57 +1,57 @@
-### Step 1: Close shoulder seams
+### Étape 1 : Fermer les coutures d'épaule
 
- - Place the back and front on top of each other with the good sides toghether.
- - Align the shoulder seam, and sew/serge it at the standard seam allowance.
- - Repeat for the other shoulder seam.
+ - Placez le dos et l'avant sur les deux côtés avec le bon toghether.
+ - Alignez la couture de l'épaule et couvez-la à la marge de couture standard.
+ - Répétez pour l'autre couture d'épaule.
 
 
-### Step 2: Set in the sleeves
+### Étape 2 : Mettre dans les manches
 
- - Place your now attached front and back with the good side up.
- - Place a sleeve on top if it with the good side down
- - Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
- - Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
- - Sew/serge your pinned sleeve in place
- - Repeat for the other sleeve
+ - Placez le devant et le dos maintenant fixés avec le bon côté vers le haut.
+ - Placer une manche sur le dessus si elle a le bon côté vers le bas
+ - Alignez le haut du chapeau de manche avec la couture de l'épaule, votre manche devrait se coucher sur votre devant/dos s'étendant à l'autre couture d'épaule
+ - Épingler la manche en place le long de toute l'armurière. Il y a un peu de tête de manche facile, ce qui signifie que la tête de manche est un peu plus longue que le blindage. Facilitez cela dans la partie supérieure de la tête de manche tout en épinglant.
+ - Coudre/serrer votre manche épinglée en place
+ - Répéter pour l'autre manche
 
-### Step 3: Finish the neck binding
+### Étape 3 : Terminer la liaison du cou
 
- - Measure the length of the neck opening
- - Cut a piece of ribbing that is this length and 6cm/2.5inch wide
- - Fold the ribbing double with the good side outward, and pin it to your neckopening starting from the back
- - The cut off side of your ribbing should align with the edge of your neck opening, while the ribbing extends over your sweatshirt
- - Pin the ribbing in place around the neck opening, starting at the back and stretching it gently as you do so
- - First, join the ribbing at center back, with good sides together. As you've been stretching the ribbing as you were pinning it, it will be too long. Simply cut that away
- - Then, sew the ribbing to the neck opening
+ - Mesurer la longueur de l'encolure
+ - Couper un morceau de corniche de cette longueur et de 6 cm/2,5 pouces de large
+ - Plier le double du cône avec le bon côté vers l'extérieur, et le fixer à votre encolure à partir du dos
+ - Le côté coupé de votre ruban devrait s'aligner avec le bord de votre ouverture de cou, tandis que le cône s'étend sur votre pull
+ - Épingler le ruban en place autour de l'ouverture du cou, en commençant à l'arrière et en l'étirant doucement comme vous le faites
+ - Tout d'abord, rejoignez le ruban au centre de l'arrière, avec de bons côtés ensemble. Tandis que vous étirez le ruban au fur et à mesure que vous le étirez, il sera trop long. Il suffit de couper cela
+ - Ensuite, coudre le cône à l'encolure
 
-### Step 4: Close the side seams and sleeves
+### Étape 4 : Fermer les coutures latérales et les manches
 
- - Fold Sven double at the shoulder seams with good sides together
- - Align the side seams and sleeves and pin them together
- - Now, sew the side seam and continue sewing to close the arms all the way to the cuff
- - Repeat on the other side
+ - Plier Sven deux fois à l'épaule avec de bons côtés ensemble
+ - Alignez les coutures latérales et les manches et fixez-les ensemble
+ - Maintenant, coudre la couture latérale et continuer à coudre pour fermer les bras jusqu'au manchon
+ - Répéter de l'autre côté
 
-### Step 5: Attach the cuffs
+### Étape 5 : Attacher les poignets
 
- - Measure the width of the sleeve at the cuff
- - Cut a piece of ribbing that is (twice this length - 2cm/1inch) and 7cm/3inch wide
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven sleeve
- - Align the cut off side of the ribbing with the edge of the sleeve and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the sleeve.
- - Now, sew/serge the ribbing to the sleeve
- - Repeat for the other cuff
+ - Mesurer la largeur de la manche au manche
+ - Couper un morceau de corniche qui est (deux fois cette longueur - 2cm/1po) et 7cm/3" de large
+ - Plier la bordure double le long du côté le plus long et coudre ensemble le bord pour avoir un anneau continu
+ - Sortez votre Sven de votre intérieur
+ - Pliez l'anneau de corniche avec le bon côté vers l'extérieur, et glissez le côté plié dans votre manche intérieure / extérieure
+ - Alignez le côté coupé du cône avec le bord de la manche et fixez-le en place. Le ruban est un peu plus court, donc étirez-le un peu en épinglant pour le mettre dans la manche.
+ - Maintenant, cousu/serge le ribbing à la manche
+ - Répéter pour l'autre manche
 
-### Step 6: Attach the hem
+### Étape 6 : Attacher l'ourlet
 
- - Do for the hem as your did for the cuffs
- - Measure the width of Sven at the hem
- - Cut a piece of ribbing that 1.9 times this length and 7cm/3inch wide
- - You may need to attach different pieces if your ribbing fabric isn't wide enough
- - Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
- - Turn your Sven inside-out
- - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven body
- - Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.
- - Now, sew/serge the ribbing to the body
+ - Faites pour l'ourlet comme vous l'avez fait pour les poignets
+ - Mesurer la largeur de Sven à l'ourlet
+ - Coupez un morceau de corniche 1,9 fois cette longueur et une largeur de 7cm/3"
+ - Il se peut que vous deviez attacher des pièces différentes si votre étoffe n'est pas assez large
+ - Plier la bordure double le long du côté le plus long et coudre ensemble le bord pour avoir un anneau continu
+ - Sortez votre Sven de votre intérieur
+ - Pliez l'anneau de corniche avec le bon côté vers l'extérieur, et glissez le côté plié dans votre corps intérieur / extérieur
+ - Alignez le côté coupé du cône avec le bord du corps et fixez-le en place. Le ruban est un peu plus court, donc étirez-le un peu en épinglant pour le mettre dans le corps.
+ - Maintenant, cousu/serge le ruban vers le corps
 
 

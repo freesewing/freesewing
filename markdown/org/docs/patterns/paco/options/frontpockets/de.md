@@ -1,2 +1,2 @@
 
-Whether to include front pockets (on the side seam) or not.
+Ob die Vordertaschen (seitliche Naht) enthalten sind oder nicht.

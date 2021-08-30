@@ -1,14 +1,14 @@
-![Centerback dart](centerbackdart.svg)
+![Zentrierter Dart](centerbackdart.svg)
 
-Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
+Da niemand einen perfekt geradlinigen Rücken hat, ist dieses Muster mit 0,5 cm in der Mitte des Halsrückens erhältlich.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
-This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
+Wenn der Rücken ein bisschen nach vorne fällt, neigt der Stoff dazu, am Rücken des Halses zu schwimmen. Ohne Ärmel oder Kragen wird die Halslinie zum Griff.
+Mit dieser Option wird der Stoff an der Rückseite des Halses nach innen gespannt. Es tut dies standardmäßig um 0,5 cm, aber Sie können diesen Wert erhöhen oder verringern.
 
-Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
+Technisch gesehen ist dies kein Dart, aber ich wusste nicht, wie man es sonst nennen sollte. Vorschläge sind willkommen.
 
 </Note>

@@ -1,7 +1,11 @@
-![The back rise option on Bruce](./backrise.svg)
+![Opción de retroceso en Bruce](./backrise.svg)
 
-How much extra rise do you want at the back?
+¿Cuánto aumento adicional quieres a la espalda?
 
-This factor will raise the waist at the back of your boxers only.
+Este factor sólo aumentará la cintura en la parte posterior de tus boxeadores.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Si quieres levantar la cintura en general, eso es lo que hace la opción **rise**
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bruce_backrise_sample.svg "Efecto de esta opción en el patrón")
