@@ -167,6 +167,7 @@ jaeger:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 models:
   peer:
     '@freesewing/utils': *freesewing
