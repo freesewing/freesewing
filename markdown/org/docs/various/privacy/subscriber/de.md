@@ -1,5 +1,5 @@
 ---
-title: How we use your subscriber data
+title: Wie wir Ihre Abonnentendaten verwenden
 order: 20
 ---
 
@@ -13,7 +13,7 @@ order: 20
 
 ##### Für wie lange behalten wir sie?
 
-- As long as you remain subscribed
+- Solange Sie abonniert bleiben
 
 ##### Teilen wir sie?
 
@@ -23,6 +23,6 @@ order: 20
 
 Diese Daten werden für jede Person gespeichert, die unseren Newsletter abonniert.
 
-For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their [account data][1].
+Für Personen, die ein Konto auf der Website haben, die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, wir speichern keine zusätzlichen persönlichen Daten, da wir bereits ihre E-Mail in der Datei [Kontodaten][1] haben.
 
 </Note>

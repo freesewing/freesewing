@@ -1,7 +1,11 @@
 ---
-title: Back hem slope
+title: Hinterer Saum Hang
 ---
 
-![The effect of the back hem slope option on the pattern](sample.png)
+![Der Effekt der Option Rücken-Shape auf das Muster](sample.png)
 
-The **back hem slope** option controls the slope of the hem at the back.
+Die Option **Rücksaum** steuert die Neigung des Saum auf der Rückseite.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backhemslope_sample.svg "Effekt dieser Option auf das Muster")

@@ -1,11 +1,11 @@
 ---
-title: Trimming
+title: Schneiden
 ---
 
-![Seam allowance being trimmed](trimming.jpg)
+![Seam Erlaubnis gekürzt](trimming.jpg)
 
-Trimming, or to trim, is cutting away excessive [seam allowance](/docs/sewing/seam-allowance).
+Schneiden oder abschneiden schneidet übermäßige [Nahtmenge](/docs/sewing/seam-allowance) ab.
 
-Often the goal of trimming is to reduce bulk in the seams of a garment.
+Oft ist das Ziel des Schneiden der Schüssel in den Nähten eines Kleidungsstückes zu reduzieren.
 
-> Picture by [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)
+> Bild von [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)

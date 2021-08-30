@@ -1,16 +1,16 @@
 ---
-title: What are those symbols next to my measurements?
+title: Wat zijn die symbolen naast mijn metingen?
 ---
 
-You might have noticed these kind of icons next to your measurements:
+Mogelijk heeft u dit soort pictogrammen naast uw afmetingen opgemerkt:
 <Gauge val={0} theme='light' />
 
-The value they represent shows how far the measurement deviates from the proportions we test our designs with:
+De waarde die ze vertegenwoordigen toont hoe ver de meting afwijkt van de verhoudingen waarmee we onze ontwerpen testen met:
 
 <table spaces-before="0">
   <tr>
     <th>
-      Icon
+      Pictogram
     </th>
     
     <th>
@@ -24,7 +24,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">significantly lower</strong>
+      De waarde is <strong x-id="1">aanzienlijk lager</strong>
     </td>
   </tr>
   
@@ -34,7 +34,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a good bit lower</strong>
+      De waarde is <strong x-id="1">een goed beetje lager</strong>
     </td>
   </tr>
   
@@ -44,7 +44,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a bit lower</strong>
+      De waarde is <strong x-id="1">een beetje lager</strong>
     </td>
   </tr>
   
@@ -54,7 +54,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">very close</strong>
+      De waarde is <strong x-id="1">heel dicht bij</strong>
     </td>
   </tr>
   
@@ -64,7 +64,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">very close</strong>
+      De waarde is <strong x-id="1">heel dicht bij</strong>
     </td>
   </tr>
   
@@ -74,7 +74,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a bit higher</strong>
+      De waarde is <strong x-id="1">een beetje hoger</strong>
     </td>
   </tr>
   
@@ -84,7 +84,7 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">a good bit higher</strong>
+      De waarde is <strong x-id="1">een beetje hoger</strong>
     </td>
   </tr>
   
@@ -94,26 +94,26 @@ The value they represent shows how far the measurement deviates from the proport
     </td>
     
     <td>
-      The value is <strong x-id="1">significantly higher</strong>
+      De waarde is <strong x-id="1">aanzienlijk hoger</strong>
     </td>
   </tr>
 </table>
 
 
-These indicators serve a dual purpose:
+Deze indicatoren dienen een tweeledig doel:
 
- - Help you spot mistakes in your measurements (you know best where your outliers are)
- - Help you anticipate where our software might struggle to come up with good results
+ - Help je fouten te vinden in je metingen (je weet het beste waar je buitenstaanders zijn)
+ - Help je te anticiperen op waar onze software moeite zou kunnen hebben met goede resultaten
 
 <Note>
 
-##### There are no good or bad measurements
+##### Er zijn geen goede of slechte metingen
 
-Designing patterns for a variety of shapes is hard work.
+patronen ontwerpen voor verschillende vormen is moeilijk.
 
-Unlike other pattern companies, we don't limit ourselves to a particular size range.
-All people and all bodies are welcome here.
+In tegenstelling tot andere patroonbedrijven beperken we onszelf niet tot een bepaald bereik van de grootte.
+Alle mensen en organen zijn hier welkom.
 
-If it turns out it doesn't work for you, please [let us know](https://discord.freesewing.org/) and we'll try to do better.
+Als het voor jou niet werkt, laat het ons dan weten](https://discord.freesewing.org/) en we zullen het proberen te verbeteren.
 
 </Note>

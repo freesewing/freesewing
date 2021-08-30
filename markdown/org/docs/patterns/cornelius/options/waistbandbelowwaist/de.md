@@ -1,5 +1,5 @@
 ---
-title: Lower waistband
+title: Unterer Taillenband
 ---
 
-This option allows you to lower the waistband below your (natural) waist.
+Mit dieser Option kannst du das Taillenband unter deine (natürliche) Taille senken.

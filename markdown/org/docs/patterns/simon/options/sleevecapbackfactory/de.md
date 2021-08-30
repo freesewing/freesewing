@@ -1,6 +1,6 @@
-![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
+![Die vertikale Position des Rückenbiegepunkts](./sleevecapbackfactory.svg)
 
-This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.
+Diese Option steuert die vertikale Positionierung der Ärmelschaltung auf der Rückseite des Ärmels.
 
 <Tip>
 
@@ -9,3 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleevecapbackfactory_sample.svg "Effekt dieser Option auf das Muster")

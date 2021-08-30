@@ -1,4 +1,4 @@
 
 ![Emplacement des pinces devant](frontdartplacement.svg)
 
-Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
+Emplacement de la dart avant en proportion de votre circonférence de poitrine. Des nombres plus élevés le déplacent plus vers le côté.

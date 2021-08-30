@@ -1,9 +1,9 @@
 ![Manschettenknopfreihen](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Möchten Sie eine einzelne Taste auf Ihrer Behältermanschette oder zwei?
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Dies gilt nur für Fässer. Wenn Sie also eine französische Manschette als Manschette wählen, wird dies ignoriert.
 
 </Note>

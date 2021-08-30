@@ -1,2 +1,2 @@
 
-Constrols the width of the back pockets.
+Bestätigt die Breite der hinteren Taschen.

@@ -1,10 +1,10 @@
 ![Longitud de la vista de la manga](sleeveplacketlength.svg)
 
-How long do you want the sleeve placket to be?
+¿Cuánto tiempo quieres que sea la placa de manga?
 
 <Note>
 
-The longer your sleeve placket is, the easier it is to get out of your shirt sleeve. 
-It also influences what things will look like when you roll up your sleeves
+Cuanto más larga sea la placa de manga, más fácil será salir de la camiseta. 
+También influye en cómo se verán las cosas cuando te despliegues
 
 </Note>

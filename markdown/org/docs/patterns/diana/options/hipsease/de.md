@@ -1,3 +1,3 @@
-![The hips ease option on Diana](./hipsease.svg)
+![Die Hüfte Leichtigkeit auf Diana](./hipsease.svg)
 
-This option controls the amount of ease at the hips.
+Diese Option steuert die Menge an Leichtigkeit an den Hüften.

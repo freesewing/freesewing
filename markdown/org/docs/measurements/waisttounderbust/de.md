@@ -2,6 +2,6 @@
 title: Taille bis Unterbrustweite
 ---
 
-The **waist to underbust** is the measurement from your waist up towards your underbust link (where your bra band sits).
+Die **Taille zum Unterbrechen** ist die Messung von deiner Taille nach oben hin zu deiner Unterbruchverbindung (wo sich dein BH befindet).
 
-To measure your **waist to underbust**, locate the height of both your waist and underbust, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Um deine **Taille zu unterbrechen**zu messen, suche die Höhe der Taille und des Unterbruchs und misst den vertikalen Abstand zwischen ihnen. Achten Sie darauf, an der Seite Ihres Körpers zu messen.

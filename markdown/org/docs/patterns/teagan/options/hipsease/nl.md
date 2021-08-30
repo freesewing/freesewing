@@ -1,2 +1,2 @@
 
-Controls the amount of ease at the hips. In other words, this controls the ease at the bottom of your T-shirt
+Bepaalt de hoeveelheid overwijdte aan de heupen. Met andere woorden, dit bepaalt het gemak aan de onderkant van je T-shirt

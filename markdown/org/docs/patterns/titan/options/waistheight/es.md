@@ -1,5 +1,5 @@
 
-Controls the height of the waist, where:
+Controla la altura de la cintura, donde:
 
- - 100% : The waist of the trousers sits at the waist line
- - 0% : The waist of the trousers sits at the hip line
+ - 100% : La cintura de los pantalones se encuentra en la cintura
+ - 0% : La cintura de los pantalones se encuentra en la línea de cadera

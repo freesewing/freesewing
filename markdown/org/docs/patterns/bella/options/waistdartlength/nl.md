@@ -1,7 +1,11 @@
 ---
-title: Waist dart length
+title: Lengte neep taille
 ---
 
-![The effect of the waist dart length option on the pattern](sample.png)
+![Het effect van de lengte van de neep van de taille op het patroon](sample.png)
 
-The **waist dart length** option controls the length of the waist dart towards the bust.
+De lengte van de **neep** optie bepaalt de lengte van de neep van de taille naar de bust.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_waistdartlength_sample.svg "Effect van deze optie op het patroon")

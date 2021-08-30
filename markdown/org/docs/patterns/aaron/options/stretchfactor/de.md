@@ -1,7 +1,11 @@
-![The stretch factor option on Aaron](./stretchfactor.svg)
+![Die Stretch-Faktor Option auf Aaron](./stretchfactor.svg)
 
-How much does your fabric stretch?  Choose 0% if your fabric does not stretch.
+Wie weit streckt sich dein Stoff?  Wählen Sie 0%, wenn Ihr Stoff nicht streckt.
 
-> ##### This option does only impact stretch one-way (horizontal).
+> ##### Diese Option wirkt sich nur auf eine Streckung (horizontal) aus.
 > 
 > Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_stretchfactor_sample.svg "Effekt dieser Option auf das Muster")

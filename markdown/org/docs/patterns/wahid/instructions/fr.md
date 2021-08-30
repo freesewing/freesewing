@@ -1,285 +1,285 @@
 ### Étape 1 : Thermocoller l'entoilage
 
-#### Press interfacing to pocket welts
+#### Appuyer sur l'interfaçage vers les douilles de poche
 
-![Press interfacing to pocket welts](01a.png)
+![Appuyer sur l'interfaçage vers les douilles de poche](01a.png)
 
-Place your pocket welt with the good side down, and your pocket interfacing on top.
+Placez votre poche avec le bon côté vers le bas, et votre poche interfacée sur le dessus.
 
-The interfacing is a bit shorter than the welt, so make sure to align the side that has the help line marked on it.
+L'interface est un peu plus courte que la soudure, alors assurez-vous d'aligner le côté qui a la ligne d'aide marquée dessus.
 
-For each pocket, press the interfacing piece to the bad side of the pocket welt.
+Pour chaque poche, appuyez sur la pièce interfacée sur le mauvais côté de la poche.
 
-#### Press interfacing to fronts
+#### Appuyer sur l'interface vers les devants
 
-![Press interfacing to pocket fronts](01b.png)
+![Appuyer sur l'interfaçage sur les devants de poche](01b.png)
 
-Place your front with the good side down, and your interfacing on top.
+Placez votre front avec le bon côté vers le bas et votre interface vers le haut.
 
-Press the interfacing in place.
+Appuyez sur l'interfaçage en place.
 
-> **Take your time**
+> **Prenez votre temps**
 > 
-> Don't just iron this on to get it over with, you want to really press that interfacing onto your fabric so that it fuses well.
+> Ne le ferez pas simplement pour le repasser, vous voulez vraiment appuyer sur votre tissu pour qu'il se fusionne.
 > 
-> Place your iron down and lean on it for 10 seconds or so before you move on to the next spot to repeat the process.
+> Placez votre fer à repasser et reposez-vous sur lui pendant 10 secondes avant de passer au point suivant pour répéter le processus.
 
-### Step 2: Join front facing and lining
+### Étape 2 : Rejoignez la face avant et la doublure
 
-#### Sew facing to lining
+#### Coudre face à la doublure
 
-![Sew facing to lining](02a.png)
+![Coudre face à la doublure](02a.png)
 
-Place your front facing and lining with good sides together. Pin the edges of the facing/lining boundary in place.
+Placez votre face avant et votre doublure avec de bons côtés ensemble. Épingler les bords de la bordure face/doublure en place.
 
-Sew them together.
+Les coudre ensemble.
 
-#### Press open seam allowance
-Press open the seam allowance between facing and lining.
+#### Appuyer sur la pression sur la marge de couture ouverte
+Appuyez sur ouvrir la marge de couture entre la face et la garniture.
 
-### Step 3: Close all darts
+### Étape 3 : Fermer toutes les fléchettes
 
-![Close all darts](03a.png)
+![Fermer toutes les fléchettes](03a.png)
 
-#### Close back darts
+#### Fermer les fléchettes arrière
 
-Fold your back with good sides together, and sew the back dart.
+Repliez le dos avec de bons côtés ensemble et cousez la fléchette arrière.
 
-> Don't forget to do the same for the lining
+> N'oubliez pas de faire la même chose pour la doublure
 
-#### Close front darts
-Fold your front (and the interfacing fused to it) with good sides together, and sew the front dart.
+#### Fermer les fléchettes avant
+Repliez votre front (et l'interface-face fusionnée) avec de bons côtés ensemble, et cousez la fléchette avant.
 
-### Step 4: Press all darts
+### Étape 4 : Appuyez sur toutes les fléchettes
 
-![Press all darts](04a.png)
+![Appuyez sur toutes les fléchettes](04a.png)
 
-#### Press the front darts
-Once cut open, press the front darts open.
+#### Appuyez sur les flèches avant
+Une fois coupé ouvert, appuyez sur les fléchettes avant ouvertes.
 
-#### Press the back darts
-If you cut open the back darts, press them open. If not, press them to the side.
+#### Appuyez sur les fléchettes arrière
+Si vous coupez les fléchettes arrière, appuyez sur les ouvrir. Si ce n'est pas le cas, appuyez sur le côté.
 
-> Don't forget to do the same for the lining
+> N'oubliez pas de faire la même chose pour la doublure
 
-### Step 5: Construct the pockets
+### Étape 5 : Construire les poches
 
-#### Attach the pocket bag to the pocket welt
+#### Attachez le sac de poche à la poche
 
-![Attach the pocket bag to the pocket welt](05a.png)
+![Attachez le sac de poche à la poche](05a.png)
 
-Place your pocket bag down with the good side up, and your pocket welt on top of it with the good side down.
+Placez votre sac de poche vers le bas avec le bon côté vers le haut, et votre poche vers le haut avec le bon côté vers le bas.
 
-Align the straight side of the bag with the side of the welt that has no interfacing, and sew them together at the standard seam allowance.
+Alignez le côté droit du sac avec le côté de la soudure qui n'a aucune interface, et les coudre ensemble à la marge de couture standard.
 
-#### Press seam open
-When you are done, press open this seam.
+#### Appuyer sur la couture ouverte
+Lorsque vous avez terminé, appuyez sur ouvrir cette couture.
 
-#### Mark where your pocket needs to go
+#### Marquer où votre poche doit aller
 
-![Mark where your pocket needs to go](05a.png)
+![Marquer où votre poche doit aller](05a.png)
 
-Your front pattern piece has a helpline on it to show where the welt pocket should go. It's two half rectangles that got joined together when you closed the dart to form the shape of your welt pocket.
+Votre pièce de patron avant a une ligne d'aide sur elle pour montrer où la poche de soudure doit aller. C'est deux demi-rectangles qui se sont réunis en fermant la dart pour former la forme de votre poche de soudure.
 
-If you haven't marked the four corners of that rectangle yet, you should do so now.
+Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez le faire maintenant.
 
-> The pocket sits under a slight angle on your pattern. Going forward, in the illustrations, I will draw the pocket straight as that makes things easier.
+> La poche est assise sous un léger angle sur votre patron. En avançant, dans les illustrations, je vais dessiner la poche droite car cela facilite les choses.
 
-#### Attach pocket welt and pocket facing
+#### Fixer la pochette et la poche face
 
-![Attach pocket welt and pocket facing](05c.png) ![Attach pocket welt and pocket facing](05d.png)
+![Fixer la pochette et la poche face](05c.png) ![Fixer la pochette et la poche face](05d.png)
 
-Place your front piece down with the good side up. We're going to attach the welt to the bottom line of your pocket outline, and the facing to the top line.
+Placez votre pièce avant vers le bas avec le bon côté vers le haut. Nous allons attacher la soudure à la ligne inférieure de votre contour de poche et à la ligne de face vers le haut.
 
-> If you've never made a welt pocket before, it can be a bit counterintuitive to attach the pocket on the outside of the garment. Pocket should be on the inside, right?
+> Si vous n'avez jamais fait de poche de soudure auparavant, il peut être un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
 > 
-> Relax, the pocket will end up on the inside
+> Détendez-vous, la poche se retrouvera à l'intérieur
 
-Both your pocket welt and your pocket facing have a help line on them. That line needs to line up with the long edges of your pocket.
+Tant votre poche que votre poche orientée ont une ligne d'aide sur elles. Cette ligne doit être alignée sur les bords longs de votre poche.
 
-Place the pocket welt at the bottom, and the pocket facing on the top, both with their good side down.
+Placez la poche vers le bas et la poche vers le haut, les deux avec leur bon côté vers le bas.
 
-Carefully align their helpline on the pocket outline. They should now sit side by side, and just bump into each other at the middle of your pocket.
+Alignez soigneusement leur ligne d'aide sur le contour de la poche. Ils devraient maintenant s’asseoir côte à côte et s’enfoncer les uns dans les autres au milieu de votre poche.
 
-Now sew along the helpline which marks the long edge of your pocket.
+Maintenant coudre le long de la ligne d’assistance qui marque le bord long de votre poche.
 
-> It is important that the lines you sew now form the long edges of a perfect rectangle. This will determine the shape of your pocket, so if you make one line longer than the other, or if they are not parallel or mis-aligned, you pocket will look bad.
+> Il est important que les lignes que vous coudez forment maintenant les bords longs d'un rectangle parfait. Cela déterminera la forme de votre poche, donc si vous faites une ligne plus longue que l'autre, ou s'ils ne sont pas parallèles ou mal alignés, votre poche sera mauvaise.
 
-#### Cut open the pocket
+#### Couper la poche
 
-![Cut open the pocket](05c.png)
+![Couper la poche](05c.png)
 
-Time to carefully cut open the pocket. Start in the middle of the pocket, and cut towards along the longest edges towards the side.
+Il est temps de couper soigneusement la poche. Commencez au milieu de la poche et coupez le long des bords les plus longs vers le côté.
 
-At the edges of your pocket you need to stop cutting open the center and instead cut towards the end of your line of stitches under 45 degrees.
+Aux bords de votre poche, vous devez arrêter d'ouvrir le centre et au lieu de couper vers la fin de votre ligne de points de moins de 45 degrés.
 
-> This small triangle you are cutting at the end is important. Make sure to aim carefully as you should cut right up to the end of your stitches, without cutting into the stitches.
+> Ce petit triangle que vous coupez à la fin est important. Assurez-vous de bien cibler car vous devriez couper jusqu'à l'extrémité de vos points sans les couper.
 
-#### Press open the seam allowance
+#### Appuyez sur ouvrir la marge de couture
 
-![Press open the seam allowance](05c.png)
+![Appuyez sur ouvrir la marge de couture](05c.png)
 
-Press open the seam allowance along the long edges of your pocket.
+Appuyez sur ouvrir la marge de couture le long des bords longs de votre poche.
 
-#### Bring the pocket facing to the back and press
+#### Apportez la poche face à l'arrière et appuyez sur
 
-![Bring the pocket facing to the back and press](05g.png)
+![Apportez la poche face à l'arrière et appuyez sur](05g.png)
 
-Flip the pocket facing to the back side and press it down.
+Retournez la poche face à l'arrière et appuyez dessus.
 
-#### Press down the triangles at the short sides
+#### Appuyez sur les triangles sur les côtés courts
 
-![Press down the triangles at the short sides](05h.png)
+![Appuyez sur les triangles sur les côtés courts](05h.png)
 
-Move your pocket facing out of the way to reveal those little traingles at the side of your pocket.
+Déplacez votre poche vers le haut pour révéler ces petits traingles sur le côté de votre poche.
 
-Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
+Repliez-les en vous assurant de garder votre poche en ouvrant un rectangle propre, puis enfoncez-les.
 
-#### Bring the pocket welt to the back, fold and press
+#### Amenez la poche à l'arrière, le pli et appuyez sur
 
-![Bring the pocket welt to the front, fold and press](05i.png) ![Bring the pocket welt to the front, fold and press](05j.png)
+![Amenez la poche à l'avant, le pliage et appuyez sur](05i.png) ![Amenez la poche à l'avant, le pliage et appuyez sur](05j.png)
 
-Flip the pocket welt with the attache pocket back tot he back side.
+Retournez la poche avec le dos de la poche attachée sur le côté arrière.
 
-Fold your welt down at the point where it reaches the top of the pocket. The welt should cover the entire pocket opening.
+Pliez votre welt au point où il atteint le sommet de la poche. La soude doit couvrir la totalité de l'ouverture de poche.
 
-> The illustration shows this from the back as it's easier to see what is going on this way. However, you should check from the front to make sure your welt pocket looks good.
+> L'illustration le montre depuis le dos car il est plus facile de voir ce qui se passe de cette façon. Cependant, vous devriez vérifier à l'avant pour vous assurer que votre poche de soudure est bonne.
 
-#### Sew down the pocket triangles
+#### Coudre les triangles de poche
 
-![Sew down the pocket triangles](05k.png)
+![Coudre les triangles de poche](05k.png)
 
-Put your front down with the good side up and make sure the pocket facing and welt lie flat.
+Placez votre devant avec le bon côté vers le haut et assurez-vous que la poche orientée et soudée repose à plat.
 
-Fold your front over vertically at the edge of your pocket to reveal that little triangle at the short side of your pocket opening.
+Pliez le devant verticalement au bord de votre poche pour révéler ce petit triangle sur le côté court de votre ouverture.
 
-Sew this triangle down by sewing right next to the fold, and pocket edge.
+Coudre ce triangle en cousant à droite du pli, et le bord de la poche.
 
-#### Close the pocket bag
+#### Fermer le sac de poche
 
-![Close the pocket bag](05l.png)
+![Fermer le sac de poche](05l.png)
 
-Sew your pocket facing to the pocket bag to finish your pocket.
+Coudre votre poche face au sac de poche pour finir votre poche.
 
-> This should go without saying, but be careful not to sew your pocket bag to the front of your waistcoat.
+> Cela devrait aller de soi, mais attention à ne pas coudre votre sac de poche à l'avant de la ceinture.
 
-#### Press your completed pocket
+#### Appuyez sur votre poche terminée
 
-![Press your completed pocket](05m.png)
+![Appuyez sur votre poche terminée](05m.png)
 
-When you're done, give your pocket a good final press.
+Lorsque vous avez terminé, donnez à votre poche une bonne pression finale.
 
-### Step 6: Center back seam
+### Etape 6: Centrer la couture du dos
 
-![Sew and press the center back seam](06a.png)
+![Coudre et appuyer sur la couture centrale](06a.png)
 
-Put your two back pieces with their good side together and sew the center back seam.
+Placez vos deux pièces de dos avec leur bon côté et cousez la couture centrale de l'arrière.
 
-When you're done, press open this seam.
+Lorsque vous avez terminé, appuyez sur ouvrir cette couture.
 
-> Don't forget to do the same for the lining
+> N'oubliez pas de faire la même chose pour la doublure
 
-### Step 7: Join back to fronts
+### Étape 7 : Rejoignez les devants
 
-![Join back to fronts](07a.png)
+![Rejoindre les devants](07a.png)
 
-Put your back down with the good side up and put your fronts on it with the good side down. Align the side seams, pin and sew.
+Montez le dos avec le bon côté vers le haut et mettez vos devants sur le bon côté vers le bas. Alignez les coutures latérales, la broche et la couture.
 
-When you're done, press open these seams.
+Lorsque vous avez terminé, appuyez sur ouvrir ces coutures.
 
-### Step 8: Join the shoulders
+### Étape 8: Rejoignez les épaules
 
-![Join the shoulders](08a.png)
+![Rejoignez les épaules](08a.png)
 
-Align the shoulder seams, sew them, and press open the seam allowance.
+Alignez les coutures des épaules, coupez-les et appuyez sur ouvrir la marge de couture.
 
-> Don't forget to do the same for the lining
+> N'oubliez pas de faire la même chose pour la doublure
 
-### Step 9: Insert the lining
+### Étape 9 : Insérez la ligne
 
-#### Slide lining into the wasitcoat
+#### Faire glisser la doublure dans le wasitcoat
 
-![Slide lining into the waistcoat](09a.png)
+![Faire glisser la doublure dans la ceinture](09a.png)
 
-Place your lining in your waistcoat, good sides together. In other words, the waistcoat should have the good side in and bad side out. The lining should have the bad side in and good side out.
+Placez votre doublure dans votre manteau de taille, de bons côtés ensemble. En d'autres termes, le manteau de taille devrait avoir le bon côté et le mauvais côté à l'extérieur. La doublure devrait avoir le mauvais côté et le bon côté.
 
-#### Pin lining to fabric
+#### Épingler la doublure sur le tissu
 
-![Pin linng to fabric](09b.png)
+![Épingler le lin sur le tissu](09b.png)
 
-Align the lining with the fabric edge, and pin it in place.
+Alignez la doublure avec le bord du tissu, puis fixez-la en place.
 
-Start at center back, and follow the neckline down the front closure. Work your way around the hem, but leave about a 15cm gap at the center back.
+Commencez au centre de l'arrière et suivez le coude vers le bas de la fermeture avant. Faites le tour de l'ourlet, mais laissez un écart de 15 cm au centre de l'arrière.
 
-#### Sew lining to fabric
+#### Coudre la doublure en tissu
 
-![Sew linng to fabric](09c.png)
+![Coudre le lin en tissu](09c.png)
 
-With your lining pinned neatly in place, sew lining and fabric together.
+Avec votre doublure épinglée bien en place, coudre la doublure et le tissu ensemble.
 
-Do not forget to leave that 15cm gap at the center back.
+N'oubliez pas de laisser cet écart de 15 cm au centre de l'arrière.
 
-#### Turn waistcoat and press edges
+#### Tournez la ceinture et appuyez sur les bords
 
-![Turn waistcoat and press edgess](09d.png)
+![Tournez la ceinture et appuyez sur le bord](09d.png)
 
-Reach through the gap you left open at the hem, and turn your waistcoat.
+Atteignez l’écart que vous avez laissé ouvert à l’ourlet et tournez votre manteau de taille.
 
-Press the edges you've just sewn, making sure to roll the fabric a bit so that the lining is always hidden.
+Appuyez sur les bords que vous venez de coudre, assurez-vous de rouler un peu le tissu afin que la doublure soit toujours cachée.
 
-### Step 10: Finish the armholes
+### Étape 10 : Terminer les armures
 
-#### Pin back the fabric seam allowance
+#### Épingler la marge de couture en tissu
 
-![Pin back the fabric seam allowance](10a.png)
+![Épingler la marge de couture en tissu](10a.png)
 
-All along the armhole, pin back the seam allowance of your waistcoat fabric. While doing so, keep your lining out of the way.
+Tout au long de l'embouteillage, enfoncez la couture du tissu de votre ceinture. Tout en agissant de la sorte, gardez votre maquillage hors d'atteinte.
 
-#### Pin down lining
+#### Épingler la ligne vers le bas
 
-![Pin down lining](10b.png)
+![Épingler la ligne vers le bas](10b.png)
 
-Now fold back your lining a bit before the edge of the armhole and pin it down.
+Maintenant, pliez votre doublure un peu avant le bord de l'armure et enfoncez-la.
 
-#### Hand-sew the lining to the fabric
+#### Coudre la doublure à la main sur le tissu
 
-![Hand-sew teh lining to the farbric](10c.png)
+![Coudre à la main la doublure de la farbrique](10c.png)
 
-Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
+Utilisez un point de couture pour coudre à la main la doublure sur le tissu le long de l'armure.
 
-### Step 11: Finish the hem
-Remember that gap we didn't close in step 9? Time to close it.
+### Étape 11 : Terminer l'ourlet
+Rappelez-vous que nous n'avons pas comblé cette lacune à l'étape 9? Il est temps de le fermer.
 
-Use a slipstitch to hand-sew the lining to the fabric and close the hem.
+Utilisez un point de couture pour coudre à la main la doublure sur le tissu et refermez l'ourlet.
 
-### Step 12: Make the buttonholes
+### Étape 12: Faire les trous de boutons
 
-![Make the buttonholes](12a.png)
+![Faire les trous de boutons](12a.png)
 
-If you haven't done so yet, transfer the buttonhole placement from your pattern onto your fabric.
+Si vous ne l'avez pas encore fait, transférez le bouton de votre patron sur votre tissu.
 
-Make those buttonholes.
+Fais ces boutontrous.
 
-### Step 13: Attach the buttons
+### Étape 13: Attacher les boutons
 
-![Attach the buttons](13a.png)
+![Joindre les boutons](13a.png)
 
-Pin your waistcoat closed and transfer the location of your buttonholes to the button side.
+Épinglez votre manteau de taille fermé et transférez l'emplacement de vos trous de boutons sur le côté du bouton.
 
-Sew on those buttons.
+Coudre sur ces boutons.
 
-> You could also transfer the location of the buttons from the pattern. However, transferring the buttonholes you just made assures you that the buttons and buttonholes will line up, even if your buttonhole(s) is/are ever so slightly off.
+> Vous pouvez également transférer l'emplacement des boutons à partir du modèle. Cependant, le transfert des trous de boutons que vous venez de faire vous assure que les boutons et les trous de boutons s'alignent, même si votre ou vos boutonnier(s) sont un peu éteints.
 
-### Step 14: Optional: Pick-stitch the edges
+### Étape 14: Optionnel: Coller les bords
 
-![You can optionally pick-stitch the edges of your waistcoat](14a.png)
+![Vous pouvez éventuellement piocher les bords de votre coque de taille](14a.png)
 
-If you'd like, you can pick-stitch around the edges of your waistcoat.
+Si vous le souhaitez, vous pouvez piocher autour des bords de votre manteau de taille.
 
-Pick-stitching needs to be done by hand. You run a simple stitch a few mm from the edges of your waistcoat, but only let your stitches surface for a few threads. You've certainly seen it as a finish on suit jackets.
+Le piquage doit être fait à la main. Vous courez un simple point à quelques mm des bords de votre manteau de taille, mais ne laissez vos points de surface que pour quelques fils. Vous l'avez certainement vu comme une finale sur des vestes en costume.
 
-> You can pick-stitch with thread of the same colour, or use a contrasting colour if you're feeling bold.
+> Vous pouvez piocher avec un fil de la même couleur ou utiliser une couleur contrastante si vous vous sentez audacieux.
 
-> While pick-stitching adds a distinctive look, it also locks your fabric to your lining/facing which prevents things from shifting around.
+> Bien que le piquage ajoute un aspect distinctif, il enroule également votre tissu dans votre garniture/face ce qui empêche les choses de se déplacer.
 
-After this, you probably want to iron your waistcoat.
+Après cela, vous voudrez probablement repasser votre manteau de taille.

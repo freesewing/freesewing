@@ -1,11 +1,11 @@
 ---
-title: Trimming
+title: Trampa
 ---
 
-![Seam allowance being trimmed](trimming.jpg)
+![Permiso de costura siendo recortado](trimming.jpg)
 
-Trimming, or to trim, is cutting away excessive [seam allowance](/docs/sewing/seam-allowance).
+Cortar o recortar está recortando [exceso de permisos de costura](/docs/sewing/seam-allowance).
 
-Often the goal of trimming is to reduce bulk in the seams of a garment.
+A menudo el objetivo de la trinchera es reducir la masa en las costuras de una prenda.
 
-> Picture by [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)
+> Imagen de [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)

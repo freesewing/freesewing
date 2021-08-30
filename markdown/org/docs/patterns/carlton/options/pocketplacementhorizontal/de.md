@@ -1,2 +1,6 @@
 
-Controls the location of the pockets horizontally (more left or right).
+Steuert die Position der Taschen horizontal (mehr links oder rechts).
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_pocketplacementhorizontal_sample.svg "Effekt dieser Option auf das Muster")

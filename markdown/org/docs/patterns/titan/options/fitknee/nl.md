@@ -3,10 +3,10 @@ Bepaalt de breedte van de broekspijpen.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Dit patroon kwam in twee variaties. Theodore en Theo, de laatste heeft een afgeslankte
+.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Sinds FreeSewing v2.0 hebben we deze samengevoegd tot een enkel patroon en deze optie
+laat je toe om de breedte van de been te veranderen.
 
 </Note>

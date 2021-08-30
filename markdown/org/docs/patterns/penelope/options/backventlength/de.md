@@ -1,2 +1,2 @@
-This controls the length of the back vent as a percentage of the skirt length.
+Dies steuert die Länge des hinteren Schlotes als Prozentsatz der Röhrenlänge.
 

@@ -1,2 +1,6 @@
 
-Controls the size of the welts on the inner pocket.
+Bepaalt de afmeting van de paspels aan de binnenzak.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_innerpocketweltheight_sample.svg "Effect van deze optie op het patroon")

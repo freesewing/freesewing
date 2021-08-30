@@ -1,12 +1,12 @@
-![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
+![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)
 
 
-Do you want an extra button to button up your cuff more tightly?
+¿Quieres un botón adicional para subir el corte más fuertemente?
 
-If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
+Si estás usando tu camisa bajo un jersey o cardíaco (muñeca) este botón te permite hacer tu corte más estrecho, por lo que no se agota todo feo.
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Esto sólo se aplica a los barriles. Así que si eliges un corte francés como estilo de taza, esto será ignorado.
 
 </Note>

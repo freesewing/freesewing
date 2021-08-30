@@ -1,4 +1,4 @@
 
-![Waist reduction ratio front](waistreductionratiofront.svg)
+![Ratio de réduction de taille avant](waistreductionratiofront.svg)
 
-Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping.
+Proportion de la taille à réduire dans la flèche avant. Affecte également la mise en forme du panneau latéral.

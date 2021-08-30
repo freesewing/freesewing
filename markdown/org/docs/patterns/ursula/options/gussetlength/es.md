@@ -1,1 +1,1 @@
-This option controls the length of the gusset.
+Esta opción controla la longitud del set de ráfagas.

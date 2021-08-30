@@ -1,61 +1,61 @@
 ---
-title: Motivation
+title: Motivación
 ---
 
 <Note>
 
-This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
+Esta es una nota personal de Joost De Cock -- el mantenedor de FreeSewing -- acerca de
+sus motivaciones para [el pledge de ingresos de FreeSewing (/docs/various/pledge/)
 
 </Note>
 
-You probably assume that we ask for money to keep the servers running. But that's not exactly true.
+Probablemente asuma que pedimos dinero para mantener los servidores en funcionamiento. Pero eso no es exactamente cierto.
 
-I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
+No sé si estás familiarizado con la frase **noblesse oblige** , pero esencialmente significa que el privilegio conlleva responsabilidad.
 
-I am privileged, and thus I have responsibilities. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
+Estoy privilegiado y, por lo tanto, tengo responsabilidades. Tengo la suerte de haber nacido en Europa Occidental, de tener un buen trabajo y un techo sobre mi cabeza.
 
-Could I use the money? Yes I could.  
-Do I need the money? No I don't.
+¿Puedo utilizar el dinero? Sí, podría.  
+¿Necesito dinero? No lo hago.
 
-##### The value of your support
+##### El valor de su apoyo
 
-The main risk to FreeSewing is the same as any open source project out there: maintainer burnout.
+El riesgo principal para FreeSewing es el mismo que cualquier proyecto de código abierto que hay: el mantenedor quemado.
 
 While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Keep up the good work**.
+Cuando te conviertes en un Patrón FreeSewing te das más que dinero. Para mí, el valor principal es el mensaje que me envían y otras personas que trabajan en esto. Y ese mensaje es: **Hey, estás haciendo una cosa que vale la pena. Mantén el buen trabajo**.
 
-##### The value of your money
+##### El valor de tu dinero
 
-It is not *just* about the money. But that doesn't mean the money is not important. Much to the contrary.
+No sólo ** sobre el dinero. Pero eso no significa que el dinero no sea importante. Muy al contrario.
 
-Raising money by doing something I love and then passing it on to charity allows me to sleep at night.
+Aumentar el dinero haciendo algo que me encanta y luego pasarlo a la caridad me permite dormir por la noche.
 
-I could volunteer at a soup kitchen, or teach underprivileged children how to code. But instead I’m working on FreeSewing.
+Podría ser voluntario en una cocina de sopa o enseñar a los niños desfavorecidos cómo programar. Pero en su lugar estoy trabajando en FreeSewing.
 
-Which is why all the money raised through FreeSewing goes to charity. It makes this project not only fun to do, but also socially responsible. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+Por eso todo el dinero recaudado a través de FreeSewing va a la caridad. Esto hace que este proyecto no sólo sea divertido de hacer, sino también socialmente responsable. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
 
-##### Charity is not sexy
-Here's the tricky part: People give less once they know the money goes to charity. I wish it wasn't the case, but it is.
+##### La caridad no es sexy
+Esta es la parte complicada: la gente da menos una vez que sabe que el dinero va a la caridad. Ojalá no fuera el caso, pero lo es.
 
-So we're presenting [our subscription options](/community/join) like you would see on a for-profit site. It seems more intuitive this way, and also just works better.
+Así que presentamos [nuestras opciones de suscripción](/community/join) como lo verías en un sitio con fines de lucro. Parece más intuitivo de esta manera, y también funciona mejor.
 
 Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
 
-##### Why MSF is my charity of choice
+##### Por qué MSF es mi caridad elegida
 
-There's a lot of misery in the world. As I watch the news, I often feel my faith in humanity slipping. Some of the most vulnerable people on this planet seem largely abandoned by rich countries and supra-national organisations.
+Hay mucha miseria en el mundo. Mientras veo las noticias, a menudo siento mi fe en la humanidad deslizándose. Algunas de las personas más vulnerables de este planeta parecen abandonadas en gran medida por los países ricos y las organizaciones a-nacionales.
 
-Yet somehow, wherever crisis strikes, there is a familiar banner flying that provides hope, and help. It's not the flag of the United Nations, nor is it the star spangled banner, or the blue and gold of the European Union.
+Sin embargo, de alguna manera, dondequiera que golpee la crisis, hay una bandera familiar que da esperanza y ayuda. No es la bandera de las Naciones Unidas, ni es la bandera de estrella, ni el azul y el oro de la Unión Europea.
 
-The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of M&eacute;decins Sans Fronti&egrave;res/Doctors Without Borders fly. Sometimes precariously, among the rubble of their bombed hospitals, but always there.
+Lo único que siempre me recuerda que la humanidad no ha abandonado completamente a estas personas es ver volar el estandarte de M&eacute;decins Sans Fronti&egrave;res/médicos sin fronteras. A veces precariamente, entre las ruinas de sus hospitales bombardeados, pero siempre allí.
 
-I can't think of a single symbol that reminds us that not everything is lost, and there's still good people out there.
+No puedo pensar en un solo símbolo que nos recuerde que no todo está perdido, y todavía hay gente buena por ahí.
 
-It is also one of the few organisations that has the global reach to go and help there where it's needed most. We're used to them working in poverty-stricken regions, but when the COVID-19 pandemic ripped our healthcare systems to shreds, _MSF_ stepped up to the plate, deploying their teams in Western Europe, in the US, and anywhere where the need was most acute.
+También es una de las pocas organizaciones que tiene el alcance global para ir y ayudar allí donde más se necesita. Estamos acostumbrados a que trabajen en regiones afectadas por la enfermedad, pero cuando la pandemia COVID-19 arrancó a nuestros sistemas de salud a astutos, _MSF_ aumentó a la plancha, desplegando sus equipos en Europa Occidental en Estados Unidos, y en cualquier lugar donde la necesidad era más acuta.
 
-I hope that this explains the choice of M&eacute;decins Sans Fronti&egrave;res/Doctors Without Borders as FreeSewing's charity of choice. And I hope you will join us in making the world a little bit better.
+Espero que esto explique la elección de M&eacute;decins Sans Fronti&egrave;res/Doctores Sin Fronteras como la caridad de la elección de FreeSewing. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
 
-So I am happy to make [this pledge](/docs/various/pledge/).
+Así que estoy feliz de hacer [esta promesa](/docs/various/pledge/).
 

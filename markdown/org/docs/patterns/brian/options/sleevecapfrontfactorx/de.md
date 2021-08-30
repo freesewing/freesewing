@@ -1,6 +1,6 @@
-![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
+![Die horizontale Position des vorderen Ablenkungspunkts](./sleevecapfrontfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap inflection point at the front of the sleeve.
+Diese Option steuert die horizontale Positionierung der Ärmelschaltung an der Vorderseite des Ärmels.
 
 <Tip>
 
@@ -8,3 +8,6 @@ See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the
 look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecapfrontfactorx_sample.svg "Effekt dieser Option auf das Muster")

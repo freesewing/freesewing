@@ -1,2 +1,2 @@
-This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+Deze instelling legt de taille op de rug. Onze taille zit niet horizontaal, maar ligt aan de rug. Deze set stelt je in staat om dit in de rug te verhogen als je het nodig hebt voor een goede pasvorm.
 

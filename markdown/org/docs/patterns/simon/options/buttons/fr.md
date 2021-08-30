@@ -1,3 +1,3 @@
-![Buttons](buttons.svg)
+![Boutons](buttons.svg)
 
-The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
+Le nombre de boutons sur votre chemise. Excluant les boutons de poignée, et le bouton supplémentaire optionnel.

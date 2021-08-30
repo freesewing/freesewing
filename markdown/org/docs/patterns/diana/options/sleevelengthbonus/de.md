@@ -1,3 +1,3 @@
-![The sleeve length bonus option on Diana](./sleevelengthbonus.svg)
+![Die Hülle-Bonusoption auf Diana](./sleevelengthbonus.svg)
 
-This option determines the length of the sleeves.
+Diese Option legt die Länge der Ärmel fest.

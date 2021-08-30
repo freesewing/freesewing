@@ -1,2 +1,2 @@
 
-Controls the width of the sleeve vent.
+Steuert die Breite des Schloßes.

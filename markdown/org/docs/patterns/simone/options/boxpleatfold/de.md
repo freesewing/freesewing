@@ -1,5 +1,9 @@
 ---
-title: Box pleat fold
+title: Kellerfalte Falz
 ---
 
-Controls how much the box pleat at the back is folded/pleated.
+Legt fest, wieviel die Box auf der Rückseite gefaltet ist/gefaltet.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_boxpleatfold_sample.svg "Effekt dieser Option auf das Muster")

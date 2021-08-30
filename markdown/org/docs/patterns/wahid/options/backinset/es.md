@@ -1,15 +1,15 @@
 ![Inserción trasera](backinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the back side?
+¿Hasta dónde quieres que tu armadura de cintura se curva hacia adentro en la parte trasera?
 
 <Note>
 
-###### What's the point?
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Esto influye en el estilo de la cintura.
 
 </Note>
 

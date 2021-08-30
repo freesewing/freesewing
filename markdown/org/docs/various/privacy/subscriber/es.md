@@ -1,28 +1,28 @@
 ---
-title: How we use your subscriber data
+title: Cómo utilizamos los datos de su suscriptor
 order: 20
 ---
 
-##### What personal data do we store?
+##### ¿Qué datos personales almacenamos?
 
-- Your E-mail address
+- Su dirección de correo electrónico
 
 ##### ¿Por qué la necesitamos?
 
-- To send you our newsletter
+- Para enviarle nuestro boletín de noticias
 
 ##### ¿Cuánto tiempo lo mantenemos?
 
-- As long as you remain subscribed
+- Mientras permanezca suscrito
 
-##### Do we share it?
+##### ¿Lo compartimos?
 
-- No, never
+- No, nunca
 
 <Note> 
 
-This data is stored for anybody who subscribes to our newsletter.
+Estos datos se almacenan para cualquier persona que se suscriba a nuestro boletín de noticias.
 
-For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their [account data][1].
+Para las personas con una cuenta en el sitio web que permiten la suscripción al boletín en su configuración de cuenta, no almacenamos datos personales adicionales ya que ya tenemos su correo electrónico en su [cuenta de datos][1].
 
 </Note>

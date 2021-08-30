@@ -1,100 +1,100 @@
 
 <Tip>
 
-##### The key to Waralee is the waist band
+##### De sleutel van Waralee is de tailleband
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+Op een manier Waralee is slechts een tailleband met een lang stuk stof vast. De tailleband moet doorgaan van de stof in twee tekenreeksen die gebruikt worden om de voorpanden en twee aan de achterkant vast te zetten. Deze tekenreeksen zijn niet opgenomen in het patroon. Traditioneel hebben ze een vergelijkbare lengte. Je kunt de extra maken voor het voorpaneel (de zijde die iets korter is dan de andere, aan de linkerkant van de illustraties hieronder), zodat je beide sets aan de voorkant kunt binden. Ik geef er de voorkeur aan omdat het makkelijker is om aan te das en je hebt niet het grootste deel van de knoop in de rug.
 
 </Tip>
 
-## Step 1: Sew the pockets
+## Stap 1: Stik de zakken
 
 <Note>
 
-##### Pockets are optional
-Traditionally, these types of pants do not have pockets. But I want to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
+##### Pockets zijn optioneel
+Traditioneel hebben deze broektypes geen zakken. Maar ik wil ergens mijn telefoon, sleutels en portemonnee zetten. Dus ik heb zakken in het patroon opgenomen. Je kunt voor jezelf beslissen of je ze op je broek wilt hebben.
 
-The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
+De illustraties in de volgende stappen laten de oorlogsbroek zien zonder zakken. Alleen de zakplaatsingen van het patroon worden getoond, om je te helpen jezelf te oriënteren.
 
-##### If you do want pockets, make them first
-If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
+##### Als je zakken wilt kun je ze eerst
+Als je de zakken gaat maken, laat ze eerst één stuk stof op de andere plaatsen. Het is makkelijker om met de delen te werken die nog gescheiden.
 
 </Note>
 
-If desired, sew the pockets.
+Stik de zakken indien gewenst.
 
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
+Ik bevatte plaatsingen voor de voorzakken die door de kleppen aan het voorpand verborgen worden. Maar ze zullen nog steeds gemakkelijk toegankelijk zijn om je telefoon of sleutels in te voeren. Dit zijn paspelzakken. De voorpand bevindt zich in een hoek en de achterste zijn horizontaal georiënteerd. De insteekzak zou voldoende stof moeten geven om de zak aan de tailleband te bevestigen. Als u extra diepe zakken wilt, pas dat dan aan.
 
-## Step 2: Hem the sides and bottom
+## Stap 2: Zoom de zijkanten en onderkant
 
-![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
+![Zoom de zijkanten en de onderkant](waralee-hem-sides-and-bottom.png)
 
-Hem the sides and bottom.
+Zoom de zijkanten en de onderkant.
 
-You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+Je kunt de methode die het beste voor je werkt gebruiken. In de versie die ik eerst maakte heb ik net de zijkanten geplaatst, plooide ze terug en stikte ze bovenop, en deed ik hetzelfde voor de onderkant. Ik heb dit gedaan om het leeuwendeel van de stof tot een minimum te houden en om een betere afvoer mogelijk te maken. Wat je doet, moet afhangen van het type stof dat je gebruikt.
 
-## Step 3: Sew the two parts together at the crotch
+## Stap 3: Stik de twee delen aan het kruis samen
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+![Leg de twee delen bovenop elkaar met de goede kanten op elkaar. Stik de kruisnaad](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two parts together. Lay them with _good sides together_ and sew the seam along the cutout. Finish this seam and press it.
+Nu ga je de twee delen aan elkaar naaien. Leg ze met _goede kanten op elkaar_ en stik de naad langs het uitsnijden. Werk deze naad af en strijk het.
 
-## Step 4: Prepare the four strings
+## Stap 4: Bereid de vier tekenreeksen voor
 
-The strings are just long tubes of fabric.
+De tekenreeksen zijn slechts lange buizen.
 
-Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. That is the length of each string. Cut out four strips of fabric that are that long and 5cm (2”) wide.
+Neem een kwart van uw taillemaat. Voeg dat nummer toe aan 40cm (17). Voeg je naadwaarde toe. Dat is de lengte van elke tekenreeks. Knip vier stroken stof die zo lang en 5 cm breed zijn.
 
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+Als mijn tailleomtrek bijvoorbeeld 84,6 cm: 84,6 cm gedeeld door 4 is 2cm. 2cm plus 40cm is 61,2cm. 61,2 cm plus mijn naadwaarde van 1 cm is 62,2 cm. Ik knip vier stroken stof die 62,2 cm bij 5 cm zijn.
 
 <Note>
 
-##### You can lengthen the front ties
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+##### Je kunt de voorpanden verlengen
+optioneel om de voorpanden langer te maken, verleng ze met je kwarttaillemeting.
 
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+Bij het genereren van je patroon wordt een van de stijlopties "Waist Band" genoemd. De strings, wanneer geplooid moet dezelfde breedte hebben als je hebt opgegeven voor die optie, 2,5 cm (1") als standaard.
 
-The extra 40cm (17") of length is to make the knot.
+De extra lengte van 40 cm (17") is om de knoop te maken.
 
-If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+Als je materiaal gevoelig of zwak is, kun je hier wat tussenvoering aan toevoegen om het kracht te geven.
 
 </Note>
 
-Fold them in half along the long side, _good sides together_. Stitch the long side and one of the short sides, and turn the tie right side out.
+Plooi ze over de helft langs de lange zijde, _goede kanten op elkaar_. Stik de lange kant en één van de korte zijden, en draai de das naar buiten.
 
 <Tip>
 
-##### Turning tubes of fabric right side out can be difficult
+##### Het draaien van buizen aan de rechterkant van de stof kan moeilijk zijn
 
-This can be made easier by taking a piece of twine longer than the strips. Lay that between the right sides, along the fold. Make sure you catch this while sewing the short side. You can use this to pull the end through the tube you've created. When you're done, you can cut it off. Having a long, skinny stick or a loop turner can help too with this.
+Dit kan makkelijker worden door een stuk twee stukken langer te nemen dan de strips. Leg die tussen de rechterzijden, langs de stof. Zorg ervoor dat je dit vastpakt terwijl je de korte kant naait. Je kunt dit gebruiken om het einde door de buis die je hebt gemaakt te trekken. Wanneer je klaar bent, kun je het uitknippen. Het hebben van een lange schoonheidsstok of loopdraad kan hier ook mee helpen.
 
 </Tip>
 
-## Step 5: Sew the waist band
+## Stap 5: Stik de tailleband
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
+![Leg de twee delen bovenop elkaar met de goede kanten op elkaar. Stik de kruisnaad](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band. Think about adding interfacing if your fabric is delicate.
+Nu is het tijd om de tailleband vast te naaien. Denk na over het toevoegen van tussenvoering als je stof delicaat is.
 
-Fold the seam allowance in, and then fold along the waist band line. (red)
+Plooi de naadwaarde in en plooi dan langs de lijn. (rood)
 
-Insert one of the strings you made in the previous step on each side. Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+Voeg aan beide kanten één van de tekenreeksen toe die u in de vorige stap hebt gemaakt. Stik langs de lijn van de tailleband en voeg wat extra stiksel toe om ervoor te zorgen dat deze snoorden goed vastzitten. (blauw)
 
 <Tip>
 
-##### Secure the strings well
+##### Beveilig de tekenreeksen goed
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+De tekenreeksen houden je pannen, dus als je mislukken krijg je ongemakkelijke momenten.
 
 </Tip>
 
-## Step 6: Wear your pants
+## Stap 6: Draag je broek
 
-Press your pants, and try them on!
+Strijk je broek en probeer het op!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Houd de voorkant tegen je broekriem en pak beide tekenreeksen om je heen en strijk in de rug (of, als je lange strings hebt, pak ze helemaal om je heen en strijk aan het voorp). Leg de achterkant dan door je benen aan jezelf en pas de andere tekenreeksen aan de voorkant.
 
-Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
+Hier is een artikel dat laat zien hoe ingepakte broek moet worden [Hoe Tie Wrap Broek](https://www.wikihow.com/Tie-Wrap-Pants)
 
-If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+Als je vastloopt, of extra vragen hebt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/).
 

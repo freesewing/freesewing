@@ -1,14 +1,17 @@
 
-Controls the proportion between the front and back part of the legs.
+Controla la proporción entre la parte frontal y trasera de las piernas.
 
-The back of the trouser legs are always wider than the front. This controls by how much.
+La parte trasera de las patas de los pantalones son siempre más anchas que la parte delantera. Esto controla en qué medida.
 
 <Note>
 
-Increasing this will make the front leg panel narrower.  
-This makes the wearer look more skinny.
+Incrementar esto hará que el panel de la pierna delantera sea más estrecho.  
+Esto hace que el portador luzca más despellejado.
 
-This trick is often used in womenswear jeans 
-(now you know why you can't find womenswear jeans with functional front pockets).
+Este truco se utiliza a menudo en vaqueros de ropa de mujer 
+(ahora sabes por qué no puedes encontrar vaqueros de ropa de mujer con bolsillos frontales funcionales).
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_legbalance_sample.svg "Efecto de esta opción en el patrón")

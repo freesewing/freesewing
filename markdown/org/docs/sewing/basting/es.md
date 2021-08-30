@@ -1,20 +1,20 @@
 ---
-layout: onecol
+layout: en ecol
 title: Basting
 ---
 
-![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)
+![La forma de este bolsillo se funde antes de que el bolsillo esté unido a la ropa](basting.jpg)
 
-Basting is temporary sewing to hold things in place.
+El derribo es una costura temporal para mantener las cosas.
 
-It is typically done by hand, but you can also machine baste.
+Normalmente se hace a mano, pero también se puede mecanizar baste.
 
-Examples of where basting is commonly used are:
+Ejemplos de donde se utiliza comúnmente el basting son:
 
- - Basting a seam in place before sewing it
- - Basting an ornament, pocket, or other part in place before attaching it
- - Basting darts or other pattern changes while fitting the garment on a model
+ - Derribar una costura antes de coser
+ - Golpeando un ornamento, bolsillo u otra parte en su lugar antes de unirlo
+ - Basar darts u otros cambios de patrón mientras se ajusta la ropa a un modelo
 
-Basting is never permanent, but merely a temporary measure to hold things in place.
+El derribo nunca es permanente, sino simplemente una medida temporal para mantener las cosas.
 
-> Basting and pinning are different techniques for similar situations
+> El bastecimiento y el fijador son técnicas diferentes para situaciones similares

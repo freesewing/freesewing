@@ -1,6 +1,6 @@
 
-An apron works best with a fabric that is sturdy, tightly woven, and easy to clean. In addition, make sure to go for a natural fibre are in any case something that is heat-resistant.
+Un Pronuncia funciona mejor con una tela resistente, tejida apretadamente y fácil de limpiar. In addition, make sure to go for a natural fibre are in any case something that is heat-resistant.
 
-A heavy cotton, chino, canvas or denim are all excellent choices.
+Un algodón pesado, chino, lienzo o denim son excelentes opciones.
 
-When in doubt, go for raw denim (pure cotton, if it's stretches it's no good)
+Cuando esté en duda, vaya a la denim cruda (algodón puro, si se estira no es bueno)

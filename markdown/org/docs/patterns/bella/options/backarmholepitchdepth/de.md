@@ -1,7 +1,11 @@
 ---
-title: Back armhole pitch depth
+title: Rückenarmloch-Tiefe
 ---
 
-![The effect of the back armhole pitch depth option on the pattern](sample.png)
+![Der Effekt der Option Rückenarmlochtiefe auf das Muster](sample.png)
 
-The **back armhole pitch depth** option controls the vertical position of the armhole pitch point at the back.
+Die Option **Rückenarmlochtiefe** steuert die vertikale Position des Armlochpunktes auf der Rückseite.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backarmholepitchdepth_sample.svg "Effekt dieser Option auf das Muster")

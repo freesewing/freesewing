@@ -1,110 +1,110 @@
 <Note>
 
-###### Documentation under construction
-First the good news: There's a video series that shows how to make Hugo from start to finish.
-Scroll down, it's embedded in this page.
+###### Dokumentation im Bau
+Erste gute Nachrichten: Es gibt eine Videoserie, die zeigt, wie man Hugo von Anfang bis Ende macht.
+Scrollen Sie nach unten, es ist eingebettet in diese Seite.
 
-Now the bad news: The written instructions for Hugo are not complete yet.
+Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch nicht vollständig.
 
 </Note>
 
 ## Video
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Text ein bisschen trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
 ## Konstruktion
 
 
-### Step 1: Prepare the Pocket
+### Schritt 1: Bereiten Sie die Tasche vor
 
- - Place the Pocket Facing pieces together with the edges of the Pocket piece, good sides together.
- - Stitch the facing pieces to the pocket with a 1cm seam allowance.  Stitch both the long edge, and the shorter edge at the bottom of the pocket.
- - Carefully trim the seam allowance on the facing pieces.
- - Flip and turn the facing pieces good sides out.  Then hand-roll and press the seams.
- - Topstitch or edge-stitch ½ cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
- - Topstitch another line ½ from the inside upper edge of the facing on each side of the pocket.  This topstitch line will end at the lower edge stitch line.
- - Trim away the excess facing on the inside of the pocket.
- - Press the edges.
+ - Platzieren Sie die Pocket Facing Stücke zusammen mit den Kanten des Pocket Stücks, gute Seiten zusammen.
+ - Nähen Sie die Gesichtsstücke mit einem Abstand von 1cm an die Tasche an.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
+ - Die Nahtzuweisung auf die Seitenteile sorgfältig abschneiden.
+ - Drehen und drehen Sie die Gesichtsstücke gute Seiten aus.  Dann Handwalzen und drücken Sie die Nähte.
+ - Topstitch oder Kantenstich 1<unk> 2 cm entlang der oberen und unteren Kanten auf jeder Seite der Tasche zu verankern, um die Vorderseite und die Nahtzugabe.
+ - Topstitch eine weitere Linie 1<unk> 2 aus der Innenkante der Fassade auf jeder Seite der Tasche.  Diese Stichlinie endet an der unteren Kantenstichlinie.
+ - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
+ - Drücke die Kanten.
 
-### Step 2: Attach the Pocket
+### Schritt 2: Befestige die Tasche
 
- - Match the Pocket to the front, good sides together.
- - The upper pocket seam line is marked by notches on the pattern.  The pocket bottom edge should point towards the neckline.  Align the pocket edges horizontally with the notches on the pattern. Overlap the top of the pocket over the seam line by a little less than 1 cm seam allowance.
- - Stitch the top seam of the Pocket to the Shirt Front.
- - Flip the pocket over the seam line so the bottom now lines up with the edge at the waist.
- - Using a long basting stitch (4mm or longer), baste the pocket into place at the waist, with a ½ cm seam allowance.  This is optional, but keeps the pocket in place while you work on the rest of the shirt.
+ - Passen Sie die Pocket auf die Vorderseite, gute Seiten zusammen.
+ - Die obere Taschennahtlinie ist mit Noten am Muster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
+ - Nähen Sie die obere Naht der Tasche an die Shirt Front.
+ - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
+ - Mit einem langen Baststich (4mm oder länger) die Tasche in der Taille mit einer Naht von 1<unk> 2 cm in die Tasche legen.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
 
-### Step 3: Attach the Sleeves
+### Schritt 3: Hänge die Ärmel an
 
- - The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
- - Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
- - To finish the seam, you can use one of these methods:
+ - Die Seite des Ärmels mit der scharfen Kante oben ist die Rückseite des Ärmelwerkes.  Es ist auch mit einem Doppelbett auf dem Muster gekennzeichnet.
+ - Passen Sie gute Seiten der Ärmelnaht an gute Seiten der Front an, passend zum Einstufungsstück auf der Vorderseite zur Einstufung. Nähen Sie die Naht.  Tun Sie dies für beide Ärmel.
+ - Um die Naht zu beenden, können Sie eine dieser Methoden verwenden:
 
-   - Use a serger to sew and finish the seam in one step.  This is fast and convenient, but produces a less-refined look.
-   - If you do not have a serger, or would like a more refined look, sew a seam with a straight stitch on your conventional machine. Press the seam allowances apart on the wrong side.  Then, edgestitch along both sides of the seam from the right side.  Finally, trim the excess seam allowance.  This produces a refined look, but takes longer.
-   - Another serger-free option is to sew the seam with a straight stitch. Then stitch together the seam allowances with an additional line of zig-zag alongside the straight stitch.  Finally, trim the excess seam allowance.  This simulates what a serger would do, and is quicker than option (2).
+   - Verwenden Sie einen Serger, um die Naht in einem Schritt zu nähen und zu beenden.  Dies ist schnell und komfortabel, erzeugt aber ein weniger raffiniertes Aussehen.
+   - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Drücken Sie die Nahtzuschläge auf der falschen Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite.  Schließen Sie die überschüssige Nahtzuweisung ab.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
+   - Eine weitere serger-freie Option ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzuschläge mit einer zusätzlichen Zick-Zack-Linie neben der geraden Nähte zusammennähen.  Schließen Sie die überschüssige Nahtzuweisung ab.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
 
- - Match the good sides of the sleeve to the good sides of the back, matching the double notch on back to the double notch on the sleeve seam.  Stitch the seam, then finish the seams as you did for the front.
+ - Passen Sie die guten Seiten des Ärmels den guten Seiten des Rückens an passend zum Doppelbett auf der Rückseite zum Doppelbett auf der Ärmelnaht.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
 
-### Step 4: Close the Sides
+### Schritt 4: Seiten schließen
 
- - Match the good sides together along sides and sleeves.
- - Stitch the side seam and the sleeves together in one long seam, starting at the waist and going all the way through to the end of the sleeve.  You can stop at the underarm point to change colors for the sleeve, if your design calls for it.
- - Finish the seam allowances as you did in step 2.  If you finish the sleeves with the edgestitch method, you will need to go slow for finishing the sleeve seam, as you will be .sewing in the tunnel..
+ - Passen Sie die guten Seiten an Seiten und Ärmeln an.
+ - Nähen Sie die Seitennaht und die Ärmel in einer langen Naht zusammen von der Taille bis zum Ende des Ärmels.  Sie können an der Unterarm Punkt stoppen, um die Farben für den Ärmel zu ändern, wenn Ihr Design dies erfordert.
+ - Beenden Sie die Nahtzuschläge wie Sie es in Schritt 2 getan haben.  Wenn Sie die Ärmel mit der Edgestitch Methode beenden, müssen Sie langsam vorgehen, um die Ärmelnaht zu beenden, wie Sie es sein werden. ewing im Tunnel..
 
-### Step 5: Add a Drawstring to the Hood (Optional)
+### Schritt 5: Füge eine Zeichenfolge zur Kapuze hinzu (Optional)
 
- - Take one matching set of the Hood Side pieces, that you intend to feature on the outside of the finished hoodie.
- - Mark the place for a hole on each side hood piece, along the rim.
- - The hole should be located about 1.5-2cm from the edge of the fabric.  This is to allow for the seam allowance, as well as for the hood
- - The hole should be located above the notch on the hood rim.  The notch shows where the sides of the hood overlap at center front , so the cord should exit above that point.
- - You can consider using the buttonhole feature of your sewing machine, if it has one, to sew a buttonhole at this point.
- - Cut open a hole at the points you marked.
- - After the hood is prepared, you can run a cord around the front edge of the hood.  Sneaker shoelaces work well for this.
+ - Nehmen Sie ein passendes Set der Hood Side Stücke, die Sie auf der Außenseite der fertigen Hoodie vorführen möchten.
+ - Markieren Sie den Platz für ein Loch an jeder Seitenhaube entlang des Felgens.
+ - Das Loch sollte etwa 1,5-2cm vom Rand des Stoffes entfernt sein.  Dies soll sowohl die Nahtzuweisung als auch die Haube erlauben
+ - Das Loch sollte über der Höhe auf dem Kopfrand liegen.  Die Schicht zeigt an, wo sich die Seiten der Kapuze an der Vorderseite überlappen, so dass die Schnur oberhalb dieses Punktes verlassen sollte.
+ - Sie können die Funktion des Knopflochs Ihrer Nähmaschine in Betracht ziehen, falls sie eine besitzt, um an dieser Stelle ein Knopfloch zu nähen.
+ - Schneiden Sie ein Loch an den von Ihnen markierten Punkten.
+ - Nachdem die Kapuze vorbereitet ist, können Sie eine Schnur um die Vorderkante der Kapuze laufen.  Sneaker Schuhe funktionieren dafür gut.
 
 
-### Step 6: Prepare Inside and Outside Hood
+### Schritt 6: Bereiten Sie Innen- und Außenkapuze vor
 
-> Follow this set of steps twice, once for the outer hood and again for the inside hood.
+> Folgen Sie diesem Satz von Schritten zweimal, einmal für die äußere Kapuze und wieder für die Innenhaube.
 
- - Run a Center Panel piece around one outer edge of the Hood Side, good sides together, and pin in place.  Stitch.
- - Pin the Center Panel piece around the remaining outer edge of the hood, good sides together. Stitch.
- - Press the seam allowances, and finish them as in Step 2.  Trim the seam allowances.
+ - Führen Sie ein Mitte-Panel-Stück um einen äußeren Rand der Kapuzenseite, gute Seiten zusammen, und Pin an der Stelle.  Näht.
+ - Das Mitte-Panel-Stück um den restlichen äußeren Rand der Kapuze anpinnen, gute Seiten zusammen. Näht.
+ - Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Schneiden Sie die Nahtzuschläge ab.
 
-### Step 7: Join Inside and Outside Hood
+### Schritt 7: Schließe dich Innen- und Außenkapuze an
 
- - With both hoods inside out, put them on top of each other, good sides together.
- - Align the center panel seams and pin.
- - Stitch along the outer edge of the hood with a 1cm seam allowance.  Do not trim the seam allowance.
- - Flip the hood pieces right side out, then press the outer edge flat.
- - Topstitch along the edge of the hood, about 1.5-2 cm from the edge.  Ensure that you go beyond the seam allowance, and that it is not caught in this line of stitching. This creates a decorative rim.  The enclosed seam allowance helps make the rim a bit poofy.
- - To close the hood, serge together the bottom layers along the neckline.  If you do not have a serger, use a zig-zag stitch.
- - (Optional) If you added holes for a drawstring, you can thread the drawstring now.
+ - Mit beiden Kapuzen innen drinnen, legen Sie sie aufeinander hin, gute Seiten zusammen.
+ - Legen Sie die Nähte und den Pin in der Mitte an.
+ - Näht am äußeren Rand der Kapuze mit einer Kante von 1cm.  Schneiden Sie nicht die Nahtzugabe.
+ - Drehen Sie die Kapuzenteile nach rechts und drücken Sie dann die Außenkante flach.
+ - Topstitch am Rand der Kapuze, ca. 1,5-2 cm von der Kante.  Vergewissern Sie sich, dass Sie über die Nahtzuweisung hinausgehen und dass sie nicht in dieser Linie der Heftung gefangen wird. Dies erzeugt einen dekorativen Felgen.  Die beigefügte Nahtmenge trägt dazu bei, die Felge ein bisschen poofy zu machen.
+ - Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn Sie keinen Serger haben, verwenden Sie eine Zick-Zack-Nähte.
+ - (Optional) Wenn Sie Löcher für eine Zeichenkette hinzugefügt haben, können Sie die Zeichenkette jetzt einbinden.
 
-### Step 8: Attach the Hood
+### Schritt 8: Hänge die Kapuze an
 
- - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
- - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
- - Working around to the front, pin the hood to the neckline.
- - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
- - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
- - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
- - Fold the binding over the raw edge of the neckline, and pin.
- - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
- - Trim excess binding from the inside.
+ - Platziere gute Seiten zusammen auf das Halsbindungsstück, Dann nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um die Bindung zu einem Rundband zu machen.
+ - Von der Rückseite bis zur rechten Seite der Halslinie passen. Legen Sie die Kapuzenleiste an die Rückseite der Halslinie an.
+ - An der Vorderseite arbeiten und die Kapuze an den Hals befestigen.
+ - Passen Sie die gute Seite der Halsbindung an die äußere Halslinie an (dies wird die Innenseite der Haube sein). Pin die Bindung an die Kapuze.
+ - Serge oder Zick-Zack alle Schichten zusammen mit 1 cm Nahtzustand.  Überprüfen Sie die Halslinie, um sicherzustellen, dass alle Schichten vom Nähen gefangen wurden.
+ - Verstärken Sie die Punkte, an denen sich die Halslinie mit den Ärmelnähten kreuzt.  Verwenden Sie eine geradlinige Nähmaschine um diese Nähte zu stabilisieren.
+ - Falten Sie die Bindung über den rohen Rand der Halslinie und Pin.
+ - Von außen ist der Oberstich entlang und ca. 1cm von der Halskante entfernt, um die Bindung zu fangen und zu sichern.  Du solltest hier einen geraden Stich verwenden können, solange der Hals etwas locker passt, wenn du es versuchst.  Wenn der Hals schräg ist, dann verwenden Sie eine Zickzack-Nähte.
+ - Schneiden Sie überschüssige Bindung von innen ab.
 
-### Step 9: Attach the Cuffs and Waistband
+### Schritt 9: Füge die Cuffs und den Taillenband hinzu
 
- - If the ribbing is light or thin, you can cut the cuff and waistband pieces twice as high, then double-fold them.
- - Place good sides together on the cuffs and waistband pieces, then sew a 1cm seam allowance along the short side to make them into circular bands.
- - Fold along the long side to make cuffs and waistband into double-thick tubes. Sew or serge along the open edges to close.
- - Align the seam on the cuff to the seam on the sleeve.  Pin, good sides together.
- - Pin the opposite side.
- - Serge (or zig-zag stitch) the ribbing to the cuff, stretching gently until the ribbing and cuff are the same length.  Remove pins before they enter the serger.
- - Trim the bottom edge of the pocket if it extends past the waistband edge.
- - Ensure the ribbing is gathered as uniformly as possible around the waistband.
- - Serge or zig-zag the waistband, again gently stretching untill the ribbing and waistband are the same length.  Stitch with the hoodie on top so you can see it gets caught in the seam.
- - Topstitch the lower pocket edges to the body of the shirt to anchor the bottom of the pocket.
+ - Wenn das Band leicht oder dünn ist, können Sie die Manschetten und Taillenbandstücke doppelt so hoch schneiden, dann verdoppeln.
+ - Platziere gute Seiten zusammen auf die Manschetten und Taillenbandstücke, dann Nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um sie zu kreisförmigen Bändern.
+ - Falten Sie entlang der langen Seite, um Manschetten und Taillenband in doppeldicke Röhren zu machen. Nähen oder Sergen entlang der offenen Kanten zum Schließen.
+ - Die Naht auf der Manschette auf die Naht am Ärmel ausrichten.  Pin, gute Seiten gemeinsam.
+ - Pin die entgegengesetzte Seite.
+ - Serge (oder Zickzacksticht) das Band zur Manschette und dehnt sich sanft bis das Band und die Manschette gleich lang sind.  Pins entfernen, bevor sie den Server betreten.
+ - Schneiden Sie die Unterkante der Tasche ab, wenn sie an der Taillenkante vorbeigeht.
+ - Vergewissern Sie sich, dass das Band so einheitlich wie möglich um die Taille herum gesammelt wird.
+ - Serge oder Zick-Zack die Taille, wieder sanft bis zum Band und Taillenband strecken sind die gleiche Länge.  Nähen Sie mit der Hoodie oben, damit Sie sehen können, dass sie in der Naht gefangen wird.
+ - Topstitch die unteren Taschenkanten an den Körper des Hemdes, um die Unterseite der Tasche zu verankern.

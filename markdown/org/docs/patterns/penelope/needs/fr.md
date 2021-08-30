@@ -1,9 +1,9 @@
 
-To make Penelope, you will need the following:
+Pour faire Penelope, vous aurez besoin des éléments suivants :
 
   - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-  - About 1 meter of a suitable fabric
-  - An invisible zipper
-  - Some interfacing for the waistband (if used) and maybe for the vent and hem
-  - Some sort of closure for the waistband (if used)
-  - Optionally: lining fabric
+  - Environ 1 mètre de tissu adapté
+  - Une fermeture éclair invisible
+  - Quelques interfaces pour la ceinture (si utilisée) et peut-être pour le vent et l'ourlet
+  - Une sorte de fermeture pour la ceinture (si utilisée)
+  - Optionnellement: tissu de doublure

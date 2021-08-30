@@ -2,4 +2,4 @@
 title: Kellerfalte
 ---
 
-Adds a box pleat to the back.
+Fügt der Rückseite eine Kastenfalte hinzu.

@@ -1,3 +1,3 @@
-![Front style](frontstyle.svg)
+![Estilo frontal](frontstyle.svg)
 
-Do you want a classic straight neckline, or a curved neckline?
+¿Quieres una clásica línea recta, o un cuello curvo?

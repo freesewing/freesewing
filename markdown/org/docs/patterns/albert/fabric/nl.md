@@ -1,6 +1,6 @@
 
-An apron works best with a fabric that is sturdy, tightly woven, and easy to clean. In addition, make sure to go for a natural fibre are in any case something that is heat-resistant.
+Een apron werkt het beste met een stof die stevig en strak geweven is en gemakkelijk schoon te maken. Bovendien, zorg ervoor dat je kiest voor een natuurlijke vezel, zijn in ieder geval iets dat hittebestendig is.
 
-A heavy cotton, chino, canvas or denim are all excellent choices.
+Een zwaar katoen, chino, canvas of denim zijn allemaal uitstekende keuzes.
 
-When in doubt, go for raw denim (pure cotton, if it's stretches it's no good)
+Bij twijfel, ga voor rauw denim (puur katoen, als het uitrekt is het geen goed)

@@ -1,2 +1,2 @@
 
-Whether to include front pockets (on the side seam) or not.
+Voorzakken aan de voorkant (aan de zijnaad) of niet.

@@ -1,2 +1,2 @@
-How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+Wie weit nach unten geht der Rückendart von der Taille. Dies ist ein Faktor der natürlichen Taille bis Sitzplatzmessung.
 

@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 
 
@@ -7,13 +7,13 @@
 
 ## Comprendre la tête de manche
 
-The Breanna sleevecap was designed to be adaptable into different types of sleeves and garments. As a result, the sleevecap alone has 20 options to control its shape. Bien que cela puisse paraître un peu assommant de prime abord, comprendre la conception de la tête de manche facilite la compréhension des différentes options.
+Le chapeau de manche Breanna a été conçu pour être adapté à différents types de manches et de vêtements. Par conséquent, le chapeau de manche à lui seul dispose de 20 options pour contrôler sa forme. Bien que cela puisse paraître un peu assommant de prime abord, comprendre la conception de la tête de manche facilite la compréhension des différentes options.
 
 ### La bounding box (boîte englobante)
 
 La *bounding box* de la tête de manche est un rectangle de la largeur de la manche et de la hauteur de la tête de manche. La tête de manche va être construite dans ce rectangle.
 
-![The Breanna sleevecap](sleevecap.svg)
+![Le chapeau de manche Breanna](sleevecap.svg)
 
 L'image ci-dessus montre une tête de manche, commençant au point 1, puis montant jusqu'au point 4, et ensuite redescendant au point 2.
 

@@ -1,7 +1,7 @@
 ---
-title: Teams
+title: teams
 ---
 
-A team is no more than a group of people who are interested in the same topic, and who want to work together to move it forward.
+Een team is niet meer dan een groep mensen die geïnteresseerd zijn in hetzelfde onderwerp, en wie wil samenwerken om het vooruit te helpen.
 
-Teams emerge organically. When enough people get involved in a specific topic, it makes sense to branch it off into its own team.
+Teams verschijnen biologisch. Wanneer genoeg mensen betrokken raken bij een specifiek onderwerp, heeft het zin om het in zijn eigen team te verdelen.

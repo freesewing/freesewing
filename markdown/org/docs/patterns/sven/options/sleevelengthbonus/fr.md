@@ -1,3 +1,3 @@
 ![Bonus de longueur de manche](sleevelengthbonus.svg)
 
-This option will lengthen the sleeves of your sweatshirt.
+Cette option allongera les manches de votre sweatshirt.

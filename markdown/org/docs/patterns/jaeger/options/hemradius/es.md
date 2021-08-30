@@ -1,2 +1,2 @@
 
-Controls the amount by which the hem is rounded at the front bottom.
+Controla la cantidad por la cual el hem se redondea en la parte inferior de la pantalla.

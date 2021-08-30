@@ -1,109 +1,109 @@
 ---
-title: Knit binding
+title: Vinculación de nudo
 ---
 
-## What is knit binding anyway?
+## ¿Qué es la vinculación de tejidos de todos modos?
 
-Knit binding is a general term for a type of finish (typically) found on the neck or arm opening of T-shirts and other knitwear.
+La unión de tejidos es un término general para un tipo de acabado (típicamente) que se encuentra en el cuello o en la apertura del brazo de camisetas y otros tejidos.
 
-There's two varieties of this finish, a knit band, and actual knit binding.
+Hay dos variantes de este acabado, una banda de tejidos, y la unión de tejidos.
 
-## Knit band
+## Banda Knit
 
-![Like most T-shirts, the one this girl is wearing has a knit band at the neck opening.](knit_band.jpg)
+![Como la mayoría de las camisetas, esta chica tiene una banda de tejidos en el cuello.](knit_band.jpg)
 
-Knit band is what you typically find at the neck opening of your T-shirt. It's a strip of fabric that is folded double and attached to the edge of the garment.
+La banda de Knit es lo que usted suele encontrar en la abertura del cuello de su camiseta. Es una tira de tela doblada y acoplada al borde de la prenda.
 
-This leaves an unfinished edge on the inside that is often sewn down by edge-stitching around the knit band.
+Esto deja una arista inacabada en el interior que a menudo es cosido por el borde de la banda de tejido.
 
-### Knit binding
-![This girl's grey undershirt and white T-shirt both have a knit binding at the neckline.](knit_binding.jpg)
+### Vinculación de nudo
+![Esta camiseta gris giratorio y camisa blanca tienen una unión de tejidos en la línea del cuello.](knit_binding.jpg)
 
-Real knit binding acts more like classic bias binding, in that it is wrapped around the fabric, rather than extend from it.
+La unión real de tejidos actúa más como la clásica unión de sesiones, en la medida en que se envuelve alrededor de la tela, en lugar de extenderse desde ella.
 
-The raw edge of the garment is inserted between the folded knit binding, which is edge-stitched down. This is often done with a coverlock machine, thereby neatly finishing the inside.
+El borde crudo de la prenda se inserta entre la unión plegada de tejidos, que se emite hacia abajo. Esto se hace a menudo con una máquina de cierre, con lo que el acabado del interior es muy sencillo.
 
 > Pictures by [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) and [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
 
-### Style vs function
-A knit band is more common, and is what you typically find on T-shirt necklines. It's the more decorative option.
+### Estilo vs función
+Una banda de knit es más común, y es lo que normalmente se encuentra en las líneas de cuello de la camiseta. Es la opción más decorativa.
 
-A knit binding is less common, but often used on undershirts (as in, underwear). It's the more functional option.
+Una unión de tejidos es menos común, pero a menudo se usa en las camisetas inferiores (como en la ropa interior). Es la opción más funcional.
 
-> ##### Still confused?
+> ##### ¿Aún está confundido?
 > 
-> Another way to distinguish them is this: Think about what happens when you decide to widen the knit binding/band.
+> Otra forma de distinguirlos es la siguiente: Piensa en lo que sucede cuando decidas ampliar la unión y la banda.
 > 
-> On a T-shirt, widening the band at the neck will make the neck opening smaller. If you want a wider band, you will have to cut a larger hole in your T-shirt.
+> En una camiseta, la ampliación de la banda en el cuello hará que la apertura del cuello sea más pequeña. Si desea una banda más ancha, tendrá que cortar un agujero más grande en su camiseta.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Instead, the binding will simply lay further over the undershirt main fabric.
+> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. En lugar de ello, la unión simplemente se extenderá más sobre la tela principal de la camiseta.
 
-## Why knitwear binding requires stretch
+## ¿Por qué la vinculación del tejido requiere estiramiento?
 
-Whether you're using a knit band or a knit binding finish, you are going to have to stretch your binding fabric for good results. That is, assuming you're not sewing a straight seam. Here's why:
+Ya sea que esté usando una banda de tejidos o un acabado de unión de tejidos, tendrá que estirar su tejido para obtener buenos resultados. Es decir, suponiendo que no estés cosiendo una costura recta. Por qué:
 
-### Straight: life on easy mode
+### Straight: vida en modo fácil
 
-![No stretch required when going straight](knitbinding1.png)
+![No se requiere estiramiento al ir recto](knitbinding1.png)
 
-On a straight seam, you can simply attach your binding/band. Your fabric and binding have the same length, so everything will be fine.
+En una costura recta, puede simplemente adjuntar su enlace/banda. Tu tela y tu unión tienen la misma longitud, por lo que todo estará bien.
 
-The most likely scenario where you will encounter this is on the (short) sleeves of a T-shirt. Although the knit band wraps around your arm, from a pattern perspective (as in, when the fabric is still flat) it's a straight seam.
+El escenario más probable en el que encontrará esto es en las mangas (cortas) de una camiseta. Aunque la banda de tejidos se envuelve alrededor de su brazo, desde una perspectiva de patrón (como en el caso de que la tela siga siendo plana) es una costura recta.
 
 
-### Uniformly curved: uniform stretch
+### Curvado uniformemente: estiramiento uniforme
 
-![Curved seams require stretch](knitbinding2.png)
+![Las costuras curvas requieren estiramiento](knitbinding2.png)
 
-On a curved seam, like an neck opening, things get a little more complicated. That is because the outer edge and the inner edge of your binding will have a different length.
+En una costura curvada, como una abertura de cuello, las cosas se complican un poco. Esto se debe a que el borde exterior y el borde interior de su unión tendrán una longitud diferente.
 
-**No stretch, and things won't lie flat (aka gape)**
+**No hay estiramiento, y las cosas no se quedarán planas (también conocido como gape)**
 
-If you simply sew the binding to the fabric, things will be fine at the outer edge of your binding. But the inner edge is shorter, and your binding fabric will be pushed together. The tension that this creates will make it rise, and your binding will not lie flat against your skin.
+Si usted simplemente coser la unión a la tela, las cosas estarán bien en el borde exterior de su enlace. Pero el borde interior es más corto, y tu tejido ligado se empujará juntos. La tensión que esto crea hará que aumente y su unión no estará plana contra su piel.
 
-**Stretch it just right, and it will look great**
+**Escribirlo bien, y se verá muy bien**
 
-To fix this issue, you need to stretch your knit binding (and not the fabric) while attaching your binding. If you do it right, the outer edge will be stretched open a bit, while the inner edge will nicely fill out your curve and everything will lie flat.
+Para solucionar este problema, necesita estirar su unión de tejidos (y no el tejido) mientras adjunta su vinculación. Si lo haces bien, el borde exterior se estirará un poco, mientras que el borde interior llenará muy bien su curva y todo estará plano.
 
-**If you stretch too much, things will wrinkle**
+**Si se estira demasiado, las cosas se encenderán**
 
-Stretch your binding too much, and it will spring back too far, causing the main fabric to wrinkle.
+Estira tu unión demasiado, y volverá demasiado lejos, haciendo que la tela principal se enrolle.
 
-### Real life: variable stretch
+### Vida real: estiramiento de variables)
 
-![As the curve changes, so should the stretch](knitbinding3.png)
+![A medida que la curva cambia, también debería estirarse](knitbinding3.png)
 
-Straight seams exist, and although I've never come across one, maybe uniformly curved seams exist too. But more often than not, the curvature of your seam will vary.
+Las costuras estrechas existen, y aunque nunca he encontrado una, tal vez también existan costuras unitariamente curvadas. Pero la mayoría de las veces la curvatura de tu costura variará.
 
-On a typical T-shirt neckline, the curve at the back of your neck is different from the front, and there's probably a somewhat tighter bend behind your shoulder seam.
+En un cuello típico de camiseta, la curva en la parte trasera del cuello es diferente del frontal, y es probable que haya una inclinación algo detrás de tu costura de hombro.
 
-On a slight curve, the difference between the inner and outer edge is not so big, and a little bit of stretch is all you need. But on a tighter curve, the difference between the inner and outer edge of your binding will be more significant. And you'll need more stretch to accommodate for that.
+En una curva ligera, la diferencia entre el borde interior y exterior no es tan grande, y un poco de ruido es todo lo que necesitas. Pero en una curva apretada, la diferencia entre el borde interior y exterior de la unión será más significativa. Y para ello necesitarás más estilo.
 
-So as you follow your seam, and it curves around necklines, or shoulders, or design features, you will have to adapt the amount of stretch to the situation.
+Así que a medida que sigues tu costura, y se curva alrededor del cuello, o hombros, o características de diseño, tendrás que adaptar la cantidad de estiramiento a la situación.
 
-## You cannot calculate the length of your knit binding
-I am not saying it is theoretically impossible. But I am saying that it is practically impossible.
+## No se puede calcular la longitud de la unión de nudos
+No digo que sea teóricamente imposible. Pero digo que es prácticamente imposible.
 
-The length of your knit binding depends on the amount it needs to be stretched. This depends on the curves you have to follow, and the width of the binding, not to mention the strength of its stretchiness. There's just too many parameters to take into account to calculate your binding length accurately.
+La longitud de la unión depende de la cantidad que necesita para ser estirada. Esto depende de las curvas que tienes que seguir, y de la anchura del encuadre, por no hablar de la fuerza de su estiramiento. Hay demasiados parámetros para tener en cuenta para calcular con precisión su longitud de enlace.
 
-### Do not do this
-There are a bunch of tutorials out on the internet that show you how to sew on knit binding. Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
+### No hacer esto
+Hay un montón de tutoriales en Internet que te muestran cómo coser en la unión de tejidos. Muchas de estas sugieren algo como _hace que el cuello se vincule el 90% de la longitud de la costura que estás adjuntando a_ (el porcentaje varia).
 
-This idea is that you cut your binding, join its edges, and then sew it in the opening. That is (in my opinion) no good.
+Esta idea es que cortes tu vinculación, unes sus bordes, y luego coser en la apertura. Eso no es bueno (en mi opinión).
 
-An alternative approach to sidestep the length issue is to attach the binding before you close the opening your binding goes in. For example, on a T-shirt you close one shoulder seam, attach the binding, then close the second shoulder seam.
+Un enfoque alternativo para evitar la cuestión de la longitud es fijar la vinculación antes de cerrar la apertura de la unión entra. Por ejemplo, en una camisa se cierra una costura de hombro, se coloca el encuadernador, luego se cierra la segunda costura de hombro.
 
-Obviously, that means your shoulder seam will cut through your binding which is a big no no in my book.
+Obviamente, eso significa que su costura en el hombro cortarán su cuerpo, que es un no grande en mi libro.
 
-### Instead, do this
+### En su lugar, hacer esto
 
- - Cut your binding as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
- - Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1cm beyond this point.
- - Start sewing your binding about 3cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There's no tricks for this, you'll have to practice until it comes naturally to you.
- - When you make your way around and get close to the point you marked, stop about 3cm before that.
- - Now your entire binding is attached, apart from a 6cm or so stretch at the back. Pin both edges of your binding good sides together, making is exactly as long as needed and sew them together.
- - Sew the remaining 6cm of your binding.
+ - Cortar la unión siempre y cuando la costura necesite ser cocida. No el 90%, sino el 100%. De esta manera, sabes que va a ser demasiado largo, y eso es lo que queremos.
+ - Marque el lugar que desea que su unión se una (digamos centro de la línea del cuello) y coloque su enlace a 1 cm más allá de este punto.
+ - Comience a coser su unión alrededor de 3 cm a partir de este punto y vaya hasta el final. Mientras lo haces, asegúrate de ajustar el estiramiento a lo que la curva requiera. No hay trucos para esto, tendrás que practicar hasta que te venga de forma natural.
+ - Cuando usted se acerque y se acerque al punto marcado, se detenga alrededor de 3cm antes de eso.
+ - Ahora toda su unión está adjunta, aparte de unos 6 cm de anchura en la parte trasera. Anclar ambos bordes de tus lados buenos de unión juntos, hacer es exactamente el tiempo que se necesita y coser juntos.
+ - Difunde los 6 cm restantes de su encuadernación.
 
-This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
+De esta manera, no hay que adivinar cuánto tiempo debe ser su vinculación, y la costura de unión se sienta donde desea que se sienta.
 
-> For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
+> Para instrucciones detalladas, consulte [la documentación de Aaron](/docs/patterns/aaron/)

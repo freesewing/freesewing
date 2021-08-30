@@ -1,19 +1,19 @@
 
-These work best in a lighter fabric with relatively good drape.
+Diese arbeiten am besten in einem leichteren Stoff mit relativ guter Ziehung.
 
-A light cotton, or chambray are particularly well-suited.  
-Rayon or jersey will work too, but will give it a more casual-look.
+Eine leichte Baumwolle oder Kammerpflanzen sind besonders gut geeignet.  
+Rayon oder Trikot werden auch funktionieren, aber sie wird einen eher zufälligen Effekt haben.
 
-For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
+Für den gegenteiligen Effekt, weniger lässig und mehr Stil, können Sie eine Seidenmischung oder leichte Wolle in Betracht ziehen.
 
 <Tip>
 
-###### Some things to avoid
+###### Einige Dinge, um
 
-Resist the temptation to make these in linen. 
-While linen is the go-to for hot summer days, I would not recommend it for these pants
-as they come with an elasticated waist/cuffs, which means wrinkle hell. 
-Use one of out other designs with a fitted waist if you want linen pants.
+zu vermeiden, widersteht der Versuchung, diese in Leinen zu machen. 
+Während Leinen ist das Go-to für heiße Sommertage Ich empfehle es nicht für diese Hosen
+, da sie mit einer elastischen Taille oder Manschetten ausgestattet sind, was die Faltenhaut bedeutet. 
+Verwenden Sie eines der anderen Designs mit einer eingebauten Taille, wenn Sie möchten, Leinenhose.
 
-Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
+Vermeiden Sie auch die Auswahl eines Stoffes mit einer Menge Stretch, denn es wird die Dinge komplizieren, wenn Sie die elastischen installieren.
 </Tip>

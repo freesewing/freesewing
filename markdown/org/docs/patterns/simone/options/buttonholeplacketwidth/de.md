@@ -1,3 +1,7 @@
-![Buttonhole placket width](buttonholeplacketwidth.svg)
+![Knopflochleiste Breite](buttonholeplacketwidth.svg)
 
-The width of your buttonhole placket.
+Die Breite Ihres Buttonlochplatzes.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_buttonholeplacketwidth_sample.svg "Effekt dieser Option auf das Muster")

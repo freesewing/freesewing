@@ -1,6 +1,6 @@
 
-To make Waralee, you will need the following:
+Um Warale zu erstellen, benötigst du Folgendes:
 
   - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-  - About 2 meters of a suitable fabric
-  - Some interfacing for the waistband
+  - Etwa 2 Meter von einem geeigneten Stoff
+  - Einige Schnittstellen für die Taille

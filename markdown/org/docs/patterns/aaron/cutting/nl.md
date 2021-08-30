@@ -7,8 +7,8 @@
 
 #### Caveats
 
- - There is no seam allowance on the armholes 
- - There is no seam allowance on the neck opening
- - There is extra hem allowance at the hem
+ - Er is geen naadwaarde aan de armsgaten 
+ - Er is geen naadwaarde aan de halsopening
+ - er is extra zoomtoeslag aan de zoom
 
 </Warning>

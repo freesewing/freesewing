@@ -1,39 +1,39 @@
- - **Main fabric**
-   - Cut **1 front left**
-   - Cut **1 button placket** (only if you opted for a separate button placket)
-   - Cut **1 front right**
-   - Cut **1 buttonhole placket** (only if you opted for a separate buttonhole placket)
-   - Cut **1 back**
-   - Cut **1 collar**
-   - Cut **1 undercollar**
-   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
-   - Cut **2 sleeve(s)**
-   - Cut **2 collar stand(s)**
-   - Cut **2 sleeve placket underlap(s)**
-   - Cut **2 sleeve placket overlap(s)**
-   - Cut **4 cuff(s)**
- - **Fusible interfacing**
-   - Cut **1 collar**
-   - Cut **1 undercollar**
-   - Cut **2 collar stand(s)**
-   - Cut **2 cuff(s)**
+ - **Tela principal**
+   - Cortar **1 frente izquierdo**
+   - Corta **1 placket de botón** (solo si optó por un posicionamiento de botón separado)
+   - Cortar **1 frente a la derecha**
+   - Corta **1 posicionamiento de agujero de botón** (solo si optó por un conjunto de posición separado del agujero del botón)
+   - Cortar **1 atrás**
+   - Cortar **1 collar**
+   - Corta **1 guión inferior**
+   - Corta **2 yo(s)** o **4 yoques** si has elegido un yugo dividido
+   - Corta **2 mangas**
+   - Cortar **2 stand(s) de cuello**
+   - Corta **2 underlap(s) de placket de manga**
+   - Corta **superposición(es) de 2 manga**
+   - Corta **4 taza(s)**
+ - **Interfaz Fusible**
+   - Cortar **1 collar**
+   - Corta **1 guión inferior**
+   - Cortar **2 stand(s) de cuello**
+   - Corta **2 taza(s)**
 
 <Note>
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Cuando cortas dos, puedes cortarlos [buenos lados juntos](/docs/cowing/good-sides-juntos).
+Sin embargo, al trabajar con tejido con un patrón, prefiero cortarlos individualmente para controlar finamente la coincidencia de patrones.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Cuando los cortes individualmente, recuerda que necesitan ser imágenes espejo unos de otros. Así que voltee su patrón o su tela al cortar el segundo.
 
 </Note>
 
 <Warning>
 
-###### Caveats
+###### Cuavadas
 
- - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. As such, they have extra seam allowance on those seams. When cutting out these pieces, you **must** include this extra seam allowance.
- - The cuff guard and cuff placket have no seam allowance. That is normal, just cut them out as they are drawn on the pattern.
- - Do not cut out the darts in the **back** piece. You should mark them, but not cut them out.
+ - El **frente derecha**, **frente izquierdo**, y **manga** tienen costuras que deben hacerse en costuras llanas. Como tal, tienen permisos adicionales de costura en esas costuras. Al cortar estas piezas, **debes** incluir esta costura extra.
+ - El guardia del corte y la placa del corte no tienen posibilidad de costura. Eso es normal, simplemente cortarlos como se dibujan sobre el patrón.
+ - No cortes los dardos en la pieza **atrás**. Deberían marcarlos, pero no cortarlos.
 
 </Warning>
 

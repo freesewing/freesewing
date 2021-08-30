@@ -1,7 +1,7 @@
 ---
-title: Waist to seat
+title: Espera a asiento
 ---
 
-The **waist to seat** is the measurement from your waist down towards the fullest part of your bum, measured on the side of your body.
+La cintura **para sentarse** es la medida de tu cintura hacia abajo hacia la parte más completa de tu bum, medido en el lado del cuerpo.
 
-To measure your **waist to seat**, locate the height of both your waist and seat circumference, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Para medir tu cintura **para asiento**, localizar la altura tanto de la cintura como de la circunstancia del asiento, y medir la distancia vertical entre ellos. Asegúrese de medir al lado de su cuerpo.

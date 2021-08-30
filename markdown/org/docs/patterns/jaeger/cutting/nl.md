@@ -27,9 +27,9 @@
 
 <Note>
 
-###### Good sides together, or precise pattern matching?
+###### Goede kanten samen of precieze patroonvergelijking?
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
+Als je twee knipt, kun je ze [goede kanten samen](/docs/naaien/goed-zijden-samen-knippen).
 Als ik echter een stof met een patroon gebruik knip ik ze liever apart zodat ik meer controle heb over de plaatsing van het patroon.
 
 Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus draai of je patroondeel of je stof om als je een tweede deel knips.
@@ -38,12 +38,12 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
 <Warning>
 
-###### Cutting caveats
+###### Grotten
 
- - The chest piece is marked on the front.
+ knippen - Het borststuk is aan de voorkant gemarkeerd.
  - Voeg geen naadwaarde toe als je haardoek uitknipt, en knip schuin van draad.
- - Het beleg vooraan en de voering van het voorpand zijn aangegeven op het patroondeel van het voorpand. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+ - Het beleg vooraan en de voering van het voorpand zijn aangegeven op het patroondeel van het voorpand. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Vergeet niet naadwaarde toe te voegen aan zowel het beleg als de voering van deze naad**.
 
-![Trace the front facing and lining from the front part](cuttingCaveat.svg)
+![Volg het beleg aan de voorkant en de voering vanaf het voorpand](cuttingCaveat.svg)
 
 </Warning>

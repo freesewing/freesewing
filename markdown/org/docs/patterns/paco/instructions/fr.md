@@ -1,340 +1,340 @@
 <Tip>
 
-##### A note on seam finishes
+##### Une note sur la couture se termine
 
-Before you get started, you'll want to decide on your method of seam finishing, or how you tidy
-up the raw seams along the legs of your pants to keep them from fraying. There are a lot of
-options for this. Common choices are serging the raw edges, or using French seams to encase
-the raw edges.
+Avant de commencer, vous voudrez décider de votre méthode de finition de couture, ou comment vous rangez
+les coutures crues le long des jambes de votre pantalon pour les empêcher de s'effilocher. Il y a beaucoup d'options
+pour cela. Les choix communs sont le serrage des bords bruts, ou l'utilisation de coutures françaises pour enfermer
+les bords bruts.
 
-For these instructions, we'll assume that you are using a serger for seam finishes, but we'll
-also provide alternatives. Other options for finishing seams include trimming them with pinking
-shears, stitching a zig-zag along the edge of the seam to keep it from fraying, or binding with
-bias tape.
+Pour ces instructions, nous supposerons que vous utilisez un sergeur pour les finitions de couture, mais
+nous fournirons également des alternatives. Parmi les autres options pour la finition des coutures figurent la garniture avec des cisailles
+roseuses, coudre un zig-zag le long du bord de la couture pour l'empêcher de s'effilocher, ou de lier avec
+ruban adhésif.
  </Tip>
 
-## Step 1: Construct the back pockets
+## Étape 1 : Construire les poches arrière
 
-Are you planning to insert welt pockets in the back of your Paco pants? Is so, awesome! This is arguably the trickiest part, and we'll accomplish it first. If not, you can skip ahead to the next step, preparing the front pockets.
+Avez-vous l'intention d'insérer des poches de soudure à l'arrière de votre pantalon Paco ? C'est génial ! C'est sans doute la partie la plus difficile, et nous allons d'abord l'accomplir. If not, you can skip ahead to the next step, preparing the front pockets.
 
-Construct the welt pockets at the back of your trousers, including the pocket bag.
+Construisez les poches à l'arrière de votre pantalon, y compris le sac de poche.
 
 <Tip>
 
-##### Welt pockets
+##### Poches de Welt
 
-Constructing a welt pocket is a technique that is used is different garments. That is why it's
-branched it off into its own documentation page.
+Construire une poche de soudure est une technique qui est utilisée est différents vêtements. C'est la raison pour laquelle il est
+branché sur sa propre page de documentation.
 
-There’s both written documentation and a video series that shows you how to do it, so even if
-you’ve never made welt pockets before, you’ll be fine.
+Il y a à la fois une documentation écrite et une série vidéo qui vous montre comment le faire, donc même si
+vous n'avez jamais fait de poches soudées auparavant, vous allez vous passer.
 
-[To the welt pockets documentation](https://freesewing.org/docs/sewing/double-welt-pockets/)
+[À la documentation des poches de soudure](https://freesewing.org/docs/sewing/double-welt-pockets/)
 
 </Tip>
 
 <!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
 Does it need a note to that effect? --->
 
-## Step 2: Prepare the front pockets
-Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. The flap along the outside seam of each leg is for just this purpose.
+## Étape 2 : Préparez les poches avant
+Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. Le rabat le long de la couture extérieure de chaque jambe est à cet effet.
 
-If you are using a serger, serge the curved edges of your pocket pieces. Then, serge along the long edges of the pocket flaps.
+Si vous utilisez un serger, serrez les bords courbés de vos pièces de poche. Then, serge along the long edges of the pocket flaps.
 
-![Front pockets with serged edges](step02.svg)
+![Poches avant avec bords sergés](step02.svg)
 
-## Step 3: Attach pockets to pants
+## Étape 3 : Attacher des poches à un pantalon
 
-With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Sew together. Repeat for second leg.
+With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Coudre ensemble. Répéter pour la deuxième jambe.
 
-![Pockets sewn to front pants](step03.svg)
+![Poches cousues sur pantalon avant](step03.svg)
 
-Now do the same with the back legs. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Sew together.
+Maintenant, faites la même chose avec les jambes arrière. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Coudre ensemble.
 
-Press all seams toward the pants (away from the pocket bag).
+Appuyez sur toutes les coutures vers le pantalon (loin du sac de poche).
 
-![Pressed pockets](step03b.svg)
+![Poches pressées](step03b.svg)
 
 <Note>
 
-Optional: You can understitch here, a millimeter or two in from the seam on each side of the pocket
-bag, to secure the flaps and pocket bag all together the way you pressed them.
+Facultatif : Vous pouvez dessiner ici un millimètre ou deux à partir de la couture de chaque côté du sac
+de poche, pour sécuriser les volets et le sac de poche ensemble de la façon dont vous les avez pressés.
 
 </Note>
 
-![Understitched pockets](step03c.svg)
+![Poches sous-cousues](step03c.svg)
 
-## Step 4: Prepare the side seams and pocket bag
+## Étape 4 : Préparez les coutures latérales et le sac de poche
 
-You should now have two big pieces, each with a front and back leg attached by a pocket.
+Vous devriez maintenant avoir deux grosses pièces, chacune avec une jambe avant et arrière attachée par une poche.
 
-Take one of the pieces, and place the front and back leg good sides together. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
+Prenez l'une des pièces, et placez la jambe avant et arrière de bons côtés ensemble. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
 
-## Step 5: Sew the side seams
+## Étape 5 : Coudre les coutures latérales
 
-You'll sew two separate seams to stitch up your side seams while leaving your pockets open.
+Vous courez deux coutures séparées pour coudre vos coutures latérales tout en laissant vos poches ouvertes.
 
-Start at the top of the leg pieces. Sew along the side seam, pivoting as you reach the pocket bag. You can also shorten your stitch length here to reinforce the corner of the pocket opening. Follow the side seam, pivoting again and ending at the top of the pocket.
+Commencez au sommet des pièces de la jambe. Coudre le long de la couture latérale, pivoter à mesure que vous atteignez le sac de poche. Vous pouvez également raccourcir la longueur de votre point ici pour renforcer le coin de l'ouverture de la poche. Suivre la couture latérale, se pivoter à nouveau et se terminer en haut de la poche.
 
-Next, you'll close the bottom of the pocket bag and stitch the rest of the side seam. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Sew all the way down the leg side seam.
+Ensuite, vous fermerez le fond du sac de poche et coupez le reste de la couture latérale. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Coudre tout le long de la couture côté jambe.
 
-Repeat for second leg.
+Répéter pour la deuxième jambe.
 
-![Sewn up side leg](step05.svg)
+![Cousue la jambe latérale](step05.svg)
 
-## Step 6: Finish the side seams
+## Étape 6: Terminer les coutures latérales
 
-Finishing these seams requires a touch of delicacy, especially around the tops of the pockets.
+La finition de ces coutures nécessite une touche de délicatesse, surtout autour du dessus des poches.
 
 It would be difficult to finish the top part of the side seam with a serger, so we'll use a zig-zag stitch. Starting at the top of the side seam, zig-zag stitch along the raw edge of the seam allowance, pivoting around the pocket opening. Continue the zig-zag stitch up the side of the pocket, unless you've serged your pockets already (in which case you can stop when you reach the pocket).
 
-The bottom opening of the pocket is a tight corner. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
+L'ouverture du bas de la poche est un coin serré. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
 
 <Note>
 
-Make sure to secure these serger stitches. They won't be caught in any other seams, so they risk
-unravelling if left unsecured.
+Assurez-vous de sécuriser ces points de serger. Ils ne seront pas pris dans d'autres coutures, donc ils risquent
+de se détricoter s'ils ne sont pas sécurisés.
 
 </Note>
 
-Repeat for second leg.
+Répéter pour la deuxième jambe.
 
-![Zig-zag stitched side seams](step06.svg)
+![Coutures latérales cousues en zig-zag](step06.svg)
 
-Press the side seams toward the front.
+Appuyez sur les coutures latérales vers l’avant.
 
 <Note>
 
-This may feel counterintuitive, as a lot of pants suggest pressing the side seams to the back.
-However, with inseam pockets, you'll want the pockets pressed toward the front of the pants. Your
-pockets will be fighting your side seam if you press the seam to the back, so we'll press it all
-to the front. This will will result in a smoother finish.
+Cela peut sembler contre-intuitif, car beaucoup de pantalons suggèrent de presser les coutures latérales vers le dos.
+Cependant, avec les poches de seam, vous voudrez que les poches soient pressées vers l'avant du pantalon. Vos poches
+se battront si vous appuyez sur la couture à l'arrière, donc nous appuierons tout sur
+à l'avant. Cela se traduira par une finition plus lisse.
 
 </Note>
 
 <Note>
 
-The corners of a pocket opening are one of the most likely places to wear out or tear, especially
-if you use your pockets a lot. If you're worried about tearing at the corners of your pockets, or
-if your fabric is more delicate, you can reinforce the pocket openings with bar tacks along the seam
-line, just outside the pocket openings.
+Les coins d'une ouverture de poche sont l'un des endroits les plus susceptibles d'usure ou d'usure surtout
+si vous utilisez vos poches beaucoup. Si vous êtes inquiet de déchirer les coins de vos poches, ou
+si votre tissu est plus délicat, vous pouvez renforcer les ouvertures de poche avec des tacks de barre le long de la ligne
+de couture, juste en dehors des ouvertures de poche.
 
 </Note>
 
-## Step 7: Anchor pocket bag to waist
+## Étape 7 : Poche de l'ancre à la taille
 
-The pockets in Paco are anchored at the waist. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
+Les poches de Paco sont ancrées à la taille. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
 
-To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Sew a line of basting stitches inside your seam allowance to hold the pocket in place.
+To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Coudre une ligne de points de fixation à l'intérieur de votre couture pour tenir la poche en place.
 
-![Anchored pocket bags showing basted seam](step07.svg)
+![Sacs de poche ancrés montrant la couture basculée](step07.svg)
 
-## Step 8: Sew and finish the inseams
+## Étape 8 : Coudre et finir les coutures
 
-Align the inseams with good sides together, then sew up the inseams. Finish the seams the same way you finished the side seams. Press inseams to the back.
+Alignez les coutures avec de bons côtés ensemble, puis cousez les coutures. Finish the seams the same way you finished the side seams. Appuyez sur les coutures à l'arrière.
 
-![Sewn up inseam](step08.svg)
+![Couture cousue](step08.svg)
 
-## Step 9: Sew and finish crotch seam
+## Étape 9 : Coudre et finir la couture de crotch
 
-To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Sew and finish the crotch seam.
+To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Coudre et finir la couture en crotte.
 
 <Note>
 
-If you sew from center front to center back, it's easier to keep your inseam seam allowances
-pressed to the back as they feed through the machine.
+Si vous coudez du centre avant au centre arrière, Il est plus facile de maintenir les droits de couture
+au dos lorsqu'ils se nourrissent à travers la machine.
 
 </Note>
 
-![Crotch seam](step09.svg)
+![Couture de coupe](step09.svg)
 
-## Step 10: Place eyelets for the draw string (optional)
-Mark the middle of your waistband length. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
+## Étape 10 : Placer les oeillets pour la chaîne de dessin (optionnel)
+Marquez le milieu de la longueur de votre ceinture. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
 
-A bit to the left and right of this, you can add two eyelets to pass a drawstring through. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
+Un peu à gauche et à droite de ceci, vous pouvez ajouter deux oeillets pour passer un cordon à travers. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
 
 <Tip>
 
-##### It’s best to add some reinforcement
+##### Il vaut mieux ajouter un renfort
 
-If you've chosen a fabric that is slippery, drapey, or thin, you might want to add some reinforcement
-behind these eyelets. A bit of interfacing or a leftover piece of denim will do just fine.
+Si vous avez choisi un tissu glissant, drapey, ou mince, vous pourriez vouloir ajouter quelques renforts
+derrière ces oeillets. Un peu d'interfaçage ou un reste de denim fera très bien.
 
 </Tip>
 
-![Waistband with eyelets](step10.svg)
+![Bande de taille avec oeillets](step10.svg)
 
-## Step 11: Prepare the waist elastic
-There’s no magic formula for the length of your elastic. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
+## Étape 11 : Préparez l'élastique de la taille
+Il n’y a pas de formule magique pour la durée de votre élastique. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
-Mark this length, cut the elastic, and join the two ends together.
+Marquer cette longueur, couper l'élastique, et joindre les deux extrémités ensemble.
 
-![Elastic joined with a series of zig-zag stitches](step11.svg)
+![Elastic joint avec une série de points de zig-zag](step11.svg)
 
-## Step 12: Join the waistband
-Place the two waistband pieces good sides together, and align the short edges. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+## Étape 12 : Rejoignez la ceinture
+Placez les deux morceaux de ceinture de bons côtés ensemble et alignez les bords courts. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-![Joined waistband pieces](step12.svg)
+![Pièces de ceinture jointes](step12.svg)
 
-Fold the waistband double along the length, with good sides out, and press. This fold will be the top of your waistband.
+Plier la ceinture à double bande le long de la longueur, avec de bons côtés dehors et presser. This fold will be the top of your waistband.
 
-## Step 13: Attach the waistband
+## Étape 13 : Attacher la ceinture
 
-You have two options for attaching your waistband. One is a bit simpler, but leaves an exposed seam on the inside. The other is a bit more fiddly, but it encloses the raw edges of your fabric.
+Vous avez deux options pour fixer votre ceinture. One is a bit simpler, but leaves an exposed seam on the inside. L'autre est un peu plus violent, mais il contient les bords bruts de votre tissu.
 
-### The simpler method
-Keep your waistband folded double, and place the elastic inside. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
+### La méthode la plus simple
+Gardez votre ceinture pliée double et placez l'élastique à l'intérieur. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
+Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Épingler en place.
 
 <Tip>
 
-##### Mind your eyelets
+##### Pensez à vos oeillets
 
-If you’ve made eyelets in your waistband, double check that they are placed towards the outside,
-not the inside of your waistband.
+Si vous avez fait des oeillets dans votre ceinture, vérifiez qu'elles sont placées vers l'extérieur,
+pas l'intérieur de votre ceinture.
 
 </Tip>
 
-Next, align the center backs and pin in place, adding additional pins around the waistband as needed.
+Ensuite, alignez le dos du centre et la broche en place, en ajoutant des épingles supplémentaires autour de la ceinture au besoin.
 
-Sew the waistband to the pants, as close to the the elastic as you can, but don’t sew into the elastic.
+Coudre la ceinture au pantalon, aussi près que possible de l’élastique, mais ne pas coudre dans l’élastique.
 
-![Waistband sewn with simple method](step13.svg)
+![Bande de taille cousue avec méthode simple](step13.svg)
 
 It’s fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 
-Remove any basting stitches from the tops of the pocket bags.
+Retirez les points de bâchage des dessus des sacs de poche.
 
-Finish the seam with a serger or other method.
+Terminer la couture avec un serger ou une autre méthode.
 
-### The enclosed seam method
+### La méthode de couture fermée
 
-Open the waistband. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
+Ouvre la ceinture. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
+Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Épingler en place.
 
 <Tip>
 
-##### Mind your eyelets
-To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
-waistband, above the fold, for now.
+##### Pensez à vos oeillets
+Pour vous assurer que vos oeillets finiront à l'extérieur, Assurez-vous qu'ils sont plus proches du sommet de votre ceinture de
+, au-dessus du pli.
 
 </Tip>
 
-![Open waistband sewn to pants](step13b.svg)
+![Bande de taille ouverte cousue en pantalon](step13b.svg)
 
-Next, align the center back of your waistband with the center back seam. Pin in place. Then, add additional pins around the waistband as needed.
+Alignez ensuite le fond central de votre ceinture avec la couture centrale du dos. Épingler en place. Then, add additional pins around the waistband as needed.
 
-Sew the waistband to the pants.
+Coudre la ceinture à la pantalon.
 
-Press the waistband up. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
+Appuyez sur la ceinture. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
 
-Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
+Repliez la ceinture, en tournant la moitié de la ceinture vers l'intérieur. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. De l'extérieur, coupez dans le fossé, accrochez la ceinture intérieure à mesure que vous allez.
 
 <!--- Probably put a note here about stitching in the ditch? --->
 
-![Waistband sewn with enclosed seams](step13c.svg)
+![Bande de taille cousue avec coutures fermées](step13c.svg)
 
-## Step 14: Prepare the cuff elastic
+## Étape 14 : Préparez l'élastique de manche
 
 As you did with the waistband elastic, wrap the elastic for your cuff around your ankle and pull it tight until you get a good fit.
 
-Mark this length, cut the elastic, and join the two ends together. Repeat for the other cuff elastic.
+Marquer cette longueur, couper l'élastique, et joindre les deux extrémités ensemble. Répétez pour l'autre élastique de manche.
 
-![Elastic joined with zig-zag stitching](step14.svg)
+![Couture élastique en zig-zag](step14.svg)
 
-## Step 15: Join the cuffs
-Fold each cuff with good sides together, aligning the short edges. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+## Étape 15 : Rejoignez les poignets
+Plier chaque manche avec de bons côtés ensemble, en alignant les bords courts. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-![Joined cuffs](step15.svg)
+![Poignets joints](step15.svg)
 
-Fold each cuff double along the length, with good sides out, and press. This fold will be the bottom of your cuffs.
+Pliez chaque manche en double le long de la longueur, avec de bons côtés dehors et pressez. This fold will be the bottom of your cuffs.
 
-## Step 16: Attach the cuffs
+## Étape 16 : Attacher les poignets
 
-You will attach your cuffs the same way that you attached the waistband. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
+Vous fixerez vos poignets de la même façon que vous fixez la ceinture. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
 
 <Note>
 
- If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
- sleeve cuffs), this will make sewing the cuffs easier.
+ Si votre machine à coudre a un lit amovible (habituellement retiré pour exposer le "bras libre" pour coudre des manches de
+ poignées) Cela rendra la couture des poignets plus facile.
 
  </Note>
 
-### The simpler method
+### La méthode la plus simple
 
-Keep your cuffs folded double, and place the elastic inside.
+Gardez vos poignets pliés en double et placez l'élastique à l'intérieur.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Alignez la couture dans le manchon avec la couture du pantalon. Make sure that your cuff is outside of your pants, with good sides together. Épingler en place, puis épingler le reste du chemin autour du poignet.
 
 <Tip>
 
-##### Pinning the cuffs
+##### Épingler les poignées
 
-The elastic will make the cuffs more difficult to pin. To make sure that your cuffs are pinned evenly
-to the pants, place your second pin on the opposite side of the leg opening from the first. You can
-stretch the elastic to make sure that everything is lined up smoothly, then place your next pins halfway
-between the first two. Continue this way, pinning halfway between other pins, until you feel confident
-there are enough.
+L'élastique rendra les poignets plus difficiles à épingler. Pour vous assurer que vos poignets sont épinglés équitablement
+au pantalon, placez votre deuxième épingle sur le côté opposé de la jambe qui s'ouvre du premier. Vous pouvez
+étirer l'élastique pour vous assurer que tout est aligné en douceur, puis placez vos broches suivantes à mi-chemin
+entre les deux premières. Continuez de cette façon, épinglant à mi-chemin entre les autres épingles, jusqu'à ce que vous vous sentiez confiant
+il y en a assez.
 
 </Tip>
 
-Sew the cuff to the pants opening, as close to the the elastic as you can, but don’t sew into the elastic.
+Coudre le manchon à l'ouverture du pantalon, aussi près que possible de l'élastique, mais ne pas coudre dans l'élastique.
 
-![Cuffs sewn with simple method](step16.svg)
+![Poignets cousus avec une méthode simple](step16.svg)
 
-Finish the seam with a serger or other method.
+Terminer la couture avec un serger ou une autre méthode.
 
-### The enclosed seam method
+### La méthode de couture fermée
 
-Open the cuff. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
+Ouvrez le poignet. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Alignez la couture dans le manchon avec la couture du pantalon. Make sure that your cuff is outside of your pants, with good sides together. Épingler en place, puis épingler le reste du chemin autour du poignet.
 
-Sew the cuff to the pants.
+Coudre le manchon au pantalon.
 
-![Sewing the open cuffs to the pants](step16b.svg)
+![Coudre les poignets ouverts sur le pantalon](step16b.svg)
 
-Press the cuff away from the pants. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
+Appuyez sur le manchon loin du pantalon. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
 
-Refold the cuff, turning half the cuff to the inside. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
+Replier le manchon en tournant la moitié du manchon vers l'intérieur. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
 
-![Cuffs sewn with enclosed seams](step16c.svg)
+![Poignets cousus avec coutures fermées](step16c.svg)
 
-## Step 17: Stitching the cuffs and waistband (optional)
+## Étape 17 : découper les poignets et la ceinture (facultatif)
 
-If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
+Si vous avez une élastique de manche plus large, vous voudrez peut-être broder une ligne horizontale à mi-chemin vers le haut du manchon. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
 
 <!--- You could also do a zig-zag stitch here, but I think straight probably looks nicer? --->
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
 
-You can do the same for the waistband.
+Vous pouvez faire la même chose pour la ceinture.
 
-![Waistband and cuffs with decorative stitching](step17.svg)
+![Bande de taille et poignets avec couture décorative](step17.svg)
 
 <Note>
 
-If you put in eyelets for a drawstring, sew a line of stitches above the eyelets and a separate line
-below the eyelets, leaving a channel wide enough for your drawstring.
+Si vous mettez des oeillets pour un cordon, coupez une ligne de points au-dessus des oeillets et une ligne séparée
+sous les oeillets, laissant un canal assez large pour votre cordon.
 
 </Note>
 
-## Step 18: Thread a draw string around the waist (optional)
+## Étape 18 : Fil autour de la taille (facultatif)
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
 
-There are tools to make this task easier, but one that almost everyone has is a simple safety pin.
-Pin the safety pin to one end of your drawstring, then push it through the channel. The safety pin
-will be easier to maneuver through the fabric, and it will pull the drawstring along with it.
+Il y a des outils pour faciliter cette tâche, mais presque tout le monde a une épingle de sécurité simple.
+Épingler la broche de sécurité à une extrémité de votre cordon, puis la pousser à travers le canal. La broche de sécurité
+sera plus facile à manipuler à travers le tissu, et elle tirera le cordon avec elle.
 
 </Note>
 
-![Paco threaded with drawstring](step18.svg)
+![Paco threaded avec drawstring](step18.svg)
 
-## Step 19: Enjoy your Paco pants!
-You did it! Way to go!
+## Étape 19: Profitez de votre pantalon Paco !
+Vous avez réussi ! C'est parti!
 
 <!--- Maybe we want to put a fun gif here? --->

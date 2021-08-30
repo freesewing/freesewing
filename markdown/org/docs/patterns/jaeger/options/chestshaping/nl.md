@@ -1,4 +1,4 @@
 
 ![Borstvorming](chestshaping.svg)
 
-The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
+De verticale hoeveelheid die moet worden afgebroken & verspreid het bovenste voorpaneel om de kist te vormen, als een factor van je borstomtrek.

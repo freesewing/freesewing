@@ -1,5 +1,5 @@
 
 ![Ángulo de corte frontal](frontcutawayangle.svg)
 
-The angle by which the front opens up below the lower button.
+El ángulo por el cual la parte frontal se abre debajo del botón inferior.
 

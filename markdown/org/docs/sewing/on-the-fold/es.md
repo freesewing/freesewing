@@ -1,17 +1,17 @@
 ---
-title: On the fold
+title: En el pliegue
 ---
 
-When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut *on the fold*.
+Cuando tienes un patrón que es simétrico, las instrucciones pueden decirte que se debe cortar *en el pliegue*.
 
 This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
 
-The fold line is indicated with a double arrow like in this example:
+La línea plegable se indica con una doble flecha como en este ejemplo:
 
 <Legend part="cutonfold" caption="A cut-on-fold indicator" >
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide][1]
+Para una visión general de todos los indicadores en tu patrón, consulta la [guía de notación de patrones][1]
 
 </Tip>

@@ -1,8 +1,8 @@
----
----
+- - -
+- - -
 
-Controls the shoulder seam location on the armhole side.
+Steuert die Position der Schulternaht auf der Armlochseite.
 
-- Increase this option to shift the shoulder seam forward on the armhole side
-- Decrease this option to shift the shoulder seam backward on the armhole side
+- Erhöhe diese Option, um die SchulterNaht auf der Armlochseite vorwärts zu verschieben
+- Verringere diese Option, um die SchulterNaht rückwärts auf der Armlochseite zu verschieben
 

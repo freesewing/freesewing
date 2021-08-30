@@ -1,7 +1,7 @@
 ---
-title: Seams
+title: Nähte
 ---
 
-Seams (the lines on which you sew) are indicated by a solid line. The color of the line indicates the fabric type of the pattern piece:
+Nähte (die Zeilen, auf denen Sie nähen) werden durch eine solide Linie angezeigt. Die Farbe der Linie zeigt den Stofftyp des Musterstücks an:
 
 <Legend part="fabricLines" caption="Seamlines for different fabric types" >

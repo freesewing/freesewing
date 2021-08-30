@@ -2,6 +2,10 @@
 title: Hauteur de pince dos
 ---
 
-![The effect of the back dart height option on the pattern](sample.png)
+![L'effet de l'option de hauteur de la jauge arrière sur le motif](sample.png)
 
-The **back dart height** option controls the height (lenght if you will) of the back dart.
+L'option **hauteur de la fléchette arrière** contrôle la hauteur de la flèche arrière (longueur, si vous le souhaitez).
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backdartheight_sample.svg "Effet de cette option sur le motif")

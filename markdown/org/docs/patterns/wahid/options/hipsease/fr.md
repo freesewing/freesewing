@@ -1,3 +1,3 @@
 ![Aisance des hanches](hipsease.svg)
 
-How much room do you want at your hips?
+Combien de place voulez-vous sur vos hanches ?

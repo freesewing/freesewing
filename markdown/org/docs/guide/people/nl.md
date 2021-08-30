@@ -1,12 +1,12 @@
 ---
-title: Your people
+title: Uw mensen
 order: 350
 ---
 
-Once you have an account, you can start adding measurements. But that quickly brings up the next question: what if you want a pattern for you, but also for your partner?
+Zodra je een account hebt, kun je metingen gaan toevoegen. Maar dat brengt snel de volgende vraag op: wat als u een patroon voor u wilt, maar ook voor uw partner?
 
-That's why we have *people*.
+Daarom hebben we *mensen*.
 
-You create a person, and add measurements to that person. Now you can generate patterns for this person, based on their measurements.
+Je maakt een persoon en voeg metingen toe aan die persoon. Nu kunt u patronen voor deze persoon genereren, op basis van hun metingen.
 
-You can add as many people as you like. Having just one for yourself is fine too.
+Je kunt zoveel mensen toevoegen als je wilt. Het is ook goed om er maar één voor u te hebben.

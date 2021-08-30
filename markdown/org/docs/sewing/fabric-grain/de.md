@@ -2,18 +2,18 @@
 title: Fadenlauf
 ---
 
-![The grainline runs parallel to the selvedge](fabric-grain.jpg)
+![Die Körnung läuft parallel zur Eselkante](fabric-grain.jpg)
 
-The grain of a fabric is determined by the alignment of the yarns in a woven fabric. More precisely, the grain line is determined by how the warp yarns run.
+Das Korn eines Stoffes wird durch die Ausrichtung der Garne in einem Gewebe bestimmt. Genauer gesagt wird die Kornlinie durch die Ausführung der Kettgarne bestimmt.
 
-Woven fabric are produced by weaving the so-called weft between the warp threads. The warp threads run along the length of a fabric roll, parallel to the selvedge, while the weft runs back and forth across its width.
+Gewebter Stoff wird durch das Weben zwischen den Kettenfaden erzeugt. Die Kettfäden verlaufen parallel zur Körperkante entlang der Länge einer Stoffrolle, während die Wunde über ihre Breite hin und her verläuft.
 
-Grain is indicated on a pattern by the grain line. When cutting out your pattern, it's important to align the grain line of the pattern to the grain of your fabric.
+Getreide wird auf einem Muster durch die Kornlinie angezeigt. Beim Ausschneiden des Musters ist es wichtig, das Korn des Musters an das Korn des Stoffes auszurichten.
 
-> For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
+> Für weitere Ketten- und Wellendetails: [Auf Wikipedia weben](http://en.wikipedia.org/wiki/Weaving)
 
-> ##### Confused? Think wood
+> ##### Verwirrt? Holz denken
 > 
-> Wood is not woven, but grows in different layers based on the seasons (growth rings). The way these layers are aligned are important for woodworkers. They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
+> Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie andere Parameter.
 > 
-> Just like a woodworker will take this into account before cutting the wood, you should take grain into account before cutting out your fabric.
+> Genau wie ein Holzarbeiter dies berücksichtigen wird, bevor er das Holz schneidet, sollten Sie das Getreide berücksichtigen, bevor Sie Ihren Stoff ausschneiden.

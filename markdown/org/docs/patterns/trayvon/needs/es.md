@@ -1,5 +1,5 @@
-To make Trayvon, you will need the following:
+Para hacer Trayvon, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Between 0.5 meter and 1.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/trayvon/fabric)), depending on whether you're cutting on bias, on grain, or cross-grain. 
+- Entre 0,5 metros y 1. metro de un tejido adecuado ([ver las opciones de tela](/docs/patterns/trayvon/fabric)), dependiendo de si estás cortando el sesgo, el grano o el grano cruzado. 
 

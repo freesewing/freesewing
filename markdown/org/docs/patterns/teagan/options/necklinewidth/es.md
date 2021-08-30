@@ -1,1 +1,1 @@
-Controls the width of the neck opening.
+Controla el ancho de la abertura del cuello.

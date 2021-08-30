@@ -1,11 +1,11 @@
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Deze patronen waren te zien in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi. rg/issues/27),
+het artikel bevat ook instructies, dus je kunt het eens bekijken.
 
 </Note>
 
 <Warning>
-Documentation for this pattern is yet to be written.
+Documentatie voor dit patroon moet nog worden geschreven.
 </Warning>

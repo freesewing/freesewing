@@ -1,2 +1,2 @@
 
-Controls the radius by which we round the pocket slant into the outseam.
+Bepaalt de straal waarmee we het zakdeel op de rand afwerken.

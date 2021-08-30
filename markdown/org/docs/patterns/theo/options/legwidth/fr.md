@@ -3,10 +3,10 @@ Contrôle la largeur des jambes.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Ce modèle se traduisait par deux variations. Theodore, et Theo, ce dernier ayant
+une coupe plus mince.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Depuis FreeSewing v2.0, nous les avons fusionnés en un seul patron et cette option
+vous permet de modifier la largeur des jambes.
 
 </Note>

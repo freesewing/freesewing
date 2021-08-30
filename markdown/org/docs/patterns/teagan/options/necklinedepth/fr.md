@@ -1,2 +1,2 @@
-Controls the depth of the neck opening.
+Contrôle la profondeur de l'encolure.
 

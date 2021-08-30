@@ -1,2 +1,2 @@
 
-This controls the curvature of the fly's J-seam.
+Esto controla la curvatura de la costura J de la mosca.

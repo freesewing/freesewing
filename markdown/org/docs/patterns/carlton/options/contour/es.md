@@ -1,4 +1,4 @@
 
-Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
+Controla hasta qué punto la costura de la princesa se corregirá una vez que se supere la plenitud de tus senos.
 
-A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+Un factor alto suavizará la curva, resultando en un abrigo menos ajustado que sea más fácil de coser. Un factor bajo afilará la curva, resultando en una capa más ajustada, con una costura de princesa que es más difícil de coser.

@@ -1,7 +1,7 @@
-![The horizontal stretch factor option on Bruce](./horizontalstretchfactor.svg)
+![Die Option des horizontalen Stretchfaktors auf Bruce](./horizontalstretchfactor.svg)
 
-This option allows you to adapt to the stretch of the fabric you are using.
+Mit dieser Option können Sie sich an die Streckung des verwendeten Stoffes anpassen.
 
-If you choose 90& (for example) for every 10cm of fabric, we'll only draft 9cm. This way, 9cm of fabric will be stretched to 10cm, which is why we call that a 90% stretch factor.
+Wenn Sie 90& (zum Beispiel) für jeden 10cm Stoff wählen, werden wir nur 9 cm entwerfen. Auf diese Weise wird 9 cm Gewebe auf 10 cm gestreckt, und deshalb nennen wir das einen 90%igen Stretchfaktor.
 
 > If you're not sure what to pick, best is to take the fabric you are going to make your top out and see how much fabric you need to stretch out to get to 10 cm with a _good_ stretch.

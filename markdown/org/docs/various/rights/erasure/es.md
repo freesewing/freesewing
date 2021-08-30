@@ -1,8 +1,8 @@
 ---
-title: The right to erasure
+title: El derecho a borrarse
 order: 40
 ---
 
-You have the right to have your personal data erased.
+Usted tiene derecho a que sus datos personales sean borrados.
 
-Go to [/account/remove](/account/remove/) to remove all your data.  
+Ve a [/account/remove](/account/remove/) para eliminar todos tus datos.  

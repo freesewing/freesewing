@@ -24,8 +24,8 @@ crossSeamCurveBend:
   title: Buiging binnenbeennaad
   description: Bepaalt de curve van de binnenbeennaad
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  title: Grensoverschrijdende hoek
+  description: Bepaalt de hoek van de kruisnaad
 crotchSeamCurveStart:
   title: Begin van de curve van de kruisnaad
   description: Bepaalt hoe ver in de kruisnaad de curve start
@@ -33,8 +33,8 @@ crotchSeamCurveBend:
   title: Buiging kruisnaad
   description: Bepaalt de curve van de kruisnaad
 crotchSeamCurveAngle:
-  title: Crotch seam angle
-  description: Controls the angle of the crotch seam
+  title: Kruisnaad hoek
+  description: Bepaalt de hoek van de kruisnaad
 waistBalance:
   title: Balans taille
   description: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak

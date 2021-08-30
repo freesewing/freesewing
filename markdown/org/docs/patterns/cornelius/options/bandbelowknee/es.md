@@ -1,6 +1,6 @@
 ---
-title: Cuff below knee
+title: Corta debajo de la rodilla
 ---
 
-Controls how far the cuff will sit below your knee.
+Controla hasta qué punto el corte se sentará debajo de la rodilla.
 

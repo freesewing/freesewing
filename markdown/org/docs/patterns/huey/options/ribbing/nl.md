@@ -1,3 +1,3 @@
 ![Boordstof](./ribbing.svg)
 
-Whether to include ribbing or not.
+Of je boordstof wil opnemen of niet.

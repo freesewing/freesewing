@@ -1,2 +1,2 @@
 
-Controls the width of the pockets.
+Steuert die Breite der Taschen.

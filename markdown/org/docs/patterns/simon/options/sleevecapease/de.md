@@ -1,12 +1,14 @@
 
-Determines the amount of sleevecap ease.
+Bestimmt die Menge der Ärmel Leichtigkeit.
 
 <Note>
 
-The amount of sleevecap ease determines how the sleeves rolls from the shouder.
-More ease makes the sleeve curl into the seam as you see on suit jackets. Less ease makes the sleeve lie flat.
+Die Menge an Sleevecap Leichtigkeit bestimmt, wie die Ärmel vom Shouder rollen.
+Mehr Leichtigkeit macht die Ärmel Curl in die Naht wie Sie auf Anzug Jacken sehen. Weniger Leichtigkeit lässt die Ärmel flach liegen.
 
-For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
+Für leichten Stoff oder Stricken wollen Sie wenig bis keine Ärmel leicht. Für schwerere Gewebe brauchen Sie mehr Ärmel.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleevecapease_sample.svg "Effekt dieser Option auf das Muster")

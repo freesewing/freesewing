@@ -1,7 +1,7 @@
 
 Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.
 
-This option is specifically for people with breasts. Enabling it will draft Teagan to your high bust measurement and let ease and stretch fit your breasts.
+Cette option est spécifiquement destinée aux personnes souffrant de poitrine. Enabling it will draft Teagan to your high bust measurement and let ease and stretch fit your breasts.
 
 This gives you what is generally considered to be a more flattering fit.
 
@@ -10,5 +10,5 @@ If you don't enable this option, Teagan will essentially be drafted for a body w
 Enable this option and we'll draft to your high bust, fitting your body without breasts as it were, and then allowing your breasts to fill out the T-shirt's ease (and possibly stretch depending on your high bust / bust ratio).
 
 <Note>
-This option has no effect when there's no high bust measurement provided
+Cette option n'a aucun effet lorsqu'il n'y a pas de mesure de poitrine élevée fournie
 </Note>

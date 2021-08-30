@@ -2,4 +2,4 @@
 title: Breedte stolpplooi
 ---
 
-Controls the width of the (optional) box pleat at the back.
+Bepaalt de breedte van de (optioneel) pleat achteraan.

@@ -1,20 +1,20 @@
----
----
+- - -
+- - -
 
-#### Sewing patterns made to your measurements
+#### Patrones de costura hechos a tus mediciones
 
-All our patterns are *made-to-measure*. Not just graded up or down, but actually drafted to your exact specifications, just as you would on paper.
+Todos nuestros patrones están *hechos a medida*. No sólo calificado o bajo, sino redactado de acuerdo con sus especificaciones exactas, tal como lo haría en papel.
 
-#### Packed with options plus live preview
+#### Empaquetado con opciones más vista previa en vivo
 
-FreeSewing patterns come with options that allow you to customize different aspects of the pattern. Our live preview means no surprises: what you see is what you get.
+Los patrones de FreeSewing vienen con opciones que te permiten personalizar diferentes aspectos del patrón. Nuestra vista previa en vivo significa que no hay sorpresas: lo que ves es lo que obtienes.
 
-#### Patterns you can share and adapt
+#### Patrones que puedes compartir y adaptar
 
-FreeSewing patterns often have so many options that one pattern can yield a variety of styles. You can share your patterns with others so they can get the same style, drafted to their measurements.
+Los patrones de FreeSewing a menudo tienen tantas opciones que un patrón puede producir una variedad de estilos. Puedes compartir tus patrones con otros para que puedan obtener el mismo estilo, redactado a sus mediciones.
 
-#### A community of helpful people
+#### Una comunidad de personas útiles
 
-Questions about a pattern? Questions about a pattern? Stuck on one of the steps when making your garment? No worries, help is available.
+¿Preguntas sobre un patrón? Questions about a pattern? Stuck on one of the steps when making your garment? No hay preocupaciones, la ayuda está disponible.
 
-[Join us on Discord](https://discord.freesewing.org/) and discover what makes the FreeSewing community so great.
+[Únete a nosotros en Discord](https://discord.freesewing.org/) y descubre lo que hace que la comunidad de FreeSewing sea tan grande.

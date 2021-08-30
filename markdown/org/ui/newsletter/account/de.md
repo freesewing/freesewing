@@ -1,9 +1,9 @@
 ---
-title: Manage your subscription in your account
+title: Verwalten Sie Ihr Abonnement in Ihrem Konto
 ---
 
-As a registered user, you can [manage your newsletter settings in your account][1].
+Als registrierter Benutzer können Sie [Ihre Newsletter-Einstellungen in Ihrem Konto verwalten][1].
 
-If you'd like to sign up a different email address as the one linked to your account, you can do so below.
+Wenn Sie eine andere E-Mail-Adresse als anlegen möchten, die mit Ihrem Konto verknüpft ist, können Sie dies unten tun.
 
 [1]: /account/settings/newsletter/

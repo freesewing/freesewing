@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Breite der Ärmelöffnung
 chestShaping:
   title: Brustformung
-  description: Amount of shaping to accommodate for the chest curve
+  description: Anzahl der Formatierung für die Brustkurve
 frontDartPlacement:
   title: Platzierung des vorderen Abnähers
   description: Position der vorderen Abnäher

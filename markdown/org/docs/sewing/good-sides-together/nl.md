@@ -16,7 +16,14 @@ Markeer nu het patroon op de verkeerde kant van de stof, en knip beide lagen in 
 
 Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
-> Let op dat beide kanten recht van draad liggen wanneer je met goede kanten samen knipt.
+<Note> 
+
+##### Wat als er niet voor de hand ligt?
+
+Bij het uitknippen van iets zonder een evidente *goed* kant (zoals tussenvoering), 
+wat belangrijk is, is dat je twee gespiegeld stukken knipt, in plaats van twee identieke stukken.
+
+</Note>
 
 ## Stikken met goede kanten op elkaar
 
@@ -26,4 +33,4 @@ Stikken met de goede kanten op elkaar is de standaard manier om een naad te make
 
 Door de goede kanten van het kledingstuk op elkaar te leggen worden de twee stukken aan elkaar bevestigd met de naadwaarde aan de binnenkant van het kledingstuk. Dit wordt voor de overgrote meerderheid van naden gedaan.
 
-> Wanneer er geen specifieke instructies zijn voor het stikken van een naad is het met de goede kanten op elkaar.
+> Als er geen specifieke instructies zijn om een naad te maken, is het de goede kanten op elkaar.

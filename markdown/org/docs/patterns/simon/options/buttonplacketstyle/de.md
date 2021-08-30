@@ -1,16 +1,16 @@
 ![Knopfleiste Stil](buttonplacketstyle.svg)
 
-Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
+Möchten Sie, dass der Schaltflächen-Platzhalter an Stelle (klassischer Stil) genäht oder rückwärts geklappt und durch die Tasten (nahtloser Stil) gehalten wird?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Nahtlos ist weniger Arbeit, und es sieht großartig aus.
 
 </Tip>
 
 <Note>
 
-As seamless is only possible on a *cut-on* placket, this option is ignored if you choose a seperate button placket.
+Da nahtlos nur bei einem *cut-on* Platzhalter möglich ist, wird diese Option ignoriert, wenn Sie einen separaten Platzhalter wählen.
 
 </Note>
 

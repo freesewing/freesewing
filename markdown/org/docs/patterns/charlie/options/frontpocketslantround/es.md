@@ -1,2 +1,2 @@
 
-Controls how far from the end of the slant we start rounding into the outseam.
+Controla hasta qué punto desde el final del esclavizado empezamos a redondear hacia el exterior.

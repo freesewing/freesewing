@@ -1,6 +1,6 @@
 ---
-title: Vent length
+title: Ventillänge
 ---
 
-Controls the length of vent between cuff and knee.
+Steuert die Länge des Schlot zwischen Manschette und Knie.
 

@@ -1,25 +1,25 @@
----
----
+- - -
+- - -
 
-#### Curious how this works?
+#### Eigenaardig hoe dit werkt?
 
-FreeSewing is written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
+FreeSewing is geschreven in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Onze [core library](https://www.npmjs.com/package/@freesewing/core) en [patronen](/patterns) zijn beschikbaar voor [NodeJS](https://nodejs.org/) en de browser.
 
-Our websites are built with [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) and kindly hosted by [Netlify](https://www.netlify.com/).
+Onze websites zijn gebouwd met [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) en vriendelijk gehost door [Netlify](https://www.netlify.com/).
 
-Everything runs in the browser except user data and conversion to PDF. For that, we have built a backend with [Express](https://expressjs.com/) exposing a REST API.
+Alles draait in de browser, behalve gebruikersgegevens en conversie naar PDF. Daarvoor hebben we een backend gebouwd met [Express](https://expressjs.com/) die een REST API onthult.
 
-Our code and markdown content is hosted by [Github](https://github.com/freesewing/). We use [Crowdin](https://crowdin.com/) for translations, search is handled by [Algolia](https://www.algolia.com/) and [Bugsnag](https://www.bugsnag.com/) does error handling for us.
+Onze code en markdown inhoud wordt gehost door [Github](https://github.com/freesewing/). We gebruiken [Crowdin](https://crowdin.com/) voor vertalingen, zoekopdrachten worden afgehandeld door [Algolia](https://www.algolia.com/) en [Bugsnag](https://www.bugsnag.com/) doet fouten bij het afhandelen voor ons.
 
-We are appreciative of these and other projects/companies that allow us to stand on their shoulders.
+Wij waarderen deze en andere projecten/bedrijven die ons in staat stellen op hun schouders te staan.
 
-#### Learn more
+#### Meer informatie
 
-Our [developer documentation](https://freesewing.dev) is available on [freesewing.dev](https://freesewing.dev). You'll find links to all our repositories there, as well as in-depth documentation, tutorials, and examples.
+Onze [documentatie over ontwikkelaars](https://freesewing.dev) is beschikbaar op [freesewing.dev](https://freesewing.dev). Je vindt daar links naar al onze repositories, evenals diepgaande documentatie, tutorials en voorbeelden.
 
 #### Wil je meehelpen?
 
 Geweldig ❤️   
 Onze [documentatie voor bijdragers](https://freesewing.dev/contributors/) is een goed vertrekpunt. We hebben ook specifieke handleidingen voor [vertalers](https://freesewing.dev/translators/) en [editors](https://freesewing.dev/editors/).
 
-Last but not least, [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
+Niet in de laatste plaats [sluit je aan bij Discord](https://discord.freesewing.org/) waar alle andere bijdragers ophangen.

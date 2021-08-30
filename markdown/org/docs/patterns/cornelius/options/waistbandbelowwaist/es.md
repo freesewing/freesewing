@@ -1,5 +1,5 @@
 ---
-title: Lower waistband
+title: Banda inferior
 ---
 
-This option allows you to lower the waistband below your (natural) waist.
+Esta opción te permite bajar la cintura debajo de tu cintura (natural).

@@ -1,11 +1,14 @@
 
-Controls the length of the entire trousers, which essentially means the length of the legs. 
+Contrôle la longueur du pantalon entier, ce qui signifie essentiellement la longueur des jambes.
 
 <Note>
 
-Setting this to zero will make the trousers the same length as the [waist to floor](/docs/measurements/waisttofloor) measurement.
+Si vous définissez cette valeur à zéro, la longueur du pantalon sera la même que la mesure [taille au plancher](/docs/measurements/waisttofloor).
 
-This does not mean that the trousers will hit the floor, since due to the curves of the body and the way the fabric drapes,
-the trousers will need to be longer than this to actually hit the floor.
+Cela ne signifie pas que le pantalon frappera le sol, car en raison des courbes du corps et de la façon dont le tissu se drape,
+le pantalon devra être plus long que celui-ci pour toucher le sol.
 
 </Note>
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_lengthbonus_sample.svg "Effet de cette option sur le motif")

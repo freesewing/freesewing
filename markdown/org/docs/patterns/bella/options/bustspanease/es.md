@@ -1,11 +1,15 @@
 ---
-title: Bust span ease
+title: Facilidad de la expansión del polvo
 ---
 
-![The effect of the bust span ease option on the pattern](sample.png)
+![El efecto de la opción de relajación de la expansión del polvo en el patrón](sample.png)
 
-The **bust span ease** option controls how much ease is applied to the bust span.
+La opción **de reducción de polvo** controla la facilidad con la que se aplica a la gama de busto.
 
-<Note>This will not add ease to the garment, but merely influence the bust point</Note>
+<Note>Esto no añadirá facilidad a la ropa, sino que simplemente influirá en el punto de busto</Note>
 
 
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_bustspanease_sample.svg "Efecto de esta opción en el patrón")

@@ -1,2 +1,6 @@
 
-Controls how far the double rows of front buttons are set apart.
+Controla hasta qué punto se separan las filas dobles de los botones frontales.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlton_buttonspacinghorizontal_sample.svg "Efecto de esta opción en el patrón")

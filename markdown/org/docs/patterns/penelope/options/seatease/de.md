@@ -1,2 +1,2 @@
-Amount of ease around the fullest part of your bum.
+Menge an Leichtigkeit rund um den ganzen Teil deines Bums.
 

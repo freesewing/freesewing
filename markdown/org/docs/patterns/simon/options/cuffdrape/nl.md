@@ -5,7 +5,7 @@ Hoeveel breder het uiteinde van de mouw is dan de polsomtrek.
 <Note>
 
 Dit verandert het uitzicht van de mouw een beetje. 
-More drape makes the sleeve wider and gives you a more *blousy* effect, whereas less drape makes the sleeve more narrow.
+Meer aftrek maakt de mouw breder en geeft je een meer *blousy* effect, terwijl minder de mouw smal wordt.
 
 Dit verschil wordt in de manchet verwerkt met plooien.
 

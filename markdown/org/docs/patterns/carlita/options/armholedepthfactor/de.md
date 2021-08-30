@@ -1,3 +1,7 @@
 ![Tiefenfaktor des Armloches](./armholedepthfactor.svg)
 
-This controls the depth of the armhole, which in turn influences the sleevecap width.
+Dadurch wird die Tiefe des Armlochs kontrolliert, was wiederum die Breite der Ärmel beeinflusst.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_armholedepthfactor_sample.svg "Effekt dieser Option auf das Muster")

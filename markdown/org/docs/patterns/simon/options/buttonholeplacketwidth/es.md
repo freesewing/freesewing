@@ -1,3 +1,3 @@
 ![Anchura de la vista de los ojales](buttonholeplacketwidth.svg)
 
-The width of your buttonhole placket.
+El ancho de la placa del orificio del botón.

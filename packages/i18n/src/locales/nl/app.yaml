@@ -25,7 +25,7 @@ butThatCouldChange: Maar dat kan veranderen
 cancel: Annuleren
 changePerson: Verander persoon
 changePattern: Ander patroon
-chatOnDiscord: Chat on Discord
+chatOnDiscord: Chat op Discord
 checkInboxClickLinkInConfirmationEmail: We hebben je een Email gestuurd ter bevestiging. Check je mailbox en klik op de link in onze Email.
 chest: Borst
 chestInfo: Borsten hebben extra maten nodig. Als deze persoon geen borsten heeft zullen overbodige maten verborgen worden bij het configureren. Dit heeft geen invloed op hoe patronen getekend worden.
@@ -70,7 +70,7 @@ draftPattern: 'Teken {pattern}'
 draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
-dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
+dragAndDropImageHere: Sleep een afbeelding hierheen of selecteer er handmatig een met de knop hieronder
 emailAddress: Email adres
 emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
@@ -97,11 +97,11 @@ i18n: Internationalisering
 imperialUnits: Imperiale (Engelse) eenheden (duim)
 instagram: Instagram
 invalidTldMessage: '.{tld} is geen geldige TLD'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
+joinTheChatMsg: We hebben een community op Discord met vriendelijke mensen waar je naar kunt chatten.
 justAMoment: Een ogenblikje
 layout: Layout
 logIn: Aanmelden
-loginWithProvider: 'Log in with {provider}'
+loginWithProvider: 'Log in met {provider}'
 logOut: Afmelden
 manual: Manueel
 markdownHelp: MarkDown hulp
@@ -130,7 +130,7 @@ orPayPerYear: Of betaal per jaar
 other: Andere
 otherThing: 'Andere {thing}'
 ourPatrons: Onze mecenassen
-ourRevenuePledge: Our revenue pledge
+ourRevenuePledge: Onze inkomstenbelofte
 patron-2: Poeder aap
 patron-4: Eerste stuurman
 patron-8: Kapitein
@@ -179,7 +179,7 @@ shareFreesewing: Deel FreeSewing
 showcase: Voorbeelden
 signUpForAFreeAccount: Schrijf je gratis in
 signUp: Inschrijven
-signupWithProvider: 'Sign up with {provider}'
+signupWithProvider: 'Registreer met {provider}'
 sortByField: Sorteren op {field}
 standardSeamAllowance: Standaard naadtoeslag
 startOver: Begin opnieuw
@@ -195,7 +195,7 @@ thisFieldSupportsMarkdown: Dit veld ondersteunt Markdown
 thisPageRequiresAuthentication: Deze pagina vereist authenticatie
 troubleLoggingIn: Problemen met aanmelden?
 twitter: Twitter
-txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
+txt-footer: FreeSewing is gemaakt door een gemeenschap van bijdragers<br />met de financiële steun van onze mecenassen
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
 txt-tier8: 'Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!'
@@ -308,7 +308,7 @@ editPattern-txt: Laad dit patroon in de patroonbewerker
 featureRequiresAccount: Deze functie vereist een FreeSewing account
 zoom: Zoom
 zoomIn: Zoom in
-zoomOut: Zoom out
+zoomOut: Zoom uit
 zoom-txt: Wisselt tussen het beperken van de hoogte of breedte van het patroon zodat het op je scherm past
 savePattern-txt: Bewaar dit patroon in je FreeSewing account
 comparePattern: Vergelijk patroon

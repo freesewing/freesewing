@@ -1,1 +1,1 @@
-Adjust this option for more or less stretchy elastic.
+Pas deze optie aan voor meer of minder elastische.

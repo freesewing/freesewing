@@ -1,9 +1,9 @@
 ![Longitud del puño](cufflength.svg)
 
-The length of your cuffs.
+La longitud de sus cuffs.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Esto no influirá en la longitud total de la manga.
 
 </Note>

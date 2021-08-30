@@ -1,7 +1,7 @@
 ---
-title: High Point Shoulder (HPS)
+title: Hombro de punto alto (HPS)
 ---
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
+El hombro de *punto alto* o *HPS* se utiliza como base para varias medidas verticales.
 
-The HPS is where your shoulder seam would meet your neck. The point is situated where your neck meets your shoulder. If you put a marble there, it should not roll forward or backward, but roll towards your shoulder (as in, it should sit in the middle)
+El HPS es donde tu costura de hombro se encontraría con el cuello. El punto está situado donde el cuello se encuentra con el hombro. Si pone un mármol ahí, no debe rodar hacia adelante ni hacia atrás, pero gira hacia tu hombro (como dentro, debería sentarse en el medio)

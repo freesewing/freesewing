@@ -2,8 +2,8 @@
 title: Tus derechos
 ---
 
-Freesewing applies the General Data Protection Regulation (GDPR) of the European Union (EU).
+La libertad aplica el Reglamento General de Protección de Datos (PIB) de la Unión Europea (UE).
 
-EU citizen or not, for us these are your rights:
+Los ciudadanos de la UE o no, para nosotros estos son sus derechos:
 
 <ReadMore list />

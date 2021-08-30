@@ -1,7 +1,7 @@
 
-The amount to further reduce the stretch at the (upper) legs.
+Der Betrag, um die Streckung an den obersten Beinen weiter zu reduzieren.
 
-> #### What's the point?
+> #### Was ist der Punkt?
 > 
-> This option makes the legs fit more snugly than the rest of your swimming trunks to avoid gaping.
+> Mit dieser Option passen die Beine schlanker als der Rest der Schwimmstämme, um Lücken zu vermeiden.
 

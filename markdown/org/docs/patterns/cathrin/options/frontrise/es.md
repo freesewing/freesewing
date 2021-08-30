@@ -1,7 +1,7 @@
-![The front rise option on Cathrin](./frontrise.svg)
+![La opción de ascenso frontal en la Catedral](./frontrise.svg)
 
-How high do you want the corset to rise up at the center front.
+Qué tan alto quieres que el corsé se levante en el frente central.
 
-> This rise occurs center front between your breasts. Don't overdo it or the edge of your corset will push into your breasts.
+> Este aumento se produce frente central entre sus pechos. No te canses de hacerlo o el borde de tu corsé se empujará a tus pechos.
 
-> This option also allows negative values. They will cause the center front to be lowered.
+> Esta opción también permite valores negativos. Harán que se reduzca la parte frontal central.

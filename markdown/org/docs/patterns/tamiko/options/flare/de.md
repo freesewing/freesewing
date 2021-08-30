@@ -1,2 +1,2 @@
 
-The angle by which the garment flares out from your chest downwards.
+Der Winkel, in dem das Kleidungsstück von deiner Brust nach unten leuchtet.

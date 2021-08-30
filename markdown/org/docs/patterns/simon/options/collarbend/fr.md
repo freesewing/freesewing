@@ -1,9 +1,9 @@
 ![Courbure du col](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Combien le col se plie (sur le côté du col) plutôt que d'être droit.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Cela influence la façon dont le collier se trouve contre le col.
 
 </Note>

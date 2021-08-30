@@ -1,11 +1,13 @@
-![The upward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread1.svg)
+![La dispersión ascendente en el cuarto cuadrante de la manga](./sleevecapq4spread1.svg)
 
-This option controls the upward spread in the fourth quadrant of the sleevecap.
+Esta opción controla la dispersión ascendente en el cuarto cuadrante de la manga.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Consulta [entender la manga de mangaz](/docs/patterns/brian/options#understanding-the-sleevecap) para ver
+en profundidad cómo se construye la manga y la influencia de las diferentes opciones en su forma.
 
 </Tip>
 
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_sleevecapq4spread1_sample.svg "Efecto de esta opción en el patrón")

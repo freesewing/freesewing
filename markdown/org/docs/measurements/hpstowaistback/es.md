@@ -1,17 +1,17 @@
 ---
-title: HPS to waist back
+title: HPS a cintura atrás
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: hombro de punto alto
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+El *hombro de punto alto* o *HPS* se utiliza como base para varias mediciones verticales.
+Consulte [la documentación de hps](/docs/measurements/hps/) para obtener información sobre cómo localizar este punto.
 
 </Note>
 
-The **high point shoulder (HPS) to waist back** measurement runs from your HPS down to your waist line.
+El hombro de punto alto de **(HPS) para la medida de la espalda** corre desde su HPS hasta su línea de cintura.
 
-To measure your HPS to waist back, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to your waist line.
+Para medir tu HPS hacia atrás, primero [localiza tu punto HPS](/docs/measurements/hps/). Luego, mide hacia abajo hacia la cintura.
 

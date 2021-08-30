@@ -1,2 +1,2 @@
 
-Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
+Steuert die Menge der Rolle im Kragen, wie hoch der Kragen ist höher als der Unterkragen.

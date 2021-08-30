@@ -1,3 +1,7 @@
-![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
+![Separate Knopflochleiste](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Ob der Buttonlochplatz ein separates Musterteil sein soll oder nicht.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_seperatebuttonholeplacket_sample.svg "Effekt dieser Option auf das Muster")

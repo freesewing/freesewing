@@ -1,10 +1,10 @@
 ![Manschettenstil](cuffstyle.svg)
 
-What style of cuff do you want?
+Welchen Manschettenstil möchtest du?
 
  - Abgerundete Einfachmanschette
- - Chamfer barrel cuff
+ - Kammerfass Manschette
  - Gerade Einfachmanschette
  - Abgerundete Umschlagmanschette
- - Chamfer French cuff
+ - Chamfer Französische Manschette
  - Gerade Umschlagmanschette

@@ -1,4 +1,8 @@
 
-This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.
+Dit patroon past zich aan aan de schouder af door rekening te houden met de hellingsmeting van de schouder.
 
-However, for jackets or coats, you may want to create more room at the shoulders to allow for shoulder pads. This option lets you create extra room at the shoulders by reducing the amount the shoulders are sloped.
+Maar voor jassen of jassen wil je misschien meer ruimte op de schouders creëren om schouderhangers toe te staan. Met deze optie kun je extra ruimte op de schouders creëren door het bedrag dat de schouders schudden te verlagen.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_shoulderslopereduction_sample.svg "Effect van deze optie op het patroon")

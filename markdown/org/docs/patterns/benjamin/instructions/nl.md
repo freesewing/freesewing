@@ -16,14 +16,14 @@ Dit patroon heeft een draadrichting. Deze dient vooral voor de tussenvoering. Aa
 
 <Note>
 
-If this all sounds very confusing, might I suggest reading the help 
-page on [Fabric grain](/docs/sewing/fabric-grain).
+Als dit allemaal erg verwarrend klinkt, zou ik kunnen voorstellen om de help 
+-pagina te lezen over [Stofrichting](/docs/naaien/stof-grain).
 
 </Note>
 
 ### Vlinderdas aanpassen met een lintje
 
-Dit patroon kan dienen om een vlinderdas te maken voor een specifieke halsomtrek. Het is ook mogelijk een patroon te maken met een lintje en hardware zodat de vlinderdas aanpasbaar is voor verschillende maten. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
+Dit patroon kan dienen om een vlinderdas te maken voor een specifieke halsomtrek. Het is ook mogelijk een patroon te maken met een lintje en hardware zodat de vlinderdas aanpasbaar is voor verschillende maten. Dit is handig als niet al je shirts dezelfde maten van de hals hebben, of als je hemden soms makkelijker vindt in de hals.
 
 Deze lintjes kan je vinden in de betere merceriezaak of online.
 
@@ -120,7 +120,7 @@ Om de eindjes af te werken gaan we de stof in drie stappen plooien:
 
 Eerst plooien we de zijkanten schuin naar binnen. Dan plooien we het uiteinde om met maar een kleine naadwaarde, ongeveer 5 mm. Dan plooien we dit nog een keer om, ongeveer 1 cm. Als laatste schuiven we het ovalen stuk onder deze laatste vouw en stikken we langs het randje.
 
-Now feed the ribbon piece through the oval part and finish it the same way.
+Voed nu het lintje door het ovale deel en werk het op dezelfde manier af.
 
 Haak het t-vormige stuk in één van de aanpasgaatjes en je vlinderdas is af!
 

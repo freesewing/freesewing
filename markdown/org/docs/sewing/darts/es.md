@@ -1,18 +1,18 @@
 ---
-title: Darts
+title: Dardos
 ---
 
-![Bust darts on a blouse](dart.jpg)
+![Artes de polvo en una blusa](dart.jpg)
 
-Darts are crucial in pattern design as they turn a flat, two-dimensional piece of fabric, into a three-dimensional shape.
+Los dardos son cruciales en el diseño de patrones ya que convierten una pieza plana de tejido en dos dimensiones, en una forma tridimensional.
 
-A dart is created by two lines that form a wedge, and meet each other in the dart point. When the lines are sewn together they create a permanent fold, preventing the fabric from laying flat, thereby creating a three-dimensional shape.
+Un dart es creado por dos líneas que forman una cuña y se reúnen entre sí en el punto dardo. Cuando las líneas se cosen juntas crean un pliegue permanente, evitando que la tela ponga plana, creando así una forma tridimensional.
 
-Darts are used where fabric needs to cover curves in more than one direction. You don't need a dart for your legs because your fabric can follow the curvature of your legs and wrap around it. Your bum does not only curve horizontally, but also vertically. So bums and boobs are typically places where you'll find darts.
+Los dardos se utilizan donde la tela necesita cubrir las curvas en más de una dirección. No necesitas un dardo para tus piernas porque tu tela puede seguir la curvatura de tus piernas y envolver alrededor de ella. Su álbum no sólo tiene curva horizontal, sino también verticalmente. Así que los bumes y las tetas son lugares donde encontrarás los oscuros.
 
-> Wikipedia has a bit more to say on this subject: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_(sewing))
+> Wikipedia tiene un poco más que decir sobre este tema: [Dart (coser en Wikipedia](http://en.wikipedia.org/wiki/Dart_(sewing))
 > 
-> Entire chapters in books on sewing and pattern design are dedicated to darts. Knowing how and where to use them is not so simple. But for this website, knowing what they are is sufficient.
+> Los capítulos enteros en libros sobre la costura y el diseño de patrones están dedicados a los oscuros. Conocer cómo y dónde utilizarlos no es tan simple. Pero para este sitio web, saber lo que son suficientes.
 
 
-> Picture by [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) 
+> Imagen de [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) 

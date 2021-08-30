@@ -1,10 +1,12 @@
-![Collar bend](collarbend.svg)
+![Kragenkrümmung](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Wie viel die Kragenkurven (auf der Kragenseite) statt gerade zu sein.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Dies beeinflusst den Kragen gegen den Kragenständer.
 
 </Note>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collarbend_sample.svg "Effekt dieser Option auf das Muster")

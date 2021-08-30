@@ -1,7 +1,7 @@
-To make Bruce, you will need the following:
+Para hacer Bruce, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 1 meter of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
-- Enough wide (3cm or wider) elastic to fit around your waist
-- A serger, although you can survive without one
+- Aproximadamente 1 metro de un tejido adecuado ([ver opciones de tela](/docs/patterns/bruce/fabric/))
+- Suficiente elástico ancho (3cm o superior) para caber alrededor de la cintura
+- Un serger, aunque puedes sobrevivir sin uno
 

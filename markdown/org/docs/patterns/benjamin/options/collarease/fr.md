@@ -5,3 +5,7 @@ L'utilisation du tour de cou est une partie de la façon d'obtenir un nœud papi
 > #### Sans l'option avec le ruban de réglage
 > 
 > Cette option est utilisée pour faire un nœud papillon avec ajustement précis. Lorsque vous utilisez le ruban d'ajustement, cette option n'est pas utilisée.
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_collarease_sample.svg "Effet de cette option sur le motif")

@@ -1,2 +1,2 @@
-Adds a waistband to the pattern.
+Voegt een tailleband toe aan het patroon.
 

@@ -1,7 +1,7 @@
 ---
-title: Can I use FreeSewing patterns for commercial purposes?
+title: '¿Puedo usar patrones de coser con fines comerciales?'
 ---
 
-Yes you can. Open Source is a development model, not a business model.
+Sí puede. Open Source es un modelo de desarrollo, no un modelo de negocios.
 
-If our work can help you put food on the table, by all means go ahead.
+Si nuestro trabajo puede ayudarle a poner comida sobre la mesa, por todos los medios, siga adelante.

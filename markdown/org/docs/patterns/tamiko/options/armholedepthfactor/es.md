@@ -1,2 +1,2 @@
 
-Controls the depth of your armhole, as a factor of your shoulder to shoulder measurement.
+Controla la profundidad del orificio, como factor del hombro para medir el hombro.

@@ -1,14 +1,14 @@
 
-Controls the curvature of the cross seam curve.
+Contrôle la courbure de la courbe de couture croisée.
 
 
 <Note>
 
-This curve has an influence on the amount of fabric at your bum.
+Cette courbe a une influence sur la quantité de tissu à votre bum.
 
-People with a flatter bum will get a better fit by increasing this, as the curve will start later,
-and this there will be less fabric pooling at the bum.
+Les gens avec un bum plus plat seront mieux adaptés en augmentant ceci, comme la courbe commencera plus tard,
+et il y aura moins de covoiturage de tissu au bum.
 
-People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
+Les gens qui ont un bum rond voudront peut-être abaisser cela pour créer un peu plus de place (horizontale) pour leur derrière.
 
 </Note>

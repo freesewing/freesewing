@@ -1,5 +1,5 @@
 
 ![Dobladillo delantero central](centerfronthemdrop.svg)
 
-How much do you want the front of your jacket to be longer/lower than the back?
+¿Cuánto quieres que la parte delantera de tu ket sea más larga/inferior que la parte trasera?
 

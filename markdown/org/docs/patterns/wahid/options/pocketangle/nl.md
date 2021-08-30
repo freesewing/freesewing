@@ -1,2 +1,2 @@
 
-Controls the angle of the pocket slant.
+Bepaalt de hoek van de steekzak.

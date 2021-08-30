@@ -1,3 +1,3 @@
 ![Holgura de cintura](./waistease.svg)
 
-The amount of ease at your waist.
+La cantidad de facilidad en la cintura.

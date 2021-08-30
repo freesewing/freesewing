@@ -1,9 +1,9 @@
 ![Inclinación del cuello](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Cuánto se doblan el cuello (en el cuello está de lado), en lugar de ser recto.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Esto influye en la forma en que se encuentra el cuello contra el cuello.
 
 </Note>

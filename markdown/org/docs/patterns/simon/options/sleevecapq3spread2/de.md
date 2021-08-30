@@ -1,6 +1,6 @@
-![The downward spread in the third quadrant of the sleevecap](./sleevecapq3spread2.svg)
+![Die Abwärtsverteilung im dritten Quadranten der Ärmel](./sleevecapq3spread2.svg)
 
-This option controls the downward spread in the third quadrant of the sleevecap.
+Diese Option steuert die Abwärtsverteilung im dritten Quadranten der Ärmel.
 
 <Tip>
 
@@ -9,3 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleevecapq3spread2_sample.svg "Effekt dieser Option auf das Muster")

@@ -1,8 +1,8 @@
 ---
-title: The right to be informed
+title: El derecho a ser informado
 order: 10
 ---
 
-You have the right to be informed about the collection and use of your personal data.
+Usted tiene el derecho de ser informado sobre la recogida y el uso de sus datos personales.
 
-Read [our privacy notice](/docs/various/privacy/) to inform yourself.
+Lee [nuestro aviso de privacidad](/docs/various/privacy/) para informarte a ti mismo.

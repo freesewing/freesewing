@@ -2,5 +2,5 @@
 title: Longitud del puño
 ---
 
-Controls the length of the cuff.
+Controla la longitud del corte.
 

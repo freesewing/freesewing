@@ -1,15 +1,17 @@
-![Length bonus](lengthbonus.svg)
+![Supplément de longueur](lengthbonus.svg)
 
-How much shirt do you want to be able to tuck in your trousers?
+Combien de chemise voulez-vous pouvoir enfoncer dans votre pantalon?
 
 <Note>
 
 ###### Pour quoi faire ?
 
-Keeping your shirt tucked neatly in your trousers is why you need this extra length. 
-Nobody needs to know about that Justin Bieber tattoo on your lower back.
+Garder votre chemise bien enfoncée dans votre pantalon est la raison pour laquelle vous avez besoin de cette longueur supplémentaire. 
+Personne n'a besoin de savoir que le tatouage Justin Bieber sur le bas du dos.
 
-If you want a more casual shirt to wear over your trousers, you will want to lower this.
+Si vous voulez une chemise plus décontractée à porter sur votre pantalon, vous voudrez la diminuer.
 
 </Note>
 
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_lengthbonus_sample.svg "Effet de cette option sur le motif")

@@ -2,6 +2,10 @@
 title: Corte trasero del cuello
 ---
 
-![The effect of the back neck cutout option on the pattern](sample.png)
+![El efecto de la opción de recorte del cuello trasero en el patrón](sample.png)
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+La opción de **recortar el cuello trasero** controla hasta qué punto la abertura del cuello es escopeada en la espalda.
+
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_backneckcutout_sample.svg "Efecto de esta opción en el patrón")

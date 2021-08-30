@@ -1,22 +1,22 @@
 ---
-title: How can I sign up? I never received the E-mail to activate my account!
+title: '¿Cómo puedo registrarme? Nunca he recibido el E-mail para activar mi cuenta!'
 ---
 
-If you did not receive the email, check your spam/junk folder. If you can't find it there either, it is most likely that your E-mail provider blocked it outright.
+Si no recibiste el correo electrónico, revisa tu carpeta de spam/basura. Si tampoco puede encontrarlo allí, es muy probable que su proveedor de correo electrónico lo haya bloqueado externamente.
 
 Either try using a different E-mail address, or [reach out to us](https://discord.freesewing.org/) so we can help you activate your account.
 
 <Note>
 
-##### Users in France are more likely to run into this problem
+##### Es más probable que los usuarios de Francia se topen con este problema
 
-In France, several E-mail providers share the same filtering:
+En Francia, varios proveedores de correo electrónico comparten el mismo filtro:
 
- - free.fr
+ - gratis. r
  - laposte.net
  - organge.fr
  - sfr.fr
 
-They are all known to cause issues with deliveries.
+Todos ellos son conocidos por causar problemas con los envíos.
 
 </Note>

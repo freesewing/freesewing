@@ -1,7 +1,7 @@
----
----
+- - -
+- - -
 
-### For designers
+### Para diseñadores
 
-Find out how parametric design is different, and what that means for you as a designer
+Descubra cómo el diseño paramétrico es diferente, y qué significa para usted como diseñador
 

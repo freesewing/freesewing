@@ -1,14 +1,14 @@
-![Centerback dart](centerbackdart.svg)
+![Flèche du centre arrière](centerbackdart.svg)
 
-Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
+Etant donné que personne n'a un dos parfaitement droit, ce patron est monté avec 0,5 cm au centre du cou.
 
 <Note>
 
 ###### Pour quoi faire ?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
-This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
+Si votre dos baisse un peu, le tissu a tendance à se cuire au fond de votre cou. Si vous n'avez pas de manches ou de col, votre encolure se rampe.
+Cette option enroule le tissu à l'arrière de votre cou. Il le fait de 0,5 cm par défaut, mais vous pouvez augmenter ou diminuer cette valeur.
 
-Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
+Techniquement, ce n'est pas une fléchette, mais je ne savais pas comment l'appeler autrement. Suggestions bienvenues.
 
 </Note>

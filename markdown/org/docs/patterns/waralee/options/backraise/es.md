@@ -1,2 +1,2 @@
-This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+Este ajuste levanta la cintura en la espalda. Nuestra cintura no se sienta horizontalmente, sino que está enganchada en la espalda. Este ajuste le permite levantar esto en la espalda si lo necesita para un buen ajuste.
 

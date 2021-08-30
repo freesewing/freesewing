@@ -1,11 +1,11 @@
 ---
-title: Grainline and cut-on-fold indicator
+title: Indicador lineal y cortado
 ---
 
-Grainlines — a line that indicates the *fabric grain* — look like this:
+Las grietas, una línea que indica el grano de tela ** — se ven así:
 
 <Legend part="grainline" caption="A grainline indicator" >
 
-Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+Los indicadores recortados parecen similares, pero apuntan hacia la línea en la que se debe plegar el tejido:
 
 <Legend part="cutonfold" caption="A cut-on-fold indicator" >

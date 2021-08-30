@@ -1,3 +1,3 @@
-![The hip rise option on Cathrin](./hiprise.svg)
+![L'option de montée de la hanche sur Cathrin](./hiprise.svg)
 
-How high do you want to corset to rise on your hips, in comparison to the center front and center back.
+À quel point voulez-vous se lever sur vos hanches, par rapport à l'avant et au centre de l'arrière.

@@ -1,5 +1,5 @@
 ---
-title: Fullness
+title: Cumplimiento
 ---
 
-Influences the ease on the legs for a looser style.
+Influye en la facilidad de las piernas para un estilo más suelto.

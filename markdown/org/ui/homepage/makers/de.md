@@ -1,20 +1,20 @@
----
----
+- - -
+- - -
 
 #### Nach deinen Maßen erstellte Schnittmuster
 
-Alle unsere Schnittmuster sind *maßgeschneidert*. Not just graded up or down, but actually drafted to your exact specifications, just as you would on paper.
+Alle unsere Schnittmuster sind *maßgeschneidert*. Nicht nur nach oben oder unten, sondern auch nach Ihren genauen Spezifikationen entworfen, so wie Sie es auf dem Papier tun würden.
 
 #### Vollgepackt mit Option und einer Livevorschau
 
-FreeSewing patterns come with options that allow you to customize different aspects of the pattern. Our live preview means no surprises: what you see is what you get.
+FreeSewing Patterns enthalten Optionen, mit denen Sie verschiedene Aspekte des Musters anpassen können. Unsere Live-Vorschau bedeutet keine Überraschung: Was Sie sehen, was Sie bekommen.
 
 #### Schnittmuster, die du teilen und anpassen kannst
 
-FreeSewing patterns often have so many options that one pattern can yield a variety of styles. You can share your patterns with others so they can get the same style, drafted to their measurements.
+FreeNähmuster haben oft so viele Optionen, dass ein Muster eine Vielzahl von Stilen hervorbringen kann. Sie können Ihre Muster mit anderen teilen, so dass sie den gleichen Stil, entworfen für ihre Messungen.
 
 #### Eine Gemeinschaft hilfreicher Personen
 
-Fragen zu einem Schnittmuster? Stuck on one of the steps when making your garment? Keine Sorge, dir kann geholfen werden.
+Fragen zu einem Schnittmuster? An einem der Schritte festhalten, wenn Sie Ihr Kleidungsstück herstellen? Keine Sorge, dir kann geholfen werden.
 
-[Join us on Discord](https://discord.freesewing.org/) and discover what makes the FreeSewing community so great.
+[Trete bei Discord](https://discord.freesewing.org/) bei und entdecke, was die FreeSewing Community so großartig macht.

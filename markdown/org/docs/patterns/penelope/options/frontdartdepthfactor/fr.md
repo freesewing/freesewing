@@ -1,2 +1,2 @@
-How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
+Jusqu'où va le dart avant de la ceinture. Ceci est un facteur de la taille naturelle À la mesure du siège.
 

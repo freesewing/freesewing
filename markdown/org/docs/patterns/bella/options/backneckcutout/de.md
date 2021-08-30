@@ -2,6 +2,10 @@
 title: Ausschnitt im Nacken
 ---
 
-![The effect of the back neck cutout option on the pattern](sample.png)
+![Der Effekt des Rückenausschnitts auf das Muster](sample.png)
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+Die **Rückenausschnitt** steuert die Höhe der Halsöffnung auf der Rückseite.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backneckcutout_sample.svg "Effekt dieser Option auf das Muster")

@@ -1,2 +1,2 @@
 
-Controls the amount of buttons.
+Bepaalt het aantal knoppen.

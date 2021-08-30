@@ -1,11 +1,11 @@
 ![Ancho de nudo](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+La anchura del nudo es la anchura en medio de la corbata, donde se hace el nudo.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+Cuán ancho es su corbata en el medio influirá en la corbata no. Ir ancho para nudos grandes y gruesos, ir estrecho para nudos pequeños.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+No hacer que el ancho del nudo sea mayor que el ancho de la punta
 
 </Note>

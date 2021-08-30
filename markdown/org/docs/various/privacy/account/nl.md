@@ -1,5 +1,5 @@
 ---
-title: How we use your account data
+title: Hoe we jouw accountgegevens gebruiken
 order: 30
 ---
 

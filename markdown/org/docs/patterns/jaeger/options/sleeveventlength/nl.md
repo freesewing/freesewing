@@ -1,2 +1,2 @@
 
-Controls the length of the sleeve vent.
+Bepaalt de lengte van de mouw vent.

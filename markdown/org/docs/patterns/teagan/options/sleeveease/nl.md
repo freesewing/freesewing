@@ -1,1 +1,1 @@
-Controls the amount of ease at the sleeve/your arm.
+Bepaalt de hoeveelheid overwijdte aan de mouw/arm.

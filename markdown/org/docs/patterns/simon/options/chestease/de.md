@@ -1,3 +1,3 @@
 ![Brustzugabe](chestease.svg)
 
-How much room do you want at the chest?
+Wie viel Platz möchtest du an der Brust haben?

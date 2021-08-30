@@ -1,3 +1,3 @@
-![The back opening option on Cathrin](./backopening.svg)
+![La opción de volver a abrir en la Catedral](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Esta opción determina la anchura de la apertura trasera de tu corsé . La parte trasera es donde se cuerda el corsé juntos.

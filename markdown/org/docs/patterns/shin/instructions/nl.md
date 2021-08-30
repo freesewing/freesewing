@@ -14,11 +14,11 @@ Leg je twee voorpanden bovenop elkaar met de goede kanten samen, en stik de midd
 
 Herhaal met de twee andere voorpanden zodat je twee identieke sets hebt.
 
-### Baste fronts together
+### Drieg de voorpanden samen
 
 We hebben 4 voorpanden omdat we een dubbele laag hebben aan de voorkant van onze zwembroek.
 
-Since swimwear fabric tends to be slippery, it's a good idea to baste your fronts together to make it easier to work with them in the next steps.
+Omdat het zwemkleding meestal glad is, Het is een goed idee om je voorpanden samen te plakken om het makkelijker te maken om met ze samen te werken in de volgende stappen.
 
 Dus leg je voorpanden op elkaar, met de verkeerde kanten samen, en drieg ze met grote steken binnen de naadwaarde aan elkaar.
 
@@ -32,7 +32,7 @@ Keer de goede kant van je zwembroek naar binnen (de achterkant toch, de voorkant
 
 ## Stap 5: Plaats vetergaatjes voor het koord
 
-Markeer het midden van de lengte van je tailleband. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
+Markeer het midden van de lengte van je tailleband. Plooi de tailleband dubbel, en markeer het midden van de breedte (neem de naadwaarde niet in de rekening).
 
 Installeer twee vetergaten links en rechts van deze markering. Dit voorkomt het soort gênante situatie waarbij je voor die indrukwekkende duik gaat en opeens merkt dat je zwembroek op je enkels hangt.
 
@@ -54,7 +54,7 @@ Plooi de tailleband in twee met goede kanten op elkaar en leg de (korte) randen 
 
 Vouw je tailleband dubbel langs de lengte met de goede kant naar buiten, en schuif het elastiek ertussen. Zorg dat je de naad van het elastiek gelijk legt met de naad in de tailleband.
 
-Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Make certain that you pin it to the bad side of the back.
+Leg de achterkant van je zwembroek gelijk met de plek waar je de tailleband hebt aangesloten, Leg de rand van de tailleband gelijk met de rand van de achterkant, en speld ze samen. Zorg ervoor dat je het vastspeld aan de slechte kant van de rug.
 
 > ### Let op je vetergaten
 > 
@@ -64,7 +64,7 @@ Zoek het middenvoor van de tailleband (makkelijk als je vetergaatjes maakte, ind
 
 Speld nu de tailleband langs de hele taille van de zwembroek.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Stik de tailleband dan aan de zwemband, zo dicht bij het elastiek als je kan, maar stik niet in het elastiek.
 
 Het is ok om de eerste keer niet te dichtbij te stikken, en voor een tweede ronde te gaan zodra je tailleband met elastiek vasthangen en de lagen minder kunnen verschuiven.
 

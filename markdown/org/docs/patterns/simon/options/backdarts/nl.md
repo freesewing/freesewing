@@ -2,4 +2,4 @@
 title: Nepen rug
 ---
 
-By default, the pattern will add back darts when they are needed. But you can also choose to always, or never, have back darts.
+Standaard voegt het patroon nepen toe wanneer ze nodig zijn. Maar je kunt ook kiezen voor altijd, of nooit achterste nepen hebben.

@@ -1,12 +1,14 @@
-![Hem curve](hemcurve.svg)
+![Courbe de l'ourlet](hemcurve.svg)
 
-How much do you want the hem to curve upwards?
+Combien voulez-vous que l'ourlet se courbe vers le haut ?
 
 <Note>
 
- - This applies only to the baseball and slashed hem styles. If you chose a straight hem, this will be ignored.
- - This value can never be more than the length bonus. If it is, it will silently be set to the length bonus value.
- - If you set this to zero, you'll get a straight hem regardless of what hem style you pick.
+ - Ceci s'applique uniquement aux styles de baseball et d'ourlet tranchés. Si vous avez choisi un ourlet droit, il sera ignoré.
+ - Cette valeur ne peut jamais être supérieure au bonus de longueur. Si c'est le cas, il sera automatiquement fixé à la valeur de la longueur du bonus.
+ - Si vous mettez cette valeur à zéro, vous obtiendrez un ourlet droit quel que soit le style d'ourlet que vous choisirez.
 
 </Note>
 
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_hemcurve_sample.svg "Effet de cette option sur le motif")

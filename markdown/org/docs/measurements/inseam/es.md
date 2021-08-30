@@ -2,6 +2,6 @@
 title: Tiro
 ---
 
-The **inseam** is the measurement from your crotch down to the floor.
+El **inseam** es la medición de tu cromo hasta el piso.
 
-To measure your **inseam**, measure down vertically from the point your legs join (at the crotch) down to the floor.
+Para medir tu **inseam**, medir verticalmente desde el punto en que tus piernas se unen (en el crotch) hasta el piso.

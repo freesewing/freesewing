@@ -1,2 +1,2 @@
 
-Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
+Contrôle la quantité de rouleau dans le collier ; à quel point le collier est supérieur au col inférieur.

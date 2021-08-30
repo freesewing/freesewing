@@ -1,5 +1,5 @@
 
 ![Middenrug neep](centerbackdart.svg)
 
-The reduction at the center back from shoulders to neck, which accomodates for a curved upper back.
+De reductie aan de middenrug, van schouders naar nek, die aanpast voor een gebogen bovenrug.
 

@@ -1,6 +1,10 @@
 ![Aisance du col](collarease.svg)
 
-How much ease do you want for your collar?
+Combien de facilité souhaitez-vous pour votre collier ?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Si vous avez l'impression qu'un collier étouffe, vous pouvez vous donner un peu plus d'aisance et il s'assoit plus autour de votre cou. Vous pourriez également réduire la facilité pour un ajustement plus serré.
 
+
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarease_sample.svg "Effet de cette option sur le motif")

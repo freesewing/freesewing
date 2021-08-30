@@ -2,4 +2,4 @@
 title: Reducción de cintura
 ---
 
-Reduces the waist for a more snug fit.
+Reduce la cintura para un mejor encaje.

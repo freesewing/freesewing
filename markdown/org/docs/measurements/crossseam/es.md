@@ -1,8 +1,8 @@
 ---
-title: Cross seam
+title: Costura cruzada
 ---
 
-The **cross seam** is measured from the waist line at the front through your legs to the back.
+La costura cruza **** se mide desde la línea de cintura en el frente a través de las piernas hasta la espalda.
 
-To measure your **cross seam** tie a string around your waist. Then, measure down from the center front of your waist going through your legs back up to the back until you meet the string at your waist.
+Para medir tu costura cruzada **** empata una cuerda alrededor de la cintura. Then, measure down from the center front of your waist going through your legs back up to the back until you meet the string at your waist.
 

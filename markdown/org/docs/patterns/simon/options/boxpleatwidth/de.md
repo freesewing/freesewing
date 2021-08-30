@@ -2,4 +2,4 @@
 title: Kellerfaltenweite
 ---
 
-Controls the width of the (optional) box pleat at the back.
+Steuert die Breite des (optionalen) Box-Falten auf der Rückseite.

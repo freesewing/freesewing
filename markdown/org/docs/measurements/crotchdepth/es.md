@@ -1,7 +1,7 @@
 ---
-title: Crotch depth
+title: Profundidad de cromo
 ---
 
-The **crotch depth** measurement is the height your waist rises from the surface you are sitting on.
+La medición de la profundidad del **cromo** es la altura en la que sube tu cintura de la superficie en la que estás sentado.
 
-To measure your crotch depth, sit straight on a flat chair or table, and measure from waist line down to the chair/table.
+Para medir su profundidad de cruce, siéntese directamente en una silla o mesa plana, y mida desde la línea de cintura hasta la silla o mesa.

@@ -2,6 +2,6 @@
 title: Taille bis Knie
 ---
 
-The **waist to knee** is the measurement from your waist down towards your knee, measured on the side of your body.
+Die **Taille zum Knien** ist die Messung aus der Taille nach unten in das Knie, gemessen an der Seite deines Körpers.
 
-To measure your **waist to knee**, locate the height of both your waist and your knee, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Um deine **Taille zum Knien zu messen,**, die Höhe der Taille und des Knie zu bestimmen und den vertikalen Abstand zwischen ihnen zu messen. Achten Sie darauf, an der Seite Ihres Körpers zu messen.

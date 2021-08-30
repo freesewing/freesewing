@@ -1,9 +1,9 @@
-Penelope consists of a front and a back piece. The front piece is always cut-on-fold. For the back piece, this depends on whether you wanted a vent, or moved the zipper to the back seam. Either of those options will have you cut out two individual pieces for the back.
+Penélope consiste en una parte delantera y una parte trasera. La pieza delantera siempre se corta sobre el plegado. Para la parte trasera, esto depende de si usted quería una ventana, o si se trasladó el zipper a la costura trasera. Cualquiera de esas opciones le hará recortar dos piezas individuales por la espalda.
 
 <Tip>
 
-When you cut out a piece on the fold, remember that the fold does not need to be in the middle of the fabric. 
-Choosing the placement of your pieces wisely can greatly reduce the amount of fabric you need for your skirt.
+Cuando cortes una pieza en el plegado, recuerda que el pliegue no necesita estar en el centro de la tela. 
+Elegir la colocación de tus piezas sabiamente puede reducir en gran medida la cantidad de tejido que necesitas para tu skirt.
 
 </Tip>
 

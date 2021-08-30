@@ -1,19 +1,19 @@
 ---
-title: Holmes What you need
+title: Holmes Was du brauchst
 ---
 
-To make Holmes, you will need the following:
+Um Holmes zu machen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 0.5 metres of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- About 0.5 metres of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- Etwa 0,5 Meter eines geeigneten Stoffes ([siehe Optionen für Holmes Stoffe](/docs/patterns/holmes/fabric/))
+- Etwa 0,5 Meter Futter ([siehe Optionen für Holmes Stoff](/docs/patterns/holmes/fabric/))
 - A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) About 1.0 metre of 1" (2.5cm) crossgrain ribbon or petersham.
-- (Optional) 1 covered button about 3/4" (2cm) - 7/8" (2.2cm)
+- (Optional) Über 1.0 Meter von 1" (2.5cm) Kreuzkornband oder Petersham.
+- (Optional) 1 abgedeckter Button über 3/4" (2cm) - 7/8" (2.2cm)
 
 <Note>
 
-Depending on style the ties and buttons are optional.  
+Je nach Stil sind die Krawatten und Tasten optional.  
 If you are making Buttonhole Ear Flaps you can omit the ties.  
 If you are making Tie Ear Flaps you can omit the button.  
 Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))  

@@ -1,4 +1,4 @@
 
 ![Supplément de longueur](lengthbonus.svg)
 
-The length of the skirt.
+La longueur de la jupe.

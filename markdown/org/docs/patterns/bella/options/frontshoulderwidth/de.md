@@ -2,6 +2,10 @@
 title: Vordere Schulterbreite
 ---
 
-![The effect of the front shoulder width option on the pattern](sample.png)
+![Der Effekt der vorderen Schulterbreite auf das Muster](sample.png)
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+Die Option **Vorderschulterbreite** steuert die Breite der Schultern an der Vorderseite, relativ zur Rückseite.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_frontshoulderwidth_sample.svg "Effekt dieser Option auf das Muster")

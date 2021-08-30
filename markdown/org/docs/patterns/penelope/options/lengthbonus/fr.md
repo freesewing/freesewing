@@ -1,2 +1,2 @@
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Cela contrôle la longueur de la jupe. Pourcentage de la taille naturelle à la mesure du genou.
 

@@ -1,3 +1,3 @@
 ![Bonus de longitud](lengthbonus.svg)
 
-How much longer than the default length to make your top.
+Cuánto más largo que la longitud predeterminada para hacer la parte superior.

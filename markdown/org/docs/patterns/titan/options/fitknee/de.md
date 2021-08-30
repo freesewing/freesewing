@@ -3,10 +3,10 @@ Legt die Weite des Hosenbeins fest.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Dieses Muster kam früher in zwei Variationen. Theodore und Theo, letztere haben
+einen schlankeren Schnitt.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Seit FreeSewing v2.0 haben wir diese in ein einzelnes Muster zusammengeführt. Mit dieser Option
+können Sie die Beinbreite ändern.
 
 </Note>

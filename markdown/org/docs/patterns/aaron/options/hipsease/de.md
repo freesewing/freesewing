@@ -1,9 +1,13 @@
-![The hips ease option on Aaron](./hipsease.svg)
+![Die Hüftleiste-Option auf Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+Wie viel Platz möchten Sie an den Hüften?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Hüftumfangsmessung hinzugefügt.
 
-> ##### This option also allows negative values.
+> ##### Diese Option erlaubt auch negative Werte.
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the stretch option.
+> Sie sollten die negative Leichtigkeit nur dann nutzen, wenn Sie ein Stretchmaterial verwenden, das Sie eng passen möchten. Gesamtstrecke sollte mit der Stretch-Option konfiguriert werden.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_hipsease_sample.svg "Effekt dieser Option auf das Muster")

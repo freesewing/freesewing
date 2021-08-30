@@ -1,4 +1,4 @@
 
-![Waist reduction ratio front](waistreductionratiofront.svg)
+![Relación de reducción de cera frontal](waistreductionratiofront.svg)
 
-Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping.
+La parte de la cintura se reducirá en el dardo. También afectará a la configuración del panel lateral.

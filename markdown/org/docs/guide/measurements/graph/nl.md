@@ -1,7 +1,7 @@
 ---
-title: Measurements graph
+title: Metingen grafiek
 ---
 
-Below is an example of a measurements graph. We will generate such a graph for your people as soon as you provide us with their neck circumference.
+Hieronder staat een voorbeeld van een metingengrafiek. We zullen een dergelijke grafiek voor uw mensen genereren zodra u ons hun halsomtrek geeft.
 
-![Example of a measurements graph](graph.svg)
+![Voorbeeld van een metingengrafiek](graph.svg)

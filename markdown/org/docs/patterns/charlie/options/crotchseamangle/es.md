@@ -1,4 +1,4 @@
 
-Controls the start of the crotchseam at the front fork point.
+Controla el inicio de la costura de crotchseam en el punto de la horquilla delantera.
 
-This will influence how the trousers fit at the crotch.
+Esto influirá en la forma en que los pantalones caben en la cosecha.

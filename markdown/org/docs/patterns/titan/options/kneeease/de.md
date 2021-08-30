@@ -1,2 +1,2 @@
 
-Controls the amount of ease at your knees, which also determines the width of the trouser legs.
+Steuert die Leichtigkeit in den Knien, die auch die Breite der Hosenbeine bestimmt.

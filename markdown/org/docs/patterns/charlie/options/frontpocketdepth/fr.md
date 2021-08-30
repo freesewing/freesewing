@@ -1,2 +1,2 @@
 
-Controls the depth of the front pocket bag.
+Contrôle la profondeur du sac de poche avant.

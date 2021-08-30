@@ -1,7 +1,11 @@
 ---
-title: Back dart height
+title: Rückseitendart-Höhe
 ---
 
-![The effect of the back dart height option on the pattern](sample.png)
+![Der Effekt der Dart Höhe des Rückens auf das Muster](sample.png)
 
-The **back dart height** option controls the height (lenght if you will) of the back dart.
+Die Option **Rückseite Dart Höhe** steuert die Höhe (Länge, wenn Sie wollen) des Rückendarts.
+
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backdartheight_sample.svg "Effekt dieser Option auf das Muster")
