@@ -76,7 +76,7 @@ Stik twee afzonderlijke naden: eentje boven de zak en eentje eronder. Op die man
 
 Begin aan de bovenkant van de broekspijpen. Stik langs de zijnaad. Om te draaien aan de steekzak, stop je met de naald in de stof. Hef de persvoet op en draai het werk. Hier kan je eventueel een kortere steeklengte gebruiken om de hoek van de zakopening te verstevigen. Volg de zijnaad, draai opnieuw en stop aan de bovenkant van de zak.
 
-Nu ga je de onderkant van de steekzak sluiten en de rest van de zijnaad stikken. Begin aan de onderrand van het zakdeel en stik langs de onderkant van de zak, en beugel wanneer je de zijnaad van de broek bereikt. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Stik de hele zijkant van de broekspijp naar beneden.
+Nu ga je de onderkant van de steekzak sluiten en de rest van de zijnaad stikken. Begin aan de onderrand van het zakdeel en stik langs de onderkant van de zak, en beugel wanneer je de zijnaad van de broek bereikt. Je kan een kortere steeklengte instellen voor de eerste steken van de naad. Zo versterk je de zakopening. Stik de hele zijkant van de broekspijp naar beneden.
 
 Herhaal dit voor de andere pijp.
 
@@ -88,7 +88,7 @@ De afwerking van deze naden vraagt een beetje extra aandacht, vooral rond de bov
 
 Het is moeilijk om het bovenste deel van de zijnaad af te werken met een serger, dus we gebruiken een zigzagsteek. Te beginnen aan de bovenkant van de zijnaad, zigzagsteek langs de onbewerkte rand van de naad allowance, draai rond de zakopening. Doorgaan met de zigzagsteek langs de zijkant van de zak, tenzij je al je zakken hebt vastgezet (in dat geval kan je stoppen wanneer je de zak bereikt).
 
-De onderste opening van de steekzak is een lastig hoekje. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. Je kan doorgaan met het afwerken van de zijnaad met een zigzagsteek helemaal naar beneden. Als alternatief kan je de zijnaad verstikken. Let op dat je de lijn van de zandstiksel een beetje langs de zak stopt.
+De onderste opening van de steekzak is een lastig hoekje. Om de rafelrand aan deze hoek af te werken, gebruik je een zigzagsteek langs de onafgewerkte naadwaarde. Je begint waar de zijnaad de zak kruist, draait aan de hoek en gaat zo'n 5 centimeter (2 inch) verder langs de zijnaad naar beneden. Je kan doorgaan met het afwerken van de zijnaad met een zigzagsteek helemaal naar beneden. Als alternatief kan je de zijnaad verstikken. Let op dat je de lijn van de zandstiksel een beetje langs de zak stopt.
 
 <Note>
 
