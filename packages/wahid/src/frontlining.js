@@ -19,6 +19,7 @@ export default (part) => {
     ._curve(points.dartWaistRightCpTop, points.dartWaistRight)
     .curve(points.dartWaistRightCpBottom, points.dartHipRightCpTop, points.dartHipRight)
     .line(points.dartEnd)
+	.close()
   if (options.hemStyle === 'classic') {
     paths.seam.curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
   } else paths.seam.line(points.hem)
