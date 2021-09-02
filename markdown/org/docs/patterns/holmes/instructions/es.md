@@ -147,7 +147,10 @@ __5.__ Manipulación-***Baste*** el visor de la corona que coincide con las lín
 __6.__ (Opcional)-***Bastar*** el visor a la corona a lo largo de las líneas de costura.  
 __7.__ Repetir pasos 4 a 6 para el visor restante en el lado opuesto de la costura de la corona central.  
 __8.__ Construir el revestimiento del mismo modo que la corona omitando ***Edgestitching*** y dejar un hueco en la costura del revestimiento central lo suficientemente grande como para dar la vuelta al sombrero.  
-__9.__ En los lados rectos, juntas con las costuras del centro de la corona, las costuras del panel y las líneas de costura. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras. __10.__ Turn hat inside out, pressing lining to inside. __11.__ ***Slipstitch*** lining opening closed. __12.__ ***Understitch*** lining. __13.__ Alternatively ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew. __14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. Esto es para ayudar a evitar que el revestimiento se caiga.
+__9.__ En los lados rectos, juntas con las costuras del centro de la corona, las costuras del panel y las líneas de costura. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras. __10.__ Turn hat inside out, pressing lining to inside.   
+__11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed. __13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 
@@ -206,7 +209,7 @@ Mientras que un botón cubierto está cubierto puedes usar cualquier botón que 
 <Note>
 
 Recuerde que estas instrucciones son sólo directrices así que no te preocupes si quieres construir el sombrero de manera diferente.  
-Los diagramas todavía están por hacer para este patrón, así que mientras tanto si necesita ayuda visual, mira el tutorial de YouTube que inspiró este patrón:
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 
