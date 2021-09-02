@@ -130,3 +130,6 @@ packageJson:
       - 'validateTld/*'
   waralee:
     author: woutervdub (https://github.com/woutervdub)
+  yuri:
+    author:  hellgy (https://github.com/hellgy)
+
