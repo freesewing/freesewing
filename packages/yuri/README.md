@@ -1,165 +1,118 @@
-# yuri
-Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies #freesewing #freesewingHuey #freesewingHugo
+![FreeSewing](https://static.freesewing.org/banner.png)
+<p align='center'><a
+  href="https://www.npmjs.com/package/@freesewing/yuri"
+  title="@freesewing/yuri on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/yuri.svg"
+  alt="@freesewing/yuri on NPM"/>
+  </a><a
+  href="https://opensource.org/licenses/MIT"
+  title="License: MIT"
+  ><img src="https://img.shields.io/npm/l/@freesewing/yuri.svg?label=License"
+  alt="License: MIT"/>
+  </a><a
+  href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
+  title="Code quality on DeepScan"
+  ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
+  alt="Code quality on DeepScan"/>
+  </a><a
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Ayuri"
+  title="Open issues tagged pkg:yuri"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:yuri.svg?label=Issues"
+  alt="Open issues tagged pkg:yuri"/>
+  </a><a
+  href="https://todo.freesewing.org/"
+  title="Project board"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Project%20board-9775fa.svg?logo=github&logoColor=white&logoWidth=15"
+  alt="Project board"/>
+  </a></p><p align='center'><a
+  href="https://twitter.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a><a
+  href="https://chat.freesewing.org"
+  title="Chat with us on Discord"
+  ><img src="https://img.shields.io/discord/698854858052075530?label=Chat%20on%20Discord"
+  alt="Chat with us on Discord"/>
+  </a><a
+  href="https://freesewing.org/patrons/join"
+  title="Become a FreeSewing Patron"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Support%20us-blueviolet.svg?logo=cash-app&logoColor=white&logoWidth=15"
+  alt="Become a FreeSewing Patron"/>
+  </a><a
+  href="https://instagram.com/freesewing_org"
+  title="Follow @freesewing_org on Twitter"
+  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-E4405F.svg?logo=instagram&logoColor=white&logoWidth=15"
+  alt="Follow @freesewing_org on Twitter"/>
+  </a></p>
 
-Try it here : https://yuri-pattern.netlify.app/
+# @freesewing/yuri
 
-<img src="yuri.svg" alt="preview of Yuri hoodie" width="200"/>
+A FreeSewing pattern for a fancy zipless sweater based on the Huey hoodie
 
-[![NPM](https://img.shields.io/npm/v/yuri.svg)](https://www.npmjs.com/package/yuri) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+
+## What am I looking at? 🤔
+
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+
+This folder holds: @freesewing/yuri
+
+## About FreeSewing 💀
+
+Where the world of makers and developers collide, that's where you'll find FreeSewing.
+
+If you're a maker, checkout [freesewing.org](https://freesewing.org/) where you can generate
+our sewing patterns adapted to your measurements.
+
+If you're a developer, our documentation is on [freesewing.dev](https://freesewing.dev/).
+Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
+for parametric design of sewing patterns. But we also provide a range 
+of [plugins](https://freesewing.dev/reference/plugins/) that further extend the 
+functionality of the platform.
+
+If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npm install --save yuri
+npx create-freesewing-pattern
 ```
 
+Or, consult our getting started guides 
+for [Linux](https://freesewing.dev/tutorials/getting-started-linux/),
+[MacOS](https://freesewing.dev/tutorials/getting-started-mac/), 
+or [Windows](https://freesewing.dev/tutorials/getting-started-windows/).
 
-## What you need
-- Sweater fabric
-- 2 buttons (2.5cm or 1 inch diameter)
+We also have a [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) that
+walks you through your first parametric design, 
+and [a friendly community](https://freesewing.org/community/where/) with 
+people who can help you when you get stuck.
 
-## Instructions / how to
+## Support FreeSewing: Become a patron 🥰
 
-This pattern can be sewn with or with out a overlocker/serger. To ***Finish*** seams without a overlocker/serger you can either use your prefered method or one of the methods below:
-#### Finishing Method 1
-- Press open the seam allowances. 
-- Then on the good side, ***Edgestitch*** 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
-- On the wrong side trim the seam allowances close to the edgestitching. 
+FreeSewing is an open source project run by a community, 
+and financially supported by our patrons.
 
-#### Finishing Method 2
-- Sew the seam allowances together with either a ziz-zag, overcast or straight stitch and press to one side.
-- Trim to 1cm (3/8 inch) seam allowance if needed.
+If you feel what we do is worthwhile, and you can spend a few coind without
+hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
 
-<Note>
+## Links 👩‍💻
 
-If using a overlocker/serger you can sew seams which need fininshing in one go rather than sewing the seam conventionally and finishing it. 
-  
-</Note>
+ - 💻 Makers website: [freesewing.org](https://freesewing.org)
+ - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
+ - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
+ - ✅ Todo list/Kanban board: On Github via [todo.freesewing.org](https://todo.freesewing.org/)
+ - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+ - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
-### Step 1 : Attaching the Gussets.
-- With the good sides together, sew the gussets to the front panels along the side seams.
-- ***Finish*** seams.
+## License: MIT 🤓
 
-### Step 2 :  Sew the Shoulder Seams
-- With good sides together, sew the front pieces to the back along the shoulder seams.
-- ***Finish*** seams.
+© [Joost De Cock](https://github.com/joostdecock).  
+See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
 
-### Step 3 : Attach the Sleeves
+## Where to get help 🤯
 
-- With good sides together, matching back notch to back notch and front notch to front notch, sew the sleeves to the body.
-- ***Finish*** seams.
+Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to ask questions,
+share your feedback, or just hang out.
 
-<Note>
-
-On the pattern the back notch is marked as a cross-notch. It is recommended to make this a double notch when cutting out your pieces to make the back notch easier to differentiate from the front.
-  
-</Note>
-
-### Step 4 : Hem the Sleeves
-- (Optional) Overcast the raw edge of the sleeve.
-- Press the hem allowance to the wrong side of the fabric and baste in place close to the raw edge.
-- On the outside, stitch away from the folded edge, catching the hem allowance underneath using the basting as guide to where the raw edge is.
-- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stich along the hem allowance.
-- Remove basting.
-
-<Note>
-
-If you prefer to hem your sleeves after sewing the side seams you can do this step after **Step 5**.
-You can skip the overcasting if using a twin needle, coverstitch machine or if you wish to leave the edge raw when hemming. 
-This is just one hemming method, if you prefer another way go for it.
-  
-</Note>
-
-### Step 5: Close the Sides
-- With good sides together, matching shoulder seams, start at the sleeve edge and sew the sleeve together than sew the gusset and back together.
-- ***Finish*** seams.
-- Repeat for remaining sleeve and side opening.
-
-### Step 6 : Hem the Raw Edges
-- Fold under and sew the hem on all the raw edges except around the neck edge.
-- Sew the hem from the top of one front, to the bottom of the front, then along the bottom of the gusset, then along the bottom of the back, then along bottom of the other gusset, and then up to the neck of the other front.
-
-### Step 7: Prepare Lining and Outside Hood
-Follow this step twice, once for the outer hood and once for the lining hood.
-
-- With good sides together, sew the long edge of the Hood Centre to the outer edge of one of the Hood Sides.
-- With good sides together, sew the remaining long edge of the Hood Centre to the outer edge of the other Hood Side.
-- Press the seam allowances open.
-- ***Finish*** seams.
-
-<Note>
-
-It is recommended to use **Finishing Method 1** for this step regardless of whether you are using a overlocker/serger.
-  
-</Note>
-
-### Step 8: Join Inside and Outside Hood
-- With good sides together, pin the Outside and Lining Hoods together matching the seams.
-- Sew the pinned edge together.
-- Trim the seam allowance to 1cm (3/8 inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise *do not* trim the seam.
-- Turn the hood good sides out and press the outer edge flat.
-- On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4 inch) from the edge. Ensure that your topstiching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
-- With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a ziz-zag or overcast stitch on a regular machine.
- 
-<Note>
-  
-When pressing you want to make sure that the outer fabric folds a little bit to the inside. This will help prevent the lining from peaking out of the hood when topstitched.
-If you do not wish to have the decorative rim, you may still want to understitch the lining so it does not peak to the outside.
-  
-</Note>
-
-### Step 9: Prepping a Neckband for the Hood (Optional)
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
-- With good sides together sew the strip in to a circular band with a 1cm (3/8 inch) seam allowance.
-- Press open the seams.
-- On the good sides, ***Edgestitch*** close to both sides of the seam catching the seam allowance underneath.
-- (Optional) Trim the excess seam allowance.
-
-<Note>
-  
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
-  
-</Note>  
-  
-### Step 10: Attach the Hood
-- With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching the neckband seam with centre back.
-- If using an overlocker/serger, serge the neck and hood together through all layers.
-- If using a sewing machine, use a zig-zag stich to sew all the neck and hood layers together.
-- On the outside check around the neckline to make sure all the layers are caught.
-- Press seam allowances towards the body.
-- On the good side, topstitch with a straight sitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
-- Trim the excess binding from the inside.
-
-<Warning>
-  
-If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch suchs as the front as an overlocker/serger may have trouble sewing these parts.
-  
-</Warning>
-<Note>
-  
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
-  
-</Note>
-
-### Step 11 : Buttons and Buttonholes
-- At the buttonhole marks on the front panels, sew button holes for 2.5cm (1 inch) buttons or button size of your choosing.
-- For button placement you may want to try your Yuri on and see where the buttons fit the best for you.
-- Alternatively you can use the button markings on the pattern for placement.
-- Attach the buttons.
- 
-### Step 12 : Ta-daaa
-Enjoy your Yuri!
-
-## License
-
-
-[Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/)
-
-Code by [biou](https://github.com/biou) & Pattern design by [hellgy](https://github.com/hellgy)
-
-Instruction review/proofreading/improvements by [bobgeorgethe3rd](https://github.com/bobgeorgethe3rd)
-
-
+If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).

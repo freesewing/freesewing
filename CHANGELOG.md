@@ -1,6 +1,32 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### holmes
+
+#### Added
+
+ - Added the `headEase` option to control head ease
+ - Added the `earLength` option to control the length of the ear
+ - Added the `earWidth` option to control the width of the ear
+ - Added the `visorLength` option to control the length of the visor
+ - Added the `buttonhole` option to allow a buttonhole variant
+
+#### Changed
+
+ - Renamed `brim` to `visor`
+ - Renamed `gore` to `crown`
+ - Renamed `ear` to `ear flap`
+ - Added hem allowances
+
+### yuri
+
+#### Added
+
+ - Initial release of Yuri, a fancy zipless cardigan based on the Huey & Hugo hoodies
+
+
 ## 2.17.4 (2021-08-20)
 
 ### simon
