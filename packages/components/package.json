@@ -9,6 +9,10 @@
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
   },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "keywords": [
     "freesewing",
     "react"
