@@ -1,6 +1,8 @@
 unreleased:
 
   Added:
+    i18n:
+      - Added translations for Yuri
     holmes:
       - Added the `headEase` option to control head ease
       - Added the `earLength` option to control the length of the ear
