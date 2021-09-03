@@ -36,6 +36,7 @@ const trayvon = require('@freesewing/trayvon').config
 const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
+const yuri = require('@freesewing/yuri').config
 
 const patterns = {
   aaron,
@@ -74,6 +75,7 @@ const patterns = {
   ursula,
   wahid,
   waralee,
+  yuri,
 }
 const patternOptions = (config) => {
   let all = []
