@@ -76,8 +76,6 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
-    // hoodCenter: 'hoodSide',
-    // hoodSide: ['front', 'back'],
   },
   inject: {
     backBase: 'base',

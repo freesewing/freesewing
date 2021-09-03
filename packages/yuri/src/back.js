@@ -41,7 +41,6 @@ export default function (part) {
     points.cbNeck.y
   )
 
-  console.log(points.bottom)
   // Paths
   paths.gussetBase = new Path().move(points.bottom).line(points.armhole).attr('class', 'note stroke-xxl')
   store.set('gussetLength', paths.gussetBase.length())
