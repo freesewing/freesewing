@@ -20,6 +20,18 @@
  - Renamed `ear` to `ear flap`
  - Added hem allowances
 
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+### wahid
+
+#### Fixed
+
+ - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+
 ### yuri
 
 #### Added

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added translations for Yuri
+
 ## 2.17.3 (2021-08-16)
 
 ### Added

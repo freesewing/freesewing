@@ -19,6 +19,11 @@ unreleased:
       - Renamed `ear` to `ear flap`
       - Added hem allowances
 
+  Fixed:
+    wahid:
+      - Close Seam Allowance path of front lining
+        Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+
 2.17.4:
   date: 2021-08-20
 
