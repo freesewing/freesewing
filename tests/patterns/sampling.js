@@ -12,15 +12,17 @@
 const testPatternSampling = (design, Pattern, expect, models, patterns) => {
 
   // Helper method to try/catch pattern sampling
-  const doesItSample = pattern => {
-      try {
-        pattern.sample()
-        return true
-      }
-      catch (err) {
-        console.log(err)
-        return false
-      }
+  const doesItSample = (pattern, log=false) => {
+    try {
+      pattern.sample()
+      if (pattern.events.error.length < 1) return true
+      if (log) console.log(pattern.events.error)
+      return false
+    }
+    catch (err) {
+      if (log) console.log(err)
+      return false
+    }
   }
 
   // Figure out whether this is a with(out)breasts pattern
