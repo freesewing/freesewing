@@ -20,6 +20,12 @@
  - Renamed `ear` to `ear flap`
  - Added hem allowances
 
+### huey
+
+#### Fixed
+
+ - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
+
 ### i18n
 
 #### Added

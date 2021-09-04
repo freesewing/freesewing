@@ -1,6 +1,12 @@
 # Change log for: @freesewing/huey
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
+
 ## 2.17.0 (2021-07-01)
 
 ### Added
