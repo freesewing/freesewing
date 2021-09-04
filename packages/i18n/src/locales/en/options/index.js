@@ -86,15 +86,14 @@ for (let pattern of Object.keys(patterns)) {
     if (typeof value === 'object') options[pattern][option] = value
     else {
       if (typeof value === 'undefined') {
-        if (typeof patterns[shared[pattern].dflt][option] === 'object')
+        if (typeof patterns?.[shared?.[pattern]?.dflt]?.[option] === 'object')
           options[pattern][option] = patterns[shared[pattern].dflt][option]
         else if (
-          typeof shared[pattern].other !== 'undefined' &&
-          typeof shared[pattern].other[option] === 'string'
+          typeof shared?.[pattern]?.other !== 'undefined' &&
+          typeof shared?.[pattern]?.other?.[option] === 'string'
         )
           options[pattern][option] = patterns[shared[pattern].other[option]][option]
         else {
-          console.log(options[pattern])
           throw new Error(`No option translation found for ${option} in ${pattern}`)
         }
       }
