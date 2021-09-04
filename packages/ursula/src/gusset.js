@@ -6,20 +6,14 @@ export default function (part) {
     points,
     paths,
     measurements,
-    //    Snippet,
-    //    snippets,
     store,
-    utils,
     complete,
     sa,
     paperless,
     macro,
   } = part.shorthand()
 
-  // Design pattern here
-
   // Create points
-
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)
   points.backGussetLeft = new Point(
     store.get('backGussetLeft').x,
@@ -32,21 +26,17 @@ export default function (part) {
   )
 
   // Create control points
-
   points.gussetCp1 = points.frontGussetLeft
     .shiftFractionTowards(points.backGussetLeft, 0.5)
     .shift(180, points.frontGussetRight.x / -15)
 
   // Flip points to right side
-
   points.gussetCp2 = points.gussetCp1.flipX(store.get('frontGussetMid'))
 
   // Create point for title
-
   points.frontMidMid = points.gussetCp1.shiftFractionTowards(points.gussetCp2, 0.5)
 
   /* Store lengths for use in elastic */
-
   store.set(
     'gussetSideLength',
     new Path()
@@ -56,7 +46,6 @@ export default function (part) {
   )
 
   // Draw paths
-
   paths.seam = new Path()
     .move(points.frontGussetLeft)
     .curve(points.gussetCp1, points.backGussetLeft, points.backGussetLeft)
@@ -71,12 +60,12 @@ export default function (part) {
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
+    macro('title', {
+      at: points.frontMidMid,
+      nr: 3,
+      title: 'gusset',
+    })
   }
-  macro('title', {
-    at: points.frontMidMid,
-    nr: 3,
-    title: 'gusset',
-  })
 
   // Paperless?
   if (paperless) {
