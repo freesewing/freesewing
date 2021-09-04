@@ -9,20 +9,8 @@ export default {
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: [
-      'bicepsEase',
-      'chestEase',
-      'cuffEase',
-      'collarEase',
-      'shoulderEase',
-      'hipsEase',
-    ],
-    style: [
-      'lengthBonus',
-      'sleeveLengthBonus',
-      's3Collar',
-      's3Armhole',
-    ],
+    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'collarEase', 'shoulderEase', 'hipsEase'],
+    style: ['lengthBonus', 'sleeveLengthBonus', 's3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',

@@ -117,4 +117,3 @@ export const sharedDimensions = function (part, s) {
     })
   }
 }
-

@@ -12,7 +12,7 @@ export default function (part) {
     paperless,
     sa,
     options,
-    measurements
+    measurements,
   } = part.shorthand()
 
   // Clear paths from Brian
@@ -36,13 +36,13 @@ export default function (part) {
     'backNeckSeamLength',
     new Path().move(points.neck).curve_(points.neckCp2, points.cbNeck).length()
   )
-  store.set(
-    'neckCutoutBack',
-    points.cbNeck.y
-  )
+  store.set('neckCutoutBack', points.cbNeck.y)
 
   // Paths
-  paths.gussetBase = new Path().move(points.bottom).line(points.armhole).attr('class', 'note stroke-xxl')
+  paths.gussetBase = new Path()
+    .move(points.bottom)
+    .line(points.armhole)
+    .attr('class', 'note stroke-xxl')
   store.set('gussetLength', paths.gussetBase.length())
   paths.saBase = new Path()
     .move(points.armhole)
@@ -52,12 +52,16 @@ export default function (part) {
     .line(points.s3CollarSplit)
     .join(paths.backCollar)
     .attr('class', 'note stroke-xxl')
-  paths.hemBase = new Path().move(points.cbBottom).line(points.bottom).attr('class', 'note stroke-xxl')
+  paths.hemBase = new Path()
+    .move(points.cbBottom)
+    .line(points.bottom)
+    .attr('class', 'note stroke-xxl')
   paths.gussetBase.render = false
   paths.saBase.render = false
   paths.hemBase.render = false
 
-  paths.seam = paths.gussetBase.join(paths.saBase)
+  paths.seam = paths.gussetBase
+    .join(paths.saBase)
     .clone()
     .line(points.cbBottom)
     .join(paths.hemBase)
@@ -69,7 +73,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbBottom,
-      grainline: true
+      grainline: true,
     })
     macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {
