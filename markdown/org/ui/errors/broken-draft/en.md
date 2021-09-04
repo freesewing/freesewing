@@ -8,8 +8,13 @@ We'd like to gather diagnostics
 and [create an issue on Github](https://github.com/freesewing/freesewing/issues/new) to
 investigate what exactly went wrong.
 
-We'll keep your (user)name out of the diagnostics data, but we'd still like your consent prior to 
-gathering this data and putting it on Github.
+The diagnostics data we collect includes:
 
-If you are on board, click the button below. If not, you can 
-always [report this manually](https://github.com/freesewing/freesewing/issues/new).
+ - Your userid 
+ - Your Github username (only if you configured it in your profile)
+ - The pattern name and version
+ - The full set of measurements and options used to create this pattern
+
+If you consent to publish this data in the crash report, click the button below.
+
+If not, you can always [report this manually](https://github.com/freesewing/freesewing/issues/new).
