@@ -7,6 +7,10 @@
 
  - Added translations for Yuri
 
+### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
 ## 2.17.3 (2021-08-16)
 
 ### Added

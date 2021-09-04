@@ -26,6 +26,10 @@
 
  - Added translations for Yuri
 
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
 ### wahid
 
 #### Fixed
