@@ -86,7 +86,7 @@ for (let pattern of Object.keys(patterns)) {
     if (typeof value === 'object') options[pattern][option] = value
     else {
       if (typeof value === 'undefined') {
-        if (typeof patterns?.[shared?.[pattern]?.dflt]?.[option] === 'object')
+        if (typeof patterns[shared?.[pattern]?.dflt]?.[option] === 'object')
           options[pattern][option] = patterns[shared[pattern].dflt][option]
         else if (
           typeof shared?.[pattern]?.other !== 'undefined' &&
