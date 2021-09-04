@@ -19,7 +19,6 @@ export default (part) => {
   } = part.shorthand()
 
   // Re-use points for deeper armhole at the front
-  let deeper = measurements.chest * options.frontArmholeDeeper
   points.armholePitchCp1 = points.frontArmholePitchCp1
   points.armholePitch = points.frontArmholePitch
   points.armholePitchCp2 = points.frontArmholePitchCp2

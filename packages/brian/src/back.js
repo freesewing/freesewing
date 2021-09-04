@@ -13,7 +13,6 @@ export default (part) => {
     paperless,
     macro,
     options,
-    Point,
     utils,
   } = part.shorthand()
 
