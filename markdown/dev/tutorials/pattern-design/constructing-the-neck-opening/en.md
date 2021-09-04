@@ -40,7 +40,7 @@ points.rightCp1 = points.right
 points.bottomCp2 = points.bottom
   .shift(0, points.bottom.dx(points.right)/2)
 
-paths.neck = new Path()
+paths.quarterNeck = new Path()
   .move(points.right)
   .curve(points.rightCp1, points.bottomCp2, points.bottom)
 ```
@@ -83,12 +83,12 @@ You can find them all in [the Point API docs](/reference/api/point/).
 The next line introduces you to something new: Paths:
 
 ```js
-paths.neck = new Path()
+paths.quarterNeck = new Path()
   .move(points.right)
   .curve(points.rightCp1, points.bottomCp2, points.bottom)
 ```
 
- - We're adding a path named `neck` to `paths` which holds our part's paths
+ - We're adding a path named `quarterNeck` to `paths` which holds our part's paths
  - We're using the Path constructor, which takes no arguments
  - We're following up with a `Path.move()` call that takes one Point as argument
  - Then, there's a `Path.curve()` call that takes 3 points as arguments

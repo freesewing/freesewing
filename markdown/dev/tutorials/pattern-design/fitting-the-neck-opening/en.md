@@ -16,7 +16,7 @@ do {
 	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
 	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
 
-	paths.neck = new Path()
+	paths.quarterNeck = new Path()
 	  .move(points.right)
 	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
 
