@@ -20,6 +20,8 @@ unreleased:
       - Added hem allowances
 
   Fixed:
+    i18n:
+      - Added optional chaining so missing options always lead to clear error message
     wahid:
       - Close Seam Allowance path of front lining
         Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
