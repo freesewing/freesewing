@@ -196,7 +196,7 @@ plugin-bundle:
     '@freesewing/plugin-sprinkle': *freesewing
 remark-jargon:
   _:
-    'unist-util-visit': '^3.1.0'
+    'unist-util-visit': '^4.0.0'
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
