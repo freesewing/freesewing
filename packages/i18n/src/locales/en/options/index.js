@@ -74,10 +74,11 @@ let patterns = {
   cornelius,
   charlie,
   ursula,
+  yuri: false,
 }
 
 let options = {}
-for (let pattern of Object.keys(patterns)) {
+for (let pattern in patterns) {
   options[pattern] = {}
   if (typeof optionList[pattern] === 'undefined')
     throw new Error('pattern ' + pattern + ' has no option list')

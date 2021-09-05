@@ -170,5 +170,7 @@ wahid:
     centerBackDart: jaeger
     buttons: simon
 yuri:
-  dflt: huey
+  dflt: brian
+  other:
+    hipsEase: hugo
 
