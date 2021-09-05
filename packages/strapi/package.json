@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/strapi",
-  "version": "2.17.4",
+  "version": "2.18.0-rc.0",
   "description": "Freesewing's Strapi instance",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://posts.freesewing.org/",
@@ -27,7 +27,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
+    "buildit": "strapi build",
     "strapi": "strapi"
   },
   "peerDependencies": {},
