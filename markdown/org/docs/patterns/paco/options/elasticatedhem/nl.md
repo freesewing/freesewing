@@ -2,5 +2,5 @@
 Of je nu een elastische manchet aan de enkel, wilt toevoegen, of liever een klassiek zoombeen.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_elasticatedhem_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](paco_elasticatedhem_sample.svg "Effect van deze optie op het patroon")
