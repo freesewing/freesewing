@@ -14,5 +14,5 @@ Im Beispielbild liegt der obere Wert bei 80 Grad (Standard) und der untere Wert 
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_collarangle_sample.svg "Effekt dieser Option auf das Muster")
