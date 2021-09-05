@@ -6,5 +6,5 @@ Si sientes que un cuello está sufriendo, puedes darte un poco más de facilidad
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarease_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarease_sample.svg "Efecto de esta opción en el patrón")
