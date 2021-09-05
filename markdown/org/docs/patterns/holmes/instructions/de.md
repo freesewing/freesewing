@@ -148,9 +148,9 @@ ____ (Optional) Maschinen-***Baste*** der Visor zur Krone entlang der Nahtlinien
 __7.__ Wiederholen Sie die Schritte 4 bis 6 für den restlichen Visor auf der gegenüberliegenden Seite der Mitte Kronennaht.  
 __8.__ Konstruieren Sie die gleiche Art und Weise wie die Kronenbezwingung ***Edgestitching*** und lassen Sie eine Lücke in der Mitte Futter Naht groß genug, um den Hut zu drehen.  
 __9.__ Mit rechten Seiten zusammen, passende Mittelkronennaht, Panelnähte und Nahtlinien. Nähen Sie das Futter zur Krone entlang der Nahtlinien. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden. __10.__ Turn hat inside out, pressing lining to inside.   
-__11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
-__12.__ ***Slipstitch*** lining opening closed. __13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
-__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+__11.__ (Optional/Alternate to 13.) ***Unterstich*** Verkleidung.  
+__12.__ ***Schleifenöffnung*** geschlossen. __13.__ (Optional/Alternativ zu 11.) ***Topstitch*** oder ***Edgestitch*** entlang der Außenseite des Hutes Das Futter auf der Innenseite zu fangen stellt sicher, dass es während der Nähung nicht spitzt.  
+__14.__ (Optional) ***Tack*** der Gipfel des Futters zum Gipfel der Krone. Damit soll verhindert werden, dass der Streifen herausfällt.
 
 <Note>
 
@@ -209,7 +209,7 @@ Das war's! Sie sind fertig. Genießen Sie jetzt die Welt in Ihrem wunderbaren ne
 <Note>
 
 Denken Sie daran, dass diese Anweisungen nur Richtlinien sind, also machen Sie sich keine Sorgen, wenn Sie den Hut anders konstruieren möchten.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Die Diagramme müssen noch für dieses Muster erstellt werden, also in der Zwischenzeit, wenn Sie eine visuelle Hilfe benötigen schaue dir das YouTube-Video an, das dieses Muster inspiriert hat:
 
 </Note>
 

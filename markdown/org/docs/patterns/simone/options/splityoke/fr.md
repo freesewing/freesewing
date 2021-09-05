@@ -1,14 +1,16 @@
-![Empiècement dos à couture médiane ("split yoke")](splityoke.svg)
+![Split yoke](splityoke.svg)
 
-Voulez vous un split yoke ?
+Do you want a split yoke?
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-Avec un empiècement dos à couture médiane (split yoke), seule la moitié de l'empiècement étant représentée sur le patron, vous devrez couper 4 pièces au lieu de 2, et les coudre ensemble.
+With a split yoke, only half the yoke is included on the pattern, and you'll have to cut 4 parts instead of 2, and sew them together.
 
-C'est un peu plus de travail, mais cela vous permet d'aligner le droit-fil différemment des deux côtés de l'empiècement, effet de style apprécié par certains.
+It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
 
 </Note>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_splityoke_sample.svg "Effect of this option on the pattern")

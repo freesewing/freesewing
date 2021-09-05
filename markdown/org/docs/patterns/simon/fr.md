@@ -1,7 +1,7 @@
 - - -
 - - -
 
-Importer PatternDocs from '../../../../../src/components/docs/pattern'
+
 
 <Tip>
 

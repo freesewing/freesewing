@@ -1,14 +1,29 @@
 ---
 lengthRatio:
   title: Lengteratio
-  description: fixme
+  description: Controls the height of the hat and length of the ears
 goreNumber:
   title: Aantal panden
   description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
-brimAngle:
-  title: Hoek klep
-  description: Bepaalt de kromming van de klep
-brimWidth:
-  title: Breedte klep
-  description: Bepaalt de breedte van de klep
+visorAngle:
+  title: Visor angle
+  description: Controls the curvature of the visor
+visorLength:
+  title: Visor length
+  description: Controls the length of the visor
+visorWidth:
+  title: Visor width
+  description: Controls the width of the visor
+headEase:
+  title: Head ease
+  description: Controls the amount of ease for your head
+earLength:
+  title: Ear length
+  description: Controls the length of the ears
+earWidth:
+  title: Ear width
+  description: Controls the width of the ears
+buttonhole:
+  title: Buttonhole
+  description: Adds a buttonhole to the ears
 

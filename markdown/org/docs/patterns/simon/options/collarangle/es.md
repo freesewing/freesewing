@@ -15,3 +15,6 @@ Valores más altos significan un estilo más cortado.
 En la imagen de ejemplo, la parte superior es de 80 grados (el valor por defecto) y la parte inferior es de 110 grados.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")

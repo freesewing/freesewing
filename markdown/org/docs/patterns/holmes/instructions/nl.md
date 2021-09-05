@@ -169,10 +169,10 @@ __5.__ Hand-***Baste*** de bezoeker aan de kroon die de drieglijnen met de kroon
 __6.__ (Optioneel) Machine-***Baste*** aan de kroon langs de naadlijnen.  
 __7.__ Herhaal stap 4 tot 6 voor de resterende bezoeker aan de andere kant van de middenkroon.  
 __8.__ Bouw de voering op dezelfde manier als de kroonjuweel ***Edgestitching*** en laat een opening in de middelste voering groot genoeg om de hoed te draaien.  
-__9.__ Met rechterkanten op elkaar, overeenkomende middenkroonnaden, paneel naden en naadlijnen. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen. __10.__ Turn hat inside out, pressing lining to inside.   
-__11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
-__12.__ ***Slipstitch*** lining opening closed. __13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
-__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+__9.__ Met rechterkanten op elkaar, overeenkomende middenkroonnaden, paneel naden en naadlijnen. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen. __10.__ Draai hoed binnenstebuiten, strijk om in te gaan.   
+__11.__ (Optioneel/Alternatief voor 13.) ***Onderstiksel*** voering.  
+__12.__ ***Slipstitch*** voering opening gesloten. __13.__ (optioneel/Alternatief voor 11.) ***Sierstiksel*** of ***Stik*** langs de buitenkant van de hoed, het vangen van de voering aan de binnenkant zorgt ervoor dat deze niet piekt terwijl je naait.  
+__14.__ (optioneel) ***Tack*** de piek van de voering naar het hoogtepunt van de kroon. Dit om te voorkomen dat de voering uitvalt.
 
 <Note>
 
@@ -238,7 +238,7 @@ Dat is het! Je bent allemaal klaar. Geniet nu van de wereld in je geweldige nieu
 <Note>
 
 Vergeet niet dat deze instructies slechts richtlijnen zijn, dus maak je geen zorgen als je de hoed anders wilt bouwen.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+De diagrammen moeten nog gemaakt worden voor dit patroon, dus in de tussentijd als je hulp nodig hebt. bekijk de YouTube video die dit patroon inspireerde:
 
 </Note>
 

@@ -1,14 +1,29 @@
 ---
 lengthRatio:
   title: Längenverhältnis
-  description: fixme
+  description: Controls the height of the hat and length of the ears
 goreNumber:
   title: Anzahl Keile
   description: Die Anzahl der zur Konstruktion der Halbkugel verwendeten Keile
-brimAngle:
-  title: Winkel der Krempe
-  description: Steuert die Krümmung der Krempe
-brimWidth:
-  title: Breite der Krempe
-  description: Steuert die Breite der Krempe
+visorAngle:
+  title: Visor angle
+  description: Controls the curvature of the visor
+visorLength:
+  title: Visor length
+  description: Controls the length of the visor
+visorWidth:
+  title: Visor width
+  description: Controls the width of the visor
+headEase:
+  title: Head ease
+  description: Controls the amount of ease for your head
+earLength:
+  title: Ear length
+  description: Controls the length of the ears
+earWidth:
+  title: Ear width
+  description: Controls the width of the ears
+buttonhole:
+  title: Buttonhole
+  description: Adds a buttonhole to the ears
 

@@ -10,3 +10,6 @@ Plus de drapes élargit la manche et vous donne un effet plus *blousie*, tandis 
 Le drapé sera travaillé dans le manche avec des plis.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffdrape_sample.svg "Effect of this option on the pattern")

@@ -13,3 +13,6 @@ The collar starts upwards from the collar stand and then rolls over downwards. P
 Incrementar esto no hace que el cuello sea más alto (use la altura del cuello para eso), sino que más bien hace que descienda más abajo.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
