@@ -1,14 +1,29 @@
 ---
 lengthRatio:
   title: Ratio de longitud
-  description: fixme
+  description: Controls the height of the hat and length of the ears
 goreNumber:
   title: Número de paneles
   description: El número de paneles usado para construir la semiesfera
-brimAngle:
-  title: Ángulo de la visera
-  description: Controla la curvatura de la visera
-brimWidth:
-  title: Ancho de la visera
-  description: Controla la anchura de la visera
+visorAngle:
+  title: Visor angle
+  description: Controls the curvature of the visor
+visorLength:
+  title: Visor length
+  description: Controls the length of the visor
+visorWidth:
+  title: Visor width
+  description: Controls the width of the visor
+headEase:
+  title: Head ease
+  description: Controls the amount of ease for your head
+earLength:
+  title: Ear length
+  description: Controls the length of the ears
+earWidth:
+  title: Ear width
+  description: Controls the width of the ears
+buttonhole:
+  title: Buttonhole
+  description: Adds a buttonhole to the ears
 
