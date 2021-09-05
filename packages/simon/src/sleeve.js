@@ -161,16 +161,18 @@ export default (part) => {
 
   // Paperless?
   if (paperless) {
-    macro('hd', {
-      from: points.backNotch,
-      to: points.sleeveTip,
-      y: points.sleeveTip.y - 15 - sa * options.ffsa,
-    })
-    macro('hd', {
-      from: points.sleeveTip,
-      to: points.frontNotch,
-      y: points.sleeveTip.y - 15 - sa * options.ffsa,
-    })
+    if (complete) {
+      macro('hd', {
+        from: points.backNotch,
+        to: points.sleeveTip,
+        y: points.sleeveTip.y - 15 - sa * options.ffsa,
+      })
+      macro('hd', {
+        from: points.sleeveTip,
+        to: points.frontNotch,
+        y: points.sleeveTip.y - 15 - sa * options.ffsa,
+      })
+    }
     macro('hd', {
       from: points.bicepsLeft,
       to: points.sleeveTip,
@@ -202,25 +204,27 @@ export default (part) => {
       to: points.bicepsRight,
       x: points.bicepsRight.x + 15 + sa * options.ffsa,
     })
-    macro('vd', {
-      from: points.bicepsRight,
-      to: points.frontNotch,
-      x: points.bicepsRight.x + 15 + sa * options.ffsa,
-    })
+    if (complete) {
+      macro('vd', {
+        from: points.bicepsRight,
+        to: points.frontNotch,
+        x: points.bicepsRight.x + 15 + sa * options.ffsa,
+      })
+      macro('vd', {
+        from: points.bicepsLeft,
+        to: points.backNotch,
+        x: points.bicepsLeft.x - 15 - sa,
+      })
+      macro('vd', {
+        from: points.cuffLeftCusp,
+        to: points.placketEnd,
+        x: points.placketEnd.x - 15,
+      })
+    }
     macro('vd', {
       from: points.bicepsRight,
       to: points.sleeveTip,
       x: points.bicepsRight.x + 30 + sa * options.ffsa,
-    })
-    macro('vd', {
-      from: points.bicepsLeft,
-      to: points.backNotch,
-      x: points.bicepsLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.cuffLeftCusp,
-      to: points.placketEnd,
-      x: points.placketEnd.x - 15,
     })
     macro('hd', {
       from: points.wristLeft,

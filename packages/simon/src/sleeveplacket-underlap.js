@@ -83,11 +83,13 @@ export default (part) => {
       to: points.topRight,
       x: points.topRight.x + 30,
     })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.button,
-      y: points.bottomRight.y + 15,
-    })
+    if (complete) {
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.button,
+        y: points.bottomRight.y + 15,
+      })
+    }
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
