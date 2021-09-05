@@ -10,3 +10,6 @@ Si no estás seguro de qué escoger, lo mejor es tomar la costilla que vas a usa
 necesitas estirar para llegar a 10 cm con un estiramiento *bueno*.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
