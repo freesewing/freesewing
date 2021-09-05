@@ -12,3 +12,6 @@ Este truco se utiliza a menudo en vaqueros de ropa de mujer
 (ahora sabes por qué no puedes encontrar vaqueros de ropa de mujer con bolsillos frontales funcionales).
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](titan_legbalance_sample.svg "Efecto de esta opción en el patrón")
