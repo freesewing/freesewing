@@ -34,6 +34,10 @@ export default function (part) {
   paths.pocket = new Path().move(points[60]).line(points[61]).attr('class', 'lining lashed')
 
   // Complete pattern?
+  if (complete || paperless) {
+    points.grainlineTop = points[60].clone()
+    points.grainlineBottom = new Point(points.grainlineTop.x, points[810].y)
+  }
   if (complete) {
     if (sa) {
       paths.sa = paths.seam.offset(-1 * sa).attr('class', 'lining sa')
@@ -41,8 +45,6 @@ export default function (part) {
     }
     points.title = points.dartTip.clone()
     macro('title', { at: points.title, title: 'frontPocketBag', nr: 9 })
-    points.grainlineTop = points[60].clone()
-    points.grainlineBottom = new Point(points.grainlineTop.x, points[810].y)
     macro('grainline', {
       from: points.grainlineBottom,
       to: points.grainlineTop,
