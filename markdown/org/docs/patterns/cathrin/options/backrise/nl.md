@@ -7,3 +7,7 @@ Nul houdt in dat de ruglijn horizontaal blijft, op hetzelfde niveau als de onder
 Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
 
 > Aangezien dit een korset is dat onder de buste zit is de hoogte van de rug een esthetische keuze en heeft dit geen invloed op de pasvorm
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")

@@ -12,3 +12,6 @@ Personne n'a besoin de savoir que le tatouage Justin Bieber sur le bas du dos.
 Si vous voulez une chemise plus décontractée à porter sur votre pantalon, vous voudrez la diminuer.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_lengthbonus_sample.svg "Effect of this option on the pattern")

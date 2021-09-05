@@ -16,3 +16,6 @@ Ne pas inclure le bouton du haut si vous voulez un look plus décontracté.
 Ce bouton supplémentaire est ajouté au nombre de boutons sur le devant. Il ne remplace pas un autre bouton.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")

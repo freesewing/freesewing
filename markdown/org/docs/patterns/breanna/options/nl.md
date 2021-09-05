@@ -36,7 +36,7 @@ De breedte van de mouwkop (en dus de breedte van de mouw aan de onderkant van he
 
 ![Onderdeel de bovenkant van de mouwkop](sleevecaptop.svg)
 
-De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. De exactle hoogte is een compromis tussen de maten van het model, de opties, de overwijdte van de mouw en mouwkop, en het feit dat uiteindelijk de mouw in het armgat moet passen. Dus de hoogte kan verschillen, en we controleren de exacte waarde. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
+De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. De exacte hoogte is een compromis tussen de maten van het model, de opties, de overwijdte van de mouw en mouwkop, en het feit dat uiteindelijk de mouw in het armsgat moet passen. Dus de hoogte kan verschillen, en we controleren de exacte waarde. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
 
  - [Mouwkop top X](/docs/patterns/breanna/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
  - [Mouwkop top Y](/docs/patterns/breanna/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4

@@ -1,10 +1,13 @@
-![L'emplacement vertical du point d'inflexion arrière](./sleevecapbackfactory.svg)
+![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
 
-Cette option module la position verticale du point d'inflexion de la tête de manche à l'arrière de la manche.
+This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.
 
 <Tip>
 
-Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-the-sleevecap) pour une explication détaillée de la construction de la tête de manche et de l'influence des différentes options sur sa forme.
+See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleevecapbackfactory_sample.svg "Effect of this option on the pattern")

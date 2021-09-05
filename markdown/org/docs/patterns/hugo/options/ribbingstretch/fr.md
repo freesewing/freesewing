@@ -10,3 +10,6 @@ Si vous n'êtes pas sûr de ce qu'il faut choisir, le mieux est de prendre le ru
 vous devez vous étirer pour atteindre 10 cm avec une *bonne* élasticité.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")

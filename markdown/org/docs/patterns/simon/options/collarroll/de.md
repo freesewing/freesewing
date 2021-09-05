@@ -11,3 +11,6 @@ Der Kragen beginnt vom Kragenstand nach oben und rollt dann nach unten. Aber es 
 Dies erhöht den Kragen nicht (verwenden Sie dafür die Kragenhöhe), sondern führt zu einem weiteren Abstieg nach unten.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")

@@ -16,3 +16,6 @@ Fügen Sie die obere Taste nicht ein, wenn Sie ein entspannteres Aussehen wünsc
 Diese zusätzliche Taste wird zur Anzahl der Tasten auf der Vorderseite hinzugefügt. Es ersetzt keinen anderen Knopf.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")

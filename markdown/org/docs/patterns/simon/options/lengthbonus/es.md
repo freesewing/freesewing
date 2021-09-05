@@ -14,3 +14,6 @@ Nadie necesita saber sobre ese tatuaje Justin Bieber en la parte inferior de la 
 Si quieres una camisa más casual para llevar sobre tus pantalones, querrás bajar esto.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_lengthbonus_sample.svg "Effect of this option on the pattern")

@@ -12,3 +12,6 @@ Niemand muss wissen, dass Justin Bieber Tätowierung auf deinem unteren Rücken 
 Wenn Sie möchten, dass ein lässigeres Hemd über Ihre Hose getragen wird, wollen Sie dies senken.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_lengthbonus_sample.svg "Effect of this option on the pattern")

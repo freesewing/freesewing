@@ -16,3 +16,6 @@ No incluya el botón superior si desea un aspecto más casual.
 Este botón adicional se añade al número de botones en la parte delantera. No sustituye a otro botón.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
