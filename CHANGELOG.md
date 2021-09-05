@@ -25,6 +25,7 @@
  - Renamed `gore` to `crown`
  - Renamed `ear` to `ear flap`
  - Added hem allowances
+ - Migrated `mm` options to `pct`
 
 ### huey
 
