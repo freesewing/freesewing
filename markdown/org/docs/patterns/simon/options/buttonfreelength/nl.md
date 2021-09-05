@@ -14,3 +14,6 @@ De laatste knoop zit standaard 1 cm boven je tailleband, maar deze optie staat j
 Als je knopen onder je tailleband wil kan dat ook. Dan moet je hier een negatieve waarde invoeren, zolang ze binnen de beschikbare lengtebonus valt.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttonfreelength_sample.svg "Effect van deze optie op het patroon")
