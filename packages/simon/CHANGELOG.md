@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
 ## 2.17.4 (2021-08-20)
 
 ### Fixed

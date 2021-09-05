@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
 ## 2.17.1 (2021-07-14)
 
 ### Fixed

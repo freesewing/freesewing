@@ -20,14 +20,22 @@ unreleased:
       - Added hem allowances
 
   Fixed:
+    core:
+      - Handle path.offset() of very short curves with control points on the start or end point
+        Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
     huey:
       - Replace cut-on-fold indicator on pocket with a regular grainline indicator
         Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
     i18n:
       - Added optional chaining so missing options always lead to clear error message
+    simon:
+      - Avoid paperless depending on a complete pattern
+    theo:
+      - Avoid paperless depending on a complete pattern
     wahid:
       - Close Seam Allowance path of front lining
         Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+      - Support a zero value for the `backScyeDart` option
 
 2.17.4:
   date: 2021-08-20

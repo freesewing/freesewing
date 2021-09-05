@@ -3,6 +3,12 @@
 
 ## unreleased (NaN-NaN-NaN)
 
+### core
+
+#### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
 ### holmes
 
 #### Added
@@ -36,11 +42,24 @@
 
  - Added optional chaining so missing options always lead to clear error message
 
+### simon
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+### theo
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
 ### wahid
 
 #### Fixed
 
  - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+ - Support a zero value for the `backScyeDart` option
 
 ### yuri
 
