@@ -12,3 +12,6 @@ Deze optie staat je toe dat aan te passen, zonder het patroon dramatisch te vera
 Je kan gewoon de achterkant van de broek wat hoger maken.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](theo_backrise_sample.svg "Effect van deze optie op het patroon")
