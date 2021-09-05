@@ -8,3 +8,6 @@ Je länger Ihr Ärmel-Plakat ist, desto einfacher ist es, aus Ihrem Hemd-Ärmel 
 Es beeinflusst auch, wie die Dinge aussehen, wenn du die Ärmel hochrollst
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_sleeveplacketlength_sample.svg "Effect of this option on the pattern")
