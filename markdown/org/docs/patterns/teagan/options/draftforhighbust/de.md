@@ -12,3 +12,6 @@ Enable this option and we'll draft to your high bust, fitting your body without 
 <Note>
 Diese Option hat keine Auswirkung, wenn keine hohe Büstenmessung verfügbar ist
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_draftforhighbust_sample.svg "Effekt dieser Option auf das Muster")
