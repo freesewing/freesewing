@@ -1,5 +1,5 @@
 export default function (part) {
-  let { Point, Path, points, paths, store, options, complete, sa, paperless, macro } =
+  let { Point, Path, points, paths, complete, sa, paperless, macro } =
     part.shorthand()
 
   // Clear paths from Brian, but keep sleevecap
