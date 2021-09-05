@@ -9,3 +9,6 @@
  - Si estableces esto en cero, obtendrás un hem recto independientemente del estilo de la hem que elijas.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_hemcurve_sample.svg "Efecto de esta opción en el patrón")
