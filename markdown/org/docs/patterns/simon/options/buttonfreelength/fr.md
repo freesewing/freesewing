@@ -14,3 +14,6 @@ Par défaut, le dernier bouton est placé 1 cm au dessus de votre ceinture, mais
 Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez. Vous devez entrer ici une valeur négative, en vous assurant qu'elle est dans le bonus de longueur disponible.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonfreelength_sample.svg "Effect of this option on the pattern")
