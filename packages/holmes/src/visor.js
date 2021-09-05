@@ -1,5 +1,5 @@
 export default function (part) {
-  let { Point, points, Path, paths, measurements, options, complete, sa, paperless, macro } =
+  let { store, Point, points, Path, paths, measurements, options, complete, sa, paperless, macro } =
     part.shorthand()
 
   let headCircumference = measurements.head + options.headEase
@@ -27,11 +27,12 @@ export default function (part) {
   points.in2Flipped = points.in2.flipX()
   points.in2CFlipped = points.in2C.flipX()
 
-  points.ex1 = points.in1.shift(-90, options.visorWidth)
+  store.set('visorWidth', measurements.head * options.visorWidth)
+  points.ex1 = points.in1.shift(-90, store.get('visorWidth'))
   points.ex1C = points.ex1.shift(0, 0.5 * points.in2.x)
   points.ex2C = points.in2.shift(
     -90,
-    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-options.visorWidth / 15)) - 1)
+    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(store.get('visorWidth') / -15)) - 1)
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
