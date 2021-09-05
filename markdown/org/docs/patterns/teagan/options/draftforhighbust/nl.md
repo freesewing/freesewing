@@ -12,3 +12,6 @@ Schakel deze optie in en we tekenen naar je hoge bust, pak je lichaam zonder bor
 <Note>
 Deze optie heeft geen effect wanneer er geen hoge bustemeting wordt gegeven
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_draftforhighbust_sample.svg "Effect van deze optie op het patroon")
