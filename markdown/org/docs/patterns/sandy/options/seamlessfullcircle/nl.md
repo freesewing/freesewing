@@ -8,3 +8,6 @@ Kies 'ja' voor een naadloze cirkel, die aan een dubbele stofvouw geknipt wordt. 
 Dit maakt een volledige cirkel en negeert de optie *Cirkelpercentage*
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_seamlessfullcircle_sample.svg "Effect van deze optie op het patroon")
