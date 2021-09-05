@@ -7,3 +7,7 @@ Null bedeutet, dass die Backline auf der Ebene des Unterbruchs horizontal bleibt
 Wenn du den Rückenaufstieg erhöhst, wird dein Korsett auf der Rückseite nach oben steigen.
 
 > Da es sich um ein unterbrochenes Korsett handelt, ist der Rückenaufstieg eine Wahl und wunderbar<unk> €TMt beeinflussen die Passform
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")
