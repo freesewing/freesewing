@@ -10,3 +10,6 @@ Als je niet zeker weet wat je moet kiezen, het beste is om de boordstof die je g
 je moet uitrekken om op 10 cm te komen met een *goed* rek.
 
 </Note>
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
