@@ -16,4 +16,6 @@ We willen niemand uitsluiten, en we denken dat _body shape =→gender_. Daarom g
 ##### Hoe het van toepassing is op patronen
 Elke gebruiker kan elk patroon op onze site tekenen, zolang ze de vereiste metingen aanbieden. Voor sommige patronen zijn metingen die alleen relevant zijn als je borsten hebt.
 
+##### How it applies to binding
+If you are binding, use the **without breasts** patterns, and use the cirumference of your binded chest as [chest measurement](/docs/measurements/chest/)
 
