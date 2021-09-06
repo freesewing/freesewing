@@ -12,3 +12,6 @@ Deze optie zorgt dat er een beetje stof aan de achterkant van de nek weggenomen 
 Dit is eigenlijk geen neep, maar ik wist niet zeker hoe het te benoemen. Suggesties zijn welkom.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_centerbackdart_sample.svg "Effect van deze optie op het patroon")

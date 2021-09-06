@@ -12,3 +12,6 @@ Deze truc wordt vaak gebruikt in damesspijkerbroek
 (nu weet je waarom je geen damesspijkerspijkers kunt vinden met functionele voorzakken).
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_legbalance_sample.svg "Effect van deze optie op het patroon")

@@ -12,3 +12,6 @@ Cette option enroule le tissu à l'arrière de votre cou. Il le fait de 0,5 cm p
 Techniquement, ce n'est pas une fléchette, mais je ne savais pas comment l'appeler autrement. Suggestions bienvenues.
 
 </Note>
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_centerbackdart_sample.svg "Effet de cette option sur le motif")

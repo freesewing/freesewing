@@ -12,3 +12,6 @@ Cette option vous permet d'atténuer cela, sans modifications spectaculaires du 
 Il vous permet de simplement lever le dos du pantalon.
 
 </Note>
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](theo_backrise_sample.svg "Effet de cette option sur le motif")

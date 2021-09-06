@@ -12,3 +12,6 @@ Etant donné qu’il n’y a pas de manche, une brèche béante est particulièr
 Bien que ce dart soit utilisé pour façonner le motif, vous n'avez pas à coudre le dart parce qu'il est incorporé dans la ligne de couture des épaules.
 
 </Note>
+
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le motif")

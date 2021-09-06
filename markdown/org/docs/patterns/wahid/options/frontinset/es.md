@@ -12,3 +12,6 @@ The armhole of your waistcoat can curve further inward, given that there is no s
 Esto influye en el estilo de la cintura.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_frontinset_sample.svg "Efecto de esta opción en el patrón")

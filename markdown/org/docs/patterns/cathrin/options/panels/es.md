@@ -10,5 +10,5 @@ Más paneles es un poco más de trabajo, pero también permite que la diferencia
 > Más curvas = más paneles
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_panels_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_panels_sample.svg "Efecto de esta opción en el patrón")

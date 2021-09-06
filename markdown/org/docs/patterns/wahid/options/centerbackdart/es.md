@@ -14,3 +14,6 @@ Esta opción reduce el tejido hacia adentro en la parte trasera del cuello. Lo h
 Técnicamente esto no es un dardo, pero no estaba seguro de cómo llamarlo. Sugerencias bienvenidas.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Efecto de esta opción en el patrón")

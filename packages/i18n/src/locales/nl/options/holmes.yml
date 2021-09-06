@@ -1,29 +1,29 @@
 ---
 lengthRatio:
   title: Lengteratio
-  description: Controls the height of the hat and length of the ears
+  description: Bepaalt de hoogte van de hoed en de lengte van de oren
 goreNumber:
   title: Aantal panden
   description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
 visorAngle:
   title: Visor angle
-  description: Controls the curvature of the visor
+  description: Bepaalt de kromming van de bezoeker
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Bezoeker lengte
+  description: Bepaalt de lengte van de bezoeker
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Visor breedte
+  description: Bepaalt de breedte van de bezoeker
 headEase:
-  title: Head ease
-  description: Controls the amount of ease for your head
+  title: Overwijdte hoofd
+  description: Bepaalt de hoeveelheid overwijdte voor je hoofd
 earLength:
-  title: Ear length
-  description: Controls the length of the ears
+  title: Oor lengte
+  description: Bepaalt de lengte van de oren
 earWidth:
-  title: Ear width
-  description: Controls the width of the ears
+  title: Oar breedte
+  description: Bepaalt de breedte van de oren
 buttonhole:
   title: Buttonhole
-  description: Adds a buttonhole to the ears
+  description: Voegt een knoopsgat aan de oren toe
 

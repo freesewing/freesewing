@@ -9,3 +9,6 @@ Hoeveel wil je dat de zoom naar boven buigt?
  - Als je dit op nul zet krijg je een rechte zoom, onafhankelijk van welke stijl van zoom je kiest.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_hemcurve_sample.svg "Effect van deze optie op het patroon")

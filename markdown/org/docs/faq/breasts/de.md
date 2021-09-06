@@ -16,6 +16,6 @@ Wir wollen keine Person ausschließen und wir sind der Überzeugung, dass _Körp
 ##### Schnittmuster betreffend
 Jede/r Nutzer/in kann jedes Schnittmuster auf unserer Seite erstellen, sofern die benötigten Maße bereitgestellt werden. Das enthält für einige Schnitte Maße, die nur relevant sind, wenn eine Person Brüste hat.
 
-##### How it applies to binding
-If you are binding, use the **without breasts** patterns, and use the cirumference of your binded chest as [chest measurement](/docs/measurements/chest/)
+##### Wie es auf Bindung zutrifft
+Wenn Sie binden, verwenden Sie die **ohne Brüste** Muster und verwenden Sie den Kreis Ihrer gebundenen Truhe als [Brustmessung](/docs/measurements/chest/)
 

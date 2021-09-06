@@ -1,16 +1,18 @@
-![Split yoke](splityoke.svg)
+![Canesú partido](splityoke.svg)
 
-Do you want a split yoke?
+¿Quiere dividir?
 
 <Note>
+
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 With a split yoke, only half the yoke is included on the pattern, and you'll have to cut 4 parts instead of 2, and sew them together.
 
-It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
+Es un poco más de trabajo, pero te permite alinear la línea de grano de forma diferente en ambas mitades del yugo, un efecto que a algunas personas les gusta.
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_splityoke_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_splityoke_sample.svg "Efecto de esta opción en el patrón")

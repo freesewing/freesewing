@@ -3,5 +3,5 @@
 Cette option permet de contrôler l'ajustement à votre bras supérieur et influence la profondeur de votre armure.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_bicepsease_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_bicepsease_sample.svg "Effet de cette option sur le motif")
