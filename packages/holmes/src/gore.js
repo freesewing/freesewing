@@ -15,7 +15,7 @@ export default function (part) {
   // Design pattern here
 
   //Radius of the head
-  let headCircumference = measurements.head + options.headEase
+  let headCircumference = measurements.head + (measurements.head*options.headEase)
   let headRadius = headCircumference / 2 / Math.PI
 
   points.p0 = new Point(0, 0)

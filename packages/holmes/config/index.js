@@ -21,11 +21,11 @@ export default {
   hide: [],
   parts: ['gore', 'visor', 'ear'],
   options: {
-	headEase: { mm: 19, min: 0, max: 50 },
+	headEase: { pct: 3, min: 0, max: 15 },
     lengthRatio: { pct: 55, min: 40, max: 60 },
     goreNumber: { count: 6, min: 4, max: 20 },
     visorAngle: { deg: 45, min: 10, max: 90 },
-    visorWidth: { mm: 30, min: 5, max: 100 },
+    visorWidth: { pct: 6.5, min: 3, max: 15 },
 	earLength: { pct: 100, min: 80, max: 150 },
 	earWidth: { pct: 100, min: 80, max: 150 },
 	visorLength: { pct: 100, min: 80, max: 150 },

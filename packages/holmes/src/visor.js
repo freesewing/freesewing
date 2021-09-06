@@ -12,8 +12,9 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let headCircumference = measurements.head + options.headEase
+  let headCircumference = measurements.head + (measurements.head*options.headEase)
   let headRadius = headCircumference / 2 / Math.PI
+  let visorWidth = headCircumference*options.visorWidth
   let visorRadius = (headRadius / Math.sin((options.visorAngle * Math.PI) / 180))
   let sectorAngle = (Math.PI / 3)*options.visorLength
   let visorSectorAngle = (sectorAngle * headRadius) / visorRadius
@@ -37,11 +38,11 @@ export default function (part) {
   points.in2Flipped = points.in2.flipX()
   points.in2CFlipped = points.in2C.flipX()
 
-  points.ex1 = points.in1.shift(-90, options.visorWidth)
+  points.ex1 = points.in1.shift(-90, visorWidth)
   points.ex1C = points.ex1.shift(0, 0.5 * points.in2.x)
   points.ex2C = points.in2.shift(
     -90,
-    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-options.visorWidth / 15)) - 1)
+    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-visorWidth / 15)) - 1)
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
