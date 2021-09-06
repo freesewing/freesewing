@@ -12,3 +12,6 @@ Mit dieser Option wird der Stoff an der Rückseite des Halses nach innen gespann
 Technisch gesehen ist dies kein Dart, aber ich wusste nicht, wie man es sonst nennen sollte. Vorschläge sind willkommen.
 
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_centerbackdart_sample.svg "Effekt dieser Option auf das Muster")
