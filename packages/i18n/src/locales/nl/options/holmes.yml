@@ -6,14 +6,14 @@ goreNumber:
   title: Aantal panden
   description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
 visorAngle:
-  title: Visor angle
-  description: Bepaalt de kromming van de bezoeker
+  title: Visor hoek
+  description: Bepaalt de kromming van de visor
 visorLength:
-  title: Bezoeker lengte
-  description: Bepaalt de lengte van de bezoeker
+  title: Visor lengte
+  description: Bepaalt de lengte van de visor
 visorWidth:
   title: Visor breedte
-  description: Bepaalt de breedte van de bezoeker
+  description: Bepaalt de breedte van de visor
 headEase:
   title: Overwijdte hoofd
   description: Bepaalt de hoeveelheid overwijdte voor je hoofd
@@ -21,9 +21,9 @@ earLength:
   title: Oor lengte
   description: Bepaalt de lengte van de oren
 earWidth:
-  title: Oar breedte
+  title: Oor breedte
   description: Bepaalt de breedte van de oren
 buttonhole:
-  title: Buttonhole
+  title: Knoopsgat
   description: Voegt een knoopsgat aan de oren toe
 
