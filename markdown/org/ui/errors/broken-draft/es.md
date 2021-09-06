@@ -6,6 +6,13 @@ title: Algo salió mal
 
 We'd like to gather diagnostics and [create an issue on Github](https://github.com/freesewing/freesewing/issues/new) to investigate what exactly went wrong.
 
-We'll keep your (user)name out of the diagnostics data, but we'd still like your consent prior to gathering this data and putting it on Github.
+Los datos de diagnóstico que recopilamos incluyen:
 
-Si está en el tablero, haga clic en el botón de abajo. If not, you can always [report this manually](https://github.com/freesewing/freesewing/issues/new).
+ - Tu userid
+ - Tu nombre de usuario de Github (sólo si lo configuraste en tu perfil)
+ - Nombre del patrón y versión
+ - El conjunto completo de medidas y opciones utilizadas para crear este patrón
+
+Si consiente publicar estos datos en el informe de fallos, haga clic en el botón de abajo.
+
+Si no, siempre puedes [reportar esto manualmente](https://github.com/freesewing/freesewing/issues/new).
