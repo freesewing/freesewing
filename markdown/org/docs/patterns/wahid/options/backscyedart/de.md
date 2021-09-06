@@ -12,3 +12,6 @@ Angesichts der Tatsache, dass es keine Ärmel gibt, ist ein klaffendes Rüstungs
 Während dieser Dart benutzt wird, um das Muster zu formen, müssen Sie den Dart nicht nähen, da er in die Schulternahtlinie integriert ist.
 
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_backscyedart_sample.svg "Effekt dieser Option auf das Muster")
