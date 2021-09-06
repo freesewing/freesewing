@@ -6,6 +6,13 @@ title: Une erreur s'est produite
 
 Nous aimerions récolter des diagnostics et [créer une Issue sur Github](https://github.com/freesewing/freesewing/issues/new) pour enquêter sur ce qui s'est exactement mal passé.
 
-Nous garderons votre nom (logon) hors des données de diagnostic, mais nous aimerions toujours votre consentement avant de recueillir ces données et ne les mettre sur Github.
+Les données de diagnostic que nous collectons comprennent:
 
-Si vous êtes à bord, cliquez sur le bouton ci-dessous. Sinon, vous pouvez toujours [rapporter cela manuellement](https://github.com/freesewing/freesewing/issues/new).
+ - Votre utilisateur
+ - Votre nom d'utilisateur Github (uniquement si vous l'avez configuré dans votre profil)
+ - Le nom du modèle et la version
+ - L'ensemble complet de mesures et d'options utilisés pour créer ce modèle
+
+Si vous acceptez de publier ces données dans le rapport de plantage, cliquez sur le bouton ci-dessous.
+
+Sinon, vous pouvez toujours [rapporter cela manuellement](https://github.com/freesewing/freesewing/issues/new).
