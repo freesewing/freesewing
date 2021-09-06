@@ -1,7 +1,7 @@
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Longitud extra de manga](sleevelengthbonus.svg)
 
-How much extra length do you want for your sleeves?
+¿Cuánta longitud adicional quieres para tu manga?
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_sleevelengthbonus_sample.svg "Efecto de esta opción en el patrón")
