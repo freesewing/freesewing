@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-dimension",
-  "version": "2.18.0-rc.0",
+  "version": "2.18.0-rc.1",
   "description": "A FreeSewing plugin to add dimensions to your (paperless) pattern",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -36,7 +36,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.18.0-rc.0"
+    "@freesewing/core": "^2.18.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {},

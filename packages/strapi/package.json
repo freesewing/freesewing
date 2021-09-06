@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/strapi",
-  "version": "2.18.0-rc.0",
+  "version": "2.18.0-rc.1",
   "description": "Freesewing's Strapi instance",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://posts.freesewing.org/",
@@ -27,18 +27,18 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "buildit": "strapi build",
+    "build": "strapi build",
     "strapi": "strapi"
   },
   "peerDependencies": {},
   "dependencies": {
     "strapi": "3.6.5",
-    "strapi-admin": "3.6.8",
+    "strapi-admin": "3.6.5",
     "strapi-utils": "3.6.5",
     "strapi-plugin-content-type-builder": "3.6.5",
     "strapi-plugin-content-manager": "3.6.5",
     "strapi-plugin-users-permissions": "3.6.5",
-    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-email": "3.6.5",
     "strapi-plugin-upload": "3.6.5",
     "strapi-plugin-i18n": "3.6.5",
     "strapi-connector-mongoose": "3.6.5"
