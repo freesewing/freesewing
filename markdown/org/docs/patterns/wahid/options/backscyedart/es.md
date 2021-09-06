@@ -14,3 +14,6 @@ Dado que no hay manga, un enorme agujero de brazo es particularmente desconcerta
 Mientras que este dardo se utiliza para dar forma al patrón, no es necesario coser el dardo, ya que está incorporado en la línea de costura de hombro.
 
 </Note>
+
+## Efecto de esta opción en el patrón
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backscyedart_sample.svg "Efecto de esta opción en el patrón")
