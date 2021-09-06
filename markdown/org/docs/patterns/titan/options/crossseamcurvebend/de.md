@@ -12,3 +12,6 @@ und dies wird weniger Stoffpooling am Bum.
 Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (horizontale) Raum für ihre Rückseite zu schaffen.
 
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_crossseamcurvebend_sample.svg "Effekt dieser Option auf das Muster")

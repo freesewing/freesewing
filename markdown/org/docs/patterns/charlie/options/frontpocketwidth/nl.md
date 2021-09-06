@@ -2,5 +2,5 @@
 Bepaalt de breedte van het voorste zakdeel. Met andere woorden, hoe ver het zakdeel zich uitstrekt tot het midden van de broek.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketwidth_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_frontpocketwidth_sample.svg "Effect van deze optie op het patroon")

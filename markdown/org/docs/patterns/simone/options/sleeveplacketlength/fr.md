@@ -1,13 +1,13 @@
-![Sleeve placket length](sleeveplacketlength.svg)
+![Longueur de la patte de manche](sleeveplacketlength.svg)
 
-How long do you want the sleeve placket to be?
+Combien de temps voulez-vous que la patte de manche soit ?
 
 <Note>
 
-The longer your sleeve placket is, the easier it is to get out of your shirt sleeve. 
-It also influences what things will look like when you roll up your sleeves
+Plus votre patte de manche est longue, plus il est facile de sortir de votre manche. 
+Cela influence également ce à quoi les choses ressembleront quand vous roulez vos manches
 
 </Note>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleeveplacketlength_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleeveplacketlength_sample.svg "Effet de cette option sur le motif")

@@ -1,5 +1,5 @@
  - **Oberstoff**
-   - Cut **2 back(s)** with good sides together
+   - **2 rücke(n)** mit guten Seiten zusammen schneiden
    - **2 Front(s)** mit guten Seiten schneiden
    - **1 Taillenband schneiden**
    - **1 Taille rechts schneiden**
@@ -8,7 +8,7 @@
    - **4 verdeckte Tasche(n) schneiden**
    - **8 Bandschleifen(e) schneiden**
  - **Lining**
-   - Cut **2 front lining(s)** with good sides together
+   - **2 Frontlinie(s)** mit guten Seiten zusammenschneiden
    - **1 Taillenband links schneiden**
    - **1 Taillenband rechts schneiden**
    - **1 Fliegenschild schneiden**

@@ -9,3 +9,6 @@ Wie weit soll sich Ihre Weste auf der SchulterNaht von Ihrem Kragen absetzen? Di
 Die Schulternaht einer Weste ist typischerweise enger als Ihr Hemd. Diese Option legt fest, wie eng sie wird (auf der Kragenseite).
 
 </Note>
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_neckinset_sample.svg "Effekt dieser Option auf das Muster")

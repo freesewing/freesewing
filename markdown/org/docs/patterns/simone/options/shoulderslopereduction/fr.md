@@ -1,8 +1,8 @@
 
-![Shoulder slope reduction](./shoulderslopereduction.svg)
+![Réduction de la pente d'épaule](./shoulderslopereduction.svg)
 
-Reduces the shoulder slope to create extra room for shoulder padding.
+Réduit la pente des épaules pour créer de l'aisance si l'on prévoit de rembourrer les épaules.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_shoulderslopereduction_sample.svg "Effet de cette option sur le motif")

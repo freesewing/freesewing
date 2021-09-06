@@ -1,7 +1,7 @@
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Bonus de longueur de manche](sleevelengthbonus.svg)
 
-How much extra length do you want for your sleeves?
+Combien de longueur supplémentaire souhaitez-vous pour vos manches ?
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleevelengthbonus_sample.svg "Effet de cette option sur le motif")

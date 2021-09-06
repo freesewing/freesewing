@@ -6,6 +6,13 @@ title: Etwas ist schiefgelaufen
 
 Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können was schiefgegangen ist.
 
-Dein (Benutzer-)Name ist nicht in den Diagnostikdaten enthalten, aber wir bitten dich trotzdem um deine Einwilligung bevor wir diese Daten sammeln und auf Github hochladen.
+Die von uns erfassten Diagnosedaten beinhalten:
 
-Wenn das für dich in Ordnung ist, klicke auf den untenstehenden Knopf. Falls nicht, kannst du [dies manuell melden](https://github.com/freesewing/freesewing/issues/new).
+ - Ihre Benutzer-ID
+ - Ihr Github Benutzername (nur wenn Sie ihn in Ihrem Profil konfiguriert haben)
+ - Der Name und die Version des Musters
+ - Der vollständige Satz von Messungen und Optionen, mit denen dieses Muster erstellt wird
+
+Wenn Sie einverstanden sind, diese Daten im Absturzbericht zu veröffentlichen, klicken Sie auf die Schaltfläche unten.
+
+Wenn nicht, können Sie dies immer [manuell melden](https://github.com/freesewing/freesewing/issues/new).

@@ -1,4 +1,8 @@
 
 ![Reductie schouderhelling](./shoulderslopereduction.svg)
 
-Reduces the shoulder slope to create extra room for shoulder padding.
+Vermindert de schouderhelling om extra ruimte te creëren voor schoudervulling.
+
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_shoulderslopereduction_sample.svg "Effect van deze optie op het patroon")

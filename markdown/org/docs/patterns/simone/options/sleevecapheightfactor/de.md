@@ -1,3 +1,3 @@
-![The sleevecap height factor option on Brian](./sleevecapheightfactor.svg)
+![Die Sleevecap Höhenfaktor Option auf Brian](./sleevecapheightfactor.svg)
 
-This factor controls the height of the sleevecap.
+Dieser Faktor steuert die Höhe der Ärmel.

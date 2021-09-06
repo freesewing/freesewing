@@ -16,6 +16,6 @@ Nous ne voulons exclure personne et nous pensons que _corps forme =<unk> gender_
 ##### Comment cela s'applique aux patrons
 N'importe quel utilisateur peut tracer n'importe quel patron sur notre site, à condition qu'il fournisse les mensurations requises. Which for some patterns includes measurements that are only relevant if you have breasts.
 
-##### How it applies to binding
-If you are binding, use the **without breasts** patterns, and use the cirumference of your binded chest as [chest measurement](/docs/measurements/chest/)
+##### Comment cela s'applique à la contrainte
+Si vous liez, utilisez le **sans les patrons** de seins, et utilisez la cirumference de votre coffre lié comme mesure de [coffre](/docs/measurements/chest/)
 

@@ -16,3 +16,6 @@ Laat deze knoop weg als je een eerder casual uitzicht wil.
 Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt geen andere knoop.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_extratopbutton_sample.svg "Effect van deze optie op het patroon")

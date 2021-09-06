@@ -6,5 +6,5 @@ Si vous avez l'impression qu'un collier étouffe, vous pouvez vous donner un peu
 
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarease_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarease_sample.svg "Effet de cette option sur le motif")

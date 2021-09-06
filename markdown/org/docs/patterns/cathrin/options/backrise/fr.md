@@ -9,5 +9,5 @@ Si vous augmentez le dos, votre corset se lèvera vers le haut à l'arrière.
 > Etant donné qu'il s'agit d'un corset sous-buste, l'ascension arrière est un choix de style et n'affectera pas l'ajustement
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_backrise_sample.svg "Effet de cette option sur le motif")

@@ -1,29 +1,29 @@
 ---
 lengthRatio:
   title: Ratio de longitud
-  description: Controls the height of the hat and length of the ears
+  description: Controla la altura del sombrero y la longitud de las orejas
 goreNumber:
   title: Número de paneles
   description: El número de paneles usado para construir la semiesfera
 visorAngle:
   title: Visor angle
-  description: Controls the curvature of the visor
+  description: Controla la curvatura del visor
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Longitud del Visor
+  description: Controla la longitud del visor
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Ancho del Visor
+  description: Controla el ancho del visor
 headEase:
-  title: Head ease
-  description: Controls the amount of ease for your head
+  title: Holgura de cabeza
+  description: Controla la cantidad de facilidad para tu cabeza
 earLength:
-  title: Ear length
-  description: Controls the length of the ears
+  title: Longitud del oído
+  description: Controla la longitud de las orejas
 earWidth:
-  title: Ear width
-  description: Controls the width of the ears
+  title: Ancho del oído
+  description: Controla el ancho de las orejas
 buttonhole:
   title: Buttonhole
-  description: Adds a buttonhole to the ears
+  description: Añade un orificio a las orejas
 

@@ -16,6 +16,6 @@ No queremos excluir a nadie y pensamos que _cuerpo forma =género_. That's why w
 ##### Cómo se aplica a los patrones
 Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
 
-##### How it applies to binding
-If you are binding, use the **without breasts** patterns, and use the cirumference of your binded chest as [chest measurement](/docs/measurements/chest/)
+##### Cómo se aplica a la vinculación
+Si estás enlazándose, usa **sin senos** patrones, y usa la cirumferencia de tu cofre enlazado como [medición del cofre](/docs/measurements/chest/)
 

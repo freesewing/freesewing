@@ -1,6 +1,6 @@
-![The upward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread1.svg)
+![Die Aufwärtsverteilung im vierten Viertel der Ärmel](./sleevecapq4spread1.svg)
 
-This option controls the upward spread in the fourth quadrant of the sleevecap.
+Diese Option steuert die Aufwärtsverteilung im vierten Quadranten der Ärmel.
 
 <Tip>
 
@@ -9,5 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleevecapq4spread1_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_sleevecapq4spread1_sample.svg "Effekt dieser Option auf das Muster")

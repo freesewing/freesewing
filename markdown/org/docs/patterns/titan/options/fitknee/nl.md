@@ -10,3 +10,6 @@ Sinds FreeSewing v2.0 hebben we deze samengevoegd tot een enkel patroon en deze 
 laat je toe om de breedte van de been te veranderen.
 
 </Note>
+
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_fitknee_sample.svg "Effect van deze optie op het patroon")

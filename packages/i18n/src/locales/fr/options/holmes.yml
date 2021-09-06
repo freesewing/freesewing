@@ -1,29 +1,29 @@
 ---
 lengthRatio:
   title: Profondeur de tête
-  description: Controls the height of the hat and length of the ears
+  description: Contrôle la hauteur du chapeau et la longueur des oreilles
 goreNumber:
   title: Nombre de pans
   description: Le nombre de pans utilisés pour construire la semi-sphère
 visorAngle:
   title: Visor angle
-  description: Controls the curvature of the visor
+  description: Contrôle la courbure de la visière
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Longueur de la visière
+  description: Contrôle la longueur de la visière
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Largeur de la vue
+  description: Contrôle la largeur de la visière
 headEase:
-  title: Head ease
-  description: Controls the amount of ease for your head
+  title: Aisance de tour de tête
+  description: Contrôle la quantité d'aisance pour votre tête
 earLength:
-  title: Ear length
-  description: Controls the length of the ears
+  title: Longueur de l'oreille
+  description: Contrôle la longueur des oreilles
 earWidth:
-  title: Ear width
-  description: Controls the width of the ears
+  title: Largeur de l'oreille
+  description: Contrôle la largeur des oreilles
 buttonhole:
   title: Buttonhole
-  description: Adds a buttonhole to the ears
+  description: Ajoute un trou de bouton aux oreilles
 
