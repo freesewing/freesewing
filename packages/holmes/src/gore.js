@@ -1,11 +1,21 @@
 export default function (part) {
-  let { Point, points, Path, paths, measurements, options, macro, complete, sa, paperless } =
-    part.shorthand()
+  let {
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    options,
+    macro,
+    complete,
+    sa,
+    paperless,
+  } = part.shorthand()
 
   // Design pattern here
 
   //Radius of the head
-  let headCircumference = measurements.head + options.headEase
+  let headCircumference = measurements.head + (measurements.head*options.headEase)
   let headRadius = headCircumference / 2 / Math.PI
 
   points.p0 = new Point(0, 0)
@@ -37,19 +47,19 @@ export default function (part) {
         .curve(points.gore_Cp1, points.gore_Cp2, points.gore_p2)
         .offset(sa)
         .setRender(false)
-      points.sa1 = new Point(points.gore_p3.x - sa * 2, points.gore_p3.y - sa)
-      paths.saBase = new Path()
-        .move(points.gore_p3)
+	  points.sa1 = new Point(points.gore_p3.x - (sa*2), points.gore_p3.y - sa)
+	  paths.saBase = new Path()	
+		.move(points.gore_p3)
         .line(points.p0)
-        .offset(sa * 2)
-        .setRender(false)
+		.offset(sa*2)
+		.setRender(false)
       paths.sa = new Path()
         .move(points.gore_p1)
         .line(points.gore_p1.shift(0, sa))
         .line(paths.saCurve.start())
         .join(paths.saCurve)
-        .line(points.sa1)
-        .join(paths.saBase)
+		.line(points.sa1)
+		.join(paths.saBase)
         .line(points.p0)
         .attr('class', 'fabric sa')
     }
