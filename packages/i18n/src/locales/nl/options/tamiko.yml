@@ -3,8 +3,8 @@ flare:
   title: Waaier
   description: De mate waarin het kledingstuk van je borst naar beneden uitwaaierd
 shoulderseamLength:
-  title: Shoulder seam length
-  description: De lengte van de schouderzoom, als een factor van schouder tot schouder maat
+  title: Lengte schoudernaad
+  description: De lengte van de schoudernaad, als een factor van je schouder tot schouder maat
 shoulderSlope:
-  title: Schoulder helling
-  description: Controls the angle of the shoulder seams
+  title: Schouderhelling
+  description: Bepaalt de hoek van de schoudernaden

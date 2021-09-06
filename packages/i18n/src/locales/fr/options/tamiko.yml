@@ -3,8 +3,8 @@ flare:
   title: Évasement
   description: La quantité par laquelle le vêtement s'évase de votre poitrine vers le bas
 shoulderseamLength:
-  title: Shoulder seam length
+  title: Longueur de couture d'épaule
   description: La longueur de la couture d'épaule, en tant que facteur de la mesure d'épaule à épaule
 shoulderSlope:
-  title: Pente des épaules
-  description: Controls the angle of the shoulder seams
+  title: Pente d'épaule
+  description: Contrôle l'angle des coutures d'épaule

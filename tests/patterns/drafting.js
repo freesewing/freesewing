@@ -1,3 +1,11 @@
+// Some patterns are different
+const isGarment = design => ([
+  'rendertest',
+  'tutorial',
+  'examples',
+  'legend',
+].indexOf(design) === -1)
+
 /*
  * This runs unit tests for pattern drafting
  * It expects the following:
@@ -11,11 +19,14 @@
  */
 const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
   // Helper method to try/catch pattern drafting
-  const doesItDraft = (pattern) => {
+  const doesItDraft = (pattern, log=false) => {
     try {
       pattern.draft()
-      return true
+      if (pattern.events.error.length < 1) return true
+      if (log) console.log(pattern.events.error)
+      return false
     } catch (err) {
+      if (log) console.log(err)
       return false
     }
   }
@@ -29,7 +40,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
   /*
    * Draft pattern for different models
    */
-  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1) {
+  if (isGarment(design)) {
     it('Draft for different models:', () => true)
 
     for (let size in ourModels) {
@@ -45,14 +56,14 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
     }
   }
 
+
   /*
    * Draft parts individually
    */
   it('Draft parts individually:', () => true)
-  let parts
-  if (['rendertest', 'tutorial', 'examples', 'legend'].indexOf(design) === -1)
-    parts = patterns.parts[design]
-  else parts = Pattern.config.parts
+  let parts = isGarment(design)
+    ? patterns.parts[design]
+    : Pattern.config.parts
   for (let name of parts) {
     it(`  - ${name} should draft on its own`, () => {
       expect(
@@ -66,6 +77,32 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
         )
       ).to.equal(true)
     })
+  }
+
+  /*
+   * Draft a paperless non-detailed pattern
+   */
+  it('Draft paperless non-detailed pattern:', () => true)
+  if (isGarment(design)) {
+    for (const sa of [0,10]) {
+      it(`  - Drafting paperless non-detailed pattern for size-40 (${breasts ? 'with' : 'no'} breasts) sa: ${sa}`, () => {
+        expect(
+          doesItDraft(
+            new Pattern({
+              measurements: ourModels.size40,
+              complete: false,
+              paperless: true,
+              sa,
+              settings: {
+              complete: false,
+              paperless: true,
+              sa,
+              }
+            })
+          )
+        ).to.equal(true)
+      })
+    }
   }
 }
 

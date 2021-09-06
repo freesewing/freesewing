@@ -1,18 +1,8 @@
 import { addDartToCurve, dartCalc } from './utils'
 
 function BuildMainShape(part, frontPart) {
-  let {
-    sa,
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { sa, options, measurements, Point, Path, points, paths, store, paperless, macro } =
+    part.shorthand()
 
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
 

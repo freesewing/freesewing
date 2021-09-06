@@ -1,18 +1,8 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
   let width = options.buttonPlacketWidth
   points.placketTopIn = utils.lineIntersectsCurve(
@@ -103,15 +93,17 @@ export default (part) => {
       to: points.placketTopEdge,
       y: points.s3CollarSplit.y - 45 - sa,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x + 15 + sa,
-      })
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x + 15 + sa,
+        })
+      }
     }
     macro('vd', {
       from: points.placketBottomEdge,

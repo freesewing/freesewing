@@ -14,7 +14,7 @@ askForHelp: Pide ayuda
 automatic: Automático
 averagePeopleDoNotExist: "La gente promedio no existe"
 awesome: Genial
-back: atras
+back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
 blog: Blog
@@ -25,13 +25,13 @@ butThatCouldChange: Pero eso podría cambiar
 cancel: Cancelar
 changePerson: Cambiar persona
 changePattern: Cambiar patrón
-chatOnDiscord: Chat on Discord
+chatOnDiscord: Chatear en Discord
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chest: Pecho
 chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
 chooseASize: Elige un tamaño
 chooseAPerson: Elige una persona
-chooseADesign: Choose a design
+chooseADesign: Elija un diseño
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
@@ -40,7 +40,7 @@ configureLayout: Configurar diseño
 configureYourDraft: Configurar su boceto
 contactUs: Contactáctanos
 contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
-contents: Contenidos
+contents: Contenido
 continue: Continuar
 copiedToClipboard: Copiado al portapapeles
 copy: Dupdo
@@ -49,8 +49,8 @@ countModelsLackingForPattern: 'Tiene {count} modelos que carecen de las medidas 
 created: Creado
 custom: personalizado
 customSeamAllowance: Margen de costura personalizada
-lightMode: Light mode
-data: Data
+lightMode: Modo claro
+data: Datos
 darkMode: Modo oscuro
 default: Defecto
 demo: Demostración
@@ -70,7 +70,7 @@ draftPattern: 'Trazar {pattern} '
 draftPatternForModel: 'Trazar {pattern} para {model} '
 drafts: Bocetos
 draftSettings: Ajustes del boceto
-dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
+dragAndDropImageHere: Arrastra y suelta una imagen aquí, o selecciona una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
 emailWorksToo: "Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará"
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
@@ -97,11 +97,11 @@ i18n: Internacionalización
 imperialUnits: Unidades imperiales (pulgadas)
 instagram: Instagram
 invalidTldMessage: '.{tld} no es un TLD válido'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
+joinTheChatMsg: Tenemos una comunidad en Discord con gente amistosa a la que puedes chatear.
 justAMoment: Un momento
 layout: Diseño
 logIn: Iniciar sesión
-loginWithProvider: 'Log in with {provider}'
+loginWithProvider: 'Iniciar sesión con {provider}'
 logOut: cerrar sesión
 manual: A mano
 markdownHelp: Markdown ayuda
@@ -130,18 +130,18 @@ orPayPerYear: O pagar por año
 other: Otro
 otherThing: 'Otras {thing}'
 ourPatrons: Nuestros mecenas
-ourRevenuePledge: Our revenue pledge
+ourRevenuePledge: Nuestra promesa de ingresos
 patron-2: Chico de la pólvora
 patron-4: Primer oficial
 patron-8: Capitán
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
-patron: Mecenas
-patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
+patronHelp: Si tiene alguna pregunta, o desea hacer cambios en su estado de Patrón, por favor contáctenos
+patron: Patrocinador
+patronPitch: Si crees que lo que hacemos vale la pena, y si puedes ahorrar algunas monedas cada mes sin dificultades, por favor apoya nuestro trabajo
 patronsKeepUsAfloat: El apoyo financiero de nuestros mecenas posibilita la liberación gratuita. Mantienen este barco a flote.
 patternInstructions: Intrucciones de los patrones
 patternOptions: Opciones del patrón
-pattern: Patrón
-sewingPatterns: Sewing patterns
+pattern: patrón
+sewingPatterns: Patrones de costura
 patterns: Patrones
 pendingConfirmation: Confirmación pendiente
 perMonth: por mes
@@ -156,13 +156,13 @@ remove: Eliminar
 removeThing: Eliminar {thing}
 reportThisOnGithub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
-resendActivationEmailMessage: "Fill in the E-mail address you signed up with, and we'll send you a new confirmation message."
+resendActivationEmailMessage: "Complete la dirección de correo electrónico con la que se registró y le enviaremos un nuevo mensaje de confirmación."
 resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
 restoreDefaults: Restaurar valores por defecto
-restoreDesignDefaults: Restore design defaults
-restorePatternDefaults: Restore pattern defaults
+restoreDesignDefaults: Restaurar el diseño por defecto
+restorePatternDefaults: Restaurar patrones por defecto
 saveDraftToYourAccount: Guarda el boceto en tu cuenta
 save: Guardar
 searchLanguageMsg: Cada idioma tiene su propio índice de búsqueda. Dado que no todo nuestro contenido está traducido, puede encontrar más resultados en la búsqueda en inglés.
@@ -175,11 +175,11 @@ settings: Ajustes
 sewingHelp: Ayuda de costura
 sewingPatternsForNonAveragePeople: Patrones de costura para personas no promedio
 share: Compartir
-shareFreesewing: Share FreeSewing
+shareFreesewing: Compartir FreeSewing
 showcase: Escaparate
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signUp: Registrarse
-signupWithProvider: 'Sign up with {provider}'
+signupWithProvider: 'Regístrate con {provider}'
 sortByField: Ordenar por {field}
 standardSeamAllowance: Margen de costura estándar
 startOver: Comenzar de nuevo
@@ -195,11 +195,11 @@ thisFieldSupportsMarkdown: Este campo admite Markdown
 thisPageRequiresAuthentication: esta página requiere autenticación
 troubleLoggingIn: '¿Problemas para acceder?'
 twitter: Twitter
-txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
+txt-footer: Freesewing está hecho por una comunidad de colaboradores<br />con el apoyo financiero de nuestros Patrones
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
 txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
-txt-tiers: 'FreeSewing is fuelled by a voluntary subscription model'
+txt-tiers: 'FreeSewing es alimentado por un modelo de suscripción voluntario'
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 updated: Actualizado
 update: Actualizar
@@ -235,97 +235,97 @@ examples: Ejemplos
 by: por
 years: Años
 pricing: Precios
-createFirst: Start by creating a new pattern
-noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
-modelFirst: Start by adding measurements
-noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
-noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
-noUserBrowsingTitle: "You can't just browse all users"
-noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-usePatternMeasurements: 'Use the measurements of the original pattern'
-createReplica: Create a replica
-showDetails: Show details
-hideDetails: Hide details
-clickBelowToLogOut: Click below to log out
-compare: Compare
-savePattern: Save pattern
-recreate: Recreate
-recreateThing: Recreate {thing}
-recreateThingForPerson: Recreate {thing} for {person}
-seeYouLaterUser: See you later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
-instructions: Instructions
-hide: Hide
-show: Show
-oneMomentPlease: One moment please
-loadingMagic: We are loading the magic
-estimate: Estimate
+createFirst: Empezar por crear un nuevo patrón
+noPattern: No tienes ningún patrón (todavía). Crea un nuevo patrón, luego guárdalo en tu cuenta.
+modelFirst: Empezar añadiendo mediciones
+noModel: No has añadido ninguna medición (aún). La Coser libre puede generar patrones de costura hechos a medida. Pero para eso necesitamos mediciones.
+noModel2: Así que lo primero que debes hacer es añadir una persona y agitar tu cinta de medición.
+noUserBrowsingTitle: "No puedes navegar por todos los usuarios"
+noUserBrowsingText: "Tenemos miles de ellos. ¿Seguro que tienes cosas mejores que hacer?"
+usePatternMeasurements: 'Usar las mediciones del patrón original'
+createReplica: Crear una réplica
+showDetails: Mostrar detalles
+hideDetails: Ocultar detalles
+clickBelowToLogOut: Haga clic abajo para cerrar sesión
+compare: Comparar
+savePattern: Guardar patrón
+recreate: Recrear
+recreateThing: Recrear {thing}
+recreateThingForPerson: Recrear {thing} para {person}
+seeYouLaterUser: Nos vemos después {user}
+exportForPrinting: Exportar para impresión
+exportForEditing: Exportar para editar
+startWithNeckTitle: Comenzar con la circunstancia del cuello
+startWithNeckDescription: Basándonos en la circunstancia del cuello, podemos ayudarle a detectar errores en sus mediciones.
+whatYouNeed: Lo que necesitas
+fabricOptions: Opciones de tela
+cutting: Corte
+instructions: Instrucciones
+hide: Ocultar
+show: Mostrar
+oneMomentPlease: Un momento por favor
+loadingMagic: Estamos cargando la magia
+estimate: Estimar
 actual: Actual
-weEstimateYM2B: 'We estimate your {measurement} to be around:'
-exportAsData: Export as data
-availablePatterns: Available patterns
-browseCollection: Browse collection
-browseYourPatterns: Browse your patterns
-yourPatterns: Your patterns
-loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
-docsForContributors: Documentation for contributors
-patternDocs: Pattern documentation
-socialMedia: Social media
-create: Create
-browse: Browse
+weEstimateYM2B: 'Estimamos que tu {measurement} esté cerrada:'
+exportAsData: Exportar como datos
+availablePatterns: Patrones disponibles
+browseCollection: Navegar colección
+browseYourPatterns: Navega tus patrones
+yourPatterns: Tus patrones
+loginNeededToSavePatternsMsg: Necesitas iniciar sesión para guardar tus patrones
+docsForContributors: Documentación para colaboradores
+patternDocs: Documentación del patrón
+socialMedia: Medios sociales
+create: Crear
+browse: Navegar
 patrons: Patrons
-scrollToTop: Scroll to top
+scrollToTop: Desplazar hasta arriba
 sitemap: Sitemap
-contributeToThing: Contribute to {thing}
-mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
-fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
-supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
-madeToMeasure: Made-to-measure
-sizes: Sizes
-standardSizes: Standard sizes
-accountRequired: This feature requires a FreeSewing account
-size: Size
-switchToThing: 'Switch to {thing}'
-saveThing: 'Save {thing}'
-shareThing: 'Share {thing}'
-link: Link
-cloneThing: 'Clone {thing}'
-cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
-furtherReading: Further reading
-saveAsNewPattern: Save As New Pattern
-saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
-exportPattern: Export pattern
-printPattern: Print pattern
-exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
-editThing: 'Edit {thing}'
-editPattern-txt: Load this pattern in the pattern editor
-featureRequiresAccount: This feature requires a FreeSewing account
+contributeToThing: Contribuir a {thing}
+mtmIsOurJam: patrones de costura hechos a medida es en lo que nos especializamos en
+fitYouDeserve: Te estás perdiendo si vas a buscar tamaños estandarizados.<br />Así que regístrate hoy y consigue el ajuste que te mereces.
+supportNag: <b>Gratis</b>La costura es <b>gratuita</b>, pero agradeceríamos que consideraras <a href='/patrons/join/'>apoyarnos</a>.
+madeToMeasure: a medida
+sizes: Tamaños
+standardSizes: Tamaños estándar
+accountRequired: Esta característica requiere una cuenta de FreeSewing
+size: Tamaño
+switchToThing: 'Cambiar a {thing}'
+saveThing: 'Guardar {thing}'
+shareThing: 'Compartir {thing}'
+link: Enlace
+cloneThing: 'Clonar {thing}'
+cloneDescription: Recrear una copia exacta, utilizando las mediciones del patrón original.
+furtherReading: Lectura adicional
+saveAsNewPattern: Guardar como nuevo patrón
+saveAsNewPattern-txt: Guardar (una copia de) este patrón en tu cuenta de FreeSewing
+exportPattern: Exportar patrón
+printPattern: Patrón de impresión
+exportPattern-txt: Exporte un PDF adecuado para su impresora, o descargue este patrón en una variedad de formatos
+editThing: 'Editar {thing}'
+editPattern-txt: Cargar este patrón en el editor de patrones
+featureRequiresAccount: Esta característica requiere una cuenta de FreeSewing
 zoom: Zoom
-zoomIn: Zoom in
-zoomOut: Zoom out
-zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
-savePattern-txt: Store this pattern in your FreeSewing account
-comparePattern: Compare pattern
-showPattern: Show pattern
-comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
-recreatePattern: Recreate pattern
-recreatePattern-txt: Choose a different person, then recreate this pattern for that person
-editOwnPatternsOnly: You can only edit your own patterns
-editOwnPatternsOnly-txt: You cannot edit this pattern because it isn't yours. But you can use it as a baseline to create your own pattern.
-updateNotes-txt: Update the notes you keep along your pattern
-franceWarning: Beware users in France
-franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
-emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
+zoomIn: Acercarse en
+zoomOut: Apagar
+zoom-txt: Cambia entre restringir la altura o el ancho del patrón para caber en la pantalla
+savePattern-txt: Guarda este patrón en tu cuenta de FreeSewing
+comparePattern: Patrón de comparación
+showPattern: Mostrar patrón
+comparePattern-txt: Compara tu patrón a un rango de tamaños estándar para revisar posibles problemas de ajuste
+recreatePattern: Recrear patrón
+recreatePattern-txt: Elige una persona diferente, luego vuelve a crear este patrón para esa persona
+editOwnPatternsOnly: Solo puedes editar tus propios patrones
+editOwnPatternsOnly-txt: No puedes editar este patrón porque no es tuyo, pero puedes usarlo como línea de referencia para crear tu propio patrón.
+updateNotes-txt: Actualiza las notas que guardas a lo largo de tu patrón
+franceWarning: Tenga cuidado con los usuarios en Francia
+franceWarning-txt: Se sabe que varios proveedores franceses de correo electrónico —incluidos, free.fr, laposte.net, orange.fr, y sfr.fr — descartan de forma rutinaria nuestros correos electrónicos.
+emailNotReceived: Si no recibes el correo electrónico de activación, por favor contacta para que podamos ayudarte.
 error: Error
 info: Información
-warning: Warning
+warning: Advertencia
 debug: Debug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
-slogan-stay: Stay for the community
+unsubscribe: Darse de baja
+slogan-come: Ven a los patrones de costura
+slogan-stay: Permanecer para la comunidad

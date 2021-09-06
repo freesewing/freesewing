@@ -6,10 +6,10 @@ coverlock:
   term: Coverlock
   description: "Siehe <a href='/docs/sewing/coverlock/'>Coverlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 cutting:
-  term: Zuschnitt
+  term: zuschnitt
   description: "Siehe <a href='/docs/sewing/cutting/'>Zuschnitt</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 darts:
-  term: Abnäher
+  term: abnäher
   description: "<a href='/docs/sewing/darts/'>Abnäher</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 doubleWeltPockets:
   term: Doppelpaspeltaschen
@@ -18,7 +18,7 @@ ease:
   term: Zugabe
   description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
-  term: Fadenlauf
+  term: fadenlauf
   description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
@@ -45,7 +45,7 @@ rayon:
   term: Rayon
   description: "Siehe <a href='/docs/sewing/rayon/'>Rayon</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 sa:
-  term: Nahtzugabe
+  term: nahtzugabe
   description: "Siehe <a href='/docs/sewing/seam-allowance/'>Nahtzugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 serger:
   term: Overlock
@@ -57,22 +57,22 @@ trimming:
   term: Zurückschneiden
   description: "Siehe <a href='/docs/sewing/trimming/'>Zurückschneiden</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 twinNeedle:
-  term: Zwillingsnadel
+  term: zwillingsnadel
   description: "Siehe <a href='/docs/sewing/twin-neelde/'>Zwillingsnadel</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 zigZag:
   term: Zickzackstich
   description: "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzackstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 freesewing:
-  term: FreeSewing
+  term: freesewing
   description: '<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß'
 patternOptions:
-  term: Schnittmusteroptionen
+  term: schnittmusteroptionen
   description: 'Die <b>Schnittmusteroptionen</b> erlauben es dir, das Design des Schnittmusters anzupassen'
 draftSettings:
-  term: Entwurfseinstellungen
+  term: entwurfseinstellungen
   description: 'Mit den <b>Entwurfseinstellungen</b> legst du fest, wie ein Schnittmuster erzeugt wird'
 patrons:
-  term: Förderer
+  term: förderer
   description: 'Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.'
 msf:
   term: MSF

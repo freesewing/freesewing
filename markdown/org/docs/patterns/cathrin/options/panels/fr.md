@@ -1,0 +1,14 @@
+![L'option des panneaux sur Cathrin](./panels.svg)
+
+Cette option détermine combien de panneaux seront utilisés pour composer le corset. Vous avez le choix entre :
+
+ - 11 pièces
+ - 13 pièces
+
+Plus de panneaux est un peu plus de travaux, mais permet également de rééquilibrer la différence entre la poitrine/taille/poil sur plus de fléchettes, qui pourraient donner de meilleurs résultats.
+
+> Plus de courbes = plus de panneaux
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_panels_sample.svg "Effect of this option on the pattern")

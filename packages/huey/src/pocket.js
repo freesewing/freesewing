@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    macro,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa,
-    options,
-  } = part.shorthand()
+  let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa, options } =
+    part.shorthand()
 
   if (!options.pocket) return part
 
@@ -39,10 +29,9 @@ export default function (part) {
       nr: 4,
       title: 'pocket',
     })
-    macro('cutonfold', {
-      from: points.pocketCfTop,
-      to: points.cfHem,
-      grainline: true,
+    macro('grainline', {
+      from: points.pocketCfTop.shift(-45, 10),
+      to: points.cfHem.shift(45, 10),
     })
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

@@ -348,14 +348,20 @@ function pathOffset(path, distance, raise) {
           .withRaise(path.raise)
           .move(current)
           .curve(op.cp1, op.cp2, op.to)
-          .shiftAlong(2)
+        cp1 = cp1.shiftAlong(cp1.length() > 2
+          ? 2
+          : cp1.length()/10
+        )
       } else cp1 = op.cp1
       if (op.cp2.sitsRoughlyOn(op.to)) {
         cp2 = new Path(path.debug)
           .withRaise(path.raise)
           .move(op.to)
           .curve(op.cp2, op.cp1, current)
-          .shiftAlong(2)
+        cp2 = cp2.shiftAlong(cp2.length() > 2
+          ? 2
+          : cp2.length()/10
+        )
       } else cp2 = op.cp2
       let b = new Bezier(
         { x: current.x, y: current.y },
@@ -429,7 +435,7 @@ Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
     let op = this.ops[i]
     if (op.type === 'line') {
       let thisLen = op.to.dist(current)
-      if (Math.abs((len + thisLen) - distance) < 0.1) return op.to
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
       if (len + thisLen > distance) return current.shiftTowards(op.to, distance - len)
       len += thisLen
     } else if (op.type === 'curve') {
@@ -440,8 +446,9 @@ Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
         { x: op.to.x, y: op.to.y }
       )
       let thisLen = bezier.length()
-      if (Math.abs((len + thisLen) - distance) < 0.1) return op.to
-      if (len + thisLen > distance) return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
+      if (len + thisLen > distance)
+        return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
       len += thisLen
     }
     current = op.to

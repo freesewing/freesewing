@@ -6,32 +6,32 @@ armholeDepthFactor:
   title: Hauteur de l'emmanchure
   description: Contrôle la hauteur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde/basse.
 backNeckCutout:
-  title: Arrondi de l'encolure au dos
+  title: Arrondi de l'encolure dos
   description: Quelle est la profondeur de l'encolure dans le dos
 bicepsEase:
   title: Aisance au niveau des biceps
   description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
 collarEase:
-  title: Aisance du cou
+  title: Aisance du col
   description: L'ampleur d'aisance au niveau du cou.
 chestEase:
   title: Aisance de poitrine
-  description: L'ampleur d'aisance au niveau de votre poitrine.
+  description: La quantité d'aisance à votre poitrine.
 cuffEase:
   title: Aisance de poignet
   description: L'ampleur d'aisance à votre poignet.
 frontArmholeDeeper:
-  title: Supplément de découpe sur l'emmanchure avant
+  title: Découpe supplémentaire sur l'emmanchure avant
   description: Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos.
 lengthBonus:
   title: Supplément de longueur
   description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  title: 'Changement de couture des épaules: côté col'
+  description: Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le côté. La diminuer la déplace vers l'arrière.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  title: 'Changement de couture des épaules: côté des bras'
+  description: Augmente cette option pour déplacer la couture de l'épaule vers l'avant sur le côté de l'armure. Diminuer la glisse vers l'arrière.
 shoulderEase:
   title: Aisance des épaules
   description: La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires.

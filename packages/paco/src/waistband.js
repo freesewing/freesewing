@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { utils, store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+    part.shorthand()
 
   points.topLeft = new Point(0, 0)
   points.midLeft = new Point(0, options.waistbandWidth)

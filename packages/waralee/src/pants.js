@@ -1,15 +1,6 @@
 export default function (part) {
-  let {
-    options,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+    part.shorthand()
 
   paths.waistFoldBack = paths.waistBack
     .offset(-1 * options.waistBand)

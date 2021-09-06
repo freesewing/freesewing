@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sandy",
-  "version": "2.17.4",
+  "version": "2.18.0-rc.0",
   "description": "A FreeSewing pattern for a circle skirt",
   "author": "AlfaLyr (https://github.com/alfalyr)",
   "homepage": "https://freesewing.org/",
@@ -8,6 +8,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
   },
   "keywords": [
     "freesewing",
@@ -34,32 +38,27 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.17.4",
-    "@freesewing/plugin-bundle": "^2.17.4"
+    "@freesewing/core": "^2.18.0-rc.0",
+    "@freesewing/plugin-bundle": "^2.18.0-rc.0"
   },
   "dependencies": {},
   "devDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.27.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^1.1.0",
-    "@freesewing/components": "^2.17.4",
-    "@freesewing/css-theme": "^2.17.4",
-    "@freesewing/i18n": "^2.17.4",
-    "@freesewing/mui-theme": "^2.17.4",
-    "@freesewing/plugin-bust": "^2.17.4",
-    "@freesewing/plugin-buttons": "^2.17.4",
-    "@freesewing/plugin-flip": "^2.17.4",
-    "@freesewing/utils": "^2.17.4",
+    "@freesewing/components": "^2.18.0-rc.0",
+    "@freesewing/css-theme": "^2.18.0-rc.0",
+    "@freesewing/i18n": "^2.18.0-rc.0",
+    "@freesewing/mui-theme": "^2.18.0-rc.0",
+    "@freesewing/plugin-bust": "^2.18.0-rc.0",
+    "@freesewing/plugin-buttons": "^2.18.0-rc.0",
+    "@freesewing/plugin-flip": "^2.18.0-rc.0",
+    "@freesewing/utils": "^2.18.0-rc.0",
     "react-scripts": "^4.0.3",
     "webpack": "^5.37.0",
     "rollup": "^2.50.6",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -69,7 +68,7 @@
     "axios": "0.21.1",
     "react-intl": "^5.17.6",
     "prop-types": "^15.7.2",
-    "mocha": "^8.1.0",
+    "mocha": "^9.1.1",
     "chai": "^4.2.0",
     "chai-string": "^1.5.0",
     "@babel/register": "^7.10.5"
@@ -81,7 +80,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

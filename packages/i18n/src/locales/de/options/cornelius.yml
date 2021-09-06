@@ -3,24 +3,24 @@ fullness:
   title: Fülle
   description: Steuert die Fülle der Hosen
 waistbandBelowWaist:
-  title: Lower waistband
-  description: Percentage to move the waistband below the actual waist
+  title: Unterer Taillenband
+  description: Prozentsatz um die Taille unter die aktuelle Taille zu bewegen
 waistReduction:
-  title: Waist reduction
-  description: Percentage to reduce the waistband
+  title: Taillenreduzierung
+  description: Prozentsatz um die Taille zu reduzieren
 cuffWidth:
   title: Cuff width
-  description: Width of the leg cuff
+  description: Breite der Beinschicht
 cuffStyle:
-  title: Cuff style
-  description: Style of the leg cuff
+  title: Manschettenstil
+  description: Stil der Beinmanschette
 bandBelowKnee:
-  title: Cuff below knee
-  description: Controls the cuff distance from the knee
+  title: Kuff unter dem Knie
+  description: Steuert die Manschettendistanz vom Knie
 kneeToBelow:
-  title: Cuff length
-  description: Controls the tightness of the cuff as compared to the knee
+  title: Manschettenlänge
+  description: Steuert die Dichtheit der Manschette im Vergleich zum Knie
 ventLength:
-  title: Vent length
-  description: Controls the length of the vent between knee and cuff
+  title: Ventillänge
+  description: Steuert die Länge des Schlot zwischen Knie und Manschette
 

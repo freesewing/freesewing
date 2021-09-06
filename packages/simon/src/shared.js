@@ -141,12 +141,14 @@ export const decorateFrenchCuff = (part) => {
 }
 
 export const paperlessBarrelCuff = (part) => {
-  let { sa, macro, points, options } = part.shorthand()
-  macro('hd', {
-    from: points.buttonhole1,
-    to: points.button1,
-    y: points.bottomLeft.y + 15 + sa,
-  })
+  let { sa, macro, points, options, complete } = part.shorthand()
+  if (complete) {
+    macro('hd', {
+      from: points.buttonhole1,
+      to: points.button1,
+      y: points.bottomLeft.y + 15 + sa,
+    })
+  }
   macro('hd', {
     from: points.bottomLeft,
     to: points.bottomRight,
@@ -157,14 +159,14 @@ export const paperlessBarrelCuff = (part) => {
     to: points.topLeft.shift(0, 40),
     x: points.bottomLeft.x - 15 - sa,
   })
-  if (options.barrelCuffNarrowButton) {
+  if (complete && options.barrelCuffNarrowButton) {
     macro('hd', {
       from: points.narrowButton1,
       to: points.button1,
       y: points.topRight.y - 15 - sa,
     })
   }
-  if (options.cuffButtonRows === 2) {
+  if (complete && options.cuffButtonRows === 2) {
     macro('vd', {
       from: points.button2,
       to: points.button1,
@@ -176,21 +178,23 @@ export const paperlessBarrelCuff = (part) => {
 }
 
 export const paperlessFrenchCuff = (part) => {
-  let { sa, macro, points } = part.shorthand()
-  macro('hd', {
-    from: points.button4,
-    to: points.button2,
-    y: points.bottomLeft.y + 15 + sa,
-  })
+  let { sa, macro, points, complete } = part.shorthand()
+  if (complete) {
+    macro('hd', {
+      from: points.button4,
+      to: points.button2,
+      y: points.bottomLeft.y + 15 + sa,
+    })
+    macro('vd', {
+      from: points.button2,
+      to: points.button1,
+      x: points.topRight.x + 15 + sa,
+    })
+  }
   macro('hd', {
     from: points.midLeft,
     to: points.midRight,
     y: points.bottomLeft.y + 30 + sa,
-  })
-  macro('vd', {
-    from: points.button2,
-    to: points.button1,
-    x: points.topRight.x + 15 + sa,
   })
   macro('vd', {
     from: points.bottomRight.shift(180, 40),
@@ -202,7 +206,7 @@ export const paperlessFrenchCuff = (part) => {
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  let { sa, options, paperless, points, macro, Path } = part.shorthand()
+  let { sa, options, paperless, points, macro } = part.shorthand()
   let factor = side === 'right' ? -1 : 1
   macro('banner', {
     path: 'hemSa',

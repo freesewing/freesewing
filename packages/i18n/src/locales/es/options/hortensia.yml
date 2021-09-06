@@ -1,13 +1,13 @@
 ---
 size:
-  title: Size
-  description: Controls the overall size of the handbag
+  title: Tamaño
+  description: Controla el tamaño total del bolso
 zipperSize:
-  title: Zipper size
-  description: Which size of zipper to use
+  title: Tamaño Zipper
+  description: Qué tamaño de zipper usar
 strapLength:
-  title: Strap length
-  description: Controls the length of the strap
+  title: Longitud del Strp
+  description: Controla la longitud de la correa
 handleWidth:
-  title: Handle width
-  description: Controls the width of the handle
+  title: Anchura del Manejo
+  description: Controla el ancho del asa

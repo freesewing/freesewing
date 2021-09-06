@@ -25,13 +25,13 @@ waistEase:
   description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Taille
 primaryBustDart:
   title: Brustabnäher
-  description: Where to place the bust dart to shape the chest
+  description: Wo der Büstendart platziert wird, um die Brust zu formen
 primaryBustDartLength:
   title: Länge des Brustabnähers
   description: Die Länge des Abnähers an der Brust
 secondaryBustDart:
   title: Sekundärer Brustabnäher
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  description: Optional einen sekundären Büstendart zur Verteilung der Form der Brust
 secondaryBustDartLength:
   title: Länge des sekundären Brustabnähers
   description: Die Länge des sekundären Abnähers an der Brust

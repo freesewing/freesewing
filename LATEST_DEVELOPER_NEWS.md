@@ -1,12 +1,18 @@
-##### Development environment now uses React 17 and Webpack 5
+##### Project 2022: New frontends for FreeSewing
 
-Version 2.16 of FreeSewing brings some important changes for developers.
-Read [our blog post on version 2.16](https://freesewing.org/blog/react-17/) for more info.
+Over the summer, Joost has started working on *project 2022*, an effort to
+migrate the FreeSewing websites (freesewing.org and freesewing.dev) from 
+GatbsyJS to NextJS, and in the process consolidate and streamline our various repositories.
+
+It comes with a new development blog, which you can read at: [2022.freesewing.dev/blog](https://2022.freesewing.dev/blog)
+
+If you'd like to get involved in this effert, head over to [discord.freesewing.org](https://discord.freesewing.org/) and
+join the **project-2022** channel.
 
 
-##### Next contributor call on 21 August
+##### Next contributor call on 04 September
 
-The next contributor call is on **21 August 2021**, Lucian and Karen will host it.
+The next contributor call is on **04 September 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.

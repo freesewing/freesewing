@@ -1,18 +1,8 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+    part.shorthand()
 
   let fold = options.buttonholePlacketFoldWidth
   let width = options.buttonholePlacketWidth
@@ -158,15 +148,17 @@ export default (part) => {
       to: points.armhole,
       y: points.placketTopEdge.y - offset - sa - 45,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x - 15,
-      })
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x - 15,
+        })
+      }
     }
     macro('vd', {
       from: points.placketBottomEdge,

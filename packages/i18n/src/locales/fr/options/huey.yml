@@ -1,7 +1,7 @@
 ---
 pocket:
   title: Poche
-  description: Inclure ou non des poches avant
+  description: S'il faut inclure une poche avant ou non
 pocketHeight:
   title: Hauteur de la poche
   description: Contrôle la hauteur de la poche

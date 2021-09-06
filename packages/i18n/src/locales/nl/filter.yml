@@ -1,7 +1,7 @@
 ---
 filter: Filter
 department: Afdeling
-type: Type
+type: Soort
 tags: Labels
 code: Code
 design: Ontwerp
@@ -13,8 +13,8 @@ pattern: Patroon
 byPattern: Filter op patroon
 underwear: Ondergoed
 top: Top
-tops: Tops
-bottom: Ondergoed
-bottoms: Bottoms
-coats: Coats & jackets
+tops: Tepels
+bottom: Bodem
+bottoms: Onderpanden
+coats: Jas & jassen
 swimwear: Zwemkledij

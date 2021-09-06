@@ -4,7 +4,6 @@ export default (part) => {
   let {
     store,
     measurements,
-    utils,
     sa,
     Point,
     points,
@@ -77,23 +76,26 @@ export default (part) => {
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
   // Cut off at yoke
-  const neverAboveCbNeck = () => (points.cbNeck.dy(points.cbYoke) < 10) ? (points.cbYoke.y = points.cbNeck.y + 10) : null
+  const neverAboveCbNeck = () =>
+    points.cbNeck.dy(points.cbYoke) < 10 ? (points.cbYoke.y = points.cbNeck.y + 10) : null
   if (options.yokeHeight === 1) {
     points.cbYoke = new Point(0, points.armholePitch.y)
     neverAboveCbNeck()
     points.armholeYokeSplit = points.armholePitch.clone()
     paths.backArmholeYoke = paths.backArmhole
-  }
-  else if (options.yokeHeight === 0) {
+  } else if (options.yokeHeight === 0) {
     points.cbYoke = new Point(0, points.s3ArmholeSplit.y)
     neverAboveCbNeck()
     points.armholeYokeSplit = points.s3ArmholeSplit.clone()
     paths.backArmholeBack = paths.backArmhole
   } else {
-    points.cbYoke = new Point(0, points.s3ArmholeSplit.y + (points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight))
+    points.cbYoke = new Point(
+      0,
+      points.s3ArmholeSplit.y + points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight
+    )
     neverAboveCbNeck()
     points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
-    const [back,yoke] = paths.backArmhole.split(points.armholeYokeSplit)
+    const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
     paths.backArmholeYoke = yoke.setRender(false)
     paths.backArmholeBack = back.setRender(false)
   }
@@ -103,14 +105,18 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-  if (options.yokeHeight < 1 && options.yokeHeight > 0) paths.armhole = paths.armhole.join(paths.backArmholeBack)
+  if (options.yokeHeight < 1 && options.yokeHeight > 0)
+    paths.armhole = paths.armhole.join(paths.backArmholeBack)
   else if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
   paths.armhole.render = false
 
   if (options.roundBack > 0) {
     points.cbTop = points.cbYoke.shift(90, points.armholePitch.x * options.roundBack)
     points.cbTopCp1 = points.cbTop.shift(0, points.armholePitch.x * 0.5)
-    paths.roundedBack = new Path().move(points.armholeYokeSplit)._curve(points.cbTopCp1, points.cbTop).line(points.cbYoke)
+    paths.roundedBack = new Path()
+      .move(points.armholeYokeSplit)
+      ._curve(points.cbTopCp1, points.cbTop)
+      .line(points.cbYoke)
   }
 
   // Box pleat
@@ -133,11 +139,10 @@ export default (part) => {
       'armholeHollowCp1',
       'armholeCp2',
       'armhole',
-      'armholeYokeSplit'
+      'armholeYokeSplit',
     ])
       points[p] = points[p].shift(0, options.boxPleatFold * 2)
   }
-
 
   // Draft hem
   switch (options.hemStyle) {

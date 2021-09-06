@@ -22,30 +22,30 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    fit: ['fabricStretch','gussetWidth','gussetLength','elasticStretch'],
-    style: ['rise','legOpening','frontDip','backDip','taperToGusset','backExposure'],
+    fit: ['fabricStretch', 'gussetWidth', 'gussetLength', 'elasticStretch'],
+    style: ['rise', 'legOpening', 'frontDip', 'backDip', 'taperToGusset', 'backExposure'],
   },
-  measurements: ['waist','seat','waistToSeat','waistToUpperLeg'], // Potentially useful: 'hips', 'waistToHips'
+  measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg'], // Potentially useful: 'hips', 'waistToHips'
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['front','back','gusset','elastic'],
-    //Constants
-    options: {
+  parts: ['front', 'back', 'gusset', 'elastic'],
+  //Constants
+  options: {
     backToFrontLength: 1.15, // Maybe include this in advanced options?
     backToFrontWidth: 1.1, // Maybe include this in advanced options?
     gussetRatio: 0.7, // Relationship between front and back gusset widths
 
     // Percentages
-    gussetWidth: { pct : 7.7, min: 4, max: 12 }, // Gusset width in relation to seat
+    gussetWidth: { pct: 7.7, min: 4, max: 12 }, // Gusset width in relation to seat
     gussetLength: { pct: 12.7, min: 10, max: 16 }, // Gusset length in relation to seat
     fabricStretch: { pct: 15, min: 5, max: 25 },
     rise: { pct: 60, min: 30, max: 100 },
     legOpening: { pct: 58, min: 5, max: 85 },
     frontDip: { pct: 5.0, min: -5, max: 15 },
     backDip: { pct: 2.5, min: -5, max: 15 },
-    taperToGusset: { pct: 70, min: 5, max: 100},
-    backExposure: { pct: 20, min: -30, max: 90},
-    elasticStretch: { pct: 8, min: 5, max: 15 }
+    taperToGusset: { pct: 70, min: 5, max: 100 },
+    backExposure: { pct: 20, min: -30, max: 90 },
+    elasticStretch: { pct: 8, min: 5, max: 15 },
   },
 }

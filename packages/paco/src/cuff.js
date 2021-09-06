@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+    part.shorthand()
   if (!options.elasticatedHem) {
     part.render = false
     return part

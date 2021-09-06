@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Pinces milieu dos
-  description: Dart at the center back of your neck to accommodate a rounded back
+  description: Fléchette au centre du cou pour accommoder un dos arrondi
 sleeveVentLength:
   title: Longueur de la fente des manches
   description: Longueur de la fente des manches
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Largeur de la fente des manches
 chestShaping:
   title: Courbe du col poitrine
-  description: Amount of shaping to accommodate for the chest curve
+  description: Quantité de mise en forme pour la courbe de la poitrine
 frontDartPlacement:
   title: Emplacement des pinces devant
   description: Emplacement des pinces devant
@@ -66,10 +66,10 @@ centerFrontHemDrop:
   title: Décalage de la longueur à l'avant
   description: La valeur par laquelle la longueur de l'avant est abaissée
 backVent:
-  title: Fentes arrière
+  title: Fente dos
   description: Nombre de fentes à l'arrière
 backVentLength:
-  title: Longueur de fente arrière
+  title: Longueur de la fente arrière
   description: La longueur du ou des fente(s) arrière(s)
 buttonLength:
   title: Longueur de boutonnage
@@ -108,5 +108,5 @@ rollLineCollarHeight:
   title: Hauteur de la ligne de cassure du col
   description: Combien la ligne de cassure épouse le cou
 hemRadius:
-  title: Arrondi d'ourlet
+  title: Rayon d'ourlet
   description: Le montant par lequel l'ourlet est arrondi

@@ -1,6 +1,13 @@
 # Change log for: @freesewing/wahid
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+ - Support a zero value for the `backScyeDart` option
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

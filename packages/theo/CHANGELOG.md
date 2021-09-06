@@ -1,6 +1,12 @@
 # Change log for: @freesewing/theo
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

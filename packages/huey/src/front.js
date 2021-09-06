@@ -1,23 +1,12 @@
 import { sharedDimensions } from './shared'
 
 export default function (part) {
-  let {
-    utils,
-    store,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements,
-  } = part.shorthand()
+  let { utils, store, Point, Path, points, paths, complete, paperless, sa, options, measurements } =
+    part.shorthand()
 
   // Clear paths from Brian
   for (let i in paths) {
-    if (['frontArmhole','frontCollar'].indexOf(i) === -1) delete paths[i]
+    if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
   }
 
   // Shorten body to take ribbing into account

@@ -3,11 +3,11 @@ aaron:
   description: Aaron is een sportief mouwloos hemdje of onderhemd.
   title: Aaron Onderhemd
 albert:
-  description: Albert is an apron.
-  title: Albert apron
+  description: Albert is een vork.
+  title: Albert schort
 bella:
-  description: Bella is a basic body block for people with breasts.
-  title: Bella body block
+  description: Bella is een basisorgaan voor mensen met borsten.
+  title: Bella lichaam blok
 benjamin:
   description: Benjamin is een vlinderdas met vier verschillende mogelijke vormen.
   title: Benjamin vlinderdas
@@ -15,16 +15,16 @@ bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
 breanna:
-  description: Breanna is a basic body block for people with breasts.
+  description: Breanna is een basislichaam voor mensen met borsten.
   title: Breanna basispatroon
 brian:
-  description: Brian is a basic body block for people without breasts.
+  description: Brian is een basislichaam voor mensen zonder borsten.
   title: Brian Basisvorm
 bruce:
   description: Bruce is een boxershort die zowel comfortabel als stylish is.
-  title: Bruce Boxershort
+  title: Bruce boxershort
 carlita:
-  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'De versie voor borsten van onze Carlton jas, aka Sherlock Holmes jas.'
   title: Carlita jas
 carlton:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een heel mooie jas zoekt.'
@@ -33,11 +33,11 @@ cathrin:
   description: Cathrin is een underbust korset of waist trainer.
   title: Cathrin korset
 charlie:
-  description: Charlie is a chino trouser pattern.
+  description: Charlie is een chino broekpatroon.
   title: Charlie chinos
 cornelius:
-  description: Cornelius are cycling breeches based on the Keystone drafting method.
-  title: Cornelius cycling breeches
+  description: Cornelius zijn broeders aan het fietsen op basis van de methode van Sleutelsteen.
+  title: Cornelius fietsen boren
 diana:
   description: Diana is een top met een gedrapeerde halslijn.
   title: Diana top met drapage
@@ -45,17 +45,17 @@ florent:
   description: 'Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.'
   title: Florent pet
 florence:
-  description: 'Florence is a face mask.'
+  description: 'Florence is een mondmasker.'
   title: Florence mondmasker
 holmes:
-  description: 'For Sherlock Holmes cosplay or just a cute hat.'
-  title: Holmes deerstalker hat
+  description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt.'
+  title: Holmes deerstanker hoed
 hortensia:
-  description: 'Hortensia is a handbag.'
-  title: Hortensia handbag
+  description: 'Hortensie is een handzak.'
+  title: Hortensia handtas
 huey:
   description: Huey is een trui met kap met een rits, en optionele voorzakken.
-  title: Huey hoodie
+  title: Huey Hoodie
 hugo:
   description: Hugo is een trui met kap en een raglanmouw.
   title: Hugo hoodie
@@ -63,22 +63,22 @@ jaeger:
   description: Jaeger is een sportief jasje met twee knopen en opgestikte zakken.
   title: Jaeger jasje
 paco:
-  description: Paco are casual yet stylish summer pants.
+  description: Paco is een casual maar stijlvolle zomerbroek.
   title: Paco broek
 penelope:
   description: Penelope is een smalle rok, met of zonder split achteraan.
-  title: Penelope potloodrok
+  title: Penelope pencil skirt
 sandy:
-  description: Sandy is an adaptable circle skirt pattern.
+  description: Sandy is een veelzijdig patroon voor een cirkelrok.
   title: Sandy cirkelrok
 shin:
-  description: Shin are athletic swim trunks.
+  description: Shin is atletische zwembroek.
   title: Shin zwembroek
 simon:
-  description: Simon is a highly adaptable shirt pattern for people without breasts.
+  description: Simon is een zeer flexibel hemdpatroon voor mensen zonder borsten.
   title: Simon hemd
 simone:
-  description: Simone is simon, adapted for breasts.
+  description: Simone is simon, aangepast aan borsten.
   title: Simone hemd
 sven:
   description: Sven is een no-nonsense basic trui.
@@ -87,23 +87,26 @@ tamiko:
   description: Tamiko is een top die geen stof verspilt.
   title: Tamiko top
 teagan:
-  description: Teagan is a fitted T-shirt pattern.
+  description: Teagan is een patroon voor een aansluitend t-shirt.
   title: Teagan T-shirt
 theo:
   description: Theo is een klassiek broekpatroon.
   title: Theo Broek
 titan:
-  description: Titan is a dartless unisex trouser block.
+  description: Titan is een unisex basispatroon voor een broek zonder nepen.
   title: Titan basispatroon broek
 trayvon:
   description: Trayvon is een das zoals het hoort, voor een professioneel resultaat.
   title: Trayvon das
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern.
+  description: Ursula is een fundamenteel, zeer aanpasbaar ondergoed patroon.
   title: Ursula undies
 wahid:
   description: Wahid is een klassiek aansluitend gilet.
   title: Wahid gilet
 waralee:
-  description: Waralee are wrap pants.
+  description: Waralee is een wikkelbroek.
   title: Waralee wikkelbroek
+yuri:
+  description: Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies
+  title: Yuri hoodie

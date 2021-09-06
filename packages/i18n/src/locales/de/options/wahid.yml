@@ -21,11 +21,11 @@ frontStyle:
   title: Ausschnittstil
   description: Stil des Ausschnitts
 hemStyle:
-  title: Saumart
+  title: Saumstil
   description: Art des vorderen Saums
 hemRadius:
   title: Saumradius
-  description: Rundungsradius des Saumes
+  description: Der Betrag, um den der Saum gerundet ist
 backInset:
   title: Rückseite Ausschnitt
   description: Wie viel die Rückseite des Armlochs nach innen verschoben ist

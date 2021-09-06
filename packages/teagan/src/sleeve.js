@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-    measurements,
-  } = part.shorthand()
+  let { sa, Point, points, Path, paths, options, complete, paperless, macro, measurements } =
+    part.shorthand()
 
   let height = points.bicepsRight.x * options.sleeveLength
   let width = measurements.biceps * (1 + options.bicepsEase) * (1 + options.sleeveEase)

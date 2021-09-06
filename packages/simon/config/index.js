@@ -226,7 +226,7 @@ export default {
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
-    ffsa: {pct: 150, min: 100, max:200 },
+    ffsa: { pct: 150, min: 100, max: 200 },
     sleevecapEase: { pct: 0, min: 0, max: 3 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },

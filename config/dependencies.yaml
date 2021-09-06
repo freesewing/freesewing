@@ -7,13 +7,6 @@ _types:
       'react': &react '^17.0.2'
       'react-dom': &react-dom '^17.0.2'
       '@babel/plugin-proposal-class-properties': '^7.13.0'
-      'babel-eslint': '^10.1.0'
-      'eslint': '^7.27.0'
-      'eslint-config-standard': '^16.0.3'
-      'eslint-plugin-node': '^11.1.0'
-      'eslint-plugin-promise': '^1.1.0'
-      #'babel-jest': '^26.2.2'
-      #'jest': '26.2.2'
       '@freesewing/components': *freesewing
       '@freesewing/css-theme': *freesewing
       '@freesewing/i18n': *freesewing
@@ -22,13 +15,11 @@ _types:
       '@freesewing/plugin-buttons': *freesewing
       '@freesewing/plugin-flip': *freesewing
       '@freesewing/utils': *freesewing
-      #'@svgr/rollup': '^2.4.1'
-      #'cross-env': '^7.0.2'
       'react-scripts': '^4.0.3'
       'webpack': '^5.37.0'
       'rollup': '^2.50.6'
       '@rollup/plugin-babel': '^5.3.0'
-      '@rollup/plugin-commonjs': '^19.0.0'
+      '@rollup/plugin-commonjs': '^20.0.0'
       '@rollup/plugin-json': '^4.1.0'
       '@rollup/plugin-node-resolve': '^13.0.0'
       'rollup-plugin-peer-deps-external': '^2.2.4'
@@ -38,7 +29,7 @@ _types:
       'axios': &axios '0.21.1'
       'react-intl': &react-intl '^5.17.6'
       'prop-types': '^15.7.2'
-      'mocha': '^8.1.0'
+      'mocha': '^9.1.1'
       'chai': '^4.2.0'
       'chai-string': '^1.5.0'
       '@babel/register': '^7.10.5'
@@ -65,13 +56,16 @@ carlita:
     '@freesewing/carlton': *freesewing
     '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 carlton:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 charlie:
   peer:
+    '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
 css-theme:
@@ -116,7 +110,7 @@ core:
 create-freesewing-pattern:
   _:
     'chalk': '^4.1.1'
-    'commander': '^7.2.0'
+    'commander': '^8.1.0'
     'conf': '^10.0.1'
     'cp-file': '^9.0.0'
     'execa': '^5.1.0'
@@ -137,7 +131,7 @@ create-freesewing-pattern:
 diana:
   peer:
     '@freesewing/brian': *freesewing
-example:
+examples:
   peer:
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-bartack': *freesewing
@@ -164,6 +158,7 @@ jaeger:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 models:
   peer:
     '@freesewing/utils': *freesewing
@@ -192,7 +187,7 @@ plugin-bundle:
     '@freesewing/plugin-sprinkle': *freesewing
 remark-jargon:
   _:
-    'unist-util-visit': '^3.1.0'
+    'unist-util-visit': '^4.0.0'
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
@@ -208,6 +203,18 @@ simone:
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-bust': *freesewing
+strapi:
+  _:
+    strapi: &strapi '3.6.5'
+    strapi-admin: *strapi
+    strapi-utils: *strapi
+    strapi-plugin-content-type-builder: *strapi
+    strapi-plugin-content-manager: *strapi
+    strapi-plugin-users-permissions: *strapi
+    strapi-plugin-email: *strapi
+    strapi-plugin-upload: *strapi
+    strapi-plugin-i18n: *strapi
+    strapi-connector-mongoose: *strapi
 sven:
   peer:
     '@freesewing/brian': *freesewing
@@ -224,3 +231,7 @@ wahid:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-round': *freesewing
+yuri:
+  peer:
+    '@freesewing/brian': *freesewing
+

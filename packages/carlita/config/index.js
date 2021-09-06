@@ -47,7 +47,14 @@ export default {
       'innerPocketDepth',
       'innerPocketWeltHeight',
     ],
-    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length', 's3Collar', 's3Armhole'],
+    style: [
+      'beltWidth',
+      'buttonSpacingHorizontal',
+      'cuffLength',
+      'length',
+      's3Collar',
+      's3Armhole',
+    ],
     collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [

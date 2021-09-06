@@ -19,10 +19,10 @@ export default {
     'parametric design',
     '{{type}}',
     'sewing',
-    'sewing pattern'
+    'sewing pattern',
   ],
   optionGroups: {
-    fit: ['size']
+    fit: ['size'],
   },
   measurements: [],
   dependencies: {},
@@ -30,6 +30,6 @@ export default {
   hide: [],
   parts: ['box'],
   options: {
-    size: { pct: 50, min: 10, max: 100 }
-  }
+    size: { pct: 50, min: 10, max: 100 },
+  },
 }

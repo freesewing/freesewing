@@ -1,6 +1,74 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### core
+
+#### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
+### holmes
+
+#### Added
+
+ - Added the `headEase` option to control head ease
+ - Added the `earLength` option to control the length of the ear
+ - Added the `earWidth` option to control the width of the ear
+ - Added the `visorLength` option to control the length of the visor
+ - Added the `buttonhole` option to allow a buttonhole variant
+
+#### Changed
+
+ - Renamed `brim` to `visor`
+ - Renamed `gore` to `crown`
+ - Renamed `ear` to `ear flap`
+ - Added hem allowances
+ - Migrated `mm` options to `pct`
+
+### huey
+
+#### Fixed
+
+ - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
+
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
+### simon
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+### theo
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+### wahid
+
+#### Fixed
+
+ - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+ - Support a zero value for the `backScyeDart` option
+
+### yuri
+
+#### Added
+
+ - Initial release of Yuri, a fancy zipless cardigan based on the Huey & Hugo hoodies
+
+
 ## 2.17.4 (2021-08-20)
 
 ### simon

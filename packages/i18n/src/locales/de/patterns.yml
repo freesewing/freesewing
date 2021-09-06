@@ -46,7 +46,7 @@ florent:
   title: Florent, die Schiebermütze
 florence:
   description: 'Florence ist ein Mundschutz.'
-  title: Florence, der Mundschutz
+  title: Gesichtsmaske "Florence"
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut.'
   title: Holmes Deerstalker-Hut
@@ -78,7 +78,7 @@ simon:
   description: Simon ist ein sehr anpassbares Hemdenschnittmuster für Personen ohne Brüste.
   title: Simon, das Hemd
 simone:
-  description: Simone ist Simon, angepasst für Personen mit Brüsten.
+  description: Simone ist Simon, angepasst für Menschen mit Brüsten.
   title: Simone, das Hemd
 sven:
   description: Sven ist ein einfacher Pullover.
@@ -107,3 +107,6 @@ wahid:
 waralee:
   description: Waralee ist eine Wickelhose.
   title: Waralee, die Wickelhose
+yuri:
+  description: Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies
+  title: Yuri hoodie

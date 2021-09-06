@@ -25,10 +25,10 @@ export function beamsIntersect(a1, a2, b1, b2) {
   if (slopeA === slopeB) return false // Parallel lines
 
   // Check for vertical line A
-  if (Math.round(a1.x*10000) === Math.round(a2.x*10000))
+  if (Math.round(a1.x * 10000) === Math.round(a2.x * 10000))
     return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
   // Check for vertical line B
-  else if (Math.round(b1.x*10000) === Math.round(b2.x*10000))
+  else if (Math.round(b1.x * 10000) === Math.round(b2.x * 10000))
     return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
   else {
     // Swap points if line A or B goes from right to left

@@ -1,17 +1,6 @@
 export default (part) => {
-  let {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+  let { store, measurements, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 

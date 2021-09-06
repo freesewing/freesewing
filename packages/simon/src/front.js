@@ -1,19 +1,8 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  let {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    macro,
-    snippets,
-    options,
-  } = part.shorthand()
+  let { store, measurements, sa, Point, points, Path, paths, complete, macro, snippets, options } =
+    part.shorthand()
 
   // Clean up
   for (let i in paths) {

@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+    part.shorthand()
 
   let w = 500 * options.size
   points.topLeft = new Point(0, 0)

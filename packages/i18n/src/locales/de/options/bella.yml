@@ -1,49 +1,49 @@
 ---
 chestEase:
-  title: Brustzugabe
-  description: Controls the amount of ease at the fullest part of your chest
+  title: Brust Zugabe
+  description: Steuert die Menge an Leichtigkeit im vollen Teil deiner Truhe
 waistEase:
   title: Taillenzugabe
-  description: Controls the amount of ease at your waist
+  description: Steuert die Menge an Leichtigkeit in deiner Taille
 bustSpanEase:
-  title: Bust span ease
-  description: Controls the amount of (horizontal) ease added to your bust span when locating the bust point.
+  title: Büstenumfang leicht
+  description: Steuert die Menge der (horizontalen) Leichtigkeit, die deinem Bustbereich hinzugefügt wird, wenn du den Bustpunkt findest.
 backDartHeight:
-  title: Back dart height
-  description: Controls the height of the back dart
+  title: Rückseitendart-Höhe
+  description: Steuert die Höhe des Rückendarts
 bustDartLength:
   title: Länge des Brustabnähers
-  description: Controls the length of the bust dart
+  description: Steuert die Länge des Büstendarts
 waistDartLength:
   title: Länge des Taillenabnähers
-  description: Controls the length of the waist dart
+  description: Steuert die Länge des Taillendarts
 bustDartCurve:
-  title: Bust dart curve
-  description: Controls the curvature of the bust dart
+  title: Büstendart-Kurve
+  description: Steuert die Krümmung des Büstendarts
 armholeDepth:
   title: Armlochtiefe
   description: Steuert die Tiefe des Armloches
 backArmholeSlant:
-  title: Back armhole slant
-  description: Slightly rotates the armhole around its pitch point
+  title: Hintere Armlochschiebung
+  description: Das Rüstungsloch dreht sich leicht um seinen Pitchpunkt
 backArmholeCurvature:
-  title: Back armhole curvature
-  description: Controls how deep the armhole is scooped out at the back bottom
+  title: Hintere Armlochkrümmung
+  description: Steuert die Tiefe des Rüstungslochs im hinteren unteren Bereich
 frontArmholePitchDepth:
-  title: Front armhole pitch depth
-  description: Tweaks the horizontal placement of the front armhole pitch point
+  title: Front-Armloch-Tiefe
+  description: Stellt die horizontale Position des Vorderarmlochpunktes fest
 backArmholePitchDepth:
-  title: Back armhole pitch depth
-  description: Tweaks the horizontal placement of the back armhole pitch point
+  title: Rückenarmloch-Tiefe
+  description: Stellt die horizontale Position des Rückenlochpunktes fest
 backNeckCutout:
-  title: Back neck cutout
-  description: Controls how deep the neck opening is scooped out at at the back
+  title: Ausschnitt im Nacken
+  description: Steuert wie tief die Halsöffnung auf der Rückseite abgesogen wird
 backHemSlope:
-  title: Back hem slope
-  description: Controls the slope of the hem at the back
+  title: Hinterer Saum Hang
+  description: Steuert den Hang des Saum auf der Rückseite
 frontShoulderWidth:
   title: Vordere Schulterbreite
-  description: Controls the narrowness of the front shoulders relative to the back
+  description: Steuert die Schmalheit der vorderen Schultern relativ zum Rücken
 highBustWidth:
-  title: High bust width
-  description: Allows you to tweak the hight bust width at the front
+  title: Hohe Büstenbreite
+  description: Erlaubt es dir die Breite der hohen Büste vorne zu optimieren

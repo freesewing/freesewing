@@ -1,15 +1,6 @@
 export default function (part) {
-  let {
-    macro,
-    measurements,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless,
-  } = part.shorthand()
+  let { macro, measurements, Point, points, Path, paths, complete, sa, paperless } =
+    part.shorthand()
 
   let width = measurements.hips * 0.16
   let height = width * 1.43

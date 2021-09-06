@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  title: Rugopening
+  description: Bepaalt de opening aan de achterkant van de schort
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  title: Lengte van de badjes
+  description: Bepaalt de lengte van de bandjes
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  title: Lengtebonus
+  description: Bepaalt de lengte van de schort
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  title: Lengte slabbetje
+  description: Bepaalt de lengte van het slabbetje
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  title: Breedte slabbetje
+  description: Bepaalt de breedte van het slabbetje
 strapWidth:
-  title: Strap width
-  description: Controls the width of the strap
+  title: Breedte bandjes
+  description: Bepaalt de breedte van de bandjes
 

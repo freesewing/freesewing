@@ -24,8 +24,8 @@ crossSeamCurveBend:
   title: Courbure de l'enfourchure dos
   description: Contrôle la courbure de la couture de fourche dos
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  title: Angle de couture croisée
+  description: Contrôle l'angle de la couture de croix
 crotchSeamCurveStart:
   title: Début de la courbe de l'enfourchure avant
   description: Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant
@@ -33,14 +33,14 @@ crotchSeamCurveBend:
   title: Courbure de la fourche avant
   description: Contrôle la courbure de la couture de fourche avant
 crotchSeamCurveAngle:
-  title: Crotch seam angle
-  description: Controls the angle of the crotch seam
+  title: Angle de couture
+  description: Contrôle l'angle de la couture de crotch
 waistBalance:
   title: Équilibre de la taille
   description: Contrôle la position horizontale de la taille par rapport au bassin
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  title: Largeur de ceinture
+  description: La largeur de la ceinture
 grainlinePosition:
   title: Position de la ligne de droit fil
   description: Contrôle la position horizontale de la jambe par rapport au bassin

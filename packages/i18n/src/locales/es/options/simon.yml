@@ -1,6 +1,6 @@
 ---
 backDarts:
-  title: Back darts
+  title: Pinzas traseras
   description: Incluir o no pinzas traseras
   options:
     auto: Automático
@@ -44,7 +44,7 @@ buttonholePlacketStyle:
     seamless: Estilo francés (sin costuras)
 buttonholePlacketWidth:
   title: Anchura de la vista de los ojales
-  description: Width of the buttonhole placket.
+  description: Ancho de la placa del agujero del botón.
 buttons:
   title: Número de botones
   description: Número de botones delanteros
@@ -71,7 +71,7 @@ collarStandCurve:
   description: La curvatura de la base del cuello.
 collarStandWidth:
   title: Anchura de la base del cuello
-  description: Width of the collar stand.
+  description: Ancho del soporte de cuello.
 cuffButtonRows:
   title: Hileras de botones en los puños
   description: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
@@ -98,8 +98,8 @@ extraTopButton:
   title: Botón extra superior
   description: Incluír o no un botón extra en el cierre frontal.
 ffsa:
-  title: Flat-felled seam allowace
-  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
+  title: Costura plana permitida
+  description: La cantidad de permisos de costura en costuras taladas con flete como una proporción de la franquicia regular de costura
 hemCurve:
   title: Curva del dobladillo
   description: La altura de la curva en un dobladillo redondeado.
@@ -111,14 +111,14 @@ hemStyle:
     baseball: Baseball
     slashed: Recortado
 roundBack:
-  title: Round back
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  title: Retroceso
+  description: Para encajar un redondo(er) hacia atrás, esto añade longitud al centro de atrás (en el yo) que se atenúa hacia los lados.
 seperateButtonholePlacket:
   title: Tapeta de ojal separada
-  description: Draft a separate buttonhole placket.
+  description: Construye una placa separada del botón.
 seperateButtonPlacket:
   title: Tapeta de botones separada
-  description: Draft a separate button placket
+  description: Borra una placket de botones separada
 sleevePlacketLength:
   title: Longitud de la vista de la manga
   description: La longitud de la vista de la manga.
@@ -132,5 +132,5 @@ waistEase:
   title: Holgura de cintura
   description: La cantidad de holgura en la cintura.
 yokeHeight:
-  title: Yoke height
-  description: Controls the height of the yoke
+  title: Altura del yugo
+  description: Controla la altura del yugo

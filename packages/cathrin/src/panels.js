@@ -111,9 +111,7 @@ export default function (part) {
     .curve(points.underbustGap3RightCp, points.waistGap3RightCp1, points.waistGap3Right)
     .curve(points.waistGap3RightCp2, points.hipsGap3Cp, points.hipsGap3)
   if (options.panels === '11') paths.panel4.line(points.hipRise)
-  paths.panel4
-    .close()
-    .attr('class', 'fabric')
+  paths.panel4.close().attr('class', 'fabric')
   points.underbustGap4Right = topBack.intersectsX(points.underbustGap4Right.x).pop()
   points.underbustGap5Left = topBack.intersectsX(points.underbustGap5Left.x).pop()
   let top5 = topBack.split(points.underbustGap5Left)[1].split(points.underbustGap4Right)[0]

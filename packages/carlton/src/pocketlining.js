@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)

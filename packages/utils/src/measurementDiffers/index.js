@@ -11,7 +11,6 @@ const measurementDiffers = (
   breasts = false,
   absolute = true
 ) => {
-  let result = Math.round((measurementValue - neckstimate(neckCircumference, measurementName, breasts)) / 20)
 
   return absolute
     ? Math.abs(Math.round((measurementValue - neckstimate(neckCircumference, measurementName, breasts)) / 20))

@@ -1,38 +1,38 @@
 ---
-ankle: Ankle circumference
-biceps: Biceps circumference
-bustFront: Bust front
-bustPointToUnderbust: Bust point to underbust
+ankle: circunstancia del tobillo
+biceps: Contorno del brazo
+bustFront: Frente de polvo
+bustPointToUnderbust: Debe apuntar a la base
 bustSpan: Distancia entre pechos
-chest: Chest circumference
-crossSeam: Cross seam
-crossSeamFront: Cross seam front
-head: Head circumference
+chest: Contorno de pecho
+crossSeam: Costura cruzada
+crossSeamFront: Costura cruzada frontal
+head: Contorno de cabeza
 heel: Heel circumference
-highBustFront: High bust front
+highBustFront: Frontal de bust alto
 highBust: Contorno de alto pecho
-hips: Hips circumference
-hpsToBust: HPS to bust
-hpsToWaistBack: HPS to waist back
-hpsToWaistFront: HPS to waist front
+hips: Contorno de caderas
+hpsToBust: HPS para quebrar
+hpsToWaistBack: HPS a cintura atrás
+hpsToWaistFront: HPS a cintura frontal
 inseam: Tiro
-knee: Knee circumference
-neck: Neck circumference
-seat: Seat circumference
-seatBack: Seat back
-crotchDepth: Crotch depth
-shoulderSlope: Inclinación de hombro
+knee: circunstancia de rodilla
+neck: Contorno de cuello
+seat: Contorno de asiento
+seatBack: Retroceder
+crotchDepth: Profundidad de cromo
+shoulderSlope: Pendiente del hombro
 shoulderToElbow: Hombro a codo
 shoulderToShoulder: Distancia entre hombros
 shoulderToWrist: Codo a muñeca
 underbust: Bajo pecho
-upperLeg: Upper leg circumference
-waist: Waist circumference
-waistBack: Waist back
-waistToFloor: Waist to floor
-waistToHips: Waist to hips
-waistToKnee: Waist to knee
-waistToSeat: Waist to seat
-waistToUnderbust: Waist to underbust
-waistToUpperLeg: Waist to upper leg
-wrist: Wrist circumference
+upperLeg: Contorno de alto de pierna
+waist: Circunferencia de Waist
+waistBack: Volver
+waistToFloor: Llave al suelo
+waistToHips: Espera a caderas
+waistToKnee: Espera a rodilla
+waistToSeat: Espera a asiento
+waistToUnderbust: Espera a bajo busto
+waistToUpperLeg: Ira a la pierna superior
+wrist: Contorno de muñeca

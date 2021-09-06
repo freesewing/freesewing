@@ -1,7 +1,7 @@
 ---
 centerBackDart:
   title: Pinza en el centro de la espalda
-  description: Dart at the center back of your neck to accommodate a rounded back
+  description: Dardos en el centro de la parte trasera del cuello para acomodar una espalda redondeada
 sleeveVentLength:
   title: Longitud de la vista de la manga
   description: Longitud de la vista de la manga
@@ -10,7 +10,7 @@ sleeveVentWidth:
   description: Ancho de la vista de la manga
 chestShaping:
   title: Forma del pecho
-  description: Amount of shaping to accommodate for the chest curve
+  description: Cantidad de configuración a tener en cuenta para la curva del cofre
 frontDartPlacement:
   title: Colocación de la pinza delantera
   description: Ubicación de las pinzas delanteras
@@ -66,10 +66,10 @@ centerFrontHemDrop:
   title: Dobladillo delantero central
   description: La cantidad por la que se baja el dobladillo hacia el centro delantero
 backVent:
-  title: Ventilación posterior
+  title: Abertura trasera
   description: La cantidad de respiraderos traseros
 backVentLength:
-  title: Longitud de ventilación posterior
+  title: Longitud de la abertura trasera
   description: La longitud de la (s) ventilación (es) posterior (es)
 buttonLength:
   title: Longitud del botón
@@ -93,7 +93,7 @@ lapelReduction:
   title: Reducción de la solapa
   description: Cuánto gira hacia adentro la punta de las solapas
 collarHeight:
-  title: Altura del cuello
+  title: Altura del collar
   description: Altura del cuello
 collarNotchDepth:
   title: Profundidad de la muesca del cuello
