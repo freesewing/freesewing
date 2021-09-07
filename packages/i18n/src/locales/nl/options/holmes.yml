@@ -1,29 +1,14 @@
 ---
 lengthRatio:
   title: Lengteratio
-  description: Bepaalt de hoogte van de hoed en de lengte van de oren
+  description: fixme
 goreNumber:
   title: Aantal panden
   description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
-visorAngle:
-  title: Visor hoek
-  description: Bepaalt de kromming van de visor
-visorLength:
-  title: Visor lengte
-  description: Bepaalt de lengte van de visor
-visorWidth:
-  title: Visor breedte
-  description: Bepaalt de breedte van de visor
-headEase:
-  title: Overwijdte hoofd
-  description: Bepaalt de hoeveelheid overwijdte voor je hoofd
-earLength:
-  title: Oor lengte
-  description: Bepaalt de lengte van de oren
-earWidth:
-  title: Oor breedte
-  description: Bepaalt de breedte van de oren
-buttonhole:
-  title: Knoopsgat
-  description: Voegt een knoopsgat aan de oren toe
+brimAngle:
+  title: Brim angle
+  description: Controls the curvature of the brim
+brimWidth:
+  title: Brim width
+  description: Controls the width of the brim
 
