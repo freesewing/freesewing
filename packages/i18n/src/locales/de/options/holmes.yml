@@ -1,29 +1,14 @@
 ---
 lengthRatio:
   title: Längenverhältnis
-  description: Steuert die Höhe des Hut und der Länge der Ohren
+  description: fixme
 goreNumber:
   title: Anzahl Keile
   description: Die Anzahl der zur Konstruktion der Halbkugel verwendeten Keile
-visorAngle:
-  title: Visor angle
-  description: Steuert die Krümmung des Visors
-visorLength:
-  title: Visorlänge
-  description: Steuert die Länge des Visors
-visorWidth:
-  title: Visor Breite
-  description: Steuert die Breite des Visors
-headEase:
-  title: Kopfumfangszugabe
-  description: Steuert die Menge an Leichtigkeit für deinen Kopf
-earLength:
-  title: Ohrenlänge
-  description: Steuert die Länge der Ohren
-earWidth:
-  title: Ohrenbreite
-  description: Steuert die Breite der Ohren
-buttonhole:
-  title: Buttonhole
-  description: Fügt den Ohren einen Knopfloch hinzu
+brimAngle:
+  title: Brim angle
+  description: Controls the curvature of the brim
+brimWidth:
+  title: Brim width
+  description: Controls the width of the brim
 
