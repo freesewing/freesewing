@@ -1,29 +1,14 @@
 ---
 lengthRatio:
   title: Length ratio
-  description: Controls the height of the hat and length of the ears
+  description: fixme
 goreNumber:
   title: Number of gores
   description: The number of gores used to construct the semi-sphere
-visorAngle:
-  title: Visor angle
-  description: Controls the curvature of the visor
-visorLength:
-  title: Visor length
-  description: Controls the length of the visor
-visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
-headEase:
-  title: Head ease
-  description: Controls the amount of ease for your head
-earLength:
-  title: Ear length
-  description: Controls the length of the ears
-earWidth:
-  title: Ear width
-  description: Controls the width of the ears
-buttonhole:
-  title: Buttonhole
-  description: Adds a buttonhole to the ears
+brimAngle:
+  title: Brim angle
+  description: Controls the curvature of the brim
+brimWidth:
+  title: Brim width
+  description: Controls the width of the brim
 

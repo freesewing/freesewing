@@ -9,24 +9,6 @@
 
  - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
 
-### holmes
-
-#### Added
-
- - Added the `headEase` option to control head ease
- - Added the `earLength` option to control the length of the ear
- - Added the `earWidth` option to control the width of the ear
- - Added the `visorLength` option to control the length of the visor
- - Added the `buttonhole` option to allow a buttonhole variant
-
-#### Changed
-
- - Renamed `brim` to `visor`
- - Renamed `gore` to `crown`
- - Renamed `ear` to `ear flap`
- - Added hem allowances
- - Migrated `mm` options to `pct`
-
 ### huey
 
 #### Fixed

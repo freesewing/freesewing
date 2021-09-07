@@ -9,14 +9,13 @@ export default function (part) {
     macro,
     complete,
     sa,
-    paperless,
+    paperless
   } = part.shorthand()
 
   // Design pattern here
 
   //Radius of the head
-  let headCircumference = measurements.head + (measurements.head*options.headEase)
-  let headRadius = headCircumference / 2 / Math.PI
+  let headRadius = measurements.head / 2 / Math.PI
 
   points.p0 = new Point(0, 0)
 
@@ -24,42 +23,36 @@ export default function (part) {
     from: points.p0,
     radius: headRadius,
     goreNumber: options.goreNumber,
-    extraLength: ((options.lengthRatio - 0.5) * headCircumference) / 2,
+    extraLength: ((options.lengthRatio - 0.5) * measurements.head) / 2,
     prefix: 'gore_',
-    render: true,
+    render: true
   })
 
   // Complete?
   if (complete) {
     points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
-    macro('title', { at: points.title, nr: 1, title: 'crown', scale: 0.5 })
+    macro('title', { at: points.title, nr: 1, title: 'gore', scale: 0.5 })
 
     macro('cutonfold', {
       from: points.p0,
       to: points.gore_p1.shift(180, 20),
       offset: -points.gore_p2.y / 6,
-      grainline: true,
+      grainline: true
     })
 
     if (sa) {
-      paths.saCurve = new Path()
+      paths.saBase = new Path()
         .move(points.gore_p1)
         .curve(points.gore_Cp1, points.gore_Cp2, points.gore_p2)
+        .line(points.gore_p3)
+        .line(points.p0)
         .offset(sa)
         .setRender(false)
-	  points.sa1 = new Point(points.gore_p3.x - (sa*2), points.gore_p3.y - sa)
-	  paths.saBase = new Path()	
-		.move(points.gore_p3)
-        .line(points.p0)
-		.offset(sa*2)
-		.setRender(false)
       paths.sa = new Path()
         .move(points.gore_p1)
         .line(points.gore_p1.shift(0, sa))
-        .line(paths.saCurve.start())
-        .join(paths.saCurve)
-		.line(points.sa1)
-		.join(paths.saBase)
+        .line(paths.saBase.start())
+        .join(paths.saBase)
         .line(points.p0)
         .attr('class', 'fabric sa')
     }
@@ -69,12 +62,12 @@ export default function (part) {
       macro('hd', {
         from: points.p0,
         to: points.gore_p1,
-        y: -points.p0.x + 15,
+        y: -points.p0.x + 15
       })
       macro('vd', {
         from: points.p0,
         to: points.gore_p3,
-        x: points.p0.x - 15 - sa,
+        x: points.p0.x - 15 - sa
       })
     }
   }

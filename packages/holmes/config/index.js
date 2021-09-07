@@ -6,29 +6,33 @@ export default {
   name: 'holmes',
   version,
   design: 'Erica Alcusa Sáez',
-  code: ['Erica Alcusa Sáez', 'bobgeorgethe3rd'],
+  code: 'Erica Alcusa Sáez',
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
+  tags: [
+    'freesewing',
+    'design',
+    'diy',
+    'fashion',
+    'made to measure',
+    'parametric design',
+    'pattern',
+    'sewing',
+    'sewing pattern'
+  ],
   optionGroups: {
-	fit: ['headEase'],
-    style: ['lengthRatio', 'goreNumber', 'visorAngle', 'visorWidth','earLength','earWidth','buttonhole'],
-	advanced:['visorLength'],
+    style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth']
   },
   measurements: ['head'],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['gore', 'visor', 'ear'],
+  parts: ['gore', 'brim', 'ear'],
   options: {
-	headEase: { pct: 3, min: 0, max: 15 },
     lengthRatio: { pct: 55, min: 40, max: 60 },
     goreNumber: { count: 6, min: 4, max: 20 },
-    visorAngle: { deg: 45, min: 10, max: 90 },
-    visorWidth: { pct: 6.5, min: 3, max: 15 },
-	earLength: { pct: 100, min: 80, max: 150 },
-	earWidth: { pct: 100, min: 80, max: 150 },
-	visorLength: { pct: 100, min: 80, max: 150 },
-	buttonhole: {bool: false}
-  },
+    brimAngle: { deg: 45, min: 10, max: 90 },
+    brimWidth: { mm: 30, min: 5, max: 100 }
+  }
 }
