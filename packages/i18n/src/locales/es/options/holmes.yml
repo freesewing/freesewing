@@ -1,29 +1,14 @@
 ---
 lengthRatio:
   title: Ratio de longitud
-  description: Controla la altura del sombrero y la longitud de las orejas
+  description: fixme
 goreNumber:
   title: Número de paneles
   description: El número de paneles usado para construir la semiesfera
-visorAngle:
-  title: Visor angle
-  description: Controla la curvatura del visor
-visorLength:
-  title: Longitud del Visor
-  description: Controla la longitud del visor
-visorWidth:
-  title: Ancho del Visor
-  description: Controla el ancho del visor
-headEase:
-  title: Holgura de cabeza
-  description: Controla la cantidad de facilidad para tu cabeza
-earLength:
-  title: Longitud del oído
-  description: Controla la longitud de las orejas
-earWidth:
-  title: Ancho del oído
-  description: Controla el ancho de las orejas
-buttonhole:
-  title: Buttonhole
-  description: Añade un orificio a las orejas
+brimAngle:
+  title: Brim angle
+  description: Controls the curvature of the brim
+brimWidth:
+  title: Brim width
+  description: Controls the width of the brim
 
