@@ -31,11 +31,11 @@ export default function (part) {
   points.in2Flipped = points.in2.flipX()
   points.in2CFlipped = points.in2C.flipX()
 
-  points.ex1 = points.in1.shift(-90, options.brimWidth)
+  points.ex1 = points.in1.shift(-90, measurements.head * options.brimWidth)
   points.ex1C = points.ex1.shift(0, 0.5 * points.in2.x)
   points.ex2C = points.in2.shift(
     -90,
-    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(-options.brimWidth / 15)) - 1)
+    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(measurements.head * options.brimWidth / -15)) - 1)
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()

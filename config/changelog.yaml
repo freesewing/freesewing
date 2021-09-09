@@ -10,6 +10,8 @@ unreleased:
     core:
       - Handle path.offset() of very short curves with control points on the start or end point
         Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+    holmes:
+      - The `brimWidth` option is not a percent option, allowing the pattern to scale properly
     huey:
       - Replace cut-on-fold indicator on pocket with a regular grainline indicator
         Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/holmes
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - The `brimWidth` option is not a percent option, allowing the pattern to scale properly
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed
