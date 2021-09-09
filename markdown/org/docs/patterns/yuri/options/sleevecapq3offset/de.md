@@ -1,6 +1,6 @@
-![Der Versatz im dritten Quartal der Ärmel](./sleevecapq3offset.svg)
+![The offset in the third quarter of the sleevecap](./sleevecapq3offset.svg)
 
-Diese Option steuert den Versatz im dritten Quadranten der Ärmel.
+This option controls the offset in the third quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,5 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
-## Effekt dieser Option auf das Muster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapq3offset_sample.svg "Effekt dieser Option auf das Muster")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevecapq3offset_sample.svg "Effect of this option on the pattern")
