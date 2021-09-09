@@ -32,7 +32,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "strapi": "3.6.5",
+    "strapi": "3.6.8",
     "strapi-admin": "3.6.5",
     "strapi-utils": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.5",
