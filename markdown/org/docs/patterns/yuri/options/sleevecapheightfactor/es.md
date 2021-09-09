@@ -1,3 +1,3 @@
-![La opción de factor de altura de manga en Brian](./sleevecapheightfactor.svg)
+![The sleevecap height factor option on Brian](./sleevecapheightfactor.svg)
 
-Este factor controla la altura de la manga.
+This factor controls the height of the sleevecap.
