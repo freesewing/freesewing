@@ -205,7 +205,7 @@ simone:
     '@freesewing/plugin-bust': *freesewing
 strapi:
   _:
-    strapi: &strapi '3.6.5'
+    strapi: &strapi '3.6.8'
     strapi-admin: *strapi
     strapi-utils: *strapi
     strapi-plugin-content-type-builder: *strapi
