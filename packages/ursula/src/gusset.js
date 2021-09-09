@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    store,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, Point, Path, points, paths, measurements, store, complete, sa, paperless, macro } =
+    part.shorthand()
 
   // Create points
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)

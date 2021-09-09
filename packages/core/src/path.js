@@ -344,24 +344,12 @@ function pathOffset(path, distance, raise) {
       // because that will break the offset in bezier-js
       let cp1, cp2
       if (current.sitsRoughlyOn(op.cp1)) {
-        cp1 = new Path(path.debug)
-          .withRaise(path.raise)
-          .move(current)
-          .curve(op.cp1, op.cp2, op.to)
-        cp1 = cp1.shiftAlong(cp1.length() > 2
-          ? 2
-          : cp1.length()/10
-        )
+        cp1 = new Path(path.debug).withRaise(path.raise).move(current).curve(op.cp1, op.cp2, op.to)
+        cp1 = cp1.shiftAlong(cp1.length() > 2 ? 2 : cp1.length() / 10)
       } else cp1 = op.cp1
       if (op.cp2.sitsRoughlyOn(op.to)) {
-        cp2 = new Path(path.debug)
-          .withRaise(path.raise)
-          .move(op.to)
-          .curve(op.cp2, op.cp1, current)
-        cp2 = cp2.shiftAlong(cp2.length() > 2
-          ? 2
-          : cp2.length()/10
-        )
+        cp2 = new Path(path.debug).withRaise(path.raise).move(op.to).curve(op.cp2, op.cp1, current)
+        cp2 = cp2.shiftAlong(cp2.length() > 2 ? 2 : cp2.length() / 10)
       } else cp2 = op.cp2
       let b = new Bezier(
         { x: current.x, y: current.y },

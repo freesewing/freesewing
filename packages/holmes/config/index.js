@@ -19,10 +19,10 @@ export default {
     'parametric design',
     'pattern',
     'sewing',
-    'sewing pattern'
+    'sewing pattern',
   ],
   optionGroups: {
-    style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth']
+    style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth'],
   },
   measurements: ['head'],
   dependencies: {},
@@ -33,6 +33,6 @@ export default {
     lengthRatio: { pct: 55, min: 40, max: 60 },
     goreNumber: { count: 6, min: 4, max: 20 },
     brimAngle: { deg: 45, min: 10, max: 90 },
-    brimWidth: { pct: 5, min: 5, max: 9 }
-  }
+    brimWidth: { pct: 5, min: 5, max: 9 },
+  },
 }

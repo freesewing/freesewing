@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    complete,
-    sa,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { Point, points, Path, paths, measurements, options, complete, sa, paperless, macro } =
+    part.shorthand()
 
   let headRadius = measurements.head / 2 / Math.PI
   let brimRadius = headRadius / Math.sin((options.brimAngle * Math.PI) / 180)
@@ -35,7 +25,8 @@ export default function (part) {
   points.ex1C = points.ex1.shift(0, 0.5 * points.in2.x)
   points.ex2C = points.in2.shift(
     -90,
-    (points.ex1.y - points.in2.y) * (2 / (1 + Math.exp(measurements.head * options.brimWidth / -15)) - 1)
+    (points.ex1.y - points.in2.y) *
+      (2 / (1 + Math.exp((measurements.head * options.brimWidth) / -15)) - 1)
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
@@ -62,17 +53,17 @@ export default function (part) {
       macro('hd', {
         from: points.in2Flipped,
         to: points.in2,
-        y: points.ex1.y + 15 + sa
+        y: points.ex1.y + 15 + sa,
       })
       macro('vd', {
         from: points.ex1,
         to: points.in1,
-        x: points.in2Flipped.x - 15 - sa
+        x: points.in2Flipped.x - 15 - sa,
       })
       macro('vd', {
         from: points.ex1,
         to: points.in2Flipped,
-        x: points.in2Flipped.x - 30 - sa
+        x: points.in2Flipped.x - 30 - sa,
       })
     }
   }

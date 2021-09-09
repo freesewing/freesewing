@@ -1,6 +1,5 @@
 export default function (part) {
-  let { Point, Path, points, paths, complete, sa, paperless, macro } =
-    part.shorthand()
+  let { Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
 
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {

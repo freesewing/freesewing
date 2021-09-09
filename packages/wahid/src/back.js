@@ -62,13 +62,14 @@ export default (part) => {
     points.armholePitch.rotate(options.backScyeDart, points.cbNeckCp2),
     1.2
   )
-  points.armholePitchTop = (options.backScyeDart > 0)
-    ? new Path()
-      .move(points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-      .intersects(new Path().move(points.cbNeckCp2).line(points._dartWidth))
-      .pop()
-    : points.armholePitch.clone()
+  points.armholePitchTop =
+    options.backScyeDart > 0
+      ? new Path()
+          .move(points.armholePitch)
+          .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+          .intersects(new Path().move(points.cbNeckCp2).line(points._dartWidth))
+          .pop()
+      : points.armholePitch.clone()
 
   // Rotate back scye dart into center back
   let toRotate = ['cbNeck', 'neckCp2', 'neck', 'shoulder', 'shoulderCp1']

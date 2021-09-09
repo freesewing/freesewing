@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.18.0 (2021-09-09)
 
 ### core
 

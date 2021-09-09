@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bust",
-  "version": "2.18.0-rc.2",
+  "version": "2.18.0",
   "description": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -36,7 +36,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.18.0-rc.2"
+    "@freesewing/core": "^2.18.0"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -47,7 +47,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=12.0.0",
