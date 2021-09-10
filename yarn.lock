@@ -14259,9 +14259,9 @@ only@~0.0.2:
   integrity sha1-Kv3oTQPlC5qO3EROMGEKcCle37Q=
 
 open-color@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/open-color/-/open-color-1.8.0.tgz#fb6d76105b08de39bff7a06535eca8e63b65b725"
-  integrity sha512-gSHRpWLx83rKlHZIm9ZoUBsSMijhPRMxOOacUETjY8guu9dAwIAbtZgmVqkfglmhs3/pYppGohzp8fUdJ4YBqQ==
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/open-color/-/open-color-1.9.1.tgz#a6e6328f60eff7aa60e3e8fcfa50f53ff3eece35"
+  integrity sha512-vCseG/EQ6/RcvxhUcGJiHViOgrtz4x0XbZepXvKik66TMGkvbmjeJrKFyBEx6daG5rNyyd14zYXhz0hZVwQFOw==
 
 open@^7.0.2:
   version "7.4.2"
