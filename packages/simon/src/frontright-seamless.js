@@ -4,6 +4,8 @@ export default (part) => {
   let { sa, Point, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
 
   let width = options.buttonPlacketWidth
+  switch (options.buttonholePlacement){
+	  case 'Left over Right':
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(0, width * 2.5)
@@ -12,6 +14,17 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(0, width * 2.5)
   points.placketBottomMatch = points.cfHem.shift(180, width / 2)
   points.placketTopMatch = points.cfNeck.shift(180, width / 2)
+  break
+  case 'Right over Left':
+  points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
+  points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
+  points.placketTopEdge = points.cfNeck.shift(180, width * 2.5)
+  points.placketBottomFold1 = points.cfHem.shift(180, width / 2)
+  points.placketBottomFold2 = points.cfHem.shift(180, width * 1.5)
+  points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
+  points.placketBottomMatch = points.cfHem.shift(0, width / 2)
+  points.placketTopMatch = points.cfNeck.shift(0, width / 2)
+  }
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
@@ -46,9 +59,14 @@ export default (part) => {
 
     // Buttons
     addButtons(part)
-
+switch (options.buttonholePlacement){
+	case 'Left over Right':
     // Title
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
+	break
+	case 'Right over Left':
+	macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
+}
 
     if (sa) {
       paths.saFromArmhole

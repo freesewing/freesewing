@@ -5,7 +5,9 @@ import frontRightSeamless from './frontright-seamless'
 
 export default (part) => {
   let { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
+	  if (options.buttonholePlacement == 'Left over Right'){
   macro('flip')
+  }
   if (complete) {
     points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5)
     macro('scalebox', { at: points.scalebox })
@@ -28,4 +30,5 @@ export default (part) => {
     : options.seperateButtonPlacket
     ? frontRightClassicSeperate(part)
     : frontRightClassicCuton(part)
+	
 }

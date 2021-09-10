@@ -26,8 +26,10 @@ export default (part) => {
   for (let id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
-  macro('flip')
+ if (options.buttonholePlacement == 'Left over Right'){ macro('flip')}
   let width = options.buttonPlacketWidth
+  switch (options.buttonholePlacement){
+	  case 'Left over Right':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -41,7 +43,22 @@ export default (part) => {
   points.placketBottomIn = points.cfHem.shift(180, width / 2)
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
-
+	break
+	case 'Right over Left':
+    points.placketTopIn = utils.lineIntersectsCurve(
+    new Point(width / 2, points.cfNeck.y + 20),
+    new Point(width / 2, points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  )
+  points.placketTopOut = points.cfNeck.shift(180, width / 2)
+  points.placketTopEdge = points.cfNeck.shift(180, width * 1.5)
+  points.placketBottomIn = points.cfHem.shift(0, width / 2)
+  points.placketBottomOut = points.cfHem.shift(180, width / 2)
+  points.placketBottomEdge = points.cfHem.shift(180, width * 1.5)
+  }
   paths.saBase = new Path()
     .move(points.placketBottomIn)
     .line(points.placketTopIn)
@@ -65,7 +82,8 @@ export default (part) => {
 
     // Buttons
     addButtons(part)
-
+switch (options.buttonholePlacement){
+	case 'Left over Right':
     // Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(180, width / 2)
     points.grainlineTo = points.placketTopEdge.shift(180, width / 2)
@@ -83,6 +101,26 @@ export default (part) => {
       scale: 0.75,
       rotation: -90,
     })
+	break
+	case 'Right over Left':
+	    // Grainline
+    points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
+    points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
+    // Title
+    points.title = new Point(points.placketTopOut.x, points.cfArmhole.y)
+    macro('title', {
+      at: points.title,
+      nr: '2b',
+      title: 'buttonPlacket',
+      scale: 0.75,
+      rotation: -90,
+    })
+}
 
     // Logo
     points.logo = points.title.shift(-90, 120)
@@ -91,13 +129,24 @@ export default (part) => {
       .attr('data-rotate', -90)
 
     if (sa) {
+	switch (options.buttonholePlacement){
+		case 'Left over Right':
       paths.sa = paths.saBase
         .offset(sa * -1)
         .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + 3 * sa))
         .line(new Point(points.placketBottomIn.x - sa, points.placketBottomIn.y + 3 * sa))
         .close()
         .attr('class', 'fabric sa')
+		break
+		case 'Right over Left':
+		paths.sa = paths.saBase
+        .offset(sa * 1)
+        .line(new Point(points.placketBottomEdge.x - sa, points.placketBottomEdge.y + 3 * sa))
+        .line(new Point(points.placketBottomIn.x + sa, points.placketBottomIn.y + 3 * sa))
+        .close()
+        .attr('class', 'fabric sa')
     }
+	}
   }
 
   // Paperless?

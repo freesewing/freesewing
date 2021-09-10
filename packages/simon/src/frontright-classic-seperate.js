@@ -3,6 +3,8 @@ export default (part) => {
     part.shorthand()
 
   let width = options.buttonPlacketWidth
+  switch (options.buttonholePlacement){
+	case 'Left over Right':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -12,6 +14,18 @@ export default (part) => {
     points.neck
   )
   points.placketBottomIn = points.cfHem.shift(180, width / 2)
+  break
+  case 'Right over Left':
+    points.placketTopIn = utils.lineIntersectsCurve(
+    new Point(width / 2, points.cfNeck.y + 20),
+    new Point(width / 2, points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  )
+  points.placketBottomIn = points.cfHem.shift(0, width / 2)
+  }
   paths.seam = paths.seam.split(points.placketTopIn)[0]
   paths.seam.ops[0].to = points.placketBottomIn
   paths.seam.close().attr('class', 'fabric')
@@ -19,7 +33,13 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     // Title
-    macro('title', { at: points.title, nr: '1a', title: 'rightFront' })
+  switch (options.buttonholePlacement){
+	case 'Left over Right':
+    macro('title', { at: points.title, nr: '1a', title: 'frontRight' })
+	break
+	case 'Right over Left':
+	macro('title', { at: points.title, nr: '2a', title: 'frontLeft' })
+  }
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
     delete snippets['cfArmhole-notch']

@@ -20,8 +20,13 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     // Title
+switch (options.buttonholePlacement){
+	case 'Left over Right':
     macro('title', { at: points.title, nr: '2a', title: 'frontLeft' })
-
+	break
+	case 'Right over Left':
+	macro('title', { at: points.title, nr: '1a', title: 'frontRight' })
+}
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
     delete snippets['cfArmhole-notch']
@@ -75,6 +80,9 @@ export default (part) => {
         to: points[pid.toLowerCase()],
       })
     }
+  }
+  if (options.buttonholePlacement == 'Right over Left'){
+  macro('flip')
   }
   return part
 }

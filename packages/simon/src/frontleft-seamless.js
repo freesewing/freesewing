@@ -12,7 +12,9 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
-
+	  if (options.buttonholePlacement == 'Right over Left'){
+  macro('flip')
+  }
   // Complete pattern?
   if (complete) {
     // Placket help lines
@@ -43,8 +45,13 @@ export default (part) => {
     addButtonHoles(part, 'cfNeck')
 
     // Title
+switch (options.buttonholePlacement){
+	case 'Left over Right':
     macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
-
+	break 
+	case'Right over Left':
+	macro('title', { at: points.title, nr: 1, title: 'frontRight' })
+}
     if (sa) {
       paths.saFromArmhole
         .line(points.placketTopEdge.shift(90, sa))
