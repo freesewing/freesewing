@@ -1283,7 +1283,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.13.17", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.13.17", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.15.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
   integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
@@ -1342,30 +1342,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@buffetjs/core@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/core/-/core-3.3.6.tgz#f8ff2ced0e8cbbe089810308f2488bd68a8ebeda"
-  integrity sha512-OVTe/7nLNM2R0EELbKWjlbMnjF7dwSDmzXPbPlMinx41GHQM6MgDngvNMJuJKJvhQwdf/zgvW70Dpr3SEbf9Zw==
-  dependencies:
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
-    "@fortawesome/fontawesome-svg-core" "^1.2.25"
-    "@fortawesome/free-regular-svg-icons" "^5.11.2"
-    "@fortawesome/free-solid-svg-icons" "^5.11.2"
-    "@fortawesome/react-fontawesome" "^0.1.4"
-    invariant "^2.2.4"
-    lodash "4.17.21"
-    moment "^2.24.0"
-    prop-types "^15.7.2"
-    rc-input-number "^4.5.0"
-    react-dates "^21.5.1"
-    react-moment-proptypes "^1.7.0"
-    react-router-dom "^5.2.0"
-    react-with-direction "^1.3.1"
-    reactstrap "^8.5.1"
-
 "@buffetjs/core@3.3.8":
   version "3.3.8"
   resolved "https://registry.yarnpkg.com/@buffetjs/core/-/core-3.3.8.tgz#59899e85ccc238b57ec0d4fcbe9b160c480e5c00"
@@ -1390,19 +1366,6 @@
     react-with-direction "^1.3.1"
     reactstrap "^8.5.1"
 
-"@buffetjs/custom@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/custom/-/custom-3.3.6.tgz#81b905d7507fa69e7bf9a74d863cc5cb4a06f9d3"
-  integrity sha512-SemP9hQCQogpXi31y+cP+iRMyLueYWHTDnss/N4t8pjvonT8VbSwYhkfU+Z0c/BB71AZW7QkvgylDUaMtbUXSw==
-  dependencies:
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
-    lodash "4.17.21"
-    moment "^2.24.0"
-    prop-types "^15.5.10"
-    react-moment-proptypes "^1.7.0"
-
 "@buffetjs/custom@3.3.8":
   version "3.3.8"
   resolved "https://registry.yarnpkg.com/@buffetjs/custom/-/custom-3.3.8.tgz#d7e73d9043ec34380410cc1163236df7443a70e9"
@@ -1416,22 +1379,10 @@
     prop-types "^15.5.10"
     react-moment-proptypes "^1.7.0"
 
-"@buffetjs/hooks@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/hooks/-/hooks-3.3.6.tgz#9c11b7c036834b89de705bba6e24b8915931cc13"
-  integrity sha512-OSVy7eCgVboWVfDHRassSXH7bKZVShf2gK8zFjwYM59szueWM+49nAahBSMXP+J0jiutEZYrM0r7HeMoR/gDIQ==
-
 "@buffetjs/hooks@3.3.8":
   version "3.3.8"
   resolved "https://registry.yarnpkg.com/@buffetjs/hooks/-/hooks-3.3.8.tgz#0b03b1aa9cf2236861d5e8533567baa8123fa7ed"
   integrity sha512-PaobbbBnzlkWcG04nyNWEvcX6zzC5LdPh2uoAUccEwXG4saXIihrQfnGxuKqvlYHof4PFqQb/cmJHXtrTiE20A==
-
-"@buffetjs/icons@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/icons/-/icons-3.3.6.tgz#b7b59ec69cb2f629a7b102ebfc2115910aa707dd"
-  integrity sha512-faFDLoA5IUot0LKJ3InSX7hiZJI51krBJ8MPh3HDdol11VFHnLRsltMqAxz4oh5+CU7v4yxZPc+iL9RZZteu6Q==
-  dependencies:
-    prop-types "^15.5.10"
 
 "@buffetjs/icons@3.3.8":
   version "3.3.8"
@@ -1439,20 +1390,6 @@
   integrity sha512-T1h3w5zu4JmwiZXcJPHJZXOpaIZzCpOQDaXLrzZNGze+8qcifUEKu4Y8pGS9+14OwMXjrAi+SsWxaeY/t7zYTQ==
   dependencies:
     prop-types "^15.5.10"
-
-"@buffetjs/styles@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/styles/-/styles-3.3.6.tgz#091d393c3ace250b2eba92933ad924aaa56be4a8"
-  integrity sha512-M1eF4ECq689vq1z0GTkl1AtaHTkU5+t5jrCyo+By2n6juM/ueJyAWMoK3NrMh5SXgLIJ1OwGGpAXSjOwYMZdvQ==
-  dependencies:
-    "@fortawesome/fontawesome-free" "^5.12.0"
-    "@fortawesome/fontawesome-svg-core" "^1.2.22"
-    "@fortawesome/free-regular-svg-icons" "^5.10.2"
-    "@fortawesome/free-solid-svg-icons" "^5.10.2"
-    "@fortawesome/react-fontawesome" "^0.1.4"
-    prop-types "^15.7.2"
-    react-dates "^21.1.0"
-    react-tooltip "^4.2.11"
 
 "@buffetjs/styles@3.3.8":
   version "3.3.8"
@@ -1467,14 +1404,6 @@
     prop-types "^15.7.2"
     react-dates "^21.1.0"
     react-tooltip "^4.2.11"
-
-"@buffetjs/utils@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@buffetjs/utils/-/utils-3.3.6.tgz#d8c79a866219e0005c0f3b28905f7a5be8aa740e"
-  integrity sha512-hyPRXdouKFUz+9/TZcQ0sOWz4sdyMt2EiehSB3Gy91E5dHi0A3a+gVStVlm/eqez7w+AAofKyQ0UDqc9ajXu9Q==
-  dependencies:
-    lodash "4.17.21"
-    yup "^0.27.0"
 
 "@buffetjs/utils@3.3.8":
   version "3.3.8"
@@ -9041,11 +8970,6 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-fn-name@~2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-2.0.1.tgz#5214d7537a4d06a4a301c0cc262feb84188002e7"
-  integrity sha1-UhTXU3pNBqSjAcDMJi/rhBiAAuc=
-
 follow-redirects@^1.0.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
@@ -12612,11 +12536,6 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.20:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
 lodash@4.17.21, "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.1.1, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.7.0, lodash@~4.17.10:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
@@ -15978,11 +15897,6 @@ prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0,
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-property-expr@^1.5.0:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-1.5.1.tgz#22e8706894a0c8e28d58735804f6ba3a3673314f"
-  integrity sha512-CGuc0VUTGthpJXL36ydB6jnbyOf/rAHFvmVrJlH+Rg0DqqLFQGAP6hIaxD/G0OAmBJPhXDHuEJigrp0e0wFV6g==
-
 property-expr@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-2.0.4.tgz#37b925478e58965031bb612ec5b3260f8241e910"
@@ -18583,10 +18497,10 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-strapi-admin@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-admin/-/strapi-admin-3.6.5.tgz#6f0f3ac801e9501cb5c2395592edb51df3d55c7c"
-  integrity sha512-/coj1G/LNdmy9AreWK9SAYc9h4UAVk5qffXFJbvvZaSCxJ58DEYkmzgCOfrACfrfRG5EFOciU61rHTuhSH1aeQ==
+strapi-admin@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-admin/-/strapi-admin-3.6.8.tgz#0000f07c8004c7110b49abb1757f50ab9d751a92"
+  integrity sha512-LqOzAE27eJZAfCgW1KQipESfL2PMumej5CS8dBdu+PHMsn270gKdZceA4vLBYix5OkkNnsKcioTzK1/uyWYpdg==
   dependencies:
     "@babel/core" "^7.14.0"
     "@babel/plugin-proposal-async-generator-functions" "^7.13.15"
@@ -18598,12 +18512,12 @@ strapi-admin@3.6.5:
     "@babel/preset-env" "^7.13.15"
     "@babel/preset-react" "^7.13.13"
     "@babel/runtime" "^7.13.17"
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/custom" "3.3.6"
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
+    "@buffetjs/core" "3.3.8"
+    "@buffetjs/custom" "3.3.8"
+    "@buffetjs/hooks" "3.3.8"
+    "@buffetjs/icons" "3.3.8"
+    "@buffetjs/styles" "3.3.8"
+    "@buffetjs/utils" "3.3.8"
     "@casl/ability" "^4.1.5"
     "@fingerprintjs/fingerprintjs" "3.1.1"
     "@fortawesome/fontawesome-free" "^5.15.3"
@@ -18675,8 +18589,8 @@ strapi-admin@3.6.5:
     sanitize.css "^4.1.0"
     semver "7.3.5"
     sift "13.5.0"
-    strapi-helper-plugin "3.6.5"
-    strapi-utils "3.6.5"
+    strapi-helper-plugin "3.6.8"
+    strapi-utils "3.6.8"
     style-loader "^0.23.1"
     styled-components "^5.2.3"
     terser-webpack-plugin "^1.2.3"
@@ -18688,10 +18602,10 @@ strapi-admin@3.6.5:
     webpackbar "^4.0.0"
     yup "^0.32.9"
 
-strapi-connector-mongoose@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.6.5.tgz#f9449194c93489c6c5c2b67ce22591b7c11a5101"
-  integrity sha512-7Vx0AYc46aeBw4+R0yH+VnKhPdbPrjfJdU63SobFs6+nKoCRk2KlukHkZo5ffsbJjDVKuPd0e3voS8V5xlTw9g==
+strapi-connector-mongoose@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.6.8.tgz#c5aa4c1b5f9ef4b39d48b84aba256c1ec20b6b5a"
+  integrity sha512-szBQhCSOZhobfu5FWS56u2JaqWe/bz7BhMeBBRPXc9SFT5buKVMydrMxRI3l63/Aap6AtHt43OtZ6V5aUZlTDA==
   dependencies:
     lodash "4.17.21"
     mongoose "5.10.8"
@@ -18700,7 +18614,7 @@ strapi-connector-mongoose@3.6.5:
     p-map "4.0.0"
     pluralize "^8.0.0"
     semver "^7.3.5"
-    strapi-utils "3.6.5"
+    strapi-utils "3.6.8"
 
 strapi-database@3.6.8:
   version "3.6.8"
@@ -18712,15 +18626,6 @@ strapi-database@3.6.8:
     p-map "4.0.0"
     strapi-utils "3.6.8"
     verror "^1.10.0"
-
-strapi-generate-api@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-generate-api/-/strapi-generate-api-3.6.5.tgz#5263f2fff2e8b327e3efd1f7b5de398ebb7ebf35"
-  integrity sha512-nnqcXdA2wkzYDW1PiupS7cxC+i4fKcC5uwRu594w1yXxrP6vVR/XQLigGCteSUxHsAz+xNxElsgN3ao7TosXZg==
-  dependencies:
-    lodash "4.17.21"
-    pluralize "^8.0.0"
-    strapi-utils "3.6.5"
 
 strapi-generate-api@3.6.8:
   version "3.6.8"
@@ -18791,17 +18696,6 @@ strapi-generate-service@3.6.8:
     lodash "4.17.21"
     strapi-utils "3.6.8"
 
-strapi-generate@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-generate/-/strapi-generate-3.6.5.tgz#fa315c67fa66dd95f8860a4f13c511321c8eee71"
-  integrity sha512-7+0kYg1VQv7bFRxqdBtIjrH5e680CZ34MjPYurAaUpbSA3OmDSl6+XoyNySWJ6OcuNCRVeGZrpICnbrayKZ6mA==
-  dependencies:
-    async "^2.6.2"
-    fs-extra "^9.1.0"
-    lodash "4.17.21"
-    reportback "^2.0.2"
-    strapi-utils "3.6.5"
-
 strapi-generate@3.6.8:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/strapi-generate/-/strapi-generate-3.6.8.tgz#54a7b8bf84f807dd654d32554201c28bc62d445f"
@@ -18812,38 +18706,6 @@ strapi-generate@3.6.8:
     lodash "4.17.21"
     reportback "^2.0.2"
     strapi-utils "3.6.8"
-
-strapi-helper-plugin@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.5.tgz#061cb7bb5fc484b381eea779fc40fe0069e7d2ec"
-  integrity sha512-B8nG6hvU3hrIQvFqcfICfi7ghKlDLE+4Tn/ZfNVF6eRDvXJNqh0+5x7X0WdE4ZXKEbWfxVeRii05anpljRi9bw==
-  dependencies:
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/custom" "3.3.6"
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
-    "@fortawesome/fontawesome-free" "^5.15.2"
-    "@fortawesome/fontawesome-svg-core" "^1.2.35"
-    "@fortawesome/free-brands-svg-icons" "^5.15.2"
-    "@fortawesome/free-solid-svg-icons" "^5.15.3"
-    "@fortawesome/react-fontawesome" "^0.1.14"
-    bootstrap "^4.6.0"
-    classnames "^2.3.1"
-    immutable "^3.8.2"
-    invariant "^2.2.1"
-    lodash "4.17.21"
-    moment "^2.29.1"
-    react "^16.14.0"
-    react-dom "^16.9.0"
-    react-helmet "^6.1.0"
-    react-intl "4.5.0"
-    react-router "^5.2.0"
-    react-router-dom "^5.0.0"
-    reactstrap "8.4.1"
-    styled-components "^5.2.3"
-    whatwg-fetch "^3.6.2"
 
 strapi-helper-plugin@3.6.8:
   version "3.6.8"
@@ -18922,17 +18784,17 @@ strapi-plugin-content-manager@3.6.8:
     strapi-utils "3.6.8"
     yup "^0.32.9"
 
-strapi-plugin-content-type-builder@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-content-type-builder/-/strapi-plugin-content-type-builder-3.6.5.tgz#bca678dc737fa8f54b0e131be654175b833630ad"
-  integrity sha512-7tIXIYqupwWMBpwqIp0VADuAhlq7pCPgmGs7pLMIAmPH9tY/+97//PvWctRPEOi9z90ojnlfr7Bpx7YzMkkNNA==
+strapi-plugin-content-type-builder@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-content-type-builder/-/strapi-plugin-content-type-builder-3.6.8.tgz#dcfbbec823d997e1f103c64f2b05e53914d46090"
+  integrity sha512-kxCPNHV15JmNz3PUdb/8I5mj4i0n8HicumSvqZh3LxovUaIqd0tGioMd4pJ3BY8XcPI7SpdZrEsbPHTqlQIEvg==
   dependencies:
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/custom" "3.3.6"
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
+    "@buffetjs/core" "3.3.8"
+    "@buffetjs/custom" "3.3.8"
+    "@buffetjs/hooks" "3.3.8"
+    "@buffetjs/icons" "3.3.8"
+    "@buffetjs/styles" "3.3.8"
+    "@buffetjs/utils" "3.3.8"
     "@sindresorhus/slugify" "1.1.0"
     fs-extra "^9.1.0"
     immutable "^3.8.2"
@@ -18948,42 +18810,42 @@ strapi-plugin-content-type-builder@3.6.5:
     redux "^4.0.1"
     redux-immutable "^4.0.0"
     reselect "^4.0.0"
-    strapi-generate "3.6.5"
-    strapi-generate-api "3.6.5"
-    strapi-helper-plugin "3.6.5"
-    strapi-utils "3.6.5"
+    strapi-generate "3.6.8"
+    strapi-generate-api "3.6.8"
+    strapi-helper-plugin "3.6.8"
+    strapi-utils "3.6.8"
     yup "^0.32.9"
 
-strapi-plugin-email@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-email/-/strapi-plugin-email-3.6.5.tgz#7bcc2026300bf047e26591ef9cc91fb34fbdd514"
-  integrity sha512-SyY6T3t3jgIgHt7pkUmdm3pXk7eTrRiWvpNixVcO7iDrtdPTTt0HNDa3Zz9Ls/MRz6Ds6noYfGDVPwulgVjWbQ==
+strapi-plugin-email@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-email/-/strapi-plugin-email-3.6.8.tgz#81a26ff62e4ccfcb802e92bbf3e3a485d0a57e9f"
+  integrity sha512-gfb1Z1YmZMvfSAZzeHCFAE5f5nHbPxX6lBxTW4O9Im7Z0/C9Z7wQkZmWioZVHNynWbEMQC79WzfFoIAZ+pyg/w==
   dependencies:
     lodash "4.17.21"
-    strapi-provider-email-sendmail "3.6.5"
-    strapi-utils "3.6.5"
+    strapi-provider-email-sendmail "3.6.8"
+    strapi-utils "3.6.8"
 
-strapi-plugin-i18n@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-i18n/-/strapi-plugin-i18n-3.6.5.tgz#4ef3ab59d33a9094e91bd9a304d18d756806e70f"
-  integrity sha512-AzSCfMNovZQ6ykgzdFB8zVgZQjFZdSMfStb1gOfRvNCzdnFTafujL+gSuJIHht6JpCOVcstaPG+IaLDyqVnRJQ==
+strapi-plugin-i18n@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-i18n/-/strapi-plugin-i18n-3.6.8.tgz#2e4d7f96923defa3525204846ccafbb9f15d1b11"
+  integrity sha512-741hMHEJQ+Yji5TPxTkw32PZnfp692LjeQjPzROWIPHD8JZ3nG7xpbaF/cUsV86jOCveeBV76oHutI5qBWn3rA==
   dependencies:
-    lodash "4.17.20"
+    lodash "4.17.21"
     p-map "4.0.0"
     pluralize "8.0.0"
-    strapi-utils "3.6.5"
+    strapi-utils "3.6.8"
 
-strapi-plugin-upload@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.5.tgz#9327b796bf0ee4c094d4f095a2f05c5c5bc22a63"
-  integrity sha512-Eptg8K3HzS+ZLBZf5ZB3RmaiBy1zPf5YoPhTN1i0z7N2NtlrbZNlSR/UXcJe5tl57ZmG3vOs2GvPyu3Kc2we6Q==
+strapi-plugin-upload@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.8.tgz#5bc02fb299ccc62a909b273b2f51aedf607c7032"
+  integrity sha512-uVNwtJP7yMqSn02VG7zuECRqdRWQyaZ9G9Wac/+p3GyPXAnzTiitBNMWgWnkZFO/LAulrSvIF2w3IMBIrJfIpw==
   dependencies:
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/custom" "3.3.6"
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
+    "@buffetjs/core" "3.3.8"
+    "@buffetjs/custom" "3.3.8"
+    "@buffetjs/hooks" "3.3.8"
+    "@buffetjs/icons" "3.3.8"
+    "@buffetjs/styles" "3.3.8"
+    "@buffetjs/utils" "3.3.8"
     byte-size "^7.0.1"
     cropperjs "^1.5.11"
     immer "^8.0.1"
@@ -19002,23 +18864,23 @@ strapi-plugin-upload@3.6.5:
     react-router-dom "^5.0.0"
     reactstrap "8.4.1"
     sharp "0.28.1"
-    strapi-helper-plugin "3.6.5"
-    strapi-provider-upload-local "3.6.5"
-    strapi-utils "3.6.5"
+    strapi-helper-plugin "3.6.8"
+    strapi-provider-upload-local "3.6.8"
+    strapi-utils "3.6.8"
     stream-to-array "^2.3.0"
     uuid "^3.2.1"
 
-strapi-plugin-users-permissions@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.6.5.tgz#fe536cfcb20a16bb8c3e45f0db4655cf4b2199c8"
-  integrity sha512-nzNvF1bJZcrjUoGWUfG2u0XT9462Cjz73opFkXHRMlw+lbmyhtqquZDAY7s+EDavjmzxRU6kZ5O6dJLQAEHazA==
+strapi-plugin-users-permissions@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.6.8.tgz#7a46c73bb19881607afae3c527eca8835d532210"
+  integrity sha512-DZPPYMUzcDxadc3BHntEobVwrWwYsI1hHK+ENTU0EVD1w9Zi4h41Bae5DKIuqwRCK2G24Dsmr5G/edcVCFeRCg==
   dependencies:
-    "@buffetjs/core" "3.3.6"
-    "@buffetjs/custom" "3.3.6"
-    "@buffetjs/hooks" "3.3.6"
-    "@buffetjs/icons" "3.3.6"
-    "@buffetjs/styles" "3.3.6"
-    "@buffetjs/utils" "3.3.6"
+    "@buffetjs/core" "3.3.8"
+    "@buffetjs/custom" "3.3.8"
+    "@buffetjs/hooks" "3.3.8"
+    "@buffetjs/icons" "3.3.8"
+    "@buffetjs/styles" "3.3.8"
+    "@buffetjs/utils" "3.3.8"
     "@purest/providers" "^1.0.2"
     bcryptjs "^2.4.3"
     grant-koa "5.4.8"
@@ -19036,34 +18898,22 @@ strapi-plugin-users-permissions@3.6.5:
     reactstrap "8.4.1"
     redux-saga "^0.16.0"
     request "^2.83.0"
-    strapi-helper-plugin "3.6.5"
-    strapi-utils "3.6.5"
+    strapi-helper-plugin "3.6.8"
+    strapi-utils "3.6.8"
     uuid "^3.1.0"
 
-strapi-provider-email-sendmail@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-provider-email-sendmail/-/strapi-provider-email-sendmail-3.6.5.tgz#c5b092f399f279e15b5a37029122bb46843a5108"
-  integrity sha512-HwgvoKVwspCDhWCNNNj0CJNUX9rcXYl9cmlqaUHLZbOxV6ZY3hYPjEAjQFpPm23OeJy1PKQU9AyEuS/y7R1L4Q==
+strapi-provider-email-sendmail@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-provider-email-sendmail/-/strapi-provider-email-sendmail-3.6.8.tgz#6b9f6db31dee6656e4f09fa20479bcb9b6abf87d"
+  integrity sha512-cdlucUiBJpltSJd0/q67SsShTlCUJC8SqU3sMFiJgqsPptbTMxKIG98kUOqRwPbripnBn1ZGIaGjOL0Jlf4fPA==
   dependencies:
     sendmail "^1.6.1"
-    strapi-utils "3.6.5"
+    strapi-utils "3.6.8"
 
-strapi-provider-upload-local@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.5.tgz#0be16515c9c5eeca05211bd9f4b2a93449ccfbe3"
-  integrity sha512-VrOtn+ww9VFJFaFBBFzpuOqN2/zYjIG36SD6zA0KaVJVyot/RNdiHiFTpm/W1a34Z/t3ok3/pt35OlEf55XM8Q==
-
-strapi-utils@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.6.5.tgz#782c510ea8bcc9278ddd99a000a24e6db7723f40"
-  integrity sha512-Z7mtsfxU5MOVxVBI+h9SffrRasr7qk4twfR5s06OWJ7+ov2o1xV+Hl5vLNZMn6hIBftHbNY/7kPSlC4XUfeLmg==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "^2.19.0"
-    lodash "4.17.21"
-    pino "^4.7.1"
-    pluralize "^8.0.0"
-    yup "^0.32.9"
+strapi-provider-upload-local@3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.8.tgz#4666269e96f2ae878f366ae091d09ea69fb0237b"
+  integrity sha512-GkedrjO+T4DN649Ak0SMSS5Vdta0AoZRt9+IWLO9TGLZ7hjtIjnB60kGf0fQKspIhbS7DUqtwuzQAXTd8fXJOg==
 
 strapi-utils@3.6.8:
   version "3.6.8"
@@ -19561,11 +19411,6 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
-
-synchronous-promise@^2.0.6:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.15.tgz#07ca1822b9de0001f5ff73595f3d08c4f720eb8e"
-  integrity sha512-k8uzYIkIVwmT+TcglpdN50pS2y1BDcUnBPK9iJeGu0Pl1lOI8pD6wtzgw91Pjpe+RxtTncw32tLxs/R0yNL2Mg==
 
 table@^5.2.3:
   version "5.4.6"
@@ -21548,18 +21393,6 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-yup@^0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/yup/-/yup-0.27.0.tgz#f8cb198c8e7dd2124beddc2457571329096b06e7"
-  integrity sha512-v1yFnE4+u9za42gG/b/081E7uNW9mUj3qtkmelLbW5YPROZzSH/KUUyJu9Wt8vxFJcT9otL/eZopS0YK1L5yPQ==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    fn-name "~2.0.1"
-    lodash "^4.17.11"
-    property-expr "^1.5.0"
-    synchronous-promise "^2.0.6"
-    toposort "^2.0.2"
 
 yup@^0.32.9:
   version "0.32.9"
