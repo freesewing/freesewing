@@ -1,12 +1,13 @@
-![Le décalage du premier quadrant de la tête de manche](./sleevecapq1offset.svg)
+![The offset in the first quarter of the sleevecap](./sleevecapq1offset.svg)
 
-Cette option contrôle le décalage dans le premier quadrant de la tête de manche.
+This option controls the offset in the first quadrant of the sleevecap.
 
 <Tip>
 
-Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-the-sleevecap) pour une explication détaillée de la construction de la tête de manche et de l'influence des différentes options sur sa forme.
+See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
-## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_sleevecapq1offset_sample.svg "Effet de cette option sur le motif")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevecapq1offset_sample.svg "Effect of this option on the pattern")

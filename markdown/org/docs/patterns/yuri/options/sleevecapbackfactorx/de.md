@@ -1,6 +1,6 @@
-![Die horizontale Position des Rückenbiegepunkts](./sleevecapbackfactorx.svg)
+![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
 
-Diese Option steuert die horizontale Platzierung der Ärmelschaltung auf der Rückseite des Ärmels.
+This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.
 
 <Tip>
 
@@ -9,5 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
-## Effekt dieser Option auf das Muster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapbackfactorx_sample.svg "Effekt dieser Option auf das Muster")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevecapbackfactorx_sample.svg "Effect of this option on the pattern")
