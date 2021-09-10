@@ -21,10 +21,10 @@ export default (part) => {
   if (complete) {
     // Title
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     macro('title', { at: points.title, nr: '2a', title: 'frontLeft' })
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	macro('title', { at: points.title, nr: '1a', title: 'frontRight' })
 }
     delete snippets['cfWaist-notch']
@@ -81,7 +81,7 @@ switch (options.buttonholePlacement){
       })
     }
   }
-  if (options.buttonholePlacement == 'Right over Left'){
+  if (options.buttonholePlacement == 'rightOverLeft'){
   macro('flip')
   }
   return part

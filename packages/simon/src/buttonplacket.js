@@ -26,10 +26,10 @@ export default (part) => {
   for (let id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
- if (options.buttonholePlacement == 'Left over Right'){ macro('flip')}
+ if (options.buttonholePlacement == 'leftOverRight'){ macro('flip')}
   let width = options.buttonPlacketWidth
   switch (options.buttonholePlacement){
-	  case 'Left over Right':
+	  case 'leftOverRight':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -44,7 +44,7 @@ export default (part) => {
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
     points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / 2, points.cfNeck.y + 20),
     new Point(width / 2, points.cfNeck.y - 20),
@@ -83,7 +83,7 @@ export default (part) => {
     // Buttons
     addButtons(part)
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     // Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(180, width / 2)
     points.grainlineTo = points.placketTopEdge.shift(180, width / 2)
@@ -102,7 +102,7 @@ switch (options.buttonholePlacement){
       rotation: -90,
     })
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	    // Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
     points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
@@ -130,7 +130,7 @@ switch (options.buttonholePlacement){
 
     if (sa) {
 	switch (options.buttonholePlacement){
-		case 'Left over Right':
+		case 'leftOverRight':
       paths.sa = paths.saBase
         .offset(sa * -1)
         .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + 3 * sa))
@@ -138,7 +138,7 @@ switch (options.buttonholePlacement){
         .close()
         .attr('class', 'fabric sa')
 		break
-		case 'Right over Left':
+		case 'rightOverLeft':
 		paths.sa = paths.saBase
         .offset(sa * 1)
         .line(new Point(points.placketBottomEdge.x - sa, points.placketBottomEdge.y + 3 * sa))

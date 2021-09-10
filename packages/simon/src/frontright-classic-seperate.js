@@ -4,7 +4,7 @@ export default (part) => {
 
   let width = options.buttonPlacketWidth
   switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -15,7 +15,7 @@ export default (part) => {
   )
   points.placketBottomIn = points.cfHem.shift(180, width / 2)
   break
-  case 'Right over Left':
+  case 'rightOverLeft':
     points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / 2, points.cfNeck.y + 20),
     new Point(width / 2, points.cfNeck.y - 20),
@@ -34,10 +34,10 @@ export default (part) => {
   if (complete) {
     // Title
   switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     macro('title', { at: points.title, nr: '1a', title: 'frontRight' })
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	macro('title', { at: points.title, nr: '2a', title: 'frontLeft' })
   }
     delete snippets['cfWaist-notch']

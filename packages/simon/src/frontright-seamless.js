@@ -5,7 +5,7 @@ export default (part) => {
 
   let width = options.buttonPlacketWidth
   switch (options.buttonholePlacement){
-	  case 'Left over Right':
+	  case 'leftOverRight':
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(0, width * 2.5)
@@ -15,7 +15,7 @@ export default (part) => {
   points.placketBottomMatch = points.cfHem.shift(180, width / 2)
   points.placketTopMatch = points.cfNeck.shift(180, width / 2)
   break
-  case 'Right over Left':
+  case 'rightOverLeft':
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(180, width * 2.5)
@@ -60,11 +60,11 @@ export default (part) => {
     // Buttons
     addButtons(part)
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     // Title
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 }
 

@@ -6,7 +6,7 @@ export default (part) => {
 
   let width = options.buttonPlacketWidth
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -21,7 +21,7 @@ switch (options.buttonholePlacement){
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 break
-case 'Right over Left':
+case 'rightOverLeft':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / 2, points.cfNeck.y + 20),
     new Point(width / 2, points.cfNeck.y - 20),
@@ -66,7 +66,7 @@ case 'Right over Left':
     // Buttons
     addButtons(part)
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     // Title
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
 
@@ -77,7 +77,7 @@ switch (options.buttonholePlacement){
         .line(paths.hemSa.start())
     }
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	// Title
     macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 

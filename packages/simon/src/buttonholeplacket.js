@@ -62,7 +62,7 @@ export default (part) => {
     .line(points.bottomInnerEdge)
 
   paths.seam = paths.saBase.clone().line(points.placketBottomEdge).close().attr('class', 'fabric')
-if (options.buttonholePlacement == 'Right over Left'){
+if (options.buttonholePlacement == 'rightOverLeft'){
   macro('flip')
   }
   // Complete pattern?
@@ -103,7 +103,7 @@ if (options.buttonholePlacement == 'Right over Left'){
     // Buttons
     addButtonHoles(part, 'placketCfNeck')
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     // Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
     points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
@@ -122,7 +122,7 @@ switch (options.buttonholePlacement){
       rotation: -90,
     })
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	// Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(0, -width / 2)
     points.grainlineTo = points.placketTopEdge.shift(0, -width / 2)
@@ -150,7 +150,7 @@ switch (options.buttonholePlacement){
 
     if (sa) {
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
       paths.sa = paths.saBase.offset(sa * -1)
       paths.sa
         .line(new Point(points.bottomInnerEdge.x + sa, points.bottomInnerEdge.y + 3 * sa))
@@ -160,7 +160,7 @@ switch (options.buttonholePlacement){
         .line(paths.sa.start())
         .attr('class', 'fabric sa')
 	break
-	case 'Right over Left':
+	case 'rightOverLeft':
 	paths.sa = paths.saBase.offset(sa * 1)
       paths.sa
         .line(new Point(points.bottomInnerEdge.x - sa, points.bottomInnerEdge.y + 3 * sa))

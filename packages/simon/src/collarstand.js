@@ -143,13 +143,24 @@ export default (part) => {
     })
 
     // Button and buttonhole
-    snippets.button = new Snippet('button', points.leftCf)
     let angle = options.collarStandCurve - options.collarStandBend - 180
+	switch (options.buttonholePlacement){
+		case 'leftOverRight':
+	snippets.button = new Snippet('button', points.leftCf)
     points.buttonhole = points.rightCf.shift(angle, 3)
     snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
       'data-rotate',
       90 - angle
     )
+	break
+	case 'rightOverLeft':
+	snippets.button = new Snippet('button', points.rightCf)
+    points.buttonhole = points.leftCf.shift(angle, -3)
+    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
+      'data-rotate',
+      90 + angle
+    )
+	}
 
     if (sa) {
       paths.sa = paths.seam.offset(sa)

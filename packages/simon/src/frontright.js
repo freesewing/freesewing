@@ -5,7 +5,7 @@ import frontRightSeamless from './frontright-seamless'
 
 export default (part) => {
   let { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
-	  if (options.buttonholePlacement == 'Left over Right'){
+	  if (options.buttonholePlacement == 'leftOverRight'){
   macro('flip')
   }
   if (complete) {

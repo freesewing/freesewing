@@ -180,7 +180,7 @@ export default {
       list: ['auto', 'never', 'always'],
       dflt: 'auto',
     },
-	buttonholePlacement: {dflt:'Left over Right', list:['Left over Right','Right over Left']},
+	buttonholePlacement: {dflt:'leftOverRight', list:['leftOverRight','rightOverLeft']},
     // Bool
     boxPleat: { bool: false },
     // Counters

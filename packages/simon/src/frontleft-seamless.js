@@ -12,7 +12,7 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
-	  if (options.buttonholePlacement == 'Right over Left'){
+	  if (options.buttonholePlacement == 'rightOverLeft'){
   macro('flip')
   }
   // Complete pattern?
@@ -46,10 +46,10 @@ export default (part) => {
 
     // Title
 switch (options.buttonholePlacement){
-	case 'Left over Right':
+	case 'leftOverRight':
     macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 	break 
-	case'Right over Left':
+	case'rightOverLeft':
 	macro('title', { at: points.title, nr: 1, title: 'frontRight' })
 }
     if (sa) {
