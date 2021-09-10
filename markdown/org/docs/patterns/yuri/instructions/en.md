@@ -113,8 +113,8 @@ If you do not wish to have the decorative rim, you may still want to understitch
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
 You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
   
-</Note>  
-  
+</Note>
+
 ## Step 10: Attach the Hood
 
 - With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
