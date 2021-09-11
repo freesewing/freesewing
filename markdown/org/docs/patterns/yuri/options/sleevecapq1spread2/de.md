@@ -1,6 +1,6 @@
-![Die Aufwärtsverteilung im ersten Quadranten der Ärmel](./sleevecapq1spread2.svg)
+![The upward spread in the first quadrant of the sleevecap](./sleevecapq1spread2.svg)
 
-Diese Option steuert die Aufwärtsverteilung im ersten Quadranten der Ärmel.
+This option controls the upward spread in the first quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,5 +9,5 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
-## Effekt dieser Option auf das Muster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapq1spread2_sample.svg "Effekt dieser Option auf das Muster")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevecapq1spread2_sample.svg "Effect of this option on the pattern")
