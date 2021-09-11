@@ -110,9 +110,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
    *  Test validity of the pattern's options
    */
   it('Pattern options:', () => true)
-  console.log(pattern.config.options)
   for (let name in pattern.config.options) {
-    console.log(name)
     let option = pattern.config.options[name]
     let type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {

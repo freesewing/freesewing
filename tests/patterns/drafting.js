@@ -17,7 +17,7 @@ const isGarment = design => ([
  * @param object models: Imported @freesewing/models
  * @param object patterns: Imported @freesewing/pattern-info
  */
-const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
+const testPatternDrafting = (design, Pattern, expect, models, patterns, log=false) => {
   // Helper method to try/catch pattern drafting
   const doesItDraft = (pattern, log=false) => {
     try {
@@ -49,7 +49,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
           doesItDraft(
             new Pattern({
               measurements: ourModels[size]
-            })
+            }), log
           )
         ).to.equal(true)
       })
@@ -82,7 +82,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
           doesItDraft(
             new Pattern({
               measurements: models[size]
-            })
+            }), log
           )
         ).to.equal(true)
       })
@@ -106,7 +106,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
             settings: {
               only: [name]
             }
-          })
+          }), log
         )
       ).to.equal(true)
     })
@@ -131,7 +131,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
               paperless: true,
               sa,
               }
-            })
+            }), log
           )
         ).to.equal(true)
       })
