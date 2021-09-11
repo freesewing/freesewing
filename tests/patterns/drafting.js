@@ -41,7 +41,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
    * Draft pattern for different models
    */
   if (isGarment(design)) {
-    it('Draft for different models:', () => true)
+    it('Draft for human models:', () => true)
 
     for (let size in ourModels) {
       it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
@@ -49,6 +49,39 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns) => {
           doesItDraft(
             new Pattern({
               measurements: ourModels[size]
+            })
+          )
+        ).to.equal(true)
+      })
+    }
+
+    // Do the same for fantistical models (dolls, giants)
+    it('Draft for non-human models:', () => true)
+
+    const fractionModel = fraction => {
+      const model = {}
+      for (const [measie, value] of Object.entries(ourModels.size40)) {
+        model[measie] = value * fraction
+      }
+
+      return model
+    }
+    const models = {
+      // These are just names, don't read too much into it
+      'Gnome (0.1)': fractionModel(0.1),
+      'Halfling (0.2)': fractionModel(0.2),
+      'Goblin (0.5)': fractionModel(0.5),
+      'Dwarf (0.75)': fractionModel(0.75),
+      'Elf (1.5)': fractionModel(1.5),
+      'Ogre (2.5)': fractionModel(2.5),
+      'Firbolg (5)': fractionModel(5),
+    }
+    for (let size in models) {
+      it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
+        expect(
+          doesItDraft(
+            new Pattern({
+              measurements: models[size]
             })
           )
         ).to.equal(true)

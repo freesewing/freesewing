@@ -73,11 +73,45 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
     /*
      * Sample pattern for different models
      */
-    it('Sample pattern for different models:' , () => {
+    it('Sample pattern for size range:' , () => {
       expect(doesItSample(new Pattern({
         sample: {
           type: 'models',
           models: ourModels,
+        },
+        measurements
+      }))).to.equal(true)
+    })
+  }
+
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    /*
+     * Sample pattern with fractional sizes (antperson tests)
+     */
+    const fractionModel = fraction => {
+      const model = {}
+      for (const [measie, value] of Object.entries(ourModels.size40)) {
+        model[measie] = value * fraction
+      }
+
+      return model
+    }
+    const models = {
+      oneTenth: fractionModel(0.1),
+      oneFifth: fractionModel(0.2),
+      oneHalf: fractionModel(0.5),
+      threeQuarters: fractionModel(0.5),
+      oneFifty: fractionModel(1.5),
+      twoFifty: fractionModel(2.5),
+      five: fractionModel(5),
+      ten: fractionModel(10),
+    }
+
+    it('Sample pattern for fantastic measurements:' , () => {
+      expect(doesItSample(new Pattern({
+        sample: {
+          type: 'models',
+          models,
         },
         measurements
       }))).to.equal(true)
