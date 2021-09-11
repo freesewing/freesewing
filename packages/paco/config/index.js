@@ -95,8 +95,8 @@ export default {
     elasticatedHem: { bool: true },
 
     // Elastic
-    waistbandWidth: { mm: 35, min: 10, max: 60 },
-    ankleElastic: { mm: 70, min: 10, max: 130 },
+    waistbandWidth: { pct: 3, min: 1, max: 6 },
+    ankleElastic: { pct: 5, min: 1, max: 13 },
     heelEase: { pct: 5, min: 0, max: 50 },
 
     // Pockets

@@ -8,8 +8,8 @@ export default function (part) {
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
   points.topLeft = new Point(0, 0)
-  points.midLeft = new Point(0, options.ankleElastic + 1)
-  points.bottomLeft = new Point(0, options.ankleElastic * 2 + 2)
+  points.midLeft = new Point(0, store.get('ankleElastic') * 1.05)
+  points.bottomLeft = new Point(0, store.get('ankleElastic') * 2.1)
 
   points.topRight = points.topLeft.shift(0, len)
   points.midRight = points.midLeft.shift(0, len)

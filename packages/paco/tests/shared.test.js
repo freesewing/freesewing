@@ -26,7 +26,8 @@ testPatternDrafting(
   Paco,
   expect,
   models,
-  patterns
+  patterns,
+  true
 )
 
 // Test sampling

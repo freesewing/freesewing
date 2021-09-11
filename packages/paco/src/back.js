@@ -55,9 +55,10 @@ export default function (part) {
   points.kneeInCp1 = points.kneeIn
 
   // Shorter leg if we have an elasticated hem
+  store.set('ankleElastic', measurements.waistToFloor * options.ankleElastic)
   if (options.elasticatedHem) {
     for (const p of ['floor', 'floorIn', 'floorOut'])
-      points[p] = points[p].shift(90, options.ankleElastic)
+      points[p] = points[p].shift(90, store.get('ankleElastic'))
   }
 
   // Adapt waist so we can get these pants over our bum without a zipper
@@ -68,10 +69,11 @@ export default function (part) {
   points.seatOut = points.seatOut.shift(angle, delta)
 
   // Cut the top of our pants short to make room for the waistband/elastic
-  points.styleWaistOut = drawOutseam(true).reverse().shiftAlong(options.waistbandWidth)
+  store.set('waistbandWidth', measurements.waistToFloor * options.waistbandWidth)
+  points.styleWaistOut = drawOutseam(true).reverse().shiftAlong(store.get('waistbandWidth'))
   points.styleWaistIn = points.styleWaistIn.shiftTowards(
     points.crossSeamCurveStart,
-    options.waistbandWidth
+    store.get('waistbandWidth')
   )
 
   // Add the (optional) front pocket extention
