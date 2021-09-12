@@ -14,7 +14,11 @@ export default function (part) {
     measurements,
     snippets,
     Snippet,
+    raise
   } = part.shorthand()
+
+  // This pattern needs a rewrite
+  raise.warning('Theo in its current incarnation is deprecated. A complete rewrite based on our Titan block is on [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278). Until that time, if it works, great. If not ¯\\\\__(ツ)\\__/¯')
 
   const calculateSlashCorner = () => {
     points[901] = utils.beamsIntersect(points[20], points[19], points[26], points[4])
