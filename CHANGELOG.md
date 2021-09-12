@@ -20,6 +20,12 @@
  - Added measurements for dolls & giants to Workbench measurments selector
  - Added sampling for dolls & giants to Workbench tests
 
+### hortensia
+
+#### Changed
+
+ - Changed the `handleWidth` option type from `mm` to `pct`
+
 ### jaeger
 
 #### Changed
