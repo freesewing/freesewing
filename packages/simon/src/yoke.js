@@ -1,8 +1,8 @@
 export default (part) => {
-  let { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
+  const { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
     part.shorthand()
 
-  for (let id in paths) {
+  for (const id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
 

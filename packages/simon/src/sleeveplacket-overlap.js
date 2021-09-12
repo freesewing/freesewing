@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     measurements,
     sa,
     Point,
@@ -12,10 +12,11 @@ export default (part) => {
     paperless,
     macro,
     options,
+    store
   } = part.shorthand()
 
-  let width = options.sleevePlacketWidth
-  let length = measurements.shoulderToWrist * options.sleevePlacketLength
+  const width = store.get('sleevePlacketWidth')
+  const length = measurements.shoulderToWrist * options.sleevePlacketLength
 
   points.midLeft = new Point(0, 0)
   points.midLen = points.midLeft.shift(0, length)

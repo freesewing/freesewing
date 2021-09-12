@@ -1,7 +1,7 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let {
+  const {
     utils,
     sa,
     Point,
@@ -23,11 +23,11 @@ export default (part) => {
     return part
   }
 
-  for (let id in paths) {
+  for (const id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
   macro('flip')
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),

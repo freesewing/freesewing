@@ -1,7 +1,7 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default (part) => {
-  let { sa, points, Path, paths, complete, paperless } = part.shorthand()
+  const { sa, points, Path, paths, complete, paperless } = part.shorthand()
 
   draftFrenchCuff(part)
 

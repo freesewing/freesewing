@@ -1,7 +1,7 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let {
+  const {
     utils,
     sa,
     Point,
@@ -23,9 +23,9 @@ export default (part) => {
     return part
   }
 
-  for (let id in paths) delete part.paths[id]
-  let width = options.buttonholePlacketWidth
-  let fold = options.buttonholePlacketFoldWidth
+  for (const id in paths) delete part.paths[id]
+  const width = store.get('buttonholePlacketWidth')
+  const fold = store.get('buttonholePlacketFoldWidth')
 
   points.topInnerEdge = utils.lineIntersectsCurve(
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y + 20),
@@ -140,7 +140,7 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     let offset = 0
-    for (let pid of [
+    for (const pid of [
       'placketBottomOuterEdgeUnder',
       'placketBottomOuterEdgeFold',
       'placketBottomOuterEdgeOver',

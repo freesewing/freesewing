@@ -1,6 +1,7 @@
 export default (part) => {
-  let {
+  const {
     measurements,
+    store,
     sa,
     Point,
     points,
@@ -15,12 +16,12 @@ export default (part) => {
   } = part.shorthand()
 
   const draft = function (tweak = 1) {
-    let length = measurements.neck * (1 + options.collarEase) * tweak
-    let width = options.collarStandWidth
-    let half = length / 2
-    let bend = options.collarStandBend * -1
-    let curve = options.collarStandCurve - options.collarStandBend
-    let hinge = 90 + (bend + curve) / 2
+    const length = measurements.neck * (1 + options.collarEase) * tweak
+    const width = store.get('collarStandWidth')
+    const half = length / 2
+    const bend = options.collarStandBend * -1
+    const curve = options.collarStandCurve - options.collarStandBend
+    const hinge = 90 + (bend + curve) / 2
 
     // Center line
     points.center = new Point(0, 0)
@@ -34,7 +35,7 @@ export default (part) => {
     points.rightBottomHinge = points.hinge.shift(180 + hinge, width / 2)
     points.rightTopCf = points.rightCf.shift(curve + 90, width / 2)
     points.rightBottomCf = points.rightCf.shift(curve - 90, width / 2)
-    points.rightBottomEdge = points.rightBottomCf.shift(curve, options.buttonholePlacketWidth / 2)
+    points.rightBottomEdge = points.rightBottomCf.shift(curve, store.get('buttonholePlacketWidth') / 2)
 
     // Add control points (right side only)
     points.bottomMidCp2 = points.bottomMid.shift(0, half * 0.2)
@@ -42,12 +43,12 @@ export default (part) => {
     points.rightBottomHingeCp2 = points.rightBottomHinge.shift(hinge - 90, half * 0.1)
     points.rightBottomCfCp1 = points.rightBottomCf.shift(180 + curve, half * 0.1)
     points.rightBottomEdgeCp2 = points.rightBottomCf.rotate(-90, points.rightBottomEdge)
-    points.rightTopCfCp1 = points.rightTopCf.shift(curve, options.buttonholePlacketWidth / 2)
+    points.rightTopCfCp1 = points.rightTopCf.shift(curve, store.get('buttonholePlacketWidth') / 2)
     points.topMidCp1 = points.topMid.shift(0, half * 0.2)
     points.rightTopHingeCp2 = points.rightTopHinge.shift(90 + hinge, half * 0.2)
     points.rightTopHingeCp1 = points.rightTopHinge.shift(hinge - 90, half * 0.1)
     points.topEdgeCp1 = points.rightTopCf.rotate(-90, points.rightBottomEdge)
-    points.rightTopCfCp2 = points.rightTopCf.shift(180 + curve, options.buttonholePlacketWidth / 2)
+    points.rightTopCfCp2 = points.rightTopCf.shift(180 + curve, store.get('buttonholePlacketWidth') / 2)
 
     // Now do the left side
     points.leftCf = points.rightCf.flipX()
@@ -58,8 +59,8 @@ export default (part) => {
     points.leftTopCfCp1 = points.rightTopCfCp2.flipX()
     points.leftTopCf = points.rightTopCf.flipX()
     points.leftBottomCf = points.rightBottomCf.flipX()
-    points.leftBottomEdge = points.leftBottomCf.shift(bend + 180, options.buttonPlacketWidth / 2)
-    points.leftTopCfCp2 = points.leftTopCf.shift(bend + 180, options.buttonPlacketWidth / 2)
+    points.leftBottomEdge = points.leftBottomCf.shift(bend + 180, store.get('buttonPlacketWidth') / 2)
+    points.leftTopCfCp2 = points.leftTopCf.shift(bend + 180, store.get('buttonPlacketWidth') / 2)
     points.leftBottomEdgeCp1 = points.leftBottomCf.rotate(90, points.leftBottomEdge)
     points.leftBottomCfCp2 = points.rightBottomCfCp1.flipX()
     points.leftBottomHingeCp1 = points.rightBottomHingeCp2.flipX()
@@ -144,7 +145,7 @@ export default (part) => {
 
     // Button and buttonhole
     snippets.button = new Snippet('button', points.leftCf)
-    let angle = options.collarStandCurve - options.collarStandBend - 180
+    const angle = options.collarStandCurve - options.collarStandBend - 180
     points.buttonhole = points.rightCf.shift(angle, 3)
     snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
       'data-rotate',
@@ -200,7 +201,7 @@ export default (part) => {
     macro('ld', {
       from: points.rightBottomCf,
       to: points.rightTopCf,
-      d: -15 - sa - options.buttonholePlacketWidth / 2,
+      d: -15 - sa - store.get('buttonholePlacketWidth') / 2,
     })
     macro('vd', {
       from: points.rightBottomCf,

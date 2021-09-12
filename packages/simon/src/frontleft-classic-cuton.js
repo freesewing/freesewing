@@ -1,11 +1,11 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let { sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+  const { store, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
     part.shorthand()
 
-  let fold = options.buttonholePlacketFoldWidth
-  let width = options.buttonholePlacketWidth
+  const fold = store.get('buttonholePlacketFoldWidth')
+  const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck.shift(180, fold * 2)
   points.placketTopInnerEdgeFold = points.placketCfNeck.shift(0, width / 2)
   points.placketTopInnerEdgeOver = points.placketCfNeck.shift(0, width / 2 - fold)
@@ -117,7 +117,7 @@ export default (part) => {
       to: points.hips,
     })
     let offset = 0
-    for (let pid of [
+    for (const pid of [
       'placketTopOuterEdgeUnder',
       'placketTopOuterEdgeFold',
       'placketTopOuterEdgeOver',

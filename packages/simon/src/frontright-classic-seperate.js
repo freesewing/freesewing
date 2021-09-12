@@ -1,8 +1,8 @@
 export default (part) => {
-  let { snippets, utils, sa, Point, points, paths, complete, paperless, macro, options } =
+  const { store, snippets, utils, sa, Point, points, paths, complete, paperless, macro, options } =
     part.shorthand()
 
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -57,7 +57,7 @@ export default (part) => {
       to: points.placketTopIn,
       x: points.placketTopIn.x + sa + 15,
     })
-    for (let pid of ['Armhole', 'Waist', 'Hips']) {
+    for (const pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
         to: points[pid.toLowerCase()],

@@ -4,7 +4,7 @@ export default (part) => {
   let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   draftBarrelCuff(part)
-  let height = store.get('cuffHeight')
+  const height = store.get('cuffHeight')
   macro('round', {
     from: points.topRight,
     to: points.bottomLeft,

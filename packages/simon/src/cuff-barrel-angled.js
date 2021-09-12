@@ -1,10 +1,10 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared'
 
 export default (part) => {
-  let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   draftBarrelCuff(part)
-  let height = store.get('cuffHeight')
+  const height = store.get('cuffHeight')
 
   points.leftAngleTop = points.topLeft.shift(0, height / 3)
   points.leftAngleBottom = points.topLeft.shift(-90, height / 3)

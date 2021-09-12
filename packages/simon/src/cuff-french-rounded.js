@@ -1,9 +1,9 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default (part) => {
-  let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
   draftFrenchCuff(part)
-  let height = store.get('cuffHeight')
+  const height = store.get('cuffHeight')
   macro('round', {
     from: points.topRight,
     to: points.bottomLeft,
