@@ -1,4 +1,4 @@
-const nonHuman = require('./non-human-measurements.js')
+const nonHumanMeasurements = require('./non-human-measurements.js')
 /*
  * This runs unit tests for pattern sampling
  * It expects the following:
@@ -11,6 +11,8 @@ const nonHuman = require('./non-human-measurements.js')
  * @param object patterns: Imported @freesewing/pattern-info
  */
 const testPatternSampling = (design, Pattern, expect, models, patterns) => {
+  // Load non-human measurements
+  const nonHuman = nonHumanMeasurements(models)
 
   // Helper method to try/catch pattern sampling
   const doesItSample = (pattern, log=false) => {

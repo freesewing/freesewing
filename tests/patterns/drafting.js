@@ -1,4 +1,4 @@
-const nonHuman = require('./non-human-measurements.js')
+const nonHumanMeasurements = require('./non-human-measurements.js')
 
 // Some patterns are different
 const isGarment = design => ([
@@ -20,6 +20,9 @@ const isGarment = design => ([
  * @param object patterns: Imported @freesewing/pattern-info
  */
 const testPatternDrafting = (design, Pattern, expect, models, patterns, log=false) => {
+  // Load non-human measurements
+  const nonHuman = nonHumanMeasurements(models)
+
   // Helper method to try/catch pattern drafting
   const doesItDraft = (pattern, log=false) => {
     try {
