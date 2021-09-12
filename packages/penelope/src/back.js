@@ -26,10 +26,12 @@ export default function (part) {
       options.backVentLength * store.get('skirtLength')
     )
 
-    points.vLeg = points.lLeg.shift(180, options.backVentWidth)
-    points.vHem = points.lHem.shift(180, options.backVentWidth)
+    points.vLeg = points.rLeg.shiftFractionTowards(points.lLeg, 1 + options.backVentWidth)
+    points.vHem = points.rHem.shiftFractionTowards(points.lHem, 1 + options.backVentWidth)
     points.vTop = points.vLeg.shift(90, backVentLength)
-    points.lVent = points.vTop.shift(0, options.backVentWidth).shift(90, options.backVentWidth)
+    points.lVent = points.vTop
+      .shift(0, points.lLeg.dx(points.rLeg) * options.backVentWidth)
+      .shift(90, points.lLeg.dx(points.rLeg) * options.backVentWidth)
 
     paths.vent = new Path()
       .move(points.lVent)

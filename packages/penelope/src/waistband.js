@@ -12,6 +12,7 @@ export default function (part) {
     sa,
     paperless,
     macro,
+    store
   } = part.shorthand()
 
   if (!options.waistBand) {
@@ -19,17 +20,17 @@ export default function (part) {
     return part
   }
 
-  let waistEase = options.waistEase
   let waist = measurements.waist
-  waist += waistEase
+  waist += measurements.waist * options.waistEase
+  store.set('waistBandWidth', options.waistBandWidth * measurements.waistToKnee)
 
   points.TL = new Point(0, 0)
   points.BL = new Point(0, waist / 2 + options.waistBandOverlap)
-  points.TR = new Point(options.waistBandWidth, 0)
-  points.BR = new Point(options.waistBandWidth, waist / 2 + options.waistBandOverlap)
+  points.TR = new Point(store.get('waistBandWidth'), 0)
+  points.BR = new Point(store.get('waistBandWidth'), waist / 2 + options.waistBandOverlap)
 
-  points.titleAnchor = new Point(options.waistBandWidth / 2, waist / 6)
-  points.logoAnchor = new Point(options.waistBandWidth / 2, waist / 3)
+  points.titleAnchor = new Point(store.get('waistBandWidth') / 2, waist / 6)
+  points.logoAnchor = new Point(store.get('waistBandWidth') / 2, waist / 3)
 
   paths.outline = new Path()
     .move(points.TL)
