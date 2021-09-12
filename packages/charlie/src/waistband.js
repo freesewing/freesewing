@@ -13,14 +13,17 @@ export default (part) => {
     snippets,
     Snippet,
     sa,
+    measurements,
   } = part.shorthand()
+
+  store.set('waistbandWidth', measurements.waistToFloor * options.waistbandWidth)
 
   if (options.waistbandCurve > 0) {
     return part
   }
 
   points.topLeft = new Point(0, 0)
-  points.top = new Point(options.waistbandWidth, 0)
+  points.top = new Point(store.get('waistbandWidth'), 0)
   points.topRight = new Point(points.top.x * 2, 0)
   points.bottomLeft = new Point(
     0,

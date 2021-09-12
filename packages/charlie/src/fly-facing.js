@@ -6,6 +6,9 @@ export default (part) => {
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]
 
+  // Anchor for sampling/grid
+  points.anchor = points.flyTop.clone()
+
   paths.saBase = new Path()
     .move(points.fork)
     .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)

@@ -22,6 +22,9 @@ export default (part) => {
   )
   points.bottomRight = points.bottomLeft.flipX()
 
+  // Anchor for sampling/grid
+  points.anchor = points.waistbandLeft.shiftFractionTowards(points.waistbandRight, 0.5)
+
   paths.seam = new Path()
     .move(points.waistbandRight)
     .line(points.waistbandLeft)

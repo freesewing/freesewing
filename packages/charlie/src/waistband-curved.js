@@ -33,9 +33,9 @@ export default (part) => {
   points.cbBottom = points.cfLeftBottom.rotate(0.5 * angle, points.center)
   points.cfRightBottom = points.cfLeftBottom.rotate(angle, points.center)
 
-  points.cfLeftTop = points.cfLeftBottom.shiftTowards(points.center, options.waistbandWidth)
+  points.cfLeftTop = points.cfLeftBottom.shiftTowards(points.center, store.get('waistbandWidth'))
   points.cbTop = points.cfLeftTop.rotate(0.5 * angle, points.center)
-  points.cfRightTop = points.cfRightBottom.shiftTowards(points.center, options.waistbandWidth)
+  points.cfRightTop = points.cfRightBottom.shiftTowards(points.center, store.get('waistbandWidth'))
 
   // Calculate control points for circle arc
   // https://math.stackexchange.com/questions/873224/calculate-control-points-of-cubic-bezier-curve-approximating-a-part-of-a-circle
@@ -44,8 +44,8 @@ export default (part) => {
   points.cfLeftBottomCp = points.cfLeftBottom.shift(90, a * radius)
   points.cfRightBottomCp = points.cfRightBottom.shift(angle - 90, a * radius)
 
-  points.cfLeftTopCp = points.cfLeftTop.shift(90, a * (radius - options.waistbandWidth))
-  points.cfRightTopCp = points.cfRightTop.shift(angle - 90, a * (radius - options.waistbandWidth))
+  points.cfLeftTopCp = points.cfLeftTop.shift(90, a * (radius - store.get('waistbandWidth')))
+  points.cfRightTopCp = points.cfRightTop.shift(angle - 90, a * (radius - store.get('waistbandWidth')))
 
   // Add fly underlap
   points.edgeRightTop = points.cfRightTop.shiftTowards(
@@ -132,11 +132,11 @@ export default (part) => {
       .attr('data-text', 'leftSide')
       .attr('data-text-class', 'center')
 
-    let buttonScale = options.waistbandWidth / 14
+    let buttonScale = store.get('waistbandWidth') / 14
     points.button = points.edgeRightBottom.shiftFractionTowards(points.cfRightTop, 0.6)
     snippets.button = new Snippet('button', points.button).attr('data-scale', buttonScale)
     points.buttonhole = new Point(
-      points.cfLeftTop.x + 0.4 * options.waistbandWidth,
+      points.cfLeftTop.x + 0.4 * store.get('waistbandWidth'),
       points.cfLeftTop.y - store.get('waistbandFly') * 0.4
     )
     snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr(

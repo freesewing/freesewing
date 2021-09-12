@@ -103,7 +103,7 @@ export default {
 
     // Style (from Titan)
     waistHeight: { pct: -4, min: -50, max: 30 },
-    waistbandWidth: { mm: 40, min: 20, max: 60 },
+    waistbandWidth: { pct: 3.5, min: 2, max: 5 },
     lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
 
