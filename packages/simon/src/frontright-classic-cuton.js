@@ -1,10 +1,10 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let { utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+  const { store, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
     part.shorthand()
 
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),

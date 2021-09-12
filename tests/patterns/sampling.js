@@ -10,6 +10,10 @@ const nonHumanMeasurements = require('./non-human-measurements.js')
  * @param object models: Imported @freesewing/models
  * @param object patterns: Imported @freesewing/pattern-info
  */
+
+// Some patterns are deprecated and won't support more stringent doll/giant tests
+const deprecated = ['theo']
+
 const testPatternSampling = (design, Pattern, expect, models, patterns) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
@@ -88,19 +92,21 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
   }
 
   if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
-    /*
-     * Sample pattern for dolls & giants
-     */
-    for (const type of ['dolls', 'giants']) {
-      it(`Sample pattern for ${type}:` , () => {
-        expect(doesItSample(new Pattern({
-          sample: {
-            type: 'models',
-            models: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'][type]
-          },
-          measurements
-        }))).to.equal(true)
-      })
+    if (deprecated.indexOf(design) === -1) {
+      /*
+       * Sample pattern for dolls & giants
+       */
+      for (const type of ['dolls', 'giants']) {
+        it(`Sample pattern for ${type}:` , () => {
+          expect(doesItSample(new Pattern({
+            sample: {
+              type: 'models',
+              models: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'][type]
+            },
+            measurements
+          }))).to.equal(true)
+        })
+      }
     }
   }
 

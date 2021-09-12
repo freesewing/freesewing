@@ -41,7 +41,7 @@ export default function (part) {
   /**
    * Locate collarstand center back bottom point
    * We are initially moving this point too far (1.1 x the length)
-   * but we will fix teh length of the curve next
+   * but we will fix the length of the curve next
    * Because the new endpoint is so close to the original, there's no need to
    * split this curve. We can use the control point as is.
    */

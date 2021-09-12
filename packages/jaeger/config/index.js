@@ -223,7 +223,7 @@ export default {
     collarNotchDepth: { pct: 15, min: 15, max: 50 },
     collarNotchAngle: { deg: 45, min: 30, max: 60 },
     collarNotchReturn: { pct: 100, min: 50, max: 100 },
-    collarRoll: { mm: 2.5, min: 0, max: 5 },
+    collarRoll: { pct: 5, min: 0, max: 10 },
 
     frontDartPlacement: { pct: 55, min: 45, max: 60 },
     sideFrontPlacement: { pct: 85, min: 80, max: 90 },

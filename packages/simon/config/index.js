@@ -192,14 +192,14 @@ export default {
     collarStandCurve: { deg: 2, min: 0, max: 5 },
     collarFlare: { deg: 4, min: 0, max: 10 },
 
-    // Millimeter
-    buttonPlacketWidth: { mm: 20, min: 10, max: 30 },
-    buttonholePlacketWidth: { mm: 35, min: 20, max: 45 },
-    buttonholePlacketFoldWidth: { mm: 6, min: 3, max: 10 },
-    collarStandWidth: { mm: 35, min: 15, max: 60 },
-    sleevePlacketWidth: { mm: 25, min: 15, max: 35 },
-    boxPleatWidth: { mm: 35, min: 5, max: 65 },
-    boxPleatFold: { mm: 5, min: 1, max: 15 },
+    // Used to be millimeter (now pct)
+    buttonPlacketWidth: { pct: 5, min: 2, max: 8 },
+    buttonholePlacketWidth: { pct: 8, min: 4, max: 12 },
+    buttonholePlacketFoldWidth: { pct: 16, min: 8, max: 24 },
+    collarStandWidth: { pct: 8, min: 3, max: 13 },
+    sleevePlacketWidth: { pct: 13, min: 8, max: 18 },
+    boxPleatWidth: { pct: 7, min: 4, max: 10 },
+    boxPleatFold: { pct: 15, min: 10, max: 20 },
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },

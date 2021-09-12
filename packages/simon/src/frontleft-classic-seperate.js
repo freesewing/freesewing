@@ -1,8 +1,8 @@
 export default (part) => {
-  let { utils, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+  const { utils, sa, Point, points, Path, paths, store, snippets, complete, paperless, macro, options } =
     part.shorthand()
 
-  let fold = options.buttonholePlacketFoldWidth
+  const fold = store.get('buttonholePlacketFoldWidth')
   points.neckEdge = utils.lineIntersectsCurve(
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y + 20),
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y - 20),
@@ -69,7 +69,7 @@ export default (part) => {
       to: points.s3CollarSplit,
       x: points.neckEdge.x - sa - 30,
     })
-    for (let pid of ['Armhole', 'Waist', 'Hips']) {
+    for (const pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
         to: points[pid.toLowerCase()],

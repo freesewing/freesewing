@@ -6,12 +6,14 @@
  */
 
 export default function (part) {
-  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand()
+  const { paperless, sa, snippets, complete, points, options, macro, paths, Path, store } = part.shorthand()
 
   // Add extra fabric for collar roll
-  points.collarCbTopRoll = points.collarCbTop.shift(-90, options.collarRoll)
-  points.collarCbTopCpRoll = points.collarCbTopCp.shift(-90, options.collarRoll)
-  points.notchTipRoll = points.notch.shiftOutwards(points.notchTip, options.collarRoll)
+  store.set('collarRoll', points.collarstandCbTop.dist(points.collarCbTop) * options.collarRoll)
+  points.collarCbTopRoll = points.collarCbTop.shift(-90, store.get('collarRoll'))
+  points.collarCbTopCpRoll = points.collarCbTopCp.shift(-90, store.get('collarRoll'))
+  points.notchTipRoll = points.notch.shiftOutwards(points.notchTip, store.get('collarRoll'))
+
 
   // Mirror to create left half
   let mirror = [

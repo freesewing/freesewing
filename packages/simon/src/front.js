@@ -1,14 +1,14 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  let { store, measurements, sa, Point, points, Path, paths, complete, macro, snippets, options } =
+  const { store, measurements, sa, Point, points, Path, paths, complete, macro, snippets, options } =
     part.shorthand()
 
   // Clean up
-  for (let i in paths) {
+  for (const i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
   }
-  for (let i in snippets) {
+  for (const i in snippets) {
     if (i.indexOf('otch')) delete snippets[i]
   }
 

@@ -1,8 +1,8 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let { sa, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
-  let width = options.buttonholePlacketWidth
+  const { sa, points, Path, paths, complete, paperless, store, macro, options } = part.shorthand()
+  const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
@@ -58,7 +58,7 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     let offset = 0
-    for (let pid of ['placketBottomFold2', 'placketBottomFold1', 'cfHem', 'hips']) {
+    for (const pid of ['placketBottomFold2', 'placketBottomFold1', 'cfHem', 'hips']) {
       offset += 15
       macro('hd', {
         from: points.placketBottomEdge,

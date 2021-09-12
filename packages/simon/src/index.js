@@ -33,7 +33,7 @@ Pattern.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
 Pattern.prototype.draftSleeveBase = function (part) {
-  let brian = new Brian(this.settings)
+  const brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
 Pattern.prototype.draftBack = draftBack

@@ -1,7 +1,7 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  let {
+  const {
     store,
     measurements,
     sa,
@@ -17,6 +17,15 @@ export default (part) => {
     options,
   } = part.shorthand()
 
+  // Add pct options (that used to be mm) to the store
+  store.set('buttonPlacketWidth', measurements.neck * options.buttonPlacketWidth)
+  store.set('buttonholePlacketWidth', measurements.neck * options.buttonholePlacketWidth)
+  store.set('buttonholePlacketFoldWidth', store.get('buttonholePlacketWidth') * options.buttonholePlacketFoldWidth)
+  store.set('collarStandWidth', measurements.neck * options.collarStandWidth)
+  store.set('sleevePlacketWidth', measurements.wrist * options.sleevePlacketWidth)
+  store.set('boxPleatWidth', measurements.shoulderToShoulder * options.boxPleatWidth)
+  store.set('boxPleatFold', store.get('boxPleatWidth') * options.boxPleatFold)
+
   // Populare store with data we need
   calculateReduction(part)
   store.set(
@@ -28,6 +37,7 @@ export default (part) => {
       .join(paths.backArmhole)
       .length()
   )
+
   // Hip shaping
   points.hips = points.hips.shift(180, store.get('hipsReduction') / 4)
   points.hem = points.hem.shift(180, store.get('hipsReduction') / 4)
@@ -122,16 +132,16 @@ export default (part) => {
   // Box pleat
   if (options.boxPleat) {
     points.boxPleatLeft = paths.roundedBack
-      ? points.cbTop.shift(0, options.boxPleatWidth / 2)
-      : points.cbYoke.shift(0, options.boxPleatWidth / 2)
-    points.boxPleatMid = points.boxPleatLeft.shift(0, options.boxPleatFold)
-    points.boxPleatRight = points.boxPleatMid.shift(0, options.boxPleatFold)
+      ? points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
+      : points.cbYoke.shift(0, store.get('boxPleatWidth') / 2)
+    points.boxPleatMid = points.boxPleatLeft.shift(0, store.get('boxPleatFold'))
+    points.boxPleatRight = points.boxPleatMid.shift(0, store.get('boxPleatFold'))
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
     points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
     points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
     paths.armhole.setRender(true).attr('class', 'stroke-xl highlight debug canvas')
-    paths.armhole = paths.armhole.translate(options.boxPleatFold * 2, 0)
-    for (let p of [
+    paths.armhole = paths.armhole.translate(store.get('boxPleatFold') * 2, 0)
+    for (const p of [
       'armholePitch',
       'armholePitchCp1',
       'armholeHollowCp2',
@@ -141,7 +151,7 @@ export default (part) => {
       'armhole',
       'armholeYokeSplit',
     ])
-      points[p] = points[p].shift(0, options.boxPleatFold * 2)
+      points[p] = points[p].shift(0, store.get('boxPleatFold') * 2)
   }
 
   // Draft hem

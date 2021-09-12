@@ -1,8 +1,8 @@
 export const calculateReduction = function (part) {
-  let { store, measurements, options } = part.shorthand()
-  let chest = measurements.chest * (1 + options.chestEase)
-  let waist = measurements.waist * (1 + options.waistEase)
-  let hips = measurements.hips * (1 + options.hipsEase)
+  const { store, measurements, options } = part.shorthand()
+  const chest = measurements.chest * (1 + options.chestEase)
+  const waist = measurements.waist * (1 + options.waistEase)
+  const hips = measurements.hips * (1 + options.hipsEase)
   let waistReduction = chest - waist
   let hipsReduction = chest - hips
 
@@ -26,8 +26,8 @@ export const calculateReduction = function (part) {
 }
 
 export const addButtons = function (part, origin = 'cfNeck', snippet = 'button') {
-  let { points, options, snippets, Snippet } = part.shorthand()
-  let len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength)
+  const { points, options, snippets, Snippet } = part.shorthand()
+  const len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength)
   for (let i = 1; i <= options.buttons; i++) {
     points['button' + i] = points[origin].shift(-90, (len / options.buttons) * i)
     snippets[snippet + i] = new Snippet(snippet, points['button' + i])
@@ -42,9 +42,9 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
 export const addButtonHoles = (part, origin) => addButtons(part, origin, 'buttonhole')
 
 export const draftBarrelCuff = (part) => {
-  let { store, points, measurements, options, Point } = part.shorthand()
-  let height = measurements.shoulderToWrist * options.cuffLength
-  let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
+  const { store, points, measurements, options, Point } = part.shorthand()
+  const height = measurements.shoulderToWrist * options.cuffLength
+  const width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
   store.set('cuffHeight', height)
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -55,7 +55,7 @@ export const draftBarrelCuff = (part) => {
 }
 
 export const decorateBarrelCuff = (part) => {
-  let { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
@@ -66,7 +66,7 @@ export const decorateBarrelCuff = (part) => {
   })
 
   // Button and buttonhole
-  let margin = measurements.wrist * options.cuffOverlap
+  const margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin / 2)
   points.buttonLineBottom = points.bottomRight.shift(180, margin / 2)
   points.buttonholeLineTop = points.topLeft.shift(0, margin / 2)
@@ -93,10 +93,10 @@ export const decorateBarrelCuff = (part) => {
 }
 
 export const draftFrenchCuff = (part) => {
-  let { store, points, measurements, options, Point } = part.shorthand()
-  let margin = measurements.wrist * options.cuffOverlap
-  let height = measurements.shoulderToWrist * options.cuffLength
-  let width =
+  const { store, points, measurements, options, Point } = part.shorthand()
+  const margin = measurements.wrist * options.cuffOverlap
+  const height = measurements.shoulderToWrist * options.cuffLength
+  const width =
     measurements.wrist * (1 + options.cuffEase + options.cuffOverlap + options.cuffDrape) +
     margin / 2
   store.set('cuffHeight', height)
@@ -111,7 +111,7 @@ export const draftFrenchCuff = (part) => {
 }
 
 export const decorateFrenchCuff = (part) => {
-  let { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
@@ -122,7 +122,7 @@ export const decorateFrenchCuff = (part) => {
   })
 
   // Buttonholes
-  let margin = measurements.wrist * options.cuffOverlap
+  const margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin * 0.75)
   points.buttonLineBottom = points.bottomRight.shift(180, margin * 0.75)
   points.buttonholeLineTop = points.topLeft.shift(0, margin * 0.75)
@@ -141,7 +141,7 @@ export const decorateFrenchCuff = (part) => {
 }
 
 export const paperlessBarrelCuff = (part) => {
-  let { sa, macro, points, options, complete } = part.shorthand()
+  const { sa, macro, points, options, complete } = part.shorthand()
   if (complete) {
     macro('hd', {
       from: points.buttonhole1,
@@ -178,7 +178,7 @@ export const paperlessBarrelCuff = (part) => {
 }
 
 export const paperlessFrenchCuff = (part) => {
-  let { sa, macro, points, complete } = part.shorthand()
+  const { sa, macro, points, complete } = part.shorthand()
   if (complete) {
     macro('hd', {
       from: points.button4,
@@ -206,8 +206,8 @@ export const paperlessFrenchCuff = (part) => {
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  let { sa, options, paperless, points, macro } = part.shorthand()
-  let factor = side === 'right' ? -1 : 1
+  const { sa, options, paperless, points, macro } = part.shorthand()
+  const factor = side === 'right' ? -1 : 1
   macro('banner', {
     path: 'hemSa',
     text: ['hem', ': 3x', 'seamAllowance'],

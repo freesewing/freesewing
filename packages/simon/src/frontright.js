@@ -4,7 +4,7 @@ import frontRightClassicCuton from './frontright-classic-cuton'
 import frontRightSeamless from './frontright-seamless'
 
 export default (part) => {
-  let { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
+  const { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
   macro('flip')
   if (complete) {
     points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5)

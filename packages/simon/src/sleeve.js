@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     measurements,
     sa,
     Point,
@@ -15,8 +15,8 @@ export default (part) => {
   } = part.shorthand()
 
   // Remove inherited paths, snippets, and scalebox
-  for (let p in paths) delete paths[p]
-  for (let s in snippets) delete snippets[s]
+  for (const p in paths) delete paths[p]
+  for (const s in snippets) delete snippets[s]
   macro('scalebox', false)
 
   // Sleeve width depends on cuff style
@@ -29,7 +29,7 @@ export default (part) => {
     width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap * 1.5)
   points.wristRight.x = width / 2
   points.wristLeft.x = width / -2
-  let cuffLength = measurements.shoulderToWrist * options.cuffLength
+  const cuffLength = measurements.shoulderToWrist * options.cuffLength
   points.wristRight = points.wristRight.shift(90, cuffLength)
   points.wristLeft = points.wristLeft.shift(90, cuffLength)
 
@@ -44,31 +44,31 @@ export default (part) => {
   points.cuffRightCuspCp2 = points.cuffRightCusp.shift(0, width / 10)
 
   // Cuff pleats
-  let drape = options.cuffDrape * measurements.shoulderToWrist
+  const drape = options.cuffDrape * measurements.shoulderToWrist
   let pleats = 0
-  let pleatLength = measurements.shoulderToWrist * 0.15
+  const pleatLength = measurements.shoulderToWrist * 0.15
   if (drape > 0) {
-    let shiftRight = [
+    const shiftRight = [
       'cuffRightCuspCp1',
       'cuffRightCusp',
       'cuffRightCuspCp2',
       'wristRight',
       'cuffRightMid',
     ]
-    let shiftLeft = ['cuffLeftCuspCp1', 'cuffLeftCusp', 'cuffLeftCuspCp2', 'wristLeft']
+    const shiftLeft = ['cuffLeftCuspCp1', 'cuffLeftCusp', 'cuffLeftCuspCp2', 'wristLeft']
     if (drape > 20) pleats = 2
     else pleats = 1
-    for (let id of shiftRight) points[id] = points[id].shift(0, drape / (2 * pleats))
-    for (let id of shiftLeft) points[id] = points[id].shift(180, drape / (2 * pleats))
+    for (const id of shiftRight) points[id] = points[id].shift(0, drape / (2 * pleats))
+    for (const id of shiftLeft) points[id] = points[id].shift(180, drape / (2 * pleats))
     points.cuffPleat1Fold = points.cuffMid.shift(0, drape / (2 * pleats))
     points.cuffPleat1Edge = points.cuffMid.shift(0, drape / pleats)
     points.cuffMidTop = points.cuffMid.shift(90, pleatLength)
     points.cuffPleat1FoldTop = points.cuffPleat1Fold.shift(90, pleatLength)
     points.cuffPleat1EdgeTop = points.cuffPleat1Edge.shift(90, pleatLength)
     if (pleats === 2) {
-      let moreRight = ['cuffRightCuspCp2', 'wristRight']
-      let shift = shiftRight.concat(shiftLeft)
-      for (let id of shift) {
+      const moreRight = ['cuffRightCuspCp2', 'wristRight']
+      const shift = shiftRight.concat(shiftLeft)
+      for (const id of shift) {
         if (moreRight.indexOf(id) === -1) points[id] = points[id].shift(180, drape / 4)
         else points[id] = points[id].shift(0, drape / 4)
       }

@@ -1,10 +1,10 @@
 export default (part) => {
-  let { measurements, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+  const { store, measurements, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
     part.shorthand()
 
   const draft = function (tweak = 1) {
-    let length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
-    let width = options.collarStandWidth * (1 + options.collarRoll)
+    const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
+    const width = store.get('collarStandWidth') * (1 + options.collarRoll)
 
     // Draft right side
     points.topMid = new Point(0, 0)
@@ -62,7 +62,7 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     // Draw undercollar line
-    let uc = points.topMid.dist(points.bottomMid) * 0.05
+    const uc = points.topMid.dist(points.bottomMid) * 0.05
     points.ucTopMid = points.topMid.shift(-90, uc)
     points.ucRightTopHinge = points.rightTopHinge.shift(-90, uc)
     points.ucRightTopHingeCp1 = points.rightTopHingeCp1.shift(-90, uc)
