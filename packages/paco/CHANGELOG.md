@@ -1,6 +1,17 @@
 # Change log for: @freesewing/paco
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed `waistbandWidth` option type from `mm` to `pct`
+ - Changed `ankleElastic` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1313)
+
 ## 2.17.0 (2021-07-01)
 
 ### Fixed

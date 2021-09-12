@@ -1,6 +1,13 @@
 # Change log for: @freesewing/components
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Added measurements for dolls & giants to Workbench measurments selector
+ - Added sampling for dolls & giants to Workbench tests
+
 ## 2.17.0 (2021-07-01)
 
 ### Added
