@@ -7,6 +7,8 @@ unreleased:
     paco:
       - Changed `waistbandWidth` option type from `mm` to `pct`
       - Changed `ankleElastic` option type from `mm` to `pct`
+    theo:
+      - Added deprecation warning as we need to rewrite this pattern
 
   Fixed:
     charlie:
