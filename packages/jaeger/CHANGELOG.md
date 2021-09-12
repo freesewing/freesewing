@@ -1,6 +1,16 @@
 # Change log for: @freesewing/jaeger
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `collarRoll` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

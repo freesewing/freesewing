@@ -1,6 +1,12 @@
 # Change log for: @freesewing/theo
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Added deprecation warning as we need to rewrite this pattern
+
 ## 2.18.0 (2021-09-09)
 
 ### Fixed

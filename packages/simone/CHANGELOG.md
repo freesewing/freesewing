@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketFoldWidth` option type from `mm` to `pct`
+ - Changed the `collarStandWidth` option type from `mm` to `pct`
+ - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatFold` option type from `mm` to `pct`
+
 ## 2.17.2 (2021-08-15)
 
 ### Added
