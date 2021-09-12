@@ -17,12 +17,16 @@ for (let i=0.1;i<1;i+=0.1) {
   nonHuman.withBreasts.dolls[name] = {}
   // withBreasts: Based on Anneke (size 34)
   for (const [m, val] of Object.entries(withBreasts.size34)) {
-    nonHuman.withBreasts.dolls[name][m] = round(val * i)
+    nonHuman.withBreasts.dolls[name][m] = (m === 'shoulderSlope')
+      ? val
+      : round(val * i)
   }
   // withoutBreasts: Based on Ronan (size 42)
   nonHuman.withoutBreasts.dolls[name] = {}
   for (const [m, val] of Object.entries(withoutBreasts.size42)) {
-    nonHuman.withoutBreasts.dolls[name][m] = round(val * i)
+    nonHuman.withoutBreasts.dolls[name][m] = (m === 'shoulderSlope')
+      ? val
+      : round(val * i)
   }
 }
 for (let i=1;i<=2.5;i+=0.5) {
@@ -30,12 +34,16 @@ for (let i=1;i<=2.5;i+=0.5) {
   nonHuman.withBreasts.giants[name] = {}
   // withBreasts: Based on Anneke (size 34)
   for (const [m, val] of Object.entries(withBreasts.size34)) {
-    nonHuman.withBreasts.giants[name][m] = round(val * i)
+    nonHuman.withBreasts.giants[name][m] = (m === 'shoulderSlope')
+      ? val
+      : round(val * i)
   }
   nonHuman.withoutBreasts.giants[name] = {}
   // withoutBreasts: Based on Ronan (size 42)
   for (const [m, val] of Object.entries(withoutBreasts.size42)) {
-    nonHuman.withoutBreasts.giants[name][m] = round(val * i)
+    nonHuman.withoutBreasts.giants[name][m] = (m === 'shoulderSlope')
+      ? val
+      : round(val * i)
   }
 }
 
