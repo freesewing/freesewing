@@ -9,8 +9,13 @@ unreleased:
     jaeger:
       - Changed the `collarRoll` option type from `mm` to `pct`
     paco:
-      - Changed `waistbandWidth` option type from `mm` to `pct`
-      - Changed `ankleElastic` option type from `mm` to `pct`
+      - Changed the `waistbandWidth` option type from `mm` to `pct`
+      - Changed the `ankleElastic` option type from `mm` to `pct`
+    penelope:
+      - Changed the `hem` option type from `mm` to `pct`
+      - Changed the `waistBandWidth` option type from `mm` to `pct`
+      - Changed the `seatEase` option type from `mm` to `pct`
+      - Changed the `waistEase` option type from `mm` to `pct`
     simon:
       - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
       - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
@@ -41,6 +46,9 @@ unreleased:
     paco:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
+    penelope:
+      - Support drafting of non-human measurements (dolls & giants)
+        Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
     simon:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1319](https://github.com/freesewing/freesewing/issues/1319)
