@@ -1,3 +1,21 @@
+unreleased:
+
+  Changed:
+    components:
+      - Added measurements for dolls & giants to Workbench measurments selector
+      - Added sampling for dolls & giants to Workbench tests
+    paco:
+      - Changed `waistbandWidth` option type from `mm` to `pct`
+      - Changed `ankleElastic` option type from `mm` to `pct`
+
+  Fixed:
+    charlie:
+      - Support drafting of non-human measurements (dolls & giants)
+        Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+    paco:
+      - Support drafting of non-human measurements (dolls & giants)
+        Closes [#1316](https://github.com/freesewing/freesewing/issues/1313)
+
 2.18.0:
   date: 2021-09-09
 
