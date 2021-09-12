@@ -8,6 +8,9 @@ const isGarment = design => ([
   'legend',
 ].indexOf(design) === -1)
 
+// Some patterns are deprecated and won't support more stringent doll/giant tests
+const deprecated = ['theo']
+
 /*
  * This runs unit tests for pattern drafting
  * It expects the following:
@@ -60,33 +63,35 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns, log=fals
       })
     }
 
-    // Do the same for fantistical models (dolls, giants)
-    it('Draft for dolls:', () => true)
+    if (deprecated.indexOf(design) === -1) {
+      // Do the same for fantistical models (dolls, giants)
+      it('Draft for dolls:', () => true)
 
-    for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls) {
-      it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
-        expect(
-          doesItDraft(
-            new Pattern({
-              measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls[size]
-            }), log
-          )
-        ).to.equal(true)
-      })
-    }
+      for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls) {
+        it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
+          expect(
+            doesItDraft(
+              new Pattern({
+                measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls[size]
+              }), log
+            )
+          ).to.equal(true)
+        })
+      }
 
-    it('Draft for giants:', () => true)
+      it('Draft for giants:', () => true)
 
-    for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants) {
-      it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
-        expect(
-          doesItDraft(
-            new Pattern({
-              measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants[size]
-            }), log
-          )
-        ).to.equal(true)
-      })
+      for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants) {
+        it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
+          expect(
+            doesItDraft(
+              new Pattern({
+                measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants[size]
+              }), log
+            )
+          ).to.equal(true)
+        })
+      }
     }
   }
 
