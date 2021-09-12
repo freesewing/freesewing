@@ -1,10 +1,10 @@
 export default (part) => {
   // Shorthand
-  let { points, Point, paths, Path, options, complete, paperless, macro, sa } = part.shorthand()
+  let { store, points, Point, paths, Path, options, complete, paperless, macro, sa } = part.shorthand()
 
   let count = options.beltLoops
-  let length = options.waistbandWidth * 2.5 * count
-  let width = options.waistbandWidth / 4
+  let length = store.get('waistbandWidth') * 2.5 * count
+  let width = store.get('waistbandWidth') / 4
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width * 2.8, 0)

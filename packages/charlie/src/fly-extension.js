@@ -11,6 +11,9 @@ export default (part) => {
     if (id !== 'flyTop') points[id] = points[id].rotate(angle, points.flyTop)
   }
 
+  // Anchor for sampling/grid
+  points.anchor = points.flyTop.clone()
+
   // Paths
   paths.saBase = new Path()
     .move(points.flyCorner)

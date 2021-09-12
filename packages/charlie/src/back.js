@@ -126,6 +126,10 @@ export default (part) => {
     points.slantBottom.dist(points.slantCurveCp1) + store.get('slantLength')
   )
 
+  // Anchor for sampling/grid
+  // This breaks the samples for reason not clear. See #
+  // points.anchor = points.fork.clone()
+
   paths.saBase = drawPath()
   paths.seam = paths.saBase
     .insop('dart', new Path().line(points.pocketCenter))

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+
 ## 2.17.0 (2021-07-01)
 
 ### Fixed

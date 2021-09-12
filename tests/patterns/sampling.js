@@ -1,3 +1,4 @@
+const nonHumanMeasurements = require('./non-human-measurements.js')
 /*
  * This runs unit tests for pattern sampling
  * It expects the following:
@@ -10,6 +11,8 @@
  * @param object patterns: Imported @freesewing/pattern-info
  */
 const testPatternSampling = (design, Pattern, expect, models, patterns) => {
+  // Load non-human measurements
+  const nonHuman = nonHumanMeasurements(models)
 
   // Helper method to try/catch pattern sampling
   const doesItSample = (pattern, log=false) => {
@@ -86,36 +89,19 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
 
   if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
     /*
-     * Sample pattern with fractional sizes (antperson tests)
+     * Sample pattern for dolls & giants
      */
-    const fractionModel = fraction => {
-      const model = {}
-      for (const [measie, value] of Object.entries(ourModels.size40)) {
-        model[measie] = value * fraction
-      }
-
-      return model
+    for (const type of ['dolls', 'giants']) {
+      it(`Sample pattern for ${type}:` , () => {
+        expect(doesItSample(new Pattern({
+          sample: {
+            type: 'models',
+            models: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'][type]
+          },
+          measurements
+        }))).to.equal(true)
+      })
     }
-    const models = {
-      oneTenth: fractionModel(0.1),
-      oneFifth: fractionModel(0.2),
-      oneHalf: fractionModel(0.5),
-      threeQuarters: fractionModel(0.5),
-      oneFifty: fractionModel(1.5),
-      twoFifty: fractionModel(2.5),
-      five: fractionModel(5),
-      ten: fractionModel(10),
-    }
-
-    it('Sample pattern for fantastic measurements:' , () => {
-      expect(doesItSample(new Pattern({
-        sample: {
-          type: 'models',
-          models,
-        },
-        measurements
-      }))).to.equal(true)
-    })
   }
 
 }

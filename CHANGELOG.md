@@ -1,6 +1,33 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### charlie
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+
+### components
+
+#### Changed
+
+ - Added measurements for dolls & giants to Workbench measurments selector
+ - Added sampling for dolls & giants to Workbench tests
+
+### paco
+
+#### Changed
+
+ - Changed `waistbandWidth` option type from `mm` to `pct`
+ - Changed `ankleElastic` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1313)
+
+
 ## 2.18.0 (2021-09-09)
 
 ### core

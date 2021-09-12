@@ -16,6 +16,9 @@ export default (part) => {
   points.leftNotch = new Point(points.leftNotch.x, points.midRight.y)
   points.rightNotch = points.leftNotch.flipX()
 
+  // Anchor for sampling/grid
+  points.anchor = points.topLeft.shiftFractionTowards(points.topRight, 0.5)
+
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)

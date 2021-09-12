@@ -34,6 +34,7 @@ export default (part) => {
     snippets,
     Snippet,
     sa,
+    raise
   } = part.shorthand()
 
   // Helper object holding the Titan side seam path
@@ -48,6 +49,16 @@ export default (part) => {
           .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
 
   // Draw fly J-seam
+  const flyBottom = utils.curveIntersectsY(
+    points.crotchSeamCurveStart,
+    points.crotchSeamCurveCp2,
+    points.crotchSeamCurveCp1,
+    points.fork,
+    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
+  )
+  if (flyBottom) points.flyBottom = flyBottom
+  else raise.error('Unable to locate the fly bottom. This draft will fail.')
+
   points.flyBottom = utils.curveIntersectsY(
     points.crotchSeamCurveStart,
     points.crotchSeamCurveCp2,
@@ -142,6 +153,9 @@ export default (part) => {
         .line(points.pocketbagBottomRight)
     )
     .pop()
+
+  // Anchor for sampling/grid
+  points.anchor = points.fork.clone()
 
   // Draw path
   paths.seam = drawPath().close().attr('class', 'fabric')

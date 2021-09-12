@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl'
 import FormFieldMeasurement from '../../.form/FormFieldMeasurement'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
 import Icon from '../../Icon'
+import nonHuman from './non-human'
 
 const Measurements = (props) => {
   const styles = {
@@ -56,12 +57,14 @@ const Measurements = (props) => {
         </div>
       </div>
     )
+
   return (
     <div style={styles.container}>
       <div style={styles.chooser}>
         <h4 id="preload">
           <FormattedMessage id="cfp.preloadMeasurements" />
         </h4>
+        <h5>Humans</h5>
         <ul style={styles.ul}>
           {Object.keys(withoutBreasts).map((m) => (
             <li key={`${m}-without`} style={styles.li}>
@@ -80,6 +83,52 @@ const Measurements = (props) => {
                 <FormattedMessage id="cfp.size" />
                 &nbsp;
                 {m.slice(-2)}
+              </Button>
+            </li>
+          ))}
+        </ul>
+        <h5>Dolls</h5>
+        <ul style={styles.ul}>
+          {Object.keys(nonHuman.withoutBreasts.dolls).map((m) => (
+            <li key={`${m}-without`} style={styles.li}>
+              <Button onClick={() => props.preloadMeasurements(nonHuman.withoutBreasts.dolls[m])}>
+                <Icon icon="withoutBreasts" />
+                <FormattedMessage id="cfp.size" />
+                &nbsp;
+                {m}
+              </Button>
+            </li>
+          ))}
+          {Object.keys(nonHuman.withBreasts.dolls).map((m) => (
+            <li key={`${m}-with`} style={styles.li}>
+              <Button onClick={() => props.preloadMeasurements(nonHuman.withBreasts.dolls[m])}>
+                <Icon icon="withBreasts" />
+                <FormattedMessage id="cfp.size" />
+                &nbsp;
+                {m}
+              </Button>
+            </li>
+          ))}
+        </ul>
+        <h5>Giants</h5>
+        <ul style={styles.ul}>
+          {Object.keys(nonHuman.withoutBreasts.giants).map((m) => (
+            <li key={`${m}-without`} style={styles.li}>
+              <Button onClick={() => props.preloadMeasurements(nonHuman.withoutBreasts.giants[m])}>
+                <Icon icon="withoutBreasts" />
+                <FormattedMessage id="cfp.size" />
+                &nbsp;
+                {m}
+              </Button>
+            </li>
+          ))}
+          {Object.keys(nonHuman.withBreasts.giants).map((m) => (
+            <li key={`${m}-with`} style={styles.li}>
+              <Button onClick={() => props.preloadMeasurements(nonHuman.withBreasts.giants[m])}>
+                <Icon icon="withBreasts" />
+                <FormattedMessage id="cfp.size" />
+                &nbsp;
+                {m}
               </Button>
             </li>
           ))}

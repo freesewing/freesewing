@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import PatternOptions from './PatternOptions'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
-import neckstimate from '@freesewing/utils/neckstimate'
+import nonHuman from '../Workbench/Measurements/non-human.js'
 
 const SampleConfigurator = (props) => {
   const [type, setType] = useState()
@@ -44,22 +44,6 @@ const SampleConfigurator = (props) => {
       'settings',
       'sample'
     )
-  }
-  const antMan = { ant: {}, b: {}, c: {}, man: {} }
-  const antWoman = { ant: {}, b: {}, c: {}, woman: {} }
-  for (let m in withoutBreasts.size42) {
-    let val = neckstimate(420, m, false)
-    antMan.ant[m] = val / 10
-    antMan.b[m] = val / 5
-    antMan.c[m] = val / 2
-    antMan.man[m] = val
-  }
-  for (let m in withBreasts.size36) {
-    let val = neckstimate(360, m, true)
-    antWoman.ant[m] = val / 10
-    antWoman.b[m] = val / 5
-    antWoman.c[m] = val / 2
-    antWoman.woman[m] = val
   }
 
   return (
@@ -124,34 +108,43 @@ const SampleConfigurator = (props) => {
               <FormattedMessage id="app.withoutBreasts" />
             </a>
           </li>
-          <li>
-            <a
-              href="#logo"
-              onClick={() => {
-                sampleModels(antWoman)
-                setType('models')
-                setInstance('antWoman')
-              }}
-              className={type === 'models' && instance === 'antWoman' ? 'active' : ''}
-            >
-              Antperson (with breasts)
-            </a>
-          </li>
-          <li>
-            <a
-              href="#logo"
-              onClick={() => {
-                sampleModels(antMan)
-                setType('models')
-                setInstance('antMan')
-              }}
-              className={type === 'models' && instance === 'antMan' ? 'active' : ''}
-            >
-              Antperson (without breasts)
-            </a>
-          </li>
         </ul>
       </li>
+      {['dolls', 'giants'].map(type => (
+        <li key={type}>
+          <h5>
+            <FormattedMessage id={`app.${type}`} />
+          </h5>
+          <ul>
+            <li>
+              <a
+                href="#logo"
+                onClick={() => {
+                  sampleModels(nonHuman.withBreasts[type])
+                  setType('models')
+                  setInstance('withBreasts')
+                }}
+                className={type === 'models' && instance === 'withBreasts' ? 'active' : ''}
+              >
+                <FormattedMessage id="app.withBreasts" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#logo"
+                onClick={() => {
+                  sampleModels(nonHuman.withoutBreasts[type])
+                  setType('models')
+                  setInstance('withoutBreasts')
+                }}
+                className={type === 'models' && instance === 'withoutBreasts' ? 'active' : ''}
+              >
+                <FormattedMessage id="app.withoutBreasts" />
+              </a>
+            </li>
+          </ul>
+        </li>
+      ))}
     </ul>
   )
 }

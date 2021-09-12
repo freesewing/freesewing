@@ -6,6 +6,9 @@ export default (part) => {
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]
 
+  // Anchor for sampling/grid
+  points.anchor = points.pocketFacingTop.clone()
+
   paths.seam = new Path()
     .move(points.pocketFacingTop)
     .line(points.slantTop)
