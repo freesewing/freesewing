@@ -5,6 +5,8 @@ const notGarments = [
   'legend',
 ]
 const isGarment = design => (notGarments.indexOf(design) === -1) ? true : false
+// Some patterns are deprecated and won't support more stringent doll/giant tests
+const deprecated = ['theo']
 
 
 /*
@@ -149,6 +151,11 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
+      if (deprecated.indexOf(design) === -1) {
+        it(`    - Patterns should not use mm options`, () => {
+          expect("Does not use mm").to.be.true
+        })
+      }
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)

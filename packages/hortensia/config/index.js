@@ -29,7 +29,7 @@ export default {
     pctHandleSpace: 50,
     pctHandleVert: 42,
     strapLength: { pct: 160, min: 75, max: 250 },
-    handleWidth: { mm: 20, min: 7, max: 30 },
+    handleWidth: { pct: 10, min: 5, max: 30 },
     size: { pct: 50, min: 20, max: 200 },
     zipperSize: { dflt: '#5', list: ['#3', '#4', '#4.5', '#5', '#6', '#8', '#10', 'Invisible'] },
   },

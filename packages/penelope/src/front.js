@@ -3,14 +3,11 @@ import { BuildMainShape } from './shape'
 export default function (part) {
   let {
     options,
-    /*measurements,*/
-    /*Point,*/
     Path,
     points,
     paths,
     Snippet,
     snippets,
-    /*store,*/
     complete,
     sa,
     paperless,

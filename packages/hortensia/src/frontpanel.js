@@ -43,7 +43,7 @@ export default function (part) {
     .attr('class', 'fabric')
 
   let pctHandleVert = options.pctHandleVert
-  let handleWidth = options.handleWidth
+  let handleWidth = options.width * options.handleWidth
   let handleSpace = (h - handleWidth * 2) * (options.pctHandleSpace / 100)
   if (handleSpace > options.maxHandleSpaceWidth) {
     handleSpace = options.maxHandleSpaceWidth

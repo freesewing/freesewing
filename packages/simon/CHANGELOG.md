@@ -1,6 +1,22 @@
 # Change log for: @freesewing/simon
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketFoldWidth` option type from `mm` to `pct`
+ - Changed the `collarStandWidth` option type from `mm` to `pct`
+ - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatFold` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1319](https://github.com/freesewing/freesewing/issues/1319)
+
 ## 2.18.0 (2021-09-09)
 
 ### Fixed
