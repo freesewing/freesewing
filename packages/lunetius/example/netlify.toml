@@ -1,5 +1,4 @@
 [build]
-  base = "packages/lunetius/example"
   publish = "build"
   command = "npm run build"
 
