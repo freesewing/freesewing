@@ -33,11 +33,11 @@ export default function(part) {
 
     neckomid = (2*neckotop)/ratio
     
-    points.anchor = new Point(100, 50)
-  .attr("data-text", neckotop)
-  .attr("data-text", head)
-  .attr("data-text", goldenRatio)
-  .attr("data-text-class", "center");
+//	points.anchor = new Point(100, 50)
+//	    .attr("data-text", neckotop)
+//	    .attr("data-text", head)
+//	    .attr("data-text", goldenRatio)
+//	    .attr("data-text-class", "center");
 
         // checks to ensure that neck opening does not become too small
     if (neckotop < measurements.neck/4)
