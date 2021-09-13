@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/walburga.svg)](https://www.npmjs.com/package/walburga) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+Check it out on [Netlify](https://walburga.netlify.app).
+
 ## Install
 
 ```bash
