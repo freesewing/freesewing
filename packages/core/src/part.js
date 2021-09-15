@@ -314,6 +314,16 @@ Part.prototype.shorthand = function () {
       set: (options, name, value) => (self.context.settings.options[name] = value),
     }
     shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)
+    // Proxy the absoluteOptions object
+    const absoluteOptionsProxy = {
+      get: function (absoluteOptions, name) {
+        if (typeof absoluteOptions[name] === 'undefined')
+          self.context.raise.warning(`Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``)
+        return Reflect.get(...arguments)
+      },
+      set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
+    }
+    shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, optionsProxy)
   } else {
     shorthand.Point = Point
     shorthand.Path = Path
@@ -323,6 +333,7 @@ Part.prototype.shorthand = function () {
     shorthand.snippets = this.snippets || {}
     shorthand.measurements = this.context.settings.measurements || {}
     shorthand.options = this.context.settings.options || {}
+    shorthand.absoluteOptions = this.context.settings.absoluteOptions || {}
   }
 
   return shorthand

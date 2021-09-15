@@ -1,4 +1,5 @@
 import { version } from '../package.json'
+import { pctBasedOn } from '@freesewing/core'
 
 export default {
   name: 'paco',
@@ -95,8 +96,15 @@ export default {
     elasticatedHem: { bool: true },
 
     // Elastic
-    waistbandWidth: { pct: 3, min: 1, max: 6 },
-    ankleElastic: { pct: 5, min: 1, max: 13 },
+    waistbandWidth: { pct: 3, min: 1, max: 6, snap: 5 },
+    ankleElastic: {
+      pct: 5, min: 1, max: 13,
+      snap: {
+        metric: [ 5, 10, 12, 20, 25, 30, 40, 50, 80 ],
+        imperial: [ 6.35, 9.525, 12.7, 15.24, 19.05, 25.4, 30.48, 50.8, 76.2],
+      },
+      ...pctBasedOn('waistToFloor')
+    },
     heelEase: { pct: 5, min: 0, max: 50 },
 
     // Pockets

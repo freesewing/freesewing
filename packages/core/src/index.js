@@ -16,4 +16,11 @@ export default {
   utils,
   patterns: {},
   plugins: {},
+  /**
+   * This pctBasedOn() method makes it easy to add the optional
+   * toAbs() and fromAbs() methods to percentage options config
+   *
+   * It was backported from the v3 roadmap into v2.
+   **/
+  pctBasedOn: utils.pctBasedOn,
 }

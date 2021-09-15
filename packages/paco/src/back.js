@@ -42,7 +42,7 @@ export default function (part) {
   }
 
   // Shorthand call
-  let { store, sa, points, Path, paths, options, measurements, complete, paperless, macro } =
+  let { store, sa, points, Path, paths, options, measurements, complete, paperless, macro, absoluteOptions } =
     part.shorthand()
 
   // Adapt bottom leg width based on heel & heel ease
@@ -55,7 +55,7 @@ export default function (part) {
   points.kneeInCp1 = points.kneeIn
 
   // Shorter leg if we have an elasticated hem
-  store.set('ankleElastic', measurements.waistToFloor * options.ankleElastic)
+  store.set('ankleElastic', absoluteOptions.ankleElastic)
   if (options.elasticatedHem) {
     for (const p of ['floor', 'floorIn', 'floorOut'])
       points[p] = points[p].shift(90, store.get('ankleElastic'))
