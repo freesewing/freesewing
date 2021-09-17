@@ -51,11 +51,11 @@ Aber dennoch gibt es überall dort, wo Krisen zuschlagen, ein vertrautes Banner,
 
 Das einzige, was mich immer daran erinnert, dass die Menschheit diese Personen nicht vollständig aufgegeben hat, ist das Banner von M&eacute;decins Sans Fronti&egrave;res/Ärzte ohne Grenzen fliegen zu sehen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
 
-Ich kann mir kein einziges Symbol vorstellen, das uns daran erinnert, dass nicht alles verloren geht und es immer noch gute Leute gibt.
+Ich kann mir kein einziges Symbol vorstellen, das uns daran erinnert, dass nicht alles verloren ist und es immer noch gute Leute da draußen gibt.
 
-Es ist auch eine der wenigen Organisationen, die die globale Reichweite haben, dorthin zu gelangen, wo es am meisten gebraucht wird. Wir sind an sie gewöhnt, die in armen Regionen arbeiten, aber als die COVID-19-Pandemie unsere Gesundheitssysteme zum Vergießen gebracht hat, _MSF_ ist auf die Platte gestiegen und hat ihre Teams in Westeuropa eingesetzt in den USA und überall dort, wo der Bedarf am dringendsten war.
+Es ist auch eine der wenigen Organisationen, die die globale Reichweite haben um dorthin zu gelangen, wo es am meisten gebraucht wird. Wir sind daran gewöhnt, sie in armutsgebeutelten Regionen arbeiten zu sehen, aber als die COVID-19-Pandemie unsere Gesundheitssysteme außeinandergerissen hat, ist _MSF_ auf den Plan getreten und hat Teams in Westeuropa, in den USA und überall dort eingesetzt, wo der Bedarf am nötigsten war.
 
-Ich hoffe, dass dies die Wahl von M&eacute;Decins Sans Fronti&egrave;res/Ärzte ohne Grenzen als Wohltätigkeitsorganisation von FreeSewing erklärt. Und ich hoffe, Sie werden sich uns anschließen und die Welt etwas besser machen.
+Ich hoffe, dass dies die Wahl von M&eacute;decins Sans Fronti&egrave;res/Ärzte ohne Grenzen als Wohltätigkeitsorganisation der Wahl von FreeSewing erklärt. Und ich hoffe, du wirst dich uns darin anschließen, die Welt etwas besser zu machen.
 
-Also freue ich mich [diese Zusage](/docs/various/pledge/) zu machen.
+Also freue ich mich, [diese Zusage](/docs/various/pledge/) zu machen.
 
