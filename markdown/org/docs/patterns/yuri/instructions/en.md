@@ -21,7 +21,7 @@ If using a overlocker/serger you can sew seams which need fininshing in one go r
   
 </Tip>
 
-## Step 1: Attaching the Gussets.
+## Step 1: Attaching the Gussets
  
 - With the good sides together, sew the gussets to the front panels along the side seams.
 - ***Finish*** seams.
