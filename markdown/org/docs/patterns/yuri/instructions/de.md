@@ -139,14 +139,14 @@ Wenn du kein Halsband verwendest, solltest du die Naht mit der **Veredelungsmeth
   
 </Note>
 
-## Schritt 11: Schaltflächen und Schaltflächen
+## Schritt 11: Knöpfe und Knopflöcher
 
 - An den Knopflochmarkierungen auf den Vordertafeln nähen die Tastenlöcher für 2,5cm (1 Zoll) Tasten oder die Tastengröße Ihrer Wahl.
 - Bei der Tastenplatzierung können Sie Ihren Yuri ausprobieren und sehen, wo die Tasten am besten für Sie passen.
 - Alternativ können Sie die Schaltflächenmarkierungen auf dem Muster für die Platzierung verwenden.
-- Buttons anhängen.
+- Knöpfe anbringen.
 
 ## Schritt 12: Ta-daaa
 
-Genieße deinen Yuri!
+Genieße deine/n Yuri!
 
