@@ -4,12 +4,12 @@ title: Motivation
 
 <Note>
 
-Dies ist eine persönliche Notiz von Joost De Cock -- dem FreeSewing-Betreuer -- über
+Dies ist eine persönliche Notiz von Joost De Cock -- dem FreeSewing-Maintainer -- über
 seine Motivation für [das FreeSewing Einnahmen Versprechen](/docs/various/pledge/)
 
 </Note>
 
-Sie gehen wahrscheinlich davon aus, dass wir Geld bitten, um die Server zu betreiben. Aber das stimmt nicht genau.
+Du gehst wahrscheinlich davon aus, dass wir um Geld bitten, damit wir die Server weiter betreiben können. Aber das stimmt nicht ganz.
 
 Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das bedeutet im Wesentlichen, dass Privilegien Verantwortung mit sich bringen.
 
@@ -28,7 +28,7 @@ Wenn Sie ein FreeSewing Patron werden, geben Sie mehr als nur Geld. Für mich is
 
 ##### Der Wert Ihres Geldes
 
-It is not *just* about the money. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
+Es geht nicht *nur* ums Geld. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
 
 Geld zu sammeln, indem ich etwas tue, das ich liebe, und es dann an die Wohltätigkeitsorganisation weiterzugeben, erlaubt es mir, nachts zu schlafen.
 
@@ -41,7 +41,7 @@ Hier ist der heikle Teil: Menschen geben weniger, wenn sie wissen, dass das Geld
 
 Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie Sie sie auf einer gewinnorientierten Website sehen würden. Es scheint auf diese Weise intuitiver und funktioniert auch nur besser.
 
-Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
+Ja, alles ist kostenlos, und das Geld geht nicht wirklich zur Bezahlung der Serverrechnungen (weil ich sie aus den oben genannten Gründen aus eigener Tasche bezahle). Aber das bedeutet nicht, dass diese Beiträge nicht entscheidend für das Wohlergehen des Projekts sind, oder zumindest seines Maintainers (das wäre ich).
 
 ##### Warum MSF meine Wohltätigkeitsorganisation ist
 
