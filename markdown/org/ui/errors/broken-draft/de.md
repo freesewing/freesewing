@@ -4,9 +4,9 @@ title: Etwas ist schiefgelaufen
 
 ##### Hilf uns, FreeSewing zu verbessern, indem du diesen Absturz meldest
 
-Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können was schiefgegangen ist.
+Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können, was schiefgegangen ist.
 
-Die von uns erfassten Diagnosedaten beinhalten:
+Die von uns erfassten Diagnostikdaten beinhalten:
 
  - Ihre Benutzer-ID
  - Ihr Github Benutzername (nur wenn Sie ihn in Ihrem Profil konfiguriert haben)
