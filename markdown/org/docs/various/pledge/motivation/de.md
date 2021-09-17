@@ -13,20 +13,20 @@ Du gehst wahrscheinlich davon aus, dass wir um Geld bitten, damit wir die Server
 
 Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das bedeutet im Wesentlichen, dass Privilegien Verantwortung mit sich bringen.
 
-Ich bin privilegiert, und damit habe ich Verantwortung. Ich bin sehr glücklich, in Westeuropa geboren worden zu sein, eine gute Arbeit zu haben und ein Dach über meinem Kopf.
+Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 
 Könnte ich das Geld gebrauchen? Ja, könnte ich.  
 Brauche ich das Geld? Nein, tue ich nicht.
 
-##### Der Wert Ihrer Unterstützung
+##### Der Wert deiner Unterstützung
 
-Das Hauptrisiko für FreeSewing ist das gleiche wie jedes Open-Source-Projekt: Maintainer Burnout.
+Das Hauptrisiko für Freesewing ist das gleiche wie bei jedem Open-Source-Projekt da draußen: Maintainer-Burnout.
 
-While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
+Obwohl ich FreeSewing nicht mehr alleine stemme — und ich kann nicht genug betonen, wie sehr ich die Arbeit aller Mitwirkenden schätze - macht mich das nicht immun gegen Gefühle von der Sorte: **Warum zum Teufel tu ich mir das an?**
 
-Wenn Sie ein FreeSewing Patron werden, geben Sie mehr als nur Geld. Für mich ist der wichtigste Wert die Botschaft, die Sie mir und anderen daran arbeitenden Personen übermitteln. Und diese Nachricht lautet: **Hey, du machst eine lohnende Sache. Macht weiter mit der guten Arbeit**.
+Wenn du ein/e FreeSewing-Unterstützer/in wirst, gibst du mehr als nur Geld. Für mich ist der wichtigste Wert die Botschaft, die du mir und anderen daran arbeitenden Personen übermitteln. Und diese Botschaft ist: **Hey, ihr machst etwas, das sich lohnt. Macht weiter mit der guten Arbeit**.
 
-##### Der Wert Ihres Geldes
+##### Der Wert deines Geldes
 
 Es geht nicht *nur* ums Geld. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
 
@@ -34,22 +34,22 @@ Geld zu sammeln, indem ich etwas tue, das ich liebe, und es dann an die Wohltät
 
 Ich könnte freiwillig in einer Suppenküche arbeiten oder unterprivilegierten Kindern beibringen, wie man programmiert. Stattdessen arbeite ich an FreeSewing.
 
-Deshalb geht das gesamte Geld, das über FreeSewing eingenommen wird, an Wohltätigkeit. So macht dieses Projekt nicht nur Spaß, sondern ist auch sozial verantwortlich. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+Darum gehen alle Einnahmen und Spenden, die ich durch FreeSewing erziele, an eine wohltätige Organisation. So macht dieses Projekt nicht nur Spaß, sondern ist auch sozial verantwortlich. Und das brauche ich, um mich davon zu überzeugen, dass es tatsächlich in Ordnung ist meine ganze Zeit darauf zu verwenden dies zu tun, weil Freesewing eine Kraft zum Guten ist.
 
 ##### Gemeinnützigkeit ist nicht sexy
 Hier ist der heikle Teil: Menschen geben weniger, wenn sie wissen, dass das Geld an Wohltätigkeitsorganisationen geht. Ich wünschte, es wäre nicht der Fall, aber es ist so.
 
-Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie Sie sie auf einer gewinnorientierten Website sehen würden. Es scheint auf diese Weise intuitiver und funktioniert auch nur besser.
+Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie man sie auf einer gewinnorientierten Website sehen würde. Es scheint auf diese Weise intuitiver und funktioniert auch einfach besser.
 
 Ja, alles ist kostenlos, und das Geld geht nicht wirklich zur Bezahlung der Serverrechnungen (weil ich sie aus den oben genannten Gründen aus eigener Tasche bezahle). Aber das bedeutet nicht, dass diese Beiträge nicht entscheidend für das Wohlergehen des Projekts sind, oder zumindest seines Maintainers (das wäre ich).
 
-##### Warum MSF meine Wohltätigkeitsorganisation ist
+##### Warum MSF die Wohltätigkeitsorganisation meiner Wahl ist
 
-Es gibt eine Menge Elend in der Welt. Während ich die Nachrichten sehe, fühle ich oft mein Vertrauen in die Menschheit. Einige der schutzbedürftigsten Menschen auf diesem Planeten scheinen von reichen Ländern und supranationalen Organisationen weitgehend im Stich gelassen zu sein.
+Es gibt eine Menge Elend in der Welt. Wenn ich mir Nachrichten anschaue, fühöe ich häufig wie mir das Vertrauen in die Meschheit entgleitet. Einige der schutzbedürftigsten Menschen auf diesem Planeten scheinen von reichen Ländern und supranationalen Organisationen weitgehend im Stich gelassen zu werden.
 
-Dennoch gibt es überall dort, wo Krisen auftreten, ein vertrautes Banner, das Hoffnung und Hilfe weckt. Es ist weder die Flagge der Vereinten Nationen, noch ist es der Stern gestreckte Banner oder das Blau und Gold der Europäischen Union.
+Aber dennoch gibt es überall dort, wo Krisen zuschlagen, ein vertrautes Banner, das Hoffnung und Hilfe bietet. Es ist weder die Flagge der Vereinten Nationen, noch das sternengeschmückte Banner, noch das Blau und Gold der Europäischen Union.
 
-Das einzige, was mich immer daran erinnert, dass die Menschheit diese Menschen nicht vollständig aufgegeben hat, ist, das Banner von M&eacute;Decins Sans Fronti zu sehen&egrave;res/Ärzte ohne Grenzen fliegen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer dort.
+Das einzige, was mich immer daran erinnert, dass die Menschheit diese Personen nicht vollständig aufgegeben hat, ist das Banner von M&eacute;decins Sans Fronti&egrave;res/Ärzte ohne Grenzen fliegen zu sehen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
 
 Ich kann mir kein einziges Symbol vorstellen, das uns daran erinnert, dass nicht alles verloren geht und es immer noch gute Leute gibt.
 
