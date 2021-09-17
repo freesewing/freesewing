@@ -1,16 +1,16 @@
 ---
-title: Einnahmenversprechen
+title: Freesewing-Einnahmenversprechen
 ---
 
-Die **FreeSewing Einnahmen Zusage** besagt, dass:
+Das **FreeSewing-Einnahmenversprechen** besagt:
 
 > ##### Alle FreeSewing Einnahmen werden an [Ärzte ohne Grenzen (MSF) gespendet](http://www.msf.org/)
 
-Das Versprechen wird vom FreeSewing-Betreuer (joost) übernommen und umgesetzt. Sie können über [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
+Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. Du kannst [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
 
 <Tip>
 
-Wenn du FreeSewing unterstützen möchtest, kannst du [hier beitreten](/community/join/)
+Wenn du FreeSewing unterstützen möchtest, kannst du uns [hier beitreten](/community/join/)
 
 </Tip>
 
