@@ -21,7 +21,7 @@ Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en u
   
 </Tip>
 
-## Paso 1: Adjuntar los Gussets.
+## Step 1: Attaching the Gussets
 
 - Con los buenos lados juntos, coser las chispas a los paneles frontales a lo largo de las costuras laterales.
 - ***Finaliza*** costuras.
