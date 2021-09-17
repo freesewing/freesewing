@@ -4,7 +4,7 @@ title: Freesewing-Einnahmenversprechen
 
 Das **FreeSewing-Einnahmenversprechen** besagt:
 
-> ##### Alle FreeSewing Einnahmen werden an [Ärzte ohne Grenzen (MSF) gespendet](http://www.msf.org/)
+> ##### Alle FreeSewing Einnahmen werden an [Ärzte ohne Grenzen (MSF)](http://www.msf.org/) gespendet
 
 Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. Du kannst [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
 
