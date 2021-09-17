@@ -21,7 +21,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
   
 </Tip>
 
-## Schritt 1: Befestigen der Gussets.
+## Step 1: Attaching the Gussets
 
 - Mit den guten Seiten zusammen, nähen Sie die Kugeln an den Frontplatten entlang der Seitennaht.
 - ***Beendet*** Nähte.
