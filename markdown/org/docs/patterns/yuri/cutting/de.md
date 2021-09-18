@@ -1,8 +1,8 @@
 
- - Schneiden Sie **2 Fronten** mit _guten Seiten zusammen_
- - **1 zurück** _an der Falte_ schneiden
- - **2 Ärmel** mit _guten Seiten schneiden_
- - **2 Gussets** mit _guten Seiten zusammenschneiden_
- - **4 Haubenseiten** 2 x 2 mit _guten Seiten schneiden_ für Außenhaube und Innenhaube
- - **2 Haubenzentren** mit _guten Seiten schneiden_
+ - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_
+ - Schneide **1 Rückenteil** _im Stoffbruch_
+ - Schneide **2 Ärmel** mit _guten Seiten zusammen_
+ - Schneide **2 Keile** mit _guten Seiten zusammen_
+ - Schneide **4 Kapuzen-Seitenteilen** 2 x 2 mit _guten Seiten zusammen_ für Außenkapuze und Innenkapuze
+ - Schneide **2 Kaputenmitten** mit _guten Seiten zusammen_
 

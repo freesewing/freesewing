@@ -4,15 +4,15 @@ title: Etwas ist schiefgelaufen
 
 ##### Hilf uns, FreeSewing zu verbessern, indem du diesen Absturz meldest
 
-Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können was schiefgegangen ist.
+Wir würden gerne Diagnostikdaten sammeln und [ein Issue auf Github erstellen](https://github.com/freesewing/freesewing/issues/new), damit wir genau untersuchen können, was schiefgegangen ist.
 
-Die von uns erfassten Diagnosedaten beinhalten:
+Die von uns erfassten Diagnostikdaten beinhalten:
 
- - Ihre Benutzer-ID
- - Ihr Github Benutzername (nur wenn Sie ihn in Ihrem Profil konfiguriert haben)
- - Der Name und die Version des Musters
- - Der vollständige Satz von Messungen und Optionen, mit denen dieses Muster erstellt wird
+ - Deine Benutzer-ID
+ - Dein Github-Benutzername (nur wenn du ihn in deinem Profil konfiguriert hast)
+ - Der Name und die Version des Schnittmusters
+ - Der vollständige Satz an Maßen und Optionen, mit denen dieses Schnittmuster erstellt wurde
 
-Wenn Sie einverstanden sind, diese Daten im Absturzbericht zu veröffentlichen, klicken Sie auf die Schaltfläche unten.
+Wenn du damit einverstanden bist, diese Daten im Absturzbericht zu veröffentlichen, klicke bitte auf den untenstehenden Knopf.
 
-Wenn nicht, können Sie dies immer [manuell melden](https://github.com/freesewing/freesewing/issues/new).
+Falls nicht, kannst du [dies jederzeit manuell melden](https://github.com/freesewing/freesewing/issues/new).

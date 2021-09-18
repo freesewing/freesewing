@@ -10,8 +10,8 @@ Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Bewe
 
 Der Übersicht wegen haben wir dies in vier verschiedene Rollen aufgeteilt:
 
- - Für **Besucher unserer Website**speichern wir **[Besucherdaten][v]**
- - Für **Abonnenten unseres Newsletters**speichern wir **[Abonnentendaten][s]**
+ - Für **Besucher unserer Website** speichern wir **[Besucherdaten][v]**
+ - Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
  - Für **Benutzer mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
  - Für **Benutzer mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
 

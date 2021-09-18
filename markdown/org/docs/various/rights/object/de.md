@@ -3,13 +3,13 @@ title: Das Recht auf Widerspruch
 order: 70
 ---
 
-Sie haben das Recht, der Verwendung Ihrer persönlichen Daten für wissenschaftliche Forschung Einspruch zu erheben.
+Du hast das Recht, der Verwendung deiner persönlichen Daten für wissenschaftliche Forschung zu widersprechen.
 
-Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
+Gehe dazu zu [/account/consent](/account/consent/) und lege deinen Einspruch in dem Abschnitt zu **Modelldaten** fest.
 
 <Note>
 
-Das Widerspruchsrecht ist breiter, aber so gilt es für Freesewing.
+Das Widerspruchsrecht an sich ist weiter gefasst, aber so ist es anwendbar für Freesewing.
 
 </Note>
 

@@ -11,10 +11,9 @@ Das ist keine exakte Wissenschaft. Wir bieten diese Größen als schnelle und ei
 
 <Tip>
 
-##### Open in a wide view
+##### Schaue sie dir im Breitbildformat an
 
-These tables take up a lot or screen real-estate, which is why we
- [show sizes in a wide view](/sizes/).
+Diese Tabellen nehmen eine Menge Platz auf einem Bildschirm ein, weswegen wir [die Größen in einem Breitbildformat anzeigen](/sizes/).
 
 </Tip>
 

@@ -21,7 +21,7 @@ Si vous utilisez un overlocker/serger, vous pouvez coudre les coutures qui ont b
   
 </Tip>
 
-## Étape 1 : Attachement des Gussets.
+## Step 1: Attaching the Gussets
 
 - Avec les bons côtés ensemble, coudre les éclats aux panneaux avant le long des coutures latérales.
 - ***Terminez*** coutures.
