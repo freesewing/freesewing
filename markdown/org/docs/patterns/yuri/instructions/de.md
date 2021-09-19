@@ -38,7 +38,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 
 <Note>
 
-Auf dem Muster wird die Rückseite als Querschnitt markiert. Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
   
 </Note>
 

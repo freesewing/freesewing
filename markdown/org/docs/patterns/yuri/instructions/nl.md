@@ -38,7 +38,7 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
 
 <Note>
 
-Op het patroon is de achterzijde gemarkeerd als kruispunt. Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
   
 </Note>
 
