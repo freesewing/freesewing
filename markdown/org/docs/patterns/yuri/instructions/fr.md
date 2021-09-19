@@ -21,7 +21,7 @@ Si vous utilisez un overlocker/serger, vous pouvez coudre les coutures qui ont b
   
 </Tip>
 
-## Étape 1 : Attachement des Gussets.
+## Step 1: Attaching the Gussets
 
 - Avec les bons côtés ensemble, coudre les éclats aux panneaux avant le long des coutures latérales.
 - ***Terminez*** coutures.
@@ -38,7 +38,7 @@ Si vous utilisez un overlocker/serger, vous pouvez coudre les coutures qui ont b
 
 <Note>
 
-Sur le patron, l'encoche arrière est marquée comme une encoche croisée. Il est recommandé d'en faire une double encoche lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Il est recommandé d'en faire une double encoche lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
   
 </Note>
 

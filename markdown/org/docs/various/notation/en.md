@@ -13,7 +13,7 @@ pattern notation:
 
 ##### Might vary slightly between preview and final result
 
-For reason that are surprisingly complex, there might be slight
+For reasons that are surprisingly complex, there might be slight
 differences in fonts and colors between how a pattern looks online 
 and how it looks as a downloaded PDF or SVG.
 

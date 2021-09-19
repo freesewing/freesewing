@@ -15,7 +15,7 @@ title: Construcción de Holmes
 
 - ***Baste*** : Largas juntas temporales. Se puede mecanizar o coser a mano.
 
-- ***Pad Stitch*** : Una unión perpendicular en ejecución para asegurar dos capas juntas.
+- ***Pad Stitch*** : A parallel running stitch to secure two layers together.
 
 - ***Tack*** : Un asiento en un lugar para asegurar piezas juntos.
 
@@ -148,9 +148,10 @@ __6.__ (Opcional)-***Bastar*** el visor a la corona a lo largo de las líneas de
 __7.__ Repetir pasos 4 a 6 para el visor restante en el lado opuesto de la costura de la corona central.  
 __8.__ Construir el revestimiento del mismo modo que la corona omitando ***Edgestitching*** y dejar un hueco en la costura del revestimiento central lo suficientemente grande como para dar la vuelta al sombrero.  
 __9.__ En los lados rectos, juntas con las costuras del centro de la corona, las costuras del panel y las líneas de costura. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras. __10.__ Volver el sombrero hacia adentro.   
-__11.__ (Opcional/Alternar a 13.) ***Understitch*** forraje.  
-__12.__ ***Deslizar*** cierre de forraje. __13.__ (Opcional/Alternar a 11.) ***Topstitch*** o ***Edgestioner*** a lo largo del exterior del sombrero, atrapando el revestimiento en el interior asegurándose de que no alcanza su punto máximo mientras se core.  
-__14.__ (Opcional) ***Tack*** el pico del revestimiento hasta el pico de la corona. Esto es para ayudar a evitar que el revestimiento se caiga.
+__11.__ (Opcional/Alternar a 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed.  
+__13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 

@@ -1,14 +1,14 @@
-In Ihrem Stoffgeschäft finden Sie eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn Sie das nicht tun, schauen Sie einfach nach der Strickwarensektion und suchen Sie nach einem dickeren und bequemen Strickstoff.
+In einem Stoffgeschäft deiner Wahl findest du eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn nicht, schaue einfach nach der Strickwarensektion und suche nach einem dickeren und bequemen Strickstoff.
 
-Bis zu den Fasern können Sie alle Baumwolle gehen oder sich für eine Poly-oder Acryl-Baumwolle entscheiden.
+Was die Fasern betrifft kannst du dich komplett für Baumwolle entscheiden oder eine Poly- oder Acryl-Baumwoll-Mischung nehmen.
 
-Achten Sie auf das Innere des Stoffes. Sweatshirt-Stoffe kommen in Schleife und gebürstet. Wenn Sie wollen, dass OMG-it-Feels-soft-on-my-Haut-Gefühl, gehen Sie nach gebürstet.
+Achte auf die Innenseite des Stoffes. Sweatshirt-Stoffe kommen in loopback und zurückgebürstet. Wenn du dieses OMG-es-fühlt-sich-so-weich-an-auf-meiner-Haut Gefühl haben willst, wähle gebürstet.
 
 <Note>
 
-Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
+Du musst keinen Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, vom modischen Neopren (aka scuba) bis hin zu einer exzentrischen Wahl wie gebrochener Velour (aka Samt).
  
-Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
+Oder wenn du deine Klasse aufgegeben hast, kannst du nach Fleece greifen.
 
 </Note>
 

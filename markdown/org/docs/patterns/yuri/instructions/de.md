@@ -21,7 +21,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
   
 </Tip>
 
-## Schritt 1: Befestigen der Gussets.
+## Step 1: Attaching the Gussets
 
 - Mit den guten Seiten zusammen, nähen Sie die Kugeln an den Frontplatten entlang der Seitennaht.
 - ***Beendet*** Nähte.
@@ -38,7 +38,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 
 <Note>
 
-Auf dem Muster wird die Rückseite als Querschnitt markiert. Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
   
 </Note>
 
@@ -139,14 +139,14 @@ Wenn du kein Halsband verwendest, solltest du die Naht mit der **Veredelungsmeth
   
 </Note>
 
-## Schritt 11: Schaltflächen und Schaltflächen
+## Schritt 11: Knöpfe und Knopflöcher
 
 - An den Knopflochmarkierungen auf den Vordertafeln nähen die Tastenlöcher für 2,5cm (1 Zoll) Tasten oder die Tastengröße Ihrer Wahl.
 - Bei der Tastenplatzierung können Sie Ihren Yuri ausprobieren und sehen, wo die Tasten am besten für Sie passen.
 - Alternativ können Sie die Schaltflächenmarkierungen auf dem Muster für die Platzierung verwenden.
-- Buttons anhängen.
+- Knöpfe anbringen.
 
 ## Schritt 12: Ta-daaa
 
-Genieße deinen Yuri!
+Genieße deine/n Yuri!
 

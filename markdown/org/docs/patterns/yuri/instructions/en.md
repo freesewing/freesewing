@@ -21,7 +21,7 @@ If using a overlocker/serger you can sew seams which need fininshing in one go r
   
 </Tip>
 
-## Step 1: Attaching the Gussets.
+## Step 1: Attaching the Gussets
  
 - With the good sides together, sew the gussets to the front panels along the side seams.
 - ***Finish*** seams.
@@ -38,7 +38,7 @@ If using a overlocker/serger you can sew seams which need fininshing in one go r
 
 <Note>
 
-On the pattern the back notch is marked as a cross-notch. It is recommended to make this a double notch when cutting out your pieces to make the back notch easier to differentiate from the front.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). It is recommended to make this a double notch when cutting out your pieces to make the back notch easier to differentiate from the front.
   
 </Note>
 

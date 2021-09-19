@@ -15,7 +15,7 @@ title: Construction de Holmes
 
 - ***Baste*** : De longs points temporaires pour assembler des pièces. Peut être usiné ou cousu à la main.
 
-- ***Pad Stitch*** : Un point de course perpendiculaire pour sécuriser deux couches ensemble.
+- ***Pad Stitch*** : A parallel running stitch to secure two layers together.
 
 - ***Tack*** : Une sitch en cours d'exécution à un endroit pour sécuriser les pièces ensemble.
 
@@ -148,9 +148,10 @@ __6.__ (Facultatif) Machine-***Baste*** la visière à la couronne le long des l
 __7.__ Répétez les étapes 4 à 6 pour la visière restante du côté opposé de la couture de couronne centrale.  
 ____ Construire la doublure de la même manière que la couronne ommise ***Edgestitching*** et laisser un écart dans la doublure centrale suffisamment grand pour tourner le chapeau.  
 __9.__ Avec des côtés droit ensemble, coutures de couronne au centre, coutures de panneau et lignes de couture. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures. __10.__ Tournez le chapeau à l'intérieur, en appuyant sur la doublure à l'intérieur.   
-__11.__ (Optionnel/Alternatif à 13.) ***Sous-point*** doublure  
-__12.__ ***Couture de glissement*** ligne d'ouverture fermée. __13.__ (Facultatif/Alternatif à 11.) ***Toppoint*** ou ***Edgestitch*** le long de l'extérieur du chapeau, Attraper la doublure à l'intérieur en s'assurant qu'elle ne soit pas à pics pendant que vous courez.  
-__14.__ (facultatif) ***Tack*** le pic de la doublure au sommet de la couronne. Il s'agit de contribuer à éviter que la doublure ne s'effondre.
+__11.__ (Optionnel/Alternatif à 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed.  
+__13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 

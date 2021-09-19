@@ -15,7 +15,7 @@ title: Holmes Constructie
 
 - ***Drieg*** : Lange tijdelijke steken om stukken samen te voegen. Kan worden gehuurd of met de hand.
 
-- ***Pad Stitch*** : Een loodrechte doorsteek om twee lagen samen te bevestigen.
+- ***Pad Stitch*** : A parallel running stitch to secure two layers together.
 
 - ***Tack*** : Een lopende zitplaats op één plek om stukken samen te bevestigen.
 
@@ -170,9 +170,10 @@ __6.__ (Optioneel) Machine-***Baste*** aan de kroon langs de naadlijnen.
 __7.__ Herhaal stap 4 tot 6 voor de resterende bezoeker aan de andere kant van de middenkroon.  
 __8.__ Bouw de voering op dezelfde manier als de kroonjuweel ***Edgestitching*** en laat een opening in de middelste voering groot genoeg om de hoed te draaien.  
 __9.__ Met rechterkanten op elkaar, overeenkomende middenkroonnaden, paneel naden en naadlijnen. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen. __10.__ Draai hoed binnenstebuiten, strijk om in te gaan.   
-__11.__ (Optioneel/Alternatief voor 13.) ***Onderstiksel*** voering.  
-__12.__ ***Slipstitch*** voering opening gesloten. __13.__ (optioneel/Alternatief voor 11.) ***Sierstiksel*** of ***Stik*** langs de buitenkant van de hoed, het vangen van de voering aan de binnenkant zorgt ervoor dat deze niet piekt terwijl je naait.  
-__14.__ (optioneel) ***Tack*** de piek van de voering naar het hoogtepunt van de kroon. Dit om te voorkomen dat de voering uitvalt.
+__11.__ (Optioneel/Alternatief voor 13.) ***Understitch*** lining.  
+__12.__ ***Slipstitch*** lining opening closed.  
+__13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 

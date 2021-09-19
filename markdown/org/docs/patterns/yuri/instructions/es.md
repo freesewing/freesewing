@@ -21,7 +21,7 @@ Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en u
   
 </Tip>
 
-## Paso 1: Adjuntar los Gussets.
+## Step 1: Attaching the Gussets
 
 - Con los buenos lados juntos, coser las chispas a los paneles frontales a lo largo de las costuras laterales.
 - ***Finaliza*** costuras.
@@ -38,7 +38,7 @@ Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en u
 
 <Note>
 
-En el patrón, el muelle trasero está marcado como una muñeca cruzada. Se recomienda hacer esto una doble muñeca al cortar sus piezas para facilitar la diferencia de la parte trasera desde el frente.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Se recomienda hacer esto una doble muñeca al cortar sus piezas para facilitar la diferencia de la parte trasera desde el frente.
   
 </Note>
 
