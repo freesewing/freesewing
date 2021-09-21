@@ -46,11 +46,11 @@ Stecke die Seitennähte zusammen, gute Seiten zueinander. Nähe die Seitennaht a
 
 <Note>
 
-Gute Arbeit! Technisch könnte man die Kanten roh belassen, da Strickstoffe nicht zerfallen lassen aber damit Ihre Unsterblichkeit aufrecht bleibt, sollten Sie den Beinen und der Taille wahrscheinlich elastisch hinzufügen. Mach weiter.
+Gute Arbeit! Eigentlich könnte man die Schnittkanten roh belassen, da Strickstoffe nicht ausfransen, aber damit deine Unterwäsche oben bleibt, solltest du an den Beinen und der Taille wahrscheinlich Gummizüge hinzufügen. Mach weiter.
 
 </Note>
 
-### Schritt 8: Gummibänder vorbereiten
+### Schritt 8: Gummizüge vorbereiten
 
 Überlappen Sie die Kanten jedes elastischen Teiles durch Ihre Naht und Näht zusammen. Sie sollten drei elastische Stücke haben: eines für die Taille und zwei für die Beine.
 
@@ -70,12 +70,12 @@ Nähen Sie das elastische Kleidungsstück mit einem Zickzackstich. Die elastisch
 
 Schneiden Sie alle überschüssigen Stoffe, die Massen- oder Stöcke aus der Elastik verursachen.
 
-### Schritt 10: Füge den Gummizug ein und nähe ihn wieder nach unten
+### Schritt 10: Falte den Gummizug nach innen und nähe alles nochmal fest
 
 Das elastische und das Gewebe nach innen einklappen und die rohe Kante des Stoffes unter dem elastischen Stoff einschließen. Du solltest auf die Außenseite des Geräts schauen, eine gefaltete Kante mit ein bisschen elastischem Blick aus. Nähen mit einem Zickzack-Nähen.
 
 ![Füge den Gummi ein und nähe ihn wieder nach unten](step10.png)
 
-Wiederholen Sie diese Schritte für jede der Taillen- und Beinöffnungen.
+Wiederhole diese Schritte für jede der Taillen- und Beinöffnungen.
 
 Du hast es geschafft!
