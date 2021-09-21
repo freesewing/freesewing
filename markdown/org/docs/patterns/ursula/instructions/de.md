@@ -1,6 +1,6 @@
-### Schritt 1: Nähen Sie die Vorderseite zum ersten Gusset Stück
+### Schritt 1: Nähe die Vorderseite an das erste Zwickel-Stück
 
-Platzieren Sie eines der Gussetstücke auf das vordere Stück, _gute Seiten zusammen_, so dass die Crotch Nähte ausgerichtet sind. Pin oder Baste an der Nahtzugabe.
+Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, so dass die Schritt-Nähte zueinander ausgerichtet sind. Pin oder Baste an der Nahtzugabe.
 
 ![Nähe die Vorderseite zum ersten Gusset Stück](step01.png)
 
