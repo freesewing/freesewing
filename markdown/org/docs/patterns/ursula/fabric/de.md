@@ -1,3 +1,3 @@
-Für dieses Muster braucht man einen Stoff mit vielen horizontalen und vertikalen Strecken (manchmal auch „Vierwegstrecken“). Bevorzugt etwas komfortabel, weich und atmungsaktiv.
+Für dieses Schnittmuster braucht man einen Stoff mit viel horizontaler und vertikaler Dehnung (manchmal auch „Vierwegestretch“). Am besten etwas das komfortabel, weich und atmungsaktiv ist.
 
-Zu den empfohlenen Stoffen gehören Stretchjerseys, Stretchgitter, Stretchstriche oder die meisten Stoffe mit mindestens 5% Spandex. Zum Beispiel, modal (rayon) Trikot mit Spandex.
+Zu den empfohlenen Stoffen gehören Stretchjerseys, Stretch-Mesh, Stretch-Strickgewebe oder die meisten Stoffe mit mindestens 5% Spandex. Beispielsweise Modal (Rayon) Jersey mit Spandex.
