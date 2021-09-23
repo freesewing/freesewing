@@ -54,9 +54,11 @@ unreleased:
     simon:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1319](https://github.com/freesewing/freesewing/issues/1319)
-    simon3:
+    simone:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
+      - Fix issue with armhole introduced with the S3 options in Brian
+        Closes #1335
 
 2.18.0:
   date: 2021-09-09
