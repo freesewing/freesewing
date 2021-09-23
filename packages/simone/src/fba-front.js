@@ -286,6 +286,13 @@ export default (part) => {
     points.armholePitchCp2,
     points.armholePitch.dist(points.armholePitchCp1_rot1)
   )
+  // This is a problem because ever since the S3 options in Brian
+  // we re-use paths.frontArmhole which now does not match up with
+  // the armholePitch point we moved above. So let's hack the path's
+  // starting point.
+  // See https://github.com/freesewing/freesewing/issues/1335
+  paths.frontArmhole.ops[0].to.x = points.armholePitch.x
+  paths.frontArmhole.ops[0].to.y = points.armholePitch.y
 
   //
   // Put the snippets in the right place
@@ -297,6 +304,7 @@ export default (part) => {
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)
+
 
   //
   // Now recreate the paths and let Simon take it from here
