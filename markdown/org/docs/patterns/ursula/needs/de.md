@@ -7,9 +7,9 @@ Um Ursula zu erstellen, benötigst du Folgendes:
 
 ##### Bindungsmethoden können die Nahterlaubnis
 
-beeinflussen, wenn Falten über elastisch (FOE) verwendet wird oder Strickverbindung, Sie können vor dem Schneiden die Naht an den Beinen und die Taille abschneiden wollen. Wenn Sie die Nahtzuweisung beibehalten, wird das fertige Produkt eine etwas höhere Taille und etwas kleinere Beinöffnungen haben.
+beeinflussen, wenn Falten über elastisch (FOE) verwendet wird oder Strickverbindung, Sie können vor dem Schneiden die Naht an den Beinen und die Taille abschneiden wollen. Wenn du die Nahtzugabe beibehältst, wird das fertige Produkt eine etwas höhere Taille und etwas kleinere Beinöffnungen haben.
 
   ##### Overlocks (Serger) sind schön, aber optional
-Wie bei allen Strickwaren und Stretchgeweben wird dir eine Overlock (Serger) das Leben erleichtern. Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. Sie können Ursula einfach mit einer Zickzack-Nähung nähen.
+Wie bei allen Strickwaren und Stretchgeweben wird dir eine Overlock (Serger) das Leben erleichtern. Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. Du kannst Ursula auch einfach mit einem Zickzack-Stich nähen.
 
 </Tip>
