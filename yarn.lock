@@ -17496,9 +17496,9 @@ rollup-plugin-peer-deps-external@^2.2.3, rollup-plugin-peer-deps-external@^2.2.4
   integrity sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==
 
 rollup-plugin-sass@^1.2.2:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.2.7.tgz#7f9c7b55304f7eb622cc75396060303d1500898e"
-  integrity sha512-I6uwtKVyqXVufXvCkbPNAdrTKyhDiPdKulbuWnKIXE8mitC1zKtf9cZSjnRcR279nDaDBo4BMG73PGbDmcIGyQ==
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.2.8.tgz#e696ef5d2323f5bddc0596d8d368d3508c777ec4"
+  integrity sha512-y2xFMvxnAn5uYY8Q8zTM4jA7T+Ry3YWwQIlxfhB3YB3P/8Z/2FstHhvRPAcjahrJUZW1wUPRhl5oRkMXKaKuzA==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     resolve "^1.5.0"
