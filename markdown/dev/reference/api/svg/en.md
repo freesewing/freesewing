@@ -11,7 +11,7 @@ While the methods exposed by this object are only used internally,
 its attributes are useful for situations where you
 want to develop a plugin, or use a custom layout:
 
-## Properties
+## Svg properties
 
 <ReadMore list />
 

@@ -1,13 +1,34 @@
 ---
-title: getId()
+title: Part.getId()
 ---
+
+A part's `getId()` method will return an integer the can be used as an 
+ID Points/Paths/Snippets. This method will ensure the ID is unique be
+keeping an internal record of the ID that have been used. 
+It is typically used when programatically adding points, paths, or snippets.
+
+## Part.getId() signature
 
 ```js
 int part.getId(prefix='')
 ```
-Returns a integer as an available ID that you can use as for Points/Paths/Snippets.
 
-Takes an options `prefix` to prefix the ID with.
+This methiod takes an optional parameter that will be used as a prefix for the ID.
 
-This is typically used when adding points programmatically.
+## Part.getId() example
+
+```js
+export default function (part) {
+  const { Point, points } = part.shorthand()
+
+  for (let i=0;i<10;i++) {
+    const id= part.getId()
+    points[id] = new Point(i*10, i*10)
+  }
+
+  // You would do more useful stuff before returning
+  return part
+}
+```
+
 

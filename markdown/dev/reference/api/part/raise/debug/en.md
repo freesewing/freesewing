@@ -1,12 +1,10 @@
 ---
-title: raise.debug()
+title: Part.raise.debug()
 ---
 
-```js
-raise.debug(data)
-```
-
-The `raise.debug()` method adds an event of type `debug` to the pattern.
+A part's `raise.debug()` method will log a debug-level event.
+Debug events are typically used to pass information to pattern developers
+so that can troubleshoot issues with the pattern.
 
 What happens with this data is entirely up to the frontend developer.
 As such, data can by anything you like. A string is common, but you
@@ -18,3 +16,23 @@ use in your frontend.
 All raise methods are available via [the shorthand method](/reference/api/part/shorthand)
 
 </Tip>
+
+## Part.raise.debug() signature
+
+```js
+raise.debug(data)
+```
+
+## Part.raise.debug() example
+
+```js
+export default function (part) {
+  const { raise } = part.shorthand()
+
+  raise.debug('Entered the draft method of partmyPart')
+  
+  // You would do more useful stuff before returning
+  return part
+}
+```
+

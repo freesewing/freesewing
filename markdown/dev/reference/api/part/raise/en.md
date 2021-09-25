@@ -1,9 +1,19 @@
 ---
-title: raise methods
+title: Part raise methods
 ---
 
-The various `raise` methods are used to bring information to the attention
-of the user, or developer.
+A part's different `raise` methods are used to bring information to the attention
+of the user, or developer. You can think of them as logging methods the register
+data.
+
+<Warning>
+
+##### FreeSewing v3 breaking changes
+
+This behavior is likely to change in FreeSewing v3. Refer to [the
+roadmap](https://github.com/freesewing/freesewing/discussions/1278) for details.
+
+</Warning>
 
 There are four different types of information with their own method: 
 

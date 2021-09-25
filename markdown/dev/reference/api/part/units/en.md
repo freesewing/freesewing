@@ -1,12 +1,11 @@
 ---
-title: units()
+title: Part.units()
 ---
 
-```js
-string part.units(float number)
-```
-
-Formats input (in mm) as the units requested by the user.
+A part's `units()` method will formats a float you pass it, which should
+represent a value in mm, into the units requested by the user.
+The returned value is to be used in presentation only, as it will be 
+a string that includes the user's units.
 
 <Tip>
 
@@ -19,4 +18,20 @@ let { units } = part.shorthand();
 ```
 
 </Tip>
+
+## Part.units() signature
+
+```js
+string part.units(float number)
+```
+
+## Part.units() example
+
+```js
+export default function (part) {
+  const { raise, units, measurements } = part.shorthand()
+
+  raise.info(`Pattern drafted for a ${units(measurements.chest)} chest`)
+}
+```
 
