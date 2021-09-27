@@ -3,7 +3,7 @@
 
 ![Cerrar el lado y las costuras del hombro](step01.png)
 
-Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Servir las costuras laterales y las costuras cortas en las correas de hombro.
+Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Paso 2: Termina la lluvia
 
