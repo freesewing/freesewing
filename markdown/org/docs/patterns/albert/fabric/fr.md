@@ -1,6 +1,6 @@
 
-Un tablier fonctionne mieux avec un tissu épais, tissé serré et facile à nettoyer. De plus, assurez-vous de prendre une fibre naturelle ou en tout cas quelque chose qui est résistant à la chaleur.
+Un tablier fonctionne mieux avec un tissu épais, tissé serré et facile à nettoyer. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
 
-Un coton lourd, un chino, une toile ou un denim sont tous d'excellents choix.
+Heavy cotton, chino, canvas or denim are all excellent choices.
 
-En cas de doute, optez pour le denim brut (coton pur, s'il étire, ce n'est pas bon)
+When in doubt, go for raw denim (pure cotton, if it stretches it's no good).
