@@ -387,6 +387,8 @@ Pattern.prototype.render = function () {
 
 Pattern.prototype.on = function (hook, method, data) {
   this.hooks[hook].push({ method, data })
+
+  return this
 }
 
 Pattern.prototype.use = function (plugin, data) {
