@@ -19,6 +19,7 @@ namedExports:
   - models
   - pattern-info
   - mui-theme
+  - snapseries
 packageJson:
   benjamin:
     author: woutervdub (https://github.com/woutervdub)

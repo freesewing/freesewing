@@ -20,6 +20,16 @@
  - Added measurements for dolls & giants to Workbench measurments selector
  - Added sampling for dolls & giants to Workbench tests
 
+### core
+
+#### Added
+
+ - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
+
+#### Changed
+
+ - Pattern.on() is now chainable as it returns the Pattern object
+
 ### hortensia
 
 #### Changed
@@ -87,6 +97,17 @@
  - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
  - Changed the `boxPleatWidth` option type from `mm` to `pct`
  - Changed the `boxPleatFold` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
+ - Fix issue with armhole introduced with the S3 options in Brian Closes
+
+### snapseries
+
+#### Added
+
+ - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
 
 ### theo
 
