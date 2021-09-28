@@ -6,6 +6,8 @@ unreleased:
     components:
       - Added measurements for dolls & giants to Workbench measurments selector
       - Added sampling for dolls & giants to Workbench tests
+    core:
+      - Pattern.on() is now chainable as it returns the Pattern object
     hortensia:
       - Changed the `handleWidth` option type from `mm` to `pct`
     jaeger:
