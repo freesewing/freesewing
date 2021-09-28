@@ -12,7 +12,7 @@ export default (part) => {
     paperless,
     macro,
     options,
-    store
+    store,
   } = part.shorthand()
 
   const width = store.get('sleevePlacketWidth') > 20 ? 10 : store.get('sleevePlacketWidth') / 4

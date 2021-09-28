@@ -1,6 +1,18 @@
 export default (part) => {
-  const { store, measurements, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
-    part.shorthand()
+  const {
+    store,
+    measurements,
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    options,
+  } = part.shorthand()
 
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak

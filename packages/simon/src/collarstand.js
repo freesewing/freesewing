@@ -35,7 +35,10 @@ export default (part) => {
     points.rightBottomHinge = points.hinge.shift(180 + hinge, width / 2)
     points.rightTopCf = points.rightCf.shift(curve + 90, width / 2)
     points.rightBottomCf = points.rightCf.shift(curve - 90, width / 2)
-    points.rightBottomEdge = points.rightBottomCf.shift(curve, store.get('buttonholePlacketWidth') / 2)
+    points.rightBottomEdge = points.rightBottomCf.shift(
+      curve,
+      store.get('buttonholePlacketWidth') / 2
+    )
 
     // Add control points (right side only)
     points.bottomMidCp2 = points.bottomMid.shift(0, half * 0.2)
@@ -48,7 +51,10 @@ export default (part) => {
     points.rightTopHingeCp2 = points.rightTopHinge.shift(90 + hinge, half * 0.2)
     points.rightTopHingeCp1 = points.rightTopHinge.shift(hinge - 90, half * 0.1)
     points.topEdgeCp1 = points.rightTopCf.rotate(-90, points.rightBottomEdge)
-    points.rightTopCfCp2 = points.rightTopCf.shift(180 + curve, store.get('buttonholePlacketWidth') / 2)
+    points.rightTopCfCp2 = points.rightTopCf.shift(
+      180 + curve,
+      store.get('buttonholePlacketWidth') / 2
+    )
 
     // Now do the left side
     points.leftCf = points.rightCf.flipX()
@@ -59,7 +65,10 @@ export default (part) => {
     points.leftTopCfCp1 = points.rightTopCfCp2.flipX()
     points.leftTopCf = points.rightTopCf.flipX()
     points.leftBottomCf = points.rightBottomCf.flipX()
-    points.leftBottomEdge = points.leftBottomCf.shift(bend + 180, store.get('buttonPlacketWidth') / 2)
+    points.leftBottomEdge = points.leftBottomCf.shift(
+      bend + 180,
+      store.get('buttonPlacketWidth') / 2
+    )
     points.leftTopCfCp2 = points.leftTopCf.shift(bend + 180, store.get('buttonPlacketWidth') / 2)
     points.leftBottomEdgeCp1 = points.leftBottomCf.rotate(90, points.leftBottomEdge)
     points.leftBottomCfCp2 = points.rightBottomCfCp1.flipX()

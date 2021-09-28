@@ -34,7 +34,7 @@ export default (part) => {
     snippets,
     Snippet,
     sa,
-    raise
+    raise,
   } = part.shorthand()
 
   // Helper object holding the Titan side seam path

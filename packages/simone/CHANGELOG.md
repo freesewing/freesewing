@@ -13,6 +13,11 @@
  - Changed the `boxPleatWidth` option type from `mm` to `pct`
  - Changed the `boxPleatFold` option type from `mm` to `pct`
 
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
+ - Fix issue with armhole introduced with the S3 options in Brian Closes
+
 ## 2.17.2 (2021-08-15)
 
 ### Added

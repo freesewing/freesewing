@@ -1,7 +1,8 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
+  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
   const width = store.get('buttonPlacketWidth')
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)

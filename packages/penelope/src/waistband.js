@@ -12,7 +12,7 @@ export default function (part) {
     sa,
     paperless,
     macro,
-    store
+    store,
   } = part.shorthand()
 
   if (!options.waistBand) {

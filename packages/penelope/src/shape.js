@@ -146,7 +146,6 @@ function BuildMainShape(part, frontPart) {
       sideSeamLength = sideSeamPath.length()
       sdelta = store.get('sideSeamLength') - sideSeamLength
     }
-
   } while ((Math.abs(wdelta) > 1 || Math.abs(sdelta) > 1) && iteration++ < 100)
 
   paths.waist1 = waistCurve.translate(0, 10).attr('class', 'lining dashed')

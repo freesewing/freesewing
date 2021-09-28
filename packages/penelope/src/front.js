@@ -1,18 +1,8 @@
 import { BuildMainShape } from './shape'
 
 export default function (part) {
-  let {
-    options,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+    part.shorthand()
 
   BuildMainShape(part, true)
 

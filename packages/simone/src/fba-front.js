@@ -305,7 +305,6 @@ export default (part) => {
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)
 
-
   //
   // Now recreate the paths and let Simon take it from here
   //

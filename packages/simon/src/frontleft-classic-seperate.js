@@ -1,6 +1,18 @@
 export default (part) => {
-  const { utils, sa, Point, points, Path, paths, store, snippets, complete, paperless, macro, options } =
-    part.shorthand()
+  const {
+    utils,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    store,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options,
+  } = part.shorthand()
 
   const fold = store.get('buttonholePlacketFoldWidth')
   points.neckEdge = utils.lineIntersectsCurve(

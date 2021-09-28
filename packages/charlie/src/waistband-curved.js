@@ -45,7 +45,10 @@ export default (part) => {
   points.cfRightBottomCp = points.cfRightBottom.shift(angle - 90, a * radius)
 
   points.cfLeftTopCp = points.cfLeftTop.shift(90, a * (radius - store.get('waistbandWidth')))
-  points.cfRightTopCp = points.cfRightTop.shift(angle - 90, a * (radius - store.get('waistbandWidth')))
+  points.cfRightTopCp = points.cfRightTop.shift(
+    angle - 90,
+    a * (radius - store.get('waistbandWidth'))
+  )
 
   // Add fly underlap
   points.edgeRightTop = points.cfRightTop.shiftTowards(

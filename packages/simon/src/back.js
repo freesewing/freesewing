@@ -20,7 +20,10 @@ export default (part) => {
   // Add pct options (that used to be mm) to the store
   store.set('buttonPlacketWidth', measurements.neck * options.buttonPlacketWidth)
   store.set('buttonholePlacketWidth', measurements.neck * options.buttonholePlacketWidth)
-  store.set('buttonholePlacketFoldWidth', store.get('buttonholePlacketWidth') * options.buttonholePlacketFoldWidth)
+  store.set(
+    'buttonholePlacketFoldWidth',
+    store.get('buttonholePlacketWidth') * options.buttonholePlacketFoldWidth
+  )
   store.set('collarStandWidth', measurements.neck * options.collarStandWidth)
   store.set('sleevePlacketWidth', measurements.wrist * options.sleevePlacketWidth)
   store.set('boxPleatWidth', measurements.shoulderToShoulder * options.boxPleatWidth)

@@ -1,6 +1,16 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
+
+### Changed
+
+ - Pattern.on() is now chainable as it returns the Pattern object
+
 ## 2.18.0 (2021-09-09)
 
 ### Fixed
