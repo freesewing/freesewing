@@ -3,7 +3,7 @@
 
 ![Sluit de zij-en schoudernaden](step01.png)
 
-Leg de voor- en achterpand op elkaar met _goede kanten op elkaar_. Overlock de zijnaden, en de korte naden aan de schouderbandjes.
+Leg de voor- en achterpand op elkaar met _goede kanten op elkaar_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Stap 2: Werk de zoom af
 

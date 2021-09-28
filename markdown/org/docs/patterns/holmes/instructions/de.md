@@ -151,7 +151,7 @@ __9.__ Mit rechten Seiten zusammen, passende Mittelkronennaht, Panelnähte und N
 __11.__ (Optional/Alternate to 13.) ***Understitch*** lining.  
 __12.__ ***Slipstitch*** lining opening closed.  
 __13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
-__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. Damit soll verhindert werden, dass das Futter herausfällt.
 
 <Note>
 

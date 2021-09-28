@@ -1,15 +1,15 @@
 Ursula besteht aus einem vorderen Teil, einem hinteren Teil und einem gefütterten Zwickel.
 
  - **Oberstoff**
-   - **1 Front schneiden**
-   - **1 zurück schneiden**
+   - Schneide **1 Vorderteil**
+   - Schneide **1 Rückteil**
    - Schneide **2 Zwickel**
 
 <Note>
 
-##### Notizen
+##### Anmerkungen
   
-- Ursula ist ein großartiger Schrottkäufer. Wenn du Stoffschrott hast, ein [Teagan T-Shirt](/designs/teagan/) oder irgendetwas aus einem Trikot mit guter Strecke, Dies ist eine gute Möglichkeit, diese zu nutzen.
-- Sie können den gleichen Stoff für das gesamte Kleidungsstück, einschließlich der Gusset Futter, verwenden. Einige Leute lieber ein Baumwoll-Trikot verwenden, um stattdessen die Gusset Linie. Wenn du das möchtest, schneide **1 Gusset** aus deinem Hauptstoff und **1 Gusset** aus deinem Futter-Stoff.
+- Ursula eignet sich hervorragend zur Stoffresteverwertung. Wenn du Stoffreste von einem [Teagan T-Shirt](/designs/teagan/) oder sonst irgendetwas aus einem Jersey-Stoff mit guter Dehnung hast, ist dies ist eine gute Möglichkeit, sie zu verwenden.
+- Du kannst denselben Stoff für das gesamte Kleidungsstück verwenden, inklusive dem Futter für den Zwickel. Einige Leute verwenden stattdessen lieber ein Baumwoll-Jersey, um den Zwickel zu füttern. Wenn du das möchtest, schneide **1 Zwickel** aus deinem Hauptstoff und **1 Zwickel** aus deinem Futter-Stoff.
 
 </Note>

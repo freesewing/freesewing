@@ -3,15 +3,19 @@ title: Part
 order: 20
 ---
 
-Part objects hold the actual information, and together they make up your pattern.
+The `Part` object in FreeSewing's core library holds all data and logic of a pattern part. 
+A pattern part is what holds the actual information about points and paths,
+and multiple parts together typically make up a pattern.
 
-Each Part object comes with the following properties:
+## Part properties
 
- - `paths` : A plain object to store your paths in
- - `points` : A plain object to store your points in
- - `render` : A flag that controls whether to include the part in the render output
- - `snippets` : A plain object to store your snippets in
+| Property | Description |
+| --------:| ----------- |
+| `paths` | A plain object to store your paths in |
+| `points` |  A plain object to store your points in |
+| `render` |  A flag that controls whether to include the part in the render output |
+| `snippets` | A plain object to store your snippets in |
 
-In addition, a Part object exposes the following methods:
+## Part methods
 
 <ReadMore list />

@@ -1,27 +1,33 @@
 ---
-title: draft()
+title: Pattern.draft()
 ---
+
+A pattern's `draft()` method will draft all the different pattern parts
+making sure to do so in the right order, handle dependencies, resolve
+options to their absolute values and a number of other housekeeping things
+that are required for the pattern to be drafted.
+
+<Note>This method is chainable as it returns the Pattern object</Note>
+
+## Pattern.draft() signature
 
 ```js
 Pattern pattern.draft()
 ``` 
 
-Does the actual work of drafting the pattern.
-
-Your draft method should return the pattern object, thus making it chainable.
+## Pattern.draft() example
 
 ```js
-import freesewing from "@freesewing/core"
-import aaron from "@freesewing/aaron"
+import Aaron from "@freesewing/aaron"
 import models from "@freesewing/models"
 
-let pattern = new aaron({
+const pattern = new Aaron({
   settings: {
     embed: true,
-    measurements: models.manSize38
-  } 
+  },
+  measurements: models.manSize38
 })
 
-let svg = pattern.draft().render()
+const svg = pattern.draft().render()
 ``` 
 

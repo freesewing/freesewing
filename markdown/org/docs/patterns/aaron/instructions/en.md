@@ -4,7 +4,7 @@
 ![Close the side and shoulder seams](step01.png)
 
 Put front and back on top of each other with _good sides together_. 
-Serge the side seams, and the short seams at the shoulder straps.
+Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Step 2: Finish hem
 
