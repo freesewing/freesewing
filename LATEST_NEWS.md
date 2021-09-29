@@ -1,12 +1,14 @@
-##### New pattern: The Ursula Undies
+##### New pattern: The Yuri Hoodie
 
-Check out the latest addition to our catalog: [the Ursula undies pattern](/designs/ursula/).
+Check out the latest addition to our catalog: [the Yuri hoodie pattern](/designs/yuri/).
 
-It's a basic, highly-customizable underwear pattern. A quick make, and ideal as a stash buster.
+Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies.
 
-##### Next contributor call on 18 September
+##### Next contributor call on 2 October
 
-The next contributor call is on **18 September 2021**, Lucian and Karen will host it.
+The next contributor call is on **2 October 2021**, Lucian and Karen will host it.
+
+There will also be a [developer call](https://github.com/freesewing/freesewing/issues/1352) 30 minutes prior.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
