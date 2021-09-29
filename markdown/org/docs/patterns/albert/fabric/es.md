@@ -1,6 +1,6 @@
 
-Un Pronuncia funciona mejor con una tela resistente, tejida apretadamente y fácil de limpiar. In addition, make sure to go for a natural fibre are in any case something that is heat-resistant.
+Un Pronuncia funciona mejor con una tela resistente, tejida apretadamente y fácil de limpiar. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
 
-Un algodón pesado, chino, lienzo o denim son excelentes opciones.
+Heavy cotton, chino, canvas or denim are all excellent choices.
 
-Cuando esté en duda, vaya a la denim cruda (algodón puro, si se estira no es bueno)
+When in doubt, go for raw denim (pure cotton, if it stretches it's no good).
