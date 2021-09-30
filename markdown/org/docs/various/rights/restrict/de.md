@@ -3,13 +3,13 @@ title: Das Recht, die Verarbeitung einzuschränken
 order: 50
 ---
 
-Sie haben das Recht, eine Einschränkung der Verarbeitung Ihrer persönlichen Daten zu beantragen.
+Du hast das Recht, eine Einschränkung der Verarbeitung deiner persönlichen Daten zu beantragen.
 
-Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
+Gehe zu [/account/actions/restrict][1], um die Verarbeitung deiner persönlichen Daten einzuschränken.
 
 <Warning>
 
-Ihre Anfrage wird sofort bewilligt und kann nur rückgängig gemacht werden durch [Kontaktieren][2] , um die Einschränkung aufzuheben.
+Deine Anfrage wird sofort bewilligt und kann nur dadurch rückgängig gemacht werden, indem du [uns kontaktierst][2], um die Einschränkung aufzuheben.
 
 </Warning>
 [1]: /account/actions/restrict/
