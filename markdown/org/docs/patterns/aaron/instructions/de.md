@@ -1,13 +1,13 @@
 
-## Schritt 1: Naht schließen
+## Schritt 1: Nähte schließen
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
 Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
-## Schritt 2: Saum beenden
+## Schritt 2: Saum versäubern
 
-![Beende den Saum](step02.png)
+![Versäubere den Saum](step02.png)
 
 Falte den Saum nach oben und nähe ihn nach unten. Wenn du einen Coverlock hast, benutze es. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_ , um die Naht dehnbar zu halten.
 
