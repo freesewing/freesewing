@@ -6,22 +6,22 @@ Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber
 
 Da hast du nicht ganz unrecht. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
-Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlich bewusst, und ich habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
+Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlichst bewusst, und ich habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
 
 Aber es gibt eine Teilmenge von Leuten, die mit ihnen gute Ergebnisse erzielen. Ich habe mehrere gut aussehende Kreationen gesehen, die auf Bella basieren, und Breanna scheint aus irgendeinem Grund bei Leuten beliebt zu sein, die Puppenkleidung nähen.
 
 Was ich damit sagen möchte: Da sie in einigen Fällen gut funktionieren, werden wir sie nicht entfernen. Leider aber nicht in allen Fällen, was frustrierend sein kann.
 
-Ich gebe nicht vor zu wissen, wie man Schnittmuster für Frauen entwirft. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
+Ich gebe nicht vor zu wissen, wie man Schnittmuster für Frauen entwirft. Aber ich bekomme immer wieder Anfragen, mehr Damenkleidung zu freesewing.org hinzuzufügen, und das beginnt mit einem gut gestalteten Grundschnitt.
 
-I have long waited for somebody to step forward to take this on themselves. Alas, I've been waiting in vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+Ich habe lange darauf gewartet, dass sich jemand anderes bereit erklärt und diese Aufgabe auf sich nimmt. Leider warte ich immer noch vergebens. Da der schnellste Weg, um im Internet die Antwort auf eine Frage zu finden, ist, sie selber falsch zu beantworten, habe ich mich entschlossen diese Grundschnitte zu erstellen.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Wenn du also denkst, das du das besser hinbekommen würdest, lade ich dich hiermit offiziell ein, zusammen den Frauenkleidungs-Grundschnitt zu erstellen, von dem du denkst/weißt, das es der beste ist, den es da draußen gibt.
 
-I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
+Ich biete dir sehr gerne meine Dienste an, um dein Design / deine Vision im Code umzusetzen, sodass die gesamte Nähcommunity davon profitieren kann.
 
-You can reach me at joost at freesewing.org, we also have [an active community on Discord](https://discord.freesewing.org/).
+Du kannst mich unter joost at freesewing.org erreichen, und wir haben auch [eine aktive Community auf Discord](https://discord.freesewing.org/).
 
-I hope to hear from you soon.
+Ich hoffe sehr, bald von dir zu hören.
 
 joost
