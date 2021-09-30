@@ -5,10 +5,10 @@
 
 <Warning>
 
-#### Vorsichten
+#### Achtung
 
- - Es gibt keine Naht an den Armlöchern 
- - Es gibt keine Naht beim Öffnen des Hals
- - Es gibt einen zusätzlichen Saum zulässig am Saum
+ - Es gibt keine Nahtzugabe an den Armlöchern 
+ - Es gibt keine Nahtzugabe an der Halsöffnung
+ - Es gibt eine zusätzliche Saumzugabe am Saum
 
 </Warning>
