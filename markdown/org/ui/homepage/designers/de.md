@@ -10,11 +10,11 @@ Die *Regeln* des Designs ist das, was du als Designer/in festlegst.
 
 #### Was bedeutet das für Designer/innen?
 
-Beim Entwurf oder Design von Mustern oder Kleidungsstücken ist es üblich, mit einem *fit Model* (oder *Kleiderformular* ) zu beginnen. Die Messungen des Passmodells werden als Input in der ersten Konstruktion eingesetzt.
+Beim Entwurf oder Design von Schnittmustern oder Kleidungsstücken ist es üblich, mit einem *Schnitt-Modell* (oder einer *Schneiderpuppe*) zu beginnen. Die Maße des Schnitt-Modells werden als Input im initialen Design verwendet.
 
-Die Anpassung des Musters an ein anderes Modell ist eine mühsame Aufgabe. Deshalb werden die Muster nach oben und unten gestuft, um verschiedene Größen abzudecken.
+Die Anpassung des Schnittmusters an ein anderes Modell ist eine mühsame Aufgabe, weshalb die Schnittmuster hoch- oder runterskaliert werden müssen, um verschiedene Größen abzudecken.
 
-Aber in einem parametrischen Nähmuster funktioniert die Anpassung an verschiedene Größen oder Modelle *nur*.
+In einem parametrischen Schnittmuster hingegen funktioniert das Anpassen an verschiedene Größen oder Modelle *einfach so*.
 
 #### Was kann FreeSewing für mich tun?
 
