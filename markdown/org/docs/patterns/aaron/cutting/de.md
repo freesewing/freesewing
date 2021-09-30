@@ -1,7 +1,7 @@
 
- - **1 zurück** auf die Falte schneiden
- - **1 Front** auf die Falte schneiden
- - **3 Streifen** für Halsöffnung und Armlochbindung schneiden
+ - Schneide **1 Rückenteil** im Stoffbruch
+ - Schneide **1 Vorderteil** im Stoffbruch
+ - Schneide **3 Streifen** für Halsöffnung und Armlochbindung
 
 <Warning>
 
