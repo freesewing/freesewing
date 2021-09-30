@@ -3,18 +3,18 @@
 
 #### Nach deinen Maßen erstellte Schnittmuster
 
-Alle unsere Schnittmuster sind *maßgeschneidert*. Nicht nur nach oben oder unten, sondern auch nach Ihren genauen Spezifikationen entworfen, so wie Sie es auf dem Papier tun würden.
+Alle unsere Schnittmuster sind *maßgeschneidert*. Nicht nur nach hoch- oder runterskaliert, sondern tatsächlich nach deinen genauen Spezifikationen entworfen, so wie du es auf dem Papier tun würdest.
 
-#### Vollgepackt mit Option und einer Livevorschau
+#### Vollgepackt mit Optionen und einer Livevorschau
 
-FreeSewing Patterns enthalten Optionen, mit denen Sie verschiedene Aspekte des Musters anpassen können. Unsere Live-Vorschau bedeutet keine Überraschung: Was Sie sehen, was Sie bekommen.
+FreeSewing-Schnittmuster enthalten Optionen, mit denen du verschiedene Aspekte des Schnittmusters anpassen kannst. Keine bösen Überraschungen durch unsere Live-Vorschau: Das was du siehst, bekommst du auch.
 
 #### Schnittmuster, die du teilen und anpassen kannst
 
-FreeNähmuster haben oft so viele Optionen, dass ein Muster eine Vielzahl von Stilen hervorbringen kann. Sie können Ihre Muster mit anderen teilen, so dass sie den gleichen Stil, entworfen für ihre Messungen.
+FreeSewing-Schnittmuster haben oft so viele Optionen, dass ein einzelnes Schnittmuster eine Vielzahl von Stilen hervorbringen kann. Du kannst dein Schnittmuster mit anderen teilen, sodass sie den gleichen Stil verwenden können, erstellt für ihre Maße.
 
 #### Eine Gemeinschaft hilfreicher Personen
 
-Fragen zu einem Muster? An einem der Schritte festhalten, wenn Sie Ihr Kleidungsstück herstellen? Keine Sorge, Hilfe ist verfügbar.
+Fragen zu einem Schnittmuster? Hängst du an einem Schritt fest, während du dein Kleidungsstück nähst? Keine Sorge, dir kann geholfen werden.
 
-[Trete bei Discord](https://discord.freesewing.org/) bei und entdecke, was die FreeSewing Community so großartig macht.
+[Komm zu uns auf Discord](https://discord.freesewing.org/) und entdecke selbst, was die FreeSewing Community so großartig macht.
