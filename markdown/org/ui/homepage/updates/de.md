@@ -14,7 +14,7 @@ Wenn du auf der Suche nach unserem Gesichtsmasken-Schnittmuster bist, folge dies
 
 Vor kurzen haben wir damit angefangen, Mitwirkendentreffen zu organisieren. Jeder/jede mit einem Interesse an FreeSewing ist herzlich eingeladen, teilzunehmen.
 
-An allen Treffen kann via [meet.freesewing.org](https://meet.freesewing.org/) teilgenommen werden. Im [Terminplan](/community/calls/) gibt es mehr Informationen zu den kommenden Treffen.
+All calls can be joined via [Discord](https://discord.freesewing.org/). Im [Terminplan](/community/calls/) gibt es mehr Informationen zu den kommenden Treffen.
 
 ##### Wir sind nach Discord umgezogen
 
