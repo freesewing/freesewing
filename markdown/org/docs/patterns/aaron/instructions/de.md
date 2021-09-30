@@ -3,7 +3,7 @@
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum beenden
 
