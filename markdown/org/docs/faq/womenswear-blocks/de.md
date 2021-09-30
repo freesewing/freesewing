@@ -1,18 +1,18 @@
 ---
-title: Why do you even publish womenswear blocks? They are [insert strong opinion here].
+title: Warum veröffentllcht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind [hier starke Meinung einfügen].
 ---
 
-This question comes up every now and then. The wording varies, but the sentiment can be summarized as *why even publish this garbage, it doesn't work at all*.
+Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die Stimmung kann zusammengefasst werden als *warum überhaupt diesen Müll veröffentlichen, es funktioniert absolut nicht*.
 
-Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
+Da hast du nicht ganz unrecht. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlich bewusst, und ich habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
 
-But there's a subset of people who get good results with them. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
+Aber es gibt eine Teilmenge von Leuten, die mit ihnen gute Ergebnisse erzielen. Ich habe mehrere gut aussehende Kreationen gesehen, die auf Bella basieren, und Breanna scheint aus irgendeinem Grund bei Leuten beliebt zu sein, die Puppenkleidung nähen.
 
-What I'm saying is, we're not removing them because they work in some cases. Not in all cases though, which can be frustrating.
+Was ich damit sagen möchte: Da sie in einigen Fällen gut funktionieren, werden wir sie nicht entfernen. Leider aber nicht in allen Fällen, was frustrierend sein kann.
 
-I don't pretend to know how to draft for women. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
+Ich gebe nicht vor zu wissen, wie man Schnittmuster für Frauen entwirft. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
 
 I have long waited for somebody to step forward to take this on themselves. Alas, I've been waiting in vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
 
