@@ -1,14 +1,14 @@
 ---
-title: Andere Zeilen
+title: Andere Linien
 ---
 
-Einige Muster haben möglicherweise andere Linien auf ihnen, es gibt 4 zusätzliche Stile:
+Einige Schnittmuster weisen möglicherweise andere Linien auf, es gibt 4 zusätzliche Stile:
 
  - Notiz
  - Markierung
- - Contrast
+ - Kontrast
  - Hilfe
 
-Sie können von Muster-Designern verwendet werden, um zusätzliche Informationen hinzuzufügen, je nach Kontext.
+Sie können von Schnittmuster-Designern verwendet werden, um je nach Kontext zusätzliche Informationen hinzuzufügen.
 
 <Legend part="otherLines" caption="Other line styles" >
