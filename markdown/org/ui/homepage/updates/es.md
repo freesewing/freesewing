@@ -14,7 +14,7 @@ Si estás buscando nuestro patrón de facemask, sigue este enlace:
 
 Recientemente, comenzamos a organizar llamadas de colaboradores. Cualquiera que tenga interés en FreeSewing es bienvenido a unirse.
 
-Todas las llamadas se pueden unir a través de [meet.freesewing.org](https://meet.freesewing.org/). Consulta [el programa de llamadas](/community/calls/) para obtener más información sobre las próximas llamadas.
+All calls can be joined via [Discord](https://discord.freesewing.org/). Consulta [el programa de llamadas](/community/calls/) para obtener más información sobre las próximas llamadas.
 
 ##### Nos hemos movido a Discord
 
