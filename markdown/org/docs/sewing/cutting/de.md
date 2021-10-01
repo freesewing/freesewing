@@ -5,8 +5,8 @@ title: Zuschnitt
 
 ![Ich, wie ich ein paar T-Shirts ausschneide](cutting.jpg)
 
-Schneiden ist der Akt des Ausschneiden der verschiedenen Musterstücke aus Ihrem Stoff.
+Der Zuschnitt ist der Akt des Ausschneidens der verschiedenen Schnittmusterstücke aus deinem Stoff.
 
-Das Schneiden erfolgt typischerweise mit Schere oder einem Rotationsschneider.
+Das Schneiden erfolgt typischerweise mit der Schere oder dem Rollschneider.
 
-> Der **Schnitt eines Kleidungsstücks**, so wie es aussieht, bezieht sich darauf, wie es ausgeschnitten wurde. Zum Beispiel Highcut Jeans und eine niedrig geschnittene Decke.
+> Der **Schnitt eines Kleidungsstücks**, so wie es aussieht, bezieht sich darauf, wie es ausgeschnitten wurde. Zum Beispiel hoch geschnittene Jeans und ein tief ausgeschnittenes Top.
