@@ -9,7 +9,7 @@ gussetLength:
   title: Zwickellänge
   description: Steuert die Länge des Zwickels
 elasticStretch:
-  title: Elastische Streckung
+  title: Dehnbarkeit des Gummis
   description: Passen Sie dies für mehr oder weniger dehnbare elastische
 rise:
   title: Anstieg
