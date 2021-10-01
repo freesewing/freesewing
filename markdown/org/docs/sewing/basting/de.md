@@ -13,7 +13,7 @@ Einige Beispiele, wo häufig geheftet wird:
 
  - Eine Naht an Ort und Stelle heften, bevor sie richtig genäht wird
  - Das Anheften von Verzierungen, Taschen, oder anderen Teilen, bevor sie angefügt werden
- - Das Bissen von Dellen oder anderen Mustern ändert sich, während das Kleidungsstück auf ein Modell passt
+ - Heften von Abnähern oder anderen Änderungen am Schnittmuster beim Testen des Kleidungsstückes an einem Modell
 
 Bastern ist niemals dauerhaft, sondern lediglich eine vorübergehende Maßnahme, um die Dinge in Ordnung zu bringen.
 
