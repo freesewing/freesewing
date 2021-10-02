@@ -8,7 +8,7 @@ Headings serve two different purposes:
  - They can give a title to a subsection within your content
  - They can structure lengthy content
 
-Those two roles might sound the same, but they somewhat different.
+Those two roles might sound the same, but they are somewhat different.
 
 ##### Using titles within content
 
