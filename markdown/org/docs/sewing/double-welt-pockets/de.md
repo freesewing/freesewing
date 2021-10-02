@@ -23,7 +23,7 @@ Um Doppelpaspeltaschen herzustellen, benötigst du:
  - Der Stoff oder das Schnittmusterstück, in dem du die Tasche machen möchtest
  - Zwei Stoffstreifen für die Paspeln
  - Ein Streifen Einlage
- - Lining oder andere geeignete Stoff für die Tasche (Siehe Stoff- und Farboptionen)
+ - Futterstoff oder anderen geeigneten Stoff für die Tasche (Siehe Stoff- und Farboptionen)
  - Deckung für die Taschentasche je nach Stoff- und Farboptionen
 
 ### Parameter
