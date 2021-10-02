@@ -67,7 +67,7 @@ Voor ons voorbeeld:
 
 > Je hebt misschien opgemerkt dat de tussenvoering dezelfde afmeting heeft als een paspel
 
-De tussenvoering wordt gebruikt om de zak te stabiliseren, en wordt aan de verkeerde kant van je stof gestreken.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
 ### Optioneel: zakbeleg
 
