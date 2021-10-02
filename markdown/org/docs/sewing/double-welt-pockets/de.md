@@ -1,28 +1,28 @@
 ---
-title: Doppelwelt-Taschen
+title: Doppelpaspeltaschen
 ---
 
 ## Video
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Erfahren Sie mit David Page Coffin Welts
+## Lerne Paspeln mit David Page Coffin
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+Die November 2015 Edition des [Seamwork Magazine](https://www.seamwork.com/) hat einen Abschnitt, der sich [Erobere die Paspel (engl. *Conquering the Welt*)](https://www.seamwork.com/issues/2015/11/conquering-the-welt) nennt, wo David Page Coffin schrittweise die Konstruktion von Paspeltaschen erläutert.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+David hat verschiedenste Bücher über Hosen- und Hemdenkonstruktion geschrieben, gibt online Nähkurse und veranstaltet Workshops in ganz Amerika und außerhalb.
 
-David ist ein Freund der Website, und durch alle Maßnahmen viel besser zu erklären, als ich bin.
+David ist ein Freund der Website, und so viel besser darin, dies zu erklären, als ich es jemals könnte.
 
-## Bevor Sie beginnen
+## Bevor du anfängst
 
 ### Was du brauchst
 
-Um doppelte Welttaschen herzustellen, benötigst du:
+Um Doppelpaspeltaschen herzustellen, benötigst du:
 
  - Grundlegendes Nähzubehör
- - Der Stoff oder das Musterstück, in das du die Tasche machen möchtest
- - Zwei Stoffstreifen für die Schweißnähte
- - Ein Streifen Schnittstellen
+ - Der Stoff oder das Schnittmusterstück, in dem du die Tasche machen möchtest
+ - Zwei Stoffstreifen für die Paspeln
+ - Ein Streifen Einlage
  - Lining oder andere geeignete Stoff für die Tasche (Siehe Stoff- und Farboptionen)
  - Deckung für die Taschentasche je nach Stoff- und Farboptionen
 
