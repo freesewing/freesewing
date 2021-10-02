@@ -46,24 +46,24 @@ Die Paspeln sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
 
 Für unser Beispiel:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
 
-Sie bilden die beiden schmalen Stoffstreifen, die Ihre doppelte Welttasche bilden.
+Dies wird zu den beiden schmalen Stoffstreifen werden, die deine Doppelpaspeltasche bilden.
 
-> Achten Sie darauf, die Kornlinie zu respektieren, wenn Sie die beiden Schweissen schneiden
+> Achte darauf, beim Ausschneiden der beiden Paspeln den Fadenlauf zu berücksichtigen
 
 ### Tascheneinlage
 
-Die Taschenschnittstelle ist ein einziger rechteckiger Streifen verstellbarer Schnittstellen mit den folgenden Maßen:
+Die Tascheneinlage ist ein einziger rechteckiger Streifen an Bügeleinlage mit den folgenden Maßen:
 
- - Length: Pocket width + 4cm
+ - Länge: Taschenbreite + 4cm
  - Breite: Welthöhe x2 + 5cm
 
 Zum Beispiel:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
 
 > Möglicherweise haben Sie bemerkt, dass die Schnittstelle die gleiche Größe wie eine Welt hat
 
@@ -78,8 +78,8 @@ Die (optionale) Tasche ist ein einziger rechteckiger Stoffstreifen mit folgenden
 
 Zum Beispiel:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
 
 > Du hast vielleicht bemerkt, dass das Gesicht die gleiche Größe wie eine Welt hat
 
