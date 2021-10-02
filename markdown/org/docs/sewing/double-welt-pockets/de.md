@@ -24,14 +24,14 @@ Um Doppelpaspeltaschen herzustellen, benötigst du:
  - Zwei Stoffstreifen für die Paspeln
  - Ein Streifen Einlage
  - Futterstoff oder anderen geeigneten Stoff für die Tasche (Siehe Stoff- und Farboptionen)
- - Deckung für die Taschentasche je nach Stoff- und Farboptionen
+ - Besatz für den Taschenbeutel je nach Stoff- und Farboptionen
 
 ### Parameter
 
-Zwei Werte bestimmen die Größe Ihrer doppelten Tasche. Das sind:
+Zwei Werte bestimmen die Größe deiner Doppelpaspeltasche. Das sind:
 
- - Die Taschenbreite: Dies ist die Breite der Öffnung der finalisierten Doppelwelttasche
- - Die Welthöhe: Dies ist die Höhe einer einzigen Welle und diese Hälfte der Höhe unserer doppelten Welttasche
+ - Die Taschenbreite: Dies ist die Breite der Öffnung der fertigen Doppelpaspeltasche
+ - Die Paspelhöhe: Dies ist die Höhe einer einzigen Paspel, und diese Hälfte der Höhe unserer Doppelpaspeltasche
 
 > Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Welthöhe von 0,5 cm
 
