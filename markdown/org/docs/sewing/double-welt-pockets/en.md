@@ -61,7 +61,7 @@ They will form the two narrow strips of fabric that form your double welt pocket
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
- - Length: Pocket widht + 4cm
+ - Length: Pocket width + 4cm
  - Width: Welt height x2 + 5cm
 
 For our example:
