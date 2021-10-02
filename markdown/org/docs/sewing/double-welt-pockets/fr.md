@@ -46,8 +46,8 @@ Les rabats sont deux bandes rectangulaires de tissu avec les mesures suivantes :
 
 Pour notre exemple :
 
- - Longueur : 13+4 = 17cm
- - Largeur : (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Ils formeront les deux bandes étroites de tissu qui forment votre poche passepoilée.
 
@@ -62,8 +62,8 @@ L'entoilage de poche est une seule bande rectangulaire d'entoilage thermocollant
 
 Pour notre exemple :
 
- - Longueur : 13+4 = 17cm
- - Largeur : (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Vous avez peut-être remarqué que l'entoilage est de la même taille qu'un rabat
 
@@ -78,8 +78,8 @@ Le parement de poche (optionnelle) est une seule bande rectangulaire de tissu av
 
 Pour notre exemple :
 
- - Longueur : 13+4 = 17cm
- - Largeur : (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Vous avez peut-être remarqué que le parement est de la même taille qu'un rabat
 
