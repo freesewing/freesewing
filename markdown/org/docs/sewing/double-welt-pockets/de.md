@@ -57,7 +57,7 @@ Sie bilden die beiden schmalen Stoffstreifen, die Ihre doppelte Welttasche bilde
 
 Die Taschenschnittstelle ist ein einziger rechteckiger Streifen verstellbarer Schnittstellen mit den folgenden Maßen:
 
- - Länge: Taschenwidht + 4cm
+ - Length: Pocket width + 4cm
  - Breite: Welthöhe x2 + 5cm
 
 Zum Beispiel:
@@ -214,7 +214,7 @@ Falte dein Kleidungsstück an der Spitze der Welttasche zurück.
 
 Nähen Sie jetzt die Oberseite der Tasche öffnen, um die Tasche zu öffnen.
 
-### Schritt 12: Beende die Tasche
+### Schritt 12: Versäubere den Taschenbeutel
 
 ![Beende jetzt die Tasche](step12.png)
 
