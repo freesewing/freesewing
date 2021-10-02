@@ -67,7 +67,7 @@ Por ejemplo:
 
 > Puede haber notado que la interfaz es del mismo tamaño que una soldadura
 
-La interfaz se utiliza para apuñalar el bolsillo y se fusionará con la tela con tu hierro.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
 ### Opcional: Pocket hacia
 
