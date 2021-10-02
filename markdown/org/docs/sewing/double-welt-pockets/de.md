@@ -33,21 +33,21 @@ Zwei Werte bestimmen die Größe deiner Doppelpaspeltasche. Das sind:
  - Die Taschenbreite: Dies ist die Breite der Öffnung der fertigen Doppelpaspeltasche
  - Die Paspelhöhe: Dies ist die Höhe einer einzigen Paspel, und diese Hälfte der Höhe unserer Doppelpaspeltasche
 
-> Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Welthöhe von 0,5 cm
+> Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Paspelhöhe von 0,5 cm
 
 ## Zuschnitt
 
-### Taschenwelten
+### Taschenpaspeln
 
-Die Schweissnähte sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
+Die Paspeln sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
 
  - Länge: Taschenbreite + 4cm
- - Breite: Welthöhe x2 + 5cm
+ - Breite: Paspelhöhe x2 + 5cm
 
-Zum Beispiel:
+Für unser Beispiel:
 
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Sie bilden die beiden schmalen Stoffstreifen, die Ihre doppelte Welttasche bilden.
 
@@ -62,8 +62,8 @@ Die Taschenschnittstelle ist ein einziger rechteckiger Streifen verstellbarer Sc
 
 Zum Beispiel:
 
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Möglicherweise haben Sie bemerkt, dass die Schnittstelle die gleiche Größe wie eine Welt hat
 
@@ -78,8 +78,8 @@ Die (optionale) Tasche ist ein einziger rechteckiger Stoffstreifen mit folgenden
 
 Zum Beispiel:
 
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Du hast vielleicht bemerkt, dass das Gesicht die gleiche Größe wie eine Welt hat
 
