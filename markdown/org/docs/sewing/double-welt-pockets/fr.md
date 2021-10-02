@@ -57,7 +57,7 @@ Ils formeront les deux bandes étroites de tissu qui forment votre poche passepo
 
 L'entoilage de poche est une seule bande rectangulaire d'entoilage thermocollant avec les mesures suivantes :
 
- - Longueur : Largeur de poche + 4cm
+ - Length: Pocket width + 4cm
  - Largeur : Hauteur du rabat x2 + 5cm
 
 Pour notre exemple :
