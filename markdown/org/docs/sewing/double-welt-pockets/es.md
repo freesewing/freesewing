@@ -46,8 +46,8 @@ Las soldaduras son dos bandas rectangulares de tejido con las siguientes medidas
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldadura.
 
@@ -62,8 +62,8 @@ La interfaz del bolsillo es una sola tira rectangular de interfaz fusible con la
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede haber notado que la interfaz es del mismo tamaño que una soldadura
 
@@ -78,8 +78,8 @@ La cara (opcional) del bolsillo es una sola tira rectangular de tela con las sig
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede que hayas notado que la cara es del mismo tamaño que una soldadura
 
