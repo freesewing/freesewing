@@ -46,8 +46,8 @@ De paspels zijn twee rechthoekige stroken stof met de volgende afmetingen:
 
 Voor ons voorbeeld:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Deze vormen de twee smalle stroken stof die je paspelzak maken.
 
@@ -62,8 +62,8 @@ De tussenvoering voor de zak is een enkele rechthoekige strook kleefbare tussenv
 
 Voor ons voorbeeld:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat de tussenvoering dezelfde afmeting heeft als een paspel
 
@@ -78,8 +78,8 @@ Het (optionele) zakbeleg is een enkele rechthoekige strook stof met de volgende 
 
 Voor ons voorbeeld:
 
- - Lengte: 13 + 4 = 17 cm
- - Hoogte: (O.5 x 2) + 5 = 6 cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat het beleg dezelfde afmeting heeft als een paspel
 
