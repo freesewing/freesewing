@@ -67,7 +67,7 @@ Pour notre exemple :
 
 > Vous avez peut-être remarqué que l'entoilage est de la même taille qu'un rabat
 
-L'entoilage est utilisé pour stabiliser la poche, et sera thermocollé au tissu avec votre fer.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
 ### Optionnel: parement fond de poche
 
