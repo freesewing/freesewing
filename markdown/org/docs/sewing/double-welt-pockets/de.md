@@ -67,7 +67,7 @@ Für unser Beispiel:
 
 > Du hast vielleicht bemerkt, dass die Einlage genauso groß wie eine Paspel ist
 
-The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
+Die Einlage wird verwendet, um die Tasche zu stabilisieren, und wird mit dem Bügeleisen mit deinem Stoff fest verbunden.
 
 ### Optional: Taschenbesatz
 
@@ -85,11 +85,11 @@ Für unser Beispiel:
 
 Der Besatz ist das, was du sehen, wenn du durch die Öffnung deiner Tasche spähst.
 
-Das Gesicht ist optional, wenn Sie es nicht verwenden, wird es durch die Tasche aufgedeckt, aus welchem Material die Tasche hergestellt wird.
+Der Besatz ist optional, wenn du keinen verwendest, wird beim Spähen durch die Taschenöffnung das Material sichtbar sein, das du für den Innenbeutel verwendet hast.
 
 ### Taschenbeutel
 
-Die Form der Tasche hängt vom Muster ab. Für die Einfachheit werde ich eine rechteckige Tasche mit abgerundeten Ecken am unteren Rand verwenden, wie man sie auf den hinteren Hosentaschen finden kann.
+Die Form des Taschenbeutels hängt vom Schnittmuster ab. Für die Einfachheit werde ich eine rechteckige Tasche mit abgerundeten Ecken am unteren Rand verwenden, wie man sie auf den hinteren Hosentaschen finden kann.
 
 > Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
 
@@ -115,9 +115,9 @@ Markiere die Tasche wie folgt:
 
 Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
 
-### Schritt 3: Falten und drücken Sie die Schwellungen
+### Schritt 3: Falte und bügele die Paspeln
 
-![Falten und die Schweissen drücken](step03.png)
+![Falte und bügele die Paspeln](step03.png)
 
 Falten Sie die Schweißnähte parallel mit der langen Seite, mit der guten Seite.
 
@@ -127,9 +127,9 @@ Drücken Sie die Falte so dass es zu einer scharfen Falte wird.
 
 > Durch das Aussetzen der Kanten wird der Weltenrand ausgeschaltet, was die Schüttelmasse und die Sichtbarkeit auf der Außenseite des Kleidungsstücks verringert.
 
-### Schritt 4: Nähwelten vor Ort
+### Schritt 4: Nähe Paspeln fest
 
-![Nähwelten an Ort](step04.png)
+![Nähe Paspeln fest](step04.png)
 
 > In den obigen Bildern ist die gestrichelte schwarze Linie das Zentrum der Erde. Die rote Linie zeigt, wo man nähen soll, und die grüne Linie ist eine Naht, die bereits genäht wurde.
 
@@ -147,7 +147,7 @@ Wenn du fertig bist, nähe die zweite Welt vor Ort. Beachte, dass dies ein bissc
 
 ### Schritt 5: Schneiden Sie Ihre Tasche
 
-![Schneiden Sie Ihre Tasche](step05.png)
+![Schneide deine Tasche auf](step05.png)
 
 > Im Bild markiert die rote Linie wie und wo man die Tasche öffnet, und die grüne Linie zeigt die Nähte.
 
