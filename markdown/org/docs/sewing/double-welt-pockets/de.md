@@ -58,32 +58,32 @@ Dies wird zu den beiden schmalen Stoffstreifen werden, die deine Doppelpaspeltas
 Die Tascheneinlage ist ein einziger rechteckiger Streifen an Bügeleinlage mit den folgenden Maßen:
 
  - Länge: Taschenbreite + 4cm
- - Breite: Welthöhe x2 + 5cm
+ - Breite: Paspelhöhe x2 + 5cm
 
-Zum Beispiel:
+Für unser Beispiel:
 
  - Länge: 13cm + 4cm = 17cm
  - Breite: (0,5cm x 2) + 5cm = 6cm
 
-> Möglicherweise haben Sie bemerkt, dass die Schnittstelle die gleiche Größe wie eine Welt hat
+> Du hast vielleicht bemerkt, dass die Einlage genauso groß wie eine Paspel ist
 
-Die Schnittstelle wird verwendet, um die Tasche zu stabilisieren und wird mit dem Stoff mit Ihrem Eisen verschmolzen.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
-### Optional: Taschenbezug
+### Optional: Taschenbesatz
 
-Die (optionale) Tasche ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
+Der (optionale) Taschebesatz ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
 
  - Länge: Taschenbreite + 4cm
- - Breite: Welthöhe x2 + 5cm
+ - Breite: Paspelhöhe x2 + 5cm
 
-Zum Beispiel:
+Für unser Beispiel:
 
  - Länge: 13cm + 4cm = 17cm
  - Breite: (0,5cm x 2) + 5cm = 6cm
 
-> Du hast vielleicht bemerkt, dass das Gesicht die gleiche Größe wie eine Welt hat
+> Du hast vielleicht bemerkt, dass der Besatz genauso groß wie eine Paspel ist
 
-Das Gesicht ist, was Sie sehen, wenn Sie durch die Öffnung Ihrer Tasche.
+Der Besatz ist das, was du sehen, wenn du durch die Öffnung deiner Tasche spähst.
 
 Das Gesicht ist optional, wenn Sie es nicht verwenden, wird es durch die Tasche aufgedeckt, aus welchem Material die Tasche hergestellt wird.
 
