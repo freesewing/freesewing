@@ -50,8 +50,8 @@ The welts are two rectangular strips of fabric with the following measurements:
 
 For our example:
 
- - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 They will form the two narrow strips of fabric that form your double welt pocket.
 
@@ -66,8 +66,8 @@ The pocket interfacing is a single rectangular strip of fusible interfacing with
 
 For our example:
 
- - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the interfacing is the same size as a welt
 
@@ -82,8 +82,8 @@ The (optional) pocket facing is a single rectangular strip of fabric with the fo
 
 For our example:
 
- - Length: 13+4 = 17cm
- - Width: (0.5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the facing is the same size as a welt
 
