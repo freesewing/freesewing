@@ -71,7 +71,7 @@ For our example:
 
 > You may have noticed that the interfacing is the same size as a welt
 
-The interfacing is used to stabalize the pocket, and will be fused to the fabric with your iron.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
 ### Optional: Pocket facing
 
