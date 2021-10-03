@@ -89,7 +89,7 @@ Der Besatz ist optional, wenn du keinen verwendest, wird beim Spähen durch die 
 
 ### Taschenbeutel
 
-Die Form des Taschenbeutels hängt vom Schnittmuster ab. Für die Einfachheit werde ich eine rechteckige Tasche mit abgerundeten Ecken am unteren Rand verwenden, wie man sie auf den hinteren Hosentaschen finden kann.
+Die Form des Taschenbeutels hängt vom Schnittmuster ab. Der Einfachheit halber werde ich einen rechteckigen Taschenbeutel mit abgerundeten Ecken am unteren Rand verwenden, wie man sie hinten auf Hosen finden kann.
 
 > Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
 
