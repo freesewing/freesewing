@@ -1,14 +1,14 @@
 
- - **1 zurück** auf die Falte schneiden
- - **1 Front** auf die Falte schneiden
- - **3 Streifen** für Halsöffnung und Armlochbindung schneiden
+ - Schneide **1 Rückenteil** im Stoffbruch
+ - Schneide **1 Vorderteil** im Stoffbruch
+ - Schneide **3 Streifen** für Halsöffnung und Armlochbindung
 
 <Warning>
 
-#### Vorsichten
+#### Achtung
 
- - Es gibt keine Naht an den Armlöchern 
- - Es gibt keine Naht beim Öffnen des Hals
- - Es gibt einen zusätzlichen Saum zulässig am Saum
+ - Es gibt keine Nahtzugabe an den Armlöchern 
+ - Es gibt keine Nahtzugabe an der Halsöffnung
+ - Es gibt eine zusätzliche Saumzugabe am Saum
 
 </Warning>

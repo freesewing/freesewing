@@ -46,8 +46,8 @@ Las soldaduras son dos bandas rectangulares de tejido con las siguientes medidas
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldadura.
 
@@ -57,17 +57,17 @@ Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldad
 
 La interfaz del bolsillo es una sola tira rectangular de interfaz fusible con las siguientes medidas:
 
- - Longitud: Ancho bolsillo + 4cm
+ - Length: Pocket width + 4cm
  - Ancho: Altura del mundo x2 + 5cm
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede haber notado que la interfaz es del mismo tamaño que una soldadura
 
-La interfaz se utiliza para apuñalar el bolsillo y se fusionará con la tela con tu hierro.
+The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
 
 ### Opcional: Pocket hacia
 
@@ -78,8 +78,8 @@ La cara (opcional) del bolsillo es una sola tira rectangular de tela con las sig
 
 Por ejemplo:
 
- - Length: 13+4 = 17cm
- - Ancho: (0,5x2)+5 = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede que hayas notado que la cara es del mismo tamaño que una soldadura
 

@@ -14,7 +14,7 @@ Als je op zoek bent naar ons facemask patroon, volg dan deze link:
 
 Onlangs zijn we begonnen met het organiseren van bijdragers oproepen. Iedereen die geïnteresseerd is in FreeSewing is welkom om toe te treden.
 
-Bij alle oproepen hoort [meet.freesewing.org](https://meet.freesewing.org/). Bekijk [het aanroepschema](/community/calls/) voor meer informatie over de komende gesprekken.
+All calls can be joined via [Discord](https://discord.freesewing.org/). Bekijk [het aanroepschema](/community/calls/) voor meer informatie over de komende gesprekken.
 
 ##### We zijn verplaatst naar Discord
 

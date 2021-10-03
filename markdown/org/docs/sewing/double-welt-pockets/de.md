@@ -1,95 +1,95 @@
 ---
-title: Doppelwelt-Taschen
+title: Doppelpaspeltaschen
 ---
 
 ## Video
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Erfahren Sie mit David Page Coffin Welts
+## Lerne Paspeln mit David Page Coffin
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+Die November 2015 Edition des [Seamwork Magazine](https://www.seamwork.com/) hat einen Abschnitt, der sich [Erobere die Paspel (engl. *Conquering the Welt*)](https://www.seamwork.com/issues/2015/11/conquering-the-welt) nennt, wo David Page Coffin schrittweise die Konstruktion von Paspeltaschen erläutert.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+David hat verschiedenste Bücher über Hosen- und Hemdenkonstruktion geschrieben, gibt online Nähkurse und veranstaltet Workshops in ganz Amerika und außerhalb.
 
-David ist ein Freund der Website, und durch alle Maßnahmen viel besser zu erklären, als ich bin.
+David ist ein Freund der Website, und so viel besser darin, dies zu erklären, als ich es jemals könnte.
 
-## Bevor Sie beginnen
+## Bevor du anfängst
 
 ### Was du brauchst
 
-Um doppelte Welttaschen herzustellen, benötigst du:
+Um Doppelpaspeltaschen herzustellen, benötigst du:
 
  - Grundlegendes Nähzubehör
- - Der Stoff oder das Musterstück, in das du die Tasche machen möchtest
- - Zwei Stoffstreifen für die Schweißnähte
- - Ein Streifen Schnittstellen
- - Lining oder andere geeignete Stoff für die Tasche (Siehe Stoff- und Farboptionen)
- - Deckung für die Taschentasche je nach Stoff- und Farboptionen
+ - Der Stoff oder das Schnittmusterstück, in dem du die Tasche machen möchtest
+ - Zwei Stoffstreifen für die Paspeln
+ - Ein Streifen Einlage
+ - Futterstoff oder anderen geeigneten Stoff für die Tasche (Siehe Stoff- und Farboptionen)
+ - Besatz für den Taschenbeutel je nach Stoff- und Farboptionen
 
 ### Parameter
 
-Zwei Werte bestimmen die Größe Ihrer doppelten Tasche. Das sind:
+Zwei Werte bestimmen die Größe deiner Doppelpaspeltasche. Das sind:
 
- - Die Taschenbreite: Dies ist die Breite der Öffnung der finalisierten Doppelwelttasche
- - Die Welthöhe: Dies ist die Höhe einer einzigen Welle und diese Hälfte der Höhe unserer doppelten Welttasche
+ - Die Taschenbreite: Dies ist die Breite der Öffnung der fertigen Doppelpaspeltasche
+ - Die Paspelhöhe: Dies ist die Höhe einer einzigen Paspel, und diese Hälfte der Höhe unserer Doppelpaspeltasche
 
-> Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Welthöhe von 0,5 cm
+> Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Paspelhöhe von 0,5 cm
 
 ## Zuschnitt
 
-### Taschenwelten
+### Taschenpaspeln
 
-Die Schweissnähte sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
+Die Paspeln sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
 
  - Länge: Taschenbreite + 4cm
- - Breite: Welthöhe x2 + 5cm
+ - Breite: Paspelhöhe x2 + 5cm
 
-Zum Beispiel:
+Für unser Beispiel:
 
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
 
-Sie bilden die beiden schmalen Stoffstreifen, die Ihre doppelte Welttasche bilden.
+Dies wird zu den beiden schmalen Stoffstreifen werden, die deine Doppelpaspeltasche bilden.
 
-> Achten Sie darauf, die Kornlinie zu respektieren, wenn Sie die beiden Schweissen schneiden
+> Achte darauf, beim Ausschneiden der beiden Paspeln den Fadenlauf zu berücksichtigen
 
 ### Tascheneinlage
 
-Die Taschenschnittstelle ist ein einziger rechteckiger Streifen verstellbarer Schnittstellen mit den folgenden Maßen:
-
- - Länge: Taschenwidht + 4cm
- - Breite: Welthöhe x2 + 5cm
-
-Zum Beispiel:
-
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
-
-> Möglicherweise haben Sie bemerkt, dass die Schnittstelle die gleiche Größe wie eine Welt hat
-
-Die Schnittstelle wird verwendet, um die Tasche zu stabilisieren und wird mit dem Stoff mit Ihrem Eisen verschmolzen.
-
-### Optional: Taschenbezug
-
-Die (optionale) Tasche ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
+Die Tascheneinlage ist ein einziger rechteckiger Streifen an Bügeleinlage mit den folgenden Maßen:
 
  - Länge: Taschenbreite + 4cm
- - Breite: Welthöhe x2 + 5cm
+ - Breite: Paspelhöhe x2 + 5cm
 
-Zum Beispiel:
+Für unser Beispiel:
 
- - Length: 13+4 = 17cm
- - Breite: (0.5x2)+5 = 6cm
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
 
-> Du hast vielleicht bemerkt, dass das Gesicht die gleiche Größe wie eine Welt hat
+> Du hast vielleicht bemerkt, dass die Einlage genauso groß wie eine Paspel ist
 
-Das Gesicht ist, was Sie sehen, wenn Sie durch die Öffnung Ihrer Tasche.
+Die Einlage wird verwendet, um die Tasche zu stabilisieren, und wird mit dem Bügeleisen mit deinem Stoff fest verbunden.
 
-Das Gesicht ist optional, wenn Sie es nicht verwenden, wird es durch die Tasche aufgedeckt, aus welchem Material die Tasche hergestellt wird.
+### Optional: Taschenbesatz
+
+Der (optionale) Taschebesatz ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
+
+ - Länge: Taschenbreite + 4cm
+ - Breite: Paspelhöhe x2 + 5cm
+
+Für unser Beispiel:
+
+ - Länge: 13cm + 4cm = 17cm
+ - Breite: (0,5cm x 2) + 5cm = 6cm
+
+> Du hast vielleicht bemerkt, dass der Besatz genauso groß wie eine Paspel ist
+
+Der Besatz ist das, was du sehen, wenn du durch die Öffnung deiner Tasche spähst.
+
+Der Besatz ist optional, wenn du keinen verwendest, wird beim Spähen durch die Taschenöffnung das Material sichtbar sein, das du für den Innenbeutel verwendet hast.
 
 ### Taschenbeutel
 
-Die Form der Tasche hängt vom Muster ab. Für die Einfachheit werde ich eine rechteckige Tasche mit abgerundeten Ecken am unteren Rand verwenden, wie man sie auf den hinteren Hosentaschen finden kann.
+Die Form des Taschenbeutels hängt vom Schnittmuster ab. Der Einfachheit halber werde ich einen rechteckigen Taschenbeutel mit abgerundeten Ecken am unteren Rand verwenden, wie man sie hinten auf Hosen finden kann.
 
 > Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
 
@@ -115,9 +115,9 @@ Markiere die Tasche wie folgt:
 
 Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
 
-### Schritt 3: Falten und drücken Sie die Schwellungen
+### Schritt 3: Falte und bügele die Paspeln
 
-![Falten und die Schweissen drücken](step03.png)
+![Falte und bügele die Paspeln](step03.png)
 
 Falten Sie die Schweißnähte parallel mit der langen Seite, mit der guten Seite.
 
@@ -127,9 +127,9 @@ Drücken Sie die Falte so dass es zu einer scharfen Falte wird.
 
 > Durch das Aussetzen der Kanten wird der Weltenrand ausgeschaltet, was die Schüttelmasse und die Sichtbarkeit auf der Außenseite des Kleidungsstücks verringert.
 
-### Schritt 4: Nähwelten vor Ort
+### Schritt 4: Nähe Paspeln fest
 
-![Nähwelten an Ort](step04.png)
+![Nähe Paspeln fest](step04.png)
 
 > In den obigen Bildern ist die gestrichelte schwarze Linie das Zentrum der Erde. Die rote Linie zeigt, wo man nähen soll, und die grüne Linie ist eine Naht, die bereits genäht wurde.
 
@@ -147,7 +147,7 @@ Wenn du fertig bist, nähe die zweite Welt vor Ort. Beachte, dass dies ein bissc
 
 ### Schritt 5: Schneiden Sie Ihre Tasche
 
-![Schneiden Sie Ihre Tasche](step05.png)
+![Schneide deine Tasche auf](step05.png)
 
 > Im Bild markiert die rote Linie wie und wo man die Tasche öffnet, und die grüne Linie zeigt die Nähte.
 
@@ -214,7 +214,7 @@ Falte dein Kleidungsstück an der Spitze der Welttasche zurück.
 
 Nähen Sie jetzt die Oberseite der Tasche öffnen, um die Tasche zu öffnen.
 
-### Schritt 12: Beende die Tasche
+### Schritt 12: Versäubere den Taschenbeutel
 
 ![Beende jetzt die Tasche](step12.png)
 

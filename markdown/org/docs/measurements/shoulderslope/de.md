@@ -2,11 +2,11 @@
 title: Schulterneigung
 ---
 
-Die **-Schulterhang-** Messung ist ein Indikator für die Höhe mit der Ihre Schulter nach unten abfällt.
+Die **Schulterneigung**ist ein Indikator dafür, wie starl sich deine Schulter nach unten neigt.
 
 Um deine Schulterneigung zu messen, musst du den Winkel bestimmen, unter dem sich deine Schulterlinie nach unten neigt.
 
-Ein guter Weg, um deine Schulterneigung zu messen, ist ein Selfie aufzunehmen und es solange zu drehen, bis deine Schulterlinie horizontal ist.
+Ein guter Weg, um deine Schulterneigung zu messen, ist, ein Selfie aufzunehmen und es solange zu drehen, bis deine Schulterlinie horizontal ist.
 
 Der Winkel, um den du das Bild drehen musstest, ist deine Schulterneigung.
 

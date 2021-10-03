@@ -1,8 +1,8 @@
 ---
-title: Das Recht auf Information
+title: Das Recht, informiert zu werden
 order: 10
 ---
 
-Sie haben das Recht, über die Erhebung und Nutzung Ihrer personenbezogenen Daten informiert zu werden.
+Du hast das Recht, über die Erhebung und Nutzung deiner personenbezogenen Daten informiert zu werden.
 
-Lesen Sie [unsere Datenschutzerklärung](/docs/various/privacy/) um sich zu informieren.
+Lese [unsere Datenschutzerklärung](/docs/various/privacy/), um dich zu informieren.

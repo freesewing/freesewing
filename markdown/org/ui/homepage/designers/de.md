@@ -3,21 +3,21 @@
 
 #### Was ist parametrisches Design?
 
-Das Parametrische Design bezieht sich auf die Verwendung von Parametern oder Variablen zur Manipulation des Ergebnisses eines bestimmten Designs innerhalb seiner Regeln.
+Parametrisches Design bezieht sich auf das Verwenden von Parametern oder Variablen um das Ergebnis eines bestimmten Designs innerhalb bestimmter Regeln zu beeinflussen.
 
-In Nähmustern die *Parameter* sind die vom Benutzer zur Verfügung gestellten Parameter: Ihre Messungen und Optionen, die er ausgewählt hat.  
-Die *Regeln* des Designs sind das, was Sie, der Designer, machen.
+In Schnittmustern sind die *Parameter* das, was Nutzer/innen zur Verfügung stellen: ihre Körpermaße und Optionen, die sie ausgewählt haben.  
+Die *Regeln* des Designs ist das, was du als Designer/in festlegst.
 
 #### Was bedeutet das für Designer/innen?
 
-Beim Entwurf oder Design von Mustern oder Kleidungsstücken ist es üblich, mit einem *fit Model* (oder *Kleiderformular* ) zu beginnen. Die Messungen des Passmodells werden als Input in der ersten Konstruktion eingesetzt.
+Beim Entwurf oder Design von Schnittmustern oder Kleidungsstücken ist es üblich, mit einem *Schnitt-Modell* (oder einer *Schneiderpuppe*) zu beginnen. Die Maße des Schnitt-Modells werden als Input im initialen Design verwendet.
 
-Die Anpassung des Musters an ein anderes Modell ist eine mühsame Aufgabe. Deshalb werden die Muster nach oben und unten gestuft, um verschiedene Größen abzudecken.
+Die Anpassung des Schnittmusters an ein anderes Modell ist eine mühsame Aufgabe, weshalb die Schnittmuster hoch- oder runterskaliert werden müssen, um verschiedene Größen abzudecken.
 
-Aber in einem parametrischen Nähmuster funktioniert die Anpassung an verschiedene Größen oder Modelle *nur*.
+In einem parametrischen Schnittmuster hingegen funktioniert das Anpassen an verschiedene Größen oder Modelle *einfach so*.
 
 #### Was kann FreeSewing für mich tun?
 
-FreeSewing bietet alles, was du brauchst, um deine eigenen Nähmuster zu erstellen mit sehr geringem Aufwand.
+FreeSewing bietet alles, was du brauchst, um mit sehr geringem Aufwand deine eigenen parametrischen Schnittmuster zu erstellen.
 
-Sie können Muster verkaufen, die Sie erstellen, oder sie zu unserer wachsenden Sammlung beitragen.
+Dir steht es frei, die Schnittmuster, die du erstellst, zu verkaufen, oder sie unserer stetig wachsenden Sammlung hinzuzufügen.

@@ -14,7 +14,7 @@ Si vous cherchez notre modèle de masque, suivez ce lien :
 
 Récemment, nous avons commencé à organiser des appels de contributeurs. Toute personne ayant un intérêt dans FreeSewing est invitée à s'y joindre.
 
-Tous les appels peuvent être rejoints via [meet.freesewing.org](https://meet.freesewing.org/). Consultez [la planification des appels](/community/calls/) pour plus de détails sur les appels à venir.
+All calls can be joined via [Discord](https://discord.freesewing.org/). Consultez [la planification des appels](/community/calls/) pour plus de détails sur les appels à venir.
 
 ##### Nous avons déménagé sur Discord
 

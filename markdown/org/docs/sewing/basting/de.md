@@ -1,20 +1,20 @@
 ---
 layout: onecol
-title: Beutel
+title: Heften
 ---
 
-![Die Form dieser Denim-Rückentasche wird geschlagen, bevor die Tasche in die Tasche geheftet wird](basting.jpg)
+![Die Form dieser Jeans-Rücktasche ist geheftet bevor die Tasche an das Kleidungsstück abgesteppt wird](basting.jpg)
 
-Bast ist vorübergehend Nähen, um die Dinge in Ordnung zu halten.
+Heften ist das Nähen einer vorübergehenden Naht, um Dinge an Ort und Stelle zu halten.
 
-Es wird üblicherweise von Hand gemacht, aber Sie können auch Maschinenbasis.
+Es wird üblicherweise von Hand gemacht, es geht aber auch mit der Maschine.
 
-Beispiele für die häufige Verwendung von Bast:
+Einige Beispiele, wo häufig geheftet wird:
 
- - Vor dem Nähen eine Naht blasen
- - Vor dem Anbringen einer Ornament, Tasche oder eines anderen Teils an Ort
- - Das Bissen von Dellen oder anderen Mustern ändert sich, während das Kleidungsstück auf ein Modell passt
+ - Eine Naht an Ort und Stelle heften, bevor sie richtig genäht wird
+ - Das Anheften von Verzierungen, Taschen, oder anderen Teilen, bevor sie angefügt werden
+ - Heften von Abnähern oder anderen Änderungen am Schnittmuster beim Testen des Kleidungsstückes an einem Modell
 
-Bastern ist niemals dauerhaft, sondern lediglich eine vorübergehende Maßnahme, um die Dinge in Ordnung zu bringen.
+Heften ist niemals permanent, sondern nur eine temporäre Maßnahme, um Dinge an Ort und Stelle zu halten.
 
-> Bast und Fixieren sind verschiedene Techniken für ähnliche Situationen
+> Heften und Stecken sind unterschiedliche Technike für ähnliche Situationen
