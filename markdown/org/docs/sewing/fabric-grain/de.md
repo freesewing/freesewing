@@ -2,7 +2,7 @@
 title: Fadenlauf
 ---
 
-![Die Körnung läuft parallel zur Eselkante](fabric-grain.jpg)
+![Der Fadenlauf verläuft parallel zum Webrand](fabric-grain.jpg)
 
 Der Fadenlauf eines Stoffes wird durch die Ausrichtung der Garne in einem Gewebe bestimmt. Genauer gesagt wird der Fadenlauf dadurch bestimmt, wie die Kettfäden verlaufen.
 
@@ -14,6 +14,6 @@ Der Fadenlauf wird auf einem Schnittmuster angegeben. Beim Ausschneiden des Schn
 
 > ##### Verwirrt? Denk' an Holz
 > 
-> Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie andere Parameter.
+> Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie ein paar andere Parameter.
 > 
-> Genau wie ein Holzarbeiter dies berücksichtigen wird, bevor er das Holz schneidet, sollten Sie das Getreide berücksichtigen, bevor Sie Ihren Stoff ausschneiden.
+> Genau wie Holzarbeiter/-innen dies berücksichtigen, bevor sie das Holz schneiden, solltest du den Fadenlauf berücksichtigen, bevor du deinen Stoff ausschneidest.
