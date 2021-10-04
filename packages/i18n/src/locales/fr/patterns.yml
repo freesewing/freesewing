@@ -93,7 +93,7 @@ theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo
 titan:
-  description: Titan est un bloc de pantalon unisexe sans pince.
+  description: Titan is a dartless trouser block.
   title: Bloc de pantalon Titan
 trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
