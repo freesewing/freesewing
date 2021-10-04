@@ -258,7 +258,7 @@ exportForEditing: Für die Bearbeitung exportieren
 startWithNeckTitle: Beginne mit dem Halsumfang
 startWithNeckDescription: Auf Basis deines Halsumfangs können wir dir helfen, Fehler in deinen Maßen zu erkennen.
 whatYouNeed: Was du brauchst
-fabricOptions: Stoffauswahl
+fabricOptions: Stoffoptionen
 cutting: Zuschnitt
 instructions: Anleitungen
 hide: Verbergen
@@ -279,7 +279,7 @@ patternDocs: Schnittmuster-Dokumentation
 socialMedia: Soziale Medien
 create: Erstellen
 browse: Durchsuchen
-patrons: Förderer
+patrons: Förderer/-innen
 scrollToTop: Zum Seitenanfang
 sitemap: Seitenübersicht
 contributeToThing: An {thing} mitwirken
@@ -319,7 +319,7 @@ recreatePattern-txt: Wähle eine andere Person und erstelle dann diesen Schnitt 
 editOwnPatternsOnly: Du kannst nur deine eigenen Schnittmuster bearbeiten
 editOwnPatternsOnly-txt: Du kannst dieses Schnittmuster nicht bearbeiten, weil es nicht dir gehört. Aber du kannst es als Grundlage verwenden, um dein eigenes Schnittmuster zu erstellen.
 updateNotes-txt: Aktualisiere die Notizen, die du zu deinem Schnittmuster führst
-franceWarning: Warnung für Benutzer/innen in Frankreich
+franceWarning: Warnung für Benutzer/-innen in Frankreich
 franceWarning-txt: Mehrere französische E-Mail-Anbieter – darunter free.fr, laposte.net, orange.fr und sfr.fr – sind dafür bekannt, unsere E-Mails regelmäßig zu entsorgen.
 emailNotReceived: Wenn du die Aktivierungs-E-Mail nicht erhältst, wende dich bitte an uns, damit wir helfen können.
 error: Fehler
