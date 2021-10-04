@@ -60,7 +60,7 @@ hugo:
   description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
   title: Hugo, der Hoodie
 jaeger:
-  description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
+  description: Jaeger ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Jaeger, das Sakko
 paco:
   description: Paco ist eine lässige, aber stilvolle Sommerhose.
@@ -93,7 +93,7 @@ theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Theo, die Hose
 titan:
-  description: Titan ist ein Unisex-Grundschnitt für Hosen ohne Abnäher.
+  description: Titan is a dartless trouser block.
   title: Titan, ein Hosen-Grundschnitt
 trayvon:
   description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
@@ -108,5 +108,5 @@ waralee:
   description: Waralee ist eine Wickelhose.
   title: Waralee, die Wickelhose
 yuri:
-  description: Yuri ist ein schickes <unk> ess-Cardigan basierend auf den Huey & Hugo Hoodies
-  title: Yuri Kapuze
+  description: Yuri ist ein schicker Cardigan ohne Reißverschluss, basierend auf den Huey & Hugo Hoodies
+  title: Yuri, der Hoodie
