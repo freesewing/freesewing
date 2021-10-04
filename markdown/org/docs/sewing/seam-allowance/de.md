@@ -2,16 +2,16 @@
 title: Nahtzugabe
 ---
 
-![Die Innenseite des Beins auf ein Paar Jeans. Die SA ist die dunkle schmale Streckung des Stoffes neben der Naht. Es wurde Zick-Zick-Zack-Zacken um es vor Zerfall zu bewahren](zig-zag.jpg)
+![Die Innenseite des Beins bei einem Paar Jeans. Die Nahtzugabe ist der dunkle, schmale Streifen neben der Naht. Sie wurde gezick-zackt, um sie vorm Ausfransen zu bewahren](zig-zag.jpg)
 
-Die Nahtgenehmigung, die oft auf SA verkürzt wird, ist der zusätzliche Stoff an der Naht, mit dem Sie ein Kleidungsstück zusammen nähen können.
+Die Nahtzugabe ist der zusätzliche Stoff an der Naht, der es dir erlaubt, ein Kleidungsstück zusammenzunähen.
 
-Wenn man anstelle der Nähte die Nähte auf magische Weise zusammenschließen könnte, wäre es nicht nötig, die Naht zu vergüten.
+Wenn du, anstatt zu nähen, die Nähte magisch zusammenfügen könntest, bräuchte man keine Nahtzugabe.
 
-Da wir keine Magie machen können, brauchen wir ein wenig Nahtzugabe, damit das kleine Zerkleinern des Stoffes die Naht nicht rückgängig macht.
+Da wir nicht magisch begabt sind, brauchen wir ein bisschen Nahtzugabe, damit leichtes Ausfransen des Stoffes nicht direkt die Naht auflöst.
 
-Die Zulage für Seam kann unterschiedlich sein. 1cm ist bei manchen Mustern üblich, aber in den USA 5/8" oder 15mm Standard. Überprüfen Sie immer das Muster für die Standard-SA.
+Nachzugabe kann unterschiedlich sein. 1cm ist bei manchen Schnittmustern üblich, in den USA ist jedoch 5/8" oder 15mm Standard. Überprüfe immer auf dem Schnittmuster, was die standardmäßige Nahtzugabe ist.
 
-Zusätzliche SA kann für bestimmte Fertigteile (wie französische Nähte) oder für die Hämaturgie benötigt werden.
+Zusätzliche Nahtzugabe kann für spezielle Versäuberungsmethoden benötigt sein (wie eine englische Naht), oder am Saum.
 
 > Bild von [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
