@@ -17,4 +17,4 @@ Einige Beispiele, wo häufig geheftet wird:
 
 Heften ist niemals permanent, sondern nur eine temporäre Maßnahme, um Dinge an Ort und Stelle zu halten.
 
-> Heften und Stecken sind unterschiedliche Technike für ähnliche Situationen
+> Heften und Stecken sind unterschiedliche Techniken für ähnliche Situationen
