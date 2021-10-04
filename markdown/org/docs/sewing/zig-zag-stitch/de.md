@@ -1,5 +1,5 @@
 ---
-title: Zig-zag stitch
+title: Zickzackstich
 ---
 
 ![Eine Zick-Zack-Sticke wird verwendet, um zu verhindern, dass die SA des Denim ausfällt](zig-zag.jpg)
