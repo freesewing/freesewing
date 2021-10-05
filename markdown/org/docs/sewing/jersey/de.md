@@ -2,10 +2,10 @@
 title: Jersey
 ---
 
-![Ein Stück grauem Trikot](knit-fabric.jpg)
+![Ein Stück grauer Jersey](knit-fabric.jpg)
 
 Jersey ist eine Art Strickstoff. Jersey hat eine flache und eine geraffte Seite, und wird oft für T-Shirts verwendet.
 
-Jersey kann auch doppelt gestrickt werden (manchmal auch Interlock Trikot). Dadurch entsteht ein dickeres Gewebe mit den flachen Seiten an der Außenseite und den in der Mitte verriegelten Seiten.
+Jersey kann auch doppelt gestrickt sein (manchmal auch Interlock-Jersey genannt). Dadurch entsteht ein dickeres Gewebe mit den flachen Seiten an der Außenseite und den gerafften in der Mitte verriegelt.
 
-Jersey hat eine gute Drape, die es zu einer beliebten Wahl für Tops und Kleider.
+Jersey lässt sich gut drapieren, wodurch es beliebt für Oberteile und Kleider ist.
