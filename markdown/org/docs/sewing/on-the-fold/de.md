@@ -2,16 +2,16 @@
 title: Im Stoffbruch
 ---
 
-Wenn Sie ein Musterstück haben, das symmetrisch ist, Die Anweisungen können Ihnen sagen, dass sie *auf der Falte* geschnitten werden sollen.
+Wenn du ein symmetrisches Schnittmusterstück hast, sagt dir die Anleitung vielleicht, es *im Stoffbruch* zu schneiden.
 
-This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
+Das bedeutet, dass nur die Hälfte des Schnittmusterstücks gedruckt ist, und dass du beim Zuschnitt deinen Stoff faltest und die Linie, die _im Stoffbruch_ ist, mit der Stoffbruchlinie auf dem Schnittmuster ausrichtest.
 
-Die Faltlinie wird mit einem doppelten Pfeil wie in diesem Beispiel angezeigt:
+Die Stoffbruchlinie wird mit einem doppeltem Pfeil markiert, wie in diesem Beispiel:
 
 <Legend part="cutonfold" caption="A cut-on-fold indicator" >
 
 <Tip>
 
-Für eine Übersicht aller Indikatoren deines Musters siehe [Muster-Notation][1]
+Für eine Übersicht aller Markierungen auf deinem Schnittmuster, siehe [Anleitung für Schnittmuster-Notation][1]
 
 </Tip>
