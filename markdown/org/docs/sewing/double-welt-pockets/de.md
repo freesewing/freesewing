@@ -91,25 +91,25 @@ Der Besatz ist optional, wenn du keinen verwendest, wird beim Spähen durch die 
 
 Die Form des Taschenbeutels hängt vom Schnittmuster ab. Der Einfachheit halber werde ich einen rechteckigen Taschenbeutel mit abgerundeten Ecken am unteren Rand verwenden, wie man sie hinten auf Hosen finden kann.
 
-> Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
+> Es gibt in der Regel eine längere und kürzere Version des Taschenbeutels. Das liegt daran, dass eine Seite an der oberen Paspel, die andere an der unteren Paspel befestigt wird.
 
 ## Konstruktion
 
-### Schritt 1: Sicherungsschnittstelle vor Ort
+### Schritt 1: Einlage festbügeln
 
 ![Sicherungsschnittstelle an Ort](step01.png)
 
-Verschmelzen Sie die Taschenschnittstelle mit der schlechten Seite Ihres Kleidungsstücks, so dass es den Ort überdeckt, an dem Sie die Welttasche herstellen.
+Bügele die Einlage an der schlechten Seite deines Kleidungsstückes fest, sodass sie die Stelle bedeckt, an der du deine Paspeltasche konstruieren wirst.
 
-> Muster haben normalerweise Noten, die Ihnen helfen, die Platzierung einer Welttasche zu bestimmen
+> Schnittmuster haben normalerweise Knipse, die dir dabei helfen, eine Paspeltasche zu platzieren
 
-### Schritt 2: Markiere die Tasche auf der guten Seite des Stoffes
+### Schritt 2: Markiere die Paspeltache auf der guten Seite des Stoffes
 
 ![Markiere die Tasche auf der guten Seite des Stoffes](step02.png)
 
-Markiere die Tasche wie folgt:
+Markiere die Paspeltasche wie folgt:
 
- - Markieren Sie die Taschenbreite mit den vertikalen Linien. Lassen Sie diese Linien ausdehnen, damit Sie die Schweißnähte später ausrichten können
+ - Markiere die Taschenbreite mit vertikalen Linien. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
  - Die mittlere Öffnung der Tasche mit einer horizontalen Linie ausrichten. Lasse es sich erweitern um dir zu helfen, die Schweissen später auszurichten
  - Markiere zwei horizontale Linien parallel zur Mittelzeile, bei einem Versatz in Höhe der Welthöhe (0,5cm in unserem Beispiel)
 
