@@ -3,7 +3,7 @@ SidePanel: Seitenleiste
 FrontBackPanel: Front- und Rückseite
 BottomPanel: Unteres Panel
 ZipperPanel: Reißverschluss
-Strap: Identifikator
+Strap: Griff
 strapLength: Länge der Griffe
 handleWidth: Breite der Griffe
 zipperSize: Standard Reißverschlussgröße
