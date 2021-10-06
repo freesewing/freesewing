@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-theme",
-  "version": "2.18.0",
+  "version": "2.19.0-alpha.0",
   "description": "A FreeSewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,6 +29,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
+    "lernabuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js && rollup -c",
     "test": "echo \"plugin-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -37,7 +38,7 @@
     "prebuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.18.0"
+    "@freesewing/core": "^2.19.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -48,7 +49,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

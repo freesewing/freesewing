@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-jargon",
-  "version": "2.18.0",
+  "version": "2.19.0-alpha.0",
   "description": "A gatsby-transformer-remark sub-plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -25,6 +25,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
+    "lernabuild": "rollup -c",
     "test": "echo \"gatsby-remark-jargon: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -33,7 +34,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "remark-jargon": "^2.18.0"
+    "remark-jargon": "^2.19.0-alpha.0"
   },
   "devDependencies": {},
   "files": [
@@ -43,7 +44,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

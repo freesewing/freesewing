@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "2.18.0",
+  "version": "2.19.0-alpha.0",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -26,6 +26,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
+    "lernabuild": "rollup -c",
     "test": "echo \"models: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -33,7 +34,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/utils": "^2.18.0"
+    "@freesewing/utils": "^2.19.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -44,7 +45,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",
