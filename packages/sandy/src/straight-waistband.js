@@ -15,7 +15,7 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Calculate the corners of the rectangle and other auxiliar points
@@ -54,7 +54,7 @@ export default function (part) {
     points.grainlineTo = points.grainlineFrom.flipX()
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
     points.button = points.centerRight
       .shiftFractionTowards(points.bottomRight, 0.5)
@@ -68,7 +68,7 @@ export default function (part) {
     points.buttonNotch = points.bottomRight.shift(180, store.get('waistbandOverlap'))
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['centerNotch', 'buttonNotch', 'bottomLeft']
+      on: ['centerNotch', 'buttonNotch', 'bottomLeft'],
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -79,12 +79,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

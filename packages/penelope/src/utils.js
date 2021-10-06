@@ -90,9 +90,9 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   });
   */
 
-  store.set('frontDartSize', frontDartSize )
-  store.set('backDartSize', backDartSize )
-  store.set('nrOfDarts', nrOfDarts )
+  store.set('frontDartSize', frontDartSize)
+  store.set('backDartSize', backDartSize)
+  store.set('nrOfDarts', nrOfDarts)
 }
 
 /**
@@ -142,7 +142,7 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
   let curveWithDart = {
     left: curveLeftOfDart,
     dart: dart,
-    right: curveRightOfDart
+    right: curveRightOfDart,
   }
 
   /*

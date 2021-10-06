@@ -3,8 +3,8 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    snippets.snapMale = new Snippet('snap-male', points.snapLeft)
-    snippets.snapFemale = new Snippet('snap-female', points.snapRight).attr('opacity', 0.5)
+    snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
+    snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
 
     paths.bias = paths.seam
       .offset(-5)
@@ -16,7 +16,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'bib'
+      title: 'bib',
     })
 
     points.scalebox = points.title.shift(-90, 55)

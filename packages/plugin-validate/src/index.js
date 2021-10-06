@@ -10,27 +10,26 @@ export default {
         return pattern.debug({
           type: 'error',
           label: '👕 No measurements provided',
-          msg:
-            'You did not provide any measurements. Most, if not all, patterns require measurements, so this is most likely an issue.'
+          msg: 'You did not provide any measurements. Most, if not all, patterns require measurements, so this is most likely an issue.',
         })
       for (let measurement of pattern.config.measurements) {
         if (!pattern.settings.measurements[measurement]) {
           pattern.debug({
             type: 'error',
             label: '👕 Missing measurement:',
-            msg: measurement
+            msg: measurement,
           })
           pattern.debug({
             type: 'info',
             label: '👕 All measurements:',
-            msg: pattern.settings.measurements
+            msg: pattern.settings.measurements,
           })
           throw new Error(`Missing measurement: ${measurement}`)
         } else {
           pattern.debug({
             type: 'success',
             label: '👕 ' + measurement + ' is ok',
-            msg: pattern.settings.measurements[measurement]
+            msg: pattern.settings.measurements[measurement],
           })
         }
       }
@@ -55,6 +54,6 @@ export default {
           }
         }
       }
-    }
-  }
+    },
+  },
 }

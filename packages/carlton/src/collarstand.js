@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')
@@ -48,12 +37,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 7,
-      title: 'collarStand'
+      title: 'collarStand',
     })
 
     macro('grainline', {
       from: points.bottomLeft,
-      to: points.standTop
+      to: points.standTop,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -62,17 +51,17 @@ export default function (part) {
       macro('hd', {
         from: points.standTipLeft,
         to: points.standTip,
-        y: points.standTip.y + sa + 15
+        y: points.standTip.y + sa + 15,
       })
       macro('vd', {
         from: points.bottomLeft,
         to: points.standTop,
-        x: points.standTip.x + sa + 15
+        x: points.standTip.x + sa + 15,
       })
       macro('vd', {
         from: points.standTip,
         to: points.standTop,
-        x: points.standTip.x + sa + 30
+        x: points.standTip.x + sa + 30,
       })
     }
   }

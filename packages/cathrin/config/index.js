@@ -5,13 +5,12 @@ export default {
   version,
   design: ['Cathrin Åhlén', 'Joost De Cock'],
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'underwear',
   type: 'pattern',
   difficulty: 4,
-  tags: ['underwear', 'top'],
   optionGroups: {
     fit: ['waistReduction', 'panels'],
-    style: ['backOpening', 'backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise']
+    style: ['backOpening', 'backRise', 'backDrop', 'frontRise', 'frontDrop', 'hipRise'],
   },
   measurements: ['underbust', 'waist', 'hips', 'waistToUnderbust', 'waistToHips'],
   dependencies: {
@@ -21,7 +20,7 @@ export default {
     panel4: 'panels',
     panel5: 'panels',
     panel6: 'panels',
-    panels: 'base'
+    panels: 'base',
   },
   inject: {
     panel1: 'panels',
@@ -30,14 +29,14 @@ export default {
     panel4: 'panels',
     panel5: 'panels',
     panel6: 'panels',
-    panels: 'base'
+    panels: 'base',
   },
   hide: ['panels', 'base'],
   options: {
     // Lists
     panels: {
       list: ['11', '13'],
-      dflt: '13'
+      dflt: '13',
     },
 
     // Percentages
@@ -47,6 +46,6 @@ export default {
     backDrop: { pct: 2, min: 0, max: 5 },
     frontRise: { pct: 4, min: 0.1, max: 8 },
     frontDrop: { pct: 5, min: 0, max: 10 },
-    hipRise: { pct: 5, min: 0, max: 15 }
-  }
+    hipRise: { pct: 5, min: 0, max: 15 },
+  },
 }

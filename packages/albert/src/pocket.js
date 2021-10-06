@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let apronLength =
@@ -49,7 +49,7 @@ export default function (part) {
 
   macro('cutonfold', {
     from: points.topCOF,
-    to: points.bottomCOF
+    to: points.bottomCOF,
   })
 
   // Complete?
@@ -60,7 +60,7 @@ export default function (part) {
     macro('title', {
       nr: 3,
       at: points.title,
-      title: 'Pocket'
+      title: 'Pocket',
     })
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -72,12 +72,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - sa - 15
+      x: points.topLeft.x - sa - 15,
     })
   }
 

@@ -5,18 +5,17 @@ export default {
   version,
   design: 'Erica Alcusa Sáez',
   code: ['Erica Alcusa Sáez', 'Joost De Cock'],
-  department: 'womenswear',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 3,
-  tags: ['skirt', 'bottom', 'basics'],
   optionGroups: {
     fit: ['waistbandPosition', 'waistbandShape'],
     style: ['lengthBonus', 'circleRatio', 'waistbandWidth', 'waistbandOverlap', 'gathering'],
-    construction: ['seamlessFullCircle', 'hemWidth']
+    construction: ['seamlessFullCircle', 'hemWidth'],
   },
   measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
   dependencies: {
-    waistband: 'skirt'
+    waistband: 'skirt',
   },
   options: {
     // Constants
@@ -39,7 +38,7 @@ export default {
     // Lists
     waistbandShape: {
       list: ['straight', 'curved'],
-      dflt: 'straight'
-    }
-  }
+      dflt: 'straight',
+    },
+  },
 }

@@ -1,29 +1,20 @@
 ---
 filter: Filter
 department: Afdeling
-type: Type
+type: Soort
 tags: Labels
 code: Code
 design: Ontwerp
 difficulty: Moeilijkheid
 resetFilter: Filters herstellen
-menswear: Herenkleding
-womenswear: Dameskleding
 accessories: Accessoires
 block: Basisvorm
 pattern: Patroon
 byPattern: Filter op patroon
 underwear: Ondergoed
 top: Top
-basics: Basics
-bottom: Ondergoed
-coat: Jas
-cosplay: Cosplay
-headwear: Hoofddeksels
-jacket: Jasje
-cap: Pet
-skirt: Rok
+tops: Tepels
+bottom: Bodem
+bottoms: Onderpanden
+coats: Jas & jassen
 swimwear: Zwemkledij
-trousers: Broek
-formal: Chique
-unisex: Unisex

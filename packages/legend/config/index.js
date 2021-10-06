@@ -10,7 +10,7 @@ export default {
   difficulty: 1,
   tags: ['documentation'],
   optionGroups: {
-    fit: ['fixme']
+    fit: ['fixme'],
   },
   measurements: [],
   parts: [
@@ -29,7 +29,7 @@ export default {
     'scalebox',
     'lineWidths',
     'lineStrokes',
-    'sizes'
+    'sizes',
   ],
   options: {
     focus: '',
@@ -37,7 +37,7 @@ export default {
     fixme: {
       pct: 50,
       min: 0,
-      max: 100
-    }
-  }
+      max: 100,
+    },
+  },
 }

@@ -1,5 +1,5 @@
 ---
-back: Trasero
+back: Atrás
 backBase: Base trasera
 base: Base
 bentBack: Trasero Bent
@@ -11,8 +11,8 @@ bentUnderSleeve: Manga debajo Bent
 buttonholePlacket: Tapeta de ojal
 buttonPlacket: Tapeta de botones
 collar: Cuello
-collarStand: Base del cuello
-cuff: Puño
+collarStand: Soporte de collar
+cuff: Cuffnl
 fabricTail: Cola de tela
 fabricTip: Punta de tela
 frontBase: Base delantera
@@ -20,11 +20,12 @@ frontFacing: Delantero mirando hacia
 front: Frente
 frontLeft: Delantero izquierdo
 frontLining: Delantero revestimiento
-frontRight: Delantero derecha
+frontRight: Frente derecho
+gusset: Gusset
 hoodCenter: Centro de la capucha
 hood: Capucha
 hoodSide: Lado de la capucha
-inset: Encarte
+inset: Recuadro
 interfacingTail: Cola de entretela
 interfacingTip: Punta de entretela
 liningTail: Cola de revestimiento
@@ -38,19 +39,19 @@ panel5: Panel 5
 panel6: Panel 6
 panels: Paneles
 pocketBag: Bolsa de bolsillo
-pocketFacing: Mirando hacia el bolsillo
+pocketFacing: Cara de bolsillo
 pocketInterfacing: Entretela de bolsillo
 pocket: Bolsillo
 pocketWelt: Ribete de bolsillo
 side: Lado
 sleeveBase: Base de la manga
-sleevecap: Manga corta
-sleevePlacketOverlap: Vista de la manga superior
-sleevePlacketUnderlap: Vista de la manga fondo
+sleevecap: Funda de manga
+sleevePlacketOverlap: Top de manga tapeta
+sleevePlacketUnderlap: Parte inferior de la tapeta de la manga
 sleeve: Manga
 topSleeve: Manga superior
-top: Top
+top: Arriba
 underCollar: Debajo del cuello
 underSleeve: Manga debajo
 waistband: Pretina
-yoke: Canesú
+yoke: Yugo

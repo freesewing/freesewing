@@ -13,7 +13,7 @@ export default function (part) {
   if (options.widthHd)
     macro('hd', {
       from: new Point(0, 0),
-      to: new Point(options.width, 0)
+      to: new Point(options.width, 0),
     })
   if (options.colors) colors(part)
   if (options.circles) circles(part)

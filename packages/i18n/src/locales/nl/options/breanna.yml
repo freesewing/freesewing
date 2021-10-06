@@ -1,41 +1,41 @@
 ---
 shoulderDart:
-  title: Shoulder dart
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  title: Schouder neep
+  description: Wel of niet een neep aan de schouder aan de schouder aan de achterkant
 shoulderDartSize:
-  title: Shoulder dart size
-  description: The size of the shoulder dart
+  title: Grootte schouder neep
+  description: De grootte van de schouderneep
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Lengte schouder neep
+  description: De lengte van de schouderneep
 waistDart:
-  title: Waist dart
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Taille neep
+  description: Of je een neep aan de taille wilt aanlaten om de achterkant af te ronden
 waistDartSize:
-  title: Waist dart size
-  description: The size of the waist dart
+  title: Grootte neep taille
+  description: De grootte van de neep van de taille
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Lengte neep taille
+  description: De lengte van de neep van de taille
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  title: Verticale overwijdte
+  description: De hoeveelheid overwijdte om te verdelen over de lengte van het kledingstuk
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  title: Overwijdte taille
+  description: De hoeveelheid overwijdte aan de taille
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  title: Bust neep
+  description: Waar moet je de buikneep plaatsen om de borst vorm te geven
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Lengte busteneep
+  description: De lengte van de bustenneep
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  title: Secundaire bustenneep
+  description: Voeg optioneel een secundaire bustenneep toe om de vormgeving van de borst te verdelen
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Secundaire lengte bustenneep
+  description: De lengte van de secundaire bustenneep
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Bust nepen vormgeving
+  description: Bepaalt het evenwicht tussen de hoofd- en secundaire busteennepen
 

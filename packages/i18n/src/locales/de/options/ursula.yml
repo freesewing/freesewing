@@ -1,0 +1,34 @@
+---
+fabricStretch:
+  title: Stoffdehnbarkeit
+  description: Passen Sie dies für mehr oder weniger dehnbare Stoffe an
+gussetWidth:
+  title: Zwickelbreite
+  description: Steuert die Breite des Zwickels
+gussetLength:
+  title: Zwickellänge
+  description: Steuert die Länge des Zwickels
+elasticStretch:
+  title: Dehnbarkeit des Gummis
+  description: Passen Sie dies für mehr oder weniger dehnbare elastische
+rise:
+  title: Anstieg
+  description: Steuert die Höhe der Taille
+legOpening:
+  title: Beinöffnung
+  description: Legt fest, wie hoch das Bein ausgeschnitten wird
+frontDip:
+  title: Vordere Taille
+  description: Legt fest, wie sehr die Vordertaillenkurven (mehr oder weniger Haut)
+backDip:
+  title: Zurück-Taille
+  description: Steuert wie sehr die Rückentaillenkurven (mehr oder weniger Haut)
+taperToGusset:
+  title: Vordere Freilegung
+  description: Steuert die Menge an freigelegter Haut auf der vorderen Seite
+backExposure:
+  title: Hintere Freilegung
+  description: Steuert die Menge an freigelegter Haut auf der hinteren Seite
+
+
+

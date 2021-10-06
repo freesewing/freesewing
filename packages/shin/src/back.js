@@ -13,7 +13,7 @@ export default function (part) {
     sa,
     options,
     measurements,
-    utils
+    utils,
   } = part.shorthand()
 
   // Store some helper variables
@@ -51,10 +51,13 @@ export default function (part) {
   points.crossSeamCp = points.crossSeam.shiftFractionTowards(tmp, 0.7)
 
   // Reduce the legs
-  points.reducedLegInner = new Path()
-    .move(points.legSide)
-    .curve_(points.legSideCp, points.legInner)
-    .shiftFractionAlong(1 - options.legReduction)
+  points.reducedLegInner =
+    options.legReduction === 0
+      ? points.legInner
+      : new Path()
+          .move(points.legSide)
+          .curve_(points.legSideCp, points.legInner)
+          .shiftFractionAlong(1 - options.legReduction)
   points.reducedLegInnerCp = points.legInner.rotate(90, points.reducedLegInner)
   points.reducedCrossSeam = new Path()
     .move(points.crossSeam)
@@ -112,7 +115,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'back'
+      title: 'back',
     })
     macro('scalebox', { at: new Point(points.legSide.x + 80, points.legSide.y - 40) })
     if (sa) {
@@ -129,42 +132,42 @@ export default function (part) {
     macro('hd', {
       from: points.hipSide,
       to: points.hipCb,
-      y: points.hipCb.y - sa - 15
+      y: points.hipCb.y - sa - 15,
     })
     macro('hd', {
       from: points.legSide,
       to: points.hipCb,
-      y: points.hipCb.y - sa - 30
+      y: points.hipCb.y - sa - 30,
     })
     macro('vd', {
       from: points.legSide,
       to: points.hipSide,
-      x: points.legSide.x - sa - 15
+      x: points.legSide.x - sa - 15,
     })
     macro('vd', {
       from: points.reducedLegInner,
       to: points.hipSide,
-      x: points.legSide.x - sa - 30
+      x: points.legSide.x - sa - 30,
     })
     macro('hd', {
       from: points.legSide,
       to: points.reducedLegInner,
-      y: points.reducedLegInner.y + 3 * sa + 15
+      y: points.reducedLegInner.y + 3 * sa + 15,
     })
     macro('hd', {
       from: points.legSide,
       to: points.reducedCrossSeam,
-      y: points.reducedLegInner.y + 3 * sa + 30
+      y: points.reducedLegInner.y + 3 * sa + 30,
     })
     macro('vd', {
       from: points.reducedLegInner,
       to: points.reducedCrossSeam,
-      x: points.reducedCrossSeam.x + sa + 15
+      x: points.reducedCrossSeam.x + sa + 15,
     })
     macro('vd', {
       from: points.reducedLegInner,
       to: points.hipCb,
-      x: points.reducedCrossSeam.x + sa + 30
+      x: points.reducedCrossSeam.x + sa + 30,
     })
   }
 

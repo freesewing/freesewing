@@ -1,8 +1,8 @@
 export const calculateReduction = function (part) {
-  let { store, measurements, options } = part.shorthand()
-  let chest = measurements.chest * (1 + options.chestEase)
-  let waist = measurements.waist * (1 + options.waistEase)
-  let hips = measurements.hips * (1 + options.hipsEase)
+  const { store, measurements, options } = part.shorthand()
+  const chest = measurements.chest * (1 + options.chestEase)
+  const waist = measurements.waist * (1 + options.waistEase)
+  const hips = measurements.hips * (1 + options.hipsEase)
   let waistReduction = chest - waist
   let hipsReduction = chest - hips
 
@@ -26,8 +26,8 @@ export const calculateReduction = function (part) {
 }
 
 export const addButtons = function (part, origin = 'cfNeck', snippet = 'button') {
-  let { points, options, snippets, Snippet } = part.shorthand()
-  let len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength)
+  const { points, options, snippets, Snippet } = part.shorthand()
+  const len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength)
   for (let i = 1; i <= options.buttons; i++) {
     points['button' + i] = points[origin].shift(-90, (len / options.buttons) * i)
     snippets[snippet + i] = new Snippet(snippet, points['button' + i])
@@ -42,9 +42,9 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
 export const addButtonHoles = (part, origin) => addButtons(part, origin, 'buttonhole')
 
 export const draftBarrelCuff = (part) => {
-  let { store, points, measurements, options, Point } = part.shorthand()
-  let height = measurements.shoulderToWrist * options.cuffLength
-  let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
+  const { store, points, measurements, options, Point } = part.shorthand()
+  const height = measurements.shoulderToWrist * options.cuffLength
+  const width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
   store.set('cuffHeight', height)
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -55,18 +55,18 @@ export const draftBarrelCuff = (part) => {
 }
 
 export const decorateBarrelCuff = (part) => {
-  let { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
     nr: 11,
     title: 'cuff',
     at: points.title,
-    scale: 0.8
+    scale: 0.8,
   })
 
   // Button and buttonhole
-  let margin = measurements.wrist * options.cuffOverlap
+  const margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin / 2)
   points.buttonLineBottom = points.bottomRight.shift(180, margin / 2)
   points.buttonholeLineTop = points.topLeft.shift(0, margin / 2)
@@ -93,10 +93,10 @@ export const decorateBarrelCuff = (part) => {
 }
 
 export const draftFrenchCuff = (part) => {
-  let { store, points, measurements, options, Point } = part.shorthand()
-  let margin = measurements.wrist * options.cuffOverlap
-  let height = measurements.shoulderToWrist * options.cuffLength
-  let width =
+  const { store, points, measurements, options, Point } = part.shorthand()
+  const margin = measurements.wrist * options.cuffOverlap
+  const height = measurements.shoulderToWrist * options.cuffLength
+  const width =
     measurements.wrist * (1 + options.cuffEase + options.cuffOverlap + options.cuffDrape) +
     margin / 2
   store.set('cuffHeight', height)
@@ -111,18 +111,18 @@ export const draftFrenchCuff = (part) => {
 }
 
 export const decorateFrenchCuff = (part) => {
-  let { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
     nr: 11,
     title: 'cuff',
     at: points.title,
-    scale: 0.8
+    scale: 0.8,
   })
 
   // Buttonholes
-  let margin = measurements.wrist * options.cuffOverlap
+  const margin = measurements.wrist * options.cuffOverlap
   points.buttonLineTop = points.topRight.shift(180, margin * 0.75)
   points.buttonLineBottom = points.bottomRight.shift(180, margin * 0.75)
   points.buttonholeLineTop = points.topLeft.shift(0, margin * 0.75)
@@ -141,34 +141,36 @@ export const decorateFrenchCuff = (part) => {
 }
 
 export const paperlessBarrelCuff = (part) => {
-  let { sa, macro, points, options } = part.shorthand()
-  macro('hd', {
-    from: points.buttonhole1,
-    to: points.button1,
-    y: points.bottomLeft.y + 15 + sa
-  })
+  const { sa, macro, points, options, complete } = part.shorthand()
+  if (complete) {
+    macro('hd', {
+      from: points.buttonhole1,
+      to: points.button1,
+      y: points.bottomLeft.y + 15 + sa,
+    })
+  }
   macro('hd', {
     from: points.bottomLeft,
     to: points.bottomRight,
-    y: points.bottomLeft.y + 30 + sa
+    y: points.bottomLeft.y + 30 + sa,
   })
   macro('vd', {
     from: points.bottomLeft,
     to: points.topLeft.shift(0, 40),
-    x: points.bottomLeft.x - 15 - sa
+    x: points.bottomLeft.x - 15 - sa,
   })
-  if (options.barrelCuffNarrowButton) {
+  if (complete && options.barrelCuffNarrowButton) {
     macro('hd', {
       from: points.narrowButton1,
       to: points.button1,
-      y: points.topRight.y - 15 - sa
+      y: points.topRight.y - 15 - sa,
     })
   }
-  if (options.cuffButtonRows === 2) {
+  if (complete && options.cuffButtonRows === 2) {
     macro('vd', {
       from: points.button2,
       to: points.button1,
-      x: points.topRight.x + 15 + sa
+      x: points.topRight.x + 15 + sa,
     })
   }
 
@@ -176,135 +178,131 @@ export const paperlessBarrelCuff = (part) => {
 }
 
 export const paperlessFrenchCuff = (part) => {
-  let { sa, macro, points } = part.shorthand()
-  macro('hd', {
-    from: points.button4,
-    to: points.button2,
-    y: points.bottomLeft.y + 15 + sa
-  })
+  const { sa, macro, points, complete } = part.shorthand()
+  if (complete) {
+    macro('hd', {
+      from: points.button4,
+      to: points.button2,
+      y: points.bottomLeft.y + 15 + sa,
+    })
+    macro('vd', {
+      from: points.button2,
+      to: points.button1,
+      x: points.topRight.x + 15 + sa,
+    })
+  }
   macro('hd', {
     from: points.midLeft,
     to: points.midRight,
-    y: points.bottomLeft.y + 30 + sa
-  })
-  macro('vd', {
-    from: points.button2,
-    to: points.button1,
-    x: points.topRight.x + 15 + sa
+    y: points.bottomLeft.y + 30 + sa,
   })
   macro('vd', {
     from: points.bottomRight.shift(180, 40),
     to: points.topRight.shift(180, 40),
-    x: points.topRight.x + 30 + sa
+    x: points.topRight.x + 30 + sa,
   })
 
   return part
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  let { sa, options, paperless, points, macro, Path } = part.shorthand()
-  let factor = side === 'right' ? -1 : 1
+  const { sa, options, paperless, points, macro } = part.shorthand()
+  const factor = side === 'right' ? -1 : 1
   macro('banner', {
     path: 'hemSa',
-    text: ['hem', ': 3x', 'seamAllowance']
+    text: ['hem', ': 3x', 'seamAllowance'],
   })
   macro('banner', {
     path: 'saFrench',
-    text: ['frenchSeam', ': 2x', 'seamAllowance']
+    text: ['frenchSeam', ': 2x', 'seamAllowance'],
   })
   if (paperless) {
-    macro('pd', {
-      path: new Path()
-        .move(points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15 * factor
-    })
     macro('vd', {
       from: points.armhole,
       to: points.armholePitch,
-      x: points.armhole.x + (15 + sa * 2) * factor
+      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.armhole,
-      to: points.shoulder,
-      x: points.armhole.x + (30 + sa * 2) * factor
+      to: points.s3ArmholeSplit,
+      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.armhole,
-      to: points.neck,
-      x: points.armhole.x + (45 + sa * 2) * factor
+      to: points.s3CollarSplit,
+      x: points.armhole.x + (45 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.waist,
       to: points.armhole,
-      x: points.armhole.x + (15 + sa * 2) * factor
+      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
     })
     macro('vd', {
       from: points.hips,
       to: points.armhole,
-      x: points.armhole.x + (30 + sa * 2) * factor
+      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
     })
     macro('ld', {
       from: points.cfWaist,
-      to: points.waist
+      to: points.waist,
     })
     if (options.hemStyle === 'baseball') {
       macro('vd', {
         from: points.bballStart,
         to: points.bballEnd,
-        x: points.hips.x + (15 + 2 * sa) * factor
+        x: points.hips.x + (15 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.hips,
-        x: points.hips.x + (30 + 2 * sa) * factor
+        x: points.hips.x + (30 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.armhole,
-        x: points.hips.x + (45 + 2 * sa) * factor
+        x: points.hips.x + (45 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.bballStart,
-        to: points.neck,
-        x: points.hips.x + (60 + 2 * sa) * factor
+        to: points.s3CollarSplit,
+        x: points.hips.x + (60 + options.ffsa * sa) * factor,
       })
       macro('hd', {
         from: points.bballStart,
         to: points.bballEnd,
-        y: points.bballStart.y + 15 + 3 * sa
+        y: points.bballStart.y + 15 + 3 * sa,
       })
     } else if (options.hemStyle === 'slashed') {
       macro('vd', {
         from: points.slashEnd,
         to: points.slashStart,
-        x: points.hips.x + (15 + 3 * sa) * factor
+        x: points.hips.x + (15 + 3 * sa) * factor,
       })
       macro('vd', {
         from: points.slashEnd,
         to: points.hips,
-        x: points.hips.x + (30 + 3 * sa) * factor
+        x: points.hips.x + (30 + 3 * sa) * factor,
       })
       macro('vd', {
         from: points.slashEnd,
         to: points.armhole,
-        x: points.hips.x + (45 + 3 * sa) * factor
+        x: points.hips.x + (45 + 3 * sa) * factor,
       })
       macro('vd', {
         from: points.slashEnd,
-        to: points.neck,
-        x: points.hips.x + (60 + 3 * sa) * factor
+        to: points.s3CollarSplit,
+        x: points.hips.x + (60 + 3 * sa) * factor,
       })
     } else {
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: points.armhole.x + (45 + 2 * sa) * factor
+        x: points.armhole.x + (45 + options.ffsa * sa) * factor,
       })
       macro('vd', {
         from: points.hem,
-        to: points.neck,
-        x: points.armhole.x + (60 + 2 * sa) * factor
+        to: points.s3CollarSplit,
+        x: points.armhole.x + (60 + options.ffsa * sa) * factor,
       })
     }
   }

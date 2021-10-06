@@ -1,15 +1,17 @@
 import babel from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
-import { terser } from 'rollup-plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { name, version, description, author, license } from './package.json'
 import utils from './src/index.js'
+
+const banner = `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
 
 const createConfig = (util, module) => {
   return {
     input: `./src/${util + '/'}index.js`,
     output: {
+      banner,
       file: `./${util}/index` + (module ? '.mjs' : '.js'),
       format: module ? 'es' : 'cjs',
       sourcemap: true,
@@ -23,11 +25,6 @@ const createConfig = (util, module) => {
       peerDepsExternal(),
       resolve({ modulesOnly: true }),
       json(),
-      terser({
-        output: {
-          preamble: `/**\n * ${name} | v${version}\n * ${description}\n * (c) ${new Date().getFullYear()} ${author}\n * @license ${license}\n */`
-        }
-      })
     ]
   }
 }
@@ -35,7 +32,7 @@ const createConfig = (util, module) => {
 const config = []
 for (let util of utils) {
   config.push(createConfig(util, false))
-  // Webpack doesn't handle .mjs very well
+  // Using .mjs causes problems. See #1079
   //config.push(createConfig(util, true));
 }
 export default config

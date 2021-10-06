@@ -4,22 +4,22 @@ backPocket:
   description: Definiert ob rückwärtige Taschen integriert werden
 frontPocket:
   title: Vordere Taschen
-  description: Legt fest ob vordere Taschen integriert werden oder nicht
+  description: Ob eine Fronttasche hinzugefügt werden soll oder nicht
 hem:
-  title: Grösse des Saums
+  title: Größe des Saums
   description: Höhe des Saums am unteren Rand der Hose
 waistBand:
   title: Taillenbund
-  description: Grösse des Taillenbundes
+  description: Größe des Taillenbundes
 waistRaise:
   title: Taillenhöhe
-  description: Wie hoch soll die Taille über dem Gesässumfang angelegt werden? Dies beeinflusst die Tiefe des Schrittauschnittes.
+  description: Wie hoch soll die Taille über dem Gesäßumfang angelegt werden? Dies beeinflusst die Tiefe des Schrittauschnittes.
 crotchBack:
   title: Hinterer Schritt
-  description: Prozentsatz des Gesässumfangs, den der hintere Teil des Schrittes benötigt. Dies ergibt mehr oder weniger Abstand zwischen der Seitennaht und der hinteren Mitte.
+  description: Prozentsatz des Gesäßumfangs, den der hintere Teil des Schrittes benötigt. Dies ergibt mehr oder weniger Abstand zwischen der Seitennaht und der hinteren Mitte.
 crotchFront:
   title: Vorderer Schritt
-  description: Prozentsatz des Gesässumfangs, den der vordere Teil des Schrittes benötigt. Dies beeinflusst den Abstand zwischen Seitennaht und vorderer Mittelnaht.
+  description: Prozentsatz des Gesäßumfangs, den der vordere Teil des Schrittes benötigt. Dies beeinflusst den Abstand zwischen Seitennaht und vorderer Mittelnaht.
 crotchFactorBackHor:
   title: Horizontaler hinterer Schritt Faktor
   description: Wird benutzt um die Kurze des hinteren Schritts horizontal zu verschieben

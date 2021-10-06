@@ -1,8 +1,8 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let { sa, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
-  let width = options.buttonholePlacketWidth
+  const { sa, points, Path, paths, complete, paperless, store, macro, options } = part.shorthand()
+  const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
@@ -35,8 +35,8 @@ export default (part) => {
         'placketTopFold1',
         'placketTopFold2',
         'placketBottomFold1',
-        'placketBottomFold2'
-      ]
+        'placketBottomFold2',
+      ],
     })
 
     // Buttons
@@ -58,33 +58,45 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     let offset = 0
-    for (let pid of ['placketBottomFold2', 'placketBottomFold1', 'cfHem', 'hips']) {
+    for (const pid of ['placketBottomFold2', 'placketBottomFold1', 'cfHem', 'hips']) {
       offset += 15
       macro('hd', {
         from: points.placketBottomEdge,
         to: points[pid],
-        y: points.placketBottomEdge.y + offset + 3 * sa
+        y: points.placketBottomEdge.y + offset + 3 * sa,
       })
     }
     macro('hd', {
       from: points.placketTopEdge,
-      to: points.neck,
-      y: points.neck.y - 15 - sa
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - 15 - sa,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x - 15
-      })
+    macro('hd', {
+      from: points.placketTopEdge,
+      to: points.s3ArmholeSplit,
+      y: points.s3CollarSplit.y - 30 - sa,
+    })
+    macro('hd', {
+      from: points.placketTopEdge,
+      to: points.armhole,
+      y: points.s3CollarSplit.y - 45 - sa,
+    })
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x - 15,
+        })
+      }
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30
+      x: points.placketTopEdge.x - 30,
     })
   }
   return part

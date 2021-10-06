@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    measurements,
-    options,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro } =
+    part.shorthand()
 
   let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
@@ -38,7 +28,7 @@ export default function (part) {
     macro('title', { at: points.title, nr: 9, title: 'cuff' })
     macro('grainline', {
       from: points.bottomLeft.shift(0, 20),
-      to: points.topLeft.shift(0, 20)
+      to: points.topLeft.shift(0, 20),
     })
   }
 
@@ -47,12 +37,12 @@ export default function (part) {
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y + sa + 15
+      y: points.bottomRight.y + sa + 15,
     })
   }
 

@@ -28,12 +28,13 @@ export default {
     'waistToKnee',
     'waistToSeat',
     'waistToUpperLeg',
-    'wrist'
+    'wrist',
   ],
   womenswear: [
     'ankle',
     'biceps',
     'bustFront',
+    'bustPointToUnderbust',
     'bustSpan',
     'chest',
     'crossSeam',
@@ -66,6 +67,6 @@ export default {
     'waistToSeat',
     'waistToUnderbust',
     'waistToUpperLeg',
-    'wrist'
-  ]
+    'wrist',
+  ],
 }

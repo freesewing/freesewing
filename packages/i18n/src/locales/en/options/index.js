@@ -32,6 +32,8 @@ import paco from './paco.yml'
 import albert from './albert.yml'
 import hortensia from './hortensia.yml'
 import cornelius from './cornelius.yml'
+import charlie from './charlie.yml'
+import ursula from './ursula.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -69,11 +71,14 @@ let patterns = {
   teagan,
   albert,
   hortensia,
-  cornelius
+  cornelius,
+  charlie,
+  ursula,
+  yuri: false,
 }
 
 let options = {}
-for (let pattern of Object.keys(patterns)) {
+for (let pattern in patterns) {
   options[pattern] = {}
   if (typeof optionList[pattern] === 'undefined')
     throw new Error('pattern ' + pattern + ' has no option list')
@@ -82,15 +87,14 @@ for (let pattern of Object.keys(patterns)) {
     if (typeof value === 'object') options[pattern][option] = value
     else {
       if (typeof value === 'undefined') {
-        if (typeof patterns[shared[pattern].dflt][option] === 'object')
+        if (typeof patterns[shared?.[pattern]?.dflt]?.[option] === 'object')
           options[pattern][option] = patterns[shared[pattern].dflt][option]
         else if (
-          typeof shared[pattern].other !== 'undefined' &&
-          typeof shared[pattern].other[option] === 'string'
+          typeof shared?.[pattern]?.other !== 'undefined' &&
+          typeof shared?.[pattern]?.other?.[option] === 'string'
         )
           options[pattern][option] = patterns[shared[pattern].other[option]][option]
         else {
-          console.log(options[pattern])
           throw new Error(`No option translation found for ${option} in ${pattern}`)
         }
       }

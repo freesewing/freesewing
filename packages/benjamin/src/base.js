@@ -12,7 +12,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   if (options.bowStyle === 'square') options.tipWidth = options.knotWidth
@@ -23,7 +23,7 @@ export default function (part) {
     'tipWidth',
     'knotWidth',
     'bowLength',
-    'collarEase'
+    'collarEase',
   ])
     store.set(option, measurements.neck * options[option])
 
@@ -76,13 +76,13 @@ export default function (part) {
       from: points.tip2Bottom,
       to: points.tip,
       via: points.roundBottom,
-      prefix: 'bottom'
+      prefix: 'bottom',
     })
     macro('round', {
       from: points.tip,
       to: points.tip2Top,
       via: points.roundTop,
-      prefix: 'top'
+      prefix: 'top',
     })
     paths.cap = paths.bottomRounded.join(paths.topRounded)
   }
@@ -146,53 +146,53 @@ export default function (part) {
       macro('hd', {
         from: points.knotBottom,
         to: points.tip2Bottom,
-        y: baseY
+        y: baseY,
       })
       baseY += 15
       if (options.bowStyle === 'butterfly' || options.bowStyle === 'diamond') {
         macro('hd', {
           from: points.tip1Bottom,
           to: points.tip2Bottom,
-          y: baseY
+          y: baseY,
         })
         baseY += 15
         macro('vd', {
           from: points.tip1Bottom,
-          to: points.tip1Top
+          to: points.tip1Top,
         })
       }
       macro('hd', {
         from: points.transitionBottomRight,
         to: points.tip2Bottom,
-        y: baseY
+        y: baseY,
       })
       baseY += 15
       macro('hd', {
         from: points.bandBottomRight,
         to: points.tip2Bottom,
-        y: baseY
+        y: baseY,
       })
       baseY += 15
       store.set('baseY', baseY)
 
       macro('vd', {
         from: points.bandBottomRight,
-        to: points.bandTopRight
+        to: points.bandTopRight,
       })
       macro('vd', {
         from: points.transitionBottomRight,
-        to: points.transitionTopRight
+        to: points.transitionTopRight,
       })
       macro('vd', {
         from: points.tip2Bottom,
         to: points.tip2Top,
-        x: points.tip.x + 15 + sa
+        x: points.tip.x + 15 + sa,
       })
       if (options.endStyle !== 'straight') {
         macro('hd', {
           from: points.tip2Bottom,
           to: points.tip,
-          y: points.tip2Bottom.y + 15 + sa
+          y: points.tip2Bottom.y + 15 + sa,
         })
       }
     }

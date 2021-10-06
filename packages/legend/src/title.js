@@ -8,7 +8,7 @@ export default (part) => {
   macro('title', {
     at: points.a,
     nr: 1,
-    title: 'Part name'
+    title: 'Part name',
   })
 
   return box(part, 100, 65)

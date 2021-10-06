@@ -1,6 +1,40 @@
 # Change log for: @freesewing/jaeger
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `collarRoll` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)
+
+## 2.17.0 (2021-07-01)
+
+### Changed
+
+ - Set brian `s3` options as constants
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+## 2.15.2 (2021-04-28)
+
+### Fixed
+
+ - Draft a third button when it's requested See [#973](https://github.com/freesewing/freesewing/issues/973)
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

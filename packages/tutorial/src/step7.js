@@ -12,14 +12,14 @@ export default function (part) {
     to: points.tipRight,
     via: points.tipRightTop,
     prefix: 'tipRightTop',
-    render: true
+    render: true,
   })
   macro('round', {
     from: points.tipRight,
     to: points.top,
     via: points.tipRightBottom,
     prefix: 'tipRightBottom',
-    render: true
+    render: true,
   })
 
   return part

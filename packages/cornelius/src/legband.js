@@ -35,7 +35,7 @@ export default function (part) {
     sa,
     store,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   if (options.cuffStyle == 'keystone') {
@@ -138,7 +138,7 @@ export default function (part) {
     macro('title', {
       nr: 78,
       at: points.title,
-      title: 'LegBand'
+      title: 'LegBand',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -154,34 +154,34 @@ export default function (part) {
     macro('hd', {
       from: points.pA,
       to: points.pF,
-      y: points.pA.y
+      y: points.pA.y,
     })
     if (traditional) {
       macro('hd', {
         from: points.pB,
         to: points.pC,
-        y: points.pB.y
+        y: points.pB.y,
       })
     }
     macro('ld', {
       from: points.pD,
       to: points.pC,
-      d: +sa + 15
+      d: +sa + 15,
     })
     macro('ld', {
       from: points.pA,
       to: points.pAout,
-      d: +sa + 15
+      d: +sa + 15,
     })
     macro('vd', {
       from: points.pB,
       to: points.pA,
-      x: points.pA.x - sa - 15
+      x: points.pA.x - sa - 15,
     })
     macro('vd', {
       from: points.pC,
       to: points.pB,
-      x: points.pC.x - (traditional ? 0 : sa + 15)
+      x: points.pC.x - (traditional ? 0 : sa + 15),
     })
   }
 

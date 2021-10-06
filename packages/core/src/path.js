@@ -8,7 +8,7 @@ import {
   pointOnLine,
   pointOnCurve,
   curveEdge,
-  round
+  round,
 } from './utils'
 
 function Path(debug = false) {
@@ -160,13 +160,15 @@ Path.prototype.asPathstring = function () {
   for (let op of this.ops) {
     switch (op.type) {
       case 'move':
-        d += `M ${op.to.x},${op.to.y}`
+        d += `M ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'line':
-        d += ` L ${op.to.x},${op.to.y}`
+        d += ` L ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'curve':
-        d += ` C ${op.cp1.x},${op.cp1.y} ${op.cp2.x},${op.cp2.y} ${op.to.x},${op.to.y}`
+        d += ` C ${round(op.cp1.x)},${round(op.cp1.y)} ${round(op.cp2.x)},${round(
+          op.cp2.y
+        )} ${round(op.to.x)},${round(op.to.y)}`
         break
       case 'close':
         d += ' z'
@@ -207,7 +209,7 @@ Path.prototype.length = function () {
     if (op.to) current = op.to
   }
 
-  return round(length)
+  return length
 }
 
 /** Returns the startpoint of the path */
@@ -342,18 +344,12 @@ function pathOffset(path, distance, raise) {
       // because that will break the offset in bezier-js
       let cp1, cp2
       if (current.sitsRoughlyOn(op.cp1)) {
-        cp1 = new Path(path.debug)
-          .withRaise(path.raise)
-          .move(current)
-          .curve(op.cp1, op.cp2, op.to)
-          .shiftAlong(2)
+        cp1 = new Path(path.debug).withRaise(path.raise).move(current).curve(op.cp1, op.cp2, op.to)
+        cp1 = cp1.shiftAlong(cp1.length() > 2 ? 2 : cp1.length() / 10)
       } else cp1 = op.cp1
       if (op.cp2.sitsRoughlyOn(op.to)) {
-        cp2 = new Path(path.debug)
-          .withRaise(path.raise)
-          .move(op.to)
-          .curve(op.cp2, op.cp1, current)
-          .shiftAlong(2)
+        cp2 = new Path(path.debug).withRaise(path.raise).move(op.to).curve(op.cp2, op.cp1, current)
+        cp2 = cp2.shiftAlong(cp2.length() > 2 ? 2 : cp2.length() / 10)
       } else cp2 = op.cp2
       let b = new Bezier(
         { x: current.x, y: current.y },
@@ -418,7 +414,7 @@ function joinPaths(paths, closed = false, raise = false) {
 }
 
 /** Returns a point that lies at distance along this */
-Path.prototype.shiftAlong = function (distance) {
+Path.prototype.shiftAlong = function (distance, stepsPerMm = 25) {
   if (typeof distance !== 'number')
     this.raise.error('Called `Path.shiftAlong(distance)` but `distance` is not a number')
   let len = 0
@@ -427,8 +423,9 @@ Path.prototype.shiftAlong = function (distance) {
     let op = this.ops[i]
     if (op.type === 'line') {
       let thisLen = op.to.dist(current)
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
       if (len + thisLen > distance) return current.shiftTowards(op.to, distance - len)
-      else len += thisLen
+      len += thisLen
     } else if (op.type === 'curve') {
       let bezier = new Bezier(
         { x: current.x, y: current.y },
@@ -437,8 +434,10 @@ Path.prototype.shiftAlong = function (distance) {
         { x: op.to.x, y: op.to.y }
       )
       let thisLen = bezier.length()
-      if (len + thisLen > distance) return shiftAlongBezier(distance - len, bezier)
-      else len += thisLen
+      if (Math.abs(len + thisLen - distance) < 0.1) return op.to
+      if (len + thisLen > distance)
+        return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
+      len += thisLen
     }
     current = op.to
   }
@@ -448,15 +447,14 @@ Path.prototype.shiftAlong = function (distance) {
 }
 
 /** Returns a point that lies at fraction along this */
-Path.prototype.shiftFractionAlong = function (fraction) {
+Path.prototype.shiftFractionAlong = function (fraction, stepsPerMm = 25) {
   if (typeof fraction !== 'number')
     this.raise.error('Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number')
-  return this.shiftAlong(this.length() * fraction)
+  return this.shiftAlong(this.length() * fraction, stepsPerMm)
 }
 
 /** Returns a point that lies at distance along bezier */
-function shiftAlongBezier(distance, bezier) {
-  let steps = 100
+function shiftAlongBezier(distance, bezier, steps = 100) {
   let previous, next, t, thisLen
   let len = 0
   for (let i = 0; i <= steps; i++) {
@@ -512,18 +510,18 @@ function lineBoundingBox(line) {
     else
       return {
         topLeft: new Point(from.x, to.y),
-        bottomRight: new Point(to.x, from.y)
+        bottomRight: new Point(to.x, from.y),
       }
   } else if (from.x > to.x) {
     if (from.y < to.y)
       return {
         topLeft: new Point(to.x, from.y),
-        bottomRight: new Point(from.x, to.y)
+        bottomRight: new Point(from.x, to.y),
       }
     else
       return {
         topLeft: new Point(to.x, to.y),
-        bottomRight: new Point(from.x, from.y)
+        bottomRight: new Point(from.x, from.y),
       }
   }
 }
@@ -533,7 +531,7 @@ function curveBoundingBox(curve) {
 
   return {
     topLeft: new Point(bb.x.min, bb.y.min),
-    bottomRight: new Point(bb.x.max, bb.y.max)
+    bottomRight: new Point(bb.x.max, bb.y.max),
   }
 }
 

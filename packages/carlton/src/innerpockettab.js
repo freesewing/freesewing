@@ -24,12 +24,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 15,
-      title: 'innerPocketTab'
+      title: 'innerPocketTab',
     })
 
     macro('grainline', {
       from: points.top,
-      to: points.top.shift(-45, points.top.x * 0.7)
+      to: points.top.shift(-45, points.top.x * 0.7),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
@@ -38,17 +38,17 @@ export default function (part) {
       macro('hd', {
         from: points.topLeft,
         to: points.top,
-        y: points.topLeft.y - sa - 15
+        y: points.topLeft.y - sa - 15,
       })
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topLeft.y - sa - 30
+        y: points.topLeft.y - sa - 30,
       })
       macro('vd', {
         from: points.bottom,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
     }
   }

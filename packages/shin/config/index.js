@@ -5,13 +5,12 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'swimwear',
   type: 'pattern',
   difficulty: 2,
-  tags: ['swimwear', 'bottom'],
   optionGroups: {
     fit: ['bulge', 'backRise', 'legReduction', 'stretch'],
-    style: ['rise']
+    style: ['rise'],
   },
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
   parts: ['back', 'front', 'waistband'],
@@ -30,6 +29,6 @@ export default {
     bulge: { pct: 2.5, min: 0, max: 5 },
     legReduction: { pct: 5, min: 0, max: 10 },
     rise: { pct: 0, min: 0, max: 25 },
-    backRise: { pct: 5, min: 0, max: 10 }
-  }
+    backRise: { pct: 5, min: 0, max: 10 },
+  },
 }

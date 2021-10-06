@@ -28,7 +28,7 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-mirror') === false)
         svg.attributes.set('freesewing:plugin-mirror', version)
-    }
+    },
   },
   macros: {
     mirror: function ({
@@ -37,7 +37,7 @@ export default {
       points = null,
       paths = null,
       prefix = 'mirrored',
-      nameFormat = undefined
+      nameFormat = undefined,
     }) {
       const [start, end] = mirror
       const mirrorPoint = mirrorGen(start, end)
@@ -95,6 +95,6 @@ export default {
           point.attributes.set('mirrored', true)
         })
       }
-    }
-  }
+    },
+  },
 }

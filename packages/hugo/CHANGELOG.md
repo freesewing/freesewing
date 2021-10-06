@@ -1,6 +1,18 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.17.0 (2021-07-01)
+
+### Changed
+
+ - Set brian `s3` options as constants
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.14.0 (2021-03-07)
 
 ### Fixed

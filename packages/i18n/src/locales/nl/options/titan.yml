@@ -6,7 +6,7 @@ waistHeight:
   title: Taillehoogte
   description: Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte
 lengthBonus:
-  title: Lengtebonus
+  title: Bonus lengte
   description: Bepaalt de lengte van de broek
 crotchDrop:
   title: Diepte kruis
@@ -23,15 +23,24 @@ crossSeamCurveStart:
 crossSeamCurveBend:
   title: Buiging binnenbeennaad
   description: Bepaalt de curve van de binnenbeennaad
+crossSeamCurveAngle:
+  title: Grensoverschrijdende hoek
+  description: Bepaalt de hoek van de kruisnaad
 crotchSeamCurveStart:
   title: Begin van de curve van de kruisnaad
   description: Bepaalt hoe ver in de kruisnaad de curve start
 crotchSeamCurveBend:
   title: Buiging kruisnaad
   description: Bepaalt de curve van de kruisnaad
+crotchSeamCurveAngle:
+  title: Kruisnaad hoek
+  description: Bepaalt de hoek van de kruisnaad
 waistBalance:
   title: Balans taille
   description: Bepaalt de horizontale positie van de taille in relatie tot het zitvlak
+waistbandWidth:
+  title: Breedte tailleband
+  description: De breedte van de tailleband
 grainlinePosition:
   title: Positie draadrichting
   description: Bepaalt de horizontale positie van het been in relatie tot het zitvlak

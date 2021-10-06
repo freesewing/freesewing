@@ -20,7 +20,7 @@ export default (part) => {
     via: points.bottomLeft,
     radius: 10,
     prefix: 'bl',
-    render: true
+    render: true,
   })
   macro('round', {
     from: points.bottomRight,
@@ -28,7 +28,7 @@ export default (part) => {
     via: points.topRight,
     radius: 20,
     prefix: 'tr',
-    render: true
+    render: true,
   })
 
   return part

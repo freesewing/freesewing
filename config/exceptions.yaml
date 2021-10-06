@@ -11,11 +11,15 @@ customRollup:
   - remark-jargon
   - utils
   - prettier-config
+  - strapi
+  - freesewing.dev
+  - freesewing.org
 namedExports:
   - css-theme
   - models
   - pattern-info
   - mui-theme
+  - snapseries
 packageJson:
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
@@ -57,6 +61,10 @@ packageJson:
   css-theme:
     main: dist/theme.css
     module: '!'
+  freesewing.dev:
+    private: true
+  freesewing.org:
+    private: true
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
@@ -82,6 +90,17 @@ packageJson:
       - package.json
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
+  strapi:
+    private: true
+    scripts:
+      develop: strapi develop
+      start: strapi start
+      build: strapi build
+      strapi: strapi
+    homepage: "https://posts.freesewing.org/"
+    files: []
+    publishConfig: {}
+    rollup: {}
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
@@ -112,3 +131,6 @@ packageJson:
       - 'validateTld/*'
   waralee:
     author: woutervdub (https://github.com/woutervdub)
+  yuri:
+    author:  biou (https://github.com/biou)
+

@@ -19,13 +19,13 @@ export default function (part) {
     macro('cutonfold', {
       to: points.bottomCF,
       from: points.topCF,
-      grainline: true
+      grainline: true,
     })
     points.title = points.waistCF.shiftFractionTowards(points.underbustGap1Left, 0.5)
     macro('title', {
       nr: 1,
       title: '',
-      at: points.title
+      at: points.title,
     })
     if (sa) paths.sa = paths.panel1.offset(sa).attr('class', 'fabric sa')
   }
@@ -35,36 +35,36 @@ export default function (part) {
     macro('vd', {
       from: points.bottomCF,
       to: points.waistCF,
-      x: points.topCF.x - sa - 15
+      x: points.topCF.x - sa - 15,
     })
     macro('vd', {
       from: points.waistCF,
       to: points.topCF,
-      x: points.topCF.x - sa - 15
+      x: points.topCF.x - sa - 15,
     })
     macro('vd', {
       from: points.hipsGap1,
       to: points.waistGap1Left,
-      x: points.hipsGap1.x + sa + 15
+      x: points.hipsGap1.x + sa + 15,
     })
     macro('vd', {
       from: points.waistGap1Left,
       to: points.underbustGap1Left,
-      x: points.hipsGap1.x + sa + 15
+      x: points.hipsGap1.x + sa + 15,
     })
     macro('hd', {
       from: points.bottomCF,
       to: points.hipsGap1,
-      y: points.bottomCF.y + sa + 15
+      y: points.bottomCF.y + sa + 15,
     })
     macro('hd', {
       from: points.topCF,
       to: points.underbustGap1Left,
-      y: points.topCF.y - sa - 15
+      y: points.topCF.y - sa - 15,
     })
     macro('ld', {
       from: points.waistCF,
-      to: points.waistGap1Left
+      to: points.waistGap1Left,
     })
   }
 

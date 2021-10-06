@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    units,
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    macro,
-    Point,
-    paths,
-    Path
-  } = part.shorthand()
+  let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } =
+    part.shorthand()
 
   let length = store.get('waistToHem') - store.get('beltWidth') / 2
 
@@ -71,56 +61,56 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'tail'
+      title: 'tail',
     })
 
     macro('grainline', {
       from: points.fold2Bottom.shift(0, 10),
-      to: points.fold2Top.shift(0, 10)
+      to: points.fold2Top.shift(0, 10),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).close().attr('class', 'fabric sa')
     macro('vd', {
       from: points.fold4Bottom.shift(0, 15),
       to: points.fold4Top.shift(0, 15),
-      text: units(length)
+      text: units(length),
     })
 
     if (paperless) {
       macro('hd', {
         from: points.cbBottom,
         to: points.fold1Bottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.fold1Bottom,
         to: points.fold2Bottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.fold2Bottom,
         to: points.fold3Bottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.fold3Bottom,
         to: points.fold4Bottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.fold4Bottom,
         to: points.fold5Bottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.fold5Bottom,
         to: points.waistBottom,
-        y: points.cbBottom.y + sa + 15
+        y: points.cbBottom.y + sa + 15,
       })
       macro('hd', {
         from: points.cbBottom,
         to: points.waistBottom,
-        y: points.cbBottom.y + sa + 30
+        y: points.cbBottom.y + sa + 30,
       })
     }
   }

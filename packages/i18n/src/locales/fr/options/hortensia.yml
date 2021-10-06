@@ -6,7 +6,7 @@ zipperSize:
   title: Taille du Zip
   description: Quelle taille de zip utliser
 strapLength:
-  title: Longueur de l'anse
+  title: Longueur du lien
   description: Contrôle la longueur des anses
 handleWidth:
   title: Largeur d'anse

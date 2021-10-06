@@ -1,20 +1,10 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options
-  } = part.shorthand()
+  const { store, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -53,8 +43,8 @@ export default (part) => {
         'cfNeck',
         'placketBottomIn',
         'placketBottomOut',
-        'cfHem'
-      ]
+        'cfHem',
+      ],
     })
 
     // Buttons
@@ -76,42 +66,49 @@ export default (part) => {
     macro('hd', {
       from: points.placketTopOut,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 15 - sa
+      y: points.placketTopEdge.y - 15 - sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 30 - sa
+      y: points.placketTopEdge.y - 30 - sa,
     })
     macro('hd', {
       from: points.placketTopIn,
       to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 45 - sa
+      y: points.placketTopEdge.y - 45 - sa,
     })
     macro('hd', {
-      from: points.neck,
+      from: points.s3CollarSplit,
       to: points.placketTopEdge,
-      y: points.neck.y - 15 - sa
+      y: points.s3CollarSplit.y - 15 - sa,
     })
     macro('hd', {
-      from: points.shoulder,
+      from: points.s3ArmholeSplit,
       to: points.placketTopEdge,
-      y: points.neck.y - 30 - sa
+      y: points.s3CollarSplit.y - 30 - sa,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x + 15 + sa
-      })
+    macro('hd', {
+      from: points.armhole,
+      to: points.placketTopEdge,
+      y: points.s3CollarSplit.y - 45 - sa,
+    })
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x + 15 + sa,
+        })
+      }
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x + 30 + sa
+      x: points.placketTopEdge.x + 30 + sa,
     })
   }
 

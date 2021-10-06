@@ -13,5 +13,5 @@ export default [
   'withGist',
   'withLanguage',
   'withStorage',
-  'Workbench'
+  'Workbench',
 ]

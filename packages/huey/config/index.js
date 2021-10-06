@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: [
       'bicepsEase',
@@ -17,7 +16,7 @@ export default {
       'collarEase',
       'shoulderEase',
       'hipsEase',
-      'ribbingStretch'
+      'ribbingStretch',
     ],
     style: [
       'lengthBonus',
@@ -31,7 +30,9 @@ export default {
       'hoodCutback',
       'hoodClosure',
       'hoodDepth',
-      'hoodAngle'
+      'hoodAngle',
+      's3Collar',
+      's3Armhole',
     ],
     advanced: [
       'acrossBackFactor',
@@ -59,10 +60,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -75,7 +76,7 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     backBase: 'base',
@@ -85,7 +86,8 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
-    pocket: 'front'
+    pocket: 'front',
+    hood: ['front', 'back'],
   },
   inject: {
     backBase: 'base',
@@ -94,7 +96,7 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
-    pocket: 'front'
+    pocket: 'front',
   },
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
   parts: ['hood', 'waistband', 'cuff'],
@@ -116,6 +118,9 @@ export default {
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 10, min: 5, max: 15 },
     shoulderEase: { pct: 0.5, min: -2, max: 6 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
@@ -152,6 +157,6 @@ export default {
     hoodDepth: { pct: 8.5, min: 5, max: 12 },
     ribbingStretch: { pct: 15, min: 0, max: 30 },
 
-    hoodAngle: { deg: 5, min: 2, max: 8 }
-  }
+    hoodAngle: { deg: 5, min: 2, max: 8 },
+  },
 }

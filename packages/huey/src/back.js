@@ -1,22 +1,13 @@
 import { sharedDimensions } from './shared'
 
 export default function (part) {
-  let {
-    store,
-    macro,
-    Path,
-    Point,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements
-  } = part.shorthand()
+  let { store, macro, Path, Point, points, paths, complete, paperless, sa, options, measurements } =
+    part.shorthand()
 
   // Clear paths from Brian
-  for (let p of Object.keys(paths)) delete paths[p]
+  for (let i in paths) {
+    if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
+  }
 
   // Shorten body to take ribbing into account
   if (options.ribbing) {
@@ -42,9 +33,9 @@ export default function (part) {
     .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve_(points.neckCp2, points.cbNeck)
+    .join(paths.backArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.backCollar)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cbHem).line(points.hem).attr('class', 'note stroke-xxl')
   paths.saBase.render = false
@@ -62,7 +53,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cbNeck,
       to: points.cbHem,
-      grainline: true
+      grainline: true,
     })
     macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {

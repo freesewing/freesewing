@@ -22,5 +22,5 @@ export default [
   'storage',
   'tiler',
   'validateEmail',
-  'validateTld'
+  'validateTld',
 ]

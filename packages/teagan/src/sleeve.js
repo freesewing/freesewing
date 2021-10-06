@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-    measurements
-  } = part.shorthand()
+  let { sa, Point, points, Path, paths, options, complete, paperless, macro, measurements } =
+    part.shorthand()
 
   let height = points.bicepsRight.x * options.sleeveLength
   let width = measurements.biceps * (1 + options.bicepsEase) * (1 + options.sleeveEase)
@@ -48,7 +38,7 @@ export default function (part) {
     macro('title', { at: points.title, nr: 2, title: 'back' })
     macro('grainline', {
       from: new Point(points.top.x, points.hemLeft.y),
-      to: points.top
+      to: points.top,
     })
 
     if (sa) {
@@ -67,17 +57,17 @@ export default function (part) {
     macro('hd', {
       from: points.hemLeft,
       to: points.hemRight,
-      y: points.hemLeft.y + sa * 3 + 15
+      y: points.hemLeft.y + sa * 3 + 15,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.hemLeft.y + sa * 3 + 30
+      y: points.hemLeft.y + sa * 3 + 30,
     })
     macro('vd', {
       from: points.hemRight,
       to: points.bicepsRight,
-      x: points.bicepsRight.x + sa + 15
+      x: points.bicepsRight.x + sa + 15,
     })
     macro('vd', {
       from: points.hemRight,
@@ -85,7 +75,7 @@ export default function (part) {
         .move(points.capQ2)
         .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
         .edge('top'),
-      x: points.bicepsRight.x + sa + 30
+      x: points.bicepsRight.x + sa + 30,
     })
   }
 

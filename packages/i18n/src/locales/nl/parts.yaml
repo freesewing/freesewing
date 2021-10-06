@@ -1,5 +1,5 @@
 ---
-back: Rug
+back: Achterzijde
 backBase: Basis rug
 base: Basis
 bentBack: Achterzijde Bent
@@ -9,10 +9,10 @@ bentSleeve: Mouw Bent
 bentTopSleeve: Bovenmouw Bent
 bentUnderSleeve: Ondermouw Bent
 buttonholePlacket: Knoopsgatenpat
-buttonPlacket: Knopenpad
+buttonPlacket: Knopenpat
 collar: Kraag
 collarStand: Kraagstaander
-cuff: Manchette
+cuff: Manchet
 fabricTail: Stof staart
 fabricTip: Stof tip
 frontBase: Basis voorzijde
@@ -21,9 +21,10 @@ front: Voorzijde
 frontLeft: Voorzijde links
 frontLining: Voering vooraan
 frontRight: Voorzijde rechts
-hoodCenter: Capuchon midden
+gusset: Gusset
+hoodCenter: Midden kap
 hood: Capuchon
-hoodSide: Capuchon zijkant
+hoodSide: Zijkant kap
 inset: Inzet
 interfacingTail: Interfacing staart
 interfacingTip: Interfacing tip
@@ -36,16 +37,16 @@ panel3: Deel 3
 panel4: Deel 4
 panel5: Deel 5
 panel6: Deel 6
-panels: Delen
-pocketBag: Zak
-pocketFacing: Zak doublure
-pocketInterfacing: Interfacing zak
+panels: Panelen
+pocketBag: Binnenzak
+pocketFacing: Zak beleg
+pocketInterfacing: Tussenvoering zak
 pocket: Zak
 pocketWelt: Paspel zak
 side: Zijkant
 sleeveBase: Basis mouw
 sleevecap: Mouwkop
-sleevePlacketOverlap: Mouwsplit bovendeel
+sleevePlacketOverlap: Mouwsplit boven
 sleevePlacketUnderlap: Mouwsplit onder
 sleeve: Mouw
 topSleeve: Bovenmouw

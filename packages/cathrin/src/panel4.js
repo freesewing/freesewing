@@ -19,13 +19,13 @@ export default function (part) {
     points.grainlineBottom = new Point(points.grainlineTop.x, points.hipsGap4.y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     points.title = points.grainlineTop.shift(-90, points.grainlineTop.dy(points.waistGap4Left) / 2)
     macro('title', {
       nr: 4,
       title: '',
-      at: points.title
+      at: points.title,
     })
     points.logo = points.grainlineTop.shiftFractionTowards(points.grainlineBottom, 0.8)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.8)
@@ -38,36 +38,36 @@ export default function (part) {
     macro('hd', {
       from: points.hipsGap3,
       to: points.hipsGap4,
-      y: points.hipsGap3.y + sa + 15
+      y: points.hipsGap3.y + sa + 15,
     })
     macro('ld', {
       from: points.waistGap3Right,
-      to: points.waistGap4Left
+      to: points.waistGap4Left,
     })
     macro('hd', {
       from: points.underbustGap3Right,
       to: points.underbustGap4Left,
-      y: points.underbustGap4Left.y - sa - 15
+      y: points.underbustGap4Left.y - sa - 15,
     })
     macro('vd', {
       from: points.hipsGap3,
       to: points.waistGap3Right,
-      x: points.hipsGap3.x - sa - 15
+      x: points.hipsGap3.x - sa - 15,
     })
     macro('vd', {
       from: points.waistGap3Right,
       to: points.underbustGap3Right,
-      x: points.hipsGap3.x - sa - 15
+      x: points.hipsGap3.x - sa - 15,
     })
     macro('vd', {
       from: points.hipsGap4,
       to: points.waistGap3Right,
-      x: points.hipsGap4.x + sa + 15
+      x: points.hipsGap4.x + sa + 15,
     })
     macro('vd', {
       from: points.waistGap3Right,
       to: points.underbustGap4Left,
-      x: points.hipsGap4.x + sa + 15
+      x: points.hipsGap4.x + sa + 15,
     })
   }
 

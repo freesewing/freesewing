@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'coats',
   type: 'pattern',
   difficulty: 5,
-  tags: ['top', 'jacket'],
   optionGroups: {
     fit: [
       'acrossBackFactor',
@@ -21,7 +20,7 @@ export default {
       'hipsEase',
       'lengthBonus',
       'shoulderEase',
-      'waistEase'
+      'waistEase',
     ],
     sleeves: ['sleeveBend', 'sleeveLengthBonus', 'sleeveVentLength', 'sleeveVentWidth'],
     advanced: [
@@ -33,7 +32,7 @@ export default {
       'sideFrontPlacement',
       'shoulderSlopeReduction',
       'sleevecapHeight',
-      'sleevecapEase'
+      'sleevecapEase',
     ],
     pockets: [
       'chestPocketDepth',
@@ -49,7 +48,7 @@ export default {
       'innerPocketWidth',
       'innerPocketDepth',
       'innerPocketWeltHeight',
-      'pocketFoldover'
+      'pocketFoldover',
     ],
     style: [
       'centerFrontHemDrop',
@@ -62,7 +61,7 @@ export default {
       'frontCutawayEnd',
       'hemRadius',
       'lapelStart',
-      'lapelReduction'
+      'lapelReduction',
     ],
     collar: [
       'collarSpread',
@@ -71,8 +70,8 @@ export default {
       'collarNotchAngle',
       'collarNotchReturn',
       'collarRoll',
-      'rollLineCollarHeight'
-    ]
+      'rollLineCollarHeight',
+    ],
   },
   measurements: [
     'biceps',
@@ -86,7 +85,7 @@ export default {
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -108,7 +107,7 @@ export default {
     innerPocketWelt: 'front',
     innerPocketBag: 'front',
     topSleeve: 'bentTopSleeve',
-    underSleeve: 'bentUnderSleeve'
+    underSleeve: 'bentUnderSleeve',
   },
   inject: {
     bentBack: 'bentBase',
@@ -125,7 +124,7 @@ export default {
     underCollar: 'collarStand',
     topSleeve: 'bentTopSleeve',
     underSleeve: 'bentUnderSleeve',
-    pocketLining: 'pocket'
+    pocketLining: 'pocket',
   },
   hide: [
     'bentBase',
@@ -135,7 +134,7 @@ export default {
     'bentTopSleeve',
     'bentUnderSleeve',
     'frontBase',
-    'backBase'
+    'backBase',
   ],
   options: {
     // Constants
@@ -143,6 +142,9 @@ export default {
     brianFitCollar: true,
     collarFactor: 4.8,
     chestShapingMax: 5,
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: 0,
+    s3Armhole: 0,
 
     // How the reduction of waist and hips is divided
     // Waist:
@@ -221,7 +223,7 @@ export default {
     collarNotchDepth: { pct: 15, min: 15, max: 50 },
     collarNotchAngle: { deg: 45, min: 30, max: 60 },
     collarNotchReturn: { pct: 100, min: 50, max: 100 },
-    collarRoll: { mm: 2.5, min: 0, max: 5 },
+    collarRoll: { pct: 5, min: 0, max: 10 },
 
     frontDartPlacement: { pct: 55, min: 45, max: 60 },
     sideFrontPlacement: { pct: 85, min: 80, max: 90 },
@@ -231,6 +233,9 @@ export default {
     shoulderSlopeReduction: { pct: 30, min: 0, max: 50 },
 
     buttonLength: { pct: 30, min: 30, max: 60 },
-    buttons: { count: 2, min: 1, max: 3 }
-  }
+    buttons: {
+      list: ['1', '2', '3'],
+      dflt: '2',
+    },
+  },
 }

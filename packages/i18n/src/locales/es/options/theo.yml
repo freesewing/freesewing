@@ -1,7 +1,7 @@
 ---
 wedge:
   title: Cuña
-  description: Controla la longitud de la costura transversal
+  description: Controla la longitud de la costura cruzada
 legWidth:
   title: Ancho de la pierna
   description: Controla la anchura de la pernera

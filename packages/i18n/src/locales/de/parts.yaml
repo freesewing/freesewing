@@ -1,5 +1,5 @@
 ---
-back: Rückseite
+back: Zurück
 backBase: Rückseite Basis
 base: Basis
 bentBack: Rückseite Bent
@@ -11,8 +11,8 @@ bentUnderSleeve: Unterarmel Bent
 buttonholePlacket: Knopflochleiste
 buttonPlacket: Knopfleiste
 collar: Kragen
-collarStand: Kragenstand
-cuff: Manschetten
+collarStand: Kragenstandplatz
+cuff: Manschette
 fabricTail: Stoffschwanz
 fabricTip: Stoffspitze
 frontBase: Vorderseite Basis
@@ -21,9 +21,10 @@ front: Vorderseite
 frontLeft: Vorne links
 frontLining: Futter vorderseite
 frontRight: Vorne rechts
-hoodCenter: Haubenmitte
-hood: Haube
-hoodSide: Haube Seite
+gusset: Gusset
+hoodCenter: Mitte der Kaputze
+hood: Kapuze
+hoodSide: Kaputzenseite
 inset: Einsatz
 interfacingTail: Einlageschwanz
 interfacingTip: Einlagespitze
@@ -38,19 +39,19 @@ panel5: Teil 5
 panel6: Teil 6
 panels: Teile
 pocketBag: Taschenbeutel
-pocketFacing: Taschenverkleidung
-pocketInterfacing: Tasheneinlage
+pocketFacing: Taschenbesatz
+pocketInterfacing: Tascheneinlage
 pocket: Tasche
-pocketWelt: Tasche Welt
+pocketWelt: Taschenpaspel
 side: Seite
 sleeveBase: Ärmel Basis
 sleevecap: Ärmelkappe
-sleevePlacketOverlap: Ärmelknopflänge oben
-sleevePlacketUnderlap: Ärmelknopflänge unter
+sleevePlacketOverlap: Übertritt der Ärmelleiste
+sleevePlacketUnderlap: Untertritt der Ärmelleiste
 sleeve: Ärmel
-topSleeve: Oberarmel
-top: Oben
+topSleeve: Oberärmel
+top: Oberteil
 underCollar: Unterkragen
-underSleeve: Unterarmel
+underSleeve: Unterärmel
 waistband: Bund
-yoke: Joch
+yoke: Passe

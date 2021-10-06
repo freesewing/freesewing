@@ -4,30 +4,30 @@ githubRepo: GitHub-Repository
 packageManager: Paket-Manager
 patternName: Schnittmuster-Name
 patternType: Schnittmuster-Art
-patternCreated: Ihr Schnittmusterskelet werde erstellt auf
-runTheseCommands: Um zu beginnen, führen Sie diese beiden Befehle aus
-startRollup: In einem Terminal starten Sie den Rollup-Bundle im Ansichtsmodus
-startWebpack: Und in einem anderen Terminal, starten Sie den webpack dev Server
+patternCreated: Dein Schnittmusterskelett wurde erstellt in
+runTheseCommands: Um loszulegen, führe diesen Befehl aus
+startRollup: In einem Terminal startest du den Rollup-Bundler im Beobachtungsmodus
+startWebpack: "Dadurch wird der 'example'-Ordner betreten und die Entwicklungsumgebung gestartet."
 devDocsAvailableAt: Entwicklerdokumentation ist verfügbar auf
-talkToUs: Für Fragen, Feedback oder Anregungen, kommen Sie in unserem Chatraum
-draftYourPattern: Zeichnen Sie Ihr Schnittmuster
-testYourPattern: Testen Sie Ihr Schnittmuster
-draftThing: 'Entwurf {thing}'
-testThing: 'Test {thing}'
-renderInBrowser: Klicken Sie unten, um Ihr Schnittmuster im Browser zu rendern.
-weWillReRender: Wenn Sie Änderungen vornehmen, werden wir wir es erneut für Sie rendern.
-youCan: Sie können
-enterMeasurements: Masse von Hand eingeben
-preloadMeasurements: Einen bestehenden Mustersatz einlesen
-size: Größe
-noRequiredMeasurements: Dieses Muster hat keine erforderlichen Masse
-howtoAddMeasurements: Um Masse als Anforderung zu definieren, fügen Sie sie in den <b>Masse-</b>Abschnitt der Konfigurationsdatei des Schnittmusters ein.
+talkToUs: Für Fragen, Feedback oder Anregungen trete unserem Discord-Server bei
+draftYourPattern: Zeichne dein Schnittmuster
+testYourPattern: Teste dein Schnittmuster
+draftThing: '{thing} erstellen'
+testThing: '{thing} testen'
+renderInBrowser: Klicke unten, um dein Schnittmuster im Browser zu rendern.
+weWillReRender: Wenn du Änderungen vornimmst, werden wir es erneut für dich rendern.
+youCan: Du kannst
+enterMeasurements: Maße von Hand eingeben
+preloadMeasurements: Einen bestehenden Satz an Maßen einlesen
+size: Grösse
+noRequiredMeasurements: Dieses Schnittmuster hat keine benötigten Maße
+howtoAddMeasurements: Um Maße als Anforderung zu definieren, füge sie der Sektion <b>measurements</b> in der Konfigurationsdatei des Schnittmusters hinzu.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter
-clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
+clearDesignMode: Designmodus leeren
+designMode: Designmodus
+exportMode: Exportmodus
+thingIsEnabled: '{thing} ist aktiviert'
+thingIsDisabled: '{thing} ist deaktiviert'
 turnOn: Aktivieren
 turnOff: Deaktivieren
-validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Namen des Schnittmusters als NPM-Paketname (wieder).\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enhalten.\nBitte benennen Sie ihr Muster also entsprechend, wie in etwa:"
+validNameWarning: "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir (wieder-)verwenden den Namen des Schnittmusters als NPM-Paketname.\nPaketnamen müssen in Kleinbuchstaben geschrieben sein und dürfen keine Sonderzeichen enthalten.\nBitte benenne dein Muster also entsprechend, wie in etwa:"

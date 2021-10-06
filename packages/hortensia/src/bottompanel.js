@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let w = store.get('bottomPanelLength')
@@ -40,7 +40,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'BottomPanel'
+      title: 'BottomPanel',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -51,7 +51,7 @@ export default function (part) {
     if (scaleBoxMove > 50 && w > 100) {
       points.scaleBox = points.logo.shift(90, scaleBoxMove)
       macro('scalebox', {
-        at: points.scaleBox
+        at: points.scaleBox,
       })
     }
 
@@ -65,12 +65,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

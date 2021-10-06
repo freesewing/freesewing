@@ -1,17 +1,6 @@
 export default (part) => {
-  let {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options
-  } = part.shorthand()
+  let { store, measurements, sa, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 
@@ -35,10 +24,11 @@ export default (part) => {
     .curve_(points.hipsCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-  if (front) paths.saBase.curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
-  else paths.saBase.curve_(points.neckCp2, points.cbNeck)
+  if (front) paths.saBase = paths.saBase.join(paths.frontArmhole)
+  else paths.saBase = paths.saBase.join(paths.backArmhole)
+  paths.saBase.line(points.s3CollarSplit)
+  if (front) paths.saBase = paths.saBase.join(paths.frontCollar)
+  else paths.saBase = paths.saBase.join(paths.backCollar)
   if (front) paths.hemBase = new Path().move(points.cfHem).line(points.hem)
   else paths.hemBase = new Path().move(points.cbHem).line(points.hem)
 
@@ -69,38 +59,38 @@ export default (part) => {
         .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
         .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: sa + 15
+      d: sa + 15,
     })
     macro('pd', {
       path: new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15
+      d: -15,
     })
     macro('vd', {
       from: points.hips,
       to: points.waist,
-      x: points.hips.x + sa + 15
+      x: points.hips.x + sa + 15,
     })
     macro('vd', {
       from: points.hips,
       to: points.armhole,
-      x: points.hips.x + sa + 30
+      x: points.hips.x + sa + 30,
     })
     macro('vd', {
       from: points.hips,
       to: points.armholePitch,
-      x: points.hips.x + sa + 45
+      x: points.hips.x + sa + 45,
     })
     macro('vd', {
       from: points.hips,
       to: points.shoulder,
-      x: points.hips.x + sa + 60
+      x: points.hips.x + sa + 60,
     })
     macro('vd', {
       from: points.hips,
       to: points.neck,
-      x: points.hips.x + sa + 75
+      x: points.hips.x + sa + 75,
     })
     macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
   }

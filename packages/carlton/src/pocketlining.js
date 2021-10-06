@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    options,
-    macro,
-    Point,
-    paths,
-    Path
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
@@ -20,14 +10,14 @@ export default function (part) {
       to: points.bottomRight,
       via: points.bottomLeft,
       radius: store.get('pocketRadius'),
-      prefix: 'roundLeft'
+      prefix: 'roundLeft',
     })
     macro('round', {
       from: points.bottomLeft,
       to: points.topRight,
       via: points.bottomRight,
       radius: store.get('pocketRadius'),
-      prefix: 'roundRight'
+      prefix: 'roundRight',
     })
 
     paths.seam = new Path()
@@ -49,12 +39,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 16,
-      title: 'pocketLining'
+      title: 'pocketLining',
     })
 
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10 + (store.get('pocketRadius') || 0)),
-      to: points.topLeft.shift(0, 10 + (store.get('pocketRadius') || 0))
+      to: points.topLeft.shift(0, 10 + (store.get('pocketRadius') || 0)),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
@@ -63,18 +53,18 @@ export default function (part) {
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topRight.y - sa - 15
+        y: points.topRight.y - sa - 15,
       })
       if (options.pocketRadius > 0) {
         macro('hd', {
           from: points.roundRightStart,
           to: points.roundRightEnd,
-          y: points.bottomRight.y + sa + 15
+          y: points.bottomRight.y + sa + 15,
         })
       }
     }

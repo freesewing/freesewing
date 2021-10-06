@@ -1,9 +1,10 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let { sa, Point, points, Path, paths, complete, paperless, macro, options } = part.shorthand()
+  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(0, width * 2.5)
@@ -40,8 +41,8 @@ export default (part) => {
         'placketBottomFold1',
         'placketBottomFold2',
         'cfNeck',
-        'cfHem'
-      ]
+        'cfHem',
+      ],
     })
 
     // Buttons
@@ -62,6 +63,31 @@ export default (part) => {
 
   // Paperless?
   if (paperless) {
+    macro('hd', {
+      from: points.hps,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.s3ArmholeSplit,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 30,
+    })
+    macro('hd', {
+      from: points.armhole,
+      to: points.placketTopEdge,
+      y: points.hps.y - sa - 45,
+    })
+    macro('vd', {
+      from: points.placketTopEdge,
+      to: points.s3CollarSplit,
+      x: points.placketTopEdge.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x + sa + 15,
+    })
   }
 
   return part

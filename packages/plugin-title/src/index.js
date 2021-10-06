@@ -10,7 +10,7 @@ export default {
         svg.attributes.set('freesewing:plugin-title', version)
         svg.style += style
       }
-    }
+    },
   },
   macros: {
     title: function (so) {
@@ -22,7 +22,7 @@ export default {
       }
       let defaults = {
         scale: 1,
-        rotation: 0
+        rotation: 0,
       }
       so = { ...defaults, ...so }
       let overwrite = true
@@ -73,6 +73,6 @@ export default {
           for (const txt of cut) this.points[cid].attr('data-text', txt)
         }
       }
-    }
-  }
+    },
+  },
 }

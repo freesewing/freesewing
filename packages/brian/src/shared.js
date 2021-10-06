@@ -1,21 +1,7 @@
-export function saBase(side, points, Path) {
-  let path = new Path()
-  if (side === 'back') path.move(points.cbHem)
-  else path.move(points.cfHem)
-  path
-    .line(points.hem)
-    .line(points.armhole)
-    .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-  if (side === 'back') {
-    path.curve(points.neckCp2, points.cbNeck, points.cbNeck)
-  } else {
-    path.curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
-  }
-
-  return path
+export function s3Notches(part, type) {
+  const { snippets, Snippet, points, options } = part.shorthand()
+  if (options.s3Armhole !== 0) snippets.shoulderNotch = new Snippet(type, points.shoulder)
+  if (options.s3Collar !== 0) snippets.collarNotch = new Snippet(type, points.hps)
 }
 
 export function armholeLength(points, Path) {
@@ -34,40 +20,39 @@ export function shoulderToArmholePitch(points, Path) {
     .length()
 }
 
-export function dimensions(macro, points, Path, sa) {
+export function dimensions(part, side) {
+  const { macro, points, Path, sa, paths } = part.shorthand()
   macro('pd', {
     path: new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-    d: sa + 15
+      .join(paths[`${side}Armhole`]),
+    d: sa + 15,
   })
   macro('pd', {
-    path: new Path()
-      .move(points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-    d: -15
+    path: paths[`${side}Armhole`],
+    d: -15,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.armhole,
-    x: points.hips.x + sa + 15
+    x: points.hips.x + sa + 15,
   })
   macro('vd', {
-    from: points.hips,
+    from: points.hem,
     to: points.armholePitch,
-    x: points.hips.x + sa + 30
+    x: points.hips.x + sa + 30,
   })
   macro('vd', {
-    from: points.hips,
-    to: points.shoulder,
-    x: points.hips.x + sa + 45
+    from: points.hem,
+    to: points.s3ArmholeSplit,
+    x: points.hips.x + sa + 45,
   })
   macro('vd', {
-    from: points.hips,
-    to: points.neck,
-    x: points.hips.x + sa + 60
+    from: points.hem,
+    to: points.s3CollarSplit,
+    x: points.hips.x + sa + 60,
   })
-  macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
+  macro('ld', { from: points.s3CollarSplit, to: points.s3ArmholeSplit, d: sa + 15 })
 }

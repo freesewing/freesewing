@@ -6,9 +6,9 @@ goreNumber:
   title: Aantal panden
   description: Het aantal panden dat gebruikt wordt om de halve bol op te bouwen
 brimAngle:
-  title: Hoek klep
-  description: Bepaalt de kromming van de klep
+  title: Brim angle
+  description: Controls the curvature of the brim
 brimWidth:
-  title: Breedte klep
-  description: Bepaalt de breedte van de klep
+  title: Brim width
+  description: Controls the width of the brim
 

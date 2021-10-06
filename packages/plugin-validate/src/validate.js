@@ -5,21 +5,21 @@ validate.point = function (point, partId, pointId, debug) {
     debug({
       type: 'error',
       label: 'Problem with point',
-      msg: points
+      msg: points,
     })
     throw new Error(`Point pattern.parts.${partId}.points.${pointId} is not an object`)
   } else if (typeof point.x !== 'number' || isNaN(point.x)) {
     debug({
       type: 'error',
       label: 'Problem with point X-value',
-      msg: points
+      msg: points,
     })
     throw new Error(`X-value of point pattern.parts.${partId}.points.${pointId} is not a number`)
   } else if (typeof point.y !== 'number' || isNaN(point.y)) {
     debug({
       type: 'error',
       label: 'Problem with point Y-value',
-      msg: points
+      msg: points,
     })
     debug(dbg, 'Problem with point Y-value:', point)
     throw new Error(`Y-value of point pattern.parts.${partId}.points.${pointId} is not a number`)
@@ -30,7 +30,7 @@ validate.point = function (point, partId, pointId, debug) {
     debug({
       type: 'error',
       label: 'Problem with point attributes',
-      msg: points
+      msg: points,
     })
     throw new Error(
       `attributes property of point pattern.parts.${partId}.points.${pointId} is not an object`
@@ -39,7 +39,7 @@ validate.point = function (point, partId, pointId, debug) {
     debug({
       type: 'error',
       label: 'Problem with point',
-      msg: points
+      msg: points,
     })
     throw new Error(`Point pattern.parts.${partId}.points.${pointId} is not a valid Point object`)
   }
@@ -55,7 +55,7 @@ validate.text = function (type, item, partId, itemId, debug) {
       debug({
         type: 'warning',
         label: '🌐 Possible translation issue',
-        msg: `This text might be a translation problem:, ${item} However, the error was suppresed, so moving on.`
+        msg: `This text might be a translation problem:, ${item} However, the error was suppresed, so moving on.`,
       })
       return true
     }
@@ -64,7 +64,7 @@ validate.text = function (type, item, partId, itemId, debug) {
         debug({
           type: 'error',
           label: 'This text is not a string or number',
-          msg: t
+          msg: t,
         })
         throw new Error(
           `${type} pattern.parts.${partId}.${type}s.${itemId} has text that is not a string nor a number. Set the 'data-validate-skip-text' attribute to true to suppress this error.`
@@ -73,12 +73,12 @@ validate.text = function (type, item, partId, itemId, debug) {
         debug({
           type: 'warning',
           label: '🌐 Possible translation issue',
-          msg: t
+          msg: t,
         })
         debug({
           type: 'info',
           label: '💡 Tip',
-          msg: `${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this warning.`
+          msg: `${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this warning.`,
         })
       }
     }
@@ -91,28 +91,28 @@ validate.path = function (path, partId, pathId, debug) {
     debug({
       type: 'error',
       label: 'Problem with path',
-      msg: path
+      msg: path,
     })
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} is not an object`)
   } else if (typeof path.ops !== 'object') {
     debug({
       type: 'error',
       label: 'Problem with path ops',
-      msg: path
+      msg: path,
     })
     throw new Error(`ops property of path pattern.parts.${partId}.paths.${pathId} is not an object`)
   } else if (path.ops.length < 2) {
     debug({
       type: 'error',
       label: 'Problem with path ops',
-      msg: path
+      msg: path,
     })
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} does not do anything`)
   } else if (typeof path.attributes !== 'object') {
     debug({
       type: 'error',
       label: 'Problem with path attributes',
-      msg: path
+      msg: path,
     })
     throw new Error(
       `attributes property of path pattern.parts.${partId}.paths.${pathId} is not an object`
@@ -121,14 +121,14 @@ validate.path = function (path, partId, pathId, debug) {
     debug({
       type: 'error',
       label: 'Problem with path',
-      msg: path
+      msg: path,
     })
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} is not a valid Path object`)
   } else if (!(path.attributes.clone instanceof Function)) {
     debug({
       type: 'error',
       label: 'Problem with path attributes',
-      msg: path
+      msg: path,
     })
     throw new Error(
       `attributes property of path pattern.parts.${partId}.paths.${pathId} is not a valid Attributes object`
@@ -141,7 +141,7 @@ validate.path = function (path, partId, pathId, debug) {
         debug({
           type: 'error',
           label: 'Problem with path TO point',
-          msg: op.to
+          msg: op.to,
         })
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].to is not a valid Point object`
@@ -152,7 +152,7 @@ validate.path = function (path, partId, pathId, debug) {
         debug({
           type: 'error',
           label: 'Problem with path CP1 point',
-          msg: op.cp1
+          msg: op.cp1,
         })
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].cp1 is not a valid Point object`
@@ -161,7 +161,7 @@ validate.path = function (path, partId, pathId, debug) {
         debug({
           type: 'error',
           label: 'Problem with path CP2 point',
-          msg: op.cp2
+          msg: op.cp2,
         })
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].cp2 is not a valid Point object`

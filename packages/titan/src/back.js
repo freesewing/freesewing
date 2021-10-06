@@ -25,7 +25,7 @@ export default (part) => {
           .move(points.floorOut)
           .line(points.kneeOut)
           .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
-          .curve_(points.seatOutCp2, points.waistOut)
+          .curve_(points.seatOutCp2, waistOut)
     } else {
       if (points.waistOut.x > points.seatOut.x)
         return new Path().move(points.floorOut).curve(points.kneeOutCp2, points.seatOut, waistOut)
@@ -76,10 +76,9 @@ export default (part) => {
       points.crossSeamCurveMax,
       options.crossSeamCurveBend
     )
-    points.crossSeamCurveCp2 = points.fork.shiftFractionTowards(
-      points.crossSeamCurveMax,
-      options.crossSeamCurveBend
-    )
+    points.crossSeamCurveCp2 = points.fork
+      .shiftFractionTowards(points.crossSeamCurveMax, options.crossSeamCurveBend)
+      .rotate(options.crossSeamCurveAngle, points.fork)
   }
 
   // Shorthand
@@ -97,7 +96,7 @@ export default (part) => {
     utils,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   // Let's get to work
@@ -158,7 +157,6 @@ export default (part) => {
   if (points.cbSeat.x < points.waistX.x) {
     let delta = points.cbSeat.dx(points.waistX)
     points.waistIn = points.waistX.shift(180, delta * (1 - options.waistBalance))
-    console.log('balancing waist', points.waistIn)
   } else points.waistIn = points.waistX
   let width = points.waistX.x
   points.waistOut = points.waistIn.shift(180, width)
@@ -193,10 +191,10 @@ export default (part) => {
   store.set('outseamBack', drawOutseam().length())
 
   // Only now style the waist lower if requested
-  if (options.waistHeight < 1) {
+  if (options.waistHeight < 1 || options.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam()
       .reverse()
-      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight))
+      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight) + options.waistbandWidth)
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,
       points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),
@@ -207,6 +205,8 @@ export default (part) => {
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()
   }
+  // Adapt the vertical placement of the seat control point to the lowered waist
+  points.seatOutCp2.y = points.seatOut.y - points.styleWaistOut.dy(points.seatOut) / 2
 
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
@@ -215,7 +215,7 @@ export default (part) => {
     points.grainlineTop.y = points.styleWaistOut.y
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
     macro('scalebox', { at: points.knee })
     points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.crossSeamCurveStart.y)
@@ -224,7 +224,7 @@ export default (part) => {
     macro('title', {
       nr: 1,
       title: 'back',
-      at: points.titleAnchor
+      at: points.titleAnchor,
     })
 
     if (sa) {
@@ -257,17 +257,17 @@ export default (part) => {
       macro('hd', {
         from: points.floorIn,
         to: points.floorOut,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
       macro('hd', {
         from: points.floorIn,
         to: points.floor,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floor,
         to: points.floorOut,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('vd', {
         from: points.floorOut,
@@ -275,58 +275,58 @@ export default (part) => {
         x:
           (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
           sa +
-          15
+          15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.fork,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 15
+        x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.floorIn,
         to: points.styleWaistIn,
-        x: points.fork.x - sa - 30
+        x: points.fork.x - sa - 30,
       })
       macro('vd', {
         from: points.crossSeamCurveStart,
         to: points.styleWaistIn,
-        x: points.crossSeamCurveStart.x - sa - 15
+        x: points.crossSeamCurveStart.x - sa - 15,
       })
       macro('hd', {
         from: points.styleWaistIn,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       macro('hd', {
         from: points.crossSeamCurveStart,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 30
+        y: points.styleWaistIn.y - sa - 30,
       })
       macro('hd', {
         from: points.crossSeamCurveMax,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 45
+        y: points.styleWaistIn.y - sa - 45,
       })
       macro('hd', {
         from: points.fork,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 60
+        y: points.styleWaistIn.y - sa - 60,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.styleWaistOut,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       if (points.seatOut.x > points.styleWaistOut.x) {
         macro('hd', {
           from: points.grainlineTop,
           to: points.seatOut,
-          y: points.styleWaistIn.y - sa - 30
+          y: points.styleWaistIn.y - sa - 30,
         })
       }
     }

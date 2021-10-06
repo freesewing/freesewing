@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let w = store.get('frontPanelLength')
@@ -43,7 +43,7 @@ export default function (part) {
     .attr('class', 'fabric')
 
   let pctHandleVert = options.pctHandleVert
-  let handleWidth = options.handleWidth
+  let handleWidth = options.width * options.handleWidth
   let handleSpace = (h - handleWidth * 2) * (options.pctHandleSpace / 100)
   if (handleSpace > options.maxHandleSpaceWidth) {
     handleSpace = options.maxHandleSpaceWidth
@@ -70,13 +70,13 @@ export default function (part) {
   macro('crossBox', {
     from: points.attachPoint1TL,
     to: points.attachPoint1BR,
-    text: 'attachment'
+    text: 'attachment',
   })
 
   macro('crossBox', {
     from: points.attachPoint2TL,
     to: points.attachPoint2BR,
-    text: 'attachment'
+    text: 'attachment',
   })
 
   // Complete?
@@ -88,7 +88,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 2,
-      title: 'FrontBackPanel'
+      title: 'FrontBackPanel',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -104,32 +104,32 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.attachPoint1TL,
-      y: points.attachPoint1TL.y
+      y: points.attachPoint1TL.y,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.attachPoint2TLtemp,
-      y: points.attachPoint2TLtemp.y
+      y: points.attachPoint2TLtemp.y,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
     macro('vd', {
       from: points.topLeft,
       to: points.attachPoint1TL,
-      x: points.attachPoint1TL.x
+      x: points.attachPoint1TL.x,
     })
     macro('vd', {
       from: points.attachPoint2TLtemp,
       to: points.bottomLeft,
-      x: points.attachPoint2TLtemp.x
+      x: points.attachPoint2TLtemp.x,
     })
   }
 

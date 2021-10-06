@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    sa,
-    paperless,
-    macro,
-    snippets,
-    Snippet
-  } = part.shorthand()
+  let { Point, points, Path, paths, complete, sa, paperless, macro, snippets, Snippet } =
+    part.shorthand()
 
   // Clean up inherited paths & snippets
   for (let id in paths) delete paths[id]
@@ -44,6 +34,10 @@ export default function (part) {
   paths.pocket = new Path().move(points[60]).line(points[61]).attr('class', 'lining lashed')
 
   // Complete pattern?
+  if (complete || paperless) {
+    points.grainlineTop = points[60].clone()
+    points.grainlineBottom = new Point(points.grainlineTop.x, points[810].y)
+  }
   if (complete) {
     if (sa) {
       paths.sa = paths.seam.offset(-1 * sa).attr('class', 'lining sa')
@@ -51,11 +45,9 @@ export default function (part) {
     }
     points.title = points.dartTip.clone()
     macro('title', { at: points.title, title: 'frontPocketBag', nr: 9 })
-    points.grainlineTop = points[60].clone()
-    points.grainlineBottom = new Point(points.grainlineTop.x, points[810].y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     points.logo = new Point(points[60].x, points[61].y)
     snippets.logo = new Snippet('logo', points.logo)
@@ -69,32 +61,32 @@ export default function (part) {
     macro('hd', {
       from: points[813],
       to: points[-8],
-      y: points.grainlineBottom.y + sa + 15
+      y: points.grainlineBottom.y + sa + 15,
     })
     macro('hd', {
       from: points[-40],
       to: points[-8],
-      y: points[-1102].y - sa - 15
+      y: points[-1102].y - sa - 15,
     })
     macro('hd', {
       from: points[-100101],
       to: points[-8],
-      y: points[-1102].y - sa - 30
+      y: points[-1102].y - sa - 30,
     })
     macro('vd', {
       from: points.grainlineBottom,
       to: points[-1102],
-      x: points[-8].x + sa + 15
+      x: points[-8].x + sa + 15,
     })
     macro('vd', {
       from: points.grainlineBottom,
       to: points[813],
-      x: points[813].x - sa - 15
+      x: points[813].x - sa - 15,
     })
     macro('vd', {
       from: points.grainlineBottom,
       to: points[-100101],
-      x: points[813].x - sa - 30
+      x: points[813].x - sa - 30,
     })
   }
 

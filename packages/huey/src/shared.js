@@ -12,71 +12,71 @@ export const sharedDimensions = function (part, s) {
   macro('hd', {
     from: points.cHem,
     to: points.hem,
-    y: points.cHem.y + 3 * sa + 15
+    y: points.cHem.y + 3 * sa + 15,
   })
   macro('ld', {
     from: new Point(0, points.armholePitch.y),
-    to: points.armholePitch
+    to: points.armholePitch,
   })
   macro('hd', {
     from: points.cNeck,
     to: points.neck,
-    y: points.neck.y - sa - 15
+    y: points.neck.y - sa - 15,
   })
   macro('hd', {
     from: points.cNeck,
     to: points.shoulder,
-    y: points.neck.y - sa - 30
+    y: points.neck.y - sa - 30,
   })
   macro('hd', {
     from: points.cNeck,
     to: points.armhole,
-    y: points.neck.y - sa - 45
+    y: points.neck.y - sa - 45,
   })
   macro('ld', {
     from: points.neck,
     to: points.shoulder,
-    d: -15
+    d: -15,
   })
   macro('vd', {
     from: points.hem,
     to: points.armhole,
-    x: points.armhole.x + sa + 15
+    x: points.armhole.x + sa + 15,
   })
   macro('vd', {
     from: points.armhole,
     to: points.armholePitch,
-    x: points.armhole.x + sa + 15
+    x: points.armhole.x + sa + 15,
   })
   macro('vd', {
     from: points.armholePitch,
     to: points.shoulder,
-    x: points.armhole.x + sa + 15
+    x: points.armhole.x + sa + 15,
   })
   macro('vd', {
     from: points.armhole,
     to: points.shoulder,
-    x: points.armhole.x + sa + 30
+    x: points.armhole.x + sa + 30,
   })
   macro('vd', {
     from: points.armhole,
     to: points.neck,
-    x: points.armhole.x + sa + 45
+    x: points.armhole.x + sa + 45,
   })
   macro('vd', {
     from: points.cNeck,
     to: points.neck,
-    x: points.cNeck.x - 15
+    x: points.cNeck.x - 15,
   })
   macro('vd', {
     from: points.cHem,
     to: points.cNeck,
-    x: points.cNeck.x - 15
+    x: points.cNeck.x - 15,
   })
   macro('vd', {
     from: points.cHem,
     to: points.neck,
-    x: points.cNeck.x - 30
+    x: points.cNeck.x - 30,
   })
 }
 
@@ -93,7 +93,7 @@ export const draftRibbing = function (part, length) {
     complete,
     paperless,
     macro,
-    units
+    units,
   } = part.shorthand()
   // Don't run this every time, except when sampling
   if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
@@ -151,7 +151,7 @@ export const draftRibbing = function (part, length) {
       from: points.bottomRight,
       to: points.topRight,
       x: points.topRight.x - 25,
-      text: units(length)
+      text: units(length),
     })
   }
 
@@ -159,7 +159,7 @@ export const draftRibbing = function (part, length) {
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topRight.y - sa - 15
+      y: points.topRight.y - sa - 15,
     })
   }
 }

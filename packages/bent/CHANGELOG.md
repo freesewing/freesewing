@@ -1,6 +1,18 @@
 # Change log for: @freesewing/bent
 
 
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

@@ -1,13 +1,17 @@
 {
   "name": "@freesewing/mui-theme",
-  "version": "2.14.0",
+  "version": "2.18.0",
   "description": "A Material-UI theme for FreeSewing web UIs",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
   },
   "keywords": [
     "freesewing",
@@ -27,9 +31,9 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.11.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@material-ui/core": "^4.11.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "dependencies": {},
   "devDependencies": {},

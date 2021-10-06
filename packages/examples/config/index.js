@@ -10,11 +10,11 @@ export default {
   difficulty: 1,
   tags: ['example'],
   optionGroups: {
-    fit: ['fixme']
+    fit: ['fixme'],
   },
   measurements: [],
   dependencies: {
-    point_attr: 'path_attr'
+    //point_attr: 'path_attr'
   },
   parts: [
     'point_attr',
@@ -43,11 +43,15 @@ export default {
     'path_start',
     'path_translate',
     'path_trim',
+    'plugin_bartack',
+    'plugin_bartackalong',
+    'plugin_bartackfractionalong',
     'plugin_buttons',
     'plugin_cutonfold',
     'plugin_dimension',
     'plugin_grainline',
     'plugin_logo',
+    'plugin_mirror',
     'plugin_round',
     'plugin_scalebox',
     'plugin_sprinkle',
@@ -77,6 +81,8 @@ export default {
     'snippets_notch',
     'snippets_button',
     'snippets_buttonhole',
+    'snippets_buttonhole_start',
+    'snippets_buttonhole_end',
     'snippets_snapsocket',
     'snippets_snapstud',
     'snippets_logo',
@@ -96,7 +102,7 @@ export default {
     'utils_curveintersectsx',
     'utils_splitcurve',
     'docs_overview',
-    'docs_coords'
+    'docs_coords',
   ],
   options: {
     focus: '',
@@ -104,7 +110,7 @@ export default {
     fixme: {
       pct: 50,
       min: 0,
-      max: 100
-    }
-  }
+      max: 100,
+    },
+  },
 }

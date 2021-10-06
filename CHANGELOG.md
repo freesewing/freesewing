@@ -1,6 +1,913 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### charlie
+
+#### Changed
+
+ - Changed the `waistbandWidth` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+
+### components
+
+#### Changed
+
+ - Added measurements for dolls & giants to Workbench measurments selector
+ - Added sampling for dolls & giants to Workbench tests
+
+### core
+
+#### Added
+
+ - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
+
+#### Changed
+
+ - Pattern.on() is now chainable as it returns the Pattern object
+
+### hortensia
+
+#### Changed
+
+ - Changed the `handleWidth` option type from `mm` to `pct`
+
+### jaeger
+
+#### Changed
+
+ - Changed the `collarRoll` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)
+
+### paco
+
+#### Changed
+
+ - Changed the `waistbandWidth` option type from `mm` to `pct`
+ - Changed the `ankleElastic` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
+
+### penelope
+
+#### Changed
+
+ - Changed the `hem` option type from `mm` to `pct`
+ - Changed the `waistBandWidth` option type from `mm` to `pct`
+ - Changed the `seatEase` option type from `mm` to `pct`
+ - Changed the `waistEase` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
+
+### simon
+
+#### Changed
+
+ - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketFoldWidth` option type from `mm` to `pct`
+ - Changed the `collarStandWidth` option type from `mm` to `pct`
+ - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatFold` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1319](https://github.com/freesewing/freesewing/issues/1319)
+
+### simone
+
+#### Changed
+
+ - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketFoldWidth` option type from `mm` to `pct`
+ - Changed the `collarStandWidth` option type from `mm` to `pct`
+ - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatFold` option type from `mm` to `pct`
+
+#### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
+ - Fix issue with armhole introduced with the S3 options in Brian Closes
+
+### snapseries
+
+#### Added
+
+ - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
+
+### theo
+
+#### Changed
+
+ - Added deprecation warning as we need to rewrite this pattern
+
+
+## 2.18.0 (2021-09-09)
+
+### core
+
+#### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
+### holmes
+
+#### Fixed
+
+ - The `brimWidth` option is not a percent option, allowing the pattern to scale properly
+
+### huey
+
+#### Fixed
+
+ - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
+
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
+### simon
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+### theo
+
+#### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+### wahid
+
+#### Fixed
+
+ - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+ - Support a zero value for the `backScyeDart` option
+
+### yuri
+
+#### Added
+
+ - Initial release of Yuri, a fancy zipless cardigan based on the Huey & Hugo hoodies
+
+
+## 2.17.4 (2021-08-20)
+
+### simon
+
+#### Fixed
+
+ - Fixed typo that caused paperless to error
+
+
+## 2.17.3 (2021-08-16)
+
+### i18n
+
+#### Added
+
+ - New translations
+
+### utils
+
+#### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
+
+
+## 2.17.2 (2021-08-15)
+
+### i18n
+
+#### Added
+
+ - Added new ffsa option for simon & simone
+
+### models
+
+#### Added
+
+ - Added the new `bustPointToUnderbust` measurement for future bikini pattern
+
+### simon
+
+#### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+### simone
+
+#### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+
+## 2.17.1 (2021-07-14)
+
+### core
+
+#### Fixed
+
+ - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
+
+
+## 2.17.0 (2021-07-01)
+
+### bent
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### brian
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### carlita
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### carlton
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### charlie
+
+#### Fixed
+
+ - Add `@freesewing/plugin-mirror` as peer dependency
+
+### components
+
+#### Added
+
+ - Added Reddit icon to Icon component
+ - Added Ursula linedrawing to Linedrawings
+
+#### Changed
+
+ - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
+ - Changed antman references to antperson
+
+#### Removed
+
+ - Removed Gitter icon from Icon component
+
+#### Fixed
+
+ - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
+
+### core
+
+#### Fixed
+
+ - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
+
+### diana
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
+### huey
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### hugo
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
+### i18n
+
+#### Changed
+
+ - Changed antman references to antperson
+
+### jaeger
+
+#### Changed
+
+ - Set brian `s3` options as constants
+
+### paco
+
+#### Fixed
+
+ - The waistband was incorrectly using the cuff widht See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+ - Only draft the cuff part when it's needed See [#1113](https://github.com/freesewing/freesewing/issues/1113)
+
+### plugin-bundle
+
+#### Changed
+
+ - Include plugin-buttons
+ - Include plugin-mirror
+
+### plugin-buttons
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### plugin-mirror
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### simon
+
+#### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+#### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
+### simone
+
+#### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+#### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
+### sven
+
+#### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+### tutorial
+
+#### Fixed
+
+ - Set department in the config to one of the newly accepted values
+
+### ursula
+
+#### Added
+
+ - Initial release of Ursula, a basic, highly-customizable underwear pattern
+
+
+## 2.16.2 (2021-05-05)
+
+### components
+
+#### Fixed
+
+ - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
+
+### create-freesewing-pattern
+
+#### Changed
+
+ - Added .gitignore file to the template
+ - Added eslint for linting
+
+### i18n
+
+#### Changed
+
+ - String updates
+
+
+## 2.16.1 (2021-05-30)
+
+### aaron
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### albert
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bella
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### benjamin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bent
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### breanna
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### brian
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### bruce
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### carlita
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### carlton
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### cathrin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### charlie
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### components
+
+#### Added
+
+ - Added a new `designs` icon
+ - We now publish .mjs files again for the different components
+
+### cornelius
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Don't list pattern as dependency in the example package.json
+
+### diana
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### florence
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### florent
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### holmes
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### hortensia
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### huey
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### hugo
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### i18n
+
+#### Added
+
+ - New translations for pattern filter
+
+### jaeger
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### paco
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### penelope
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### sandy
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### shin
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### simon
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### simone
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### sven
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### tamiko
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### teagan
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### theo
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### titan
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### trayvon
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### utils
+
+#### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
+
+### wahid
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+### waralee
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+
+## 2.16.0 (2021-05-24)
+
+### brian
+
+#### Fixed
+
+ - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
+
+### components
+
+#### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Changes to Workbench
+ - Added rollup sass plugin
+ - Updated for new major version of react-markdown
+
+### create-freesewing-pattern
+
+#### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Add react-intl as dependency
+ - Renamed template `default` to `freesewing`
+ - Use defaults for browserlist
+
+### css-theme
+
+#### Changed
+
+ - Changes to code styling
+
+### florent
+
+#### Fixed
+
+ - Add missing notches See [#1015](https://github.com/freesewing/freesewing/issues/1015)
+ - Removed inherited miniscale points
+
+### huey
+
+#### Fixed
+
+ - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
+
+### i18n
+
+#### Changed
+
+ - Changes to cfp strings
+
+### jaeger
+
+#### Fixed
+
+ - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+
+## 2.15.4 (2021-05-08)
+
+### bella
+
+#### Fixed
+
+ - Fixed incorrect part dependencies See [#1002](https://github.com/freesewing/freesewing/issues/1002)
+
+
+## 2.15.3 (2021-05-05)
+
+### shin
+
+#### Fixed
+
+ - Fixed issue where a legReduction of zero broke the draft See [#997](https://github.com/freesewing/freesewing/issues/997)
+
+
+## 2.15.2 (2021-04-28)
+
+### core
+
+#### Fixed
+
+ - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
+
+### jaeger
+
+#### Fixed
+
+ - Draft a third button when it's requested See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+
+## 2.15.1 (2021-04-24)
+
+### charlie
+
+#### Added
+
+ - Added a curved waistband option
+
+#### Fixed
+
+ - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options from being zero
+
+### core
+
+#### Fixed
+
+ - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
+
+### simon
+
+#### Added
+
+ - Added some dimensions to clarify the X value of shoulder/armhole points
+
+
+## 2.15.0 (2021-04-15)
+
+### bella
+
+#### Fixed
+
+ - Shoulder point control point fix for doll-sized clothes
+
+### charlie
+
+#### Added
+
+ - Inital release of the Charlie Chinos pattern
+
+### components
+
+#### Added
+
+ - Added charlie LineDrawing
+
+#### Changed
+
+ - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
+
+#### Fixed
+
+ - Always show design mode switch
+
+### core
+
+#### Added
+
+ - The part.getId() method now takes an optional prefix argument
+
+#### Changed
+
+ - Don't round coordinates internally to avoid path.split misses
+
+### cornelius
+
+#### Fixed
+
+ - Handle edge-case where splitting a path on and endpoint causes things to break
+
+### css-theme
+
+#### Added
+
+ - Added the path.bartack class
+
+#### Changed
+
+ - Removed old bartack styling for new plugin
+ - Better example styling to prevent UI jumping
+
+### examples
+
+#### Added
+
+ - Added examples for bartack plugin
+ - Added examples for new buttonhole-start/end snippets
+
+### i18n
+
+#### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
+### paco
+
+#### Changed
+
+ - Extended range and inreased default of the healEase option
+ - Added the (disabled) waistbandHeight option from Titan
+ - Changed to Titan's waistbandWidth option
+
+### pattern-info
+
+#### Added
+
+ - Added Charlie
+ - Info now also contains deprecated status
+
+### plugin-buttons
+
+#### Added
+
+ - Added the buttonhole-end snippet
+ - Added the buttonhole-start snippet
+
+### plugin-dimension
+
+#### Added
+
+ - Added the `rmad` macro
+
+### plugin-logo
+
+#### Added
+
+ - Render logo in currentColor to support dark mode
+
+### plugin-theme
+
+#### Added
+
+ - Added the path.bartack class
+
+### titan
+
+#### Added
+
+ - Added the waistbandHeight option
+ - Added the crossSeamCurveAngle option
+ - Added the crotchSeamCurveAngle option
+
+#### Changed
+
+ - Crotch- and Cross seam have been redrawn using the new angle options
+ - Added waistbandWidth option
+
+#### Fixed
+
+ - Adapt seat control point when waist is dropped below the hip line
+ - Removed lingering console.log statements
+ - Configure dependencies to guarantee draft order
+ - Always keep seat control point vertically between styled waist and seat
+ - Adapt the outseam to the dropped waist in all circumstances
+
+
 ## 2.14.0 (2021-03-07)
 
 ### components

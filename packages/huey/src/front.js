@@ -1,22 +1,13 @@
 import { sharedDimensions } from './shared'
 
 export default function (part) {
-  let {
-    utils,
-    store,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements
-  } = part.shorthand()
+  let { utils, store, Point, Path, points, paths, complete, paperless, sa, options, measurements } =
+    part.shorthand()
 
   // Clear paths from Brian
-  for (let p of Object.keys(paths)) delete paths[p]
+  for (let i in paths) {
+    if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
 
   // Shorten body to take ribbing into account
   if (options.ribbing) {
@@ -61,9 +52,9 @@ export default function (part) {
     .curve_(points.hemCp2, points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
     .line(points.cfHem)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).attr('class', 'note stroke-xxl')

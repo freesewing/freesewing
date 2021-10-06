@@ -1,10 +1,10 @@
 ---
 ribbing:
   title: Bündchen
-  description: Ob Saum und Manschetten mit Bündchen-Ware abschließen
+  description: Ob Saum und Manschetten mit Bündchen abschließen oder nicht.
 ribbingHeight:
-  title: Bündchen Höhe
+  title: Bündchen-Höhe
   description: Die Höhe der Bündchen
 ribbingStretch:
-  title: Bündchen Dehn
-  description: Bestimmt die negative Leichtigkeit der Bündchen
+  title: Bündchen-Elastizität
+  description: Die Menge an negativer Zugabe für die an Manschetten und Saum verwendeten Bündchen.

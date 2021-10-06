@@ -1,6 +1,25 @@
 # Change log for: @freesewing/penelope
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `hem` option type from `mm` to `pct`
+ - Changed the `waistBandWidth` option type from `mm` to `pct`
+ - Changed the `seatEase` option type from `mm` to `pct`
+ - Changed the `waistEase` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

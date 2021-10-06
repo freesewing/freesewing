@@ -82,7 +82,7 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
     'in1CFlipped',
     'ex1CFlipped',
     'ex2CFlipped',
-    'ex2Flipped'
+    'ex2Flipped',
   ])
     points[id + 'Rotated'] = points[id].rotate(rot, points.center)
 

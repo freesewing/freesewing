@@ -1,11 +1,11 @@
 ---
 advanced: Geavanceerd
-armhole: Armhole
+armhole: Harnas
 closure: Sluiting
 collar: Kraag
 construction: Constructie
 cuffs: Manchetten
-darts: Darts
+darts: Nepen
 elastic: Elastiek
 fit: Pasvorm
 pockets: Zakken
@@ -13,3 +13,7 @@ preferences: Voorkeuren
 sleevecap: Mouwkop
 sleeves: Mouwen
 style: Stijl
+backPockets: Achterzakken
+frontPockets: Voorzakken
+waistband: Tailleband
+fly: Vliegen

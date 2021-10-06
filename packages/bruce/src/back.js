@@ -13,7 +13,7 @@ export default function (part) {
     complete,
     paperless,
     macro,
-    utils
+    utils,
   } = part.shorthand()
 
   // Initialize
@@ -97,12 +97,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'back'
+      title: 'back',
     })
     macro('cutonfold', {
       from: points.center,
       to: points.gussetTop,
-      grainline: true
+      grainline: true,
     })
     snippets.logo = new Snippet('logo', points.title.shift(90, 50))
     snippets.backNotch = new Snippet(
@@ -116,42 +116,42 @@ export default function (part) {
     macro('vd', {
       from: points.gussetTop,
       to: points.center,
-      x: points.center.x - 15
+      x: points.center.x - 15,
     })
     macro('vd', {
       from: points.gussetRight,
       to: points.center,
-      x: points.center.x - 30
+      x: points.center.x - 30,
     })
     macro('vd', {
       from: points.legRight,
       to: points.sideRight,
-      x: points.legRight.x + 15 + sa
+      x: points.legRight.x + 15 + sa,
     })
     macro('vd', {
       from: points.legRight,
       to: points.center,
-      x: points.legRight.x + 30 + sa
+      x: points.legRight.x + 30 + sa,
     })
     macro('hd', {
       from: points.center,
       to: points.sideRight,
-      y: points.center.y - 15 - sa
+      y: points.center.y - 15 - sa,
     })
     macro('hd', {
       from: points.gussetTop,
       to: points.gussetRight,
-      y: points.gussetRight.y + 15 + sa * 2
+      y: points.gussetRight.y + 15 + sa * 2,
     })
     macro('hd', {
       from: points.gussetTop,
       to: points.legRight,
-      y: points.gussetRight.y + 30 + sa * 2
+      y: points.gussetRight.y + 30 + sa * 2,
     })
     macro('ld', {
       from: points.gussetRight,
       to: points.legRight,
-      d: -15 - sa * 2
+      d: -15 - sa * 2,
     })
   }
 

@@ -3,8 +3,8 @@ backOpening:
   title: Hintere Öffnung
   description: Steuert die Öffnung an der Rückseite der Schürze
 chestDepth:
-  title: Riemenlänge
-  description: Steuert die Riemenlänge
+  title: Länge des Riemens
+  description: Steuert die Länge der Riemen
 lengthBonus:
   title: Längenzugabe
   description: Steuert die Länge der Schürze
@@ -16,5 +16,5 @@ bibWidth:
   description: Steuert die Breite des Latzes
 strapWidth:
   title: Riemenbreite
-  description: Steuert die Riemenbreite
+  description: Steuert die Breite des Riemens
 

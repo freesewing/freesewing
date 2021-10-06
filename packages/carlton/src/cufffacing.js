@@ -13,14 +13,14 @@ export default function (part) {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: store.get('cuffRadius'),
-    prefix: 'roundLeft'
+    prefix: 'roundLeft',
   })
   macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: store.get('cuffRadius'),
-    prefix: 'roundRight'
+    prefix: 'roundRight',
   })
 
   paths.seam = new Path()
@@ -39,12 +39,12 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 9,
-      title: 'cuffFacing'
+      title: 'cuffFacing',
     })
 
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10 + store.get('cuffRadius')),
-      to: points.topLeft.shift(0, 10 + store.get('cuffRadius'))
+      to: points.topLeft.shift(0, 10 + store.get('cuffRadius')),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -53,22 +53,22 @@ export default function (part) {
       macro('vd', {
         from: points.roundRightStart,
         to: points.roundRightEnd,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
       macro('vd', {
         from: points.roundRightStart,
         to: points.topRight,
-        x: points.topRight.x + sa + 30
+        x: points.topRight.x + sa + 30,
       })
       macro('hd', {
         from: points.roundRightStart,
         to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 15
+        y: points.bottomRight.y + sa + 15,
       })
       macro('hd', {
         from: points.roundLeftStart,
         to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 30
+        y: points.bottomRight.y + sa + 30,
       })
     }
   }

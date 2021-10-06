@@ -9,39 +9,32 @@ const Event = ({ type, event }) => {
   const formatError = (err) => (
     <details>
       <summary>
-        <Markdown
-          source={`
+        <Markdown className="react-markdown dense">
+          {`
 \`\`\`js
 ${err.name}: ${err.message}
 \`\`\`
-`}
-          className="react-markdown dense"
-        />
+`}</Markdown>
       </summary>
-      <Markdown
-        source={`Error in \`${err.fileName}\` line \`${err.lineNumber}:${err.columnNumber}\``}
-        className="react-markdown"
-      />
-      <Markdown
-        source={`
+      <Markdown className="react-markdown">
+        {`Error in \`${err.fileName}\` line \`${err.lineNumber}:${err.columnNumber}\``}
+      </Markdown>
+      <Markdown className="react-markdown">
+        ={`
 \`\`\`js
 ${err.stack}
 \`\`\`
-`}
-        className="react-markdown"
-      />
+`}</Markdown>
     </details>
   )
 
   const formatObject = (obj) => (
-    <Markdown
+    <Markdown className="react-markdown">
       source={`
 \`\`\`json
 ${JSON.stringify(obj, null, 2)}
 \`\`\`
-`}
-      className="react-markdown"
-    />
+`}</Markdown>
   )
 
   const formatEvent = (e, data = false) => {
@@ -51,7 +44,7 @@ ${JSON.stringify(obj, null, 2)}
       else if (Array.isArray(e)) {
         for (const subevent of e) data.concat(formatEvent(subevent, data))
       } else data.push(formatObject(e))
-    } else data.push(<Markdown source={e} className="react-markdown" />)
+    } else data.push(<Markdown className="react-markdown">{e}</Markdown>)
 
     return data
   }

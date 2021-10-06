@@ -1,60 +1,60 @@
 ---
-accountRemoved: Konto entfernt
-accountRestricted: Konto eingeschränkt
+accountRemoved: Account entfernt
+accountRestricted: Account eingeschränkt
 avatar: Profilbild
-avatarInfo: Ihr Avatar oder Ihr Profilbild wird auf Ihrer Profilseite angezeigt.
+avatarInfo: Dein Avatar oder Profilbild wird auf deiner Profilseite angezeigt.
 avatarTitle: Stell dein Profilbild ein
 bio: Über mich
-bioInfo: Hier können Sie anderen Freesewing-Benutzern etwas über sich erzählen. Dieses Feld unterstützt MarkDown, sodass Sie auch Links einfügen können. Wenn Sie einen Blog haben, können Sie ihn hierher verlinken, damit andere ihn entdecken können.
+bioInfo: Hier kannst du anderen Freesewing-Benutzern etwas über dich erzählen. Dieses Feld unterstützt MarkDown, sodass du auch Links einfügen kannst. Wenn du einen Blog hast, kannst du ihn hier verlinken, damit andere ihn entdecken können.
 bioTitle: Schreibe eine kurze Biographie
 currentPassword: Derzeitiges Passwort
-email: E-mail-Addresse
-emailInfo: Die mit Ihrem Konto verknüpfte E-Mail-Adresse ist wichtig, da sie verwendet wird, um wieder Zugriff auf Ihr Konto zu erhalten, wenn Sie Ihr Passwort vergessen haben. Aus diesem Grund erfordert das Ändern Ihrer E-Mail-Adresse eine Bestätigung.
-emailTitle: Geben Sie die E-Mail-Adresse ein, die Sie mit diesem Konto verknüpfen möchten
-exportYourData: Exportieren Sie Ihre Daten
-exportYourDataInfo: Die Datenschutzgrundverordnung der EU (DSGVO) sichert Ihr sogenanntes Recht auf <em>Datenportabilität</em>. Dies ist das Recht dass Sie Ihre Daten an anderer Stelle verwenden können, wie Sie es möchten.
-exportYourDataTitle: Klicken Sie unten, um Ihre persönlichen Daten herunterzuladen
+email: E-Mail-Adresse
+emailInfo: Die mit deinem Account verknüpfte E-Mail-Adresse ist wichtig, da sie verwendet wird, um wieder Zugriff auf dein Konto zu erhalten, falls du dein Passwort vergessen solltest. Aus diesem Grund erfordert das Ändern deiner E-Mail-Adresse eine Bestätigung.
+emailTitle: Gib die E-Mail-Adresse ein, die du mit diesem Account verknüpfen möchtest
+exportYourData: Exportiere deine Daten
+exportYourDataInfo: Die Datenschutzgrundverordnung der EU (DSGVO) sichert dein sogenanntes Recht auf <em>Datenportabilität</em>. Dies ist dein Recht darauf, deine Daten zu erhalten und sie für deine eigenen Zwecke oder an anderer Stelle wiederzuverwenden.
+exportYourDataTitle: Klicke hier unten, um deine persönlichen Daten herunterzuladen
 github: Github
-githubInfo: Wenn Sie Ihren GitHub-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Github-Konto, sodass Besucher Ihre Code-Beiträge entdecken, Sie als Favoriten markieren oder Ihnen folgen können.
-githubTitle: Geben Sie Ihren Github-Benutzernamen ein
-instagramInfo: Wenn Sie Ihren Instagram-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Instagram-Konto, damit Besucher Ihre Bilder entdecken und Ihnen folgen können.
+githubInfo: Wenn du deinen GitHub-Benutzernamen angibst, enthält deine Profilseite einen Link zu deinem Github-Konto, sodass Besucher deine Beiträge zum Code entdecken, dich als Favoriten markieren oder dir folgen können.
+githubTitle: Gib deinen Github-Benutzernamen ein
+instagramInfo: Wenn du deinen Instagram-Benutzernamen angibst, enthält deine Profilseite einen Link zu deinem Instagram-Konto, damit Besucher deine Bilder entdecken und dir folgen können.
 instagram: Instagram
-instagramTitle: Geben Sie Ihren Instagram-Benutzernamen ein
-languageInfo: Diese Sprachauswahl bestimmt, in welcher Sprache Sie E-Mails vom Freesewing erhalten. Es bestimmt nicht die Sprache der Website, die auf jeder Seite ausgewählt werden kann
+instagramTitle: Gib deinen Instagram-Benutzernamen ein
+languageInfo: Diese Sprachauswahl bestimmt, in welcher Sprache du E-Mails von Freesewing erhältst. Es bestimmt nicht die Sprache der Website, die auf jeder Seite ausgewählt werden kann.
 language: Sprache
-languageTitle: Wählen Sie die Sprache aus
+languageTitle: Lege die Sprache deiner Wahl fest
 newPassword: Neues Passwort
 newsletter: Newsletter
-newsletterTitle: Would you like to receive the FreeSewing newsletter?
-newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
-passwordInfo: Das Ändern Ihres Passworts erfordert Ihr aktuelles Passwort. Füllen Sie das aus und geben Sie dann auch Ihr neues Passwort ein.
+newsletterTitle: Möchten Sie den FreeSewing Newsletter erhalten?
+newsletterInfo: Alle drei Monate versenden wir unseren Newsletter, gefüllt mit ehrlichen und wertvollen Inhalten. Kein Tracking, keine Werbung, kein Nonsens.
+passwordInfo: Das Ändern deines Passworts erfordert dein aktuelles Passwort. Gib dieses ein und gib danach auch dein neues Passwort ein.
 password: Passwort
-passwordTitle: Geben Sie Ihr aktuelles Passwort und Ihr neues Passwort ein
-patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Muster und unsere Community.
+passwordTitle: Gib dein aktuelles Passwort und dein neues Passwort ein
+patronInfo: Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.
 patron: Gönner
-removeYourAccountInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährt Ihnen das <em>Recht auf Datenlöschung</em>, dies bedeutet, dass Sie das Recht haben die Löschung Ihr persönlichen Daten zu verlangen.
-removeYourAccount: Entfernen Sie Ihr Konto
-removeYourAccountWarning: Dadurch werden Ihr Konto, Ihre Entwürfe, Ihre Modelle und alle Daten, die wir für Sie gespeichert haben, entfernt. Es gibt keinen Weg zurück.
-resetPasswordInfo: Geben Sie ein neues Passwort ein.
+removeYourAccountInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährt dir das <em>Recht auf Datenlöschung</em> — das Recht, die Löschung deiner persönlichen Daten zu verlangen.
+removeYourAccount: Entferne deinen Account
+removeYourAccountWarning: Dies wird deinen Account entfernen, mitsamt Entwürfen, Schnittmustern, Modellen und allen Daten, die wir für dich gespeichert haben. Es gibt keinen Weg zurück.
+resetPasswordInfo: Gib dein neues Passwort ein.
 resetPassword: Passwort zurücksetzen
-resetPasswordTitle: Geben Sie Ihr neues Passwort ein
-restrictProcessingOfYourDataInfo: Das Datenschutzgrubdverordnung (DSGVO) der EU gewährleistet, dass Ihr sogenanntes <em>Recht, die Verarbeitung zu beschränken</em> - das Recht, die Verarbeitung Ihrer Daten zu unterbinden.
-restrictProcessingOfYourData: Beschränken Sie die Verarbeitung Ihrer Daten
-restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird Sie jedoch abmelden und Ihr Konto einfrieren. Sie können die nicht selbst rückgängig machen. Wenn Sie den Zugriff auf Ihr Konto reaktivieren möchten, nehmen Sie bitte Kontakt mit uns auf.
-reviewYourConsent: Überprüfen Sie Ihre Zustimmung
-socialInfo: Wenn Sie Ihren GitHub-, Twitter- oder Instagram-Benutzernamen angeben, enthält Ihre Profilseite Links zu Ihren Konten auf diesen Websites. Dadurch können kostenlose Benutzer Sie dort verfolgen.<br>Wir kontaktieren keine dieser Seiten in Ihrem Namen. Dies ist nur so, dass Leute die Punkte verbinden können und wissen, dass zum Beispiel Benutzer @joost bei freesewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
-social: Sozial
+resetPasswordTitle: Gib dein neues Passwort ein
+restrictProcessingOfYourDataInfo: Die Datenschutzgrundverordnung (DSGVO) der EU gewährleistet dein sogenanntes <em>Recht auf Einschränkung der Verarbeitung</em> - das Recht, die Verarbeitung deiner Daten zu unterbinden.
+restrictProcessingOfYourData: Verarbeitung deiner Daten einschränken
+restrictProcessingWarning: Es werden zwar keine Daten gelöscht, dies wird dich jedoch abmelden und deinen Account einfrieren. Du kannst dies nicht selber rückgängig machen. Wenn du den Zugriff auf deinen Account reaktivieren möchtest, musst du uns kontaktieren.
+reviewYourConsent: Überprüfe deine Einwilligungen
+socialInfo: Wenn du deinen GitHub-, Twitter- oder Instagram-Benutzernamen angibst, enthält deine Profilseite Links zu deinen Konten auf diesen Websites. Dadurch können dir Nutzer von FreeSewing dort folgen.<br>Wir kontaktieren keine dieser Seiten in deinem Namen. Dies ist nur dafür da, damit sich andere Leute ein richtiges Bild machen können und wissen, dass zum Beispiel Benutzer @joost bei FreeSewing dieselbe Person ist wie Benutzer @j__st bei Twitter.
+social: Soziale Medien
 socialTitle: Lass die Leute dir anderswo folgen
-twitterInfo: Wenn Sie Ihren Twitter-Benutzernamen angeben, enthält Ihre Profilseite einen Link zu Ihrem Twitter-Account, sodass Besucher Ihre Tweets entdecken und Ihnen folgen können.
-twitterTitle: Geben Sie Ihren Twitter-Benutzernamen ein
+twitterInfo: Wenn du uns deinen Twitter-Benutzernamen angibst, enthält deine Profilseite einen Link zu deinem Twitter-Account, sodass Besucher deine Tweets entdecken und dir folgen können.
+twitterTitle: Gib deinen Twitter-Benutzernamen ein
 twitter: Twitter
-unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Masseinheiten.
-unitsTitle: Bitte wählen Sie die Masseinheit aus, mit der Sie am besten vertraut sind
-units: Masseinheiten
-usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Name oder oder <em>queenoffarts</em> oder was auch immer dir gefällt. Geben Sie einfach den gewünschten Benutzernamen ein.
-usernameTitle: Bitte wähle Deinen Benutzernamen
+unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Maßeinheiten.
+unitsTitle: Bitte wähle die Maßeinheit aus, mit der du am besten vertraut bist
+units: Maßeinheiten
+usernameInfo: Jeder beginnt mit einem zufälligen Benutzernamen. Das ist nicht sehr persönlich, also kannst du deinen Benutzernamen in etwas persönlicheres ändern, wie zum Beispiel deinen Namen, oder <em>queenoffarts</em>, oder was auch immer dir gefällt.
+usernameTitle: Bitte wähle deinen Benutzernamen
 username: Benutzername
-accountIsInactive: Ihr Benutzerkonto ist inaktiv
-accountNeedsActivation: Bevor Sie sich anmelden können, müssen Sie Ihr Konto aktivieren. Bitte überprüfen Sie Ihren Posteingang auf die Registrierungs-E-Mail und klicken Sie auf den Link in ihm.
-reloadAccount: Konto neu laden
-reloadAccountDescription: Dies wird Ihre Kontodaten aus dem Backend neu laden. Dies hat den gleichen Effekt wie ein Ausloggen und anschliessendes wieder Einloggen.
+accountIsInactive: Dein Account ist inaktiv
+accountNeedsActivation: Bevor du dch anmelden kannst, musst du deinen Account aktivieren. Bitte überprüfe deinen Posteingang auf die Registrierungs-E-Mail und klicke auf den enthaltenen Link.
+reloadAccount: Account neu laden
+reloadAccountDescription: Dies lädt deine Kontodaten neu aus dem Backend. Das hat den gleichen Effekt wie sich einmal ausloggen und dann wieder einloggen.

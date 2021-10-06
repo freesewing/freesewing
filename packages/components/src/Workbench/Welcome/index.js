@@ -8,8 +8,7 @@ const Welcome = props => {
     container: {
       textAlign: "center",
       maxWidth: "500px",
-      margin: "5vh auto",
-      minHeight: "65vh"
+      margin: "0 auto",
     },
     bigButton: {
       margin: "0.5rem",

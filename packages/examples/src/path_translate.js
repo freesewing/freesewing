@@ -16,12 +16,12 @@ export default (part) => {
   macro('ld', {
     from: points.B,
     to: points.step1,
-    noStartMarker: true
+    noStartMarker: true,
   })
   macro('ld', {
     from: points.step1,
     to: points.step2,
-    noStartMarker: true
+    noStartMarker: true,
   })
 
   return part

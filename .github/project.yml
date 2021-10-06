@@ -1,0 +1,28 @@
+name: Auto-assign to FreeSewing project
+
+on:
+  issues:
+    types: &types [opened, labeled]
+  pull_requests:
+    types: *types
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  assign_one_project:
+    runs-on: ubuntu-latest
+    name: Assign to FreeSewing Project
+    steps:
+    - name: Assign NEW issues and NEW pull requests to project 1
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened'
+      with:
+        project: 'https://github.com/orgs/freesewing/projects/1'
+        column_name: 'Open issues'
+
+    - name: Assign issues and pull requests with `bug` label to project 1
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened'
+      with:
+        project: 'https://github.com/orgs/freesewing/projects/1'
+        column_name: 'Open pull requests'

@@ -1,19 +1,20 @@
 export default (part) => {
-  let {
+  const {
     utils,
     sa,
     Point,
     points,
     Path,
     paths,
+    store,
     snippets,
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
-  let fold = options.buttonholePlacketFoldWidth
+  const fold = store.get('buttonholePlacketFoldWidth')
   points.neckEdge = utils.lineIntersectsCurve(
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y + 20),
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y - 20),
@@ -41,7 +42,7 @@ export default (part) => {
     points.edgeHips = new Point(points.neckEdge.x, points.hips.y)
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['edgeArmhole', 'edgeWaist', 'edgeHips']
+      on: ['edgeArmhole', 'edgeWaist', 'edgeHips'],
     })
     if (sa) {
       paths.saFromArmhole.end().x = points.neckEdge.x - sa
@@ -57,28 +58,33 @@ export default (part) => {
   if (paperless) {
     macro('hd', {
       from: points.neckEdge,
-      to: points.neck,
-      y: points.neck.y - sa - 15
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - sa - 15,
     })
     macro('hd', {
       from: points.neckEdge,
-      to: points.shoulder,
-      y: points.neck.y - sa - 30
+      to: points.s3ArmholeSplit,
+      y: points.s3CollarSplit.y - sa - 30,
+    })
+    macro('hd', {
+      from: points.neckEdge,
+      to: points.armhole,
+      y: points.s3CollarSplit.y - sa - 45,
     })
     macro('vd', {
       from: points.neckEdge,
-      to: points.neck,
-      x: points.neckEdge.x - sa - 15
+      to: points.s3CollarSplit,
+      x: points.neckEdge.x - sa - 15,
     })
     macro('vd', {
       from: points.hemEdge,
-      to: points.neck,
-      x: points.neckEdge.x - sa - 30
+      to: points.s3CollarSplit,
+      x: points.neckEdge.x - sa - 30,
     })
-    for (let pid of ['Armhole', 'Waist', 'Hips']) {
+    for (const pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
-        to: points[pid.toLowerCase()]
+        to: points[pid.toLowerCase()],
       })
     }
   }

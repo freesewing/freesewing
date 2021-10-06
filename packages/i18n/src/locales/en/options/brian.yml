@@ -34,6 +34,14 @@ lengthBonus:
   title: Length bonus
   description: The amount to lengthen the garment. A negative value will shorten it.
 
+s3Collar:
+  title: 'Shoulder seam shift: collar side'
+  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+
+s3Armhole:
+  title: 'Shoulder seam shift: armhole side'
+  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+
 shoulderEase:
   title: Shoulder ease
   description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.

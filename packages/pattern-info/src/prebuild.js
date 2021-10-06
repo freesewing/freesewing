@@ -12,6 +12,7 @@ const bruce = require('@freesewing/bruce').config
 const carlita = require('@freesewing/carlita').config
 const carlton = require('@freesewing/carlton').config
 const cathrin = require('@freesewing/cathrin').config
+const charlie = require('@freesewing/charlie').config
 const cornelius = require('@freesewing/cornelius').config
 const florent = require('@freesewing/florent').config
 const florence = require('@freesewing/florence').config
@@ -32,8 +33,10 @@ const teagan = require('@freesewing/teagan').config
 const theo = require('@freesewing/theo').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
+const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
 const waralee = require('@freesewing/waralee').config
+const yuri = require('@freesewing/yuri').config
 
 const patterns = {
   aaron,
@@ -48,6 +51,7 @@ const patterns = {
   carlita,
   carlton,
   cathrin,
+  charlie,
   cornelius,
   florent,
   florence,
@@ -68,8 +72,10 @@ const patterns = {
   theo,
   titan,
   trayvon,
+  ursula,
   wahid,
-  waralee
+  waralee,
+  yuri,
 }
 const patternOptions = (config) => {
   let all = []
@@ -136,7 +142,8 @@ for (let pattern of Object.keys(patterns)) {
     department: patterns[pattern].department,
     type: patterns[pattern].type,
     difficulty: patterns[pattern].difficulty,
-    tags: patterns[pattern].tags
+    tags: patterns[pattern].tags,
+    deprecated: patterns[pattern].deprecated || false,
   }
 }
 

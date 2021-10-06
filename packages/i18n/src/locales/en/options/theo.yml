@@ -1,7 +1,7 @@
 ---
 wedge:
   title: Wedge
-  description: Controls the length of the crossseam
+  description: Controls the length of the cross seam
 
 legWidth:
   title: Leg width

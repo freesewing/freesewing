@@ -12,7 +12,7 @@ export default (part) => {
     Point,
     options,
     utils,
-    store
+    store,
   } = part.shorthand()
 
   // Shoulder dart
@@ -189,88 +189,88 @@ export default (part) => {
     macro('vd', {
       from: points.cbWaist,
       to: points.cbNeck,
-      x: -15 - sa
+      x: -15 - sa,
     })
     if (options.waistDart) {
       let y = points.waist.y + 15 + sa
       macro('hd', {
         from: points.cbWaist,
         to: points.waistDart1,
-        y
+        y,
       })
       macro('hd', {
         from: points.cbWaist,
         to: points.waistDartEdge,
-        y: y + 15
+        y: y + 15,
       })
       macro('hd', {
         from: points.cbWaist,
         to: points.waistDart2,
-        y: y + 30
+        y: y + 30,
       })
       macro('hd', {
         from: points.cbWaist,
         to: points.waist,
-        y: y + 45
+        y: y + 45,
       })
       macro('hd', {
         from: points.cbWaist,
         to: points.armhole,
-        y: y + 60
+        y: y + 60,
       })
       macro('vd', {
         from: points.waistDart2,
         to: points.waistDartTip,
-        x: points.waistDart2.x + 15
+        x: points.waistDart2.x + 15,
       })
     } else {
       let y = points.waist.y + 15 + sa
       macro('hd', {
         from: points.cbWaist,
         to: points.waist,
-        y: points.waist.y + 15 + sa
+        y: points.waist.y + 15 + sa,
       })
       macro('hd', {
         from: points.cbWaist,
         to: points.armhole,
-        y: y + 30
+        y: y + 30,
       })
     }
     let x = points.armhole.x + 15 + sa
     macro('vd', {
       from: points.waist,
       to: points.armhole,
-      x
+      x,
     })
     macro('vd', {
       from: points.waist,
       to: points.armholePitch,
-      x: x + 15
+      x: x + 15,
     })
     macro('vd', {
       from: points.waist,
       to: points.shoulder,
-      x: x + 30
+      x: x + 30,
     })
     macro('vd', {
       from: points.waist,
       to: points.hps,
-      x: x + 45
+      x: x + 45,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.armholePitch,
-      y: points.armholePitch.y + 25
+      y: points.armholePitch.y + 25,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.hps,
-      y: points.hps.y - sa - 15
+      y: points.hps.y - sa - 15,
     })
     macro('hd', {
       from: points.cbNeck,
       to: points.shoulder,
-      y: points.hps.y - sa - 30
+      y: points.hps.y - sa - 30,
     })
   }
 

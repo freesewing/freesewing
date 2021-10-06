@@ -16,7 +16,7 @@ export default function Pattern(config = { options: {} }) {
     info: [],
     warning: [],
     error: [],
-    debug: []
+    debug: [],
   }
   const events = this.events
   this.raise = {
@@ -31,7 +31,7 @@ export default function Pattern(config = { options: {} }) {
     },
     debug: function (data) {
       events.debug.push(data)
-    }
+    },
   }
   this.raise.debug(
     `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
@@ -60,7 +60,8 @@ export default function Pattern(config = { options: {} }) {
     margin: 2,
     layout: true,
     debug: true,
-    options: {}
+    options: {},
+    absoluteOptions: {},
   }
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
@@ -100,7 +101,7 @@ export default function Pattern(config = { options: {} }) {
     store: this.store,
     macros: this.macros,
     events: this.events,
-    raise: this.raise
+    raise: this.raise,
   }
 
   // Part closure
@@ -114,6 +115,37 @@ export default function Pattern(config = { options: {} }) {
 
     return part
   }
+}
+
+function snappedOption(option, pattern) {
+  const conf = pattern.config.options[option]
+  const abs = conf.toAbs(pattern.settings.options[option], pattern.settings)
+  // Handle units-specific config
+  if (
+    !Array.isArray(conf.snap) &&
+    conf.snap.metric &&
+    conf.snap.imperial
+  ) conf.snap = conf.snap[pattern.settings.units]
+  // Simple steps
+  if (typeof conf.snap === 'number') return Math.ceil(abs / conf.snap) * conf.snap
+  // List of snaps
+  if (Array.isArray(conf.snap) && conf.snap.length > 1) {
+    for (const snap of conf.snap.sort((a, b) => a - b).map((snap, i) => {
+      const margin = (i < (conf.snap.length - 1))
+        ? (conf.snap[Number(i) + 1] - snap) / 2 // Look forward
+        : (snap - conf.snap[i - 1]) / 2 // Final snap, look backward
+
+      return {
+        min: snap - margin,
+        max: snap + Number(margin),
+        snap,
+      }
+    })) if (abs < snap.max && abs >= snap.min) return snap.snap
+  }
+  // If we end up here, the snap config is wrong
+  pattern.raise.warning(`Invalid snap config for option ${option}`)
+
+  return abs
 }
 
 // Merges settings object with this.settings
@@ -130,7 +162,7 @@ Pattern.prototype.apply = function (settings) {
     } else if (typeof settings[key] === 'object') {
       this.settings[key] = {
         ...this.settings[key],
-        ...settings[key]
+        ...settings[key],
       }
     } else this.settings[key] = settings[key]
   }
@@ -158,6 +190,18 @@ Pattern.prototype.draft = function () {
     this.is = 'draft'
     if (this.debug) this.raise.debug(`Drafting pattern`)
   }
+  // Handle snap for pct options
+  for (let i in this.settings.options) {
+    if (
+      typeof this.config.options[i] !== 'undefined' &&
+      typeof this.config.options[i].snap !== 'undefined' &&
+      this.config.options[i].toAbs instanceof Function
+    ) {
+        let abs = this.config.options[i].toAbs(this.settings.options[i], this.settings)
+        this.settings.absoluteOptions[i] = snappedOption(i, this)
+    }
+  }
+
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
     if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
@@ -172,7 +216,7 @@ Pattern.prototype.draft = function () {
       } catch (err) {
         this.raise.error([
           `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
-          err
+          err,
         ])
       }
     }
@@ -387,6 +431,8 @@ Pattern.prototype.render = function () {
 
 Pattern.prototype.on = function (hook, method, data) {
   this.hooks[hook].push({ method, data })
+
+  return this
 }
 
 Pattern.prototype.use = function (plugin, data) {
@@ -540,13 +586,11 @@ Pattern.prototype.resolveDependency = function (
   deps = []
 ) {
   if (typeof seen[part] === 'undefined') seen[part] = true
-  if (typeof graph[part] === 'string') {
-    if (deps.indexOf(graph[part]) === -1) deps.push(graph[part])
-    return this.resolveDependency(seen, graph[part], graph, deps)
-  } else if (Array.isArray(graph[part])) {
+  if (typeof graph[part] === 'string') graph[part] = [graph[part]]
+  if (Array.isArray(graph[part])) {
     if (graph[part].length === 0) return []
     else {
-      if (deps.length === 0) deps = graph[part]
+      if (deps.indexOf(graph[part]) === -1) deps.push(...graph[part])
       for (let apart of graph[part]) deps.concat(this.resolveDependency(seen, apart, graph, deps))
     }
   }
@@ -663,7 +707,7 @@ Pattern.prototype.getRenderProps = function () {
     debug: this.events.debug,
     info: this.events.info,
     warning: this.events.warning,
-    error: this.events.error
+    error: this.events.error,
   }
   props.parts = {}
   for (let p in this.parts) {
@@ -676,7 +720,7 @@ Pattern.prototype.getRenderProps = function () {
         height: this.parts[p].height,
         width: this.parts[p].width,
         bottomRight: this.parts[p].bottomRight,
-        topLeft: this.parts[p].topLeft
+        topLeft: this.parts[p].topLeft,
       }
     }
   }

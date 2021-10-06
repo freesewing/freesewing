@@ -6,9 +6,9 @@ goreNumber:
   title: Nombre de pans
   description: Le nombre de pans utilisés pour construire la semi-sphère
 brimAngle:
-  title: Angle des visières
-  description: Contrôle l'angle de courbure des visières
+  title: Brim angle
+  description: Controls the curvature of the brim
 brimWidth:
-  title: Largeur des visières
-  description: Contrôle la largeur des visières
+  title: Brim width
+  description: Controls the width of the brim
 

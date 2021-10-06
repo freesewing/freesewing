@@ -1,21 +1,11 @@
 import { addButtonHoles } from './shared'
 
 export default (part) => {
-  let {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options
-  } = part.shorthand()
+  const { store, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
+    part.shorthand()
 
-  let fold = options.buttonholePlacketFoldWidth
-  let width = options.buttonholePlacketWidth
+  const fold = store.get('buttonholePlacketFoldWidth')
+  const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck.shift(180, fold * 2)
   points.placketTopInnerEdgeFold = points.placketCfNeck.shift(0, width / 2)
   points.placketTopInnerEdgeOver = points.placketCfNeck.shift(0, width / 2 - fold)
@@ -90,8 +80,8 @@ export default (part) => {
         'placketBottomInnerEdgeUnder',
         'placketBottomOuterEdgeFold',
         'placketBottomOuterEdgeOver',
-        'placketBottomOuterEdgeUnder'
-      ]
+        'placketBottomOuterEdgeUnder',
+      ],
     })
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
@@ -116,57 +106,64 @@ export default (part) => {
   if (paperless) {
     macro('hd', {
       from: points.placketEdgeArmhole,
-      to: points.armhole
+      to: points.armhole,
     })
     macro('hd', {
       from: points.placketEdgeWaist,
-      to: points.waist
+      to: points.waist,
     })
     macro('hd', {
       from: points.placketEdgeHips,
-      to: points.hips
+      to: points.hips,
     })
     let offset = 0
-    for (let pid of [
+    for (const pid of [
       'placketTopOuterEdgeUnder',
       'placketTopOuterEdgeFold',
       'placketTopOuterEdgeOver',
       'placketCfNeck',
       'placketTopInnerEdgeOver',
       'placketTopInnerEdgeFold',
-      'placketTopInnerEdgeUnder'
+      'placketTopInnerEdgeUnder',
     ]) {
       offset += 15
       macro('hd', {
         from: points.placketTopEdge,
         to: points[pid],
-        y: points.placketTopEdge.y - offset - sa
+        y: points.placketTopEdge.y - offset - sa,
       })
     }
     macro('hd', {
       from: points.placketTopEdge,
-      to: points.neck,
-      y: points.placketTopEdge.y - offset - sa - 15
+      to: points.s3CollarSplit,
+      y: points.placketTopEdge.y - offset - sa - 15,
     })
     macro('hd', {
       from: points.placketTopEdge,
-      to: points.shoulder,
-      y: points.placketTopEdge.y - offset - sa - 30
+      to: points.s3ArmholeSplit,
+      y: points.placketTopEdge.y - offset - sa - 30,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x - 15
-      })
+    macro('hd', {
+      from: points.placketTopEdge,
+      to: points.armhole,
+      y: points.placketTopEdge.y - offset - sa - 45,
+    })
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x - 15,
+        })
+      }
     }
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30
+      x: points.placketTopEdge.x - 30,
     })
   }
   return part

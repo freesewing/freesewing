@@ -1,6 +1,36 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.17.1 (2021-07-14)
+
+### Fixed
+
+ - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
+
+## 2.16.2 (2021-05-05)
+
+### Changed
+
+ - Added .gitignore file to the template
+ - Added eslint for linting
+
+## 2.16.1 (2021-05-30)
+
+### Fixed
+
+ - Don't list pattern as dependency in the example package.json
+
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Add react-intl as dependency
+ - Renamed template `default` to `freesewing`
+ - Use defaults for browserlist
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

@@ -1,41 +1,41 @@
 ---
 shoulderDart:
   title: Schulterabnäher
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  description: Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 shoulderDartSize:
-  title: Grösse der Schulterabnäher
-  description: The size of the shoulder dart
+  title: Größe der Schulterabnäher
+  description: Größe des Schulterabnähers
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Länge des Schulterabnähers
+  description: Die Länge des Abnähers an der Schulter
 waistDart:
-  title: Hüftabnäher
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Taillenabnäher
+  description: Ob ein Abnäher an der Taille zur Abrundung des Rückens hinzugefügt werden soll oder nicht
 waistDartSize:
-  title: Grösse der Hüftabnäher
-  description: The size of the waist dart
+  title: Größe des Taillenabnähers
+  description: Die Größe des Abnähers an der Taille
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Länge des Taillenabnähers
+  description: Die Länge des Abnähers an der Taille
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  title: Vertikale Zugabe
+  description: Die Menge an Zugabe, die über die Länge des Kleidungsstückes verteilt wird
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  title: Taillenzugabe
+  description: Die Menge an Bequemlichkeits-/Bewegungszugabe an der Taille
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  title: Brustabnäher
+  description: Wo der Büstendart platziert wird, um die Brust zu formen
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Länge des Brustabnähers
+  description: Die Länge des Abnähers an der Brust
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  title: Sekundärer Brustabnäher
+  description: Optional einen sekundären Büstendart zur Verteilung der Form der Brust
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Länge des sekundären Brustabnähers
+  description: Die Länge des sekundären Abnähers an der Brust
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Formgebung der Brustabnäher
+  description: Steuert die Balance zwischen den sekundären und den Hauptbrustabnähern
 

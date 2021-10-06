@@ -1,22 +1,11 @@
 export default function (part) {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { utils, store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+    part.shorthand()
 
   points.topLeft = new Point(0, 0)
-  points.midLeft = new Point(0, options.ankleElastic + 1)
-  points.bottomLeft = new Point(0, options.ankleElastic * 2 + 2)
-  points.eyeletLeft = new Point(20, options.ankleElastic / 2)
+  points.midLeft = new Point(0, store.get('waistbandWidth'))
+  points.bottomLeft = new Point(0, store.get('waistbandWidth') * 2)
+  points.eyeletLeft = new Point(20, store.get('waistbandWidth') / 2)
   points.eyeletRight = points.eyeletLeft.shift(0, 120)
 
   points.midTopLeft = points.topLeft.shift(0, 60)
@@ -50,7 +39,7 @@ export default function (part) {
     from: points.midLeft,
     to: points.midRight,
     y: points.midRight.y + 25,
-    text: utils.units(store.get('frontWaist') + store.get('backWaist'))
+    text: utils.units(store.get('frontWaist') + store.get('backWaist')),
   })
 
   if (complete) {
@@ -60,11 +49,11 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'waistband'
+      title: 'waistband',
     })
     macro('grainline', {
       from: points.topLeft.shift(0, 15),
-      to: points.bottomLeft.shift(0, 15)
+      to: points.bottomLeft.shift(0, 15),
     })
     macro('sprinkle', { snippet: 'eyelet', on: ['eyeletLeft', 'eyeletRight'] })
     macro('sprinkle', { snippet: 'notch', on: ['midLeft', 'midRight'] })
@@ -89,7 +78,7 @@ export default function (part) {
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
     }
   }

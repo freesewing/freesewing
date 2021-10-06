@@ -12,7 +12,7 @@ export default function (part) {
     macro,
     utils,
     measurements,
-    raise
+    raise,
   } = part.shorthand()
 
   // Get to work
@@ -106,6 +106,10 @@ export default function (part) {
     options.backArmholeCurvature
   )
   points.armholePitchCp2 = points.armholePitchCp1.rotate(180, points.armholePitch)
+  // Dolls need clothes too
+  if (points.armholePitchCp2.y < points.shoulder.y) {
+    points.armholePitchCp2.y = points.shoulder.y + points.shoulder.dy(points.armholePitch) / 2
+  }
 
   // Store the back width at bust level
   points.bustSide = utils.curveIntersectsY(
@@ -182,15 +186,15 @@ export default function (part) {
     macro('title', {
       nr: 2,
       title: 'back',
-      at: points.titleAnchor
+      at: points.titleAnchor,
     })
     macro('grainline', {
       from: new Point(points.hps.x / 2, points.shoulder.y),
-      to: new Point(points.hps.x / 2, points.waistSide.y)
+      to: new Point(points.hps.x / 2, points.waistSide.y),
     })
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['armholePitch', 'bustCenter']
+      on: ['armholePitch', 'bustCenter'],
     })
 
     if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
@@ -199,92 +203,92 @@ export default function (part) {
       macro('vd', {
         from: points.waistCenter,
         to: points.dartTip,
-        x: points.cbNeck.x - sa - 15
+        x: points.cbNeck.x - sa - 15,
       })
       macro('vd', {
         from: points.waistCenter,
         to: points.cbNeck,
-        x: points.cbNeck.x - sa - 30
+        x: points.cbNeck.x - sa - 30,
       })
       macro('vd', {
         from: points.waistCenter,
         to: points.hps,
-        x: points.cbNeck.x - sa - 45
+        x: points.cbNeck.x - sa - 45,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.waistCenter,
-        y: points.waistCenter.y + sa + 15
+        y: points.waistCenter.y + sa + 15,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.dartBottomLeft,
-        y: points.waistCenter.y + sa + 30
+        y: points.waistCenter.y + sa + 30,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.dartBottomRight,
-        y: points.waistCenter.y + sa + 45
+        y: points.waistCenter.y + sa + 45,
       })
       macro('hd', {
         from: points.dartBottomLeft,
         to: points.dartBottomRight,
-        y: points.waistCenter.y + sa + 15
+        y: points.waistCenter.y + sa + 15,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.waistSide,
-        y: points.waistCenter.y + sa + 60
+        y: points.waistCenter.y + sa + 60,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.armhole,
-        y: points.waistCenter.y + sa + 75
+        y: points.waistCenter.y + sa + 75,
       })
       macro('vd', {
         from: points.waistSide,
         to: points.armhole,
-        x: points.armhole.x + sa + 15
+        x: points.armhole.x + sa + 15,
       })
       macro('vd', {
         from: points.waistSide,
         to: points.armholePitch,
-        x: points.armhole.x + sa + 30
+        x: points.armhole.x + sa + 30,
       })
       macro('vd', {
         from: points.waistSide,
         to: points.shoulder,
-        x: points.armhole.x + sa + 45
+        x: points.armhole.x + sa + 45,
       })
       macro('vd', {
         from: points.waistSide,
         to: points.hps,
-        x: points.armhole.x + sa + 60
+        x: points.armhole.x + sa + 60,
       })
       macro('vd', {
         from: points.waistCenter,
         to: points.waistSide,
-        x: points.waistSide.x + sa + 15
+        x: points.waistSide.x + sa + 15,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.hps,
-        y: points.hps.y - sa - 15
+        y: points.hps.y - sa - 15,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.armholePitch,
-        y: points.hps.y - sa - 30
+        y: points.hps.y - sa - 30,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.shoulder,
-        y: points.hps.y - sa - 45
+        y: points.hps.y - sa - 45,
       })
       macro('hd', {
         from: points.cbNeck,
         to: points.armhole,
-        y: points.hps.y - sa - 60
+        y: points.hps.y - sa - 60,
       })
     }
   }

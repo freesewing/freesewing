@@ -1,25 +1,32 @@
-##### Next contributor call: Saturday 6 March
+##### FreeSewing v3 is coming
 
-Note that the next contributor call is on Saturday the 6th of March.
+Over the summer, Joost started working on *project 2022*, an effort to
+migrate the FreeSewing websites (freesewing.org and freesewing.dev) from
+GatbsyJS to NextJS, and in the process consolidate and streamline our various repositories.
 
-For details and timing (including different time zones) 
-check [issue #878](https://github.com/freesewing/freesewing/issues/878).
+Before long, it became clear that there are going to be too many major changes not to bump
+the major version.
 
+Take a look at our new development blog, which you can read at [2022.freesewing.dev/blog](https://2022.freesewing.dev/blog), and the [FreeSewing v3 Roadmap](https://github.com/freesewing/freesewing/discussions/1278).
 
-##### Project board: Our overall todo list
-
-Did you know we have a project board that list all of our issues?
-It's a great place to see what we're working on, or what you could help with.
-
-Go to [todo.freesewing.org](https://todo.freesewing.org/) to get there.
+If you'd like to get involved in this effort, head over to [discord.freesewing.org](https://discord.freesewing.org/) and join the **v3** channel.
 
 
-##### Updated developer documentation
+##### Next contributor call on 2 October
 
-We've give [freesewing.dev](https://freesewing.dev/), our websites for
-developers, a bit of a face-lift to bring it in line with recent changes
-on [freesewing.org](https://freesewing.org/), our website for makers.
+The next contributor call is on **2 October 2021**, Lucian and Karen will host it.
 
-If you find anything lacking or broken, please don't hesitate
-to [create an issue](https://github.com/freesewing/freesewing/issues/new).
+There will also be a [developer call](https://github.com/freesewing/freesewing/issues/1352) 30 minutes prior.
 
+The call is on [discord.freesewing.org](https://discord.freesewing.org/).
+Check the meetings voice/video channel.
+
+
+##### Summertime: Things are a bit slower
+
+Things are [a bit slower during the summertime](https://github.com/freesewing/freesewing/discussions/1139) but
+on the plus side, we're looking into playing DnD together.
+
+Join [discord.freesewing.org](https://discord.freesewing.org/) for more info.
+
+There's also a `v3` channel there with info on some future stuff we're working on.

@@ -42,28 +42,28 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'brimInterfacing'
+      title: 'brimInterfacing',
     })
     macro('grainline', {
       from: points.outerMid,
-      to: points.innerMid
+      to: points.innerMid,
     })
 
     if (paperless) {
       macro('hd', {
         from: paths.seam.edge('left'),
         to: paths.seam.edge('right'),
-        y: points.tipLeft.y - sa - 15
+        y: points.tipLeft.y - sa - 15,
       })
       macro('vd', {
         from: paths.outset.edge('bottom'),
         to: paths.inset.edge('bottom'),
-        x: points.innerMid.x - 15
+        x: points.innerMid.x - 15,
       })
       macro('vd', {
         from: paths.outset.edge('bottom'),
         to: paths.inset.edge('topRight'),
-        x: points.tipRight.x + sa + 18
+        x: points.tipRight.x + sa + 18,
       })
     }
   }

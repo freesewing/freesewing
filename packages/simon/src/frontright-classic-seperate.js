@@ -1,18 +1,8 @@
 export default (part) => {
-  let {
-    snippets,
-    utils,
-    sa,
-    Point,
-    points,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options
-  } = part.shorthand()
+  const { store, snippets, utils, sa, Point, points, paths, complete, paperless, macro, options } =
+    part.shorthand()
 
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -43,29 +33,34 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.neck,
+      from: points.s3CollarSplit,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 15
+      y: points.s3CollarSplit.y - sa - 15,
     })
     macro('hd', {
-      from: points.shoulder,
+      from: points.s3ArmholeSplit,
       to: points.placketTopIn,
-      y: points.neck.y - sa - 30
+      y: points.s3CollarSplit.y - sa - 30,
+    })
+    macro('hd', {
+      from: points.armhole,
+      to: points.placketTopIn,
+      y: points.s3CollarSplit.y - sa - 45,
     })
     macro('vd', {
       from: points.placketTopIn,
-      to: points.neck,
-      x: points.placketTopIn.x + sa + 15
+      to: points.s3CollarSplit,
+      x: points.placketTopIn.x + sa + 15,
     })
     macro('vd', {
       from: points.placketBottomIn,
       to: points.placketTopIn,
-      x: points.placketTopIn.x + sa + 15
+      x: points.placketTopIn.x + sa + 15,
     })
-    for (let pid of ['Armhole', 'Waist', 'Hips']) {
+    for (const pid of ['Armhole', 'Waist', 'Hips']) {
       macro('hd', {
         from: points['edge' + pid],
-        to: points[pid.toLowerCase()]
+        to: points[pid.toLowerCase()],
       })
     }
   }

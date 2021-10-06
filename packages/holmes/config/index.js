@@ -10,9 +10,19 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['hat'],
+  tags: [
+    'freesewing',
+    'design',
+    'diy',
+    'fashion',
+    'made to measure',
+    'parametric design',
+    'pattern',
+    'sewing',
+    'sewing pattern',
+  ],
   optionGroups: {
-    style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth']
+    style: ['lengthRatio', 'goreNumber', 'brimAngle', 'brimWidth'],
   },
   measurements: ['head'],
   dependencies: {},
@@ -23,6 +33,6 @@ export default {
     lengthRatio: { pct: 55, min: 40, max: 60 },
     goreNumber: { count: 6, min: 4, max: 20 },
     brimAngle: { deg: 45, min: 10, max: 90 },
-    brimWidth: { mm: 30, min: 5, max: 100 }
-  }
+    brimWidth: { pct: 5, min: 5, max: 9 },
+  },
 }

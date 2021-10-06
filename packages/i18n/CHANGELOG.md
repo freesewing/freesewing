@@ -1,6 +1,59 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.18.0 (2021-09-09)
+
+### Added
+
+ - Added translations for Yuri
+
+### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
+## 2.17.3 (2021-08-16)
+
+### Added
+
+ - New translations
+
+## 2.17.2 (2021-08-15)
+
+### Added
+
+ - Added new ffsa option for simon & simone
+
+## 2.17.0 (2021-07-01)
+
+### Changed
+
+ - Changed antman references to antperson
+
+## 2.16.2 (2021-05-05)
+
+### Changed
+
+ - String updates
+
+## 2.16.1 (2021-05-30)
+
+### Added
+
+ - New translations for pattern filter
+
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Changes to cfp strings
+
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

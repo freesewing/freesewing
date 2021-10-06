@@ -1,6 +1,56 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
+
+### Changed
+
+ - Pattern.on() is now chainable as it returns the Pattern object
+
+## 2.18.0 (2021-09-09)
+
+### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
+## 2.17.1 (2021-07-14)
+
+### Fixed
+
+ - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
+
+## 2.17.0 (2021-07-01)
+
+### Fixed
+
+ - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
+
+## 2.15.2 (2021-04-28)
+
+### Fixed
+
+ - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
+
+## 2.15.1 (2021-04-24)
+
+### Fixed
+
+ - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
+
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - The part.getId() method now takes an optional prefix argument
+
+### Changed
+
+ - Don't round coordinates internally to avoid path.split misses
+
 ## 2.10.3 (2020-11-08)
 
 ### Changed

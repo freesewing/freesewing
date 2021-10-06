@@ -5,14 +5,13 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'tops',
   type: 'pattern',
-  difficulty: 3,
-  tags: ['top', 'basics'],
+  difficulty: 2,
   cut: {
     front: [2, 'onFold'],
     back: [2, 'onFold'],
-    sleeve: 2
+    sleeve: 2,
   },
   optionGroups: {
     fit: ['chestEase', 'hipsEase', 'sleeveEase', 'draftForHighBust'],
@@ -41,10 +40,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -55,19 +54,19 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'waistToHips',
-    'waist'
+    'waist',
   ],
   optionalMeasurements: ['highBust'],
   dependencies: {
     front: 'base',
     back: 'front',
     sleevecap: 'back',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   inject: {
     front: 'base',
     back: 'front',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   hide: ['base', 'sleevecap'],
   options: {
@@ -117,6 +116,6 @@ export default {
     sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
     sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
-    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 }
-  }
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
+  },
 }

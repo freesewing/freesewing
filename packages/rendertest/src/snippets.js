@@ -9,7 +9,7 @@ export default function (part) {
     notch: 15,
     bnotch: 15,
     button: 15,
-    buttonhole: 15
+    buttonhole: 15,
   }
   y += 10
   points.tl = new Point(0, y)

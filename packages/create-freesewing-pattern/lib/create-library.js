@@ -59,6 +59,16 @@ module.exports = async (info) => {
     await promise
   }
 
+  // Symlink is required since webback 5 / CRA 4
+  fs.symlinkSync(
+    path.join(dest),
+    path.join(dest, 'example', 'src', 'pattern'),
+    'junction',
+    (err) => {
+      if (err) console.log('Unable to create symlink to pattern folder:', err)
+    }
+  )
+
   return dest
 }
 

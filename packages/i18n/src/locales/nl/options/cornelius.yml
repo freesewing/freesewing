@@ -1,26 +1,26 @@
 ---
 fullness:
-  title: Fullness
-  description: Controls the fullness of the breeches
+  title: Volle
+  description: Bepaalt de volledigheid van de broeders
 waistbandBelowWaist:
-  title: Lower waistband
-  description: Percentage to move the waistband below the actual waist
+  title: Onderste tailleband
+  description: Percentage om de tailleband onder de tailleband te bewegen
 waistReduction:
-  title: Waist reduction
-  description: Percentage to reduce the waistband
+  title: Reductie taille
+  description: Percentage om de tailleband te verminderen
 cuffWidth:
   title: Cuff width
-  description: Width of the leg cuff
+  description: Breedte van de manchet
 cuffStyle:
-  title: Cuff style
-  description: Style of the leg cuff
+  title: Stijl manchet
+  description: Stijl van de manchet
 bandBelowKnee:
-  title: Cuff below knee
-  description: Controls the cuff distance from the knee
+  title: Manchet onder knie
+  description: Bepaalt de afstand tussen de manchet en de knie
 kneeToBelow:
-  title: Cuff length
-  description: Controls the tightness of the cuff as compared to the knee
+  title: Lengte manchet
+  description: Bepaalt de dikte van de manchet in vergelijking met de knie
 ventLength:
-  title: Vent length
-  description: Controls the length of the vent between knee and cuff
+  title: Vent lengte
+  description: Bepaalt de lengte van de vent tussen de knie en de manchet
 

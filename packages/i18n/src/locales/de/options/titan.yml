@@ -4,34 +4,43 @@ kneeEase:
   description: Kontrolliert die Zugabe am Knie
 waistHeight:
   title: Taillenhöhe
-  description: Steuert die Höhe des Taillenbund, 100% = Taillenhöhe, 0% = Hüfthöhe
+  description: Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe
 lengthBonus:
   title: Längenzugabe
-  description: Steuert die Längenzugabe an der Hose
+  description: Steuert die Länge der Hose
 crotchDrop:
   title: Schritt-Tiefe
-  description: Senke die Schrittiefe für mehr Tragekomfort
+  description: Senkt die Schrittiefe für mehr Tragekomfort
 fitKnee:
   title: Am Knie anliegend
-  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesässumfangs fest
+  description: Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesäßumfangs fest
 legBalance:
   title: Bein-Balance
   description: Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Start der Quernahtkurve
+  description: Bestimmt, wie weit wir in die Quernaht hineinspringen und kurven
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Quernaht Kurve
+  description: Steuert die Krümmung der Kreuznaht
+crossSeamCurveAngle:
+  title: Quernaht Winkel
+  description: Steuert den Winkel der Quernaht
 crotchSeamCurveStart:
-  title: Start of the crotch seam curve
-  description: Controls how far into the crotch seam we start to curve
+  title: Beginn der Schrittnahtkurve
+  description: Legt fest, wie weit wir in die Schrittnaht hineinfahren
 crotchSeamCurveBend:
-  title: Crotch seam bend
-  description: Controls the curvature of the crotch seam
+  title: Crotch Naht Biegen
+  description: Steuert die Krümmung der Schrittnaht
+crotchSeamCurveAngle:
+  title: Schneckennaht Winkel
+  description: Steuert den Winkel der Schrittnaht
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  title: Taillenbilanz
+  description: Steuert die horizontale Position der Taille relativ zum Sitz
+waistbandWidth:
+  title: Taillenbundweite
+  description: Die Breite des Taillenbundes
 grainlinePosition:
-  title: Grainline position
-  description: Controls the horizontal position of the leg relative to the seat
+  title: Position Fadenlauf
+  description: Steuert die horizontale Position des Beins relativ zum Sitz

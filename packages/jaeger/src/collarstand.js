@@ -17,7 +17,7 @@ export default function (part) {
     macro,
     snippets,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Only keep what's relevant from the front part
@@ -31,7 +31,7 @@ export default function (part) {
     'collarCbTop',
     'collarCbHelp',
     'collarCbBottom',
-    'lapelBreakPoint'
+    'lapelBreakPoint',
   ]
   for (let i of Object.keys(points)) {
     if (collarPoints.indexOf(i) === -1) delete points[i]
@@ -41,7 +41,7 @@ export default function (part) {
   /**
    * Locate collarstand center back bottom point
    * We are initially moving this point too far (1.1 x the length)
-   * but we will fix teh length of the curve next
+   * but we will fix the length of the curve next
    * Because the new endpoint is so close to the original, there's no need to
    * split this curve. We can use the control point as is.
    */
@@ -121,20 +121,20 @@ export default function (part) {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['collarstandCbBottom', 'collarstandCbTop']
+      on: ['collarstandCbBottom', 'collarstandCbTop'],
     })
     // Title
     points.title = points.collarstandCbTop.shiftFractionTowards(points.collarCbBottom, 0.5)
     macro('title', {
       at: points.title,
       nr: 8,
-      title: 'collarstand'
+      title: 'collarstand',
     })
 
     // Grainline
     macro('grainline', {
       from: points.collarstandCbTop,
-      to: points.collarstandCbBottom
+      to: points.collarstandCbBottom,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -143,22 +143,22 @@ export default function (part) {
       macro('hd', {
         from: points.leftCollarCorner,
         to: points.collarCorner,
-        y: points.collarstandCbBottom.y - sa - 15
+        y: points.collarstandCbBottom.y - sa - 15,
       })
       macro('hd', {
         from: points.leftCollarstandTip,
         to: points.collarstandTip,
-        y: points.collarstandTip.y + sa + 15
+        y: points.collarstandTip.y + sa + 15,
       })
       macro('vd', {
         from: points.collarstandTip,
         to: points.collarCorner,
-        x: points.collarstandTip.x + sa + 15
+        x: points.collarstandTip.x + sa + 15,
       })
       macro('vd', {
         from: points.collarstandCbTop,
         to: points.collarstandCbBottom,
-        x: points.collarstandCbTop.x + 15
+        x: points.collarstandCbTop.x + 15,
       })
     }
   }

@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    points,
-    macro,
-    Point,
-    Path,
-    paths,
-    snippets,
-    Snippet,
-    complete
-  } = part.shorthand()
+  let { paperless, sa, points, macro, Point, Path, paths, snippets, Snippet, complete, store } =
+    part.shorthand()
 
   const fitCap = (part, scale) => {
     let { points, options, Point, Path, measurements } = part.shorthand()
@@ -140,7 +130,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'top'
+      title: 'top',
     })
     points.logo = new Point(points.title.x / 2, points.title.y)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.75)
@@ -148,9 +138,28 @@ export default function (part) {
     points.grainlineTo = points.midBack.clone()
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
     macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['midMid', 'backHollow', 'midSide'],
+    })
+    store.set(
+      'topDistanceToFirstNotch',
+      new Path()
+        .move(points.backEdge)
+        .line(points.backSide)
+        .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
+        .length()
+    )
+    store.set(
+      'topDistanceToSecondNotch',
+      new Path()
+        .move(points.backHollow)
+        .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
+        .length() + store.get('topDistanceToFirstNotch')
+    )
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
@@ -158,42 +167,42 @@ export default function (part) {
       macro('vd', {
         from: points.midSide,
         to: points.foldTop,
-        x: points.foldTop.x - sa - 15
+        x: points.foldTop.x - sa - 15,
       })
       macro('vd', {
         from: points.backHollow,
         to: points.midMid,
-        x: points.midMid.x - 15
+        x: points.midMid.x - 15,
       })
       macro('vd', {
         from: points.midBack,
         to: points.midMid,
-        x: points.midBack.x + sa + 15
+        x: points.midBack.x + sa + 15,
       })
       macro('vd', {
         from: points.backEdge,
         to: points.midMid,
-        x: points.midBack.x + sa + 30
+        x: points.midBack.x + sa + 30,
       })
       macro('hd', {
         from: points.foldTop,
         to: points.midSide,
-        y: points.midSide.y + sa + 15
+        y: points.midSide.y + sa + 15,
       })
       macro('hd', {
         from: points.foldTop,
         to: points.backHollow,
-        y: points.midSide.y + sa + 30
+        y: points.midSide.y + sa + 30,
       })
       macro('hd', {
         from: points.foldTop,
         to: points.backEdge,
-        y: points.midSide.y + sa + 45
+        y: points.midSide.y + sa + 45,
       })
       macro('hd', {
         from: points.foldTop,
         to: points.midBack,
-        y: points.midSide.y + sa + 60
+        y: points.midSide.y + sa + 60,
       })
     }
   }

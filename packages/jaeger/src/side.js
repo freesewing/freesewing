@@ -11,7 +11,7 @@ export default function (part) {
     options,
     macro,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Double back vent
@@ -92,13 +92,13 @@ export default function (part) {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['sideWaist', 'bsWaist']
+      on: ['sideWaist', 'bsWaist'],
     })
     points.title = points.sideWaistCp2.shiftFractionTowards(points.bsWaistCp2, 0.5)
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'side'
+      title: 'side',
     })
 
     if (sa) {
@@ -113,47 +113,47 @@ export default function (part) {
     if (paperless) {
       macro('ld', {
         from: points.sideWaist,
-        to: points.bsWaist
+        to: points.bsWaist,
       })
       macro('hd', {
         from: points.sideHem,
         to: points.bsHem,
-        y: points.sideHem.y + 3 * sa + 15
+        y: points.sideHem.y + 3 * sa + 15,
       })
       macro('hd', {
         from: points.fsArmhole,
         to: points.bsArmholeHollow,
-        y: points.bsArmholeHollow.y - sa - 15
+        y: points.bsArmholeHollow.y - sa - 15,
       })
       macro('vd', {
         from: points.bsHem,
         to: points.bsHips,
-        x: points.bsHips.x + sa + 15
+        x: points.bsHips.x + sa + 15,
       })
       macro('vd', {
         from: points.bsHem,
         to: points.bsWaist,
-        x: points.bsHips.x + sa + 30
+        x: points.bsHips.x + sa + 30,
       })
       macro('vd', {
         from: points.bsHem,
         to: points.bsArmholeHollow,
-        x: points.bsHips.x + sa + 45
+        x: points.bsHips.x + sa + 45,
       })
       macro('vd', {
         from: points.sideHem,
         to: points.bsArmholeHollow,
-        x: points.bsHips.x + sa + 60
+        x: points.bsHips.x + sa + 60,
       })
       macro('vd', {
         from: points.sideHem,
         to: points.sideWaist,
-        x: points.sideHem.x - sa - 15
+        x: points.sideHem.x - sa - 15,
       })
       macro('vd', {
         from: points.sideWaist,
         to: points.fsArmhole,
-        x: points.sideHem.x - sa - 15
+        x: points.sideHem.x - sa - 15,
       })
     }
   }

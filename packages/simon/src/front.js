@@ -1,8 +1,7 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  part.paths = {}
-  let {
+  const {
     store,
     measurements,
     sa,
@@ -12,8 +11,17 @@ export default (part) => {
     paths,
     complete,
     macro,
-    options
+    snippets,
+    options,
   } = part.shorthand()
+
+  // Clean up
+  for (const i in paths) {
+    if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
+  }
+  for (const i in snippets) {
+    if (i.indexOf('otch')) delete snippets[i]
+  }
 
   // Populare store with data we need
   calculateReduction(part)
@@ -23,7 +31,7 @@ export default (part) => {
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .join(paths.frontArmhole)
       .length()
   )
 
@@ -56,9 +64,9 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
   switch (options.hemStyle) {
     case 'baseball':
       points.bballStart = points.cfHem.shiftFractionTowards(points.hem, 0.5)
@@ -77,7 +85,7 @@ export default (part) => {
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
@@ -105,16 +113,16 @@ export default (part) => {
     delete paths.cutonfold
     macro('grainline', {
       from: points.cfHem.shift(0, 45),
-      to: points.cfNeck.shift(0, 45)
+      to: points.cfNeck.shift(0, 45),
     })
     macro('title', { at: points.title, nr: 'X', title: 'front' })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole']
+      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
     })
 
     if (sa) {
-      paths.saFrench = paths.saBase.offset(sa * 2).attr('class', 'fabric sa')
+      paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
       paths.saConnect = new Path()

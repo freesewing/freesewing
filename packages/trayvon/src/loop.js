@@ -21,7 +21,7 @@ export default (part) => {
     macro('title', {
       nr: 7,
       title: 'loop',
-      at: points.title
+      at: points.title,
     })
   }
 
@@ -29,12 +29,12 @@ export default (part) => {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y + 15
+      y: points.bottomRight.y + 15,
     })
     macro('vd', {
       from: points.topRight,
       to: points.bottomRight,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
   }
 

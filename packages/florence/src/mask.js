@@ -12,7 +12,7 @@ export default (part) => {
     Snippet,
     snippets,
     macro,
-    utils
+    utils,
   } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -64,7 +64,7 @@ export default (part) => {
       at: points.title,
       nr: 1,
       title: 'mask',
-      scale: 0.5
+      scale: 0.5,
     })
     macro('miniscale', { at: points.logo.shift(-90, 20) })
 
@@ -94,37 +94,37 @@ export default (part) => {
       macro('hd', {
         from: points.bottomEdge,
         to: points.bottomTip,
-        y: points.bottomTip.y + sa + 15
+        y: points.bottomTip.y + sa + 15,
       })
       macro('hd', {
         from: points.bottomEdge,
         to: points.tipCenter,
-        y: points.bottomTip.y + sa + 30
+        y: points.bottomTip.y + sa + 30,
       })
       macro('hd', {
         from: points.topEdge,
         to: points.topTip,
-        y: points.topTip.y - sa - 15
+        y: points.topTip.y - sa - 15,
       })
       macro('vd', {
         from: points.bottomTip,
         to: points.bottomEdge,
-        x: points.bottomEdge.x - sa - 15
+        x: points.bottomEdge.x - sa - 15,
       })
       macro('vd', {
         from: points.bottomTip,
         to: points.topEdge,
-        x: points.bottomEdge.x - sa - 30
+        x: points.bottomEdge.x - sa - 30,
       })
       macro('vd', {
         from: points.bottomTip,
         to: points.topTip,
-        x: points.bottomEdge.x - sa - 45
+        x: points.bottomEdge.x - sa - 45,
       })
       macro('vd', {
         from: points.bottomTip,
         to: points.tipCenter,
-        x: points.tipCenter.x + sa + 15
+        x: points.tipCenter.x + sa + 15,
       })
     }
   }

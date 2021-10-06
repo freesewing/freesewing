@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     measurements,
     sa,
     Point,
@@ -11,11 +11,12 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
+    store,
   } = part.shorthand()
 
-  let width = options.sleevePlacketWidth > 20 ? 10 : options.sleevePlacketWidth / 4
-  let length = measurements.shoulderToWrist * options.sleevePlacketLength
+  const width = store.get('sleevePlacketWidth') > 20 ? 10 : store.get('sleevePlacketWidth') / 4
+  const length = measurements.shoulderToWrist * options.sleevePlacketLength
 
   points.midLeft = new Point(0, 0)
   points.midRight = points.midLeft.shift(0, length)
@@ -54,7 +55,7 @@ export default (part) => {
       nr: 9,
       title: 'sleevePlacketUnderlap',
       scale: 0.6,
-      append: true
+      append: true,
     })
 
     // Button
@@ -76,22 +77,24 @@ export default (part) => {
     macro('vd', {
       from: points.fold2Right,
       to: points.fold1Right,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + 30
+      x: points.topRight.x + 30,
     })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.button,
-      y: points.bottomRight.y + 15
-    })
+    if (complete) {
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.button,
+        y: points.bottomRight.y + 15,
+      })
+    }
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y + 30
+      y: points.bottomRight.y + 30,
     })
   }
 

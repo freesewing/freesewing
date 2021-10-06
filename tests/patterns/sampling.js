@@ -1,3 +1,4 @@
+const nonHumanMeasurements = require('./non-human-measurements.js')
 /*
  * This runs unit tests for pattern sampling
  * It expects the following:
@@ -9,18 +10,26 @@
  * @param object models: Imported @freesewing/models
  * @param object patterns: Imported @freesewing/pattern-info
  */
+
+// Some patterns are deprecated and won't support more stringent doll/giant tests
+const deprecated = ['theo']
+
 const testPatternSampling = (design, Pattern, expect, models, patterns) => {
+  // Load non-human measurements
+  const nonHuman = nonHumanMeasurements(models)
 
   // Helper method to try/catch pattern sampling
-  const doesItSample = pattern => {
-      try {
-        pattern.sample()
-        return true
-      }
-      catch (err) {
-        console.log(err)
-        return false
-      }
+  const doesItSample = (pattern, log=false) => {
+    try {
+      pattern.sample()
+      if (pattern.events.error.length < 1) return true
+      if (log) console.log(pattern.events.error)
+      return false
+    }
+    catch (err) {
+      if (log) console.log(err)
+      return false
+    }
   }
 
   // Figure out whether this is a with(out)breasts pattern
@@ -71,7 +80,7 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
     /*
      * Sample pattern for different models
      */
-    it('Sample pattern for different models:' , () => {
+    it('Sample pattern for size range:' , () => {
       expect(doesItSample(new Pattern({
         sample: {
           type: 'models',
@@ -80,6 +89,25 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
         measurements
       }))).to.equal(true)
     })
+  }
+
+  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+    if (deprecated.indexOf(design) === -1) {
+      /*
+       * Sample pattern for dolls & giants
+       */
+      for (const type of ['dolls', 'giants']) {
+        it(`Sample pattern for ${type}:` , () => {
+          expect(doesItSample(new Pattern({
+            sample: {
+              type: 'models',
+              models: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'][type]
+            },
+            measurements
+          }))).to.equal(true)
+        })
+      }
+    }
   }
 
 }

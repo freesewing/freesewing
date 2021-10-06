@@ -3,7 +3,7 @@ advanced: Avancé
 armhole: Emmanchure
 closure: Fermeture
 collar: Col
-construction: Construction
+construction: Montage
 cuffs: Poignets
 darts: Pinces
 elastic: Élastique
@@ -13,3 +13,7 @@ preferences: Préférences
 sleevecap: Tête de manche
 sleeves: Manches
 style: Style
+backPockets: Poches arrière
+frontPockets: Poches avant
+waistband: Ceinture
+fly: Vol

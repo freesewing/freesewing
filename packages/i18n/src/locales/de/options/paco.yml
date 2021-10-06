@@ -1,19 +1,16 @@
 ---
 heelEase:
-  title: Bequemlichekitszugabe Ferse
-  description: Grösse der Bequemlichkeitszugabe an der Ferse (wenn man in das Hosenbein hineinsteigt)
+  title: Bequemlichkeitszugabe Ferse
+  description: Größe der Bequemlichkeitszugabe an der Ferse (wenn man in das Hosenbein hineinsteigt)
 frontPockets:
   title: Vordere Taschen
-  description: Hinzufügen von vorderen Taschen an der Seitennaht oder nicht
+  description: Ob vordere Taschen an der Seitennaht hinzugefügt werden sollen oder nicht
 backPockets:
-  title: Gesässtaschen
+  title: Gesäßtaschen
   description: Hinzufügen einer Kedertasche zur Rückseite oder nicht
 elasticatedHem:
   title: Elastischer Saum
   description: Ob ein elastischer Saum gewünscht ist oder nicht
-waistElastic:
-  title: Breite des Taillengummizugs
-  description: Breite des Gummizugs an der Taille
 ankleElastic:
   title: Knöchel/Saum Gummizugbreite
   description: Breite des (optionalen) Gummizugs am Knöchel/Saum

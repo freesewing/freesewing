@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'block',
   difficulty: 3,
-  tags: ['top'],
   optionGroups: {
     fit: [
       'chestEase',
@@ -17,8 +16,9 @@ export default {
       'cuffEase',
       'shoulderEase',
       'lengthBonus',
-      'sleeveLengthBonus'
+      'sleeveLengthBonus',
     ],
+    style: ['s3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
@@ -46,10 +46,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -60,18 +60,18 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     back: 'base',
     front: 'back',
     sleevecap: 'front',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   inject: {
     back: 'base',
     front: 'back',
-    sleeve: 'sleevecap'
+    sleeve: 'sleevecap',
   },
   hide: ['base', 'sleevecap'],
   options: {
@@ -92,6 +92,9 @@ export default {
     lengthBonus: { pct: 0, min: -4, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
@@ -112,6 +115,6 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 }
-  }
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+  },
 }

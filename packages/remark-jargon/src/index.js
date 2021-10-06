@@ -1,4 +1,4 @@
-import visit from 'unist-util-visit'
+import { visit } from 'unist-util-visit'
 
 export default (options) => {
   if (!options || !options.jargon) {
@@ -29,8 +29,8 @@ export default (options) => {
           type: 'html',
           value,
           position,
-          indent: node.children[0].indent
-        }
+          indent: node.children[0].indent,
+        },
       ]
     }
   }

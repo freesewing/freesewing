@@ -6,10 +6,10 @@ coverlock:
   term: Coverlock
   description: "Siehe <a href='/docs/sewing/coverlock/'>Coverlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 cutting:
-  term: Zuschnitt
+  term: zuschnitt
   description: "Siehe <a href='/docs/sewing/cutting/'>Zuschnitt</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 darts:
-  term: Abnäher
+  term: abnäher
   description: "<a href='/docs/sewing/darts/'>Abnäher</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 doubleWeltPockets:
   term: Doppelpaspeltaschen
@@ -18,14 +18,14 @@ ease:
   term: Zugabe
   description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
-  term: Fadenlauf
-  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenluf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  term: fadenlauf
+  description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  description: "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
 onTheFold:
-  term: on the fold
-  description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  term: im Stoffbruch
+  description: "Siehe <a href='/docs/sewing/on-the-fold/'>Im Stoffbruch</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>"
 hemming:
   term: Säumen
   description: "Siehe <a href='/docs/sewing/hemming/'>Säumen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
@@ -45,7 +45,7 @@ rayon:
   term: Rayon
   description: "Siehe <a href='/docs/sewing/rayon/'>Rayon</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 sa:
-  term: Nahtzugabe
+  term: nahtzugabe
   description: "Siehe <a href='/docs/sewing/seam-allowance/'>Nahtzugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 serger:
   term: Overlock
@@ -57,23 +57,23 @@ trimming:
   term: Zurückschneiden
   description: "Siehe <a href='/docs/sewing/trimming/'>Zurückschneiden</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 twinNeedle:
-  term: Zwillingsnadel
+  term: zwillingsnadel
   description: "Siehe <a href='/docs/sewing/twin-neelde/'>Zwillingsnadel</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 zigZag:
   term: Zickzackstich
-  description: "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzacksticj</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
+  description: "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzackstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 freesewing:
-  term: FreeSewing
-  description: '<b>FreeSewing</b> ist eine Open Source Plattform für Schnittmuster nach Maß'
+  term: freesewing
+  description: '<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß'
 patternOptions:
-  term: Schnittmusteroptionen
-  description: 'Die <b>Schnittmusteroptionen</b> erlauben es Ihnen, das Design des Schnittmusters anzupassen'
+  term: schnittmusteroptionen
+  description: 'Die <b>Schnittmusteroptionen</b> erlauben es dir, das Design des Schnittmusters anzupassen'
 draftSettings:
-  term: Entwurfseinstellungen
-  description: 'Mit den <b>Entwurfseinstellungen</b> legen Sie fest, wie ein Muster erzeugt wird'
+  term: entwurfseinstellungen
+  description: 'Mit den <b>Entwurfseinstellungen</b> legst du fest, wie ein Schnittmuster erzeugt wird'
 patrons:
-  term: Gönner
-  description: 'Gönner unterstützen Freesewing finanziell. Sie sind treue Unterstützer und sorgen für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community.'
+  term: förderer
+  description: 'Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.'
 msf:
-  term: msf
-  description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"
+  term: MSF
+  description: "Médecins Sans Frontières/Ärzte ohne Grenzen - Siehe <a href='https://msf.org/'>msf.org</a>"

@@ -1,37 +1,38 @@
 ---
 ankle: Knöchelumfang
 biceps: Bizepsumfang
-bustFront: Bust front
-bustSpan: Brustweite
+bustFront: Oberweite vorne
+bustPointToUnderbust: Brustpunkt zu Unterbrust
+bustSpan: Brustpunkte Abstand
 chest: Brustumfang
-crossSeam: Cross seam
-crossSeamFront: Cross seam front
+crossSeam: Taille-Schritt-Taille
+crossSeamFront: Taille-Schritt
 head: Kopfumfang
 heel: Fersenumfang
-highBustFront: High bust front
+highBustFront: Oberbrustweite vorne
 highBust: Oberbrustweite
 hips: Hüftumfang
-hpsToBust: HPS to bust
-hpsToWaistBack: HPS to waist back
-hpsToWaistFront: HPS to waist front
+hpsToBust: HPS zum Busten
+hpsToWaistBack: HPS zum Taillen
+hpsToWaistFront: HPS zum Taillen
 inseam: Schrittlänge
 knee: Knieumfang
 neck: Halsumfang
 seat: Gesäßumfang
-seatBack: Gesässrückseite
-crotchDepth: Schritttiefe
+seatBack: Gesäßweite hinten
+crotchDepth: Schritthöhe
 shoulderSlope: Schulterneigung
 shoulderToElbow: Schulter bis Ellenbogen
-shoulderToShoulder: Schulter bis Schulter
-shoulderToWrist: Shulter bis Handgelenk
+shoulderToShoulder: Schulter zu Schulter
+shoulderToWrist: Schulter bis Handgelenk
 underbust: Unterbrustweite
-upperLeg: Oberer Beinumfang
-waist: Taillenumfang
-waistBack: Taillenrückseite
+upperLeg: Oberschenkelumfang
+waist: Taillenweite
+waistBack: Taillenweite hinten
 waistToFloor: Taille bis Boden
 waistToHips: Taille bis Hüfte
 waistToKnee: Taille bis Knie
-waistToSeat: Taille bis Gesäss
+waistToSeat: Taille bis Gesäß
 waistToUnderbust: Taille bis Unterbrustweite
-waistToUpperLeg: Taille bis oberes Bein
-wrist: Handgelenkumfang
+waistToUpperLeg: Taille bis Oberschenkel
+wrist: Handgelenksumfang

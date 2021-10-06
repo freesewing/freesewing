@@ -7,27 +7,26 @@ export default {
   code: ['Quentin Felix', 'Joost De Cock'],
   department: 'accessories',
   type: 'pattern',
-  difficulty: 2,
-  tags: ['headwear', 'cap'],
+  difficulty: 3,
   optionGroups: {
-    fit: ['headEase']
+    fit: ['headEase'],
   },
   measurements: ['head'],
   dependencies: {
     side: 'top',
     brimTop: 'brimBottom',
-    brimInterfacing: 'brimBottom'
+    brimInterfacing: 'brimBottom',
   },
   inject: {
     side: 'top',
     brimTop: 'brimBottom',
-    brimInterfacing: 'brimBottom'
+    brimInterfacing: 'brimBottom',
   },
   options: {
     // Constants
     topSide: 0.8,
     brim: 0,
     // Percentages
-    headEase: { pct: 2, min: 0, max: 5 }
-  }
+    headEase: { pct: 2, min: 0, max: 5 },
+  },
 }

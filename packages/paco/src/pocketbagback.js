@@ -18,7 +18,7 @@ export default function (part) {
     'pocketBagBottomLeft',
     'pocketBagBottomRight',
     'pocketLeft',
-    'pocketRight'
+    'pocketRight',
   ]
   const angle = -1 * points.pocketLeft.angle(points.pocketRight)
   for (const point in points) {
@@ -40,15 +40,15 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 6,
-      title: 'backPocketBag'
+      title: 'backPocketBag',
     })
     macro('cutonfold', {
       to: points.pocketBagBottomRight,
-      from: points.pocketBagBottomLeft
+      from: points.pocketBagBottomLeft,
     })
     macro('grainline', {
       from: points.pocketBagBottomLeft.shift(0, 15),
-      to: points.pocketBagWaistLeft.shift(0, 15)
+      to: points.pocketBagWaistLeft.shift(0, 15),
     })
     macro('scalebox', false)
     paths.cut = new Path()
@@ -57,7 +57,7 @@ export default function (part) {
       .attr('class', 'lining lashed')
     macro('sprinkle', {
       snippet: 'bnotch',
-      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight']
+      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
     })
 
     if (sa) {
@@ -78,22 +78,22 @@ export default function (part) {
       macro('hd', {
         from: points.pocketBagBottomLeft,
         to: points.pocketBagBottomRight,
-        y: points.pocketBagBottomLeft.y + 15 + sa
+        y: points.pocketBagBottomLeft.y + 15 + sa,
       })
       macro('hd', {
         from: points.pocketLeft,
         to: points.pocketRight,
-        y: points.pocketLeft.y + 15 + sa
+        y: points.pocketLeft.y + 15 + sa,
       })
       macro('vd', {
         from: points.pocketRight,
         to: points.pocketBagWaistRight,
-        x: points.pocketBagBottomRight.x + 15 + sa
+        x: points.pocketBagBottomRight.x + 15 + sa,
       })
       macro('vd', {
         from: points.pocketBagBottomRight,
         to: points.pocketBagWaistRight,
-        x: points.pocketBagBottomRight.x + 30 + sa
+        x: points.pocketBagBottomRight.x + 30 + sa,
       })
     }
   }

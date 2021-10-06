@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: [
       'chestEase',
@@ -17,9 +16,9 @@ export default {
       'cuffEase',
       'shoulderEase',
       'lengthBonus',
-      'sleeveLengthBonus'
+      'sleeveLengthBonus',
     ],
-    style: ['ribbing', 'ribbingHeight'],
+    style: ['ribbing', 'ribbingHeight', 's3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
@@ -47,10 +46,10 @@ export default {
           'sleevecapQ3Spread1',
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2'
-        ]
-      }
-    ]
+          'sleevecapQ4Spread2',
+        ],
+      },
+    ],
   },
   measurements: [
     'biceps',
@@ -63,21 +62,21 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     frontBase: 'base',
     backBase: 'base',
     front: 'frontBase',
     back: 'backBase',
-    sleeve: ['sleeveBase', 'front', 'back']
+    sleeve: ['sleeveBase', 'front', 'back'],
   },
   inject: {
     frontBase: 'base',
     backBase: 'base',
     front: 'frontBase',
     back: 'backBase',
-    sleeve: 'sleeveBase'
+    sleeve: 'sleeveBase',
   },
   parts: ['cuff', 'waistband'],
   hide: ['base', 'frontBase', 'backBase', 'sleeveBase'],
@@ -111,6 +110,10 @@ export default {
 
     shoulderEase: { pct: 0, min: -2, max: 6 },
 
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
+
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
@@ -131,6 +134,6 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    waistEase: { pct: 8, min: -4, max: 20 }
-  }
+    waistEase: { pct: 8, min: -4, max: 20 },
+  },
 }

@@ -1,6 +1,8 @@
 import markers from './lib/markers'
 import { version, name } from '../package.json'
 
+const prefix = '__paperless'
+
 function drawDimension(from, to, so, self) {
   let dimension = new self.Path()
     .move(from)
@@ -70,26 +72,26 @@ export default {
         svg.attributes.set('freesewing:plugin-dimension', version)
         svg.defs += markers
       }
-    }
+    },
   },
   macros: {
     // horizontal
     hd: function (so) {
-      let id = so.id || this.getId()
+      let id = so.id || this.getId(prefix)
       let from = hleader(so, 'from', this, id + '_ls')
       let to = hleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
     },
     // vertical
     vd: function (so) {
-      let id = so.id || this.getId()
+      let id = so.id || this.getId(prefix)
       let from = vleader(so, 'from', this, id + '_ls')
       let to = vleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
     },
     // linear
     ld: function (so) {
-      let id = so.id || this.getId()
+      let id = so.id || this.getId(prefix)
       let from = lleader(so, 'from', this, id + '_ls')
       let to = lleader(so, 'to', this, id + '_le')
       this.paths[id] = drawDimension(from, to, so, this)
@@ -103,7 +105,7 @@ export default {
         .attr('marker-end', 'url(#dimensionTo)')
         .attr('data-text', so.text || this.units(so.path.length()))
         .attr('data-text-class', 'fill-mark center')
-      let id = so.id || this.getId()
+      let id = so.id || this.getId(prefix)
       drawLeader(this, so.path.start(), dimension.start(), id + '_ls')
       drawLeader(this, so.path.end(), dimension.end(), id + '_le')
       this.paths[id] = dimension
@@ -120,6 +122,14 @@ export default {
           if (this.paths[`${id}_le`]) delete this.paths[`${id}_le`]
         }
       }
-    }
-  }
+    },
+    // Remove all dimensions (with standard prefix)
+    rmad: function (so) {
+      for (let type of ['paths', 'points']) {
+        for (let id in this[type]) {
+          if (id.slice(0, prefix.length) === prefix) delete this[type][id]
+        }
+      }
+    },
+  },
 }

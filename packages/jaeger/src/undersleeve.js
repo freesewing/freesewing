@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    utils,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    paths,
-    Path
-  } = part.shorthand()
+  let { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } =
+    part.shorthand()
 
   // Vent
   let slope = 15
@@ -104,20 +94,20 @@ export default function (part) {
     // Notches
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['top', 'usElbowLeft', 'elbowRight']
+      on: ['top', 'usElbowLeft', 'elbowRight'],
     })
     // Title
     points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'underSleeve'
+      title: 'underSleeve',
     })
 
     // Grainline
     macro('grainline', {
       from: points.boxBottom,
-      to: points.armCenter
+      to: points.armCenter,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -126,71 +116,71 @@ export default function (part) {
       macro('ld', {
         from: points.usWristLeft,
         to: points.usWristRight,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.usWristLeft,
         to: points.ventFoldRight,
-        d: 30
+        d: 30,
       })
       macro('ld', {
         from: points.hemLeft,
         to: points.ventRight,
-        d: -15 - sa
+        d: -15 - sa,
       })
       macro('ld', {
         from: points.hemLeft,
         to: points.usWristLeft,
-        d: 15 + sa
+        d: 15 + sa,
       })
       macro('ld', {
         from: points.usWristRight,
         to: points.ventSlopeStart,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.ventFoldRight,
         to: points.ventSlopeEnd,
-        d: 15
+        d: 15,
       })
       macro('ld', {
         from: points.usWristRight,
         to: points.ventFoldRight,
-        d: -15
+        d: -15,
       })
       macro('vd', {
         from: points.usWristLeft,
         to: points.usElbowLeft,
-        x: points.usLeftEdge.x - sa - 15
+        x: points.usLeftEdge.x - sa - 15,
       })
       macro('vd', {
         from: points.usWristLeft,
         to: points.usLeftEdge,
-        x: points.usLeftEdge.x - sa - 30
+        x: points.usLeftEdge.x - sa - 30,
       })
       macro('vd', {
         from: points.usLeftEdge,
         to: points.usTip,
-        x: points.usLeftEdge.x - sa - 30
+        x: points.usLeftEdge.x - sa - 30,
       })
       macro('vd', {
         from: points.usWristLeft,
         to: points.usTip,
-        x: points.usLeftEdge.x - sa - 45
+        x: points.usLeftEdge.x - sa - 45,
       })
       macro('ld', {
         from: points.usElbowLeft,
-        to: points.elbowRight
+        to: points.elbowRight,
       })
       macro('hd', {
         from: points.usLeftEdge,
         to: points.usTip,
-        y: points.usTip.y - sa - 15
+        y: points.usTip.y - sa - 15,
       })
       macro('hd', {
         from: points.usLeftEdge,
         to: points.elbowRight,
-        y: points.usTip.y - sa - 30
+        y: points.usTip.y - sa - 30,
       })
     }
   }

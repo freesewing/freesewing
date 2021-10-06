@@ -1,19 +1,8 @@
 import init from './init'
 
 export default function (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    Snippet,
-    snippets
-  } = part.shorthand()
+  let { store, sa, Point, points, Path, paths, complete, paperless, macro, Snippet, snippets } =
+    part.shorthand()
 
   // Initialize
   init(part)
@@ -62,11 +51,11 @@ export default function (part) {
     macro('title', {
       at: points.title.shift(-90, 15),
       nr: 4,
-      title: 'inset'
+      title: 'inset',
     })
     macro('grainline', {
       from: points.bottomLeft.shift(0, 15),
-      to: points.topLeft.shift(0, 15)
+      to: points.topLeft.shift(0, 15),
     })
     snippets.notch = new Snippet(
       'notch',
@@ -82,22 +71,22 @@ export default function (part) {
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - 15 - sa
+      x: points.topLeft.x - 15 - sa,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.tip,
-      x: points.tip.x + 15 + sa
+      x: points.tip.x + 15 + sa,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomRight.y + 15 + sa
+      y: points.bottomRight.y + 15 + sa,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.tip,
-      y: points.bottomRight.y + 30 + sa
+      y: points.bottomRight.y + 30 + sa,
     })
   }
 

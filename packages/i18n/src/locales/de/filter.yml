@@ -7,23 +7,14 @@ code: Code
 design: Gestaltung
 difficulty: Schwierigkeit
 resetFilter: Filter zurücksetzen
-menswear: Herrenbekleidung
-womenswear: Frauenkleidung
 accessories: Accessoires
 block: Grundschnitt
-pattern: Schnittmuster
+pattern: Muster
 byPattern: Filtern nach Schnittmuster
 underwear: Unterwäsche
-top: Oberteil
-basics: Grundlagen
-bottom: Unten
-coat: Mantel
-cosplay: Cosplay
-headwear: Kopfbekleidung
-jacket: Jacke
-cap: Mütze
-skirt: Rock
+top: Oben
+tops: Oberteile
+bottom: Boden
+bottoms: Hosen, Röcke, etc
+coats: Mäntel & Jacken
 swimwear: Bademode
-trousers: Hose
-formal: Formal
-unisex: Unisex

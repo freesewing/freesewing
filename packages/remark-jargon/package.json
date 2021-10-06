@@ -1,13 +1,17 @@
 {
   "name": "remark-jargon",
-  "version": "2.14.0",
+  "version": "2.18.0",
   "description": "A Remark plugin for jargon terms",
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
   },
   "keywords": [
     "freesewing",
@@ -30,11 +34,11 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "remark": "^12.0.1",
-    "remark-html": "^12.0.0"
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "dependencies": {
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^4.0.0"
   },
   "devDependencies": {},
   "files": [

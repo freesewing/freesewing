@@ -90,7 +90,7 @@ collarStandCurve:
 
 collarStandWidth:
   title: Collar stand width
-  description: Widht of the collar stand.
+  description: Width of the collar stand.
 
 cuffButtonRows:
   title: Cuff button rows
@@ -122,6 +122,10 @@ extraTopButton:
   title: Extra top button
   description: Whether or not to include an extra top button on the front closure.
 
+ffsa:
+  title: Flat-felled seam allowace
+  description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
+
 hemCurve:
   title: Hem curve
   description: The height of the curve on a curved hem.
@@ -133,6 +137,10 @@ hemStyle:
     straight: Straight hem
     baseball: Baseball hem
     slashed: Slashed hem
+
+roundBack:
+  title: Round back
+  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
 
 seperateButtonholePlacket:
   title: Seperate buttonhole placket
@@ -158,6 +166,6 @@ waistEase:
   title: Waist ease
   description: The amount of ease at your (natural) waist.
 
-yokeDart:
-  title: Yoke dart
-  description: Whether to include a dart at the sides of the yoke to fit a rounder back.
+yokeHeight:
+  title: Yoke height
+  description: Controls the height of the yoke

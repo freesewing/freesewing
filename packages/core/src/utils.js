@@ -24,10 +24,12 @@ export function beamsIntersect(a1, a2, b1, b2) {
   let slopeB = b1.slope(b2)
   if (slopeA === slopeB) return false // Parallel lines
 
-  if (a1.x === a2.x) return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
-  // Vertical line A
-  else if (b1.x === b2.x) return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
-  // Vertical line B
+  // Check for vertical line A
+  if (Math.round(a1.x * 10000) === Math.round(a2.x * 10000))
+    return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
+  // Check for vertical line B
+  else if (Math.round(b1.x * 10000) === Math.round(b2.x * 10000))
+    return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
   else {
     // Swap points if line A or B goes from right to left
     if (a1.x > a2.x) a1 = a2.copy()
@@ -87,13 +89,13 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
   )
   let intersections = curve.intersects({
     p1: { x: check.x - 1, y: check.y },
-    p2: { x: check.x + 1, y: check.y }
+    p2: { x: check.x + 1, y: check.y },
   })
   if (intersections.length === 0) {
     // Handle edge case of a curve that's a perfect horizontal line
     intersections = curve.intersects({
       p1: { x: check.x, y: check.y - 1 },
-      p2: { x: check.x, y: check.y + 1 }
+      p2: { x: check.x, y: check.y + 1 },
     })
   }
 
@@ -110,14 +112,14 @@ export function splitCurve(start, cp1, cp2, end, split) {
       start: c1.ops[0].to,
       cp1: c1.ops[1].cp1,
       cp2: c1.ops[1].cp2,
-      end: c1.ops[1].to
+      end: c1.ops[1].to,
     },
     {
       start: c2.ops[0].to,
       cp1: c2.ops[1].cp1,
       cp2: c2.ops[1].cp2,
-      end: c2.ops[1].to
-    }
+      end: c2.ops[1].to,
+    },
   ]
 }
 
@@ -156,7 +158,7 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   )
   let line = {
     p1: { x: start.x, y: start.y },
-    p2: { x: end.x, y: end.y }
+    p2: { x: end.x, y: end.y },
   }
   for (let t of bz.intersects(line)) {
     let isect = bz.get(t)
@@ -350,3 +352,11 @@ export function rad2deg(radians) {
 
 // Export bezier-js so plugins can use it
 export { Bezier }
+
+export function pctBasedOn(measurement) {
+  return {
+    toAbs: (val, { measurements }) => measurements[measurement] * val,
+    fromAbs: (val, { measurements }) => Math.round( ( 10 * val) / measurements[measurement]) / 10
+  }
+}
+

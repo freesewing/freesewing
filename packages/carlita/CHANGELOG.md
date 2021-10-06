@@ -1,6 +1,18 @@
 # Change log for: @freesewing/carlita
 
 
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

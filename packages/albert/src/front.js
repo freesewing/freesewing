@@ -11,7 +11,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let chestWidth = measurements.chest / 4
@@ -111,7 +111,7 @@ export default function (part) {
     macro('title', {
       nr: 1,
       at: points.title,
-      title: 'Front'
+      title: 'Front',
     })
 
     points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
@@ -119,12 +119,12 @@ export default function (part) {
 
     macro('crossBox', {
       from: points.topRightHem,
-      to: points.crossBoxTo1
+      to: points.crossBoxTo1,
     })
     macro('crossBox', {
       from: points.topRightBack,
       to: points.crossBoxTo2,
-      text: 'attachment'
+      text: 'attachment',
     })
 
     if (sa) {
@@ -133,7 +133,7 @@ export default function (part) {
 
     macro('cutonfold', {
       from: points.topCOF,
-      to: points.bottomCOF
+      to: points.bottomCOF,
     })
   }
 
@@ -142,42 +142,42 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y - sa - 15
+      y: points.topLeft.y - sa - 15,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - sa - 15
+      x: points.topLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRightBack,
-      x: points.topRightBack.x + sa + 15
+      x: points.topRightBack.x + sa + 15,
     })
     macro('vd', {
       from: points.topRightBack,
       to: points.topRight,
-      x: points.topRightBack.x + sa + 15
+      x: points.topRightBack.x + sa + 15,
     })
     macro('vd', {
       from: points.topLeft,
       to: points.topLeftHem,
-      x: points.topLeftHem.x + sa + 15
+      x: points.topLeftHem.x + sa + 15,
     })
     macro('vd', {
       from: points.topLeftHem,
       to: points.bottomLeftHem,
-      x: points.topLeftHem.x + sa + 15
+      x: points.topLeftHem.x + sa + 15,
     })
     macro('vd', {
       from: points.bottomLeftHem,
       to: points.bottomLeft,
-      x: points.bottomLeftHem.x + sa + 15
+      x: points.bottomLeftHem.x + sa + 15,
     })
   }
 

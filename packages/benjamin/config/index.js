@@ -8,17 +8,16 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 3,
-  tags: ['top', 'basics'],
   optionGroups: {
     fit: ['collarEase', 'adjustmentRibbon'],
-    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle']
+    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle'],
   },
   measurements: ['neck'],
   dependencies: {},
   inject: {
     bow1: 'base',
     bow2: 'base',
-    bow3: 'base'
+    bow3: 'base',
   },
   hide: ['base'],
   parts: ['ribbon'],
@@ -28,39 +27,39 @@ export default {
     ribbonWidth: {
       pct: 6,
       min: 5,
-      max: 8
+      max: 8,
     },
     tipWidth: {
       pct: 15,
       min: 0,
-      max: 20
+      max: 20,
     },
     knotWidth: {
       pct: 7,
       min: 5,
-      max: 10
+      max: 10,
     },
     bowLength: {
       pct: 28,
       min: 23,
-      max: 33
+      max: 33,
     },
     collarEase: {
       pct: 3,
       min: 0,
-      max: 6
+      max: 6,
     },
     bowStyle: {
       dflt: 'butterfly',
-      list: ['diamond', 'butterfly', 'square', 'widesquare']
+      list: ['diamond', 'butterfly', 'square', 'widesquare'],
     },
     endStyle: {
       dflt: 'straight',
-      list: ['straight', 'pointed', 'rounded']
+      list: ['straight', 'pointed', 'rounded'],
     },
     adjustmentRibbon: {
-      bool: false
+      bool: false,
     },
-    adjustmentRibbonWidth: 20
-  }
+    adjustmentRibbonWidth: 20,
+  },
 }

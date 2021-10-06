@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     measurements,
     sa,
     Point,
@@ -11,12 +11,12 @@ export default (part) => {
     macro,
     options,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   // Remove inherited paths, snippets, and scalebox
-  for (let p in paths) delete paths[p]
-  for (let s in snippets) delete snippets[s]
+  for (const p in paths) delete paths[p]
+  for (const s in snippets) delete snippets[s]
   macro('scalebox', false)
 
   // Sleeve width depends on cuff style
@@ -29,7 +29,7 @@ export default (part) => {
     width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap * 1.5)
   points.wristRight.x = width / 2
   points.wristLeft.x = width / -2
-  let cuffLength = measurements.shoulderToWrist * options.cuffLength
+  const cuffLength = measurements.shoulderToWrist * options.cuffLength
   points.wristRight = points.wristRight.shift(90, cuffLength)
   points.wristLeft = points.wristLeft.shift(90, cuffLength)
 
@@ -44,31 +44,31 @@ export default (part) => {
   points.cuffRightCuspCp2 = points.cuffRightCusp.shift(0, width / 10)
 
   // Cuff pleats
-  let drape = options.cuffDrape * measurements.shoulderToWrist
+  const drape = options.cuffDrape * measurements.shoulderToWrist
   let pleats = 0
-  let pleatLength = measurements.shoulderToWrist * 0.15
+  const pleatLength = measurements.shoulderToWrist * 0.15
   if (drape > 0) {
-    let shiftRight = [
+    const shiftRight = [
       'cuffRightCuspCp1',
       'cuffRightCusp',
       'cuffRightCuspCp2',
       'wristRight',
-      'cuffRightMid'
+      'cuffRightMid',
     ]
-    let shiftLeft = ['cuffLeftCuspCp1', 'cuffLeftCusp', 'cuffLeftCuspCp2', 'wristLeft']
+    const shiftLeft = ['cuffLeftCuspCp1', 'cuffLeftCusp', 'cuffLeftCuspCp2', 'wristLeft']
     if (drape > 20) pleats = 2
     else pleats = 1
-    for (let id of shiftRight) points[id] = points[id].shift(0, drape / (2 * pleats))
-    for (let id of shiftLeft) points[id] = points[id].shift(180, drape / (2 * pleats))
+    for (const id of shiftRight) points[id] = points[id].shift(0, drape / (2 * pleats))
+    for (const id of shiftLeft) points[id] = points[id].shift(180, drape / (2 * pleats))
     points.cuffPleat1Fold = points.cuffMid.shift(0, drape / (2 * pleats))
     points.cuffPleat1Edge = points.cuffMid.shift(0, drape / pleats)
     points.cuffMidTop = points.cuffMid.shift(90, pleatLength)
     points.cuffPleat1FoldTop = points.cuffPleat1Fold.shift(90, pleatLength)
     points.cuffPleat1EdgeTop = points.cuffPleat1Edge.shift(90, pleatLength)
     if (pleats === 2) {
-      let moreRight = ['cuffRightCuspCp2', 'wristRight']
-      let shift = shiftRight.concat(shiftLeft)
-      for (let id of shift) {
+      const moreRight = ['cuffRightCuspCp2', 'wristRight']
+      const shift = shiftRight.concat(shiftLeft)
+      for (const id of shift) {
         if (moreRight.indexOf(id) === -1) points[id] = points[id].shift(180, drape / 4)
         else points[id] = points[id].shift(0, drape / 4)
       }
@@ -145,7 +145,7 @@ export default (part) => {
     macro('grainline', { from: points.cuffMid, to: points.sleeveTip })
 
     if (sa) {
-      paths.sa = paths.frenchBase.offset(sa * 2)
+      paths.sa = paths.frenchBase.offset(sa * options.ffsa)
       paths.frenchSa = paths.sa.clone()
       paths.sa = paths.sa
         .join(paths.saBase.offset(sa))
@@ -154,37 +154,39 @@ export default (part) => {
         .attr('class', 'fabric sa')
       macro('banner', {
         path: 'frenchSa',
-        text: ['frenchSean', ': 2x', 'seamAllowance']
+        text: ['frenchSean', ': 2x', 'seamAllowance'],
       })
     }
   }
 
   // Paperless?
   if (paperless) {
-    macro('hd', {
-      from: points.backNotch,
-      to: points.sleeveTip,
-      y: points.sleeveTip.y - 15 - sa * 2
-    })
-    macro('hd', {
-      from: points.sleeveTip,
-      to: points.frontNotch,
-      y: points.sleeveTip.y - 15 - sa * 2
-    })
+    if (complete) {
+      macro('hd', {
+        from: points.backNotch,
+        to: points.sleeveTip,
+        y: points.sleeveTip.y - 15 - sa * options.ffsa,
+      })
+      macro('hd', {
+        from: points.sleeveTip,
+        to: points.frontNotch,
+        y: points.sleeveTip.y - 15 - sa * options.ffsa,
+      })
+    }
     macro('hd', {
       from: points.bicepsLeft,
       to: points.sleeveTip,
-      y: points.sleeveTip.y - 30 - sa * 2
+      y: points.sleeveTip.y - 30 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.sleeveTip,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - 30 - sa * 2
+      y: points.sleeveTip.y - 30 - sa * options.ffsa,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.sleeveTip.y - 45 - sa * 2
+      y: points.sleeveTip.y - 45 - sa * options.ffsa,
     })
     macro('pd', {
       path: new Path()
@@ -195,49 +197,51 @@ export default (part) => {
         .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
         .curve_(points.capQ4Cp2, points.bicepsLeft)
         .reverse(),
-      d: 15
+      d: 15,
     })
     macro('vd', {
       from: points.wristRight,
       to: points.bicepsRight,
-      x: points.bicepsRight.x + 15 + sa * 2
+      x: points.bicepsRight.x + 15 + sa * options.ffsa,
     })
-    macro('vd', {
-      from: points.bicepsRight,
-      to: points.frontNotch,
-      x: points.bicepsRight.x + 15 + sa * 2
-    })
+    if (complete) {
+      macro('vd', {
+        from: points.bicepsRight,
+        to: points.frontNotch,
+        x: points.bicepsRight.x + 15 + sa * options.ffsa,
+      })
+      macro('vd', {
+        from: points.bicepsLeft,
+        to: points.backNotch,
+        x: points.bicepsLeft.x - 15 - sa,
+      })
+      macro('vd', {
+        from: points.cuffLeftCusp,
+        to: points.placketEnd,
+        x: points.placketEnd.x - 15,
+      })
+    }
     macro('vd', {
       from: points.bicepsRight,
       to: points.sleeveTip,
-      x: points.bicepsRight.x + 30 + sa * 2
-    })
-    macro('vd', {
-      from: points.bicepsLeft,
-      to: points.backNotch,
-      x: points.bicepsLeft.x - 15 - sa
-    })
-    macro('vd', {
-      from: points.cuffLeftCusp,
-      to: points.placketEnd,
-      x: points.placketEnd.x - 15
+      x: points.bicepsRight.x + 30 + sa * options.ffsa,
     })
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,
-      y: points.wristLeft.y + 15 + sa
+      y: points.wristLeft.y + 15 + sa,
     })
     if (pleats > 0) {
       macro('hd', {
         from: points.cuffMidTop,
         to: points.cuffPleat1EdgeTop,
-        y: points.cuffMidTop.y - 15
+        y: points.cuffMidTop.y - 15,
       })
       if (pleats === 2) {
         macro('hd', {
           from: points.cuffPleat2Top,
           to: points.cuffPleat2EdgeTop,
-          y: points.cuffPleat2Top.y - 15
+          y: points.cuffPleat2Top.y - 15,
         })
       }
     }

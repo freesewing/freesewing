@@ -1,7 +1,7 @@
 ---
 centerBackDart:
-  title: Dart in der Mitte der Rückseite
-  description: Dart in der Mitte des Nackens, um einen abgerundeten Rücken aufzunehmen
+  title: Abnäher in der hinteren Mitte
+  description: Abnäher in der hinteren Mitte, um einen abgerundeten Rücken unterzubringen
 sleeveVentLength:
   title: Ärmellüftungslänge
   description: Länge der Ärmelöffnung
@@ -10,12 +10,12 @@ sleeveVentWidth:
   description: Breite der Ärmelöffnung
 chestShaping:
   title: Brustformung
-  description: Menge an Formung für die Brustkurve
+  description: Anzahl der Formatierung für die Brustkurve
 frontDartPlacement:
-  title: Platzierung des vorderen Pfeils
-  description: Position der vorderen Dartpfeile
+  title: Platzierung des vorderen Abnähers
+  description: Position der vorderen Abnäher
 frontOverlap:
-  title: Überlappung vorne
+  title: Übertritt vorne
   description: Wie weit der Stoff über die Schließknöpfe hinausragt
 sideFrontPlacement:
   title: Seitliche / vordere Platzierung
@@ -39,7 +39,7 @@ frontPocketPlacement:
   title: Fronttaschenplatzierung
   description: Position der Fronttasche
 frontPocketWidth:
-  title: Breite der Vordertasche
+  title: Breite der Fronttasche
   description: Die Breite der Fronttasche
 frontPocketDepth:
   title: Tiefe der Vordertasche
@@ -66,14 +66,14 @@ centerFrontHemDrop:
   title: Saumabfall in der Mitte
   description: Der Betrag, um den der Saum zur vorderen Mitte hin abgesenkt wird
 backVent:
-  title: Hinterlüftung
+  title: Hinterer Gehschlitz
   description: Die Anzahl der hinteren Öffnungen
 backVentLength:
-  title: Rückenlüftungslänge
+  title: Hinterer Gehschlitz Länge
   description: Die Länge der Hinterlüftung(en)
 buttonLength:
-  title: Tastenlänge
-  description: Die Entfernung, über die sich die Schaltflächen erstrecken
+  title: Knopflänge
+  description: Die Strecke, über die Knöpfe verteilt werden
 frontCutawayAngle:
   title: Frontschnittwinkel
   description: Der Winkel, unter dem die Vorderseite zum Saum hin abgeschnitten wird
@@ -87,7 +87,7 @@ collarSpread:
   title: Kragen ausgebreitet
   description: Der Kragenausschnitt steuert, wie der Kragen über die Schultern drapiert
 lapelStart:
-  title: Revers beginnt
+  title: Revers Beginn
   description: Position, wo die Mittelfront in das Revers geht
 lapelReduction:
   title: Reversverkleinerung

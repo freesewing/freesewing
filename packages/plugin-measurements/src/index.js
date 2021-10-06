@@ -29,6 +29,6 @@ export default {
         settings.measurements.crossSeamBack =
           settings.measurements.crossSeam - settings.measurements.crossSeamFront
       }
-    }
-  }
+    },
+  },
 }

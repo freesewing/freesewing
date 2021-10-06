@@ -37,20 +37,20 @@ export default function (part) {
   let rotate = {
     1: {
       pivot: 'cutBottom1',
-      points: ['cutBottom2', 'cutTop1', 'cutTop2', 'q2Cp1', 'q2Cp2']
+      points: ['cutBottom2', 'cutTop1', 'cutTop2', 'q2Cp1', 'q2Cp2'],
     },
     2: {
       pivot: 'cutBottom2',
-      points: ['cutBottom3', 'cutTop2', 'cutTop3', 'q3Cp1', 'q3Cp2']
+      points: ['cutBottom3', 'cutTop2', 'cutTop3', 'q3Cp1', 'q3Cp2'],
     },
     3: {
       pivot: 'cutBottom3',
-      points: ['standTip', 'bottomRight', 'cutTop4', 'cutTop3', 'q4Cp1']
+      points: ['standTip', 'bottomRight', 'cutTop4', 'cutTop3', 'q4Cp1'],
     },
     4: {
       pivot: 'standTip',
-      points: ['topRight', 'bottomRight', 'cutTop4']
-    }
+      points: ['topRight', 'bottomRight', 'cutTop4'],
+    },
   }
 
   let angle = -1 * options.collarSpread
@@ -77,7 +77,7 @@ export default function (part) {
     'rot2cutTop3',
     'rot2cutBottom3',
     'rot2q3Cp1',
-    'rot2q3Cp2'
+    'rot2q3Cp2',
   ])
     points[i] = points[i].shift(angle, distance)
 
@@ -172,7 +172,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 8,
-      title: 'collar'
+      title: 'collar',
     })
 
     // Remove grainline from collarstand part
@@ -180,7 +180,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.topLeft,
       to: points.standTop,
-      grainline: true
+      grainline: true,
     })
 
     if (sa) {
@@ -196,47 +196,47 @@ export default function (part) {
       macro('hd', {
         from: points.standTop,
         to: points.rot3standTip,
-        y: points.rot4bottomRight.y + sa + 15
+        y: points.rot4bottomRight.y + sa + 15,
       })
       macro('hd', {
         from: points.standTop,
         to: points.rot4bottomRight,
-        y: points.rot4bottomRight.y + sa + 30
+        y: points.rot4bottomRight.y + sa + 30,
       })
       macro('hd', {
         from: points.standTop,
         to: points.rot4topRight,
-        y: points.rot4bottomRight.y + sa + 45
+        y: points.rot4bottomRight.y + sa + 45,
       })
       macro('vd', {
         from: points.standTop,
         to: points.topLeft,
-        x: points.topLeft.x - 15
+        x: points.topLeft.x - 15,
       })
       macro('vd', {
         from: points.rot3standTip,
         to: points.topLeft,
-        x: points.topLeft.x - 30
+        x: points.topLeft.x - 30,
       })
       macro('vd', {
         from: points.rot4topRight,
         to: points.topLeft,
-        x: points.rot4topRight.x + sa + 15
+        x: points.rot4topRight.x + sa + 15,
       })
       macro('vd', {
         from: points.rot4bottomRight,
         to: points.topLeft,
-        x: points.rot4topRight.x + sa + 30
+        x: points.rot4topRight.x + sa + 30,
       })
       macro('ld', {
         from: points.rot4bottomRight,
         to: points.rot4topRight,
-        d: -1 * sa - 15
+        d: -1 * sa - 15,
       })
       macro('ld', {
         from: points.rot3standTip,
         to: points.rot4bottomRight,
-        d: -1 * sa - 15
+        d: -1 * sa - 15,
       })
     }
   }

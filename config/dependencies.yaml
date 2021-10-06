@@ -4,13 +4,9 @@ _types:
       '@freesewing/core': &freesewing '^{{version}}'
       '@freesewing/plugin-bundle': *freesewing
     dev:
-      'react': &react '^16.13.1'
-      'react-dom': &react-dom '^16.13.1'
-      '@babel/plugin-proposal-class-properties': '^7.10.4'
-      'babel-eslint': '^10.1.0'
-      'eslint': '^7.6.0'
-      'babel-jest': '^26.2.2'
-      'jest': '26.2.2'
+      'react': &react '^17.0.2'
+      'react-dom': &react-dom '^17.0.2'
+      '@babel/plugin-proposal-class-properties': '^7.13.0'
       '@freesewing/components': *freesewing
       '@freesewing/css-theme': *freesewing
       '@freesewing/i18n': *freesewing
@@ -19,24 +15,21 @@ _types:
       '@freesewing/plugin-buttons': *freesewing
       '@freesewing/plugin-flip': *freesewing
       '@freesewing/utils': *freesewing
-      '@svgr/rollup': '^2.4.1'
-      'cross-env': '^7.0.2'
-      'react-scripts': '^3.4.1'
-      'webpack': '^4.44.1'
-      'rollup': '^2.23.0'
-      '@rollup/plugin-babel': '^5.1.0'
-      'rollup-plugin-terser': '^6.1.0'
-      '@rollup/plugin-commonjs': '^14.0.0'
+      'react-scripts': '^4.0.3'
+      'webpack': '^5.37.0'
+      'rollup': '^2.50.6'
+      '@rollup/plugin-babel': '^5.3.0'
+      '@rollup/plugin-commonjs': '^20.0.0'
       '@rollup/plugin-json': '^4.1.0'
-      '@rollup/plugin-node-resolve': '^8.4.0'
-      'rollup-plugin-peer-deps-external': '^2.2.3'
-      '@material-ui/core': &matui-core '^4.11.0'
-      '@material-ui/icons': &matui-icons '4.9.1'
-      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.56'
+      '@rollup/plugin-node-resolve': '^13.0.0'
+      'rollup-plugin-peer-deps-external': '^2.2.4'
+      '@material-ui/core': &matui-core '^4.11.4'
+      '@material-ui/icons': &matui-icons '^4.11.2'
+      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.57'
       'axios': &axios '0.21.1'
-      'react-intl': &react-intl '^5.4.5'
+      'react-intl': &react-intl '^5.17.6'
       'prop-types': '^15.7.2'
-      'mocha': '^8.1.0'
+      'mocha': '^9.1.1'
       'chai': '^4.2.0'
       'chai-string': '^1.5.0'
       '@babel/register': '^7.10.5'
@@ -49,9 +42,13 @@ aaron:
 bent:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 breanna:
   peer:
     '@freesewing/brian': *freesewing
+brian:
+  peer:
+    '@freesewing/plugin-mirror': *freesewing
 carlita:
   peer:
     '@freesewing/brian': *freesewing
@@ -59,11 +56,18 @@ carlita:
     '@freesewing/carlton': *freesewing
     '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 carlton:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
+charlie:
+  peer:
+    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/titan': *freesewing
 css-theme:
   _:
     'open-color': '^1.7.0'
@@ -92,31 +96,33 @@ components:
     '@material-ui/core': *matui-core
     '@material-ui/icons': *matui-icons
     '@material-ui/lab': *matui-lab
-    'prismjs': '^1.22.0'
-    'react-markdown': '^5.0.3'
+    'prismjs': '^1.23.0'
+    'react-markdown': '^6.0.2'
     'file-saver': '^2.0.5'
-    'yaml': '^1.10.0'
+    'yaml': '^1.10.2'
 core:
   _:
-    'bezier-js': '^4.0.3'
+    'bezier-js': '^4.1.1'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
+  dev:
+    'nyc': '^15.1.0'
 create-freesewing-pattern:
   _:
-    'chalk': '^4.1.0'
-    'commander': '^6.0.0'
-    'conf': '^7.1.1'
+    'chalk': '^4.1.1'
+    'commander': '^8.1.0'
+    'conf': '^10.0.1'
     'cp-file': '^9.0.0'
-    'execa': '^4.0.3'
+    'execa': '^5.1.0'
     'git-config-path': '^2.0.0'
     'github-username': '^6.0.0'
-    'globby': '^11.0.1'
-    'handlebars': '^4.7.6'
-    'inquirer': '^7.3.3'
+    'globby': '^11.0.3'
+    'handlebars': '^4.7.7'
+    'inquirer': '^8.0.0'
     'make-dir': '^3.1.0'
     'normalize-path': '^3.0.0'
-    'ora': '^5.3.0'
-    'p-each-series': '^2.1.0'
+    'ora': '^5.4.1'
+    'p-each-series': '^2.2.0'
     'parse-git-config': '^3.0.0'
     'validate-npm-package-name': '^3.0.0'
     'which': '^2.0.2'
@@ -125,6 +131,11 @@ create-freesewing-pattern:
 diana:
   peer:
     '@freesewing/brian': *freesewing
+examples:
+  peer:
+    '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-buttons': *freesewing
 gatsby-remark-jargon:
   _:
     'remark-jargon': *freesewing
@@ -147,6 +158,7 @@ jaeger:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
 models:
   peer:
     '@freesewing/utils': *freesewing
@@ -162,21 +174,23 @@ paco:
   peer:
     '@freesewing/titan': *freesewing
 plugin-bundle:
-  _:
+  dev:
+    '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-cutonfold': *freesewing
     '@freesewing/plugin-dimension': *freesewing
     '@freesewing/plugin-grainline': *freesewing
     '@freesewing/plugin-logo': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-title': *freesewing
     '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
 remark-jargon:
   _:
-    'unist-util-visit': '^2.0.3'
+    'unist-util-visit': '^4.0.0'
   peer:
-    'remark': '^12.0.1'
-    'remark-html': '^12.0.0'
+    'remark': '^13.0.0'
+    'remark-html': '^13.0.1'
 simon:
   peer:
     '@freesewing/brian': *freesewing
@@ -189,6 +203,18 @@ simone:
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-bust': *freesewing
+strapi:
+  _:
+    strapi: &strapi '3.6.8'
+    strapi-admin: *strapi
+    strapi-utils: *strapi
+    strapi-plugin-content-type-builder: *strapi
+    strapi-plugin-content-manager: *strapi
+    strapi-plugin-users-permissions: *strapi
+    strapi-plugin-email: *strapi
+    strapi-plugin-upload: *strapi
+    strapi-plugin-i18n: *strapi
+    strapi-connector-mongoose: *strapi
 sven:
   peer:
     '@freesewing/brian': *freesewing
@@ -198,10 +224,14 @@ teagan:
     '@freesewing/plugin-bust': *freesewing
 utils:
   peer:
-    'tlds': '^1.207.0'
+    'tlds': '^1.221.1'
     'axios': *axios
 wahid:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-round': *freesewing
+yuri:
+  peer:
+    '@freesewing/brian': *freesewing
+

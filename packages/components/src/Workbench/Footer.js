@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../Logo'
-import { FormattedMessage } from 'react-intl'
+//import { FormattedMessage } from 'react-intl'
 
 const Footer = (props) => {
 
@@ -10,7 +10,7 @@ const Footer = (props) => {
         <div>
           <ul>
             <li className="heading">
-              <FormattedMessage id='app.docs'/>
+              {/*<FormattedMessage id='app.docs'/>*/}
             </li>
             <li><a href="https://freesewing.dev/reference/api/">Core API</a></li>
             <li><a href="https://freesewing.dev/reference/macros/">Macros</a></li>

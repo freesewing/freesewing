@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    options,
-    macro,
-    Point,
-    paths,
-    Path
-  } = part.shorthand()
+  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
+    part.shorthand()
 
   let width = store.get('chestPocketWidth')
   let welt = store.get('chestPocketWeltHeight')
@@ -45,13 +35,13 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 12,
-      title: 'chestPocketBag'
+      title: 'chestPocketBag',
     })
 
     // Grainline
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+      to: points.topLeft.shift(0, 10),
     })
 
     // Instructions
@@ -63,32 +53,32 @@ export default function (part) {
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topRight.y - sa - 15
+        y: points.topRight.y - sa - 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.foldRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
       macro('vd', {
         from: points.foldRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 30
+        x: points.topRight.x + sa + 30,
       })
       macro('vd', {
         from: points.bottomLeft,
         to: points.foldLeft,
-        x: points.topLeft.x - sa - 15
+        x: points.topLeft.x - sa - 15,
       })
       macro('vd', {
         from: points.foldLeft,
         to: points.topLeft,
-        x: points.topLeft.x - sa - 15
+        x: points.topLeft.x - sa - 15,
       })
     }
   }

@@ -1,16 +1,6 @@
 export default (part) => {
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    macro,
-    snippets,
-    Snippet,
-    complete,
-    sa
-  } = part.shorthand()
+  let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
+    part.shorthand()
 
   // Cleanup from front part
   for (let i of Object.keys(paths)) delete paths[i]
@@ -47,7 +37,7 @@ export default (part) => {
     macro('title', {
       nr: 3,
       at: points.title,
-      title: 'frontFacing'
+      title: 'frontFacing',
     })
     points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
     snippets.logo = new Snippet('logo', points.logo)

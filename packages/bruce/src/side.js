@@ -13,7 +13,7 @@ export default function (part) {
     macro,
     utils,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   // Initialize
@@ -65,7 +65,7 @@ export default function (part) {
     macro('title', {
       at: points.title.shift(90, 30),
       nr: 3,
-      title: 'side'
+      title: 'side',
     })
     macro('scalebox', { at: points.title.shift(-90, 40) })
     if (sa) {
@@ -77,7 +77,7 @@ export default function (part) {
     }
     macro('grainline', {
       from: new Point(points.bottomRight.x / 2, points.bottomRight.y),
-      to: new Point(points.bottomRight.x / 2, points.topRight.y)
+      to: new Point(points.bottomRight.x / 2, points.topRight.y),
     })
     snippets.frontNotch = new Snippet(
       'notch',
@@ -94,22 +94,22 @@ export default function (part) {
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - 15 - sa
+      x: points.topLeft.x - 15 - sa,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + 15 + sa
+      x: points.topRight.x + 15 + sa,
     })
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y - 15 - sa
+      y: points.topLeft.y - 15 - sa,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + 15 + sa
+      y: points.bottomLeft.y + 15 + sa,
     })
   }
 

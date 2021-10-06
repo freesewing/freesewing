@@ -13,7 +13,7 @@ export default function (part) {
     macro,
     Point,
     paths,
-    Path
+    Path,
   } = part.shorthand()
 
   // Front closure overlap
@@ -77,7 +77,7 @@ export default function (part) {
     'armholeHollow',
     'armholeHollowCp1',
     'splitCp2',
-    'frontNeckCpEdge'
+    'frontNeckCpEdge',
   ]
   for (let p of rotate) {
     points[p] = points[p].rotate(options.chestShapingMax * options.chestShaping * -1, points.split)
@@ -200,14 +200,14 @@ export default function (part) {
     to: points.ipfeEdge,
     via: points.ipfeViaBottomRight,
     radius: ipfeHeight / 2,
-    prefix: 'ipfeBottomRight'
+    prefix: 'ipfeBottomRight',
   })
   macro('round', {
     from: points.ipfeTopRight,
     to: points.ipfeEdge,
     via: points.ipfeViaTopRight,
     radius: ipfeHeight / 2,
-    prefix: 'ipfeTopRight'
+    prefix: 'ipfeTopRight',
   })
   points.ipfeStart = utils.beamIntersectsY(
     points.facingTop,
@@ -234,14 +234,14 @@ export default function (part) {
     to: points.ipfeStartEnd,
     via: points.ipfeStartVia,
     radius: ipfeHeight / 2,
-    prefix: 'ipfeStart'
+    prefix: 'ipfeStart',
   })
   macro('round', {
     from: points.ipfeEnd,
     to: points.ipfeEndEnd,
     via: points.ipfeEndVia,
     radius: ipfeHeight / 2,
-    prefix: 'ipfeEnd'
+    prefix: 'ipfeEnd',
   })
   // Rotate control points to smooth out curve
   angle = points.facingTop.angle(points.facingBottom) + 90
@@ -394,8 +394,8 @@ export default function (part) {
         'frontPocketTopLeft',
         'frontPocketBottomLeft',
         'armholeHollow',
-        'waist'
-      ]
+        'waist',
+      ],
     })
     // Buttons
     points.button1 = new Point(points.cfWaist.x, points.lapelBreakPoint.y)
@@ -403,6 +403,10 @@ export default function (part) {
     if (options.buttons > 1) {
       points.button2 = new Point(points.cfWaist.x, points.cutawayPoint.y)
       buttons.push('button2')
+      if (options.buttons == 3) {
+        points.button3 = points.button1.shiftFractionTowards(points.button2, 0.5)
+        buttons.push('button3')
+      }
     }
     for (let button of buttons)
       snippets[button] = new Snippet('button', points[button]).attr('data-scale', 2)
@@ -414,7 +418,7 @@ export default function (part) {
     // Grainline
     macro('grainline', {
       from: points.cfHips,
-      to: new Point(points.cfArmhole.x, points.collarCorner.y)
+      to: new Point(points.cfArmhole.x, points.collarCorner.y),
     })
     if (sa) {
       paths.sa = paths.saBase
@@ -427,191 +431,191 @@ export default function (part) {
       macro('vd', {
         from: points.notchEdge,
         to: points.neck,
-        x: points.lapelBreakPoint.x - 15 - sa
+        x: points.lapelBreakPoint.x - 15 - sa,
       })
       macro('vd', {
         from: points.lapelBreakPoint,
         to: points.notchEdge,
-        x: points.lapelBreakPoint.x - 15 - sa
+        x: points.lapelBreakPoint.x - 15 - sa,
       })
       macro('vd', {
         from: points.cutawayPoint,
         to: points.lapelBreakPoint,
-        x: points.lapelBreakPoint.x - 15 - sa
+        x: points.lapelBreakPoint.x - 15 - sa,
       })
       macro('vd', {
         from: points.facingBottom,
         to: points.cutawayPoint,
-        x: points.lapelBreakPoint.x - 15 - sa
+        x: points.lapelBreakPoint.x - 15 - sa,
       })
       macro('vd', {
         from: points.facingBottom,
         to: points.notchEdge,
-        x: points.lapelBreakPoint.x - 30 - sa
+        x: points.lapelBreakPoint.x - 30 - sa,
       })
       macro('vd', {
         from: points.facingBottom,
         to: points.neck,
-        x: points.lapelBreakPoint.x - 45 - sa
+        x: points.lapelBreakPoint.x - 45 - sa,
       })
       macro('hd', {
         from: points.notchEdge,
         to: points.notchMax,
-        y: points.notchEdge.y - 15 - sa
+        y: points.notchEdge.y - 15 - sa,
       })
       macro('hd', {
         from: points.notchEdge,
         to: points.collarCorner,
-        y: points.notchEdge.y - 30 - sa
+        y: points.notchEdge.y - 30 - sa,
       })
       macro('hd', {
         from: points.notchEdge,
         to: points.neck,
-        y: points.neck.y - 15 - sa
+        y: points.neck.y - 15 - sa,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.neck,
-        y: points.neck.y - 30 - sa
+        y: points.neck.y - 30 - sa,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.armholePitch,
-        y: points.neck.y - 45 - sa
+        y: points.neck.y - 45 - sa,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.shoulder,
-        y: points.neck.y - 60 - sa
+        y: points.neck.y - 60 - sa,
       })
       macro('hd', {
         from: points.lapelStraightEnd,
         to: points.fsArmhole,
-        y: points.neck.y - 75 - sa
+        y: points.neck.y - 75 - sa,
       })
       macro('ld', {
         from: points.neck,
         to: points.shoulder,
-        d: -15
+        d: -15,
       })
       macro('ld', {
         from: points.collarCorner,
         to: points.neck,
-        d: -15
+        d: -15,
       })
       macro('ld', {
         from: points.lapelBreakPoint,
         to: points.button1,
-        d: -15
+        d: -15,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.innerPocketTopLeft,
-        y: points.innerPocketTopLeft.y - 35
+        y: points.innerPocketTopLeft.y - 35,
       })
       macro('hd', {
         from: points.innerPocketTopLeft,
         to: points.innerPocketTopRight,
-        y: points.innerPocketTopLeft.y - 35
+        y: points.innerPocketTopLeft.y - 35,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.ipfeTopRightEnd,
-        y: points.innerPocketTopLeft.y - 50
+        y: points.innerPocketTopLeft.y - 50,
       })
       macro('vd', {
         from: points.ipfeBottomRightStart,
         to: points.ipfeTopRightStart,
-        x: points.ipfeTopRightEnd.x + 15
+        x: points.ipfeTopRightEnd.x + 15,
       })
       macro('vd', {
         from: points.innerPocketBottomRight,
         to: points.innerPocketTopRight,
-        x: points.innerPocketTopRight.x - 15
+        x: points.innerPocketTopRight.x - 15,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.dartTop,
-        y: points.dartTop.y + 15
+        y: points.dartTop.y + 15,
       })
       macro('ld', {
         from: points.dartLeft,
-        to: points.dartRight
+        to: points.dartRight,
       })
       macro('vd', {
         from: points.dartBottom,
         to: points.dartTop,
-        x: points.dartRight.x + 15
+        x: points.dartRight.x + 15,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.facingBottom,
-        y: points.facingBottom.y + 15 + sa
+        y: points.facingBottom.y + 15 + sa,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.roundEnd,
-        y: points.facingBottom.y + 15 + 3 * sa
+        y: points.facingBottom.y + 15 + 3 * sa,
       })
       macro('hd', {
         from: points.lapelBreakPoint,
         to: points.hem,
-        y: points.facingBottom.y + 30 + 3 * sa
+        y: points.facingBottom.y + 30 + 3 * sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.hips,
-        x: points.hem.x + 15 + sa
+        x: points.hem.x + 15 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.dartBottom,
-        x: points.hem.x + 30 + sa
+        x: points.hem.x + 30 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.waist,
-        x: points.hem.x + 45 + sa
+        x: points.hem.x + 45 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.innerPocketRight,
-        x: points.hem.x + 60 + sa
+        x: points.hem.x + 60 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.fsArmhole,
-        x: points.hem.x + 75 + sa
+        x: points.hem.x + 75 + sa,
       })
       macro('vd', {
         from: points.fsArmhole,
         to: points.armholePitch,
-        x: points.fsArmhole.x + 15 + sa
+        x: points.fsArmhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.fsArmhole,
         to: points.shoulder,
-        x: points.fsArmhole.x + 30 + sa
+        x: points.fsArmhole.x + 30 + sa,
       })
       macro('vd', {
         from: points.fsArmhole,
         to: points.neck,
-        x: points.fsArmhole.x + 45 + sa
+        x: points.fsArmhole.x + 45 + sa,
       })
       macro('hd', {
         from: points.cutawayPoint,
         to: points.frontPocketTopLeft,
-        y: points.frontPocketTopLeft.y - 15
+        y: points.frontPocketTopLeft.y - 15,
       })
       macro('vd', {
         from: points.frontPocketBottomLeft,
         to: points.frontPocketTopLeft,
-        x: points.frontPocketTopLeft.x - 15
+        x: points.frontPocketTopLeft.x - 15,
       })
       macro('vd', {
         from: points.fsArmhole,
         to: points.chestPocketBottomLeft,
-        x: points.chestPocketBottomLeft.x - 15
+        x: points.chestPocketBottomLeft.x - 15,
       })
       points.cfWaist = new Point(points.button1.x, points.waist.y)
       macro('ld', { from: points.cfWaist, to: points.dartLeft })

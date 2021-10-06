@@ -8,10 +8,9 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'unisex',
+  department: 'bottoms',
   type: 'pattern',
-  difficulty: 3,
-  tags: ['trousers', 'bottom', 'basics'],
+  difficulty: 2,
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
     style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],
@@ -21,8 +20,8 @@ export default {
       'crotchFactorBackHor',
       'crotchFactorBackVer',
       'crotchFactorFrontHor',
-      'crotchFactorFrontVer'
-    ]
+      'crotchFactorFrontVer',
+    ],
   },
   measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
   dependencies: {},
@@ -52,6 +51,6 @@ export default {
     crotchFactorBackVer: { pct: 60, min: 20, max: 90 },
     waistOverlap: { pct: 50, min: 10, max: 100 },
     legShortening: { pct: 25, min: -10, max: 50 },
-    backRaise: { pct: 10, min: 0, max: 25 }
-  }
+    backRaise: { pct: 10, min: 0, max: 25 },
+  },
 }

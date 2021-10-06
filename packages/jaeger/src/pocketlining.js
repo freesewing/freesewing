@@ -38,13 +38,13 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 10,
-      title: 'pocketLining'
+      title: 'pocketLining',
     })
 
     // Grainline
     macro('grainline', {
       from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10)
+      to: points.topLeft.shift(0, 10),
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
@@ -53,14 +53,14 @@ export default function (part) {
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topLeft.y - sa - 15
+        y: points.topLeft.y - sa - 15,
       })
       let corner = points.bottomRight
       if (options.frontPocketRadius > 0) corner = points.rightStart
       macro('vd', {
         from: corner,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
     }
   }

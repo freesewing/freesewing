@@ -1,10 +1,14 @@
 {
-  "author": "Joost De Cock <joost@decock.org> (https://github.com/joostdecock)",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type" : "individual",
+    "url" : "https://freesewing.org/patrons/join"
   },
   "keywords": ["freesewing"],
   "main": "dist/index.js",

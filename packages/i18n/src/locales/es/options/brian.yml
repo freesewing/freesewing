@@ -24,8 +24,14 @@ frontArmholeDeeper:
   title: Sujetador delantero extra recorte
   description: '¿Cuánto quieres que se corte la sisa delantera más allá de la espalda?'
 lengthBonus:
-  title: Extra de longitud
+  title: Bonus de longitud
   description: La cantidad a elongar. Valores negativos lo acortan.
+s3Collar:
+  title: 'Mayo de costura de hombro: lado de cuello'
+  description: Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello. Disminuye su desplazamiento hacia atrás.
+s3Armhole:
+  title: 'Mayo de costura de hombro: lado del orificio'
+  description: Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del blindaje. Disminuye su desplazamiento hacia atrás.
 shoulderEase:
   title: Holgura de hombro
   description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.

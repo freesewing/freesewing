@@ -8,6 +8,6 @@ export default {
   hooks: {
     postDraft: (pattern, config = { precision: 1 }) => {
       pattern.exportDxf = () => new Dxf(config).render(pattern)
-    }
-  }
+    },
+  },
 }

@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+.MuiToolbar-root {
+  overflow-y: auto;
+}
 div.layout-wrapper {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: red;
   background: #f8f9fa;
   background: linear-gradient(90deg, #f1f3f5 0%, #f1f3f5 25%, #f8f9fa 26%, #f8f9fa 100%);
 }
@@ -49,41 +54,6 @@ div.layout-wrapper div.layout > section > div.content.wide {
 .theme-wrapper.dark div.layout-wrapper div.layout > aside {
   background-color: #1a1d21;
   border-right: 2px solid #343a40;
-}
-
-header a svg {
-  color: #ced4da;
-}
-
-header a:first-of-type svg {
-  color: #f8f9fa;
-}
-
-header a:hover svg {
-  color: #b197fc;
-}
-
-header a span,
-header button span {
-  color: #ced4da;
-}
-header a span svg,
-header button span svg {
-  color: #dee2e6;
-}
-
-header a:hover span,
-header button:hover span {
-  color: #f8f9fa;
-}
-header a:hover span svg,
-header button:hover span svg {
-  color: #b197fc;
-}
-
-header a,
-header button {
-  padding: 0 1vw !important;
 }
 
 /* monitor */

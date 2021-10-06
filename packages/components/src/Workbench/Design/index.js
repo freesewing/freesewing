@@ -28,6 +28,8 @@ const Design = (props) => {
     return val
   }
 
+  const round = (val) => Math.round(val * 10) / 10
+
   if (!props.design || props.focus === null || Object.keys(props.focus).length < 1) return null
   let info = []
   for (let part of Object.keys(props.focus)) {
@@ -69,10 +71,10 @@ const Design = (props) => {
           </IconButton>
           <ul key={'pdata-' + name}>
             <li>
-              <b>x</b>: {point.x}
+              <b>x</b>: {round(point.x)}
             </li>
             <li>
-              <b>y</b>: {point.y}
+              <b>y</b>: {round(point.y)}
             </li>
             {point.attributes.length > 0 && (
               <li>

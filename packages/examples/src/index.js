@@ -1,5 +1,8 @@
 import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
+import pluginBundle from '@freesewing/plugin-bundle'
+import buttonsPlugin from '@freesewing/plugin-buttons'
+import mirrorPlugin from '@freesewing/plugin-mirror'
+import bartackPlugin from '@freesewing/plugin-bartack'
 import config from '../config/'
 // Path API
 import draftPath_move from './path_move'
@@ -28,11 +31,15 @@ import draftPath_start from './path_start'
 import draftPath_translate from './path_translate'
 import draftPath_trim from './path_trim'
 // Plugins
-import draftPlugin_cutonfold from './plugin_cutonfold'
+import draftPlugin_bartack from './plugin_bartack'
+import draftPlugin_bartackalong from './plugin_bartackalong'
+import draftPlugin_bartackfractionalong from './plugin_bartackfractionalong'
 import draftPlugin_buttons from './plugin_buttons'
+import draftPlugin_cutonfold from './plugin_cutonfold'
 import draftPlugin_dimension from './plugin_dimension'
 import draftPlugin_grainline from './plugin_grainline'
 import draftPlugin_logo from './plugin_logo'
+import draftPlugin_mirror from './plugin_mirror'
 import draftPlugin_round from './plugin_round'
 import draftPlugin_sprinkle from './plugin_sprinkle'
 import draftPlugin_scalebox from './plugin_scalebox'
@@ -80,6 +87,8 @@ import draftSnippets_bnotch from './snippets_bnotch'
 import draftSnippets_notch from './snippets_notch'
 import draftSnippets_button from './snippets_button'
 import draftSnippets_buttonhole from './snippets_buttonhole'
+import draftSnippets_buttonhole_start from './snippets_buttonhole-start'
+import draftSnippets_buttonhole_end from './snippets_buttonhole-end'
 import draftSnippets_snapsocket from './snippets_snapsocket'
 import draftSnippets_snapstud from './snippets_snapstud'
 import draftSnippets_logo from './snippets_logo'
@@ -88,7 +97,12 @@ import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Pattern = new freesewing.Design(config, [
+  pluginBundle,
+  buttonsPlugin,
+  mirrorPlugin,
+  bartackPlugin,
+])
 
 // Attach draft methods to prototype
 let methods = {
@@ -117,11 +131,15 @@ let methods = {
   draftPath_start,
   draftPath_translate,
   draftPath_trim,
+  draftPlugin_bartack,
+  draftPlugin_bartackalong,
+  draftPlugin_bartackfractionalong,
   draftPlugin_buttons,
   draftPlugin_cutonfold,
   draftPlugin_dimension,
   draftPlugin_grainline,
   draftPlugin_logo,
+  draftPlugin_mirror,
   draftPlugin_round,
   draftPlugin_scalebox,
   draftPlugin_sprinkle,
@@ -151,6 +169,8 @@ let methods = {
   draftSnippets_notch,
   draftSnippets_button,
   draftSnippets_buttonhole,
+  draftSnippets_buttonhole_start,
+  draftSnippets_buttonhole_end,
   draftSnippets_snapsocket,
   draftSnippets_snapstud,
   draftSnippets_logo,
@@ -170,7 +190,7 @@ let methods = {
   draftUtils_curveintersectsy,
   draftUtils_splitcurve,
   draftDocs_overview,
-  draftDocs_coords
+  draftDocs_coords,
 }
 
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]

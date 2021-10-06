@@ -19,6 +19,6 @@ export default {
       let prefix = data.prefix || ''
       if (typeof data.strings[locale][prefix + text] === 'undefined') return text
       else return data.strings[locale][prefix + text]
-    }
-  }
+    },
+  },
 }

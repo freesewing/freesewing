@@ -1,5 +1,3 @@
-import * as shared from './shared'
-
 export default (part) => {
   let {
     measurements,
@@ -12,7 +10,8 @@ export default (part) => {
     Path,
     paths,
     utils,
-    complete
+    complete,
+    macro,
   } = part.shorthand()
 
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
@@ -121,13 +120,38 @@ export default (part) => {
   // Anchor point for sampling
   points.gridAnchor = points.cbHem
 
-  // Seamline
-  paths.saBase = shared.saBase('back', points, Path)
-  paths.seam = new Path()
-    .move(points.cbNeck)
-    .line(points.cbHem)
-    .join(paths.saBase)
-    .attr('class', 'fabric')
+  /*
+   * People would like to have the option to shift the shoulder seam
+   * See https://github.com/freesewing/freesewing/issues/642
+   * So let's make the people happy
+   */
+  // Front armhole is a bit deeper, add those points
+  let deeper = measurements.chest * options.frontArmholeDeeper
+  for (const p of ['', 'Cp1', 'Cp2']) {
+    points[`frontArmholePitch${p}`] = points[`armholePitch${p}`].shift(180, deeper)
+  }
+  // Add points needed for the mirrored front&back neck/armhole path
+  macro('mirror', {
+    mirror: [points.hps, points.shoulder],
+    points: [
+      points.neckCp2Front,
+      points.cfNeckCp1,
+      points.cfNeck,
+      points.cbNeck,
+      points.neckCp2,
+      points.frontArmholePitch,
+      points.frontArmholePitchCp2,
+      points.shoulderCp1,
+    ],
+    clone: true,
+  })
+
+  // How much space do we have to work with here?
+  // s3 = ShoulderSeamShift
+  store.set('s3CollarMaxFront', points.hps.dy(points.cfNeck) / 2)
+  store.set('s3CollarMaxBack', points.hps.dy(points.cbNeck) / 2)
+  store.set('s3ArmholeMax', points.shoulder.dy(points.frontArmholePitch) / 4)
+  // Let's leave the actual splitting the curves for the front/back parts
 
   // Complete pattern?
   if (complete) {

@@ -13,7 +13,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Top of raglan sleeve
@@ -105,7 +105,7 @@ export default function (part) {
       'raglanTop',
       'raglanTopCp1',
       'raglanTipBackCp2',
-      'raglanTipBack'
+      'raglanTipBack',
     ]
     for (let pid of tipPoints) points[pid] = points[pid].shift(90, ragDiff)
     // Fix sleeve length
@@ -137,7 +137,7 @@ export default function (part) {
   if (complete) {
     macro('grainline', {
       from: points.centerWrist,
-      to: points.raglanTop
+      to: points.raglanTop,
     })
     //points.title = new Point(points.armhole.x/2, points.armhole.y);
     macro('title', { at: points.gridAnchor, nr: 3, title: 'sleeve' })
@@ -170,47 +170,47 @@ export default function (part) {
     macro('vd', {
       from: points.wristLeft,
       to: points.bicepsLeft,
-      x: points.bicepsLeft.x - 15 - sa
+      x: points.bicepsLeft.x - 15 - sa,
     })
     macro('vd', {
       from: points.bicepsLeft,
       to: points.raglanTipFront,
-      x: points.bicepsLeft.x - 15 - sa
+      x: points.bicepsLeft.x - 15 - sa,
     })
     macro('vd', {
       from: points.bicepsRight,
       to: points.raglanTop,
-      x: points.bicepsRight.x + 15 + sa
+      x: points.bicepsRight.x + 15 + sa,
     })
     macro('vd', {
       from: points.bicepsRight,
       to: points.raglanTipBack,
-      x: points.bicepsRight.x + 30 + sa
+      x: points.bicepsRight.x + 30 + sa,
     })
     macro('hd', {
       from: points.raglanTipFront,
       to: points.raglanTop,
-      y: points.raglanTipBack.y - 15 - sa
+      y: points.raglanTipBack.y - 15 - sa,
     })
     macro('hd', {
       from: points.raglanTop,
       to: points.raglanTipBack,
-      y: points.raglanTipBack.y - 15 - sa
+      y: points.raglanTipBack.y - 15 - sa,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.raglanTop,
-      y: points.raglanTipBack.y - 30 - sa
+      y: points.raglanTipBack.y - 30 - sa,
     })
     macro('hd', {
       from: points.bicepsLeft,
       to: points.bicepsRight,
-      y: points.raglanTipBack.y - 45 - sa
+      y: points.raglanTipBack.y - 45 - sa,
     })
     macro('hd', {
       from: points.wristLeft,
       to: points.wristRight,
-      y: points.wristLeft.y + 15 + sa
+      y: points.wristLeft.y + 15 + sa,
     })
   }
   return part

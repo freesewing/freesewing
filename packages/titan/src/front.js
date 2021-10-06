@@ -74,10 +74,9 @@ export default (part) => {
       points.fork,
       points.fork.shift(0, 666)
     )
-    points.crotchSeamCurveCp1 = points.fork.shiftFractionTowards(
-      points.crotchSeamCurveMax,
-      options.crotchSeamCurveBend
-    )
+    points.crotchSeamCurveCp1 = points.fork
+      .shiftFractionTowards(points.crotchSeamCurveMax, options.crotchSeamCurveBend)
+      .rotate(options.crotchSeamCurveAngle * -1, points.fork)
     points.crotchSeamCurveCp2 = points.crotchSeamCurveStart.shiftFractionTowards(
       points.crotchSeamCurveMax,
       options.crotchSeamCurveBend
@@ -105,7 +104,7 @@ export default (part) => {
       'floorIn',
       'floorOut',
       'floor',
-      'grainlineBottom'
+      'grainlineBottom',
     ]
     let delta = seamDelta()
     let run = 0
@@ -136,7 +135,7 @@ export default (part) => {
       'crotchSeamCurveStart',
       'waistIn',
       'cfWaist',
-      'waistOut'
+      'waistOut',
     ]
     rotate.push(out ? 'seatOut' : 'fork')
     const deltaMethod = out ? outseamDelta : inseamDelta
@@ -170,7 +169,7 @@ export default (part) => {
     utils,
     snippets,
     Snippet,
-    sa
+    sa,
   } = part.shorthand()
 
   // Let's get to work
@@ -214,7 +213,10 @@ export default (part) => {
   // Control points to shape the legs towards the seat
   points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
   points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
-  points.seatOutCp1 = points.seatOut.shift(90, points.seatOut.y / 2)
+  points.seatOutCp1 = points.seatOut.shift(
+    90,
+    measurements.waistToHips * options.waistHeight + options.waistbandWidth
+  )
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 
   // Balance the waist
@@ -268,9 +270,9 @@ export default (part) => {
   adaptInseam()
 
   // Only now style the waist lower if requested
-  if (options.waistHeight < 1) {
+  if (options.waistHeight < 1 || options.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam().shiftAlong(
-      measurements.waistToHips * (1 - options.waistHeight)
+      measurements.waistToHips * (1 - options.waistHeight) + options.waistbandWidth
     )
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,
@@ -290,7 +292,7 @@ export default (part) => {
     points.grainlineTop.y = points.styleWaistIn.y
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
     points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.crotchSeamCurveStart.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)
@@ -298,7 +300,7 @@ export default (part) => {
     macro('title', {
       nr: 2,
       title: 'front',
-      at: points.titleAnchor
+      at: points.titleAnchor,
     })
 
     if (sa) {
@@ -335,27 +337,27 @@ export default (part) => {
       macro('hd', {
         from: points.floorOut,
         to: points.floor,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floor,
         to: points.floorIn,
-        y: points.floorIn.y - 15
+        y: points.floorIn.y - 15,
       })
       macro('hd', {
         from: points.floorOut,
         to: points.floorIn,
-        y: points.floorIn.y - 30
+        y: points.floorIn.y - 30,
       })
       macro('vd', {
         from: points.floorOut,
         to: points.fork,
-        x: points.fork.x + sa + 15
+        x: points.fork.x + sa + 15,
       })
       macro('vd', {
         from: points.fork,
         to: points.styleWaistIn,
-        x: points.fork.x + sa + 15
+        x: points.fork.x + sa + 15,
       })
       macro('vd', {
         from: points.floorIn,
@@ -363,44 +365,44 @@ export default (part) => {
         x:
           (points.seatOut.x < points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) -
           sa -
-          15
+          15,
       })
       macro('vd', {
         from: points.crotchSeamCurveStart,
         to: points.styleWaistIn,
-        x: points.crotchSeamCurveStart.x + sa + 15
+        x: points.crotchSeamCurveStart.x + sa + 15,
       })
       macro('hd', {
         from: points.seatOut,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       if (points.styleWaistOut.x < points.seatOut.x) {
         macro('hd', {
           from: points.styleWaistOut,
           to: points.grainlineTop,
-          y: points.styleWaistIn.y - sa - 30
+          y: points.styleWaistIn.y - sa - 30,
         })
       }
       macro('hd', {
         from: points.grainlineTop,
         to: points.styleWaistIn,
-        y: points.styleWaistIn.y - sa - 15
+        y: points.styleWaistIn.y - sa - 15,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.crotchSeamCurveStart,
-        y: points.styleWaistIn.y - sa - 30
+        y: points.styleWaistIn.y - sa - 30,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.crotchSeamCurveMax,
-        y: points.styleWaistIn.y - sa - 45
+        y: points.styleWaistIn.y - sa - 45,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.fork,
-        y: points.styleWaistIn.y - sa - 60
+        y: points.styleWaistIn.y - sa - 60,
       })
     }
   }

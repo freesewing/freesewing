@@ -1,6 +1,18 @@
 # Change log for: @freesewing/holmes
 
 
+## 2.18.0 (2021-09-09)
+
+### Fixed
+
+ - The `brimWidth` option is not a percent option, allowing the pattern to scale properly
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

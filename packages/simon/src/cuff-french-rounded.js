@@ -1,36 +1,36 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default (part) => {
-  let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
   draftFrenchCuff(part)
-  let height = store.get('cuffHeight')
+  const height = store.get('cuffHeight')
   macro('round', {
     from: points.topRight,
     to: points.bottomLeft,
     via: points.topLeft,
     radius: height / 3,
-    prefix: 'topLeft'
+    prefix: 'topLeft',
   })
   macro('round', {
     from: points.topLeft,
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: height / 3,
-    prefix: 'bottomLeft'
+    prefix: 'bottomLeft',
   })
   macro('round', {
     from: points.bottomLeft,
     to: points.topRight,
     via: points.bottomRight,
     radius: height / 3,
-    prefix: 'bottomRight'
+    prefix: 'bottomRight',
   })
   macro('round', {
     from: points.bottomRight,
     to: points.topLeft,
     via: points.topRight,
     radius: height / 3,
-    prefix: 'topRight'
+    prefix: 'topRight',
   })
 
   paths.seam = new Path()

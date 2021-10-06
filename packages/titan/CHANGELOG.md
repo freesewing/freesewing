@@ -1,6 +1,33 @@
 # Change log for: @freesewing/titan
 
 
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added the waistbandHeight option
+ - Added the crossSeamCurveAngle option
+ - Added the crotchSeamCurveAngle option
+
+### Changed
+
+ - Crotch- and Cross seam have been redrawn using the new angle options
+ - Added waistbandWidth option
+
+### Fixed
+
+ - Adapt seat control point when waist is dropped below the hip line
+ - Removed lingering console.log statements
+ - Configure dependencies to guarantee draft order
+ - Always keep seat control point vertically between styled waist and seat
+ - Adapt the outseam to the dropped waist in all circumstances
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

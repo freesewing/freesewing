@@ -14,7 +14,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   BuildMainShape(part, false)
@@ -26,10 +26,12 @@ export default function (part) {
       options.backVentLength * store.get('skirtLength')
     )
 
-    points.vLeg = points.lLeg.shift(180, options.backVentWidth)
-    points.vHem = points.lHem.shift(180, options.backVentWidth)
+    points.vLeg = points.rLeg.shiftFractionTowards(points.lLeg, 1 + options.backVentWidth)
+    points.vHem = points.rHem.shiftFractionTowards(points.lHem, 1 + options.backVentWidth)
     points.vTop = points.vLeg.shift(90, backVentLength)
-    points.lVent = points.vTop.shift(0, options.backVentWidth).shift(90, options.backVentWidth)
+    points.lVent = points.vTop
+      .shift(0, points.lLeg.dx(points.rLeg) * options.backVentWidth)
+      .shift(90, points.lLeg.dx(points.rLeg) * options.backVentWidth)
 
     paths.vent = new Path()
       .move(points.lVent)
@@ -58,7 +60,7 @@ export default function (part) {
   if (complete) {
     macro('grainline', {
       from: points.grainlineTop,
-      to: points.grainlineBottom
+      to: points.grainlineBottom,
     })
 
     snippets.logo = new Snippet('logo', points.logoAnchor)
@@ -68,13 +70,13 @@ export default function (part) {
         from: points.lWaist,
         to: points.lLeg,
         margin: 5,
-        offset: 10
+        offset: 10,
       })
     }
     macro('title', {
       nr: 2,
       at: points.titleAnchor,
-      title: 'back'
+      title: 'back',
     })
 
     if (sa) {
@@ -103,29 +105,29 @@ export default function (part) {
       macro('hd', {
         from: points.vHem,
         to: points.rHem,
-        y: points.rHem.y - options.paperlessOffset - sa
+        y: points.rHem.y - options.paperlessOffset - sa,
       })
       macro('hd', {
         from: points.vTop,
         to: points.lVent,
-        y: points.vTop.y
+        y: points.vTop.y,
       })
 
       macro('vd', {
         from: points.lSeat,
         to: points.lVent,
-        x: points.lWaist.x - options.paperlessOffset - sa
+        x: points.lWaist.x - options.paperlessOffset - sa,
       })
       macro('vd', {
         from: points.lVent,
         to: points.vTop,
-        x: points.lVent.x
+        x: points.lVent.x,
       })
     } else {
       macro('hd', {
         from: points.lHem,
         to: points.rHem,
-        y: points.rHem.y - options.paperlessOffset - sa
+        y: points.rHem.y - options.paperlessOffset - sa,
       })
     }
   }

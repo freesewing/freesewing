@@ -48,10 +48,10 @@ Part.prototype.runHooks = function (hookName, data = false) {
 }
 
 /** Returns an unused ID */
-Part.prototype.getId = function () {
+Part.prototype.getId = function (prefix = '') {
   this.freeId += 1
 
-  return '' + this.freeId
+  return prefix + this.freeId
 }
 
 /** Returns a value formatted for units provided in settings */
@@ -189,7 +189,7 @@ Part.prototype.shorthand = function () {
     complete,
     paperless,
     events: this.context.events,
-    raise: this.context.raise
+    raise: this.context.raise,
   }
 
   if (this.context.settings.debug) {
@@ -241,7 +241,7 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(`Could not set \`name\` property on \`points.${name}\``)
         }
         return (self.points[name] = value)
-      }
+      },
     }
     shorthand.points = new Proxy(this.points || {}, pointsProxy)
     // Proxy the paths object
@@ -261,7 +261,7 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(`Could not set \`name\` property on \`paths.${name}\``)
         }
         return (self.paths[name] = value)
-      }
+      },
     }
     shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
     // Proxy the snippets object
@@ -289,7 +289,7 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(`Could not set \`name\` property on \`snippets.${name}\``)
         }
         return (self.snippets[name] = value)
-      }
+      },
     }
     shorthand.snippets = new Proxy(this.snippets || {}, snippetsProxy)
     // Proxy the measurements object
@@ -301,7 +301,7 @@ Part.prototype.shorthand = function () {
           )
         return Reflect.get(...arguments)
       },
-      set: (measurements, name, value) => (self.context.settings.measurements[name] = value)
+      set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
     }
     shorthand.measurements = new Proxy(this.context.settings.measurements || {}, measurementsProxy)
     // Proxy the options object
@@ -311,9 +311,19 @@ Part.prototype.shorthand = function () {
           self.context.raise.warning(`Tried to access \`options.${name}\` but it is \`undefined\``)
         return Reflect.get(...arguments)
       },
-      set: (options, name, value) => (self.context.settings.options[name] = value)
+      set: (options, name, value) => (self.context.settings.options[name] = value),
     }
     shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)
+    // Proxy the absoluteOptions object
+    const absoluteOptionsProxy = {
+      get: function (absoluteOptions, name) {
+        if (typeof absoluteOptions[name] === 'undefined')
+          self.context.raise.warning(`Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``)
+        return Reflect.get(...arguments)
+      },
+      set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
+    }
+    shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, optionsProxy)
   } else {
     shorthand.Point = Point
     shorthand.Path = Path
@@ -323,6 +333,7 @@ Part.prototype.shorthand = function () {
     shorthand.snippets = this.snippets || {}
     shorthand.measurements = this.context.settings.measurements || {}
     shorthand.options = this.context.settings.options || {}
+    shorthand.absoluteOptions = this.context.settings.absoluteOptions || {}
   }
 
   return shorthand

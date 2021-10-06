@@ -7,11 +7,29 @@ import Design from '../Workbench/Design'
 import IconButton from '@material-ui/core/IconButton'
 import ResetIcon from '@material-ui/icons/SettingsBackupRestore'
 import Switch from '@material-ui/core/Switch'
+import { withStyles } from '@material-ui/core/styles'
+
+const PurpleSwitch = withStyles({
+  switchBase: {
+    color: '#868e96',
+    '&$checked': {
+      color: '#845ef7'
+    },
+    '&$checked + $track': {
+      backgroundColor: '#9775fa'
+    }
+  },
+  checked: {},
+  track: {
+    backgroundColor: '#868e96'
+  }
+})(Switch)
 
 const Example = ({
   pattern = 'examples',
   design = true,
   caption = '',
+  children=null,
   options = {},
   settings,
   part = '',
@@ -19,6 +37,8 @@ const Example = ({
 }) => {
   const [designMode, setDesignMode] = useState(false)
   const [focus, setFocus] = useState(null)
+
+  if (caption) console.log('Passing the caption prop to @freesewing/components/Example is deprecated. See: https://github.com/freesewing/freesewing/issues/1043')
 
   const raiseEvent = (type, data) => {
     if (type === 'clearFocusAll') return setFocus(null)
@@ -63,22 +83,25 @@ const Example = ({
   return (
     <figure className={designMode ? 'design example' : 'example'}>
       <div className="example">
-        {designMode ? (
-          <div className="actions">
-            <IconButton color="primary" onClick={() => raiseEvent('clearFocusAll', null)}>
-              <ResetIcon />
-            </IconButton>
-            <Switch
-              checked={designMode}
-              onChange={() => setDesignMode(!designMode)}
-              value={designMode}
-              color="primary"
-            />
-          </div>
-        ) : null}
-        <Draft {...patternProps} design={design} focus={focus} raiseEvent={raiseEvent} />
+        <div className="actions">
+          <IconButton
+            disabled={!designMode}
+            color="primary"
+            onClick={() => raiseEvent('clearFocusAll', null)}
+          >
+            <ResetIcon />
+          </IconButton>
+          <PurpleSwitch
+            checked={designMode}
+            onChange={() => setDesignMode(!designMode)}
+            value={designMode}
+            color="primary"
+            className="switch-accent"
+          />
+        </div>
+        <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
       </div>
-      <figcaption>{caption}</figcaption>
+      <figcaption>{caption || children}</figcaption>
       {designMode && (
         <div className="design">
           <Design

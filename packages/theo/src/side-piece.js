@@ -54,7 +54,7 @@ export default function (part) {
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
       from: points.grainlineBottom,
-      to: points.grainlineTop
+      to: points.grainlineTop,
     })
     points.title = points[-801].shift(180, 40)
     macro('title', { at: points.title, title: 'sidePiece', nr: 8 })
@@ -65,32 +65,32 @@ export default function (part) {
     macro('hd', {
       from: points.topLeft,
       to: points[-1102],
-      y: points[-1102].y - sa - 15
+      y: points[-1102].y - sa - 15,
     })
     macro('hd', {
       from: points.topLeft,
       to: points[-8],
-      y: points[-1102].y - sa - 30
+      y: points[-1102].y - sa - 30,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points[61],
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('hd', {
       from: points.bottomLeft,
       to: points[-8],
-      y: points.bottomLeft.y + sa + 30
+      y: points.bottomLeft.y + sa + 30,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - sa - 15
+      x: points.topLeft.x - sa - 15,
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points[-1102],
-      x: points.topLeft.x - sa - 30
+      x: points.topLeft.x - sa - 30,
     })
   }
 

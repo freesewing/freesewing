@@ -5,10 +5,9 @@ export default {
   version,
   design: 'Bella Incognito',
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'tops',
   type: 'block',
   difficulty: 3,
-  tags: ['block', 'top', 'basics'],
   optionGroups: {
     fit: ['chestEase', 'waistEase', 'bustSpanEase'],
     darts: ['backDartHeight', 'bustDartLength', 'waistDartLength', 'bustDartCurve'],
@@ -17,9 +16,9 @@ export default {
       'backArmholeSlant',
       'backArmholeCurvature',
       'frontArmholePitchDepth',
-      'backArmholePitchDepth'
+      'backArmholePitchDepth',
     ],
-    advanced: ['backNeckCutout', 'backHemSlope', 'frontShoulderWidth', 'highBustWidth']
+    advanced: ['backNeckCutout', 'backHemSlope', 'frontShoulderWidth', 'highBustWidth'],
   },
   measurements: [
     'highBust',
@@ -33,17 +32,17 @@ export default {
     'hpsToWaistFront',
     'hpsToWaistBack',
     'shoulderToShoulder',
-    'shoulderSlope'
+    'shoulderSlope',
     // FIXME: Measurement from waist up to armhole (for sleeveless)
   ],
   dependencies: {
-    back: 'frontSideDart'
+    frontSideDart: 'back',
   },
   inject: {},
   hide: [],
   parts: [
     'back',
-    'frontSideDart'
+    'frontSideDart',
     //   'frontShoulderDart'
   ],
   options: {
@@ -75,6 +74,6 @@ export default {
     highBustWidth: { pct: 86, max: 92, min: 80 },
     bustDartLength: { pct: 90, min: 75, max: 100 },
     waistDartLength: { pct: 90, min: 75, max: 95 },
-    bustDartCurve: { pct: 100, min: 0, max: 100 }
-  }
+    bustDartCurve: { pct: 100, min: 0, max: 100 },
+  },
 }

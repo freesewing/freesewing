@@ -1,9 +1,9 @@
 import React from 'react'
 import Event from './event'
 
-const DraftEvents = ({ events }) => (
+const DraftEvents = ({ events, types = ['error', 'warning', 'debug'] }) => (
   <div className="draft-events">
-    {['error', 'warning', 'debug'].map((type) => (
+    {types.map((type) => (
       <div className={`events-${type}`} key={type}>
         {events[type].map((event, index) => (
           <Event event={event} type={type} key={index} />

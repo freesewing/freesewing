@@ -16,7 +16,7 @@ export default function (part) {
     macro('title', {
       at: points.armCenter,
       nr: 4,
-      title: 'undersleeve'
+      title: 'undersleeve',
     })
 
     if (sa) {
@@ -42,12 +42,12 @@ export default function (part) {
     macro('hd', {
       from: points.usLeftEdge,
       to: points.usTip,
-      y: points.usTip.y - sa - 15
+      y: points.usTip.y - sa - 15,
     })
     macro('vd', {
       from: points.tsRightEdge,
       to: points.usTip,
-      x: points.tsRightEdge.x + sa + 15
+      x: points.tsRightEdge.x + sa + 15,
     })
   }
 

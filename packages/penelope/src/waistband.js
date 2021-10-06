@@ -11,7 +11,8 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
+    store,
   } = part.shorthand()
 
   if (!options.waistBand) {
@@ -19,17 +20,17 @@ export default function (part) {
     return part
   }
 
-  let waistEase = options.waistEase
   let waist = measurements.waist
-  waist += waistEase
+  waist += measurements.waist * options.waistEase
+  store.set('waistBandWidth', options.waistBandWidth * measurements.waistToKnee)
 
   points.TL = new Point(0, 0)
   points.BL = new Point(0, waist / 2 + options.waistBandOverlap)
-  points.TR = new Point(options.waistBandWidth, 0)
-  points.BR = new Point(options.waistBandWidth, waist / 2 + options.waistBandOverlap)
+  points.TR = new Point(store.get('waistBandWidth'), 0)
+  points.BR = new Point(store.get('waistBandWidth'), waist / 2 + options.waistBandOverlap)
 
-  points.titleAnchor = new Point(options.waistBandWidth / 2, waist / 6)
-  points.logoAnchor = new Point(options.waistBandWidth / 2, waist / 3)
+  points.titleAnchor = new Point(store.get('waistBandWidth') / 2, waist / 6)
+  points.logoAnchor = new Point(store.get('waistBandWidth') / 2, waist / 3)
 
   paths.outline = new Path()
     .move(points.TL)
@@ -47,7 +48,7 @@ export default function (part) {
       to: points.TL,
       margin: 15,
       offset: 15,
-      grainline: true
+      grainline: true,
     })
 
     snippets.logo = new Snippet('logo', points.logoAnchor)
@@ -57,7 +58,7 @@ export default function (part) {
       at: points.titleAnchor,
       title: 'waistband',
       rotation: 90,
-      scale: 0.75
+      scale: 0.75,
     })
 
     if (sa) {
@@ -73,12 +74,12 @@ export default function (part) {
     macro('vd', {
       from: points.TL,
       to: points.BL,
-      x: points.TL.x + options.paperlessOffset
+      x: points.TL.x + options.paperlessOffset,
     })
     macro('hd', {
       from: points.BL,
       to: points.BR,
-      y: points.BR.y - options.paperlessOffset
+      y: points.BR.y - options.paperlessOffset,
     })
   }
 

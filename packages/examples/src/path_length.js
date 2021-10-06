@@ -11,17 +11,17 @@ export default (part) => {
 
   macro('pd', {
     path: paths.example,
-    d: -20
+    d: -20,
   })
 
   macro('pd', {
     path: new Path().move(points.B).line(points.A),
-    d: 10
+    d: 10,
   })
 
   macro('pd', {
     path: new Path().move(points.B).curve(points.BCp2, points.CCp1, points.C),
-    d: -10
+    d: -10,
   })
 
   return part

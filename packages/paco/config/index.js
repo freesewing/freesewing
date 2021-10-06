@@ -1,28 +1,30 @@
 import { version } from '../package.json'
+import { pctBasedOn } from '@freesewing/core'
 
 export default {
   name: 'paco',
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'unisex',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 3,
-  tags: ['bottom', 'basics', 'pants', 'trousers', 'casual'],
   optionGroups: {
     fit: ['seatEase', 'waistEase', 'heelEase'],
     style: ['waistHeight', 'lengthBonus', 'crotchDrop', 'elasticatedHem'],
-    elastic: ['waistElastic', 'ankleElastic'],
+    elastic: ['waistbandWidth', 'ankleElastic'],
     pockets: ['frontPockets', 'backPockets'],
     advanced: [
       'crossSeamCurveStart',
       'crossSeamCurveBend',
+      'crossSeamCurveAngle',
       'crotchSeamCurveStart',
       'crotchSeamCurveBend',
+      'crotchSeamCurveAngle',
       'grainlinePosition',
       'legBalance',
-      'waistBalance'
-    ]
+      'waistBalance',
+    ],
   },
   measurements: [
     'crossSeam',
@@ -37,7 +39,7 @@ export default {
     'waistToKnee',
     'waistToHips',
     'waistToSeat',
-    'waistToUpperLeg'
+    'waistToUpperLeg',
   ],
   parts: [
     'back',
@@ -47,7 +49,7 @@ export default {
     'pocketBagFront',
     'pocketBagBack',
     'pocketWelt',
-    'pocketWeltInterfacing'
+    'pocketWeltInterfacing',
   ],
   inject: {
     back: 'titanBack',
@@ -55,14 +57,14 @@ export default {
     pocketBagFront: 'front',
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
-    pocketWeltInterfacing: 'pocketWelt'
+    pocketWeltInterfacing: 'pocketWelt',
   },
   dependencies: {
     front: 'back',
     pocketBagFront: 'front',
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
-    pocketWeltInterfacing: 'pocketWelt'
+    pocketWeltInterfacing: 'pocketWelt',
   },
   hide: ['titanBack', 'titanFront'],
   options: {
@@ -80,6 +82,9 @@ export default {
     backPocketWidthRatio: 0.37,
     weltFactor: 0.15,
 
+    // Disable this option from Titan
+    waistbandHeight: 0,
+
     // Fit
     waistEase: { pct: 2, min: 0, max: 10 },
     seatEase: { pct: 5, min: 0, max: 15 },
@@ -91,9 +96,16 @@ export default {
     elasticatedHem: { bool: true },
 
     // Elastic
-    waistElastic: { mm: 35, min: 10, max: 60 },
-    ankleElastic: { mm: 70, min: 10, max: 130 },
-    heelEase: { pct: 2.5, min: 0, max: 5 },
+    waistbandWidth: { pct: 3, min: 1, max: 6, snap: 5 },
+    ankleElastic: {
+      pct: 5, min: 1, max: 13,
+      snap: {
+        metric: [ 5, 10, 12, 20, 25, 30, 40, 50, 80 ],
+        imperial: [ 6.35, 9.525, 12.7, 15.24, 19.05, 25.4, 30.48, 50.8, 76.2],
+      },
+      ...pctBasedOn('waistToFloor')
+    },
+    heelEase: { pct: 5, min: 0, max: 50 },
 
     // Pockets
     frontPockets: { bool: true },
@@ -103,9 +115,11 @@ export default {
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100 },
     crossSeamCurveBend: { pct: 65, min: 45, max: 85 },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20 },
     crotchSeamCurveStart: { pct: 80, min: 60, max: 95 },
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100 },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
-    grainlinePosition: { pct: 45, min: 30, max: 60 }
-  }
+    grainlinePosition: { pct: 45, min: 30, max: 60 },
+  },
 }

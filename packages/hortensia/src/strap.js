@@ -1,16 +1,6 @@
 export default function (part) {
-  let {
-    store,
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    sa,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { store, options, Point, Path, points, paths, complete, sa, paperless, macro } =
+    part.shorthand()
 
   let w = options.handleWidth
   let h = store.get('depth') * options.strapLength
@@ -49,7 +39,7 @@ export default function (part) {
       nr: 5,
       title: 'Strap',
       rotation: 90,
-      scale: 0.25
+      scale: 0.25,
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -65,12 +55,12 @@ export default function (part) {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15
+      y: points.bottomLeft.y + sa + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

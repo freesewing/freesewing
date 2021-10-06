@@ -5,10 +5,9 @@ export default {
   version: version,
   design: ['Anneke Caramin', 'Joost De Cock'],
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'coats',
   type: 'pattern',
   difficulty: 5,
-  tags: ['top', 'coat', 'cosplay'],
   optionGroups: {
     fit: [
       'acrossBackFactor',
@@ -20,7 +19,7 @@ export default {
       'sleeveBend',
       'sleeveLengthBonus',
       'waistEase',
-      'seatEase'
+      'seatEase',
     ],
     advanced: [
       'backNeckCutout',
@@ -30,7 +29,7 @@ export default {
       'shoulderSlopeReduction',
       'sleevecapHeight',
       'sleevecapEase',
-      'contour'
+      'contour',
     ],
     pockets: [
       'pocketPlacementHorizontal',
@@ -46,10 +45,17 @@ export default {
       'innerPocketPlacement',
       'innerPocketWidth',
       'innerPocketDepth',
-      'innerPocketWeltHeight'
+      'innerPocketWeltHeight',
     ],
-    style: ['beltWidth', 'buttonSpacingHorizontal', 'cuffLength', 'length'],
-    collar: ['collarHeight', 'collarSpread', 'collarFlare']
+    style: [
+      'beltWidth',
+      'buttonSpacingHorizontal',
+      'cuffLength',
+      'length',
+      's3Collar',
+      's3Armhole',
+    ],
+    collar: ['collarHeight', 'collarSpread', 'collarFlare'],
   },
   measurements: [
     'biceps',
@@ -70,7 +76,7 @@ export default {
     // For breasts
     'highBust',
     'bustSpan',
-    'hpsToBust'
+    'hpsToBust',
   ],
   dependencies: {
     bentBack: 'bentBase',
@@ -95,7 +101,7 @@ export default {
     innerPocketBag: 'carltonFront',
     innerPocketTab: 'carltonFront',
     front: 'carltonFront',
-    side: 'front'
+    side: 'front',
   },
   inject: {
     bentBack: 'bentBase',
@@ -109,7 +115,7 @@ export default {
     collar: 'collarStand',
     pocketLining: 'pocket',
     front: 'carltonFront',
-    side: 'front'
+    side: 'front',
   },
   hide: [
     'bentBase',
@@ -118,7 +124,7 @@ export default {
     'bentSleeve',
     'bentTopSleeve',
     'bentUnderSleeve',
-    'carltonFront'
+    'carltonFront',
   ],
   parts: [
     'back',
@@ -136,7 +142,7 @@ export default {
     'chestPocketBag',
     'innerPocketWelt',
     'innerPocketBag',
-    'innerPocketTab'
+    'innerPocketTab',
   ],
   options: {
     // Constants
@@ -162,6 +168,9 @@ export default {
     shoulderSlopeReduction: { pct: 12, min: 0, max: 80 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
 
     // Carlton options
     waistEase: { pct: 14, min: 8, max: 25 },
@@ -193,6 +202,6 @@ export default {
     collarFlare: { pct: 20, min: 0, max: 40 },
 
     // Carlita-specific options
-    contour: { pct: 50, min: 25, max: 75 }
-  }
+    contour: { pct: 50, min: 25, max: 75 },
+  },
 }

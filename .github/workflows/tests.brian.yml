@@ -1,6 +1,14 @@
 name: Unit tests - Brian
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
 
 jobs:
   test:
@@ -9,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - name: Checkout repository
@@ -23,7 +31,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/brian && npm install @freesewing/core@^2.14.0 @freesewing/plugin-bundle@^2.14.0 @freesewing/models@2.14.0 @freesewing/pattern-info@2.14.0 mocha chai"
+        run: "cd packages/brian && npm install @freesewing/core@^2.18.0 @freesewing/plugin-bundle@^2.18.0 @freesewing/plugin-mirror@^2.18.0 @freesewing/models@2.18.0 @freesewing/pattern-info@2.18.0 mocha chai"
         env:
           CI: true
       - name: Build pattern

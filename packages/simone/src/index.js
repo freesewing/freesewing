@@ -41,7 +41,7 @@ let simonParts = [
   'Collar',
   'SleevePlacketUnderlap',
   'SleevePlacketOverlap',
-  'Cuff'
+  'Cuff',
 ]
 
 for (let Part of simonParts) {

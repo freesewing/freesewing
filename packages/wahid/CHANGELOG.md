@@ -1,6 +1,19 @@
 # Change log for: @freesewing/wahid
 
 
+## 2.18.0 (2021-09-09)
+
+### Fixed
+
+ - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
+ - Support a zero value for the `backScyeDart` option
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

@@ -15,7 +15,7 @@ import {
   getDartInsertionPoint,
   getDartLocationsAsNumbers,
   getDartPaths,
-  getSaDartPaths
+  getSaDartPaths,
 } from './dart-utils'
 
 export default (part) => {
@@ -31,7 +31,7 @@ export default (part) => {
     paperless,
     macro,
     snippets,
-    Snippet
+    Snippet,
   } = part.shorthand()
 
   /*
@@ -167,83 +167,83 @@ export default (part) => {
     macro('vd', {
       from: points.cfWaist,
       to: points.bustPoint,
-      x: tl.x - 15 - sa
+      x: tl.x - 15 - sa,
     })
     macro('vd', {
       from: points.cfWaist,
       to: points.cfNeck,
-      x: tl.x - 30 - sa
+      x: tl.x - 30 - sa,
     })
     macro('vd', {
       from: points.cfWaist,
       to: points.hps,
-      x: tl.x - 45 - sa
+      x: tl.x - 45 - sa,
     })
     macro('vd', {
       from: points.waist,
       to: points.armhole,
-      x: br.x + 15 + sa
+      x: br.x + 15 + sa,
     })
     macro('vd', {
       from: points.waist,
       to: points.armholePitch,
-      x: br.x + 30 + sa
+      x: br.x + 30 + sa,
     })
     macro('vd', {
       from: points.waist,
       to: points.shoulder,
-      x: br.x + 45 + sa
+      x: br.x + 45 + sa,
     })
     macro('vd', {
       from: points.waist,
       to: points.hps,
-      x: br.x + 60 + sa
+      x: br.x + 60 + sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.hps,
-      y: tl.y - 15 - sa
+      y: tl.y - 15 - sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.shoulder,
-      y: tl.y - 30 - sa
+      y: tl.y - 30 - sa,
     })
     macro('hd', {
       from: points.cfNeck,
       to: points.armhole,
-      y: tl.y - 30 - sa
+      y: tl.y - 30 - sa,
     })
     macro('hd', {
       from: points.cfWaist,
       to: points.bustPoint,
-      y: br.y + 15 + sa
+      y: br.y + 15 + sa,
     })
     macro('hd', {
       from: points.cfWaist,
       to: points.waist,
-      y: br.y + 30 + sa
+      y: br.y + 30 + sa,
     })
     macro('ld', {
       from: points.primaryBustDart1,
       to: points.primaryBustDart2,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.primaryBustDart2,
       to: points.primaryBustDartTip,
-      d: 15
+      d: 15,
     })
     macro('ld', {
       from: points.primaryBustDart2,
       to: points.primaryBustDartTip,
-      d: 15
+      d: 15,
     })
     if (loc2 !== 0 && loc1 !== loc2) {
       macro('ld', {
         from: points.secondaryBustDart2,
         to: points.secondaryBustDartTip,
-        d: 15
+        d: 15,
       })
     }
   }

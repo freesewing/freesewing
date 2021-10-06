@@ -8,9 +8,8 @@ export default {
   department: 'accessories',
   type: 'pattern',
   difficulty: 2,
-  tags: ['top', 'basics'],
   optionGroups: {
-    style: ['tipWidth', 'knotWidth', 'lengthBonus']
+    style: ['tipWidth', 'knotWidth', 'lengthBonus'],
   },
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   parts: [
@@ -20,23 +19,23 @@ export default {
     'fabricTail',
     'liningTip',
     'liningTail',
-    'loop'
+    'loop',
   ],
   options: {
     tipWidth: {
       mm: 60,
       min: 20,
-      max: 120
+      max: 120,
     },
     knotWidth: {
       mm: 35,
       min: 20,
-      max: 70
+      max: 70,
     },
     lengthBonus: {
       pct: 0,
       min: -50,
-      max: 50
-    }
-  }
+      max: 50,
+    },
+  },
 }

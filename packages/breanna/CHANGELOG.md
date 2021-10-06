@@ -1,6 +1,12 @@
 # Change log for: @freesewing/breanna
 
 
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

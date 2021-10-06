@@ -27,7 +27,7 @@ Please report unacceptable behavior to [us@freesewing.org](mailto:us@freesewing.
 
 Please don't file an issue to ask a question. 
 You'll get faster results by contacting us on Discord.
-You can get to our Discord server via https://chat.freesewing.org/. 
+You can get to our Discord server via https://discord.freesewing.org/. 
 
 Please keep in mind that our community members live all over the world. 
 So what's daytime for you might be the middle of the night for others.
@@ -90,7 +90,7 @@ Triaging issues is a great way to get involved FreeSewing. You can do tasks such
  - Assigning issues to milestones so we can plan our releases
 
 All FreeSewing contributors have triage permissions that allows them to do this.
-If you don't have the rights, or bump into any issues, [reach out to us via chat](https://chat.freesewing.org).
+If you don't have the rights, or bump into any issues, [reach out to us via chat](https://discord.freesewing.org).
 
 ### Reporting Bugs
 
@@ -124,7 +124,7 @@ Create an issue [in our monorepo](https://github.com/freesewing/freesewing/issue
 Unsure where to begin contributing to FreeSewing? 
 You can start by looking through the issues labeled [good first issue](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8D+good+first+issue%22).
 
-Don't be afraid to take on an issue. If you get stuck, [we'll help you out](https://chat.freesewing.org/).
+Don't be afraid to take on an issue. If you get stuck, [we'll help you out](https://discord.freesewing.org/).
 
 
 <ReadMore />

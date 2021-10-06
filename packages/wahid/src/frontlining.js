@@ -22,6 +22,7 @@ export default (part) => {
   if (options.hemStyle === 'classic') {
     paths.seam.curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
   } else paths.seam.line(points.hem)
+  paths.seam.close()
 
   if (complete) {
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -29,7 +30,7 @@ export default (part) => {
     macro('title', {
       nr: 4,
       at: points.title,
-      title: 'frontLining'
+      title: 'frontLining',
     })
     points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
     snippets.logo = new Snippet('logo', points.logo)

@@ -14,7 +14,7 @@ export default (part) => {
     from: points.A,
     to: points.B,
     text: 'translate(120,60)',
-    noStartMarker: true
+    noStartMarker: true,
   })
 
   return box(part, 150, 85)

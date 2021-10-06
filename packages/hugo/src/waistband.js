@@ -1,17 +1,6 @@
 export default function (part) {
-  let {
-    measurements,
-    options,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    units
-  } = part.shorthand()
+  let { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro, units } =
+    part.shorthand()
 
   let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = complete
@@ -63,7 +52,7 @@ export default function (part) {
     macro('title', { at: points.title, nr: 8, title: 'waistband' })
     macro('grainline', {
       from: points.bottomMidLeft,
-      to: points.topMidLeft
+      to: points.topMidLeft,
     })
 
     // Always include this dimension as we don't print the entire part
@@ -71,7 +60,7 @@ export default function (part) {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: points.bottomRight.y + sa + 15,
-      text: units(measurements.chest * (1 + options.chestEase) * (1 - options.ribbingStretch))
+      text: units(measurements.chest * (1 + options.chestEase) * (1 - options.ribbingStretch)),
     })
   }
 
@@ -80,7 +69,7 @@ export default function (part) {
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + sa + 15
+      x: points.topRight.x + sa + 15,
     })
   }
 

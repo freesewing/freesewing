@@ -10,7 +10,7 @@ export default function (part) {
     snippets,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let pocketDepth = options.backPocketDepth
@@ -47,7 +47,7 @@ export default function (part) {
     macro('title', {
       nr: 4,
       at: points.title,
-      title: 'backPocket'
+      title: 'backPocket',
     })
 
     points.logo = points.title.shift(270, 75)
@@ -63,12 +63,12 @@ export default function (part) {
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y + 15
+      y: points.topLeft.y + 15,
     })
     macro('vd', {
       from: points.topLeft,
       to: points.bottomLeft,
-      x: points.topLeft.x + 15
+      x: points.topLeft.x + 15,
     })
   }
 

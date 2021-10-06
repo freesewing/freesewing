@@ -1,7 +1,7 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  let {
+  const {
     utils,
     sa,
     Point,
@@ -13,7 +13,7 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
 
   if (!options.seperateButtonPlacket || options.buttonPlacketStyle !== 'classic') {
@@ -23,11 +23,11 @@ export default (part) => {
     return part
   }
 
-  for (let id of Object.keys(part.paths)) {
+  for (const id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
   macro('flip')
-  let width = options.buttonPlacketWidth
+  const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -60,7 +60,7 @@ export default (part) => {
       .attr('class', 'dotted')
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['placketTopOut', 'placketBottomOut']
+      on: ['placketTopOut', 'placketBottomOut'],
     })
 
     // Buttons
@@ -71,7 +71,7 @@ export default (part) => {
     points.grainlineTo = points.placketTopEdge.shift(180, width / 2)
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
 
     // Title
@@ -81,7 +81,7 @@ export default (part) => {
       nr: '1b',
       title: 'buttonPlacket',
       scale: 0.75,
-      rotation: -90
+      rotation: -90,
     })
 
     // Logo
@@ -105,17 +105,17 @@ export default (part) => {
     macro('hd', {
       from: points.placketTopIn,
       to: points.placketTopOut,
-      y: points.placketTopIn.y - 15 - sa
+      y: points.placketTopIn.y - 15 - sa,
     })
     macro('hd', {
       from: points.placketTopIn,
       to: points.placketTopEdge,
-      y: points.placketTopIn.y - 30 - sa
+      y: points.placketTopIn.y - 30 - sa,
     })
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
-      x: points.placketTopEdge.x + 15 + sa
+      x: points.placketTopEdge.x + 15 + sa,
     })
     points.button0 = points.placketTopEdge
     let j
@@ -124,7 +124,7 @@ export default (part) => {
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
-        x: points.placketTopIn.x - 15 - sa
+        x: points.placketTopIn.x - 15 - sa,
       })
     }
   }

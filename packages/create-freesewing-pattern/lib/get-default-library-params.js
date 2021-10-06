@@ -15,7 +15,7 @@ module.exports = async () => {
     repo: info => `${info.author}/${info.name}`,
     license: config.get("license", "MIT"),
     manager: config.get("manager", "npm"),
-    template: config.get("template", "default")
+    template: config.get("template", "freesewing")
   };
 
   try {

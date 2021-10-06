@@ -11,7 +11,7 @@ export default (part) => {
     snippets,
     utils,
     sa,
-    complete
+    complete,
   } = part.shorthand()
 
   /*
@@ -109,7 +109,7 @@ export default (part) => {
     'armholeHollowCp1',
     'armholeHollow',
     'armholeHollowCp2',
-    'armholePitchCp1'
+    'armholePitchCp1',
   ]
   for (let p of rot1) points[`${p}_rot1`] = points[p].rotate(FBARot, points.armholePitch)
   //
@@ -174,7 +174,7 @@ export default (part) => {
     'armholeHollowCp2',
     'armholePitchCp1',
     'belowDartCpTop',
-    'belowDartCpBottom'
+    'belowDartCpBottom',
   ]
   for (let p of rot2)
     points[`${p}_rot2`] = points[`${p}_rot1`].rotate(FBARot * -1, points.bust_rot1)
@@ -262,7 +262,7 @@ export default (part) => {
     'armholeHollowCp1',
     'armholeHollow',
     'armholeHollowCp2',
-    'armholePitchCp1'
+    'armholePitchCp1',
   ]
   for (let p of clone1) points[p] = points[`${p}_rot1`].clone()
   let clone2 = ['hem', 'hips', 'hipsCp2', 'waistCp1', 'waist']
@@ -286,6 +286,13 @@ export default (part) => {
     points.armholePitchCp2,
     points.armholePitch.dist(points.armholePitchCp1_rot1)
   )
+  // This is a problem because ever since the S3 options in Brian
+  // we re-use paths.frontArmhole which now does not match up with
+  // the armholePitch point we moved above. So let's hack the path's
+  // starting point.
+  // See https://github.com/freesewing/freesewing/issues/1335
+  paths.frontArmhole.ops[0].to.x = points.armholePitch.x
+  paths.frontArmhole.ops[0].to.y = points.armholePitch.y
 
   //
   // Put the snippets in the right place
@@ -293,7 +300,7 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2']
+    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2'],
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)
@@ -312,9 +319,9 @@ export default (part) => {
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .line(points.neck)
-    .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+    .join(paths.frontArmhole)
+    .line(points.s3CollarSplit)
+    .join(paths.frontCollar)
 
   switch (options.hemStyle) {
     case 'baseball':
@@ -338,7 +345,7 @@ export default (part) => {
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
@@ -361,7 +368,7 @@ export default (part) => {
   paths.saBase.render = false
 
   if (complete && sa) {
-    paths.saFrench = paths.saBase.offset(sa * 2).attr('class', 'fabric sa')
+    paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
     paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
     paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
     paths.saConnect = new Path()

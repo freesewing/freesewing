@@ -1,10 +1,10 @@
 ---
-SidePanel: Side Panel
-FrontBackPanel: Front and Back Panel
-BottomPanel: Bottom Panel
-ZipperPanel: Zipper Panel
-Strap: Handle
-strapLength: Length of the Handles
-handleWidth: Width of the handles
-zipperSize: Standard zipper size
-SidePanelReinforcement: Side Reinforcement Panel
+SidePanel: Seitenleiste
+FrontBackPanel: Front- und Rückseite
+BottomPanel: Unteres Panel
+ZipperPanel: Reißverschluss
+Strap: Identifikator
+strapLength: Länge der Griffe
+handleWidth: Breite der Griffe
+zipperSize: Standard Reißverschlussgröße
+SidePanelReinforcement: Seitenverstärker

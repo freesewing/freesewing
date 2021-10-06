@@ -32,7 +32,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 13,
-      title: 'innerPocketWelt'
+      title: 'innerPocketWelt',
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -41,12 +41,12 @@ export default function (part) {
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        y: points.topRight.y - sa - 15
+        y: points.topRight.y - sa - 15,
       })
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + sa + 15
+        x: points.topRight.x + sa + 15,
       })
     }
   }

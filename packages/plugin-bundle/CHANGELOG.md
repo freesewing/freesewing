@@ -1,6 +1,13 @@
 # Change log for: @freesewing/plugin-bundle
 
 
+## 2.17.0 (2021-07-01)
+
+### Changed
+
+ - Include plugin-buttons
+ - Include plugin-mirror
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

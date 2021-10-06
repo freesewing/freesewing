@@ -49,7 +49,7 @@ buttons:
   title: Aantal knopen
   description: Het aantal knopen op de sluiting vooraan.
 collarAngle:
-  title: Hoekjes kraag
+  title: Hoek kraag
   description: De hoek van de punten van de kraag. 
 collarBend:
   title: Kromming kraag
@@ -71,7 +71,7 @@ collarStandCurve:
   description: De curve van de uiteindes van de staander.
 collarStandWidth:
   title: Breedte staander
-  description: De breedte van de staander.
+  description: Breedte van de staander.
 cuffButtonRows:
   title: Rijen knopen op manchet
   description: Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten.
@@ -85,7 +85,7 @@ cuffLength:
   title: Lengte manchet
   description: De lengte van de manchetten.
 cuffStyle:
-  title: Stijl manchet
+  title: Stijl Manchet
   description: De stijl van de manchetten.
   options:
     roundedBarrelCuff: Afgeronde klassieke manchet
@@ -97,6 +97,9 @@ cuffStyle:
 extraTopButton:
   title: Extra knoop bovenaan
   description: Of je al dan niet een extra knoop bovenaan de sluiting wil.
+ffsa:
+  title: Glanzende naadwaarde
+  description: De hoeveelheid naadwaarde aan geflanste naden in verhouding tot de normale naadwaarde
 hemCurve:
   title: Curve zoom
   description: De hoogte van de curve op een afgeronde zoom.
@@ -107,6 +110,9 @@ hemStyle:
     straight: Rechte zoom
     baseball: Ronde zoom
     slashed: Zoom met zijsplit
+roundBack:
+  title: Rond terug af
+  description: Om een round(er) achteraan te passen voegt dit de lengte aan het midden (aan de schouderpas) toe die richting de zijkanten kort.
 seperateButtonholePlacket:
   title: Apart knoopsgatenpat
   description: Teken een apart knoopsgatenpat.
@@ -125,6 +131,6 @@ splitYoke:
 waistEase:
   title: Overwijdte taille
   description: De hoeveelheid extra ruimte aan je (natuurlijke) taille.
-yokeDart:
-  title: Neep schouderpas
-  description: Of je een neep aan de zijkanten van de schouderpas wil om beter te passen voor een ronde rug.
+yokeHeight:
+  title: Hoogte schouderpas
+  description: Bepaalt de hoogte van de schouderpas

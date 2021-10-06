@@ -1,15 +1,19 @@
 ---
 advanced: Fortgeschritten
-armhole: Armhole
+armhole: Armloch
 closure: Verschluss
 collar: Kragen
 construction: Konstruktion
 cuffs: Manschetten
-darts: Darts
-elastic: Elastic
-fit: Passen
+darts: Abnäher
+elastic: Gummi
+fit: Passform
 pockets: Taschen
-preferences: Präferenzen
-sleevecap: Ärmelkappe
+preferences: Einstellungen
+sleevecap: Armkugel
 sleeves: Ärmel
 style: Stil
+backPockets: Gesäßtaschen
+frontPockets: Vordere Taschen
+waistband: Bund
+fly: Hosenstall

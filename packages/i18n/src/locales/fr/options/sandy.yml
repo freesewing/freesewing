@@ -21,6 +21,6 @@ seamlessFullCircle:
   title: Cercle entier sans couture
   description: Permet une jupe totalement circulaire sans couture.
 hemWidth:
-  title: Largeur d'ourlet
+  title: Hem width
   description: Largeur de l'ourlet
 

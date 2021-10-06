@@ -1,11 +1,9 @@
 import { calculateReduction } from './shared'
 
 export default (part) => {
-  part.paths = {} // Removes paperless dimensions from brian
-  let {
+  const {
     store,
     measurements,
-    utils,
     sa,
     Point,
     points,
@@ -16,8 +14,20 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options
+    options,
   } = part.shorthand()
+
+  // Add pct options (that used to be mm) to the store
+  store.set('buttonPlacketWidth', measurements.neck * options.buttonPlacketWidth)
+  store.set('buttonholePlacketWidth', measurements.neck * options.buttonholePlacketWidth)
+  store.set(
+    'buttonholePlacketFoldWidth',
+    store.get('buttonholePlacketWidth') * options.buttonholePlacketFoldWidth
+  )
+  store.set('collarStandWidth', measurements.neck * options.collarStandWidth)
+  store.set('sleevePlacketWidth', measurements.wrist * options.sleevePlacketWidth)
+  store.set('boxPleatWidth', measurements.shoulderToShoulder * options.boxPleatWidth)
+  store.set('boxPleatFold', store.get('boxPleatWidth') * options.boxPleatFold)
 
   // Populare store with data we need
   calculateReduction(part)
@@ -27,7 +37,7 @@ export default (part) => {
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
       .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .join(paths.backArmhole)
       .length()
   )
 
@@ -79,66 +89,73 @@ export default (part) => {
   points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) / 4)
 
   // Cut off at yoke
-  points.cbYoke = new Point(0, points.armholePitch.y)
+  const neverAboveCbNeck = () =>
+    points.cbNeck.dy(points.cbYoke) < 10 ? (points.cbYoke.y = points.cbNeck.y + 10) : null
+  if (options.yokeHeight === 1) {
+    points.cbYoke = new Point(0, points.armholePitch.y)
+    neverAboveCbNeck()
+    points.armholeYokeSplit = points.armholePitch.clone()
+    paths.backArmholeYoke = paths.backArmhole
+  } else if (options.yokeHeight === 0) {
+    points.cbYoke = new Point(0, points.s3ArmholeSplit.y)
+    neverAboveCbNeck()
+    points.armholeYokeSplit = points.s3ArmholeSplit.clone()
+    paths.backArmholeBack = paths.backArmhole
+  } else {
+    points.cbYoke = new Point(
+      0,
+      points.s3ArmholeSplit.y + points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight
+    )
+    neverAboveCbNeck()
+    points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
+    const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
+    paths.backArmholeYoke = yoke.setRender(false)
+    paths.backArmholeBack = back.setRender(false)
+  }
+
+  // Round back
+  paths.armhole = new Path()
+    .move(points.armhole)
+    .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
+    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+  if (options.yokeHeight < 1 && options.yokeHeight > 0)
+    paths.armhole = paths.armhole.join(paths.backArmholeBack)
+  else if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+  paths.armhole.render = false
+
+  if (options.roundBack > 0) {
+    points.cbTop = points.cbYoke.shift(90, points.armholePitch.x * options.roundBack)
+    points.cbTopCp1 = points.cbTop.shift(0, points.armholePitch.x * 0.5)
+    paths.roundedBack = new Path()
+      .move(points.armholeYokeSplit)
+      ._curve(points.cbTopCp1, points.cbTop)
+      .line(points.cbYoke)
+  }
 
   // Box pleat
   if (options.boxPleat) {
-    points.boxPleatLeft = points.cbYoke.shift(0, options.boxPleatWidth / 2)
-    points.boxPleatMid = points.boxPleatLeft.shift(0, options.boxPleatFold)
-    points.boxPleatRight = points.boxPleatMid.shift(0, options.boxPleatFold)
+    points.boxPleatLeft = paths.roundedBack
+      ? points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
+      : points.cbYoke.shift(0, store.get('boxPleatWidth') / 2)
+    points.boxPleatMid = points.boxPleatLeft.shift(0, store.get('boxPleatFold'))
+    points.boxPleatRight = points.boxPleatMid.shift(0, store.get('boxPleatFold'))
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
     points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
     points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
-    for (let p of [
+    paths.armhole.setRender(true).attr('class', 'stroke-xl highlight debug canvas')
+    paths.armhole = paths.armhole.translate(store.get('boxPleatFold') * 2, 0)
+    for (const p of [
       'armholePitch',
       'armholePitchCp1',
       'armholeHollowCp2',
       'armholeHollow',
       'armholeHollowCp1',
       'armholeCp2',
-      'armhole'
+      'armhole',
+      'armholeYokeSplit',
     ])
-      points[p] = points[p].shift(0, options.boxPleatFold * 2)
+      points[p] = points[p].shift(0, store.get('boxPleatFold') * 2)
   }
-
-  // Yoke dart
-  paths.armhole = new Path()
-    .move(points.armhole)
-    .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-  paths.armhole.render = false
-  if (options.yokeDart > 0) {
-    points.tmp1 = points.armholePitch.shift(
-      -90,
-      points.armholePitch.dy(points.armhole) * options.yokeDart
-    )
-    points.tmp2 = points.tmp1.shift(180, 50)
-    points.tmp3 = points.tmp1.shift(0, 50)
-    points.yokeDartEdge = utils.lineIntersectsCurve(
-      points.tmp2,
-      points.tmp3,
-      points.armholePitch,
-      points.armholePitchCp1,
-      points.armholeHollowCp2,
-      points.armholeHollow
-    )
-    points.yokeDartTip = points.armholePitch.shift(180, points.armholePitch.x * 0.4)
-    points.yokeDartTipCp1 = points.armholePitch.shiftFractionTowards(points.yokeDartTip, 0.4)
-    paths.armhole = paths.armhole.split(points.yokeDartEdge)[0]
-    paths.armhole._curve(points.yokeDartTipCp1, points.yokeDartTip)
-    // Adapt armhole length to accomodate dart
-    store.set(
-      'backArmholeLength',
-      store.get('backArmholeLength') - points.yokeDartEdge.dist(points.armholePitch)
-    )
-  }
-
-  // Never make the hips more narrow than the waist because that looks silly
-  //if (points.hem.x < points.waist.x) {
-  //  points.hem.x = points.waist.x
-  //  points.hips.x = points.waist.x
-  //  points.hipsCp2.x = points.waist.x
-  //}
 
   // Draft hem
   switch (options.hemStyle) {
@@ -153,7 +170,6 @@ export default (part) => {
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
       paths.hemBase = new Path()
         .move(points.cbHem)
         .line(points.bballStart)
@@ -165,14 +181,13 @@ export default (part) => {
         to: points.cbHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash'
+        prefix: 'slash',
       })
       paths.saBase = new Path()
         .move(points.hips)
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
       paths.hemBase = new Path()
         .move(points.cbHem)
         .line(points.slashEnd)
@@ -185,9 +200,11 @@ export default (part) => {
         .curve(points.hipsCp2, points.waistCp1, points.waist)
         .curve_(points.waistCp2, points.armhole)
         .join(paths.armhole)
-        .line(points.cbYoke)
       paths.hemBase = new Path().move(points.cbHem).line(points.hem)
   }
+  // Take rounded back into account
+  if (paths.roundedBack) paths.saBase = paths.saBase.join(paths.roundedBack)
+  else paths.saBase = paths.saBase.line(points.cbYoke)
 
   // Paths
   paths.saBase.render = false
@@ -200,7 +217,7 @@ export default (part) => {
     macro('cutonfold', {
       from: points.cbYoke,
       to: points.cbHem,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.armhole.x / 4, points.armhole.y)
     macro('title', { at: points.title, nr: 3, title: 'back' })
@@ -230,41 +247,42 @@ export default (part) => {
         .attr('class', 'fabric sa')
       macro('banner', {
         path: 'hemSa',
-        text: ['hem', ': 3x', 'seamAllowance']
+        text: ['hem', ': 3x', 'seamAllowance'],
       })
     }
   }
 
   // Paperless?
   if (paperless) {
+    macro('rmad') // Removes paperless dimensions from brian
     if (store.get('backDarts')) {
       macro('vd', {
         from: points.dartBottom,
         to: points.dartCenterIn,
-        x: points.dartCenterIn.x - 15
+        x: points.dartCenterIn.x - 15,
       })
       macro('vd', {
         from: points.dartCenterIn,
         to: points.dartTop,
-        x: points.dartCenterIn.x - 15
+        x: points.dartCenterIn.x - 15,
       })
       macro('hd', {
         from: points.dartCenterIn,
         to: points.dartCenterOut,
-        y: points.dartBottom.y + 15
+        y: points.dartBottom.y + 15,
       })
       macro('hd', {
         from: points.dartCenterOut,
-        to: points.waist
+        to: points.waist,
       })
       macro('hd', {
         from: points.cbWaist,
-        to: points.dartCenterIn
+        to: points.dartCenterIn,
       })
     } else {
       macro('hd', {
         from: points.cbWaist,
-        to: points.waist
+        to: points.waist,
       })
     }
     let bottomRight
@@ -272,84 +290,84 @@ export default (part) => {
       macro('hd', {
         from: points.cbHem,
         to: points.slashEnd,
-        y: points.cbHem.y + 15 + 3 * sa
+        y: points.cbHem.y + 15 + 3 * sa,
       })
       macro('vd', {
         from: points.slashEnd,
         to: points.slashStart,
-        x: points.slashStart.x + 15 + 3 * sa
+        x: points.slashStart.x + 15 + 3 * sa,
       })
       bottomRight = points.slashEnd
     } else if (typeof points.bballStart !== 'undefined') {
       macro('hd', {
         from: points.cbHem,
         to: points.bballStart,
-        y: points.cbHem.y + 15 + 3 * sa
+        y: points.cbHem.y + 15 + 3 * sa,
       })
       macro('vd', {
         from: points.bballStart,
         to: points.bballEnd,
-        x: points.hips.x + 15 + sa
+        x: points.hips.x + 15 + sa,
       })
       bottomRight = points.bballStart
     } else bottomRight = points.hem
     macro('hd', {
       from: points.cbHem,
       to: points.hips,
-      y: points.cbHem.y + 30 + 3 * sa
+      y: points.cbHem.y + 30 + 3 * sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.hips,
-      x: points.hips.x + 30 + sa
+      x: points.hips.x + 30 + sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.waist,
-      x: points.hips.x + 45 + sa
+      x: points.hips.x + 45 + sa,
     })
     macro('vd', {
       from: bottomRight,
       to: points.armhole,
-      x: points.hips.x + 60 + sa
+      x: points.hips.x + 60 + sa,
     })
-    if (options.yokeDart > 0) {
+    if (options.roundBack > 0) {
       macro('vd', {
         from: points.armhole,
-        to: points.yokeDartEdge,
-        x: points.armhole.x + 15 + sa
+        to: points.armholeYokeSplit,
+        x: points.armhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.armhole,
-        to: points.yokeDartTip,
-        x: points.armhole.x + 30 + sa
+        to: points.cbTop,
+        x: points.armhole.x + 30 + sa,
       })
       macro('hd', {
-        from: points.cbYoke,
-        to: points.yokeDartTip,
-        y: points.cbYoke.y - 15 - sa
+        from: points.cbTop,
+        to: points.armholePitch,
+        y: points.cbTop.y - 15 - sa,
       })
       macro('hd', {
-        from: points.cbYoke,
-        to: points.yokeDartEdge,
-        y: points.cbYoke.y - 30 - sa
+        from: points.cbTop,
+        to: points.armholeYokeSplit,
+        y: points.cbTop.y - 30 - sa,
       })
     } else {
       macro('vd', {
         from: points.armhole,
         to: points.armholePitch,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('hd', {
         from: points.cbYoke,
         to: points.armholePitch,
-        y: points.cbYoke.y - 15 - sa
+        y: points.cbYoke.y - 15 - sa,
       })
     }
     macro('vd', {
       from: points.cbHem,
       to: points.cbYoke,
-      x: points.cbHem.x - 15
+      x: points.cbHem.x - 15,
     })
   }
 

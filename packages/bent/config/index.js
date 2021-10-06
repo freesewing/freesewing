@@ -5,10 +5,9 @@ export default {
   version: version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'menswear',
+  department: 'tops',
   type: 'block',
   difficulty: 3,
-  tags: ['top'],
   optionGroups: {
     fit: [
       'chestEase',
@@ -18,8 +17,9 @@ export default {
       'shoulderEase',
       'lengthBonus',
       'sleeveLengthBonus',
-      'sleeveBend'
+      'sleeveBend',
     ],
+    style: ['s3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
@@ -27,8 +27,8 @@ export default {
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
       'sleevecapHeight',
-      'sleevecapEase'
-    ]
+      'sleevecapEase',
+    ],
   },
   measurements: [
     'biceps',
@@ -40,19 +40,19 @@ export default {
     'shoulderToElbow',
     'shoulderToShoulder',
     'shoulderToWrist',
-    'wrist'
+    'wrist',
   ],
   dependencies: {
     back: 'base',
     front: 'back',
     topSleeve: 'sleeve',
-    underSleeve: 'sleeve'
+    underSleeve: 'sleeve',
   },
   inject: {
     back: 'base',
     front: 'back',
     topSleeve: 'sleeve',
-    underSleeve: 'sleeve'
+    underSleeve: 'sleeve',
   },
   hide: ['base', 'sleeve'],
   options: {
@@ -77,6 +77,9 @@ export default {
     sleeveBend: { deg: 10, min: 0, max: 20 },
     sleevecapHeight: { pct: 45, min: 40, max: 60 },
     sleevecapEase: { pct: 1, min: 0, max: 10 },
-    sleeveLengthBonus: { pct: 0, min: -20, max: 15 }
-  }
+    sleeveLengthBonus: { pct: 0, min: -20, max: 15 },
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100 },
+    s3Armhole: { pct: 0, min: -100, max: 100 },
+  },
 }

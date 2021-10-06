@@ -19,11 +19,11 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 4,
-      title: 'brimTop'
+      title: 'brimTop',
     })
     macro('grainline', {
       from: points.outerMid,
-      to: points.innerMid
+      to: points.innerMid,
     })
 
     if (sa)
@@ -38,17 +38,17 @@ export default function (part) {
       macro('hd', {
         from: paths.seam.edge('left'),
         to: paths.seam.edge('right'),
-        y: points.tipLeft.y - sa - 15
+        y: points.tipLeft.y - sa - 15,
       })
       macro('vd', {
         from: bottom,
         to: points.innerMid,
-        x: points.innerMid.x - 15
+        x: points.innerMid.x - 15,
       })
       macro('vd', {
         from: bottom,
         to: points.tipRight,
-        x: points.tipRight.x + sa + 18
+        x: points.tipRight.x + sa + 18,
       })
     }
   }

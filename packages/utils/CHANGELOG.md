@@ -1,6 +1,19 @@
 # Change log for: @freesewing/utils
 
 
+## 2.17.3 (2021-08-16)
+
+### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
+
 ## 2.13.1 (2021-02-14)
 
 ### Added

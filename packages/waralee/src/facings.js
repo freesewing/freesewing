@@ -10,7 +10,7 @@ export default function (part) {
     snippets,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let frontPocketSize =
@@ -52,7 +52,7 @@ export default function (part) {
       nr: 5,
       at: points.frontTitle.shift(0, 30),
       title: 'frontFacing',
-      prefix: 'front'
+      prefix: 'front',
     })
     points.frontLogo = points.frontTitle.shift(270, 0)
     snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.4)
@@ -66,7 +66,7 @@ export default function (part) {
       nr: 6,
       at: points.backTitle.shift(0, 30),
       title: 'backFacing',
-      prefix: 'back'
+      prefix: 'back',
     })
     points.backLogo = points.backTitle.shift(270, 0)
     snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.4)
@@ -81,22 +81,22 @@ export default function (part) {
     macro('hd', {
       from: points.frontTL,
       to: points.frontTR,
-      y: points.frontTL.y + 15
+      y: points.frontTL.y + 15,
     })
     macro('hd', {
       from: points.backTL,
       to: points.backTR,
-      y: points.backTL.y + 15
+      y: points.backTL.y + 15,
     })
     macro('vd', {
       from: points.frontTL,
       to: points.frontBL,
-      x: points.frontTL.x + 15
+      x: points.frontTL.x + 15,
     })
     macro('vd', {
       from: points.backTL,
       to: points.backBL,
-      x: points.backTL.x + 15
+      x: points.backTL.x + 15,
     })
   }
 

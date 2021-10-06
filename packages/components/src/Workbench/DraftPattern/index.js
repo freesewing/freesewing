@@ -26,16 +26,17 @@ const DraftPattern = (props) => {
   }
 
   let focusCount = 0
-  if (focus !== null) {
-    for (let p of Object.keys(focus)) {
-      for (let i in focus[p].points) focusCount++
-      for (let i in focus[p].paths) focusCount++
-      for (let i in focus[p].coords) focusCount++
+  if (props.focus !== null) {
+    for (let p of Object.keys(props.focus)) {
+      for (let i in props.focus[p].points) focusCount++
+      for (let i in props.focus[p].paths) focusCount++
+      for (let i in props.focus[p].coords) focusCount++
     }
   }
 
   return (
     <>
+      <Events events={props.patternProps.events} types={['info']} />
       <Draft
         {...props.patternProps}
         design={props.design}

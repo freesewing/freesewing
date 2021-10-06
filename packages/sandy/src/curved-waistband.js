@@ -18,7 +18,7 @@ export default function (part) {
     options,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Calculate the angle of the ring sector and the radius of the upper arc
@@ -49,7 +49,7 @@ export default function (part) {
       at: points.title,
       nr: 2,
       title: 'curvedWaistband',
-      scale: 0.5
+      scale: 0.5,
     })
     points.grainlineFrom = utils.curveIntersectsY(
       points.ex2FlippedRotated,
@@ -61,7 +61,7 @@ export default function (part) {
     points.grainlineTo = points.grainlineFrom.flipX()
     macro('grainline', {
       from: points.grainlineFrom,
-      to: points.grainlineTo
+      to: points.grainlineTo,
     })
 
     if (store.get('waistbandOverlap') >= options.minimumOverlap) {
@@ -85,7 +85,7 @@ export default function (part) {
         .shiftAlong(store.get('waistbandOverlap'))
       macro('sprinkle', {
         snippet: 'notch',
-        on: ['centerNotch', 'buttonNotch', 'ex2FlippedRotated']
+        on: ['centerNotch', 'buttonNotch', 'ex2FlippedRotated'],
       })
     }
 
@@ -97,22 +97,22 @@ export default function (part) {
     macro('hd', {
       from: points.in2FlippedRotated,
       to: points.in2Rotated,
-      y: points.in2Rotated.y - sa - 15
+      y: points.in2Rotated.y - sa - 15,
     })
     macro('hd', {
       from: points.ex2FlippedRotated,
       to: points.ex2Rotated,
-      y: points.in2Rotated.y - sa - 30
+      y: points.in2Rotated.y - sa - 30,
     })
     macro('vd', {
       from: points.ex1Rotated,
       to: points.in2Rotated,
-      x: points.in2Rotated.x + sa + 30
+      x: points.in2Rotated.x + sa + 30,
     })
     macro('ld', {
       from: points.ex2Rotated,
       to: points.in2Rotated,
-      d: -1 * sa - 15
+      d: -1 * sa - 15,
     })
   }
 

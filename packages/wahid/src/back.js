@@ -12,7 +12,7 @@ export default (part) => {
     complete,
     sa,
     paperless,
-    snippets
+    snippets,
   } = part.shorthand()
 
   // Cleanup from Brian
@@ -62,11 +62,15 @@ export default (part) => {
     points.armholePitch.rotate(options.backScyeDart, points.cbNeckCp2),
     1.2
   )
-  points.armholePitchTop = new Path()
-    .move(points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-    .intersects(new Path().move(points.cbNeckCp2).line(points._dartWidth))
-    .pop()
+  points.armholePitchTop =
+    options.backScyeDart > 0
+      ? new Path()
+          .move(points.armholePitch)
+          .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+          .intersects(new Path().move(points.cbNeckCp2).line(points._dartWidth))
+          .pop()
+      : points.armholePitch.clone()
+
   // Rotate back scye dart into center back
   let toRotate = ['cbNeck', 'neckCp2', 'neck', 'shoulder', 'shoulderCp1']
   for (let p of toRotate) {
@@ -116,95 +120,95 @@ export default (part) => {
       macro('ld', {
         from: points.neck,
         to: points.shoulder,
-        d: 15 + sa
+        d: 15 + sa,
       })
       macro('hd', {
         from: points.cbArmhole,
         to: points.cbNeck,
-        y: points.cbNeck.y - 15 - sa
+        y: points.cbNeck.y - 15 - sa,
       })
       macro('hd', {
         from: points.cbArmhole,
         to: points.neck,
-        y: points.cbNeck.y - 30 - sa
+        y: points.cbNeck.y - 30 - sa,
       })
       macro('hd', {
         from: points.cbArmhole,
         to: points.shoulder,
-        y: points.cbNeck.y - 45 - sa
+        y: points.cbNeck.y - 45 - sa,
       })
       macro('hd', {
         from: points.cbArmhole,
         to: points.armholePitch,
-        y: points.armholePitch.y
+        y: points.armholePitch.y,
       })
       macro('hd', {
         from: points.cbArmhole,
         to: points.dartTop,
-        y: points.dartTop.y - 15
+        y: points.dartTop.y - 15,
       })
       macro('vd', {
         from: points.armhole,
         to: points.armholePitch,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.armhole,
         to: points.shoulder,
-        x: points.armhole.x + 30 + sa
+        x: points.armhole.x + 30 + sa,
       })
       macro('vd', {
         from: points.armhole,
         to: points.neck,
-        x: points.armhole.x + 45 + sa
+        x: points.armhole.x + 45 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.waist,
-        x: points.armhole.x + 15 + sa
+        x: points.armhole.x + 15 + sa,
       })
       macro('vd', {
         from: points.hem,
         to: points.armhole,
-        x: points.armhole.x + 30 + sa
+        x: points.armhole.x + 30 + sa,
       })
       macro('hd', {
         from: points.dartHemRight,
         to: points.hem,
-        y: points.hem.y + 3 * sa + 15
+        y: points.hem.y + 3 * sa + 15,
       })
       macro('hd', {
         from: points.cbHem,
         to: points.dartHemLeft,
-        y: points.hem.y + 3 * sa + 15
+        y: points.hem.y + 3 * sa + 15,
       })
       macro('hd', {
         from: points.cbHem,
         to: points.hem,
-        y: points.hem.y + 3 * sa + 30
+        y: points.hem.y + 3 * sa + 30,
       })
       macro('ld', {
         from: points.dartWaistLeft,
-        to: points.dartWaistRight
+        to: points.dartWaistRight,
       })
       macro('ld', {
         from: points.dartHipLeft,
-        to: points.dartHipRight
+        to: points.dartHipRight,
       })
       macro('vd', {
         from: points.cbHem,
         to: points.cbArmhole,
-        x: points.cbHem.x - 15 - sa
+        x: points.cbHem.x - 15 - sa,
       })
       macro('vd', {
         from: points.cbHem,
         to: points.cbNeck,
-        x: points.cbHem.x - 30 - sa
+        x: points.cbHem.x - 30 - sa,
       })
       macro('vd', {
         from: points.cbHem,
         to: points.neck,
-        x: points.cbHem.x - 45 - sa
+        x: points.cbHem.x - 45 - sa,
       })
     }
   }

@@ -7,7 +7,7 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-gore') === false)
         svg.attributes.set('freesewing:plugin-gore', version)
-    }
+    },
   },
   macros: {
     gore: function (so) {
@@ -59,6 +59,6 @@ export default {
 
       if (typeof so.render !== 'undefined' && so.render) this.paths[prefix + 'seam'].render = true
       else this.paths[prefix + 'seam'].render = false
-    }
-  }
+    },
+  },
 }

@@ -13,7 +13,7 @@ export default (part) => {
       at: points.title,
       nr: 2,
       title: 'interfacingTail',
-      rotation: -90
+      rotation: -90,
     })
   }
 

@@ -188,7 +188,13 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-dark;
   }
-
+  path.bartack {
+    stroke: $fc-draft-mark-light;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #212529;
@@ -294,7 +300,13 @@ svg.freesewing.draft text {
     stroke: none;
     fill: $fc-bg-light;
   }
-
+  path.bartack {
+    stroke: $fc-draft-mark-dark;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
   /* New style for sampled sizes */
   path.made-to-measure {
     stroke: #f8f9fa;

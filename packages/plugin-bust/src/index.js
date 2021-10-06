@@ -9,6 +9,6 @@ export default {
         settings.measurements.bust = settings.measurements.chest
         settings.measurements.chest = settings.measurements.highBust
       }
-    }
-  }
+    },
+  },
 }

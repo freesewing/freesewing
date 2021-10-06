@@ -1,6 +1,72 @@
 # Change log for: @freesewing/components
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Added measurements for dolls & giants to Workbench measurments selector
+ - Added sampling for dolls & giants to Workbench tests
+
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - Added Reddit icon to Icon component
+ - Added Ursula linedrawing to Linedrawings
+
+### Changed
+
+ - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
+ - Changed antman references to antperson
+
+### Removed
+
+ - Removed Gitter icon from Icon component
+
+### Fixed
+
+ - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
+
+## 2.16.2 (2021-05-05)
+
+### Fixed
+
+ - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
+
+## 2.16.1 (2021-05-30)
+
+### Added
+
+ - Added a new `designs` icon
+ - We now publish .mjs files again for the different components
+
+## 2.16.0 (2021-05-24)
+
+### Changed
+
+ - Migrated to React 17
+ - Migrated to create-react-app/react-scripts 4
+ - Migrated to Webpack 5
+ - Changes to Workbench
+ - Added rollup sass plugin
+ - Updated for new major version of react-markdown
+
+## 2.15.0 (2021-04-15)
+
+### Added
+
+ - Added charlie LineDrawing
+
+### Changed
+
+ - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
+
+### Fixed
+
+ - Always show design mode switch
+
 ## 2.14.0 (2021-03-07)
 
 ### Added

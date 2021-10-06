@@ -26,7 +26,6 @@ packages/components/withStorage
 packages/components/Workbench
 packages/core/coverage
 packages/workbench
-.netlify
 packages/utils/backend
 packages/utils/camelCase
 packages/utils/capitalize
@@ -56,6 +55,7 @@ packages/*/example/yarn.lock
 packages/*/report
 packages/*/package-lock.json
 packages/*/yarn.lock
+packages/strapi/.cache
 
 # dependencies
 node_modules
@@ -63,6 +63,10 @@ node_modules
 # build
 dist
 build
+
+# yarn
+.yarn
+.yarnrc
 
 # Mock registry (verdaccio)
 .registry
@@ -84,3 +88,6 @@ packages/i18n/sort.sh
 .gitignore
 scripts/taskrunner.sh
 scripts/verdaccio.sh
+
+# Local Netlify folder
+.netlify

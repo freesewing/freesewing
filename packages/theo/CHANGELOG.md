@@ -1,6 +1,24 @@
 # Change log for: @freesewing/theo
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Added deprecation warning as we need to rewrite this pattern
+
+## 2.18.0 (2021-09-09)
+
+### Fixed
+
+ - Avoid paperless depending on a complete pattern
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.13.0 (2021-02-13)
 
 ### Fixed

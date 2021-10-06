@@ -23,8 +23,8 @@ const wristPlugin = {
     preDraft: function ({ settings }) {
       settings.measurements.wrist = settings.measurements.biceps * 0.6
       settings.measurements.shoulderToWrist = settings.measurements.shoulderToShouder * 1.5
-    }
-  }
+    },
+  },
 }
 
 // Create pattern

@@ -1,6 +1,47 @@
 # Change log for: @freesewing/simone
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the `buttonPlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketWidth` option type from `mm` to `pct`
+ - Changed the `buttonholePlacketFoldWidth` option type from `mm` to `pct`
+ - Changed the `collarStandWidth` option type from `mm` to `pct`
+ - Changed the `sleevePlacketWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatWidth` option type from `mm` to `pct`
+ - Changed the `boxPleatFold` option type from `mm` to `pct`
+
+### Fixed
+
+ - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
+ - Fix issue with armhole introduced with the S3 options in Brian Closes
+
+## 2.17.2 (2021-08-15)
+
+### Added
+
+ - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - Added support for configuring the height of the Yoke. See [#642](https://github.com/freesewing/freesewing/issues/642)
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+ - Added the `roundBack` option to replace the `yokeDart` option
+
+### Removed
+
+ - The `yokeDart` option is replaced by the `roundBack` option
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ## 2.13.2 (2021-02-21)
 
 ### Fixed

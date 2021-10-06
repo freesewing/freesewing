@@ -8,7 +8,7 @@ export const lineWidths = [
   'default',
   'stroke-lg',
   'stroke-xl',
-  'stroke-xxl'
+  'stroke-xxl',
 ]
 
 export const lineStrokes = ['dotted', 'dashed', 'lashed']

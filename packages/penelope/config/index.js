@@ -8,10 +8,9 @@ export default {
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
-  department: 'womenswear',
+  department: 'bottoms',
   type: 'pattern',
   difficulty: 3,
-  tags: ['skirt', 'bottom', 'basics'],
   optionGroups: {
     fit: [
       'lengthBonus',
@@ -22,15 +21,15 @@ export default {
       'waistBandWidth',
       'zipperLocation',
       'nrOfDarts',
-      'hemBonus'
+      'hemBonus',
     ],
     advanced: [
       'seatEase',
       'waistEase',
       'backDartDepthFactor',
       'frontDartDepthFactor',
-      'dartToSideSeamFactor'
-    ]
+      'dartToSideSeamFactor',
+    ],
   },
   measurements: ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee'],
   dependencies: {},
@@ -38,6 +37,7 @@ export default {
   hide: [],
   parts: ['front', 'back', 'waistband'],
   options: {
+    // FIXME: All of these constants mean this pattern won't scale properly :(
     dartMaximumDifference: 300,
     dartMinimumDifference: 180,
     dartMinimumWidth: 6,
@@ -51,23 +51,23 @@ export default {
     hipCurveDividerDown: 40,
     hipCurveDividerUp: 3,
     sideSeamShiftPercentage: 0.006,
-    backVentWidth: 50,
+    backVentWidth: 0.1,
     paperlessOffset: 15,
     waistBandOverlap: 25,
     lengthBonus: { pct: 0, min: -50, max: 50 },
     hemBonus: { pct: 0, min: -35, max: 0 },
-    hem: { mm: 25, min: 0, max: 75 },
+    hem: { pct: 2, min: 0, max: 5 },
     backVent: { bool: true },
     backVentLength: { pct: 40, min: 5, max: 70 },
     waistBand: { bool: true },
-    waistBandWidth: { mm: 50, min: 10, max: 200 },
+    waistBandWidth: { pct: 10, min: 5, max: 20 },
     zipperLocation: { dflt: 'backSeam', list: ['backSeam', 'sideSeam'] },
     nrOfDarts: { count: 2, min: 1, max: 2 },
 
-    seatEase: { mm: 5, min: 0, max: 15 },
-    waistEase: { mm: 5, min: 0, max: 15 },
+    seatEase: { pct: 1, min: 0, max: 5 },
+    waistEase: { pct: 1, min: 0, max: 5 },
     backDartDepthFactor: { pct: 50, min: 35, max: 70 },
     frontDartDepthFactor: { pct: 45, min: 30, max: 65 },
-    dartToSideSeamFactor: { pct: 50, min: 30, max: 70 }
-  }
+    dartToSideSeamFactor: { pct: 50, min: 30, max: 70 },
+  },
 }

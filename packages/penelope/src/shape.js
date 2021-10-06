@@ -1,32 +1,23 @@
 import { addDartToCurve, dartCalc } from './utils'
 
 function BuildMainShape(part, frontPart) {
-  let {
-    sa,
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    store,
-    paperless,
-    macro
-  } = part.shorthand()
+  const { sa, options, measurements, Point, Path, points, paths, store, paperless, macro } =
+    part.shorthand()
 
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
 
   store.set('skirtLength', skirtLength)
-
-  let waistEase = options.waistEase
-  let seatEase = options.seatEase
+  store.set('waistEase', measurements.waist * options.waistEase)
+  store.set('seatEase', measurements.seat * options.seatEase)
+  // [joost] I don't like how hem is handled here rather than as hem allowance
+  store.set('hem', measurements.waistToKnee * options.hem)
 
   let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
 
   let waist = measurements.waist
   let seat = measurements.seat > waist ? measurements.seat : waist
 
-  dartCalc(store, options, seat, seatEase, waist, waistEase)
+  dartCalc(store, options, seat, store.get('seatEase'), waist, store.get('waistEase'))
 
   let nrOfDarts = store.get('nrOfDarts')
   let dartSize = store.get('frontDartSize')
@@ -43,8 +34,8 @@ function BuildMainShape(part, frontPart) {
 
   let sideSeamShift = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage * seat
 
-  seat += seatEase
-  waist += waistEase
+  seat += store.get('seatEase')
+  waist += store.get('waistEase')
 
   let sideSeam = seat / 4 + sideSeamShift
 
@@ -80,14 +71,14 @@ function BuildMainShape(part, frontPart) {
 
   do {
     if (wdelta < -1) {
-      waistFactor *= 0.9995
+      waistFactor *= 0.99
     } else if (wdelta > 1) {
-      waistFactor *= 1.01
+      waistFactor *= 1.02
     }
     if (sdelta < -1) {
-      sideFactor *= 0.995
+      sideFactor *= 0.98
     } else if (sdelta > 1) {
-      sideFactor *= 1.01
+      sideFactor *= 1.03
     }
     points.rWaistTemp1 = points.lWaist.shift(0, (waist / 4) * waistFactor)
     points.rWaistTemp2 = points.rWaistTemp1.shift(0, dartSize * nrOfDarts)
@@ -177,10 +168,10 @@ function BuildMainShape(part, frontPart) {
     .attr('class', 'fabric stroke-sm')
     .setRender(false)
 
-  if (options.hem > 0) {
+  if (store.get('hem') > 0) {
     // Create the inverse of the curve from the leg to the waist
     // Then split it at the hem level
-    points.lHem = points.lLeg.shift(270, options.hem)
+    points.lHem = points.lLeg.shift(270, store.get('hem'))
     let rInverseSeat = points.rSeat.shift(270, (points.rLeg.y - points.rSeat.y) * 2)
     let rInverseSeatCP = rInverseSeat.shift(90, points.rSeatCPdown.y - points.rSeat.y)
     let rInversePath = new Path().move(rInverseSeat).curve(rInverseSeatCP, points.rLeg, points.rLeg)
@@ -213,23 +204,23 @@ function BuildMainShape(part, frontPart) {
     macro('hd', {
       from: points.lSeat,
       to: points.rSeat,
-      y: points.rSeat.y
+      y: points.rSeat.y,
     })
     macro('vd', {
       from: points.lWaist,
       to: points.rWaist,
-      x: points.rWaist.x + options.paperlessOffset + sa
+      x: points.rWaist.x + options.paperlessOffset + sa,
     })
     macro('vd', {
       from: points.lWaist,
       to: points.lLeg,
-      x: points.lLeg.x + options.paperlessOffset + sa
+      x: points.lLeg.x + options.paperlessOffset + sa,
     })
-    if (options.hem > 0) {
+    if (store.get('hem') > 0) {
       macro('vd', {
         from: points.lLeg,
         to: points.lHem,
-        x: points.lLeg.x + options.paperlessOffset + sa
+        x: points.lLeg.x + options.paperlessOffset + sa,
       })
     }
 
@@ -237,81 +228,81 @@ function BuildMainShape(part, frontPart) {
       macro('hd', {
         from: points.lWaist,
         to: points.dart1Middle,
-        y: points.dart1Middle.y
+        y: points.dart1Middle.y,
       })
       macro('hd', {
         from: points.lWaist,
         to: points.dart1Start,
-        y: points.dart1Start.y - options.paperlessOffset - sa
+        y: points.dart1Start.y - options.paperlessOffset - sa,
       })
       macro('hd', {
         from: points.dart1Start,
         to: points.dart1End,
-        y: points.dart1End.y - options.paperlessOffset - sa
+        y: points.dart1End.y - options.paperlessOffset - sa,
       })
       if (store.get('nrOfDarts') > 1) {
         macro('hd', {
           from: points.lWaist,
           to: points.dart2Middle,
-          y: points.dart2Middle.y
+          y: points.dart2Middle.y,
         })
         macro('hd', {
           from: points.dart1End,
           to: points.dart2Start,
-          y: points.dart2Start.y - options.paperlessOffset - sa
+          y: points.dart2Start.y - options.paperlessOffset - sa,
         })
         macro('hd', {
           from: points.dart2Start,
           to: points.dart2End,
-          y: points.dart2End.y - options.paperlessOffset - sa
+          y: points.dart2End.y - options.paperlessOffset - sa,
         })
         macro('hd', {
           from: points.dart2End,
           to: points.rWaist,
-          y: points.rWaist.y - options.paperlessOffset - sa
+          y: points.rWaist.y - options.paperlessOffset - sa,
         })
         macro('vd', {
           from: points.lWaist,
           to: points.dart2Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa
+          x: points.lWaist.x - options.paperlessOffset - sa,
         })
         macro('vd', {
           from: points.dart2Middle,
           to: points.dart1Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa
+          x: points.lWaist.x - options.paperlessOffset - sa,
         })
         macro('vd', {
           from: points.dart1Middle,
           to: points.lSeat,
-          x: points.lWaist.x - options.paperlessOffset - sa
+          x: points.lWaist.x - options.paperlessOffset - sa,
         })
       } else {
         macro('vd', {
           from: points.lWaist,
           to: points.dart1Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa
+          x: points.lWaist.x - options.paperlessOffset - sa,
         })
         macro('hd', {
           from: points.dart1End,
           to: points.rWaist,
-          y: points.rWaist.y - options.paperlessOffset - sa
+          y: points.rWaist.y - options.paperlessOffset - sa,
         })
         macro('vd', {
           from: points.dart1Middle,
           to: points.lSeat,
-          x: points.lWaist.x - options.paperlessOffset - sa
+          x: points.lWaist.x - options.paperlessOffset - sa,
         })
       }
     } else {
       macro('hd', {
         from: points.lWaist,
         to: points.rWaist,
-        y: points.rWaist.y - options.paperlessOffset - sa
+        y: points.rWaist.y - options.paperlessOffset - sa,
       })
       macro('vd', {
         from: points.lWaist,
         to: points.lSeat,
-        x: points.lWaist.x - options.paperlessOffset - sa
+        x: points.lWaist.x - options.paperlessOffset - sa,
       })
     }
   }

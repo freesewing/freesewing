@@ -1,15 +1,6 @@
 export default (part) => {
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    macro,
-    complete,
-    paperless
-  } = part.shorthand()
+  let { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
+    part.shorthand()
 
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
@@ -35,11 +26,11 @@ export default (part) => {
     macro('title', {
       nr: 8,
       title: 'pocketInterfacing',
-      at: points.title
+      at: points.title,
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['notchLeft', 'notchRight']
+      on: ['notchLeft', 'notchRight'],
     })
     paths.cutline = new Path()
       .move(points.notchLeft)
@@ -51,12 +42,12 @@ export default (part) => {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + 15
+      y: points.bottomLeft.y + 15,
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRight,
-      x: points.topRight.x + 15
+      x: points.topRight.x + 15,
     })
   }
 

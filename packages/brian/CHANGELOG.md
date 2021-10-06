@@ -1,6 +1,24 @@
 # Change log for: @freesewing/brian
 
 
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
+
 ## 2.11.2 (2021-01-11)
 
 ### Added

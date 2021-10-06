@@ -12,32 +12,32 @@ pocketWidth:
   title: Taschenbreite
   description: Bestimmt die Breite der Tasche
 weltHeight:
-  title: Welthöhe
+  title: Paspelhöhe
   description: Bestimmt die Höhe der Paspel
 necklineDrop:
   title: Ausschnitt Tiefe
-  description: Definiert wie tief der Ausschnitt vorne ausgeschnitten ist
+  description: Legt fest, wie tief der Ausschnitt vorne ausgeschnitten ist
 frontStyle:
   title: Ausschnittstil
   description: Stil des Ausschnitts
 hemStyle:
-  title: Saumart
+  title: Saumstil
   description: Art des vorderen Saums
 hemRadius:
   title: Saumradius
-  description: Radius by which the hem is rounded
+  description: Der Betrag, um den der Saum gerundet ist
 backInset:
   title: Rückseite Ausschnitt
   description: Wie viel die Rückseite des Armlochs nach innen verschoben ist
 frontInset:
   title: Vorderseite Ausschnitt
-  description: Wieviel die das Armloch an der Vorderseite nach Innen verschoben wird
+  description: Wieviel das Armloch an der Vorderseite nach innen verschoben wird
 shoulderInset:
   title: Schulterversatz nach innen
-  description: Wieviel die Schulternaht nach inne Richtung Schulter versetzt wird
+  description: Wieviel die Schulternaht nach innen Richtung Schulter versetzt wird
 neckInset:
   title: Nackenauschnitt
-  description: Wieviel die Schulternaht am Nacken nach Innen versetzt wird
+  description: Wieviel die Schulternaht am Nacken nach innen versetzt wird
 pocketAngle:
   title: Winkel der Tasche
   description: Winkel der Taschenneigung

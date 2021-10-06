@@ -11,7 +11,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 6,
-      title: 'waistband'
+      title: 'waistband',
     })
   }
   return part

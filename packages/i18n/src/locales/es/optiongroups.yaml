@@ -1,15 +1,19 @@
 ---
 advanced: Avanzado
-armhole: Armhole
+armhole: Agujero armado
 closure: Cierre
-collar: Collar
-construction: Construction
+collar: Cuello
+construction: Construcción
 cuffs: Puños
-darts: Darts
-elastic: Elastic
+darts: Dardos
+elastic: Elástico
 fit: Ajuste
 pockets: Bolsillos
 preferences: Preferencias
-sleevecap: Funda de manga
+sleevecap: Manga corta
 sleeves: Mangas
 style: Estilo
+backPockets: Paquetes de retroceso
+frontPockets: Pockets delanteros
+waistband: Pretina
+fly: Vuela

@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  title: Abertura de la espalda
+  description: Controla la apertura en la parte trasera del Profeta
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  title: Longitud del Strp
+  description: Controla la longitud de las correas
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  title: Bonus de longitud
+  description: Controla la longitud del buque
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  title: Longitud de bib
+  description: Controla la longitud de la bib
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  title: Ancho bib
+  description: Controla el ancho de la bib
 strapWidth:
   title: Strap width
-  description: Controls the width of the strap
+  description: Controla el ancho de la correa
 

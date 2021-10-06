@@ -11,7 +11,7 @@ export default function (part) {
     snippets,
     Snippet,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Design pattern here
@@ -38,7 +38,6 @@ export default function (part) {
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.7)
     points.title = new Point(0.3 * points.bottom.x, 0.75 * points.bottom.y)
     macro('title', { at: points.title, nr: 3, title: 'ear', scale: 0.5 })
-    macro('miniscale', { at: new Point(0, points.bottom.y * 0.3) })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -49,12 +48,12 @@ export default function (part) {
       macro('hd', {
         from: points.bottomFlipped,
         to: points.bottom,
-        y: points.bottom.y + 15 + sa
+        y: points.bottom.y + 15 + sa,
       })
       macro('vd', {
         from: points.bottomFlipped,
         to: points.top,
-        x: points.bottomFlipped.x - 15 - sa
+        x: points.bottomFlipped.x - 15 - sa,
       })
     }
   }

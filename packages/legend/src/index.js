@@ -40,7 +40,7 @@ let methods = {
   draftScalebox,
   draftLineWidths,
   draftLineStrokes,
-  draftSizes
+  draftSizes,
 }
 
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]

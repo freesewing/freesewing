@@ -15,7 +15,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let mini = options.minimizer
@@ -56,7 +56,7 @@ export default function (part) {
       from: points.fWaistSide,
       to: points.mWaist,
       y: points.fWaistSide.y,
-      text: part.units(points.fWaistSide.dist(points.mWaist) * mini)
+      text: part.units(points.fWaistSide.dist(points.mWaist) * mini),
     })
     /*
     macro("hd", {

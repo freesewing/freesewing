@@ -1,10 +1,10 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared'
 
 export default (part) => {
-  let { store, sa, points, Path, paths, complete, paperless } = part.shorthand()
+  const { store, sa, points, Path, paths, complete, paperless } = part.shorthand()
 
   draftFrenchCuff(part)
-  let height = store.get('cuffHeight')
+  const height = store.get('cuffHeight')
   points.leftAngleTopTop = points.topLeft.shift(0, height / 3)
   points.leftAngleTopBottom = points.topLeft.shift(-90, height / 3)
   points.rightAngleTopTop = points.topRight.shift(180, height / 3)

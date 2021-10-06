@@ -13,7 +13,7 @@ export default function (part) {
     utils,
     measurements,
     snippets,
-    raise
+    raise,
   } = part.shorthand()
 
   // Let's warn about some common issues
@@ -209,7 +209,7 @@ export default function (part) {
     macro('title', { at: points.title, title: 'front', nr: 2 })
     macro('sprinkle', {
       snippet: 'notch',
-      on: [60, 61, 43]
+      on: [60, 61, 43],
     })
   }
 
@@ -218,47 +218,47 @@ export default function (part) {
     macro('hd', {
       from: points[-9],
       to: points[-100101],
-      y: points[-1102].y - sa - 15
+      y: points[-1102].y - sa - 15,
     })
     macro('hd', {
       from: points[-100101],
       to: points[-1102],
-      y: points[-1102].y - sa - 15
+      y: points[-1102].y - sa - 15,
     })
     macro('hd', {
       from: points[-9],
       to: points[-1102],
-      y: points[-1102].y - sa - 15
+      y: points[-1102].y - sa - 15,
     })
     macro('hd', {
       from: points[-9],
       to: points[-8],
-      y: points[-1102].y - sa - 30
+      y: points[-1102].y - sa - 30,
     })
     macro('vd', {
       from: points[-9],
       to: points[-100101],
-      x: points[-9].x - sa - 15
+      x: points[-9].x - sa - 15,
     })
     macro('vd', {
       from: points[-9],
       to: points[-1102],
-      x: points[-9].x - sa - 30
+      x: points[-9].x - sa - 30,
     })
     macro('vd', {
       from: points[-13],
       to: points[-9],
-      x: points[-9].x - sa - 30
+      x: points[-9].x - sa - 30,
     })
     macro('vd', {
       from: points[-12],
       to: points[-1102],
-      x: points[-8].x + sa + 15
+      x: points[-8].x + sa + 15,
     })
     macro('hd', {
       from: points[-13],
       to: points[-12],
-      y: points[-12].y + 3 * sa + 15
+      y: points[-12].y + 3 * sa + 15,
     })
   }
 

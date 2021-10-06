@@ -16,7 +16,7 @@ export default function (part) {
     'tipRightBottomEnd',
     'tipRightBottom',
     'top',
-    'topCp2'
+    'topCp2',
   ]
 
   while (points.tipRightBottomStart.x > -1) {
@@ -30,14 +30,14 @@ export default function (part) {
     to: points.tipRight,
     via: points.tipRightTop,
     prefix: 'tipRightTop',
-    render: true
+    render: true,
   })
   macro('round', {
     from: points.tipRight,
     to: points.top,
     via: points.tipRightBottom,
     prefix: 'tipRightBottom',
-    render: true
+    render: true,
   })
 
   paths.rect = new Path()

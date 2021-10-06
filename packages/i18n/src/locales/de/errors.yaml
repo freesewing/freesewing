@@ -1,11 +1,11 @@
 ---
-404: Die von Ihnen gesuchte Seite kann nicht gefunden werden
-confirmationNotFound: Wenn Sie diese Seite über den Link in einer Bestätigungs-E-Mail erreicht haben, empfehlen wir Ihnen, dieses Problem zu melden.
-emailExists: Wir haben bereits einen Benutzer mit dieser E-Mail-Adresse. Vielleicht möchten Sie sich stattdessen einloggen?
+404: Die von dir gesuchte Seite kann nicht gefunden werden
+confirmationNotFound: Falls du über den Link in einer Bestätigungs-E-Mail auf dieser Seite gelandet bist, empfehlen wir dir, dieses Problem zu melden.
+emailExists: Wir haben bereits einen Benutzer mit dieser E-Mail-Adresse. Möchtest du dich vielleicht stattdessen einloggen?
 networkError: Back-End oder Netzwerk scheint nicht verfügbar zu sein
 notAValidImageFormat: Kein gültiges Bildformat
 requestFailedWithStatusCode400: Anfrage fehlgeschlagen
 requestFailedWithStatusCode401: Authentifizierung fehlgeschlagen
 requestFailedWithStatusCode403: Verboten
-requestFailedWithStatusCode500: Es gab ein unerwartetes Problem. Bitte melden Sie dies.
+requestFailedWithStatusCode500: Es gab ein unerwartetes Problem. Bitte melde dies.
 something: Etwas ist schiefgelaufen

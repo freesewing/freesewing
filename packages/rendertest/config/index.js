@@ -5,13 +5,12 @@ export default {
   version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
-  department: 'womenswear',
+  department: 'accessories',
   type: 'pattern',
   difficulty: 1,
-  tags: ['example'],
   optionGroups: {
     size: ['width'],
-    content: ['colors', 'circles', 'text', 'snippets', 'macros']
+    content: ['colors', 'circles', 'text', 'snippets', 'macros'],
   },
   measurements: [],
   parts: ['test'],
@@ -22,6 +21,6 @@ export default {
     text: { bool: true },
     snippets: { bool: true },
     macros: { bool: true },
-    widthHd: { bool: true }
-  }
+    widthHd: { bool: true },
+  },
 }

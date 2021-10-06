@@ -15,7 +15,7 @@ export default function (part) {
     measurements,
     complete,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   // Hide Brian paths
@@ -120,7 +120,7 @@ export default function (part) {
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfHem,
-      grainline: true
+      grainline: true,
     })
     points.title = new Point(points.waist.x / 2, points.waist.y)
     macro('title', { at: points.title, nr: 1, title: 'front' })
@@ -161,7 +161,7 @@ export default function (part) {
     macro('vd', {
       from: points.cfHem,
       to: points.cfNeck,
-      x: points.cfHem.x - sa - 15
+      x: points.cfHem.x - sa - 15,
     })
   }
 

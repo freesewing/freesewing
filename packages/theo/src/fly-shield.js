@@ -24,7 +24,7 @@ export default function (part) {
       at: points.title,
       title: 'flyShield',
       nr: 7,
-      scale: 0.7
+      scale: 0.7,
     })
   }
 
@@ -33,17 +33,17 @@ export default function (part) {
     macro('hd', {
       from: points.leftTop,
       to: points.splitWaist,
-      y: points.splitWaist.y - sa - 15
+      y: points.splitWaist.y - sa - 15,
     })
     macro('hd', {
       from: points.new43,
       to: points.splitWaist,
-      y: points.splitWaist.y - sa - 30
+      y: points.splitWaist.y - sa - 30,
     })
     macro('vd', {
       from: points.new43,
       to: points.splitWaist,
-      x: points.splitWaist.x + sa + 15
+      x: points.splitWaist.x + sa + 15,
     })
   }
 

@@ -4,7 +4,7 @@ import frontRightClassicCuton from './frontright-classic-cuton'
 import frontRightSeamless from './frontright-seamless'
 
 export default (part) => {
-  let { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
+  const { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
   macro('flip')
   if (complete) {
     points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5)
@@ -12,9 +12,9 @@ export default (part) => {
     if (paperless) {
       frontDimensions(part, 'right')
       macro('ld', {
-        from: points.shoulder,
-        to: points.neck,
-        d: 15 + sa
+        from: points.s3ArmholeSplit,
+        to: points.s3CollarSplit,
+        d: 15 + sa,
       })
       if (sa) {
         paths.hemSa.attr('data-text-dy', 7, true)

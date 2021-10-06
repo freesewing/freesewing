@@ -1,6 +1,30 @@
 # Change log for: @freesewing/huey
 
 
+## 2.18.0 (2021-09-09)
+
+### Fixed
+
+ - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
+
+## 2.17.0 (2021-07-01)
+
+### Added
+
+ - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
+
+## 2.16.1 (2021-05-30)
+
+### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
+## 2.16.0 (2021-05-24)
+
+### Fixed
+
+ - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
+
 ## 2.11.3 (2021-01-16)
 
 ### Fixed

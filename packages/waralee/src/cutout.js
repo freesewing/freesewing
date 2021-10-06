@@ -13,7 +13,7 @@ export default function (part) {
     complete,
     sa,
     paperless,
-    macro
+    macro,
   } = part.shorthand()
 
   let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
@@ -44,7 +44,7 @@ export default function (part) {
     macro('title', {
       nr: 2,
       at: points.title,
-      title: 'cutout'
+      title: 'cutout',
     })
 
     if (sa) {
@@ -62,22 +62,22 @@ export default function (part) {
     macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
-      y: points.mWaist.y
+      y: points.mWaist.y,
     })
     macro('hd', {
       from: points.mWaist,
       to: points.bWaistSide,
-      y: points.mWaist.y
+      y: points.mWaist.y,
     })
     macro('vd', {
       from: points.mWaist1,
       to: points.mHip,
-      x: points.mWaist.x
+      x: points.mWaist.x,
     })
     macro('vd', {
       from: points.mWaist2,
       to: points.mWaist1,
-      x: points.mWaist.x + 15
+      x: points.mWaist.x + 15,
     })
   }
 

@@ -1,21 +1,15 @@
 export default function (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro
-  } = part.shorthand()
+  let { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+    part.shorthand()
+  if (!options.elasticatedHem) {
+    part.render = false
+    return part
+  }
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
   points.topLeft = new Point(0, 0)
-  points.midLeft = new Point(0, options.ankleElastic + 1)
-  points.bottomLeft = new Point(0, options.ankleElastic * 2 + 2)
+  points.midLeft = new Point(0, store.get('ankleElastic') * 1.05)
+  points.bottomLeft = new Point(0, store.get('ankleElastic') * 2.1)
 
   points.topRight = points.topLeft.shift(0, len)
   points.midRight = points.midLeft.shift(0, len)
@@ -37,11 +31,11 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 4,
-      title: 'cuff'
+      title: 'cuff',
     })
     macro('grainline', {
       from: points.topLeft.shift(0, 15),
-      to: points.bottomLeft.shift(0, 15)
+      to: points.bottomLeft.shift(0, 15),
     })
 
     if (sa) {
@@ -64,12 +58,12 @@ export default function (part) {
       macro('vd', {
         from: points.bottomRight,
         to: points.topRight,
-        x: points.topRight.x + 15 + sa
+        x: points.topRight.x + 15 + sa,
       })
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
-        y: points.bottomRight.y + 15 + sa
+        y: points.bottomRight.y + 15 + sa,
       })
     }
   }

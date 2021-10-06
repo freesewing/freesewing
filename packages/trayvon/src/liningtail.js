@@ -1,19 +1,8 @@
 import { calculateHelpers, draftTieShape, seamAllowance, tieShapeDimensions } from './shared'
 
 export default (part) => {
-  let {
-    Path,
-    Snippet,
-    complete,
-    macro,
-    options,
-    paths,
-    points,
-    paperless,
-    sa,
-    snippets,
-    store
-  } = part.shorthand()
+  let { Path, Snippet, complete, macro, options, paths, points, paperless, sa, snippets, store } =
+    part.shorthand()
 
   calculateHelpers(part)
   draftTieShape(part, store.get('backTip') * 2.5, options.knotWidth * 2.5)
@@ -39,7 +28,7 @@ export default (part) => {
       at: points.title,
       nr: 6,
       title: 'liningTip',
-      rotation: -90
+      rotation: -90,
     })
     snippets.notch = new Snippet('notch', points.tip)
 

@@ -1,5 +1,9 @@
+content_segmentation: 0
 files:
   - source: /packages/i18n/src/locales/en/**/*.yaml
     translation: /packages/i18n/src/locales/%two_letters_code%/**/%original_file_name%
   - source: /packages/i18n/src/locales/en/**/*.yml
     translation: /packages/i18n/src/locales/%two_letters_code%/**/%original_file_name%
+  - source: /markdown/org/**/en.md
+    translation: /markdown/org/**/%two_letters_code%.md
+
