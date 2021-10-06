@@ -1,9 +1,9 @@
 ---
-title: Verwalten Sie Ihr Abonnement in Ihrem Konto
+title: Verwalte dein Abonnement in deinem Account
 ---
 
-Als registrierter Benutzer können Sie [Ihre Newsletter-Einstellungen in Ihrem Konto verwalten][1].
+Als registrierter Benutzer kannst du [deine Newsletter-Einstellungen in deinem Account verwalten][1].
 
-Wenn Sie eine andere E-Mail-Adresse als anlegen möchten, die mit Ihrem Konto verknüpft ist, können Sie dies unten tun.
+Wenn du eine andere E-Mail-Adresse anlegen möchtest als die, die mit deinem Account verknüpft ist, kannst du dies hier unten tun.
 
 [1]: /account/settings/newsletter/

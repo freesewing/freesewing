@@ -1,5 +1,5 @@
 ---
-title: HPS zum Taillen
+title: HPS zu Taille vorne
 ---
 
 <Note>
@@ -7,7 +7,7 @@ title: HPS zum Taillen
 ###### HPS: Hochpunktschulter
 
 Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
-Weitere Informationen zum Auffinden dieses Punktes finden Sie in der [Hps-Dokumentation](/docs/measurements/hps/).
+Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokumentation](/docs/measurements/hps/).
 
 </Note>
 

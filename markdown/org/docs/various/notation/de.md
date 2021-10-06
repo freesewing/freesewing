@@ -3,7 +3,7 @@ title: Schnittmuster-Notation
 order: 800
 ---
 
-Hopefully our patterns are easy enough to understand, but if you come across something that confuses you, below is a reference of all our pattern notation:
+Hoffentlich sind unsere Schnittmuster leicht zu verstehen, aber wenn du auf etwas stößt, das dich verwirrt, gibt es hier unten ist eine Referenz für unsere gesamte verwendete Schnittmuster-Notation:
 
 <ReadMore list />
 

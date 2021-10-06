@@ -1,8 +1,8 @@
 ---
-title: Das Zugriffsrecht
+title: Das Recht auf Zugriff
 order: 20
 ---
 
-Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen.
+Du hast das Recht, auf deine persönlichen Daten zuzugreifen.
 
-Gehe zu [/account](/account/) um dies zu tun.
+Gehe zu [/account](/account/), um dies zu tun.

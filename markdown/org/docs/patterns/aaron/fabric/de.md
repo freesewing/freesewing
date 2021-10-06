@@ -5,6 +5,6 @@ Baumwolle mit einem Hauch von etwas Stretchy, vielleicht Strahlen oder einem fei
 
 <Note>
 
-Dehnungen sind zwar nicht erforderlich, aber für Unterwäsche ist es sinnvoll. Allerdings können Sie dies in einem non-stretch machen und stellen Sie sicher, dass Sie sich locker oder lässig passen.
+Dehnbarkeit ist zwar nicht erforderlich, aber für Unterwäsche sinnvoll. Allerdings können Sie dies in einem non-stretch machen und stellen Sie sicher, dass Sie sich locker oder lässig passen.
 
 </Note>

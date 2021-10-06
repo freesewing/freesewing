@@ -59,7 +59,7 @@ hugo:
   description: Hugo is a hooded jumper with raglan sleeves.
   title: Hugo hoodie
 jaeger:
-  description: Jeager is a sport coat style jacket with two buttons and patch pockets.
+  description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
 paco:
   description: Paco are casual yet stylish summer pants.
@@ -92,7 +92,7 @@ theo:
   description: Theo is a classic trouser pattern.
   title: Theo trousers
 titan:
-  description: Titan is a dartless unisex trouser block.
+  description: Titan is a dartless trouser block.
   title: Titan trouser block
 trayvon:
   description: Trayvon is a tie that cuts no corners for a professional result.

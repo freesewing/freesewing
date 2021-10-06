@@ -21,7 +21,7 @@ please [come and talk to us on Discord](https://discord.freesewing.org).
 
 </Note>
 
-For content hosted on [strapi](/editors/content/#strapi), translation is available within Strapi as different language versions of the same post.
+For content hosted on [Strapi](/editors/content/#strapi), translation is available within Strapi as different language versions of the same post.
 
 For markdown content and strings, we use [crowdin](https://crowdin.com/) to manage translations.
 It's an online platform that makes translation a breeze.
@@ -34,13 +34,13 @@ simply [let us know you'd like to help out](https://discord.freesewing.org/) and
 
 <Tip>
 
-##### English as origin langauge, and differences between Crowding and Strapi
+##### English as origin language, and differences between Crowdin and Strapi
 
 Our content comes in two flavors:
 
  - Strings and markdown content **on Crowdin**. Here, English is the **origin language** and 
  translations are kept close to the origin.
- - Blog posts and showcases **on strapi**. Here, there is no origin langauge. People can write 
+ - Blog posts and showcases **on Strapi**. Here, there is no origin langauge. People can write 
  blog posts in any language, or translate more freely to adapt the content to a different audience.
 
 </Tip>

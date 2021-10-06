@@ -15,7 +15,7 @@ Below is a list of custom components you can use in our Markdown content:
 
 <Tip>
 
-Keep in mind that if you place content inside a customer component, you need to leave an empty
+Keep in mind that if you place content inside a custom component, you need to leave an empty
 line at the start and finish. If you don't, the custom component will still work, but the 
 content inside of it will not be parsed as Markdown.
 

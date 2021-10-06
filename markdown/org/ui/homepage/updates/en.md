@@ -15,7 +15,7 @@ If you're looking for our facemask pattern, follow this link:
 Recently, we started organizing contributor calls.
 Anybody with an interest in FreeSewing is welcome to join.
 
-All calls can be joined via [meet.freesewing.org](https://meet.freesewing.org/).
+All calls can be joined via [Discord](https://discord.freesewing.org/).
 Check [the calls schedule](/community/calls/) for details on the upcoming calls.
 
 ##### We've moved to Discord

@@ -1,5 +1,5 @@
 ---
-title: Wie wir Ihre Abonnentendaten verwenden
+title: Wie wir deine Abonnentendaten verwenden
 order: 20
 ---
 
@@ -13,7 +13,7 @@ order: 20
 
 ##### Für wie lange behalten wir sie?
 
-- Solange Sie abonniert bleiben
+- Solange wie du den Newsletter abonnierst
 
 ##### Teilen wir sie?
 
@@ -23,6 +23,6 @@ order: 20
 
 Diese Daten werden für jede Person gespeichert, die unseren Newsletter abonniert.
 
-Für Personen, die ein Konto auf der Website haben, die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, wir speichern keine zusätzlichen persönlichen Daten, da wir bereits ihre E-Mail in der Datei [Kontodaten][1] haben.
+Für Personen, die ein Konto auf der Website haben, und die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, speichern wir keine zusätzlichen persönlichen Daten, da ihre E-Mail-Adresse bereits in den [Kontodaten][1] bei uns hinterlegt ist.
 
 </Note>
