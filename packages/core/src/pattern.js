@@ -61,6 +61,7 @@ export default function Pattern(config = { options: {} }) {
     layout: true,
     debug: true,
     options: {},
+    absoluteOptions: {},
   }
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
@@ -116,6 +117,37 @@ export default function Pattern(config = { options: {} }) {
   }
 }
 
+function snappedOption(option, pattern) {
+  const conf = pattern.config.options[option]
+  const abs = conf.toAbs(pattern.settings.options[option], pattern.settings)
+  // Handle units-specific config
+  if (
+    !Array.isArray(conf.snap) &&
+    conf.snap.metric &&
+    conf.snap.imperial
+  ) conf.snap = conf.snap[pattern.settings.units]
+  // Simple steps
+  if (typeof conf.snap === 'number') return Math.ceil(abs / conf.snap) * conf.snap
+  // List of snaps
+  if (Array.isArray(conf.snap) && conf.snap.length > 1) {
+    for (const snap of conf.snap.sort((a, b) => a - b).map((snap, i) => {
+      const margin = (i < (conf.snap.length - 1))
+        ? (conf.snap[Number(i) + 1] - snap) / 2 // Look forward
+        : (snap - conf.snap[i - 1]) / 2 // Final snap, look backward
+
+      return {
+        min: snap - margin,
+        max: snap + Number(margin),
+        snap,
+      }
+    })) if (abs < snap.max && abs >= snap.min) return snap.snap
+  }
+  // If we end up here, the snap config is wrong
+  pattern.raise.warning(`Invalid snap config for option ${option}`)
+
+  return abs
+}
+
 // Merges settings object with this.settings
 Pattern.prototype.apply = function (settings) {
   if (typeof settings !== 'object') {
@@ -158,6 +190,18 @@ Pattern.prototype.draft = function () {
     this.is = 'draft'
     if (this.debug) this.raise.debug(`Drafting pattern`)
   }
+  // Handle snap for pct options
+  for (let i in this.settings.options) {
+    if (
+      typeof this.config.options[i] !== 'undefined' &&
+      typeof this.config.options[i].snap !== 'undefined' &&
+      this.config.options[i].toAbs instanceof Function
+    ) {
+        let abs = this.config.options[i].toAbs(this.settings.options[i], this.settings)
+        this.settings.absoluteOptions[i] = snappedOption(i, this)
+    }
+  }
+
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
     if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
