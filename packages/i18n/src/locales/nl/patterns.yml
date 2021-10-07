@@ -60,7 +60,7 @@ hugo:
   description: Hugo is een trui met kap en een raglanmouw.
   title: Hugo hoodie
 jaeger:
-  description: Jaeger is een sportief jasje met twee knopen en opgestikte zakken.
+  description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jasje
 paco:
   description: Paco is een casual maar stijlvolle zomerbroek.
@@ -93,7 +93,7 @@ theo:
   description: Theo is een klassiek broekpatroon.
   title: Theo Broek
 titan:
-  description: Titan is een unisex basispatroon voor een broek zonder nepen.
+  description: Titan is a dartless trouser block.
   title: Titan basispatroon broek
 trayvon:
   description: Trayvon is een das zoals het hoort, voor een professioneel resultaat.

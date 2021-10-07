@@ -1,21 +1,21 @@
 ---
-title: Pinning
+title: Stecken
 ---
 
-![Nähstifte sind Teil der Grundversorgung des Nähens](sewing-pins.jpg)
+![Stecknadeln sind Teil der Grundausstattung des Nähzubehörs](sewing-pins.jpg)
 
-![Stoff wird platziert](fabric-pinning.jpg)
+![Stoff wird festgesteckt](fabric-pinning.jpg)
 
-Pinning wird immer dann verwendet, wenn Sie Nähstifte verwenden, um die Dinge an der Stelle zu halten.
+Stecken wird immer dann angewandt, wenn du Stecknadeln verwendest, um Dinge an Ort und Stelle zu halten.
 
-Beispiele für die häufige Verwendung von Pinning sind:
+Einige Beispiele, wo häufig gesteckt wird:
 
- - Nähen einer Naht vor dem Nähen
- - Einen Ornament, eine Tasche oder einen anderen Teil vor dem Anhängen anlegen
- - Das Pinnen von Darts oder anderen Mustern ändert sich, während das Kleidungsstück auf ein Modell passt
+ - Eine Naht an Ort und Stelle stecken, bevor sie richtig genäht wird
+ - Das Anstecken von Verzierungen, Taschen, oder anderen Teilen, bevor sie angefügt werden
+ - Stecken von Abnähern oder anderen Änderungen am Schnittmuster beim Testen des Kleidungsstückes an einem Modell
 
-Pinning ist niemals dauerhaft, sondern lediglich eine vorübergehende Maßnahme, um die Dinge in Ordnung zu bringen.
+Stecken ist niemals permanent, sondern nur eine temporäre Maßnahme, um Dinge an Ort und Stelle zu halten.
 
-> Pinn- und Bastverfahren sind verschiedene Techniken für ähnliche Situationen
+> Heften und Stecken sind unterschiedliche Techniken für ähnliche Situationen
 
 > Bilder von [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) und [Ed Platte](https://www.flickr.com/photos/philentropist/313403963)

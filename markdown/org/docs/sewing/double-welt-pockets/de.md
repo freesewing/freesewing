@@ -91,27 +91,27 @@ Der Besatz ist optional, wenn du keinen verwendest, wird beim Spähen durch die 
 
 Die Form des Taschenbeutels hängt vom Schnittmuster ab. Der Einfachheit halber werde ich einen rechteckigen Taschenbeutel mit abgerundeten Ecken am unteren Rand verwenden, wie man sie hinten auf Hosen finden kann.
 
-> Es gibt in der Regel eine längere und kürzere Version der Tasche. Das liegt daran, dass die eine Seite an der Oberschicht befestigt ist, die andere an der Unterschweißung befestigt ist.
+> Es gibt in der Regel eine längere und kürzere Version des Taschenbeutels. Das liegt daran, dass eine Seite an der oberen Paspel, die andere an der unteren Paspel befestigt wird.
 
 ## Konstruktion
 
-### Schritt 1: Sicherungsschnittstelle vor Ort
+### Schritt 1: Einlage festbügeln
 
 ![Sicherungsschnittstelle an Ort](step01.png)
 
-Verschmelzen Sie die Taschenschnittstelle mit der schlechten Seite Ihres Kleidungsstücks, so dass es den Ort überdeckt, an dem Sie die Welttasche herstellen.
+Bügele die Einlage an der schlechten Seite deines Kleidungsstückes fest, sodass sie die Stelle bedeckt, an der du deine Paspeltasche konstruieren wirst.
 
-> Muster haben normalerweise Noten, die Ihnen helfen, die Platzierung einer Welttasche zu bestimmen
+> Schnittmuster haben normalerweise Knipse, die dir dabei helfen, eine Paspeltasche zu platzieren
 
-### Schritt 2: Markiere die Tasche auf der guten Seite des Stoffes
+### Schritt 2: Markiere die Paspeltache auf der guten Seite des Stoffes
 
 ![Markiere die Tasche auf der guten Seite des Stoffes](step02.png)
 
-Markiere die Tasche wie folgt:
+Markiere die Paspeltasche wie folgt:
 
- - Markieren Sie die Taschenbreite mit den vertikalen Linien. Lassen Sie diese Linien ausdehnen, damit Sie die Schweißnähte später ausrichten können
- - Die mittlere Öffnung der Tasche mit einer horizontalen Linie ausrichten. Lasse es sich erweitern um dir zu helfen, die Schweissen später auszurichten
- - Markiere zwei horizontale Linien parallel zur Mittelzeile, bei einem Versatz in Höhe der Welthöhe (0,5cm in unserem Beispiel)
+ - Markiere die Taschenbreite mit vertikalen Linien. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
+ - Richte die Mitte der Taschenöffnung an einer horizontalen Linie aus. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
+ - Markiere zwei horizontale Linien parallel zur Mittellinie, um die Paspelhöhe versetzt (0,5cm in unserem Beispiel)
 
 Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
 
@@ -145,7 +145,7 @@ Stellen Sie sicher, dass Sie genau auf den vertikalen Linien starten und stoppen
 
 Wenn du fertig bist, nähe die zweite Welt vor Ort. Beachte, dass dies ein bisschen komplizierter sein wird, da du die erste Welle zurückklappen musst, und legen Sie einen Teil Ihrer zweiten Welt darüber.
 
-### Schritt 5: Schneiden Sie Ihre Tasche
+### Schritt 5: Schneide deine Tasche auf
 
 ![Schneide deine Tasche auf](step05.png)
 
@@ -168,7 +168,7 @@ Drehen Sie die Schweissen auf den Rücken und drücken Sie sie flach. Nehmen Sie
 
 > Du drückst mehrere Stoffschichten. Überlegen Sie, ob Sie die Ebenen einzeln drücken (oder öffnen) bevor Sie sie zusammen drücken. Dies wird eine schärfere Kreise und eine bessere Welttasche hervorrufen.
 
-### Schritt 7: Nähen Sie die Tasche öffnende Seiten zu den Schweissen
+### Schritt 7: Nähe die Seite der Taschenöffnung an die Paspeln
 
 ![Nähe die Taschenöffnungsseite der Welt auf einer Seite](step07a.png) ![Und wiederhole auf der anderen Seite](step07b.png)
 
@@ -178,7 +178,7 @@ Nähen Sie das dreieckige Stück Gewebe aus der Tasche Öffnung zu den Schweiße
 
 > Vergewissern Sie sich, dass Sie nicht in die Taschenöffnung nähen, da dies die Nähte auf der Vorderseite zeigt
 
-### Schritt 8: Nähe die untere Tasche in die untere Welt
+### Schritt 8: Nähe den unteren Taschenbeutel an die untere Paspel
 
 ![Nähe die untere Tasche in die Bottomwelt](step08.png)
 
@@ -188,13 +188,13 @@ Auch mit einer Zick-Zack-Nähte den Weltrand fertig zu stellen, so dass die Welt
 
 > Die Taschentasche zeigt sich hier (grün) viel Klarheit. Sie können Ihre Taschen auch aus anderen Stoffen herstellen.
 
-### Schritt 9: Optional: Nähen nach oben Tasche
+### Schritt 9: Optional: Nähe Besatz an den oberen Taschenbeutel
 
 ![Nähen Sie die Vorderseite in die oberste Tasche](step09.png)
 
 > Dieser Schritt ist optional. Befestigen Sie die Vorderseite der Tasche an der oberen Tasche wenn Sie wollen, dass Sie durch die Öffnung der Tasche zeigen.
 
-### Schritt 10: Nähe die oberste Tasche in die oberste Welt
+### Schritt 10: Nähe den oberen Taschenbeutel an die obere Paspel
 
 ![Nähe die oberste Tasche in die Top-Welt](step10.png)
 
@@ -202,7 +202,7 @@ Falte dein Kleidungsstück so dass du die Tasche nach oben nähen kannst.
 
 > Wenn Sie die Vorderseite auf Ihre Tasche aufgetragen haben, stellen Sie sie mit der Vorderseite in Richtung der Schwefel.
 
-### Schritt 11: Befestigen Sie die Schweissen an die Tasche
+### Schritt 11: Befestige die Paspeln am Taschenbeutel
 
 ![Nähen Sie eine Seite](step11a.png) ![Nähen Sie die andere Seite](step11b.png) ![Und Nähen Sie die Oberseite](step11c.png)
 

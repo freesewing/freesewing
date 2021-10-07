@@ -2,18 +2,18 @@
 title: Fadenlauf
 ---
 
-![Die Körnung läuft parallel zur Eselkante](fabric-grain.jpg)
+![Der Fadenlauf verläuft parallel zum Webrand](fabric-grain.jpg)
 
-Das Korn eines Stoffes wird durch die Ausrichtung der Garne in einem Gewebe bestimmt. Genauer gesagt wird die Kornlinie durch die Ausführung der Kettgarne bestimmt.
+Der Fadenlauf eines Stoffes wird durch die Ausrichtung der Garne in einem Gewebe bestimmt. Genauer gesagt wird der Fadenlauf dadurch bestimmt, wie die Kettfäden verlaufen.
 
-Gewebter Stoff wird durch das Weben zwischen den Kettenfaden erzeugt. Die Kettfäden verlaufen parallel zur Körperkante entlang der Länge einer Stoffrolle, während die Wunde über ihre Breite hin und her verläuft.
+Gewebter Stoff wird durch das Weben des sogenannten Schussfadens zwischen den Kettfäden erzeugt. Die Kettfäden verlaufen entlang der Länge einer Stoffrolle, parallel zum Webrand, während die Schussfäden über ihre Breite hinweg hin und her verläuft.
 
-Getreide wird auf einem Muster durch die Kornlinie angezeigt. Beim Ausschneiden des Musters ist es wichtig, das Korn des Musters an das Korn des Stoffes auszurichten.
+Der Fadenlauf wird auf einem Schnittmuster angegeben. Beim Ausschneiden des Schnittmusters ist es wichtig, den aufgezeichneten Fadenlauf mit dem Fadenlauf des Stoffes auszurichten.
 
-> Für weitere Ketten- und Wellendetails: [Auf Wikipedia weben](http://en.wikipedia.org/wiki/Weaving)
+> Für mehr Details zu Schuss- und Kettfäden: [Weben auf Wikipedia (engl. *weaving*)](http://en.wikipedia.org/wiki/Weaving)
 
-> ##### Verwirrt? Holz denken
+> ##### Verwirrt? Denk' an Holz
 > 
-> Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie andere Parameter.
+> Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie ein paar andere Parameter.
 > 
-> Genau wie ein Holzarbeiter dies berücksichtigen wird, bevor er das Holz schneidet, sollten Sie das Getreide berücksichtigen, bevor Sie Ihren Stoff ausschneiden.
+> Genau wie Holzarbeiter/-innen dies berücksichtigen, bevor sie das Holz schneiden, solltest du den Fadenlauf berücksichtigen, bevor du deinen Stoff ausschneidest.

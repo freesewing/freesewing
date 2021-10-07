@@ -19,7 +19,7 @@ weWillReRender: Wenn du Änderungen vornimmst, werden wir es erneut für dich re
 youCan: Du kannst
 enterMeasurements: Maße von Hand eingeben
 preloadMeasurements: Einen bestehenden Satz an Maßen einlesen
-size: Grösse
+size: Größe
 noRequiredMeasurements: Dieses Schnittmuster hat keine benötigten Maße
 howtoAddMeasurements: Um Maße als Anforderung zu definieren, füge sie der Sektion <b>measurements</b> in der Konfigurationsdatei des Schnittmusters hinzu.
 seeDocsAt: Dokumentation zu diesem Thema ist verfügbar unter

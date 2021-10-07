@@ -4,5 +4,5 @@
 Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_backneckcutout_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Schnittmuster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_backneckcutout_sample.svg "Effekt dieser Option auf das Schnittmuster")
