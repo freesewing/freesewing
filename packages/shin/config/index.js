@@ -1,4 +1,7 @@
 import { version } from '../package.json'
+import { elastics } from '@freesewing/snapseries'
+import freesewing from '@freesewing/core'
+const { pctBasedOn } = freesewing
 
 export default {
   name: 'shin',
@@ -10,7 +13,7 @@ export default {
   difficulty: 2,
   optionGroups: {
     fit: ['bulge', 'backRise', 'legReduction', 'stretch'],
-    style: ['rise'],
+    style: ['rise', 'elasticWidth'],
   },
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
   parts: ['back', 'front', 'waistband'],
@@ -21,10 +24,10 @@ export default {
     gussetFactor: 0.0714,
     angle: 10,
 
-    // Millimeters
-    elasticWidth: { mm: 35, min: 15, max: 60 },
+    //elasticWidth: { mm: 35, min: 15, max: 60 },
 
     // Percentages
+    elasticWidth: { pct: 10, min: 4, max: 20, snap: elastics, ...pctBasedOn('waistToUpperLeg') },
     stretch: { pct: 20, min: 10, max: 30 },
     bulge: { pct: 2.5, min: 0, max: 5 },
     legReduction: { pct: 5, min: 0, max: 10 },

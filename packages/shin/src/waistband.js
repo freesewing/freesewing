@@ -1,8 +1,8 @@
 export default function (part) {
-  let { store, macro, Point, Path, points, paths, complete, paperless, sa, options, utils } =
+  let { store, macro, Point, Path, points, paths, complete, paperless, sa, options, utils, absoluteOptions } =
     part.shorthand()
 
-  let height = options.elasticWidth * 2
+  let height = absoluteOptions.elasticWidth * 2
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)
   points.topMidLeft = new Point(height, 0)
