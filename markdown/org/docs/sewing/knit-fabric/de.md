@@ -4,7 +4,7 @@ title: Strickstoff
 
 ![Ein Stück graues (Französisch Terry) Trikot, ein Strickstoff](fabric.jpg)
 
-Strickstoff ist Stoff, der strickt ist, und nicht gewebt. Das Strickgewebe streckt sich typischerweise bis zu einem gewissen Grad.
+Strickstoff ist Stoff, der gestrickt und nicht gewoben ist. Das Strickgewebe streckt sich typischerweise bis zu einem gewissen Grad.
 
 Während das Stoff strickt ist, sieht es nicht wie Strickwaren aus, sondern wie Stoff.
 

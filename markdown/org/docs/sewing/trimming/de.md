@@ -1,11 +1,11 @@
 ---
-title: Schneiden
+title: Zurückschneiden
 ---
 
-![Seam Erlaubnis gekürzt](trimming.jpg)
+![Nahtzugabe, die zurückgeschnitten wird](trimming.jpg)
 
-Schneiden oder abschneiden schneidet übermäßige [Nahtmenge](/docs/sewing/seam-allowance) ab.
+Zurückschneiden, oder Abschneiden, schneidet übermäßige [Nahtzugabe](/docs/sewing/seam-allowance) ab.
 
-Oft ist das Ziel des Schneiden der Schüssel in den Nähten eines Kleidungsstückes zu reduzieren.
+Häufiges Ziel vom Zurückschneiden ist das Verringern von Stoffmenge in den Nähten eines Kleidungsstückes.
 
 > Bild von [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)

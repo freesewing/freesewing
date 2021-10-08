@@ -1,7 +1,7 @@
 ---
 aaron:
   description: Aaron ist ein sportliches Shirt oder Tank Top.
-  title: Aaron, das Shirt
+  title: Aaron, das A-Shirt
 albert:
   description: Albert ist eine Schürze.
   title: Albert, die Schürze
@@ -12,7 +12,7 @@ benjamin:
   description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.
   title: Benjamin, die Fliege
 bent:
-  description: Dieser zweiteilige Armschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
+  description: Dieser zweiteilige Ärmel-Grundschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Bent, ein Grundschnitt
 breanna:
   description: Breanna ist ein Grundschnitt für Personen mit Brüsten.
@@ -46,7 +46,7 @@ florent:
   title: Florent, die Schiebermütze
 florence:
   description: 'Florence ist ein Mundschutz.'
-  title: Gesichtsmaske "Florence"
+  title: Florence, der Mundschutz
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut.'
   title: Holmes Deerstalker-Hut
@@ -60,7 +60,7 @@ hugo:
   description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
   title: Hugo, der Hoodie
 jaeger:
-  description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
+  description: Jaeger ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Jaeger, das Sakko
 paco:
   description: Paco ist eine lässige, aber stilvolle Sommerhose.
@@ -93,7 +93,7 @@ theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Theo, die Hose
 titan:
-  description: Titan ist ein Unisex-Grundschnitt für Hosen ohne Abnäher.
+  description: Titan ist ein Grundschnitt für Hosen ohne Abnäher.
   title: Titan, ein Hosen-Grundschnitt
 trayvon:
   description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
@@ -108,5 +108,5 @@ waralee:
   description: Waralee ist eine Wickelhose.
   title: Waralee, die Wickelhose
 yuri:
-  description: Yuri ist ein schickes <unk> ess-Cardigan basierend auf den Huey & Hugo Hoodies
-  title: Yuri Kapuze
+  description: Yuri ist ein schicker Cardigan ohne Reißverschluss, basierend auf den Huey & Hugo Hoodies
+  title: Yuri, der Hoodie

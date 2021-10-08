@@ -72,8 +72,8 @@ draftSettings:
   term: entwurfseinstellungen
   description: 'Mit den <b>Entwurfseinstellungen</b> legst du fest, wie ein Schnittmuster erzeugt wird'
 patrons:
-  term: förderer
-  description: 'Förderer unterstützen Freesewing finanziell. Sie sind treue Unterstützer, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.'
+  term: Förderer/-innen
+  description: 'Förderer/-innen unterstützen Freesewing finanziell. Sie sind treue Unterstützer/-innen, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen.'
 msf:
   term: MSF
   description: "Médecins Sans Frontières/Ärzte ohne Grenzen - Siehe <a href='https://msf.org/'>msf.org</a>"
