@@ -48,7 +48,7 @@
 
 # @freesewing/lunetius
 
-FIXME
+A FreeSewing pattern for a lacerna, a historical Roman cloak
 
 
 

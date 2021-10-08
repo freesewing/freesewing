@@ -1,0 +1,40 @@
+name: Unit tests - Walburga
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: cd packages/walburga && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies
+        run: "cd packages/walburga && npm install @freesewing/core@^2.19.0-alpha.1 @freesewing/plugin-bundle@^2.19.0-alpha.1 @freesewing/models@2.19.0-alpha.1 @freesewing/pattern-info@2.19.0-alpha.1 mocha chai"
+        env:
+          CI: true
+      - name: Build pattern
+        run: cd packages/walburga && npm run build
+      - name: Run pattern unit tests
+        run: cd packages/walburga && npm run testci

@@ -1,7 +1,7 @@
 {
   "name": "lunetius",
   "homepage": "https://lunetius.freesewing.dev/",
-  "version": "2.18.0-rc.2",
+  "version": "",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "latest",

@@ -1,7 +1,7 @@
 {
   "name": "tiberius",
   "homepage": "https://tiberius.freesewing.dev/",
-  "version": "2.16.1",
+  "version": "",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "latest",
@@ -28,9 +28,12 @@
     "react-intl": "^5.18.0",
     "react-scripts": "^4.0.3",
     "file-saver": "^2.0.5",
-    "react-markdown": "6.0.2"
+    "react-markdown": "6.0.2",
+    "source-map-explorer": "^2.5.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "size": "source-map-explorer 'build/static/js/*.js' --tsv --no-root",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

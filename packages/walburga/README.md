@@ -48,7 +48,7 @@
 
 # @freesewing/walburga
 
-FIXME
+A FreeSewing pattern for a wappenrock (tabard&#x2F;surcoat), a historical European&#x2F;medieval (ish) garment
 
 
 

@@ -48,7 +48,7 @@
 
 # @freesewing/tiberius
 
-FIXME
+A FreeSewing pattern for a tunica, a historical Roman tunic
 
 
 
