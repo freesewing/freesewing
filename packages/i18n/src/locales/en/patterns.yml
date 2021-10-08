@@ -61,9 +61,9 @@ hugo:
 jaeger:
   description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
-lunetius: Lunentius Lacerna
+lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
-  title:
+  title: Lunentius Lacerna
 paco:
   description: Paco are casual yet stylish summer pants.
   title: Paco pants
