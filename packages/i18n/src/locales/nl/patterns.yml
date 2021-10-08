@@ -62,6 +62,9 @@ hugo:
 jaeger:
   description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jasje
+lunetius:
+  description: Lunetius is a lacerna, a historical Roman cloak
+  title:
 paco:
   description: Paco is een casual maar stijlvolle zomerbroek.
   title: Paco broek
@@ -92,6 +95,9 @@ teagan:
 theo:
   description: Theo is een klassiek broekpatroon.
   title: Theo Broek
+tiberius:
+  description: Tiberius is a historical Roman tunic
+  title: Tiberius Tunica
 titan:
   description: Titan is a dartless trouser block.
   title: Titan basispatroon broek
@@ -104,6 +110,9 @@ ursula:
 wahid:
   description: Wahid is een klassiek aansluitend gilet.
   title: Wahid gilet
+walburga:
+  description: Walburga is a tabard/surcoat, a historical garment from medieval Europe
+  title: Walburga Wappenrock
 waralee:
   description: Waralee is een wikkelbroek.
   title: Waralee wikkelbroek
