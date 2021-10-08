@@ -77,6 +77,8 @@ packageJson:
       - jargon
       - gatsby
       - gatsby-plugin
+  lunetius: &starf
+    author: Starfetch (https://github.com/starfetch)
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
@@ -101,6 +103,7 @@ packageJson:
     files: []
     publishConfig: {}
     rollup: {}
+  tiberius: *starf
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
@@ -131,6 +134,7 @@ packageJson:
       - 'validateTld/*'
   waralee:
     author: woutervdub (https://github.com/woutervdub)
+  walburga: *starf
   yuri:
     author:  biou (https://github.com/biou)
 
