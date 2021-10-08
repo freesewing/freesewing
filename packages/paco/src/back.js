@@ -80,7 +80,7 @@ export default function (part) {
   points.seatOut = points.seatOut.shift(angle, delta)
 
   // Cut the top of our pants short to make room for the waistband/elastic
-  store.set('waistbandWidth', measurements.waistToFloor * options.waistbandWidth)
+  store.set('waistbandWidth', absoluteOptions.waistbandWidth)
   points.styleWaistOut = drawOutseam(true).reverse().shiftAlong(store.get('waistbandWidth'))
   points.styleWaistIn = points.styleWaistIn.shiftTowards(
     points.crossSeamCurveStart,

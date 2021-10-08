@@ -41,6 +41,7 @@
   "peerDependencies": {
     "@freesewing/core": "^2.19.0-alpha.1",
     "@freesewing/plugin-bundle": "^2.19.0-alpha.1",
+    "@freesewing/snapseries": "^2.19.0-alpha.1",
     "@freesewing/titan": "^2.19.0-alpha.1"
   },
   "dependencies": {},

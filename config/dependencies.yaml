@@ -172,6 +172,7 @@ legend:
     '@freesewing/plugin-buttons': *freesewing
 paco:
   peer:
+    '@freesewing/snapseries': *freesewing
     '@freesewing/titan': *freesewing
 plugin-bundle:
   dev:
