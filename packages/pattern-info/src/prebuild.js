@@ -21,6 +21,7 @@ const hortensia = require('@freesewing/hortensia').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
+const lunetius = require('@freesewing/lunetius').config
 const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
 const sandy = require('@freesewing/sandy').config
@@ -31,10 +32,12 @@ const sven = require('@freesewing/sven').config
 const tamiko = require('@freesewing/tamiko').config
 const teagan = require('@freesewing/teagan').config
 const theo = require('@freesewing/theo').config
+const tiberius = require('@freesewing/tiberius').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
 const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
+const walburga = require('@freesewing/walburga').config
 const waralee = require('@freesewing/waralee').config
 const yuri = require('@freesewing/yuri').config
 
@@ -60,6 +63,7 @@ const patterns = {
   huey,
   hugo,
   jaeger,
+  lunetius,
   paco,
   penelope,
   sandy,
@@ -70,10 +74,12 @@ const patterns = {
   tamiko,
   teagan,
   theo,
+  tiberius,
   titan,
   trayvon,
   ursula,
   wahid,
+  walburga,
   waralee,
   yuri,
 }
