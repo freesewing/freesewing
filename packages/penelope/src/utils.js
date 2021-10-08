@@ -38,7 +38,6 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   seat += seatEase
   waist += waistEase
   let seatWaistDiff = Math.max(seat - waist, 0)
-  options.seatWaistDiff = seatWaistDiff
 
   let nrOfDarts = options.nrOfDarts
 
