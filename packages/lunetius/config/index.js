@@ -19,31 +19,34 @@ export default {
     'parametric design',
     'pattern',
     'sewing',
-    'sewing pattern'
+    'sewing pattern',
   ],
   optionGroups: {
-      fit:
-      ['headRatio','neckRatio']
-      ,
-      style: ['lengthBonus','widthBonus',
-	      'length',]
+    fit: ['headRatio', 'neckRatio'],
+    style: ['lengthBonus', 'widthBonus', 'length'],
   },
-    measurements: ['waistToKnee','waistToUpperLeg','waistToFloor','hpsToWaistBack','neck','shoulderToShoulder','shoulderToElbow','waistToHips'],
+  measurements: [
+    'waistToKnee',
+    'waistToUpperLeg',
+    'waistToFloor',
+    'hpsToWaistBack',
+    'neck',
+    'shoulderToShoulder',
+    'shoulderToElbow',
+    'waistToHips',
+  ],
   dependencies: {},
   inject: {},
   hide: [],
   parts: ['lacerna'],
   options: {
-      headRatio: {pct: 100, min: 80, max: 120},
-      lengthBonus:{ pct: 105, min: 60, max: 130 },
-      widthBonus: {pct: 100, min:50, max: 130},
-      length: {
-	  list: ['ToKnee',
-		 'ToBelowKnee',
-		 'ToHips',
-		 'ToUpperLeg','ToFloor'],
-	  dflt: 'ToBelowKnee'
-      },
-      neckRatio: {pct: 115, min: 95, max: 130},
-  }
+    headRatio: { pct: 100, min: 80, max: 120 },
+    lengthBonus: { pct: 105, min: 60, max: 130 },
+    widthBonus: { pct: 100, min: 50, max: 130 },
+    length: {
+      list: ['ToKnee', 'ToBelowKnee', 'ToHips', 'ToUpperLeg', 'ToFloor'],
+      dflt: 'ToBelowKnee',
+    },
+    neckRatio: { pct: 115, min: 95, max: 130 },
+  },
 }

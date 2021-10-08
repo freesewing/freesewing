@@ -12,5 +12,4 @@ Pattern.prototype.draftBase = draftBase
 Pattern.prototype.draftFront = draftFront
 Pattern.prototype.draftBack = draftBack
 
-
 export default Pattern

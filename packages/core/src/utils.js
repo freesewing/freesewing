@@ -356,7 +356,6 @@ export { Bezier }
 export function pctBasedOn(measurement) {
   return {
     toAbs: (val, { measurements }) => measurements[measurement] * val,
-    fromAbs: (val, { measurements }) => Math.round( ( 10 * val) / measurements[measurement]) / 10
+    fromAbs: (val, { measurements }) => Math.round((10 * val) / measurements[measurement]) / 10,
   }
 }
-

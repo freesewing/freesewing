@@ -318,7 +318,9 @@ Part.prototype.shorthand = function () {
     const absoluteOptionsProxy = {
       get: function (absoluteOptions, name) {
         if (typeof absoluteOptions[name] === 'undefined')
-          self.context.raise.warning(`Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``)
+          self.context.raise.warning(
+            `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
+          )
         return Reflect.get(...arguments)
       },
       set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),

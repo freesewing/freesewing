@@ -8,5 +8,4 @@ const Pattern = new freesewing.Design(config, plugins)
 
 Pattern.prototype.draftTunica = draftTunica
 
-
 export default Pattern

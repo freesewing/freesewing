@@ -42,8 +42,19 @@ export default function (part) {
   }
 
   // Shorthand call
-  let { store, sa, points, Path, paths, options, measurements, complete, paperless, macro, absoluteOptions } =
-    part.shorthand()
+  let {
+    store,
+    sa,
+    points,
+    Path,
+    paths,
+    options,
+    measurements,
+    complete,
+    paperless,
+    macro,
+    absoluteOptions,
+  } = part.shorthand()
 
   // Adapt bottom leg width based on heel & heel ease
   let quarterHeel = (measurements.heel * (1 + options.heelEase) * options.legBalance) / 2
