@@ -22,8 +22,7 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    fit: ['headRatio', 'neckRatio'],
-    style: ['lengthBonus', 'widthBonus', 'length'],
+    style: ['lengthRatio', 'widthRatio', 'length'],
   },
   measurements: [
     'waistToKnee',
@@ -35,18 +34,13 @@ export default {
     'shoulderToElbow',
     'waistToHips',
   ],
-  dependencies: {},
-  inject: {},
-  hide: [],
   parts: ['lacerna'],
   options: {
-    headRatio: { pct: 100, min: 80, max: 120 },
-    lengthBonus: { pct: 105, min: 60, max: 130 },
-    widthBonus: { pct: 100, min: 50, max: 130 },
+    lengthRatio: { pct: 105, min: 60, max: 130 },
+    widthRatio: { pct: 100, min: 50, max: 130 },
     length: {
       list: ['ToKnee', 'ToBelowKnee', 'ToHips', 'ToUpperLeg', 'ToFloor'],
       dflt: 'ToBelowKnee',
     },
-    neckRatio: { pct: 115, min: 95, max: 130 },
   },
 }

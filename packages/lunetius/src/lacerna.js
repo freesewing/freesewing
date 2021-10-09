@@ -15,60 +15,50 @@ export default function (part) {
     store,
   } = part.shorthand()
 
-  // set different lengths of lacerna
-  let hem_pos
-  if (options.length === 'ToKnee') {
-    hem_pos = measurements.waistToKnee
-  }
-  if (options.length === 'ToBelowKnee') {
-    hem_pos = 1.3 * measurements.waistToKnee
-  }
-  if (options.length === 'ToHips') {
-    hem_pos = measurements.waistToHips
-  }
-  if (options.length === 'ToUpperLeg') {
-    hem_pos = measurements.waistToUpperLeg
-  }
-  if (options.length === 'ToFloor') {
-    hem_pos = measurements.waistToFloor
-  }
-  // define some variables
-  //    let hwidth = (measurements.shoulderToShoulder/2 + measurements.shoulderToElbow) * options.widthBonus
-  let length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus
-  let hneck = (measurements.neck / 2) * 1.1 * options.neckRatio
-  let width =
-    (0.6 * measurements.shoulderToShoulder + 1.8 * measurements.shoulderToElbow) *
-    options.widthBonus
-  let leftLength = measurements.hpsToWaistBack + measurements.waistToHips
+  // Store length and width
+  store.set('length', (
+    measurements.hpsToWaistBack + (
+      (options.length === 'ToBelowKnee')
+        ? 1.3 * measurements.waistToKnee
+        : measurements[`waist${options.length}`]
+    )
+  ) * options.lengthRatio)
+  store.set('width', (
+    0.6 * measurements.shoulderToShoulder +
+    1.8 * measurements.shoulderToElbow
+  ) * options.widthRatio)
 
-  // make points
+  // Add points
   points.top = new Point(0, 0)
-  points.bottom = new Point(0, length)
-  points.topLeft = points.top.shift(180, width)
+  points.bottom = new Point(0, store.get('length'))
+  points.topLeft = points.top.shift(180, store.get('width'))
   points.bottomLeft = points.topLeft.shift(-90, points.top.dy(points.bottom))
-  //points.topRight = points.topLeft.flipX()
-  //points.bottomRight = points.bottomLeft.flipX()
+  points.middleLeft = points.topLeft.shift(-90, measurements.hpsToWaistBack + measurements.waistToHips)
+  // Don't let middleLeft be lower than the hem
+  if (points.middleLeft.y > points.bottomLeft.y) points.middleLeft.y = points.bottomLeft.y
 
-  points.middleLeft = points.topLeft.shift(-90, leftLength)
-
-  points.topShoulder = points.top.shift(180, width - 1.2 * measurements.shoulderToElbow)
+  points.topShoulder = points.top.shift(180, store.get('width') - 1.2 * measurements.shoulderToElbow)
   points.bottomShoulder = points.topShoulder.shift(-90, points.top.dy(points.bottom))
-  points.bottomShoulderCp = points.bottomLeft.copy().shiftFractionTowards(points.top, 0.05)
+  points.bottomShoulderCp1 = points.middleLeft.shift(-90, points.middleLeft.dy(points.bottom)/2)
+  points.bottomShoulderCp2 = points.bottomLeft.shiftFractionTowards(points.bottomShoulder, 0.5)
 
-  paths.fold = new Path().move(points.bottom).line(points.top)
-
-  paths.seam = new Path().move(points.top).line(points.topLeft)
-
+  // Add paths
+  paths.fold = new Path().move(points.bottom).line(points.top).setRender(false)
   paths.hem = new Path()
     .move(points.topLeft)
     .line(points.middleLeft)
-    .curve_(points.bottomShoulderCp, points.bottomShoulder)
+    .curve(points.bottomShoulderCp1, points.bottomShoulderCp2, points.bottomShoulder)
     .line(points.bottom)
+    .setRender(false)
+  paths.saBase = new Path().move(points.top).line(points.topLeft).setRender(false)
+  paths.seam = paths.saBase
+    .join(paths.hem)
+    .join(paths.fold)
+    .attr('class', 'fabric')
+    .setRender(true)
 
-  // draw other paths
 
   // Complete?
-
   if (complete) {
     snippets.shoulder = new Snippet('notch', points.topShoulder)
 
@@ -86,7 +76,7 @@ export default function (part) {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'lacerna',
+      title: 'Lacerna',
     })
     points.__titleNr.attr('data-text-class', 'center')
     points.__titleName.attr('data-text-class', 'center')
@@ -98,7 +88,7 @@ export default function (part) {
 
     // seam allowance
     if (sa) {
-      paths.sa = paths.seam
+      paths.sa = paths.saBase
         .offset(sa)
         .join(paths.hem.offset(sa * 1.5))
         .close()
@@ -155,5 +145,6 @@ export default function (part) {
       })
     }
   }
+
   return part
 }
