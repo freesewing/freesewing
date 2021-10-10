@@ -158,7 +158,7 @@ Schneiden Sie Ihre Welttasche durch Schneide entlang der Mitte horizontale Linie
 
 ### Schritt 6: Die Schweissen auf die andere Seite drehen und drücken
 
-![Die Schweissen auf die andere Seite drehen und drücken](step06.png)
+![Die Paspeln auf die andere Seite wenden und bügeln](step06.png)
 
 Sie haben Ihre Schweißnähte auf die gute Seite des Stoffes. Jetzt werden wir sie auf die Rückseite drehen, durch die Öffnung, die wir gerade im Gewebe geschnitten.
 
