@@ -28,7 +28,6 @@ export default {
       'widthBonus',
       'length',
       'neckoRatio',
-      // 'width',
       'hipLengthBonus',
       'neckline',
     ],
@@ -36,16 +35,10 @@ export default {
   measurements: [
     'head',
     'neck',
-    //	'shoulderToElbow',
     'shoulderToShoulder',
-    //	'biceps',
     'hpsToWaistBack',
     'waistToKnee',
     'waistToHips',
-    //	'waist',
-    //	'chest',
-    //	'seat',
-    //	'hips',
     'waistToFloor',
     'waistToUpperLeg',
   ],
@@ -66,7 +59,5 @@ export default {
     neckline: { bool: true },
     neckoRatio: { pct: 100, min: 10, max: 190 },
     hipLengthBonus: { pct: 95, min: 80, max: 120 },
-    // advanced
-    //      forceWidth: {bool: false}
   },
 }
