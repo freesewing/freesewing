@@ -5,6 +5,8 @@ export default (part) => {
     part.shorthand()
 
   const width = store.get('buttonPlacketWidth')
+switch (options.buttonholePlacement){
+	case 'leftOverRight':
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),
     new Point(width / -2, points.cfNeck.y - 20),
@@ -18,7 +20,22 @@ export default (part) => {
   points.placketBottomIn = points.cfHem.shift(180, width / 2)
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
-
+break
+case 'rightOverLeft':
+  points.placketTopIn = utils.lineIntersectsCurve(
+    new Point(width / 2, points.cfNeck.y + 20),
+    new Point(width / 2, points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  )
+  points.placketTopOut = points.cfNeck.shift(180, width / 2)
+  points.placketTopEdge = points.cfNeck.shift(180, width * 1.5)
+  points.placketBottomIn = points.cfHem.shift(0, width / 2)
+  points.placketBottomOut = points.cfHem.shift(180, width / 2)
+  points.placketBottomEdge = points.cfHem.shift(180, width * 1.5)
+}
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
@@ -50,6 +67,8 @@ export default (part) => {
     // Buttons
     addButtons(part)
 
+switch (options.buttonholePlacement){
+	case 'leftOverRight':
     // Title
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
 
@@ -59,6 +78,18 @@ export default (part) => {
         .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + sa * 3))
         .line(paths.hemSa.start())
     }
+	break
+	case 'rightOverLeft':
+	// Title
+    macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
+
+    if (sa) {
+      paths.saFromArmhole
+        .line(new Point(points.placketTopEdge.x - sa, points.placketTopEdge.y - sa))
+        .line(new Point(points.placketBottomEdge.x - sa, points.placketBottomEdge.y + sa * 3))
+        .line(paths.hemSa.start())
+    }
+  }
   }
 
   // Paperless?

@@ -14,6 +14,8 @@ export default (part) => {
     paperless,
     macro,
     options,
+	store,
+	Store
   } = part.shorthand()
 
   if (!options.seperateButtonholePlacket || options.buttonholePlacketStyle !== 'classic') {
@@ -62,7 +64,9 @@ export default (part) => {
     .line(points.bottomInnerEdge)
 
   paths.seam = paths.saBase.clone().line(points.placketBottomEdge).close().attr('class', 'fabric')
-
+if (options.buttonholePlacement == 'rightOverLeft'){
+  macro('flip')
+  }
   // Complete pattern?
   if (complete) {
     // Placket help lines
@@ -101,6 +105,8 @@ export default (part) => {
     // Buttons
     addButtonHoles(part, 'placketCfNeck')
 
+switch (options.buttonholePlacement){
+	case 'leftOverRight':
     // Grainline
     points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
     points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
@@ -118,6 +124,26 @@ export default (part) => {
       scale: 0.75,
       rotation: -90,
     })
+	break
+	case 'rightOverLeft':
+	// Grainline
+    points.grainlineFrom = points.placketBottomEdge.shift(0, -width / 2)
+    points.grainlineTo = points.placketTopEdge.shift(0, -width / 2)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
+    // Title
+    points.title = new Point(points.placketCfNeck.x, points.cfArmhole.y)
+    macro('title', {
+      at: points.title,
+      nr: '1b',
+      title: 'buttonholePlacket',
+      scale: 0.75,
+      rotation: -90,
+    })
+}
 
     // Logo
     points.logo = points.title.shift(-90, 120)
@@ -126,6 +152,8 @@ export default (part) => {
       .attr('data-rotate', -90)
 
     if (sa) {
+switch (options.buttonholePlacement){
+	case 'leftOverRight':
       paths.sa = paths.saBase.offset(sa * -1)
       paths.sa
         .line(new Point(points.bottomInnerEdge.x + sa, points.bottomInnerEdge.y + 3 * sa))
@@ -134,6 +162,17 @@ export default (part) => {
         .move(points.placketTopEdge)
         .line(paths.sa.start())
         .attr('class', 'fabric sa')
+	break
+	case 'rightOverLeft':
+	paths.sa = paths.saBase.offset(sa * 1)
+      paths.sa
+        .line(new Point(points.bottomInnerEdge.x - sa, points.bottomInnerEdge.y + 3 * sa))
+        .line(new Point(points.placketBottomEdge.x, points.placketBottomEdge.y + 3 * sa))
+        .line(points.placketBottomEdge)
+        .move(points.placketTopEdge)
+        .line(paths.sa.start())
+        .attr('class', 'fabric sa')
+}
     }
   }
 

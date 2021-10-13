@@ -42,6 +42,7 @@ export default {
           'buttonholePlacketWidth',
           'buttonholePlacketFoldWidth',
           'buttonFreeLength',
+		  'buttonholePlacement'
         ],
       },
       {
@@ -179,7 +180,7 @@ export default {
       list: ['auto', 'never', 'always'],
       dflt: 'auto',
     },
-
+	buttonholePlacement: {dflt:'leftOverRight', list:['leftOverRight','rightOverLeft']},
     // Bool
     boxPleat: { bool: false },
     // Counters

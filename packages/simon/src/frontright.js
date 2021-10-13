@@ -5,7 +5,9 @@ import frontRightSeamless from './frontright-seamless'
 
 export default (part) => {
   const { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
+if (options.buttonholePlacement == 'leftOverRight'){
   macro('flip')
+  }
   if (complete) {
     points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5)
     macro('scalebox', { at: points.scalebox })

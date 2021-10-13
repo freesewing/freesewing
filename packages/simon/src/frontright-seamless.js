@@ -5,6 +5,8 @@ export default (part) => {
     part.shorthand()
 
   const width = store.get('buttonPlacketWidth')
+  switch (options.buttonholePlacement){
+	  case 'leftOverRight':
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(0, width * 2.5)
@@ -13,6 +15,17 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(0, width * 2.5)
   points.placketBottomMatch = points.cfHem.shift(180, width / 2)
   points.placketTopMatch = points.cfNeck.shift(180, width / 2)
+  break
+  case 'rightOverLeft':
+  points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
+  points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
+  points.placketTopEdge = points.cfNeck.shift(180, width * 2.5)
+  points.placketBottomFold1 = points.cfHem.shift(180, width / 2)
+  points.placketBottomFold2 = points.cfHem.shift(180, width * 1.5)
+  points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
+  points.placketBottomMatch = points.cfHem.shift(0, width / 2)
+  points.placketTopMatch = points.cfNeck.shift(0, width / 2)
+  }
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
@@ -49,7 +62,14 @@ export default (part) => {
     addButtons(part)
 
     // Title
+switch (options.buttonholePlacement){
+	case 'leftOverRight':
+    // Title
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
+	break
+	case 'rightOverLeft':
+	macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
+}
 
     if (sa) {
       paths.saFromArmhole
