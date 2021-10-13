@@ -1,11 +1,23 @@
 export default function (part) {
-  let { Point, points, Path, paths, measurements, options, macro, complete, sa, paperless } =
-    part.shorthand()
+  let {
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    options,
+    macro,
+    complete,
+    sa,
+    paperless,
+	absoluteOptions,
+  } = part.shorthand()
 
   // Design pattern here
 
   //Radius of the head
-  let headRadius = measurements.head / 2 / Math.PI
+  let headCircumference = measurements.head + absoluteOptions.headEase
+  let headRadius = headCircumference / 2 / Math.PI
 
   points.p0 = new Point(0, 0)
 
@@ -13,7 +25,7 @@ export default function (part) {
     from: points.p0,
     radius: headRadius,
     goreNumber: options.goreNumber,
-    extraLength: ((options.lengthRatio - 0.5) * measurements.head) / 2,
+    extraLength: ((options.lengthRatio - 0.5) * headCircumference) / 2,
     prefix: 'gore_',
     render: true,
   })
@@ -21,7 +33,7 @@ export default function (part) {
   // Complete?
   if (complete) {
     points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
-    macro('title', { at: points.title, nr: 1, title: 'gore', scale: 0.5 })
+    macro('title', { at: points.title, nr: 1, title: 'crown', scale: 0.5 })
 
     macro('cutonfold', {
       from: points.p0,
@@ -31,18 +43,24 @@ export default function (part) {
     })
 
     if (sa) {
-      paths.saBase = new Path()
+      paths.saCurve = new Path()
         .move(points.gore_p1)
         .curve(points.gore_Cp1, points.gore_Cp2, points.gore_p2)
-        .line(points.gore_p3)
-        .line(points.p0)
         .offset(sa)
         .setRender(false)
+	  points.sa1 = new Point(points.gore_p3.x - (sa*2), points.gore_p3.y - sa)
+	  paths.saBase = new Path()	
+		.move(points.gore_p3)
+        .line(points.p0)
+		.offset(sa*2)
+		.setRender(false)
       paths.sa = new Path()
         .move(points.gore_p1)
         .line(points.gore_p1.shift(0, sa))
-        .line(paths.saBase.start())
-        .join(paths.saBase)
+        .line(paths.saCurve.start())
+        .join(paths.saCurve)
+		.line(points.sa1)
+		.join(paths.saBase)
         .line(points.p0)
         .attr('class', 'fabric sa')
     }
