@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'tiberius',
   version,
-  design: 'starf',
-  code: 'starf',
+  design: 'Rika Tamaike',
+  code: 'Rika Tamaike',
   department: 'tops',
   type: 'pattern',
   difficulty: 1,
