@@ -3,6 +3,13 @@
 
 ## unreleased (NaN-NaN-NaN)
 
+### bee
+
+#### Added
+
+ - Bee is a bikini
+ - Initial release
+
 ### charlie
 
 #### Changed
@@ -63,6 +70,13 @@
 #### Fixed
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)
+
+### lunetius
+
+#### Added
+
+ - Lunetius is a lacerna, a historical Roman cloak
+ - Initial release
 
 ### paco
 
@@ -132,6 +146,20 @@
 #### Changed
 
  - Added deprecation warning as we need to rewrite this pattern
+
+### tiberius
+
+#### Added
+
+ - Tiberius is a tunica, a historic Roman tunic
+ - Initial release
+
+### walburga
+
+#### Added
+
+ - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
+ - Initial release
 
 
 ## 2.18.0 (2021-09-09)

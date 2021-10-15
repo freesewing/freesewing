@@ -1,6 +1,9 @@
 unreleased:
 
   Added:
+    bee:
+      - Bee is a bikini
+      - Initial release
     core:
       - Added support for snapped percentage options
         See https://github.com/freesewing/freesewing/discussions/1331
@@ -10,9 +13,18 @@ unreleased:
       - Added the `earWidth` option
       - Added the `visorWidth` option
       - Added the `buttonhole` option
+    lunetius:
+      - Lunetius is a lacerna, a historical Roman cloak
+      - Initial release
+    tiberius:
+      - Tiberius is a tunica, a historic Roman tunic
+      - Initial release
     snapseries:
       - Initial release of `@freesewing/snapseries` wich holds
         commonly used series of snap values for percentage options
+    walburga:
+      - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
+      - Initial release
 
   Changed:
     charlie:

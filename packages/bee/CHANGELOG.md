@@ -1,6 +1,13 @@
 # Change log for: @freesewing/bee
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Bee is a bikini
+ - Initial release
+
 
 This is the **initial release**, and the start of this change log.
 
