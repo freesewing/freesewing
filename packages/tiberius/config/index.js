@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'tiberius',
   version,
-  design: 'starf',
-  code: 'starf',
+  design: 'Rika Tamaike',
+  code: 'Rika Tamaike',
   department: 'tops',
   type: 'pattern',
   difficulty: 1,
@@ -26,7 +26,7 @@ export default {
     style: [
       'lengthBonus',
       'widthBonus',
-      { clavi: ['clavi', 'clavusPosBonus', 'clavusWidth'] },
+      { clavi: ['clavi', 'clavusLocation', 'clavusWidth'] },
       'length',
       'width',
     ],
@@ -56,7 +56,7 @@ export default {
     lengthBonus: { pct: 90, min: 60, max: 130 },
     widthBonus: { pct: 100, min: 50, max: 130 },
     clavi: { bool: false },
-    clavusPosBonus: { pct: 105, min: 90, max: 130 },
+    clavusLocation: { pct: 65, min: 50, max: 80 },
     clavusWidth: { pct: 100, min: 50, max: 150 },
     length: {
       list: ['ToKnee', 'ToMidLeg', 'ToFloor'],

@@ -1,18 +1,5 @@
 export default function (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-  } = part.shorthand()
+  const { points, macro, complete, snippets, Snippet } = part.shorthand()
 
   // Complete?
   if (complete) {
@@ -33,5 +20,6 @@ export default function (part) {
     points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)
     macro('scalebox', { at: points.scalebox })
   }
+
   return part
 }

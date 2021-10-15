@@ -62,6 +62,9 @@ hugo:
 jaeger:
   description: Jaeger ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
   title: Jaeger, das Sakko
+lunetius:
+  description: Lunetius ist eine Lacerna, ein historischer römischer Mantel
+  title: Lunetius, die Lacerna
 paco:
   description: Paco ist eine lässige, aber stilvolle Sommerhose.
   title: Paco, die Hose
@@ -92,6 +95,9 @@ teagan:
 theo:
   description: Theo ist ein klassisches Hosenschnittmuster.
   title: Theo, die Hose
+tiberius:
+  description: Tiberius ist eine historische römische Tunika
+  title: Tiberius, die Tunica
 titan:
   description: Titan ist ein Grundschnitt für Hosen ohne Abnäher.
   title: Titan, ein Hosen-Grundschnitt
@@ -104,6 +110,9 @@ ursula:
 wahid:
   description: Wahid ist eine klassische taillierte Weste.
   title: Wahid, die Weste
+walburga:
+  description: Walburga ist ein Wappenrock, ein historisches Gewand aus dem mittelalterlichen Europa
+  title: Walburga, der Wappenrock
 waralee:
   description: Waralee ist eine Wickelhose.
   title: Waralee, die Wickelhose

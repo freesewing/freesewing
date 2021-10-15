@@ -62,6 +62,9 @@ hugo:
 jaeger:
   description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Veste Jaeger
+lunetius:
+  description: Lunetius is a lacerna, a historical Roman cloak
+  title: Lunetius Lacerna
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco
@@ -92,6 +95,9 @@ teagan:
 theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo
+tiberius:
+  description: Tiberius is a historical Roman tunic
+  title: Tiberius Tunica
 titan:
   description: Titan is a dartless trouser block.
   title: Bloc de pantalon Titan
@@ -104,6 +110,9 @@ ursula:
 wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
+walburga:
+  description: Walburga is a tabard/surcoat, a historical garment from medieval Europe
+  title: Walburga Wappenrock
 waralee:
   description: Waralee sont des pantalons enveloppés.
   title: Pantalon portefeuille Waralee

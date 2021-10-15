@@ -158,7 +158,7 @@ Schneiden Sie Ihre Welttasche durch Schneide entlang der Mitte horizontale Linie
 
 ### Schritt 6: Die Schweissen auf die andere Seite drehen und drücken
 
-![Die Schweissen auf die andere Seite drehen und drücken](step06.png)
+![Die Paspeln auf die andere Seite wenden und bügeln](step06.png)
 
 Sie haben Ihre Schweißnähte auf die gute Seite des Stoffes. Jetzt werden wir sie auf die Rückseite drehen, durch die Öffnung, die wir gerade im Gewebe geschnitten.
 
@@ -204,7 +204,7 @@ Falte dein Kleidungsstück so dass du die Tasche nach oben nähen kannst.
 
 ### Schritt 11: Befestige die Paspeln am Taschenbeutel
 
-![Nähen Sie eine Seite](step11a.png) ![Nähen Sie die andere Seite](step11b.png) ![Und Nähen Sie die Oberseite](step11c.png)
+![Nähe eine Seite](step11a.png) ![Nähe die andere Seite](step11b.png) ![Und nähe die obere Seite](step11c.png)
 
 Legen Sie Ihr Kleidungsstück mit der guten Seite nach oben und falten Sie es an die Seite der Welttasche zurück.
 
@@ -216,7 +216,7 @@ Nähen Sie jetzt die Oberseite der Tasche öffnen, um die Tasche zu öffnen.
 
 ### Schritt 12: Versäubere den Taschenbeutel
 
-![Beende jetzt die Tasche](step12.png)
+![Versäubere nun den Taschenbeutel](step12.png)
 
 Beenden Sie nun die Tasche zurück, indem Sie alle Kanten schließen (die obere Kante ist optional).
 

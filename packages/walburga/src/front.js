@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     Point,
     points,
     Path,
@@ -13,11 +13,12 @@ export default function (part) {
     sa,
     paperless,
     store,
+    utils,
   } = part.shorthand()
 
-  let head = store.get('hhead') * 2
-  let goldenRatio = store.get('goldenRatio')
-  let ratio = goldenRatio * options.neckoRatio
+  const head = store.get('hhead') * 2
+  const goldenRatio = store.get('goldenRatio')
+  const ratio = goldenRatio * options.neckoRatio
 
   if (options.neckline === true) {
     // calculate neck opening
@@ -32,12 +33,6 @@ export default function (part) {
 
     neckomid = (2 * neckotop) / ratio
 
-    //	points.anchor = new Point(100, 50)
-    //	    .attr("data-text", neckotop)
-    //	    .attr("data-text", head)
-    //	    .attr("data-text", goldenRatio)
-    //	    .attr("data-text-class", "center");
-
     // checks to ensure that neck opening does not become too small
     if (neckotop < measurements.neck / 4) {
       ;(neckotop = measurements.neck / 4), (neckomid = (2 * measurements.neck) / 4 / goldenRatio)
@@ -49,20 +44,14 @@ export default function (part) {
     points.neckotop = points.top.shift(0, -neckotop)
     points.neckomid = points.top.shift(-90, neckomid)
 
-    paths.neck = new Path().move(points.neckomid).line(points.neckotop)
-
-    let halvesseam = paths.seam.split(points.neckotop)
-    paths.half = halvesseam[0]
-    delete paths.half
-    delete paths.seam
-
-    paths.seam = paths.neck.join(halvesseam[1])
-
-    let halvesmid = paths.fold.split(points.neckomid)
-    paths.half = halvesmid[1]
-    delete paths.half
-    delete paths.fold
-    paths.fold = halvesmid[0]
+    paths.seam = new Path()
+      .move(points.neckomid)
+      .line(points.neckotop)
+      .line(points.headLeft)
+      .join(paths.seamBase)
+      .line(points.neckomid)
+      .close()
+      .attr('class', 'fabric')
   }
 
   // Complete?
@@ -97,27 +86,29 @@ export default function (part) {
 
     if (sa) {
       if (options.neckline === true) {
-        delete paths.sa
-        paths.sa = paths.seam
+        // Insop the start
+        paths.saHelper = new Path()
+          .move(points.neckomid)
+          .line(points.neckotop)
           .offset(sa)
-          //		.join(paths.hem.offset(sa * 2.5))
-          .close()
+          .setRender(false)
+        paths.sa = paths.saBase
+          .insop('start', new Path()
+            .move(points.neckomid)
+            .line(utils.beamIntersectsX(
+              paths.saHelper.start(),
+              paths.saHelper.end(),
+              points.neckomid.x
+            ))
+            .line(utils.beamIntersectsY(
+              paths.saHelper.start(),
+              paths.saHelper.end(),
+              points.neckotop.y - sa
+            ))
+            .line(points.topLeft.shift(90, sa))
+          )
           .attr('class', 'fabric sa')
-
-        paths.samod = new Path().move(points.bottom).line(points.top).setRender(false)
-
-        let sasplit = paths.samod.intersects(paths.sa)
-        points.sasplit2 = sasplit[0]
-
-        //for (let p of sasplit){
-        //  let sahalves = paths.sa.split(p)
-        //paths.sa = sahalves[0]
-        //}
-
-        let sahalves = paths.sa.split(points.sasplit)
-        paths.sa = sahalves[0]
-        let sahalves2 = paths.sa.split(points.sasplit2)
-        paths.sa = sahalves2[1].close().attr('class', 'fabric sa')
+          .setRender(true)
       }
     }
 
