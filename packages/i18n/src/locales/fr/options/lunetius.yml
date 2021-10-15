@@ -1,0 +1,16 @@
+---
+headRatio:
+  title: Head ratio
+  description: FIXME
+nackRatio:
+  title: Neck ratio
+  description: FIXME
+lengthBonus:
+  title: Length bonus
+  description: Controls how much (extra) length to add
+widthBonus:
+  title: Width bonus
+  description: Controls how much (extra) width to add
+length:
+  title: Length
+  description: Controls the length of the garment
