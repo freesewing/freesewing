@@ -1,3 +1,6 @@
+---
+title: Aaron Instructions
+---
 
 ## Step 1: Close seams
 

@@ -1,3 +1,7 @@
+---
+title: Aaron Chest ease
+---
+
 ![The chest ease option on Aaron](./chestease.svg)
 
 How much room do you want at the chest?
