@@ -30,6 +30,24 @@
 
  - Pattern.on() is now chainable as it returns the Pattern object
 
+### holmes
+
+#### Added
+
+ - Added the `headEase` option
+ - Added the `earLength` option
+ - Added the `earWidth` option
+ - Added the `visorWidth` option
+ - Added the `buttonhole` option
+
+#### Changed
+
+ - The `brim` part has been renamed to `visor` because semantics
+ - The `brimWidth` option is now `visorWidth`
+ - _Gore_ has been changed to _Crown_ in the title
+ - _Ear_ has been changed to _Ear flap_
+ - Added hem allowance at the hem, rather than standard seam allowance
+
 ### hortensia
 
 #### Changed
