@@ -17,13 +17,15 @@ export default function (part) {
   } = part.shorthand()
 
   // define some variables
-  const hem_pos = (options.length === 'ToKnee')
-    ? measurements.waistToKnee
-    :(options.length === 'ToMidLeg')
-    ? measurements.waistToKnee / 1.3
-    : measurements.waistToFloor * 0.95
+  const hem_pos =
+    options.length === 'ToKnee'
+      ? measurements.waistToKnee
+      : options.length === 'ToMidLeg'
+      ? measurements.waistToKnee / 1.3
+      : measurements.waistToFloor * 0.95
 
-  const hiplength = (measurements.hpsToWaistBack + measurements.waistToHips) * options.hipLengthBonus
+  const hiplength =
+    (measurements.hpsToWaistBack + measurements.waistToHips) * options.hipLengthBonus
   const hwidth = (measurements.shoulderToShoulder / 2) * options.widthBonus
   const length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus
   const hhead = (measurements.head / 4) * options.headRatio
@@ -102,20 +104,24 @@ export default function (part) {
         .line(points.triangleLeft.shift(180 + angle, sa))
         .line(points.bottomMiddle.shift(180 + angle, sa))
         .line(points.bottomMiddle.shift(270 + angle, sa))
-        .line(utils.beamIntersectsX(
-          points.bottomMiddle.shift(270 + angle, sa),
-          points.triangle.shift(270 + angle, sa),
-          points.triangle.x
-        ))
+        .line(
+          utils.beamIntersectsX(
+            points.bottomMiddle.shift(270 + angle, sa),
+            points.triangle.shift(270 + angle, sa),
+            points.triangle.x
+          )
+        )
         .line(points.triangle)
         .setRender(false)
 
       // Insop the start
       paths.sa = paths.saBase
-        .insop('start', new Path()
-          .move(points.top)
-          .line(points.top.shift(90, sa))
-          .line(points.topLeft.shift(90, sa))
+        .insop(
+          'start',
+          new Path()
+            .move(points.top)
+            .line(points.top.shift(90, sa))
+            .line(points.topLeft.shift(90, sa))
         )
         .attr('class', 'fabric sa')
         .setRender(true)

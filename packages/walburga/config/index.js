@@ -23,14 +23,7 @@ export default {
   ],
   optionGroups: {
     fit: ['headRatio'],
-    style: [
-      'lengthBonus',
-      'widthBonus',
-      'length',
-      'neckoRatio',
-      'hipLengthBonus',
-      'neckline',
-    ],
+    style: ['lengthBonus', 'widthBonus', 'length', 'neckoRatio', 'hipLengthBonus', 'neckline'],
   },
   measurements: [
     'head',

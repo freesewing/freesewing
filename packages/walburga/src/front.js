@@ -93,19 +93,25 @@ export default function (part) {
           .offset(sa)
           .setRender(false)
         paths.sa = paths.saBase
-          .insop('start', new Path()
-            .move(points.neckomid)
-            .line(utils.beamIntersectsX(
-              paths.saHelper.start(),
-              paths.saHelper.end(),
-              points.neckomid.x
-            ))
-            .line(utils.beamIntersectsY(
-              paths.saHelper.start(),
-              paths.saHelper.end(),
-              points.neckotop.y - sa
-            ))
-            .line(points.topLeft.shift(90, sa))
+          .insop(
+            'start',
+            new Path()
+              .move(points.neckomid)
+              .line(
+                utils.beamIntersectsX(
+                  paths.saHelper.start(),
+                  paths.saHelper.end(),
+                  points.neckomid.x
+                )
+              )
+              .line(
+                utils.beamIntersectsY(
+                  paths.saHelper.start(),
+                  paths.saHelper.end(),
+                  points.neckotop.y - sa
+                )
+              )
+              .line(points.topLeft.shift(90, sa))
           )
           .attr('class', 'fabric sa')
           .setRender(true)

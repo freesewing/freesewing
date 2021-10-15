@@ -16,30 +16,38 @@ export default function (part) {
   } = part.shorthand()
 
   // Store length and width
-  store.set('length', (
-    measurements.hpsToWaistBack + (
-      (options.length === 'ToBelowKnee')
+  store.set(
+    'length',
+    (measurements.hpsToWaistBack +
+      (options.length === 'ToBelowKnee'
         ? 1.3 * measurements.waistToKnee
-        : measurements[`waist${options.length}`]
-    )
-  ) * options.lengthRatio)
-  store.set('width', (
-    0.6 * measurements.shoulderToShoulder +
-    1.8 * measurements.shoulderToElbow
-  ) * options.widthRatio)
+        : measurements[`waist${options.length}`])) *
+      options.lengthRatio
+  )
+  store.set(
+    'width',
+    (0.6 * measurements.shoulderToShoulder + 1.8 * measurements.shoulderToElbow) *
+      options.widthRatio
+  )
 
   // Add points
   points.top = new Point(0, 0)
   points.bottom = new Point(0, store.get('length'))
   points.topLeft = points.top.shift(180, store.get('width'))
   points.bottomLeft = points.topLeft.shift(-90, points.top.dy(points.bottom))
-  points.middleLeft = points.topLeft.shift(-90, measurements.hpsToWaistBack + measurements.waistToHips)
+  points.middleLeft = points.topLeft.shift(
+    -90,
+    measurements.hpsToWaistBack + measurements.waistToHips
+  )
   // Don't let middleLeft be lower than the hem
   if (points.middleLeft.y > points.bottomLeft.y) points.middleLeft.y = points.bottomLeft.y
 
-  points.topShoulder = points.top.shift(180, store.get('width') - 1.2 * measurements.shoulderToElbow)
+  points.topShoulder = points.top.shift(
+    180,
+    store.get('width') - 1.2 * measurements.shoulderToElbow
+  )
   points.bottomShoulder = points.topShoulder.shift(-90, points.top.dy(points.bottom))
-  points.bottomShoulderCp1 = points.middleLeft.shift(-90, points.middleLeft.dy(points.bottom)/2)
+  points.bottomShoulderCp1 = points.middleLeft.shift(-90, points.middleLeft.dy(points.bottom) / 2)
   points.bottomShoulderCp2 = points.bottomLeft.shiftFractionTowards(points.bottomShoulder, 0.5)
 
   // Add paths
@@ -51,12 +59,7 @@ export default function (part) {
     .line(points.bottom)
     .setRender(false)
   paths.saBase = new Path().move(points.top).line(points.topLeft).setRender(false)
-  paths.seam = paths.saBase
-    .join(paths.hem)
-    .join(paths.fold)
-    .attr('class', 'fabric')
-    .setRender(true)
-
+  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric').setRender(true)
 
   // Complete?
   if (complete) {

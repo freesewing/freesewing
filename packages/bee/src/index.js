@@ -12,11 +12,8 @@ import draftBandTie from './bandTie'
 const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-for (let m of [
-  'draftBack',
-  'draftFrontSideDart'
-]) {
-  Pattern.prototype[m] = function(part) {
+for (let m of ['draftBack', 'draftFrontSideDart']) {
+  Pattern.prototype[m] = function (part) {
     return new Bella(this.settings)[m](part)
   }
 }

@@ -99,7 +99,7 @@ export default {
 
     // Elastic
     waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics, ...pctBasedOn('waistToFloor') },
-    ankleElastic: { pct: 5, min: 1, max: 13, snap: elastics, ...pctBasedOn('waistToFloor'), },
+    ankleElastic: { pct: 5, min: 1, max: 13, snap: elastics, ...pctBasedOn('waistToFloor') },
     heelEase: { pct: 5, min: 0, max: 50 },
 
     // Pockets

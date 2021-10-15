@@ -90,12 +90,14 @@ for (let pattern in patterns) {
         if (patterns[shared] && patterns[shared][pattern]) {
           if (
             patterns[shared][pattern][dflt] &&
-            typeof patterns[shared][pattern][dflt][options]  === 'object'
-          ) options[pattern][option] = patterns[shared[pattern].dflt][option]
+            typeof patterns[shared][pattern][dflt][options] === 'object'
+          )
+            options[pattern][option] = patterns[shared[pattern].dflt][option]
           else if (
             typeof shared[pattern].other !== 'undefined' &&
             typeof shared[pattern].other[option] === 'string'
-          ) options[pattern][option] = patterns[shared[pattern].other[option]][option]
+          )
+            options[pattern][option] = patterns[shared[pattern].other[option]][option]
           else throw new Error(`No option translation found for ${option} in ${pattern}`)
         }
       }

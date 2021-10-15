@@ -12,13 +12,13 @@ export default function (part) {
     Snippet,
     paperless,
     macro,
-	absoluteOptions,
+    absoluteOptions,
   } = part.shorthand()
 
   // Design pattern here
-let headCircumference = measurements.head + absoluteOptions.headEase
-let earFlapLength = ((options.lengthRatio * headCircumference) / 2)*options.earLength
-let earFlapWidth = (headCircumference / 12)*options.earWidth
+  let headCircumference = measurements.head + absoluteOptions.headEase
+  let earFlapLength = ((options.lengthRatio * headCircumference) / 2) * options.earLength
+  let earFlapWidth = (headCircumference / 12) * options.earWidth
   points.top = new Point(0, 0)
   points.bottom = new Point(earFlapWidth, earFlapLength)
   points.topC = points.top.shift(0, points.bottom.x)
@@ -26,13 +26,11 @@ let earFlapWidth = (headCircumference / 12)*options.earWidth
   points.bottomFlipped = points.bottom.flipX()
   points.bottomC = points.bottom.shift(90, points.bottom.y - points.bottom.x)
   points.bottomCFlipped = points.bottomC.flipX()
-   paths.seam = new Path()
+  paths.seam = new Path()
     .move(points.bottom)
-	.curve(points.bottomC, points.topC, points.top)
+    .curve(points.bottomC, points.topC, points.top)
     .curve(points.topCFlipped, points.bottomCFlipped, points.bottomFlipped)
-  paths.hem = new Path()
-    .move(points.bottomFlipped)
-    .line(points.bottom)
+  paths.hem = new Path().move(points.bottomFlipped).line(points.bottom)
   // Complete?
   if (complete) {
     macro('grainline', { from: points.top, to: new Point(0, points.bottom.y) })
@@ -41,16 +39,17 @@ let earFlapWidth = (headCircumference / 12)*options.earWidth
     points.title = new Point(0.3 * points.bottom.x, 0.75 * points.bottom.y)
     macro('title', { at: points.title, nr: 3, title: 'ear flap', scale: 0.5 })
     macro('miniscale', { at: new Point(0, points.bottom.y * 0.3) })
- if (options.buttonhole){
-	 let buttonholeDistance = (options.lengthRatio * headCircumference) / 2
- points.buttonhole = new Point (points.top.x, points.bottom.y - buttonholeDistance)
- snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr('data-scale', 2)
- }
+    if (options.buttonhole) {
+      let buttonholeDistance = (options.lengthRatio * headCircumference) / 2
+      points.buttonhole = new Point(points.top.x, points.bottom.y - buttonholeDistance)
+      snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr('data-scale', 2)
+    }
     if (sa) {
-      paths.sa = paths.seam.offset(sa)
-	  .join(paths.hem.offset(sa*2))
-	  .attr('class', 'fabric sa')
-	  .close()
+      paths.sa = paths.seam
+        .offset(sa)
+        .join(paths.hem.offset(sa * 2))
+        .attr('class', 'fabric sa')
+        .close()
     }
 
     // Paperless?
@@ -65,14 +64,14 @@ let earFlapWidth = (headCircumference / 12)*options.earWidth
         to: points.top,
         x: points.bottomFlipped.x - 15 - sa,
       })
-     if (options.buttonhole){
-	 macro('vd', {
-        from: points.buttonhole,
-        to: points.bottom,
-        x: points.bottom.x + 15 + sa,
-      })
-	 }
-  }
+      if (options.buttonhole) {
+        macro('vd', {
+          from: points.buttonhole,
+          to: points.bottom,
+          x: points.bottom.x + 15 + sa,
+        })
+      }
+    }
   }
   return part
 }
