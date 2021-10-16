@@ -70,7 +70,6 @@ export default {
     'cup',
     'neckTie',
     'bandTie',
-    //   'frontShoulderDart'
   ],
   options: {
     // Constants
@@ -110,7 +109,7 @@ export default {
       min: 2,
       max: 18,
       snap: {
-        metric: [6, 13, 19, 25, 32, 38],
+        metric: [5, 7.5, 10, 12.5, 15, 20, 25, 30, 35, 40, 45, 50],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1],
       },
       ...pctBasedOn('bustSpan'),
@@ -124,7 +123,7 @@ export default {
       min: 1,
       max: 9,
       snap: {
-        metric: [6, 13, 19, 25, 32, 38],
+        metric: [5, 7.5, 10, 12.5, 15, 20, 25, 30, 35, 40, 45, 50],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1],
       },
       ...pctBasedOn('hpsToWaistFront'),
