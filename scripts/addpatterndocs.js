@@ -66,8 +66,7 @@ const patternDocsSubPage = (pattern, sub) => {
 }
 
 const optionDocsPage = (pattern, option) => "---\n\n" +
-  i18n.strings.en[`options.${pattern}.${option}.description`] + "\n\n" +
-  `patterns.${pattern}.options.${option}.description`
+  i18n.strings.en[`options.${pattern}.${option}.description`] + "\n"
 
 const present = folder => {
   try {
