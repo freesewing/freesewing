@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.18.0-rc.2" freesewing:plugin-buttons="2.18.0-rc.2" freesewing:plugin-cutonfold="2.18.0-rc.2" freesewing:plugin-dimension="2.18.0-rc.2" freesewing:plugin-grainline="2.18.0-rc.2" freesewing:plugin-logo="2.18.0-rc.2" freesewing:plugin-mirror="2.18.0-rc.2" freesewing:plugin-notches="2.18.0-rc.2" freesewing:plugin-title="2.18.0-rc.2" freesewing:plugin-scalebox="2.18.0-rc.2" freesewing:plugin-round="2.18.0-rc.2" freesewing:plugin-sprinkle="2.18.0-rc.2" class="freesewing" freesewing:plugin-theme="2.18.0-rc.2" width="914.2mm" height="1241.91mm" viewBox="0 0 914.199186943564 1241.9058829097964"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.19.0-rc.0" freesewing:plugin-buttons="2.19.0-rc.0" freesewing:plugin-cutonfold="2.19.0-rc.0" freesewing:plugin-dimension="2.19.0-rc.0" freesewing:plugin-grainline="2.19.0-rc.0" freesewing:plugin-logo="2.19.0-rc.0" freesewing:plugin-mirror="2.19.0-rc.0" freesewing:plugin-notches="2.19.0-rc.0" freesewing:plugin-title="2.19.0-rc.0" freesewing:plugin-scalebox="2.19.0-rc.0" freesewing:plugin-round="2.19.0-rc.0" freesewing:plugin-sprinkle="2.19.0-rc.0" class="freesewing" freesewing:plugin-theme="2.19.0-rc.0" width="914.2mm" height="1241.91mm" viewBox="0 0 914.199186943564 1241.9058829097964"
 >
 <style type="text/css"> <![CDATA[ 
 text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
@@ -194,7 +194,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-side -->
 
 <!-- Start of group #fs-part-collarStand -->
-<g id="fs-part-collarStand"  transform="translate(123.39210598164107, 5.958412412985751) translate(626.5008761352672, 277.0846547256465)">
+<g id="fs-part-collarStand"  transform="translate(123.39210598164107, 5.958412412985751) translate(626.5008761352672, 276.69290896871735)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-121" d="M 123.62,3.93 C 123.62,3.93 74.89,-3.96 5.31,-3.96 C -64.27,-3.96 -112.99,3.93 -112.99,3.93 L -115.05,16.84 C -115.05,16.84 -64.27,13.32 5.31,13.32 C 74.89,13.32 125.67,16.84 125.67,16.84 L 123.62,3.93 z" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-122" d="M 123.81,3.96 C 123.81,3.96 74.89,-3.96 5.3,-3.96 C -64.29,-3.96 -113.21,3.96 -113.21,3.96 L -115.67,16.42 C -115.67,16.42 -64.29,13.32 5.3,13.32 C 74.89,13.32 126.27,16.42 126.27,16.42 L 123.81,3.96 z" />
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-123" d="M 124.08,4.01 C 124.08,4.01 74.89,-3.96 5.33,-3.96 C -64.22,-3.96 -113.41,4.01 -113.41,4.01 L -116.23,16.01 C -116.23,16.01 -64.22,13.32 5.33,13.32 C 74.89,13.32 126.9,16.01 126.9,16.01 L 124.08,4.01 z" />
@@ -210,31 +210,31 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 
 <!-- Start of group #fs-part-collar -->
 <g id="fs-part-collar"  transform="translate(138.54338673548324, -11.282511618987074) translate(626.5008761352672, 0)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-131" d="M 5.31,13.32 C -64.27,13.32 -115.05,16.84 -115.05,16.84 L -122.12,61.3 L -109.21,79.08 C -109.21,79.08 -64.29,56.14 5.31,56.14 C 74.91,56.14 119.84,79.08 119.84,79.08 L 132.74,61.3 L 125.67,16.84 C 125.67,16.84 74.89,13.32 5.31,13.32 z" />
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-131" d="M 5.31,13.32 C -64.27,13.32 -115.05,16.84 -115.05,16.84 L -122.12,61.3 L -109.5,78.69 C -109.5,78.69 -64.29,55.66 5.31,55.66 C 74.91,55.66 120.12,78.69 120.12,78.69 L 132.74,61.3 L 125.67,16.84 C 125.67,16.84 74.89,13.32 5.31,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-132" d="M 121.3,77.06 C 121.3,77.06 74.91,53.64 5.31,53.64 C -64.29,53.64 -110.68,77.06 -110.68,77.06" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-133" d="M 5.3,13.32 C -64.29,13.32 -115.67,16.42 -115.67,16.42 L -124.12,59.34 L -111.98,77.44 C -111.98,77.44 -65.9,56.14 5.3,56.14 C 76.5,56.14 122.58,77.44 122.58,77.44 L 134.72,59.34 L 126.27,16.42 C 126.27,16.42 74.89,13.32 5.3,13.32 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-133" d="M 5.3,13.32 C -64.29,13.32 -115.67,16.42 -115.67,16.42 L -124.12,59.34 L -112.25,77.04 C -112.25,77.04 -65.9,55.66 5.3,55.66 C 76.5,55.66 122.85,77.04 122.85,77.04 L 134.72,59.34 L 126.27,16.42 C 126.27,16.42 74.89,13.32 5.3,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-134" d="M 123.97,75.36 C 123.97,75.36 76.5,53.64 5.3,53.64 C -65.9,53.64 -113.37,75.36 -113.37,75.36" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-135" d="M 5.33,13.32 C -64.22,13.32 -116.23,16.01 -116.23,16.01 L -125.95,57.35 L -114.57,75.72 C -114.57,75.72 -67.4,56.14 5.33,56.14 C 78.06,56.14 125.24,75.72 125.24,75.72 L 136.61,57.35 L 126.9,16.01 C 126.9,16.01 74.89,13.32 5.33,13.32 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-135" d="M 5.33,13.32 C -64.22,13.32 -116.23,16.01 -116.23,16.01 L -125.95,57.35 L -114.83,75.31 C -114.83,75.31 -67.4,55.66 5.33,55.66 C 78.06,55.66 125.49,75.31 125.49,75.31 L 136.61,57.35 L 126.9,16.01 C 126.9,16.01 74.89,13.32 5.33,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-136" d="M 126.55,73.59 C 126.55,73.59 78.06,53.64 5.33,53.64 C -67.4,53.64 -115.89,73.59 -115.89,73.59" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-137" d="M 5.33,13.32 C -64.22,13.32 -116.89,15.6 -116.89,15.6 L -127.75,55.33 L -117.12,73.94 C -117.12,73.94 -68.88,56.14 5.33,56.14 C 79.55,56.14 127.79,73.94 127.79,73.94 L 138.41,55.33 L 127.55,15.6 C 127.55,15.6 74.89,13.32 5.33,13.32 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-137" d="M 5.33,13.32 C -64.22,13.32 -116.89,15.6 -116.89,15.6 L -127.75,55.33 L -117.36,73.52 C -117.36,73.52 -68.88,55.66 5.33,55.66 C 79.55,55.66 128.03,73.52 128.03,73.52 L 138.41,55.33 L 127.55,15.6 C 127.55,15.6 74.89,13.32 5.33,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-138" d="M 129.03,71.77 C 129.03,71.77 79.55,53.64 5.33,53.64 C -68.88,53.64 -118.36,71.77 -118.36,71.77" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-139" d="M 5.3,13.32 C -64.29,13.32 -117.64,15.19 -117.64,15.19 L -129.51,53.3 L -119.64,72.12 C -119.64,72.12 -70.36,56.14 5.3,56.14 C 80.96,56.14 130.24,72.12 130.24,72.12 L 140.12,53.3 L 128.24,15.19 C 128.24,15.19 74.89,13.32 5.3,13.32 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-139" d="M 5.3,13.32 C -64.29,13.32 -117.64,15.19 -117.64,15.19 L -129.51,53.3 L -119.86,71.69 C -119.86,71.69 -70.36,55.66 5.3,55.66 C 80.96,55.66 130.47,71.69 130.47,71.69 L 140.12,53.3 L 128.24,15.19 C 128.24,15.19 74.89,13.32 5.3,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-140" d="M 131.4,69.9 C 131.4,69.9 80.96,53.64 5.3,53.64 C -70.36,53.64 -120.8,69.9 -120.8,69.9" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-141" d="M 5.3,13.32 C -64.28,13.32 -118.34,14.79 -118.34,14.79 L -131.11,51.27 L -121.97,70.25 C -121.97,70.25 -71.71,56.14 5.3,56.14 C 82.32,56.14 132.58,70.25 132.58,70.25 L 141.72,51.27 L 128.95,14.79 C 128.95,14.79 74.89,13.32 5.3,13.32 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-141" d="M 5.3,13.32 C -64.28,13.32 -118.34,14.79 -118.34,14.79 L -131.11,51.27 L -122.18,69.81 C -122.18,69.81 -71.71,55.66 5.3,55.66 C 82.32,55.66 132.79,69.81 132.79,69.81 L 141.72,51.27 L 128.95,14.79 C 128.95,14.79 74.89,13.32 5.3,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-142" d="M 133.67,68 C 133.67,68 82.32,53.64 5.3,53.64 C -71.71,53.64 -123.06,68 -123.06,68" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-143" d="M 5.34,13.32 C -64.21,13.32 -119.01,14.39 -119.01,14.39 L -132.55,49.24 L -124.14,68.36 C -124.14,68.36 -72.95,56.14 5.34,56.14 C 83.62,56.14 134.81,68.36 134.81,68.36 L 143.22,49.24 L 129.68,14.39 C 129.68,14.39 74.89,13.32 5.34,13.32 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-143" d="M 5.34,13.32 C -64.21,13.32 -119.01,14.39 -119.01,14.39 L -132.55,49.24 L -124.33,67.91 C -124.33,67.91 -72.95,55.66 5.34,55.66 C 83.62,55.66 135,67.91 135,67.91 L 143.22,49.24 L 129.68,14.39 C 129.68,14.39 74.89,13.32 5.34,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-144" d="M 135.82,66.07 C 135.82,66.07 83.62,53.64 5.34,53.64 C -72.95,53.64 -125.14,66.07 -125.14,66.07" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-145" d="M 5.33,13.32 C -64.23,13.32 -119.78,14.01 -119.78,14.01 L -133.98,47.23 L -126.27,66.44 C -126.27,66.44 -74.19,56.14 5.33,56.14 C 84.84,56.14 136.92,66.44 136.92,66.44 L 144.63,47.23 L 130.44,14.01 C 130.44,14.01 74.89,13.32 5.33,13.32 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-145" d="M 5.33,13.32 C -64.23,13.32 -119.78,14.01 -119.78,14.01 L -133.98,47.23 L -126.45,65.99 C -126.45,65.99 -74.19,55.66 5.33,55.66 C 84.84,55.66 137.1,65.99 137.1,65.99 L 144.63,47.23 L 130.44,14.01 C 130.44,14.01 74.89,13.32 5.33,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-146" d="M 137.85,64.12 C 137.85,64.12 84.84,53.64 5.33,53.64 C -74.19,53.64 -127.2,64.12 -127.2,64.12" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-147" d="M 5.27,13.32 C -64.34,13.32 -120.67,13.64 -120.67,13.64 L -135.4,45.23 L -128.38,64.52 C -128.38,64.52 -75.43,56.14 5.27,56.14 C 85.97,56.14 138.92,64.52 138.92,64.52 L 145.94,45.23 L 131.21,13.64 C 131.21,13.64 74.89,13.32 5.27,13.32 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-147" d="M 5.27,13.32 C -64.34,13.32 -120.67,13.64 -120.67,13.64 L -135.4,45.23 L -128.54,64.06 C -128.54,64.06 -75.43,55.66 5.27,55.66 C 85.97,55.66 139.09,64.06 139.09,64.06 L 145.94,45.23 L 131.21,13.64 C 131.21,13.64 74.89,13.32 5.27,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-148" d="M 139.78,62.17 C 139.78,62.17 85.97,53.64 5.27,53.64 C -75.43,53.64 -129.23,62.17 -129.23,62.17" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-149" d="M 5.31,13.32 C -64.28,13.32 -121.39,13.28 -121.39,13.28 L -136.54,43.27 L -130.19,62.6 C -130.19,62.6 -76.46,56.14 5.31,56.14 C 87.07,56.14 140.8,62.6 140.8,62.6 L 147.15,43.27 L 132,13.28 C 132,13.28 74.89,13.32 5.31,13.32 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-149" d="M 5.31,13.32 C -64.28,13.32 -121.39,13.28 -121.39,13.28 L -136.54,43.27 L -130.34,62.14 C -130.34,62.14 -76.46,55.66 5.31,55.66 C 87.07,55.66 140.95,62.14 140.95,62.14 L 147.15,43.27 L 132,13.28 C 132,13.28 74.89,13.32 5.31,13.32 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-150" d="M 141.58,60.22 C 141.58,60.22 87.07,53.64 5.31,53.64 C -76.46,53.64 -130.97,60.22 -130.97,60.22" />
 </g>
 <!-- end of group #fs-part-collar -->
 
 <!-- Start of group #fs-part-underCollar -->
-<g id="fs-part-underCollar"  transform="translate(-3.271540605557149, -11.282511618987074) translate(712.982425728872, 187.48869523241544)">
+<g id="fs-part-underCollar"  transform="translate(-3.271540605557149, -11.282511618987074) translate(712.982425728872, 187.09694947548633)">
 <path  class="various" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-151" d="M 5.31,53.64 C 74.91,53.64 121.3,77.06 121.3,77.06 L 132.74,61.3 L 125.67,16.84 C 125.67,16.84 74.89,13.32 5.31,13.32 L 5.31,53.64 z" />
 <path  class="various" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-152" d="M 5.3,53.64 C 76.5,53.64 123.97,75.36 123.97,75.36 L 134.72,59.34 L 126.27,16.42 C 126.27,16.42 74.89,13.32 5.3,13.32 L 5.3,53.64 z" />
 <path  class="various" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-153" d="M 5.33,53.64 C 78.06,53.64 126.55,73.59 126.55,73.59 L 136.61,57.35 L 126.9,16.01 C 126.9,16.01 74.89,13.32 5.33,13.32 L 5.33,53.64 z" />
@@ -274,7 +274,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-pocket -->
 
 <!-- Start of group #fs-part-pocketLining -->
-<g id="fs-part-pocketLining"  transform="translate(1.9999999999999976, -35.89559675000001) translate(712.982425728872, 69.80190498241541)">
+<g id="fs-part-pocketLining"  transform="translate(1.9999999999999976, -35.89559675000001) translate(712.982425728872, 69.4101592254863)">
 <path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-181" d="M 0,37.9 L 0,137.8 C 0,145.41 6.17,151.58 13.78,151.58 L 124.02,151.58 C 131.63,151.58 137.8,145.41 137.8,137.8 L 137.8,37.9 L 0,37.9 z" />
 <path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-182" d="M 0,37.9 L 0,137.8 C 0,145.41 6.17,151.58 13.78,151.58 L 124.02,151.58 C 131.63,151.58 137.8,145.41 137.8,137.8 L 137.8,37.9 L 0,37.9 z" />
 <path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-183" d="M 0,37.9 L 0,137.8 C 0,145.41 6.17,151.58 13.78,151.58 L 124.02,151.58 C 131.63,151.58 137.8,145.41 137.8,137.8 L 137.8,37.9 L 0,37.9 z" />
@@ -289,7 +289,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-pocketLining -->
 
 <!-- Start of group #fs-part-chestPocketWelt -->
-<g id="fs-part-chestPocketWelt"  transform="translate(43.59517121600872, 23.651406768321316) translate(626.5008761352672, 301.881799306268)">
+<g id="fs-part-chestPocketWelt"  transform="translate(43.59517121600872, 23.651406768321316) translate(626.5008761352672, 301.4900535493389)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-191" d="M -41.6,-21.65 L -40.96,-7.22 L -41.6,7.22 L 40.96,7.22 L 41.6,-7.22 L 40.96,-21.65 L -41.6,-21.65 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-192" d="M -40.96,-7.22 L 41.6,-7.22" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-193" d="M -41.6,-21.65 L -40.96,-7.22 L -41.6,7.22 L 40.96,7.22 L 41.6,-7.22 L 40.96,-21.65 L -41.6,-21.65 z" />
@@ -314,7 +314,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-chestPocketWelt -->
 
 <!-- Start of group #fs-part-chestPocketBag -->
-<g id="fs-part-chestPocketBag"  transform="translate(2.000000000000012, 5.601222227811975) translate(626.5008761352672, 69.80190498241541)">
+<g id="fs-part-chestPocketBag"  transform="translate(2.000000000000012, 5.601222227811975) translate(626.5008761352672, 69.4101592254863)">
 <path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-211" d="M 0,0 L 0,196.08 L 82.48,199.68 L 82.48,-3.6 L 0,0 z" />
 <path  class="stroke-sm dashed lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-212" d="M 0,90.82 L 82.48,90.82" />
 <path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-213" d="M 0,0 L 0,196.08 L 82.48,199.68 L 82.48,-3.6 L 0,0 z" />
@@ -339,7 +339,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-chestPocketBag -->
 
 <!-- Start of group #fs-part-innerPocketWelt -->
-<g id="fs-part-innerPocketWelt"  transform="translate(2, 2) translate(712.982425728872, 255.26712006540356)">
+<g id="fs-part-innerPocketWelt"  transform="translate(2, 2) translate(712.982425728872, 254.87537430847442)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-231" d="M 0,0 L 0,7.09 L 101.33,7.09 L 101.33,0 L 0,0 z" />
 <path  class="stroke-sm dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-232" d="M 0,3.55 L 101.33,3.55" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-233" d="M 0,0 L 0,7.09 L 101.33,7.09 L 101.33,0 L 0,0 z" />
