@@ -4,5 +4,5 @@
 Der Prozentsatz eines Kreisrock Rock. 100% macht einen vollen Kreis Rock, 50% macht einen Halbkreisrock Rock.
 
 
-## Effekt dieser Option auf das Muster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_circleratio_sample.svg "Effekt dieser Option auf das Muster")
+## Effekt dieser Option auf das Schnittmuster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_circleratio_sample.svg "Effekt dieser Option auf das Schnittmuster")
