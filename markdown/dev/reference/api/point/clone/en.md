@@ -1,23 +1,23 @@
 ---
-title: clone()
+title: Point.clone()
 ---
 
-```
+A point's `clone()` method returns a new `Point` with the same coordinates and attributes as the original point.
+
+```js
 Point point.clone()
 ```
-
-Returns a new point with the same coordinates and attributes as this point.
 
 <Note>
 
 ###### Copy vs clone
 
-The `Point.copy()` method will only copy the point's coordinates, whereas this
+The [`Point.copy()`](reference/api/point/copy/) method will only copy the point's coordinates, whereas this
 `Point.clone()` method will also copy its attributes.
 
 </Note>
 
-<Example 
+<Example
   part="point_clone"
   caption="An example of the Point.clone() method"
 />
@@ -33,4 +33,3 @@ The `Point.copy()` method will only copy the point's coordinates, whereas this
 
   snippets.x = new Snippet("notch", points.A);
 ```
-
