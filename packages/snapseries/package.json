@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/snapseries",
-  "version": "2.19.0-alpha.2",
+  "version": "2.19.0-rc.0",
   "description": "A FreeSewing package for common values for snapped percentage options",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
