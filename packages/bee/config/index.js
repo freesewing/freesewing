@@ -12,15 +12,11 @@ export default {
   difficulty: 3,
   optionGroups: {
     fit: [
-      'chestEase',
-      'waistEase',
-      'bustSpanEase',
       'topDepth',
       'bottomCupDepth',
       'sideDepth',
       'sideCurve',
       'frontCurve',
-      'bellaGuide',
     ],
     style: [
       'ties',
@@ -36,6 +32,7 @@ export default {
       'bandLength',
     ],
     advanced: [
+      { bellaFit: [ 'chestEase', 'waistEase', 'bustSpanEase', 'bellaGuide' ] },
       { bellaDarts: ['backDartHeight'] },
       { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
       { bellaAdvanced: ['frontShoulderWidth', 'highBustWidth'] },
