@@ -15,5 +15,3 @@ Die Stoffbruchlinie wird mit einem doppeltem Pfeil markiert, wie in diesem Beisp
 Für eine Übersicht aller Markierungen auf deinem Schnittmuster, siehe [Anleitung für Schnittmuster-Notation][1]
 
 </Tip>
-
-[1]:/docs/various/notation/
