@@ -119,7 +119,7 @@ export default function (part) {
     }
 
     // Paperless?
-    if (paperless) {
+    if (paperless && options.neckline) {
       macro('ld', {
         from: points.neckotop,
         to: points.neckomid,

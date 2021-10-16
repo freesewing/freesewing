@@ -59,12 +59,12 @@ export default {
     clavusLocation: { pct: 65, min: 50, max: 80 },
     clavusWidth: { pct: 100, min: 50, max: 150 },
     length: {
-      list: ['ToKnee', 'ToMidLeg', 'ToFloor'],
-      dflt: 'ToKnee',
+      list: ['toKnee', 'toMidLeg', 'toFloor'],
+      dflt: 'toKnee',
     },
     width: {
-      list: ['ToElbow', 'ToShoulder', 'ToMidArm'],
-      dflt: 'ToMidArm',
+      list: ['toElbow', 'toShoulder', 'toMidArm'],
+      dflt: 'toMidArm',
     },
     // advanced
     forceWidth: { bool: false },

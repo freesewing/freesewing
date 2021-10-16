@@ -16,9 +16,9 @@ export default function (part) {
 
   // Handle width
   let width =
-    options.width === 'ToElbow'
+    options.width === 'toElbow'
       ? measurements.shoulderToElbow
-      : options.width === 'ToMidArm'
+      : options.width === 'toMidArm'
       ? measurements.shoulderToElbow / 2
       : 0
   let hwidth = (measurements.shoulderToShoulder / 2 + width) * options.widthBonus
@@ -39,9 +39,9 @@ export default function (part) {
   }
   // Other variables
   const hem_pos =
-    options.length === 'ToKnee'
+    options.length === 'toKnee'
       ? measurements.waistToKnee
-      : options.length === 'ToMidLeg'
+      : options.length === 'toMidLeg'
       ? measurements.waistToKnee / 1.3
       : measurements.waistToFloor * 0.95
   const length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus

@@ -13,15 +13,16 @@ export default function (part) {
     sa,
     paperless,
     store,
+    utils
   } = part.shorthand()
 
   // Store length and width
   store.set(
     'length',
     (measurements.hpsToWaistBack +
-      (options.length === 'ToBelowKnee'
+      (options.length === 'toBelowKnee'
         ? 1.3 * measurements.waistToKnee
-        : measurements[`waist${options.length}`])) *
+        : measurements[`waist${utils.capitalize(options.length)}`])) *
       options.lengthRatio
   )
   store.set(
