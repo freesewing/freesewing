@@ -1,19 +1,17 @@
-headRatio:
-  title: Head ratio
-  description: FIXME
+lengthRatio:
+  title: Length ratio
+  description: Controls the length of the garment
 
-nackRatio:
-  title: Neck ratio
-  description: FIXME
-
-lengthBonus:
-  title: Length bonus
-  description: Controls how much (extra) length to add
-
-widthBonus:
-  title: Width bonus
-  description: Controls how much (extra) width to add
+widthRatio:
+  title: Width ratio
+  description: Controls the width of the garment
 
 length:
   title: Length
-  description: Controls the length of the garment
+  description: Choose from the different length styles
+  options:
+    toKnee: On the knee
+    toBelowKnee: Below the knee
+    toHips: On the hips
+    toUpperLeg: Below the hips
+    toFloor: To the floor
