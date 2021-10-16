@@ -1,8 +1,4 @@
----
----
 
-<Fixme>
+Steuert die Kurven der Taille.
 
-Document this option
-
-</Fixme>
+Dies zu erhöhen wird eine kurvenförmige Weste geben, die sie am oberen Rand der Weste kleiner macht.
