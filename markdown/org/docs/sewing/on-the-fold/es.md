@@ -15,5 +15,3 @@ La línea plegable se indica con una doble flecha como en este ejemplo:
 Para una visión general de todos los indicadores en tu patrón, consulta la [guía de notación de patrones][1]
 
 </Tip>
-
-[1]:/docs/various/notation/
