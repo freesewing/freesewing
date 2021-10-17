@@ -1,0 +1,19 @@
+---
+- hosts: '!localhost'
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Copy backup script to host
+      copy:
+        src: fs_backup_mongo.sh
+        dest: /usr/sbin
+        owner: root
+        group: root
+        mode: '0755'
+
+    - name: Schedule cron job for database backup
+      cron:
+        name: "Backup mongodb {{ db }}"
+        minute: 25
+        hour: 8
+        job: "/usr/sbin/fs_backup_mongo.sh {{ db }}"
