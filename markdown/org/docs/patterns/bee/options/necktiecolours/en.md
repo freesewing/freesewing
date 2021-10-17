@@ -1,4 +1,6 @@
 ---
+title: Neck tie colours
+---
 
 Whether you want single color ties around your chest, or dual-coloured ones
 
