@@ -22,6 +22,6 @@ J'offre avec joie mes services pour coder/mettre en œuvre votre conception/visi
 
 Vous pouvez me joindre sur joost at freesewing.org, nous avons également [une communauté active sur Discord](https://discord.freesewing.org/).
 
-I hope to hear from you soon.
+J'ai hâte d'entendre ce que vous en dites.
 
 joost
