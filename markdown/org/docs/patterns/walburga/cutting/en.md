@@ -1,7 +1,11 @@
-<Fixme>
+Walburga consists of two parts, a *front* and a *back* piece.
 
-This documentation page is yet to be written.
+<Tip>
 
-Sorry for the inconvenience.
+Apart from the cutout for the neck opening, front and back are identical. It is therefore enough to print only the front part.
 
-</Fixme>
+</Tip>
+
+- cut *1 front*, on the fold
+- cut *1 back*, on the fold
+

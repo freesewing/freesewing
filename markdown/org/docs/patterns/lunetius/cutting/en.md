@@ -1,7 +1,3 @@
-<Fixme>
+Lunetius consists only of one part, the *lacerna* itself.
 
-This documentation page is yet to be written.
-
-Sorry for the inconvenience.
-
-</Fixme>
+- cut *1 lacerna*, on the fold
