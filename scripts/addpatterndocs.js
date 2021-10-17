@@ -21,6 +21,8 @@ const i18n = require('../packages/i18n/dist')
 const capitalize = require('../packages/utils/capitalize')
 
 const missing = []
+const lacking = []
+const extra = []
 const file = 'en.md'
 const subpages = [
   'cutting',
@@ -82,12 +84,24 @@ const present = folder => {
   }
 }
 
+const getSubFolders = folder => fs
+  .readdirSync(folder, {withFileTypes: true })
+  .filter(dirent => dirent.isDirectory())
+  .map(dirent => dirent.name)
+
 const checkOptionDocs = () => {
   const steps = ['markdown', 'org', 'docs', 'patterns']
   for (const pattern of pi.list) {
     const Pattern = require(`../packages/${pattern}/dist`)
     // Index page,
     const folder = path.join(...steps, pattern)
+    const subFolders = getSubFolders(folder)
+    for (const page of subpages) {
+      if (subFolders.indexOf(page) === -1) lacking.push(path.join(folder, page))
+    }
+    for (const sub of subFolders) {
+      if (subpages.indexOf(sub) === -1) extra.push(path.join(folder, sub))
+    }
     if (!present(folder)) {
       fs.mkdirSync(folder, { recursive: true })
       fs.writeFileSync(
@@ -108,8 +122,12 @@ const checkOptionDocs = () => {
     }
 
     // Options
+    let optionFolders = getSubFolders(path.join(...steps, pattern, 'options'))
     for (const option of pi.options[pattern]) {
-      const folder = path.join('markdown', 'org', 'docs', 'patterns', pattern, 'options', option.toLowerCase())
+      // Remove this from the folder list
+      const i = optionFolders.indexOf(option.toLowerCase())
+      optionFolders.splice(i, 1)
+      const folder = path.join(...steps, pattern, 'options', option.toLowerCase())
       if (!present(folder)) {
         missing.push(path.join(folder, file))
         fs.mkdirSync(folder, { recursive: true })
@@ -119,12 +137,23 @@ const checkOptionDocs = () => {
         )
       }
     }
+    // Now check for extra folders
+    for (const subfolder of optionFolders) {
+      extra.push(path.join(...steps, pattern, 'options', subfolder))
+    }
   }
 
-  if (missing.length < 1) console.log("\n  🎉 Everything looks fine 😀\n")
-  else {
-    console.log("\n", 'Added documenation pages for the following options:', "\n\n")
-    for (const line of missing) console.log(line)
+  if (missing.length < 1 && extra.length < 1 && lacking.length < 1) {
+    console.log("\n  🎉 Everything looks fine 😀\n")
+  } else {
+    if (missing.length > 0) {
+      console.log("\n", 'Added documenation pages for the following options:', "\n\n")
+      for (const line of missing) console.log(line)
+    }
+    if (extra.length > 0) {
+      console.log("\n", 'Found extra folders that should not be there:', "\n\n")
+      for (const line of extra) console.log(line)
+    }
   }
 }
 
