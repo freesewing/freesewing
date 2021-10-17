@@ -1,4 +1,6 @@
----
+- - -
+title: Band (chest) tie width
+- - -
 
 Controls the width of the ties around your chest
 
