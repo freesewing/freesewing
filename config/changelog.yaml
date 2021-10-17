@@ -80,6 +80,9 @@ unreleased:
     charlie:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+    i18n:
+      - Fixed bug in resolving of shared pattern options
+      - Removed optional chaining which broke node v12 support
     jaeger:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)

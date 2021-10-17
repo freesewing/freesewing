@@ -61,6 +61,13 @@
 
  - Changed the `handleWidth` option type from `mm` to `pct`
 
+### i18n
+
+#### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
+
 ### jaeger
 
 #### Changed

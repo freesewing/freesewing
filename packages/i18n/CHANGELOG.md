@@ -1,6 +1,13 @@
 # Change log for: @freesewing/i18n
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
+
 ## 2.18.0 (2021-09-09)
 
 ### Added
