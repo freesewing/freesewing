@@ -31,13 +31,15 @@ const subpages = [
   'needs'
 ]
 
-const patternDocsPage = pattern => `
+const patternDocsPage = pattern => `---
 ---
 
 <PatternDocs pattern='${pattern}' />
 
 `
-const fixme = `
+const fixme = `---
+---
+
 <Fixme>
 
 This documentation page is yet to be written.
@@ -65,7 +67,9 @@ const patternDocsSubPage = (pattern, sub) => {
   }
 }
 
-const optionDocsPage = (pattern, option) => "---\n\n" +
+const optionDocsPage = (pattern, option) => `---
+title: ` + i18n.strings.en[`options.${pattern}.${option}.title`] +
+  "\n---\n\n" +
   i18n.strings.en[`options.${pattern}.${option}.description`] + "\n"
 
 const present = folder => {

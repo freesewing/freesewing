@@ -16,6 +16,10 @@ unreleased:
     lunetius:
       - Lunetius is a lacerna, a historical Roman cloak
       - Initial release
+    plugin-versionfree-svg:
+      - This is a plugin to strip (FreeSewing) versdion info out of the SVG
+        to allow you to diff your SVG output between FreeSewing versions
+      - Initial release
     tiberius:
       - Tiberius is a tunica, a historic Roman tunic
       - Initial release
