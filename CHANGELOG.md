@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.0 (2021-10-17)
 
 ### bee
 
