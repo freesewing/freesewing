@@ -1,7 +1,8 @@
----
+***
+
 title: Het recht op gegevensportabiliteit
 order: 60
----
+---------
 
 Je hebt het recht om je persoonlijke gegevens te verkrijgen en opnieuw te gebruiken, voor eigen gebruik of bij verschillende diensten.
 

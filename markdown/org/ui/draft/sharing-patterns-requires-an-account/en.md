@@ -1,6 +1,6 @@
----
-title: Sharing your patterns requires a FreeSewing account
----
+***
+
+## title: Sharing your patterns requires a FreeSewing account
 
 You can **export** your pattern to PDF, SVG, or other formats.
 

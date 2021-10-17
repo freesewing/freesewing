@@ -1,10 +1,11 @@
----
+***
+
 title: Adding pattern parts
 for: developers
 about: Shows you how to add new parts to your pattern
----
+-----------------------------------------------------
 
-Since the patterns parts are listed 
+Since the patterns parts are listed
 in [the configuration file](/reference/config/), freesewing knows about
 all the parts that belong to your pattern.
 

@@ -1,6 +1,6 @@
----
-title: Part.raise.info()
----
+***
+
+## title: Part.raise.info()
 
 A part's `raise.info()` method will log a ingo-level event.
 Info events are typically used to pass information to users

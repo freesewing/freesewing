@@ -1,6 +1,6 @@
----
-title: Espera a rodilla
----
+***
+
+## title: Espera a rodilla
 
 La cintura **para rodillar** es la medida de la cintura hacia abajo hacia la rodilla, medida en el lado del cuerpo.
 

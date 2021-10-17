@@ -1,6 +1,6 @@
----
-title: Brustpunkte Abstand
----
+***
+
+## title: Brustpunkte Abstand
 
 Die **Büstenspanne** ist der horizontale Abstand zwischen den beiden Spitzenpunkten deiner Büste.
 

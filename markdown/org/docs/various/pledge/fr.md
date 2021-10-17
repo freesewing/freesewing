@@ -1,6 +1,6 @@
----
-title: Engagement de revenus de FreeSewing
----
+***
+
+## title: Engagement de revenus de FreeSewing
 
 La **promesse de revenus de FreeSewing** indique que :
 
@@ -25,4 +25,3 @@ Si vous souhaitez soutenir FreeSewing, vous pouvez [nous rejoindre ici](/communi
 |      2019 |      4.109,38 |           |
 |      2020 |     10.736,82 |           |
 | **Total** | **19.418,63** | **Euros** |
-

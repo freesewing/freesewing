@@ -1,6 +1,6 @@
----
-title: Sin papel
----
+***
+
+## title: Sin papel
 
 Los patrones sin papeles tienen marcas extra para usarlas sin impresora.
 

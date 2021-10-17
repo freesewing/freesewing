@@ -1,6 +1,6 @@
----
-title: Design sewing patterns
----
+***
+
+## title: Design sewing patterns
 
 Everybody wants us to add more patterns. But somebody has to design them.
 

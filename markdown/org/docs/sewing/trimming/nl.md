@@ -1,6 +1,6 @@
----
-title: Bijknippen
----
+***
+
+## title: Bijknippen
 
 ![Naadtoeslag wordt bijgeknipt](trimming.jpg)
 

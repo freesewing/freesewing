@@ -1,6 +1,6 @@
----
-title: Dit is een verouderd patroon
----
+***
+
+## title: Dit is een verouderd patroon
 
 Dit patroon werd gemaakt met een oudere versie van FreeSewing en is niet compatibel met de huidige versie.
 

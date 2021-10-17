@@ -1,8 +1,9 @@
----
+***
+
 title: Svg
 components: true
 order: 80
----
+---------
 
 The `Svg` object in FreeSewing's core library represents an SVG document.
 It is not directly exposed, but it is available as the `svg` attribute
@@ -14,4 +15,3 @@ want to develop a plugin, or use a custom layout:
 ## Svg properties
 
 <ReadMore list />
-

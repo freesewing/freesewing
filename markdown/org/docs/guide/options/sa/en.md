@@ -1,8 +1,8 @@
----
-title: Seam allowance
----
+***
 
-This controls whether you want _seam allowance_ or not.
+## title: Seam allowance
+
+This controls whether you want *seam allowance* or not.
 And, if you want it, how much you want.
 
 This will probably be self-explanatory if you know what seam allowance is.

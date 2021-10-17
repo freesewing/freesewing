@@ -1,6 +1,6 @@
----
-title: Ourlet
----
+***
+
+## title: Ourlet
 
 ![L'ourlet au bas d'un T-shirt](coverlock-hem.jpg)
 

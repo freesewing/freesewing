@@ -1,6 +1,6 @@
----
-title: Deine Rechte
----
+***
+
+## title: Deine Rechte
 
 Freesewing wendet die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
 

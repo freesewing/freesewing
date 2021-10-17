@@ -1,6 +1,6 @@
----
-title: Schaal controlevlak
----
+***
+
+## title: Schaal controlevlak
 
 Het schaal controle vlak helpt je om te controleren of je patroon op de juiste schaal afgeprint is:
 

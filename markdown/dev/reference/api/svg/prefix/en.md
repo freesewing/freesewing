@@ -1,6 +1,6 @@
----
-title: prefix
----
+***
+
+## title: prefix
 
 A string that will be rendered before the opening SVG tag.
 

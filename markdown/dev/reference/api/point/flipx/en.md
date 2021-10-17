@@ -1,6 +1,6 @@
----
-title: flipX()
----
+***
+
+## title: flipX()
 
 ```js
 Point point.flipX(Point mirror = false)
@@ -11,8 +11,8 @@ Returns a new point that mirrors this point around the X-value of the point your
 If you don't pass it a point, it will mirror around an X-value of zero.
 
 <Example 
-  part="point_flipx"
-  caption="An example of the Point.flipX() method"
+part="point_flipx"
+caption="An example of the Point.flipX() method"
 />
 
 ```js
@@ -61,4 +61,3 @@ paths.mirror = new Path()
   .line(points.bottom)
   .attr("class", "note dashed");
 ```
-

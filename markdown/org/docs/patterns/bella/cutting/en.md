@@ -1,7 +1,7 @@
 To make Bella, you'll need:
 
- - 1 Front
- - 2 Back
+*   1 Front
+*   2 Back
 
 <Note>
 

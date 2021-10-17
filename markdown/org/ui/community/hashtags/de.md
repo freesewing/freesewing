@@ -1,6 +1,6 @@
----
-title: Verwendung von Hashtags
----
+***
+
+## title: Verwendung von Hashtags
 
 Benutze auf sozialen Medien die schnittmusterspezifischen Tags, wenn du über unser Schnittmuster schreibst.
 

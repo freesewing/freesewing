@@ -1,6 +1,6 @@
----
-title: Documentatie voor ontwikkelaars
----
+***
+
+## title: Documentatie voor ontwikkelaars
 
 Freesewing.org organiseert alleen documentatie voor makers.
 

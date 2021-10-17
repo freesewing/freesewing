@@ -1,6 +1,6 @@
----
-title: circlesIntersect()
----
+***
+
+## title: circlesIntersect()
 
 ```js
 array | false utils.circlesIntersect(
@@ -19,8 +19,8 @@ When this returns 2 intersections, you can choose how they are ordered in the re
 
 Set sort to:
 
- - `x` : The point with the lowest X-coordinate will go first (left to right)
- - `y` : The point with the lowest Y-coordinate will go first (top to bottom)
+*   `x` : The point with the lowest X-coordinate will go first (left to right)
+*   `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
 <Example part="utils_circlesintersect" caption="A Utils.circlesIntersect() example" />
 
@@ -59,4 +59,3 @@ snippets.second1 = new Snippet("notch", intersections1[1]);
 snippets.first2 = new Snippet("bnotch", intersections2[0]);
 snippets.second2 = new Snippet("notch", intersections2[1]);
 ```
-

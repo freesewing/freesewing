@@ -11,13 +11,7 @@ export default {
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: [
-      'topDepth',
-      'bottomCupDepth',
-      'sideDepth',
-      'sideCurve',
-      'frontCurve',
-    ],
+    fit: ['topDepth', 'bottomCupDepth', 'sideDepth', 'sideCurve', 'frontCurve'],
     style: [
       'ties',
       'neckTieWidth',
@@ -31,9 +25,7 @@ export default {
       'crossBackTies',
       'bandLength',
     ],
-    advanced: [
-      { bella: [ 'chestEase', 'waistEase', 'bustSpanEase', 'bellaGuide' ] },
-    ],
+    advanced: [{ bella: ['chestEase', 'waistEase', 'bustSpanEase', 'bellaGuide'] }],
   },
   measurements: [
     'highBust',
@@ -58,13 +50,7 @@ export default {
   },
   inject: { cup: 'frontSideDart' },
   hide: ['frontSideDart', 'back'],
-  parts: [
-    'back',
-    'frontSideDart',
-    'cup',
-    'neckTie',
-    'bandTie',
-  ],
+  parts: ['back', 'frontSideDart', 'cup', 'neckTie', 'bandTie'],
   options: {
     // Constants
     acrossBackFactor: 0.925,

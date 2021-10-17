@@ -1,6 +1,6 @@
----
-title: Contenidos
----
+***
+
+## title: Contenidos
 
 Este ajuste te permite elegir manualmente qué partes quieres incluir en tu patrón.
 

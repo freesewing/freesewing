@@ -1,6 +1,6 @@
----
-title: Emblem
----
+***
+
+## title: Emblem
 
 The `Emblem` component renders the freesewing word in the top-left of our navigation bar.
 
@@ -9,4 +9,3 @@ The `Emblem` component renders the freesewing word in the top-left of our naviga
 ## Example
 
 ![Screenshot of the component](example.png)
-

@@ -1,13 +1,14 @@
----
+***
+
 title: Adding text
 for: developers
 about: Shows you how to add text to your pattern
----
+------------------------------------------------
 
 SVG is pretty great, but its text handling leaves much to be desired.
 
-To abstract away the intricacies of adding text to an SVG document, 
-FreeSewing lets you add text to patterns by adding it to the attributes 
+To abstract away the intricacies of adding text to an SVG document,
+FreeSewing lets you add text to patterns by adding it to the attributes
 of points and paths.
 
 All you have to do is set the `data-text` attribute to the text you want to add to the pattern:
@@ -19,8 +20,8 @@ points.anchor = new Point(100, 25)
 ```
 
 <Example 
-  part="point_attr" 
-  caption="Text inserted in a FreeSewing pattern"
+part="point_attr" 
+caption="Text inserted in a FreeSewing pattern"
 />
 
 <Note>
@@ -49,6 +50,6 @@ paths.example = new Path()
 ```
 
 <Example 
-  part="path_attr" 
-  caption="Text on a path"
+part="path_attr" 
+caption="Text on a path"
 />

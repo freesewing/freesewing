@@ -10,8 +10,7 @@ los bordes crudos.
 Para estas instrucciones, asumiremos que está usando un serger para que finalice la costura, pero también proporcionaremos
 alternativas. Otras opciones para terminar costuras incluyen traparlos con fragmentos de color
 , enrollar un zig-zag a lo largo del borde de la costura para evitar que se descongele, o enlazar con
-cinta de sesgo.
- </Tip>
+cinta de sesgo. </Tip>
 
 ## Paso 1: Construir los bolsillos de respaldo
 

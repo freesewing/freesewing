@@ -1,6 +1,6 @@
----
-title: Contorno de alto pecho
----
+***
+
+## title: Contorno de alto pecho
 
 La medición del **alto busto** es la circunstancia de tu pecho medida justo debajo de tus brazos, por encima de la parte más completa de tu busto.
 

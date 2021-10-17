@@ -1,2 +1,1 @@
 FIXME: Stoffrichtlinien hinzufügen
-

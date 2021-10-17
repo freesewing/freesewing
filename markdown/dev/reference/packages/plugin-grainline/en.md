@@ -1,7 +1,5 @@
----
-title: "@freesewing/plugin-grainline"
----
+***
 
- 
+## title: "@freesewing/plugin-grainline"
 
 <PluginPage plugin="grainline" />

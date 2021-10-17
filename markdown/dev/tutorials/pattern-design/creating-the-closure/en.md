@@ -1,7 +1,8 @@
----
+***
+
 title: Creating the closure
 order: 210
----
+----------
 
 Things are starting to look good, but we can't fit the bib over the baby's head like this.
 So we must create a closure. We'll let the straps overlap at the end, and put in a snap.
@@ -65,6 +66,3 @@ Like our neck opening, we've only drawn half since we can simply copy the points
 
 However, doing so would make both straps overlap. Which doesn't work for a pattern as it would make it
 impossible to cut it out of a single piece of fabric. So let's deal with the overlap next.
-
-
-

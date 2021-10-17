@@ -1,9 +1,10 @@
----
+***
+
 title: Custom components
 order: 90
----
+---------
 
-The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).  
+The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).\
 This allows us to extend Markdown with our own so-called *custom components*.
 
 Such custom components allow us to put things in Markdown content that would
@@ -16,8 +17,7 @@ Below is a list of custom components you can use in our Markdown content:
 <Tip>
 
 Keep in mind that if you place content inside a custom component, you need to leave an empty
-line at the start and finish. If you don't, the custom component will still work, but the 
+line at the start and finish. If you don't, the custom component will still work, but the
 content inside of it will not be parsed as Markdown.
 
 </Tip>
-

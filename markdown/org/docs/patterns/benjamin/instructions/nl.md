@@ -16,8 +16,8 @@ Dit patroon heeft een draadrichting. Deze dient vooral voor de tussenvoering. Aa
 
 <Note>
 
-Als dit allemaal erg verwarrend klinkt, zou ik kunnen voorstellen om de help 
--pagina te lezen over [Stofrichting](/docs/naaien/stof-grain).
+Als dit allemaal erg verwarrend klinkt, zou ik kunnen voorstellen om de help
+\-pagina te lezen over [Stofrichting](/docs/naaien/stof-grain).
 
 </Note>
 
@@ -30,7 +30,6 @@ Deze lintjes kan je vinden in de betere merceriezaak of online.
 ### Naadtoeslag
 
 Aangezien de vlinderdas met de goede kanten tegen elkaar genaaid wordt, moet het hele ding binnenstebuiten gekeerd worden. Het is geen slecht idee om een kleine naadwaarde van 6 mm (1/4 inch) te gebruiken om dit makkelijker te maken.
-
 
 ## Constructie
 

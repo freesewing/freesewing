@@ -1,6 +1,6 @@
----
-title: Waarom gebruiken jullie geen dubbel merkteken om de achterkant van het patroon aan te duiden?
----
+***
+
+## title: Waarom gebruiken jullie geen dubbel merkteken om de achterkant van het patroon aan te duiden?
 
 Een dubbel merkteken is een veel voorkomende manier om de achterkant van een patroon aan te duiden. Gebruikelijk, maar niet universeel.
 

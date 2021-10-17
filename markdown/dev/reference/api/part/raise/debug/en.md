@@ -1,6 +1,6 @@
----
-title: Part.raise.debug()
----
+***
+
+## title: Part.raise.debug()
 
 A part's `raise.debug()` method will log a debug-level event.
 Debug events are typically used to pass information to pattern developers
@@ -35,4 +35,3 @@ export default function (part) {
   return part
 }
 ```
-

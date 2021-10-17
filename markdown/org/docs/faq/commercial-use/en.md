@@ -1,6 +1,6 @@
----
-title: Can I use FreeSewing patterns for commercial purposes?
----
+***
+
+## title: Can I use FreeSewing patterns for commercial purposes?
 
 Yes you can. Open Source is a development model, not a business model.
 

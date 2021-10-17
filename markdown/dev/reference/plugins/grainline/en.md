@@ -1,13 +1,13 @@
----
-title: grainline
----
+***
+
+## title: grainline
 
 [![Build-time plugin](https://img.shields.io/badge/Type-build--time-purple.svg)](/plugins)
-&nbsp;
+ 
 [![License: MIT](https://img.shields.io/npm/l/@freesewing/plugin-grainline.svg?label=License)](https://www.npmjs.com/package/@freesewing/plugin-grainline)
-&nbsp;
-[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256)
-&nbsp;
+ 
+[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project\&tid=2114\&pid=2993\&bid=23256)
+ 
 [![Open issues tagged pkg:plugin-grainline](https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-grainline.svg?label=Issues)](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-grainline)
 
 The **grainline** plugin provides [the grainline macro](/reference/macros/grainline/):
@@ -40,7 +40,7 @@ npm install @freesewing/plugin-grainline
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
+Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them
 by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
 
 ```js

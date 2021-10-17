@@ -1,7 +1,8 @@
----
+***
+
 title: Tu gente
 order: 350
----
+----------
 
 Una vez que tenga una cuenta, puede comenzar a agregar mediciones. But that quickly brings up the next question: what if you want a pattern for you, but also for your partner?
 

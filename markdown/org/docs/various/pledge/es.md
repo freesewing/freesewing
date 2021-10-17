@@ -1,6 +1,6 @@
----
-title: Compromiso de ingresos de la costura libre
----
+***
+
+## title: Compromiso de ingresos de la costura libre
 
 La promesa de ingresos **FreeSewing** afirma que:
 
@@ -25,4 +25,3 @@ Si quieres soportar FreeSewing, puedes [unirte a nosotros aquí](/community/join
 |      2019 |      4.109,38 |          |
 |      2020 |     10.736,82 |          |
 | **Total** | **19.418,63** | **Euro** |
-

@@ -1,6 +1,6 @@
----
-title: Footer
----
+***
+
+## title: Footer
 
 The `Footer` component is the shared footer we use on our websites.
 
@@ -9,4 +9,3 @@ The `Footer` component is the shared footer we use on our websites.
 ## Example
 
 ![Screenshot of the component](example.png)
-

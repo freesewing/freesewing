@@ -1,7 +1,8 @@
----
+***
+
 title: What is FreeSewing?
 order: 100
----
+----------
 
 [FreeSewing is an open source software project](https://github.com/freesewing/) with the aim of becoming the WikiPedia of sewing patterns.
 
@@ -10,5 +11,3 @@ We provide a [core library](https://www.npmjs.com/package/@freesewing/core) for 
 Nous ne sommes pas intéressés par la mode, les tendances ou la publication du tout nouveau modèle de la saison. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
 
 FreeSewing is built by [contributors](/community/who/contributors/) who are all volunteers, and financially supported by [our Patrons](/community/who/patrons/).
-
-

@@ -1,6 +1,6 @@
----
-title: shiftFractionTowards()
----
+***
+
+## title: shiftFractionTowards()
 
 ```js
 Point point.shiftFractionTowards(Point target, float fraction)
@@ -9,8 +9,8 @@ Point point.shiftFractionTowards(Point target, float fraction)
 Returns a point that is shifted towards the target by a fraction of the distance between this point and the target.
 
 <Example 
-  part="point_shiftfractiontowards"
-  caption="An example of the Point.shiftFractionTowards() method"
+part="point_shiftfractiontowards"
+caption="An example of the Point.shiftFractionTowards() method"
 />
 
 ```js

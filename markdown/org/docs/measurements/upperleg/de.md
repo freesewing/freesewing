@@ -1,10 +1,10 @@
----
-title: Oberschenkelweite
----
+***
+
+## title: Oberschenkelweite
 
 Der **obere Beinumfang** ist die Messung um dein Bein, nahe der Oberseite deines Beins.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance.  
+You should measure this a bit below your crotch, refer to the illustration for guidance.\
 Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
 
 <Tip>

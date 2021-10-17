@@ -1,6 +1,6 @@
----
-title: Boutons, boutonnières, et boutons pressions
----
+***
+
+## title: Boutons, boutonnières, et boutons pressions
 
 Les boutons et boutonnières peuvent avoir des tailles différentes, mais ont toujours la même forme que celle à quoi ils ressemblent dans la vie réelle :
 

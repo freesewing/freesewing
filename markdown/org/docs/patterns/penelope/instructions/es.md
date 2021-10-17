@@ -41,7 +41,3 @@ Of course, if you include a lining, you have to include this in the way you've f
 A continuación se adjunta la cintura si su versión tiene una. First fold it double along the long side and press. Añade tu interfaz. Diviértete al lado derecho del tejido. Then turn it over and press the seam into the waistband. Now use the stitch-in-the-ditch technique to finish the waistband. Añada su opción de cierre.
 
 Todo lo que queda ahora es cortar la cabeza.
-
-
-
-

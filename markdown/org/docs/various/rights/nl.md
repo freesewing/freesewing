@@ -1,6 +1,6 @@
----
-title: Je rechten
----
+***
+
+## title: Je rechten
 
 Freesewing past de algemene verordening inzake gegevensbescherming (GDPR) van de Europese Unie (EU) toe.
 

@@ -1,7 +1,5 @@
----
-title: "@freesewing/plugin-svgattr"
----
+***
 
- 
+## title: "@freesewing/plugin-svgattr"
 
 <PluginPage plugin="svgattr" />

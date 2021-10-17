@@ -60,17 +60,19 @@ Nähen Sie die Frontdarts separat und drehen Sie die ganze Sache nach draußen, 
 </Tip>
 
 ### Schritt 4: Zweiter Ein- und Ausgang beitreten
+
 ![Zweite Einfügung und Fronten beitreten](step03-d.png)
 
 Nachdem Sie den ersten Einsatz und die Fronten beigetreten sind, fahren Sie mit der zweiten fort.
 
 Wenn die Fronten und Einsätze miteinander verbunden sind, bleiben Ihnen 3 Teile übrig:
 
- - Die verbundenen Einsätze und Fronten
- - Die beigetretenen Seiten und zurück
- - Der elastische
+*   Die verbundenen Einsätze und Fronten
+*   Die beigetretenen Seiten und zurück
+*   Der elastische
 
 ### Schritt 5: Den Frontdart schließen
+
 ![Den Frontdart schließen](step05.png)
 
 Falten Sie die Fronten an der Mitte der Frontlinie, so dass die Tasten am unteren Rand nach oben.
@@ -89,6 +91,7 @@ Vermutlich ist es für den Träger angenehmer, in diesem Bereich keine belichtet
 </Tip>
 
 ### Schritt 6: Optional: Topstitch
+
 ![Boxer mit (links) und ohne Aufsteckung](step06.jpg)
 
 <Note>
@@ -111,21 +114,25 @@ Die Naht stoppt auf halbem Wege (wo der Dart endet), aber die Aufstiftung sollte
 </Tip>
 
 ### Schritt 7: Betreten Sie die erste Seite an den Fronten
+
 ![Schließen Sie sich der ersten Seite an den Fronten an](step07.png)
 
 Legen Sie die Seitenkante der ersten Seite mit der Kante aus dem Front+Einsatz (gute Seiten wie üblich) zusammen und verführen Sie sie zusammen.
 
 ### Schritt 8: Betreten Sie die zweite Seite an den Fronten
+
 ![Schließen Sie sich der zweiten Seite an den Fronten an](step08.png)
 
 Tun Sie dasselbe für die zweite Seite.
 
 ### Schritt 9: Optional: Topstitch
+
 ![Boxer mit (links) und ohne Aufsteckung](step06.jpg)
 
 Wenn Sie vorher geheftet haben, sollten Sie das Gleiche jetzt für die Nähte tun, die Sie in Schritt 7 und 8 gemacht haben.
 
 ### Schritt 10: Beende die Crotchseam
+
 ![Beende die Crotchseam](step10.png)
 
 Wir werden nun die bogenförmige Öffnung im hinteren Teil zu den vorderen Teilen der Boxer, bestehend aus den Fronten und Einsätzen, verführen.
@@ -141,6 +148,7 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 </Tip>
 
 ### Schritt 11: Hem das erste Bein
+
 ![Hem das erste Bein](step11.png)
 
 Zeit, die Beine zu stumpfen. Hem sie wie du alle anderen streckigen Stricken machen würst. Gehen Sie nach einer flexiblen Stickerei. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
@@ -154,11 +162,13 @@ Noch besser: Nähen Sie beide Beine und nähen Sie nur, wenn Sie mit dem Aussehe
 </Note>
 
 ### Schritt 12: Hem das zweite Bein
+
 ![Hem das zweite Bein](step12.png)
 
 Sie wissen, dass das sinnvoll ist.
 
 ### Schritt 13: Machen Sie Ihren elastischen Teil zu einer Schleife
+
 ![Machen Sie Ihren elastischen Teil zu einer Schleife](step13.png)
 
 Nähen Sie beide Enden der Elastik zusammen mit guten Seiten zusammen.
@@ -166,12 +176,14 @@ Nähen Sie beide Enden der Elastik zusammen mit guten Seiten zusammen.
 <Note>
 
 ###### Nicht sicher, wie viel Elastik du brauchst?
+
 Einfach die Elastik in die Taille einwickeln, wo sie am Ende sitzt, und bis sie sich richtig fühlt.
 Machen Sie eine Markierung, wo die Kantengelenke, fügen Sie 2cm Naht erlaubt, und das ist Ihre Länge.
 
 </Note>
 
 ### Schritt 14: elastisch an Taille befestigen
+
 ![elastisch an Taille befestigen](step14.png)
 
 Befestigen Sie die elastische Taille.
@@ -192,6 +204,7 @@ Während des Nähens strecken Sie elastisch und Gewebe zwischen jedem Satz von S
 </Tip>
 
 ### Schritt 15: Trimmen und bereinigen
+
 ![Juhuu! Du hast es geschafft](step15.png)
 
 Schneiden Sie jeden überschüssigen Stoff an Elastik oder Saum und alle losen Fäden.

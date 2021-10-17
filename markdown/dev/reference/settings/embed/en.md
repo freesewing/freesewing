@@ -1,6 +1,6 @@
---- 
-title: embed
----
+***
+
+## title: embed
 
 Set to `true` to make SVG output suitable for embedding in a web page.
 
@@ -20,4 +20,3 @@ let pattern = new brian({
 Do **not** use this for SVGs you want to print.
 
 </Warning>
-

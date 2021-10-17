@@ -1,6 +1,6 @@
----
-title: Hauteur taille bassin
----
+***
+
+## title: Hauteur taille bassin
 
 La **hauteur taille bassin** est la mesure depuis votre taille naturelle jusqu'à la partie la plus large de votre bassin, mesurée sur le côté de votre corps.
 

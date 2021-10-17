@@ -1,6 +1,6 @@
----
-title: Belofte over de FreeSewing inkomsten
----
+***
+
+## title: Belofte over de FreeSewing inkomsten
 
 De **FreeSewing revenue commitment** verklaart dat:
 
@@ -25,4 +25,3 @@ Als je FreeSewing wilt steunen, kun je [hier lid worden](/community/join/)
 |       2019 |      4.109,38 |          |
 |       2020 |     10.736,82 |          |
 | **Totaal** | **19.418,63** | **euro** |
-

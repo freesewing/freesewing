@@ -1,7 +1,5 @@
----
-title: "@freesewing/plugin-flip"
----
+***
 
- 
+## title: "@freesewing/plugin-flip"
 
 <PluginPage plugin="flip" />

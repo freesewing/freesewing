@@ -1,6 +1,6 @@
----
-title: Zitvlak achterkant
----
+***
+
+## title: Zitvlak achterkant
 
 **Zitvlak achter** is het achterste deel van de omtrek van je zitvlak.
 

@@ -1,6 +1,6 @@
----
-title: Halsomtrek
----
+***
+
+## title: Halsomtrek
 
 De **halsomtrek** is de omtrek van je hals, op de plek waar je hemdskraag of das zouden zitten.
 

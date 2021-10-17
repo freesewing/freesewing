@@ -1,6 +1,6 @@
----
-title: layout
----
+***
+
+## title: layout
 
 An object that holds rendered SVG for all parts, and a list of their transforms.
 It is structured as follows:
@@ -14,4 +14,3 @@ It is structured as follows:
   // Other parts follow
 }
 ```
-

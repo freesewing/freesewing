@@ -1,6 +1,6 @@
----
-title: shiftFractionAlong()
----
+***
+
+## title: shiftFractionAlong()
 
 ```js
 Point path.shiftFractionAlong(float fraction[, int stepsPerMm=25])
@@ -9,8 +9,8 @@ Point path.shiftFractionAlong(float fraction[, int stepsPerMm=25])
 Returns a point that lies at fraction of the length of the path travelled along the path.
 
 <Example 
-  part="path_shiftfractionalong" 
-  caption="Example of the Path.shiftFractionAlong() method" 
+part="path_shiftfractionalong" 
+caption="Example of the Path.shiftFractionAlong() method" 
 />
 
 ```js
@@ -53,4 +53,3 @@ If you don't need that precision, you can pass a lower number.
 But for most cases, you can just ignore it.
 
 </Note>
-

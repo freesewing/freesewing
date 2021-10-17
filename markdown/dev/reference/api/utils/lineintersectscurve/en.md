@@ -1,6 +1,6 @@
----
-title: lineIntersectsCurve()
----
+***
+
+## title: lineIntersectsCurve()
 
 ```js
 array | false utils.lineIntersectsCurve(
@@ -14,7 +14,7 @@ array | false utils.lineIntersectsCurve(
 ```
 
 Finds the intersection between a line segment from point `from` to point `to`
-and a curve described by points `start`, `cp1`, `cp2, and `end`.
+and a curve described by points `start`, `cp1`, `cp2, and `end\`.
 
 <Example part="utils_lineintersectscurve" caption="A Utils.lineIntersectsCurve() example" />
 
@@ -51,4 +51,3 @@ for (let p of utils.lineIntersectsCurve(
   snippets[part.getId()] = new Snippet("notch", p);
 }
 ```
-

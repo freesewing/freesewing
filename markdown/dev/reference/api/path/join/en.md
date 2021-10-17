@@ -1,6 +1,6 @@
----
-title: join()
----
+***
+
+## title: join()
 
 ```js
 Path path.join(path other)
@@ -40,4 +40,3 @@ paths.joint = paths.path1
   .attr("class", "note lashed stroke-l")
   .attr("style", "stoke-opacity: 0.5");
 ```
-

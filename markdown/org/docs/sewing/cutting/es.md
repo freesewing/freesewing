@@ -1,7 +1,8 @@
----
+***
+
 layout: en ecol
 title: Corte
----
+------------
 
 ![Cortando camisetas](cutting.jpg)
 

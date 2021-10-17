@@ -1,6 +1,6 @@
----
-title: clone()
----
+***
+
+## title: clone()
 
 ```js
 Snippet snippet.clone()
@@ -9,8 +9,8 @@ Snippet snippet.clone()
 Returns a new Snippets object that is a deep copy of this one.
 
 <Example
-  part="snippet_clone"
-  caption="An example of the Snippet.clone() method"
+part="snippet_clone"
+caption="An example of the Snippet.clone() method"
 />
 
 ```js

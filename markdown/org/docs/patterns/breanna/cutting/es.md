@@ -1,8 +1,8 @@
 Para hacer Breanna, necesitarás:
 
- - 1 frente
- - 2 Volver
- - 2 Mangas
+*   1 frente
+*   2 Volver
+*   2 Mangas
 
 <Note>
 

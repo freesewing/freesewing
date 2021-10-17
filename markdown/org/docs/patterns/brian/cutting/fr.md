@@ -1,8 +1,8 @@
 Pour le haut Brian, vous aurez besoin de :
 
- - 1 devant
- - 1 dos
- - 2 manches
+*   1 devant
+*   1 dos
+*   2 manches
 
 <Note>
 

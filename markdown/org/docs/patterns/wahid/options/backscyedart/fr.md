@@ -14,4 +14,5 @@ Bien que ce dart soit utilisé pour façonner le motif, vous n'avez pas à coudr
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid\_backscyedart\_sample.svg "Effet de cette option sur le motif")

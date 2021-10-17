@@ -1,6 +1,6 @@
----
-title: "@freesewing/pattern-info"
----
+***
+
+## title: "@freesewing/pattern-info"
 
 <p>
   <a
@@ -51,4 +51,3 @@ This package provides information about FreeSewing patterns.
   <li><a href='https://www.npmjs.com/package/@freesewing/pattern-info'>Package on NPM</a></li>
   <li><a href='https://github.com/freesewing/freesewing/tree/develop/packages/pattern-info'>Code on Github</a></li>
 </ul>
-

@@ -1,8 +1,8 @@
----
-title: pd
----
+***
 
-The `pd` macro adds a *path dimension* to your pattern, indicating the length of a path.  
+## title: pd
+
+The `pd` macro adds a *path dimension* to your pattern, indicating the length of a path.\
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="path_length" caption="Example of a multiple path dimensions" />
@@ -14,7 +14,7 @@ macro('pd', {
 })
 ```
 
-| Property        | Default | Type                | Description | 
+| Property        | Default | Type                | Description |
 |----------------:|---------|---------------------|-------------|
 | `path`          |         | [Path](/reference/api/path)   | The path to draw the dimension along |
 | `offset`        | 0       | Number              | The offset at which to draw the dimension |
@@ -27,9 +27,7 @@ macro('pd', {
 
 Setting a custom ID will:
 
- - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
- - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/) 
+*   Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
+*   Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
 
 </Note>
-
-

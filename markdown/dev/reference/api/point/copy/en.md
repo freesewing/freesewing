@@ -1,6 +1,6 @@
----
-title: copy()
----
+***
+
+## title: copy()
 
 ```js
 Point point.copy()
@@ -9,8 +9,8 @@ Point point.copy()
 Returns a new point with the same coordinates as this point.
 
 <Example 
-  part="point_copy"
-  caption="An example of the Point.copy() method"
+part="point_copy"
+caption="An example of the Point.copy() method"
 />
 
 ```js
@@ -23,4 +23,3 @@ points.B = points.A.copy().attr("data-text", "Point B");
 
 snippets.x = new Snippet("notch", points.A);
 ```
-

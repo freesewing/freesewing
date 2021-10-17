@@ -1,6 +1,6 @@
----
-title: sitsOn()
----
+***
+
+## title: sitsOn()
 
 ```js
 bool point.sitsOn(Point check)
@@ -9,8 +9,8 @@ bool point.sitsOn(Point check)
 Returns true if the point has the same coordinates as the one you pass to it.
 
 <Example 
-  part="point_sitson"
-  caption="An example of the Point.sitsOn() method"
+part="point_sitson"
+caption="An example of the Point.sitsOn() method"
 />
 
 ```js

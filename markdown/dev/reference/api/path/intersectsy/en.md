@@ -1,6 +1,6 @@
----
-title: intersectsY()
----
+***
+
+## title: intersectsY()
 
 ```js
 array|false path.intersectsY(float y)

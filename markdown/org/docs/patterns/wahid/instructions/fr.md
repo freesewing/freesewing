@@ -19,9 +19,9 @@ Placez votre front avec le bon côté vers le bas et votre interface vers le hau
 Appuyez sur l'interfaçage en place.
 
 > **Prenez votre temps**
-> 
+>
 > Ne le ferez pas simplement pour le repasser, vous voulez vraiment appuyer sur votre tissu pour qu'il se fusionne.
-> 
+>
 > Placez votre fer à repasser et reposez-vous sur lui pendant 10 secondes avant de passer au point suivant pour répéter le processus.
 
 ### Étape 2 : Rejoignez la face avant et la doublure
@@ -35,6 +35,7 @@ Placez votre face avant et votre doublure avec de bons côtés ensemble. Épingl
 Les coudre ensemble.
 
 #### Appuyer sur la pression sur la marge de couture ouverte
+
 Appuyez sur ouvrir la marge de couture entre la face et la garniture.
 
 ### Étape 3 : Fermer toutes les fléchettes
@@ -48,6 +49,7 @@ Repliez le dos avec de bons côtés ensemble et cousez la fléchette arrière.
 > N'oubliez pas de faire la même chose pour la doublure
 
 #### Fermer les fléchettes avant
+
 Repliez votre front (et l'interface-face fusionnée) avec de bons côtés ensemble, et cousez la fléchette avant.
 
 ### Étape 4 : Appuyez sur toutes les fléchettes
@@ -55,9 +57,11 @@ Repliez votre front (et l'interface-face fusionnée) avec de bons côtés ensemb
 ![Appuyez sur toutes les fléchettes](04a.png)
 
 #### Appuyez sur les flèches avant
+
 Une fois coupé ouvert, appuyez sur les fléchettes avant ouvertes.
 
 #### Appuyez sur les fléchettes arrière
+
 Si vous coupez les fléchettes arrière, appuyez sur les ouvrir. Si ce n'est pas le cas, appuyez sur le côté.
 
 > N'oubliez pas de faire la même chose pour la doublure
@@ -73,6 +77,7 @@ Placez votre sac de poche vers le bas avec le bon côté vers le haut, et votre 
 Alignez le côté droit du sac avec le côté de la soudure qui n'a aucune interface, et les coudre ensemble à la marge de couture standard.
 
 #### Appuyer sur la couture ouverte
+
 Lorsque vous avez terminé, appuyez sur ouvrir cette couture.
 
 #### Marquer où votre poche doit aller
@@ -92,7 +97,7 @@ Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez 
 Placez votre pièce avant vers le bas avec le bon côté vers le haut. Nous allons attacher la soudure à la ligne inférieure de votre contour de poche et à la ligne de face vers le haut.
 
 > Si vous n'avez jamais fait de poche de soudure auparavant, il peut être un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
-> 
+>
 > Détendez-vous, la poche se retrouvera à l'intérieur
 
 Tant votre poche que votre poche orientée ont une ligne d'aide sur elles. Cette ligne doit être alignée sur les bords longs de votre poche.
@@ -248,6 +253,7 @@ Maintenant, pliez votre doublure un peu avant le bord de l'armure et enfoncez-la
 Utilisez un point de couture pour coudre à la main la doublure sur le tissu le long de l'armure.
 
 ### Étape 11 : Terminer l'ourlet
+
 Rappelez-vous que nous n'avons pas comblé cette lacune à l'étape 9? Il est temps de le fermer.
 
 Utilisez un point de couture pour coudre à la main la doublure sur le tissu et refermez l'ourlet.

@@ -1,6 +1,6 @@
----
-title: bartack
----
+***
+
+## title: bartack
 
 The `bartack` macro allows you to add a *bartack* marker to your sewing pattern.
 It is provided by the [bartack plugin](/reference/plugins/bartack/).
@@ -17,7 +17,7 @@ macro('bartack', {
 })
 ```
 
-| Property     | Default    | Type       | Description | 
+| Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
 | `density`    | `3`        | `number`   | Controls how close the stitches are togeter |

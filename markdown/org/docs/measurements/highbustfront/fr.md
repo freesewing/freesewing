@@ -1,6 +1,6 @@
----
-title: Largeur de buste supérieur
----
+***
+
+## title: Largeur de buste supérieur
 
 La mesure de **largeur de buste supérieur** est la partie avant de votre mesure de **tour de buste supérieur** : votre circonférence de poitrine mesurée juste sous vos bras, au-dessus de la partie la plus forte de votre poitrine.
 

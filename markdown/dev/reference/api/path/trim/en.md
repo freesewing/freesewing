@@ -1,6 +1,6 @@
----
-title: trim()
----
+***
+
+## title: trim()
 
 ```js
 Path path.trim()
@@ -19,18 +19,18 @@ it on a long/complex path will be significant.
 
 To limit the impact of path.trim(), follow this approach:
 
- - construct a minimal path that contains the overlap
- - trim it
- - now join it to the rest of your path
+*   construct a minimal path that contains the overlap
+*   trim it
+*   now join it to the rest of your path
 
-You can see an example of this 
+You can see an example of this
 [in the front part of the Bruce pattern](https://github.com/freesewing/freesewing/blob/develop/packages/bruce/src/front.js#L195).
 
 </Warning>
 
 <Example 
-  part="path_trim" 
-  caption="Example of the Path.trim() method" 
+part="path_trim" 
+caption="Example of the Path.trim() method" 
 />
 
 ```js

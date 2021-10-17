@@ -1,6 +1,6 @@
---- 
-title: units
----
+***
+
+## title: units
 
 Either `metric` (the default) or `imperial`.
 

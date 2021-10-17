@@ -1,6 +1,6 @@
----
-title: Taal
----
+***
+
+## title: Taal
 
 Dit bepaalt de taal die op je patroon gebruikt wordt.
 

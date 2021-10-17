@@ -1,6 +1,6 @@
----
-title: Inclinación de hombro
----
+***
+
+## title: Inclinación de hombro
 
 La medición de **pendiente del hombro** es un indicador de la cantidad con la que tu hombro tiene pendiente descendente.
 

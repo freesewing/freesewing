@@ -1,7 +1,8 @@
----
+***
+
 title: Uw mensen
 order: 350
----
+----------
 
 Zodra je een account hebt, kun je metingen gaan toevoegen. Maar dat brengt snel de volgende vraag op: wat als u een patroon voor u wilt, maar ook voor uw partner?
 

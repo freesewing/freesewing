@@ -1,6 +1,6 @@
----
-title: Compartir tus patrones requiere una cuenta FreeSewing
----
+***
+
+## title: Compartir tus patrones requiere una cuenta FreeSewing
 
 Puedes **exportar** tu patrón a PDF, SVG u otros formatos.
 

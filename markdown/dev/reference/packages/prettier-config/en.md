@@ -1,6 +1,6 @@
----
-title: "@freesewing/prettier-config"
----
+***
+
+## title: "@freesewing/prettier-config"
 
 <p>
   <a

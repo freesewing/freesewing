@@ -1,6 +1,6 @@
----
-title: Largeur de poitrine avant
----
+***
+
+## title: Largeur de poitrine avant
 
 La **largeur de poitrine avant** est la partie avant de votre tour de poitrine.
 

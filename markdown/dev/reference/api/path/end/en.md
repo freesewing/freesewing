@@ -1,6 +1,6 @@
----
-title: end()
----
+***
+
+## title: end()
 
 ```js
 Point path.end()

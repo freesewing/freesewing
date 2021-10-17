@@ -1,6 +1,6 @@
----
-title: Coverlock
----
+***
+
+## title: Coverlock
 
 ![Ein Saum eines T-Shirts, hergestellt mit einer Coverlock-Maschine](coverlock-hem.jpg)
 

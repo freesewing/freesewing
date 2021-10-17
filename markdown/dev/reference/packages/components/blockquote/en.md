@@ -1,17 +1,17 @@
----
-title: Blockquote
----
+***
 
-The `Blockquote` component is a base blockquote that can be styled 
+## title: Blockquote
+
+The `Blockquote` component is a base blockquote that can be styled
 in a number of different ways via the `type` prop which can be set to:
 
- - note
- - warning
- - tip
- - fixme
- 
+*   note
+*   warning
+*   tip
+*   fixme
+
 It is typically used in our MDX content where we make the `Note`, `Warning`,
-`Tip` and `Fixme` components available in the global scope. They all use 
+`Tip` and `Fixme` components available in the global scope. They all use
 the `Blockquote` component under the hood.
 
 ## Examples
@@ -28,7 +28,6 @@ the `Blockquote` component under the hood.
 <Blockquote type='note'> This is a note </Blockquote>
 ```
 
-
 ### Type: tip
 
 <Tip> This is a tip </Tip>
@@ -40,7 +39,6 @@ the `Blockquote` component under the hood.
 ```jsx
 <Blockquote type='tip'> This is a tip </Blockquote>
 ```
-
 
 ### Type: warning
 

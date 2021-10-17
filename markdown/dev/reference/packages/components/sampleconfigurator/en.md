@@ -1,6 +1,6 @@
----
-title: SampleConfigurator
----
+***
+
+## title: SampleConfigurator
 
 The `SampleConfigurator` provides the user interface for configuring sampling of a pattern.
 It is used in our development environment.
@@ -10,5 +10,3 @@ It is used in our development environment.
 ## Example
 
 <Fixme> Add screenshot </Fixme>
-
-

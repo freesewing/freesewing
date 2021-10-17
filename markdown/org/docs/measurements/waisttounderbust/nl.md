@@ -1,6 +1,6 @@
----
-title: Taille tot onderbuste
----
+***
+
+## title: Taille tot onderbuste
 
 De maat **taille tot onderbuste** is de afmeting van je taille tot aan je onderbuste (waar je bh-band zit).
 

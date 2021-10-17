@@ -1,6 +1,6 @@
----
-title: insop()
----
+***
+
+## title: insop()
 
 ```js
 Path path.insop(string id, Path path)

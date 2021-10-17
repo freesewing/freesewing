@@ -1,6 +1,6 @@
----
-title: Dimensions
----
+***
+
+## title: Dimensions
 
 Lorsque vous optez pour un patron *sans papier* , votre patron se fourni avec des dimensions :
 
@@ -13,5 +13,4 @@ Lorsque vous optez pour un patron *sans papier* , votre patron se fourni avec de
 Certains patrons utilisent une dimension pour indiquer la taille totale d'une pièce de patron.
 Cela se produit généralement lorsqu'une partie est un simple rectangle.
 
-Ainsi, quand un patron comprend une dimension, assurez-vous d'y prêter attention avant de couper votre tissu.
-</Tip>
+Ainsi, quand un patron comprend une dimension, assurez-vous d'y prêter attention avant de couper votre tissu. </Tip>

@@ -41,7 +41,3 @@ Natuurlijk, als je een voering toevoegt, moet je dit opnemen op de manier waarop
 Vervolgens wordt de tailleband bevestigd als je versie er een heeft. Plooi het eerst dubbel langs de lange kant en strijk. Voeg je interface toe. Stik aan de rechterkant van de stof. Draai dan om en strijk de naad in de tailleband. Gebruik nu de stetch-in-the-ditch techniek om de tailleband af te werken. Voeg uw keuze voor sluiting toe.
 
 Het enige wat nu overblijft is om de rok te zoeden.
-
-
-
-

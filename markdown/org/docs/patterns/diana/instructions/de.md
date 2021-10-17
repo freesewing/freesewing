@@ -1,13 +1,12 @@
-
 ## Beende die Rückenlinie
 
-Schneiden Sie einen Streifen Selbststoff um die Länge Ihrer Rückenhalslinie und ca. 3 cm breit.  
+Schneiden Sie einen Streifen Selbststoff um die Länge Ihrer Rückenhalslinie und ca. 3 cm breit.\
 Drücken Sie eine Falte in diesen Streifen, 1 cm von der Kante.
 
 <Tip>
 
-Machen Sie diesen Streifen zu einem einseitigen Schnitt, wenn Sie einen Gewebe verwenden, 
-oder ein Streifen mit der Streckrichtung entlang der langen Kante, wenn Sie ein Strick verwenden. 
+Machen Sie diesen Streifen zu einem einseitigen Schnitt, wenn Sie einen Gewebe verwenden,
+oder ein Streifen mit der Streckrichtung entlang der langen Kante, wenn Sie ein Strick verwenden.
 
 </Tip>
 
@@ -41,7 +40,7 @@ Nähen, fertigstellen und drücken Sie die Naht.
 
 ## Seiten- und Ärmelnaht schließen
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
+Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.\
 Make sure the armhole seam lines up across the front and back.
 
 Nähen, fertigstellen und drücken Sie die Naht.

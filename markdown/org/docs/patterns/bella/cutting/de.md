@@ -1,7 +1,7 @@
 Um Bella zu machen, brauchst du:
 
- - 1 Front
- - 2 Zurück
+*   1 Front
+*   2 Zurück
 
 <Note>
 

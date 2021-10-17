@@ -1,11 +1,10 @@
---- 
-title: sa
----
+***
+
+## title: sa
 
 The seam allowance in mm.
 
 Not setting this, setting it to `false`, or to zero, will draft a pattern without seam allowance.
-
 
 ```js
 import brian from "@freesewing/brian";

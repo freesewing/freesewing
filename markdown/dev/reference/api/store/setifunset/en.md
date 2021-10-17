@@ -1,6 +1,6 @@
----
-title: setIfUnset
----
+***
+
+## title: setIfUnset
 
 ```js
 void store.setIfUnset(string key, mixed value)

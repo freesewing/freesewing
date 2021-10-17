@@ -1,6 +1,6 @@
----
-title: difficulty
----
+***
+
+## title: difficulty
 
 ```js
 difficulty: 3

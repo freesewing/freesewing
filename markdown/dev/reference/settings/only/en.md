@@ -1,6 +1,6 @@
---- 
-title: only
----
+***
+
+## title: only
 
 Allows you to specify one or more parts to draft/render, rather than the entire pattern.
 

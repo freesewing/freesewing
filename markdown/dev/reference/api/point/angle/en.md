@@ -1,16 +1,16 @@
----
-title: angle()
----
+***
+
+## title: angle()
 
 ```js
 float point.angle(Point point)
-``` 
+```
 
 Returns the angle made by a line from this point to the point you pass it.
 
 <Example 
-  part="point_angle"
-  caption="An example of the Point.angle() method"
+part="point_angle"
+caption="An example of the Point.angle() method"
 />
 
 ```js
@@ -28,4 +28,3 @@ paths.line = new Path()
   .line(points.moon)
   .attr("class", "dashed");
 ```
-

@@ -1,4 +1,3 @@
-
 ## El doblado es un bloque, no un patrón
 
 Un bloque es una forma básica en la que se basan otros patrones. A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
