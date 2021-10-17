@@ -18,9 +18,9 @@ J'ai longtemps attendu que quelqu'un fasse le premier pas et prenne sur soi de l
 
 Donc, si vous pensez pouvoir faire mieux, je vous invite par la présente formellement à travailler ensemble pour concevoir le patron de base de vêtements féminins que vous pensez/savez être le meilleur.
 
-I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
+J'offre avec joie mes services pour coder/mettre en œuvre votre conception/vision, ainsi toute la communauté de couture pourra en bénéficier.
 
-You can reach me at joost at freesewing.org, we also have [an active community on Discord](https://discord.freesewing.org/).
+Vous pouvez me joindre sur joost at freesewing.org, nous avons également [une communauté active sur Discord](https://discord.freesewing.org/).
 
 I hope to hear from you soon.
 
